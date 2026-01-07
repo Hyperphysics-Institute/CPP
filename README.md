@@ -5,17 +5,19 @@
 Thomas Lee Abshier, ND, and Grok (x.AI)  
 viXra: [pending upload]  
 
-This repository contains fully interactive Jupyter notebooks that derive all key results in the paper from **600-cell lattice geometry** — no ad-hoc parameter tuning.
+This repository contains fully interactive Jupyter notebooks that derive all key results in the paper **directly from 600-cell lattice geometry** — no ad-hoc parameter tuning.
 
 ### Major Advances over v7.3 (pre-geometric version)
-- Full integration of the 600-cell hypericosahedron as the discrete metric of space
-- Quark fractional charges from golden-ratio (φ) overlap integrals
+- Complete integration of the 600-cell hypericosahedron as the discrete metric of space
+- Quark fractional charges (±1/3, ±2/3 e) from golden-ratio (φ) overlap integrals
 - Generational mass hierarchies from nested polyhedral cages (tetra, icosa, dodeca, fullerene)
-- Strong interaction from NBT primary bonding + probabilistic qDP layering (8–10 modes)
+- Strong interaction via NBT primary bonding + probabilistic qDP layering (8–10 modes)
+- Inner SSV adjustment on up quark ZBW orbit → exact 2.2 MeV match
 - Gravity curvature k derived from φ-series
 - Vacuum energy exact 1/N⁴ ≈ 10⁻¹²⁰ via holographic dilution
+- Confinement dynamics with outer-to-inner chain breaking
 
-All notebooks use the shared geometric constants in `parameters_600cell.py`.
+All notebooks use shared constants in `parameters_600cell.py`.
 
 ### Requirements
 - Python 3.10+
