@@ -41,7 +41,16 @@ phase_choices = np.arange(1, 7)
 n_events_default = 100000
 rng_seed = 42
 
+# Export all key parameters for import
+__all__ = [
+    'l_P', 'm_P', 'E_P', 't_P', 'N_cosmic',
+    'phi', 'phi_inv', 'phi_inv2', 'k_curvature',
+    'r_inner_over_outer', 'phase_probs', 'phase_choices',
+    'n_events_default', 'rng_seed'
+]
+
 print("CPP v8.0 600-cell parameters loaded")
 print(f"Golden ratio φ = {phi:.10f}")
+print(f"φ⁻¹ = {phi_inv:.10f}")
 print(f"Curvature k ≈ {k_curvature:.6f}")
 print(f"Overlap factor base ≈ {phi_inv2:.6f} → 1/3 after weighting")
