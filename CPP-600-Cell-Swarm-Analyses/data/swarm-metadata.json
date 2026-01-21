@@ -1,0 +1,582 @@
+[
+  {
+    "entry": 1,
+    "title": "Galaxy Spin Asymmetry",
+    "phenomenon": "Preferred galaxy rotation direction",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Shares CMB and DESI data with #18, #28",
+    "source_file": "swarm001.tex",
+    "original_paper_significance": "Not explicitly stated for handedness (general dipole ~4–5σ)"
+  },
+  {
+    "entry": 2,
+    "title": "Cosmic Dipole Handedness",
+    "phenomenon": "CMB dipole alignment with swarm",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck CMB data shared with #18, #29",
+    "source_file": "swarm002.tex",
+    "original_paper_significance": "CMB dipole >10σ, handedness alignment interpretive"
+  },
+  {
+    "entry": 3,
+    "title": "Quasar Jet Handedness",
+    "phenomenon": "Quasar jet helicity preference",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "VLBI radio data",
+    "source_file": "swarm003.tex",
+    "original_paper_significance": "Jet alignment reported as significant, exact σ not quoted"
+  },
+  {
+    "entry": 20,
+    "title": "Axisymmetric Supernova Shock Asymmetry",
+    "phenomenon": "Axisymmetric SN shock handedness",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "SN ejecta polarization data shared with #42, #73",
+    "source_file": "swarm020.tex",
+    "original_paper_significance": "Not explicitly stated for handedness (general SN asymmetry reported)"
+  },
+  {
+    "entry": 21,
+    "title": "PBH Clustering & Microlensing",
+    "phenomenon": "Primordial black hole clustering signatures",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Microlensing surveys (Subaru HSC, Roman pilot)",
+    "source_file": "swarm021.tex",
+    "original_paper_significance": "Clustering constraints reported as significant"
+  },
+  {
+    "entry": 22,
+    "title": "CMB V-Mode Circular Polarization",
+    "phenomenon": "CMB V-mode handedness",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck/ACT/SPIDER upper limits",
+    "source_file": "swarm022.tex",
+    "original_paper_significance": "V-mode limits exist; detection claims marginal"
+  },
+  {
+    "entry": 23,
+    "title": "Lyman-α Blob Polarization",
+    "phenomenon": "LAB polarization preference",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "MUSE/VLT Lyman-α data",
+    "source_file": "swarm023.tex",
+    "original_paper_significance": "Polarization reported as significant"
+  },
+  {
+    "entry": 24,
+    "title": "Triple Supermassive Black Holes",
+    "phenomenon": "Triple SMBH collision course",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Chandra/JWST/VLA multi-messenger data",
+    "source_file": "swarm024.tex",
+    "original_paper_significance": "Triple system dynamics reported as significant"
+  },
+  {
+    "entry": 25,
+    "title": "Early Magnetic Field Helicity",
+    "phenomenon": "Primordial magnetic field handedness",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Faraday rotation + theoretical models",
+    "source_file": "swarm025.tex",
+    "original_paper_significance": "Helicity mostly theoretical"
+  },
+  {
+    "entry": 26,
+    "title": "Quasar Jet Helicity & Curvature",
+    "phenomenon": "Quasar jet handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "VLBI radio observations",
+    "source_file": "swarm026.tex",
+    "original_paper_significance": "Jet alignment reported as significant"
+  },
+  {
+    "entry": 27,
+    "title": "Stellar Superflare",
+    "phenomenon": "Extreme stellar superflare handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "TESS/Kepler flare data",
+    "source_file": "swarm027.tex",
+    "original_paper_significance": "Superflare intensity reported as extreme"
+  },
+  {
+    "entry": 28,
+    "title": "Galaxy Rotation Handedness Dipole",
+    "phenomenon": "Galaxy spin dipole alignment",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "SDSS/DESI galaxy catalogs",
+    "source_file": "swarm028.tex",
+    "original_paper_significance": "Dipole reported as significant (~4–5σ)"
+  },
+  {
+    "entry": 29,
+    "title": "Hemispherical Asymmetry",
+    "phenomenon": "Local universe lopsidedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "SDSS/DESI/Euclid/Planck multi-probe",
+    "source_file": "swarm029.tex",
+    "original_paper_significance": "Asymmetry ~4–5σ in combined data"
+  },
+  {
+    "entry": 30,
+    "title": "Cold Spot CMB Anomaly",
+    "phenomenon": "CMB cold spot handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck legacy data",
+    "source_file": "swarm030.tex",
+    "original_paper_significance": "Cold spot significance well-established"
+  },
+  {
+    "entry": 31,
+    "title": "Void Alignment & Handedness",
+    "phenomenon": "Cosmic void orientation preference",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "SDSS void catalogs",
+    "source_file": "swarm031.tex",
+    "original_paper_significance": "Void alignments reported, handedness interpretive"
+  },
+  {
+    "entry": 32,
+    "title": "Filament Spin & Magnetic Field Alignment",
+    "phenomenon": "Cosmic web filament handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "LOFAR/SKA pathfinder magnetic fields",
+    "source_file": "swarm032.tex",
+    "original_paper_significance": "Filament fields reported as significant"
+  },
+  {
+    "entry": 33,
+    "title": "Early Galaxy Rotation Handedness",
+    "phenomenon": "High-z galaxy spin preference",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST rotation curves",
+    "source_file": "swarm033.tex",
+    "original_paper_significance": "High-z rotation reported as significant"
+  },
+  {
+    "entry": 34,
+    "title": "PBH Relic Clustering in Halos",
+    "phenomenon": "Primordial BH relic clustering",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Microlensing constraints",
+    "source_file": "swarm034.tex",
+    "original_paper_significance": "Clustering mostly theoretical"
+  },
+  {
+    "entry": 35,
+    "title": "Overmassive Seeds in Early Galaxies",
+    "phenomenon": "High-z overmassive BH seeds",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST NIRSpec data",
+    "source_file": "swarm035.tex",
+    "original_paper_significance": "Overmassive seeds reported as significant"
+  },
+  {
+    "entry": 41,
+    "title": "Lyman-α Blob Polarization",
+    "phenomenon": "LAB polarization preference",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "MUSE/VLT Lyman-α data",
+    "source_file": "swarm041.tex",
+    "original_paper_significance": "Polarization reported as significant in LABs"
+  },
+  {
+    "entry": 42,
+    "title": "High-z Supernova Polarization",
+    "phenomenon": "High-redshift supernova polarization handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST/ELT high-z SN data",
+    "source_file": "swarm042.tex",
+    "original_paper_significance": "Polarization measurements reported"
+  },
+  {
+    "entry": 43,
+    "title": "Blue Monsters",
+    "phenomenon": "Luminous blue galaxies at high redshift",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST NIRCam/NIRSpec observations",
+    "source_file": "swarm043.tex",
+    "original_paper_significance": "Brightness and mass reported as significant"
+  },
+  {
+    "entry": 44,
+    "title": "Overmassive Seeds",
+    "phenomenon": "Overmassive black hole seeds in early galaxies",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST high-z BH mass measurements",
+    "source_file": "swarm044.tex",
+    "original_paper_significance": "Mass excess reported as significant"
+  },
+  {
+    "entry": 45,
+    "title": "PBH Clustering",
+    "phenomenon": "Primordial black hole clustering signatures",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Microlensing and lensing constraints",
+    "source_file": "swarm045.tex",
+    "original_paper_significance": "Clustering limits reported, handedness interpretive"
+  },
+  {
+    "entry": 46,
+    "title": "Axisymmetric SN Shock",
+    "phenomenon": "Axisymmetric supernova shock handedness",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "SN ejecta observations",
+    "source_file": "swarm046.tex",
+    "original_paper_significance": "Shock morphology reported, handedness interpretive"
+  },
+  {
+    "entry": 47,
+    "title": "Double-Explosion Hybrid Supernovae",
+    "phenomenon": "Hybrid supernova explosion handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Observed hybrid SN events",
+    "source_file": "swarm047.tex",
+    "original_paper_significance": "Double-explosion features reported"
+  },
+  {
+    "entry": 48,
+    "title": "Lensed Superluminous Supernovae",
+    "phenomenon": "Lensed SLSN handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST/HST lensed SN data",
+    "source_file": "swarm048.tex",
+    "original_paper_significance": "Lensing and brightness reported"
+  },
+  {
+    "entry": 49,
+    "title": "CMB V-Mode Circular Polarization",
+    "phenomenon": "CMB V-mode handedness",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck/ACT/SPIDER upper limits",
+    "source_file": "swarm049.tex",
+    "original_paper_significance": "V-mode limits exist; detection claims marginal"
+  },
+  {
+    "entry": 50,
+    "title": "Cosmic Dipole Alignment",
+    "phenomenon": "Cosmic dipole handedness alignment",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck CMB + radio/galaxy catalogs",
+    "source_file": "swarm050.tex",
+    "original_paper_significance": "Dipole amplitude >10σ, alignment interpretive"
+  },
+  {
+    "entry": 51,
+    "title": "CMB Hemispherical Asymmetry",
+    "phenomenon": "CMB hemispherical power asymmetry",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck legacy data",
+    "source_file": "swarm051.tex",
+    "original_paper_significance": "Asymmetry reported as significant (~3–4σ)"
+  },
+  {
+    "entry": 52,
+    "title": "Cold Spot CMB Anomaly",
+    "phenomenon": "CMB cold spot handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Planck cold spot analysis",
+    "source_file": "swarm052.tex",
+    "original_paper_significance": "Cold spot significance well-established"
+  },
+  {
+    "entry": 53,
+    "title": "Void Alignment & Handedness",
+    "phenomenon": "Cosmic void orientation preference",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "SDSS void catalogs",
+    "source_file": "swarm053.tex",
+    "original_paper_significance": "Void alignments reported, handedness interpretive"
+  },
+  {
+    "entry": 54,
+    "title": "Filament Spin & Magnetic Field Alignment",
+    "phenomenon": "Cosmic web filament handedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "LOFAR/SKA pathfinder magnetic fields",
+    "source_file": "swarm054.tex",
+    "original_paper_significance": "Filament fields reported as significant"
+  },
+  {
+    "entry": 55,
+    "title": "Early Galaxy Rotation Handedness",
+    "phenomenon": "High-z galaxy spin preference",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST rotation curves",
+    "source_file": "swarm055.tex",
+    "original_paper_significance": "High-z rotation reported as significant"
+  },
+  {
+    "entry": 56,
+    "title": "Totani 20 GeV Halo Excess",
+    "phenomenon": "Galactic gamma-ray halo excess",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Fermi-LAT gamma-ray data",
+    "source_file": "swarm056.tex",
+    "original_paper_significance": "Excess reported as significant (~3σ)"
+  },
+  {
+    "entry": 57,
+    "title": "Nandal JWST Nitrogen Excess",
+    "phenomenon": "High-z N/O excess in GS-3073",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST NIRSpec spectroscopy",
+    "source_file": "swarm057.tex",
+    "original_paper_significance": "N/O ratio anomaly reported as significant"
+  },
+  {
+    "entry": 58,
+    "title": "Gu NGC 3783 Flare & UFOs",
+    "phenomenon": "SMBH flare triggering ultra-fast outflows",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "XRISM/XMM-Newton observations",
+    "source_file": "swarm058.tex",
+    "original_paper_significance": "Flare-UFO link reported as significant"
+  },
+  {
+    "entry": 59,
+    "title": "S251112cm Subsolar GW Candidate",
+    "phenomenon": "Subsolar gravitational wave merger",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "LVK O5 candidate (FAR ~1/4 yr)",
+    "source_file": "swarm059.tex",
+    "original_paper_significance": "Marginal significance (low FAR)"
+  },
+  {
+    "entry": 60,
+    "title": "XID 925 Binary TDE",
+    "phenomenon": "Binary SMBH tidal disruption event",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Chandra/XMM multi-epoch data",
+    "source_file": "swarm060.tex",
+    "original_paper_significance": "Burst dynamics reported as significant"
+  },
+  {
+    "entry": 61,
+    "title": "GRB 250702B Ultra-Long Duration",
+    "phenomenon": "Ultra-long gamma-ray burst",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Fermi/Swift GRB detection",
+    "source_file": "swarm061.tex",
+    "original_paper_significance": "Duration and energy reported as extreme"
+  },
+  {
+    "entry": 62,
+    "title": "Chira Quasar UV-X Shift Evolution",
+    "phenomenon": "Quasar UV-X relation evolution",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "eROSITA/XMM survey",
+    "source_file": "swarm062.tex",
+    "original_paper_significance": "Evolution reported as significant"
+  },
+  {
+    "entry": 63,
+    "title": "3I/ATLAS X-ray Coma",
+    "phenomenon": "Interstellar object X-ray anomaly",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "XRISM observations",
+    "source_file": "swarm063.tex",
+    "original_paper_significance": "X-ray excess reported as anomalous"
+  },
+  {
+    "entry": 64,
+    "title": "South Atlantic Anomaly Magnetic Dent",
+    "phenomenon": "SAA expansion and splitting",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Swarm/GOCE/NASA monitoring",
+    "source_file": "swarm064.tex",
+    "original_paper_significance": "Weakening/splitting reported as significant"
+  },
+  {
+    "entry": 65,
+    "title": "RX J0527.4+2837 Rainbow Bow Shock",
+    "phenomenon": "White dwarf bow shock chromaticity",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "ESO VLT imaging",
+    "source_file": "swarm065.tex",
+    "original_paper_significance": "Rainbow structure reported as anomalous"
+  },
+  {
+    "entry": 66,
+    "title": "Invisible Disruptor at 11 Billion Light-Years",
+    "phenomenon": "Starless high-z gravitational lens",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Lensing surveys (JWST/HST)",
+    "source_file": "swarm066.tex",
+    "original_paper_significance": "Lensing reported, isolation interpretive"
+  },
+  {
+    "entry": 67,
+    "title": "JWST Little Red Dots Resolved",
+    "phenomenon": "Compact red sources at z > 5",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST NIRSpec/NIRCam",
+    "source_file": "swarm067.tex",
+    "original_paper_significance": "Compactness and redness reported"
+  },
+  {
+    "entry": 68,
+    "title": "Chandra Cosmic Seesaw in Galaxy Clusters",
+    "phenomenon": "Oscillatory SMBH motion in clusters",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Chandra multi-epoch data",
+    "source_file": "swarm068.tex",
+    "original_paper_significance": "Oscillations interpretive"
+  },
+  {
+    "entry": 69,
+    "title": "JWST Monster Stars / Little Red Dots Ancestors",
+    "phenomenon": "Supermassive stars in early universe",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST high-z observations",
+    "source_file": "swarm069.tex",
+    "original_paper_significance": "Nitrogen enrichment reported"
+  },
+  {
+    "entry": 70,
+    "title": "Deeply Weird Quantum State in Synthetic Lattice",
+    "phenomenon": "Multi-configuration quantum state",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Ultracold atom optical lattice experiment",
+    "source_file": "swarm070.tex",
+    "original_paper_significance": "Anomalous state reported, interpretation novel"
+  },
+  {
+    "entry": 71,
+    "title": "Chandra Cosmic Seesaw (duplicate?)",
+    "phenomenon": "Cluster SMBH oscillation",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Chandra data (duplicate of #68)",
+    "source_file": "swarm071.tex",
+    "original_paper_significance": "Oscillatory motion interpretive"
+  },
+  {
+    "entry": 72,
+    "title": "Sticky Fluid Spacetime Proposal",
+    "phenomenon": "Viscous spacetime to resolve tensions",
+    "real": false,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Theoretical proposal only",
+    "source_file": "swarm072.tex",
+    "original_paper_significance": "No new data; theoretical"
+  },
+  {
+    "entry": 73,
+    "title": "Ancient Type II Supernova at z ≈ 9.4",
+    "phenomenon": "High-z early supernova",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST spectroscopy",
+    "source_file": "swarm073.tex",
+    "original_paper_significance": "Early SN reported as significant"
+  },
+  {
+    "entry": 74,
+    "title": "Dark Stars Solving JWST Puzzles",
+    "phenomenon": "Dark stars unifying JWST anomalies",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST data + theoretical unification",
+    "source_file": "swarm074.tex",
+    "original_paper_significance": "JWST puzzles real; dark star model theoretical"
+  },
+  {
+    "entry": 75,
+    "title": "JWST Little Red Dots Resolved",
+    "phenomenon": "Compact red sources at z > 5",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "JWST NIRSpec/NIRCam",
+    "source_file": "swarm075.tex",
+    "original_paper_significance": "LRD nature reported as resolved"
+  },
+  {
+    "entry": 76,
+    "title": "Starless Mega-Black Hole Predating Galaxies",
+    "phenomenon": "Isolated high-z SMBH",
+    "real": "marginal",
+    "handedness_bias": 0.04,
+    "overlap_notes": "Lensing surveys",
+    "source_file": "swarm076.tex",
+    "original_paper_significance": "Lensing real; starless interpretation speculative"
+  },
+  {
+    "entry": 77,
+    "title": "Rapid Increase in AGN Fraction",
+    "phenomenon": "AGN surge at z ≈ 2–4",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "Multi-wavelength survey (>8,000 galaxies)",
+    "source_file": "swarm077.tex",
+    "original_paper_significance": "AGN fraction rise reported as significant"
+  },
+  {
+    "entry": 78,
+    "title": "Hemispherical Asymmetry",
+    "phenomenon": "Local universe lopsidedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "SDSS/DESI/Euclid/Planck multi-probe",
+    "source_file": "swarm078.tex",
+    "original_paper_significance": "Asymmetry ~4–5σ in combined data"
+  },
+  {
+    "entry": 78,
+    "title": "Hemispherical Asymmetry",
+    "phenomenon": "Local universe lopsidedness",
+    "real": true,
+    "handedness_bias": 0.04,
+    "overlap_notes": "SDSS/DESI/Euclid/Planck",
+    "source_file": "swarm078.tex",
+    "original_paper_significance": "Asymmetry ~4–5σ in multi-probe data"
+  }
+]
