@@ -91,8 +91,3 @@
 | 071–077  | Primary                   | Real observational anomaly                                        | Mixed            | Yes                                         | High            | Yes                 | Consistent series pattern                           | Chiral bias Δp_LR ≈ 0.04, SSV gradients |
 | 078      | Marginal / Synthesis      | Capstone multi-mission cross-check                                | Cosmological     | —                                           | Low             | No                  | Meta-synthesis, not independent                     | All swarm phenomena |
 
-This is the complete, merged notebook. You can copy it directly into your repo as `swarm_raw_notebook.md`.
-
-### CSV Version (complete 78-row table for spreadsheet import)
-
-Copy the following block and save as `swarm_classification.csv` (it includes the header + all 78 rows):
