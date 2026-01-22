@@ -1,1 +1,11 @@
-
+"Group / Shared Data Source","Swarm IDs in Group","Number of Entries","Fractional Weight per Entry","Total Contribution to Effective n"
+"Planck CMB core data (dipole, asymmetry, cold spot, V-mode hints)","012, 018, 029, 030, 049, 050","6","0.167","1.0"
+"JWST high-z galaxy/AGN/LRDs (CEERS/JADES/RUBIES shared fields)","009, 010, 021, 022, 023, 034, 035, 043, 044, 055, 057, 064, 065, 066, 077","15","0.067","1.0"
+"VLBI/radio quasar jets & precession (shared catalogs)","026, 038, 040","3","0.333","1.0"
+"Fermi-LAT gamma-ray (halo excess, PBH evaporation)","056, 068","2","0.5","1.0"
+"Chandra/X-ray TDE & binary AGN flares","059, 061","2","0.5","1.0"
+"High-z SNe & lensed SLSNe (JWST/VLT/Rubin shared follow-up)","042, 046, 047, 048, 065","5","0.2","1.0"
+"Galactic/LMC/Sgr B2 star formation & feedback","031, 032, 033","3","0.333","1.0"
+"Mesoscopic quantum materials (Weyl, spin Hall, CISS)","007, 011, 013","3","0.333","1.0"
+"Other mostly independent (unique instruments/surveys/mechanisms)","All remaining (≈20 entries)","≈20","1.0 each","≈20.0"
+"Total effective n","","","≈48.8 (rounded to 49)","49"
