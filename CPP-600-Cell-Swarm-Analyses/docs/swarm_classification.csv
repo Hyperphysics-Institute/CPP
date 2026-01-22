@@ -1,44 +1,44 @@
-Swarm ID,Category,Experiment / Phenomenon Name,Scale,Handedness Mention?,Strength Rating,Counts toward n=60?,Notes / Reason,600-Cell Phenomena Observed
-001,Primary,Nonlinear Compton scattering for sharper gamma-ray beams,Quantum,Yes (predicted >0.02–0.04),High,Yes,Real experiment + explicit chiral prediction,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges, SSV gradients
-002,Primary,Chiral fermion steering in topological material,Mesoscopic,Yes (direct lattice asymmetry),High,Yes,Direct handedness enforcement,Asymmetric hyperedges, chiral bias Δp_LR ≈ 0.04
-003,Primary,Cloud-9 RELHIC Hubble imaging,Galactic,Yes (predicted pol/lensing),High,Yes,Real astronomical object + chiral bias,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-004,Marginal / Theoretical,Ultra-metal-poor star SDSS J0715-7334 isolation,Galactic,Interpretive,Medium,No,Synthesis of real star; handedness CPP only,Lattice-protected pockets, chiral bias Δp_LR ≈ 0.04
-005,Primary,Negative heating in trapped-ion quantum simulator,Quantum,Yes (ΔT ∝ -Δp_LR, >0.02–0.04),High,Yes,Real quantum experiment + explicit chiral prediction,Chiral bias Δp_LR ≈ 0.04, SSV gradients, shadow points
-006,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric SSV gradients, asymmetric hyperedges
-007,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges
-008,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-009,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-010,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-011,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-012,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-013,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-014,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-015,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-016,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-017,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-018,Primary,Planck cosmic dipole alignment,Cosmological,Yes (direct),High,Yes,Strong CMB dipole anchor,Chiral bias Δp_LR ≈ 0.04, cosmic-scale SSV gradients
-019,Primary,Real observational anomaly,Cosmological,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-020,Primary,Real observational anomaly,Cosmological,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-021,Primary,Intermediate-mass black holes (IMBHs) in globular clusters, dwarf galaxies, high-z,Cosmological / High-z,Yes (predicted chiral asymmetry >0.02 in spin/mass ratios and flare polarization),High,Yes,Real IMBH observations + explicit chiral prediction,chiral bias Δp_LR ≈ 0.04, Capotauro nucleation (z ≈ 32), shadow point clustering, vertex aggregation, SSV enhancement
-022,Primary,High-redshift quasar spectroscopic emission line shifts (C IV, Mg II),Cosmological / High-z,Yes (chiral polarization asymmetry >0.02 in emission lines and continuum),High,Yes,JWST/VLT/Keck quasar spectroscopy anomaly,chiral bias Δp_LR ≈ 0.04, Capotauro nucleation, asymmetric hyperedges, SSV gradients, 600-Cell Redshift Discretization
-023,Primary,Dawn supernova at z ≈ 13–14 (JWST NIRCam/NIRSpec),Cosmological / High-z,Yes (chiral polarization asymmetry >0.02 in emission lines and continuum),High,Yes,JWST high-z supernova observation,chiral bias Δp_LR ≈ 0.04, Capotauro nucleation, asymmetric hyperedges, SSV gradients, shadow point-mediated energy release, shadow point cascades
-024,Primary,Real observational anomaly (specific name pending),— ,Yes,High,Yes,File present; consistent pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges
-025,Primary,Real observational anomaly (specific name pending),— ,Yes,High,Yes,File present; consistent pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges
-026,Primary,Quasar jet helicity & curvature (VLBI surveys),Galactic,Yes (direct),High,Yes,VLBI surveys – strong anchor,Chiral bias Δp_LR ≈ 0.04, lattice channeling, SSV gradients
-027,Primary,Stellar superflare handedness,Galactic,Yes,High,Yes,Extreme flare + polarization proxy,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-028,Secondary,Presolar grains isotopic anomalies,Galactic,Interpretive,Medium,No,Real anomaly; handedness CPP synthesis,Chiral bias Δp_LR ≈ 0.04, lattice channeling of ejecta
-029,Primary,Planck hemispherical asymmetry,Cosmological,Yes (direct ~3-4σ),High,Yes,CMB asymmetry anchor,Chiral bias Δp_LR ≈ 0.04, large-scale SSV gradients
-030,Primary,Planck Cold Spot anomaly,Cosmological,Yes,High,Yes,Legacy CMB significance,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-031,Primary,Mysterious star-making zone in Milky Way galactic center (Sgr B2),Galactic,Yes (chiral asymmetry >0.04 in molecular line polarizations),High,Yes,JWST NIRCam/MIRI imaging of Sgr B2,chiral-amplified SSV gradients, primordial bias Δp_LR ≈ 0.04, asymmetric hyperedges, directional torques
-032,Primary,Baby stars sculpting colossal hydrogen bubbles in LMC (N159),Galactic,Yes (chiral asymmetry >0.03 in Hα polarization),High,Yes,Hubble imaging of N159 in LMC,chiral bias Δp_LR ≈ 0.04, primordial SSV gradients, chiral torque
-033,Primary,LMC starburst asymmetry (intense star formation),Galactic,Yes (chiral asymmetry >0.035 in Hα/CO polarization),High,Yes,ISS astronaut photo + Hubble/ESA coverage of LMC,chiral-amplified lattice voids, SSV gradients Δp_LR ≈ 0.04
-034,Primary,Preferred rotation direction in early galaxies (JWST),High-z,Yes (preferred rotation handedness; >0.04 in rotation-polarization correlations),High,Yes,JWST NIRSpec/NIRCam of 263 high-z galaxies,primordial chiral bias Δp_LR ≈ 0.04, asymmetric SSV gradients, hyperedge torques
-035,Primary,Little Red Dots (LRDs) as young supermassive black holes,High-z,Yes (chiral asymmetry >0.04 in line polarization and outflow directions),High,Yes,JWST NIRSpec/NIRCam spectroscopy (RUBIES/JADES),chiral bias Δp_LR ≈ 0.04, chiral-amplified lattice voids, directional SSV gradients
-036,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges
-037,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-038,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, SSV gradients
-039,Primary,Real observational anomaly,Mixed,Yes,High,Yes,Consistent series pattern,Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges
-040,Primary,S-shaped quasar jets,Galactic,Yes (direct),High,Yes,VLBI helicity/curvature anchor,Chiral bias Δp_LR ≈ 0.04, lattice channeling
+"Swarm ID","Category","Experiment / Phenomenon Name","Scale","Handedness Mention?","Strength Rating","Counts toward n=60?","Notes / Reason","600-Cell Phenomena Observed"
+"001","Primary","Nonlinear Compton scattering for sharper gamma-ray beams","Quantum","Yes (predicted >0.02–0.04)","High","Yes","Real experiment + explicit chiral prediction","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges, SSV gradients"
+"002","Primary","Chiral fermion steering in topological material","Mesoscopic","Yes (direct lattice asymmetry)","High","Yes","Direct handedness enforcement","Asymmetric hyperedges, chiral bias Δp_LR ≈ 0.04"
+"003","Primary","Cloud-9 RELHIC Hubble imaging","Galactic","Yes (predicted pol/lensing)","High","Yes","Real astronomical object + chiral bias","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"004","Marginal / Theoretical","Ultra-metal-poor star SDSS J0715-7334 isolation","Galactic","Interpretive","Medium","No","Synthesis of real star; handedness CPP only","Lattice-protected pockets, chiral bias Δp_LR ≈ 0.04"
+"005","Primary","Negative heating in trapped-ion quantum simulator","Quantum","Yes (ΔT ∝ -Δp_LR, >0.02–0.04)","High","Yes","Real quantum experiment + explicit chiral prediction","Chiral bias Δp_LR ≈ 0.04, SSV gradients, shadow points"
+"006","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric SSV gradients, asymmetric hyperedges"
+"007","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges"
+"008","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"009","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"010","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"011","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"012","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"013","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"014","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"015","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"016","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"017","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"018","Primary","Planck cosmic dipole alignment","Cosmological","Yes (direct)","High","Yes","Strong CMB dipole anchor","Chiral bias Δp_LR ≈ 0.04, cosmic-scale SSV gradients"
+"019","Primary","Real observational anomaly","Cosmological","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"020","Primary","Real observational anomaly","Cosmological","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"021","Primary","Intermediate-mass black holes (IMBHs) in globular clusters, dwarf galaxies, high-z","Cosmological / High-z","Yes (predicted chiral asymmetry >0.02 in spin/mass ratios and flare polarization)","High","Yes","Real IMBH observations + explicit chiral prediction","chiral bias Δp_LR ≈ 0.04, Capotauro nucleation (z ≈ 32), shadow point clustering, vertex aggregation, SSV enhancement"
+"022","Primary","High-redshift quasar spectroscopic emission line shifts (C IV, Mg II)","Cosmological / High-z","Yes (chiral polarization asymmetry >0.02 in emission lines and continuum)","High","Yes","JWST/VLT/Keck quasar spectroscopy anomaly","chiral bias Δp_LR ≈ 0.04, Capotauro nucleation, asymmetric hyperedges, SSV gradients, 600-Cell Redshift Discretization"
+"023","Primary","Dawn supernova at z ≈ 13–14 (JWST NIRCam/NIRSpec)","Cosmological / High-z","Yes (chiral polarization asymmetry >0.02 in emission lines and continuum)","High","Yes","JWST high-z supernova observation","chiral bias Δp_LR ≈ 0.04, Capotauro nucleation, asymmetric hyperedges, SSV gradients, shadow point-mediated energy release, shadow point cascades"
+"024","Primary","Real observational anomaly (specific name pending)","—","Yes","High","Yes","File present; consistent pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges"
+"025","Primary","Real observational anomaly (specific name pending)","—","Yes","High","Yes","File present; consistent pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges"
+"026","Primary","Quasar jet helicity & curvature (VLBI surveys)","Galactic","Yes (direct)","High","Yes","VLBI surveys – strong anchor","Chiral bias Δp_LR ≈ 0.04, lattice channeling, SSV gradients"
+"027","Primary","Stellar superflare handedness","Galactic","Yes","High","Yes","Extreme flare + polarization proxy","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"028","Secondary","Presolar grains isotopic anomalies","Galactic","Interpretive","Medium","No","Real anomaly; handedness CPP synthesis","Chiral bias Δp_LR ≈ 0.04, lattice channeling of ejecta"
+"029","Primary","Planck hemispherical asymmetry","Cosmological","Yes (direct ~3-4σ)","High","Yes","CMB asymmetry anchor","Chiral bias Δp_LR ≈ 0.04, large-scale SSV gradients"
+"030","Primary","Planck Cold Spot anomaly","Cosmological","Yes","High","Yes","Legacy CMB significance","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"031","Primary","Mysterious star-making zone in Milky Way galactic center (Sgr B2)","Galactic","Yes (chiral asymmetry >0.04 in molecular line polarizations)","High","Yes","JWST NIRCam/MIRI imaging of Sgr B2","chiral-amplified SSV gradients, primordial bias Δp_LR ≈ 0.04, asymmetric hyperedges, directional torques"
+"032","Primary","Baby stars sculpting colossal hydrogen bubbles in LMC (N159)","Galactic","Yes (chiral asymmetry >0.03 in Hα polarization)","High","Yes","Hubble imaging of N159 in LMC","chiral bias Δp_LR ≈ 0.04, primordial SSV gradients, chiral torque"
+"033","Primary","LMC starburst asymmetry (intense star formation)","Galactic","Yes (chiral asymmetry >0.035 in Hα/CO polarization)","High","Yes","ISS astronaut photo + Hubble/ESA coverage of LMC","chiral-amplified lattice voids, SSV gradients Δp_LR ≈ 0.04"
+"034","Primary","Preferred rotation direction in early galaxies (JWST)","High-z","Yes (preferred rotation handedness; >0.04 in rotation-polarization correlations)","High","Yes","JWST NIRSpec/NIRCam of 263 high-z galaxies","primordial chiral bias Δp_LR ≈ 0.04, asymmetric SSV gradients, hyperedge torques"
+"035","Primary","Little Red Dots (LRDs) as young supermassive black holes","High-z","Yes (chiral asymmetry >0.04 in line polarization and outflow directions)","High","Yes","JWST NIRSpec/NIRCam spectroscopy (RUBIES/JADES)","chiral bias Δp_LR ≈ 0.04, chiral-amplified lattice voids, directional SSV gradients"
+"036","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients, asymmetric hyperedges"
+"037","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"038","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, SSV gradients"
+"039","Primary","Real observational anomaly","Mixed","Yes","High","Yes","Consistent series pattern","Chiral bias Δp_LR ≈ 0.04, asymmetric hyperedges"
+"040","Primary","S-shaped quasar jets","Galactic","Yes (direct)","High","Yes","VLBI helicity/curvature anchor","Chiral bias Δp_LR ≈ 0.04, lattice channeling"
 041,Primary,Lyman-α blob polarization,High-z,Yes,High,Yes,MUSE/VLT real data,Chiral bias Δp_LR ≈ 0.04, photon scattering asymmetry
 042,Primary,High-z supernova polarization,High-z,Yes,High,Yes,VLT/JWST real pol data,Chiral bias Δp_LR ≈ 0.04, ejecta handedness
 043,Primary,Blue monsters (z>10 galaxies),High-z,Yes,High,Yes,JWST brightness excess,Chiral bias Δp_LR ≈ 0.04, overmassive seed bias
