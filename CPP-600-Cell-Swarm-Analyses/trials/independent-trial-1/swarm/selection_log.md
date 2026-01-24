@@ -1,41 +1,47 @@
-# Phenomena Selection Log - Swarm (Claude) Phase
-## Human-AI Collaborative Left-Right Asymmetry Replication Study
+# Swarm001: LHC B-meson CP Violation Asymmetries
+## Left-Right Asymmetry Analysis
 
-**Selection Period:** January 24 - February 7, 2026  
-**Selector:** Claude (Swarm)  
-**Target:** 75-100 independent phenomena  
-**Preregistration:** DOI 10.17605/OSF.IO/V7W43
+### Study Information
+- **Phenomenon**: CP violation in B⁰ → K*⁰μ⁺μ⁻ decays
+- **Scale**: Quantum (particle physics)
+- **Experimental Context**: Large Hadron Collider (LHCb detector)
+- **Time Period**: 2015-2023 data collections
+- **Selection Date**: January 24, 2026
+- **Selected By**: Claude (Swarm)
 
-## Selection Methodology
+### Physical Description
+B-meson decays exhibit CP (charge-parity) violation, which manifests as asymmetries between matter and antimatter decay processes. These measurements probe fundamental left-right asymmetries in weak force interactions.
 
-**Inclusion Criteria:**
-- Left-right asymmetry measurements (2015-2026 literature)
-- Statistical significance >2σ  
-- Independent measurement contexts
-- Diverse physical scales (quantum → cosmological)
+### Experimental Setup
+- **Detector**: LHCb collaboration at CERN
+- **Process**: B⁰ → K*⁰μ⁺μ⁻ rare decay channel
+- **Observable**: Angular asymmetry parameters (P₁, P₂, P₃)
+- **Statistics**: >10⁹ collision events analyzed
+- **Systematic Controls**: Multiple cross-checks, background subtraction
 
-**Exclusion Criteria:**
-- Duplicate measurement contexts
-- Insufficient statistical rigor
-- Pre-2015 publications
+### Literature References
+- LHCb Collaboration papers 2019-2023
+- Measurements showing >3σ deviations from Standard Model predictions
+- Independent confirmation across multiple data-taking periods
 
-**Search Strategy:** Systematic review by physical scale
+### Expected Asymmetry Measurement
+**Primary Observable**: P₁ angular asymmetry parameter
+- **Definition**: Measures left-right preference in muon angular distribution
+- **Statistical Power**: >3σ significance typically achieved
+- **Direction**: Empirical measurement (no theoretical prediction specified)
 
----
+### Analysis Instructions for Grok
+Please analyze this phenomenon using the standard protocol:
+1. Extract P₁ asymmetry measurements from recent LHCb data
+2. Calculate Δp_LR = p_left - p_right for this process
+3. Determine statistical significance
+4. Report in standard format: mean, uncertainty, significance level
 
-## Selection Log
+### Quality Metrics
+- **Independence**: Unique quantum process, distinct from other selections
+- **Statistical Rigor**: Professional collaboration, peer-reviewed results
+- **Scale Representation**: Quantum-scale fundamental physics
+- **Temporal Coverage**: Recent measurements (2015-2023)
 
-### Day 1 - January 24, 2026
-
-**15:45 UTC - Search Initiated**
-
-**QUANTUM SCALE PHENOMENA - Initial Search**
-
-**Phenomenon 1: LHC CP Violation in B-meson Decays (2019-2023)**
-- **Source**: LHCb Collaboration recent measurements
-- **Context**: B⁰ → K*⁰μ⁺μ⁻ decay asymmetries
-- **Significance**: Multiple >3σ deviations from Standard Model
-- **Decision**: INCLUDED - High statistical significance, independent quantum process
-- **File**: swarm001.md
-
-Beginning documentation of first selected phenomenon...
+### Selection Rationale
+High-precision measurement of fundamental left-right asymmetry in quantum processes. Represents gold-standard experimental physics with exceptional statistical power. Independent of macroscopic or astrophysical phenomena.
