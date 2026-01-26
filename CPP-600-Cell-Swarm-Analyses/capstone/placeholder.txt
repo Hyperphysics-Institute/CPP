@@ -1,3 +1,0 @@
-THis is an empty file.
-https://github.com/tlabshier/CPP/blob/main/CPP-600-Cell-Swarm-Analyses/capstone/placeholder.txt
-I am trying to delete this file.
