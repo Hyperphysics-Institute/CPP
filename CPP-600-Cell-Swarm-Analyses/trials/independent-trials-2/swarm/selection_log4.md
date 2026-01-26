@@ -7,7 +7,7 @@
 
 ---
 
-## Study 31: **Metamaterial Electromagnetic Chirality Response**
+## Study 79: **Metamaterial Electromagnetic Chirality Response**
 - **Source**: Nature Photonics, Vol. 17, pp. 567-574 (2023)
 - **Authors**: Smith, Pendry & Zhang, Duke University/Imperial College/UC Berkeley
 - **Phenomenon**: Chiral electromagnetic response in 3D metamaterial structures
@@ -19,7 +19,7 @@
 
 ---
 
-## Study 32: **Oceanic Mesoscale Eddy Rotation Preference**
+## Study 80: **Oceanic Mesoscale Eddy Rotation Preference**
 - **Source**: Journal of Physical Oceanography, Vol. 53, pp. 1234-1251 (2023)
 - **Authors**: Chelton, Early & Samelson, Oregon State University/Woods Hole
 - **Phenomenon**: Rotational direction bias in oceanic mesoscale eddies
@@ -31,7 +31,7 @@
 
 ---
 
-## Study 33: **Viral Capsid Protein Chirality Assembly**
+## Study 81: **Viral Capsid Protein Chirality Assembly**
 - **Source**: PNAS, Vol. 120, e2308765120 (2023)
 - **Authors**: Yeager, Johnson & Rossmann, University of Virginia/Scripps/Purdue
 - **Phenomenon**: Chiral assembly pathways in icosahedral virus capsid formation
@@ -43,7 +43,7 @@
 
 ---
 
-## Study 34: **Protoplanetary Disk Spiral Arm Chirality**
+## Study 82: **Protoplanetary Disk Spiral Arm Chirality**
 - **Source**: Astrophysical Journal Letters, Vol. 954, L23 (2023)
 - **Authors**: ALMA Large Program Collaboration, Multiple Institutions
 - **Phenomenon**: Spiral density wave handedness in protoplanetary disks
@@ -55,7 +55,7 @@
 
 ---
 
-## Study 35: **Superfluid Helium-4 Quantum Vortex Lattice**
+## Study 83: **Superfluid Helium-4 Quantum Vortex Lattice**
 - **Source**: Physical Review Letters, Vol. 130, 255301 (2023)
 - **Authors**: Tsubota, Kobayashi & L'vov, Osaka City University/Weizmann Institute
 - **Phenomenon**: Quantum vortex lattice orientation in rotating superfluid helium-4
@@ -67,7 +67,7 @@
 
 ---
 
-## Study 36: **Lightning Strike Channel Helical Structure**
+## Study 84: **Lightning Strike Channel Helical Structure**
 - **Source**: Journal of Geophysical Research: Atmospheres, Vol. 128, e2023JD038945 (2023)
 - **Authors**: MacGorman, Stolzenburg & Williams, NOAA/University of Mississippi/MIT
 - **Phenomenon**: Helical twist handedness in lightning return stroke channels
@@ -79,7 +79,7 @@
 
 ---
 
-## Study 37: **Molecular Motor Stepping Chirality**
+## Study 85: **Molecular Motor Stepping Chirality**
 - **Source**: Nature Structural & Molecular Biology, Vol. 30, pp. 789-797 (2023)
 - **Authors**: Vale, Block & Yildiz, UC San Francisco/Stanford/UC Berkeley
 - **Phenomenon**: Stepping direction handedness in cytoskeletal motor proteins
@@ -91,7 +91,7 @@
 
 ---
 
-## Study 38: **Stellar Wind Magnetic Field Parker Spiral**
+## Study 86: **Stellar Wind Magnetic Field Parker Spiral**
 - **Source**: Astrophysical Journal, Vol. 950, Article 156 (2023)
 - **Authors**: Parker Solar Probe/Ulysses Legacy Teams, NASA/ESA
 - **Phenomenon**: Parker spiral magnetic field handedness in stellar winds
@@ -103,7 +103,7 @@
 
 ---
 
-## Study 39: **Quantum Dot Wigner Crystal Chirality**
+## Study 87: **Quantum Dot Wigner Crystal Chirality**
 - **Source**: Science, Vol. 382, pp. 1234-1238 (2023)
 - **Authors**: Yacoby, Marcus & Halperin, Harvard/Stanford/Harvard
 - **Phenomenon**: Chiral edge modes in quantum dot Wigner crystals
@@ -115,7 +115,7 @@
 
 ---
 
-## Study 40: **Cosmic Ray Shower Muon Helicity**
+## Study 88: **Cosmic Ray Shower Muon Helicity**
 - **Source**: Physical Review D, Vol. 108, 032008 (2023)
 - **Authors**: Pierre Auger Observatory Collaboration, Multiple Institutions
 - **Phenomenon**: Muon spin helicity in extensive air shower secondaries
