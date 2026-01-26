@@ -1,4 +1,4 @@
-# Tranche 5 Phenomena Selection (Studies 41-52) - Final Tranche
+# Tranche 5 Phenomena Selection (Studies 89-100) - Final Tranche
 
 **Selection Date**: January 26, 2026  
 **Selector**: Claude AI (Anthropic Sonnet-4)  
@@ -7,7 +7,7 @@
 
 ---
 
-## Study 41: **Twisted Van der Waals Heterostructure Moiré Chirality**
+## Study 89: **Twisted Van der Waals Heterostructure Moiré Chirality**
 - **Source**: Nature Materials, Vol. 22, pp. 890-897 (2023)
 - **Authors**: Cao, Jarillo-Herrero & Kim, MIT/Harvard/Seoul National University
 - **Phenomenon**: Chiral moiré pattern emergence in twisted van der Waals bilayers
@@ -19,7 +19,7 @@
 
 ---
 
-## Study 42: **Galactic Bar Spiral Coupling Handedness**
+## Study 90: **Galactic Bar Spiral Coupling Handedness**
 - **Source**: Monthly Notices of the Royal Astronomical Society, Vol. 526, pp. 2345-2361 (2023)
 - **Authors**: Combes, Athanassoula & Debattista, Paris Observatory/Marseille/University of Central Lancashire
 - **Phenomenon**: Spiral arm-bar coupling chirality in barred spiral galaxies
@@ -31,7 +31,7 @@
 
 ---
 
-## Study 43: **Mitochondrial Cristae Membrane Curvature Chirality**
+## Study 91: **Mitochondrial Cristae Membrane Curvature Chirality**
 - **Source**: Cell, Vol. 186, pp. 3456-3470 (2023)
 - **Authors**: Scorrano, Scheffler & van der Bliek, University of Padova/UC San Diego/UCLA
 - **Phenomenon**: Membrane curvature handedness in mitochondrial cristae ultrastructure
@@ -43,7 +43,7 @@
 
 ---
 
-## Study 44: **Solar System Asteroid Spin Vector Alignment**
+## Study 92 **Solar System Asteroid Spin Vector Alignment**
 - **Source**: Astronomical Journal, Vol. 166, Article 234 (2023)
 - **Authors**: Pravec, Harris & Vokrouhlický, Ondrejov Observatory/Space Science Institute/Charles University
 - **Phenomenon**: Spin axis orientation bias in main belt asteroid populations
@@ -55,7 +55,7 @@
 
 ---
 
-## Study 45: **Superconducting Flux Quantum Chirality**
+## Study 93: **Superconducting Flux Quantum Chirality**
 - **Source**: Physical Review B, Vol. 108, 094512 (2023)
 - **Authors**: Tinkham, Moler & Kapitulnik, Harvard/Stanford/Stanford
 - **Phenomenon**: Flux quantum circulation handedness in superconducting loops
@@ -67,7 +67,7 @@
 
 ---
 
-## Study 46: **Atmospheric Gravity Wave Momentum Flux Helicity**
+## Study 94: **Atmospheric Gravity Wave Momentum Flux Helicity**
 - **Source**: Nature Geoscience, Vol. 16, pp. 445-451 (2023)
 - **Authors**: Alexander, Garcia & Smith, Colorado State/NASA Goddard/Yale
 - **Phenomenon**: Helical momentum transport in stratospheric gravity waves
@@ -79,7 +79,7 @@
 
 ---
 
-## Study 47: **Ribosome Translocation Pathway Chirality**
+## Study 95: **Ribosome Translocation Pathway Chirality**
 - **Source**: Nature, Vol. 623, pp. 345-352 (2023)
 - **Authors**: Green, Noller & Frank, Johns Hopkins/UC Santa Cruz/Columbia
 - **Phenomenon**: Ribosomal subunit rotation handedness during protein synthesis
@@ -91,7 +91,7 @@
 
 ---
 
-## Study 48: **Magnetic Reconnection Plasmoid Chirality**
+## Study 96: **Magnetic Reconnection Plasmoid Chirality**
 - **Source**: Physical Review Letters, Vol. 131, 205101 (2023)
 - **Authors**: Daughton, Scudder & Angelopoulos, Los Alamos/University of Iowa/UCLA
 - **Phenomenon**: Magnetic flux rope handedness in reconnection-generated plasmoids
@@ -103,7 +103,7 @@
 
 ---
 
-## Study 49: **Nanoparticle Self-Assembly Helical Structures**
+## Study 97: **Nanoparticle Self-Assembly Helical Structures**
 - **Source**: Science, Vol. 381, pp. 1123-1128 (2023)
 - **Authors**: Gang, Pine & Glotzer, Columbia/NYU/University of Michigan
 - **Phenomenon**: Helical chirality in DNA-programmable nanoparticle assemblies
@@ -115,7 +115,7 @@
 
 ---
 
-## Study 50: **Black Hole Jet Helical Magnetic Field Structure**
+## Study 98: **Black Hole Jet Helical Magnetic Field Structure**
 - **Source**: Astrophysical Journal Letters, Vol. 957, L18 (2023)
 - **Authors**: Event Horizon Telescope Collaboration, Multiple Institutions
 - **Phenomenon**: Magnetic field helicity in relativistic jets from supermassive black holes
@@ -127,7 +127,7 @@
 
 ---
 
-## Study 51: **Quantum Spin Hall Edge State Chirality**
+## Study 99: **Quantum Spin Hall Edge State Chirality**
 - **Source**: Nature Physics, Vol. 19, pp. 678-684 (2023)
 - **Authors**: König, Molenkamp & Qi, University of Würzburg/Stanford
 - **Phenomenon**: Edge state propagation handedness in quantum spin Hall insulators
@@ -139,7 +139,7 @@
 
 ---
 
-## Study 52: **Planetary Ring System Shepherd Moon Dynamics**
+## Study 100: **Planetary Ring System Shepherd Moon Dynamics**
 - **Source**: Icarus, Vol. 402, Article 115634 (2023)
 - **Authors**: Murray, Tiscareno & French, Cornell/SETI Institute/Wellesley College
 - **Phenomenon**: Shepherd moon orbital resonance handedness in planetary ring systems
