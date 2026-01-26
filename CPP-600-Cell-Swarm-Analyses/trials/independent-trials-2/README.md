@@ -175,4 +175,4 @@ Reference: Anthropic Claude Sonnet-4 selection protocol documentation
 
 This study demonstrates transparent hypothesis refinement in response to empirical evidence and exemplifies adaptive preregistration methodology. The collaboration between human researcher and AI system provides a novel approach to bias-reduced scientific investigation.
 
-**Conflict of Interest**: No financial conflicts. Thomas Abshier developed both original and refined h
+**Conflict of Interest**: No financial conflicts. Thomas Abshier developed both original and refined hypotheses; Claude AI maintains analytical independence without outcome preference.
