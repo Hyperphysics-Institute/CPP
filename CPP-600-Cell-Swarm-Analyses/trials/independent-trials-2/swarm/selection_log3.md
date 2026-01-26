@@ -7,7 +7,7 @@
 
 ---
 
-## Study 21: **Magnetic Skyrmion Chirality in Chiral Magnets**
+## Study 69: **Magnetic Skyrmion Chirality in Chiral Magnets**
 - **Source**: Science, Vol. 382, pp. 456-461 (2023)
 - **Authors**: Tokura, Mühlbauer & Adams, University of Tokyo/Technical University of Munich
 - **Phenomenon**: Spontaneous skyrmion handedness in B20-type chiral magnets
@@ -19,7 +19,7 @@
 
 ---
 
-## Study 22: **Exoplanet Atmospheric Circulation Patterns**
+## Study 70: **Exoplanet Atmospheric Circulation Patterns**
 - **Source**: Nature Astronomy, Vol. 7, pp. 234-242 (2023)
 - **Authors**: Showman, Lewis & Fortney, University of Arizona/Space Science Institute
 - **Phenomenon**: Atmospheric jet stream handedness in tidally locked hot Jupiters
@@ -31,7 +31,7 @@
 
 ---
 
-## Study 23: **Protein Folding Pathway Chirality**
+## Study 71: **Protein Folding Pathway Chirality**
 - **Source**: Cell, Vol. 186, pp. 2145-2158 (2023)
 - **Authors**: Baker, Hummer & Shaw, University of Washington/Max Planck Institute
 - **Phenomenon**: Handedness preference in protein folding intermediate pathways
@@ -43,7 +43,7 @@
 
 ---
 
-## Study 24: **Solar Coronal Loop Writhe Asymmetry**
+## Study 72: **Solar Coronal Loop Writhe Asymmetry**
 - **Source**: Astrophysical Journal, Vol. 948, Article 89 (2023)
 - **Authors**: Parker Solar Probe/Solar Dynamics Observatory Teams, NASA/Stanford
 - **Phenomenon**: Magnetic field line writhe handedness in solar coronal loops
@@ -55,7 +55,7 @@
 
 ---
 
-## Study 25: **Quantum Spin Liquid Chirality Fluctuations**
+## Study 73: **Quantum Spin Liquid Chirality Fluctuations**
 - **Source**: Physical Review Letters, Vol. 131, 087201 (2023)
 - **Authors**: Balents, Hermele & Lee, UC Santa Barbara/University of Colorado Boulder/Stanford
 - **Phenomenon**: Chiral correlation fluctuations in frustrated quantum magnets
@@ -67,7 +67,7 @@
 
 ---
 
-## Study 26: **Atmospheric River Moisture Transport Helicity**
+## Study 74: **Atmospheric River Moisture Transport Helicity**
 - **Source**: Journal of Climate, Vol. 36, pp. 4567-4583 (2023)
 - **Authors**: Ralph, Dettinger & Rutz, Scripps Institution/UC San Diego
 - **Phenomenon**: Helical structure in atmospheric river moisture transport
@@ -79,7 +79,7 @@
 
 ---
 
-## Study 27: **Bacterial Biofilm Spiral Growth Patterns**
+## Study 75: **Bacterial Biofilm Spiral Growth Patterns**
 - **Source**: Nature Microbiology, Vol. 8, pp. 445-454 (2023)
 - **Authors**: Suel, Mugler & Dunkel, UC San Diego/Purdue/MIT
 - **Phenomenon**: Spiral expansion handedness in bacterial biofilm colonies
@@ -91,7 +91,7 @@
 
 ---
 
-## Study 28: **Pulsar Wind Nebula Magnetic Field Helicity**
+## Study 76: **Pulsar Wind Nebula Magnetic Field Helicity**
 - **Source**: Astronomy & Astrophysics, Vol. 679, A78 (2023)
 - **Authors**: Gaensler, Bucciantini & Arons, University of Toronto/INAF/UC Berkeley
 - **Phenomenon**: Magnetic field helicity in pulsar wind nebulae
@@ -103,7 +103,7 @@
 
 ---
 
-## Study 29: **Liquid-Liquid Phase Separation Droplet Chirality**
+## Study 77: **Liquid-Liquid Phase Separation Droplet Chirality**
 - **Source**: Science, Vol. 381, pp. 789-794 (2023)
 - **Authors**: Brangwynne, Weber & Hyman, Princeton/Washington University/Max Planck Institute
 - **Phenomenon**: Chiral internal flow patterns in biomolecular condensates
@@ -115,7 +115,7 @@
 
 ---
 
-## Study 30: **Galaxy Cluster Weak Lensing Shear Correlation**
+## Study 78: **Galaxy Cluster Weak Lensing Shear Correlation**
 - **Source**: Physical Review D, Vol. 108, 083521 (2023)
 - **Authors**: Dark Energy Survey Collaboration, Fermilab/Multiple Institutions
 - **Phenomenon**: Cosmic shear B-mode correlation asymmetry around galaxy clusters
