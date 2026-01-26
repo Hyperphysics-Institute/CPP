@@ -7,7 +7,7 @@
 
 ---
 
-## Study 1: **Quantum Vortex Chirality in Superfluid Helium-3**
+## Study 49: **Quantum Vortex Chirality in Superfluid Helium-3**
 - **Source**: Nature Physics, Vol. 18, pp. 234-240 (2022)
 - **Authors**: Yamamoto et al., University of Tokyo
 - **Phenomenon**: Spontaneous chiral vortex formation in rotating superfluid 3He-B phase
@@ -18,7 +18,7 @@
 
 ---
 
-## Study 2: **Asymmetric Photon Emission from Magnetized Neutron Stars**
+## Study 50: **Asymmetric Photon Emission from Magnetized Neutron Stars**
 - **Source**: Astrophysical Journal, Vol. 945, Article 67 (2023)
 - **Authors**: Chen, Rodriguez & Singh, Caltech/JPL
 - **Phenomenon**: Polarized X-ray emission asymmetry from pulsar magnetospheres
@@ -29,7 +29,7 @@
 
 ---
 
-## Study 3: **Chiral Selection in Autocatalytic RNA Networks**
+## Study 51: **Chiral Selection in Autocatalytic RNA Networks**
 - **Source**: PNAS, Vol. 120, e2301456120 (2023)
 - **Authors**: Williams, Park & Thompson, Harvard Medical School
 - **Phenomenon**: Spontaneous chirality emergence in prebiotic RNA replication
@@ -40,7 +40,7 @@
 
 ---
 
-## Study 4: **Spiral Galaxy Arm Chirality Distribution**
+## Study 52: **Spiral Galaxy Arm Chirality Distribution**
 - **Source**: Monthly Notices of the Royal Astronomical Society, Vol. 518, pp. 1247-1261 (2024)
 - **Authors**: Kumar et al., European Southern Observatory
 - **Phenomenon**: Statistical analysis of spiral arm winding direction in nearby galaxies
@@ -51,7 +51,7 @@
 
 ---
 
-## Study 5: **Quantum Dot Exciton Spin Orientation**
+## Study 53: **Quantum Dot Exciton Spin Orientation**
 - **Source**: Physical Review Letters, Vol. 131, 167401 (2023)
 - **Authors**: Liu, Anderson & Petrov, MIT/Stanford collaboration
 - **Phenomenon**: Spontaneous exciton spin polarization in InAs quantum dots
@@ -62,7 +62,7 @@
 
 ---
 
-## Study 6: **Atmospheric Gravity Wave Helicity**
+## Study 54: **Atmospheric Gravity Wave Helicity**
 - **Source**: Journal of Atmospheric Sciences, Vol. 80, pp. 892-907 (2023)
 - **Authors**: Morrison & Lee, NOAA/University of Colorado
 - **Phenomenon**: Mesoscale atmospheric wave propagation chirality
@@ -73,7 +73,7 @@
 
 ---
 
-## Study 7: **Chiral Magnetic Domain Walls in Multilayer Films**
+## Study 55: **Chiral Magnetic Domain Walls in Multilayer Films**
 - **Source**: Nature Materials, Vol. 22, pp. 567-574 (2023)
 - **Authors**: Nakamura, Schmidt & Zhou, RIKEN/Max Planck Institute
 - **Phenomenon**: Domain wall chirality in magnetic multilayer heterostructures
@@ -84,7 +84,7 @@
 
 ---
 
-## Study 8: **Bacterial Flagellar Motor Rotation Bias**
+## Study 56: **Bacterial Flagellar Motor Rotation Bias**
 - **Source**: Cell, Vol. 186, pp. 1234-1248 (2023)
 - **Authors**: Garcia, Patel & Williams, UC San Francisco
 - **Phenomenon**: Spontaneous rotational direction preference in bacterial flagella
@@ -95,7 +95,7 @@
 
 ---
 
-## Study 9: **Solar Wind Alfvén Wave Polarization**
+## Study 57: **Solar Wind Alfvén Wave Polarization**
 - **Source**: Astrophysical Journal Letters, Vol. 956, L12 (2023)
 - **Authors**: Parker Solar Probe Collaboration, NASA/APL
 - **Phenomenon**: Alfvén wave circular polarization in solar wind plasma
@@ -106,7 +106,7 @@
 
 ---
 
-## Study 10: **Liquid Crystal Cholesteric Twist Handedness**
+## Study 58: **Liquid Crystal Cholesteric Twist Handedness**
 - **Source**: Physical Review E, Vol. 107, 054701 (2023)
 - **Authors**: Thompson, Chen & Rodriguez, University of Pennsylvania
 - **Phenomenon**: Spontaneous helical twist direction in cholesteric liquid crystals
