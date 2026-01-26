@@ -11,7 +11,8 @@ This repository contains the pilot phase of an amended meta-analysis investigati
 **Principal Investigator**: Thomas Abshier  
 **AI Collaborator**: Claude (Anthropic Sonnet-4)  
 **Amendment Date**: January 26, 2026  
-**OSF Registration**: [Link to OSF preregistration]
+**OSF Registration**: (https://osf.io/qjf6w)  
+**DOI**: 10.17605/OSF.IO/V7W43
 
 ## Hypothesis
 
