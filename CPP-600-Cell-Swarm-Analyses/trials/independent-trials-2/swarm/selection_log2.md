@@ -7,7 +7,7 @@
 
 ---
 
-## Study 11: **Chiral Phonon Modes in Twisted Bilayer Graphene**
+## Study 59: **Chiral Phonon Modes in Twisted Bilayer Graphene**
 - **Source**: Nature, Vol. 623, pp. 78-84 (2023)
 - **Authors**: Wang, Kim & Liu, Columbia University/Seoul National University
 - **Phenomenon**: Asymmetric phonon propagation in magic-angle twisted bilayer graphene
@@ -19,7 +19,7 @@
 
 ---
 
-## Study 12: **Planetary Magnetosphere Current Helicity**
+## Study 60: **Planetary Magnetosphere Current Helicity**
 - **Source**: Journal of Geophysical Research: Space Physics, Vol. 128, e2023JA031456 (2023)
 - **Authors**: Johnson, Martinez & O'Brien, NASA Goddard/University of Michigan
 - **Phenomenon**: Field-aligned current helicity in Jupiter's magnetosphere
@@ -31,7 +31,7 @@
 
 ---
 
-## Study 13: **Enzymatic Reaction Pathway Chirality**
+## Study 61: **Enzymatic Reaction Pathway Chirality**
 - **Source**: Biochemistry, Vol. 62, pp. 4567-4578 (2023)
 - **Authors**: Anderson, Patel & Chen, UC Berkeley/Scripps Research
 - **Phenomenon**: Stereoselective product formation in promiscuous enzyme reactions
@@ -43,7 +43,7 @@
 
 ---
 
-## Study 14: **Coronal Mass Ejection Magnetic Flux Rope Chirality**
+## Study 62: **Coronal Mass Ejection Magnetic Flux Rope Chirality**
 - **Source**: Astrophysical Journal, Vol. 952, Article 134 (2023)
 - **Authors**: Solar Orbiter Consortium, ESA/NASA
 - **Phenomenon**: Magnetic flux rope handedness in coronal mass ejections
@@ -55,7 +55,7 @@
 
 ---
 
-## Study 15: **Topological Insulator Surface State Chirality**
+## Study 63: **Topological Insulator Surface State Chirality**
 - **Source**: Physical Review Letters, Vol. 130, 236801 (2023)
 - **Authors**: Zhang, Wilson & Kumar, Princeton University/Bell Labs
 - **Phenomenon**: Chiral edge state propagation in 3D topological insulators
@@ -67,7 +67,7 @@
 
 ---
 
-## Study 16: **Hurricane Eye Wall Vorticity Asymmetry**
+## Study 64: **Hurricane Eye Wall Vorticity Asymmetry**
 - **Source**: Journal of the Atmospheric Sciences, Vol. 80, pp. 2234-2251 (2023)
 - **Authors**: Rodriguez, Kim & Thompson, NOAA Hurricane Research Division
 - **Phenomenon**: Vertical vorticity distribution asymmetry in hurricane eye walls
@@ -79,7 +79,7 @@
 
 ---
 
-## Study 17: **Quantum Hall Edge Current Chirality**
+## Study 65: **Quantum Hall Edge Current Chirality**
 - **Source**: Nature Physics, Vol. 19, pp. 445-451 (2023)
 - **Authors**: Nakamura, Schmidt & Lee, University of Tokyo/RIKEN
 - **Phenomenon**: Edge current propagation direction in fractional quantum Hall systems
@@ -91,7 +91,7 @@
 
 ---
 
-## Study 18: **Protostar Disk Rotation Direction**
+## Study 66: **Protostar Disk Rotation Direction**
 - **Source**: Astronomy & Astrophysics, Vol. 678, A45 (2023)
 - **Authors**: Mueller, Gonzalez & Williams, Max Planck Institute for Astronomy/ALMA Observatory
 - **Phenomenon**: Protoplanetary disk rotation handedness relative to molecular cloud angular momentum
@@ -103,7 +103,7 @@
 
 ---
 
-## Study 19: **DNA Origami Supercoiling Handedness**
+## Study 67: **DNA Origami Supercoiling Handedness**
 - **Source**: Nature Nanotechnology, Vol. 18, pp. 892-899 (2023)
 - **Authors**: Park, Johnson & Liu, Harvard University/Caltech
 - **Phenomenon**: Spontaneous supercoiling direction in circular DNA origami structures
@@ -115,7 +115,7 @@
 
 ---
 
-## Study 20: **Galactic Halo Dark Matter Substructure Rotation**
+## Study 68: **Galactic Halo Dark Matter Substructure Rotation**
 - **Source**: Monthly Notices of the Royal Astronomical Society, Vol. 525, pp. 3456-3471 (2023)
 - **Authors**: Cosmic Dawn Survey Collaboration, Multiple Institutions
 - **Phenomenon**: Angular momentum orientation of dark matter subhalos in galactic halos
