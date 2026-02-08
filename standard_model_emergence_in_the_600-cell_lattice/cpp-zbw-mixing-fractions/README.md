@@ -14,7 +14,7 @@ Preregistration: Muon g-2 Anomaly Prediction
 Date of preregistration: February 07, 2026
 Target experiment: Final Fermilab Muon g-2 result (Run 2/3 combined, expected late 2026)
 Predicted deviation: δμ = a_μ^theory - a_μ^exp ≈ (2.0 – 3.0) × 10⁻⁷
-Paper reference: Conscious Point Physics Paper 2 (Version 27), Appendix I: Orbital ZBW Mixing for Quarks/Leptons standard_model_emergence_in_the_600-cell_lattice/papers/paper_2_mass_generation_from_geometric_hierarchies_and_cage_complexity.tex
+Paper reference: Conscious Point Physics Paper 2 (Version 27), Appendix I: Orbital ZBW Mixing for Quarks/Leptons standard_model_emergence_in_the_600-cell_lattice/papers/paper_2_mass_generation_from_geometric_hierarchies_and_cage_complexity
 
 Model Basis
 In CPP, the muon anomalous magnetic moment receives a small additional contribution from fractional mixing of DP types in orbital Zitterbewegung (ZBW) for N_k=4 tetrahedral cages (muon). The equilibrium mixing fractions are calculated via energy minimization + thermal averaging (see notebooks/lepton_zbw_mixing.ipynb and src/mixing_calculator.py):
@@ -77,4 +77,4 @@ cpp-zbw-mixing-fractions/
 This dual licensing ensures code can be freely reused/modified while scientific outputs require attribution.
 
 For the broader 600-cell study, see the parent directory: 
-https://github.com/tlabshier/CPP/edit/main/standard_model_emergence_in_the_600-cell_lattice/
+https://github.com/tlabshier/CPP/tree/main/standard_model_emergence_in_the_600-cell_lattice/
