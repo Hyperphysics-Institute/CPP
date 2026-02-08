@@ -1,50 +1,3 @@
-# CPP ZBW Mixing Fractions
-
-Python scripts and Jupyter notebooks for calculating orbital Zitterbewegung (ZBW) dipole pair (DP) composition (mixing fractions of eDP, qDP, hDP) in Conscious Point Physics (CPP). 
-
-This repository reproduces the derived mixing fractions used in *Paper 2: Mass Generation from Symmetry Breaking in the 600-Cell Lattice* (Version 27), including:
-- Lepton case: ~68.5% eDP-dominant (muon example), supporting the muon g-2 anomaly prediction.
-- Quark case: ~74% qDP-dominant (up quark example), with slight variation for heavier generations (higher N_k).
-
-The calculations use SSV energy minimization + Boltzmann thermal averaging, with gradients modulated by the golden ratio φ ≈ 1.618 from 600-cell geometry.
-
-## Features
-
-- Reproducible mixing fraction results for leptons and quarks
-- Parameter sensitivity analysis (N_k, thermal scale T)
-- Visualization: pie charts and N_k dependence plots
-- Supports predictions in Paper 2 (e.g., muon g-2 δ_μ ≈ (2.0–3.0) × 10⁻⁷)
-
-## Repository Structure
-
-cpp-zbw-mixing-fractions/
-├── README.md                     # This file: overview + preregistration protocol
-├── LICENSE                       # License terms (MIT recommended)
-├── notebooks/
-│   ├── lepton_zbw_mixing.ipynb   # Muon-specific ZBW mixing + pie chart generation
-│   └── quark_zbw_mixing.ipynb    # Quark mixing + N_k sensitivity sweep
-├── src/
-│   └── mixing_calculator.py      # Reusable module for fraction calculations
-└── figures/
-    ├── lepton_pie_chart.png      # Muon orbital ZBW composition (68.5% eDP)
-    ├── quark_pie_chart.png       # Up-quark orbital ZBW composition (74% qDP)
-    └── sensitivity_plot.png      # Dominant fraction vs. cage size N_k (log scale)
-
-
-## Repository Structure
-
-| Path                              | Description                                                                 |
-|-----------------------------------|-----------------------------------------------------------------------------|
-| `README.md`                       | Project overview, preregistration protocol, and reproducibility instructions |
-| `LICENSE`                         | License (MIT recommended for code; CC-BY 4.0 optional for scientific content) |
-| `notebooks/lepton_zbw_mixing.ipynb` | Calculates and visualizes muon ZBW mixing fractions (~68.5% eDP dominant)   |
-| `notebooks/quark_zbw_mixing.ipynb`  | Quark mixing fractions + N_k sensitivity analysis across generations        |
-| `src/mixing_calculator.py`        | Core Python module for DP mixing fraction calculations                      |
-| `figures/lepton_pie_chart.png`    | Pie chart: Muon orbital ZBW composition                                     |
-| `figures/quark_pie_chart.png`     | Pie chart: Up-quark orbital ZBW composition                                 |
-| `figures/sensitivity_plot.png`    | Line plot: qDP dominance vs. cage size N_k (log scale)                     |
-    
-
 # CPP ZBW Mixing Fractions – Muon g-2 Preregistration
 
 **Preregistered prediction (Feb 07, 2026)**: Fermilab muon g-2 final result (late 2026) will show δμ ≈ (2.0–3.0) × 10⁻⁷ from fractional DP mixing in orbital ZBW.
@@ -52,6 +5,12 @@ cpp-zbw-mixing-fractions/
 Python scripts and Jupyter notebooks for calculating orbital Zitterbewegung (ZBW) dipole pair (DP) composition (mixing fractions of eDP, qDP, hDP) in Conscious Point Physics (CPP).  
 
 This reproduces the mixing fractions used in *Paper 2: Mass Generation from Symmetry Breaking in the 600-Cell Lattice* (Version 27), supporting the muon g-2 anomaly prediction.
+
+## Features
+- Reproducible mixing fraction results for leptons and quarks
+- Parameter sensitivity analysis (N_k, thermal scale T)
+- Visualization: pie charts and N_k dependence plots
+- Supports predictions in Paper 2 (e.g., muon g-2 δμ ≈ (2.0–3.0) × 10⁻⁷)
 
 ## Preregistration: Muon g-2 Anomaly Prediction
 
@@ -98,13 +57,3 @@ All calculations are fully reproducible:
 This prediction is made without knowledge of the final Fermilab combination (as of February 07, 2026). Any future model updates will be versioned separately and clearly marked as post-preregistration revisions.
 
 ## Repository Structure (relative to cpp-zbw-mixing-fractions/)
-
-- `notebooks/` → Jupyter notebooks for lepton and quark calculations  
-- `src/` → Reusable Python module (`mixing_calculator.py`)  
-- `figures/` → Generated pie charts and sensitivity plot  
-
-## License
-MIT License (or CC-BY 4.0 if preferred for scientific content) — see LICENSE file.
-
-For the broader 600-cell study, see the parent directory: 
-https://github.com/tlabshier/CPP/edit/main/standard_model_emergence_in_the_600-cell_lattice/cpp-zbw-mixing-fractions/README.md
