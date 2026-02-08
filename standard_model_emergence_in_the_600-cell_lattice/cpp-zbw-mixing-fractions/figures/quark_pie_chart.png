@@ -1,1 +1,10 @@
+quark_pie_chart.png  Type: Pie chart  
+Purpose: Shows the orbital ZBW DP mixing fractions for a representative quark (e.g., up quark, N_k=1 minimal cage).  
+Key content:  Three slices labeled 'qDP', 'hDP', 'eDP' (order reversed from lepton to reflect quark preference)  
+Colors: likely orange/blue/green or similar palette  
+Approximate fractions: ~74% qDP (dominant), with smaller hDP and eDP shares  
+Title: something like "Quark Orbital ZBW DP Composition (Up Quark, N_k=1)"
+
+Interpretation: Illustrates the strong qDP preference in quarks due to reversed gradient ordering (qDP lowest energy → most probable). This is the baseline for down-type quarks having additional linear ZBW extras.
+
 
