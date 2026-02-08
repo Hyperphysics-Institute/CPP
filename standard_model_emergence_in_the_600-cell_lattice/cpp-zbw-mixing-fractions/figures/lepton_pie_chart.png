@@ -1,1 +1,9 @@
+lepton_pie_chart.png  Type: Pie chart  
+Purpose: Shows the equilibrium orbital ZBW DP mixing fractions specifically for a lepton (e.g., muon, N_k=4 tetrahedral cage).  
+Key content:  Three slices labeled 'eDP', 'qDP', 'hDP'  
+Colors: blue for eDP (dominant), orange for qDP, green for hDP  
+Approximate fractions from the calculation (~68.5% eDP, ~13% qDP, ~18.5% hDP after averaging energy minimization + thermal probabilities)  
+Title: "Lepton Orbital ZBW DP Composition (Muon, N_k=4)"  
+Autopct labels show percentages to 1 decimal place
+
 
