@@ -1,1 +1,10 @@
+sensitivity_plot.png  Type: Line plot (log-scale x-axis)  
+Purpose: Demonstrates how the dominant fraction (qDP for quarks, eDP for leptons) changes with cage size N_k across generations.  
+Key content:  X-axis: N_k values on log scale (1, 4, 12, 20, 60, 30000 ≈ up → top quark)  
+Y-axis: Fraction of dominant DP type (qDP for quark case)  
+Markers at each point, grid lines, title "Quark Orbital ZBW: qDP Dominance vs. Cage Size"  
+Trend: qDP fraction starts high (~0.97–0.99 at N_k=1) and may decrease slightly or stabilize at larger N_k due to thermal equalization
+
+Interpretation: Shows the model's prediction that heavier generations (larger cages) have slightly less extreme DP dominance in orbital ZBW, which could tie into mass hierarchies and anomaly corrections.
+
 
