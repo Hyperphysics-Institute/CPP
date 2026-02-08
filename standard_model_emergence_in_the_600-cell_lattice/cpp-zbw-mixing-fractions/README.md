@@ -71,10 +71,12 @@ cpp-zbw-mixing-fractions/
 
 ## License
 
-- **Code and notebooks** (including `src/`, `.ipynb` files): MIT License — see [LICENSE](LICENSE)
-- **Scientific content** (preregistration text, figures, explanations): Creative Commons Attribution 4.0 International (CC-BY 4.0) — see [LICENSE-CC-BY-4.0.md](LICENSE-CC-BY-4.0.md)
+This repository uses dual licensing:
 
-This dual licensing ensures code can be freely reused/modified while scientific outputs require attribution.
+- **Code and notebooks** (including `src/`, `.ipynb` files): [MIT License](LICENSE) — permissive for reuse and modification
+- **Scientific content** (preregistration text, figures, explanations, interpretations): [Creative Commons Attribution 4.0 International (CC-BY 4.0)](LICENSE-CC-BY-4.0.md) — requires attribution for derivatives
+
+This ensures code is freely shareable while scientific outputs get proper credit.
 
 For the broader 600-cell study, see the parent directory: 
 https://github.com/tlabshier/CPP/tree/main/standard_model_emergence_in_the_600-cell_lattice/
