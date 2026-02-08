@@ -57,3 +57,29 @@ All calculations are fully reproducible:
 This prediction is made without knowledge of the final Fermilab combination (as of February 07, 2026). Any future model updates will be versioned separately and clearly marked as post-preregistration revisions.
 
 ## Repository Structure (relative to cpp-zbw-mixing-fractions/)
+
+cpp-zbw-mixing-fractions/
+├── README.md                     # This file: overview + preregistration protocol
+├── LICENSE                       # MIT License for code
+├── LICENSE-CC-BY-4.0.md          # CC-BY 4.0 for scientific content
+├── notebooks/
+│   ├── lepton_zbw_mixing.ipynb   # Muon-specific ZBW mixing + pie chart generation
+│   └── quark_zbw_mixing.ipynb    # Quark mixing + N_k sensitivity sweep
+├── src/
+│   └── mixing_calculator.py      # Reusable module for fraction calculations
+└── figures/
+    ├── lepton_pie_chart.png      # Muon orbital ZBW composition (68.5% eDP)
+    ├── quark_pie_chart.png       # Up-quark orbital ZBW composition (74% qDP)
+    └── sensitivity_plot.png      # Dominant fraction vs. cage size N_k (log scale)
+
+
+## License
+MIT License 
+standard_model_emergence_in_the_600-cell_lattice/cpp-zbw-mixing-fractions/LICENSE
+
+CC-BY 4.0
+standard_model_emergence_in_the_600-cell_lattice/cpp-zbw-mixing-fractions/LICENSE-CC-BY-4.0.md
+
+
+For the broader 600-cell study, see the parent directory: 
+https://github.com/tlabshier/CPP/edit/main/standard_model_emergence_in_the_600-cell_lattice/
