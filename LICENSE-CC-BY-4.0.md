@@ -1,3 +1,14 @@
+# Creative Commons Attribution 4.0 International (CC-BY 4.0) License
+
+This license applies to non-code content in this repository, including:
+
+- Preregistration protocol text
+- Figures (.png files)
+- Scientific explanations and interpretations
+- Any markdown documentation (except where otherwise specified)
+
+The full CC-BY 4.0 license text follows:
+
 Attribution 4.0 International
 
 =======================================================================
