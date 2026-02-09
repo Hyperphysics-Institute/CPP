@@ -1,6 +1,6 @@
 # Suppression Mechanisms in Conscious Point Physics (CPP)
 
-All mass scales, coupling strengths, and anomaly contributions in CPP emerge from a small set of geometric constraints imposed by the 600-cell lattice. This directory documents every suppression factor used in the theory.
+In Conscious Point Physics (CPP), all hierarchical scales—from particle masses and generational patterns to coupling strengths and small anomaly contributions—emerge from a unified set of geometric constraints imposed by the 600-cell lattice. These constraints include the fixed vertex count of 120 per cell, the golden ratio φ ≈ 1.618 embedded in edge lengths and symmetries, holographic entropy bounds, and dimensional binding parameters (d = 0, 1, 3). The suppression factors documented in this directory are not adjustable parameters introduced to fit data; they are direct, recurring consequences of these lattice invariants. Every suppression arises from the same finite, discrete geometry that governs Conscious Point (CP) movement, Space Stress Vector (SSV) gradients, and Zitterbewegung (ZBW) organization in the Dipole Sea. This directory collects, derives, and cross-references each suppression mechanism used across the CPP framework, providing a transparent foundation for understanding how a single lattice structure produces the rich phenomenology of the Standard Model with only one absolute scale calibration (the electron mass).
 
 ## Core Geometric Origins
 - Fixed vertex count: N_lattice = 120 per 600-cell
