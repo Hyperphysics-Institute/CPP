@@ -8,29 +8,38 @@ Mass, spin, charge, and force mediation arise from organization of the Dipole Se
 - **Paper 1** — Binding Mechanisms and Cage Stability  
 - **Paper 2 (ver 28)** — Mass Generation from Symmetry Breaking (main reference)  
 
-### Topic-Specific Directories
-All major concepts from Paper 2 are extracted into focused, self-contained directories for clarity, reproducibility, and public scrutiny.
+# CPP Topic Index – Quick Links to All Directories
 
-- **[dp-types-and-composition](dp-types-and-composition)**  
-  Emergence of eDP, qDP, hDP-A/B; uniform 25% mix (leptons) vs. radial gradients (quarks).
+Central reference page linking every major topic directory in the repository.
 
-- **[zwb-spectrum-and-oscillation](zwb-spectrum-and-oscillation)**  
-  Unified ZBW modes (bound orbital d=0, linear d=1, unbound d=3), oscillation mechanics, SSV gradient flips.
+- **[p2-dp-types-and-composition](p2-dp-types-and-composition)**  
+  DP types (eDP, qDP, hDP-A/B), emergence, lepton uniform mix, quark radial gradients.
 
-- **[charge-screening-and-asymmetries](charge-screening-and-asymmetries)**  
-  Fractional quark charges (+2/3, -1/3), Capotauro chiral bias, up/down asymmetry, antimatter mirror.
+- **[p2-zwb-spectrum-and-oscillation](p2-zwb-spectrum-and-oscillation)**  
+  Unified ZBW modes (d=0,1,3), SSV gradient flips, orbital/linear/unbound mechanics.
 
-- **[neutrino-masses-and-suppression](neutrino-masses-and-suppression)**  
-  Unbound ZBW (d=3), σ = 120^{-3} suppression, flavor hierarchy, predicted sum ~0.017 eV.
+- **[p2-charge-screening-and-asymmetries](p2-charge-screening-and-asymmetries)**  
+  Fractional quark charges, 1/φ² → 1/3, Capotauro bias, up/down asymmetry, antimatter mirror.
 
-- **[mass-breakdown-and-validation](mass-breakdown-and-validation)**  
-  Detailed contribution tables, iterative solve algorithm, convergence to PDG values.
+- **[p2-neutrino-masses-and-suppression](p2-neutrino-masses-and-suppression)**  
+  Unbound ZBW, σ = 120^{-3}, flavor structures, hierarchy, cosmological sum.
 
-- **[glossary-and-ontology](glossary-and-ontology)**  
-  Complete glossary, grouped terms, consciousness as primitive CP attribute.
+- **[p2-mass-breakdown-and-validation](p2-mass-breakdown-and-validation)**  
+  Contribution tables, iterative solve, convergence to PDG masses.
 
-- **[boson-structures](boson-structures)**  
-  W (linear ribbon), Z (icosa cage), Higgs (dodeca cloud) as neutral aggregates.
+- **[p2-glossary-and-ontology](p2-glossary-and-ontology)**  
+  Full glossary, grouped terms, consciousness as primitive CP property.
+
+- **[p2-boson-structures](p2-boson-structures)**  
+  W (linear ribbon), Z (icosa cage), Higgs (dodeca cloud) as neutral sea aggregates.
+
+- **[suppression](suppression)**  
+  Cross-paper suppression mechanisms (σ = 120^{-d}, VEV dilution, φ scaling, α_em derivation).
+
+- **[cpp-zbw-mixing-fractions](cpp-zbw-mixing-fractions)**  
+  Code and notebooks for ZBW mixing fractions (g-2 extension).
+
+Use the sidebar or search to navigate. Each directory is self-contained with README, explanations, figures, and notebooks.
 
 ### Navigation & Usage
 - Each directory contains README.md (overview), concept .md files, figures/, and derivations/ (notebooks).
