@@ -1,1 +1,6 @@
-unbound-tetra.png              # Neutrino configurations
+unbound-tetra.png — Placeholder description: Diagram showing three neutrino configurations side-by-side:ν_e: Single circle (eDP orbital).
+ν_μ: Single circle labeled qDP.
+ν_τ: Tetrahedron with 4 nodes labeled hDP, edges showing interconnections.
+
+(You can create this in draw.io or similar: simple shapes + labels.)
+
