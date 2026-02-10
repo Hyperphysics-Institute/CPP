@@ -1,0 +1,3 @@
+figures/                           # Visuals
+│   │   ├── dp-types-diagram.png           # (Placeholder: describe or generate simple ASCII)
+│   │   └── radial-gradient-plot.pdf       # Quark radial distribution
