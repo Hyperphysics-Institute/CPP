@@ -1,4 +1,6 @@
-     import numpy as np
+# Updated mixing_calculator.py with lepton gradients fixed and delta_mu function
+
+import numpy as np
 from scipy.optimize import minimize
 
 def calculate_mixing_fractions(N_k, particle_type='lepton'):
@@ -17,11 +19,11 @@ def calculate_mixing_fractions(N_k, particle_type='lepton'):
 
     if particle_type == 'lepton':
         gradients = {
-            'eDP': base_gradient,              # Favorable for leptons
-            'qDP': phi * base_gradient,        # Less favorable
-            'hDP': (phi - 1) * base_gradient   # Intermediate
+            'eDP': (phi - 1) * base_gradient,  # Favorable (lowest) for leptons
+            'hDP': base_gradient,              # Intermediate
+            'qDP': phi * base_gradient         # Least favorable
         }
-        labels = ['eDP', 'qDP', 'hDP']
+        labels = ['eDP', 'hDP', 'qDP']
     elif particle_type == 'quark':
         gradients = {
             'qDP': (phi - 1) * base_gradient,  # Favorable for quarks
@@ -57,6 +59,11 @@ def calculate_mixing_fractions(N_k, particle_type='lepton'):
 
     return {labels[i]: equil[i] for i in range(3)}
 
+def compute_delta_mu(fracs, C_orig=9.6e-7, alpha_em=1/137.036):
+    S = alpha_em / (2 * np.pi)  # Suppression factor
+    mixing_sum = fracs['qDP'] + 0.7 * fracs['hDP']
+    return C_orig * S * mixing_sum
+
 def sensitivity_sweep(particle_type='quark', N_k_values=[1, 4, 12, 20, 60, 30000]):
     """
     Compute sensitivity of dominant fraction to N_k.
@@ -87,3 +94,6 @@ if __name__ == "__main__":
     else:
         fracs = calculate_mixing_fractions(args.N_k, args.type)
         print(f"{args.type.capitalize()} fractions for N_k={args.N_k}: {fracs}")
+        if args.type == 'lepton':
+            delta_mu = compute_delta_mu(fracs)
+            print(f"Predicted δμ: {delta_mu:.2e}")
