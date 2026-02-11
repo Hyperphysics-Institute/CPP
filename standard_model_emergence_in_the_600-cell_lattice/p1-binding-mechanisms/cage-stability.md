@@ -15,7 +15,7 @@ Binding energies scale with occupancy and closure (lattice units):
 
 | Cage Type        | Vertices | Shell CPs | Binding Energy (lattice units) | Example Particles     |
 |------------------|----------|-----------|--------------------------------|-----------------------|
-| Tetrahedral      | 4        | 4         | 2.0                            | e, μ, up, down        |
+| Tetrahedral      | 4        | 4         | 2.0                            | μ, strange            |
 | Icosahedral      | 12       | 12        | 6.0                            | charm, τ, Z           |
 | Dodecahedral     | 20       | 20        | 10.0                           | bottom, Higgs         |
 | Fullerene-like   | ~60      | ~60       | 30.0                           | top                   |
