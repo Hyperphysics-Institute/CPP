@@ -71,3 +71,7 @@ Cross-references:
 
 ## Next Refinements
 - Higher-order loop corrections: [g2-loop-series.ipynb](derivations/g2-loop-series.ipynb)
+
+- ## Higher-Order Loop Corrections
+- Initial series extension (g2-loop-series.ipynb) gives refined S ≈ 1.1614 × 10^{-3} → δμ_e remains ~4.60 × 10^{-10}.
+- Next: derive accurate ε₄, ε₅ from lattice projection.
