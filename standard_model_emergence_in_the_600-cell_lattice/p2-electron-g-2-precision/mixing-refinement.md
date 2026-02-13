@@ -66,4 +66,5 @@ g-2 estimate:
 
 Cross-references:  
 - derivations/electron-mixing-mc.ipynb (main calculation)  
-- figures/electron-qdp-distribution.png (distribution histogram)
+- ![No noise](figures/electron-qdp-distribution-no-noise.jpg)
+- ![Noise 0.05](figures/electron-qdp-distribution-noise-0.05.jpg)
