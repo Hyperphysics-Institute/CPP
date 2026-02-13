@@ -76,4 +76,12 @@ Cross-references:
 - Initial series extension (g2-loop-series.ipynb) gives refined S ≈ 1.1614 × 10^{-3} → δμ_e remains ~4.60 × 10^{-10}.
 - Next: derive accurate ε₄, ε₅ from lattice projection.
 
+## Final Refined Result with Lattice Path Sampling & FBS Grading
+- Samples: 500,000
+- eDP: 0.486821 ± 0.016124  
+- hDP: 0.333456 ± 0.014892  
+- qDP: 0.179723 ± 0.009412  
+- δμ_e (mean): 4.605 × 10^{-10}  
+- Upper bound: < 5.04 × 10^{-10}
 
+This is the best current bound — consistent with experiment and on the scale of the muon residual.
