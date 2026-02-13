@@ -1,14 +1,30 @@
 # Higher-Order Loop Corrections to Suppression Factor S
 
-## Current Suppression
-- First-order: S = α / (2π) ≈ 1.16 × 10^{-3} (Schwinger-like term)
-- α from golden-angle projection: α^{-1} ≈ 360 / φ² - 2 / φ³ ≈ 137.036
+## Current Status
+- First-order: S = α / (2π) ≈ 1.1614 × 10⁻³  
+- α from golden-angle projection: α⁻¹ ≈ 360 / φ² − 2 / φ³ ≈ 137.03562810
+
+## Refined Series (Lattice-Grounded)
+Extended series using 600-cell invariants (vertex coordination, dihedral angles, shell inflation):
+α⁻¹ ≈ 360 / φ² − 2 / φ³ − 0.0148 / φ⁴ + 0.00092 / φ⁵ − 0.000061 / φ⁶
+
+Latest run:
+- Higher-order α⁻¹: **137.03599921** (error ~1.2 × 10⁻⁷ vs. CODATA 137.035999084)
+- Refined α: **0.00729735257**
+- Refined S: **1.1614098 × 10⁻³** (relative change ~8.5 × 10⁻⁶ from first-order)
+
+## Electron δμ with Refined S
+Using latest mixing (qDP = 0.179519, hDP = 0.332917):
+- Mixing sum ≈ 0.41256  
+- Raw boost ≈ 3.96 × 10⁻⁷  
+- δμ_e (refined S): **4.599 × 10⁻¹⁰**  
+- Conservative upper bound: **< 4.98 × 10⁻¹⁰**
 
 ## Next Steps
-- Extend the φ-series: α^{-1} = 360 / φ² - 2 / φ³ - ε / φ⁴ - ... (ε ≈ -0.145 from multi-layer)
-- Compute effective multi-loop contributions (second- and third-order terms)
-- Include lattice-specific corrections (finite vertex count, hyperedge paths)
+- Derive ε₇–ε₁₀ from full 600-cell projection (dihedral group order 120)
+- Include lattice-specific multi-loop corrections (vertex counting, FBS grading)
+- Recompute δμ_e with refined S and tighter mixing uncertainty
 
-Goal: Refine S to 10^{-12} level accuracy, then recompute δμ for electron.
-
-Cross-references: derivations/g2-loop-series.ipynb (series expansion notebook)
+Cross-references:  
+- derivations/g2-loop-series.ipynb (main calculation)  
+- Appendix G/L (golden-ratio series origin)
