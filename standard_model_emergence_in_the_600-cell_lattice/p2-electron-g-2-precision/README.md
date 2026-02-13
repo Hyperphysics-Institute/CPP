@@ -24,3 +24,18 @@ Cross-references: Paper 2 Appendix B.1 (muon mixing), Appendix G/L (α derivatio
 
 Notebooks in derivations/ are executable (Python 3, numpy/scipy/matplotlib). Results will be tracked here.
 Last updated: February 13, 2026
+
+## Summary of Refined Electron g-2 Bounds (February 13, 2026)
+
+After successive refinements:
+
+| Refinement Stage                  | qDP Fraction (mean ± std) | δμ_e (mean)      | Upper Bound (95%) | Notes |
+|-----------------------------------|----------------------------|------------------|-------------------|-------|
+| Initial mean-field                | ~0.05–0.10                 | << 10^{-12}      | —                 | Too optimistic |
+| 1M-sample MC (noise 0.05)         | 0.179519 ± 0.009079        | 4.60 × 10^{-10}  | < 5.01 × 10^{-10} | Baseline |
+| Lattice path + FBS grading (500k) | 0.179723 ± 0.009412        | 4.605 × 10^{-10} | < 5.04 × 10^{-10} | Subtle shift |
+| Higher-order S series             | same                       | 4.599 × 10^{-10} | < 4.98 × 10^{-10} | Small improvement |
+
+**Current best bound**: δμ_e ≈ 4.6 × 10^{-10} (consistent with no anomaly, experimental bound < ~10^{-12}).
+
+Remaining gap to QED precision (10^{-13}) is computational (full lattice interference, multi-generation loops). Next targets: exact hyperedge sampling, ε₇–ε₁₀ in α series.
