@@ -68,3 +68,6 @@ Cross-references:
 - derivations/electron-mixing-mc.ipynb (main calculation)  
 - ![No noise](figures/electron-qdp-distribution-no-noise.jpg)
 - ![Noise 0.05](figures/electron-qdp-distribution-noise-0.05.jpg)
+
+## Next Refinements
+- Higher-order loop corrections: [g2-loop-series.ipynb](derivations/g2-loop-series.ipynb)
