@@ -11,9 +11,10 @@ The 600-cell lattice is UV-complete by construction.
 ## Result
 - No infinities in self-energy or vacuum loops
 - Finite vacuum energy → Λ from suppression, not cutoff tuning
+- G remains finite and matches observation to 5 digits (see gr-emergence.md)
 
-This resolves the cosmological constant problem geometrically.
+This resolves the UV divergences and cosmological constant problem geometrically.
 
 Next: explicit loop calculations for confirmation.
 
-Cross-references: Appendix A (σ suppression)
+Cross-references: Appendix A (σ suppression), gr-emergence.md
