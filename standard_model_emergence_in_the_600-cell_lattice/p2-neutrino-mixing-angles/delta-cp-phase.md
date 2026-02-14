@@ -1,2 +1,0 @@
-delta-cp-phase.md
-
