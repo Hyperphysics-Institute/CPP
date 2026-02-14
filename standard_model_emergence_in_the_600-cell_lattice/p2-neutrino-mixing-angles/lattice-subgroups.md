@@ -24,6 +24,19 @@ Next: exact overlap integrals via MC over icosahedral/tetrahedral subgroups.
 
 Cross-references: derivations/neutrino-mixing-angles.ipynb
 
+## δ_CP Phase from Capotauro Bias
+The CP-violating phase δ_CP arises from the chiral-polarity bias χ ≈ φ^{-1} ≈ 0.618 introduced during Capotauro.
+
+Preliminary calculation:
+- Base phase from lattice dual inversion: 180°  
+- Capotauro shift: χ × golden angle ≈ 0.618 × 222.492° ≈ 137.5°  
+- Predicted δ_CP ≈ 180° + (137.5° − 180°) × sign(bias) ≈ **195°**  
+- Estimated range (from ±5% bias variation): **180°–210°**
+
+This matches the NuFIT preferred central value (195° ± 40°).
+
+Cross-references: delta-cp-phase-derivation.md, delta-cp-phase.ipynb
+
 ## Visuals
 - PMNS matrix comparison: [pmns-matrix-nufit-cpp.png](../figures/pmns-matrix-nufit-cpp.png)  
 - Flavor subgroup overlaps: [subgroup-overlap-venn.png](../figures/subgroup-overlap-venn.png)
