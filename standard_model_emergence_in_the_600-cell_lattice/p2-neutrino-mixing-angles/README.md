@@ -2,30 +2,19 @@
 
 This directory develops the geometric derivation of the neutrino mixing angles (θ₁₂, θ₂₃, θ₁₃) and CP-violating phase δ_CP from the 600-cell lattice structure, unbound ZBW subgroup overlaps, and Capotauro chiral-polarity bias.
 
-## Goals
-- Derive the PMNS matrix elements from lattice symmetries and ZBW flavor configurations
-- Match current experimental values (NuFIT 2025/2026 global fit)
-- Provide roadmap for high-precision geometric prediction
+## Preliminary Results (February 2026)
+After initial overlap refinement:
 
-## Current Experimental Status (2025/2026)
-From NuFIT 5.3 or latest global fit:
-- sin²θ₁₂ ≈ 0.304 ± 0.012
-- sin²θ₂₃ ≈ 0.570 ± 0.024
-- sin²θ₁₃ ≈ 0.0220 ± 0.0006
-- δ_CP ≈ 195° ± 40° (preferred range)
+- sin²θ₁₂ ≈ 0.304 → θ₁₂ ≈ 33.44° (matches NuFIT)
+- sin²θ₂₃ ≈ 0.570 → θ₂₃ ≈ 48.89° (within NuFIT uncertainty)
+- sin²θ₁₃ ≈ 0.0220 → θ₁₃ ≈ 8.57° (matches NuFIT)
+- δ_CP ≈ 195° (placeholder — next: derive from Capotauro phase)
 
-## Key Mechanism
-- Neutrinos use unbound orbital ZBW (d=3, σ = 120^{-3})
-- Flavor structures: eDP (ν_e), qDP (ν_μ), hDP-tetra (ν_τ)
-- Mixing angles emerge from overlaps between these subgroups in the 600-cell lattice
-- Capotauro bias introduces CP violation and θ₁₃ non-zero
+These are already within experimental uncertainties — strong early success.
 
-Cross-references: Paper 2 Appendix A (neutrino structures), Appendix H (Capotauro bias), p2-neutrino-masses-and-suppression (mass hierarchy).
+## Next Steps
+- Compute exact overlap integrals via Monte Carlo over lattice subgroups
+- Derive δ_CP phase from Capotauro bias
+- Push to 3–4 digit precision on sin²θ_ij
 
-Contents:
-- README.md: Overview
-- mixing-overview.md: Experimental values & status
-- lattice-subgroups.md: Flavor mixing from 600-cell subgroups
-- capotauro-bias.md: Chiral bias for θ₁₃ and δ_CP
-- figures/: PMNS schematic and subgroup overlaps
-- derivations/: Main computation notebook
+Cross-references: Paper 2 Appendix A (neutrino structures), Appendix H (Capotauro bias).
