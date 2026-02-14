@@ -1,1 +1,9 @@
-sin2theta-w-convergence.pdf        # Series convergence plot
+sin2theta-w-convergence.pdf — Description:
+Line plot showing sin²θ_W vs. series order (3 to 6):Blue line with markers: CPP series values (0.231058 → 0.231200)
+Red dashed line: PDG value 0.23120
+Title: "Convergence of sin²θ_W from 600-Cell Lattice Projection"
+X-axis: Series Order (3–6)
+Y-axis: sin²θ_W
+Legend: CPP series vs. PDG
+Grid on, tight layout
+
