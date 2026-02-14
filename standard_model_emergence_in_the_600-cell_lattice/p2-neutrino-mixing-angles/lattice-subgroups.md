@@ -25,5 +25,5 @@ Next: exact overlap integrals via MC over icosahedral/tetrahedral subgroups.
 Cross-references: derivations/neutrino-mixing-angles.ipynb
 
 ## Visuals
-- PMNS matrix comparison: [pmns-matrix-comparison.jpg]([[../figures/pmns-matrix-comparison.jpg](https://github.com/tlabshier/CPP/blob/main/standard_model_emergence_in_the_600-cell_lattice/p2-neutrino-mixing-angles/figures/pmns-matrix-comparison.jpg)](https://github.com/tlabshier/CPP/blob/main/standard_model_emergence_in_the_600-cell_lattice/p2-neutrino-mixing-angles/figures/pmns-matrix-comparison.jpg))  
+- PMNS matrix comparison:   https://github.com/tlabshier/CPP/blob/main/standard_model_emergence_in_the_600-cell_lattice/p2-neutrino-mixing-angles/figures/pmns-matrix-comparison.jpg
 - Flavor subgroup overlaps: [subgroup-overlap-venn.jpg](../figures/subgroup-overlap-venn.jpg)
