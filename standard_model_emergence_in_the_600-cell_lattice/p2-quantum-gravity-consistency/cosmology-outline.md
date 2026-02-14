@@ -15,6 +15,8 @@ CPP cosmology emerges from lattice initialization and Capotauro dynamics.
 - GW spectrum rollover > 10^{10} Hz
 - Dark matter from freeze-out (p2-dark-matter-relic-density)
 
-Next: full timeline simulation.
+Refined G from global curvature (5 digits) supports consistent cosmology.
+
+Next: full timeline simulation and structure formation MC.
 
 Cross-references: Section 7.2 (testable predictions)
