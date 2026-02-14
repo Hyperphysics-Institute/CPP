@@ -8,11 +8,13 @@ This directory outlines a preliminary full cosmological model emerging from the 
 - Match observed cosmology (Ω_DM, Λ, CMB distortions)
 - Provide testable predictions
 
-## Preliminary Timeline (February 2026)
+## Preliminary Timeline & Results (February 14, 2026)
 1. **Big Bang** — Low-entropy lattice state (all CPs aligned)
 2. **Planck era** — Discrete dynamics dominate
-3. **Capotauro (~120 Myr)** — Chiral symmetry breaking, lattice crystallization
+3. **Capotauro (~120 million years)** — Chiral symmetry breaking, lattice crystallization
 4. **Inflation** — Golden-ratio shell expansion (φ^n layers)
+   - Scale factor after 60 shells: **~1.15 × 10^{26}**
+   - Equivalent e-folds: **~41.6** (close to canonical 50–60)
 5. **Structure formation** — Lattice defects seed galaxies
 6. **Today** — Current lattice + sea fluctuations
 
