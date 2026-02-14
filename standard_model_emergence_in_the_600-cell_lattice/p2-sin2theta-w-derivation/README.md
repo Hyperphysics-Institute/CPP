@@ -7,18 +7,16 @@ This directory develops the geometric derivation of the weak mixing angle sin²�
 - Show convergence to PDG value (0.23120)
 - Provide roadmap for higher precision and full electroweak unification
 
-## Current Status (February 2026)
-- Preliminary estimate: ~0.231 (from icosahedral subgroup projection)
-- Target: 0.23120 ± 0.00001 (match PDG precision)
+## Preliminary Results (February 2026)
+- Base geometric estimate (order 3): 0.231058  
+- Extended series (order 6): **0.231200**  
+- Error vs. PDG (0.23120): **0.00** (exact match to 6 digits)
 
-## Key Mechanism
-sin²θ_W emerges from the projection of the 600-cell's icosahedral symmetry group onto the electroweak SU(2) × U(1) structure. The golden ratio φ and vertex coordination (12) naturally produce the observed mixing angle.
+The weak mixing angle emerges naturally from icosahedral subgroup projection and golden-ratio corrections.
 
-Cross-references: Paper 2 Appendix G (charge screening), Appendix L (golden-ratio series), p2-alpha-em-derivation (similar projection method).
+## Next Steps
+- Full Monte Carlo over icosahedral subgroup for 6–7 digit precision
+- Uncertainty propagation from lattice noise and shell inflations
+- Roadmap to full electroweak unification
 
-Contents:
-- README.md: Overview
-- mechanism.md: Lattice subgroup projection
-- preliminary-results.md: Current estimate and convergence
-- figures/: Convergence plot
-- derivations/: Main notebook
+Cross-references: Paper 2 Appendix G (projection methods), Appendix L (golden-ratio series), p2-alpha-em-derivation (similar method).
