@@ -18,3 +18,7 @@ These are already within experimental uncertainties — strong early success.
 - Push to 3–4 digit precision on sin²θ_ij
 
 Cross-references: Paper 2 Appendix A (neutrino structures), Appendix H (Capotauro bias).
+
+## Figures
+- **[pmns-matrix-nufit-cpp.png](figures/pmns-matrix-nufit-cpp.png)**: PMNS matrix with NuFIT best-fit values and CPP geometric estimates  
+- **[subgroup-overlap-venn.png](figures/subgroup-overlap-venn.png)**: Venn diagram of flavor subgroup overlaps in the 600-cell lattice
