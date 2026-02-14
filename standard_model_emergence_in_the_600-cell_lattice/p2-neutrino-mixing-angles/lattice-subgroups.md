@@ -23,3 +23,7 @@ Overlap fractions adjusted to match NuFIT central values while staying geometric
 Next: exact overlap integrals via MC over icosahedral/tetrahedral subgroups.
 
 Cross-references: derivations/neutrino-mixing-angles.ipynb
+
+## Visuals
+- PMNS matrix comparison:   https://github.com/tlabshier/CPP/blob/main/standard_model_emergence_in_the_600-cell_lattice/p2-neutrino-mixing-angles/figures/pmns-matrix-comparison.jpg
+- Flavor subgroup overlaps: [subgroup-overlap-venn.jpg](../figures/subgroup-overlap-venn.jpg)
