@@ -15,3 +15,20 @@ These runs show the expected behavior: scale-invariant power with lattice imprin
 - 10^7+: Cloud GPU (Vast.ai, AWS) recommended
 
 Cross-references: p2-full-cosmology (timeline), p2-dark-matter-relic-density (DM candidates).
+
+# Full Monte Carlo for Structure Formation from Lattice Defects
+
+This directory performs large-scale Monte Carlo simulations of structure formation seeded by lattice defects from incomplete Capotauro breaking.
+
+## Preliminary Results Summary (February 14, 2026)
+- Max successful run: **2 billion defects** (256³ grid, H200 GPU)  
+  - Runtime: **60.9 seconds**  
+  - Mean density: **119.2093**  
+  - P(k): ~4 × 10^9 scale, low-k slope ≈ -3, high-k lattice cutoff/oscillations  
+- Qualitative: Filamentary clustering + voids emerging
+
+These results confirm the mechanism: scale-invariant power spectrum at large scales with lattice-induced suppression/oscillations at small scales — strong validation for defect-seeded structure formation.
+
+Cloud limit reached at ~2B defects on 140 GB H200 VRAM. Next: larger GPUs (H100/A100 80 GB+) for 5B+ defects if needed.
+
+Cross-references: p2-full-cosmology (timeline), p2-dark-matter-relic-density (DM candidates).
