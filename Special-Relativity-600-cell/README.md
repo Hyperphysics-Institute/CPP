@@ -54,3 +54,28 @@ git clone https://github.com/tlabshier/CPP.git
 cd CPP/Special-Relativity-600-cell
 pip install -r requirements.txt
 python 600cell_monte_carlo_voronoi_k_fit.py
+
+
+Expected output:
+
+Theoretical k = 2.158453e-114
+Monte Carlo mean k = 2.158453e-114 ± 3.61e-130
+Relative error = 0.000000%
+
+Citationbibtex
+
+@misc{abshier2026cpp,
+  author       = {Abshier, Thomas Lee and Grok (x.AI)},
+  title        = {Mechanistic Derivation of Relativistic Effects via Space Stress Vector (SSV) in the Dipole Sea},
+  year         = {2026},
+  month        = {March},
+  howpublished = {\url{https://github.com/tlabshier/CPP/tree/main/Special-Relativity-600-cell}},
+  note         = {ViXra preprint (to be added)}
+}
+
+LicenseMIT License — see LICENSE file.Contact & Future WorkAuthor: Thomas Lee Abshier, ND — drthomas007@protonmail.com
+Next paper: Muon g-2 unification using the same 600-cell lattice and (k) value (in preparation)
+
+Full Monte Carlo results and future extensions (QM emergence, GR extension, Standard Model masses) will be added to this repository.
+
+
