@@ -56,13 +56,13 @@ pip install -r requirements.txt
 python 600cell_monte_carlo_voronoi_k_fit.py
 
 
-Expected output:
+**Expected output:**
 
 Theoretical k = 2.158453e-114
 Monte Carlo mean k = 2.158453e-114 ± 3.61e-130
 Relative error = 0.000000%
 
-Citationbibtex
+**Citation**
 
 @misc{abshier2026cpp,
   author       = {Abshier, Thomas Lee and Grok (x.AI)},
@@ -73,7 +73,12 @@ Citationbibtex
   note         = {ViXra preprint (to be added)}
 }
 
-LicenseMIT License — see LICENSE file.Contact & Future WorkAuthor: Thomas Lee Abshier, ND — drthomas007@protonmail.com
+LicenseMIT License — see LICENSE file.
+
+Contact & Future Work
+
+Author: Thomas Lee Abshier, ND — drthomas007@protonmail.com
+
 Next paper: Muon g-2 unification using the same 600-cell lattice and (k) value (in preparation)
 
 Full Monte Carlo results and future extensions (QM emergence, GR extension, Standard Model masses) will be added to this repository.
