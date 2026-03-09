@@ -20,7 +20,7 @@ This repository contains all code, data, and supporting files for the paper:
 
 The work derives time dilation, length contraction, and the twin paradox from first principles using the geometry of the **600-cell polychoron** (the regular 4-polytope with 120 vertices). Excess Space Stress Vector (ΔSSV) reduces effective Voronoi cell volumes, shrinking the Planck Sphere Radius (PSR) and limiting displacement per absolute Moment. The coupling constant \(k \approx 2.158453 \times 10^{-114}\) m³/J is derived analytically and confirmed numerically.
 
-**Paper (PDF):** [Download Version 1.7](https://github.com/tlabshier/CPP/raw/main/Special-Relativity-600-cell/CPP_SR_Version_1.7.pdf)  
+**Paper (PDF):** [Download Version 8](https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/mechanistic_relativistic_effect_emergence_from_ssv_and_dipole_sea.tex))  
 **ViXra preprint:** (link will be added after upload)  
 **arXiv:** (in preparation)
 
