@@ -29,10 +29,7 @@ The work derives time dilation, length contraction, and the twin paradox from fi
 ## Repository Contents
 
 - `600cell_monte_carlo_voronoi_k_fit.py` — Full 4D Voronoi Monte Carlo simulation (500 trials)
-- `CPP_SR_Version_1.7.pdf` — Final published manuscript
-- `CPP_SR_Version_1.7.tex` — Full LaTeX source
-- `requirements.txt` — Python dependencies
-- `LICENSE` — MIT License
+- `mechanistic_relativistic_effect_emergence_from_ssv_and_dipole_sea` — Final published manuscript Full Latex source
 
 ---
 
