@@ -62,6 +62,7 @@ Theoretical k = 2.158453e-114
 Monte Carlo mean k = 2.158453e-114 ± 3.61e-130
 Relative error = 0.000000%
 
+
 **Citation**
 
 @misc{abshier2026cpp,
@@ -73,14 +74,10 @@ Relative error = 0.000000%
   note         = {ViXra preprint (to be added)}
 }
 
-LicenseMIT License — see LICENSE file.
+**License**
+MIT License — see LICENSE file.
 
-Contact & Future Work
-
+**Contact & Future Work**
 Author: Thomas Lee Abshier, ND — drthomas007@protonmail.com
-
 Next paper: Muon g-2 unification using the same 600-cell lattice and (k) value (in preparation)
-
-Full Monte Carlo results and future extensions (QM emergence, GR extension, Standard Model masses) will be added to this repository.
-
-
+Future extensions (QM emergence, GR extension, Standard Model masses) will be added to this repository.
