@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="445" viewBox="0 0 720 445" font-family="Georgia, 'Times New Roman', serif">
+
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#2980b9"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#c0392b"/>
+    </marker>
+    <!-- Icosahedral motif clip -->
+    <radialGradient id="motifGrad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aed6f1" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2980b9" stop-opacity="0.08"/>
+    </radialGradient>
+    <radialGradient id="motifGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a9dfbf" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#27ae60" stop-opacity="0.06"/>
+    </radialGradient>
+    <radialGradient id="motifGrad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f9e79f" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f39c12" stop-opacity="0.06"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="420" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="360" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a2e">
+    600-Cell Quasicrystalline Lattice (Schematic 3D Projection)
+  </text>
+  <text x="360" y="50" text-anchor="middle" font-size="11" fill="#555" font-style="italic">
+    Overlapping 600-cell motifs tile flat ℝ⁴ space — Grid Points at all vertices
+  </text>
+
+  <!-- ===== MAIN LATTICE AREA ===== -->
+  <!-- Draw overlapping icosahedral-like motifs -->
+
+  <!-- Motif 1 (center, blue) -->
+  <circle cx="360" cy="230" r="105" fill="url(#motifGrad1)" stroke="#2980b9" stroke-width="1.8" stroke-dasharray="7,3"/>
+
+  <!-- Motif 2 (upper-right, green) -->
+  <circle cx="470" cy="158" r="105" fill="url(#motifGrad2)" stroke="#27ae60" stroke-width="1.8" stroke-dasharray="7,3"/>
+
+  <!-- Motif 3 (lower-left, yellow) -->
+  <circle cx="250" cy="300" r="105" fill="url(#motifGrad3)" stroke="#f39c12" stroke-width="1.8" stroke-dasharray="7,3"/>
+
+  <!-- Motif 4 (upper-left, lighter blue) -->
+  <circle cx="248" cy="158" r="90" fill="rgba(174,214,241,0.25)" stroke="#5dade2" stroke-width="1.4" stroke-dasharray="5,4"/>
+
+  <!-- Motif 5 (lower-right, lighter green) -->
+  <circle cx="472" cy="300" r="90" fill="rgba(169,223,191,0.25)" stroke="#58d68d" stroke-width="1.4" stroke-dasharray="5,4"/>
+
+  <!-- Internal lattice edges — icosahedral-like spokes from center motif -->
+  <g stroke="#2980b9" stroke-width="1" opacity="0.5">
+    <!-- Spokes from center (360,230) -->
+    <line x1="360" y1="230" x2="360" y2="130"/>
+    <line x1="360" y1="230" x2="455" y2="175"/>
+    <line x1="360" y1="230" x2="455" y2="285"/>
+    <line x1="360" y1="230" x2="360" y2="330"/>
+    <line x1="360" y1="230" x2="265" y2="285"/>
+    <line x1="360" y1="230" x2="265" y2="175"/>
+    <!-- Extra diagonals -->
+    <line x1="360" y1="130" x2="455" y2="175"/>
+    <line x1="455" y1="175" x2="455" y2="285"/>
+    <line x1="455" y1="285" x2="360" y2="330"/>
+    <line x1="360" y1="330" x2="265" y2="285"/>
+    <line x1="265" y1="285" x2="265" y2="175"/>
+    <line x1="265" y1="175" x2="360" y2="130"/>
+  </g>
+
+  <!-- Internal edges for green motif -->
+  <g stroke="#27ae60" stroke-width="1" opacity="0.4">
+    <line x1="470" y1="158" x2="470" y2="68"/>
+    <line x1="470" y1="158" x2="548" y2="103"/>
+    <line x1="470" y1="158" x2="548" y2="213"/>
+    <line x1="470" y1="158" x2="392" y2="103"/>
+    <line x1="392" y1="103" x2="470" y2="68"/>
+    <line x1="470" y1="68" x2="548" y2="103"/>
+    <line x1="548" y1="103" x2="548" y2="213"/>
+  </g>
+
+  <!-- Internal edges for yellow motif -->
+  <g stroke="#f39c12" stroke-width="1" opacity="0.4">
+    <line x1="250" y1="300" x2="250" y2="390"/>
+    <line x1="250" y1="300" x2="172" y2="355"/>
+    <line x1="250" y1="300" x2="172" y2="245"/>
+    <line x1="250" y1="300" x2="328" y2="355"/>
+    <line x1="328" y1="355" x2="250" y2="390"/>
+    <line x1="250" y1="390" x2="172" y2="355"/>
+    <line x1="172" y1="245" x2="172" y2="355"/>
+  </g>
+
+  <!-- Grid Points (vertices) — center motif -->
+  <g fill="#1a3a5c">
+    <circle cx="360" cy="230" r="5.5"/>
+    <circle cx="360" cy="130" r="4.5"/>
+    <circle cx="455" cy="175" r="4.5"/>
+    <circle cx="455" cy="285" r="4.5"/>
+    <circle cx="360" cy="330" r="4.5"/>
+    <circle cx="265" cy="285" r="4.5"/>
+    <circle cx="265" cy="175" r="4.5"/>
+  </g>
+
+  <!-- Grid Points — green motif -->
+  <g fill="#1a5c2a">
+    <circle cx="470" cy="158" r="4.5"/>
+    <circle cx="470" cy="68" r="4"/>
+    <circle cx="548" cy="103" r="4"/>
+    <circle cx="548" cy="213" r="4"/>
+    <circle cx="392" cy="103" r="4"/>
+  </g>
+
+  <!-- Grid Points — yellow motif -->
+  <g fill="#7d6608">
+    <circle cx="250" cy="300" r="4.5"/>
+    <circle cx="250" cy="390" r="4"/>
+    <circle cx="172" cy="355" r="4"/>
+    <circle cx="172" cy="245" r="4"/>
+    <circle cx="328" cy="355" r="4"/>
+  </g>
+
+  <!-- Shared/overlap Grid Points (highlighted) -->
+  <g fill="#8e44ad">
+    <circle cx="360" cy="130" r="6"/>
+    <circle cx="455" cy="175" r="6"/>
+    <circle cx="265" cy="175" r="6"/>
+    <circle cx="360" cy="330" r="6"/>
+    <circle cx="265" cy="285" r="6"/>
+    <circle cx="455" cy="285" r="6"/>
+  </g>
+
+  <!-- CP displacement arrow example -->
+  <line x1="360" y1="230" x2="385" y2="212" stroke="#c0392b" stroke-width="2.2" marker-end="url(#arrowRed)"/>
+  <text x="395" y="208" font-size="10" fill="#c0392b" font-weight="bold">CP displacement</text>
+  <text x="395" y="220" font-size="10" fill="#c0392b">(≤ PSR_eff per Moment)</text>
+
+  <!-- Legend -->
+  <g transform="translate(530, 290)">
+    <rect width="175" height="110" fill="white" stroke="#ccc" stroke-width="1" rx="5" opacity="0.92"/>
+    <text x="88" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a1a2e">Legend</text>
+    <!-- Motif circles -->
+    <circle cx="18" cy="34" r="7" fill="rgba(174,214,241,0.5)" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="30" y="38" font-size="10" fill="#333">600-cell motif boundary</text>
+    <!-- Grid points -->
+    <circle cx="18" cy="55" r="4.5" fill="#1a3a5c"/>
+    <text x="30" y="59" font-size="10" fill="#333">Grid Point (GP)</text>
+    <!-- Shared points -->
+    <circle cx="18" cy="76" r="5.5" fill="#8e44ad"/>
+    <text x="30" y="80" font-size="10" fill="#333">Shared/overlap GP</text>
+    <!-- Edges -->
+    <line x1="10" y1="97" x2="26" y2="97" stroke="#2980b9" stroke-width="1.2"/>
+    <text x="30" y="101" font-size="10" fill="#333">Lattice edges</text>
+  </g>
+
+  <!-- Overlap annotation -->
+  <text x="395" y="240" font-size="10" fill="#8e44ad" font-style="italic">Overlapping Voronoi</text>
+  <text x="395" y="253" font-size="10" fill="#8e44ad" font-style="italic">domains → quasicrystal</text>
+
+  <!-- Extension arrows suggesting infinite tiling -->
+  <g stroke="#aaa" stroke-width="1.5" stroke-dasharray="4,3" fill="none" marker-end="url(#arrowBlue)">
+    <line x1="116" y1="230" x2="80" y2="230"/>
+    <line x1="604" y1="230" x2="640" y2="230"/>
+    <line x1="360" y1="72" x2="360" y2="62"/>
+    <line x1="360" y1="388" x2="360" y2="408"/>
+  </g>
+  <text x="42" y="234" font-size="9" fill="#888">∞</text>
+  <text x="646" y="234" font-size="9" fill="#888">∞</text>
+  <text x="354" y="58" font-size="9" fill="#888">∞</text>
+  <text x="354" y="418" font-size="9" fill="#888">∞</text>
+
+  <!-- Bottom caption -->
+  <text x="360" y="438" text-anchor="middle" font-size="10" fill="#555" font-style="italic">
+    Purple dots indicate Grid Points shared between adjacent 600-cell motifs — the quasicrystalline overlap that extends space infinitely.
+  </text>
+</svg>
