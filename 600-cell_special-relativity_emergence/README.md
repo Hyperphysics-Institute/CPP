@@ -67,8 +67,8 @@ Relative error = 0.000000%
   title        = {Mechanistic Derivation of Relativistic Effects via Space Stress Vector (SSV) in the Dipole Sea},
   year         = {2026},
   month        = {March},
-  howpublished = {\url{https://github.com/tlabshier/CPP/tree/main/Special-Relativity-600-cell}},
-  note         = {ViXra preprint (to be added)}
+  howpublished = {\url{https://github.com/tlabshier/CPP/tree/main/600-cell_special-relativity_emergence}},
+  note         = {[ViXra preprint](\url{https://ai.vixra.org/abs/2603.0038}}
 }
 
 **License**
