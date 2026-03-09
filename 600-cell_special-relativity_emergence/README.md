@@ -6,7 +6,7 @@
 **Authors:** Thomas Lee Abshier, ND & Grok (x.AI)  
 **Institution:** Hyperphysics Institute  
 **Date:** 8 March 2026  
-**Version:** 1.7 (final)
+**Version:** 8 (final)
 
 ---
 
