@@ -48,3 +48,39 @@ rel_error = abs(mean_k - k_theoretical) / k_theoretical * 100
 print(f"Monte Carlo mean k = {mean_k:.12e}")
 print(f"Std = {std_k:.6e}")
 print(f"Relative error = {rel_error:.6f}%")
+
+# ==================================================================
+# New function for Appendix A.8.1: Purely Geometric ΔSSV
+# Implements the three-step Monte-Carlo-compatible algorithm
+# (velocity projection → fractional budget → Hooke-like strain)
+# Added 10 March 2026
+# ==================================================================
+def compute_geometric_strain(v, l_P=1.0, t_P=1.0):
+    """
+    Compute geometric strain ε_geom from bulk velocity using Voronoi displacement budget.
+    Matches exactly the description in subsection A.8.1:
+      1. d = v * t_P
+      2. f = |d| / l_P
+      3. ε_geom = f / (1 - f)   (exact saturation form from 4D volume conservation)
+    
+    Parameters
+    ----------
+    v : float or array-like
+        3-velocity magnitude (or vector) in lattice units (c = 1)
+    l_P : float
+        Planck length (default 1.0 in natural units)
+    t_P : float
+        Planck time (default 1.0 in natural units)
+    
+    Returns
+    -------
+    epsilon_geom : float
+        Geometric strain ε_geom. Returns np.inf at saturation (v → c).
+    """
+    import numpy as np
+    # Net displacement magnitude in one absolute Moment
+    d_mag = np.linalg.norm(v) * t_P if hasattr(v, '__len__') else abs(v) * t_P
+    f = d_mag / l_P                     # fractional budget consumed
+    if f >= 1.0:
+        return np.inf                   # saturated (absolute speed limit)
+    return f / (1 - f)                  # Hooke-like at low strain
