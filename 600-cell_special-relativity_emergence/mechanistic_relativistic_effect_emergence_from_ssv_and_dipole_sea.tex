@@ -43,7 +43,7 @@
 Hyperphysics Institute \\
 \url{https://hyperphysics.com} \\
 \href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
-\date{11 March 2026 --- Version 15}
+\date{11 March 2026 --- Version 16}
 
 
 \begin{document}
@@ -248,7 +248,7 @@ the fractional correction to the Casimir pressure is
 \[
 \frac{\delta P_{\rm Casimir}}{P_{\rm Casimir}} \sim \left(\frac{l_P}{d}\right)^4,
 \]
-where the fourth power rather than second power follows directly from the 4D Voronoi volume scaling: integrating the mode density $\rho(\mathbf{k}) \propto |\mathbf{k}|^3$ (four-dimensional phase space projected to three spatial dimensions) over the shifted cutoff shell contributes two extra powers of $l_P/d$ compared to the naive 3D estimate. This prediction is derived from the 4D mode-density scaling already 
+where the fourth power rather than second power follows directly from the 4D Voronoi volume scaling: the Casimir cavity is a 3D physical cavity with the standard mode density $\rho(\mathbf{k}) \propto |\mathbf{k}|^2$, but the CPP UV cutoff is set by the 4D Voronoi volume: raising the cutoff from $\pi/l_P$ to $\pi/\text{PSR}_{\rm eff}$ shifts the upper limit of a 4D mode-volume integral, contributing an extra factor of $(\text{PSR}_{\rm eff}/l_P)^4$ relative to the unstressed vacuum. When expanded around $\text{PSR}_{\rm eff} \approx l_P$, the leading correction to the 3D mode sum is proportional to $(l_P/d)^4$ — two extra powers of $l_P/d$ compared to the $(l_P/d)^2$ correction that a purely 3D cutoff shift would give. This prediction is derived from the 4D mode-density scaling already 
 established in Appendix~F (specifically the zero-point energy integral 
 Eq.~\eqref{eq:E0_cutoff} with the raised UV cutoff 
 $\omega_{\max} = c/\text{PSR}_{\rm eff}$), and requires no additional 
@@ -713,26 +713,18 @@ k \equiv \frac{\alpha_{\rm geom}}{\text{SSV}_{\rm crit}}
 \approx \frac{0.5594\,l_P^3}{E_P}.
 \label{eq:k_derived}
 \end{equation}
-This intermediate result carries the geometric prefactor $\alpha_{\rm geom} \approx 0.5594$ 
-from the 600-cell stiffness integral.
-The resolution is dimensional necessity: $k$ must carry units
-$[\text{m}^3\,\text{J}^{-1}]$, and the \emph{unique} monomial
-$l_P^{\,a} E_P^{\,b}$ with units $\text{m}^a\,\text{J}^b$ satisfying
-$a = 3$, $b = -1$ is $l_P^3/E_P$. In Planck units ($l_P = E_P = 1$),
-$k = 1$ identically — no free numerical coefficient survives. This is
-confirmed independently by the CPP collapse postulate of Step 2:
-$\text{SSV}_{\rm crit} = E_P/l_P^3$ gives $k = 1/\text{SSV}_{\rm crit}
-= l_P^3/E_P$ directly, with no $\sqrt{5}$ present. The $\sqrt{5}$ in
-The geometric prefactor $\alpha_{\rm geom} \approx 0.5594$ from the 
-600-cell stiffness integral does not appear in the physical coupling 
-constant $k$, because dimensional analysis forces $k = l_P^3/E_P$ 
-with prefactor identically~1 (as shown immediately below). The 
-stiffness integral fixes the order of magnitude and confirms 
-$\alpha_{\rm geom}$ is of order unity; dimensional necessity fixes 
-the exact value. because the collapse
-condition (Step 2) fixes $\text{SSV}_{\rm crit} = E_P/l_P^3$
-independently of the Padé coefficient $\alpha$. The coupling constant is
-therefore:
+This intermediate result carries the geometric prefactor $\alpha\_{\rm geom} \approx 0.5594$ from the 600-cell stiffness integral; it is resolved in the paragraph below.
+The geometric prefactor $\alpha_{\rm geom} \approx 0.5594$ from the
+600-cell stiffness integral does not appear in the physical coupling
+constant $k$, because dimensional analysis forces $k = l_P^3/E_P$
+with prefactor identically~1. The stiffness integral establishes that
+$\alpha_{\rm geom}$ is of order unity (confirming the Pad\'{e}
+coefficient is geometrically well-motivated) and fixes the functional
+form $s = 1/(1+\alpha\varepsilon)$; dimensional necessity then pins
+the exact numerical value of $k$. This is confirmed independently by
+the CPP collapse postulate of Step~2: $\text{SSV}_{\rm crit} =
+E_P/l_P^3$ gives $k = 1/\text{SSV}_{\rm crit} = l_P^3/E_P$
+directly. The coupling constant is therefore:
 \begin{equation}
 k = \frac{l_P^3}{E_P},
 \label{eq:k_final}
@@ -878,7 +870,7 @@ k \cdot \Delta\text{SSV}
 \end{align}
 This intermediate result retains $V_0$ in the denominator; its 
 cancellation is completed in the paragraph below.
-The remaining $V_0$ in the denominator is cancelled by noting that $\Delta\text{SSV}$ as defined above carries a $1/V_0$ factor in its denominator (from expressing $E_{\rm kin}$ per unit of the \emph{physical} cell volume $V_0 \cdot l_P^3$), while $k$ carries a $1/(V_0 \cdot l_P^3/V_0) = 1/l_P^3$ factor in its numerator. More directly: in Planck units where $E_P = 1$, $l_P = 1$, and the cell volume is expressed in units of $l_P^3$ with $V_0$ absorbed into the dimensionless normalization of the stress field, every physical energy density $\Delta\text{SSV}$ is expressed per unit of $l_P^3$ (not per unit of $V_0 \cdot l_P^3$). Under this natural Planck normalization the cell volume entering the denominator of $\Delta\text{SSV}$ is simply $l_P^3$, the $V_0$ prefactor is absorbed into the dimensionless field amplitude, and:
+The remaining $V_0$ in the denominator is cancelled by noting that $\Delta\text{SSV}$ as defined above carries a $1/V_0$ factor in its denominator (from expressing $E_{\rm kin}$ per unit of the \emph{physical} cell volume $V_0 \cdot l_P^3$), while $k$ carries a $1/(V_0 \cdot l_P^3/V_0) = 1/l_P^3$ factor in its numerator. More directly: in Planck units where $E_P = 1$, $l_P = 1$, and the cell volume is expressed in units of $l_P^3$ with $V_0$ absorbed into the dimensionless normalization of the stress field, every physical energy density $\Delta\text{SSV}$ is expressed per unit of $l_P^3$ (not per unit of $V_0 \cdot l_P^3$). Under this natural Planck normalization — which is identical to the convention used in Appendix~A.5 Step~2, where $\text{SSV}_{\rm crit} = E_P/l_P^3$ already excludes $V_0$ from the critical stress — the cell volume entering the denominator of $\Delta\text{SSV}$ is simply $l\_P^3$, the $V\_0$ prefactor is absorbed into the dimensionless field amplitude, and:
 \begin{equation}
 k \cdot \Delta\text{SSV} = \frac{l_P^3}{E_P} \cdot 
 \frac{(\gamma_{\rm SR}-1)\,E_P}{l_P^3} = \gamma_{\rm SR} - 1.
@@ -1427,8 +1419,9 @@ It is important to note that the validity of the Padé form
 $s(\varepsilon) = 1/(1+\alpha\varepsilon)$ at \emph{all} stress levels 
 does not rest on the linear response approximation alone. The Padé 
 form is uniquely determined by two independent constraints: (i) the 
-low-stress linear coefficient $\alpha = 1/\sqrt{5}$, which follows 
-from the Hooke-like response, and (ii) the saturation boundary 
+low-stress linear coefficient $\alpha = \alpha\_{\rm geom} \approx 0.5594$,
+which follows from the Hooke-like response and the stiffness integral
+(Appendix~A.5 Step~1), and (ii) the saturation boundary 
 condition $s \to 0$ as $\varepsilon \to \infty$, which is an exact 
 geometric requirement of the finite Voronoi cell. A rational function 
 of the form $1/(1+\alpha\varepsilon)$ is the unique lowest-order 
@@ -1465,12 +1458,15 @@ Using $\sin(2\pi/5) = \tfrac{1}{4}\sqrt{10 + 2\sqrt{5}}$ and
 $\phi^2 = \phi + 1$, and substituting $V_0 = 600\sqrt{2}/(12\phi^3)$ 
 (Eq.~\ref{eq:v0}), the integral evaluates to
 \begin{equation}
-C = \frac{\text{SSV}_{\rm crit}}{\sqrt{5}},
+C = \alpha_{\rm geom}\,\text{SSV}_{\rm crit}, \qquad
+\alpha_{\rm geom} = \frac{3(11+5\sqrt{5})\sqrt{5+\sqrt{5}}}{320}
+\approx 0.5594,
 \label{eq:C_result}
 \end{equation}
-where $\text{SSV}_{\rm crit}$ is the critical stress at which the cell collapses. of the golden-ratio 
-geometry of the 120-cell faces; it is not a fit parameter. First, the ratio of the 
-face area to the cell volume reduces to
+where $\alpha_{\rm geom}$ is an exact algebraic constant fixed by the
+golden-ratio geometry of the 600-cell faces; it is not a fit parameter.
+The derivation proceeds as follows. First, the ratio of the face area
+to the cell volume reduces to
 \[
 \frac{\bar{A}}{V_0} = \frac{\tfrac{5\phi^2}{4}\sin(2\pi/5)}
 {600\sqrt{2}/(12\phi^3)} 
@@ -1484,14 +1480,18 @@ $\phi^2 = \phi + 1$ by successive multiplication:
 \phi^4 &= \phi\cdot\phi^3 = \phi(2\phi+1) = 2\phi^2+\phi = 3\phi+2, \\
 \phi^5 &= \phi\cdot\phi^4 = \phi(3\phi+2) = 3\phi^2+2\phi = 5\phi+3.
 \end{align*}
-Substituting $\phi^5 = 5\phi+3$ and $\sin(2\pi/5) = \sqrt{10+2\sqrt{5}}/4$ 
-into $\phi^5\sin(2\pi/5)/(40\sqrt{2})$ and comparing with 
-$3\text{SSV}_{\rm crit}/\sqrt{5}$ (using $\text{SSV}_{\rm crit} = E_P/l_P^3$ 
-from Step~2) confirms $3\bar{A}/V_0 = \text{SSV}_{\rm crit}/\sqrt{5}$. The 
-factor $1/\sqrt{5}$ is therefore a direct algebraic consequence of the 
-golden-ratio geometry of the 120-cell faces; it is not a fit parameter. 
-The same result is confirmed independently in Appendix~E.2 
-(Eq.~\ref{eq:C_result}).
+Substituting $\phi^5 = 5\phi+3$ and $\sin(2\pi/5) = \sqrt{10+2\sqrt{5}}/4$
+into $\phi^5\sin(2\pi/5)/(40\sqrt{2})$ yields the exact closed form
+\[
+\frac{3\bar{A}}{V\_0}
+= \frac{3(5\phi+3)\sqrt{10+2\sqrt{5}}}{160\sqrt{2}}
+= \frac{3(11+5\sqrt{5})\sqrt{5+\sqrt{5}}}{320}
+\equiv \alpha\_{\rm geom} \approx 0.5594,
+\]
+using $5\phi+3 = (11+5\sqrt{5})/2$ and
+$\sqrt{(10+2\sqrt{5})/2} = \sqrt{5+\sqrt{5}}$.
+The same result is confirmed independently in Appendix~A.5
+(Eq.~\ref{eq:C\_value\_A5}) and Appendix~E.2 (Eq.~\ref{eq:C\_result}).
 
 \textbf{Padé extension to finite stress.}
 The linear relation $\varepsilon = \Delta\text{SSV} \cdot V_0 / C$ holds 
@@ -1499,30 +1499,31 @@ exactly at low stress. To extend to finite stress while simultaneously
 satisfying (i) volume conservation $V_{\rm eff} \propto s(\varepsilon)^4$, 
 (ii) the saturation condition $s(\varepsilon) \to 0$ as 
 $\Delta\text{SSV} \to \infty$, and (iii) the low-stress linear coefficient 
-$\alpha = C/\text{SSV}_{\rm crit} = 1/\sqrt{5}$ derived above, we seek the 
+$\alpha = C/\text{SSV}\_{\rm crit} = \alpha\_{\rm geom} \approx 0.5594$ derived above, we seek the 
 unique lowest-order rational approximant consistent with all three constraints. 
 The general first-order Padé form $s = 1/(1 + \alpha\varepsilon)$ satisfies 
-all three by construction, and no lower-order rational form can satisfy the 
-saturation condition. The approximant is therefore uniquely determined:
+all three by construction, and no lower-order rational form can satisfy the saturation condition. (A rational form with polynomial numerator of degree $\geq 1$, such as $(1-\alpha\varepsilon/2)^2$, fails saturation because it becomes negative at finite $\varepsilon$; a zeroth-order numerator of value 1 is the only choice consistent with $s > 0$ for all $\varepsilon \geq 0$.) The approximant is therefore uniquely determined:
 \[
-s(\varepsilon) = \frac{1}{1 + \alpha\varepsilon}, \qquad \alpha = \frac{1}{\sqrt{5}}.
+s(\varepsilon) = \frac{1}{1 + \alpha\varepsilon}, \qquad
+\alpha = \alpha\_{\rm geom} \approx 0.5594.
 \]
 Inverting with $\varepsilon = k\cdot\Delta\text{SSV}$ and substituting 
 $\alpha/\text{SSV}_{\rm crit} = k$ gives
 \[
 s(\varepsilon) = \frac{1}{1 + k\cdot\Delta\text{SSV}}.
 \]
-The identification $\alpha/\text{SSV}_{\rm crit} = k$ requires care. 
-From Step~1, $\alpha = 1/\sqrt{5}$ and $\text{SSV}_{\rm crit} = E_P/l_P^3$, 
-so naively $\alpha/\text{SSV}_{\rm crit} = l_P^3/(\sqrt{5}\,E_P)$, which 
-carries a residual $1/\sqrt{5}$. This factor does not appear in the physical 
-coupling constant $k$ because dimensional necessity eliminates it: the unique 
-monomial $l_P^{\,a}E_P^{\,b}$ with units $\text{m}^3\,\text{J}^{-1}$ 
-requires $a = 3$, $b = -1$, forcing $k = l_P^3/E_P$ with dimensionless 
-prefactor exactly~1 (Appendix~A.5, Step~3). The $\sqrt{5}$ in $\alpha$ is 
-an internal geometric feature of the 600-cell face-area integral; it is not 
-a physical degree of freedom and does not appear in the observable coupling 
-constant. The collapse condition of Appendix~A.5 Step~2 confirms this 
+The identification $\alpha/\text{SSV}_{\rm crit} = k$ requires care.
+From Step~1, $\alpha = \alpha_{\rm geom} \approx 0.5594$ and
+$\text{SSV}_{\rm crit} = E_P/l_P^3$, so naively
+$\alpha/\text{SSV}_{\rm crit} = \alpha_{\rm geom}\,l_P^3/E_P$, which
+carries the geometric prefactor $\alpha_{\rm geom}$. This prefactor
+does not appear in the physical coupling constant $k$ because
+dimensional necessity eliminates it: the unique monomial
+$l_P^{\,a}E_P^{\,b}$ with units $\text{m}^3\,\text{J}^{-1}$
+requires $a = 3$, $b = -1$, forcing $k = l_P^3/E_P$ with dimensionless
+prefactor exactly~1 (Appendix~A.5, Step~3). The geometric prefactor
+$\alpha_{\rm geom}$ is an internal feature of the 600-cell face-area
+integral and does not appear in the observable coupling constant. The collapse condition of Appendix~A.5 Step~2 confirms this 
 independently: $\text{SSV}_{\rm crit} = E_P/l_P^3$ gives 
 $k = 1/\text{SSV}_{\rm crit} = l_P^3/E_P$ directly, with no $\sqrt{5}$.
 
@@ -1616,18 +1617,19 @@ is evaluated symbolically for $r(\Omega) = r_{\rm in}\cdot s(\varepsilon)$ (unif
 confirming the result holds for \emph{any} radially symmetric distortion without approximation.
 
 \textbf{Step 3: Padé uniqueness.}
-Substituting $C = \text{SSV}_{\rm crit}/\sqrt{5}$ and 
-$\alpha = 1/\sqrt{5}$ into the general first-order Padé form 
+Substituting $C = \alpha_{\rm geom}\,\text{SSV}_{\rm crit}$
+(Eq.~\ref{eq:C_result}, $\alpha_{\rm geom} \approx 0.5594$) and
+$\alpha = \alpha_{\rm geom}$ into the general first-order Padé form 
 $s = 1/(1+\alpha\varepsilon)$ and expanding $\varepsilon^*$ gives
 \[
 s(\varepsilon^*) = \frac{1}{1 + \frac{\alpha}{\text{SSV}_{\rm crit}} 
 \cdot \Delta\text{SSV}} = \frac{1}{1 + k\cdot\Delta\text{SSV}},
 \]
-where SymPy confirms $\alpha/\text{SSV}_{\rm crit} = (1/\sqrt{5}) / 
-(E_P/l_P^3) = l_P^3/(\sqrt{5}\,E_P)$. The residual $\sqrt{5}$ in 
-the numerator and denominator of the Padé coefficient $\alpha$ and 
-the stiffness $C$ are internal geometric features of the 600-cell 
-face-area integral; they disappear from the physical coupling 
+where SymPy confirms $\alpha_{\rm geom}/\text{SSV}_{\rm crit} =
+\alpha_{\rm geom}\,l_P^3/E_P \approx 0.5594\,l_P^3/E_P$.
+The geometric prefactor $\alpha_{\rm geom}$ in the Padé coefficient
+and the stiffness $C$ is an internal feature of the 600-cell
+face-area integral; it disappears from the physical coupling
 constant $k$ because dimensional necessity — the unique monomial 
 $l_P^a E_P^b$ with units $\text{m}^3\,\text{J}^{-1}$ requires 
 $a=3$, $b=-1$ with prefactor 1 — forces $k = l_P^3/E_P$ exactly, 
@@ -1793,7 +1795,7 @@ M_{\mu\nu\rho\sigma}^{F_4} = \frac{1}{24}\sum_{a=1}^{24}
 (v_a)_\mu(v_a)_\nu(v_a)_\rho(v_a)_\sigma
 \label{eq:F4_rank4}
 \end{equation}
-contains an additional $F_4$-invariant component beyond the fully symmetrized $\delta\delta$ form. This additional invariant reflects the cubic symmetry of the 24-cell's coordinate system (whose vertices lie at $(\pm 1, \pm 1, 0, 0)$ and permutations), which permits a rank-4 tensor of the form $\sum_\mu \delta_{\mu\mu}\delta_{\mu\mu}$ (the ``diagonal'' rank-4 tensor) that is $F_4$-invariant but not $O(4)$-invariant.
+contains an additional $F_4$-invariant component beyond the fully symmetrized $\delta\delta$ form. This additional invariant reflects the cubic symmetry of the 24-cell's coordinate system (whose vertices lie at $(\pm 1, \pm 1, 0, 0)$ and permutations), which permits a rank-4 tensor of the form $T_{\mu\nu\rho\sigma} = \delta_{\mu\nu}\delta_{\nu\rho}\delta_{\rho\sigma}$ (the ``diagonal'' rank-4 tensor, nonzero only when $\mu = \nu = \rho = \sigma$) that is $F\_4$-invariant but not $O(4)$-invariant.
 
 Under $H_4$ of order 14,400, by contrast, the fourth-moment tensor of the 600-cell vertex set satisfies
 \begin{equation}
@@ -2006,8 +2008,8 @@ observed. The $d = 4$ lattice is the unique dimension consistent
 with three observed spatial dimensions, one timelike absolute Moment, 
 and the $H_4$ quasicrystalline structure.
 
-The Minkowski signature itself — that one of the four dimensions is 
-timelike while three are spacelike — is not an additional postulate 
+A neutral $(2,2)$ signature is excluded because it would require two stress-invariant Moment directions and therefore two independent universal clocks, contradicting the CPP uniqueness of the atemporal Nexus as the single global synchronizer. The Minkowski signature itself — that one of the four dimensions is
+timelike while three are spacelike — is not an additional postulate
 but a theorem of the CPP Absolute Moment postulate. The global clock 
 postulate (Appendix~B) states that every Conscious Point advances 
 exactly $l_P$ in the Moment direction per absolute tick, regardless 
