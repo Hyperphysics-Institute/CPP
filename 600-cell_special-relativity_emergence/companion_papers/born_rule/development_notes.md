@@ -67,7 +67,9 @@ Prior to measurement, a massive particle or energetic particle (photon) has inde
 
 Once enough GPs have registered the CP's trajectory via shell broadcast, the SSV field in the neighborhood is modified irreversibly. The CP's subsequent PCD cycle now computes its net SSV against a *modified* background — one that strongly favors the outcome that has already begun to register. This is a positive feedback process: early fluctuations toward outcome $i$ modify the local SSV field to favor further steps toward $i$, until the trajectory is locked.
 Is this the picture you have? And critically — does this feedback happen within *one* Absolute Moment, or does it unfold over many ticks?
-Thomas:
+
+**Thomas:**
+
 I believe the wavefunction collapse is a process that involves the mechanism, as you note.  I believe there is a spreading mechanism associated with the fact that a photon is composed of DPs that are separated by an electric field.  I think wave function collapse is a progressive/propagating mechanism, rather than a single Moment, as you hypothesize. 
 
 ---
