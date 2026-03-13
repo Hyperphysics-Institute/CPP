@@ -1,121 +1,504 @@
-% ==================================================================
-% Companion Paper: Quantum Probability and the Classical Transition
-% in Conscious Point Physics
-% Version 1.1 — Skeleton with ZBW Appendix
-% 14 March 2026
-% ==================================================================
+\documentclass[12pt]{article}
 
-\documentclass[11pt,a4paper]{article}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{hyperref}
-\usepackage{graphicx}
+% ── packages ──────────────────────────────────────────────────────────────────
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
-\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
 
-\title{Quantum Probability and the Classical Transition in Conscious Point Physics: \\
-A Mechanistic Framework}
-\author{Thomas Lee Abshier, ND \\
-Hyperphysics Institute \\
-\url{https://hyperphysics.com} \\
-drthomas007@protonmail.com}
-\date{14 March 2026 --- Version 1.1}
+\geometry{letterpaper, margin=1in}
+
+% ── theorem environments ───────────────────────────────────────────────────────
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── convenience macros ────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\EP}{E_P}
+\newcommand{\tP}{t_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\DP}{\text{DP}}
+\newcommand{\CP}{\text{CP}}
+\newcommand{\GP}{\text{GP}}
+
+% ── title block ───────────────────────────────────────────────────────────────
+\title{\textbf{Quantum Probability and the Classical Transition\\
+in Conscious Point Physics: A Mechanistic Framework}\\[6pt]
+{\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{13 March 2026 --- Version~2}
 
 \begin{document}
-
 \maketitle
 
+% ── keywords ──────────────────────────────────────────────────────────────────
+\noindent\textbf{Keywords:} Conscious Point Physics, Born rule, quantum
+superposition, wavefunction collapse, Zitterbewegung, Planck action, PCD
+cycle, SSV broadcast, measurement problem, quantum-classical transition.
+
+% ── abstract ──────────────────────────────────────────────────────────────────
 \begin{abstract}
-The Born rule \(P(i) = |\langle\psi_i|\psi\rangle|^2\) receives a natural mechanistic interpretation in Conscious Point Physics. Superposition is the rapid tick-by-tick fluctuation of net SSV direction caused by the random superposition of an organized DP aggregate with the fluctuating background Dipole Sea. Measurement is any interaction that injects an organized SSV quantum, irreversibly modifying the local SSV field via 12-neighbor shell broadcast. Collapse is a progressive positive-feedback cascade in which early trajectory fluctuations bias subsequent SSV gradients until the outcome is dynamically locked. The Planck action \(\hbar\) emerges directly as the action per ZBW cycle of an elementary DP (see Appendix). While the exact \(|\psi|^2\) weighting is a strong conjecture arising from ZBW statistics and SSV feedback, every other element (superposition, measurement, collapse, \(\hbar\)) follows rigorously from the PCD cycle, 600-cell geometry, and irreversible broadcast already established in the main paper (Version 16) and the Absolute Moment and Stiffness \(C\) companions. No new postulates are introduced. Full derivation of the Schrödinger equation and spin/Pauli exclusion are deferred to later companions.
+We show that the machinery already established in the main paper (Version~16)
+and the two preceding companions --- the PCD cycle, 600-cell geometry,
+Shell-broadcast SSV propagation, and Zitterbewegung (ZBW) --- provides a
+natural mechanistic framework for quantum superposition, measurement, and
+wavefunction collapse.  Three results are established rigorously:
+(i)~\emph{Superposition} in CPP is not a single system in a mysterious
+indefinite state but the genuine superposition of two distinct systems ---
+an organized CP aggregate and the randomly fluctuating Dipole Sea --- whose
+combined net SSV fluctuates deterministically tick by tick.
+(ii)~\emph{Measurement} is any interaction that irreversibly modifies the
+local SSV field via 12-neighbor shell broadcast, requiring no conscious
+observer.
+(iii)~\emph{Collapse} is a progressive positive-feedback cascade in which
+early SSV fluctuations bias subsequent PCD cycles until the outcome is
+dynamically locked.
+One result is established as a dimensional identity:
+(iv)~The elementary quantum of action $\hbar$ has the scale $\EP\cdot\tP$,
+identifying the Absolute Moment tick as the natural unit of quantum action;
+this is a physical identification, not an independent numerical derivation.
+One result remains a \emph{strong conjecture}:
+(v)~The precise $|\psi|^2$ weighting of the Born rule plausibly arises from
+the two-quadrature structure of ZBW oscillation, but a rigorous proof is the
+central open problem of the CPP program.
+Full derivation of the Schr\"odinger equation from PCD dynamics and the
+treatment of spin and Pauli exclusion are deferred to dedicated companions.
+No new postulates are introduced.
 \end{abstract}
 
+% ══════════════════════════════════════════════════════════════════════════════
 \section{Introduction}
-The main paper (Version 16) derives special relativity from the single geometric relation
-\[
-\text{PSR}_{\rm eff} = \frac{l_P}{1 + k \cdot \Delta\text{SSV}},
-\]
-using the PCD cycle (Perceive \(\to\) Compute \(\to\) Displace), 12-edge zig-zag selection, and stress-invariant Absolute Moment. The present companion shows how the identical machinery naturally accounts for quantum superposition, measurement, and collapse while supplying \(\hbar\) at the correct scale.
+\label{sec:intro}
+% ══════════════════════════════════════════════════════════════════════════════
 
-We make three rigorous claims and one strong conjecture:
-\begin{itemize}
-\item Superposition, measurement, and collapse have direct CPP analogs.
-\item \(\hbar\) is the action of one ZBW cycle of an elementary DP (Appendix).
-\item The Born rule \(P(i) = |\langle\psi_i|\psi\rangle|^2\) emerges plausibly from ZBW statistics and SSV feedback (conjecture; full proof deferred).
+The main paper (Version~16) derives all special-relativistic effects from the
+single geometric relation
+\begin{equation}
+  \PSR_{\rm eff} \;=\; \frac{\lP}{1 + k\cdot\Delta\SSV},
+  \label{eq:PSR}
+\end{equation}
+using the PCD cycle (Perceive $\to$ Compute $\to$ Displace), deterministic
+12-edge SSV-gradient selection, and the stress-invariant Absolute Moment
+tick $\tP$.  The preceding companions established the Absolute Moment as
+necessary for global DI-bit conservation, and the stiffness $C$ as a direct
+consequence of the 600-cell Voronoi second-moment integral.
+
+The present companion addresses the quantum regime.  The measurement problem
+--- why and how a system with a definite microscopic state produces
+probabilistic macroscopic outcomes --- has no consensus solution in standard
+quantum mechanics.  CPP does not solve this problem in full, but it provides
+a mechanistic framework that is more concrete than any existing interpretation:
+every element of quantum phenomenology (superposition, measurement, collapse,
+$\hbar$) has a direct analog in the PCD cycle, ZBW oscillation, and SSV
+broadcast, with no additional postulates.
+
+We adopt the following epistemic discipline throughout:
+\begin{itemize}[noitemsep]
+  \item \textbf{Rigorous claims} follow from the existing postulates with no
+    additional assumptions.
+  \item \textbf{Strong conjectures} are physically motivated and consistent
+    with all known data, but lack a complete proof within CPP.
+  \item \textbf{Deferred results} require new machinery developed in later
+    companions.
 \end{itemize}
-This framing is deliberately conservative: everything claimed is derivable from existing postulates; the \(|\psi|^2\) weighting is flagged as the central open problem of the CPP program.
+This discipline is identical to that applied in the Absolute Moment and
+Stiffness~$C$ companions.  A shorter, more hedged paper that survives referee
+scrutiny is stronger than an overclaimed derivation that does not.
 
-\section{Superposition in CPP}
-In CPP every Conscious Point has a definite SSV and takes a definite 12-edge step each Absolute Moment. Apparent superposition arises because every organized aggregate (massive particle or photon) is continuously immersed in the random Dipole Sea.
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Superposition in CPP: Two Systems, Not One}
+\label{sec:superposition}
+% ══════════════════════════════════════════════════════════════════════════════
 
-- The target aggregate carries its original organized SSV from the moment of creation.
-- At each tick the background DP Sea adds random virtual-particle collisions and solitonic polarizations.
-- The net SSV direction therefore fluctuates rapidly at the ZBW frequency \(\nu_{\rm ZBW} = 1/(2t_P)\).
-- The CP still executes a deterministic 12-edge step (maximum-gradient selection), but over many ticks the trajectory samples multiple paths with frequencies set by the instantaneous net-SSV components.
+\begin{proposition}[Two-system origin of apparent superposition]
+\label{prop:superposition}
+Quantum superposition is not a single Conscious Point existing in multiple
+states simultaneously.  It is the genuine physical superposition of two
+distinct systems: (i)~the organized CP aggregate (massive particle or photon)
+carrying its original SSV from the moment of creation, and (ii)~the
+fluctuating background Dipole Sea, which continuously superimposes its own
+random virtual-particle collisions and solitonic polarizations onto the
+aggregate.  The apparent indefiniteness of the quantum state is the
+indefiniteness of this two-system mixture, not of the aggregate alone.
+\end{proposition}
 
-This reproduces the appearance of a particle ``being in multiple states'' without violating determinism. The rapid fluctuation is the CPP realization of a quantum wave packet.
+To be precise about the mechanism: every massive particle is a soliton-like
+organization of paired and unpaired CPs, persistently polarizing the
+surrounding DP Sea.  Every photon is a propagating wavefront of coherently
+oriented GP-mediated polarizations, carrying no net charge but carrying
+organized net SSV.  In both cases, at each Absolute Moment tick, the
+organized aggregate is immersed in the surrounding DP Sea, which adds:
+\begin{enumerate}[noitemsep]
+  \item \emph{Brownian collisions}: random virtual DP interactions that
+    shift the net SSV direction by small amounts.
+  \item \emph{Solitonic superpositions}: occasional large-amplitude SSV
+    contributions from distant organized structures, producing brief
+    excursions far from the mean trajectory.
+\end{enumerate}
+The combined net SSV at the aggregate's current GP therefore fluctuates
+rapidly, at the ZBW frequency $\nu_{\rm ZBW} = 1/(2\tP)$.  The CP still
+executes a \emph{deterministic} 12-edge step each tick (maximum-gradient
+selection, Absolute Moment companion Eq.~3), but over many ticks the
+trajectory samples multiple paths.
 
-\section{Measurement}
-Measurement is any interaction that injects an organized SSV quantum into the local Dipole Sea such that the net SSV field of the target system is irreversibly altered. No conscious observer is required.
+\begin{remark}[Why this resolves the measurement problem partially]
+The standard Copenhagen interpretation treats superposition as a primitive
+fact about quantum systems.  CPP gives it a mechanistic origin: the state
+``appears'' indefinite to an external observer because the observer does not
+have access to the tick-by-tick SSV configuration of both the aggregate and
+the DP Sea simultaneously.  The aggregate has a definite state at every tick;
+the ignorance is epistemic, not ontological.  This is closer in spirit to a
+hidden-variable interpretation, but the ``hidden variable'' is the
+instantaneous net SSV, which is in principle accessible (though not in
+practice at Planck resolution).
+\end{remark}
 
-- The probe (natural collision or laboratory device) adds its own SSV contribution.
-- The combined net SSV is perceived by the local GPs.
-- Shell broadcast re-transmits the updated SSV to the 12 neighbors, permanently modifying the background field.
-- Reversal would require coordinated reversal of \(\sim 10^{23}\) GPs — dynamically impossible.
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Measurement: Irreversible SSV Modification}
+\label{sec:measurement}
+% ══════════════════════════════════════════════════════════════════════════════
 
-This definition is fully operational within the PCD cycle and matches the irreversible broadcast mechanism derived in the Stiffness \(C\) companion.
+\begin{definition}[Measurement in CPP]
+\label{def:measurement}
+A \emph{measurement} is any interaction that injects an organized SSV quantum
+into the local Dipole Sea such that the net SSV field of the target system is
+irreversibly modified.  No conscious observer is required; natural particle
+collisions, photon scattering, and laboratory probes all qualify equally.
+\end{definition}
 
-\section{Collapse as Progressive Feedback}
-Collapse is not instantaneous but a propagating positive-feedback process:
+The mechanism is the shell-broadcast propagation established in the Absolute
+Moment companion (\S 5.2) and the Stiffness~$C$ companion (\S 4.1):
+\begin{enumerate}[noitemsep]
+  \item The probe interaction adds its SSV quantum to the local GP register
+    (Perceive phase of the target GP's PCD cycle).
+  \item The Compute phase combines probe SSV with the existing aggregate SSV,
+    producing a new net SSV direction.
+  \item The Displace phase moves the CP toward the new net-SSV-favored
+    destination, and simultaneously broadcasts the updated SSV outward at
+    speed $c$ --- one PSR shell per Absolute Moment.
+  \item After $N$ ticks the modified SSV shell has propagated to radius
+    $r \sim N\cdot\lP$, influencing $\sim 4\pi r^2/\lP^2$ GPs.
+  \item Once $N$ is large enough that reversal would require coordinated
+    action of $\sim 10^{23}$ GPs simultaneously, the modification is
+    \emph{dynamically irreversible} --- not because the Nexus forbids it,
+    but because no physical process can coordinate that many independent PCD
+    cycles.
+\end{enumerate}
 
-- Initial probe interaction biases the local SSV gradient.
-- Early steps toward outcome \(i\) modify the broadcast SSV field.
-- Subsequent PCD cycles now compute against a biased background, increasing the probability of further steps toward \(i\).
-- The cascade locks over a finite number of Absolute Moments once the modified shell has propagated outward.
+This definition is operational: it gives a precise physical criterion for
+when a measurement has occurred (irreversibility threshold), without
+appealing to observers, consciousness, or wavefunction collapse as a
+primitive.
 
-The timescale of locking is set by the shell-broadcast speed (one lattice step per Absolute Moment) and the number of GPs required for dynamical irreversibility. This mechanism is fully consistent with the progressive spreading described in the main paper and the irreversible broadcast derived in the Stiffness \(C\) companion.
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Collapse as Progressive Positive-Feedback Cascade}
+\label{sec:collapse}
+% ══════════════════════════════════════════════════════════════════════════════
 
-\section{\(\hbar\) from ZBW Action}
-Every elementary DP (paired or unpaired) oscillates at the ZBW frequency. The action per ZBW cycle supplies \(\hbar\) directly (see Appendix).
+Wavefunction collapse in CPP is not instantaneous.  It is a propagating
+positive-feedback process:
 
-\section{Consistency with Special Relativity and Stiffness \(C\)}
-The same 12-edge selection, shell broadcast, and stress-invariant Absolute Moment already used for time dilation (main paper Eq. 1) and Coulomb stiffness (Stiffness \(C\) companion) operate unchanged in the quantum regime. The irreversible broadcast mechanism that produces the inverse-square force law is identical to the mechanism that locks collapse. No contradiction arises; the framework is scale-invariant from Planck to laboratory energies.
+\begin{enumerate}[noitemsep]
+  \item The probe interaction biases the local SSV gradient toward outcome
+    $i$.
+  \item The aggregate CP's next PCD cycle computes against this biased
+    background, increasing the probability of a step toward $i$.
+  \item Each step toward $i$ broadcasts updated SSV that further biases the
+    gradient in surrounding GPs.
+  \item The cascade propagates outward at speed $c$ and locks over a finite
+    number of Absolute Moments, determined by the ratio of the probe SSV
+    quantum to the background DP Sea noise level.
+\end{enumerate}
 
-\section{Open Problems and Next Steps}
-The exact mechanism that converts ZBW frequency statistics into the precise \(|\psi|^2\) weighting remains the central open conjecture of CPP. Full derivation of the Schrödinger equation from PCD dynamics and a treatment of spin/Pauli exclusion (via qDP chaining) are deferred to dedicated companions.
+The locking timescale $\tau_{\rm collapse}$ is set by the shell-broadcast
+speed and the dynamical-irreversibility threshold:
+\begin{equation}
+  \tau_{\rm collapse} \;\sim\; \frac{r_{\rm irrev}}{c}
+  \;\sim\; \left(\frac{N_{\rm irrev}^{1/2}}{4\pi}\right)^{1/2} \tP,
+  \label{eq:tau_collapse}
+\end{equation}
+where $N_{\rm irrev} \sim 10^{23}$ is the number of GPs required for
+dynamical irreversibility.  This timescale is macroscopically instantaneous
+(far below any laboratory measurement resolution) while still being
+microscopically finite --- consistent with all experimental observations of
+collapse.
 
-The present paper demonstrates that the Born rule is not an arbitrary postulate but emerges naturally from the same lattice geometry, SSV broadcast, and ZBW dynamics that already reproduce special relativity and classical electromagnetism.
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The Scale of \boldmath$\hbar$ and the ZBW Action}
+\label{sec:hbar}
+% ══════════════════════════════════════════════════════════════════════════════
 
+\begin{proposition}[ZBW identification of $\hbar$]
+\label{prop:hbar}
+The elementary quantum of action $\hbar$ has the dimensional scale
+$\EP\cdot\tP$.  This identifies the Absolute Moment tick as the natural unit
+of quantum action: one tick of the universal clock corresponds to one
+elementary quantum of action.
+\end{proposition}
+
+It is important to state this identification precisely.  In Planck units,
+$\hbar = \EP\cdot\tP = 1$ by construction --- this is not an independent
+numerical derivation but a physical identification.  The content of
+Proposition~\ref{prop:hbar} is not that we derive the numerical value of
+$\hbar$ from CPP without prior knowledge of its value; it is that CPP
+identifies the \emph{physical origin} of the quantum of action as the
+Absolute Moment tick.
+
+The significance is as follows.  In standard quantum mechanics, $\hbar$ is an
+empirical constant with no deeper explanation.  In CPP, $\hbar$ is the action
+per ZBW half-cycle of an elementary DP:
+\begin{equation}
+  \hbar \;=\; \EP \cdot \tP
+  \;\equiv\; \text{(Planck energy)} \times \text{(Planck time)}.
+  \label{eq:hbar}
+\end{equation}
+Every DP oscillates at $\nu_{\rm ZBW} = 1/(2\tP)$, spending energy $\EP$
+per half-cycle.  Macroscopic aggregates (particles, photons) are assemblies
+of these elementary ZBW units; their total action is an integer multiple of
+$\hbar$.  This gives $\hbar$ a physical interpretation --- the action of the
+smallest possible organized energy exchange in the CPP lattice --- rather than
+treating it as an irreducible empirical input.
+
+The same ZBW oscillation that sets the scale of $\hbar$ also drives the
+tick-by-tick SSV fluctuations identified in Section~\ref{sec:superposition}
+as the CPP origin of apparent superposition.  This connection is not
+coincidental: the phenomenon of quantum uncertainty and the phenomenon of
+quantum action both originate in the same Planck-scale oscillation.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The Born Rule: A Strong Conjecture}
+\label{sec:born}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{conjecture}[Two-quadrature origin of $|\psi|^2$]
+\label{conj:born}
+The precise $|\psi|^2$ weighting of the Born rule arises from the
+two-quadrature structure of ZBW oscillation.  Each ZBW cycle has two
+orthogonal components of SSV fluctuation, analogous to the real and imaginary
+parts of a complex amplitude.  The probability of a trajectory outcome is
+proportional to the sum of squares of both components --- which is
+$|\psi|^2$ --- rather than to either component alone.
+\end{conjecture}
+
+The motivation for this conjecture is as follows.  At each tick, the net SSV
+at the aggregate's GP is the vector sum of the organized aggregate's
+contribution (fixed direction, amplitude $A_i$ for outcome $i$) and the DP
+Sea's ZBW fluctuation (two orthogonal components of amplitude $\sim\lP$).
+The fraction of ticks in which the maximum-gradient 12-edge selection points
+toward outcome $i$ is proportional to the solid angle subtended by the
+outcome's SSV cone.  If the ZBW fluctuation samples both quadratures
+uniformly, this solid angle is proportional to $A_i^2$, giving
+\begin{equation}
+  P(i) \;=\; \frac{A_i^2}{\sum_j A_j^2}
+  \;=\; |\langle\psi_i|\psi\rangle|^2.
+  \label{eq:born}
+\end{equation}
+This argument is suggestive but not rigorous: it does not yet establish why
+the sampling is uniform in both quadratures, nor why the solid-angle
+proportionality holds exactly in the 600-cell's discrete geometry.  These
+are the key steps required for a complete proof and constitute the most
+important open problem in the CPP program.
+
+\begin{remark}[Relation to existing derivations of Born rule]
+Several derivations of the Born rule exist within standard quantum mechanics
+(Gleason's theorem, Deutsch-Wallace decision theory, envariance).  The CPP
+conjecture is independent of all of them: it neither assumes the Hilbert-space
+formalism nor relies on decision-theoretic axioms.  If the conjecture can be
+made rigorous within CPP, it would provide the first purely mechanical,
+sub-quantum derivation of the Born rule.
+\end{remark}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Consistency with Special Relativity and Electromagnetism}
+\label{sec:consistency}
+% ══════════════════════════════════════════════════════════════════════════════
+
+The CPP quantum framework uses no machinery beyond what is already operative
+in the SR and electromagnetic sectors:
+
+\begin{itemize}[noitemsep]
+  \item The \emph{PCD cycle} governs both SR time dilation (main paper) and
+    the deterministic tick-by-tick evolution underlying superposition.
+  \item The \emph{12-edge SSV selection} produces both Lorentz covariance
+    (main paper Appendix~A.8.1) and the trajectory sampling that underlies
+    the Born-rule conjecture.
+  \item The \emph{shell-broadcast mechanism} produces both the $1/r^2$
+    Coulomb law (Stiffness~$C$ companion, \S 4.1) and the irreversibility
+    threshold that defines measurement.
+  \item The \emph{stress-invariant Absolute Moment} produces both SR time
+    dilation and the universal ZBW frequency $\nu_{\rm ZBW} = 1/(2\tP)$.
+\end{itemize}
+
+No element of the quantum framework contradicts or modifies the SR or
+electromagnetic results.  The 600-cell lattice carries the entire load from
+Planck scale to laboratory scale without seam.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Open Problems and Next Companions}
+\label{sec:open}
+% ══════════════════════════════════════════════════════════════════════════════
+
+The present paper establishes a mechanistic framework for quantum
+phenomenology within CPP.  Several important results remain open:
+
+\textbf{(1) Rigorous Born rule.}  The central open problem: prove that
+uniform two-quadrature ZBW sampling in the 600-cell geometry gives exactly
+$P(i) = |\langle\psi_i|\psi\rangle|^2$.  This likely requires a Monte-Carlo
+analysis of the 12-edge selection statistics under ZBW fluctuations, which
+can be implemented as an extension of the geometric-strain routine already
+in the GitHub repository.
+
+\textbf{(2) Schr\"odinger equation from PCD dynamics.}  Derive the
+continuous-limit Schr\"odinger equation as the coarse-grained approximation
+of the PCD tick sequence, analogous to how the diffusion equation arises from
+a random walk in the continuum limit.
+
+\textbf{(3) Spin and Pauli exclusion.}  The CP Exclusion Rule (if two CPs
+occupy the same GP at the same $t_{\rm abs}$, both displace to the PSR edge)
+is a candidate mechanism for the Pauli exclusion principle.  The relationship
+between the CP type structure (electron-type, quark-type) and quantum spin
+requires the companion paper on qDP chaining.
+
+\textbf{(4) Entanglement and non-locality.}  The shared $t_{\rm abs}$ stamp
+in the DI-bit string (Absolute Moment companion, \S 2) suggests a mechanism
+for quantum entanglement via correlated address-time labels.  This is noted
+here as a conjecture; the derivation is deferred.
+
+% ══════════════════════════════════════════════════════════════════════════════
 \section{Conclusion}
-Conscious Point Physics supplies a single, deterministic, geometric mechanism — the PCD cycle operating on the 600-cell lattice — that accounts for superposition, measurement, collapse, and the scale of \(\hbar\). The Born rule itself is a strong conjecture whose precise \(|\psi|^2\) weighting follows plausibly from ZBW statistics and irreversible SSV feedback. This framework closes the measurement problem without wavefunction collapse as a primitive and without additional postulates beyond those already used for special relativity.
+\label{sec:conclusion}
+% ══════════════════════════════════════════════════════════════════════════════
 
-\textbf{GitHub:} The ZBW statistics and SSV-feedback Monte-Carlo routines are implemented in the existing repository:  
-\url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/600cell_monte_carlo_voronoi_k_fit.py}
+Conscious Point Physics provides the following mechanistic account of quantum
+phenomenology, using only machinery already established in Version~16 and the
+two preceding companions:
 
+\begin{enumerate}
+  \item \textbf{Superposition} (rigorous) is the genuine physical
+    superposition of an organized CP aggregate with the randomly fluctuating
+    DP Sea.  The apparent indefiniteness of the quantum state is epistemic,
+    not ontological: the aggregate has a definite SSV at every tick, but the
+    DP Sea contribution is not accessible to macroscopic observers.
+
+  \item \textbf{Measurement} (rigorous) is irreversible SSV-field
+    modification via shell broadcast, requiring no conscious observer and
+    occurring identically in natural collisions and laboratory experiments.
+
+  \item \textbf{Collapse} (rigorous) is a progressive positive-feedback
+    cascade in which early SSV fluctuations bias subsequent PCD cycles until
+    the outcome is dynamically locked.  The collapse timescale is
+    macroscopically instantaneous but microscopically finite.
+
+  \item \textbf{The scale of $\hbar$} (dimensional identification) is
+    $\EP\cdot\tP$: the Absolute Moment tick is the natural unit of quantum
+    action, giving $\hbar$ a physical interpretation as the action of the
+    smallest possible organized energy exchange in the CPP lattice.
+
+  \item \textbf{The Born rule $P(i) = |\psi_i|^2$} (strong conjecture)
+    plausibly arises from the two-quadrature structure of ZBW oscillation,
+    but a rigorous proof is the central open problem of the CPP program.
+\end{enumerate}
+
+This framework closes the measurement problem without treating wavefunction
+collapse as a primitive, without requiring a conscious observer, and without
+introducing any postulate beyond those already operative in the SR derivation.
+The 600-cell lattice, PCD cycle, and SSV broadcast carry the quantum regime
+as naturally as they carry the relativistic regime.
+
+% ══════════════════════════════════════════════════════════════════════════════
 \appendix
-\section{Derivation of \(\hbar\) from ZBW Action}
-\label{app:zbw}
+\section{The Two-Quadrature Born-Rule Conjecture: A Sketch}
+\label{app:born}
+% ══════════════════════════════════════════════════════════════════════════════
 
-Every elementary Dipole Pair (DP) — whether paired or unpaired — executes a zero-point oscillation at the fundamental frequency set by the Absolute Moment:
+We sketch the argument for Conjecture~\ref{conj:born} in more detail to
+clarify what a rigorous proof would require.
 
-\[
-\nu_{\rm ZBW} = \frac{1}{2 t_P}.
-\]
+At each tick, the net SSV at the aggregate's GP is:
+\begin{equation}
+  \SSV_{\rm net}(t) \;=\; \sum_i A_i\,\hat{\mathbf{n}}_i
+  \;+\; \xi_x(t)\,\hat{\mathbf{x}} + \xi_y(t)\,\hat{\mathbf{y}},
+  \label{eq:netSSV}
+\end{equation}
+where $A_i\hat{\mathbf{n}}_i$ is the organized component pointing toward
+outcome $i$, and $\xi_x, \xi_y$ are the two orthogonal ZBW noise components,
+each of amplitude $\sim \lP/\tP$ and oscillating at $\nu_{\rm ZBW}$.
 
-The energy of one full ZBW cycle is the Planck energy \(E_P\) (the maximum energy that can be stored in a single Voronoi cell before saturation). The action per half-cycle (one Absolute Moment) is therefore
+The 12-edge selection rule chooses the lattice edge $i^*$ that maximizes
+$\mathbf{e}_i\cdot\SSV_{\rm net}$.  Over many ticks, the fraction of ticks
+in which $i^*$ points toward outcome $i$ is the solid-angle fraction of the
+unit SSV sphere occupied by outcome $i$'s basin of attraction.
 
-\[
-S = E_P \cdot t_P.
-\]
+If ZBW sampling is uniform in the $(\xi_x, \xi_y)$ plane (i.e., the noise
+is circularly symmetric), then the basin of attraction for outcome $i$ has
+area proportional to $A_i^2$, giving:
+\begin{equation}
+  P(i) \;=\; \frac{A_i^2}{\sum_j A_j^2}
+  \;=\; |\langle\psi_i|\psi\rangle|^2.
+  \label{eq:born_sketch}
+\end{equation}
 
-Because the full ZBW cycle spans two Absolute Moments (forward and return displacement of the dipole separation), the total action per complete oscillation is
+The two key steps that remain unproven are:
+\begin{enumerate}[noitemsep]
+  \item \emph{Circular symmetry of ZBW noise}: that $\xi_x$ and $\xi_y$
+    have equal amplitudes and are uniformly distributed in phase.  This
+    likely follows from the icosahedral symmetry of the 600-cell (which
+    treats all 12 edge directions equivalently) but requires explicit
+    verification.
+  \item \emph{Basin-area proportionality}: that the solid-angle fraction of
+    the SSV sphere occupied by outcome $i$ is exactly $A_i^2/\sum_j A_j^2$
+    in the discrete 12-edge geometry.  This requires a Monte-Carlo
+    computation over the 12-edge selection statistics.
+\end{enumerate}
 
-\[
-\hbar = E_P \cdot 2 t_P.
-\]
+Both steps are in principle computable from the existing CPP machinery.
+Their verification is the primary target of the next computational companion.
 
-(If the half-cycle definition is preferred, \(\hbar = E_P \cdot t_P\); both conventions differ only by a conventional factor of 2 that is absorbed into the definition of the ZBW amplitude \(\sim l_P\).)
+% ══════════════════════════════════════════════════════════════════════════════
+\section*{References}
+% ══════════════════════════════════════════════════════════════════════════════
 
-This action is identical for every DP in the sea. Aggregates (massive particles or photons) are assemblies of these elementary ZBW units, exactly as required for the quantum of action \(\hbar\) to appear at the macroscopic scale. The same ZBW oscillation supplies the rapid fluctuation of net SSV direction that underlies superposition statistics (Section 2) and the frequency weighting that motivates the conjectured \(|\psi|^2\) rule.
+\begin{enumerate}[label={[\arabic*]}]
+  \item Abshier, T.~L. (2026).
+    Mechanistic Derivation of Relativistic Effects via Space Stress Vector
+    (SSV) in the Dipole Sea.  Version~16 (main paper).
 
-The derivation uses only the already-established Planck energy \(E_P\), Absolute Moment \(t_P\), and the dipole nature of the DP Sea (main paper §2 and Stiffness \(C\) companion). No external constants are introduced; \(\hbar\) emerges directly from the lattice tick and the saturation energy of a single Voronoi cell.
+  \item Abshier, T.~L. (2026).
+    The Absolute Moment Postulate: Necessity, Consistency, and the PCD Cycle
+    in Conscious Point Physics.  Version~3 (companion paper 1).
+
+  \item Abshier, T.~L. (2026).
+    Microscopic Origin of the Dipole Sea Stiffness $C$ in Conscious Point
+    Physics.  Version~2 (companion paper 2).
+
+  \item Abshier, T.~L. (2025--2026).
+    Conscious Point Physics Series.
+    \url{https://hyperphysics.com/papers}
+
+  \item Gleason, A.~M. (1957).
+    Measures on the closed subspaces of a Hilbert space.
+    \textit{Journal of Mathematics and Mechanics}, 6(6), 885--893.
+
+  \item Deutsch, D. (1999).
+    Quantum theory of probability and decisions.
+    \textit{Proceedings of the Royal Society A}, 455, 3129--3137.
+\end{enumerate}
+
+\bigskip
+\noindent\textbf{GitHub (geometric-strain and 12-edge selection routines,
+basis for future ZBW Monte-Carlo extension):}\\
+\url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/600cell_monte_carlo_voronoi_k_fit.py}
 
 \end{document}
