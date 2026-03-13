@@ -1,0 +1,521 @@
+\documentclass[12pt]{article}
+
+% ── packages ──────────────────────────────────────────────────────────────────
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+% ── theorem environments ───────────────────────────────────────────────────────
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{postulate}[theorem]{Postulate}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── title block ───────────────────────────────────────────────────────────────
+\title{\textbf{The Absolute Moment Postulate: Necessity, Consistency,\\
+and the PCD Cycle in Conscious Point Physics}\\[6pt]
+{\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{12 March 2026 --- Version~3}
+
+\begin{document}
+\maketitle
+
+% ── keywords ──────────────────────────────────────────────────────────────────
+\noindent\textbf{Keywords:} Conscious Point Physics, Absolute Moment postulate,
+DI-bit conservation, atemporal Nexus, 600-cell lattice, PCD cycle,
+Grid Point broadcast, inverse-square SSV falloff, stress-invariant timelike
+advance, quantum tunnelling, left-handed chirality.
+
+% ── abstract ──────────────────────────────────────────────────────────────────
+\begin{abstract}
+The Absolute Moment postulate of Conscious Point Physics (CPP) asserts that
+every Conscious Point (CP) advances exactly $l_P$ in the timelike direction
+once per universal tick $t_P = l_P/c$, frame-independently and independent of
+local Voronoi-cell stress.  We establish three results.  First, the postulate
+is \emph{necessary}: global DI-bit conservation, in which each DI-bit carries a
+complete four-component address-time vector
+$(\mathbf{x},\, t_{\rm abs})$, requires simultaneous ledger reconciliation
+across cell boundaries; the Perceive-Compute-Displace (PCD) cycle shows that
+no local, asynchronous tick can satisfy this requirement.  Second, the postulate
+is \emph{consistent} with the atemporal Nexus: because the Nexus lies outside
+every Voronoi cell, the timelike component $l_P$ is stress-invariant, supplying
+the fixed denominator in $\text{PSR}_{\rm eff} = l_P/(1+k\cdot\Delta\text{SSV})$.
+Third, the postulate is \emph{consistent} with causal field propagation: the
+Grid Point SSV quantum propagates outward at one PSR shell per Moment,
+distributing a fixed total SSV over a growing spherical surface and thereby
+reproducing the inverse-square falloff required by Coulomb's law and
+Newtonian gravity.  The PSR (communication radius, set by absolute SSV) and
+the displacement step (set by net SSV) are identified as two distinct
+quantities, with their coincidence for photons recovering the null-geodesic
+condition.  No new postulates beyond those of Version~16 are introduced;
+chirality and quantum-tunnelling phenomenology are noted as topics for
+dedicated companion papers.
+\end{abstract}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Introduction}
+\label{sec:intro}
+% ══════════════════════════════════════════════════════════════════════════════
+
+The main paper (Version~16) derives time dilation, length contraction, and the
+twin paradox resolution from the single geometric relation
+\begin{equation}
+  \text{PSR}_{\rm eff} \;=\; \frac{l_P}{1 + k\cdot\Delta\text{SSV}},
+  \label{eq:PSR}
+\end{equation}
+where $k = l_P^3/E_P \approx 2.16\times10^{-114}$~m$^3$/J, and the timelike
+advance per tick is taken to be the fixed Planck length $l_P$.  That fixed
+advance is the Absolute Moment postulate.
+
+This companion paper examines the foundational status of the postulate.
+Section~\ref{sec:entities} defines the primitive entities of CPP (CPs, Grid
+Points, the DI-bit string, and the Nexus) and introduces two quantities that
+must be carefully distinguished: the \emph{PSR} (communication radius) and
+the \emph{displacement step}.  Section~\ref{sec:pcd} introduces the
+\textbf{PCD cycle} --- the Perceive $\to$ Compute $\to$ Displace operational
+definition of GP and CP behaviour --- which forms the mechanical backbone of
+the necessity argument.  Section~\ref{sec:necessity} uses the PCD cycle to
+show that global DI-bit conservation \emph{requires} a universal tick.
+Section~\ref{sec:nexus} establishes stress-invariance via the atemporality of
+the Nexus.  Section~\ref{sec:4d} resolves the 4D step-budget, identifies the
+PSR shell-propagation mechanism, and derives the inverse-square SSV falloff.
+Section~\ref{sec:sr} confirms consistency with the SR derivation of
+Version~16.  Section~\ref{sec:conclusion} concludes.
+
+\begin{remark}[Axiomatic status]
+The Absolute Moment is retained as an \emph{axiomatic postulate}, not derived
+from deeper primitives.  The strategy mirrors that of Version~16 for the
+600-cell: one assumes the postulate, derives its consequences, and validates it
+by the coherence and empirical accuracy of those consequences.  ``Necessity''
+in Section~\ref{sec:necessity} means that, given the other CPP postulates,
+\emph{no self-consistent alternative} to a universal tick exists --- which
+is the strongest achievable justification for an axiomatic entity.
+\end{remark}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Primitive Entities and Definitions}
+\label{sec:entities}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{definition}[Conscious Point (CP)]
+A CP is an irreducible, conscious, mobile entity carrying a DI-bit string.
+It has polarity ($\pm 1$), type (electron-type or quark-type), and resides at
+exactly one Grid Point at any given tick.  CPs do not broadcast; they move.
+\end{definition}
+
+\begin{definition}[Grid Point (GP)]
+A GP is a static, conscious address in the 600-cell lattice.  It serves a
+\emph{dual role}: (i)~as a \emph{spatial address}, providing a unique
+$(x,y,z,t_{\rm abs})$ label for each tick, and (ii)~as a \emph{conduit},
+receiving SSV contributions from all GPs whose PSR contains it, summing those
+contributions, and broadcasting the resulting field to all GPs within its own
+PSR.  The CP currently resident on a GP acquires the GP's address-time stamp
+for all DI-bit strings emitted during that Moment.
+\end{definition}
+
+\begin{definition}[DI-bit String]
+The complete state vector carried by each CP is
+\begin{equation}
+  \text{DI-bit} \;=\;
+  \bigl\{\,\text{identity},\; \pm1\ (\text{polarity}),\;
+  \text{type},\; (x,y,z,t_{\rm abs})\ (\text{address-time})\,\bigr\},
+  \label{eq:dibit}
+\end{equation}
+where $t_{\rm abs}$ is the absolute tick counter at emission.  The SSV
+contribution of a CP is \emph{implicit in its type} (electron-type carries
+one characteristic SSV quantum; quark-type carries another); it is
+\emph{not} an independent variable field in the DI-bit string.  The
+four-component address-time vector $(x,y,z,t_{\rm abs})$ serves as a
+unique identifier for every emitted signal, enabling each GP's register
+to enforce the no-double-counting rule (Section~\ref{sec:4d}) without
+circularity.
+\end{definition}
+
+\begin{remark}[Absolute time as axiomatic postulate]
+The component $t_{\rm abs}$ is a \emph{primitive postulate}, not derived from
+the Absolute Moment.  Its necessity is evidenced by internal consistency: it
+prevents positive-feedback saturation of the SSV field
+(Section~\ref{sec:4d}), provides an eternally decodable record of the
+universe's history, and suggests mechanisms for quantum entanglement and
+memory that will be explored in dedicated companion papers.  The relationship
+between $t_{\rm abs}$ and the Absolute Moment tick is the same as the
+relationship between a clock face and the mechanism that drives it: the tick
+mechanism (derived in Section~\ref{sec:necessity}) increments the counter
+whose existence is separately postulated.
+\end{remark}
+
+\begin{definition}[Atemporal Nexus]
+The Nexus is the entity outside spacetime that enforces global DI-bit
+conservation.  It is not a causal signal (it has no finite propagation speed);
+it is a \emph{global constraint}.  Its operation is the universal tick that
+synchronises the PCD cycle across all GPs and CPs simultaneously.
+\end{definition}
+
+\begin{definition}[PSR and Displacement Step --- two distinct quantities]
+\label{def:psr-disp}
+Two length scales govern CP motion each tick.
+\begin{enumerate}[label=(\roman*)]
+  \item The \textbf{Planck Sphere Radius (PSR)} is the communication radius
+    of a GP: the radius of the sphere within which the GP broadcasts its SSV
+    quantum each Moment.  The PSR is determined by the \emph{absolute} SSV
+    magnitude (the scalar sum of all SSV contributions present at the GP):
+    \begin{equation}
+      \text{PSR} \;=\; \frac{l_P}{1 + k\cdot|\text{SSV}|_{\rm abs}}.
+      \label{eq:PSR-def}
+    \end{equation}
+  \item The \textbf{displacement step} $d$ is the distance the CP moves from
+    its current GP to its destination GP in the Displace phase.  It is
+    determined by the \emph{net} SSV (the vector sum, including direction):
+    \begin{equation}
+      \mathbf{d} \;=\; d(\text{SSV}_{\rm net})\,\hat{\mathbf{n}}_{\rm net}.
+      \label{eq:disp}
+    \end{equation}
+\end{enumerate}
+For a massless CP (photon), $d = \text{PSR}$ and the two coincide, recovering
+the null-geodesic condition.  For all massive CPs, $d < \text{PSR}$.  As a
+special case, soliton superposition can produce an instantaneous net SSV
+exceeding the PSR, giving $d > \text{PSR}$ --- the CPP mechanism for quantum
+tunnelling (deferred to a dedicated companion paper).
+\end{definition}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The PCD Cycle}
+\label{sec:pcd}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{definition}[PCD Cycle]
+\label{def:pcd}
+At each Absolute Moment tick, every GP executes the following three-phase
+cycle, triggered simultaneously across the entire lattice by the Nexus:
+
+\begin{enumerate}[label=\textbf{\Alph*.}]
+  \item \textbf{Perceive.}  The GP passively receives SSV contributions from
+    all GPs that have it within their PSR.  Each arriving signal carries the
+    sender's four-component address-time vector
+    $(x_{\rm src},y_{\rm src},z_{\rm src},t_{\rm abs})$.  The GP updates its
+    register, subject to the no-double-counting rule
+    (Section~\ref{sec:4d}).
+
+  \item \textbf{Compute.}  The GP calculates:
+    \begin{enumerate}[label=(\roman*)]
+      \item its absolute SSV magnitude $|\text{SSV}|_{\rm abs}$ from the
+        register sum, and hence its own PSR via Eq.~\eqref{eq:PSR-def};
+      \item the net SSV vector $\text{SSV}_{\rm net}$ (vector sum over all
+        received contributions), which determines the direction and magnitude
+        of the resident CP's displacement step via Eq.~\eqref{eq:disp}.
+    \end{enumerate}
+
+  \item \textbf{Displace.}  The CP resident on this GP moves to its
+    destination GP, selected along the edge of the appropriately-scaled
+    600-cell that most closely aligns with $\hat{\mathbf{n}}_{\rm net}$.
+    Simultaneously, the GP broadcasts its own SSV quantum outward at speed
+    $c$ (one PSR shell per Moment; see Section~\ref{sec:4d}).
+\end{enumerate}
+\end{definition}
+
+\begin{remark}[Historical note]
+The PCD cycle is the operational core of CPP, first conceived by the author
+in the late 1980s and refined continuously since.  The designation
+``PCD'' was introduced in the present work.
+\end{remark}
+
+The PCD cycle makes the global synchronisation requirement explicit and
+mechanical: the Displace phase of tick $n$ requires that the destination GP
+has completed its Perceive phase at tick $n$.  This cross-cell dependency is
+the subject of Section~\ref{sec:necessity}.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Necessity of the Absolute Moment}
+\label{sec:necessity}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{theorem}[Necessity of a universal tick]
+\label{thm:necessity}
+Given (i) the complete DI-bit state vector~\eqref{eq:dibit}, (ii) global
+conservation of DI-bits, and (iii) the PCD cycle, no locally asynchronous
+tick schedule is self-consistent.  A universal, simultaneous tick is the
+unique schedule compatible with DI-bit conservation.
+\end{theorem}
+
+\begin{proof}
+Suppose, for contradiction, that ticks are local and asynchronous: GP
+$C_i$ executes its Displace phase at local time $\tau_i$, and its destination
+GP $C_j$ executes its Perceive phase at local time $\tau_j \ne \tau_i$.
+
+The DI-bit emitted by the CP on $C_i$ carries the address-time vector
+$(x_i, y_i, z_i, t_{\rm abs,\,i})$.  Global conservation requires this
+DI-bit to be exactly accounted for in $C_j$'s register.  But $C_j$'s
+register is only updated during its Perceive phase.  If $\tau_j > \tau_i$,
+the DI-bit is ``in flight'' --- its identity component is unaccounted for
+during the interval $(\tau_i, \tau_j)$, violating conservation.  If
+$\tau_j < \tau_i$, $C_j$'s register closes before the DI-bit departs, so
+the arriving DI-bit has no open register to enter, again violating
+conservation.
+
+The only schedule that avoids both violations is $\tau_i = \tau_j$ for all
+pairs $(i, j)$ related by a Displace event --- i.e., a universal, simultaneous
+tick.  The unique timescale constructible from the Planck constants already
+fixed in Version~16 is $t_P = l_P/c$, so the tick interval is exactly $t_P$.
+\end{proof}
+
+\begin{corollary}
+The Absolute Moment postulate is the unique synchronisation schedule
+consistent with global DI-bit conservation under the PCD cycle.  It is
+therefore not merely consistent with the other CPP postulates; it is
+necessitated by them.
+\end{corollary}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The Atemporal Nexus and Stress-Invariance}
+\label{sec:nexus}
+% ══════════════════════════════════════════════════════════════════════════════
+
+The Nexus lies outside spacetime and enforces the simultaneous global tick
+without finite propagation delay.  Two consequences follow directly.
+
+\textbf{Stress-invariance.}  The timelike advance $l_P$ is the orthogonal
+$\tau$-component in the 4D Voronoi coordinate (Version~16, \S A.4).  Because
+the Nexus is unaffected by local Voronoi-cell stress --- it is outside every
+such cell --- $\Delta\tau = l_P/c = t_P$ for every CP, stressed or unstressed.
+This is precisely the stress-invariant timelike denominator that drives
+$\text{PSR}_{\rm eff}$ in Eq.~\eqref{eq:PSR}: spatial steps shorten under
+stress; timelike steps do not.
+
+\textbf{No computational bottleneck.}  The Nexus enforces conservation as a
+global constraint, not as a causal signal.  Its atemporal nature means there
+is no bandwidth or latency limit; the tick is a constraint, not a message.
+Local PCD-cycle processing at each GP handles the SSV bookkeeping; the Nexus
+supplies only the synchronisation pulse.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The 4D Step Budget, Shell Propagation, and Inverse-Square Falloff}
+\label{sec:4d}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\subsection{The 4D Step Budget}
+
+The universe in CPP is fundamentally \emph{three spatial dimensions plus
+absolute time as an address}.  It is not a four-dimensional Riemannian
+manifold; the fourth component is the tick counter $t_{\rm abs}$.
+Nevertheless, the constraint imposed by the Absolute Moment postulate is
+Pythagorean in form.  The total ``budget'' per tick is $l_P$, partitioned as:
+\begin{equation}
+  l_P^2 \;=\; (c\,\Delta\tau)^2 + |\mathbf{d}_{\rm spatial}|^2,
+  \label{eq:budget}
+\end{equation}
+where $\Delta\tau$ is the timelike advance and $\mathbf{d}_{\rm spatial}$ is
+the 3D displacement.  Three limiting cases confirm consistency with
+Version~16 and with standard SR:
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Case & $\Delta\tau$ & $|\mathbf{d}_{\rm spatial}|$ \\
+\midrule
+CP at rest & $l_P/c = t_P$ & $0$ \\
+Photon (massless, null geodesic) & $0$ & $l_P$ \\
+Massive CP at speed $v < c$ &
+  $l_P\sqrt{1-v^2/c^2}$ & $l_P\,v/c$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The massive-CP case recovers the relativistic Pythagorean relation and
+produces time dilation automatically: a CP moving at speed $v$ advances only
+$l_P\sqrt{1-v^2/c^2}$ in the timelike direction per tick, so its proper-time
+clock runs slow by exactly the Lorentz factor $\gamma$, consistent with
+Version~16, \S A.4.
+
+The photon case deserves physical elaboration.  A photon in CPP is not a
+moving CP in the usual sense; it is a propagating packet of
+\emph{ordered net-SSV instructions} --- a volume of GPs that have been
+coherently polarised to re-broadcast in the same direction.  The photon
+``moves'' because the coherent polarisation front advances at $c$ (one shell
+per Moment) while individual CPs oscillate in place.  The null-geodesic
+condition $\Delta\tau = 0$ reflects the fact that the polarisation front
+carries no timelike budget of its own.
+
+\subsection{GP Shell Propagation and the Inverse-Square Law}
+
+At each Moment, a GP broadcasts its SSV quantum outward at speed $c$.
+Specifically, during the Displace phase of tick $n$, the GP emits its SSV
+quantum to all GPs on the spherical shell at radius $\text{PSR}$ from the
+source.  This shell advances by one PSR per tick, so the wavefront reaches
+a GP at distance $r$ after $r/\text{PSR}$ ticks --- causal propagation at
+$c$ with no additional postulate.
+
+The fixed total SSV quantum $Q$ is distributed over the $N(r)$ GPs on the
+shell at radius $r$.  In three dimensions the shell surface area scales as
+$4\pi r^2$, so the GP density on the shell is approximately constant (the
+lattice is isotropic at scales large compared to $l_P$), giving:
+\begin{equation}
+  \text{SSV received per GP at distance }r
+  \;\propto\; \frac{Q}{4\pi r^2}
+  \;\propto\; \frac{1}{r^2}.
+  \label{eq:invsq}
+\end{equation}
+This is the standard inverse-square falloff.  Coulomb's law and Newtonian
+gravity therefore emerge from the shell-propagation geometry without
+additional assumptions, provided $Q$ is identified with the characteristic
+SSV quantum of the source CP's type.
+
+\begin{remark}[Volume vs.\ surface]
+One might consider broadcasting to all GPs within the PSR \emph{volume}
+rather than the surface shell.  A fixed total $Q$ divided among
+$\tfrac{4}{3}\pi r^3$ GPs would give a $1/r^3$ falloff --- inconsistent
+with Coulomb's law.  Shell propagation at speed $c$ is therefore the unique
+broadcast geometry that simultaneously (i)~preserves causality, (ii)~gives
+$1/r^2$ falloff, and (iii)~leaves mechanisms open for super-PSR phenomena
+(tunnelling, entanglement) via soliton SSV superposition
+(Definition~\ref{def:psr-disp}).
+\end{remark}
+
+\subsection{The No-Double-Counting Rule}
+
+A GP's register sums SSV contributions from all incoming signals.  Without a
+damping rule, each GP would re-broadcast contributions it received, which
+would re-broadcast them again, producing unbounded positive feedback and SSV
+saturation.  The rule is:
+
+\begin{postulate}[No-double-counting]
+Each GP's register accepts a contribution from a given source address-time
+pair $(x_{\rm src},\, t_{\rm abs})$ at most \emph{once} per tick.  Signals
+with the same address-time pair arriving via different re-broadcast paths are
+identified and counted only once.
+\end{postulate}
+
+The four-component address-time vector in each DI-bit~\eqref{eq:dibit}
+provides the unique identifier required by this rule.  The rule is local
+(each GP maintains its own register) and imposes no global bookkeeping beyond
+what the PCD Perceive phase already performs.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Consistency with Special Relativity}
+\label{sec:sr}
+% ══════════════════════════════════════════════════════════════════════════════
+
+With the Absolute Moment postulate, the 4D Voronoi insphere radius contracts
+only in the three spatial directions under stress, while the timelike
+component is pinned at $l_P$.  The effective 3D radius is therefore
+\begin{equation}
+  r_{\rm eff}^{3D}
+  \;=\; \sqrt{\!\left(\frac{R_{4D}}{1+k\cdot\Delta\text{SSV}}\right)^{\!2}
+              - l_P^2\,},
+\end{equation}
+which reduces to the linear denominator of Eq.~\eqref{eq:PSR} after Planck
+normalisation (Version~16, \S A.4).
+
+The step-budget relation~\eqref{eq:budget} recovers time dilation and length
+contraction:
+\begin{align}
+  \Delta\tau &\;=\; t_P\sqrt{1 - v^2/c^2}
+  &&\text{(proper-time slowing)},\\
+  d_{\rm spatial} &\;=\; l_P\,\frac{v}{c}
+  &&\text{(spatial step proportional to velocity)}.
+\end{align}
+All five predictions of Version~16 (Table~1 of the main paper) follow without
+modification.  The Absolute Moment postulate is therefore empirically
+consistent with every laboratory test of special relativity, including the
+muon storage-ring data already cited in Version~16.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Deferred Topics}
+\label{sec:deferred}
+% ══════════════════════════════════════════════════════════════════════════════
+
+Two topics arise naturally from the present framework but require dedicated
+treatment:
+
+\textbf{Chirality.}  The 600-cell lattice admits two chiral realizations
+(left- and right-handed H4 Coxeter group).  If the physical universe selected
+one realization, this would imprint a systematic handedness on all CP
+transits, consistent with the observed left-handed parity violation of the
+weak interaction.  Statistical evidence for universal left-handed chirality
+across more than 100 empirical phenomena has been analysed using Fisher
+combination of $p$-values (Abshier, 2025--2026, GitHub swarm-analysis
+repository, $p < 10^{-13}$).  The mechanism by which a chiral nucleation
+event could freeze a single realization, and its implications for the
+electroweak Lagrangian, are reserved for a companion chirality paper.
+
+\textbf{Quantum tunnelling and entanglement.}  Definition~\ref{def:psr-disp}
+identifies soliton SSV superposition as a candidate mechanism for tunnelling
+($d > \text{PSR}$).  The address-time vector in the DI-bit string suggests a
+mechanism for non-local correlation (entanglement) via shared $t_{\rm abs}$
+stamps.  Both topics are reserved for the companion paper on the Born-rule
+and quantum-classical bridge.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Conclusion}
+\label{sec:conclusion}
+% ══════════════════════════════════════════════════════════════════════════════
+
+We have established three results for the Absolute Moment postulate of CPP:
+
+\begin{enumerate}
+  \item \textbf{Necessity.}  The PCD cycle shows that global DI-bit
+    conservation admits no self-consistent locally asynchronous tick
+    schedule.  A universal tick at interval $t_P = l_P/c$ is the unique
+    compatible schedule (Theorem~\ref{thm:necessity}).
+
+  \item \textbf{Stress-invariance.}  The atemporal Nexus, operating outside
+    every Voronoi cell, pins the timelike advance at exactly $l_P$ per tick
+    for every CP regardless of local SSV stress, supplying the fixed
+    denominator in $\text{PSR}_{\rm eff}$.
+
+  \item \textbf{Causal field propagation and inverse-square falloff.}  Shell
+    broadcast at speed $c$ --- one PSR shell per Moment --- distributes the
+    GP's fixed SSV quantum over a surface growing as $4\pi r^2$, yielding the
+    $1/r^2$ falloff that underpins Coulomb's law and Newtonian gravity,
+    while preserving causality and leaving super-PSR channels open for
+    tunnelling and entanglement.
+\end{enumerate}
+
+The PSR (communication radius) and the displacement step are identified as
+two distinct quantities, coinciding only for photons (null geodesic).  The
+4D step-budget relation $l_P^2 = (c\,\Delta\tau)^2 + |\mathbf{d}_{\rm
+spatial}|^2$ reproduces time dilation and length contraction exactly,
+consistent with Version~16 and with all laboratory tests of special
+relativity.
+
+This companion paper closes the logical foundation required for the SR
+derivation of Version~16 and opens the path to companion papers on stiffness
+$C$ from dipole interaction, chirality, and the Born-rule bridge.
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section*{References}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{enumerate}[label={[\arabic*]}]
+  \item Abshier, T.~L. (2026).
+    Mechanistic Derivation of Relativistic Effects via Space Stress Vector
+    (SSV) in the Dipole Sea.  Version~16 (main paper).
+
+  \item Abshier, T.~L. (2025--2026).
+    Conscious Point Physics Series.
+    \url{https://hyperphysics.com/papers}
+
+  \item Abshier, T.~L. (2025--2026).
+    Swarm analysis of chiral evidence across 100+ empirical phenomena.
+    GitHub repository:
+    \url{https://github.com/tlabshier/CPP/tree/main/swarm-analysis-chiral_evidence}
+\end{enumerate}
+
+\bigskip
+\noindent\textbf{GitHub (velocity-projection and geometric-strain routines):}\\
+\url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/600cell_monte_carlo_voronoi_k_fit.py}
+
+\end{document}
