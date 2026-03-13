@@ -346,6 +346,12 @@ Show this reproduces \(C = \alpha_{\text{geom}} \cdot E_P/l_P^3\)
 ----------------
 **Thomas:**
 
+* Question 1: The DP types are in equal abundance: eDP, qDP, and types a and b hDP (hybrid DP).
+* Question 2: The ZBW frequency is so high that it produces a quasistatic equilibrium for SR effects.
+* Question 3: I don't have any postulated reason for the ratio of effect between q and e type Coulombic force
+
+
+
 Grok and I have postulated the equal populations of the four types of DPs.  eDP, qDP, and type A and B hDP (hybrid DP).
 
 Regarding quasistatic stiffness, it is my intuition that the ZBW frequency is much higher than the frequencies at which SR phenomena operate.
