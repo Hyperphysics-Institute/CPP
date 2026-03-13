@@ -128,3 +128,6 @@ This paper connects to:
 ---
 
 *"The hook sequence works because each paper makes the next step logically inevitable. The SR derivation forces absolute time; absolute time forces the ontology; the ontology forces the microscopic physics. By the time a physicist realizes what they've accepted, it's too late to back out."*
+
+----------------------------
+
