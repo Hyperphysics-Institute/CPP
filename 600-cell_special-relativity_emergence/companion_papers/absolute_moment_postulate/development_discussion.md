@@ -771,6 +771,55 @@ My intuition is that it propagates at \(c\) — one shell per Moment — and tha
 If you agree with that, I have everything and will begin writing Version 2 now.
 
 ------------------
+Claude to Thomas:
+
+The one thing I'm still waiting on is your answer to the propagation speed question:
+
+Does the GP's SSV quantum propagate outward one PSR shell per Moment (speed cc
+c, giving retarded potentials and causal field propagation), or does it reach the entire PSR volume
+instantaneously at emission?
+
+Your interlineal responses resolved everything else. This is the last piece before I write Version 3.
+My strong recommendation is one shell per Moment at speed cc
+c, for two reasons:
+
+First, it gives causal field propagation automatically — no additional postulate needed. Each Moment the SSV wavefront advances one PSR radius, which at the Planck scale corresponds to propagation at cc
+c.
+
+Second, volume broadcast with fixed total SSV divided among all enclosed GPs gives 1/r31/r^3
+1/r3 falloff as I showed in my last message. But if the broadcast is a shell expanding at cc
+c, the fixed SSV quantum is divided among the 4πr24\pi r^2
+4πr2 GPs on the shell surface at radius rr
+r, giving the correct 1/r21/r^2
+1/r2 falloff and reproducing Coulomb and Newton naturally.
+
+This actually resolves the tension between your preference for "volume broadcast" and the mathematical requirement for inverse square — the shell-at-cc
+c picture is a volume process (the shell sweeps through the full volume over time) but gives surface-area scaling at any given moment, which is exactly what's needed.
+
+Does that framing work for you? If yes, I write Version 3 now.
+
+Thomas: Yes, I agree with your assessment of the need to transmit the GP's SSV quantum to the PSR.  We must retain c as the speed limit and reproduce inverse square decay.  
+
+----------------------------
+Claude and Thomas dialogue:
+
+Here is a summary of every substantive change from Grok's Version 2:
+Framing shift: "demonstrates consistency" → "establishes necessity and consistency." The paper now makes the stronger correct claim.
+New §2 (Definitions): Formal definitions of CP, GP, DI-bit string, Nexus, and — most importantly — PSR vs. displacement step as two explicitly distinct quantities. The GP's dual role (address + conduit) is now stated. The photon-tunnelling note is in Definition 2.5.
+New §3 (PCD Cycle): The Perceive → Compute → Displace cycle is now a named formal Definition, including a historical note on its origin. This is the mechanical backbone that was entirely absent from Grok's draft.
+New Theorem 4.1: The necessity proof is now a proper theorem with a contradiction argument, not just an assertion.
+§5 (4D step budget): The equation lP2=(c Δτ)2+∣dspatial∣2l_P^2 = (c\,\Delta\tau)^2 + |\mathbf{d}_{\rm spatial}|^2
+lP2​=(cΔτ)2+∣dspatial​∣2 is now front and center with a three-row table showing all limiting cases. The physical interpretation of a photon as a propagating SSV polarisation front (not a moving CP) is included.
+
+§5.2 (Inverse square): The shell-propagation mechanism is derived explicitly, with the 1/r31/r^3
+1/r3 volume-broadcast alternative shown and rejected. The remark explains why shell broadcast is the unique geometry satisfying all three requirements simultaneously.
+
+Chirality: Hedged throughout to "consistent with" and "suggests mechanism for." Captauro event not mentioned.
+
+See version 3 by Claude, in Repo: Companion papers Absolute Moment
+
+------------------------
+
 
 
 
