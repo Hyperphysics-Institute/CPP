@@ -220,8 +220,24 @@ cycle, triggered simultaneously across the entire lattice by the Nexus:
     \end{enumerate}
 
   \item \textbf{Displace.}  The CP resident on this GP moves to its
-    destination GP, selected along the edge of the appropriately-scaled
-    600-cell that most closely aligns with $\hat{\mathbf{n}}_{\rm net}$.
+    destination GP.  The destination is selected by evaluating the 12
+    nearest-neighbor edge vectors $\mathbf{e}_i$ of the appropriately-scaled
+    600-cell and choosing
+    \begin{equation}
+      i^* \;=\; \arg\max_i\;(\mathbf{e}_i \cdot \nabla\text{SSV}),
+      \label{eq:argmax}
+    \end{equation}
+    so the displacement is $\mathbf{d} = l_P\,\mathbf{e}_{i^*}$.  This
+    implements the maximum-SSV-gradient rule and is identical to the
+    selection used in the \texttt{compute\_geometric\_strain()} routine of
+    Version~16 (Appendix~A.8.1).  Macroscopic straight-line motion emerges
+    by averaging over many ticks, because the icosahedral symmetry (order
+    120) of the 600-cell makes every direction equivalent to leading order.
+    The chiral H4 Coxeter realization of the 600-cell --- left- or
+    right-handed --- imprints a systematic handedness on this 12-edge
+    selection that is \emph{consistent with} the observed left-handed parity
+    violation of the weak interaction; the derivation of this connection is
+    reserved for the companion chirality paper.
     Simultaneously, the GP broadcasts its own SSV quantum outward at speed
     $c$ (one PSR shell per Moment; see Section~\ref{sec:4d}).
 \end{enumerate}
@@ -410,7 +426,11 @@ what the PCD Perceive phase already performs.
 
 With the Absolute Moment postulate, the 4D Voronoi insphere radius contracts
 only in the three spatial directions under stress, while the timelike
-component is pinned at $l_P$.  The effective 3D radius is therefore
+component is pinned at $l_P$ (stress-invariance established in
+Section~\ref{sec:nexus}).  This is precisely the mechanism behind
+Eq.~\eqref{eq:PSR} of the present paper and Eq.~(1) of Version~16: the
+denominator $1 + k\cdot\Delta\text{SSV}$ compresses only the spatial budget;
+the timelike step $l_P$ is unchanged.  The effective 3D radius is therefore
 \begin{equation}
   r_{\rm eff}^{3D}
   \;=\; \sqrt{\!\left(\frac{R_{4D}}{1+k\cdot\Delta\text{SSV}}\right)^{\!2}
