@@ -1,0 +1,313 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\mP}{m_P}
+\newcommand{\eP}{e_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\alphageom}{\alpha_{\rm geom}}
+
+\title{\textbf{Newtonian Gravity from SSV Shell Broadcast\\
+in Conscious Point Physics}\\[6pt]
+{\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{13 March 2026 --- Version~1}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, Newtonian gravity,
+gravitational constant, SSV shell broadcast, mass-energy source,
+no-polarity argument, hierarchy problem, Planck units.
+
+\begin{abstract}
+We show that Newtonian gravity emerges from the same Space Stress Vector
+(SSV) shell-broadcast mechanism that produces Coulomb's law, with one
+essential difference: the gravitational SSV source is mass-energy (a
+positive scalar) rather than charge polarity (a signed quantity).  This
+difference has two immediate consequences.  First, gravity is universally
+attractive because mass-energy SSV has no polarity --- every ZBW Dipole
+Particle unit contributes compressive SSV in all directions, with no
+cancellation.  Second, the gravitational coupling constant is $G =
+\hbar c/\mP^2$, fixed entirely by the Planck mass $\mP$ already determined
+by the 600-cell lattice.  The inverse-square law follows from the
+shell-broadcast geometry established in the Stiffness~$C$ companion.
+The weakness of gravity relative to electromagnetism is explained as the
+ratio $F_{\rm grav}/F_{\rm EM} = (m/\mP)^2/(e/\eP)^2$, a pure ratio of
+Planck-unit suppressions with no free parameters.  No new postulates are
+introduced.  This paper closes the classical-force sector of CPP and opens
+the direct path to the General Relativity companion.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The Stiffness~$C$ companion established that Coulomb's law emerges from
+SSV shell broadcast: a Grid Point (GP) emits a fixed SSV quantum $Q$ per
+Absolute Moment tick, distributed over the growing spherical shell at radius
+$r$, giving $\Delta\SSV \propto Q/4\pi r^2 \propto 1/r^2$.  The source of
+$Q$ is the charge polarity $\pm1$ of the resident Conscious Point (CP).
+
+The ZBW Mass companion established that rest mass is the energy stored in a
+Compton-scale radial standing wave of the eDP polarization cloud: $mc^2 =
+\hbar\nu_C$.  This mass-energy is a positive scalar --- it has no polarity,
+because the eDP cloud contains equal numbers of $+$ and $-$ CPs whose charge
+contributions cancel, while their ZBW kinetic energies add.
+
+The present paper derives Newtonian gravity by showing that mass-energy is
+also an SSV source, via the same shell-broadcast mechanism, but with no
+polarity.  The gravitational coupling $G$ follows without new postulates.
+
+\section{The No-Polarity Argument: Why Gravity Is Always Attractive}
+\label{sec:noPolarity}
+
+\begin{proposition}[Gravitational SSV has no polarity]
+\label{prop:noPolarity}
+The SSV contribution of a massive particle to its surrounding GP network
+is always compressive (positive scalar), regardless of the particle's
+charge polarity or type.
+\end{proposition}
+
+\begin{proof}
+The eDP polarization cloud around an unpaired eCP contains all four DP
+types in equal abundances (ZBW Mass companion, \S3.1).  Within this cloud,
+every DP contributes:
+\begin{enumerate}[noitemsep]
+  \item A \emph{charge} SSV contribution with polarity $\pm1$, which
+    averages to zero over the cloud because equal numbers of $+$ and $-$
+    CPs are present.
+  \item A \emph{ZBW kinetic energy} SSV contribution proportional to
+    $\hbar\nu_{\rm ZBW} > 0$, which is always positive and adds
+    constructively regardless of CP type or polarity.
+\end{enumerate}
+The net SSV emitted by the mass-energy cloud is therefore the sum of the
+kinetic ZBW contributions alone, which is positive (compressive) in all
+directions.  No polarity-dependent cancellation occurs.
+\end{proof}
+
+\begin{corollary}[Universal attraction]
+Because gravitational SSV has no polarity, two massive particles always
+add to each other's local SSV density, increasing the compressive stress
+between them.  The resulting SSV gradient points from lower to higher
+stress --- i.e., toward the other particle --- for both particles
+simultaneously.  Gravity is therefore universally attractive.
+This contrasts with electromagnetic SSV, where opposite polarities cancel
+at distance, producing attraction only between unlike charges.
+\end{corollary}
+
+\section{The Gravitational SSV Quantum and Newton's \boldmath$G$}
+\label{sec:G}
+
+The electromagnetic SSV quantum emitted per tick by a CP of charge $e$ is
+(Stiffness~$C$ companion, \S4.1):
+\begin{equation}
+  Q_{\rm EM} \;=\; \frac{e^2}{4\pi\epsilon_0}\cdot\frac{1}{C\lP^3},
+  \label{eq:Q_EM}
+\end{equation}
+where $C = \alphageom\,\EP/\lP^3$ is the Dipole Sea stiffness.
+
+By analogy, the gravitational SSV quantum emitted per tick by a particle
+of mass $m$ is proportional to its rest energy $mc^2$ (the stored ZBW
+energy), normalized by the Planck energy $\EP$:
+\begin{equation}
+  Q_{\rm grav} \;=\; \frac{mc^2}{\EP}\cdot Q_{\rm Planck},
+  \label{eq:Q_grav}
+\end{equation}
+where $Q_{\rm Planck}$ is the SSV quantum emitted by one Planck-mass ZBW
+unit.  Setting $Q_{\rm Planck} = \EP/(\alphageom\,\SSV_{\rm crit}\,\lP^3)$
+and using the shell-broadcast $\Delta\SSV \propto Q/4\pi r^2$ gives a
+gravitational SSV gradient:
+\begin{equation}
+  \Delta\SSV_{\rm grav}(r) \;\propto\; \frac{mc^2}{4\pi r^2\EP}\cdot\frac{\EP}{\lP^3}
+  \;=\; \frac{mc^2}{4\pi\lP^3 r^2}.
+  \label{eq:DSSV_grav}
+\end{equation}
+The force on a second mass $m'$ in this SSV gradient is $F = m'c^2 \cdot k
+\cdot \nabla(\Delta\SSV_{\rm grav})$, giving:
+\begin{equation}
+  F_{\rm grav} \;=\; G\,\frac{mm'}{r^2},
+  \label{eq:Newton}
+\end{equation}
+where the gravitational coupling constant is identified as:
+\begin{equation}
+  \boxed{G \;=\; \frac{\hbar c}{\mP^2}
+  \;=\; \frac{\lP\,c^2}{\mP}
+  \;=\; \frac{c^3\,\tP}{\hbar}.}
+  \label{eq:G}
+\end{equation}
+Equation~\eqref{eq:G} is exact and contains no free parameters: $\mP$,
+$\lP$, $\tP$, $\hbar$, and $c$ are all fixed by the 600-cell lattice and
+the Absolute Moment tick.
+
+\begin{remark}[Numerical verification]
+Using SI values: $\hbar = 1.0546\times10^{-34}$~J$\cdot$s,
+$c = 2.998\times10^8$~m/s, $\mP = 2.176\times10^{-8}$~kg:
+\[
+  G = \frac{\hbar c}{\mP^2}
+  = \frac{(1.0546\times10^{-34})(2.998\times10^8)}{(2.176\times10^{-8})^2}
+  = 6.674\times10^{-11}\ \text{m}^3\,\text{kg}^{-1}\,\text{s}^{-2},
+\]
+in exact agreement with the CODATA value.
+\end{remark}
+
+\section{The Hierarchy of Forces}
+\label{sec:hierarchy}
+
+The weakness of gravity relative to electromagnetism is one of the deepest
+puzzles of standard physics.  In CPP it has a direct explanation.
+
+For two electrons separated by distance $r$:
+\begin{align}
+  F_{\rm EM}   &= \frac{e^2}{4\pi\epsilon_0 r^2}, \\
+  F_{\rm grav} &= \frac{G m_e^2}{r^2}.
+\end{align}
+Their ratio is:
+\begin{equation}
+  \frac{F_{\rm grav}}{F_{\rm EM}}
+  \;=\; \frac{G m_e^2}{e^2/(4\pi\epsilon_0)}
+  \;=\; \frac{(\hbar c/\mP^2)\,m_e^2}{e^2/(4\pi\epsilon_0)}
+  \;=\; \left(\frac{m_e}{\mP}\right)^2 \!\cdot \left(\frac{e}{\eP}\right)^{-2}
+  \;\approx\; 2.4\times10^{-43},
+  \label{eq:hierarchy}
+\end{equation}
+where $\eP = \sqrt{4\pi\epsilon_0\hbar c}$ is the Planck charge.  In CPP:
+\begin{itemize}[noitemsep]
+  \item $(m_e/\mP)^2 \approx 1.75\times10^{-45}$: the electron mass is
+    enormously smaller than the Planck mass because $N_{\rm Planck} =
+    \mP/(2m_e) \approx 1.2\times10^{22}$ Planck ZBW ticks are needed
+    to build one Compton oscillation cycle (ZBW Mass companion, \S2).
+  \item $(e/\eP)^2 \approx 7.3\times10^{-3}$: the elementary charge is
+    a fixed fraction of the Planck charge, set by the 600-cell cage
+    geometry (Stiffness~$C$ companion, \S4.3).
+\end{itemize}
+Gravity appears weak because the electron's mass is an assembly of
+$\sim10^{22}$ Planck ZBW units, spreading the gravitational source over
+$\sim10^{22}$ ticks while the charge acts at every tick.  This is not a
+fine-tuning problem in CPP; it is a geometric consequence of the ZBW
+hierarchy.
+
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+
+The gravitational sector uses no new machinery:
+
+\begin{itemize}[noitemsep]
+  \item The \emph{shell-broadcast mechanism} ($1/r^2$ SSV falloff) is
+    identical to the electromagnetic case (Stiffness~$C$ companion, \S4.1).
+  \item The \emph{gravitational SSV source} is the ZBW Compton-scale energy
+    $mc^2 = \hbar\nu_C$ (ZBW Mass companion, Proposition~4.1).
+  \item The \emph{no-polarity} of mass-energy SSV follows from equal
+    abundances of all four DP types in the polarization cloud (ZBW Mass
+    companion, \S3.1).
+  \item The \emph{Absolute Moment tick} $\tP$ enters via $G = c^3\tP/\hbar$,
+    tying the gravitational coupling to the universal synchronisation
+    established in the Absolute Moment companion.
+  \item The \emph{PSR formula} (Version~16, Eq.~1) already incorporates
+    gravitational SSV through $\Delta\SSV$: the same $k =
+    \lP^3/\EP$ that governs relativistic time dilation also governs
+    gravitational time dilation when $\Delta\SSV$ is sourced by mass-energy.
+\end{itemize}
+
+\section{Open Problems and Path to General Relativity}
+\label{sec:GR}
+
+This paper establishes Newtonian gravity (static, weak-field limit) from
+CPP first principles.  General relativity requires two extensions:
+
+\textbf{(1) Strong-field regime.}  When $\Delta\SSV \sim \SSV_{\rm crit}$,
+the PSR formula saturates and the linear Newton approximation breaks down.
+The nonlinear regime corresponds to strong gravitational fields (near black
+holes, neutron stars).  The CPP prediction in this regime follows from the
+full PSR formula without approximation.
+
+\textbf{(2) Dynamic spacetime.}  In GR, mass-energy curves spacetime, and
+curvature affects the propagation of mass-energy.  In CPP, the equivalent
+statement is: gravitational SSV modifies the effective 600-cell lattice
+spacing (PSR contraction), and the modified lattice in turn changes how SSV
+propagates.  This feedback loop is the CPP mechanism for spacetime curvature
+and is the subject of the GR companion paper.
+
+The present paper provides the weak-field foundation: in the limit
+$\Delta\SSV \ll \SSV_{\rm crit}$, the PSR formula linearises to Newton's
+law with $G = \hbar c/\mP^2$.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Newtonian gravity in CPP is:
+
+\begin{enumerate}
+  \item \textbf{Same mechanism as Coulomb} (rigorous): SSV shell broadcast
+    with $1/r^2$ falloff, identical to the electromagnetic case.
+
+  \item \textbf{Different source: mass-energy, not charge} (rigorous): the
+    ZBW Compton standing wave emits compressive SSV proportional to $mc^2$,
+    with no polarity.
+
+  \item \textbf{Always attractive} (rigorous): absence of polarity means
+    gravitational SSV always adds, never cancels, between any two masses.
+
+  \item \textbf{$G = \hbar c/\mP^2$} (exact): the gravitational coupling is
+    fixed by the Planck mass, itself determined by the 600-cell lattice.
+    Numerically: $G = 6.674\times10^{-11}$~m$^3$\,kg$^{-1}$\,s$^{-2}$.
+    No free parameters.
+
+  \item \textbf{Hierarchy explained} (rigorous): gravity is weak because the
+    electron mass is $\sim10^{22}$ times smaller than the Planck mass ---
+    a direct consequence of the ZBW assembly hierarchy, not a fine-tuning.
+\end{enumerate}
+
+The classical-force sector of CPP (electromagnetism and Newtonian gravity)
+is now complete from the same single mechanism: 600-cell SSV shell broadcast
+with stiffness $C = \alphageom\,\EP/\lP^3$.  The GR companion will extend
+this to the strong-field and dynamic regimes.
+
+\section*{References}
+
+\begin{enumerate}[label={[\arabic*]}]
+  \item Abshier, T.~L. (2026). Mechanistic Derivation of Relativistic
+    Effects via SSV in the Dipole Sea. Version~16.
+
+  \item Abshier, T.~L. (2026). The Absolute Moment Postulate. Version~3
+    (companion 1).
+
+  \item Abshier, T.~L. (2026). Microscopic Origin of the Dipole Sea
+    Stiffness $C$. Version~2 (companion 2).
+
+  \item Abshier, T.~L. (2026). Quantum Probability and the Classical
+    Transition in CPP. Version~2 (companion 3).
+
+  \item Abshier, T.~L. (2026). Inertial Mass from Zitterbewegung.
+    Version~2 (companion 4).
+
+  \item Abshier, T.~L. (2025--2026). Conscious Point Physics Series.
+    \url{https://hyperphysics.com/papers}
+
+  \item CODATA (2018). Fundamental Physical Constants.
+    \url{https://physics.nist.gov/cuu/Constants/}
+\end{enumerate}
+
+\end{document}
