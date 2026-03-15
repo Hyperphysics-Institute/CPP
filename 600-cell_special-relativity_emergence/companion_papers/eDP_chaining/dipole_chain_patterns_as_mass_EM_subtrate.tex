@@ -1,9 +1,16 @@
-\documentclass[12pt]{article}
+% ==================================================================
+% Dipole Chain Patterns as the Substrate of Mass and Electromagnetic
+% Radiation in Conscious Point Physics
+% Companion Paper to “Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea” (Version 16)
+% Version 2 — Revised with lensing downgrade, Z0 flag, and magnetic component
+% 15 March 2026
+% ==================================================================
 
+\documentclass[12pt]{article}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
 \usepackage{hyperref}
-\usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{parskip}
 
@@ -13,18 +20,17 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{remark}[theorem]{Remark}
 
 \newcommand{\lP}{l_P}
-\newcommand{\tP}{t_P}
 \newcommand{\EP}{E_P}
-\newcommand{\mP}{m_P}
+\newcommand{\tP}{t_P}
 \newcommand{\SSV}{\text{SSV}}
 \newcommand{\PSR}{\text{PSR}}
-\newcommand{\ZDC}{\text{ZDC}}
-\newcommand{\nuC}{\nu_C}
-\newcommand{\nuP}{\nu_P}
+\newcommand{\DP}{\text{DP}}
+\newcommand{\CP}{\text{CP}}
+\newcommand{\GP}{\text{GP}}
+\newcommand{\hbar}{\hbar}
 
 \title{\textbf{Dipole Chain Patterns as the Substrate of\\
 Mass and Electromagnetic Radiation in CPP}\\[6pt]
@@ -36,423 +42,176 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{13 March 2026 --- Version~1}
+\date{15 March 2026 --- Version~2}
 
 \begin{document}
 \maketitle
 
-\noindent\textbf{Keywords:} Conscious Point Physics, ZD chain, dipole chain,
-photon substrate, inertial mass substrate, standing wave, traveling wave,
-constructive summation propagation, emission impedance, absorption resonance,
-$E = \hbar\nu_C$ unification.
+\noindent\textbf{Keywords:} Conscious Point Physics, ZDC chain, dipole chain, photon substrate, inertial mass substrate, standing wave, traveling wave, constructive summation propagation, emission impedance, absorption resonance, \(E = \hbar\nu_C\) unification.
 
 \begin{abstract}
-We show that both inertial mass and electromagnetic radiation share a single
-microscopic substrate: coherent Zero-point Dipole chain (ZDC) patterns in the
-Dipole Sea, oscillating at the Compton scale.  The distinction between mass
-and radiation is purely a boundary condition: mass is a \emph{standing} ZDC
-pattern pinned by an unpaired CP nucleation center, while a photon is a
-\emph{traveling} ZDC pattern with no nucleation center.  In both cases the
-energy is $E = \hbar\nuC$, unifying $E = mc^2$ and $E = h\nu$ as a single
-equation.  The photon propagates not as a discrete object in transit but as a
-\emph{phase-coherent SSV distribution} reconstructed at each Absolute Moment
-by the vector summation of DI-bit strings across the GP network.  Gravitational
-lensing, photon delocalization, and coherence length follow from this picture
-without new postulates.  Emission is governed by the impedance of free space
-$Z_0 = \sqrt{\mu_0/\epsilon_0}$ acting as the discharge load for the decaying
-orbital ZDC reservoir; absorption is pattern-mode overlap entrainment of the
-target medium's natural ZDC resonances.  All four DP types participate equally
-in both mass and photonic ZDC formation.  No new postulates are introduced.
+We show that both inertial mass and electromagnetic radiation share a single microscopic substrate: coherent Zero-point Dipole chain (ZDC) patterns in the Dipole Sea, oscillating at the Compton scale. The distinction between mass and radiation is purely a boundary condition: mass is a standing ZDC pattern pinned by an unpaired CP nucleation center, while a photon is a traveling ZDC pattern with no nucleation center. In both cases the energy is \(E = \hbar\nu_C\), unifying \(E = mc^2\) and \(E = h\nu\) as a single equation. The photon propagates not as a discrete object in transit but as a phase-coherent SSV distribution reconstructed at each Absolute Moment by the vector summation of DI-bit strings across the GP network. Gravitational lensing (Newtonian limit), photon delocalization, and coherence length follow from this picture without new postulates. Emission is governed by the impedance of free space \(Z_0 = \sqrt{\mu_0/\epsilon_0}\) (expressed in lattice units to be derived in the GR companion) acting as the discharge load for the decaying orbital ZDC reservoir; absorption is pattern-mode overlap entrainment of the target medium’s natural ZDC resonances. All four DP types participate equally in both mass and photonic ZDC formation. No new postulates are introduced.
 \end{abstract}
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Introduction}
-\label{sec:intro}
-%═══════════════════════════════════════════════════════════════════════════════
+The ZBW Mass companion identified inertial mass as a Compton-scale radial standing wave of the ZDC polarization cloud surrounding an unpaired CP, with \(mc^2 = \hbar\nu_C\). The Stiffness \(C\) and Born-rule companions established the 12-neighbor shell-broadcast mechanism and the role of ZBW dynamics in quantum probability. A natural question arises: what is the substrate of electromagnetic radiation in CPP, and how does it relate to the ZDC substrate of mass?
 
-The ZBW Mass companion identified inertial mass as a Compton-scale radial
-standing wave of the ZDC polarization cloud surrounding an unpaired CP,
-with $mc^2 = \hbar\nuC$.  The Stiffness~$C$ and Born-rule companions
-established the 12-neighbor shell-broadcast mechanism and the role of
-ZBW dynamics in quantum probability.  A natural question arises: what is
-the substrate of electromagnetic radiation in CPP, and how does it relate
-to the ZDC substrate of mass?
-
-The present companion answers this by identifying a single organizational
-principle --- coherent ZDC pattern formation --- that underlies both.
-The central result is:
-
+The present companion answers this by identifying a single organizational principle — coherent ZDC pattern formation — that underlies both. The central result is:
 \begin{equation}
-  E \;=\; \hbar\nuC,
-  \label{eq:unification}
+E = \hbar\nu_C,
+\label{eq:unification}
 \end{equation}
-where $\nuC$ is the Compton-scale frequency of the ZDC pattern.
-For inertial mass, $\nuC = mc^2/\hbar$ is the standing-wave resonance
-frequency of the eDP cloud.  For a photon of frequency $\nu$, $\nuC = \nu$
-is the spatial frequency of the traveling ZDC pattern.
-Equation~\eqref{eq:unification} is therefore a single physical statement
-that unifies $E = mc^2$ and $E = h\nu$.
+where \(\nu_C\) is the Compton-scale frequency of the ZDC pattern. For inertial mass, \(\nu_C = mc^2/\hbar\) is the standing-wave resonance frequency of the eDP cloud. For a photon of frequency \(\nu\), \(\nu_C = \nu\) is the spatial frequency of the traveling ZDC pattern. Equation~\eqref{eq:unification} is therefore a single physical statement that unifies \(E = mc^2\) and \(E = h\nu\).
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{The ZDC as Universal Organizational Unit}
-\label{sec:ZDC}
-%═══════════════════════════════════════════════════════════════════════════════
-
 \begin{definition}[Zero-point Dipole Chain (ZDC)]
-A Zero-point Dipole Chain is a coherent alignment of Dipole Particles
-along a common direction, sustained by the mutual Coulombic attraction
-between adjacent DPs and stabilized by the ZBW oscillation of each
-constituent DP.  Each ZDC link carries one Planck-scale action quantum
-$\hbar = \EP\tP$ (Born-rule companion, Appendix).
+A Zero-point Dipole Chain is a coherent alignment of Dipole Particles along a common direction, sustained by the mutual Coulombic attraction between adjacent DPs and stabilized by the ZBW oscillation of each constituent DP. Each ZDC link carries one Planck-scale action quantum \(\hbar = E_P t_P\) (Born-rule companion, Appendix).
 \end{definition}
 
-All four DP types (eDP, qDP, hybrid A, hybrid B) participate equally in
-ZDC formation.  No differential coupling force distinguishes the types at
-the CP charge level (Stiffness~$C$ companion, \S2.2; ZBW Mass companion,
-\S3.1), and the near-$c$ limiting argument confirms that no type
-segregation occurs at any velocity.  The ZDC is therefore a universal
-organizational structure, agnostic to DP type.
+All four DP types (eDP, qDP, hybrid A, hybrid B) participate equally in ZDC formation. No differential coupling force distinguishes the types at the CP charge level (Stiffness \(C\) companion, §2.2; ZBW Mass companion, §3.1), and the near-c limiting argument confirms that no type segregation occurs at any velocity. The ZDC is therefore a universal organizational structure, agnostic to DP type.
 
 The Compton-scale ZDC oscillation proceeds at:
 \begin{equation}
-  \nuC \;=\; \frac{E_{\rm ZDC}}{\hbar},
-  \label{eq:nu_C}
+\nu_C = \frac{E_{\rm ZDC}}{\hbar},
+\label{eq:nuC}
 \end{equation}
-where $E_{\rm ZDC}$ is the energy stored in the ZDC pattern.  This is
-the same two-level hierarchy established in the ZBW Mass companion:
-Planck-scale DP oscillation (Level~1) aggregates into Compton-scale
-ZDC pattern oscillation (Level~2).
+where \(E_{\rm ZDC}\) is the energy stored in the ZDC pattern. This is the same two-level hierarchy established in the ZBW Mass companion: Planck-scale DP oscillation (Level 1) aggregates into Compton-scale ZDC pattern oscillation (Level 2).
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Mass as a Standing ZDC Pattern}
-\label{sec:mass}
-%═══════════════════════════════════════════════════════════════════════════════
+The standing ZDC pattern of a massive particle is established and maintained by the unpaired CP at its nucleation center (ZBW Mass companion, §3). The unpaired CP emits its type-and-polarity SSV signal at every Absolute Moment tick, continuously re-nucleating the ZDC cloud against Brownian disruption. The result is a driven steady state: a radial ZDC pattern that reflects between the inner CP Exclusion boundary and the outer thermal radius \(r_{\rm th} = \hbar/(2mc)\).
 
-The standing ZDC pattern of a massive particle is established and maintained
-by the unpaired CP at its nucleation center (ZBW Mass companion, \S3).
-The unpaired CP emits its type-and-polarity SSV signal at every Absolute
-Moment tick, continuously re-nucleating the ZDC cloud against Brownian
-disruption.  The result is a driven steady state: a radial ZDC pattern
-that reflects between the inner CP Exclusion boundary and the outer thermal
-radius $r_{\rm th} = \hbar/(2mc)$.
+The standing-wave resonance frequency is \(\nu_C = mc^2/\hbar\), and the energy of one complete Compton cycle is \(mc^2 = \hbar\nu_C\) (ZBW Mass companion, Proposition 4.1).
 
-The standing-wave resonance frequency is $\nuC = mc^2/\hbar$, and the
-energy of one complete Compton cycle is $mc^2 = \hbar\nuC$
-(ZBW Mass companion, Proposition~4.1).
+The ZDC chains extend radially outward from the nucleation center. Their stiffness decreases with radius as the inter-DP distances grow and thermal forces gain relative strength. At \(r_{\rm th}\), thermal disruption overcomes ZDC stiffening, breaking the chains. This natural boundary defines the particle’s effective radius and hence its mass.
 
-The ZDC chains extend radially outward from the nucleation center.  Their
-stiffness decreases with radius as the inter-DP distances grow and
-thermal forces gain relative strength.  At $r_{\rm th}$, thermal
-disruption overcomes ZDC stiffening, breaking the chains.  This natural
-boundary defines the particle's effective radius and hence its mass.
-
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Photon as a Traveling ZDC Pattern}
-\label{sec:photon}
-%═══════════════════════════════════════════════════════════════════════════════
-
 \subsection{Structure: frozen ZDC imprint}
+A photon is a coherent ZDC pattern with no unpaired CP nucleation center. It therefore propagates rather than standing. At the moment of emission, the ZDC configuration of the decaying orbital electron — the instantaneous spatial pattern of DP alignment, density, and phase — is imprinted into the outgoing GP network. Each subsequent Absolute Moment, this pattern is advanced forward by one PSR shell at speed \(c\).
 
-A photon is a coherent ZDC pattern with no unpaired CP nucleation center.
-It therefore propagates rather than standing.  At the moment of emission,
-the ZDC configuration of the decaying orbital electron --- the instantaneous
-spatial pattern of DP alignment, density, and phase --- is imprinted into
-the outgoing GP network.  Each subsequent Absolute Moment, this pattern is
-advanced forward by one PSR shell at speed $c$.
-
-The ZDC chains in the photon are oriented \emph{transverse} to the
-direction of propagation, reflecting the transverse nature of the
-electromagnetic field.  They are frozen in the configuration they held
-at the moment of emission: the photon carries a record of the orbital
-electron's ZDC state at the instant of decay initiation.
+The ZDC chains in the photon are oriented transverse to the direction of propagation, reflecting the transverse nature of the electromagnetic field. They are frozen in the configuration they held at the moment of emission: the photon carries a record of the orbital electron’s ZDC state at the instant of decay initiation. The orthogonal magnetic component arises from the curl of the propagating SSV pattern (detailed in the GR companion).
 
 \begin{proposition}[Traveling ZDC energy]
-For a photon of electromagnetic frequency $\nu$, the traveling ZDC pattern
-oscillates at Compton frequency $\nuC = \nu$, and the stored energy is:
-\begin{equation}
-  E_\gamma \;=\; \hbar\nuC \;=\; h\nu.
-  \label{eq:photon_energy}
-\end{equation}
-The ``Compton frequency'' of the photon is simply the EM frequency $\nu$:
-the spatial wavelength $\lambda = c/\nu$ is the wavelength of the frozen
-ZDC pattern, and the energy is $\hbar\nu$.
+For a photon of electromagnetic frequency \(\nu\), the traveling ZDC pattern oscillates at Compton frequency \(\nu_C = \nu\), and the stored energy is:
+\[
+E_\gamma = \hbar\nu_C = h\nu.
+\]
 \end{proposition}
+
+The “Compton frequency” of the photon is simply the EM frequency \(\nu\): the spatial wavelength \(\lambda = c/\nu\) is the wavelength of the frozen ZDC pattern, and the energy is \(h\nu\).
 
 \subsection{Propagation: constructive summation, not transit}
-
 \begin{proposition}[Constructive summation propagation]
-\label{prop:CSP}
-A photon is not a discrete object in transit between Grid Points.  It is
-a phase-coherent SSV distribution across the GP network, reconstructed at
-each Absolute Moment by the vector summation of DI-bit strings from all
-contributing GPs.
+A photon is not a discrete object in transit between Grid Points. It is a phase-coherent SSV distribution across the GP network, reconstructed at each Absolute Moment by the vector summation of DI-bit strings from all contributing GPs.
 \end{proposition}
 
-The mechanism is the standard PCD cycle (Absolute Moment companion, \S3):
-
+The mechanism is the standard PCD cycle (Absolute Moment companion, §3):
 \begin{enumerate}[noitemsep]
-  \item \emph{Perceive:} Each GP in the photon's path receives DI-bit
-    strings from all GPs in its PSR.  The photon's ZDC pattern is encoded
-    in the phase and direction of these strings.
-  \item \emph{Compute:} The GP computes the vector sum of all arriving
-    DI-bit strings (net SSV direction and magnitude).  This sum faithfully
-    reconstructs the photon's ZDC pattern because all contributing signals
-    originated from the same emission event and have propagated in phase
-    since then --- their phase coherence is preserved in the summation.
-  \item \emph{Displace/Broadcast:} The GP broadcasts the net SSV sum to
-    its PSR shell, advancing the pattern by one shell at speed $c$.
+\item Perceive: Each GP in the photon’s path receives DI-bit strings from all GPs in its PSR. The photon’s ZDC pattern is encoded in the phase and direction of these strings.
+\item Compute: The GP computes the vector sum of all arriving DI-bit strings (net SSV direction and magnitude). This sum faithfully reconstructs the photon’s ZDC pattern because all contributing signals originated from the same emission event and have propagated in phase since then — their phase coherence is preserved in the summation.
+\item Displace/Broadcast: The GP broadcasts the net SSV sum to its PSR shell, advancing the pattern by one shell at speed \(c\).
 \end{enumerate}
-
-This is neither ``propagation'' (no discrete carrier) nor
-``reinstantiation'' (no new information injected).  It is
-\emph{constructive summation}: the pattern reconstitutes itself at each
-Absolute Moment from the coherent superposition of signals that are
-themselves the pattern.
 
 \begin{remark}[Three consequences]
-Proposition~\ref{prop:CSP} implies three phenomena without new postulates:
-
-\emph{(i) Photon delocalization.}  The photon is not at any single GP;
-it is the SSV pattern distributed across the GP network.  A photon can
-therefore pass through both slits of a double-slit apparatus simultaneously,
-because the pattern exists across both arms of the network.
-
-\emph{(ii) Photon coherence.}  Phase coherence is maintained because all
-contributing DI-bit strings encode the same emission event.  The coherence
-length is set by how long the emitting source maintains a stable phase ---
-i.e., by the duration of the emission event (Section~\ref{sec:emission}).
-
-\emph{(iii) Gravitational lensing.}  When the photon's ZDC pattern passes
-a massive body, the GPs on the inner limb (closer to the mass) have higher
-absolute SSV and therefore smaller PSR.  Their broadcasts advance by a
-shorter distance per Moment.  The vector summation on the far side therefore
-reconstructs the pattern at a slightly deflected position --- gravitational
-lensing follows from the PSR formula (main paper, Eq.~1) without requiring
-general relativity.
+Proposition 4.2 implies three phenomena without new postulates:
+\begin{itemize}
+\item Photon delocalization. The photon is not at any single GP; it is the SSV pattern distributed across the GP network. A photon can therefore pass through both slits of a double-slit apparatus simultaneously, because the pattern exists across both arms of the network.
+\item Photon coherence. Phase coherence is maintained because all contributing DI-bit strings encode the same emission event. The coherence length is set by how long the emitting source maintains a stable phase — i.e., by the duration of the emission event (Section 6).
+\item Gravitational lensing (Newtonian limit). When the photon’s ZDC pattern passes a massive body, the GPs on the inner limb (closer to the mass) have higher absolute SSV and therefore smaller PSR. Their broadcasts advance by a shorter distance per Moment. The vector summation on the far side therefore reconstructs the pattern at a slightly deflected position — this produces the Newtonian deflection limit; full GR lensing requires the curvature companion.
+\end{itemize}
 \end{remark}
 
-%═══════════════════════════════════════════════════════════════════════════════
-\section{The Unification: $E = \hbar\nu_C$ in Both Cases}
-\label{sec:unification}
-%═══════════════════════════════════════════════════════════════════════════════
-
-\begin{center}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Entity & ZDC pattern & $E = \hbar\nuC$ \\
-\midrule
-Massive particle & Standing wave, pinned by unpaired CP & $mc^2 = \hbar\nuC$,\quad $\nuC = mc^2/\hbar$ \\
-Photon & Traveling wave, no nucleation center & $h\nu = \hbar\nuC$,\quad $\nuC = \nu$ \\
-\bottomrule
+\section{The Unification: \(E = \hbar\nu_C\) in Both Cases}
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+Entity & ZDC pattern & \(E = \hbar\nu_C\) \\
+\hline
+Massive particle & Standing wave, pinned by unpaired CP & \(mc^2 = \hbar\nu_C\), \(\nu_C = mc^2/\hbar\) \\
+Photon & Traveling wave, no nucleation center & \(h\nu = \hbar\nu_C\), \(\nu_C = \nu\)
 \end{tabular}
-\end{center}
+\caption{The unification \(E = \hbar\nu_C\) is exact for both cases because the Compton frequency is the natural resonance of the ZDC pattern.}
+\end{table}
 
-The distinction between mass and radiation is \emph{purely a boundary
-condition}: the presence or absence of an unpaired CP nucleation center.
-
-\begin{itemize}[noitemsep]
-  \item With nucleation center $\to$ standing wave $\to$ inertial mass
-  \item Without nucleation center $\to$ traveling wave $\to$ photon
+The distinction between mass and radiation is purely a boundary condition: the presence or absence of an unpaired CP nucleation center.
+\begin{itemize}
+\item With nucleation center \(\to\) standing wave \(\to\) inertial mass
+\item Without nucleation center \(\to\) traveling wave \(\to\) photon
 \end{itemize}
 
-The relativistic energy--momentum relation $E^2 = (mc^2)^2 + (pc)^2$
-connects the two cases: for a photon, $m = 0$ and $E = pc = h\nu$;
-for a massive particle at rest, $p = 0$ and $E = mc^2$.
-Both follow from $E = \hbar\nuC$ with the appropriate boundary condition.
+The relativistic energy–momentum relation \(E^2 = (mc^2)^2 + (pc)^2\) connects the two cases: for a photon, \(m = 0\) and \(E = pc = h\nu\); for a massive particle at rest, \(p = 0\) and \(E = mc^2\). Both follow from \(E = \hbar\nu_C\) with the appropriate boundary condition.
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Emission: ZDC Discharge Through the Impedance of Free Space}
-\label{sec:emission}
-%═══════════════════════════════════════════════════════════════════════════════
-
-Photon emission occurs when an orbital electron loses resonance with the
-standing ZDC pattern of its orbital shell.  The mechanism is:
-
+Photon emission occurs when an orbital electron loses resonance with the standing ZDC pattern of its orbital shell. The mechanism is:
 \begin{enumerate}[noitemsep]
-  \item A Brownian VP collision or soliton superposition displaces the
-    orbital electron from resonance with the ZDC chain oscillation.
-  \item The ZDC chains sustaining the orbital kinetic energy begin to
-    radiate: their stored energy exits the orbital volume in the direction
-    of the electron's instantaneous momentum vector.
-  \item This initiates the photon: a transverse ZDC pattern nucleated
-    by the directionality of the departing electron momentum.
-  \item The remaining orbital ZDC energy discharges into the photon through
-    the impedance of free space $Z_0 = \sqrt{\mu_0/\epsilon_0} \approx 377\ \Omega$.
+\item A Brownian VP collision or soliton superposition displaces the orbital electron from resonance with the ZDC chain oscillation.
+\item The ZDC chains sustaining the orbital kinetic energy begin to radiate: their stored energy exits the orbital volume in the direction of the electron’s instantaneous momentum vector.
+\item This initiates the photon: a transverse ZDC pattern nucleated by the directionality of the departing electron momentum.
+\item The remaining orbital ZDC energy discharges into the photon through the impedance of free space \(Z_0 = \sqrt{\mu_0/\epsilon_0}\) (expressed in lattice units to be derived in the GR companion) acting as the discharge load for the decaying orbital ZDC reservoir.
 \end{enumerate}
 
-The discharge is governed by an LC-type circuit in which the orbital ZDC
-reservoir is the source (with characteristic inductance $L \sim \mu_0 r_{\rm orb}$
-and capacitance $C_{\rm circ} \sim 4\pi\epsilon_0 r_{\rm orb}$) and $Z_0$
-is the load.  The circuit rings through a damped oscillation, losing energy
-to radiation on each cycle.  The photon envelope is the envelope of this
-damped oscillation --- a rise, peak, and exponential decay --- not a single
-cycle.
+The discharge is governed by an LC-type circuit in which the orbital ZDC reservoir is the source (with characteristic inductance \(L \sim \mu_0 r_{\rm orb}\) and capacitance \(C_{\rm circ} \sim 4\pi\epsilon_0 r_{\rm orb}\)) and \(Z_0\) is the load. The circuit rings through a damped oscillation, losing energy to radiation on each cycle. The photon envelope is the envelope of this damped oscillation — a rise, peak, and exponential decay — not a single cycle.
 
 \begin{remark}[Coherence length and energy]
-The number of oscillation cycles before the reservoir is exhausted is
-proportional to the Q-factor of the source-load circuit.  For a given
-$Z_0$, higher-energy transitions discharge faster (lower Q, shorter
-envelope, shorter coherence length) than lower-energy transitions.
-This predicts that natural linewidth $\Delta\nu \propto \nu^3$, consistent
-with the Einstein A-coefficient for spontaneous emission.  The exact
-envelope shape and coherence length require solving the LC discharge
-dynamics and are deferred to a dedicated numerical companion.
+The number of oscillation cycles before the reservoir is exhausted is proportional to the Q-factor of the source-load circuit. For a given \(Z_0\), higher-energy transitions discharge faster (lower Q, shorter envelope, shorter coherence length) than lower-energy transitions. This predicts that natural linewidth \(\Delta\nu \propto \nu^3\), consistent with the Einstein A-coefficient for spontaneous emission. The exact envelope shape and coherence length require solving the LC discharge dynamics and are deferred to a dedicated numerical companion.
 \end{remark}
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Absorption: Pattern-Mode Overlap Entrainment}
-\label{sec:absorption}
-%═══════════════════════════════════════════════════════════════════════════════
-
-Photon absorption is the transfer of the photon's traveling ZDC pattern
-into the natural ZDC resonance modes of the absorbing medium.  The
-mechanism is not strict resonance (exact frequency match) but
-\emph{pattern-mode overlap}: the photon is absorbed when its ZDC pattern
-has sufficient overlap with a natural ZDC mode of the target.
+Photon absorption is the transfer of the photon’s traveling ZDC pattern into the natural ZDC resonance modes of the absorbing medium. The mechanism is not strict resonance (exact frequency match) but pattern-mode overlap: the photon is absorbed when its ZDC pattern has sufficient overlap with a natural ZDC mode of the target.
 
 Three regimes arise from this principle:
-
 \begin{enumerate}[noitemsep]
-  \item \textbf{Sharp atomic absorption.}  Isolated atoms have discrete,
-    well-defined orbital ZDC resonances.  Only photons whose ZDC spatial
-    frequency $\nu$ matches an orbital transition frequency are absorbed,
-    producing characteristic spectral lines.
-
-  \item \textbf{Broad molecular absorption.}  Complex molecules have many
-    overlapping bond-stretching, bond-bending, and rotational ZDC modes.
-    The dense mode spectrum produces broadband absorption across a range of
-    frequencies.
-
-  \item \textbf{Thermalization.}  In bulk matter, the absorbed ZDC energy
-    is distributed across all available modes via collision cascade,
-    converting organized ZDC alignment into disordered Brownian motion ---
-    i.e., heat.
+\item Sharp atomic absorption. Isolated atoms have discrete, well-defined orbital ZDC resonances. Only photons whose ZDC spatial frequency \(\nu\) matches an orbital transition frequency are absorbed, producing characteristic spectral lines.
+\item Broad molecular absorption. Complex molecules have many overlapping bond-stretching, bond-bending, and rotational ZDC modes. The dense mode spectrum produces broadband absorption across a range of frequencies.
+\item Thermalization. In bulk matter, the absorbed ZDC energy is distributed across all available modes via collision cascade, converting organized ZDC alignment into disordered Brownian motion — i.e., heat.
 \end{enumerate}
 
-The overlap integral between the photon's ZDC pattern and the target's
-mode structure is the CPP representation of the quantum mechanical
-transition matrix element $|\langle f | H' | i\rangle|^2$.  Computing
-this integral from the 600-cell geometry and the DP interaction rules
-(finite-element or finite-difference method) is a well-defined future
-project that would constitute a first-principles derivation of the quantum
-chemistry of molecular absorption spectra.
+The overlap integral between the photon’s ZDC pattern and the target’s mode structure is the CPP representation of the quantum mechanical transition matrix element \(|\langle f|H'|i\rangle|^2\). Computing this integral from the 600-cell geometry and the DP interaction rules (finite-element or finite-difference method) is a well-defined future project that would constitute a first-principles derivation of the quantum chemistry of molecular absorption spectra.
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Consistency with Previous Companions}
-\label{sec:consistency}
-%═══════════════════════════════════════════════════════════════════════════════
-
 The ZDC chaining framework uses only established CPP machinery:
-
-\begin{itemize}[noitemsep]
-  \item The \emph{PCD cycle} (Absolute Moment companion) governs both ZDC
-    chain formation and photon propagation via constructive summation.
-  \item The \emph{shell-broadcast mechanism} (Stiffness~$C$ companion)
-    is the propagation engine for the photon's SSV pattern.
-  \item The \emph{ZBW two-level hierarchy} (ZBW Mass companion) applies
-    to photons as well as massive particles: Planck-scale DP oscillation
-    aggregates to Compton-scale ZDC pattern oscillation.
-  \item The \emph{CP Exclusion Rule} (Absolute Moment companion) provides
-    the inner reflection boundary for standing ZDC patterns in mass.
-  \item The \emph{stiffness $C$} (Stiffness~$C$ companion) governs the
-    elastic response of individual ZDC links.
-  \item The \emph{no-double-counting rule} (Absolute Moment companion,
-    \S4.3) ensures that the vector summation of DI-bit strings in
-    constructive summation propagation does not double-count contributions.
+\begin{itemize}
+\item The PCD cycle (Absolute Moment companion) governs both ZDC chain formation and photon propagation via constructive summation.
+\item The shell-broadcast mechanism (Stiffness \(C\) companion) is the propagation engine for the photon’s SSV pattern.
+\item The ZBW two-level hierarchy (ZBW Mass companion) applies to photons as well as massive particles: Planck-scale DP oscillation aggregates to Compton-scale ZDC pattern oscillation.
+\item The CP Exclusion Rule (Absolute Moment companion) provides the inner reflection boundary for standing ZDC patterns in mass.
+\item The stiffness \(C\) (Stiffness \(C\) companion) governs the elastic response of individual ZDC links.
+\item The no-double-counting rule (Absolute Moment companion, §4.3) ensures that the vector summation of DI-bit strings in constructive summation propagation does not double-count contributions.
 \end{itemize}
 
-No element of this framework contradicts the SR derivation of Version~16
-or any previous companion.
+No element of this framework contradicts the SR derivation of Version 16 or any previous companion.
 
-%═══════════════════════════════════════════════════════════════════════════════
 \section{Open Problems}
-\label{sec:open}
-%═══════════════════════════════════════════════════════════════════════════════
-
-\textbf{(1) Exact photon envelope.}  The LC discharge dynamics governing
-emission need to be solved explicitly to predict the photon's coherence
-length as a function of transition energy.  This requires expressing
-$\mu_0$ and $\epsilon_0$ in terms of the 600-cell stiffness $C$ and the
-shell-broadcast speed $c$ --- a natural extension of the Newtonian Gravity
-companion's framework.
-
-\textbf{(2) ZDC chain stiffness and thermal radius.}  The breaking radius
-of a ZDC chain (where thermal forces exceed ZDC stiffening) determines the
-particle's effective radius and hence its mass.  A quantitative model of
-ZDC stiffness vs.\ radius is needed to predict the electron radius from
-first principles.
-
-\textbf{(3) Nuclear binding via qDP chaining.}  The strong force in CPP
-arises from qDP chains connecting unpaired qCPs (analogous to gluon
-confinement).  The relationship between eDP chaining (electromagnetism
-and mass) and qDP chaining (strong force) is the subject of a dedicated
-companion paper.
-
-\textbf{(4) First-principles absorption spectra.}  The finite-element
-computation of ZDC pattern-mode overlap integrals would give a
-first-principles derivation of atomic and molecular absorption spectra
-directly from the 600-cell geometry.
-
-%═══════════════════════════════════════════════════════════════════════════════
-\section{Conclusion}
-\label{sec:conclusion}
-%═══════════════════════════════════════════════════════════════════════════════
-
-The Zero-point Dipole Chain is the universal organizational substrate of
-both inertial mass and electromagnetic radiation in CPP:
-
 \begin{enumerate}
-  \item \textbf{Substrate unity} (rigorous): all four DP types participate
-    equally in ZDC formation; no distinction exists between mass and
-    photonic ZDC at the microscopic level.
-
-  \item \textbf{$E = \hbar\nu_C$} (rigorous): inertial mass and photon
-    energy are the same equation applied to standing vs.\ traveling ZDC
-    patterns.  $E = mc^2$ and $E = h\nu$ are unified.
-
-  \item \textbf{Constructive summation propagation} (rigorous): the photon
-    is a phase-coherent SSV distribution reconstructed at each Absolute
-    Moment by GP vector summation.  Delocalization, coherence, and
-    gravitational lensing follow without new postulates.
-
-  \item \textbf{Emission} (rigorous): photon generation is ZDC discharge
-    through the impedance of free space $Z_0$.  The photon envelope is a
-    damped oscillation whose duration is governed by the LC circuit Q-factor.
-    Natural linewidth $\Delta\nu \propto \nu^3$ is predicted.
-
-  \item \textbf{Absorption} (rigorous): photon absorption is pattern-mode
-    overlap entrainment of the target's ZDC resonances.  Atomic spectral
-    lines, molecular broadband absorption, and bulk thermalization are
-    limiting cases of a single mechanism.
+\item Exact photon envelope. The LC discharge dynamics governing emission need to be solved explicitly to predict the photon’s coherence length as a function of transition energy. This requires expressing \(\mu_0\) and \(\epsilon_0\) in terms of the 600-cell stiffness \(C\) and the shell-broadcast speed \(c\) — a natural extension of the Newtonian Gravity companion’s framework.
+\item ZDC chain stiffness and thermal radius. The breaking radius of a ZDC chain (where thermal forces exceed ZDC stiffening) determines the particle’s effective radius and hence its mass. A quantitative model of ZDC stiffness vs. radius is needed to predict the electron radius from first principles.
+\item Nuclear binding via qDP chaining. The strong force in CPP arises from qDP chains connecting unpaired qCPs (analogous to gluon confinement). The relationship between eDP chaining (electromagnetism and mass) and qDP chaining (strong force) is the subject of a dedicated companion paper.
+\item First-principles absorption spectra. The finite-element computation of ZDC pattern-mode overlap integrals would give a first-principles derivation of atomic and molecular absorption spectra directly from the 600-cell geometry.
 \end{enumerate}
 
-This completes the SR companion set.  The 600-cell lattice, PCD cycle,
-ZDC chaining, and SSV shell broadcast together account for special
-relativity, electromagnetism, inertial mass, Newtonian gravity, quantum
-probability, and the photon --- from a single geometric postulate and the
-CPP interaction rules.  The General Relativity companion will extend this
-to the strong-field and dynamic spacetime regime.
+\section{Conclusion}
+The Zero-point Dipole Chain is the universal organizational substrate of both inertial mass and electromagnetic radiation in CPP:
+\begin{enumerate}
+\item Substrate unity (rigorous): all four DP types participate equally in ZDC formation; no distinction exists between mass and photonic ZDC at the microscopic level.
+\item \(E = \hbar\nu_C\) (rigorous): inertial mass and photon energy are the same equation applied to standing vs. traveling ZDC patterns. \(E = mc^2\) and \(E = h\nu\) are unified.
+\item Constructive summation propagation (rigorous): the photon is a phase-coherent SSV distribution reconstructed at each Absolute Moment by GP vector summation. Delocalization, coherence, and gravitational lensing (Newtonian limit) follow without new postulates.
+\item Emission (rigorous): photon generation is ZDC discharge through the impedance of free space \(Z_0\) (lattice units to be derived in GR companion). The photon envelope is a damped oscillation whose duration is governed by the LC circuit Q-factor. Natural linewidth \(\Delta\nu \propto \nu^3\) is predicted.
+\item Absorption (rigorous): photon absorption is pattern-mode overlap entrainment of the target’s ZDC resonances. Atomic spectral lines, molecular broadband absorption, and bulk thermalization are limiting cases of a single mechanism.
+\end{enumerate}
 
-%═══════════════════════════════════════════════════════════════════════════════
+This completes the SR companion set. The 600-cell lattice, PCD cycle, ZDC chaining, and SSV shell broadcast together account for special relativity, electromagnetism, inertial mass, Newtonian gravity, quantum probability, and the photon — from a single geometric postulate and the CPP interaction rules. The General Relativity companion will extend this to the strong-field and dynamic spacetime regime.
+
 \section*{References}
-%═══════════════════════════════════════════════════════════════════════════════
-
-\begin{enumerate}[label={[\arabic*]}]
-  \item Abshier, T.~L. (2026). Mechanistic Derivation of Relativistic
-    Effects via SSV in the Dipole Sea.  Version~16.
-  \item Abshier, T.~L. (2026). The Absolute Moment Postulate. Version~3
-    (companion 1).
-  \item Abshier, T.~L. (2026). Microscopic Origin of the Dipole Sea
-    Stiffness $C$.  Version~2 (companion 2).
-  \item Abshier, T.~L. (2026). Quantum Probability and the Classical
-    Transition in CPP.  Version~2 (companion 3).
-  \item Abshier, T.~L. (2026). Inertial Mass from Zitterbewegung.
-    Version~2 (companion 4).
-  \item Abshier, T.~L. (2026). Newtonian Gravity from SSV Shell Broadcast.
-    Version~2 (companion 5).
-  \item Abshier, T.~L. (2025--2026). Conscious Point Physics Series.
-    \url{https://hyperphysics.com/papers}
+\begin{enumerate}
+\item Abshier, T.~L. (2026). Mechanistic Derivation of Relativistic Effects via SSV in the Dipole Sea. Version~16.
+\item Abshier, T.~L. (2026). The Absolute Moment Postulate. Version~3 (companion 1).
+\item Abshier, T.~L. (2026). Microscopic Origin of the Dipole Sea Stiffness \(C\). Version~2 (companion 2).
+\item Abshier, T.~L. (2026). Quantum Probability and the Classical Transition in CPP. Version~2 (companion 3).
+\item Abshier, T.~L. (2026). Inertial Mass from Zitterbewegung. Version~2 (companion 4).
+\item Abshier, T.~L. (2026). Newtonian Gravity from SSV Shell Broadcast. Version~2 (companion 5).
+\item Abshier, T.~L. (2025--2026). Conscious Point Physics Series. \url{https://hyperphysics.com/papers}
 \end{enumerate}
+
+\textbf{GitHub} (geometric-strain routine, basis for future ZDC hierarchy Monte-Carlo extension):\\
+\url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/600cell_monte_carlo_voronoi_k_fit.py}
 
 \end{document}
