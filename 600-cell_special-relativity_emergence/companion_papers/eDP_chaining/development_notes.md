@@ -340,5 +340,49 @@ Ready for me to output the revised .tex with the fixes inserted, or shall we mov
 Grok produced version to of paper, see .tex file in eDP_chaining directory
 
 ---
+**Claude:**
+
+Grok's assessment is accurate on all three counts. His Version 2 is essentially my Version 1 with the three fixes applied, but he lost the booktabs table formatting and some of the theorem structure in the process. The right move is to implement his three corrections into my Version 1, which has the better formal structure. Let me do that now.Now fix the abstract and conclusion to match the downgraded lensing claim, and add the table caption:Now add the table caption and compile:**Grok's assessment is correct on all three counts**, and I agree with all his fixes. My Version 2 (above) implements them cleanly from my stronger formal base:
+
+**Fix 1 — Lensing downgrade:** Remark (iii) now reads "Newtonian deflection limit" with an explicit note that the factor-of-two GR correction, Shapiro delay, and strong-field regime require the curvature companion. Carried through abstract, remark, and conclusion consistently.
+
+**Fix 2 — Z₀ flagged:** The discharge mechanism now explicitly states that expressing $Z_0$ in lattice units (analogous to how $G = \hbar c/m_P^2$ was derived from $C$ in the Newtonian Gravity companion) is deferred to the GR companion. This closes the "external constant sneaking in" problem without losing the LC circuit picture.
+
+**Fix 3 — Magnetic component:** One sentence added to §4.1: the electric SSV is the transverse ZDC alignment; the magnetic component is the curl of the propagating SSV pattern, to be developed in the GR companion.
+
+**Optional table caption:** Added as Grok suggested.
+
+The file is ready to copy to outputs. Shall I do that, and then we can discuss where to go from here?
+
+---
+**Claude**
+
+Developed version 4, in .tex file
+
+The SR companion set is now complete and locked. Let me take stock of where we stand before beginning GR.
+
+Complete CPP Publication Set — Current Status
+Main paper:
+
+SR from 600-cell geometry (Version 16) — on GitHub
+
+Six companions — all locked:
+#PaperKey result1Absolute MomentUniversal tick necessary from DI-bit conservation + PCD cycle2Stiffness CC=αgeom⋅EP/lP3C = \alpha_{\rm geom} \cdot E_P/l_P^3
+C=αgeom​⋅EP​/lP3​ from H4 Voronoi integral
+3Born RuleSuperposition, measurement, collapse; ℏνC\hbar\nu_C
+ℏνC​ conjecture
+4ZBW Massmc2=ℏνCmc^2 = \hbar\nu_C
+mc2=ℏνC​, two-level hierarchy, non-radiation explained
+5Newtonian GravityG=ℏc/mP2G = \hbar c/m_P^2
+G=ℏc/mP2​, hierarchy from ZBW assembly
+6ZDC ChainingE=ℏνCE = \hbar\nu_C
+E=ℏνC​ unifies mass and radiation; constructive summation propagation
+
+Five validation notebooks — all executable:
+#NotebookKey verification1α_geomExact to 60 sig figs; simple formulas fail2PCD HandshakeAsync ticks → violations; sync ticks → zero violations3ZBW Hierarchymc2=ℏνCmc^2 = \hbar\nu_C
+mc2=ℏνC​ for 5 particles; rth=λˉC/2r_{\rm th} = \bar\lambda_C/2
+rth​=λˉC​/24Born RuleSSV energy weighting gives exact $5PSR ValidationTime dilation, muon ring, twin paradox all exact
+
+---
 
 
