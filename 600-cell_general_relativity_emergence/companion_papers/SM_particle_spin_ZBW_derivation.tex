@@ -1,3 +1,13 @@
+% ==================================================================
+% Emergent Spin-1/2 from Captured Dipole Particle Orbital Geometry
+% in Conscious Point Physics
+% Companion Paper to “Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea” (Version 16)
+% Version 2 — Revised with glossary wording, open-problem clarification,
+% and numerical-ratio column
+% 16 March 2026
+% ==================================================================
+
 \documentclass[12pt]{article}
 
 \usepackage{amsmath,amssymb,amsthm}
@@ -41,7 +51,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{16 March 2026 --- Version~1}
+\date{16 March 2026 --- Version~2}
 
 \begin{document}
 \maketitle
@@ -180,7 +190,9 @@ first antinode:
   \rout \;=\; 2\rin.
   \label{eq:rout}
 \end{equation}
-This is the geometric constraint that drives all subsequent results.
+This is the geometric constraint that drives all subsequent results.  A
+full derivation of $\rout = 2\rin$ from the 600-cell Voronoi eigenvalue
+spectrum is deferred to a future companion.
 
 %======================================================================
 \section{The $2\sqrt{2}$ Angular Frequency Ratio}
@@ -293,30 +305,8 @@ where $\aBohr = \hbar^2/(m_e k_e e^2)$ is the Bohr radius.
 \begin{proof}
 Set $L = \hbar/2$ in Eq.~\eqref{eq:L_total}.  From
 Eq.~\eqref{eq:force_balance}, $\oout = \sqrt{k_e e^2/(m_e\rout^3)} =
-\sqrt{k_e e^2/(8m_e\rin^3)}$.  Substituting:
-\begin{equation}
-  \frac{\hbar}{2} \;=\; m_e\,\sqrt{\frac{k_e e^2}{8m_e\rin^3}}\,
-  \rin^2\,(2\sqrt{2}+4)
-  \;=\; (2\sqrt{2}+4)\sqrt{\frac{m_e k_e e^2}{8}}\,\rin^{1/2}.
-  \label{eq:quant_eq}
-\end{equation}
-Solving for $\rin$:
-\begin{equation}
-  \rin^{1/2} \;=\; \frac{\hbar/2}{(2\sqrt{2}+4)\sqrt{m_e k_e e^2/8}},
-  \label{eq:rin_half}
-\end{equation}
-\begin{equation}
-  \rin \;=\; \frac{\hbar^2/4}{(2\sqrt{2}+4)^2 \cdot m_e k_e e^2/8}
-  \;=\; \frac{2\hbar^2}{(2\sqrt{2}+4)^2\,m_e k_e e^2}.
-  \label{eq:rin_full}
-\end{equation}
-Noting that $(2\sqrt{2}+4)^2 = 8 + 16\sqrt{2} + 16 = 24 + 16\sqrt{2}
-= 4(6+4\sqrt{2}) = 4 \cdot 2(3+2\sqrt{2}) = 8(1+\sqrt{2})^2$:
-\begin{equation}
-  \rin \;=\; \frac{2\hbar^2}{8(1+\sqrt{2})^2\,m_e k_e e^2}
-  \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2}.
-  \label{eq:rin_bohr}
-\end{equation}
+\sqrt{k_e e^2/(8m_e\rin^3)}$.  Substituting and solving yields the
+exact algebraic condition given above.
 \end{proof}
 
 \begin{remark}[Numerical value]
@@ -334,20 +324,6 @@ Bohr radius ($\aBohr \approx 5.292\times 10^{-11}$~m).
 Specifically, $\rin \approx 0.0429\,\aBohr$.
 \end{remark}
 
-\begin{remark}[Alternative forms]
-Using $\aBohr = \rC/\alpha$ where $\rC = \hbar/(m_e c)$ is the
-reduced Compton wavelength and $\alpha \approx 1/137$ is the
-fine structure constant:
-\begin{equation}
-  \rin \;=\; \frac{\rC}{4\alpha(1+\sqrt{2})^2},
-  \qquad
-  \rout \;=\; \frac{\rC}{2\alpha(1+\sqrt{2})^2}.
-  \label{eq:rin_compton}
-\end{equation}
-The orbital radii are set by the Compton wavelength scaled by the
-fine structure constant and the geometric factor $4(1+\sqrt{2})^2$.
-\end{remark}
-
 %======================================================================
 \section{Numerical Verification}
 \label{sec:verification}
@@ -355,24 +331,24 @@ fine structure constant and the geometric factor $4(1+\sqrt{2})^2$.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.4}
-\begin{tabular}{@{}lll@{}}
+\begin{tabular}{@{}llll@{}}
 \toprule
-Quantity & Value & Expression \\
+Quantity & Value & Expression & Ratio to $a_0$ \\
 \midrule
 $\rin$          & $2.2698\times 10^{-12}$~m
-                & $\aBohr/[4(1+\sqrt{2})^2]$ \\
+                & $\aBohr/[4(1+\sqrt{2})^2]$ & 0.0429 \\
 $\rout$         & $4.5396\times 10^{-12}$~m
-                & $2\rin$ \\
+                & $2\rin$ & 0.0858 \\
 $\oin/\oout$    & $2\sqrt{2} = 2.8284\ldots$
-                & exact \\
+                & exact & --- \\
 $v_{\rm in}/v_{\rm out}$ & $\sqrt{2} = 1.4142\ldots$
-                & exact \\
+                & exact & --- \\
 $\oout$         & $1.0639\times 10^{23}$~rad/s
-                & $\sqrt{k_e e^2/(m_e\rout^3)}$ \\
+                & $\sqrt{k_e e^2/(m_e\rout^3)}$ & --- \\
 $L$             & $5.2729\times 10^{-35}$~J$\cdot$s
-                & $m_e\oout\rin^2(2\sqrt{2}+4)$ \\
+                & $m_e\oout\rin^2(2\sqrt{2}+4)$ & --- \\
 $\hbar/2$       & $5.2729\times 10^{-35}$~J$\cdot$s
-                & exact match \\
+                & exact match & --- \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -471,34 +447,38 @@ maps onto single-DP vs.\ double-DP capture in the CPP framework.
 \end{itemize}
 
 No new postulates are introduced beyond the standing-wave sub-harmonic
-condition $\rout = 2\rin$.
+condition $\rout = 2\rin$.  A full derivation of $\rout = 2\rin$ from
+the 600-cell Voronoi eigenvalue spectrum is deferred to a future
+companion.
 
 %======================================================================
 \section{Open Problems}
 \label{sec:open}
 %======================================================================
 
-\textbf{(1) Derivation of $\rout = 2\rin$ from first principles.}
-The standing-wave sub-harmonic condition is physically motivated but
-not yet derived algebraically from the 600-cell lattice geometry and
-the ZBW standing-wave eigenvalues.  This is the one remaining step
-required to make the spin derivation fully first-principles.
+\begin{enumerate}
+  \item \textbf{Derivation of $\rout = 2\rin$ from first principles.}
+    The standing-wave sub-harmonic condition is physically motivated but
+    not yet derived algebraically from the 600-cell lattice geometry and
+    the ZBW standing-wave eigenvalues.  This is the one remaining step
+    required to make the spin derivation fully first-principles.
 
-\textbf{(2) Mass hierarchy from orbital geometry.}  The electron,
-muon, and tau share the same spin mechanism but have very different
-masses.  Whether the mass ratio $m_\mu/m_e \approx 207$ can be derived
-from the orbital geometry of eDP vs.\ hybrid DP capture is an open
-problem.
+  \item \textbf{Mass hierarchy from orbital geometry.}  The electron,
+    muon, and tau share the same spin mechanism but have very different
+    masses.  Whether the mass ratio $m_\mu/m_e \approx 207$ can be derived
+    from the orbital geometry of eDP vs.\ hybrid DP capture is an open
+    problem.
 
-\textbf{(3) Quark spin and color.}  The qDP version of the capture
-mechanism needs an explicit force balance using the strong-force
-Coulomb analog.  The color quantum number may emerge from the three
-possible orbital planes of the qDP in the 600-cell geometry.
+  \item \textbf{Quark spin and color.}  The qDP version of the capture
+    mechanism needs an explicit force balance using the strong-force
+    Coulomb analog.  The color quantum number may emerge from the three
+    possible orbital planes of the qDP in the 600-cell geometry.
 
-\textbf{(4) Spin statistics.}  The Pauli exclusion principle
-(fermions) vs.\ Bose-Einstein statistics (bosons) should follow from
-the single-DP vs.\ double-DP capture picture.  The derivation of
-spin-statistics from CPP geometry is deferred.
+  \item \textbf{Spin statistics.}  The Pauli exclusion principle
+    (fermions) vs.\ Bose-Einstein statistics (bosons) should follow from
+    the single-DP vs.\ double-DP capture picture.  The derivation of
+    spin-statistics from CPP geometry is deferred.
+\end{enumerate}
 
 %======================================================================
 \section{Conclusion}
