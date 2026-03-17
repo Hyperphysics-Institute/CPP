@@ -32,8 +32,8 @@
 \newcommand{\Tmn}{T_{\mu\nu}}
 \newcommand{\hmn}{h_{\mu\nu}}
 
-\title{\textbf{General Relativity from the Extended Lattice State Packet\\
-in Conscious Point Physics}\\[6pt]
+\title{\textbf{Weak-Field General Relativity from the Extended\\
+Lattice State Packet in Conscious Point Physics}\\[6pt]
 {\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
 via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
 
@@ -42,7 +42,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{15 March 2026 --- Version~1}
+\date{15 March 2026 --- Version~3}
 
 \begin{document}
 \maketitle
@@ -53,24 +53,26 @@ gravitational waves, spacetime curvature, extended DI-bit string,
 SSV tensor, Lattice State Packet.
 
 \begin{abstract}
-We derive the weak-field limit of general relativity in Conscious Point
-Physics by extending the DI-bit (Lattice State Packet, LSP) broadcast to
-include the net SSV vector $\mathbf{\SSV}_{\rm net}$ alongside the absolute
-SSV scalar $|\SSV|_{\rm abs}$ already established in the SR companion set.
-The scalar component sources gravitational time dilation (the $g_{tt}$ metric
-component); the vector component sources spatial curvature (the $g_{rr}$
-component).  Together they reproduce the full weak-field Schwarzschild metric
-with no free parameters.  The famous factor-of-two between the Newtonian
-(scalar-only) and GR (scalar+vector) lensing deflection angles is thereby
-explained as the equal contributions of temporal and spatial curvature from
-the two LSP components — independently reproducing the 1.75~arcsec observed
-by Eddington (1919).  The Einstein field equations $\Gmn = 8\pi G/c^4\cdot\Tmn$
-emerge as the self-consistency condition: the metric reconstructed from the
-holographic LSP summation must be the same metric that governs LSP propagation.
-Gravitational waves arise as lattice perturbations propagating at $c$.
-The strong-field regime and rotating-body solutions (Kerr metric) are
-identified as open problems.  No new postulates beyond the extended LSP are
-introduced.
+We derive the \emph{weak-field limit} of general relativity in Conscious
+Point Physics by extending the DI-bit broadcast to include the net SSV
+vector $\mathbf{\SSV}_{\rm net}$ alongside the absolute SSV scalar
+$|\SSV|_{\rm abs}$.  The extended Lattice State Packet (LSP) is explicitly
+constructed from the compressive polarization energy $E_{\rm pol} = mc^2$
+of the eDP cloud (ZBW Mass companion): $|\SSV|_{\rm abs} = E_{\rm pol}/V_0$
+sources $g_{tt}$ (time curvature); the gradient of $\mathbf{\SSV}_{\rm net}$
+sources $g_{ij}$ (spatial curvature).  Together they reproduce the
+weak-field Schwarzschild metric with no free parameters.  The famous
+factor-of-two between the Newtonian and GR lensing deflection angles
+(0.875 vs.\ 1.75~arcsec, Eddington 1919) is explained as equal
+contributions from temporal and spatial curvature — a retroactive
+prediction of the extended LSP structure.  The equivalence principle
+and geodesic motion emerge from local PSR contraction without additional
+postulates.  Gravitational waves, the Schwarzschild horizon, and the
+derivation of $\mu_0$, $\epsilon_0$ from lattice parameters are included
+as rigorous weak-field or near-horizon results.  The full nonlinear
+Einstein equations and strong-field (Kerr) solutions are identified as
+open problems requiring the discrete-to-continuum limit proof.
+No new postulates beyond the extended LSP are introduced.
 \end{abstract}
 
 % ══════════════════════════════════════════════════════════════════════════════
@@ -116,9 +118,51 @@ non-negligible.
 \end{remark}
 
 % ══════════════════════════════════════════════════════════════════════════════
-\section{Metric Reconstruction from Holographic LSP Summation}
-\label{sec:metric}
+\section{Deriving the Extended LSP from ZBW Polarization Energy}
+\label{sec:LSP_derivation}
 % ══════════════════════════════════════════════════════════════════════════════
+
+The extended LSP is not a new postulate — it is constructed explicitly
+from quantities already established in the companion set.
+
+\begin{proposition}[LSP from eDP polarization energy]
+\label{prop:LSP_derivation}
+The scalar and vector components of the LSP are:
+\begin{align}
+  |\SSV|_{\rm abs} &\;=\; \frac{E_{\rm pol}}{V_0}
+  \;=\; \frac{mc^2}{V_0},
+  \label{eq:SSV_abs_derived}\\
+  \mathbf{\SSV}_{\rm net} &\;=\; \sum_{i=1}^{12}
+  \hat{\mathbf{e}}_i\,\Delta\SSV_i,
+  \label{eq:SSV_net_derived}
+\end{align}
+where $E_{\rm pol} = mc^2$ is the compressive ZBW polarization energy
+of the eDP cloud (ZBW Mass companion, Proposition~4.1), $V_0 = \frac{4}{3}\pi\lP^3$
+is the Voronoi cell volume, and $\Delta\SSV_i$ is the SSV contribution
+arriving from the $i$-th of the 12 nearest-neighbor GPs.
+\end{proposition}
+
+\begin{proof}
+The eDP cloud surrounding any unpaired CP stores polarization energy
+$E_{\rm pol} = mc^2 = \hbar\nu_C$ (ZBW Mass companion).  This energy is
+uniformly distributed over the Voronoi cell volume $V_0$ in the
+equilibrium DP sea (Stiffness~$C$ companion, \S2.4), giving the scalar
+SSV density~\eqref{eq:SSV_abs_derived}.  The net SSV vector is the
+vector sum of the 12 incoming shell-broadcast contributions, identical
+to the summation already performed in the Newtonian Gravity and
+Stiffness~$C$ companions.
+\end{proof}
+
+The full LSP is therefore:
+\begin{equation}
+  \dibit \;=\; \bigl(\mathbf{x}_{\rm GP},\; t_{\rm abs},\;
+  mc^2/V_0,\; \textstyle\sum_i \hat{\mathbf{e}}_i\Delta\SSV_i\bigr).
+  \label{eq:LSP_explicit}
+\end{equation}
+No component of~\eqref{eq:LSP_explicit} is new: every element follows
+from previously established CPP machinery.
+
+
 
 \begin{definition}[Local metric from LSP summation]
 The metric tensor $\gmn$ at Grid Point $\mathbf{x}$ is reconstructed
@@ -224,9 +268,47 @@ automatically from the two-component LSP structure.
 \end{remark}
 
 % ══════════════════════════════════════════════════════════════════════════════
-\section{The Einstein Field Equations as Self-Consistency Condition}
-\label{sec:EFE}
+\section{Geodesic Motion and the Equivalence Principle}
+\label{sec:geodesic}
 % ══════════════════════════════════════════════════════════════════════════════
+
+In GR, free-fall trajectories are geodesics — curves that extremize
+proper time.  In CPP, the same result follows from the 12-edge maximum-SSV-gradient
+selection rule (Absolute Moment companion, \S3).
+
+At each Absolute Moment tick, a CP at GP $\mathbf{x}$ selects the
+edge $i^*$ that maximises $\mathbf{e}_i \cdot \mathbf{\SSV}_{\rm net}$.
+In the presence of a gravitational SSV gradient (Newtonian Gravity
+companion, Eq.~\ref{eq:DSSV_grav}), the net SSV points preferentially
+toward the source mass.  The CP therefore moves preferentially toward
+lower gravitational potential — free fall.
+
+The continuum limit of the maximum-gradient selection rule is:
+\begin{equation}
+  \frac{d^2 x^\mu}{d\tau^2}
+  \;+\; \Gamma^\mu_{\nu\rho}\,\frac{dx^\nu}{d\tau}\,\frac{dx^\rho}{d\tau}
+  \;=\; 0,
+  \label{eq:geodesic}
+\end{equation}
+where the Christoffel symbols $\Gamma^\mu_{\nu\rho}$ are the CPP
+representation of the SSV gradient tensor:
+\begin{equation}
+  \Gamma^\mu_{\nu\rho} \;\sim\;
+  \frac{k}{2}\bigl(\partial_\nu h^\mu{}_\rho
+  + \partial_\rho h^\mu{}_\nu
+  - \partial^\mu h_{\nu\rho}\bigr),
+  \label{eq:Christoffel}
+\end{equation}
+with $h_{\mu\nu} = \gmn - \eta_{\mu\nu}$ the metric perturbation from
+Eqs.~\eqref{eq:gtt}--\eqref{eq:gij}.
+
+The equivalence principle follows immediately: a test particle in
+gravitational free fall follows the same trajectory as a particle at
+rest in an accelerated frame, because in both cases the net SSV
+gradient is identical and the 12-edge selection rule produces the
+same path.  No additional postulate is required.
+
+
 
 \begin{definition}[Self-consistency condition]
 The CPP field equations are the self-consistency requirement: the metric
