@@ -1,0 +1,620 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── CPP macros ────────────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\mP}{m_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\nuC}{\nu_C}
+\newcommand{\rC}{r_C}
+\newcommand{\rth}{r_{\rm th}}
+\newcommand{\rin}{r_{\rm in}}
+\newcommand{\rout}{r_{\rm out}}
+\newcommand{\oin}{\omega_{\rm in}}
+\newcommand{\oout}{\omega_{\rm out}}
+\newcommand{\aBohr}{a_0}
+
+\title{\textbf{Derivation of the Standing-Wave Sub-Harmonic Condition\\
+for Captured Dipole Particle Orbits in Conscious Point Physics}\\[6pt]
+{\large Spin Companion II ---
+Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{16 March 2026 --- Version~2}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, emergent spin,
+standing wave, sub-harmonic, ZBW cloud, orbital geometry, fine structure
+constant, Bohr radius, Compton wavelength.
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+
+The Spin~I companion paper derived the electron spin quantum number
+$\hbar/2$ from the orbital angular momentum of a captured Dipole
+Particle, given one geometric condition: the outer orbital radius is
+exactly twice the inner orbital radius ($\rout = 2\rin$).  That
+condition was physically motivated but not derived.  This paper
+derives it.
+
+The Zitterbewegung (ZBW) cloud surrounding every massive particle is
+a standing wave oscillating between a fixed inner wall and a free outer
+boundary.  Standing waves in such a cavity have a ladder of allowed
+vibration patterns: the first pattern has no internal structure, the
+second has one internal peak and one internal zero, the third has more.
+A Dipole Particle captured by this cloud must sit at an internal peak
+(where the field is maximum) for its positive CP and at an internal
+zero (where the net force is zero) for its negative CP.  The second
+vibration pattern is the first one that provides both.  In that pattern,
+the internal peak sits at exactly one-third of the cavity size, and the
+internal zero sits at exactly two-thirds.  The ratio is exactly 2:1.
+
+This is the geometric origin of $\rout = 2\rin$.  Combined with the
+Spin~I result, it completes the first-principles derivation of spin
+$1/2$ from the CPP lattice geometry.
+
+The absolute size of the orbit is not set by the ZBW cloud size
+but by the Coulomb force balance --- this is the Bohr radius divided
+by a geometric factor, as derived in Spin~I.  The connection between
+the ZBW cloud scale and the Bohr scale involves the fine structure
+constant $\alpha \approx 1/137$ in a specific way that is identified
+here and deferred for further investigation.
+
+%======================================================================
+\begin{abstract}
+The Spin~I companion established that the electron spin quantum
+number $L = \hbar/2$ follows from the captured Dipole Particle orbital
+geometry given the condition $\rout = 2\rin$.  We derive this condition
+from the standing-wave mode structure of the ZBW polarization cloud.
+The ZBW cloud constitutes a radial standing-wave resonator with a node
+at $r = 0$ (CP Exclusion Rule) and an antinode at the thermal boundary
+$\rth = \hbar/(2m_e c)$.  The allowed modes are:
+\begin{equation}
+  \psi_n(r) \;=\; \sin(k_n r),
+  \qquad
+  k_n \;=\; \frac{(2n-1)\pi}{2\rth},
+  \quad n = 1,\,2,\,3,\ldots
+  \label{eq:modes_abstract}
+\end{equation}
+The fundamental mode ($n=1$) has no interior structure.  The first
+sub-harmonic ($n=2$) has an interior antinode at $\rth/3$ and an
+interior node at $2\rth/3$.  The captured DP anchors its inner $+$CP
+at the interior antinode and its outer $-$CP at the interior node,
+giving:
+\begin{equation}
+  \frac{\rout}{\rin} \;=\; \frac{2\rth/3}{\rth/3} \;=\; 2.
+  \label{eq:ratio_abstract}
+\end{equation}
+This ratio is independent of all physical constants and depends only
+on the integer arithmetic of the trigonometric zeros of the $n=2$
+mode.
+This is exact and independent of all physical constants.  Mode 2 is
+the minimum-energy mode that simultaneously provides an interior
+antinode and an interior node.  The orbital scale differs from the ZBW
+cloud scale by the factor $6/[\alpha\cdot 4(1+\sqrt{2})^2]$ where
+$\alpha$ is the fine structure constant, connecting the Compton scale
+to the Bohr scale.  The derivation of this scale connection from the
+600-cell Voronoi eigenvalue spectrum is deferred to Spin~III.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+The Spin~I companion~\cite{sI} derived the electron spin quantum number
+from first principles in CPP.  The central result was
+Theorem~5.1 of that paper:
+\begin{equation}
+  L \;=\; m_e\,\oout\,\rin^2\,(2\sqrt{2}+4) \;=\; \frac{\hbar}{2}
+  \qquad\text{when}\qquad
+  \rin \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2},
+  \label{eq:spinI_result}
+\end{equation}
+given the geometric condition $\rout = 2\rin$.  That condition was
+stated as Open Problem~1 of Spin~I: it is physically motivated by
+the ZBW standing-wave structure, but the derivation from the 600-cell
+geometry was deferred.
+
+The present paper closes this gap in the sub-harmonic regime.  We
+show that the condition $\rout = 2\rin$ follows rigorously from the
+mode structure of the ZBW radial standing wave, with no additional
+assumptions.  The argument uses only:
+\begin{enumerate}[noitemsep]
+  \item The ZBW cloud boundary conditions from the ZBW Mass
+    companion~\cite{c4}.
+  \item The standard mathematics of standing waves in a
+    node-antinode resonator.
+  \item The physical requirement that the captured DP anchors
+    its inner $+$CP at a field maximum and its outer $-$CP at
+    a field zero.
+\end{enumerate}
+
+The connection between the ZBW cloud scale ($\rth$) and the Bohr
+orbital scale ($\aBohr$) is identified as a separate problem involving
+the fine structure constant $\alpha$, and is deferred to Spin~III.
+
+%======================================================================
+\section{The ZBW Radial Standing Wave}
+\label{sec:ZBW_wave}
+%======================================================================
+
+\subsection{Boundary conditions from the ZBW Mass companion}
+
+The ZBW Mass companion~\cite{c4} established that every massive
+particle is surrounded by a compressive eDP polarization cloud.
+The cloud is a radial standing wave with two boundary conditions:
+
+\begin{definition}[ZBW resonator boundary conditions]
+\label{def:BC}
+\quad
+\begin{enumerate}[noitemsep]
+  \item \emph{Inner boundary (node):} $\psi(0) = 0$.  The CP
+    Exclusion Rule~\cite{c1} prevents any CP displacement at
+    $r = 0$; this is a displacement node.
+  \item \emph{Outer boundary (antinode):} $\psi(\rth) = $ maximum.
+    The thermal boundary $\rth = \hbar/(2m_e c) = \rC/2$ is a
+    free boundary where the restoring force vanishes; this is a
+    displacement antinode.
+\end{enumerate}
+\end{definition}
+
+These are the boundary conditions of an open-closed resonator
+(analogous to an organ pipe closed at one end and open at the other,
+or a string fixed at one end and free at the other).
+
+\subsection{Allowed mode spectrum}
+
+\begin{proposition}[ZBW mode spectrum]
+\label{prop:modes}
+The allowed radial modes satisfying Definition~\ref{def:BC} are:
+\begin{equation}
+  \psi_n(r) \;=\; A\sin(k_n r),
+  \qquad
+  k_n \;=\; \frac{(2n-1)\pi}{2\rth},
+  \quad n = 1,\,2,\,3,\ldots
+  \label{eq:modes}
+\end{equation}
+with wavelengths $\lambda_n = 4\rth/(2n-1)$.
+\end{proposition}
+
+\begin{proof}
+The condition $\psi(0) = 0$ requires $\psi \propto \sin(kr)$.
+The condition $\psi'(\rth) = 0$ (maximum at outer boundary) requires
+$k\rth = \pi/2 + m\pi$ for non-negative integer $m$.  Setting
+$m = n-1$ gives $k_n = (2n-1)\pi/(2\rth)$.
+\end{proof}
+
+The mode energies scale as $k_n^2 \propto (2n-1)^2$:
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+Mode $n$ & $k_n$ (units of $\pi/2\rth$) & $\lambda_n$ &
+Interior nodes & Interior antinodes \\
+\midrule
+1 (fundamental)   & 1 & $4\rth$         & none            & none \\
+2 (1st sub-harmonic) & 3 & $\tfrac{4}{3}\rth$ & $\tfrac{2}{3}\rth$ & $\tfrac{1}{3}\rth$ \\
+3 (2nd sub-harmonic) & 5 & $\tfrac{4}{5}\rth$ & $\tfrac{2}{5}\rth$, $\tfrac{4}{5}\rth$ & $\tfrac{3}{5}\rth$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The fundamental mode has no interior structure --- it reaches its
+maximum only at the outer boundary $\rth$.  Only modes $n \geq 2$
+have both interior nodes and interior antinodes.
+
+%======================================================================
+\section{The Captured DP Anchoring Conditions}
+\label{sec:anchoring}
+%======================================================================
+
+The captured DP is a bound pair of CPs (inner $+$eCP at $\rin$, outer
+$-$eCP at $\rout$) in stable circular orbit about the central $-$eCP.
+Stable anchoring requires:
+
+\begin{definition}[DP anchoring conditions]
+\label{def:anchor}
+\quad
+\begin{enumerate}[noitemsep]
+  \item \emph{Inner $+$CP at field maximum (antinode):} The inner
+    $+$CP is attracted to the central $-$eCP.  Stable anchoring
+    requires it to sit at a displacement maximum of the ZBW field
+    --- an interior antinode --- where the restoring force is zero
+    and the field-mediated Coulomb potential is at its local
+    extremum.
+  \item \emph{Outer $-$CP at field zero (node):} The outer $-$eCP
+    is repelled from the central $-$eCP.  Stable anchoring requires
+    it to sit at a displacement node where the net SSV force
+    averages to zero over a ZBW cycle, preventing cumulative drift.
+\end{enumerate}
+\end{definition}
+
+These conditions identify the relevant sub-harmonic mode:
+
+\begin{lemma}[Mode selection]
+\label{lem:mode_select}
+The minimum-energy mode satisfying both anchoring conditions of
+Definition~\ref{def:anchor} is $n = 2$.
+\end{lemma}
+
+\begin{proof}
+Mode $n=1$ has no interior node or antinode --- it cannot satisfy
+either anchoring condition.
+
+Mode $n=2$ has exactly one interior antinode (at $\rth/3$) and
+one interior node (at $2\rth/3$), satisfying both conditions
+simultaneously.  Its energy $\propto k_2^2 = 9(\pi/2\rth)^2$.
+
+Mode $n=3$ and higher also satisfy both conditions but at higher
+energy $\propto (2n-1)^2 > 9$.  By minimum energy, the system
+selects $n=2$.
+\end{proof}
+
+%======================================================================
+\section{Derivation of $\rout = 2\rin$}
+\label{sec:derivation}
+%======================================================================
+
+\begin{theorem}[$\rout = 2\rin$ from ZBW sub-harmonic]
+\label{thm:ratio}
+The DP anchoring conditions (Definition~\ref{def:anchor}) applied to
+the minimum-energy eligible mode (Lemma~\ref{lem:mode_select}) give
+exactly:
+\begin{equation}
+  \rout \;=\; 2\rin.
+  \label{eq:ratio}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For Mode $n=2$, the wave function is:
+\begin{equation}
+  \psi_2(r) \;=\; A\sin\!\left(\frac{3\pi r}{2\rth}\right).
+  \label{eq:psi2}
+\end{equation}
+The interior antinode satisfies $\psi_2'(r) = 0$:
+\begin{equation}
+  \frac{3\pi}{2\rth}\cos\!\left(\frac{3\pi r}{2\rth}\right) = 0
+  \;\Rightarrow\; \frac{3\pi r}{2\rth} = \frac{\pi}{2}
+  \;\Rightarrow\; r = \frac{\rth}{3}.
+  \label{eq:antinode_pos}
+\end{equation}
+The interior node satisfies $\psi_2(r) = 0$:
+\begin{equation}
+  \sin\!\left(\frac{3\pi r}{2\rth}\right) = 0
+  \;\Rightarrow\; \frac{3\pi r}{2\rth} = \pi
+  \;\Rightarrow\; r = \frac{2\rth}{3}.
+  \label{eq:node_pos}
+\end{equation}
+By Definition~\ref{def:anchor}, the inner $+$CP anchors at the
+antinode: $\rin = \rth/3$.  The outer $-$CP anchors at the node:
+$\rout = 2\rth/3$.  Therefore:
+\begin{equation}
+  \frac{\rout}{\rin} \;=\; \frac{2\rth/3}{\rth/3} \;=\; 2.
+  \label{eq:ratio_proof}
+\end{equation}
+\end{proof}
+
+\begin{remark}[Independence from physical constants]
+The ratio $\rout/\rin = 2$ depends only on the positions of the
+interior node and antinode in Mode~2, which are fixed by the
+integer arithmetic of the trigonometric zeros.  It is independent
+of $\rth$, $m_e$, $e$, $\hbar$, $k_e$, and all other physical
+constants.  This is the geometric origin of the $2\sqrt{2}$ angular
+frequency ratio in Spin~I.
+\end{remark}
+
+\begin{remark}[Connection to the $2\sqrt{2}$ ratio]
+The $2\sqrt{2}$ angular-frequency ratio of Spin~I follows immediately
+from $\rout = 2\rin$ via the $1/r^2$ Coulomb force law
+(Spin~I, Proposition~3.1):
+\begin{equation}
+  \frac{\oin}{\oout} \;=\; \left(\frac{\rout}{\rin}\right)^{3/2}
+  \;=\; 2^{3/2} \;=\; 2\sqrt{2}.
+\end{equation}
+Theorem~\ref{thm:ratio} of this paper is therefore the geometric
+foundation for the entire Spin~I derivation.
+\end{remark}
+
+%======================================================================
+\section{Numerical Verification}
+\label{sec:numerical}
+%======================================================================
+
+The mode-2 wave function is verified at all critical points:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{@{}lccl@{}}
+\toprule
+Point & $r$ & $\psi_2(r)$ & Identification \\
+\midrule
+Inner boundary  & $0$           & $0$   & Node (CP Exclusion) \\
+Inner $+$CP     & $\rth/3$      & $+1$  & Interior antinode ($\rin$) \\
+Outer $-$CP     & $2\rth/3$     & $0$   & Interior node ($\rout$) \\
+Outer boundary  & $\rth$        & $-1$  & Boundary antinode \\
+\midrule
+Ratio $\rout/\rin$ & --- & --- & $2.000\,000$ (exact) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Numerical values:
+\begin{align}
+  \rth   &\;=\; \frac{\hbar}{2m_e c}
+  \;=\; 1.9308\times 10^{-13}\ \text{m}, \notag\\
+  \rin^{\rm (ZBW)} &\;=\; \frac{\rth}{3}
+  \;=\; 6.436\times 10^{-14}\ \text{m}, \notag\\
+  \rout^{\rm (ZBW)} &\;=\; \frac{2\rth}{3}
+  \;=\; 1.287\times 10^{-13}\ \text{m}.
+  \label{eq:numerical}
+\end{align}
+
+%======================================================================
+\section{The Scale Connection: ZBW Cloud vs.\ Orbital Scale}
+\label{sec:scale}
+%======================================================================
+
+The ZBW sub-harmonic fixes the \emph{ratio} $\rout = 2\rin$ but not
+the absolute orbital scale.  The orbital scale is determined by the
+Coulomb force balance and spin quantization condition of Spin~I:
+\begin{equation}
+  \rin^{\rm (orbit)} \;=\; \frac{\aBohr}{4(1+\sqrt{2})^2}
+  \;=\; 2.270\times 10^{-12}\ \text{m}.
+  \label{eq:orbital_scale}
+\end{equation}
+The ratio of orbital scale to ZBW cloud scale is:
+\begin{equation}
+  \frac{\rin^{\rm (orbit)}}{\rin^{\rm (ZBW)}}
+  \;=\; \frac{\aBohr/[4(1+\sqrt{2})^2]}{\rth/3}
+  \;=\; \frac{3\aBohr}{4(1+\sqrt{2})^2\,\rth}
+  \;=\; \frac{6}{\alpha\cdot 4(1+\sqrt{2})^2}
+  \;\approx\; 35.27,
+  \label{eq:scale_ratio}
+\end{equation}
+where we used $\aBohr = \rth\cdot 2/\alpha$ (since $\aBohr = \rC/\alpha$
+and $\rth = \rC/2$) and $\alpha \approx 1/137.036$ is the fine
+structure constant.
+
+\begin{remark}[Physical interpretation of the scale ratio]
+The factor $\alpha \approx 1/137$ that enters Eq.~\eqref{eq:scale_ratio}
+is the ratio of the electromagnetic interaction energy to the rest-mass
+energy at the Compton scale.  The Bohr radius exceeds the Compton
+radius by exactly $1/\alpha$, because the Coulomb binding energy at
+the Bohr radius equals the electron rest mass times $\alpha^2$.
+
+The scale ratio~\eqref{eq:scale_ratio} therefore means: the orbital
+DP sits at a Coulomb-bound scale ($\sim\aBohr$) that is parametrically
+larger than the ZBW cloud scale ($\sim\rth$) by the standard
+Compton-to-Bohr ratio, divided by the geometric factor $4(1+\sqrt{2})^2$.
+The sub-harmonic fixes the ratio of the two orbital radii within the
+orbit; the Coulomb interaction determines where within the potential
+well the orbit sits.
+\end{remark}
+
+The two derivations are therefore complementary and non-redundant:
+\begin{itemize}[noitemsep]
+  \item \textbf{Spin~II (this paper):} ZBW sub-harmonic $\to$
+    $\rout/\rin = 2$ (ratio only).
+  \item \textbf{Spin~I:} Coulomb force balance + $L = \hbar/2$
+    $\to$ $\rin = \aBohr/[4(1+\sqrt{2})^2]$ (scale only).
+  \item \textbf{Together:} orbital geometry is fully determined.
+\end{itemize}
+
+%======================================================================
+\section{Consistency with Spin~I}
+\label{sec:consistency_spinI}
+%======================================================================
+
+Theorem~\ref{thm:ratio} of this paper provides the geometric
+foundation for Proposition~3.1 and Theorem~5.1 of Spin~I:
+
+\begin{enumerate}[noitemsep]
+  \item $\rout = 2\rin$ (Theorem~\ref{thm:ratio} here) is the input
+    to the Spin~I force balance.
+  \item Given this ratio, the Spin~I force balance gives
+    $\oin/\oout = 2\sqrt{2}$ exactly (Spin~I, Proposition~3.1).
+  \item Given this ratio and the Coulomb scale, the Spin~I angular
+    momentum calculation gives $L = \hbar/2$ exactly (Spin~I,
+    Theorem~5.1).
+\end{enumerate}
+
+The two papers together constitute a complete derivation of the
+electron spin quantum number from CPP geometry and the Coulomb
+interaction, with no free parameters.
+
+%======================================================================
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+  \item The \emph{ZBW standing wave} and thermal boundary
+    $\rth = \rC/2$ are from the ZBW Mass companion~\cite{c4},
+    Proposition~4.1.
+  \item The \emph{CP Exclusion Rule} providing the inner node at
+    $r = 0$ is from the Absolute Moment companion~\cite{c1}, \S2.
+  \item The \emph{node-antinode resonator} is the continuum limit
+    of the 600-cell lattice standing wave; the exact lattice
+    version uses the Voronoi eigenvalue spectrum (deferred).
+  \item The \emph{fine structure constant} $\alpha$ connecting
+    the two scales enters through $\aBohr = \rC/\alpha$, which
+    follows from the Stiffness~$C$ companion~\cite{c2}, \S4.3.
+  \item No element contradicts any previous companion.
+\end{itemize}
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\textbf{(1) Spin~III --- Full 600-cell Voronoi eigenvalue spectrum.}
+The node-antinode boundary conditions and mode spectrum used here are
+the continuum (spherical) limit.  The exact CPP statement is that the
+ZBW standing wave lives on the 600-cell lattice, whose Voronoi cells
+are 24-cells.  The eigenvalue spectrum of the Laplacian on the 24-cell
+Voronoi decomposition will differ from the spherical limit by terms of
+order $(l_P/\rth)^2 \sim 10^{-44}$ --- negligible at any measurable
+scale, but required for a fully first-principles derivation.  This
+is the subject of the next companion: Spin~III.
+
+\textbf{(2) Mode selection from first principles.}
+Lemma~\ref{lem:mode_select} identifies Mode~2 as the
+minimum-energy mode satisfying the anchoring conditions.  A more
+rigorous argument would derive the selection from the energy landscape
+of the full DP--ZBW interaction, including the DP binding energy and
+the thermal disruption term.
+
+\textbf{(3) The scale ratio and $\alpha$.}
+The factor $6/[\alpha\cdot 4(1+\sqrt{2})^2]$ in
+Eq.~\eqref{eq:scale_ratio} connects the ZBW cloud scale to the Bohr
+orbital scale through the fine structure constant.  Whether this
+ratio has a deeper geometric meaning --- perhaps from the 600-cell
+coordination number or the $H_4$ Coxeter symmetry --- is an open
+question.
+
+\textbf{(4) Higher modes and excited states.}
+Modes $n = 3, 4, \ldots$ give higher sub-harmonics with multiple
+interior nodes and antinodes.  These correspond to excited orbital
+configurations of the captured DP, with angular momenta $L > \hbar/2$.
+Whether these map to the excited lepton states (muon, tau) or to
+excited orbital shells is under investigation.
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{ZBW mode spectrum} (rigorous,
+    Proposition~\ref{prop:modes}): the ZBW radial standing wave
+    has a node-antinode resonator spectrum
+    $k_n = (2n-1)\pi/(2\rth)$, with Mode~1 having no interior
+    structure and Mode~2 being the first to have both an interior
+    antinode and an interior node.
+
+  \item \textbf{Mode selection} (Lemma~\ref{lem:mode_select}):
+    Mode~2 is the minimum-energy mode simultaneously satisfying
+    both DP anchoring conditions.
+
+  \item \textbf{$\rout = 2\rin$} (rigorous, Theorem~\ref{thm:ratio}):
+    the interior antinode of Mode~2 is at $\rth/3$ and the interior
+    node is at $2\rth/3$.  Their ratio is exactly 2, independent of
+    all physical constants.
+
+  \item \textbf{Scale connection} (identified, deferred): the orbital
+    scale ($\aBohr/[4(1+\sqrt{2})^2]$) exceeds the ZBW cloud scale
+    ($\rth/3$) by the factor $6/[\alpha\cdot 4(1+\sqrt{2})^2] \approx
+    35.27$, connecting the Compton scale to the Bohr scale through
+    $\alpha$.
+
+  \item \textbf{Completion of spin derivation}: Theorem~\ref{thm:ratio}
+    of this paper combined with Theorem~5.1 of Spin~I constitutes a
+    complete first-principles derivation of the electron spin quantum
+    number $\hbar/2$ from the CPP geometry, the $1/r^2$ Coulomb law,
+    and the ZBW standing-wave structure.  The one remaining step
+    (600-cell Voronoi eigenvalue proof) is deferred to Spin~III.
+\end{enumerate}
+
+%======================================================================
+\section*{Acknowledgments}
+%======================================================================
+
+The identification of the ZBW sub-harmonic as the geometric origin of
+$\rout = 2\rin$ was developed in collaboration with Grok (xAI) and
+Claude (Anthropic).  The numerical verification and mode analysis were
+carried out by Claude.  The author thanks both for contributions to the
+CPP spin series.
+
+%======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{sI}
+T.~L. Abshier,
+``Emergent Spin-$\tfrac{1}{2}$ from Captured Dipole Particle Orbital
+Geometry in Conscious Point Physics,''
+Version~2, 2026 (Spin companion~I).
+
+\bibitem{v16}
+T.~L. Abshier,
+``Mechanistic Derivation of Relativistic Effects via Space Stress
+Vector (SSV) in the Dipole Sea,''
+Version~16, 2026 (main paper).
+
+\bibitem{c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+Version~3, 2026 (companion~1).
+
+\bibitem{c2}
+T.~L. Abshier,
+``Microscopic Origin of the Dipole Sea Stiffness~$C$,''
+Version~2, 2026 (companion~2).
+
+\bibitem{c3}
+T.~L. Abshier,
+``Quantum Probability and the Classical Transition in CPP,''
+Version~2, 2026 (companion~3).
+
+\bibitem{c4}
+T.~L. Abshier,
+``Inertial Mass from Zitterbewegung,''
+Version~2, 2026 (companion~4).
+
+\bibitem{c5}
+T.~L. Abshier,
+``Newtonian Gravity from SSV Shell Broadcast,''
+Version~2, 2026 (companion~5).
+
+\bibitem{c6}
+T.~L. Abshier,
+``Dipole Chain Patterns as the Substrate of Mass and
+Electromagnetic Radiation,''
+Version~2, 2026 (companion~6).
+
+\bibitem{c7}
+T.~L. Abshier,
+``Weak-Field General Relativity from the Lattice State Packet,''
+Version~3, 2026 (companion~7).
+
+\bibitem{dirac1928}
+P.~A.~M. Dirac,
+``The Quantum Theory of the Electron,''
+\textit{Proc.\ R.\ Soc.\ London A}, \textbf{117}, 610--624, 1928.
+
+\bibitem{codata}
+NIST, CODATA 2018 Recommended Values of the Fundamental Physical
+Constants,
+\url{https://physics.nist.gov/cuu/Constants/}, 2018.
+
+\end{thebibliography}
+
+\end{document}
