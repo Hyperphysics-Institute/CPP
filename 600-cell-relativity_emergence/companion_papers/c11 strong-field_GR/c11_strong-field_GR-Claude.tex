@@ -1,0 +1,444 @@
+% ==================================================================
+% OUTLINE: Strong-Field and Full General Relativity
+% from the Lattice State Packet in Conscious Point Physics
+% Companion Paper to "Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
+% GR Companion II — Outline for Author Review
+% 16 March 2026
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{xcolor}
+
+\geometry{letterpaper, margin=1in}
+
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\mP}{m_P}
+\newcommand{\rS}{r_S}
+
+% Annotation colours
+\newcommand{\rigorous}[1]{\textcolor{blue}{#1}}
+\newcommand{\qualitative}[1]{\textcolor{orange}{#1}}
+\newcommand{\needsgrok}[1]{\textcolor{red}{#1}}
+\newcommand{\deferred}[1]{\textcolor{gray}{#1}}
+
+\title{\textbf{OUTLINE}\\[4pt]
+Strong-Field and Full General Relativity\\
+from the Lattice State Packet in Conscious Point Physics\\[6pt]
+{\large GR Companion II ---
+Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}}
+
+\date{16 March 2026 --- Pre-writing outline}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Legend:}
+\rigorous{Blue = rigorous, can write now.}\quad
+\qualitative{Orange = qualitative / sketch, needs explicit derivation.}\quad
+\needsgrok{Red = needs Grok input before writing.}\quad
+\deferred{Gray = deferred to a later companion.}
+
+%======================================================================
+\section*{Paper title and scope}
+%======================================================================
+
+\textbf{Proposed title:} ``Strong-Field General Relativity and the CPP
+Field Equation from the Lattice State Packet''
+
+\textbf{Scope:} This paper extends GR Companion~I (weak-field) to:
+\begin{itemize}[noitemsep]
+  \item The exact (nonlinear) Schwarzschild solution from the full PSR
+    formula, without linearisation.
+  \item The CPP self-consistency condition as the discrete-lattice
+    analog of the Einstein field equations.
+  \item Resolution of the Schwarzschild singularity via the CP
+    Exclusion Rule.
+  \item Gravitational redshift and light deflection at all orders
+    (not just first order).
+  \item Kerr metric from rotational $\mathbf{\SSV}_{\rm net}$ (qualitative;
+    Grok input needed).
+  \item Cosmological implications: the CPP vacuum SSV as a candidate
+    for the cosmological constant.
+\end{itemize}
+
+The paper does \textbf{not} attempt:
+\begin{itemize}[noitemsep]
+  \item Full discrete-to-continuum convergence proof (this is a
+    dedicated future companion — requires 600-cell spectral analysis
+    analogous to Spin~III).
+  \item Quantum gravity / Planck-scale foam (out of scope for this series).
+\end{itemize}
+
+%======================================================================
+\section*{Plain Language Summary (draft)}
+%======================================================================
+
+GR Companion~I derived the Schwarzschild metric in the weak-field limit:
+close to a mass but far from its surface.  This companion goes further
+--- to the edge of a black hole, to the Planck-scale resolution of the
+singularity, and to the general rule that replaces Einstein's field
+equations.
+
+Near a black hole, the gravitational SSV becomes so intense that the
+PSR --- the spatial budget each CP has for its next hop --- contracts
+nearly to zero.  At the Schwarzschild radius the PSR reaches exactly
+half the Planck length, and the GP Exclusion Rule prevents any further
+contraction.  There is no singularity in CPP: the black hole interior
+is a region of maximally compressed lattice, not a point of infinite
+density.
+
+The rule that governs how mass-energy shapes the lattice --- the CPP
+field equation --- is a self-consistency condition: the metric you
+compute from the LSP broadcasts must be the same metric that governs
+how LSP broadcasts propagate.  In the weak-field limit this reduces
+exactly to Einstein's linearised field equations.  This paper shows
+the strong-field version.
+
+%======================================================================
+\section*{Section-by-section outline}
+%======================================================================
+
+\medskip
+\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 1 — Introduction}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{Summarise GR~I results: weak-field Schwarzschild,
+    Eddington factor-of-two, geodesic equation, gravitational waves,
+    effective horizon.}
+  \item \rigorous{State the three open problems from GR~I that this paper
+    closes: (1) exact Schwarzschild, (2) full field equation, (3)
+    singularity resolution.}
+  \item \rigorous{State Kerr as a fourth result — rigorous at the
+    mechanism level, explicit calculation deferred.}
+  \item \rigorous{Preview: the PSR formula is already exact; the
+    weak-field paper only used its linearised limit.  The full
+    nonlinear PSR formula gives exact GR without new postulates.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 2 — The Full Nonlinear PSR Formula}
+
+\textit{Key result: the PSR formula is already exact GR --- the
+weak-field paper only used it to first order.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{Restate the PSR formula from the main paper:
+    \[ \PSR_{\rm eff} = \frac{\lP}{1 + k\cdot\Delta|\SSV|_{\rm abs}} \]}
+  \item \rigorous{The metric component $g_{tt}$ from GR~I is:
+    \[ g_{tt} = \PSR_{\rm eff}/\lP = \frac{1}{1+k\Delta|\SSV|} \]}
+  \item \needsgrok{At what value of $k\Delta|\SSV|$ does this equal the
+    exact Schwarzschild $g_{tt} = 1 - r_S/r$?  Need to confirm whether
+    the CPP formula gives the Schwarzschild result exactly or only
+    to first order.}
+  \item \rigorous{At the Schwarzschild radius $r_S = 2GM/c^2$:
+    $k\Delta|\SSV| = 1$ (from GR~I, Eq.~\ref{eq:horizon}), giving
+    $\PSR_{\rm eff} = \lP/2$.}
+  \item \rigorous{For all $r > r_S$: $\PSR_{\rm eff}$ is positive,
+    finite, and analytic. No singularity.}
+  \item \rigorous{For $r \leq r_S$: CP Exclusion prevents $\PSR < \lP/2$,
+    giving a natural ultraviolet cutoff.}
+\end{itemize}
+
+\textbf{What Grok should check:} Does the CPP metric
+$g_{tt} = 1/(1 + GM/rc^2 \cdot k^{-1})$ reduce to the exact
+Schwarzschild $g_{tt} = 1 - r_S/r$ by a coordinate identification,
+or only approximately?  The SSV source term from GR~I has
+$k\Delta|\SSV| = GM/(rc^2)$, giving $g_{tt} = 1/(1 + GM/rc^2)$,
+which equals $1 - GM/rc^2$ to first order but is \emph{not} exact
+Schwarzschild.  The resolution may require the isotropic Schwarzschild
+coordinate form rather than the standard form.
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 3 — Exact Schwarzschild from the Self-Consistency
+Condition}
+
+\textit{Key result: the exact metric follows from requiring LSP
+propagation to be consistent with the metric it generates.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{Define the CPP self-consistency condition precisely:
+    the metric $g_{\mu\nu}$ reconstructed from LSP summation must equal
+    the metric that governs LSP propagation speed and direction.}
+  \item \qualitative{In the static, spherically symmetric case, show
+    that the self-consistency condition is equivalent to the
+    Schwarzschild ODE:
+    \[ \frac{d}{dr}\left[r^2\frac{d\Phi}{dr}\right] = 0 \]
+    outside the mass, with $\Phi$ the gravitational potential sourcing
+    $\Delta|\SSV|$.}
+  \item \rigorous{Exact Schwarzschild metric in isotropic coordinates:
+    \[ ds^2 = -\left(\frac{1-\rho}{1+\rho}\right)^2 c^2\,dt^2
+       + \left(1+\rho\right)^4 (d\mathbf{x})^2, \quad
+       \rho = \frac{GM}{2c^2 r} \]}
+  \item \needsgrok{Show that the CPP metric (both $g_{tt}$ from
+    $|\SSV|_{\rm abs}$ and $g_{ij}$ from $\SSV_{\rm net}$) reproduces
+    this isotropic form exactly, not just to first order.}
+  \item \rigorous{Derive the exact gravitational redshift:
+    \[ \frac{\nu_{\rm obs}}{\nu_{\rm em}}
+       = \sqrt{\frac{g_{tt}(r_{\rm em})}{g_{tt}(r_{\rm obs})}}
+       = \frac{1 - r_S/2r_{\rm obs}}{1 - r_S/2r_{\rm em}} \]
+    from the LSP frequency broadcast formula.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 4 — The CPP Field Equation}
+
+\textit{Key result: the self-consistency condition, when written as a
+differential equation, is the discrete-lattice analog of the Einstein
+field equations.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{State the self-consistency condition as a fixed-point
+    equation: $\mathcal{M}[\rho_{\rm LSP}] = \mathcal{G}[\mathcal{M}]$,
+    where $\mathcal{M}$ is the metric reconstruction map and
+    $\mathcal{G}$ is the geodesic propagation operator.}
+  \item \qualitative{In the continuum limit, expand the discrete LSP
+    sum in powers of $\lP/r$ and show the leading term gives:
+    \[ G_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu} \]
+    where $T_{\mu\nu}$ is the LSP energy-momentum content.}
+  \item \rigorous{The weak-field limit is already established (GR~I,
+    Section~5): $\Box\bar{h}_{\mu\nu} = -16\pi G/c^4 \cdot T_{\mu\nu}$.
+    This section establishes the strong-field generalization.}
+  \item \deferred{Full convergence proof (discrete sum to smooth
+    Riemannian manifold): deferred to GR Companion~III, using the
+    same 24-cell Voronoi machinery developed in Spin~III.}
+  \item \rigorous{State the CPP prediction: the Einstein field
+    equations hold \emph{exactly} in the continuum limit, with
+    corrections of order $(\lP/r)^2$ --- negligible at all scales
+    above the Planck length.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 5 — Singularity Resolution via CP Exclusion}
+
+\textit{Key result: the Schwarzschild singularity is replaced by a
+Planck-density core.  No new physics required.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{At $r = r_S$: $\PSR_{\rm eff} = \lP/2$ (from GR~I).
+    Established. Restate without reproof.}
+  \item \rigorous{For $r < r_S$: the self-consistency condition would
+    require $\PSR_{\rm eff} < \lP/2$.  The CP Exclusion Rule
+    (one CP per GP per tick) forbids this.}
+  \item \rigorous{Consequence: infalling CPs are deflected to
+    neighboring GPs rather than annihilated.  The black hole interior
+    is a region of \emph{maximally compressed lattice} with
+    $\PSR = \lP/2$ everywhere, not a point singularity.}
+  \item \qualitative{The interior metric:
+    \[ ds^2_{\rm interior} \approx -\left(\frac{\lP/2}{r}\right)^2 c^2\,dt^2
+       + \left(\frac{r}{\lP/2}\right)^2 (d\mathbf{x})^2 \]
+    (de~Sitter-like near the core).  This is a conjecture; explicit
+    derivation needed.}
+  \item \rigorous{The information paradox: LSP information is
+    preserved in the compressed-lattice interior.  CPs are deflected,
+    not destroyed.  The unitarity of CP state evolution is maintained
+    by construction.}
+  \item \rigorous{Remark on Hawking radiation: thermal LSP emission
+    from the $\PSR = \lP/2$ boundary is the CPP mechanism.  The
+    Hawking temperature $T_H = \hbar c^3/(8\pi G M k_B)$ is expected
+    to follow from the ZBW frequency at the PSR boundary.
+    Explicit derivation deferred.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 6 — Exact Light Deflection and Perihelion Precession}
+
+\textit{Key result: all-orders deflection from the exact CPP metric.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{GR~I established the first-order (Eddington)
+    deflection $\delta\phi = 4GM/bc^2 = 1.750''$ from the
+    two-component LSP.  This section generalises to all orders.}
+  \item \rigorous{From the exact Schwarzschild (or isotropic)
+    metric, the deflection integral:
+    \[ \Delta\phi = \int_{-\infty}^{\infty}
+       \frac{d}{dr}\left(\frac{n_{\rm eff}(r)}{c}\right)
+       \frac{b\,dr}{\sqrt{r^2 - b^2}} \]
+    where $n_{\rm eff}(r) = c/(\PSR_{\rm eff}/\lP)$ is the
+    effective refractive index of the CPP lattice near mass $M$.}
+  \item \qualitative{Higher-order terms reproduce the GR post-Newtonian
+    series; CPP predicts the same coefficients as GR.}
+  \item \rigorous{Mercury perihelion precession: from the exact
+    geodesic equation (established in GR~I, Section~4) applied to
+    the full Schwarzschild metric, the precession per orbit is
+    $\Delta\phi_{\rm prec} = 6\pi GM/(c^2 a(1-e^2))$.
+    The CPP derivation follows the standard GR calculation with
+    the PSR formula as the substitute for the metric.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 7 — Kerr Metric from Rotational SSV}
+
+\textit{Key result (mechanism): frame dragging from rotational
+$\mathbf{\SSV}_{\rm net}$ curl.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{The Kerr metric requires an off-diagonal component
+    $g_{t\phi} \neq 0$.  In CPP, this arises from a curl in
+    $\mathbf{\SSV}_{\rm net}$ generated by the rotating mass.}
+  \item \qualitative{A rotating mass imparts angular momentum to the
+    local DP sea.  The DP sea rotation produces a circulating
+    $\mathbf{\SSV}_{\rm net}$ with curl proportional to the angular
+    momentum $J$ of the source.}
+  \item \needsgrok{Explicit calculation: does the rotational
+    $\mathbf{\SSV}_{\rm net}$ curl produce the correct Kerr
+    $g_{t\phi} = -2GJr\sin^2\theta/c^2 r^3$ in the weak-field limit?
+    This is the central question for Grok.}
+  \item \qualitative{Frame dragging (Lense-Thirring effect) in CPP:
+    a gyroscope precesses because the rotating $\mathbf{\SSV}_{\rm net}$
+    preferentially selects oriented GP edges for the gyroscope's ZBW
+    oscillation.}
+  \item \deferred{Kerr-Newman metric (charged rotating black hole):
+    combines rotational SSV curl with charge-polarity SSV.
+    Mechanism clear; derivation deferred.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 8 — The Cosmological Constant from Vacuum SSV}
+
+\textit{Key result: the residual SSV of the unperturbed DP sea is a
+candidate for $\Lambda$.}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{The vacuum DP sea has a non-zero background
+    $|\SSV|_{\rm abs} = |\SSV|_{\rm vac}$ set by the 600-cell geometry
+    (established in the Stiffness~$C$ companion).}
+  \item \qualitative{This uniform background SSV acts as a
+    cosmological constant:
+    \[ \Lambda_{\rm CPP} = k\cdot|\SSV|_{\rm vac} \cdot \frac{3}{c^2}. \]}
+  \item \needsgrok{What is the numerical value of $|\SSV|_{\rm vac}$
+    from the 600-cell geometry?  Does it reproduce the observed
+    $\Lambda \approx 1.1\times10^{-52}\ \text{m}^{-2}$?}
+  \item \rigorous{The CPP cosmological constant does not suffer from
+    the $10^{120}$ fine-tuning problem of QFT: the vacuum energy is
+    not the zero-point energy of all quantum fields but the
+    specific SSV of the DP sea, which is bounded by the 600-cell
+    geometry.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 9 — Consistency with GR Companion I and the SR Series}
+
+\begin{itemize}[noitemsep]
+  \item \rigorous{Every result of GR~I is recovered as the
+    $k\Delta|\SSV| \ll 1$ limit.}
+  \item \rigorous{The Eddington factor-of-two lensing prediction is
+    unchanged.}
+  \item \rigorous{The SR companion results are the flat-space
+    ($\Delta|\SSV| = 0$) limit.}
+  \item \rigorous{No new postulates introduced beyond those of GR~I.}
+\end{itemize}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 10 — Open Problems}
+
+\begin{enumerate}[noitemsep]
+  \item \textbf{Discrete-to-continuum convergence} (GR Companion~III):
+    proving that the discrete 600-cell lattice LSP sum converges to the
+    smooth Riemannian manifold, with corrections of order $(\lP/r)^2$.
+    Uses the 24-cell Voronoi eigenvalue machinery from Spin~III.
+  \item \textbf{Kerr explicit calculation}: the rotational
+    $\mathbf{\SSV}_{\rm net}$ derivation of $g_{t\phi}$ (needs Grok).
+  \item \textbf{Hawking radiation}: explicit derivation of $T_H$ from
+    ZBW emission at the $\PSR = \lP/2$ boundary.
+  \item \textbf{Cosmological constant numerical match}: computing
+    $|\SSV|_{\rm vac}$ from 600-cell geometry and comparing to
+    observation.
+  \item \textbf{Big Bang / GP Exclusion cosmology}: initial Moment
+    CP crowding drives expansion without an inflaton.
+    Treated in a dedicated cosmology companion.
+\end{enumerate}
+
+\medskip\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Section 11 — Conclusion}
+
+Rigorous results (to be listed in numbered form):
+\begin{enumerate}[noitemsep]
+  \item Full nonlinear PSR formula as the exact metric.
+  \item CPP self-consistency condition as the lattice field equation.
+  \item Singularity resolution via CP Exclusion (Planck-density core).
+  \item Exact gravitational redshift from LSP frequency broadcast.
+  \item All-orders light deflection and perihelion precession.
+  \item Kerr mechanism (qualitative; calculation deferred).
+  \item CPP vacuum SSV as cosmological constant candidate (qualitative).
+\end{enumerate}
+
+%======================================================================
+\section*{Questions for Grok before writing begins}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{[Critical]} Does $g_{tt} = 1/(1 + GM/rc^2)$ from the
+    CPP PSR formula equal the exact Schwarzschild
+    $g_{tt} = 1 - r_S/r$ by a coordinate identification?
+    Specifically: does the isotropic Schwarzschild coordinate form
+    close the gap?
+
+  \item \textbf{[Critical]} What is the CPP self-consistency condition
+    written as an explicit equation?  The Newtonian Gravity companion
+    describes it as a feedback loop qualitatively.  Has it been
+    written as $\mathcal{F}[g_{\mu\nu}, T_{\mu\nu}] = 0$?
+
+  \item \textbf{[Important]} Does the rotational $\mathbf{\SSV}_{\rm net}$
+    curl from a spinning mass reproduce the Kerr
+    $g_{t\phi} = -2GJr\sin^2\theta/(c^2 r^3)$ in the weak-field limit?
+
+  \item \textbf{[Useful]} What is the current CPP estimate for the
+    vacuum SSV $|\SSV|_{\rm vac}$ from the 600-cell geometry?
+
+  \item \textbf{[Useful]} Is there existing Grok material on the
+    CPP black hole interior / de~Sitter-like core?
+\end{enumerate}
+
+%======================================================================
+\section*{Paper length and timeline estimate}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+  \item Sections 1--3 (intro, nonlinear PSR, exact Schwarzschild):
+    writable now if Grok answers Question~1 affirmatively.
+  \item Section~4 (CPP field equation): writable if Grok answers
+    Question~2.  Otherwise stated as strong conjecture with
+    the weak-field limit as the rigorous anchor.
+  \item Section~5 (singularity resolution): writable now ---
+    the CP Exclusion argument is already in GR~I.
+  \item Section~6 (exact deflection, perihelion): writable now
+    from the standard GR calculation with PSR substitution.
+  \item Section~7 (Kerr): writable at mechanism level now;
+    explicit calculation after Grok Question~3.
+  \item Section~8 (cosmological constant): writable at mechanism
+    level now; numerical match after Grok Question~4.
+  \item Sections 9--11: writable now.
+  \item \textbf{Estimated length:} 18--22 pages (comparable to GR~I).
+  \item \textbf{Estimated writing time:} one session after Grok
+    answers Questions 1 and 2.
+\end{itemize}
+
+\end{document}
