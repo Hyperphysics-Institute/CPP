@@ -30,8 +30,9 @@
 \newcommand{\Tmn}{T_{\mu\nu}}
 \newcommand{\hmn}{h_{\mu\nu}}
 
-\title{\textbf{Weak-Field General Relativity from the Extended\\
-Lattice State Packet in Conscious Point Physics}\\[6pt]
+\title{\textbf{Weak-Field General Relativity\\
+from the Extended Lattice State Packet\\
+in Conscious Point Physics}\\[6pt]
 {\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
 via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
 
@@ -40,7 +41,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{15 March 2026 --- Version~2}
+\date{15 March 2026 --- Version~5}
 
 \begin{document}
 \maketitle
@@ -127,20 +128,6 @@ Three rigorous claims:
 \end{itemize}
 Full Einstein equations and strong-field solutions are deferred.
 
-\begin{remark}[Continuum limit]
-All results in this paper are understood in the coarse-grained,
-long-wavelength limit of the discrete 600-cell lattice.  In this limit,
-the discrete LSP field $\{\LSP_i\}$ over lattice sites $i$ is
-approximated by a smooth tensor field $\gmn(\mathbf{x})$.  Corrections
-from the discrete structure enter at wavenumbers $k \sim 1/\lP$ and
-are suppressed by $(r/\lP)^{-2}$ at astrophysical distances.  This
-approximation is identical in spirit to how the continuum Navier-Stokes
-equations emerge from discrete molecular dynamics in the long-wavelength
-limit.  The proof that the discrete CPP sum converges exactly to the
-smooth Riemannian manifold of GR is the central open problem of the
-full GR companion.
-\end{remark}
-
 %══════════════════════════════════════════════════════════════════════════════
 \section{Deriving the Extended LSP from ZBW Polarization Energy}
 \label{sec:LSP}
@@ -199,16 +186,6 @@ $|\nabla\mathbf{\SSV}_{\rm net}|_{ij}$ is the spatial gradient tensor
 of $\mathbf{\SSV}_{\rm net}$.
 \end{definition}
 
-\begin{remark}[Metric mapping is forced, not postulated]
-The identification of $g_{tt}$ with $\PSR_{\rm eff}/\lP = 1/(1+k\Delta|\SSV|_{\rm abs})$
-is not an independent postulate.  It is forced uniquely by the requirement
-that the weak-field limit reduce to the SR time-dilation formula of Version~16
-(Eq.~1) and by local isotropy of the flat-space DP sea.  The spatial metric
-identification~\eqref{eq:gij} is then fixed by the equal-magnitude constraint
-$|h_{tt}| = |h_{rr}|$ that follows from the single coupling constant
-$k = \lP^3/\EP$ governing both LSP components.
-\end{remark}
-
 \begin{proposition}[Weak-field Schwarzschild from LSP]
 \label{prop:Schwarzschild}
 For a static spherically symmetric mass $M$, with gravitational SSV
@@ -260,59 +237,6 @@ for a tensorial data structure.  The Eddington factor-of-two is a
 the lensing data, yet the correct factor emerges automatically from the
 two-component LSP structure.
 \end{remark}
-
-\subsection{Worked derivation: light bending to first order}
-\label{sec:lensing_worked}
-
-We walk through the lensing calculation from LSP to observed angle.
-Consider a photon traveling in the $x$-direction, passing the Sun at
-closest approach $b = R_\odot$.
-
-\textbf{Step 1 --- LSP at impact parameter $b$.}
-From Proposition~\ref{prop:Schwarzschild}, the metric at distance
-$r$ from the Sun is:
-\begin{equation}
-  ds^2 \;=\; -\!\left(1-\frac{2GM_\odot}{rc^2}\right)c^2\,dt^2
-  + \left(1+\frac{2GM_\odot}{rc^2}\right)
-  \bigl(dx^2+dy^2+dz^2\bigr).
-  \label{eq:line_element}
-\end{equation}
-
-\textbf{Step 2 --- Null geodesic condition.}
-For a photon $ds^2 = 0$.  At linear order in $\Phi = -GM_\odot/(rc^2)$:
-\begin{equation}
-  \frac{dx}{dt} \;=\; c\left(1 + 2\Phi\right)
-  \;=\; c\left(1 - \frac{2GM_\odot}{rc^2}\right).
-  \label{eq:speed}
-\end{equation}
-The photon slows near the Sun — by the same factor in both the
-$g_{tt}$ and $g_{rr}$ sectors.
-
-\textbf{Step 3 --- Deflection from each sector.}
-The transverse deflection $\delta\phi$ accumulated as the photon passes
-the Sun is:
-\begin{equation}
-  \delta\phi_{\rm time} \;=\; \frac{2GM_\odot}{bc^2}
-  \quad\text{(from $g_{tt}$)},
-  \qquad
-  \delta\phi_{\rm space} \;=\; \frac{2GM_\odot}{bc^2}
-  \quad\text{(from $g_{rr}$)}.
-  \label{eq:deflection_components}
-\end{equation}
-Each integral evaluates to $2GM/bc^2$ because the two metric
-perturbations have equal magnitude (Remark~\ref{rem:equal}).
-
-\textbf{Step 4 --- Total angle.}
-\begin{equation}
-  \theta \;=\; \delta\phi_{\rm time} + \delta\phi_{\rm space}
-  \;=\; \frac{4GM_\odot}{R_\odot c^2}
-  \;\approx\; 1.750\ \text{arcsec}.
-  \label{eq:lensing_result}
-\end{equation}
-A scalar-only CPP framework ($\delta\phi_{\rm space} = 0$) would predict
-only $0.875$~arcsec.  The extended LSP recovers the observed value.
-
-
 
 %══════════════════════════════════════════════════════════════════════════════
 \section{Geodesic Motion and the Equivalence Principle}
