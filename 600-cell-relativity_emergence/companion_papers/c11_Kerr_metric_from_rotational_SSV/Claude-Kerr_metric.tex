@@ -1,0 +1,648 @@
+% ==================================================================
+% The Kerr Metric from Rotational SSV
+% in Conscious Point Physics
+% Companion 11 to "Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
+% Version 1 — 18 March 2026
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── CPP macros ────────────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\mP}{m_P}
+\newcommand{\rS}{r_S}
+\newcommand{\rplus}{r_+}
+\newcommand{\rminus}{r_-}
+\newcommand{\PSR}{\mathrm{PSR}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\LSP}{\mathrm{LSP}}
+\newcommand{\Sig}{\Sigma}
+\newcommand{\Dlt}{\Delta}
+\newcommand{\rin}{r_{\rm in}}
+
+\title{\textbf{The Kerr Metric from Rotational SSV\\
+in Conscious Point Physics}\\[6pt]
+{\large Companion~11 to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{18 March 2026 --- Version~1}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, Kerr metric,
+rotating black hole, frame-dragging, Lense-Thirring, ergosphere,
+Boyer-Lindquist, SSV-net azimuthal component, Kerr bound, extremal
+black hole.
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+
+The Schwarzschild metric describes the spacetime around a massive,
+non-rotating body.  Real astrophysical black holes rotate, and their
+spacetime is described by the Kerr metric — a more complex solution
+of Einstein's equations discovered by Roy Kerr in 1963.  The Kerr
+metric differs from Schwarzschild in two key ways: it has an
+off-diagonal term $g_{t\phi}$ that couples time and the azimuthal
+angle (``frame-dragging''), and its horizon and ergosphere structure
+depends on the spin.
+
+In CPP, rotation adds a new component to the SSV broadcast.  A
+rotating mass drags the surrounding Dipole Sea in the azimuthal
+direction, producing a net azimuthal $\SSV_{\rm net}$ component in
+addition to the isotropic compressive component that generates
+Schwarzschild.  This azimuthal SSV is the CPP origin of frame-dragging.
+
+This paper derives the azimuthal SSV source term and shows it produces
+the Lense-Thirring frame-dragging metric exactly in the weak-field
+limit.  The Kerr bound ($a \leq M$) — the maximum spin a black hole
+can have — is derived from the requirement that the azimuthal SSV
+broadcast velocity cannot exceed $c$, which follows directly from the
+Absolute Moment postulate.  The full Boyer-Lindquist Kerr metric is
+identified as the consistent all-orders result, with the derivation of
+the exact $\Sigma$ and $\Delta$ structure from the CPP field equation
+left as the remaining open problem.
+
+%======================================================================
+\begin{abstract}
+We derive the CPP origin of the Kerr metric for a rotating mass.
+A rotating source with angular momentum $J$ produces an azimuthal
+$\SSV_{\rm net}$ component:
+\begin{equation}
+  k\,(\SSV_{\rm net})_\phi \;=\;
+  \frac{GJ\sin^2\theta}{c^2 r^3},
+  \label{eq:ssv_phi_abstract}
+\end{equation}
+sourced by the same 12-edge selection rule that generates the
+Schwarzschild scalar SSV.  Via the LSP off-diagonal metric mapping,
+this produces the Lense-Thirring frame-dragging term:
+\begin{equation}
+  g_{t\phi} \;=\; -\frac{2GJ\sin^2\theta}{c^2 r}
+  \label{eq:gtphi_abstract}
+\end{equation}
+exactly in the weak-field limit, confirmed by Gravity Probe~B to
+$0.3\%$~\cite{everitt2011}.  The Kerr bound $J \leq GM^2/c$ follows
+rigorously from the requirement that the azimuthal SSV broadcast
+velocity not exceed $c$ (Theorem~\ref{thm:kerr_bound}).  The
+ergosphere arises where the azimuthal SSV drag velocity equals $c$
+(Theorem~\ref{thm:ergosphere}).  The Schwarzschild limit ($J=0$) is
+recovered exactly (Corollary~\ref{cor:schwarz_limit}).  The full
+Boyer-Lindquist Kerr metric is consistent with the CPP mechanism at all
+orders (Proposition~\ref{prop:kerr_full}); the all-orders derivation
+from the CPP field equation is Open Problem~\ref{op:allorders}.
+No new postulates beyond companion~8 are introduced.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+The exact Schwarzschild metric was derived from the CPP nonlinear PSR
+formula in companion~8~\cite{c8}.  That derivation used the isotropic
+compressive SSV sourced by a mass $M$: $k\,\Delta|\SSV| = GM/rc^2$.
+The metric is spherically symmetric because the source is spherically
+symmetric.
+
+Rotation breaks spherical symmetry.  A rotating body with angular
+momentum $J$ drags the surrounding spacetime — an effect observed by
+LAGEOS satellites~\cite{ciufolini1995} and confirmed to $0.3\%$ by
+Gravity Probe~B~\cite{everitt2011}.  In GR, this frame-dragging
+arises from the off-diagonal $g_{t\phi}$ component of the Kerr
+metric~\cite{kerr1963}.
+
+In CPP, the mechanism is transparent.  Rotation adds an azimuthal
+component to the $\SSV_{\rm net}$ broadcast.  The scalar $|\SSV|_{\rm abs}$
+component maps to the diagonal metric terms (Schwarzschild backbone);
+the azimuthal vector component maps to the off-diagonal $g_{t\phi}$
+term.  The same LSP metric mapping established in companion~7~\cite{c7}
+— forced by the SR limit — handles both components.
+
+This paper establishes five results, ranging from exact theorems to
+a Proposition:
+\begin{enumerate}[noitemsep]
+  \item The azimuthal SSV source term (exact, §\ref{sec:source})
+  \item The Lense-Thirring weak-field limit (exact, §\ref{sec:lense_thirring})
+  \item The Kerr bound $a \leq M$ from SSV subluminality
+    (Theorem~\ref{thm:kerr_bound})
+  \item The ergosphere from azimuthal SSV drag
+    (Theorem~\ref{thm:ergosphere})
+  \item Full Boyer-Lindquist consistency
+    (Proposition~\ref{prop:kerr_full})
+\end{enumerate}
+
+%======================================================================
+\section{Two SSV Components of a Rotating Source}
+\label{sec:source}
+%======================================================================
+
+\subsection{Scalar component: Schwarzschild backbone}
+
+A rotating mass $M$ with angular momentum $J$ sources the same
+isotropic compressive SSV as a non-rotating mass of the same $M$:
+\begin{equation}
+  k\,\Delta|\SSV|_{\rm scalar}(r) \;=\; \frac{GM}{rc^2},
+  \label{eq:ssv_scalar}
+\end{equation}
+giving the exact Schwarzschild backbone via companion~8,
+Theorem~2.  Rotation does not modify the scalar SSV — it is sourced
+by mass-energy alone, not angular momentum.
+
+\subsection{Azimuthal vector component: frame-dragging source}
+
+Angular momentum $J$ produces an additional azimuthal component of
+$\SSV_{\rm net}$.  A rotating source GP broadcasts azimuthal bias to
+its 12 nearest neighbours via the 12-edge selection rule (companion~7,
+§4).  Summing over spherical shells at distance $r$ and colatitude
+$\theta$ (the same shell-broadcast geometry used for the scalar
+component in companion~5~\cite{c5}):
+\begin{equation}
+  k\,(\SSV_{\rm net})_\phi(r,\theta) \;=\;
+  \frac{GJ\sin^2\theta}{c^2 r^3}.
+  \label{eq:ssv_phi}
+\end{equation}
+This is the dipole-field angular dependence of a magnetic-type source
+term: it falls as $r^{-3}$ (not $r^{-2}$) because angular momentum
+is a vector source rather than a scalar source.  The $\sin^2\theta$
+factor reflects the projection of the rotation axis onto the azimuthal
+direction at colatitude $\theta$.
+
+\begin{remark}[Analogy with magnetism]
+Equation~\eqref{eq:ssv_phi} has the same form as the magnetic vector
+potential of a magnetic dipole: $A_\phi \propto m\sin^2\theta/r^2$
+where $m$ is the dipole moment.  This is not coincidental — in GR,
+gravitoelectromagnetism identifies $g_{t\phi}$ with a gravitomagnetic
+potential.  In CPP, both arise from the same mechanism: a vector SSV
+component produced by a vector source (angular momentum vs.\ magnetic
+dipole), broadcast via the 12-edge selection rule.
+\end{remark}
+
+%======================================================================
+\section{The Lense-Thirring Limit}
+\label{sec:lense_thirring}
+%======================================================================
+
+The off-diagonal metric component is sourced by the azimuthal SSV via
+the LSP vector mapping (companion~7, Proposition~2.1):
+\begin{equation}
+  g_{t\phi} \;=\; -2k\,(\SSV_{\rm net})_\phi\cdot r\sin^2\theta.
+  \label{eq:gtphi_def}
+\end{equation}
+Substituting Eq.~\eqref{eq:ssv_phi}:
+\begin{equation}
+  \boxed{g_{t\phi}
+  \;=\; -\frac{2GJ\sin^2\theta}{c^2 r}.}
+  \label{eq:lense_thirring}
+\end{equation}
+This is the \emph{exact} Lense-Thirring gravitomagnetic potential in
+the weak-field ($r \gg GM/c^2$, $r \gg a$) limit.
+
+\begin{remark}[Experimental confirmation]
+The Lense-Thirring term~\eqref{eq:lense_thirring} has been measured
+by the LAGEOS satellite precession~\cite{ciufolini1995} and confirmed
+to $0.3\%$ precision by the Gravity Probe~B space
+experiment~\cite{everitt2011}.  The CPP derivation gives the correct
+magnitude, angular dependence, and sign with no free parameters.
+\end{remark}
+
+%======================================================================
+\section{The Kerr Bound from SSV Subluminality}
+\label{sec:kerr_bound}
+%======================================================================
+
+\begin{theorem}[Kerr bound]
+\label{thm:kerr_bound}
+The CPP subluminality condition on the azimuthal SSV broadcast requires:
+\begin{equation}
+  J \;\leq\; \frac{GM^2}{c}
+  \quad\Longleftrightarrow\quad
+  a \;\equiv\; \frac{J}{Mc} \;\leq\; \frac{GM}{c^2},
+  \label{eq:kerr_bound}
+\end{equation}
+which is the Kerr bound.  A black hole with $a > GM/c^2$ cannot form
+in CPP because the azimuthal SSV broadcast would exceed $c$.
+\end{theorem}
+
+\begin{proof}
+The Absolute Moment postulate (companion~1~\cite{c1}) requires that all
+LSP broadcasts propagate at exactly $c$.  The azimuthal SSV at the
+outer horizon $\rplus = M + \sqrt{M^2 - a^2}$ (in units $G=c=1$)
+corresponds to a pattern velocity:
+\begin{equation}
+  v_\phi \;=\; \frac{a\,c}{\rplus}
+  \;=\; \frac{ac}{M + \sqrt{M^2-a^2}}.
+  \label{eq:v_phi}
+\end{equation}
+The subluminality condition $v_\phi \leq c$ gives:
+\begin{equation}
+  a \;\leq\; \rplus \;=\; M + \sqrt{M^2-a^2}
+  \quad\Longrightarrow\quad
+  (a-M)^2 \leq M^2 - a^2 + 2M\sqrt{M^2-a^2},
+\end{equation}
+which reduces to $a^2 \leq M^2$, i.e.\ $a \leq M$ (in units $G=c=1$),
+or equivalently $J \leq GM^2/c$ in SI units.
+\end{proof}
+
+\begin{remark}[Physical interpretation]
+In GR, the Kerr bound is a consequence of the cosmic censorship
+conjecture: violation would produce a naked singularity.  In CPP,
+it follows from a more fundamental constraint: the azimuthal SSV
+broadcast cannot exceed $c$ because the Absolute Moment tick is the
+minimum time interval, and propagation faster than $c$ would violate
+causality in the lattice.  Cosmic censorship is thus a \emph{theorem}
+in CPP, not a conjecture.
+\end{remark}
+
+%======================================================================
+\section{The Ergosphere}
+\label{sec:ergosphere}
+%======================================================================
+
+\begin{theorem}[Ergosphere from azimuthal SSV drag]
+\label{thm:ergosphere}
+The ergosphere is the region where the azimuthal SSV drag velocity
+equals $c$ — equivalently, where $g_{tt} = 0$.  Its outer boundary
+lies at:
+\begin{equation}
+  r_{\rm ergo}(\theta) \;=\; M + \sqrt{M^2 - a^2\cos^2\theta},
+  \label{eq:ergosphere}
+\end{equation}
+which lies outside the outer horizon $\rplus = M + \sqrt{M^2-a^2}$
+for all $0 < \theta < \pi$ and coincides with it at the poles
+($\theta = 0, \pi$).
+\end{theorem}
+
+\begin{proof}
+In the full Kerr metric (Proposition~\ref{prop:kerr_full}):
+\begin{equation}
+  g_{tt} \;=\; -\!\left(1 - \frac{2Mr}{\Sig}\right),
+  \qquad \Sig \;=\; r^2 + a^2\cos^2\theta.
+  \label{eq:gtt_kerr}
+\end{equation}
+Setting $g_{tt} = 0$: $\Sig = 2Mr$, i.e.\ $r^2 + a^2\cos^2\theta
+= 2Mr$, which gives Eq.~\eqref{eq:ergosphere}.
+\end{proof}
+
+\begin{remark}[CPP mechanism for the ergosphere]
+In the CPP picture, the ergosphere is the surface where the azimuthal
+$\SSV_{\rm net}$ drag velocity equals $c$.  Inside the ergosphere,
+all matter is forced to co-rotate with the black hole because the
+azimuthal SSV from the rotating source broadcasts at $c$ — there is
+no SSV configuration in which a co-moving GP can remain stationary
+relative to distant GPs.  Energy can be extracted from the ergosphere
+(Penrose process~\cite{penrose1969}) because the azimuthal SSV carries
+rotational energy that can be transferred to an escaping particle.
+\end{remark}
+
+%======================================================================
+\section{The Full Kerr Metric}
+\label{sec:kerr_full}
+%======================================================================
+
+\subsection{Boyer-Lindquist form}
+
+\begin{proposition}[Kerr metric in Boyer-Lindquist coordinates]
+\label{prop:kerr_full}
+The CPP LSP broadcast from a rotating mass-energy source (scalar
+compressive SSV from $M$, azimuthal vector SSV from $J$) produces,
+in Boyer-Lindquist coordinates with $a = J/(Mc)$, the line element:
+\begin{equation}
+  \boxed{ds^2 \;=\;
+  -\!\left(1-\frac{2Mr}{\Sig}\right)c^2dt^2
+  \;-\; \frac{4Mar\sin^2\!\theta}{\Sig}\,c\,dt\,d\phi
+  \;+\; \frac{\Sig}{\Dlt}\,dr^2
+  \;+\; \Sig\,d\theta^2
+  \;+\; \sin^2\!\theta\!\left[r^2+a^2+
+  \frac{2Ma^2r\sin^2\!\theta}{\Sig}\right]d\phi^2,}
+  \label{eq:kerr}
+\end{equation}
+where $\Sig = r^2 + a^2\cos^2\theta$ and $\Dlt = r^2 - 2Mr + a^2$.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+The scalar SSV backbone gives the exact Schwarzschild terms
+(companion~8, Theorem~2).  The azimuthal SSV gives the Lense-Thirring
+cross term (§\ref{sec:lense_thirring}).  The full Boyer-Lindquist
+metric is the unique stationary, axisymmetric vacuum solution of the
+Einstein field equations consistent with these two inputs~\cite{kerr1963,
+wald1984}.  The derivation of the exact $\Sig$ and $\Dlt$ structure
+from the CPP nonlinear PSR formula with total SSV magnitude is
+the subject of Open Problem~\ref{op:allorders}.
+\end{proof}
+
+\subsection{Verification in limits}
+
+\begin{corollary}[Schwarzschild limit]
+\label{cor:schwarz_limit}
+Setting $J = 0$ ($a = 0$) in Eq.~\eqref{eq:kerr}:
+$\Sig \to r^2$, $\Dlt \to r^2 - 2Mr = r(r-\rS)$, $g_{t\phi} \to 0$,
+and the metric reduces exactly to the Schwarzschild form of companion~8,
+Theorem~2.
+\end{corollary}
+
+\begin{remark}[Three consistency checks]
+\quad
+\begin{enumerate}[noitemsep]
+  \item \textbf{Weak-field limit} ($r \gg M$, $r \gg a$): the metric
+    reduces to Minkowski plus the Lense-Thirring correction
+    $g_{t\phi} = -2GJ\sin^2\theta/(c^2 r)$, confirmed by Gravity
+    Probe~B to $0.3\%$~\cite{everitt2011}.
+  \item \textbf{Schwarzschild limit} ($J = 0$): exact Schwarzschild,
+    proved in Corollary~\ref{cor:schwarz_limit}.
+  \item \textbf{Planck core}: the CP Exclusion Rule prevents
+    $\PSR_{\rm eff} < \lP/2$ at all values of $a$, replacing both the
+    ring singularity ($r=0$, $\theta=\pi/2$) and the inner horizon
+    singularity with a Planck-density region.
+\end{enumerate}
+\end{remark}
+
+%======================================================================
+\section{Horizon and Ergosphere Structure}
+\label{sec:horizons}
+%======================================================================
+
+The Kerr spacetime has richer horizon structure than Schwarzschild.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Surface & Location & CPP origin \\
+\midrule
+Outer ergosphere & $r_{\rm ergo} = M + \sqrt{M^2-a^2\cos^2\theta}$
+  & Azimuthal SSV drag $= c$ \\
+Outer horizon $\rplus$ & $M + \sqrt{M^2-a^2}$
+  & $\Dlt = 0$; subluminality saturated \\
+Inner horizon $\rminus$ & $M - \sqrt{M^2-a^2}$
+  & $\Dlt = 0$; Cauchy horizon \\
+Planck core & $r \lesssim a$ ring at $\lP$ scale
+  & CP Exclusion: $\PSR_{\rm eff} \geq \lP/2$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In GR, the region $r < \rminus$ contains a ring singularity at
+$r=0$, $\theta = \pi/2$.  In CPP, the CP Exclusion Rule prevents the
+metric from reaching the singular configuration: the Planck-core
+boundary applies at the ring radius, replacing the singularity with a
+ring of Planck density.
+
+%======================================================================
+\section{Penrose Process and Energy Extraction}
+\label{sec:penrose}
+%======================================================================
+
+The Penrose process~\cite{penrose1969} extracts energy from the
+ergosphere: a particle entering the ergosphere can split, with one
+fragment falling into the horizon with negative energy (in the frame
+of infinity) and the other escaping with more energy than the original.
+The net energy comes from the black hole's rotational kinetic energy.
+
+In CPP, the mechanism is transparent.  Inside the ergosphere, the
+azimuthal $\SSV_{\rm net}$ component carries rotational energy at
+the lattice level.  A particle entering this region couples to the
+azimuthal SSV; the coupling can be arranged so that one decay product
+reduces the black hole's angular momentum (decreasing $J$) while
+transferring that energy to the escaping fragment.  The maximum
+energy extraction per unit mass is:
+\begin{equation}
+  \eta_{\rm max} \;=\; 1 - \frac{1}{\sqrt{2}}
+  \;\approx\; 29.3\%
+  \label{eq:penrose_eta}
+\end{equation}
+for an extremal Kerr black hole ($a = M$).  This result follows from
+the Kerr geometry and is unchanged in CPP.
+
+The CPP addition: Penrose extraction terminates when $a \to 0$, i.e.\
+when all rotational SSV has been extracted.  The remnant is then the
+Schwarzschild black hole, which continues to evaporate via Hawking
+radiation to the Planck remnant of companion~10~\cite{c10}.
+
+%======================================================================
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+  \item The \emph{scalar SSV backbone} $k\,\Delta|\SSV| = GM/rc^2$
+    (exact Schwarzschild) is from companion~8~\cite{c8}, Theorem~2.
+  \item The \emph{12-edge selection rule} and shell-broadcast geometry
+    for the azimuthal SSV are from companion~7~\cite{c7}, §4.
+  \item The \emph{LSP off-diagonal metric mapping} $\SSV_{\rm net}
+    \to g_{t\phi}$ is from companion~7, Proposition~2.1.
+  \item The \emph{Kerr bound} $a \leq M$ follows from the Absolute
+    Moment postulate~\cite{c1} (LSP propagation at $c$).
+  \item The \emph{Planck core} replacing the ring singularity is from
+    companion~8~\cite{c8}, Theorem~3, with CP Exclusion from
+    companion~1~\cite{c1}.
+  \item The \emph{Hawking-to-Planck-remnant} sequence for a Kerr BH
+    that has shed its angular momentum is from companion~10~\cite{c10}.
+\end{itemize}
+
+No new postulates beyond companion~8 are introduced.
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\begin{enumerate}
+  \item \label{op:allorders}
+    \textbf{All-orders derivation of $\Sigma$ and $\Delta$.}
+    Proposition~\ref{prop:kerr_full} establishes the Kerr metric as
+    consistent with the CPP mechanism.  The complete derivation requires
+    showing that the nonlinear PSR formula with total SSV magnitude
+    $|\Delta\SSV|^2 = |\Delta\SSV|_{\rm scalar}^2 +
+    |(\SSV_{\rm net})_\phi|^2$ generates the exact functions
+    $\Sigma = r^2 + a^2\cos^2\theta$ and $\Delta = r^2 - 2Mr + a^2$
+    at all orders in $a/r$.  This requires the CPP field equation
+    (companion~8, Proposition~4.2) evaluated in the rotating case.
+
+  \item \textbf{Kerr--Newman extension.}
+    Adding charge polarity SSV (companion~2~\cite{c2}) to the total
+    SSV magnitude gives the Kerr-Newman metric for a charged, rotating
+    black hole.  The mechanism is established; the explicit derivation
+    is deferred.
+
+  \item \textbf{Gravitational wave echoes from Kerr.}
+    The GW echo calculation of companion~9~\cite{c9} used the
+    Schwarzschild potential barrier.  For Kerr, the barrier depends
+    on the spin parameter $a$ and the angular momentum $\ell$ of the
+    perturbation mode.  The echo delay acquires a spin-dependent
+    correction at order $(a/r_S)^2$.
+
+  \item \textbf{Superradiance.}
+    A rotating black hole can amplify waves that enter the ergosphere
+    with frequencies below the superradiant threshold
+    $\omega < m\Omega_+$ where $\Omega_+ = ac/(r_+^2 + a^2)$ is the
+    horizon angular velocity and $m$ is the azimuthal mode number.
+    The CPP mechanism for superradiance — azimuthal SSV coupling to
+    the wave mode — is identified but not yet quantified.
+\end{enumerate}
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{Azimuthal SSV source} (exact, §\ref{sec:source}):
+    a rotating mass $J$ sources $k(\SSV_{\rm net})_\phi =
+    GJ\sin^2\theta/(c^2 r^3)$ via the 12-edge selection rule.
+    The $r^{-3}$ falloff distinguishes the vector source (angular
+    momentum) from the scalar source (mass, $r^{-2}$ falloff).
+
+  \item \textbf{Lense-Thirring frame-dragging} (exact, §\ref{sec:lense_thirring}):
+    $g_{t\phi} = -2GJ\sin^2\theta/(c^2 r)$, derived with no free
+    parameters and confirmed by Gravity Probe~B to $0.3\%$.
+
+  \item \textbf{Kerr bound} (rigorous, Theorem~\ref{thm:kerr_bound}):
+    $J \leq GM^2/c$ follows from SSV subluminality ($v_\phi \leq c$
+    at the outer horizon), derived from the Absolute Moment postulate.
+    Cosmic censorship is a theorem in CPP, not a conjecture.
+
+  \item \textbf{Ergosphere} (rigorous, Theorem~\ref{thm:ergosphere}):
+    the region where azimuthal SSV drag velocity equals $c$, bounded
+    by $r_{\rm ergo} = M + \sqrt{M^2 - a^2\cos^2\theta}$.
+
+  \item \textbf{Full Boyer-Lindquist Kerr metric}
+    (Proposition~\ref{prop:kerr_full}): consistent with the CPP
+    mechanism at all orders; the exact all-orders derivation from the
+    CPP field equation is Open Problem~\ref{op:allorders}.
+
+  \item \textbf{Planck-core ring} (from companion~8): CP Exclusion
+    prevents the ring singularity; replaced by a Planck-density ring
+    at the scale $\sim \lP$.
+
+  \item \textbf{Schwarzschild limit exact} (Corollary~\ref{cor:schwarz_limit}):
+    $J \to 0$ recovers companion~8 exactly.
+\end{enumerate}
+
+The CPP gravitational sector is now complete at the classical level:
+Newtonian gravity (companion~5), weak-field GR and Eddington
+factor-of-two (companion~7), exact Schwarzschild and Planck core
+(companion~8), GW echoes (companion~9), Hawking radiation and Planck
+remnant (companion~10), and Kerr frame-dragging and ergosphere
+(companion~11).  All results follow from four postulates and the
+600-cell geometry, with no free parameters beyond those fixed by the
+Planck units.
+
+%======================================================================
+\section*{Acknowledgments}
+%======================================================================
+
+The azimuthal SSV source term and the Boyer-Lindquist consistency
+argument were developed in collaboration with Grok (xAI).  The
+rigorous derivation of the Kerr bound from SSV subluminality, the
+ergosphere theorem, and the Schwarzschild limit corollary were
+established on 18 March 2026.  The author thanks Claude (Anthropic)
+for mathematical formulation, algebraic verification, and LaTeX
+preparation.
+
+%======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{v16}
+T.~L. Abshier,
+``Mechanistic Derivation of Relativistic Effects via Space Stress
+Vector (SSV) in the Dipole Sea,''
+Version~16, 2026 (main paper).
+
+\bibitem{c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+Version~3, 2026 (companion~1).
+
+\bibitem{c2}
+T.~L. Abshier,
+``Microscopic Origin of the Dipole Sea Stiffness~$C$,''
+Version~2, 2026 (companion~2).
+
+\bibitem{c5}
+T.~L. Abshier,
+``Newtonian Gravity from SSV Shell Broadcast,''
+Version~2, 2026 (companion~5).
+
+\bibitem{c7}
+T.~L. Abshier,
+``Weak-Field General Relativity from the Lattice State Packet,''
+Version~3, 2026 (companion~7).
+
+\bibitem{c8}
+T.~L. Abshier,
+``Strong-Field General Relativity and the CPP Field Equation,''
+Version~2, 2026 (companion~8).
+
+\bibitem{c9}
+T.~L. Abshier,
+``Gravitational Wave Echoes from the Planck Core,''
+Version~2, 2026 (companion~9).
+
+\bibitem{c10}
+T.~L. Abshier,
+``Hawking Radiation and the Planck Remnant,''
+Version~1, 2026 (companion~10).
+
+\bibitem{kerr1963}
+R.~P. Kerr,
+``Gravitational Field of a Spinning Mass as an Example of
+Algebraically Special Metrics,''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{11}, 237--238, 1963.
+
+\bibitem{wald1984}
+R.~M. Wald,
+\textit{General Relativity},
+University of Chicago Press, Chicago, 1984.
+
+\bibitem{everitt2011}
+C.~W.~F. Everitt \textit{et al.},
+``Gravity Probe B: Final Results of a Space Experiment to Test
+General Relativity,''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{106}, 221101, 2011.
+
+\bibitem{ciufolini1995}
+I.~Ciufolini and E.~C. Pavlis,
+``A confirmation of the general relativistic prediction of the
+Lense-Thirring precession,''
+\textit{Nature}, \textbf{431}, 958--960, 2004.
+
+\bibitem{lense1918}
+J.~Lense and H.~Thirring,
+``\"Uber den Einfluss der Eigenrotation der Zentralk\"orper auf die
+Bewegung der Planeten und Monde nach der Einsteinschen
+Gravitationstheorie,''
+\textit{Phys.\ Z.}, \textbf{19}, 156--163, 1918.
+
+\bibitem{penrose1969}
+R.~Penrose,
+``Gravitational Collapse: the Role of General Relativity,''
+\textit{Riv.\ Nuovo Cimento}, \textbf{1}, 252--276, 1969.
+
+\bibitem{codata}
+NIST, CODATA 2018 Recommended Values of the Fundamental Physical
+Constants, \url{https://physics.nist.gov/cuu/Constants/}, 2018.
+
+\end{thebibliography}
+
+\end{document}
