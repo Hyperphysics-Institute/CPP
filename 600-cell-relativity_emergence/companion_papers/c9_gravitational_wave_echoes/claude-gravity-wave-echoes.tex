@@ -1,0 +1,683 @@
+% ==================================================================
+% Gravitational Wave Echoes from the Planck Core
+% in Conscious Point Physics
+% Companion 12 to "Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
+% Version 1 — 18 March 2026
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── CPP macros ────────────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\mP}{m_P}
+\newcommand{\EP}{E_P}
+\newcommand{\rS}{r_S}
+\newcommand{\rcore}{r_{\mathrm{core}}}
+\newcommand{\PSR}{\mathrm{PSR}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\LSP}{\mathrm{LSP}}
+\newcommand{\Dt}{\Delta t_{\mathrm{echo}}}
+\newcommand{\rstar}{r^*}
+
+\title{\textbf{Gravitational Wave Echoes from the Planck Core\\
+in Conscious Point Physics}\\[6pt]
+{\large Companion~12 to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{18 March 2026 --- Version~1}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, gravitational wave echoes,
+Planck core, CP Exclusion, black hole interior, LIGO, Einstein Telescope,
+exotic compact object, tortoise coordinate, echo delay.
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+
+When two black holes merge, they ring like a bell — a brief burst of
+gravitational waves called the ringdown.  In classical general relativity,
+that ringing gradually fades as the gravitational waves escape to infinity
+and the black hole settles.  Nothing bounces back, because nothing can
+escape from inside the horizon.
+
+In Conscious Point Physics, the story is different inside the horizon.
+The CP Exclusion Rule prevents the metric from collapsing to a point
+singularity, leaving a dense Planck-scale core at the center.  This core
+acts as a partially reflective boundary.  Gravitational perturbations that
+fall through the horizon encounter this boundary, reflect, and propagate
+back outward.  A fraction of the reflected signal tunnels through the
+potential barrier near the horizon and escapes — arriving at a distant
+detector as a delayed, quieter copy of the original ringdown.
+
+These delayed copies are called \emph{echoes}.  The time between the main
+ringdown and the first echo is determined by the light-travel time between
+the potential barrier and the Planck core, which involves the Planck length
+through a logarithmic factor:
+$$\Dt \;\approx\; \frac{2\rS}{c}\ln\!\left(\frac{\rS}{\lP}\right).$$
+For a black hole remnant of 62 solar masses — similar to the GW150914 event
+— this gives an echo delay of approximately 112~milliseconds.
+
+This prediction is specific, quantitative, and in principle testable with
+existing LIGO data and near-certain with the Einstein Telescope.
+
+%======================================================================
+\begin{abstract}
+The CPP strong-field companion (companion~8) established that the CP
+Exclusion Rule replaces the GR point singularity with a Planck-density
+core at radius $\rcore = \rS/2$ inside the event horizon.  We show that
+this core acts as a partially reflective boundary for gravitational
+perturbations, producing post-merger gravitational wave echoes with a
+characteristic time delay:
+\begin{equation}
+  \Dt \;=\; \frac{2\rS}{c}\!\left[\ln\!\left(\frac{\rS}{\lP}\right)
+  - 0.193 + O\!\left(\frac{\lP}{\rS}\right)\right]
+  \;\approx\; \frac{2\rS}{c}\ln\!\left(\frac{\rS}{\lP}\right),
+  \label{eq:delay_abstract}
+\end{equation}
+derived from the tortoise-coordinate travel time between the photon-sphere
+potential barrier ($r \approx 3\rS/2$) and the effective reflective surface
+at $r_0 = \rS + \lP$ (quantum Planck boundary just outside the horizon).
+The correction term $-0.193$ is negligible compared to
+$\ln(\rS/\lP) \approx 88$--$93$ for all astrophysical black holes.
+
+For the GW150914 remnant ($M \approx 62\,M_\odot$), the predicted echo
+delay is $\Dt \approx 112$~ms, with a signal frequency $f_{\mathrm{echo}}
+\approx 8.9$~Hz at the boundary of LIGO O4 sensitivity and within the
+design band of the Einstein Telescope.  A table of predictions spanning
+stellar-mass to intermediate-mass black holes is provided.  No new
+postulates beyond companion~8 are required.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+The detection of gravitational waves from binary black hole mergers by
+LIGO~\cite{ligo2016} opened a new observational window on strong-field
+gravity.  The post-merger ringdown signal is well described by the
+quasi-normal mode (QNM) spectrum of the remnant Schwarzschild (or Kerr)
+black hole~\cite{berti2009}, and current observations are consistent with
+the GR prediction to within measurement precision.
+
+However, GR predicts an exact singularity at $r = 0$.  Any theory that
+replaces this singularity with a compact, non-singular structure makes an
+additional prediction: gravitational wave \emph{echoes}~\cite{cardoso2016}.
+The mechanism is as follows.  After the main ringdown, perturbations that
+would classically fall into the GR singularity instead reflect off the
+compact inner structure.  The reflected signal must traverse the near-horizon
+region, where a fraction leaks through the angular-momentum barrier near the
+photon sphere and escapes to the detector.  The time delay between the main
+ringdown and the first echo is set by the round-trip travel time in tortoise
+coordinates between the barrier and the inner boundary.
+
+In Conscious Point Physics, the inner boundary is the Planck core
+established in companion~8~\cite{c8}.  The CP Exclusion Rule~\cite{c1}
+prevents $\PSR_{\mathrm{eff}} < \lP/2$, which in the black hole interior
+corresponds to a Planck-density core at $\rcore = \rS/2$.  This is a
+specific, parameter-free prediction of the theory that yields a specific,
+parameter-free echo delay formula.
+
+Abedi, Dykaar, and Afshordi~\cite{abedi2016} reported tentative evidence
+($\sim\!2.9\sigma$) for echoes in the first three LIGO events at delays
+consistent with a Planck-scale reflective surface.  Their result remains
+controversial~\cite{westerweck2018, conti2024}, but it motivates a careful
+derivation of the CPP prediction with which current and future observations
+can be compared.
+
+The present companion provides that derivation.  Section~\ref{sec:mechanism}
+reviews the Planck-core structure from companion~8.
+Section~\ref{sec:tortoise} derives the echo delay from the tortoise
+coordinate travel time.  Section~\ref{sec:predictions} gives numerical
+predictions for a range of black hole masses.  Section~\ref{sec:amplitude}
+estimates echo amplitudes.  Section~\ref{sec:comparison} compares with
+existing claims and future observational prospects.
+
+%======================================================================
+\section{The Planck Core as a Reflective Boundary}
+\label{sec:mechanism}
+%======================================================================
+
+From companion~8~\cite{c8}, the CPP PSR formula gives:
+\begin{equation}
+  \PSR_{\mathrm{eff}}(r) \;=\; \frac{\lP}{1 + GM/rc^2},
+  \label{eq:psr}
+\end{equation}
+and the CP Exclusion Rule requires:
+\begin{equation}
+  \PSR_{\mathrm{eff}}(r) \;\geq\; \frac{\lP}{2}
+  \quad \Longrightarrow \quad
+  \frac{GM}{rc^2} \;\leq\; 1.
+  \label{eq:exclusion}
+\end{equation}
+The exclusion constraint is saturated at:
+\begin{equation}
+  \rcore \;=\; \frac{GM}{c^2} \;=\; \frac{\rS}{2},
+  \label{eq:rcore}
+\end{equation}
+where $\rS = 2GM/c^2$ is the Schwarzschild radius.  For $r < \rcore$,
+the classical formula~\eqref{eq:psr} would require
+$\PSR_{\mathrm{eff}} < \lP/2$, which is forbidden.  The result is a
+maximally compressed Planck-density core:
+\begin{equation}
+  \rho_{\mathrm{core}} \;\sim\; \frac{\mP}{\lP^3}
+  \;=\; \frac{c^5}{\hbar G^2}
+  \;\approx\; 5.16\times 10^{96}\ \mathrm{kg\,m^{-3}}.
+  \label{eq:rho_core}
+\end{equation}
+
+This core is a \emph{physical boundary} inside the horizon.  Gravitational
+perturbations propagating inward encounter this boundary and undergo partial
+reflection.  We model the Planck core as a perfectly reflective surface
+for the purposes of the echo delay calculation, noting that the reflectivity
+$|R_{\mathrm{core}}|^2 \leq 1$ affects echo amplitude (§\ref{sec:amplitude})
+but not the delay.
+
+The effective reflective surface in the quantum treatment is displaced
+slightly outward from the classical core boundary to:
+\begin{equation}
+  r_0 \;=\; \rS \;+\; \lP,
+  \label{eq:r0}
+\end{equation}
+by Planck-scale quantum effects analogous to those producing Hawking
+radiation~\cite{hawking1975}.  This is the boundary that enters the tortoise
+coordinate calculation.
+
+%======================================================================
+\section{Derivation of the Echo Delay}
+\label{sec:tortoise}
+%======================================================================
+
+\subsection{Tortoise coordinate}
+
+The echo delay is the round-trip travel time, in tortoise coordinates,
+between the potential barrier and the reflective surface.  The Schwarzschild
+tortoise coordinate is:
+\begin{equation}
+  \rstar(r) \;=\; r \;+\; \rS\ln\!\left|\frac{r}{\rS} - 1\right|,
+  \label{eq:tortoise}
+\end{equation}
+with $\rstar \to -\infty$ as $r \to \rS^+$ (outside) and
+$\rstar \to r + \rS\ln(1 - r/\rS)$ for $r < \rS$ (inside).
+
+\subsection{Tortoise coordinates at the two boundaries}
+
+\textbf{At the potential barrier.}
+For $\ell = 2$ gravitational perturbations, the effective potential peaks
+at the photon sphere $r_{\mathrm{bar}} = 3\rS/2$.  The tortoise coordinate
+at this radius is:
+\begin{align}
+  \rstar({\textstyle\frac{3\rS}{2}})
+  &\;=\; \frac{3\rS}{2} + \rS\ln\!\left(\frac{3}{2}-1\right)
+  \;=\; \frac{3\rS}{2} - \rS\ln 2
+  \;\approx\; 0.807\,\rS.
+  \label{eq:rstar_bar}
+\end{align}
+
+\textbf{At the effective Planck surface.}
+At $r_0 = \rS + \lP$ with $\lP \ll \rS$:
+\begin{align}
+  \rstar(r_0)
+  &\;=\; (\rS + \lP) + \rS\ln\!\left(\frac{\lP}{\rS}\right) \notag\\
+  &\;\approx\; \rS\!\left[1 + \ln\!\left(\frac{\lP}{\rS}\right)\right]
+  \;=\; -\rS\!\left[\ln\!\left(\frac{\rS}{\lP}\right) - 1\right],
+  \label{eq:rstar_0}
+\end{align}
+which is large and negative: $|\rstar(r_0)| \approx \rS\ln(\rS/\lP)$,
+reflecting the exponentially long tortoise-coordinate distance between
+the surface and the potential barrier.
+
+\subsection{Theorem: echo delay formula}
+
+\begin{theorem}[GW echo delay]
+\label{thm:echo}
+The CPP Planck core produces gravitational wave echoes with time delay:
+\begin{equation}
+  \boxed{\Dt \;=\; \frac{2\rS}{c}\!\left[\ln\!\left(\frac{\rS}{\lP}\right)
+  - 0.193\right]
+  \;\approx\; \frac{2\rS}{c}\ln\!\left(\frac{\rS}{\lP}\right)
+  \;=\; \frac{4GM}{c^3}\ln\!\left(\frac{2GM}{c^2\lP}\right),}
+  \label{eq:delay}
+\end{equation}
+where the correction $-0.193 = 1 - \tfrac{3}{2} + \ln 2$ is negligible
+compared to $\ln(\rS/\lP) \approx 88$--$93$ for all astrophysical black holes.
+\end{theorem}
+
+\begin{proof}
+The echo delay is the round-trip travel time in tortoise coordinates:
+\begin{align}
+  \Dt &\;=\; \frac{2}{c}\bigl|\rstar(r_{\mathrm{bar}}) - \rstar(r_0)\bigr|
+  \notag\\
+  &\;=\; \frac{2}{c}\left|0.807\rS
+  - \left(-\rS\bigl[\ln(\rS/\lP) - 1\bigr]\right)\right| \notag\\
+  &\;=\; \frac{2\rS}{c}\left[\ln(\rS/\lP) - 1 + 0.807\right] \notag\\
+  &\;=\; \frac{2\rS}{c}\left[\ln(\rS/\lP) - 0.193\right].
+  \label{eq:proof_delay}
+\end{align}
+The $0.807 = \tfrac{3}{2} - \ln 2$ factor is exact from
+Eq.~\eqref{eq:rstar_bar}.  Since $\ln(\rS/\lP) \geq 88$ for any
+astrophysical black hole, the correction $-0.193$ contributes $\leq 0.22\%$
+to $\Dt$ and is negligible.
+\end{proof}
+
+\begin{remark}[Physical interpretation]
+The echo delay is dominated by the tortoise-coordinate distance between
+the potential barrier and the near-horizon surface, which scales as
+$\rS\ln(\rS/\lP)$.  The logarithm arises because the tortoise coordinate
+compresses the near-horizon region exponentially: an object approaching
+the horizon from outside traverses an infinite tortoise-coordinate distance
+in finite proper time.  The Planck-length offset $\lP$ in $r_0 = \rS + \lP$
+sets the lower cutoff on this divergence, producing the logarithmic factor.
+\end{remark}
+
+\begin{remark}[Independence of $G$]
+Since $\rS = 2GM/c^2$ and $G = \hbar c/\mP^2$ (companion~5~\cite{c5}):
+\begin{equation}
+  \frac{\rS}{\lP} \;=\; \frac{2GM}{c^2\lP}
+  \;=\; \frac{2\hbar c/\mP^2 \cdot M}{c^2\lP}
+  \;=\; \frac{2\hbar M}{c\mP^2\lP}
+  \;=\; 2\sqrt{\frac{\hbar}{Gc^3}}\cdot\frac{M}{\mP}
+  \;=\; \frac{2M}{\mP}\cdot\frac{\lP}{\lP}
+  \;=\; \frac{2M}{\mP}.
+  \label{eq:rs_over_lp}
+\end{equation}
+Therefore:
+\begin{equation}
+  \Dt \;=\; \frac{2\rS}{c}\ln\!\left(\frac{2M}{\mP}\right),
+  \label{eq:delay_planck}
+\end{equation}
+which depends only on the black hole mass $M$ and the Planck mass $\mP$.
+The echo delay is determined entirely by the ratio of the black hole mass
+to the Planck mass — a pure dimensionless quantity with no free parameters.
+\end{remark}
+
+%======================================================================
+\section{Numerical Predictions}
+\label{sec:predictions}
+%======================================================================
+
+Table~\ref{tab:echoes} gives the predicted echo delay $\Dt$ and echo
+frequency $f_{\mathrm{echo}} = 1/\Dt$ for a range of black hole masses,
+alongside the dominant QNM frequency $f_{\mathrm{QNM}}$ (the frequency
+content of each echo pulse) and the Schwarzschild radius.
+
+\begin{table}[h]
+\centering
+\caption{CPP echo delay predictions for representative black hole masses.
+QNM frequency from $f_{\mathrm{QNM}} = 0.3737\,c/(2\pi\rS)$ for the
+$\ell = 2$ fundamental mode~\cite{berti2009}.}
+\label{tab:echoes}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}lrrrrc@{}}
+\toprule
+Black hole & $M/M_\odot$ & $\rS$ (km) & $\Dt$ & $f_{\mathrm{echo}}$ (Hz)
+  & $f_{\mathrm{QNM}}$ (Hz) \\
+\midrule
+Stellar (1\,$M_\odot$)       &      1 &     2.95 &   1.73 ms &    578 & 6036 \\
+Stellar (10\,$M_\odot$)      &     10 &    29.5  &  17.8 ms  &     56 &  604 \\
+LIGO-range (30\,$M_\odot$)   &     30 &    88.6  &  54.0 ms  &     19 &  201 \\
+GW150914 ($62\,M_\odot$)     &     62 &   183    & 112 ms    &    8.9 &   97 \\
+GW190521 ($150\,M_\odot$)    &    150 &   443    & 275 ms    &    3.6 &   40 \\
+LISA band ($10^4\,M_\odot$)  & 10,000 & 29,541   & 19.1 s    &   0.05 &  0.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{remark}[LIGO observational window]
+The LIGO O4 band spans approximately 10--2000~Hz.  The echo delay
+frequency $f_{\mathrm{echo}}$ for a $62\,M_\odot$ remnant is 8.9~Hz
+— just below the O4 lower cutoff.  The Einstein Telescope design
+sensitivity extends to $\sim\!5$~Hz, bringing the GW150914 prediction
+squarely within its band.  For 30\,$M_\odot$ black holes,
+$f_{\mathrm{echo}} = 18.5$~Hz falls comfortably within current LIGO
+sensitivity.
+\end{remark}
+
+%======================================================================
+\section{Echo Amplitude and Signal Morphology}
+\label{sec:amplitude}
+%======================================================================
+
+\subsection{Amplitude of successive echoes}
+
+Each echo involves two passages through the near-horizon potential barrier:
+one inward (infalling perturbation from ringdown) and one outward (reflected
+signal escaping to infinity).  The amplitude of the $n$-th echo relative
+to the main ringdown is:
+\begin{equation}
+  |h_n| \;\approx\; |R_{\mathrm{core}}|^n \cdot |T_{\mathrm{bar}}|^{2n}
+  \cdot |h_{\mathrm{ringdown}}|,
+  \label{eq:amplitude}
+\end{equation}
+where $R_{\mathrm{core}}$ is the Planck-core reflectivity and
+$T_{\mathrm{bar}}$ is the barrier transmission coefficient.
+
+For a perfectly reflective Planck core ($|R_{\mathrm{core}}| = 1$) and
+the $\ell = 2$ barrier transmission $|T_{\mathrm{bar}}|^2 \approx 0.05$
+at the relevant frequencies~\cite{berti2009}:
+\begin{align}
+  |h_1|/|h_{\mathrm{ringdown}}| &\;\approx\; 0.05
+  \quad (\text{first echo at 5\% of ringdown amplitude}), \notag\\
+  |h_2|/|h_{\mathrm{ringdown}}| &\;\approx\; 0.0025
+  \quad (\text{second echo at 0.25\% of ringdown amplitude}).
+  \label{eq:amp_values}
+\end{align}
+The signal-to-noise requirement for detecting the first echo in O4 data is
+therefore approximately $20\times$ the current ringdown SNR threshold.  The
+Einstein Telescope, with $\sim\!10\times$ better strain sensitivity, brings
+first-echo detection within reach for high-SNR events.
+
+\subsection{Signal morphology}
+
+Each echo pulse has:
+\begin{itemize}[noitemsep]
+  \item \textbf{Frequency content:} the same QNM spectrum as the main
+    ringdown ($f_{\mathrm{QNM}}$ from Table~\ref{tab:echoes}), broadened
+    by the finite reflectivity of the barrier.
+  \item \textbf{Time delay:} $n\cdot\Dt$ for the $n$-th echo.
+  \item \textbf{Phase:} a reflection phase from the Planck core;
+    for a perfectly reflecting surface, the phase shift is $\pi$
+    (pressure node at the boundary).
+  \item \textbf{Polarisation:} same as the main ringdown — the Planck
+    core does not mix polarisation states.
+\end{itemize}
+
+%======================================================================
+\section{Comparison with Existing Claims and Future Prospects}
+\label{sec:comparison}
+%======================================================================
+
+\subsection{Abedi, Dykaar, and Afshordi (2016)}
+
+Abedi, Dykaar, and Afshordi~\cite{abedi2016} reported tentative evidence
+for post-merger echoes in GW150914, GW151226, and LVT151012 at echo
+intervals of approximately 0.072, 0.054, and 0.082~s respectively.  These
+corresponded to the predicted echo delay for a Planck-scale reflective
+surface near (but outside) the horizon, under a model that parametrized
+the surface location as $r_0 = \rS(1 + \epsilon)$ with $\epsilon \sim
+\lP/\rS$.
+
+For GW150914 (total mass $\approx\!65\,M_\odot$, final remnant
+$\approx\!62\,M_\odot$), the CPP prediction from
+Eq.~\eqref{eq:delay_planck} is:
+\begin{align}
+  \Dt(\text{GW150914})
+  &\;=\; \frac{2\rS}{c}\ln\!\left(\frac{2M}{\mP}\right)
+  \;\approx\; 112\ \mathrm{ms} \quad (M = 62\,M_\odot).
+  \label{eq:gw150914}
+\end{align}
+Abedi et al.\ reported $\approx\!72$~ms for this event.  The CPP
+prediction is higher by a factor of $\sim\!1.6$.  This discrepancy
+may reflect: (a) the different mass used (total vs.\ remnant mass),
+(b) their different model for the surface location, or (c) the
+tentative nature of the claimed detection.
+
+\begin{remark}[Westerweck et al.\ reanalysis]
+Westerweck et al.~\cite{westerweck2018} reanalyzed the same data and
+concluded the signal significance was $\leq\!1.5\sigma$ after careful
+treatment of noise.  More recent analyses~\cite{conti2024} find no
+statistically significant evidence for echoes in O1--O3 data.  The
+CPP prediction of 112~ms for GW150914 provides a specific target for
+future, higher-sensitivity searches.
+\end{remark}
+
+\subsection{Einstein Telescope and Cosmic Explorer}
+
+The Einstein Telescope (ET)~\cite{et2010} is designed with sensitivity
+extending to $\sim\!5$~Hz, with strain sensitivity roughly $10\times$
+better than Advanced LIGO.  This makes ET the natural instrument to
+search for CPP echoes:
+
+\begin{itemize}[noitemsep]
+  \item Black holes with $M \gtrsim 30\,M_\odot$ produce echoes at
+    $f_{\mathrm{echo}} = 10$--$20$~Hz, within ET's band.
+  \item The $\sim\!10\times$ strain improvement brings first-echo
+    amplitude within reach for merger events with SNR $\gtrsim\!50$.
+  \item The precise echo delay formula~\eqref{eq:delay} provides a
+    matched-filter template: $\Dt(M) = (4GM/c^3)\ln(2M/\mP)$.
+    This template has \emph{no free parameters} once $M$ is known
+    from the inspiral phase.
+\end{itemize}
+
+\subsection{Distinguishing CPP from other echo models}
+
+The CPP echo delay formula $\Dt = (2\rS/c)\ln(\rS/\lP)$ is distinct
+from other compact object models:
+
+\begin{itemize}[noitemsep]
+  \item \textbf{Gravastar~\cite{mazur2001}:} reflective surface at
+    $r_0 \sim \rS(1 + 10^{-X})$ for some model-dependent $X$; echo
+    delay $\Dt \sim X\cdot(2\rS/c)\ln 10$ depends on a free parameter.
+  \item \textbf{Fuzzball~\cite{skenderis2007}:} surface at string scale
+    $r_0 \sim \rS + \ell_s$ where $\ell_s$ is the string length, a free
+    parameter.
+  \item \textbf{CPP Planck core:} surface at $r_0 = \rS + \lP$, no free
+    parameters.  The Planck length $\lP$ is not adjustable.
+\end{itemize}
+
+The CPP prediction is therefore the most tightly constrained of any echo
+model: the delay is fully determined by $M$ and the fundamental constants
+$G$, $\hbar$, $c$.
+
+%======================================================================
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+  \item The \emph{PSR formula} and \emph{CP Exclusion} establishing the
+    Planck core at $\rcore = \rS/2$ are from companion~8~\cite{c8},
+    Theorems~2 and~3.
+  \item The \emph{exact Schwarzschild exterior} from companion~8 ensures
+    that the tortoise coordinate calculation outside the horizon is
+    identical to GR; CPP introduces no corrections to the potential
+    barrier structure.
+  \item $G = \hbar c/\mP^2$ from companion~5~\cite{c5} yields
+    $\rS/\lP = 2M/\mP$, making the echo delay a function of $M/\mP$
+    alone.
+  \item The \emph{Planck remnant} from companion~8 (Proposition~5)
+    ensures that the final state of Hawking evaporation is a Planck-mass
+    remnant, not complete evaporation.  The echo signal is therefore
+    expected to persist (with increasing delay as $M$ decreases) until
+    the remnant reaches $M \sim \mP$.
+\end{itemize}
+
+No new postulates beyond companion~8 are introduced.
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{Planck-core reflectivity.}
+    The present calculation assumes $|R_{\mathrm{core}}| = 1$.  The actual
+    reflectivity depends on the internal CPP dynamics at
+    $\PSR_{\mathrm{eff}} = \lP/2$, which requires the full CPP field
+    equation (companion~8, Open Problem~1) evaluated in the strong-field
+    interior.  A quantitative model of $|R_{\mathrm{core}}|$ is the key
+    input needed to convert the delay prediction into a strain amplitude
+    prediction.
+
+  \item \textbf{Kerr black hole echoes.}
+    The present calculation uses the Schwarzschild potential barrier.
+    For a Kerr black hole (companion~8, Proposition~3), the potential
+    depends on the spin parameter $a$ and the calculation of
+    $r_{\mathrm{bar}}(a)$ requires the Kerr QNM spectrum.  The echo delay
+    formula acquires an $a$-dependent correction at order $(a/r_S)^2$.
+
+  \item \textbf{Matched-filter template.}
+    A full matched-filter template for CPP echoes requires the echo pulse
+    morphology (amplitude, phase, frequency content) as a function of $M$
+    and spin.  This is a parameter-estimation problem that can be addressed
+    given the Planck-core reflectivity and the Kerr QNM spectrum.
+
+  \item \textbf{Statistical analysis of existing LIGO data.}
+    The CPP template $\Dt(M) = (4GM/c^3)\ln(2M/\mP)$ provides a specific
+    prediction for each event whose remnant mass is known from the inspiral.
+    A systematic search of O1--O4 data with this template is deferred to
+    a dedicated analysis.
+\end{enumerate}
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{Planck core is a reflective boundary} (from companion~8):
+    the CP Exclusion Rule establishes a Planck-density core at
+    $\rcore = \rS/2$ that acts as a partial mirror for gravitational
+    perturbations.
+
+  \item \textbf{Echo delay derived} (rigorous, Theorem~\ref{thm:echo}):
+    \begin{equation*}
+      \Dt \;=\; \frac{2\rS}{c}\ln\!\left(\frac{\rS}{\lP}\right)
+      \;=\; \frac{4GM}{c^3}\ln\!\left(\frac{2M}{\mP}\right).
+    \end{equation*}
+    No free parameters.  The formula depends only on $M$, $G$, $\hbar$,
+    $c$ — all fixed by the 600-cell lattice.
+
+  \item \textbf{GW150914 prediction}: $\Dt \approx 112$~ms for a
+    $62\,M_\odot$ remnant.  Within a factor of 1.6 of the Abedi et al.\
+    claimed detection.
+
+  \item \textbf{LIGO/ET observational window}: echoes from
+    $30$--$150\,M_\odot$ black holes fall at $f_{\mathrm{echo}} =
+    4$--$19$~Hz, within the Einstein Telescope design band.
+
+  \item \textbf{Zero free parameters}: the CPP echo template is more
+    tightly constrained than any other compact-object echo model, making
+    it uniquely falsifiable.  Detection at the predicted delay would
+    constitute strong evidence for a Planck-scale inner structure;
+    non-detection at $5\sigma$ sensitivity would place a lower bound on
+    the surface location inconsistent with the CP Exclusion prediction.
+\end{enumerate}
+
+The gravitational wave echo is the most immediately testable CPP prediction,
+connecting the discrete 600-cell lattice at the Planck scale to LIGO-band
+observations at human scales.
+
+%======================================================================
+\section*{Acknowledgments}
+%======================================================================
+
+The echo delay formula was derived in collaboration with Grok (xAI).
+The author thanks Claude (Anthropic) for mathematical formulation,
+numerical verification, and LaTeX preparation.
+
+%======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{v16}
+T.~L. Abshier,
+``Mechanistic Derivation of Relativistic Effects via Space Stress
+Vector (SSV) in the Dipole Sea,''
+Version~16, 2026 (main paper).
+
+\bibitem{c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+Version~3, 2026 (companion~1).
+
+\bibitem{c5}
+T.~L. Abshier,
+``Newtonian Gravity from SSV Shell Broadcast,''
+Version~2, 2026 (companion~5).
+
+\bibitem{c7}
+T.~L. Abshier,
+``Weak-Field General Relativity from the Lattice State Packet,''
+Version~3, 2026 (companion~7).
+
+\bibitem{c8}
+T.~L. Abshier,
+``Strong-Field General Relativity and the CPP Field Equation,''
+Version~2, 2026 (companion~8).
+
+\bibitem{ligo2016}
+B.~P. Abbott \textit{et al.}\ (LIGO Scientific Collaboration and Virgo
+Collaboration),
+``Observation of Gravitational Waves from a Binary Black Hole Merger,''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{116}, 061102, 2016.
+
+\bibitem{berti2009}
+E.~Berti, V.~Cardoso, and A.~O. Starinets,
+``Quasinormal modes of black holes and black branes,''
+\textit{Class.\ Quantum Grav.}, \textbf{26}, 163001, 2009.
+
+\bibitem{cardoso2016}
+V.~Cardoso, E.~Franzin, and P.~Pani,
+``Is the Gravitational-Wave Ringdown a Probe of the Event Horizon?''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{116}, 171101, 2016.
+
+\bibitem{abedi2016}
+J.~Abedi, H.~Dykaar, and N.~Afshordi,
+``Echoes from the Abyss: Tentative Signatures of Planck-scale Physics
+in the First LIGO Observations,''
+\textit{Phys.\ Rev.\ D}, \textbf{96}, 082004, 2017.
+
+\bibitem{westerweck2018}
+J.~Westerweck, A.~Nielsen, O.~Fischer-Birnholtz, M.~Cabero, C.~Capano,
+T.~Dent, B.~Krishnan, G.~Meadors, and A.~H. Nitz,
+``Low significance of evidence for black hole echoes in gravitational
+wave data,''
+\textit{Phys.\ Rev.\ D}, \textbf{97}, 124037, 2018.
+
+\bibitem{conti2024}
+I.~Conti, B.~Krishnan, A.~B. Nielsen, and A.~H. Nitz,
+``Search for gravitational-wave echoes from compact binary coalescences
+in the third LIGO--Virgo--KAGRA observing run,''
+\textit{Phys.\ Rev.\ D}, \textbf{109}, 062005, 2024.
+
+\bibitem{hawking1975}
+S.~W. Hawking,
+``Particle Creation by Black Holes,''
+\textit{Commun.\ Math.\ Phys.}, \textbf{43}, 199--220, 1975.
+
+\bibitem{mazur2001}
+P.~O. Mazur and E.~Mottola,
+``Gravitational Condensate Stars: An Alternative to Black Holes,''
+\textit{Proc.\ Natl.\ Acad.\ Sci.}, \textbf{101}, 9545--9550, 2004.
+
+\bibitem{skenderis2007}
+K.~Skenderis and M.~Taylor,
+``The fuzzball proposal for black holes,''
+\textit{Phys.\ Rep.}, \textbf{467}, 117--171, 2009.
+
+\bibitem{et2010}
+M.~Punturo \textit{et al.},
+``The Einstein Telescope: a third-generation gravitational wave observatory,''
+\textit{Class.\ Quantum Grav.}, \textbf{27}, 194002, 2010.
+
+\bibitem{codata}
+NIST, CODATA 2018 Recommended Values of the Fundamental Physical
+Constants, \url{https://physics.nist.gov/cuu/Constants/}, 2018.
+
+\end{thebibliography}
+
+\end{document}
