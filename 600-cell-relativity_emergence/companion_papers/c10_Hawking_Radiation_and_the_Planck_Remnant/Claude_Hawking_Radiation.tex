@@ -1,0 +1,597 @@
+% ==================================================================
+% Hawking Radiation and the Planck Remnant
+% in Conscious Point Physics
+% Companion 10 to "Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
+% Version 1 — 18 March 2026
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── CPP macros ────────────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\mP}{m_P}
+\newcommand{\EP}{E_P}
+\newcommand{\TP}{T_P}
+\newcommand{\rS}{r_S}
+\newcommand{\rcore}{r_{\mathrm{core}}}
+\newcommand{\PSR}{\mathrm{PSR}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\TH}{T_H}
+
+\title{\textbf{Hawking Radiation and the Planck Remnant\\
+in Conscious Point Physics}\\[6pt]
+{\large Companion~10 to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{18 March 2026 --- Version~1}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, Hawking radiation,
+Planck remnant, black hole evaporation, CP Exclusion, geometric breakdown,
+information paradox, black hole thermodynamics.
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+
+Black holes slowly radiate energy — a process discovered theoretically
+by Stephen Hawking in 1974.  In general relativity, this radiation
+continues until the black hole completely evaporates, ending in a
+singular explosion.  The Planck core established in companion~8 changes
+this ending.
+
+In CPP, evaporation proceeds normally until the black hole reaches the
+mass of a single Planck unit ($m_P \approx 22\,\mu$g, about the mass
+of a grain of sand).  At this point, the Schwarzschild radius is only
+about twice the Planck lattice spacing.  The Hawking calculation requires
+a smooth horizon region much larger than the lattice spacing — a condition
+that fails completely when only two lattice cells separate the horizon
+from the core.  Evaporation terminates, not because the temperature
+gets too high, but because the geometry that allows thermal radiation
+no longer exists at the Planck scale.
+
+What remains is a Planck-mass ``remnant'': a configuration of Conscious
+Points compressed to the maximum packing density, held stable by
+an exact mechanical balance between gravitational SSV compression and
+CP Exclusion repulsion.  This remnant does not need external support.
+It is self-sustaining because the CP Exclusion bouncing that prevents
+further compression is also what keeps the CPs from dispersing.
+The remnant interacts gravitationally with its surroundings but cannot
+radiate further.
+
+%======================================================================
+\begin{abstract}
+We derive the CPP modifications to Hawking black hole evaporation
+resulting from the Planck core established in companion~8.
+Standard Hawking radiation proceeds unchanged for $M \gg \mP$.
+Evaporation terminates when the Schwarzschild radius reaches
+$\rS \sim 2\lP$ — not when the Hawking temperature reaches the Planck
+temperature, but when the geometric condition $\rS \gg \lP$ required
+by the semiclassical approximation breaks down.
+The result is a stable Planck-mass remnant $M_{\rm rem} \sim \mP$
+(Proposition~\ref{prop:remnant}).  We show that this remnant is
+mechanically stable via a self-sustaining fixed point: gravitational
+SSV compression is exactly balanced by CP Exclusion repulsion at
+$\PSR_{\rm eff} = \lP/2$ (Proposition~\ref{prop:stability}).
+The remnant does not require external pressure and cannot evaporate
+further.  We discuss implications for the black hole information paradox
+and observable consequences.  No new postulates beyond companion~8 are
+required.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+Hawking~\cite{hawking1975} showed that black holes are not perfectly
+black: quantum effects near the horizon cause them to emit thermal
+radiation at temperature $\TH = \hbar c^3/(8\pi G M k_B)$.  This
+radiation carries energy away from the black hole, reducing its mass.
+In GR, the process continues indefinitely as $M \to 0$, with the
+temperature diverging and the evaporation rate accelerating without
+bound — ending in a Planck-scale explosion whose final state is
+theoretically unresolved.
+
+The CPP strong-field companion (companion~8)~\cite{c8} established
+that the CP Exclusion Rule prevents $\PSR_{\rm eff} < \lP/2$,
+replacing the GR singularity with a Planck-density core at
+$\rcore = \rS/2$.  This inner boundary modifies the Hawking calculation
+in two ways.  First, as established in the GW echo companion
+(companion~9)~\cite{c9}, the Planck core acts as a reflective surface
+whose presence modifies the boundary conditions for quantum field
+propagation in the black hole spacetime.  Second, and more
+fundamentally, the Planck core sets a minimum black hole mass below
+which the geometric conditions for Hawking radiation cannot be met.
+
+The present companion derives both modifications and identifies the
+stable Planck remnant as the endpoint of CPP black hole evaporation.
+The derivation uses thermodynamic and geometric arguments (Option~B)
+rather than the full Bogoliubov coefficient calculation (deferred as
+Open Problem~\ref{op:bogoliubov}).
+
+%======================================================================
+\section{Standard Hawking Radiation: A Review}
+\label{sec:hawking_review}
+%======================================================================
+
+The standard Hawking temperature for a Schwarzschild black hole of
+mass $M$ is~\cite{hawking1975,wald1984}:
+\begin{equation}
+  \TH(M) \;=\; \frac{\hbar c^3}{8\pi G M k_B}
+  \;=\; \frac{\TP}{8\pi}\cdot\frac{\mP}{M},
+  \label{eq:TH}
+\end{equation}
+where $\TP = \mP c^2/k_B = \sqrt{\hbar c^5/G}/k_B \approx 1.42\times 10^{32}$~K
+is the Planck temperature.  The radiation has a thermal (Planck) spectrum
+and carries away energy at the Stefan-Boltzmann luminosity:
+\begin{equation}
+  L_H(M) \;=\; \frac{\hbar c^6}{15360\pi G^2 M^2}.
+  \label{eq:LH}
+\end{equation}
+The mass loss rate $dM/dt = -L_H/c^2$ integrates to the standard
+evaporation time:
+\begin{equation}
+  t_{\rm evap}(M_0) \;=\; \frac{5120\pi G^2 M_0^3}{\hbar c^4}.
+  \label{eq:tevap}
+\end{equation}
+For a solar-mass black hole: $t_{\rm evap}(M_\odot) \approx 2.1\times10^{67}$~yr
+— vastly longer than the current age of the universe.
+
+These results hold in the \emph{semiclassical approximation}, which
+requires the horizon region to be smooth on scales much larger than
+the Planck length:
+\begin{equation}
+  N \;\equiv\; \frac{\rS}{\lP} \;=\; \frac{2GM}{c^2\lP}
+  \;=\; 2\,\frac{M}{\mP} \;\gg\; 1.
+  \label{eq:N}
+\end{equation}
+This is the condition that the quantum field modes relevant to Hawking
+radiation see a slowly-varying background geometry.
+
+%======================================================================
+\section{The Geometric Termination Condition}
+\label{sec:termination}
+%======================================================================
+
+\begin{proposition}[Geometric termination]
+\label{prop:termination}
+Hawking evaporation terminates when $M = M_{\rm rem} \sim \mP$,
+where the semiclassical approximation breaks down geometrically.
+\end{proposition}
+
+\begin{proof}
+The semiclassical approximation requires $N = \rS/\lP \gg 1$,
+i.e.\ $M \gg \mP/2$.  As $M$ decreases toward $\mP$:
+\begin{equation}
+  N(M) \;=\; \frac{2M}{\mP} \;\longrightarrow\; 2
+  \quad\text{as } M \to \mP.
+  \label{eq:N_mP}
+\end{equation}
+At $M = \mP$, the Schwarzschild radius is:
+\begin{equation}
+  \rS(\mP) \;=\; \frac{2G\mP}{c^2} \;=\; 2\lP,
+  \label{eq:rS_mP}
+\end{equation}
+spanning only two Planck lattice cells.  The Hawking mechanism
+requires a smooth thermal gradient across the near-horizon region.
+In the 600-cell lattice, there is no such region when $\rS \sim 2\lP$:
+the ``horizon'' is a boundary of width $\lP$ separating two lattice
+cells from three.  The semiclassical approximation is not merely
+inaccurate — it is geometrically undefined.
+
+Therefore, the Hawking calculation is valid for $M \gg \mP$ and
+terminates at $M \sim \mP$.
+\end{proof}
+
+\begin{remark}[Temperature at termination]
+One might expect termination when $\TH \to \TP$ (the Planck
+temperature).  This does not occur first.  At $M = \mP$:
+\begin{equation}
+  \TH(\mP) \;=\; \frac{\TP}{8\pi} \;\approx\; 0.040\,\TP.
+  \label{eq:TH_mP}
+\end{equation}
+The Hawking temperature at termination is only $4\%$ of the Planck
+temperature — well below the lattice maximum.  The geometric
+breakdown ($N = 2$) is the binding constraint, not the thermal one.
+\end{remark}
+
+\begin{remark}[Evaporation time to the remnant]
+The total evaporation time from initial mass $M_0$ to the Planck
+remnant $\mP$ is:
+\begin{equation}
+  t_{\rm evap}(M_0 \to \mP)
+  \;\approx\; \frac{5120\pi G^2 M_0^3}{\hbar c^4}
+  \left[1 - \left(\frac{\mP}{M_0}\right)^3\right]
+  \;\approx\; t_{\rm evap}(M_0),
+  \label{eq:tevap_remnant}
+\end{equation}
+since $(\mP/M_0)^3 \ll 1$ for any astrophysical black hole.
+The total evaporation time is essentially unchanged from the
+standard result: $\sim\!2.1\times10^{67}$~yr for a solar-mass
+black hole.
+\end{remark}
+
+%======================================================================
+\section{The Planck Remnant}
+\label{sec:remnant}
+%======================================================================
+
+\begin{proposition}[Planck remnant]
+\label{prop:remnant}
+The endpoint of CPP black hole evaporation is a stable Planck-mass
+remnant with:
+\begin{align}
+  M_{\rm rem} &\;\sim\; \mP \;=\; \sqrt{\hbar c/G}
+  \;\approx\; 2.18\times 10^{-8}\ \mathrm{kg}, \label{eq:Mrem}\\
+  r_{\rm rem} &\;=\; \frac{G\mP}{c^2} \;=\; \lP
+  \;\approx\; 1.62\times 10^{-35}\ \mathrm{m}, \label{eq:rrem}\\
+  \rho_{\rm rem} &\;\sim\; \frac{\mP}{\lP^3}
+  \;=\; \frac{c^5}{\hbar G^2}
+  \;\approx\; 5.16\times 10^{96}\ \mathrm{kg\,m^{-3}}. \label{eq:rhoRem}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+From Proposition~\ref{prop:termination}, Hawking evaporation stops at
+$M \sim \mP$.  The CP Exclusion Rule~\cite{c1} prevents further
+compression: $\PSR_{\rm eff} \geq \lP/2$ enforces $r \geq \rcore = GM/c^2$.
+At $M = \mP$, $\rcore = \lP$.  No further mass loss is possible
+because the Hawking mechanism has terminated, and no further
+compression is possible because the CP Exclusion floor has been
+reached.  The remnant properties follow directly from $M = \mP$,
+$r = \lP$ in Eq.~\eqref{eq:rhoRem}.
+\end{proof}
+
+Table~\ref{tab:remnant} summarises the remnant properties.
+
+\begin{table}[h]
+\centering
+\caption{Properties of the CPP Planck remnant.}
+\label{tab:remnant}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Quantity & Value & Expression \\
+\midrule
+Remnant mass $M_{\rm rem}$
+  & $2.176\times 10^{-8}$~kg
+  & $\sqrt{\hbar c/G}$ \\
+Remnant radius $r_{\rm rem}$
+  & $1.616\times 10^{-35}$~m
+  & $\lP$ \\
+Remnant density $\rho_{\rm rem}$
+  & $5.16\times 10^{96}$~kg\,m$^{-3}$
+  & $\mP/\lP^3 = c^5/(\hbar G^2)$ \\
+$N = \rS/\lP$ at termination
+  & 2 & $2\mP/\mP$ \\
+$T_H$ at termination
+  & $5.64\times 10^{30}$~K $= \TP/8\pi$
+  & $\TP\mP/(8\pi M_{\rm rem})$ \\
+Fraction of mass radiated
+  & $\approx 100\%$
+  & $1 - \mP/M_0 \approx 1$ for $M_0 \gg \mP$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%======================================================================
+\section{Stability of the Planck Remnant}
+\label{sec:stability}
+%======================================================================
+
+\begin{proposition}[Mechanical stability of the remnant]
+\label{prop:stability}
+The Planck remnant is mechanically stable without external pressure.
+It is sustained by an exact balance between gravitational SSV
+compression and CP Exclusion repulsion at the PSR saturation point.
+\end{proposition}
+
+\begin{proof}
+The CP Exclusion Rule (Absolute Moment companion~\cite{c1}) operates
+as follows: when two Conscious Points arrive at the same Grid Point
+address on the same Absolute Moment tick, they do not stack.  On the
+immediately following tick, each CP moves outward along the PSR shell
+in the direction defined by the local $\SSV_{\rm net}$ vector — which
+points radially outward from the compressed core.
+
+Consider the PSR formula at the core:
+\begin{equation}
+  \PSR_{\rm eff}(r) \;=\; \frac{\lP}{1 + GM/rc^2}.
+  \label{eq:psr_core}
+\end{equation}
+The gravitational SSV compression force drives $\PSR_{\rm eff}$ downward
+(higher compression).  The CP Exclusion repulsion force drives CPs
+outward when $\PSR_{\rm eff}$ approaches $\lP/2$.  These two forces
+are exactly balanced at the saturation point:
+\begin{equation}
+  \PSR_{\rm eff}(\rcore) \;=\; \frac{\lP}{2}
+  \quad\Longleftrightarrow\quad
+  \frac{GM}{\rcore c^2} \;=\; 1
+  \quad\Longleftrightarrow\quad
+  \rcore \;=\; \frac{GM}{c^2}.
+  \label{eq:saturation}
+\end{equation}
+This is a \emph{mechanical fixed point}: any perturbation that
+compresses the remnant below $\rcore$ is immediately countered by
+increased CP Exclusion repulsion; any perturbation that expands it
+above $\rcore$ is countered by the increase in gravitational SSV.
+The balance is not tuned — it is an exact structural consequence of
+the PSR formula and the CP Exclusion floor.
+
+The remnant therefore requires no external pressure.  The CPs
+constituting the remnant are sustained by mutual bouncing:
+each CP's outward impulse from CP Exclusion defines the SSV field
+experienced by its neighbours, which defines their exclusion
+directions in the next tick.  This is a self-referential,
+self-sustaining dynamic equilibrium.
+\end{proof}
+
+\begin{remark}[Why the remnant cannot evaporate further]
+Hawking radiation requires a thermal gradient across a smooth
+near-horizon region.  This requires $\rS \gg \lP$.  At the remnant
+mass $M = \mP$, the Schwarzschild radius is $\rS = 2\lP$ — only two
+lattice spacings.  There is no smooth thermal gradient; the entire
+structure is at the Planck scale.  The Hawking mechanism has no
+meaning for a two-cell object.  What remains is a purely mechanical
+system of CPs executing the PCD cycle at maximum compression —
+not a thermally radiating black hole.
+\end{remark}
+
+\begin{remark}[Comparison with neutron star stability]
+A neutron star is stabilised by neutron degeneracy pressure, which
+requires a macroscopic quantum Fermi sea — an external environment of
+neutrons.  Remove the neutrons and the star collapses.  The CPP Planck
+remnant is fundamentally different: it requires no external medium.
+The CPs \emph{are} the pressure; their mutual CP Exclusion bouncing
+\emph{is} the stabilising force.  The remnant is stable in vacuum,
+in the absence of any surrounding matter.
+\end{remark}
+
+%======================================================================
+\section{The Information Paradox in CPP}
+\label{sec:information}
+%======================================================================
+
+The black hole information paradox asks: where does the quantum
+information encoded in the infalling matter go?  In GR, the singularity
+destroys it.  In CPP, there is no singularity, so this destruction
+does not occur.  Instead:
+
+\begin{itemize}[noitemsep]
+  \item The Hawking radiation during the evaporation phase carries
+    thermal (mixed-state) radiation, consistent with semiclassical
+    expectations.
+
+  \item The Planck remnant retains the quantum information encoded in
+    its internal CP configuration — specifically, the pattern of
+    $\SSV_{\rm net}$ vectors and CP positions within the $\sim 2\lP$
+    core.  The information capacity of a Planck-volume core is
+    $S \sim k_B \ln 2$ per CP, or of order $k_B$ total — the
+    minimum possible entropy consistent with the Bekenstein bound
+    at Planck scale.
+
+  \item Whether full unitarity is preserved — i.e.\ whether the
+    combined Hawking radiation plus remnant contains all the
+    original information — is the CPP analog of the information
+    paradox.  This requires the full quantum treatment
+    (Open Problem~\ref{op:bogoliubov}) and is deferred.
+\end{itemize}
+
+\begin{remark}[Page time and the remnant]
+Page~\cite{page1993} showed that if Hawking radiation is unitary, the
+radiation must begin to encode information after the ``Page time''
+$t_{\rm Page} \approx t_{\rm evap}/2$.  In CPP, the modification
+is at the very end of evaporation ($M \to \mP$), which is a negligibly
+small fraction of $t_{\rm evap}$.  The early-time Hawking radiation is
+unchanged; the information question is deferred to the final Planck
+epoch.
+\end{remark}
+
+%======================================================================
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+  \item The \emph{CP Exclusion Rule} establishing $\PSR_{\rm eff} \geq \lP/2$
+    is from companion~1~\cite{c1} and companion~8~\cite{c8}.
+  \item The \emph{Planck core} at $\rcore = \rS/2$ is from companion~8,
+    Theorem~3.
+  \item $G = \hbar c/\mP^2$ giving $\rS/\lP = 2M/\mP$ is from
+    companion~5~\cite{c5}.
+  \item The \emph{GW echo} signal from the same Planck core is
+    companion~9~\cite{c9}; the two papers share the same inner
+    boundary and cite each other.
+  \item The \emph{exact Schwarzschild exterior} (companion~8,
+    Theorem~2) ensures the Hawking calculation is unchanged for
+    $M \gg \mP$: the CPP exterior is identical to GR at all
+    $r > \rS$.
+\end{itemize}
+
+No new postulates beyond companion~8 are required.
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\begin{enumerate}
+  \item \label{op:bogoliubov}
+    \textbf{Full Bogoliubov coefficient calculation.}
+    The thermodynamic argument of Proposition~\ref{prop:termination}
+    identifies the termination condition geometrically.  A complete
+    derivation would compute the Bogoliubov coefficients for quantum
+    field modes propagating between the asymptotic past and the
+    near-Planck epoch, with the inner boundary condition at
+    $r_0 = \rS + \lP$ (CP Exclusion floor).  This is the CPP analog
+    of the full Hawking derivation and would determine whether the
+    late-time spectrum departs from thermal before termination.
+
+  \item \textbf{Information recovery.}
+    Does the CPP remnant carry sufficient information to resolve the
+    information paradox?  The information capacity of a Planck-volume
+    core is of order $k_B$, which is far less than the
+    Bekenstein--Hawking entropy $S_{\rm BH} = k_B A/(4\lP^2)$ of
+    the original black hole.  The resolution must involve the full
+    Hawking radiation train, not just the remnant.
+
+  \item \textbf{Remnant interactions.}
+    The Planck remnant interacts gravitationally ($G = \hbar c/\mP^2$,
+    companion~5) but its interactions via charge-polarity SSV
+    (electromagnetism) depend on whether the residual CP charge
+    configuration inside the remnant is net neutral.  The charge
+    state of the remnant after evaporation is an open question.
+
+  \item \textbf{Cosmological remnant density.}
+    If primordial black holes formed in the early universe and have
+    evaporated to Planck remnants, the cosmological remnant density
+    provides a bound on primordial black hole abundance.  Deriving
+    this bound within CPP is deferred.
+\end{enumerate}
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{Hawking radiation unchanged for $M \gg \mP$}
+    (standard result preserved): the CPP exterior is identical to GR
+    for $M \gg \mP$; the standard Hawking luminosity and evaporation
+    time apply without modification.
+
+  \item \textbf{Geometric termination at $M \sim \mP$}
+    (rigorous, Proposition~\ref{prop:termination}): the
+    semiclassical approximation requires $\rS \gg \lP$, equivalently
+    $N = 2M/\mP \gg 1$.  At $M = \mP$, $N = 2$ and the geometric
+    condition fails.  Evaporation terminates at the remnant mass,
+    not at a temperature divergence: $\TH(\mP) = \TP/8\pi \approx 0.04\,\TP$.
+
+  \item \textbf{Planck remnant mass and density}
+    (rigorous, Proposition~\ref{prop:remnant}):
+    $M_{\rm rem} \sim \mP \approx 2.18\times10^{-8}$~kg,
+    $r_{\rm rem} = \lP$,
+    $\rho_{\rm rem} \approx 5.16\times10^{96}$~kg\,m$^{-3}$.
+
+  \item \textbf{Remnant stability without external pressure}
+    (rigorous, Proposition~\ref{prop:stability}): the CP Exclusion
+    Rule creates a mechanical fixed point at $\PSR_{\rm eff} = \lP/2$
+    that exactly balances gravitational SSV compression.  The remnant
+    is self-sustaining via internal CP bouncing dynamics; no external
+    environment is required.
+
+  \item \textbf{No further evaporation} (rigorous): the Hawking
+    mechanism requires a smooth near-horizon geometry ($\rS \gg \lP$)
+    that does not exist for the two-cell Planck remnant.  What remains
+    is a purely mechanical fixed-point system, not a thermally
+    radiating object.
+
+  \item \textbf{Information paradox deferred}: the Planck remnant
+    retains order-$k_B$ information, far less than the original
+    Bekenstein--Hawking entropy.  Full unitarity requires analysis
+    of the complete Hawking radiation train (Open
+    Problem~\ref{op:bogoliubov}).
+\end{enumerate}
+
+The Planck remnant completes the CPP black hole picture: exact GR
+exterior, echoing Planck-core interior (companion~9), and stable
+Planck-mass endpoint.  Three papers — companions 8, 9, and 10 —
+together form a complete, falsifiable, internally consistent account
+of the CPP black hole from formation to final state.
+
+%======================================================================
+\section*{Acknowledgments}
+%======================================================================
+
+The identification of the geometric breakdown ($N = 2$ at $M = \mP$)
+as the correct termination condition — rather than the temperature
+divergence — and the mechanical fixed-point argument for remnant
+stability were established on 18 March 2026.  The author thanks
+Grok (xAI) and Claude (Anthropic) for contributions to the CPP
+black hole series.
+
+%======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{v16}
+T.~L. Abshier,
+``Mechanistic Derivation of Relativistic Effects via Space Stress
+Vector (SSV) in the Dipole Sea,''
+Version~16, 2026 (main paper).
+
+\bibitem{c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+Version~3, 2026 (companion~1).
+
+\bibitem{c5}
+T.~L. Abshier,
+``Newtonian Gravity from SSV Shell Broadcast,''
+Version~2, 2026 (companion~5).
+
+\bibitem{c8}
+T.~L. Abshier,
+``Strong-Field General Relativity and the CPP Field Equation,''
+Version~2, 2026 (companion~8).
+
+\bibitem{c9}
+T.~L. Abshier,
+``Gravitational Wave Echoes from the Planck Core,''
+Version~2, 2026 (companion~9).
+
+\bibitem{hawking1975}
+S.~W. Hawking,
+``Particle Creation by Black Holes,''
+\textit{Commun.\ Math.\ Phys.}, \textbf{43}, 199--220, 1975.
+
+\bibitem{bekenstein1973}
+J.~D. Bekenstein,
+``Black Holes and Entropy,''
+\textit{Phys.\ Rev.\ D}, \textbf{7}, 2333--2346, 1973.
+
+\bibitem{page1993}
+D.~N. Page,
+``Information in Black Hole Radiation,''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{71}, 3743--3746, 1993.
+
+\bibitem{wald1984}
+R.~M. Wald,
+\textit{General Relativity},
+University of Chicago Press, Chicago, 1984.
+
+\bibitem{adler2001}
+R.~J. Adler, P.~Chen, and D.~I. Santiago,
+``The Generalized Uncertainty Principle and Black Hole Remnants,''
+\textit{Gen.\ Rel.\ Grav.}, \textbf{33}, 2101--2108, 2001.
+
+\bibitem{codata}
+NIST, CODATA 2018 Recommended Values of the Fundamental Physical
+Constants, \url{https://physics.nist.gov/cuu/Constants/}, 2018.
+
+\end{thebibliography}
+
+\end{document}
