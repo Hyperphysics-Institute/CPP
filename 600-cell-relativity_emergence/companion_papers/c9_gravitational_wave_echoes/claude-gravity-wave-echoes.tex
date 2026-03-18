@@ -37,7 +37,7 @@
 
 \title{\textbf{Gravitational Wave Echoes from the Planck Core\\
 in Conscious Point Physics}\\[6pt]
-{\large Companion~12 to ``Mechanistic Derivation of Relativistic Effects\\
+{\large Companion~9 to ``Mechanistic Derivation of Relativistic Effects\\
 via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
 
 \author{Thomas Lee Abshier, ND\\
@@ -45,7 +45,7 @@ Hyperphysics Institute\\
 \texttt{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{18 March 2026 --- Version~1}
+\date{18 March 2026 --- Version~2 (merged)}
 
 \begin{document}
 \maketitle
@@ -149,8 +149,10 @@ controversial~\cite{westerweck2018, conti2024}, but it motivates a careful
 derivation of the CPP prediction with which current and future observations
 can be compared.
 
-The present companion provides that derivation.  Section~\ref{sec:mechanism}
-reviews the Planck-core structure from companion~8.
+The present companion provides that derivation.
+Section~\ref{sec:lsp_waves} establishes gravitational waves as LSP
+perturbations and explains why the CPP interior differs from GR.
+Section~\ref{sec:mechanism} reviews the Planck-core reflective boundary.
 Section~\ref{sec:tortoise} derives the echo delay from the tortoise
 coordinate travel time.  Section~\ref{sec:predictions} gives numerical
 predictions for a range of black hole masses.  Section~\ref{sec:amplitude}
@@ -158,9 +160,33 @@ estimates echo amplitudes.  Section~\ref{sec:comparison} compares with
 existing claims and future observational prospects.
 
 %======================================================================
-\section{The Planck Core as a Reflective Boundary}
-\label{sec:mechanism}
+\section{Gravitational Waves as LSP Perturbations}
+\label{sec:lsp_waves}
 %======================================================================
+
+The strong-field GR companion (companion~8)~\cite{c8} established that
+gravitational waves are transverse perturbations of the Lattice State
+Packet (LSP) propagating at $c$ by construction of the broadcast
+mechanism.  In the weak-field limit, the LSP perturbation
+$\delta\SSV_{\mu\nu}$ satisfies:
+\begin{equation}
+  \Box\,\delta\SSV_{\mu\nu}
+  \;=\; -\frac{16\pi G}{c^4}\,\delta T_{\mu\nu},
+  \label{eq:lsp_wave}
+\end{equation}
+which is identical to the linearised Einstein wave equation.  Two
+transverse traceless polarisation modes ($+$ and $\times$) emerge from
+the two independent transverse directions in the 600-cell projection —
+the same two modes detected by LIGO~\cite{ligo2016}.
+
+The propagation speed is exactly $c$ in all reference frames, because
+the LSP broadcast velocity is $c$ by the Absolute Moment postulate
+(companion~1~\cite{c1}).  In standard GR, an infalling gravitational
+wave packet is absorbed by the classical singularity at $r = 0$.
+In CPP, the CP Exclusion Rule prevents this: the packet instead
+reflects from the Planck core and escapes as an echo.
+
+
 
 From companion~8~\cite{c8}, the CPP PSR formula gives:
 \begin{equation}
@@ -586,9 +612,14 @@ observations at human scales.
 \section*{Acknowledgments}
 %======================================================================
 
-The echo delay formula was derived in collaboration with Grok (xAI).
-The author thanks Claude (Anthropic) for mathematical formulation,
-numerical verification, and LaTeX preparation.
+The LSP wave equation formulation of gravitational waves and the
+reflective boundary mechanism were developed in collaboration with
+Grok (xAI).  The tortoise coordinate echo delay derivation, the
+correction from the erroneous $\ln 2$ formula to the correct
+$\ln(r_S/l_P)$ formula, numerical predictions, and comparison with
+LIGO data were established by Claude (Anthropic), confirmed independently
+by Grok, and agreed upon on 18 March 2026.  The author thanks both
+for contributions to this companion.
 
 %======================================================================
 \begin{thebibliography}{99}
