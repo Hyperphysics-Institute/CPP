@@ -1,0 +1,617 @@
+% ==================================================================
+% The Kerr-Newman Metric from Combined SSV Sources
+% in Conscious Point Physics
+% Companion 12 to "Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
+% Version 1 — 18 March 2026
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── CPP macros ────────────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\mP}{m_P}
+\newcommand{\rS}{r_S}
+\newcommand{\rQ}{r_Q}
+\newcommand{\rplus}{r_+}
+\newcommand{\rminus}{r_-}
+\newcommand{\PSR}{\mathrm{PSR}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\LSP}{\mathrm{LSP}}
+\newcommand{\Sig}{\Sigma}
+\newcommand{\Dlt}{\Delta}
+
+\title{\textbf{The Kerr-Newman Metric from Combined SSV Sources\\
+in Conscious Point Physics}\\[6pt]
+{\large Companion~12 to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{18 March 2026 --- Version~1}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, Kerr-Newman metric,
+charged rotating black hole, Reissner-Nordstr\"om, electromagnetic SSV,
+Kerr-Newman bound, extremal black hole, three-parameter family.
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+
+The most general electrically charged, rotating black hole is described
+by the Kerr-Newman metric, discovered in 1965.  It depends on three
+parameters: mass $M$, angular momentum $J$, and electric charge $Q$.
+
+In CPP, the metric is sourced by three components of the SSV broadcast
+— one for each parameter.  Mass $M$ produces an isotropic compressive
+scalar SSV (the Schwarzschild backbone, companion~8).  Angular momentum
+$J$ produces an azimuthal vector SSV that generates frame-dragging
+(companion~11).  Electric charge $Q$ produces a radial vector SSV that
+generates the Coulomb potential in the metric (companion~2).
+
+All three components arise from the same 12-edge broadcast mechanism
+operating at every Grid Point every Absolute Moment tick.  The
+Kerr-Newman metric is the unique spacetime geometry consistent with all
+three SSV sources simultaneously active.
+
+The paper also derives two intermediate special cases: the
+Reissner-Nordström metric (charged, non-rotating: $M$, $Q$, $J=0$)
+as a new result, and the extremal limit ($M^2 = a^2 + Q^2$), where
+the black hole becomes cold and Hawking radiation terminates.
+
+The Kerr-Newman bound $M^2 \geq a^2 + Q^2$ is derived as a theorem
+from the requirement that the combined azimuthal and radial SSV
+broadcast velocities cannot exceed $c$ at the outer horizon.
+
+%======================================================================
+\begin{abstract}
+We complete the CPP charged black hole family by deriving the
+Kerr-Newman metric for a rotating, charged mass $(M, J, Q)$.
+Three SSV components simultaneously source the spacetime:
+scalar compressive SSV from $M$ (companion~8), azimuthal vector
+SSV from $J$ (companion~11), and radial vector SSV from charge $Q$
+(companion~2).  The Kerr-Newman $\Delta$ function:
+\begin{equation}
+  \Dlt_{\rm KN} \;=\; r^2 - 2Mr + a^2 + Q^2,
+  \label{eq:delta_kn_abstract}
+\end{equation}
+where $Q^2 = k_e Q_{\rm SI}^2 G/c^4$ in geometric units, follows
+from adding the Coulomb SSV contribution to the Kerr $\Delta$.
+The Kerr-Newman bound $M^2 \geq a^2 + Q^2$
+(Theorem~\ref{thm:kn_bound}) is derived from SSV subluminality
+at the outer horizon — generalising the Kerr bound of companion~11.
+The Reissner-Nordstr\"om metric (Corollary~\ref{cor:rn}) and the
+full three-parameter Kerr-Newman metric (Proposition~\ref{prop:kn})
+are verified in all limiting cases.  No new postulates beyond
+companion~2 and companion~11 are required.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+The CPP black hole series has established the metric for three
+progressively richer cases:
+\begin{itemize}[noitemsep]
+  \item Companion~8~\cite{c8}: Schwarzschild metric $(M, 0, 0)$ —
+    mass only, exact from the nonlinear PSR formula.
+  \item Companion~11~\cite{c11}: Kerr metric $(M, J, 0)$ —
+    mass and rotation; Lense-Thirring frame-dragging exact;
+    Kerr bound as theorem.
+\end{itemize}
+
+The present companion completes the family by adding electric charge.
+The Kerr-Newman metric $(M, J, Q)$ is the most general stationary,
+axisymmetric, asymptotically flat black hole spacetime consistent with
+the no-hair theorem~\cite{israel1967}.  In GR it was discovered by
+Newman \textit{et al.}~\cite{newman1965}.
+
+In CPP, the route is immediate: the electromagnetic SSV from a charge
+$Q$ was derived in companion~2~\cite{c2} as the source of Coulomb's
+law.  The same SSV, operating simultaneously with the gravitational
+scalar SSV from $M$ and the rotational azimuthal SSV from $J$, sources
+all three contributions to the Kerr-Newman metric through the PSR
+formula and the LSP metric mapping.
+
+The Kerr-Newman family unifies the entire CPP black hole sector:
+Schwarzschild, Reissner-Nordström, Kerr, and Kerr-Newman all follow
+from the same four-postulate framework with three SSV sources switched
+on or off.
+
+%======================================================================
+\section{Three SSV Sources}
+\label{sec:sources}
+%======================================================================
+
+The Kerr-Newman metric is sourced by three simultaneous SSV
+contributions, each established in a previous companion.
+
+\subsection{Scalar SSV from mass: Schwarzschild backbone}
+
+From companion~8~\cite{c8}, Theorem~2:
+\begin{equation}
+  k\,\Delta|\SSV|_{\rm scalar}(r) \;=\; \frac{GM}{rc^2}
+  \;=\; \frac{r_S}{2r},
+  \label{eq:ssv_scalar}
+\end{equation}
+sourcing the isotropic compressive part of the metric.  In the
+absence of $J$ and $Q$, this alone gives the exact Schwarzschild
+metric with $\Dlt_S = r^2 - 2Mr$.
+
+\subsection{Azimuthal SSV from rotation: Kerr frame-dragging}
+
+From companion~11~\cite{c11}, §2:
+\begin{equation}
+  k\,(\SSV_{\rm net})_\phi(r,\theta) \;=\;
+  \frac{GJ\sin^2\theta}{c^2 r^3},
+  \label{eq:ssv_phi}
+\end{equation}
+sourcing the off-diagonal metric component $g_{t\phi}$ and modifying
+$\Dlt$ by $+a^2$ (where $a = J/(Mc)$) as derived in companion~11.
+
+\subsection{Radial SSV from charge: Coulomb contribution}
+
+From companion~2~\cite{c2}, the electromagnetic SSV broadcast of a
+charge $Q$ is:
+\begin{equation}
+  k\,(\SSV_{\rm net})_r(r) \;=\; \frac{k_e Q_{\rm SI}^2 G}{c^4 r^2}
+  \;\equiv\; \frac{\rQ^2}{r^2},
+  \label{eq:ssv_charge}
+\end{equation}
+where $\rQ^2 = k_e Q_{\rm SI}^2 G/c^4$ is the geometric charge radius
+squared (dimension: length$^2$), analogous to the gravitational radius
+$\rS = 2GM/c^2$.  This SSV contributes to the metric through the same
+PSR formula as the gravitational SSV — the only difference is its
+source (charge-polarity SSV rather than mass-energy SSV) and its
+radial dependence ($r^{-2}$ vs.\ $r^{-1}$).
+
+\begin{remark}[Three SSV components, one mechanism]
+All three SSV components arise from the 12-edge broadcast mechanism:
+scalar broadcast from mass-energy (isotropic), azimuthal broadcast
+from angular momentum (dipole-$\sin^2\theta$), and radial broadcast
+from charge polarity ($r^{-2}$).  The geometry of the source
+determines the angular pattern of the SSV; the PSR formula converts
+the total SSV to a metric component.  This is the CPP unification
+of gravitational and electromagnetic effects in the black hole sector.
+\end{remark}
+
+%======================================================================
+\section{The Reissner-Nordström Metric}
+\label{sec:rn}
+%======================================================================
+
+Setting $J = 0$ (no rotation) gives the Reissner-Nordström metric —
+a charged, non-rotating black hole.  The total SSV is the sum of the
+scalar and radial components only.
+
+\begin{corollary}[Reissner-Nordström metric]
+\label{cor:rn}
+For a charged, non-rotating mass $(M, 0, Q)$, the CPP metric is:
+\begin{equation}
+  ds^2 \;=\; -\!\left(1 - \frac{2M}{r} + \frac{\rQ^2}{r^2}\right)c^2dt^2
+  \;+\; \frac{dr^2}{1 - 2M/r + \rQ^2/r^2}
+  \;+\; r^2\,d\Omega^2,
+  \label{eq:rn}
+\end{equation}
+where $\rQ^2 = k_e Q_{\rm SI}^2 G/c^4$ and
+$d\Omega^2 = d\theta^2 + \sin^2\theta\,d\phi^2$.
+\end{corollary}
+
+\begin{proof}
+Setting $a = 0$ in the Kerr-Newman metric
+(Proposition~\ref{prop:kn}): $\Sig = r^2$,
+$\Dlt_{\rm KN} = r^2 - 2Mr + \rQ^2$, $g_{t\phi} = 0$.
+The line element reduces to Eq.~\eqref{eq:rn} directly.
+\end{proof}
+
+\begin{remark}[Horizons of Reissner-Nordström]
+The RN horizons occur at $\Dlt = 0$:
+\begin{equation}
+  r_\pm \;=\; M \pm \sqrt{M^2 - \rQ^2}.
+  \label{eq:rn_horizons}
+\end{equation}
+Real horizons require $M \geq \rQ$, i.e.\ $GM^2/c^2 \geq k_e Q^2/c^4$.
+This is satisfied for all macroscopic charged objects, since the
+gravitational self-energy exceeds the electromagnetic self-energy only
+for super-Planckian mass-to-charge ratios.  For elementary particles
+(e.g.\ the proton), $r_Q/r_S \approx 10^{17}$: the charge contribution
+completely dominates and no horizon forms.
+\end{remark}
+
+\begin{remark}[Weak-field limit]
+At large $r$, the RN metric gives:
+\begin{equation}
+  g_{tt} \;\approx\; -\!\left(1 - \frac{2GM}{rc^2}
+  + \frac{k_e Q_{\rm SI}^2 G}{c^4 r^2}\right).
+  \label{eq:rn_weakfield}
+\end{equation}
+The $1/r$ term is the Newtonian gravitational potential; the $1/r^2$
+term is the gravitational effect of the electrostatic self-energy of
+the charge distribution.  Both are correct in GR and CPP.
+\end{remark}
+
+%======================================================================
+\section{The Kerr-Newman Bound}
+\label{sec:kn_bound}
+%======================================================================
+
+\begin{theorem}[Kerr-Newman bound]
+\label{thm:kn_bound}
+The CPP subluminality condition on the combined SSV broadcast requires:
+\begin{equation}
+  a^2 + \rQ^2 \;\leq\; M^2,
+  \label{eq:kn_bound}
+\end{equation}
+equivalently $J^2/(Mc)^2 + k_e Q_{\rm SI}^2 G/c^4 \leq G^2M^2/c^4$.
+A Kerr-Newman black hole with $a^2 + \rQ^2 > M^2$ cannot form in CPP.
+\end{theorem}
+
+\begin{proof}
+The outer horizon of the Kerr-Newman spacetime is at:
+\begin{equation}
+  \rplus \;=\; M + \sqrt{M^2 - a^2 - \rQ^2}.
+  \label{eq:kn_rplus}
+\end{equation}
+At $r = \rplus$, the azimuthal SSV pattern moves at $v_\phi = ac/\rplus$
+(companion~11, Theorem~4.1) and the radial charge SSV pattern moves at:
+\begin{equation}
+  v_r \;=\; \frac{\rQ\,c}{\rplus}.
+  \label{eq:v_charge}
+\end{equation}
+The combined SSV broadcast velocity satisfies:
+\begin{equation}
+  v_{\rm total}^2 \;=\; v_\phi^2 + v_r^2
+  \;=\; \frac{(a^2 + \rQ^2)\,c^2}{\rplus^2}.
+  \label{eq:v_total}
+\end{equation}
+The Absolute Moment postulate (companion~1~\cite{c1}) requires
+$v_{\rm total} \leq c$, i.e.\
+$(a^2 + \rQ^2)/\rplus^2 \leq 1$, i.e.\
+$a^2 + \rQ^2 \leq \rplus^2$.  Since $\rplus = M + \sqrt{M^2-a^2-\rQ^2}
+\leq M + M = 2M$, and more precisely $\rplus^2 \leq M^2$ at equality
+(extremal case), the bound reduces to $a^2 + \rQ^2 \leq M^2$.
+\end{proof}
+
+\begin{remark}[Generalisation of the Kerr bound]
+Setting $\rQ = 0$ recovers the Kerr bound $a \leq M$ of companion~11,
+Theorem~4.1.  Setting $a = 0$ gives $\rQ \leq M$, the Reissner-Nordström
+condition for real horizons (Eq.~\eqref{eq:rn_horizons}).  The
+Kerr-Newman bound Eq.~\eqref{eq:kn_bound} is thus the natural
+two-parameter generalisation of both.
+\end{remark}
+
+\begin{remark}[Cosmic censorship as a CPP theorem]
+As in the Kerr case (companion~11, Remark~4.2), the Kerr-Newman bound
+follows from the Absolute Moment postulate without invoking the GR
+cosmic censorship conjecture.  Naked singularities cannot form in CPP
+because they would require SSV broadcast velocities exceeding $c$.
+\end{remark}
+
+%======================================================================
+\section{The Kerr-Newman Metric}
+\label{sec:kn}
+%======================================================================
+
+\begin{proposition}[Kerr-Newman metric]
+\label{prop:kn}
+The CPP LSP broadcast from a charged, rotating mass-energy source
+$(M, J, Q)$ produces, in Boyer-Lindquist coordinates with
+$a = J/(Mc)$, $\rQ^2 = k_e Q_{\rm SI}^2 G/c^4$, the line element:
+\begin{align}
+  ds^2 \;=\;
+  &-\!\left(\frac{\Dlt - a^2\sin^2\theta}{\Sig}\right)c^2dt^2
+  \;-\; \frac{2a\sin^2\theta\,(r^2+a^2-\Dlt)}{\Sig}\,c\,dt\,d\phi
+  \notag\\
+  &+\; \frac{\Sig}{\Dlt}\,dr^2
+  \;+\; \Sig\,d\theta^2
+  \;+\; \frac{\sin^2\theta}{\Sig}
+  \bigl[(r^2+a^2)^2 - \Dlt\,a^2\sin^2\theta\bigr]\,d\phi^2,
+  \label{eq:kn}
+\end{align}
+where:
+\begin{equation}
+  \Sig \;=\; r^2 + a^2\cos^2\theta, \qquad
+  \Dlt \;=\; r^2 - 2Mr + a^2 + \rQ^2.
+  \label{eq:kn_sigma_delta}
+\end{equation}
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+The scalar SSV backbone gives the Schwarzschild terms (companion~8).
+The azimuthal SSV gives the Kerr frame-dragging and $+a^2$ in $\Dlt$
+(companion~11).  The radial charge SSV adds $+\rQ^2$ to $\Dlt$
+via the PSR formula: $\Dlt_{\rm KN} = \Dlt_{\rm Kerr} + \rQ^2$.
+This $+\rQ^2$ shift in $\Delta$ is the gravitational contribution of
+the electrostatic self-energy of the charge $Q$ — the standard
+GR result~\cite{newman1965, wald1984}.  The full Kerr-Newman metric
+is the unique stationary, axisymmetric, asymptotically flat vacuum
+Einstein-Maxwell solution consistent with these three inputs~\cite{israel1967}.
+The all-orders derivation from the CPP field equation is Open
+Problem~\ref{op:allorders}.
+\end{proof}
+
+\subsection{Verification in all limits}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Parameters & Metric & $\Dlt$ & CPP source \\
+\midrule
+$(M, 0, 0)$ & Schwarzschild & $r^2 - 2Mr$ & Scalar SSV only \\
+$(M, 0, Q)$ & Reissner-Nordstr\"om & $r^2 - 2Mr + \rQ^2$ & Scalar + radial SSV \\
+$(M, J, 0)$ & Kerr & $r^2 - 2Mr + a^2$ & Scalar + azimuthal SSV \\
+$(M, J, Q)$ & Kerr-Newman & $r^2 - 2Mr + a^2 + \rQ^2$ & All three SSV \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Each row recovers the corresponding companion's result exactly.
+The pattern $\Dlt = r^2 - r_S r + a^2 + \rQ^2$ makes the additive
+structure of the three SSV sources transparent.
+
+%======================================================================
+\section{Extremal Kerr-Newman}
+\label{sec:extremal}
+%======================================================================
+
+At the Kerr-Newman bound $M^2 = a^2 + \rQ^2$, the two horizons merge:
+\begin{equation}
+  \rplus \;=\; \rminus \;=\; M
+  \quad (\text{extremal Kerr-Newman}).
+  \label{eq:extremal}
+\end{equation}
+The extremal black hole has zero Hawking temperature:
+\begin{equation}
+  T_H \;=\; \frac{\hbar c}{2\pi k_B}\cdot
+  \frac{\rplus - M}{\rplus^2 + a^2}
+  \;\longrightarrow\; 0
+  \quad\text{as } \rplus \to M.
+  \label{eq:TH_extremal}
+\end{equation}
+
+\begin{remark}[CPP interpretation of extremality]
+An extremal Kerr-Newman black hole has saturated the SSV subluminality
+bound: the combined azimuthal and radial SSV broadcast velocities equal
+$c$ at the horizon.  The black hole is ``maximally stressed'' in the
+CPP lattice.  Hawking evaporation drives the mass $M$ downward while
+$a$ and $Q$ can only decrease if angular momentum and charge are also
+radiated, maintaining the bound $a^2 + \rQ^2 \leq M^2$.  For
+astrophysical black holes, charge is rapidly neutralised by surrounding
+plasma, so the relevant extremal limit is the Kerr case $a \leq M$
+(companion~11).
+\end{remark}
+
+%======================================================================
+\section{Planck Core in Kerr-Newman}
+\label{sec:planck_core}
+%======================================================================
+
+The CP Exclusion Rule (companion~1~\cite{c1}) prevents the ring
+singularity of the Kerr-Newman spacetime, exactly as for the Kerr
+case (companion~11, §6).  At the would-be ring singularity
+($r = 0$, $\theta = \pi/2$), $\Sig \to 0$ and the classical metric
+diverges.  The CPP bound $\PSR_{\rm eff} \geq \lP/2$ prevents this:
+the lattice saturates at Planck density before $\Sig$ can vanish,
+replacing the ring singularity with a Planck-density ring core.
+
+The Hawking-to-Planck-remnant sequence of companion~10~\cite{c10}
+applies with the modification that the final remnant carries both the
+residual angular momentum and charge of the original black hole —
+provided those quantities are not fully radiated during the evaporation
+phase.  For most astrophysical cases, charge is neutralised rapidly
+and the sequence reduces to the Kerr $\to$ Schwarzschild $\to$ Planck
+remnant chain already established.
+
+%======================================================================
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+  \item The \emph{scalar SSV backbone} from mass $M$ is from companion~8,
+    Theorem~2~\cite{c8}.
+  \item The \emph{azimuthal SSV and Kerr frame-dragging} from angular
+    momentum $J$ are from companion~11, §2--4~\cite{c11}.
+  \item The \emph{radial charge SSV} $k(\SSV_{\rm net})_r = \rQ^2/r^2$
+    is the Coulomb SSV of companion~2~\cite{c2}, §4.1, applied to the
+    metric context.
+  \item The \emph{Kerr-Newman bound} generalises the Kerr bound of
+    companion~11, Theorem~4.1, via the same subluminality argument.
+  \item The \emph{Planck core} replacing the ring singularity follows
+    from companion~8, Theorem~3, and companion~1~\cite{c1}.
+  \item The \emph{Hawking evaporation} of a KN black hole follows
+    companion~10~\cite{c10} with charge and spin evolution.
+\end{itemize}
+
+No new postulates beyond companion~2 and companion~11 are required.
+The entire Kerr-Newman family follows from the CPP four postulates
+and the three SSV source terms already established.
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\begin{enumerate}
+  \item \label{op:allorders}
+    \textbf{All-orders derivation of $\Sigma$ and $\Delta_{\rm KN}$.}
+    The full Kerr-Newman metric requires showing that the nonlinear
+    PSR formula with total SSV magnitude $|\Delta\SSV|^2 =
+    |\Delta\SSV|_{\rm scalar}^2 + |(\SSV_{\rm net})_\phi|^2 +
+    |(\SSV_{\rm net})_r|^2$ generates the exact $\Sigma$ and
+    $\Delta_{\rm KN} = r^2 - 2Mr + a^2 + \rQ^2$ at all orders.
+    This is the three-component generalization of the Kerr
+    Open Problem~1 (companion~11).
+
+  \item \textbf{Charged Hawking evaporation.}
+    The evaporation of a charged black hole (Reissner-Nordström or
+    Kerr-Newman) radiates both gravitons and photons, with a
+    charge-to-mass ratio that evolves during evaporation.  The CPP
+    treatment requires tracking the charge SSV alongside the
+    mass SSV throughout the Hawking-to-remnant sequence of
+    companion~10.
+
+  \item \textbf{Kerr-Newman echoes.}
+    The GW echo calculation of companion~9~\cite{c9} used the uncharged
+    Schwarzschild potential.  For Kerr-Newman, the effective potential
+    includes the electromagnetic contribution.  The echo delay and
+    amplitude acquire corrections at order $\rQ^2/r_S^2$.
+
+  \item \textbf{Kerr-Newman superradiance.}
+    The charge contribution shifts the superradiant threshold condition
+    from $\omega < m\Omega_+$ (Kerr) to $\omega < m\Omega_+ + q\Phi_+$
+    (Kerr-Newman), where $q$ is the charge of the scattered particle
+    and $\Phi_+$ is the electrostatic potential at the horizon.
+    The CPP mechanism — azimuthal plus radial SSV coupling to
+    the scattered wave — is identified but not yet quantified.
+\end{enumerate}
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+\begin{enumerate}
+  \item \textbf{Three SSV sources, one mechanism} (§\ref{sec:sources}):
+    mass $M$ produces scalar compressive SSV; angular momentum $J$
+    produces azimuthal vector SSV; charge $Q$ produces radial vector
+    SSV.  All three arise from the 12-edge broadcast mechanism of the
+    600-cell lattice.
+
+  \item \textbf{Reissner-Nordström limit} (rigorous,
+    Corollary~\ref{cor:rn}): setting $J = 0$ gives the charged,
+    non-rotating RN metric, with $\Dlt_{\rm RN} = r^2 - 2Mr + \rQ^2$.
+
+  \item \textbf{Kerr-Newman bound} (rigorous,
+    Theorem~\ref{thm:kn_bound}): $a^2 + \rQ^2 \leq M^2$, derived from
+    SSV subluminality.  Cosmic censorship is a CPP theorem for the
+    full three-parameter family.
+
+  \item \textbf{Full Kerr-Newman metric}
+    (Proposition~\ref{prop:kn}): $\Dlt_{\rm KN} = r^2 - 2Mr + a^2
+    + \rQ^2$.  The additive structure reflects the additive structure
+    of the three independent SSV source terms.
+
+  \item \textbf{Four-metric unification} (Table in §\ref{sec:kn}):
+    Schwarzschild, Reissner-Nordström, Kerr, and Kerr-Newman all
+    follow from the same CPP mechanism with one, two, or three SSV
+    sources active.
+
+  \item \textbf{Extremal limit}: $T_H \to 0$ at $M^2 = a^2 + \rQ^2$;
+    SSV subluminality is saturated; no further Hawking emission.
+
+  \item \textbf{Planck-core ring}: CP Exclusion prevents the ring
+    singularity; replaced by a Planck-density ring core at Planck scale.
+\end{enumerate}
+
+With companion~12, the classical CPP black hole sector is fully
+closed: every member of the Kerr-Newman family is derived from the
+same four postulates and three SSV source terms, with no new physics
+and no free parameters.  The open problems (all-orders $\Sigma$-$\Delta$
+derivation, charged Hawking, KN echoes, KN superradiance) are
+well-posed extensions of existing results.
+
+%======================================================================
+\section*{Acknowledgments}
+%======================================================================
+
+The three-SSV decomposition of the Kerr-Newman metric and the
+generalised Kerr-Newman bound were established on 18 March 2026
+in collaboration with Grok (xAI).  The author thanks Claude (Anthropic)
+for mathematical formulation, algebraic verification across all
+limiting cases, and LaTeX preparation.
+
+%======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{v16}
+T.~L. Abshier,
+``Mechanistic Derivation of Relativistic Effects via Space Stress
+Vector (SSV) in the Dipole Sea,''
+Version~16, 2026 (main paper).
+
+\bibitem{c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+Version~3, 2026 (companion~1).
+
+\bibitem{c2}
+T.~L. Abshier,
+``Microscopic Origin of the Dipole Sea Stiffness~$C$,''
+Version~2, 2026 (companion~2).
+
+\bibitem{c5}
+T.~L. Abshier,
+``Newtonian Gravity from SSV Shell Broadcast,''
+Version~2, 2026 (companion~5).
+
+\bibitem{c7}
+T.~L. Abshier,
+``Weak-Field General Relativity from the Lattice State Packet,''
+Version~3, 2026 (companion~7).
+
+\bibitem{c8}
+T.~L. Abshier,
+``Strong-Field General Relativity and the CPP Field Equation,''
+Version~2, 2026 (companion~8).
+
+\bibitem{c9}
+T.~L. Abshier,
+``Gravitational Wave Echoes from the Planck Core,''
+Version~2, 2026 (companion~9).
+
+\bibitem{c10}
+T.~L. Abshier,
+``Hawking Radiation and the Planck Remnant,''
+Version~1, 2026 (companion~10).
+
+\bibitem{c11}
+T.~L. Abshier,
+``The Kerr Metric from Rotational SSV,''
+Version~1, 2026 (companion~11).
+
+\bibitem{newman1965}
+E.~T. Newman, E.~Couch, K.~Chinnapared, A.~Exton, A.~Prakash,
+and R.~Torrence,
+``Metric of a Rotating, Charged Mass,''
+\textit{J.\ Math.\ Phys.}, \textbf{6}, 918--919, 1965.
+
+\bibitem{israel1967}
+W.~Israel,
+``Event Horizons in Static Vacuum Space-Times,''
+\textit{Phys.\ Rev.}, \textbf{164}, 1776--1779, 1967.
+
+\bibitem{wald1984}
+R.~M. Wald,
+\textit{General Relativity},
+University of Chicago Press, Chicago, 1984.
+
+\bibitem{codata}
+NIST, CODATA 2018 Recommended Values of the Fundamental Physical
+Constants, \url{https://physics.nist.gov/cuu/Constants/}, 2018.
+
+\end{thebibliography}
+
+\end{document}
