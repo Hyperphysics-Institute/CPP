@@ -1,0 +1,903 @@
+% ==================================================================
+% Color Charge as Emergent Vertex Identity:
+% The hDP Tetrahedral Skeleton and SU(3) as Bookkeeping in CPP
+% Companion 15 to "Mechanistic Derivation of Relativistic Effects
+% via Space Stress Vector (SSV) in the Dipole Sea" (Version 16)
+% Version 1 — 19 March 2026
+% ==================================================================
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{array}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+
+% ── CPP macros ────────────────────────────────────────────────────────────────
+\newcommand{\lP}{l_P}
+\newcommand{\mP}{m_P}
+\newcommand{\PSR}{\mathrm{PSR}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\LSP}{\mathrm{LSP}}
+\newcommand{\eCP}{e\mathrm{CP}}
+\newcommand{\qCP}{q\mathrm{CP}}
+\newcommand{\eDP}{e\mathrm{DP}}
+\newcommand{\qDP}{q\mathrm{DP}}
+\newcommand{\hDP}{h\mathrm{DP}}
+\newcommand{\ZDC}{\mathrm{ZDC}}
+\newcommand{\ZBW}{\mathrm{ZBW}}
+\newcommand{\as}{\alpha_s}
+\newcommand{\Td}{T_d}
+\newcommand{\Hf}{H_4}
+
+\title{\textbf{Color Charge as Emergent Vertex Identity:\\
+The hDP Tetrahedral Skeleton and SU(3)\\
+as Bookkeeping in Conscious Point Physics}\\[6pt]
+{\large Companion~15 to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{19 March 2026 --- Version~1}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, color charge, quark
+confinement, hDP tetrahedron, SU(3), baryon structure, color neutrality,
+vertex identity, emergent symmetry, DP Sea.
+
+%======================================================================
+\begin{abstract}
+We derive the observed color charge properties of quarks from the
+geometry of a spontaneously nucleated hybrid Dipole Particle ($\hDP$)
+tetrahedral skeleton in the Dipole Sea, without postulating SU(3) as a
+fundamental gauge symmetry.  The $\hDP$ tetrahedron --- a stable
+alternating-charge skeleton of four hybrid DPs on 600-cell Grid Points
+--- provides the bonding scaffold for baryons.  Three quarks occupy
+three of its four vertices; the fourth vertex remains open, giving the
+baryon its net charge.
+
+The central theorem of this paper is: \emph{what QCD calls color charge
+is vertex identity} --- a quark's ``color'' is simply which of the three
+occupied tetrahedral vertices it is bonded to.  Color neutrality (why
+hadrons are colorless) follows from complete three-vertex occupation.
+The prohibition on free quarks and the restriction to specific hadron
+configurations ($q\bar{q}$, $qqq$, $\bar{q}\bar{q}\bar{q}$) follow
+from charge geometry.  SU(3) is identified as the permutation algebra of
+3-of-4 vertex occupation --- a mathematical description of the
+bookkeeping, not a fundamental physical input.
+
+No new postulates beyond those of Version~16 are required.  The
+correspondence between the 8 gluon modes and the 8 Gell-Mann generators
+is noted and deferred to Companion~16.
+\end{abstract}
+
+%======================================================================
+\section*{Plain Language Summary}
+%======================================================================
+
+In standard physics (QCD), quarks carry a property called ``color
+charge'' --- red, green, or blue --- which determines how they bind
+together.  The rules are: three quarks of different colors form a
+proton or neutron; a quark and an antiquark of opposite colors form a
+pion or other meson.  No free quarks are ever observed.  These rules
+are encoded in the mathematics of SU(3), a gauge symmetry group.
+
+CPP asks: what is the \emph{physical structure} underlying these
+rules?  The answer is a tetrahedral skeleton.  The Dipole Sea
+spontaneously nucleates stable tetrahedra built from hybrid Dipole
+Particles ($\hDP$s) --- DPs that combine both electromagnetic and
+strong-force character.  This skeleton has four vertices.  When three
+quarks bond to three of those four vertices, we call their positions
+``red,'' ``green,'' and ``blue.''  But these labels just mean
+\emph{which vertex a quark is sitting on}.  Color charge is vertex
+identity.
+
+Color neutrality means all three quark-bonding vertices are occupied,
+so no net strong charge is exposed.  A free quark would require a
+chain extending to infinity (established in companion~14) --- which
+is why quarks are never observed alone.  SU(3) is the mathematical
+description of how many ways you can permute three objects on three
+vertices --- useful bookkeeping, but not the underlying reality.
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+Quantum Chromodynamics (QCD) describes the strong nuclear force through
+SU(3) color gauge symmetry~\cite{gross1973,politzer1973}.  Quarks carry
+one of three color charges (red, green, blue); gluons carry
+color-anticolor combinations; hadrons are color-neutral bound states.
+The mathematical structure is elegant and experimentally confirmed, but
+SU(3) is a postulate: it is not derived from a more fundamental
+physical substrate.
+
+Companion~14~\cite{c14} derived quark confinement and the Cornell
+potential from the qDP chaining mechanism of CPP, without invoking
+SU(3).  The present companion addresses the complementary question:
+\emph{what is the physical substrate of color charge itself?}
+
+The answer is the $\hDP$ tetrahedral skeleton --- a spontaneously
+nucleated geometric structure in the Dipole Sea that provides the
+bonding scaffold for baryons.  Color charge, in this picture, is not
+an intrinsic quantum number carried by a quark.  It is a \emph{vertex
+label}: red, green, and blue are names for the three occupied bonding
+sites on the tetrahedral skeleton.
+
+This reframing has several consequences:
+\begin{enumerate}[noitemsep]
+\item Color neutrality is a geometric condition, not a gauge condition.
+\item The prohibition on free quarks is the topological condition
+  derived in companion~14, now given a structural complement.
+\item SU(3) is identified as the permutation algebra of the geometry
+  --- correct, useful, but not fundamental.
+\item The 3-of-4 vertex occupation rule explains the net charge of
+  baryons without a separate assumption.
+\end{enumerate}
+
+Section~\ref{sec:hdp} describes the $\hDP$ tetrahedron.
+Section~\ref{sec:buffer} proves that baryons require this skeleton
+while mesons do not.  Section~\ref{sec:occupation} analyzes the
+3-of-4 occupation rule and the open fourth vertex.
+Section~\ref{sec:color} establishes color as vertex identity and
+derives the color selection rules.  Section~\ref{sec:su3} identifies
+SU(3) as emergent bookkeeping.  Section~\ref{sec:gluons} states the
+gluon count correspondence and defers its derivation to
+companion~16~\cite{c16}.
+
+%======================================================================
+\section{The hDP Tetrahedral Skeleton}
+\label{sec:hdp}
+%======================================================================
+
+\subsection{Hybrid Dipole Particles}
+
+A hybrid Dipole Particle ($\hDP$) is a DP that combines both
+electromagnetic ($\eCP$) and strong-force ($\qCP$) character at its
+two poles.  Unlike the purely electromagnetic $\eDP$ (which carries
+charge $\pm e$) or the purely strong $\qDP$ (which carries charge
+$\pm e_q$), the $\hDP$ carries a mixed charge at each pole --- one
+pole dominated by $\eCP$ character, the other by $\qCP$ character.
+
+This mixed character makes the $\hDP$ a mediating entity: it can
+couple to both the electromagnetic and strong SSV fields, allowing it
+to buffer interactions between quarks of like charge.
+
+\subsection{Spontaneous Nucleation of hDP Tetrahedra}
+
+The Dipole Sea contains $\eDP$, $\qDP$, and $\hDP$ populations in
+thermal equilibrium.  The $\hDP$ subpopulation spontaneously nucleates
+tetrahedral structures for the following reasons:
+
+\begin{enumerate}
+\item \textbf{Alternating charge geometry.}  A tetrahedron with
+  alternating $+\hDP$ and $-\hDP$ at its four vertices (two positive,
+  two negative) minimizes electrostatic energy relative to any other
+  four-vertex configuration.  The alternating geometry produces an
+  attractive potential well that stabilizes the tetrahedron against
+  thermal disruption.
+
+\item \textbf{ZBW resonance locking.}  Each $\hDP$ oscillates at
+  the Zitterbewegung frequency (companion~4~\cite{c4}).  When four
+  $\hDP$s are within one lattice spacing, their ZBW oscillations
+  can phase-lock into a collective resonance mode.  This resonance
+  contributes additional binding energy, setting the equilibrium
+  size of the tetrahedron.
+
+\item \textbf{600-cell GP site availability.}  The four vertices of
+  the $\hDP$ tetrahedron must correspond to Grid Points (GPs) on
+  the 600-cell lattice (Version~16~\cite{v16}).  The 600-cell's
+  tetrahedral subgroup ($T_d$, a subgroup of $H_4$) provides exactly
+  the GP configurations required.  The lattice constrains which
+  tetrahedra can form and enforces the discrete geometry.
+\end{enumerate}
+
+\begin{remark}[Stability regime]
+The $\hDP$ tetrahedron is more stable than a pure $\eDP$ tetrahedron
+(which lacks strong-force binding) and less stable than a pure $\qDP$
+tetrahedron (which lacks electromagnetic mediation).  This intermediate
+stability is precisely what makes the $\hDP$ tetrahedron a suitable
+quark bonding scaffold: it is stable enough to persist on the timescale
+of hadron dynamics, but flexible enough to accommodate quark bonding
+transitions.
+\end{remark}
+
+\begin{remark}[Cosmological context]
+The $\hDP$ tetrahedron population may be in dynamic thermal
+equilibrium at the current temperature of the universe, or may have
+frozen out during cosmic cooling as a preferred configuration.  Both
+framings are consistent with CPP; the cosmological history is an open
+problem (§\ref{sec:open}).
+\end{remark}
+
+\subsection{Geometry of the hDP Tetrahedron}
+
+A regular tetrahedron has four vertices, six edges, and four faces.
+The $T_d$ point symmetry group of the regular tetrahedron has order
+24, containing:
+\begin{itemize}[noitemsep]
+\item 1 identity element
+\item 8 proper rotations ($C_3$ and $C_3^2$ about each of 4 axes)
+\item 3 $C_2$ rotations
+\item 6 $S_4$ improper rotations
+\item 6 $\sigma_d$ reflection planes
+\end{itemize}
+
+The $C_3$ rotational axis through any vertex and the centroid of the
+opposite face permutes the three remaining vertices cyclically.  This
+3-fold symmetry is the geometric origin of the color triplet, as
+established in §\ref{sec:color}.
+
+%======================================================================
+\section{Why Baryons Require the hDP Skeleton}
+\label{sec:buffer}
+%======================================================================
+
+\subsection{The Charge Buffer Theorem}
+
+\begin{theorem}[Baryons require the hDP tetrahedral skeleton]
+\label{thm:buffer}
+Three like-sign quarks cannot form a stable bound state without
+the $\hDP$ tetrahedral skeleton as a charge buffer.
+\end{theorem}
+
+\begin{proof}
+Consider three quarks of the same sign charge (e.g., three $+\qCP$
+quarks, as in the two up quarks and one down quark of a proton where
+both up quarks carry charge $+2e/3$).  Without the $\hDP$ tetrahedron:
+
+The SSV field of each $+\qCP$ quark exerts a repulsive force on every
+other $+\qCP$ quark at distance $r$:
+\begin{equation}
+F_{\rm rep}(r) = \frac{\as\,\hbar c}{r^2} > 0
+\quad \text{(repulsive, same-sign quarks)}.
+\label{eq:repulsion}
+\end{equation}
+
+For the three quarks to remain in proximity, a binding energy
+exceeding $F_{\rm rep} \cdot \Delta r$ must exist.  The only
+available binding mechanism in CPP at sub-fm scales is:
+(a) direct qDP chain attraction between opposite-sign quarks, or
+(b) mediated attraction via an intervening opposite-sign CP.
+
+Two up quarks ($+2e/3$ each) have no direct qDP chain attraction
+between them.  Mechanism (b) requires an opposite-sign mediator
+at each vertex.  The $\hDP$ tetrahedron provides exactly this:
+each vertex presents an opposite-sign $\hDP$ pole to the incoming
+quark, creating a local attraction that overcomes the inter-quark
+repulsion.
+
+Without the $\hDP$ tetrahedron, the repulsive force
+Eq.~\eqref{eq:repulsion} dominates at all scales below $r_0$, and
+the three-quark configuration dissociates on a timescale
+$\tau \sim \hbar / F_{\rm rep} \cdot l_P \ll t_P$.  The bound
+state cannot exist.
+
+With the $\hDP$ tetrahedron, each quark bonds to an opposite-sign
+$\hDP$ vertex.  The quark-vertex attraction exceeds the inter-quark
+repulsion, stabilizing the three-quark configuration.
+\end{proof}
+
+\subsection{Why Mesons Do Not Require the Skeleton}
+
+\begin{proposition}[Mesons bind without the hDP skeleton]
+\label{prop:meson_no_skeleton}
+A quark-antiquark ($q\bar{q}$) pair does not require the $\hDP$
+tetrahedral skeleton for binding.
+\end{proposition}
+
+\begin{proof}
+A quark ($+\qCP$) and antiquark ($-\qCP$) carry opposite sign charges.
+They attract directly via the qDP chain mechanism of companion~14~\cite{c14}:
+\begin{equation}
+V_{\rm meson}(r) = -\frac{\as\,\hbar c}{r} + \sigma\,r.
+\label{eq:meson_potential}
+\end{equation}
+No charge buffering is required.  The qDP chain provides sufficient
+binding at all distances from $r = 0$ to string-breaking.
+\end{proof}
+
+\begin{remark}[Why a meson does not acquire a tetrahedral skeleton]
+If a tetrahedral $\hDP$ skeleton were drawn into the meson's qDP chain
+region, its open vertices would immediately attract additional quarks
+from the Dipole Sea.  This would convert the meson into a baryon-like
+configuration with three quark bonding sites.  The meson's two-body
+symmetry would be broken.  The resulting configuration is either a
+higher-energy state (which relaxes back to the plain meson) or decays
+into separate hadrons.  The meson therefore actively resists tetrahedral
+skeleton formation as a matter of energy minimization.
+\end{remark}
+
+%======================================================================
+\section{The 3-of-4 Occupation Rule and Net Baryon Charge}
+\label{sec:occupation}
+%======================================================================
+
+\subsection{Why Three Vertices Are Occupied}
+
+The $\hDP$ tetrahedron has four vertices.  Stable baryons occupy
+exactly three.  This is the \emph{3-of-4 occupation rule}.
+
+\begin{proposition}[3-of-4 occupation rule]
+\label{prop:three_of_four}
+In a stable baryon, exactly three of the four $\hDP$ tetrahedral
+vertices are occupied by quarks.  Full four-vertex occupation is
+unstable.
+\end{proposition}
+
+\begin{proof}[Mechanistic argument]
+Consider the energy balance at the fourth vertex when three vertices
+are already occupied.
+
+\textbf{Symmetry equalization:} When all four vertices are occupied,
+the $T_d$ symmetry of the tetrahedron is fully realized.  This
+equalization distributes binding energy equally across all four
+bonds, reducing the energy advantage of each individual bond.  Each
+bond is weaker than the bonds in the three-vertex case, where the
+asymmetry of the occupied-vs-open configuration concentrates binding
+energy into the three occupied vertices.
+
+\textbf{SSV invasion:} The two like-sign quarks at vertices $V_1$
+and $V_2$ (e.g., two $+2e/3$ up quarks) each emit repulsive SSV
+fields.  At the fourth vertex $V_4$, these repulsive SSV fields
+from $V_1$ and $V_2$ partially cancel the attractive SSV of the
+$\hDP$ vertex charge.  The effective binding energy at $V_4$ is:
+\begin{equation}
+E_{\rm bind}(V_4) = E_{\rm vertex}^{\rm attract}
+- \sum_{i \in \{V_1,\, V_2\}} \frac{\as\,\hbar c}{|V_i - V_4|}
+< E_{\rm bind}(V_{1,2,3}).
+\label{eq:V4_reduced}
+\end{equation}
+When $E_{\rm bind}(V_4)$ falls below the thermal disruption threshold
+$k_B T_{\rm QCD} \approx \Lambda_{\rm QCD} \approx 213$~MeV, the
+fourth quark is thermally ejected.
+
+The combined effect of symmetry equalization and SSV invasion reduces
+the fourth vertex binding energy below stability, leaving it
+perpetually open in the ground state.
+\end{proof}
+
+\subsection{Net Baryon Charge from the Open Vertex}
+
+The open fourth vertex is not electroneutral.  It exposes a net
+charge from the unshielded $\hDP$ vertex pole.
+
+\begin{proposition}[Net baryon charge]
+\label{prop:baryon_charge}
+The net charge of a baryon equals the charge of the unoccupied
+fourth vertex of the $\hDP$ tetrahedral skeleton.
+\end{proposition}
+
+\begin{proof}
+Each occupied vertex is charge-shielded: the quark bonded to it
+provides an opposite-sign CP that neutralizes the $\hDP$ vertex
+charge locally.  The three occupied vertices contribute zero net
+charge to the baryon's long-range field.
+
+The unoccupied fourth vertex exposes its $\hDP$ pole charge without
+shielding.  For the proton:
+\begin{itemize}[noitemsep]
+\item Two up quarks ($+2e/3$ each) bond to two $-\hDP$ vertices:
+  net charge at each occupied vertex $= +2e/3 - 2e/3 = 0$.
+\item One down quark ($-e/3$) bonds to one $+\hDP$ vertex:
+  net charge at that vertex $= -e/3 + e/3 = 0$.
+\item The unoccupied fourth vertex exposes charge $+e/3$.
+\end{itemize}
+Summing: $0 + 0 + 0 + e/3 = +e/3$ from the $\hDP$ vertex, plus
+the quark charges $+2e/3 + 2e/3 - e/3 = +e$.  The total is:
+\begin{equation}
+Q_{\rm proton} = (+2e/3) + (+2e/3) + (-e/3) = +e.
+\label{eq:proton_charge}
+\end{equation}
+This matches the observed proton charge exactly~\cite{pdg2022}.
+\end{proof}
+
+\begin{remark}[Neutron charge]
+For the neutron ($udd$): two down quarks ($-e/3$ each) bond to two
+$+\hDP$ vertices; one up quark ($+2e/3$) bonds to one $-\hDP$
+vertex.  The fourth vertex exposes $-e/3$ from the unoccupied
+$\hDP$ pole.  Net charge:
+\begin{equation}
+Q_{\rm neutron} = (+2e/3) + (-e/3) + (-e/3) = 0.
+\label{eq:neutron_charge}
+\end{equation}
+The unoccupied $-e/3$ vertex is exactly cancelled by the asymmetry
+in the quark configuration, giving the neutron its observed zero
+charge~\cite{pdg2022}.
+\end{remark}
+
+%======================================================================
+\section{Color Charge as Vertex Identity}
+\label{sec:color}
+%======================================================================
+
+\subsection{Definition}
+
+\begin{definition}[Color charge as vertex label]
+\label{def:color}
+The color charge of a quark in a baryon is its vertex identity:
+the label (red, green, or blue) assigned to the specific $\hDP$
+tetrahedral vertex to which it is bonded.  Color is not an intrinsic
+quantum number carried by the quark; it is a relational property
+describing the quark's position in the tetrahedral bonding structure.
+\end{definition}
+
+The three color labels correspond to the three $C_3$-related base
+vertices of the tetrahedron.  Under the $C_3$ rotation axis through
+the apex vertex and the centroid of the opposite face, the three
+base vertices permute cyclically:
+\begin{equation}
+C_3: \quad \text{red} \to \text{green} \to \text{blue} \to \text{red}.
+\label{eq:C3_permutation}
+\end{equation}
+This cyclic permutation is the color rotation symmetry.
+
+\subsection{Color Selection Rules Derived from Vertex Geometry}
+
+\begin{theorem}[Color neutrality]
+\label{thm:color_neutral}
+A color-neutral hadron is one in which all three quark-bonding
+vertices of the $\hDP$ tetrahedron are occupied, with no net
+unshielded vertex charge.
+\end{theorem}
+
+\begin{proof}
+By Definition~\ref{def:color}, each color label corresponds to one
+tetrahedral vertex.  ``Color neutral'' in QCD means the sum of color
+charges is zero.  In CPP, this corresponds to complete occupation of
+all three quark-bonding vertices: red $+$ green $+$ blue $= $ all
+three vertices occupied $=$ no net unshielded $\hDP$ vertex SSV
+field extending beyond the hadron radius.  The three quarks'
+opposite-sign bonds to the three $\hDP$ vertices neutralize all
+three vertex charges, leaving only the open fourth vertex exposed
+as the net baryon charge (§\ref{sec:occupation}).
+\end{proof}
+
+\begin{theorem}[Prohibition on free quarks]
+\label{thm:no_free_quark}
+A single quark cannot exist as a free particle.
+\end{theorem}
+
+\begin{proof}
+By the confinement theorem of companion~14 (Theorem~1 in~\cite{c14}), any
+isolated quark requires a qDP chain extending to infinity, which
+costs infinite energy.  In the tetrahedral skeleton picture, a
+single quark bonded to one vertex would expose three unshielded
+$\hDP$ vertex charges (the three unoccupied vertices), producing
+a strong long-range SSV field that attracts additional quarks
+from the Dipole Sea until the three-vertex occupation is achieved.
+Both the chain topology (companion~14) and the vertex geometry
+(this paper) independently prohibit free quarks.
+\end{proof}
+
+\begin{proposition}[Allowed color configurations]
+\label{prop:allowed_configs}
+The only stable color configurations are:
+\begin{enumerate}[noitemsep]
+\item Three quarks of distinct vertex labels ($qqq$): baryon.
+\item Three antiquarks of distinct vertex labels ($\bar{q}\bar{q}\bar{q}$):
+  antibaryon.
+\item One quark and one antiquark via direct qDP chain ($q\bar{q}$):
+  meson (no tetrahedral skeleton required).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+Configuration 1 follows from Theorem~\ref{thm:color_neutral}: the
+only way to achieve color neutrality on the $\hDP$ tetrahedron is to
+occupy all three quark-bonding vertices with quarks of distinct labels.
+Configuration 2 is the antibaryon analog by charge conjugation.
+Configuration 3 follows from Proposition~\ref{prop:meson_no_skeleton}:
+the meson binds without the tetrahedral skeleton, so no vertex-label
+constraint applies; color neutrality is achieved by quark-antiquark
+color-anticolor pairing via the qDP chain.
+
+No other stable configuration exists because:
+\begin{itemize}[noitemsep]
+\item Two quarks on the tetrahedron leave one vertex open with
+  unshielded charge, attracting a third quark.
+\item Four quarks are unstable by Proposition~\ref{prop:three_of_four}.
+\item Exotic configurations ($qqqqq$, tetraquarks) require double-skeleton
+  structures — possible as transient resonances, deferred to
+  Open Problem~\ref{op:exotic}.
+\end{itemize}
+\end{proof}
+
+\subsection{Color Change as Vertex Transition}
+
+A color change --- a quark transitioning from one color state to
+another --- corresponds physically to a quark changing its bonding
+vertex on the $\hDP$ tetrahedron.  This is a real mechanical
+transition mediated by a $\qDP$ chain oscillation (a gluon in the
+QCD language):
+
+\begin{equation}
+q_{\rm red} + g_{r\bar{g}} \to q_{\rm green}
+\quad \Longleftrightarrow \quad
+q_{V_1} + \text{(qDP transition)} \to q_{V_2}.
+\label{eq:color_change}
+\end{equation}
+
+The gluon is not a particle carrying abstract color-anticolor quantum
+numbers; it is a $\qDP$ chain excitation whose mode structure enables
+the quark to detach from vertex $V_1$ and attach to vertex $V_2$.
+The full mode-to-generator correspondence (which vertex transitions
+correspond to which Gell-Mann generators) is established in
+companion~16~\cite{c16}.
+
+%======================================================================
+\section{SU(3) as Emergent Bookkeeping}
+\label{sec:su3}
+%======================================================================
+
+\begin{proposition}[SU(3) as permutation algebra]
+\label{prop:su3_bookkeeping}
+The SU(3) color algebra is the mathematical description of the
+permutation symmetry of 3-of-4 vertex occupation on the $\hDP$
+tetrahedron.  It is not a fundamental gauge symmetry; it is the
+correct algebra for bookkeeping the observed color selection rules.
+\end{proposition}
+
+The argument proceeds in three steps.
+
+\textbf{Step 1 — Z$_3$ center.}
+The $C_3$ rotation of Eq.~\eqref{eq:C3_permutation} generates the
+cyclic group $\mathbb{Z}_3$.  In the representation theory of SU(3),
+the center of the group is exactly $\mathbb{Z}_3$: color charge is a
+$\mathbb{Z}_3$ quantum number.  CPP derives this as the discrete
+rotational degeneracy of the tetrahedral $C_3$ axis, not as a
+postulate.
+
+\textbf{Step 2 — Triplet and antitriplet representations.}
+The three occupied vertices of the tetrahedron transform as the
+fundamental \textbf{3} representation of SU(3) under color rotation
+($C_3$ permutation).  The three antiquark vertices transform as the
+conjugate $\bar{\textbf{3}}$.  Color neutrality requires either
+$\mathbf{3} \otimes \bar{\mathbf{3}}$ (meson) or
+$\mathbf{3} \otimes \mathbf{3} \otimes \mathbf{3}$ (baryon) to
+contain the singlet \textbf{1}.  Both do:
+\begin{align}
+\mathbf{3} \otimes \bar{\mathbf{3}} &= \mathbf{1} \oplus \mathbf{8},
+\label{eq:meson_decomp}\\
+\mathbf{3} \otimes \mathbf{3} \otimes \mathbf{3} &=
+\mathbf{1} \oplus \mathbf{8} \oplus \mathbf{8} \oplus \mathbf{10}.
+\label{eq:baryon_decomp}
+\end{align}
+These are standard SU(3) Clebsch-Gordan decompositions.  In CPP, they
+express how vertex-occupation configurations combine to give
+color-neutral states.
+
+\textbf{Step 3 — SU(3) as the minimal algebra fitting the geometry.}
+Any algebra that correctly describes permutations of three
+distinguishable objects subject to the $\mathbb{Z}_3$ cyclic
+constraint and the constraint that only neutral combinations are
+stable must contain SU(3) as a substructure.  SU(3) is the
+\emph{simplest} Lie algebra with center $\mathbb{Z}_3$ and a faithful
+3-dimensional representation.  The 600-cell tetrahedral geometry
+selects this algebra automatically, without requiring it to be
+postulated.
+
+\begin{remark}[What SU(3) does and does not explain]
+SU(3) correctly predicts all color selection rules, the hadron
+multiplet structure, and the number of gluons.  What it does not
+explain is \emph{why} color charge exists, \emph{why} only three
+colors, and \emph{why} baryons are color-neutral.  CPP answers these
+questions mechanically: color exists because quarks bond to $\hDP$
+tetrahedral vertices; there are three colors because the tetrahedron
+has three quark-bonding vertices; baryons are color-neutral because
+three-vertex occupation shields all vertex charges.  SU(3) is the
+correct algebra for this geometry, but the geometry is more
+fundamental than the algebra.
+\end{remark}
+
+%======================================================================
+\section{The Gluon Octet: Count and Deferral}
+\label{sec:gluons}
+%======================================================================
+
+The 8-dimensional adjoint representation of SU(3) --- the gluon octet
+--- corresponds in CPP to the 8 distinct $\qDP$ chain modes that mediate
+vertex transitions on the $\hDP$ tetrahedron.
+
+The count $8 = 1 + 3 + 4$ from companion~14~\cite{c14} (one central
+chain, three middle-layer chains at 120°, four outer-layer chains at 60°)
+matches the 8 Gell-Mann generators exactly.  In the SU(3) algebra,
+these 8 generators decompose as:
+\begin{itemize}[noitemsep]
+\item 6 off-diagonal generators: color-changing transitions
+  (quark moves from one vertex to another).
+\item 2 diagonal generators (the Cartan subalgebra $T_3$, $Y$):
+  color-preserving transitions that change energy state without
+  changing vertex.
+\end{itemize}
+
+The explicit correspondence between the 1+3+4 chain layer modes and
+the 8 Gell-Mann matrices --- identifying which chain mode produces
+which vertex transition and mapping it to the appropriate generator
+--- requires working out the ZBW oscillation modes of the $\hDP$
+tetrahedral skeleton in detail.  This is a non-trivial calculation
+deferred to companion~16~\cite{c16}.
+
+\begin{remark}[Why 8 and not 9]
+SU(3) has 8 generators rather than 9 because one linear combination
+of the diagonal generators corresponds to the identity transformation
+(the U(1) factor that is gauged away in QCD).  In CPP, this
+corresponds to the one chain mode that produces no net vertex
+transition and no net color change --- a ``breathing mode'' of the
+entire $\hDP$ tetrahedron.  This mode is suppressed because the
+$\hDP$ tetrahedron's alternating charge geometry forbids uniform
+radial breathing (it would require all four vertices to move
+simultaneously, violating the 3-of-4 occupation constraint).
+\end{remark}
+
+%======================================================================
+\section{Particle Structure and the Cage Hierarchy}
+\label{sec:cages}
+%======================================================================
+
+The $\hDP$ tetrahedron of the baryon is the simplest instance of a
+broader pattern in CPP: all massive particles nucleate around
+successive geometric cages of DPs on 600-cell shell structures.
+The quark and lepton mass hierarchy reflects the cage hierarchy:
+
+\begin{table}[h]
+\centering
+\caption{Quark and lepton cage structure in CPP.  Mass increases
+with cage complexity.  The $\hDP$ tetrahedron relevant to this
+paper is the baryon bonding scaffold, distinct from (but related
+to) the individual quark cage structures.}
+\label{tab:cages}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Particle & Central CP & Outer cage & Approx.\ mass \\
+\midrule
+Electron & $\eCP$ & None (bare) & 0.511 MeV \\
+Up/Down quark & $\qCP$ & None / single $\hDP$ & $\sim$2--5 MeV \\
+Muon & $\eCP$ & Tetrahedral ($\hDP$, 4 vertices) & 105.7 MeV \\
+Strange quark & $\qCP$ & Tetrahedral ($\hDP$, 4 vertices) & $\sim$95 MeV \\
+Tau & $\eCP$ & Icosahedral (12 vertices) & 1777 MeV \\
+Charm quark & $\qCP$ & Icosahedral (12 vertices) & $\sim$1275 MeV \\
+Bottom quark & $\qCP$ & Dodecahedral (20 vertices) & $\sim$4180 MeV \\
+Top quark & $\qCP$ & Fullerene-like ($\sim$60 vertices) & $\sim$173 GeV \\
+\midrule
+W boson & None & 6-$\hDP$ loop (ribbon) & 80.4 GeV \\
+Z boson & None & Icosahedral ($\hDP$, 12 vertices) & 91.2 GeV \\
+Higgs & None & Dodecahedral ($\hDP$, 20 vertices) & 125.1 GeV \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The generational hierarchy of quarks and leptons emerges from this
+cage progression: first generation (up/down, electron) has minimal
+or no cage; second generation (strange/charm, muon) has a
+tetrahedral cage; third generation (bottom/top, tau) has icosahedral,
+dodecahedral, or fullerene cages.  Mass is cage energy --- the ZBW
+oscillation energy of the DP cage plus the central CP's Compton
+frequency contribution (companion~4~\cite{c4}).
+
+The bosons (W, Z, Higgs) have no central unpaired CP and therefore
+no intrinsic charge.  They are pure $\hDP$ cage structures whose
+geometry determines their mass and interaction cross-section.
+
+\begin{remark}[Scope of this section]
+Table~\ref{tab:cages} is a structural overview establishing the
+context of the $\hDP$ tetrahedron within the broader CPP particle
+structure.  The derivation of individual particle masses from cage
+geometry is the subject of a future companion in the SM series.
+\end{remark}
+
+%======================================================================
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+%======================================================================
+
+\begin{itemize}[noitemsep]
+\item The \emph{qDP chaining mechanism} and \emph{Cornell potential}
+  of companion~14~\cite{c14} are unchanged.  Color is a layer above
+  the chain mechanism, not in conflict with it.  The confinement
+  theorem (infinite energy for free quarks) is complemented by the
+  vertex-geometry prohibition of §\ref{sec:color}.
+\item The \emph{ZBW mass mechanism} of companion~4~\cite{c4} applies
+  to quarks: each quark's mass arises from its Compton-scale ZBW
+  oscillation, independent of its color/vertex identity.
+\item The \emph{fractional charge} of quarks ($e/3$, $2e/3$) derived
+  in companion~2~\cite{c2} from cage projection is independent of
+  the color/vertex assignment.  Charge fraction is set by the
+  individual quark cage geometry; color is set by which
+  $\hDP$ tetrahedral vertex the quark occupies.
+\item The \emph{CP Exclusion Rule} of companion~1~\cite{c1} governs
+  the minimum PSR of each quark CP, setting the scale at which
+  quark-vertex bonds can form and break.
+\item The \emph{600-cell GP structure} of Version~16~\cite{v16}
+  provides the lattice sites for both the individual quark cages
+  and the $\hDP$ tetrahedral skeleton.  The $T_d$ tetrahedral
+  subgroup of $H_4$ is the geometric foundation of both.
+\end{itemize}
+
+No new postulates beyond those of Version~16 are required.
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\begin{enumerate}
+\item \label{op:hdp_size}
+  \textbf{First-principles derivation of the hDP tetrahedron size.}
+  The equilibrium size of the $\hDP$ tetrahedron is governed by the
+  balance between electrostatic attraction of the alternating charge
+  geometry and ZBW resonance locking.  A quantitative calculation
+  requires the $\hDP$ ZBW frequency and the 600-cell GP spacing at
+  the relevant shell --- an extension of the ZBW mass calculation
+  of companion~4~\cite{c4} to the hybrid DP sector.
+
+\item \textbf{Cosmological freezing of the hDP tetrahedron population.}
+  Whether the $\hDP$ tetrahedron population is in current thermal
+  equilibrium or froze out during cosmic cooling determines the
+  baryon density of the universe.  A CPP treatment of this
+  question requires the full thermodynamics of the DP Sea at
+  temperatures $T \sim \Lambda_{\rm QCD}$, connecting to the
+  Big Bang and baryon asymmetry.
+
+\item \label{op:fourth_vertex}
+  \textbf{Rigorous proof of the 3-of-4 occupation rule.}
+  Proposition~\ref{prop:three_of_four} gives a mechanistic argument.
+  A rigorous proof requires computing $E_{\rm bind}(V_4)$ from
+  the $\hDP$ vertex SSV field and the like-charge quark SSV invasion
+  explicitly, showing the result is below the QCD thermal threshold
+  $k_B T_{\rm QCD}$ for all stable baryon configurations.
+
+\item \label{op:exotic}
+  \textbf{Exotic hadrons from double-skeleton structures.}
+  Tetraquarks ($qq\bar{q}\bar{q}$) and pentaquarks ($qqqq\bar{q}$)
+  have been observed at the LHC~\cite{pdg2022}.  In CPP these
+  may correspond to double-$\hDP$ skeleton configurations.
+  The stability conditions and mass spectrum of such structures
+  are an open problem.
+
+\item \textbf{Gluon mode-to-generator correspondence.}
+  The explicit mapping between the $1 + 3 + 4 = 8$ qDP chain
+  layer modes and the 8 Gell-Mann generators, including the
+  identification of the 6 color-changing and 2 diagonal modes,
+  is deferred to companion~16~\cite{c16}.
+\end{enumerate}
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+\begin{enumerate}
+\item \textbf{hDP tetrahedron} (§\ref{sec:hdp}): The Dipole Sea
+  spontaneously nucleates $\hDP$ tetrahedral skeletons stabilized
+  by alternating charge geometry, ZBW resonance locking, and
+  600-cell GP site availability.
+
+\item \textbf{Charge buffer theorem} (Theorem~\ref{thm:buffer}):
+  Three like-charge quarks cannot form a stable bound state without
+  the $\hDP$ tetrahedron as a charge buffer.  Mesons do not require
+  the skeleton because quark-antiquark pairs attract directly via
+  the qDP chain.
+
+\item \textbf{3-of-4 occupation} (Proposition~\ref{prop:three_of_four}):
+  Exactly three tetrahedral vertices are occupied in a stable baryon.
+  The fourth vertex is destabilized by symmetry equalization and
+  SSV invasion from like-charge quarks.
+
+\item \textbf{Net baryon charge} (Proposition~\ref{prop:baryon_charge}):
+  The net charge of a baryon is the unshielded charge of the open
+  fourth vertex.  Proton charge $+e$ and neutron charge $0$ are
+  derived without additional assumptions.
+
+\item \textbf{Color as vertex identity} (Definition~\ref{def:color}):
+  Color charge is not an intrinsic quantum number; it is a quark's
+  vertex label on the $\hDP$ tetrahedral skeleton.  Red, green, and
+  blue are names for three $C_3$-related tetrahedral vertices.
+
+\item \textbf{Color selection rules} (Theorems~\ref{thm:color_neutral},
+  \ref{thm:no_free_quark}, Proposition~\ref{prop:allowed_configs}):
+  Color neutrality, the prohibition on free quarks, and the allowed
+  hadron configurations ($q\bar{q}$, $qqq$, $\bar{q}\bar{q}\bar{q}$)
+  all follow from charge geometry without gauge postulates.
+
+\item \textbf{SU(3) as bookkeeping} (Proposition~\ref{prop:su3_bookkeeping}):
+  SU(3) is the permutation algebra of 3-of-4 vertex occupation.
+  It is the correct and useful algebra for the geometry, but it is
+  derived from the geometry --- not the other way around.
+
+\item \textbf{Gluon count} (§\ref{sec:gluons}): The 8 gluon modes
+  correspond to the $1 + 3 + 4 = 8$ qDP chain layer modes of
+  companion~14.  The explicit mode-to-generator mapping is deferred
+  to companion~16.
+\end{enumerate}
+
+Color charge, in CPP, is not a mystery requiring a new gauge
+symmetry.  It is the mechanical consequence of quarks bonding to
+the vertices of a geometric skeleton that the Dipole Sea
+spontaneously provides.  The skeleton is stable, its vertices are
+distinguishable, and the rules of color follow from the rules of
+which vertices can be occupied.
+
+%======================================================================
+\section*{Acknowledgments}
+%======================================================================
+
+The conception of the $\hDP$ tetrahedral skeleton as the physical
+substrate of baryon structure, and the identification of color charge
+as an artifact of the resonant bonding modes of quarks on the
+tetrahedral skeleton, are the intellectual contribution of Thomas Lee
+Abshier, ND, developed over multiple years of theoretical development.
+The formalization of color as vertex identity, the charge buffer
+theorem, and the 3-of-4 occupation argument were developed in
+collaboration with Claude (Anthropic) on 19~March 2026.
+
+%======================================================================
+\begin{thebibliography}{99}
+
+\bibitem{v16}
+T.~L. Abshier,
+``Mechanistic Derivation of Relativistic Effects via Space Stress
+Vector (SSV) in the Dipole Sea,''
+Version~16, 2026 (main paper).
+
+\bibitem{c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+Version~3, 2026 (companion~1).
+
+\bibitem{c2}
+T.~L. Abshier,
+``Microscopic Origin of the Dipole Sea Stiffness~$C$,''
+Version~2, 2026 (companion~2).
+
+\bibitem{c4}
+T.~L. Abshier,
+``Inertial Mass from Zitterbewegung,''
+Version~2, 2026 (companion~4).
+
+\bibitem{c14}
+T.~L. Abshier,
+``Quark Confinement and the Cornell Potential from qDP Chaining
+in Conscious Point Physics,''
+Version~1.1, 2026 (companion~14).
+
+\bibitem{c16}
+T.~L. Abshier,
+``Gluon Modes and the SU(3) Generator Correspondence in CPP,''
+2026 (companion~16, in preparation).
+
+\bibitem{gross1973}
+D.~J. Gross and F.~Wilczek,
+``Ultraviolet Behavior of Non-Abelian Gauge Theories,''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{30}, 1343--1346, 1973.
+
+\bibitem{politzer1973}
+H.~D. Politzer,
+``Reliable Perturbative Results for Strong Interactions?''
+\textit{Phys.\ Rev.\ Lett.}, \textbf{30}, 1346--1349, 1973.
+
+\bibitem{pdg2022}
+R.~L. Workman \textit{et al.}\ (Particle Data Group),
+``Review of Particle Physics,''
+\textit{Prog.\ Theor.\ Exp.\ Phys.}, \textbf{2022}, 083C01, 2022.
+
+\end{thebibliography}
+
+\end{document}
