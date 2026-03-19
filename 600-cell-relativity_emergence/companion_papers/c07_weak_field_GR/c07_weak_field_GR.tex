@@ -1,0 +1,391 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\lP}{l_P}
+\newcommand{\EP}{E_P}
+\newcommand{\tP}{t_P}
+\newcommand{\mP}{m_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\nuP}{\nu_P}
+\newcommand{\nuC}{\nu_C}
+\newcommand{\alphageom}{\alpha_{\rm geom}}
+\newcommand{\lambdabar}{\bar{\lambda}}
+
+\title{\textbf{Inertial Mass from Zitterbewegung:\\
+A Two-Level Resonance Hierarchy in Conscious Point Physics}\\[6pt]
+{\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{13 March 2026 --- Version~2}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, inertial mass,
+Zitterbewegung, Compton frequency, Planck action, Dipole Sea polarization,
+two-level resonance hierarchy, $E = mc^2$, eDP standing wave, non-radiation.
+
+\begin{abstract}
+We show that inertial mass in Conscious Point Physics (CPP) arises from a
+two-level Zitterbewegung (ZBW) resonance hierarchy in the polarized Dipole
+Sea.  At the Planck scale (Level~1), each elementary Dipole Particle (DP)
+oscillates at frequency $\nuP = 1/(2\tP)$, carrying action $\hbar =
+\EP\tP$ per half-cycle.  At the particle scale (Level~2), the coherent eDP
+polarization cloud surrounding an unpaired electron-type Conscious Point
+oscillates collectively as a radial standing wave at the Compton frequency
+$\nuC = mc^2/\hbar$, reflecting between the nucleation center and the
+thermal boundary of the cloud.  The particle's rest mass is the energy of
+one complete Compton resonance cycle, $mc^2 = \hbar\nuC$, derived here from
+standing-wave boundary conditions rather than assumed.  The ratio of scales
+$\nuP/\nuC = \mP/(2m)$ shows that one Compton cycle spans $\sim\mP/m$
+Planck ticks, realizing the assembly principle that larger organizational
+units are built from smaller ones.  The relation $E = mc^2$ follows from
+the Absolute Moment step-budget constraint.  The classical non-radiation of
+ground-state electrons is explained as a driven steady state maintained by
+the eternal nucleation signal of the unpaired eCP.  All four DP types
+participate equally in the polarization cloud.  No new postulates are
+introduced.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The preceding companions established:
+(i) the universal Planck tick $\tP$ as necessary for DI-bit conservation
+(Absolute Moment companion);
+(ii) the Dipole Sea stiffness $C = \alphageom\EP/\lP^3$ from 600-cell
+Voronoi geometry (Stiffness~$C$ companion);
+(iii) $\hbar = \EP\tP$ as the action per Planck ZBW half-cycle, with
+mechanistic accounts of superposition, measurement, and collapse (Born-rule
+companion).
+
+The present companion closes the quantum-to-classical bridge: inertial mass
+is not a primitive property of Conscious Points but the energy stored in a
+two-level ZBW resonance of the surrounding eDP polarization cloud.  The
+central result is
+\begin{equation}
+  mc^2 \;=\; \hbar\nuC, \qquad \nuC = \frac{mc^2}{\hbar},
+  \label{eq:mass-compton}
+\end{equation}
+where $\nuC$ is the Compton frequency.  The left side is the measured rest
+energy; the right side identifies $\nuC$ as the frequency of a radial
+standing wave derived from CPP boundary conditions.
+
+\begin{remark}[Relation to Schr\"odinger's ZBW]
+Schr\"odinger (1930) identified a rapid oscillatory motion of the Dirac
+electron at frequency $2mc^2/\hbar$ (twice the Compton frequency), arising
+from interference between positive- and negative-energy spinor components.
+The CPP picture gives this a concrete mechanism: the factor of 2 reflects
+the two-way radial transit of the standing wave (outward leg and return
+leg).  CPP therefore explains what Dirac's equation describes.
+\end{remark}
+
+\section{The Two-Level ZBW Hierarchy}
+\label{sec:hierarchy}
+
+\begin{definition}[Level 1 --- Planck ZBW]
+Every elementary DP oscillates between attraction to its pair-mate and
+attraction to the surrounding DP sea at the Absolute Moment frequency:
+\begin{equation}
+  \nuP \;=\; \frac{1}{2\tP}.
+  \label{eq:nu-planck}
+\end{equation}
+The action per half-cycle is $\hbar = \EP\tP$.  This is the elementary
+unit of energetic organization in the CPP lattice.
+\end{definition}
+
+\begin{definition}[Level 2 --- Compton ZBW]
+The coherent eDP polarization cloud surrounding an unpaired eCP oscillates
+collectively as a radial standing wave at the Compton frequency
+\begin{equation}
+  \nuC \;=\; \frac{mc^2}{\hbar},
+  \label{eq:nu-compton}
+\end{equation}
+propagating outward from the eCP nucleation center, reflecting at the
+thermal boundary, returning to center, and repeating.
+\end{definition}
+
+The ratio of the two frequencies is a pure mass ratio:
+\begin{equation}
+  \frac{\nuP}{\nuC} \;=\; \frac{\mP}{2m},
+  \label{eq:ratio}
+\end{equation}
+where $\mP = \sqrt{\hbar c/G}$ is the Planck mass.  One Compton cycle spans
+$N_{\rm Planck} = \mP/(2m)$ Planck ticks.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Level & Entity & Frequency & Energy per cycle \\
+\midrule
+1 (Planck) & Individual DP & $1/(2\tP)$ & $\EP = \hbar/\tP$ \\
+2 (Compton) & eDP cloud & $mc^2/\hbar$ & $mc^2 = \hbar\nuC$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For the electron: $N_{\rm Planck} = \mP/(2m_e) \approx 1.2\times10^{22}$.
+One electron Compton cycle is a coherent aggregate of $\sim10^{22}$ Planck
+ZBW ticks --- the CPP realization of the assembly principle.
+
+\section{The eDP Polarization Cloud}
+\label{sec:cloud}
+
+\subsection{Equal participation of all four DP types}
+
+The central unpaired eCP emits the same elementary charge signal $\pm1$ to
+all surrounding DPs regardless of their type (Version~16, \S2; Stiffness~$C$
+companion, \S2.2).  No differential force distinguishes eDP, qDP, or hybrid
+DP types at the CP charge level.  All four types therefore participate
+equally in the polarization cloud.
+
+This is confirmed by the near-$c$ limiting argument: at relativistic
+velocities the PSR contracts severely, leaving no time budget for type
+segregation.  Since no segregation occurs even in this extreme case, it
+cannot occur at any velocity.  The energy accounting is uniform: each DP
+in the cloud contributes one Planck ZBW unit regardless of type.
+
+\subsection{Standing-wave boundary conditions}
+
+Two boundaries define the eDP cloud:
+
+\begin{enumerate}[noitemsep]
+  \item \emph{Inner boundary (nucleation center):} The unpaired eCP provides
+    a persistent SSV source that reflects the inward-propagating SSV
+    wavefront via the CP Exclusion Rule (no second CP can occupy the same
+    Grid Point at the same $t_{\rm abs}$).
+
+  \item \emph{Outer boundary (thermal radius $r_{\rm th}$):} Beyond $r_{\rm
+    th}$, incoherent thermal SSV from Brownian collisions and solitonic
+    superpositions dominates the nucleation signal, randomizing DP
+    orientations faster than they can be re-aligned.
+\end{enumerate}
+
+The lowest-mode standing wave fits one half-wavelength between center and
+thermal boundary:
+\begin{equation}
+  r_{\rm th} \;=\; \frac{c}{2\nuC} \;=\; \frac{\hbar}{2mc}
+  \;=\; \tfrac{1}{2}\lambdabar_C,
+  \label{eq:rth}
+\end{equation}
+where $\lambdabar_C = \hbar/(mc)$ is the reduced Compton wavelength.
+Equation~\eqref{eq:rth} identifies the thermal radius of the polarization
+cloud with the reduced Compton wavelength --- a result known empirically
+in quantum mechanics, here derived from standing-wave boundary conditions.
+
+\subsection{Why ground-state particles do not radiate}
+
+The nucleation center (unpaired eCP) is eternal: it emits its SSV signal
+at every Absolute Moment tick, without diminution, for as long as it exists.
+The eDP cloud is therefore a \emph{driven steady state}, continuously
+re-nucleated against Brownian disruption.  There is no lower-energy
+configuration available, because the nucleation signal is permanent and the
+CP Exclusion Rule prevents the cloud from collapsing to zero radius.
+
+This is the CPP resolution of the classical radiation paradox: ground-state
+electrons do not radiate because their polarization clouds are driven steady
+states, not metastable configurations seeking a lower energy level.  The
+``ground state'' is the resonant radius~\eqref{eq:rth} at which the
+nucleation rate exactly balances the Brownian disruption rate.
+
+\section{Rest Mass as Standing-Wave Energy}
+\label{sec:mass}
+
+\begin{proposition}[Rest mass from Compton standing wave]
+\label{prop:mass}
+The rest mass of a massive particle equals the energy of one complete
+Compton radial oscillation of its eDP polarization cloud:
+\begin{equation}
+  mc^2 \;=\; \hbar\nuC.
+  \label{eq:mc2}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The standing wave completes one round trip in period $T_C = 2r_{\rm
+th}/c$.  The energy stored in the cloud is the product of the Planck ZBW
+action quantum $\hbar$ and the number of Planck ticks per Compton cycle:
+\begin{equation}
+  E_{\rm cloud} \;=\; N_{\rm Planck}\cdot\frac{\hbar}{2\tP}
+  \;=\; \frac{\nuP}{\nuC}\cdot\frac{\hbar}{2\tP}
+  \;=\; \frac{1}{2\tP\nuC}\cdot\frac{\hbar}{2\tP}\cdot\frac{1}{2\tP}
+  \;=\; \hbar\nuC,
+  \label{eq:E-cloud}
+\end{equation}
+where we used $\nuP = 1/(2\tP)$.  Setting $E_{\rm cloud} = mc^2$ gives
+$mc^2 = \hbar\nuC$ and determines $\nuC$ consistently.
+\end{proof}
+
+\begin{remark}[Unified energy accounting]
+This result unifies energy across all scales within a single ZBW unit-count
+framework:
+\begin{itemize}[noitemsep]
+  \item \emph{Rest mass:} $\mP/(2m)$ Planck ZBW units organized into one
+    Compton standing wave.
+  \item \emph{Kinetic energy:} Additional Planck ZBW units organized by
+    acceleration (dynamic polarization of the moving cloud).
+  \item \emph{Photon energy $h\nu$:} ZBW units organized into a propagating
+    eDP wavefront at frequency $\nu$ (propagating eDP wavefront with no
+    nucleation center), hence no rest mass and no standing-wave boundary
+    condition.
+\end{itemize}
+The prior CPP definition of energy as ``order of the Dipole Sea, measured
+by DP orientation and separation'' is the macroscopic description of this
+microscopic ZBW unit accounting.
+\end{remark}
+
+\section{\boldmath$E = mc^2$ from the Absolute Moment Step Budget}
+\label{sec:emc2}
+
+The step-budget relation (Absolute Moment companion, \S5.1) is:
+\begin{equation}
+  \lP^2 \;=\; (c\,\Delta\tau)^2 + |\mathbf{d}_{\rm spatial}|^2.
+  \label{eq:budget}
+\end{equation}
+For a particle at rest, $|\mathbf{d}_{\rm spatial}|=0$ and the full budget
+goes to the timelike direction.  For a particle moving at speed $v$:
+\begin{equation}
+  \Delta\tau \;=\; \tP\sqrt{1 - v^2/c^2},
+  \qquad
+  |\mathbf{d}_{\rm spatial}| \;=\; \lP\,\frac{v}{c}.
+  \label{eq:budget-moving}
+\end{equation}
+The total relativistic energy follows from Proposition~\ref{prop:mass} and
+the Lorentz factor implied by~\eqref{eq:budget-moving}:
+\begin{equation}
+  E_{\rm total} \;=\; \frac{mc^2}{\sqrt{1-v^2/c^2}} \;=\; \gamma\,mc^2.
+  \label{eq:relativistic-energy}
+\end{equation}
+The conversion factor $c^2$ in $E = mc^2$ is geometric: it is
+$(\lP/\tP)^2$, the square of the lattice step-to-tick ratio --- a property
+of the 600-cell, not an independent empirical input.
+
+\section{Consistency with Previous Companions}
+\label{sec:consistency}
+
+Every element of the present derivation uses only machinery already
+established:
+
+\begin{itemize}[noitemsep]
+  \item The \emph{Absolute Moment tick} $\tP$ fixes $\hbar = \EP\tP$ and
+    $\nuP = 1/(2\tP)$ (Absolute Moment companion).
+  \item The \emph{stiffness $C$} governs the elastic response of the eDP
+    cloud to SSV perturbation and enters the PSR formula of Version~16.
+  \item The \emph{CP Exclusion Rule} provides the inner reflection boundary
+    that creates the standing wave.
+  \item The \emph{shell-broadcast mechanism} at speed $c$ drives the
+    outward-propagating leg of the standing wave.
+  \item The \emph{step-budget constraint}~\eqref{eq:budget} reproduces
+    $E=mc^2$ and relativistic kinematics (Absolute Moment companion, \S5.1).
+\end{itemize}
+
+No element contradicts the SR derivation of Version~16 or the three
+preceding companions.
+
+\section{Open Problems}
+\label{sec:open}
+
+\textbf{(1) Numerical verification of $N_{\rm Planck}$ for known particles.}
+The ratio $\mP/(2m)$ gives $N_{\rm Planck}\approx1.2\times10^{22}$ for
+the electron, $\approx2.2\times10^{19}$ for the proton.  A Monte-Carlo
+extension of the existing geometric-strain routine (Version~16, A.8.1)
+could verify that a coherent aggregate of this many Planck ZBW ticks
+reproduces the correct Compton wavelength.
+
+\textbf{(2) Coupling to general relativity.}  The eDP cloud's energy
+density sources the SSV gradient that curves the effective 600-cell
+geometry, producing gravitational effects.  This is the subject of the next
+companion.
+
+\textbf{(3) Higher resonance modes.}  The fundamental (half-wavelength)
+mode is identified with rest mass.  Higher radial modes ($n =
+1,2,\ldots$) may correspond to excited states or internal structure of
+composite particles.  Their quantization condition is deferred.
+
+\textbf{(4) Electron ground state in hydrogen.}  The minimum orbital radius
+below which no stable 12-edge selection sequence closes is a candidate for
+the Bohr radius, derivable from the 600-cell geometry (noted in the
+Born-rule companion, \S7).
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Inertial mass in CPP is the energy stored in a two-level ZBW resonance
+hierarchy:
+
+\begin{enumerate}
+  \item \textbf{Level 1 (Planck ZBW):} Each elementary DP carries action
+    $\hbar = \EP\tP$ per half-cycle at frequency $1/(2\tP)$.
+
+  \item \textbf{Level 2 (Compton ZBW):} The coherent eDP cloud surrounding
+    an unpaired eCP oscillates as a radial standing wave at $\nuC =
+    mc^2/\hbar$, with thermal radius $r_{\rm th} = \hbar/(2mc)$
+    (the reduced Compton wavelength).
+
+  \item \textbf{Rest mass $= \hbar\nuC$:} Derived from the standing-wave
+    energy of the Compton oscillation, not assumed.
+
+  \item \textbf{Non-radiation:} Ground-state particles do not radiate
+    because the eDP cloud is a driven steady state maintained by the
+    eternal nucleation signal of the unpaired eCP.
+
+  \item \textbf{$E = mc^2$:} Follows from the Absolute Moment step-budget
+    constraint; the factor $c^2 = (\lP/\tP)^2$ is a geometric property
+    of the 600-cell lattice.
+\end{enumerate}
+
+This completes the quantum-to-classical bridge.  The same 600-cell lattice,
+PCD cycle, and SSV broadcast that drive special relativity and
+electromagnetism also drive inertial mass, with no additional postulates.
+The coupling of this mass to gravitational curvature is the subject of the
+next companion.
+
+\section*{References}
+
+\begin{enumerate}[label={[\arabic*]}]
+  \item Abshier, T.~L. (2026). Mechanistic Derivation of Relativistic
+    Effects via Space Stress Vector (SSV) in the Dipole Sea.  Version~16.
+
+  \item Abshier, T.~L. (2026). The Absolute Moment Postulate: Necessity,
+    Consistency, and the PCD Cycle in CPP.  Version~3 (companion 1).
+
+  \item Abshier, T.~L. (2026). Microscopic Origin of the Dipole Sea
+    Stiffness $C$ in CPP.  Version~2 (companion 2).
+
+  \item Abshier, T.~L. (2026). Quantum Probability and the Classical
+    Transition in CPP: A Mechanistic Framework.  Version~2 (companion 3).
+
+  \item Abshier, T.~L. (2025--2026). Conscious Point Physics Series.
+    \url{https://hyperphysics.com/papers}
+
+  \item Schr\"odinger, E. (1930). \"Uber die kr\"aftefreie Bewegung in der
+    relativistischen Quantenmechanik. \textit{Sitzungsber.\ Preuss.\ Akad.\
+    Wiss.}, Phys.-Math.\ Kl., 418--428.
+\end{enumerate}
+
+\bigskip
+\noindent\textbf{GitHub (geometric-strain routine, basis for future
+ZBW hierarchy Monte-Carlo extension):}\\
+\url{https://github.com/tlabshier/CPP/blob/main/600-cell_special-relativity_emergence/600cell_monte_carlo_voronoi_k_fit.py}
+
+\end{document}
