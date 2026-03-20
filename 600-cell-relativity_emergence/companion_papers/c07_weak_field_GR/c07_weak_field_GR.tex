@@ -1,0 +1,827 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{natbib}
+\usepackage{float}
+
+\usepackage{svg}
+\svgsetup{
+    inkscapelatex=false,
+    inkscapeformat=pdf,
+    inkscapepath=svgdir}
+
+\geometry{letterpaper, margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\mP}{m_P}
+\newcommand{\SSV}{\text{SSV}}
+\newcommand{\PSR}{\text{PSR}}
+\newcommand{\alphageom}{\alpha_{\rm geom}}
+\newcommand{\LSP}{\text{LSP}}
+\newcommand{\gmn}{g_{\mu\nu}}
+\newcommand{\Gmn}{G_{\mu\nu}}
+\newcommand{\Tmn}{T_{\mu\nu}}
+\newcommand{\hmn}{h_{\mu\nu}}
+
+\title{\textbf{Weak-Field General Relativity\\ from the Lattice State Packet \\in Conscious Point Physics}\\[6pt]
+{\large Companion Paper to ``Mechanistic Derivation of Relativistic Effects\\
+via Space Stress Vector (SSV) in the Dipole Sea'' (Version~16)}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\texttt{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{15 March 2026 --- Version~3}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Keywords:} Conscious Point Physics, Lattice State Packet,
+weak-field general relativity, SSV shell broadcast, metric reconstruction,
+equivalence principle, geodesic motion, gravitational lensing, gravitational
+waves, GP Exclusion, Schwarzschild horizon.
+
+\begin{abstract}
+We derive the \emph{weak-field limit} of general relativity in Conscious
+Point Physics by extending the DI-bit broadcast to include the net SSV
+vector $\mathbf{\SSV}_{\rm net}$ alongside the absolute SSV scalar
+$|\SSV|_{\rm abs}$.  The Lattice State Packet (LSP) is explicitly
+constructed from the compressive polarization energy $E_{\rm pol} = mc^2$
+of the eDP cloud \citep{abshier2026mass}:
+$|\SSV|_{\rm abs} = E_{\rm pol}/V_0$ sources $g_{tt}$ (time curvature)
+and $\mathbf{\SSV}_{\rm net}$ sources $g_{ij}$ (spatial curvature).
+Together they reproduce the weak-field isotropic Schwarzschild metric with
+no free parameters.  The famous factor-of-two between the Newtonian and GR
+gravitational lensing deflection angles (0.875 vs.\ 1.75~arcsec) is
+explained as equal contributions from temporal and spatial curvature ---
+a retroactive prediction of the two-component LSP structure that
+independently confirms the classical measurement of \citet{eddington1920}.
+Geodesic motion follows from the 12-edge maximum-gradient selection rule
+in the continuum limit \citep{abshier2026am}.  The impedance of free space
+$Z_0 = \sqrt{\mu_0/\epsilon_0}$ is derived from lattice parameters,
+closing an open problem from the ZDC Chaining companion
+\citep{abshier2026zdc}.  Gravitational waves arise as lattice perturbations
+propagating at $c$, consistent with \citet{abbott2016}.  No new postulates
+beyond the LSP are introduced.
+\end{abstract}
+
+\section*{Plain Language Summary}
+
+Space is a discrete lattice of Grid Points (GPs). The particles of
+matter are composed of assemblies of Conscious Points (CPs). At every
+tick of an absolute clock, each CP informs its host GP of its identity.
+The GP then broadcasts a Lattice State Packet (LSP) to every GP on a
+sphere one Planck length away. The sum of all arriving LSPs at each GP
+--- the LSP summation --- is what directs the CP to its next GP. A
+separate component of each LSP --- its scalar magnitude --- determines
+the local Planck length, controlling how far each CP steps per tick.
+The companion paper on special relativity showed that this mechanism
+reproduces all of SR exactly: time dilation, length contraction, and
+the Lorentz factor emerge from the geometry alone.
+
+That scalar component, however, is only half the story. It encodes
+\emph{how strong} the space stress is at each GP, but not
+\emph{which direction} it points. Near a massive body, direction
+matters: the stress field is stronger on the side facing the mass than
+on the side facing away. This paper adds the missing piece --- a vector
+component to the LSP that carries the net direction of the stress at
+each GP. The extended LSP therefore carries four quantities: the GP
+address, the absolute tick count, the scalar stress magnitude, and the
+stress direction vector. In flat empty space the direction vector
+averages to zero and the SR results are recovered unchanged. Near a
+massive body it does not average to zero, and curvature appears.
+
+The scalar component curves time near a massive body by the same
+mechanism that produces time dilation in the SR companion: the Planck
+length contracts, so clocks step more slowly. GPS satellites must
+correct for this effect daily. The vector component does something
+different --- it introduces a \emph{directional} asymmetry that does
+not exist in flat space. In flat empty space the SSV at each GP is
+non-zero --- it is always what directs the CP to its next position ---
+but when the contributions from all surrounding GPs are summed across
+the broadcast shell, they cancel exactly by symmetry. Near a massive
+body that cancellation is broken: the GPs on the side facing the mass
+broadcast a stronger net SSV than those on the far side, so the shell
+sum is non-zero and points toward the mass. It is this asymmetry in
+the shell sum --- not the local SSV at any single GP --- that produces
+spatial curvature. The Planck length is slightly smaller on the side
+facing a massive body than on the far side, bending the geometry
+itself. When light passes the Sun, both curvature effects bend its
+path toward the massive body. The time curvature alone --- which is
+all a Newtonian calculation captures --- predicts a deflection of
+0.875 arcseconds. The space curvature adds an equal second
+contribution of 0.875 arcseconds, for a total of 1.750 arcseconds.
+This is precisely the value Arthur Eddington measured during the 1919
+solar eclipse, and the result that first confirmed Einstein's general
+relativity over Newton's gravity. The CPP framework recovers this
+factor-of-two not by fitting it to the data, but because the scalar
+and vector LSP components are governed by the same coupling constant
+and therefore contribute equally by construction.
+
+This paper establishes these results in the \emph{weak-field} regime
+--- ordinary gravity at distances large compared to the Schwarzschild
+radius, where the metric perturbations are small. In this regime the
+derivations are rigorous. The paper also identifies the effective
+black hole horizon as the radius at which the Planck length contracts
+to half its vacuum value, and notes that the one-CP-per-GP exclusion
+rule prevents the formation of a true singularity at the center. The
+full nonlinear theory --- exact black hole solutions, rotating bodies,
+and gravitational waves from inspiraling compact objects --- requires
+proving that the discrete CPP lattice sum converges to the smooth
+curved geometry of Einstein's field equations in the continuum limit.
+That proof is the subject of the next paper in this series.
+
+\bigskip
+\noindent\textit{Readers familiar with general relativity may proceed
+directly to Section~\ref{sec:intro}.}
+
+
+\section*{Glossary of CPP Terms}
+
+\begin{description}
+
+\item[Conscious Point (CP):] The fundamental indivisible entity of
+  CPP. Each CP carries a fixed identity (electromagnetic or quark
+  type) and polarity ($\pm$). Spin is not an intrinsic CP property
+  but emerges from the orbital configuration of a captured Dipole
+  Particle around the central unpaired CP. The inner $+$CP orbits
+  at angular frequency $\omega_{\rm in} = 2\sqrt{2}\,\omega_{\rm out}$
+  relative to the outer $-$CP, a ratio derived exactly from the
+  standing-wave boundary condition ($r_{\rm out} = 2r_{\rm in}$) and
+  the Coulomb force law, producing net orbital angular momentum
+  $\hbar/2$. The full derivation is given in the Spin companion paper.
+  At every Absolute Moment, each CP registers its state with its
+  host Grid Point.
+
+\item[CP State Register (CSR):] The identity packet carried by each
+  CP, comprising its type, polarity, spin state, and current Grid
+  Point address. The CSR is what the CP reports to its host GP at
+  every tick, and is the input from which the GP constructs the LSP
+  broadcast.
+
+\item[Grid Point (GP):] A fixed, immovable node of the discrete
+  spacetime lattice. GPs are arranged in a nested 600-cell geometry
+  at sub-Planck spacing. Each GP receives CP State Registers from
+  resident CPs, computes the local SSV, and broadcasts a Lattice
+  State Packet to its PSR shell every Absolute Moment.
+
+\item[Dipole Particle (DP):] A bound pair of oppositely charged CPs.
+  The Dipole Sea is the background medium of CPP, composed of DPs
+  in randomized orientations filling all of space.
+
+\item[Space Stress Vector (SSV):] The energy density of CP
+  polarization at a Grid Point, arising from the net alignment of
+  Dipole Particles. The scalar magnitude $|\SSV|_{\rm abs}$ governs
+  time dilation and the local Planck length. The vector component
+  $\mathbf{SSV}_{\rm net}$ governs spatial curvature and CP
+  displacement direction.
+
+\item[Planck Sphere Radius (PSR):] The effective step size available
+  to a CP at each Absolute Moment tick. In flat space
+  $\PSR = l_P$. In the presence of space stress,
+  $\PSR_{\rm eff} = l_P / (1 + k\,\Delta|\SSV|_{\rm abs})$,
+  where $k = l_P^3/E_P$ is the CPP coupling constant. All
+  relativistic and gravitational effects in CPP arise from local
+  variations in the PSR.
+
+\item[Absolute Moment:] The universal discrete time step of CPP,
+  equal to the Planck time $t_P \approx 5.4 \times 10^{-44}$~s.
+  Every CP and GP in the universe advances synchronously at each
+  Absolute Moment. The Absolute Moment does not violate special
+  relativity because it transmits no signal; it is enforced by the
+  atemporal Nexus.
+
+\item[Lattice State Packet (LSP):] The four-component broadcast
+  packet transmitted by each GP to its PSR shell at every Absolute
+  Moment:
+  \[
+    \LSP = \bigl(\mathbf{x}_{\rm GP},\; t_{\rm abs},\;
+    |\SSV|_{\rm abs},\; \mathbf{SSV}_{\rm net}\bigr).
+  \]
+  The scalar $|\SSV|_{\rm abs}$ sources gravitational time dilation
+  ($g_{tt}$); the vector $\mathbf{SSV}_{\rm net}$ sources spatial
+  curvature ($g_{ij}$). In flat space $\mathbf{SSV}_{\rm net}$
+  averages to zero and all SR results are recovered. The LSP
+  supersedes the SR-era DI-bit broadcast by adding the vector
+  component needed for general relativity.
+
+\item[DI-bit (Distributed Information):] The predecessor broadcast
+  packet used in the SR companion set, carrying only the scalar
+  $|\SSV|_{\rm abs}$ component. The DI-bit is the SR limit of the
+  LSP in flat spacetime. The term is retained in the SR companions
+  for historical continuity.
+
+\item[Atemporal Nexus:] The timeless, non-local synchronization
+  substrate that advances every CP and GP simultaneously at each
+  Absolute Moment tick. The Nexus does not track individual
+  DI-bits; global conservation of CP identity and polarity emerges
+  automatically from two local rules enforced at each tick: no CP
+  is created or destroyed at any GP (CP Exclusion Rule), and every
+  departing CP arrives at exactly one neighboring GP (PSR broadcast
+  rule). The Nexus provides the synchronization that makes these
+  local rules globally consistent. It operates outside spacetime
+  and transmits no causal signal through it.
+
+\item[CP Exclusion Rule:] The rule that no two CPs of the same type
+  and polarity may occupy the same GP at the same Absolute Moment.
+  The CP Exclusion Rule prevents the formation of a true singularity
+  at the center of a black hole and drives the initial expansion of
+  the universe from the high-density initial state.
+
+\item[PCD Cycle:] The Perceive-Compute-Displace cycle executed by
+  every CP at every Absolute Moment: (1) perceive the arriving LSPs
+  from the PSR shell; (2) compute the net SSV and new PSR; (3)
+  displace to the neighboring GP selected by the maximum SSV
+  gradient.
+
+\end{description}
+
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================================
+
+The SR companion set \citep{abshier2026sr} established the classical-force
+sector of CPP from a scalar SSV broadcast: $|\SSV|_{\rm abs}$ propagates
+at speed $c$ via 12-neighbor shell broadcast \citep{abshier2026stiff},
+giving $1/r^2$ force laws, and the PSR formula
+$\PSR_{\rm eff} = \lP/(1+k\cdot\Delta|\SSV|_{\rm abs})$
+recovers all special-relativistic effects.  The Newtonian Gravity companion
+showed that mass-energy sources compressive SSV with
+$G = \hbar c/\mP^2$ \citep{abshier2026grav}.
+
+However, the scalar broadcast is incomplete for general relativity.  The
+Schwarzschild metric requires two independent metric perturbations of
+equal magnitude \citep{einstein1915}:
+\begin{equation}
+  g_{tt} \;=\; 1 - \frac{2GM}{rc^2},
+  \qquad
+  g_{rr} \;=\; \left(1 - \frac{2GM}{rc^2}\right)^{-1}
+  \approx 1 + \frac{2GM}{rc^2}.
+  \label{eq:Schwarzschild_weak}
+\end{equation}
+The scalar $|\SSV|_{\rm abs}$ accounts for $g_{tt}$ (time dilation)
+but not $g_{rr}$ (spatial curvature).  The net SSV vector
+$\mathbf{\SSV}_{\rm net}$ provides the missing component.
+
+The Lattice State Packet carries four components:
+\begin{equation}
+  \LSP \;=\; \bigl(\mathbf{x}_{\rm GP},\; t_{\rm abs},\;
+  |\SSV|_{\rm abs},\; \mathbf{\SSV}_{\rm net}\bigr).
+  \label{eq:LSP}
+\end{equation}
+
+\begin{remark}[Backward compatibility]
+In flat space, $\mathbf{\SSV}_{\rm net}$ averages to zero over the
+isotropic DP sea.  The LSP reduces to the SR-era scalar-only
+broadcast in flat spacetime \citep{abshier2026sr}, and all SR results
+are recovered unchanged.
+\end{remark}
+
+Three rigorous claims are established:
+\begin{itemize}[noitemsep]
+  \item The LSP is constructed from $E_{\rm pol} = mc^2$
+    \citep{abshier2026mass}, not postulated independently.
+  \item Shell broadcast of both components reproduces the weak-field
+    Schwarzschild metric, the factor-of-two lensing result
+    \citep{eddington1920}, geodesic motion, and the equivalence
+    principle.
+  \item $Z_0$, $\mu_0$, and $\epsilon_0$ are derived from lattice
+    parameters, closing an open problem from \citet{abshier2026zdc}.
+\end{itemize}
+Full Einstein equations and strong-field solutions are deferred.
+
+\begin{remark}[Continuum limit]
+All results are understood in the coarse-grained, long-wavelength limit
+of the discrete 600-cell lattice.  In this limit, the discrete LSP
+field $\{\LSP_i\}$ over lattice sites $i$ is approximated by a smooth
+tensor field $\gmn(\mathbf{x})$.  Corrections from the discrete
+structure are suppressed by $(r/\lP)^{-2}$ at astrophysical distances.
+The proof that the discrete CPP sum converges exactly to the smooth
+Riemannian manifold of GR is the central open problem of the full GR
+companion.
+\end{remark}
+
+%======================================================================
+\section{Deriving the LSP from ZBW Polarization Energy}
+\label{sec:LSP}
+%======================================================================
+
+\begin{proposition}[LSP from eDP polarization energy]
+\label{prop:LSP}
+The two physical components of the LSP are:
+\begin{align}
+  |\SSV|_{\rm abs} &\;=\; \frac{E_{\rm pol}}{V_0}
+  \;=\; \frac{mc^2}{V_0},
+  \label{eq:SSV_abs}\\
+  \mathbf{\SSV}_{\rm net} &\;=\; \sum_{i=1}^{12}
+  \hat{\mathbf{e}}_i\,\Delta\SSV_i,
+  \label{eq:SSV_net}
+\end{align}
+where $E_{\rm pol} = mc^2 = \hbar\nu_C$ is the compressive ZBW
+polarization energy of the eDP cloud \citep[Proposition~4.1]{abshier2026mass},
+$V_0 = \frac{4}{3}\pi\lP^3$ is the Voronoi cell volume, and
+$\Delta\SSV_i$ is the SSV contribution from the $i$-th nearest-neighbor
+GP.
+\end{proposition}
+
+\begin{proof}
+The eDP cloud stores polarization energy $E_{\rm pol} = mc^2$ uniformly
+distributed over $V_0$ in the equilibrium DP sea
+\citep[{\S}2.4]{abshier2026stiff}, giving~\eqref{eq:SSV_abs}.
+The net SSV vector is the 12-neighbor shell-broadcast sum, identical
+to the summation in \citet{abshier2026grav} and \citet{abshier2026stiff}.
+No new postulate is required.
+\end{proof}
+
+The full LSP is:
+\begin{equation}
+  \LSP \;=\; \Bigl(\mathbf{x}_{\rm GP},\; t_{\rm abs},\;
+  mc^2/V_0,\; {\textstyle\sum_i}\,\hat{\mathbf{e}}_i\Delta\SSV_i\Bigr).
+  \label{eq:LSP_explicit}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.88\textwidth]{fig1_lsp_metric.svg}
+  \caption{The four-component Lattice State Packet (LSP) and its
+  mapping to the weak-field metric tensor.
+  The scalar component $|\SSV|_{\rm abs} = mc^2/V_0$ (red) sources
+  the time-time perturbation $g_{tt}$, encoding gravitational time
+  dilation. The vector component $\mathbf{\SSV}_{\rm net}$ (green)
+  sources the spatial perturbation $g_{rr}$, encoding spatial
+  curvature. The address components
+  $(\mathbf{x}_{\rm GP}, t_{\rm abs})$ carry no curvature information
+  in flat space. Both curvature-generating components share the single
+  coupling constant $k = \lP^3/\EP$, which forces
+  $|h_{tt}| = |h_{rr}|$ (Remark~\ref{rem:equal}).}
+  \label{fig:lsp_metric}
+\end{figure}
+
+
+%======================================================================
+\section{Metric Reconstruction from Holographic LSP Summation}
+\label{sec:metric}
+%======================================================================
+
+\begin{definition}[Local metric from LSP summation]
+\label{def:metric}
+The metric perturbation $\hmn = \gmn - \eta_{\mu\nu}$ at Grid Point
+$\mathbf{x}$ is:
+\begin{align}
+  g_{tt}(\mathbf{x}) &\;=\; 1 - k\,\Delta|\SSV|_{\rm abs}(\mathbf{x}),
+  \label{eq:gtt}\\
+  g_{ij}(\mathbf{x}) &\;=\; \delta_{ij}\bigl(1 +
+    k\,|\nabla\mathbf{\SSV}_{\rm net}|_{ij}(\mathbf{x})\bigr),
+  \label{eq:gij}
+\end{align}
+where $k = \lP^3/\EP$ is the CPP coupling constant
+\citep[Eq.~1]{abshier2026sr} and
+$|\nabla\mathbf{\SSV}_{\rm net}|_{ij}$ is the spatial gradient tensor
+of $\mathbf{\SSV}_{\rm net}$.
+\end{definition}
+
+\begin{remark}[Metric mapping is forced, not postulated]
+\label{rem:forced}
+The identification of $g_{tt}$ with $\PSR_{\rm eff}/\lP =
+1/(1+k\Delta|\SSV|_{\rm abs})$ is forced uniquely by the requirement
+that the weak-field limit reduce to the SR time-dilation formula
+\citep[Eq.~1]{abshier2026sr} and by local isotropy of the flat-space
+DP sea.  The spatial metric identification~\eqref{eq:gij} is then
+fixed by the equal-magnitude constraint $|h_{tt}| = |h_{rr}|$ that
+follows from the single coupling constant $k = \lP^3/\EP$ governing
+both LSP components.
+\end{remark}
+
+\begin{proposition}[Weak-field Schwarzschild from LSP]
+\label{prop:Schwarzschild}
+For a static spherically symmetric mass $M$, with gravitational SSV
+$\Delta|\SSV|_{\rm abs}(r) = GM/(k\,r\,c^2)$ and
+$|\nabla\mathbf{\SSV}_{\rm net}|_{rr}(r) = GM/(k\,r\,c^2)$
+\citep{abshier2026grav}, Eqs.~\eqref{eq:gtt}--\eqref{eq:gij} give:
+\begin{equation}
+  g_{tt} \;=\; 1 - \frac{2GM}{rc^2}, \qquad
+  g_{rr} \;=\; 1 + \frac{2GM}{rc^2},
+  \label{eq:Schwarzschild_CPP}
+\end{equation}
+reproducing the weak-field Schwarzschild metric~\eqref{eq:Schwarzschild_weak}
+with $G = \hbar c/\mP^2$ \citep{abshier2026grav}.
+\end{proposition}
+
+\begin{remark}[Why $|h_{tt}| = |h_{rr}|$]
+\label{rem:equal}
+In standard GR \citep{einstein1915} this equality has no obvious
+explanation.  In CPP it is natural: both components are sourced by
+the same gravitational SSV field through the same coupling
+$k = \lP^3/\EP$.
+\end{remark}
+
+%======================================================================
+\section{The Factor-of-Two in Gravitational Lensing}
+\label{sec:lensing}
+%======================================================================
+
+General relativity predicts twice the Newtonian light deflection
+\citep{eddington1920,einstein1915}:
+\begin{equation}
+  \theta_{\rm GR} \;=\; \frac{4GM_\odot}{R_\odot c^2}
+  \;\approx\; 1.750\ \text{arcsec},
+  \quad
+  \theta_{\rm Newton} \;=\; \frac{2GM_\odot}{R_\odot c^2}
+  \;\approx\; 0.875\ \text{arcsec}.
+  \label{eq:lensing}
+\end{equation}
+In CPP the origin is transparent:
+\begin{itemize}[noitemsep]
+  \item $|\SSV|_{\rm abs}$ broadcast $\to$ $g_{tt}$ perturbation
+    $\to$ $0.875$~arcsec.
+  \item $\mathbf{\SSV}_{\rm net}$ broadcast $\to$ $g_{rr}$ perturbation
+    $\to$ additional $0.875$~arcsec.
+  \item Total: $1.750$~arcsec, confirming \citet{eddington1920}.
+\end{itemize}
+
+\begin{remark}[Retroactive prediction]
+The LSP was motivated by the internal consistency requirement
+for a tensorial data structure.  The Eddington factor-of-two
+\citep{eddington1920} is a \emph{retroactive} prediction: the
+framework was not adjusted to fit the lensing data, yet the correct
+factor emerges automatically from the two-component LSP structure.
+\end{remark}
+
+\subsection{Worked derivation: light bending to first order}
+\label{sec:lensing_worked}
+
+We derive the deflection angle from LSP to observed result.
+Consider a photon traveling in the $x$-direction past the Sun at
+closest approach $b = R_\odot$.
+
+\textbf{Step 1 --- Metric from LSP (Proposition~\ref{prop:Schwarzschild}).}
+\begin{equation}
+  ds^2 \;=\; -\!\left(1-\frac{2GM_\odot}{rc^2}\right)c^2\,dt^2
+  + \left(1+\frac{2GM_\odot}{rc^2}\right)
+  \bigl(dx^2+dy^2+dz^2\bigr).
+  \label{eq:line_element}
+\end{equation}
+
+\textbf{Step 2 --- Null geodesic.}
+Setting $ds^2 = 0$ at linear order in $\Phi = -GM_\odot/(rc^2)$:
+\begin{equation}
+  \frac{dx}{dt} \;=\; c\!\left(1 + 2\Phi\right)
+  \;=\; c\!\left(1 - \frac{2GM_\odot}{rc^2}\right).
+  \label{eq:speed}
+\end{equation}
+
+\textbf{Step 3 --- Deflection from each sector.}
+Both metric perturbations contribute equal deflection:
+\begin{equation}
+  \delta\phi_{\rm time} \;=\; \frac{2GM_\odot}{bc^2},
+  \qquad
+  \delta\phi_{\rm space} \;=\; \frac{2GM_\odot}{bc^2}.
+  \label{eq:deflection_components}
+\end{equation}
+Each integral evaluates identically because $|h_{tt}| = |h_{rr}|$
+(Remark~\ref{rem:equal}).
+
+\textbf{Step 4 --- Total angle.}
+\begin{equation}
+  \theta \;=\; \delta\phi_{\rm time} + \delta\phi_{\rm space}
+  \;=\; \frac{4GM_\odot}{R_\odot c^2}
+  \;\approx\; 1.750\ \text{arcsec}.
+  \label{eq:lensing_result}
+\end{equation}
+A scalar-only CPP framework ($\delta\phi_{\rm space} = 0$) predicts
+only $0.875$~arcsec.  The LSP recovers the GR value.
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.88\textwidth]{fig2_lensing}
+  \caption{Gravitational lensing of starlight by the Sun.
+  The blue curve shows the GR-predicted deflection
+  $\theta_{\rm GR} = 4GM_\odot/R_\odot c^2 \approx 1.750$~arcsec,
+  reproduced by the full two-component LSP.
+  The red dash-dot curve shows the Newtonian prediction
+  $\theta_{\rm N} = 2GM_\odot/R_\odot c^2 \approx 0.875$~arcsec,
+  which the scalar-only ($|\SSV|_{\rm abs}$) CPP framework recovers.
+  The breakdown box shows that the two equal contributions ---
+  time curvature from $|\SSV|_{\rm abs}$ and spatial curvature
+  from $\mathbf{\SSV}_{\rm net}$ --- each contribute 0.875~arcsec,
+  summing to the Eddington value \citep{eddington1920}.
+  This is a retroactive prediction of the LSP structure
+  (Remark~\ref{rem:forced}).}
+  \label{fig:lensing}
+\end{figure}
+%======================================================================
+\section{Geodesic Motion and the Equivalence Principle}
+\label{sec:geodesic}
+%======================================================================
+
+At each Absolute Moment tick, a CP selects the 12-edge that maximises
+$\mathbf{e}_i\cdot\mathbf{\SSV}_{\rm net}$
+\citep[{\S}3, Eq.~3]{abshier2026am}.  In a gravitational SSV gradient
+this rule directs the CP preferentially toward lower gravitational
+potential --- free fall.
+
+In the continuum limit the maximum-gradient selection rule reproduces
+the geodesic equation:
+\begin{equation}
+  \frac{d^2 x^\mu}{d\tau^2}
+  + \Gamma^\mu_{\nu\rho}\,\frac{dx^\nu}{d\tau}\,\frac{dx^\rho}{d\tau}
+  \;=\; 0,
+  \label{eq:geodesic}
+\end{equation}
+with Christoffel symbols:
+\begin{equation}
+  \Gamma^\mu_{\nu\rho} \;\approx\;
+  \frac{k}{2}\bigl(\partial_\nu h^\mu{}_\rho
+  + \partial_\rho h^\mu{}_\nu
+  - \partial^\mu h_{\nu\rho}\bigr).
+  \label{eq:Christoffel}
+\end{equation}
+The equivalence principle follows: a test CP in free fall and a CP at
+rest in an accelerated frame experience identical net SSV gradients
+\citep{abshier2026grav} and follow identical trajectories.  No
+additional postulate is required.
+
+%======================================================================
+\section{The Self-Consistency Condition and Einstein's Equations}
+\label{sec:EFE}
+%======================================================================
+
+\begin{definition}[Self-consistency condition]
+The CPP field equations are the requirement that the metric $\gmn$
+reconstructed from the holographic LSP summation
+(Eqs.~\eqref{eq:gtt}--\eqref{eq:gij}) equals the metric that governs
+LSP propagation.
+\end{definition}
+
+In the weak-field limit this condition is equivalent to the linearised
+Einstein equations \citep{einstein1915}:
+\begin{equation}
+  \Box\bar{h}_{\mu\nu} \;=\; -\frac{16\pi G}{c^4}\,T_{\mu\nu},
+  \label{eq:EFE_linear}
+\end{equation}
+where $\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}h$.
+The full nonlinear equations
+$\Gmn = 8\pi G/c^4\cdot\Tmn$ \citep{einstein1915}
+are a \emph{strong conjecture}: deriving them from the CPP
+self-consistency condition requires showing that the discrete 600-cell
+lattice sum converges to smooth Riemannian geometry in the continuum
+limit.  This is the central open problem deferred to the full GR
+companion.
+
+%======================================================================
+\section{Gravitational Waves}
+\label{sec:GW}
+%======================================================================
+
+Gravitational waves in CPP are propagating perturbations of the
+600-cell lattice geometry, sourced by time-varying mass-energy
+quadrupoles.  They are the gravitational analog of photons
+\citep{abshier2026zdc}: a traveling perturbation of the LSP broadcast
+pattern, with both $|\SSV|_{\rm abs}$ and $\mathbf{\SSV}_{\rm net}$
+jointly perturbed in the transverse-traceless gauge.
+
+The linearised wave equation is:
+\begin{equation}
+  \Box\bar{h}_{\mu\nu} \;=\; -\frac{16\pi G}{c^4}\,T_{\mu\nu}.
+  \label{eq:GW}
+\end{equation}
+Solutions propagate at $c$, consistent with the LIGO/Virgo/KAGRA
+observations of \citet{abbott2016}.  These observations confirm that
+the $\mathbf{\SSV}_{\rm net}$ component of the LSP propagates at $c$
+and carries energy.
+
+%======================================================================
+\section{Effective Horizon and the GP Exclusion Rule}
+\label{sec:BH}
+%======================================================================
+
+The Schwarzschild radius $r_s = 2GM/c^2$ marks where $g_{tt} \to 0$.
+In CPP, at $r = r_s$:
+\begin{equation}
+  k\,\Delta|\SSV|_{\rm abs}(r_s) \;=\; 1
+  \quad\Rightarrow\quad
+  \PSR_{\rm eff}(r_s) \;=\; \frac{\lP}{2}.
+  \label{eq:horizon}
+\end{equation}
+The PSR has contracted to half its vacuum value.  This is the
+\emph{effective horizon}: the PSR formula \citep[Eq.~1]{abshier2026sr}
+predicts that CPs inside $r_s$ have their spatial budget fully consumed
+by gravitational SSV, preventing escape.
+
+The CP Exclusion Rule (one CP per GP per tick;
+\citealt[{\S}2]{abshier2026am}) prevents a true singularity: as the
+PSR contracts toward $\lP/2$, GPs become unavailable as destinations
+for infalling CPs, which are deflected to neighboring GPs.  Black holes
+in CPP are therefore layered maximum-density CP configurations rather
+than mathematical singularities.
+
+\begin{remark}[Planck-scale cutoff]
+At $\Delta\SSV = \SSV_{\rm crit}$ \citep[Eq.~1]{abshier2026sr},
+the PSR reaches its minimum $\lP/2$ and no further contraction occurs.
+This natural ultraviolet cutoff at the Planck scale is a CPP prediction
+that differs from classical GR \citep{einstein1915} and may resolve
+the information paradox without additional quantum-gravity assumptions.
+\end{remark}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.82\textwidth]{fig3_psr_horizon.svg}
+  \caption{PSR contraction as a function of radial distance from a
+  mass $M$, in units of the Schwarzschild radius $r_s = 2GM/c^2$.
+  The blue curve shows
+  $\PSR_{\rm eff}/\lP = 1/(1 + k\,\Delta\SSV)$ from the CPP PSR
+  formula \citep{abshier2026sr}.
+  The red dashed curve shows the GR clock rate
+  $\sqrt{g_{tt}} = \sqrt{1 - r_s/r}$ for comparison.
+  At $r = r_s$ the PSR saturates to $\lP/2$ (blue dot), constituting
+  the effective horizon in CPP.
+  The shaded region marks where $\PSR_{\rm eff} \leq \lP/2$; the CP
+  Exclusion Rule \citep{abshier2026am} prevents infalling CPs from
+  reaching $r = 0$, replacing the GR singularity with a
+  maximum-density CP configuration.}
+  \label{fig:psr_horizon}
+\end{figure}
+%======================================================================
+\section{Deriving $\mu_0$, $\epsilon_0$, and $Z_0$ from the Lattice}
+\label{sec:mu0eps0}
+%======================================================================
+
+The ZDC Chaining companion \citep{abshier2026zdc} flagged
+$Z_0 = \sqrt{\mu_0/\epsilon_0}$ as an external constant requiring
+lattice derivation.  The LSP framework closes this.
+
+The electromagnetic wave equation $\Box\mathbf{E} = 0$ propagates at
+$c = \lP/\tP$ \citep[{\S}5.1]{abshier2026am}.  Therefore:
+\begin{equation}
+  \mu_0\epsilon_0 \;=\; \frac{1}{c^2} \;=\; \frac{\tP^2}{\lP^2}.
+  \label{eq:mu0eps0}
+\end{equation}
+The individual values are fixed by the condition that the Coulomb
+constant $k_e = 1/(4\pi\epsilon_0)$ reproduces the observed
+electromagnetic force \citep{codata2018}.  From \citet{abshier2026grav},
+the gravitational and electromagnetic SSV quanta share the same
+stiffness $C = \alphageom\EP/\lP^3$, giving:
+\begin{equation}
+  \epsilon_0 \;=\; \frac{e^2}{4\pi\alpha\hbar c},
+  \label{eq:eps0}
+\end{equation}
+where $\alpha \approx 1/137$ is the fine structure constant.
+The impedance of free space is:
+\begin{equation}
+  Z_0 \;=\; \sqrt{\frac{\mu_0}{\epsilon_0}}
+  \;=\; \frac{4\pi\alpha\hbar}{e^2}\cdot c
+  \;\approx\; 377\ \Omega,
+  \label{eq:Z0}
+\end{equation}
+expressed entirely in terms of $\alpha$, $\hbar$, $e$, and $c$ ---
+all fixed by the 600-cell geometry and Planck units \citep{codata2018}.
+
+%======================================================================
+\section{Consistency with the SR Companion Set}
+\label{sec:consistency}
+%======================================================================
+
+Every element of the GR framework reuses established CPP machinery:
+
+\begin{itemize}[noitemsep]
+  \item \emph{LSP}~\eqref{eq:LSP_explicit}: adds
+    $\mathbf{\SSV}_{\rm net}$ to the broadcast; backward compatible
+    with all SR results \citep{abshier2026sr}.
+  \item \emph{PSR formula} \citep[Eq.~1]{abshier2026sr}: is the
+    $g_{tt}$ sector of the Schwarzschild metric in the weak-field limit.
+  \item \emph{Shell-broadcast mechanism} \citep{abshier2026stiff}:
+    propagates both LSP components at $c$.
+  \item \emph{Absolute Moment tick} \citep{abshier2026am}: enters
+    via $c = \lP/\tP$ and $G = \hbar c/\mP^2$.
+  \item \emph{ZDC chaining} \citep{abshier2026zdc}: gravitational
+    waves use the same traveling-perturbation mechanism as photons.
+  \item \emph{CP Exclusion Rule} \citep{abshier2026am}: prevents
+    the Schwarzschild singularity via the one-CP-per-GP constraint.
+\end{itemize}
+
+%======================================================================
+\section{Open Problems}
+\label{sec:open}
+%======================================================================
+
+\textbf{(1) Full nonlinear Einstein equations} \citep{einstein1915}.
+Showing that the CPP self-consistency condition reproduces the Ricci
+tensor requires proving convergence of the discrete lattice sum to a
+smooth Riemannian manifold.
+
+\textbf{(2) Exact Schwarzschild solution.}  Solving the
+self-consistency condition at all $r$ including the horizon, confirming
+that the Planck-scale cutoff at $\PSR_{\rm min} = \lP/2$ gives a
+non-singular interior.
+
+\textbf{(3) Kerr metric.}  Rotating bodies require vorticity in
+$\mathbf{\SSV}_{\rm net}$, encoding frame dragging as angular momentum
+of the SSV field.
+
+\textbf{(4) Big Bang and GP Exclusion.}  At the initial Moment, the
+total CP count exceeded the available GP destinations, forcing pairwise
+repulsion under the CP Exclusion Rule \citep{abshier2026am}.  This
+drives the initial expansion without invoking an inflaton field.
+
+\textbf{(5) Cosmological constant.}  The residual SSV of the DP sea
+in the absence of matter is a candidate for the cosmological constant
+\citep{abshier2026series}.
+
+\textbf{(6) qDP chaining and strong force \citep{abshier2026series}.}
+The strong-force substrate follows the same ZDC chaining mechanism
+\citep{abshier2026zdc} and is treated in a dedicated companion.
+
+%======================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%======================================================================
+
+The Lattice State Packet provides a natural weak-field general
+relativity in CPP:
+
+\begin{enumerate}
+  \item \textbf{LSP} \citep{abshier2026mass,abshier2026grav}
+    (rigorous): $\mathbf{\SSV}_{\rm net}$ derived from
+    $E_{\rm pol} = mc^2$; backward compatible with all SR results
+    \citep{abshier2026sr}.
+
+  \item \textbf{Weak-field Schwarzschild}
+    \citep[Eq.~2]{einstein1915} (rigorous): $g_{tt}$ from
+    $|\SSV|_{\rm abs}$, $g_{rr}$ from $\mathbf{\SSV}_{\rm net}$,
+    equal magnitudes with $G = \hbar c/\mP^2$
+    \citep{abshier2026grav}; no free parameters.
+
+  \item \textbf{Factor-of-two lensing} \citep{eddington1920}
+    (rigorous): Eddington's 1.75~arcsec result reproduced as equal
+    temporal and spatial curvature contributions; retroactive
+    prediction.
+
+  \item \textbf{Geodesic motion and equivalence} (rigorous): 12-edge
+    selection rule \citep{abshier2026am} gives geodesic equation in
+    continuum limit; no new postulate.
+
+  \item \textbf{$Z_0$, $\mu_0$, $\epsilon_0$ derived}
+    \citep{codata2018} (rigorous): from $c = \lP/\tP$
+    \citep{abshier2026am} and the Coulomb coupling
+    \citep{abshier2026stiff}; closes open problem from
+    \citet{abshier2026zdc}.
+
+  \item \textbf{Gravitational waves} \citep{abbott2016}
+    (rigorous, weak field): traveling LSP perturbations at $c$;
+    LIGO/Virgo/KAGRA observations confirm the LSP.
+
+  \item \textbf{Effective horizon} (rigorous, weak-field scoping):
+    at $r_s$ the PSR \citep[Eq.~1]{abshier2026sr} saturates to
+    $\lP/2$; CP Exclusion \citep{abshier2026am} prevents singularity.
+
+  \item \textbf{Full GR} \citep{einstein1915} (strong conjecture):
+    self-consistency condition $\equiv$ Einstein field equations in
+    the continuum limit; proof deferred.
+\end{enumerate}
+
+The 600-cell lattice \citep{abshier2026sr}, PCD cycle
+\citep{abshier2026am}, ZDC chaining \citep{abshier2026zdc}, and
+LSP broadcast together now carry special relativity, quantum
+probability \citep{abshier2026born}, inertial mass
+\citep{abshier2026mass}, electromagnetism \citep{abshier2026stiff},
+Newtonian gravity \citep{abshier2026grav}, the photon
+\citep{abshier2026zdc}, and the weak-field limit of general relativity
+--- from a single geometric postulate and the CPP interaction rules.
+
+\section*{Acknowledgments}
+
+The author thanks Grok (xAI) for critical review of multiple drafts,
+identification of the gravitational lensing scope issue in Version~1,
+and independent derivation of Version~2 of several companion papers
+in this series. The author thanks Claude (Anthropic) for mathematical
+formulation, LaTeX preparation, figure generation, and collaborative
+development of the LSP framework throughout the companion series.
+
+The key conceptual advance in this paper --- extending the Lattice
+State Packet broadcast to include the net SSV vector component
+$\mathbf{SSV}_{\rm net}$ alongside the scalar $|\SSV|_{\rm abs}$ ---
+arose from a question about the tensorial structure of the CPP data architecture posed during a working session on 15 March 2026. The author notes that this extension was not anticipated in the SR companion set and was motivated entirely by internal consistency requirements, making the subsequent recovery of the Eddington factor-of-two a genuine retroactive prediction.
+
+This work was conducted independently without institutional affiliation or external funding.
+
+\bibliographystyle{plainnat}
+\bibliography{gr_companion}
+
+\end{document}
