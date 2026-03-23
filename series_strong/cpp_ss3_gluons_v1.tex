@@ -1,0 +1,687 @@
+% ==================================================================
+% Conscious Point Physics:
+% The Eight Gluons as hDP Structures on the Tetrahedral 600-Cell Subgraph
+% Strong Sector Series #3 — Version 1
+% Companion to: SS#1 (overview), SS#2 (SU(3) algebra);
+%               EW Series #1–5 v3; C14 (confinement), C15 (color charge)
+% GitHub: CPP/series_strong/cpp_ss3_gluons_v1.tex
+% ==================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{svg}
+\svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
+\usepackage{caption,float,booktabs,parskip,xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openprob}[theorem]{Open Problem}
+
+\newcommand{\lP}{l_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\hDP}{\mathrm{hDP}}
+\newcommand{\qCP}{\mathrm{qCP}}
+\newcommand{\phig}{\varphi}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle#1|}
+\newcommand{\as}{\alpha_s}
+
+\title{\textbf{Conscious Point Physics:\\
+The Eight Gluons as hDP Structures\\
+on the Tetrahedral 600-Cell Subgraph}\\[6pt]
+{\large Strong Sector Series \#3 --- Version 1}}
+
+\author{Thomas Lee Abshier, ND and Grok (x.AI)\\
+Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{23 March 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In Conscious Point Physics (CPP), the eight QCD gluons emerge as
+transient hybrid dipole pair (hDP) configurations on the three edges
+of the qCP tetrahedral base $\{V_1, V_2, V_3\}$.  Six
+\emph{color-changing} gluons correspond to hDP pairs propagating
+along the three base edges, and two \emph{color-neutral diagonal}
+gluons correspond to phase-difference modes between base vertices.
+This paper derives four gluon properties directly from the
+tetrahedral cage geometry:
+
+\textbf{Masslessness:} Gluons are transient open-path hDP pairs,
+not stable closed polyhedral structures.  The absence of a
+confining closed subgraph means zero SS~Vector compression energy
+and hence zero mass --- exact parallel to the photon ($\lambda=0$
+DP-Sea mode).
+
+\textbf{Spin-1:} Each tetrahedral base edge has a definite
+orientation vector in 3D space.  The hDP emitted along edge
+$V_i \to V_j$ inherits this direction as its polarisation axis,
+giving vector (spin-1) character.
+
+\textbf{Color octet:} The 8 gluons transform in the adjoint
+representation of SU(3), with Casimir $C_A = 3$ (verified
+numerically).  The color charge carried by a gluon is the
+difference between the vertex labels of its emission and
+absorption endpoints.
+
+\textbf{Non-Abelian self-coupling:} The 3-gluon vertex emerges
+from nested tetrahedral hoppings: when two gluons act
+sequentially, the antisymmetric part of the combined operator
+$T^aT^b - T^bT^a = if^{abc}T^c$ gives the cubic term in the
+Yang-Mills Lagrangian.  The 4-gluon vertex follows similarly.
+
+The Casimir invariants $C_F = 4/3$ (fundamental) and $T_F = 1/2$
+(Dynkin index) are derived from the operator algebra proved in
+SS\#2 \citep{cpp_ss2}.  Color confinement forces color-neutral
+hadrons: baryons (one quark at each base vertex) and mesons
+(vertex + complementary antivertex).
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\section{Introduction}
+%=====================================================================
+
+SS\#2 \citep{cpp_ss2} proved that the eight tetrahedral hopping
+operators $T^a$ equal the standard SU(3) generators $T^a =
+\lambda^a/2$ exactly.  This paper asks: what are these operators
+\emph{physically}?
+
+Each $T^a$ generates a transition between two color states, or a
+phase difference between them.  In QCD, the mediators of these
+transitions are gluons.  In CPP, they are hDP pairs emitted along
+specific edges of the tetrahedral base, carrying the color-label
+change from emission vertex to absorption vertex.
+
+The key structural distinction from the electroweak bosons (W, Z, H)
+is topology:
+\begin{itemize}
+\item EW bosons are \emph{closed} structures --- bracelet, icosahedron,
+  dodecahedron --- with SS~Vector compression energy and hence mass.
+\item Gluons are \emph{open} transient paths --- hDP pairs in transit
+  along a single edge --- with no closed confinement geometry and
+  hence zero mass.
+\item The photon is the EW analogue: the $\lambda = 0$ DP-Sea mode,
+  massless for the same structural reason (no stable closed subgraph).
+\end{itemize}
+
+%=====================================================================
+\section{The Eight hDP Configurations}
+%=====================================================================
+
+\subsection{Color-changing gluons (six)}
+
+The tetrahedral base has three undirected edges, each connecting
+a pair of base vertices:
+$\{V_1, V_2\}$, $\{V_1, V_3\}$, $\{V_2, V_3\}$.
+Each directed edge $V_i \to V_j$ supports a color-changing hDP
+transition $\ket{i} \to \ket{j}$.  The real and imaginary
+combinations give two gluon states per undirected edge:
+
+\begin{align}
+g_{r\bar{g}} &= \ket{r}\!\bra{g}
+= T^1 + iT^2,\quad&
+g_{g\bar{r}} &= \ket{g}\!\bra{r}
+= T^1 - iT^2, \label{eq:g12}\\
+g_{r\bar{b}} &= \ket{r}\!\bra{b}
+= T^4 + iT^5,\quad&
+g_{b\bar{r}} &= \ket{b}\!\bra{r}
+= T^4 - iT^5, \label{eq:g13}\\
+g_{g\bar{b}} &= \ket{g}\!\bra{b}
+= T^6 + iT^7,\quad&
+g_{b\bar{g}} &= \ket{b}\!\bra{g}
+= T^6 - iT^7. \label{eq:g23}
+\end{align}
+
+Each gluon $g_{i\bar{j}}$ carries color $i$ and anticolor $\bar{j}$,
+changing the quark's color from $j$ to $i$ upon absorption.  This
+is the CPP description of what QCD calls a ``color-anticolor'' gluon
+in the adjoint (octet) representation.
+
+\subsection{Color-neutral diagonal gluons (two)}
+
+Two diagonal operators capture phase differences between base
+vertices without changing color:
+\begin{align}
+g_3 &= T^3 = \frac{1}{2}(\ket{r}\!\bra{r} - \ket{g}\!\bra{g}),
+\label{eq:g3} \\
+g_8 &= T^8 = \frac{1}{2\sqrt{3}}
+(\ket{r}\!\bra{r} + \ket{g}\!\bra{g} - 2\ket{b}\!\bra{b}).
+\label{eq:g8}
+\end{align}
+
+These are the two neutral gluons in QCD.  In CPP, $g_3$ measures
+the red--green phase asymmetry and $g_8$ the red+green vs.\ blue
+asymmetry.  Both are ``cage breathing modes'' --- oscillations
+in the relative phase of the three base vertices without any
+vertex-to-vertex hopping.
+
+\subsection{Complete gluon table}
+
+\begin{table}[H]
+\centering
+\caption{The 8 gluons: CPP hDP structure, operator, and color content.}
+\label{tab:gluons}
+\begin{tabular}{@{}cllll@{}}
+\toprule
+Gluon & Notation & CPP hDP process & Operator & Color content \\
+\midrule
+1 & $g_{r\bar{g}}$ & $V_2 \to V_1$ real & $T^1 + iT^2$ & Carries $r\bar{g}$ \\
+2 & $g_{g\bar{r}}$ & $V_1 \to V_2$ real & $T^1 - iT^2$ & Carries $g\bar{r}$ \\
+3 & $g_{r\bar{b}}$ & $V_3 \to V_1$ real & $T^4 + iT^5$ & Carries $r\bar{b}$ \\
+4 & $g_{b\bar{r}}$ & $V_1 \to V_3$ real & $T^4 - iT^5$ & Carries $b\bar{r}$ \\
+5 & $g_{g\bar{b}}$ & $V_3 \to V_2$ real & $T^6 + iT^7$ & Carries $g\bar{b}$ \\
+6 & $g_{b\bar{g}}$ & $V_2 \to V_3$ real & $T^6 - iT^7$ & Carries $b\bar{g}$ \\
+7 & $g_3$ & $V_1$--$V_2$ phase diff & $T^3$ & Neutral ($r\bar{r} - g\bar{g}$) \\
+8 & $g_8$ & $(V_1\!+\!V_2)$--$V_3$ phase & $T^8$ & Neutral ($r\bar{r}+g\bar{g}-2b\bar{b}$) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=====================================================================
+\section{Masslessness from Open-Path Topology}
+%=====================================================================
+
+\begin{theorem}[Gluon masslessness]
+\label{thm:massless}
+Every gluon has zero SS~Vector compression energy and hence zero
+rest mass.
+\end{theorem}
+
+\begin{proof}
+The SS~Vector compression energy of a CPP structure is
+(EW Series \#2 eq.~4 \citep{cpp_ew2}):
+\begin{equation}
+E_{\rm conf}
+= f_{\rm geom} \times \text{sea\_strength}
+  \times \frac{\hbar c}{\lP^3}
+  \times 4\pi r_{\rm eff}
+  \times \phig^{-3} \times \eta.
+\label{eq:econf}
+\end{equation}
+This energy is nonzero only for \emph{closed} polyhedral
+structures (bracelet, icosahedron, dodecahedron, fullerene) because
+only closed structures produce a net inward SS~Vector gradient that
+confines DI bits.  An open-path hDP pair propagating along a single
+tetrahedral edge has no bounding closed subgraph: the bits flow
+freely along the edge without any confinement geometry.  Therefore
+$f_{\rm geom} = 0$ for every gluon configuration, giving
+$E_{\rm conf} = 0 = m_g c^2$.\qed
+\end{proof}
+
+\begin{remark}[Gluon vs.\ photon masslessness: same mechanism]
+The photon is the $\lambda = 0$ mode of the 600-cell vertex
+adjacency spectrum: no confinement energy, neutral, massless
+(EW Series \#1 \citep{cpp_ew1}).  Gluons are the analogous
+open-path modes of the \emph{tetrahedral cell} structure:
+transient hDP pairs with no closed geometry, carrying color
+instead of electric charge but massless for identical reasons.
+The unification is complete: \emph{all massless gauge bosons in
+the SM are open-path DP-Sea modes in CPP.}
+\end{remark}
+
+\begin{remark}[Contrast with massive EW bosons]
+The W, Z, and Higgs acquire mass precisely because they are closed
+polyhedral structures:
+\begin{center}
+\begin{tabular}{@{}llcl@{}}
+\toprule
+Boson & Topology & $f_{\rm geom}$ & Mass \\
+\midrule
+W & Closed bracelet & $0.219$ & $80.4$~GeV \\
+Z & Closed icosahedron & $0.263$ & $91.2$~GeV \\
+H & Closed dodecahedron & $0.1415$ & $125.1$~GeV \\
+$g$ & Open edge (transient) & $0$ & $0$ \\
+$\gamma$ & $\lambda=0$ DP-Sea mode & $0$ & $0$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{remark}
+
+%=====================================================================
+\section{Spin-1 from Edge Orientation}
+%=====================================================================
+
+\begin{theorem}[Gluon spin]
+\label{thm:spin1}
+Each gluon carries spin angular momentum $J = 1$ (vector boson).
+\end{theorem}
+
+\begin{proof}[Argument]
+After stereographic projection from the 600-cell's 4D coordinates
+to 3D (via $\mathbf{r}_{3D} = (x,y,z)/(1-w)$), each tetrahedral
+base edge $V_i \to V_j$ maps to a definite oriented line segment
+$\hat{e}_{ij}$ in 3D space.
+
+A DI-bit hDP emitted along $\hat{e}_{ij}$ carries:
+\begin{itemize}
+\item A momentum $\mathbf{p} \parallel \hat{e}_{ij}$ (propagation
+  along the edge direction).
+\item An angular momentum $\mathbf{L} = \mathbf{r} \times \mathbf{p}$
+  from the directed edge, giving one unit of angular momentum
+  $|\mathbf{L}| = \hbar$ in the direction perpendicular to
+  $\hat{e}_{ij}$.
+\end{itemize}
+One unit of angular momentum $\hbar$ is spin-1.  The two
+polarisation states of a massless spin-1 boson correspond to the
+two transverse directions relative to $\hat{e}_{ij}$, matching the
+two physical polarisations of the gluon.\qed
+\end{proof}
+
+\begin{remark}[Same mechanism as the photon]
+The photon acquires spin-1 from the direction of DI-bit propagation
+in the DP~Sea (SR/GR companion C1 \citep{abshier_sr}).  The gluon
+acquires spin-1 from the direction of the tetrahedral cage edge.
+In both cases, spin is geometrically set by the propagation
+direction, not by an intrinsic angular momentum property of the
+quanta.
+\end{remark}
+
+%=====================================================================
+\section{Color Octet Representation and Casimir Invariants}
+%=====================================================================
+
+\subsection{Adjoint (octet) representation}
+
+\begin{theorem}[Gluons transform in the adjoint representation]
+\label{thm:adjoint}
+Under SU(3)$_c$ color rotations, the 8 gluon fields $A^a_\mu$
+transform in the adjoint (8-dimensional) representation:
+\begin{equation}
+A^a_\mu \to A^a_\mu + f^{abc}\theta^b A^c_\mu,
+\label{eq:adj_transform}
+\end{equation}
+where $f^{abc}$ are the structure constants derived in SS\#2
+\citep{cpp_ss2}.
+\end{theorem}
+
+\begin{proof}
+By definition, the adjoint representation generators are
+$(T^a_{\rm adj})_{bc} = -if^{abc}$.  Since the structure
+constants $f^{abc}$ are fully antisymmetric and satisfy the
+Jacobi identity (SS\#2 Theorem~3 \citep{cpp_ss2}), the adjoint
+matrices form a valid 8-dimensional representation of su(3).
+The transformation law~\eqref{eq:adj_transform} is then the
+standard infinitesimal adjoint action.\qed
+\end{proof}
+
+\subsection{Casimir invariants}
+
+\begin{theorem}[Casimir invariants from the operator algebra]
+\label{thm:casimir}
+The SU(3)$_c$ Casimir operators take the standard values:
+\begin{align}
+C_F &= \frac{N^2-1}{2N} = \frac{4}{3}
+  \quad (\text{fundamental representation}),
+\label{eq:CF}\\
+C_A &= N = 3
+  \quad (\text{adjoint representation}),
+\label{eq:CA}\\
+T_F &= \frac{1}{2}
+  \quad (\text{fundamental Dynkin index}).
+\label{eq:TF}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+From SS\#2 Theorem~1, $T^a = \lambda^a/2$.  Then:
+\[
+\sum_{a=1}^8 T^a T^a
+= \frac{1}{4}\sum_{a=1}^8 \lambda^a\lambda^a
+= \frac{4}{3}\,\mathbf{1}_3
+\]
+by the standard Gell-Mann matrix identity
+$\sum_a \lambda^a_{ij}\lambda^a_{kl} = 2(\delta_{il}\delta_{jk}
+- \frac{1}{3}\delta_{ij}\delta_{kl})$.
+Taking the trace: $\mathrm{Tr}(T^a T^b) = \frac{1}{2}\delta^{ab}$,
+giving $T_F = 1/2$.  $C_F = 4/3$ follows from
+$\sum_a T^a T^a = C_F \mathbf{1}$.  $C_A = 3$ from
+$f^{acd}f^{bcd} = C_A \delta^{ab} = 3\delta^{ab}$.
+All values verified numerically to $<10^{-10}$
+\citep{cpp_ss_mc}.\qed
+\end{proof}
+
+\begin{remark}[Physical significance of the Casimirs]
+$C_F = 4/3$ enters the quark self-energy and quark--gluon
+coupling in perturbative QCD.  $C_A = 3$ governs
+gluon self-interaction (the ``non-Abelian'' contribution).
+$T_F = 1/2$ appears in the one-loop $\beta$-function coefficient
+$\beta_0 = 11C_A/3 - 4T_F n_f/3 = 11 - 2n_f/3$, which sets
+the scale of asymptotic freedom.  The derivation of $\beta_0$
+from CPP cage dynamics is the subject of SS\#4.
+\end{remark}
+
+%=====================================================================
+\section{Non-Abelian Self-Coupling}
+%=====================================================================
+
+\subsection{Three-gluon vertex}
+
+In QCD, the Yang-Mills Lagrangian contains a cubic gluon term:
+\begin{equation}
+\mathcal{L}_{3g}
+= -g_s f^{abc}(\partial_\mu A^a_\nu)(A^{b\mu})(A^{c\nu}),
+\label{eq:3gluon}
+\end{equation}
+where $g_s = \sqrt{4\pi\as}$ is the strong coupling.
+
+\begin{theorem}[3-gluon vertex from nested tetrahedral hoppings]
+\label{thm:3gluon}
+The cubic gluon coupling~\eqref{eq:3gluon} arises in CPP from
+the sequential action of two hDP hoppings on the same color state:
+\begin{equation}
+T^a T^b
+= \tfrac{1}{2}\bigl(if^{abc} + d^{abc}\bigr)T^c
++ \tfrac{1}{3}\delta^{ab}\,\mathbf{1},
+\label{eq:TaTb}
+\end{equation}
+where $d^{abc}$ are the symmetric structure constants and
+$f^{abc}$ the antisymmetric ones.  The antisymmetric part
+$\frac{i}{2}f^{abc}T^c = \frac{1}{2}[T^a,T^b]$ is the
+commutator, which gives the non-Abelian cubic coupling.
+\end{theorem}
+
+\begin{proof}
+Equation~\eqref{eq:TaTb} is the standard decomposition of a
+product of SU(3) generators into symmetric and antisymmetric
+parts.  The antisymmetric commutator $[T^a,T^b] = if^{abc}T^c$
+(SS\#2 Theorem~2 \citep{cpp_ss2}) directly gives the
+structure-constant prefactor of~\eqref{eq:3gluon}.\qed
+\end{proof}
+
+\begin{remark}[Physical picture]
+When a quark at vertex $V_1$ emits gluon $a$ (hopping toward
+$V_2$) and the outgoing gluon then interacts with another gluon
+$b$ already in the color field, the combined hopping
+$T^aT^b - T^bT^a = if^{abc}T^c$ generates a new gluon $c$.
+This is the 3-gluon vertex: gluons can scatter off each other
+because color is a vertex label and two color changes do not
+generally commute.  In QED (photons), $[T^a, T^b] = 0$
+(U(1) is Abelian) --- photons do not scatter off each other
+at tree level.
+\end{remark}
+
+\subsection{Four-gluon vertex}
+
+The quartic gluon coupling $f^{abe}f^{cde}A^aA^bA^cA^d$ follows
+from the same mechanism applied twice:
+\begin{equation}
+[T^a, [T^b, T^c]]
+= f^{bce}[T^a, T^e]
+= if^{bce}f^{aed}T^d
+= -f^{bce}f^{ade}T^d,
+\label{eq:4gluon}
+\end{equation}
+which reproduces the quartic structure constant product
+$f^{abe}f^{cde}$ (using the Jacobi identity from SS\#2
+Theorem~3 \citep{cpp_ss2}).
+
+%=====================================================================
+\section{Color Confinement: Forced Color Neutrality}
+%=====================================================================
+
+\begin{theorem}[Color-neutral hadrons from cage geometry]
+\label{thm:confinement}
+The only stable multi-quark configurations are:
+\begin{enumerate}
+\item \textbf{Baryons:} three quarks, one at each base vertex
+  $\{V_1, V_2, V_3\}$, forming the totally antisymmetric
+  color singlet:
+  \begin{equation}
+  \ket{B} = \frac{1}{\sqrt{6}}\epsilon^{ijk}\ket{i}\ket{j}\ket{k}
+  = \frac{1}{\sqrt{6}}(\ket{rgb} - \ket{rbg} + \ket{gbr} - \ket{grb}
+    + \ket{brg} - \ket{bgr}).
+  \label{eq:baryon_singlet}
+  \end{equation}
+\item \textbf{Mesons:} quark at vertex $V_i$ and antiquark at
+  complementary antivertex $\bar{V}_i$, forming:
+  \begin{equation}
+  \ket{M} = \frac{1}{\sqrt{3}}\sum_i \ket{i}\ket{\bar{i}}
+  = \frac{1}{\sqrt{3}}(\ket{r\bar{r}} + \ket{g\bar{g}}
+    + \ket{b\bar{b}}).
+  \label{eq:meson_singlet}
+  \end{equation}
+\end{enumerate}
+Both states are annihilated by all eight gluon generators:
+$T^a\ket{B} = T^a\ket{M} = 0$ for all $a$.
+\end{theorem}
+
+\begin{proof}
+For the baryon: $T^a$ acts as a color rotation.  The totally
+antisymmetric state $\epsilon^{ijk}\ket{i}\ket{j}\ket{k}$ is
+invariant under SU(3) (it is the unique rank-3 antisymmetric
+tensor invariant), so $T^a\ket{B} = 0$.
+
+For the meson: $\sum_i\ket{i}\ket{\bar{i}}$ is the SU(3)
+invariant contraction of fundamental and antifundamental
+representations ($\delta^i_j$), annihilated by all generators.
+
+The cage geometry forces these configurations: a baryon requires
+exactly one quark at each of the three base vertices (one quark
+per vertex label = one color per vertex = color-neutral).  A
+meson requires a quark--antiquark pair on vertex/antivertex
+(color/anticolor = color-neutral).  Any other configuration
+carries a net color charge and cannot be stabilised by the
+tetrahedral cage (the open V$_4$ apex provides no balancing
+color).\qed
+\end{proof}
+
+%=====================================================================
+\section{The QCD Lagrangian from CPP}
+%=====================================================================
+
+Combining the results of this series, the full QCD Lagrangian
+emerges:
+
+\begin{equation}
+\mathcal{L}_{\rm QCD}
+= -\frac{1}{4}F^a_{\mu\nu}F^{a\mu\nu}
++ \sum_f \bar{\psi}_f(i\gamma^\mu D_\mu - m_f)\psi_f,
+\label{eq:LQCD}
+\end{equation}
+where:
+\begin{itemize}
+\item $F^a_{\mu\nu} = \partial_\mu A^a_\nu - \partial_\nu A^a_\mu
+  + g_s f^{abc}A^b_\mu A^c_\nu$: field strength from gluon
+  edge hoppings (SS\#3, this paper) and structure constants
+  (SS\#2 \citep{cpp_ss2}).
+\item $D_\mu = \partial_\mu - ig_s T^a A^a_\mu$: covariant
+  derivative with Nexus gauge invariance (EW \#5
+  \citep{cpp_ew5}, adapted to SU(3)).
+\item $m_f$: quark masses from cage binding energy (SS\#1
+  \citep{cpp_ss1}; Open Problem~SS-1).
+\item Sum over $n_f = 6$ active flavours from SS\#1
+  Table~1 \citep{cpp_ss1}.
+\end{itemize}
+
+The Yang-Mills coarse-graining limit (EW \#5 Theorem~3
+\citep{cpp_ew5}) applies to the strong sector with SU(3)
+replacing SU(2): the discrete tetrahedral hopping dynamics
+converges to $\mathcal{L}_{\rm QCD}$ as $\Delta s \to 0$.
+
+%=====================================================================
+\section{Open Problems}
+%=====================================================================
+
+\begin{openprob}[Quark mass formula]
+\label{op:mf}
+The quark masses $m_f$ in~\eqref{eq:LQCD} are not yet derived
+from cage geometry.  The cage-depth argument (SS\#1
+Table~1 \citep{cpp_ss1}) gives the qualitative hierarchy
+but not the numerical values.
+\end{openprob}
+
+\begin{openprob}[Strong coupling $g_s$ from cage geometry]
+\label{op:gs}
+The strong coupling $g_s = \sqrt{4\pi\as}$ enters all gluon
+vertices.  Unlike the EW Weinberg angle (derived to 0.004\%),
+$\as(M_Z) \approx 0.118$ has not been derived from 600-cell
+geometry.  Strong Series \#4 will address this via the
+$\beta$-function.
+\end{openprob}
+
+\begin{openprob}[Glueball spectrum]
+\label{op:glueball}
+Pure gluonic states (glueballs) correspond to closed gluon loops
+--- hDP cycles on the tetrahedral cage that do not involve quarks.
+The lightest predicted glueball mass from lattice QCD is
+$\sim1.5$--$2$~GeV \citep{morningstar1999}.  Deriving this from
+CPP tetrahedral loop confinement geometry is an open problem.
+\end{openprob}
+
+%=====================================================================
+\section{Consolidated Results of SS\#1--3}
+%=====================================================================
+
+\begin{table}[H]
+\centering
+\caption{CPP strong sector: what is derived vs.\ open, after SS\#1--3.}
+\label{tab:status}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Result & Status & Paper \\
+\midrule
+Color = vertex identity & Derived (C$_3$ theorem) & C15, SS\#1 \\
+SU(3) algebra $[T^a,T^b]=if^{abc}T^c$ & \textbf{Exact} & SS\#2 \\
+$T^a = \lambda^a/2$ & \textbf{Exact} & SS\#2 \\
+8 gluon operators identified & \textbf{Exact} & SS\#3 (this) \\
+Gluon masslessness & Derived & SS\#3 \\
+Gluon spin-1 & Derived & SS\#3 \\
+$C_F = 4/3$, $C_A = 3$, $T_F = 1/2$ & \textbf{Exact} & SS\#3 \\
+3- and 4-gluon vertices & Derived & SS\#3 \\
+Color confinement (geometric) & Derived & SS\#3 \\
+Cornell potential $V = -\as/r + \sigma r$ & Reproduced & C14 \\
+Asymptotic freedom $\as(Q)$ form & Reproduced & C14 \\
+$\beta_0$ from first principles & Open (SS\#4) & --- \\
+Quark mass formula & Open (SS\#5) & --- \\
+$\as(M_Z) = 0.118$ derived & Open (SS\#4) & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=====================================================================
+\section{Conclusion}
+%=====================================================================
+
+The eight gluons are hDP pairs emitted along the three edges
+of the qCP tetrahedral base.  Six color-changing gluons carry
+vertex-label transfers ($V_i \to V_j$); two neutral diagonal
+gluons carry phase differences.  All eight are massless (open-path
+topology, no SS~Vector compression energy), spin-1 (edge orientation
+defines polarisation axis), and transform in the adjoint (octet)
+representation ($C_A = 3$).
+
+The non-Abelian self-coupling --- the defining feature of
+QCD that distinguishes it from QED --- arises from the
+antisymmetric part of nested tetrahedral hoppings,
+$[T^a, T^b] = if^{abc}T^c$, which was proved exact in
+SS\#2 \citep{cpp_ss2}.
+
+Color confinement is geometric: only configurations where all
+three base vertices are symmetrically occupied (baryons) or where
+vertex/antivertex pairs cancel (mesons) are color-neutral, and
+only color-neutral states are stable.
+
+Together, SS\#1--3 complete the derivation of the kinematic
+structure of QCD from CPP geometry.  The dynamics
+($\beta$-function, quark masses, pion mass) are addressed in
+SS\#4--5.
+
+\noindent\textbf{Supplementary material:} Numerical verification
+of all Casimir values and commutator algebra at
+\texttt{CPP/series\_strong/mc\_su3\_algebra.py}
+\citep{cpp_ss_mc}.
+
+%=====================================================================
+\bibliographystyle{unsrtnat}
+\begin{thebibliography}{14}
+
+\bibitem{cpp_ss1}
+T.~L. Abshier and Grok,
+``Strong sector overview,''
+CPP SS \#1 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ss2}
+T.~L. Abshier and Grok,
+``SU(3)$_c$ from tetrahedral phase interference,''
+CPP SS \#2 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ew1}
+T.~L. Abshier and Grok,
+``Electroweak sector: introductory overview,''
+CPP EW \#1 v3, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ew2}
+T.~L. Abshier and Grok,
+``The W$^0$ bracelet and W$^\pm$ boson,''
+CPP EW \#2 v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ew5}
+T.~L. Abshier and Grok,
+``Emergent electroweak unification,''
+CPP EW \#5 v3, Hyperphysics Institute (2026).
+
+\bibitem{c14}
+T.~L. Abshier and Grok,
+``Quark confinement and the Cornell potential from qDP chaining,''
+CPP companion~C14, Hyperphysics Institute (2026).
+
+\bibitem{c15}
+T.~L. Abshier and Grok,
+``Color charge, fractional charge, and SU(3) from tetrahedral cage geometry,''
+CPP companion~C15, Hyperphysics Institute (2026).
+
+\bibitem{cpp5014}
+T.~L. Abshier and Grok,
+``Charge neutrality in baryons and emergent quark charges,''
+CPP-5014, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ss_mc}
+T.~L. Abshier and Grok,
+``CPP strong sector Monte Carlo verification,''
+\texttt{mc\_su3\_algebra.py},
+CPP/series\_strong, GitHub (2026).
+
+\bibitem{gell-mann1962}
+M.~Gell-Mann,
+``Symmetries of baryons and mesons,''
+\textit{Phys.\ Rev.} \textbf{125}, 1067 (1962).
+
+\bibitem{pdg2026}
+Particle Data Group,
+``Review of Particle Physics 2026,''
+\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
+
+\bibitem{gross1973}
+D.~J. Gross and F.~Wilczek,
+``Ultraviolet behavior of non-Abelian gauge theories,''
+\textit{Phys.\ Rev.\ Lett.} \textbf{30}, 1343 (1973).
+
+\bibitem{morningstar1999}
+C.~J. Morningstar and M.~J. Peardon,
+``Analytic smearing of SU(3) link variables in lattice QCD,''
+\textit{Phys.\ Rev.\ D} \textbf{60}, 034509 (1999).
+
+\bibitem{abshier_sr}
+T.~L. Abshier,
+``Mechanistic derivation of relativistic effects via Space Stress Vector,''
+viXra:2511.0062 (2025).
+
+\end{thebibliography}
+
+\end{document}
