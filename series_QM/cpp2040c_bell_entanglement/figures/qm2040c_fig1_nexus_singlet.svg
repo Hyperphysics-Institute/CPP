@@ -1,1 +1,33 @@
-
+<svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.ts{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;fill:#555}.th{font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<ellipse cx="340" cy="180" rx="90" ry="55" fill="#f0f0ec" stroke="#ccc" stroke-width="0.5" stroke-dasharray="5 3"/>
+<text class="th" x="340" y="172" text-anchor="middle">Nexus</text>
+<text class="ts" x="340" y="190" text-anchor="middle">atemporal</text>
+<text class="ts" x="340" y="206" text-anchor="middle">global constraint</text>
+<rect x="230" y="28" width="220" height="40" rx="6" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="340" y="44" text-anchor="middle">|Ψ⁻⟩ = (|↑↓⟩ − |↓↑⟩)/√2</text>
+<text class="ts" x="340" y="60" text-anchor="middle" fill="#888">non-separable joint DI-bit state</text>
+<line x1="340" y1="68" x2="340" y2="125" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3 3"/>
+<circle cx="110" cy="180" r="30" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text class="th" x="110" y="174" text-anchor="middle">A</text>
+<text class="ts" x="110" y="194" text-anchor="middle">|↑⟩</text>
+<text class="ts" x="110" y="222" text-anchor="middle">CP aggregate A</text>
+<circle cx="570" cy="180" r="30" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text class="th" x="570" y="174" text-anchor="middle" fill="#26215C">B</text>
+<text class="ts" x="570" y="194" text-anchor="middle">|↓⟩</text>
+<text class="ts" x="570" y="222" text-anchor="middle">CP aggregate B</text>
+<path d="M 140,180 Q 200,155 250,180" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7" marker-end="url(#arrow)"/>
+<path d="M 430,180 Q 490,155 540,180" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7" marker-start="url(#arrow)"/>
+<path d="M 70,155 L 40,135" fill="none" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+<path d="M 610,155 L 640,135" fill="none" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.6"/>
+<rect x="28" y="255" width="164" height="52" rx="6" fill="#f8f8f5" stroke="#185FA5" stroke-width="0.5"/>
+<text class="th" x="110" y="273" text-anchor="middle" fill="#0C447C">Detector A</text>
+<text class="ts" x="110" y="291" text-anchor="middle">axis: 0°, outcome +1</text>
+<rect x="488" y="255" width="164" height="52" rx="6" fill="#f8f8f5" stroke="#534AB7" stroke-width="0.5"/>
+<text class="th" x="570" y="273" text-anchor="middle" fill="#26215C">Detector B</text>
+<text class="ts" x="570" y="291" text-anchor="middle">axis: 45°, outcome −1</text>
+<rect x="255" y="285" width="170" height="40" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5" opacity="0.8"/>
+<text class="th" x="340" y="301" text-anchor="middle" fill="#0C447C">E(â,b̂) = −cos θ</text>
+<text class="ts" x="340" y="317" text-anchor="middle" fill="#185FA5">θ = 45° → −0.707</text>
+</svg>

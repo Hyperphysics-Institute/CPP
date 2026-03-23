@@ -1,1 +1,57 @@
-
+<svg width="100%" viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.ts{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;fill:#555}.th{font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="18" y="18" width="196" height="256" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="116" y="42" text-anchor="middle">A — coherent</text>
+<circle cx="40" cy="145" r="10" fill="#185FA5" stroke="#0C447C" stroke-width="0.5"/>
+<path d="M 50,140 Q 90,110 144,130" fill="none" stroke="#185FA5" stroke-width="2" opacity="0.9"/>
+<path d="M 50,148 Q 90,175 144,160" fill="none" stroke="#534AB7" stroke-width="2" opacity="0.9"/>
+<rect x="148" y="32" width="4" height="95" rx="1" fill="#ccc" opacity="0.5"/>
+<rect x="148" y="175" width="4" height="90" rx="1" fill="#ccc" opacity="0.5"/>
+<path d="M 152,130 Q 170,130 192,145" fill="none" stroke="#185FA5" stroke-width="2" opacity="0.9"/>
+<path d="M 152,160 Q 170,160 192,145" fill="none" stroke="#534AB7" stroke-width="2" opacity="0.9"/>
+<rect x="196" y="60" width="12" height="170" rx="2" fill="#f0f0ec" stroke="#ccc" stroke-width="0.5"/>
+<rect x="198" y="108" width="9" height="14" rx="1" fill="#185FA5" opacity="0.9"/>
+<rect x="198" y="130" width="9" height="16" rx="1" fill="#185FA5" opacity="0.95"/>
+<rect x="198" y="154" width="9" height="14" rx="1" fill="#185FA5" opacity="0.9"/>
+<rect x="198" y="88"  width="9" height="10" rx="1" fill="#378ADD" opacity="0.65"/>
+<rect x="198" y="176" width="9" height="10" rx="1" fill="#378ADD" opacity="0.65"/>
+<text class="ts" x="116" y="290" text-anchor="middle" fill="#1D9E75">fringes visible</text>
+<text class="ts" x="116" y="306" text-anchor="middle" fill="#888">|Δφ| coherent</text>
+<rect x="240" y="18" width="196" height="256" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="338" y="42" text-anchor="middle">B — which-path</text>
+<circle cx="262" cy="145" r="10" fill="#185FA5" stroke="#0C447C" stroke-width="0.5"/>
+<path d="M 272,140 Q 312,110 366,130" fill="none" stroke="#85B7EB" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+<path d="M 272,148 Q 312,175 366,160" fill="none" stroke="#AFA9EC" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+<rect x="354" y="118" width="28" height="20" rx="3" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text class="ts" x="368" y="128" text-anchor="middle" dominant-baseline="central" fill="#633806">SSV</text>
+<rect x="370" y="32" width="4" height="95" rx="1" fill="#ccc" opacity="0.5"/>
+<rect x="370" y="175" width="4" height="90" rx="1" fill="#ccc" opacity="0.5"/>
+<path d="M 374,130 Q 394,135 414,145" fill="none" stroke="#85B7EB" stroke-width="1" stroke-dasharray="3 3" opacity="0.35"/>
+<path d="M 374,160 Q 394,155 414,145" fill="none" stroke="#AFA9EC" stroke-width="1" stroke-dasharray="3 3" opacity="0.35"/>
+<rect x="418" y="60" width="12" height="170" rx="2" fill="#f0f0ec" stroke="#ccc" stroke-width="0.5"/>
+<rect x="420" y="75" width="9" height="148" rx="1" fill="#B5D4F4" opacity="0.25"/>
+<text class="ts" x="338" y="290" text-anchor="middle" fill="#D85A30">no fringes</text>
+<text class="ts" x="338" y="306" text-anchor="middle" fill="#888">random δφ_SSV</text>
+<rect x="462" y="18" width="196" height="256" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="560" y="42" text-anchor="middle">C — erased</text>
+<circle cx="484" cy="145" r="10" fill="#185FA5" stroke="#0C447C" stroke-width="0.5"/>
+<path d="M 494,140 Q 534,110 588,130" fill="none" stroke="#185FA5" stroke-width="2" opacity="0.9"/>
+<path d="M 494,148 Q 534,175 588,160" fill="none" stroke="#534AB7" stroke-width="2" opacity="0.9"/>
+<rect x="576" y="118" width="28" height="20" rx="3" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text class="ts" x="590" y="128" text-anchor="middle" dominant-baseline="central" fill="#085041">OK</text>
+<rect x="590" y="32" width="4" height="95" rx="1" fill="#ccc" opacity="0.5"/>
+<rect x="590" y="175" width="4" height="90" rx="1" fill="#ccc" opacity="0.5"/>
+<path d="M 594,130 Q 610,130 630,145" fill="none" stroke="#185FA5" stroke-width="2" opacity="0.9"/>
+<path d="M 594,160 Q 610,160 630,145" fill="none" stroke="#534AB7" stroke-width="2" opacity="0.9"/>
+<rect x="634" y="60" width="12" height="170" rx="2" fill="#f0f0ec" stroke="#ccc" stroke-width="0.5"/>
+<rect x="636" y="108" width="9" height="14" rx="1" fill="#185FA5" opacity="0.9"/>
+<rect x="636" y="130" width="9" height="16" rx="1" fill="#185FA5" opacity="0.95"/>
+<rect x="636" y="154" width="9" height="14" rx="1" fill="#185FA5" opacity="0.9"/>
+<rect x="636" y="88"  width="9" height="10" rx="1" fill="#378ADD" opacity="0.65"/>
+<rect x="636" y="176" width="9" height="10" rx="1" fill="#378ADD" opacity="0.65"/>
+<text class="ts" x="560" y="290" text-anchor="middle" fill="#1D9E75">fringes restored</text>
+<text class="ts" x="560" y="306" text-anchor="middle" fill="#888">SSV tag removed</text>
+<path d="M 218,145 L 236,145" fill="none" stroke="#888" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M 440,145 L 458,145" fill="none" stroke="#888" stroke-width="1" marker-end="url(#arrow)"/>
+</svg>

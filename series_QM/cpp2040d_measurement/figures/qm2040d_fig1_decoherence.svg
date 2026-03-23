@@ -1,1 +1,58 @@
-
+<svg width="100%" viewBox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.ts{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;fill:#555}.th{font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="30" y="30" width="190" height="200" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="125" y="55" text-anchor="middle">ρ(0) — coherent</text>
+<rect x="55" y="75" width="60" height="50" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text class="th" x="85" y="97" text-anchor="middle" dominant-baseline="central" fill="#0C447C">ρ₀₀</text>
+<text class="ts" x="85" y="113" text-anchor="middle">½</text>
+<rect x="160" y="145" width="60" height="50" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text class="th" x="190" y="167" text-anchor="middle" dominant-baseline="central" fill="#0C447C">ρ₁₁</text>
+<text class="ts" x="190" y="183" text-anchor="middle">½</text>
+<rect x="160" y="75" width="60" height="50" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+<text class="th" x="190" y="97" text-anchor="middle" dominant-baseline="central" fill="#412402">ρ₀₁</text>
+<text class="ts" x="190" y="113" text-anchor="middle">½e^(iφ)</text>
+<rect x="55" y="145" width="60" height="50" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+<text class="th" x="85" y="167" text-anchor="middle" dominant-baseline="central" fill="#412402">ρ₁₀</text>
+<text class="ts" x="85" y="183" text-anchor="middle">½e^(-iφ)</text>
+<text class="ts" x="85" y="73" text-anchor="middle" fill="#888">|0⟩</text>
+<text class="ts" x="190" y="73" text-anchor="middle" fill="#888">|1⟩</text>
+<text class="ts" x="48" y="103" text-anchor="end" fill="#888">|0⟩</text>
+<text class="ts" x="48" y="173" text-anchor="end" fill="#888">|1⟩</text>
+<text class="ts" x="125" y="240" text-anchor="middle">superposition: |ρ₀₁|= ½</text>
+<rect x="35" y="255" width="180" height="60" rx="6" fill="#eee" stroke="#ccc" stroke-width="0.5"/>
+<text class="ts" x="125" y="273" text-anchor="middle">DP Sea scattering:</text>
+<text class="ts" x="125" y="289" text-anchor="middle">random phase kicks δφ</text>
+<text class="ts" x="125" y="305" text-anchor="middle" fill="#888">γ = sea_str² E_P/ℏ</text>
+<rect x="240" y="30" width="200" height="310" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="340" y="55" text-anchor="middle">off-diagonal decay</text>
+<text class="ts" x="340" y="72" text-anchor="middle">|ρ₀₁(t)| = ½ e^(-2γt)</text>
+<line x1="262" y1="290" x2="428" y2="290" stroke="#ccc" stroke-width="0.5"/>
+<line x1="262" y1="90" x2="262" y2="295" stroke="#ccc" stroke-width="0.5"/>
+<text class="ts" x="430" y="293" fill="#888">t</text>
+<text class="ts" x="260" y="88" text-anchor="end" fill="#888">½</text>
+<text class="ts" x="260" y="290" text-anchor="end" fill="#888">0</text>
+<path d="M 262,90 C 280,92 300,102 320,120 C 340,138 355,160 370,190 C 385,218 395,248 420,285" fill="none" stroke="#BA7517" stroke-width="2.5" opacity="0.9"/>
+<line x1="320" y1="120" x2="320" y2="290" stroke="#D85A30" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.6"/>
+<text class="ts" x="320" y="308" text-anchor="middle" fill="#D85A30">τ_dec</text>
+<circle cx="320" cy="120" r="4" fill="#D85A30"/>
+<line x1="262" y1="190" x2="428" y2="190" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.6"/>
+<text class="ts" x="430" y="194" fill="#185FA5">ρ₀₀,ρ₁₁</text>
+<rect x="460" y="30" width="190" height="200" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="555" y="55" text-anchor="middle">ρ(∞) — collapsed</text>
+<rect x="485" y="75" width="60" height="50" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text class="th" x="515" y="100" text-anchor="middle" dominant-baseline="central" fill="#0C447C">ρ₀₀ = ½</text>
+<rect x="590" y="145" width="60" height="50" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text class="th" x="620" y="170" text-anchor="middle" dominant-baseline="central" fill="#0C447C">ρ₁₁ = ½</text>
+<rect x="590" y="75" width="60" height="50" rx="4" fill="#F1EFE8" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="620" y="100" text-anchor="middle" dominant-baseline="central" fill="#888">0</text>
+<rect x="485" y="145" width="60" height="50" rx="4" fill="#F1EFE8" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="515" y="170" text-anchor="middle" dominant-baseline="central" fill="#888">0</text>
+<text class="ts" x="555" y="240" text-anchor="middle">classical mixture</text>
+<text class="ts" x="555" y="258" text-anchor="middle" fill="#888">apparent collapse</text>
+<rect x="465" y="272" width="180" height="48" rx="6" fill="#eee" stroke="#1D9E75" stroke-width="0.5"/>
+<text class="ts" x="555" y="289" text-anchor="middle">Nexus: global unitarity</text>
+<text class="ts" x="555" y="305" text-anchor="middle" fill="#1D9E75">Tr(ρ_tot²) = 1 preserved</text>
+<path d="M 222,180 L 236,180" fill="none" stroke="#888" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M 442,180 L 456,180" fill="none" stroke="#888" stroke-width="1" marker-end="url(#arrow)"/>
+</svg>

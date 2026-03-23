@@ -1,1 +1,58 @@
-
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.ts{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;fill:#555}.th{font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a}</style>
+<g opacity="0.22" stroke="#ccc" stroke-width="0.5" fill="none">
+<polygon points="155,60 218,97 218,160 155,197 92,160 92,97"/>
+<polygon points="155,83 206,111 206,151 155,179 104,151 104,111"/>
+<line x1="155" y1="60" x2="155" y2="83"/><line x1="218" y1="97" x2="206" y2="111"/>
+<line x1="218" y1="160" x2="206" y2="151"/><line x1="155" y1="197" x2="155" y2="179"/>
+<line x1="92" y1="160" x2="104" y2="151"/><line x1="92" y1="97" x2="104" y2="111"/>
+</g>
+<g stroke="#ccc" stroke-width="0.5" opacity="0.35">
+<line x1="155" y1="112" x2="155" y2="54"/>
+<line x1="166" y1="118" x2="230" y2="82"/>
+<line x1="166" y1="134" x2="230" y2="170"/>
+<line x1="155" y1="140" x2="155" y2="199"/>
+<line x1="144" y1="134" x2="80" y2="170"/>
+<line x1="144" y1="118" x2="80" y2="82"/>
+</g>
+<circle cx="155" cy="126" r="13" fill="#185FA5" stroke="#0C447C" stroke-width="0.8"/>
+<text class="ts" x="155" y="126" text-anchor="middle" dominant-baseline="central" fill="white">GP</text>
+<circle cx="155" cy="38" r="16" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text class="ts" x="155" y="38" text-anchor="middle" dominant-baseline="central" fill="#0C447C">+2.6</text>
+<circle cx="244" cy="76" r="16" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.8"/>
+<text class="ts" x="244" y="76" text-anchor="middle" dominant-baseline="central" fill="#085041">+1.6</text>
+<circle cx="244" cy="176" r="16" fill="#EAF3DE" stroke="#639922" stroke-width="0.8"/>
+<text class="ts" x="244" y="176" text-anchor="middle" dominant-baseline="central" fill="#173404">+0.6</text>
+<circle cx="155" cy="214" r="16" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+<text class="ts" x="155" y="214" text-anchor="middle" dominant-baseline="central" fill="#412402">−0.6</text>
+<circle cx="66" cy="176" r="16" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+<text class="ts" x="66" y="176" text-anchor="middle" dominant-baseline="central" fill="#4A1B0C">−1.6</text>
+<circle cx="66" cy="76" r="16" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text class="ts" x="66" y="76" text-anchor="middle" dominant-baseline="central" fill="#26215C">−2.6</text>
+<text class="th" x="155" y="256" text-anchor="middle">600-cell lattice</text>
+<text class="ts" x="155" y="274" text-anchor="middle">120 vertices · z=12 · H₄ symmetry</text>
+<text class="ts" x="155" y="290" text-anchor="middle" fill="#888">6 distinct eigenvalues (diameter 5)</text>
+<rect x="298" y="28" width="362" height="314" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="479" y="52" text-anchor="middle">six distinct eigenvalues</text>
+<text class="ts" x="479" y="68" text-anchor="middle" fill="#888">φ = (1+√5)/2 = 1.618</text>
+<text class="ts" x="322" y="90" fill="#888">colour</text>
+<text class="ts" x="366" y="90" fill="#888">λ</text>
+<text class="ts" x="426" y="90" fill="#888">value</text>
+<text class="ts" x="530" y="90" fill="#888">SM gen.?</text>
+<line x1="312" y1="97" x2="650" y2="97" stroke="#ccc" stroke-width="0.5"/>
+<circle cx="326" cy="117" r="7" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text class="ts" x="342" y="121">+(1+φ)</text><text class="ts" x="418" y="121">+2.618</text><text class="ts" x="524" y="121">1st gen. (open)</text>
+<circle cx="326" cy="145" r="7" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.8"/>
+<text class="ts" x="342" y="149">+φ</text><text class="ts" x="418" y="149">+1.618</text><text class="ts" x="524" y="149">1st gen. (open)</text>
+<circle cx="326" cy="173" r="7" fill="#EAF3DE" stroke="#639922" stroke-width="0.8"/>
+<text class="ts" x="342" y="177">+(φ−1)</text><text class="ts" x="418" y="177">+0.618</text><text class="ts" x="524" y="177">2nd gen. (open)</text>
+<circle cx="326" cy="201" r="7" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+<text class="ts" x="342" y="205">−(φ−1)</text><text class="ts" x="418" y="205">−0.618</text><text class="ts" x="524" y="205">2nd gen. (open)</text>
+<circle cx="326" cy="229" r="7" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+<text class="ts" x="342" y="233">−φ</text><text class="ts" x="418" y="233">−1.618</text><text class="ts" x="524" y="233">3rd gen. (open)</text>
+<circle cx="326" cy="257" r="7" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text class="ts" x="342" y="261">−(1+φ)</text><text class="ts" x="418" y="261">−2.618</text><text class="ts" x="524" y="261">3rd gen. (open)</text>
+<rect x="310" y="283" width="338" height="46" rx="5" fill="#eee" stroke="#ccc" stroke-width="0.5"/>
+<text class="ts" x="479" y="302" text-anchor="middle">[a_k,  a†_(k')] = δ_(kk')</text>
+<text class="ts" x="479" y="320" text-anchor="middle" fill="#888">from eigenvector orthonormality</text>
+</svg>

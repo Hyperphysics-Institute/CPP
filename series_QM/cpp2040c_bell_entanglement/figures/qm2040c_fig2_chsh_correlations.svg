@@ -1,1 +1,45 @@
-
+<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+<style>.ts{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;fill:#555}.th{font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a}</style>
+<line x1="80" y1="60" x2="80" y2="325" stroke="#ccc" stroke-width="0.8"/>
+<line x1="75" y1="190" x2="632" y2="190" stroke="#ccc" stroke-width="0.8"/>
+<g stroke="#ccc" stroke-width="0.8">
+<line x1="80" y1="320" x2="80" y2="326"/><line x1="174" y1="320" x2="174" y2="326"/>
+<line x1="267" y1="320" x2="267" y2="326"/><line x1="360" y1="320" x2="360" y2="326"/>
+<line x1="454" y1="320" x2="454" y2="326"/><line x1="547" y1="320" x2="547" y2="326"/>
+<line x1="620" y1="320" x2="620" y2="326"/>
+</g>
+<text class="ts" x="80"  y="340" text-anchor="middle">0°</text>
+<text class="ts" x="174" y="340" text-anchor="middle">30°</text>
+<text class="ts" x="267" y="340" text-anchor="middle">60°</text>
+<text class="ts" x="360" y="340" text-anchor="middle">90°</text>
+<text class="ts" x="454" y="340" text-anchor="middle">120°</text>
+<text class="ts" x="547" y="340" text-anchor="middle">150°</text>
+<text class="ts" x="620" y="340" text-anchor="middle">180°</text>
+<text class="ts" x="636" y="324" fill="#888">θ</text>
+<text class="ts" x="70" y="64" text-anchor="end">+1</text>
+<text class="ts" x="70" y="194" text-anchor="end">0</text>
+<text class="ts" x="70" y="324" text-anchor="end">−1</text>
+<text class="ts" x="42" y="194" text-anchor="middle" fill="#888">E(θ)</text>
+<path d="M 80,60 L 360,190 L 620,320" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="8 4" opacity="0.8"/>
+<path d="M 80,320 C 174,303 267,255 360,190 C 454,125 547,77 620,60" fill="none" stroke="#185FA5" stroke-width="2.5" opacity="0.9"/>
+<circle cx="215" cy="282" r="5" fill="#D85A30" stroke="#993C1D" stroke-width="0.5"/>
+<circle cx="485" cy="98"  r="5" fill="#D85A30" stroke="#993C1D" stroke-width="0.5"/>
+<line x1="215" y1="190" x2="215" y2="282" stroke="#D85A30" stroke-width="0.5" stroke-dasharray="3 2" opacity="0.5"/>
+<line x1="485" y1="190" x2="485" y2="98"  stroke="#D85A30" stroke-width="0.5" stroke-dasharray="3 2" opacity="0.5"/>
+<text class="ts" x="215" y="355" text-anchor="middle" fill="#D85A30">45°</text>
+<text class="ts" x="485" y="355" text-anchor="middle" fill="#D85A30">135°</text>
+<text class="ts" x="140" y="80" fill="#888">Classical: 1−2θ/π</text>
+<text class="ts" x="140" y="95" fill="#888">|CHSH| ≤ 2</text>
+<text class="ts" x="430" y="72" fill="#185FA5">Quantum: −cosθ</text>
+<text class="ts" x="430" y="87" fill="#185FA5">|CHSH| = 2√2 ≈ 2.83</text>
+<rect x="432" y="220" width="178" height="60" rx="6" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="521" y="240" text-anchor="middle">Bell bound</text>
+<text class="ts" x="521" y="258" text-anchor="middle">classical |S| ≤ 2</text>
+<text class="ts" x="521" y="274" text-anchor="middle">quantum |S| = 2√2</text>
+<line x1="88" y1="380" x2="120" y2="380" stroke="#888" stroke-width="2" stroke-dasharray="8 4"/>
+<text class="ts" x="126" y="384">classical LHV</text>
+<line x1="264" y1="380" x2="296" y2="380" stroke="#185FA5" stroke-width="2.5"/>
+<text class="ts" x="302" y="384">quantum / CPP</text>
+<circle cx="440" cy="380" r="4" fill="#D85A30"/>
+<text class="ts" x="448" y="384">CHSH optimal angles</text>
+</svg>
