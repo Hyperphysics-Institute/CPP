@@ -709,6 +709,8 @@ Glueball mass from cage loop
   & open & $\sim1.5\text{--}2$~GeV & Open (\ref{op:glueball}) \\
 $\Lambda_{\rm QCD}$ from PSR saturation
   & open & $0.218$~GeV & Open (\ref{op:lambda_psr}) \\
+Nucleon magnetic moments from ZBW
+  & open (mech.\ identified) & $\mu_p=+2.793$, $\mu_n=-1.913\,\mu_N$ & Open (\ref{op:mag_moments}) \\
 \end{longtable}
 
 %=====================================================================
@@ -906,6 +908,55 @@ $\text{PSR}_{\rm eff} \to \lP/2$.  Deriving $\Lambda_{\rm QCD}
 \approx 0.218$~GeV from $\lP$ and sea\_strength --- without
 using the PDG value as input --- would constitute a first-principles
 derivation of the QCD confinement scale.
+\end{openprob}
+
+\begin{openprob}[Nucleon magnetic moments from ZBW quark currents]
+\label{op:mag_moments}
+The anomalous magnetic moments of the proton ($\mu_p = +2.7928\,\mu_N$)
+and neutron ($\mu_n = -1.9130\,\mu_N$) arise in standard nuclear
+physics from quark orbital and spin contributions.  In the SU(6)
+constituent quark model:
+\begin{equation}
+\mu_p = \frac{4\mu_u - \mu_d}{3}, \qquad
+\mu_n = \frac{4\mu_d - \mu_u}{3},
+\label{eq:gmo_magnetic}
+\end{equation}
+where $\mu_q = e_q / (2 M_q)$ at leading order.
+
+In CPP, the magnetic moment of each constituent quark arises from its
+ZBW orbital current: $\mu_q \propto (e_q / 2 M_q) \cdot
+\langle\psi|\hat{L} + 2\hat{S}|\psi\rangle_{\rm ZBW}$, where the
+expectation value is taken over the ZBW orbital wavefunction in the
+tetrahedral cage.
+
+Prior numerical work in \texttt{magnetic\_moments\_zbw.ipynb}
+(CPP/series\_strong, v8.0) establishes the following:
+\begin{enumerate}
+\item \textbf{The mechanism (correct):} The proton's anomalous moment
+  exceeds the neutron's (in magnitude) because the proton's two $u$
+  quarks ($+2/3$ charge) produce a larger ZBW orbital current than
+  the neutron's two $d$ quarks ($-1/3$ charge).  The
+  \texttt{polarity\_bias} ($+0.15$ for proton, $-0.10$ for neutron)
+  in the notebook captures this charge-weighted composition
+  difference.
+\item \textbf{The Dirac baseline (correct):} The base $g/2 = 1.0$
+  is the point-particle Dirac moment; the anomaly $\kappa$ from ZBW
+  dynamics is the CPP prediction.
+\item \textbf{The numerical values (not yet derived):}
+  The notebook's parameters (\texttt{anomaly\_base} $= 0.792$,
+  \texttt{suppression} $= 0.98$) are fitted, not derived.  With
+  these values the formula gives $\mu_p = +1.942$ and $\mu_n =
+  -1.678\,\mu_N$, errors of $30\%$ and $12\%$ respectively.
+  The notebook overstates agreement via a misleading metric.
+\end{enumerate}
+
+The CPP derivation requires: (a)~computing
+$\langle\hat{L}+2\hat{S}\rangle_{\rm ZBW}$ for each quark flavour
+from its cage geometry; (b)~applying equation~\eqref{eq:gmo_magnetic}
+with CPP-derived $\mu_u$ and $\mu_d$.  Correctly deriving both
+nucleon magnetic moments from the single ZBW orbital wavefunction
+on the tetrahedral cage would be a strong confirmation of the cage
+architecture.
 \end{openprob}
 
 %=====================================================================
