@@ -1,0 +1,584 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\mP}{m_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle#1|}
+
+\title{\textbf{Quantum Mechanics from a Planck-Scale Lattice:\\
+Five Theorems in Conscious Point Physics}\\[8pt]
+{\normalsize Prepared for submission to \textit{Foundations of Physics}}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{22 March 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present five theorems that together constitute a derivation of
+non-relativistic quantum mechanics and the free quantum field from
+a discrete Planck-scale lattice theory — Conscious Point Physics (CPP).
+The primitives are: Conscious Points (CPs) carrying charge $\pm e$;
+Displacement Increment (DI) bits carrying both number density $\rho$ and
+geometric phase $\phi$, with complex amplitude
+$\psi_i = \sqrt{\rho_i}\,e^{i\phi_i}$ at each Grid Point (GP) of the
+lattice; a 600-cell lattice with 120 GPs, coordination $z=12$, and
+H$_4$ icosahedral symmetry; and the Nexus, an atemporal global
+conservation law enforcing DI-bit number and phase circulation at each
+Absolute Moment tick.
+
+\textbf{Theorem 1} (Schr\"{o}dinger): Complex hopping on the 600-cell
+with amplitude $T = \hbar^2/(4m\Delta s^2)$ gives
+$i\hbar\partial_t\psi = [-\hbar^2\nabla^2/(2m) + V]\psi$ in the
+continuum limit $\Delta s \to 0$.
+
+\textbf{Theorem 2} (Born rule): The detection probability equals the
+DI-bit number density, $P = \rho_{\rm bit} = |\psi|^2$; the
+derivation is non-circular because $\psi$ and $A_0$ are defined
+independently of probability.
+
+\textbf{Theorem 3} (Bell -- CHSH $= 2\sqrt{2}$): The singlet state is
+non-separable; the Nexus maintains it globally; the Born rule gives
+$E(\hat{a},\hat{b}) = -\cos\theta$, yielding $|S| = 2\sqrt{2}$ and
+exact no-signaling.
+
+\textbf{Theorem 4} (Lindblad -- pointer basis): DP~Sea scattering
+under the Born--Markov approximation yields the Lindblad master
+equation; the pointer basis is proved geometrically to be the SSV
+eigenstates, fixed by the lattice rather than by the apparatus.
+
+\textbf{Theorem 5} (Commutation -- fermion/boson): Bosonic
+commutation relations $[a_k, a_{k'}^\dagger] = \delta_{kk'}$ follow
+from eigenmode orthonormality of the 600-cell adjacency matrix;
+fermion--boson statistics follow from CP exclusion vs.\ neutral
+DI-bit modes.
+
+All lattice corrections are of order $(\lP/\lambda)^2 \lesssim 10^{-66}$
+at laboratory scales and unobservable. The hierarchy problem becomes
+finite fine-tuning rather than infinite renormalization. SM particle
+masses and $\alpha = 1/137$ remain open problems.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\section{Introduction and Motivation}
+%=====================================================================
+
+The five fundamental postulates of standard quantum mechanics — the
+Hilbert space, the Born rule, linear superposition, wavefunction collapse,
+and field commutation relations — are independent axioms with no
+mechanical derivation. Conscious Point Physics (CPP) attempts to derive
+each from the dynamics of a single discrete structure: phase-carrying
+DI bits propagating on a Planck-scale 600-cell lattice under global
+conservation by the Nexus.
+
+This paper is a compressed synthesis of the CPP quantum mechanics series
+(Papers 2--6, \citep{cpp2040a,cpp2040b,cpp2040c,cpp2040d,cpp2040e}).
+It states and proves the five key theorems, identifies the specific
+physical ingredient at each step, and clearly flags what remains open.
+Readers seeking extended derivations, comparison with standard theory,
+and numerical predictions are referred to the individual series papers.
+
+\subsection{The four primitives}
+
+\begin{definition}[CPP primitives]
+\label{def:primitives}
+\hfill
+\begin{enumerate}
+\item \textbf{Conscious Points (CPs):} Planck-scale entities each
+  carrying charge $\pm e$ (or $\pm e/3$, $\pm 2e/3$ for quark
+  aggregates \citep{cpp5014}). Each occupies one Grid Point.
+\item \textbf{DI bits:} Relational quanta exchanged between CPs. Each
+  DI bit carries density $\rho \ge 0$ and geometric phase $\phi$,
+  forming the complex amplitude $\psi = \sqrt{\rho}\,e^{i\phi}$. DI
+  bits propagate at $c = \lP/\tP$.
+\item \textbf{600-cell lattice:} 120 Grid Points, 720 edges,
+  coordination $z = 12$. Adjacency matrix $A$ (real symmetric,
+  $120\times120$) has exactly six distinct eigenvalues
+  $\lambda \in \{12,\, 1+\varphi,\, \varphi-1,\, 1-\varphi,\,
+  -\varphi,\, -(1+\varphi)\}$ where $\varphi = (1+\sqrt5)/2$
+  \citep{brouwer1989}.
+\item \textbf{Nexus:} Atemporal global constraint that enforces
+  (i)~DI-bit number conservation and (ii)~total phase circulation
+  across all 120 Grid Points at every Absolute Moment tick $\Delta t
+  = \tP$. It is not a signal; it is not a local hidden variable.
+\end{enumerate}
+\end{definition}
+
+%=====================================================================
+\section{Theorem 1: Schr\"{o}dinger Equation from 600-Cell Hopping}
+%=====================================================================
+
+\begin{theorem}[Schr\"{o}dinger equation]
+\label{thm:schrodinger}
+Let the DI-bit complex amplitude $\psi_i(t)$ at Grid Point $i$ evolve
+by complex hopping:
+\begin{equation}
+\psi_i(t+\Delta t) = \psi_i(t)
+- \frac{i\Delta t}{\hbar}\sum_j H_{ij}\psi_j(t),
+\label{eq:lattice_evol}
+\end{equation}
+where
+\begin{equation}
+H_{ij} = \begin{cases}
+-T & j \sim i \ \text{(nearest neighbour)}, \\
++zT & j = i, \quad z = 12, \\
+0 & \text{otherwise},
+\end{cases}
+\qquad T = \frac{\hbar^2}{4m\Delta s^2}.
+\label{eq:H}
+\end{equation}
+In the continuum limit $\Delta s \to 0$ (with $T\Delta s^2 =
+\hbar^2/(4m)$ fixed), equation~\eqref{eq:lattice_evol} becomes
+\begin{equation}
+i\hbar\,\frac{\partial\psi}{\partial t}
+= -\frac{\hbar^2}{2m}\nabla^2\psi + V(\mathbf{r})\psi,
+\label{eq:Schrodinger}
+\end{equation}
+where $V(\mathbf{r}) = -k_{\rm PSR}\Delta|\SSV(\mathbf{r})|$ is the
+external potential from the Space Stress Vector field.
+\end{theorem}
+
+\begin{proof}
+The 600-cell graph Laplacian satisfies (Appendix~\ref{app:laplacian}):
+\begin{equation}
+(\mathcal{A}\psi)_i \equiv \sum_{j\sim i}(\psi_j - \psi_i)
+= 2\Delta s^2\nabla^2\psi + O(\Delta s^4).
+\label{eq:laplacian}
+\end{equation}
+Substituting into~\eqref{eq:lattice_evol}:
+$i\hbar(\psi_i(t+\Delta t) - \psi_i)/\Delta t = -T\cdot(\mathcal{A}\psi)_i
++ V_i\psi_i = -[\hbar^2/(4m\Delta s^2)]\cdot 2\Delta s^2\nabla^2\psi
++ V\psi$.
+Taking $\Delta t \to 0$ yields~\eqref{eq:Schrodinger}. \qed
+\end{proof}
+
+\begin{remark}[Why $T = \hbar^2/(4m\Delta s^2)$, not $\hbar^2/(2m\Delta s^2)$]
+The 600-cell has $z=12$ in $d=3$ spatial dimensions.
+The graph Laplacian sum yields a prefactor $z/(2d) = 12/6 = 2$,
+so $(\mathcal{A}\psi)/\Delta s^2 \to 2\nabla^2\psi$.
+Setting $T\cdot 2 = \hbar^2/(2m)$ gives $T = \hbar^2/(4m\Delta s^2)$.
+Using $T = \hbar^2/(2m\Delta s^2)$ would give $-\hbar^2\nabla^2\psi/m$
+(wrong by a factor of~2).
+\end{remark}
+
+\begin{remark}[Why the imaginary unit arises from DI-bit phase]
+Classical diffusion replaces $-i\Delta t/\hbar$ in~\eqref{eq:lattice_evol}
+with $+D\Delta t$ (real, positive), giving the Fokker--Planck equation
+$\partial_t\rho = D\nabla^2\rho$ — real diffusion, no wave behaviour.
+The key CPP physical ingredient is that each DI-bit hop accumulates phase:
+$\Delta\phi = m_{\rm CP}c\Delta s/\hbar$. This geometric phase
+accumulation inserts the factor $-i/\hbar$ into the hopping, converting
+real diffusion into complex quantum evolution. The Fokker--Planck route
+was explicitly ruled out in CPP-2040a~\citep{cpp2040a}: no continuum
+limit of a real diffusion equation can produce the imaginary unit.
+\end{remark}
+
+%=====================================================================
+\section{Theorem 2: Born Rule from DI-Bit Density}
+%=====================================================================
+
+\begin{theorem}[Born rule]
+\label{thm:born}
+The probability of detecting a CP state change at Grid Point $i$ is
+$P(i) = |\psi(i)|^2$.
+\end{theorem}
+
+\begin{proof}
+From companion~C3~\citep{abshier2026c3}: the probability of a CP state
+change at a Grid Point is proportional to the local DI-bit number
+density, $P \propto \rho_{\rm bit}$.
+Since $\psi = \sqrt{\rho_{\rm bit}}\,e^{i\phi}$, we have
+$\rho_{\rm bit} = |\psi|^2$ and therefore $P(i) \propto |\psi(i)|^2$. \qed
+\end{proof}
+
+\begin{remark}[Non-circularity]
+The complex amplitude $\psi$ and the emission amplitude $A_0$ entering
+the path sum $\psi(d) = \sum_k A_0 e^{i\phi_k}$ are defined geometrically
+from lattice structure and DI-bit density — not from any probability.
+The Born rule is a consequence, not a postulate.
+\end{remark}
+
+%=====================================================================
+\section{Theorem 3: Bell--CHSH $= 2\sqrt{2}$ from the Nexus}
+%=====================================================================
+
+\begin{theorem}[Non-separability of the singlet]
+\label{thm:nonsep}
+The singlet state $\ket{\Psi^-} = (\ket{\uparrow\downarrow} -
+\ket{\downarrow\uparrow})/\sqrt{2}$ cannot be written as
+$\ket{\phi_A}\otimes\ket{\phi_B}$ for any single-particle states.
+\end{theorem}
+
+\begin{proof}
+Assume the factorisation. Expanding and matching the four coefficients
+$\alpha_A\gamma_B = 0$, $\alpha_A\delta_B = 1/\sqrt2$,
+$\beta_A\gamma_B = -1/\sqrt2$, $\beta_A\delta_B = 0$ yields a
+contradiction: the first and fourth equations force $\alpha_A\delta_B = 0$
+or $\beta_A\gamma_B = 0$, contradicting the middle two. \qed
+\end{proof}
+
+\begin{remark}[Role of the Nexus]
+The Nexus maintains the joint non-separable state~\eqref{eq:singlet}
+globally at every tick, regardless of the spatial separation of particles
+A and B. This is not a signal (no information is transmitted) and not a
+local hidden variable (it does not factorise, so Bell's theorem does not
+apply to it).
+\end{remark}
+
+\begin{theorem}[CHSH $= 2\sqrt{2}$]
+\label{thm:chsh}
+For the singlet state with the Born rule (Theorem~\ref{thm:born}),
+the singlet correlation is $E(\hat{a},\hat{b}) = -\cos\theta$,
+yielding $|S_{\rm CHSH}| = 2\sqrt{2}$ at optimal settings
+($\hat{a}=0°$, $\hat{a}'=90°$, $\hat{b}=45°$, $\hat{b}'=-45°$).
+\end{theorem}
+
+\begin{proof}
+The joint probabilities from the Born rule for the singlet are
+$P(\pm,\pm) = (1\mp\cos\theta)/4$.
+The correlation is
+$E = P(++) + P(--) - P(+-) - P(-+)
+= [(1{-}c) + (1{-}c) - (1{+}c) - (1{+}c)]/4 = -\cos\theta$.
+At optimal angles all four $|\theta| = 45°$ except $\theta_{a'b'} = 135°$:
+$S = -1/\sqrt2 - 1/\sqrt2 - 1/\sqrt2 - (1/\sqrt2) = -2\sqrt2$.
+$|S| = 2\sqrt2 > 2$ violates the classical Bell bound. \qed
+\end{proof}
+
+\begin{corollary}[No-signaling]
+Alice's marginal probability $P(A{=}+1) = \tfrac12$ is independent of
+Bob's measurement axis; symmetrically for Bob.
+\end{corollary}
+
+%=====================================================================
+\section{Theorem 4: Lindblad Equation and Lattice-Fixed Pointer Basis}
+%=====================================================================
+
+\begin{theorem}[Lindblad from DP~Sea scattering]
+\label{thm:lindblad}
+The reduced density matrix of a DI-bit qubit coupled to the DP~Sea via
+$H_{\rm int} = \sum_j g_j(a_j + a_j^\dagger)\otimes\hat{\sigma}_z$
+evolves, under the Born--Markov approximation, as
+\begin{equation}
+\frac{d\rho}{dt} = -\frac{i}{\hbar}[H_S,\rho]
++ \gamma(\hat{\sigma}_z\rho\hat{\sigma}_z - \rho),
+\qquad
+\gamma = \frac{(\text{sea\_strength})^2\,\EP}{\hbar},
+\label{eq:lindblad}
+\end{equation}
+with sea\_strength $= 0.185$ (companion~C1~\citep{abshier2026c1}).
+Off-diagonal elements decay as
+$\rho_{01}(t) = \rho_{01}(0)e^{-2\gamma t}$; populations are
+conserved.
+\end{theorem}
+
+\begin{proof}[Derivation sketch]
+The Born--Markov second-order time-convolutionless expansion of the
+interaction-picture master equation gives
+$\dot\rho_S = -(1/\hbar^2)\int_0^\infty d\tau\,
+\mathrm{tr}_B[H_{\rm int}(t),[H_{\rm int}(t-\tau),\rho_S\otimes\rho_B]]$.
+With bath correlation time $\tau_{\rm corr} = \tP$ (shortest time in the
+theory) and weak coupling sea\_strength $\ll 1$, the Markov approximation
+collapses the bath correlator to a delta function, yielding the
+Lindblad form~\eqref{eq:lindblad} with $\gamma$ set by the spectral
+density of the DP~Sea at zero frequency. \qed
+\end{proof}
+
+\begin{theorem}[Pointer basis $=$ SSV eigenstates]
+\label{thm:pointer}
+The states robust under DP~Sea coupling are the eigenstates of
+$\hat{\sigma}_z$, i.e., the DI-bit states of definite phase
+projection onto the local SSV direction.
+\end{theorem}
+
+\begin{proof}
+A state is robust under repeated dephasing kicks proportional to
+$\hat{\sigma}_z$ if and only if it commutes with $\hat{\sigma}_z$.
+The eigenstates of $\hat{\sigma}_z$ satisfy this; all superpositions
+accumulate random phase offsets that drive $\rho_{01} \to 0$.
+The 12-edge broadcast at each Grid Point selects the dominant SSV
+component, so $\hat{\sigma}_z$ is the SSV projection operator, and
+the pointer basis is therefore the SSV eigenstates. \qed
+\end{proof}
+
+\begin{remark}[Stronger than einselection]
+Standard einselection \citep{zurek1981} identifies the pointer basis
+with the eigenstates of the system--environment coupling, which is
+apparatus-dependent. In CPP, the coupling is always $\hat{\sigma}_z$
+(the SSV projection), so the pointer basis is fixed by the lattice
+geometry, independent of the measurement apparatus.
+This is a falsifiable CPP-specific prediction.
+\end{remark}
+
+%=====================================================================
+\section{Theorem 5: Commutation Relations and Fermion--Boson Statistics}
+%=====================================================================
+
+\begin{theorem}[Bosonic commutation relations]
+\label{thm:commutators}
+Define the eigenmode annihilation operator
+$a_k = \sum_i u_k(i)^*\hat{c}_i$
+where $\mathbf{u}_k$ are the orthonormal eigenvectors of the 600-cell
+adjacency matrix $A$ and $\hat{c}_i$ annihilates a DI bit at site $i$.
+If site operators satisfy $[\hat{c}_i,\hat{c}_j^\dagger] = \delta_{ij}$,
+then
+\begin{equation}
+[a_k, a_{k'}^\dagger] = \delta_{kk'}.
+\label{eq:commutators}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+$[a_k,a_{k'}^\dagger] = \sum_{i,j}u_k(i)^*u_{k'}(j)[\hat{c}_i,\hat{c}_j^\dagger]
+= \sum_i u_k(i)^*u_{k'}(i) = \mathbf{u}_k^\dagger\mathbf{u}_{k'}
+= \delta_{kk'}$. \qed
+\end{proof}
+
+\begin{theorem}[Fermion--boson distinction]
+\label{thm:fermboson}
+Charged CP aggregates obey the CP exclusion principle (at most one per
+Grid Point), yielding fermionic anticommutators. Neutral DI-bit modes
+have no occupancy restriction, yielding bosonic commutators.
+\end{theorem}
+
+\begin{proof}
+Two same-sign charged CPs at one Grid Point would have zero separation
+and therefore infinite SSV self-repulsion (CPP-5014~\citep{cpp5014}).
+The site algebra for charged modes therefore has $\hat{c}_i^2 = 0$
+(Pauli), giving anticommutators.
+Neutral DI bits carry no charge and experience no such exclusion;
+their site algebra gives commutators. \qed
+\end{proof}
+
+\begin{remark}[Finite renormalization]
+The physical Planck-scale lattice provides a UV cutoff
+$k_{\max} = \pi/\lP$, rendering every Feynman loop integral finite.
+The electron self-energy correction is $\Sigma \sim e^2\EP^2/(4\pi^2)$
+— large but finite. The hierarchy problem becomes a well-defined
+finite fine-tuning problem, not an infinite renormalization.
+This is a logical improvement but not a complete solution.
+\end{remark}
+
+%=====================================================================
+\section{Open Problems}
+%=====================================================================
+
+\begin{enumerate}
+\item \textbf{SM particle masses.} The 600-cell adjacency matrix has
+  exactly six distinct eigenvalues, mapping suggestively to three SM
+  generations with two members each. No derivation of mass ratios from
+  the golden-ratio eigenvalues yet exists.
+
+\item \textbf{Fine-structure constant.} $\alpha = 1/137$ has not been
+  derived from sea\_strength and the 600-cell geometry.
+
+\item \textbf{Quantum gravity.} The Nexus near Planck-scale horizons
+  and the lattice interpretation of Hawking radiation remain open.
+
+\item \textbf{Born rule from first principles.} Theorem~\ref{thm:born}
+  borrows from companion~C3. A derivation from the four primitives
+  of Definition~\ref{def:primitives} alone would make the series
+  fully self-contained.
+
+\item \textbf{Pointer basis test.} The prediction that the pointer basis
+  is fixed by the lattice (not the apparatus) has no proposed
+  experimental realisation.
+\end{enumerate}
+
+%=====================================================================
+\section{Consolidated Predictions}
+%=====================================================================
+
+\begin{longtable}{@{}p{4.5cm}p{4.5cm}p{3.5cm}@{}}
+\caption{Falsifiable predictions of CPP quantum mechanics.}
+\label{tab:predictions} \\
+\toprule
+Prediction & Formula & Status \\
+\midrule
+\endfirsthead
+\toprule
+Prediction & Formula & Status \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Bell correlations
+& $E = -\cos\theta$, $|S| = 2\sqrt{2}$
+& Confirmed \citep{hensen2015,giustina2015,shalm2015} \\[4pt]
+Lattice dispersion
+& $E = h\nu[1-({\nu}/{\nu_P})^2]$
+& Planck-scale experiment \\[4pt]
+Decoherence rate
+& $\gamma = (\text{sea\_str})^2\EP/\hbar$
+& Quantum optics timescales \\[4pt]
+Pointer basis (CPP-specific)
+& SSV eigenstates, lattice-fixed
+& Proposed test needed \\[4pt]
+Renormalization
+& $\Sigma \sim e^2\EP^2$, finite
+& Hierarchy: finite fine-tuning \\[4pt]
+Six eigenvalues
+& $\pm(1{+}\varphi),\pm\varphi,\pm(\varphi{-}1)$
+& Open mass-ratio problem \\
+\end{longtable}
+
+%=====================================================================
+\section{Conclusion}
+%=====================================================================
+
+The five theorems presented here derive, from a single discrete lattice
+structure, the Schr\"{o}dinger equation, the Born rule, Bell inequality
+violation at the Tsirelson bound, the Lindblad decoherence equation
+with a lattice-fixed pointer basis, and bosonic/fermionic commutation
+relations. Each theorem identifies the specific physical ingredient:
+complex hopping (imaginary unit from phase), non-separable Nexus states
+(entanglement), DP~Sea scattering (measurement), and CP exclusion
+(fermions). The framework makes one genuinely novel prediction
+distinguishable from standard quantum mechanics: the pointer basis is
+fixed by the lattice geometry rather than by the measurement apparatus,
+and does not depend on the specific detector.
+
+%=====================================================================
+\appendix
+\section{Graph Laplacian of the 600-Cell}
+\label{app:laplacian}
+%=====================================================================
+
+The 600-cell has $z=12$ nearest neighbours in $d=3$ dimensions.
+For a smooth $\psi(\mathbf{r})$, icosahedral symmetry implies
+$\sum_{j\sim i}(\mathbf{r}_j - \mathbf{r}_i) = 0$ and
+$\sum_{j\sim i}(\mathbf{r}_j - \mathbf{r}_i)\otimes(\mathbf{r}_j - \mathbf{r}_i)
+= (z\Delta s^2/d)\mathbf{I}$, giving:
+\begin{equation}
+\sum_{j\sim i}(\psi_j - \psi_i)
+= \frac{z\Delta s^2}{2d}\nabla^2\psi + O(\Delta s^4)
+= 2\Delta s^2\nabla^2\psi + O(\Delta s^4).
+\label{eq:laplacian_proof}
+\end{equation}
+The numerical value $z/(2d) = 12/6 = 2$ is a property of the 600-cell
+coordination number. This is why the correct hopping amplitude is
+$T = \hbar^2/(4m\Delta s^2)$ — the factor of 4 absorbs the factor of 2
+from the Laplacian.
+
+%=====================================================================
+\bibliographystyle{unsrtnat}
+\begin{thebibliography}{20}
+
+\bibitem{cpp2040a}
+T.~L. Abshier and Grok,
+``Schr\"{o}dinger equation from phase-carrying DI-bit hopping,''
+CPP-2040a v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040b}
+T.~L. Abshier and Grok,
+``Superposition and interference from multi-path DI-bit summation,''
+CPP-2040b-super v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040c}
+T.~L. Abshier and Grok,
+``Entanglement and Bell violation from non-separable Nexus states,''
+CPP-2040c v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040d}
+T.~L. Abshier and Grok,
+``Measurement problem from DP~Sea decoherence,''
+CPP-2040d v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040e}
+T.~L. Abshier and Grok,
+``Emergent QFT and finite renormalization from the 600-cell lattice,''
+CPP-2040e v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp5014}
+T.~L. Abshier and Grok,
+``Charge neutrality in baryons and emergent quark charges,''
+CPP-5014, Hyperphysics Institute (2026).
+
+\bibitem{abshier2026c1}
+T.~L. Abshier,
+``The Absolute Moment Postulate,''
+companion~C1, Hyperphysics Institute (2026).
+
+\bibitem{abshier2026c3}
+T.~L. Abshier,
+``The Born rule from DI-bit density,''
+companion~C3, Hyperphysics Institute (2026).
+
+\bibitem{bell1964}
+J.~S. Bell,
+``On the Einstein Podolsky Rosen paradox,''
+\textit{Physics Physique Fizika} \textbf{1}(3), 195--200 (1964).
+
+\bibitem{clauser1969}
+J.~F. Clauser, M.~A. Horne, A.~Shimony, and R.~A. Holt,
+``Proposed experiment to test local hidden-variable theories,''
+\textit{Phys.\ Rev.\ Lett.} \textbf{23}, 880 (1969).
+
+\bibitem{hensen2015}
+B.~Hensen \textit{et al.},
+``Loophole-free Bell inequality violation,''
+\textit{Nature} \textbf{526}, 682 (2015).
+
+\bibitem{giustina2015}
+M.~Giustina \textit{et al.},
+``Significant-loophole-free test of Bell's theorem,''
+\textit{Phys.\ Rev.\ Lett.} \textbf{115}, 250401 (2015).
+
+\bibitem{shalm2015}
+L.~K. Shalm \textit{et al.},
+``Strong loophole-free test of local realism,''
+\textit{Phys.\ Rev.\ Lett.} \textbf{115}, 250402 (2015).
+
+\bibitem{zurek1981}
+W.~H. Zurek,
+``Pointer basis of quantum apparatus,''
+\textit{Phys.\ Rev.\ D} \textbf{24}, 1516 (1981).
+
+\bibitem{lindblad1976}
+G.~Lindblad,
+``On the generators of quantum dynamical semigroups,''
+\textit{Commun.\ Math.\ Phys.} \textbf{48}, 119 (1976).
+
+\bibitem{brouwer1989}
+A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
+\textit{Distance-Regular Graphs}, Springer (1989).
+
+\bibitem{feynman1965}
+R.~P. Feynman and A.~R. Hibbs,
+\textit{Quantum Mechanics and Path Integrals}, McGraw-Hill (1965).
+
+\bibitem{breuer2002}
+H.-P. Breuer and F.~Petruccione,
+\textit{The Theory of Open Quantum Systems}, Oxford (2002).
+
+\end{thebibliography}
+
+\end{document}
