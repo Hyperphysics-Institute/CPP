@@ -400,7 +400,7 @@ Note: the EW series had two numerical errors found during the EW Monte Carlo dev
 
 | ID | Problem | Papers | Status |
 |---|---|---|---|
-| OP-SS-1 | Quark mass formula M_q(n_layers) from sea_strength | SS#1, SS#5 | Open |
+| OP-SS-1 | Quark mass formula M_q(n_layers) from sea_strength | SS#1, SS#5 | Open (partial — see Stage 12) |
 | OP-SS-2 | Three SM generations = cage depths = eigenvalue pairs | SS#1 | Open |
 | OP-SS-3 | Chiral condensate ⟨q̄q⟩ from ZBW dynamics | SS#5 | Open |
 | OP-SS-4 | Two-loop β₁ from CPP qCP cage dynamics | SS#4 | Open |
@@ -492,4 +492,57 @@ CPP/series_strong/
 | Central open problem | Derive η (Planck-to-weak) | Derive M_q(n_layers) from sea_strength |
 | arXiv target | cpp_ew_unified_v2.1.tex | cpp_ss_unified_v2.tex |
 
-*End of development log.*
+## Stage 12 — Prior Numerical Work: nested_cage_masses.ipynb
+
+After the series was complete, a pre-existing notebook was discovered in the CPP GitHub repo (`series_strong/nested_cage_masses.ipynb`, v8.0). This is Thomas's independent prior attempt at OP-SS-1 — the quark mass formula from cage depth. It was built in eight revision iterations before the SS series was written.
+
+### What the notebook establishes
+
+**The SSV integral formula** is the central result:
+
+```
+M_q ~ ∫₀^{r_n} S(r) γ(r) r² dr
+```
+
+where S(r) is the SSV field energy density, γ(r) = 1 + k·S(r) is the Lorentz-like enhancement factor, and r_n = φ^{n/2}·r₀ is the cage radius at depth n. This is physically correct: heavier cages enclose more SSV field energy, producing heavier quarks. The SSV compression formula from EW#2 is the template.
+
+**The inner SSV mechanism for m_u < m_d** is new physical content not in SS#1–5:
+
+The bare up quark carries a central +qCP with no outer cage. At the small ZBW orbital radius, the local SSV stress is strongest. This polarises the surrounding eCPs outward, reducing the hDP overlap fraction to δ_up ≈ 0.95 × 1/3, while the down quark's outer hDP structure gives δ_down ≈ 1/3 (unmodified). The direction m_u < m_d follows geometrically without free parameters.
+
+**The shell radius scaling** r_n = φ^{n/2} is well-motivated from 600-cell geometry. The three shells used are 1 : √φ : φ², which maps cleanly onto nested subgraph radii.
+
+### What the notebook does not yet solve
+
+**The kernel S = 1/r⁴ is too mild.** Reproducing the calculation exactly:
+- Shell integral ratios with S ∝ 1/r⁴: 1 : 1.03 : 1.21
+- Actual PDG mass ratios (u to t): 1 : 44 : 78,000
+
+The five-orders-of-magnitude span of the quark mass spectrum cannot be reproduced with a power-law radial kernel and four cage layers. The kernel must be much steeper — likely exponential in cage depth n rather than power-law in r.
+
+**The "exact 2.2 MeV match" for the up quark is a fit.** The formula uses a hard-coded −0.5 MeV offset and a fitted 0.95 adjustment factor. These are not derived. The physical direction (inner SSV reduces overlap) is correct; the magnitudes are tuned.
+
+**The 3-shell scheme compresses 6 quarks.** Thomas's SS#1 table has 6 individual quarks with specific cage architectures; the notebook groups them into 3 generational shells, losing the physical distinction between e.g. strange (1 cage) and charm (2 cages).
+
+### The leading candidate for the correct kernel
+
+The ZBW frequency ω_ZBW ∝ 1/r_cage is the most promising replacement for the SSV density kernel. It connects cage size directly to mass via E = ℏω_ZBW. With S(r) ∝ 1/r:
+
+```
+∫₀^{r_n} r⁻¹ · r² dr = r_n²/2 ∝ φⁿ
+```
+
+giving mass ratios ∝ φⁿ = 1 : 1.6 : 2.6 : 4.2 : 6.9 for n = 0,1,2,3,4. Still short of the observed span but much closer in structure. The correct formula likely replaces the radial integral with a ZBW-frequency-weighted sum over cage layers, where each layer contributes multiplicatively rather than additively.
+
+### What this means for OP-SS-1
+
+OP-SS-1 is now better posed. The deliverables for the next version are:
+
+1. Find S(r) such that ∫₀^{r_n} S(r) γ(r) r² dr gives ratios matching the six quark masses across five orders of magnitude — starting from the ZBW frequency kernel.
+2. Derive the inner SSV adjustment factor (0.95) from first principles, eliminating the fit.
+3. Derive the exact δ_up and δ_down from the cage geometry, predicting m_u = 2.2 MeV and m_d = 4.7 MeV without offsets.
+4. Apply Thomas's 6-quark cage architecture (not 3 shells) — each quark gets its own cage-layer count and its own integral.
+
+The nested_cage_masses.ipynb approach is correct in physics and spirit. The missing piece is the kernel that produces multiplicative (not additive) mass growth across cage layers.
+
+*End of Stage 12.*
