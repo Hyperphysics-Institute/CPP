@@ -1,0 +1,500 @@
+% ==================================================================
+% Conscious Point Physics:
+% The Hidden Variable Factor K_0(lambda):
+% Single-CP Path Integral and the Non-Perturbative Nexus Programme
+% CPP Companion SD#5 — Version 0 (Research Agenda)
+%
+% STATUS: PLACEHOLDER / RESEARCH AGENDA PAPER
+% This paper records the open problem identified at the close of
+% SD#4 and specifies the programme required to resolve it.
+% It is a formal reminder and agenda document, not a completed
+% derivation. Version 1 will contain the actual calculation.
+%
+% GitHub: CPP/series_foundations/cpp_sd5_K0_derivation_v0.tex
+% ==================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{caption,float,booktabs,parskip,xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openprob}[theorem]{Open Problem}
+
+\newcommand{\lP}{l_P}
+\newcommand{\phig}{\varphi}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Napp}{N_{\rm app}}
+\newcommand{\Npart}{N_{\rm part}}
+\newcommand{\ket}[1]{|#1\rangle}
+
+% Prominent status box
+\newcommand{\statusbox}[1]{%
+  \begin{center}
+  \fboxsep=8pt
+  \fbox{\parbox{0.85\textwidth}{\centering\large\bfseries #1}}
+  \end{center}
+  \vspace{6pt}
+}
+
+\title{\textbf{Conscious Point Physics:\\
+The Hidden Variable Factor $K_0(\lambda)$:\\
+Single-CP Path Integral and the\\
+Non-Perturbative Nexus Programme}\\[6pt]
+{\large Companion SD\#5 --- Version 0}\\[4pt]
+{\normalsize\color{red}\bfseries Research Agenda Paper ---
+Not a Completed Derivation}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{23 March 2026 (agenda recorded); Version~1 target: TBD}
+
+\begin{document}
+\maketitle
+
+\statusbox{STATUS: OPEN PROBLEM AGENDA\\
+This is a v0 placeholder. The derivation is not yet complete.\\
+This document records exactly what must be done and why it matters.}
+
+\begin{abstract}
+SD\#4~\citep{cpp_sd4} completed the CPP superdeterminism series
+with two exact theorems (macroscopic limit $K \to 0$; single-CP
+limit $K = K_0 f_{H_4}$) and one conjecture (the interpolation
+formula).  Two quantitative questions were left open:
+
+\begin{enumerate}
+\item \textbf{The hidden variable factor $K_0(\lambda)$:} What is
+  the explicit functional form of $K_0(\lambda)$, the projection
+  of the particle hidden variable onto the DI-bit exchange degree
+  of freedom?
+
+\item \textbf{Non-perturbative proof of the interpolation:}
+  The conjecture $K \approx \eps \cdot K_0 \cdot f_{H_4}$ is
+  supported by a saddle-point calculation but not yet proved
+  to all orders in $\eps$.
+\end{enumerate}
+
+These two questions determine the \emph{amplitude} of the CPP
+correction to Bell correlations.  The angular form is already exact
+(SD\#2) and the ratio test $\delta E(36°)/\delta E(120°) \approx
+-1.065$ does not depend on the amplitude (SD\#2 eq.~21).
+Nevertheless, a complete theory must provide the amplitude
+$A_5 = \phig^{-3}/(2\pi)$ (conjectured) from first principles.
+
+This paper records the mathematical programme required to answer
+both questions, identifies the specific techniques available from
+existing CPP results, and states what new mathematics is needed.
+It is a \emph{research agenda} for future work, not a completed
+derivation.  Upon completion of the derivation, this document
+becomes Version~1 with the full results.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\section{Why This Open Problem Matters}
+%=====================================================================
+
+The CPP prediction for Bell test deviations is (SD\#4 eq.~9):
+\begin{equation}
+E_{\rm CPP}(\theta) = -\cos\theta
++ \eps\,\bar{K}_0\,f_{H_4}(\theta) + O(\eps^2),
+\label{eq:E_CPP}
+\end{equation}
+where $\eps \approx 2\times10^{-26}$ is the Nexus participation
+fraction (known) and $f_{H_4}(\theta) = A_5\cos5\theta +
+A_3\cos3\theta + \ldots$ is the angular function from SD\#2 (form
+known, amplitudes $A_5, A_3$ conjectured).
+
+The factor $\bar{K}_0 = \langle K_0(\lambda)\cos\theta_\lambda
+\rangle_\lambda$ is the expectation value of $K_0$ weighted by the
+hidden variable distribution.  Until $K_0(\lambda)$ is derived:
+
+\begin{itemize}
+\item The \emph{amplitude} of the CPP signal is unknown (but bounded:
+  $|\eps\bar K_0| \leq \eps \approx 2\times10^{-26}$).
+\item The conjecture $A_5 = \phig^{-3}/(2\pi)$ cannot be proved
+  or disproved.
+\item The non-perturbative verification of the interpolation formula
+  is unavailable.
+\end{itemize}
+
+What is already known without $K_0$:
+\begin{itemize}
+\item The angular structure $f_{H_4}(\theta)$ is exact.
+\item The ratio $\delta E(36°)/\delta E(120°) \approx -1.065$
+  is exact (depends only on $\phig$, not on $\bar K_0$).
+\item The null prediction at $\theta = 90°$ is exact.
+\item The scaling laws ($\propto N_q$, $\propto 1/T$) are exact.
+\end{itemize}
+
+The missing piece is the overall scale, not the shape.
+
+%=====================================================================
+\section{The Mathematical Problem}
+%=====================================================================
+
+\subsection{The single-CP path integral}
+
+From SD\#4 Theorem~2, the single-CP Nexus path integral is:
+\begin{equation}
+Z_{\rm CPP}^{(1,1)}(\lambda,\theta)
+= \int \mathcal{D}[\phi_P]\,
+  e^{i(S_P[\phi_P] + S_A[-\phi_P] + S_{PA}[\phi_P,\theta])/\hbar},
+\label{eq:Z_single}
+\end{equation}
+where the apparatus field is $\phi_A = -\phi_P$ (constrained),
+and $S_{PA}$ is the DI-bit exchange coupling between the two CPs.
+
+The $K_0(\lambda)$ factor is:
+\begin{equation}
+K_0(\lambda) = \frac{Z_{\rm CPP}^{(1,1)}(\lambda,\theta)}
+                    {Z_{\rm QM}^{(1)}(\lambda) \cdot Z_{\rm QM}^{(1)}(\text{vac})}
+               - 1 \bigg|_{\theta\text{-independent part}}.
+\label{eq:K0_def}
+\end{equation}
+The $\theta$-independent part is the projection of the full
+integrand onto the $\cos(5\theta)$ mode (the leading $f_{H_4}$ term);
+the result is $K_0(\lambda)$.
+
+\subsection{What makes this hard}
+
+Three technical obstacles:
+
+\textbf{1. The CPP action $S[\phi]$ at the single-Grid-Point level.}
+The QM series (2040a~\citep{cpp2040a}) derives the Schrödinger
+equation from $Z_{\rm QM}$ in the coarse-grained limit.  The
+single-Grid-Point action $S[\phi_i]$ at lattice resolution is
+not yet written in closed form.  It is known to involve the
+SSV field equations (companions C1--C2~\citep{abshier_sr}) and
+the DI-bit density/phase Lagrangian, but the explicit form for
+a single eCP at a single Grid~Point requires extracting the
+lattice-scale limit of those field equations.
+
+\textbf{2. The exchange coupling $S_{PA}[\phi_P, \theta]$.}
+This is the interaction term between the particle CP and the
+apparatus CP.  Its angular dependence on $\theta$ is what
+generates the $f_{H_4}$ structure.  The derivation requires
+computing the DI-bit exchange matrix element between two
+adjacent Grid~Points in the 600-cell --- a calculation in
+the adjacency operator formalism developed for the QM series
+(companion 2040b~\citep{cpp2040b}).
+
+\textbf{3. The Gaussian integration over $\phi_P$.}
+Once $S_P + S_A + S_{PA}$ is written explicitly, the integral
+over $\phi_P$ is a Gaussian path integral.  Evaluating it
+gives $K_0$ as a function of the saddle-point value of
+$\phi_P$, which depends on $\lambda$ through the initial
+conditions.
+
+\subsection{Candidate approaches}
+
+\textbf{Approach A: Direct lattice calculation.}
+Compute $S_{PA}$ explicitly for two adjacent 600-cell Grid~Points
+in relative orientation $\theta$.  Evaluate the path integral in
+the Gaussian approximation.  This gives $K_0$ perturbatively in
+the DI-bit exchange coupling constant.
+
+\textbf{Approach B: Transfer matrix.}
+Express the Nexus path integral as a transfer matrix product
+along the 600-cell adjacency graph.  For $N_{\rm part} = N_{\rm
+app} = 1$, this is a $2 \times 2$ matrix problem.  The exact
+result for the single-CP limit follows directly.
+
+\textbf{Approach C: Symmetry argument.}
+The $H_4$ symmetry of the 600-cell constrains $K_0(\lambda)$ to
+transform in a specific irrep.  The simplest $H_4$-covariant
+function with zero mean over $\lambda$ is:
+\begin{equation}
+K_0(\lambda) \sim \phig^{-3} \sin(\theta_\lambda),
+\label{eq:K0_conjecture_form}
+\end{equation}
+which would give $\bar K_0 = \phig^{-3}/2$ and confirm the
+conjecture $A_5 = \phig^{-3}/(2\pi)$.  This can be established
+if the relevant $H_4$ irrep can be identified from the
+representation theory of the 600-cell.
+
+Approach C is the most tractable and should be attempted first.
+
+%=====================================================================
+\section{The Non-Perturbative Interpolation Problem}
+%=====================================================================
+
+\subsection{What needs to be proved}
+
+SD\#4 Conjecture~1 states:
+\begin{equation}
+K(\lambda,\theta_A,\theta_B)
+= \eps \cdot K_0(\lambda) \cdot f_{H_4}(\theta_A-\theta_B-\theta_\lambda)
++ O(\eps^2).
+\label{eq:conj}
+\end{equation}
+The saddle-point calculation establishes the leading term.
+The non-perturbative proof requires showing that all higher-order
+terms $c_n \eps^n$ are bounded and that the series converges.
+
+\subsection{Candidate approach: transfer matrix}
+
+For the general case $\Npart = 2$, $\Napp \gg 1$, the Nexus
+constraint distributes over $\Napp + N_{\rm rest}$ Grid~Points.
+The transfer matrix along the 600-cell graph is:
+\begin{equation}
+T_{ij} = e^{i S_{\rm hop}(i \to j) / \hbar},
+\label{eq:transfer}
+\end{equation}
+where $S_{\rm hop}$ is the single-hop DI-bit exchange action.
+The Nexus partition function is:
+\begin{equation}
+Z_{\rm CPP} = \text{Tr}\!\left(T^{\Ntot}\right)\big|_{\rm constrained},
+\label{eq:Z_transfer}
+\end{equation}
+where the constraint projects onto the zero-total-DI-bit sector.
+
+For $\Napp \gg \Npart$, the spectral decomposition of $T^{\Napp}$
+approaches a uniform distribution over the adjacency eigenvalues
+(by the Perron--Frobenius theorem on the 600-cell graph).  This
+gives the leading correction $K \sim \Npart/\Napp$ and the
+convergence of the geometric series in~\eqref{eq:conj}.
+
+This is a rigorous programme; it requires the spectral gap of the
+600-cell transfer matrix, which is related to the adjacency
+eigenvalue gap (already known from the QM/EW series:
+$\lambda_{\rm max} = 12$, $\lambda_{\rm next} = 1+\phig \approx
+2.618$).
+
+%=====================================================================
+\section{Research Programme and Milestones}
+%=====================================================================
+
+The following tasks, in order of recommended priority:
+
+\begin{center}
+\begin{tabular}{@{}clp{6cm}c@{}}
+\toprule
+Step & Task & Method & Feeds into \\
+\midrule
+1 & Identify $H_4$ irrep for $K_0$ & Representation theory of $H_4$
+  (Fulton--Harris \citep{fulton1991}) & $A_5$ conjecture \\[4pt]
+2 & Compute $S_{PA}(i,j,\theta)$ & SSV field equations (C2)
+  + 600-cell adjacency operator & $K_0$ explicit \\[4pt]
+3 & Evaluate single-CP Gaussian & Transfer matrix on 2-site
+  system & $K_0$ confirmed \\[4pt]
+4 & Spectral gap of 600-cell $T$ & Use $\lambda = \{12, 1+\phig,
+  \phig-1, \ldots\}$ & Convergence proof \\[4pt]
+5 & Non-perturbative proof of conj. & Transfer matrix + Perron--Frobenius
+  & SD\#4 Conj.\ proved \\[4pt]
+6 & Write SD\#5 v1 & Assemble steps 1--5 & Journal submission \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{What can be done now}
+
+Step~1 (symmetry argument) requires only the representation theory
+of $H_4$, which is in Humphreys~\citep{humphreys1990} and
+Fulton--Harris~\citep{fulton1991}.  This is pure mathematics
+requiring no new CPP calculations.
+
+Step~4 (spectral gap) requires only the 600-cell eigenvalues
+already computed in the QM and EW series.  The spectral gap is
+$\lambda_{\rm max} - \lambda_{\rm next} = 12 - (1+\phig) =
+11 - \phig \approx 9.382$.  This large gap implies rapid
+convergence of the transfer matrix and supports the conjecture.
+
+Steps~2 and~3 require the single-Grid-Point CPP action, which is
+the main new mathematical input needed.
+
+%=====================================================================
+\section{Connection to the $A_5 = \phig^{-3}/(2\pi)$ Conjecture}
+%=====================================================================
+
+If the $H_4$ symmetry argument (Step~1) establishes
+$K_0(\lambda) = \phig^{-3} \sin(\theta_\lambda)$, then:
+\begin{equation}
+\bar K_0
+= \left\langle K_0(\lambda)\cos\theta_\lambda \right\rangle_\lambda
+= \phig^{-3} \langle\sin\theta_\lambda\cos\theta_\lambda\rangle_\lambda
+= \frac{\phig^{-3}}{2},
+\label{eq:K0bar_if}
+\end{equation}
+using $\langle\sin\theta\cos\theta\rangle = 1/2$ for a uniform
+distribution over $\theta_\lambda$.
+
+The Fourier coefficient would then be:
+\begin{equation}
+A_5 = \bar K_0 / \pi = \frac{\phig^{-3}}{2\pi} \approx 0.0376,
+\label{eq:A5_from_K0}
+\end{equation}
+confirming the SD\#2 conjecture $A_5 \approx \phig^{-3}/(2\pi)$
+from first principles.
+
+This would be a striking unification: the amplitude of the Bell
+deviation is the same geometric factor $\phig^{-3} = V_{\rm
+subgraph}/V_{\rm 600-cell}$ that governs the electroweak boson
+masses (EW \#2~\citep{cpp_ew2}).  The EW masses and the quantum
+foundations correction would be two manifestations of the same
+600-cell geometric dilution.
+
+This potential unification is the deepest motivation for completing
+SD\#5.
+
+%=====================================================================
+\section{Open Problems (Formal Registry)}
+%=====================================================================
+
+\begin{openprob}[Explicit $K_0(\lambda)$ from $H_4$ symmetry]
+\label{op:K0_symmetry}
+Identify the $H_4$ irrep in which $K_0(\lambda)$ transforms.
+Derive the explicit functional form from the representation
+theory constraint.  Show that the conjectured form
+$K_0(\lambda) \sim \phig^{-3}\sin\theta_\lambda$ is the unique
+$H_4$-covariant, zero-mean, normalised function consistent with
+the single-CP path integral structure.
+\end{openprob}
+
+\begin{openprob}[Single-CP CPP action $S[\phi_i]$]
+\label{op:single_action}
+Write the CPP action for a single eCP at a single Grid~Point in
+the 600-cell lattice explicitly.  This requires taking the
+$\Delta s \to \lP$ limit of the coarse-grained QM action
+(companion 2040a~\citep{cpp2040a}) and expressing it in terms of
+the DI-bit density $\rho_i$ and phase $\varphi_i$ at one site.
+\end{openprob}
+
+\begin{openprob}[DI-bit exchange matrix element $S_{PA}$]
+\label{op:SPA}
+Compute the DI-bit exchange coupling $S_{PA}[\phi_P,\theta]$
+between two adjacent 600-cell Grid~Points in relative orientation
+$\theta$.  This gives the angular dependence of the single-CP
+path integral and confirms the $H_4$ structure from first
+principles.
+\end{openprob}
+
+\begin{openprob}[Non-perturbative proof via transfer matrix]
+\label{op:nonpert}
+Apply the transfer matrix method on the 600-cell graph to prove
+SD\#4 Conjecture~1 non-perturbatively.  Use the spectral gap
+$\lambda_{\rm max} - \lambda_{\rm next} = 11 - \phig \approx 9.38$
+to establish exponential convergence of the geometric series
+$\sum_n c_n \eps^n$ in~\eqref{eq:conj}.
+\end{openprob}
+
+%=====================================================================
+\section{Version History and Target}
+%=====================================================================
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Version & Status & Content \\
+\midrule
+v0 (this document) & \textbf{Agenda only} & Problem statement,
+  programme, formal open problems \\
+v1 (target: TBD) & Full paper & Steps 1--5 completed;
+  $K_0$ derived; $A_5$ confirmed or revised \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+This v0 document is deliberately filed in the GitHub repository
+so that the open problem is formally recorded, the mathematical
+programme is specified, and future contributors can take it up
+without repeating the analysis in SD\#1--4.
+
+%=====================================================================
+\section{Conclusion}
+%=====================================================================
+
+The CPP superdeterminism programme (SD\#1--4) is complete as a
+qualitative theory.  The angular prediction, the scaling laws,
+and the ratio test are exact.  What remains open is the
+quantitative amplitude $\bar K_0$, which determines the overall
+scale of the Bell deviation.
+
+The key conjecture — $K_0(\lambda) \sim \phig^{-3}\sin\theta_\lambda$
+and $A_5 = \phig^{-3}/(2\pi)$ — is accessible via the $H_4$
+representation theory of the 600-cell without new physical input.
+If confirmed, it would unify the electroweak mass sector (where
+$\phig^{-3}$ is the geometric dilution of the subgraph volume) and
+the quantum foundations sector (where $\phig^{-3}$ sets the Bell
+deviation amplitude) under a single 600-cell lattice constant.
+
+That unification is the prize that SD\#5 v1 should deliver.
+
+\bibliographystyle{unsrtnat}
+\begin{thebibliography}{12}
+
+\bibitem{cpp_sd1}
+T.~L. Abshier,
+``The Nexus as superdeterministic mechanism,''
+CPP SD\#1 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_sd2}
+T.~L. Abshier,
+``The 600-cell angular structure of Bell deviations,''
+CPP SD\#2 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_sd3}
+T.~L. Abshier,
+``The CPP apparatus model,''
+CPP SD\#3 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_sd4}
+T.~L. Abshier,
+``The Nexus correlation function,''
+CPP SD\#4 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040a}
+T.~L. Abshier and Grok,
+``Schrödinger equation from the 600-cell lattice,''
+CPP-2040a v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040b}
+T.~L. Abshier and Grok,
+``Quantum statistics and the exchange interaction,''
+CPP-2040b v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ew2}
+T.~L. Abshier and Grok,
+``The W$^0$ bracelet and W$^\pm$ boson,''
+CPP EW \#2 v3.1, Hyperphysics Institute (2026).
+
+\bibitem{hossenfelder_palmer}
+S.~Hossenfelder and T.~Palmer,
+``Rethinking superdeterminism,''
+\textit{Front.\ Phys.} \textbf{8}, 139 (2020).
+
+\bibitem{fulton1991}
+W.~Fulton and J.~Harris,
+\textit{Representation Theory: A First Course},
+Springer (1991).
+
+\bibitem{humphreys1990}
+J.~E. Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge University Press (1990).
+
+\bibitem{brouwer1989}
+A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
+\textit{Distance-Regular Graphs}, Springer (1989).
+
+\bibitem{abshier_sr}
+T.~L. Abshier,
+``Mechanistic derivation of relativistic effects via Space Stress
+Vector,'' viXra:2511.0062 (2025).
+
+\end{thebibliography}
+
+\end{document}
