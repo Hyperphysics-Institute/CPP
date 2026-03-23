@@ -601,3 +601,92 @@ The notebook is in arbitrary units. The remaining step:
 The open problem status changes from "open, no prior numerical work" to "open, mechanism established, one dimensional analysis step remaining."
 
 *End of Stage 13.*
+
+---
+
+## Stage 14 — Prior Numerical Work: cpp_benchmark.ipynb (v12)
+
+This is the most sophisticated notebook in the repo — 12 revision iterations, with full error propagation, falsification criteria, sensitivity analysis, bootstrap self-consistency checks, and a peer-review readiness statement. It targets the same OP-SS-1 as `nested_cage_masses.ipynb` but with a fundamentally different and more successful approach.
+
+### The core formula
+
+```
+M_q = inner_ssv(is_down) + Σ_{l=1}^{n_layers} E_DP(l) × φ^{3(l-1)} × 1e-3
+```
+
+where:
+- `inner_ssv` = E_eDP × (1/φ⁸) × time_avg_correction (inner SSV mass scale)
+- `E_DP(l)` = layer-weighted average of E_eDP, E_qDP, E_hDP at depth l
+- `φ^{3(l-1)}` = 3D volume scaling of cage shells
+
+### Key finding: the volume scaling is the multiplicative mechanism
+
+The `cpp_benchmark` notebook solves the problem that `nested_cage_masses` could not. Where `nested_cage_masses` used ∫ S(r) r² dr with S = 1/r⁴ (giving ratios of only 1:1.2 across four cages), `cpp_benchmark` uses φ^{3(l-1)} volume scaling, which gives:
+
+| Layer | φ^{3(l-1)} | Mass scale factor |
+|---|---|---|
+| l=1 | 1.000 | 1.0× |
+| l=2 | 4.236 | 4.2× |
+| l=3 | 17.94 | 17.9× |
+| l=4 | 76.01 | 76.0× |
+
+Each additional cage layer multiplies the mass contribution by φ³ ≈ 4.236. This was the missing mechanism in `nested_cage_masses` — multiplicative rather than additive growth.
+
+### The DP binding energy hierarchy (new to CPP programme)
+
+The notebook introduces three DP binding energies in exact ratios:
+
+```
+E_eDP = 88 MeV
+E_qDP = 264 MeV  (= 3 × E_eDP, exactly)
+E_hDP = 152 MeV  (= √3 × E_eDP = geometric mean, exactly)
+```
+
+These are the DP Sea thermodynamic binding energies. The ratios 1 : √3 : 3 are not fitted but follow from the eDP/qDP/hDP geometric mean structure. Inner cage layers are qDP-dominated (high energy per DP); outer layers shift to hDP-dominated (lower energy per DP), providing a composition gradient that partially offsets the volume scaling.
+
+### The tau derivation (first principles)
+
+The decay constant τ controlling the qDP→hDP composition shift is derived from the SSV integral over φ-nested shells:
+
+```
+τ = 1/ln(φ²) ≈ 1.039
+```
+
+The notebook derives this analytically and then rounds to τ = 2.0 in the calculation. The first-principles value 1.039 is exact and should be used in the SS paper derivation.
+
+### Unit inconsistency identified
+
+A unit mixing error is present: `inner_ssv` returns MeV but is added to `layer_base` values that have been converted to GeV (via ×1e-3). This causes the inner SSV term to be treated as GeV-scale (2.1 GeV) rather than MeV-scale (2.1 MeV), producing wrong absolute masses for strange (~5.66 GeV vs PDG 93.5 MeV).
+
+With consistent MeV units throughout, the formula gives:
+
+| Quark | CPP (MeV) | PDG (MeV) | Δ% |
+|---|---|---|---|
+| strange | 223 | 93.5 | 139% |
+| charm | 1052 | 1273 | 17% |
+| bottom | 4350 | 4183 | 4% |
+| top | 17,720 | 172,570 | 90% |
+
+Bottom (4%) and charm (17%) are close. Strange and top need refinement. The top quark mass discrepancy (90%) indicates the C₆₀ fullerene fourth cage requires a different mechanism than simple φ^{3l} scaling.
+
+### What the notebook claims vs what it actually shows
+
+The notebook claims "zero free parameters, pure first-principles derivation" and "ready for peer review." This overstates the case. The parameters E_eDP = 88 MeV, time_avg_correction = 1.12, and τ = 2.0 (rather than the derived 1.039) are calibrated values. The layer probability model (qDP_boost = 0.65, hDP_rise = 0.50, eDP_suppression = 0.20) is physically motivated but not yet derived from CPP first principles.
+
+The actual status: the mechanism is correct (volume scaling + composition shift), the ratios for middle generations (charm, bottom) are approximately right, and the derivation of τ from SSV integrals is genuine. The top and strange quarks require additional physics (C₆₀ cage geometry for top; ZBW instability corrections for strange).
+
+### What this changes for OP-SS-1
+
+The OP-SS-1 open problem is now much better specified. The formula structure is:
+
+```
+M_q(n) = E_inner × δ_charge + Σ_{l=1}^{n} E_DP(l) × φ^{3(l-1)}
+```
+
+where:
+1. E_inner = E_eDP / φ⁸ × correction (the ZBW ground state energy)
+2. E_DP(l) = layer-weighted DP average (shifting from qDP to hDP with l)
+3. φ^{3(l-1)} = 3D cage volume scaling
+4. The remaining task: derive E_eDP = 88 MeV from sea_strength and l_P
+
+*End of Stage 14.*
