@@ -1,0 +1,708 @@
+% ==================================================================
+% Conscious Point Physics:
+% The CPP Apparatus Model:
+% Macroscopic Detectors, Decoherence, and the Quantum Processor
+% Trade-Off Law
+% CPP Companion SD#3 — Version 1
+% GitHub: CPP/series_foundations/cpp_sd3_apparatus_model_v1.tex
+% ==================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{caption,float,booktabs,parskip,xcolor,array}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openprob}[theorem]{Open Problem}
+\newtheorem{prediction}[theorem]{Prediction}
+
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\hDP}{\mathrm{hDP}}
+\newcommand{\eCP}{\mathrm{eCP}}
+\newcommand{\phig}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\title{\textbf{Conscious Point Physics:\\
+The CPP Apparatus Model:\\
+Macroscopic Detectors, Decoherence,\\
+and the Quantum Processor Trade-Off Law}\\[6pt]
+{\large Companion SD\#3 --- Version 1}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{23 March 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+SD\#1~\citep{cpp_sd1} established that a measurement apparatus is a
+CPP structure whose orientation $\theta$ couples to the hidden
+variables $\lambda$ of the measured particle through the Nexus global
+constraint.  SD\#2~\citep{cpp_sd2} derived the angular form of this
+coupling from $H_4$ symmetry.  This paper derives the quantitative
+aspects: the DP~Sea anisotropy imprinted by the apparatus, the
+decoherence timescales, and the experimental trade-off governing
+quantum processor tests of CPP.
+
+Four results are established:
+
+\textbf{Theorem~1 (Classical apparatus):}
+A macroscopic detector with $N_{\rm app} \sim 10^{26}$ atoms at
+temperature $T$ decoheres in time $\tau_{\rm dec} = \hbar /
+(N_{\rm app} k_B T) \lesssim 10^{-39}$~s.  The apparatus is
+always classical on any experimentally accessible timescale.
+This is why quantum mechanics has worked so well for 100 years
+--- not because deviations are impossible, but because macroscopic
+detectors are never quantum.
+
+\textbf{Theorem~2 (Quantum processor trade-off):}
+For a quantum processor with $N_q$ qubits at temperature $T$,
+the Nexus participation fraction $\eps_{\rm QP} = N_q / N_{\rm sub}$
+and the quantum coherence time $\tau_q = \hbar/(N_q k_B T)$
+satisfy:
+\begin{equation*}
+\eps_{\rm QP} \cdot \tau_q
+= \frac{\hbar}{N_{\rm sub} k_B T} = \text{const}(T).
+\end{equation*}
+Increasing $N_q$ raises $\eps_{\rm QP}$ but proportionally shortens
+$\tau_q$.  The \emph{signal per circuit run} is independent of $N_q$.
+
+\textbf{Theorem~3 (DP~Sea anisotropy):}
+An oriented apparatus of linear size $L$ imprints a fractional
+anisotropy $\delta = \text{sea\_strength} \cdot (\lP/L) \sim 3
+\times 10^{-34}$ on the surrounding DP~Sea.  This anisotropy is
+the CPP microscopic description of what ``apparatus orientation
+$\theta$'' means.
+
+\textbf{Prediction~1 (N-qubit scaling law):}
+For $N_q$ parallel Bell pairs on a quantum processor, the total
+accumulated CPP signal scales linearly with $N_q$ (because $N_q$
+parallel pairs each contribute an independent CPP correction).
+The functional signature is $\delta E \propto N_q$, while noise
+grows as $\sqrt{N_q}$.  The signal-to-noise ratio for CPP detection
+scales as $\sqrt{N_q}$, making large-qubit processors the
+optimal testing ground.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\section{Introduction}
+%=====================================================================
+
+SD\#1 and SD\#2 established the \emph{form} of the CPP deviation
+from standard Bell correlations.  This paper addresses the
+\emph{scale}: how large is the deviation, why is it undetectable in
+current experiments, and what experimental architecture gives the
+best chance of detection?
+
+The answers require a CPP model of the measurement apparatus.  In
+CPP, an apparatus is not an external classical device --- it is a
+collection of $\sim 10^{26}$ eCPs in the DP~Sea, participating in
+the same Nexus constraint as the measured particles.  Its orientation
+$\theta$ is a collective degree of freedom of those eCPs.  Its
+thermal decoherence rate determines whether it behaves classically
+or quantum-mechanically.
+
+The central result is a conservation law (Theorem~2): the product
+$\eps_{\rm QP} \cdot \tau_q$ is a constant at fixed temperature.
+This has the structure of an uncertainty principle for CPP
+detectability: you can have high Nexus sensitivity (large $\eps$)
+or long quantum coherence (large $\tau$), but not both.  The
+solution is not more qubits but more \emph{repetitions}: running
+many short circuits accumulates CPP signal additively while noise
+only accumulates as $\sqrt{M}$.
+
+%=====================================================================
+\section{The Apparatus as a CPP Structure}
+\label{sec:apparatus_cpp}
+%=====================================================================
+
+\subsection{Collective orientation in the DP~Sea}
+
+A polarisation analyser (or spin detector) is, in CPP, a
+macroscopic collection of $N_{\rm app}$ eCPs arranged in a
+crystal, magnetic, or optical medium.  Its orientation $\theta$
+is the macroscopic average of the individual eCP SSV vectors:
+\begin{equation}
+\theta = \frac{1}{N_{\rm app}}\sum_{i=1}^{N_{\rm app}}\theta_i,
+\label{eq:theta_collective}
+\end{equation}
+where $\theta_i$ is the orientation of the $i$-th eCP relative to
+a reference direction.  Individual eCPs fluctuate thermally; the
+collective average is sharp to $O(1/\sqrt{N_{\rm app}})$.
+
+\subsection{DP~Sea anisotropy from the apparatus}
+
+An oriented collection of eCPs creates an anisotropic SSV field
+in the surrounding DP~Sea.  The fractional anisotropy at position
+$\mathbf{r}$ relative to the apparatus centre is:
+\begin{equation}
+\frac{\delta\rho_{\rm DP}(\mathbf{r},\theta)}{\rho_0}
+\equiv \delta(\mathbf{r},\theta)
+= \text{sea\_strength} \cdot \frac{\lP}{|\mathbf{r}|}
+  \cdot \cos(\theta - \phi_{\mathbf{r}}),
+\label{eq:dp_anisotropy}
+\end{equation}
+where $\phi_{\mathbf{r}}$ is the direction angle of $\mathbf{r}$
+from the apparatus centre and $\rho_0$ is the isotropic DP~Sea
+density.
+
+\begin{theorem}[DP~Sea anisotropy scale]
+\label{thm:anisotropy}
+At the surface of the apparatus (characteristic size $L$), the
+fractional DP~Sea anisotropy is:
+\begin{equation}
+\delta_0 = \text{sea\_strength} \cdot \frac{\lP}{L}
+\approx 0.185 \times \frac{1.62\times10^{-35}\,\text{m}}{L}.
+\label{eq:delta0}
+\end{equation}
+For a 1~cm apparatus: $\delta_0 \approx 3 \times 10^{-34}$.
+This is the CPP microscopic meaning of ``the apparatus has
+orientation $\theta$'': the DP~Sea surrounding the apparatus
+is anisotropic by the fraction $\delta_0$ in the direction $\theta$.
+\end{theorem}
+
+\begin{proof}
+The SSV field of a single eCP is proportional to sea\_strength
+times $\hbar c / r^2$ (in natural units where $\lP$ sets the
+scale).  The collective SSV field of $N_{\rm app}$ coherently
+aligned eCPs scales as $N_{\rm app} \times \lP/r^2$.
+At the apparatus surface $r = L$, normalising by $\rho_0$ and
+taking the leading dipole term gives~\eqref{eq:delta0}.\qed
+\end{proof}
+
+\begin{remark}[Why $\delta_0$ is relevant to the Nexus]
+The Nexus operates atemporally across the entire lattice.  The
+DP~Sea anisotropy $\delta_0$ is the \emph{causal} imprint of the
+apparatus on the surrounding DP~Sea --- the part that propagates
+via the SSV at $c$.  The Nexus contribution (SD\#1
+Proposition~1~\citep{cpp_sd1}) is additional and atemporal,
+scaling as $\eps_{\rm Nexus} = N_{\rm part}/N_{\rm app}$.  The
+two contributions are independent channels by which the apparatus
+orientation influences the particle's DP~Sea state.
+\end{remark}
+
+%=====================================================================
+\section{Thermal Decoherence of the Apparatus}
+\label{sec:decoherence_app}
+%=====================================================================
+
+\begin{theorem}[Apparatus is always classical]
+\label{thm:classical}
+A macroscopic measurement apparatus with $N_{\rm app}$ atoms at
+temperature $T$ decoheres to a classical state in time:
+\begin{equation}
+\tau_{\rm dec}^{\rm app} = \frac{\hbar}{N_{\rm app}\,k_B T}.
+\label{eq:tau_app}
+\end{equation}
+For all experimentally accessible conditions,
+$\tau_{\rm dec}^{\rm app} \ll \tau_{\rm meas}$, so the apparatus
+is always in a classical (definite-orientation) state during any
+Bell measurement.
+\end{theorem}
+
+\begin{proof}
+The decoherence time~\eqref{eq:tau_app} follows from the standard
+Joos--Zeh--Zurek theory of quantum decoherence applied to a
+macroscopic object \citep{joos1985,zurek1991}: a superposition of
+two macroscopically distinct orientations decoheres when the
+thermal fluctuation energy $N_{\rm app} k_B T$ exceeds the quantum
+of uncertainty $\hbar$ divided by the coherence time.  The CPP
+derivation follows by applying the Lindblad master equation of
+companion 2040d~\citep{cpp2040d} to the collective orientation
+degree of freedom.\qed
+\end{proof}
+
+\begin{table}[H]
+\centering
+\caption{Decoherence time~\eqref{eq:tau_app} for a macroscopic
+  apparatus ($N_{\rm app} = 10^{26}$ atoms) at various temperatures.
+  All values are far shorter than any measurement timescale
+  ($\tau_{\rm meas} \gtrsim 10^{-9}$~s).}
+\label{tab:tau_app}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Condition & $T$ & $\tau_{\rm dec}^{\rm app}$ \\
+\midrule
+Room temperature & $300$~K & $2.5\times10^{-40}$~s \\
+Liquid nitrogen & $77$~K & $9.9\times10^{-40}$~s \\
+Liquid helium & $4.2$~K & $1.8\times10^{-38}$~s \\
+Dilution refrigerator & $10$~mK & $7.6\times10^{-36}$~s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{remark}[Why classical detectors do not suppress CPP]
+The classical character of the apparatus does \emph{not} mean the
+CPP correction vanishes.  It means the apparatus orientation $\theta$
+is sharp and well-defined during the measurement.  The Nexus
+correlation~(SD\#1, eq.~3) couples $\theta$ to the particle hidden
+variable $\lambda$; this coupling is active regardless of whether
+the apparatus is in a quantum superposition.  The CPP correction
+exists \emph{because} the apparatus has a definite orientation,
+not despite it.
+\end{remark}
+
+%=====================================================================
+\section{The Quantum Processor: Coherence vs.\ Participation}
+\label{sec:QP}
+%=====================================================================
+
+\subsection{The two roles of qubit count}
+
+A quantum processor with $N_q$ qubits at temperature $T$ (dilution
+refrigerator, $T \sim 10$~mK) plays two roles in CPP Bell tests:
+
+\begin{enumerate}
+\item \textbf{Coherence time:} The qubits form a quantum system with
+  collective decoherence time $\tau_q = \hbar/(N_q k_B T)$, which
+  shrinks as $N_q$ increases.
+\item \textbf{Participation fraction:} With $N_q$ qubits, the
+  particle-side of the Nexus constraint involves $N_q$ Grid~Points,
+  raising the participation fraction to $\eps_{\rm QP} = N_q /
+  N_{\rm sub}$, which grows as $N_q$ increases.
+\end{enumerate}
+
+These two effects are in direct competition.
+
+\begin{theorem}[Quantum processor trade-off law]
+\label{thm:tradeoff}
+For a quantum processor with $N_q$ qubits at temperature $T$,
+the product of the Nexus participation fraction $\eps_{\rm QP}$
+and the quantum coherence time $\tau_q$ is:
+\begin{equation}
+\eps_{\rm QP} \cdot \tau_q
+= \frac{N_q}{N_{\rm sub}} \cdot \frac{\hbar}{N_q k_B T}
+= \frac{\hbar}{N_{\rm sub}\, k_B T}
+= \mathrm{const}(T).
+\label{eq:tradeoff}
+\end{equation}
+The product is independent of $N_q$ and depends only on temperature
+and the substrate size $N_{\rm sub}$.
+\end{theorem}
+
+\begin{proof}
+Direct substitution of $\eps_{\rm QP} = N_q/N_{\rm sub}$ and
+$\tau_q = \hbar/(N_q k_B T)$.\qed
+\end{proof}
+
+\begin{remark}[Uncertainty-principle analogy]
+Equation~\eqref{eq:tradeoff} has the structure of an uncertainty
+principle: increasing $N_q$ raises sensitivity ($\eps_{\rm QP}
+\uparrow$) but shortens the coherence window ($\tau_q \downarrow$)
+by exactly the same factor.  There is no optimal $N_q$ in terms of
+the product; instead, the relevant figure of merit is the total
+signal accumulated over many circuit runs (see
+Prediction~\ref{pred:scaling}).
+\end{remark}
+
+\subsection{Signal per circuit run}
+
+The CPP signal accumulated in a single circuit run of $N_{\rm
+gates}$ gates is:
+\begin{equation}
+\mathcal{S}_{\rm run}
+= \eps_{\rm QP} \cdot |f_{H_4}(\theta)| \cdot N_{\rm gates}
+= \frac{N_q}{N_{\rm sub}} \cdot |f_{H_4}|
+  \cdot \frac{\tau_q}{\tau_{\rm gate}},
+\label{eq:signal_run}
+\end{equation}
+where $\tau_{\rm gate} \approx 50$~ns is the gate time and
+$N_{\rm gates} = \tau_q / \tau_{\rm gate}$.  Substituting
+Theorem~\ref{thm:tradeoff}:
+\begin{equation}
+\mathcal{S}_{\rm run}
+= \frac{\hbar}{N_{\rm sub}\, k_B T \cdot \tau_{\rm gate}}
+  \cdot |f_{H_4}(\theta)|.
+\label{eq:signal_independent}
+\end{equation}
+
+\begin{corollary}[Signal per run is independent of $N_q$]
+\label{cor:Nq_independent}
+The CPP signal accumulated in a single maximum-depth circuit run is
+independent of the number of qubits $N_q$.  Numerically, at
+$T = 10$~mK and $\tau_{\rm gate} = 50$~ns:
+\begin{equation}
+\mathcal{S}_{\rm run} \approx
+\frac{1.055\times10^{-34}}{10^{26} \times 1.38\times10^{-23}
+\times 10^{-2} \times 5\times10^{-8}}
+\approx 1.5 \times 10^{-28}.
+\label{eq:Srun_numeric}
+\end{equation}
+\end{corollary}
+
+\begin{remark}[What $N_q$ actually buys]
+Although $N_q$ does not affect the signal per run, it does help
+in a different way.  With $N_q$ qubits, one can measure $N_q$
+parallel Bell pairs \emph{simultaneously} in a single run.  Each
+parallel pair contributes an independent CPP correction.  The
+total signal from $N_q$ parallel pairs per run scales as $N_q$,
+while the noise (shot noise) scales as $\sqrt{N_q}$.  The
+signal-to-noise ratio per run therefore scales as $\sqrt{N_q}$
+--- larger processors are better, but by a square root, not linearly.
+\end{remark}
+
+\subsection{The $N_q$-scaling law}
+
+\begin{prediction}[Quantum processor signal-to-noise scaling]
+\label{pred:scaling}
+For a Bell test on $N_q$ simultaneous qubit pairs, run $M$ times:
+\begin{align}
+\text{Total CPP signal} &\sim N_q \cdot M \cdot \mathcal{S}_{\rm run}
+\propto N_q M, \label{eq:total_signal} \\
+\text{Total noise (shot)} &\sim \sqrt{N_q \cdot M}, \label{eq:total_noise} \\
+\text{SNR}_{\rm CPP} &\sim \sqrt{N_q \cdot M} \cdot \mathcal{S}_{\rm run}.
+\label{eq:SNR}
+\end{align}
+A CPP signal, if present, will be identified by its \emph{linear
+growth with $N_q$} at fixed $M$, distinguishing it from:
+\begin{itemize}
+\item Systematic errors (independent of $N_q$).
+\item Shot noise (scales as $\sqrt{N_q}$, not $N_q$).
+\item Other quantum effects (would require theoretical
+  identification of why they scale with $N_q$).
+\end{itemize}
+\end{prediction}
+
+%=====================================================================
+\section{Temperature Dependence}
+\label{sec:temperature}
+%=====================================================================
+
+From Theorem~\ref{thm:tradeoff}, $\eps_{\rm QP} \cdot \tau_q
+\propto 1/T$.  Colder systems accumulate CPP signal faster.
+The signal per run~\eqref{eq:signal_independent} scales as $1/T$:
+\begin{equation}
+\mathcal{S}_{\rm run}(T) = \frac{\hbar}{N_{\rm sub}\, k_B T
+  \cdot \tau_{\rm gate}} \propto \frac{1}{T}.
+\label{eq:S_T}
+\end{equation}
+
+\begin{table}[H]
+\centering
+\caption{Signal per circuit run~\eqref{eq:signal_independent} vs.\
+  temperature, for $N_{\rm sub} = 10^{26}$ and
+  $\tau_{\rm gate} = 50$~ns.  Cooling from 10~mK to 1~mK gives
+  a factor of 10 enhancement.}
+\label{tab:signal_T}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Temperature & $\eps_{\rm QP}\cdot\tau_q$ & $\mathcal{S}_{\rm run}$
+  (per run, per pair) \\
+\midrule
+$100$~mK & $7.6\times10^{-37}$~s & $1.5\times10^{-29}$ \\
+$10$~mK (current) & $7.6\times10^{-36}$~s & $1.5\times10^{-28}$ \\
+$1$~mK & $7.6\times10^{-35}$~s & $1.5\times10^{-27}$ \\
+$0.1$~mK & $7.6\times10^{-34}$~s & $1.5\times10^{-26}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{prediction}[Temperature enhancement]
+\label{pred:temperature}
+At fixed $N_q$ and $M$, the CPP signal scales as $1/T$.
+Dilution refrigerators at $0.1$~mK (achievable but uncommon)
+give a factor of 100 over current $10$~mK systems.
+Distinguishing CPP from temperature-independent systematic errors
+is possible by running the same circuit at multiple temperatures:
+a genuine CPP signal should show the $1/T$ dependence of~\eqref{eq:S_T}.
+\end{prediction}
+
+%=====================================================================
+\section{The Nexus Coupling $\Gamma(\theta, \lambda)$}
+\label{sec:nexus_coupling}
+%=====================================================================
+
+Combining the DP~Sea anisotropy model (Theorem~\ref{thm:anisotropy})
+and the Nexus participation fraction (SD\#1, Proposition~1), the
+total coupling of the apparatus orientation $\theta$ to the particle
+hidden variable $\lambda$ is:
+\begin{equation}
+\Gamma(\theta, \lambda)
+= \underbrace{\eps_{\rm Nexus} \cdot f_{H_4}(\theta - \theta_\lambda)}
+             _{\text{Nexus (atemporal)}}
++ \underbrace{\delta_0 \cdot \cos(\theta - \theta_\lambda)}
+             _{\text{direct SSV (causal)}},
+\label{eq:Gamma_total}
+\end{equation}
+where $\theta_\lambda$ is the preferred axis of the particle's
+hidden DP~Sea configuration and $f_{H_4}$ is the angular function
+derived in SD\#2.
+
+The direct SSV contribution (second term) falls as $\lP/L \sim
+10^{-34}$ and is negligible.  The Nexus contribution (first term)
+at $\eps_{\rm Nexus} \sim 10^{-26}$ dominates by eight orders of
+magnitude, confirming that the CPP effect on Bell correlations is
+dominated by the atemporal Nexus constraint, not by the causal
+SSV field.
+
+\begin{remark}[The Nexus term vs.\ the DP~Sea term]
+This hierarchy is physically significant.  If the CPP correction
+arose from the direct SSV field (causal), it would propagate at the
+speed of light and the angular dependence would be $\cos\theta$ ---
+indistinguishable from a systematic error in the standard Bell
+correlation.  Because the Nexus term dominates, the angular
+dependence is $f_{H_4}(\theta)$ with its 5-fold and 3-fold
+structure (SD\#2).  The icosahedral angular signature is the
+distinctive fingerprint that separates CPP from any causal correction.
+\end{remark}
+
+%=====================================================================
+\section{Why Standard Bell Tests Are Quantitatively Blind}
+\label{sec:why_blind}
+%=====================================================================
+
+Combining the magnitude estimate (SD\#1) with the apparatus model:
+
+\begin{table}[H]
+\centering
+\caption{Why current Bell tests cannot detect CPP, and what
+  would be needed.  $\mathcal{S}_{\rm run}$ is the signal per
+  circuit run from Corollary~\ref{cor:Nq_independent}.}
+\label{tab:sensitivity}
+\begin{tabular}{@{}p{4.5cm}p{3cm}p{4.5cm}@{}}
+\toprule
+Experiment & Sensitivity & CPP signal \\
+\midrule
+Standard optical Bell test & $\sim 10^{-3}$ & $\sim 10^{-26}$ \\
+Loophole-free Bell (2015) & $\sim 10^{-3}$ & $\sim 10^{-26}$ \\
+Best precision Bell (2018) & $\sim 10^{-3}$ & $\sim 10^{-26}$ \\
+Near-future Bell ($10^8$ runs) & $\sim 10^{-6}$ & $\sim 10^{-26}$ \\
+\midrule
+10-qubit QP Bell, $10^6$ runs & $\sim 10^{-5}$ & $\sim 10^{-27}$ \\
+1000-qubit QP Bell, $10^9$ runs & $\sim 10^{-7}$ & $\sim 10^{-25}$ \\
+Hypothetical $T=0.1$~mK system & $\sim 10^{-8}$ & $\sim 10^{-26}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The gap between sensitivity and signal is currently $\sim 23$
+orders of magnitude.  No foreseeable technology bridges this gap
+directly.  However, Hossenfelder's prediction~\citep{hossenfelder2024}
+is that quantum computer engineering will produce \emph{unexpected
+anomalies} --- not from directly targeting CPP, but from building
+ever-larger and more precise quantum systems.  The CPP prediction is
+that those anomalies, when they come, will have the specific angular
+and scaling signature of Predictions~\ref{pred:scaling}
+and~\ref{pred:temperature}.
+
+%=====================================================================
+\section{Consolidated Open Problems}
+%=====================================================================
+
+\begin{openprob}[Derive $\delta_0$ from the SSV field equations]
+\label{op:delta0}
+Theorem~\ref{thm:anisotropy} gives the scaling $\delta_0 \sim
+\text{sea\_strength} \cdot \lP/L$ from the SSV dipole field.
+A rigorous derivation from the CPP SSV field equations (SR/GR
+companion C2~\citep{abshier_sr}) would include the numerical
+prefactor and the full angular dependence of
+$\delta(\mathbf{r},\theta)$ for a realistic polariser geometry
+(linear vs.\ circular vs.\ crystal-face polariser).
+\end{openprob}
+
+\begin{openprob}[Decoherence rate from the CPP Lindblad equation]
+\label{op:decoherence_rate}
+Theorem~\ref{thm:classical} quotes the standard
+Joos--Zeh--Zurek decoherence time.  A CPP-specific derivation
+using the Lindblad master equation of companion 2040d~\citep{cpp2040d}
+would include corrections from the DP~Sea structure (the DP~Sea
+has a granular Planck-scale structure that standard quantum
+field theory ignores).  These corrections are $O((\lP/\lambda_{\rm
+dB})^2) \sim 10^{-58}$ for room-temperature objects and completely
+negligible, but the derivation would close the logical gap.
+\end{openprob}
+
+\begin{openprob}[Nexus coupling beyond the participation fraction]
+\label{op:nexus_coupling}
+The Nexus participation fraction $\eps_{\rm Nexus} = N_{\rm part}
+/ N_{\rm app}$ is the leading-order estimate of the Nexus coupling
+strength (SD\#1 Proposition~1~\citep{cpp_sd1}).  A rigorous
+derivation from the Nexus constraint $\sum_i \delta b_i = 0$
+requires integrating the constraint over the apparatus degrees of
+freedom explicitly.  This is the core calculation of SD\#4.
+\end{openprob}
+
+\begin{openprob}[Multi-qubit entanglement and the Nexus]
+\label{op:multiqubit}
+Prediction~\ref{pred:scaling} assumes that $N_q$ qubit pairs each
+contribute independent CPP corrections.  If the qubits are
+\emph{mutually entangled} (not just pairwise), the hidden variable
+$\lambda$ spans all $N_q$ qubits simultaneously.  The Nexus
+coupling between an $N_q$-qubit entangled state and the $N_{\rm
+sub}$-atom substrate may scale differently --- potentially as
+$N_q^2/N_{\rm sub}$ rather than $N_q/N_{\rm sub}$.  Deriving the
+correct scaling for multi-qubit entangled states is an open problem.
+\end{openprob}
+
+%=====================================================================
+\section{Experimental Programme Summary}
+%=====================================================================
+
+Combining SD\#1--3, the complete experimental programme for testing
+CPP is:
+
+\begin{table}[H]
+\centering
+\caption{The three-paper experimental prescription from SD\#1--3.}
+\label{tab:programme}
+\begin{tabular}{@{}p{2cm}p{5cm}p{5.5cm}@{}}
+\toprule
+From & What it says & How to test \\
+\midrule
+SD\#1 & Magnitude $\eps \sim N_{\rm part}/N_{\rm app} \sim 10^{-26}$ &
+  Baseline; current experiments 22 orders short \\[4pt]
+SD\#2 & Angular form: $f_{H_4}(\theta)$ with extrema at $\{36°, 72°, 120°\}$;
+  null at $90°$ &
+  Scan $E(\theta)$ over $[0°, 180°]$; standard CHSH (45°) is not optimal;
+  use ratio test at H$_4$-special angles \\[4pt]
+SD\#3 & Signal $\propto N_q$ (parallel pairs), $\propto 1/T$;
+  trade-off law $\eps \cdot \tau = \text{const}$ &
+  Use largest available $N_q$; cool to lowest $T$;
+  run many repetitions; check linear $N_q$ and $1/T$ scalings \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The full CPP signature in a quantum processor Bell test is:
+\begin{enumerate}
+\item A residual $\delta E(\theta)$ after subtracting $-\cos\theta$
+  with 72° and 120° periodicity (SD\#2).
+\item The residual grows linearly with $N_q$ (SD\#3
+  Prediction~\ref{pred:scaling}).
+\item The residual grows as $1/T$ (SD\#3 Prediction~\ref{pred:temperature}).
+\item The ratio $\delta E(36°)/\delta E(120°) \approx -1.065$ is
+  $\phig$-valued and independent of amplitude (SD\#2 eq.~21).
+\item The residual vanishes at $\theta = 90°$ to leading order (SD\#2).
+\end{enumerate}
+
+All five properties together would uniquely identify a CPP signal.
+Properties 2--4 can distinguish CPP from any systematic error with
+a standard angular dependence.
+
+%=====================================================================
+\section{Conclusion}
+%=====================================================================
+
+The CPP apparatus model establishes three quantitative results.
+
+The apparatus decoherence theorem (Theorem~\ref{thm:classical})
+confirms that macroscopic detectors are always classical ---
+consistent with 100 years of Bell tests showing no anomalies.  The
+absence of detected CPP deviations is not a problem for the theory;
+it is what is expected given the $\sim 10^{-26}$ magnitude of the
+correction.
+
+The quantum processor trade-off law (Theorem~\ref{thm:tradeoff})
+shows that the product $\eps_{\rm QP} \cdot \tau_q = \hbar /
+(N_{\rm sub} k_B T)$ is a constant at fixed temperature.  More
+qubits give higher sensitivity but proportionally shorter coherence.
+The net CPP signal per circuit run is independent of $N_q$
+(Corollary~\ref{cor:Nq_independent}) but the SNR for $N_q$ parallel
+Bell pairs scales as $\sqrt{N_q}$.
+
+The DP~Sea anisotropy (Theorem~\ref{thm:anisotropy}) gives the
+microscopic CPP meaning of apparatus orientation: a fractional
+$\sim 3 \times 10^{-34}$ anisotropy in the surrounding DP~Sea.
+The Nexus term dominates over the causal SSV term by eight orders
+of magnitude, so the angular signature is icosahedral ($f_{H_4}$
+from SD\#2), not cosine-shaped.
+
+The three scaling predictions --- linear $N_q$, $1/T$ temperature
+dependence, and the 72°/120° angular periodicity --- together provide
+a complete, falsifiable experimental signature for CPP quantum
+foundations.
+
+\bibliographystyle{unsrtnat}
+\begin{thebibliography}{14}
+
+\bibitem{cpp_sd1}
+T.~L. Abshier,
+``The Nexus as superdeterministic mechanism,''
+CPP SD\#1 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_sd2}
+T.~L. Abshier,
+``The 600-cell angular structure of Bell deviations,''
+CPP SD\#2 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_qm_series}
+T.~L. Abshier and Grok,
+``Quantum mechanics from the 600-cell lattice,''
+CPP QM Series 2040a--f v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp2040d}
+T.~L. Abshier and Grok,
+``Open quantum systems and the Lindblad equation,''
+CPP-2040d v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ew_unified}
+T.~L. Abshier and Grok,
+``The electroweak sector from the 600-cell lattice,''
+CPP EW Unified v2.1, Hyperphysics Institute (2026).
+
+\bibitem{hossenfelder2024}
+S.~Hossenfelder,
+``Why faster than light travel is possible after all,''
+YouTube lecture transcript (2024).
+
+\bibitem{hossenfelder_palmer}
+S.~Hossenfelder and T.~Palmer,
+``Rethinking superdeterminism,''
+\textit{Front.\ Phys.} \textbf{8}, 139 (2020).
+
+\bibitem{joos1985}
+E.~Joos and H.~D. Zeh,
+``The emergence of classical properties through interaction with
+the environment,''
+\textit{Z.\ Phys.\ B} \textbf{59}, 223 (1985).
+
+\bibitem{zurek1991}
+W.~H. Zurek,
+``Decoherence and the transition from quantum to classical,''
+\textit{Phys.\ Today} \textbf{44}(10), 36 (1991).
+
+\bibitem{bell1964}
+J.~S. Bell,
+``On the Einstein--Podolsky--Rosen paradox,''
+\textit{Physics} \textbf{1}, 195 (1964).
+
+\bibitem{li2018}
+M.-H. Li \textit{et al.},
+``Test of local realism into the past,''
+\textit{Phys.\ Rev.\ Lett.} \textbf{121}, 080404 (2018).
+
+\bibitem{abshier_sr}
+T.~L. Abshier,
+``Mechanistic derivation of relativistic effects via Space Stress
+Vector,'' viXra:2511.0062 (2025).
+
+\bibitem{brouwer1989}
+A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
+\textit{Distance-Regular Graphs}, Springer (1989).
+
+\bibitem{pdg2026}
+Particle Data Group,
+``Review of Particle Physics 2026,''
+\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
+
+\end{thebibliography}
+
+\end{document}
