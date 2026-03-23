@@ -879,3 +879,43 @@ Six new non-trivial checks added to `mc_su3_algebra.py`:
 `mc_su3_algebra.py` expanded from 26 to 33 checks. All 33 PASS. The PDG dict was also corrected: Sigma* = 1383.7 MeV and Xi* = 1531.8 MeV (PDG precision values, not the rounded 1385/1533 used in SS#5).
 
 *End of Stage 17.*
+
+---
+
+## Stage 18 — Prior Numerical Work: hadron_spectrum.ipynb (v8.0)
+
+This is the simplest notebook in the repo — a two-parameter formula for baryon masses that captures the decuplet perfectly but misses the octet isospin splitting.
+
+### The formula
+
+```
+M(S, J) = base_nucleon + S × strange_uplift + (J − ½) × spin_excitation
+base_nucleon    = 938.5 MeV
+strange_uplift  = 148.0 MeV/strangeness unit
+spin_excitation = 294.0 MeV  (the Δ–N hyperfine gap)
+```
+
+### What works: decuplet (Δ < 0.25%)
+
+| Baryon | Predicted | PDG | Δ% |
+|---|---|---|---|
+| Δ(1232) | 1232.5 | 1232.0 | 0.04% |
+| Σ*(1385) | 1380.5 | 1383.7 | 0.23% |
+| Ξ*(1530) | 1528.5 | 1531.8 | 0.22% |
+| Ω⁻(1672) | 1676.5 | 1672.45 | 0.24% |
+
+The equal-spacing rule is exact for the decuplet because all members have the same isospin structure. The notebook correctly encodes this.
+
+### What doesn't work: octet (missing isospin Casimir)
+
+The formula gives the same mass for Λ and Σ⁰ (both S=1, J=½): predicts 1086.5 MeV for both. Actual masses: 1115.7 (Λ) and 1192.6 (Σ⁰) — a 77 MeV splitting from the c-term in the full GMO formula M = M₀ + b×Y + c×[I(I+1) − Y²/4]. SS#5 uses the full GMO formula and correctly captures this.
+
+### New content
+
+**DP Sea mass uncertainty:** σ_fluct = 0.8% gives σ_mass ≈ 7.5 MeV for the nucleon — the floor from DP Sea DI-bit density fluctuations at baryon formation time. No SS paper has stated this quantitative uncertainty; worth adding to SS#5 uncertainty discussion.
+
+**Parameter confirmation:** strange_uplift = 148.0 MeV independently confirms mc_su3_algebra.py (Ξ*–Σ* spacing = 148.1 MeV).
+
+No changes to series documents required — notebook confirms SS#5.
+
+*End of Stage 18.*
