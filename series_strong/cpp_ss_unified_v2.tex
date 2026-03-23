@@ -450,6 +450,30 @@ V(r) = -\frac{\as\hbar c}{r} + \sigma r,\quad
 \label{eq:cornell}
 \end{equation}
 
+\begin{remark}[ZBW perturbation to bowing and string breaking]
+\label{rem:zbw_bow}
+Prior numerical work in \texttt{zbw\_magnetic\_effects.ipynb}
+(CPP/series\_strong, January 2026) quantifies the secondary
+magnetic-like Lorentz forces from ZBW oscillations of qCP charges
+in the chain.  The key results:
+\begin{enumerate}
+\item ZBW Lorentz forces are perpendicular-dominant (y--z) with
+  negligible net axial component, confirming that primary
+  confinement is electrostatic.
+\item ZBW forces amplify the electrostatic bow by $\sim 5$--$10\%$
+  at the chain ends.  This shifts the effective bow amplitude from
+  $\text{bow} = 0.15\,r_{\rm chain}$ to $\sim 0.157$--$0.165$,
+  a minor correction to $\sigma$.
+\item ZBW forces peak at the chain ends (end-heavy distribution),
+  slightly reducing the dominance of central string breaking from
+  $\sim 85\%$ (electrostatic only) to $\sim 80\%$.
+\item For spin-polarised or high-spin mesons, the helical ZBW phase
+  pattern produces a measurable asymmetry in jet fragmentation ---
+  the \emph{helical jet signature} (listed in
+  Table~\ref{tab:predictions}), detectable at LHCb.
+\end{enumerate}
+\end{remark}
+
 \subsection{$\beta$-function from CPP Casimirs}
 
 \begin{theorem}[$\beta_0$ from tetrahedral cage Casimirs, SS\#4]
@@ -1000,6 +1024,12 @@ $\Lambda_{\rm QCD}$ from PSR saturation
   (CPP order-of-magnitude; RGE self-consistent value: Open
   Problem~\ref{op:lambda_psr})
   & PDG $0.218$~GeV; factor-of-6 off at 1-loop \\[4pt]
+Helical fragmentation in polarized high-spin mesons
+  & ZBW Lorentz forces create helical bowing in spin-aligned chains;
+  distinct fragmentation pattern vs.\ unpolarized case
+  ($\sim 5\%$ asymmetry)
+  & LHCb polarized $B$-meson decay; no standard QCD prediction of
+  this specific helical asymmetry \\[4pt]
 Non-log $\as$ running at Planck scale
   & Lattice discreteness correction to RGE
   & Future Planck-scale collider \\[4pt]
