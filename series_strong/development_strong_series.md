@@ -546,3 +546,58 @@ OP-SS-1 is now better posed. The deliverables for the next version are:
 The nested_cage_masses.ipynb approach is correct in physics and spirit. The missing piece is the kernel that produces multiplicative (not additive) mass growth across cage layers.
 
 *End of Stage 12.*
+
+---
+
+## Stage 13 — Prior Numerical Work: chain_fraying_dynamics.ipynb
+
+Discovered alongside `nested_cage_masses.ipynb`. This notebook (updated January 2026) models the microscopic force landscape in a qDP chain during stretching and fraying, targeting OP-SS-5 (string tension σ from sea_strength).
+
+### What the notebook models
+
+An 11-CP alternating ±qCP chain representing a meson (quark at one end, antiquark at the other). Each internal CP feels:
+- A differential terminus force F_diff from the quark and antiquark ends (1/r² decay)
+- An electrostatic bow that increases effective separation (r_modifier)
+- VP (virtual particle) thermal impacts from the DP Sea (stochastic)
+- Alternating compressive/tensile inter-CP bonds
+
+Break occurs when |F_diff| + inter_bond < VP_impact.
+
+### Key physics insights (not in SS#1–5)
+
+**1. Central break dominance (~85%)**
+F_diff → 0 at the chain midpoint because quark and antiquark terminus forces cancel maximally there. The chain's weakest point is the center, not the ends. Standard QCD (Schwinger mechanism) predicts uniform string breaking; CPP predicts preferential central breaking. This means both daughter mesons have similar mass — a falsifiable prediction distinguishable from standard QCD in lattice string-breaking studies.
+
+**2. Bow rigidity as the origin of V ∝ r**
+The chain bows transversely rather than collapsing under separation. The transverse bow increases effective CP separation, costing energy proportional to chain length. This is the CPP microscopic origin of the linear potential: the string tension σ is the elastic energy of the bowed, pre-stressed configuration.
+
+**3. Alternating pre-stress as the CPP picture of σ**
+The inter-CP bonds alternate [-1, +1, -1, +1, ...] even at zero external separation. The string is pre-stressed. σ is the energy density of this alternating configuration — directly mapping the notebook's inter_bonds to the field-theoretic flux tube.
+
+**4. VP disruption as the CPP Schwinger mechanism**
+sea_thermal = 0.3 represents DP Sea fluctuations acting as the thermal bath. VP impacts above threshold create new quark-antiquark pairs at the break point — the CPP mechanism behind meson production from string breaking.
+
+### Self-consistent check
+
+C14 gives two equations:
+```
+r_conf = sqrt(alpha_s * hbar_c / sigma)  [self-collimation threshold]
+sigma  = alpha_s * hbar_c / r_conf²      [string tension from bow energy]
+```
+
+These are identical — one determines the other. Self-consistent solution:
+- r_conf = sqrt(0.118 × 0.197 / 0.9) = 0.161 fm
+- sigma  = 0.118 × 0.197 / (0.161)² = 0.900 GeV/fm ✓
+
+The bow_factor in the notebook sets the critical transverse displacement at r = r_conf. Expressing bow_factor = l_P / r_chain in terms of sea_strength would close OP-SS-5.
+
+### What remains for OP-SS-5
+
+The notebook is in arbitrary units. The remaining step:
+- Express bow_factor ~ l_P / r_conf in CPP primitives
+- This gives r_conf from sea_strength and l_P
+- σ = α_s ℏc / r_conf² then follows without calibration
+
+The open problem status changes from "open, no prior numerical work" to "open, mechanism established, one dimensional analysis step remaining."
+
+*End of Stage 13.*
