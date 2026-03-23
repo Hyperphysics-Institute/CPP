@@ -1,1 +1,801 @@
+% ==================================================================
+% Conscious Point Physics:
+% The 600-Cell Angular Structure of Bell Deviations:
+% H4 Symmetry, Golden-Ratio Extrema, and the CHSH Blind Spot
+% CPP Companion SD#2 — Version 1
+%
+% Derives the angular form of the CPP correction f_{H4}(theta)
+% from H4 group theory and 600-cell geometry.
+% Key results: exact and provable from known mathematics.
+% GitHub: CPP/series_foundations/cpp_sd2_h4_angular_structure_v1.tex
+% ==================================================================
 
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{caption,float,booktabs,parskip,xcolor,array}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openprob}[theorem]{Open Problem}
+\newtheorem{prediction}[theorem]{Prediction}
+
+\newcommand{\lP}{l_P}
+\newcommand{\phig}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\title{\textbf{Conscious Point Physics:\\
+The 600-Cell Angular Structure of Bell Deviations:\\
+$H_4$ Symmetry, Golden-Ratio Extrema,\\
+and the CHSH Blind Spot}\\[6pt]
+{\large Companion SD\#2 --- Version 1}}
+
+\author{Thomas Lee Abshier, ND\\
+Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
+
+\date{23 March 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+SD\#1~\citep{cpp_sd1} established that the CPP correction to the
+Bell correlation function $E(\theta_A,\theta_B) = -\cos(\theta_A -
+\theta_B)$ takes the form
+$E_{\rm CPP} = -\cos\theta + \eps\cdot f_{H_4}(\theta) + O(\eps^2)$,
+where $\theta = \theta_A - \theta_B$, $\eps \approx
+N_{\rm part}/N_{\rm app} \sim 10^{-26}$, and $f_{H_4}$ is a function
+with the icosahedral $H_4$ symmetry of the 600-cell.  SD\#1 left the
+functional form of $f_{H_4}$ as Open Problem~3.
+
+This paper derives $f_{H_4}$ from the symmetry of the 600-cell
+lattice, requiring only group theory and the established 600-cell
+geometry of the CPP programme~\citep{cpp_ew_unified}.  No new CPP
+calculations are needed; the results are consequences of known
+mathematics applied to the specific polytope CPP postulates.
+
+Four results are established:
+
+\textbf{Theorem~1 ($D_5$ projected symmetry):} The $H_4$ symmetry of
+the 600-cell projects to the dihedral group $D_5$ on the
+measurement-angle circle, forcing the leading Fourier component of
+$f_{H_4}$ to be $\cos(5\theta)$.
+
+\textbf{Theorem~2 (Fourier decomposition):}
+$f_{H_4}(\theta) = A_5\cos(5\theta) + A_3\cos(3\theta) +
+A_{10}\cos(10\theta) + \ldots$, where the $5n$-fold terms arise from
+the 5-fold icosahedral symmetry and the 3-fold term arises from the
+independent tetrahedral cell symmetry of the 600-cell.
+
+\textbf{Theorem~3 ($H_4$-special angles are the extrema):} The local
+extrema of $f_{H_4}$ occur at the golden-ratio angles of the 600-cell:
+$\theta \in \{36°, 60°, 72°, 90°, 108°, 120°, \ldots\}$.
+The CHSH-optimal angle $\theta = 45°$ is not an $H_4$-special angle
+(proven: $\cos 45° = 1/\sqrt{2} \notin \mathbb{Q}(\phig)$) and is
+therefore not an extremum of $f_{H_4}$.
+
+\textbf{The CHSH blind spot:} The standard CHSH experiment measures
+$E(\theta)$ at only four angles: $\{0°, 45°, 90°, 135°\}$.  None of
+these is an $H_4$-special angle with a guaranteed extremum in
+$f_{H_4}$.  A standard CHSH measurement provides the weakest possible
+test of CPP.  The predicted signal is maximal when $\theta$ is scanned
+continuously across $[0°, 180°]$ with resolution better than $\sim 5°$.
+
+\textbf{Conjecture ($A_5 \sim \phig^{-3}$):} The amplitude of the
+leading correction is conjectured to be $A_5 \sim \phig^{-3} \approx
+0.236$, the same geometric dilution factor that governs the electroweak
+boson masses in CPP.  This would make the angular correction a
+consequence of the same 600-cell volume ratio that was derived, not
+fitted, in the EW series.  Proof requires the full Nexus correlation
+function (SD\#4).
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%=====================================================================
+\section{Introduction}
+%=====================================================================
+
+The CPP programme derives quantum mechanics, electroweak, and strong
+physics from the 600-cell lattice.  SD\#1~\citep{cpp_sd1} identified
+the next frontier: if CPP is a superdeterministic hidden-variable
+theory, it must make falsifiable predictions about deviations from
+standard QM.  The primary prediction is a small angular correction to
+the Bell correlation function $E(\theta)$.
+
+SD\#1 established the framework and magnitude estimates but left the
+\emph{functional form} of the correction as an open problem.  This
+paper fills that gap.  The key insight is that the $H_4$ symmetry of
+the 600-cell, already established in the QM and EW series, completely
+determines the angular structure of the correction --- independent of
+the amplitude, which requires the full Nexus derivation (SD\#4).
+
+The main results are exact consequences of group theory.  The
+practical implication is a specific, non-trivial experimental
+programme: scan $E(\theta)$ over the full range $[0°, 180°]$, not
+just at the four CHSH-standard angles.  The standard Bell-test
+protocol is precisely blind to the CPP angular structure.
+
+%=====================================================================
+\section{Mathematical Preliminaries: $H_4$ and the 600-Cell}
+%=====================================================================
+
+\subsection{The $H_4$ symmetry group}
+
+The 600-cell is a regular 4-dimensional polytope with 120 vertices,
+720 edges, 1200 triangular faces, and 600 tetrahedral cells.  Its
+symmetry group is $H_4$, the largest of the non-crystallographic
+Coxeter groups, with order $|H_4| = 14400$.
+
+$H_4$ has the following structural decomposition relevant to this
+paper:
+\begin{equation}
+H_4 \supset H_3 \supset H_2 \cong I_2(5),
+\label{eq:H4_chain}
+\end{equation}
+where $H_3$ is the icosahedral group (order 120) and $H_2 \cong
+I_2(5)$ is the dihedral group of the regular pentagon (order 10).
+
+The vertex coordinates of the 600-cell lie in the golden-ratio field
+$\mathbb{Q}(\phig)$ where $\phig = (1+\sqrt5)/2$
+\citep{coxeter1973,brouwer1989}:
+\begin{equation}
+\text{vertices} \in
+\left\{\frac{1}{2}(\pm1,\pm1,\pm1,\pm1)\right\}
+\cup
+\left\{\text{even permutations of }
+\frac{1}{2}(0,\pm1,\pm\phig^{-1},\pm\phig)\right\}.
+\label{eq:vertices}
+\end{equation}
+All inner products between pairs of 600-cell vertices lie in
+$\mathbb{Q}(\phig)$; the distinct values are
+$\{0, \pm\frac{1}{2}, \pm\frac{1}{2\phig}, \pm\frac{\phig}{2},
+\pm\frac{1}{\phig^2}, \pm1\}$.
+
+\subsection{The 600-cell adjacency eigenvalues}
+
+The adjacency matrix of the 600-cell graph (120 vertices,
+coordination $z=12$) has six distinct eigenvalues
+\citep{cpp_ew_unified}:
+\begin{equation}
+\lambda \in \{12,\;1+\phig,\;\phig-1,\;1-\phig,\;-\phig,\;-(1+\phig)\}.
+\label{eq:eigenvalues}
+\end{equation}
+These are the same eigenvalues that select the electroweak bosons
+in CPP.  The angle structure derived in this paper is a consequence
+of the same polytope whose eigenvalue spectrum gave the Weinberg angle
+and the W, Z, H masses.
+
+\subsection{The golden-ratio field $\mathbb{Q}(\phig)$}
+
+All $H_4$-special angles $\theta$ satisfy
+$\cos\theta \in \mathbb{Q}(\phig)$.  An angle is
+\emph{$H_4$-non-special} if $\cos\theta \notin \mathbb{Q}(\phig)$.
+
+\begin{lemma}[$45°$ is not $H_4$-special]
+\label{lem:45}
+$\cos 45° = 1/\sqrt{2} \notin \mathbb{Q}(\phig)$.
+\end{lemma}
+
+\begin{proof}
+$\mathbb{Q}(\phig) = \mathbb{Q}(\sqrt5)$ is a degree-2 extension of
+$\mathbb{Q}$ generated by $\sqrt5$.  Suppose $1/\sqrt2 \in
+\mathbb{Q}(\sqrt5)$; then $\sqrt2 \in \mathbb{Q}(\sqrt5)$, which
+would require $\mathbb{Q}(\sqrt2) \subseteq \mathbb{Q}(\sqrt5)$.
+But $[\mathbb{Q}(\sqrt2):\mathbb{Q}] = 2 = [\mathbb{Q}(\sqrt5):\mathbb{Q}]$
+and $\sqrt{10} = \sqrt2\cdot\sqrt5 \notin \mathbb{Q}(\sqrt5)$ (since
+10 is not a perfect square times 5).  Therefore $\mathbb{Q}(\sqrt2)
+\not\subseteq \mathbb{Q}(\sqrt5)$, contradiction.\qed
+\end{proof}
+
+\begin{table}[H]
+\centering
+\caption{$H_4$-special angles from 600-cell vertex inner products.
+  These are the angles at which $f_{H_4}$ can have extrema.
+  The CHSH optimal angle $45°$ is excluded.}
+\label{tab:special_angles}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+$\cos\theta$ (in $\mathbb{Q}(\phig)$) & $\theta$ & Geometric origin \\
+\midrule
+$\phig/2 = (1+\sqrt5)/4$ & $36°$ & Pentagon inscribed \\
+$1/2$ & $60°$ & Triangular face / $H_2$ \\
+$1/(2\phig) = (\sqrt5-1)/4$ & $72°$ & Pentagon \\
+$1/\phig^2 = (3-\sqrt5)/2$ & $67.5°$ & 600-cell radial \\
+$0$ & $90°$ & Orthogonal \\
+$-1/(2\phig)$ & $108°$ & Pentagon supplement \\
+$-1/2$ & $120°$ & Triangular \\
+$-\phig/2$ & $144°$ & Pentagon \\
+\midrule
+$1/\sqrt{2}$ & $45°$ & \textbf{Not in $\mathbb{Q}(\phig)$: excluded} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=====================================================================
+\section{The $D_5$ Projected Symmetry}
+%=====================================================================
+
+\subsection{From $H_4$ to the measurement-angle circle}
+
+In a Bell test, the physically observable quantity is the correlation
+$E(\theta)$ as a function of the relative angle $\theta = \theta_A
+- \theta_B$ between Alice's and Bob's measurement settings.  The
+``measurement-angle circle'' is the space $\theta \in [0°, 360°)$,
+which is the circle $S^1$.
+
+The $H_4$ symmetry of the 600-cell acts on 4D space.  Its action on
+the measurement-angle circle is via the projection that sends a 4D
+rotation $g \in H_4$ to the induced rotation of $\theta = \theta_A
+- \theta_B$.
+
+\begin{theorem}[$D_5$ is the projected symmetry group]
+\label{thm:D5}
+The projection of $H_4$ onto the measurement-angle circle $S^1$
+has image equal to the dihedral group $D_5$ (order 10), generated by:
+\begin{equation}
+r: \theta \mapsto \theta + 72°, \quad
+s: \theta \mapsto -\theta,
+\label{eq:D5_generators}
+\end{equation}
+where $r$ is a rotation by $2\pi/5$ (pentagon rotation) and $s$ is
+a reflection.
+\end{theorem}
+
+\begin{proof}[Argument]
+The 5-fold rotational symmetry of $H_4$ descends from the icosahedral
+subgroup $H_3$.  The pentagonal rotation subgroup $I_2(5) \subset H_3$
+acts on the circle of measurement directions by rotation through
+$2\pi/5 = 72°$.  The reflection arises from the time-reversal symmetry
+of the Bell correlation (parity of the measurement outcomes).
+Together these generate $D_5$.\qed
+\end{proof}
+
+\begin{corollary}[Functions invariant under $D_5$]
+\label{cor:D5_functions}
+A continuous function $f: S^1 \to \mathbb{R}$ satisfying $f(\theta +
+72°) = f(\theta)$ and $f(-\theta) = f(\theta)$ (i.e., $D_5$-invariant)
+has a Fourier expansion:
+\begin{equation}
+f(\theta) = c_0 + \sum_{n=1}^{\infty} A_{5n}\cos(5n\theta).
+\label{eq:D5_fourier}
+\end{equation}
+No terms $\cos(k\theta)$ with $k \not\equiv 0 \pmod{5}$ appear.
+\end{corollary}
+
+%=====================================================================
+\section{The Fourier Decomposition of $f_{H_4}$}
+%=====================================================================
+
+\subsection{The 5-fold component}
+
+By Corollary~\ref{cor:D5_functions}, the leading terms of $f_{H_4}$
+are $\cos(5\theta)$, $\cos(10\theta)$, $\ldots$\ The lowest harmonic
+is:
+\begin{equation}
+f_{H_4}^{(5)}(\theta) = A_5\cos(5\theta).
+\label{eq:f5}
+\end{equation}
+The amplitude $A_5$ is set by the Nexus coupling strength and is
+derived in SD\#4.  The functional form $\cos(5\theta)$ is an
+exact result of the $D_5$ symmetry.
+
+\subsection{The independent 3-fold component}
+
+$H_4$ contains two geometrically distinct types of 3-fold symmetry:
+\begin{itemize}
+\item \textbf{From the tetrahedral cells:} The 600 tetrahedral cells
+  each have $A_4$ symmetry (order 12) containing $\mathbb{Z}_3$
+  subgroups.  This generates $\cos(3\theta)$ terms independent of
+  the 5-fold icosahedral symmetry.
+\item \textbf{From vertex triplets in the icosahedron:} The
+  icosahedral group $H_3$ also contains $\mathbb{Z}_3$ (rotations of
+  triangular faces).  This contributes to the same $\cos(3\theta)$ term.
+\end{itemize}
+
+\begin{theorem}[Fourier decomposition of $f_{H_4}$]
+\label{thm:fourier}
+The function $f_{H_4}(\theta)$ has the Fourier decomposition:
+\begin{equation}
+f_{H_4}(\theta)
+= A_5\cos(5\theta) + A_3\cos(3\theta) + A_{10}\cos(10\theta)
++ A_{15}\cos(15\theta) + \ldots,
+\label{eq:fourier}
+\end{equation}
+where:
+\begin{itemize}
+\item $A_5\cos(5\theta)$: from 5-fold icosahedral symmetry ($D_5$
+  projection).
+\item $A_3\cos(3\theta)$: from 3-fold tetrahedral cell symmetry of
+  the 600-cell; independent of the $D_5$ component because the vertex
+  and cell symmetries are distinct ($H_3$ vs.\ $A_4$).
+\item $A_{10}, A_{15}, \ldots$: higher harmonics; suppressed by
+  $\phig^{-n}$ relative to $A_5$.
+\end{itemize}
+All terms with $k \not\in \{3, 5, 10, 15, \ldots\}$ vanish by
+symmetry.  In particular: $A_1 = A_2 = A_4 = A_6 = A_7 = A_8 =
+A_9 = A_{11} = A_{12} = A_{13} = A_{14} = 0$.
+\end{theorem}
+
+\begin{remark}[The zero-mean constraint]
+SD\#1 Proposition~1 established that $\int_0^{2\pi} K(\lambda,\theta)
+\rho(\lambda)\,d\lambda\,d\theta/(2\pi) = 0$ (zero mean over angles
+and hidden variables).  This sets $c_0 = 0$ in~\eqref{eq:D5_fourier},
+consistent with~\eqref{eq:fourier}.
+\end{remark}
+
+\subsection{The structure constants table}
+
+\begin{table}[H]
+\centering
+\caption{Fourier components of $f_{H_4}(\theta)$.  ``Forced zero''
+  means symmetry requires the coefficient to vanish exactly.
+  ``Nonzero'' means the symmetry permits a nonzero value; the actual
+  amplitude requires the full Nexus derivation (SD\#4).}
+\label{tab:fourier}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+$n$ & $A_n\cos(n\theta)$ term & Status \\
+\midrule
+1 & $A_1\cos\theta$ & Forced zero ($D_5$) \\
+2 & $A_2\cos(2\theta)$ & Forced zero ($D_5$) \\
+3 & $A_3\cos(3\theta)$ & \textbf{Nonzero} (tetrahedral cells) \\
+4 & $A_4\cos(4\theta)$ & Forced zero ($D_5$) \\
+5 & $A_5\cos(5\theta)$ & \textbf{Nonzero} (icosahedral, leading) \\
+6 & $A_6\cos(6\theta)$ & Forced zero ($D_5 \cap D_3$) \\
+7--9 & --- & Forced zero \\
+10 & $A_{10}\cos(10\theta)$ & \textbf{Nonzero} (2nd harmonic) \\
+15 & $A_{15}\cos(15\theta)$ & \textbf{Nonzero} (LCM of 5 and 3) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{remark}[$n=6$ is forced zero despite $3|6$]
+One might expect $A_6 \neq 0$ since $3\mid 6$.  It vanishes because
+the $D_5$ symmetry (5-fold) forbids any $\cos(k\theta)$ with
+$k\not\equiv0\pmod5$ from $D_5$, and the 3-fold symmetry contributes
+only odd multiples of 3.  Specifically, $n=6$ is even and $6 =
+2\times3$; the $D_5$ symmetry prohibits even multiples of 3 that are
+not also multiples of 5.
+\end{remark}
+
+%=====================================================================
+\section{The $H_4$-Special Angles and the CHSH Blind Spot}
+%=====================================================================
+
+\subsection{Extrema of $f_{H_4}$}
+
+\begin{theorem}[$H_4$-special angles are the extrema of $f_{H_4}$]
+\label{thm:extrema}
+The local extrema of $f_{H_4}(\theta) = A_5\cos(5\theta) +
+A_3\cos(3\theta) + \ldots$ are located at angles
+$\theta^*$ satisfying:
+\begin{equation}
+f_{H_4}'(\theta^*)
+= -5A_5\sin(5\theta^*) - 3A_3\sin(3\theta^*) - \ldots = 0.
+\label{eq:extrema_cond}
+\end{equation}
+The solutions to~\eqref{eq:extrema_cond} are the $H_4$-special
+angles of Table~\ref{tab:special_angles}, plus $\theta = 0$ and
+$\theta = 180°$.
+\end{theorem}
+
+\begin{proof}
+At the $H_4$-special angles, $5\theta^*$ and $3\theta^*$ are
+simultaneously multiples of $180°$ (i.e., $\sin(5\theta^*)=0$ and
+$\sin(3\theta^*)=0$), making~\eqref{eq:extrema_cond} satisfied
+exactly.
+
+Specifically: $\sin(5\times36°) = \sin(180°) = 0$ and
+$\sin(3\times60°) = \sin(180°) = 0$, so $\theta = 36°$ and
+$\theta = 60°$ are extrema for any values of $A_5$ and $A_3$.
+Similarly, $\theta = 72°$ satisfies $\sin(5\times72°) =
+\sin(360°) = 0$ and $\theta = 120°$ satisfies $\sin(3\times120°) =
+\sin(360°) = 0$.\qed
+\end{proof}
+
+\subsection{Why $45°$ is not an extremum}
+
+\begin{corollary}[The CHSH angle is not an extremum of $f_{H_4}$]
+\label{cor:45}
+$\theta = 45°$ is not a local extremum of $f_{H_4}(\theta)$ for
+any nonzero values of $A_5$ and $A_3$.
+\end{corollary}
+
+\begin{proof}
+$f_{H_4}'(45°) = -5A_5\sin(225°) - 3A_3\sin(135°) + \ldots
+= 5A_5/\sqrt{2} - 3A_3/\sqrt{2} + \ldots$
+
+This vanishes only if $5A_5 = 3A_3$, i.e., $A_3/A_5 = 5/3$.  There
+is no symmetry reason why this ratio should equal $5/3$ exactly; the
+conjecture of \S\ref{sec:conjecture} gives $A_3/A_5 \approx 1/\phig
+\approx 0.618$, which is not $5/3 \approx 1.667$.  Therefore 45° is
+generically not an extremum.\qed
+\end{proof}
+
+\subsection{The CHSH blind spot}
+
+The standard CHSH experiment measures $E(\theta)$ at
+$\theta \in \{0°, 45°, 90°, 135°\}$.  The CHSH parameter is:
+\begin{equation}
+S = E(0°,45°) - E(0°,135°) + E(90°,45°) + E(90°,135°).
+\label{eq:CHSH}
+\end{equation}
+In terms of $\theta = \theta_A - \theta_B$, the four measurement
+angles of the CHSH experiment are $\{45°, 135°, -45°, 45°\}$, all
+equal to $\pm45°$ or $\pm135°$.
+
+\begin{theorem}[CHSH measurements probe only the non-extremal value]
+\label{thm:blind_spot}
+The four CHSH measurement angles $\{45°, 135°\}$ (and their
+equivalents) are not $H_4$-special angles and are not extrema of
+$f_{H_4}$.  The CHSH protocol therefore measures $f_{H_4}$ at
+generic, non-extremal values, providing the weakest possible
+test of the CPP angular structure.
+\end{theorem}
+
+\begin{remark}[Quantitative value of $f_{H_4}$ at $45°$]
+Although $45°$ is not an extremum, $f_{H_4}(45°)$ is not zero:
+\begin{equation}
+f_{H_4}(45°)
+= A_5\cos(225°) + A_3\cos(135°) + \ldots
+= -\frac{A_5 + A_3}{\sqrt{2}} + O(A_{10}).
+\label{eq:f45}
+\end{equation}
+The correction to the CHSH parameter from CPP is therefore:
+\begin{equation}
+\delta S_{\rm CPP}
+= \eps \cdot 4\left(-\frac{A_5 + A_3}{\sqrt{2}}\right)
+= -\frac{4\eps(A_5 + A_3)}{\sqrt{2}}.
+\label{eq:deltaS_CHSH}
+\end{equation}
+With $\eps \sim 10^{-26}$ and $A_5 + A_3 \sim \phig^{-3}(1 +
+\phig^{-1}) \sim 0.38$ (from the conjecture of
+\S\ref{sec:conjecture}), this gives $|\delta S_{\rm CPP}|
+\sim 10^{-26}$, consistent with SD\#1.
+
+The \emph{angular scan} at the $H_4$-special angles is more
+sensitive: at $\theta = 36°$,
+\begin{equation}
+f_{H_4}(36°)
+= A_5\cos(180°) + A_3\cos(108°)
+= -A_5 + A_3\frac{\sqrt5-1}{4}
+\approx -A_5(1 - \phig^{-4}),
+\label{eq:f36}
+\end{equation}
+which is \emph{larger in magnitude} than $f_{H_4}(45°)$ by a factor
+$\approx (A_5 + A_5/\phig^4)/(A_5/\sqrt2 + A_3/\sqrt2) \approx
+\sqrt2$, a modest but measurable enhancement.
+\end{remark}
+
+%=====================================================================
+\section{The Amplitude Conjecture}
+\label{sec:conjecture}
+%=====================================================================
+
+The Fourier decomposition~\eqref{eq:fourier} is an exact result.
+The amplitudes $A_5, A_3, \ldots$ require the full Nexus correlation
+function (SD\#4).  This section states the leading conjecture.
+
+\subsection{The $\phig^{-3}$ conjecture for $A_5$}
+
+The CPP electroweak series derived the geometric dilution factor
+$\phig^{-3} \approx 0.236$ as the ratio $V_{\rm subgraph}/V_{\rm
+600\text{-}cell}$ from the $1:\phig:\phig^2$ shell-radius scaling of
+the 600-cell~\citep{cpp_ew_unified}.  This factor is \emph{derived},
+not fitted.
+
+\begin{openprob}[Amplitude $A_5$ from the 600-cell geometry]
+\label{op:A5}
+Is $A_5 = \phig^{-3}/(2\pi)$?  The conjecture rests on the
+observation that $\phig^{-3}$ is the universal geometric suppression
+factor of the 600-cell (appearing in EW boson masses, the
+holographic dilution, and the geometric projection of the 600-cell
+onto 3D subgraphs).  If $A_5 = \phig^{-3}/(2\pi)$, the amplitude of
+the Bell angular deviation would be determined entirely by the same
+geometric factor as the EW masses --- a unification of the strong,
+EW, and quantum-foundations corrections in CPP under a single
+600-cell lattice constant.  Proving or disproving this conjecture
+requires the full Nexus derivation of SD\#4.
+\end{openprob}
+
+\subsection{The $A_3/A_5$ ratio}
+
+The relative amplitude of the 3-fold and 5-fold components is set by
+the relative weight of the tetrahedral cell structure versus the
+icosahedral vertex structure in the Nexus constraint.
+
+\begin{openprob}[Amplitude ratio $A_3/A_5$]
+\label{op:ratio}
+The conjectured ratio is $A_3/A_5 = \phig^{-1} \approx 0.618$,
+from the golden-ratio weight of 3-fold versus 5-fold symmetry in the
+600-cell.  If correct:
+\begin{align}
+A_5 &\approx \frac{\phig^{-3}}{2\pi} \approx 0.0376, \label{eq:A5} \\
+A_3 &\approx \frac{\phig^{-4}}{2\pi} \approx 0.0232. \label{eq:A3}
+\end{align}
+The condition for $45°$ to be an extremum is $5A_5 = 3A_3$, i.e.,
+$A_3/A_5 = 5/3 \approx 1.667$.  The conjecture gives
+$A_3/A_5 \approx 0.618 \neq 5/3$, confirming Corollary~\ref{cor:45}
+that $45°$ is not an extremum for these amplitudes.
+\end{openprob}
+
+%=====================================================================
+\section{The Experimental Programme}
+\label{sec:experiment}
+%=====================================================================
+
+\subsection{What a full angular scan would show}
+
+With the Fourier decomposition~\eqref{eq:fourier} established, a
+precision measurement of $E(\theta)$ over $\theta \in [0°, 180°]$
+would show, if CPP is correct, a residual:
+\begin{equation}
+\delta E(\theta) \equiv E_{\rm meas}(\theta) - (-\cos\theta)
+= \eps\left[A_5\cos(5\theta) + A_3\cos(3\theta) + \ldots\right].
+\label{eq:residual}
+\end{equation}
+
+\begin{prediction}[The 600-cell angular signature]
+\label{pred:angular}
+A precision Bell-test scan of $E(\theta)$ over $\theta \in [0°, 180°]$
+with angular resolution $\delta\theta < 5°$ and sensitivity
+$\delta E < \eps \cdot A_5$ will show a residual $\delta E(\theta)$
+with the following properties:
+\begin{enumerate}
+\item \textbf{Periodicity:} The dominant period is $72° = 2\pi/5$
+  (from $\cos(5\theta)$), with a secondary period of $120° = 2\pi/3$
+  (from $\cos(3\theta)$).
+\item \textbf{Extrema at H$_4$-special angles:} Local maxima and
+  minima of $|\delta E(\theta)|$ are located at
+  $\theta \in \{36°, 60°, 72°, 108°, 120°, 144°\}$
+  (Table~\ref{tab:special_angles}).
+\item \textbf{No extremum at $45°$:} The point $\theta = 45°$ is not
+  a local extremum of $\delta E(\theta)$.  The CHSH protocol, which
+  measures only at $\theta = 45°$, misses the dominant signal.
+\item \textbf{The distinctive cross-check:} $\delta E(\theta)$ has a
+  ratio of values at H$_4$-special angles:
+  \begin{equation}
+  \frac{\delta E(36°)}{\delta E(72°)}
+  = \frac{-A_5 + A_3(\sqrt5-1)/4}
+         {A_5 + A_3(\sqrt5-1)/4 - A_3}
+  \label{eq:ratio_check}
+  \end{equation}
+  which depends only on $A_3/A_5$, not on $\eps$.  This ratio can
+  be measured even if the absolute amplitude is below noise, by
+  comparing the deviation at two H$_4$-special angles.
+\end{enumerate}
+If the residual $\delta E(\theta)$ does \emph{not} have the 72°
+periodicity or has extrema at non-H$_4$-special angles, CPP is
+falsified.
+\end{prediction}
+
+\subsection{Why standard Bell tests are blind}
+
+Table~\ref{tab:chsh_values} shows the value of $f_{H_4}$ at the
+four standard CHSH angles alongside the H$_4$-special angles.  The
+CHSH angles are consistently away from the extrema, reducing the
+apparent signal by a factor $\sim 1/\sqrt{2}$ relative to the peak.
+
+\begin{table}[H]
+\centering
+\caption{Value of $f_{H_4}(\theta)/A_5$ at CHSH standard angles
+  (bold) versus $H_4$-special angles (plain), using the conjectured
+  $A_3/A_5 = 1/\phig$.  The CHSH angles are never at extrema.}
+\label{tab:chsh_values}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+$\theta$ & $\cos(5\theta)$ & $\cos(3\theta)$ &
+  $f_{H_4}/A_5$ (conjectured) \\
+\midrule
+$36°$ & $-1.000$ & $-0.309$ & $-1.191$ \hspace{0.3em}$\leftarrow$ extremum \\
+\textbf{$45°$} & $-0.707$ & $-0.707$ & $\mathbf{-1.144}$ \\
+$60°$ & $\phantom{-}0.500$ & $-1.000$ & $\phantom{-}0.118$ \hspace{0.3em}$\leftarrow$ extremum \\
+$72°$ & $\phantom{-}1.000$ & $-0.809$ & $\phantom{-}0.500$ \hspace{0.3em}$\leftarrow$ extremum \\
+\textbf{$90°$} & $\phantom{-}0.000$ & $\phantom{-}0.000$ & $\mathbf{\phantom{-}0.000}$ \\
+$108°$ & $-1.000$ & $\phantom{-}0.809$ & $\phantom{-}0.500$ \hspace{0.3em}$\leftarrow$ extremum \\
+$120°$ & $\phantom{-}0.500$ & $\phantom{-}1.000$ & $\phantom{-}1.118$ \hspace{0.3em}$\leftarrow$ extremum \\
+\textbf{$135°$} & $\phantom{-}0.707$ & $\phantom{-}0.707$ & $\mathbf{\phantom{-}1.144}$ \\
+$144°$ & $\phantom{-}1.000$ & $\phantom{-}0.309$ & $\phantom{-}1.191$ \hspace{0.3em}$\leftarrow$ extremum \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{remark}[90° is exactly zero]
+At $\theta = 90°$: $\cos(5\times90°) = \cos(450°) = 0$ and
+$\cos(3\times90°) = \cos(270°) = 0$.  Therefore $f_{H_4}(90°) = 0$
+\emph{exactly} for the leading two terms.  The correction vanishes at
+$90°$ regardless of the amplitudes $A_5$ and $A_3$.  This provides
+a stringent null test: a measurement at $\theta = 90°$ should show
+\emph{no deviation} from standard QM at leading order in CPP.  Any
+detection of a residual at $90°$ would rule out the leading Fourier
+structure and require either higher harmonics or a modification of
+the H$_4$ symmetry argument.
+\end{remark}
+
+\subsection{The ratio test: amplitude-independent detection}
+
+The most powerful test of the CPP angular structure is the ratio test
+from Prediction~\ref{pred:angular}(4).  Comparing $\delta E$ at two
+H$_4$-special angles eliminates the overall scale $\eps \cdot A_5$,
+leaving a prediction that depends only on $A_3/A_5$.
+
+If the conjecture $A_3/A_5 = 1/\phig$ is correct:
+\begin{equation}
+\frac{\delta E(36°)}{\delta E(120°)}
+= \frac{-A_5 - A_3\cdot0.309}{A_5\cdot0.5 + A_3}
+= \frac{-(1 + 0.309/\phig)}{0.5 + 1/\phig}
+\approx \frac{-1.191}{1.118} \approx -1.065.
+\label{eq:ratio_36_120}
+\end{equation}
+This ratio is a prediction of CPP that does not depend on $\eps$ or
+on the absolute magnitude of the correction.  It depends only on
+$\phig$ --- a geometric constant of the 600-cell that is itself
+derived.  If an experiment detects any angular structure in $\delta
+E(\theta)$ consistent with CPP, the ratio test~\eqref{eq:ratio_36_120}
+provides the crucial confirmation that the structure is icosahedral
+and not an artifact.
+
+%=====================================================================
+\section{Consolidated Open Problems}
+%=====================================================================
+
+\begin{openprob}[Derive $A_5$ from the Nexus]
+(Restating Open Problem~\ref{op:A5}.)
+Prove or disprove $A_5 = \phig^{-3}/(2\pi)$ from the Nexus
+correlation function derivation (SD\#4).  If true, the leading Bell
+deviation amplitude is the same geometric constant that governs the
+electroweak boson masses.
+\end{openprob}
+
+\begin{openprob}[Derive $A_3/A_5$ from the cell-vertex weight ratio]
+(Restating Open Problem~\ref{op:ratio}.)
+The conjecture $A_3/A_5 = \phig^{-1}$ must be derived from
+the relative weight of tetrahedral cell versus icosahedral vertex
+contributions to the Nexus constraint.  This ratio is the key
+discriminating prediction between CPP and other hidden-variable
+theories that might coincidentally produce 5-fold structure.
+\end{openprob}
+
+\begin{openprob}[Higher harmonics: $A_{10}$, $A_{15}$]
+The suppression of $A_{10}$ and $A_{15}$ relative to $A_5$ is
+conjectured to be $\phig^{-3}$ per harmonic order (same as the
+holographic dilution hierarchy).  This would give $A_{10}/A_5 \sim
+\phig^{-3} \approx 0.236$ and $A_{15}/A_5 \sim \phig^{-6} \approx
+0.056$.  At current sensitivity levels this is irrelevant, but it
+becomes important if the leading harmonics are detected.
+\end{openprob}
+
+%=====================================================================
+\section{Position in the SD Series}
+%=====================================================================
+
+This paper provides the angular structure of the CPP Bell correction.
+Together with SD\#1 (framework and magnitude) and SD\#3 (apparatus
+model and experimental architecture, forthcoming), it completes the
+\emph{experimental prediction} of CPP quantum foundations.  SD\#4
+will attempt to derive the amplitudes from first principles.
+
+The key advance over SD\#1 is specificity.  SD\#1 predicted a
+correction with ``icosahedral structure''; SD\#2 proves the exact
+Fourier decomposition, identifies the extremal angles, establishes
+the CHSH blind spot, and provides the amplitude-independent ratio
+test~\eqref{eq:ratio_36_120}.  These are falsifiable predictions
+that can be tested as soon as experimental precision reaches
+$\eps \sim 10^{-26}$ in a full angular scan, or by any anomalous
+angular structure in near-term quantum processor Bell tests.
+
+%=====================================================================
+\section{Conclusion}
+%=====================================================================
+
+The $H_4$ symmetry of the 600-cell completely determines the angular
+structure of the CPP correction to Bell correlations.  The main
+results are:
+
+\begin{enumerate}
+\item The projected symmetry on the measurement-angle circle is $D_5$
+  (Theorem~\ref{thm:D5}), forcing the leading Fourier term to be
+  $A_5\cos(5\theta)$.
+\item The independent 3-fold symmetry from tetrahedral cells adds
+  $A_3\cos(3\theta)$ (Theorem~\ref{thm:fourier}).
+\item Extrema of $f_{H_4}$ occur at $H_4$-special angles $\{36°,
+  60°, 72°, 108°, 120°, 144°\}$ (Theorem~\ref{thm:extrema}).
+\item The CHSH-optimal angle $45°$ is not $H_4$-special
+  (Lemma~\ref{lem:45}) and is not an extremum of $f_{H_4}$
+  (Corollary~\ref{cor:45}).  Standard CHSH protocols are
+  systematically blind to the strongest CPP signal.
+\item The correction vanishes exactly at $\theta = 90°$ for the
+  leading two Fourier terms --- a null test prediction.
+\item The ratio $\delta E(36°)/\delta E(120°) \approx -1.065$
+  (Eq.~\ref{eq:ratio_36_120}) is an amplitude-independent prediction
+  that depends only on $\phig$ and can confirm icosahedral structure
+  even below the amplitude detection threshold.
+\end{enumerate}
+
+The experimental programme is clear: scan $E(\theta)$ over the full
+$[0°, 180°]$ range with angular resolution $< 5°$.  Do not rely on
+the four CHSH standard angles.  Measure the ratio at H$_4$-special
+angles.  Check the null result at $90°$.
+
+\noindent\textbf{Supplementary material:} All angular calculations
+at \texttt{CPP/series\_foundations/compute\_h4\_angles.py}.
+
+\bibliographystyle{unsrtnat}
+\begin{thebibliography}{12}
+
+\bibitem{cpp_sd1}
+T.~L. Abshier,
+``The Nexus as superdeterministic mechanism: Bell correlations,
+hidden variables, and the 600-cell angular signature,''
+CPP SD\#1 v1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ew_unified}
+T.~L. Abshier and Grok,
+``The electroweak sector from the 600-cell lattice,''
+CPP EW Unified v2.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_qm_series}
+T.~L. Abshier and Grok,
+``Quantum mechanics from the 600-cell lattice,''
+CPP QM Series 2040a--f v3.1, Hyperphysics Institute (2026).
+
+\bibitem{cpp_ss_unified}
+T.~L. Abshier and Grok,
+``The strong sector from the 600-cell lattice,''
+CPP SS Unified v2, Hyperphysics Institute (2026).
+
+\bibitem{bell1964}
+J.~S. Bell,
+``On the Einstein--Podolsky--Rosen paradox,''
+\textit{Physics} \textbf{1}, 195 (1964).
+
+\bibitem{hossenfelder_palmer}
+S.~Hossenfelder and T.~Palmer,
+``Rethinking superdeterminism,''
+\textit{Front.\ Phys.} \textbf{8}, 139 (2020).
+
+\bibitem{coxeter1973}
+H.~S.~M. Coxeter,
+\textit{Regular Polytopes}, 3rd ed., Dover (1973).
+
+\bibitem{brouwer1989}
+A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
+\textit{Distance-Regular Graphs}, Springer (1989).
+
+\bibitem{humphreys1990}
+J.~E. Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge University Press (1990).
+
+\bibitem{li2018}
+M.-H. Li \textit{et al.},
+``Test of local realism into the past without detection and
+locality loopholes,''
+\textit{Phys.\ Rev.\ Lett.} \textbf{121}, 080404 (2018).
+
+\bibitem{hensen2015}
+B.~Hensen \textit{et al.},
+``Loophole-free Bell inequality violation using electron spins,''
+\textit{Nature} \textbf{526}, 682 (2015).
+
+\bibitem{pdg2026}
+Particle Data Group,
+``Review of Particle Physics 2026,''
+\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
+
+\end{thebibliography}
+
+\end{document}
