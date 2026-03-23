@@ -690,3 +690,55 @@ where:
 4. The remaining task: derive E_eDP = 88 MeV from sea_strength and l_P
 
 *End of Stage 14.*
+
+---
+
+## Stage 15 — Prior Numerical Work: magnetic_moments_zbw.ipynb (v8.0)
+
+This notebook targets the anomalous magnetic moments of the proton and neutron from ZBW quark currents. It introduces a new open problem not previously listed in SS#1–5 (now OP-SS-8).
+
+### What the notebook computes
+
+```python
+μ = sign × (g/2 + anomaly × suppression)
+anomaly = anomaly_base + polarity_bias
+        = 0.792 + polarity_bias  (proton: +0.15, neutron: -0.10)
+```
+
+Proton: μ_p = +(1.0 + 0.942) = +1.942 μ_N  (PDG: +2.7928, error: 30%)
+Neutron: μ_n = -(1.0 + 0.692 × 0.98) = -1.678 μ_N  (PDG: -1.9130, error: 12%)
+
+### The misleading agreement metric
+
+The notebook reports "Agreement: Proton 69.5%, Neutron X%" using the formula `100 × (1 − |computed − PDG|/PDG)`. This is not a standard agreement metric — 69.5% looks like agreement but corresponds to a 30% fractional error. The actual deviations are 30% (proton) and 12% (neutron), which is not good agreement for a "first-principles" derivation.
+
+### What is physically correct
+
+**The mechanism is right:** The proton's anomalous moment exceeds the neutron's because the proton's two u quarks (+2/3 charge) produce a larger ZBW orbital current than the neutron's two d quarks (-1/3 charge). This charge-weighted composition difference is captured by the polarity_bias terms (+0.15 proton, -0.10 neutron). The physical picture — anomalous moment from ZBW orbital currents — is the correct CPP approach.
+
+**The Dirac baseline is right:** g/2 = 1.0 is the free-particle Dirac moment; the anomaly κ from ZBW dynamics is the genuine CPP prediction.
+
+### What is not yet derived
+
+The parameters anomaly_base = 0.792, suppression = 0.98, and the polarity_biases are fitted, not derived. The value 0.792 has no compelling first-principles motivation from the CPP framework.
+
+### The correct CPP derivation path
+
+The standard SU(6) constituent quark model gives:
+```
+μ_p = (4μ_u − μ_d) / 3
+μ_n = (4μ_d − μ_u) / 3
+```
+
+where μ_q = e_q/(2M_q) at leading order. In CPP, the ZBW orbital wavefunction on the tetrahedral cage modifies this to:
+```
+μ_q = (e_q / 2M_q) × <ψ|L̂ + 2Ŝ|ψ>_ZBW
+```
+
+Computing `<L̂ + 2Ŝ>_ZBW` for u and d quarks from their cage geometry (bare, no cage) and applying the SU(6) formula would give both nucleon moments from a single geometric calculation.
+
+### New open problem added: OP-SS-8
+
+This notebook reveals a clean new open problem: derive μ_u and μ_d from ZBW orbital dynamics in the bare cage geometry, then use the SU(6) formula to predict both nucleon magnetic moments without free parameters. This would be a strong confirmation of the cage architecture because both moments must be correctly reproduced by the same ZBW orbital wavefunction.
+
+*End of Stage 15.*
