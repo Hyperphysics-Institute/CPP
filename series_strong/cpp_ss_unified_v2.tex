@@ -726,52 +726,77 @@ would convert the quark mass spectrum from a set of inputs to a
 single derived prediction.  The SSV compression formula (EW
 \#2~\citep{cpp_ew2}) provides the template.
 
-Prior numerical work in \texttt{nested\_cage\_masses.ipynb}
-(CPP/series\_strong, v8.0) establishes the following partial
-results that any complete formula must reproduce:
+Two prior numerical studies (\texttt{nested\_cage\_masses.ipynb},
+v8.0 and \texttt{cpp\_benchmark.ipynb}, v12) establish the
+following partial results:
 
 \begin{enumerate}
-\item \textbf{The SSV integral formula (established):}
-  $M_q \sim \int_0^{r_n} S(r)\,\gamma(r)\,r^2\,dr$,
-  where $S(r)$ is the SSV field energy density and
-  $r_n = \phig^{n/2}r_0$ is the cage radius at depth $n$.
-  This is the correct \emph{type} of formula; the difficulty
-  is finding the kernel $S(r)$ that reproduces the observed
-  five-orders-of-magnitude span $m_u : m_t \approx 1 : 78{,}000$.
-  The kernel $S = 1/r^4$ (SSV electric density) gives
-  ratios of only $1:1.2$ across four cages --- far too mild.
+\item \textbf{The volume scaling $\phig^{3(l-1)}$ is the
+  multiplicative mechanism (established, \texttt{cpp\_benchmark}):}
+  Each additional cage layer contributes an energy proportional to
+  the 3D volume of the shell, which scales as
+  $V_l \propto \phig^{3(l-1)}$ ($\phig^3 \approx 4.236$).  This
+  gives the multiplicative growth the matter sector requires:
+  successive cage layers contribute $1\times$, $4.2\times$,
+  $17.9\times$, $76\times$ the base energy, spanning two orders
+  of magnitude over four layers.  This is the mechanism identified
+  as missing from the simpler $\int S\,dV$ integral approach of
+  \texttt{nested\_cage\_masses}.
 
-\item \textbf{The inner SSV mechanism for $m_u < m_d$ (established):}
-  The bare up quark carries a central $+$qCP with no outer cage.
-  Its ZBW orbital radius is small, where the local SSV stress is
-  strongest.  This stronger stress polarises the surrounding eCPs
-  outward, reducing the hDP overlap fraction to
-  $\delta_{\rm up} \approx 0.95 \times \frac{1}{3}$,
-  while the down quark's outer hDP structure gives
-  $\delta_{\rm down} \approx \frac{1}{3}$ (unmodified).
-  The direction $m_u < m_d$ follows from this geometry without
-  free parameters.  The precise magnitudes $m_u = 2.2$~MeV and
-  $m_d = 4.7$~MeV are not yet derived from first principles.
+\item \textbf{The DP binding energy hierarchy (established,
+  \texttt{cpp\_benchmark}):}
+  The three DP~Sea particle types have binding energies in exact
+  ratios:
+  \begin{equation}
+  E_{\eCP} : E_{\hDP} : E_{\qCP}
+  = 1 : \sqrt{3} : 3
+  \approx 88 : 152 : 264\ \text{MeV}.
+  \label{eq:dp_energies}
+  \end{equation}
+  Inner cage layers are qDP-dominated (higher energy per DP);
+  outer layers shift toward hDP-dominated (lower energy per DP).
+  This composition gradient partially offsets the $\phig^{3(l-1)}$
+  volume growth, giving a milder effective mass hierarchy than
+  pure volume scaling alone.
 
-\item \textbf{The open kernel problem:}
-  The ZBW frequency $\omega_{\rm ZBW} \propto 1/r_{\rm cage}$
-  is the most promising candidate kernel, since it directly
-  connects cage size to mass through $E = \hbar\omega_{\rm ZBW}$.
-  If $S(r) \propto \omega_{\rm ZBW}(r) \propto 1/r$, the integral
-  $\int_0^{r_n} r^{-1} r^2\,dr = r_n^2/2 \propto \phig^n$
-  gives mass ratios $\propto \phig^n$, yielding the spectrum
-  $1 : \phig : \phig^2 : \phig^3 : \phig^4 \approx
-  1 : 1.6 : 2.6 : 4.2 : 6.9$.
-  This still falls short of the observed $1 : 78{,}000$ span,
-  but is closer in structure and motivates replacing the radial
-  integral with a ZBW-frequency-weighted sum over cage layers.
+\item \textbf{The decay constant $\tau = 1/\ln(\phig^2)$
+  (derived, \texttt{cpp\_benchmark}):}
+  The qDP-to-hDP composition shift across layers follows an
+  exponential with decay constant $\tau$ derivable from the SSV
+  integral over $\phig$-nested shells:
+  \begin{equation}
+  \tau = \frac{1}{\ln \phig^2} \approx 1.039.
+  \label{eq:tau}
+  \end{equation}
+  This is a first-principles result requiring no free parameter.
+
+\item \textbf{The inner SSV mechanism for $m_u < m_d$
+  (established, \texttt{nested\_cage\_masses}):}
+  The bare up quark's central $+$qCP creates stronger SSV stress
+  at the ZBW orbital radius, reducing the hDP overlap to
+  $\delta_{\rm up} \approx 0.95 \times \frac{1}{3}$ versus
+  $\delta_{\rm down} \approx \frac{1}{3}$ for the down quark.
+  The direction $m_u < m_d$ is geometric, not fitted.
+
+\item \textbf{The open calibration problem:}
+  With consistent MeV units and $\phig^{3(l-1)}$ volume scaling,
+  the formula gives $M_{\rm strange} \approx 223$~MeV (PDG:
+  93.5~MeV, factor of 2 off), $M_{\rm charm} \approx 1052$~MeV
+  (PDG: 1273~MeV, 17\% off), $M_{\rm bottom} \approx 4350$~MeV
+  (PDG: 4183~MeV, 4\% off).  Bottom and charm are close; strange,
+  up, and top require further refinement.  The top quark mass
+  ($M_{\rm top} \approx 17{,}720$~MeV vs.\ PDG 172{,}570~MeV)
+  indicates the $\phig^{3(l-1)}$ volume scaling is insufficient
+  for the fourth cage and a different mechanism (the C$_{60}$
+  fullerene shell) is needed.
 \end{enumerate}
 
-The complete formula for OP-SS-1 must: (a)~produce the correct
-mass ratios across all six quarks from a single geometric
-expression; (b)~derive $m_u < m_d$ from the inner SSV mechanism;
-(c)~require no free parameters beyond sea\_strength and the
-600-cell geometry.
+The complete formula for OP-SS-1 must: (a)~produce correct mass
+ratios across all six quarks from a single geometric expression;
+(b)~derive $m_u < m_d$ from the inner SSV mechanism; (c)~require
+no free parameters beyond sea\_strength and 600-cell geometry;
+(d)~account for the anomalously large top mass through the
+C$_{60}$ fourth-cage mechanism.
 \end{openprob}
 
 \begin{openprob}[String tension $\sigma$ from sea\_strength]
