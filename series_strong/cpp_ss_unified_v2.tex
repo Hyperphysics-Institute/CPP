@@ -782,6 +782,55 @@ qDP chain geometry --- consistently with the EW boson mass
 calibration (same sea\_strength, same $\phig^{-3}$ factor) ---
 would close the strong-sector parameter space and unify the quark
 mass and boson mass calibrations.
+
+Prior numerical work in \texttt{chain\_fraying\_dynamics.ipynb}
+(CPP/series\_strong, January 2026) establishes the microscopic
+picture and four partial results:
+
+\begin{enumerate}
+\item \textbf{The self-consistent relation (established):}
+  C14~\citep{c14} gives $r_{\rm conf} = \sqrt{\alpha_s \hbar c /
+  \sigma}$, and independently $\sigma = \alpha_s \hbar c /
+  r_{\rm conf}^2$.  Together these are satisfied self-consistently
+  at $r_{\rm conf} \approx 0.161$~fm and $\sigma = 0.900$~GeV/fm.
+  This confirms that $\sigma$ and $r_{\rm conf}$ are not independent
+  inputs: one determines the other.  Deriving either from
+  sea\_strength closes both.
+
+\item \textbf{Bow rigidity as the confinement mechanism (established):}
+  The qDP chain bows transversely under separation rather than
+  collapsing.  The transverse bow increases the effective inter-CP
+  separation ($r_{\rm eff} = r \cdot r_{\rm modifier}$), costing
+  energy proportional to chain extension.  This is the CPP microscopic
+  origin of $V \propto r$: the linear potential is the elastic energy
+  of the bowed chain.  The bow amplitude is $\sim (\lP/r_{\rm chain})
+  \cdot r_{\rm chain}$ per CP, making string tension
+  $\sigma \sim \alpha_s \hbar c / r_{\rm conf}^2$ when the bow
+  becomes critical at $r = r_{\rm conf}$.
+
+\item \textbf{Alternating pre-stress as the CPP picture of $\sigma$
+  (established):}
+  The inter-CP bonds alternate compressive and tensile
+  ($[-1,+1,-1,+1,\ldots]$), meaning the chain carries internal
+  stress even before external separation.  The string tension
+  $\sigma$ is the energy density of this pre-stressed alternating
+  configuration.  This connects the CPP chain architecture directly
+  to the field-theoretic picture of a colour-electric flux tube.
+
+\item \textbf{Central string breaking as a falsifiable prediction
+  (new):}
+  F\_diff $\to 0$ at the chain midpoint because quark and antiquark
+  terminus forces cancel maximally there.  The notebook predicts
+  $\sim 85\%$ central breaking probability, compared to the uniform
+  distribution expected from the QCD Schwinger mechanism.
+  Preferential central breaking means both daughter mesons have
+  similar mass --- a CPP prediction distinguishable from standard
+  QCD in high-statistics lattice studies of string breaking.
+\end{enumerate}
+
+The remaining step for a complete derivation is to express the
+bow\_factor $\sim \lP/r_{\rm chain}$ in terms of sea\_strength,
+giving $r_{\rm conf}$ and hence $\sigma$ from CPP primitives alone.
 \end{openprob}
 
 \begin{openprob}[Chiral condensate $\qqbar$ from ZBW dynamics]
