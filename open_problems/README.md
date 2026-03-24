@@ -39,6 +39,19 @@ final solution.
 
 ## Master Problem Table
 
+### OP-SR — Special and General Relativity (8 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SR-1](OP-SR/OP-SR-1_psr_reduction_formula.md) | Derive PSR reduction formula from 600-cell geometry | HIGH | OPEN |
+| [OP-SR-2](OP-SR/OP-SR-2_k_constant.md) | Derive $k$ from 600-cell Voronoi integral | HIGH | OPEN |
+| [OP-SR-3](OP-SR/OP-SR-3_ssv_definition.md) | SSV dimensional definition: scalar, vector, or tensor? | HIGH | OPEN |
+| [OP-SR-4](OP-SR/OP-SR-4_full_einstein_equations.md) | Full Einstein equations from CPP self-consistency | HIGH | OPEN |
+| [OP-SR-5](OP-SR/OP-SR-5_cosmological_constant.md) | Cosmological constant from vacuum DP Sea | MEDIUM | OPEN |
+| [OP-SR-6](OP-SR/OP-SR-6_big_bang.md) | Big Bang expansion rate from CP/GP density ratio | MEDIUM | OPEN |
+| [OP-SR-7](OP-SR/OP-SR-7_gp_exclusion.md) | GP Exclusion Principle — formal statement | MEDIUM | OPEN |
+| [OP-SR-8](OP-SR/OP-SR-8_equivalence_principle.md) | Equivalence of inertial and gravitational SSV | MEDIUM | OPEN |
+
 ### OP-QM — Quantum Mechanics Emergence (7 problems)
 
 | ID | Title | Priority | Status |
@@ -153,6 +166,7 @@ with current CPP tools, (c) highest leverage on downstream problems.
 | Series | Development log | Open problem IDs |
 |---|---|---|
 | QM (2040a–f, QM#1–7) | `series_QM/development_qm_series.md` | OP-QM-1 – OP-QM-7 |
+| SR/GR | `series_SR/development_sr_series.md` | OP-SR-1 – OP-SR-8 |
 | Electroweak | `series_electroweak/development_ew_series.md` | OP-EW-1 – OP-EW-6 |
 | Strong | `series_strong/development_strong_series.md` | OP-SS-1 – OP-SS-10 |
 | Foundations | `series_foundations/` | OP-SD-1 – OP-SD-5 |
