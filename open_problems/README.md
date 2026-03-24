@@ -39,6 +39,17 @@ final solution.
 
 ## Master Problem Table
 
+### OP-SM — Standard Model Unification (6 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SM-1](OP-SM/OP-SM-1_k_constant_derivation.md) | Derive $k = 0.0185$ from 600-cell first principles | HIGHEST | ✅ SOLVED |
+| [OP-SM-2](OP-SM/OP-SM-2_k_vs_sea_strength.md) | Reconcile $k = 0.0185$ with sea\_strength $= 0.185$ | HIGH | ✅ SOLVED |
+| [OP-SM-3](OP-SM/OP-SM-3_epsilon_correction.md) | Derive $\varepsilon = -0.145$ exactly from lattice | HIGH | OPEN |
+| [OP-SM-4](OP-SM/OP-SM-4_capotauro_mechanism.md) | Formalise Capotauro mechanism (CP violation, matter asymmetry) | HIGH | OPEN |
+| [OP-SM-5](OP-SM/OP-SM-5_pmns_mixing_angles.md) | Prove PMNS mixing angles from exact subgroup overlaps | HIGH | OPEN |
+| [OP-SM-6](OP-SM/OP-SM-6_cosmological_constant.md) | Cosmological constant from DP Sea cancellation | MEDIUM | PARTIAL |
+
 ### OP-SR — Special and General Relativity (8 problems)
 
 | ID | Title | Priority | Status |
@@ -137,7 +148,9 @@ OP-SS-1 (M_q) ──► OP-SS-3 (chiral) ───────► OP-G-1
               └── OP-SS-2 (generations) ───► OP-G-1
 OP-SS-8 (μ_N) ─────────────────────────────► OP-G-2
 OP-EW-1 (η)   ──► OP-EW-2 (masses) ────────► OP-G-2
-OP-QM-5, QM-6 (predictions) ────────────────► experimental tests
+OP-SM-1 (k) ───► OP-SM-2 (k vs sea_str) ─────────────────────► OP-SS-1, OP-EW-1
+OP-SM-4 (Capotauro) ──► OP-SM-5 (PMNS) ─────────────────────► OP-G-1
+OP-SM-6 (Λ) ─────────────────────────────────────────────────► OP-SR-5
 ```
 
 ---
@@ -169,6 +182,7 @@ with current CPP tools, (c) highest leverage on downstream problems.
 | SR/GR | `series_SR/development_sr_series.md` | OP-SR-1 – OP-SR-8 |
 | Electroweak | `series_electroweak/development_ew_series.md` | OP-EW-1 – OP-EW-6 |
 | Strong | `series_strong/development_strong_series.md` | OP-SS-1 – OP-SS-10 |
+| 600-cell SM emergence | `600-cell_standard_model_emergence/` | OP-SM-1 – OP-SM-6 |
 | Foundations | `series_foundations/` | OP-SD-1 – OP-SD-5 |
 | Nuclear | `series_nuclear/` (future) | OP-SS-10 feeds here |
-| Leptons | `series_leptons/` (future) | OP-SS-1, OP-QM-3, OP-G-1 feed here |
+| Leptons | `series_leptons/` (future) | OP-SS-1, OP-SM-5, OP-G-1 feed here |
