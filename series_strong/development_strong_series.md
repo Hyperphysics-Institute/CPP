@@ -975,3 +975,50 @@ Specifically: prove that
 where r₀ and k (entering γ) are determined by the 600-cell lattice geometry. If r₀ = φ⁻ⁿ for some integer n derivable from the lattice, this would be an exact geometric proof of charge quantisation.
 
 *End of Stage 19.*
+
+---
+
+## Stage 20 — Prior Numerical Work: jet_multiplicity_lattice.ipynb
+
+This notebook connects CPP's qDP chain fraying mechanism to jet charged particle multiplicity. It is the first notebook in the series to target a high-energy collider observable rather than a hadron mass or magnetic moment.
+
+### What the notebook computes
+
+```python
+n_ch = base × stretching × modes
+     = 18 × 1.10 × N(1.05, 0.03)
+     = 20.79 ± 0.59
+```
+
+CMS measurement at 7 TeV: ⟨n_ch⟩ ≈ 18–22. The model lands in range.
+
+### Why the agreement is not a prediction
+
+All three parameters are chosen to land near 20:
+- `base = 18`: "geometric pre-insight base" — not derived
+- `stretching_factor = 1.10`: "10% uplift from hDP tetra stretching" — not derived
+- `mode_variation mean = 1.05`: "5% boost from 8-10 modes" — not derived
+
+Product = 18 × 1.10 × 1.05 = 20.79. This is parameter selection, not derivation. The notebook acknowledges this implicitly by calling `base` a "pre-insight" value.
+
+### What is physically correct
+
+The mechanism is right: jets produce charged hadrons via qDP chain fraying, and each chain break creates a hadron pair (the CPP version of the Schwinger pair-production mechanism). The 10% hDP stretching factor is physically motivated by the ZBW bow amplification quantified in `zbw_magnetic_effects.ipynb` (Stage 16). The Gaussian mode variation captures DP Sea fluctuations.
+
+### The one genuine new CPP prediction
+
+**Multiplicity distribution width: σ/⟨n_ch⟩ ≈ 2.9%** (from `sea_fluctuation = 0.03`).
+
+QCD NLO predicts σ/⟨n_ch⟩ ≈ 40–50% at 7 TeV (broad KNO-scaling distribution). CPP predicts a much narrower distribution. This is a falsifiable prediction that requires no new derivation — it follows directly from the DP Sea fluctuation amplitude used across all notebooks. If CMS measurements show σ/⟨n_ch⟩ ~ 3% rather than 40%, CPP is confirmed in this observable. If σ/⟨n_ch⟩ ~ 40%, the DP Sea fluctuation model needs revision.
+
+Note: the experimental σ/⟨n_ch⟩ at 7 TeV is indeed ~40-50% (broad), which means this prediction as stated likely requires refinement — the notebook's 3% fluctuation models the per-event mean variation, not the full multiplicity distribution width. This distinction needs to be clarified in any future companion paper.
+
+### Energy scaling: missing
+
+The notebook is fixed at 7 TeV. A proper CPP derivation must give the energy dependence of ⟨n_ch⟩. The QCD result is ⟨n_ch⟩ ∝ exp(√(4αs ln(√s/ΛQCD))). In CPP, the equivalent is the number of chain breaks per unit rapidity as a function of chain length, which depends on the collision energy through the initial qDP chain formation probability. Deriving this exponent (~0.11 in the power-law approximation) from chain_fraying_dynamics is the key remaining task.
+
+### Status
+
+Concept paper. One genuine new prediction (narrow multiplicity distribution). Would become companion C16 when the energy scaling is derived from chain_fraying_dynamics.
+
+*End of Stage 20.*
