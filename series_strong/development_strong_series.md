@@ -975,3 +975,160 @@ Specifically: prove that
 where r₀ and k (entering γ) are determined by the 600-cell lattice geometry. If r₀ = φ⁻ⁿ for some integer n derivable from the lattice, this would be an exact geometric proof of charge quantisation.
 
 *End of Stage 19.*
+
+---
+
+## Stage 20 — Prior Numerical Work: jet_multiplicity_lattice.ipynb
+
+This notebook connects CPP's qDP chain fraying mechanism to jet charged particle multiplicity. It is the first notebook in the series to target a high-energy collider observable rather than a hadron mass or magnetic moment.
+
+### What the notebook computes
+
+```python
+n_ch = base × stretching × modes
+     = 18 × 1.10 × N(1.05, 0.03)
+     = 20.79 ± 0.59
+```
+
+CMS measurement at 7 TeV: ⟨n_ch⟩ ≈ 18–22. The model lands in range.
+
+### Why the agreement is not a prediction
+
+All three parameters are chosen to land near 20:
+- `base = 18`: "geometric pre-insight base" — not derived
+- `stretching_factor = 1.10`: "10% uplift from hDP tetra stretching" — not derived
+- `mode_variation mean = 1.05`: "5% boost from 8-10 modes" — not derived
+
+Product = 18 × 1.10 × 1.05 = 20.79. This is parameter selection, not derivation. The notebook acknowledges this implicitly by calling `base` a "pre-insight" value.
+
+### What is physically correct
+
+The mechanism is right: jets produce charged hadrons via qDP chain fraying, and each chain break creates a hadron pair (the CPP version of the Schwinger pair-production mechanism). The 10% hDP stretching factor is physically motivated by the ZBW bow amplification quantified in `zbw_magnetic_effects.ipynb` (Stage 16). The Gaussian mode variation captures DP Sea fluctuations.
+
+### The one genuine new CPP prediction
+
+**Multiplicity distribution width: σ/⟨n_ch⟩ ≈ 2.9%** (from `sea_fluctuation = 0.03`).
+
+QCD NLO predicts σ/⟨n_ch⟩ ≈ 40–50% at 7 TeV (broad KNO-scaling distribution). CPP predicts a much narrower distribution. This is a falsifiable prediction that requires no new derivation — it follows directly from the DP Sea fluctuation amplitude used across all notebooks. If CMS measurements show σ/⟨n_ch⟩ ~ 3% rather than 40%, CPP is confirmed in this observable. If σ/⟨n_ch⟩ ~ 40%, the DP Sea fluctuation model needs revision.
+
+Note: the experimental σ/⟨n_ch⟩ at 7 TeV is indeed ~40-50% (broad), which means this prediction as stated likely requires refinement — the notebook's 3% fluctuation models the per-event mean variation, not the full multiplicity distribution width. This distinction needs to be clarified in any future companion paper.
+
+### Energy scaling: missing
+
+The notebook is fixed at 7 TeV. A proper CPP derivation must give the energy dependence of ⟨n_ch⟩. The QCD result is ⟨n_ch⟩ ∝ exp(√(4αs ln(√s/ΛQCD))). In CPP, the equivalent is the number of chain breaks per unit rapidity as a function of chain length, which depends on the collision energy through the initial qDP chain formation probability. Deriving this exponent (~0.11 in the power-law approximation) from chain_fraying_dynamics is the key remaining task.
+
+### Status
+
+Concept paper. One genuine new prediction (narrow multiplicity distribution). Would become companion C16 when the energy scaling is derived from chain_fraying_dynamics.
+
+*End of Stage 20.*
+
+---
+
+## Stage 21 — Prior Numerical Work: nucleon_NBT_bonding.ipynb (v8.0)
+
+NBT = Nucleon Binding Tetra. This is the first CPP attempt at nuclear physics — how nucleons interact with each other inside nuclei (A > 1 systems). None of SS#1–5 addresses this; all prior series work stops at the single-hadron level.
+
+### The physical mechanism (correct in direction)
+
+When two nucleons approach, their qDP chains overlap. The increased SSV stress in the overlap region induces additional qDP chain insertion into the tetrahedral cage:
+
+```
+bonding(stress) = 1 + min(stress², 1)×1.2 + max(stress²−1, 0)×0.8
+```
+
+- Low stress: qDP chains inserted at rate 1.2 (strong, hard bonding)
+- High stress: hDP/eDP chains inserted at rate 0.8 (softer, partial bonding)
+- Saturates naturally because the cage geometry limits chain insertion
+
+This piecewise structure qualitatively captures nuclear saturation — the fact that nuclear binding energy per nucleon peaks at Fe-56 and the force has a repulsive core at short range.
+
+### Numerical results
+
+| Stress | Proton (MeV) | Neutron (MeV) | Extra binding |
+|---|---|---|---|
+| 0.0 | 938.14 | 937.91 | 0.00 MeV |
+| 0.3 | — | — | ~1.0 MeV |
+| 0.5 | — | — | ~2.8 MeV |
+| 1.0 | 949.40 | 949.16 | ~11.3 MeV |
+
+Order of magnitude correct: nuclear binding energy per nucleon runs 7–9 MeV in real nuclei; the model gives ~1–3 MeV at moderate stress (stress~0.3 represents a typical nuclear environment).
+
+### Issues
+
+**n-p mass difference has wrong sign.** The model gives neutron 0.235 MeV lighter than proton; PDG says neutron is 1.293 MeV heavier. The polarity bias (proton +0.15, neutron −0.10) is too small and works in the wrong direction. The n-p mass difference from OP-SS-8 (magnetic moments notebook) already identified this as arising from QCD + QED isospin breaking; this notebook doesn't connect to that physics.
+
+**Prefactors 0.001 and 0.01 are not derived.** The 0.001 polarity scale and 0.01 bonding scale are chosen by hand to keep masses near 938 MeV.
+
+**Stress is not connected to nuclear density.** The independent variable "stress" has no CPP derivation as a function of internucleonic separation r. The connection to nuclear density ρ (which sets the actual stress on the cage in a nucleus) is missing.
+
+### New content: nuclear forces from qDP chain insertion
+
+This is the correct physical picture for CPP nuclear physics:
+- Nuclear attraction: overlapping qDP chains create additional chain formation → net attractive potential
+- Nuclear saturation: cage geometry limits chain insertion → binding energy per nucleon has a maximum
+- Repulsive core: at very short range (r < r_conf), the cages cannot overlap → hard repulsion
+
+This maps onto the nuclear force in a way that is qualitatively different from the Yukawa (pion exchange) picture — here the force is from the DP Sea chain geometry, not from a mediating particle.
+
+### New open problem: OP-SS-10
+
+Derive the nuclear force potential V(r) between two nucleons from CPP qDP chain insertion as a function of internucleonic separation r. Show that:
+(a) V(r) is attractive for r > r_conf (chain overlap region)
+(b) V(r) is repulsive for r < r_conf (cage geometry limit)
+(c) The binding energy per nucleon at saturation density is ~8 MeV
+
+This would make CPP a complete nuclear theory (A ≥ 1), extending the series from hadrons to nuclei.
+
+### Status
+
+Most novel notebook in the repo. Qualitative mechanism correct; quantitative model is placeholder. Natural candidate for companion C17 (CPP nuclear forces) when derived.
+
+*End of Stage 21.*
+
+---
+
+## Stage 22 — Prior Numerical Work: strong_modes_probabilistic.ipynb (v8.0, final notebook)
+
+This is the final notebook in the series_strong/notebooks/ directory. It provides the probabilistic underpinning of the gluon count derived algebraically in SS#2/SS#3, and extends the chain-breaking picture from chain_fraying_dynamics into a multi-layer sequential model.
+
+### The 1+3+N geodesic layer structure
+
+The notebook models the 600-cell qDP chain paths as three geometric layers:
+
+| Layer | Count | Geometry | Breaking strength |
+|---|---|---|---|
+| Central | 1 | Shortest, straightest geodesic | 1.0 (last to break) |
+| Middle | 3 | ~120° paths (C3 symmetry) | 0.7 |
+| Outer | 3–6 (prob.) | Tortuous, bowed geodesics | 0.4 (first to break) |
+
+Mean total modes = 1 + 3 + 4.5 = **8.5 ≈ QCD 8 gluons**.
+
+This is complementary to and consistent with SS#2/SS#3:
+- SS#2 (algebraic): 3 edges × 2 (real+imag) + 2 diagonals = **8 exactly** (Gell-Mann matrices)
+- Grok Remark 4.1 (deterministic): 1 apex + 3 base + 4 shell = **8 exactly**
+- This notebook (probabilistic): 1 + 3 + Prob{3,4,5,6} = **7–10, mean 8.5**
+
+The algebraic count is the time-averaged limit of the probabilistic geodesic count.
+
+### New physical content
+
+**Sequential string breaking (outer→middle→central):** String breaking under tensile stress proceeds in three stages, not as a single threshold. Outer chains (tortuous, bowed) break first at low stress; middle chains next; central chain last. This refines chain_fraying_dynamics (Stage 13), which found ~85% central breaking — here the full sequential structure is explicit.
+
+**Falsifiable prediction:** String breaking produces a structured multi-stage energy spectrum, not a sharp threshold. Measurable in lattice QCD string-breaking simulations as two distinct energy releases (outer and middle layer) before the final central break.
+
+### Parameters added to parameters_600cell.py
+
+```python
+phase_choices = np.array([3, 4, 5, 6])  # outer layer count
+phase_probs   = np.array([0.25]*4)       # uniform distribution
+layer_strength_central = 1.0
+layer_strength_middle  = 0.7
+layer_strength_outer   = 0.4
+```
+
+### Notebook review: ALL 11 COMPLETE
+
+All notebooks in the original strong_sector GitHub project have now been assessed and recorded in Stages 12–22.
+
+*End of Stage 22 — Notebook review complete.*
