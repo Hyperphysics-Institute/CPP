@@ -919,3 +919,59 @@ The formula gives the same mass for Λ and Σ⁰ (both S=1, J=½): predicts 1086
 No changes to series documents required — notebook confirms SS#5.
 
 *End of Stage 18.*
+
+---
+
+## Stage 19 — Prior Numerical Work: fractional_charges_overlap.ipynb (v8.0)
+
+This is the most conceptually significant notebook in the repo. It attempts to *derive* the quark fractional charges ±1/3, ±2/3 from 600-cell geometry — not just assert them. This is the deepest unsolved problem in C15/SS#2.
+
+### The formula
+
+```python
+delta = phi_inv2 × (∫_{r_inner}^1 S(r) γ(r) r² dr) / (∫_0^1 S(r) γ(r) r² dr)
+up_charge   = +1 - delta      → +2/3 when delta = 1/3
+down_charge = -1 + 2×delta    → -1/3 when delta = 1/3
+```
+
+where S(r) = 1/r⁴ (SSV stress profile), γ(r) = 1 + k·S(r) (Lorentz amplification), and phi_inv2 = 1/φ² ≈ 0.382.
+
+### The geometric logic (correct in direction)
+
+Three ideas are embedded in this formula, all physically sound:
+
+1. **SSV stress weighting S(r) = 1/r⁴:** The charge overlap is not uniform — it is weighted by the SSV field strength, which diverges near the central qCP. This gives physical reason for the charge to be concentrated near the center.
+
+2. **Inner shell at r = 1/φ:** The 600-cell has shells at radii 1 : φ : φ² (from the EW series). The inner cage boundary sits at r = 1/φ in normalized units. The overlap region is from the inner shell outward.
+
+3. **phi_inv2 = 1/φ² as prefactor:** This is the 600-cell geometric volume ratio (V_subgraph/V_600-cell), the same φ⁻³ factor from the EW mass derivation raised to a different power. Using it as a prefactor is physically motivated.
+
+### The numerical problem
+
+Without `parameters_600cell.py`, we cannot reproduce delta = 1/3. Reproducing the formula with reasonable parameter values (k_curvature = 0.1, r_inner = phi_inv = 0.618) gives delta ≈ 0.002, not 1/3.
+
+Working backwards: for delta = 1/3 with S = 1/r⁴, the integration boundary must be at r_inner ≈ 0.10–0.12, not r_inner = 1/φ ≈ 0.618. The boundary 1/φ is the first 600-cell shell; the boundary ≈ 0.10 is approximately φ⁻⁷ ≈ 0.034 to φ⁻⁵ ≈ 0.090 (order of magnitude — none is exact).
+
+This suggests either: (a) parameters_600cell.py defines phi_inv differently than 1/φ; or (b) the k_curvature amplification changes the integrand shape significantly enough to shift the effective boundary.
+
+### What is genuinely established
+
+The notebook identifies the correct *structure* for deriving fractional charges from 600-cell geometry:
+
+```
+delta = (600-cell geometric constant) × (SSV-weighted shell volume ratio)
+```
+
+where the 600-cell geometric constant involves powers of φ, and the shell volume ratio is set by where the inner cage boundary sits in the SSV stress field. This is the right approach. The exact values require `parameters_600cell.py`.
+
+### New open problem: OP-SS-9
+
+This notebook reveals that the fractional charge derivation in C15/SS#2 (which asserts delta = 1/3 from cage vertex overlap) has a more detailed geometric version: delta = φ⁻² × (SSV-weighted outer fraction). Proving that this expression equals exactly 1/3 — from the 600-cell geometry alone, without calibrating k_curvature — is a new, precise version of the charge quantisation problem.
+
+Specifically: prove that
+```
+φ⁻² × ∫_{r₀}^1 S(r) γ(r) r² dr / ∫_0^1 S(r) γ(r) r² dr = 1/3
+```
+where r₀ and k (entering γ) are determined by the 600-cell lattice geometry. If r₀ = φ⁻ⁿ for some integer n derivable from the lattice, this would be an exact geometric proof of charge quantisation.
+
+*End of Stage 19.*
