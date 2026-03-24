@@ -1,87 +1,71 @@
 # OP-SM-7: Derive K = 2/3 (Koide Relation) from CPP First Principles
 
-**Priority:** HIGH — empirically exact to 11 ppm; no CPP derivation exists  
-**Status:** OPEN — algebraic theorem (K=2/3 ↔ ρ=√2) proved; physical origin unknown  
-**Session evidence:** Lorentz-ZBW analysis, 24 March 2026  
+**Priority:** HIGH  
+**Status:** PARTIAL — K3 spectral theorem proved given two postulates (OP-SM-7a, 7b open)  
+**Session evidence:** K3 spectral theorem, 24 March 2026  
+**Theorem document:** `k3_spectral_theorem.tex`  
 **Last updated:** 24 March 2026
 
 ---
 
-## Statement
+## What Is Now Proved
 
-Prove from CPP dynamics that the three charged lepton masses satisfy:
+**Theorem K3 (24 March 2026):** Under Postulates ZBW-1 and H-1, the Koide
+relation $K = 2/3$ follows from the adjacency spectrum of the colour cage base
+graph $K_3$.
 
-$$K \equiv \frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e} + \sqrt{m_\mu} + \sqrt{m_\tau})^2} = \frac{2}{3}$$
+**The four-step proof:**
 
-exactly (observed to 11 ppm: $K_{\rm obs} = 0.66665909$).
+1. **K3 adjacency spectrum** (computed exactly):
+   $\lambda_{\max} = 2$ (bonding, once), $\lambda_{\min} = -1$ (antibonding, twice)
 
----
+2. **Spectral ratio → ρ:**
+   $\rho^2 = \lambda_{\max}/|\lambda_{\min}| = 2/1 = 2 \Rightarrow \rho = \sqrt{2}$
 
-## What Is Known
+3. **C3 + ρ = √2 → K = 2/3** (algebraic identity, proved 24 March 2026)
 
-**Algebraic theorem (proved this session):**
-In the parametrisation $m_i = \gamma_0(1 + \rho\cos\phi_i)^2 m_{\rm base}$
-with C3-symmetric phases $\phi_i = \theta + 2\pi i/3$:
+4. **Consequence:** $\Sigma m_i/(\Sigma\sqrt{m_i})^2 = 2/3$ exactly
 
-$$K = \frac{1 + \rho^2/2}{3} \implies K = \frac{2}{3} \Leftrightarrow \rho = \sqrt{2}$$
-
-This reduces the Koide problem to: **why does $\rho = \sqrt{2}$?**
-
-**Critical point structure:**
-At $(\rho, \theta) = (\sqrt{2}, 3\pi/4)$, the electron mode satisfies
-$(1 + \sqrt{2}\cos(3\pi/4)) = 0$, so $m_e = 0$. The electron is the
-lightest lepton because its ZBW mode is closest to this zero-mass
-critical point.
-
-**Phase observations (not derivations):**
-- $\theta_{\rm Koide} \approx (1-\delta)\arccos(-1/3) + \delta\pi$
-  to 0.19% ($\delta = 1/3$ from Theorem 1)
-- $\theta_{\rm Koide} \approx 3\pi/4 - (5/4)\,\text{sea}^2$
-  to 0.0016% (coefficient 5/4 is fitted, not derived)
+**Corollary:** Both charge quantisation ($\delta = 1/3$, Theorem 1) and
+the Koide formula ($K = 2/3$, Theorem K3) arise from the same K3 structure.
+$\delta = 1/3$ uses the combinatorial structure; $K = 2/3$ uses the spectral
+structure. The two deepest CPP lepton results share one geometric source.
 
 ---
 
-## Why This Is Hard
+## The Two Postulates (open sub-problems)
 
-The Koide formula $K = 2/3$ is exact to 11 ppm — one of the most
-precisely satisfied unexplained relations in particle physics.
-Any CPP derivation must explain:
+**OP-SM-7a — Postulate H-1:** Prove that the ZBW Hamiltonian on the colour
+cage base is $\hat{H}_{ZBW} = \hbar\omega_0 A_{K_3}$.
 
-1. Why the three lepton ZBW modes have the *specific* phase
-   separation $2\pi/3$ (C3 symmetry — this comes from the cage base,
-   but needs to be connected to the mass generation mechanism).
+Physical motivation: the ZBW orbital hops between colour vertices via SSV
+gradient interactions (the same mechanism giving the Gell-Mann generators).
+All three K3 edges are equivalent by C3 symmetry. A derivation from the CPP
+interaction rules would close this.
 
-2. Why the Lorentz modulation depth $\rho$ takes the value $\sqrt{2}$
-   and not some other number.
+**OP-SM-7b — Postulate ZBW-1:** Prove that lepton mass scales as squared ZBW
+amplitude: $m_i \propto |\psi_i|^2$.
 
-3. Why the ZBW energy of the electron mode is proportional to
-   $(1 + \sqrt{2}\cos\theta)^2$ rather than some other functional form.
+Physical motivation: each CP processes DI-bit flows at rate $\propto |\psi_i|^2$.
+Mass = stored ZBW energy $\propto$ DI-bit flow rate. This is the lepton-sector
+Born rule — likely derivable from OP-QM-1 (Born rule) specialised to the ZBW
+mass context.
+
+**OP-SM-7c — Phase θ:** Derive the Koide phase $\theta$ exactly from the SSV
+coupling. Currently: $\theta \approx 3\pi/4 - (5/4)\,\text{sea}^2$ to 0.0016%
+(coefficient 5/4 fitted, not derived).
 
 ---
 
-## Candidate Mechanisms
+## What Remains Open
 
-**A. Critical-point selection:**
-The system sits at the maximum $\rho$ consistent with all three modes
-having positive-definite mass. At $\rho = \sqrt{2}$ and $\theta$ slightly
-less than $3\pi/4$, the electron is marginally bound. This selects
-$\rho = \sqrt{2}$ as the stability boundary.
-
-**B. Holographic bound:**
-The $1/2$ in $(1 + \rho^2/2)/3 = 2/3$ may come from the Koide circle
-living on a 2-sphere surface (dimension 2, not 3), giving a factor of
-$2/(2+1) = 2/3$. The 600-cell's S³ geometry might enforce this.
-
-**C. ZBW phase averaging:**
-The $\rho^2/2$ comes from $\langle\cos^2\phi\rangle = 1/2$ over C3 angles.
-If the ZBW wavefunction samples all three modes equally, equipartition
-gives $K = 1/3 + (1/2)\rho^2/3$. Setting $\rho = \sqrt{2}$ gives $K = 2/3$.
-The question becomes: what forces $\rho = \sqrt{2}$?
+- Individual masses $m_\mu$, $m_\tau$ (need θ and scale A = √m_e)
+- OP-SM-7a, 7b, 7c (the two postulates and the phase)
 
 ---
 
 ## Feeds Into
 
-- OP-SM-5 (lepton mass derivation)  
-- Lepton series paper  
-- OP-G-1 (three generations — Koide connects generation structure to masses)
+- Lepton series paper (OP-SM-7a+7b close the derivation chain)
+- OP-G-1 (three generations — K3 structure connects generation count to Koide)
+- OP-QM-1 (Born rule — ZBW-1 is a special case of the Born rule)
