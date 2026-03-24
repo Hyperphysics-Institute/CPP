@@ -148,7 +148,26 @@ dp_sea_mass_fluct    = 0.008    # fractional (0.8%) DP Sea mass uncertainty
 # DI-bit density variations.
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 8.  MONTE CARLO DEFAULTS
+# 8.  PROBABILISTIC STRONG MODES (geodesic path structure)
+#     Source: strong_modes_probabilistic.ipynb (Stage 22)
+# ─────────────────────────────────────────────────────────────────────────────
+
+phase_choices = np.array([3, 4, 5, 6])
+# Number of outer geodesic paths in the third 600-cell layer.
+# Layer structure: 1 (central) + 3 (middle, ~120°) + third_layer.
+
+phase_probs = np.array([0.25, 0.25, 0.25, 0.25])
+# Equal probability for each outer count.
+# Mean third layer = 4.5 → total mean = 1 + 3 + 4.5 = 8.5 ≈ QCD 8 gluons.
+# The exactly-8 algebraic result (T^a = λ^a/2, SS#2) is the time-averaged
+# count; these parameters give the underlying probabilistic distribution.
+# Sequential breaking strengths (outer→middle→central):
+layer_strength_outer   = 0.4   # Tortuous + bowed geodesics — break first
+layer_strength_middle  = 0.7   # ~120° paths — intermediate
+layer_strength_central = 1.0   # Shortest, straightest — break last
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 9.  MONTE CARLO DEFAULTS
 # ─────────────────────────────────────────────────────────────────────────────
 
 n_events_default = 10_000
@@ -160,7 +179,7 @@ n_events_publication = 100_000
 # Use this for final runs before submission.
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 9.  QUARK MASSES (constituent and current)
+# 10.  QUARK MASSES (constituent and current)
 #     Source: SS#1 Table 1; PDG 2026 for current masses
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -181,7 +200,7 @@ CAGE_DEPTH = {'u': 0, 'd': 0, 's': 1, 'c': 2, 'b': 3, 't': 4}
 CHARGE     = {'u': +2/3, 'd': -1/3, 's': -1/3, 'c': +2/3, 'b': -1/3, 't': +2/3}
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 10. SELF-CONSISTENCY CHECKS
+# 11. SELF-CONSISTENCY CHECKS
 # ─────────────────────────────────────────────────────────────────────────────
 
 def verify_parameters():
