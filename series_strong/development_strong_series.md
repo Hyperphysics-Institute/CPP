@@ -1022,3 +1022,66 @@ The notebook is fixed at 7 TeV. A proper CPP derivation must give the energy dep
 Concept paper. One genuine new prediction (narrow multiplicity distribution). Would become companion C16 when the energy scaling is derived from chain_fraying_dynamics.
 
 *End of Stage 20.*
+
+---
+
+## Stage 21 — Prior Numerical Work: nucleon_NBT_bonding.ipynb (v8.0)
+
+NBT = Nucleon Binding Tetra. This is the first CPP attempt at nuclear physics — how nucleons interact with each other inside nuclei (A > 1 systems). None of SS#1–5 addresses this; all prior series work stops at the single-hadron level.
+
+### The physical mechanism (correct in direction)
+
+When two nucleons approach, their qDP chains overlap. The increased SSV stress in the overlap region induces additional qDP chain insertion into the tetrahedral cage:
+
+```
+bonding(stress) = 1 + min(stress², 1)×1.2 + max(stress²−1, 0)×0.8
+```
+
+- Low stress: qDP chains inserted at rate 1.2 (strong, hard bonding)
+- High stress: hDP/eDP chains inserted at rate 0.8 (softer, partial bonding)
+- Saturates naturally because the cage geometry limits chain insertion
+
+This piecewise structure qualitatively captures nuclear saturation — the fact that nuclear binding energy per nucleon peaks at Fe-56 and the force has a repulsive core at short range.
+
+### Numerical results
+
+| Stress | Proton (MeV) | Neutron (MeV) | Extra binding |
+|---|---|---|---|
+| 0.0 | 938.14 | 937.91 | 0.00 MeV |
+| 0.3 | — | — | ~1.0 MeV |
+| 0.5 | — | — | ~2.8 MeV |
+| 1.0 | 949.40 | 949.16 | ~11.3 MeV |
+
+Order of magnitude correct: nuclear binding energy per nucleon runs 7–9 MeV in real nuclei; the model gives ~1–3 MeV at moderate stress (stress~0.3 represents a typical nuclear environment).
+
+### Issues
+
+**n-p mass difference has wrong sign.** The model gives neutron 0.235 MeV lighter than proton; PDG says neutron is 1.293 MeV heavier. The polarity bias (proton +0.15, neutron −0.10) is too small and works in the wrong direction. The n-p mass difference from OP-SS-8 (magnetic moments notebook) already identified this as arising from QCD + QED isospin breaking; this notebook doesn't connect to that physics.
+
+**Prefactors 0.001 and 0.01 are not derived.** The 0.001 polarity scale and 0.01 bonding scale are chosen by hand to keep masses near 938 MeV.
+
+**Stress is not connected to nuclear density.** The independent variable "stress" has no CPP derivation as a function of internucleonic separation r. The connection to nuclear density ρ (which sets the actual stress on the cage in a nucleus) is missing.
+
+### New content: nuclear forces from qDP chain insertion
+
+This is the correct physical picture for CPP nuclear physics:
+- Nuclear attraction: overlapping qDP chains create additional chain formation → net attractive potential
+- Nuclear saturation: cage geometry limits chain insertion → binding energy per nucleon has a maximum
+- Repulsive core: at very short range (r < r_conf), the cages cannot overlap → hard repulsion
+
+This maps onto the nuclear force in a way that is qualitatively different from the Yukawa (pion exchange) picture — here the force is from the DP Sea chain geometry, not from a mediating particle.
+
+### New open problem: OP-SS-10
+
+Derive the nuclear force potential V(r) between two nucleons from CPP qDP chain insertion as a function of internucleonic separation r. Show that:
+(a) V(r) is attractive for r > r_conf (chain overlap region)
+(b) V(r) is repulsive for r < r_conf (cage geometry limit)
+(c) The binding energy per nucleon at saturation density is ~8 MeV
+
+This would make CPP a complete nuclear theory (A ≥ 1), extending the series from hadrons to nuclei.
+
+### Status
+
+Most novel notebook in the repo. Qualitative mechanism correct; quantitative model is placeholder. Natural candidate for companion C17 (CPP nuclear forces) when derived.
+
+*End of Stage 21.*
