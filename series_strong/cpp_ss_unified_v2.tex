@@ -450,6 +450,30 @@ V(r) = -\frac{\as\hbar c}{r} + \sigma r,\quad
 \label{eq:cornell}
 \end{equation}
 
+\begin{remark}[ZBW perturbation to bowing and string breaking]
+\label{rem:zbw_bow}
+Prior numerical work in \texttt{zbw\_magnetic\_effects.ipynb}
+(CPP/series\_strong, January 2026) quantifies the secondary
+magnetic-like Lorentz forces from ZBW oscillations of qCP charges
+in the chain.  The key results:
+\begin{enumerate}
+\item ZBW Lorentz forces are perpendicular-dominant (y--z) with
+  negligible net axial component, confirming that primary
+  confinement is electrostatic.
+\item ZBW forces amplify the electrostatic bow by $\sim 5$--$10\%$
+  at the chain ends.  This shifts the effective bow amplitude from
+  $\text{bow} = 0.15\,r_{\rm chain}$ to $\sim 0.157$--$0.165$,
+  a minor correction to $\sigma$.
+\item ZBW forces peak at the chain ends (end-heavy distribution),
+  slightly reducing the dominance of central string breaking from
+  $\sim 85\%$ (electrostatic only) to $\sim 80\%$.
+\item For spin-polarised or high-spin mesons, the helical ZBW phase
+  pattern produces a measurable asymmetry in jet fragmentation ---
+  the \emph{helical jet signature} (listed in
+  Table~\ref{tab:predictions}), detectable at LHCb.
+\end{enumerate}
+\end{remark}
+
 \subsection{$\beta$-function from CPP Casimirs}
 
 \begin{theorem}[$\beta_0$ from tetrahedral cage Casimirs, SS\#4]
@@ -709,6 +733,8 @@ Glueball mass from cage loop
   & open & $\sim1.5\text{--}2$~GeV & Open (\ref{op:glueball}) \\
 $\Lambda_{\rm QCD}$ from PSR saturation
   & open & $0.218$~GeV & Open (\ref{op:lambda_psr}) \\
+Nucleon magnetic moments from ZBW
+  & open (mech.\ identified) & $\mu_p=+2.793$, $\mu_n=-1.913\,\mu_N$ & Open (\ref{op:mag_moments}) \\
 \end{longtable}
 
 %=====================================================================
@@ -725,6 +751,78 @@ sea\_strength $= 0.185$, the 600-cell geometry, and $n_{\rm layers}$
 would convert the quark mass spectrum from a set of inputs to a
 single derived prediction.  The SSV compression formula (EW
 \#2~\citep{cpp_ew2}) provides the template.
+
+Two prior numerical studies (\texttt{nested\_cage\_masses.ipynb},
+v8.0 and \texttt{cpp\_benchmark.ipynb}, v12) establish the
+following partial results:
+
+\begin{enumerate}
+\item \textbf{The volume scaling $\phig^{3(l-1)}$ is the
+  multiplicative mechanism (established, \texttt{cpp\_benchmark}):}
+  Each additional cage layer contributes an energy proportional to
+  the 3D volume of the shell, which scales as
+  $V_l \propto \phig^{3(l-1)}$ ($\phig^3 \approx 4.236$).  This
+  gives the multiplicative growth the matter sector requires:
+  successive cage layers contribute $1\times$, $4.2\times$,
+  $17.9\times$, $76\times$ the base energy, spanning two orders
+  of magnitude over four layers.  This is the mechanism identified
+  as missing from the simpler $\int S\,dV$ integral approach of
+  \texttt{nested\_cage\_masses}.
+
+\item \textbf{The DP binding energy hierarchy (established,
+  \texttt{cpp\_benchmark}):}
+  The three DP~Sea particle types have binding energies in exact
+  ratios:
+  \begin{equation}
+  E_{\eCP} : E_{\hDP} : E_{\qCP}
+  = 1 : \sqrt{3} : 3
+  \approx 88 : 152 : 264\ \text{MeV}.
+  \label{eq:dp_energies}
+  \end{equation}
+  Inner cage layers are qDP-dominated (higher energy per DP);
+  outer layers shift toward hDP-dominated (lower energy per DP).
+  This composition gradient partially offsets the $\phig^{3(l-1)}$
+  volume growth, giving a milder effective mass hierarchy than
+  pure volume scaling alone.
+
+\item \textbf{The decay constant $\tau = 1/\ln(\phig^2)$
+  (derived, \texttt{cpp\_benchmark}):}
+  The qDP-to-hDP composition shift across layers follows an
+  exponential with decay constant $\tau$ derivable from the SSV
+  integral over $\phig$-nested shells:
+  \begin{equation}
+  \tau = \frac{1}{\ln \phig^2} \approx 1.039.
+  \label{eq:tau}
+  \end{equation}
+  This is a first-principles result requiring no free parameter.
+
+\item \textbf{The inner SSV mechanism for $m_u < m_d$
+  (established, \texttt{nested\_cage\_masses}):}
+  The bare up quark's central $+$qCP creates stronger SSV stress
+  at the ZBW orbital radius, reducing the hDP overlap to
+  $\delta_{\rm up} \approx 0.95 \times \frac{1}{3}$ versus
+  $\delta_{\rm down} \approx \frac{1}{3}$ for the down quark.
+  The direction $m_u < m_d$ is geometric, not fitted.
+
+\item \textbf{The open calibration problem:}
+  With consistent MeV units and $\phig^{3(l-1)}$ volume scaling,
+  the formula gives $M_{\rm strange} \approx 223$~MeV (PDG:
+  93.5~MeV, factor of 2 off), $M_{\rm charm} \approx 1052$~MeV
+  (PDG: 1273~MeV, 17\% off), $M_{\rm bottom} \approx 4350$~MeV
+  (PDG: 4183~MeV, 4\% off).  Bottom and charm are close; strange,
+  up, and top require further refinement.  The top quark mass
+  ($M_{\rm top} \approx 17{,}720$~MeV vs.\ PDG 172{,}570~MeV)
+  indicates the $\phig^{3(l-1)}$ volume scaling is insufficient
+  for the fourth cage and a different mechanism (the C$_{60}$
+  fullerene shell) is needed.
+\end{enumerate}
+
+The complete formula for OP-SS-1 must: (a)~produce correct mass
+ratios across all six quarks from a single geometric expression;
+(b)~derive $m_u < m_d$ from the inner SSV mechanism; (c)~require
+no free parameters beyond sea\_strength and 600-cell geometry;
+(d)~account for the anomalously large top mass through the
+C$_{60}$ fourth-cage mechanism.
 \end{openprob}
 
 \begin{openprob}[String tension $\sigma$ from sea\_strength]
@@ -735,6 +833,55 @@ qDP chain geometry --- consistently with the EW boson mass
 calibration (same sea\_strength, same $\phig^{-3}$ factor) ---
 would close the strong-sector parameter space and unify the quark
 mass and boson mass calibrations.
+
+Prior numerical work in \texttt{chain\_fraying\_dynamics.ipynb}
+(CPP/series\_strong, January 2026) establishes the microscopic
+picture and four partial results:
+
+\begin{enumerate}
+\item \textbf{The self-consistent relation (established):}
+  C14~\citep{c14} gives $r_{\rm conf} = \sqrt{\alpha_s \hbar c /
+  \sigma}$, and independently $\sigma = \alpha_s \hbar c /
+  r_{\rm conf}^2$.  Together these are satisfied self-consistently
+  at $r_{\rm conf} \approx 0.161$~fm and $\sigma = 0.900$~GeV/fm.
+  This confirms that $\sigma$ and $r_{\rm conf}$ are not independent
+  inputs: one determines the other.  Deriving either from
+  sea\_strength closes both.
+
+\item \textbf{Bow rigidity as the confinement mechanism (established):}
+  The qDP chain bows transversely under separation rather than
+  collapsing.  The transverse bow increases the effective inter-CP
+  separation ($r_{\rm eff} = r \cdot r_{\rm modifier}$), costing
+  energy proportional to chain extension.  This is the CPP microscopic
+  origin of $V \propto r$: the linear potential is the elastic energy
+  of the bowed chain.  The bow amplitude is $\sim (\lP/r_{\rm chain})
+  \cdot r_{\rm chain}$ per CP, making string tension
+  $\sigma \sim \alpha_s \hbar c / r_{\rm conf}^2$ when the bow
+  becomes critical at $r = r_{\rm conf}$.
+
+\item \textbf{Alternating pre-stress as the CPP picture of $\sigma$
+  (established):}
+  The inter-CP bonds alternate compressive and tensile
+  ($[-1,+1,-1,+1,\ldots]$), meaning the chain carries internal
+  stress even before external separation.  The string tension
+  $\sigma$ is the energy density of this pre-stressed alternating
+  configuration.  This connects the CPP chain architecture directly
+  to the field-theoretic picture of a colour-electric flux tube.
+
+\item \textbf{Central string breaking as a falsifiable prediction
+  (new):}
+  F\_diff $\to 0$ at the chain midpoint because quark and antiquark
+  terminus forces cancel maximally there.  The notebook predicts
+  $\sim 85\%$ central breaking probability, compared to the uniform
+  distribution expected from the QCD Schwinger mechanism.
+  Preferential central breaking means both daughter mesons have
+  similar mass --- a CPP prediction distinguishable from standard
+  QCD in high-statistics lattice studies of string breaking.
+\end{enumerate}
+
+The remaining step for a complete derivation is to express the
+bow\_factor $\sim \lP/r_{\rm chain}$ in terms of sea\_strength,
+giving $r_{\rm conf}$ and hence $\sigma$ from CPP primitives alone.
 \end{openprob}
 
 \begin{openprob}[Chiral condensate $\qqbar$ from ZBW dynamics]
@@ -787,6 +934,55 @@ using the PDG value as input --- would constitute a first-principles
 derivation of the QCD confinement scale.
 \end{openprob}
 
+\begin{openprob}[Nucleon magnetic moments from ZBW quark currents]
+\label{op:mag_moments}
+The anomalous magnetic moments of the proton ($\mu_p = +2.7928\,\mu_N$)
+and neutron ($\mu_n = -1.9130\,\mu_N$) arise in standard nuclear
+physics from quark orbital and spin contributions.  In the SU(6)
+constituent quark model:
+\begin{equation}
+\mu_p = \frac{4\mu_u - \mu_d}{3}, \qquad
+\mu_n = \frac{4\mu_d - \mu_u}{3},
+\label{eq:gmo_magnetic}
+\end{equation}
+where $\mu_q = e_q / (2 M_q)$ at leading order.
+
+In CPP, the magnetic moment of each constituent quark arises from its
+ZBW orbital current: $\mu_q \propto (e_q / 2 M_q) \cdot
+\langle\psi|\hat{L} + 2\hat{S}|\psi\rangle_{\rm ZBW}$, where the
+expectation value is taken over the ZBW orbital wavefunction in the
+tetrahedral cage.
+
+Prior numerical work in \texttt{magnetic\_moments\_zbw.ipynb}
+(CPP/series\_strong, v8.0) establishes the following:
+\begin{enumerate}
+\item \textbf{The mechanism (correct):} The proton's anomalous moment
+  exceeds the neutron's (in magnitude) because the proton's two $u$
+  quarks ($+2/3$ charge) produce a larger ZBW orbital current than
+  the neutron's two $d$ quarks ($-1/3$ charge).  The
+  \texttt{polarity\_bias} ($+0.15$ for proton, $-0.10$ for neutron)
+  in the notebook captures this charge-weighted composition
+  difference.
+\item \textbf{The Dirac baseline (correct):} The base $g/2 = 1.0$
+  is the point-particle Dirac moment; the anomaly $\kappa$ from ZBW
+  dynamics is the CPP prediction.
+\item \textbf{The numerical values (not yet derived):}
+  The notebook's parameters (\texttt{anomaly\_base} $= 0.792$,
+  \texttt{suppression} $= 0.98$) are fitted, not derived.  With
+  these values the formula gives $\mu_p = +1.942$ and $\mu_n =
+  -1.678\,\mu_N$, errors of $30\%$ and $12\%$ respectively.
+  The notebook overstates agreement via a misleading metric.
+\end{enumerate}
+
+The CPP derivation requires: (a)~computing
+$\langle\hat{L}+2\hat{S}\rangle_{\rm ZBW}$ for each quark flavour
+from its cage geometry; (b)~applying equation~\eqref{eq:gmo_magnetic}
+with CPP-derived $\mu_u$ and $\mu_d$.  Correctly deriving both
+nucleon magnetic moments from the single ZBW orbital wavefunction
+on the tetrahedral cage would be a strong confirmation of the cage
+architecture.
+\end{openprob}
+
 %=====================================================================
 \section{Consolidated Predictions}
 \label{sec:predictions}
@@ -828,6 +1024,12 @@ $\Lambda_{\rm QCD}$ from PSR saturation
   (CPP order-of-magnitude; RGE self-consistent value: Open
   Problem~\ref{op:lambda_psr})
   & PDG $0.218$~GeV; factor-of-6 off at 1-loop \\[4pt]
+Helical fragmentation in polarized high-spin mesons
+  & ZBW Lorentz forces create helical bowing in spin-aligned chains;
+  distinct fragmentation pattern vs.\ unpolarized case
+  ($\sim 5\%$ asymmetry)
+  & LHCb polarized $B$-meson decay; no standard QCD prediction of
+  this specific helical asymmetry \\[4pt]
 Non-log $\as$ running at Planck scale
   & Lattice discreteness correction to RGE
   & Future Planck-scale collider \\[4pt]
