@@ -39,6 +39,18 @@ final solution.
 
 ## Master Problem Table
 
+### OP-QM — Quantum Mechanics Emergence (7 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-QM-1](OP-QM/OP-QM-1_born_rule.md) | Born rule: why $\|\psi\|^2$ from ZBW dynamics | HIGHEST | OPEN |
+| [OP-QM-2](OP-QM/OP-QM-2_schrodinger_derivation.md) | Schrödinger equation from PCD discrete updates | HIGH | OPEN |
+| [OP-QM-3](OP-QM/OP-QM-3_spin_pauli_exclusion.md) | Spin-½ and Pauli exclusion from cage geometry | HIGH | OPEN |
+| [OP-QM-4](OP-QM/OP-QM-4_decoherence_timescale.md) | Classical-quantum transition timescale | MEDIUM | OPEN |
+| [OP-QM-5](OP-QM/OP-QM-5_entanglement_threshold.md) | Entanglement decoherence at $\sim 10^{15}$~eV | MEDIUM | OPEN |
+| [OP-QM-6](OP-QM/OP-QM-6_discrete_spectra.md) | Discrete spectra deviations at $\sim 10^{10}$~Hz | MEDIUM | OPEN |
+| [OP-QM-7](OP-QM/OP-QM-7_qft_second_quantization.md) | QFT second quantization from multi-CP modes | MEDIUM | OPEN |
+
 ### OP-SS — Strong Sector (10 problems)
 
 | ID | Title | Priority | Status |
@@ -87,19 +99,32 @@ final solution.
 ## Dependency Graph
 
 ```
-OP-SS-9 (δ=1/3)  ──────────────────────────────────────────► OP-G-2
-OP-SS-5 (σ)  ────► OP-SS-7 (Λ_QCD) ──────────────────────► OP-G-2
-                ├── OP-SS-10 (nuclear)
-                └── OP-SS-6 (glueball)
-OP-SS-1 (M_q) ───► OP-SS-3 (chiral) ──────────────────────► OP-G-1
-              └──► OP-SS-2 (generations) ──────────────────► OP-G-1
-OP-SS-8 (μ_N) ──────────────────────────────────────────────► OP-G-2
-OP-SS-4 (β₁)  ──────────────────────────────────────────────► OP-G-2
-
-OP-EW-1 (η)   ──────────────────────────────────────────────► OP-G-2
-OP-EW-2 (masses) ──► OP-EW-4 (ratios) ─────────────────────► OP-G-2
-
-OP-SD-1 (K₀)  ──► OP-SD-2 (interp.) ──► OP-SD-3 (A₅, A₃)
+OP-SD-1 (K₀) ──► OP-SD-2 (interp.) ──► OP-SD-3 (A₅, A₃)
+                                              │
+                                              ▼
+OP-SD-1 ─────────────────────────────► OP-QM-1 (Born rule) ◄── OP-SD-2
+                                              │
+                              ┌───────────────┤
+                              ▼               ▼
+                        OP-QM-4           OP-QM-2 (Schrödinger)
+                        (decoherence)         │
+                                              ▼
+                                        OP-QM-3 (spin-½, Pauli)
+                                              │
+                                    ┌─────────┤
+                                    ▼         ▼
+                              Lepton      OP-QM-7 (QFT)
+                              series          │
+                                              ▼
+OP-SS-9 (δ=1/3) ─────────────────────► OP-G-2 (full SM)
+OP-SS-5 (σ) ──► OP-SS-7 (Λ_QCD) ──────────► OP-G-2
+            └── OP-SS-10 (nuclear)
+            └── OP-SS-6 (glueball)
+OP-SS-1 (M_q) ──► OP-SS-3 (chiral) ───────► OP-G-1
+              └── OP-SS-2 (generations) ───► OP-G-1
+OP-SS-8 (μ_N) ─────────────────────────────► OP-G-2
+OP-EW-1 (η)   ──► OP-EW-2 (masses) ────────► OP-G-2
+OP-QM-5, QM-6 (predictions) ────────────────► experimental tests
 ```
 
 ---
@@ -127,9 +152,9 @@ with current CPP tools, (c) highest leverage on downstream problems.
 
 | Series | Development log | Open problem IDs |
 |---|---|---|
-| QM (2040a–f) | `series_QM/development_qm_series.md` | (to be catalogued) |
+| QM (2040a–f, QM#1–7) | `series_QM/development_qm_series.md` | OP-QM-1 – OP-QM-7 |
 | Electroweak | `series_electroweak/development_ew_series.md` | OP-EW-1 – OP-EW-6 |
 | Strong | `series_strong/development_strong_series.md` | OP-SS-1 – OP-SS-10 |
 | Foundations | `series_foundations/` | OP-SD-1 – OP-SD-5 |
 | Nuclear | `series_nuclear/` (future) | OP-SS-10 feeds here |
-| Leptons | `series_leptons/` (future) | OP-SS-1, OP-G-1 feed here |
+| Leptons | `series_leptons/` (future) | OP-SS-1, OP-QM-3, OP-G-1 feed here |
