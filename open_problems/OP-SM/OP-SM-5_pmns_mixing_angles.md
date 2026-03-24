@@ -1,4 +1,79 @@
-# OP-SM-5: Prove PMNS Mixing Angles from Exact Subgroup Overlap Integrals
+# OP-SM-5: Derive Lepton Masses and Koide Relation from CPP ZBW Eigenmodes
+
+**Priority:** HIGH — blocks the lepton series paper  
+**Status:** OPEN — eigenmode calculation done; mechanism does not reproduce Koide  
+**Session evidence:** ZBW eigenmode calculation, 24 March 2026  
+**Last updated:** 24 March 2026
+
+---
+
+## Statement
+
+Derive the three charged lepton masses ($m_e, m_\mu, m_\tau$) from
+CPP ZBW dynamics, and show that the Koide relation
+$K = \Sigma m_i / (\Sigma\sqrt{m_i})^2 = 2/3$ follows from the
+600-cell cage geometry.
+
+---
+
+## What the ZBW Eigenmode Calculation Found (24 March 2026)
+
+The calculation was done completely with the current CPP framework.
+
+**Setup:** Each lepton generation $i$ occupies a spherical box of
+radius $R_i$ (the cage boundary) with SSV potential
+$V(r) = -\text{sea\_strength} \times \hbar c/r$.
+Ground-state energy gives the mass: $m_i \approx \pi/(R_i\sqrt{2})$
+in the tight-box limit.
+
+**Cage radii from 600-cell geometry:**
+- Electron: $R_e = \lambda_C(e) \approx 386$~fm (Compton wavelength)
+- Muon: $R_\mu = r_{\rm conf} \approx 0.4$~fm (tetrahedral cage)
+- Tau: $R_\tau \approx 0.62$~fm (icosahedral cage)
+
+**Result:** The mechanism gives $m_\mu/m_e \approx 965$ (observed: 207)
+and $m_\tau/m_e \approx 622$ (observed: 3477).
+The Koide relation is **not satisfied**.
+
+**Root cause:** The electron's effective cage radius
+($\lambda_C(e) \approx 386$~fm) is $\sim\!1000\times$ larger than the
+muon cage radius (0.4~fm), creating the wrong hierarchy.
+
+---
+
+## What Is Established
+
+**Theorem (algebraic):** $K = 2/3 \Leftrightarrow \rho = \sqrt{2}$
+in the parametrisation $m_i = \gamma_0(1+\rho\cos\phi_i)^2 m_{\rm base}$
+with C3 phases.
+
+**Observation:** The C3 symmetry of the Koide parametrisation matches
+the C3 symmetry of the tetrahedral cage base. The Koide phase
+$\theta_{\rm Koide} \approx (1-\delta)\arccos(-1/3) + \delta\pi$ to 0.19%,
+where $\delta = 1/3$ from charge quantisation (Theorem 1).
+
+**Critical point:** At $(\rho, \theta) = (\sqrt{2}, 3\pi/4)$, the
+electron mass vanishes. The SSV coupling shifts $\theta$ to
+$3\pi/4 - (5/4)\,\text{sea}^2$ — but the coefficient $5/4$ is
+fitted, not derived.
+
+---
+
+## Open Questions
+
+1. What is the correct mass-radius relationship for leptons? (Not $1/R$)
+2. Why does the Koide relation hold exactly ($K = 2/3$ to 11 ppm)?
+3. What fixes $\rho = \sqrt{2}$?
+4. Is the cage model (different $R$ per generation) the right framework,
+   or does mass arise from a different aspect of the cage structure?
+
+---
+
+## Feeds Into
+
+- Lepton series paper (blocked until resolved)
+- OP-G-1 (three generations — lepton and quark generation structure)
+- OP-G-2 (full SM unification)
 
 **Priority:** HIGH — currently MC-sampled; analytic proof needed for journal submission  
 **Status:** OPEN — MC results match NuFIT to 3–4 digits; analytic derivation missing  

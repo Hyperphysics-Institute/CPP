@@ -1,11 +1,51 @@
 # OP-SS-1: Quark Mass Formula $M_q(n_\text{layers})$ from sea\_strength
 
 **Priority:** HIGHEST  
-**Status:** PARTIAL — mechanism established, kernel not yet found  
+**Status:** PARTIAL — Theorems 2 and 3 proved (structural + scale);
+full ZBW composition corrections remain semi-empirical  
+**Solved in:** `op_ss9_ss1_theorems.tex` Theorems 2–3  
 **Series:** SS\#1, SS\#5  
-**Notebook evidence:** `notebooks/nested_cage_masses.ipynb` (v8.0, Stage 12),
-`notebooks/cpp_benchmark.ipynb` (v12, Stage 14)  
 **Last updated:** 23 March 2026
+
+---
+
+## What Is Now Proved
+
+**Theorem 2 (Cage ordering, SS-1a) — SOLVED:**
+$$M_q(n) = M_{\rm inner} + E_{\rm eDP}
+\sum_{l=1}^{n} N_l\,\phi^{3(l-1)}$$
+- $N_l = 4, 12, 20, 60$ from 600-cell shell geometry (fixed)
+- $\phi^{3(l-1)}$ from golden-ratio shell volume scaling (derived)
+- Strict ordering $M_q(0) < M_q(1) < \cdots < M_q(4)$ proved
+- Direction $m_u < m_d$ proved from SSV polarity asymmetry
+
+**Theorem 3 (Energy scale, SS-1b) — NEAR-SOLVED:**
+$$E_{\rm eDP} = \frac{{\rm sea\_strength} \cdot \hbar c}{\phi^2 \cdot r_{\rm conf}}
+\approx 83.9\ {\rm MeV}$$
+- sea\_strength is now **derived** from $\alpha_{\rm geom}$ (OP-SM-1 solved)
+- $r_{\rm conf}$ is the one remaining input (awaits OP-SS-5)
+- 4.7% residual from notebook value 88 MeV (within MC precision)
+
+**Lepton series template established:** equation (6) of theorems document.
+
+---
+
+## What Remains Open
+
+The ZBW composition gradient ($\tau = 1/\ln\phi^2$) and inter-layer bonding
+corrections explain why charm/strange = 13.6 (not 6 from the structural
+formula). These are semi-empirical in Paper 2 and require first-principles
+derivation from the 600-cell SSV dynamics. This is the full OP-SS-1 problem
+and connects to OP-SS-3 (chiral condensate).
+
+---
+
+## Feeds Into
+
+- Lepton series (template now established) ✓
+- OP-SS-2 (three generations)
+- OP-SS-3 (chiral condensate — light quark masses)
+- OP-G-1 (lepton mass formula by analogy) ✓ template ready
 
 ---
 
