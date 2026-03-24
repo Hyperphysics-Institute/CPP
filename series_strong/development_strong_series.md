@@ -1085,3 +1085,50 @@ This would make CPP a complete nuclear theory (A ≥ 1), extending the series fr
 Most novel notebook in the repo. Qualitative mechanism correct; quantitative model is placeholder. Natural candidate for companion C17 (CPP nuclear forces) when derived.
 
 *End of Stage 21.*
+
+---
+
+## Stage 22 — Prior Numerical Work: strong_modes_probabilistic.ipynb (v8.0, final notebook)
+
+This is the final notebook in the series_strong/notebooks/ directory. It provides the probabilistic underpinning of the gluon count derived algebraically in SS#2/SS#3, and extends the chain-breaking picture from chain_fraying_dynamics into a multi-layer sequential model.
+
+### The 1+3+N geodesic layer structure
+
+The notebook models the 600-cell qDP chain paths as three geometric layers:
+
+| Layer | Count | Geometry | Breaking strength |
+|---|---|---|---|
+| Central | 1 | Shortest, straightest geodesic | 1.0 (last to break) |
+| Middle | 3 | ~120° paths (C3 symmetry) | 0.7 |
+| Outer | 3–6 (prob.) | Tortuous, bowed geodesics | 0.4 (first to break) |
+
+Mean total modes = 1 + 3 + 4.5 = **8.5 ≈ QCD 8 gluons**.
+
+This is complementary to and consistent with SS#2/SS#3:
+- SS#2 (algebraic): 3 edges × 2 (real+imag) + 2 diagonals = **8 exactly** (Gell-Mann matrices)
+- Grok Remark 4.1 (deterministic): 1 apex + 3 base + 4 shell = **8 exactly**
+- This notebook (probabilistic): 1 + 3 + Prob{3,4,5,6} = **7–10, mean 8.5**
+
+The algebraic count is the time-averaged limit of the probabilistic geodesic count.
+
+### New physical content
+
+**Sequential string breaking (outer→middle→central):** String breaking under tensile stress proceeds in three stages, not as a single threshold. Outer chains (tortuous, bowed) break first at low stress; middle chains next; central chain last. This refines chain_fraying_dynamics (Stage 13), which found ~85% central breaking — here the full sequential structure is explicit.
+
+**Falsifiable prediction:** String breaking produces a structured multi-stage energy spectrum, not a sharp threshold. Measurable in lattice QCD string-breaking simulations as two distinct energy releases (outer and middle layer) before the final central break.
+
+### Parameters added to parameters_600cell.py
+
+```python
+phase_choices = np.array([3, 4, 5, 6])  # outer layer count
+phase_probs   = np.array([0.25]*4)       # uniform distribution
+layer_strength_central = 1.0
+layer_strength_middle  = 0.7
+layer_strength_outer   = 0.4
+```
+
+### Notebook review: ALL 11 COMPLETE
+
+All notebooks in the original strong_sector GitHub project have now been assessed and recorded in Stages 12–22.
+
+*End of Stage 22 — Notebook review complete.*
