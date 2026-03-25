@@ -19,7 +19,11 @@ All final `.tex` files live in [`papers/`](papers/).
 | **Paper 4** | [Charged lepton masses from K3](papers/paper_4_charged_lepton_masses_from_k3_spectral_theorem.tex) | **Submission-ready** |
 | **Paper 5** | [Tribimaximal neutrino mixing from K3](papers/paper_5_tribimaximal_neutrino_mixing_zeroth_order_pmns_from_k3_cage_base.tex) | **Submission-ready** |
 
-Strong sector (at series root): [`cpp_ss_unified_v2.tex`](../series_strong/cpp_ss_unified_v2.tex) — **Submission-ready**
+Strong sector (at CPP root `series_strong/`):
+[`../series_strong/cpp_ss_unified_v2.tex`](../series_strong/cpp_ss_unified_v2.tex) — **Submission-ready**
+
+Special Relativity (at CPP root `series_sr/`):
+[`../series_sr/`](../series_sr/) — **Submission-ready** *(confirm exact filename)*
 
 ---
 
@@ -30,10 +34,10 @@ All open problems with status tracking: [`open_problems/`](../open_problems/)
 | Directory | Scope | Count |
 |-----------|-------|-------|
 | [OP-SS](../open_problems/OP-SS/) | Strong sector | 10 problems |
-| [OP-SM](../open_problems/OP-SM/) | Standard Model / lepton masses | 6 problems |
+| [OP-SM](../open_problems/OP-SM/) | Standard Model / lepton masses | 10 problems |
 | [OP-SR](../open_problems/OP-SR/) | Special relativity | 8 problems |
-| [OP-EW](../open_problems/OP-EW/) | Electroweak sector | TBD |
-| [OP-QM](../open_problems/OP-QM/) | Quantum mechanics foundations | TBD |
+| [OP-EW](../open_problems/OP-EW/) | Electroweak sector | 6 problems |
+| [OP-QM](../open_problems/OP-QM/) | Quantum mechanics foundations | 7 problems |
 | [OP-GLOBAL](../open_problems/OP-GLOBAL/) | Cross-series problems | 2 problems |
 
 ---
@@ -69,9 +73,10 @@ All open problems with status tracking: [`open_problems/`](../open_problems/)
 - **[p2-precision-and-predictive-power](p2-precision-and-predictive-power/)** — Framework predictive assessment
 - **[p2-glossary-and-ontology](p2-glossary-and-ontology/)** — Full glossary: geometric terms, DP Sea terms, SM particles, ZBW terms
 
-### Papers 3–5 series (K3 lepton spectral theory) — NEW
+### Papers 3–5 series (K3 lepton spectral theory)
 
-- **[p3-lepton-koide-spectral](p3-lepton-koide-spectral/)** — K3 spectral theorem derivations, PS-1 quark mass analysis
+- **[p3-lepton-koide-spectral](p3-lepton-koide-spectral/)** — K3 spectral theorem derivations, PS-1 quark mass analysis  
+  - `derivations/ps1_quark_mass_ladder.ipynb` — verifiable quark mass computation (25 March 2026)
 
 ### Cross-cutting
 
@@ -97,10 +102,10 @@ All open problems with status tracking: [`open_problems/`](../open_problems/)
 
 | Conjecture | Result | Reference |
 |------------|--------|-----------|
-| φ^(3(l-1)) quark mass scaling | 3–8× errors, exact shell volumes don't match | PS-1, March 2026 |
+| φ^(3(l-1)) quark mass scaling | 3–8× errors; exact shell volumes don't match | PS-1, March 2026 |
 | C₆₀ fourth cage for top quark | No 60-vertex distance shell exists in 600-cell | PS-1, March 2026 |
 | θ_Koide from Aharonov-Bohm loop | C3 symmetry prevents degeneracy breaking | Session F |
-| θ_Koide from 4D embedding perturbation | C3 preserved under all tested perturbations | Session G |
+| θ_Koide from 4D embedding perturbation | C3 preserved in 4D; tested on all 600 cells | Session G |
 
 ---
 
