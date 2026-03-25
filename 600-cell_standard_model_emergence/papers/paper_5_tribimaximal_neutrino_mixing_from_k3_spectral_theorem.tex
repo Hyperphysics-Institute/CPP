@@ -99,10 +99,10 @@ and Paper~4 (charged lepton masses). The following are used:
 \section{The Neutrino Identification}
 %=====================================================================
 
-\begin{proposition}[Neutrino species as K3 ZBW eigenmodes]
+\begin{proposition}[Neutrino species as K3 ZBW eigenmodes --- ansatz]
 \label{prop:nu_id}
-The three neutrino mass eigenstates in the CPP lepton sector are the
-three eigenmodes of $\hat{H}_\ZBW = \hbar\omega_0 A_{K_3}$:
+We \emph{identify} (ansatz, not derived) the three neutrino mass
+eigenstates with the three eigenmodes of $\hat{H}_\ZBW = \hbar\omega_0 A_{K_3}$:
 \begin{align*}
 \nu_1 &\leftrightarrow |\phi_-^{(1)}\rangle
   = \tfrac{1}{\sqrt{6}}(2,-1,-1)^T, \\
@@ -113,16 +113,30 @@ three eigenmodes of $\hat{H}_\ZBW = \hbar\omega_0 A_{K_3}$:
 \end{align*}
 \end{proposition}
 
-\begin{proof}[Physical motivation]
+\begin{proof}[Physical motivation (ansatz)]
 Charged leptons are ZBW vertex excitations: the lepton occupies a
-specific colour vertex $V_i$ with probability $|\psi_i|^2 \propto m_i$
-(K3 Spectral Theorem).  Neutrinos are the \emph{complementary} ZBW
-excitations: they are the eigenmodes of $\hat{H}_\ZBW$ that are
-thermally populated but carry no net colour charge (since
-$\langle\phi_\pm | \text{colour operator} \rangle = 0$ by symmetry).
-The three mass eigenstates must be orthogonal and span the full
-K3 Hilbert space, leaving exactly the three K3 eigenmodes.
+specific colour vertex $V_i$ (K3 Spectral Theorem). The identification
+of neutrino mass eigenstates with K3 eigenmodes is an \emph{ansatz}:
+it is the natural complementary choice (eigenmodes vs.\ vertex states),
+but it is not derived from CPP interaction rules.
+What is \emph{required} by the framework is a physical principle
+explaining why the charged-lepton mass matrix is diagonal in the vertex
+basis while the neutrino mass matrix is diagonal in the eigenmode basis.
+That principle is not yet established; it is Open Problem~\ref{op:nu_id}.
 \end{proof}
+\begin{remark}[Connection to discrete symmetry literature]
+TBM was proposed by Harrison, Perkins and Scott (2002) and has been
+derived from the discrete group $A_4$ (symmetry of the tetrahedron)
+by Ma, Altarelli, Feruglio and others.  The K3 adjacency matrix
+$A_{K_3}$ generates the regular representation of $\mathbb{Z}_3$,
+whose Clebsch--Gordan coefficients are the TBM matrix elements --- a
+fact equivalent to Theorem~\ref{thm:tbm}.  The CPP contribution is
+not the mathematical observation (which is known) but the
+\emph{physical identification}: K3 is the colour-cage base of the
+600-cell, not an abstract flavour symmetry postulated ad hoc.
+The 600-cell geometry provides the geometric origin that discrete
+symmetry models must postulate.
+\end{remark}
 
 \begin{remark}
 The ordering $\nu_1 \leftrightarrow \phi_-^{(1)}$, $\nu_2 \leftrightarrow \phi_+$,
@@ -194,6 +208,28 @@ exactly $U_\TBM$.  The result requires no free parameters; it is a
 direct consequence of the K3 spectral structure.
 \end{remark}
 
+
+\begin{remark}[Relation to A\textsubscript{4} discrete symmetry models]
+The derivation of tribimaximal mixing from the discrete symmetry group
+$A_4$ (the symmetry group of the tetrahedron) is well established in
+the neutrino physics literature~\cite{Harrison2002,Ma2001,AltarelliFerruglio2010}.
+The K3 complete graph has $\mathbb{Z}_3 \cong A_3$ as its rotation
+symmetry, which is a subgroup of $A_4$.  The mathematical fact that
+K3 eigenvectors give the TBM matrix is therefore related to the known
+$A_4$-TBM connection.
+
+The \emph{CPP-specific contribution} is not the mathematical
+identification of K3 eigenvectors with TBM columns --- that follows
+from any system with a three-state graph of this symmetry.  The
+contribution is identifying K3 as a \emph{physical structure}: the
+base of the 600-cell tetrahedral cage, whose C3 symmetry is derived
+from the geometry of the 600-cell (Theorem~1, Paper~1) rather than
+postulated as a discrete flavour symmetry.  In CPP, the K3 symmetry
+is a consequence of the cage geometry; in $A_4$ models it is an input.
+This grounds TBM in the same geometric structure that also gives
+$\delta = 1/3$ (charges) and $K = 2/3$ (Koide ratio).
+\end{remark}
+
 %=====================================================================
 \section{Consistency with Observation}
 %=====================================================================
@@ -211,7 +247,7 @@ Angle & TBM prediction & NuFIT central value & $1\sigma$ range & Status \\
 \midrule
 $\sin^2\theta_{12}$ & $1/3 = 0.333$ & $0.304$ & $\pm 0.012$ & $2.4\sigma$ off \\
 $\sin^2\theta_{23}$ & $1/2 = 0.500$ & $0.570$ & $\pm 0.024$ & $2.9\sigma$ off \\
-$\sin^2\theta_{13}$ & $0$ & $0.0220$ & $\pm 0.0006$ & non-zero \\
+$\sin^2\theta_{13}$ & $0$ & $0.0220$ & $\pm 0.0006$ & excluded $>30\sigma$ \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -220,13 +256,18 @@ failures.  All three angles require second-order corrections
 (Open Problems~\ref{op:corrections}).
 \end{proposition}
 
-\begin{remark}[This is a zeroth-order result]
-The TBM matrix is the starting point, not the endpoint.  In the
-Standard Model, TBM is a well-studied zeroth-order approximation
-that requires corrections from charged-lepton diagonalisation and
-higher-order neutrino mass terms.  The CPP programme identifies
-the \emph{origin} of TBM (K3 eigenvector structure) and registers
-the corrections as open problems with specific physical mechanisms.
+\begin{remark}[TBM is excluded as an exact result; CPP identifies its origin]
+TBM is \emph{not} consistent with experiment as an exact statement.
+The Daya Bay experiment measured $\sin^2\theta_{13} = 0.022$ at
+$>30\sigma$ significance, definitively excluding $\theta_{13} = 0$.
+The $\sin^2\theta_{12}$ discrepancy (9\%, $2.4\sigma$) is borderline.
+TBM should be read as a \emph{starting point}, not a prediction.
+The CPP contribution is identifying the geometric origin of TBM
+(K3 eigenvector structure, grounded in 600-cell geometry) and
+specifying that the required corrections come from the Capotauro
+mechanism and charged-lepton diagonalisation --- not from ad hoc
+fitting.  Until those corrections are derived, the neutrino sector
+is not predictive.
 \end{remark}
 
 %=====================================================================
@@ -259,6 +300,17 @@ lepton mass ratios (spectral), and neutrino mixing angles
 %=====================================================================
 \section{Open Problems}
 %=====================================================================
+
+\begin{openproblem}[Neutrino identification: why eigenmodes?]
+\label{op:nu_id}
+Derive from CPP interaction rules why the neutrino mass eigenstates
+are diagonal in the K3 eigenmode basis while charged-lepton mass
+eigenstates are diagonal in the K3 vertex basis.  In the Standard
+Model this follows from the structure of the Yukawa coupling matrices;
+in CPP it requires a mechanism distinguishing the two particle types
+beyond the K3 spectral framework.  This is the foundational open
+problem for the CPP neutrino sector.
+\end{openproblem}
 
 \begin{openproblem}[OP-SM-5: Corrections to TBM mixing angles]
 \label{op:corrections}
@@ -311,7 +363,7 @@ mass hierarchy (normal vs.\ inverted) is also open.
 \toprule
 Result & Status & Source \\
 \midrule
-Neutrino ID as K3 eigenmodes & \textbf{Proposed} & Prop.~\ref{prop:nu_id} \\
+Neutrino ID as K3 eigenmodes & \textbf{Ansatz} & Prop.~\ref{prop:nu_id} \\
 $U_\PMNS^{(0)} = U_\TBM$ (exact) & \textbf{Derived} & Theorem~\ref{thm:tbm} \\
 $\sin^2\theta_{12}^{(0)} = 1/3$ & \textbf{Derived} & Exact from K3 \\
 $\sin^2\theta_{23}^{(0)} = 1/2$ & \textbf{Derived} & Exact from K3 \\
@@ -330,4 +382,18 @@ K3 vertex states (charged leptons) and the K3 eigenmode states
 geometric origin of tribimaximal mixing is the K3 spectral structure
 of the 600-cell cage base.
 
+\begin{thebibliography}{9}
+\bibitem{Harrison2002}
+P.F.~Harrison, D.H.~Perkins, W.G.~Scott,
+\textit{Tri-bimaximal mixing and the neutrino oscillation data},
+Phys.\ Lett.\ B \textbf{530}, 167 (2002).
+\bibitem{Ma2001}
+E.~Ma, G.~Rajasekaran,
+\textit{Softly broken $A_4$ symmetry for nearly degenerate neutrino masses},
+Phys.\ Rev.\ D \textbf{64}, 113012 (2001).
+\bibitem{AltarelliFerruglio2010}
+G.~Altarelli, F.~Feruglio,
+\textit{Discrete flavour symmetries and models of neutrino mixing},
+Rev.\ Mod.\ Phys.\ \textbf{82}, 2701 (2010).
+\end{thebibliography}
 \end{document}
