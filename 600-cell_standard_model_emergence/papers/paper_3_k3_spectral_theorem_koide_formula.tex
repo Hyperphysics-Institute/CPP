@@ -156,10 +156,12 @@ which is the correct classical limit.
 \end{remark}
 
 \begin{remark}[Physical motivation for P1 and P2]
-P1: The ZBW orbital hops between colour vertices via SSV gradient
-interactions --- the same mechanism that generates the Gell-Mann hopping
-operators in the strong sector.  All three $K_3$ edges are equivalent
-by C3 symmetry (Theorem~1), giving uniform hopping amplitude $\hbar\omega_0$.
+P1: The ZBW orbital hops between colour vertices via the electrostatic
+SSV interaction between the eCP and the DP~Sea.  (Note: this is
+\emph{not} the colour-charge hopping of the strong sector — leptons
+carry no colour charge. The amplitude is set by the DP~Sea potential
+at the confinement radius, the same SSV coupling that appears in
+Theorem~3 and in the derived value of sea\_strength.)
 
 P2: Each CP processes DI-bit flows at rate proportional to $|\psi_i|^2$
 (the ZBW occupation probability at vertex~$i$).  Mass = stored ZBW energy
@@ -195,16 +197,27 @@ therefore:
 
 \textbf{Part B — Amplitude $t = \hbar\omega_0$ (SSV hopping).}
 In CPP, hopping between two vertices is mediated by the SSV gradient
-along the connecting edge.  The hopping matrix element between
-nearest-neighbour vertices at separation $a = r_{\mathrm{conf}}/\varphi$
-is set by the SSV interaction energy:
+along the connecting edge.  The relevant coupling for \emph{leptons}
+is not the colour-charge SSV of the strong sector (which involves
+qDP chains and is absent for leptons), but the \emph{electrostatic}
+SSV: the eCP at each base vertex interacts with the background DP~Sea
+potential $V(r) = -\mathrm{sea\_strength}\times\hbar c/r$.  The
+matrix element for one hop across an edge of length
+$a = r_{\mathrm{conf}}/\varphi$ is set by the SSV energy at that
+separation:
 \begin{equation}
 t = \frac{\mathrm{sea\_strength}\times\hbar c}{r_{\mathrm{conf}}}
 \equiv \hbar\omega_0.
+\label{eq:hop_amp}
 \end{equation}
-This is the same mechanism that generates the uniform hopping amplitude
-for the Gell-Mann operators in the strong sector (Theorem~1 of the strong
-sector paper), restricted here to the $K_3$ base subgraph.
+The \emph{form} $H = t A_{K_3}$ is forced by C3 symmetry (Part~A).
+The \emph{value} of $t$ in~\eqref{eq:hop_amp} is a physical
+identification: the lepton ZBW hopping amplitude is set by the
+electrostatic SSV at the confinement radius, the same parameter
+that appears in Theorem~3 (DP binding energy) and in the derived
+value of sea\_strength.  This identification connects the lepton
+sector to the CPP SSV framework through the shared cage geometry;
+it does not invoke the colour-charge hopping of the strong sector.
 
 \textbf{Conclusion.}
 $\hat{H}_\ZBW = t\, A_{K_3} = \hbar\omega_0 A_{K_3}$,
