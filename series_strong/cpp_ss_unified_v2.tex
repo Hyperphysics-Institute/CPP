@@ -204,7 +204,7 @@ $c$ & $+2/3$ & 2 & $+$qCP; tetrahedral + icosahedral cages
   & $1.27$~GeV & $1.55$~GeV \\
 $b$ & $-1/3$ & 3 & $-$qCP; osc + tetrahedral + icosahedral + dodecahedral
   & $4.18$~GeV & $4.73$~GeV \\
-$t$ & $+2/3$ & 4 & $+$qCP; all four cages including fullerene ($C_{60}$)
+$t$ & $+2/3$ & 4 & $+$qCP; all four cages (fourth cage structure open)
   & $172.8$~GeV & $\approx m_t^{\rm curr}$ \\
 \bottomrule
 \end{tabular}
@@ -770,17 +770,20 @@ v8.0 and \texttt{notebooks/cpp\_benchmark.ipynb}, v12) establish the
 following partial results:
 
 \begin{enumerate}
-\item \textbf{The volume scaling $\phig^{3(l-1)}$ is the
-  multiplicative mechanism (established, \texttt{cpp\_benchmark}):}
-  Each additional cage layer contributes an energy proportional to
-  the 3D volume of the shell, which scales as
-  $V_l \propto \phig^{3(l-1)}$ ($\phig^3 \approx 4.236$).  This
-  gives the multiplicative growth the matter sector requires:
-  successive cage layers contribute $1\times$, $4.2\times$,
-  $17.9\times$, $76\times$ the base energy, spanning two orders
-  of magnitude over four layers.  This is the mechanism identified
-  as missing from the simpler $\int S\,dV$ integral approach of
-  \texttt{nested\_cage\_masses}.
+\item \textbf{The volume scaling $\phig^{3(l-1)}$ is a conjecture
+  (quantitatively falsified by exact 600-cell computation):}
+  The original proposal was that each additional cage layer
+  contributes energy scaling as $V_l \propto \phig^{3(l-1)}$
+  ($\phig^3 \approx 4.236$).  Exact computation of the 600-cell
+  distance-shell volumes (PS-1 session, 25~March 2026) falsified
+  this: the actual 3D-projected Voronoi volumes of the 600-cell
+  shells do \emph{not} follow $\phig^{3(l-1)}$.  The true shell
+  volumes peak at the equatorial shell and then \emph{decrease}
+  (palindromic structure: $N = 12, 20, 12, 30, 12, 20, 12, 1$).
+  The $\phig^{3(l-1)}$ scaling produces factors of 3--8$\times$
+  error in the structural masses.  The qualitative ordering
+  (more cage $\to$ more mass) remains correct; the quantitative
+  mechanism is open (OP-SS-1).
 
 \item \textbf{The DP binding energy hierarchy (established,
   \texttt{cpp\_benchmark}):}
@@ -818,24 +821,30 @@ following partial results:
   The direction $m_u < m_d$ is geometric, not fitted.
 
 \item \textbf{The open calibration problem:}
-  With consistent MeV units and $\phig^{3(l-1)}$ volume scaling,
-  the formula gives $M_{\rm strange} \approx 223$~MeV (PDG:
-  93.5~MeV, factor of 2 off), $M_{\rm charm} \approx 1052$~MeV
-  (PDG: 1273~MeV, 17\% off), $M_{\rm bottom} \approx 4350$~MeV
-  (PDG: 4183~MeV, 4\% off).  Bottom and charm are close; strange,
-  up, and top require further refinement.  The top quark mass
-  ($M_{\rm top} \approx 17{,}720$~MeV vs.\ PDG 172{,}570~MeV)
-  indicates the $\phig^{3(l-1)}$ volume scaling is insufficient
-  for the fourth cage and a different mechanism (the C$_{60}$
-  fullerene shell) is needed.
+  Exact 600-cell shell computations (PS-1) give structural masses
+  that deviate from PDG by factors of 3--8$\times$ when using any
+  simple volume-based formula.  The combined PSR-compression,
+  phase-cancellation, and exact-volume approach still fails:
+  strange quark errors are 3$\times$, bottom is 0.7$\times$,
+  top is off by $\sim 10\times$.  The ``corrections'' needed
+  are larger than the base terms, indicating the decomposition
+  itself requires revision.  Two discoveries from PS-1 constrain
+  future mechanisms: (i)~$m_u/m_e = \phig^3$ to $0.2\%$,
+  connecting the quark and lepton baselines; (ii)~$K(c,b,t)
+  = 2/3$ to $0.4\%$ for the three heaviest quarks, consistent
+  with the K3 spectral structure showing through when cage
+  binding $\ll$ current mass.  Thomas's DP-cloud thermal picture
+  (mass from ZBW thermal energy with cage as boundary condition)
+  is the leading candidate for OP-SS-1.
 \end{enumerate}
 
 The complete formula for OP-SS-1 must: (a)~produce correct mass
 ratios across all six quarks from a single geometric expression;
 (b)~derive $m_u < m_d$ from the inner SSV mechanism; (c)~require
 no free parameters beyond sea\_strength and 600-cell geometry;
-(d)~account for the anomalously large top mass through the
-C$_{60}$ fourth-cage mechanism.
+(d)~account for the anomalously large top mass through a mechanism
+yet to be derived (the C$_{60}$ fullerene cage does not appear
+as a natural distance shell of the 600-cell and is not the answer).
 \end{openprob}
 
 \begin{openprob}[String tension $\sigma$ from sea\_strength]
@@ -1046,9 +1055,10 @@ Helical fragmentation in polarized high-spin mesons
 Non-log $\as$ running at Planck scale
   & Lattice discreteness correction to RGE
   & Future Planck-scale collider \\[4pt]
-$C_{60}$ fourth-cage prediction
-  & Top quark: four nested cages including fullerene
-  & Top mass reproduced; cage structure not yet directly observable \\[4pt]
+Top quark fourth cage (structure open)
+  & Top quark: four nested cages; fourth cage not yet identified
+    (C$_{60}$ fullerene ruled out as a 600-cell distance shell)
+  & Future: cage structure observable in top-quark production? \\[4pt]
 Common $\eta$ hierarchy for quarks and bosons
   & $\eta_W \approx \eta_Z \approx \eta_H \approx \eta_q$
   & Would emerge from Open Problem~\ref{op:mq} solution \\
@@ -1195,11 +1205,10 @@ in this paper:
   calibration.
 
 \item \textbf{Open Problem~\ref{op:mq}} (quark mass formula):
-  the formula $M_q \sim \sum_l E_{\rm DP}(l)\,\phig^{3(l-1)}$
-  uses $k_{\rm SM}$ through the DP binding energy scale.
-  The derivation of $k_{\rm SM}$ reduces OP-SS-1 from a two-unknown
-  problem to a one-unknown problem (only the ZBW kernel exponent
-  remains to be determined).
+  the $\phig^{3(l-1)}$ volume-scaling conjecture is quantitatively
+  falsified by exact 600-cell shell computation (PS-1).  The
+  correct formula using sea\_strength and 600-cell geometry
+  remains to be found.
 
 \item \textbf{Scope of the zero-parameters claim:}  the four
   exact theorems (SU(3) algebra, gluon masslessness, $\beta_0 = 7$,
