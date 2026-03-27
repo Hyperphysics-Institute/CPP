@@ -1,3 +1,6 @@
+Working note — AI consultation on tensor requirements for the CPP-GR paper. Not a CPP result. For context before beginning the GR derivation sessions.
+
+
 **Claude:**
 
 Where the genuine difficulty lies:
