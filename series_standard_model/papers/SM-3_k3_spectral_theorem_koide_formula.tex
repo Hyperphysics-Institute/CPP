@@ -18,6 +18,8 @@
 %   H6: hyperref added
 %   H7: OP-SM-7d registered with \openproblem environment
 %   H8: siunitx and graphicx added
+%   H9: Tagline removed from date block; email added
+%   H10: GitHub URLs added to all CPP bibliography entries
 % ============================================================
 
 \documentclass[11pt]{article}
@@ -40,17 +42,15 @@
 \newcommand{\phig}{\varphi}
 \newcommand{\ZBW}{\mathrm{ZBW}}
 
-\title{\textbf{SM-3: The Koide Relation from the Colour Cage Base Graph}\\[6pt]
-{\large K3 Spectral Theorem (Version 5)}\\[4pt]
-{\normalsize 600-Cell Standard Model Emergence Series}}
+\title{\textbf{SM-3: K3 Spectral Theorem and the Koide Formula}\\[6pt]
+{\large 600-Cell Standard Model Emergence Series}\\[4pt]
+{\normalsize Version 5, 26 March 2026}}
 
-\author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic)\\[4pt]
-Hyperphysics Institute\\
-\url{https://hyperphysics.com}}
+\author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic)}
 
-\date{Version 5, 26 March 2026\\[4pt]
-\small All three postulates derived from CPP axioms.
-Theorem complete.}
+\date{\normalsize Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
 
 \begin{document}
 \maketitle
@@ -91,6 +91,15 @@ K \equiv \frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2}
 \end{equation}
 No Standard Model derivation exists.  This paper proves $K = 2/3$ from
 the spectral structure of the K3 cage base graph in CPP.
+
+\textbf{Note on independence:} The K$_3$ graph is not chosen to reproduce
+the Koide relation.  It is identified as the colour cage base of the
+600-cell tetrahedral cage in SM-1~\cite{abshier_sm1} from geometric
+considerations alone --- specifically, the three colour vertices
+$\{V_1,V_2,V_3\}$ of the tetrahedral quark cage, whose C3 symmetry is
+forced by the 600-cell lattice geometry.  The Koide relation emerges
+as a consequence of that independently-motivated structure, not as a
+motivation for it.
 
 \textbf{Prerequisites used without proof here:}
 \begin{itemize}
@@ -156,6 +165,15 @@ This follows from C3 cage symmetry (Theorem~1), equal K3 edge lengths
 $a = 1/\varphi$, and the SSV hopping amplitude
 (Proposition~\ref{prop:P1_derivation}).
 \end{proposition}
+
+\begin{remark}[Adjacency matrix vs.\ Laplacian]
+The graph Laplacian $L_{K_3} = 2I - A_{K_3}$ has eigenvalues $0$ (once)
+and $3$ (twice).  The Koide-relevant ratio $\lambda_{\max}/|\lambda_{\min}|$
+is the same under either the adjacency matrix or the Laplacian; the
+adjacency matrix is the natural Hamiltonian for a nearest-neighbour hopping
+system, where off-diagonal elements represent hopping amplitudes between
+connected vertices.  The result $K = 2/3$ is not an artefact of this choice.
+\end{remark}
 
 \begin{proposition}[$\ZBW$ Born Rule --- derived from P1 and P3]
 \label{prop:Born}
@@ -234,9 +252,9 @@ $\hat{H}_\ZBW = \hbar\omega_0 A_{K_3}$. \qed
 \begin{remark}[Consistency with SS-1 Theorem~6]
 The hopping energy $\hbar\omega_0 = \mathrm{sea\_strength}\times\hbar c/r_{\mathrm{conf}}$
 is consistent with the DP binding energy $E_{\mathrm{eDP}} = \hbar\omega_0/\varphi^2$
-from SS-1 Theorem~6.  The $1/\varphi^2$ factor arises from the Voronoi
-volume per vertex; $\hbar\omega_0$ is the total SSV energy at $r_{\mathrm{conf}}$
-before the per-vertex projection.
+from SS-1 Theorem~6~\cite{abshier_ss1}.  The $1/\varphi^2$ factor arises
+from the Voronoi volume per vertex; $\hbar\omega_0$ is the total SSV energy
+at $r_{\mathrm{conf}}$ before the per-vertex projection.
 \end{remark}
 
 %=====================================================================
@@ -456,17 +474,20 @@ Review of Particle Physics,
 \bibitem{abshier_ss1}
 T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
 Conscious Point Physics: The Strong Sector from the 600-Cell Lattice (SS-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.
+\textit{600-Cell Standard Model Emergence Series}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_strong/SS-1_strong_sector_from_600cell_lattice.tex}
 
 \bibitem{abshier_sm1}
 T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
 Binding Mechanisms and Cage Stability in the 600-Cell Lattice (SM-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.
+\textit{600-Cell Standard Model Emergence Series}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex}
 
 \bibitem{abshier_sm4}
 T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
 Charged Lepton Masses from the K3 Spectral Theorem (SM-4),
-\textit{600-Cell Standard Model Emergence Series}, 2026.
+\textit{600-Cell Standard Model Emergence Series}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex}
 
 \end{thebibliography}
 
