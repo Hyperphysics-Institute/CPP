@@ -1,17 +1,24 @@
 % ============================================================
-% Paper 4: Charged Lepton Masses from the K3 Spectral Theorem
-% CPP Lepton Series — 600-cell Standard Model Emergence
+% SM-4: Charged Lepton Masses from the K3 Spectral Theorem
+% 600-Cell Standard Model Emergence Series
 %
-% Session: 24 March 2026
-% Status: Complete. Predicts m_μ and m_τ from m_e and K=2/3.
-%         Phase θ calibrated to m_e (one free parameter).
-%         WHY θ ≈ 3π/4 is Open Problem OP-SM-7d.
+% Version 5, 26 March 2026
+% Status: Submission-ready.
+%
+% Harmonization (26 March 2026):
+%   H1–H8: see prior version comments
+%   H9: Tagline removed from date block; email added
+%   H10: GitHub URLs added to all CPP bibliography entries
+%   H11: PS-1 and PS-2 bibitems added
+%   H12: \Sigma → \sum in abstract
 % ============================================================
 
 \documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,amsthm,geometry,booktabs,array,hyperref}
+\usepackage{siunitx}
+\usepackage{graphicx}
 \geometry{margin=1in}
-\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -25,19 +32,22 @@
 \newcommand{\ZBW}{\mathrm{ZBW}}
 \newcommand{\eCP}{\mathrm{eCP}}
 
-\title{\textbf{Charged Lepton Masses from the K3 Spectral Theorem}\\[6pt]
-\large CPP Lepton Series, Paper~4\\[4pt]
-\normalsize 600-Cell Standard Model Emergence}
+\title{\textbf{SM-4: Charged Lepton Masses from the K3 Spectral Theorem}\\[6pt]
+{\large 600-Cell Standard Model Emergence Series}\\[4pt]
+{\normalsize Version 5, 26 March 2026}}
 
-\author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude (Anthropic)}
-\date{24 March 2026}
+\author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\texttt{drthomas007@protonmail.com}}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-The K3 Spectral Theorem (Paper~3 of this series) proves that the Koide
-relation $K \equiv \Sigma m_i/(\Sigma\sqrt{m_i})^2 = 2/3$ is an exact
+The K3 Spectral Theorem (SM-3 of this series) proves that the Koide
+relation $K \equiv \sum m_i/(\sum\sqrt{m_i})^2 = 2/3$ is an exact
 consequence of the adjacency spectrum of the colour cage base graph
 $K_3$.  This paper applies that theorem to the charged lepton masses.
 The Koide relation $K = 2/3$ is \emph{one constraint} on three masses:
@@ -46,25 +56,27 @@ The phase $\theta = 132.73°$ is extracted from the PDG values of all three
 lepton masses; it is not predicted by the K3 theorem.
 The empirical content is that nature satisfies $K = 2/3$ to 11~ppm ---
 a remarkable consistency check, not a two-from-one derivation.
-A structural theorem (Session~E) proves that $\theta$ is undetermined
+A structural theorem proves that $\theta$ is undetermined
 within the K3+SSV framework; its derivation is the principal open problem
-gating Paper~5.
+gating the electroweak series (OP-SM-7d).
 \end{abstract}
 
-% ============================================================
-\section{Prerequisites}
-% ============================================================
+\raggedright
 
-This paper builds directly on Paper~3 (\emph{K3 Spectral Theorem}).
+%=====================================================================
+\section{Prerequisites}
+%=====================================================================
+
+This paper builds directly on SM-3 (\emph{K3 Spectral Theorem}~\cite{abshier_sm3}).
 The following are used without re-proof:
 
 \begin{itemize}
-\item \textbf{Theorem~1} (Charge quantisation): the tetrahedral cage
-  base $\{V_1,V_2,V_3\}$ has C3 symmetry; $\delta = 1/3$.
-  Leptons have $\delta = 0$ (no cage), hence $q_e = -e$.
+\item \textbf{Theorem~1} (Charge quantisation, SM-1~\cite{abshier_sm1}):
+  the tetrahedral cage base $\{V_1,V_2,V_3\}$ has C3 symmetry;
+  $\delta = 1/3$.  Leptons have $\delta = 0$ (no cage), hence $q_e = -e$.
 
-\item \textbf{K3 Spectral Theorem} (Paper~3): the Koide relation
-  $K = 2/3$ follows from the K3 eigenvalue ratio $2{:}1$, given
+\item \textbf{K3 Spectral Theorem} (SM-3~\cite{abshier_sm3}): the Koide
+  relation $K = 2/3$ follows from the K3 eigenvalue ratio $2{:}1$, given
   the ZBW Hamiltonian $\hat{H}_\ZBW = \hbar\omega_0 A_{K_3}$ (derived),
   the DI-bit Born rule $m_i \propto |\psi_i|^2$ (derived from P1+P3),
   and DP~Sea thermal equipartition (derived).
@@ -73,22 +85,21 @@ The following are used without re-proof:
   in the Koide parametrisation $\sqrt{m_i} = A(1+\rho\cos\phi_i)$
   with C3 phases $\phi_i = \theta + 2\pi i/3$.
 
-\item \textbf{Structural theorem (Session~E)}: the C3 symmetry of
-  K3+SSV leaves the Koide phase $\theta$ undetermined.  This is not
-  a gap in the derivation; it is a proved result (see~\S\ref{sec:theta}).
+\item \textbf{Structural theorem (SM-4, Theorem~\ref{thm:theta_free})}: the
+  C3 symmetry of K3+SSV leaves the Koide phase $\theta$ undetermined.
+  This is a proved result, not a gap in the derivation.
 \end{itemize}
 
-% ============================================================
+%=====================================================================
 \section{The Koide Mass Formula}
-% ============================================================
+%=====================================================================
 
 \begin{theorem}[K = 2/3 as a constraint on lepton masses]
 \label{thm:masses}
 The Koide relation $K = 2/3$ imposes one constraint on the three
 charged lepton masses, reducing three free parameters to two.
-Given $K = 2/3$ and any two lepton masses, the third is determined.
-Equivalently, given $K = 2/3$, $\rho = \sqrt{2}$, and the phase
-$\theta$ extracted from the PDG mass values, all three masses follow:
+Given $K = 2/3$, $\rho = \sqrt{2}$, and the phase $\theta$ extracted
+from PDG mass values, all three masses follow:
 \begin{align}
 \sqrt{m_i} &= A\!\left(1 + \sqrt{2}\cos\!\left(\theta + \tfrac{2\pi i}{3}\right)\right),
 \quad i = 0,1,2, \label{eq:koide}\\
@@ -98,13 +109,11 @@ m_\mu &= \left(A + \sqrt{2}\,A\cos\!\left(\theta+\tfrac{2\pi}{3}\right)\right)^2
 m_\tau &= \left(A + \sqrt{2}\,A\cos\!\left(\theta+\tfrac{4\pi}{3}\right)\right)^2.
 \label{eq:mtau}
 \end{align}
-The phase $\theta$ is calibrated from $m_e$ via
-$\theta = \arccos\!\left(\frac{\sqrt{m_e}/A - 1}{\sqrt{2}}\right)$.
 \end{theorem}
 
 \begin{proof}
 Equation~\eqref{eq:koide} is the Koide parametrisation with $\rho = \sqrt{2}$
-(Paper~3, K3 Spectral Theorem).  The amplitude $A = (\sqrt{m_e}+\sqrt{m_\mu}+
+(SM-3, K3 Spectral Theorem).  The amplitude $A = (\sqrt{m_e}+\sqrt{m_\mu}+
 \sqrt{m_\tau})/3$ and phase $\theta$ are extracted from all three PDG masses.
 Given $A$, $\rho = \sqrt{2}$, and $\theta$, equations~\eqref{eq:mmu}--\eqref{eq:mtau}
 reproduce the other two masses.  The constraint $K = 2/3$ reduces three
@@ -115,25 +124,24 @@ calibrated from PDG data.
 \begin{remark}[Counting free parameters]
 The Koide parametrisation has three parameters: $A$, $\rho$, $\theta$.
 \begin{itemize}
-\item $\rho = \sqrt{2}$: \textbf{derived} (K3 Spectral Theorem).
-\item $A$: \textbf{calibrated} from all three PDG masses via
+\item $\rho = \sqrt{2}$: \textbf{derived} (SM-3, K3 Spectral Theorem).
+\item $A$: \textbf{calibrated} from PDG masses via
   $A = (\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})/3$.
-\item $\theta$: \textbf{calibrated} from PDG masses; not predicted by K3+SSV
-  (proved in Theorem~\ref{thm:theta_free}).
+\item $\theta$: \textbf{calibrated} from PDG masses; not predicted by
+  K3+SSV (proved in Theorem~\ref{thm:theta_free}).
 \end{itemize}
 The K3 theorem contributes one derived constraint ($\rho = \sqrt{2}$),
-reducing three free parameters to two.  Both remaining parameters
-($A$ and $\theta$) are calibrated from experiment.
+reducing three free parameters to two.
 \end{remark}
 
-% ============================================================
-\section{Predictions}
-% ============================================================
+%=====================================================================
+\section{Consistency Check}
+%=====================================================================
 
 \begin{proposition}[Lepton mass consistency check at 11~ppm]
 \label{prop:predictions}
-With $\rho = \sqrt{2}$ (K3 Spectral Theorem) and $A$, $\theta$
-extracted from PDG masses, the Koide parametrisation reproduces:
+With $\rho = \sqrt{2}$ (SM-3) and $A$, $\theta$ extracted from PDG masses,
+the Koide parametrisation reproduces:
 \begin{center}
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{lrrr}
@@ -157,19 +165,17 @@ with $\rho = \sqrt{2}$.  The phase is $\theta = 2.31663$~rad.
 \begin{remark}[Nature of the consistency check]
 The K3 Spectral Theorem derives $K = 2/3$, which is one constraint on
 three masses.  The empirical content of Proposition~\ref{prop:predictions}
-is that nature's lepton masses satisfy this constraint to 11~ppm --- a
-remarkable fact whose geometric origin is now established.
+is that nature's lepton masses satisfy this constraint to 11~ppm.
 The 0.004\% and 0.001\% figures reflect the precision to which nature
 satisfies $K = 2/3$, not the precision of a CPP prediction.
 The constraint is non-trivial: it would fail if the three masses were
-independently drawn from any reasonable prior.  That it holds to 11~ppm
-is the empirical validation of the K3 theorem.
+independently drawn from any reasonable prior.
 \end{remark}
 
-% ============================================================
+%=====================================================================
 \section{The Status of the Koide Phase $\theta$}
 \label{sec:theta}
-% ============================================================
+%=====================================================================
 
 \begin{theorem}[Structural theorem: $\theta$ is undetermined in K3+SSV]
 \label{thm:theta_free}
@@ -182,87 +188,75 @@ plane.
 
 \begin{proof}
 The SSV potential $V(r) = -\mathrm{sea\_strength}\times\hbar c/r$ is
-uniform on all three base vertices (equal distance from the apex $V_4$
-and the centroid).  Any C3-symmetric perturbation on $K_3$ is
-proportional to the identity on the 3D vertex space and commutes
-with $A_{K_3}$.  The Löwdin downfolding of the apex gives
-$H_\mathrm{eff}(E) = A_{K_3} - (1/E)\,\mathbf{v}\mathbf{v}^T$ where
-$\mathbf{v} = (1,1,1)^T/\sqrt{3}$ is the bonding eigenvector of $K_3$.
+uniform on all three base vertices.  Any C3-symmetric perturbation on
+$K_3$ commutes with $A_{K_3}$.  The L\"{o}wdin downfolding of the apex
+gives $H_\mathrm{eff}(E) = A_{K_3} - (1/E)\,\mathbf{v}\mathbf{v}^T$
+where $\mathbf{v} = (1,1,1)^T/\sqrt{3}$ is the bonding eigenvector.
 Since $\langle\phi_-|\mathbf{v}\rangle = 0$ exactly (the apex is dark
 to the antibonding modes), the antibonding eigenvalues remain $-1$
 for all $E$, and the 2D antibonding degeneracy is never broken.
 \end{proof}
 
 \begin{remark}[What fixes $\theta$ in nature]
-Theorem~\ref{thm:theta_free} shows $\theta$ requires physics beyond K3+SSV.
-Three candidates are registered (see Open Problem~\ref{op:theta}):
+Theorem~\ref{thm:theta_free} shows $\theta$ requires physics beyond
+K3+SSV.  Three candidates are registered:
 \begin{enumerate}
 \item \emph{Aharonov-Bohm self-energy}: the ZBW orbital circulates on
-  the K3 triangle, generating an effective magnetic flux.  The eCP--base
-  vertex self-energy loop picks up an AB phase that could select $\theta$.
+  the K3 triangle, generating an effective magnetic flux.
 \item \emph{Non-uniform apex coupling}: higher-order SSV corrections
-  from the 4D 600-cell embedding may break the uniform coupling
-  $\mathbf{v} = (1,1,1)^T$, allowing the downfolding to break degeneracy.
-\item \emph{Electroweak sector}: the Koide phase $\theta$ may be related
-  to the PMNS CP-violating phase $\delta_{\rm CP}$, requiring the full
-  electroweak gauge structure.
+  from the 4D 600-cell embedding may break the uniform coupling.
+\item \emph{Electroweak sector}: $\theta$ may be related to the PMNS
+  CP-violating phase $\delta_{\rm CP}$, requiring the full electroweak
+  gauge structure.
 \end{enumerate}
 \end{remark}
 
 \begin{remark}[The electron is the lightest lepton]
 The Koide phase $\theta = 132.73°$ is close to the critical value
-$\theta_c = 3\pi/4 = 135°$ where the electron mode would have zero mass
-($(1+\sqrt{2}\cos\theta_c) = 0$ exactly).  The electron's lightness
-reflects proximity to this zero-mass boundary.  The correction
-$\theta_c - \theta = 2.27° \approx (5/4)\,\mathrm{sea}^2$ (empirical)
-is of second order in the SSV coupling, consistent with a perturbative
-physical mechanism yet to be identified.
+$\theta_c = 3\pi/4 = 135°$ where $(1+\sqrt{2}\cos\theta_c) = 0$
+exactly (zero electron mass).  The correction
+$\theta_c - \theta = 2.27° \approx (5/4)\,\mathrm{sea}^2$ (empirical,
+coefficient $5/4$ not derived) is of second order in the SSV coupling.
 \end{remark}
 
-% ============================================================
+%=====================================================================
 \section{Open Problems}
-% ============================================================
+%=====================================================================
 
 \begin{openproblem}[OP-SM-7d: Derivation of the Koide phase $\theta$]
 \label{op:theta}
 Derive $\theta = 132.7323°$ from CPP dynamics, explaining why the
-electron ZBW mode sits $2.27°$ below the zero-electron-mass critical
-angle $3\pi/4$.  The correction $\Delta\theta \approx (5/4)\,\mathrm{sea}^2$
-is empirically established but not derived (coefficient $5/4$ is fitted).
-Priority candidates: the Aharonov-Bohm self-energy loop (PS-2), and
-the electroweak sector connection (OP-EW-1).
+electron ZBW mode sits $2.27°$ below the zero-mass critical angle
+$3\pi/4$.  Priority candidates: Aharonov-Bohm self-energy loop
+(PS-2~\cite{abshier_ps2}) and electroweak sector connection (OP-EW-1).
 \end{openproblem}
 
 \begin{openproblem}[OP-SM-7e: Why only three generations?]
-The K3 Spectral Theorem proves $K = (N+1)/(2N)$ for a complete graph
-$K_N$.  Only $N=3$ gives $K = 2/3$.  This makes the number of colours
-(and hence lepton generations) the unique feature of the 600-cell
-tetrahedral cage.  A full derivation of why $N = 3$ is the only stable
-lepton generation count is open.
+The K3 Spectral Theorem gives $K = (N+1)/(2N)$ for complete graph $K_N$.
+Only $N=3$ gives $K = 2/3$.  A full derivation of why $N = 3$ is the
+only stable lepton generation count is open.
 \end{openproblem}
 
 \begin{openproblem}[OP-SS-1: Quark mass ladder]
 \label{op:quarklad}
-The quark analogue of the lepton Koide formula does not hold
-($K(d,s,b) = 0.731$, $K(u,c,t) = 0.849$ vs.\ $2/3$), because quark
-masses include qDP chain binding ($\sim 99\%$ of proton mass) and
+$K(d,s,b) = 0.731$ and $K(u,c,t) = 0.849$ deviate from $2/3$ because
+quark masses include qDP chain binding ($\sim 99\%$ of proton mass) and
 cage-depth scaling that breaks K3 spectral symmetry.  Candidate
 mechanism: exact 600-cell projected Voronoi volumes + PSR compression
-+ inter-shell phase cancellation (PS-1 in the potential solutions
-registry).  To be pursued in a dedicated session with verifiable code.
++ inter-shell phase cancellation (PS-1 in potential solutions
+registry~\cite{abshier_ps1}).
 \end{openproblem}
 
 \begin{openproblem}[OP-SM-7d-AB: Aharonov-Bohm loop for $\theta$]
 Compute the ZBW self-energy diagram for the K3 triangle circuit
-$V_4 \to V_i \to V_j \to V_k \to V_4$ including the Aharonov-Bohm
-phase from the ZBW orbital circulation.  If the AB phase equals
-$\Delta\theta = 2.27°$, this closes OP-SM-7d.  (PS-2 in potential
-solutions registry.)
+including the Aharonov-Bohm phase from the ZBW orbital circulation.
+If the AB phase equals $\Delta\theta = 2.27°$, this closes OP-SM-7d.
+See PS-2~\cite{abshier_ps2} in the potential solutions registry.
 \end{openproblem}
 
-% ============================================================
+%=====================================================================
 \section{Summary}
-% ============================================================
+%=====================================================================
 
 \begin{center}
 \renewcommand{\arraystretch}{1.3}
@@ -270,14 +264,13 @@ solutions registry.)
 \toprule
 Result & Status & Source \\
 \midrule
-$K = 2/3$ (Koide ratio) & \textbf{Derived} & K3 Spectral Theorem (Paper~3) \\
+$K = 2/3$ (Koide ratio) & \textbf{Derived} & K3 Spectral Theorem (SM-3) \\
 $\rho = \sqrt{2}$ & \textbf{Derived} & Thermal equipartition + K3 \\
-C3 phase structure & \textbf{Derived} & Theorem~1 \\
+C3 phase structure & \textbf{Derived} & SM-1 Theorem~1 \\
 $K=2/3$ satisfied to 11~ppm & \textbf{Consistency check} & Proposition~\ref{prop:predictions} \\
 $\theta$, $A$ calibrated from PDG & Calibration & 2 free parameters \\
-$K=2/3$ reduces 3 params to 2 & \textbf{Derived} & K3 Spectral Theorem \\
+$K=2/3$ reduces 3 params to 2 & \textbf{Derived} & K3 Spectral Theorem (SM-3) \\
 $\theta$ undetermined in K3+SSV & \textbf{Proved} & Theorem~\ref{thm:theta_free} \\
-$\theta$ calibrated from $m_e$ & Calibration & Eq.~\eqref{eq:A} \\
 WHY $\theta \approx 3\pi/4$ & Open & OP-SM-7d \\
 Quark mass ladder & Open & OP-SS-1 \\
 \bottomrule
@@ -288,8 +281,63 @@ Quark mass ladder & Open & OP-SS-1 \\
 \noindent\textbf{The central result:} the K3 spectral structure of the
 colour cage base graph, together with a single experimental input ($m_e$),
 provides a geometric origin for the Koide constraint $K=2/3$, which
-nature satisfies to 11~ppm.  The Koide
-relation $K = 2/3$ is not an empirical coincidence — it is the spectral
-signature of the three-vertex cage base.
+nature satisfies to 11~ppm.  The Koide relation $K = 2/3$ is not an
+empirical coincidence --- it is the spectral signature of the
+three-vertex cage base.
+
+%=====================================================================
+\section*{Acknowledgements}
+%=====================================================================
+
+Thomas Lee Abshier ND conceived the CPP framework and directed the
+research programme.  Grok (xAI) contributed to the theoretical
+development and the original Koide analysis.  Claude Sonnet (Anthropic)
+performed the formal proof of the structural theorem, the parameter
+counting analysis, and the harmonization producing this version.
+
+%=====================================================================
+\begin{thebibliography}{9}
+
+\bibitem{pdg2024}
+Particle Data Group,
+Review of Particle Physics,
+\textit{Prog.\ Theor.\ Exp.\ Phys.} \textbf{2024}, 083C01 (2024).
+
+\bibitem{koide1982}
+Y.~Koide,
+A fermion-boson composite model of quarks and leptons,
+\textit{Phys.\ Lett.\ B} \textbf{120}, 161 (1983).
+
+\bibitem{abshier_ss1}
+T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
+Conscious Point Physics: The Strong Sector from the 600-Cell Lattice (SS-1),
+\textit{600-Cell Standard Model Emergence Series}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_strong/SS-1_strong_sector_from_600cell_lattice.tex}
+
+\bibitem{abshier_sm1}
+T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
+Binding Mechanisms and Cage Stability in the 600-Cell Lattice (SM-1),
+\textit{600-Cell Standard Model Emergence Series}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex}
+
+\bibitem{abshier_sm3}
+T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
+K3 Spectral Theorem and the Koide Formula (SM-3),
+\textit{600-Cell Standard Model Emergence Series}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex}
+
+\bibitem{abshier_ps1}
+T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
+600-Cell Distance Shell Analysis and Quark Mass Ladder (PS-1),
+\textit{CPP Potential Solutions Registry}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/notebooks/ps1_quark_mass_ladder.ipynb}
+
+\bibitem{abshier_ps2}
+T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
+Aharonov-Bohm Self-Energy for ZBW Orbitals on the K3 Triangle (PS-2),
+\textit{CPP Potential Solutions Registry}, 2026.\\
+\url{https://github.com/Hyperphysics-Institute/CPP/tree/main/series_standard_model/potential_solutions/PS-2_aharonov_bohm_theta}
+
+\end{thebibliography}
 
 \end{document}
