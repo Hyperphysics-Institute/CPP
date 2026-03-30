@@ -1,215 +1,372 @@
-# Conscious Point Physics (CPP)
+# CPP Open Problems Registry
 
-**A geometric, discrete framework deriving the Standard Model from the 600-cell polytope**
-
-**Authors:** Thomas Lee Abshier, ND — Claude Sonnet & Opus (Anthropic) — Grok (xAI)  
-**Institution:** Hyperphysics Institute — [hyperphysics.com](https://hyperphysics.com)  
-**Last updated:** 27 March 2026
+**GitHub:** `CPP/open_problems/`
+**Last updated:** 29 March 2026
+**Maintainer:** Thomas Lee Abshier, Hyperphysics Institute
 
 ---
 
-## What This Is
+## Purpose
 
-This repository contains the complete theoretical programme of Conscious Point Physics (CPP): a speculative framework in which the Standard Model gauge structure, charge quantisation, lepton mass ratios, and neutrino mixing emerge from the geometry of the 600-cell polytope (120 vertices, golden-ratio edge lengths, H₄ symmetry group).
+This directory is the central research frontier for Conscious Point
+Physics.  Every open problem in the programme is registered here with
+its current status, evidence base, suggested approach, and connections
+to other problems.
 
-The framework rests on seven core postulates (see [`postulates_and_theorems.md`](postulates_and_theorems.md)) and derives its results from 600-cell lattice geometry plus a single calibration constant. Everything claimed as "derived" is backed by runnable code. Everything open is registered in [`open_problems/`](open_problems/).
-
-**If you want to know what CPP claims and what is proved, read the two registry files first:**
-- [`paper_catalog.md`](paper_catalog.md) — every paper, its ID, status, and location
-- [`postulates_and_theorems.md`](postulates_and_theorems.md) — every postulate, theorem, corollary, conjecture, and falsified claim
-
----
-
-## The Theory in One Paragraph
-
-Conscious Points (CPs) occupy vertices of a 600-cell lattice. They interact via Space Stress Vector (SSV) gradients and oscillate as Dipole Pairs (DPs) at Zitterbewegung frequencies. The tetrahedral cells of the 600-cell host quark colour (SU(3)_c); the icosahedral vertex coordination hosts the electroweak sector (SU(2)_L × U(1)_Y). The equilateral triangle K₃ formed by the three base vertices of each tetrahedral cage encodes both charge quantisation (δ = 1/3, combinatorial) and the Koide lepton mass relation (K = 2/3, spectral). A single geometric invariant α_geom ≈ 0.5594, computed from the 600-cell Voronoi stiffness integral, threads through the relativistic, electromagnetic, and strong sectors.
+A problem moves from **OPEN** → **PARTIAL** → **SOLVED** as work
+progresses.  When solved, the status line is updated and a link to the
+resolving paper is added.  No problem file is ever deleted — the
+history of what was tried and why it failed is as valuable as the
+final solution.
 
 ---
 
-## The Four K₃ Results
+## How to use this directory
 
-The same equilateral triangle — the base of the 600-cell tetrahedral cage — gives four distinct Standard Model quantities:
-
-| Result | Value | K₃ structure | Paper |
-|--------|-------|--------------|-------|
-| Charge quantisation | δ = 1/3 (exact) | Combinatorial: 3 equal vertices, completeness | SM-1 |
-| Koide lepton mass ratio | K = 2/3 (exact) | Spectral: eigenvalue ratio λ₊/\|λ₋\| = 2:1 | SM-3 |
-| Lepton mass constraint | m_τ from m_e + m_μ | Vertex occupation ∝ \|ψᵢ\|² | SM-4 |
-| Tribimaximal PMNS mixing | U_TBM (exact, zeroth order) | Eigenvector–vertex change of basis | SM-5 |
-
----
-
-## Key Derived Constants
-
-| Constant | Value | Source |
-|----------|-------|--------|
-| φ (golden ratio) | (1+√5)/2 ≈ 1.6180 | 600-cell vertex coordinates |
-| α_geom | 3(11+5√5)√(5+√5)/320 ≈ 0.5594 | Voronoi stiffness integral (SS-T4) |
-| k_SM | α_geom/(12φ²) ≈ 0.01781 | SS-T5 |
-| sea_strength | 10 × k_SM ≈ 0.1780 | SS-T6 |
-| δ (charge fraction) | 1/3 (exact) | SM-T1 |
-| K (Koide ratio) | 2/3 (exact) | SM-T2 |
+- **Finding a problem to work on:** scan the master table below,
+  filter by priority and status.
+- **Starting work on a problem:** read the `.md` file in full before
+  beginning — it records what has already been tried.
+- **Reporting progress:** update the `.md` file with new findings,
+  even partial ones.  Stage numbers in
+  `development_strong_series.md` and equivalent development logs
+  are the canonical provenance trail.
+- **Solving a problem:** add the resolving paper reference and change
+  status to SOLVED.  Update any downstream problems that were waiting
+  on this one.
 
 ---
 
-## What Is Proved, What Is Open, What Is Falsified
+## Master Problem Table
 
-### Proved (14 theorems)
+### OP-SS — Strong Sector (14 problems)
 
-**Strong sector (SS-1):** SU(3) algebra from tetrahedral hopping (exact) · Gluon masslessness · β₀ = 7 · α_geom exact closed form · k_SM and sea_strength derived · GMO relations · Hadron decuplet · Quark mass ordering
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SS-1](OP-SS/OP-SS-1_quark_mass_formula.md) | Quark mass formula $M_q(n_\text{layers})$ | HIGHEST | PARTIAL |
+| [OP-SS-2](OP-SS/OP-SS-2_three_generations.md) | Three SM generations from cage geometry | HIGH | OPEN |
+| [OP-SS-3](OP-SS/OP-SS-3_chiral_condensate.md) | Chiral condensate $\langle\bar{q}q\rangle$ from ZBW | MEDIUM | OPEN |
+| [OP-SS-4](OP-SS/OP-SS-4_two_loop_beta.md) | Two-loop $\beta_1$ from CPP dynamics | MEDIUM | OPEN |
+| [OP-SS-5](OP-SS/OP-SS-5_string_tension.md) | String tension $\sigma$ from sea\_strength | HIGH | PARTIAL |
+| [OP-SS-6](OP-SS/OP-SS-6_glueball_mass.md) | Glueball mass from tetrahedral hDP loop | MEDIUM | OPEN |
+| [OP-SS-7](OP-SS/OP-SS-7_lambda_qcd.md) | $\Lambda_\text{QCD}$ from PSR saturation | MEDIUM | OPEN |
+| [OP-SS-8](OP-SS/OP-SS-8_nucleon_magnetic_moments.md) | Nucleon magnetic moments from ZBW | HIGH | OPEN |
+| [OP-SS-9](OP-SS/OP-SS-9_charge_quantisation.md) | Prove $\delta = 1/3$ from 600-cell geometry | HIGH | ✅ SOLVED (29 Mar 2026) |
+| [OP-SS-10](OP-SS/OP-SS-10_nuclear_binding.md) | Nuclear binding energy from qDP insertion | HIGH | OPEN |
+| [OP-SS-11](OP-SS/OP-SS-11_su3_operator_uniqueness.md) | Uniqueness of SU(3) operator mapping | HIGH | OPEN |
+| [OP-SS-12](OP-SS/OP-SS-12_w_bracelet_polarity_inversion.md) | W bracelet polarity inversion from CPP | HIGH | OPEN |
+| [OP-SS-13](OP-SS/OP-SS-13_zbw_delta_quantitative.md) | ZBW mechanism quantitative agreement with $\delta=1/3$ | MEDIUM | OPEN |
+| [OP-SS-14](OP-SS/OP-SS-14_deconfinement_temperature.md) | QCD deconfinement temperature from CPP | MEDIUM | OPEN |
 
-**Standard Model (SM-1 through SM-5):** δ = 1/3 charge quantisation · K = 2/3 Koide ratio · K3 postulates derived from CPP axioms · TBM neutrino mixing (zeroth order) · θ_Koide undetermined in K3+SSV (structural theorem SM-T6)
+### OP-SM — Standard Model Emergence (7 problems)
 
-### Open (registered in [`open_problems/`](open_problems/))
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SM-1](OP-SM/OP-SM-1_k_constant_derivation.md) | Derive $k \approx 0.0185$ from 600-cell geometry | HIGHEST | ✅ SOLVED (23 Mar 2026) |
+| [OP-SM-2](OP-SM/OP-SM-2_k_vs_sea_strength.md) | Reconcile $k = 0.0185$ with sea\_strength $= 0.185$ | HIGH | ✅ SOLVED (23 Mar 2026) |
+| [OP-SM-3](OP-SM/OP-SM-3_epsilon_correction.md) | $\epsilon$ correction factor | MEDIUM | OPEN |
+| [OP-SM-4](OP-SM/OP-SM-4_capotauro_mechanism.md) | Capotauro mechanism for TBM corrections | HIGH | OPEN |
+| [OP-SM-5](OP-SM/OP-SM-5_pmns_mixing_angles.md) | PMNS mixing angle corrections beyond TBM | HIGH | OPEN |
+| [OP-SM-6](OP-SM/OP-SM-6_cosmological_constant.md) | Cosmological constant from CPP vacuum | HIGH | OPEN |
+| [OP-SM-7](OP-SM/OP-SM-7_koide_derivation.md) | Koide phase $\theta = 132.73°$ derivation | HIGHEST | OPEN |
 
-| Count | Series | Key problems |
-|-------|--------|-------------|
-| 10 | OP-SS | Quark mass formula, string tension, chiral condensate, 2-loop β, glueball, Λ_QCD |
-| 10 | OP-SM | Koide phase θ, three generations, Capotauro, TBM corrections, cosmological constant |
-| 8 | OP-SR | PSR formula, full Einstein equations, Big Bang, equivalence principle |
-| 6 | OP-EW | η derivation, unified mass formula, chirality |
-| 7 | OP-QM | Born rule, Schrödinger derivation, spin, entanglement |
-| 2 | OP-GLOBAL | Three generations (global), SM unification |
+### OP-SR — Special Relativity (8 problems)
 
-### Falsified (recorded to prevent rework)
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SR-1](OP-SR/OP-SR-1_psr_reduction_formula.md) | PSR reduction formula from first principles | HIGH | OPEN |
+| [OP-SR-2](OP-SR/OP-SR-2_k_constant.md) | Derive $k = l_P^3/E_P$ prefactor geometrically | HIGH | OPEN |
+| [OP-SR-3](OP-SR/OP-SR-3_ssv_definition.md) | SSV definition from DP density | MEDIUM | OPEN |
+| [OP-SR-4](OP-SR/OP-SR-4_full_einstein_equations.md) | Full Einstein field equations from SSV | HIGH | OPEN |
+| [OP-SR-5](OP-SR/OP-SR-5_cosmological_constant.md) | Cosmological constant from holographic vacuum | MEDIUM | OPEN |
+| [OP-SR-6](OP-SR/OP-SR-6_big_bang.md) | Big Bang as initial 600-cell state | MEDIUM | OPEN |
+| [OP-SR-7](OP-SR/OP-SR-7_gp_exclusion.md) | Grid Point exclusion principle | MEDIUM | OPEN |
+| [OP-SR-8](OP-SR/OP-SR-8_equivalence_principle.md) | Equivalence principle from SSV geometry | HIGH | OPEN |
 
-| Conjecture | Why it fails | Reference |
-|------------|-------------|-----------|
-| C₆₀ (60 vertices) as top quark cage | No 60-vertex distance shell exists in the 600-cell | PS-1, March 2026 |
-| φ^(3(l-1)) quark mass scaling | Actual shell volumes deviate by 3–8× | PS-1, March 2026 |
-| Aharonov-Bohm loop for θ_Koide | C3 symmetry prevents degeneracy breaking | Session F |
-| 4D embedding perturbation for θ | C3 preserved exactly under all tested perturbations | Session G |
-| Self-consistent ZBW feedback for θ | Converges to trivial fixed point θ = 180° | Session L |
-| Löwdin downfolding (K4→K3) for θ | Apex is dark to antibonding modes | Session E |
+### OP-EW — Electroweak Sector (6 problems)
 
-> **Note on the last four entries:** Sessions E, F, G, and L are not independent failures — they are the four mechanisms tested under the **structural theorem SM-T6** (proved), which establishes that no mechanism within the K3+SSV framework can select the Koide phase θ, because C3 symmetry leaves the antibonding subspace degenerate for any such perturbation. The theorem is the umbrella; the four falsified mechanisms are what was tested to establish it. The correct next step is the electroweak sector (EW series), not further K3+SSV mechanisms.
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-EW-1](OP-EW/OP-EW-1_eta_derivation.md) | Derive $\eta \sim 10^{-17}$ (Planck-to-weak) | HIGHEST | OPEN |
+| [OP-EW-2](OP-EW/OP-EW-2_unified_mass_formula.md) | Unified boson mass formula | HIGH | OPEN |
+| [OP-EW-3](OP-EW/OP-EW-3_loop_density.md) | Loop density 4D projection factor | MEDIUM | OPEN |
+| [OP-EW-4](OP-EW/OP-EW-4_mass_ratios_eigenvalues.md) | Boson mass ratios from eigenvalue ratios | HIGH | OPEN |
+| [OP-EW-5](OP-EW/OP-EW-5_W0_virtual.md) | W$^0$ virtual particle: quantitative properties | MEDIUM | OPEN |
+| [OP-EW-6](OP-EW/OP-EW-6_chirality.md) | Chirality from eigenvalue-weighted phase bias | MEDIUM | OPEN |
+
+### OP-QM — Quantum Mechanics (7 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-QM-1](OP-QM/OP-QM-1_born_rule.md) | Born rule from CPP statistics | HIGH | OPEN |
+| [OP-QM-2](OP-QM/OP-QM-2_schrodinger_derivation.md) | Schrödinger equation from ZBW diffusion | HIGH | OPEN |
+| [OP-QM-3](OP-QM/OP-QM-3_spin_pauli_exclusion.md) | Spin and Pauli exclusion from cage geometry | HIGH | OPEN |
+| [OP-QM-4](OP-QM/OP-QM-4_decoherence_timescale.md) | Decoherence timescale from Nexus coupling | MEDIUM | OPEN |
+| [OP-QM-5](OP-QM/OP-QM-5_entanglement_threshold.md) | Entanglement threshold distance | MEDIUM | OPEN |
+| [OP-QM-6](OP-QM/OP-QM-6_discrete_spectra.md) | Discrete spectra from lattice quantisation | MEDIUM | OPEN |
+| [OP-QM-7](OP-QM/OP-QM-7_qft_second_quantization.md) | QFT second quantisation from CPP | HIGH | OPEN |
+
+### OP-QM-new — Quantum Mechanics from Partner-Switching (8 problems, registered 30 March 2026)
+
+*All eight problems arose from the SM-1 mechanism essay discussion of ZBW oscillation mechanics and the identification of stochastic partner exchange as the physical mechanism underlying quantum uncertainty, tunneling, virtual particles, and atomic orbitals. Full problem statements in propositions.md §3.*
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| OP-QM-new-1 | Planck's constant ℏ from ZBW partner-switching statistics | HIGHEST | OPEN |
+| OP-QM-new-2 | Stochastic variation of ZBW period from bulk Sea fluctuations | MEDIUM | OPEN |
+| OP-QM-new-3 | Biased vs unbiased tunneling rates from CPP rogue wave statistics | HIGH | OPEN |
+| OP-QM-new-4 | Derive r_chain (radial DP chain equilibrium length) from SSV₀ and sea_strength | HIGH | OPEN |
+| OP-QM-new-5 | Chain contribution to electron rest mass — SM-1 calibration revision needed | HIGH | OPEN |
+| OP-QM-new-6 | Derive Schrödinger equation from DP chain standing wave stability conditions | HIGH | OPEN |
+| OP-QM-new-7 | Derive r_crit and pair production threshold from CPP primitives | HIGH | OPEN |
+| OP-QM-new-8 | Temperature dependence of rest mass from CPP | MEDIUM | OPEN |
+
+### OP-SD — Foundations / Superdeterminism (5 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SD-1](OP-SD/OP-SD-1_K0_derivation.md) | Explicit $K_0(\lambda)$ from single-CP integral | HIGH | OPEN |
+| [OP-SD-2](OP-SD/OP-SD-2_interpolation_proof.md) | Non-perturbative proof of interpolation conjecture | HIGH | OPEN |
+| [OP-SD-3](OP-SD/OP-SD-3_amplitudes_A5_A3.md) | Amplitudes $A_5 = \phi^{-3}/(2\pi)$, $A_3/A_5$ | HIGH | OPEN |
+| [OP-SD-4](OP-SD/OP-SD-4_multiqubit_K.md) | Many-body $K$ for entangled multi-qubit states | MEDIUM | OPEN |
+| [OP-SD-5](OP-SD/OP-SD-5_apparatus_SSV.md) | Apparatus DP Sea anisotropy $\delta_0$ from SSV | MEDIUM | OPEN |
+
+### OP-GLOBAL — Cross-Series (2 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-G-1](OP-GLOBAL/OP-G-1_three_generations_global.md) | Three SM generations: quarks + leptons unified | HIGHEST | OPEN |
+| [OP-G-2](OP-GLOBAL/OP-G-2_SM_unification.md) | Full SM from single 600-cell: all parameters | HIGHEST | OPEN |
 
 ---
 
-## Repository Structure
+## Recently Resolved (29 March 2026 Session)
+
+| ID | Resolution | Resolving paper |
+|---|---|---|
+| OP-SS-9 | $\delta = 1/3$ proved from C₃ symmetry + cage completeness | SM-1 Theorem 1 (v6) |
+
+## Previously Resolved (23 March 2026)
+
+| ID | Resolution | Resolving paper |
+|---|---|---|
+| OP-SM-1 | $k_{\rm SM} = \alpha_{\rm geom}/(12\varphi^2) \approx 0.01781$ | SS-1 §8 + SR-1 companion |
+| OP-SM-2 | sea\_strength $= 10 \times k_{\rm SM}$ (factor $N_{\rm lattice}/z = 120/12$) | SS-1 §8 |
+
+---
+
+## Conjectures Register
+
+See [conjectures-SS.md](conjectures-SS.md) for:
+- **CJ-SS-1:** W₀ bracelet locally-linear coupling face (registered 29 Mar 2026)
+- **CJ-SS-2:** Universal qCP polarity switching in quark flavor transitions (registered 29 Mar 2026)
+- **Candidate Postulate P-SS-1:** 2:1 ZBW orbital frequency ratio for quarks
+
+---
+
+## Dependency Graph
 
 ```
-CPP/
-├── README.md                          ← you are here
-├── INDEX.md                           ← directory-level navigation
-├── paper_catalog.md                   ← master list of all papers with IDs and status
-├── postulates_and_theorems.md         ← registry of all postulates, theorems, falsified claims
-├── LICENSE / LICENSE-CC-BY-4.0.md
-│
-├── series_strong/                     ← Strong sector (SS series)
-│   ├── cpp_ss_unified_v2.tex          ← SS-1: submission-ready unified paper
-│   ├── cpp_ss1–5_*.tex                ← Individual companion papers v1
-│   ├── mc_su3_algebra.py/.ipynb       ← Monte Carlo verification (33/33 checks pass)
-│   ├── notebooks/                     ← 14 derivation/verification notebooks
-│   └── figures/
-│
-├── series_standard_model/             ← Standard Model emergence (SM series)
-│   ├── papers/                        ← SM-1 through SM-5 + tech notes + dev logs
-│   ├── notebooks/                     ← PS-1 quark mass ladder analysis
-│   ├── p1-*/                          ← Paper 1 topic directories
-│   ├── p2-*/                          ← Paper 2 topic directories (27 subdirectories)
-│   ├── cpp-zbw-mixing-fractions/      ← ZBW mixing notebooks and calculator
-│   ├── suppression/                   ← Five suppression mechanisms with notebooks
-│   ├── INDEX.md / README.md           ← Series-level navigation
-│   └── potential_solutions.md
-│
-├── series_relativity/                 ← Special Relativity (SR series)
-│   ├── main_special_relativity_emergence/  ← SR-1 paper + figures + notebooks
-│   ├── companion_papers/              ← 22 companion papers (c01–c22)
-│   ├── 600cell_k_alpha_geom_consistency_fix.py  ← α_geom verification code
-│   ├── k_prefactor_resolution.md      ← α_geom correction documentation
-│   └── lattice-derived_coupling_constant_k.md
-│
-├── series_electroweak/                ← Electroweak sector (EW series)
-│   ├── cpp_ew1–5_*.tex                ← EW papers (need consolidation)
-│   ├── mc_weinberg_unification.*      ← Monte Carlo verification
-│   └── figures/
-│
-├── series_quantum_mechanics/          ← QM foundations (QM series)
-│   ├── cpp2040a–f_*/                  ← Six QM topic papers
-│   └── development/
-│
-├── series_foundations/                ← Foundational papers
-│   ├── cpp_sd1–5_*.tex                ← Superdeterminism papers (SD-1 through SD-5)
-│   ├── TN-SR-1_vacuum_energy_*.tex    ← Technical note on vacuum energy
-│   ├── dp-sea-polarization/           ← DP Sea physics
-│   └── dp_sea_composition/
-│
-├── series_nuclear/                    ← Nuclear physics (planned)
-│
-├── series_experimental_phenomena/     ← Experimental connections
-│   ├── 600-cell_electron_g-2/         ← Electron g-2 analysis
-│   └── swarm-analysis-chiral_evidence/← Multi-scale swarm analysis (58 entries)
-│
-├── series_synthesis/                  ← Cross-series synthesis
-│   └── cpp_qm_synthesis_submission.tex ← QM synthesis paper
-│
-├── open_problems/                     ← All registered open problems
-│   ├── OP-SS/  (10 problems)
-│   ├── OP-SM/  (10 problems)
-│   ├── OP-SR/  (8 problems)
-│   ├── OP-EW/  (6 problems)
-│   ├── OP-QM/  (7 problems)
-│   ├── OP-GLOBAL/ (2 problems)
-│   └── OP-SS-1_quark_mass_ladder_ps1_analysis.md
-│
-└── archive/                           ← Superseded material
-    └── legacy_structure/
+OP-SS-9 (δ=1/3) ✅ SOLVED ───────────────────────────────────► OP-G-2
+OP-SS-13 (ZBW δ=1/3) ──────────────────────────────────────► OP-SS-9 (confirmation)
+OP-SS-11 (SU3 uniqueness) ─────────────────────────────────► SS-1 Thm 1 (strengthens)
+OP-SS-12 (W bracelet) ─────────────────────────────────────► OP-G-2
+OP-SS-14 (deconfinement T) ──────────────────────────────── depends on OP-SS-5
+OP-SS-5 (σ) ─────► OP-SS-7 (Λ_QCD) ────────────────────────► OP-G-2
+                ├── OP-SS-10 (nuclear)
+                ├── OP-SS-6 (glueball)
+                └── OP-SS-14 (deconfinement T)
+OP-SS-1 (M_q) ───► OP-SS-3 (chiral) ────────────────────────► OP-G-1
+              └──► OP-SS-2 (generations) ───────────────────► OP-G-1
+OP-SS-8 (μ_N) ─────────────────────────────────────────────► OP-G-2
+OP-SS-4 (β₁)  ─────────────────────────────────────────────► OP-G-2
+
+OP-SM-1 (k) ✅ SOLVED ─────────────────────────────────────► OP-G-2
+OP-SM-2 (k/sea) ✅ SOLVED ─────────────────────────────────► OP-G-2
+OP-SM-7 (θ_Koide) ─────────────────────────────────────────► OP-G-2
+
+OP-EW-1 (η)   ─────────────────────────────────────────────► OP-G-2
+OP-EW-2 (masses) ──► OP-EW-4 (ratios) ─────────────────────► OP-G-2
+
+OP-SD-1 (K₀)  ──► OP-SD-2 (interp.) ──► OP-SD-3 (A₅, A₃)
 ```
 
 ---
 
-## Submission Status
+## Recommended Attack Order (updated 29 March 2026)
 
-| Paper ID | Title | Status |
-|----------|-------|--------|
-| **SS-1** | The Strong Sector from the 600-Cell Lattice | **Submission-ready** |
-| **SM-1** | Binding Mechanisms and Cage Stability (v6) | **Submission-ready** |
-| **SM-2** | Mass Generation from Geometric Hierarchies (v30) | **Submission-ready** |
-| **SM-3** | K3 Spectral Theorem and the Koide Formula (v5) | **Submission-ready** |
-| **SM-4** | Charged Lepton Masses from K3 | **Submission-ready** |
-| **SM-5** | Tribimaximal Neutrino Mixing from K3 | **Submission-ready** |
-| **SR-1** | Special Relativity from 600-Cell Geometry (v17) | **Submission-ready** |
-| SM-TN-1 | Reconstruction of Original CPP Mass Calculations | Ready |
-| SM-TN-2 | Bridge from Original to 600-Cell | Needs minor corrections |
-| EW-1–5 | Electroweak series (v2 in repo) | Needs consolidation |
-| QM-1 | QM Synthesis | Needs review |
-| SD-1–5 | Superdeterminism series | Needs review |
-| CC-1 | CPP Analysis of Ξcc⁺ (LHCb Moriond 2026) | Planned — requires SS-1 on OSF first |
-
----
-
-## Verification Standards
-
-Every numerical claim in a submission-ready paper is backed by runnable code. The standard: if a result cannot be reproduced by executing a notebook or script, it does not appear in a paper.
-
-Key verification code:
-- `series_strong/mc_su3_algebra.py` — 33/33 algebraic checks for SU(3) derivation
-- `series_relativity/600cell_k_alpha_geom_consistency_fix.py` — α_geom numerical verification
-- `series_standard_model/notebooks/ps1_quark_mass_ladder_verifiable.py` — PS-1 mass analysis
+1. **OP-SS-11** — Pure group theory; 1–2 page uniqueness argument.
+   Strengthens SS-1 Theorem 1 from possibility to necessity.
+2. **OP-SS-5** — One dimensional-analysis step from established mechanism.
+   Prerequisite for OP-SS-14.
+3. **OP-SS-13** — ZBW orbital calculation; confirms C₃ proof mechanically.
+4. **OP-SS-8** — Clear SU(6) + ZBW derivation path.
+5. **OP-SS-12** — Requires reading EW-2 first; high physical importance.
+6. **OP-SS-1** — Mechanism established; find the ZBW-frequency kernel.
+7. **OP-SD-1** — Resolves the superdeterminism amplitude conjecture.
+8. **OP-SS-3** — ZBW notebooks give the starting point.
+9. **OP-SS-10** — Needs OP-SS-5 as prerequisite.
+10. **OP-SS-14** — Needs OP-SS-5 as prerequisite.
+11. **OP-SS-6** — Extend $f_\text{geom}$ formula to cell-level loops.
+12. **OP-EW-1** — The hardest single problem; requires new scaling argument.
+13. **OP-G-1/G-2** — Capstone; emerges when all sector problems converge.
 
 ---
 
-## How to Navigate
+## Problem Count Summary
 
-1. **Start with** [`paper_catalog.md`](paper_catalog.md) — find the paper you want by its ID
-2. **Check status in** [`postulates_and_theorems.md`](postulates_and_theorems.md) — see what's proved vs open
-3. **Read the paper** in the appropriate `series_*/` directory
-4. **Check open problems** in [`open_problems/`](open_problems/) for what remains
-5. **See [`INDEX.md`](INDEX.md)** for a directory-by-directory map
-
----
-
-## Authorship
-
-- **Thomas Lee Abshier, ND** — Physical framework, theoretical direction, core insights
-- **Claude Sonnet & Opus (Anthropic)** — Derivations, code, paper writing, numerical verification, pre-submission review
-- **Grok (xAI)** — Conceptual contributions (PSR saturation, layer-depth counting, proton mass quantification)
-
-Contributions are credited per-session in development logs within each series directory.
+| Series | Total | Solved | Partial | Open |
+|--------|-------|--------|---------|------|
+| OP-SS (Strong) | 14 | 1 | 2 | 11 |
+| OP-SM (Standard Model) | 7 | 2 | 0 | 5 |
+| OP-SR (Special Relativity) | 8 | 0 | 0 | 8 |
+| OP-EW (Electroweak) | 6 | 0 | 0 | 6 |
+| OP-QM (Quantum Mechanics) | 7 | 0 | 0 | 7 |
+| OP-QM-new (Partner-Switching QM) | 8 | 0 | 0 | 8 |
+| OP-SD (Foundations) | 5 | 0 | 0 | 5 |
+| OP-GLOBAL | 2 | 0 | 0 | 2 |
+| **Total** | **57** | **3** | **2** | **52** |
 
 ---
 
-*License: Content CC-BY-4.0; Code MIT (see individual files).*  
-*Feedback, rigorous critiques, and falsification attempts are welcome.*  
-*Contact: drthomas007@protonmail.com*
+## Series Cross-Reference
+
+| Series | Development log | Open problem IDs |
+|---|---|---|
+| QM (2040a–f) | `series_QM/development_qm_series.md` | OP-QM-1 – OP-QM-7 |
+| Electroweak | `series_electroweak/development_ew_series.md` | OP-EW-1 – OP-EW-6 |
+| Strong | `series_strong/development_strong_series.md` | OP-SS-1 – OP-SS-14 |
+| Standard Model | `series_standard_model/development_sm_series.md` | OP-SM-1 – OP-SM-7 |
+| Special Relativity | `series_relativity/development_sr_series.md` | OP-SR-1 – OP-SR-8 |
+| Foundations | `series_foundations/` | OP-SD-1 – OP-SD-5 |
+| Nuclear | `series_nuclear/` (future) | OP-SS-10 feeds here |
+
+---
+
+## Purpose
+
+This directory is the central research frontier for Conscious Point
+Physics.  Every open problem in the programme is registered here with
+its current status, evidence base, suggested approach, and connections
+to other problems.
+
+A problem moves from **OPEN** → **PARTIAL** → **SOLVED** as work
+progresses.  When solved, the status line is updated and a link to the
+resolving paper is added.  No problem file is ever deleted — the
+history of what was tried and why it failed is as valuable as the
+final solution.
+
+---
+
+## How to use this directory
+
+- **Finding a problem to work on:** scan the master table below,
+  filter by priority and status.
+- **Starting work on a problem:** read the `.md` file in full before
+  beginning — it records what has already been tried.
+- **Reporting progress:** update the `.md` file with new findings,
+  even partial ones.  Stage numbers in
+  `development_strong_series.md` and equivalent development logs
+  are the canonical provenance trail.
+- **Solving a problem:** add the resolving paper reference and change
+  status to SOLVED.  Update any downstream problems that were waiting
+  on this one.
+
+---
+
+## Master Problem Table
+
+### OP-SS — Strong Sector (10 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SS-1](OP-SS/OP-SS-1_quark_mass_formula.md) | Quark mass formula $M_q(n_\text{layers})$ | HIGHEST | PARTIAL |
+| [OP-SS-2](OP-SS/OP-SS-2_three_generations.md) | Three SM generations from cage geometry | HIGH | OPEN |
+| [OP-SS-3](OP-SS/OP-SS-3_chiral_condensate.md) | Chiral condensate $\langle\bar{q}q\rangle$ from ZBW | MEDIUM | OPEN |
+| [OP-SS-4](OP-SS/OP-SS-4_two_loop_beta.md) | Two-loop $\beta_1$ from CPP dynamics | MEDIUM | OPEN |
+| [OP-SS-5](OP-SS/OP-SS-5_string_tension.md) | String tension $\sigma$ from sea\_strength | HIGH | PARTIAL |
+| [OP-SS-6](OP-SS/OP-SS-6_glueball_mass.md) | Glueball mass from tetrahedral hDP loop | MEDIUM | OPEN |
+| [OP-SS-7](OP-SS/OP-SS-7_lambda_qcd.md) | $\Lambda_\text{QCD}$ from PSR saturation | MEDIUM | OPEN |
+| [OP-SS-8](OP-SS/OP-SS-8_nucleon_magnetic_moments.md) | Nucleon magnetic moments from ZBW | HIGH | OPEN |
+| [OP-SS-9](OP-SS/OP-SS-9_charge_quantisation.md) | Prove $\delta = 1/3$ from 600-cell geometry | HIGH | OPEN |
+| [OP-SS-10](OP-SS/OP-SS-10_nuclear_binding.md) | Nuclear binding energy from qDP insertion | HIGH | OPEN |
+
+### OP-EW — Electroweak Sector (6 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-EW-1](OP-EW/OP-EW-1_eta_derivation.md) | Derive $\eta \sim 10^{-17}$ (Planck-to-weak) | HIGHEST | OPEN |
+| [OP-EW-2](OP-EW/OP-EW-2_unified_mass_formula.md) | Unified boson mass formula | HIGH | OPEN |
+| [OP-EW-3](OP-EW/OP-EW-3_loop_density.md) | Loop density 4D projection factor | MEDIUM | OPEN |
+| [OP-EW-4](OP-EW/OP-EW-4_mass_ratios_eigenvalues.md) | Boson mass ratios from eigenvalue ratios | HIGH | OPEN |
+| [OP-EW-5](OP-EW/OP-EW-5_W0_virtual.md) | W$^0$ virtual particle: quantitative properties | MEDIUM | OPEN |
+| [OP-EW-6](OP-EW/OP-EW-6_chirality.md) | Chirality from eigenvalue-weighted phase bias | MEDIUM | OPEN |
+
+### OP-SD — Foundations / Superdeterminism (5 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-SD-1](OP-SD/OP-SD-1_K0_derivation.md) | Explicit $K_0(\lambda)$ from single-CP integral | HIGH | OPEN |
+| [OP-SD-2](OP-SD/OP-SD-2_interpolation_proof.md) | Non-perturbative proof of interpolation conjecture | HIGH | OPEN |
+| [OP-SD-3](OP-SD/OP-SD-3_amplitudes_A5_A3.md) | Amplitudes $A_5 = \phi^{-3}/(2\pi)$, $A_3/A_5$ | HIGH | OPEN |
+| [OP-SD-4](OP-SD/OP-SD-4_multiqubit_K.md) | Many-body $K$ for entangled multi-qubit states | MEDIUM | OPEN |
+| [OP-SD-5](OP-SD/OP-SD-5_apparatus_SSV.md) | Apparatus DP Sea anisotropy $\delta_0$ from SSV | MEDIUM | OPEN |
+
+### OP-GLOBAL — Cross-Series (2 problems)
+
+| ID | Title | Priority | Status |
+|---|---|---|---|
+| [OP-G-1](OP-GLOBAL/OP-G-1_three_generations_global.md) | Three SM generations: quarks + leptons unified | HIGHEST | OPEN |
+| [OP-G-2](OP-GLOBAL/OP-G-2_SM_unification.md) | Full SM from single 600-cell: all parameters | HIGHEST | OPEN |
+
+---
+
+## Dependency Graph
+
+```
+OP-SS-9 (δ=1/3)  ──────────────────────────────────────────► OP-G-2
+OP-SS-5 (σ)  ────► OP-SS-7 (Λ_QCD) ──────────────────────► OP-G-2
+                ├── OP-SS-10 (nuclear)
+                └── OP-SS-6 (glueball)
+OP-SS-1 (M_q) ───► OP-SS-3 (chiral) ──────────────────────► OP-G-1
+              └──► OP-SS-2 (generations) ──────────────────► OP-G-1
+OP-SS-8 (μ_N) ──────────────────────────────────────────────► OP-G-2
+OP-SS-4 (β₁)  ──────────────────────────────────────────────► OP-G-2
+
+OP-EW-1 (η)   ──────────────────────────────────────────────► OP-G-2
+OP-EW-2 (masses) ──► OP-EW-4 (ratios) ─────────────────────► OP-G-2
+
+OP-SD-1 (K₀)  ──► OP-SD-2 (interp.) ──► OP-SD-3 (A₅, A₃)
+```
+
+---
+
+## Recommended Attack Order
+
+Problems are ordered by: (a) fewest prerequisites, (b) most tractable
+with current CPP tools, (c) highest leverage on downstream problems.
+
+1. **OP-SS-9** — Pure group theory; no new physics.  Closes the
+   charge quantisation question that underlies both strong and EW sectors.
+2. **OP-SS-5** — One dimensional-analysis step from established mechanism.
+3. **OP-SS-8** — Clear SU(6) + ZBW derivation path.
+4. **OP-SS-1** — Mechanism established; find the ZBW-frequency kernel.
+5. **OP-SD-1** — Resolves the superdeterminism amplitude conjecture.
+6. **OP-SS-3** — ZBW notebooks give the starting point.
+7. **OP-SS-10** — Needs OP-SS-5 as prerequisite.
+8. **OP-SS-6** — Extend $f_\text{geom}$ formula to cell-level loops.
+9. **OP-EW-1** — The hardest single problem; requires new scaling argument.
+10. **OP-G-1/G-2** — Capstone; emerges when all sector problems converge.
+
+---
+
+## Series Cross-Reference
+
+| Series | Development log | Open problem IDs |
+|---|---|---|
+| QM (2040a–f) | `series_QM/development_qm_series.md` | (to be catalogued) |
+| Electroweak | `series_electroweak/development_ew_series.md` | OP-EW-1 – OP-EW-6 |
+| Strong | `series_strong/development_strong_series.md` | OP-SS-1 – OP-SS-10 |
+| Foundations | `series_foundations/` | OP-SD-1 – OP-SD-5 |
+| Nuclear | `series_nuclear/` (future) | OP-SS-10 feeds here |
+| Leptons | `series_leptons/` (future) | OP-SS-1, OP-G-1 feed here |
