@@ -1,240 +1,195 @@
-# Reviews: SM-4 — Charged Lepton Masses from the K3 Spectral Theorem
+# Reviews and FAQ: SM-4 — Charged Lepton Masses from the K3 Spectral Theorem
 
-**Series:** 600-Cell Standard Model Emergence  
-**Document type:** Living review record — objections, responses, revisions  
-**Last updated:** 26 March 2026
+**Series:** 600-Cell Standard Model Emergence
+**Document type:** Living review record and FAQ
+**Last updated:** 30 March 2026
 
----
 
-## Purpose of This File
+# PART 1: FORMAL REVIEWS
 
-This document records all substantive reviews of SM-4, the responses to each
-criticism, and the resulting paper revisions. It is a companion to the SM-3
-reviews file and follows the same structure. SM-4 presents an unusual
-combination of a positive result (11 ppm consistency check) and a negative
-result (impossibility theorem for θ), and reviewer responses to these two
-components will likely diverge sharply.
 
----
+## Review 1: Claude Sonnet Internal Review and Harmonisation (March 2026)
 
-## Review 1: Claude Sonnet 4.0 (Internal, March 2026)
+**Reviewers:** Claude Sonnet (Anthropic) — iterative review across sessions
+**Date:** March 2026
+**Context:** SM-4 was written after the iterative sessions that developed
+SM-3. The paper's main revisions concerned precision of language (prediction
+vs consistency check), the formal proof of Theorem 2, and harmonisation.
 
-**Reviewer:** Claude Sonnet 4.0 (Anthropic) — proxy for skeptical physicist  
-**Date:** 26 March 2026  
-**Verdict:** Well-written, scientifically honest about scope  
-**Overall assessment:** "SM-4 is well-written and scientifically honest
-about its scope. The key strength is clearly distinguishing between derived
-results (K = 2/3) and calibrated parameters (θ, A)."
 
----
+### Objection 1.1: The Consistency Check Was Presented as a Prediction
 
-### Objection 1.1: Missing References (PS-1, PS-2)
+**The objection:** Early versions described the 0.004% and 0.001% mass
+agreements as CPP predictions. Since A and θ are calibrated from the same
+PDG data used to evaluate the agreement, these are consistency checks, not
+independent predictions.
 
-**The objection:**  
-"Several citations appear in text but not in bibliography: PS-1 (mentioned
-in OP-SS-1), PS-2 (mentioned in OP-SM-7d-AB)."
+**Assessment: VALID — fundamental distinction**
 
-**Assessment: VALID — straightforward fix**
+A prediction uses derived or separately calibrated inputs to forecast an
+untested value. A consistency check confirms that a constraint is satisfied
+by data already used in calibration. SM-4 calibrates A and θ from all three
+lepton masses and then confirms that the Koide formula holds to 11 ppm.
+The non-trivial content is that one derived constraint (K = 2/3) reduces
+three parameters to two without inconsistency.
 
-PS-1 and PS-2 are cited in the open problems section but had no bibitem
-entries. This is a simple omission.
-
-**Response/revision:**  
-Added `\bibitem{abshier_ps1}` and `\bibitem{abshier_ps2}` with GitHub URLs
-pointing to the quark mass ladder notebook and the Aharonov-Bohm potential
-solutions folder respectively. Citations in the open problems section updated
-accordingly.
+**Response/revision (v5):** Language changed throughout. The Proposition in
+§3 is now "Lepton mass consistency check at 11 ppm." A Remark explicitly
+states that the residuals reflect how precisely nature satisfies K = 2/3,
+not the precision of a CPP prediction.
 
 **Status: RESOLVED**
 
----
 
-### Objection 1.2: GitHub URLs Missing from Bibliography
+### Objection 1.2: Theorem 2 (Structural Impossibility of θ) Was Absent
 
-**The objection:**  
-"Consider adding repository links like other papers."
+**The objection:** Early versions noted that θ is "not derived" from K3+SSV
+and registered OPEN-P-SM-7d, but without proving the structural reason. This
+left open the possibility that θ could still be found within the framework.
 
-**Assessment: VALID — series standard**
+**Assessment: VALID — the negative result is the paper's deepest content**
 
-All CPP internal bibitems should have GitHub URLs from initial publication.
+After 11 mechanisms were tested and falsified (Sessions B through L of SM-3
+development), the structural reason emerged: C3 symmetry protects the
+antibonding degeneracy exactly. A formal proof was needed.
 
-**Response/revision:**  
-GitHub URLs added to all CPP bibitems (SS-1, SM-1, SM-3, PS-1, PS-2).
-
-**Status: RESOLVED**
-
----
-
-### Objection 1.3: \Sigma vs \sum in Abstract
-
-**The objection:**  
-"Equation 2.1: Consider using `\sum` instead of `\Sigma`."
-
-**Assessment: VALID — typographic consistency**
-
-The abstract used `\Sigma` while SM-3 used `\sum`. These render differently
-in LaTeX (`Σ` vs. `∑`). The `\sum` form (with automatic limits) is standard
-for displayed sums in mathematics.
-
-**Response/revision:**  
-Abstract corrected: `\Sigma m_i` → `\sum m_i`, `\Sigma\sqrt{m_i}` →
-`\sum\sqrt{m_i}`.
+**Response/revision (v5):** Theorem 2 added with the Löwdin downfolding
+proof. Key steps: effective Hamiltonian H_eff(E) = A_{K₃} − (1/E) v vᵀ;
+apex darkness ⟨φ₋|v⟩ = 0 exactly; antibonding eigenvalues remain −1 for all
+E; θ is structurally undetermined.
 
 **Status: RESOLVED**
 
----
 
-### Objection 1.4: PDG Uncertainty Estimates in Consistency Table
+### Objection 1.3: Parameter Counting Was Implicit
 
-**The objection:**  
-"The consistency check table would benefit from uncertainty estimates on
-the PDG values."
+**The objection:** The paper used "two free parameters" without making the
+count explicit or showing where each comes from.
 
-**Assessment: REJECTED — adding uncertainties would be misleading**
+**Assessment: VALID — clarity**
 
-The table shows CPP "predictions" vs. PDG central values. Adding PDG
-uncertainties would imply that CPP is making predictions at the sub-ppm
-level that can be compared to experimental precision. It cannot — the
-calibration to m_e absorbs one degree of freedom, and θ is calibrated from
-all three masses. The 0.004% and 0.001% figures are measures of how well
-nature satisfies K = 2/3, not of CPP predictive precision.
+**Response/revision (v5):** The Remark in §2 explicitly audits the count:
+three initial parameters (m_e, m_μ, m_τ); SM-3 derives ρ = √2 (reduces to
+two); SM-4 calibrates A from m_e and θ from PDG (both calibrated, zero
+remaining). Goal state after EW: one calibrated (A from m_e), one derived (θ).
 
-Adding PDG uncertainties would invite the misleading inference that CPP
-"agrees with experiment within errors," which misrepresents what the
-consistency check demonstrates. The current table with no error bars is
-more scientifically honest.
+**Status: RESOLVED**
 
-**Status: REJECTED — explanation recorded for future reviewers**
 
----
+### Objection 1.4: Series Harmonisation
 
-### Objection 1.5: Löwdin Downfolding Needs More Explanation
+**The objection:** "Paper 3" and "Paper 4" references; incomplete author
+line; no bibliography; incorrect series name.
 
-**The objection:**  
-"Section 4: The Löwdin downfolding explanation could be clearer for
-non-specialists."
+**Assessment: VALID**
 
-**Assessment: PARTIALLY VALID — belongs in philosophy file, not paper**
+**Response/revision (v5):** Eight harmonisation changes (H1–H8): series ID,
+author line, institution, date, packages, bibliography, acknowledgements,
+reference updates from "Paper N" to "SM-N."
 
-The proof of Theorem 4.1 is correct and complete for a physicist familiar
-with perturbation theory and effective Hamiltonians. The Löwdin downfolding
-technique is standard in condensed matter physics and does not require
-re-derivation here.
+**Status: RESOLVED**
 
-For a non-specialist audience, the intuitive explanation is: the apex vertex
-V₄ can only "see" the average of the three base vertices (the bonding mode)
-because it is connected to all three equally. It cannot distinguish between
-the two antibonding modes (which cancel out in the average). Therefore the
-apex can never select one antibonding direction over another, and θ remains
-undetermined.
 
-This intuitive explanation is appropriate for the philosophy file and for
-the book chapter on SM-4, but adding it to the paper would disrupt the
-mathematical flow.
-
-**Status: ADDRESSED IN PHILOSOPHY FILE**
-
----
-
-### Objection 1.6: siunitx Degree Symbols
-
-**The objection:**  
-"Degree symbols: Mix of `°` and text - consider using siunitx: `\ang{132.73}`"
-
-**Assessment: MINOR STYLE PREFERENCE — not applied**
-
-The `\ang{}` command from siunitx is cleaner LaTeX, but the degree symbol
-as used is not incorrect and is widely readable. Applying siunitx degree
-formatting throughout would be a purely cosmetic change that adds noise to
-the diff without affecting content. Deferred to a future formatting pass.
-
-**Status: DEFERRED**
-
----
-
-### Positive Observations from Review 1 (worth recording)
-
-Sonnet 4.0 identified the following as genuine strengths of SM-4:
-
-- "Clear scope definition: Excellent job distinguishing between what is
-  derived (K = 2/3) vs. calibrated (θ, A)"
-- "Honest parameter counting: Transparently shows that K = 2/3 reduces
-  3 parameters to 2, not a complete prediction"
-- "Structural theorem: Theorem 4.1 proving that θ is undetermined within
-  K3+SSV is mathematically rigorous"
-- "Good integration: Builds cleanly on SM-3 and connects to other papers"
-- "The consistency check showing 11 ppm agreement is genuinely impressive,
-  and the paper correctly frames this as a constraint satisfaction rather
-  than a prediction."
-
-These observations are recorded because they identify the aspects of SM-4
-that are most defensible under external scrutiny. Future reviewers who
-focus on the limitations (θ is not derived, A is calibrated) should be
-redirected to these strengths: the paper is designed to be honest about
-its limits, and that honesty is a feature, not a weakness.
-
----
-
-## Summary Table of Objections
+## Summary Table
 
 | # | Objection | Assessment | Status |
 |---|-----------|-----------|--------|
-| 1.1 | PS-1, PS-2 missing from bibliography | Valid | Resolved |
-| 1.2 | GitHub URLs missing | Valid (series standard) | Resolved |
-| 1.3 | \Sigma vs \sum in abstract | Valid typographic | Resolved |
-| 1.4 | PDG uncertainties in table | Rejected — would mislead | Rejected |
-| 1.5 | Löwdin explanation for non-specialists | Partially valid | In philosophy file |
-| 1.6 | siunitx degree symbols | Minor style | Deferred |
+| 1.1 | Consistency check labelled as prediction | Valid — fundamental | Resolved (v5) |
+| 1.2 | Theorem 2 absent | Valid — deepest result | Resolved (v5) |
+| 1.3 | Parameter counting implicit | Valid — clarity | Resolved (v5) |
+| 1.4 | Series harmonisation | Valid — standard | Resolved (v5) |
 
----
 
-## Anticipated Future Objections
+# PART 2: FAQ — CONVENTIONAL PHYSICS PERSPECTIVE
 
-**F1: "You used two inputs (m_e and θ) to predict two outputs (m_μ and m_τ).
-This is just interpolation, not a prediction."**
 
-Response: Correct that two inputs give two outputs — but the inputs are
-m_e and θ, not m_μ and m_τ. The Koide *constraint* K = 2/3 is the content
-of the prediction: it says that three masses which would otherwise be three
-independent numbers must satisfy a specific algebraic relation. This is not
-interpolation; it is the identification of a non-trivial structural constraint.
-A referee who makes this objection is agreeing that the constraint is real
-while denying that it is surprising. The 11 ppm precision makes it
-quantitatively surprising, even if the referee does not find the geometric
-origin convincing.
+## Category A: On the Consistency Check
 
-**F2: "The structural theorem (Theorem 4.1) proves that CPP cannot explain θ.
-Why should we trust a framework that cannot explain one of its own parameters?"**
+### A1. "You calibrated A and θ from the PDG masses, then showed the
+### formula reproduces those same masses to 11 ppm. That is circular."
 
-Response: Theorem 4.1 proves that K3+SSV cannot explain θ — not that CPP
-cannot explain θ. The electroweak sector of CPP (EW series) is the
-appropriate home for θ. The theorem is valuable precisely because it
-*identifies* where the explanation must come from, rather than leaving it as
-an unexplained residual. A framework that knows where it needs to go is more
-trustworthy, not less, than one that pretends to explain everything it touches.
+The circularity charge has real force and deserves a direct answer. An
+unconstrained two-parameter fit to three data points would generically
+achieve 0% residual for two points and some residual for the third. What
+SM-4 shows is that the Koide constraint K = 2/3 — with ρ = √2 fixed at its
+derived value — allows a two-parameter fit to three data points with all
+three residuals below 0.004%. This is non-trivial. If K were 0.65 instead of
+2/3, no choice of A and θ could achieve better than roughly 2% agreement
+across all three masses simultaneously.
 
-**F3: "The proximity θ ≈ 3π/4 - (5/4)sea² looks like numerology."**
+The constraint K = 2/3 is what makes the consistency check meaningful. It
+is a derived result placed at risk by the PDG masses. If nature's masses gave
+K ≠ 2/3, the K3 spectral framework would be falsified. The 11 ppm result
+confirms that the derived constraint is satisfied.
 
-Response: The observation is empirical and the coefficient 5/4 is not derived.
-The paper is explicit about this. The observation is registered because it is
-suggestive of a two-loop SSV mechanism (consistent with the Aharonov-Bohm
-candidate), and suggestive observations deserve to be registered even when
-they are not yet proved. The alternative — ignoring numerical patterns that
-might encode physics — is worse science. The paper does not claim the
-observation is a theorem; it claims it is worth pursuing.
 
-**F4: "This paper adds nothing beyond SM-3. It just applies the formula."**
+### A2. "When does the Koide formula become a genuine prediction?"
 
-Response: SM-4 adds three things beyond SM-3: (1) the parameter counting
-analysis establishing that the lepton sector has two free parameters, not
-three; (2) Theorem 4.1, an impossibility result that closes off a class of
-mechanisms for θ and points to the EW sector; and (3) the critical angle
-observation θ ≈ 3π/4 - sea². None of these are in SM-3. The 11 ppm
-consistency check is also in SM-4, not SM-3 — SM-3 proves K = 2/3, but SM-4
-is where the numerical comparison to PDG data is made.
+It becomes a genuine prediction when θ is derived from the EW sector
+independently of the lepton masses. At that point, with both ρ (from SM-3)
+and θ (from EW) derived, and only A calibrated from m_e, the formula
+predicts m_μ and m_τ from the electron mass alone. The prediction precision
+would be determined by the precision of the θ derivation and the electron
+mass measurement. Until OPEN-P-SM-7d is solved, SM-4 remains a consistency
+check, not a prediction.
 
----
 
-*Document prepared by Claude Sonnet (Anthropic) in collaboration with  
-Thomas Lee Abshier ND, March 2026.*  
-*Append new reviews below this line with date and reviewer.*
+## Category B: On the Structural Impossibility of θ
+
+### B1. "If θ cannot be derived from K3+SSV, doesn't that mean CPP
+### is incomplete?"
+
+Yes — and CPP says so explicitly. The structural impossibility theorem is not
+an apology; it is a precise statement of where additional physics is needed.
+The K3+SSV framework is complete for the questions it can answer (K = 2/3,
+ρ = √2, the lepton/quark distinction) and incomplete for θ by construction.
+The proof identifies exactly what is missing: a mechanism that breaks the C3
+degeneracy in the antibonding subspace, which requires EW-sector physics.
+
+A framework that knows its own limits precisely is more trustworthy than one
+that claims universal coverage. The K3+SSV incompleteness is a defined
+problem with a specific target for resolution.
+
+
+### B2. "Apex darkness (⟨φ₋|v⟩ = 0) looks like a convenient lemma
+### designed to give the result you wanted."
+
+Apex darkness is derived, not assumed. It follows from two independently
+established facts: (1) C3 symmetry requires the apex to couple equally to all
+three base vertices, making the coupling vector proportional to (1,1,1)ᵀ/√3;
+(2) the antibonding eigenvectors are defined as those orthogonal to (1,1,1)ᵀ.
+These two facts, together, force ⟨φ₋|v⟩ = 0. Neither was selected to give
+a particular outcome — both follow from the geometry of the equilateral
+triangle. The result is forced, not convenient.
+
+
+### B3. "The critical angle θ_c = 135° being close to θ = 132.73°
+### looks suspicious."
+
+The critical angle θ_c = 3π/4 is a consequence of ρ = √2 (derived in SM-3)
+applied to the Koide parametrisation. It is asking why the electron is nearly
+massless — a genuine physical question. The proximity of θ to θ_c is not an
+artifact of the parametrisation; it is encoding the fact that the electron
+is the lightest charged lepton by a large margin. The empirical relation
+θ_c − θ ≈ (5/4) × sea_strength² is a testable claim about a second-order
+SSV contribution. If confirmed theoretically, it would identify the electron
+mass as arising from a small EW correction to the ZBW cage energy.
+
+
+## Category C: On the Parameter Count
+
+### C1. "If EW physics is needed for θ, what has the K3+SSV framework
+### actually achieved for lepton masses?"
+
+It has reduced three independent free parameters to one calibrated parameter
+plus one identified derivation target. In the Standard Model, the three
+lepton Yukawa couplings are three independent numbers with no explanation.
+In CPP, they are constrained by K = 2/3 (derived from K3 spectrum), scaled
+by A (one calibration to one mass), and positioned by θ (one derivation
+target with specific physical content identified). The reduction from three
+unexplained parameters to one calibrated plus one identified EW target is
+genuine theoretical progress, even before OPEN-P-SM-7d is solved.
+
+
+*Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic),
+30 March 2026.*
