@@ -108,4 +108,66 @@ If the CPP series succeeds — if the theorems accumulate and the consilience of
 
 ---
 
-*Document prepared by Claude Sonnet (Anthropic) in collaboration with Thomas Lee Abshier ND, March 2026. This is a living document — to be updated as OP-SS-1 (cage-specific binding energy derivation) develops.*
+## VI. Mass as Thermodynamic Boundary (30 March 2026 Addition)
+
+The partner-switching session on 30 March 2026 produced a deeper
+formulation of what mass means in CPP, registered as Proposition
+P-CPP-14 in propositions.md. This formulation extends and contextualises
+SM-1's P6 (mass as organisational energy) by making the physical
+boundary condition explicit.
+
+**The formulation:** Rest mass is the ground-state organisational energy
+of a CP cage structure — specifically, the energy required to maintain
+a stable nucleation seed against thermal dissipation of its DP chains
+at T = 0 and v = 0. The cage exists at the threshold where its SSV_net
+nucleation force exactly overcomes the thermal pressure of the Dipole Sea
+attempting to dissolve the chains at the critical radius r_crit.
+
+This has several important corollaries for the philosophy of mass in CPP:
+
+**Mass is inherently relational and environmental.** Mass is not a fixed
+intrinsic property of an isolated CP — it is the energy required to
+maintain an organisational structure against a thermal environment.
+The same central −eCP, in a different temperature environment, would
+require different organisational energy to maintain stable cage structure.
+At T = T_c (QCD transition temperature), quark cages dissolve — quarks
+effectively become massless — because the thermal pressure overcomes
+the nucleation SSV_net. At T = 0, the cage is maximally stable. Mass
+is therefore a thermodynamic concept in CPP, not a purely mechanical one.
+
+**Mass is velocity-dependent through the same mechanism as confinement.**
+At high velocity, SSV_abs compresses the chain structure — each lattice
+step covers less physical distance, more DPs pack per physical unit
+length, and the total organisational energy of the cage increases. This
+increased organisational energy is the relativistic mass γm₀. Relativistic
+mass increase and ZBW chain compaction are the same phenomenon. This
+is why E = mc² is not a separate postulate in CPP — it is a statement
+about the equivalence of organisational SSV energy and kinetic energy
+that can be released when that organisation dissolves.
+
+**The electron mass is the organisational energy at r_crit.** SM-1
+calibrates SSV₀ = 0.2555 MeV to the electron rest mass. In the deeper
+P-CPP-14 picture, 0.511 MeV is the total organisational energy of the
+electron cage plus radial chains at the critical radius r_crit — the
+radius below which the nucleation SSV_net of the central −eCP exceeds
+the thermal dissipation pressure and the cage maintains itself. The
+quantitative relationship between r_crit, SSV₀, and sea_strength is
+the content of OP-QM-new-5 (chain contribution to electron rest mass)
+and OP-QM-new-7 (derive r_crit from CPP primitives).
+
+**The philosophical upshot.** SM-1's P6 (mass as organisational energy)
+was correct as a qualitative claim. P-CPP-14 makes it thermodynamically
+precise: mass is not just any organisational energy but the equilibrium
+organisational energy at the nucleation-dissipation boundary — the
+energy at which a cage structure is just barely self-sustaining against
+the ambient Sea. This framing connects CPP's account of mass to the
+second law of thermodynamics (entropy increases when mass converts to
+radiation) and to the QCD phase transition (mass disappears when thermal
+pressure exceeds confinement). It also suggests why there is a mass
+spectrum in the first place: different cage geometries have different
+critical radii and different organisational energies at those radii,
+producing the discrete mass hierarchy that SM-1 identifies.
+
+---
+
+*Document prepared by Claude Sonnet (Anthropic) in collaboration with Thomas Lee Abshier ND, March 2026. Updated 30 March 2026 with thermodynamic mass definition (P-CPP-14). Living document — to be updated as OP-SS-1 and OP-QM-new-5 develop.*
