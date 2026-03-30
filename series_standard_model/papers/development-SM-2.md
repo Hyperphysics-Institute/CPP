@@ -3,92 +3,174 @@
 **Series:** 600-Cell Standard Model Emergence
 **Authors:** Thomas Lee Abshier ND, Grok (xAI), Claude Sonnet (Anthropic)
 **Document type:** Development narrative — laboratory notebook record
-**Last updated:** 26 March 2026
+**Last updated:** 30 March 2026
 
 ---
 
-## Purpose of This File
+## Origins: The Mass Hierarchy Question
 
-This document records the intellectual history of SM-2: why it was written, what it attempted, what was superseded by later papers, and why its honest documentation of superseded claims is itself a model for scientific practice. SM-2 is unique in the CPP series in having a prominent "consistency with later papers" section that explicitly lists four results that were incorrect or imprecise in the original version. Understanding why these corrections were needed, and how they were discovered, is as important as understanding the paper's positive results.
+SM-2 originated from the most basic empirical challenge to CPP: can
+the framework reproduce the actual numbers? SM-1 established that
+cage structures exist and are stable, but it left the quantitative
+mass question open. The E ≈ N/2 × SSV₀ formula gives qualitative
+ordering but the muon is not simply 3× heavier than the electron —
+the actual ratio is 207×. Something beyond the bare cage binding
+energy must contribute significantly.
 
----
-
-## The Original Goal: A Mass Formula for All SM Particles
-
-SM-2 was written before SM-1, SM-3, SM-4, SM-5, and SS-1 were completed. Its goal was ambitious: to produce mass estimates for all Standard Model particles from a unified CPP framework, using one calibration constant ($k \approx 0.0185$, fixed to the electron mass) and geometric structural assignments for each particle.
-
-The framework was semi-empirical from the start. The cage assignments (which cage geometry corresponds to which particle) were motivated by the 600-cell polyhedral structure but were not derived from it. The ZBW energy contributions, inter-cage bonding terms, and DP cloud corrections were parameterised by effective occupancy values $N_k$ that were chosen on geometric grounds and refined to match PDG data.
-
-The result was a framework that produced calibrated consistency with PDG values across all SM particles — but "calibrated consistency" is different from "parameter-free prediction," and SM-2 was honest about this distinction from its early versions. The paper was always positioned as semi-empirical scaffolding that would eventually be replaced by rigorous derivations.
-
----
-
-## The Four Superseded Claims: Development History
-
-### Claim 1: $1/\phi^2 \approx 1/3$ for charge screening
-
-**Original claim:** The fractional charge of quarks ($+2/3$ for up-type, $-1/3$ for down-type) was derived from orbital ZBW charge screening by a factor of approximately $1/\phi^2 \approx 0.382 \approx 1/3$. The golden ratio $\phi$ appears throughout the 600-cell geometry, and $1/\phi^2$ was identified as the natural screening factor.
-
-**What was wrong:** The approximation $1/\phi^2 \approx 1/3$ has a 14.6% error. Charge quantisation is an exact result ($\delta = 1/3$ exactly), not an approximate one. The $\phi$-based derivation was motivated by pattern-matching rather than rigorous geometry.
-
-**How it was corrected:** SM-1 Theorem 1 proves $\delta = 1/3$ exactly from C3 cage symmetry and the completeness condition (all colour charges at base vertices sum to 1, and C3 symmetry forces all three to be equal). This is a topological proof that requires no approximation. The $1/\phi^2$ argument is retained in SM-2 Appendix G/H for historical context, clearly labelled as superseded.
-
-**Lesson:** When a CPP result is approximate and a more fundamental derivation is available, the approximate result should be replaced rather than defended. The 14.6% discrepancy was a signal that the mechanism was not correctly identified.
-
-### Claim 2: C₆₀ (60 vertices) as the top quark fourth cage
-
-**Original claim:** The top quark was assigned to a fullerene-like cage of approximately 60 vertices, by analogy with the C₆₀ buckminsterfullerene.
-
-**What was wrong:** No 60-vertex distance shell exists in the 600-cell. The assignment was based on qualitative reasoning (top quark mass requires a cage about 60 times larger than the bottom quark's cage) without verification against the actual 600-cell geometry.
-
-**How it was corrected:** PS-1 computed the exact 600-cell distance shells and found no 60-vertex shell. The 30-vertex shell at $d^2 = 2$ was identified as the leading candidate. SM-2 updates all references to C₆₀ accordingly and notes that the mass formula using the 30-vertex shell is an open problem.
-
-**Lesson:** Cage assignments must be verified against the exact 600-cell geometry, not estimated from mass ratios.
-
-### Claim 3: Koide ratio from $\phi$-scaling
-
-**Original claim:** The Koide ratio $K = 2/3$ for charged leptons was argued to follow from $\phi$-based scaling of lepton masses. The golden ratio appears in the 600-cell geometry, and the Koide formula was related to $\phi$-ratios.
-
-**What was wrong:** The $\phi$-scaling gives the right order of magnitude but not the correct mechanism. The Koide relation is an exact result (K = 2/3 to 11 ppm), and an approximate mechanism cannot explain an exact result. The correct mechanism is spectral: the K3 eigenvalue ratio 2:1 forces K = 2/3 exactly, as proved in SM-3.
-
-**How it was corrected:** SM-3 proves K = 2/3 from the K3 spectral theorem without reference to $\phi$. The SM-2 $\phi$-scaling argument is retained for historical context but is clearly superseded.
-
-**Lesson:** The golden ratio $\phi$ appears throughout the 600-cell but is not the direct cause of every CPP result that involves numbers close to $\phi$-ratios. The spectral theorem is the correct mechanism for the Koide relation.
-
-### Claim 4: Muon g-2 framed as a prediction
-
-**Original claim:** The fractional DP mixing in the muon's orbital ZBW ($\sim 68.5\%$ eDP, 13% qDP, 18.5% hDP) was calibrated to the then-anomalous Fermilab muon g-2 measurement, and the agreement was described as a prediction.
-
-**What happened:** The 2025 lattice QCD update brought Standard Model theory into agreement with experiment, resolving the anomaly. The "discrepancy" that SM-2 had calibrated to was shown to be a theory calculation error, not a new physics signal. The CPP "prediction" was therefore a post-diction of a discrepancy that turned out not to exist.
-
-**How it was corrected:** SM-2 Version 30 relabels the muon g-2 result as a post-diction consistent with the resolved Fermilab measurement $(3.75 \pm 6.43) \times 10^{-10}$ (0.58σ tension, consistent with zero). The mixing fractions that produced this result were calibrated to the prior anomaly value; with the anomaly resolved, the post-diction is consistent but no longer interesting as a claim.
-
-**Lesson:** Claims labelled as predictions should be made before the relevant measurement, not calibrated to existing anomalies. The Fermilab resolution exposed the SM-2 framing as post-hoc.
+The development of SM-2 was driven by the question: what additional
+contributions bring the cage binding energies into quantitative
+agreement with the PDG mass table?
 
 ---
 
-## The Positive Contributions of SM-2
+## Phase 1: Identifying the Four Contributions
 
-Despite the four corrections, SM-2 makes genuine contributions that have not been superseded:
+Early sessions identified four distinct contributions to particle
+masses beyond the bare cage binding:
 
-**1. The ZBW energy spectrum:** The framework of ZBW energy contributions, with geometric suppression $\sigma = 120^{-d}$ for $d$ unbound lattice dimensions, is the physical picture underlying SM-2's mass hierarchy. The $\sigma = 120^{-3}$ suppression for neutrinos (giving $\Sigma m_\nu \sim 0.017$ eV, consistent with cosmological bounds) is a specific prediction of this framework that has not been falsified.
+1. ZBW kinetic energy (E_ZBW): the orbital Dipole Pair's kinetic energy
+2. Inter-layer bonding (E_inter): SSV interaction between nested cage shells
+3. DP cloud energy (E_cloud): energy of the polarised Sea cloud
+4. Residual: remaining calibrated correction
 
-**2. The DP composition rules:** SM-2 develops the rules for DP composition (leptons use equal 25% mix; quarks use radial gradient from qDP-favoured near centre to equalised outward). These rules encode the physical difference between colour-neutral and colour-charged particles and are used throughout the SM series.
-
-**3. The semi-empirical calibration as a research map:** The effective occupancy parameters $N_k$ for each particle are not derived from first principles, but they are identified as the primary targets for future derivation (OP-SS-1). SM-2 functions as a map: it shows where the CPP framework needs to go (derive $N_k$ from cage geometry) and provides calibrated values that any future derivation must reproduce.
-
-**4. The capotauro mechanism (SM-2 context):** The Capotauro symmetry-breaking event — the chiral polarity bias that distinguishes up-type from down-type quarks — is introduced in SM-2 and elaborated in SM-5 (for neutrino mixing corrections). This is CPP's account of the CP violation that breaks the up/down quark symmetry, and it is a genuine theoretical contribution even if it is not yet derived.
-
----
-
-## The Role of SM-2 in the Series Architecture
-
-SM-2 occupies an unusual position in the series: it is more empirical than any other paper, explicitly semi-empirical in its approach, and has had four significant claims superseded by later work. Yet it remains in the series because it serves an irreplaceable function: it is the paper that shows the CPP framework can be applied to all Standard Model particles simultaneously, producing calibrated estimates across the full mass spectrum from the electron to the top quark.
-
-No other paper in the series attempts this comprehensive scope. SM-1 treats the cage structure; SM-3 through SM-5 treat the lepton sector; SS-1 treats the strong sector. SM-2 is the synthesis paper — the place where all the pieces are assembled into a unified, if approximate, picture of SM particle masses.
-
-The corrections record in SM-2 is therefore not a weakness but a strength. It shows that the CPP framework is self-correcting: when more rigorous derivations become available, they replace the approximate motivational arguments without discarding the framework as a whole. SM-2's semi-empirical scaffold is being progressively replaced by rigorous theorems — but the scaffold was necessary to identify where the rigorous theorems needed to be.
+The ZBW contribution was the most physically motivated — the orbital
+ZBW DP is present in all fermions and contributes the same type of
+SSV energy as the cage binding. The suppression factor σ = 120^{-d}
+for different particle types emerged as the key to bridging from the
+electron (d=0, σ=1) to neutrinos (d=3, σ ≈ 5.8 × 10⁻⁷).
 
 ---
 
-*Document prepared by Claude Sonnet (Anthropic) in collaboration with Thomas Lee Abshier ND, March 2026. To be updated as OP-SS-1 (effective occupancy derivation) and the EW series develop.*
+## Phase 2: The VEV Formula and k
+
+The vacuum expectation value formula ⟨φ⟩ = k × E_P / N_lattice⁴ × φ_k
+emerged from dimensional analysis: how should the Planck energy
+be suppressed to reach the MeV scale?
+
+The factor N_lattice⁴ = 120⁴ ≈ 2.07 × 10⁸ was identified from the
+600-cell's 4D geometry — one factor of 120 per spatial+temporal
+dimension. The golden-ratio generation factor φ_k handles the
+between-generation scaling. The calibration constant k ≈ 0.0185
+was then fixed by the electron mass.
+
+The geometric motivation for k (k ~ 1/(N × φ²) ≈ 0.00318, refined
+to 0.0185 by generational averaging) established that k was not
+arbitrary — it was of the right order from the lattice geometry alone.
+The exact derivation of k was registered as OP-SM-1 and was
+subsequently solved to 3.8% via α_geom = 0.5594 (k_SM =
+α_geom/(12φ²) ≈ 0.01781). The remaining 4% is the stereographic
+projection correction.
+
+---
+
+## Phase 3: Cage Assignments and N_k Calibration
+
+The effective cage occupancy values N_k were developed through
+iterative comparison with PDG masses. For leptons, the correspondence
+is clean: N_k = 1, 4, 12 for electron, muon, tau maps onto the
+cage vertex counts (minimal, tetrahedral, icosahedral) with good
+quantitative agreement when all four contributions are included.
+
+For quarks, the N_k values required calibration to PDG because the
+light quark masses are non-perturbative and the formula cannot yet
+be derived from first principles. The heavy quark values (charm,
+bottom, top) are more constrained — the K3 thermal picture (discovered
+later, in the PS-1 sessions) confirmed K(c,b,t) = 2/3 to 0.42%,
+consistent with the cage framework.
+
+For the gauge bosons (W, Z, Higgs), cage structures were assigned
+based on their known properties: W as linear hDP chain (polarity-
+inverting, EW series), Z as icosahedral cage (symmetric coupling,
+parity-conserving), Higgs as dodecahedral cage (heaviest, scalar).
+
+---
+
+## Phase 4: The Muon g-2 Episode
+
+During SM-2 development, the Fermilab muon g-2 measurement showed
+a 4.2σ anomaly from the Standard Model prediction. SM-2 included
+an analysis of the DP mixing fraction in the muon's orbital ZBW:
+with 68.5% eDP, 13% qDP, and 18.5% hDP, the CPP correction was
+δ_μ ≈ 2.9 × 10⁻¹⁰, consistent with the anomaly.
+
+In June 2025, the lattice QCD calculation was updated and the
+anomaly was resolved: Δa_μ = (3.75 ± 6.43) × 10⁻¹⁰, consistent
+with zero. The CPP calculation was consistent with the anomaly when
+it was an anomaly and consistent with zero when it was resolved —
+because the mixing fractions were calibrated to the anomaly value.
+This converted the g-2 result from a prediction to a post-diction.
+
+The lesson: calibrating any quantity to a disputed experimental value
+creates vulnerability when that value is revised. SM-2 v30 explicitly
+labels the muon g-2 as a post-diction.
+
+---
+
+## Phase 5: The C₆₀ Falsification (March 2026)
+
+The most significant development event in SM-2's history was the
+falsification of the C₆₀ cage assignment. Earlier versions used
+60 vertices as the top quark's fourth cage, motivated by the rough
+mass ratio top/bottom ≈ 40 — suggesting ~4× more cage vertices than
+the bottom's 20-vertex dodecahedral cage.
+
+The PS-1 computation (March 2026) computed all 600-cell distance
+shells exactly. The shells have vertex counts 12, 20, 12, 30, 12, 20...
+(palindromic). No 60-vertex shell exists. The C₆₀ assignment was
+a hypothesis that failed.
+
+The 30-vertex shell at d²=2 was identified as the correct fourth
+cage candidate: all 30 vertices equidistant from the reference
+vertex, degree-4, vertex-transitive. N_k for the top quark was
+recalibrated to ~30000 accordingly. The mass formula using this
+geometry is open (OP-SS-1).
+
+This falsification affected SM-1, SM-2, and the open problems
+register simultaneously. It is documented here as a record of
+CPP's error-correction process.
+
+---
+
+## Phase 6: Consistency Harmonisation (v30, March 2026)
+
+Version 30 incorporated four consistency corrections:
+
+1. C₆₀ → 30-vertex shell (from PS-1)
+2. 1/φ² → δ = 1/3 exact (from SM-1 Theorem 1)
+3. Koide from φ-scaling → K3 spectral theorem (from SM-3)
+4. Muon g-2 prediction → post-diction (from Fermilab 2025 resolution)
+
+These corrections were identified by Claude Opus in the pre-submission
+review. Each correction makes the paper more honest and more
+consistent with the rest of the series. The consistency table at
+the top of SM-2 v30 documents all four superseded claims explicitly.
+
+---
+
+## Current Status (30 March 2026)
+
+SM-2 is submission-ready at v30. It is a semi-empirical framework
+demonstrating calibrated consistency of the cage hierarchy with
+the full SM mass table, with honest labelling of what is derived
+vs calibrated. The principal open problem (OP-SS-1) would convert
+it from semi-empirical to predictive.
+
+The six SM-2 documentation files were written on 30 March 2026:
+mechanism-SM-2.md, glossary-SM-2.md, reviews-SM-2.md,
+philosophy-SM-2.md, development-SM-2.md (this file), and
+phenomena-SM-2.md.
+
+---
+
+## Key Decisions Log
+
+| Date | Decision | Rationale |
+|------|----------|-----------|
+| Early 2026 | Four-contribution formula | Bare cage binding insufficient; ZBW, inter-layer, cloud needed |
+| Early 2026 | σ = 120^{-d} for suppression | Geometric dilution across d unbound lattice dimensions |
+| Early 2026 | k ≈ 0.0185 calibrated to electron | Single calibration anchor for entire mass table |
+| Mar 2026 | C₆₀ → 30-vertex shell | PS-1 falsified C₆₀; 30-vertex shell is correct geometry |
+| Mar 2026 | 1/φ² → δ = 1/3 exact | SM-1 Theorem 1 supersedes the approximation |
+| Mar 2026 | Koide mechanism relabelled | SM-3 K3 spectral theorem is the correct derivation |
+| Mar 2026 | Muon g-2 relabelled post-diction | Fermilab 2025 resolution removed the anomaly |
+| Mar 2026 | "Calibrated consistency" language | Scientific honesty requires distinguishing calibration from prediction |

@@ -1,125 +1,159 @@
 # Philosophy: SM-2 — Mass Generation from Geometric Hierarchies in the 600-Cell Lattice
 
 **Series:** 600-Cell Standard Model Emergence
-**Document type:** Philosophical foundations — the deep questions behind the theorem
-**Last updated:** 26 March 2026
+**Document type:** Philosophical foundations
+**Last updated:** 30 March 2026
 
 ---
 
-## Purpose of This File
+## I. What SM-2 Is Trying to Do — and What It Is Not
 
-This document explores the philosophical dimensions of SM-2: what it means for mass to be generated geometrically, the philosophical status of a semi-empirical framework in a research programme that aspires to first-principles derivation, what the four superseded claims teach us about the structure of scientific progress in CPP, and the deeper question of why the golden ratio appears throughout the 600-cell but is not the fundamental cause of every CPP result. It is written as a companion to the SM-1 philosophy file; together they constitute the philosophical foundation for the entire SM mass programme.
+SM-2 occupies an unusual philosophical position in the CPP series.
+SM-1 establishes that cage structures exist and are stable. SM-3
+derives the Koide ratio exactly. SS-1 derives SU(3) exactly. These
+are theorem papers — they prove specific results from the postulates.
 
----
+SM-2 is not a theorem paper. It is a semi-empirical demonstration
+that one calibration constant, propagated through consistent geometric
+rules, gives calibrated estimates for all 15 Standard Model particles.
+The N_k values are motivated by geometry but calibrated to PDG. The
+VEV formula is physically motivated but not derived from first principles.
 
-## I. The Question: Why Are Some Particles Heavier Than Others?
+This is honest and useful science. It demonstrates that CPP's
+geometric framework is internally consistent at the mass scale —
+that the same lattice structure that gives exact theorems for SU(3)
+and the Koide ratio also gives consistent mass estimates for the
+full particle spectrum. The calibrated consistency is inductive
+evidence that the geometric framework is on the right track, even
+before the exact derivation is available.
 
-### The Standard Model's non-answer
-
-In the Standard Model, particle masses are Yukawa coupling constants — dimensionless numbers that measure how strongly each particle type couples to the Higgs field. The electron Yukawa coupling is approximately $10^{-6}$; the top quark Yukawa coupling is approximately 1. Why these specific values? The Standard Model has no answer. The Yukawa couplings are inputs, not outputs.
-
-The mass hierarchy of the Standard Model is one of the deepest puzzles in particle physics: the top quark is approximately 340,000 times heavier than the electron, and the three neutrino masses are at least a billion times lighter than the electron. No mechanism within the Standard Model explains this span.
-
-### CPP's proposed answer: cage complexity
-
-SM-2 proposes that particle masses reflect the complexity of their cage structures within the 600-cell lattice. More cage vertices means more SSV binding energy stored in the cage, which means more rest mass. The mass hierarchy — from neutrinos (nearly massless, no cage) through the light leptons and quarks (small cage, few vertices) to the top quark (large cage, many vertices) — is a consequence of the discrete set of stable cage geometries in the 600-cell distance hierarchy.
-
-This is a qualitative explanation of the mass hierarchy that SM-2 makes quantitative through the effective occupancy parameters $N_k$. The explanation is not complete — $N_k$ is calibrated rather than derived — but it provides a physical picture: the electron is light because it occupies the minimal stable cage (4 vertices), and the top quark is heavy because it occupies the largest stable cage (30+ vertices). The mass ratio reflects the cage geometry ratio.
-
----
-
-## II. The Philosophy of a Semi-Empirical Framework
-
-### What semi-empirical means
-
-SM-2 is explicitly semi-empirical: it uses geometric structural assignments motivated by the 600-cell geometry and calibrated to experimental data. This is a middle position between two extremes — a fully empirical model (just fit the data with no physical input) and a fully derived model (compute all masses from first principles).
-
-The philosophical question is: what is the value of a semi-empirical framework in a research programme that aspires to full derivation?
-
-### The scaffold metaphor
-
-The most accurate metaphor for SM-2 is a construction scaffold: a temporary structure that supports the building while it is under construction, but which is not itself part of the finished building. The scaffold is necessary — without it, you cannot build the higher floors. But once the building is complete, the scaffold comes down.
-
-SM-2 is the scaffold for the CPP mass programme. It establishes the overall architecture (cage hierarchy, ZBW energy spectrum, DP composition rules, geometric suppression $\sigma = 120^{-d}$) and provides calibrated values for all SM particle masses. The specific values of $N_k$ that produce these masses are the "scaffold components" — temporary placeholders that will be replaced by rigorous derivations as OP-SS-1 progresses.
-
-The scaffold metaphor also explains why SM-2 is valuable even after parts of it are superseded. The charge quantisation result ($\delta = 1/3$) was scaffolded by the $1/\phi^2$ approximation before SM-1 proved it exactly. The Koide relation was scaffolded by $\phi$-scaling before SM-3 proved it from the K3 spectrum. Each exact result that replaces an approximate scaffold result is progress — but the approximate result was needed to identify the target.
-
-### The relationship between approximation and exactness
-
-A recurring feature of CPP development is the pattern: approximate result → identification of the correct mechanism → exact derivation. This pattern appears three times in SM-2's correction history:
-
-1. $1/\phi^2 \approx 1/3$ → C3 symmetry and completeness → $\delta = 1/3$ exactly (SM-1)
-2. $\phi$-scaling of Koide → K3 spectral structure → $K = 2/3$ exactly (SM-3)
-3. C₆₀ qualitative reasoning → exact distance shell computation → 30-vertex shell identified (PS-1)
-
-This pattern is philosophically significant. It shows that approximate arguments based on the golden ratio $\phi$ often point in the right direction (the 600-cell is full of $\phi$-structure), but the exact derivations require a different kind of reasoning (combinatorial, spectral, geometric) that does not reduce to $\phi$-scaling. The golden ratio is a signature of the 600-cell, not a causal mechanism.
+The philosophical mistake would be to claim SM-2 is more than it
+is — to present calibrated consistency as parameter-free prediction.
+The paper's value is conditional on its honesty: if it were to
+hide the N_k calibrations and present the mass table as a derivation,
+it would be less valuable scientifically, not more.
 
 ---
 
-## III. The Golden Ratio: Signature vs. Cause
+## II. The Hierarchy Problem — CPP's Partial Answer
 
-### Why $\phi$ appears everywhere in CPP
+The hierarchy problem is one of the deepest puzzles in fundamental
+physics: why is the electroweak scale (~100 GeV) so much smaller
+than the Planck scale (~10¹⁹ GeV)? Why don't quantum corrections
+push the Higgs mass up to the Planck scale? The Standard Model
+has no good answer — it requires fine-tuning of parameters to one
+part in 10²⁸ to maintain the observed hierarchy.
 
-The 600-cell is built from the golden ratio. Its edge length in unit circumradius coordinates is $1/\phi$. Its Voronoi cell volume contains $\phi^3$ in the denominator. The stiffness integral $\alpha_{\text{geom}} \approx 0.5594$ involves $5\phi + 3 = (11 + 5\sqrt{5})/2$, which is related to $\phi$ through the minimal polynomial $\phi^2 = \phi + 1$. The coupling constant $k = l_P^3/E_P$ in SR-1 carries a $\phi\sqrt{2}$ factor from the circumradius-to-inradius ratio.
+SM-2's VEV formula provides a partial geometric answer: the particle
+mass scale is E_P / N⁴, where N = 120 is the 600-cell vertex count.
+This suppression — dividing the Planck energy by the fourth power
+of the lattice size — naturally produces a mass scale far below
+the Planck scale without fine-tuning. The factor N⁴ = 120⁴ ≈ 10⁸
+is not a coincidence; it follows from the 600-cell being a
+4-dimensional structure with 120 vertices.
 
-Given this pervasive $\phi$-structure, it is natural to look for $\phi$-based explanations of CPP results. And often these explanations are approximately correct — $1/\phi^2 \approx 1/3$, $\phi^6 \approx 207 \approx m_\mu/m_e$, and so on. The golden ratio provides a first approximation for many CPP quantities.
+This is not a complete solution to the hierarchy problem — the
+remaining factor (the difference between E_P/N⁴ and the observed
+electron mass) is accounted for by k ≈ 0.0185, which is still a
+calibration constant. But it replaces the 28-order-of-magnitude
+hierarchy with a much smaller residual, and it attributes the
+large suppression to a specific geometric cause (the 4D lattice size)
+rather than leaving it unexplained.
 
-### Why $\phi$ is not the fundamental cause
-
-The philosophical lesson of SM-2's corrections is that $\phi$ is a signature of the 600-cell, not a cause of the results that emerge from it. The correct causes are:
-
-- Charge quantisation $\delta = 1/3$ is caused by **C3 symmetry and completeness** (SM-1, Theorem 1), not by $1/\phi^2$.
-- The Koide ratio $K = 2/3$ is caused by the **K3 eigenvalue ratio 2:1** (SM-3), not by $\phi$-scaling.
-- The cage geometry is determined by **600-cell distance-shell structure** (PS-1), not by C₆₀ analogy.
-
-The golden ratio appears in all of these results — the 600-cell's $\phi$-structure is what makes the C3 symmetry exact, what determines the K3 edge lengths, what determines the distance-shell hierarchy. But $\phi$ is the medium, not the message. The messages are: symmetry, spectrum, geometry. The $\phi$-structure of the 600-cell provides the specific numerical values, but the physical content comes from the symmetry arguments, spectral theorems, and geometric derivations.
-
-This distinction — $\phi$ as signature vs. $\phi$ as cause — is a recurring philosophical theme in CPP. Every time a $\phi$-based approximation is replaced by an exact derivation, the replacement is a symmetry argument or a spectral theorem that uses $\phi$ implicitly but is not primarily about $\phi$. The golden ratio is a fingerprint of the 600-cell on all its results; it is not the explanation for those results.
-
----
-
-## IV. SM-2 and the Problem of Many Parameters
-
-### The Standard Model comparison
-
-SM-2 explicitly addresses the comparison with the Standard Model: the Standard Model has 19+ free parameters for particle masses; SM-2 has one free parameter ($k$) plus geometric structural assignments. Is this genuinely parsimonious?
-
-The honest answer is: yes, but less so than it first appears. The structural assignments $N_k$ for each particle are not truly free parameters in the statistical sense — they are not independently optimised to fit the data. They are assigned on geometric grounds (cage type, vertex count, ZBW mode) and then one global scale parameter $k$ is fit to the electron mass. But the assignments themselves contain implicit choices that are not uniquely determined by the 600-cell geometry.
-
-The genuine parsimony of SM-2 lies in the *structure* of the mass formula, not in the specific values. The claim that mass scales with cage complexity, that ZBW energy contributions follow $\sigma = 120^{-d}$ suppression, that DP composition follows colour-charge rules — these are structural claims that constrain the form of the mass hierarchy even before the specific parameters are fixed. The Standard Model has no analogous structural constraints: the 19 Yukawa couplings are genuinely independent.
-
-### The path to full parsimony
-
-Full parsimony for SM-2 — mass estimates with zero free parameters beyond the Planck scale — requires deriving the effective occupancy values $N_k$ from the 600-cell cage geometry. This is OP-SS-1. Once $N_k$ is derived, the one remaining free parameter (the overall scale $k$) may also be derivable from the relationship between SSV₀ and the ZBW energy scale $\hbar\omega_0$ — which would reduce the entire mass spectrum to zero free parameters.
-
-SM-2 is parsimonious relative to the Standard Model today. It will be fully parsimonious when OP-SS-1 is solved.
+The philosophical significance: SM-2 suggests that the hierarchy
+problem is not a fine-tuning problem but a combinatorics problem.
+The mass scale is small not because parameters are finely tuned
+but because the universe is computed on a lattice of a specific
+size, and particle masses are fractions of that lattice's total
+computational budget. Fine-tuning disappears when the right
+geometric framework is identified.
 
 ---
 
-## V. The Capotauro Event: A Philosophical Note
+## III. Mass as Allocated Computational Budget
 
-### What the Capotauro mechanism represents
+SM-2 introduces a picture of mass that is more precise than SM-1's
+"organisational energy" framing. The VEV formula encodes a specific
+physical picture: each particle's mass is a fraction of the 600-cell's
+total computational budget per Absolute Moment, allocated by the
+particle's cage geometry.
 
-SM-2 introduces the Capotauro mechanism as the CPP account of the symmetry-breaking event that distinguishes up-type from down-type quarks. The name refers to a hypothetical early-universe event in CPP cosmology in which the initial perfect symmetry of the 600-cell lattice is broken — one chirality is preferred, and the up/down quark distinction crystallises.
+The total computational budget of the 600-cell is E_P (the Planck
+energy). A particle with N_k effective cage vertices occupies a
+fraction N_k/120 of the 120 available lattice positions. Its Yukawa
+coupling y_k = N_k/120 × φ^j is this fraction, modified by the
+generation energy scale φ^j. The particle's mass is y_k × ⟨φ⟩ —
+its fraction of the available budget.
 
-The Capotauro mechanism is not derived in SM-2. It is a theoretical proposal that explains a pattern (why do down-type quarks carry a linear ZBW extra that up-type quarks do not?) in terms of a physical event (a symmetry-breaking transition in the early universe). It is registered as an open problem and will be developed in the EW series.
+This picture has a philosophical parallel to computational complexity:
+the "cost" of running a program is proportional to the fraction of
+available computing resources it uses per clock cycle. A particle's
+mass is the energy cost of maintaining its cage configuration per
+Absolute Moment — the fraction of the universe's computational
+resources consumed by the pattern of CP organisation that constitutes
+that particle.
 
-Philosophically, the Capotauro mechanism represents CPP's answer to a deep question: why is nature chiral? The Standard Model observes parity violation but does not explain why the universe prefers one chirality over the other. CPP proposes that this preference is the memory of a specific symmetry-breaking event in the universe's history — an event encoded in the lattice structure of space itself. Whether or not this proposal is correct, it is a specific, testable claim: the Capotauro mechanism should produce the observed CP violation in the quark sector with a derivable magnitude. This is a prediction for the EW series.
+This is not just a metaphor. It is a physical claim about what mass
+is: the organisational overhead of a specific cage configuration per
+unit time. Heavy particles are computationally expensive; light
+particles are cheap. The mass hierarchy is the computational cost
+hierarchy of different cage structures.
 
 ---
 
-## VI. SM-2 as a Record of Scientific Progress
+## IV. Semi-Empirical Frameworks as Stepping Stones
 
-### Why corrections are valuable
+The history of physics is full of semi-empirical frameworks that
+preceded exact derivations. The Bohr model of the hydrogen atom was
+semi-empirical: it postulated quantised angular momentum without
+deriving it from more fundamental principles, and it calibrated the
+Rydberg constant to spectroscopic data. It gave correct energy levels
+for hydrogen while leaving the mechanism unexplained. Ten years later,
+Schrödinger and Heisenberg derived the energy levels from the wave
+equation.
 
-SM-2 is unusual in the scientific literature in having a dedicated section documenting claims that were superseded by later work. Most papers do not include such sections — corrections appear in separate papers or are silently incorporated into later versions.
+SM-2 is in the Bohr model position. It postulates N_k values and
+calibrates k to the electron mass, giving consistent mass estimates
+without explaining the mechanism in full. The exact derivation — the
+CPP equivalent of the Schrödinger equation for the mass spectrum —
+is OP-SS-1.
 
-The CPP series standard, established through the SM-2 development process, is to document corrections explicitly and prominently. This is a philosophical commitment to transparency: the history of how a result was obtained, including the wrong turns, is part of the scientific record. Future researchers need this history to understand why the paper says what it says and to identify where further work is needed.
+The philosophical lesson from the Bohr model is that semi-empirical
+frameworks are scientifically valuable when:
+1. They identify the right physical variables (angular momentum, N_k)
+2. They give the right order of magnitude for the right reasons
+3. They leave clear targets for the exact derivation
 
-SM-2's correction record is also evidence for the CPP programme's validity. The corrections were made when more rigorous results became available; the framework was not defended against corrections for sociological reasons. This is how science is supposed to work.
-
-The final philosophical point: SM-2 is not primarily a paper about what CPP gets right. It is a paper about what CPP attempts — a comprehensive, if approximate, account of all SM particle masses from a unified geometric framework. The attempt, with its corrections and open problems clearly labelled, is more valuable than a narrower paper that makes only claims it can fully defend. SM-2 maps the territory, marks the uncertain regions honestly, and points toward the work that remains.
+SM-2 satisfies all three. The cage occupancy N_k is the right
+variable — it encodes the cage complexity that determines mass. The
+estimates are correct in order of magnitude and qualitative structure
+(light → heavy follows cage depth). And the N_k targets are specific
+— when OP-SS-1 is solved, the derived N_k values must match these
+calibrated values, providing a precision test.
 
 ---
 
-*Document prepared by Claude Sonnet (Anthropic) in collaboration with Thomas Lee Abshier ND, March 2026. This is a living document — to be updated as OP-SS-1 and the EW series develop.*
+## V. The Falsification Record as Scientific Credibility
+
+SM-2 v30 openly documents four falsified claims in its opening
+consistency table: C₆₀ cage, 1/φ² charge approximation, Koide from
+φ-scaling, and muon g-2 prediction. Each of these was a claim in
+earlier versions that was tested and found wrong or superseded.
+
+This record is scientifically valuable for the same reason it was
+noted in SM-1's philosophy: a framework that documents its failures
+is more credible than one that doesn't. The willingness to say
+"this was our prediction, it was wrong, here is the correct result
+from a different derivation" is evidence that CPP is engaging with
+reality rather than constructing post-hoc explanations.
+
+The four corrections in SM-2 v30 are not embarrassments — they are
+demonstrations that CPP can generate testable predictions (C₆₀ cage),
+test them against geometric reality (PS-1 shell computation), and
+update the theory honestly when the prediction fails. This is the
+scientific method functioning correctly.
+
+---
+
+*Document prepared by Thomas Lee Abshier ND and Claude Sonnet
+(Anthropic), 30 March 2026.*
