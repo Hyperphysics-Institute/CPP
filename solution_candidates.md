@@ -53,7 +53,6 @@ where V_l^proj is the exact 3D-projected Voronoi volume of 600-cell shell l, r_e
 3. Evaluate the full formula with these values and compare to PDG quark masses
 4. If agreement is within ~20%, apply the derived ZBW correction from SM-3
 
-**Tractability:** HIGH — one focused computational session with the 600-cell vertex coordinates. No new physics required. The formula is fully specified; only the numerical computation is missing.
 **Computation result (30 March 2026):**
 
 C_n phase cancellation factors confirmed exactly:
