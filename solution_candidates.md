@@ -140,7 +140,7 @@ where Φ₀ = hc/e is the flux quantum. This phase would select a preferred orie
 
 **Targets:** OPEN-P-QM-new-4 (derive r_chain from SSV₀ and sea_strength), OPEN-P-QM-new-5 (chain contribution to electron mass)
 **Origin:** Partner-switching session, 30 March 2026 (PROP-5 in propositions.md)
-**Status:** ACTIVE — HIGHEST PRIORITY for next computational session
+**Status:** COMPUTED 30 March 2026 — r_chain ≠ r_e for any natural CPP scale; two findings emerged
 
 **Mechanism:** The four radial DP chains extending from the tetrahedral cage vertices reach equilibrium where the central CP's SSV attraction is balanced by thermal Sea dissolution pressure. The equilibrium condition gives:
 
@@ -157,9 +157,20 @@ where d_Sea is the mean DP separation in the Dipole Sea, estimated from the 600-
 
 **Implication if refuted:** The equilibrium condition is wrong, or d_Sea has the wrong identification. The chain equilibrium picture in PROP-5 needs revision.
 
-**Independent review note (Opus, 30 March 2026):** "The strongest candidate is PROP-5: compute r_chain from SSV₀ and sea_strength and see if it matches the classical electron radius. This is a single calculation with a definitive answer. If it works, the chain equilibrium picture is confirmed. If it doesn't, something in the picture needs revision. Do one quantitative check from this session before moving on."
+**Computation result (30 March 2026):**
 
-**Tractability:** HIGH — one focused session. All required constants are known. The calculation has a specific, definitive comparison point (r_e) with no ambiguity in the result.
+The calculation was performed for all physically motivated d_Sea identifications:
+
+    d_Sea = l_P:                 r_chain ~ 10⁻²⁰ fm  (wrong by ~10²⁰)
+    d_Sea = r_conf = 0.16 fm:    r_chain = 0.379 fm   (factor 7.4 from r_e)
+    d_Sea = r_conf = 0.40 fm:    r_chain = 0.948 fm   (factor 3.0 from r_e)
+    d_Sea = √(r_conf × r_e):     r_chain = 2.517 fm   (within 11%)
+
+**Finding 1 — r_conf inconsistency:** sea_strength = 0.178, ħω₀ = 87.8 MeV, and r_conf = 0.16 fm are mutually inconsistent by a factor of 2.5×. Correct r_conf = 0.40 fm given the other two constants. Registered as OPEN-P-QM-new-9.
+
+**Finding 2 — r_e in CPP terms:** r_e = α_fine × ħc/(2 × SSV₀) exactly. Confirming r_chain = r_e is therefore equivalent to deriving α_fine from 600-cell geometry (EW sector). SC-7 is now a corollary of that derivation.
+
+**Next step:** Resolve OPEN-P-QM-new-9 (which of the three CPP constants is correct), then determine whether the corrected r_conf gives a geometrically motivated d_Sea that produces r_chain ≈ r_e.
 
 ---
 
@@ -173,10 +184,10 @@ where d_Sea is the mean DP separation in the Dipole Sea, estimated from the 600-
 | SC-4 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
 | SC-5 | OPEN-P-SM-7d (Koide phase θ) | ACTIVE — primary candidate | LOW (needs EW series) |
 | SC-6 | OPEN-P-SM-5, OPEN-P-SM-7d | ACTIVE | MEDIUM |
-| SC-7 | OPEN-P-QM-new-4, OPEN-P-QM-new-5 | ACTIVE — NEXT SESSION | HIGH |
+| SC-7 | OPEN-P-QM-new-4, OPEN-P-QM-new-5, OPEN-P-QM-new-9 | COMPUTED — r_chain ≠ r_e; see findings | — |
 
-**Immediate priority:** SC-7 (r_chain calculation). One session, definitive answer.
-**Secondary priority:** SC-1 (quark mass ladder). One session with the 600-cell vertex coordinates.
+**SC-7 result:** Computed 30 March 2026. r_chain ≠ r_e for any natural CPP scale. Two key findings: r_conf inconsistency (OPEN-P-QM-new-9) and r_e = α_fine × ħc/(2·SSV₀) exactly. See PROP-5 in propositions.md.
+**Immediate priority:** SC-1 (quark mass ladder) and OPEN-P-QM-new-9 (r_conf inconsistency).
 **Long-term:** SC-5 (EW connection for θ). Requires EW series development.
 
 ---

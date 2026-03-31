@@ -106,7 +106,7 @@ final solution.
 | [OPEN-P-QM-6](OP-QM/OPEN-P-QM-6_discrete_spectra.md) | Discrete spectra from lattice quantisation | MEDIUM | OPEN |
 | [OPEN-P-QM-7](OP-QM/OPEN-P-QM-7_qft_second_quantization.md) | QFT second quantisation from CPP | HIGH | OPEN |
 
-### OPEN-P-QM-new — Quantum Mechanics from Partner-Switching (8 problems, registered 30 March 2026)
+### OPEN-P-QM-new — Quantum Mechanics from Partner-Switching (9 problems; 8 registered 30 March 2026, 1 added from r_chain computation)
 
 *All eight problems arose from the SM-1 mechanism essay discussion of ZBW oscillation mechanics and the identification of stochastic partner exchange as the physical mechanism underlying quantum uncertainty, tunneling, virtual particles, and atomic orbitals. Full problem statements in propositions.md §3.*
 
@@ -120,6 +120,7 @@ final solution.
 | OPEN-P-QM-new-6 | Derive Schrödinger equation from DP chain standing wave stability conditions | HIGH | OPEN |
 | OPEN-P-QM-new-7 | Derive r_crit and pair production threshold from CPP primitives | HIGH | OPEN |
 | OPEN-P-QM-new-8 | Temperature dependence of rest mass from CPP | MEDIUM | OPEN |
+| OPEN-P-QM-new-9 | Resolve r_conf inconsistency: sea_strength, ħω₀, r_conf | HIGH | OPEN |
 
 ### OPEN-P-SD — Foundations / Superdeterminism (5 problems)
 
@@ -225,7 +226,7 @@ OPEN-P-SD-1 (K₀)  ──► OPEN-P-SD-2 (interp.) ──► OPEN-P-SD-3 (A₅,
 | OPEN-P-QM-new (Partner-Switching QM) | 8 | 0 | 0 | 8 |
 | OP-SD (Foundations) | 5 | 0 | 0 | 5 |
 | OPEN-P-G | 2 | 0 | 0 | 2 |
-| **Total** | **57** | **3** | **2** | **52** |
+| **Total** | **58** | **3** | **2** | **53** |
 
 ---
 

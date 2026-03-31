@@ -70,7 +70,7 @@ CPP account, not the testability of the prediction.
 | ID | Prediction | CPP value | Experiment needed | Source |
 |----|-----------|-----------|-------------------|--------|
 | PRED-O-1 | Top quark fourth cage binding energy matches m_top | TBD (30-vertex shell calc) | Compute from 600-cell geometry | SM-1/SM-2 (OPEN-P-SS-1) |
-| PRED-O-2 | Radial DP chain length = classical electron radius | r_chain = r_e = 2.82 × 10⁻¹⁵ m | Derivation from SSV₀, sea_strength | SM-1 (OPEN-P-QM-new-4) |
+| PRED-O-2 | Radial DP chain length = classical electron radius | r_chain = r_e = 2.82 × 10⁻¹⁵ m [NOTE: r_e = α_fine × ħc/(2·SSV₀); this prediction is a corollary of the α_fine derivation (EW sector) + resolution of r_conf inconsistency (OPEN-P-QM-new-9)] | Derive d_Sea from 600-cell; resolve OPEN-P-QM-new-9 | SM-1 (OPEN-P-QM-new-4, OPEN-P-QM-new-9) |
 | PRED-O-3 | Tunneling electrons emit no photons during transit [T3] | Zero photon emission rate during tunneling | Precision photon detection in STM tunneling | SM-1 (PROP-4) — Tier 3 prop; qualitative prediction already consistent with observation |
 | PRED-O-4 | Para:ortho positronium annihilation ratio from cage geometry [T4] | 1000:1 from T_d vs 3-fold dissolution (cage geometry calculation needed first) | High-precision positronium spectroscopy | SM-1 (PROP-15) — Tier 4 prop; ratio requires cage dissolution geometry calculation before this is a firm prediction |
 | PRED-O-5 | String tension σ from sea_strength | σ ≈ 0.9 GeV/fm (to derive, not calibrate) | Compute from chain self-collimation | SS-1 (OPEN-P-SS-5) |
