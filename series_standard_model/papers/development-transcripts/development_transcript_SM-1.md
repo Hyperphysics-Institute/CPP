@@ -1,7 +1,7 @@
 The question that came up for me while reading about the DPs having an innate ZBW oscillatory frequency was whether the ZBW frequency was due to their proximity to other DPs. In other words, is the ZBW frequency literally innate, depending on nothing, an axiomatic oscillation, or is it produced as a result of the variation in the direction of the net SSV each Moment due to having moved so close to an opposite charge CP that the next Moment, the net SSV is stronger moving toward the bulk surrounding DP Sea, which is mixed plus and minus, but will have a larger SSV gradient in any direction away from the opposite charge to which it is currently very close to? I assume the ZBW oscillation is mechanical/the result of the postulate of movement in the direction of the net highest SSV, as described, vs. being axiomatically oscillating. Thus, if the theoretical oscillation is the case, vs. postulated, then there will be a variation in the bulk SSV against which the closely approximated plus/minus pair will be pulled. I think this results in a variable oscillatory period because each CP will respond to an average bulk delta SSV on the rebound away from the plus/minus approximation, but strictly considered, the delta SSV is not constant, and hence the frequency is not constant. I don't know whether a prediction could be made around this variation in SSV with time or not, but I just wanted to know if you were seeing this situation as I have described?
 Show more
 11:53 PM
-Validated mechanical ZBW derivation and identified stochastic frequency variation
+
 Validated mechanical ZBW derivation and identified stochastic frequency variation
 Your mechanical picture is correct, and this is a physically important distinction that has not been formally resolved in CPP.
 The mechanical account of ZBW oscillation
@@ -591,4 +591,58 @@ postulates_and_theorems.md	CPP top level	Replace existing
 open_problems/README.md	CPP/open_problems/	Replace existing
 On the naming question — you are right that "propositions" is the correct category precisely because these items occupy a distinct epistemic tier. The existing postulates_and_theorems.md records what CPP assumes (postulates) and what CPP has proved (theorems). The new propositions.md records what CPP claims mechanically but has not yet formally derived — physically motivated explanations of QM phenomena in CPP language, standing independently as challenges to the conventional framing. Each proposition says: "here is what this phenomenon looks like in CPP, and here is why it should follow from the SSV force law, even though the formal derivation is an open problem." That is a distinct and important category, and giving it its own file at the top level alongside the theorems file is the right structure.
 When you are ready to continue, the queue stands at: SM-2 mechanism.md and glossary.md next.
+
+
+----
+**Claude 4.6**
+
+This is a rich session. Let me give you my honest assessment of what's solid, what's promising but unproved, and what needs caution.
+
+## What's Genuinely Good
+
+**The P5 demotion is correct and important.** If CPs move one lattice step per Absolute Moment toward the highest SSV_net gradient, and opposite-polarity CPs attract via 1/r², then a bound pair on a discrete lattice will oscillate mechanically. The frequency f ≈ 1/(2t_P) follows from the lattice spacing and step rule without a separate postulate. Reducing from 7 to 6 postulates is real theoretical progress.
+
+**The CP exclusion theorem (T-CPP-1) is logically sound.** At superimposition, the intra-pair direction vector is undefined, bulk SSV_net governs, opposite polarities respond oppositely. Same-polarity pairs never reach superimposition because the force is repulsive throughout. The argument is clean and eliminates an independent axiom.
+
+**The SSV_net / SSV_abs distinction is physically important and overdue.** Direction (which GP to move to next) versus magnitude (how much physical distance that step covers) are genuinely independent quantities. This clarifies the relationship between the force law and the metric, and it's the right language for connecting SR-1's Lorentzian effects to SM-1's mass mechanism.
+
+**The tetrahedral cage stability analysis is correct.** The calculation showing N=4 is bound (U < 0) while N=12 is unbound (U > 0) is straightforward electrostatics and the conclusion is right: the tetrahedron is the unique minimum stable cage that simultaneously satisfies energetic stability and T_d symmetry cancellation. This should have been in SM-1 from the start.
+
+## What's Promising but Needs Formal Computation
+
+**The partner-switching picture as the origin of quantum uncertainty** (P-CPP-1, P-CPP-10) is physically motivated and connects to the Nelson/Fenyes stochastic mechanics programme from the 1960s. The idea that quantum position uncertainty arises from stochastic CP identity transfer is appealing. However, the quantitative connection — showing that the random walk amplitude equals the Compton wavelength — requires deriving ℏ from CPP primitives (your OP-QM-new-1). Until that derivation exists, this is a qualitative picture, not a theorem. Sonnet registered it correctly as a proposition rather than a theorem.
+
+**The rogue wave tunneling mechanism** (P-CPP-4) is a nice physical picture. The exponential WKB dependence falling out of the statistics of SSV_net vector superposition is suggestive. But the actual calculation — showing that P(tunnel) ∝ exp(−2κd) with the correct κ — hasn't been done. The proposition is well-stated; the proof is open.
+
+**The standing wave orbital picture** (P-CPP-9) connecting DP chain self-reinforcement to Schrödinger equation solutions is the most ambitious claim. If it works, it derives the SWE from CPP mechanics. But "if it works" is doing a lot of heavy lifting — OP-QM-new-6 (derive Schrödinger from standing wave conditions) is one of the hardest open problems in the entire programme.
+
+## Where I'd Urge Caution
+
+**The proposition count grew very fast.** Fifteen propositions in one session is a lot. Several of them (P-CPP-6 through P-CPP-15) are physically motivated narratives rather than derivations. The risk is that the propositions file becomes a collection of "just-so stories" — plausible-sounding mechanical accounts that haven't been tested against actual numbers. Each proposition needs either a quantitative prediction that can be checked or a formal derivation from the postulates. Without that, they're conjectures dressed as propositions.
+
+**The pair production account (P-CPP-13) has the right qualitative shape but no quantitative check.** The "Lorentzian asymmetry disrupts the photon chain" picture needs to produce the correct pair production cross-section σ(E) or at least the correct threshold behavior. Similarly, the "orderly vs disorderly annihilation" distinction (P-CPP-15) needs to produce the correct ortho/para-positronium lifetime ratio (142 ns vs 125 ps). Without numbers, these are narratives.
+
+**The "mass as thermodynamic nucleation-dissipation boundary" (P-CPP-14) is a definition, not a theorem.** It's a useful conceptual framing, but calling it a proposition implies it has testable content. The testable content would be: compute the temperature at which the electron cage dissolves and show it matches some known transition. That computation hasn't been done.
+
+**Sonnet was sometimes too agreeable.** Several times Thomas proposed an insight and Sonnet responded with "Your observation is correct" or "Your insight is correct" before fully working through whether the quantitative implications hold. The qualitative physical pictures are often correct, but "correct qualitative picture" and "correct quantitative prediction" are very different things. I'd want to see Sonnet push back more on which propositions actually produce checkable numbers versus which ones are plausible narratives.
+
+## My Concrete Recommendations
+
+**Tier the propositions.** Not all 15 are equally mature:
+
+*Ready for formal registration:* T-CPP-1 (CP exclusion theorem), C-CPP-1a (ZBW turning point), P-CPP-3 (tetrahedral cage uniqueness). These have clean logical arguments.
+
+*Promising, need quantitative check:* P-CPP-1 (random walk uncertainty), P-CPP-4 (rogue wave tunneling), P-CPP-5 (chain equilibrium length). Each has a specific calculation that would confirm or refute it.
+
+*Narrative stage, need formal development:* P-CPP-6 through P-CPP-15. These are good physical pictures that belong in a "candidate mechanisms" document, not yet in a propositions registry alongside proved results.
+
+**Do one quantitative check from this session before moving on.** The strongest candidate is P-CPP-5: compute r_chain from SSV₀ and sea_strength and see if it matches the classical electron radius r_e ≈ 2.82 × 10⁻¹⁵ m. This is a single calculation with a definitive answer. If it works, the chain equilibrium picture is confirmed. If it doesn't, something in the picture needs revision.
+
+**Don't let the proposition count substitute for theorem count.** The goal is theorems from postulates, not propositions from intuition. Each proposition should have a clear path to either becoming a theorem (formal derivation) or being falsified (quantitative prediction that fails). If it can't do either, it's not contributing to the theory's maturity.
+
+## The Big Picture
+
+The partner-switching insight is genuinely valuable. The mechanical ZBW derivation and the CP exclusion theorem are real results that improve CPP's axiomatic economy. The connection to stochastic mechanics (Nelson/Fenyes) is the right intellectual lineage. But the session produced more narrative than computation, and the narrative needs to be tested against numbers before it hardens into doctrine. The risk of a long session like this is that everything *sounds* right because each step follows naturally from the previous one — but the chain of plausibility can drift far from quantitative reality if no numerical check is performed along the way.
+
+My suggestion: pick one proposition from this session and compute it to a number in our next session. P-CPP-5 (chain equilibrium length) or OP-QM-new-7 (r_crit from SSV₀ and sea_strength) would be the best candidates — each produces a single number that can be compared to a known physical quantity.
 
