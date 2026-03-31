@@ -1,977 +1,302 @@
-# CPP Propositions, Theorems and Corollaries — Partner-Switching Session
+# CPP Propositions Registry
 
-**Session date:** 29–30 March 2026
-**Participants:** Thomas Lee Abshier ND, Claude Sonnet (Anthropic)
-**Source conversation:** SM-1 documentation → ZBW mechanism discussion →
-partner-switching Sea pressure → QM implications
-**Last updated:** 30 March 2026
-**Repo location:** CPP top level (peer of postulates_and_theorems.md)
-
-*This file records all new theoretical items generated during the
-partner-switching session. Items are listed in the order they were
-identified, with full statements suitable for incorporation into
-the main postulates_and_theorems.md registry.*
+**Last updated:** 30 March 2026 (tiering update following Opus review)
+**Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
 ---
 
-## Summary of New Items
+## Purpose
 
-| ID | Type | Title |
-|----|------|-------|
-| T-CPP-1 | Theorem | CP Non-Persistent Co-Occupation (replaces P-exclusion postulate) |
-| C-CPP-1a | Corollary | ZBW Turning Point at Grid Point Superimposition |
-| C-CPP-1b | Corollary | Stochastic Partner Exchange in the Dipole Sea |
-| P-CPP-1 | Proposition | Random Walk of Central CP and Quantum Position Uncertainty |
-| P-CPP-2 | Proposition | Solitonic (Rogue Wave) Tunneling Mechanism |
-| P-CPP-3 | Proposition | Tetrahedral Cage as Unique Minimum Stable Cage |
-| P-CPP-4 | Proposition | Elastic Tunneling via Cage Dissolution and Reformation |
-| P-CPP-5 | Proposition | Radial DP Chain Equilibrium Length |
-| P-CPP-6 | Proposition | Relativistic DP Chain Compaction as the de Broglie Wavelength |
-| P-CPP-7 | Proposition | Cage Reformation from Partner-Transitioning Sea CPs |
-| P-CPP-8 | Proposition | Dual Stable Configurations of the Central −eCP |
-| P-CPP-9 | Proposition | Atomic Orbital Probability Density as DP Chain Standing Waves |
-| P-CPP-10 | Proposition | Electron Identity Transfer and the Orbital Born Rule |
-| P-CPP-11 | Proposition | Virtual Particles as Transient CP Configurations Constrained by Gauss's Law |
-| P-CPP-12 | Proposition | Critical Separation Distance for Real Pair Production |
-| P-CPP-13 | Proposition | Photon Pair Production via Lorentzian Asymmetry |
-| P-CPP-14 | Proposition (Definition) | Mass as Thermodynamic Nucleation-Dissipation Boundary |
-| P-CPP-15 | Proposition | Pair Annihilation as Isentropic vs Non-Isentropic Cage Dissolution |
+This file catalogues CPP Propositions — physical claims asserting a specific CPP mechanical account for phenomena that standard physics either treats as primitive postulates, derives from separate frameworks, or leaves unexplained. Each proposition stands independently: it identifies a phenomenon, states what CPP claims about its mechanism, and records the physical argument.
 
-**New open problems:** OP-QM-new-1 through OP-QM-new-8 (see Section 3)
+A proposition is promoted to Theorem when a formal proof from CPP axioms is completed. It is demoted to Conjecture if a gap in the physical argument is found. It is Falsified if a counter-example or internal inconsistency is identified. No entry is ever deleted.
 
-**Postulate demotion:** P5 (ZBW oscillations) is no longer an axiom —
-it is derivable from P3+P4 as T-CPP-1 demonstrates. See Section 4.
-
-**SSV distinction registered:** SSV_net vs SSV_abs are formally
-distinct quantities requiring separate glossary entries. See Section 5.
+**30 March 2026 tiering update:** An independent review by Claude Opus (Anthropic) found that the original file did not adequately distinguish "physically motivated narrative" from "quantitatively verified claim." Four explicit maturity tiers have been added throughout. Readers should treat Tier 3 items as strong research candidates and Tier 4 items as candidate mechanisms awaiting quantitative development — not as established results.
 
 ---
 
-## Section 1: Theorem and Corollaries
+## Maturity Tiers
 
-### T-CPP-1: CP Non-Persistent Co-Occupation
-*(Replaces the CP Exclusion Postulate — that postulate is now redundant)*
+**TIER 1 — THEOREM**
+Derived from CPP axioms by complete logical proof. No additional computation or verification needed. Indistinguishable in status from theorems in postulates_and_theorems.md.
 
-**Statement:** Two Conscious Points cannot persistently occupy the
-same Grid Point.
+**TIER 2 — PROOF-COMPLETE, FORMALISATION PENDING**
+The key calculation has been performed and is internally consistent. The physical argument is at near-theorem standard. What remains is a formal proof write-up from axioms, not a new computation.
 
-**Proof structure:**
+**TIER 3 — NEEDS QUANTITATIVE VERIFICATION**
+The physical mechanism is sound and logically coherent, but the central numerical claim has not been computed from CPP primitives. Each Tier 3 item has one specific, identified, tractable calculation that would confirm or refute it. Until that calculation is performed, the item is a strong candidate, not a result.
 
-*Case 1 — Same-polarity pair:* The SSV_net on CP A from CP B of the
-same polarity is repulsive and grows monotonically as A approaches B
-(1/r² dependence). No reversal of SSV_net occurs before superimposition.
-Same-polarity CPs are driven apart before they can reach the same Grid
-Point. Same-polarity CPs never superimpose under the SSV force law.
+**TIER 4 — CANDIDATE MECHANISM**
+A physically motivated narrative consistent with CPP postulates that qualitatively accounts for the relevant phenomenon. No quantitative test has been performed. These items belong in a candidate mechanisms register and should not be cited alongside Tier 1 or Tier 2 items as equivalent results. Opus (30 March 2026): "Each proposition needs either a quantitative prediction that can be checked or a formal derivation from the postulates. Without that, they're not contributing to the theory's maturity."
 
-*Case 2 — Opposite-polarity pair:* SSV_net is attractive throughout
-the approach and increases monotonically as separation decreases. There
-is no logical point of SSV_net reversal before superimposition — the
-attractive force grows all the way to the Grid Point occupied by the
-partner. At superimposition (both CPs at the same Grid Point), the
-intra-pair direction vector r̂_{A→B} is undefined — no directional
-contribution to SSV_net from the partner. The SSV_net at the shared
-Grid Point is governed entirely by the bulk Dipole Sea. Because A and
-B have opposite polarities, they respond to the same bulk SSV_net
-vector with opposite displacements: they separate on the next Absolute
-Moment. Superimposition is therefore transient — lasting exactly one
-Absolute Moment — not a persistent state. □
-
-**Consequence:** The CP Exclusion Postulate is redundant. Persistent
-co-occupation of a Grid Point by two CPs is prevented by the SSV
-force law for same-polarity pairs (never approach) and by the
-geometry of opposite-polarity superimposition (one-Absolute-Moment
-transience). The CP Exclusion Postulate should be removed from the
-CPP postulate list and replaced by this theorem.
-
-**Key postulates used:** P1 (CPs), P2 (lattice discreteness), P4 (SSV force law)
+The boundary between Tier 3 and Tier 4 is the existence of a specific, identified, tractable calculation. If such a calculation exists and has a known form, the item is Tier 3. If the physical picture is correct but the path to quantification is not yet identified, the item is Tier 4.
 
 ---
 
-### C-CPP-1a: ZBW Turning Point at Grid Point Superimposition
+## Maturity Summary Table
 
-**Statement:** The turning point of the ZBW oscillation of a bound
-DP pair occurs at Grid Point superimposition — the single Absolute
-Moment when both CPs occupy the same Grid Point — not at any prior
-Grid Point during the approach phase.
-
-**Derivation:** The SSV_net on A(−) from B(+) is attractive and
-monotonically increasing in magnitude throughout the approach (1/r²
-dependence, r decreasing step by step). No reversal of SSV_net
-direction occurs at any intermediate Grid Point. The direction of
-SSV_net on A from B becomes undefined only at r = 0 (superimposition).
-After superimposition, the bulk SSV_net at the shared Grid Point
-drives A and B apart in opposite directions. □
-
-**Implication for ZBW frequency:** The ZBW period is the number of
-Absolute Moments required to traverse from maximum separation to
-superimposition and back. For a minimal-amplitude oscillation
-(nearest-neighbour separation d₀), the period is approximately 2
-Absolute Moments, giving f_ZBW ≈ 1/(2t_P). This is a derived
-consequence of the lattice step size and SSV force law, not an
-independent postulate. **P5 (ZBW oscillations) is demoted from
-postulate to theorem** — the ZBW frequency emerges from P4 (SSV
-force law) and P2 (lattice), rather than being independently assumed.
-
-**Follows from:** T-CPP-1
+| ID | Name | Tier | Key test or gap |
+|----|------|------|----------------|
+| THEO-1 | CP Non-Persistent Co-Occupation | **TIER 1** | Proved from AXIM-1,2,4 |
+| CORL-1a | ZBW Turning Point at Superimposition | **TIER 1** | Corollary of THEO-1 |
+| CORL-1b | Stochastic Partner Exchange | **TIER 1** | Corollary of THEO-1, CORL-1a |
+| PROP-3 | Tetrahedral Cage Uniqueness | **TIER 2** | Calculation done; formal proof needed |
+| PROP-1 | Random Walk / Quantum Uncertainty | **TIER 3** | Derive ℏ from CPP (OPEN-P-QM-new-1) |
+| PROP-2 | Rogue Wave Tunneling | **TIER 3** | Compute WKB rate from SSV stats (OPEN-P-QM-new-3) |
+| PROP-4 | Elastic Tunneling via Cage Dissolution | **TIER 3** | Rate calc pending; photon-absence confirmed |
+| PROP-5 | Radial DP Chain Equilibrium Length | **TIER 3** | Compute r_chain vs r_e — HIGHEST PRIORITY |
+| PROP-6 | DP Chain Compaction = de Broglie λ | **TIER 4** | Chain period calculation not performed |
+| PROP-7 | Cage Reformation from Sea CPs | **TIER 4** | Reformation rate not computed |
+| PROP-8 | Dual Stable Configurations of −eCP | **TIER 4** | A↔B transition rates not computed |
+| PROP-9 | Atomic Orbitals as DP Chain Standing Waves | **TIER 4** | SWE derivation open (OPEN-P-QM-new-6) |
+| PROP-10 | Electron Identity Transfer / Born Rule | **TIER 4** | Depends on OPEN-P-QM-new-1 |
+| PROP-11 | Virtual Particles and Gauss's Law | **TIER 4** | VP lifetime formula not verified |
+| PROP-12 | Critical Separation Distance r_crit | **TIER 4** | Same calc as PROP-5; upgrades with it |
+| PROP-13 | Photon Pair Production via Lorentzian Asymmetry | **TIER 4** | Cross-section not computed |
+| PROP-14 | Mass as Thermodynamic Boundary | **TIER 4** | Definitional reframing of AXIM-6; weakest item |
+| PROP-15 | Pair Annihilation: Isentropic vs Non-Isentropic | **TIER 4** | Ortho:para ratio requires cage geometry calc |
 
 ---
 
-### C-CPP-1b: Stochastic Partner Exchange in the Dipole Sea
+## Source and Vocabulary
 
-**Statement:** The partnership identity of Dipole Pairs in the Dipole
-Sea is not persistent. After each superimposition event, each CP's
-next partner is determined by the dominant SSV_net at the CP's
-post-superimposition Grid Point, which need not be its previous partner.
+All items arose from the SM-1 mechanism essay discussion of ZBW oscillation mechanics (29–30 March 2026), which identified stochastic partner exchange in the Dipole Sea as a single unifying principle with implications across quantum mechanics, pair production, virtual particles, atomic orbitals, tunneling, and relativistic mass. Authors: Thomas Lee Abshier ND and Claude Sonnet (Anthropic).
 
-**Mechanism:** After superimposition, A(−) departs to a new Grid Point
-GP_new under the bulk SSV_net. The SSV_net at GP_new is the vector sum
-of contributions from all nearby CPs — the prior partner B(+) at
-distance r_AB, and all competing Sea CPs. Whichever CP C(+)
-contributes the strongest SSV_net toward A at GP_new becomes A's
-next partner. No binding mechanism forces re-pairing with B; the
-SSV force law is local and moment-by-moment.
+Logical chain of discovery:
 
-**Consequence:** The Dipole Sea is a gas of transient partnerships
-renewed each ZBW cycle — not fixed DP molecules. The rate of partner
-exchange depends on the local CP density and the relative magnitudes
-of intra-pair vs inter-pair SSV_net at each post-superimposition
-location. This stochastic partner exchange is the physical mechanism
-underlying quantum position uncertainty, tunneling, virtual particles,
-and atomic orbital probability density (see P-CPP-1 through P-CPP-10).
+    ZBW turning point question
+    → THEO-1 (CP exclusion is a theorem)
+    → CORL-1a (turning point at superimposition)
+    → CORL-1b (stochastic partner exchange)
+    → PROP-1 through PROP-15
 
-**Follows from:** T-CPP-1, C-CPP-1a
+Note: THEO-1 and Corollaries CORL-1a/1b are listed here for context. Their canonical home is postulates_and_theorems.md.
 
 ---
 
-## Section 2: Propositions
+## TIER 1 — THEOREMS
 
-### P-CPP-1: Random Walk of the Central CP and Quantum Position Uncertainty
+### THEO-1: CP Non-Persistent Co-Occupation
 
-**Statement:** The central CP of a fermion executes a stochastic
-random walk through the 600-cell lattice as a consequence of ZBW
-partner switching, producing a position probability distribution
-whose RMS width corresponds to the quantum mechanical position
-uncertainty Δx.
+**Tier:** TIER 1 — THEOREM (proved from AXIM-1, AXIM-2, AXIM-4)
+**Consequence:** CP Exclusion Postulate is redundant and removed. Axiom count reduced from 7 to 6.
 
-**Physical mechanism:** At each ZBW cycle, the central CP undergoes
-superimposition with a cage or Sea CP. After separation, the bulk
-SSV_net at the post-superimposition Grid Point is stochastic — it
-includes contributions from the cage CPs, Sea DPs, and competing
-nearby CPs. The next Grid Point of the central CP is therefore not
-deterministic. Over N ZBW cycles, the central CP's displacement from
-its initial position grows as √N × l_P. The probability distribution
-of central CP locations is the CPP account of |ψ(x)|².
+**Statement:** Two Conscious Points cannot persistently occupy the same Grid Point.
 
-**Connection to Born rule:** Regions of high SSV_abs have compressed
-PSR — each lattice step covers less physical distance. The central
-CP visits high-SSV_abs regions less frequently per unit of physical
-volume. The probability per unit physical volume is therefore weighted
-inversely by the local SSV_abs — the CPP account of |ψ|² as a
-field-weighted position probability. The Born rule emerges from the
-metric-compression effect of SSV_abs without being independently
-postulated.
-
-**Status:** Proposition — physically motivated. The quantitative
-connection between the random walk amplitude and ℏ requires
-identifying the CPP account of Planck's constant (see OP-QM-new-1).
-
-**Postulates used:** P1, P2, P3, P4; follows from C-CPP-1b
+**Proof:** Same-polarity CPs: repulsive SSV_net grows monotonically as separation decreases — same-polarity CPs never reach superimposition. Opposite-polarity CPs: SSV_net is attractive and monotonically increasing throughout approach. No reversal occurs before superimposition. At superimposition, the intra-pair direction vector r̂_{A→B} is undefined — the bulk Dipole Sea SSV_net governs both CPs. Because A and B have opposite polarities, they respond to the same bulk SSV_net with opposite displacements and separate on the next Absolute Moment. Superimposition lasts exactly one Absolute Moment. □
 
 ---
 
-### P-CPP-2: Solitonic (Rogue Wave) Tunneling Mechanism
+### CORL-1a: ZBW Turning Point at Grid Point Superimposition
 
-**Statement:** Quantum tunneling of a particle across an energy barrier
-occurs when a rogue-wave stochastic superposition of SSV_net vectors
-arriving at the central CP's Grid Point from surrounding Sea CPs and
-cage CPs produces a rare large-amplitude SSV_net spike sufficient to
-displace the central CP across the barrier width in a single Absolute
-Moment or small number of Moments.
+**Tier:** TIER 1 — THEOREM (corollary of THEO-1)
+**Consequence:** f_ZBW ≈ 1/(2t_P) is derived, not postulated. AXIM-5 demoted.
 
-**Mechanism:** At each Absolute Moment, the central CP receives SSV_net
-contributions from every CP and DP within its PSR. Normally these sum
-to approximately zero at the cage centre (cage T_d symmetry cancels
-cage contributions; Sea contributions are randomised). On rare occasions,
-by constructive superposition analogous to rogue wave formation, a large
-fraction of the stochastic Sea vectors align in the same direction,
-producing an SSV_net spike far above the typical fluctuation. The spike
-displaces the central CP in the spike direction by a distance potentially
-exceeding the barrier width.
-
-**Statistical character:** For N independent SSV_net vectors of mean
-magnitude μ contributing at one Grid Point:
-P(|SSV_net_total| > A) ∝ exp(−A²/Nμ²)
-The barrier height enters as an energy threshold on the required spike
-amplitude, giving tunneling probability:
-P(tunnel per ZBW cycle) ∝ exp(−V_b/Nμ²)
-This reproduces the exponential WKB tunneling dependence from pure
-SSV_net statistics, without wave mechanics.
-
-**Note on terminology:** This mechanism involves the rogue-wave
-stochastic superposition of Sea SSV_net vectors at the central CP's
-near-side location — not a geometric partner-switching from a far-side
-CP. The central CP is ejected from the near side by a statistical
-anomaly in its own local SSV_net environment.
-
-**Status:** Proposition — physically motivated; quantitative derivation
-requires OP-QM-new-3.
+**Statement:** The ZBW oscillation turning point of a bound DP pair occurs at Grid Point superimposition. SSV_net on A from B is attractive and monotonically increasing throughout approach — no reversal occurs until intra-pair SSV direction vanishes at superimposition. For a minimal-amplitude oscillation, period = 2 Absolute Moments → f_ZBW ≈ 1/(2t_P) as a geometric consequence.
 
 ---
 
-### P-CPP-3: Tetrahedral Cage as Unique Minimum Stable Cage
+### CORL-1b: Stochastic Partner Exchange in the Dipole Sea
 
-**Statement:** The regular tetrahedron (N=4 same-polarity cage CPs
-around an opposite-polarity central CP) is the unique minimum
-configuration that simultaneously satisfies two independent stability
-conditions: (a) energetic stability — total SSV potential energy is
-negative (cage is bound); (b) geometric completeness — T_d symmetry
-cancels all SSV_net multipole moments at the central CP, producing
-a force-free equilibrium.
+**Tier:** TIER 1 — THEOREM (corollary of THEO-1 and CORL-1a)
 
-**Energetic stability argument:**
-Total potential energy U = U_attraction + U_repulsion
-= −N × SSV₀/r_c + (N(N−1)/2) × SSV₀/r_v
-
-For N=4 (tetrahedron): r_v ≈ 1.633 r_c, 6 repulsive pairs:
-U_tetra ≈ SSV₀/r_c × (−4 + 3.67) = −0.33 SSV₀/r_c < 0 ✓ (bound)
-
-For N=12 (icosahedron): r_v ≈ 1.051 r_c, 30 repulsive pairs:
-U_icosa ≈ SSV₀/r_c × (−12 + 28.5) = +16.5 SSV₀/r_c > 0 ✗ (unbound)
-
-The 12-vertex icosahedral arrangement of same-polarity CPs is
-energetically unbound — mutual repulsion overwhelms central attraction.
-The electron cage is tetrahedral, not icosahedral.
-
-**Geometric completeness argument:** The regular tetrahedron's T_d
-symmetry group causes the vector sum of the four unit vectors from
-centre to vertices to be exactly zero. The SSV_net on the central CP
-from all four cage CPs therefore cancels exactly in all directions.
-For N < 4, residual multipole moments create a net SSV_net on the
-central CP — no stable equilibrium exists. For N = 4 in tetrahedral
-arrangement, all multipole moments vanish simultaneously.
-
-**Consequence:** The tetrahedral cage is the unique cage geometry
-where energetic binding and force-free equilibrium coincide. It is
-not an arbitrary choice — it is the only geometry available to a
-cage eCP system in the 600-cell nearest-neighbour shell.
-
-**Postulates used:** P1, P2, P4
+**Statement:** DP pair identity is not persistent. After each superimposition, each CP's next partner is determined by the dominant SSV_net at its post-superimposition Grid Point, which need not be its previous partner. The Dipole Sea is a gas of transient partnerships renewed each ZBW cycle. This corollary is the physical principle underlying all propositions PROP-1 through PROP-15.
 
 ---
 
-### P-CPP-4: Elastic Tunneling via Cage Dissolution and Reformation
+## TIER 2 — PROOF-COMPLETE, FORMALISATION PENDING
 
-**Statement:** During a tunneling event driven by a rogue wave SSV_net
-spike (P-CPP-2), the central −eCP crosses the barrier while the cage
-+eCPs remain at their original positions. The cage dissolves,
-releasing its organisational energy into the Dipole Sea isotropically.
-No photon is emitted. The −eCP immediately reforms an identical cage
-from partner-transitioning Sea CPs on the far side of the barrier.
-The tunneling is elastic: mass and charge are conserved.
+### PROP-3: Tetrahedral Cage as Unique Minimum Stable Cage
 
-**Four-phase mechanism:**
+**Tier:** TIER 2 — PROOF-COMPLETE, FORMALISATION PENDING
+**Upgrade path:** Write formal proof from AXIM-1, AXIM-2, AXIM-4 using the energetic argument as the core.
+**Reviewer note (Opus):** "The calculation showing N=4 is bound and N=12 is unbound is straightforward electrostatics and the conclusion is right."
 
-Phase 1 (Rogue wave displacement): The SSV_net spike acts on the
-central −eCP at its specific Grid Point in one Absolute Moment. The
-four cage +eCPs are at different Grid Points and experience independent
-SSV_net summations — the probability of a correlated rogue wave at
-all five Grid Points simultaneously is negligible. The central −eCP
-is displaced across the barrier; the cage +eCPs remain.
+**Statement:** The regular tetrahedron (N=4 same-polarity cage CPs around an opposite-polarity central CP) is the unique minimum configuration satisfying two independent stability conditions:
 
-Phase 2 (Chain dissipation): The four radial DP chains lose their
-anchor. Previously held in tetrahedral geometry by the central CP's
-SSV field, the chains experience loss of radial tension and dissipate
-their organisational energy into the surrounding Dipole Sea.
+(a) Energetic stability:
 
-Phase 3 (Isotropic dissipation — no photon): The chains were arranged
-tetrahedrally — symmetrically in all directions. Their dissipation is
-therefore spherically symmetric. No preferred emission direction exists.
-No photon can form: photon formation requires a directed, linearly
-polarised DP chain with a preferred axis.
+    U = −N × SSV₀/r_c + (N(N−1)/2) × SSV₀/r_v
 
-**Testable prediction:** Tunneling electrons emit no photons during
-barrier transit. This is consistent with observation.
+    N=4 tetrahedron (r_v ≈ 1.633 r_c, 6 pairs):
+    U_tetra ≈ −0.33 SSV₀/r_c < 0  ✓  BOUND
 
-Phase 4 (Cage reformation): The −eCP arrives at the far-side Grid Point
-and immediately polarises the local Dipole Sea. Partner-transitioning
-+eCPs from the Sea are intercepted by the strong SSV_net of the central
-CP. The tetrahedral cage geometry reforms because it is the SSV energy
-minimum regardless of which specific +eCPs fill the four positions.
-The cage reforms with identical mass and charge.
+    N=12 icosahedron (r_v ≈ 1.051 r_c, 30 pairs):
+    U_icosa ≈ +16.5 SSV₀/r_c > 0  ✗  UNBOUND
 
-**Identity principle:** The electron's identity during transit is
-carried solely by the central −eCP. The cage is a statistical structure
-that dissolves and identically reforms. The electron is not a rigid
-extended object — it is a point-like −eCP that repeatedly recruits
-a local cage from whatever Sea CPs are available.
-
-**Energy accounting:** SSV₀ × 2 = 0.511 MeV deposited into Sea during
-dissolution; 0.511 MeV extracted from Sea during reformation. Net
-change: zero. Tunneling is elastic.
-
-**Status:** Proposition — mechanism consistent with all known tunneling
-observations. Quantitative rate calculation requires OP-QM-new-3.
+(b) Geometric completeness: T_d symmetry cancels all SSV_net multipole moments at the central CP. N < 4: residual moments prevent force-free equilibrium. N = 4 tetrahedron: all multipole moments vanish simultaneously. N=4 is the unique cage geometry in the 600-cell nearest-neighbour shell where both conditions coincide.
 
 ---
 
-### P-CPP-5: Radial DP Chain Equilibrium Length
+## TIER 3 — NEEDS QUANTITATIVE VERIFICATION
 
-**Statement:** Each of the four radial DP chains extending from the
-tetrahedral cage vertices reaches an equilibrium length r_chain set
-by the balance of three competing forces: (a) radial SSV attraction
-toward the central CP (inward); (b) lateral inter-chain SSV repulsion
-driving chains outward at close spacing; (c) thermal DP Sea exchange
-dissolving chain integrity beyond the point where the central CP's
-SSV field falls below the thermal fluctuation amplitude.
-
-**Physical derivation:** The equilibrium condition:
-SSV₀/r_chain² = sea_strength × SSV₀/d_Sea²
-gives r_chain ~ d_Sea/√sea_strength
-
-The physical interpretation: r_chain is the radius at which the
-central CP's SSV field, attenuated by 1/r², equals the thermal
-fluctuation amplitude of the Sea (proportional to sea_strength × SSV₀).
-Beyond r_chain, thermal partnership switching dominates chain integrity
-and the chain dissolves into the bulk.
-
-**Predicted value:** r_chain is the CPP candidate for the classical
-electron radius r_e ≈ 2.82 × 10⁻¹⁵ m. Whether the CPP equilibrium
-length equals r_e when computed from SSV₀ and sea_strength is an
-open calculation (OP-QM-new-4).
-
-**Mass implication:** The radial chain organisational energy (the
-energy stored in four chains of DP pairs out to r_chain) constitutes
-an additional mass contribution beyond the tetrahedral cage binding
-energy of 2 SSV₀. This chain energy may require revising the SM-1
-calibration: if the chain energy is non-negligible, SSV₀ = 0.2555 MeV
-calibrated from cage binding alone may need to partition the 0.511 MeV
-between cage and chain contributions (OP-QM-new-5).
-
-**Status:** Proposition — physically motivated; quantitative derivation
-requires OP-QM-new-4.
+These are the highest-priority research targets for the CPP QM series. Each has one identified tractable calculation.
 
 ---
 
-### P-CPP-6: Relativistic DP Chain Compaction as the de Broglie Wavelength
+### PROP-1: Random Walk of the Central CP and Quantum Position Uncertainty
 
-**Statement:** At high velocity, the increased SSV_abs at each chain
-DP's Grid Point (from kinetic energy via the PSR compression formula
-PSR_eff = l_P/(1 + k·ΔSSV)) reduces the physical distance between
-consecutive chain DPs at their equilibrium lattice positions. The
-spatial period of the cage-plus-chain structure in physical units
-decreases as 1/γ with increasing velocity, reproducing the de Broglie
-wavelength λ = h/p without a wave postulate.
+**Tier:** TIER 3 — NEEDS QUANTITATIVE VERIFICATION
+**Required calculation:** Compute the random walk RMS displacement per ZBW cycle from CPP primitives (SSV₀, l_P, t_P, sea_strength); verify this equals the Compton wavelength ℏ/m_e c at the electron mass scale. This amounts to deriving ℏ from CPP statistics.
+**Open problem:** OPEN-P-QM-new-1
+**If confirmed:** ℏ is derived; uncertainty principle emerges without postulating it.
+**If refuted:** The random walk amplitude or scaling is wrong; picture needs revision.
 
-**Mechanism:** High velocity → high KE → high SSV_abs → PSR compressed
-→ metric compressed at chain locations → more DPs per physical unit
-length in each chain → denser, shorter, more compact cage-plus-chain
-structure → shorter spatial period → shorter de Broglie wavelength.
+**Statement:** The central CP of a fermion executes a stochastic random walk through the 600-cell lattice as a consequence of ZBW partner switching. At each ZBW cycle, the post-superimposition Grid Point is determined by the instantaneous bulk SSV_net — stochastic because surrounding Sea DPs have randomised orientations. Over N cycles the displacement grows as √N × l_P. The distribution of central CP locations is the CPP account of |ψ(x)|².
 
-**Wave-particle duality:** At low velocity, the chain structure has
-a long spatial period — the electron is wave-like (long λ_dB,
-interference, diffraction). At high velocity, the chain compresses —
-the particle is particle-like (short λ_dB, well-defined trajectory).
-This is not a philosophical shift between two descriptions but a
-continuous mechanical compression of the same physical structure.
-
-**Unification:** SR-1's Lorentzian metric compression and SM-1's chain
-structure are not separate physics. The relativistic compaction of the
-electron is the SSV_abs-driven compression of its DP chain cloud.
-The matter wave is the spatial periodicity of the electron's own
-organisational structure under relativistic compression.
-
-**Status:** Proposition — physically motivated; quantitative derivation
-requires connecting SSV_abs at chain DP Grid Points to the standard
-Lorentz factor γ = 1/√(1−v²/c²).
+The Born rule connection (high SSV_abs → compressed PSR → fewer visits per physical volume → probability ∝ 1/SSV_abs) is qualitatively coherent but part of the same unverified picture. The Born rule has not been derived from CPP; the qualitative account has been sketched.
 
 ---
 
-### P-CPP-7: Cage Reformation from Partner-Transitioning Sea CPs
+### PROP-2: Solitonic (Rogue Wave) Tunneling Mechanism
 
-**Statement:** The cage +eCPs that form around a newly-arrived central
-−eCP are not specially prepared CPs but Sea CPs in mid-transition
-between partnerships — CPs that have recently completed a
-superimposition event and are departing toward their next partner.
-Cage reformation is the normal partner-switching dynamics of the Sea,
-suddenly biased by the appearance of a strong SSV_net source.
+**Tier:** TIER 3 — NEEDS QUANTITATIVE VERIFICATION
+**Required calculation:** Compute P(tunnel per ZBW cycle) from the statistics of N independent SSV_net vectors of mean magnitude μ at the central CP's near-side Grid Point; verify this equals exp(−2κd) with the correct κ for given barrier height and width.
+**Open problem:** OPEN-P-QM-new-3
+**If confirmed:** WKB tunneling is derived from SSV_net vector statistics; no wave mechanics required.
+**If refuted:** The statistics do not produce the correct exponential; picture needs revision.
 
-**Consequence:** The cage is a persistent geometric relationship, not
-a persistent collection of specific CPs. The four cage positions are
-filled continuously by whatever transitioning +eCPs are locally
-available; each is eventually replaced as it finds a stronger partner
-elsewhere. The electron's identity is in the central −eCP; the cage
-is the crowd that continuously reforms around it. The specific CPs
-filling the cage positions are irrelevant to the electron's identity.
-
-**Postulates used:** P1, P2, P3, P4; follows from C-CPP-1b
+**Statement:** Quantum tunneling occurs when a rogue-wave stochastic superposition of SSV_net vectors produces a rare large-amplitude spike sufficient to displace the central CP across the barrier. For N Sea vectors of mean magnitude μ: P(spike > A) ∝ exp(−A²/Nμ²). For barrier height V_b: P(tunnel per ZBW cycle) ∝ exp(−V_b/Nμ²), which has the WKB form. The exponent has not been computed to verify it matches κ = √(2m(V−E))/ℏ with the correct numerical value.
 
 ---
 
-### P-CPP-8: Dual Stable Configurations of the Central −eCP
+### PROP-4: Elastic Tunneling via Cage Dissolution and Reformation
 
-**Statement:** A −eCP has two energetically distinct configurations:
+**Tier:** TIER 3 — NEEDS QUANTITATIVE VERIFICATION
+**Required calculation:** (i) PROP-2 rate calculation applies. (ii) Verify energy deposited/extracted in Sea during dissolution/reformation = 2 SSV₀ exactly.
+**One prediction already confirmed:** Tunneling electrons emit no photons. The tetrahedral (isotropic) cage dissolution has no preferred emission axis — no photon can form. This is observed. This confirmed prediction elevates PROP-4 above a pure Tier 4 narrative.
+**Open problem:** OPEN-P-QM-new-3
 
-(A) DP enrollment: single partnership with one +eCP, binding energy
-≈ SSV₀/2, contributing to the Dipole Sea as an ordinary DP.
-
-(B) 4-vertex cage: tetrahedral cage with four +eCPs and four radial
-chains, binding energy = 2 SSV₀ = m_e c², constituting the electron
-as an SM particle with persistent identity.
-
-Configuration B is the deeper energy minimum. Spontaneous transition
-A→B occurs when three additional +eCPs are available at approximately
-tetrahedral geometry around the −eCP. Transition B→A requires
-simultaneous disruption of three cage bonds, making stable electrons
-far more common than free Sea −eCPs at low temperature.
-
-**Pair creation and annihilation:** Pair creation from a high-energy
-photon is the correlated A→B transition of a −eCP and a +eCP,
-promoted by the Lorentzian disruption of the photon's DP chain
-(P-CPP-13). Pair annihilation is the correlated B→A transition
-when a −eCP cage and a +eCP cage approach and dissolve into each other
-(P-CPP-15).
-
-**Status:** Proposition — thermodynamic argument; quantitative
-transition rates from Sea statistics require further development.
+**Statement:** During rogue-wave tunneling (PROP-2), the central −eCP crosses the barrier while cage +eCPs remain. The cage dissolves isotropically into the Sea — no photon forms because no preferred emission axis exists. The −eCP reforms an identical cage from partner-transitioning Sea CPs on the far side. Tunneling is elastic: mass and charge conserved exactly. The electron's identity is carried solely by the central −eCP during transit.
 
 ---
 
-### P-CPP-9: Atomic Orbital Probability Density as DP Chain Standing Waves
+### PROP-5: Radial DP Chain Equilibrium Length
 
-**Statement:** The probability density |ψ(x)|² of the electron in an
-atomic orbital is the time-averaged distribution of the cage's central
-position, produced by three simultaneous mechanisms:
+**Tier:** TIER 3 — NEEDS QUANTITATIVE VERIFICATION — HIGHEST PRIORITY
+**Required calculation:** Compute r_chain = d_Sea/√sea_strength numerically using d_Sea from 600-cell geometry and sea_strength = 0.1780 (SS-1 Theorem 6). Compare to r_e = 2.82 × 10⁻¹⁵ m.
+**If r_chain ≈ r_e:** Chain equilibrium picture confirmed; r_e derived from CPP geometry rather than defined circularly.
+**If r_chain ≠ r_e:** Equilibrium condition wrong, or d_Sea identification incorrect; picture needs revision.
+**Reviewer note (Opus):** "Do one quantitative check from this session before moving on. The strongest candidate is PROP-5: compute r_chain from SSV₀ and sea_strength and see if it matches r_e. This is a single calculation with a definitive answer."
+**Open problems:** OPEN-P-QM-new-4, OPEN-P-QM-new-5
 
-(1) KE polarisation of the Dipole Sea by the moving −eCP, creating
-a directed chain structure with spatial period equal to the de Broglie
-wavelength (P-CPP-6).
-
-(2) The structured SSV landscape from nucleus and other occupied
-orbitals, biasing the central CP's random walk toward regions of
-strong attractive SSV_net (high |ψ|²) and away from regions of
-repulsive SSV_net (nodes, |ψ|² = 0).
-
-(3) Self-reinforcing standing waves of DP chains in the SSV landscape:
-chain reformation at each ZBW cycle reinforces the chain structure of
-the previous cycle in regions where the background SSV landscape is
-stationary, producing a standing wave whose nodes and antinodes
-correspond to the nodes and antinodes of the Schrödinger wave function.
-
-**Orbital shapes:** The geometric pattern of nodes and antinodes in
-the CPP standing wave in the nuclear SSV landscape is the CPP account
-of s, p, d, f orbital shapes — not a separate postulate but a
-consequence of the SSV landscape geometry of the nucleus.
-
-**Status:** Proposition — physically motivated; quantitative derivation
-requires OP-QM-new-6 (derive SWE from DP chain standing wave conditions).
+**Statement:** The four radial DP chains extending from the cage vertices reach equilibrium length r_chain set by the balance of radial SSV attraction, lateral inter-chain repulsion, and thermal Sea dissolution. Equilibrium condition: SSV₀/r_chain² = sea_strength × SSV₀/d_Sea², giving r_chain ~ d_Sea/√sea_strength ≈ 2.37 × d_Sea. The chain organisational energy is additional rest mass beyond 2 SSV₀; if non-negligible, it requires revising the SM-1 calibration (OPEN-P-QM-new-5).
 
 ---
 
-### P-CPP-10: Electron Identity Transfer and the Orbital Born Rule
+## TIER 4 — CANDIDATE MECHANISMS
 
-**Statement:** The identity of which CP is "the electron" at any
-given Absolute Moment may transfer through partner switching: a
-transitioning Sea −eCP may be enrolled as the new cage centre while
-the prior central −eCP departs as a Sea DP. The electron's position
-is therefore not the trajectory of a single CP but the sequence of
-Grid Points that successively occupy the central cage role.
-
-**Born rule consequence:** The probability distribution of central
-cage positions across many ZBW cycles is the Born rule probability
-density |ψ|², shaped by the SSV landscape without being postulated
-independently. This mechanism distinguishes CPP from both classical
-mechanics (no probability) and standard QM (probability postulated
-via the Born rule): in CPP, probability emerges from the statistics
-of CP identity transfer in the SSV field.
-
-**Relationship to P-CPP-9:** Identity transfer provides the mechanism
-by which the central position hops through the standing wave pattern
-of P-CPP-9. The standing waves define the stable regions; the identity
-transfer populates them according to the SSV gradient.
-
-**Status:** Proposition — physically motivated; formal connection to
-the Born rule requires OP-QM-new-1.
+The following propositions are physically motivated narratives consistent with CPP postulates. No quantitative test has been performed for any of them. They should be read as candidate mechanisms — potential future Tier 3 items — not as established results. Opus (30 March 2026) specifically recommends these belong in a "candidate mechanisms" register rather than beside proved results.
 
 ---
 
-### P-CPP-11: Virtual Particles as Transient CP Configurations
-### Constrained by Gauss's Law
+### PROP-6: Relativistic DP Chain Compaction as the de Broglie Wavelength
 
-**Statement:** Virtual particles are transient configurations of the
-Dipole Sea's partner-switching dynamics that momentarily reproduce the
-charge and field structure of real SM particles, but lack a persistent
-unpaired central CP as a nucleation seed.
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Compute the physical spatial period of the cage-plus-chain structure as a function of velocity using PSR_eff = l_P/(1 + k·SSV_abs); verify period = h/p = h/(γmv).
 
-**Gauss's law constraint:** The integral of the SSV field over any
-closed surface in a charge-neutral volume is zero. Every VP
-configuration must therefore have a compensating anti-configuration
-within the enclosing volume. The recombination SSV_net linking the
-VP pair is always present throughout the VP's lifetime, distinguishing
-it from a real particle pair.
-
-**Lifetime distribution:** Without a persistent nucleation seed,
-thermal dissipation overwhelms cage maintenance at each ZBW cycle.
-The mean VP lifetime is:
-τ_VP = t_P / p_dissipate
-where p_dissipate is the probability per ZBW cycle that partner-
-switching disrupts the configuration. More energetic (more organised,
-rarer) VP configurations have higher p_dissipate and shorter lifetimes.
-
-**Connection to uncertainty principle:** The energy-time uncertainty
-relation ΔE·Δt ≈ ℏ is the statistical expression of the relationship
-between VP organisational complexity (energy) and mean lifetime —
-derived from Sea statistics rather than postulated from Fourier analysis.
-
-**Status:** Proposition — the Gauss's law constraint and lifetime
-derivation are physically motivated; formal proof requires OP-QM-new-1.
+**Statement:** At high velocity, SSV_abs compresses PSR at each chain DP Grid Point, reducing the physical distance between consecutive chain DPs. The spatial period of the cage-plus-chain structure decreases as 1/γ, reproducing λ_dB = h/p without a wave postulate. Wave-particle duality is a continuous mechanical transition — long-period (low v, wave-like) to short-period (high v, particle-like) — not a change of description.
 
 ---
 
-### P-CPP-12: Critical Separation Distance for Real Pair Production
+### PROP-7: Cage Reformation from Partner-Transitioning Sea CPs
 
-**Statement:** A produced +CP/−CP pair constitutes real particles
-rather than a VP when their separation r exceeds the critical distance
-r_crit at which the mutual SSV_net attraction is balanced by the
-thermal pressure of the ZBW partner-switching Sea.
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Compute the cage reformation rate from Sea CP partner-switching kinetics; verify the electron cage is stable (reformation rate >> dissociation rate at T = 0).
 
-**Equilibrium condition:**
-SSV₀/r_crit² = sea_strength × SSV₀/d_Sea²
-r_crit = d_Sea / √sea_strength ≈ 2.37 × d_Sea
-
-**Physical interpretation:** Below r_crit, recombination is
-thermodynamically favoured — the intra-pair SSV_net dominates and
-pulls the pair back together. Above r_crit, each CP independently
-nucleates a cage — the thermal pressure of the Sea exceeds the
-intra-pair SSV_net and the CPs find independent cage partners before
-recombining.
-
-**Predicted identification:** r_crit is the CPP candidate for the
-electron Compton wavelength ℏ/m_e c. If correct, this provides a
-derivation of the Compton wavelength from SSV₀ and sea_strength
-alone (OP-QM-new-7).
-
-**Status:** Proposition; quantitative verification requires OP-QM-new-7.
+**Statement:** Cage +eCPs that reform around a newly-arrived central −eCP are Sea CPs in mid-transition between partnerships, intercepted by the central CP's strong SSV_net. Cage reformation is normal partner-switching dynamics biased by a strong SSV_net source. The cage is a persistent geometric relationship, not a persistent collection of specific CPs. The electron's identity is in the central −eCP alone.
 
 ---
 
-### P-CPP-13: Photon Pair Production via Lorentzian Asymmetry
+### PROP-8: Dual Stable Configurations of the Central −eCP
 
-**Statement:** Photon pair production near a heavy nucleus proceeds
-in three stages:
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Compute A→B and B→A transition rates as functions of temperature and Sea CP density; verify B→A is sufficiently rare to account for the electron's effective infinite stability.
 
-(1) The nucleus's SSV field creates Lorentzian asymmetry (via PSR
-compression) between the inner and outer limbs of the photon's DP
-chain, disrupting the phase relationship that maintains the photon's
-propagation. The inner limb is physically compressed relative to
-the outer limb.
-
-(2) At sufficient photon energy (hf ≥ 2m_e c²), this asymmetry
-separates a +CP and −CP into independent displacement trajectories
-with separation r > r_crit (P-CPP-12).
-
-(3) Each CP nucleates a cage from local Sea CPs (P-CPP-7), forming
-a real electron-positron pair. The nucleus absorbs recoil momentum
-through the SSV gradient force on the photon chain's inner limb —
-momentum conservation requires this third body. Excess photon energy
-above 2m_e c² becomes KE of the produced pair, further stabilising
-them against recombination via relativistic chain compaction (P-CPP-6).
-
-**Why a nucleus is required:** In free space, no asymmetric Lorentzian
-distortion is available to break the photon chain's left-right symmetry.
-The nucleus provides the spatial SSV gradient that breaks this symmetry
-and also absorbs the recoil momentum required by momentum conservation.
-Pair production in free space from a single photon violates both
-momentum conservation and the symmetry requirement — consistent
-with QED selection rules.
-
-**Status:** Proposition; quantitative cross-section calculation
-requires OP-QM-new-7.
+**Statement:** A −eCP has two energetically distinct configurations: (A) DP enrollment (binding energy ≈ SSV₀/2, Sea constituent) and (B) 4-vertex tetrahedral cage (binding energy = 2 SSV₀ = m_e c², the electron as an SM particle). B is the deeper energy minimum. Pair creation = correlated A→B transition; pair annihilation = correlated B→A transition.
 
 ---
 
-### P-CPP-14: Mass as Thermodynamic Nucleation-Dissipation Boundary
-*(Definition-level proposition)*
+### PROP-9: Atomic Orbital Probability Density as DP Chain Standing Waves
 
-**Statement:** The rest mass of a particle is the ground-state
-organisational energy of its CP cage structure — the energy required
-to maintain a stable nucleation seed against thermal dissipation of
-its DP chains at T = 0 and v = 0.
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** OPEN-P-QM-new-6 (derive SWE from DP chain standing wave stability conditions). This is the hardest open problem in the QM series — likely requires several formal sessions before quantitative testing is possible.
 
-**Corollaries:**
-
-(a) Temperature dependence: At high T, more organisational energy is
-required to maintain the same cage against stronger thermal dissipation.
-At T = T_c (QCD transition temperature), the quark cage energy equals
-the thermal dissipation energy — confinement dissolves (OP-SS-14).
-At T ≈ 10¹⁵ K (electroweak scale), no cage structure can maintain
-itself — all particle masses effectively vanish.
-
-(b) Velocity dependence: At high v, SSV_abs compresses the chain
-structure (Lorentzian compaction, P-CPP-6), storing additional energy
-identified as relativistic mass. The relativistic mass formula
-m_rel = γm₀ is the energy stored in a Lorentzian-compacted chain
-structure relative to its rest-frame value.
-
-(c) Ground-state energy: m_e c² = 0.511 MeV is the organisational
-energy at the threshold of stability — the cage energy at r_crit —
-where the nucleation SSV_net just exceeds the thermal dissipation
-pressure at T = 0.
-
-(d) SM-1 calibration: SSV₀ = 0.2555 MeV is the ground-state baseline
-at T ≈ 0, v = 0, from which thermal and relativistic corrections depart.
-
-(e) Second law: Entropy increase corresponds to the conversion of
-organised DP chain structures (particles, photons) into the maximum-
-entropy Sea. Mass is the most concentrated form of DP chain organisation;
-photons are intermediate; Sea DPs are maximum entropy. All physical
-processes convert between these levels with entropy non-decreasing.
-
-**Status:** Definitional proposition — this reframes the existing
-P6 (mass as organisational energy) in thermodynamic terms and extends
-it with explicit temperature and velocity dependence.
+**Statement:** Atomic orbital |ψ(x)|² arises from three simultaneous CPP mechanisms: (1) KE polarisation of the Sea into directed chains with period λ_dB (PROP-6); (2) nuclear SSV gradient biasing the central CP random walk toward high-|ψ|² regions; (3) self-reinforcing DP chain standing waves in the stationary SSV landscape, with nodes and antinodes corresponding to orbital nodes and antinodes.
 
 ---
 
-### P-CPP-15: Pair Annihilation as Isentropic vs Non-Isentropic
-### Cage Dissolution
+### PROP-10: Electron Identity Transfer and the Orbital Born Rule
 
-**Statement:** Pair annihilation of a matter-antimatter particle pair
-proceeds through mutual cage dissolution driven by inter-particle CP
-attraction, producing two distinct regimes:
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Depends on PROP-9 and OPEN-P-QM-new-1. The Born rule emergence from identity transfer statistics is conceptually important but requires ℏ to be derived first.
 
-**(a) Isentropic (orderly) annihilation:** At low relative velocity
-(v_approach < r_cage/t_P), cage dissolution is quasi-static. The
-eight cage CPs from both particles (four from each) momentarily form
-a symmetric structure around the central CP superimposition point,
-with the approach axis as the sole preferred direction. Chain energy
-dissipates along this axis as two back-to-back photons of energy
-m c² each, conserving momentum and producing no entropy increase.
-This is the CPP account of e⁺e⁻ → γγ and positronium decay.
-
-**(b) Non-isentropic (disorderly) annihilation:** At high relative
-velocity (v_approach > r_cage/t_P), cage dissolution is incomplete
-and misaligned. Partial cage structures survive and recruit Sea CPs
-to form new particle configurations. Chain energy dissipates in
-multiple directions producing jets, broad photon spectra, and new
-particle-antiparticle pairs above rest mass thresholds. Entropy
-increases. Total energy is conserved but distributed across photonic,
-massive, and thermal Sea degrees of freedom.
-
-**(c) Three-photon outcome:** Ortho-positronium (spin-1) decay to
-three photons arises when the cage dissolution geometry has three-fold
-rather than two-fold axis symmetry, from specific spin alignment of
-the electron-positron pair in the bound state. The 1000:1 ratio of
-two-photon (para) to three-photon (ortho) annihilation is a testable
-prediction of the cage dissolution geometry.
-
-**(d) Isentropy condition:** Clean two-photon annihilation requires
-collision duration > ZBW cycle time: v_approach × t_P < r_cage.
-This is satisfied for positronium annihilation but violated for
-ultra-relativistic collisions, consistent with observation.
-
-**Note — distinction from tunneling dissolution:** In tunneling
-(P-CPP-4), cage dissolution is isotropic (no photon). In annihilation,
-cage dissolution is axially directed (two photons). The difference
-is the presence vs absence of an approach axis: tunneling has a
-displaced central CP but no approaching anti-partner; annihilation
-has two approaching cages with a shared axis.
-
-**Status:** Proposition; the 1000:1 ortho:para ratio is a quantitative
-testable prediction requiring computation of the cage dissolution
-geometry for spin-0 vs spin-1 positronium.
+**Statement:** The electron's position is the Grid Point of whichever −eCP currently occupies the central cage role. The Born rule |ψ|² is the time-averaged distribution of these central positions, shaped by the SSV landscape. The Born rule is not postulated; it emerges from CP identity transfer statistics in the SSV field.
 
 ---
 
-## Section 3: New Open Problems
+### PROP-11: Virtual Particles as Transient CP Configurations Constrained by Gauss's Law
 
-### OP-QM-new-1: Planck's Constant from ZBW Partner-Switching Statistics
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Compute τ_VP = t_P/p_dissipate for a specific VP configuration; verify τ_VP × ΔE ≈ ℏ.
 
-**Priority:** HIGHEST
-**Status:** OPEN
-**Registered:** 30 March 2026
-
-**Statement:** Derive ℏ from CPP partner-switching random walk
-dynamics. Specifically: identify the combination of SSV₀, l_P, t_P,
-and sea_strength that equals ℏ, and demonstrate that the random walk
-amplitude over one ZBW period equals the reduced Compton wavelength
-λ_C = ℏ/mc for the electron.
-
-**Context:** P-CPP-1 identifies the central CP random walk as the
-CPP account of quantum position uncertainty. For this identification
-to be quantitative, the RMS displacement per ZBW cycle must equal
-the Compton wavelength at the relevant mass scale. The Compton
-wavelength of the electron is λ_C ≈ 2.43 × 10⁻¹² m, requiring
-approximately N ≈ (λ_C/l_P)² ≈ 10⁴⁶ ZBW steps to traverse that
-distance in a random walk.
-
-**Feeds into:** OP-QM-1 (Born rule), OP-QM-2 (Schrödinger equation),
-P-CPP-1, P-CPP-10
+**Statement:** Virtual particles are transient Sea partner-switching configurations that momentarily reproduce real particle charge and field structure but lack a persistent nucleation seed. Gauss's law requires a compensating anti-configuration within any enclosing charge-neutral volume. Mean VP lifetime τ_VP = t_P/p_dissipate, where p_dissipate increases with VP energy. The energy-time uncertainty ΔE·Δt ≈ ℏ emerges from this lifetime-complexity relationship.
 
 ---
 
-### OP-QM-new-2: Stochastic Variation of ZBW Period from Bulk Sea Fluctuations
+### PROP-12: Critical Separation Distance for Real Pair Production
 
-**Priority:** MEDIUM
-**Status:** OPEN
-**Registered:** 30 March 2026
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Relationship to PROP-5:** r_crit = d_Sea/√sea_strength is the same formula as r_chain. Once PROP-5 is verified (OPEN-P-QM-new-4), this item upgrades to Tier 3 automatically, because both use the same calculation.
+**Open problem:** OPEN-P-QM-new-7
 
-**Statement:** Compute the variance in the ZBW period as a function
-of the number density and mean orientation coherence length of
-surrounding Dipole Sea pairs. Determine whether this variance connects
-to the quantum mechanical uncertainty in particle position or to
-finite-temperature mass corrections.
-
-**Context:** At each ZBW turning point (superimposition), the bulk
-SSV_net that drives A and B apart is stochastic — it includes
-contributions from all nearby Sea CPs with randomised orientations.
-The restoring force for the next oscillation cycle therefore has a
-distribution of magnitudes, producing a distribution of ZBW periods
-rather than a single sharp frequency. This ZBW frequency variance
-is expected to produce: (a) a natural linewidth in the ZBW frequency
-spectrum (Lorentzian broadening); (b) spatial diffusion of the DP
-pair centre over many cycles; (c) temperature-dependent mass corrections
-via increased thermal variance at high T.
-
-**Expected magnitude:** The variance is small — the intra-pair SSV
-dominates over bulk fluctuations at near-superimposition distances
-by ∝ (l_P/d_bulk)². The approximation f_ZBW ≈ 1/(2t_P) is highly
-accurate, but the correction is not exactly zero.
+**Statement:** A +CP/−CP pair nucleates real particles when separation r exceeds r_crit = d_Sea/√sea_strength — the radius at which independent cage nucleation overcomes intra-pair recombination pressure. Below r_crit: VP. Above r_crit: real particles. CPP candidate for the electron Compton wavelength ℏ/m_e c.
 
 ---
 
-### OP-QM-new-3: Biased vs Unbiased Tunneling Rates from CPP
+### PROP-13: Photon Pair Production via Lorentzian Asymmetry
 
-**Priority:** HIGH
-**Status:** OPEN
-**Registered:** 30 March 2026
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Compute the pair production cross-section σ(E) from the nuclear SSV gradient disruption picture; verify σ ∝ Z² and correct energy dependence near threshold.
 
-**Statement:** Derive the tunneling current as a function of barrier
-width, barrier height, and (for biased case) applied field SSV_net,
-from the rogue-wave SSV_net spike statistics of the Dipole Sea.
-Verify agreement with Fowler-Nordheim (biased) and WKB (unbiased)
-tunneling formulae.
-
-**Two cases:**
-
-Biased (transistor): External SSV_net gradient biases the stochastic
-partner-switching in the transmission direction. Compute the net
-rate of central CP displacements across the barrier as a function
-of bias field magnitude.
-
-Unbiased (diffusion tunneling): No external field. Compute the
-probability that a rogue-wave SSV_net spike at the central CP's
-near-side location exceeds the barrier height, as a function of
-barrier width and height. Expected result: P ∝ exp(−V_b/Nμ²),
-reproducing WKB exponential.
+**Statement:** A photon near a heavy nucleus undergoes Lorentzian asymmetry (inner limb PSR compressed more than outer limb by the nuclear SSV). At hf ≥ 2m_e c², this asymmetry separates a +CP/−CP pair to r > r_crit. Each CP nucleates a cage from Sea CPs. The nucleus absorbs recoil momentum. A nucleus is required because free-space single-photon pair production violates both momentum conservation and the symmetry requirement.
 
 ---
 
-### OP-QM-new-4: Derive r_chain from SSV₀ and sea_strength
+### PROP-14: Mass as Thermodynamic Nucleation-Dissipation Boundary
 
-**Priority:** HIGH
-**Status:** OPEN
-**Registered:** 30 March 2026
+**Tier:** TIER 4 — CANDIDATE MECHANISM (weakest item in this list)
+**Reviewer note (Opus, 30 March 2026):** "This is a definition, not a theorem. The testable content would be: compute the temperature at which the electron cage dissolves and show it matches some known transition. That computation hasn't been done."
+**Path to testable content:** Compute the cage dissolution temperature from SSV₀ and sea_strength; compare to the QCD transition temperature T_c ≈ 150 MeV (OPEN-P-QM-new-8, OPEN-P-SS-14).
 
-**Statement:** Compute the equilibrium length of the radial DP chains
-from the balance of radial tension, inter-chain repulsion, and thermal
-dissolution. Verify that the result equals the classical electron
-radius r_e ≈ 2.82 × 10⁻¹⁵ m. Compute the ratio r_e/r_conf from
-the leptonic and hadronic coupling strengths and verify against the
-observed ratio of ~18.
-
-**Feeds into:** P-CPP-5, OP-QM-new-5
+**Statement:** Rest mass = the ground-state organisational energy required to maintain a stable nucleation seed against thermal DP Sea dissipation at T = 0, v = 0. Corollaries: temperature-dependent mass, relativistic mass as chain compaction energy (PROP-6), m_e c² as the threshold organisational energy at r_crit, the second law as DP chain organisation tending toward maximum entropy. This is a useful conceptual reframing of AXIM-6 rather than an independent physical claim.
 
 ---
 
-### OP-QM-new-5: Chain Contribution to Electron Rest Mass
+### PROP-15: Pair Annihilation as Isentropic vs Non-Isentropic Cage Dissolution
 
-**Priority:** HIGH
-**Status:** OPEN
-**Registered:** 30 March 2026
+**Tier:** TIER 4 — CANDIDATE MECHANISM
+**Path to Tier 3:** Compute the ortho:para positronium decay ratio from the cage dissolution geometry — show T_d (two-fold axis) cage dissolution gives rate R₂γ and three-fold dissolution gives R₃γ with R₂γ/R₃γ ≈ 1000, matching the observed lifetime ratio (para: 125 ps, ortho: 142 ns).
+**Qualitative predictions confirmed:** Low-v e⁺e⁻ → two back-to-back photons; high-v → jets and multiple particles. Both observed, consistent with the isentropic / non-isentropic distinction.
 
-**Statement:** Compute the total organisational energy stored in the
-four radial DP chains at equilibrium length r_chain. Determine what
-fraction of the electron's 0.511 MeV rest mass comes from (a) the
-tetrahedral cage binding energy (2 SSV₀ from SM-1's calibration) and
-(b) the radial chain organisational energy. If the chain contribution
-is non-negligible, the SM-1 calibration requires revision: SSV₀ must
-be set by the total (cage + chain) binding energy, not cage alone.
-
-**Note:** This is the most consequential near-term open problem for
-SM-1's internal consistency. If the chain energy is significant, the
-current calibration SSV₀ = 0.2555 MeV overcounts the cage contribution
-to the electron mass, and must be partitioned between cage and chain.
+**Statement:** Pair annihilation proceeds through mutual cage dissolution. At low velocity (isentropic): quasi-static dissolution; eight cage CPs form a symmetric structure around the superimposition point; energy dissipates along the approach axis as two back-to-back 0.511 MeV photons; no entropy increase. At high velocity (non-isentropic): incomplete misaligned dissolution; partial cage structures survive; jets and new particles form; entropy increases. Three-photon ortho-positronium outcome arises from three-fold (rather than two-fold) cage dissolution geometry.
 
 ---
 
-### OP-QM-new-6: Derive Schrödinger Equation from DP Chain Standing
-### Wave Stability Conditions
+## Open Problems Cross-Reference
 
-**Priority:** HIGH
-**Status:** OPEN
-**Registered:** 30 March 2026
-
-**Statement:** Derive the stability condition for DP chain standing
-waves in a nuclear SSV landscape and show that this condition reduces
-to the time-independent Schrödinger equation Ĥψ = Eψ for the
-appropriate identification of the Hamiltonian with the SSV landscape
-energy function.
-
-**Context:** P-CPP-9 identifies atomic orbital shapes with DP chain
-standing wave patterns in the nuclear SSV landscape. The standing
-waves are stable when the background SSV landscape is stationary and
-chain reformation at each ZBW cycle reinforces the previous cycle's
-structure. The formal stability condition for this self-reinforcing
-wave process should produce eigenvalue equations whose eigenfunctions
-are the atomic orbitals — i.e., the Schrödinger equation.
-
-**Connection to Nelson/Fenyes:** Stochastic mechanics (Nelson 1966,
-Fenyes 1952) showed mathematically that quantum mechanics is equivalent
-to a stochastic diffusion process. CPP provides the physical mechanism
-for this diffusion: ZBW partner switching in the SSV landscape.
-The derivation of the SWE from CPP chain standing waves would be
-the CPP realisation of the Nelson/Fenyes programme with explicit
-physical grounding.
+| Proposition | Tier | Required calculation | OP ID |
+|-------------|------|---------------------|-------|
+| PROP-1 | 3 | Derive ℏ from CPP random walk statistics | OPEN-P-QM-new-1 |
+| PROP-2 | 3 | Compute WKB rate from SSV_net rogue wave stats | OPEN-P-QM-new-3 |
+| PROP-4 | 3 | Tunneling rate; dissolution/reformation energy balance | OPEN-P-QM-new-3 |
+| PROP-5 | 3 | Compute r_chain; compare to r_e **(NEXT SESSION)** | OPEN-P-QM-new-4, OPEN-P-QM-new-5 |
+| PROP-9 | 4 | Derive SWE from DP chain standing wave stability | OPEN-P-QM-new-6 |
+| PROP-12 | 4 | Compute r_crit; upgrades with PROP-5 | OPEN-P-QM-new-7 |
+| PROP-14 | 4 | Compute cage dissolution temperature | OPEN-P-QM-new-8, OPEN-P-SS-14 |
 
 ---
 
-### OP-QM-new-7: Derive r_crit and Pair Production Threshold from
-### CPP Primitives
+*See also: postulates_and_theorems.md (THEO-1, CORL-1a/1b in canonical form), open_problems/README.md (OPEN-P-QM-new-1 through OPEN-P-QM-new-8), predictions.md.*
 
-**Priority:** HIGH
-**Status:** OPEN
-**Registered:** 30 March 2026
-
-**Statement:** Compute the critical separation distance r_crit from
-SSV₀, sea_strength, and the Sea's mean CP density. Verify that:
-(a) the energy required to separate a +CP/−CP pair to r_crit equals
-m_e c²; (b) r_crit equals the electron Compton wavelength ℏ/m_e c;
-(c) the nuclear SSV gradient required to produce asymmetric disruption
-of a photon chain is consistent with the observed pair production
-cross-section near heavy nuclei.
-
-**Feeds into:** P-CPP-12, P-CPP-13, P-CPP-14
-
----
-
-### OP-QM-new-8: Temperature Dependence of Rest Mass from CPP
-
-**Priority:** MEDIUM
-**Status:** OPEN
-**Registered:** 30 March 2026
-
-**Statement:** Derive the temperature correction to particle rest mass
-from the increased thermal dissipation pressure on DP chains at
-temperature T. Verify that the correction: (a) vanishes at T = 0
-(recovering SM-1's calibration); (b) produces confinement dissolution
-at T = T_c ≈ 150 MeV (feeding into OP-SS-14); (c) is consistent with
-electroweak symmetry restoration at T ≈ 10¹⁵ K.
-
-**Feeds into:** OP-SS-14, P-CPP-14
-
----
-
-## Section 4: Postulate Demotion — P5
-
-The existing CPP core postulate P5 states:
-
-> **P5 (ZBW oscillations):** Dipole pairs oscillate at
-> f_ZBW ≈ 1/(2t_Pl). One full cycle = attraction phase + repulsion
-> phase over two Planck times. This oscillation is the source of spin
-> and contributes to mass.
-
-Based on T-CPP-1 and C-CPP-1a, P5 is no longer needed as an axiom.
-The ZBW oscillation frequency is a derivable consequence of P4 (SSV
-force law) and P2 (lattice discreteness): opposite-polarity CPs
-attract monotonically until superimposition, at which point intra-pair
-SSV direction vanishes and bulk SSV drives separation. The period of
-this oscillation is 2 Absolute Moments, giving f_ZBW = 1/(2t_P)
-as a theorem, not a postulate.
-
-**Recommended change to postulates_and_theorems.md:**
-
-Replace P5 with:
-> **P5 (ZBW oscillations) [DEMOTED — now T-CPP-1 + C-CPP-1a]:**
-> The ZBW oscillation of bound DP pairs is a derived consequence of
-> the SSV force law (P4) on a discrete lattice (P2): opposite-polarity
-> CPs approach under monotonically increasing SSV_net attraction to
-> superimposition; at superimposition, intra-pair SSV direction
-> vanishes; bulk SSV drives opposite displacements on the next Absolute
-> Moment. Period ≈ 2t_P, giving f_ZBW ≈ 1/(2t_P) as a theorem.
-> See T-CPP-1 and C-CPP-1a.
-
-**If P5 is removed:** The CPP postulate count decreases from 7 to 6.
-The minimum postulate target noted in the existing registry (P3–P6
-potentially derivable) is now partially achieved: P5 is derived.
-
----
-
-## Section 5: SSV_net vs SSV_abs — Glossary Entries Required
-
-These two quantities were used throughout the existing CPP literature
-without formal distinction. The partner-switching session revealed
-that they are physically independent and must be separately defined
-in glossary-SM-1.md, glossary-SS-1.md, and eventually a CPP
-master glossary.
-
-**SSV_net (directional SSV field):**
-The vector sum of SSV contributions at a Grid Point from all CPs
-within their PSR. SSV_net has both magnitude and direction.
-It governs the direction of each CP's next displacement — a CP moves
-to the adjacent Grid Point with the highest SSV_net gradient.
-SSV_net is what causes ZBW oscillation to reverse: when A(−) rebounds
-from B(+), it is because SSV_net at the superimposition Grid Point
-(now from the bulk, not from B) points away from B.
-*SSV_net is zero at the cage centre by T_d symmetry — this is the
-force-free pocket of P-CPP-3.*
-
-**SSV_abs (scalar SSV field magnitude):**
-The scalar magnitude of the total SSV field at a Grid Point —
-|SSV_net| from all sources including any isotropic contributions.
-SSV_abs is not a direction; it is a local energy density / intensity.
-High SSV_abs means the Dipole Sea is strongly stressed at that location.
-Via the PSR compression formula:
-PSR_eff = l_P / (1 + k · SSV_abs)
-SSV_abs governs the local metric — it determines how much physical
-distance each lattice step corresponds to. This is the GR/Lorentzian
-effect: SSV_abs compresses space.
-
-**Critical distinction:** At Grid Point superimposition of an
-opposite-polarity pair, SSV_abs is near its maximum (the intra-pair
-field is at greatest strength) while SSV_net from the intra-pair
-interaction is exactly zero (direction undefined). This is the
-clearest demonstration that SSV_abs and SSV_net are independent
-quantities — one can be maximised while the other vanishes.
-
-**Summary:**
-- SSV_net → determines CP displacement direction → governs dynamics
-- SSV_abs → determines PSR compression → governs metric (GR effects)
-- SR-1 is primarily an SSV_abs story (PSR compression = Lorentz contraction)
-- SM-1 is primarily an SSV_net story (force law = cage stability)
-- Both operate simultaneously in all physical processes
-
----
-
-## Section 6: Provenance Notes
-
-All items in this document emerged from a single conversation session
-(29–30 March 2026) beginning with the SM-1 mechanism essay discussion
-of the ZBW oscillation turning point. The logical chain was:
-
-1. ZBW turning point question → T-CPP-1 (CP exclusion is a theorem)
-2. T-CPP-1 → C-CPP-1a (turning point at superimposition)
-3. C-CPP-1a + C-CPP-1b → stochastic partner exchange
-4. Partner exchange → P-CPP-1 (random walk, uncertainty)
-5. Partner exchange → P-CPP-2 (rogue wave tunneling)
-6. SM-1 cage stability question → P-CPP-3 (tetrahedron uniqueness)
-7. Tunneling + P-CPP-3 → P-CPP-4 (elastic tunneling)
-8. Chain structure question → P-CPP-5, P-CPP-6
-9. Cage reformation question → P-CPP-7, P-CPP-8
-10. Orbital probability question → P-CPP-9, P-CPP-10
-11. VP question + Gauss's law → P-CPP-11, P-CPP-12
-12. Pair production question → P-CPP-13
-13. Mass definition synthesis → P-CPP-14
-14. Pair annihilation question → P-CPP-15
-
-All items originated with Thomas Lee Abshier ND's physical intuitions
-and were formalised collaboratively with Claude Sonnet (Anthropic).
+*Independent review: Claude Opus (Anthropic), 30 March 2026. Tier assignments reflect that review.*
