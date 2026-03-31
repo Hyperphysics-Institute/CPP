@@ -75,6 +75,14 @@ The simplified SC-1 formula (without V_l^proj and PSR factors) gives the right q
 **Next step for OPEN-P-SS-1:** The top quark's mass scale requires a mechanism beyond cumulative shell vertex counts × phase cancellation. The SM-3 ZBW thermal picture (K(c,b,t) ≈ 2/3 to 0.42%) suggests heavy quarks are dominated by ZBW thermal energy, not cage geometry. SC-1 may be the correct approach for light/middle quarks only.
 
 ---
+**Hybrid computation result (30 March 2026):** The hybrid quark mass formula (SC-1 cage geometry for light quarks + K3 Koide for heavy quarks) is falsified in its original conception. Koide ratio analysis across all sectors reveals three distinct regimes:
+
+    K(e,μ,τ) = 0.666661  — K3 Koide exact to 0.001% (SM-3 theorem, proved)
+    K(c,b,t) = 0.669445  — 0.42% from 2/3; K3 partially present but K=2/3 parametrization gives RMS errors > 30-150% on individual masses (√m spread of 11.66× is too large)
+    K(u,d,s) = 0.567     — 15% from 2/3; K3 does not apply; dominated by QCD chiral condensate
+
+The constituent u/d quark mass (~336 MeV) comes primarily from the QCD chiral condensate (⟨ψ̄ψ⟩ ≠ 0, contributing ~250 MeV). CPP has no current account of the chiral condensate. SC-1's shell-1 output (~730 MeV) overshoots the constituent strange mass by 35% and cannot be made to agree with light quark masses in any natural way. The C_n phase cancellation factors (C₁=0.7247, C₂=0.2374, C₃=0.3563, C₄=0.0750) are confirmed real geometric quantities — this is SC-1's lasting contribution. Registered as new open problem: OPEN-P-SS-new-1 (constituent light quark mass from CPP chiral condensate).
+
 
 ## SC-2: Aharonov-Bohm Self-Energy Loop for Koide Phase θ
 
@@ -197,7 +205,7 @@ The calculation was performed for all physically motivated d_Sea identifications
 
 | ID | Target | Status | Tractability |
 |----|--------|--------|-------------|
-| SC-1 | OPEN-P-SS-1 (quark mass formula) | PARTIAL — C_n confirmed; top quark 103× off | — top quark needs different mechanism |
+| SC-1 | OPEN-P-SS-1 (quark mass formula) | FALSIFIED for hybrid; C_n confirmed; chiral condensate gap identified | — light quarks need CPP chiral condensate account |
 | SC-2 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
 | SC-3 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
 | SC-4 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |

@@ -57,6 +57,7 @@ final solution.
 | [OPEN-P-SS-12](OP-SS/OPEN-P-SS-12_w_bracelet_polarity_inversion.md) | W bracelet polarity inversion from CPP | HIGH | OPEN |
 | [OPEN-P-SS-13](OP-SS/OPEN-P-SS-13_zbw_delta_quantitative.md) | ZBW mechanism quantitative agreement with $\delta=1/3$ | MEDIUM | OPEN |
 | [OPEN-P-SS-14](OP-SS/OPEN-P-SS-14_deconfinement_temperature.md) | QCD deconfinement temperature from CPP | MEDIUM | OPEN |
+| OPEN-P-SS-new-1 | Constituent light quark mass (~336 MeV) from CPP chiral condensate ⟨ψ̄ψ⟩ | HIGH | OPEN |
 
 ### OPEN-P-SM — Standard Model Emergence (7 problems)
 
@@ -120,7 +121,7 @@ final solution.
 | OPEN-P-QM-new-6 | Derive Schrödinger equation from DP chain standing wave stability conditions | HIGH | OPEN |
 | OPEN-P-QM-new-7 | Derive r_crit and pair production threshold from CPP primitives | HIGH | OPEN |
 | OPEN-P-QM-new-8 | Temperature dependence of rest mass from CPP | MEDIUM | OPEN |
-| OPEN-P-QM-new-9 | Resolve r_conf inconsistency: sea_strength, ħω₀, r_conf | HIGH | OPEN |
+| OPEN-P-QM-new-9 | Resolve r_conf inconsistency: sea_strength, ħω₀, r_conf | HIGH | SOLVED — mislabeling in SM-3 eq:hop_amp; ħω₀ = 219.5 MeV, E_eDP = 83.9 MeV |
 
 ### OPEN-P-SD — Foundations / Superdeterminism (5 problems)
 
@@ -226,7 +227,7 @@ OPEN-P-SD-1 (K₀)  ──► OPEN-P-SD-2 (interp.) ──► OPEN-P-SD-3 (A₅,
 | OPEN-P-QM-new (Partner-Switching QM) | 8 | 0 | 0 | 8 |
 | OP-SD (Foundations) | 5 | 0 | 0 | 5 |
 | OPEN-P-G | 2 | 0 | 0 | 2 |
-| **Total** | **58** | **3** | **2** | **53** |
+| **Total** | **59** | **4** | **2** | **53** |
 
 ---
 
@@ -277,7 +278,7 @@ final solution.
 
 ## Master Problem Table
 
-### OPEN-P-SS — Strong Sector (10 problems)
+### OPEN-P-SS — Strong Sector (11 problems; 1 added 30 March 2026 from hybrid quark mass computation)
 
 | ID | Title | Priority | Status |
 |---|---|---|---|
