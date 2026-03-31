@@ -186,3 +186,27 @@ If AXIM-3–AXIM-4 and AXIM-5 can be derived from AXIM-1, AXIM-2, and AXIM-6, th
 
 *See also: `open_problems/` register, `potential_solutions.md`, development logs.*  
 *Last updated: 26 March 2026*
+
+---
+
+## EW Series Theorems
+
+All from the Electroweak Series (EW-1 through EW-5). Proved from AXIM-1–AXIM-6 and the 600-cell adjacency matrix eigenvalue structure.
+
+| ID | Theorem | Result | Key postulates | Paper |
+|----|---------|--------|----------------|-------|
+| **THEO-EW-1** | W boson subgraph | W⁰ bracelet (6 hDPs, 12 CPs) on λ={1+φ, φ-1} subgraph; open interior makes it reactive | AXIM-1, AXIM-2 | EW-1, EW-2 |
+| **THEO-EW-2** | Z boson subgraph | Z⁰ icosahedral loop (12 vertices) on λ=12 (ground state, maximally symmetric, inert) | AXIM-1, AXIM-2 | EW-1, EW-3 |
+| **THEO-EW-3** | Higgs-like subgraph | Dodecahedral shell (20 vertices) on λ=-(1+φ) (most frustrated, highest confinement, scalar from A₅) | AXIM-1, AXIM-2 | EW-1, EW-4 |
+| **THEO-EW-4** | Weinberg angle | sin²θ_W(M_Z) = 0.2312 ± 0.0003 from four-layer phase interference; PDG 0.23121, agreement 0.004% | AXIM-2, AXIM-4 | EW-1, EW-5 |
+| **THEO-EW-5** | No boson between Z and H | No regular polyhedral closed subgraph with 12 < vertices < 20 exists in the 600-cell; no stable boson between 91 and 125 GeV | AXIM-2 | EW-1, EW-4 |
+| **THEO-EW-6** | SU(2)_L algebra | [I^a, I^b] = iε^{abc} I^c from 120°/240° phase bias operators; binary icosahedral group Γ closes the algebra | AXIM-2, AXIM-4 | EW-5 |
+| **THEO-EW-7** | Nexus gauge invariance | Local phase transformations ψ→e^{iα(x)}ψ leave all observables invariant (discrete Ward identity from Nexus DI-bit conservation) | AXIM-1, AXIM-6 | EW-5 |
+| **THEO-EW-8** | Yang-Mills EFT limit | CPP bit-exchange dynamics → Yang-Mills ℒ_eff = -(1/4)F^aμν F_{aμν} + ... as l_P/L→0; convergence O(l_P/L) | AXIM-2, AXIM-4, AXIM-6 | EW-5 |
+
+**EW Series Open Problems (4 items, all in OPEN-P-EW series):**
+- OPEN-P-EW-1: Planck-to-weak-scale η from first principles (central open problem)
+- OPEN-P-EW-2: Self-consistent single mass formula for W, Z, H
+- OPEN-P-EW-3: g and g' from 600-cell vertex counting without calibration factor
+- OPEN-P-EW-4: Boson mass ratios m_H/m_Z and m_Z/m_W from eigenvalue ratios
+
