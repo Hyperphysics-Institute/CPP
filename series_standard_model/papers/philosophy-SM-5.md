@@ -2,7 +2,7 @@
 
 **Series:** 600-Cell Standard Model Emergence
 **Document type:** Philosophical foundations — the deep questions behind the theorem
-**Last updated:** 26 March 2026
+**Last updated:** 30 March 2026
 
 ---
 
@@ -132,4 +132,4 @@ This is a more dynamic view of mass than the Standard Model's Higgs mechanism pr
 
 ---
 
-*Document prepared by Claude Sonnet (Anthropic) in collaboration with Thomas Lee Abshier ND, March 2026. This is a living document — philosophical reflections to be added as the electroweak series develops and OP-SM-nu-id is pursued.*
+*Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic), March 2026. Updated 30 March 2026: SM-5 documentation package completed; mechanism, glossary, and phenomena files added. SM-5 is now the terminal paper of the K3 subseries (SM-1 through SM-5). The K3 unification table in §III identifies the equilateral triangle as encoding charge (SM-1), Koide ratio (SM-3), individual mass constraint (SM-4), and neutrino mixing (SM-5) — four independent physical results from four independent mathematical properties of one geometric object. This is a living document — to be updated as the electroweak series develops and OPEN-P-SM-nu-id is pursued.*
