@@ -37,7 +37,7 @@ Each entry has: **ID**, **Targets**, **Origin**, **Status**, **Mechanism** (with
 
 **Targets:** OPEN-P-SS-1 (quark mass formula from 600-cell geometry)
 **Origin:** Grok (xAI), 24 March 2026 session
-**Status:** ACTIVE — concept sound; numerical implementation not yet verified
+**Status:** PARTIALLY COMPUTED 30 March 2026 — structural issue identified; see findings
 
 **Mechanism:** The structural quark mass for cage depth n is derived from the exact 600-cell shell geometry rather than the approximate E ≈ N/2 formula of SM-1:
 
@@ -54,6 +54,26 @@ where V_l^proj is the exact 3D-projected Voronoi volume of 600-cell shell l, r_e
 4. If agreement is within ~20%, apply the derived ZBW correction from SM-3
 
 **Tractability:** HIGH — one focused computational session with the 600-cell vertex coordinates. No new physics required. The formula is fully specified; only the numerical computation is missing.
+**Computation result (30 March 2026):**
+
+C_n phase cancellation factors confirmed exactly:
+
+    C_1 = 0.7247,  C_2 = 0.2374,  C_3 = 0.3563,  C_4 = 0.0750
+
+The simplified SC-1 formula (without V_l^proj and PSR factors) gives the right qualitative direction — cumulative mass increases with shell depth — but the wrong quantitative scale for heavy quarks:
+
+    n=1 → 730 MeV   (constituent strange: ~540 MeV,  0.74×)
+    n=2 → 1128 MeV  (constituent charm:  ~1550 MeV,  1.37×)
+    n=3 → 1487 MeV  (constituent bottom: ~4730 MeV,  3.18×)
+    n=4 → 1675 MeV  (constituent top:  ~172690 MeV, 103×)
+
+**Structural issue identified:** The V_l^proj and (r_eff/r_l)³ factors are dimensionless and bounded, so they cannot provide the ~103× amplification needed for the top quark. The phase cancellation factor C_4 = 0.075 is the primary problem — destructive inter-shell interference at shell 4 kills the top quark mass contribution rather than enhancing it.
+
+**Root cause of the 103× discrepancy:** The 600-cell shell structure accumulates only 74 actual vertices across 4 shells. SM-2's effective N_k = 30,000 for the top quark (vs 30 actual vertices in shell 4) represents a factor of ~1000 that SC-1's formula cannot generate from C_n and N_l alone.
+
+**Conclusion:** SC-1 in this form is FALSIFIED for the top quark. The C_n geometric factors are real and confirmed, but the formula architecture needs fundamental rethinking to explain the top quark mass scale. The middle shells (strange/charm/bottom) are within 0.7–3× of constituent masses, suggesting the formula captures something real for lighter quarks but breaks down for the top.
+
+**Next step for OPEN-P-SS-1:** The top quark's mass scale requires a mechanism beyond cumulative shell vertex counts × phase cancellation. The SM-3 ZBW thermal picture (K(c,b,t) ≈ 2/3 to 0.42%) suggests heavy quarks are dominated by ZBW thermal energy, not cage geometry. SC-1 may be the correct approach for light/middle quarks only.
 
 ---
 
@@ -178,7 +198,7 @@ The calculation was performed for all physically motivated d_Sea identifications
 
 | ID | Target | Status | Tractability |
 |----|--------|--------|-------------|
-| SC-1 | OPEN-P-SS-1 (quark mass formula) | ACTIVE | HIGH |
+| SC-1 | OPEN-P-SS-1 (quark mass formula) | PARTIAL — C_n confirmed; top quark 103× off | — top quark needs different mechanism |
 | SC-2 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
 | SC-3 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
 | SC-4 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
