@@ -1,6 +1,6 @@
 # CPP Paper Catalog
 
-**Last updated:** 26 March 2026
+**Last updated:** 31 March 2026
 
 ---
 
@@ -15,7 +15,7 @@
 | SR | Special Relativity |
 | EW | Electroweak |
 | QM | Quantum Mechanics |
-| SD | Superdeterminism |
+| SD | Superdeterminism / Foundations |
 
 **Paper types:**
 
@@ -33,7 +33,14 @@
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **SS-1** | Paper | The Strong Sector from the 600-Cell Lattice | `series_strong/cpp_ss_unified_v2.tex` | **Submission-ready** |
+| **SS-1** | Paper | The Strong Sector from the 600-Cell Lattice | `series_strong/SS-1_strong_sector_from_600cell_lattice.tex` (v2) | **Submission-ready** |
+| SS-1a | Companion | Cage Geometry and Eigenvalue Bridge | `series_strong/SS-1a_cage_geometry_eigenvalue_bridge.tex` | Supporting |
+| SS-1b | Companion | SU(3) Algebra Exact Proof | `series_strong/SS-1b_su3_algebra_exact_proof.tex` | Supporting |
+| SS-1c | Companion | Eight Gluons as hDP Structures | `series_strong/SS-1c_eight_gluons_hdp_structures.tex` | Supporting |
+| SS-1d | Companion | Confinement and Beta Function | `series_strong/SS-1d_confinement_beta_function.tex` | Supporting |
+| SS-1e | Companion | Hadron Spectrum | `series_strong/SS-1e_hadron_spectrum.tex` | Supporting |
+
+**Documentation:** 6 files (mechanism, glossary, phenomena, reviews, philosophy, development) complete.
 
 ---
 
@@ -41,13 +48,15 @@
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **SM-TN-1** | Tech Note | Reconstruction 1: Original CPP Mass Calculations | `paper_1b_reconstruction_1_of_original_CPP_mass_calculations.tex` | Ready to submit |
-| **SM-TN-2** | Tech Note | Reconstruction 2: Bridge from Original to 600-Cell Framework | `paper_1c_reconstruction_2_bridge_original_to_600_cell.tex` | Needs minor corrections |
-| **SM-1** | Paper | Binding Mechanisms and Cage Stability in the 600-Cell Lattice | `paper_1_binding-mechanisms_and_cage_stability.tex` (v6) | **Submission-ready** |
-| **SM-2** | Paper | Mass Generation from Geometric Hierarchies and Cage Complexity | `paper_2_mass_generation_from_geometric_hierarchies_and_cage_complexity.tex` (v30) | **Submission-ready** |
-| **SM-3** | Paper | K3 Spectral Theorem and the Koide Formula | `paper_3_k3_spectral_theorem_koide_formula.tex` (v5) | **Submission-ready** |
-| **SM-4** | Paper | Charged Lepton Masses from the K3 Spectral Theorem | `paper_4_charged_lepton_masses_from_k3_spectral_theorem.tex` | **Submission-ready** |
-| **SM-5** | Paper | Tribimaximal Neutrino Mixing as the Zeroth-Order PMNS Matrix from the K3 Cage Base Graph | `paper_5_tribimaximal_neutrino_mixing_zeroth_order_pmns_from_k3_cage_base.tex` | **Submission-ready** |
+| **SM-1** | Paper | Binding Mechanisms and Cage Stability in the 600-Cell Lattice | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` (v6) | **Submission-ready** |
+| **SM-2** | Paper | Mass Generation from Geometric Hierarchies and Cage Complexity | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` (v30) | **Submission-ready** |
+| **SM-3** | Paper | K3 Spectral Theorem and the Koide Formula | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` (v5) | **Submission-ready** |
+| **SM-4** | Paper | Charged Lepton Masses from the K3 Spectral Theorem | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` (v5) | **Submission-ready** |
+| **SM-5** | Paper | Tribimaximal Neutrino Mixing from the K3 Cage Base Graph | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` (v1) | **Submission-ready** |
+| SM-TN-1 | Tech Note | Reconstruction: Original CPP Mass Calculations | `archive/SM-TN-1_reconstruction_original_mass_calculations.tex` | Ready to submit |
+| SM-TN-2 | Tech Note | Bridge from Original to 600-Cell Framework | `series_standard_model/papers/SM-TN-2_bridge_original_to_600cell.tex` | Needs minor corrections |
+
+**Documentation:** 6 files per paper (SM-1 through SM-5) complete — 30 files total.
 
 ---
 
@@ -55,7 +64,9 @@
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **SR-1** | Paper | Special Relativity from 600-Cell Geometry | `series_sr/` (exact filename TBC) | **Submission-ready** |
+| **SR-1** | Paper | Mechanistic Derivation of Relativistic Effects via Space Stress Vector | `series_relativity/main_special_relativity_emergence/SR-1_special_relativity_emergence.tex` (v17) | **Submission-ready** |
+
+**Documentation:** SR-1 documentation files are planned but not yet produced.
 
 ---
 
@@ -63,14 +74,15 @@
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **EW-1** | Paper | Introduction: Electroweak Sector in CPP | `cpp_ew1_intro_v3.tex` | Needs consolidation |
-| **EW-2** | Paper | The W Boson from CPP | `cpp_ew2_W_v3.1.tex` | Needs consolidation |
-| **EW-3** | Paper | The Z Boson from CPP | `cpp_ew3_Z_v3.tex` | Needs consolidation |
-| **EW-4** | Paper | The Higgs Boson from CPP | `cpp_ew4_Higgs_v3.1.tex` | Needs consolidation |
-| **EW-5** | Paper | Electroweak Unification | `cpp_ew5_unification_v3.tex` | Needs consolidation |
-| **EW-U** | Paper | Unified Electroweak Submission Package | `cpp_ew_unified_v2.1.tex` | Needs consolidation |
+| **EW-1** | Paper | Introduction: Electroweak Sector in CPP | `series_electroweak/EW-1_electroweak_introduction.tex` | Needs consolidation |
+| **EW-2** | Paper | The W Boson from CPP | `series_electroweak/EW-2_w_boson_from_cpp.tex` | Needs consolidation |
+| **EW-3** | Paper | The Z Boson from CPP | `series_electroweak/EW-3_z_boson_from_cpp.tex` | Needs consolidation |
+| **EW-4** | Paper | The Higgs Boson from CPP | `series_electroweak/EW-4_higgs_boson_from_cpp.tex` | Needs consolidation |
+| **EW-5** | Paper | Electroweak Unification | `series_electroweak/EW-5_electroweak_unification.tex` | Needs consolidation |
 
-*OP-EW-1 through OP-EW-6 must be closed before submission of EW series.*
+**Documentation:** 6 files per paper (EW-1 through EW-5) complete — 30 files total.
+
+*OPEN-P-EW-1 through OPEN-P-EW-6 must be closed before submission of EW series.*
 
 ---
 
@@ -78,25 +90,27 @@
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **QM-1** | Paper | Quantum Mechanics from CPP: A Synthesis | `cpp_qm_synthesis_submission.tex` | Needs Opus review |
+| **QM-1** | Paper | QM Synthesis | `series_synthesis/QM-1_qm_synthesis.tex` | Needs review |
+
+**Documentation:** 6 files per paper (QM-1 through QM-6) complete — individual topic papers in `series_quantum_mechanics/QM-1_schrodinger_emergence/` through `QM-6_capstone/`.
 
 ---
 
-## Superdeterminism Series
+## Superdeterminism / Foundations Series
 
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
-| **SD-1** | Paper | Nexus Superdeterminism | `cpp_sd1_nexus_superdeterminism_v1.tex` | Needs review |
-| **SD-2** | Paper | H4 Angular Structure | `cpp_sd2_h4_angular_structure_v1.tex` | Needs review |
-| **SD-3** | Paper | Apparatus Model | `cpp_sd3_apparatus_model_v1.tex` | Needs review |
-| **SD-4** | Paper | Nexus Correlation Function | `cpp_sd4_nexus_correlation_function_v1.tex` | Needs review |
-| **SD-5** | Paper | K0 Derivation | `cpp_sd5_K0_derivation_v0.tex` | Needs review |
+| **SD-1** | Paper | The Nexus as Superdeterministic Mechanism | `series_foundations/series_superdeterminism/SD-1_nexus_superdeterminism.tex` (v1) | Needs review |
+| **SD-2** | Paper | H4 Angular Structure of the Nexus Correction | `series_foundations/series_superdeterminism/SD-2_h4_angular_structure.tex` (v1) | Needs review |
+| **SD-3** | Paper | The CPP Apparatus Model | `series_foundations/series_superdeterminism/SD-3_apparatus_model.tex` (v1) | Needs review |
+| **SD-4** | Paper | The Nexus Correlation Function | `series_foundations/series_superdeterminism/SD-4_nexus_correlation_function.tex` (v1) | Needs review |
+| **SD-5** | Paper | K₀ Derivation (Research Agenda) | `series_foundations/series_superdeterminism/SD-5_k0_derivation.tex` (v0) | Research agenda |
+
+**Documentation:** 6 files per paper (SD-1 through SD-5) complete — 30 files total. Revised 31 March 2026.
 
 ---
 
 ## Commentary / Correspondence (CC)
-
-Cross-series papers responding to experimental results or making specific experimental predictions.
 
 | ID | Type | Title | Status |
 |----|------|-------|--------|
@@ -108,14 +122,28 @@ Cross-series papers responding to experimental results or making specific experi
 
 | Category | Count |
 |----------|-------|
-| Submission-ready Papers | 7 (SS-1, SM-1 through SM-5, SR-1) |
+| **Submission-ready papers** | **7 (SS-1, SM-1 through SM-5, SR-1)** |
 | Submission-ready Tech Notes | 1 (SM-TN-1) |
 | Tech Notes needing correction | 1 (SM-TN-2) |
-| Papers needing consolidation | 6 (EW series) |
+| Papers needing consolidation | 5 (EW series) |
 | Papers needing review | 6 (QM-1, SD-1 through SD-5) |
+| Research agenda | 1 (SD-5) |
 | Planned | 1 (CC-1) |
 | **Total identified** | **22** |
 
 ---
 
-*See also: `postulates_and_theorems.md`, `open_problems/`, `potential_solutions.md`*
+## Publication Plan
+
+**Phase 1 (immediate):** Submit 7 papers to OSF for timestamping:
+SS-1, SM-1, SM-2, SM-3, SM-4, SM-5, SR-1.
+
+**Phase 2 (after review):** Submit EW series after OPEN-P-EW-1 through OPEN-P-EW-6 are closed.
+
+**Phase 3 (after review):** Submit QM and SD series after Opus review cycles.
+
+**Venue:** ViXra (timestamp) → GitHub (living document) → OSF (preregistration). Isak Gutierrez handles OSF submissions.
+
+---
+
+*See also: `postulates_and_theorems.md`, `predictions.md`, `propositions.md`, `nomenclature.md`, `open_problems/`*
