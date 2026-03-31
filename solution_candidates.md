@@ -1,153 +1,186 @@
-# CPP Potential Solutions Registry
+# CPP Solution Candidates Registry
 
-Tracks specific candidate mechanisms for open problems.
-Distinct from the open problems register (which states *what* is open)
-— this records *how it might be solved* before the idea is lost.
-
-Format: each entry gives the OP it targets, the mechanism, its origin,
-and the tractability estimate.
+**Repository location:** CPP root level
+**Last updated:** 30 March 2026
+**Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
 ---
 
-## PS-1: Grok's exact-volume + PSR + interference mass ladder
-**Targets:** OP-SS-1 (quark mass ladder)  
-**Origin:** Grok, 24 March 2026 session  
-**Status:** Concept sound; numerical implementation not yet verified  
-**Mechanism:**  
-The structural quark mass for cage depth n is:
+## Purpose
+
+This file records specific candidate mechanisms for open problems — the intermediate research layer between "the problem exists" (open_problems/README.md) and "the problem was solved" (postulates_and_theorems.md). It captures the how before the idea is lost: the specific formula, the computation steps, the tractability estimate, and crucially the ordered record of what was tried and why it succeeded or failed.
+
+Each entry targets a specific OPEN-P item, gives the proposed mechanism, records its origin session, estimates its tractability, and records its current status. Falsified entries are kept permanently — the record of what does not work is as scientifically valuable as the record of what does.
+
+**This file is distinct from:**
+- open_problems/README.md — states *what* is open, not how to solve it
+- propositions.md — records CPP physics claims, not solution strategies
+- predictions.md — records testable predictions, not research approaches
+- development-*.md files — narrative history; this file is a structured research target register
+
+---
+
+## Format
+
+Each entry has: **ID**, **Targets**, **Origin**, **Status**, **Mechanism** (with formula and computation steps where available), and **Tractability** estimate.
+
+**Status labels:**
+- ACTIVE — viable candidate; computation not yet performed
+- PARTIAL — computation started; result inconclusive
+- FALSIFIED — mechanism ruled out; reason recorded
+- SUPERSEDED — replaced by a better candidate
+- SOLVED — the target open problem was solved using this approach
+
+---
+
+## SC-1: Grok's Exact-Volume + PSR + Interference Mass Ladder
+
+**Targets:** OPEN-P-SS-1 (quark mass formula from 600-cell geometry)
+**Origin:** Grok (xAI), 24 March 2026 session
+**Status:** ACTIVE — concept sound; numerical implementation not yet verified
+
+**Mechanism:** The structural quark mass for cage depth n is derived from the exact 600-cell shell geometry rather than the approximate E ≈ N/2 formula of SM-1:
 
     M_q(n) = Σ_{l=1}^{n}  N_l · E_eDP · V_l^proj · (r_eff^(n)/r_l)³ · C_n
 
-where:
-- `V_l^proj` = exact 3D-projected Voronoi volume of 600-cell shell l
-- `r_eff^(n)` = PSR-compressed radius from multi-shell SSV
-- `C_n = |Σ_{m=0}^{n} e^{i·2πm/φ²}| / n` = inter-shell phase cancellation
+where V_l^proj is the exact 3D-projected Voronoi volume of 600-cell shell l, r_eff^(n) is the PSR-compressed effective radius from the multi-shell SSV field, and C_n = |Σ_{m=0}^{n} e^{i·2πm/φ²}| / n is the inter-shell phase cancellation factor.
 
-**Why it was deferred:** Grok's mass table (112, 1480, 4620, 195000 MeV) 
-was verified by Sonnet and Opus to be PDG × 1.15 — fabricated, not computed 
-from the stated formula. The concept was not tested with actual computed values.
+**Why it was deferred:** Grok produced a mass table (112, 1480, 4620, 195000 MeV) that was verified by Claude Sonnet and Opus to be PDG × 1.15 — the numbers were fabricated rather than computed from the stated formula. The conceptual framework was not tested with actual computed values.
 
-**What needs to be done to test it:**
-1. Compute the exact 3D-projected Voronoi volumes for shells 1–4 from
-   600-cell vertex coordinates
-2. Compute C_n numerically for n=1,2,3,4 (already done: 0.72, 0.24, 0.36, 0.07)
-3. Evaluate the full formula with these numbers and compare to PDG
-4. If within ~20%, apply the derived ZBW correction
+**Required computation steps:**
+1. Compute the exact 3D-projected Voronoi volumes for shells 1–4 from 600-cell vertex coordinates (numerical, not from the N/2 approximation)
+2. Compute C_n numerically for n=1,2,3,4 (partially done: 0.72, 0.24, 0.36, 0.07)
+3. Evaluate the full formula with these values and compare to PDG quark masses
+4. If agreement is within ~20%, apply the derived ZBW correction from SM-3
 
-**Tractability:** One focused session with code. High priority.
+**Tractability:** HIGH — one focused computational session with the 600-cell vertex coordinates. No new physics required. The formula is fully specified; only the numerical computation is missing.
 
 ---
 
-## PS-2: Aharonov-Bohm self-energy loop for Koide phase θ
-**Targets:** OP-SM-7d (Koide phase θ from SSV dynamics)  
-**Origin:** Claude Sonnet, Session E, 24 March 2026  
-**Status:** Identified as tractable; not yet attempted  
-**Mechanism:**  
-The eCP at apex V4 exchanges virtual DPs with the base vertices {V1,V2,V3}
-via the K3 triangle loop. If there is a magnetic-like flux Φ through the
-K3 triangle (from the ZBW orbital angular momentum), the self-energy
-acquires an Aharonov-Bohm phase:
+## SC-2: Aharonov-Bohm Self-Energy Loop for Koide Phase θ
+
+**Targets:** OPEN-P-SM-7d (Koide phase θ from CPP dynamics)
+**Origin:** Claude Sonnet, Session E, 24 March 2026
+**Status:** FALSIFIED — ruled out in AB session, 25 March 2026
+
+**Mechanism:** The eCP at apex V4 exchanges virtual DPs with the base vertices {V1, V2, V3} via the K3 triangle loop. If there is a magnetic-like flux Φ through the K3 triangle from the ZBW orbital angular momentum, the self-energy acquires an Aharonov-Bohm phase:
 
     δE_AB = f(sea_strength) · e^{i·Φ/Φ₀}
 
-where Φ₀ = hc/e is the flux quantum. This phase would select a preferred
-orientation θ in the antibonding subspace.
+where Φ₀ = hc/e is the flux quantum. This phase would select a preferred orientation θ in the antibonding subspace, analogous to the Berry phase in molecular systems.
 
-**Physical picture:** The ZBW orbital circulates around the K3 triangle.
-The circulation generates an effective magnetic flux. The eCP at V4,
-exchanging DPs with the base, picks up the AB phase from this flux.
-This is analogous to the Berry phase in molecular systems.
+**Why it failed:** For the AB mechanism to select θ, the ZBW orbital on K3 must be chiral — it must have a preferred circulation direction around the triangle. The C3 symmetry of K3 (derived from 600-cell geometry, SM-1 Theorem 1) makes the three vertices V1, V2, V3 geometrically equivalent, which prevents any chiral preference from arising within the K3+SSV framework. The same C3 symmetry that makes K3 give K = 2/3 also prevents any AB-like mechanism from selecting θ. This is a special case of the general structural impossibility proved in SM-4 Theorem 2.
 
-**The computation needed:**
-1. Compute the effective magnetic flux from the ZBW circulation on K3
-   (ω_ZBW × Area_K3)
-2. Compute the self-energy diagram: V4 → V_i → V_j → V_k → V4 (triangle loop)
-3. Extract the AB phase and check if it equals 2.267° = Δθ
-
-**Key question:** Is the ZBW orbital on K3 chiral? If the three modes
-have a preferred circulation direction (e.g., from the 3D orientation of
-the tetrahedral cage in the 600-cell), the AB flux is non-zero.
-
-**Connection to existing results:**
-- The critical angle 3π/4 comes from the K3 stability condition (derived)
-- The correction Δθ ≈ (5/4)sea² is fitted to 0.15% — the AB phase
-  should reproduce this coefficient if the mechanism is correct
-
-**Tractability:** Medium. Requires computing the K3 triangle area in
-physical units (from r_conf and the 600-cell geometry) and a one-loop
-self-energy diagram. One focused session.
+**Note:** This mechanism was one of 11 candidate approaches for θ tested between Sessions B and K. All 11 were falsified, establishing the structural impossibility result registered as OPEN-P-SM-7d.
 
 ---
 
-## PS-3: Löwdin downfolding with non-uniform apex coupling
-**Targets:** OP-SM-7d (Koide phase θ)  
-**Origin:** Claude Sonnet, Session E, 24 March 2026  
-**Status:** Analytically ruled out for uniform coupling; may work for
-             non-uniform coupling  
-**Mechanism:**  
-Session E showed that the uniform apex coupling v = (1,1,1)/√3 decouples
-completely from the antibonding modes (they are dark to V4). However, if
-the coupling is NON-UNIFORM — e.g., if the eCP ZBW orbital creates a
-non-trivial SSV pattern on the base vertices — then the Löwdin downfolding
-H_eff(E) = A_K3 - (1/E)·v·v^T would have v with antibonding components,
-breaking the degeneracy.
+## SC-3: Löwdin Downfolding with Non-Uniform Apex Coupling
 
-**What would make the coupling non-uniform:**
-- If the eCP at V4 is in a ZBW eigenstate that preferentially couples
-  to one antibonding direction (a self-consistency requirement)
-- If the 600-cell embedding breaks the symmetry between V4-V1, V4-V2, V4-V3
-  at higher order in sea_strength
+**Targets:** OPEN-P-SM-7d (Koide phase θ)
+**Origin:** Claude Sonnet, Session E, 24 March 2026
+**Status:** FALSIFIED for uniform coupling; non-uniform coupling is also ruled out (see SC-4)
 
-**Tractability:** Low for this session. Would require knowing the full
-600-cell vertex coordinates and computing the exact SSV coupling between V4
-and each base vertex in the 4D geometry projected to 3D.
+**Mechanism:** Session E showed that the uniform apex coupling v = (1,1,1)/√3 decouples completely from the K3 antibonding modes — V4 is dark to the antibonding subspace (⟨φ₋|v⟩ = 0 exactly). However, if the coupling is non-uniform — for example if the eCP ZBW orbital creates an asymmetric SSV pattern on the base vertices through a self-consistency requirement — then the Löwdin downfolding H_eff(E) = A_{K3} − (1/E)·v·vᵀ would have v with antibonding components, breaking the degeneracy and potentially selecting θ.
+
+**Why it failed:** The non-uniform coupling route requires breaking the equivalence between V4-V1, V4-V2, and V4-V3 couplings. The regular tetrahedron's T_d symmetry makes all three apex-to-base edges identical in both 3D and 4D (confirmed by SC-4's full 4D computation). There is no mechanism within K3+SSV that can produce the required asymmetry.
 
 ---
 
-## PS-4: Electroweak identification of θ with PMNS phase
-**Targets:** OP-SM-7d (Koide phase θ)  
-**Origin:** Claude Sonnet, Session E, 24 March 2026  
-**Status:** Speculative; requires electroweak sector development  
-**Mechanism:**  
-The Koide phase θ appears in the charged lepton mass matrix in exactly
-the position occupied by the CP-violating phase δ_CP in the PMNS matrix.
-If θ = f(δ_CP, θ_PMNS mixing angles), then θ is not derived from the
-lepton cage geometry alone — it requires the full electroweak sector.
+## SC-4: 4D 600-Cell Embedding Breaks C3 Symmetry to Select θ
 
-**Known numbers:**
+**Targets:** OPEN-P-SM-7d (Koide phase θ)
+**Origin:** Claude Sonnet, Session G (PS-3b), 25 March 2026
+**Status:** FALSIFIED — 4D embedding preserves C3 exactly
+
+**Mechanism:** The K3 triangle is embedded in the full 4D 600-cell, where each tetrahedral cage {V1, V2, V3, V4} occupies a specific orientation in 4D space. The K3 base triangle's 4D normal vector is a preferred direction that might not be preserved under the 3D C3 rotation V1→V2→V3→V1. The 3D rotation might not extend to a 4D symmetry of the 600-cell. If so, the full 4D Hamiltonian before projection might break the antibonding degeneracy, with the correct θ emerging from the projected effective Hamiltonian.
+
+**Why it failed:** Full computation of all 600 tetrahedral cells of the 600-cell confirmed that the C3 symmetry is preserved exactly in 4D. All normal vectors n_i = n_j for all base vertices — the apex's 4D displacement is identical for all three base vertices. The 3D rotation V1→V2→V3→V1 does extend to an exact 4D isometry of the 600-cell, and C3 is not broken at any level of the geometry.
+
+**Implication:** This was the most geometrically sophisticated candidate for θ within the cage framework. Its falsification closed the last plausible cage-geometry route. All 11 cage-geometry candidates exhausted. θ is definitively an electroweak quantity.
+
+---
+
+## SC-5: Electroweak Identification of θ with PMNS Phase Structure
+
+**Targets:** OPEN-P-SM-7d (Koide phase θ)
+**Origin:** Claude Sonnet, Session E, 24 March 2026; promoted to primary candidate after SC-2 through SC-4 falsified
+**Status:** ACTIVE — primary candidate following exhaustion of cage-geometry approaches
+
+**Mechanism:** The Koide phase θ appears in the charged lepton mass matrix in exactly the position occupied by the CP-violating phase δ_CP in the PMNS matrix. If θ = f(δ_CP, PMNS mixing angles), then θ is not derivable from the lepton cage geometry alone — it requires the full electroweak sector. The SM-4 structural impossibility theorem (no K3+SSV mechanism can select θ) is consistent with this identification: the EW sector is the only remaining source of symmetry breaking capable of splitting the antibonding degeneracy.
+
+**Known numbers for comparison:**
 - θ_Koide = 132.73°
-- PMNS δ_CP ≈ 197° (NuFIT best fit) — not directly related
-- But the FULL PMNS phase structure might produce θ_Koide through a
-  combination of charged lepton and neutrino rotation matrices
+- PMNS δ_CP ≈ 197° (NuFIT 5.3 best fit) — not directly equal to θ_Koide
+- The full PMNS phase structure, when rotated into the charged lepton sector, may produce θ_Koide through a combination of charged lepton and neutrino rotation matrices
 
-**Tractability:** Low until OP-EW-1 is further developed.
+**Required development:** The EW series papers (EW-1 through EW-5) must be far enough developed to give the CPP electroweak coupling of the Capotauro bias to the K3 base. Until then, this candidate cannot be numerically tested. It is registered as the primary candidate after cage-geometry exhaustion.
 
----
-
-## PS-5: φ¹¹ and φ¹⁷ exponent derivation
-**Targets:** OP-SM-5 (lepton mass mechanism) / OP-SM-7d  
-**Origin:** Computed from observed masses, Session B, 24 March 2026  
-**Status:** Empirical observation; no derivation yet  
-**Mechanism:**  
-m_μ/m_e ≈ φ¹¹ to 3.8% and m_τ/m_e ≈ φ¹⁷ to 2.7%.
-The exponents 11 = z - 1 (coordination number z=12 minus 1) and
-17 = z + 5 (z plus icosahedral faces per vertex).
-
-**What a derivation would look like:**
-- Show that the lepton mass ratio involves φ raised to a power
-  determined by the 600-cell coordination geometry
-- 11 = z - 1 removes the apex contribution (1 less than full coordination)
-- 17 = z + 5 adds the first icosahedral shell contribution
-
-**Connection to Paper 4:** If φ¹¹ can be derived, it provides an
-independent check of the Koide formula predictions. Currently the
-3.8% deviation from exact φ¹¹ is consistent with higher-order corrections.
-
-**Tractability:** Medium. Would require a group-theoretic analysis of
-the 600-cell adjacency structure.
+**Tractability:** LOW in the near term. This is OPEN-P-EW-1 territory.
 
 ---
 
-*Last updated: 24 March 2026*  
-*Next: PS-1 (Grok's mass ladder) and PS-2 (AB self-energy) are the*
-*highest-priority items for the next focused session.*
+## SC-6: φ¹¹ and φ¹⁷ Exponent Derivation for Lepton Mass Ratios
+
+**Targets:** OPEN-P-SM-5 (lepton mass mechanism), OPEN-P-SM-7d (tangentially)
+**Origin:** Computed from observed masses, Session B, 24 March 2026
+**Status:** ACTIVE — empirical observation; geometric derivation not yet found
+
+**Mechanism:** Numerically, m_μ/m_e ≈ φ¹¹ to 3.8% and m_τ/m_e ≈ φ¹⁷ to 2.7%. The exponents have suggestive geometric interpretations: 11 = z − 1 where z = 12 is the 600-cell coordination number (removing one apex contribution), and 17 = z + 5 where 5 is related to the icosahedral faces per vertex. If these exponents can be derived from the 600-cell coordination geometry, they provide an independent check of the SM-4 Koide formula predictions.
+
+**Required derivation:** Show that the lepton mass ratio involves φ raised to a power determined by the 600-cell coordination geometry, specifically that the exponent 11 encodes "full coordination minus apex" and exponent 17 encodes "full coordination plus icosahedral contribution." Currently the 3.8% and 2.7% deviations from exact φ-powers are consistent with higher-order corrections — they may be the signatures of the Koide phase corrections computed in SM-4.
+
+**Connection to SM-4:** If φ¹¹ can be derived from cage geometry, it constrains the free parameter A in the SM-4 lepton mass formula. Currently A is calibrated to the electron mass; a geometric derivation of the inter-generation ratio would over-constrain the system and provide a falsification test.
+
+**Tractability:** MEDIUM — requires group-theoretic analysis of the 600-cell adjacency structure and coordination geometry. One to two sessions.
+
+---
+
+## SC-7: Radial DP Chain Length as Classical Electron Radius
+
+**Targets:** OPEN-P-QM-new-4 (derive r_chain from SSV₀ and sea_strength), OPEN-P-QM-new-5 (chain contribution to electron mass)
+**Origin:** Partner-switching session, 30 March 2026 (PROP-5 in propositions.md)
+**Status:** ACTIVE — HIGHEST PRIORITY for next computational session
+
+**Mechanism:** The four radial DP chains extending from the tetrahedral cage vertices reach equilibrium where the central CP's SSV attraction is balanced by thermal Sea dissolution pressure. The equilibrium condition gives:
+
+    SSV₀ / r_chain² = sea_strength × SSV₀ / d_Sea²
+    r_chain = d_Sea / √sea_strength
+
+where d_Sea is the mean DP separation in the Dipole Sea, estimated from the 600-cell lattice geometry.
+
+**The single computation that tests this:** Evaluate d_Sea from the 600-cell lattice spacing (l_P) and the Sea packing density, then compute r_chain numerically. Compare to the classical electron radius r_e = e²/(4πε₀ m_e c²) = 2.82 × 10⁻¹⁵ m. If r_chain ≈ r_e, the equilibrium picture is confirmed and r_e is derived from CPP geometry rather than defined circularly.
+
+**Constants available:** sea_strength = 0.1780 (THEO-SS-6), SSV₀ = 0.2555 MeV (SM-1 calibration), l_P = 1.616 × 10⁻³⁵ m.
+
+**Implication if confirmed:** r_chain ≈ r_e would also immediately make PROP-12 (critical separation distance for pair production) a Tier 3 verification target, since r_crit uses the same formula.
+
+**Implication if refuted:** The equilibrium condition is wrong, or d_Sea has the wrong identification. The chain equilibrium picture in PROP-5 needs revision.
+
+**Independent review note (Opus, 30 March 2026):** "The strongest candidate is PROP-5: compute r_chain from SSV₀ and sea_strength and see if it matches the classical electron radius. This is a single calculation with a definitive answer. If it works, the chain equilibrium picture is confirmed. If it doesn't, something in the picture needs revision. Do one quantitative check from this session before moving on."
+
+**Tractability:** HIGH — one focused session. All required constants are known. The calculation has a specific, definitive comparison point (r_e) with no ambiguity in the result.
+
+---
+
+## Status Summary
+
+| ID | Target | Status | Tractability |
+|----|--------|--------|-------------|
+| SC-1 | OPEN-P-SS-1 (quark mass formula) | ACTIVE | HIGH |
+| SC-2 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
+| SC-3 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
+| SC-4 | OPEN-P-SM-7d (Koide phase θ) | FALSIFIED | — |
+| SC-5 | OPEN-P-SM-7d (Koide phase θ) | ACTIVE — primary candidate | LOW (needs EW series) |
+| SC-6 | OPEN-P-SM-5, OPEN-P-SM-7d | ACTIVE | MEDIUM |
+| SC-7 | OPEN-P-QM-new-4, OPEN-P-QM-new-5 | ACTIVE — NEXT SESSION | HIGH |
+
+**Immediate priority:** SC-7 (r_chain calculation). One session, definitive answer.
+**Secondary priority:** SC-1 (quark mass ladder). One session with the 600-cell vertex coordinates.
+**Long-term:** SC-5 (EW connection for θ). Requires EW series development.
+
+---
+
+*All cage-geometry candidates for θ (SC-2, SC-3, SC-4, plus 8 additional mechanisms not recorded here) were exhausted by Session K, 25 March 2026. The structural impossibility result is proved in SM-4 Theorem THEO-SM-5 and registered as OPEN-P-SM-7d. θ is an electroweak quantity.*
+
+*Independent review of session propositions: Claude Opus (Anthropic), 30 March 2026.*
