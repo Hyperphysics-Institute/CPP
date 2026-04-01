@@ -1,7 +1,7 @@
 # CPP Predictions Registry
 
 **Repository location:** CPP root level (peer of postulates_and_theorems.md)
-**Last updated:** 30 March 2026 (tier notation added following Opus review)
+**Last updated:** 1 April 2026 (Weinberg angle status corrected; POST-D-7 added)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
 ---
@@ -117,8 +117,9 @@ distinguish clearly from the sections above.
 | POST-D-2 | m_μ = 105.66 MeV | SM-2 cage formula with N_k calibrated | m_e (via SSV₀) | SM-2 |
 | POST-D-3 | m_τ = 1776.86 MeV | SM-2 cage formula with N_k calibrated | m_e | SM-2 |
 | POST-D-4 | All quark masses | SM-2 effective occupancy N_k fitted to PDG | m_e | SM-2 |
-| POST-D-5 | W, Z, Higgs masses | SM-2 cage assignments calibrated | m_e | SM-2 |
+| POST-D-5 | W, Z, Higgs masses | EW-1 through EW-4: confinement energy formula with topology-dependent η calibrated to each mass separately. Three distinct η values (η_W = 1.57×10⁻¹⁷, η_Z = 1.48×10⁻¹⁷, η_H = 2.93×10⁻¹⁷). OP-EW-1 (derive η), OP-EW-2 (unified formula). | PDG masses | EW-1–4 |
 | POST-D-6 | sea_strength ≈ 0.185 | Derived to 3.8% (3.8% residual remains) | QCD coupling | SS-1 §8 |
+| POST-D-7 | sin²θ_W = 0.2312 | **Structural framework derived** (p_k weights from 600-cell dihedral projections, zero parameters). **Numerical value reproduced** (coupling g' calibrated to PDG target via vertex_count_correction = 1.18). Framework → Type 1; numerical value → post-diction until OP-EW-3 (derive g, g' from vertex counts) is solved. Agreement: 0.004%. | PDG sin²θ_W | EW-1, EW-5 (THEO-EW-4) |
 | POST-D-7 | SSV₀ = 0.2555 MeV | Direct calibration to electron mass | m_e | SM-1 §7 |
 | POST-D-8 | θ_Koide = 132.73° | Calibrated from PDG lepton masses | m_e, m_μ, m_τ | SM-4 |
 | POST-D-9 | Scale factor A in SM-4 | Calibrated from PDG | m_e | SM-4 |

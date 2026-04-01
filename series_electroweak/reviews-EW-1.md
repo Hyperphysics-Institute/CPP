@@ -16,7 +16,7 @@
 
 **Reviewer:** Claude Sonnet 4.x (Anthropic) — acting as skeptical physicist
 **Verdict:** Series is internally coherent; four genuine derivations; individual masses are reproduced not derived; η is the central outstanding gap.
-**Overall assessment:** "The Weinberg angle derivation is the cleanest result in the EW series and should be presented as a genuine zero-parameter derivation alongside the SU(3) result from SS-1. The individual boson masses are a different matter — they are reproduced by calibrating η, and the series is honest about this. The main weakness is that the η calibration is not just a small correction: it is a factor of 10¹⁷, which is the dominant contribution to the mass scale."
+**Overall assessment:** "The Weinberg angle structural framework — four-layer phase interference with golden-ratio probability weights from 600-cell dihedral projections — is the cleanest result in the EW series and a genuine geometric derivation. However, the coupling constants g and g' that enter the mixing formula require one calibration (vertex_count_correction = 1.18), so the final numerical value sin²θ_W = 0.2312 is reproduced rather than predicted from zero parameters. *(Corrected 31 March 2026: the previous assessment stated 'genuine zero-parameter derivation'; this was overclaimed. The structural framework is derived; the coupling calibration is OP-EW-3.)* The individual boson masses are a different matter — they are reproduced by calibrating η, and the series is honest about this. The main weakness is that the η calibration is not just a small correction: it is a factor of 10¹⁷, which is the dominant contribution to the mass scale."
 
 ---
 
@@ -26,7 +26,7 @@
 
 **Assessment: VALID — acknowledged in the series status table**
 
-This concern is correct and the EW series addresses it honestly. The EW-5 status table explicitly labels m_W, m_Z, m_H as "Reproduced (η calibrated)" not "Derived." The OPEN-P-EW-1 entry describes the problem directly. The philosophical position is that reproducing the known masses while using one calibrated factor is a necessary first step — it confirms the topology is correct and the geometric structure is right — but it is not a derivation. The sin²θ_W = 0.2312 result, which requires no η, is the genuine derivation.
+This concern is correct and the EW series addresses it honestly. The EW-5 status table explicitly labels m_W, m_Z, m_H as "Reproduced (η calibrated)" not "Derived." The OPEN-P-EW-1 entry describes the problem directly. The philosophical position is that reproducing the known masses while using one calibrated factor is a necessary first step — it confirms the topology is correct and the geometric structure is right — but it is not a derivation. The sin²θ_W structural framework (which requires no η) is the closest result to a genuine derivation, though it too requires one coupling calibration (OP-EW-3).
 
 **Status: ACKNOWLEDGED — registered as OPEN-P-EW-1**
 

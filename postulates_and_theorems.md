@@ -1,7 +1,10 @@
 # CPP Postulates and Theorems Registry
 
-**Last updated:** 30 March 2026
+**Last updated:** 31 March 2026
 **Purpose:** Source of truth for what CPP assumes (postulates) and what it has proved (theorems). The ratio of theorems to postulates measures theoretical progress. The goal is maximum theorems from minimum postulates.
+**OSF DOI:** [10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D) (7 papers registered 31 March 2026)
+
+*31 March 2026 update: 10 QM theorems (THEO-QM-1 through THEO-QM-10) registered from the QM series papers QM-1 through QM-5. OP-QM-2 (Schrödinger derivation) marked SOLVED by THEO-QM-1. OP-QM-4 (decoherence timescale) marked PARTIAL/SOLVED by THEO-QM-6 + SD-3 THEO-SD-6. QM-3/SD inconsistency resolved via ε-hierarchy (philosophy-QM-3.md rewritten).*
 
 *30 March 2026 update: AXIM-5 (ZBW oscillations, formerly AXIM-5 (demoted)) demoted from axiom to theorem THEO-1 + corollary CORL-1a. Axiom count reduced from 7 to 6. Propositions PROP-1 through PROP-15, Theorem THEO-1, Corollaries CORL-1a/1b, and Open Problems OPEN-P-QM-new-1 through OPEN-P-QM-new-8 added from partner-switching session. See propositions.md for full derivations.*
 
@@ -75,6 +78,27 @@ All from the Strong Sector paper (SS-1). Proved from AXIM-1–AXIM-6 and the 600
 
 ---
 
+## Theorems — Quantum Mechanics (QM)
+
+Derived from AXIM-1–AXIM-6 and the 600-cell lattice geometry. The QM series proves that standard quantum mechanics emerges from DI-bit hopping dynamics on the lattice. All lattice corrections are O((l_P/λ)²) and unobservable at laboratory scales.
+
+*Registered 31 March 2026 during the QM review cycle. OP-QM-2 (Schrödinger derivation) was identified as SOLVED by THEO-QM-1.*
+
+| ID | Theorem | Result | Key postulates used | Paper |
+|----|---------|--------|--------------------|----|
+| **THEO-QM-1** | Schrödinger equation from DI-bit hopping | In the continuum limit Δs → 0, the discrete complex hopping equation on the 600-cell graph Laplacian becomes iℏ ∂ψ/∂t = −(ℏ²/2m)∇²ψ + Vψ **exactly**. The imaginary unit i arises from phase accumulation per hop, not from diffusion. T = ℏ²/(4mΔs²) with the factor 2 from z/(2d) = 12/6 = 2 absorbed. V(r) = −k_PSR × Δ\|SSV(r)\| from SR-1. **Solves OP-QM-2.** | AXIM-2, AXIM-4, AXIM-6 | QM-1, Theorem 1 |
+| **THEO-QM-2** | Born rule from DI-bit density | P(d) = \|ψ(d)\|² at detector vertex d. Follows from the identification of \|ψ\|² with the local DI-bit number density ρ_bit. Non-circular: amplitude A₀ and phase φₖ are defined geometrically, independent of probability. | AXIM-1, AXIM-3, AXIM-6 | QM-2 (via companion C3) |
+| **THEO-QM-3** | Non-separability of the singlet | The joint DI-bit state \|Ψ⁻⟩ = (1/√2)(\|↑⟩_A\|↓⟩_B − \|↓⟩_A\|↑⟩_B) cannot be written as \|φ_A⟩ ⊗ \|φ_B⟩. Proof: assuming separability contradicts the Nexus total-spin-zero constraint. | AXIM-1, AXIM-6 (Nexus) | QM-3, Theorem 1 |
+| **THEO-QM-4** | Tsirelson bound in CPP | \|S\|_CHSH = 2√2 at optimal angles. From E(â,b̂) = −cos θ applied to the non-separable singlet. Matches the QM Tsirelson bound exactly. | AXIM-1, AXIM-6, THEO-QM-3 | QM-3, Theorem 2 |
+| **THEO-QM-5** | No-signaling | Alice's marginal probability P(A = +1) = 1/2 regardless of Bob's measurement axis, and vice versa. The Nexus is a global constraint, not a signal. Proved directly from the singlet marginal. | AXIM-6, THEO-QM-3 | QM-3, Theorem 3 |
+| **THEO-QM-6** | Lindblad from DP Sea scattering | Under Born-Markov approximation with H_int = Σⱼ gⱼ(aⱼ+aⱼ†)⊗σ̂_z, the reduced density matrix obeys dρ/dt = −(i/ℏ)[H_S,ρ] + γ(σ̂_zρσ̂_z − ρ) with dephasing rate **γ = (sea_strength)² × E_P/ℏ**. Off-diagonals decay as exp(−2γt). **Effectively solves OP-QM-4.** | AXIM-3, AXIM-4, AXIM-6 | QM-4, Theorem 1 |
+| **THEO-QM-7** | Pointer basis = SSV eigenstates | States robust under DP Sea coupling are eigenstates of σ̂_z (definite SSV phase projection). The 12-edge broadcast selects the dominant SSV component at each Grid Point. Pointer basis is fixed by lattice geometry, not by apparatus — stronger than standard einselection. | AXIM-2, AXIM-4 | QM-4, Theorem 2 |
+| **THEO-QM-8** | Global unitarity preserved | The total state of system + DP Sea + Nexus evolves unitarily at every Absolute Moment tick. Apparent collapse is an artifact of tracing over the bath degrees of freedom. | AXIM-6 | QM-4, Theorem 3 |
+| **THEO-QM-9** | Bosonic commutation relations | If site operators satisfy [ĉᵢ, ĉⱼ†] = δᵢⱼ, then the 600-cell eigenmode operators satisfy [aₖ, aₖ'†] = δₖₖ'. Follows from eigenmode orthonormality on the 600-cell adjacency matrix. | AXIM-2 | QM-5, Theorem 1 |
+| **THEO-QM-10** | Fermion-boson distinction | Charged CP aggregates obey Pauli exclusion (one per Grid Point from THEO-1), giving fermionic anticommutators. Neutral DI-bit modes have no occupancy restriction, giving bosonic commutators. The spin-statistics connection is geometric, not postulated. | AXIM-1, AXIM-2, THEO-1 | QM-5, Theorem 2 |
+
+---
+
 ## Corollaries
 
 | ID | Corollary | Follows from | Paper |
@@ -83,6 +107,9 @@ All from the Strong Sector paper (SS-1). Proved from AXIM-1–AXIM-6 and the 600
 | **CORL-SM-2** | Three lepton generations correspond to three K3 eigenmodes | THEO-SM-2 + K3 structure | SM-3 |
 | **CORL-SM-3** | Neutrinos are the K3 eigenmode excitations; charged leptons are the vertex excitations | THEO-SM-4 | SM-5 |
 | **CORL-SM-4** | K(c,b,t) ≈ 2/3 (0.42%) — K3 thermal structure shows through for heavy quarks | THEO-SM-2 + cage perturbation theory | PS-1 (thermal session) |
+| **CORL-QM-1** | Madelung decomposition is automatic | Writing ψ = √ρ × e^{iS/ℏ} and substituting into THEO-QM-1 gives continuity equation (DI-bit conservation = Nexus law) + quantum Hamilton-Jacobi with quantum pressure Q = −ℏ²∇²√ρ/(2m√ρ) | THEO-QM-1 | QM-1 |
+| **CORL-QM-2** | Quantum pressure is not postulated | Q emerges automatically from complex hopping; it is the curvature of the DI-bit density field, not a separate force | THEO-QM-1 | QM-1 |
+| **CORL-QM-3** | CPP is superdeterministic at the foundational level but reproduces standard QM at leading order | The Nexus violates measurement independence P(λ\|a,b) ≠ P(λ), making CPP superdeterministic in the strict Bell sense. But Bell violations (THEO-QM-3,4) arise from non-separable amplitudes at ε = 0. SD corrections are O(ε) ~ 10⁻²⁶. | THEO-QM-3, THEO-QM-4, THEO-QM-5, SD series | QM-3 + SD-1 (31 March 2026 cross-review) |
 
 ---
 
@@ -136,6 +163,8 @@ All from the Strong Sector paper (SS-1). Proved from AXIM-1–AXIM-6 and the 600
 | **CONJ-SM-3** | Neutrino masses follow from σ = 120^{−d} suppression | Derive Δm² from the 600-cell suppression formula | Paper 6 (planned) |
 | **CONJ-SM-4** | m_u/m_e = φ³ exactly | Derive from cage volume ratio or ZBW baseline | OPEN-P-SS-1 |
 | **CONJ-SM-5** | TBM corrections arise from Capotauro bias (Capotauro mechanism) | Derive θ₁₃ and 10% corrections from OPEN-P-SM-4 | OPEN-P-SM-4 |
+| **CONJ-EW-1** | sin²θ_W = 3/(8φ) = E/(φ(E+F)) = 0.23176 | The Weinberg angle is the ratio of 600-cell edges to total edges+faces, corrected by the golden-ratio metric. E=720, F=1200, E/(E+F) = 3/8 (the SU(5) GUT-scale value, **unique** to the 600-cell among all 6 regular 4-polytopes). The factor φ⁻¹ provides geometric "running" from the bare topological value to the M_Z scale. Agreement with PDG: 0.24%, zero free parameters. Physical interpretation: edges (1D) → U(1)_Y hypercharge channel; faces (2D) → SU(2)_L weak isospin channel; φ⁻¹ → metric correction from 600-cell geometry. The 0.24% residual may arise from DP Sea thermal perturbation of crystalline lattice perfection. | Show from CPP dynamics that hDP bit-flow mixing ratio equals E/(φ(E+F)); derive the physical correspondence edges→U(1), faces→SU(2) | OP-EW-3 |
+| **CONJ-EW-2** | sin²θ_W ≈ 3/13 = K₃_vertices/(z+1) = 0.23077 | Alternative formula: numerator = 3 cage base vertices of K₃; denominator = 13 = z+1 = closed neighbourhood of the 600-cell. Agreement: 0.19%. Brackets PDG from below (CONJ-EW-1 brackets from above). | Show whether 3/13 arises from a distinct physical mechanism or is a numerical coincidence | OP-EW-3 |
 
 ---
 
@@ -163,12 +192,15 @@ The postulates and theorems connect to the open problems register as follows:
 | THEO-SM-2 (Koide K=2/3) | OPEN-P-SM-7d (θ_Koide) | K=2/3 proved; θ open |
 | THEO-SM-4 (TBM mixing) | OPEN-P-SM-4 (Capotauro), OPEN-P-SM-5 (TBM corrections) | Zeroth order proved; corrections open |
 | THEO-SS-9 (quark ordering) | OPEN-P-SS-1 (quark mass formula) | Ordering proved; exact values open |
+| THEO-QM-1 (Schrödinger) | OP-QM-2 (rigorous continuum limit) | **OP-QM-2 SOLVED** by THEO-QM-1 (31 March 2026) |
+| THEO-QM-2 (Born rule) | OP-QM-1 (exact Born rule derivation) | Born rule stated; rigorous proof from ZBW phase averaging still OPEN |
+| THEO-QM-6 (Lindblad) | OP-QM-4 (decoherence timescale) | **OP-QM-4 effectively SOLVED** — γ derived in QM-4; τ_dec derived in SD-3 |
 
 ---
 
 ## The Minimum Postulate Target
 
-The long-range goal is to derive as many of AXIM-1–AXIM-6 as possible from deeper principles, reducing the postulate count. Current status (30 March 2026):
+The long-range goal is to derive as many of AXIM-1–AXIM-6 as possible from deeper principles, reducing the postulate count. Current status (31 March 2026):
 
 - **AXIM-1 (Conscious Points):** Foundational — likely irreducible
 - **AXIM-2 (600-cell lattice):** Foundational — the core geometric hypothesis of CPP
@@ -185,7 +217,7 @@ If AXIM-3–AXIM-4 and AXIM-5 can be derived from AXIM-1, AXIM-2, and AXIM-6, th
 ---
 
 *See also: `open_problems/` register, `potential_solutions.md`, development logs.*  
-*Last updated: 26 March 2026*
+*Last updated: 31 March 2026*
 
 ---
 
@@ -198,7 +230,7 @@ All from the Electroweak Series (EW-1 through EW-5). Proved from AXIM-1–AXIM-6
 | **THEO-EW-1** | W boson subgraph | W⁰ bracelet (6 hDPs, 12 CPs) on λ={1+φ, φ-1} subgraph; open interior makes it reactive | AXIM-1, AXIM-2 | EW-1, EW-2 |
 | **THEO-EW-2** | Z boson subgraph | Z⁰ icosahedral loop (12 vertices) on λ=12 (ground state, maximally symmetric, inert) | AXIM-1, AXIM-2 | EW-1, EW-3 |
 | **THEO-EW-3** | Higgs-like subgraph | Dodecahedral shell (20 vertices) on λ=-(1+φ) (most frustrated, highest confinement, scalar from A₅) | AXIM-1, AXIM-2 | EW-1, EW-4 |
-| **THEO-EW-4** | Weinberg angle | sin²θ_W(M_Z) = 0.2312 ± 0.0003 from four-layer phase interference; PDG 0.23121, agreement 0.004% | AXIM-2, AXIM-4 | EW-1, EW-5 |
+| **THEO-EW-4** | Weinberg angle structure | The four-layer phase interference weights p_k = (1−k/5)² are derived from 600-cell dihedral projections (genuine, zero parameters). The formula sin²θ_W = Σ p_k g'²/(Σ p_k(g²+g'²)) reproduces sin²θ_W = 0.2312 (PDG 0.23121, 0.004%) but **g' requires one calibration** (vertex_count_correction = 1.18; OP-EW-3). The structural framework is derived; the numerical value is reproduced, not predicted. | AXIM-2, AXIM-4 | EW-1, EW-5 |
 | **THEO-EW-5** | No boson between Z and H | No regular polyhedral closed subgraph with 12 < vertices < 20 exists in the 600-cell; no stable boson between 91 and 125 GeV | AXIM-2 | EW-1, EW-4 |
 | **THEO-EW-6** | SU(2)_L algebra | [I^a, I^b] = iε^{abc} I^c from 120°/240° phase bias operators; binary icosahedral group Γ closes the algebra | AXIM-2, AXIM-4 | EW-5 |
 | **THEO-EW-7** | Nexus gauge invariance | Local phase transformations ψ→e^{iα(x)}ψ leave all observables invariant (discrete Ward identity from Nexus DI-bit conservation) | AXIM-1, AXIM-6 | EW-5 |

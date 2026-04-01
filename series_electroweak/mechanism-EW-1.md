@@ -64,7 +64,7 @@ The SU(2)_L coupling g and the U(1)_Y coupling g' are reproduced from vertex-cou
 
     sin²θ_W = Σₖ pₖ gₖ'² / Σₖ pₖ(gₖ² + gₖ'²)
 
-Monte Carlo over 10⁶ configurations gives sin²θ_W(M_Z) = 0.2312 ± 0.0003, matching PDG to 0.004%. This is the most rigorously derived result in the EW series: it uses no free parameters beyond the 600-cell geometry.
+Monte Carlo over 10⁶ configurations gives sin²θ_W(M_Z) = 0.2312 ± 0.0003, matching PDG to 0.004%. **Honesty note (31 March 2026 audit):** The p_k probability weights are genuinely derived from 600-cell geometry (zero free parameters). However, the coupling g' is calibrated to reproduce the PDG value of sin²θ_W — the code sets g' = √(sin²θ_W_target × g²/(1 − sin²θ_W_target)). The coupling g ≈ 0.652 comes from shell vertex ratios with one fitted correction factor (vertex_count_correction = 1.18). The structural framework (four-layer interference with golden-ratio weights) is derived; the final numerical value requires one calibration. Deriving g and g' purely from 600-cell vertex counts is OP-EW-3.
 
 **Step 9 — Internal consistency check through m_Z/m_W.**
 The Weinberg angle gives cos θ_W = √(1−0.2312) = 0.8773. The tree-level relation m_W/m_Z = cos θ_W predicts m_Z/m_W = 1.1401. The masses derived independently in EW-2 and EW-3 give 91.1876/80.377 = 1.1344, agreeing to 0.5% without cross-calibration. This is the strongest internal self-consistency check in the EW series.

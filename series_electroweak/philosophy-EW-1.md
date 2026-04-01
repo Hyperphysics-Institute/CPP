@@ -18,12 +18,15 @@ The EW series makes a claim as bold as anything in the CPP programme: the electr
 The EW series contains two qualitatively different types of results, and it is important to distinguish them clearly.
 
 **Type 1 — Genuinely derived (no free parameters):**
-- sin²θ_W = 0.2312 from four-layer phase interference (agreement 0.004%)
+- The four-layer phase interference weights p_k = (1−k/5)² from 600-cell dihedral projections
 - SU(2)_L algebra from the [I^a, I^b] = iε^{abc} I^c proof
 - Nexus gauge invariance from the discrete Ward identity
 - Yang-Mills EFT as the continuum limit of bit-exchange dynamics
 - The absence of stable bosons between 91 and 125 GeV from the eigenvalue gap
 - φ⁻³ geometric dilution from shell-radius scaling
+
+**Type 1.5 — Structural framework derived, numerical value requires one calibration:**
+- sin²θ_W = 0.2312 (agreement 0.004%): the p_k weights and the mixing formula are derived from the 600-cell; the coupling constants g, g' require a vertex_count_correction = 1.18 that is fitted (OP-EW-3). When OP-EW-3 is solved, this moves to Type 1.
 
 **Type 2 — Reproduced (η calibrated to known masses):**
 - m_W = 80.377 GeV (calibrated)
@@ -31,7 +34,9 @@ The EW series contains two qualitatively different types of results, and it is i
 - m_H = 125.10 GeV (calibrated)
 - Decay widths and branching ratios
 
-The distinction is critical. The Weinberg angle derivation is a genuine zero-free-parameter result and should be presented alongside the SU(3) derivation from SS-1 as a CPP triumph. The individual boson masses are reproduced, not derived, because the η factor is calibrated. Conflating the two would misrepresent the theory's current status.
+The distinction is critical. The SU(2)_L algebra and the p_k interference weights are genuine zero-free-parameter results that should be presented alongside the SU(3) derivation from SS-1 as CPP triumphs. The Weinberg angle numerical value is almost there — the structural framework is derived, but the final number requires one calibration that we have not yet eliminated (OP-EW-3). The individual boson masses are reproduced, not derived, because the η factor is calibrated. Conflating any of these categories would misrepresent the theory's current status.
+
+*(31 March 2026 correction: the Weinberg angle was previously listed as Type 1 with "zero free parameters." Detailed audit of the Monte Carlo code revealed that g' is calibrated to the PDG target value. The structural framework is genuinely derived; the coupling calibration is the remaining gap.)*
 
 The EW series is honest about this in its status table in EW-5. The philosophy of the series is that reproduced results are scientifically valuable — they demonstrate internal consistency and set the stage for derivation — but they should not be presented as derivations.
 

@@ -112,9 +112,9 @@
 
 **The number:** PDG: sin²θ_W(M_Z) = 0.23121 ± 0.00004. CPP derived: 0.2312 ± 0.0003.
 
-**How each framework gets it:** In the SM, sin²θ_W is a free parameter measured from experiment and entered into the Lagrangian. In CPP, it is derived from four-layer phase interference on the 600-cell adjacency matrix, weighted by the eigenvalue spectrum — no free parameters.
+**How each framework gets it:** In the SM, sin²θ_W is a free parameter measured from experiment and entered into the Lagrangian. In CPP, the structural framework — four-layer phase interference on the 600-cell with golden-ratio probability weights p_k = (1−k/5)² — is derived from geometry. However, the coupling constants g and g' that enter the mixing formula require one calibration (vertex_count_correction = 1.18 for g; g' reverse-engineered from the target sin²θ_W). The p_k weights are zero-parameter; the final numerical value is reproduced with one calibration (OP-EW-3).
 
-**Consilience significance:** This is the only quantity in the EW series that is genuinely derived rather than reproduced. Two completely independent computations — the SM measurement and the CPP geometric formula — give the same number to 0.004%. The SM measurement required decades of precision experiments (LEP, SLC, Tevatron). The CPP derivation requires only the 600-cell eigenvalue structure and 10⁶ Monte Carlo trials.
+**Consilience significance (corrected 31 March 2026):** The structural framework is genuinely derived — the 600-cell geometry forces four specific interference layers with golden-ratio weights. That CPP's geometric framework produces a mixing angle in the correct range (~0.23) from lattice structure is remarkable. But the 0.004% agreement with PDG reflects the calibration of g', not a zero-parameter prediction. The honest statement: the framework is derived; the precise numerical value is reproduced. When OP-EW-3 (derive g, g' from pure vertex counts) is solved, this becomes a genuine zero-parameter derivation.
 
 
 ### PHEN-EW-V2. m_Z/m_W = 1.134 to 0.5% from Two Independent Routes
