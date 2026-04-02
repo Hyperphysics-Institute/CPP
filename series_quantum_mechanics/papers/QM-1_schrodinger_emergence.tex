@@ -6,13 +6,17 @@
 \usepackage{graphicx}
 \usepackage{svg}
 \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
+
+% Figure path: papers/ → ../figures/figures-QM-1/
+\graphicspath{{../figures/figures-QM-1/}}
+
 \usepackage{caption}
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -112,7 +116,7 @@ and conserved modulo $2\pi$ by the Nexus.
 
 \begin{figure}[H]
 \centering
-\includesvg[width=0.90\textwidth]{figures/qm2040a_fig1_gaussian_packet}
+\includegraphics[width=0.90\textwidth]{qm2040a_fig1_gaussian_packet.pdf}
 \caption{Gaussian DI-bit wave packet on the 600-cell lattice.
   Grid Points (circles) are coloured by local DI-bit density
   $\rho_{\rm bit}$ (dark blue $=$ high, pale blue $=$ low),
@@ -196,7 +200,7 @@ Taking $\Delta t \to 0$ gives~\eqref{eq:Schrodinger}. \qed
 
 \begin{figure}[H]
 \centering
-\includesvg[width=0.90\textwidth]{figures/qm2040a_fig2_discrete_continuum}
+\includegraphics[width=0.90\textwidth]{qm2040a_fig2_discrete_continuum.pdf}
 \caption{Discrete-to-continuum transition.
   \textit{Left:} Discrete 600-cell lattice with DI-bit amplitudes
   (colour $=$ density, arrows $=$ hopping direction).  The master equation
@@ -277,44 +281,11 @@ $\sum_j(\Delta\mathbf{r}_{ij})^2 = z\Delta s^2\mathbf{1}/d$);
 the numerical value $z/(2d) = 12/6 = 2$ is a property of the 600-cell.
 
 %=====================================================================
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{9}
+ibliographystyle{plainnat}
+ibliography{cpp_qm_series}
 
-\bibitem{abshier2026c3}
-T.~L. Abshier, ``The Born Rule from DI-Bit Density,''
-companion~C3, Hyperphysics Institute (2026).
 
-\bibitem{abshier2026c1}
-T.~L. Abshier, ``The Absolute Moment Postulate,''
-companion~C1, Hyperphysics Institute (2026).
-
-\bibitem{abshier2026c5}
-T.~L. Abshier, ``Newtonian Gravity from Shell-Broadcast SSV,''
-companion~C5, Hyperphysics Institute (2026).
-
-\bibitem{cpp2040b_super}
-T.~L. Abshier and Grok,
-``Superposition and Interference from Multi-Path DI-Bit Summation,''
-CPP-2040b-super~v3.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp2040c}
-T.~L. Abshier and Grok,
-``Entanglement and Bell Violations from Non-Separable Nexus States,''
-CPP-2040c~v3.1, Hyperphysics Institute (2026).
-
-\bibitem{bohm1952}
-D.~Bohm, ``A suggested interpretation of the quantum theory in terms
-of `hidden' variables~I,''
-\textit{Phys.\ Rev.} \textbf{85}, 166--179 (1952).
-
-\bibitem{feynman1965}
-R.~P. Feynman and A.~R. Hibbs,
-\textit{Quantum Mechanics and Path Integrals}, McGraw-Hill (1965).
-
-\bibitem{brouwer1989}
-A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
-\textit{Distance-Regular Graphs}, Springer (1989).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}

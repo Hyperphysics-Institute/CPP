@@ -6,13 +6,17 @@
 \usepackage{graphicx}
 \usepackage{svg}
 \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
+
+% Figure path: papers/ → ../figures/figures-QM-4/
+\graphicspath{{../figures/figures-QM-4/}}
+
 \usepackage{caption}
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -149,7 +153,7 @@ classical mixture representing apparent collapse.
 
 \begin{figure}[H]
 \centering
-\includesvg[width=0.90\textwidth]{figures/qm2040d_fig1_decoherence}
+\includegraphics[width=0.90\textwidth]{qm2040d_fig1_decoherence.pdf}
 \caption{Density matrix evolution under DP Sea decoherence.
   \textit{Left:} Initial coherent state with off-diagonal elements
   $\rho_{01} = \tfrac12 e^{i\phi}$ (amber, large).
@@ -193,7 +197,7 @@ by the lattice geometry --- independent of the apparatus.
 
 \begin{figure}[H]
 \centering
-\includesvg[width=0.90\textwidth]{figures/qm2040d_fig2_pointer_basis}
+\includegraphics[width=0.90\textwidth]{qm2040d_fig2_pointer_basis.pdf}
 \caption{Pointer basis identification.
   \textit{Left:} An arbitrary DI-bit state $\ket{\psi}$ on the
   Bloch sphere (blue arrow), not aligned with the SSV axis (green
@@ -276,43 +280,11 @@ No collapse postulate is required.  Measurement is a local thermodynamic
 process whose global structure is maintained by the Nexus.
 
 %=====================================================================
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{9}
+ibliographystyle{plainnat}
+ibliography{cpp_qm_series}
 
-\bibitem{abshier2026c1}
-T.~L. Abshier, ``The Absolute Moment Postulate,''
-companion~C1, Hyperphysics Institute (2026).
 
-\bibitem{abshier2026c3}
-T.~L. Abshier, ``The Born Rule from DI-Bit Density,''
-companion~C3, Hyperphysics Institute (2026).
-
-\bibitem{abshier2026c6}
-T.~L. Abshier, ``The Dipole Sea and its Properties,''
-companion~C6, Hyperphysics Institute (2026).
-
-\bibitem{cpp2040c}
-T.~L. Abshier and Grok,
-``Entanglement and Bell Violations,''
-CPP-2040c~v3.1, Hyperphysics Institute (2026).
-
-\bibitem{zeh1970}
-H.~D. Zeh, ``On the interpretation of measurement in quantum theory,''
-\textit{Found.\ Phys.} \textbf{1}, 69 (1970).
-
-\bibitem{zurek1981}
-W.~H. Zurek, ``Pointer basis of quantum apparatus,''
-\textit{Phys.\ Rev.\ D} \textbf{24}, 1516 (1981).
-
-\bibitem{joos2003}
-E.~Joos \textit{et al.},
-\textit{Decoherence and the Appearance of a Classical World},
-Springer (2003).
-
-\bibitem{breuer2002}
-H.-P. Breuer and F.~Petruccione,
-\textit{The Theory of Open Quantum Systems}, Oxford (2002).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}

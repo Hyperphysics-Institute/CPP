@@ -6,13 +6,17 @@
 \usepackage{graphicx}
 \usepackage{svg}
 \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
+
+% Figure path: papers/ → ../figures/figures-QM-5/
+\graphicspath{{../figures/figures-QM-5/}}
+
 \usepackage{caption}
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -125,7 +129,7 @@ with Planck cutoff $|\mathbf{k}|\le\pi/\lP$.
 
 \begin{figure}[H]
 \centering
-\includesvg[width=0.90\textwidth]{figures/qm2040e_fig1_600cell_modes}
+\includegraphics[width=0.90\textwidth]{qm2040e_fig1_600cell_modes.pdf}
 \caption{600-cell lattice and its six distinct eigenspaces.
   \textit{Left:} Icosahedral projection of the 600-cell with central
   Grid Point (blue) connected to six eigenmode nodes (coloured by
@@ -263,36 +267,11 @@ QFT in CPP emerges from 600-cell eigenmodes:
 \end{enumerate}
 
 %=====================================================================
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{9}
+ibliographystyle{plainnat}
+ibliography{cpp_qm_series}
 
-\bibitem{cpp2040a}
-T.~L. Abshier and Grok,
-``Schr\"{o}dinger Equation from Phase-Carrying DI-Bit Hopping,''
-CPP-2040a~v3.1, Hyperphysics Institute (2026).
 
-\bibitem{cpp5014}
-T.~L. Abshier and Grok,
-``Charge Neutrality in Baryons and Emergent Quark Charges,''
-CPP-5014, Hyperphysics Institute (2026).
-
-\bibitem{brouwer1989}
-A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
-\textit{Distance-Regular Graphs}, Springer (1989), pp.~400--401.
-
-\bibitem{wilson1974}
-K.~G. Wilson, ``Confinement of quarks,''
-\textit{Phys.\ Rev.\ D} \textbf{10}, 2445 (1974).
-
-\bibitem{pauli1940}
-W.~Pauli, ``The connection between spin and statistics,''
-\textit{Phys.\ Rev.} \textbf{58}, 716 (1940).
-
-\bibitem{peskin1995}
-M.~E. Peskin and D.~V. Schroeder,
-\textit{An Introduction to Quantum Field Theory},
-Addison-Wesley (1995).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}
