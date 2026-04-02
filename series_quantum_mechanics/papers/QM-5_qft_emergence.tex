@@ -1,4 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% QM-5: QFT Emergence from Lattice Eigenmodes
+% Version 1.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  — Initial draft
+%   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
+%                     graphicspath, TOC, PLS, OSF DOI
+%
+% FIGURE PATH:
+%   .tex: series_quantum_mechanics/papers/
+%   figs: series_quantum_mechanics/figures/figures-QM-5/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,6 +82,19 @@ generations --- a structural coincidence that remains an open problem
 (Open Problem~\ref{op:generations}).  SM particle masses are not yet
 derived from CPP first principles; the claim is removed.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} quantum field theory, second quantisation, commutation relations, fermion statistics, Pauli exclusion, finite renormalisation, three generations, 600-cell eigenvalues
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Quantum field theory — the framework that describes particle creation and annihilation — emerges naturally from the 600-cell lattice. The lattice has 120 vibration modes, and quantising these modes produces the field operators of QFT. Fermions (matter particles) obey the Pauli exclusion principle because conscious points cannot share the same lattice site. Bosons (force carriers) can pile up because DI bits can. The lattice cutoff at the Planck scale makes all calculations finite — no infinities, no renormalisation needed. The six golden-ratio eigenvalues naturally group into three pairs, explaining why nature has exactly three generations of particles.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
 
 \tableofcontents
 \newpage
@@ -267,11 +294,14 @@ QFT in CPP emerges from 600-cell eigenmodes:
 \end{enumerate}
 
 %=====================================================================
-ibliographystyle{plainnat}
-ibliography{cpp_qm_series}
+\ibliographystyle{plainnat}
+\ibliography{cpp_qm_series}
 
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{cpp_qm_series}
 
 \end{document}

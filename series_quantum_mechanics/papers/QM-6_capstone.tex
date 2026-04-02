@@ -1,4 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% QM-6: Capstone — Four Primitives to Full QM
+% Version 1.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  — Initial draft
+%   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
+%                     graphicspath, TOC, PLS, OSF DOI
+%
+% FIGURE PATH:
+%   .tex: series_quantum_mechanics/papers/
+%   figs: series_quantum_mechanics/figures/figures-QM-6/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,6 +82,19 @@ The hierarchy problem is finite; SM masses remain an open problem.
 The entire QM sector is derived from four primitives with no new
 postulates.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} quantum mechanics foundations, four primitives, emergence of QM, Nexus constraint, Conscious Point Physics, derived vs postulated, lattice quantum mechanics
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+This paper summarises what CPP has achieved for quantum mechanics. Starting from just four ingredients — conscious points, the 600-cell lattice, DI-bit amplitudes, and the Nexus global constraint — the entire framework of quantum mechanics follows: the Schrödinger equation, the Born rule for probabilities, quantum interference, Bell inequality violations, decoherence and measurement, and quantum field theory with three generations. No additional postulates are needed beyond the four primitives. The remaining open problem is deriving Planck's constant from these four ingredients.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
 
 \tableofcontents
 \newpage
@@ -283,11 +310,14 @@ papers (C1--C15) via the SSV mechanism.
 \end{figure}
 
 %=====================================================================
-ibliographystyle{plainnat}
-ibliography{cpp_qm_series}
+\ibliographystyle{plainnat}
+\ibliography{cpp_qm_series}
 
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{cpp_qm_series}
 
 \end{document}

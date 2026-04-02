@@ -1,4 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% QM-2: Superposition and Interference from DI-Bit Path Summation
+% Version 1.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  — Initial draft
+%   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
+%                     graphicspath, TOC, PLS, OSF DOI
+%
+% FIGURE PATH:
+%   .tex: series_quantum_mechanics/papers/
+%   figs: series_quantum_mechanics/figures/figures-QM-2/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -65,6 +79,19 @@ recovers the Schr\"{o}dinger equation of Paper~2~\cite{cpp2040a}.
 Lattice corrections are of order $(\lP/\lambda)^2$ and unobservable
 at laboratory scales.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} quantum superposition, wave-particle duality, path integral, quantum interference, Born rule, quantum eraser, which-path information, double-slit experiment
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+When a particle passes through two slits, CPP says it sends DI bits along every possible path simultaneously. Each path picks up a phase from the lattice geometry. At the detector, all paths add up — where phases align, the particle is likely to be found (bright fringes); where they cancel, it is not (dark fringes). Observing which slit the particle went through leaves a stress imprint that disrupts the phase alignment, destroying the pattern. This explains wave-particle duality without mystery: waves are many paths, particles are single detections.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
 
 \tableofcontents
 \newpage
@@ -274,11 +301,14 @@ same DI-bit hopping dynamics.  All results follow from the four CPP
 postulates and the 600-cell geometry.
 
 %=====================================================================
-ibliographystyle{plainnat}
-ibliography{cpp_qm_series}
+\ibliographystyle{plainnat}
+\ibliography{cpp_qm_series}
 
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{cpp_qm_series}
 
 \end{document}

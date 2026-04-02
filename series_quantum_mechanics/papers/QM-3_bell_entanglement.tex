@@ -1,4 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% QM-3: Bell Inequality and Entanglement from the Nexus
+% Version 1.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  — Initial draft
+%   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
+%                     graphicspath, TOC, PLS, OSF DOI
+%
+% FIGURE PATH:
+%   .tex: series_quantum_mechanics/papers/
+%   figs: series_quantum_mechanics/figures/figures-QM-3/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,6 +82,19 @@ pre-established correlations) was an LHV model and is explicitly
 corrected.  Lattice corrections are of order $(\lP/\lambda)^2$ and
 unobservable at laboratory scales.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} Bell inequality, CHSH violation, Tsirelson bound, quantum entanglement, Nexus constraint, EPR correlations, no-signaling theorem, ZBW helix
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Einstein called quantum entanglement 'spooky action at a distance.' CPP explains it without spookiness. When two particles are created together, the Nexus — a global consistency requirement of the 600-cell lattice — locks their properties into a joint pattern. Measuring one particle instantly determines what you will find when measuring the other, not because a signal was sent, but because the lattice was already configured that way. The correlations reach the maximum allowed by quantum mechanics (the Tsirelson bound), but cannot be used to send information faster than light.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
 
 \tableofcontents
 \newpage
@@ -269,11 +296,14 @@ The non-local resource is the global Nexus constraint --- not a signal
 or local hidden variable.
 
 %=====================================================================
-ibliographystyle{plainnat}
-ibliography{cpp_qm_series}
+\ibliographystyle{plainnat}
+\ibliography{cpp_qm_series}
 
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{cpp_qm_series}
 
 \end{document}

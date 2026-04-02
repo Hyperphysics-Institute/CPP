@@ -1,4 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% QM-1: Emergence of the Schrödinger Equation from DI-Bit Hopping
+% Version 1.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  — Initial draft
+%   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
+%                     graphicspath, TOC, PLS, OSF DOI
+%
+% FIGURE PATH:
+%   .tex: series_quantum_mechanics/papers/
+%   figs: series_quantum_mechanics/figures/figures-QM-1/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -67,6 +81,19 @@ emerges automatically from complex hopping; it is not postulated.
 Lattice corrections are of order $(\lP/\lambda)^2$ and unobservable at
 laboratory wavelengths.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} Schrödinger equation, 600-cell lattice, DI-bit hopping, graph Laplacian, tight-binding model, discrete quantum mechanics, Madelung decomposition, quantum pressure
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+In CPP, the Schrödinger equation is not a postulate — it is the natural result of tiny information packets (DI bits) hopping between sites on the 600-cell lattice. Each hop accumulates a phase determined by the local stress in the lattice. When the lattice spacing is much smaller than the observation scale, these discrete hops smooth into the familiar continuous wave equation of quantum mechanics. The quantum potential that governs particle behaviour is the same Space Stress Vector field that produces time dilation in special relativity.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
 
 \tableofcontents
 \newpage
@@ -281,11 +308,14 @@ $\sum_j(\Delta\mathbf{r}_{ij})^2 = z\Delta s^2\mathbf{1}/d$);
 the numerical value $z/(2d) = 12/6 = 2$ is a property of the 600-cell.
 
 %=====================================================================
-ibliographystyle{plainnat}
-ibliography{cpp_qm_series}
+\ibliographystyle{plainnat}
+\ibliography{cpp_qm_series}
 
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{cpp_qm_series}
 
 \end{document}

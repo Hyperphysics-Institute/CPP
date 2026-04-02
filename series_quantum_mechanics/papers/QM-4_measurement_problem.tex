@@ -1,4 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% QM-4: Measurement Problem and Decoherence from the DP Sea
+% Version 1.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  — Initial draft
+%   v1.1 2 Apr 2026 — Formatting compliance: .bib, natbib,
+%                     graphicspath, TOC, PLS, OSF DOI
+%
+% FIGURE PATH:
+%   .tex: series_quantum_mechanics/papers/
+%   figs: series_quantum_mechanics/figures/figures-QM-4/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -69,6 +83,19 @@ predictions.  Global unitarity is preserved at every Absolute Moment
 tick by the Nexus (Theorem~\ref{thm:unitary}).  Lattice corrections are
 of order $(\lP/\lambda)^2$ and unobservable at laboratory scales.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} measurement problem, quantum decoherence, Lindblad equation, pointer basis, quantum-to-classical transition, DP Sea, decoherence rate, SSV eigenstates
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Why do quantum superpositions disappear when we look at them? In CPP, every measurement couples the quantum system to the Dipole Sea — the vast background of conscious point pairs that fills the lattice. This coupling scrambles the delicate phase relationships that make superposition possible, at a rate of about 10⁴² times per second. Macroscopic objects decohere so fast that they are always in definite states. The preferred measurement outcomes are determined by the Space Stress Vector — the same field that governs gravity and relativity.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
 
 \tableofcontents
 \newpage
@@ -280,11 +307,14 @@ No collapse postulate is required.  Measurement is a local thermodynamic
 process whose global structure is maintained by the Nexus.
 
 %=====================================================================
-ibliographystyle{plainnat}
-ibliography{cpp_qm_series}
+\ibliographystyle{plainnat}
+\ibliography{cpp_qm_series}
 
 
 \section*{Acknowledgements}
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{cpp_qm_series}
 
 \end{document}

@@ -1,4 +1,13 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% EW-4: The Higgs Boson from CPP
+% Version 1.1 -- 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  -- Initial draft
+%   v1.1 2 Apr 2026 -- Formatting compliance
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,7 +16,7 @@
 \usepackage{svg}
 \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
 \usepackage{caption,float,booktabs,parskip,xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -56,6 +65,17 @@ inconsistency between the unified-scale formula $m_H = E_0/\phig^2$
 and the directly computed mass is stated as Open
 Problem~\ref{op:e0}.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} Higgs boson, scalar particle, dodecahedral shell, A5 symmetry, electroweak symmetry breaking, 125 GeV, spin-zero derivation, CPP Higgs
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The Higgs boson, discovered at 125 GeV in 2012, is modelled in CPP as a dodecahedral shell of heavy Dipole Pairs on the 600-cell lattice. The dodecahedron's alternating symmetry group A5 forces the Higgs to have zero spin (scalar), which is its defining quantum number.
+
+\bigskip
+\raggedright
+
 
 \tableofcontents
 \newpage
@@ -238,44 +258,11 @@ resolving the $E_0$ inconsistency with Paper~5 (Open
 Problem~\ref{op:e0}) are the remaining steps toward a fully derived
 electroweak mass spectrum.
 
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{9}
+\bibliographystyle{plainnat}
+\bibliography{cpp_ew_series}
 
-\bibitem{cpp_ew1}
-T.~L. Abshier and Grok,
-``Electroweak overview,''
-CPP EW \#1 v2, Hyperphysics Institute (2026).
 
-\bibitem{cpp_ew2}
-T.~L. Abshier and Grok,
-``The W$^0$ bracelet and W$^\pm$ boson,''
-CPP EW \#2 v2, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ew3}
-T.~L. Abshier and Grok,
-``The Z$^0$ boson: icosahedral closed loop,''
-CPP EW \#3 v2, Hyperphysics Institute (2026).
-
-\bibitem{pdg2026}
-Particle Data Group,
-``Review of Particle Physics 2026,''
-\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
-
-\bibitem{higgs1964}
-P.~W. Higgs,
-``Broken symmetries and the masses of gauge bosons,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{13}, 508 (1964).
-
-\bibitem{atlas2012}
-ATLAS Collaboration,
-``Observation of a new boson at a mass of 125~GeV,''
-\textit{Phys.\ Lett.\ B} \textbf{716}, 1 (2012).
-
-\bibitem{cms2012}
-CMS Collaboration,
-``Observation of a new boson at a mass of 125.3~GeV,''
-\textit{Phys.\ Lett.\ B} \textbf{716}, 30 (2012).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}

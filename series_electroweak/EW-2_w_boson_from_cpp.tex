@@ -1,4 +1,13 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% EW-2: The W Boson from CPP
+% Version 1.1 -- 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  -- Initial draft
+%   v1.1 2 Apr 2026 -- Formatting compliance
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,7 +16,7 @@
 \usepackage{svg}
 \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
 \usepackage{caption,float,booktabs,parskip,xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -55,6 +64,17 @@ Planck-scale energy to the weak scale is a calibration constant
 (Open Problem~\ref{op:dilution}), not a derived quantity.  All
 numerical results match PDG~2026 within uncertainties.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} W boson, weak interaction, beta decay, hDP bracelet, W-zero prediction, V-A coupling, left-handedness, CPP electroweak
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The W boson, which mediates radioactive beta decay, is modelled in CPP as an open ring of heavy Dipole Pairs arranged in a bracelet structure on the 600-cell lattice. The W carries electric charge borrowed from the reaction that creates it. CPP predicts a neutral W boson (W-zero) in addition to the known W-plus and W-minus --- a novel prediction not present in the Standard Model.
+
+\bigskip
+\raggedright
+
 
 \tableofcontents
 \newpage
@@ -291,39 +311,11 @@ charge of $W^\pm$ is borrowed from the collision and returned to the
 decay products, conserved at every step by the Nexus.
 
 %=====================================================================
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{9}
+\bibliographystyle{plainnat}
+\bibliography{cpp_ew_series}
 
-\bibitem{cpp_ew1}
-T.~L. Abshier and Grok,
-``Electroweak sector: introductory overview,''
-CPP Electroweak Series \#1 v2, Hyperphysics Institute (2026).
 
-\bibitem{cpp5014}
-T.~L. Abshier and Grok,
-``Charge neutrality in baryons and emergent quark charges,''
-CPP-5014, Hyperphysics Institute (2026).
-
-\bibitem{pdg2026}
-Particle Data Group,
-``Review of Particle Physics 2026,''
-\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
-
-\bibitem{cdf2022}
-CDF Collaboration,
-``High-precision measurement of the W boson mass,''
-\textit{Science} \textbf{376}, 170 (2022).
-
-\bibitem{atlas2023}
-ATLAS Collaboration,
-``Measurement of the W-boson mass,''
-\textit{Phys.\ Lett.\ B} \textbf{843}, 137803 (2023).
-
-\bibitem{cms2024}
-CMS Collaboration,
-``Measurement of the W boson mass with the CMS detector,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{133}, 091802 (2024).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}

@@ -1,4 +1,13 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% EW-1: Electroweak Introduction: The 600-Cell Vacuum and Gauge Emergence
+% Version 1.1 -- 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  -- Initial draft
+%   v1.1 2 Apr 2026 -- Formatting compliance
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,7 +16,7 @@
 \usepackage{svg}
 \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
 \usepackage{caption,float,booktabs,longtable,parskip,xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -72,6 +81,17 @@ independent sectors.  Clear falsifiable predictions are listed,
 including non-logarithmic $\sin^2\theta_W$ running ($\sim 0.1\%$ at
 TeV scales) and exotic W/Z decay modes at BR~$\sim 10^{-13}$.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} electroweak unification, 600-cell lattice, Weinberg angle, gauge emergence, Dipole Sea, SU(2) from binary icosahedral group, vacuum modes, Conscious Point Physics
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The electroweak force unifies electromagnetism and the weak nuclear force. In CPP, both forces emerge from the geometry of the 600-cell lattice. The photon and W/Z bosons are different organisational modes of the same Dipole Sea vacuum --- edge modes (linear, abelian) carry electromagnetism while face modes (circulatory, non-abelian) carry the weak force. The Weinberg angle that determines how these forces mix is set by the ratio of edges to faces on the 600-cell, corrected by the golden ratio.
+
+\bigskip
+\raggedright
+
 
 \tableofcontents
 \newpage
@@ -305,39 +325,11 @@ virtual neutral particle spontaneously assembled from the DP~Sea; the
 W$^\pm$ is a real massive particle that acquires its charge during a
 high-energy collision.
 
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{9}
+\bibliographystyle{plainnat}
+\bibliography{cpp_ew_series}
 
-\bibitem{cpp2040a}
-T.~L. Abshier and Grok,
-``Schr\"{o}dinger equation from phase-carrying DI-bit hopping,''
-CPP-2040a v3.1, Hyperphysics Institute (2026).
 
-\bibitem{cpp2040f}
-T.~L. Abshier and Grok,
-``QM series capstone: full synthesis,''
-CPP-2040f v3.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp5014}
-T.~L. Abshier and Grok,
-``Charge neutrality in baryons and emergent quark charges,''
-CPP-5014, Hyperphysics Institute (2026).
-
-\bibitem{pdg2026}
-Particle Data Group,
-``Review of Particle Physics 2026,''
-\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
-
-\bibitem{weinberg1967}
-S.~Weinberg,
-``A model of leptons,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{19}, 1264 (1967).
-
-\bibitem{glashow1961}
-S.~L. Glashow,
-``Partial symmetries of weak interactions,''
-\textit{Nucl.\ Phys.} \textbf{22}, 579 (1961).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}
