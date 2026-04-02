@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" font-family="Georgia, 'Times New Roman', serif">
+
+  <!-- Background -->
+  <rect width="720" height="380" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="360" y="32" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a2e">
+    Voronoi Cell: Unstressed vs. Stressed States
+  </text>
+
+  <!-- ===== LEFT PANEL: UNSTRESSED ===== -->
+  <g transform="translate(30, 55)">
+    <!-- Panel background -->
+    <rect width="300" height="290" fill="#eef4fb" rx="6" stroke="#b0c4de" stroke-width="1.2"/>
+
+    <!-- Panel label -->
+    <text x="150" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a3a5c">Unstressed (Baseline)</text>
+    <text x="150" y="42" text-anchor="middle" font-size="11" fill="#444" font-style="italic">ΔSSV = 0</text>
+
+    <!-- Hexagonal Voronoi cell outline (regular) -->
+    <polygon points="150,70 220,108 220,184 150,222 80,184 80,108"
+             fill="#d6e8f7" stroke="#2a6496" stroke-width="2"/>
+
+    <!-- PSR sphere (large, baseline) -->
+    <circle cx="150" cy="146" r="52" fill="rgba(41,128,185,0.18)" stroke="#2980b9" stroke-width="2" stroke-dasharray="6,3"/>
+
+    <!-- Dipole pair - small separation -->
+    <circle cx="136" cy="146" r="7" fill="#c0392b"/>
+    <circle cx="164" cy="146" r="7" fill="#2980b9"/>
+    <!-- Dipole arrow -->
+    <line x1="144" y1="146" x2="156" y2="146" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <!-- Dipole label -->
+    <text x="150" y="170" text-anchor="middle" font-size="10" fill="#555">dipole separation d₀</text>
+
+    <!-- PSR label -->
+    <line x1="150" y1="146" x2="196" y2="118" stroke="#2980b9" stroke-width="1.2" stroke-dasharray="4,2"/>
+    <text x="205" y="113" font-size="10" fill="#2980b9" font-weight="bold">PSR = l_P</text>
+
+    <!-- Free displacement arrows (4 directions) -->
+    <g stroke="#27ae60" stroke-width="1.5" fill="none" marker-end="url(#arrowGreen)">
+      <line x1="150" y1="146" x2="150" y2="100"/>
+      <line x1="150" y1="146" x2="196" y2="146"/>
+      <line x1="150" y1="146" x2="150" y2="192"/>
+      <line x1="150" y1="146" x2="104" y2="146"/>
+    </g>
+    <text x="150" y="240" text-anchor="middle" font-size="10" fill="#27ae60">Full displacement budget</text>
+    <text x="150" y="254" text-anchor="middle" font-size="10" fill="#27ae60">available to CP</text>
+
+    <!-- V0 label -->
+    <text x="150" y="274" text-anchor="middle" font-size="11" fill="#1a3a5c">Cell volume: V₀ ≈ 16.693 (unit circumradius)</text>
+  </g>
+
+  <!-- Arrow between panels -->
+  <g transform="translate(345, 180)">
+    <line x1="0" y1="0" x2="28" y2="0" stroke="#7f8c8d" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+    <text x="14" y="-10" text-anchor="middle" font-size="10" fill="#555">ΔSSV↑</text>
+    <text x="14" y="18" text-anchor="middle" font-size="10" fill="#555">stress</text>
+  </g>
+
+  <!-- ===== RIGHT PANEL: STRESSED ===== -->
+  <g transform="translate(390, 55)">
+    <!-- Panel background -->
+    <rect width="300" height="290" fill="#fdf0ee" rx="6" stroke="#c0a0a0" stroke-width="1.2"/>
+
+    <!-- Panel label -->
+    <text x="150" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#5c1a1a">Stressed (High ΔSSV)</text>
+    <text x="150" y="42" text-anchor="middle" font-size="11" fill="#444" font-style="italic">ΔSSV &gt; 0 → PSR_eff &lt; l_P</text>
+
+    <!-- Hexagonal Voronoi cell outline (slightly compressed) -->
+    <polygon points="150,70 220,108 220,184 150,222 80,184 80,108"
+             fill="#f5ddd8" stroke="#922b21" stroke-width="2"/>
+
+    <!-- Dipole Sea fill (stress shading) -->
+    <polygon points="150,70 220,108 220,184 150,222 80,184 80,108"
+             fill="rgba(192,57,43,0.10)"/>
+
+    <!-- PSR sphere (smaller) -->
+    <circle cx="150" cy="146" r="30" fill="rgba(192,57,43,0.18)" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
+
+    <!-- Dipole pair - larger separation (stress) -->
+    <circle cx="126" cy="146" r="7" fill="#c0392b"/>
+    <circle cx="174" cy="146" r="7" fill="#2980b9"/>
+    <!-- Dipole arrow -->
+    <line x1="134" y1="146" x2="166" y2="146" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <!-- Dipole label -->
+    <text x="150" y="170" text-anchor="middle" font-size="10" fill="#555">dipole separation d &gt; d₀</text>
+
+    <!-- PSR_eff label -->
+    <line x1="150" y1="146" x2="174" y2="122" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="4,2"/>
+    <text x="180" y="117" font-size="10" fill="#c0392b" font-weight="bold">PSR_eff &lt; l_P</text>
+
+    <!-- Reduced displacement arrows -->
+    <g stroke="#e67e22" stroke-width="1.5" fill="none" marker-end="url(#arrowOrange)">
+      <line x1="150" y1="146" x2="150" y2="120"/>
+      <line x1="150" y1="146" x2="176" y2="146"/>
+      <line x1="150" y1="146" x2="150" y2="172"/>
+      <line x1="150" y1="146" x2="124" y2="146"/>
+    </g>
+    <text x="150" y="240" text-anchor="middle" font-size="10" fill="#e67e22">Reduced displacement budget</text>
+    <text x="150" y="254" text-anchor="middle" font-size="10" fill="#e67e22">→ more Moments per cycle</text>
+
+    <!-- V_eff label -->
+    <text x="150" y="274" text-anchor="middle" font-size="11" fill="#5c1a1a">V_eff = V₀ / (1 + k·ΔSSV)</text>
+  </g>
+
+  <!-- Bottom formula -->
+  <text x="360" y="360" text-anchor="middle" font-size="12" fill="#1a1a2e">
+    PSR_eff = l_P / (1 + k·ΔSSV)    →    Time dilation: more Moments needed per oscillation cycle
+  </text>
+
+  <!-- Marker definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#555"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e67e22"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+</svg>
