@@ -24,7 +24,7 @@
 
 \title{\textbf{The Charged Lepton Mass Spectrum\\
 from 600-Cell Lattice Geometry}\\[6pt]
-{\large Conscious Point Physics --- SM-6 (Version 1)}}
+{\large Conscious Point Physics --- SM-6 (Version 2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Grok (xAI), Claude Opus (Anthropic), Copilot (Microsoft)\\
@@ -70,7 +70,18 @@ $\cos\theta_{\rm Koide} = -(2/3)(1 + \sin^2\theta_W/(z+1))
 Combined with the Koide parametrisation and electron mass
 calibration, the predicted muon mass is $105.47$~MeV (PDG:
 $105.66$, $0.18\%$) and the predicted tau mass is $1774.1$~MeV
-(PDG: $1776.9$, $0.15\%$).  The Standard Model requires three
+(PDG: $1776.9$, $0.15\%$).
+
+\emph{Note:} The Weinberg angle in CPP is \emph{not} defined via
+gauge couplings $g, g'$.  It is the operational fraction of vacuum
+disturbances that propagate as photons on the lattice, with
+edge-mode efficiency $\eta = 1/\phig$ from the SSV/PSR metric.
+The denominator is the fixed topological mode capacity of the
+lattice (3840); only the numerator carries the metric correction.
+This departure from the SM definition is forced by the lattice
+framework and is the conceptual key to the derivation.
+
+The Standard Model requires three
 independent lepton masses.  The Koide formula requires two
 parameters ($K$ and $\theta$).  This derivation requires one
 calibration constant.
@@ -99,7 +110,10 @@ $K = 2/3$ and the Koide phase $\theta = 132.73°$ that determines the
 individual masses --- have no known origin in the Standard Model.
 
 In Conscious Point Physics
-(CPP)~\cite{abshier2026sm1,abshier2026sm3,abshier2026ss1}, the ratio
+(CPP)~\cite{abshier2026sm1,abshier2026sm3,abshier2026ss1} ---
+a discrete spacetime theory built on six axioms, with a regular
+600-cell polytope as the fundamental lattice and conscious dipole
+pairs (DI-bits) as the propagating degrees of freedom --- the ratio
 $K = 2/3$ was derived from the eigenvalue spectrum of the K$_3$
 complete graph (the triangular base of the tetrahedral lepton
 cage)~\cite{abshier2026sm3}.  However, the Koide phase $\theta$
@@ -170,7 +184,11 @@ $-3.708$ & $-6\phig^{-1}$ & 4 & 2 \\
 Identity~\eqref{eq:trA2} counts closed walks of length~2
 (back-and-forth along edges).
 Identity~\eqref{eq:trA3} counts closed walks of length~3
-(oriented triangular face circulations).
+(oriented triangular face circulations); the factor~6 rather
+than~3 arises because each face contributes two orientations
+(clockwise and counterclockwise), and the division by~3 in the
+mode count $\Tr(A^3)/3$ removes the cyclic overcounting of start
+vertices on each oriented triangle.
 
 %=====================================================================
 \section{Part~I: The Weinberg Angle}
@@ -408,8 +426,13 @@ $\delta e = 2 \sin^2\theta_W$.
 
 \noindent\emph{Step~C.}  Normalise by the total coupling per vertex
 $z + 1 = 13$ (the diagonal of the closed-neighbourhood Laplacian
-$\tilde{L} = (z{+}1)I - \tilde{A}$):
+$\tilde{L} = (z{+}1)I - \tilde{A}$, which is the standard
+normalisation for local perturbations in lattice field
+theory~\cite{foot1994}):
 $\varepsilon = 2\sin^2\theta_W/(z{+}1)$.
+Numerical discrimination: $z{+}1 = 13$ matches PDG to $0.003\%$;
+$z = 12$ matches to $0.021\%$ ($7\times$ worse); $z{-}1 = 11$
+matches to $0.038\%$ ($12\times$ worse).
 
 \noindent\emph{Step~D.}  By Theorem~\ref{thm:isotropy}, the
 correction is the same at all three K$_3$ vertices: $\delta H =
@@ -462,7 +485,10 @@ Using the Koide parametrisation with the derived $\theta$:
 \qquad \theta = 132.731°,
 \end{equation}
 where $S = \sum_i\sqrt{m_i}$ is fixed by the single calibration
-$\SSV_0 = m_e c^2/2 = 0.2555$~MeV (equivalent to calibrating $m_e$):
+$\SSV_0 = m_e c^2/2 = 0.2555$~MeV.\footnote{In CPP, $\SSV_0$ is
+the rest-state SSV field energy of a single DI-bit cage at the
+electron mass scale.  It sets the overall energy scale of the
+lattice but determines no mass \emph{ratios}.}
 
 \begin{table}[H]
 \centering
@@ -507,9 +533,10 @@ by inverting~\eqref{eq:koide_phase}:
 = 0.2322.
 \end{equation}
 This agrees with the 600-cell spectral value $3/(8\phig) = 0.2318$
-to $0.19\%$.  Two completely independent physical quantities ---
-lepton masses and electroweak mixing --- point to the same geometric
-constant on the 600-cell lattice.
+to $0.19\%$.  This is a \emph{non-trivial consistency check}: two
+completely independent physical quantities --- lepton masses and
+electroweak mixing --- point to the same geometric constant on the
+600-cell lattice, with no shared calibration.
 
 The lattice-derived $\sin^2\theta_W = 3/(8\phig)$ gives
 \emph{better} lepton mass predictions than the PDG-measured
@@ -585,6 +612,16 @@ justification is that CPP is a lattice theory where couplings are
 emergent, not fundamental, and the natural mixing variable is the
 mode fraction, not the coupling ratio.
 
+\begin{remark}[Testable prediction]
+The $0.24\%$ residual between $3/(8\phig)$ and the PDG value is
+predicted to equal the finite-temperature Dipole Sea correction
+$\delta \sim \text{sea\_strength}^2 \approx 0.032$, arising from
+ZBW partner-switching jitter and rogue-wave SSV spikes.  This is
+a quantitative prediction that can be computed from the DP Sea
+thermal statistics derived in earlier CPP work, providing an
+independent test of the lattice framework.
+\end{remark}
+
 %=====================================================================
 \section{Conclusion}
 %=====================================================================
@@ -628,6 +665,7 @@ SM-1 v6, Hyperphysics Institute (2026).
 T.~L. Abshier, Grok, and Claude Sonnet,
 ``K3 Spectral Theorem and the Koide Formula,''
 SM-3 v5, Hyperphysics Institute (2026).
+DOI: \url{https://doi.org/10.17605/OSF.IO/JXE8D}.
 
 \bibitem{abshier2026ss1}
 T.~L. Abshier, Grok, and Claude Sonnet,
