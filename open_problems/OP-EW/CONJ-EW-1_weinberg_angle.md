@@ -72,7 +72,7 @@ This gives:
 
 **Physical mechanism (Grok, 1 April 2026):** The SSV_abs/SSV_net distinction developed in the DP Sea partner-switching analysis (Sonnet session, 30 March 2026) provides the precise mechanism. SSV_abs determines the local metric (PSR compression); SSV_net determines the displacement direction. Edge-hop propagation samples SSV_abs at the edge scale l = 1/φ. Face-circulation propagation samples SSV_abs at the circumradius scale R = 1. The 1/r² force law makes the ratio of effective couplings equal to the ratio of propagation lengths. The same physics that produces time dilation (SR-1), decoherence rates (QM-4), and the thermal mass boundary (PROP-14) also produces the φ correction to the Weinberg angle. No new mechanism is invoked.
 
-**What remains for theorem status:** Write the formal derivation starting from the hDP bit-flow master equation, showing that the propagation kernel separates into edge and face modes, and that the PSR formula applied to each mode's characteristic length reproduces the scale ratio 1/φ exactly.
+**What remains for theorem status (UPDATED):** Write the formal derivation showing why sin²θ_W = (1/φ) × Tr(A²)/(Tr(A²)+Tr(A³)/3). NOTE: The coupling-ratio approach (g_E/g_F = 1/φ plugged into sin²θ = g'²/(g²+g'²)) was shown to be algebraically INCOMPATIBLE with 3/(8φ) — it gives 0.186 instead of 0.232. The φ enters as a LINEAR prefactor, not through a squared coupling ratio. A different mathematical framework is needed. See development document Section 12 for analysis and five alternative directions.
 
 
 ### Layer 3: Thermal DP Sea Correction (PREDICTED)
@@ -161,8 +161,18 @@ where N_{K₃} = 3 (base vertices of tetrahedral cage) and z+1 = 13 (closed neig
 
 **1 April 2026 — Grok:** Supplied the φ mechanism: SSV_abs/PSR distinction makes edge and face modes sample different propagation scales (l_edge vs R_circumradius = 1/φ). Validated the edge→U(1), face→SU(2) interpretation. Confirmed thermal DP Sea correction for the residual. Registered CONJ-EW-1 with full mechanism.
 
-**Next steps:**
-1. Formal proof: derive the edge/face mode separation and scale ratio from the hDP bit-flow equations
+**Next steps (UPDATED 1 April 2026 — coupling-ratio approach eliminated):**
+
+CRITICAL FINDING: The approach of deriving g_E/g_F = 1/φ and plugging into sin²θ = g'²/(g²+g'²) does NOT produce 3/(8φ). It produces E/(E+Fφ²) = 0.186. The formula 3/(8φ) = (1/φ) × 3/8 has a DIFFERENT algebraic structure — a linear multiplicative suppression of the abelian mode fraction, not a squared coupling ratio. See development document Section 12.
+
+The correct question is: what physical operation on the 600-cell propagation kernel produces sin²θ_W = (1/φ) × Tr(A²)/(Tr(A²)+Tr(A³)/3)?
+
+Possible directions:
+1. Amplitude vs probability: if mode fraction uses amplitudes (not squared), amplitude ratio 1/√φ → probability suppression 1/φ
+2. Non-standard mixing formula specific to the CPP lattice
+3. Walk-length-dependent metric correction (different powers per walk length)
+4. Direct numerical computation of Tr(T²)/(Tr(T²)+Tr(T³)/3) for metric-corrected T on the 600-cell
+5. Operational definition: sin²θ_W = (propagation efficiency) × (mode fraction) where efficiency = l/R = 1/φ
 2. Compute the thermal correction from sea_strength to verify it gives ~0.24%
 3. Update all EW papers with corrected eigenvalue spectrum
 4. Send to Copilot for independent assessment

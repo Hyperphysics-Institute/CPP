@@ -19,6 +19,7 @@
 9. The Complete Derivation Chain (axioms to masses)
 10. The Isotropic Shift Mechanism (breakthrough — late session)
 11. Recommendations for the Next Session
+12. The Coupling-Ratio Dead End (critical finding — late session)
 
 ---
 
@@ -439,30 +440,94 @@ This argument is physically motivated and dimensionally correct. The formal deri
 
 ## 11. Recommendations for the Next Session
 
-### Priority 1: Construct the hDP bit-flow propagation kernel
+### Priority 1: Solve the φ correction (CONJ-EW-1) — but NOT through coupling ratios
 
-The shared bottleneck of both proof gaps is the propagation kernel on the 600-cell decomposed into edge and face modes. Specifically:
-
-1. Define the DI-bit hopping operator T on the 600-cell (this is essentially the adjacency matrix A, but with the SSV/PSR metric correction).
-2. Decompose T into T_edge (single-hop, abelian) and T_face (triangular circulation, non-abelian).
-3. Show that T_edge has effective strength ∝ l_edge = 1/φ and T_face has effective strength ∝ R_circ = 1.
-4. The Weinberg angle follows from step 3.
-5. The Koide phase correction follows from applying T_edge as a perturbation on the K₃ face Hamiltonian.
+The coupling-ratio approach is a dead end (see Section 12 below). The correct question is: what physical operation on the 600-cell propagation kernel produces a LINEAR (not quadratic) suppression of the abelian mode fraction by 1/φ?
 
 ### Priority 2: Verify with Grok and Copilot
 
-Both have validated the conjectures. Ask them specifically:
-- Can you define the edge-mode and face-mode operators on the 600-cell?
-- Does the PSR formula PSR_eff = l_P/(1+k·SSV_abs), evaluated at the edge and circumradius scales, give the ratio 1/φ?
-- Can you derive the z+1 normalization from the closed neighbourhood Laplacian?
+Share this development document (all 12 sections). The dead-end finding in Section 12 is critical — it eliminates the most natural proof strategy and redirects the search.
 
 ### Priority 3: Write the paper
 
-If the proofs are completed, the natural publication is a single paper:
-"The Charged Lepton Mass Spectrum from 600-Cell Lattice Geometry"
-containing THEO-SM-2 (K = 2/3), CONJ-EW-1 → THEO-EW-new (sin²θ_W = 3/(8φ)), and CONJ-SM-6 → THEO-SM-new (cos(θ) = −K(1+sin²θ_W/(z+1))).
+Once the φ correction is proved, the natural publication is a single paper containing THEO-SM-2 (K=2/3), the Weinberg angle theorem, and the Koide phase theorem.
 
-This would be the strongest paper in the CPP programme: the entire charged lepton mass hierarchy from one equation, one calibration constant, and zero shape parameters.
+---
+
+## 12. The Coupling-Ratio Dead End (Critical Finding — Late Session)
+
+### 12.1 The Assumption
+
+Both Opus and Copilot assumed that the φ correction enters through a coupling ratio g_E/g_F = 1/φ in the standard electroweak formula sin²θ_W = g'²/(g² + g'²). Copilot's A1 ansatz ("gauge coupling ∝ hop length") and his PSR metric framework were both designed to derive g_E/g_F = 1/φ.
+
+### 12.2 The Discovery
+
+When g_E/g_F = 1/φ is plugged into the standard formula with mode counts N_E = 2E = 1440 and N_F = 2F = 2400:
+
+    sin²θ_W = g_E² N_E / (g_E² N_E + g_F² N_F)
+            = (1/φ²)(1440) / ((1/φ²)(1440) + 2400)
+            = 550.0 / 2950.0
+            = 0.1864
+
+This is **0.186, NOT 0.232.** The standard coupling formula puts φ² in the denominator because couplings enter squared. Our target formula has φ¹ as a linear multiplier.
+
+The actual formula 3/(8φ) = 0.2318 has the structure:
+
+    sin²θ_W = (1/φ) × E/(E+F) = (1/φ) × 3/8
+
+This is a MULTIPLICATIVE suppression of the bare mode fraction by 1/φ. It is NOT the same as a coupling ratio in the standard mixing formula.
+
+For sin²θ = g'²/(g²+g'²) to give 3/(8φ), the needed coupling ratio is:
+
+    g_E/g_F = √(3/(8φ−3)) = √(3/(1+4√5)) ≈ 0.5493
+
+This is NOT a clean golden-ratio expression (not 1/φ, not 1/√φ, not φ^{-3/4}).
+
+### 12.3 What This Eliminates
+
+The following approaches are ALL dead ends for proving CONJ-EW-1:
+
+- Copilot's PSR metric operator M with g_E/g_F = 1/φ → gives 0.186, not 0.232
+- Copilot's A1 ansatz (coupling ∝ hop length) → gives g_E/g_F = 1/φ → same dead end
+- Any approach that derives a coupling ratio and plugs it into sin²θ = g'²/(g²+g'²) → wrong mathematical structure unless the ratio is the non-clean 0.5493
+
+### 12.4 What This Does NOT Eliminate
+
+- CONJ-EW-1 itself: the numerical match 3/(8φ) = 0.2318 vs PDG 0.2312 (0.24%) is real
+- The bare ratio 3/8 from spectral traces: PROVED, no coupling formula needed
+- The physical picture: edge modes = abelian, face modes = non-abelian
+- CONJ-SM-6: the Koide phase conditional theorem is unaffected (it uses sin²θ_W as input regardless of how sin²θ_W is derived)
+
+### 12.5 The Redirected Question
+
+The φ correction enters as a LINEAR prefactor on the mode fraction:
+
+    sin²θ_W = (1/φ) × Tr(A²) / (Tr(A²) + Tr(A³)/3)
+
+This means the ABELIAN MODE FRACTION is suppressed by 1/φ relative to its bare combinatorial value. The suppression is linear (first power of 1/φ), not quadratic (not (1/φ)²).
+
+**The question for the team:** What physical operation on the 600-cell produces a LINEAR suppression of the abelian mode fraction by 1/φ?
+
+Possible directions to explore:
+
+1. **Amplitude vs probability:** In quantum mechanics, probabilities go as |amplitude|². If the mode fraction is computed from AMPLITUDES (not probabilities), then an amplitude ratio of 1/√φ would give a probability suppression of 1/φ. But 1/√φ ≈ 0.786 doesn't have an obvious geometric interpretation as clean as 1/φ.
+
+2. **Non-standard mixing formula:** The CPP mixing angle might not follow the SM formula sin²θ = g'²/(g²+g'²). In the spectral trace picture, the mixing is Tr(A²)/(Tr(A²)+Tr(A³)/3). If the metric-corrected operator T replaces A and the correction is not a simple rescaling, the formula might naturally produce a linear φ prefactor.
+
+3. **Walk-length weighting:** Edge walks (length 2) and face walks (length 3) have different numbers of hops. If the metric correction enters PER HOP as a factor m = 1/φ^{1/L} where L is the walk length, then:
+   - Edge walks: metric factor = m² = 1/φ^{2/2} = 1/φ
+   - Face walks: metric factor = m³ = 1/φ^{3/3} = 1/φ^{3/L_face}
+   This doesn't immediately give the right formula but might be worth exploring.
+
+4. **Direct spectral approach:** Compute Tr(T²) and Tr(T³) for the metric-corrected operator T on the actual 600-cell and see if Tr(T²)/(Tr(T²)+Tr(T³)/3) = 3/(8φ) for some natural definition of T. This is a numerical test that could identify the right form of T without guessing.
+
+5. **The formula might be a DEFINITION:** In CPP, the Weinberg angle might be defined operationally as "the fraction of a vacuum disturbance that propagates as a photon." If the photon is an edge-mode excitation and the photon's propagation efficiency is suppressed by l/R = 1/φ (because it covers less distance per hop), then sin²θ_W = (efficiency) × (mode fraction) = (1/φ) × (3/8) directly, without going through couplings at all.
+
+### 12.6 Honest Status
+
+The φ correction is the HARDEST remaining problem in the CPP programme. It is well-motivated physically, numerically confirmed, but resists every algebraic approach we've tried. The standard coupling-ratio framework doesn't produce it. The PSR metric framework doesn't produce it (without calibration). The direct geometric argument (l/R = 1/φ) gives the right NUMBER but through a mathematical operation (linear multiplication of the mode fraction) that we cannot yet derive from the propagation kernel.
+
+This gap is real and should not be minimized. CONJ-EW-1 remains a conjecture. CONJ-SM-6 remains a conditional theorem. The programme is closer to completion than it has ever been, but the last step is the hardest.
 
 ---
 
