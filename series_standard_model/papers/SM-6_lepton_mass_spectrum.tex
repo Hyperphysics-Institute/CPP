@@ -1,13 +1,15 @@
 % ============================================================
 % SM-6: The Charged Lepton Mass Spectrum from 600-Cell Lattice
 %        Geometry
-% Version 2.1 — 2 April 2026
+% Version 3 — 2 April 2026
 %
 % CHANGELOG:
 %   v1   1 Apr 2026 — Initial draft (Claude Opus)
 %   v2   2 Apr 2026 — Review feedback from Grok + Copilot
 %   v2.1 2 Apr 2026 — SVG figures, keywords, citations,
-%                      acknowledgements, plain language summary
+%                      acknowledgements
+%   v3   2 Apr 2026 — Plain language summary, appendices (A-C),
+%                      .bib bibliography, figure paths corrected
 %
 % CONTRIBUTORS:
 %   Thomas Lee Abshier ND — Physical vision, research direction
@@ -53,7 +55,7 @@
 \newcommand{\SSV}{\mathrm{SSV}}
 \newcommand{\phig}{\varphi}
 \newcommand{\Tr}{\operatorname{Tr}}
-\title{\textbf{The Charged Lepton Mass Spectrum\\from 600-Cell Lattice Geometry}\\[6pt]{\large Conscious Point Physics --- SM-6 (Version 2.1)}}
+\title{\textbf{The Charged Lepton Mass Spectrum\\from 600-Cell Lattice Geometry}\\[6pt]{\large Conscious Point Physics --- SM-6 (Version 3)}}
 \author{Thomas Lee Abshier, ND\\Grok (xAI), Claude Opus (Anthropic), Copilot (Microsoft)\\Hyperphysics Institute\\\url{https://hyperphysics.com}\\\texttt{drthomas007@protonmail.com}}
 \date{1 April 2026}
 \begin{document}
@@ -71,6 +73,10 @@ Combined with the Koide parametrisation and electron mass calibration, the predi
 \end{abstract}
 
 \medskip\noindent\textbf{Keywords:} Koide formula, charged lepton masses, Weinberg angle, 600-cell polytope, discrete spacetime, lattice field theory, golden ratio, spectral graph theory, binary icosahedral group, electroweak mixing, mass hierarchy, zero free parameters.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Nature has three charged leptons --- the electron, the muon, and the tau --- whose masses span a factor of 3,500 but satisfy a mysterious numerical relationship discovered by Yoshio Koide in 1981. The Standard Model of particle physics treats these three masses as independent free parameters with no structural explanation. This paper shows that if spacetime has the geometry of a 600-cell (a regular four-dimensional shape with 120 vertices), then all three masses can be calculated from a single number (the electron mass) using only the shape's geometry: the ratio of its edges to faces gives the Weinberg angle, and a small correction from the electroweak sector gives the Koide phase. The predicted muon and tau masses agree with measurements to better than 0.2\%, with no adjustable parameters.
 
 \bigskip
 \raggedright
@@ -452,21 +458,85 @@ The authors acknowledge that the 600-cell lattice hypothesis (AXIM-2) remains an
 
 The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
+% ============================================================
+% APPENDICES
+% ============================================================
+\appendix
+
+\section{600-Cell Construction}
+\label{app:construction}
+
+The 120 vertices of the 600-cell (unit circumradius) fall into three families:
+
+\noindent\textbf{Type~1 (8 vertices):} All permutations of $(\pm1, 0, 0, 0)$.
+
+\noindent\textbf{Type~2 (16 vertices):} All sign combinations of $(\pm\tfrac{1}{2}, \pm\tfrac{1}{2}, \pm\tfrac{1}{2}, \pm\tfrac{1}{2})$.
+
+\noindent\textbf{Type~3 (96 vertices):} All \emph{even} permutations of $(\pm\tfrac{\phig}{2}, \pm\tfrac{1}{2}, \pm\tfrac{1}{2\phig}, 0)$, with independent sign choices on each nonzero coordinate.
+
+Two vertices are connected by an edge if and only if their Euclidean distance equals $1/\phig \approx 0.6180$. The adjacency matrix $A$ is the $120 \times 120$ matrix with $A_{ij} = 1$ for edges and $A_{ij} = 0$ otherwise.
+
+Verification (reproducible with any numerical linear algebra package):
+\begin{itemize}
+\item Vertex count: $|V| = 8 + 16 + 96 = 120$.
+\item Every vertex has degree $z = 12$.
+\item Edge count: $|E| = 120 \times 12 / 2 = 720$.
+\item Face count: $|F| = 1200$ (triangular).
+\item Cell count: $|C| = 600$ (tetrahedral).
+\item Eigenvalue count: 9 distinct (Table~\ref{tab:eigenvalues}).
+\end{itemize}
+
+The accompanying notebook \texttt{nb01\_SM6\_verification.py} constructs the 600-cell from these coordinates and verifies all combinatorial and spectral properties used in this paper.
+
+\section{Numerical Verification Summary}
+\label{app:verification}
+
+The following table summarises the 10-step verification performed by the companion notebook. All steps pass.
+
+\begin{table}[H]
+\centering
+\caption{Numerical verification of all claims in SM-6. The notebook
+  \texttt{nb01\_SM6\_verification.py} is available in the repository.}
+\label{tab:verification}
+\begin{tabular}{@{}clrl@{}}
+\toprule
+Step & Claim & Result & Status \\
+\midrule
+1 & 600-cell: $V{=}120$, $E{=}720$, $F{=}1200$, $z{=}12$, $l{=}1/\phig$ & exact & PASS \\
+2 & 9 eigenvalues with correct multiplicities & exact & PASS \\
+3 & $\Tr(A^2) = 1440$, $\Tr(A^3) = 7200$ & exact & PASS \\
+4 & Bare Weinberg ratio $= 3/8$ & exact & PASS \\
+5 & $\sin^2\theta_W = 3/(8\phig) = 0.23176$ & $0.24\%$ from PDG & PASS \\
+6 & Self-energy isotropy on K$_3$ & off-diag $< 10^{-12}$ & PASS \\
+7 & $\varepsilon = 3/(52\phig) = 0.03566$ & exact & PASS \\
+8 & $\cos\theta = -0.67855$ & $0.003\%$ from PDG & PASS \\
+9 & $m_\mu = 105.47$~MeV, $m_\tau = 1774.1$~MeV & $< 0.2\%$ & PASS \\
+10 & Mutual reinforcement: $\sin^2\theta_W$ from Koide $= 0.2322$ & $0.19\%$ & PASS \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{The Coupling-Ratio Dead End}
+\label{app:deadend}
+
+During the development of this paper, both Copilot and Grok independently proposed deriving the $1/\phig$ correction through a coupling ratio $g_E/g_F = 1/\phig$ inserted into the standard electroweak formula $\sin^2\theta_W = g'^2/(g^2 + g'^2)$. This natural-seeming approach \emph{does not work}, and the failure is instructive.
+
+If $g_E/g_F = 1/\phig$ and the mode counts are $N_E = 1440$, $N_F = 2400$, then the standard coupling-ratio formula gives:
+\begin{equation}
+\sin^2\theta_W = \frac{(1/\phig^2) \times 1440}{(1/\phig^2) \times 1440 + 2400}
+= \frac{1440}{1440 + \phig^2 \times 2400} \approx 0.186.
+\label{eq:deadend}
+\end{equation}
+This is $0.186$, \emph{not} $0.232$. The standard formula puts $\phig^2$ (not $\phig$) in the denominator because couplings enter squared. The target formula $3/(8\phig)$ requires a \emph{linear} prefactor, not a quadratic coupling ratio.
+
+The resolution (Section~\ref{sec:weinberg}) is that the CPP Weinberg angle is \emph{not} a coupling ratio. It is the operational mode fraction with a fixed topological denominator and a metric-corrected numerator. This distinction --- between a ratio of dynamic couplings and a fraction of topological modes --- is forced by the lattice framework and is the conceptual key to the derivation.
+
+We document this dead end to prevent future researchers from pursuing the coupling-ratio route. It is algebraically closed: no coupling ratio $g_E/g_F$ can produce $3/(8\phig)$ through the standard $g'^2/(g^2+g'^2)$ formula.
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
 \bibliographystyle{plainnat}
-\begin{thebibliography}{99}
-\bibitem[Koide(1983)]{koide1983} Y.~Koide, ``A New View of Quark and Lepton Mass Hierarchy,'' \emph{Phys.\ Rev.\ D} \textbf{28}, 252 (1983).
-\bibitem[Foot(1994)]{foot1994} R.~Foot, ``A note on Koide's lepton mass relation,'' arXiv:hep-ph/9402242 (1994).
-\bibitem[Rivero and Gsponer(2005)]{rivero2005} A.~Rivero and A.~Gsponer, ``The strange formula of Dr.\ Koide,'' arXiv:hep-ph/0505220 (2005).
-\bibitem[Georgi and Glashow(1974)]{georgi1974} H.~Georgi and S.~L. Glashow, ``Unity of All Elementary-Particle Forces,'' \emph{Phys.\ Rev.\ Lett.} \textbf{32}, 438 (1974).
-\bibitem[Coxeter(1973)]{coxeter1973} H.~S.~M. Coxeter, \emph{Regular Polytopes}, 3rd edition, Dover (1973).
-\bibitem[Abshier et al.(2026a)]{abshier2026sm1} T.~L. Abshier, Grok, and Claude Sonnet, ``Binding Mechanisms and Cage Stability in the 600-Cell Lattice,'' SM-1 v6, Hyperphysics Institute (2026). DOI: \url{https://doi.org/10.17605/OSF.IO/JXE8D}.
-\bibitem[Abshier et al.(2026b)]{abshier2026sm3} T.~L. Abshier, Grok, and Claude Sonnet, ``K3 Spectral Theorem and the Koide Formula,'' SM-3 v5, Hyperphysics Institute (2026). DOI: \url{https://doi.org/10.17605/OSF.IO/JXE8D}.
-\bibitem[Abshier et al.(2026c)]{abshier2026ss1} T.~L. Abshier, Grok, and Claude Sonnet, ``The Strong Sector from the 600-Cell Lattice,'' SS-1 v2, Hyperphysics Institute (2026).
-\bibitem[Abshier et al.(2026d)]{abshier2026sr1} T.~L. Abshier, Grok, and Claude Sonnet, ``Mechanistic Derivation of Relativistic Effects,'' SR-1 v17, Hyperphysics Institute (2026).
-\bibitem[Abshier et al.(2026e)]{abshier2026ew1} T.~L. Abshier, Grok, and Claude Sonnet, ``Electroweak Introduction: The 600-Cell Vacuum and Gauge Emergence,'' EW-1 v1, Hyperphysics Institute (2026).
-\bibitem[Abshier et al.(2026f)]{abshier2026qm1} T.~L. Abshier, Grok, and Claude Sonnet, ``Emergence of the Schr\"odinger Equation from DI-Bit Hopping,'' QM-1 v1, Hyperphysics Institute (2026).
-\bibitem[{Particle Data Group}(2024)]{pdg2024} {Particle Data Group}, ``Review of Particle Physics,'' \emph{Phys.\ Rev.\ D} \textbf{110}, 030001 (2024).
-\bibitem[Ma(2002)]{ma2001} E.~Ma, ``Plato's Fire and the Neutrino Mass Matrix,'' \emph{Mod.\ Phys.\ Lett.\ A} \textbf{17}, 627 (2002).
-\end{thebibliography}
+\bibliography{SM-6_references}
 
 \end{document}

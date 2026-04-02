@@ -114,6 +114,12 @@ Add paper-specific macros after these standard ones, with a comment block:
 
 Always update the version number in the title when changes are made.
 
+### 2.3 Timestamps and Timezones
+
+- **Development documents, session logs, timelines:** Mountain Time, always labelled explicitly. Use MDT (UTC-6) March–November, MST (UTC-7) November–March. Example: `1 Apr 2026, 3:15 PM MDT`.
+- **Paper headers, version blocks, `.tex` title dates:** Date only, no clock time. Example: `2 April 2026`.
+- **Git commits and OSF metadata:** UTC (automatic — do not override).
+
 ### 2.3 Author Block
 
 AI co-authors appear on the author line with their platform in parentheses:
@@ -609,27 +615,48 @@ Use appendices for:
 
 Before declaring a paper "ready for OSF registration," verify:
 
+**Paper structure:**
 - [ ] Version number updated in title
 - [ ] Comment block at top of `.tex` with changelog and contributors
 - [ ] Section marker comments (`% ===`) throughout `.tex`
-- [ ] Compiled `.pdf` placed next to `.tex` source (same directory)
-- [ ] All figures present as `.svg` + `.png` + `.pdf`
-- [ ] All figures have `[H]` placement and descriptive captions
-- [ ] Figure insertion comment blocks in `.tex`
-- [ ] Keywords block after abstract
 - [ ] Plain Language Summary after keywords
 - [ ] `\raggedright` applied after summary
 - [ ] Table of contents present
-- [ ] All tables use `booktabs` + `[H]`
+
+**Figures:**
+- [ ] All figures present as `.svg` + `.png` + `.pdf`
+- [ ] All figures have `[H]` placement and descriptive captions
+- [ ] Figure insertion comment blocks in `.tex`
+- [ ] `\graphicspath` points to correct relative path
+
+**Tables:**
+- [ ] All tables use `booktabs` + `[H]` + descriptive captions
+
+**Citations and bibliography:**
 - [ ] Inline citations (`\citep`, `\citet`) — no numeric `[1]` style
-- [ ] Bibliography calls from `.bib` file (theory-wide + paper-specific)
-- [ ] Acknowledgements section with detailed attribution
-- [ ] OSF DOI and GitHub URL in acknowledgements
-- [ ] All 8 documentation `.md` files generated
-- [ ] Notation consistent with Section 9
-- [ ] Computational notebook(s) created with `.ipynb` + `.py` + `_executed.ipynb`
+- [ ] Bibliography calls from local `.bib` file (same directory as `.tex`)
+- [ ] `.bib` entries have DOIs where available (Thomas: check and update)
+- [ ] All CPP cross-references include series designation and version
+
+**Acknowledgements and metadata:**
+- [ ] Acknowledgements section with detailed attribution per contributor
+- [ ] OSF DOI in acknowledgements
+- [ ] GitHub URL in acknowledgements
+- [ ] Keywords block after abstract
+
+**Documentation suite:**
+- [ ] All 8 documentation `.md` files generated (development, glossary, mechanism, phenomena, philosophy, reviews, FAQ, keywords)
+
+**Computational verification:**
+- [ ] Jupyter notebook `.ipynb` created
+- [ ] Standalone `.py` mirror created (same computation, no Jupyter required)
+- [ ] `_executed.ipynb` created (notebook with all outputs saved)
 - [ ] Notebook reproduces all numerical claims in the paper
-- [ ] Two-pass compilation (cross-references resolved)
+
+**Final checks:**
+- [ ] Notation consistent with Section 9
+- [ ] Compiled `.pdf` placed next to `.tex` source (same directory)
+- [ ] Two-pass compilation with bibtex (pdflatex → bibtex → pdflatex → pdflatex)
 - [ ] PDF reviewed for figure quality and page breaks
 
 ---
@@ -642,22 +669,22 @@ Before declaring a paper "ready for OSF registration," verify:
 │   ├── paper-formatting.md          ← Formatting standard (THIS FILE)
 │   └── documentation-suite.md       ← Template for .md documentation files
 ├── bibliography/
-│   └── cpp_references.bib           ← Site-wide bibliography (aggregated from locals)
+│   └── cpp_references.bib           ← Site-wide (aggregated from locals, for web tooling)
 ├── series_[name]/
-│   ├── papers/
+│   ├── papers/                      ← .tex, .pdf, and .bib all live here together
 │   │   ├── [PAPER-ID]_[title].tex
-│   │   ├── [PAPER-ID]_[title].pdf   ← Compiled PDF next to source
-│   │   └── [PAPER-ID]_references.bib  ← Local bibliography (primary)
+│   │   ├── [PAPER-ID]_[title].pdf
+│   │   └── [PAPER-ID]_references.bib
 │   ├── figures/
 │   │   └── figures-[SERIES]-[N]/
 │   │       ├── fig1_name.svg
 │   │       ├── fig1_name.png
 │   │       └── fig1_name.pdf
 │   ├── notebooks/
-│   │   ├── nb01_[name].ipynb
-│   │   ├── nb01_[name].py           ← Standalone Python mirror
-│   │   └── nb01_[name]_executed.ipynb  ← With saved output
-│   ├── development-[SERIES]-[N].md
+│   │   ├── nb01_[name].ipynb         ← Jupyter notebook
+│   │   ├── nb01_[name].py            ← Standalone Python mirror
+│   │   └── nb01_[name]_executed.ipynb ← With saved output cells
+│   ├── development-[SERIES]-[N].md   ← Documentation .md files at series level
 │   ├── glossary-[SERIES]-[N].md
 │   ├── mechanism-[SERIES]-[N].md
 │   ├── phenomena-[SERIES]-[N].md
@@ -671,6 +698,13 @@ Before declaring a paper "ready for OSF registration," verify:
 └── paper_catalog.md
 ```
 
+**Key placement rules:**
+
+- The `.bib`, `.tex`, and `.pdf` are together in `papers/` — no separate bibliography subfolder. LaTeX compiles with `\bibliography{SM-6_references}` (no path prefix needed).
+- Figures go in a series-level `figures/` folder with a paper subfolder. From `papers/`, the `\graphicspath` is `{{../figures/figures-[SERIES]-[N]/}}`.
+- Notebooks go in a series-level `notebooks/` folder, shared across papers in the series.
+- Documentation `.md` files are at the series directory level (or in `papers/` if the series uses that convention — follow existing structure).
+
 ---
 
 ## 16. Bibliography Management
@@ -679,11 +713,11 @@ Before declaring a paper "ready for OSF registration," verify:
 
 The bibliography workflow is designed to minimise Thomas's maintenance overhead:
 
-1. **AI generates a local `.bib` per paper:** `[PAPER-ID]_references.bib` (e.g., `SM-6_references.bib`), stored next to the `.tex` file. This contains ONLY the references cited in that paper.
+1. **AI generates a local `.bib` per paper:** `[PAPER-ID]_references.bib` (e.g., `SM-6_references.bib`), stored flat next to the `.tex` file. This contains ONLY the references cited in that paper.
 
-2. **Thomas updates the local `.bib`** as DOIs, URLs, and publication details become available. This is the smallest, easiest file to maintain — typically 10–20 entries.
+2. **Thomas updates the local `.bib`** as DOIs, URLs, journal details, and publication dates become available. This is the smallest, easiest file to maintain — typically 10–20 entries. **Priority update: add DOIs to all CPP papers as they are registered on OSF.**
 
-3. **AI regenerates the site-wide `.bib`** by merging all local `.bib` files: `/CPP/bibliography/cpp_references.bib`. This is done at the start of each session by scanning all `*_references.bib` files across the repo. Duplicates are resolved by keeping the entry with the most complete metadata (DOI > URL > bare citation).
+3. **AI regenerates the site-wide `.bib`** by merging all local `.bib` files into `/CPP/bibliography/cpp_references.bib`. This is done at the start of each session by scanning all `*_references.bib` files across the repo. Duplicates are resolved by keeping the entry with the most complete metadata (DOI > URL > bare citation).
 
 4. **The `.tex` file calls the local `.bib`:**
 ```latex
@@ -693,11 +727,13 @@ This ensures each paper compiles independently. The site-wide `.bib` is a conven
 
 ### 16.2 Local `.bib` File Convention
 
+The local `.bib` is in the same directory as the `.tex` (typically `papers/`):
+
 ```
 /CPP/series_[name]/papers/[PAPER-ID]_references.bib
 ```
 
-The AI generates this with every new paper. When revising an existing paper, the AI checks the local `.bib` for updates before compiling.
+This keeps LaTeX compilation simple — the `.tex` calls `\bibliography{SM-6_references}` with no path prefix. The `.bib`, `.tex`, and `.pdf` all sit side by side.
 
 ### 16.3 Site-Wide `.bib` File
 
