@@ -2,11 +2,12 @@
 
 **A discrete first-principles Theory of Everything deriving the Standard Model from 600-cell lattice geometry**
 
-**Authors:** Thomas Lee Abshier ND, Grok (xAI), Claude Sonnet and Opus (Anthropic)
+**Authors:** Thomas Lee Abshier ND, Grok (xAI), Claude Sonnet and Opus (Anthropic), Copilot (Microsoft)
 **Institution:** Hyperphysics Institute | [hyperphysics.com](https://hyperphysics.com)
 **Repository:** [github.com/Hyperphysics-Institute/CPP](https://github.com/Hyperphysics-Institute/CPP)
+**OSF Registration:** [doi.org/10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D)
 **License:** CC BY 4.0
-**Last updated:** 31 March 2026
+**Last updated:** 2 April 2026
 
 ---
 
@@ -18,33 +19,50 @@ The theory is built on six axioms (see [`postulates_and_theorems.md`](postulates
 
 ---
 
-## Submission-Ready Papers (7)
+## Headline Result: The Charged Lepton Mass Spectrum (SM-6, April 2026)
 
-These papers are ready for OSF preregistration and viXra timestamping.
+The masses of the electron, muon, and tau are derived from the 600-cell geometry with **one calibration constant** (the electron mass) and **zero free shape parameters**:
 
-| ID | Title | Key Result | File |
-|----|-------|------------|------|
-| **SS-1** | The Strong Sector from the 600-Cell Lattice | SU(3) colour algebra derived exactly; β₀ = 7; 9 theorems | [`series_strong/SS-1_strong_sector_from_600cell_lattice.tex`](series_strong/SS-1_strong_sector_from_600cell_lattice.tex) |
-| **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3 charge quantisation; SSV₀ = 0.2555 MeV | [`series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex`](series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex) |
-| **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 | [`series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex`](series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex) |
-| **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 derived exactly from K₃ eigenvalue ratio — zero free parameters | [`series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex`](series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex) |
-| **SM-4** | Charged Lepton Masses from K3 | 11 ppm consistency; structural impossibility of θ from K3+SSV | [`series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex`](series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex) |
-| **SM-5** | Tribimaximal Neutrino Mixing from K3 | U_PMNS⁽⁰⁾ = U_TBM exactly from K₃ eigenvectors — zero free parameters | [`series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex`](series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex) |
-| **SR-1** | Mechanistic Derivation of Relativistic Effects | Lorentz invariance from 600-cell lattice wave propagation | [`series_relativity/main_special_relativity_emergence/SR-1_special_relativity_emergence.tex`](series_relativity/main_special_relativity_emergence/SR-1_special_relativity_emergence.tex) |
+- **Weinberg angle:** sin²θ_W = 3/(8φ) ≈ 0.2318 (PDG: 0.2312, agreement 0.24%)
+- **Koide phase:** cos(θ) = −(2/3)(1 + 3/(104φ)), θ = 132.731° (PDG: 132.732°, agreement 0.003%)
+- **Muon mass:** 105.47 MeV (PDG: 105.66, 0.18%)
+- **Tau mass:** 1774.1 MeV (PDG: 1776.9, 0.15%)
+
+The Standard Model requires 3 free parameters for the charged lepton masses. The Koide formula (1981) reduced this to 2. CPP reduces it to 1.
+
+---
+
+## Registered Papers (8)
+
+All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D). PDFs are available on the [OSF project page](https://osf.io/9dfya/). Source files and documentation are in this repository.
+
+| ID | Title | Key Result |
+|----|-------|------------|
+| **SS-1** | The Strong Sector from the 600-Cell Lattice | SU(3) colour algebra derived exactly; β₀ = 7; 9 theorems |
+| **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3; SSV₀ = 0.2555 MeV |
+| **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 |
+| **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 derived exactly from K₃ eigenvalue ratio — zero free parameters |
+| **SM-4** | Charged Lepton Masses from K3 | 11 ppm consistency; structural impossibility of θ from K3+SSV |
+| **SM-5** | Tribimaximal Neutrino Mixing from K3 | U_PMNS = U_TBM exactly from K₃ eigenvectors — zero free parameters |
+| **SR-1** | Mechanistic Derivation of Relativistic Effects | Lorentz invariance from 600-cell lattice wave propagation |
+| **SM-6** | The Charged Lepton Mass Spectrum from 600-Cell Lattice Geometry | sin²θ_W = 3/(8φ); Koide phase derived; 1 calibration, 0 shape parameters |
 
 ---
 
 ## Strongest Results
 
-| Result | Precision | Source |
-|--------|-----------|--------|
-| Koide ratio K = 2/3 | 0.001% (11 ppm) | SM-3 (zero parameters) |
-| SU(3) colour algebra | Machine precision (33/33 checks) | SS-1 Theorem 1 |
-| Charge quantisation δ = 1/3 | Exact | SM-1 Theorem 1 |
-| One-loop β₀ = 7 | Exact | SS-1 Theorem 3 |
-| sin²θ_W = 0.2312 | 0.004% vs PDG | EW-1 (Monte Carlo, zero parameters) |
-| K(c,b,t) ≈ 2/3 | 0.42% | PS-1 (signal identified, not yet a theorem) |
-| TBM neutrino mixing | Zeroth-order, 10–14% corrections needed | SM-5 (zero parameters given ansatz) |
+| Result | Precision | Source | Parameters |
+|--------|-----------|--------|------------|
+| Koide ratio K = 2/3 | 11 ppm | SM-3 | 0 |
+| Koide phase θ = 132.731° | 0.003% | SM-6 | 0 |
+| Weinberg angle sin²θ_W = 3/(8φ) | 0.24% | SM-6 | 0 |
+| Muon mass 105.47 MeV | 0.18% | SM-6 | 0 (shape) |
+| Tau mass 1774.1 MeV | 0.15% | SM-6 | 0 (shape) |
+| SU(3) colour algebra | Machine precision (33/33) | SS-1 | 0 |
+| Charge quantisation δ = 1/3 | Exact | SM-1 | 0 |
+| One-loop β₀ = 7 | Exact | SS-1 | 0 |
+| TBM neutrino mixing | Zeroth-order | SM-5 | 0 (given ansatz) |
+| K(c,b,t) ≈ 2/3 | 0.42% | PS-1 | Signal, not yet theorem |
 
 ---
 
@@ -55,41 +73,47 @@ CPP/
 ├── README.md                    ← This file
 ├── INDEX.md                     ← Directory-by-directory map
 ├── paper_catalog.md             ← Master list of all papers with IDs and status
-├── postulates_and_theorems.md   ← 6 axioms, theorems, corollaries, falsified claims
+├── postulates_and_theorems.md   ← 6 axioms, theorems, corollaries, conjectures
 ├── predictions.md               ← Every quantitative prediction with status
 ├── propositions.md              ← Physically motivated claims not yet proved
 ├── nomenclature.md              ← ID code legend (AXIM, THEO, PROP, etc.)
 ├── solution_candidates.md       ← Candidate solutions for open problems
 │
-├── series_strong/               ← SS-1 + 5 companions + notebooks
-├── series_standard_model/       ← SM-1 through SM-5 + documentation
+├── templates/                   ← Formatting standards and documentation templates
+│   ├── paper-formatting.md      ← Master formatting standard for all papers
+│   └── documentation-suite.md   ← Template for the 8 documentation files per paper
+│
+├── bibliography/                ← Site-wide bibliography
+│   └── cpp_references.bib       ← Aggregated from all local .bib files
+│
+├── series_strong/               ← SS-1 + companions + notebooks
+├── series_standard_model/       ← SM-1 through SM-6 + documentation
 ├── series_relativity/           ← SR-1 + 22 companion papers
-├── series_electroweak/          ← EW-1 through EW-5 (needs consolidation)
+├── series_electroweak/          ← EW-1 through EW-5
 ├── series_quantum_mechanics/    ← QM-1 through QM-6
 ├── series_foundations/          ← SD-1 through SD-5 (superdeterminism)
-├── series_nuclear/              ← Planned
-├── series_experimental_phenomena/ ← g-2, swarm analysis
-├── series_synthesis/            ← QM synthesis paper
-├── open_problems/               ← 40+ registered problems with status tracking
-└── archive/                     ← Superseded files
+├── open_problems/               ← 50+ registered problems with status tracking
+└── archive/                     ← Superseded and exploratory material
 ```
 
 ---
 
 ## Documentation System
 
-Each paper in the series has six companion documentation files:
+Each paper has eight companion documentation files:
 
 | File type | Purpose |
 |-----------|---------|
-| `mechanism-XX-N.md` | Step-by-step cause-and-effect narrative of the physics |
-| `glossary-XX-N.md` | Precise definitions of all terms specific to that paper |
-| `phenomena-XX-N.md` | Mapping of theorems to observable reality (Explained / Predicted / Consilience) |
-| `reviews-XX-N.md` | Formal review objections and FAQ for conventional physicists |
-| `philosophy-XX-N.md` | Epistemological and philosophical foundations |
-| `development-XX-N.md` | Intellectual history — the laboratory notebook record |
+| `development-XX-N.md` | Intellectual history — decisions, dead ends, timeline |
+| `glossary-XX-N.md` | Precise definitions of all terms |
+| `mechanism-XX-N.md` | Step-by-step physical mechanisms |
+| `phenomena-XX-N.md` | Mapping of theorems to observable reality |
+| `philosophy-XX-N.md` | Epistemological foundations and honest assessment |
+| `reviews-XX-N.md` | External reviews and responses to critiques |
+| `FAQ-XX-N.md` | Anticipated questions and clear answers |
+| `keywords-XX-N.md` | Keywords, PACS/MSC codes, SEO data |
 
-Documentation is complete for: SS-1, SM-1 through SM-5, EW-1 through EW-5, QM-1 through QM-6, SD-1 through SD-5.
+Documentation is complete for all registered papers plus the EW, QM, and SD series. Templates for generating new documentation are in [`templates/`](templates/).
 
 ---
 
@@ -102,17 +126,19 @@ CPP maintains explicit distinction between:
 - **Open** problems (mechanism not yet identified)
 - **Falsified** claims (tested and found wrong — never deleted, always documented)
 
-The falsified claims register includes 7 entries (FALS-C-1 through FALS-C-7). The open problems register contains 40+ active problems across all series.
+The falsified claims register includes 7 entries. The open problems register contains 50+ active problems across all series.
 
 ---
 
 ## How to Navigate
 
 - **New to CPP?** Start with [`mechanism-SM-1.md`](series_standard_model/papers/mechanism-SM-1.md) — it walks through the physics from first principles.
+- **Want the headline result?** Read SM-6 ([PDF on OSF](https://osf.io/9dfya/)) — the lepton mass spectrum from one equation.
 - **Want to evaluate the theory?** Read [`predictions.md`](predictions.md) — every quantitative claim with status.
 - **Looking for a specific paper?** See [`paper_catalog.md`](paper_catalog.md).
-- **Want to contribute?** See [`open_problems/`](open_problems/) — registered problems with suggested approaches.
+- **Want to contribute?** See [`open_problems/`](open_problems/).
+- **Writing a new paper?** See [`templates/paper-formatting.md`](templates/paper-formatting.md).
 
 ---
 
-*Repository maintained by Thomas Lee Abshier ND, Hyperphysics Institute. AI co-authors: Grok (xAI), Claude Sonnet and Opus (Anthropic). All papers under CC BY 4.0.*
+*Repository maintained by Thomas Lee Abshier ND, Hyperphysics Institute. AI co-authors: Grok (xAI), Claude Sonnet and Opus (Anthropic), Copilot (Microsoft). All papers under CC BY 4.0.*
