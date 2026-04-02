@@ -429,7 +429,8 @@ Every paper in the CPP series should have the following documentation files:
 | `mechanism-[SERIES]-[N].md` | Physical mechanisms with explanations |
 | `phenomena-[SERIES]-[N].md` | Phenomena explained and predicted |
 | `philosophy-[SERIES]-[N].md` | Type classification, conceptual points |
-| `reviews-[SERIES]-[N].md` | Reviews received, responses to critiques |
+| `reviews-[SERIES]-[N].md` | External reviews received, critiques addressed (historical record) |
+| `FAQ-[SERIES]-[N].md` | Anticipated questions and clear answers (living document) |
 | `keywords-[SERIES]-[N].md` | Keywords, PACS/MSC codes, elevator pitch |
 
 ### 10.2 Keywords File Format
@@ -624,7 +625,7 @@ Before declaring a paper "ready for OSF registration," verify:
 - [ ] Bibliography calls from `.bib` file (theory-wide + paper-specific)
 - [ ] Acknowledgements section with detailed attribution
 - [ ] OSF DOI and GitHub URL in acknowledgements
-- [ ] All 7 documentation `.md` files generated
+- [ ] All 8 documentation `.md` files generated
 - [ ] Notation consistent with Section 9
 - [ ] Computational notebook(s) created with `.ipynb` + `.py` + `_executed.ipynb`
 - [ ] Notebook reproduces all numerical claims in the paper
@@ -662,6 +663,7 @@ Before declaring a paper "ready for OSF registration," verify:
 │   ├── phenomena-[SERIES]-[N].md
 │   ├── philosophy-[SERIES]-[N].md
 │   ├── reviews-[SERIES]-[N].md
+│   ├── FAQ-[SERIES]-[N].md
 │   └── keywords-[SERIES]-[N].md
 ├── open_problems/
 ├── postulates_and_theorems.md

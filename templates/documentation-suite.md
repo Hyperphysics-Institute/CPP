@@ -8,7 +8,7 @@
 
 ## Overview
 
-Every CPP paper has 7 companion `.md` files. These files serve different audiences and purposes:
+Every CPP paper has 8 companion `.md` files. These files serve different audiences and purposes:
 
 | File | Audience | Purpose |
 |------|----------|---------|
@@ -17,7 +17,8 @@ Every CPP paper has 7 companion `.md` files. These files serve different audienc
 | `mechanism-[S]-[N].md` | Physicists | Physical mechanisms with intuitive explanations |
 | `phenomena-[S]-[N].md` | Physicists + general | What the paper explains and predicts |
 | `philosophy-[S]-[N].md` | Theorists + philosophers | Conceptual content, type classification, honest assessment |
-| `reviews-[S]-[N].md` | Authors + referees | Reviews received, critiques addressed |
+| `reviews-[S]-[N].md` | Authors + referees | External reviews received, critiques addressed |
+| `FAQ-[S]-[N].md` | General readers + web | Anticipated questions and clear answers |
 | `keywords-[S]-[N].md` | SEO / web tooling / search | Keywords, PACS/MSC codes, elevator pitch |
 
 Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD), `[N]` = paper number.
@@ -235,7 +236,7 @@ The conceptual and philosophical content of the paper. Type classification (how 
 ## 6. reviews-[S]-[N].md
 
 ### Purpose
-Record all reviews received (from AI collaborators, external reviewers, and hostile critics) and document the responses. This is the paper's dialogue with its critics.
+Record all external reviews and critical assessments received, and document the responses. This is the paper's dialogue with its critics — the adversarial record. This file is largely FIXED once the review cycle is complete.
 
 ### Required Sections
 
@@ -266,10 +267,60 @@ Record all reviews received (from AI collaborators, external reviewers, and host
 - Responses should be substantive, not defensive
 - If an objection is valid, ACKNOWLEDGE it and explain what we're doing about it
 - The strongest objection should get the longest, most careful response
+- This file is a HISTORICAL RECORD — add new reviews as they come in, but don't delete old ones
 
 ---
 
-## 7. keywords-[S]-[N].md
+## 7. FAQ-[S]-[N].md
+
+### Purpose
+Anticipated and received questions from readers, seminar audiences, forum discussions, and future AI sessions. This is the LIVING companion to the paper — it grows as new questions come in. Each Q&A pair is a potential web page for hyperphysics.com.
+
+### Required Sections
+
+```markdown
+# FAQ — [S]-[N]: [Full Title]
+
+## Conceptual Questions
+
+### Q: [Question in plain language]
+**A:** [Clear, direct answer — 2-5 sentences. No jargon without definition.]
+
+### Q: [Question]
+**A:** [Answer]
+...
+
+## Technical Questions
+
+### Q: [Question requiring mathematical detail]
+**A:** [Answer with equations if needed, but explain the physics too.]
+...
+
+## Comparison with Standard Model
+
+### Q: How does this differ from the SM explanation of [phenomenon]?
+**A:** [Honest comparison — what CPP does differently and why.]
+...
+
+## Challenges and Limitations
+
+### Q: What if [objection or concern]?
+**A:** [Honest response — acknowledge limitations where they exist.]
+...
+```
+
+### Style Notes
+- Write questions as a curious, intelligent non-specialist would ask them
+- Answers should be self-contained — a reader should understand the answer without reading the paper
+- Start with the most common/obvious questions, end with the most technical
+- The "Challenges and Limitations" section is where honest self-criticism lives — don't hide weaknesses
+- This file GROWS over time: add new Q&A pairs as questions come in from any source
+- Each Q&A pair should work as a standalone web page snippet (for hyperphysics.com SEO)
+- Unlike reviews.md (historical record), FAQ.md is a living document that should be updated and improved
+
+---
+
+## 8. keywords-[S]-[N].md
 
 ### Purpose
 Structured keyword data for search, SEO, and web tooling. Designed to be machine-readable by Isak's Claude Code agent for hyperphysics.com integration.
@@ -318,7 +369,8 @@ Structured keyword data for search, SEO, and web tooling. Designed to be machine
 | How the physics works | mechanism |
 | What's explained and predicted | phenomena |
 | The honest strengths and weaknesses | philosophy |
-| What reviewers said and how we responded | reviews |
+| What external reviewers said | reviews |
+| Common questions and clear answers | FAQ |
 | How the paper was developed | development |
 | What to search for | keywords |
 
