@@ -1,4 +1,28 @@
-\documentclass[11pt,a4paper]{article}
+% ============================================================
+% SM-6: The Charged Lepton Mass Spectrum from 600-Cell Lattice
+%        Geometry
+% Version 2.1 — 2 April 2026
+%
+% CHANGELOG:
+%   v1   1 Apr 2026 — Initial draft (Claude Opus)
+%   v2   2 Apr 2026 — Review feedback from Grok + Copilot
+%   v2.1 2 Apr 2026 — SVG figures, keywords, citations,
+%                      acknowledgements, plain language summary
+%
+% CONTRIBUTORS:
+%   Thomas Lee Abshier ND — Physical vision, research direction
+%   Grok (xAI)           — φ correction, operational definition
+%   Claude Opus           — Spectral proofs, isotropic shift,
+%                           numerical validation, paper drafting
+%   Copilot (Microsoft)   — Perturbation framework, bond counting
+%
+% FIGURE PATH:
+%   .tex location:   series_standard_model/papers/
+%   figures location: series_standard_model/figures/figures-SM-6/
+%   relative path:   ../figures/figures-SM-6/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -8,7 +32,16 @@
 \usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
-\graphicspath{{figures/}}
+
+% SVG figure support (requires inkscape for on-the-fly conversion)
+\usepackage{svg}
+\svgsetup{
+    inkscapelatex=false,
+    inkscapeformat=pdf,
+    inkscapepath=svgdir}
+
+% Figure path: .tex is in papers/, figures are in ../figures/figures-SM-6/
+\graphicspath{{../figures/figures-SM-6/}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{definition}[theorem]{Definition}
@@ -44,6 +77,9 @@ Combined with the Koide parametrisation and electron mass calibration, the predi
 \tableofcontents
 \newpage
 
+% ============================================================
+% SECTION 1: Introduction
+% ============================================================
 \section{Introduction}
 The masses of the three charged leptons --- electron ($m_e = 0.511$~MeV), muon ($m_\mu = 105.66$~MeV), and tau ($m_\tau = 1776.9$~MeV) --- are free parameters of the Standard Model. In 1981, Yoshio Koide~\citep{koide1983} noticed that the combination
 \begin{equation}
@@ -58,11 +94,16 @@ This paper derives both $K$ \emph{and} $\theta$ from the 600-cell lattice geomet
 
 \begin{figure}[H]
 \centering
+% FIGURE 1 — Derivation chain flowchart
+% Source: ../figures/figures-SM-6/fig1_derivation_chain.svg
 \includegraphics[width=0.85\textwidth]{fig1_derivation_chain.pdf}
 \caption{The complete derivation chain from the 600-cell lattice to the charged lepton mass spectrum. Each box shows one step, with the relevant theorem or equation reference. All steps use only 600-cell geometry, the SSV/PSR metric, and exact algebra. The single calibration constant SSV$_0$ enters only at the final step (overall mass scale).}
 \label{fig:chain}
 \end{figure}
 
+% ============================================================
+% SECTION 2: The 600-Cell Lattice
+% ============================================================
 \section{The 600-Cell Lattice}
 \label{sec:lattice}
 The 600-cell is the regular 4-polytope with 120~vertices ($V = 120$), 720~edges ($E = 720$), 1200~triangular faces ($F = 1200$), and 600~tetrahedral cells ($C = 600$). Every vertex has coordination number $z = 12$. The adjacency matrix $A$ is the $120 \times 120$ symmetric matrix with $A_{ij} = 1$ when vertices $i$ and $j$ are connected by an edge, and $A_{ij} = 0$ otherwise.
@@ -99,6 +140,8 @@ $-3.708$ & $-6\phig^{-1}$ & 4 & 2 \\
 
 \begin{figure}[H]
 \centering
+% FIGURE 2 — 600-cell eigenvalue spectrum
+% Source: ../figures/figures-SM-6/fig3_eigenvalue_spectrum.svg
 \includegraphics[width=0.95\textwidth]{fig3_eigenvalue_spectrum.pdf}
 \caption{The nine eigenvalues of the 600-cell adjacency matrix with their multiplicities $\dim^2(\rho)$. Blue bars: positive eigenvalues. Red bars: negative eigenvalues. Grey: zero eigenvalue. The total positive spectral weight and total negative spectral weight both equal $60\phig^2 \approx 157.08$, ensuring $\Tr(A) = 0$. The sum $\Tr(A^2) = \sum \lambda_i^2 m_i = 1440 = 2E$.}
 \label{fig:spectrum}
@@ -112,6 +155,9 @@ $-3.708$ & $-6\phig^{-1}$ & 4 & 2 \\
 \end{align}
 Identity~\eqref{eq:trA2} counts closed walks of length~2 (back-and-forth along edges). Identity~\eqref{eq:trA3} counts closed walks of length~3 (oriented triangular face circulations); the factor~6 rather than~3 arises because each face contributes two orientations (clockwise and counterclockwise), and the division by~3 in the mode count $\Tr(A^3)/3$ removes the cyclic overcounting of start vertices on each oriented triangle.
 
+% ============================================================
+% SECTION 3: Part I — The Weinberg Angle
+% ============================================================
 \section{Part~I: The Weinberg Angle}
 \label{sec:weinberg}
 
@@ -199,6 +245,9 @@ PDG~2024~\citep{pdg2024}: $\sin^2\theta_W(M_Z) = 0.23121 \pm 0.00004$. Agreement
 In the Standard Model, the Weinberg angle is defined through gauge couplings: $\sin^2\theta_W = g'^2/(g^2 + g'^2)$, where both couplings are dynamic. In CPP, the mixing is between \emph{graph modes} (topological objects) with \emph{metric-weighted efficiencies} (geometric corrections). The mode counts $\Tr(A^2)$ and $\Tr(A^3)$ are topological invariants of the graph; the metric affects only the \emph{efficiency} of each mode, not the \emph{number} of modes. This is why the denominator is the fixed lattice capacity~3840, and why the $1/\phig$ factor enters as a linear prefactor on the mode fraction rather than quadratically through a coupling ratio.
 \end{remark}
 
+% ============================================================
+% SECTION 4: Part II — The Koide Phase
+% ============================================================
 \section{Part~II: The Koide Phase}
 \label{sec:koide}
 
@@ -233,6 +282,8 @@ This gives $\theta_0 = \arccos(-2/3) = 131.81°$, which is $0.92°$ from the PDG
 
 \begin{figure}[H]
 \centering
+% FIGURE 3 — K₃ face with closed neighbourhood
+% Source: ../figures/figures-SM-6/fig2_k3_neighbourhood.svg
 \includegraphics[width=0.78\textwidth]{fig2_k3_neighbourhood.pdf}
 \caption{A K$_3$ face (red triangle, vertices $v_1, v_2, v_3$) embedded in the 600-cell lattice. Each vertex has 2~internal bonds (red, to K$_3$ partners) and 10~external bonds (grey, to the rest of the lattice). The closed neighbourhood has $z+1 = 1\text{ (self)} + 2\text{ (K$_3$)} + 10\text{ (external)} = 13$ sites. The isotropic EW perturbation $\varepsilon$ is the abelian energy from the 2~internal bonds, normalised by the 13-site closed neighbourhood.}
 \label{fig:k3}
@@ -290,6 +341,9 @@ The proof has two parts: a bond-counting derivation of $\varepsilon$ and an alge
 The isotropic shift $\varepsilon I_3$ does not break C$_3$ symmetry --- eigenvectors are unchanged and the antibonding degeneracy is preserved. The Koide phase shifts because the eigenvalue \emph{ratio} $K = \lambda_+/(\lambda_+ + |\lambda_-|)$ responds nonlinearly to a uniform shift: $\lambda_+$ increases while $|\lambda_-|$ decreases. This is consistent with Theorem~\ref{thm:isotropy}: no direction is selected in the antibonding subspace, yet the Koide phase is non-trivial.
 \end{remark}
 
+% ============================================================
+% SECTION 5: Predicted Lepton Masses
+% ============================================================
 \section{Predicted Lepton Masses}
 \label{sec:masses}
 Using the Koide parametrisation with the derived $\theta$:
@@ -317,11 +371,16 @@ Tau & $1774.1$ & $1776.9$ & $0.15\%$ \\
 
 \begin{figure}[H]
 \centering
+% FIGURE 4 — Parameter count comparison
+% Source: ../figures/figures-SM-6/fig4_parameter_count.svg
 \includegraphics[width=0.75\textwidth]{fig4_parameter_count.pdf}
 \caption{Comparison of the number of free parameters required to specify the three charged lepton masses. The Standard Model treats all three as independent. \citet{koide1983} reduced this to two ($K$ and $\theta$) but could not explain either. CPP derives both $K$ and $\theta$ from the 600-cell, leaving only the overall mass scale SSV$_0$.}
 \label{fig:params}
 \end{figure}
 
+% ============================================================
+% SECTION 6: Mutual Reinforcement
+% ============================================================
 \section{Mutual Reinforcement}
 \label{sec:mutual}
 The Weinberg angle can be derived independently from the Koide phase by inverting~\eqref{eq:koide_phase}:
@@ -332,6 +391,9 @@ This agrees with the 600-cell spectral value $3/(8\phig) = 0.2318$ to $0.19\%$. 
 
 The lattice-derived $\sin^2\theta_W = 3/(8\phig)$ gives \emph{better} lepton mass predictions than the PDG-measured $\sin^2\theta_W = 0.23121$ (muon: $0.18\%$ vs.\ $0.39\%$), suggesting that the lattice value is the zero-temperature ``crystalline'' Weinberg angle and the PDG value includes finite-temperature Dipole Sea corrections.
 
+% ============================================================
+% SECTION 7: Assumptions and Attack Surface
+% ============================================================
 \section{Assumptions and Attack Surface}
 \label{sec:attack}
 For clarity, we list every assumption in the derivation and its status:
@@ -353,6 +415,9 @@ The weakest link is assumption~5: the operational definition of the Weinberg ang
 The $0.24\%$ residual between $3/(8\phig)$ and the PDG value is predicted to equal the finite-temperature Dipole Sea correction $\delta \sim \text{sea\_strength}^2 \approx 0.032$, arising from ZBW partner-switching jitter and rogue-wave SSV spikes. This is a quantitative prediction that can be computed from the DP Sea thermal statistics derived in earlier CPP work, providing an independent test of the lattice framework.
 \end{remark}
 
+% ============================================================
+% SECTION 8: Conclusion
+% ============================================================
 \section{Conclusion}
 The entire charged lepton mass spectrum follows from the 600-cell lattice geometry:
 
@@ -369,6 +434,9 @@ The Koide ratio and the Koide phase are \emph{the same number}: $K = 2/3$ appear
 
 The Standard Model requires three free parameters for the charged lepton masses. This derivation requires one.
 
+% ============================================================
+% ACKNOWLEDGEMENTS
+% ============================================================
 \section*{Acknowledgements}
 This paper is the product of a collaboration between a human physicist and three AI systems, each contributing distinct capabilities.
 
