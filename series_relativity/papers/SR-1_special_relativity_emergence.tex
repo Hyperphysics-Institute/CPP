@@ -1,3 +1,26 @@
+% ============================================================
+% SR-1: Mechanistic Derivation of Relativistic Effects
+%        via Space Stress Vector (SSV) in the Dipole Sea
+% Version 17 — 26 March 2026
+%
+% CHANGELOG:
+%   v1–v15  2025–2026 — Iterative development (Abshier + Grok)
+%   v16     Mar 2026  — Claude Sonnet critique cycle, k derivation
+%   v17     26 Mar 2026 — alpha_geom consistency fix, final proofs
+%   v18     2 Apr 2026  — Formatting template compliance: .bib,
+%                         natbib, graphicspath, TOC, OSF DOI
+%
+% CONTRIBUTORS:
+%   Thomas Lee Abshier ND — CPP framework, physical vision
+%   Grok (xAI)           — Rewriting, equation polishing, lattice sims
+%   Claude Sonnet         — Rigorous critique, first-principles derivations
+%
+% FIGURE PATH:
+%   .tex location:   series_relativity/papers/
+%   figures location: series_relativity/figures/figures-SR-1/
+%   \svgpath:        ../figures/figures-SR-1/
+% ============================================================
+
 \documentclass[11pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
@@ -18,6 +41,14 @@
     inkscapelatex=false,
     inkscapeformat=pdf,
     inkscapepath=svgdir}
+
+% Figure path: .tex is in papers/, figures are in ../figures/figures-SR-1/
+\graphicspath{{../figures/figures-SR-1/}}
+\svgpath{{../figures/figures-SR-1/}}
+
+% Bibliography
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
 
 \usepackage{amsthm}
 \usepackage{mdframed}
@@ -40,7 +71,7 @@
 \title{\textbf{SR-1: Mechanistic Derivation of Relativistic Effects\\
 via Space Stress Vector (SSV) in the Dipole Sea}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 17, 26 March 2026}}
+{\normalsize Version 18, 2 April 2026}}
 
 \author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic)}
 
@@ -65,10 +96,17 @@ Conscious Point Physics (CPP) derives special relativistic effects---time dilati
 
 \noindent\textbf{Keywords:} Conscious Point Physics, 600-cell lattice, Space Stress Vector, time dilation, length contraction, twin paradox, discrete spacetime, Voronoi cell geometry, Planck Sphere Radius
 
-\section*{Plain-Language Introduction}
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Imagine the universe is built from tiny conscious points arranged in a perfect 4-dimensional crystal---the 600-cell lattice. Each point can only move a tiny fixed distance (the Planck length) once per tiny tick of cosmic time (the Planck time). When something moves very fast or feels strong gravity, it stores energy as ``stress'' in the crystal around it. This stress squeezes the available space inside each tiny crystal cell, so every movement step becomes shorter. Clocks, hearts, and chemical reactions all depend on completing a fixed number of macroscopic steps to finish one ``tick.'' With shorter steps, it takes more cosmic ticks to finish the same job---so time appears to slow down for the moving object. That's time dilation. The same squeezing shortens lengths along the direction of motion, which explains why the traveling twin ages less. This paper shows how the math of the 600-cell crystal produces Einstein's formulas---not as abstract rules, but as the natural result of how space is built.
 
-Imagine the universe is built from tiny conscious points arranged in a perfect 4-dimensional crystal---the 600-cell lattice. Each point can only move a tiny fixed distance (the Planck length) once per tiny tick of cosmic time (the Planck time). When something moves very fast or feels strong gravity, it stores energy as "stress" in the crystal around it. This stress squeezes the available space inside each tiny crystal cell, so every movement step becomes shorter. Clocks, hearts, and chemical reactions all depend on completing a fixed number of macroscopic steps to finish one "tick." With shorter steps, it takes more cosmic ticks to finish the same job---so time appears to slow down for the moving object. That's time dilation. The same squeezing shortens lengths along the direction of motion, which explains why the traveling twin ages less. This paper shows how the math of the 600-cell crystal produces Einstein's formulas---not as abstract rules, but as the natural result of how space is built.
+\bigskip
+\tableofcontents
+\newpage
 
+% ============================================================
+% SECTION 1: Introduction
+% ============================================================
 \section{Introduction}
 
 Using the fundamental CPP framework, relativistic effects arise from constraints on particle motion within a discrete spacetime lattice. This aligns with the null result of the Michelson-Morley experiment (1887) \cite{michelson1887} that confirmed the invariant speed of light in all inertial frames. Special relativity (SR), as originally formulated by Einstein (1905) \cite{einstein1905}, accurately describes time dilation, length contraction, and the twin paradox through the Lorentz transformation and spacetime geometry. The discrete lattice framework is philosophically aligned with cellular automaton interpretations of quantum mechanics as developed by 't~Hooft (2016) \cite{thooft2016}.
@@ -91,7 +129,7 @@ This derivation continues the author's ongoing Conscious Point Physics series \c
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.96\textwidth]{fig5_flowchart.svg}
+  \includegraphics[width=0.96\textwidth]{fig5_flowchart.pdf}
   \caption{%
     \textbf{Logical structure of the CPP derivation.}
     The four foundational postulates of Conscious Point Physics (top row,
@@ -129,7 +167,7 @@ Appendix~G, where it is shown to be the unique polytope consistent with the CPP 
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.95\textwidth]{fig1_voronoi_cell.svg}
+  \includegraphics[width=0.95\textwidth]{fig1_voronoi_cell.pdf}
   \caption{%
     \textbf{Voronoi cell in unstressed (left) and stressed (right) states.}
     In the baseline lattice ($\Delta\text{SSV} = 0$), the Conscious Point (CP)
@@ -341,110 +379,10 @@ at laboratory energies while predicting small deviations at extreme acceleration
 ($\gtrsim 10^{20}$ g), establishing Conscious Point Physics as a scientifically 
 coherent, testable, and unifying geometric interpretation of relativistic phenomena.
 
-\begin{thebibliography}{13}
-
-\bibitem{einstein1905}
-Einstein, A. (1905). 
-On the Electrodynamics of Moving Bodies. 
-\textit{Annalen der Physik}, 17, 891--921.
-
-\bibitem{lorentz1904}
-H.~A.~Lorentz,
-Electromagnetic phenomena in a system moving with any velocity smaller
-than that of light,
-\textit{Proc.\ R.\ Neth.\ Acad.\ Arts Sci.} \textbf{6}, 809 (1904).
- 
-\bibitem{minkowski1908}
-H.~Minkowski,
-Die Grundgleichungen f\"ur die elektromagnetischen Vorg\"ange in
-bewegten K\"orpern,
-\textit{Nachr.\ Ges.\ Wiss.\ G\"ottingen} 53 (1908).
-
-\bibitem{conway1988}
-Conway, J.~H., \& Sloane, N.~J.~A. (1988). 
-\textit{Sphere Packings, Lattices and Groups}. 
-Springer-Verlag, New York. 
-(Chapter 21: 600-cell metrics and Voronoi cells)
-
-\bibitem{michelson1887}
-Michelson, A.~A., \& Morley, E.~W. (1887). 
-On the Relative Motion of the Earth and the Luminiferous Ether. 
-\textit{American Journal of Science}, 34, 333--345.
-
-\bibitem{planck1900}
-Planck, M. (1900). 
-On the Law of Distribution of Energy in the Normal Spectrum. 
-\textit{Annalen der Physik}, 4, 553--563.
-
-\bibitem{abshier_ss1}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-Conscious Point Physics: The Strong Sector from the 600-Cell Lattice (SS-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_strong/cpp_ss_unified_v2.tex}
- 
-\bibitem{abshier_sm1}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-Binding Mechanisms and Cage Stability in the 600-Cell Lattice (SM-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex}
- 
-\bibitem{abshier_sm3}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-K3 Spectral Theorem and the Koide Formula (SM-3),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex}
- 
-\bibitem{abshier_tnsr1}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-Holographic Vacuum Energy Suppression from the 600-Cell Lattice Structure (TN-SR-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_relativity/TN-SR-1_vacuum_energy_holographic.tex}
-
-\bibitem{coxeter1973}
-Coxeter, H.~S.~M. (1973). 
-\textit{Regular Polytopes}. 
-Dover Publications, New York. 
-(600-cell geometry and $H_4$ group)
-
-\bibitem{penrose1971}
-Penrose, R. (1971). 
-Angular momentum: an approach to combinatorial space-time. 
-In \textit{Quantum Theory and Beyond}, pp.~151--180. 
-Cambridge University Press.
-
-\bibitem{thooft2016}
-'t~Hooft, G. (2016). 
-\textit{The Cellular Automaton Interpretation of Quantum Mechanics}. 
-Springer International Publishing.
-
-\bibitem{bailey1977}
-Bailey, J.\ \textit{et al.}\ (1977). 
-\textit{Nature}, 268, 301.
-
-\bibitem{unruh1976}
-Unruh, W.~G. (1976). 
-\textit{Physical Review D}, 14, 870.
-
-\bibitem{weyl1946}
-Weyl, H. (1946).
-\textit{The Classical Groups: Their Invariants and Representations}.
-Princeton University Press, Princeton, NJ.
-(Chapter~II: invariant theory of the orthogonal group)
-
-\bibitem{humphreys1990}
-Humphreys, J.~E. (1990).
-\textit{Reflection Groups and Coxeter Groups}.
-Cambridge University Press, Cambridge.
-(Chapter~2: root systems and Weyl groups; Chapter~3: polynomial 
-invariants)
-
-\bibitem{bannai1979}
-Bannai, E., \& Damerell, R.~M. (1979).
-Tight spherical designs, I.
-\textit{Journal of the Mathematical Society of Japan}, 31, 199--207.
-
-
-\end{thebibliography}
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\bibliography{SR-1_references}
 
 
 \appendix
@@ -815,7 +753,7 @@ which has units of time as required ($k \cdot \langle\Delta\text{SSV}\rangle_{\r
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.88\textwidth]{fig4_twin_paradox.svg}
+  \includegraphics[width=0.88\textwidth]{fig4_twin_paradox.pdf}
   \caption{%
     \textbf{Twin paradox: asymmetric $\Delta$SSV accumulation along inertial vs.\ non-inertial worldlines.}
     The stay twin (blue vertical line) remains inertial throughout; $\Delta\text{SSV} \approx 0$ so $\text{PSR}_{\text{eff}} = l_P$ and clock
@@ -1205,7 +1143,7 @@ Instead, space is an \textbf{infinite quasicrystalline lattice} constructed from
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.92\textwidth]{fig2_lattice_tiling.svg}
+  \includegraphics[width=0.92\textwidth]{fig2_lattice_tiling.pdf}
   \caption{%
     \textbf{Schematic 3D projection of the 600-cell quasicrystalline lattice.}
     Three overlapping 600-cell motifs (blue, green, yellow dashed circles) are
@@ -1597,7 +1535,7 @@ The full polytopal integral (numerically evaluated over the 120 distorted Vorono
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.92\textwidth]{fig3_psr_curve.svg}
+  \includegraphics[width=0.92\textwidth]{fig3_psr_curve.pdf}
   \caption{%
     \textbf{Effective PSR versus dimensionless stress on a logarithmic scale.}
     The CPP prediction $\text{PSR}_{\text{eff}}/l_P = 1/(1 + k\cdot\Delta\text{SSV})$
@@ -2460,7 +2398,9 @@ floating-point arithmetic) across 500 independent trials.
 
 \section*{Acknowledgements}
 
-Thomas Lee Abshier, ND, conceived the CPP framework and directed the research programme. Grok (xAI) provided systematic rewriting, equation polishing, and lattice simulation framework. Claude Sonnet (Anthropic) provided rigorous technical critique that elevated the paper from initial draft to publication-ready status, through numerous edits and identification and development of first principle derivations. This work builds on decades of the author's exploration into discrete spacetime and the hypothetical physics of Conscious Points.
+Thomas Lee Abshier, ND, conceived the CPP framework and directed the research programme. Grok (xAI) provided systematic rewriting, equation polishing, and lattice simulation framework. Claude Sonnet (Anthropic) provided rigorous technical critique that elevated the paper from initial draft to publication-ready status, through numerous edits and identification and development of first-principles derivations. This work builds on decades of the author's exploration into discrete spacetime and the hypothetical physics of Conscious Points.
+
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 
 \end{document}
