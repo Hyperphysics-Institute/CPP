@@ -246,14 +246,19 @@ Generate ALL figures in both `.svg` and `.png` format:
 
 ### 5.2 Storage Path
 
+Figures are stored in a series-level `figures/` folder, with a subfolder per paper:
+
 ```
-/CPP/series_[name]/figures/figures_[PAPER-ID]/figure_name.svg
+/CPP/series_[name]/figures/figures-[SERIES]-[N]/figure_name.svg
 ```
 
-Example:
+Examples:
 ```
-/CPP/series_standard_model/figures/figures_SM-6/fig1_derivation_chain.svg
+/CPP/series_standard_model/figures/figures-SM-6/fig1_derivation_chain.svg
+/CPP/series_electroweak/figures/figures-EW-1/fig1_coupling_flow.svg
 ```
+
+This keeps all figures for a series together while separating them by paper.
 
 ### 5.3 LaTeX Inclusion
 
@@ -633,16 +638,17 @@ Before declaring a paper "ready for OSF registration," verify:
 ```
 /CPP/
 ├── templates/
-│   └── paper-formatting.md          ← THIS FILE
+│   ├── paper-formatting.md          ← Formatting standard (THIS FILE)
+│   └── documentation-suite.md       ← Template for .md documentation files
 ├── bibliography/
-│   └── cpp_references.bib           ← Theory-wide bibliography
+│   └── cpp_references.bib           ← Site-wide bibliography (aggregated from locals)
 ├── series_[name]/
 │   ├── papers/
-│   │   ├── [PAPER].tex
-│   │   ├── [PAPER].pdf              ← Compiled PDF next to source
-│   │   └── [PAPER]_references.bib   ← Paper-specific references (if any)
+│   │   ├── [PAPER-ID]_[title].tex
+│   │   ├── [PAPER-ID]_[title].pdf   ← Compiled PDF next to source
+│   │   └── [PAPER-ID]_references.bib  ← Local bibliography (primary)
 │   ├── figures/
-│   │   └── figures_[PAPER-ID]/
+│   │   └── figures-[SERIES]-[N]/
 │   │       ├── fig1_name.svg
 │   │       ├── fig1_name.png
 │   │       └── fig1_name.pdf
@@ -667,23 +673,45 @@ Before declaring a paper "ready for OSF registration," verify:
 
 ## 16. Bibliography Management
 
-### 16.1 Theory-Wide `.bib` File
+### 16.1 Workflow: Local-First, Site-Wide Aggregated
 
-Location: `/CPP/bibliography/cpp_references.bib`
+The bibliography workflow is designed to minimise Thomas's maintenance overhead:
 
-This file contains:
-- All CPP series papers (SM-1 through SM-6, EW-1 through EW-5, SR-1, SS-1, QM-1 through QM-6, etc.)
-- All external references cited in any CPP paper (Koide 1983, Georgi & Glashow 1974, PDG, Coxeter, etc.)
+1. **AI generates a local `.bib` per paper:** `[PAPER-ID]_references.bib` (e.g., `SM-6_references.bib`), stored next to the `.tex` file. This contains ONLY the references cited in that paper.
 
-**Maintenance:** When a new paper is written, any new references are added to the theory-wide file. When an existing paper is revised, its references are checked against the theory-wide file for consistency.
+2. **Thomas updates the local `.bib`** as DOIs, URLs, and publication details become available. This is the smallest, easiest file to maintain — typically 10–20 entries.
 
-### 16.2 Paper-Specific `.bib` Files
+3. **AI regenerates the site-wide `.bib`** by merging all local `.bib` files: `/CPP/bibliography/cpp_references.bib`. This is done at the start of each session by scanning all `*_references.bib` files across the repo. Duplicates are resolved by keeping the entry with the most complete metadata (DOI > URL > bare citation).
 
-Optional. Used when a paper cites specialised references unlikely to appear in other CPP papers (e.g., a specific experimental result relevant only to one derivation).
+4. **The `.tex` file calls the local `.bib`:**
+```latex
+\bibliography{SM-6_references}
+```
+This ensures each paper compiles independently. The site-wide `.bib` is a convenience for cross-referencing and for Isak's web tooling — it is not required for compilation.
 
-### 16.3 Duplicate Prevention
+### 16.2 Local `.bib` File Convention
 
-Before adding a reference to `cpp_references.bib`, search for existing entries by author and year. Use the key convention in Section 7.3. If a reference already exists, reuse the existing key.
+```
+/CPP/series_[name]/papers/[PAPER-ID]_references.bib
+```
+
+The AI generates this with every new paper. When revising an existing paper, the AI checks the local `.bib` for updates before compiling.
+
+### 16.3 Site-Wide `.bib` File
+
+```
+/CPP/bibliography/cpp_references.bib
+```
+
+Regenerated from locals. Contains all CPP series papers and all external references across the programme. Organised with comment section headers.
+
+### 16.4 BibTeX Key Convention
+
+```
+authorYYYY         — external references (e.g., koide1983, georgi1974)
+abshierYYYY[a-z]   — CPP papers (e.g., abshier2026sm3)
+pdgYYYY            — Particle Data Group (e.g., pdg2024)
+```
 
 ---
 
