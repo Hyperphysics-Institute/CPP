@@ -1,0 +1,575 @@
+# CPP Paper Formatting Standard
+
+**Location:** `/CPP/templates/paper-formatting.md`
+**Purpose:** Master template for generating and finalising all CPP series papers.
+**Last updated:** 2 April 2026
+**Maintainer:** Thomas Lee Abshier ND, with AI team
+
+---
+
+## How to Use This Document
+
+When generating a new `.tex` file or finalising an existing one, the AI assistant should read this file first and apply all standards below. This document is the single source of truth for CPP paper formatting.
+
+The human author may provide a shorthand prompt referencing this file:
+> "Generate the final .tex file for [paper]. Follow `/CPP/templates/paper-formatting.md`."
+
+The AI should then apply every section of this standard without needing individual reminders.
+
+---
+
+## 1. Document Class and Packages
+
+### 1.1 Required Preamble
+
+```latex
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+% SVG figure support
+\usepackage{svg}
+\svgsetup{
+    inkscapelatex=false,
+    inkscapeformat=pdf,
+    inkscapepath=svgdir}
+
+% Bibliography
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+% Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+```
+
+### 1.2 Theorem Environments
+
+```latex
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+```
+
+### 1.3 Standard CPP Macros
+
+```latex
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\phig}{\varphi}          % golden ratio
+\newcommand{\Tr}{\operatorname{Tr}}
+```
+
+Add paper-specific macros after these standard ones, with a comment block:
+
+```latex
+% --- Paper-specific macros ---
+\newcommand{\Kthree}{\mathrm{K}_3}
+```
+
+---
+
+## 2. Title Block
+
+### 2.1 Format
+
+```latex
+\title{\textbf{[SERIES]-[NUMBER]: [Full Title]}\\[6pt]
+{\large 600-Cell Standard Model Emergence Series}\\[4pt]
+{\normalsize Version [N], [Date]}}
+
+\author{Thomas Lee Abshier, ND \and [AI authors]}
+
+\date{\normalsize Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+```
+
+### 2.2 Version Numbering
+
+- v1: first complete draft
+- v2, v3...: revisions incorporating review feedback
+- v2.1, v2.2...: minor cosmetic/formatting changes within a revision
+
+Always update the version number in the title when changes are made.
+
+### 2.3 Author Block
+
+AI co-authors appear on the author line with their platform in parentheses:
+- `Grok (xAI)`
+- `Claude Opus (Anthropic)` or `Claude Sonnet (Anthropic)` — use the specific model
+- `Copilot (Microsoft)`
+
+Include only those AIs that made substantive contributions to the paper's content. The Acknowledgements section provides detailed attribution.
+
+---
+
+## 3. Comment Blocks
+
+### 3.1 Version History Block
+
+Place at the very top of the `.tex` file, before `\documentclass`:
+
+```latex
+% ============================================================
+% [SERIES]-[NUMBER]: [Short Title]
+% Version [N] — [Date]
+%
+% CHANGELOG:
+%   v1   [Date] — Initial draft ([Author])
+%   v2   [Date] — Incorporated review feedback from [Reviewers]
+%   v2.1 [Date] — Added figures, keywords, acknowledgements
+%
+% CONTRIBUTORS:
+%   Thomas Lee Abshier ND — [specific contributions]
+%   Grok (xAI)           — [specific contributions]
+%   Claude Opus           — [specific contributions]
+%   Copilot (Microsoft)   — [specific contributions]
+% ============================================================
+```
+
+### 3.2 Section Markers
+
+Use `%` comment dividers to mark major sections for navigation:
+
+```latex
+% ============================================================
+% SECTION 3: Part I — The Weinberg Angle
+% ============================================================
+\section{Part~I: The Weinberg Angle}
+```
+
+### 3.3 Figure Insertion Comments
+
+When figures are inserted, add a comment block explaining placement:
+
+```latex
+% ============================================================
+% FIGURE 2 — K₃ face with closed neighbourhood
+% INSERT after the isotropy theorem, before the Koide phase proof.
+% Source: /CPP/series_standard_model/figures/figures_SM-6/fig2_k3_neighbourhood.svg
+% ============================================================
+\begin{figure}[H]
+```
+
+---
+
+## 4. Document Structure
+
+### 4.1 Order of Sections (after `\begin{document}`)
+
+```
+\maketitle
+\begin{abstract} ... \end{abstract}
+\textbf{Keywords:} ...
+
+\textbf{Plain Language Summary:} ...
+
+\raggedright
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\section{...}  (body sections)
+\section{Conclusion}
+\section*{Acknowledgements}
+\bibliography{...}
+\appendix  (if needed)
+```
+
+### 4.2 Abstract Formatting
+
+The abstract should be indented and justified (LaTeX default for the `abstract` environment). After the abstract, switch to `\raggedright` for the body text.
+
+### 4.3 Keywords
+
+Place immediately after the abstract, before the Plain Language Summary:
+
+```latex
+\medskip\noindent
+\textbf{Keywords:} keyword1, keyword2, keyword3, ...
+```
+
+Include 8–15 keywords covering: the specific physics topic, the mathematical methods, the CPP framework terms, and any standard classification terms (e.g., "Koide formula," "spectral graph theory").
+
+### 4.4 Plain Language Summary
+
+A 3–5 sentence summary accessible to a scientifically literate non-specialist. No equations, no jargon beyond what is immediately defined. Place between keywords and the table of contents:
+
+```latex
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+[Summary text here.]
+```
+
+### 4.5 Raggedright
+
+Apply `\raggedright` after the keywords/summary block, before `\tableofcontents`:
+
+```latex
+\bigskip
+\raggedright
+\tableofcontents
+```
+
+---
+
+## 5. Figures
+
+### 5.1 File Formats
+
+Generate ALL figures in both `.svg` and `.png` format:
+- `.svg` — archival/editable format, stored in the repo
+- `.png` — web display fallback (200 DPI minimum)
+- `.pdf` — auto-generated from SVG by cairosvg or inkscape for LaTeX inclusion
+
+### 5.2 Storage Path
+
+```
+/CPP/series_[name]/figures/figures_[PAPER-ID]/figure_name.svg
+```
+
+Example:
+```
+/CPP/series_standard_model/figures/figures_SM-6/fig1_derivation_chain.svg
+```
+
+### 5.3 LaTeX Inclusion
+
+```latex
+\graphicspath{{figures/figures_[PAPER-ID]/}}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{fig1_derivation_chain.pdf}
+\caption{[Descriptive caption — what the figure shows, what to look for,
+  what it means for the argument. Reference equations/theorems.]}
+\label{fig:meaningful_label}
+\end{figure}
+```
+
+Rules:
+- **Always** use `[H]` (float package) to lock figures in position
+- **Always** provide a descriptive caption (not just a title)
+- **Always** use `\label{}` with a meaningful name
+- Width: typically 0.75–0.95 `\textwidth`; use judgment for aspect ratio
+
+### 5.4 Figure Captions
+
+Captions should be self-contained: a reader should understand the figure without reading the body text. Include:
+- What is being shown
+- Key features to notice
+- Connection to the argument (reference equations/theorems)
+
+---
+
+## 6. Tables
+
+### 6.1 Format
+
+```latex
+\begin{table}[H]
+\centering
+\caption{[Descriptive caption.]}
+\label{tab:meaningful_label}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Header 1 & Header 2 & Header 3 & Header 4 \\
+\midrule
+data & data & data & data \\
+\bottomrule
+\end{tabular}
+\end{table}
+```
+
+Rules:
+- **Always** use `booktabs` (`\toprule`, `\midrule`, `\bottomrule`)
+- **Always** use `[H]` placement
+- **Always** provide descriptive captions
+- Use `@{}` to remove outer padding
+
+---
+
+## 7. Citations and Bibliography
+
+### 7.1 Citation Style
+
+Use `natbib` with `authoryear,round` for inline citations:
+- `\citep{koide1983}` → (Koide, 1983)
+- `\citet{koide1983}` → Koide (1983)
+- `\citep{abshier2026sm3,abshier2026ew1}` → (Abshier et al., 2026b,e)
+
+### 7.2 Bibliography File
+
+All CPP papers share a single, theory-wide bibliography file:
+
+```
+/CPP/bibliography/cpp_references.bib
+```
+
+Each paper's `.tex` file calls:
+```latex
+\bibliography{../../bibliography/cpp_references}
+```
+(Adjust relative path based on paper location.)
+
+Individual papers may also have a paper-specific `.bib` for references unique to that paper. Both are loaded:
+```latex
+\bibliography{../../bibliography/cpp_references,SM-6_references}
+```
+
+### 7.3 BibTeX Key Convention
+
+```
+authorYYYY         — external references (e.g., koide1983, georgi1974)
+abshierYYYY[a-z]   — CPP papers (e.g., abshier2026a for SM-1)
+pdgYYYY            — Particle Data Group (e.g., pdg2024)
+```
+
+### 7.4 CPP Paper References
+
+Always include the series designation, version, and DOI:
+```bibtex
+@misc{abshier2026sm3,
+  author = {Abshier, Thomas Lee and Grok and {Claude Sonnet}},
+  title  = {K3 Spectral Theorem and the Koide Formula},
+  year   = {2026},
+  note   = {SM-3 v5, Hyperphysics Institute},
+  doi    = {10.17605/OSF.IO/JXE8D}
+}
+```
+
+---
+
+## 8. Acknowledgements Section
+
+### 8.1 Format
+
+```latex
+\section*{Acknowledgements}
+```
+
+### 8.2 Content
+
+Include:
+1. **Each contributor's specific role** — what they conceived, derived, proved, computed, reviewed, drafted, or corrected. Be precise.
+2. **The conditional nature of the 600-cell axiom** — every paper should acknowledge: "The 600-cell lattice hypothesis (AXIM-2) remains an axiom."
+3. **Repository links** — OSF DOI and GitHub URL.
+
+### 8.3 AI Attribution
+
+AI contributors receive detailed credit for their specific contributions. The level of authorship (co-author vs acknowledgement) is determined by the significance of the contribution:
+- **Co-author:** substantive intellectual contribution (discovered a theorem, supplied a key mechanism, drafted significant portions)
+- **Acknowledged:** reviewed, validated, or performed routine computation
+
+---
+
+## 9. Notation Consistency
+
+### 9.1 Standard CPP Symbols
+
+| Symbol | LaTeX | Meaning |
+|--------|-------|---------|
+| φ (golden ratio) | `\varphi` or `\phig` | (1+√5)/2 ≈ 1.618 |
+| K₃ | `\mathrm{K}_3` or `K$_3$` | Complete graph on 3 vertices |
+| SSV | `\mathrm{SSV}` or `\SSV` | Space Stress Vector |
+| SSV₀ | `\SSV_0` | Rest-state SSV energy (= m_e c²/2) |
+| z | `z` | Coordination number (= 12 for 600-cell) |
+| l_P | `l_P` or `\lP` | Planck length |
+| t_P | `t_P` or `\tP` | Planck time |
+| A | `A` | Adjacency matrix of 600-cell |
+| Tr | `\operatorname{Tr}` or `\Tr` | Matrix trace |
+
+### 9.2 Rules
+
+- Use `\varphi` (not `\phi`) for the golden ratio to distinguish from the Euler totient
+- Use `K$_3$` in text, `K_3` in equations
+- Write "600-cell" with a hyphen (not "600 cell" or "600cell")
+- Write "DI-bit" with a hyphen (not "DIbit" or "DI bit")
+- Write "Absolute Moment" capitalised (CPP-specific term)
+
+---
+
+## 10. Documentation Suite
+
+### 10.1 Required Files Per Paper
+
+Every paper in the CPP series should have the following documentation files:
+
+| File | Content |
+|------|---------|
+| `development-[SERIES]-[N].md` | Intellectual history, decisions, dead ends, timeline |
+| `glossary-[SERIES]-[N].md` | All technical terms defined, with status labels |
+| `mechanism-[SERIES]-[N].md` | Physical mechanisms with explanations |
+| `phenomena-[SERIES]-[N].md` | Phenomena explained and predicted |
+| `philosophy-[SERIES]-[N].md` | Type classification, conceptual points |
+| `reviews-[SERIES]-[N].md` | Reviews received, responses to critiques |
+| `keywords-[SERIES]-[N].md` | Keywords, PACS/MSC codes, elevator pitch |
+
+### 10.2 Keywords File Format
+
+```markdown
+# [SERIES]-[N] Keywords
+
+## Primary Keywords
+- [5-8 terms that MUST appear in search results]
+
+## Secondary Keywords
+- [5-10 supporting terms]
+
+## PACS Codes
+- [Relevant physics classification codes]
+
+## MSC Codes
+- [Relevant mathematics classification codes]
+
+## Elevator Pitch
+[One sentence: what this paper does and why it matters.]
+
+## SEO Notes
+[Optional: alternative phrasings, related search terms,
+ suggested meta descriptions for hyperphysics.com]
+```
+
+The SEO Notes section is specifically for Isak's Claude Code agent to use when updating hyperphysics.com. Include alternative phrasings that searchers might use (e.g., "lepton mass formula" as well as "Koide formula").
+
+### 10.3 Documentation Storage
+
+```
+/CPP/series_[name]/papers/development-[SERIES]-[N].md
+/CPP/series_[name]/papers/glossary-[SERIES]-[N].md
+/CPP/series_[name]/papers/mechanism-[SERIES]-[N].md
+... etc.
+```
+
+Or, for series with a different structure (e.g., EW series):
+
+```
+/CPP/series_electroweak/development-EW-[N].md
+/CPP/series_electroweak/glossary-EW-[N].md
+```
+
+Follow the existing convention for each series.
+
+---
+
+## 11. Appendices
+
+### 11.1 When to Use
+
+Use appendices for:
+- Lengthy proofs that would interrupt the narrative flow
+- Numerical verification code (Python snippets)
+- Supplementary data tables
+- Derivation details that a specialist might want but a general reader would skip
+
+### 11.2 Format
+
+```latex
+\appendix
+\section{[Appendix Title]}
+```
+
+---
+
+## 12. Pre-Submission Checklist
+
+Before declaring a paper "ready for OSF registration," verify:
+
+- [ ] Version number updated in title
+- [ ] All figures present as `.svg` + `.png` + `.pdf`
+- [ ] All figures have `[H]` placement and descriptive captions
+- [ ] Keywords block after abstract
+- [ ] Plain Language Summary after keywords
+- [ ] `\raggedright` applied after summary
+- [ ] Table of contents present
+- [ ] All tables use `booktabs` + `[H]`
+- [ ] Inline citations (`\citep`, `\citet`) — no numeric `[1]` style
+- [ ] Bibliography calls from `.bib` file (theory-wide + paper-specific)
+- [ ] Acknowledgements section with detailed attribution
+- [ ] Comment blocks: version history at top, section markers throughout
+- [ ] OSF DOI and GitHub URL in acknowledgements
+- [ ] All 7 documentation files generated
+- [ ] Notation consistent with Section 9
+- [ ] Two-pass compilation (cross-references resolved)
+- [ ] PDF reviewed for figure quality and page breaks
+
+---
+
+## 13. File Tree Summary
+
+```
+/CPP/
+├── templates/
+│   └── paper-formatting.md          ← THIS FILE
+├── bibliography/
+│   └── cpp_references.bib           ← Theory-wide bibliography
+├── series_[name]/
+│   ├── [PAPER].tex
+│   ├── [PAPER]_references.bib       ← Paper-specific references (if any)
+│   ├── figures/
+│   │   └── figures_[PAPER-ID]/
+│   │       ├── fig1_name.svg
+│   │       ├── fig1_name.png
+│   │       └── fig1_name.pdf
+│   ├── development-[SERIES]-[N].md
+│   ├── glossary-[SERIES]-[N].md
+│   ├── mechanism-[SERIES]-[N].md
+│   ├── phenomena-[SERIES]-[N].md
+│   ├── philosophy-[SERIES]-[N].md
+│   ├── reviews-[SERIES]-[N].md
+│   └── keywords-[SERIES]-[N].md
+├── bibliography/
+│   └── cpp_references.bib
+├── open_problems/
+├── postulates_and_theorems.md
+├── predictions.md
+└── paper_catalog.md
+```
+
+---
+
+## 14. Bibliography Management
+
+### 14.1 Theory-Wide `.bib` File
+
+Location: `/CPP/bibliography/cpp_references.bib`
+
+This file contains:
+- All CPP series papers (SM-1 through SM-6, EW-1 through EW-5, SR-1, SS-1, QM-1 through QM-6, etc.)
+- All external references cited in any CPP paper (Koide 1983, Georgi & Glashow 1974, PDG, Coxeter, etc.)
+
+**Maintenance:** When a new paper is written, any new references are added to the theory-wide file. When an existing paper is revised, its references are checked against the theory-wide file for consistency.
+
+### 14.2 Paper-Specific `.bib` Files
+
+Optional. Used when a paper cites specialised references unlikely to appear in other CPP papers (e.g., a specific experimental result relevant only to one derivation).
+
+### 14.3 Duplicate Prevention
+
+Before adding a reference to `cpp_references.bib`, search for existing entries by author and year. Use the key convention in Section 7.3. If a reference already exists, reuse the existing key.
+
+---
+
+*This document is the formatting standard for all CPP publications. It should be consulted at the start of every paper generation session and updated whenever new conventions are established.*
