@@ -1,3 +1,12 @@
+% ============================================================
+% SS-1: The Strong Sector from the 600-Cell Lattice
+% Version 1.1 -- 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  -- Initial draft
+%   v1.1 2 Apr 2026 -- Formatting compliance
+% ============================================================
+
 % ==================================================================
 % SS-1: The Strong Sector from the 600-Cell Lattice
 % 600-Cell Standard Model Emergence Series — Version 3
@@ -20,9 +29,20 @@
 %   H5: W bracelet locally-linear coupling face added to masslessness remark
 %   H6: sea_strength language softened: "derived to within 3.8%"
 %   H7: \raggedright after \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} SU(3) colour algebra, strong force, 600-cell lattice, gluon masslessness, asymptotic freedom, beta function, tetrahedral cage, Gell-Mann matrices, quark confinement
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The strong nuclear force, which binds quarks inside protons and neutrons, is governed by the SU(3) colour symmetry. In CPP, this symmetry emerges exactly from the tetrahedral cage faces of the 600-cell lattice. Each triangular face has three vertices that map to three colour charges, and the face permutations generate the eight Gell-Mann matrices of SU(3). Gluon masslessness follows from the topological closure of cage faces, and asymptotic freedom follows from the lattice mode counting. Nine theorems are proved, all verified numerically.
+
+\bigskip
+\raggedright
+
 % ==================================================================
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -31,7 +51,7 @@
 % \usepackage{svg}  % no SVG figures in this document
 % \svgsetup{inkscapelatex=false,inkscapeformat=pdf,inkscapepath=svgdir}
 \usepackage{caption,float,booktabs,longtable,parskip,xcolor}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -111,6 +131,17 @@ is derived from a single 600-cell polytope at three structural levels:
 tetrahedral cells (strong), icosahedral vertices (weak), and radial
 shells (hypercharge).
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} SU(3) colour algebra, strong force, 600-cell lattice, gluon masslessness, asymptotic freedom, beta function, tetrahedral cage, Gell-Mann matrices, quark confinement
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The strong nuclear force, which binds quarks inside protons and neutrons, is governed by the SU(3) colour symmetry. In CPP, this symmetry emerges exactly from the tetrahedral cage faces of the 600-cell lattice. Each triangular face has three vertices that map to three colour charges, and the face permutations generate the eight Gell-Mann matrices of SU(3). Gluon masslessness follows from the topological closure of cage faces, and asymptotic freedom follows from the lattice mode counting. Nine theorems are proved, all verified numerically.
+
+\bigskip
+\raggedright
+
 
 \noindent\textbf{Keywords:} Conscious Point Physics, 600-cell lattice,
 SU(3) colour symmetry, strong interaction, quark confinement, asymptotic
@@ -1505,125 +1536,11 @@ Problem~\ref{op:glueball}; $\Lambda_{\rm QCD}$ from PSR open
 problem~\ref{op:lambda_psr}.
 
 %=====================================================================
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{18}
+\bibliographystyle{plainnat}
+\bibliography{cpp_strong_series}
 
-\bibitem{cpp_ss1}
-T.~L. Abshier and Grok,
-``Strong sector overview,''
-CPP SS \#1 v1, Hyperphysics Institute (2026).
 
-\bibitem{cpp_ss2}
-T.~L. Abshier and Grok,
-``SU(3)$_c$ from tetrahedral phase interference,''
-CPP SS \#2 v1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ss3}
-T.~L. Abshier and Grok,
-``The eight gluons as hDP structures,''
-CPP SS \#3 v1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ss4}
-T.~L. Abshier and Grok,
-``Confinement, asymptotic freedom, and the QCD $\beta$-function,''
-CPP SS \#4 v1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ss5}
-T.~L. Abshier and Grok,
-``Hadron spectrum: baryons, mesons, and the mass hierarchy,''
-CPP SS \#5 v1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ew_unified}
-T.~L. Abshier and Grok,
-``The electroweak sector from the 600-cell lattice: unified
-submission package,''
-CPP EW Unified v2.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ew2}
-T.~L. Abshier and Grok,
-``The W$^0$ bracelet and W$^\pm$ boson,''
-CPP EW \#2 v3.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ew5}
-T.~L. Abshier and Grok,
-``Emergent electroweak unification,''
-CPP EW \#5 v3, Hyperphysics Institute (2026).
-
-\bibitem{c14}
-T.~L. Abshier and Grok,
-``Quark confinement and the Cornell potential from qDP chaining,''
-CPP companion~C14, Hyperphysics Institute (2026).
-
-\bibitem{c15}
-T.~L. Abshier and Grok,
-``Color charge, fractional charge, and SU(3) from tetrahedral cage
-geometry,''
-CPP companion~C15, Hyperphysics Institute (2026).
-
-\bibitem{cpp5014}
-T.~L. Abshier and Grok,
-``Charge neutrality in baryons and emergent quark charges,''
-CPP-5014, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ss_mc}
-T.~L. Abshier and Grok,
-``CPP strong sector Monte Carlo verification,''
-\texttt{mc\_su3\_algebra.py},
-CPP/series\_strong, GitHub (2026).
-
-\bibitem{pdg2026}
-Particle Data Group,
-``Review of Particle Physics 2026,''
-\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
-
-\bibitem{gross1973}
-D.~J. Gross and F.~Wilczek,
-``Ultraviolet behavior of non-Abelian gauge theories,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{30}, 1343 (1973).
-
-\bibitem{politzer1973}
-H.~D. Politzer,
-``Reliable perturbative results for strong interactions,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{30}, 1346 (1973).
-
-\bibitem{gell-mann1962}
-M.~Gell-Mann,
-``Symmetries of baryons and mesons,''
-\textit{Phys.\ Rev.} \textbf{125}, 1067 (1962).
-
-\bibitem{bali2001}
-G.~S. Bali,
-``QCD forces and heavy quark bound states,''
-\textit{Phys.\ Rept.} \textbf{343}, 1 (2001).
-
-\bibitem{abshier_sr}
-T.~L. Abshier,
-``Mechanistic derivation of relativistic effects via Space Stress
-Vector,''
-viXra:2511.0062 (2025).
-
-\bibitem{stiffness_c}
-T.~L.~Abshier and Grok (xAI),
-\textit{Special Relativity from 600-Cell Lattice Dynamics}, v17,
-Hyperphysics Institute (2026).  Appendix~A.5 derives
-$\alpha_{\rm geom} = 3(11+5\sqrt{5})\sqrt{5+\sqrt{5}}/320
-\approx 0.55936$ from the H4 Voronoi stiffness integral and
-establishes $k_{\rm rel} = \alpha_{\rm geom}\,l_P^3/E_P$.
-Available: \texttt{CPP/600-cell-relativity\_emergence/} (GitHub).
-
-\bibitem{cpp_sm_paper2}
-T.~L.~Abshier and Grok (xAI),
-\textit{Mass Generation from Symmetry Breaking in the 600-Cell Lattice:
-A Semi-Empirical Approach}, Paper~2 v29,
-CPP/600-cell\_standard\_model\_emergence/papers/ (2026).
-Derives SM particle masses from $k_{\rm SM} = \alpha_{\rm geom}/(12\phig^2)$
-with zero free parameters beyond one electron-mass calibration anchor.
-
-\bibitem{morningstar1999}
-C.~J. Morningstar and M.~J. Peardon,
-``Analytic smearing of SU(3) link variables in lattice QCD,''
-\textit{Phys.\ Rev.\ D} \textbf{60}, 034509 (1999).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}

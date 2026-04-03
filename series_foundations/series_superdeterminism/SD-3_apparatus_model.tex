@@ -1,3 +1,12 @@
+% ============================================================
+% SD-3: Apparatus Model
+% Version 1.1 -- 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  -- Initial draft
+%   v1.1 2 Apr 2026 -- Formatting compliance
+% ============================================================
+
 % ==================================================================
 % Conscious Point Physics:
 % The CPP Apparatus Model:
@@ -7,14 +16,14 @@
 % GitHub: CPP/series_foundations/cpp_sd3_apparatus_model_v1.tex
 % ==================================================================
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{caption,float,booktabs,parskip,xcolor,array}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -98,6 +107,17 @@ grows as $\sqrt{N_q}$.  The signal-to-noise ratio for CPP detection
 scales as $\sqrt{N_q}$, making large-qubit processors the
 optimal testing ground.
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} apparatus model, decoherence timescale, measurement precision, quantum coherence trade-off, Nexus coupling, Planck-scale decoherence
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Quantum measurements require apparatus, and the apparatus itself is made of 600-cell lattice matter. This paper derives a quantitative trade-off between measurement precision and quantum coherence: the more precisely you set a measurement angle, the more the Nexus correlates that setting with the outcome. The decoherence timescale is about 10 to the minus 39 seconds --- the apparatus decoheres almost instantly at the Planck scale.
+
+\bigskip
+\raggedright
+
 
 \tableofcontents
 \newpage
@@ -630,79 +650,11 @@ dependence, and the 72°/120° angular periodicity --- together provide
 a complete, falsifiable experimental signature for CPP quantum
 foundations.
 
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{14}
+\bibliographystyle{plainnat}
+\bibliography{cpp_foundations_series}
 
-\bibitem{cpp_sd1}
-T.~L. Abshier,
-``The Nexus as superdeterministic mechanism,''
-CPP SD\#1 v1, Hyperphysics Institute (2026).
 
-\bibitem{cpp_sd2}
-T.~L. Abshier,
-``The 600-cell angular structure of Bell deviations,''
-CPP SD\#2 v1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_qm_series}
-T.~L. Abshier and Grok,
-``Quantum mechanics from the 600-cell lattice,''
-CPP QM Series 2040a--f v3.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp2040d}
-T.~L. Abshier and Grok,
-``Open quantum systems and the Lindblad equation,''
-CPP-2040d v3.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ew_unified}
-T.~L. Abshier and Grok,
-``The electroweak sector from the 600-cell lattice,''
-CPP EW Unified v2.1, Hyperphysics Institute (2026).
-
-\bibitem{hossenfelder2024}
-S.~Hossenfelder,
-``Why faster than light travel is possible after all,''
-YouTube lecture transcript (2024).
-
-\bibitem{hossenfelder_palmer}
-S.~Hossenfelder and T.~Palmer,
-``Rethinking superdeterminism,''
-\textit{Front.\ Phys.} \textbf{8}, 139 (2020).
-
-\bibitem{joos1985}
-E.~Joos and H.~D. Zeh,
-``The emergence of classical properties through interaction with
-the environment,''
-\textit{Z.\ Phys.\ B} \textbf{59}, 223 (1985).
-
-\bibitem{zurek1991}
-W.~H. Zurek,
-``Decoherence and the transition from quantum to classical,''
-\textit{Phys.\ Today} \textbf{44}(10), 36 (1991).
-
-\bibitem{bell1964}
-J.~S. Bell,
-``On the Einstein--Podolsky--Rosen paradox,''
-\textit{Physics} \textbf{1}, 195 (1964).
-
-\bibitem{li2018}
-M.-H. Li \textit{et al.},
-``Test of local realism into the past,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{121}, 080404 (2018).
-
-\bibitem{abshier_sr}
-T.~L. Abshier,
-``Mechanistic derivation of relativistic effects via Space Stress
-Vector,'' viXra:2511.0062 (2025).
-
-\bibitem{brouwer1989}
-A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
-\textit{Distance-Regular Graphs}, Springer (1989).
-
-\bibitem{pdg2026}
-Particle Data Group,
-``Review of Particle Physics 2026,''
-\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}

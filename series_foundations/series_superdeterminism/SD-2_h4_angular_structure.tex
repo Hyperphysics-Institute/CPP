@@ -1,3 +1,12 @@
+% ============================================================
+% SD-2: H4 Angular Structure
+% Version 1.1 -- 2 April 2026
+%
+% CHANGELOG:
+%   v1   Mar 2026  -- Initial draft
+%   v1.1 2 Apr 2026 -- Formatting compliance
+% ============================================================
+
 % ==================================================================
 % Conscious Point Physics:
 % The 600-Cell Angular Structure of Bell Deviations:
@@ -10,14 +19,14 @@
 % GitHub: CPP/series_foundations/cpp_sd2_h4_angular_structure_v1.tex
 % ==================================================================
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{caption,float,booktabs,parskip,xcolor,array}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
 
@@ -100,6 +109,17 @@ consequence of the same 600-cell volume ratio that was derived, not
 fitted, in the EW series.  Proof requires the full Nexus correlation
 function (SD\#4).
 \end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} H4 symmetry, angular correlations, cos(5 theta), Bell experiment, Nexus signature, 600-cell symmetry group, superdeterminism test
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The Nexus correction to quantum predictions has a specific angular pattern determined by the H4 symmetry group of the 600-cell. This paper derives the cos(5 theta) angular signature that distinguishes CPP superdeterminism from standard quantum mechanics. The prediction has never been tested but could be checked with sufficiently precise Bell experiments.
+
+\bigskip
+\raggedright
+
 
 \tableofcontents
 \newpage
@@ -733,69 +753,11 @@ angles.  Check the null result at $90°$.
 \noindent\textbf{Supplementary material:} All angular calculations
 at \texttt{CPP/series\_foundations/compute\_h4\_angles.py}.
 
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{12}
+\bibliographystyle{plainnat}
+\bibliography{cpp_foundations_series}
 
-\bibitem{cpp_sd1}
-T.~L. Abshier,
-``The Nexus as superdeterministic mechanism: Bell correlations,
-hidden variables, and the 600-cell angular signature,''
-CPP SD\#1 v1, Hyperphysics Institute (2026).
 
-\bibitem{cpp_ew_unified}
-T.~L. Abshier and Grok,
-``The electroweak sector from the 600-cell lattice,''
-CPP EW Unified v2.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_qm_series}
-T.~L. Abshier and Grok,
-``Quantum mechanics from the 600-cell lattice,''
-CPP QM Series 2040a--f v3.1, Hyperphysics Institute (2026).
-
-\bibitem{cpp_ss_unified}
-T.~L. Abshier and Grok,
-``The strong sector from the 600-cell lattice,''
-CPP SS Unified v2, Hyperphysics Institute (2026).
-
-\bibitem{bell1964}
-J.~S. Bell,
-``On the Einstein--Podolsky--Rosen paradox,''
-\textit{Physics} \textbf{1}, 195 (1964).
-
-\bibitem{hossenfelder_palmer}
-S.~Hossenfelder and T.~Palmer,
-``Rethinking superdeterminism,''
-\textit{Front.\ Phys.} \textbf{8}, 139 (2020).
-
-\bibitem{coxeter1973}
-H.~S.~M. Coxeter,
-\textit{Regular Polytopes}, 3rd ed., Dover (1973).
-
-\bibitem{brouwer1989}
-A.~E. Brouwer, A.~M. Cohen, and A.~Neumaier,
-\textit{Distance-Regular Graphs}, Springer (1989).
-
-\bibitem{humphreys1990}
-J.~E. Humphreys,
-\textit{Reflection Groups and Coxeter Groups},
-Cambridge University Press (1990).
-
-\bibitem{li2018}
-M.-H. Li \textit{et al.},
-``Test of local realism into the past without detection and
-locality loopholes,''
-\textit{Phys.\ Rev.\ Lett.} \textbf{121}, 080404 (2018).
-
-\bibitem{hensen2015}
-B.~Hensen \textit{et al.},
-``Loophole-free Bell inequality violation using electron spins,''
-\textit{Nature} \textbf{526}, 682 (2015).
-
-\bibitem{pdg2026}
-Particle Data Group,
-``Review of Particle Physics 2026,''
-\textit{Phys.\ Rev.\ D} \textbf{110}, 030001 (2026).
-
-\end{thebibliography}
+\section*{Acknowledgements}
+The CPP programme is registered at OSF (DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
 
 \end{document}
