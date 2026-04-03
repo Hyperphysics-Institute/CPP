@@ -87,7 +87,7 @@ CPP/
 │   └── cpp_references.bib       ← Aggregated from all local .bib files
 │
 ├── series_strong/               ← SS-1 + companions + notebooks
-├── series_standard_model/       ← SM-1 through SM-6 + documentation
+├── series_standard_model/       ← SM-1 through SM-7 + documentation
 ├── series_relativity/           ← SR-1 + 22 companion papers
 ├── series_electroweak/          ← EW-1 through EW-5
 ├── series_quantum_mechanics/    ← QM-1 through QM-6
