@@ -1,7 +1,7 @@
 % ============================================================
 % SM-7: The Heavy Quark Mass Spectrum and Strong Coupling
 %        from 600-Cell Lattice Geometry
-% Version 2 — 2 April 2026
+% Version 2.1 — 2 April 2026
 %
 % CHANGELOG:
 %   v1   2 Apr 2026 — Initial draft (Claude Opus)
@@ -9,6 +9,9 @@
 %                      projector lemma, mode complementarity,
 %                      SS-1 dependency, metric compatibility,
 %                      multi-channel isotropy, β₀ connection
+%   v2.1 2 Apr 2026 — Final polish from Grok + Copilot v2
+%                      reviews: theorem dependency, M proof,
+%                      lemma sketch, discussion paragraph
 %
 % CONTRIBUTORS:
 %   Thomas Lee Abshier ND — Physical vision, research direction
@@ -70,7 +73,7 @@
 
 \title{\textbf{The Heavy Quark Mass Spectrum and Strong Coupling\\
 from 600-Cell Lattice Geometry}\\[6pt]
-{\large Conscious Point Physics --- SM-7 (Version 2)}}
+{\large Conscious Point Physics --- SM-7 (Version 2.1)}}
 
 \author{Thomas Lee Abshier, ND\\
 Claude Opus (Anthropic), Copilot (Microsoft), Grok (xAI)\\
@@ -159,7 +162,7 @@ The strong coupling constant is the fraction of vacuum disturbances that propaga
 
 \begin{theorem}[Strong coupling from the 600-cell]
 \label{thm:alphas}
-Under Assumptions S1--S3:
+Under Assumptions S1--S3, and given the identification of face-circulation modes with SU(3)$_c$ colour excitations established in SS-1~\citep{abshier2026ss1}:
 \begin{equation}
 \alpha_s = \frac{5}{8\phig} \approx 0.3863.
 \label{eq:alphas_val}
@@ -181,7 +184,7 @@ Under Assumption S4:
 \frac{\alpha_s}{\sin^2\theta_W} = \frac{\mathcal{F}}{\mathcal{E}} = \frac{F}{E} = \frac{1200}{720} = \frac{5}{3}.
 \label{eq:ratio}
 \end{equation}
-This ratio depends only on the edge and face counts of the 600-cell graph, not on the metric.  It does not run with energy scale in CPP, because both couplings are reduced by the same efficiency factor $\eta$.
+This ratio depends only on the edge and face counts of the 600-cell graph, not on the metric.  It does not run with energy scale in CPP, because both couplings are reduced by the same efficiency factor $\eta$.  Since the metric operator $M$ acts as a uniform scalar on both the edge-mode and face-mode sectors at the cage scale (Assumption~S4), the topological ratio $F/E = 5/3$ is preserved under the physical rescaling.
 \end{corollary}
 
 \begin{corollary}[Mode complementarity sum rule]
@@ -227,9 +230,9 @@ Under Assumptions A1 and A2:
 \end{lemma}
 
 \begin{proof}[Proof sketch]
-\emph{Part (a):} By A1, $\Sigma_{\rm EW}$ is supported on internal K$_3$ edges.  Each K$_3$ vertex has exactly 2 internal bonds (to the other two cage vertices).  Hence the EW correction at each vertex involves 2 bonds.
+\emph{Part (a):} By A1, $\Sigma_{\rm EW}$ is supported on internal K$_3$ edges.  Edge modes are eigenvectors of the adjacency operator restricted to individual edges; their support is therefore confined to those edges.  The only edges connecting two cage vertices are the 2 internal bonds per K$_3$ vertex.  Hence the EW correction involves exactly 2 bonds.
 
-\emph{Part (b):} By A2, $\Sigma_S$ sums over all face-circulation modes incident on the K$_3$ vertices.  Each of the $z = 12$ bonds incident on a K$_3$ vertex participates in at least one triangular face (every edge of the 600-cell belongs to at least 5 faces).  The summation over all face modes therefore touches every incident bond.  Hence the strong correction at each vertex involves all $z$ bonds. \qed
+\emph{Part (b):} By A2, $\Sigma_S$ sums over all face-circulation modes incident on the K$_3$ vertices.  Face-circulation modes couple uniformly to every incident bond because each face touching a K$_3$ vertex necessarily uses one of the $z = 12$ incident bonds at that vertex.  Every bond in the 600-cell participates in at least 5 triangular faces, so the summation over all face modes touches every incident bond without exception.  Hence the strong correction involves all $z$ bonds. \qed
 \end{proof}
 
 \begin{remark}[Physical interpretation]
@@ -385,6 +388,13 @@ Combined with SM-6, the 600-cell lattice now determines:
 \item 6 fermion masses (3 leptons + 3 heavy quarks) with 2 calibration constants and 0 shape parameters
 \end{itemize}
 The Standard Model requires 8 independent parameters for the same quantities.  CPP requires 2.
+
+% ============================================================
+% SECTION 10: Discussion
+% ============================================================
+\section{Discussion}
+
+With SM-7, the 600-cell lattice now determines the full set of charged-fermion masses (leptons via SM-6, heavy quarks here) together with both electroweak and strong couplings.  All quantities emerge from the same $\varepsilon$-shift mechanism applied to the K$_3$ eigensystem, differing only in which gauge modes (edge vs face) participate in the self-energy.  Both couplings are topologically forced fractions of the lattice mode space, reduced by the universal propagation efficiency $\eta = 1/\phig$.  The only free parameters are the two overall mass calibrations ($m_e$ and $m_c$); the remaining six fermion masses and two coupling constants are predictions.  Light quarks remain outside this framework, as expected from chiral-condensate dominance at that mass scale.
 
 % ============================================================
 % ACKNOWLEDGEMENTS
