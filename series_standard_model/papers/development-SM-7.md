@@ -155,8 +155,69 @@ This is consistent with the mode interpretation: edge modes are localised on ind
 | 2 Apr, 3:45 PM MDT | Full summit computation: masses, mutual reinforcement, scorecard |
 | 2 Apr, 4:00 PM MDT | Thomas: "Let's draft the paper" |
 | 2 Apr, 4:30 PM MDT | SM-7 v1 drafted, compiled, verified |
+| 2 Apr, 5:00 PM MDT | Review prompts sent to Grok, Copilot, Sonnet 4.0 |
+| 2 Apr, 5:30 PM MDT | Grok review: A-grade, recommends mode-complementarity framing |
+| 2 Apr, 6:00 PM MDT | Copilot review: referee-grade, provides projector lemma (A1/A2) |
+| 2 Apr, 6:15 PM MDT | Copilot v2: formal theorem S1-S4, corollary on mode partition |
+| 2 Apr, 7:00 PM MDT | SM-7 v2 incorporates all 7 review changes |
+| 2 Apr, 7:30 PM MDT | Grok v2 + Copilot v2: "Coherent, defensible, referee-grade" |
+| 2 Apr, 8:00 PM MDT | SM-7 v2.1 with 4 final polish items from both reviewers |
+| 2 Apr, 8:30 PM MDT | Sonnet 4.0 hostile review: REJECT (10 issues raised) |
+| 2 Apr, 9:00 PM MDT | Point-by-point response: 3 valid, 4 partial, 3 wrong |
+| 2 Apr, 9:30 PM MDT | Thomas: "Call everything an axiom that looks like one" |
+| 2 Apr, 10:00 PM MDT | Axiom Registry created (10 axioms, 9 predictions) |
+| 2 Apr, 10:30 PM MDT | Copilot: Edge Abelianity / Face Non-Abelianity physical axioms |
+| 2 Apr, 11:00 PM MDT | Thomas + Copilot: displacement-circulation mechanism discovered |
+| 3 Apr, 12:00 AM MDT | Grok endorses: "the 'circulation' word is now earned" |
+| 3 Apr, 12:30 AM MDT | SM-7 v2.2: Physical Axioms block incorporated |
+| 3 Apr, 1:00 AM MDT | Axiom Registry updated with displacement mechanism |
 
 ---
 
-*Document prepared by Claude Opus (Anthropic), 2 April 2026.*
-*Based on collaborative work with Thomas Lee Abshier ND.*
+## V2 → V2.2 Development: The Physical Axioms
+
+### V2 (review incorporation)
+
+Grok recommended reframing the coupling sum rule as "mode complementarity" rather than "gauge coupling unification" to avoid overclaiming. Copilot provided the projector lemma (Assumptions A1 Edge Locality + A2 Face Saturation) that derives the 2-vs-12 bond-count asymmetry from the edge/face projector structure. Both recommended making the SS-1 dependency explicit. Seven changes incorporated.
+
+### V2.1 (final polish)
+
+Both reviewers independently recommended the same 4 minor additions: (a) SS-1 dependency in theorem statement, (b) one-sentence M preserves F/E justification, (c) strengthened lemma proof sketch, (d) Discussion section. All incorporated.
+
+### Sonnet 4.0 hostile review
+
+Sonnet rejected SM-7 with 10 issues. Three were valid and actionable: (1) the gap between "faces generate SU(3) algebra" and "face fraction = α_s", (4) mass scheme chosen post-hoc, (7) no statistical assessment. Four were partially valid but overstated. Three were wrong (SS-1 "unverified" — it's in the same repo; signs of forces confused eigenvalue perturbation with inter-particle force; mutual reinforcement called "circular" when one number comes from PDG and the other from combinatorics).
+
+### Thomas's axiom philosophy
+
+Thomas proposed: "Let's just call everything an axiom that looks like one, and let's see if they show up over and over, or do the axioms just continue to multiply." This led to the Axiom Registry — a living document tracking every postulated rule, every prediction, and the ratio between them. Current status: 10 axioms, 9 predictions, ratio improving with each paper.
+
+### The displacement-circulation discovery (late evening, 2 April)
+
+Thomas questioned whether "circulation" was literal or metaphorical for face modes. Initial analysis suggested it was metaphorical — the physics is bond-state renegotiation, not literal flow around a triangle. But Thomas then realised: when any bond is tensioned, the displacement MUST propagate to the other bonds sharing vertices. In a triangular loop, this displacement literally circulates. This insight:
+
+1. Made "face-bond circulation" physically real, not just mathematical language
+2. Explained the 8 colour modes as 8 standing-wave patterns on a 3-bond ring
+3. Provided a confinement mechanism: energy trapped in closed loop until transferred
+4. Grounded non-Abelianity in displacement-order dependence (each pulse changes the conditions for the next)
+
+Copilot formalized this as Axioms A (Edge Abelianity) and B (Face-Bond Circulation). Grok endorsed: "the 'circulation' word is now earned." The axiom set collapsed from A6+A7 (two separate labels) to the Walk-Dimension Gauge Principle (one structural principle with physical mechanism).
+
+### V2.2 (physical axioms incorporated)
+
+SM-7 v2.2 adds §3 "Physical Axioms for Gauge Structure at the Cage Scale" with formal Axiom A6 (Edge Abelianity) and Axiom A7 (Face-Bond Circulation), the Walk-Dimension Gauge Principle remark, and cross-references from the projector lemma and bond-participation sections. The paper now answers Sonnet's hardest objection with a physical mechanism rather than an algebraic citation.
+
+---
+
+## Open Problems (updated)
+
+1. **OPEN-P-SM-7-1:** Running of α_s from bare 5/(8φ) to PDG α_s(M_Z) = 0.118 via CPP Dipole Sea corrections (connection to SS-1 β₀ = 7)
+2. **OPEN-P-SM-7-2:** Rigorous proof of face saturation (A2) from 600-cell Green's function
+3. **OPEN-P-SM-7-3:** Formal connection between operational mode-fraction coupling and perturbative gauge coupling at cage scale
+4. **OPEN-P-SM-7-4:** CPP prediction for which mass scheme satisfies K = 2/3 (candidate: MS-bar at μ = m_q)
+5. **OPEN-P-SM-7-5:** Length-4 cell modes — what gauge sector do they carry? (Higgs? Gravity?)
+
+---
+
+*Document updated 3 April 2026 by Claude Opus (Anthropic).*
+*Based on collaborative work with Thomas Lee Abshier ND, Grok (xAI), and Copilot (Microsoft).*

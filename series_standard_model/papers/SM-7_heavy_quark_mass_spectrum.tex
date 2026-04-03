@@ -1,7 +1,7 @@
 % ============================================================
 % SM-7: The Heavy Quark Mass Spectrum and Strong Coupling
 %        from 600-Cell Lattice Geometry
-% Version 2.1 — 2 April 2026
+% Version 2.2 — 3 April 2026
 %
 % CHANGELOG:
 %   v1   2 Apr 2026 — Initial draft (Claude Opus)
@@ -12,6 +12,9 @@
 %   v2.1 2 Apr 2026 — Final polish from Grok + Copilot v2
 %                      reviews: theorem dependency, M proof,
 %                      lemma sketch, discussion paragraph
+%   v2.2 3 Apr 2026 — Physical Axioms for gauge structure
+%                      (displacement circulation mechanism),
+%                      Walk-Dimension Gauge Principle (A6')
 %
 % CONTRIBUTORS:
 %   Thomas Lee Abshier ND — Physical vision, research direction
@@ -62,6 +65,7 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{axiom}{Axiom}[section]
 
 % Standard CPP macros
 \newcommand{\lP}{l_P}
@@ -73,7 +77,7 @@
 
 \title{\textbf{The Heavy Quark Mass Spectrum and Strong Coupling\\
 from 600-Cell Lattice Geometry}\\[6pt]
-{\large Conscious Point Physics --- SM-7 (Version 2.1)}}
+{\large Conscious Point Physics --- SM-7 (Version 2.2)}}
 
 \author{Thomas Lee Abshier, ND\\
 Claude Opus (Anthropic), Copilot (Microsoft), Grok (xAI)\\
@@ -81,7 +85,7 @@ Hyperphysics Institute\\
 \url{https://hyperphysics.com}\\
 \texttt{drthomas007@protonmail.com}}
 
-\date{2 April 2026}
+\date{3 April 2026}
 
 \begin{document}
 \maketitle
@@ -146,7 +150,40 @@ This derivation rests on four explicit assumptions, following the convention est
 \end{description}
 
 % ============================================================
-% SECTION 3: The Strong Coupling from Spectral Traces
+% SECTION 3: Physical Axioms for Gauge Structure
+% ============================================================
+\section{Physical Axioms for Gauge Structure at the Cage Scale}
+\label{sec:gauge_axioms}
+
+Assumptions S2 identifies edge modes with the abelian sector and face modes with the non-abelian sector.  This section provides the physical mechanism that makes this identification inevitable, rather than merely algebraically convenient.
+
+\begin{axiom}[Edge Abelianity --- Electromagnetic Sector (A6)]
+\label{ax:abelian}
+At the 600-cell cage scale, an edge-based interaction is modelled as transport along one-dimensional edge chains of qDP bonds.  At each step the field changes only a single scalar degree of freedom (bond tension or strength).  Reversing any path exactly undoes the transport, and the composition of transports along any two edge paths $\gamma_1$ and $\gamma_2$ between the same endpoints is path-independent and commutative:
+\begin{equation}
+U(\gamma_1)\,U(\gamma_2) = U(\gamma_2)\,U(\gamma_1).
+\end{equation}
+This realises an effective Abelian gauge structure (U(1)-type).  Physically, this encodes the CPP electric interaction as a linear push--pull force with polarity, no internal orientation, and no memory of the route taken.
+\end{axiom}
+
+\begin{axiom}[Face-Bond Circulation --- Strong Sector (A7)]
+\label{ax:nonabelian}
+At the 600-cell cage scale, a face-based interaction is modelled as displacement propagation on the three qDP bonds forming a closed triangular K$_3$ loop.  Tensioning any one bond (by ZBW oscillation, SSV$_{\rm abs}$ shift, partner switching, or collision) generates a displacement pulse that propagates through the shared vertices into the other two bonds, forming a literal circulating pulse on the closed loop.  The triangular ring of three coupled bonds supports exactly eight independent standing-wave patterns: three diagonal DC asymmetries between bond tensions (analogous to $\lambda_3$ and $\lambda_8$), four off-diagonal AC oscillation patterns between pairs of bonds, and one symmetric breathing mode (the colour singlet).
+
+Because each vertex response depends on the instantaneous local frame (SSV$_{\rm abs}$), which itself has been modified by the preceding pulse, the net bond-state configuration after two successive displacements is order-dependent:
+\begin{equation}
+U(\gamma_1)\,U(\gamma_2) \neq U(\gamma_2)\,U(\gamma_1).
+\end{equation}
+This is the operational hallmark of a non-Abelian gauge structure (SU(3)-type).  The energy remains confined within the closed triangular loop until the entire displacement pattern is transferred to an adjacent face or the triangle is broken (hadronisation).  Physically, this encodes the CPP strong interaction as volumetric, always-attractive, direction-dependent, and sensitive to the local geometric frame.
+\end{axiom}
+
+\begin{remark}[Walk-Dimension Gauge Principle]
+\label{rem:walkdim}
+Axioms A6 and A7 are two consequences of a single structural principle: the \emph{dimensionality of the lattice walk} determines commutativity.  One-dimensional edge chains commute because there is only one degree of freedom per step.  Two-dimensional face loops do not commute because the Lorentzian, time-evolving lattice geometry shifts the local frame between steps.  Given these axioms, the identification of edge modes with U(1) and triangular face-bond circulation modes with SU(3)$_c$ (as proved algebraically in SS-1~\citep{abshier2026ss1}) follows as a direct structural consequence of the 600-cell geometry and the qDP bond dynamics.
+\end{remark}
+
+% ============================================================
+% SECTION 4: The Strong Coupling from Spectral Traces
 % ============================================================
 \section{The Strong Coupling from Spectral Traces}
 \label{sec:alphas}
@@ -162,7 +199,7 @@ The strong coupling constant is the fraction of vacuum disturbances that propaga
 
 \begin{theorem}[Strong coupling from the 600-cell]
 \label{thm:alphas}
-Under Assumptions S1--S3, and given the identification of face-circulation modes with SU(3)$_c$ colour excitations established in SS-1~\citep{abshier2026ss1}:
+Under Assumptions S1--S3, and given the identification of face-bond circulation modes with SU(3)$_c$ colour excitations (Axiom~\ref{ax:nonabelian}; algebraically established in SS-1~\citep{abshier2026ss1}):
 \begin{equation}
 \alpha_s = \frac{5}{8\phig} \approx 0.3863.
 \label{eq:alphas_val}
@@ -217,7 +254,7 @@ Let $P_C : \mathbb{C}^V \to \mathbb{C}^C$ be the vertex projector onto the K$_3$
 
 \begin{description}
 \item[A1 (Edge locality).] The EW self-energy operator $\Sigma_{\rm EW} = P_C P_E A P_E^\dagger P_C^\dagger$, when localised by $P_C$, has support on the \emph{internal K$_3$ edges} only.  Each edge mode lives on a single edge; the only edges that connect two cage vertices are the internal bonds.
-\item[A2 (Face saturation).] The strong self-energy operator $\Sigma_S = P_C P_F A P_F^\dagger P_C^\dagger$, when localised by $P_C$, has support on \emph{all bonds incident to each K$_3$ vertex}.  Each face touching a K$_3$ vertex uses one of the $z$ incident bonds; summing over all face-circulation modes touches every bond in the closed neighbourhood.
+\item[A2 (Face saturation).] The strong self-energy operator $\Sigma_S = P_C P_F A P_F^\dagger P_C^\dagger$, when localised by $P_C$, has support on \emph{all bonds incident to each K$_3$ vertex}.  Each face-bond circulation mode (Axiom~\ref{ax:nonabelian}) touching a K$_3$ vertex uses one of the $z$ incident bonds; summing over all face-bond modes touches every bond in the closed neighbourhood.
 \end{description}
 
 \begin{lemma}[Edge vs face bond participation at the K$_3$ cage]
@@ -236,7 +273,7 @@ Under Assumptions A1 and A2:
 \end{proof}
 
 \begin{remark}[Physical interpretation]
-Edge modes are \emph{one-dimensional} objects (a DI-bit hops along a single edge and returns).  They couple to the specific edge they traverse --- and the only edges connecting cage vertices are internal bonds.  Face-circulation modes are \emph{two-dimensional} objects (a DI-bit circulates around a triangular face).  Every face touching a cage vertex uses one of that vertex's bonds, so the face modes collectively fill the entire local neighbourhood.  This is the projector-level basis for the physical statement: ``the abelian field is edge-localised; the colour field is volume-filling.''
+Edge modes are \emph{one-dimensional} transports (Axiom~\ref{ax:abelian}): a single qDP bond changes tension and reverses.  They couple only to internal cage bonds.  Face-bond circulation modes are \emph{two-dimensional} transports (Axiom~\ref{ax:nonabelian}): displacement pulses propagate around a closed triangular loop of three qDP bonds, touching every incident bond in the neighbourhood.  The factor-of-6 difference in bond participation (2 for edge modes versus 12 for face-bond circulation modes) is the direct geometric consequence of the Walk-Dimension Gauge Principle (Remark~\ref{rem:walkdim}) applied to the 600-cell adjacency structure.
 \end{remark}
 
 % ============================================================
