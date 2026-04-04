@@ -51,6 +51,7 @@ Conscious Point Physics derives the Standard Model from the geometry of the 600-
 | `theory-overview.md` | Current state of all results, what's proved, what's open |
 | `axiom-registry.md` | The 10 axioms, 17 predictions, and growth trajectory |
 | `founders_vision.md` | Thomas's physical intuition — the mental model behind the math |
+| `master_glossary.md` | All CPP terms, acronyms, particles, forces, and processes |
 
 **Read these BEFORE doing paper production:**
 
@@ -64,6 +65,7 @@ Conscious Point Physics derives the Standard Model from the geometry of the 600-
 
 | File | Content |
 |------|---------|
+| `master_glossary.md` | All CPP terms, acronyms, forces, particles, processes |
 | `postulates_and_theorems.md` | Formal axioms (AXIM), theorems (THEO), corollaries |
 | `predictions.md` | Every quantitative prediction with status |
 | `open_problems/` | 50+ registered problems with OPEN-P numbers |
@@ -201,6 +203,7 @@ CPP/
 |----------|----------------|
 | `theory-overview.md` | Add new results, update scorecard |
 | `axiom-registry.md` | Check axiom usage, add predictions, update growth table |
+| `master_glossary.md` | Add new terms, acronyms, particles, processes |
 | `README.md` | Add paper to Registered Papers table, update count |
 | `INDEX.md` | Add new files/folders |
 | `paper_catalog.md` | Add paper entry |

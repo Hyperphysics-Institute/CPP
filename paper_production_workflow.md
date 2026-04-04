@@ -214,11 +214,36 @@ series_[name]/development-transcripts/
 
 ## Phase 9: Repository Housekeeping
 
+**Update every affected document after each paper.**
+
+### 9a. Theory-state documents (update content)
+
+| Document | What to update |
+|----------|----------------|
+| `theory-overview.md` | Add new results to scorecard, update formula card, open problems |
+| `axiom-registry.md` | Check axiom usage, add predictions, update growth table |
+| `master_glossary.md` | Add any new terms, acronyms, particles, or processes introduced |
+| `founders_vision.md` | Add any new physical intuitions captured during the session |
+| `predictions.md` | Add new quantitative predictions with status |
+| `postulates_and_theorems.md` | Add new theorems (THEO), corollaries (CORO), conjectures (CONJ) |
+| `propositions.md` | Add new physically motivated claims |
+| `solution_candidates.md` | Update if open problems were addressed |
+| `open_problems/` | Register new OPEN-P entries; close solved ones |
+
+### 9b. Navigation documents (update structure)
+
+| Document | What to update |
+|----------|----------------|
+| `README.md` | Add paper to Registered Papers table, update count, strongest results |
+| `INDEX.md` | Add new files and folders |
+| `paper_catalog.md` | Add paper entry with ID, title, version, status |
+| `series_[name]/README.md` | Add paper to series table |
+
+### 9c. Final steps
+
 1. Push all new files to GitHub.
-2. Update `series_[name]/README.md` with new paper in table.
-3. Update top-level `INDEX.md` and `paper_catalog.md`.
-4. Update `founders_vision.md` if new physical intuitions were captured.
-5. Verify all links in OSF wiki still work.
+2. Verify all links in OSF wiki still work.
+3. Confirm no stale references in README or INDEX.
 
 **Output:** Clean, up-to-date repository.
 
@@ -245,7 +270,16 @@ Date registered on OSF:
 [ ] Phase 6: PDF uploaded to OSF, wiki updated
 [ ] Phase 7: Documentation suite (8 files)
 [ ] Phase 8: Transcripts curated and filed
-[ ] Phase 9: GitHub pushed, READMEs updated
+[ ] Phase 9a: theory-overview.md updated
+[ ] Phase 9a: master_glossary.md updated
+[ ] Phase 9a: founders_vision.md updated (if new intuitions)
+[ ] Phase 9a: predictions.md updated (if new predictions)
+[ ] Phase 9a: postulates_and_theorems.md updated (if new theorems)
+[ ] Phase 9b: README.md updated
+[ ] Phase 9b: INDEX.md updated
+[ ] Phase 9b: paper_catalog.md updated
+[ ] Phase 9b: series README updated
+[ ] Phase 9c: GitHub pushed, links verified
 ```
 
 ---
