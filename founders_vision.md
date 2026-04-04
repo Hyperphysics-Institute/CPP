@@ -40,9 +40,23 @@ The entries below are organised by entity and interaction, not by paper or chron
 
 ## Part II: The Composite Entities
 
-### 5. The Tetrahedral Cage (Electron, Quarks)
+### 5. The Tetrahedral Cage (Electron, Quarks, Baryons)
 
-*[To be filled. Seed questions: How does a cage form? What holds it together? What does it look like? How big is it relative to the lattice spacing? What happens inside the cage that we call "mass"? How does the cage move through the lattice?]*
+The fundamental cage structure in CPP is the tetrahedron — 4 vertices, 6 edges, 4 triangular faces. But it appears in different forms depending on the particle:
+
+**Lepton cages** (electron, muon, tau): The K₃ triangular face is the spectral structure that generates K = 2/3 and the Koide phase. The fourth vertex (tetrahedral apex) participates in the full cage stability but is not part of the K₃ mass-generating face.
+
+**Baryon cages** (proton, neutron): *Source: Thomas's description, 3 April 2026:*
+
+A baryon consists of 3 quarks bonded to 3 vertices of a **hybrid tetrahedron**. The hybrid tetrahedron is composed of two hDPs (hybrid Dipole Pairs), each of which is a qCP (quark-type Conscious Point) paired with an eCP (electric-type Conscious Point). Three quarks bond to three vertices of this hybrid tetrahedral scaffold, leaving the fourth apex open. That open vertex is the nuclear bonding site — where protons and neutrons connect to form nuclei. The electrical polarity at the open vertex is correct for nuclear attraction, and the colour force between apices is inherently attractive.
+
+Thus, the triangular face of the baryon is WHERE the three quarks sit. This is why the colour charge algebra — SU(3) from 3 vertices on K₃ — describes the inter-quark force: the quarks ARE the three vertices of one face of the tetrahedral cage.
+
+**Meson structure** (prototype gluon bond): *Source: Thomas's description, 3 April 2026:*
+
+A meson is trivially a single bond between two quarks of opposite colour charge, plus a cohort of qDP chains (gluon bonds) that form between them. This is the prototype gluon bond. It can stretch, fray, break, and hadronise. When stretched beyond the restoring force maximum (the right side of the quark dissociation curve), qDP bonds fray and thermalise with increasing distance. Eventually only a single DP binds the quark-antiquark pair. That last DP splits, and the two now-unpaired qCPs become nucleation points around which new quarks form. This is the CPP mechanism for quark confinement: it is impossible to isolate a quark because pulling one apart always produces a new quark-antiquark pair.
+
+*[Further seed questions: How does a cage form? What holds it together? How does the cage move through the lattice? What determines which three vertices the quarks bond to? Is the hybrid tetrahedron pre-existing or does it form during quark binding? How does the fourth vertex select its bonding partner in nuclear formation?]*
 
 ### 6. The qDP Chain (Gluon Bond)
 
@@ -74,7 +88,27 @@ The color force is always attractive. There will be a one-on-one relationship be
 
 Any time there is a tensioning of any of the bonds, the displacement will unavoidably be transmitted to the other three bonded CPs. This displacement will thus propagate, interfere, reinforce, and in effect circulate. The displacement pulses from collision, or the other methods, will propagate, and in effect circulate until that energetic/displacement/order propagation is transferred to another entity.
 
-*Formalised as Axiom A7 (Face-Bond Circulation): displacement pulses propagate around closed triangular K₃ loops. The 8 standing-wave patterns = 8 colour states. Order-dependent because each pulse changes the vertex SSV_abs. Energy trapped in loop = confinement.*
+*Initial formalisation: Axiom A7 (Face-Bond Circulation): displacement pulses propagate around closed triangular K₃ loops. The 8 standing-wave patterns = 8 colour states. Order-dependent because each pulse changes the vertex SSV_abs. Energy trapped in loop = confinement.*
+
+*Source: Thomas's correction and extension, 3 April 2026 (Opus session):*
+
+**The tetrahedral resonant cavity:** The physical cage is a tetrahedron, not an isolated triangle. Every vertex connects to three triangular faces. A displacement pulse arriving at any vertex radiates into all three connected faces, not just the face it came from. The wave reflects and splits at each of the 4 junctions. The physical displacement doesn't stay on one K₃ face — it bounces through the entire tetrahedral frame.
+
+**Thomas's description of the wave dynamics:** "Pulling on or displacing one of the apex CPs sends a compression wave through the qDP chains. The wave propagates down both triangular edges to the base, stretching and compressing alternately. This distention-compression wave propagates down both sides, across the base, back up the opposite sides, returning to the originating apex. But each apex is connected to three triangles, each of which are oscillating and transmitting and reflecting the wave. So there are always 4 source radiators that transmit the incoming wave onto the other two edges, and back down the edge from which it came."
+
+**Thomas's observation on standing vs traveling waves:** "There may be a standing wave, but probably not. It is probably a traveling wave in the superposition that moves at a different rate than the distention-compression wave that initiated the oscillation, due to the influence of a rogue-wave superposition of SSV_net from the environment or from a particulate collision."
+
+**Why the colour algebra still lives on the K₃ face despite the tetrahedral cavity:** The resolution comes from the baryon structure. A baryon consists of 3 quarks bonded to 3 of the 4 vertices of a hybrid tetrahedron. The quarks ARE the three vertices of one K₃ face. The fourth vertex (the open apex) is the nuclear bonding site, not a quark site. So the colour interaction between quarks — the SU(3) algebra with its 8 generators — acts on the 3 quark-bearing vertices, which form a triangle. The K₃ face is not an abstraction; it is the literal geometric arrangement of quarks inside a baryon.
+
+**Synthesis — Resolving the triangle vs tetrahedron tension:**
+
+The SU(3) colour algebra (8 generators from 3 vertices) describes the *symmetry structure* of the colour interaction. It lives on the K₃ face because that's where the 3 quarks sit. This is mathematics — it's about how 3 objects can be asymmetrically related.
+
+The *physical implementation* of those 8 patterns is traveling displacement pulses that bounce through the entire 6-edge, 4-vertex, 4-face tetrahedral frame, reflecting and splitting at each vertex. The tetrahedron acts as a resonant cavity. The time-averaged displacement pattern on the quark-bearing K₃ face decomposes into the 8 Gell-Mann modes, but the instantaneous wave state is a superposition of traveling pulses that span the whole cage.
+
+The inter-face coupling through shared edges IS the confinement mechanism: colour energy that enters one face is redistributed to all four faces, and it can never escape the tetrahedron because every edge leads to another vertex inside the cage. The energy circulates indefinitely — it is trapped — and this trapping is what we observe as quark confinement.
+
+**Revised formalisation:** Axiom A7 should read "tetrahedral bond circulation" rather than "triangular loop circulation." The SU(3) algebra comes from the K₃ face structure (3 quark vertices → 8 generators). The physical confinement comes from the full tetrahedral cavity (4 faces × 6 edges × 4 splitting junctions → closed resonant system).
 
 ### 10. The Space Stress Vector (SSV)
 
@@ -154,6 +188,24 @@ This section collects Thomas's key physical descriptions from working sessions, 
 **Thomas's words:** "Let's just call everything an axiom that looks like one, and let's see if they show up over and over, or do the axioms just continue to multiply... CPP is essentially an infinitely flexible theory, in terms of the content/mode of action of the axiom, because consciousness can be programmed to do anything. The only question is whether the number of axioms continues to rise or levels off toward an asymptote."
 
 **Formalised as:** The Axiom Registry (axiom-registry.md), tracking the axiom-to-prediction ratio across the programme.
+
+### 3 April 2026 — Tetrahedral Resonant Cavity and Baryon Structure (Opus session)
+
+**Context:** Thomas questioned whether colour modes could really live on a single triangular face, since the physical cage is a tetrahedron with waves radiating through all four faces.
+
+**Thomas's words:** "Every vertex of the tetrahedron is the apex of three triangles... each CP apex is connected to three triangles, each of which are oscillating and transmitting and reflecting the wave. Thus, there are always 4 source radiators... It is probably a traveling wave in the superposition..."
+
+**Thomas's resolution:** The 3 quarks in a baryon bond to 3 vertices of a hybrid tetrahedron, forming one K₃ face. The 4th vertex is the nuclear bonding site. So the colour algebra lives on the quark-bearing face because the quarks ARE the three vertices of that face. The tetrahedral frame is the resonant cavity; the K₃ face is where the colour charges sit.
+
+**Formalised as:** Updated Axiom A7 (tetrahedral bond circulation), Section 9 of this document, and OPEN-P item: how inter-face couplings modify the 8 colour modes.
+
+### 3 April 2026 — Meson Dissociation and Quark Confinement Mechanism (Opus session)
+
+**Context:** Thomas described the meson as the prototype gluon bond, and how quark confinement emerges from DP splitting.
+
+**Thomas's words:** "Pulling apart a plus/minus qDP that was the last part of the last DP binding two distended quarks. The last DP splits, using the now unpaired qCPs as the nucleation point around which the new quark forms... Thus, the concept of quark confinement appears."
+
+**Formalised as:** Entry in Section 5 (Tetrahedral Cage) of this document; mechanism-level description of confinement via DP fraying and hadronisation. Not yet formalised in any paper — candidate for future SS-series paper.
 
 ---
 
