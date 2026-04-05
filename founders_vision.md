@@ -4,7 +4,7 @@
 **Document type:** Physical intuition narrative — the founder's mental model
 **Location:** `/CPP/founders_vision.md`
 **Purpose:** To capture, in Thomas's own voice and physical language, the way CPP works as an imagined world — not the equations, but the stories beneath them
-**Last updated:** 3 April 2026
+**Last updated:** 4 April 2026
 
 ---
 
@@ -14,198 +14,298 @@ This is not a paper, not a proof, not a derivation. This is the founder's descri
 
 Every paper in the CPP repository began as a physical picture in Thomas Abshier's mind. The mathematics came second, as a way to formalise that picture. This document preserves the picture itself, in the language Thomas uses to describe it, so that future readers (and future AI collaborators) can reconstruct the mental model that generated the theory.
 
-The entries below are organised by entity and interaction, not by paper or chronology. Each section describes what happens physically — what a reader should visualise — before any formalism is introduced.
-
 ---
 
 ## Part I: The Fundamental Entities
 
 ### 1. The Conscious Point (CP)
 
-*[To be filled from Thomas's descriptions. Seed questions: What is a CP? What does it perceive? How does it decide what to do? What is the difference between a positive and negative CP? What does "conscious" mean here — awareness, responsiveness, both?]*
+*[To be filled. Seed questions: What is a CP? What does it perceive? How does it decide what to do? What is the difference between a positive and negative CP? What does "conscious" mean here — awareness, responsiveness, both?]*
 
 ### 2. The Grid Point and the 600-Cell Lattice
 
-*[To be filled. Seed questions: What does the lattice look like? Why 120 vertices? What does a CP experience as its "neighbourhood"? How does the lattice feel different from empty space? What is the relationship between the lattice and the DP Sea?]*
+*Source: Thomas's description, 4 April 2026:*
 
-### 3. The Dipole Pair (DP) and the DP Sea
+The 600-cell lattice is not a single grid at one scale. It is a hierarchy of 600-cells nested at progressively finer scales. Every Grid Point is simultaneously a vertex in many 600-cells of different sizes. The finer/tighter lattice with fewer GPs between vertices is realised along edges. Each GP is the vertex in an ever-larger scale 600-cell lattice.
 
-*[To be filled. Seed questions: What is a DP? How does it form? What does the DP Sea look like from the inside? How dense is it? What does it feel like to be a CP surrounded by DPs? How does the Sea respond to a passing particle?]*
+**SSV_abs selects the subgraph:** The SSV_abs at a CP's current Grid Point determines which 600-cell subgraph governs its next advance. Higher SSV_abs means a finer subgraph, shorter edge length, shorter displacement per Absolute Moment, and slower effective time. The CP doesn't hop a shorter distance on the same lattice — it hops on a finer lattice within the nested hierarchy. This is the geometric mechanism behind the PSR formula from SR-1.
+
+**Occupancy:** CPs do not fully occupy every GP. The DP Sea is the set of all paired CPs sitting on GPs. Not all GPs are filled. The lattice is the mathematical scaffolding; the DP Sea is the physical medium. Density varies: dense but not full at STP; becoming less dense as the universe expands; higher near massive objects; approaching (but probably not reaching) 100% inside black holes. The occupancy fraction at STP is an empirical question.
+
+**Implication for bond-counting:** The z=12 coordination number in SM-6 and SM-7 is the full-occupancy limit. The effective coordination number is z_eff = (occupancy fraction) x 12. At STP, z_eff is approximately 12. The small residuals in SM-6/SM-7 predictions may partly reflect occupancy being slightly less than 1.
+
+### 3. The Vacuum Medium: The Mixed DP/hTetra Sea
+
+*Source: Thomas's description, 4 April 2026:*
+
+**Original ontology:** The vacuum is a "DP Sea" — Dipole Pairs filling space.
+
+**Revised ontology:** The vacuum is a mixed medium containing multiple species:
+
+| Species | Composition | Properties |
+|---------|-------------|------------|
+| eDP | +eCP / -eCP | Electric Dipole Pair |
+| qDP | +qCP / -qCP | Quark Dipole Pair |
+| hDP (type A) | +eCP / -qCP | Hybrid Dipole Pair |
+| hDP (type B) | -eCP / +qCP | Hybrid Dipole Pair |
+| hTetra | 2 eCPs + 2 qCPs | Hybrid Tetrahedron |
+
+The hTetra has 6 edges: 4 attractive ZBW bonds and 2 repulsive bonds on opposite edges. hTetras chain together via double attractive bonds at each link point, making them more stable than simple DP chains. Each attractive bond stores ZBW energy, probably an h-bar unit of action.
+
+The hTetra requires activation energy to assemble (4 CPs in specific geometry). The early universe first formed simple DPs; as it cooled, some fraction reorganised into hTetras. This freezing event is a cosmological phase transition. The relative abundances at STP are empirical questions.
 
 ### 4. The DI-Bit (Displacement Increment)
 
-*[To be filled. Seed questions: What is a DI-bit? Is it a thing or a relationship? What does it carry? How does it know where to go? What happens when DI-bits from different sources meet at the same point?]*
+*[To be filled. Seed questions: What is a DI-bit? Is it a thing or a relationship? What does it carry? How does it know where to go?]*
 
 ---
 
 ## Part II: The Composite Entities
 
-### 5. The Tetrahedral Cage (Electron, Quarks, Baryons)
+### 5. The Tetrahedral Cage and Baryon Structure
 
-The fundamental cage structure in CPP is the tetrahedron — 4 vertices, 6 edges, 4 triangular faces. But it appears in different forms depending on the particle:
+The fundamental cage structure in CPP is the tetrahedron — 4 vertices, 6 edges, 4 triangular faces.
 
-**Lepton cages** (electron, muon, tau): The K₃ triangular face is the spectral structure that generates K = 2/3 and the Koide phase. The fourth vertex (tetrahedral apex) participates in the full cage stability but is not part of the K₃ mass-generating face.
+**Lepton cages:** The K3 triangular face generates K = 2/3 and the Koide phase. The fourth vertex participates in cage stability but not mass generation.
 
-**Baryon cages** (proton, neutron): *Source: Thomas's description, 3 April 2026:*
+**Baryon cages:** *Source: Thomas's description, 3 April 2026:*
 
-A baryon consists of 3 quarks bonded to 3 vertices of a **hybrid tetrahedron**. The hybrid tetrahedron is composed of two hDPs (hybrid Dipole Pairs), each of which is a qCP (quark-type Conscious Point) paired with an eCP (electric-type Conscious Point). Three quarks bond to three vertices of this hybrid tetrahedral scaffold, leaving the fourth apex open. That open vertex is the nuclear bonding site — where protons and neutrons connect to form nuclei. The electrical polarity at the open vertex is correct for nuclear attraction, and the colour force between apices is inherently attractive.
+A baryon has 3 quarks bonded to 3 vertices of a hybrid tetrahedron (composed of two hDPs). The fourth apex is the nuclear bonding site. The triangular quark face IS the K3 face — this is why SU(3) describes the inter-quark force.
 
-Thus, the triangular face of the baryon is WHERE the three quarks sit. This is why the colour charge algebra — SU(3) from 3 vertices on K₃ — describes the inter-quark force: the quarks ARE the three vertices of one face of the tetrahedral cage.
+**Charge structure:** *Source: Thomas's analysis, 4 April 2026:*
 
-**Meson structure** (prototype gluon bond): *Source: Thomas's description, 3 April 2026:*
+The hybrid tetrahedron has 4 ZBW (attractive) edges and 2 repulsive edges. Every face has exactly 1 repulsive + 2 attractive edges. Thomas: "If there is a collision and oscillation, there will be a reflection off the repulsive bond on both ends, so the displacement will oscillate on each face." The repulsive edges are reflectors; the attractive edges are waveguides. Each face is a natural oscillation cavity.
 
-A meson is trivially a single bond between two quarks of opposite colour charge, plus a cohort of qDP chains (gluon bonds) that form between them. This is the prototype gluon bond. It can stretch, fray, break, and hadronise. When stretched beyond the restoring force maximum (the right side of the quark dissociation curve), qDP bonds fray and thermalise with increasing distance. Eventually only a single DP binds the quark-antiquark pair. That last DP splits, and the two now-unpaired qCPs become nucleation points around which new quarks form. This is the CPP mechanism for quark confinement: it is impossible to isolate a quark because pulling one apart always produces a new quark-antiquark pair.
+Open question: does the ratio 4/6 = 2/3 (attractive fraction) relate to the Koide ratio K = 2/3?
 
-*[Further seed questions: How does a cage form? What holds it together? How does the cage move through the lattice? What determines which three vertices the quarks bond to? Is the hybrid tetrahedron pre-existing or does it form during quark binding? How does the fourth vertex select its bonding partner in nuclear formation?]*
+**Meson structure:** *Source: Thomas's description, 3 April 2026:*
 
-### 6. The qDP Chain (Gluon Bond)
+A meson is two quarks bonded by qDP chains. These can stretch, fray, and break. The last DP splits, nucleating new quarks. This is the CPP mechanism for quark confinement.
 
-*[To be filled. Seed questions: What is a qDP chain physically? How does it form between cage vertices? What determines its length and tension? What happens when it's stretched? What happens when it breaks?]*
+### 6. Quark Internal Structure
 
-### 7. The ZBW Oscillation (Zitterbewegung)
+*Source: Thomas's description, 4 April 2026:*
 
-*[To be filled. Seed questions: What is the CP doing during ZBW? Is it moving, oscillating, switching? What determines the frequency? How does ZBW relate to mass? To spin?]*
+Quarks have internal structure. Each quark's mass comes from ZBW energy stored in its components.
+
+**The up quark (+2/3):** Bare +qCP with 4 radial qDP/hDP chains extending to the thermalisation boundary, plus orbital spin ZBW. No linear oscillator.
+
+**The down quark (-1/3) — via electron capture:**
+
+The down quark is an up quark with a captured electron:
+- A high-energy electron penetrates the 4 radial chains shielding the up quark's central +qCP.
+- The electron's -eCP binds with the +qCP to form a linear hDP ZBW oscillator.
+- The electron's orbital spin ZBW DP is released as an electron neutrino.
+- Charge: +2/3 + (-1) = -1/3.
+- The 2.5 MeV mass difference is supplied by the electron's mass energy (0.511 MeV) plus kinetic energy from the collision, which becomes the organisational energy needed to form the down quark's rest-state configuration.
+- The 4 radial chains are distorted by the repulsion of the oscillating -eCP.
+
+Electron capture (down to up + electron + neutrino) is the natural reverse of this process.
+
+### 7. The Nested Cage Hierarchy — Quark Generations
+
+*Source: Thomas's description, 4 April 2026:*
+
+Each heavier quark generation adds the next larger cage shell around the previous structure. The cages nest like Russian dolls. Mass grows because each shell adds oscillating edges storing ZBW energy.
+
+**The cage sequence — dictated by 600-cell geometry:**
+
+Opus computed the distance shells of the 600-cell around any vertex (4 April 2026) and discovered that all four cages embed exactly as natural geometric structures:
+
+| Cage | 600-cell structure | Distance shell | V | E | z | Quark |
+|------|--------------------|---------------|---|---|---|-------|
+| Tetrahedron | Cell | — | 4 | 6 | 3 | Strange |
+| Icosahedron | Shell 1 (vertex figure) | d = 1/φ | 12 | 30 | 5 | Charm |
+| Dodecahedron | Shell 2 | d = 1.0 | 20 | 30 | 3 | Bottom |
+| Icosidodecahedron | Shell 4 | d = √2 | 30 | 60 | 4 | Top |
+
+Every edge of every cage is a real 600-cell lattice edge. The cage sequence is not a free choice — it is the ONLY sequence of regular/semiregular polyhedra that appear as bonded distance shells of the 600-cell.
+
+Shell 3 (12 vertices at d ≈ 1.176) has ZERO lattice edges — it cannot form a cage. This gap between bottom (Shell 2) and top (Shell 4) may explain the anomalous top quark mass.
+
+**Mass scaling:** The power law m ~ V^2.38 (calibrated from strange → charm) predicts m_b = 4304 MeV (PDG: 4180, 3% error). This agrees with the SM-7 Koide prediction (4240 MeV) to 2%. Two independent methods converge. But the top quark is 12× heavier than V^2.38 predicts — requiring either nested shells, cross-shell coupling, or a qualitatively different mechanism at the icosidodecahedron.
+
+| Quark | Charge | Linear ZBW? | Cage (600-cell shell) | V | E |
+|-------|--------|-------------|----------------------|---|---|
+| Up | +2/3 | No | None | — | — |
+| Down | -1/3 | Yes | None | — | — |
+| Strange | -1/3 | Yes | Tetrahedron (cell) | 4 | 6 |
+| Charm | +2/3 | No | + Icosahedron (Shell 1) | + 12 | + 30 |
+| Bottom | -1/3 | Yes | + Dodecahedron (Shell 2) | + 20 | + 30 |
+| Top | +2/3 | No | + Icosidodecahedron (Shell 4) | + 30 | + 60 |
+
+**Pattern:** +2/3 quarks have no linear oscillator. -1/3 quarks are the corresponding +2/3 quark with a captured electron. The cage sequence is not chosen — it is dictated by 600-cell geometry. These are the only bonded distance shells that exist.
+
+**Key correction:** Each layer wraps around the previous one. The strange quark adds a tetrahedral cage to the down quark. The charm quark adds an icosahedral cage around that. The bottom adds a dodecahedral cage around that. The top adds the largest cage around everything.
+
+**Connection to Koide:** K3 eigenvalue perturbation (SM-6, SM-7) gives mass ratios within a generation. The cage hierarchy gives the mass scale jumps between generations. These are complementary mechanisms — one describes the face, the other describes the cage that hosts it.
+
+### 8. The qDP Chain (Gluon Bond) and Impedance Boundaries
+
+*Source: Thomas's descriptions, 3-4 April 2026:*
+
+A qDP chain connects cage vertices — the CPP gluon flux tube. It carries compression-distention waves like a rope.
+
+**The quark vertex as impedance boundary:** When a wave arrives at a quark vertex, it partially reflects (quark has inertia) and partially transmits (quark moves, pushing against the DP Sea).
+
+Thomas: "They are rigid because their mass must be accelerated... it is inertia that causes the displacement wave to rebound/reflect back down the edge. But the force is strong enough to move the 'wall' of the quark."
+
+**Three regimes** (Opus interpretation):
+1. **Confinement** (reflection-dominated): Heavy quarks reflect most colour energy back into the cage.
+2. **Nuclear force** (transmission): Energy transmitting through the vertex radiates into the DP Sea. Neighbouring baryons feel this as the residual strong force.
+3. **Thermalisation**: Transmitted energy diffuses through the mass aggregate to equilibrium.
+
+Thomas: "The only energy-isolated, transmission-free interaction is with pure, empty, DP-filled space."
+
+**Meson dissociation curve:** Left side — restoring force increases with stretching. Peak — maximum tension. Right side — bonds fray, force decreases. Breaking point — last DP splits, nucleating new quarks. Hadronisation.
+
+### 9. The ZBW Oscillation (Zitterbewegung)
+
+*[To be filled. Seed questions: What determines ZBW frequency? How does ZBW relate to mass? How does the ZBW unit store h-bar of action?]*
 
 ---
 
 ## Part III: The Forces
 
-### 8. The Electric Interaction (Edge Modes)
+### 10. The Electric Interaction (Edge Modes)
 
-*Source: Thomas's description, 2 April 2026 (via Copilot session):*
+*Source: Thomas's description, 2 April 2026 (via Copilot):*
 
-The electric charge is a push-and-pull, attract/repel type of force. It's linear — it adds or subtracts depending on the polarity of each reaction along the chain, and it reverses, yielding the same effect. There is a one-on-one relationship along the bond that is clearly Abelian: it's linear, and reversible.
+The electric charge is push-and-pull, attract/repel. Linear, reversible, Abelian. One degree of freedom per bond.
 
-*Formalised as Axiom A6 (Edge Abelianity): a single qDP bond between two CPs has one degree of freedom — tension or strength. Reversing the path undoes the transport. Composition commutes. This is U(1).*
+EW edge modes are cage-structural — they couple along the 2 internal K3 bonds connecting quark to quark. The "2" comes from cage geometry.
 
-### 9. The Colour Interaction (Face-Bond Circulation Modes)
+### 11. The Colour Interaction (Face-Bond Circulation)
 
-*Source: Thomas's description, 2 April 2026 (via Copilot session):*
+*Source: Thomas's descriptions, 2-4 April 2026:*
 
-The color force is always attractive. There will be a one-on-one relationship between every CP, which will have to be negotiated regarding its proper direction. The color force is non-discriminant; it pulls, regardless of the type of CP in its neighborhood — it's inherently volumetric in its relationship. As for directionality, the angular aspect comes from the tetrahedra, not cubes. The place where the non-linearity arises that results in path dependence is in the fact that every increment of distance away from an unpaired CP will be in a different 600-cell layer due to the GR/Lorentzian/delta SSV_abs of the space that each CP is in. Every CP is operating in its own SSV_abs space, and operating with a 600-cell of 12 nearest neighbors that will change the next moment, and change at the next Grid Point. If we are dealing with space, it is the way it is this moment, but it's different the next, and if you are relating to more than one thing, as in bonding to the nearest 12 neighbors, the relationship is going to be different each moment, so you can't go back the other way and have it be the same as the outward trip, too much has changed — the a plus b will not equal b plus a. Plus, there is going to be an element of twisting because there is not going to be a flat space you are traveling to/from and moment to moment.
+The colour force is always attractive, non-discriminant, inherently volumetric. Non-Abelian because every CP operates in its own SSV_abs space with 12 nearest neighbours that change each Moment.
 
-*Thomas's follow-up insight (same session):*
+**The tetrahedral resonant cavity:** *Source: Thomas, 3 April 2026:*
 
-Any time there is a tensioning of any of the bonds, the displacement will unavoidably be transmitted to the other three bonded CPs. This displacement will thus propagate, interfere, reinforce, and in effect circulate. The displacement pulses from collision, or the other methods, will propagate, and in effect circulate until that energetic/displacement/order propagation is transferred to another entity.
+Displacement pulses bounce through the entire tetrahedral frame — 6 edges, 4 vertices, 4 faces. Each vertex splits incoming waves into all connected faces. Thomas: "There are always 4 source radiators that transmit the incoming wave onto the other two edges, and back down the edge from which it came."
 
-*Initial formalisation: Axiom A7 (Face-Bond Circulation): displacement pulses propagate around closed triangular K₃ loops. The 8 standing-wave patterns = 8 colour states. Order-dependent because each pulse changes the vertex SSV_abs. Energy trapped in loop = confinement.*
+The waves are "probably traveling, not standing" — superpositions modified by SSV_net fluctuations from the environment. The time-averaged pattern decomposes into the 8 Gell-Mann modes.
 
-*Source: Thomas's correction and extension, 3 April 2026 (Opus session):*
+**Why SU(3) lives on the K3 face:** The quarks ARE the 3 vertices of one face. The 4th vertex is the nuclear bonding site. SU(3) acts on the quark face because that's where the quarks sit.
 
-**The tetrahedral resonant cavity:** The physical cage is a tetrahedron, not an isolated triangle. Every vertex connects to three triangular faces. A displacement pulse arriving at any vertex radiates into all three connected faces, not just the face it came from. The wave reflects and splits at each of the 4 junctions. The physical displacement doesn't stay on one K₃ face — it bounces through the entire tetrahedral frame.
+**Dynamic reason for circulation:** The charge structure (1 repulsive + 2 attractive edges per face) creates reflective boundaries that trap displacement energy. Repulsive edges are reflectors; attractive edges are waveguides.
 
-**Thomas's description of the wave dynamics:** "Pulling on or displacing one of the apex CPs sends a compression wave through the qDP chains. The wave propagates down both triangular edges to the base, stretching and compressing alternately. This distention-compression wave propagates down both sides, across the base, back up the opposite sides, returning to the originating apex. But each apex is connected to three triangles, each of which are oscillating and transmitting and reflecting the wave. So there are always 4 source radiators that transmit the incoming wave onto the other two edges, and back down the edge from which it came."
+**Cage-internal vs Sea-mediated:** EW is a conversation between cage partners (2 internal bonds). Colour is a conversation with the universe (all z=12 lattice bonds at each Grid Point).
 
-**Thomas's observation on standing vs traveling waves:** "There may be a standing wave, but probably not. It is probably a traveling wave in the superposition that moves at a different rate than the distention-compression wave that initiated the oscillation, due to the influence of a rogue-wave superposition of SSV_net from the environment or from a particulate collision."
+**Confinement:** Colour energy entering one face is redistributed to all four faces through vertex splitting. It can never escape. This trapping IS quark confinement.
 
-**Why the colour algebra still lives on the K₃ face despite the tetrahedral cavity:** The resolution comes from the baryon structure. A baryon consists of 3 quarks bonded to 3 of the 4 vertices of a hybrid tetrahedron. The quarks ARE the three vertices of one K₃ face. The fourth vertex (the open apex) is the nuclear bonding site, not a quark site. So the colour interaction between quarks — the SU(3) algebra with its 8 generators — acts on the 3 quark-bearing vertices, which form a triangle. The K₃ face is not an abstraction; it is the literal geometric arrangement of quarks inside a baryon.
+### 12. The Space Stress Vector (SSV)
 
-**Synthesis — Resolving the triangle vs tetrahedron tension:**
+*Source: Thomas's description, 4 April 2026:*
 
-The SU(3) colour algebra (8 generators from 3 vertices) describes the *symmetry structure* of the colour interaction. It lives on the K₃ face because that's where the 3 quarks sit. This is mathematics — it's about how 3 objects can be asymmetrically related.
+Forces at each GP decompose into:
 
-The *physical implementation* of those 8 patterns is traveling displacement pulses that bounce through the entire 6-edge, 4-vertex, 4-face tetrahedral frame, reflecting and splitting at each vertex. The tetrahedron acts as a resonant cavity. The time-averaged displacement pattern on the quark-bearing K₃ face decomposes into the 8 Gell-Mann modes, but the instantaneous wave state is a superposition of traveling pulses that span the whole cage.
+**SSV_abs:** Summation of all SSV magnitudes. Scalar. Determines the subgraph/PSR, effective speed of light, all GR effects.
 
-The inter-face coupling through shared edges IS the confinement mechanism: colour energy that enters one face is redistributed to all four faces, and it can never escape the tetrahedron because every edge leads to another vertex inside the cage. The energy circulates indefinitely — it is trapped — and this trapping is what we observe as quark confinement.
+**SSV_net:** Vector summation. Determines actual displacement, force direction, work.
 
-**Revised formalisation:** Axiom A7 should read "tetrahedral bond circulation" rather than "triangular loop circulation." The SU(3) algebra comes from the K₃ face structure (3 quark vertices → 8 generators). The physical confinement comes from the full tetrahedral cavity (4 faces × 6 edges × 4 splitting junctions → closed resonant system).
+Thomas: "SSV_abs defines the subgraph/PSR. SSV_net is the amount of displacement the CP moves in absolute space."
 
-### 10. The Space Stress Vector (SSV)
+This split is the CPP mechanism for relativity: SSV_abs sets the speed limit, SSV_net determines how much is used.
 
-*[To be filled. Seed questions: What is SSV physically? What does a CP "feel" when it's in a region of high SSV? How does SSV produce what we call gravity? How does SSV produce what we call time dilation? Is SSV a thing or a relationship?]*
+*[Flag: SR-1 implementation may need re-derivation — Thomas is "not clear on how this was implemented."]*
 
-### 11. The Nexus
+### 13. The Nexus
 
-*[To be filled. Seed questions: What is the Nexus? Is it a thing, a rule, or an outcome? How does it enforce consistency? What would happen if the Nexus failed? Does the Nexus "know" the entire lattice, or does it propagate? Is it instantaneous? How does it relate to God in the CPP/theology picture?]*
+*[To be filled. Seed questions: What is the Nexus? How does it relate to God?]*
+
+### 14. The Nuclear Force (Open-Vertex Bonding)
+
+The transmitted fraction of colour energy from the tetrahedral cavity radiates through the DP Sea. Neighbouring baryons' open vertices respond, creating the residual strong force.
 
 ---
 
 ## Part IV: The Dynamics
 
-### 12. What Happens at Each Absolute Moment
+### 15. What Happens at Each Absolute Moment
 
-*[To be filled. Seed questions: Describe one tick of the cosmic clock. What does every CP do? In what order? How do they coordinate? What is the sequence: perceive → compute → act? Or is it simultaneous?]*
+*[To be filled.]*
 
-### 13. How a Particle Moves Through the Lattice
+### 16. How a Particle Moves Through the Lattice
 
-*[To be filled. Seed questions: How does an electron cage move? Does it literally hop? Does it dissolve and reform? What carries the identity of the particle from one moment to the next? How does momentum work in CPP?]*
+*[To be filled.]*
 
-### 14. How Measurement Works
+### 17. How Measurement Works
 
-*[To be filled. Seed questions: What happens when a photon hits a detector in CPP? How does the DP Sea decohere a superposition? What selects the measurement outcome? Does the Nexus play a role? Is there a moment of "decision"?]*
+*[To be filled.]*
 
 ---
 
 ## Part V: The Origin Vision
 
-### 15. The March 1987 Vision
+### 18. The March 1987 Vision
 
-*[To be filled. Thomas: What happened in March 1987? What did you see/understand? What was the original insight that started 39 years of development? What has changed since then, and what has remained constant?]*
+*[To be filled.]*
 
-### 16. The Relationship Between CPP and Christian Theology
+### 19. The Relationship Between CPP and Christian Theology
 
-*[To be filled. Thomas: How does the Nexus relate to God's sustaining action? Are CPs created or eternal? Is consciousness fundamental because God chose to make it so, or is God consciousness? How does CPP inform the Renaissance Ministries fellowship discussions?]*
+*[To be filled.]*
 
 ---
 
 ## How to Update This Document
 
-After each working session where Thomas describes a physical mechanism, interaction, or entity in his own words:
+After each working session where Thomas describes a physical mechanism:
 
 1. Identify which section the description belongs to.
 2. Paste Thomas's words verbatim (with date and source).
-3. Add a line linking to the formal version (which axiom, theorem, or paper formalises this intuition).
-4. Note any new entities or interactions that don't have a section yet — create one.
-
-The goal is a **complete physical narrative** of the CPP world, told in the founder's voice, linked to the formal mathematics but not replaced by it. When a reader finishes this document, they should be able to close their eyes and *see* the world Thomas sees — the CPs on their lattice, the DPs filling the Sea, the cages vibrating, the displacement pulses circulating, the Nexus holding it all together.
+3. Link to the formal version (axiom, theorem, or paper).
+4. Note any new entities that need a section.
 
 ---
 
 ## Catalogue of Physical Intuition Statements (Chronological)
 
-This section collects Thomas's key physical descriptions from working sessions, in chronological order, with cross-references to where each intuition was formalised.
-
 ### 2 April 2026 — E Field vs Colour Field (Copilot session)
-
-**Context:** Exploring why edge modes are Abelian and face modes are non-Abelian.
-
-**Thomas's words:** "The electric charge is a push-and-pull, attract/repel type of force... The color force is non-discriminant; it pulls, regardless of the type of CP in its neighborhood — it's inherently volumetric..."
-
-**Formalised as:** Axioms A6 (Edge Abelianity) and A7 (Face-Bond Circulation) in SM-7 v2.2.
+"The electric charge is push-and-pull... The color force is non-discriminant; it pulls, regardless of the type of CP..."
+Formalised as Axioms A6 and A7 in SM-7 v2.2.
 
 ### 2 April 2026 — Displacement Circulation Discovery (Opus session)
-
-**Context:** Questioning whether "circulation" was literal or metaphorical.
-
-**Thomas's words:** "Any time there is a tensioning of any of the bonds, the displacement will unavoidably be transmitted to the other three bonded CPs. This displacement will thus propagate, interfere, reinforce, and in effect circulate."
-
-**Formalised as:** The displacement-circulation mechanism in Axiom A7; 8 standing-wave modes = 8 Gell-Mann generators.
+"Any time there is a tensioning of any of the bonds, the displacement will unavoidably be transmitted to the other three bonded CPs."
+Formalised as Axiom A7; 8 modes = 8 Gell-Mann generators.
 
 ### 2 April 2026 — Axiom Philosophy (Opus session)
+"Let's just call everything an axiom that looks like one, and let's see if they show up over and over..."
+Formalised as the Axiom Registry.
 
-**Context:** Responding to Sonnet's REJECT verdict.
+### 3 April 2026 — Tetrahedral Cavity and Baryon Structure (Opus session)
+Quarks bond to 3 of 4 vertices of the hybrid tetrahedron. SU(3) lives on the K3 quark face. The tetrahedron is the resonant cavity.
+Formalised as updated Axiom A7.
 
-**Thomas's words:** "Let's just call everything an axiom that looks like one, and let's see if they show up over and over, or do the axioms just continue to multiply... CPP is essentially an infinitely flexible theory, in terms of the content/mode of action of the axiom, because consciousness can be programmed to do anything. The only question is whether the number of axioms continues to rise or levels off toward an asymptote."
+### 3 April 2026 — Meson Dissociation and Confinement (Opus session)
+"The last DP splits, using the now unpaired qCPs as the nucleation point around which the new quark forms."
+Candidate for future SS-series paper.
 
-**Formalised as:** The Axiom Registry (axiom-registry.md), tracking the axiom-to-prediction ratio across the programme.
+### 4 April 2026 — Nested 600-Cell Lattice (Opus session)
+"I envision the lattice of GPs as a densely nested lattice of 600-cells... SSV_abs determines the subgraph."
+"Not all GPs are filled/occupied by CPs; therefore, the lattice is not the DP Sea."
 
-### 3 April 2026 — Tetrahedral Resonant Cavity and Baryon Structure (Opus session)
+### 4 April 2026 — SSV_abs vs SSV_net (Opus session)
+"SSV_abs defines the subgraph/PSR. SSV_net is the displacement in absolute space."
+SR-1 implementation flagged for re-derivation.
 
-**Context:** Thomas questioned whether colour modes could really live on a single triangular face, since the physical cage is a tetrahedron with waves radiating through all four faces.
+### 4 April 2026 — Impedance Boundary (Opus session)
+"Inertia causes the displacement wave to rebound... the force is strong enough to move the 'wall'."
+Reflection = confinement. Transmission = nuclear force. Three regimes identified.
 
-**Thomas's words:** "Every vertex of the tetrahedron is the apex of three triangles... each CP apex is connected to three triangles, each of which are oscillating and transmitting and reflecting the wave. Thus, there are always 4 source radiators... It is probably a traveling wave in the superposition..."
+### 4 April 2026 — Charge Structure of Hybrid Tetrahedron (Opus session)
+"4 ZBW edges, 2 repulsive edges. All faces have 1 repulsive + 2 attractive. Displacement oscillates on each face."
+Repulsive edges as reflectors driving face-mode circulation.
 
-**Thomas's resolution:** The 3 quarks in a baryon bond to 3 vertices of a hybrid tetrahedron, forming one K₃ face. The 4th vertex is the nuclear bonding site. So the colour algebra lives on the quark-bearing face because the quarks ARE the three vertices of that face. The tetrahedral frame is the resonant cavity; the K₃ face is where the colour charges sit.
+### 4 April 2026 — Quark Internal Structure and Electron Capture (Opus session)
+Down quark = up quark + captured electron. -eCP binds with +qCP for linear ZBW oscillator. Charge: +2/3 + (-1) = -1/3. Orbital spin ZBW released as neutrino. Mass difference supplied by electron mass + kinetic energy.
 
-**Formalised as:** Updated Axiom A7 (tetrahedral bond circulation), Section 9 of this document, and OPEN-P item: how inter-face couplings modify the 8 colour modes.
+### 4 April 2026 — Nested Cage Hierarchy (Opus session)
+Each generation adds a cage shell: tetrahedron, icosahedron, dodecahedron, icosidodecahedron. Each wraps around the previous. **Discovery:** All four cages embed exactly in the 600-cell as bonded distance shells (Shells cell/1/2/4). Shell 3 has zero bonds — a gap. V^2.38 law predicts m_b to 3%, agreeing with Koide to 2%. Top is 12× anomalous.
 
-### 3 April 2026 — Meson Dissociation and Quark Confinement Mechanism (Opus session)
-
-**Context:** Thomas described the meson as the prototype gluon bond, and how quark confinement emerges from DP splitting.
-
-**Thomas's words:** "Pulling apart a plus/minus qDP that was the last part of the last DP binding two distended quarks. The last DP splits, using the now unpaired qCPs as the nucleation point around which the new quark forms... Thus, the concept of quark confinement appears."
-
-**Formalised as:** Entry in Section 5 (Tetrahedral Cage) of this document; mechanism-level description of confinement via DP fraying and hadronisation. Not yet formalised in any paper — candidate for future SS-series paper.
+### 4 April 2026 — Mixed DP/hTetra Sea (Opus session)
+Vacuum contains eDPs, qDPs, hDPs (A and B), and hTetras. hTetras require activation energy. Cosmological freezing precipitated the mixture.
 
 ---
 
