@@ -354,3 +354,61 @@ Thomas: "Each Moment, the palate of the CP is cleared and unbiased, and able to 
 **The eternal source:** The central CP doesn't need external energy to generate its ZBW signal. Its existence IS the signal. Thomas: "The CP merely is being. Its mere presence attracts and repels the local CPs according to their polarity." The mass-energy of the top quark is the organisational energy that the DP Sea assumes in response to the unpaired CP's existence, radiated across all 12 channels into the full interior volume.
 
 **Physical test:** If this mechanism is correct, the near-field/far-field transition occurs specifically at the Shell 3 gap — and ONLY there, because Shell 3 is the only zero-edge shell. Any cage with a continuous bonded-shell sequence should remain near-field regardless of size. The top quark is not special because it's large; it's special because there's a structural hole between it and the nearest inner reflector.
+
+### 5 April 2026 — Shell 3 Has No Edges: Why the Gap Exists (Opus session)
+
+**Context:** Thomas asked why Shell 3 is "a shell that isn't a shell."
+
+**Answer (Opus computation):** The 600-cell's H₄ symmetry forces exactly 8 distance orbits from any vertex — 8 shells of vertices at 8 distinct distances. Shell 3 has 12 vertices at d ≈ 1.176. But the minimum distance BETWEEN any two Shell 3 vertices is 1.000, which is 1.62× the edge length (1/φ = 0.618). Every pair is too far apart to share an edge. The vertices are there; they simply don't connect to each other.
+
+Thomas: "There isn't a cage there because there isn't any way to bind the CPs at that distance. You need edges to form cages, which bind the cage-CPs together."
+
+**Formalised as:** Table 1 and discussion in SM-8 v3.0 Section 4.
+
+### 5 April 2026 — Palindrome Shell Symmetry (Opus computation)
+
+**Discovery:** The 600-cell distance shells are a perfect palindrome:
+- Shell 1 (icosa, 12V, 30E) ↔ Shell 7 (icosa, 12V, 30E)
+- Shell 2 (dodeca, 20V, 30E) ↔ Shell 6 (dodeca, 20V, 30E)
+- Shell 3 (gap, 12V, 0E) ↔ Shell 5 (gap, 12V, 0E)
+- Shell 4 (icosidodeca, 30V, 60E) = midpoint
+
+The outer bonded shells mirror the inner bonded shells exactly. Shell 4 is the unique central structure.
+
+**Formalised as:** SM-8 v3.0 Section 8 (Palindrome Structure).
+
+### 5 April 2026 — Three Generations from Lattice Tessellation (Thomas + Opus)
+
+**Context:** Opus noted that Shells 6 and 7, if they formed cages, would predict particles at 51.7 GeV and 1.28 GeV — masses already excluded or observable. Thomas provided the resolution.
+
+**Thomas's key insight:** "The universe isn't made of a single 600-cell polytope; space is filled with 600-cells interlocked in such a way that you are in the center of a 600-cell at every place in the universe. So, if the Shell 6 and 7 are the same pattern as strange and charm, then they will be created as strange and charm from the center point of a 600-cell, or if created otherwise, will be homomorphic and unidentifiable as a unique species created at the antipode."
+
+**Consequence:** Shell 7 of vertex A IS Shell 1 of neighbouring vertex B. Any cage forming there is a charm cage of B, not a new species. The four independent cage types (tetrahedron, icosahedron, dodecahedron, icosidodecahedron) exhaust the bonded-shell inventory. No fourth generation can exist because the lattice wraps around.
+
+**This answers the 50-year question: why exactly 3 generations?** Because the 600-cell is a palindrome, and tessellation identifies the outer shells with inner shells of neighbours.
+
+**Formalised as:** Theorem 9.1 (Three Generations) in SM-8 v3.0.
+
+### 5 April 2026 — Sea Composition Does Not Explain Mass Ratios (Opus computation)
+
+**Context:** Thomas proposed that the mix of DP species (eDP, qDP, hDP, hTetra) in the chains between central CP and cage surface might affect mass predictions.
+
+**Negative result:** When Sea composition (μ = 1 + 3×f_hTetra) is uniform across all quarks — which it physically should be since they share the same vacuum — it cancels out of the mass ratios entirely. The hierarchy is GEOMETRIC (determined by cage vertex counts and shell distances), not COMPOSITIONAL.
+
+**Thomas's correction on chain composition:** "The DP chain may be composed of any of the 5 possible entities (4 types of DPs and the hTetra), and the composition is probably reflective of the native population percentage of each." The chain composition sets the absolute mass scale but not the ratios.
+
+**Formalised as:** SM-7 Transcript 11 (Sea Composition).
+
+### 5 April 2026 — Complete Charge Census: K₄ Content and Bond Types (Opus computation)
+
+**Results:**
+- Tetrahedron: 1 K₄ subgraph (it IS a K₄). 2/3 forced for all assignments.
+- Icosahedron: ZERO K₄ subgraphs. Cannot be built from hTetras. 2/3 is the maximum.
+- Dodecahedron: ZERO K₄. Maximum attractive ratio = 4/5, exceeding 2/3.
+- Icosidodecahedron: ZERO K₄. 2/3 achievable (~0.7% of assignments).
+
+**Bond type distribution at 2/3:** eDP : qDP : hDP : repulsive = 1 : 1 : 2 : 2 (universal, combinatorial).
+
+**Key implication:** Larger cages cannot be assembled from pre-formed hTetras. They must form from individual CPs finding positions on the lattice. The dodecahedron's ability to exceed 2/3 (reaching 4/5) is an anomaly unique to the bottom quark cage.
+
+**Formalised as:** SM-8 v3.0 Section 7 and Table 5.
