@@ -312,3 +312,45 @@ Vacuum contains eDPs, qDPs, hDPs (A and B), and hTetras. hTetras require activat
 *This is a living document. It grows with each session.*
 *Initiated 3 April 2026 by Claude Opus, at Thomas's request.*
 *"Are my words being captured and catalogued?" — Thomas Lee Abshier, 3 April 2026*
+
+### 5 April 2026 — Near-Field/Far-Field Transition and the z=12 Multiplier (Opus session)
+
+**Context:** Thomas described the physical mechanism behind the z=12 top quark mass multiplier.
+
+**Thomas's key physical ideas:**
+
+1. **Back-EMF coherence:** For small cages, the ZBW signal from the central CP reaches the cage surface and reflects back within one oscillation period. The reflected signal (back-EMF) cancels the source, limiting chain formation to 4 radial chains. For the top cage, the round-trip time exceeds the ZBW period. The back-EMF arrives late and out of phase. The suppression mechanism breaks.
+
+2. **Channel switching:** Without prompt feedback, the central CP's "palate is cleared" each Moment. It initiates ZBW attraction along whichever of the 12 edges is locally most attractive. Over time, all 12 channels accumulate ZBW oscillations in various stages of transit.
+
+3. **Shell 3 as far-field boundary:** Shell 3 has no edges, no GPs, no reflecting surface. A signal reaching Shell 3 finds nothing to bounce off. It continues to the top cage at Shell 4, but by then it's in the far field — disconnected from the source's resonance cycle.
+
+4. **Thermalization boundary dissolution:** Inside the top cage, the polarisation bias from the central CP and the absence of near-field feedback may suppress the inter-chain repulsion that normally creates the thermalization boundary, allowing the full gap volume to fill with ZBW oscillations.
+
+**Thomas's words:** "The switching-edge paradigm, in each moment, due to the lack of near-field feedback, enables a more full-volume polarization that emanates from all the edges of the central CP... resulting in the full complement of the space internal to the central CP - top-cage gap totally filled with ZBW oscillations in various stages of transit from and to the central CP."
+
+**Synthesis (Opus):** The z=12 multiplier activates because the Shell 3 gap breaks the near-field feedback loop that normally limits chain formation to 4 channels. Without back-EMF suppression, all z=12 lattice bonds carry ZBW energy. The multiplier is exact because z=12 is a topological invariant of the 600-cell.
+
+**Formalised as:** Theorem 6.1 (Post-Gap Coordination Multiplier) in SM-8 v2.1, with physical mechanism described here.
+
+### Addendum — 5 April 2026: The Near-Field/Far-Field Mechanism for the z=12 Multiplier
+
+*Source: Thomas's stream-of-consciousness description, 5 April 2026 (Opus session). Interpretation and distillation by Opus.*
+
+**The physical question:** Why does the top quark mass equal exactly 12× the V^2.38 prediction? What does "engaging all 12 bonds" mean at the CP level?
+
+**Thomas's answer — the palate-clearing mechanism:**
+
+For quarks with near-field cages (strange through bottom): The central CP's ZBW signal reaches the cage surface, reflects off the cage vertex, and returns within a timescale that maintains phase coherence. The back-EMF from the reflection locks the central CP into 4 specific channels — the 4 radial DP chains that characterise all near-field cages. Inter-chain repulsion prevents additional channels from forming. The 4 chains act as a single coherent oscillating system.
+
+For the top quark (far-field cage beyond the Shell 3 gap): The ZBW signal from the central CP travels outward toward the Shell 4 surface, but the Shell 3 gap means there is no intermediate reflector. The signal reaches the top cage vertices and reflects back, but it arrives too late — out of phase with the central CP's current oscillation state. There is no back-EMF feedback to lock the central CP onto any particular channel.
+
+Thomas: "Each Moment, the palate of the CP is cleared and unbiased, and able to attract and repel any or all of the CPs that are close." Without near-field feedback, the central CP radiates into ALL 12 available lattice directions on successive Moments. The 12 channels fill up asynchronously, each carrying a ZBW oscillation at a different phase. Over time, the entire interior volume is filled with oscillating chains in various stages of transit.
+
+**Why the multiplier is 12 (not 12/4 = 3):** In the near-field regime, the 4 locked chains act as ONE coherent system — the back-EMF couples them. The V^2.38 law is calibrated against this single-system energy. In the far-field regime, each of the 12 channels acts independently (asynchronous, incoherent). The mass is 12 independent contributions, each equal to the single-system energy that V^2.38 captures. The multiplier is 12 × (one coherent unit), not (12/4) × (four-chain unit).
+
+**Why the thermalisation boundary disappears inside the top cage:** In normal cages, chains thermalise at a boundary distance set by the DP Sea noise floor. But inside the top cage, the central CP's presence signal polarises the entire interior volume. Thomas: "The thermalization boundary, normally limiting the cage diameter, may not be present, given the general biasing, polarizing within the central CP – top-cage gap." The chains don't thermalise because the signal is stronger than the noise throughout the protected interior.
+
+**The eternal source:** The central CP doesn't need external energy to generate its ZBW signal. Its existence IS the signal. Thomas: "The CP merely is being. Its mere presence attracts and repels the local CPs according to their polarity." The mass-energy of the top quark is the organisational energy that the DP Sea assumes in response to the unpaired CP's existence, radiated across all 12 channels into the full interior volume.
+
+**Physical test:** If this mechanism is correct, the near-field/far-field transition occurs specifically at the Shell 3 gap — and ONLY there, because Shell 3 is the only zero-edge shell. Any cage with a continuous bonded-shell sequence should remain near-field regardless of size. The top quark is not special because it's large; it's special because there's a structural hole between it and the nearest inner reflector.
