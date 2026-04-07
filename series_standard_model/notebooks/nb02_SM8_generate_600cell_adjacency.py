@@ -47,5 +47,5 @@ for u, v in edges:
 print("Degree stats: min", deg.min(), "max", deg.max(), "mean", deg.mean())
 
 # Save edge list
-np.savetxt("600cell_edgelist.txt", edges, fmt="%d")
-print("Wrote 600cell_edgelist.txt")
+np.savetxt("nb02_SM8_600cell_edgelist.txt", edges, fmt="%d")
+print("Wrote nb02_SM8_600cell_edgelist.txt")
