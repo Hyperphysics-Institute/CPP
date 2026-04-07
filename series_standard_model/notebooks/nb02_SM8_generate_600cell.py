@@ -53,4 +53,4 @@ print("Total unique vertices:", len(vertices))
 print("All norms ≈ 1?", np.allclose(np.linalg.norm(vertices, axis=1), 1.0, atol=1e-8))
 
 # Optional: save to file
-np.savetxt("600cell_vertices.txt", vertices, fmt="%.12f")
+np.savetxt("nb2_SM8_600cell_vertices.txt", vertices, fmt="%.12f")
