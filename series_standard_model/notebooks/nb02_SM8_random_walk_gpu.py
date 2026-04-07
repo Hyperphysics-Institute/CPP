@@ -23,11 +23,11 @@ else:
 PROJECT_ROOT = Path(".").resolve()
 
 # Choose which graph to walk on
-# EDGE_LIST_PATH = PROJECT_ROOT / "nb02_SM8_tiny1ring_edgelist.txt"
-EDGE_LIST_PATH = PROJECT_ROOT / "nb02_SM8_600cell_chain_edgelist.txt"
+# EDGE_LIST_PATH = PROJECT_ROOT / "nb02_SM8_600cell_2ring_edgelist.txt"
+EDGE_LIST_PATH = PROJECT_ROOT / "nb02_SM8_600cell_2ring_edgelist.txt"
 
 # Output CSV
-OUTPUT_CSV_PATH = PROJECT_ROOT / "nb02_SM8_return_prob_data_current_graph.csv"
+OUTPUT_CSV_PATH = PROJECT_ROOT / "nb02_SM8_600cell_2ring_return_prob.csv"
 
 print("Edge list path:", EDGE_LIST_PATH)
 print("Output CSV path:", OUTPUT_CSV_PATH)
