@@ -1,10 +1,10 @@
 import numpy as np
 
 # Parameters
-M = 50  # number of 600-cell copies in the chain; you can adjust
+M = 50  # number of 600-cell copies in the chain; adjust as needed
 
 # Load base 600-cell edge list
-base_edges = np.loadtxt("nb2_SM8_600cell_edgelist.txt", dtype=int)
+base_edges = np.loadtxt("nb02_SM8_600cell_edgelist.txt", dtype=int)
 num_vertices_base = 120
 
 print("Loaded base 600-cell with", num_vertices_base, "vertices and", len(base_edges), "edges.")
