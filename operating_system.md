@@ -32,9 +32,10 @@
 1. Read `bootup.md` — repository structure, conventions, what CPP is
 2. Read `theory-overview.md` — current physics state, strongest results, open problems
 3. Read `founders_vision.md` — Thomas's physical intuition (the WHY behind every equation)
-4. Read `master_glossary.md` — all CPP terms and acronyms
-5. Check the most recent transcript in `/mnt/transcripts/` or `development-transcripts/` for where the last session left off
-6. Ask Thomas: "What would you like to work on today?"
+4. Read `CPP_the_theory.md` — the complete theory narrative (skim Part I-III, read Part V for open problems)
+5. Read `master_glossary.md` — all CPP terms and acronyms
+6. Check the most recent transcript in `/mnt/transcripts/` or `development-transcripts/` for where the last session left off
+7. Ask Thomas: "What would you like to work on today?"
 
 **If resuming a specific paper:** Also read the paper's `.tex` file and its `development-[S]-[N].md`.
 
@@ -47,6 +48,7 @@
 ### Core physics
 | Document | Purpose | Update frequency |
 |----------|---------|-----------------|
+| `CPP_the_theory.md` | **THE BOOK** — complete theory in connected prose | Every session with new physics |
 | `founders_vision.md` | Thomas's physical intuition — the WHY | Every session with new physics |
 | `theory-overview.md` | Current state snapshot — formulas, results, problems | After each paper |
 | `axiom-registry.md` | All axioms, predictions, growth tracking | After each paper |
@@ -360,6 +362,7 @@
 - [ ] `predictions.md` — add new quantitative predictions
 - [ ] `postulates_and_theorems.md` — add new theorems/conjectures
 - [ ] `future_projects.md` — update project status, add new projects
+- [ ] `CPP_the_theory.md` — add new results to appropriate chapter, update scorecard
 
 ### Navigation documents (update structure)
 - [ ] `README.md` — add paper to table, update counts
