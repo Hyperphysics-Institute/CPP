@@ -412,3 +412,46 @@ The outer bonded shells mirror the inner bonded shells exactly. Shell 4 is the u
 **Key implication:** Larger cages cannot be assembled from pre-formed hTetras. They must form from individual CPs finding positions on the lattice. The dodecahedron's ability to exceed 2/3 (reaching 4/5) is an anomaly unique to the bottom quark cage.
 
 **Formalised as:** SM-8 v3.0 Section 7 and Table 5.
+
+### 5 April 2026 — Additive Chain Models Ruled Out (Opus computation)
+
+**Context:** Opus computed geometric chain energies using exact 600-cell coordinates for all four cages, testing models where mass = sum of individual chain energies (chain length, chain length², chain length² × φ, fractal variants).
+
+**Result:** ALL additive models fail by 65-92%. The fundamental problem: 3× more chains of the same length cannot produce 13.6× more energy through addition. The mass hierarchy requires a COOPERATIVE or MULTIPLICATIVE mechanism.
+
+**Formalised as:** SM-9 v1.0 and SM-8/SM-9 Development Transcript Part 2, Phase 11.
+
+### 5 April 2026 — Fractal Chain-Tree Picture (Thomas's description)
+
+**Thomas's physical picture:** Radial chains don't just extend linearly — they branch. Each DP in a chain polarises lateral neighbours, creating side-chains that branch further. The structure is a fractal polarisation tree extending from each radial chain.
+
+**Thomas's key points:**
+1. "We have a fractal that branches off the main chain between central CP and the cage surface."
+2. For larger cages, inner chains crowd together — "the density of polarized chain DPs close to the central DP will probably prevent the radial chain beyond a certain number of vertices from being continuous to the central CP."
+3. Both interior and exterior regions branch: interior from center to cage surface, exterior from cage surface to thermalisation boundary.
+
+Even with fractal branching, the additive energy sum doesn't reproduce V^2.38. The missing ingredient is cooperation between branches.
+
+**Formalised as:** SM-8/SM-9 Development Transcript Part 2, Phase 12.
+
+### 5 April 2026 — Pairwise Coupling Breakthrough (Opus computation)
+
+**Discovery:** Mass comes from PAIRWISE chain interactions, not individual chains. n chains produce C(n,2) = n(n-1)/2 interaction pairs. Each pair creates an overlap region of doubly-polarised DP Sea.
+
+**The zero-parameter prediction:** C(10,2)/C(2,2) = 45/1 = 45.0, vs actual m_b/m_s = 44.75. Error: 0.6%. The bottom quark mass ratio predicted from pure combinatorics with NO free parameters.
+
+**Angular-weighted version:** E = Σ_pairs exp(-0.3θ) × d^0.4 gives 8.6% RMS across all three mass ratios with only 2 parameters and no mass calibration.
+
+**Physical mechanism:** Chains don't generate mass independently — they generate mass through mutual cooperative interaction. The pair interaction energy is the "quantum" of mass.
+
+**Formalised as:** SM-8/SM-9 Development Transcript Part 2, Phase 13.
+
+### 5 April 2026 — FEM Feasibility and the Lattice Spacing Problem (Opus assessment)
+
+**Context:** Thomas proposed computing quark masses via FEM. Opus assessed 9 proposed ingredients.
+
+**Key finding:** Most ingredients needed for absolute mass predictions are UNKNOWN (lattice spacing, E_ZBW per DP, thermalisation distance, etc.). But mass RATIOS are actionable because most unknowns cancel.
+
+**The circularity problem:** The ZBW frequency IS the mass, so using it to compute mass is circular. Breaking this requires relating ZBW frequency to a geometric quantity not defined in terms of mass.
+
+**Formalised as:** SM-8/SM-9 Development Transcript Part 2, Phase 10.
