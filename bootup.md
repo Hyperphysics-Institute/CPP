@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/templates/bootup.md`
 **Purpose:** Load this file at the start of every new AI session working on CPP. It provides the essential context, locations, conventions, and current state needed to continue productive work without repeating setup.
-**Last updated:** 3 April 2026
+**Last updated:** 8 April 2026
 
 ---
 
@@ -18,6 +18,10 @@
 4. What the active open problems are
 
 Then read `theory-overview.md` for the current physics state.
+
+For the COMPLETE workflow manual (multi-AI review, transcript management,
+negative result documentation, recovery procedures), read `operating_system.md`.
+This bootup file is the quick-start; the operating system is the full reference.
 
 ---
 
