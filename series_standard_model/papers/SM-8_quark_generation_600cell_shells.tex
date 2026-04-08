@@ -394,16 +394,22 @@ where $\delta$ accounts for the increasing contribution of
 volumetric modes as cage size grows.
 
 
-\begin{remark}[Spectral dimension hint]
-A preliminary spectral-dimension analysis of the cage subgraph
-(63 vertices comprising all four cage types around a single vertex)
-yields $d_s \approx 2.40$ in the intermediate time window, numerically
-close to the fitted exponent $\alpha = 2.38$ and to the algebraic
-value $3 - 1/\phig \approx 2.382$.  This suggests a deeper geometric
-origin for the scaling law, potentially tied to the golden-ratio
-structure of the $H_4$ lattice.  A full derivation --- showing that
-the 600-cell's symmetry forces $d_s = 3 - 1/\phig$ on the cage
-confinement graph --- is left for future work (SM-9).
+\begin{remark}[On the origin of $\alpha = 2.38$]
+The exponent $\alpha = 2.38$ is calibrated from $m_s$ and $m_c$,
+not derived from first principles.  One candidate derivation ---
+identifying $\alpha$ with the spectral dimension $d_s$ of the cage
+subgraph --- was tested numerically.  A random-walk return-probability
+analysis on a 2-ring tessellation of the 600-cell (GPU computation,
+2000 time steps, multiple fitting windows) yields a converged
+spectral dimension of $d_s \approx 3.55$, significantly above the
+target value of $2.38$.  The spectral dimension of the cage lattice
+is therefore \emph{not} the origin of $\alpha$.
+
+The exponent remains an open problem.  Its value lies between the
+surface scaling ($\alpha = 2$ in 4D) and volume scaling
+($\alpha = 4$), consistent with a mixed confinement regime, but
+a first-principles derivation from 600-cell geometry has not yet
+been achieved.  This is the primary target of SM-9.
 \end{remark}
 
 If quark mass scales as $m \sim V^\alpha$, then calibrating $\alpha$
@@ -755,8 +761,10 @@ This paper establishes the geometric foundation of the cage
 hierarchy but does not provide:
 
 \begin{enumerate}
-\item A dynamical derivation of the scaling exponent $\alpha = 2.38$
-  from the spectral geometry of the 600-cell (target of SM-9).
+\item A first-principles derivation of the scaling exponent
+  $\alpha = 2.38$.  The spectral-dimension route ($d_s$ of the
+  cage subgraph) has been tested and does not reproduce $\alpha$;
+  alternative derivation strategies are the target of SM-9.
 \item A quantitative model for the Shell~3 gap enhancement of
   the top quark mass.
 \item A derivation of the attractive-fraction selection principle
