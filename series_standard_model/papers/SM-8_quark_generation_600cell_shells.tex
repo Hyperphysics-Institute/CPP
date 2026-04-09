@@ -156,27 +156,57 @@ $z \times C_F = 16$ and deriving both the scaling exponent
 
 \textbf{Axiom A (Edge Abelianity).}
 An edge-based interaction is modeled as transport along
-one-dimensional edge chains.  Composition of transports along
-different edge paths is commutative:
-$U(\gamma_1)U(\gamma_2)=U(\gamma_2)U(\gamma_1)$.
-This defines an effective Abelian gauge structure at the cage scale.
+one-dimensional edge chains.  Transport changes only a single
+scalar degree of freedom and is exactly reversed by retracing the
+path.  Composition of transports along different edge paths is
+commutative:
+\begin{equation}
+U(\gamma_1)U(\gamma_2)=U(\gamma_2)U(\gamma_1).
+\end{equation}
+This defines an effective Abelian gauge structure at the cage scale
+and motivates the identification of edge modes with the
+electromagnetic sector.
+
+\medskip
 
 \textbf{Axiom B (Face Non-Abelianity).}
 A face-based interaction is modeled as transport around closed
-triangular loops.  The holonomy around two loops generally fails to
+triangular loops embedded in a time-evolving 600-cell geometry.
+Each step samples a different local frame and neighbour
+configuration, so the holonomy around two loops generally fails to
 commute:
-$U(\gamma_1)U(\gamma_2)\neq U(\gamma_2)U(\gamma_1)$.
-This path dependence motivates the identification of face modes with
+\begin{equation}
+U(\gamma_1)U(\gamma_2)\neq U(\gamma_2)U(\gamma_1).
+\end{equation}
+This path dependence is the operational signature of a non-Abelian
+gauge structure and motivates the identification of face modes with
 the colour sector.
+
+\medskip
+
+These axioms are physical postulates about how fields couple to
+the 600-cell at the cage scale.  The cage-type mass hierarchy
+derived in this paper depends only on the geometric structure of
+the shells and is independent of the specific coupling strengths.
 
 % ============================================================
 \section{The 600-Cell Distance Shells}
 \label{sec:shells}
 % ============================================================
 
+The 600-cell has 120 vertices.  From any vertex, the remaining 119
+vertices are distributed across 8 distinct distances.  We computed
+these shells by explicit construction of all 120 vertices and
+pairwise distance calculation.
+
 \begin{table}[H]
 \centering
-\caption{Distance shells of the 600-cell around any vertex.}
+\caption{Distance shells of the 600-cell around any vertex.
+  $d$ is the distance from the central vertex (circumradius = 1).
+  $|\text{shell}|$ is the number of vertices at that distance.
+  ``Edges'' counts edges of the 600-cell graph connecting
+  vertices within the shell.  $z_{\rm shell}$ is the coordination
+  number within the shell.}
 \label{tab:shells}
 \begin{tabular}{@{}crrrrl@{}}
 \toprule
@@ -194,27 +224,83 @@ Shell & $d$ & $|\text{shell}|$ & Edges & $z_{\rm shell}$ & Structure \\
 \end{tabular}
 \end{table}
 
+In addition to the shells, the 600-cell contains 600 tetrahedral
+cells (K$_4$ complete subgraphs), each with 4 vertices and 6 edges.
+Every vertex participates in 20 tetrahedra.
+
 \begin{theorem}[Bonded shells of the 600-cell]
 \label{thm:shells}
 The 600-cell has exactly three distance shells with nonzero lattice
-edges: Shells~1, 2, and~4.  Combined with the tetrahedral cells
-(4V, 6E), there are exactly four polyhedral cage types.
+edges: Shell~1 (icosahedron, 12V, 30E, $z=5$), Shell~2
+(dodecahedron, 20V, 30E, $z=3$), and Shell~4 (icosidodecahedron,
+30V, 60E, $z=4$).  Combined with the tetrahedral cells (4V, 6E,
+$z=3$), there are exactly four polyhedral cage types with lattice
+edges in the 600-cell.
 \end{theorem}
 
 \begin{proof}
-By explicit computation of all $\binom{120}{2} = 7140$ pairwise
-distances and adjacency checks within each shell. \qed
+By explicit computation.  The 120 vertices of the 600-cell were
+constructed from the standard coordinates: 8 axis-aligned vertices,
+16 half-integer vertices, and 96 golden-ratio vertices from even
+permutations of $(\phig/2, 1/2, 1/(2\phig), 0)$ with sign changes.
+All $\binom{120}{2} = 7140$ pairwise distances were computed,
+yielding 8 distinct values.  For each shell, all pairs of vertices
+within the shell were checked for adjacency (distance $= 1/\phig$).
+Shells 3, 5, 6, 7, and 8 have zero internal lattice edges.
+Shells 1, 2, and 4 have the edge and coordination counts listed in
+Table~\ref{tab:shells}. \qed
 \end{proof}
+
+\begin{remark}[Shell identification]
+Shell~1 is the vertex figure of the 600-cell --- the polyhedron
+formed by the nearest neighbours of any vertex.  The icosahedron
+shares the $H_3$ symmetry of the 600-cell's $H_4$ symmetry group.
+Shell~2 is the dodecahedron, the dual of the icosahedron.  Shell~4
+is the icosidodecahedron, the rectification of the icosahedron.
+All three belong to the icosahedral symmetry family, consistent
+with the $H_4$ symmetry of the 600-cell.
+\end{remark}
 
 % ============================================================
 \section{The Structural Role of Shell~3}
 \label{sec:shell3}
 % ============================================================
 
-Shell~3 has \emph{zero} lattice edges---no cage can form there.
-This gap separates the dodecahedron (Shell~2, bottom quark) from
-the icosidodecahedron (Shell~4, top quark), forcing the top quark's
-confinement chains to tunnel through a bondless region.
+The 600-cell's distance-shell decomposition contains a striking
+feature: \emph{Shell~3 has no edges}.  It is the only shell with
+this property among the inner shells (Shells 1--4).  As a
+consequence:
+
+\begin{enumerate}
+\item \textbf{No cage can be constructed in Shell~3.}
+  A CPP cage requires a closed, bonded polyhedral surface.  Shell~3
+  lacks the necessary adjacency structure.
+
+\item \textbf{The sequence of bonded shells is forced:}
+  \[
+  \text{Shell 1 (icosahedron)},\quad
+  \text{Shell 2 (dodecahedron)},\quad
+  \text{Shell 4 (icosidodecahedron)}.
+  \]
+  The tetrahedron corresponds to the 600-cell's own cells.
+
+\item \textbf{The Shell-3 gap induces a geometric discontinuity.}
+  The icosidodecahedral cage (Shell~4) encloses a volume roughly
+  an order of magnitude larger than the dodecahedral cage (Shell~2).
+  This is not a smooth progression; it is a jump across a
+  structurally empty layer.
+
+\item \textbf{This discontinuity matches the observed quark
+  hierarchy.}
+  The top quark is anomalously heavy and uniquely fails to
+  hadronize.  In CPP, this corresponds to the Shell~4 cage being
+  too large and too open to support stable chain-density
+  confinement.
+\end{enumerate}
+
+The Shell~3 gap is not an aesthetic curiosity; it is a
+\textbf{structural explanation} for the existence of three
+comparably-massed quarks and one heavy outlier.
 
 % ============================================================
 \section{The Cage--Quark Correspondence}
@@ -223,27 +309,75 @@ confinement chains to tunnel through a bondless region.
 
 \begin{table}[H]
 \centering
-\caption{Cage--quark correspondence.}
+\caption{Cage--quark correspondence.  Each cage embeds exactly in
+  the 600-cell with all edges being lattice edges.  The four cages
+  correspond to four cage \emph{types}, not to four Standard Model
+  generations.  The top quark's rapid decay ($\tau \sim 5 \times
+  10^{-25}$~s) is consistent with the Shell~4 cage's structural
+  openness.}
 \label{tab:correspondence}
 \begin{tabular}{@{}llrrrrl@{}}
 \toprule
 Cage & 600-cell structure & $V$ & $E$ & $z$ & $d$ & Quark \\
 \midrule
 Tetrahedron & Cell & 4 & 6 & 3 & --- & Strange \\
-Icosahedron & Shell 1 & 12 & 30 & 5 & $1/\phig$ & Charm \\
+Icosahedron & Shell 1 (vertex figure) & 12 & 30 & 5 & $1/\phig$ & Charm \\
 Dodecahedron & Shell 2 & 20 & 30 & 3 & $1.0$ & Bottom \\
 Icosidodecahedron & Shell 4 & 30 & 60 & 4 & $\sqrt{2}$ & Top \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-This correspondence is the unique monotonic bijection from cage
-vertex count to quark mass.
+This correspondence is not a fit or an assumption.  The cage
+sequence is the \emph{unique} sequence of bonded polyhedral shells
+in the 600-cell.
+
+\begin{remark}[Uniqueness of the cage--quark assignment]
+The assignment in Table~\ref{tab:correspondence} is the unique
+order-preserving (monotonic) map from cage size to quark mass.
+The cages are ordered by vertex count: $4 < 12 < 20 < 30$.  The
+caged quarks are ordered by mass: $m_s < m_c < m_b < m_t$.  There
+is exactly one monotonic bijection between these sequences.  The
+correspondence is not chosen to fit the data; it is the only
+assignment consistent with the physical requirement that larger
+cages store more energy.
+\end{remark}
+
+No other regular or semiregular polyhedra appear
+as bonded distance shells.
+
+\begin{remark}[Four cages, not four generations]
+The four cages correspond to four CPP cage \emph{types}, not to
+four Standard Model generations.  The strange, charm, bottom, and
+top quarks are the four quarks that can be hosted by the four
+bonded structures.  This does \emph{not} predict a fourth quark
+generation beyond the Standard Model; it provides a geometric
+reason for the observed quark spectrum within the three SM
+generations.
+\end{remark}
 
 % ============================================================
 \section{Quark Mass Formulas}
 \label{sec:mass}
 % ============================================================
+
+\subsection{Physical basis for vertex-count scaling}
+
+Let $V$ denote the vertex count of a cage (a proxy for the
+cage's interior volume in the lattice).  In the CPP picture, quark
+mass arises from the density of ZBW chain excitations confined
+within the cage.  Two effects contribute:
+
+\begin{enumerate}
+\item \textbf{Surface-dominated confinement} for small cages
+  (tetrahedron, icosahedron, dodecahedron).  The number of available
+  chain modes scales approximately as
+  $N_{\text{surf}} \sim A \sim V^{2/3}$.
+
+\item \textbf{Volume-dominated confinement} for large cages
+  (icosidodecahedron).  The number of modes scales as
+  $N_{\text{vol}} \sim V$.
+\end{enumerate}
 
 \subsection{Calibrated formula (v3.x)}
 
@@ -271,6 +405,33 @@ Top     & 30 & 172\,800    & 172\,760 & 0.02\% \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{remark}[Mass scheme dependence]
+The quark masses used in Table~\ref{tab:mass_v3} are drawn from
+different renormalisation schemes: $m_s$ and $m_c$ are
+$\overline{\mathrm{MS}}$ values at $\mu = 2$~GeV, while $m_t$ is
+a pole mass.  The cage model does not yet specify which scheme its
+predictions correspond to.  The 0.02\% agreement for the top quark
+should therefore be understood as indicative rather than definitive;
+the systematic uncertainty from scheme conversion is of order 1\%.
+The structural results (shell embedding, generation count, charge
+census) are scheme-independent.
+\end{remark}
+
+The $V^{2.38}$ law and the SM-7 Koide formula \emph{agree} on the
+bottom quark mass to 2\%, despite being completely independent
+derivations: the cage model counts vertices, while the Koide model
+perturbs K$_3$ eigenvalues.  This mutual reinforcement from
+independent physics is a non-trivial consistency check.
+
+\begin{remark}[v4.0 note on the calibrated formula]
+The calibrated formula remains valid as a precision tool (0.02\%
+top quark accuracy).  The v4.0 analysis (Section~\ref{sec:zero_param})
+shows that this precision results partly from a cancellation: the
+fitted $M_0$ absorbs the Casimir factor $C_F = 4/3$ that the v3.x
+gap multiplier omits.  See Section~\ref{sec:reconcile} for the full
+reconciliation.
+\end{remark}
 
 \subsection{Zero-free-parameter formula (v4.0)}
 \label{sec:zero_param}
@@ -436,60 +597,178 @@ Icosidodecahedron & 30 & 60 & $2/3$ & $\sim 0.7\%$ & $\sim 0.7\%$ \\
 
 The ratio $2/3$ is achievable on all four cages: forced on the
 tetrahedron, maximal on the icosahedron and icosidodecahedron.
-Whether this $2/3$ and the Koide ratio $K = 2/3$ (SM-3) share a
-geometric origin is an open question.
+Whether this $2/3$ and the Koide ratio $K = 2/3$
+(\citealp{abshier2026sm3}) share a geometric origin is an open
+question of considerable interest.
+
+\begin{remark}[Bond type distribution]
+At the $2/3$ assignment, the attractive edges decompose as
+eDP~:~qDP~:~hDP~:~repulsive $= 1:1:2:2$ (averaged over all
+four-type charge refinements).  This ratio is combinatorial and
+independent of cage geometry.
+\end{remark}
+
+\begin{remark}[No K$_4$ in larger cages]
+The icosahedron, dodecahedron, and icosidodecahedron contain
+\emph{zero} K$_4$ subgraphs.  Larger cages must be assembled
+from individual CPs, not from pre-formed hybrid tetrahedra.
+\end{remark}
+
+\begin{remark}[The dodecahedron anomaly]
+The dodecahedron is the only cage whose maximum attractive fraction
+($4/5 = 0.800$) exceeds $2/3$.  Whether the bottom quark's cage
+operates at $2/3$ or at $4/5$, and what physical consequences this
+distinction might have, is an open question.
+\end{remark}
 
 % ============================================================
 \section{Palindrome Structure and Three Generations}
 \label{sec:palindrome}
 % ============================================================
 
-The distance shells exhibit mirror symmetry: Shell~7 mirrors
-Shell~1, Shell~6 mirrors Shell~2, Shells~3 and~5 are both gaps,
-with Shell~4 at the midpoint.
+The distance shells exhibit mirror symmetry:
+
+\begin{table}[H]
+\centering
+\caption{Palindrome structure of the 600-cell distance shells.
+  The outer bonded shells mirror the inner bonded shells in vertex
+  count, edge count, and coordination number.  Shell~4 is the
+  midpoint.  Shells 3 and 5 are both zero-edge gaps.}
+\label{tab:palindrome}
+\begin{tabular}{@{}lcccl@{}}
+\toprule
+Inner shell & & Midpoint & & Outer shell \\
+\midrule
+Shell 1 (icosa, 12V, 30E, $z{=}5$) & & & & Shell 7 (icosa, 12V, 30E, $z{=}5$) \\
+Shell 2 (dodeca, 20V, 30E, $z{=}3$) & & & & Shell 6 (dodeca, 20V, 30E, $z{=}3$) \\
+Shell 3 (gap, 12V, 0E) & & & & Shell 5 (gap, 12V, 0E) \\
+ & & Shell 4 (icosidodeca, 30V, 60E, $z{=}4$) & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This palindrome is a consequence of the 600-cell being a compact
+polytope: Shell~7 at distance $d \approx 1.902$ from vertex~$A$ is
+only $2.000 - 1.902 = 0.098$ from the antipodal vertex~$B$.
+Shell~7 of vertex~$A$ is Shell~1 of vertex~$B$.
+
+\subsection{Why exactly three generations}
 
 \begin{theorem}[Three generations from lattice tessellation]
 \label{thm:generations}
 The tessellated 600-cell lattice supports exactly four independent
-cage types, corresponding to exactly three generations of quarks.
-No fourth generation exists because outer shells are identified
-with inner shells of neighbouring 600-cells.
+cage types (tetrahedron, icosahedron, dodecahedron,
+icosidodecahedron), corresponding to exactly three generations of
+quarks.  No fourth generation can exist because the outer distance
+shells are identified with the inner shells of neighbouring
+600-cells in the tessellation.
 \end{theorem}
 
 \begin{proof}
-Shell~7 of centre~$A$ is Shell~1 of a neighbouring centre~$B$.
-Any cage at that location is an icosahedral cage of~$B$, not a
-new species.  The four independent cage types map to up/down
-(no cage), strange/charm (tet/ico), bottom/top (dod/icosidod).
-Shells~5--7 generate no new species. \qed
+The 600-cell has 8 distance shells from any vertex.  Of these, only
+Shells 1, 2, and 4 (plus the tetrahedral cells) have nonzero
+lattice edges (Theorem~\ref{thm:shells}).  Shells 6 and 7 also
+have nonzero edges, with vertex/edge counts identical to Shells 2
+and 1 respectively (Table~\ref{tab:palindrome}).
+
+In the tessellated lattice, every Grid Point is the centre of its
+own 600-cell.  The 600-cells overlap, sharing vertices, edges, and
+faces.  A vertex at Shell~7 ($d \approx 1.902$) of centre~$A$ is
+at Shell~1 ($d \approx 0.618$) of a neighbouring centre~$B$ near
+the antipode.  Any cage forming at that location is a Shell~1 cage
+(icosahedron) of centre~$B$, not a new species.
+
+No experiment can distinguish ``Shell~7 of centre~$A$'' from
+``Shell~1 of centre~$B$.''  The cage structure is a local geometric
+object; it does not know which 600-cell considers itself the
+reference.  Therefore Shells 6 and 7 do not generate new particle
+species --- they are the inner-shell cages of neighbouring cells.
+
+The four independent cage types map to the quark spectrum as:
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Cage type} & \textbf{$-1/3$ quark} & \textbf{$+2/3$ quark} \\
+\midrule
+No cage & Down & Up \\
+Tetrahedron (cell) & Strange & --- \\
+Icosahedron (Shell~1) & --- & Charm \\
+Dodecahedron (Shell~2) & Bottom & --- \\
+Icosidodecahedron (Shell~4) & --- & Top \\
+\end{tabular}
+\end{center}
+
+The first generation (up, down) has no cage.  Generations 2 and 3
+exhaust the four cage types.  There is no fifth independent cage
+type because the palindrome identifies Shells 6 and 7 with Shells 2
+and 1 of the tessellation.  A fourth generation would require a
+cage at Shell~5 or beyond Shell~7, neither of which supports bonded
+structures. \qed
 \end{proof}
 
-This prediction is falsifiable: a fourth-generation quark would
-refute the antipodal identification.
+\begin{remark}
+This prediction is \emph{falsifiable}: if a fourth-generation quark
+were discovered at any mass, it would refute the antipodal
+identification and require either a new cage type not present in
+the 600-cell shells or a fundamentally different lattice.  The
+current experimental lower bound on fourth-generation quark masses
+($> 1$~TeV from LHC searches) is consistent with the prediction.
+\end{remark}
 
 % ============================================================
 \section{Anticipated Criticisms}
 \label{sec:criticisms}
 % ============================================================
 
-\textbf{``Is the exponent 7/3 derived or fitted?''}
-Partially derived: $V^{7/3} = V^2 \times V^{1/3}$ (pair count
-$\times$ cage dimension).  A rigorous proof from simplex
-combinatorics remains open.
+\subsection{``Is this numerology?''}
+No.  The existence of exactly four bonded shells is a
+\textbf{forced combinatorial property} of the 600-cell, proved by
+explicit computation.  The Shell~3 gap is structural, not fitted.
 
-\textbf{``Why does $m_e$ appear?''}
+\subsection{``Why should cage volume determine mass?''}
+In CPP, mass arises from the density of ZBW chain excitations
+confined within the cage.  The number of available modes scales
+with geometric size.  This is analogous to energy levels in quantum
+dots scaling with confinement volume.
+
+\subsection{``Why does the top quark not hadronize?''}
+Because the Shell~4 cage is too large and too open to support
+stable chain-density confinement.  The top quark decays before
+its colour field can organise into a bound state.  This is a
+geometric explanation for a long-standing empirical fact.
+
+\subsection{``Does this predict a fourth SM generation?''}
+No.  Theorem~\ref{thm:generations} proves that the tessellated
+600-cell lattice supports exactly four independent cage types.
+The outer distance shells (6 and 7) are antipodal mirrors of the
+inner shells (2 and 1) --- they are the cages of neighbouring
+600-cells, not new species.  CPP predicts exactly three generations,
+no more.  This prediction is falsifiable: a fourth-generation quark
+at any mass would refute the antipodal identification.
+
+\subsection{``Is the exponent 7/3 derived or fitted?''}
+Partially derived: $V^{7/3} = V^2 \times V^{1/3}$ (pair count
+$\times$ cage dimension) from the angular-weighted pair model
+(SM-9 v2.0).  A rigorous proof from simplex combinatorics remains
+open.  The v3.x calibrated exponent $\alpha = 2.38$ remains
+available as a precision tool.
+
+\subsection{``Why does $m_e$ appear?''}
 The electron mass sets the DP Sea energy scale.  All quark masses
 derive from ZBW oscillation energy anchored to $m_e$ through SM-6.
 
-\textbf{``Is the $z \times C_F$ multiplier ad hoc?''}
+\subsection{``Is the $z \times C_F$ multiplier ad hoc?''}
 No.  Both $z = 12$ (lattice geometry) and $C_F = 4/3$ (SU(3)
-algebra) are independently established.  The multiplier activates
-at a definite geometric feature (Shell~3 gap).
+algebra) are independently established in the CPP series.  The
+multiplier activates at a definite geometric feature (Shell~3 gap)
+with a clear physical mechanism (coordination tunneling with bare
+colour factor).
 
-\textbf{``Why not keep $z = 12$ with 0.02\% precision?''}
+\subsection{``Why not keep $z = 12$ with 0.02\% precision?''}
 Because v3.x's 0.02\% precision requires two calibrations.  The
 v4.0 formula achieves 2.1\% with zero parameters.  The v3.x
-precision is partly a cancellation artefact (SM-9 v2.0).
+precision is partly a cancellation artefact (SM-9 v2.0,
+Section~\ref{sec:reconcile}).
 
 % ============================================================
 \section{Open Problems}
@@ -531,7 +810,32 @@ coherence (v4.0: exact geometry + partially derived scaling +
 zero free parameters).  The structural results (shell embedding,
 palindrome, generation count, charge census) are exact and
 independent of the mass formula.
+
+The methodology is \emph{calibrated coherence}: exact geometric
+theorems are combined with one empirical scaling law to produce
+testable predictions.  The strength of the case is cumulative and
+inductive --- multiple independent geometric features of the same
+lattice converging on the same physical observables --- rather than
+a single deductive chain from axioms to masses.  This is analogous
+to how Kepler's laws preceded Newton's derivation: the patterns
+were established empirically and structurally before the dynamical
+mechanism was understood.
 \end{remark}
+
+The palindrome symmetry of the distance shells --- outer shells
+mirroring inner shells --- combined with the tessellated nature of
+the lattice, provides a geometric explanation for why the Standard
+Model has exactly three generations of quarks and leptons.  The
+four independent cage types exhaust the bonded-shell inventory of
+the 600-cell.  No further generations can exist because the lattice
+wraps around: Shell~7 of one 600-cell is Shell~1 of its neighbour.
+
+Future work will develop a rigorous derivation of the $7/3$
+exponent, quantify the electroweak feedback correction in the
+exponent (SM-9 v2.0), explore the connection between the cage $2/3$
+attractive fraction and the Koide ratio $K = 2/3$, and integrate
+the present geometric picture with the mode-based framework of
+SM-6 and SM-7.
 
 % ============================================================
 \section*{Acknowledgements}
