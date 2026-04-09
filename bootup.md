@@ -221,6 +221,8 @@ Full list: `open_problems/` folder and `future_projects.md`.
 
 ## 9. What to Update After Every Paper
 
+**WHEN:** Immediately after completing the documentation suite (Phase 7), before pushing to GitHub. See `templates/operating_system.md` Section 10 for detailed procedures for each file.
+
 | Document | What to update |
 |----------|----------------|
 | `CPP_the_theory.md` | Add results to chapter, update scorecard |

@@ -352,6 +352,10 @@
 
 ## 10. Repository Housekeeping Checklist
 
+**TRIGGER:** Run this checklist immediately after completing Phase 7 (Documentation Suite) of the paper production pipeline — BEFORE pushing to GitHub. Do not push until all items are checked.
+
+**Estimated time:** 15-20 minutes for a single paper.
+
 **Run after every paper is completed:**
 
 ### Content documents (update substance)
@@ -365,10 +369,40 @@
 - [ ] `CPP_the_theory.md` — add new results to appropriate chapter, update scorecard
 
 ### Navigation documents (update structure)
-- [ ] `README.md` — add paper to table, update counts
-- [ ] `INDEX.md` — add new files
+- [ ] `README.md` — add paper to table, update counts (see procedure below)
+- [ ] `INDEX.md` — add new files (see procedure below)
 - [ ] `paper_catalog.md` — add paper entry
 - [ ] `series_[name]/README.md` — add paper to series
+
+#### README.md update procedure
+1. Add the new paper to the "Registered Papers" table:
+   ```
+   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | OSF registered |
+   ```
+2. Update the paper count ("24 papers" → "25 papers" etc.)
+3. If the paper produced a headline result, add it to "Strongest Results":
+   ```
+   | m_t = 172,800 MeV | 172,760 MeV | 0.02% | SM-8 |
+   ```
+4. If axiom count changed, update the axiom summary line
+5. Add any new series-level achievements to the series table
+
+#### INDEX.md update procedure
+1. Add every new file created during this paper's production:
+   - The paper itself (.tex, .pdf)
+   - All 8 documentation suite files
+   - Any development transcripts
+   - Any new figures
+2. Add files to the correct folder section in INDEX.md
+3. Format: `- [filename](path) — one-line description`
+4. If a new folder was created, add the folder heading
+
+#### paper_catalog.md update procedure
+1. Add one row per new paper:
+   ```
+   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | 14 pages | April 2026 | OSF pending |
+   ```
+2. Update the total paper count at the top
 
 ### History documents (create/update)
 - [ ] `development-[S]-[N].md` — paper development narrative
