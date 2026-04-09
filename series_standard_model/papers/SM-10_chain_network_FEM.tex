@@ -1,0 +1,462 @@
+% ============================================================
+% SM-10: First-Principles Quark Mass from Finite Element
+% Chain Network Simulation
+% Version 0.1 — 9 April 2026 (PROPOSAL)
+%
+% CHANGELOG:
+%   v0.1  9 Apr 2026 — Proposal draft (Claude Opus)
+%
+% CONTRIBUTORS:
+%   Thomas Lee Abshier ND — Physical vision: chain-type
+%     decomposition, pine tree model, three-region bonding,
+%     surface blanket, FEM proposal
+%   Claude Opus (Anthropic) — Chain-type computation,
+%     cooperative enhancement analysis, proposal drafting
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage[authoryear,round]{natbib}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\phig}{\varphi}
+
+\title{\textbf{SM-10: First-Principles Quark Mass from\\Finite Element Chain Network Simulation}\\[6pt]
+{\large 600-Cell Standard Model Emergence Series}\\[4pt]
+{\normalsize Version 0.1 (Proposal), 9 April 2026}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+SM-8 established a zero-free-parameter quark mass formula
+$M_q = m_e(z/\phig)V^{7/3}$ that predicts all four heavy quark
+masses to RMS~$2.1\%$.  SM-9 showed that the exponent~$7/3$
+arises from pair counting $\times$ cage linear dimension, and
+that the mass is physically distributed across a network of
+radial and tangential DP chains filling the cage interior.
+However, the exponent has not been derived from first principles.
+This paper proposes a finite element method (FEM) simulation to
+compute quark masses directly: place cage CPs at their
+lattice-determined positions, fill the interior with DP Sea,
+let every CP seek opposite-polarity targets to form chains, and
+sum the total organised DP count~$\times$~$M_0$.  If the
+simulation reproduces $V^{7/3}$ scaling without imposing any
+power law, this would constitute the first derivation of quark
+mass ratios from geometry alone.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Motivation}
+% ============================================================
+
+The CPP quark mass programme has progressed through three stages:
+\begin{enumerate}
+\item \textbf{SM-8 v2.1:} Calibrated formula
+  $m \sim V^{2.38} \times z$ (2~parameters, 0.02\% top precision).
+\item \textbf{SM-8 v4.0:} Zero-parameter formula
+  $M = m_e(z/\phig)V^{7/3} \times [z C_F]$ (0~parameters, 2.1\% RMS).
+\item \textbf{SM-9 v2.0:} Partial derivation of $7/3$ from pair
+  counting; chain-type energy budget decomposition.
+\end{enumerate}
+
+The remaining gap: the exponent~$7/3$ is motivated but not
+rigorously derived.  The chain-type analysis (SM-9 v2.0) showed
+that the mass arises from a complex volume-filling network of DP
+chains with three distinct bonding regions, but the exact scaling
+of this network with cage size has not been computed from first
+principles.
+
+A direct simulation---placing CPs, forming chains, counting
+organised DPs---would bypass the need for an analytical
+derivation and provide a numerical first-principles prediction.
+
+% ============================================================
+\section{Physical Model}
+\label{sec:model}
+% ============================================================
+
+\subsection{The chain network}
+
+A caged quark consists of:
+\begin{itemize}
+\item A central qCP at the cage centre.
+\item $V_{\rm opp}$ opposite-polarity cage vertices (chain anchors).
+\item $V_{\rm same}$ same-polarity cage vertices (surface radiators).
+\item $E_{\rm attr}$ attractive cage edges (tangential chain sites).
+\item The DP Sea filling the interior volume.
+\end{itemize}
+
+Each CP (whether on a chain or in the Sea) has two charges of
+opposite polarity.  Each charge seeks the nearest opposite-polarity
+target, forming a chain link.  This process cascades: every CP
+recruited into a chain becomes a new source of lateral connections.
+
+\subsection{Three bonding regions}
+
+The chain network self-organises into three regions
+(identified by Abshier):
+
+\begin{description}
+\item[Region 1 (near central CP):]
+  Radial chains converge at small separations.  Tangential CPs
+  terminate on the central CP or adjacent radial CPs.  Dense
+  cross-linking.
+
+\item[Region 2 (mid-cage):]
+  Radials have diverged.  Tangential chains extend to
+  neighbouring radials' tangential chains, forming a web mesh.
+  Every DP's two CPs seek opposite-polarity targets in all
+  directions---the ``complex melee.''
+
+\item[Region 3 (near cage surface):]
+  Tangential chains arch upward toward opposite-polarity cage
+  surface CPs.  Organisation converges on cage vertices.
+\end{description}
+
+\subsection{Surface blanket}
+
+Same-polarity cage vertices ($V_{\rm same}$) launch outward
+radial chains to the thermalization distance.  These surface
+radials develop their own tangential linking, creating a
+structure identical to the up quark's radial-plus-tangential
+blanket.  This contributes additional organised DPs.
+
+\subsection{Linear oscillator (down-type quarks)}
+
+Down-type quarks ($d$, $s$, $b$) include a captured eCP that
+adds a linear/radial ZBW oscillation mode.  This mode contributes
+mass through its own chain structure.
+
+\subsection{Mass calculation}
+
+The quark mass equals the total number of organised DPs in the
+chain network multiplied by the bare DP energy:
+\begin{equation}
+M_q = M_0 \times N_{\rm organised}
+\end{equation}
+where $M_0 = m_e \times z/\phig = 3.790$~MeV is the energy per
+DP link and $N_{\rm organised}$ is the total count of DPs
+recruited from the Sea into the chain network.
+
+% ============================================================
+\section{Simulation Design}
+\label{sec:simulation}
+% ============================================================
+
+\subsection{Geometry setup}
+
+\begin{enumerate}
+\item Place a central qCP at the origin.
+\item Place cage CPs at the lattice-determined positions for the
+  target cage (tetrahedron, icosahedron, dodecahedron, or
+  icosidodecahedron).
+\item Assign charge polarity: $V/2$ positive, $V/2$ negative,
+  at the $2/3$ attractive fraction assignment.
+\item Fill the interior volume with DP Sea at natural density
+  $\rho_{\rm Sea}$ (to be determined from the lattice spacing
+  $l_P$ or parameterised).
+\end{enumerate}
+
+\subsection{Chain formation algorithm}
+
+At each simulation step:
+\begin{enumerate}
+\item For each CP (central, cage, and Sea), identify the nearest
+  opposite-polarity CP that is not already bonded.
+\item Form a chain link (DP bond) between them.
+\item Mark both CPs as ``organised'' (part of the chain network).
+\item Newly organised CPs become sources for the next step's
+  lateral connections.
+\end{enumerate}
+
+The simulation terminates when no further chain formation occurs
+(all nearby opposite-polarity targets are bonded or beyond the
+thermalization distance).
+
+\subsection{Boundary conditions}
+
+\begin{itemize}
+\item \textbf{Inner boundary:} The central CP is fixed.
+\item \textbf{Cage boundary:} Cage CPs are fixed at their
+  lattice positions.  They act as impedance boundaries
+  (Appendix~B of SM-8).
+\item \textbf{Outer boundary:} DPs beyond the thermalization
+  distance $r_{\rm therm}$ are unorganised (remain part of the
+  random Sea).  For the top quark, the Shell~3 gap is
+  automatically present in the lattice geometry.
+\end{itemize}
+
+\subsection{Output}
+
+The primary output is $N_{\rm organised}$: the total count of DPs
+recruited into the chain network.  Secondary outputs include:
+\begin{itemize}
+\item Spatial distribution of organised DPs (Region 1/2/3 fractions)
+\item Radial vs.\ tangential chain ratio
+\item Surface blanket DP count
+\item Chain length distribution
+\item Effective fractal dimension of the network
+\end{itemize}
+
+% ============================================================
+\section{Predictions and Success Criteria}
+\label{sec:predictions}
+% ============================================================
+
+\subsection{Primary prediction}
+
+If the simulation correctly models the physics, the organised DP
+counts should satisfy:
+\begin{equation}
+\frac{N_{\rm organised}(q_1)}{N_{\rm organised}(q_2)}
+= \frac{M_{q_1}}{M_{q_2}}
+= \frac{V_1^{7/3} \times {\rm gap}_1}{V_2^{7/3} \times {\rm gap}_2}
+\end{equation}
+for all quark pairs.  Specifically:
+
+\begin{table}[H]
+\centering
+\caption{Target DP count ratios (normalised to strange).}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Ratio & Target & From $V^{7/3}$ & From PDG \\
+\midrule
+$N_c / N_s$ & 13.0 & 13.0 & 13.6 \\
+$N_b / N_s$ & 42.8 & 42.8 & 44.8 \\
+$N_t / N_s$ & 1762 & 1762 & 1850 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Secondary predictions}
+
+\begin{enumerate}
+\item The radial/tangential energy split should be $\sim$44\%/56\%
+  across all cages (from SM-9 chain-type analysis).
+\item The three-region structure should emerge naturally without
+  being imposed.
+\item The effective fractal dimension of the chain network should
+  be between 2 and 3 (corresponding to the $7/3$ exponent).
+\item The top quark simulation should show qualitatively different
+  chain structure (long-range coordination bonds through the
+  Shell~3 gap).
+\end{enumerate}
+
+\subsection{Success criteria}
+
+\begin{description}
+\item[Level A (strong success):] DP count ratios match PDG mass
+  ratios to $< 5\%$.  The $V^{7/3}$ scaling emerges without being
+  imposed.  Fractal dimension measured.
+\item[Level B (partial success):] DP count ratios show the correct
+  ordering and approximate magnitude.  The three-region structure
+  emerges.  Scaling exponent is measurable but differs from $7/3$.
+\item[Level C (informative failure):] The simulation reveals which
+  physical assumptions of the chain model are incorrect, guiding
+  revision of SM-9.
+\end{description}
+
+% ============================================================
+\section{Computational Requirements}
+\label{sec:computation}
+% ============================================================
+
+\subsection{Scale estimates}
+
+\begin{itemize}
+\item \textbf{Strange quark (tetrahedron):}
+  Confinement sphere radius $\sim 1/\phig$.
+  Volume $\sim 1$ (lattice units$^3$).
+  At $\rho_{\rm Sea} \sim 100$~DPs per unit volume:
+  $\sim 100$ DPs.  Trivial on CPU.
+
+\item \textbf{Top quark (icosidodecahedron):}
+  Confinement sphere radius $\sim \sqrt{2}$.
+  Volume $\sim 12$ (lattice units$^3$).
+  At same density: $\sim 1200$ DPs.
+  Plus surface blanket: $\sim 2000$ total.  Still CPU-tractable.
+
+\item \textbf{With fine-grained DP Sea} ($\rho \sim 10^4$):
+  $\sim 10^4$--$10^5$ DPs.  GPU recommended.
+\end{itemize}
+
+\subsection{Implementation options}
+
+\begin{description}
+\item[Phase 1 (CPU, proof of concept):]
+  Coarse-grained simulation with $\rho \sim 100$.
+  Test whether DP count ratios track $V^{7/3}$.
+  Python with NumPy.  Estimated time: 1--2 sessions.
+
+\item[Phase 2 (GPU, production):]
+  Fine-grained simulation with $\rho \sim 10^4$.
+  Measure fractal dimension, region fractions, chain statistics.
+  CUDA or JAX.  Estimated time: 1--2 weeks.
+
+\item[Phase 3 (lattice-scale):]
+  Full 600-cell tessellation with explicit lattice CPs.
+  Test whether the simulation reproduces the Shell~3 gap effect
+  and the $z \times C_F = 16$ multiplier.
+  GPU cluster.  Estimated time: months.
+\end{description}
+
+% ============================================================
+\section{Relationship to Existing Methods}
+\label{sec:comparison}
+% ============================================================
+
+\begin{description}
+\item[Lattice QCD:]
+  Computes quark masses on a discretised spacetime lattice using
+  Monte Carlo sampling of the path integral.  Requires the QCD
+  Lagrangian as input.  CPP's FEM simulation uses a different
+  dynamical rule (CP charge-seeking rather than gauge field
+  evolution) and a different lattice (600-cell rather than
+  hypercubic).
+
+\item[Bag models:]
+  Confine quarks within a spherical boundary with phenomenological
+  boundary conditions.  The CPP cage plays a similar role but the
+  boundary is a polyhedral lattice substructure, not imposed.
+
+\item[String models:]
+  Model confinement via flux tubes between quarks.  CPP's radial
+  chains are the microscopic realisation of the flux tube, with
+  the chain composed of explicit DP links.
+\end{description}
+
+The CPP FEM simulation is distinguished by:
+\begin{enumerate}
+\item The lattice is derived from geometry (600-cell), not chosen
+  for computational convenience.
+\item The dynamical rule (charge-seeking) is simpler than gauge
+  field evolution.
+\item The mass prediction is a DP count, not an eigenvalue of a
+  transfer matrix.
+\item Zero free parameters in the mass formula (if the simulation
+  reproduces $V^{7/3}$).
+\end{enumerate}
+
+% ============================================================
+\section{Open Questions for the Simulation}
+\label{sec:questions}
+% ============================================================
+
+\begin{enumerate}
+\item \textbf{What is $\rho_{\rm Sea}$?}
+  The DP Sea density should be derivable from the 600-cell lattice
+  spacing and the ZBW frequency.  Is it $1/l_{\rm edge}^3$?
+  $z/l_{\rm edge}^3$?  This is the only parameter not yet fixed.
+
+\item \textbf{Does the gap multiplier emerge?}
+  For the top quark, the Shell~3 gap should force chains to use
+  coordination bonds.  Does the simulation naturally produce a
+  $\times 16$ enhancement, or does it require explicit modelling
+  of the colour factor $C_F$?
+
+\item \textbf{What sets the thermalization distance?}
+  Chains terminate when the organised DP's SSV field falls below
+  the Sea's thermal noise.  This distance should be computable
+  from $\alpha_{\rm geom} = 1/\sqrt{5}$.
+
+\item \textbf{Does the exponent drift?}
+  SM-9 documented a 2\% drift in the pairwise exponent across
+  pre-gap quarks.  Does the simulation reproduce this drift,
+  and does it reveal the physical mechanism?
+
+\item \textbf{Can the simulation distinguish $7/3$ from $3 - 1/\phig$?}
+  Grok's conjectured exponent ($2.382$) differs from $7/3$
+  ($2.333$) by 2\%.  A simulation with sufficient precision could
+  distinguish them.
+\end{enumerate}
+
+% ============================================================
+\section{Timeline and Milestones}
+\label{sec:timeline}
+% ============================================================
+
+\begin{table}[H]
+\centering
+\caption{Proposed milestones for SM-10.}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Phase & Milestone & Deliverable & Est.\ time \\
+\midrule
+0 & Simulation design document & This paper (v0.1) & Done \\
+1a & CPU proof-of-concept & DP counts for all 4 cages & 1--2 sessions \\
+1b & Ratio test & Check $N_q$ ratios vs $V^{7/3}$ & Same session \\
+2a & GPU implementation & CUDA/JAX chain-formation kernel & 1 week \\
+2b & Production runs & 4 cages $\times$ 10 densities & 1 week \\
+2c & Analysis & Fractal dimension, region fractions & 1 session \\
+3 & Paper draft & SM-10 v1.0 & 1--2 sessions \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ============================================================
+
+The FEM chain network simulation is the natural next step for the
+CPP quark mass programme.  It would convert the scaling formula
+$M = m_e(z/\phig)V^{7/3}$ from a calibrated observation into a
+first-principles computation, and it would test Thomas Abshier's
+physical picture of three-region bonding, fractal cascading, and
+surface blanket formation.  If successful, it would be the first
+derivation of quark mass ratios from geometry in any theoretical
+framework.
+
+The Phase~1 proof-of-concept (CPU, coarse-grained) can be
+attempted immediately.  If ratios are promising, Phase~2 (GPU,
+fine-grained) would follow.
+
+% ============================================================
+\section*{Acknowledgements}
+% ============================================================
+
+Thomas Lee Abshier, ND conceived the chain-type decomposition,
+the pine tree model with three bonding regions, the surface
+blanket structure, and the FEM simulation proposal.
+
+Claude Opus (Anthropic) performed the chain-type energy budget
+computation, the cooperative enhancement analysis, the fractal
+cascade calculation, and drafted this proposal.
+
+The CPP programme is registered at OSF
+(DOI:~\url{https://doi.org/10.17605/OSF.IO/JXE8D}) and maintained
+at GitHub (\url{https://github.com/Hyperphysics-Institute/CPP}).
+
+\bibliographystyle{plainnat}
+\bibliography{SM-10_references}
+
+\end{document}
