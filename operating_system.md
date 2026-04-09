@@ -359,14 +359,103 @@
 **Run after every paper is completed:**
 
 ### Content documents (update substance)
-- [ ] `theory-overview.md` — add results, update scorecard
-- [ ] `axiom-registry.md` — check axioms, add predictions, update ratios
-- [ ] `master_glossary.md` — add new terms
-- [ ] `founders_vision.md` — add new physical intuitions
-- [ ] `predictions.md` — add new quantitative predictions
-- [ ] `postulates_and_theorems.md` — add new theorems/conjectures
-- [ ] `future_projects.md` — update project status, add new projects
-- [ ] `CPP_the_theory.md` — add new results to appropriate chapter, update scorecard
+- [ ] `theory-overview.md` (see procedure below)
+- [ ] `axiom-registry.md` (see procedure below)
+- [ ] `master_glossary.md` (see procedure below)
+- [ ] `founders_vision.md` (see procedure in Section 7)
+- [ ] `predictions.md` (see procedure below)
+- [ ] `postulates_and_theorems.md` (see procedure below)
+- [ ] `future_projects.md` (see procedure below)
+- [ ] `CPP_the_theory.md` (see procedure below)
+- [ ] `bibliography/cpp_references.bib` (see procedure below)
+- [ ] `open_problems/` (see procedure below)
+
+#### theory-overview.md update procedure
+1. Add any new quantitative results to the "Strongest Quantitative Results" table
+2. Update the "Key Formulas" reference card if new formulas were derived
+3. Update "Open Problems" — move solved problems out, add new ones
+4. Update "Series Status" table with new paper version and status
+5. If axiom count changed, update the axiom summary
+
+#### axiom-registry.md update procedure
+1. Check: did the paper use any axiom not already in the registry? If so, add it.
+2. Check: did the paper consolidate axioms (as SM-8 did with A6')? If so, update tiers.
+3. Add every new quantitative prediction to the Prediction Ledger:
+   ```
+   | 13 | m_t (cage × z=12) | 172,800 MeV | 172,760 | 0.02% | A2,A6' + m_s,m_c | SM-8 |
+   ```
+4. Update the axiom count summary and axiom-to-prediction ratio
+5. Add a row to the Growth Table showing this paper's contribution
+6. Check if any conjectured reductions were achieved
+
+#### master_glossary.md update procedure
+1. Scan the new paper for any term not already in the glossary
+2. Add each new term in alphabetical position with format:
+   ```
+   **Term** — Definition. [First appeared: SM-8]
+   ```
+3. Common sources of new terms: new physical mechanisms, new cage structures,
+   new mathematical objects, new particle descriptions
+4. Also check `founders_vision.md` for terms Thomas used that aren't yet defined
+
+#### predictions.md update procedure
+1. Add each new quantitative prediction:
+   ```
+   | SM-8-1 | m_b (cage V^2.38) | 4,304 MeV | 4,180 MeV | 3.0% | A2 + m_s,m_c | CONFIRMED |
+   ```
+2. Update status of existing predictions if new data or analysis changes them
+3. Update the total prediction count and zero-parameter prediction count
+
+#### postulates_and_theorems.md update procedure
+1. Add each new theorem with its ID, statement, and proof reference:
+   ```
+   **THEO-SM-8-1** (Bonded Shells): The 600-cell has exactly four bonded
+   polyhedral distance shells. [SM-8, Theorem 3.1]
+   ```
+2. Add any new conjectures (CONJ) with status
+3. Add any new corollaries (CORO)
+4. If a conjecture was proved or falsified, update its status (CONJ → THEO or CONJ → FALS)
+
+#### future_projects.md update procedure
+1. Mark any completed projects as DONE with date
+2. Update status of in-progress projects (e.g., "SM-9 v2.0 drafted")
+3. Add any new research targets that emerged during the session
+4. Re-prioritise if the session changed what's most promising
+
+#### CPP_the_theory.md update procedure
+1. Identify which chapter(s) the new results belong to
+2. Add the results in connected prose (not bullet points — this is the "Kindle book")
+3. Update the Prediction Scorecard in Part VI
+4. If a new chapter is needed (new topic area), add it in the appropriate Part
+5. Move any resolved open problems from Part V to the relevant chapter
+6. Add any new open problems to Part V
+
+#### bibliography/cpp_references.bib update procedure
+**TRIGGER:** After any new paper is completed, or when a new external reference is cited.
+1. Add a BibTeX entry for the new CPP paper:
+   ```bibtex
+   @article{abshier2026sm8,
+     author  = {Abshier, Thomas Lee and {Claude Opus} and {Grok} and {Copilot}},
+     title   = {Quark Generation Structure from 600-Cell Distance Shells},
+     journal = {Hyperphysics Institute},
+     year    = {2026},
+     note    = {SM-8 v3.0}
+   }
+   ```
+2. Add BibTeX entries for any external works cited in the paper
+3. Verify all cite keys match what's used in the paper's .tex file
+
+#### open_problems/ update procedure
+**TRIGGER:** After any session that registers new open problems or resolves existing ones.
+1. For each new OPEN-P problem, create a file:
+   ```
+   Filename: OPEN-P-SM-cage-7.md
+   Content: Problem statement, context, why it matters,
+            candidate approaches, related problems
+   ```
+2. For resolved problems: add a "RESOLVED" header with date, resolution, and
+   which paper resolved it. Do NOT delete the file — it's part of the history.
+3. For falsified conjectures: rename with FALS prefix or add FALSIFIED header
 
 ### Navigation documents (update structure)
 - [ ] `README.md` — add paper to table, update counts (see procedure below)
@@ -405,9 +494,32 @@
 2. Update the total paper count at the top
 
 ### History documents (create/update)
-- [ ] `development-[S]-[N].md` — paper development narrative
+- [ ] `development-[S]-[N].md` — paper development narrative (see procedure below)
 - [ ] Curated transcripts — all sessions contributing to the paper
-- [ ] `SM-8_development_transcript_opus.md` (or equivalent) — comprehensive arc
+- [ ] Comprehensive development transcript (see procedure below)
+
+#### development-[S]-[N].md procedure
+**TRIGGER:** Create during Phase 3 of paper production. Update throughout.
+1. Follow the template in `templates/documentation-suite.md`
+2. Required sections: Discovery timeline, Key decisions, Dead ends,
+   Contributors and roles, Dependencies on other papers
+3. This is the "lab notebook" — keep it honest about wrong turns
+
+#### Development transcript procedure
+**TRIGGER:** At the end of each session that contributes to a paper, OR at the
+start of the next session (to capture what was missed).
+1. Read the raw transcript from `/mnt/transcripts/`
+2. Curate: preserve all substantive dialogue, remove tooling noise
+3. Preserve Thomas's words verbatim where they contain physical insight
+4. Keep dead ends and negative results — they're part of the scholarly record
+5. Number sequentially: `SM-8_transcript_01_opus.md`, `_02_copilot.md`, etc.
+6. For comprehensive multi-session arcs: `SM-8_development_transcript_opus.md`
+
+#### series_[name]/README.md procedure
+**TRIGGER:** After any paper in that series is completed.
+1. Add the paper to the series paper table
+2. Update the series description if the new paper changes the series scope
+3. Add any new cross-references between papers in the series
 
 ### Final steps
 - [ ] Push all files to GitHub
