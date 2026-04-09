@@ -241,8 +241,9 @@ Full list: `open_problems/` folder and `future_projects.md`.
 ## 10. Conventions
 
 **Paper IDs:** `[SERIES]-[NUMBER]` (SM-8, EW-3, QM-1, SR-1, SS-1, SD-5)
-**Versions:** `vX.Y` — changelog in .tex header
-**Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN-P (open problem), FALS (falsified)
+**Filenames:** `SM-8_quark_generation_600cell_shells.tex` — lowercase slug, no version number in filename
+**Versions:** `vX.Y` in the .tex header changelog. ONE file per paper, overwritten — Git history preserves all versions. Never create `_v1`, `_v2` copies.
+**Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN-P (open problem), FALS (falsified). See `templates/nomenclature.md`.
 **LaTeX:** Follow `templates/paper-formatting.md`
 
 ---
