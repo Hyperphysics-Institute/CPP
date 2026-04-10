@@ -1,28 +1,27 @@
 % ============================================================
-% SM-10: First-Principles Quark Mass from Finite Element
+% SM-10: Toward First-Principles Quark Mass from Finite Element
 % Chain Network Simulation
-% Version 1.0 — 9 April 2026
+% Version 2.0 — 9 April 2026
 %
 % CHANGELOG:
-%   v0.1  9 Apr 2026 — Proposal draft (Claude Opus)
-%   v1.0  9 Apr 2026 — Major upgrade: two-regime physics
-%     (cascade + Shell 3 relay), CPU Phase 1-2 results,
-%     calibration targets, Sonnet's circular-validation fix,
-%     numerology audit, curve-fitting defense, Copilot/Grok
-%     polish items incorporated.
+%   v0.1  9 Apr 2026 — Proposal draft
+%   v1.0  9 Apr 2026 — Two-regime physics, CPU results, relay
+%   v2.0  9 Apr 2026 — Reviewer feedback incorporated:
+%     Retitled "Toward First-Principles" (Sonnet),
+%     pseudocode algorithm (Copilot), formal organised-DP
+%     definition (Copilot), relay energetics (Sonnet),
+%     f(r) derivation from chain density (Sonnet),
+%     sensitivity analysis (Sonnet), scaling-limit heuristic
+%     (Copilot), convergence criterion (Sonnet/Grok),
+%     expected outputs (Grok), axiom A10 (Grok)
 %
 % CONTRIBUTORS:
 %   Thomas Lee Abshier ND — Chain-type decomposition, pine tree
-%     model, three-region bonding, surface blanket, FEM proposal,
-%     Shell 3 relay mechanism (key physical insight), reverse-
-%     engineering approach for cascade calibration
-%   Claude Opus (Anthropic) — Chain-type computation, cooperative
-%     enhancement analysis, FEM simulation code (Phases 1-2),
-%     cascade rate computation, numerology audit, paper drafting
-%   Claude Sonnet (Anthropic) — Circular-validation identification
-%   Copilot (Microsoft) — Algorithm formalization, scaling-limit
-%     heuristic, spectral dimension connection
-%   Grok (xAI) — Validation strategy, expected output design
+%     model, three-region bonding, Shell 3 relay mechanism
+%   Claude Opus (Anthropic) — Computation, simulation, drafting
+%   Claude Sonnet (Anthropic) — Circular-validation fix, framing
+%   Copilot (Microsoft) — Algorithm formalization, scaling limit
+%   Grok (xAI) — Validation strategy, expected outputs
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -39,6 +38,8 @@
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage{parskip}
 \usepackage[authoryear,round]{natbib}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 \hypersetup{
     colorlinks=true,
@@ -48,14 +49,16 @@
 }
 
 \newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{axiom}{Axiom}
 
 \newcommand{\phig}{\varphi}
-\newcommand{\Norg}{N_{\rm organised}}
+\newcommand{\Norg}{N_{\rm org}}
 
-\title{\textbf{SM-10: First-Principles Quark Mass from\\Finite Element Chain Network Simulation}\\[6pt]
+\title{\textbf{SM-10: Toward First-Principles Quark Mass from\\Finite Element Chain Network Simulation}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 1.0, 9 April 2026}}
+{\normalsize Version 2.0, 9 April 2026}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -69,26 +72,23 @@
 \begin{abstract}
 SM-8 established a zero-free-parameter quark mass formula
 $M_q = m_e(z/\phig)V^{7/3}$ (RMS~$2.1\%$).  SM-9 showed that
-the exponent~$7/3$ arises from pair counting and that the mass
-is distributed across a chain network with three bonding regions.
-This paper proposes and partially executes a finite element
-simulation to compute quark masses directly from organised DP
-counting.  A CPU proof-of-concept (Phases~1--2) reveals two
-distinct physical regimes: (1)~\textbf{intra-cage cascade} for
-strange, charm, and bottom quarks, where chain cross-linking with
-a radially-varying cascade rate~$f(r)$ reproduces all three
-masses exactly; and (2)~\textbf{Shell~3 relay} for the top quark,
-where DPs dissociate to occupy the edgeless Shell~3 positions,
-forming a synthetic icosahedral relay cage whose 12~vertices act
-as secondary central CPs radiating to Shell~4.  The relay
-mechanism produces the $z \times C_F = 16$ gap multiplier from
-geometry: $V_{\rm Shell\,3} = 12 = z$ (icosahedral symmetry),
-each relay bond carrying $C_F = 4/3$ (SU(3) Casimir).  Success
-is measured against PDG mass ratios directly---not
-$V^{7/3}$-derived targets---avoiding circular validation.
-Successful reproduction of the PDG ratios by a GPU simulation
-would constitute the first derivation of quark masses from
-geometry alone.
+the exponent~$7/3$ arises from pair counting times linear cage
+dimension.  This paper develops a finite element chain network
+model to explain \emph{why} this scaling holds.  A CPU
+proof-of-concept reveals two physical regimes:
+(1)~\textbf{intra-cage cascade} for strange, charm, and bottom,
+where cross-linking chains with radially-varying cascade
+rate~$f(r)$ reproduce all three masses; and
+(2)~\textbf{Shell~3 relay} for the top quark, where DPs
+dissociate to occupy the edgeless Shell~3 positions, forming a
+synthetic icosahedral relay cage whose 12~vertices radiate to
+Shell~4.  The relay produces $z \times C_F = 16$ from geometry
+alone.  Success is measured against PDG mass ratios
+directly---not $V^{7/3}$-derived targets---avoiding circular
+validation.  The current model is a \emph{calibrated geometric
+model} (4~fitted parameters for 4~data points); it becomes a
+first-principles derivation when the GPU simulation reproduces
+the cascade rates from DP-level dynamics alone.
 \end{abstract}
 
 \tableofcontents
@@ -100,91 +100,210 @@ geometry alone.
 
 The CPP quark mass programme has progressed through four stages:
 \begin{enumerate}
-\item \textbf{SM-8 v2.1:} Calibrated formula
-  $m \sim V^{2.38} \times z$ (2~parameters, 0.02\% top quark).
 \item \textbf{SM-8 v4.1:} Zero-parameter formula
   $M = m_e(z/\phig)V^{7/3} \times [z C_F]$ (0~parameters,
   2.1\% RMS).
-\item \textbf{SM-9 v2.2:} Partial derivation of $7/3$ from pair
-  counting; chain-type energy budget; three bonding regions.
-\item \textbf{SM-10 (this paper):} FEM simulation to derive the
-  masses from first-principles chain dynamics.
+\item \textbf{SM-9 v2.2:} Partial derivation of $\alpha = 7/3$;
+  chain-type energy budget; three bonding regions.
+\item \textbf{SM-10 (this paper):} FEM chain network model
+  explaining the mechanism behind $V^{7/3}$ and establishing
+  calibration targets for a GPU first-principles computation.
 \end{enumerate}
 
-The remaining gap: the exponent~$7/3$ is motivated but not
-rigorously derived, and the gap multiplier $z \times C_F = 16$
-had an algebraic derivation but lacked a geometric mechanism.
-This paper addresses both.
+The $V^{7/3}$ formula tells us \emph{what} the masses are.
+SM-10 aims to explain \emph{why}.
+
+% ============================================================
+\section{Definitions}
+\label{sec:definitions}
+% ============================================================
+
+\begin{definition}[Organised Dipole Pair]
+\label{def:orgDP}
+A Dipole Pair (DP) is \emph{organised} if both of its constituent
+CPs are bonded to opposite-polarity CPs belonging to the chain
+network.  Formally, a DP at position~$\mathbf{x}$ is organised if:
+\begin{enumerate}
+\item Its positive CP is bonded to a negative CP of an adjacent
+  organised DP or cage/central CP, \emph{and}
+\item Its negative CP is bonded to a positive CP of an adjacent
+  organised DP or cage/central CP.
+\end{enumerate}
+A DP with only one bonded end is a \emph{chain terminus}.  An
+unbonded DP remains part of the disordered Sea.
+\end{definition}
+
+\begin{definition}[Chain]
+A \emph{chain} is a maximal connected sequence of organised DPs
+where each DP's positive end is bonded to the next DP's negative
+end: $\cdots {}^+\!\text{DP}_i{}^- \!\cdot\! {}^+\!\text{DP}_{i+1}{}^- \cdots$
+\end{definition}
+
+\begin{definition}[Cascade Rate]
+The \emph{cascade rate} $f(r)$ at radius~$r$ is the probability
+that a newly created cross-link DP's free end finds another chain
+to bond with within one lattice spacing.
+\end{definition}
+
+\begin{axiom}[A10 --- First-Principles Chain-Network Mass]
+\label{ax:A10}
+Quark mass equals the total SSV field energy of the organised
+chain network.  For a cage with $\Norg$ organised DPs:
+\begin{equation}
+M_q = M_0 \times \Norg, \qquad M_0 = m_e \frac{z}{\phig}
+  = 3.790 \text{ MeV}
+\end{equation}
+where $M_0$ is the energy per organised DP link, $m_e$ is the
+electron mass, $z = 12$ is the 600-cell coordination number,
+and $\phig = (1+\sqrt{5})/2$.
+\end{axiom}
 
 % ============================================================
 \section{Physical Model: Two Regimes}
 \label{sec:model}
 % ============================================================
 
-The CPU proof-of-concept (Phases~1--2) revealed that quark mass
-arises from two distinct physical regimes.
-
 \subsection{Regime 1: Intra-cage cascade (s, c, b)}
 
-For pre-gap quarks, mass comes from a chain cross-linking cascade
-within the cage.  \textbf{Radial chains} (Type~1) connect the
-central CP to each of $V_{\rm opp}$ opposite-polarity cage
-vertices.  At each radius~$r$, pairs of radial chains generate
-\textbf{cross-link DPs} whose count scales as $C(V_{\rm opp}, 2)
-\times r \theta_{\rm nn} / l_{\rm edge}$.  Each cross-link DP's
-free CPs seek new partners, creating a \textbf{cascade} amplified
-by $f(r)/(1-f(r))$.  \textbf{Tangential chains} (Type~2) on the
-$E_{\rm attr}$ attractive cage edges and \textbf{surface radials}
-(Type~3) from $V_{\rm same}$ same-polarity vertices complete the
-network.
+For pre-gap quarks, mass arises from a chain cross-linking
+cascade.  Three chain types fill the cage interior:
 
-The cascade rate profile:
+\textbf{Type~1 (Radial):} Central CP to each of $V_{\rm opp}$
+opposite-polarity cage vertices.  Each chain has $d/l_{\rm edge}$
+DP links where $d$ is the shell distance and
+$l_{\rm edge} = 1/\phig$.
+
+\textbf{Type~2 (Tangential):} Along the $E_{\rm attr}$ attractive
+(opposite-polarity) cage edges, each $\sim l_{\rm edge}$ long.
+
+\textbf{Type~3 (Surface Radial):} From $V_{\rm same}$
+same-polarity vertices outward to the thermalization distance.
+
+At radius~$r$ from center, each pair of radial chains generates
+\emph{cross-link DPs}.  The cross-link count scales as
+$C(V_{\rm opp}, 2) \times r\theta_{\rm nn}/l_{\rm edge}$, where
+$\theta_{\rm nn}$ is the mean nearest-neighbour angle between
+radials.  Each cross-link DP's free CPs seek new partners,
+generating secondary cross-links in a \emph{cascade}.
+
+\subsubsection{Derivation of the cascade rate profile}
+
+The cascade rate $f(r)$ measures the probability of successful
+bonding at radius~$r$.  This probability is proportional to the
+local chain density $\rho_{\rm chain}(r)$:
+
+\begin{equation}
+f(r) \propto \rho_{\rm chain}(r) \times \sigma_{\rm bond}
+\end{equation}
+where $\sigma_{\rm bond} \sim l_{\rm edge}^2$ is the bonding
+cross-section.  The chain density has two components:
+
+\textbf{Radial component:} $V_{\rm opp}$ lines through a sphere
+of area $4\pi r^2$ gives
+$\rho_{\rm rad}(r) = V_{\rm opp}/(4\pi r^2)$, which decays as
+$1/r^2$.  In $f(r)$, this produces an exponential-like decay
+from center.
+
+\textbf{Surface component:} Near $r = d$, the $E_{\rm attr}$
+tangential chains add a localised density enhancement.
+
+The minimal parameterisation consistent with these two components
+is:
 \begin{equation}
 f(r) = f_0 \, e^{-r/(\lambda d)}
   + f_{\rm surf} \, e^{-(r-d)^2/(2\sigma^2)}
 \label{eq:cascade}
 \end{equation}
-where $f_0$ is the central cascade rate, $\lambda \approx 0.3$,
-and $f_{\rm surf} \approx 0.5$.  Three bonding regions emerge
-naturally: dense cross-linking near center (Region~1), web-mesh
-at mid-cage (Region~2), and surface convergence (Region~3).
+where $f_0$ is the central cascade rate (the key fitted parameter),
+$\lambda \approx 0.3$ controls radial decay, $f_{\rm surf} \approx
+0.5$ is the surface enhancement, and $\sigma \approx l_{\rm edge}$
+is the tangential spread.
+
+\textbf{Note:} The GPU simulation (Phase~3) will test whether this
+functional form emerges from DP dynamics or requires modification.
+
+\subsubsection{Scaling-limit heuristic}
+
+The total organised DP count scales as:
+\begin{equation}
+\Norg \;\sim\; \underbrace{C(V_{\rm opp}, 2)}_{\sim V^2
+  \text{ (pairs)}} \;\times\;
+  \underbrace{\int_0^d r \, \frac{f(r)}{1 - f(r)} \, dr}_{%
+  \sim d \sim V^{1/3}} \;\sim\; V^{7/3}
+\label{eq:scaling}
+\end{equation}
+The pair count gives $V^2$; the radial integral over the cascade
+amplification gives the remaining $V^{1/3}$ (one power of linear
+cage dimension).  This connects the SM-9 pair-counting argument
+to the FEM chain dynamics.
 
 \subsection{Regime 2: Shell 3 relay (top quark)}
 \label{sec:relay}
 
 The top quark's cage (Shell~4, $V = 30$) is separated from the
-central CP by the edgeless Shell~3 ($V = 12$, $E = 0$).  The
-standard cascade alone produces $\sim 2{,}100$~MeV---far short of
-172,760~MeV.
+central CP by Shell~3 ($V = 12$, $E = 0$).  The standard cascade
+alone produces $\sim 2{,}100$~MeV---far short of 172,760~MeV.
 
-Abshier proposed a two-level confinement mechanism: DPs
-dissociate from the Sea to occupy the 12 Shell~3 vertex positions,
-forming a \emph{synthetic icosahedral cage} with DP-chain edges.
-Each Shell~3 vertex acts as a \emph{secondary central CP},
-radiating to $\sim 5$ Shell~4 vertices.  The resulting
-$12 \times 5 = 60$ secondary radial chains criss-cross the
-Shell~3--4 gap, bonding tangentially with each other and
-cascading within the gap region.
+\subsubsection{Relay formation energetics}
+
+Shell~3's 12 vertex positions are lattice-determined---they exist
+in the 600-cell geometry whether DPs occupy them or not.  The
+central CP's field, propagating outward through the bonded shells,
+creates a potential landscape at Shell~3 distance.  Sea DPs at
+Shell~3 positions experience a 12-fold symmetric potential minimum
+from the ambient lattice's icosahedral coordination structure.
+
+The energetic argument: a DP at a Shell~3 vertex position gains
+energy $\sim M_0$ by bonding to the radial chain from the central
+CP.  It loses entropy $\sim k_B T_{\rm Sea}$ by leaving the
+disordered Sea.  If $M_0 \gg k_B T_{\rm Sea}$ (which holds for
+the heavy quarks), occupation is energetically favourable.
+
+The synthetic Shell~3 cage is \emph{metastable}: it is maintained
+by the organised chain network but has no lattice edges to anchor
+it.  This predicts the top quark decays before hadronising
+($\tau \sim 5 \times 10^{-25}$~s)---an observed empirical fact.
+
+\textbf{Open question:} Does the relay form spontaneously in the
+GPU simulation, or must Shell~3 positions be seeded?  This is the
+most important test of the mechanism.
+
+\subsubsection{Two-level confinement}
+
+\begin{enumerate}
+\item \textbf{Level 1:} DPs occupy the 12 Shell~3 vertices,
+  forming a synthetic icosahedral cage with DP-chain edges.
+\item \textbf{Level 2:} Each Shell~3 vertex acts as a secondary
+  central CP, radiating to $\sim 5$ Shell~4 vertices.  This
+  creates $12 \times 5 = 60$ secondary chains criss-crossing the
+  Shell~3--4 gap.
+\item \textbf{Criss-cross web:} The 60 secondary chains bond
+  tangentially, cascading within the gap at rate $f_{\rm relay}$.
+\end{enumerate}
 
 \begin{remark}[Why $z \times C_F = 16$]
-Shell~3 has $V_{\rm Shell\,3} = 12 = z$ (both determined by
-icosahedral symmetry---a geometric identity).  Each synthetic
-relay bond carries $C_F = 4/3$ (independently derived in SS-2).
-Product: $z \times C_F = 16$.  This provides a geometric
-derivation of the algebraic gap multiplier.
+$V_{\rm Shell\,3} = 12 = z$ (both from icosahedral symmetry---a
+geometric identity of the 600-cell).  Each synthetic relay bond
+carries $C_F = 4/3$ (independently derived in SS-2 from cage
+hopping algebra).  Product: $12 \times 4/3 = 16$.
 \end{remark}
 
-\begin{remark}[Top quark non-hadronisation]
-The synthetic Shell~3 cage has no lattice edges.  It is inherently
-unstable, predicting the top quark decays before hadronising
-($\tau \sim 5 \times 10^{-25}$~s).
-\end{remark}
+\subsubsection{Numerology audit (7/7)}
 
-\subsection{Mass calculation}
-
-$M_q = M_0 \times \Norg$, where $M_0 = m_e z/\phig = 3.790$~MeV
-and $\Norg$ includes cascade DPs (all quarks) plus relay DPs
-(top only).
+\begin{enumerate}
+\item $V_{\rm Shell\,3} = z = 12$ is geometric (icosahedral
+  symmetry) \checkmark
+\item Predicts top non-hadronisation and no gap for s/c/b
+  \checkmark
+\item $z \times C_F$ is unique motivated decomposition of~16
+  \checkmark
+\item Three-generation theorem prevents $\times 16^2$ quark
+  \checkmark
+\item 600-cell-specific (only polytope with $z = 12$ + edgeless
+  gap + $V_{\rm gap} = z$) \checkmark
+\item $C_F$ independently derived in SS-2 \checkmark
+\item Falsifiable via 5 routes \checkmark
+\end{enumerate}
 
 % ============================================================
 \section{CPU Results (Phases 1--2)}
@@ -193,21 +312,19 @@ and $\Norg$ includes cascade DPs (all quarks) plus relay DPs
 
 \subsection{What failed}
 
-Single-bond-per-CP gives trivial ratios.  Dipole chain formation
-gives $\sim V$ scaling (too flat).  Universal cascade law
-$f = A\rho^B$ gives 160\% RMS (too few parameters for the
-dynamic range).
+Simple DP counting (ratios $\sim V$, not $V^{7/3}$).  Universal
+cascade law $f = A\rho^B$ (RMS~$= 160\%$).  Per-quark cascade
+for top (maximum capacity 1,364~MeV at $f \to 1$---127$\times$
+too low).  \textbf{The cascade alone cannot produce the top
+quark.}
 
-\subsection{What succeeded}
-
-Per-cage cascade calibration with Shell~3 relay reproduces all
-four PDG masses exactly (0.0\% RMS, 4 calibrated parameters for
-4 data points---honest calibration, not prediction).
+\subsection{What succeeded: calibrated two-regime model}
 
 \begin{table}[H]
 \centering
-\caption{Two-regime mass predictions.  Targets are PDG ratios
-directly, not $V^{7/3}$-derived.}
+\caption{Two-regime mass predictions.  Targets are PDG ratios,
+not $V^{7/3}$.  This is \emph{calibration} (4 params, 4 data),
+not prediction.}
 \label{tab:masses}
 \begin{tabular}{@{}lcrrrrl@{}}
 \toprule
@@ -226,20 +343,21 @@ Top     & 30 & 45\,586 & 172\,760 & 172\,760 & $0.0\%$
 \end{tabular}
 \end{table}
 
-\subsection{Calibration targets for the GPU}
+All six cross-pair ratios match PDG to $0.0\%$.
+
+\subsection{Calibration targets}
 
 \begin{table}[H]
 \centering
-\caption{The GPU FEM must produce these $f_0$ values from
-DP-level dynamics alone.}
+\caption{GPU calibration targets.}
 \label{tab:targets}
 \begin{tabular}{@{}lcrrl@{}}
 \toprule
-Quark & $V_{\rm opp}$ & $d$ & $f_0$ & Note \\
+Quark & $V_{\rm opp}$ & $d$ & $f_0$ & Percolation status \\
 \midrule
 Strange & 3  & $1/\phig$ & 0.738 & Sub-critical \\
 Charm   & 6  & $1/\phig$ & 0.805 & Moderate \\
-Bottom  & 10 & 1.000     & 1.000 & At percolation \\
+Bottom  & 10 & 1.000     & 1.000 & At threshold \\
 Top     & 15 & $\sqrt{2}$ & 0.998 & Relay cascade \\
 \bottomrule
 \end{tabular}
@@ -250,28 +368,107 @@ Geometric law: $f_0 = 1 - \exp(-4.24 \times V_{\rm opp}^{0.29}
 
 \subsection{Physical decomposition}
 
-For pre-gap quarks, 51--88\% of mass comes from Region~1
-($r < 0.2d$).  For the top quark, 99\% comes from the Shell~3
-relay (1\% from standard cascade).
-
-\subsection{Percolation interpretation}
-
-The mass hierarchy maps to distance from the percolation
-threshold: strange $f_0 = 0.74$ (sub-critical), bottom
-$f_0 = 1.00$ (critical), top relay $f_0 = 1.00$ (near-critical
-in the gap web).
+Mass contribution by region: strange 51\%/33\%/16\%
+(R1/R2/R3), charm 86\%/9\%/5\%, bottom 88\%/8\%/5\%.
+Top quark: 1\% cascade, 99\% Shell~3 relay.
 
 % ============================================================
-\section{Success Criteria}
-\label{sec:criteria}
+\section{Simulation Design}
+\label{sec:simulation}
 % ============================================================
 
-Compare $\Norg$ ratios to \textbf{PDG mass ratios} (not
-$V^{7/3}$ targets):
+\subsection{Chain formation algorithm}
+
+\begin{algorithm}[H]
+\caption{Dipole Chain Formation}
+\label{alg:chain}
+\begin{algorithmic}[1]
+\Require Cage CPs $\{C_1, \ldots, C_V\}$ at lattice positions;
+  central CP $C_0$ at origin; Sea DPs $\{D_1, \ldots, D_N\}$
+  at random positions within $r_{\rm therm}$
+\Ensure Set of organised DPs $\mathcal{O}$
+\State $\mathcal{O} \gets \{C_0, C_1, \ldots, C_V\}$
+  \Comment{Seeds}
+\State Build k-d tree $\mathcal{T}$ on all CP positions
+\Repeat
+  \State $\text{new\_bonds} \gets 0$
+  \ForAll{$p \in \mathcal{O}$ with free positive end}
+    \State $t \gets$ nearest unbound negative end in
+      $\mathcal{T}$ within $r_{\rm bond}$
+    \If{$t$ exists}
+      \State Bond $p^+ \to t^-$; add $t$'s DP to $\mathcal{O}$;
+        $\text{new\_bonds} \mathrel{+}= 1$
+    \EndIf
+  \EndFor
+  \ForAll{$p \in \mathcal{O}$ with free negative end}
+    \State $t \gets$ nearest unbound positive end in
+      $\mathcal{T}$ within $r_{\rm bond}$
+    \If{$t$ exists}
+      \State Bond $p^- \to t^+$; add $t$'s DP to $\mathcal{O}$;
+        $\text{new\_bonds} \mathrel{+}= 1$
+    \EndIf
+  \EndFor
+\Until{$\text{new\_bonds} = 0$}
+\State \Return $|\mathcal{O}| - (V + 1)$
+  \Comment{Organised Sea DPs}
+\end{algorithmic}
+\end{algorithm}
+
+For the top quark, add after line~1: if any organised chain
+reaches Shell~3 distance, mark Shell~3 vertex positions as
+available relay sites and add them to $\mathcal{O}$.
+
+\subsection{Parameters and sensitivity analysis}
 
 \begin{table}[H]
 \centering
-\caption{Primary success targets (empirical, not model-derived).}
+\caption{Simulation parameters and scan ranges.}
+\label{tab:params}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Parameter & Meaning & Default & Scan range \\
+\midrule
+$\rho_{\rm Sea}$ & DP density (per $l_{\rm edge}^3$)
+  & $10^3$ & $10^2$--$10^4$ \\
+$r_{\rm bond}$ & Maximum bond length
+  & $0.5 \, l_{\rm edge}$ & $0.3$--$1.0 \, l_{\rm edge}$ \\
+$r_{\rm therm}$ & Thermalization radius
+  & $2d$ & $1.5d$--$3d$ \\
+$N_{\rm runs}$ & Sea configurations per setting
+  & 50 & 20--200 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Convergence criterion:} DP count ratios must stabilise to
+$< 1\%$ variation across $N_{\rm runs}$ configurations and across
+a factor-of-10 change in $\rho_{\rm Sea}$.  If ratios depend on
+$\rho_{\rm Sea}$, the model requires additional physics.
+
+\subsection{Expected outputs}
+
+For each cage, the simulation records:
+\begin{enumerate}
+\item $\Norg$: total organised Sea DPs.
+\item $\Norg(r)$: radial profile of organised DPs (shell-by-shell).
+\item Chain census: number, length, and type (radial/tangential/
+  cross-link) of each chain.
+\item Region fractions: \% of mass in R1/R2/R3.
+\item For top: Shell~3 occupation (how many of the 12 relay sites
+  are filled, and when during the cascade they fill).
+\end{enumerate}
+
+Target organised-DP counts: strange $\approx 25$,
+charm $\approx 335$, bottom $\approx 1{,}100$,
+top $\approx 45{,}600$.
+
+\subsection{Success criteria}
+
+Compare $\Norg$ ratios to \textbf{PDG mass ratios} directly:
+
+\begin{table}[H]
+\centering
+\caption{Primary targets (empirical, not model-derived).}
 \begin{tabular}{@{}lr@{}}
 \toprule
 Ratio & PDG target \\
@@ -283,63 +480,47 @@ $\Norg(t) / \Norg(s)$ & $\mathbf{1850}$ \\
 \end{tabular}
 \end{table}
 
-Level~A: ratios match to $< 5\%$.  Level~B: correct ordering.
-Level~C: informative failure.
+\textbf{Level~A:} Ratios match PDG to $< 5\%$.  Three regions
+emerge.  Relay verified.\\
+\textbf{Level~B:} Correct ordering and magnitude.  Exponent
+measurable.\\
+\textbf{Level~C:} Informative failure revealing incorrect
+assumptions.
 
-% ============================================================
-\section{Numerology Audit}
-\label{sec:audit}
-% ============================================================
+\subsection{Validation sequence}
 
-Seven tests applied to the Shell~3 relay mechanism:
-(1)~$V_{\rm Shell\,3} = 12 = z$ is geometric (\checkmark);
-(2)~predicts top non-hadronisation and no gap for s/c/b
-(\checkmark);
-(3)~$z \times C_F$ is unique motivated decomposition (\checkmark);
-(4)~three-generation theorem prevents $\times 16^2$ (\checkmark);
-(5)~600-cell-specific (\checkmark);
-(6)~$C_F$ independently derived in SS-2 (\checkmark);
-(7)~falsifiable via 5 routes (\checkmark).  Score: 7/7.
+Tetrahedron first (smallest, fastest); then icosahedron; then
+dodecahedron; icosidodecahedron last (tests relay).  Each cage
+independently parallelisable.  K-d tree nearest-neighbour search:
+$O(N \log N)$ per round.
 
 % ============================================================
 \section{Epistemic Status}
 \label{sec:defense}
 % ============================================================
 
+\subsection{Current status: calibrated geometric model}
+
 \textbf{Derived:} Model structure (cascade + relay), energy scale
-$M_0$, cascade profile shape, relay mechanism.
+$M_0$, cascade profile shape, relay mechanism, scaling heuristic
+$V^{7/3} = V^2 \times V^{1/3}$.
 
-\textbf{Fitted:} Four $f_0$ values (4 params, 4 data points, 0
-degrees of freedom).
+\textbf{Fitted:} Four $f_0$ values (4~params, 4~data, 0~DOF).
 
-\textbf{Converts to derivation if:} (A)~GPU produces $f_0$ from
-dynamics; (B)~model predicts a 5th observable; or (C)~GPU
-reproduces regional breakdown.
+\textbf{Primary result:} The $V^{7/3}$ formula (SM-8/SM-9) has
+0~free parameters and 2.1\% RMS.  The FEM adds understanding
+(WHY), not precision (the $0.0\%$ is from calibration).
 
-The $V^{7/3}$ formula (0~params, 2.1\%) is the primary result.
-The FEM adds mechanism, not precision.
+\subsection{Path to first-principles}
 
-% ============================================================
-\section{Simulation Design}
-\label{sec:simulation}
-% ============================================================
-
-\textbf{Setup:} Central CP at origin; cage CPs at lattice
-positions; DP Sea at density $\rho_{\rm Sea}$; Shell~3 relay
-sites for top.
-
-\textbf{Algorithm:} Each DP is a dipole (two ends bonding
-independently).  Organised CPs seed each round; free ends bond to
-nearest opposite-polarity unbound end within $r_{\rm bond}$.
-Cascade repeats until no new bonds form.  For top: relay stations
-at Shell~3 positions activate when chains reach them, generating
-secondary radials and criss-cross web.
-
-\textbf{Validation:} Tetrahedron first (strange), then
-icosahedron (charm), dodecahedron (bottom), icosidodecahedron
-(top).  Convergence test across $\rho_{\rm Sea} \in
-\{10^2, 10^3, 10^4\}$.  Average over 50+ random Sea
-configurations.
+The model becomes a derivation when any one of:
+\begin{description}
+\item[Test A:] GPU produces $f_0$ values from DP dynamics alone.
+\item[Test B:] Model predicts a 5th observable (light quarks,
+  couplings, decay rates).
+\item[Test C:] GPU reproduces regional breakdown from emergent
+  dynamics.
+\end{description}
 
 % ============================================================
 \section{Open Questions}
@@ -347,43 +528,64 @@ configurations.
 
 \begin{enumerate}
 \item What is $\rho_{\rm Sea}$?
-\item Does the relay form spontaneously or require seeding?
+\item Does the relay form spontaneously?
 \item What sets $r_{\rm therm}$?
-\item Does the exponent drift ($\alpha_{sc} = 2.38$ vs
-  $\alpha_{cb} = 2.33$) emerge?
+\item Does the exponent drift emerge?
 \item Can the simulation distinguish $7/3$ from $3 - 1/\phig$?
-\item Do light quark masses (u, d) follow from the blanket model?
+\item Do light quark masses follow from the blanket model?
 \end{enumerate}
+
+% ============================================================
+\section{Timeline}
+% ============================================================
+
+\begin{table}[H]
+\centering
+\caption{Milestones.  Phases 0--2 complete.}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Phase & Milestone & Status & Next step \\
+\midrule
+0--2 & Design + CPU proof-of-concept & \textbf{Done} & --- \\
+3a & GPU implementation & Pending & CUDA/JAX \\
+3b & Production runs (4 cages $\times$ 50) & Pending & 1--2 weeks \\
+3c & Analysis: $f_0$ from dynamics & Pending & Key test \\
+4 & SM-10 v3.0 results paper & Pending & If Level A \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 % ============================================================
 \section{Conclusion}
 % ============================================================
 
-The FEM chain network simulation has progressed from proposal
-(v0.1) to calibrated two-regime model (v1.0).  The CPU
-proof-of-concept established two regimes (cascade and relay),
-calibration targets for the GPU ($f_0$ per quark), the Shell~3
-relay mechanism ($z \times C_F = 16$ from geometry), and the
-percolation interpretation of the mass hierarchy.
+The FEM chain network model explains why $V^{7/3}$ scaling holds:
+pair counting gives $V^2$, radial cascade integration gives
+$V^{1/3}$, and the product is $V^{7/3}$.  Two physical regimes
+operate: intra-cage cascade (s, c, b) and Shell~3 relay (top).
+The relay mechanism derives $z \times C_F = 16$ from the
+600-cell's geometric identity $V_{\rm Shell\,3} = z = 12$.
 
-The GPU simulation (Phase~3) will test whether DP-level dynamics
-reproduce the calibration targets without fitting.  If successful,
-this would be the first derivation of quark mass ratios from
-geometry in any theoretical framework.
+The model is currently a calibrated geometric framework.  It
+becomes a first-principles derivation when the GPU simulation
+reproduces the cascade rates from DP-level dynamics alone.
+Successful reproduction would constitute the first derivation
+of quark mass ratios from geometry in any theoretical framework.
 
 % ============================================================
 \section*{Acknowledgements}
 % ============================================================
 
 Thomas Lee Abshier, ND conceived the chain-type decomposition,
-pine tree model, three bonding regions, surface blanket, FEM
-proposal, and Shell~3 relay mechanism.  Claude Sonnet identified
-the circular-validation issue.  Copilot and Grok provided review
-and validation strategy.
+pine tree model, three bonding regions, surface blanket, and
+Shell~3 relay mechanism.  Claude Sonnet identified the circular
+validation issue and the epistemic framing.  Copilot recommended
+algorithm formalization and the scaling-limit heuristic.  Grok
+recommended the validation sequence and expected-output design.
 
 Claude Opus performed all computations, ran Phase~1--2
-simulations, conducted the numerology audit, and drafted this
-paper.
+simulations, conducted the numerology audit, and drafted all
+versions.
 
 OSF: \url{https://doi.org/10.17605/OSF.IO/JXE8D}.
 GitHub: \url{https://github.com/Hyperphysics-Institute/CPP}.
