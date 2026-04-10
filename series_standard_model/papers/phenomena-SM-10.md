@@ -1,28 +1,36 @@
-# Phenomena — SM-10: First-Principles Quark Mass from FEM Chain Network Simulation
-
-**Paper:** SM-10 v0.1 (9 April 2026, proposal)
-**Series:** Standard Model
-
+---
+title: "SM-10 Phenomena Explained"
+paper: SM-10 v2.0
+series: Standard Model
+date: 2026-04-09
 ---
 
-## PHEN-P: Predictions (to be tested)
+# Phenomena Explained by SM-10
 
-**PHEN-SM10-P1: DP count ratios reproduce PDG mass ratios.** N_c/N_s = 13.6, N_b/N_s = 44.8, N_t/N_s = 1850. Success to <5% would constitute first-principles derivation.
+## Primary
 
-**PHEN-SM10-P2: Three bonding regions emerge naturally.** Without being imposed, the simulation should show Region 1 (cross-linked), Region 2 (web mesh), Region 3 (surface-converging) structure.
+1. **Quark mass hierarchy** — V^(7/3) scaling from pair counting (V²) × cage dimension (V^(1/3)). The cascade mechanism produces this naturally.
 
-**PHEN-SM10-P3: Fractal dimension between 2 and 3.** The effective dimensionality of the chain network should correspond to the 7/3 exponent.
+2. **Top quark anomalous mass** — 99% of top mass from Shell 3 relay, not cascade. The ×16 enhancement = z × C_F from geometric identity.
 
-**PHEN-SM10-P4: Radial/tangential split ~44%/56%.** The energy budget from SM-9's chain-type analysis should be reproduced.
+3. **Top quark non-hadronisation** — Synthetic Shell 3 cage is metastable (no lattice edges). Decays before hadronising.
 
-**PHEN-SM10-P5: Top quark shows qualitatively different chain structure.** Long-range coordination bonds through Shell 3 gap.
+4. **Three-region bonding structure** — Near-center cross-linking (51-88% of mass), mid-cage web mesh, surface convergence. Emerges from 1/r² chain density profile.
 
-## PHEN-V: Consilience (expected)
+5. **Percolation transition** — Mass hierarchy maps to distance from percolation threshold: strange (sub-critical) → bottom (critical) → top (requires relay).
 
-**PHEN-SM10-V1: Unification of SM-8 and SM-9.** SM-8 gives the cages; SM-9 gives the exponent; SM-10 computes the mass from both, closing the loop.
+## Secondary (predictions for GPU)
 
-**PHEN-SM10-V2: V^(7/3) derived, not imposed.** If the simulation reproduces mass ratios without any scaling law input, 7/3 is a derived quantity.
+6. **Shell 3 occupation** — 12 relay sites should fill during cascade growth for top quark.
 
----
+7. **Regional mass fractions** — R1/R2/R3 ratios (51/33/16% for strange, 88/8/5% for bottom) should emerge from DP dynamics.
 
-*Document prepared by Thomas Lee Abshier ND and Claude Opus (Anthropic), 9 April 2026.*
+8. **Cascade rate profile** — f(r) should show exponential decay from center with surface enhancement.
+
+9. **Density independence** — DP count ratios should stabilise above some threshold ρ_Sea.
+
+## Not Yet Explained
+
+10. **Light quark masses** (u, d) — requires blanket model extension.
+11. **Running coupling constant** — requires chain interaction cross-section.
+12. **Exponent drift** (α_sc = 2.38 vs α_cb = 2.33) — should emerge from GPU simulation.

@@ -1,28 +1,33 @@
-# Philosophy — SM-10: First-Principles Quark Mass from FEM Chain Network Simulation
-
-**Paper:** SM-10 v0.1 (9 April 2026, proposal)
-**Series:** Standard Model
-
+---
+title: "SM-10 Philosophy and Methodology"
+paper: SM-10 v2.0
+series: Standard Model
+date: 2026-04-09
 ---
 
-## From Formula to Simulation
+# Philosophy of SM-10
 
-SM-8 and SM-9 produce a formula: M = M₀ V^(7/3) × gap. SM-10 proposes to verify this formula by computing quark masses without it — using only local chain-formation rules and DP counting. If the simulation reproduces the formula's predictions, the formula is derived from first principles.
+## The Bohr-Schrödinger Analogy
 
-## The Circular Validation Trap
+SM-8/SM-9 give the zero-parameter formula (the "Bohr model" — exact, compact, predictive). SM-10's FEM gives the mechanism (the "Schrödinger equation" — derives the formula from dynamics). The FEM doesn't replace V^(7/3); it explains why V^(7/3) works.
 
-Sonnet identified the most important methodological issue: comparing DP counts to V^(7/3) targets is circular. The correct test compares directly to PDG mass ratios. This reframing transforms SM-10 from a consistency check into a genuine derivation.
+## Calibration vs Derivation
 
-## What "First Principles" Means in CPP
+SM-10 v2.0 is honest about its epistemic status: 4 fitted parameters for 4 data points. The 0.0% RMS is calibration, not prediction. The paper's value is the physical structure (cascade + relay), not the precision.
 
-The simulation's inputs are: (1) cage CP positions (from 600-cell geometry), (2) DP Sea at natural density, (3) local pairing rule (nearest opposite-polarity). Its output is: N_organised. If N_organised × M₀ = m_quark, then quark mass is derived from geometry + local rules.
+Three tests would promote the model to first-principles:
+- Test A: GPU produces f₀ from dynamics
+- Test B: Model predicts a 5th observable
+- Test C: GPU reproduces regional breakdown
 
-No scaling law, no exponent, no gap multiplier is assumed. All three should emerge.
+## The Numerology Question
 
-## The Three Phases
+Every new formula faces the charge of numerology. SM-10 addresses this through a 7-point audit of the Shell 3 relay mechanism, testing geometric identity, additional predictions, unique decomposition, absence of wrong predictions, polytope specificity, independent derivation of C_F, and falsifiability.
 
-Phase 1 (CPU): proof-of-concept with coarse Sea. Phase 2 (GPU): production runs with fine Sea. Phase 3 (lattice-scale): full 600-cell tessellation. Each phase is independently publishable.
+## Falsifiability
 
----
+The model is falsifiable through: (1) a fourth quark generation, (2) revised top mass incompatible with ×16, (3) identical colour-flow for top and lighter quarks, (4) GPU producing top mass without relay, (5) V_Shell3 ≠ 12 in corrected 600-cell computation.
 
-*Document prepared by Thomas Lee Abshier ND and Claude Opus (Anthropic), 9 April 2026.*
+## Honest Framing (Sonnet's Contribution)
+
+The title "Toward First-Principles" rather than "First-Principles" reflects that Phase 1-2 is calibration. The circular-validation fix (PDG targets, not V^(7/3) targets) prevents the simulation from confirming itself. These methodological corrections, driven by adversarial review, strengthen the paper's scientific credibility.

@@ -1,22 +1,26 @@
-# Keywords — SM-10: First-Principles Quark Mass from FEM Chain Network Simulation
-
-**Paper:** SM-10 v0.1 (9 April 2026, proposal)
-**Series:** Standard Model
-
 ---
+title: "SM-10 Keywords and Search Terms"
+paper: SM-10 v2.0
+series: Standard Model
+date: 2026-04-09
+---
+
+# SM-10 Keywords
 
 ## Primary Keywords
-FEM simulation, chain network, first-principles mass, organised DP count, quark mass derivation, DP Sea, chain formation
+finite element method, quark mass, chain network, 600-cell, cascade, percolation, Shell 3 relay, organised dipole pair, conscious point physics
 
 ## Secondary Keywords
-pine tree model, three bonding regions, surface blanket, fractal dimension, cooperative enhancement, coordination tunneling, convergence testing
+two-regime physics, intra-cage cascade, relay mechanism, cross-link, scaling exponent, V^(7/3), zero-parameter formula, calibration target, percolation threshold, numerology audit
+
+## CPP-Specific Terms
+organised DP, cascade rate f(r), chain-type decomposition, pine tree model, three bonding regions, surface blanket, cooperative enhancement, impedance boundary, synthetic cage, relay station
 
 ## Cross-References
-SM-8 (cage hierarchy), SM-9 (scaling exponent, chain types), SM-6 (electron mass), SR-1 (lattice), SS-2 (colour algebra)
+SM-8 (cage hierarchy, zero-parameter formula), SM-9 (scaling exponent, pair counting), SS-2 (colour factor C_F), SR-1 (coordination number z)
 
-## Axiom Registry Entries
-A10 — First-Principles Chain-Network Derivation (proposed)
+## Axioms Invoked
+A2 (lattice structure), A8' (cage-volume scaling), A10 (chain-network mass)
 
----
-
-*Document prepared by Thomas Lee Abshier ND and Claude Opus (Anthropic), 9 April 2026.*
+## Falsification Keywords
+fourth generation, top quark mass revision, colour-flow patterns, relay-free top mass, Shell 3 vertex count

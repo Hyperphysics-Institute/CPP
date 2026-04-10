@@ -158,8 +158,39 @@
 - Register with DOI
 
 ### Phase 7: Documentation Suite
-- Create all 8 companion files per `documentation-suite.md`
-- Files: development, glossary, mechanism, phenomena, philosophy, reviews, FAQ, keywords
+
+**TRIGGER:** After the paper passes all reviews (Phase 4) and the axiom registry is updated (Phase 5). Create all 8 companion files before proceeding to transcript curation.
+
+**Template:** Full format specifications are in `templates/documentation-suite.md`. The summary below gives each file's purpose and key content so Future-Opus can create them without opening a second document.
+
+| # | File | Audience | Key content |
+|---|------|----------|-------------|
+| 1 | `development-[S]-[N].md` | Future collaborators | Discovery timeline, decisions, dead ends, contributors |
+| 2 | `glossary-[S]-[N].md` | All readers | Every technical term in the paper, with definitions and status |
+| 3 | `mechanism-[S]-[N].md` | Physicists | Physical mechanisms with intuitive "what happens at the lattice level" descriptions |
+| 4 | `phenomena-[S]-[N].md` | Physicists + general | What the paper explains, what it predicts, what it doesn't explain |
+| 5 | `philosophy-[S]-[N].md` | Theorists + philosophers | Epistemological status, type classification, honest assessment of strength |
+| 6 | `reviews-[S]-[N].md` | Authors + referees | All external reviews received (Copilot, Grok, Sonnet), critiques and responses |
+| 7 | `FAQ-[S]-[N].md` | General readers + web | 10-15 anticipated questions with clear answers (see below) |
+| 8 | `keywords-[S]-[N].md` | SEO / search | Keywords, PACS/MSC codes, one-sentence elevator pitch |
+
+#### FAQ-[S]-[N].md creation procedure
+1. Generate 10-15 questions a reader would ask after reading the paper
+2. Categories to cover:
+   - **"What does this mean?"** questions (explain key results in plain language)
+   - **"How does this relate to X?"** questions (connect to QCD, Standard Model, other CPP papers)
+   - **"What are the limitations?"** questions (scheme dependence, calibration, open problems)
+   - **"Is this falsifiable?"** questions (specific predictions that could be wrong)
+   - **"What's next?"** questions (where the research goes from here)
+3. Format:
+   ```markdown
+   ## Q: [Question in plain language]
+   
+   **A:** [Clear, honest answer. 2-5 sentences. Reference the paper section
+   where the detailed argument lives.]
+   ```
+4. Include at least one FAQ addressing the strongest criticism from the Sonnet hostile review
+5. Include at least one FAQ connecting this paper to the previous paper in the series
 
 ### Phase 8: Transcript Curation
 - Collect raw transcripts from all AI sessions
@@ -245,6 +276,40 @@
 
 *Transcript curated by [AI], [date]*
 ```
+
+### What to INCLUDE in curated transcripts
+
+**Always include — these are the scholarly record:**
+- Thomas's physical descriptions and intuitions (verbatim when possible)
+- Thomas's questions that redirected the investigation
+- AI reasoning chains that led to discoveries or key decisions
+- Computational results (numerical values, table outputs, key formulas)
+- Negative results — models that failed, with the quantitative evidence of failure
+- Disagreements between Thomas and AI, or between different AIs
+- "Wait, what if..." moments that changed direction
+- Corrections to earlier errors (what was wrong, how it was caught)
+- Decisions about paper structure, axiom formulation, or physical interpretation
+- Key quotes from Grok/Copilot/Sonnet reviews and the responses to them
+- The discovery arc — how one finding led to the next
+
+**Always EXCLUDE — these are noise:**
+- File system commands (`ls`, `cp`, `mkdir`, `cd`, `cat`)
+- Path references and directory navigation
+- LaTeX compilation output and error messages
+- Python/code execution boilerplate (import statements, variable setup)
+- "Please wait while I compute..." messages
+- Tool invocation details (bash_tool, web_fetch, create_file mechanics)
+- Formatting instructions ("make this a table", "use bold for...")
+- Git commands and push/pull operations
+- Session reconnection noise ("Your buffers overflowed...")
+- Repeated content (if the same computation is run multiple times, keep only the final version with a note)
+- Claude's internal system messages and context-management notes
+
+**Judgment calls — include if substantive, exclude if routine:**
+- Code that implements a physical model (INCLUDE the logic, EXCLUDE the boilerplate)
+- Numerical output tables (INCLUDE the final results table, EXCLUDE intermediate debugging prints)
+- Requests for documents (EXCLUDE "please generate the FAQ", INCLUDE "we need a document that captures X because Y")
+- Thomas's instructions about workflow (EXCLUDE "save this to outputs", INCLUDE "I think we should document this because scholars will study it")
 
 ### Numbering convention
 - Transcripts are numbered sequentially PER PAPER across all AI sessions
@@ -352,28 +417,174 @@
 
 ## 10. Repository Housekeeping Checklist
 
+**TRIGGER:** Run this checklist immediately after completing Phase 7 (Documentation Suite) of the paper production pipeline — BEFORE pushing to GitHub. Do not push until all items are checked.
+
+**Estimated time:** 15-20 minutes for a single paper.
+
 **Run after every paper is completed:**
 
 ### Content documents (update substance)
-- [ ] `theory-overview.md` — add results, update scorecard
-- [ ] `axiom-registry.md` — check axioms, add predictions, update ratios
-- [ ] `master_glossary.md` — add new terms
-- [ ] `founders_vision.md` — add new physical intuitions
-- [ ] `predictions.md` — add new quantitative predictions
-- [ ] `postulates_and_theorems.md` — add new theorems/conjectures
-- [ ] `future_projects.md` — update project status, add new projects
-- [ ] `CPP_the_theory.md` — add new results to appropriate chapter, update scorecard
+- [ ] `theory-overview.md` (see procedure below)
+- [ ] `axiom-registry.md` (see procedure below)
+- [ ] `master_glossary.md` (see procedure below)
+- [ ] `founders_vision.md` (see procedure in Section 7)
+- [ ] `predictions.md` (see procedure below)
+- [ ] `postulates_and_theorems.md` (see procedure below)
+- [ ] `future_projects.md` (see procedure below)
+- [ ] `CPP_the_theory.md` (see procedure below)
+- [ ] `bibliography/cpp_references.bib` (see procedure below)
+- [ ] `open_problems/` (see procedure below)
+
+#### theory-overview.md update procedure
+1. Add any new quantitative results to the "Strongest Quantitative Results" table
+2. Update the "Key Formulas" reference card if new formulas were derived
+3. Update "Open Problems" — move solved problems out, add new ones
+4. Update "Series Status" table with new paper version and status
+5. If axiom count changed, update the axiom summary
+
+#### axiom-registry.md update procedure
+1. Check: did the paper use any axiom not already in the registry? If so, add it.
+2. Check: did the paper consolidate axioms (as SM-8 did with A6')? If so, update tiers.
+3. Add every new quantitative prediction to the Prediction Ledger:
+   ```
+   | 13 | m_t (cage × z=12) | 172,800 MeV | 172,760 | 0.02% | A2,A6' + m_s,m_c | SM-8 |
+   ```
+4. Update the axiom count summary and axiom-to-prediction ratio
+5. Add a row to the Growth Table showing this paper's contribution
+6. Check if any conjectured reductions were achieved
+
+#### master_glossary.md update procedure
+1. Scan the new paper for any term not already in the glossary
+2. Add each new term in alphabetical position with format:
+   ```
+   **Term** — Definition. [First appeared: SM-8]
+   ```
+3. Common sources of new terms: new physical mechanisms, new cage structures,
+   new mathematical objects, new particle descriptions
+4. Also check `founders_vision.md` for terms Thomas used that aren't yet defined
+
+#### predictions.md update procedure
+1. Add each new quantitative prediction:
+   ```
+   | SM-8-1 | m_b (cage V^2.38) | 4,304 MeV | 4,180 MeV | 3.0% | A2 + m_s,m_c | CONFIRMED |
+   ```
+2. Update status of existing predictions if new data or analysis changes them
+3. Update the total prediction count and zero-parameter prediction count
+
+#### postulates_and_theorems.md update procedure
+1. Add each new theorem with its ID, statement, and proof reference:
+   ```
+   **THEO-SM-8-1** (Bonded Shells): The 600-cell has exactly four bonded
+   polyhedral distance shells. [SM-8, Theorem 3.1]
+   ```
+2. Add any new conjectures (CONJ) with status
+3. Add any new corollaries (CORO)
+4. If a conjecture was proved or falsified, update its status (CONJ → THEO or CONJ → FALS)
+
+#### future_projects.md update procedure
+1. Mark any completed projects as DONE with date
+2. Update status of in-progress projects (e.g., "SM-9 v2.0 drafted")
+3. Add any new research targets that emerged during the session
+4. Re-prioritise if the session changed what's most promising
+
+#### CPP_the_theory.md update procedure
+1. Identify which chapter(s) the new results belong to
+2. Add the results in connected prose (not bullet points — this is the "Kindle book")
+3. Update the Prediction Scorecard in Part VI
+4. If a new chapter is needed (new topic area), add it in the appropriate Part
+5. Move any resolved open problems from Part V to the relevant chapter
+6. Add any new open problems to Part V
+
+#### bibliography/cpp_references.bib update procedure
+**TRIGGER:** After any new paper is completed, or when a new external reference is cited.
+1. Add a BibTeX entry for the new CPP paper:
+   ```bibtex
+   @article{abshier2026sm8,
+     author  = {Abshier, Thomas Lee and {Claude Opus} and {Grok} and {Copilot}},
+     title   = {Quark Generation Structure from 600-Cell Distance Shells},
+     journal = {Hyperphysics Institute},
+     year    = {2026},
+     note    = {SM-8 v3.0}
+   }
+   ```
+2. Add BibTeX entries for any external works cited in the paper
+3. Verify all cite keys match what's used in the paper's .tex file
+
+#### open_problems/ update procedure
+**TRIGGER:** After any session that registers new open problems or resolves existing ones.
+1. For each new OPEN-P problem, create a file:
+   ```
+   Filename: OPEN-P-SM-cage-7.md
+   Content: Problem statement, context, why it matters,
+            candidate approaches, related problems
+   ```
+2. For resolved problems: add a "RESOLVED" header with date, resolution, and
+   which paper resolved it. Do NOT delete the file — it's part of the history.
+3. For falsified conjectures: rename with FALS prefix or add FALSIFIED header
 
 ### Navigation documents (update structure)
-- [ ] `README.md` — add paper to table, update counts
-- [ ] `INDEX.md` — add new files
+- [ ] `README.md` — add paper to table, update counts (see procedure below)
+- [ ] `INDEX.md` — add new files (see procedure below)
 - [ ] `paper_catalog.md` — add paper entry
 - [ ] `series_[name]/README.md` — add paper to series
 
+#### README.md update procedure
+1. Add the new paper to the "Registered Papers" table:
+   ```
+   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | OSF registered |
+   ```
+2. Update the paper count ("24 papers" → "25 papers" etc.)
+3. If the paper produced a headline result, add it to "Strongest Results":
+   ```
+   | m_t = 172,800 MeV | 172,760 MeV | 0.02% | SM-8 |
+   ```
+4. If axiom count changed, update the axiom summary line
+5. Add any new series-level achievements to the series table
+
+#### INDEX.md update procedure
+1. Add every new file created during this paper's production:
+   - The paper itself (.tex, .pdf)
+   - All 8 documentation suite files
+   - Any development transcripts
+   - Any new figures
+2. Add files to the correct folder section in INDEX.md
+3. Format: `- [filename](path) — one-line description`
+4. If a new folder was created, add the folder heading
+
+#### paper_catalog.md update procedure
+1. Add one row per new paper:
+   ```
+   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | 14 pages | April 2026 | OSF pending |
+   ```
+2. Update the total paper count at the top
+
 ### History documents (create/update)
-- [ ] `development-[S]-[N].md` — paper development narrative
+- [ ] `development-[S]-[N].md` — paper development narrative (see procedure below)
 - [ ] Curated transcripts — all sessions contributing to the paper
-- [ ] `SM-8_development_transcript_opus.md` (or equivalent) — comprehensive arc
+- [ ] Comprehensive development transcript (see procedure below)
+
+#### development-[S]-[N].md procedure
+**TRIGGER:** Create during Phase 3 of paper production. Update throughout.
+1. Follow the template in `templates/documentation-suite.md`
+2. Required sections: Discovery timeline, Key decisions, Dead ends,
+   Contributors and roles, Dependencies on other papers
+3. This is the "lab notebook" — keep it honest about wrong turns
+
+#### Development transcript procedure
+**TRIGGER:** At the end of each session that contributes to a paper, OR at the
+start of the next session (to capture what was missed).
+1. Read the raw transcript from `/mnt/transcripts/`
+2. Curate: preserve all substantive dialogue, remove tooling noise
+3. Preserve Thomas's words verbatim where they contain physical insight
+4. Keep dead ends and negative results — they're part of the scholarly record
+5. Number sequentially: `SM-8_transcript_01_opus.md`, `_02_copilot.md`, etc.
+6. For comprehensive multi-session arcs: `SM-8_development_transcript_opus.md`
+
+#### series_[name]/README.md procedure
+**TRIGGER:** After any paper in that series is completed.
+1. Add the paper to the series paper table
+2. Update the series description if the new paper changes the series scope
+3. Add any new cross-references between papers in the series
 
 ### Final steps
 - [ ] Push all files to GitHub
@@ -385,8 +596,26 @@
 ## 11. File Naming Conventions
 
 ### Papers
-- `.tex` and `.pdf`: `[S]-[N]_[descriptive_name].tex`
-- Example: `SM-8_quark_generation_600cell_shells.tex`
+- Format: `[S]-[N]_[short_descriptive_slug].tex`
+- Slug: lowercase, 3-5 words, underscores, no version number
+- Same name for `.tex`, `.pdf`, and all companion `.md` files
+- Examples:
+  - `SM-6_lepton_mass_spectrum.tex`
+  - `SM-7_heavy_quark_mass_spectrum.tex`
+  - `SM-8_quark_generation_600cell_shells.tex`
+  - `SM-9_scaling_exponent.tex`
+
+### Version management
+- **ONE file per paper, overwritten with each revision.** Git history preserves all versions.
+- The `.tex` header contains a CHANGELOG block documenting each version.
+- The development transcript documents WHY each version changed.
+- Do NOT create `SM-8_v1.tex`, `SM-8_v2.tex`, etc. — this creates clutter and confusion.
+- **Exception:** If a revision fundamentally changes scope, archive the old version in `archive/` with a note.
+- To recover an old version: `git log [filename]` then `git checkout <hash> -- [filename]`
+
+### Staging/scratch files
+- Files like `SM-8_integration_items.md` (work-orders collecting items to integrate elsewhere) should be moved to `archive/` once all items are integrated.
+- Do not leave completed staging files in `papers/`.
 
 ### Documentation suite
 - `[type]-[S]-[N].md`
