@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/templates/bootup.md`
 **Purpose:** Load this file at the start of every new AI session working on CPP. It provides everything needed to continue productive work.
-**Last updated:** 8 April 2026
+**Last updated:** 9 April 2026
 
 ---
 
@@ -82,7 +82,7 @@ CPP/
 ├── templates/
 │   ├── bootup.md                     ← ** THIS FILE **
 │   ├── paper-formatting.md           ← LaTeX formatting standard
-│   └── documentation-suite.md        ← 8-file companion template per paper
+│   └── documentation-suite.md        ← 7-file companion template per paper
 │
 ├── bibliography/
 │   └── cpp_references.bib            ← BibTeX references for all papers
@@ -91,30 +91,18 @@ CPP/
 │   └── [OPEN-P-XX-N.md files]
 │
 ├── ── PAPER SERIES ──
-├── series_standard_model/            ← SM-1 through SM-9
-│   ├── papers/                       ← .tex, .pdf, all .md companion docs
+├── series_standard_model/            ← SM-1 through SM-10
+│   ├── papers/                       ← .tex, .pdf, .bib files
+│   ├── [type]-SM-N.md                ← 7 documentation suite files per paper
 │   ├── figures/figures-SM-N/         ← SVG + PDF figures
 │   ├── notebooks/                    ← Verification notebooks
 │   └── development-transcripts/      ← Curated conversation logs
-│       ├── SM-7_transcript_01-11_opus.md
-│       ├── SM-8_development_transcript_opus.md
-│       └── SM-8_development_transcript_opus_part2.md
 │
 ├── series_electroweak/               ← EW-1 through EW-5
-│   ├── papers/
-│   └── figures/
 ├── series_quantum_mechanics/         ← QM-1 through QM-6
-│   ├── papers/
-│   ├── figures/
-│   └── notebooks/
 ├── series_relativity/                ← SR-1
-│   ├── papers/
-│   ├── figures/
-│   └── development/
 ├── series_strong/                    ← SS-1
-│   └── papers/
 ├── series_foundations/               ← SD-1 through SD-5
-│   └── series_superdeterminism/
 │
 └── archive/                          ← Superseded material
 ```
@@ -130,7 +118,7 @@ CPP/
 | `theory-overview.md` | Reference card: formulas, prediction scorecard, key numbers | After each paper |
 | `founders_vision.md` | Thomas's physical intuition — 22+ catalogue entries | Every session with new physics |
 | `axiom-registry.md` | All axioms, all predictions, growth tracking | After each paper |
-| `master_glossary.md` | Every CPP term, acronym, particle, force, process | When new terms appear |
+| `master_glossary.md` | Every CPP term, acronym, particle, force, process | Scan during Phase 7 of paper production |
 | `predictions.md` | Quantitative predictions with PDG comparison | After each paper |
 | `postulates_and_theorems.md` | Formal AXIM, THEO, CORO, CONJ entries | After each paper |
 | `propositions.md` | Physically motivated claims not yet proved | As needed |
@@ -144,12 +132,12 @@ CPP/
 | `operating_system.md` | **THE COMPLETE WORKFLOW** — multi-AI review, transcripts, recovery, roles | When procedures change |
 | `paper_production_workflow.md` | 9-phase pipeline from vision to OSF | When pipeline changes |
 | `templates/paper-formatting.md` | LaTeX standard (16 sections) | When formatting changes |
-| `templates/documentation-suite.md` | 8-file companion template per paper | When template changes |
+| `templates/documentation-suite.md` | 7-file companion template per paper | When template changes |
 
 ### Navigation documents (read for orientation)
 | File | Purpose | Update when |
 |------|---------|------------|
-| `README.md` | Public landing page, paper table, strongest results | After each paper |
+| `README.md` | Public landing page, paper table, key results | After each paper |
 | `INDEX.md` | Complete file listing | After each paper |
 | `paper_catalog.md` | All papers with ID, title, version, status | After each paper |
 | `series_[name]/README.md` | Per-series overview | After each series paper |
@@ -193,27 +181,38 @@ CPP/
 
 ## 7. Strongest Current Results (April 2026)
 
+### Zero-Parameter Formula (SM-8 v4.1 + SM-9 v2.2)
+```
+M_q = m_e (z/φ) V^(7/3)           q = s, c, b
+M_t = m_e (z/φ) V_t^(7/3) × 16   q = t
+```
+RMS = 2.1% across four orders of magnitude, **zero free parameters**.
+
 | Prediction | CPP | Experimental | Error | Params |
 |-----------|-----|-------------|-------|--------|
+| m_s (zero-param) | 96.3 MeV | 93.4 MeV | +3.1% | 0 |
+| m_c (zero-param) | 1,249 MeV | 1,270 MeV | −1.6% | 0 |
+| m_b (zero-param) | 4,115 MeV | 4,180 MeV | −1.6% | 0 |
+| m_t (zero-param) | 169,571 MeV | 172,760 MeV | −1.8% | 0 |
+| m_t (calibrated, v3.x) | 172,800 MeV | 172,760 MeV | 0.02% | 2 |
 | sin²θ_W | 3/(8φ) = 0.2312 | 0.23121 | 0.24% | 0 |
-| m_b (cage V^2.38) | 4,304 MeV | 4,180 MeV | 3.0% | 0 |
-| m_t (cage × z=12) | 172,800 MeV | 172,760 MeV | 0.02% | 0 |
-| C(n,2) → m_b/m_s | 45.0 | 44.75 | 0.6% | 0 |
 | m_μ (Koide) | 105.66 MeV | 105.66 MeV | <0.01% | 1 cal |
 | m_τ (Koide) | 1776.9 MeV | 1776.9 MeV | <0.01% | 1 cal |
 | # Generations | 3 | 3 | exact | 0 |
 
-Axiom count: 7. Predictions: 11+. Ratio: 0.64.
+Axiom count: 7 (plus A8', A9'). Predictions: 15+. Ratio: 0.47.
 
 ---
 
 ## 8. Currently Active Open Problems
 
-1. **OPEN-P-SM-cage-1:** Derive α = 2.38 from 600-cell geometry
+1. **OPEN-P-SM-cage-1:** Rigorous derivation of α = 7/3 from cage geometry (partially resolved in SM-9; FEM target in SM-10)
 2. **OPEN-P-SM-cage-7:** Why does C(n,2) predict m_b/m_s to 0.6%?
 3. **OPEN-P-SM-cage-3:** Connect cage 2/3 fraction to Koide K = 2/3
 4. **OPEN-P-SM-cage-6:** Apply cage model to leptons
 5. **OPEN-P-FV-1:** SSV_abs → Lorentz factor (SR-1 re-derivation)
+6. **SM-10 FEM Simulation:** First-principles quark mass from chain network simulation — the #1 priority forward project. Phase 1 (CPU proof-of-concept) can be attempted immediately.
+7. **Strange quark residual (+3.1%):** Largest error in zero-parameter formula. Candidate explanations: absent surface blanket, chiral condensate coupling, ZBW instability.
 
 Full list: `open_problems/` folder and `future_projects.md`.
 
@@ -221,53 +220,80 @@ Full list: `open_problems/` folder and `future_projects.md`.
 
 ## 9. What to Update After Every Paper
 
-**WHEN:** Immediately after completing the documentation suite (Phase 7), before pushing to GitHub. See `templates/operating_system.md` Section 10 for detailed procedures for each file.
+**TRIGGER:** Run this checklist after completing the documentation suite (Phase 7), BEFORE pushing to GitHub. Full procedures in `operating_system.md` Section 10.
 
 | Document | What to update |
 |----------|----------------|
 | `CPP_the_theory.md` | Add results to chapter, update scorecard |
 | `theory-overview.md` | Add results, update formula card |
-| `axiom-registry.md` | Check axioms, add predictions |
-| `master_glossary.md` | Add new terms |
-| `founders_vision.md` | Add new physical intuitions |
-| `predictions.md` | Add new predictions |
-| `postulates_and_theorems.md` | Add new theorems |
-| `future_projects.md` | Update project status |
-| `README.md` | Add paper to table |
-| `INDEX.md` | Add new files |
+| `axiom-registry.md` | Check axioms, add predictions, update ratio |
+| `master_glossary.md` | Scan paper for new terms, add in alphabetical order |
+| `founders_vision.md` | Add new physical intuitions from this session |
+| `predictions.md` | Add new predictions with PDG comparison |
+| `postulates_and_theorems.md` | Add new theorems, update conjecture status |
+| `future_projects.md` | Mark completed, add new targets, re-prioritise |
+| `README.md` | Add paper to table, update counts |
+| `INDEX.md` | Add all new files |
 | `paper_catalog.md` | Add paper entry |
 | `series_[name]/README.md` | Add to series |
+| `bibliography/cpp_references.bib` | Add BibTeX entry for new paper |
+| `open_problems/` | Create new OPEN-P files, mark resolved ones |
+
+### Post-Session Quick Checklist (for discovery sessions that don't produce a full paper)
+- [ ] Update `founders_vision.md` with any new physical insights
+- [ ] Create/update development transcript
+- [ ] Update `future_projects.md` if priorities changed
+- [ ] Note any new open problems in `open_problems/`
+- [ ] Push to GitHub
 
 ---
 
-## 10. Conventions
+## 10. The Documentation Suite (7 files per paper)
+
+Every completed paper gets 7 companion `.md` files stored in `series_[name]/`:
+
+| File | Purpose | Content |
+|------|---------|---------|
+| `mechanism-[S]-[N].md` | How the physics works | Step-by-step mechanism, mathematical correspondence table |
+| `glossary-[S]-[N].md` | Paper-specific terms | All new terms with definitions, organised by category |
+| `phenomena-[S]-[N].md` | What the paper explains | PHEN-E (empirical), PHEN-P (predictions), PHEN-V (consilience) |
+| `philosophy-[S]-[N].md` | Epistemological framing | What level of certainty, relationship to SM, falsifiability |
+| `development-[S]-[N].md` | Development history | Version timeline, key decisions, dead ends, transcript links |
+| `reviews-[S]-[N].md` | All reviews + FAQ | Part 1: formal reviews (Copilot/Grok/Sonnet). Part 2: FAQ |
+| `keywords-[S]-[N].md` | Keywords and registry | Primary/secondary keywords, cross-references, axiom/theorem entries |
+
+Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
+
+---
+
+## 11. Conventions
 
 **Paper IDs:** `[SERIES]-[NUMBER]` (SM-8, EW-3, QM-1, SR-1, SS-1, SD-5)
-**Filenames:** `SM-8_quark_generation_600cell_shells.tex` — lowercase slug, no version number in filename
-**Versions:** `vX.Y` in the .tex header changelog. ONE file per paper, overwritten — Git history preserves all versions. Never create `_v1`, `_v2` copies.
-**Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN-P (open problem), FALS (falsified). See `templates/nomenclature.md`.
+**Versions:** `vX.Y` — changelog in .tex header
+**Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN-P (open problem), FALS (falsified)
 **LaTeX:** Follow `templates/paper-formatting.md`
+**Axiom numbering:** When two reviewers independently propose axiom entries (e.g., Grok proposes A9', Copilot proposes A8'), reconcile into one entry when updating `axiom-registry.md`. The registry is the single source of truth for axiom IDs.
 
 ---
 
-## 11. Papers in the Programme (April 2026)
+## 12. Papers in the Programme (April 2026)
 
 | Series | Papers | Status |
 |--------|--------|--------|
-| Standard Model (SM) | SM-1 through SM-9 | SM-1–7 on OSF; SM-8 ready; SM-9 v1.0 |
+| Standard Model (SM) | SM-1 through SM-10 | SM-1–7 on OSF; SM-8 v4.1 ready; SM-9 v2.2 ready; SM-10 v0.1 proposal |
 | Electroweak (EW) | EW-1 through EW-5 | On OSF |
 | Quantum Mechanics (QM) | QM-1 through QM-6 | On OSF |
 | Relativity (SR) | SR-1 | On OSF |
 | Strong Sector (SS) | SS-1 | On OSF |
 | Foundations (SD) | SD-1 through SD-5 | On OSF |
 
-Total: 24+ papers. Full details: `paper_catalog.md`.
+Total: 26 papers. Full details: `paper_catalog.md`.
 
 ---
 
-## 12. OSF Registration
+## 13. OSF Registration
 
-1. Prepare PDF + .tex + figures
+1. Prepare PDF + .tex + .bib + figures
 2. Write metadata (title, abstract, keywords, dependencies, version)
 3. Upload to OSF component under CPP project
 4. OSF auto-assigns DOI
