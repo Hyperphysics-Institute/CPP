@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/operating_system.md`
 **Purpose:** The complete workflow manual for the CPP research programme. Covers every procedure from session startup to OSF registration, including multi-AI coordination, document management, and recovery from interruptions.
-**Last updated:** 9 April 2026
+**Last updated:** 8 April 2026
 **Audience:** Future-Opus, Future-Grok, Future-Copilot, Future-Sonnet, and any new AI or human collaborator joining the programme.
 
 ---
@@ -52,7 +52,7 @@
 | `founders_vision.md` | Thomas's physical intuition — the WHY | Every session with new physics |
 | `theory-overview.md` | Current state snapshot — formulas, results, problems | After each paper |
 | `axiom-registry.md` | All axioms, predictions, growth tracking | After each paper |
-| `master_glossary.md` | Every CPP term defined | Scan during Phase 7 |
+| `master_glossary.md` | Every CPP term defined | When new terms appear |
 | `predictions.md` | Quantitative predictions with status | After each paper |
 | `postulates_and_theorems.md` | Formal mathematical results | After each paper |
 
@@ -62,7 +62,7 @@
 | `operating_system.md` | THIS FILE — complete workflow manual |
 | `bootup.md` | Session startup guide (subset of this file) |
 | `paper_production_workflow.md` | 9-phase paper pipeline (expanded below) |
-| `documentation-suite.md` | 7-file companion template per paper |
+| `documentation-suite.md` | 8-file companion template per paper |
 | `paper-formatting.md` | LaTeX standards |
 | `future_projects.md` | Prioritised research targets |
 
@@ -92,13 +92,6 @@
 3. Record negative results as well as positive ones
 4. If a paper-worthy result emerges, note it — but don't force a paper
 5. At session end: update `founders_vision.md` catalogue, create/update transcript
-
-**Post-Session Quick Checklist (for discovery sessions that don't produce a full paper):**
-- [ ] Update `founders_vision.md` with any new physical insights
-- [ ] Create/update development transcript
-- [ ] Update `future_projects.md` if priorities changed
-- [ ] Note any new open problems in `open_problems/`
-- [ ] Push to GitHub
 
 **Key lesson from SM-8:** Papers can emerge unexpectedly from exploration sessions. SM-8 started as documentation work and became a 14-page paper with three theorems. Don't restrict exploration sessions to their stated goal.
 
@@ -164,18 +157,106 @@
 - Write OSF metadata (title, abstract, keywords, dependencies)
 - Register with DOI
 
-### Phase 7: Documentation Suite (7 files)
-Create all 7 companion files per `documentation-suite.md`. Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
+### Phase 7: Documentation Suite
 
-| File | Purpose | Content |
-|------|---------|---------|
-| `mechanism-[S]-[N].md` | How the physics works | Step-by-step mechanism with mathematical correspondence table |
-| `glossary-[S]-[N].md` | Paper-specific terms | All new terms with definitions, organised by category |
-| `phenomena-[S]-[N].md` | What the paper explains | PHEN-E (empirical facts explained), PHEN-P (predictions), PHEN-V (consilience with other CPP results) |
-| `philosophy-[S]-[N].md` | Epistemological framing | What level of certainty, relationship to SM, falsifiability inventory |
-| `development-[S]-[N].md` | Development history | Version timeline, key decisions, dead ends, contributor roles, transcript links |
-| `reviews-[S]-[N].md` | All reviews + FAQ | Part 1: formal reviews from each AI. Part 2: FAQ organised by category |
-| `keywords-[S]-[N].md` | Keywords and registry | Primary/secondary keywords, cross-references to other papers, axiom/theorem entries |
+**TRIGGER:** After the paper passes all reviews (Phase 4) and the axiom registry is updated (Phase 5). Create all 8 companion files before proceeding to transcript curation.
+
+**Template:** Full format specifications are in `templates/documentation-suite.md`. The summary below gives each file's purpose and key content so Future-Opus can create them without opening a second document.
+
+| # | File | Audience | Key content |
+|---|------|----------|-------------|
+| 1 | `development-[S]-[N].md` | Future collaborators | Discovery timeline, decisions, dead ends, contributors |
+| 2 | `glossary-[S]-[N].md` | All readers | Every technical term in the paper, with definitions and status |
+| 3 | `mechanism-[S]-[N].md` | Physicists | Physical mechanisms with intuitive "what happens at the lattice level" descriptions |
+| 4 | `phenomena-[S]-[N].md` | Physicists + general | What the paper explains, what it predicts, what it doesn't explain |
+| 5 | `philosophy-[S]-[N].md` | Theorists + philosophers | Epistemological status, type classification, honest assessment of strength |
+| 6 | `reviews-[S]-[N].md` | Authors + referees | All external reviews received (Copilot, Grok, Sonnet), critiques and responses |
+| 7 | `FAQ-[S]-[N].md` | General readers + web | 10-15 anticipated questions with clear answers (see below) |
+| 8 | `keywords-[S]-[N].md` | SEO / search | Keywords, PACS/MSC codes, one-sentence elevator pitch |
+
+#### FAQ-[S]-[N].md creation procedure
+1. Generate 10-15 questions a reader would ask after reading the paper
+2. Categories to cover:
+   - **"What does this mean?"** questions (explain key results in plain language)
+   - **"How does this relate to X?"** questions (connect to QCD, Standard Model, other CPP papers)
+   - **"What are the limitations?"** questions (scheme dependence, calibration, open problems)
+   - **"Is this falsifiable?"** questions (specific predictions that could be wrong)
+   - **"What's next?"** questions (where the research goes from here)
+3. Format:
+   ```markdown
+   ## Q: [Question in plain language]
+   
+   **A:** [Clear, honest answer. 2-5 sentences. Reference the paper section
+   where the detailed argument lives.]
+   ```
+4. Include at least one FAQ addressing the strongest criticism from the Sonnet hostile review
+5. Include at least one FAQ connecting this paper to the previous paper in the series
+
+### Phase 7b: Verification Notebooks
+
+**TRIGGER:** After the paper is drafted (Phase 2) but before or during review (Phase 4). Every quantitative claim in a paper should have a reproducible computation behind it.
+
+**Purpose:** Capture every significant computation performed during a paper's development as a standalone, reproducible script or notebook. These are the EVIDENCE behind the predictions — if a reviewer asks "how did you get 172,800 MeV?", the notebook answers.
+
+**What to capture as a notebook:**
+- Any computation that produces a number cited in the paper
+- Model tests (including models that failed — these are negative-result evidence)
+- 600-cell vertex construction and distance shell analysis
+- Charge census and assignment searches
+- Spectral dimension / random walk computations
+- Chain energy calculations
+- Mass ratio predictions from any model
+- Figure generation code
+
+**What does NOT need a notebook:**
+- LaTeX formatting and compilation
+- File management and repository operations
+- Simple arithmetic that can be verified by hand (e.g., 14400 × 12 = 172800)
+
+**Format:** Python scripts (`.py`) or Jupyter notebooks (`.ipynb`). Each notebook should be self-contained — runnable from scratch without external dependencies beyond standard packages (numpy, scipy, matplotlib, itertools).
+
+**Naming convention:** `[S]-[N]_[description].py` or `.ipynb`
+- Example: `SM-8_600cell_distance_shells.py`
+- Example: `SM-8_charge_census.py`
+- Example: `SM-9_chain_energy_models.py`
+- Example: `SM-9_pairwise_coupling.py`
+- Example: `SM-9_spectral_dimension.py`
+
+**Required header in each notebook:**
+```python
+# ============================================================
+# [S]-[N]: [Description]
+# Paper: [Full paper title]
+# Computation: [What this notebook computes]
+# Key result: [The number(s) this produces, cited in the paper]
+# Author: [AI name], [date]
+# ============================================================
+```
+
+**Storage:** `series_[name]/notebooks/`
+
+**Procedure:**
+1. At the end of each paper session, review the computations performed
+2. For each computation that produced a number in the paper, extract the
+   code into a clean standalone script
+3. Remove conversation-specific paths and hardcoded file references
+4. Add the standard header with paper reference and key result
+5. Test that the script runs independently and produces the claimed output
+6. Save to `series_[name]/notebooks/`
+7. Add to INDEX.md
+
+**For SM-8 and SM-9 specifically (retroactive):** The following computations were performed in conversation and should be extracted into notebooks:
+- 600-cell vertex construction and all 8 distance shells
+- Cage edge counting and polyhedral identification
+- Exhaustive charge census (2/3 attractive fraction)
+- V^2.38 mass scaling calibration and predictions
+- z=12 post-gap multiplier verification
+- Palindrome shell symmetry verification
+- Spectral dimension (CPU and GPU versions)
+- Chain-energy models A through I (all additive failures)
+- Fractal branching models with crowding
+- C(n,2) pairwise coupling prediction
+- Angular-weighted pair model with parameter search
 
 ### Phase 8: Transcript Curation
 - Collect raw transcripts from all AI sessions
@@ -219,11 +300,10 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 6. **Opus rebuts** — addresses each criticism, integrates valid points, explains why invalid criticisms miss the mark
 7. **Final version** ready for OSF
 
-### Key lessons from SM-8/SM-9/SM-10 trilogy:
+### Key lessons from SM-8:
 - Grok contributed the most important single result (z=12 theorem). Don't just ask for review — ask for CONTRIBUTION.
 - Copilot excels at referee-proofing — framing, axioms, anticipated criticisms.
-- Sonnet's hostile review is valuable for identifying real weaknesses. Sonnet's circular-validation catch in SM-10 was the single most valuable insight across all 10 reviews.
-- When two reviewers independently propose axiom entries (e.g., Grok proposes A9', Copilot proposes A8'), reconcile into one entry when updating `axiom-registry.md`.
+- Sonnet's hostile review is valuable for identifying real weaknesses but tends toward philosophical objection ("this isn't QCD") rather than technical critique.
 - The multi-AI cycle typically produces 3-5 paper versions over 1-2 days.
 
 ---
@@ -262,6 +342,40 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 
 *Transcript curated by [AI], [date]*
 ```
+
+### What to INCLUDE in curated transcripts
+
+**Always include — these are the scholarly record:**
+- Thomas's physical descriptions and intuitions (verbatim when possible)
+- Thomas's questions that redirected the investigation
+- AI reasoning chains that led to discoveries or key decisions
+- Computational results (numerical values, table outputs, key formulas)
+- Negative results — models that failed, with the quantitative evidence of failure
+- Disagreements between Thomas and AI, or between different AIs
+- "Wait, what if..." moments that changed direction
+- Corrections to earlier errors (what was wrong, how it was caught)
+- Decisions about paper structure, axiom formulation, or physical interpretation
+- Key quotes from Grok/Copilot/Sonnet reviews and the responses to them
+- The discovery arc — how one finding led to the next
+
+**Always EXCLUDE — these are noise:**
+- File system commands (`ls`, `cp`, `mkdir`, `cd`, `cat`)
+- Path references and directory navigation
+- LaTeX compilation output and error messages
+- Python/code execution boilerplate (import statements, variable setup)
+- "Please wait while I compute..." messages
+- Tool invocation details (bash_tool, web_fetch, create_file mechanics)
+- Formatting instructions ("make this a table", "use bold for...")
+- Git commands and push/pull operations
+- Session reconnection noise ("Your buffers overflowed...")
+- Repeated content (if the same computation is run multiple times, keep only the final version with a note)
+- Claude's internal system messages and context-management notes
+
+**Judgment calls — include if substantive, exclude if routine:**
+- Code that implements a physical model (INCLUDE the logic, EXCLUDE the boilerplate)
+- Numerical output tables (INCLUDE the final results table, EXCLUDE intermediate debugging prints)
+- Requests for documents (EXCLUDE "please generate the FAQ", INCLUDE "we need a document that captures X because Y")
+- Thomas's instructions about workflow (EXCLUDE "save this to outputs", INCLUDE "I think we should document this because scholars will study it")
 
 ### Numbering convention
 - Transcripts are numbered sequentially PER PAPER across all AI sessions
@@ -324,13 +438,11 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 - In `founders_vision.md` catalogue with "NEGATIVE RESULT" tag
 - In the development transcript with full computation details
 
-**Example from SM-8/SM-9/SM-10:**
+**Example from SM-8/SM-9:**
 - Sea composition doesn't affect mass ratios (cancels when uniform)
 - Additive chain-energy models fail by 65-92%
 - Spectral dimension d_s ≈ 3.55 ≠ α ≈ 2.38
 - φ^(3(l-1)) scaling falsified for light quark masses (PS-1)
-- Pine tree fractal cascade undercounts DPs by 4-10× (SM-9 session)
-- V_opp-based power laws give 23% RMS vs V's 2.1% (SM-9 session)
 
 ### Format
 
@@ -399,14 +511,13 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 #### axiom-registry.md update procedure
 1. Check: did the paper use any axiom not already in the registry? If so, add it.
 2. Check: did the paper consolidate axioms (as SM-8 did with A6')? If so, update tiers.
-3. **Reconcile numbering:** If multiple reviewers proposed axiom entries independently (e.g., Grok proposes A9', Copilot proposes A8' for the same principle), reconcile into a single entry. The axiom registry is the single source of truth for axiom IDs.
-4. Add every new quantitative prediction to the Prediction Ledger:
+3. Add every new quantitative prediction to the Prediction Ledger:
    ```
-   | 13 | m_t (zero-param) | 169,571 MeV | 172,760 | −1.8% | A2,A8' | SM-8 v4.1 |
+   | 13 | m_t (cage × z=12) | 172,800 MeV | 172,760 | 0.02% | A2,A6' + m_s,m_c | SM-8 |
    ```
-5. Update the axiom count summary and axiom-to-prediction ratio
-6. Add a row to the Growth Table showing this paper's contribution
-7. Check if any conjectured reductions were achieved
+4. Update the axiom count summary and axiom-to-prediction ratio
+5. Add a row to the Growth Table showing this paper's contribution
+6. Check if any conjectured reductions were achieved
 
 #### master_glossary.md update procedure
 1. Scan the new paper for any term not already in the glossary
@@ -421,7 +532,7 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 #### predictions.md update procedure
 1. Add each new quantitative prediction:
    ```
-   | SM-8-1 | m_b (zero-param) | 4,115 MeV | 4,180 MeV | −1.6% | A2,A8' | CONFIRMED |
+   | SM-8-1 | m_b (cage V^2.38) | 4,304 MeV | 4,180 MeV | 3.0% | A2 + m_s,m_c | CONFIRMED |
    ```
 2. Update status of existing predictions if new data or analysis changes them
 3. Update the total prediction count and zero-parameter prediction count
@@ -438,10 +549,9 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 
 #### future_projects.md update procedure
 1. Mark any completed projects as DONE with date
-2. Update status of in-progress projects (e.g., "SM-9 v2.2 completed")
+2. Update status of in-progress projects (e.g., "SM-9 v2.0 drafted")
 3. Add any new research targets that emerged during the session
 4. Re-prioritise if the session changed what's most promising
-5. **Current #1 priority (April 2026):** SM-10 FEM chain network simulation — Phase 1 (CPU proof-of-concept) can be attempted immediately
 
 #### CPP_the_theory.md update procedure
 1. Identify which chapter(s) the new results belong to
@@ -460,7 +570,7 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
      title   = {Quark Generation Structure from 600-Cell Distance Shells},
      journal = {Hyperphysics Institute},
      year    = {2026},
-     note    = {SM-8 v4.1}
+     note    = {SM-8 v3.0}
    }
    ```
 2. Add BibTeX entries for any external works cited in the paper
@@ -487,20 +597,20 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 #### README.md update procedure
 1. Add the new paper to the "Registered Papers" table:
    ```
-   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v4.1 | OSF pending |
+   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | OSF registered |
    ```
-2. Update the paper count ("24 papers" → "26 papers" etc.)
+2. Update the paper count ("24 papers" → "25 papers" etc.)
 3. If the paper produced a headline result, add it to "Strongest Results":
    ```
-   | Zero-param quark masses (RMS) | 2.1% | 4 quarks | SM-8 v4.1 |
+   | m_t = 172,800 MeV | 172,760 MeV | 0.02% | SM-8 |
    ```
 4. If axiom count changed, update the axiom summary line
 5. Add any new series-level achievements to the series table
 
 #### INDEX.md update procedure
 1. Add every new file created during this paper's production:
-   - The paper itself (.tex, .pdf, .bib)
-   - All 7 documentation suite files
+   - The paper itself (.tex, .pdf)
+   - All 8 documentation suite files
    - Any development transcripts
    - Any new figures
 2. Add files to the correct folder section in INDEX.md
@@ -510,9 +620,12 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 #### paper_catalog.md update procedure
 1. Add one row per new paper:
    ```
-   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v4.1 | 15 pages | April 2026 | OSF pending |
+   | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | 14 pages | April 2026 | OSF pending |
    ```
 2. Update the total paper count at the top
+
+### Computation documents (create/update)
+- [ ] Verification notebooks in `series_[name]/notebooks/` (see Phase 7b)
 
 ### History documents (create/update)
 - [ ] `development-[S]-[N].md` — paper development narrative (see procedure below)
@@ -554,12 +667,12 @@ start of the next session (to capture what was missed).
 ### Papers
 - Format: `[S]-[N]_[short_descriptive_slug].tex`
 - Slug: lowercase, 3-5 words, underscores, no version number
-- Same name for `.tex`, `.pdf`, and `.bib` files
+- Same name for `.tex`, `.pdf`, and all companion `.md` files
 - Examples:
   - `SM-6_lepton_mass_spectrum.tex`
+  - `SM-7_heavy_quark_mass_spectrum.tex`
   - `SM-8_quark_generation_600cell_shells.tex`
   - `SM-9_scaling_exponent.tex`
-  - `SM-10_chain_network_FEM.tex`
 
 ### Version management
 - **ONE file per paper, overwritten with each revision.** Git history preserves all versions.
@@ -575,7 +688,7 @@ start of the next session (to capture what was missed).
 
 ### Documentation suite
 - `[type]-[S]-[N].md`
-- Example: `mechanism-SM-8.md`, `reviews-SM-8.md`, `keywords-SM-9.md`
+- Example: `development-SM-8.md`, `FAQ-SM-8.md`, `reviews-SM-8.md`
 
 ### Transcripts
 - `[PAPER]_transcript_[NN]_[ai_name].md`
@@ -610,32 +723,26 @@ start of the next session (to capture what was missed).
 - **Strengths:** Finding genuine weaknesses, adversarial perspective, identifying unstated assumptions
 - **Limitations:** Tends toward philosophical rejection ("this isn't real physics") rather than constructive critique; may miss the forest for the trees
 - **Best used for:** Final review before OSF registration; identifying what a hostile referee would say
-- **Notable contributions:** Scheme-dependence criticism (SM-8); circular-validation catch (SM-10) — the single most valuable insight across 10 reviews
+- **Notable contribution:** Scheme-dependence criticism led to important SM-8 remark
 
 ---
 
-## Appendix: Lessons Learned (April 2026)
+## Appendix: Lessons Learned from SM-8 (April 2026)
 
-### From SM-8
 1. **Papers emerge from exploration.** SM-8 was not planned. Allow discovery sessions to produce unexpected papers.
+
 2. **Negative results are publications.** SM-9 is entirely about what didn't work. Document failures with the same care as successes.
+
 3. **The multi-AI team is more than the sum of its parts.** Grok's z=12 multiplier came from asking for review, not for a specific calculation. Give the team room to contribute.
 
-### From SM-9
-4. **Honest self-assessment strengthens papers.** Acknowledging that 7/3 is "partially derived" (not proven) was praised by all reviewers.
-5. **The founder's voice is irreplaceable.** Thomas's stream-of-consciousness descriptions (the pine tree model, the three bonding regions, the cooperative coupling) generate every breakthrough. Capture them immediately.
+4. **Honest self-assessment strengthens papers.** The "epistemological status" remark in SM-8 — acknowledging that the case is inductive, not deductive — was praised by all reviewers.
 
-### From SM-10
-6. **Watch for circular validation.** Sonnet caught that comparing simulation output to formula-derived targets is circular. Always test against independent empirical data (PDG mass ratios), not model predictions.
+5. **Buffer overflows will happen.** Plan for them: keep `founders_vision.md` and transcripts current so nothing is lost.
 
-### From the full trilogy
-7. **Buffer overflows will happen.** Plan for them: keep `founders_vision.md` and transcripts current so nothing is lost.
-8. **The documentation suite is scholarship.** The 7 companion files per paper, the curated transcripts, and the review records ARE the scholarly record that future researchers will study.
-9. **37 files in one session is possible.** The SM-8/9/10 trilogy session produced 3 papers, 10 reviews, 21 documentation suite files, and 3 transcripts in a single sitting. The pipeline works.
+6. **The founder's voice is irreplaceable.** Thomas's stream-of-consciousness descriptions (the near-field/far-field mechanism, the fractal branching picture, the cooperative coupling insight) generate every breakthrough. Capture them immediately.
 
 ---
 
 *This document supersedes `bootup.md` as the complete reference.*
 *`bootup.md` remains the quick-start guide for sessions.*
 *Created 8 April 2026 by Claude Opus at Thomas's request.*
-*Updated 9 April 2026 — SM-8/9/10 trilogy lessons, 7-file suite, SM-10 FEM references, Post-Session Quick Checklist, axiom reconciliation note.*
