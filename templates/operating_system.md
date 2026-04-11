@@ -192,6 +192,72 @@
 4. Include at least one FAQ addressing the strongest criticism from the Sonnet hostile review
 5. Include at least one FAQ connecting this paper to the previous paper in the series
 
+### Phase 7b: Verification Notebooks
+
+**TRIGGER:** After the paper is drafted (Phase 2) but before or during review (Phase 4). Every quantitative claim in a paper should have a reproducible computation behind it.
+
+**Purpose:** Capture every significant computation performed during a paper's development as a standalone, reproducible script or notebook. These are the EVIDENCE behind the predictions — if a reviewer asks "how did you get 172,800 MeV?", the notebook answers.
+
+**What to capture as a notebook:**
+- Any computation that produces a number cited in the paper
+- Model tests (including models that failed — these are negative-result evidence)
+- 600-cell vertex construction and distance shell analysis
+- Charge census and assignment searches
+- Spectral dimension / random walk computations
+- Chain energy calculations
+- Mass ratio predictions from any model
+- Figure generation code
+
+**What does NOT need a notebook:**
+- LaTeX formatting and compilation
+- File management and repository operations
+- Simple arithmetic that can be verified by hand (e.g., 14400 × 12 = 172800)
+
+**Format:** Python scripts (`.py`) or Jupyter notebooks (`.ipynb`). Each notebook should be self-contained — runnable from scratch without external dependencies beyond standard packages (numpy, scipy, matplotlib, itertools).
+
+**Naming convention:** `[S]-[N]_[description].py` or `.ipynb`
+- Example: `SM-8_600cell_distance_shells.py`
+- Example: `SM-8_charge_census.py`
+- Example: `SM-9_chain_energy_models.py`
+- Example: `SM-9_pairwise_coupling.py`
+- Example: `SM-9_spectral_dimension.py`
+
+**Required header in each notebook:**
+```python
+# ============================================================
+# [S]-[N]: [Description]
+# Paper: [Full paper title]
+# Computation: [What this notebook computes]
+# Key result: [The number(s) this produces, cited in the paper]
+# Author: [AI name], [date]
+# ============================================================
+```
+
+**Storage:** `series_[name]/notebooks/`
+
+**Procedure:**
+1. At the end of each paper session, review the computations performed
+2. For each computation that produced a number in the paper, extract the
+   code into a clean standalone script
+3. Remove conversation-specific paths and hardcoded file references
+4. Add the standard header with paper reference and key result
+5. Test that the script runs independently and produces the claimed output
+6. Save to `series_[name]/notebooks/`
+7. Add to INDEX.md
+
+**For SM-8 and SM-9 specifically (retroactive):** The following computations were performed in conversation and should be extracted into notebooks:
+- 600-cell vertex construction and all 8 distance shells
+- Cage edge counting and polyhedral identification
+- Exhaustive charge census (2/3 attractive fraction)
+- V^2.38 mass scaling calibration and predictions
+- z=12 post-gap multiplier verification
+- Palindrome shell symmetry verification
+- Spectral dimension (CPU and GPU versions)
+- Chain-energy models A through I (all additive failures)
+- Fractal branching models with crowding
+- C(n,2) pairwise coupling prediction
+- Angular-weighted pair model with parameter search
+
 ### Phase 8: Transcript Curation
 - Collect raw transcripts from all AI sessions
 - Curate: preserve substance, remove tooling noise, keep dead ends
@@ -557,6 +623,9 @@
    | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | v3.0 | 14 pages | April 2026 | OSF pending |
    ```
 2. Update the total paper count at the top
+
+### Computation documents (create/update)
+- [ ] Verification notebooks in `series_[name]/notebooks/` (see Phase 7b)
 
 ### History documents (create/update)
 - [ ] `development-[S]-[N].md` — paper development narrative (see procedure below)
