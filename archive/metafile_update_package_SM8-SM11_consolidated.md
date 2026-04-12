@@ -8,6 +8,7 @@
 - ✅ `CPP_the_theory.md` — reconciled with both update files
 - ✅ `founders_vision.md` — reconciled with both update files
 - ✅ `bootup.md` — reconciled (bootup + bootup2)
+- ✅ `operating_system.md` — reconciled (operating_system + operating_system2)
 
 ---
 
