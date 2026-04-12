@@ -4,7 +4,7 @@
 **Document type:** Physical intuition narrative — the founder's mental model
 **Location:** `/CPP/founders_vision.md`
 **Purpose:** To capture, in Thomas's own voice and physical language, the way CPP works as an imagined world — not the equations, but the stories beneath them
-**Last updated:** 4 April 2026
+**Last updated:** 11 April 2026
 
 ---
 
@@ -93,6 +93,7 @@ Quarks have internal structure. Each quark's mass comes from ZBW energy stored i
 **The down quark (-1/3) — via electron capture:**
 
 The down quark is an up quark with a captured electron:
+
 - A high-energy electron penetrates the 4 radial chains shielding the up quark's central +qCP.
 - The electron's -eCP binds with the +qCP to form a linear hDP ZBW oscillator.
 - The electron's orbital spin ZBW DP is released as an electron neutrino.
@@ -113,7 +114,7 @@ Each heavier quark generation adds the next larger cage shell around the previou
 Opus computed the distance shells of the 600-cell around any vertex (4 April 2026) and discovered that all four cages embed exactly as natural geometric structures:
 
 | Cage | 600-cell structure | Distance shell | V | E | z | Quark |
-|------|--------------------|---------------|---|---|---|-------|
+|------|-------------------|----------------|---|---|---|-------|
 | Tetrahedron | Cell | — | 4 | 6 | 3 | Strange |
 | Icosahedron | Shell 1 (vertex figure) | d = 1/φ | 12 | 30 | 5 | Charm |
 | Dodecahedron | Shell 2 | d = 1.0 | 20 | 30 | 3 | Bottom |
@@ -151,6 +152,7 @@ A qDP chain connects cage vertices — the CPP gluon flux tube. It carries compr
 Thomas: "They are rigid because their mass must be accelerated... it is inertia that causes the displacement wave to rebound/reflect back down the edge. But the force is strong enough to move the 'wall' of the quark."
 
 **Three regimes** (Opus interpretation):
+
 1. **Confinement** (reflection-dominated): Heavy quarks reflect most colour energy back into the cage.
 2. **Nuclear force** (transmission): Energy transmitting through the vertex radiates into the DP Sea. Neighbouring baryons feel this as the residual strong force.
 3. **Thermalisation**: Transmitted energy diffuses through the mass aggregate to equilibrium.
@@ -263,55 +265,61 @@ After each working session where Thomas describes a physical mechanism:
 ## Catalogue of Physical Intuition Statements (Chronological)
 
 ### 2 April 2026 — E Field vs Colour Field (Copilot session)
+
 "The electric charge is push-and-pull... The color force is non-discriminant; it pulls, regardless of the type of CP..."
 Formalised as Axioms A6 and A7 in SM-7 v2.2.
 
 ### 2 April 2026 — Displacement Circulation Discovery (Opus session)
+
 "Any time there is a tensioning of any of the bonds, the displacement will unavoidably be transmitted to the other three bonded CPs."
 Formalised as Axiom A7; 8 modes = 8 Gell-Mann generators.
 
 ### 2 April 2026 — Axiom Philosophy (Opus session)
+
 "Let's just call everything an axiom that looks like one, and let's see if they show up over and over..."
 Formalised as the Axiom Registry.
 
 ### 3 April 2026 — Tetrahedral Cavity and Baryon Structure (Opus session)
+
 Quarks bond to 3 of 4 vertices of the hybrid tetrahedron. SU(3) lives on the K3 quark face. The tetrahedron is the resonant cavity.
 Formalised as updated Axiom A7.
 
 ### 3 April 2026 — Meson Dissociation and Confinement (Opus session)
+
 "The last DP splits, using the now unpaired qCPs as the nucleation point around which the new quark forms."
 Candidate for future SS-series paper.
 
 ### 4 April 2026 — Nested 600-Cell Lattice (Opus session)
+
 "I envision the lattice of GPs as a densely nested lattice of 600-cells... SSV_abs determines the subgraph."
 "Not all GPs are filled/occupied by CPs; therefore, the lattice is not the DP Sea."
 
 ### 4 April 2026 — SSV_abs vs SSV_net (Opus session)
+
 "SSV_abs defines the subgraph/PSR. SSV_net is the displacement in absolute space."
 SR-1 implementation flagged for re-derivation.
 
 ### 4 April 2026 — Impedance Boundary (Opus session)
+
 "Inertia causes the displacement wave to rebound... the force is strong enough to move the 'wall'."
 Reflection = confinement. Transmission = nuclear force. Three regimes identified.
 
 ### 4 April 2026 — Charge Structure of Hybrid Tetrahedron (Opus session)
+
 "4 ZBW edges, 2 repulsive edges. All faces have 1 repulsive + 2 attractive. Displacement oscillates on each face."
 Repulsive edges as reflectors driving face-mode circulation.
 
 ### 4 April 2026 — Quark Internal Structure and Electron Capture (Opus session)
+
 Down quark = up quark + captured electron. -eCP binds with +qCP for linear ZBW oscillator. Charge: +2/3 + (-1) = -1/3. Orbital spin ZBW released as neutrino. Mass difference supplied by electron mass + kinetic energy.
 
 ### 4 April 2026 — Nested Cage Hierarchy (Opus session)
+
 Each generation adds a cage shell: tetrahedron, icosahedron, dodecahedron, icosidodecahedron. Each wraps around the previous. **Discovery:** All four cages embed exactly in the 600-cell as bonded distance shells (Shells cell/1/2/4). Shell 3 has zero bonds — a gap. V^2.38 law predicts m_b to 3%, agreeing with Koide to 2%. Top is 12× anomalous.
 
 ### 4 April 2026 — Mixed DP/hTetra Sea (Opus session)
+
 Vacuum contains eDPs, qDPs, hDPs (A and B), and hTetras. hTetras require activation energy. Cosmological freezing precipitated the mixture.
-
----
-
-*This is a living document. It grows with each session.*
-*Initiated 3 April 2026 by Claude Opus, at Thomas's request.*
-*"Are my words being captured and catalogued?" — Thomas Lee Abshier, 3 April 2026*
 
 ### 5 April 2026 — Near-Field/Far-Field Transition and the z=12 Multiplier (Opus session)
 
@@ -320,11 +328,8 @@ Vacuum contains eDPs, qDPs, hDPs (A and B), and hTetras. hTetras require activat
 **Thomas's key physical ideas:**
 
 1. **Back-EMF coherence:** For small cages, the ZBW signal from the central CP reaches the cage surface and reflects back within one oscillation period. The reflected signal (back-EMF) cancels the source, limiting chain formation to 4 radial chains. For the top cage, the round-trip time exceeds the ZBW period. The back-EMF arrives late and out of phase. The suppression mechanism breaks.
-
 2. **Channel switching:** Without prompt feedback, the central CP's "palate is cleared" each Moment. It initiates ZBW attraction along whichever of the 12 edges is locally most attractive. Over time, all 12 channels accumulate ZBW oscillations in various stages of transit.
-
 3. **Shell 3 as far-field boundary:** Shell 3 has no edges, no GPs, no reflecting surface. A signal reaching Shell 3 finds nothing to bounce off. It continues to the top cage at Shell 4, but by then it's in the far field — disconnected from the source's resonance cycle.
-
 4. **Thermalization boundary dissolution:** Inside the top cage, the polarisation bias from the central CP and the absence of near-field feedback may suppress the inter-chain repulsion that normally creates the thermalization boundary, allowing the full gap volume to fill with ZBW oscillations.
 
 **Thomas's words:** "The switching-edge paradigm, in each moment, due to the lack of near-field feedback, enables a more full-volume polarization that emanates from all the edges of the central CP... resulting in the full complement of the space internal to the central CP - top-cage gap totally filled with ZBW oscillations in various stages of transit from and to the central CP."
@@ -368,6 +373,7 @@ Thomas: "There isn't a cage there because there isn't any way to bind the CPs at
 ### 5 April 2026 — Palindrome Shell Symmetry (Opus computation)
 
 **Discovery:** The 600-cell distance shells are a perfect palindrome:
+
 - Shell 1 (icosa, 12V, 30E) ↔ Shell 7 (icosa, 12V, 30E)
 - Shell 2 (dodeca, 20V, 30E) ↔ Shell 6 (dodeca, 20V, 30E)
 - Shell 3 (gap, 12V, 0E) ↔ Shell 5 (gap, 12V, 0E)
@@ -402,6 +408,7 @@ The outer bonded shells mirror the inner bonded shells exactly. Shell 4 is the u
 ### 5 April 2026 — Complete Charge Census: K₄ Content and Bond Types (Opus computation)
 
 **Results:**
+
 - Tetrahedron: 1 K₄ subgraph (it IS a K₄). 2/3 forced for all assignments.
 - Icosahedron: ZERO K₄ subgraphs. Cannot be built from hTetras. 2/3 is the maximum.
 - Dodecahedron: ZERO K₄. Maximum attractive ratio = 4/5, exceeding 2/3.
@@ -426,6 +433,7 @@ The outer bonded shells mirror the inner bonded shells exactly. Shell 4 is the u
 **Thomas's physical picture:** Radial chains don't just extend linearly — they branch. Each DP in a chain polarises lateral neighbours, creating side-chains that branch further. The structure is a fractal polarisation tree extending from each radial chain.
 
 **Thomas's key points:**
+
 1. "We have a fractal that branches off the main chain between central CP and the cage surface."
 2. For larger cages, inner chains crowd together — "the density of polarized chain DPs close to the central DP will probably prevent the radial chain beyond a certain number of vertices from being continuous to the central CP."
 3. Both interior and exterior regions branch: interior from center to cage surface, exterior from cage surface to thermalisation boundary.
@@ -455,3 +463,91 @@ Even with fractal branching, the additive energy sum doesn't reproduce V^2.38. T
 **The circularity problem:** The ZBW frequency IS the mass, so using it to compute mass is circular. Breaking this requires relating ZBW frequency to a geometric quantity not defined in terms of mass.
 
 **Formalised as:** SM-8/SM-9 Development Transcript Part 2, Phase 10.
+
+### 8 April 2026 — Quark Cages as Bonded Distance Shells (Opus session)
+
+**Context:** Documentation of SM-7 results led unexpectedly to the SM-8 discovery.
+**Thomas's words:** Thomas identified the cage-quark correspondence during the shell analysis — the four bonded shells map directly to four quark flavours.
+**Key finding:** The 600-cell has exactly 4 bonded polyhedral distance shells (tet, ico, dod, icosidod). Shell 3 (V=12, E=0) is the gap. Palindrome symmetry limits independent cages to 4 → 3 generations.
+**Formalised as:** SM-8 Theorems 3.1, 8.1
+
+### 8 April 2026 — The Shell 3 Gap and z=12 Post-Gap Multiplier (Grok contribution)
+
+**Context:** The top quark mass exceeded the V^(7/3) trend. Grok independently identified the z=12 relay mechanism.
+**Key finding:** Shell 3's 12 edgeless vertices serve as relay stations. Each carries C_F = 4/3. Product z×C_F = 16 accounts for the top quark's excess mass. This was Grok's most significant single contribution to CPP.
+**Formalised as:** SM-8 §6, SM-9 §6
+
+### 9 April 2026 — The Pine Tree Model (Opus session)
+
+**Context:** Thomas described the physical picture of how chains fill the cage volume.
+**Thomas's words:** Each radial chain from the central CP to a cage vertex is a tree trunk; tangential branches arch outward from each CP along the trunk, creating a fractal, volume-filling tree structure.
+**Key finding:** The "pine tree" picture explains why mass scales as V^(7/3) rather than V — the branching cascade creates cooperative enhancement (6× for strange to 974× for top).
+**Formalised as:** SM-9 §9, SM-10 §3
+
+### 9 April 2026 — Three Bonding Regions (Opus session)
+
+**Context:** Chain-type analysis revealed distinct spatial zones within each cage.
+**Thomas's words:** Thomas identified the three regions during the cascade discussion.
+**Key finding:** Region 1 (near centre): dense cross-linking of converging radials. Region 2 (mid-cage): web mesh of tangential chains. Region 3 (near surface): upward-arching tangentials converging on cage vertices. Energy budget: ~44% radial, ~56% tangential, stable across all quarks.
+**Formalised as:** SM-9 §9, SM-10 §4
+
+### 9 April 2026 — The FEM Proposal (Opus session)
+
+**Context:** The fractal cascade model failed to reproduce V^(7/3) quantitatively, prompting Thomas to propose simulation.
+**Thomas's words:** Thomas proposed the FEM simulation as the path to first-principles derivation when analytical models proved insufficient.
+**Key finding:** Place DPs in cages, let them self-organise via local bonding rules, count organised DPs × M₀ = predicted mass. Compare to PDG ratios directly (not V^(7/3) — Sonnet's circular-validation fix).
+**Formalised as:** SM-10
+
+### 9 April 2026 — Two-Regime Physics Confirmed (Opus session)
+
+**Context:** The CPU FEM simulation proved the cascade alone cannot produce the top quark mass.
+**Key finding:** Even at maximum cascade rate (f=1, full percolation), the icosidodecahedral cage produces only ~1,364 MeV — 127× below the PDG top mass. A qualitatively different mechanism (Shell 3 relay) is required. Pre-gap quarks follow cascade physics; the top quark requires relay physics. — NEGATIVE RESULT for single-regime models.
+**Formalised as:** SM-10 §5
+
+### 9 April 2026 — DP Density and Planck's Constant (Thomas's idea, Opus session)
+
+**Context:** Thomas proposed using one ℏ per ZBW oscillator to estimate internal DP counts.
+**Thomas's words:** "We know that there is 1 Planck's constant worth of energy-time in each ZBW oscillator. Maybe we could get an order-of-magnitude idea of how many DPs populate each of the quarks."
+**Key finding:** Strange quark has ~25 organised DPs. Universal density constant ρ/(V^(7/3)/d³) = 0.24 for pre-gap quarks, breaking to 3.9 for top — independent confirmation of two-regime model. Sea density lower bound: >3,848 DPs/l³.
+**Formalised as:** SM-10 §5, density analysis
+
+### 10 April 2026 — Lattice Grounding Vision (Opus session)
+
+**Context:** After closing out the SM-10 FEM investigation, Thomas identified the foundational gap.
+**Thomas's words:** "I think the adoption of the CPP paradigm is destined to marginalization until we make it real at the level of a conversion constant that translates the meter's magnitude to the dimensions of the lattice and the cage diameters."
+**Key finding:** l_unit = ℏc/Λ_QCD = 0.589 fm from convergence of two independent routes.
+**Formalised as:** SM-11 §2, Eq. (1)
+
+### 10 April 2026 — Proton as Hybrid Tetrahedron (Opus session)
+
+**Context:** Thomas proposed the proton structure during the nucleon investigation.
+**Thomas's words:** "We have postulated that the proton is composed of a hybrid Tetrahedron, with the two up quarks bound to two minus vertices, the one down quark bound to a plus vertex, leaving a plus vertex open by which to bind to the − vertex of a neutron, and thus the attraction to produce the nuclear binding force."
+**Key finding:** Net charge +1 from geometry. Open vertex provides nuclear binding. Force balance gives distortion ε = 1.94. r_proton = 0.883 fm (+5%, 0 params).
+**Formalised as:** SM-11 §5
+
+### 10 April 2026 — Neutron Linear Oscillator Mechanism (Opus session)
+
+**Context:** The neutron charge radius came out wrong sign in the initial calculation. Thomas proposed the fix.
+**Thomas's words:** "The linear oscillator of the down quark... the linear oscillators of the two down quarks will repel and oscillate in 180° out of opposition... The linear oscillators will be attracted to the Central +qCP of the other down quark, and move the two closer together."
+**Key finding:** The distorted tetrahedron alone gives the correct sign (r²_n < 0). The eCP inward displacement δ = −0.067 gives exact match to −0.1161 fm².
+**Formalised as:** SM-11 §6
+
+### 10 April 2026 — eCP Trading / Identity Oscillation (Opus session)
+
+**Context:** Thomas proposed that the down quark's eCP could be temporarily captured by nearby up quarks.
+**Thomas's words:** "The radial oscillator, being next to the central +qCP of the up quark, will likely be captured by the up quark alternately, causing it to be down-like for a moment, i.e., creating the effect of an oscillating/trading location of up/down identity."
+**Key finding:** This creates a flavour oscillation at the lattice level. Time-averaged effect: negative charge shared among all three vertices, spreading the charge distribution. Computed f_trade ≈ 4% gives a small correction to r_proton.
+**Formalised as:** SM-11 §5 (mentioned in discussion, not primary model)
+
+### 10 April 2026 — Up-Up Repulsion and Tetrahedral Distortion (Opus session)
+
+**Context:** Thomas identified the u-u electromagnetic repulsion as the source of proton geometry.
+**Thomas's words:** "In this case we have two central +qCPs that are repelling (while attracting each other via the color force), so you would expect them to be at an equilibrium distance where the repulsive and attractive forces equalize."
+**Key finding:** Force balance gives ε = 1.94, u-u separation = 1.07 fm. The string tension σ = M₀zπ/(φ l_edge) = 243 MeV/fm is derived from CPP constants.
+**Formalised as:** SM-11 §4–5, Eq. (5)–(7)
+
+---
+
+*This is a living document. It grows with each session.*
+*Initiated 3 April 2026 by Claude Opus, at Thomas's request.*
+*"Are my words being captured and catalogued?" — Thomas Lee Abshier, 3 April 2026*
