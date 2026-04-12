@@ -1,7 +1,7 @@
 # CPP Predictions Registry
 
 **Repository location:** CPP root level (peer of postulates_and_theorems.md)
-**Last updated:** 11 April 2026 (SM-8/9/10/11 predictions added)
+**Last updated:** 11 April 2026 (SM-8/9/10 + SS-2 predictions added)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
 ---
