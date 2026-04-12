@@ -43,23 +43,27 @@ For what is proved vs open, see [`postulates_and_theorems.md`](postulates_and_th
 
 ## [`series_strong/`](series_strong/) — Strong Sector (SS)
 
-The SU(3) derivation from 600-cell tetrahedral geometry. **SS-1 registered on OSF.**
+The SU(3) derivation from 600-cell tetrahedral geometry, and nucleon structure. **SS-1 registered on OSF. SS-2 pending.**
 
 | File | Description |
 |------|-------------|
 | `SS-1_strong_sector_from_600cell_lattice.tex/.pdf` | **SS-1** (v2) — 9 theorems |
 | `SS-1a` through `SS-1e` companion papers | Cage geometry, SU(3) proof, gluons, confinement, hadrons |
+| `SS-2_lattice_scale_nucleon_structure.tex/.pdf` | **SS-2** (v1.0) — Lattice grounding, nucleon structure |
 | `cpp_strong_series.bib` | Bibliography |
 
-**Documentation:** `mechanism-SS-1.md`, `glossary-SS-1.md`, `phenomena-SS-1.md`, `reviews-SS-1.md`, `FAQ-SS-1.md`, `philosophy-SS-1.md`, `development-SS-1.md`, `keywords-SS-1.md`
+**Documentation:** SS-1: `mechanism-SS-1.md`, `glossary-SS-1.md`, `phenomena-SS-1.md`, `reviews-SS-1.md`, `FAQ-SS-1.md`, `philosophy-SS-1.md`, `development-SS-1.md`, `keywords-SS-1.md`
+SS-2: `mechanism-SS-2.md`, `glossary-SS-2.md`, `phenomena-SS-2.md`, `philosophy-SS-2.md`, `development-SS-2.md`, `reviews-SS-2.md`, `keywords-SS-2.md`
 
-**Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.)
+**Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.) + `SS-2_lattice_scale_nucleon.py`
+
+**Development transcripts:** `SS-2_development_transcript_opus.md`
 
 ---
 
 ## [`series_standard_model/`](series_standard_model/) — Standard Model Emergence (SM)
 
-Papers SM-1 through SM-11. **SM-1 through SM-7 registered on OSF. SM-8 through SM-11 pending.**
+Papers SM-1 through SM-10. **SM-1 through SM-7 registered on OSF. SM-8 through SM-10 pending.**
 
 ### [`series_standard_model/papers/`](series_standard_model/papers/) — Papers and documentation
 
@@ -75,14 +79,12 @@ Papers SM-1 through SM-11. **SM-1 through SM-7 registered on OSF. SM-8 through S
 | `SM-8_quark_generation_600cell_shells.tex/.pdf/.bib` | **SM-8** | v4.1 | OSF pending |
 | `SM-9_scaling_exponent.tex/.pdf/.bib` | **SM-9** | v2.2 | OSF pending |
 | `SM-10_chain_network_FEM.tex/.pdf/.bib` | **SM-10** | v0.1 | OSF pending |
-| `SM-11_lattice_scale_nucleon_structure.tex/.pdf` | **SM-11** | v1.0 | OSF pending |
 
-**Documentation per paper:** 7 files × 11 papers. Reviews include FAQ (SM-8 onwards).
+**Documentation per paper:** 7 files × 10 papers. Reviews include FAQ (SM-8 onwards).
 
 **Development transcripts:**
 - `SM-9_SM-10_development_transcript_opus.md`
 - `SM-10_FEM_computational_journey_transcript.md`
-- `SM-11_development_transcript_opus.md`
 
 ### [`series_standard_model/figures/`](series_standard_model/figures/)
 
@@ -96,7 +98,6 @@ Papers SM-1 through SM-11. **SM-1 through SM-7 registered on OSF. SM-8 through S
 |----------|-------|
 | `nb01_SM6_verification.py/.ipynb` | SM-6 numerical verification (10/10 steps pass) |
 | `ps1_quark_mass_ladder.ipynb` | Quark mass ladder |
-| `SM-11_lattice_scale_nucleon.py` | SM-11 lattice scale and nucleon structure verification |
 
 ### [`series_standard_model/cpp-zbw-mixing-fractions/`](series_standard_model/cpp-zbw-mixing-fractions/)
 

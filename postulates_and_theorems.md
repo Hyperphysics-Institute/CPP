@@ -172,7 +172,7 @@ Derived from AXIM-1–AXIM-6 and the 600-cell lattice geometry. The QM series pr
 | **CONJ-EW-2** | sin²θ_W ≈ 3/13 = K₃_vertices/(z+1) = 0.23077 | Alternative formula: numerator = 3 cage base vertices of K₃; denominator = 13 = z+1 = closed neighbourhood of the 600-cell. Agreement: 0.19%. Brackets PDG from below (CONJ-EW-1 brackets from above). | Show whether 3/13 arises from a distinct physical mechanism or is a numerical coincidence | OP-EW-3 |
 | **CONJ-SM9-1** | α = 7/3 from V² × V^(1/3) | The exponent arises exactly from pair counting (V²) times linear cage dimension (V^(1/3)). Partially derived; full proof pending SM-10 FEM. | Full rigorous derivation from DP dynamics | OPEN-P-SM-cage-1 |
 | **CONJ-SM9-2** | EW feedback ε ≈ α_geom/z² ≈ 0.003 | Correction to scaling exponent from electroweak sector. Conjectured unification signal. | Confirmation awaits SM-10 FEM | — |
-| **CONJ-SM-11-1** | String tension σ = M₀zπ/(φ l_edge) = 243 MeV/fm | Physically motivated (z bonds × π orbit × 1/φ attenuation) but not rigorously derived from lattice mode spectrum. | Derive from SS-series DP-DP interaction | SM-11 §4 |
+| **CONJ-SS-2-1** | String tension σ = M₀zπ/(φ l_edge) = 243 MeV/fm | Physically motivated (z bonds × π orbit × 1/φ attenuation) but not rigorously derived from lattice mode spectrum. | Derive from SS-series DP-DP interaction | SS-2 §4 |
 
 ---
 

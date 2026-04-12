@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 11 April 2026 (after SM-11)
+**Last updated:** 11 April 2026 (after SS-2)
 
 ---
 
@@ -28,7 +28,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses; 3-generation theorem; RMS 2.1% | v4.1 |
 | SM-9 | The Quark Mass Scaling Exponent | V^(7/3) derivation; Symmetry Degeneracy Theorem | v2.2 |
 | SM-10 | First-Principles Quark Mass from FEM Chain Network | Cascade mechanism; two-regime physics; organised DP density | v0.1 |
-| SM-11 | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) | v1.0 |
+| SS-2 | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) | v1.0 |
 
 ---
 
@@ -51,15 +51,15 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | m_c (zero-param) | m_e(z/φ)V^(7/3) | 1,249 MeV | 1,270 | −1.6% | 0 | SM-8 |
 | m_b (zero-param) | m_e(z/φ)V^(7/3) | 4,115 MeV | 4,180 | −1.6% | 0 | SM-8 |
 | m_t (zero-param) | m_e(z/φ)V^(7/3)×16 | 169,571 MeV | 172,760 | −1.8% | 0 | SM-8 |
-| r_proton | Distorted tet + ZBW smearing | 0.883 fm | 0.841 | +5.0% | 0 | SM-11 |
-| μ_proton | Constituent quark model | 2.789 μ_N | 2.793 | −0.1% | 0 | SM-11 |
-| α_s(m_H) | Running from α_geom=1/√5 | 0.1132 | 0.1130 | +0.2% | 0 | SM-11 |
+| r_proton | Distorted tet + ZBW smearing | 0.883 fm | 0.841 | +5.0% | 0 | SS-2 |
+| μ_proton | Constituent quark model | 2.789 μ_N | 2.793 | −0.1% | 0 | SS-2 |
+| α_s(m_H) | Running from α_geom=1/√5 | 0.1132 | 0.1130 | +0.2% | 0 | SS-2 |
 
 **Net scorecard:** 24+ independent predictions from 9 axioms and 2 calibrations. SM requires 19+ parameters for the same quantities.
 
 ---
 
-## The Axiom Set (Post–SM-11)
+## The Axiom Set (Post–SS-2)
 
 | ID | Name | Statement (short) |
 |----|------|--------------------|
@@ -103,7 +103,7 @@ Zero-Parameter Quark Mass Formula (SM-8 v4.1 / SM-9 v2.2):
   M₀ = m_e z/φ = 3.790 MeV, V ∈ {4, 12, 20, 30}
   z × C_F = 16 (post-gap multiplier), RMS = 2.1%
 
-Lattice-Scale Grounding (SM-11):
+Lattice-Scale Grounding (SS-2):
   l_unit = ℏc/Λ_QCD = 0.589 fm
   σ = M₀zπ/(φ l_edge) = 243 MeV/fm [CONJ]
   r_p = 0.883 fm (distorted tet + ZBW, ε = 1.94)
@@ -145,14 +145,14 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 |----|---------|--------|
 | OPEN-P-SM-cage-1 | Rigorous derivation of α = 7/3 from cage geometry | PARTIALLY RESOLVED — SM-9 pair decomposition; FEM (SM-10) pending |
 | OPEN-P-SM-10-FEM | First-principles quark mass from FEM chain network simulation | IN PROGRESS — Phase 1-2 (CPU) complete; Phase 3 (GPU) pending. **#1 priority** |
-| OPEN-P-SD-lattice-scale | Lattice spacing and physical scale | PARTIALLY RESOLVED — SM-11: l_unit = 0.589 fm; σ derivation open |
+| OPEN-P-SD-lattice-scale | Lattice spacing and physical scale | PARTIALLY RESOLVED — SS-2: l_unit = 0.589 fm; σ derivation open |
 | OPEN-P-SM-7-1 | Running of α_s from 0.386 to α_s(M_Z)=0.118 | Connection to SS-1 β₀=7 needed |
 | OPEN-P-SM-7-2 | Rigorous proof of face saturation from Green's function | Projector lemma provides framework |
 | OPEN-P-SM-7-5 | Length-4 cell modes — Higgs? Gravity? | Unexplored |
 | — | Light quark masses (u,d,s) | Chiral condensate dominates; new axiom likely needed |
 | — | W/Z/Higgs boson masses | EW series has structural models; need quantification |
-| — | Derive σ from lattice mode spectrum | Would promote CONJ-SM-11-1 to theorem |
-| — | SM-12: Deuteron binding from open-vertex model | Proposed — uses SM-11 nucleon structures |
+| — | Derive σ from lattice mode spectrum | Would promote CONJ-SS-2-1 to theorem |
+| — | SM-12: Deuteron binding from open-vertex model | Proposed — uses SS-2 nucleon structures |
 
 ---
 
@@ -160,20 +160,20 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 
 | Series | Papers | Compliance | PDFs | Doc suite | README | Keywords |
 |--------|--------|-----------|------|-----------|--------|----------|
-| SM (1-11) | 11 | ✅ | ✅ | ✅ (SM-1–11) | ✅ | ✅ |
+| SM (1-10) | 10 | ✅ | ✅ | ✅ (SM-1–10) | ✅ | ✅ |
+| SS (1-2) | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | EW (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | QM (1-6) | 6 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SR-1 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SS-1 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SD (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**27 papers total. SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SM-11 v1.0 pending OSF registration.**
+**27 papers total. SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SS-2 v1.0 pending OSF registration.**
 
 ---
 
 ## Pending Tasks (not urgent)
 
-- [ ] Register SM-8, SM-9, SM-10, SM-11 on OSF
+- [ ] Register SM-8, SM-9, SM-10, SS-2 on OSF
 - [ ] Curate SM-8/9/10/11 development transcripts
 - [ ] Generate SM-8/9 verification notebooks (retroactive)
 - [ ] Regenerate site-wide cpp_references.bib from all local .bib files

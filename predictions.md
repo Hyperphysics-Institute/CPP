@@ -59,11 +59,11 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-22 | Attractive fraction = 2/3 (all cages) | 2/3 | — | Structural | SM-8 v4.1 |
 | PRED-C-23 | Charge census 1:1:2:2 | exact | — | Structural | SM-8 v4.1 |
 | PRED-C-24 | Top quark non-hadronization | Shell 4 cage too open | observed | Qualitative | SM-8 v4.1 |
-| PRED-C-25 | r_proton | 0.883 fm | 0.841 fm | +5.0% | SM-11 |
-| PRED-C-26 | μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SM-11 |
-| PRED-C-27 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SM-11 |
-| PRED-C-28 | Λ_QCD | 335 MeV | ~330 MeV | +2% | SM-11 |
-| PRED-C-29 | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SM-11 |
+| PRED-C-25 | r_proton | 0.883 fm | 0.841 fm | +5.0% | SS-2 |
+| PRED-C-26 | μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SS-2 |
+| PRED-C-27 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SS-2 |
+| PRED-C-28 | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
+| PRED-C-29 | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
 
 ---
 
@@ -174,7 +174,7 @@ Quick reference map of which paper contributes which predictions.
 | Propositions | PRED-O-3, PRED-O-4, PRED-O-11, PRED-O-12, PRED-Q-2 to PRED-Q-6 |
 | SM-8 | PRED-C-17 to PRED-C-24 (zero-param quarks, 3-gen, 2/3 fraction, charge census, non-hadronization) |
 | SM-9 | Symmetry Degeneracy Theorem (mathematical, not a prediction per se) |
-| SM-11 | PRED-C-25 to PRED-C-29 (r_proton, μ_proton, α_s(m_H), Λ_QCD, μ_neutron) |
+| SS-2 | PRED-C-25 to PRED-C-29 (r_proton, μ_proton, α_s(m_H), Λ_QCD, μ_neutron) |
 
 ---
 

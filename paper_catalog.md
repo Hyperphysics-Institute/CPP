@@ -34,13 +34,14 @@
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
 | **SS-1** | Paper | The Strong Sector from the 600-Cell Lattice | `series_strong/SS-1_strong_sector_from_600cell_lattice.tex` (v2) | **Submission-ready** |
+| **SS-2** | Paper | Lattice-Scale Grounding and Nucleon Structure | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` (v1.0) | **OSF pending** |
 | SS-1a | Companion | Cage Geometry and Eigenvalue Bridge | `series_strong/SS-1a_cage_geometry_eigenvalue_bridge.tex` | Supporting |
 | SS-1b | Companion | SU(3) Algebra Exact Proof | `series_strong/SS-1b_su3_algebra_exact_proof.tex` | Supporting |
 | SS-1c | Companion | Eight Gluons as hDP Structures | `series_strong/SS-1c_eight_gluons_hdp_structures.tex` | Supporting |
 | SS-1d | Companion | Confinement and Beta Function | `series_strong/SS-1d_confinement_beta_function.tex` | Supporting |
 | SS-1e | Companion | Hadron Spectrum | `series_strong/SS-1e_hadron_spectrum.tex` | Supporting |
 
-**Documentation:** 6 files (mechanism, glossary, phenomena, reviews, philosophy, development) complete.
+**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords).
 
 ---
 
@@ -60,9 +61,8 @@
 | **SM-8** | Paper | Quark Generation Structure from 600-Cell Distance Shells | `series_standard_model/papers/SM-8_quark_generation_600cell_shells.tex` (v4.1) | **OSF pending** |
 | **SM-9** | Paper | The Quark Mass Scaling Exponent | `series_standard_model/papers/SM-9_scaling_exponent.tex` (v2.2) | **OSF pending** |
 | **SM-10** | Paper | First-Principles Quark Mass from FEM Chain Network Simulation | `series_standard_model/papers/SM-10_chain_network_FEM.tex` (v0.1) | **OSF pending** |
-| **SM-11** | Paper | Lattice-Scale Grounding and Nucleon Structure | `series_standard_model/papers/SM-11_lattice_scale_nucleon_structure.tex` (v1.0) | **OSF pending** |
 
-**Documentation:** 7 files per paper (SM-1 through SM-11) complete.
+**Documentation:** 7 files per paper (SM-1 through SM-10) complete.
 
 ---
 
@@ -128,7 +128,7 @@
 
 | Category | Count |
 |----------|-------|
-| **Submission-ready / registered papers** | **13 (SS-1, SM-1 through SM-11, SR-1)** |
+| **Submission-ready / registered papers** | **13 (SS-1, SS-2, SM-1 through SM-10, SR-1)** |
 | Submission-ready Tech Notes | 1 (SM-TN-1) |
 | Tech Notes needing correction | 1 (SM-TN-2) |
 | Papers needing consolidation | 5 (EW series) |

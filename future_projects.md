@@ -15,12 +15,12 @@
 **Dependencies:** SM-8 v4.1 (cage hierarchy), SM-9 v2.2 (pair model), SM-10 v0.1 (proposal), Isak (GPU infrastructure), Claude Code
 
 ### Project 1b: SM-12 — Deuteron Binding from Open-Vertex Model
-**Status:** Proposed — uses SM-11 proton/neutron structures
+**Status:** Proposed — uses SS-2 proton/neutron structures
 **Goal:** Predict deuteron binding energy from open-vertex nuclear force mechanism
-**Dependencies:** SM-11
+**Dependencies:** SS-2
 
 ### Project 1c: Derive σ from Lattice Mode Spectrum
-**Status:** Open — would promote CONJ-SM-11-1 to theorem
+**Status:** Open — would promote CONJ-SS-2-1 to theorem
 **Goal:** Rigorous derivation of string tension from DP-DP interaction potential
 **Dependencies:** SS-series
 
@@ -75,12 +75,12 @@
 ### Project 8b: Y-Junction Three-Body Proton Model
 **Status:** Proposed
 **Goal:** Test Y-shaped string junction vs tetrahedral cell for proton structure. May improve r_proton from +5% error.
-**Dependencies:** SM-11
+**Dependencies:** SS-2
 
 ### Project 8c: Other Hadron Predictions (Δ, mesons)
 **Status:** Proposed
 **Goal:** Extend nucleon model to Δ baryons, π/K mesons. Tests universality of tetrahedral cage model.
-**Dependencies:** SM-11
+**Dependencies:** SS-2
 
 ---
 
@@ -124,7 +124,7 @@
 - [x] SM-8 v4.1: Zero-parameter quark mass formula (9 April 2026)
 - [x] SM-9 v2.2: Scaling exponent derivation (9 April 2026)
 - [x] SM-10 v0.1: FEM chain network proposal (9 April 2026)
-- [x] SM-11 v1.0: Lattice-scale grounding + nucleon structure (10 April 2026)
+- [x] SS-2 v1.0: Lattice-scale grounding + nucleon structure (10 April 2026)
 - [x] Metafile reconciliation: bootup, operating_system, founders_vision, CPP_the_theory (11 April 2026)
 
 ---

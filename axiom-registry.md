@@ -20,7 +20,7 @@ This registry tracks both sides of that ledger.
 
 ---
 
-## The Axiom Set (Post–SM-11 Consolidation)
+## The Axiom Set (Post–SS-2 Consolidation)
 
 ### Tier 1: Ontological Primitives (the "what exists" axioms)
 
@@ -87,15 +87,15 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 
 ---
 
-### Tier 6: Lattice-Scale Grounding (SM-11)
+### Tier 6: Lattice-Scale Grounding (SS-2)
 
 | ID | Axiom | Statement | First used | Papers |
 |---|---|---|---|---|
-| **A11** | Lattice-Scale Grounding | The conversion between 600-cell lattice units and physical length is fixed by the convergence of the pion decay constant (Pagels-Stokar) and the running of α_geom = 1/√5 to α_s(m_Z), yielding l_unit = ℏc/Λ_QCD ≈ 0.589 fm. | SM-11 | SM-11 |
+| **A11** | Lattice-Scale Grounding | The conversion between 600-cell lattice units and physical length is fixed by the convergence of the pion decay constant (Pagels-Stokar) and the running of α_geom = 1/√5 to α_s(m_Z), yielding l_unit = ℏc/Λ_QCD ≈ 0.589 fm. | SS-2 | SS-2 |
 
 ---
 
-## Axiom Count Summary (Post–SM-11)
+## Axiom Count Summary (Post–SS-2)
 
 | Tier | Axioms | Count |
 |---|---|---|
@@ -109,7 +109,7 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 
 **Previous count (pre–SM-8):** 10 (A1–A10)
 **Post–SM-8 (A6' adopted):** 7
-**Post–SM-11 (A8', A11 added):** 9
+**Post–SS-2 (A8', A11 added):** 9
 **Reduction from original:** A6+A7+A8+A9 → A6' (4 axioms → 1); net change −3+2 = −1
 
 **Potential further reductions:**
@@ -147,12 +147,12 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | **20** | **m_t (zero-param)** | **169,571 MeV** | **172,760** | **−1.8%** | **A2, A8'** | **SM-8 v4.1** |
 | **21** | **Charge census 1:1:2:2** | **exact** | **—** | **structural** | **A2** | **SM-8 v4.1** |
 | **22** | **Symmetry degeneracy Σsin²(θ/2)=V²/4** | **exact** | **—** | **theorem** | **A2** | **SM-9 v2.2** |
-| **23** | **r_proton** | **0.883 fm** | **0.841** | **+5.0%** | **A11** | **SM-11** |
-| **24** | **μ_proton** | **2.789 μ_N** | **2.793** | **−0.1%** | **A11** | **SM-11** |
-| **25** | **α_s(m_H)** | **0.1132** | **0.1130** | **+0.2%** | **A11** | **SM-11** |
-| **26** | **Λ_QCD** | **335 MeV** | **~330** | **+2%** | **A11** | **SM-11** |
-| **27** | **μ_neutron** | **−1.847 μ_N** | **−1.913** | **−3.4%** | **A11** | **SM-11** |
-| **28** | **r²_neutron** | **−0.1161 fm²** | **−0.1161** | **exact** | **A11+δ** | **SM-11** |
+| **23** | **r_proton** | **0.883 fm** | **0.841** | **+5.0%** | **A11** | **SS-2** |
+| **24** | **μ_proton** | **2.789 μ_N** | **2.793** | **−0.1%** | **A11** | **SS-2** |
+| **25** | **α_s(m_H)** | **0.1132** | **0.1130** | **+0.2%** | **A11** | **SS-2** |
+| **26** | **Λ_QCD** | **335 MeV** | **~330** | **+2%** | **A11** | **SS-2** |
+| **27** | **μ_neutron** | **−1.847 μ_N** | **−1.913** | **−3.4%** | **A11** | **SS-2** |
+| **28** | **r²_neutron** | **−0.1161 fm²** | **−0.1161** | **exact** | **A11+δ** | **SS-2** |
 
 **Net predictions (subtracting calibrations):** 24+
 **Axiom-to-prediction ratio:** 9/24 ≈ **0.38**
@@ -184,10 +184,10 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | **SM-8 (+ A6' consolidation)** | **7+1=8** | **−3 (A6' net) +1 (A8')** | **8** | **∞** |
 | **SM-9** | **8** | **0** | **1 (degeneracy theorem)** | **—** |
 | **SM-10** | **8** | **0** | **0 (proposal)** | **—** |
-| **SM-11** | **9** | **+1 (A11)** | **6** | **6.0** |
+| **SS-2** | **9** | **+1 (A11)** | **6** | **6.0** |
 | **Total** | **9** | — | **28+** | **3.1 avg** |
 
-**Trend:** The programme added 15 predictions from SM-8 through SM-11 while increasing the axiom count by only 2 (net). The ratio improved from 1.1 to 0.38. Each new axiom produces ~2.6 predictions on average.
+**Trend:** The programme added 15 predictions from SM-8 through SM-10 and SS-2 while increasing the axiom count by only 2 (net). The ratio improved from 1.1 to 0.38. Each new axiom produces ~2.6 predictions on average.
 
 ---
 
@@ -211,7 +211,7 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 |---|---|---|
 | CONJ-SM-9-1 | α = 3 − 1/φ ≈ 2.382 (scaling exponent) | 0.27% match, not derived |
 | CONJ-SM-9-2 | EW feedback ε ≈ α_geom/z² ≈ 0.003 in scaling exponent | Conjectured unification signal |
-| CONJ-SM-11-1 | σ = M₀zπ/(φ l_edge) = 243 MeV/fm (string tension) | Physically motivated, not rigorously derived |
+| CONJ-SS-2-1 | σ = M₀zπ/(φ l_edge) = 243 MeV/fm (string tension) | Physically motivated, not rigorously derived |
 | CONJ-red-A5 | A5 → A2 (efficiency from geometry) | Plausible, needs proof |
 | CONJ-red-A10 | A10 → A2 + A6' (colour sign from energy minimisation) | Speculative |
 | CONJ-cage-Koide | Cage 2/3 fraction = Koide K = 2/3 (same origin) | Tantalising, unexplored |
@@ -235,5 +235,5 @@ The goal: **axiom count stabilises; prediction count grows.**
 
 *Document created 2 April 2026 by Claude Opus.*
 *Updated 8 April 2026: merged root and series copies, added SM-8 consolidation (A6' replacing A6-A9), added SM-8/SM-9 predictions, updated counts.*
-*Updated 11 April 2026: added A8' (Cage-Volume Scaling), A11 (Lattice-Scale Grounding), SM-8/9/11 predictions (15 new), CONJ-SM-9-2 and CONJ-SM-11-1, growth table through SM-11.*
+*Updated 11 April 2026: added A8' (Cage-Volume Scaling), A11 (Lattice-Scale Grounding), SM-8/9 and SS-2 predictions (15 new), CONJ-SM-9-2 and CONJ-SS-2-1, growth table through SS-2.*
 *The duplicate at `series_standard_model/papers/axiom-registry.md` should be deleted and replaced with a note redirecting to this file.*

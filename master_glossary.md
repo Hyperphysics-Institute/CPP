@@ -243,29 +243,29 @@ The total lattice mode capacity — a topological invariant. This is the denomin
 
 **Chain-type decomposition** — Partition of quark mass into radial (Type 1), tangential (Type 2), and surface radial (Type 3) chain contributions. [First appeared: SM-9 v2.2]
 
-**Confinement radius** — The effective radius within which quark colour charge is confined by cage geometry. [First appeared: SM-11]
+**Confinement radius** — The effective radius within which quark colour charge is confined by cage geometry. [First appeared: SS-2]
 
-**Constituent quark mass** — The effective mass of a quark including its surrounding DP chain environment, as opposed to the bare current quark mass. [First appeared: SM-11]
+**Constituent quark mass** — The effective mass of a quark including its surrounding DP chain environment, as opposed to the bare current quark mass. [First appeared: SS-2]
 
 **Cooperative enhancement** — The factor by which each chain link's energy exceeds the bare DP energy M₀, due to mutual SSV reinforcement. Ranges from 6× (strange) to 974× (top). [First appeared: SM-9 v2.2]
 
 **Coordination tunneling** — Mechanism by which post-gap chains traverse Shell 3 via the z=12 coordination bonds of the ambient lattice, each carrying C_F=4/3. [First appeared: SM-8 v4.1]
 
-**Distortion parameter (ε)** — The ratio by which same-charge quark separation exceeds the undistorted tetrahedral edge length due to electromagnetic repulsion competing with colour confinement. Proton: ε = 1.94. [First appeared: SM-11]
+**Distortion parameter (ε)** — The ratio by which same-charge quark separation exceeds the undistorted tetrahedral edge length due to electromagnetic repulsion competing with colour confinement. Proton: ε = 1.94. [First appeared: SS-2]
 
-**eCP displacement (δ)** — The fractional inward displacement of the down quark's captured electron CP due to linear oscillator dynamics. Neutron: δ = −0.067. [First appeared: SM-11]
+**eCP displacement (δ)** — The fractional inward displacement of the down quark's captured electron CP due to linear oscillator dynamics. Neutron: δ = −0.067. [First appeared: SS-2]
 
-**Force balance** — The equilibrium condition where colour confinement (attractive) balances electromagnetic repulsion between same-charge quarks in a nucleon. [First appeared: SM-11]
+**Force balance** — The equilibrium condition where colour confinement (attractive) balances electromagnetic repulsion between same-charge quarks in a nucleon. [First appeared: SS-2]
 
 **Impedance boundary** — The cage surface acts as an acoustic impedance mismatch between organised chains inside and disordered Sea outside. [First appeared: SM-8 v4.1]
 
-**Lattice edge** — The 600-cell edge length, equal to 1/φ of the circumradius. Physical value: l_edge = 0.364 fm. [First appeared: SM-11]
+**Lattice edge** — The 600-cell edge length, equal to 1/φ of the circumradius. Physical value: l_edge = 0.364 fm. [First appeared: SS-2]
 
-**Lattice unit** — The 600-cell circumradius. Physical value: l_unit = ℏc/Λ_QCD = 0.589 fm. [First appeared: SM-11]
+**Lattice unit** — The 600-cell circumradius. Physical value: l_unit = ℏc/Λ_QCD = 0.589 fm. [First appeared: SS-2]
 
-**Linear oscillator** — The −eCP captured within a down-type quark, oscillating along the radial axis against the central +qCP. Creates the down quark's ZBW mass contribution. [First appeared: SM-11]
+**Linear oscillator** — The −eCP captured within a down-type quark, oscillating along the radial axis against the central +qCP. Creates the down quark's ZBW mass contribution. [First appeared: SS-2]
 
-**Open vertex** — The fourth vertex of the nucleon's hybrid tetrahedron, not occupied by a quark. Provides the binding site for nuclear forces. [First appeared: SM-11]
+**Open vertex** — The fourth vertex of the nucleon's hybrid tetrahedron, not occupied by a quark. Provides the binding site for nuclear forces. [First appeared: SS-2]
 
 **Organised DP** — A Dipole Pair recruited from the Sea into the chain network. Mass = N_organised × M₀. Central observable of the FEM simulation. [First appeared: SM-10 v0.1]
 
@@ -279,7 +279,7 @@ The total lattice mode capacity — a topological invariant. This is the denomin
 
 **Shell 3 relay mechanism** — Thomas's proposed mechanism for the top quark's ×16 enhancement: DPs dissociate to occupy Shell 3 positions, forming a synthetic icosahedral cage. Each of 12 relay stations radiates to Shell 4, creating a criss-cross web that multiplies the organised DP count. [First appeared: SM-10 v0.1]
 
-**String tension (σ)** — The confining force per unit length between quarks. CPP value: σ = M₀zπ/(φ l_edge) = 243 MeV/fm. [CONJ, SM-11 §4]
+**String tension (σ)** — The confining force per unit length between quarks. CPP value: σ = M₀zπ/(φ l_edge) = 243 MeV/fm. [CONJ, SS-2 §4]
 
 **Symmetry Degeneracy Theorem** — For vertex-transitive polyhedra on S², Σsin²(θ_ij/2) = V²/4 exactly. Proves angular weighting carries no information beyond vertex count. [First appeared: SM-9 v2.2, Theorem 3.1]
 
@@ -287,4 +287,4 @@ The total lattice mode capacity — a topological invariant. This is the denomin
 
 **Zero-parameter formula** — M_q = m_e(z/φ)V^(7/3) × [1 or 16]. All constants derived or measured; no parameters fitted. RMS 2.1%. [First appeared: SM-8 v4.1 / SM-9 v2.2]
 
-**ZBW smearing** — The time-averaged spatial distribution of a quark's charge due to its ZBW orbital motion around its cage vertex. Smearing radius r_ZBW = ℏc/m_const ≈ 0.631 fm. [First appeared: SM-11]
+**ZBW smearing** — The time-averaged spatial distribution of a quark's charge due to its ZBW orbital motion around its cage vertex. Smearing radius r_ZBW = ℏc/m_const ≈ 0.631 fm. [First appeared: SS-2]

@@ -244,7 +244,7 @@ Four features of the same 600-cell lattice — eigenvectors, shell volumes, chai
 
 The CPP lattice has a physical size. Two independent routes — the pion decay constant f_π = 92.4 MeV via the Pagels-Stokar relation, and one-loop running of the geometric coupling α_geom = 1/√5 to the measured α_s(m_Z) = 0.1179 — converge on the same scale: one lattice unit (the 600-cell circumradius) equals ℏc/Λ_QCD ≈ 0.589 fm. The lattice edge, which is 1/φ of the circumradius, is 0.364 fm.
 
-The identification of α_geom = 1/√5 as the bare QCD coupling is the key conceptual step. This geometric constant, arising from the icosahedral symmetry of the 600-cell, when run to the Higgs mass via the standard QCD β-function, predicts α_s(m_H) = 0.1132 — matching the measured value 0.1130 to 0.2%. This connects a property of the polytope to a precision electroweak measurement. [SM-11]
+The identification of α_geom = 1/√5 as the bare QCD coupling is the key conceptual step. This geometric constant, arising from the icosahedral symmetry of the 600-cell, when run to the Higgs mass via the standard QCD β-function, predicts α_s(m_H) = 0.1132 — matching the measured value 0.1130 to 0.2%. This connects a property of the polytope to a precision electroweak measurement. [SS-2]
 
 ### Chapter 18: The Proton as a Hybrid Tetrahedron
 
@@ -252,15 +252,15 @@ The proton occupies a single tetrahedral cell of the 600-cell lattice. Two up qu
 
 Electromagnetic repulsion between the two up quarks (+2/3 charge each) competes with colour confinement. The derived string tension σ = M₀zπ/(φ l_edge) = 243 MeV/fm — expressed entirely in CPP constants — determines the equilibrium. The resulting distorted tetrahedron has the u-u edge stretched to 1.07 fm (distortion parameter ε = 1.94), while u-d edges are 0.62 fm.
 
-Combined with ZBW orbit smearing (each constituent quark orbits its vertex at radius r_ZBW = ℏc/m_const = 0.631 fm ≈ l_unit), the proton charge radius emerges as 0.883 fm — within 5% of the muonic hydrogen measurement (0.841 fm) — from zero fitted parameters. The proton magnetic moment, computed from the standard quark model with constituent masses, is 2.789 μ_N (measured 2.793 μ_N, −0.1% error). [SM-11]
+Combined with ZBW orbit smearing (each constituent quark orbits its vertex at radius r_ZBW = ℏc/m_const = 0.631 fm ≈ l_unit), the proton charge radius emerges as 0.883 fm — within 5% of the muonic hydrogen measurement (0.841 fm) — from zero fitted parameters. The proton magnetic moment, computed from the standard quark model with constituent masses, is 2.789 μ_N (measured 2.793 μ_N, −0.1% error). [SS-2]
 
 ### Chapter 19: The Neutron Charge Radius
 
-The neutron's negative charge radius (r²_n = −0.1161 fm²) has a geometric origin. In the distorted tetrahedron, the two down quarks' positive qCPs (+2/3 each) sit at larger radius than the up quark's qCP, creating the positive-inside/negative-outside charge distribution that produces r²_n < 0. This sign emerges from geometry alone, without fitting. The down quarks' captured −eCP linear oscillators — oscillating 180° out of phase due to mutual repulsion — provide a small inward correction (δ = −0.067 edge lengths, the only fitted parameter) that matches the measured value exactly. [SM-11]
+The neutron's negative charge radius (r²_n = −0.1161 fm²) has a geometric origin. In the distorted tetrahedron, the two down quarks' positive qCPs (+2/3 each) sit at larger radius than the up quark's qCP, creating the positive-inside/negative-outside charge distribution that produces r²_n < 0. This sign emerges from geometry alone, without fitting. The down quarks' captured −eCP linear oscillators — oscillating 180° out of phase due to mutual repulsion — provide a small inward correction (δ = −0.067 edge lengths, the only fitted parameter) that matches the measured value exactly. [SS-2]
 
 ### Chapter 20: Self-Consistency — ZBW = Lattice
 
-The ZBW orbit radius equals the lattice spacing to 7%: r_ZBW/l_unit = Λ_QCD/m_const = 335/313 = 1.07. This is not a coincidence — both quantities derive from the same lattice geometry through chiral symmetry breaking. The quark's orbit fills exactly one lattice cell, confirming the physical consistency of the entire framework. [SM-11]
+The ZBW orbit radius equals the lattice spacing to 7%: r_ZBW/l_unit = Λ_QCD/m_const = 335/313 = 1.07. This is not a coincidence — both quantities derive from the same lattice geometry through chiral symmetry breaking. The quark's orbit fills exactly one lattice cell, confirming the physical consistency of the entire framework. [SS-2]
 
 ---
 
@@ -308,11 +308,11 @@ The strange quark has the largest error in the zero-parameter formula (+3.1%). C
 | m_b (zero-param) | 4,115 MeV | 4,180 MeV | −1.6% | SM-8 |
 | m_t (zero-param) | 169,571 MeV | 172,760 MeV | −1.8% | SM-8 |
 | Quark mass RMS | 2.1% | — | — | SM-8/9 |
-| r_proton | 0.883 fm | 0.841 fm | +5.0% | SM-11 |
-| μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SM-11 |
-| α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SM-11 |
-| Λ_QCD | 335 MeV | ~330 MeV | +2% | SM-11 |
-| μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SM-11 |
+| r_proton | 0.883 fm | 0.841 fm | +5.0% | SS-2 |
+| μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SS-2 |
+| α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SS-2 |
+| Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
+| μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
 
 ### Predictions with one calibration
 | Prediction | CPP value | Experimental | Error | Calibrated from | Paper |
@@ -322,7 +322,7 @@ The strange quark has the largest error in the zero-parameter formula (+3.1%). C
 | m_b (Koide) | 4,240 MeV | 4,180 MeV | 1.4% | m_c | SM-7 |
 | m_t (Koide) | 169,800 MeV | 172,760 MeV | 1.7% | m_c | SM-7 |
 | m_t (cage + z=12) | 172,800 MeV | 172,760 MeV | 0.02% | m_s, m_c | SM-8 |
-| r²_neutron | −0.1161 fm² | −0.1161 fm² | exact | δ fitted | SM-11 |
+| r²_neutron | −0.1161 fm² | −0.1161 fm² | exact | δ fitted | SS-2 |
 
 ### Axiom-to-prediction ratio
 - Axioms: 7 (plus A8', A9')
@@ -349,4 +349,4 @@ This document is the Kindle version of the CPP book. It tells the story. The pap
 *The geometric results are exact. The mass predictions are within a few percent. The generation count is structural. Whether this describes nature is for experiment to determine. But the theory is coherent, falsifiable, and increasingly precise — and that is what physics demands.*
 
 *Initiated 8 April 2026 by Claude Opus, at Thomas's request.*
-*Updated 11 April 2026 — SM-8/9/10 physics integrated (V^(7/3) formula, z×C_F=16 multiplier, cascade mechanism, organised DP density); SM-11 content added (lattice grounding, nucleon structure); scorecard expanded to 19+ predictions.*
+*Updated 11 April 2026 — SM-8/9/10 physics integrated (V^(7/3) formula, z×C_F=16 multiplier, cascade mechanism, organised DP density); SS-2 content added (lattice grounding, nucleon structure); scorecard expanded to 19+ predictions.*

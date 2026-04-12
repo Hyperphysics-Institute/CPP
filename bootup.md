@@ -295,10 +295,10 @@ Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
 | Electroweak (EW) | EW-1 through EW-5 | On OSF |
 | Quantum Mechanics (QM) | QM-1 through QM-6 | On OSF |
 | Relativity (SR) | SR-1 | On OSF |
-| Strong Sector (SS) | SS-1 | On OSF |
+| Strong Sector (SS) | SS-1, SS-2 | SS-1 on OSF; SS-2 v1.0 pending |
 | Foundations (SD) | SD-1 through SD-5 | On OSF |
 
-Total: 26 papers. Full details: `paper_catalog.md`.
+Total: 27 papers. Full details: `paper_catalog.md`.
 
 ---
 

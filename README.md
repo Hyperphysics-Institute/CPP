@@ -39,6 +39,7 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | ID | Title | Key Result |
 |----|-------|------------|
 | **SS-1** | The Strong Sector from the 600-Cell Lattice | SU(3) colour algebra derived exactly; β₀ = 7; 9 theorems |
+| **SS-2** | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) |
 | **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3; SSV₀ = 0.2555 MeV |
 | **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 |
 | **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 derived exactly from K₃ eigenvalue ratio — zero free parameters |
@@ -50,7 +51,6 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | **SM-8** | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses RMS 2.1%; 3-generation theorem |
 | **SM-9** | The Quark Mass Scaling Exponent | V^(7/3) derivation; Symmetry Degeneracy Theorem |
 | **SM-10** | First-Principles Quark Mass from FEM Chain Network Simulation | Cascade mechanism; two-regime physics; organised DP density |
-| **SM-11** | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) |
 
 ---
 
@@ -70,9 +70,9 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | Zero-param quark masses (RMS) | 2.1% | SM-8/9 | 0 |
 | Three-generation theorem | Exact (structural) | SM-8 | 0 |
 | Symmetry Degeneracy Theorem | Exact (mathematical) | SM-9 | 0 |
-| Proton charge radius 0.883 fm | +5.0% | SM-11 | 0 |
-| Proton magnetic moment 2.789 μ_N | −0.1% | SM-11 | 0 |
-| α_s(m_H) = 0.1132 | +0.2% | SM-11 | 0 |
+| Proton charge radius 0.883 fm | +5.0% | SS-2 | 0 |
+| Proton magnetic moment 2.789 μ_N | −0.1% | SS-2 | 0 |
+| α_s(m_H) = 0.1132 | +0.2% | SS-2 | 0 |
 
 ---
 
@@ -96,8 +96,8 @@ CPP/
 ├── bibliography/                ← Site-wide bibliography
 │   └── cpp_references.bib       ← Aggregated from all local .bib files
 │
-├── series_strong/               ← SS-1 + companions + notebooks
-├── series_standard_model/       ← SM-1 through SM-11 + documentation
+├── series_strong/               ← SS-1, SS-2 + companions + notebooks
+├── series_standard_model/       ← SM-1 through SM-10 + documentation
 ├── series_relativity/           ← SR-1 + 22 companion papers
 ├── series_electroweak/          ← EW-1 through EW-5
 ├── series_quantum_mechanics/    ← QM-1 through QM-6
