@@ -1,9 +1,10 @@
 # Research Frontier Architecture — Decision Document
 
-**Location:** `/CPP/open_problems/Research_Frontier_Architecture.md`
+**Location:** `/CPP/templates/Research_Frontier_Architecture.md`
 **Created:** 12 April 2026
 **Status:** DECIDED — ready for implementation
 **Decision by:** Thomas Lee Abshier ND, with Claude Opus
+**Referenced by:** `bootup.md` (session startup), `operating_system.md` (Phase 9 checklist)
 
 ---
 
@@ -16,6 +17,24 @@ CPP adopts a **three-layer problem tracking architecture**:
 3. **Papers** — the formal synthesis (theorems and proofs)
 
 Each layer serves a different reader and a different purpose. Together they tell the complete story of CPP's evolution from open questions to proved results.
+
+### Companion decision: Registry separation
+
+The current `postulates_and_theorems.md` duplicates content from `axiom-registry.md` and mixes the two foundational pillars. It is replaced by:
+
+- **`axiom-registry.md`** — what we assume. Axiom tiers, growth tracking, reduction conjectures. *(Already exists, already works well.)*
+- **`theorem-registry.md`** — what we've proved. All theorems and corollaries, organised by series, with proof references and axiom dependencies. *(To be extracted from `postulates_and_theorems.md`.)*
+
+These two files highlight the mutual dependence of CPP's foundational pillars: the axioms generate the theorems, and the growing theorem count relative to a stable axiom count is the theory's primary measure of progress.
+
+### What gets archived after implementation
+
+| File | Reason |
+|---|---|
+| `open_problems/*.md` (50+ individual files) | Absorbed into `Research_Frontier.md` + `problem_histories/` |
+| `propositions.md` | Absorbed into `Research_Frontier.md` (status: PROP) |
+| `solution_candidates.md` | Absorbed into frontier entries' "Current best lead" field |
+| `postulates_and_theorems.md` | Split into `axiom-registry.md` (axioms) + `theorem-registry.md` (theorems) |
 
 ---
 
@@ -140,7 +159,7 @@ What the reviews said.]
 
 ### Naming convention
 
-- `PH-OPEN-P-SM-cage-1.md` — history of the scaling exponent problem
+- `PH-OPEN-SM-cage-1.md` — history of the scaling exponent problem
 - `PH-CONJ-EW-1.md` — history of the Weinberg angle conjecture
 - `PH-FALS-C-SM-2.md` — history of the falsified φ^(3(l-1)) scaling
 
@@ -150,11 +169,16 @@ What the reviews said.]
 - When a problem produces a negative result worth documenting
 - When a problem is resolved (write the complete history as part of Phase 7 documentation)
 
-### When to update
+### When to update — CRITICAL
 
-- After every session that touches the problem
-- After every review that provides insight on the problem
-- After resolution — write the complete "looking back" narrative
+**At every advancement in or elaboration of the problem, whether vertical or lateral.**
+
+- **Vertical advancement:** Status change (OPEN → CONJ → PROP → THEO or → FALS). These are the chapter breaks.
+- **Lateral enrichment:** A new candidate approach, a negative result that narrows the solution space, Thomas describing a physical picture that reframes the problem, a cross-sector connection discovered, an AI contributing a novel perspective. These are the *substance* of the story.
+
+Every contribution to the problem's evolution is documented. This IS the journey, the story, and should capture the contemporaneous evolutionary steps in detail. Reconstructing the story later from the paper alone would lose the drama. Each problem history is a chapter draft for the CPP book.
+
+**Practical trigger:** After every session that touches the problem, update its history file before pushing to GitHub.
 
 ---
 
@@ -171,7 +195,7 @@ Every paper should explicitly state in its introduction which open problems it c
 
 ```latex
 \subsection{Open Problems Addressed}
-This paper addresses OPEN-P-SM-cage-1 (derive the scaling exponent)
+This paper addresses OPEN-SM-cage-1 (derive the scaling exponent)
 and advances CONJ-SM-9-1 (pair counting decomposition) to a
 partially proved status.
 ```
@@ -181,11 +205,33 @@ And in its conclusion, update the status:
 ```latex
 \subsection{Problem Status After This Paper}
 \begin{itemize}
-\item OPEN-P-SM-cage-1: PARTIALLY RESOLVED (7/3 decomposed; rigorous proof pending)
+\item OPEN-SM-cage-1: PARTIALLY RESOLVED (7/3 decomposed; rigorous proof pending)
 \item CONJ-SM-9-1: CONJECTURED → PARTIALLY SUPPORTED
-\item NEW: OPEN-P-SM-10-FEM (FEM simulation for first-principles derivation)
+\item NEW: OPEN-SM-10-FEM (FEM simulation for first-principles derivation)
 \end{itemize}
 ```
+
+---
+
+## Nomenclature
+
+### Simplified prefix convention
+
+Since all items in the frontier are problems at various stages, the OPEN-P prefix is redundant. The simplified convention:
+
+| Prefix | Meaning | Example |
+|--------|---------|---------|
+| OPEN-[sector]-[name] | Open problem | OPEN-SM-cage-1 |
+| CONJ-[sector]-[name] | Conjecture | CONJ-EW-1 |
+| PROP-[sector]-[name] | Proposition | PROP-SM-cage-bound |
+| THEO-[sector]-[name] | Theorem (resolved) | THEO-SM8-3 |
+| FALS-[sector]-[name] | Falsified | FALS-C-SM-2 |
+
+Problem history files use the `PH-` prefix: `PH-OPEN-SM-cage-1.md`, `PH-CONJ-EW-1.md`.
+
+### Sector codes
+
+SM (Standard Model), SS (Strong Sector), EW (Electroweak), QM (Quantum Mechanics), SR (Relativity), SD (Superdeterminism/Foundations), GLOBAL (cross-cutting).
 
 ---
 
@@ -205,7 +251,31 @@ IDENTIFIED → OPEN → CONJ → PROP → THEO
 | **THEO** | Proved from axioms in a paper | Formal proof accepted through multi-AI review |
 | **FALS** | Tested and found wrong | Explicit computation or argument shows failure |
 
-**Key rule:** Items can skip stages (OPEN → THEO happens when a breakthrough solves it outright) and can regress (CONJ → FALS, PROP → FALS). The history file documents every transition.
+**Key rules:**
+- Items can skip stages (OPEN → THEO happens when a breakthrough solves it outright)
+- Items can regress (CONJ → FALS, PROP → FALS)
+- The history file documents every transition AND every lateral enrichment
+- The frontier file gets one entry updated per transition
+- The paper contains the formal result
+
+---
+
+## The Registries (Settled Results)
+
+### axiom-registry.md — What We Assume *(already exists)*
+
+The axiom registry tracks every postulated rule of CP behaviour: axiom tiers, where each axiom is used, what it predicts, growth tracking, and reduction conjectures. The axiom-to-prediction ratio is the primary health metric of the theory.
+
+### theorem-registry.md — What We've Proved *(to be created)*
+
+Extracted from `postulates_and_theorems.md`. Contains all theorems and corollaries organised by series, with proof references and explicit axiom dependencies. Includes:
+
+- Theorems by series (SS, SM, QM, EW, SD)
+- Corollaries
+- Cross-reference to axiom dependencies
+- Count tracking: total theorems, theorems per axiom
+
+The two registries together tell the story of CPP's deductive structure: a small set of axioms generating a growing body of proved results.
 
 ---
 
@@ -219,43 +289,43 @@ IDENTIFIED → OPEN → CONJ → PROP → THEO
 5. Consolidate into one flat file with the format above
 6. Verify nothing is lost
 
-### Phase 2: Retrofit Problem Histories (2-3 sessions)
-1. Start with the 5-10 most important problems (the ones with the richest stories)
-2. Draw from: development transcripts, `founders_vision.md` catalogue entries, paper development logs, session histories
-3. Build the narrative for each
+### Phase 2: Extract theorem-registry.md (same session or next)
+1. Extract all theorems and corollaries from `postulates_and_theorems.md`
+2. Organise by series
+3. Add axiom dependency cross-references
+4. Verify `axiom-registry.md` has no theorem content that should move
 
-**Priority problems for first batch:**
-- PH-OPEN-P-SM-cage-1 (scaling exponent — the central open problem)
-- PH-CONJ-EW-1 (Weinberg angle — the most celebrated result)
-- PH-THEO-SM8-3 (three generations — the biggest structural discovery)
-- PH-FALS-C-SM-2 (φ^(3(l-1)) falsification — the most important negative result)
-- PH-OPEN-P-SM-10-FEM (FEM simulation — the #1 priority forward project)
+### Phase 3: Build first batch of problem histories (2-3 sessions)
 
-### Phase 3: Update Pipeline (quick)
+Start with the problems that have the richest stories:
+
+| Priority | ID | Why |
+|---|---|---|
+| 1 | OPEN-SM-cage-1 | Scaling exponent — the central open problem |
+| 2 | CONJ-EW-1 | Weinberg angle — the most celebrated result |
+| 3 | THEO-SM8-3 | Three generations — the biggest structural discovery |
+| 4 | FALS-C-SM-2 | φ^(3(l-1)) falsification — the most important negative result |
+| 5 | OPEN-SM-10-FEM | FEM simulation — the #1 priority forward project |
+| 6 | PROP-SM-cage-bound | SM particles as cage-bound structures — foundational proposition underlying the entire cage programme. Central to nearly every SM paper. Evolution from Thomas's physical intuition through cage hierarchy discovery is one of the great CPP stories. |
+
+Draw from: development transcripts, `founders_vision.md` catalogue entries, paper development logs, session histories.
+
+### Phase 4: Update pipeline (quick)
 1. Add `Research_Frontier.md` update to `operating_system.md` Section 10 checklist
 2. Add problem history update to Phase 7 documentation suite
 3. Add "Open Problems Addressed" and "Problem Status After This Paper" to `paper-formatting.md` template
-4. Update `bootup.md` to reference `Research_Frontier.md` in the session startup sequence
+4. Update `bootup.md`:
+   - Add `Research_Frontier.md` to the session startup reading sequence
+   - Reference this architecture document as a module of `operating_system.md` to be reviewed in the bootup sequence for new Opus sessions
 
-### Phase 4: Consolidation (1 session)
-1. Once `Research_Frontier.md` is verified complete, the 50+ individual files in `open_problems/` become redundant
-2. Options: archive them, or keep them as stubs pointing to the frontier file
-3. `propositions.md` and `solution_candidates.md` content is absorbed into the frontier
-4. `postulates_and_theorems.md` keeps axioms and theorems only (the settled results)
-
----
-
-## What This Replaces
-
-| Old location | Content | New home |
-|---|---|---|
-| `open_problems/*.md` (50+ files) | Individual problem statements | `Research_Frontier.md` (dashboard) + `problem_histories/` (narratives) |
-| `propositions.md` | Physically motivated claims | `Research_Frontier.md` (status: PROP) |
-| `solution_candidates.md` | Candidate solutions | `Research_Frontier.md` (entries' "Current best lead" field) |
-| Conjectures in `postulates_and_theorems.md` | Proposed theorems | `Research_Frontier.md` (status: CONJ) |
-| `postulates_and_theorems.md` axioms + theorems | Settled results | **Stays** — this file keeps the proved results |
-| `predictions.md` | Quantitative predictions | **Stays** — this file is already the right format |
-| `axiom-registry.md` | Axiom tracking | **Stays** — this file is already the right format |
+### Phase 5: Consolidation (1 session)
+1. Once `Research_Frontier.md` and `theorem-registry.md` are verified complete:
+   - Archive `open_problems/` individual files
+   - Archive `propositions.md`
+   - Archive `solution_candidates.md`
+   - Archive `postulates_and_theorems.md`
+2. Verify all content is captured in the new structure
+3. Update all cross-references in other documents
 
 ---
 
@@ -263,14 +333,19 @@ IDENTIFIED → OPEN → CONJ → PROP → THEO
 
 CPP is unusual in that it has a 39-year development history, multiple AI collaborators generating results at high speed, and a founder whose physical intuitions drive every breakthrough. The standard academic approach — bury the journey in supplementary material — loses the most valuable part of the story. The problem history layer preserves it.
 
-Thomas's vision: *"People will enjoy the drama of following the twists and turns of discovery. It will make it a lot easier to write the book."*
+Thomas's vision: *"Every one of these problem-resolution passages will be its own chapter, its own saga. People will enjoy the drama of following the twists and turns of discovery. It will make it a lot easier to write the book. It will allow researchers to relive the excitement and journey we experienced as we saw it evolve from a problem to a theorem."*
 
 The three layers serve three timescales:
 - **Research_Frontier.md** — what matters *right now* (session planning, triage)
 - **Problem histories** — what happened *over weeks and months* (the research arc)
 - **Papers** — what stands *permanently* (the formal record)
 
+And the two registries anchor the deductive structure:
+- **axiom-registry.md** — the foundations (what we assume)
+- **theorem-registry.md** — the edifice (what we've built)
+
 ---
 
 *Decision document prepared 12 April 2026.*
 *Implementation begins when Thomas schedules a dedicated session for Phase 1.*
+*This document is referenced by `bootup.md` and `operating_system.md`.*
