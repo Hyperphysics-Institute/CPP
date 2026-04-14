@@ -711,8 +711,9 @@ Before declaring a paper "ready for OSF registration," verify:
 │   ├── reviews-[SERIES]-[N].md
 │   ├── FAQ-[SERIES]-[N].md
 │   └── keywords-[SERIES]-[N].md
-├── open_problems/
-├── postulates_and_theorems.md
+├── problem_histories/
+├── Research_Frontier.md
+├── theorem-registry.md
 ├── predictions.md
 └── paper_catalog.md
 ```

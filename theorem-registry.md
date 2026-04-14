@@ -12,7 +12,7 @@
 
 The axiom-registry tracks what CPP *assumes*. This file tracks what CPP has *proved*. Together they define the deductive structure of the theory. The primary health metric is the ratio:
 
-**Theorems : Axioms = 37 : 6 ≈ 6.2 theorems per axiom**
+**Theorems : Axioms = 47 : 6 ≈ 7.8 theorems per axiom**
 
 *(Counting theorems + corollaries. Axiom count uses the 6-axiom set from postulates_and_theorems.md.)*
 
@@ -146,6 +146,27 @@ Source: CPP propositions session, 30 March 2026.
 
 ---
 
+# Foundations / Superdeterminism (SD) — 10 Theorems
+
+Sources: SD-1 through SD-5. These theorems establish the CPP superdeterministic correction to quantum mechanics and its experimental signatures.
+
+*Note: These theorems were referenced in the SD series documentation suite but were not formally registered in `postulates_and_theorems.md`. Added to the registry 12 April 2026.*
+
+| ID | Name | Result | Axioms Used | Paper Reference |
+|----|------|--------|-------------|-----------------|
+| **THEO-SD-1** | D₅ projected symmetry | H₄ (600-cell Coxeter group, order 14,400) projects to D₅ (dihedral, order 10) on the measurement-angle circle S¹. Forces cos(5θ) as leading Fourier term. | AXIM-2 | SD-2 |
+| **THEO-SD-2** | Fourier decomposition of f_{H₄} | f_{H₄}(θ) = A₅ cos(5θ) + A₃ cos(3θ) + A₁₀ cos(10θ) + ... with icosahedral H₄ symmetry. | AXIM-2 | SD-2 |
+| **THEO-SD-3** | H₄-special angles | Extrema of f_{H₄} occur at golden-ratio angles {36°, 72°, ...}. Optimal angles for detecting CPP correction. | AXIM-2 | SD-2 |
+| **THEO-SD-4** | CHSH blind spot | Standard CHSH angles {0°, 45°, 90°, 135°} are NOT H₄-special. CHSH provides the weakest possible test of CPP. | AXIM-2 | SD-2 |
+| **THEO-SD-5** | DP Sea anisotropy | Apparatus-induced anisotropy δ = sea_strength × l_P/L ~ 3 × 10⁻³⁴ for L ~ 1 cm. | AXIM-3, AXIM-4 | SD-3 |
+| **THEO-SD-6** | Apparatus always classical | τ_dec = ℏ/(N_app × k_B × T) ≲ 10⁻³⁹ s for macroscopic detectors. **Effectively solves OP-QM-4 (with THEO-QM-6).** | AXIM-3, AXIM-4, AXIM-6 | SD-3 |
+| **THEO-SD-7** | Quantum processor trade-off | ε_QP × τ_q = ℏ/(N_sub × k_B × T) = const(T). N_q cancels exactly. | AXIM-2, AXIM-6 | SD-3 |
+| **THEO-SD-8** | Macroscopic limit | K → 0 as N_app → ∞. Standard QM recovered for macroscopic apparatus. | AXIM-4, AXIM-6 | SD-4 |
+| **THEO-SD-9** | Single-CP factorisation | K = K₀(λ) × f_{H₄}(θ − θ_λ) exactly. Non-locality parameter factorises into particle-side and angle-side. | AXIM-1, AXIM-6 | SD-4 |
+| **THEO-SD-10** | Planck-energy limit | K → O(1) as λ_dB → l_P. QM fails at Planck energies — CPP correction becomes order unity. | AXIM-2, AXIM-6 | SD-4 |
+
+---
+
 # Summary Statistics
 
 | Series | Theorems | Corollaries | Total |
@@ -154,8 +175,9 @@ Source: CPP propositions session, 30 March 2026.
 | SM (Standard Model) | 9 | 4 | 13 |
 | EW (Electroweak) | 8 | 0 | 8 |
 | QM (Quantum Mechanics) | 10 | 3 | 13 |
+| SD (Foundations) | 10 | 0 | 10 |
 | Partner-switching | 1 | 2 | 3 |
-| **Total** | **37** | **9** | **46** |
+| **Total** | **47** | **9** | **56** |
 
 ---
 
@@ -165,12 +187,12 @@ How many theorems depend on each axiom:
 
 | Axiom | Theorem Count | Notes |
 |-------|--------------|-------|
-| AXIM-1 (CP existence) | 20 | Most foundational |
-| AXIM-2 (600-cell) | 31 | Used in nearly everything |
-| AXIM-3 (Dipole Sea) | 4 | Primarily QM series |
-| AXIM-4 (SSV interaction) | 16 | Force law and its consequences |
+| AXIM-1 (CP existence) | 21 | Most foundational |
+| AXIM-2 (600-cell) | 37 | Used in nearly everything |
+| AXIM-3 (Dipole Sea) | 6 | QM + SD series |
+| AXIM-4 (SSV interaction) | 19 | Force law and its consequences |
 | AXIM-5 (mass) | 3 | SS-9, SM-2, SM-3 |
-| AXIM-6 (Absolute Moment) | 11 | QM series + EW-7,8 |
+| AXIM-6 (Absolute Moment) | 16 | QM + EW + SD series |
 
 *(Counts are approximate; some theorems use axioms indirectly via other theorems.)*
 

@@ -225,10 +225,9 @@ series_[name]/development-transcripts/
 | `master_glossary.md` | Add any new terms, acronyms, particles, or processes introduced |
 | `founders_vision.md` | Add any new physical intuitions captured during the session |
 | `predictions.md` | Add new quantitative predictions with status |
-| `postulates_and_theorems.md` | Add new theorems (THEO), corollaries (CORO), conjectures (CONJ) |
-| `propositions.md` | Add new physically motivated claims |
-| `solution_candidates.md` | Update if open problems were addressed |
-| `open_problems/` | Register new OPEN-P entries; close solved ones |
+| `theorem-registry.md` | Add new theorems (THEO), corollaries (CORL) with axiom dependencies |
+| `Research_Frontier.md` | Update problem status; move resolved items to §5; add new problems/conjectures |
+| `problem_histories/` | Update history files for any problems touched this session |
 
 ### 9b. Navigation documents (update structure)
 
@@ -274,7 +273,8 @@ Date registered on OSF:
 [ ] Phase 9a: master_glossary.md updated
 [ ] Phase 9a: founders_vision.md updated (if new intuitions)
 [ ] Phase 9a: predictions.md updated (if new predictions)
-[ ] Phase 9a: postulates_and_theorems.md updated (if new theorems)
+[ ] Phase 9a: theorem-registry.md updated (if new theorems)
+[ ] Phase 9a: Research_Frontier.md updated (if problems addressed)
 [ ] Phase 9b: README.md updated
 [ ] Phase 9b: INDEX.md updated
 [ ] Phase 9b: paper_catalog.md updated

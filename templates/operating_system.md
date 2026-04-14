@@ -54,7 +54,8 @@
 | `axiom-registry.md` | All axioms, predictions, growth tracking | After each paper |
 | `master_glossary.md` | Every CPP term defined | Scan during Phase 7 |
 | `predictions.md` | Quantitative predictions with status | After each paper |
-| `postulates_and_theorems.md` | Formal mathematical results | After each paper |
+| `Research_Frontier.md` | **The dashboard** — all open problems, conjectures, propositions | After each paper |
+| `theorem-registry.md` | All proved theorems by series with axiom dependencies | After each paper |
 
 ### Workflow
 | Document | Purpose |
@@ -97,7 +98,7 @@
 - [ ] Update `founders_vision.md` with any new physical insights
 - [ ] Create/update development transcript
 - [ ] Update `future_projects.md` if priorities changed
-- [ ] Note any new open problems in `open_problems/`
+- [ ] Note any new open problems in `Research_Frontier.md`; update `problem_histories/` if significant work done
 - [ ] Push to GitHub
 
 **Key lesson from SM-8:** Papers can emerge unexpectedly from exploration sessions. SM-8 started as documentation work and became a 14-page paper with three theorems. Don't restrict exploration sessions to their stated goal.
@@ -514,7 +515,7 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 3. Update the total prediction count and zero-parameter prediction count
 
 #### postulates_and_theorems.md update procedure
-**[TRANSITIONING]** This file is being replaced by `theorem-registry.md` (theorems), `axiom-registry.md` (axioms), and `Research_Frontier.md` (conjectures, propositions, open problems). Until Phase 5 archival is complete, update BOTH the old file and the new registries. After Phase 5, update only the new files.
+**[ARCHIVED — 12 April 2026]** This file has been split into `axiom-registry.md` (axioms), `theorem-registry.md` (theorems/corollaries), and `Research_Frontier.md` (conjectures, propositions, open problems, falsified items). Update those files directly. The archived copy is at `archive/pre_frontier_2026-04-12/postulates_and_theorems.md`.
 
 #### theorem-registry.md update procedure
 1. Add each new theorem with ID, name, result, axiom dependencies, and paper reference
@@ -569,7 +570,7 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 3. Verify all cite keys match what's used in the paper's .tex file
 
 #### open_problems/ update procedure
-**[TRANSITIONING]** The `open_problems/` directory is being replaced by `Research_Frontier.md` (dashboard) and `problem_histories/` (narratives). Until Phase 5 archival is complete, new problems should be added to `Research_Frontier.md` directly. After Phase 5, the individual files in `open_problems/` will be archived. See `Research_Frontier.md` procedure above for the new workflow.
+**[ARCHIVED — 12 April 2026]** The `open_problems/` directory has been replaced by `Research_Frontier.md` (dashboard) and `problem_histories/` (narratives). New problems go in `Research_Frontier.md` §1. Narrative updates go in `problem_histories/PH-[ID].md`. The archived copies are at `archive/pre_frontier_2026-04-12/open_problems/`.
 
 ### Navigation documents (update structure)
 - [ ] `README.md` — add paper to table, update counts (see procedure below)

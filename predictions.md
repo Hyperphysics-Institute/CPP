@@ -1,6 +1,6 @@
 # CPP Predictions Registry
 
-**Repository location:** CPP root level (peer of postulates_and_theorems.md)
+**Repository location:** CPP root level (peer of `Research_Frontier.md`, `theorem-registry.md`)
 **Last updated:** 11 April 2026 (SM-8/9/10 + SS-2 predictions added)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
@@ -74,7 +74,7 @@ either do not yet exist or are not yet sensitive enough to test them.
 **These are what CPP must get right to be taken seriously.**
 
 **Note (30 March 2026):** Predictions derived from Tier 3 propositions
-(propositions.md) are marked [T3]. Predictions derived from Tier 4
+(see `Research_Frontier.md` §3) are marked [T3]. Predictions derived from Tier 4
 candidate mechanisms are marked [T4] and should be treated as
 directional predictions pending quantitative verification of the
 underlying proposition. The tier label reflects the maturity of the

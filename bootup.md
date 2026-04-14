@@ -80,10 +80,7 @@ CPP/
 ├── predictions.md                    ← Every quantitative prediction with status
 ├── Research_Frontier.md              ← ** THE DASHBOARD — all open problems, conjectures, propositions **
 ├── theorem-registry.md               ← All proved theorems by series with axiom dependencies
-├── postulates_and_theorems.md        ← [BEING REPLACED — content moving to axiom-registry + theorem-registry + Research_Frontier]
-├── propositions.md                   ← Physically motivated claims
 ├── nomenclature.md                   ← ID code legend (AXIM, THEO, PROP, FALS...)
-├── solution_candidates.md            ← Candidate solutions for open problems
 ├── future_projects.md                ← Prioritised research targets with status
 │
 ├── ── WORKFLOW ──
@@ -97,8 +94,8 @@ CPP/
 ├── bibliography/
 │   └── cpp_references.bib            ← BibTeX references for all papers
 │
-├── open_problems/                    ← 50+ registered OPEN-P entries
-│   └── [OPEN-P-XX-N.md files]
+├── problem_histories/                ← Problem narratives — the drama of discovery
+│   └── [PH-[ID].md files]
 │
 ├── ── PAPER SERIES ──
 ├── series_standard_model/            ← SM-1 through SM-10
@@ -133,9 +130,6 @@ CPP/
 | `predictions.md` | Quantitative predictions with PDG comparison | After each paper |
 | `Research_Frontier.md` | **The dashboard** — all open problems, conjectures, propositions with status and dependencies | After each paper |
 | `theorem-registry.md` | All proved theorems by series, with axiom dependencies | After each paper |
-| `postulates_and_theorems.md` | *[Being replaced]* — content moving to `axiom-registry.md`, `theorem-registry.md`, `Research_Frontier.md` | — |
-| `propositions.md` | Physically motivated claims not yet proved | As needed |
-| `solution_candidates.md` | Candidate solutions for open problems | As needed |
 | `future_projects.md` | 12+ prioritised research targets with status | After each session |
 | `nomenclature.md` | ID code legend | Rarely |
 
@@ -162,9 +156,9 @@ CPP/
 | Folder | Contents |
 |--------|----------|
 | `bibliography/` | `cpp_references.bib` — BibTeX for all cited works |
-| `open_problems/` | Individual `.md` files for each OPEN-P registered problem |
-| `templates/` | Paper formatting standard, documentation suite template |
-| `archive/` | Superseded versions, old drafts |
+| `problem_histories/` | Narrative histories of major open problems — the drama of discovery |
+| `templates/` | Paper formatting standard, documentation suite template, bootup, workflow |
+| `archive/` | Superseded versions, old drafts, pre-frontier problem files |
 
 ---
 
@@ -232,7 +226,7 @@ Axiom count: 7 (plus A8', A9'). Predictions: 15+. Ratio: 0.47.
 6. **SM-10 FEM Simulation:** First-principles quark mass from chain network simulation — the #1 priority forward project. Phase 1 (CPU proof-of-concept) can be attempted immediately.
 7. **Strange quark residual (+3.1%):** Largest error in zero-parameter formula. Candidate explanations: absent surface blanket, chiral condensate coupling, ZBW instability.
 
-Full list: `open_problems/` folder and `future_projects.md`.
+Full list: `Research_Frontier.md` and `future_projects.md`.
 
 ---
 
@@ -263,7 +257,7 @@ Full list: `open_problems/` folder and `future_projects.md`.
 - Update `founders_vision.md` with any new physical insights
 - Create/update development transcript
 - Update `future_projects.md` if priorities changed
-- Note any new open problems in `open_problems/`
+- Note any new open problems in `Research_Frontier.md`; update `problem_histories/` if significant work done
 - Push to GitHub
 
 ---

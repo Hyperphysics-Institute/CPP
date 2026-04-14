@@ -152,4 +152,4 @@ SS-1, SM-1, SM-2, SM-3, SM-4, SM-5, SR-1.
 
 ---
 
-*See also: `postulates_and_theorems.md`, `predictions.md`, `propositions.md`, `nomenclature.md`, `open_problems/`*
+*See also: `Research_Frontier.md`, `theorem-registry.md`, `axiom-registry.md`, `predictions.md`, `nomenclature.md`, `problem_histories/`*

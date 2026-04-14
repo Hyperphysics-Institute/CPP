@@ -82,7 +82,7 @@ remaining ones.
 CORL-1a on 30 March 2026 when the ZBW oscillation frequency was proved
 from the SSV force law).
 
-**File:** `postulates_and_theorems.md`
+**File:** `axiom-registry.md`
 
 ---
 
@@ -106,7 +106,7 @@ The theorem — *theōria* — is the physicist's participation in that same
 act of perceiving. THRM was the prior code; it was replaced because it
 invited mispronunciation as "thermometer." THEO has no such ambiguity.
 
-**File:** `postulates_and_theorems.md`
+**File:** `theorem-registry.md`
 
 ---
 
@@ -125,7 +125,7 @@ its applications to quantum phenomena, thermodynamics, and cosmology.
 Many of the most important physical insights of CPP currently live
 at the proposition level.
 
-**File:** `propositions.md`
+**File:** `Research_Frontier.md` §3
 
 ---
 
@@ -137,7 +137,7 @@ they are labelled by the theorem they follow from (CORL-1a follows
 from THEO identified as number 1 in the partner-switching context,
 i.e. THEO-1 in the transition period before full renaming).
 
-**File:** `postulates_and_theorems.md`
+**File:** `theorem-registry.md`
 
 ---
 
@@ -149,21 +149,23 @@ principle falsify it? If yes, it is a conjecture. If no, it is a
 philosophical claim, not a scientific one. CPP maintains an active
 conjectures register and documents both confirmations and falsifications.
 
-**File:** `conjectures-SS.md` and equivalent per-series files
+**File:** `Research_Frontier.md` §2
 
 ---
 
-### OPEN-P — Open Problem
+### OPEN — Open Problem
+
+*(Formerly OPEN-P. Simplified April 2026 — the "P" was redundant since all frontier items are problems at various stages.)*
 
 A specific, well-defined mathematical or physical question whose
 answer is not yet known within CPP. Open problems are registered
 with their priority, current status, suggested approach, and
-connections to other problems. A problem moves from OPEN to PARTIAL
-to SOLVED as work progresses. Solved problems retain their file
-with the resolution documented — the history of what was tried
-is as valuable as the final answer.
+connections to other problems. A problem moves from OPEN to CONJ
+to PROP to THEO as work progresses, or to FALS if falsified.
+Resolved problems retain their entry with the resolution documented —
+the history of what was tried is as valuable as the final answer.
 
-**File:** `open_problems/` directory and `open_problems/README.md`
+**File:** `Research_Frontier.md` §1
 
 ---
 
@@ -282,16 +284,16 @@ complete, so that the rename pass covers all files simultaneously.
 
 | File | Legacy codes | New codes |
 |------|-------------|-----------|
-| `postulates_and_theorems.md` | AXIM-1–AXIM-5, THEO-SS-1, THEO-SM-1, CORL-SM-1 etc. | AXIM, THEO, CORL |
-| `propositions.md` | PROP-1–15, CORL-1a/1b | PROP-1–15, CORL-1a/1b |
-| `open_problems/README.md` | OPEN-P-SS-1, OPEN-P-SM-1 etc. | OPEN-P-SS-1, OPEN-P-SM-1 etc. |
-| `conjectures-SS.md` | CONJ-SS-1, CONJ-SS-2 | CONJ-SS-1, CONJ-SS-2 |
+| `axiom-registry.md` | AXIM-1–AXIM-6, A1–A6' | AXIM, A1–A6' |
+| `theorem-registry.md` | THEO-SS-1, THEO-SM-1, CORL-SM-1 etc. | THEO, CORL |
+| `Research_Frontier.md` | OPEN-SS-1, CONJ-EW-1, PROP-1–15, FALS-C-SM-1 etc. | OPEN, CONJ, PROP, FALS |
 | `predictions.md` | CP-1, OP-1, QP-1, PD-1, FP-1 | PRED-C, PRED-O, PRED-Q, POST-D, FALS-C |
 | `phenomena-SM-1.md` | E1, AXIM-1, C1 | PHEN-E, PHEN-P, PHEN-V |
 | `phenomena-SM-2.md` | E1, AXIM-1, C1 | PHEN-E, PHEN-P, PHEN-V |
-| All individual OP-XX files | OP- prefix | OPEN-P- prefix |
 
-**Rename completed 30 March 2026.** All files have been updated to the new scheme. The legacy codes (P1–P6, SS-T1, P-CPP-1, OP-SS-1, CJ-SS-1) no longer appear in the documentation files. Individual OP-*.md files retain their original filenames for compatibility with existing links, but their internal content uses the new OPEN-P- codes.
+**Rename history:**
+- 30 March 2026: Legacy codes (P1–P6, SS-T1, P-CPP-1, OP-SS-1, CJ-SS-1) replaced with new scheme across all files.
+- 12 April 2026: Three-layer reorganization. `postulates_and_theorems.md` split into `axiom-registry.md` + `theorem-registry.md` + `Research_Frontier.md`. `propositions.md`, `solution_candidates.md`, and `open_problems/` archived — content absorbed into `Research_Frontier.md`. OPEN-P prefix simplified to OPEN.
 
 ---
 

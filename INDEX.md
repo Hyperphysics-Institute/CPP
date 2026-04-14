@@ -4,7 +4,7 @@ Directory-by-directory map of the entire repository.
 **Last updated:** 11 April 2026
 
 For paper IDs and status, see [`paper_catalog.md`](paper_catalog.md).
-For what is proved vs open, see [`postulates_and_theorems.md`](postulates_and_theorems.md).
+For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (open problems) and [`theorem-registry.md`](theorem-registry.md) (proved results).
 
 ---
 
@@ -15,11 +15,11 @@ For what is proved vs open, see [`postulates_and_theorems.md`](postulates_and_th
 | [`README.md`](README.md) | Repository overview, theory summary, 8 registered papers |
 | [`INDEX.md`](INDEX.md) | This file — directory map |
 | [`paper_catalog.md`](paper_catalog.md) | Master list of all papers with IDs, files, and status |
-| [`postulates_and_theorems.md`](postulates_and_theorems.md) | 6 axioms, theorems, corollaries, conjectures |
+| [`Research_Frontier.md`](Research_Frontier.md) | **The dashboard** — all open problems, conjectures, propositions with status |
+| [`theorem-registry.md`](theorem-registry.md) | All proved theorems by series, with axiom dependencies |
+| [`axiom-registry.md`](axiom-registry.md) | All axioms with tiers, usage, and prediction tracking |
 | [`predictions.md`](predictions.md) | Every quantitative prediction with status labels |
-| [`propositions.md`](propositions.md) | Physically motivated claims not yet proved as theorems |
 | [`nomenclature.md`](nomenclature.md) | ID code legend (AXIM, THEO, PROP, CORL, CONJ, etc.) |
-| [`solution_candidates.md`](solution_candidates.md) | Candidate solutions for registered open problems |
 | `LICENSE` / `LICENSE-CC-BY-4.0.md` | License files |
 
 ---
@@ -182,21 +182,20 @@ DP Sea polarization, composition, vacuum energy.
 
 ---
 
-## [`open_problems/`](open_problems/) — Open Problems Register
+## [`problem_histories/`](problem_histories/) — Problem Narratives
 
-| Series | Count |
-|--------|-------|
-| Strong sector (OP-SS) | 14 |
-| Standard Model (OP-SM) | 10 |
-| Special relativity (OP-SR) | 8 |
-| Electroweak (OP-EW) | 6 |
-| Quantum mechanics (OP-QM) | 7+ |
-| Superdeterminism (OP-SD) | 5 |
-| Cross-series (OP-GLOBAL) | 2 |
+The full journey of each major open problem — from identification through wrong turns to resolution.
 
-**Total registered open problems: 50+**
+| File | Problem |
+|------|---------|
+| `PH-CONJ-EW-1.md` | Weinberg angle discovery |
+| `PH-THEO-SM8-3.md` | Three quark generations |
+| `PH-THEO-SS-9.md` | Charge quantisation δ = 1/3 |
+| `PH-FALS-C-SM-2.md` | φ^(3(l-1)) falsification |
+| `PH-OPEN-SM-cage-1.md` | Scaling exponent α = 2.38 |
+| `PH-OPEN-SM-10-FEM.md` | FEM chain network simulation |
 
-Also contains conjecture files: `CONJ-EW-1_weinberg_angle.md`, `CONJ-SM-6_koide_phase.md`.
+**Master dashboard:** See [`Research_Frontier.md`](Research_Frontier.md) for the complete register (84 entries across all sectors).
 
 ---
 
