@@ -197,11 +197,30 @@ When figures are inserted, add a comment block explaining placement:
 \newpage
 
 \section{Introduction}
+\subsection{Open Problems Addressed}   % ← list which Research_Frontier.md entries this paper confronts
 \section{...}  (body sections)
 \section{Conclusion}
+\subsection{Problem Status After This Paper}  % ← state new status of each problem addressed
 \section*{Acknowledgements}
 \bibliography{...}
 \appendix  (if needed)
+```
+
+**Open Problems Addressed** (in Introduction): List each `Research_Frontier.md` entry the paper confronts, by ID and short title. Example:
+```latex
+\subsection{Open Problems Addressed}
+This paper addresses OPEN-SS-11 (SU(3) operator uniqueness) and
+advances CONJ-SM9-1 (pair counting decomposition) to partially proved status.
+```
+
+**Problem Status After This Paper** (in Conclusion): State the updated status of each problem. Example:
+```latex
+\subsection{Problem Status After This Paper}
+\begin{itemize}
+\item OPEN-SS-11: OPEN → THEO (proved in Theorem 2)
+\item CONJ-SM9-1: CONJ → PROP (partially supported; full proof pending SM-10 FEM)
+\item NEW: OPEN-SS-15 (registered; emerged from Theorem 2 corollary)
+\end{itemize}
 ```
 
 ### 4.2 Abstract Formatting

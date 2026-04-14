@@ -20,7 +20,12 @@
 | 2 | `CPP_the_theory.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min |
 | 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min |
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min |
-| 5 | `operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min |
+| 5 | `Research_Frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min |
+| 6 | `theorem-registry.md` | What we've proved — all theorems by series with axiom dependencies | 5 min |
+| 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min |
+
+**For sessions involving open problem work or repo restructuring**, also read:
+- `templates/Research_Frontier_Architecture.md` — the three-layer architecture (dashboard → problem histories → papers)
 
 ### Step 2: Check what happened last
 
@@ -73,7 +78,9 @@ CPP/
 ├── axiom-registry.md                 ← Axiom tracking, prediction counts
 ├── master_glossary.md                ← All CPP terms, acronyms, particles, forces
 ├── predictions.md                    ← Every quantitative prediction with status
-├── postulates_and_theorems.md        ← Formal AXIM, THEO, CORO, CONJ entries
+├── Research_Frontier.md              ← ** THE DASHBOARD — all open problems, conjectures, propositions **
+├── theorem-registry.md               ← All proved theorems by series with axiom dependencies
+├── postulates_and_theorems.md        ← [BEING REPLACED — content moving to axiom-registry + theorem-registry + Research_Frontier]
 ├── propositions.md                   ← Physically motivated claims
 ├── nomenclature.md                   ← ID code legend (AXIM, THEO, PROP, FALS...)
 ├── solution_candidates.md            ← Candidate solutions for open problems
@@ -124,7 +131,9 @@ CPP/
 | `axiom-registry.md` | All axioms, all predictions, growth tracking | After each paper |
 | `master_glossary.md` | Every CPP term, acronym, particle, force, process | Scan during Phase 7 of paper production |
 | `predictions.md` | Quantitative predictions with PDG comparison | After each paper |
-| `postulates_and_theorems.md` | Formal AXIM, THEO, CORO, CONJ entries | After each paper |
+| `Research_Frontier.md` | **The dashboard** — all open problems, conjectures, propositions with status and dependencies | After each paper |
+| `theorem-registry.md` | All proved theorems by series, with axiom dependencies | After each paper |
+| `postulates_and_theorems.md` | *[Being replaced]* — content moving to `axiom-registry.md`, `theorem-registry.md`, `Research_Frontier.md` | — |
 | `propositions.md` | Physically motivated claims not yet proved | As needed |
 | `solution_candidates.md` | Candidate solutions for open problems | As needed |
 | `future_projects.md` | 12+ prioritised research targets with status | After each session |
@@ -236,17 +245,18 @@ Full list: `open_problems/` folder and `future_projects.md`.
 | `CPP_the_theory.md` | Add results to chapter, update scorecard |
 | `theory-overview.md` | Add results, update formula card |
 | `axiom-registry.md` | Check axioms, add predictions, update ratio |
+| `theorem-registry.md` | Add new theorems with axiom dependencies; update theorem count |
+| `Research_Frontier.md` | Update status of problems addressed; move resolved items to §5; add new problems |
 | `master_glossary.md` | Scan paper for new terms, add in alphabetical order |
 | `founders_vision.md` | Add new physical intuitions from this session |
 | `predictions.md` | Add new predictions with PDG comparison |
-| `postulates_and_theorems.md` | Add new theorems, update conjecture status |
 | `future_projects.md` | Mark completed, add new targets, re-prioritise |
+| `problem_histories/` | Update history files for any problems touched this session |
 | `README.md` | Add paper to table, update counts |
 | `INDEX.md` | Add all new files |
 | `paper_catalog.md` | Add paper entry |
 | `series_[name]/README.md` | Add to series |
 | `bibliography/cpp_references.bib` | Add BibTeX entry for new paper |
-| `open_problems/` | Create new OPEN-P files, mark resolved ones |
 
 ### Post-Session Quick Checklist (for discovery sessions that don't produce a full paper)
 

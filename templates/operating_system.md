@@ -466,14 +466,15 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 ### Content documents (update substance)
 - [ ] `theory-overview.md` (see procedure below)
 - [ ] `axiom-registry.md` (see procedure below)
+- [ ] `theorem-registry.md` (see procedure below)
+- [ ] `Research_Frontier.md` (see procedure below)
 - [ ] `master_glossary.md` (see procedure below)
 - [ ] `founders_vision.md` (see procedure in Section 7)
 - [ ] `predictions.md` (see procedure below)
-- [ ] `postulates_and_theorems.md` (see procedure below)
 - [ ] `future_projects.md` (see procedure below)
 - [ ] `CPP_the_theory.md` (see procedure below)
 - [ ] `bibliography/cpp_references.bib` (see procedure below)
-- [ ] `open_problems/` (see procedure below)
+- [ ] `problem_histories/` (see procedure below)
 
 #### theory-overview.md update procedure
 1. Add any new quantitative results to the "Strongest Quantitative Results" table
@@ -513,14 +514,29 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 3. Update the total prediction count and zero-parameter prediction count
 
 #### postulates_and_theorems.md update procedure
-1. Add each new theorem with its ID, statement, and proof reference:
-   ```
-   **THEO-SM-8-1** (Bonded Shells): The 600-cell has exactly four bonded
-   polyhedral distance shells. [SM-8, Theorem 3.1]
-   ```
-2. Add any new conjectures (CONJ) with status
-3. Add any new corollaries (CORO)
-4. If a conjecture was proved or falsified, update its status (CONJ → THEO or CONJ → FALS)
+**[TRANSITIONING]** This file is being replaced by `theorem-registry.md` (theorems), `axiom-registry.md` (axioms), and `Research_Frontier.md` (conjectures, propositions, open problems). Until Phase 5 archival is complete, update BOTH the old file and the new registries. After Phase 5, update only the new files.
+
+#### theorem-registry.md update procedure
+1. Add each new theorem with ID, name, result, axiom dependencies, and paper reference
+2. Add any new corollaries
+3. Update the theorem count and theorems-per-axiom ratio
+4. Update the "Open Problems Remaining" table if a theorem resolves one
+
+#### Research_Frontier.md update procedure
+1. For each problem the paper addresses: update status, "Current best lead," and "Last updated"
+2. If a problem is resolved: move entry from §1 (OPEN) to §4 (Recently Resolved)
+3. If a conjecture is proved: move from §2 (CONJ) to §4 (Recently Resolved)
+4. If a conjecture is falsified: move from §2 (CONJ) to §6 (FALS)
+5. Add any NEW problems or conjectures that emerged during the session
+6. Update the dependency graph if connections changed
+7. Update the problem count summary table
+
+#### problem_histories/ update procedure
+**TRIGGER:** After any session that touches an open problem — not just after papers.
+1. If a history file exists for the problem: add a dated journal entry recording what was tried, what was learned, and who contributed what
+2. If no history file exists and significant work was done: create one using the template in `templates/Research_Frontier_Architecture.md`
+3. Capture Thomas's physical intuitions verbatim — these are the most valuable content
+4. Document negative results honestly — they narrow the solution space
 
 #### future_projects.md update procedure
 1. Mark any completed projects as DONE with date
@@ -553,16 +569,7 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 3. Verify all cite keys match what's used in the paper's .tex file
 
 #### open_problems/ update procedure
-**TRIGGER:** After any session that registers new open problems or resolves existing ones.
-1. For each new OPEN-P problem, create a file:
-   ```
-   Filename: OPEN-P-SM-cage-7.md
-   Content: Problem statement, context, why it matters,
-            candidate approaches, related problems
-   ```
-2. For resolved problems: add a "RESOLVED" header with date, resolution, and
-   which paper resolved it. Do NOT delete the file — it's part of the history.
-3. For falsified conjectures: rename with FALS prefix or add FALSIFIED header
+**[TRANSITIONING]** The `open_problems/` directory is being replaced by `Research_Frontier.md` (dashboard) and `problem_histories/` (narratives). Until Phase 5 archival is complete, new problems should be added to `Research_Frontier.md` directly. After Phase 5, the individual files in `open_problems/` will be archived. See `Research_Frontier.md` procedure above for the new workflow.
 
 ### Navigation documents (update structure)
 - [ ] `README.md` — add paper to table, update counts (see procedure below)
