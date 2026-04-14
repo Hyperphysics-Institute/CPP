@@ -15,7 +15,7 @@
 
 Conscious Point Physics proposes that physical reality consists of Conscious Points (CPs) — fundamental entities with polarity, position on a 600-cell lattice, and the capacity to perceive and respond to their local environment. All Standard Model particles emerge as stable geometric configurations of CPs within the lattice, and all fundamental forces arise from a single interaction: the Space Stress Vector (SSV) between CPs.
 
-The theory is built on nine axioms (see [`postulates_and_theorems.md`](postulates_and_theorems.md)) and derives its results from the geometry of the 600-cell — a regular 4-dimensional polytope with 120 vertices, 720 edges, and icosahedral H₄ symmetry. The 600-cell is the sole geometric input; all particle masses, coupling constants, and mixing angles are consequences of its structure.
+The theory is built on six axioms (see [`axiom-registry.md`](axiom-registry.md)) and derives its results from the geometry of the 600-cell — a regular 4-dimensional polytope with 120 vertices, 720 edges, and icosahedral H₄ symmetry. The 600-cell is the sole geometric input; all particle masses, coupling constants, and mixing angles are consequences of its structure. For proved results, see [`theorem-registry.md`](theorem-registry.md). For open problems and conjectures, see [`Research_Frontier.md`](Research_Frontier.md).
 
 ---
 
@@ -83,12 +83,13 @@ CPP/
 ├── README.md                    ← This file
 ├── INDEX.md                     ← Directory-by-directory map
 ├── paper_catalog.md             ← Master list of all papers with IDs and status
-├── postulates_and_theorems.md   ← 6 axioms, theorems, corollaries, conjectures
+├── Research_Frontier.md          ← ** THE DASHBOARD — all open problems, conjectures, propositions **
+├── theorem-registry.md           ← All proved theorems by series with axiom dependencies
+├── axiom-registry.md             ← Axiom tracking, prediction counts
 ├── predictions.md               ← Every quantitative prediction with status
-├── propositions.md              ← Physically motivated claims not yet proved
 ├── nomenclature.md              ← ID code legend (AXIM, THEO, PROP, etc.)
-├── solution_candidates.md       ← Candidate solutions for open problems
 │
+├── problem_histories/           ← Problem narratives — the drama of discovery
 ├── templates/                   ← Formatting standards and documentation templates
 │   ├── paper-formatting.md      ← Master formatting standard for all papers
 │   └── documentation-suite.md   ← Template for the 8 documentation files per paper
@@ -102,7 +103,6 @@ CPP/
 ├── series_electroweak/          ← EW-1 through EW-5
 ├── series_quantum_mechanics/    ← QM-1 through QM-6
 ├── series_foundations/          ← SD-1 through SD-5 (superdeterminism)
-├── open_problems/               ← 50+ registered problems with status tracking
 └── archive/                     ← Superseded and exploratory material
 ```
 
@@ -145,7 +145,7 @@ The falsified claims register includes 7 entries. The open problems register con
 - **Want the headline result?** Read SM-6 ([PDF on OSF](https://osf.io/9dfya/)) — the lepton mass spectrum from one equation.
 - **Want to evaluate the theory?** Read [`predictions.md`](predictions.md) — every quantitative claim with status.
 - **Looking for a specific paper?** See [`paper_catalog.md`](paper_catalog.md).
-- **Want to contribute?** See [`open_problems/`](open_problems/).
+- **Want to contribute?** See [`Research_Frontier.md`](Research_Frontier.md) — the complete problem dashboard with recommended attack order.
 - **Writing a new paper?** See [`templates/paper-formatting.md`](templates/paper-formatting.md).
 
 ---
