@@ -198,7 +198,9 @@ When figures are inserted, add a comment block explaining placement:
 
 \section{Introduction}
 \subsection{Open Problems Addressed}   % ← list which Research_Frontier.md entries this paper confronts
-\section{...}  (body sections)
+\section{...}  (body sections — definitions, lemmas, theorems, proofs)
+\section{Physical Interpretation}       % ← CPP mechanism: what physical objects are involved and what are they doing?
+\section{CPP-to-Conventional-Physics Mapping}  % ← structural correspondence table
 \section{Conclusion}
 \subsection{Problem Status After This Paper}  % ← state new status of each problem addressed
 \section*{Acknowledgements}
@@ -212,6 +214,10 @@ When figures are inserted, add a comment block explaining placement:
 This paper addresses OPEN-SS-11 (SU(3) operator uniqueness) and
 advances CONJ-SM9-1 (pair counting decomposition) to partially proved status.
 ```
+
+**Physical Interpretation** (after the mathematical derivation): Explain the CPP mechanism in terms of CPs, DPs, chains, cages, SSV fields, and DI-bit propagation. What physical objects are involved? What are they doing? Where is the energy? This section should be intelligible to a physicist who accepts the CPP ontology but hasn't read the mathematical proof. Example: SS-3 §5 identifies the 8 gluon degrees of freedom as 4 linear DP-chain bond oscillations + 4 coupled harmonic junction oscillations on the polarity-structured tetrahedron.
+
+**CPP-to-Conventional-Physics Mapping** (after Physical Interpretation): Provide a table or structured comparison showing how each element of the CPP mechanistic account corresponds to the conventional physics description. The mapping is *structural*, not literal — CPP operates at a finer granularity than perturbative QFT. The correspondence is at the level of symmetry, degrees of freedom, and observable predictions.
 
 **Problem Status After This Paper** (in Conclusion): State the updated status of each problem. Example:
 ```latex

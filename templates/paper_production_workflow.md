@@ -52,11 +52,29 @@ Each CPP paper follows a production pipeline that has evolved through the SM-6 a
    - Abstract, Keywords, Plain Language Summary
    - raggedright, Table of Contents
    - Sections with `% ===` markers
+   - **CPP Physical Mechanism section** (see below)
+   - **CPP-to-Conventional-Physics Mapping section** (see below)
    - Appendices (numerical verification, sensitivity analysis)
    - Acknowledgements with OSF DOI
    - `.bib` bibliography (local, next to `.tex`)
 2. Compile to PDF (pdflatex + bibtex, 3 passes).
 3. Run formatting audit (all template checks must pass).
+
+### Required: CPP Physical Mechanism Bridge
+
+Every CPP paper must include a section (typically after the mathematical derivation and before the conclusion) that answers two questions:
+
+**Question 1 — "What is physically happening?"**
+Explain the CPP mechanism in terms of CPs, DPs, chains, cages, SSV fields, and DI-bit propagation. What physical objects are involved? What are they doing? Where is the energy? This section should be intelligible to a physicist who accepts the CPP ontology but hasn't read the mathematical proof.
+
+**Question 2 — "How does this map to conventional physics?"**
+Provide a table or structured comparison showing how each element of the CPP mechanistic account corresponds to the conventional physics description. The mapping is *structural*, not literal — CPP operates at a finer granularity than perturbative QFT, so there is generally no one-to-one correspondence between individual CPP elements and individual Feynman diagrams. The correspondence is at the level of the symmetry, the degrees of freedom, and the observable predictions.
+
+**Why this matters:** Without the physical mechanism section, a CPP paper looks like a mathematical reproduction of known results. With it, the paper demonstrates that CPP provides a *deeper* account — it explains *why* the mathematics takes the form it does. This is the difference between "CPP accommodates SU(3)" and "CPP explains why the strong force has 8 degrees of freedom."
+
+**Example (from SS-3 v1.1):**
+- Physical mechanism: 4 linear DP-chain bond oscillations + 4 coupled harmonic junction oscillations = 8 modes
+- Mapping: 8 CPP oscillation modes ↔ 8 QCD gluon fields; colour states ↔ cage base vertices; gluon exchange ↔ DI-bit propagation along DP chains; confinement ↔ cage energetic stability
 
 **Output:** `[PAPER-ID]_[title].tex`, `.pdf`, `[PAPER-ID]_references.bib`
 
