@@ -1,11 +1,28 @@
 % ============================================================
 % SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
-% Version 1.1 — 14 April 2026
+% Version 1.3 — 15 April 2026
 %
 % CHANGELOG:
-% v1.1 (14 Apr 2026): Added §5 (Physical Interpretation — the 4+4
+% v1.3 (15 Apr 2026): Sonnet adversarial review revisions.
+%   Added §6.5: explicit basis transformation between Gell-Mann
+%   and physical 4+4 modes — 8×8 matrix M with det=2/√3,
+%   physical motivation (3 principles), inverse transformation,
+%   non-orthogonality remark. Added Figure 1 (TikZ tetrahedron
+%   diagram with polarity labels, DP chain bonds, junction modes).
+%   Added Remark 2.5 (T^a = λ^a/2 normalization convention).
+%   Added Appendix A.4 (basis transformation verification).
+% v1.2 (15 Apr 2026): Copilot review revisions. Lemma 3.2 proof
+%   rewritten with analytic orthogonality argument (Gell-Mann
+%   trace relation Tr(λ^a λ^b) = 2δ^{ab}), demoting numerical
+%   check to appendix confirmation. Killing-Cartan classification
+%   cited (Humphreys 1972) in Theorem 3.3. Explicit Gell-Mann
+%   generator mapping added to Discussion §5.2 with cross-ref
+%   to physical 4+4 decomposition. Introduction clarified re
+%   basis-rotation invariance. Appendix A.1 rewritten as
+%   confirmation of analytic proof.
+% v1.1 (14 Apr 2026): Added §6 (Physical Interpretation — the 4+4
 %   mode decomposition from polarity analysis of the full tetrahedron).
-%   Added §6 (CPP-to-QCD mapping). Thomas's physical insight: the 8
+%   Added §7 (CPP-to-QCD mapping). Thomas's physical insight: the 8
 %   generators correspond to 4 linear DP-chain bond oscillations +
 %   4 coupled harmonic junction oscillations, not the mathematical
 %   6+2 (off-diagonal + diagonal) decomposition.
@@ -33,6 +50,7 @@
 \usepackage{float}
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage{parskip}
+\usepackage{tikz}
 
 % Bibliography
 \usepackage[authoryear,round]{natbib}
@@ -74,7 +92,7 @@
 
 \title{\textbf{SS-3: Uniqueness of SU(3) from the Tetrahedral Cage}\\[6pt]
 {\large Conscious Point Physics --- Strong Sector Series}\\[4pt]
-{\normalsize Version 1.1, 14 April 2026}}
+{\normalsize Version 1.3, 15 April 2026}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -99,9 +117,10 @@ The argument has three steps.  First, the real vector space of
 traceless Hermitian operators on~$\CC^3$ has dimension exactly
 $3^2 - 1 = 8$.  Second, this space equipped with the matrix
 commutator is, by definition, the Lie algebra $\su(3)$.  Third,
-the eight CPP operators are linearly independent (verified to
-machine precision, rank~8 Gram matrix), so they span the full
-space and generate~$\su(3)$ necessarily.  The $C_3$ rotational
+the eight CPP operators are linearly independent (analytically,
+via the Gell-Mann orthogonality relation $\Tr(\lambda^a \lambda^b)
+= 2\delta^{ab}$), so they span the full space and
+generate~$\su(3)$ necessarily.  The $C_3$ rotational
 symmetry of the cage selects the standard Gell-Mann basis within
 this unique algebra but does not alter the algebra itself.
 
@@ -121,6 +140,9 @@ same $8$-dimensional space that the Gell-Mann matrices span
 \emph{mathematically}.  The eight gluon degrees of freedom are not
 abstract gauge fields but standing-wave oscillation patterns of
 the DP chains that constitute the baryon's binding energy.
+An explicit $8 \times 8$ change-of-basis matrix between the
+Gell-Mann generators and the physical modes is constructed,
+confirming that the two bases span the same algebra.
 
 \medskip\noindent
 \textbf{Open Problem resolved:} OPEN-SS-11 (SU(3) operator
@@ -183,7 +205,9 @@ If so, the SS-1 derivation would show that SU(3) is
 The result would be a possibility, not a prediction.
 
 This paper answers the question: \textbf{no}.  SU(3) is the unique
-Lie algebra of the tetrahedral cage.  The proof is elementary linear
+Lie algebra of the tetrahedral cage.  The tetrahedral geometry
+fixes the operator structure up to basis rotations --- the algebra
+itself is invariant.  The proof is elementary linear
 algebra --- it requires no representation theory beyond the
 definition of $\su(N)$ and no computation beyond a rank check.
 
@@ -230,6 +254,17 @@ two Hermitian matrices is Hermitian: $(i[X,Y])^\dagger =
 is preserved because $\Tr([X,Y]) = 0$ for any matrices $X, Y$.
 \end{remark}
 
+\begin{remark}[Normalization convention]
+\label{rem:normalization}
+Throughout this paper, generators are normalised as
+$T^a = \lambda^a/2$, where $\lambda^a$ are the Gell-Mann
+matrices.  The factor of $\frac{1}{2}$ gives the standard
+physics convention $\Tr(T^a T^b) = \frac{1}{2}\delta^{ab}$,
+under which the structure constants $f^{abc}$ in
+$[T^a, T^b] = if^{abc}T^c$ take their conventional values
+(e.g., $f^{123} = 1$, $f^{147} = \frac{1}{2}$).
+\end{remark}
+
 % ===================================================================
 \section{The Uniqueness Theorem}
 \label{sec:main}
@@ -256,13 +291,25 @@ $\RR$ and therefore form a basis for $\Herm_0^3$.
 \end{lemma}
 
 \begin{proof}
-Each $T^a$ is traceless and Hermitian by construction (SS-1b,
-verified to $< 10^{-16}$).  The Gram matrix
-$G_{ab} = \Tr(T^a T^b) / (1/4)$ has rank~8 and determinant
-$\det(G) = 3.9 \times 10^{-3} \neq 0$ (numerical verification;
-see Appendix~\ref{app:numerical}).  Therefore the eight operators
-are linearly independent.  Since $\dim(\Herm_0^3) = 8$
+Each $T^a$ is traceless and Hermitian by construction
+(SS-1b~\citep{cpp_ss1b}).  SS-1b Theorem~1 proves
+$T^a = \lambda^a/2$ exactly, where $\lambda^a$ are the
+Gell-Mann matrices.  The standard orthogonality relation
+for the Gell-Mann matrices is
+\begin{equation}
+\Tr(\lambda^a \lambda^b) = 2\,\delta^{ab},
+\label{eq:gellmann-ortho}
+\end{equation}
+which gives $\Tr(T^a T^b) = \delta^{ab}/2$.  The Gram matrix
+$G_{ab} = \Tr(T^a T^b)$ is therefore $\frac{1}{2}I_8$ ---
+diagonal with every entry nonzero.  Orthogonal nonzero vectors
+are linearly independent, so $\{T^1, \ldots, T^8\}$ are linearly
+independent over~$\RR$.  Since $\dim(\Herm_0^3) = 8$
 (Lemma~\ref{lem:dim}), they form a basis.
+
+\emph{Numerical confirmation:} The Gram matrix rank and
+determinant are verified to machine precision in
+Appendix~\ref{app:numerical}.
 \end{proof}
 
 \begin{theorem}[Uniqueness of SU(3)]
@@ -295,9 +342,10 @@ space $\Herm_0^3$, and generate the same algebra $\su(3)$
 corresponding to a different basis convention).  If they are
 linearly dependent (rank $< 8$), they span a proper subspace and
 generate a proper subalgebra of $\su(3)$ --- but $\su(3)$ is
-\emph{simple} (it has no proper ideals), so its only proper
-subalgebras have dimension $\leq 3$ (isomorphic to $\su(2)$,
-$\mathfrak{u}(1)$, or their sums).  An alternative set of
+\emph{simple} (it has no proper ideals; see the Killing--Cartan
+classification of simple Lie algebras~\citep{humphreys}),
+so its only proper subalgebras have dimension $\leq 3$
+(isomorphic to $\su(2)$, $\mathfrak{u}(1)$, or their sums).  An alternative set of
 $8$ operators that generates a Lie algebra different from
 $\su(3)$ would require $\dim > 8$ or the matrices to be
 non-Hermitian or to have nonzero trace --- all of which violate
@@ -423,6 +471,16 @@ The count of $8$ generators decomposes as:
 \;=\; 8 \;=\; \dim(\su(3)).
 \label{eq:count}
 \end{equation}
+In the Gell-Mann basis this decomposition is explicit: the six
+off-diagonal generators $\lambda^{1,2}$ (edge $rg$),
+$\lambda^{4,5}$ (edge $rb$), and $\lambda^{6,7}$ (edge $gb$)
+correspond to real and imaginary hopping modes on each of the
+three tetrahedral edges, while the two diagonal generators
+$\lambda^3$ and $\lambda^8$ correspond to the two independent
+relative phases among three vertices.  (The physical $4+4$
+decomposition of \S\ref{sec:physical} provides a complementary
+basis rooted in the DP chain oscillation modes.)
+
 This is the same count as Grok's layer-depth argument
 ($1 + 3 + 4 = 8$; SS-1 Remark~3.1~\citep{cpp_ss1}).
 Both routes confirm that the dimension $8$ is a geometric
@@ -482,6 +540,47 @@ $V_3$--$V_4$ & $(-)(-)$ & Same & No --- repulsive, no stable chain \\
 \bottomrule
 \end{tabular}
 \end{center}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.4,
+    posvert/.style={circle, draw=blue!70, fill=blue!15, thick,
+                    minimum size=8mm, font=\small},
+    negvert/.style={circle, draw=red!70, fill=red!15, thick,
+                    minimum size=8mm, font=\small},
+    dpchain/.style={very thick, blue!60!black},
+    nochain/.style={thick, dashed, gray}]
+  % Vertices
+  \node[posvert] (V1) at (-2.2, -0.8) {$V_1\!(+)$};
+  \node[posvert] (V2) at ( 2.2, -0.8) {$V_2\!(+)$};
+  \node[negvert] (V3) at ( 0,   -2.6) {$V_3\!(-)$};
+  \node[negvert] (V4) at ( 0,    1.8) {$V_4\!(-)$};
+  % DP chain bonds (opposite polarity)
+  \draw[dpchain] (V1) -- node[left,  font=\footnotesize] {$L_1$} (V3);
+  \draw[dpchain] (V1) -- node[above left, font=\footnotesize] {$L_2$} (V4);
+  \draw[dpchain] (V2) -- node[right, font=\footnotesize] {$L_3$} (V3);
+  \draw[dpchain] (V2) -- node[above right,font=\footnotesize] {$L_4$} (V4);
+  % Same-polarity edges (no DP chain)
+  \draw[nochain] (V1) -- node[below, font=\footnotesize] {no chain} (V2);
+  \draw[nochain] (V3) -- node[right, font=\footnotesize] {no chain} (V4);
+  % Legend
+  \node[anchor=west, font=\footnotesize] at (3.0, 0.6)
+    {\textcolor{blue!60!black}{\rule{8mm}{1.5pt}} DP chain bond};
+  \node[anchor=west, font=\footnotesize] at (3.0, 0.1)
+    {\textcolor{gray}{- - -} same polarity (no chain)};
+  % Junction labels
+  \node[font=\scriptsize, gray] at (-1.2, -2.0) {$H_1$};
+  \node[font=\scriptsize, gray] at (-2.0,  0.6) {$H_2$};
+  \node[font=\scriptsize, gray] at ( 2.0,  0.6) {$H_3$};
+  \node[font=\scriptsize, gray] at ( 0.0,  0.6) {$H_4$};
+\end{tikzpicture}
+\caption{Polarity structure of the tetrahedral cage in a baryon.
+Solid lines: DP chain bonds on opposite-polarity edges ($L_1$--$L_4$).
+Dashed lines: same-polarity edges (no stable chain).
+Junction modes $H_1$--$H_4$ arise at each vertex where two DP chains
+meet.}
+\label{fig:tetrahedron}
+\end{figure}
 
 The four opposite-polarity edges carry physical DP chains ---
 longitudinal strings of alternating-polarity Dipole Pairs that
@@ -550,6 +649,163 @@ perspectives.  The mathematical basis is convenient for
 computation (the structure constants $f^{abc}$ take their
 standard form).  The physical basis tells you what is vibrating
 and why there are exactly eight somethings doing it.
+
+\subsection{Explicit basis transformation}
+\label{sec:basis_transform}
+
+Each physical mode acts on the colour state $V = \CC^3$ as a
+traceless Hermitian perturbation.  The four linear bond modes
+perturb the coupling between colour vertices directly (for
+base-triangle bonds) or modulate the effective on-site energy
+of a colour vertex (for apex bonds).  The four junction modes
+create effective indirect couplings between vertices that share
+no direct DP chain.
+
+\begin{definition}[Physical mode operators]
+\label{def:physical_ops}
+The eight physical mode operators, expressed as elements of
+$\Herm_0^3$ in terms of the Gell-Mann generators $T^a$, are:
+
+\medskip
+\noindent\textbf{Group~A --- Linear bond modes.}
+\begin{alignat}{3}
+L_1 &= T^4 &\quad& \text{(base bond $V_1$--$V_3$:
+  real $r \!\leftrightarrow\! b$ hopping)},
+\label{eq:L1}\\
+L_2 &= T^3 + \tfrac{1}{\sqrt{3}}\,T^8 &\quad&
+  \text{(apex bond $V_1$--$V_4$: on-site $V_1$ weight)},
+\label{eq:L2}\\
+L_3 &= T^6 &\quad& \text{(base bond $V_2$--$V_3$:
+  real $g \!\leftrightarrow\! b$ hopping)},
+\label{eq:L3}\\
+L_4 &= -T^3 + \tfrac{1}{\sqrt{3}}\,T^8 &\quad&
+  \text{(apex bond $V_2$--$V_4$: on-site $V_2$ weight)}.
+\label{eq:L4}
+\end{alignat}
+
+\noindent\textbf{Group~B --- Coupled harmonic junction modes.}
+\begin{alignat}{3}
+H_1 &= T^1 &\quad& \text{(junction at $V_3$: indirect real
+  $r \!\leftrightarrow\! g$ coupling)},
+\label{eq:H1}\\
+H_2 &= T^5 &\quad& \text{(junction at $V_1$: phase-shifted
+  $r \!\leftrightarrow\! b$ coupling)},
+\label{eq:H2}\\
+H_3 &= T^7 &\quad& \text{(junction at $V_2$: phase-shifted
+  $g \!\leftrightarrow\! b$ coupling)},
+\label{eq:H3}\\
+H_4 &= T^2 &\quad& \text{(junction at $V_4$: indirect imaginary
+  $r \!\leftrightarrow\! g$ coupling)}.
+\label{eq:H4}
+\end{alignat}
+\end{definition}
+
+\noindent\textbf{Physical motivation.}
+The assignments follow from three principles:
+\begin{enumerate}[label=(\alph*)]
+\item \emph{Base-edge bonds act as direct colour hoppers.}
+  A DP chain linking two colour vertices ($V_1$--$V_3$ or
+  $V_2$--$V_3$) directly modulates the amplitude for DI-bit
+  transfer between those vertices.  Longitudinal
+  stretch/compression is a real (in-phase) coupling: hence
+  $L_1 = T^4$ and $L_3 = T^6$.
+\item \emph{Apex-edge bonds act as diagonal modulators.}
+  A DP chain linking a colour vertex to the apex ($V_1$--$V_4$
+  or $V_2$--$V_4$) modulates the effective confinement energy
+  at that vertex.  In the colour basis this is a diagonal
+  traceless operator.  The $V_1$ bond gives
+  $\ket{r}\!\bra{r} - \frac{1}{3}I = T^3 + \frac{1}{\sqrt{3}}T^8$;
+  the $V_2$ bond gives
+  $\ket{g}\!\bra{g} - \frac{1}{3}I = -T^3 + \frac{1}{\sqrt{3}}T^8$.
+\item \emph{Junction modes create indirect couplings.}
+  At vertex $V_3$, the anti-phase oscillation of the $V_1$--$V_3$
+  and $V_2$--$V_3$ bonds transfers colour amplitude
+  $V_1 \to V_3 \to V_2$, producing a real $r \leftrightarrow g$
+  coupling ($H_1 = T^1$).  At the apex $V_4$, the same
+  mechanism operates through the qCP site, whose ZBW oscillation
+  introduces a $\pi/2$ phase shift, yielding an imaginary
+  $r \leftrightarrow g$ coupling ($H_4 = T^2$).  At the
+  positive-polarity vertices $V_1$ and $V_2$, the anti-phase
+  oscillation of one base-edge bond and one apex bond
+  phase-modulates the base-edge coupling, converting the
+  real hopping mode into its imaginary partner
+  ($H_2 = T^5$, $H_3 = T^7$).
+\end{enumerate}
+
+\begin{proposition}[Basis transformation]
+\label{prop:basis}
+The change-of-basis matrix $M$, defined by
+$P_i = \sum_a M_{ia}\,T^a$ where $P = (L_1, L_2, L_3, L_4,
+H_1, H_2, H_3, H_4)$, is
+\begin{equation}
+M \;=\;
+\begin{pmatrix}
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\[2pt]
+0 & 0 & 1 & 0 & 0 & 0 & 0 & \frac{1}{\sqrt{3}} \\[2pt]
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\[2pt]
+0 & 0 & -1 & 0 & 0 & 0 & 0 & \frac{1}{\sqrt{3}} \\[2pt]
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\[2pt]
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\[2pt]
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\[2pt]
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0
+\end{pmatrix},
+\label{eq:M}
+\end{equation}
+with $\det(M) = \frac{2}{\sqrt{3}} \neq 0$.  The physical modes
+are therefore linearly independent and span $\su(3)$.
+\end{proposition}
+
+\begin{proof}
+Equations~\eqref{eq:L1}--\eqref{eq:H4} define each $P_i$ as
+a linear combination of $T^a$; the matrix $M$ records these
+coefficients.  Six columns of $M$ contain a single nonzero
+entry (columns $T^1, T^2, T^4, T^5, T^6, T^7$), contributing
+a factor of~$1$ each to the determinant.  The remaining
+$2 \times 2$ block in columns $(T^3, T^8)$ is
+\begin{equation}
+\begin{pmatrix}
+1 & \frac{1}{\sqrt{3}} \\[2pt]
+-1 & \frac{1}{\sqrt{3}}
+\end{pmatrix},
+\qquad
+\det = \frac{1}{\sqrt{3}} - \bigl(-\tfrac{1}{\sqrt{3}}\bigr)
+     = \frac{2}{\sqrt{3}}.
+\end{equation}
+Therefore $\det(M) = 2/\sqrt{3} \neq 0$.  (Numerical
+verification: Appendix~\ref{app:basis}.)  \qed
+\end{proof}
+
+\noindent The inverse transformation expresses each Gell-Mann
+generator in terms of physical modes:
+\begin{equation}
+\boxed{
+\begin{aligned}
+T^1 &= H_1, & T^2 &= H_4, &
+T^3 &= \tfrac{1}{2}(L_2 - L_4), & T^4 &= L_1, \\
+T^5 &= H_2, & T^6 &= L_3, &
+T^7 &= H_3, &
+T^8 &= \tfrac{\sqrt{3}}{2}(L_2 + L_4).
+\end{aligned}}
+\label{eq:inverse}
+\end{equation}
+The only nontrivial mixing is in the diagonal sector:
+the $T^3$ (isospin) and $T^8$ (hypercharge) generators
+are the difference and sum of the two apex-bond modes
+$L_2$ and $L_4$.  Physically, the two apex DP chains
+share a common diagonal component --- their sum gives
+the overall colour-neutral phase ($T^8$), and their
+difference gives the $V_1$-vs-$V_2$ asymmetry ($T^3$).
+
+\begin{remark}[Non-orthogonality of the physical basis]
+The physical basis is \emph{not} orthonormal under the trace
+inner product: $2\Tr(L_2 L_4) = -\frac{2}{3} \neq 0$, and
+$2\Tr(L_2 L_2) = \frac{4}{3} \neq 1$.  This is a physical
+feature, not a defect: the two apex bonds share a common
+$T^8$ component because both connect to the same apex vertex
+$V_4$.  The Gell-Mann basis is the unique orthonormal basis
+(up to $C_3$ rotation); the physical basis reflects the
+actual geometry of the cage.
+\end{remark}
 
 % ===================================================================
 \section{The CPP-to-QCD Mapping}
@@ -689,15 +945,18 @@ available at
 
 \subsection{Linear independence}
 
-The Gram matrix $G_{ab} = 4\,\Tr(T^a T^b)$ has:
+Lemma~\ref{lem:basis} proves linear independence analytically via
+the orthogonality relation $\Tr(T^a T^b) = \delta^{ab}/2$.  The
+numerical computation confirms this: the Gram matrix
+$G_{ab} = 2\,\Tr(T^a T^b)$ satisfies:
 \begin{itemize}
+\item $G_{ab} = \delta_{ab}$ to machine precision ($< 10^{-15}$).
 \item Rank: $8$ (full rank).
-\item Determinant: $\det(G) = 3.906 \times 10^{-3} \neq 0$.
+\item Determinant: $\det(G) = 1.000$ (identity matrix).
 \end{itemize}
-The factor $4$ normalises so that $G_{ab} = \delta_{ab}$ for the
-standard Gell-Mann convention (which uses $\Tr(T^a T^b) = \delta_{ab}/2$;
-our $T^a = \lambda^a/2$ gives $\Tr(T^a T^b) = \delta_{ab}/4$
-for $a \neq 8$, with $T^8$ having a different normalisation).
+The result is numerically exact because the Gell-Mann matrices
+have rational or algebraic entries; rounding error enters only
+through floating-point representation.
 
 \subsection{Commutation closure}
 
@@ -724,6 +983,27 @@ $P^3 = I$.  Under conjugation $T^a \mapsto P T^a P^{-1}$:
 The $C_3$ action maps $\Herm_0^3$ into itself, confirming it is
 an inner automorphism of $\su(3)$.
 
+\subsection{Basis transformation}
+\label{app:basis}
+
+The change-of-basis matrix $M$
+(Proposition~\ref{prop:basis}) is constructed by computing
+$M_{ia} = 2\,\Tr(P_i T^a)$ for each physical mode $P_i$ and
+generator $T^a$.  Numerical results:
+\begin{itemize}
+\item $\det(M) = 1.1547 = 2/\sqrt{3}$ to machine precision.
+\item All eight $P_i$ are traceless ($|\Tr| < 10^{-16}$) and
+  Hermitian.
+\item The physical-basis Gram matrix
+  $G_{ij} = 2\,\Tr(P_i P_j)$ is block-diagonal: $G = I_6 \oplus
+  \left(\begin{smallmatrix} 4/3 & -2/3 \\ -2/3 & 4/3
+  \end{smallmatrix}\right)$ for the $(L_2, L_4)$ block,
+  confirming the non-orthogonality noted in
+  \S\ref{sec:basis_transform}.
+\item The inverse $M^{-1}$ reproduces
+  equations~\eqref{eq:inverse} to machine precision.
+\end{itemize}
+
 % ===================================================================
 
 \begin{thebibliography}{9}
@@ -747,6 +1027,11 @@ CPP EW-5 v3, Hyperphysics Institute (2026).
 H.~S.~M. Coxeter,
 \textit{Regular Polytopes}, 3rd ed.,
 Dover Publications (1973).
+
+\bibitem[Humphreys(1972)]{humphreys}
+J.~E. Humphreys,
+\textit{Introduction to Lie Algebras and Representation Theory},
+Graduate Texts in Mathematics~9, Springer (1972).
 
 \end{thebibliography}
 

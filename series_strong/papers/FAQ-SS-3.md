@@ -1,7 +1,7 @@
 # FAQ — SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
 
-**Paper:** SS-3 v1.1
-**Last updated:** 14 April 2026
+**Paper:** SS-3 v1.3
+**Last updated:** 15 April 2026
 
 ---
 
@@ -15,7 +15,7 @@ It does — and that's progress. "Why SU(3)?" is unanswerable within the Standar
 
 ### Q3: Could the 4+4 mode decomposition be wrong?
 
-The counting (4 + 4 = 8) is exact and follows from the polarity structure of the tetrahedron. What has NOT been verified is the explicit linear transformation mapping the physical basis {L₁...L₄, H₁...H₄} to the mathematical basis {T¹...T⁸}. If this mapping turns out to involve degeneracies (two physical modes mapping to the same generator), the counting would still work but the one-to-one identification would need revision. This is a computation to be done, not a fundamental concern.
+The counting (4 + 4 = 8) is exact and follows from the polarity structure of the tetrahedron. As of v1.3, the explicit 8×8 change-of-basis matrix M has been computed (Proposition 6.5), with det(M) = 2/√3 ≠ 0 confirmed both analytically and numerically. The physical and mathematical bases provably span the same su(3) algebra. Six physical modes map directly to individual Gell-Mann generators; the two apex bond modes L₂ and L₄ mix to produce T³ (isospin) and T⁸ (hypercharge).
 
 ### Q4: What about mesons? They have quark-antiquark pairs, not three quarks. Does the argument still apply?
 
@@ -40,3 +40,7 @@ SS-1 focused on constructing the operators and verifying the algebra — a possi
 ### Q9: What is the "CPP Physical Mechanism Bridge" mentioned in the workflow?
 
 A new requirement (codified 14 April 2026) that every CPP paper must include sections explaining: (1) what physical objects are involved in the CPP mechanism and what they are doing, and (2) how this maps structurally to the conventional physics description. SS-3 is the first paper written under this requirement. The bridge prevents CPP papers from being read as mere mathematical reproductions of known results.
+
+### Q10: What is the physical meaning of the non-orthogonality of L₂ and L₄?
+
+The two apex bond modes share a common T⁸ component because both DP chains terminate at the same apex vertex V₄. Their trace inner product 2Tr(L₂L₄) = −2/3 reflects this geometric coupling. Physically, the sum of the two apex modes gives the overall colour-neutral phase (hypercharge, T⁸), while their difference gives the V₁-vs-V₂ asymmetry (isospin, T³). The non-orthogonality is a feature of the cage geometry, not a defect of the basis.

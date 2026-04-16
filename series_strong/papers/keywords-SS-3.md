@@ -1,17 +1,17 @@
 # Keywords — SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
 
-**Paper:** SS-3 v1.1
-**Last updated:** 14 April 2026
+**Paper:** SS-3 v1.3
+**Last updated:** 15 April 2026
 
 ---
 
 ## Primary Keywords
 
-SU(3) uniqueness, Lie algebra, tetrahedral cage, 600-cell polytope, colour gauge group, Gell-Mann matrices, Conscious Point Physics, gauge group derivation
+SU(3) uniqueness, Lie algebra, tetrahedral cage, 600-cell polytope, colour gauge group, Gell-Mann matrices, Conscious Point Physics, gauge group derivation, change-of-basis matrix
 
 ## Secondary Keywords
 
-representation theory, traceless Hermitian matrices, linear independence, strong force, gluon modes, DP chain oscillation, baryon binding energy, QCD, colour charge, C₃ symmetry, 4+4 mode decomposition
+representation theory, traceless Hermitian matrices, linear independence, strong force, gluon modes, DP chain oscillation, baryon binding energy, QCD, colour charge, C₃ symmetry, 4+4 mode decomposition, Killing–Cartan classification, Gell-Mann orthogonality, non-orthogonal basis, isospin-hypercharge decomposition
 
 ## PACS Codes
 

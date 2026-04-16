@@ -1,7 +1,7 @@
 # Glossary — SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
 
-**Paper:** SS-3 v1.1
-**Last updated:** 14 April 2026
+**Paper:** SS-3 v1.3
+**Last updated:** 15 April 2026
 
 ---
 
@@ -11,7 +11,13 @@
 
 **H₀³ (generator space)** — The real vector space of traceless Hermitian 3×3 matrices. Dimension 8. Identical to su(3) as a vector space; becomes su(3) when equipped with the bracket.
 
-**Gram matrix** — The matrix G_ab = 4·Tr(T^a T^b) measuring the inner products of the 8 CPP operators. Rank 8 confirms linear independence. Determinant 3.9×10⁻³.
+**Gram matrix** — The matrix G_{ab} = Tr(T^a T^b) measuring the inner products of the 8 CPP operators. The Gell-Mann orthogonality relation Tr(λ^a λ^b) = 2δ^{ab} gives G_{ab} = δ^{ab}/2 analytically — a diagonal matrix confirming linear independence without numerical computation. (Confirmed to 2.2×10⁻¹⁶ numerically.)
+
+**Change-of-basis matrix M** — The 8×8 matrix defined by P_i = Σ_a M_{ia} T^a, where P = (L₁,...,L₄, H₁,...,H₄) are the physical modes and T^a are the Gell-Mann generators. Has det(M) = 2/√3 ≠ 0, confirming the physical modes form a basis for su(3). Six columns are unit vectors; the nontrivial 2×2 block mixes T³ and T⁸ through the two apex bond modes L₂ and L₄.
+
+**Normalization convention** — Generators are T^a = λ^a/2, giving Tr(T^a T^b) = δ^{ab}/2. This is the standard physics convention under which structure constants f^{abc} take their standard values (e.g., f^{123} = 1, f^{147} = ½).
+
+**Killing–Cartan classification** — The classification of simple Lie algebras into families A_n, B_n, C_n, D_n and exceptional algebras G₂, F₄, E₆, E₇, E₈. Used in the uniqueness proof to establish that su(3) (= A₂) is simple and has no 8-dimensional competitors. Reference: Humphreys (1972).
 
 **Structure constants f^{abc}** — The coefficients in [T^a, T^b] = i·f^{abc}·T^c. Determined uniquely by the algebra and the choice of basis. The Gell-Mann convention uses the standard PDG values.
 

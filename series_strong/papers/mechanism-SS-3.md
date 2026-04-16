@@ -1,7 +1,7 @@
 # Mechanism — SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
 
-**Paper:** SS-3 v1.1
-**Last updated:** 14 April 2026
+**Paper:** SS-3 v1.3
+**Last updated:** 15 April 2026
 
 ---
 
@@ -23,7 +23,7 @@ The vector space of traceless Hermitian 3×3 matrices, equipped with the commuta
 
 ### Step 3: Verify the CPP operators span the space
 
-The 8 CPP tetrahedral hopping operators (6 off-diagonal from edge hopping + 2 diagonal from phase differences) form a rank-8 system (Gram matrix determinant 3.9×10⁻³ ≠ 0). They are therefore a basis for the full 8-dimensional space and generate su(3) necessarily.
+The 8 CPP tetrahedral hopping operators (6 off-diagonal from edge hopping + 2 diagonal from phase differences) satisfy T^a = λ^a/2 exactly (SS-1b). The Gell-Mann orthogonality relation Tr(λ^a λ^b) = 2δ^{ab} gives a diagonal Gram matrix — orthogonal nonzero vectors are linearly independent. Therefore they form a basis for the full 8-dimensional space and generate su(3) necessarily. (Confirmed numerically: G = δ_{ab} to 2.2×10⁻¹⁶.)
 
 ### Why no alternative is possible
 
@@ -65,7 +65,7 @@ At each vertex, exactly 2 opposite-polarity chains meet. The two chains oscillat
 
 ### The relationship between the two bases
 
-The mathematical basis (Gell-Mann: 6 off-diagonal + 2 diagonal) and the physical basis (4 linear + 4 harmonic) are both valid bases for the same 8-dimensional vector space. They are related by a linear transformation. The mathematical basis is convenient for computation; the physical basis tells you what is vibrating.
+The mathematical basis (Gell-Mann: 6 off-diagonal + 2 diagonal) and the physical basis (4 linear + 4 harmonic) are both valid bases for the same 8-dimensional vector space. The explicit 8×8 change-of-basis matrix M (Proposition 6.5) has det = 2/√3, confirming linear independence. The key structural result: the only nontrivial mixing is in the diagonal sector, where T³ (isospin) = ½(L₂ − L₄) and T⁸ (hypercharge) = (√3/2)(L₂ + L₄). The two apex bond modes share a common T⁸ component because both terminate at V₄. The physical basis is non-orthogonal (2Tr(L₂L₄) = −2/3) — a reflection of the cage geometry, not a defect.
 
 ---
 

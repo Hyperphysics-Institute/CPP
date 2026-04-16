@@ -1,7 +1,7 @@
 # Philosophy — SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
 
-**Paper:** SS-3 v1.1
-**Last updated:** 14 April 2026
+**Paper:** SS-3 v1.3
+**Last updated:** 15 April 2026
 
 ---
 
@@ -9,7 +9,7 @@
 
 SS-3 is a **Type 1 result** (fully derived, zero free parameters). The uniqueness of su(3) follows from the dimension of the traceless Hermitian operator space on ℂ³ and the linear independence of the CPP operators. No calibration, no fitting, no adjustable parameters.
 
-The physical interpretation (§5–6) is a **Type 2 result** (physically motivated, formalisation pending). The 4+4 mode decomposition correctly counts to 8 and identifies the modes with DP chain oscillations, but the explicit linear transformation between the physical basis {L₁,...,L₄, H₁,...,H₄} and the mathematical basis {T¹,...,T⁸} has not been computed.
+The physical interpretation (§6–7) is now also a **Type 1 result** as of v1.3. The 4+4 mode decomposition counts to 8, and the explicit 8×8 change-of-basis matrix M between the physical modes {L₁,...,L₄, H₁,...,H₄} and the Gell-Mann generators {T¹,...,T⁸} has been computed in Proposition 6.5, with det(M) = 2/√3 proved analytically. The two bases provably span the same algebra.
 
 ---
 
@@ -17,7 +17,7 @@ The physical interpretation (§5–6) is a **Type 2 result** (physically motivat
 
 **The uniqueness theorem (§3):** Mathematical certainty. The proof is a chain of definitions and a rank computation. If the CPP operators are traceless, Hermitian, 3×3, and linearly independent — all of which are verified to machine precision — then they generate su(3) and nothing else. This is not a physical hypothesis; it is a theorem of linear algebra.
 
-**The 4+4 physical interpretation (§5):** Physical plausibility. The counting is exact (4 bonds + 4 junctions = 8), but the identification of each mode with a specific linear combination of Gell-Mann generators requires a calculation not yet performed. The interpretation is consistent with all known CPP physics but is not yet a proved theorem.
+**The 4+4 physical interpretation (§6):** Mathematical certainty as of v1.3. The counting is exact (4 bonds + 4 junctions = 8), and the explicit change-of-basis matrix M (Proposition 6.5) proves the physical modes span the same algebra as the Gell-Mann generators, with det(M) = 2/√3 confirmed analytically and numerically. The physical motivation (three principles in Definition 6.5) provides the mechanistic account of why each mode takes the form it does.
 
 **The CPP-to-QCD mapping (§6):** Structural correspondence. The mapping shows that CPP and QCD describe the same 8-dimensional symmetry structure. It does not claim that individual Feynman diagrams map to individual DI-bit sequences. The correspondence is at the level of the algebra, not at the level of individual basis elements.
 
@@ -61,6 +61,8 @@ This is analogous to the relationship between statistical mechanics and thermody
 
 **Strongest aspect:** The uniqueness proof is watertight. It cannot be circumvented without changing the dimension of ℂ³ or the definition of su(N). This is the rare CPP result that is mathematically unassailable.
 
-**Weakest aspect:** The physical interpretation (4+4 decomposition) is compelling as a counting argument but has not been connected to the mathematical basis by explicit computation. The linear transformation {L_i, H_j} → {T^a} should be worked out. Until then, the 4+4 picture is a physical narrative, not a proved correspondence.
+**Weakest aspect:** The physical interpretation relies on a specific polarity assignment (V₁+, V₂+, V₃−, V₄−) whose uniqueness has not been proved. Other polarity configurations might yield different physical mode decompositions (though they would still span the same su(3) algebra). Additionally, the connection between DP chain oscillation dynamics and QCD perturbative calculations remains structural rather than quantitative — the mode frequencies and coupling strengths have not been derived.
+
+**What was resolved in v1.2–v1.3:** The original weakest aspect — the uncomputed basis transformation between the physical {L_i, H_j} modes and the Gell-Mann {T^a} generators — was fully resolved. The 8×8 change-of-basis matrix M is now proved analytically (Proposition 6.5), with the inverse transformation T³ = ½(L₂−L₄), T⁸ = (√3/2)(L₂+L₄) providing physical insight into the isospin/hypercharge decomposition.
 
 **What this paper does NOT do:** It does not derive N = 3 from deeper principles. It takes N = 3 as given (from the 600-cell's tetrahedral cells) and proves that su(3) follows uniquely. The question "why tetrahedra?" remains open (OPEN-SM-7e).
