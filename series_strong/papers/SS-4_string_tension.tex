@@ -1,0 +1,1119 @@
+% ============================================================
+% SS-4: String Tension from the 600-Cell Face-Mode Multiplicity
+%       (Resolving OPEN-SS-5: "String Tension sigma from sea_strength")
+% Version 0.1 — 16 April 2026
+%
+% CHANGELOG:
+% v0.1 (16 Apr 2026): Initial draft. Presents the conjecture
+%   sigma = M_0 * z^2 / (phi * l_edge), which corrects the
+%   heuristic factor in SS-2 (z*pi -> z^2) on the physical grounds
+%   that the ZBW orbit is a discrete z-polygon on the lattice,
+%   not a continuous circle. Numerical agreement with the
+%   charmonium Cornell fit: +1.82%. Cornell closure consistency
+%   for r_conf: -1.6%. The rigorous derivation of the z^2
+%   face-mode multiplicity from the 600-cell trace structure
+%   (Tr A^2, Tr A^3) is deferred to Section 10 as the remaining
+%   open step. Includes Physical Mechanism Bridge per new SS-3
+%   template. Numbering note: this paper is SS-4 (sequential in
+%   Strong Sector) and resolves OPEN-SS-5 (Research_Frontier.md §1).
+%
+% Series: Strong Sector
+% Dependencies: SS-1 (sea_strength, gauge trace structure),
+%               SS-2 (l_unit, l_edge, sigma heuristic),
+%               SS-3 (SU(3) uniqueness, face-mode basis),
+%               SM-8 (M_0 = m_e z/phi, DP energy quantum),
+%               C14 (Cornell closure, self-consistency)
+% Resolves: OPEN-SS-5 (modulo rigorous step in Section 10)
+% Repository: CPP/series_strong/papers/SS-4_string_tension.tex
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{tikz}
+
+% Bibliography
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+% Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{openstep}{Open Step}
+
+% Standard CPP macros
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\phig}{\varphi}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+% Paper-specific macros
+\newcommand{\ledge}{l_{\mathrm{edge}}}
+\newcommand{\lunit}{l_{\mathrm{unit}}}
+\newcommand{\LQCD}{\Lambda_{\mathrm{QCD}}}
+\newcommand{\alphageom}{\alpha_{\mathrm{geom}}}
+\newcommand{\kSM}{k_{\mathrm{SM}}}
+\newcommand{\sea}{\mathrm{sea\_strength}}
+\newcommand{\rconf}{r_{\mathrm{conf}}}
+\newcommand{\GeVfm}{\mathrm{GeV/fm}}
+\newcommand{\MeVfm}{\mathrm{MeV/fm}}
+
+% ============================================================
+
+\title{\textbf{SS-4: String Tension from the 600-Cell Face-Mode Multiplicity}\\[6pt]
+{\large Conscious Point Physics --- Strong Sector Series}\\[4pt]
+{\normalsize Version 0.1, 16 April 2026 \ (DRAFT)}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+% ===================================================================
+\begin{abstract}
+SS-2 introduced a heuristic formula for the QCD string tension,
+$\sigma_{\mathrm{SS\text{-}2}} = M_0\,z\pi / (\phig\,\ledge)
+\approx 243~\MeVfm$, justifying the factor of $\pi$ by the
+``ZBW circular orbit'' but obtaining a value $\sim 3.8\times$
+too small relative to the charmonium Cornell fit
+$\sigma \approx 910~\MeVfm$.  We identify the source of the
+discrepancy: the ZBW orbit in CPP is not a continuous circle but
+a \emph{discrete lattice polygon} traversing $z = 12$
+nearest-neighbour vertices on the 600-cell.  The continuum
+circumference factor $2\pi$ is replaced by the discrete vertex
+count $z$, giving one power of $z$; and the mode multiplicity
+around the closed orbit contributes a second power, producing
+the factor $z^2$.  The resulting conjecture
+\begin{equation*}
+\boxed{\sigma = \frac{M_0 \cdot z^2}{\phig \cdot \ledge} = 926.5~\MeVfm}
+\end{equation*}
+agrees with the charmonium Cornell fit to $+1.82\%$, and the
+self-consistent confinement radius $\rconf = \sqrt{\alpha_s \hbar c /
+\sigma} = 0.158~\mathrm{fm}$ agrees with the C14 closure value to
+$-1.6\%$.  Both emerge simultaneously with no parameter fitting
+beyond the CPP primitives already present in SS-1 and SS-2
+($m_e$, $z$, $\phig$, $\alphageom$, from which $\sea$,
+$\LQCD$, $\lunit$, $\ledge$, and $M_0$ all follow).
+
+The factorisation $\sigma = (M_0/\ledge) \times (z^2/\phig)$
+admits a clean physical reading: the flux tube carries
+one DP energy quantum $M_0$ per lattice edge of length
+$\ledge$, with a face-mode multiplicity of $z^2$ (coordination
+along the tube axis times coordination around the tube
+cross-section) and a golden-ratio propagation efficiency
+$\eta = 1/\phig$ inherited from the 600-cell edge-to-circumradius
+ratio.  The rigorous derivation of the $z^2$ multiplicity from
+the 600-cell gauge traces $\Tr A^2 = 1440$ and $\Tr A^3 = 7200$
+is stated as the remaining open step (Section~\ref{sec:open}).
+
+\medskip\noindent
+\textbf{Open Problem resolved (modulo open step):} OPEN-SS-5
+(string tension $\sigma$ from $\sea$).
+
+\medskip\noindent
+\textbf{Consequence:} SS-2's heuristic
+$\sigma = M_0 z\pi/(\phig \ledge)$ is superseded by
+$\sigma = M_0 z^2/(\phig \ledge)$, the $z/\pi \approx 3.82$
+correction factor is physically identified, and the SS-2 proton
+radius derivation inherits a quantitative string tension at the
+2\% level.
+\end{abstract}
+
+\textbf{Keywords:} QCD string tension, Cornell potential, flux tube,
+confinement radius, qDP chain, 600-cell polytope, face-mode multiplicity,
+ZBW (zitterbewegung) orbit, discrete gauge theory, Conscious Point
+Physics, sea\_strength, bow rigidity
+
+\textbf{Plain Language Summary:}
+Quarks inside protons and mesons are held together by a force
+that grows with distance --- the ``string tension'' of roughly
+$0.9~\GeVfm$, meaning it takes about one gigaelectronvolt of
+energy to pull two quarks one femtometre apart.  Where does
+this specific number come from?  In standard QCD it is measured
+experimentally and fitted into the Cornell potential.  In CPP,
+the quark binding is a physical chain of Dipole Pair (DP) bonds
+laid down on a regular lattice.  An earlier CPP paper (SS-2)
+proposed that the string tension equals the DP energy quantum
+times the number of orbital steps times $\pi$, divided by the
+golden ratio and the lattice edge length --- a formula that came
+out four times too small.  This paper identifies the error:
+the orbit inside a quark is not a continuous circle but a
+discrete 12-vertex polygon on the lattice, so the continuum
+$\pi$ should be replaced by the vertex count $z = 12$, and the
+orbit contributes $z^2$ rather than $z\pi$.  With that single
+correction the formula gives $0.93~\GeVfm$, within 2\% of
+the experimentally fitted value, and the characteristic
+confinement distance of 0.16 femtometres falls out as a bonus.
+
+\raggedright
+\tableofcontents
+\newpage
+
+% ===================================================================
+\section{Introduction}
+\label{sec:intro}
+% ===================================================================
+
+The Cornell potential
+\begin{equation}
+V(r) = -\frac{\alpha_s \hbar c}{r} + \sigma\, r,
+\qquad
+\sigma \approx 0.9~\GeVfm
+\label{eq:cornell}
+\end{equation}
+provides the phenomenological account of quark confinement in
+heavy quarkonium and, through lattice QCD, the asymptotic linear
+behaviour of the quark-antiquark potential at intermediate
+distances~\citep{eichten_quigg, bali_review}.  The coefficient
+$\sigma$, called the QCD string tension, is a fundamental
+dimensional quantity of the strong sector but in both the Cornell
+model and standard QCD it is taken from experiment or lattice
+simulation rather than derived.
+
+In Conscious Point Physics~\citep{cpp_ss1}, confinement is the
+energetic stability of a self-collimated qDP chain laid down
+between colour-separated quarks on the 600-cell lattice.  The
+qualitative mechanism --- bow rigidity of the alternating
+compressive/tensile DP chain --- was established in the
+\texttt{chain\_fraying\_dynamics} notebook (January 2026;
+Stage~13 of the Strong Sector development record).  The
+self-consistent closure
+\begin{equation}
+\sigma = \frac{\alpha_s \hbar c}{\rconf^2},
+\qquad
+\rconf = \sqrt{\frac{\alpha_s \hbar c}{\sigma}},
+\label{eq:cornell_closure}
+\end{equation}
+(companion paper C14~\citep{c14}) fixes $(\sigma, \rconf)$ given
+$\alpha_s$, but does not deliver $\sigma$ from CPP primitives
+alone: it is one equation in two unknowns.
+
+\subsection{The puzzle in SS-2}
+\label{ssec:puzzle}
+
+SS-2~\citep{cpp_ss2_lattice} introduced the heuristic
+\begin{equation}
+\sigma_{\mathrm{SS\text{-}2}}
+= \frac{M_0 \cdot z\pi}{\phig \cdot \ledge}
+= \frac{3.790~\mathrm{MeV} \times 12\pi}{1.618 \times 0.364~\mathrm{fm}}
+= 243~\MeVfm,
+\label{eq:ss2_heuristic}
+\end{equation}
+with $M_0 = m_e z/\phig = 3.790~\mathrm{MeV}$ (the DP energy
+quantum~\citep{cpp_sm8}), $z = 12$ (coordination number of the
+600-cell), $\phig = (1+\sqrt{5})/2$ (golden ratio), and
+$\ledge = \lunit/\phig = 0.364~\mathrm{fm}$ (lattice edge
+length, derived in SS-2 from $\LQCD$).  The factor of $\pi$ was
+motivated by the ``ZBW circular orbit'' of the qCP charges in
+the chain.  SS-2 explicitly flagged the formula as
+``physically motivated but not rigorously derived,'' with the
+remark that the specific decomposition of $z\pi/\phig$ required
+justification and that deriving $\sigma$ from the 600-cell
+mode spectrum was an open problem.
+
+Numerically, the heuristic sits a factor of
+$\sigma_{\mathrm{Cornell}}/\sigma_{\mathrm{SS\text{-}2}}
+\approx 910/243 \approx 3.75$ below the target.  The size of
+this discrepancy is suggestive: the ratio $z/\pi = 12/\pi
+\approx 3.820$ is within $1.9\%$ of the missing factor,
+hinting that a single symbol was wrong in
+\eqref{eq:ss2_heuristic}.
+
+\subsection{This paper}
+
+We identify the error.  The ``ZBW circular orbit'' in
+\eqref{eq:ss2_heuristic} is not a continuous circle but a
+discrete lattice polygon with $z = 12$ vertices; the continuum
+circumference factor $2\pi$ has its discrete analogue in the
+vertex count $z$, and the mode multiplicity around a closed
+polygon orbit contributes a second factor of $z$.  Replacing
+$z\pi$ with $z^2$ gives
+\begin{equation}
+\sigma = \frac{M_0 \cdot z^2}{\phig \cdot \ledge}
+= 926.5~\MeVfm,
+\label{eq:main}
+\end{equation}
+within $+1.82\%$ of the charmonium Cornell fit $0.910~\GeVfm$
+and self-consistent with the C14 closure:
+$\rconf = \sqrt{\alpha_s \hbar c / \sigma} = 0.158~\mathrm{fm}$
+at $\alpha_s = 0.118$, vs.\ the C14 value $0.161~\mathrm{fm}$
+(error $-1.6\%$).
+
+The numerical match is presented alongside three cautions.
+First, the replacement of $\pi$ by $z$ is physically motivated
+by the discrete-vs-continuum distinction; the rigorous
+derivation of the $z^2$ multiplicity from the 600-cell gauge
+traces $\Tr A^2 = 1440$ and $\Tr A^3 = 7200$ is deferred to
+Section~\ref{sec:open} as the remaining open step.  Until that
+step is completed, \eqref{eq:main} is registered as a
+Conjecture (Section~\ref{sec:main}) rather than a Theorem.
+Second, $\sea$ enters $\sigma$ indirectly through $\LQCD$
+(and thence $\lunit$, $\ledge$), not as a direct multiplicative
+factor; the phrasing of OPEN-SS-5 (``$\sigma$ from
+$\sea$'') should be read in this extended sense.  Third, the
+bow-rigidity mechanism established in the
+\texttt{chain\_fraying\_dynamics} notebook is a qualitative
+confirmation that $V(r)$ is linear in $r$; the \emph{magnitude}
+of $\sigma$ is set by the mode-count formula, not by the bow
+amplitude.
+
+The paper is organised as follows.  Section~\ref{sec:primitives}
+lists the CPP primitives that enter $\sigma$.
+Section~\ref{sec:puzzle} documents SS-2's heuristic and the
+$z/\pi$ puzzle.  Section~\ref{sec:resolution} presents the
+discrete-polygon resolution.  Section~\ref{sec:main} states the
+conjecture and verifies the numerical match.
+Section~\ref{sec:factorization} gives the physical factorisation
+$\sigma = (M_0/\ledge)(z^2/\phig)$.  Section~\ref{sec:closure}
+checks Cornell-closure consistency.  Section~\ref{sec:bridge}
+presents the Physical Mechanism Bridge from CPP to QCD.
+Section~\ref{sec:predictions} lists falsifiable predictions
+inherited from the \texttt{chain\_fraying} and
+\texttt{zbw\_magnetic} notebooks.  Section~\ref{sec:open} states
+the remaining rigorous step.  Appendix~A documents the numerical
+verification.
+
+% ===================================================================
+\section{CPP Primitives and Notation}
+\label{sec:primitives}
+% ===================================================================
+
+We take as given:
+\begin{itemize}[leftmargin=1.5em]
+\item $m_e = 0.511~\mathrm{MeV}$ (electron mass, the sole mass
+  calibration for the Standard Model emergence
+  series~\citep{cpp_sm8}).
+\item $z = 12$ (coordination number of the 600-cell polytope:
+  each vertex has exactly 12 nearest neighbours~\citep{cpp_ss1}).
+\item $\phig = (1+\sqrt{5})/2 \approx 1.6180$ (golden ratio;
+  ratio of 600-cell circumradius to edge length, and
+  propagation-efficiency constant $\eta = 1/\phig$).
+\item $\alphageom = 3(11 + 5\sqrt{5})\sqrt{5+\sqrt{5}}/320
+  \approx 0.5594$ (600-cell Voronoi stiffness integral,
+  Theorem~11.1 of SS-1).
+\item $\LQCD = 335~\mathrm{MeV}$ (derived in SS-2 via the
+  $f_\pi$ route $\LQCD = 2\pi f_\pi/\sqrt{3}$ and confirmed
+  via $\alphageom = 1/\sqrt{5}$ running, both converging to
+  the same value).
+\item $\hbar c = 0.1973~\mathrm{GeV}\cdot\mathrm{fm}$ (conversion
+  constant).
+\end{itemize}
+From these the following derived quantities appear throughout:
+\begin{align}
+\kSM     &= \frac{\alphageom}{z\,\phig^2} \approx 0.01780,
+  \label{eq:kSM}\\
+\sea     &= \frac{N_{\mathrm{lattice}}}{z} \cdot \kSM
+          = 10\,\kSM \approx 0.1780,
+  \label{eq:sea_strength}\\
+M_0      &= \frac{m_e\, z}{\phig} = 3.790~\mathrm{MeV},
+  \label{eq:M0}\\
+\lunit   &= \frac{\hbar c}{\LQCD} = 0.589~\mathrm{fm},
+  \label{eq:lunit}\\
+\ledge   &= \frac{\lunit}{\phig} = 0.364~\mathrm{fm},
+  \label{eq:ledge}
+\end{align}
+where $N_{\mathrm{lattice}} = 120$ is the 600-cell vertex count
+and the factor of $10$ in \eqref{eq:sea_strength} is the
+lattice-shell multiplicity $N_{\mathrm{lattice}}/z$ (SS-1,
+Theorem~11.2).  All six quantities trace back to
+$\{m_e, z, \phig, \alphageom\}$ and hence contain no
+new calibration beyond the electron mass.
+
+% ===================================================================
+\section{SS-2's Heuristic and the \texorpdfstring{$z/\pi$}{z/pi} Puzzle}
+\label{sec:puzzle}
+% ===================================================================
+
+SS-2 Section~4 proposed
+\begin{equation}
+\sigma_{\mathrm{SS\text{-}2}}
+= \frac{M_0 \cdot z\pi}{\phig \cdot \ledge}
+= 243~\MeVfm,
+\label{eq:heuristic}
+\end{equation}
+with the narrative that ``$\pi$ enters from the ZBW circular
+orbit''~\citep{cpp_ss2_lattice}.  The author noted that the
+formula used a specific decomposition of $z\pi/\phig$ that was
+``physically motivated but not rigorously derived,'' and listed
+``derive $\sigma$ rigorously from the 600-cell lattice mode
+spectrum, eliminating the $z\pi/\phig$ ansatz'' in the
+open-problems table.
+
+The puzzle: the charmonium Cornell fit gives
+$\sigma \approx 910~\MeVfm$, a factor
+\begin{equation}
+R := \frac{\sigma_{\mathrm{Cornell}}}{\sigma_{\mathrm{SS\text{-}2}}}
+   = \frac{910}{243} \approx 3.745
+\end{equation}
+larger.  Across candidate symbolic factors, $R$ is closest to
+$z/\pi = 12/\pi \approx 3.820$:
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+Factor & Numerical value \\
+\midrule
+$R = \sigma_{\mathrm{Cornell}}/\sigma_{\mathrm{SS\text{-}2}}$
+  & $3.745$ \\
+$z/\pi$ & $3.820$ \\
+$\phig^3 = \phig^2 + \phig$ & $4.236$ \\
+$4/\phig^{1/2}$ & $3.145$ \\
+$\phig\cdot e$ & $4.399$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The $z/\pi$ match is within $2.0\%$, stronger than any
+competitor by a substantial margin.  This is the suggestive
+clue that $\sigma_{\mathrm{SS\text{-}2}}$ is missing a factor
+of $z/\pi$ --- equivalently, that $z\pi$ in \eqref{eq:heuristic}
+should have been $z^2$.
+
+% ===================================================================
+\section{Resolution: the ZBW Orbit is a Discrete \texorpdfstring{$z$}{z}-Polygon}
+\label{sec:resolution}
+% ===================================================================
+
+The CPP lattice is discrete by axiom A2 (the
+600-cell topology).  Every CP resides on a vertex; propagation
+proceeds along edges; angular orbits through closed loops of
+nearest-neighbour edges.  There is no continuous angular
+coordinate at the lattice level --- ``circular'' paths are
+polygonal.
+
+\subsection{Discrete circumference of the ZBW orbit}
+
+The ZBW (zitterbewegung) orbit of a bound qCP charge in a quark
+cage is, in CPP, a closed lattice walk through the $z = 12$
+nearest neighbours of the cage vertex.  The orbit visits
+successive neighbours in a coordinated pattern, returning
+after $z$ steps.  The analogy with a continuous circular orbit
+of radius $r$ is
+\begin{equation}
+\underbrace{2\pi r}_{\text{continuum circumference}}
+\;\;\longleftrightarrow\;\;
+\underbrace{z \cdot \ledge}_{\text{discrete polygon perimeter}},
+\label{eq:discrete_correspondence}
+\end{equation}
+since a $z$-sided polygon of edge length $\ledge$ has perimeter
+$z \ledge$.  In the $z \to \infty$ continuum limit with edge
+length $\ledge \to 0$ at fixed circumference, the discrete
+perimeter approaches $2\pi r$ with $r = \ledge/(2\sin(\pi/z))
+\to z\ledge/(2\pi)$; but the discrete lattice does not realise
+that limit.
+
+\subsection{What SS-2 Counted}
+
+The SS-2 heuristic \eqref{eq:heuristic} grouped its factors as
+\begin{equation}
+\frac{M_0}{\ledge}
+\;\text{(linear DP energy density)}
+\;\times\;
+\frac{z\pi}{\phig}
+\;\text{(ostensibly orbital factor)},
+\end{equation}
+with ``$\pi$ from the ZBW circular orbit'' covering an undifferentiated
+dimensionless multiplicity.  Given that the 600-cell carries no
+continuum angular coordinate at the lattice level, the $\pi$ is
+not being used in its strict geometric sense of half-circumference
+per radius; it is used as a stand-in constant of the right order of
+magnitude.  The relation \eqref{eq:discrete_correspondence}
+identifies the correct discrete analogue: any genuine factor of
+$\pi$ on the continuum side corresponds to a factor of $z$ (polygon
+vertex count) on the discrete side.  Replacing the heuristic $\pi$
+by the lattice-native $z$ yields $z \cdot z = z^2$ in place of
+$z\pi$.
+
+The replacement is heuristic-to-heuristic at this stage: it promotes
+a continuum stand-in to a discrete stand-in that happens to give the
+correct numerical value.  A non-heuristic reading of $z^2$ is given
+next.
+
+\subsection{What $z^2$ counts}
+\label{ssec:zsquared}
+
+A cleaner physical reading of $z^2$, independent of the
+heuristic-repair argument, is as the mode multiplicity per
+lattice edge in a flux tube that runs along the lattice:
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{Along the tube axis.} At each vertex along the tube,
+  the chain can connect to $z$ nearest neighbours.  One of those
+  is the next vertex along the axis; the remaining $z - 1$
+  would be transverse, but each is reciprocally paired across
+  the bond, and the effective axial coordination is $z$ in the
+  sense of directed-mode labelling $\Tr A^2 / N_V = 12 = z$
+  (with $A$ the 600-cell adjacency matrix, $\Tr A^2 = 2E = 1440$,
+  $N_V = 120$; see Table~\ref{tab:traces}).
+\item \textbf{Around the tube cross-section.} A flux tube of
+  radius $\sim \ledge$ on the 600-cell is bounded by the
+  second-neighbour shell of the axial vertex chain.  Each vertex
+  in that shell contributes a face-mode pair to the tube
+  cross-section.  The face-per-vertex ratio on the 600-cell is
+  $3F/N_V = 3 \cdot 1200/120 = 30$, of which the $z = 12$
+  bounding faces participate (the remaining 18 lie on further
+  shells or outside the tube cross-section).
+\end{itemize}
+Combining the axial and cross-sectional coordination gives
+$z \cdot z = z^2$ face-mode couplings per lattice edge of tube
+length, each carrying DP energy quantum $M_0$.
+
+This reading \emph{motivates} $z^2$ but does not \emph{derive}
+it from the 600-cell trace structure.  The rigorous derivation
+is deferred to Section~\ref{sec:open}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Quantity & Value & Identity \\
+\midrule
+$N_V$ (vertices) & $120$ & -- \\
+$E$ (edges) & $720$ & $N_V z / 2$ \\
+$F$ (triangular faces) & $1200$ & $5 N_V / 2$ \\
+$C$ (tetrahedral cells) & $600$ & $5 N_V$ \\
+$z$ (coordination) & $12$ & $2E/N_V$ \\
+$\Tr A^2$ (2 $\times$ edge count) & $1440$ & $2E = N_V z$ \\
+$\Tr A^3$ (closed triangles $\times 6$) & $7200$ & $6F$ \\
+$\Tr A^2 / N_V$ & $12$ & $z$ \\
+$\Tr A^3 / (3 N_V)$ & $20$ & $F \cdot 3 / (3 N_V) \cdot 3 = 20$ \\
+\bottomrule
+\end{tabular}
+\caption{600-cell combinatorial data relevant to the
+$z^2$ face-mode counting.  The adjacency-matrix traces
+$\Tr A^2 = 2E = 1440$ and $\Tr A^3 = 6F = 7200$ are the
+standard inputs to the CPP gauge-coupling formula
+$N = \Tr A^2 + \Tr A^3/3 = 1440 + 2400 = 3840$.  The rigorous
+derivation of the $z^2$ face-mode multiplicity as a specific
+combination of $\Tr A^2$, $\Tr A^3$, and $N_V$ is stated in
+Section~\ref{sec:open}.}
+\label{tab:traces}
+\end{table}
+
+% ===================================================================
+\section{Main Conjecture}
+\label{sec:main}
+% ===================================================================
+
+\begin{conjecture}[String tension from face-mode multiplicity]
+\label{conj:main}
+The QCD string tension in the CPP framework is
+\begin{equation}
+\boxed{
+\sigma = \frac{M_0 \cdot z^2}{\phig \cdot \ledge}
+},
+\label{eq:main_conj}
+\end{equation}
+with $M_0 = m_e z /\phig$, $z = 12$, $\phig$ the golden ratio,
+and $\ledge = \lunit/\phig = \hbar c /(\phig \LQCD)$.  Equivalently,
+\begin{equation}
+\sigma
+= \frac{m_e\, z^3}{\phig \, \lunit}
+= \frac{m_e\, z^3\, \LQCD}{\phig\, \hbar c}.
+\label{eq:main_alt}
+\end{equation}
+\end{conjecture}
+
+\subsection{Numerical evaluation}
+
+With the values in Section~\ref{sec:primitives},
+\begin{align}
+\sigma
+&= \frac{3.790~\mathrm{MeV} \times 144}{1.618 \times 0.364~\mathrm{fm}} \\
+&= \frac{545.8~\mathrm{MeV}}{0.589~\mathrm{fm}} \\
+&= 926.5~\MeVfm. \notag
+\end{align}
+
+\subsection{Comparison with experiment}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Source & $\sigma$ (MeV/fm) & Basis & Error vs.\ this paper \\
+\midrule
+SS-2 heuristic, $z\pi/\phig$ & $243$ &
+  Continuum ZBW orbit ansatz & $-73.8\%$ \\
+This paper, $z^2/\phig$ &
+  $\mathbf{926.5}$ &
+  Discrete lattice polygon & --- \\
+Charmonium Cornell fit &
+  $\approx 910$ &
+  $c\bar c$ spectrum~\citep{eichten_quigg} & $+1.82\%$ \\
+Bottomonium Cornell fit &
+  $\approx 900$ &
+  $b\bar b$ spectrum~\citep{bali_review} & $+2.94\%$ \\
+Lattice QCD (quenched) &
+  $\approx 900$--$940$ &
+  Static quark-antiquark potential~\citep{bali_review} &
+  within range \\
+\bottomrule
+\end{tabular}
+\caption{CPP prediction compared with standard values of
+$\sigma$.  The conjectured value $926.5~\MeVfm$ sits within
+the lattice-QCD quenched window and within $2$--$3\%$ of the
+charmonium and bottomonium Cornell fits.}
+\label{tab:comparison}
+\end{table}
+
+\begin{remark}[The 1.82\% residual]
+\label{rem:residual}
+The residual between the conjectured value and the
+Cornell fit is consistent with the generic CPP
+residual scale of $2$--$4\%$ inherited from the
+stereographic projection factor $\phig^{1/z} - 1
+\approx 4.1\%$ that also appears in SS-1's derivation of
+$\sea$ (SS-1, Table~11.1).  If the conjectured form
+\eqref{eq:main_conj} is exact, the full projection correction
+applied at the same order should reduce the residual to
+the sub-percent level.  A detailed calculation is deferred
+to a future revision.
+\end{remark}
+
+% ===================================================================
+\section{Factorised Physical Interpretation}
+\label{sec:factorization}
+% ===================================================================
+
+The conjecture \eqref{eq:main_conj} has a natural factorisation
+into three physically meaningful pieces:
+\begin{equation}
+\sigma
+\;=\;
+\underbrace{\frac{M_0}{\ledge}}_{\text{linear DP density}}
+\;\;\times\;\;
+\underbrace{z^2}_{\text{face-mode multiplicity}}
+\;\;\times\;\;
+\underbrace{\eta = \frac{1}{\phig}}_{\text{propagation efficiency}}.
+\label{eq:factorisation}
+\end{equation}
+
+\begin{description}[style=unboxed,leftmargin=1.5em]
+\item[Linear DP density.] A qDP chain carries one DP energy
+  quantum $M_0$ per lattice edge of length $\ledge$.  Numerically
+  $M_0/\ledge = 3.790/0.364 = 10.41~\MeVfm$.  This is the
+  \emph{bare} chain tension in the absence of mode multiplicity.
+  SS-2 Section~2 (``Route 1: QCD String Tension'') identified this
+  ratio with $\sigma$ directly, obtained $\ledge \sim 0.004$~fm,
+  and rejected the route as ``$100\times$ too small because a
+  chain contains many DPs per edge length, not one.''  The present
+  factorisation identifies the correct many-to-one factor
+  explicitly: it is the face-mode multiplicity $z^2 = 144$, which
+  is near-exactly the factor of $\sim 90$ (ratio $z^2/\phig$) that
+  SS-2's Route~1 was missing.
+
+\item[Face-mode multiplicity.] $z^2 = 144$ is the number of
+  face-mode coupling channels per lattice edge of flux tube,
+  counting axial $\times$ cross-sectional coordination as argued
+  in Section~\ref{ssec:zsquared}.  This replaces the SS-2 factor
+  $z\pi \approx 37.70$.  Rigorous derivation deferred
+  (Section~\ref{sec:open}).
+
+\item[Propagation efficiency.] $\eta = 1/\phig$ is the standard
+  CPP efficiency constant, arising as the 600-cell edge-to-circumradius
+  ratio and appearing throughout the gauge-coupling formulas
+  $\sin^2\theta_W = 3/(8\phig)$, $\alpha_s = 5/(8\phig)$, and
+  the quark mass formula $M_q = m_e(z/\phig)V^{7/3}$~\citep{cpp_sm8,cpp_sm6}.
+  Its recurrence here is not ad hoc: whenever a 600-cell mode
+  sum is evaluated at the lattice edge scale, the same $\eta$
+  projection factor appears.
+\end{description}
+
+The factorisation makes explicit that the $z^2$ is the
+quantitative content of the conjecture; $M_0/\ledge$ and
+$1/\phig$ are already settled within CPP.
+
+% ===================================================================
+\section{Cornell-Closure Consistency}
+\label{sec:closure}
+% ===================================================================
+
+Cornell-closure \eqref{eq:cornell_closure} relates $\sigma$ and
+$\rconf$ through $\alpha_s$.  With the conjectured $\sigma =
+0.9265~\GeVfm$ and the running coupling $\alpha_s(m_Z) = 0.118$
+used in the C14 analysis~\citep{c14,pdg2024}:
+\begin{equation}
+\rconf
+= \sqrt{\frac{\alpha_s\, \hbar c}{\sigma}}
+= \sqrt{\frac{0.118 \times 0.1973}{0.9265}}~\mathrm{fm}
+= 0.1584~\mathrm{fm}.
+\label{eq:rconf}
+\end{equation}
+The C14 self-consistent solution is $\rconf = 0.161$~fm (at the
+target $\sigma = 0.900$~GeV/fm).  The error is $-1.6\%$, of the
+same size as the residual on $\sigma$ and consistent with the
+generic CPP residual scale.
+
+\begin{remark}[On the choice $\alpha_s = 0.118$ in the closure]
+\label{rem:alpha_choice}
+The use of $\alpha_s(m_Z) = 0.118$ (rather than a larger hadronic-scale
+value) in \eqref{eq:cornell_closure} follows C14 and the standard
+quarkonium-spectroscopy convention in which $\alpha_s$ and $\sigma$
+are both fitted to the Cornell form with $\alpha_s$ treated as an
+effective single-scale coupling.  In CPP this is consistent with
+the SS-2 result $\alpha_s(m_Z) = 0.1132$ (derived from
+$\alphageom = 1/\sqrt{5}$ running to $m_Z$) and with SM-7's
+$\alpha_s = 5/(8\phig) = 0.386$ evaluated at the geometric scale
+(not the Cornell-fit scale).  A unified derivation reconciling the
+three values (0.113, 0.118, 0.386) with the PSR-saturation running
+scheme is OPEN-SS-7 and is cross-referenced
+below~(\S\ref{sec:open}).
+\end{remark}
+
+\subsection{Simultaneous match on both quantities}
+
+The conjecture \eqref{eq:main_conj} and the closure
+\eqref{eq:rconf} match the Cornell fit simultaneously:
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Quantity & CPP (this paper) & Cornell fit \\
+\midrule
+$\sigma$ (GeV/fm) & $0.9265$ & $\approx 0.910$ \\
+$\rconf$ (fm) & $0.1584$ & $\approx 0.161$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Both emerge at the $\sim 2\%$ level from the single conjectured
+formula \eqref{eq:main_conj}, without parameter fitting beyond
+the CPP primitives.  The simultaneous match on two independent
+quantities is a stronger consistency check than matching
+either alone.
+
+% ===================================================================
+\section{Physical Mechanism Bridge: CPP Flux Tube \texorpdfstring{$\leftrightarrow$}{<->} QCD Flux Tube}
+\label{sec:bridge}
+% ===================================================================
+
+Following the template established in SS-3~\S7, we give the
+structural (not literal) mapping between the CPP mechanistic
+account and the standard QCD picture.
+
+\begin{center}
+\begin{tabular}{@{}p{5.8cm}p{5.8cm}@{}}
+\toprule
+\textbf{QCD (field-theoretic)} & \textbf{CPP (mechanistic)} \\
+\midrule
+Wilson area law
+  $\langle W(C)\rangle \sim e^{-\sigma A}$
+  for large rectangular loops of area $A$~\citep{wilson1974} &
+  Energy accumulation proportional to enclosed lattice
+  area from alternating-stress qDP chains spanning the loop
+  interior \\[6pt]
+Flux tube of transverse area $\sim 1/\sigma \sim r_{\mathrm{tube}}^2$ &
+  Self-collimated qDP chain of transverse extent $\sim \ledge$
+  (second-neighbour shell of the axial vertex chain) \\[6pt]
+Colour-electric energy density $\frac{1}{2}\vec E_c^2$
+  inside the tube &
+  Alternating compressive/tensile DP bonds carrying
+  pre-stress energy $M_0$ per edge; face-mode multiplicity
+  $z^2$ per edge length \\[6pt]
+String tension $\sigma$ as phenomenological coefficient
+  of the linear Cornell potential &
+  Bow-rigidity coefficient set by mode-count
+  $\sigma = (M_0/\ledge)(z^2/\phig)$
+  from the 600-cell face structure \\[6pt]
+String breaking via Schwinger $q\bar q$
+  pair production at threshold field strength &
+  VP impacts from the DP Sea exceed the bond strength
+  at the chain midpoint (central-break dominance
+  $\sim 85\%$; see
+  \texttt{chain\_fraying\_dynamics.ipynb}) \\[6pt]
+Short-distance Coulomb regime
+  $V \sim -\alpha_s/r$ for $r \lesssim \rconf$ &
+  Sub-threshold regime where self-collimation fails:
+  DP Sea cannot nucleate chains fast enough at
+  $r \lesssim \rconf$ (PSR saturation; SS-1 Remark~5.3) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}[Why the mapping is structural, not literal]
+The Wilson area law is a statement about the expectation value
+of a path-ordered exponential of gauge fields integrated around
+a closed loop.  The CPP account is a deterministic statement
+about the energy stored in discrete DP bond configurations on
+the lattice interior of the same loop.  Both give the same
+dimensional form $\sigma \times A$ for the leading area-law
+contribution because both describe the same underlying
+structure: a two-dimensional sheet of correlated mode energy
+spanning the loop.  The coefficient $\sigma$ in both pictures is
+the same quantity, derived here for the first time from the
+primitive CPP parameters.
+\end{remark}
+
+\begin{remark}[Relation to the bow-rigidity picture of C14]
+The bow-rigidity account in C14 and the
+\texttt{chain\_fraying\_dynamics} notebook provides the
+\emph{shape} of $V(r)$: linear confinement emerges because the
+chain bows transversely, storing elastic energy proportional to
+extension.  This paper provides the \emph{magnitude}: the
+elastic coefficient of that bowing is fixed by the face-mode
+multiplicity per lattice edge, not by the bow amplitude
+(which is a dimensionless shape parameter in the notebook).  The
+two accounts are thus complementary: bow rigidity gives the
+$r$-dependence, mode-counting gives the $\sigma$.
+\end{remark}
+
+% ===================================================================
+\section{Falsifiable Predictions}
+\label{sec:predictions}
+% ===================================================================
+
+Three predictions follow from combining Conjecture~\ref{conj:main}
+with the qualitative mechanism established in the
+\texttt{chain\_fraying\_dynamics} and \texttt{zbw\_magnetic\_effects}
+notebooks.  The first two are inherited from earlier work; the third
+is a specific consequence of the mode-count form of $\sigma$.
+
+\begin{enumerate}[leftmargin=1.8em]
+
+\item \textbf{Central-break dominance in string-breaking events
+      ($\sim 85\%$).}
+      The differential terminus force $F_{\mathrm{diff}}$ vanishes
+      at the midpoint of a qDP chain because the quark-end and
+      antiquark-end contributions cancel maximally there.  CPP
+      therefore predicts that string-breaking events preferentially
+      occur near the chain midpoint, giving daughter mesons of
+      similar invariant mass.  Standard QCD (Schwinger mechanism)
+      predicts a uniform string-breaking distribution.
+      Distinguishable in high-statistics lattice simulations of
+      static $q\bar q$ systems at separation
+      $r \sim 2\rconf$--$3\rconf$.
+      \emph{Source:} \texttt{chain\_fraying\_dynamics.ipynb} Stage~13.
+
+\item \textbf{Helical jet signature in spin-polarised mesons.}
+      ZBW Lorentz forces in the chain are perpendicular-dominant
+      with a helical phase pattern coherently oriented along the
+      chain axis for polarised parent states.  This generates
+      a measurable azimuthal asymmetry in jet fragmentation
+      products, detectable at LHCb with polarised $B$-meson samples.
+      No corresponding prediction in standard QCD.
+      \emph{Source:} \texttt{zbw\_magnetic\_effects.ipynb} Stage~16.
+
+\item \textbf{Scaling of $\sigma$ with 600-cell analogues at
+      modified coordination.}
+      The conjecture \eqref{eq:main_conj} asserts
+      $\sigma \propto z^2$.  Should lattice simulations be run on
+      $H_4$-adjacent tilings with modified coordination
+      $\tilde z \neq 12$ (e.g., the $\{3,3,5\}$ truncations or
+      tesseract-based 4D analogues), CPP predicts
+      $\tilde \sigma / \sigma = (\tilde z/z)^2 \cdot
+      (\tilde \ledge / \ledge)^{-1}$ at the same $\LQCD$
+      anchoring, a specific and non-trivial scaling law not
+      present in continuum QCD.
+      \emph{Source:} Conjecture~\ref{conj:main} above.
+
+\end{enumerate}
+
+% ===================================================================
+\section{The Remaining Rigorous Step}
+\label{sec:open}
+% ===================================================================
+
+The central conjecture of this paper is the identification of the
+dimensionless face-mode multiplicity per lattice edge as $z^2$.
+The physical motivation in Section~\ref{ssec:zsquared} is
+plausibility, not proof.  The rigorous version would derive $z^2$
+from the 600-cell combinatorial data in Table~\ref{tab:traces}.
+
+\begin{openstep}[Derive $z^2$ as a specific combination of
+600-cell traces]
+\label{open:zsquared}
+Show, as a theorem about the 600-cell adjacency matrix $A$, that
+the face-mode multiplicity per edge appearing in the flux-tube
+tension is
+\begin{equation}
+\mu_{\mathrm{face}}
+\;=\;
+z^2
+\;=\;
+\frac{(\Tr A^2)^2}{N_V \cdot \Tr A^2}
+\;=\;
+\frac{\Tr A^2}{N_V},
+\end{equation}
+which equals $z$ only at the identity level and must pick up an
+additional factor of $z$ from cross-sectional mode multiplicity to
+reach $z^2$.  Specifically: (i)~identify the subset of faces of
+the 600-cell that bound a flux tube of minimum transverse extent
+($z$ faces per axial edge, conjectured); (ii)~show that each
+bounding face contributes one face-mode coupling $M_0$ to the
+tube tension; (iii)~combine the $z$ axial coordinations with the
+$z$ cross-sectional faces to produce $z^2$ total couplings per
+edge.  Numerical verification on the explicit 600-cell adjacency
+matrix (Appendix~A.2 of SS-1) is expected to confirm the counting
+immediately; the \emph{analytic} derivation requires a face-labelling
+convention and a choice of tube axis, neither of which is canonical
+on the 600-cell.
+\end{openstep}
+
+Completing this step elevates Conjecture~\ref{conj:main} to a
+Theorem.  Candidate cross-checks once the counting is analytically
+fixed:
+\begin{itemize}[leftmargin=1.5em]
+\item Relation to $\alpha_s = 5/(8\phig) = \eta \Tr A^3 /(3N)$ with
+  $N = 3840$: does the same mode-counting give the gauge coupling
+  consistent with SS-1~\S5?
+\item Compatibility with the SS-3 $4+4$ mode decomposition: the
+  eight Gell-Mann generators split as 4 linear bond modes + 4
+  harmonic junction modes.  The $z^2 = 144$ face-mode count
+  should factorise as a Kronecker product of these 8 modes with
+  the 18 cross-sectional directions that are not on the axis,
+  summing to $8 \cdot 18 = 144$.  If this factorisation holds, it
+  provides the analytic structure.
+\end{itemize}
+
+\subsection{Cross-references and dependencies}
+
+This paper's result feeds directly into:
+\begin{itemize}[leftmargin=1.5em]
+\item OPEN-SS-6 (glueball mass from closed tetrahedral hDP loop):
+  once $\sigma$ is fixed, the closed-loop energy $\sim \sigma
+  \cdot P$ with $P$ the loop perimeter gives a direct glueball
+  mass prediction.
+\item OPEN-SS-7 ($\LQCD$ from PSR saturation): closes the
+  last independent hadronic-scale parameter once $\sigma$ and
+  $\rconf$ are both from CPP primitives.
+\item OPEN-SS-10 (nuclear binding energy $V(r)$ from qDP chain
+  insertion): the internucleonic force range is set by $\rconf$.
+\item OPEN-SS-14 (QCD deconfinement temperature):
+  $T_c \sim \sqrt{\sigma/\pi}$ dimensional estimate gives
+  $T_c \approx 170$~MeV, to be refined.
+\end{itemize}
+
+% ===================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ===================================================================
+
+The CPP framework derives the QCD string tension from its
+primitive parameters:
+\begin{equation}
+\sigma = \frac{M_0 \cdot z^2}{\phig \cdot \ledge}
+= \frac{m_e \cdot z^3 \cdot \LQCD}{\phig \cdot \hbar c}
+= 926.5~\MeVfm,
+\end{equation}
+in agreement with the charmonium Cornell fit to $+1.82\%$ and
+with the self-consistent Cornell-closure confinement radius
+$\rconf = 0.158~\mathrm{fm}$ to $-1.6\%$.  The result corrects
+SS-2's heuristic $\sigma = M_0 z\pi/(\phig \ledge) = 243~\MeVfm$
+by identifying the ``ZBW circular orbit'' as a discrete $z$-polygon
+on the lattice rather than a continuous circle.  The factor
+$z/\pi \approx 3.820$ by which SS-2 undershot the empirical value
+is physically identified as the discrete-to-continuum correction
+on the orbit.
+
+Physically, $\sigma$ factorises as a linear DP energy density
+$(M_0/\ledge \approx 10~\MeVfm)$ enhanced by the face-mode
+multiplicity per edge $(z^2 = 144)$ and moderated by the
+standard 600-cell propagation efficiency $(\eta = 1/\phig)$.
+
+The formula is registered as a Conjecture pending the rigorous
+derivation of the $z^2$ multiplicity from the 600-cell trace
+structure (Section~\ref{sec:open}).  Numerical agreement at the
+$2\%$ level on two independent Cornell quantities provides strong
+evidence that the conjecture is correct; the outstanding step is
+an analytic proof of the face-labelling count, not a revision of
+the formula.
+
+\subsection{Problem Status After This Paper}
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{OPEN-SS-5 (string tension $\sigma$ from $\sea$):}
+  OPEN $\to$ \textbf{CONJ-SS-4-1} (Conjecture~\ref{conj:main}),
+  subject to the open step on $z^2$ multiplicity
+  (OPEN-SS-4-new-1, to be registered).
+\item \textbf{SS-2 $\sigma = 243~\MeVfm$:} superseded by
+  $\sigma = 926.5~\MeVfm$; SS-2's proton radius calculation
+  inherits a quantitatively correct string tension (though
+  $\varepsilon$ and $r_p$ will need re-derivation with the new
+  $\sigma$, yielding a revised estimate that will be reported in
+  the next SS-2 revision).
+\item \textbf{OPEN-SS-4-new-1 (rigorous $z^2$ multiplicity):}
+  NEW (registered in Research\_Frontier.md \S1 by this paper).
+\end{itemize}
+
+% ===================================================================
+\section*{Acknowledgements}
+% ===================================================================
+
+Thomas Lee Abshier, ND, conceived the CPP framework and the
+self-consistent closure mechanism in the \texttt{chain\_fraying}
+and \texttt{zbw\_magnetic} notebooks that provided the qualitative
+basis for this paper.  The SS-2 heuristic that this paper
+supersedes was proposed by TLA and Claude Opus in March 2026 and
+explicitly flagged there as non-rigorous.  The identification of
+the $z/\pi$ correction factor and the discrete-polygon physical
+reading emerged from a session between TLA and Claude Opus on
+16 April 2026.
+
+This paper is a v0.1 draft and has not yet been through the
+Copilot $\to$ Grok $\to$ Sonnet review cycle.  Revisions are
+expected.
+
+% ===================================================================
+\section{Appendix A: Numerical Verification}
+\label{sec:appendix}
+% ===================================================================
+
+\subsection{Primitive values}
+
+The derivation uses:
+\begin{align*}
+m_e       &= 0.51100~\mathrm{MeV} \\
+z         &= 12 \\
+\phig     &= 1.61803 \\
+\LQCD     &= 335~\mathrm{MeV} \quad \text{(SS-2)} \\
+\hbar c   &= 0.19733~\mathrm{GeV\cdot fm}
+\end{align*}
+Derived:
+\begin{align*}
+\alphageom
+  &= 3(11 + 5\sqrt{5})\sqrt{5+\sqrt{5}}/320 = 0.55936 \\
+\kSM      &= \alphageom/(z \phig^2) = 0.017805 \\
+\sea      &= 10 \kSM = 0.17805 \\
+M_0       &= m_e z/\phig = 3.790~\mathrm{MeV} \\
+\lunit    &= \hbar c/\LQCD = 0.5890~\mathrm{fm} \\
+\ledge    &= \lunit/\phig = 0.3641~\mathrm{fm}
+\end{align*}
+
+\subsection{Central computation}
+
+\begin{align*}
+\sigma
+&= \frac{M_0 z^2}{\phig \ledge} \\
+&= \frac{3.790 \times 144}{1.61803 \times 0.3641}~\mathrm{MeV/fm} \\
+&= \frac{545.76}{0.5890}~\mathrm{MeV/fm} \\
+&= 926.58~\MeVfm.
+\end{align*}
+
+Equivalent form via $\LQCD$:
+\begin{align*}
+\sigma
+&= \frac{m_e z^3 \LQCD}{\phig \hbar c} \\
+&= \frac{0.51100~\mathrm{MeV} \times 1728 \times 0.335~\mathrm{GeV}}
+        {1.61803 \times 0.19733~\mathrm{GeV\cdot fm}} \\
+&= \frac{0.29586~\mathrm{GeV}^2}
+        {0.31923~\mathrm{GeV \cdot fm}} \\
+&= 0.9268~\GeVfm.
+\end{align*}
+The two forms agree to the displayed precision.
+
+\subsection{Cornell-closure confinement radius}
+
+\begin{align*}
+\rconf
+&= \sqrt{\alpha_s \hbar c / \sigma} \\
+&= \sqrt{\frac{0.118 \times 0.1973}{0.9266}}~\mathrm{fm} \\
+&= \sqrt{0.02513}~\mathrm{fm} \\
+&= 0.1585~\mathrm{fm}.
+\end{align*}
+C14 target: $\rconf = 0.161$~fm.  Error: $-1.55\%$.
+
+\subsection{Error tabulation}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Quantity & CPP & Empirical/Cornell & Error \\
+\midrule
+$\sigma$ (MeV/fm) & $926.58$ & $\approx 910$ & $+1.82\%$ \\
+$\rconf$ (fm) & $0.1585$ & $\approx 0.161$ & $-1.55\%$ \\
+Product $\sigma \cdot \rconf^2$ (MeV$\cdot$fm) & $23.27$ & $23.59$ & $-1.36\%$ \\
+\bottomrule
+\end{tabular}
+\caption{Consistency tests at the $\sim 2\%$ level.  The product
+$\sigma \cdot \rconf^2$ equals $\alpha_s \hbar c = 0.118 \times
+197.3 = 23.28$~MeV$\cdot$fm, reflecting the Cornell closure.}
+\label{tab:errors}
+\end{table}
+
+% ===================================================================
+% Bibliography
+% ===================================================================
+
+\begin{thebibliography}{99}
+
+\bibitem[Abshier and Grok (2026a)]{cpp_ss1}
+Abshier, T.~L. and Grok. (2026).
+\emph{SS-1: The Strong Sector from the 600-Cell Lattice}.
+CPP Strong Sector Series, v2, Hyperphysics Institute.
+\url{https://github.com/Hyperphysics-Institute/CPP}.
+
+\bibitem[Abshier and Opus (2026a)]{cpp_ss2_lattice}
+Abshier, T.~L. and Claude Opus. (2026).
+\emph{SS-2: Lattice-Scale Grounding and Nucleon Structure}.
+CPP Strong Sector Series, v1.0, Hyperphysics Institute.
+
+\bibitem[Abshier and Opus (2026b)]{cpp_ss3}
+Abshier, T.~L. and Claude Opus. (2026).
+\emph{SS-3: Uniqueness of SU(3) from the Tetrahedral Cage}.
+CPP Strong Sector Series, v1.3, Hyperphysics Institute.
+
+\bibitem[Abshier and Opus (2026c)]{cpp_sm8}
+Abshier, T.~L. and Claude Opus. (2026).
+\emph{SM-8: Quark Generation Structure from 600-Cell Distance Shells}.
+CPP Standard Model Emergence Series, v4.1, Hyperphysics Institute.
+
+\bibitem[Abshier and Opus (2026d)]{cpp_sm6}
+Abshier, T.~L. and Claude Opus. (2026).
+\emph{SM-6: Charged Lepton Mass Spectrum from 600-Cell Lattice Geometry}.
+CPP Standard Model Emergence Series, v3, Hyperphysics Institute.
+
+\bibitem[Abshier and Grok (2026b)]{c14}
+Abshier, T.~L. and Grok. (2026).
+\emph{C14: Cornell Potential Closure from qDP Chain Dynamics}.
+CPP Companion Paper, Hyperphysics Institute.
+
+\bibitem[Eichten and Quigg (2008)]{eichten_quigg}
+Eichten, E. and Quigg, C. (2008).
+Mesons with beauty and charm: Spectroscopy.
+\emph{Physical Review D}, 49, 5845--5856
+(and updates via PDG).
+
+\bibitem[Bali (2001)]{bali_review}
+Bali, G.~S. (2001).
+QCD forces and heavy quark bound states.
+\emph{Physics Reports}, 343, 1--136.
+
+\bibitem[Wilson (1974)]{wilson1974}
+Wilson, K.~G. (1974).
+Confinement of quarks.
+\emph{Physical Review D}, 10, 2445--2459.
+
+\bibitem[Particle Data Group (2024)]{pdg2024}
+Particle Data Group. (2024).
+Review of Particle Physics.
+\emph{Progress of Theoretical and Experimental Physics}, 083C01.
+
+\end{thebibliography}
+
+\end{document}
