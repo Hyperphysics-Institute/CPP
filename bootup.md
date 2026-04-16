@@ -282,12 +282,13 @@ Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
 
 ## 11. Conventions
 
-**Paper IDs:** `[SERIES]-[NUMBER]` (SM-8, EW-3, QM-1, SR-1, SS-1, SD-5)
+**Paper IDs:** `[SERIES]-[NUMBER]` (SM-8, EW-3, QM-1, SR-1, SS-1, SD-5). Paper numbers are assigned sequentially within a series as new papers enter the repository.
 **Filenames:** `SM-8_quark_generation_600cell_shells.tex` — lowercase slug, no version number in filename
 **Versions:** `vX.Y` in the .tex header changelog. ONE file per paper, overwritten — Git history preserves all versions. Never create `_v1`, `_v2` copies.
-**Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN-P (open problem), FALS (falsified). See `nomenclature.md`.
+**Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN (open problem), FALS (falsified). See `nomenclature.md`.
 **LaTeX:** Follow `templates/paper-formatting.md`
 **Axiom numbering:** When two reviewers independently propose axiom entries (e.g., Grok proposes A9', Copilot proposes A8'), reconcile into one entry when updating `axiom-registry.md`. The registry is the single source of truth for axiom IDs.
+**Problem numbering is independent of paper numbering.** A problem is registered once with a fixed number (e.g., OPEN-SS-5) and retains that number as it progresses through the registry: OPEN-SS-5 → CONJ-SS-5 → (eventually) THEO-SS-5, or OPEN-SS-5 → FALS-SS-5 on falsification. Papers that address a problem carry their own independent sequential paper number. Example: the paper SS-4 (fourth paper in the Strong Sector series) may register the conjecture CONJ-SS-5, which originated as problem OPEN-SS-5. This retention rule is documented in `templates/nomenclature.md` §OPEN.
 
 ---
 

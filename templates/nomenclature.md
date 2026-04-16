@@ -165,6 +165,27 @@ to PROP to THEO as work progresses, or to FALS if falsified.
 Resolved problems retain their entry with the resolution documented —
 the history of what was tried is as valuable as the final answer.
 
+**Problem number retention.** The numeric component of a problem
+ID is assigned once, at registration, and is retained through
+every subsequent promotion. OPEN-SS-5 becomes CONJ-SS-5 when a
+conjecture is stated, PROP-SS-5 when the proposition is formalised,
+THEO-SS-5 when proved, or FALS-SS-5 if falsified. The category
+prefix (OPEN/CONJ/PROP/THEO/FALS) records the current epistemic
+status; the numeric component is the permanent identifier. This
+allows any historical reference ("the 2026 work on SS-5") to
+resolve unambiguously no matter what stage the problem has reached.
+
+**Problem numbers are independent of paper numbers.** A paper is
+numbered sequentially within its series by its order of entry into
+the repository. A problem is numbered sequentially within its
+sector by its order of registration. The two numbering systems do
+not track each other. Paper SS-4 may register CONJ-SS-5 (coming
+from OPEN-SS-5) and also register the new problem OPEN-SS-15 that
+arose in the course of proving the main conjecture. The cross-
+reference between papers and problems is maintained in the
+`Paper(s):` field of each Research Frontier entry, not by ID
+collision.
+
 **File:** `Research_Frontier.md` §1
 
 ---
