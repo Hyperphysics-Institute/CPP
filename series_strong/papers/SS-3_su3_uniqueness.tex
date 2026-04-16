@@ -1,8 +1,20 @@
 % ============================================================
 % SS-3: Uniqueness of SU(3) from the Tetrahedral Cage
-% Version 1.3 — 15 April 2026
+% Version 1.4 — 16 April 2026
 %
 % CHANGELOG:
+% v1.4 (16 Apr 2026): ChatGPT referee review revisions.
+%   (1) Central claim restated as conditional: uniqueness within the
+%   operator representation, not uniqueness from geometry alone.
+%   (2) New §3: Representation Assumptions — Layer A (geometric input),
+%   Layer B (imported operator formalism), Layer C (result). Isolates
+%   the open problem of deriving Layer B from CPP primitives.
+%   (3) Theorem 3.3 restated with explicit conditional.
+%   (4) Subalgebra dimension error corrected (was "≤ 3", now "< 8").
+%   (5) Corollaries reframed as conditional on the representation.
+%   (6) §6 physical interpretation: epistemic-status paragraph added
+%   (interpretation, not derivation).
+%   (7) Abstract, introduction, conclusion reframed accordingly.
 % v1.3 (15 Apr 2026): Sonnet adversarial review revisions.
 %   Added §6.5: explicit basis transformation between Gell-Mann
 %   and physical 4+4 modes — 8×8 matrix M with det=2/√3,
@@ -92,7 +104,7 @@
 
 \title{\textbf{SS-3: Uniqueness of SU(3) from the Tetrahedral Cage}\\[6pt]
 {\large Conscious Point Physics --- Strong Sector Series}\\[4pt]
-{\normalsize Version 1.3, 15 April 2026}}
+{\normalsize Version 1.4, 16 April 2026}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -109,9 +121,11 @@ SS-1 Theorem~1 proves that the eight DI-bit hopping operators on the
 tetrahedral cage base $\{V_1, V_2, V_3\}$ equal the Gell-Mann
 generators $T^a = \lambda^a/2$ and satisfy the SU(3) commutation
 relations exactly.  That result establishes that SU(3) \emph{can}
-emerge from the tetrahedral cage.  This paper proves the converse:
-SU(3) \emph{must} emerge.  No alternative Lie algebra is consistent
-with the tetrahedral cage geometry.
+emerge from the tetrahedral cage.  This paper proves a conditional
+converse: \emph{given} that the cage operators are represented as
+traceless Hermitian matrices on~$\CC^3$ with commutator bracket,
+$\su(3)$ is the \emph{unique} Lie algebra they can generate.
+No alternative Lie algebra is consistent with this representation.
 
 The argument has three steps.  First, the real vector space of
 traceless Hermitian operators on~$\CC^3$ has dimension exactly
@@ -120,15 +134,27 @@ commutator is, by definition, the Lie algebra $\su(3)$.  Third,
 the eight CPP operators are linearly independent (analytically,
 via the Gell-Mann orthogonality relation $\Tr(\lambda^a \lambda^b)
 = 2\delta^{ab}$), so they span the full space and
-generate~$\su(3)$ necessarily.  The $C_3$ rotational
-symmetry of the cage selects the standard Gell-Mann basis within
-this unique algebra but does not alter the algebra itself.
+generate~$\su(3)$ necessarily.
 
-Two corollaries follow: (i)~the vertex count $N = 3$ determines
+The uniqueness result is conditional on three representation
+assumptions imported from standard gauge theory: (i)~that the
+colour states form a complex vector space~$\CC^N$, (ii)~that
+observables are Hermitian operators, and (iii)~that symmetry
+generators close under the commutator bracket.  These assumptions
+are not derived from CPP primitives in this paper; their
+derivation is identified as an open problem for future work
+(SS-4).  The paper clearly separates the geometric input
+(Layer~A: $N = 3$ from the 600-cell's tetrahedral cells), the
+imported representation formalism (Layer~B), and the mathematical
+result (Layer~C: $\su(3)$ uniquely).
+
+Two corollaries follow within this representation:
+(i)~the vertex count $N = 3$ determines
 the gauge group --- $N = 2$ gives SU(2) (the electroweak sector),
 $N = 3$ gives SU(3) (the strong sector), and no other outcome is
 possible; (ii)~no exotic gauge group (SO(8), $\mathrm{Sp}(4)$,
-$G_2$, etc.)\ can arise from three colour states.
+$G_2$, etc.)\ can arise from three colour states represented as
+traceless Hermitian operators on~$\CC^3$.
 
 A physical interpretation complements the algebraic proof.  The
 full tetrahedron has four vertices (two positive, two negative
@@ -137,22 +163,29 @@ four two-bond junction vertices.  The $4 + 4 = 8$ oscillation modes
 of this physical system --- four linear bond modes and four coupled
 harmonic junction modes --- provide a \emph{physical} basis for the
 same $8$-dimensional space that the Gell-Mann matrices span
-\emph{mathematically}.  The eight gluon degrees of freedom are not
-abstract gauge fields but standing-wave oscillation patterns of
-the DP chains that constitute the baryon's binding energy.
+\emph{mathematically}.  This physical interpretation is an
+\emph{interpretive mapping} of the established generators onto CPP
+dynamics, not an independent derivation of the algebra from
+physical principles.
 An explicit $8 \times 8$ change-of-basis matrix between the
 Gell-Mann generators and the physical modes is constructed,
 confirming that the two bases span the same algebra.
 
 \medskip\noindent
 \textbf{Open Problem resolved:} OPEN-SS-11 (SU(3) operator
-uniqueness).
+uniqueness, conditional on representation assumptions).
+
+\medskip\noindent
+\textbf{Open Problem identified:} Derive the representation
+assumptions (Hermiticity, tracelessness, commutator bracket)
+from CPP primitives.  Designated as the target of a future
+paper (SS-4).
 
 \medskip\noindent
 \textbf{Consequence:} SS-1 Theorem~1 is elevated from a
 \emph{possibility} result (``SU(3) is consistent with the cage'')
-to a \emph{necessity} result (``SU(3) is the unique algebra
-of the cage'').
+to a \emph{conditional necessity} result (``SU(3) is the unique
+algebra of the cage within the standard operator representation'').
 \end{abstract}
 
 \textbf{Keywords:} SU(3), Lie algebra, uniqueness, tetrahedral cage,
@@ -165,12 +198,17 @@ The strong nuclear force is governed by the symmetry group SU(3).
 In standard physics this symmetry is postulated.  A previous CPP
 paper showed that the geometry of the tetrahedral quark cage
 \emph{produces} SU(3).  This paper proves it is the \emph{only}
-symmetry the cage can produce --- three colour states and eight
-generators are a geometric necessity, not a choice.  The paper
-also identifies what the eight generators physically \emph{are}:
+symmetry the cage can produce, given that the cage operators are
+represented in the standard way (as Hermitian matrices with
+commutator bracket).  Three colour states and eight generators
+follow from the vertex count $N = 3$ plus this representation
+choice.  The paper clearly separates what comes from geometry
+(three vertices) from what is imported from standard gauge theory
+(the operator formalism), identifying the derivation of the
+latter from CPP primitives as an open problem.  The paper also
+provides a physical interpretation of the eight generators as
 oscillation modes of the Dipole Pair chains that bind quarks
-together inside baryons, decomposed as four linear bond vibrations
-and four coupled junction vibrations.
+together inside baryons.
 
 \raggedright
 \tableofcontents
@@ -204,12 +242,25 @@ If so, the SS-1 derivation would show that SU(3) is
 \emph{accommodated} by the cage, not \emph{required} by it.
 The result would be a possibility, not a prediction.
 
-This paper answers the question: \textbf{no}.  SU(3) is the unique
-Lie algebra of the tetrahedral cage.  The tetrahedral geometry
-fixes the operator structure up to basis rotations --- the algebra
-itself is invariant.  The proof is elementary linear
-algebra --- it requires no representation theory beyond the
-definition of $\su(N)$ and no computation beyond a rank check.
+This paper answers the question: \textbf{no} --- but with an
+important qualification.  Given the standard operator representation
+(traceless Hermitian matrices on $\CC^N$ with commutator bracket),
+SU(3) is the unique Lie algebra of the tetrahedral cage.  The
+tetrahedral geometry fixes the operator structure up to basis
+rotations --- the algebra itself is invariant.  The proof is
+elementary linear algebra --- it requires no representation theory
+beyond the definition of $\su(N)$ and no computation beyond a
+rank check.
+
+The qualification is that the operator representation itself ---
+the fact that cage dynamics maps onto traceless Hermitian matrices
+with commutator structure --- is imported from standard gauge theory,
+not derived from CPP primitives in this paper.  Section~\ref{sec:assumptions}
+makes this dependency explicit by separating the argument into
+geometric input (Layer~A), imported representation formalism
+(Layer~B), and mathematical result (Layer~C).  Deriving Layer~B
+from CPP axioms is identified as a key open problem for future
+work.
 
 \subsection{Open Problems Addressed}
 
@@ -266,6 +317,79 @@ $[T^a, T^b] = if^{abc}T^c$ take their conventional values
 \end{remark}
 
 % ===================================================================
+\section{Representation Assumptions}
+\label{sec:assumptions}
+% ===================================================================
+
+The uniqueness proof in \S\ref{sec:main} operates within a
+specific mathematical framework.  This section makes the logical
+structure explicit by separating the argument into three layers,
+clearly distinguishing what comes from CPP geometry, what is
+imported from standard gauge theory, and what follows
+mathematically.
+
+\subsection{Layer A --- Geometric input (CPP primitives)}
+
+The following inputs are derived from CPP axioms:
+\begin{enumerate}[label=(A\arabic*)]
+\item The 600-cell lattice is composed exclusively of tetrahedral
+  cells \citep{coxeter}.
+\item Each tetrahedral cell has $4$ vertices: $1$ apex (the qCP
+  site) and $3$ base vertices (the colour states).
+\item Therefore $N = 3$ colour states per cage.
+\end{enumerate}
+These are geometric facts of the 600-cell, grounded in Axiom~A2
+(600-cell topology).  They are not postulates of this paper.
+
+\subsection{Layer B --- Representation choice (imported structure)}
+
+The following assumptions are adopted from standard quantum
+mechanics and gauge theory.  They are \emph{not} derived from
+CPP primitives in this paper:
+\begin{enumerate}[label=(B\arabic*)]
+\item \textbf{Complex state space.} The $N = 3$ colour states
+  span a complex vector space $V = \CC^3$.
+\item \textbf{Hermitian observables.} Physical observables
+  (generators of colour transformations) are represented as
+  Hermitian operators on~$V$.
+\item \textbf{Tracelessness.} The generators are traceless
+  (no overall U(1) phase --- no colour-singlet gluon).
+\item \textbf{Lie bracket.} The symmetry generators close under
+  the matrix commutator $[X, Y] = i(XY - YX)$.
+\end{enumerate}
+
+\begin{remark}[Status of Layer~B]
+\label{rem:layerb}
+Assumptions B1--B4 are standard in quantum gauge theory and are
+satisfied by every known gauge interaction.  Within CPP, they are
+consistent with the DI-bit propagation mechanism (Axiom~A3) and
+the PCD cycle, but a rigorous derivation from CPP axioms has not
+been given.  Such a derivation --- showing that the tetrahedral
+cage dynamics \emph{forces} complex-linear, Hermitian, traceless
+operators with Lie bracket structure --- would convert the present
+conditional result into an unconditional one.  This is identified
+as the central open problem for a future paper (SS-4).
+\end{remark}
+
+\subsection{Layer C --- Mathematical result}
+
+\emph{Given} Layers A and B:
+\begin{quote}
+The Lie algebra of traceless Hermitian operators on $\CC^3$ is
+$\su(3)$, uniquely.  Any set of $8$ linearly independent
+operators in this space generates the full algebra and no other.
+\end{quote}
+This is proved in \S\ref{sec:main} (Theorem~\ref{thm:unique}).
+
+\medskip
+
+The layered structure makes the logical dependency transparent.
+Layer~C is mathematically certain.  Layer~A is geometrically
+certain (given the 600-cell axiom).  The open question is whether
+Layer~B can be derived from Layer~A, which would close the gap
+between \emph{conditional} and \emph{unconditional} uniqueness.
+
+% ===================================================================
 \section{The Uniqueness Theorem}
 \label{sec:main}
 % ===================================================================
@@ -312,18 +436,21 @@ determinant are verified to machine precision in
 Appendix~\ref{app:numerical}.
 \end{proof}
 
-\begin{theorem}[Uniqueness of SU(3)]
+\begin{theorem}[Conditional uniqueness of SU(3)]
 \label{thm:unique}
-The Lie algebra generated by the CPP tetrahedral hopping operators
-is $\su(3)$, and no other Lie algebra is consistent with the
-tetrahedral cage geometry.  Specifically:
+Under the representation assumptions B1--B4
+(\S\ref{sec:assumptions}), the Lie algebra generated by the CPP
+tetrahedral hopping operators is $\su(3)$, and no other Lie
+algebra is consistent with the cage operator representation.
+Specifically:
 
 \begin{enumerate}[label=(\roman*)]
 \item Any set of $8$ linearly independent traceless Hermitian
   $3\times 3$ matrices generates $\su(3)$ under the
   bracket~\eqref{eq:bracket}.
 \item The CPP operators are such a set (Lemma~\ref{lem:basis}).
-\item Therefore the CPP operators generate $\su(3)$ necessarily.
+\item Therefore the CPP operators generate $\su(3)$ necessarily,
+  \emph{given} the representation assumptions.
 \end{enumerate}
 \end{theorem}
 
@@ -341,18 +468,20 @@ space $\Herm_0^3$, and generate the same algebra $\su(3)$
 (possibly with different structure constants $\tilde{f}^{abc}$,
 corresponding to a different basis convention).  If they are
 linearly dependent (rank $< 8$), they span a proper subspace and
-generate a proper subalgebra of $\su(3)$ --- but $\su(3)$ is
+generate a proper subalgebra of $\su(3)$.  Since $\su(3)$ is
 \emph{simple} (it has no proper ideals; see the Killing--Cartan
 classification of simple Lie algebras~\citep{humphreys}),
-so its only proper subalgebras have dimension $\leq 3$
-(isomorphic to $\su(2)$, $\mathfrak{u}(1)$, or their sums).  An alternative set of
+any proper subalgebra has dimension strictly less than~$8$
+and therefore cannot serve as the full gauge algebra of
+three colour states.  An alternative set of
 $8$ operators that generates a Lie algebra different from
 $\su(3)$ would require $\dim > 8$ or the matrices to be
 non-Hermitian or to have nonzero trace --- all of which violate
 the cage constraints.
 
 Therefore: \textbf{any} set of $8$ independent generators
-satisfying the cage constraints (traceless, Hermitian, $3\times 3$)
+satisfying the representation assumptions B1--B4
+(traceless, Hermitian, $3\times 3$, commutator bracket)
 generates $\su(3)$, and only $\su(3)$.  \qed
 \end{proof}
 
@@ -375,9 +504,10 @@ inner automorphism of $\su(3)$.  The $C_3$ symmetry selects the
 
 \begin{corollary}[Gauge group from vertex count]
 \label{cor:vertex}
-The gauge group of the strong sector is determined entirely by the
-number of base vertices $N$ of the qCP cage.  For a cage base
-with $N$ vertices, the gauge group is SU($N$).
+Under the representation assumptions B1--B4, the gauge group of
+the strong sector is determined entirely by the number of base
+vertices $N$ of the qCP cage.  For a cage base with $N$ vertices,
+the gauge group is SU($N$).
 
 \begin{center}
 \begin{tabular}{@{}ccll@{}}
@@ -392,19 +522,21 @@ $N$ & $\dim(\su(N))$ & Gauge group & CPP sector \\
 \end{center}
 
 The 600-cell is composed of tetrahedral cells ($N = 3$ base
-vertices plus one apex).  Therefore SU(3) is the unique gauge
-group of the strong sector.  SU(2) arises when only one edge of
+vertices plus one apex).  Therefore, within the operator
+representation of \S\ref{sec:assumptions}, SU(3) is the unique
+gauge group of the strong sector.  SU(2) arises when only one edge of
 the base triangle is activated (the electroweak sector;
 EW-5~\citep{cpp_ew5}), confirming that SU(2) and SU(3) differ
 only in the number of tetrahedral edges engaged.
 \end{corollary}
 
-\begin{corollary}[No exotic gauge groups]
+\begin{corollary}[No exotic gauge groups within the representation]
 \label{cor:exotic}
-No exotic gauge group --- SO(8), $\mathrm{Sp}(4)$, $G_2$, or any
-other --- can arise from three colour states.  The only
-$8$-dimensional Lie algebra that acts faithfully on $\CC^3$ via
-traceless Hermitian matrices is $\su(3)$.
+Under the representation assumptions B1--B4, no exotic gauge
+group --- SO(8), $\mathrm{Sp}(4)$, $G_2$, or any other --- can
+arise from three colour states.  The only $8$-dimensional Lie
+algebra that acts faithfully on $\CC^3$ via traceless Hermitian
+matrices is $\su(3)$.
 \end{corollary}
 
 \begin{proof}
@@ -453,13 +585,22 @@ Gell-Mann matrices.  A sceptic could respond: ``So what?  Perhaps
 a clever choice of operators on any 3-vertex graph would give
 SU(3).  The cage didn't force it --- you engineered it.''
 
-The uniqueness theorem closes this objection.  The cage provides
-\emph{exactly} $3^2 - 1 = 8$ independent operator degrees of
-freedom (3~edges $\times$ 2~hopping modes $+$ 2~diagonal phases).
+The uniqueness theorem closes this objection \emph{within the
+operator representation}.  Given that cage dynamics maps onto
+traceless Hermitian operators with commutator bracket
+(assumptions B1--B4), the cage provides \emph{exactly}
+$3^2 - 1 = 8$ independent operator degrees of freedom
+(3~edges $\times$ 2~hopping modes $+$ 2~diagonal phases).
 \emph{Any} basis for these degrees of freedom generates $\su(3)$.
 The only ``engineering'' is the vertex count $N = 3$, which is
 determined by the 600-cell's tetrahedral cell geometry.  Once
-$N = 3$ is established, SU(3) is inevitable.
+$N = 3$ is established and the representation assumptions are
+granted, SU(3) is inevitable.
+
+The remaining question --- whether the representation assumptions
+themselves are forced by the cage geometry --- is the subject of
+a future paper (SS-4; see \S\ref{sec:assumptions},
+Remark~\ref{rem:layerb}).
 
 \subsection{The $8 = 3 \times 2 + 2$ decomposition}
 
@@ -494,9 +635,11 @@ $1 \times 2 + 1 = 3 = \dim(\su(2))$, recovering the weak
 isospin algebra.  The two fundamental forces of the Standard Model
 --- SU(3) for the strong force and SU(2) for the weak force ---
 differ only in how many tetrahedral edges participate.  The
-uniqueness theorem confirms this is not a coincidence: SU($N$) is
-the unique algebra of $N$ vertices, and the tetrahedral cage
-activates either $N = 2$ (one edge) or $N = 3$ (all edges).
+uniqueness theorem confirms this is not a coincidence
+(within the operator representation): SU($N$) is
+the unique algebra of $N$ vertices under assumptions B1--B4,
+and the tetrahedral cage activates either $N = 2$ (one edge)
+or $N = 3$ (all edges).
 
 % ===================================================================
 \section{Physical Interpretation: The 4+4 Mode Decomposition}
@@ -504,12 +647,31 @@ activates either $N = 2$ (one edge) or $N = 3$ (all edges).
 % ===================================================================
 
 The mathematical proof of \S\ref{sec:main} establishes that
-$\su(3)$ is the unique algebra of the cage.  But the standard
+$\su(3)$ is the unique algebra of the cage (within the operator
+representation of \S\ref{sec:assumptions}).  But the standard
 Gell-Mann basis $\{T^1, \ldots, T^8\}$ is a \emph{mathematical}
 decomposition (6~off-diagonal colour-changing operators $+$
-2~diagonal colour-neutral operators).  This section identifies the
+2~diagonal colour-neutral operators).  This section identifies a
 \emph{physical} basis: the oscillation modes of the DP chains that
 constitute the cage bonds.
+
+\begin{remark}[Epistemic status of the physical interpretation]
+\label{rem:epistemic}
+The physical mode assignments in this section are an
+\emph{interpretive mapping}: given the established $\su(3)$
+algebra, each generator is identified with a specific DP chain
+oscillation pattern based on physical consistency criteria
+(base-edge bonds as colour hoppers, apex bonds as diagonal
+modulators, junction modes as indirect couplers).  This is
+\emph{not} an independent derivation of $\su(3)$ from physical
+dynamics.  The three assignment principles
+(Definition~\ref{def:physical_ops}) are consistency constraints
+that determine the mapping, not generators of the algebra.
+A stronger result --- deriving the 8~modes from DP chain dynamics
+independently and then observing that they satisfy $\su(3)$
+commutation relations --- would constitute a derivation rather
+than an interpretation and is a target for future work.
+\end{remark}
 
 \subsection{Polarity structure of the full tetrahedron}
 
@@ -881,38 +1043,56 @@ theorem).
 \section{Conclusion}
 % ===================================================================
 
-The SU(3) Lie algebra is the \emph{unique} Lie algebra consistent
-with the CPP tetrahedral cage geometry.  The proof requires only
-three ingredients: (i)~the dimension formula
-$\dim(\Herm_0^N) = N^2 - 1$, (ii)~the definition of $\su(N)$ as
-the bracket algebra of traceless Hermitian matrices, and
-(iii)~the linear independence of the CPP operators.  No exotic
-gauge group can arise from three colour states.  The number~$3$ is
-itself forced by the 600-cell's tetrahedral cell geometry.
+Under the standard operator representation (traceless Hermitian
+matrices on $\CC^3$ with commutator bracket), the SU(3) Lie
+algebra is the \emph{unique} Lie algebra consistent with the CPP
+tetrahedral cage geometry.  The proof requires only three
+ingredients: (i)~the dimension formula $\dim(\Herm_0^N) = N^2 - 1$,
+(ii)~the definition of $\su(N)$ as the bracket algebra of
+traceless Hermitian matrices, and (iii)~the linear independence
+of the CPP operators.  Within this representation, no exotic gauge
+group can arise from three colour states.  The number~$3$ is itself
+forced by the 600-cell's tetrahedral cell geometry.
+
+The result is conditional on representation assumptions B1--B4
+(\S\ref{sec:assumptions}), which are imported from standard gauge
+theory.  The paper explicitly separates geometric input (Layer~A:
+$N = 3$ from the 600-cell), imported formalism (Layer~B: the
+operator representation), and mathematical result (Layer~C:
+$\su(3)$ uniquely).  Deriving Layer~B from CPP primitives ---
+showing that the cage dynamics \emph{forces} complex-linear,
+Hermitian, traceless operators with Lie bracket --- is identified
+as the central open problem for SS-4.
 
 The $4 + 4$ physical mode decomposition (\S\ref{sec:physical})
-reveals what the eight generators \emph{are}: oscillation modes of
-the DP chains that bind quarks inside baryons.  The mathematical
-basis (Gell-Mann) and the physical basis (4~linear bond modes $+$
-4~coupled harmonic junction modes) span the same $8$-dimensional
-space.  The former is convenient for perturbative calculation; the
-latter is the mechanistic account of what is vibrating and where the
-energy resides.
+provides an interpretive mapping of the eight generators onto DP
+chain oscillation modes: four linear bond modes and four coupled
+harmonic junction modes.  This mapping is consistent with the
+algebra and physically motivated, but is an interpretation of the
+established generators, not an independent derivation from
+dynamics.
 
-SS-1 Theorem~1 is thereby elevated from a \emph{possibility} result
-to a \emph{necessity} result: the tetrahedral cage does not merely
-\emph{accommodate} SU(3) --- it \emph{requires}~it.  And the eight
-gluon degrees of freedom are not abstract gauge fields postulated
-for mathematical convenience --- they are the standing-wave modes
-of the physical DP chain architecture that constitutes 99\% of
-hadronic mass.
+SS-1 Theorem~1 is thereby elevated from a \emph{possibility}
+result to a \emph{conditional necessity} result: within the
+standard operator representation, the tetrahedral cage does not
+merely \emph{accommodate} SU(3) --- it \emph{requires}~it.
+Whether the representation itself is forced by the geometry
+remains open.
 
 \subsection{Problem Status After This Paper}
 
 \begin{itemize}
 \item OPEN-SS-11 (SU(3) operator uniqueness): OPEN $\to$ \textbf{THEO}
-  (proved in Theorem~\ref{thm:unique}).
-\item SS-1 Theorem~1: elevated from possibility to necessity.
+  (proved conditionally in Theorem~\ref{thm:unique}, under
+  representation assumptions B1--B4).
+\item SS-1 Theorem~1: elevated from possibility to conditional
+  necessity.
+\item \textbf{New open problem identified:} Derive the representation
+  assumptions B1--B4 (complex state space, Hermiticity,
+  tracelessness, commutator bracket) from CPP primitives.
+  Designated as the target of SS-4.  If successful, the
+  conditional qualifier is removed and the uniqueness becomes
+  unconditional.
 \end{itemize}
 
 % ===================================================================
@@ -928,7 +1108,10 @@ for hadronic binding.  Claude Opus (Anthropic) formulated the
 uniqueness argument, performed the numerical verification, drafted
 the paper, and developed the CPP-to-QCD mapping table.  The
 original SU(3) algebra proof (SS-1b) was produced by Thomas Abshier
-and Grok (xAI).
+and Grok (xAI).  ChatGPT (OpenAI) provided the referee review that
+identified the conditional nature of the uniqueness claim and
+proposed the Layer~A/B/C decomposition of assumptions adopted in
+v1.4.
 
 OSF project: \url{https://osf.io/9dfya/} \\
 DOI: 10.17605/OSF.IO/JXE8D
