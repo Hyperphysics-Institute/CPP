@@ -313,9 +313,155 @@ Commit: `4fe859e`.
 | `501a4bc` | Full repo metafile integration (12 files) |
 | `4fe859e` | Bibliography consolidation policy + SS-3 namespace fix |
 
-**Review cycle outcome:** All three reviewers (Copilot, Sonnet, Grok) concurred on acceptance. OPEN-SS-11 → THEO-SS-10. SS-1 Theorem 1 elevated from possibility to necessity.
+**Review cycle outcome (Session 2):** Three reviewers (Copilot, Sonnet, Grok) concurred on acceptance. OPEN-SS-11 → THEO-SS-10.
 
-**What this paper actually proves:** SU(3) is not a choice but a geometric necessity. Given 3 colour vertices (itself forced by the 600-cell's tetrahedral cells), the space of traceless Hermitian 3×3 operators has dimension exactly 8 = 3²−1, and this space IS su(3). No alternative Lie algebra is possible. Physically, the 8 generators are 4 linear DP chain bond oscillations + 4 coupled harmonic junction oscillations on the baryon cage — the mechanistic account of gluon degrees of freedom.
+**What the paper proved at this stage:** SU(3) is the unique Lie algebra of 3×3 traceless Hermitian matrices under commutator bracket. Given 3 colour vertices and the standard operator representation, no alternative Lie algebra is possible. The paper did not distinguish what comes from geometry versus what comes from the imported operator formalism — that distinction would be forced by the next reviewer.
+
+---
+
+## Part 3: Session 3 — ChatGPT Joins the Team (15–16 April 2026)
+
+### Recruiting ChatGPT
+
+With Grok's reviews showing persistent vocabulary contamination (fabricated terms SSS, QGE, RTT, EMTT that don't exist in the CPP repository), Thomas reached out to ChatGPT (OpenAI) to serve as an independent referee. The recruiting message was direct: "I am not looking for agreement; I am looking for referee-grade reviews."
+
+ChatGPT's acceptance conditions were exactly right:
+
+> "I won't validate claims as 'true' based on revelation. I won't soften critiques if something doesn't meet scientific standards. I won't act as a co-author — strictly a reviewer/referee role."
+
+He asked one diagnostic question before agreeing: "What is the single most testable prediction your theory makes that differs from standard physics?" Thomas's answer identified PRED-O-3 (zero photon emission during quantum tunneling) as the cleanest differing prediction — binary, contradicts QED, experimentally accessible.
+
+### The pre-flagged pressure point
+
+Before even reading SS-3, ChatGPT identified the paper's deepest vulnerability:
+
+> "Any 8 linearly independent traceless Hermitian 3×3 operators generate su(3)." The linear algebra statement is standard. The physical conclusion does not follow automatically. So the key question becomes: Why must the physical system be restricted to 3×3 Hermitian operators in the first place?
+
+This was exactly the right question. It turned out to be the central critique of his review.
+
+### The review package
+
+Opus prepared a four-file package: the .tex, the .pdf, the verification script, and a one-page briefing that addressed the pre-flagged pressure point directly — volunteering the three gaps in the argument rather than hiding them. The prior reviews (Copilot, Sonnet, Grok) were deliberately withheld to protect ChatGPT's independence.
+
+### ChatGPT's Round 1 review — the strongest critique SS-3 received
+
+**Verdict: Major revision required.**
+
+This was a significant escalation from the three prior reviews (all "accept with minor revisions"). ChatGPT identified issues the other reviewers missed or soft-pedaled:
+
+**Issue 2.1 — Circularity in the uniqueness claim.** The paper's logical chain (tetrahedral cage → N=3 → 3×3 operators → traceless Hermitian → su(3)) has unstated steps. The move from "N=3 vertices" to "3×3 traceless Hermitian operators under commutator bracket" imports the entire operator formalism from standard gauge theory without deriving it from CPP primitives. The proof shows uniqueness *conditional on the operator model*, not uniqueness *from geometry itself*. The paper's title and abstract overstated the claim.
+
+**Issue 2.3 — Real mathematical error.** The proof of Theorem 3.3 stated that the proper subalgebras of su(3) have dimension ≤ 3. This is false — su(3) has proper subalgebras of dimension 4 (su(2)⊕u(1)) and dimension 6 (Borel subalgebras). The argument only needs "dimension < 8," which is correct. Three prior reviewers missed this error.
+
+**Issue 2.5 — Physical interpretation is constructed, not derived.** The 4+4 mode decomposition maps Gell-Mann generators onto DP chain oscillation modes, but the assignment is chosen to match SU(3) rather than emerging independently from physical dynamics.
+
+**The architectural proposal.** ChatGPT proposed structuring the paper's assumptions into three layers:
+
+- **Layer A — Geometric input (CPP primitives):** tetrahedral cage, N = 3 states
+- **Layer B — Representation choice (imported structure):** ℂ³ state space, Hermitian operators, tracelessness, commutator bracket
+- **Layer C — Result:** uniqueness of su(3) within Layer B
+
+This "turns a weakness into a strength by cleanly isolating the open problem." The derivation of Layer B from CPP primitives becomes a clearly identified next target (SS-4).
+
+### Opus's assessment of ChatGPT's review
+
+Opus recommended accepting the central critique in full and implementing what ChatGPT called "Tier 1" revisions:
+
+1. Restate Theorem 3.3 as conditional
+2. Add explicit assumptions section (Layer A/B/C)
+3. Fix the subalgebra error
+4. Reframe corollaries as conditional
+5. Add epistemic-status paragraph to §6
+
+On the subalgebra error: "He's right. The paper's statement is a real error and needs to be corrected." On the central critique: "This isn't a minor framing issue. The paper's abstract and title say 'unique Lie algebra of the tetrahedral cage,' and he's correct that this overstates what is proved."
+
+Thomas agreed to implement all Tier 1 items and to designate the deeper question (deriving Layer B from CPP primitives) as SS-4 rather than trying to fold it into an SS-3 revision.
+
+### v1.4 — the major structural revision
+
+The revision added ~180 net lines (13 → 16 pages) with no change to mathematical content — all changes were logical framing and epistemic precision:
+
+1. **New §3: Representation Assumptions.** The Layer A/B/C decomposition, adopted directly from ChatGPT's architectural proposal. Layer A lists the geometric inputs (tetrahedral cells, N=3). Layer B lists the four representation assumptions imported from standard gauge theory (B1: complex state space, B2: Hermitian observables, B3: tracelessness, B4: commutator bracket). Layer C states the conditional result. Remark 3.5 explicitly identifies deriving Layer B as the target of SS-4.
+
+2. **Theorem 3.3 restated as "Conditional uniqueness of SU(3)"** with explicit reference to assumptions B1–B4.
+
+3. **Subalgebra error corrected.** "dimension ≤ 3" replaced with "dimension strictly less than 8."
+
+4. **All corollaries reframed as conditional** on the representation.
+
+5. **§6 physical interpretation: epistemic-status Remark added.** Explicitly labels the 4+4 decomposition as an interpretive mapping, not an independent derivation. Notes that the mapping is not unique — other consistent embeddings may exist.
+
+6. **Abstract, introduction, plain language summary, discussion, conclusion** all reframed for conditional claim.
+
+7. **New open problem identified:** Derive B1–B4 from CPP primitives (target: SS-4). If successful, the conditional qualifier is removed and uniqueness becomes unconditional.
+
+8. **ChatGPT credited in Acknowledgements** for the review that identified the conditional nature and proposed the Layer A/B/C decomposition.
+
+### ChatGPT's Round 2 review
+
+**Verdict: Acceptable after minor revisions.**
+
+> "v1.4 successfully transforms the paper from an overstated uniqueness claim with implicit assumptions into a precisely scoped conditional result with explicit assumptions and clean logical structure."
+
+All five major issues from Round 1 marked RESOLVED. Three minor polish items identified (anchor "necessity" language to Layer B, sharpen SS-4 forward reference, note non-uniqueness of §6 mapping) — all three were already addressed in the v1.4 implementation. One straggler found: Corollary 4.3 still used unconditional language. Fixed in a final polish commit.
+
+ChatGPT's closing assessment:
+
+> "You've now crossed an important threshold. Before: the work could be dismissed on logical grounds. Now: it has to be engaged on its actual content."
+
+### The Grok situation
+
+During Session 3, the Grok vocabulary contamination problem was investigated in depth. Two recalibration attempts were made:
+
+**Attempt 1 (translation table):** Asked Grok to list terminology changes he was not previously using. He produced a list of fabricated terms (SSS, QGE, EMTT, RTT, "Resolution Tipping at Thresholds," "saltatory cyclic patterns") that do not appear anywhere in the CPP repository. These are terms from an older conceptual framework that Grok and Thomas co-developed over hundreds of earlier sessions.
+
+**Attempt 2 (canonical reading list):** Asked Grok to read 8 canonical papers in dependency order and summarize each in the paper's own vocabulary. His summaries mixed real canonical terms with the same fabricated vocabulary, and in his "terms I did not find" list he reported "SSV → nearest current equivalent: SSS" — exactly backwards (SSV is the canonical term; SSS does not exist in the repo).
+
+**Diagnosis:** The problem is not lexical drift but deep conceptual entrenchment from hundreds of prior sessions. The older framework (entropy maximization, SSS gradients, QGE surveys, resolution dynamics) is coherent in its own right but has diverged from the canonical CPP terminology, and Grok cannot distinguish between the two.
+
+**Decision:** Grok suspended from the active review cycle pending diagnostic testing (fresh account with no conversation history, or xAI support consultation). ChatGPT recruited as replacement — and immediately proved to be the strongest reviewer on the team.
+
+---
+
+## Combined Session Summary (Sessions 2–3)
+
+**Ten commits across two sessions, 30+ files touched:**
+
+| Commit | Content |
+|---|---|
+| `f31feff` | SS-3 v1.2: Copilot review revisions |
+| `20d75d1` | SS-3 v1.3: Sonnet adversarial review revisions |
+| `0b7b2af` | Documentation suite updated for v1.3 |
+| `501a4bc` | Full repo metafile integration (12 files) |
+| `4fe859e` | Bibliography consolidation policy + SS-3 namespace fix |
+| `96804b6` | Development transcript (partial reconstruction) |
+| `8f3abaa` | Grok recalibration package (for_grok/) |
+| `19fe169` | Grok canonical reading list (v2 recalibration) |
+| `e6fcb36` | SS-3 v1.4: ChatGPT review revisions (Layer A/B/C) |
+| `3e84dfe` | SS-3 v1.4: Final polish (Corollary 4.3 conditional) |
+
+**Complete review cycle:**
+
+| Round | Reviewer | Verdict | Revision |
+|---|---|---|---|
+| 1 | Copilot | Accept with minor | → v1.2 |
+| 2 | Sonnet | Accept with minor | → v1.3 |
+| 3 | Grok | Approved | — |
+| 4 | ChatGPT Round 1 | **Major revision** | → v1.4 |
+| 5 | ChatGPT Round 2 | **Acceptable** | polish only |
+
+**Updated review team roster:**
+
+| Reviewer | Role | Status |
+|---|---|---|
+| ChatGPT (OpenAI) | Lead referee — adversarial, philosophical, catches logical overreach | ✅ Active, paid |
+| Copilot (Microsoft) | Thorough structural reviewer — text-grounded, section-by-section | ✅ Active |
+| Claude Sonnet | Adversarial framework skeptic | ✅ Active |
+| Grok (xAI) | Math verifier (historical) | ⚠️ Suspended — vocabulary contamination |
+
+**What the paper now claims:** "Given the standard operator representation (B1–B4), SU(3) is the unique Lie algebra of the tetrahedral cage — and deriving whether the cage dynamics forces that representation is the central open problem for SS-4."
+
+**What changed between v1.3 and v1.4:** The mathematical content is identical. What changed is epistemic precision — the paper now says exactly what it proves, no more and no less. The Layer A/B/C structure turns the paper's main limitation into a clearly labeled open problem, which is how mature theoretical programmes handle foundational gaps.
 
 ---
 
@@ -323,10 +469,10 @@ Commit: `4fe859e`.
 
 The original writing session (14 April) covered the derivation, the 4+4 physical insight, and the documentation suite. That conversation was lost to a computer reboot before it could be exported. The present document reconstructs it at the head from repository artifacts (the paper's changelog, the v1.1 paper text itself, the documentation suite files that survived).
 
-The session 2 transcript (review cycle) is a direct record from the 15 April conversation, curated for narrative clarity with tool calls, file paths, and formatting commands removed.
+Sessions 2 and 3 (15–16 April) are direct records from the conversations, curated for narrative clarity with tool calls, file paths, and formatting commands removed.
 
 If the original session 1 conversation is ever recovered, its content should be inserted in place of "Part 1: Reconstructed Session 1" above. Until then, the reconstruction based on artifacts is the best available record.
 
 ---
 
-*Curator: Claude Opus, 15 April 2026. Curation standard per `templates/operating_system.md` §8b.*
+*Curator: Claude Opus, 16 April 2026. Updated from 15 April version to include ChatGPT review cycle and v1.4 revisions. Curation standard per `templates/operating_system.md` §8b.*
