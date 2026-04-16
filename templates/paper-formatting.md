@@ -358,7 +358,7 @@ Use `natbib` with `authoryear,round` for inline citations:
 
 ### 7.2 Bibliography File
 
-All CPP papers share a single, theory-wide bibliography file:
+All CPP papers use a **single master bibliography file**:
 
 ```
 /CPP/bibliography/cpp_references.bib
@@ -370,10 +370,15 @@ Each paper's `.tex` file calls:
 ```
 (Adjust relative path based on paper location.)
 
-Individual papers may also have a paper-specific `.bib` for references unique to that paper. Both are loaded:
+**Alternative — inline bibliography.** Short papers may embed citations directly in the .tex via a `thebibliography` environment with `\bibitem{}` entries. SS-3 uses this pattern. This avoids any external .bib dependency.
+
+**Policy (15 April 2026):** The master file is the **single source of truth**. Per-paper `[ID]_references.bib` and per-series `cpp_[series]_series.bib` files are **deprecated and frozen** — no new entries. Legacy files are retained for compatibility with already-registered papers. Full consolidation is tracked as OPEN-WORKFLOW-1 in Research_Frontier.md.
+
+**Do NOT** write new papers with commands like:
 ```latex
-\bibliography{../../bibliography/cpp_references,SM-6_references}
+\bibliography{../../bibliography/cpp_references,SM-6_references}  % OLD - deprecated
 ```
+Use the master file only. If a reference is missing, add it to the master.
 
 ### 7.3 BibTeX Key Convention
 

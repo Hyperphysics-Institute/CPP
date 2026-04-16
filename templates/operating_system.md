@@ -556,18 +556,26 @@ Create all 7 companion files per `documentation-suite.md`. Each file should note
 
 #### bibliography/cpp_references.bib update procedure
 **TRIGGER:** After any new paper is completed, or when a new external reference is cited.
-1. Add a BibTeX entry for the new CPP paper:
+
+**Policy (15 April 2026):** `bibliography/cpp_references.bib` is the **single master bibliography** for the entire CPP programme. All new entries — CPP papers and external works — go here and nowhere else. Per-paper and per-series .bib files are **deprecated and frozen** (legacy compatibility only). Full consolidation of the 12 legacy .bib files into the master is tracked as OPEN-WORKFLOW-1 in Research_Frontier.md.
+
+**For new papers:**
+1. Cite using `\bibliography{../../bibliography/cpp_references}` (path relative to paper's .tex location). Alternatively, embed citations inline via `\bibitem{}` inside a `thebibliography` environment — this avoids any .bib dependency.
+2. Add a BibTeX entry for the new CPP paper to `bibliography/cpp_references.bib`:
    ```bibtex
-   @article{abshier2026sm8,
-     author  = {Abshier, Thomas Lee and {Claude Opus} and {Grok} and {Copilot}},
-     title   = {Quark Generation Structure from 600-Cell Distance Shells},
+   @article{abshier2026ss3,
+     author  = {Abshier, Thomas Lee and {Claude Opus (Anthropic)}},
+     title   = {{Uniqueness of SU(3) from the Tetrahedral Cage}},
      journal = {Hyperphysics Institute},
      year    = {2026},
-     note    = {SM-8 v4.1}
+     note    = {SS-3 v1.3}
    }
    ```
-2. Add BibTeX entries for any external works cited in the paper
-3. Verify all cite keys match what's used in the paper's .tex file
+3. Add BibTeX entries for any external works cited in the paper to the master file.
+4. Verify all cite keys match what's used in the paper's .tex file.
+5. **Do NOT add entries to** `series_[name]/cpp_[series]_series.bib` or per-paper `[ID]_references.bib` files. These are frozen.
+
+**For existing papers:** No action required. Registered papers continue to use whatever .bib they were registered with. Conversion to the master bib will be done as part of the OPEN-WORKFLOW-1 consolidation session.
 
 #### open_problems/ update procedure
 **[ARCHIVED — 12 April 2026]** The `open_problems/` directory has been replaced by `Research_Frontier.md` (dashboard) and `problem_histories/` (narratives). New problems go in `Research_Frontier.md` §1. Narrative updates go in `problem_histories/PH-[ID].md`. The archived copies are at `archive/pre_frontier_2026-04-12/open_problems/`.

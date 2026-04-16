@@ -56,7 +56,7 @@ Each CPP paper follows a production pipeline that has evolved through the SM-6 a
    - **CPP-to-Conventional-Physics Mapping section** (see below)
    - Appendices (numerical verification, sensitivity analysis)
    - Acknowledgements with OSF DOI
-   - `.bib` bibliography (local, next to `.tex`)
+   - `.bib` bibliography: use the master file `bibliography/cpp_references.bib` via `\bibliography{../../bibliography/cpp_references}`. Alternatively, use an inline `thebibliography` block with `\bibitem{}` entries (no external .bib needed). **Do NOT create a new per-paper `[ID]_references.bib` file — those are deprecated.**
 2. Compile to PDF (pdflatex + bibtex, 3 passes).
 3. Run formatting audit (all template checks must pass).
 
@@ -76,7 +76,7 @@ Provide a table or structured comparison showing how each element of the CPP mec
 - Physical mechanism: 4 linear DP-chain bond oscillations + 4 coupled harmonic junction oscillations = 8 modes
 - Mapping: 8 CPP oscillation modes ↔ 8 QCD gluon fields; colour states ↔ cage base vertices; gluon exchange ↔ DI-bit propagation along DP chains; confinement ↔ cage energetic stability
 
-**Output:** `[PAPER-ID]_[title].tex`, `.pdf`, `[PAPER-ID]_references.bib`
+**Output:** `[PAPER-ID]_[title].tex`, `.pdf` (bibliography via master `bibliography/cpp_references.bib` or inline `\bibitem`)
 
 ---
 
