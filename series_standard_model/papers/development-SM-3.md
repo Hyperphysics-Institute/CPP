@@ -1,9 +1,9 @@
 # Development History: SM-3 — The Koide Relation from the Colour Cage Base Graph
 
 **Series:** 600-Cell Standard Model Emergence
-**Authors:** Thomas Lee Abshier ND, Grok (xAI), Claude Sonnet (Anthropic)
+**Authors:** Thomas Lee Abshier ND, Grok (xAI), Claude Sonnet (Anthropic), Claude Opus (Anthropic), ChatGPT (OpenAI)
 **Document type:** Development narrative — laboratory notebook record
-**Last updated:** 30 March 2026
+**Last updated:** 16 April 2026
 
 
 ## Origins: The Koide Formula as a Target
@@ -63,6 +63,48 @@ SM-3 is submission-ready at v5. It is the strongest theorem paper in the SM seri
 The six SM-3 documentation files were written on 30 March 2026.
 
 
+## Phase 6: ChatGPT Referee Review and v6 Revision (16 April 2026)
+
+ChatGPT (OpenAI) was recruited as an independent referee for the CPP programme and SM-3 v5 was submitted for review. ChatGPT produced the strongest review in the programme to date, identifying the same structural vulnerability found independently in SS-3: imported quantum-mechanical formalism presented as if derived from CPP primitives.
+
+**Three specific physics questions raised:**
+
+1. **Why Caldeira–Leggett coupling?** The system-bath coupling form is consistent with DI-bit exchange but not uniquely determined by it. This is a modelling choice, not a derivation.
+
+2. **Is τ_relax ≪ τ_ZBW derived or assumed?** The paper asserted rapid thermalisation without a dynamical estimate. No estimate was given because none exists yet within CPP.
+
+3. **Does diagonal coupling give full Gibbs equilibration or just dephasing?** Diagonal coupling in the site basis produces dephasing (decoherence); full thermalisation to the canonical Gibbs state requires off-diagonal coupling or appropriate bath spectral density. The paper elided this distinction.
+
+**Mathematical correction:** ChatGPT caught that the finite-temperature robustness scaling was O(ℏω₀/kT_P) ~ O(10⁻²⁰), not e^{-10²⁰} as had been stated in discussion. This is algebraically tiny, not doubly-exponentially tiny — a 10-orders-of-magnitude error in the exponent that would have been embarrassing in print.
+
+**Programme-level diagnosis:** This is now two papers (SS-3, SM-3) where the same Layer B gap was identified. The gap is the central vulnerability across the entire CPP paper series. SS-4 (deriving operator formalism from CPP primitives) would close the gap across both papers simultaneously, making it arguably the highest-leverage single piece of work remaining.
+
+**v6 revision (Claude Opus):**
+
+1. **New §3 "Epistemic Layer Structure"** — Layer A (5 geometric/dynamical items from CPP axioms), Layer B (3 imported open-system assumptions with Remark on status), Layer C (mathematical result). Same architecture as SS-3 v1.4.
+
+2. **P3 derivation revised** — Each proof step cross-references its Layer B dependency. The three imported assumptions are explicitly labelled as modelling choices, not derivations.
+
+3. **Robustness calculation added** — Remark with exact formula |c₋|²/|c₊|² = 2e^{3x}, Taylor expansion, and evaluation at x = ℏω₀/kT_P ~ 10⁻²⁰. Explicitly notes algebraic (not doubly-exponential) scaling.
+
+4. **Scope table expanded** — 14 rows with Layer A/B/C column. B1, B2, B3 listed separately as "Assumed."
+
+5. **Abstract and Background revised** — P3 status changed from "derived" to "conditional on Layer B thermalisation model."
+
+6. **Bibliography converted** — Inline `thebibliography` replaced with central `cpp_references.bib` per §7.2 of paper-formatting.md. New entries added: Caldeira & Leggett (1983), Breuer & Petruccione (2002).
+
+7. **ChatGPT's three minor refinements addressed** — §6.1: explicit "driver" remark added. §6.2: P3 proposition header tightened. §6.3: already covered by Layer B remark.
+
+**ChatGPT second-round verdict:** "Acceptable after minor refinements." Key assessment: "The paper now presents a coherent spectral-statistical model that yields Koide = 2/3, with clearly stated assumptions. This is no longer overstated."
+
+
+## Current Status (16 April 2026)
+
+SM-3 v6 incorporates the Layer A/B/C epistemic decomposition and robustness calculation. The paper is stronger than v5: the same mathematical result now rests on transparent epistemic foundations. P1 and P2 are derived from CPP primitives (Layer A); P3 is conditional on standard open-system thermalisation formalism (Layer B). The theorem (Layer C) is mathematically certain given Layers A and B.
+
+The central open question — whether Layer B can be derived from Layer A — is the same gap identified in SS-3, confirming the programme-level diagnosis that SS-4 is the highest-leverage forward project.
+
+
 ## Key Decisions Log
 
 | Date | Decision | Rationale |
@@ -74,3 +116,6 @@ The six SM-3 documentation files were written on 30 March 2026.
 | Session G | Structural impossibility of θ from K₃+SSV | C3 makes antibonding subspace degenerate; θ requires EW sector |
 | Session D | P3 derived from DP Sea thermal limit | kT_P/ℏω₀ ≈ 10²⁰; state-counting equipartition in high-T limit |
 | 26 Mar 2026 | Harmonisation to v5 | Series consistency: title, authors, bibliography, scope table |
+| 16 Apr 2026 | Layer A/B/C revision (v6) | ChatGPT review: same Layer B gap as SS-3; epistemic reframing |
+| 16 Apr 2026 | Robustness calc added | O(10⁻²⁰) algebraic, not e^{-10²⁰} doubly-exponential |
+| 16 Apr 2026 | Bibliography to central .bib | Compliance with §7.2 paper-formatting.md |

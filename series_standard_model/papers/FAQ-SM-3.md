@@ -36,15 +36,35 @@ P3 is not chosen to get the right answer — it follows from the physical temper
 
 The objection would be valid if CPP had chosen the temperature to get equal occupation. CPP did not — the Planck temperature is fixed by the Absolute Moment (t_P ≈ 5.39 × 10⁻⁴⁴ s gives T_P = ℏ/k_B t_P ≈ 1.42 × 10³² K), and the ZBW energy scale is fixed by sea_strength and r_conf. Their ratio being 10²⁰ is a consequence of CPP's basic scales, not a tunable parameter.
 
+**Epistemic status (v6):** The statistical mechanics of the high-temperature limit is standard and uncontroversial. What remains as a Layer B assumption is the chain from CPP's DI-bit exchange mechanism to a full Gibbs thermal state — specifically, the Caldeira–Leggett coupling form, the rapid thermalisation timescale, and whether the coupling produces full Gibbs equilibration rather than dephasing only. These are modelling choices consistent with CPP but not yet derived from CPP primitives. See SM-3 §3.2 for the explicit Layer B decomposition.
+
+**Robustness (v6):** At finite temperature, the exact departure from equal occupation is |c₋|²/|c₊|² = 2e^{3x} where x = ℏω₀/kT_P ~ 10⁻²⁰. The correction to K = 2/3 is of order 10⁻²⁰ — algebraically tiny, nine orders of magnitude below the 11 ppm experimental precision.
+
 ---
 
 ### B2. "P2 (mass proportional to |ψ|²) is just the Born rule renamed for mass. You are postulating quantum mechanics within CPP."
 
-P2 is not postulated — it is derived from the CPP DI-bit visit rate. The ZBW orbital spends a fraction |ψᵢ|² of its time at vertex Vᵢ (this is standard quantum mechanics applied to the finite K₃ system). Mass = stored ZBW energy. The ZBW energy stored at Vᵢ per unit time is proportional to the time spent there, which is |ψᵢ|². Hence mᵢ ∝ |ψᵢ|².
+P2 is not postulated — it is derived from the CPP DI-bit visit rate (Layer A). The ZBW orbital spends a fraction |ψᵢ|² of its time at vertex Vᵢ (this is standard quantum mechanics applied to the finite K₃ system). Mass = stored ZBW energy. The ZBW energy stored at Vᵢ per unit time is proportional to the time spent there, which is |ψᵢ|². Hence mᵢ ∝ |ψᵢ|².
 
 The derivation is: time at Vᵢ ∝ |ψᵢ|² (quantum mechanics in the K₃ system, given P1) → DI-bits processed at Vᵢ ∝ time at Vᵢ (CPP DI-bit rate) → mass contribution from Vᵢ ∝ DI-bits at Vᵢ (CPP mass as organisational energy). Each step follows from CPP axioms and P1 without independently assuming the Born rule.
 
 The CPP account of the Born rule for probability detection (OP-QM-1) is separate from P2. P2 is a mass relation, not a measurement relation.
+
+---
+
+### B3. "If P3 depends on imported open-system formalism (Layer B), isn't the Koide derivation circular — you're assuming quantum mechanics to derive a quantum-mechanical result?"
+
+No, and the Layer A/B/C decomposition makes clear why not. The result has three logically distinct components:
+
+**Layer A (geometry):** The K₃ graph has eigenvalues {+2, −1, −1}. This is a mathematical fact about a triangle — no quantum mechanics is needed. The 2:1 degeneracy ratio is purely geometric.
+
+**Layer B (thermal model):** The system thermalises to a Gibbs state at the Planck temperature. This uses standard open-system quantum mechanics (Caldeira–Leggett coupling, Gibbs equilibration). This is imported, not derived from CPP primitives.
+
+**Layer C (algebra):** Given equal eigenstate occupation (from Layer B applied to Layer A), K = 2/3 follows by algebra.
+
+The potential circularity objection would apply if Layer B were smuggling in the answer. But Layer B provides only the *weighting* (equal occupation per eigenstate in the high-T limit) — a generic result that applies to any three-level system at high temperature. The *content* — why K = 2/3 rather than any other value — comes entirely from Layer A (the 2:1 eigenvalue degeneracy of K₃). A different graph with different eigenvalue multiplicities would give a different K even with the same Layer B thermalisation model.
+
+The honest summary: the derivation is conditional on Layer B. Deriving Layer B from CPP primitives (the programme's SS-4 target) would make it unconditional. But even conditionally, the result is nontrivial — it explains *why* K = 2/3 rather than any other value, given standard thermalisation.
 
 ---
 
@@ -80,4 +100,4 @@ The analogy: knowing that three numbers lie on a circle (K = 2/3 constraint) plu
 
 ---
 
-*Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic), 30 March 2026.*
+*Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic), 30 March 2026. Updated 16 April 2026 by Claude Opus (Anthropic) after ChatGPT referee review: B1 revised for Layer B status and robustness; B2 updated for Layer A label; B3 added for Layer B circularity question.*

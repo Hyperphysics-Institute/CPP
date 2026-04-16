@@ -2,7 +2,20 @@
 % SM-3: K3 Spectral Theorem — Koide K = 2/3 from Colour Cage Base Graph
 % 600-Cell Standard Model Emergence Series
 %
-% Version 5 — ALL postulates derived from CPP axioms; theorem complete
+% Version 6 — Layer A/B/C epistemic decomposition; robustness calculation
+%
+% v5→v6 changes (16 April 2026, ChatGPT referee review):
+%   C1: New §3 "Epistemic Layer Structure" — Layer A (geometric input),
+%       Layer B (imported open-system formalism), Layer C (mathematical
+%       result).  Same architecture as SS-3 v1.4.
+%   C2: P3 derivation revised: Caldeira–Leggett coupling, τ_relax
+%       ordering, and full Gibbs equilibration explicitly labelled as
+%       Layer B assumptions; open problem SS-4 cited as resolution path.
+%   C3: Finite-temperature robustness calculation added with correct
+%       O(ℏω₀/kT_P) ~ O(10⁻²⁰) scaling (correcting earlier e⁻¹⁰²⁰ claim).
+%   C4: Scope table updated to reflect Layer A/B/C status.
+%   C5: Acknowledgements updated (ChatGPT reviewer credited).
+%   C6: Bibliography expanded (Caldeira–Leggett 1983, Breuer–Petruccione 2002).
 %
 % v4→v5 changes (Session D, 24 March 2026):
 %   Issue 1: Added Postulate P3 (thermal state-counting equipartition)
@@ -23,10 +36,11 @@
 % ============================================================
 
 \documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,amsthm,geometry,booktabs,array}
+\usepackage{amsmath,amssymb,amsthm,geometry,booktabs,array,enumitem}
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \geometry{margin=1in}
 
@@ -44,9 +58,9 @@
 
 \title{\textbf{SM-3: K3 Spectral Theorem and the Koide Formula}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 5, 26 March 2026}}
+{\normalsize Version 6, 16 April 2026}}
 
-\author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic)}
+\author{Thomas Lee Abshier, ND \and Grok (xAI) \and Claude Sonnet (Anthropic) \and Claude Opus (Anthropic) \and ChatGPT (OpenAI)}
 
 \date{\normalsize Hyperphysics Institute\\
 \url{https://hyperphysics.com}\\
@@ -59,17 +73,23 @@
 We prove that the Koide relation $K \equiv \Sigma m_i/(\Sigma\sqrt{m_i})^2 = 2/3$
 for the three charged lepton masses follows from the adjacency spectrum of
 the colour cage base graph $K_3$ (the equilateral triangle $\{V_1,V_2,V_3\}$
-of the tetrahedral cage), with all three supporting propositions derived from
-CPP axioms and prior results.
-(P1)~The ZBW Hamiltonian $\hat{H} = \hbar\omega_0 A_{K_3}$ follows from
-C3 cage symmetry and SSV hopping.
-(P2)~$m_i \propto |\psi_i|^2$ follows from the CPP DI-bit visit rate.
-(P3)~Equal eigenstate occupation follows from DP~Sea thermalisation in the
-high-temperature limit ($kT_P/\hbar\omega_0 \sim 10^{20}$).
-Under P1 and P3, with P2 derived from the CPP DI-bit flow rate dynamics,
-the eigenvalue ratio $\lambda_{\max}/|\lambda_{\min}| = 2$
+of the tetrahedral cage), conditional on three propositions whose epistemic
+status is made explicit via a Layer~A/B/C decomposition.
+(P1)~The ZBW Hamiltonian $\hat{H} = \hbar\omega_0 A_{K_3}$ is derived from
+C3 cage symmetry and SSV hopping (Layer~A).
+(P2)~$m_i \propto |\psi_i|^2$ is derived from the CPP DI-bit visit rate
+(Layer~A).
+(P3)~Equal eigenstate occupation follows from thermal equilibration
+with the DP~Sea in the high-temperature limit
+($kT_P/\hbar\omega_0 \sim 10^{20}$); the Gibbs formalism is
+standard, but the system-bath coupling model is imported from
+open quantum systems theory (Layer~B).
+Under P1--P3, the eigenvalue ratio $\lambda_{\max}/|\lambda_{\min}| = 2$
 forces the Lorentz modulation depth $\rho = \sqrt{2}$, from which
-$K = (1+\rho^2/2)/3 = 2/3$ follows exactly.
+$K = (1+\rho^2/2)/3 = 2/3$ follows exactly (Layer~C).
+At finite temperature, departures from $K = 2/3$ are of order
+$\hbar\omega_0/kT_P \sim 10^{-20}$, nine orders of magnitude below
+the 11~ppm experimental precision.
 The result is specific to $K_3$: only the three-colour cage ($N=3$) gives
 $K = 2/3$.  The theorem applies to \emph{leptons only}; quarks carry
 additional strong-sector mass contributions that systematically break
@@ -84,7 +104,7 @@ its derivation requires the electroweak sector (OP-SM-7d).
 \section{Background}
 %=====================================================================
 
-The Koide formula (Koide, 1982~\cite{koide1982}) is an empirical constraint
+The Koide formula (Koide, 1982~\cite{koide1983}) is an empirical constraint
 satisfied by the three charged lepton masses to 11~ppm:
 \begin{equation}
 K \equiv \frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2}
@@ -92,11 +112,13 @@ K \equiv \frac{m_e + m_\mu + m_\tau}{(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2}
 \label{eq:koide}
 \end{equation}
 No Standard Model derivation exists.  This paper proves $K = 2/3$ from
-the spectral structure of the K3 cage base graph in CPP.
+the spectral structure of the K3 cage base graph in CPP, conditional on
+an open-system thermalisation model whose epistemic status is made
+explicit via a Layer~A/B/C decomposition (\S\ref{sec:layers}).
 
 \textbf{Note on independence:} The K$_3$ graph is not chosen to reproduce
 the Koide relation.  It is identified as the colour cage base of the
-600-cell tetrahedral cage in SM-1~\cite{abshier_sm1} from geometric
+600-cell tetrahedral cage in SM-1~\cite{abshier2026sm1} from geometric
 considerations alone --- specifically, the three colour vertices
 $\{V_1,V_2,V_3\}$ of the tetrahedral quark cage, whose C3 symmetry is
 forced by the 600-cell lattice geometry.  The Koide relation emerges
@@ -105,14 +127,14 @@ motivation for it.
 
 \textbf{Prerequisites used without proof here:}
 \begin{itemize}
-\item \textbf{Theorem~1} (Charge quantisation, SM-1~\cite{abshier_sm1}):
+\item \textbf{Theorem~1} (Charge quantisation, SM-1~\cite{abshier2026sm1}):
   the cage base $\{V_1,V_2,V_3\}$ has C3 symmetry; $\delta = 1/3$
   (topological proof from completeness $+$ C3).
 \item \textbf{Algebraic identity}: with the parametrisation
   $\sqrt{m_i} = A(1+\rho\cos\phi_i)$ and C3 phases $\phi_i = \theta+2\pi i/3$,
   one has $K = (1+\rho^2/2)/3$.  Hence $K = 2/3 \Leftrightarrow \rho = \sqrt{2}$.
 \item \textbf{sea\_strength} $\approx 0.1780$ derived from the
-  600-cell Voronoi geometry (SS-1, Theorem~6~\cite{abshier_ss1}).
+  600-cell Voronoi geometry (SS-1, Theorem~6~\cite{abshier2026ss1}).
 \end{itemize}
 
 %=====================================================================
@@ -153,7 +175,101 @@ is the precise reason the lepton Koide ratio is $2/3$.
 \end{remark}
 
 %=====================================================================
-\section{The Three Postulates}
+\section{Epistemic Layer Structure}
+\label{sec:layers}
+%=====================================================================
+
+Following the programme-wide convention established in SS-3~v1.4,
+this paper makes the epistemic status of its assumptions explicit
+by separating the argument into three layers, clearly distinguishing
+what comes from CPP geometry, what is imported from standard
+open-system quantum mechanics, and what follows mathematically.
+
+\subsection{Layer A --- Geometric input (CPP primitives)}
+
+The following inputs are derived from CPP axioms:
+\begin{enumerate}[label=(A\arabic*)]
+\item The 600-cell lattice is composed exclusively of tetrahedral
+  cells (Axiom~A2).
+\item Each tetrahedral cell has $3$ colour base vertices
+  $\{V_1,V_2,V_3\}$ with C3 symmetry (SM-1 Theorem~1).
+\item The adjacency matrix $A_{K_3}$ has eigenvalues $+2$ (once)
+  and $-1$ (twice) --- a geometric fact of $K_3$
+  (Lemma~\ref{lem:K3spec}).
+\item The DP~Sea exists at temperature $T_P$ (Axiom~A1, A3).
+\item The DI-bit exchange mechanism couples the ZBW orbital
+  to the DP~Sea at each Absolute Moment (Axiom~A3).
+\end{enumerate}
+These are geometric and dynamical facts of the CPP lattice.
+They are not postulates of this paper.
+
+\subsection{Layer B --- Open-system formalism (imported structure)}
+\label{sec:layerb}
+
+The following assumptions are adopted from standard open quantum
+systems theory.  They are \emph{not} derived from CPP primitives
+in this paper:
+\begin{enumerate}[label=(B\arabic*)]
+\item \textbf{Caldeira--Leggett coupling.}  The ZBW--DP~Sea
+  interaction is modelled as a system-bath coupling of
+  Caldeira--Leggett form~\cite{caldeira1983}:
+  $\hat{H}_{\mathrm{coup}} = \sum_i\sum_k g_k|i\rangle\langle i|
+  (b_k + b_k^\dagger)$.
+  This is a modelling choice consistent with DI-bit exchange
+  but not uniquely determined by it.
+\item \textbf{Rapid thermalisation.}  The relaxation time
+  $\tau_{\mathrm{relax}} \ll \tau_{\mathrm{ZBW}}$, ensuring
+  equilibration within each ZBW cycle.  No dynamical estimate
+  of $\tau_{\mathrm{relax}}$ is given in this paper.
+\item \textbf{Full Gibbs equilibration.}  The system-bath
+  coupling produces the canonical Gibbs state
+  $\rho_{\mathrm{eq}} = e^{-\hat{H}/kT}/Z$, not merely
+  dephasing (decoherence without energy redistribution).
+  This requires the bath spectral density to couple
+  transitions between eigenstates of $\hat{H}_{\ZBW}$, which
+  is stronger than diagonal coupling alone would
+  guarantee~\cite{breuer2002}.
+\end{enumerate}
+
+\begin{remark}[Status of Layer~B]
+\label{rem:layerb}
+Assumptions B1--B3 are standard in open quantum systems theory
+and are physically motivated by the CPP DP~Sea mechanism: every
+CP exchanges DI-bits with the DP~Sea at each Absolute Moment
+(Axiom~A3), providing a natural system-bath coupling.  However,
+a rigorous derivation showing that DI-bit exchange dynamics
+\emph{forces} Caldeira--Leggett coupling, rapid thermalisation,
+and full Gibbs equilibration has not been given.  Such a
+derivation --- deriving the operator formalism and system-bath
+structure from CPP primitives --- would convert the present
+conditional result into an unconditional one.  This is the same
+Layer~B gap identified in SS-3 (Remark~3.1) and constitutes
+the programme's central open problem, targeted by a future
+paper (SS-4).
+\end{remark}
+
+\subsection{Layer C --- Mathematical result}
+
+\emph{Given} Layers~A and~B:
+\begin{quote}
+The three $K_3$ eigenstates are equally occupied in the
+high-temperature Gibbs limit.  The eigenvalue ratio
+$\lambda_+/|\lambda_-| = 2$ then forces $\rho = \sqrt{2}$,
+from which $K = 2/3$ follows exactly.
+\end{quote}
+This is proved in \S\ref{sec:theorem} (Theorem~\ref{thm:K3Koide}).
+
+\medskip
+
+The layered structure makes the logical dependency transparent.
+Layer~C is mathematically certain.  Layer~A is geometrically
+certain (given the 600-cell axiom).  The open question is whether
+Layer~B can be derived from Layer~A, which would close the gap
+between \emph{conditional} and \emph{unconditional} derivation
+of the Koide formula.
+
+%=====================================================================
+\section{The Three Propositions}
 %=====================================================================
 
 \begin{proposition}[$\ZBW$ Hamiltonian --- derived from C3 symmetry and SSV hopping]
@@ -186,12 +302,12 @@ This is derived from P1 and P3 via the CPP DI-bit flow rate
 (Proposition~\ref{prop:Born_derivation}).
 \end{proposition}
 
-\begin{proposition}[Thermal equipartition --- derived from DP Sea thermalisation]
+\begin{proposition}[Thermal equipartition --- from DP Sea thermalisation model (Layer~B)]
 \label{post:equip}
 At thermal equilibrium with the DP~Sea, all $K_3$ eigenstates are equally
 occupied, giving $|c_+|^2 = 1/3$ and $|c_-|^2 = 2/3$.
-Derived from DP~Sea thermalisation
-(Proposition~\ref{prop:P3_derivation}).
+Conditional on the Layer~B thermalisation model
+(Proposition~\ref{prop:P3_derivation}; see \S\ref{sec:layerb}).
 \end{proposition}
 
 \begin{remark}[Physical motivation for P3]
@@ -254,7 +370,7 @@ $\hat{H}_\ZBW = \hbar\omega_0 A_{K_3}$. \qed
 \begin{remark}[Consistency with SS-1 Theorem~6]
 The hopping energy $\hbar\omega_0 = \mathrm{sea\_strength}\times\hbar c/r_{\mathrm{conf}}$
 is consistent with the DP binding energy $E_{\mathrm{eDP}} = \hbar\omega_0/\varphi^2$
-from SS-1 Theorem~6~\cite{abshier_ss1}.  The $1/\varphi^2$ factor arises
+from SS-1 Theorem~6~\cite{abshier2026ss1}.  The $1/\varphi^2$ factor arises
 from the Voronoi volume per vertex; $\hbar\omega_0$ is the total SSV energy
 at $r_{\mathrm{conf}}$ before the per-vertex projection.
 \end{remark}
@@ -291,7 +407,7 @@ Substituting: $m_i \propto |\psi_i|^2$. \qed
 P3 simultaneously fixes $|c_-|^2/|c_+|^2 = 2$ (giving $\rho = \sqrt{2}$
 and $K = 2/3$) and specifies the coherent generation state, making the
 ZBW trajectory ergodic and giving $f_i = |\psi_i|^2$.
-The theorem rests on \textbf{two} independent postulates (P1 and P3).
+The theorem rests on \textbf{two} independent propositions (P1 and P3).
 \end{remark}
 
 %=====================================================================
@@ -308,30 +424,37 @@ for each of the three K3 eigenstates, giving $|c_-|^2/|c_+|^2 = 2$.
 \end{proposition}
 
 \begin{proof}
-\textbf{Step 1 (ZBW-DP Sea coupling).}
-Every CP exchanges DI-bits with the DP~Sea at each Absolute Moment.
-The ZBW orbital couples to the DP~Sea via a Caldeira--Leggett
-system-bath coupling:
+\textbf{Step 1 (ZBW--DP Sea coupling --- Layer~B1).}
+Every CP exchanges DI-bits with the DP~Sea at each Absolute Moment
+(Layer~A5).  This exchange is modelled as a Caldeira--Leggett
+system-bath coupling~\cite{caldeira1983} (Layer~B1, \S\ref{sec:layerb}):
 \begin{equation}
 \hat{H}_{\mathrm{coup}} = \sum_{i}\sum_k g_k\,|i\rangle\langle i|\,(b_k + b_k^\dagger).
 \end{equation}
+This coupling form is physically motivated by DI-bit exchange
+but is not uniquely determined by it; see Remark~\ref{rem:layerb}
+for its epistemic status.
 
-\textbf{Step 2 (Thermalisation).}
-The relaxation time $\tau_{\mathrm{relax}} \ll \tau_{\mathrm{ZBW}}$
-ensures rapid equilibration within each ZBW cycle.  The equilibrium
-state is:
+\textbf{Step 2 (Thermalisation --- Layer~B2, B3).}
+We assume rapid thermalisation: $\tau_{\mathrm{relax}} \ll
+\tau_{\mathrm{ZBW}}$ (Layer~B2), yielding the canonical Gibbs
+state (Layer~B3):
 \begin{equation}
 \rho_{\mathrm{eq}} = \frac{e^{-\hat{H}_\ZBW/kT_P}}{Z}.
 \end{equation}
+Full Gibbs equilibration (as opposed to dephasing alone) requires
+the bath spectral density to couple transitions between energy
+eigenstates, a condition that is assumed here but not derived
+from CPP dynamics~\cite{breuer2002}.
 
-\textbf{Step 3 (High-temperature limit).}
+\textbf{Step 3 (High-temperature limit --- Layer~C).}
 \[
 \frac{kT_P}{\hbar\omega_0} \approx 10^{20} \gg 1
 \implies
 |c_n|^2 \to \frac{1}{3} \quad\text{for each eigenstate}.
 \]
 
-\textbf{Step 4 (Counting).}
+\textbf{Step 4 (Counting --- Layer~C).}
 $K_3$ has one bonding state and two antibonding states:
 \[
 |c_+|^2 = \tfrac{1}{3}, \quad
@@ -340,22 +463,45 @@ $K_3$ has one bonding state and two antibonding states:
 \]
 \end{proof}
 
-\begin{remark}[Physical meaning]
-The ratio $|c_-|^2/|c_+|^2 = 2$ is the ratio of antibonding to bonding
-eigenstates of $K_3$.  At any temperature $kT \gg \hbar\omega_0$, this
-holds.  Departures from $K = 2/3$ would only appear at
-$kT \lesssim \hbar\omega_0 \approx 88$~MeV --- far above any energy
-scale accessible to stable leptons.
+\begin{remark}[Finite-temperature robustness]
+\label{rem:robustness}
+At finite temperature $T$, the exact Gibbs weights give the
+antibonding-to-bonding occupation ratio
+\begin{equation}
+\frac{|c_-|^2}{|c_+|^2} = 2\,e^{3x},
+\qquad x \equiv \frac{\hbar\omega_0}{kT}.
+\label{eq:robustness}
+\end{equation}
+This follows from the energies $E_+ = 2\hbar\omega_0$ and
+$E_- = -\hbar\omega_0$, giving Gibbs weights
+$e^{-2\hbar\omega_0/kT}$ (bonding) and
+$2\times e^{+\hbar\omega_0/kT}$ (antibonding, degeneracy~2),
+so the ratio is $2e^{3\hbar\omega_0/kT}$.
+
+For $x \ll 1$:
+\begin{equation}
+\frac{|c_-|^2}{|c_+|^2} = 2\bigl(1 + 3x + O(x^2)\bigr).
+\end{equation}
+At the Planck temperature, $x = \hbar\omega_0/kT_P \sim 10^{-20}$,
+so the correction to the exact ratio of~$2$ is of order
+$O(10^{-20})$ --- algebraically tiny, and nine orders of magnitude
+below the $11$~ppm experimental precision of the Koide relation.
+Departures from $K = 2/3$ are suppressed by powers of
+$\hbar\omega_0/kT$, not exponentially; the robustness is
+\emph{algebraic}, not doubly-exponential.
 \end{remark}
 
 %=====================================================================
 \section{The Theorem}
+\label{sec:theorem}
 %=====================================================================
 
 \begin{theorem}[K3 spectral origin of the Koide formula]
 \label{thm:K3Koide}
-Under Postulates~\ref{post:H}--\ref{post:equip} and C3 cage symmetry
-(Theorem~1), the three charged lepton masses satisfy $K = 2/3$ exactly.
+Under Propositions~\ref{post:H}--\ref{post:equip}
+(Layers~A and~B, \S\ref{sec:layers}) and C3 cage symmetry
+(SM-1 Theorem~1), the three charged lepton masses satisfy
+$K = 2/3$ exactly.
 \end{theorem}
 
 \begin{proof}
@@ -379,6 +525,15 @@ $\rho = \sqrt{2}$:
 K = \frac{1 + \rho^2/2}{3} = \frac{1 + 1}{3} = \frac{2}{3}.\qquad\square
 \]
 \end{proof}
+
+\begin{remark}[Physical driver]
+The value $K = 2/3$ arises from the combination of the $2\!:\!1$
+eigenstate degeneracy of the $K_3$ adjacency spectrum and the
+high-temperature Gibbs weighting, which converts that degeneracy
+into the occupation ratio $|c_-|^2/|c_+|^2 = 2$.  Both ingredients
+are necessary: the degeneracy is Layer~A (geometry); the thermal
+weighting is Layer~B (open-system model).
+\end{remark}
 
 \begin{corollary}[Common K3 origin of $\delta = 1/3$ and $K = 2/3$]
 \label{cor:common}
@@ -422,19 +577,24 @@ Theorem~\ref{thm:K3Koide} is a lepton result, not a universal one.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{p{5.5cm}lp{5cm}}
+\begin{tabular}{p{5.5cm}lp{5.5cm}}
 \toprule
-Claim & Status & Notes \\
+Claim & Status & Layer / Notes \\
 \midrule
-$K = 2/3$ (Koide formula) & \textbf{Proved} & Main theorem \\
-$\rho = \sqrt{2}$ from $K_3$ spectrum & \textbf{Proved} & Step~3 \\
-C3 phase structure & \textbf{Proved} & From SM-1 Theorem~1 \\
-P1: $H = \hbar\omega_0 A_{K_3}$ & \textbf{Derived} & C3 + SSV hopping \\
-P2: $m_i \propto |\psi_i|^2$ & \textbf{Derived} & Via DI-bit ZBW visit rate \\
-P3: Thermal equipartition & \textbf{Derived} & DP Sea thermalisation \\
+$K_3$ eigenvalues $\{+2,-1,-1\}$ & \textbf{Proved} & Layer~A (geometry) \\
+C3 phase structure & \textbf{Proved} & Layer~A (SM-1 Theorem~1) \\
+$K = 2/3$ (Koide formula) & \textbf{Proved} & Layer~C (conditional on A+B) \\
+$\rho = \sqrt{2}$ from $K_3$ spectrum & \textbf{Proved} & Layer~C \\
+P1: $H = \hbar\omega_0 A_{K_3}$ & \textbf{Derived} & Layer~A (C3 + SSV hopping) \\
+P2: $m_i \propto |\psi_i|^2$ & \textbf{Derived} & Layer~A (DI-bit visit rate) \\
+P3: Thermal equipartition & \textbf{Conditional} & Layer~B (Gibbs model assumed; \S\ref{sec:layerb}) \\
+Robustness: $\delta K \sim O(10^{-20})$ & \textbf{Proved} & Layer~C (Remark~\ref{rem:robustness}) \\
 Phase $\theta$ & Open & OP-SM-7d \\
 Scale $A$ & Calibrated to $m_e$ & One free parameter \\
 Individual masses $m_\mu, m_\tau$ & Open & Need $\theta$ and $A$; see SM-4 \\
+Caldeira--Leggett coupling & \textbf{Assumed} & Layer~B1 (modelling choice) \\
+$\tau_{\mathrm{relax}} \ll \tau_{\mathrm{ZBW}}$ & \textbf{Assumed} & Layer~B2 (no dynamical estimate) \\
+Full Gibbs equilibration & \textbf{Assumed} & Layer~B3 (vs.\ dephasing only) \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -444,7 +604,7 @@ Individual masses $m_\mu, m_\tau$ & Open & Need $\theta$ and $A$; see SM-4 \\
 Derive $\theta = 132.7323°$ from CPP dynamics.
 Theorem~\ref{thm:K3Koide} proves $K = 2/3$ but leaves $\theta$
 undetermined.  A structural theorem (proved in SM-4,
-Theorem~2~\cite{abshier_sm4}) shows that no mechanism within the
+Theorem~2~\cite{abshier2026sm4}) shows that no mechanism within the
 K3+SSV framework can select $\theta$, because C3 symmetry leaves
 the antibonding subspace degenerate.  The derivation of $\theta$
 requires the electroweak sector (EW series, OP-EW-1).
@@ -458,39 +618,15 @@ Thomas Lee Abshier ND conceived the CPP framework and directed the
 research programme.  Grok (xAI) contributed computational development
 and the thermal picture for the ZBW resonator.  Claude Sonnet (Anthropic)
 performed the formal derivations of P1, P2, and P3, verified the
-proofs, and drafted this version.
+proofs, and drafted versions~1--5.  ChatGPT (OpenAI) provided a
+referee-grade review identifying the Layer~B gap in the P3 derivation,
+the correct $O(\hbar\omega_0/kT_P)$ robustness scaling, and three
+specific physics questions that sharpened the epistemic framing.
+Claude Opus (Anthropic) proposed the Layer~A/B/C decomposition
+adopted in version~6 and integrated the review corrections.
 
 %=====================================================================
-\begin{thebibliography}{9}
-
-\bibitem{koide1982}
-Y.~Koide,
-A fermion-boson composite model of quarks and leptons,
-\textit{Phys.\ Lett.\ B} \textbf{120}, 161 (1983).
-
-\bibitem{pdg2024}
-Particle Data Group,
-Review of Particle Physics,
-\textit{Prog.\ Theor.\ Exp.\ Phys.} \textbf{2024}, 083C01 (2024).
-
-\bibitem{abshier_ss1}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-Conscious Point Physics: The Strong Sector from the 600-Cell Lattice (SS-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_strong/SS-1_strong_sector_from_600cell_lattice.tex}
-
-\bibitem{abshier_sm1}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-Binding Mechanisms and Cage Stability in the 600-Cell Lattice (SM-1),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex}
-
-\bibitem{abshier_sm4}
-T.~L.~Abshier, Grok (xAI), Claude Sonnet (Anthropic),
-Charged Lepton Masses from the K3 Spectral Theorem (SM-4),
-\textit{600-Cell Standard Model Emergence Series}, 2026.\\
-\url{https://github.com/Hyperphysics-Institute/CPP/blob/main/series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex}
-
-\end{thebibliography}
+\bibliographystyle{plainnat}
+\bibliography{../../bibliography/cpp_references}
 
 \end{document}

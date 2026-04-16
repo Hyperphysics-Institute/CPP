@@ -2,7 +2,7 @@
 
 **Series:** 600-Cell Standard Model Emergence
 **Document type:** Living review record and FAQ
-**Last updated:** 30 March 2026
+**Last updated:** 16 April 2026
 
 
 # PART 1: FORMAL REVIEWS
@@ -71,6 +71,88 @@ Session G established that the C3 symmetry of K₃ makes the antibonding subspac
 | 1.2 | θ cannot be derived from K₃+SSV | Structural impossibility (proved) | Resolved (SM-4 Thm 2) |
 | 1.3 | Three-proposition structure not explicit | Valid — clarity | Resolved (v4/v5) |
 | 1.4 | Quarks not satisfying Koide unexplained | Valid — completeness | Resolved (v4/v5) |
+
+
+## Review 2: ChatGPT (OpenAI) — First Round (April 2026)
+
+**Reviewer:** ChatGPT (OpenAI)
+**Date:** April 2026
+**Context:** ChatGPT was recruited as an independent referee for the CPP programme. SM-3 v5 was submitted for review. ChatGPT's review identified the same structural vulnerability found in SS-3: imported quantum-mechanical formalism not derived from CPP primitives. This converges on a programme-level diagnosis.
+
+**Verdict:** Major revision required
+
+
+### Objection 2.1: P3 Thermal Derivation Uses Imported Open-System Formalism
+
+**The objection:** The P3 derivation presents a Caldeira–Leggett system-bath coupling, rapid thermalisation (τ_relax ≪ τ_ZBW), and full Gibbs equilibration as if derived from CPP primitives. In fact, these are imported from standard open quantum systems theory and not uniquely determined by CPP's DI-bit exchange mechanism.
+
+**Assessment: VALID — same Layer B gap as SS-3**
+
+Three specific sub-issues:
+- **B1 (Caldeira–Leggett coupling):** Why this specific coupling form? It is consistent with DI-bit exchange but not derived from it.
+- **B2 (Thermalisation timescale):** τ_relax ≪ τ_ZBW is asserted without a dynamical estimate.
+- **B3 (Full Gibbs vs dephasing):** Diagonal coupling in the site basis produces dephasing; full Gibbs equilibration requires off-diagonal coupling or appropriate bath spectral density. The paper does not establish this.
+
+**Response/revision (v6):** Layer A/B/C epistemic decomposition applied (same architecture as SS-3 v1.4). B1–B3 explicitly labelled as Layer B assumptions in §3.2 with a Remark on status. P3 proof steps cross-reference Layer B items. Scope table expanded to list B1–B3 separately as "Assumed." The central open problem (SS-4: deriving operator formalism from CPP primitives) identified as the resolution path.
+
+**Status: RESOLVED — epistemic status corrected; physics gap acknowledged**
+
+
+### Objection 2.2: Robustness Scaling Incorrectly Stated
+
+**The objection:** The finite-temperature deviation from K = 2/3 was claimed to be δ ~ e^{-10²⁰} (doubly exponential). ChatGPT showed the correct Gibbs weights give |c₋|²/|c₊|² = 2e^{3x} where x = ℏω₀/kT_P ~ 10⁻²⁰, so the correction is O(x) ~ O(10⁻²⁰) — algebraically tiny, not doubly-exponentially tiny. A 10-orders-of-magnitude error in the exponent.
+
+**Assessment: VALID — mathematical error**
+
+The correction was stated in conversation, not in the v5 paper text (which merely said "high-temperature limit" without quantifying the departure). But the incorrect doubly-exponential claim would have been propagated if not caught.
+
+**Response/revision (v6):** Quantitative robustness calculation added as Remark 4.5 with the correct |c₋|²/|c₊|² = 2e^{3x} formula, Taylor expansion, and evaluation at x ~ 10⁻²⁰. Explicitly notes the scaling is algebraic, not doubly-exponential.
+
+**Status: RESOLVED — correct calculation now in paper**
+
+
+### Objection 2.3: Epistemic Framing Overstates Derivation Status
+
+**The objection:** The v5 abstract says "all three supporting propositions derived from CPP axioms." This is not accurate for P3, which depends on Layer B assumptions.
+
+**Assessment: VALID — accuracy of claims**
+
+**Response/revision (v6):** Abstract rewritten: P1 and P2 labelled "derived (Layer A)," P3 labelled "conditional on Layer B thermalisation model." Background section updated. Scope table distinguishes "Derived" from "Conditional" and "Assumed."
+
+**Status: RESOLVED**
+
+
+## Review 3: ChatGPT (OpenAI) — Second Round (April 2026)
+
+**Reviewer:** ChatGPT (OpenAI)
+**Date:** April 2026
+**Context:** Review of SM-3 v6 after Layer A/B/C revision.
+
+**Verdict:** Acceptable after minor refinements
+
+ChatGPT's second-round assessment:
+- Layer A/B/C structure: "Successfully implemented — doing real conceptual work"
+- Robustness analysis: "Strong addition — significantly strengthens the paper"
+- P3 epistemic status: "You now say that explicitly. That is the difference between a weak paper and a solid one."
+- Mathematical audit: "No issues. Everything checks out."
+
+Three minor suggestions (all addressed in v6):
+- §6.1: Make the "driver" statement explicit → Added Remark (Physical driver) after theorem proof
+- §6.2: Qualify "derived" language with "within Layer B" → P3 proposition header updated
+- §6.3: Clarify bath coupling epistemic status → Already addressed in Layer B remark and P3 proof
+
+
+## Updated Summary Table (all reviews)
+
+| # | Objection | Reviewer | Assessment | Status |
+|---|-----------|----------|-----------|--------|
+| 1.1 | P3 was an ungrounded postulate | Claude Sonnet | Valid — major gap | Resolved (v5) |
+| 1.2 | θ cannot be derived from K₃+SSV | Claude Sonnet | Structural impossibility | Resolved (SM-4 Thm 2) |
+| 1.3 | Three-proposition structure not explicit | Claude Sonnet | Valid — clarity | Resolved (v4/v5) |
+| 1.4 | Quarks not satisfying Koide unexplained | Claude Sonnet | Valid — completeness | Resolved (v4/v5) |
+| 2.1 | P3 uses imported open-system formalism | ChatGPT | Valid — Layer B gap | Resolved (v6) |
+| 2.2 | Robustness scaling incorrect | ChatGPT | Valid — math error | Resolved (v6) |
+| 2.3 | Epistemic framing overstates derivation | ChatGPT | Valid — accuracy | Resolved (v6) |
 
 
 # PART 2: FAQ — CONVENTIONAL PHYSICS PERSPECTIVE
