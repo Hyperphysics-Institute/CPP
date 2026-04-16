@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/bootup.md`
 **Purpose:** Load this file at the start of every new AI session working on CPP. It provides everything needed to continue productive work.
-**Last updated:** 11 April 2026
+**Last updated:** 16 April 2026
 
 ---
 
@@ -225,6 +225,7 @@ Axiom count: 7 (plus A8', A9'). Predictions: 15+. Ratio: 0.47.
 5. **OPEN-P-FV-1:** SSV_abs → Lorentz factor (SR-1 re-derivation)
 6. **SM-10 FEM Simulation:** First-principles quark mass from chain network simulation — the #1 priority forward project. Phase 1 (CPU proof-of-concept) can be attempted immediately.
 7. **Strange quark residual (+3.1%):** Largest error in zero-parameter formula. Candidate explanations: absent surface blanket, chiral condensate coupling, ZBW instability.
+8. **OPEN-SS-15 (Layer B Gap):** Derive operator formalism and system-bath coupling from CPP primitives. Closes the Layer B gap across SM-3, SS-3, and all future papers. **Highest-leverage single piece of work remaining.** Target paper: SS-4.
 
 Full list: `Research_Frontier.md` and `future_projects.md`.
 

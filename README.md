@@ -43,7 +43,7 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | **SS-3** | Uniqueness of SU(3) from the Tetrahedral Cage | SU(3) is the unique algebra of 3 colour vertices; 4+4 physical mode basis |
 | **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3; SSV₀ = 0.2555 MeV |
 | **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 |
-| **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 derived exactly from K₃ eigenvalue ratio — zero free parameters |
+| **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 from K₃ eigenvalue ratio, conditional on Layer B thermalisation — zero free parameters |
 | **SM-4** | Charged Lepton Masses from K3 | 11 ppm consistency; structural impossibility of θ from K3+SSV |
 | **SM-5** | Tribimaximal Neutrino Mixing from K3 | U_PMNS = U_TBM exactly from K₃ eigenvectors — zero free parameters |
 | **SR-1** | Mechanistic Derivation of Relativistic Effects | Lorentz invariance from 600-cell lattice wave propagation |

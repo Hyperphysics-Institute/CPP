@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 15 April 2026 (after SS-3)
+**Last updated:** 16 April 2026 (after SM-3 v6)
 
 ---
 
@@ -19,7 +19,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SS-1 | Strong Sector from 600-Cell | SU(3) exact; β₀ = 7; 9 theorems | v2 |
 | SM-1 | Binding Mechanisms and Cage Stability | Tetrahedral cage; δ = 1/3; SSV₀ | v6 |
 | SM-2 | Mass Generation from Geometric Hierarchies | Semi-empirical framework; k ≈ 0.0185 | v30 |
-| SM-3 | K3 Spectral Theorem and Koide Formula | K = 2/3 exact from K₃ eigenvalues | v5 |
+| SM-3 | K3 Spectral Theorem and Koide Formula | K = 2/3 exact from K₃ eigenvalues (conditional on Layer B) | v6 |
 | SM-4 | Charged Lepton Masses from K3 | 11 ppm; θ cannot come from K3+SSV alone | v5 |
 | SM-5 | Tribimaximal Neutrino Mixing | U_PMNS = U_TBM from K₃ eigenvectors | v1 |
 | SR-1 | Mechanistic Derivation of Relativistic Effects | Lorentz factor from Voronoi compression; k derived | v18 |

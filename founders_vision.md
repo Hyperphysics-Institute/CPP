@@ -574,6 +574,25 @@ Even with fractal branching, the additive energy sum doesn't reproduce V^2.38. T
 
 ---
 
+### 16 April 2026 — The Layer B Gap: Programme-Wide Vulnerability Identified (ChatGPT review, Opus integration)
+
+**Context:** ChatGPT (OpenAI) was recruited as an independent referee and reviewed both SS-3 and SM-3. Both papers received "Major revision required" on first round, with the *same* structural critique: imported quantum-mechanical formalism not derived from CPP primitives.
+
+**The diagnosis:** Every CPP paper that derives a quantitative result uses quantum-mechanical machinery — operator formalism, Hilbert space structure, Gibbs equilibration, Born rule — that is *imported* from standard physics rather than *derived* from CPP's own axioms (A1–A3). This gap has been present since the programme's inception but was not identified with surgical precision until ChatGPT's review forced it to the surface.
+
+**The architectural response — Layer A/B/C decomposition:**
+- **Layer A:** What comes from CPP geometry (600-cell, K₃ spectrum, C3 symmetry). This is the content — *why* the result has the value it does.
+- **Layer B:** What is imported from standard QM/QFT (operator formalism, Hermitian observables, Gibbs equilibration, Caldeira–Leggett coupling). This is the formalism — the mathematical language in which the result is expressed.
+- **Layer C:** What follows mathematically from A+B. This is the theorem.
+
+**Thomas's philosophical stance:** The Layer B gap does not invalidate CPP's results. The imported formalism (quantum mechanics) is empirically verified to extraordinary precision — it is not speculative. What the Layer B gap means is that CPP has not yet shown that its own primitives *force* this formalism. The programme claims consciousness is fundamental and physics emerges — but it has not yet shown that quantum mechanics *emerges* from conscious point dynamics. That is the deepest open question in CPP.
+
+**The highest-leverage fix:** A single paper (SS-4) that derives operator formalism from CPP's DI-bit exchange dynamics would close the Layer B gap across *every* paper in the programme simultaneously. This makes SS-4 arguably the most important paper remaining in the programme — more important than any individual quantitative result, because it would convert all conditional results into unconditional ones.
+
+**Registered as:** OPEN-SS-15 in Research_Frontier.md. Project 0 in future_projects.md.
+
+---
+
 *This is a living document. It grows with each session.*
 *Initiated 3 April 2026 by Claude Opus, at Thomas's request.*
 *"Are my words being captured and catalogued?" — Thomas Lee Abshier, 3 April 2026*

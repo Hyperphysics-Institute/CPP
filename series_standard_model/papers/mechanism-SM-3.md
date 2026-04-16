@@ -1,9 +1,9 @@
 # Mechanism — SM-3: The Koide Relation from the Colour Cage Base Graph
 
-**Paper:** SM-3_k3_spectral_theorem_koide_formula.tex (v5)
-**Last updated:** 30 March 2026
+**Paper:** SM-3_k3_spectral_theorem_koide_formula.tex (v6)
+**Last updated:** 16 April 2026
 
-This file provides a sequential cause-and-effect account of why K = 2/3. Each step identifies the actor, the cause, and the consequence. The proof has a specific logical architecture: three propositions (AXIM-1, AXIM-2, AXIM-3), each derived from CPP axioms, feed into a four-step algebraic argument that forces K = 2/3 exactly. The mechanism essay walks through both the derivation chain and the physical picture behind each step. For term definitions see glossary-SM-3.md; for the formal proofs see the paper itself.
+This file provides a sequential cause-and-effect account of why K = 2/3. Each step identifies the actor, the cause, and the consequence. The proof has a specific logical architecture: three propositions feed into a four-step algebraic argument that forces K = 2/3 exactly. P1 and P2 are derived from CPP axioms (Layer A); P3 is conditional on imported open-system thermalisation formalism (Layer B). The mechanism essay walks through both the derivation chain and the physical picture behind each step. For term definitions see glossary-SM-3.md; for the formal proofs see the paper itself.
 
 
 ## Part 1: The Setup — What the K3 Graph Is
@@ -15,7 +15,7 @@ The K₃ graph is the same object that SM-1 used for charge quantisation (δ = 1
 
 ## Part 2: The Three Propositions
 
-The theorem requires three propositions, each derived from CPP axioms.
+The theorem requires three propositions. P1 and P2 are derived from CPP axioms (Layer A). P3 is conditional on an imported thermalisation model (Layer B).
 
 **Proposition AXIM-1 — The ZBW Hamiltonian equals the K₃ adjacency matrix scaled by ℏω₀.**
 
@@ -27,9 +27,13 @@ The derivation: C3 symmetry forces equal off-diagonal elements t₁₂ = t₂₃
 
 In CPP, mass is organisational energy stored in a stable cage configuration. For leptons, this energy is the ZBW kinetic energy of the orbital DP visiting each cage base vertex. The rate at which the ZBW orbital visits vertex Vᵢ is proportional to |ψᵢ|² — the squared wavefunction amplitude at that vertex. The mass contribution from vertex i is therefore proportional to |ψᵢ|². This is derived from the CPP DI-bit visit rate: the number of DI-bits processed at Vᵢ per Absolute Moment is proportional to the probability of the ZBW orbital being at Vᵢ, which is |ψᵢ|².
 
-**Proposition AXIM-3 — The K₃ eigenstates are equally occupied (thermal equipartition).**
+**Proposition AXIM-3 — The K₃ eigenstates are equally occupied (thermal equipartition) — Layer B.**
 
-The ZBW orbital is coupled to the Dipole Sea thermal bath at temperature T ≈ T_Planck. The Planck temperature is enormously larger than the ZBW energy scale ℏω₀ ≈ 88 MeV — the ratio kT_P/ℏω₀ ≈ 10²⁰. In this high-temperature limit, the Boltzmann factors e^{−Eₙ/kT} become equal for all eigenstates (they all approach 1 as kT → ∞). Thermal equilibrium therefore distributes equal weight to each of the three K₃ eigenstates: |c_n|² = 1/3 for each eigenstate n = 1, 2, 3. This is state-counting equipartition (equal weight per eigenstate, not per energy level), following from the DP Sea thermalisation in the high-temperature limit.
+The ZBW orbital is coupled to the Dipole Sea thermal bath at temperature T ≈ T_Planck. The Planck temperature is enormously larger than the ZBW energy scale ℏω₀ ≈ 88 MeV — the ratio kT_P/ℏω₀ ≈ 10²⁰. In this high-temperature limit, the Boltzmann factors e^{−Eₙ/kT} become equal for all eigenstates (they all approach 1 as kT → ∞). Thermal equilibrium therefore distributes equal weight to each of the three K₃ eigenstates: |c_n|² = 1/3 for each eigenstate n = 1, 2, 3. This is state-counting equipartition (equal weight per eigenstate, not per energy level), following from the high-temperature Gibbs limit.
+
+**Epistemic status (v6):** The statistical mechanics of the high-temperature limit is standard. What is imported (Layer B) is the chain from CPP's DI-bit exchange mechanism to the Gibbs state: (B1) Caldeira–Leggett system-bath coupling form, (B2) rapid thermalisation τ_relax ≪ τ_ZBW, and (B3) full canonical Gibbs equilibration rather than dephasing only. These are standard physical assumptions consistent with CPP but not yet derived from CPP primitives. Deriving them is the target of SS-4.
+
+**Robustness (v6):** At finite temperature, the exact departure from equal occupation is |c₋|²/|c₊|² = 2e^{3x} where x = ℏω₀/kT_P ~ 10⁻²⁰. The correction to K = 2/3 is of order 10⁻²⁰ — algebraically tiny, nine orders of magnitude below the 11 ppm experimental precision.
 
 
 ## Part 3: The Eigenvalue Structure of K₃
@@ -100,10 +104,14 @@ These two derivations are logically independent — neither uses the other — y
 | K₃ graph definition | §2, Definition (colour cage base graph) |
 | Eigenvalue spectrum | §2, Lemma (K₃ adjacency spectrum) |
 | Uniqueness of N=3 | §2, Remark (K=2/3 unique to N=3) |
-| AXIM-1 derivation | §3, Proposition (C3 symmetry forces Ĥ = ℏω₀ A_{K₃}) |
-| AXIM-2 derivation | §3, Proposition (DI-bit flow rate gives mᵢ ∝ |ψᵢ|²) |
-| AXIM-3 derivation | §3, Proposition (DP Sea thermalisation gives |cₙ|² = 1/3) |
-| Main theorem proof | §4, Theorem (K3 spectral origin of Koide formula) |
-| Two K₃ results | §4, Corollary (common K₃ origin of δ=1/3 and K=2/3) |
-| Quarks do not satisfy Koide | §5, Remark |
-| Scope and open problems | §6, Scope table, Open Problem OPEN-P-SM-7d |
+| Layer A/B/C decomposition | §3, Epistemic Layer Structure |
+| Layer B assumptions (B1–B3) | §3.2, Remark (Status of Layer B) |
+| AXIM-1 derivation (Layer A) | §4, Proposition (C3 symmetry forces Ĥ = ℏω₀ A_{K₃}) |
+| AXIM-2 derivation (Layer A) | §4, Proposition (DI-bit flow rate gives mᵢ ∝ |ψᵢ|²) |
+| AXIM-3 derivation (Layer B) | §4, Proposition (DP Sea thermalisation gives |cₙ|² = 1/3) |
+| Robustness calculation | §4, Remark (Finite-temperature robustness) |
+| Main theorem proof | §5, Theorem (K3 spectral origin of Koide formula) |
+| Physical driver statement | §5, Remark (Physical driver) |
+| Two K₃ results | §5, Corollary (common K₃ origin of δ=1/3 and K=2/3) |
+| Quarks do not satisfy Koide | §6, Remark |
+| Scope and open problems | §7, Scope table, Open Problem OPEN-P-SM-7d |

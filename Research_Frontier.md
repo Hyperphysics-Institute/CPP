@@ -33,7 +33,7 @@ Problems with no candidate solution, or where candidate solutions have been expl
 
 ---
 
-## Strong Sector (SS) — 13 problems
+## Strong Sector (SS) — 14 problems
 
 ### OPEN-SS-1: Quark Mass Formula M_q(n_layers)
 **Status:** OPEN (PARTIAL — Theorems 2–3 proved; full formula open)
@@ -216,6 +216,21 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Current best lead:** Dimensional estimate gives ~140 MeV (within 10% of lattice QCD).
 **Paper(s):** SS-1
 **Last updated:** 29 March 2026
+
+---
+
+### OPEN-SS-15: Derive Operator Formalism and System-Bath Coupling from CPP Primitives (Layer B Gap)
+**Status:** OPEN
+**Sector(s):** SS, SD (programme-wide)
+**Priority:** **CRITICAL** — highest-leverage single piece of work remaining
+**One-line statement:** Derive complex-linear Hermitian operators, Lie bracket structure, and Caldeira–Leggett system-bath coupling from CPP's DI-bit exchange dynamics.
+**What a solution looks like:** A paper (SS-4 or SD-6) showing that DI-bit propagation on the 600-cell lattice forces: (1) complex state space ℂ^N, (2) Hermitian observables, (3) tracelessness for gauge generators, (4) Lie bracket closure, (5) Caldeira–Leggett-type system-bath coupling from DI-bit exchange, (6) rapid thermalisation τ_relax ≪ τ_ZBW, (7) full Gibbs equilibration (not just dephasing). Items 1–4 close the Layer B gap in SS-3; items 5–7 close the Layer B gap in SM-3.
+**Dependencies:** None blocking (CPP axioms A1–A3 are sufficient starting points)
+**Cross-sector connections:** Closes Layer B across **every** paper in the programme. Specifically: SS-3 (SU(3) uniqueness), SM-3 (Koide K = 2/3), and any future paper that imports quantum-mechanical formalism without deriving it from CPP primitives.
+**Current best lead:** The DI-bit exchange mechanism (Axiom A3) provides complex amplitudes propagating at c = l_P/t_P. The PCD (Propagation, Computation, Display) cycle at each Absolute Moment is the natural candidate for operator structure. The DP Sea's Planck-temperature thermal bath is the natural system-bath coupling source. No derivation has been attempted yet.
+**Discovery context:** Identified as a programme-level vulnerability by ChatGPT (OpenAI) during independent review of SS-3 and SM-3 (April 2026). Both papers received "Major revision required" on first round, with the same structural critique: imported quantum-mechanical formalism not derived from CPP primitives. The Layer A/B/C epistemic decomposition was applied to both papers to make the gap transparent.
+**Paper(s):** SS-4 (or SD-6)
+**Last updated:** 16 April 2026
 
 ---
 

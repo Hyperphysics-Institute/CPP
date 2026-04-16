@@ -1,7 +1,7 @@
 # Glossary — SM-3: The Koide Relation from the Colour Cage Base Graph
 
-**Paper:** SM-3_k3_spectral_theorem_koide_formula.tex (v5)
-**Last updated:** 30 March 2026
+**Paper:** SM-3_k3_spectral_theorem_koide_formula.tex (v6)
+**Last updated:** 16 April 2026
 
 Terms defined as they function in SM-3 specifically. SM-3 is a precision proof paper — it uses mathematical objects precisely and the glossary entries reflect that precision. Several terms (K₃, spectrum, eigenvalue, Koide formula) are standard mathematics that SM-3 applies to CPP; those entries explain the standard definition and then clarify exactly what role they play in the CPP argument.
 
@@ -103,3 +103,23 @@ The derivation of θ = 132.73° from CPP dynamics. The K₃ spectral theorem pro
 
 **Open connection — the K₃ thermal picture and SM-2's VEV framework**
 SM-3 derives the lepton mass scale from ℏω₀ = sea_strength × ℏc/r_conf ≈ 87.8 MeV. SM-2 calibrates the lepton masses using k ≈ 0.0185 applied to the Planck energy. These two energy scales should be consistent. The relationship between ℏω₀ (the ZBW hopping energy from SS-1 sea_strength) and the SM-2 VEV framework (the Planck energy suppressed by N⁴) is an open derivation. Establishing this connection would unify the two mass generation frameworks under a single geometric picture.
+
+## Section 8: Epistemic Layer Structure (v6)
+
+**Layer A (geometric input)**
+The subset of SM-3's assumptions that are derived from CPP axioms and prior geometric results. In SM-3, Layer A comprises: the K₃ graph from the 600-cell tetrahedral cage (Axiom A2), C3 symmetry (SM-1 Theorem 1), the eigenvalue spectrum {+2, −1, −1} (Lemma), the DP Sea at Planck temperature (Axioms A1, A3), and DI-bit exchange coupling (Axiom A3). Propositions P1 (ZBW Hamiltonian) and P2 (mass ∝ |ψ|²) are Layer A. Layer A carries the geometric content of the Koide result — it determines *why* K = 2/3 rather than any other value.
+
+**Layer B (imported open-system formalism)**
+The subset of SM-3's assumptions imported from standard open quantum systems theory rather than derived from CPP primitives. Three specific items: (B1) Caldeira–Leggett system-bath coupling form — consistent with DI-bit exchange but not uniquely determined by it; (B2) rapid thermalisation τ_relax ≪ τ_ZBW — asserted without dynamical estimate; (B3) full Gibbs equilibration rather than dephasing only — requires bath spectral density to couple transitions between energy eigenstates. Layer B provides the *weighting* (equal occupation per eigenstate in the high-T limit) that converts eigenvalue degeneracy into the occupation ratio |c₋|²/|c₊|² = 2. Closing the Layer B gap — deriving these assumptions from CPP primitives — is the target of SS-4 and the programme's central open problem.
+
+**Layer C (mathematical result)**
+The mathematical consequence of Layers A and B taken together. In SM-3, Layer C is the theorem: equal eigenstate occupation → ρ = √2 → K = 2/3. Layer C is mathematically certain given Layers A and B. The result is conditional (on Layer B), not unconditional.
+
+**Caldeira–Leggett coupling**
+A standard model of system-bath interaction in open quantum systems (Caldeira and Leggett 1983). The system (here: the K₃ ZBW resonator) couples to a bath of harmonic oscillators (here: the DP Sea) via an interaction Hamiltonian of the form H_coup = Σᵢ Σₖ gₖ |i⟩⟨i| (bₖ + bₖ†). In SM-3, this coupling is Layer B1 — it is physically motivated by DI-bit exchange but represents a modelling choice rather than a derivation. The diagonal form (coupling to |i⟩⟨i|) produces dephasing in the site basis; full Gibbs equilibration (Layer B3) requires additional structure in the bath spectral density.
+
+**Finite-temperature robustness**
+The quantitative stability of the K = 2/3 result against departures from the exact high-temperature limit. At finite temperature T, the exact antibonding-to-bonding occupation ratio is |c₋|²/|c₊|² = 2e^{3x} where x = ℏω₀/kT. For T = T_P, x ~ 10⁻²⁰, so the correction is O(10⁻²⁰) — algebraically tiny, nine orders of magnitude below the 11 ppm experimental precision of the Koide relation. The robustness is algebraic (power-law in x), not doubly-exponential (not e^{-10²⁰}).
+
+**SS-4 (target paper)**
+The planned future paper that would derive operator formalism from CPP primitives, closing the Layer B gap across both SM-3 and SS-3 simultaneously. SS-4 would show that DI-bit exchange dynamics forces complex-linear, Hermitian operators with Lie bracket structure and Caldeira–Leggett-type system-bath coupling. This would convert the conditional Koide result into an unconditional one.

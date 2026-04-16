@@ -1,7 +1,7 @@
 # Phenomena — SM-3: The Koide Relation from the Colour Cage Base Graph
 
-**Paper:** SM-3_k3_spectral_theorem_koide_formula.tex (v5)
-**Last updated:** 30 March 2026
+**Paper:** SM-3_k3_spectral_theorem_koide_formula.tex (v6)
+**Last updated:** 16 April 2026
 
 SM-3's phenomena entries are the most precise in the series. The theorem has a specific, measured, well-tested prediction: K = 2/3 to 11 ppm. Every entry here either connects to that central result or to its clearly identified open companion (θ). This file also records the multiple failed approaches — not as failures but as boundaries that define where the theorem applies and where it does not.
 
@@ -98,9 +98,9 @@ Using PDG 2024 values: m_e = 0.51099895 MeV, m_μ = 105.6583755 MeV, m_τ = 1776
 
 **Empirical route:** Koide (1982) noted empirically that the formula K = 2/3 holds. No derivation was given; it was a numerical observation.
 
-**CPP route:** SM-3 derives K = 2/3 from the K₃ spectral theorem. The derivation uses no measured lepton masses — it follows from the adjacency spectrum of the equilateral triangle and the thermal occupation of its eigenstates. The result K = 2/3 is a theorem of linear algebra applied to CPP's lattice geometry.
+**CPP route:** SM-3 derives K = 2/3 from the K₃ spectral theorem, conditional on a standard thermalisation model (Layer B). The geometric content — why 2/3 rather than any other value — follows from the adjacency spectrum of the equilateral triangle (Layer A) and uses no measured lepton masses. The thermal weighting that converts eigenvalue degeneracy into occupation ratio is imported from standard open quantum systems theory (Layer B). The result K = 2/3 is a theorem of linear algebra applied to CPP's lattice geometry, conditional on Layer B equilibration.
 
-**Consilience significance:** The empirical observation and the CPP derivation agree to 11 ppm. This is the strongest consilience case in the SM series: a precisely measured number (K = 2/3 to 11 ppm) derived independently from geometric first principles with no calibration to the measured value. The agreement is not approximate — it is exact to the precision of the measurement.
+**Consilience significance:** The empirical observation and the CPP derivation agree to 11 ppm. This is the strongest consilience case in the SM series: a precisely measured number (K = 2/3 to 11 ppm) derived from geometric first principles with no calibration to the measured value, conditional on standard thermalisation assumptions. The finite-temperature correction is O(ℏω₀/kT_P) ~ O(10⁻²⁰), nine orders of magnitude below the experimental precision.
 
 
 ### PHEN-SM3-V3. K(c,b,t) ≈ 2/3 at 0.42% for Heavy Quarks
@@ -112,4 +112,4 @@ Using PDG 2024 values: m_e = 0.51099895 MeV, m_μ = 105.6583755 MeV, m_τ = 1776
 **Consilience significance:** The fact that the heavy quark Koide ratio K(c,b,t) is close to 2/3 — closer than the light quark ratio K(u,c,t) = 0.849 — is predicted by CPP. It is not a coincidence that the quarks most dominated by thermal mass (the heaviest ones) come closest to the lepton Koide value. This is the K₃ structure partially emerging in the quark sector where cage contributions are small compared to thermal mass.
 
 
-*Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic), 30 March 2026.*
+*Document prepared by Thomas Lee Abshier ND and Claude Sonnet (Anthropic), 30 March 2026. Updated 16 April 2026 by Claude Opus: Layer B qualification added to consilience section; robustness calculation noted.*

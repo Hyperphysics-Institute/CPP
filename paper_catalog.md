@@ -52,7 +52,7 @@
 |----|------|-------|------|--------|
 | **SM-1** | Paper | Binding Mechanisms and Cage Stability in the 600-Cell Lattice | `series_standard_model/papers/SM-1_binding_mechanisms_and_cage_stability.tex` (v6) | **Submission-ready** |
 | **SM-2** | Paper | Mass Generation from Geometric Hierarchies and Cage Complexity | `series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex` (v30) | **Submission-ready** |
-| **SM-3** | Paper | K3 Spectral Theorem and the Koide Formula | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` (v5) | **Submission-ready** |
+| **SM-3** | Paper | K3 Spectral Theorem and the Koide Formula | `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex` (v6) | **Submission-ready** |
 | **SM-4** | Paper | Charged Lepton Masses from the K3 Spectral Theorem | `series_standard_model/papers/SM-4_charged_lepton_masses_from_k3.tex` (v5) | **Submission-ready** |
 | **SM-5** | Paper | Tribimaximal Neutrino Mixing from the K3 Cage Base Graph | `series_standard_model/papers/SM-5_tribimaximal_neutrino_mixing_from_k3.tex` (v1) | **Submission-ready** |
 | SM-TN-1 | Tech Note | Reconstruction: Original CPP Mass Calculations | `archive/SM-TN-1_reconstruction_original_mass_calculations.tex` | Ready to submit |

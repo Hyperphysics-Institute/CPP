@@ -2,13 +2,21 @@
 
 **Location:** `/CPP/future_projects.md`
 **Purpose:** Prioritised list of next papers, infrastructure work, and long-term goals.
-**Last updated:** 11 April 2026
+**Last updated:** 16 April 2026
 
 ---
 
 ## Near-Term Papers (ready to write)
 
-### Project 1: SM-10 GPU FEM Implementation — **#1 PRIORITY**
+### Project 0: SS-4 — Derive Operator Formalism from CPP Primitives (Layer B Gap) — **HIGHEST LEVERAGE**
+**Status:** Not yet attempted — registered as OPEN-SS-15 (16 April 2026)
+**Goal:** Show that DI-bit exchange dynamics on the 600-cell lattice forces complex-linear Hermitian operators, Lie bracket structure, Caldeira–Leggett system-bath coupling, rapid thermalisation, and full Gibbs equilibration. This would close the Layer B gap across every paper in the programme simultaneously — SM-3 (Koide), SS-3 (SU(3) uniqueness), and all future papers that import QM formalism.
+**Effort:** Multiple sessions — potentially the hardest single derivation in the programme
+**Significance:** Programme-wide. Both SM-3 and SS-3 received "Major revision required" from ChatGPT with the same structural critique. The Layer A/B/C decomposition makes the gap transparent; SS-4 would eliminate it entirely. Converts conditional results into unconditional ones.
+**Dependencies:** CPP Axioms A1–A3 (sufficient starting points)
+**Current best lead:** DI-bit propagation (A3) provides complex amplitudes at c = l_P/t_P. The PCD cycle is the natural candidate for operator structure. The DP Sea at T_P is the natural system-bath coupling source.
+
+### Project 1: SM-10 GPU FEM Implementation — **#1 COMPUTATIONAL PRIORITY**
 **Status:** Phase 1-2 (CPU proof-of-concept) complete; Phase 3 (GPU) pending
 **Goal:** Implement DP-level chain dynamics on GPU (CUDA/JAX). Derive cascade rates f₀ from local pairing rules. Validate Shell 3 relay mechanism. Target: first-principles quark mass derivation.
 **Effort:** Multiple sessions
