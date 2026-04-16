@@ -163,11 +163,12 @@ Problems with no candidate solution, or where candidate solutions have been expl
 ---
 
 ### OPEN-SS-11: Uniqueness of SU(3) Operator Mapping
-**Status:** OPEN
+**Status:** RESOLVED → **THEO-SS-10** (SS-3, Theorem 3.3, 15 April 2026)
 **Sector(s):** SS
 **Priority:** HIGH
 **One-line statement:** Prove the tetrahedral hopping → SU(3) mapping is unique (not just consistent).
 **What a solution looks like:** 1–2 page argument classifying C₃-invariant traceless Hermitian operators on ℂ³, showing dimension 8 and SU(3) commutation uniqueness.
+**Resolution:** SS-3 proves SU(3) is the unique Lie algebra of the tetrahedral cage via dimension counting + Gell-Mann orthogonality + simplicity of su(3). Explicit 4+4 physical mode basis with 8×8 change-of-basis matrix (det = 2/√3).
 **Dependencies:** None (pure group theory)
 **Cross-sector connections:** Strengthens SS-1 Theorem 1 from possibility to necessity
 **Current best lead:** Dimension forced (8 independent operators = dim(su(3))); edge structure canonical; C₃ constraint restricts alternatives. Tractable in 1–2 pages.
@@ -995,12 +996,12 @@ Ordered by: fewest prerequisites, most tractable, highest leverage on downstream
 
 | Rank | ID | Why | Tractability |
 |------|-----|------|-------------|
-| 1 | OPEN-SS-11 | Pure group theory; 1–2 pages. Elevates SS-1 to necessity. | 1 session |
-| 2 | OPEN-SS-5 | One dimensional-analysis step. Prerequisite for 4 other problems. | 1 session |
-| 3 | OPEN-SS-13 | WKB calculation; confirms C₃ proof mechanically. | 1 session |
-| 4 | OPEN-SS-8 | Clear SU(6) + ZBW path. | 1–2 sessions |
-| 5 | OPEN-SS-12 | Requires reading EW-2; high physical importance. | 2 sessions |
-| 6 | OPEN-SS-1 | Mechanism established; find ZBW-frequency kernel. | Multi-session |
+| ~~1~~ | ~~OPEN-SS-11~~ | ~~Pure group theory; 1–2 pages. Elevates SS-1 to necessity.~~ | ~~1 session~~ **RESOLVED → THEO-SS-10** |
+| 1 | OPEN-SS-5 | One dimensional-analysis step. Prerequisite for 4 other problems. | 1 session |
+| 2 | OPEN-SS-13 | WKB calculation; confirms C₃ proof mechanically. | 1 session |
+| 3 | OPEN-SS-8 | Clear SU(6) + ZBW path. | 1–2 sessions |
+| 4 | OPEN-SS-12 | Requires reading EW-2; high physical importance. | 2 sessions |
+| 5 | OPEN-SS-1 | Mechanism established; find ZBW-frequency kernel. | Multi-session |
 | 7 | OPEN-SD-1 | Resolves superdeterminism amplitude conjecture. | 2 sessions |
 | 8 | CONJ-EW-1 | Gates CONJ-SM-6 (which gives θ to 0.003%). | Multi-session |
 | 9 | OPEN-SS-3 | ZBW notebooks give starting point. | 2 sessions |

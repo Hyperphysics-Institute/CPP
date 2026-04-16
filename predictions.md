@@ -62,6 +62,9 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-25 | r_proton | 0.883 fm | 0.841 fm | +5.0% | SS-2 |
 | PRED-C-26 | μ_proton | 2.789 μ_N | 2.793 μ_N | −0.1% | SS-2 |
 | PRED-C-27 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SS-2 |
+| PRED-C-28 | SU(3) is the unique gauge group of 3 colour states | exact | — | Structural | SS-3 |
+| PRED-C-29 | No exotic gauge group (SO(8), Sp(4), G₂) from cage | exact | — | Structural | SS-3 |
+| PRED-C-30 | Exactly 3 colours (not 2 or 4) from 600-cell tetrahedra | exact | — | Structural | SS-3 |
 | PRED-C-28 | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
 | PRED-C-29 | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
 

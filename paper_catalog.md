@@ -35,13 +35,14 @@
 |----|------|-------|------|--------|
 | **SS-1** | Paper | The Strong Sector from the 600-Cell Lattice | `series_strong/SS-1_strong_sector_from_600cell_lattice.tex` (v2) | **Submission-ready** |
 | **SS-2** | Paper | Lattice-Scale Grounding and Nucleon Structure | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` (v1.0) | **OSF pending** |
+| **SS-3** | Paper | Uniqueness of SU(3) from the Tetrahedral Cage | `series_strong/papers/SS-3_su3_uniqueness.tex` (v1.3) | **Submission-ready** |
 | SS-1a | Companion | Cage Geometry and Eigenvalue Bridge | `series_strong/SS-1a_cage_geometry_eigenvalue_bridge.tex` | Supporting |
 | SS-1b | Companion | SU(3) Algebra Exact Proof | `series_strong/SS-1b_su3_algebra_exact_proof.tex` | Supporting |
 | SS-1c | Companion | Eight Gluons as hDP Structures | `series_strong/SS-1c_eight_gluons_hdp_structures.tex` | Supporting |
 | SS-1d | Companion | Confinement and Beta Function | `series_strong/SS-1d_confinement_beta_function.tex` | Supporting |
 | SS-1e | Companion | Hadron Spectrum | `series_strong/SS-1e_hadron_spectrum.tex` | Supporting |
 
-**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords).
+**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete. SS-3: 8 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords, FAQ).
 
 ---
 
@@ -128,7 +129,7 @@
 
 | Category | Count |
 |----------|-------|
-| **Submission-ready / registered papers** | **13 (SS-1, SS-2, SM-1 through SM-10, SR-1)** |
+| **Submission-ready / registered papers** | **14 (SS-1, SS-2, SS-3, SM-1 through SM-10, SR-1)** |
 | Submission-ready Tech Notes | 1 (SM-TN-1) |
 | Tech Notes needing correction | 1 (SM-TN-2) |
 | Papers needing consolidation | 5 (EW series) |

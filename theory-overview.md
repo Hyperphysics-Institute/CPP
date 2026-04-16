@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 11 April 2026 (after SS-2)
+**Last updated:** 15 April 2026 (after SS-3)
 
 ---
 
@@ -29,6 +29,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SM-9 | The Quark Mass Scaling Exponent | V^(7/3) derivation; Symmetry Degeneracy Theorem | v2.2 |
 | SM-10 | First-Principles Quark Mass from FEM Chain Network | Cascade mechanism; two-regime physics; organised DP density | v0.1 |
 | SS-2 | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) | v1.0 |
+| SS-3 | Uniqueness of SU(3) from Tetrahedral Cage | SU(3) unique; 4+4 physical mode basis; det(M) = 2/√3 | v1.3 |
 
 ---
 
@@ -59,7 +60,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 
 ---
 
-## The Axiom Set (Post–SS-2)
+## The Axiom Set (Post–SS-3)
 
 | ID | Name | Statement (short) |
 |----|------|--------------------|
@@ -107,6 +108,13 @@ Lattice-Scale Grounding (SS-2):
   l_unit = ℏc/Λ_QCD = 0.589 fm
   σ = M₀zπ/(φ l_edge) = 243 MeV/fm [CONJ]
   r_p = 0.883 fm (distorted tet + ZBW, ε = 1.94)
+
+SU(3) Uniqueness (SS-3):
+  dim(traceless Hermitian 3×3) = 8 = dim(su(3))
+  Gell-Mann orthogonality: Tr(λ^a λ^b) = 2δ^{ab} → analytic independence
+  Physical basis: 4 linear bond modes + 4 junction modes = 8
+  Change-of-basis: det(M) = 2/√3; T³ = ½(L₂−L₄); T⁸ = (√3/2)(L₂+L₄)
+  OPEN-SS-11 → THEO-SS-10
 ```
 
 ---
@@ -118,6 +126,7 @@ Lattice-Scale Grounding (SS-2):
 ### SM-7 (Quarks): Same chain + α_s=5/(8φ) from face modes + 12-bond colour coupling → ε=-27/(52φ) → θ=124.04° → masses
 
 ### SS-1 (Strong): K₃ face permutations → 8 Gell-Mann generators → SU(3) exact → β₀=7
+### SS-3 (Strong): SU(3) is the UNIQUE algebra of 3 colour vertices (THEO-SS-10). 4+4 physical mode basis identified.
 
 ### QM-1→6: DI-bit hopping → Schrödinger → Born rule → Bell S=2√2 → Lindblad → QFT → 3 generations
 

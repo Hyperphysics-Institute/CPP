@@ -43,19 +43,22 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 
 ## [`series_strong/`](series_strong/) — Strong Sector (SS)
 
-The SU(3) derivation from 600-cell tetrahedral geometry, and nucleon structure. **SS-1 registered on OSF. SS-2 pending.**
+The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, and nucleon structure. **SS-1 registered on OSF. SS-2, SS-3 pending.**
 
 | File | Description |
 |------|-------------|
 | `SS-1_strong_sector_from_600cell_lattice.tex/.pdf` | **SS-1** (v2) — 9 theorems |
 | `SS-1a` through `SS-1e` companion papers | Cage geometry, SU(3) proof, gluons, confinement, hadrons |
 | `SS-2_lattice_scale_nucleon_structure.tex/.pdf` | **SS-2** (v1.0) — Lattice grounding, nucleon structure |
+| `SS-3_su3_uniqueness.tex/.pdf` | **SS-3** (v1.3) — SU(3) uniqueness from tetrahedral cage |
+| `SS-3_su3_uniqueness.py` | Numerical verification (5 checks) |
 | `cpp_strong_series.bib` | Bibliography |
 
 **Documentation:** SS-1: `mechanism-SS-1.md`, `glossary-SS-1.md`, `phenomena-SS-1.md`, `reviews-SS-1.md`, `FAQ-SS-1.md`, `philosophy-SS-1.md`, `development-SS-1.md`, `keywords-SS-1.md`
 SS-2: `mechanism-SS-2.md`, `glossary-SS-2.md`, `phenomena-SS-2.md`, `philosophy-SS-2.md`, `development-SS-2.md`, `reviews-SS-2.md`, `keywords-SS-2.md`
+SS-3: `mechanism-SS-3.md`, `glossary-SS-3.md`, `phenomena-SS-3.md`, `philosophy-SS-3.md`, `development-SS-3.md`, `reviews-SS-3.md`, `keywords-SS-3.md`, `FAQ-SS-3.md`
 
-**Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.) + `SS-2_lattice_scale_nucleon.py`
+**Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.) + `SS-2_lattice_scale_nucleon.py` + `SS-3_su3_uniqueness.py`
 
 **Development transcripts:** `SS-2_development_transcript_opus.md`
 

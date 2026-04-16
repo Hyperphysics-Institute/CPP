@@ -35,9 +35,9 @@ Theorems reference axioms from two numbering systems (to be unified in a future 
 
 ---
 
-# Strong Sector (SS) — 9 Theorems
+# Strong Sector (SS) — 10 Theorems, 1 Proposition
 
-Source: SS-1 (Strong Sector unified paper).
+Sources: SS-1 (Strong Sector unified paper), SS-3 (SU(3) uniqueness).
 
 | ID | Name | Result | Axioms Used | Paper Reference |
 |----|------|--------|-------------|-----------------|
@@ -50,6 +50,8 @@ Source: SS-1 (Strong Sector unified paper).
 | **THEO-SS-7** | GMO mass formula | Gell-Mann–Okubo baryon mass relation from SU(3) Casimirs. Octet relation holds to 0.6%. | AXIM-1, AXIM-2, AXIM-4 | SS-1, Theorem 7 |
 | **THEO-SS-8** | Decuplet equal spacing | Equal mass spacing in baryon decuplet. Ω⁻ prediction: 1681 MeV vs PDG 1672.5 MeV (0.5%). | AXIM-1, AXIM-2 | SS-1, Theorem 8 |
 | **THEO-SS-9** | Quark mass strict ordering | m_u < m_d < m_s < m_c < m_b < m_t from cage depth: each shell adds positive binding energy. Direction m_u < m_d from SSV polarity asymmetry. | AXIM-1, AXIM-2, AXIM-5 | SS-1, Theorem 9 |
+| **THEO-SS-10** | SU(3) uniqueness | SU(3) is the unique Lie algebra of the tetrahedral cage. Any 8 linearly independent traceless Hermitian 3×3 operators generate su(3) and nothing else. Resolves OPEN-SS-11. | AXIM-1, AXIM-2 | SS-3, Theorem 3.3 |
+| **PROP-SS-11** | Physical basis transformation | The 4+4 physical mode basis {L₁...L₄, H₁...H₄} spans su(3). Change-of-basis matrix M has det = 2/√3. Inverse: T³ = ½(L₂−L₄), T⁸ = (√3/2)(L₂+L₄). | AXIM-1, AXIM-2 | SS-3, Proposition 6.5 |
 
 ---
 

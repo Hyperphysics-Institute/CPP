@@ -288,3 +288,17 @@ The total lattice mode capacity — a topological invariant. This is the denomin
 **Zero-parameter formula** — M_q = m_e(z/φ)V^(7/3) × [1 or 16]. All constants derived or measured; no parameters fitted. RMS 2.1%. [First appeared: SM-8 v4.1 / SM-9 v2.2]
 
 **ZBW smearing** — The time-averaged spatial distribution of a quark's charge due to its ZBW orbital motion around its cage vertex. Smearing radius r_ZBW = ℏc/m_const ≈ 0.631 fm. [First appeared: SS-2]
+
+## Terms Added — SS-3 (15 April 2026)
+
+**Change-of-basis matrix M** — The 8×8 matrix relating the physical 4+4 mode basis {L₁...L₄, H₁...H₄} to the Gell-Mann generators {T¹...T⁸}, defined by P_i = Σ_a M_{ia} T^a. Has det(M) = 2/√3. Six columns are unit vectors; the nontrivial 2×2 block mixes T³ and T⁸ through the apex bond modes. [First appeared: SS-3 v1.3, Proposition 6.5]
+
+**Coupled harmonic junction mode (H)** — One of four Group B physical modes in the 4+4 decomposition. At each tetrahedral vertex, two opposite-polarity DP chains meet; their anti-phase oscillation (one compresses while the other extends) creates an indirect colour coupling. H₁ = T¹, H₂ = T⁵, H₃ = T⁷, H₄ = T². [First appeared: SS-3 v1.1]
+
+**Killing–Cartan classification** — The complete classification of simple Lie algebras into families A_n, B_n, C_n, D_n and exceptional algebras G₂, F₄, E₆, E₇, E₈. Used in SS-3 to confirm su(3) (= A₂) is simple and has no 8-dimensional competitors. Reference: Humphreys (1972). [First appeared: SS-3 v1.2]
+
+**Linear bond mode (L)** — One of four Group A physical modes in the 4+4 decomposition. A longitudinal oscillation (compression-extension) of a single DP chain along its tetrahedral edge. L₁ = T⁴ (V₁–V₃), L₂ = T³+(1/√3)T⁸ (V₁–V₄), L₃ = T⁶ (V₂–V₃), L₄ = −T³+(1/√3)T⁸ (V₂–V₄). [First appeared: SS-3 v1.1]
+
+**Physical mode basis (4+4)** — The decomposition of su(3) generators into 4 linear bond modes + 4 coupled harmonic junction modes, derived from the polarity structure of the full tetrahedron (2 positive, 2 negative vertices in a baryon). An alternative to the mathematical Gell-Mann basis (6 off-diagonal + 2 diagonal). [First appeared: SS-3 v1.1]
+
+**SU(3) uniqueness** — The theorem (THEO-SS-10) that SU(3) is the unique Lie algebra consistent with the tetrahedral cage geometry. Any 8 linearly independent traceless Hermitian 3×3 operators generate su(3) and nothing else. No exotic gauge group (SO(8), Sp(4), G₂, etc.) can arise from 3 colour states. [First appeared: SS-3 v1.0]

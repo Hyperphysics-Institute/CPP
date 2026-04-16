@@ -68,6 +68,8 @@ The 600-cell lattice supports two fundamentally different types of displacement 
 
 **Face modes (2D walks → Non-Abelian → Strong force):** A displacement propagating around a triangular face (K₃ loop) has multiple degrees of freedom — it can circulate clockwise or counterclockwise on any of the faces sharing a vertex. Each step modifies the local SSV_abs, so retracing the path does NOT return to the starting state. Composition is non-commutative: the order matters. This is SU(3), with 8 independent circulation patterns corresponding to the 8 Gell-Mann generators. [SM-7, Axiom A6'; SM-8, Section 2]
 
+**SU(3) is unique — not merely consistent.** The space of traceless Hermitian 3×3 operators has dimension exactly 8 = 3²−1, and this space with the commutator bracket IS su(3) by definition. Any 8 linearly independent operators in this space generate su(3) and nothing else — no exotic gauge group (SO(8), Sp(4), G₂) can arise from 3 colour states. The number 3 is itself forced by the 600-cell's tetrahedral cell geometry. Physically, the 8 generators correspond to 4 linear DP chain bond oscillations + 4 coupled harmonic junction oscillations on the baryon's tetrahedral cage — the physical basis for gluon degrees of freedom. [SS-3]
+
 The key structural fact: on the 600-cell, each vertex participates in exactly 2 edges connecting it to its K₃ face partners (electroweak sector) and 12 edges connecting it to the full lattice neighbourhood (colour sector). This 2-versus-12 bond asymmetry is the geometric origin of the electroweak/strong coupling hierarchy:
 
 - **sin²θ_W = 2/(2+12) × (φ correction) = 3/(8φ) = 0.2312** — the Weinberg angle, predicted to 0.24% of the PDG value with zero free parameters. [SM-6]

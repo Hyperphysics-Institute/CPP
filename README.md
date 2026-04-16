@@ -40,6 +40,7 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 |----|-------|------------|
 | **SS-1** | The Strong Sector from the 600-Cell Lattice | SU(3) colour algebra derived exactly; β₀ = 7; 9 theorems |
 | **SS-2** | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) |
+| **SS-3** | Uniqueness of SU(3) from the Tetrahedral Cage | SU(3) is the unique algebra of 3 colour vertices; 4+4 physical mode basis |
 | **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3; SSV₀ = 0.2555 MeV |
 | **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 |
 | **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 derived exactly from K₃ eigenvalue ratio — zero free parameters |
@@ -73,6 +74,7 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | Proton charge radius 0.883 fm | +5.0% | SS-2 | 0 |
 | Proton magnetic moment 2.789 μ_N | −0.1% | SS-2 | 0 |
 | α_s(m_H) = 0.1132 | +0.2% | SS-2 | 0 |
+| SU(3) uniqueness (no exotic gauge group) | structural | SS-3 | 0 |
 
 ---
 
@@ -97,7 +99,7 @@ CPP/
 ├── bibliography/                ← Site-wide bibliography
 │   └── cpp_references.bib       ← Aggregated from all local .bib files
 │
-├── series_strong/               ← SS-1, SS-2 + companions + notebooks
+├── series_strong/               ← SS-1, SS-2, SS-3 + companions + notebooks
 ├── series_standard_model/       ← SM-1 through SM-10 + documentation
 ├── series_relativity/           ← SR-1 + 22 companion papers
 ├── series_electroweak/          ← EW-1 through EW-5
