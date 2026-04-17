@@ -8,13 +8,21 @@
 
 ## Near-Term Papers (ready to write)
 
-### Project 0: SS-4 — Derive Operator Formalism from CPP Primitives (Layer B Gap) — **HIGHEST LEVERAGE**
-**Status:** Not yet attempted — registered as OPEN-SS-15 (16 April 2026)
+### Project 0: Derive Operator Formalism from CPP Primitives (Layer B Gap, OPEN-SS-16) — **HIGHEST LEVERAGE**
+**Status:** Not yet attempted — registered as OPEN-SS-16 (16 April 2026)
 **Goal:** Show that DI-bit exchange dynamics on the 600-cell lattice forces complex-linear Hermitian operators, Lie bracket structure, Caldeira–Leggett system-bath coupling, rapid thermalisation, and full Gibbs equilibration. This would close the Layer B gap across every paper in the programme simultaneously — SM-3 (Koide), SS-3 (SU(3) uniqueness), and all future papers that import QM formalism.
 **Effort:** Multiple sessions — potentially the hardest single derivation in the programme
-**Significance:** Programme-wide. Both SM-3 and SS-3 received "Major revision required" from ChatGPT with the same structural critique. The Layer A/B/C decomposition makes the gap transparent; SS-4 would eliminate it entirely. Converts conditional results into unconditional ones.
+**Significance:** Programme-wide. Both SM-3 and SS-3 received "Major revision required" from ChatGPT with the same structural critique. The Layer A/B/C decomposition makes the gap transparent; this paper would eliminate it entirely. Converts conditional results into unconditional ones.
 **Dependencies:** CPP Axioms A1–A3 (sufficient starting points)
 **Current best lead:** DI-bit propagation (A3) provides complex amplitudes at c = l_P/t_P. The PCD cycle is the natural candidate for operator structure. The DP Sea at T_P is the natural system-bath coupling source.
+**Paper ID:** To be determined (SD-6 if foundational, or late SS number if strong-sector-focused)
+
+### Project 0b: SS-5 — Deuteron Binding from Open-Vertex Nuclear Force — **NEXT STAR SHOT**
+**Status:** Bootup prompt prepared (16 April 2026)
+**Goal:** Predict deuteron binding energy (2.224 MeV) from open-vertex tetrahedral bonding mechanism. First CPP result in nuclear physics.
+**Effort:** 1–2 sessions
+**Significance:** Opens a genuinely new sector. Completely independent Layer A — no operator formalism, no Gibbs equilibration. Cascades to ³He, ⁴He, ³H, and light nuclear binding curve.
+**Dependencies:** SS-2 (proton/neutron structures, l_unit, σ)
 
 ### Project 1: SM-10 GPU FEM Implementation — **#1 COMPUTATIONAL PRIORITY**
 **Status:** Phase 1-2 (CPU proof-of-concept) complete; Phase 3 (GPU) pending
@@ -22,12 +30,7 @@
 **Effort:** Multiple sessions
 **Dependencies:** SM-8 v4.1 (cage hierarchy), SM-9 v2.2 (pair model), SM-10 v0.1 (proposal), Isak (GPU infrastructure), Claude Code
 
-### Project 1b: SM-12 — Deuteron Binding from Open-Vertex Model
-**Status:** Proposed — uses SS-2 proton/neutron structures
-**Goal:** Predict deuteron binding energy from open-vertex nuclear force mechanism
-**Dependencies:** SS-2
-
-### Project 1c: Derive σ from Lattice Mode Spectrum
+### Project 1b: Derive σ from Lattice Mode Spectrum
 **Status:** Open — would promote CONJ-SS-2-1 to theorem
 **Goal:** Rigorous derivation of string tension from DP-DP interaction potential
 **Dependencies:** SS-series

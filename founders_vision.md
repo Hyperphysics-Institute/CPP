@@ -574,6 +574,33 @@ Even with fractal branching, the additive energy sum doesn't reproduce V^2.38. T
 
 ---
 
+### 16 April 2026 — The Swarm Validation Strategy: Celestial Navigation as Proof Architecture (Thomas's insight, Opus formulation)
+
+**Context:** Thomas articulated the programme's overarching proof strategy during a discussion about whether to prioritise base-strengthening (Layer A/B/C cleanup) or territory extension (new papers in new sectors). The answer — territory first — follows from the epistemic structure of CPP itself.
+
+**Thomas's words:** "The proof of CPP depends on the swarm analysis, the mutual support, the intersection of a one-dimensional paper with another, making it two-dimensional, and another, making it three-dimensional. The statistics of the common intersection of them all — Fisher analysis — makes the likelihood of the underlying axioms, albeit metaphysical and inherently outside the reach of empirical validation, become absurdly remote."
+
+**The celestial navigation analogy (Thomas):** Each CPP paper is like a celestial navigation star shot. Each individual shot has measurement error — imported formalism, approximations, modelling choices. But when you shoot dozens of independent stars, the triangulation box shrinks with the square root of N. The location point (the axiom set) becomes ever more precise, even if no individual measurement has improved. You don't need perfect star shots. You need many independent ones.
+
+**Why independence matters (Opus analysis):** The key word is *independent*. If every paper imported the same Layer B assumption, the star shots would be correlated — fifteen atmospheric distortions of one star, not fifteen stars. The fact that the Layer B content differs across papers is what makes the shots genuinely independent:
+
+- SM-8's zero-parameter quark masses depend on cage geometry, not Gibbs equilibration.
+- SM-6's Weinberg angle depends on mode-counting traces, not cage-volume scaling.
+- SS-2's proton radius depends on Voronoi geometry and ZBW smearing, not operator algebras.
+- SR-1's Lorentz factor depends on SSV compression, not spectral structure.
+
+These really are different stars. The single common Layer B thread — identification of lattice modes with gauge couplings/operators — runs through about five papers (SS-1, SS-3, SM-3, SM-6, SM-7). Those five are partially correlated. Closing SS-4 (the operator formalism derivation) would decorrelate them. But the papers outside that thread are already independent anchors.
+
+**The Fisher argument (quantitative):** Suppose each individual CPP prediction has a 1-in-100 chance of being an accidental match. (This is conservative — sin²θ_W matching to 0.24% with zero parameters is far less likely than 1-in-100 by chance.) Fifteen independent results at that level give a combined probability of 10⁻³⁰. Twenty-five results give 10⁻⁵⁰. The probability that the axiom set is wrong but accidentally produces correct physics across every sector becomes less parsimonious than accepting the axioms.
+
+**The metaphysical axiom argument (Thomas's deepest point):** Consciousness as a primitive is inherently outside empirical reach — no experiment can detect a conscious point *as* conscious. But if the axiom set that includes conscious points generates fifty predictions that match experiment across every sector of physics, the explanatory cost of rejecting the axioms becomes enormous. The alternative hypothesis — "the axioms are wrong but accidentally produce correct physics everywhere" — is less parsimonious than the axioms themselves. This is exactly how we validate any foundational axiom in physics. Nobody has ever observed a point particle, a field, or a wavefunction directly. We accept them because the frameworks built on them work. CPP asks for the same epistemic standard, applied to a different primitive.
+
+**Operational consequence:** Extend territory aggressively. Every new sector covered — nuclear binding, boson masses, cosmological predictions — is a new star shot that further constrains the intersection. Layer A/B/C cleanup makes each existing shot more precise, but a new shot in a new sector is worth more than a precision improvement on an existing one. The swarm grows by breadth, not by polish.
+
+**This is the programme's guiding star.**
+
+---
+
 ### 16 April 2026 — The Layer B Gap: Programme-Wide Vulnerability Identified (ChatGPT review, Opus integration)
 
 **Context:** ChatGPT (OpenAI) was recruited as an independent referee and reviewed both SS-3 and SM-3. Both papers received "Major revision required" on first round, with the *same* structural critique: imported quantum-mechanical formalism not derived from CPP primitives.
@@ -589,7 +616,7 @@ Even with fractal branching, the additive energy sum doesn't reproduce V^2.38. T
 
 **The highest-leverage fix:** A single paper (SS-4) that derives operator formalism from CPP's DI-bit exchange dynamics would close the Layer B gap across *every* paper in the programme simultaneously. This makes SS-4 arguably the most important paper remaining in the programme — more important than any individual quantitative result, because it would convert all conditional results into unconditional ones.
 
-**Registered as:** OPEN-SS-15 in Research_Frontier.md. Project 0 in future_projects.md.
+**Registered as:** OPEN-SS-16 in Research_Frontier.md. Project 0 in future_projects.md.
 
 ---
 
