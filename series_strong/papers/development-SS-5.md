@@ -155,7 +155,7 @@ All times MDT.
 
 ## Cross-references
 
-- **Paper:** `SS-5_deuteron_binding_open_vertex.tex` / `.pdf` (v0.1, 16 April 2026)
+- **Paper:** `SS-5_light_nuclei_open_vertex_cascade.tex` / `.pdf` (v0.2 current, 17 April 2026; v0.1 in git history, 16 April 2026, filename was `SS-5_deuteron_binding_open_vertex.tex` before v0.2 scope broadening)
 - **Founders vision entry:** `founders_vision.md` 16 April 2026 — Deuteron Binding Energy from Open-Vertex Bonding
 - **Research Frontier entries:** OPEN-SS-10 (partially resolved), CONJ-SS-10, PROP-SS-5-1, OPEN-SS-17
 - **Bootup prompt:** `SS-5_session_bootup_prompt.md` in `series_strong/papers/`
