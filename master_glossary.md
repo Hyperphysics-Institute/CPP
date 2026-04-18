@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/master_glossary.md`
 **Purpose:** Comprehensive glossary of all CPP acronyms, physical concepts, processes, particles, and forces. Single source of truth for terminology across all papers and for hyperphysics.com.
-**Last updated:** 3 April 2026
+**Last updated:** 17 April 2026 (SS-5 v0.2 cascade terms added)
 
 ---
 
@@ -302,3 +302,45 @@ The total lattice mode capacity — a topological invariant. This is the denomin
 **Physical mode basis (4+4)** — The decomposition of su(3) generators into 4 linear bond modes + 4 coupled harmonic junction modes, derived from the polarity structure of the full tetrahedron (2 positive, 2 negative vertices in a baryon). An alternative to the mathematical Gell-Mann basis (6 off-diagonal + 2 diagonal). [First appeared: SS-3 v1.1]
 
 **SU(3) uniqueness** — The theorem (THEO-SS-10) that SU(3) is the unique Lie algebra consistent with the tetrahedral cage geometry. Any 8 linearly independent traceless Hermitian 3×3 operators generate su(3) and nothing else. No exotic gauge group (SO(8), Sp(4), G₂, etc.) can arise from 3 colour states. [First appeared: SS-3 v1.0]
+
+---
+
+## Terms Added — SS-5 (16 April 2026)
+
+**Bond-delivery propagation factor** — The second factor of $\eta = 1/\varphi$ in $B_d = M_0 \cdot \eta^2$. Accounts for the explicit vertex-to-vertex propagation step across the dangling (unreinforced) open-vertex edge, which is not implicit in $M_0$ because $M_0$ is defined for cavity-reinforced internal edges. [First appeared: SS-5 v0.1, §4.2]
+
+**Bond-formation energy release** — The fraction of the oscillator energy $M_0$ delivered across the bond-formation propagation step, emitted as a photon (or neutrino) when the bond stabilises. For the deuteron: $M_0/\varphi = 2.343$ MeV, observed as the $\gamma$ energy in radiative $np$ capture. [First appeared: SS-5 v0.1, §9]
+
+**Cavity reinforcement** — The enhancement of an attractive ZBW edge's oscillator energy that arises from its participation in the closed-face resonance of a polyhedral cage. Internal edges of a tetrahedron are cavity-reinforced; dangling edges (open-vertex bond) are not. Contrast: SS-1 4+4 physical mode basis. [First appeared: SS-5 v0.1, §2.2]
+
+**Classical equilibrium separation** — $R_\text{cl} = 2r_p + l_\text{edge} \approx 2.130$ fm. The proton-neutron centre-to-centre distance at which the open-vertex bond is most strongly engaged in the static picture; the position of the minimum of the effective $V(r)$. Not to be confused with the rms p-n separation ($\sim 3.9$ fm, set by QM wavefunction extension). [First appeared: SS-5 v0.1, §5]
+
+**Dangling edge** — An attractive ZBW edge that does not close into a tetrahedral face — i.e., its two endpoints are not both part of the same closed cage. The open-vertex bond is the prototype. Contrast with the four internal attractive edges of a hybrid-tetrahedral nucleon, which each participate in three triangular faces. [First appeared: SS-5 v0.1, §2.2]
+
+**Open-vertex bond** — The fifth attractive ZBW edge in the combined deuteron system: a single qDP chain connecting the proton's open $+$ vertex $V_4^p$ to the neutron's open $-$ vertex $V_4^n$. Structurally identical to any of the four internal attractive edges of either nucleon, but has no closing face and therefore carries only one longitudinal ZBW mode. [First appeared: SS-5 v0.1, Definition 2.2]
+
+**Open vertex (polarity-assigned)** — An unoccupied lattice CP site at the fourth vertex of a hybrid-tetrahedral nucleon, carrying a fixed polarity inherited from the surrounding DP chain count. Proton: $V_4^p(+)$. Neutron: $V_4^n(-)$. "Unoccupied" means no quark; the polarity assignment is a physical property set by the Nexus consistency constraint. [First appeared: SS-2 §5; elaborated: SS-5 v0.1 §2.1]
+
+**Polarity pairing** — The rule that a ZBW attractive edge requires opposite polarities at its two endpoints. Consequence: $(+,-)$ pairings bond; $(+,+)$ and $(-,-)$ do not. Source of the diproton and dineutron unboundness (PROP-SS-5-1). [First appeared: SS-5 v0.1, Proposition 2.3]
+
+**Residual-strong-force sector** — The sector of CPP corresponding to forces between colour-singlet baryons (nuclear physics). In SS-5 terms, it is the sector of open-vertex bonds. The analog in the standard model is residual-QCD / meson-exchange nuclear physics.
+
+---
+
+## Terms Added — SS-5 v0.2 (17 April 2026)
+
+**Base-to-base configuration** — Nucleon pair arrangement in which the triangular quark-bearing bases of two hybrid tetrahedra are in direct contact, with the open vertices pointing outward on opposite sides. Predominant configuration of the deuteron in SS-5 v0.2 (Proposition 2.1); supersedes v0.1's vertex-to-vertex single-bond picture. [First appeared: SS-5 v0.2 §2]
+
+**Cascade factor $(A-1)$** — Multiplicative reinforcement of each np pair binding by the number of completing pathways through remaining nucleons in a closed A-polytope. For A=2: factor 1 (no cascade). A=3: factor 2 (triangular loop). A=4: factor 3 (tetrahedral polytope). Central content of CONJ-SS-11; rigorous derivation pending (OPEN-SS-19). [First appeared: SS-5 v0.2 §4.1]
+
+**Closed-polytope gap** — Geometric fact that the 600-cell admits no closed polytope at A=5, 6, 7, 8, 9, 10, 11 nucleon-vertices. Basis of SS-5 v0.2's unboundness predictions for ${}^5$He, ${}^5$Li, ${}^8$Be: without a closed polytope, the cascade reinforcement cannot operate and binding does not exceed the constituent subsystem bindings. [First appeared: SS-5 v0.2 §6]
+
+**Closure bonus** — Additional binding of $M_0/\varphi = \Bpair$ activated when A=4 nucleons form a closed tetrahedral polytope. Analogous to SS-1/SS-3 internal-cage mode closure. Accounts for the empirical ${}^4$He binding enhancement over naive pair-sum. [First appeared: SS-5 v0.2 §4.3]
+
+**K₃ base-contact collective mode** — Single binding eigenvalue $\lambda_+ = +2$ that emerges from the three quark-quark DP-chain oscillators across a base-to-base nucleon contact. The K₃ face structure of the three pairs reduces them to one effective collective mode at pair quantum $\Bpair = M_0/\varphi$. Extends the K₃ reduction pattern of SM-3/SS-3 to inter-nucleon contact. [First appeared: SS-5 v0.2 Conjecture 2.4]
+
+**Pauli coefficient $M_0/\varphi^3$** — Energy penalty per same-polarity open-vertex pair in the cascade formula. Numerical value 0.895 MeV. Motivated by propagation-step-count argument (one extra $1/\varphi^2$ attenuation vs pair binding) but not rigorously derived from CPP primitives (OPEN-SS-19). [First appeared: SS-5 v0.2 Proposition 4.2]
+
+**Cascade formula (CONJ-SS-11)** — $B(A,Z) = (A-1) n_{np} (M_0/\varphi) - n_{pp}\alpha_{em}\hbar c/(1.2 A^{1/3}) - (n_{pp}+n_{nn})(M_0/\varphi^3) + \delta_{A,4}(M_0/\varphi)$. Zero-parameter light-nuclei binding formula. Reproduces d, ${}^3$H, ${}^3$He, ${}^4$He at $\leq 5.3\%$ error and predicts ${}^5$He/${}^5$Li/${}^8$Be unbound. [First appeared: SS-5 v0.2 Eq.~(cascade_main)]
+
+**Closed-polytope completion pathway** — One of the $A-1$ distinct ways a given np-pair bond in a closed A-nucleon polytope can be reinforced by connections through the remaining nucleons. Basis of the cascade-factor multiplicity in CONJ-SS-11. [First appeared: SS-5 v0.2 §4.1] [First appeared: SS-5 v0.1, §9]

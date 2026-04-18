@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/axiom-registry.md` (canonical — this is the ONLY copy)
 **Purpose:** Track every postulated rule of Conscious Point behaviour, where each axiom is used, what it predicts, and whether the axiom set is growing or stabilising.
-**Last updated:** 11 April 2026
+**Last updated:** 17 April 2026 (SS-5 v0.2 light-nuclei cascade predictions; 35+ total)
 **Maintainer:** Thomas Lee Abshier ND, with AI team
 
 **Note:** This file supersedes the duplicate at `series_standard_model/papers/axiom-registry.md`. That copy should be replaced with a redirect to this file.
@@ -153,9 +153,20 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | **26** | **Λ_QCD** | **335 MeV** | **~330** | **+2%** | **A11** | **SS-2** |
 | **27** | **μ_neutron** | **−1.847 μ_N** | **−1.913** | **−3.4%** | **A11** | **SS-2** |
 | **28** | **r²_neutron** | **−0.1161 fm²** | **−0.1161** | **exact** | **A11+δ** | **SS-2** |
+| **29** | **σ (string tension, Cornell)** | **926.5 MeV/fm** | **~910** | **+1.8%** | **A2, A5, A8', A11** | **SS-4 v0.1** |
+| **30** | **B_d (deuteron binding)** | **2.342 MeV** | **2.22457** | **+5.3%** | **A2, A5, A8', A11** | **SS-5 v0.2** |
+| **31** | **B(³H) triton binding** | **8.474 MeV** | **8.482** | **−0.09%** | **A2, A5, A8', A11** | **SS-5 v0.2** |
+| **32** | **B(³He) helium-3 binding** | **7.642 MeV** | **7.718** | **−1.0%** | **A2, A5, A8', A11** | **SS-5 v0.2** |
+| **33** | **B(⁴He) helium-4 binding** | **27.904 MeV** | **28.296** | **−1.4%** | **A2, A5, A8', A11** | **SS-5 v0.2** |
+| **34** | **Diproton ²He unbound** | **unbound** | **unbound** | **structural** | **A2 (K₃ contact)** | **SS-5 v0.2** |
+| **35** | **Dineutron ²n unbound** | **unbound** | **unbound** | **structural** | **A2 (K₃ contact)** | **SS-5 v0.2** |
+| **36** | **Deuteron I=0, S=1 channel** | **forced** | **observed** | **structural** | **A2 (K₃ antisymmetry)** | **SS-5 v0.2** |
+| **37** | **⁵He unbound (S_n < 0)** | **unbound** | **S_n = −0.89 MeV** | **structural** | **A2 (closed-polytope gap)** | **SS-5 v0.2** |
+| **38** | **⁵Li unbound (S_p < 0)** | **unbound** | **S_p = −1.97 MeV** | **structural** | **A2 (closed-polytope gap)** | **SS-5 v0.2** |
+| **39** | **⁸Be near-threshold unbound** | **near-threshold unbound** | **−92 keV** | **structural** | **A2 (cage separation)** | **SS-5 v0.2** |
 
-**Net predictions (subtracting calibrations):** 24+
-**Axiom-to-prediction ratio:** 9/24 ≈ **0.38**
+**Net predictions (subtracting calibrations):** 35+
+**Axiom-to-prediction ratio:** 9/35 ≈ **0.26** (dropping; the ratio approaches zero as predictions accumulate)
 
 ### Qualitative predictions (QM series)
 

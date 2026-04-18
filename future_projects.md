@@ -17,12 +17,17 @@
 **Current best lead:** DI-bit propagation (A3) provides complex amplitudes at c = l_P/t_P. The PCD cycle is the natural candidate for operator structure. The DP Sea at T_P is the natural system-bath coupling source.
 **Paper ID:** To be determined (SD-6 if foundational, or late SS number if strong-sector-focused)
 
-### Project 0b: SS-5 — Deuteron Binding from Open-Vertex Nuclear Force — **NEXT STAR SHOT**
-**Status:** Bootup prompt prepared (16 April 2026)
-**Goal:** Predict deuteron binding energy (2.224 MeV) from open-vertex tetrahedral bonding mechanism. First CPP result in nuclear physics.
-**Effort:** 1–2 sessions
-**Significance:** Opens a genuinely new sector. Completely independent Layer A — no operator formalism, no Gibbs equilibration. Cascades to ³He, ⁴He, ³H, and light nuclear binding curve.
-**Dependencies:** SS-2 (proton/neutron structures, l_unit, σ)
+### Project 0b: SS-5 — Light-Nuclei Binding from Open-Vertex Cascade — **v0.2 COMPLETE 17 April 2026**
+**Status:** ✅ v0.2 drafted 17 April 2026 (Opus + ChatGPT referee). Compiles cleanly. Documentation suite v0.1 complete, v0.2 updates pending.
+**Result:** Cascade formula $B(A,Z) = (A-1) n_{np} M_0/\varphi - n_{pp}\alpha_{em}\hbar c/(1.2 A^{1/3}) - (n_{pp}+n_{nn}) M_0/\varphi^3 + \delta_{A,4} M_0/\varphi$. Four zero-parameter quantitative predictions: $B_d = 2.342$ MeV (+5.3%), $B(^3\mathrm{H}) = 8.474$ MeV (−0.09%), $B(^3\mathrm{He}) = 7.642$ MeV (−1.0%), $B(^4\mathrm{He}) = 27.904$ MeV (−1.4%). Three structural unboundness predictions: $^5$He ($S_n = -0.89$ MeV), $^5$Li ($S_p = -1.97$ MeV), $^8$Be (−92 keV), all confirmed. Registered as CONJ-SS-11 with honest conjecture status on the (A-1) multiplicity and Pauli coefficient (OPEN-SS-19). Resolves OPEN-SS-10 across A=2,3,4.
+**Remaining:** Grok and Copilot independent review of the $(A-1)$ cascade-factor argument and Pauli $M_0/\varphi^3$ coefficient; documentation-suite v0.2 updates; OSF registration after reviews pass.
+
+### Project 0c: SS-6 — Heavy-Nuclei Alpha-Cluster Regime (OPEN-SS-18) — **NEW PRIORITY**
+**Status:** Registered 17 April 2026 as OPEN-SS-18. Preliminary SS-5 v0.2 §9 analysis shows alpha-cluster residual ≈ $n \cdot M_0/\varphi$ per alpha-alpha contact for ${}^{12}$C and ${}^{16}$O, breaking down for heavier nuclei.
+**Goal:** Derive $B(A,Z)$ for $A \geq 6$ from coupled-alpha-cluster structure within the CPP open-vertex framework. Target: empirical binding curve up to ${}^{40}$Ca or ${}^{56}$Fe (peak binding-per-nucleon) at CPP residual precision.
+**Effort:** 3–5 sessions
+**Significance:** Completes the nuclear chart mapping. Would give CPP coverage across the empirical binding curve, with the stability valley and the A=56 peak as explicit structural predictions.
+**Dependencies:** SS-5 v0.2 (A≤4 cascade established), alpha-cluster structural theory.
 
 ### Project 1: SM-10 GPU FEM Implementation — **#1 COMPUTATIONAL PRIORITY**
 **Status:** Phase 1-2 (CPU proof-of-concept) complete; Phase 3 (GPU) pending

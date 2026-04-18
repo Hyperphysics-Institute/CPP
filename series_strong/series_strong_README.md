@@ -1,7 +1,7 @@
 # Strong Sector Series (SS)
 
 **Location:** `CPP/series_strong/`
-**Last updated:** 15 April 2026
+**Last updated:** 17 April 2026 (SS-5 v0.2 light-nuclei cascade)
 
 ---
 
@@ -18,6 +18,8 @@ The Strong Sector series derives QCD structure from the 600-cell tetrahedral geo
 | **SS-1** | The Strong Sector from the 600-Cell Lattice | v2 | SU(3) exact; β₀ = 7; 9 theorems | OSF registered |
 | **SS-2** | Lattice-Scale Grounding and Nucleon Structure | v1.0 | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%) | OSF pending |
 | **SS-3** | Uniqueness of SU(3) from the Tetrahedral Cage | v1.3 | SU(3) unique; 4+4 physical mode basis | Submission-ready |
+| **SS-4** | String Tension from the 600-Cell Face-Mode Multiplicity | v0.1 | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8%) | OSF pending |
+| **SS-5** | Light-Nuclei Binding Energies from the Open-Vertex Cascade | v0.2 | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound ✓ | OSF pending |
 
 ### Companion Papers (SS-1)
 

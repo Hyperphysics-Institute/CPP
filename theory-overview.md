@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 16 April 2026 (after SM-3 v6)
+**Last updated:** 17 April 2026 (after SS-5 v0.2)
 
 ---
 
@@ -30,6 +30,8 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SM-10 | First-Principles Quark Mass from FEM Chain Network | Cascade mechanism; two-regime physics; organised DP density | v0.1 |
 | SS-2 | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) | v1.0 |
 | SS-3 | Uniqueness of SU(3) from Tetrahedral Cage | SU(3) unique; 4+4 physical mode basis; det(M) = 2/√3 | v1.3 |
+| SS-4 | String Tension from 600-Cell Face-Mode Multiplicity | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs Cornell) | v0.1 |
+| SS-5 | Light-Nuclei Binding Energies from Open-Vertex Cascade | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound ✓ | v0.2 |
 
 ---
 
@@ -55,6 +57,13 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | r_proton | Distorted tet + ZBW smearing | 0.883 fm | 0.841 | +5.0% | 0 | SS-2 |
 | μ_proton | Constituent quark model | 2.789 μ_N | 2.793 | −0.1% | 0 | SS-2 |
 | α_s(m_H) | Running from α_geom=1/√5 | 0.1132 | 0.1130 | +0.2% | 0 | SS-2 |
+| σ (string tension) | M₀z²/(φ l_edge) | 926.5 MeV/fm | ~910 | +1.8% | 0 | SS-4 |
+| B_d (deuteron binding) | M₀/φ cascade A=2 | 2.342 MeV | 2.22457 | +5.3% | 0 | SS-5 |
+| B(³H) (triton) | Cascade A=3, 0 Coul, 1 Pauli | 8.474 MeV | 8.482 | −0.09% | 0 | SS-5 |
+| B(³He) | Cascade A=3, 1 Coul, 1 Pauli | 7.642 MeV | 7.718 | −1.0% | 0 | SS-5 |
+| B(⁴He) | Cascade A=4, 1 Coul, 2 Pauli, +closure | 27.90 MeV | 28.30 | −1.4% | 0 | SS-5 |
+| ⁵He, ⁵Li, ⁸Be unbound | Closed-polytope gap A=5,8 | Unbound | Unbound ✓ | qual. exact | 0 | SS-5 |
+| Diproton / dineutron unbound | K₃ charge-misalignment | Unbound | Unbound | exact (qual.) | 0 | SS-5 |
 
 **Net scorecard:** 24+ independent predictions from 9 axioms and 2 calibrations. SM requires 19+ parameters for the same quantities.
 
@@ -161,7 +170,10 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 | — | Light quark masses (u,d,s) | Chiral condensate dominates; new axiom likely needed |
 | — | W/Z/Higgs boson masses | EW series has structural models; need quantification |
 | — | Derive σ from lattice mode spectrum | Would promote CONJ-SS-2-1 to theorem |
-| — | SM-12: Deuteron binding from open-vertex model | Proposed — uses SS-2 nucleon structures |
+| OPEN-SS-10 | Nuclear Binding Energy V(r) | **RESOLVED at A=2,3,4 by SS-5 v0.2 (CONJ-SS-11); full V(r) shape remains** |
+| OPEN-SS-17 | Light-nuclei binding curve | PARTIALLY RESOLVED by SS-5 v0.2 at A=2,3,4; A≥6 → OPEN-SS-18 |
+| OPEN-SS-18 (new) | Heavy-nuclei alpha-cluster regime A≥6 | OPEN — future SS-series paper |
+| OPEN-SS-19 (new) | Rigorous derivation of (A-1) cascade factor and Pauli coefficient | OPEN |
 
 ---
 
@@ -170,13 +182,13 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 | Series | Papers | Compliance | PDFs | Doc suite | README | Keywords |
 |--------|--------|-----------|------|-----------|--------|----------|
 | SM (1-10) | 10 | ✅ | ✅ | ✅ (SM-1–10) | ✅ | ✅ |
-| SS (1-2) | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SS (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | EW (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | QM (1-6) | 6 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SR-1 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SD (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**27 papers total. SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SS-2 v1.0 pending OSF registration.**
+**29 papers total. SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SS-2 v1.0, SS-4 v0.1, SS-5 v0.2 pending OSF registration.**
 
 ---
 
