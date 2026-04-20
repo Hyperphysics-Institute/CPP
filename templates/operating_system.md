@@ -128,6 +128,35 @@
 
 ## 4. Paper Production Pipeline (9 Phases)
 
+### Paper Type Taxonomy (adopted 19 April 2026)
+
+CPP papers fall into five distinguishable types. Each paper should declare its type explicitly (in the abstract or §1), because reviewer expectations and success criteria differ by type. Confusion about paper type has been a source of review-reality mismatches — a reviewer expecting one type will measure a paper against the wrong standard if the type is unclear.
+
+The five types:
+
+| Type | Purpose | Success Criteria | Examples |
+|------|---------|------------------|----------|
+| **Theorem paper** | Establish a structural mathematical result | Rigor of proof; uniqueness of the result | SS-3 (SU(3) uniqueness), SM-3 (K₃ spectral theorem) |
+| **Prediction paper** | Generate zero-parameter empirical predictions | Numerical agreement with experiment; zero-parameter integrity; concurrent fits (multiple predictions from same constants) | SS-5 (light-nuclei binding), SS-7 (alpha-cluster), SM-8 (quark masses) |
+| **Derivation paper** | Derive a specific CPP constant or mechanism | Internal consistency with established axioms; traceability from primitives | SS-4 (string tension), SS-2 (nucleon structure), SM-7 (strong coupling) |
+| **Scoping paper** | Classify the domain of validity of an established mechanism, identify frontier | Honest identification of limits; cleanly registered open problems; absence of overclaiming | SS-6 (deuteron observables beyond binding) |
+| **Infrastructure paper** | Establish methods, templates, computational tools | Reproducibility; clarity of protocols; ease of adoption | SM-10 (GPU FEM), operating_system.md itself |
+
+**Type declaration convention:** Each paper's abstract should contain a sentence of the form "This is a [type] paper, presenting [one-line purpose]." For prediction papers, the sentence should also state the number of zero-parameter predictions and the residual band.
+
+**Review protocol by type:**
+- *Theorem papers* should be reviewed for mathematical rigor; numerical predictions are not the focus.
+- *Prediction papers* should be reviewed for numerical correctness, zero-parameter integrity (no hidden tuning), and whether concurrent predictions share the same constants.
+- *Derivation papers* should be reviewed for internal consistency with existing CPP axioms and for whether the derivation genuinely proceeds from primitives rather than matching by construction.
+- *Scoping papers* should be reviewed for honesty about limits, clean open-problem registration, and strategic value within the programme. A scoping paper should NOT be criticized for lacking predictions it explicitly disclaims.
+- *Infrastructure papers* should be reviewed for clarity, completeness, and reproducibility.
+
+**Reviewer mismatch issue:** A review that measures a scoping paper against prediction-paper criteria, or a derivation paper against theorem-paper criteria, will miss what the paper is trying to do. When a review-reality mismatch is detected in a reviewer-response document, the type declaration should be flagged as potentially unclear in the paper itself (this becomes a v-next action item for that paper).
+
+**Type evolution:** A paper may change type across versions. SS-5 began as a prediction paper focused on the deuteron (v0.1) and grew into a prediction paper covering light nuclei A≤4 (v0.2→v6). SS-6 started as (and remained) a scoping paper. Cross-type evolution (e.g., scoping→prediction) requires a change in the type declaration and generally warrants a new paper number rather than a version bump.
+
+---
+
 ### Phase 0: Founder's Vision Capture
 - Thomas describes the mechanism in his own words
 - AI captures verbatim in `founders_vision.md`
@@ -297,6 +326,122 @@ Standard structure:
 - Update all documents per checklist (Section 10)
 - Push to GitHub
 - Verify OSF links
+
+---
+
+### Phase 7 Execution Checklist — ATOMIC TASK LIST (added 20 April 2026)
+
+**Purpose:** This checklist is the single-source, all-in-one atomic task list for executing the documentation suite against a stable paper. It contains every task, in execution order, with zero prose dependencies. A programme principal can run this checklist without reading any other section of `operating_system.md` and produce the complete, accurate documentation suite.
+
+**Trigger condition:** paper is at v1.0 or later AND has passed round-1 external review AND no mechanism-changing critiques pending. (If any of these are not met, do NOT execute this checklist; return to Phase 2 or Phase 4.)
+
+**Deliverables:** 7 companion documentation files + N verification notebooks + updates to 4 registry files. All deliverables go to `series_[name]/` unless otherwise specified.
+
+**Filename pattern:** `[S]-[N]` is the paper identifier (e.g., `SS-7`). `[S]` is the series prefix (e.g., `SS`, `SM`, `EW`, `QM`, `SD`). `[N]` is the paper number (e.g., `7`).
+
+**Canonical filenames never include version suffixes** (per `operating_system.md` §11); version is tracked in the internal CHANGELOG only.
+
+---
+
+#### A. Companion documentation suite (7 files, `series_[name]/companions/`)
+
+- [ ] **A1.** `mechanism-[S]-[N].md` — step-by-step mechanism narrative with mathematical-correspondence table. Template sections: **Overview**, **Inputs and constants**, **Step-by-step derivation**, **Mathematical correspondence table** (physics claim ↔ equation number ↔ paper section), **Failure modes** (where the mechanism is known to break down, with references to OPEN-* registrations).
+
+- [ ] **A2.** `glossary-[S]-[N].md` — paper-specific terms with definitions, organized by category. Required categories: **Constants** (numerical values), **Structural terms** (geometric/topological), **Mechanism terms** (physics process), **Methodology terms** (review, protocol, paper-type). Each entry: term, definition, first-use location in paper, related terms.
+
+- [ ] **A3.** `phenomena-[S]-[N].md` — what the paper explains. Three required sections: **PHEN-E** (empirical facts explained, one entry per observed quantity the paper addresses), **PHEN-P** (predictions, one entry per zero-parameter prediction with numerical value and experimental comparison), **PHEN-V** (consilience with other CPP results, one entry per cross-paper agreement including same constants, same mechanism, or same geometric structure reused).
+
+- [ ] **A4.** `philosophy-[S]-[N].md` — epistemological framing. Required subsections: **Certainty level** (theorem / empirically supported hypothesis / conjecture / scoping), **Relationship to Standard Model** (extends / replaces / reproduces / disagrees), **Falsifiability inventory** (enumerated conditions under which the paper would be decisively wrong, with threshold values where applicable), **Paper-type declaration** (per `operating_system.md` §4 taxonomy: theorem / prediction / derivation / scoping / infrastructure), **Limits of scope** (what the paper explicitly does not claim).
+
+- [ ] **A5.** `development-[S]-[N].md` — development history. Required subsections: **Version timeline** (v0.1 → final, with date, key change, and decision rationale per version), **Key decisions** (at least 3 decisions with alternatives considered and reason for choice), **Dead ends** (models or approaches tried and rejected, with reason for rejection), **Contributor roles** (authors and reviewers, with specific contributions attributed), **Transcript references** (list of development-transcript files with session dates).
+
+- [ ] **A6.** `reviews-[S]-[N].md` — all reviews + FAQ. Two-part structure. **Part 1:** formal reviews organized by reviewer and round, with quoted verdict, major strengths noted, critiques accepted vs declined, integration outcomes. Reference the individual response documents (`SS-[N]_v[X.Y]_[reviewer]_review_response.md`) for full detail. **Part 2:** FAQ organized by category (methodology, scope, falsifiability, relationship to SM, future work), 5--15 entries.
+
+- [ ] **A7.** `keywords-[S]-[N].md` — keywords and registry. Required sections: **Primary keywords** (5--10 terms for search and indexing), **Secondary keywords** (10--20 terms for related-work discovery), **Cross-references to other CPP papers** (with brief relationship note per paper), **Axiom/theorem/conjecture entries registered or resolved** (with OPEN-*, CONJ-*, PROP-*, etc. identifiers).
+
+#### B. Verification notebooks (`series_[name]/notebooks/`)
+
+- [ ] **B1.** Enumerate every numerical quantity cited in the paper. This includes: predicted values, extracted constants, experimental values compared against, derived intermediates, numerical stress-test results.
+
+- [ ] **B2.** For each quantity, create or confirm existence of a reproducible standalone Python script at `series_[name]/notebooks/[S]-[N]_[description].py` with the required header:
+```python
+# ============================================================
+# [S]-[N]: [Description]
+# Paper: [Full paper title]
+# Computation: [What this notebook computes]
+# Key result: [The number(s) this produces, cited in the paper]
+# Author: [AI name], [date]
+# ============================================================
+```
+
+- [ ] **B3.** Each script must run from scratch (only standard dependencies: numpy, scipy, matplotlib, itertools) and print or plot the cited result. Test each script independently before archiving.
+
+- [ ] **B4.** Skip notebook creation for: LaTeX compilation, file management, trivial arithmetic verifiable by hand.
+
+- [ ] **B5.** Add each notebook to `INDEX.md` in `series_[name]/notebooks/`.
+
+#### C. Registry updates (repository-root files)
+
+- [ ] **C1.** `Research_Frontier.md` — update entries for each OPEN-*, CONJ-*, PROP-* registered or resolved by the paper. Mark resolved entries with ✓ and the resolving paper; add new entries with paper reference.
+
+- [ ] **C2.** `predictions.md` — add each new zero-parameter prediction from the paper as a row (nucleus/observable, predicted value, experimental value, error, paper reference, status).
+
+- [ ] **C3.** `axiom-registry.md` — update axiom count and add any new axioms/assumptions the paper introduces (e.g., C1--C4 for SS-7).
+
+- [ ] **C4.** `paper_catalog.md` — update the paper row: version, date, status, reviewer verdicts, open-problem registrations, target for next paper.
+
+#### D. Development transcript (`series_[name]/development-transcripts/`)
+
+- [ ] **D1.** Collect raw transcript files from all sessions that contributed to the paper's development.
+
+- [ ] **D2.** Curate each transcript per Section 6 protocol: preserve substance, remove tooling noise, keep dead ends.
+
+- [ ] **D3.** Save as `[S]-[N]_transcript_[N]_[AI].md` in `series_[name]/development-transcripts/`.
+
+- [ ] **D4.** Ensure each transcript is referenced in `development-[S]-[N].md` (item A5 above).
+
+#### E. OSF registration
+
+- [ ] **E1.** If the paper has no OSF DOI yet: create a new OSF project, get a pending DOI, attach the final PDF.
+
+- [ ] **E2.** If the paper has an existing OSF DOI from an earlier version: update the OSF project with the new PDF and CHANGELOG summary.
+
+- [ ] **E3.** Update the paper's `.tex` CHANGELOG to reference the OSF DOI.
+
+- [ ] **E4.** Update `paper_catalog.md` row with the OSF DOI status.
+
+#### F. Repository commit
+
+- [ ] **F1.** `git add` all new and modified files from A--E.
+
+- [ ] **F2.** `git commit` with message following the pattern: `[S]-[N] v[X.Y]: documentation suite complete — [brief summary of scope]`.
+
+- [ ] **F3.** `git push` to the canonical remote.
+
+- [ ] **F4.** Verify GitHub shows the expected file structure under `series_[name]/`.
+
+#### G. Final verification
+
+- [ ] **G1.** Open the paper PDF and confirm it references each companion file at least once (either by mention in the paper body or by implicit reference via shared terminology).
+
+- [ ] **G2.** Spot-check each companion file for: correct paper version noted, internal cross-references valid, no placeholder text ("[TO BE WRITTEN]", "TODO", etc.) remaining.
+
+- [ ] **G3.** Confirm every numerical value in `predictions.md` and `phenomena-[S]-[N].md` matches the paper exactly.
+
+- [ ] **G4.** Confirm every OPEN-*, CONJ-*, PROP-* identifier used in the paper appears in `Research_Frontier.md`.
+
+- [ ] **G5.** Update `founders_vision.md` with a one-paragraph milestone note if the paper represents a significant programme advance.
+
+---
+
+**Completion criterion:** All checkboxes above are marked complete. The paper's documentation state is now stable at version v[X.Y]. Future paper revisions (v1.2, v2.0) will re-run items G1--G4 plus whatever items from A--F are affected by the revision; the full suite does not need re-execution unless mechanism or main claims change.
+
+**Estimated effort:** 1 full session (~3--5 hours) for items A--F with a prepared paper. Item G is ~30 minutes.
+
+**Failure modes and recovery:**
+- If a numerical value in a companion file does not match the paper: the paper is the source of truth; fix the companion.
+- If a companion file must be rewritten mid-execution due to discovered paper error: return to Phase 2, produce a revised paper version, then restart the checklist.
+- If OSF registration fails (network, permissions): complete A--D and F, flag E as pending, proceed; do not block the suite on OSF.
 
 ---
 

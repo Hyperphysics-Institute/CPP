@@ -3,9 +3,46 @@
 %        for Medium-Mass Nuclei
 % Strong Sector Series
 %
-% Version 1.0 — 19 April 2026 (post round-1 external review cycle)
+% Version 1.1 — 20 April 2026 (post round-2 external review, minor revisions)
 %
 % CHANGELOG:
+%   v1.1 (20 Apr 2026) — POST-ROUND-2 MINOR REVISIONS. Both ChatGPT round-2
+%     and Copilot round-2 returned "Accept with minor revisions" on v1.0.
+%     Integrates 5 accepted items; declines 4 Copilot items as factual
+%     mismatches (items referred to content not present in v1.0; documented
+%     in SS-7_v1.0_copilot_round2_response.md). Changes from v1.0:
+%
+%     FROM CHATGPT ROUND-2 (2 one-sentence items):
+%       - C4 status opening rephrased: "structural hypothesis within CPP,
+%         not yet derived from lattice-level dynamics" (tighter than v1.0's
+%         "modeling hypothesis, not a theorem" phrasing; closes remaining
+%         ambiguity between "strongly motivated" and "nearly derived").
+%       - Opening line added to §6.5.3 edge-count-dominance subsection:
+%         "These tests demonstrate that the empirical success of the model
+%         is not merely due to total binding magnitude, but to the specific
+%         combinatorial edge count."
+%
+%     FROM COPILOT ROUND-2 (3 items):
+%       - Physical-intuition paragraph added after C4 (three arguments:
+%         triangular faces from tetrahedral base-to-base contact; maximal
+%         contact reinforcement thermodynamic selection; convexity from
+%         rigid-packing constraints). Explicitly marked as intuition, not
+%         derivation of C4 (which remains OPEN-SS-24).
+%       - Figure 4 added: DP-sea charge-redistribution schematic between
+%         two alphas in contact. Labeled as schematic representation, not
+%         derived mechanism (per ChatGPT round-2 Coulomb advisory).
+%       - 6-line symbols glossary added as boxed footnote near Main Result.
+%
+%     DECLINED (v1.0 already contains the referenced content):
+%       - Copilot B1: Table 2 stress-test summary already present in §6.5.2
+%       - Copilot B2: Hoyle subsection §4.3 ends with complete paragraph
+%       - Copilot B3: "2ºNe", "4ºCa", "Conver Polytopes" not in v1.0
+%       - Copilot B4: Notation is consistent (\Balpha 40x, \Raa 23x)
+%
+%     Per operating_system.md §11 version nomenclature: v1.1 = minor
+%     post-release revision. No structural changes to claims, methods, or
+%     main results. Numerical content identical to v1.0.
+%
 %   v1.0 (19 Apr 2026) — POST-REVIEW INTEGRATION. Round-1 reviews from
 %     Copilot (verdict: minor revisions) and ChatGPT (re-review verdict:
 %     minor-to-moderate revisions) integrated. Under the version
@@ -169,7 +206,7 @@
 
 \title{\textbf{SS-7: Alpha-Cluster Regime and the $3N-6$ Edge Formula\\ for Medium-Mass Nuclei}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 1.0 --- 19 April 2026 (post round-1 external review)}}
+{\normalsize Version 1.1 --- 20 April 2026 (post round-2 external review)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -232,6 +269,18 @@ SS-5 showed that small nuclei up to helium-4 form by gluing together tetrahedral
 with $\Balpha = 28.296$ MeV (${}^4$He binding, from SS-5) and $\Bpair = \Mzero/\phig = 2.342$ MeV (nucleon-pair binding quantum, from SS-5). Zero fitted parameters. Agreement with AME 2020: ${}^{12}$C, ${}^{16}$O, ${}^{20}$Ne, ${}^{24}$Mg, ${}^{28}$Si, ${}^{32}$S, ${}^{36}$Ar, ${}^{40}$Ca all within $\pm 1.5\%$ (RMS error 0.88\%). 
 
 The edge count $3\Nalpha - 6$ is a theorem (Euler's formula for simplicial convex polytopes on $\Nalpha$ vertices, \S\ref{sec:derivation}). Whether alpha-chain nuclei physically realize such polytopes is a modeling hypothesis (assumption C4, \S\ref{sec:assumptions}); Table \ref{tab:SS7_predictions} is the empirical test of that hypothesis, and an adversarial stress test (\S\ref{sec:stress_test}) confirms the hypothesis is not easily broken by plausible lower-edge alternatives.
+\end{mdframed}
+
+\begin{mdframed}[backgroundcolor=gray!5, linewidth=0.5pt, roundcorner=3pt]
+\textbf{Symbols used throughout this paper:}
+\begin{itemize}\setlength\itemsep{0pt}
+\item $\Balpha = 28.296$ MeV --- ${}^4$He binding energy (from SS-5)
+\item $\Bpair = M_0/\varphi = 2.342$ MeV --- nucleon-pair binding quantum (from SS-5)
+\item $M_0 = 3.7898$ MeV --- CPP unit mass (from SM-8)
+\item $\varphi = 1.618034\ldots$ --- golden ratio
+\item $\Nalpha$ --- number of alpha clusters in a nucleus ($A = 4\Nalpha$, $Z = 2\Nalpha$)
+\item $\Raa = 2.37$ fm --- alpha-alpha contact distance (extracted from ${}^8$Be, Finding~\ref{find:Raa})
+\end{itemize}
 \end{mdframed}
 
 \subsection{The cascade paradigm at two levels}
@@ -314,7 +363,19 @@ In the style of SS-5's D1--D4 stack, SS-7 rests on four assumptions. Each is sta
 
 \item \textbf{Simplicial alpha-polytope.} $\Nalpha$ alpha clusters in a bound nucleus arrange as the vertices of a convex, triangular-faced, simplicial 3-polytope. Each edge of this polytope represents one alpha-alpha contact bond.
 
-\emph{Status.} C4 is a modeling hypothesis, not a theorem. It is supported empirically by the Table~\ref{tab:SS7_predictions} agreement across eight alpha-chain nuclei and by the stress tests in \S\ref{sec:stress_test}, but a first-principles derivation of why alpha clusters should arrange as simplicial polytopes (rather than as lower-connected graphs) from CPP lattice geometry is an open problem, registered as OPEN-SS-24 and slated for a future paper (SS-9 candidate).
+\emph{Status.} C4 is a \textbf{structural hypothesis within CPP, not yet derived from lattice-level dynamics}. It is supported empirically by the Table~\ref{tab:SS7_predictions} agreement across eight alpha-chain nuclei and by the stress tests in \S\ref{sec:stress_test}, but a first-principles derivation of why alpha clusters should arrange as simplicial polytopes (rather than as lower-connected graphs) from CPP lattice geometry is an open problem, registered as OPEN-SS-24 and slated for a future paper (SS-9 candidate).
+
+\emph{Physical intuition for simplicial, convex, triangular-faced.} Although C4 is not yet derived, three physical considerations suggest why this specific geometric class (simplicial, convex, triangular-faced) is the natural answer given C1--C3:
+
+\begin{enumerate}
+\item \textbf{Triangular faces from tetrahedral base-to-base contact.} Each alpha, by C1, is a rigid tetrahedron with four triangular outer faces. When two alphas meet via base-to-base contact (C2), they share \emph{one} triangular face --- not a quadrilateral, pentagonal, or mixed face. Higher-order polygonal contact would require non-planar or non-rigid shared faces, inconsistent with C1. Triangular contact faces therefore are not an assumption of C4 but a consequence of C1--C2.
+
+\item \textbf{Maximal contact reinforcement (thermodynamic selection).} Each alpha-alpha contact contributes $+\Bpair$ to the binding (C3). At fixed $\Nalpha$ and fixed convex vertex set, the simplicial configuration has the maximum possible edge count $E = 3\Nalpha - 6$; any non-simplicial alternative has fewer edges and binds less strongly. The ground-state nuclear configuration should minimize total energy, therefore should maximize the number of $\Bpair$-producing contacts subject to rigid-alpha constraints. Simplicial is the ground-state selection.
+
+\item \textbf{Convexity from rigid-packing constraints.} Rigid tetrahedral alphas (C1) cannot interpenetrate. The densest non-interpenetrating arrangement of rigid tetrahedra with shared triangular faces forms a convex polytope: non-convex arrangements would place some alpha on the interior without full base-to-base contact to all neighbors, reducing the contact count and violating the maximum-reinforcement condition above.
+\end{enumerate}
+
+These arguments are \emph{intuitions}, not derivations: each step relies on verbal physical reasoning that a full CPP lattice-geometry treatment would replace with quantitative constraints. OPEN-SS-24 is the formal version of this intuition; until that is done, C4 stands as a structural hypothesis supported by (a) the physical plausibility above and (b) the empirical success of Table~\ref{tab:SS7_predictions} and the stress tests in \S\ref{sec:stress_test}.
 \end{enumerate}
 
 C1 and C2 are geometric extensions of SS-5; C3 applies the SS-5 collective-mode rule at the alpha level with the SS-5 eigenvalue calculation replicated at larger spatial scale; C4 is the structural analog of SS-5's ``closed polytope of nucleons'' at the alpha level, and is the hypothesis most exposed to falsification by the Table~\ref{tab:SS7_predictions} data and the \S\ref{sec:stress_test} stress tests.
@@ -772,6 +833,72 @@ In CPP, the analogous mechanism is DP-sea rearrangement: the dipole-pair sea bet
 
 \textbf{Honest status.} Neither the DP-sea scaling argument nor the ``only surface contacts contribute'' alternative is currently derived from CPP primitives. What the data indicate is that some mechanism reduces effective alpha-alpha Coulomb in bound polytopes by a factor larger than conventional-cluster estimates, with the ${}^8$Be exception preserving the full-Coulomb limit for isolated contacts. A first-principles CPP treatment of this screening is OPEN-SS-22-adjacent work, targeted for the future SS-8 icosahedral-closure paper (where heavy-nucleus Coulomb physics becomes unavoidable).
 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.25]
+
+% Top panel: isolated alpha-alpha (vacuum Coulomb)
+\begin{scope}[shift={(0,2.4)}]
+  \node[align=center] at (-4.4, 0) {\small \textbf{(a)} Isolated\\ \small alpha-alpha};
+  % Two alphas far apart with no screening
+  \fill[red!25] (-1.3, 0) circle (0.35);
+  \draw[thick] (-1.3, 0) circle (0.35);
+  \node at (-1.3, 0) {\small $\alpha$};
+  \node[above] at (-1.3, 0.4) {\scriptsize $Z=2$};
+  \fill[red!25] (1.3, 0) circle (0.35);
+  \draw[thick] (1.3, 0) circle (0.35);
+  \node at (1.3, 0) {\small $\alpha$};
+  \node[above] at (1.3, 0.4) {\scriptsize $Z=2$};
+  % Coulomb repulsion arrows
+  \draw[->, very thick, red!70!black] (-0.88, 0) -- (-0.2, 0);
+  \draw[->, very thick, red!70!black] (0.88, 0) -- (0.2, 0);
+  \node[above, font=\scriptsize, red!60!black] at (0, 0.15) {vacuum};
+  \node[below, font=\scriptsize, red!60!black] at (0, -0.05) {$V_C \approx 2.4$ MeV};
+  % ${}^8$Be context
+  \node[right, font=\scriptsize] at (2, 0) {(${}^8$Be case)};
+\end{scope}
+
+% Bottom panel: alpha-alpha embedded in polytope (screened)
+\begin{scope}[shift={(0, 0)}]
+  \node[align=center] at (-4.4, 0) {\small \textbf{(b)} Embedded\\ \small in polytope};
+  % Two central alphas in contact
+  \fill[red!25] (-1.3, 0) circle (0.35);
+  \draw[thick] (-1.3, 0) circle (0.35);
+  \node at (-1.3, 0) {\small $\alpha$};
+  \fill[red!25] (1.3, 0) circle (0.35);
+  \draw[thick] (1.3, 0) circle (0.35);
+  \node at (1.3, 0) {\small $\alpha$};
+  % DP-sea cloud between them (schematic blue shading)
+  \fill[blue!15, opacity=0.6] (0, 0) ellipse (1.1 and 0.5);
+  \fill[blue!25, opacity=0.5] (0, 0) ellipse (0.7 and 0.3);
+  % DP-sea particle symbols (small dots)
+  \foreach \x/\y in {-0.5/0.15, -0.25/-0.1, 0/0.2, 0.15/-0.15, 0.4/0.1, -0.4/0.1, 0.5/-0.2, -0.15/0.25}{
+    \fill[blue!60!black] (\x, \y) circle (0.035);
+  }
+  \node[above, font=\scriptsize, blue!60!black] at (0, 0.55) {DP-sea charge redistribution};
+  % Neighbor alphas (context) - triangle above & below
+  \fill[red!20, opacity=0.6] (-0.3, 1.5) circle (0.28);
+  \draw[thick, gray] (-0.3, 1.5) circle (0.28);
+  \node[font=\scriptsize, gray] at (-0.3, 1.5) {$\alpha$};
+  \fill[red!20, opacity=0.6] (0.3, -1.5) circle (0.28);
+  \draw[thick, gray] (0.3, -1.5) circle (0.28);
+  \node[font=\scriptsize, gray] at (0.3, -1.5) {$\alpha$};
+  % Faint connecting edges to neighbors
+  \draw[gray!60, thin, dashed] (-1.3, 0) -- (-0.3, 1.5);
+  \draw[gray!60, thin, dashed] (1.3, 0) -- (-0.3, 1.5);
+  \draw[gray!60, thin, dashed] (-1.3, 0) -- (0.3, -1.5);
+  \draw[gray!60, thin, dashed] (1.3, 0) -- (0.3, -1.5);
+  % Reduced Coulomb arrows (smaller)
+  \draw[->, thick, orange!70!black] (-0.88, 0) -- (-0.38, 0);
+  \draw[->, thick, orange!70!black] (0.88, 0) -- (0.38, 0);
+  \node[above, font=\scriptsize, orange!60!black] at (0, -0.8) {$V_C^{\rm eff} \ll 2.4$ MeV};
+\end{scope}
+
+\end{tikzpicture}
+\caption{Schematic representation of alpha-alpha Coulomb behavior in two regimes. \textbf{(a) Isolated alpha-alpha contact (top):} the ${}^8$Be case, where two alphas interact without neighbors; full vacuum Coulomb repulsion $V_C \approx 2.4$ MeV operates, extracted from the observed 92 keV unboundness (Finding~\ref{find:Raa}). \textbf{(b) Alpha-alpha contact embedded in a larger polytope (bottom):} with additional alpha neighbors present (gray, dashed edges), the DP-sea between the two central alphas reorganizes to partially screen the local charge product; effective Coulomb $V_C^{\rm eff}$ becomes substantially reduced from 2.4 MeV. This figure is a \emph{schematic representation} of the screening mechanism proposed in the text; it does not depict a derived DP-sea charge distribution. A first-principles CPP derivation of the DP-sea screening profile is deferred to future work (OPEN-SS-22-adjacent, targeted for SS-8). The empirical evidence for reduced effective Coulomb in the embedded regime is the Table~\ref{tab:SS7_predictions} agreement of the Coulomb-free formula within $\pm 1.5\%$, contrasted with the full-Coulomb ${}^8$Be analysis of \S\ref{sec:8Be_derivation}.}
+\label{fig:dpsea_schematic}
+\end{figure}
+
 % ===================================================================
 \section{Registry Impact}
 \label{sec:registry}
@@ -898,7 +1025,7 @@ In every test, the simplicial $3\Nalpha - 6$ count outperforms the lower-edge al
 
 \subsubsection{Edge-count dominance at leading order}
 
-At fixed $(\Balpha, \Bpair)$, binding energy is primarily controlled by the combinatorial edge count; variations in vertex connectivity at fixed $E$ are subleading within the present model. This is a structural claim of the model that the stress tests confirm: binding tracks $E$ almost exclusively, and the data prefer the specific value $E = 3\Nalpha - 6$ over plausible lower-edge alternatives.
+\textbf{These tests demonstrate that the empirical success of the model is not merely due to total binding magnitude, but to the specific combinatorial edge count.} At fixed $(\Balpha, \Bpair)$, binding energy is primarily controlled by the combinatorial edge count; variations in vertex connectivity at fixed $E$ are subleading within the present model. This is a structural claim of the model that the stress tests confirm: binding tracks $E$ almost exclusively, and the data prefer the specific value $E = 3\Nalpha - 6$ over plausible lower-edge alternatives.
 
 \subsubsection{What the stress tests do and do not establish}
 
@@ -945,6 +1072,10 @@ The direction to pursue the alpha-cluster regime as the natural next paper after
 \textbf{Reviewer contributions integrated in v1.0.} Copilot's round-1 review (referee-grade, verdict: minor revisions) contributed the requests for: expanded C1--C4 assumption-stack justification; deeper Coulomb-treatment discussion; explicit N$_\alpha \geq 12$ trend-line framing; expanded Hoyle-state discussion; and the three figures. ChatGPT's round-1 re-review (following a re-review request letter after the initial review did not engage the paper's explicit content; verdict after re-engagement: minor-to-moderate revisions) contributed the theorem/hypothesis split at Theorem~\ref{thm:3N6}, the selection-bias scope language, the R$_{\alpha\alpha}$ inversion framing at Finding~\ref{find:Raa}, the $M_0/\varphi$ recurrence status paragraph in \S\ref{sec:discussion}, the $\pm 2\%$ structural falsification condition, the topological-invariant Coulomb framing, and --- most substantively --- the four-nucleus hostile-geometry stress test that is now \S\ref{sec:stress_test}. The stress-test numerical results (${}^{32}$S, ${}^{28}$Si, ${}^{36}$Ar, ${}^{40}$Ca) are ChatGPT's contribution verbatim, presented here in the paper's authorial voice with full reviewer credit. The reviewer-response protocol (operating\_system.md \S 4 Phase 4, adopted 19 April 2026) captured the complete engagement record; the SS-7 review cycle was that protocol's first full validation.
 
 Bibliographic additions in v1.0: Brink (1966) and Ikeda (1968) for the alpha-cluster tradition; Wildermuth-Tang for conventional-cluster Coulomb treatments; Funaki et al.\ (2003) for the Hoyle-state alpha-cluster description.
+
+\textbf{Reviewer contributions integrated in v1.1.} Both ChatGPT round-2 and Copilot round-2 returned "Accept with minor revisions" on v1.0. ChatGPT's round-2 review contributed the C4 status rephrasing ("structural hypothesis within CPP, not yet derived from lattice-level dynamics") and the edge-count-dominance opening line in \S\ref{sec:stress_test} ("not merely due to total binding magnitude, but to the specific combinatorial edge count"), as well as the Coulomb-framing advisory that shaped how Figure~\ref{fig:dpsea_schematic} is presented (schematic representation, not derived mechanism). Copilot's round-2 review contributed the physical-intuition paragraph after C4, the request for the DP-sea schematic (Figure~\ref{fig:dpsea_schematic}), and the symbols glossary near the Main Result box. Four other items in Copilot's round-2 review referenced content not present in v1.0 and were declined with line citations; the correction letter and Copilot's acknowledgement are archived in the programme record (\texttt{SS-7\_copilot\_round2\_closing\_letter.md}).
+
+This SS-7 development cycle (v0.1 -- 19 Apr 2026 through v1.1 -- 20 Apr 2026) was the reviewer-response protocol's first full validation case: five reviews processed, two distinct review-quality failure modes caught (wholesale hallucination at ChatGPT round-1; partial template-synthesis at Copilot round-2), both corrected through formal letters that produced accountable responses and preserved both reviewer relationships. Cumulative substantive integrations across the cycle: 27 items drawn from the reviewer panel.
 
 % ===================================================================
 \begin{thebibliography}{20}
