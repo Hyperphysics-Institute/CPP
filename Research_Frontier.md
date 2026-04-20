@@ -149,16 +149,16 @@ Problems with no candidate solution, or where candidate solutions have been expl
 ---
 
 ### OPEN-SS-10: Nuclear Binding Energy V(r) from qDP Chain Insertion
-**Status:** RESOLVED across A=2,3,4 — by SS-5 v0.2 (17 April 2026) via the cascade formula CONJ-SS-11; full $V(r)$ shape remains open for future work
+**Status:** RESOLVED across A=2,3,4 — by SS-5 v6 (18 April 2026, v0.2/v3 content retained) via the cascade formula CONJ-SS-11; full $V(r)$ shape separately registered as OPEN-SS-20 (short-range) and OPEN-SS-21 (orbital)
 **Sector(s):** SS
 **Priority:** HIGH
 **One-line statement:** Derive nucleon–nucleon potential V(r) from qDP chain insertion dynamics.
 **What a solution looks like:** V(r) with correct shape (attraction at 1–3 fm, repulsion below 0.5 fm, ~8 MeV/nucleon saturation).
 **Dependencies:** OPEN-SS-5 (r_conf, σ)
 **Cross-sector connections:** Nuclear chart series (future), r-process nucleosynthesis
-**Current best lead:** SS-5 v0.2 predicts $B_d$, $B_{^3H}$, $B_{^3He}$, $B_{^4He}$ via base-to-base K$_3$ mechanism with cascade factor $(A-1)$, Pauli penalty $M_0/\varphi^3$, and $A=4$ closure bonus $M_0/\varphi$. All four predictions $\leq 5.3\%$ error, zero parameters. Additionally predicts unboundness of $^5$He, $^5$Li, $^8$Be — all confirmed. Full $V(r)$ shape (repulsive core, intermediate attraction, long-range tail) is the remaining open work.
-**Paper(s):** SS-5 v0.2 (current); SS-6 or later for full $V(r)$
-**Last updated:** 17 April 2026
+**Current best lead:** SS-5 v6 predicts $B_d$, $B_{^3H}$, $B_{^3He}$, $B_{^4He}$ via base-to-base K$_3$ mechanism with cascade factor $(A-1)$, Pauli penalty $M_0/\varphi^3$, and $A=4$ closure bonus $M_0/\varphi$. All four predictions $\leq 5.3\%$ error, zero parameters. Additionally predicts unboundness of $^5$He, $^5$Li, $^8$Be — all confirmed. Full $V(r)$ shape split into short-range (OPEN-SS-20) and orbital (OPEN-SS-21) subproblems.
+**Paper(s):** SS-5 v6 (integrated binding); SS-6 v0.1 registers $V_{\mathrm{SR}}$ and orbital subproblems
+**Last updated:** 18 April 2026
 
 ---
 
@@ -249,10 +249,10 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Priority:** HIGH
 **One-line statement:** Derive the empirical binding curve for $A \geq 6$ nuclei from coupled-alpha-particle cluster structure within the CPP open-vertex framework.
 **What a solution looks like:** A structural account of $^6$Li, $^6$He, $^{12}$C, $^{16}$O, $^{20}$Ne, ..., $^{56}$Fe (peak binding-per-nucleon) that reproduces the empirical binding curve within the CPP residual band. Must include: (a) alpha-alpha residual binding at scale $\sim M_0/\varphi$ per contact, (b) decreasing per-contact binding with increasing $n_\alpha$ (saturation), (c) onset of stability valley and peak at $A=56$, (d) termination of stability at heavy nuclei.
-**Dependencies:** CONJ-SS-11 (SS-5 v0.2 cascade formula); structural theory of alpha-cluster interactions.
-**Current best lead:** Preliminary SS-5 v0.2 §9 sketch: residual above cluster sum is approximately $n \cdot M_0/\varphi$ for $^{12}$C ($n \approx 3$), $^{16}$O ($n \approx 6$), with scaling that breaks down for heavier nuclei. Full analysis requires its own paper.
-**Paper(s):** Future SS-series
-**Registered:** 17 April 2026
+**Dependencies:** CONJ-SS-11 (SS-5 v6 cascade formula); structural theory of alpha-cluster interactions.
+**Current best lead:** Preliminary SS-5 v3 §9 sketch: residual above cluster sum is approximately $n \cdot M_0/\varphi$ for $^{12}$C ($n \approx 3$), $^{16}$O ($n \approx 6$), with scaling that breaks down for heavier nuclei. Full analysis requires its own paper (slotted as SS-7 after SS-6's bipyramid-scoping paper).
+**Paper(s):** SS-7 (future)
+**Registered:** 17 April 2026 (updated 18 April 2026: SS-6 slot reassigned to deuteron-bipyramid scoping, alpha-cluster moved to SS-7)
 
 ---
 
@@ -260,12 +260,66 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Status:** OPEN
 **Sector(s):** SS (nuclear physics)
 **Priority:** MEDIUM-HIGH
-**One-line statement:** Derive the two working conjectures at the heart of CONJ-SS-11 — the $(A-1)$ cascade reinforcement factor and the Pauli penalty coefficient $M_0/\varphi^3$ — from CPP primitives.
-**What a solution looks like:** (a) Rigorous proof that each np pair in a closed $A$-nucleon polytope is reinforced by exactly $A-1$ closed-polytope completion pathways, analogous to SS-3's 4+4 mode-counting proof for internal tetrahedra. (b) Rigorous derivation of the like-nucleon antisymmetrisation cost from the fermion statistics of the lattice ZBW oscillator, matching the empirically-validated value $M_0/\varphi^3$.
+**One-line statement:** Derive the two working conjectures at the heart of CONJ-SS-11 — the $(A-1)$ cascade reinforcement factor and the Pauli penalty coefficient $M_0/\varphi^3$ — from CPP primitives. Also derive the NLO correction $\varepsilon_d \approx 0.050$ closing the 5.3% LO residual.
+**What a solution looks like:** (a) Rigorous proof that each np pair in a closed $A$-nucleon polytope is reinforced by exactly $A-1$ closed-polytope completion pathways, analogous to SS-3's 4+4 mode-counting proof for internal tetrahedra. (b) Rigorous derivation of the like-nucleon antisymmetrisation cost from the fermion statistics of the lattice ZBW oscillator, matching the empirically-validated value $M_0/\varphi^3$. (c) NLO correction $\varepsilon_d$ from a binding-reducing mechanism (tensor/D-wave, zero-point motion, or spin-orbit) — NOT from base-face K$_3$ asymmetry, which SS-5 v5 Appendix §9 shows gives the wrong sign.
 **Dependencies:** OPEN-SS-16 (Layer B gap closure would assist both derivations).
-**Current best lead:** SS-5 v0.2 §4.1 identifies the $(A-1)$ factor as the natural closed-graph completion count; §4.2 gives a propagation-step-count argument for the Pauli coefficient. Both are motivated but not rigorous.
-**Paper(s):** Future SS-series or part of SS-5 v0.3+ revisions
-**Registered:** 17 April 2026
+**Current best lead:** SS-5 v6 §5 identifies the $(A-1)$ factor as the natural closed-graph completion count; §5.2 gives a propagation-step-count argument for the Pauli coefficient. Both are motivated but not rigorous. For $\varepsilon_d$: SS-5 v6 Appendix B rules out v4's Möbius cage-distortion mechanism (four independent problems); §9 rules out base-face K$_3$ asymmetry (wrong sign); candidates remaining are tensor/D-wave coupling, zero-point motion, spin-orbit.
+**Paper(s):** Future SS-series or part of SS-5 v7+ revisions
+**Registered:** 17 April 2026 (updated 18 April 2026 with v4 stress-test outcome and base-face asymmetry result from SS-5 v5/v6)
+
+---
+
+### OPEN-SS-20: Short-Range np Potential $V_{\mathrm{SR}}(r)$ Shape from CPP Primitives
+**Status:** OPEN
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM
+**One-line statement:** Derive the shape of the short-range nucleon-nucleon potential $V_{\mathrm{SR}}(r)$ as a function of inter-nucleon separation, starting from the base-to-base K$_3$ face structure of SS-5.
+**What a solution looks like:** Functional form of $V_{\mathrm{SR}}(r)$ satisfying: (a) $V_{\mathrm{SR}}(0) = -B_{\mathrm{pair}} = -2.342$ MeV at rigid contact, (b) $V_{\mathrm{SR}}(r) \to 0$ as $r \to \infty$, (c) natural CPP length scale $\ell_{\mathrm{edge}} = 0.364$ fm. Candidate forms (Coulombic $\propto -\ell/\sqrt{\ell^2+r^2}$, Yukawa $\propto -e^{-r/\ell}$, smooth cutoff $\propto -\ell/(\ell+r)$) must be selected by a CPP-structural argument, not by fit. Once derived, yields $a_{np}$ beyond zero range, effective range $r_0$ from first principles, singlet-channel $V_{\mathrm{SR}}^{(s)}(r)$ and virtual-state energy, and low-energy phase shifts.
+**Dependencies:** CONJ-SS-11 (SS-5 cascade formula), SS-2 (nucleon structure geometry).
+**Current best lead:** SS-6 v0.1 PROP-SS-6-2 gives the zero-range Bethe-Peierls relation $a_{np} \approx 1/\kappa = 4.32$ fm from $B_d$ alone ($-20\%$ vs observed 5.425 fm). Finite-range correction closes the gap in the correct direction but requires $V_{\mathrm{SR}}(r)$ shape.
+**Paper(s):** SS-6 v0.1 registers the problem; derivation remains future work.
+**Registered:** 18 April 2026
+
+---
+
+### OPEN-SS-21: Deuteron Orbital Wavefunction from CPP Framework
+**Status:** OPEN
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM
+**One-line statement:** Derive the deuteron relative-motion wavefunction $\psi_{np}(r)$ connecting the bipyramid core at $r \lesssim 1$ fm to the orbital extension at $r \sim 2$-$4$ fm.
+**What a solution looks like:** Multi-scale wavefunction prediction yielding: $r_d$ and $r_c$ from $\langle r_{np}^2 \rangle$; $P_D$ from $|w(r)|^2$ integrated weight; $Q_d$ from standard quadrupole integrals including both intrinsic bipyramid contribution (oblate, $-0.22$ fm$^2$) and orbital D-wave contribution (prolate, must dominate to produce observed $+0.286$ fm$^2$); $\mu_d$ via $P_D$-dependent magnetic-moment relation.
+**Dependencies:** OPEN-SS-20 ($V_{\mathrm{SR}}(r)$ shape), standard scattering theory infrastructure.
+**Current best lead:** SS-6 v0.1 establishes the problem: bipyramid core alone gives wrong-sign $Q_d$, confirming $Q_d$ is orbital-dominated. Conventional nuclear physics treats the orbital regime with NN potentials + Schrödinger equation; CPP needs an analog framework. The central unresolved question is how the K$_3$ collective mode extends from rigid contact to finite inter-nucleon separation compatible with the observed orbital size ($r_d \sim 2$ fm, $\langle r_{np}^2 \rangle^{1/2} \sim 4$ fm, $1/\kappa = 4.32$ fm).
+**Paper(s):** SS-6 v0.1 registers the problem; derivation remains future work.
+**Registered:** 18 April 2026
+
+---
+
+## Propositions registered from SS-6 v0.1 (18 April 2026)
+
+### PROP-SS-6-1: Observed deuteron quadrupole $Q_d$ is orbital-dominated, not bipyramid-dominated
+**Status:** SUPPORTED by explicit calculation (SS-6 v0.1 Finding 4.1)
+**Sector(s):** SS
+**One-line statement:** The rigid base-to-base bipyramid's intrinsic quadrupole moment is $Q_d^{\mathrm{int}} = -0.22$ fm$^2$ (oblate); the observed $Q_d = +0.286$ fm$^2$ (prolate) therefore cannot arise from the bipyramid core alone and must be dominated by the orbital D-wave wavefunction at $r \gtrsim 2$ fm.
+**What confirms it:** SS-6 v0.1 §4.1 explicit geometric calculation placing the three net-$+1/3$ charges in the equatorial contact plane at SS-2 edge lengths ($r_{uu}=1.07$ fm, $r_{ud}=0.62$ fm) with neutral-polarity apices along the axis; gives $Q_d^{\mathrm{int}} = -1/3 \cdot [r_{uu}^2/2 + y_3^2] = -0.224$ fm$^2$.
+**Implication:** Quantitative CPP prediction of $Q_d$ requires OPEN-SS-21 (orbital wavefunction), not bipyramid geometry alone.
+**Registered:** 18 April 2026
+
+---
+
+### PROP-SS-6-2: Zero-range Bethe-Peierls relation gives $a_{np} = 1/\kappa = 4.32$ fm from $B_d$ input alone
+**Status:** DERIVED (standard Bethe-Peierls); $-20\%$ agreement with measured $a_{np} = 5.425$ fm
+**Sector(s):** SS
+**One-line statement:** Using $\Bd = 2.2246$ MeV and $\kappa = \sqrt{2\mu \Bd}/\hbar c = 0.2316$ fm$^{-1}$, the zero-range limit of the effective-range expansion gives $a_{np}^{(0)} = 1/\kappa = 4.318$ fm.
+**What confirms it:** Standard two-body scattering theory applied to a loosely-bound state with the observed $\Bd$ as input. No CPP-specific structure required.
+**Implication:** CPP's path to a precision $a_{np}$ prediction must supply the finite-range correction via $V_{\mathrm{SR}}(r)$ shape (OPEN-SS-20). The $20\%$ residual measures the distance CPP has to travel beyond zero range.
+**Registered:** 18 April 2026
+
+---
+
+## Propositions registered from SS-5 (17 April 2026)
+
+[Historical note: PROP-SS-5-2 (base-to-base predominant) and PROP-SS-5-3 (⁵He, ⁵Li, ⁸Be unbound) were registered with the SS-5 v0.2 / v3 session on 17 April 2026. Both remain SUPPORTED / CONFIRMED in v6. See SS-5 v6 §2.1 and §6 respectively.]
 
 ---
 

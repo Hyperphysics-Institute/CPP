@@ -154,6 +154,44 @@
 - Sonnet: hostile/adversarial review
 - Opus: integration and rebuttal
 
+**Reviewer-Response Document protocol (adopted 19 April 2026):**
+
+Each round of external review on a paper produces a **reviewer-response document** that is preserved as part of the paper's permanent documentation record. This document is produced at the time of review — not later — while the reasoning is fresh. Deferring it risks losing the decision trace.
+
+Naming convention: `[S]-[N]_v[X.Y]_[reviewer]_review_response.md`
+Examples:
+- `SS-6_v0.2_chatgpt_review_response.md`
+- `SS-6_v0.2_copilot_review_response.md`
+- `SS-7_v1.0_grok_review_response.md`
+
+Standard structure:
+
+1. **Executive summary** — One paragraph stating the reviewer's core recommendation and whether it is acceptance, revision, or rejection in our framing.
+2. **Points we accept (A-items)** — Bulleted list. Each A-item: reviewer quote + our response + specific v-next action.
+3. **Points we partially accept (B-items)** — Bulleted list. Each B-item: reviewer quote + our response + scope of acceptance + what we're not accepting and why.
+4. **Points we decline (C-items)** — Bulleted list. Each C-item: reviewer quote + our response + reasoning for decline (strategic, ontological, out-of-scope, etc.).
+5. **Summary table** — Columns: Point ID, Category (Language/Framing/Physics/Strategic/Theory), Disposition (Accept/Partial/Decline), v-next action.
+6. **Net effect on v-next** — What concretely changes in the paper, what doesn't, and total effort estimate.
+7. **Strategic observations** — Reviewer-level takeaways about the CPP programme's external reception, useful arguments raised, blind spots in this reviewer, etc.
+8. **Next steps** — Immediate followups (integration timing, subsequent reviewer in queue, coordination with other papers).
+
+**Why this protocol exists:**
+- Reviewers put real work into their reviews; the programme should leave a durable trace of engagement.
+- Declined points need their reasoning recorded so future sessions don't re-open resolved debates.
+- Partial accepts specify exactly what-we-accept and what-we-don't, preventing accidental creep toward accepting more than intended.
+- The response documents feed directly into `reviews-[S]-[N].md` when the companion documentation suite is produced (post-v1.0).
+- External readers and future reviewers can see how the programme handles feedback, which is evidence of programme coherence.
+
+**Integration with version numbering:**
+- A round of review on v0.x feedback → integration produces v0.(x+1) or v1.0 depending on whether an external review has previously run.
+- Reviewer response documents are produced at the time of the review, with recommendations for the next version.
+- If multiple reviewer-response documents exist for the same version, the next version's CHANGELOG references each.
+
+**What NOT to do:**
+- Do not produce a reviewer-response document after the paper has already been revised (produces hindsight bias).
+- Do not merge multiple reviewers' responses into a single document (loses per-reviewer attribution and allows accidental bundling of disputes).
+- Do not summarize only "what we changed"; record the declined points with full reasoning too.
+
 ### Phase 5: Axiom Registry Update
 - Check if new axioms were introduced
 - Check if existing axioms were consolidated (e.g., A6' replacing A6-A9)
@@ -165,8 +203,27 @@
 - Write OSF metadata (title, abstract, keywords, dependencies)
 - Register with DOI
 
-### Phase 7: Documentation Suite (7 files)
-Create all 7 companion files per `documentation-suite.md`. Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
+### Phase 7: Documentation Suite (7 files) — DEFERRED until paper is stable
+
+**Updated protocol (19 April 2026):** Documentation-suite creation is deferred to the end of a paper's review cycle. Companion documentation is produced ONCE, against the version of the paper that has passed external review and whose mechanism and predictions are stable. This replaces the previous protocol where documentation was created alongside each paper version.
+
+**Rationale:** Writing the 7-file companion suite costs approximately one full session per paper. If a reviewer finds a substantive issue that reshapes the mechanism (e.g., the SS-5 v4 → v5 rejection of the Möbius NLO), the companion suite must be redone. Deferring the suite until the paper is stable avoids this duplicated effort. The programme has demonstrated (SS-5 v0.1 → v6) that substantial revision between drafts is common.
+
+**When to produce the suite:**
+- Paper has passed ChatGPT and/or Copilot review
+- Paper has integrated referee feedback and is at v1.0 or later
+- No substantive mechanism-changing critiques are pending
+- Paper is ready for (or already has) OSF registration
+
+**Exceptions — things that ARE maintained continuously during drafting:**
+- **Development transcript** (`[S]-[N]_development_transcript.md`) — updated session-by-session, documents evolution
+- **CHANGELOG block** in the `.tex` header — updated with each version
+- **Registry files** (`Research_Frontier.md`, `predictions.md`, `axiom-registry.md`) — updated when a paper introduces new entries
+- **Paper catalog** (`paper_catalog.md`) — paper row updated when version changes
+
+**When a paper is at v0.x:** only the transcript, CHANGELOG, and registry entries are kept current. Do NOT start the 7-file suite.
+
+**Create all 7 companion files per `documentation-suite.md` when the paper is stable.** Each file should note the paper version it documents (e.g., "Paper: SM-8 v1.0").
 
 | File | Purpose | Content |
 |------|---------|---------|
@@ -671,6 +728,22 @@ start of the next session (to capture what was missed).
 - Do NOT create `SM-8_v1.tex`, `SM-8_v2.tex`, etc. — this creates clutter and confusion.
 - **Exception:** If a revision fundamentally changes scope, archive the old version in `archive/` with a note.
 - To recover an old version: `git log [filename]` then `git checkout <hash> -- [filename]`
+
+### Version number nomenclature (adopted 19 April 2026)
+
+CPP papers use standard semantic-version-style labels to communicate maturity:
+
+| Label | Meaning | When applied |
+|-------|---------|--------------|
+| **v0.1** | Initial preliminary draft, exploratory, may change substantially | First compile of a new paper |
+| **v0.2, v0.3, …** | Pre-review minor revisions (correctness fixes, clarifications) | Author-side polish before any external review |
+| **v1.0** | First "release" version | After at least one round of external review (ChatGPT, Copilot, Grok, or Sonnet) has been integrated |
+| **v1.1, v1.2, …** | Post-release minor revisions (bug fixes, small corrections, clarifications) | Small changes that don't reshape the paper's claims |
+| **v2.0** | Major revision | Substantive new content, reframing, or mechanism change |
+
+**Rule:** A paper that has passed external review and integrated referee feedback is at least v1.0. A paper that has not yet been reviewed is at most v0.x. Staying at v0.x indefinitely obscures paper maturity from future readers; promote to v1.0 once the first review cycle closes.
+
+**Grandfather clause:** Papers already labeled with non-standard version numbers (SS-5 v6, SM-8 v4.1, SS-3 v1.3, etc.) will be relabeled during the comprehensive programme-wide polish pass. The convention above applies to all papers started from 19 April 2026 onward.
 
 ### Staging/scratch files
 - Files like `SM-8_integration_items.md` (work-orders collecting items to integrate elsewhere) should be moved to `archive/` once all items are integrated.

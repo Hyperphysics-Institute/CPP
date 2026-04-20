@@ -42,7 +42,8 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | **SS-2** | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) |
 | **SS-3** | Uniqueness of SU(3) from the Tetrahedral Cage | SU(3) is the unique algebra of 3 colour vertices; 4+4 physical mode basis |
 | **SS-4** | String Tension from the 600-Cell Face-Mode Multiplicity | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs Cornell) |
-| **SS-5** | Light-Nuclei Binding Energies from Open-Vertex Cascade | d, ³H, ³He, ⁴He all ≤5.3% error, 0 params; ⁵He/⁵Li/⁸Be unbound predictions ✓ |
+| **SS-5** | Light-Nuclei Binding Energies from Open-Vertex Cascade | d, ³H, ³He, ⁴He all ≤5.3% error, 0 params; ⁵He/⁵Li/⁸Be unbound predictions $\checkmark$ |
+| **SS-6** | Deuteron Observables Beyond Binding: Scope and Limits of the Base-to-Base Picture | Scoping paper: rigid-bipyramid intrinsic Q_d oblate (reveals Q_d orbital-dominated); zero-range a_np = 1/κ = 4.32 fm from B_d alone |
 | **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3; SSV₀ = 0.2555 MeV |
 | **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 |
 | **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 from K₃ eigenvalue ratio, conditional on Layer B thermalisation — zero free parameters |

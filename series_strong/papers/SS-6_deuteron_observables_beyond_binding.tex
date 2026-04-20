@@ -3,9 +3,49 @@
 %       Scope and Limits of the Base-to-Base Picture
 % Strong Sector Series
 %
-% Version 0.1 — 18 April 2026
+% Version 0.2 — 19 April 2026
 %
 % CHANGELOG:
+%   v0.2 (19 Apr 2026) — AUTHOR-SIDE CORRECTNESS PASS before external review.
+%     Three substantive fixes identified by Opus self-review:
+%
+%     FIX 1 (§4.2 Q_d comparison): v0.1 compared body-frame intrinsic
+%     quadrupole Q_0^int = -0.22 fm^2 with lab-frame observed Q_d =
+%     +0.286 fm^2 without converting frames. For a rigid prolate rotor
+%     at J=K=1, Q_obs = Q_0 * J(2J-1)/[(J+1)(2J+3)] = Q_0/10. So if the
+%     bipyramid dominated, it would predict Q_obs = -0.022 fm^2 --- an
+%     order of magnitude below observation AND wrong sign. The
+%     conceptual conclusion (Q_d is orbital-dominated) strengthens under
+%     the correct framing. Section rewritten to present body-frame and
+%     lab-frame quantities with appropriate conversion.
+%
+%     FIX 2 (§4.5 effective-range inversion): v0.1 used the wrong
+%     algebraic inversion r_0 = 2(a - 1/kappa), giving r_0 = 2.21 fm vs
+%     experimental 1.749 fm (claimed 26% error). The correct inversion
+%     from 1/a = kappa - r_0 kappa^2/2 is r_0 = 2(kappa - 1/a)/kappa^2
+%     = 1.76 fm --- a +0.8% match with experiment, not a 26% failure.
+%     This flips the rhetorical effect: the effective-range expansion
+%     works extremely well for the deuteron at leading order. Text and
+%     framing adjusted accordingly.
+%
+%     FIX 3 (§2.3 kinetic energy): v0.1 said "kinetic energy ~20 MeV,
+%     potential depth ~35 MeV" for the deuteron. Standard textbook
+%     values are T ~ 33 MeV, V ~ 35 MeV (both large, nearly cancelling
+%     to give 2.2 MeV net binding). Minor fix; no conceptual impact.
+%
+%     FRAMING SHARPENING: The Bethe-Peierls a_np = 1/kappa = 4.32 fm
+%     result is universal two-body scattering theory, not a CPP
+%     prediction. v0.1 was careful but could be read as claiming CPP
+%     credit for a textbook result. v0.2 reframes this as "CPP supplies
+%     B_d; two-body scattering theory supplies a_np via Bethe-Peierls."
+%     What CPP adds (via OPEN-SS-20) is V_SR(r) and hence r_0 and a_np
+%     beyond zero range.
+%
+%     NO substantive changes to: three-category classification,
+%     OPEN-SS-20/21 registration, PROP-SS-6-1/2, abstract conclusions.
+%     The paper's conceptual structure is unchanged; only specific
+%     numerical claims and framing are tightened.
+%
 %   v0.1 (18 Apr 2026) — INITIAL SCOPING DRAFT. Follows SS-5 v5/v6's
 %     success on light-nuclei binding by testing the SAME base-to-base
 %     bipyramid geometry against additional deuteron observables.
@@ -93,7 +133,7 @@
 
 \title{\textbf{SS-6: Deuteron Observables Beyond Binding:\\ Scope and Limits of the Base-to-Base Picture}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 0.1 --- 18 April 2026 (initial scoping draft)}}
+{\normalsize Version 0.2 --- 19 April 2026 (pre-review correctness pass)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -108,7 +148,7 @@
 \begin{abstract}
 SS-5 derived the deuteron binding energy $\Bd = 2.342$~MeV at leading order ($+5.3\%$) from base-to-base bonding of hybrid-tetrahedral nucleons, along with concurrent predictions for ${}^3$H, ${}^3$He, and ${}^4$He within $1.4\%$. A natural next question is whether the same bipyramid geometry predicts additional deuteron observables --- the quadrupole moment $\Qd$, D-state admixture $\PD$, magnetic moment $\mud$, matter radius $r_d$, and low-energy scattering parameters $(\anp, \rzero)$ --- with comparable zero-parameter economy.
 
-This paper reports a scoping exploration with one definitive negative finding and one positive direction. The negative finding: the rigid bipyramid's \emph{intrinsic} quadrupole moment has the wrong sign --- the three net-+1/3 electromagnetic charges produced by the base-to-base contact all sit in the equatorial plane, while the axial apices carry polarity (not EM charge), giving an oblate intrinsic $\Qd^{\mathrm{int}} = -0.22$~fm$^2$ versus the observed prolate $\Qd = +0.286$~fm$^2$. This is not a failure of the mechanism; it reveals that $\Qd$, $r_d$, $\PD$, and $\mud$ are dominated by the \emph{orbital} deuteron wavefunction at $r \sim 2$~fm, not by the bipyramid at $\sim 0.4$~fm. The positive direction: the zero-range Bethe-Peierls relation $\anp \approx 1/\kappa$ with $\kappa = \sqrt{2\mu\Bd}/\hbar c$ gives $\anp = 4.32$~fm ($-20\%$ vs observed $5.43$~fm), and the finite-range correction closes this gap in the correct direction but requires a derivation of the short-range potential $\VSR(r)$ from CPP primitives that has not yet been constructed.
+This paper reports a scoping exploration with one definitive negative finding and two quantitative consistency checks. The negative finding: the rigid bipyramid's \emph{intrinsic} body-frame quadrupole is $Q_0^{\mathrm{body}} = -0.22$~fm$^2$ (oblate), which converts to a lab-frame spectroscopic contribution of only $\approx -0.022$~fm$^2$ --- an order of magnitude smaller than and opposite in sign to the observed prolate $\Qd = +0.286$~fm$^2$. This is not a failure of the mechanism; it reveals that $\Qd$, $r_d$, $\PD$, and $\mud$ are dominated by the \emph{orbital} deuteron wavefunction at $r \sim 2$~fm, not by the bipyramid at $\sim 0.4$~fm. The two consistency checks: (i) the universal Bethe-Peierls relation $\anp \approx 1/\kappa$ gives $\anp = 4.32$~fm from $\Bd$ alone ($-20\%$ vs observed 5.43~fm); this is standard two-body quantum mechanics, not a CPP-specific prediction. (ii) Inverting the effective-range expansion on the observed $\anp$ and $\kappa$ recovers the effective range to $+0.8\%$ ($\rzero = 1.76$~fm vs experimental 1.749~fm) --- a notable consistency check indicating the deuteron's short-range potential is smooth and well-characterized by a single length scale.
 
 We classify each deuteron observable into three categories: (A) bipyramid-geometric and hence computable at SS-5 precision (binding, spin-parity, isospin); (B) bipyramid-via-$\VSR(r)$ and hence computable once the short-range potential shape is derived ($\anp$, $\rzero$, virtual singlet); (C) orbital-dominated and hence requiring the full deuteron wavefunction beyond the bipyramid core ($\Qd$, $r_d$, $\PD$, $\mud$). Two new open problems are registered: OPEN-SS-20 (derive $\VSR(r)$ from CPP primitives) and OPEN-SS-21 (derive the deuteron orbital wavefunction in the CPP framework). This paper does not attempt to close either.
 \end{abstract}
@@ -139,9 +179,11 @@ This question is motivated by the ``more stars for better navigation'' principle
 The result of this scoping is less triumphant than SS-5. Numerical exploration (§\ref{sec:observables}) produces two clear outputs:
 
 \begin{enumerate}
-\item \textbf{The rigid bipyramid's intrinsic quadrupole moment has the wrong sign.} The three net-+$1/3$ EM charges in the base-to-base contact plane give an \emph{oblate} intrinsic charge distribution, $\Qd^{\mathrm{int}} = -0.22$~fm$^2$, whereas experiment shows \emph{prolate} $\Qd = +0.286$~fm$^2$. This is neither a failure of the mechanism nor a numerical precision issue: the signs are fundamentally opposite. Interpreted correctly, this result \emph{reveals} that the observed $\Qd$ cannot arise from the bipyramid core and must instead come from the \emph{orbital} wavefunction at the deuteron's ${\sim}2$~fm scale --- where the proton and neutron spend most of their time separated rather than in contact.
+\item \textbf{The rigid bipyramid cannot produce the observed $\Qd$.} The three net-$+1/3$ EM charges in the base-to-base contact plane give a body-frame intrinsic quadrupole $Q_0^{\mathrm{body}} = -0.22$~fm$^2$ (oblate), which converts for a $J=K=1$ rigid rotor to a lab-frame spectroscopic contribution of only $\approx -0.022$~fm$^2$. The observed $\Qd = +0.286$~fm$^2$ is ten times larger and opposite in sign. Interpreted correctly, this result \emph{reveals} that the observed $\Qd$ cannot arise from the bipyramid core; it must come from the \emph{orbital} wavefunction at the deuteron's ${\sim}2$~fm scale, where the proton and neutron spend most of their time separated rather than in contact.
 
-\item \textbf{The zero-range scattering length follows from $\Bd$ alone.} The Bethe-Peierls relation for a loosely-bound two-body state gives $\anp = 1/\kappa + \rzero/2 + \ldots$ with $\kappa = \sqrt{2\mu\Bd}/\hbar c$. The leading (zero-range) term alone gives $\anp = 4.32$~fm with \emph{no fitted parameters beyond the deuteron binding itself}, against the measured $5.43$~fm ($-20\%$). The gap closes in the right direction with a finite-range correction, but deriving $\rzero$ requires knowing the shape of the short-range potential $\VSR(r)$, which CPP has not yet constructed from first principles.
+\item \textbf{The Bethe-Peierls relation places $\Bd$ and $\anp$ in a universal consistency check.} For any shallow two-body bound state, $\anp \approx 1/\kappa$ with $\kappa = \sqrt{2\mu\Bd}/\hbar c$. Using $\Bd$ alone gives $\anp^{(0)} = 4.32$~fm against the measured 5.43~fm ($-20\%$). This is not a CPP-specific prediction; it is universal quantum scattering theory. What CPP \emph{has} supplied is $\Bd$; what it \emph{owes} (OPEN-SS-20) is $\VSR(r)$, from which $\rzero$ and the finite-range-corrected $\anp$ follow.
+
+\item \textbf{The effective-range expansion works to 0.8\% at leading order.} Inverting the Bethe-Peierls relation on the observed $\anp = 5.425$~fm and $\kappa = 0.2316$~fm$^{-1}$ gives $\rzero = 2(\kappa - 1/\anp)/\kappa^2 = 1.76$~fm, against experimental $\rzero^{\mathrm{exp}} = 1.749$~fm. This $+0.8\%$ consistency is a notable positive finding: it indicates the deuteron's short-range potential is smooth and well-characterized by a single length scale $\rzero$, which whatever $\VSR(r)$ CPP eventually derives must reproduce.
 \end{enumerate}
 
 The upshot is a classification: some deuteron observables are bipyramid-computable; some require an additional CPP input (the $\VSR(r)$ shape); some require the orbital wavefunction and are beyond the present reach.
@@ -149,8 +191,8 @@ The upshot is a classification: some deuteron observables are bipyramid-computab
 \subsection{What SS-6 delivers}
 
 \begin{itemize}
-\item A definitive structural finding: the observed deuteron quadrupole moment is orbital-dominated, not bipyramid-dominated.
-\item A zero-range prediction $\anp = 1/\kappa = 4.32$~fm from $\Bd$ alone ($-20\%$ from measured), derived from the Bethe-Peierls relation without CPP-specific structure.
+\item A definitive structural finding: the observed deuteron quadrupole moment is orbital-dominated, not bipyramid-dominated. Rigid bipyramid alone predicts $\approx -0.022$~fm$^2$ (oblate) in the lab frame; observation is $+0.286$~fm$^2$ (prolate).
+\item Two universal scattering-theory consistency checks: $\anp = 1/\kappa = 4.32$~fm from $\Bd$ alone ($-20\%$ vs measured 5.43~fm) and $\rzero = 1.76$~fm from effective-range inversion ($+0.8\%$ vs measured 1.749~fm).
 \item A three-category classification of deuteron observables by derivability from the bipyramid.
 \item Two new open problems: OPEN-SS-20 ($\VSR(r)$ shape) and OPEN-SS-21 (deuteron orbital wavefunction).
 \end{itemize}
@@ -172,8 +214,8 @@ This is a scoping paper, not a result paper. Its purpose is to sharpen the progr
 \item \textbf{OPEN-SS-10} (Nuclear binding $V(r)$): partially clarified --- the integrated binding at A=2,3,4 was resolved in SS-5; the short-range shape of $\VSR(r)$ is now separately registered as OPEN-SS-20.
 \item \textbf{New OPEN-SS-20}: derive the shape of $\VSR(r)$ as a function of inter-nucleon separation from CPP primitives. Controls $\anp$, $\rzero$, and the singlet virtual state.
 \item \textbf{New OPEN-SS-21}: derive the deuteron orbital wavefunction at ${\sim}2$~fm from CPP in a framework that connects to the bipyramid core at ${\sim}0.4$~fm. Controls $\Qd$, $r_d$, $\PD$, $\mud$.
-\item \textbf{New PROP-SS-6-1}: the rigid bipyramid's intrinsic $\Qd^{\mathrm{int}} = -0.22$~fm$^2$ is oblate; observed $\Qd$ is orbital-dominated.
-\item \textbf{New PROP-SS-6-2}: the zero-range Bethe-Peierls relation $\anp \approx 1/\kappa$ gives $\anp = 4.32$~fm from $\Bd$ alone ($-20\%$).
+\item \textbf{New PROP-SS-6-1}: the rigid bipyramid's body-frame $Q_0^{\mathrm{body}} = -0.22$~fm$^2$ is oblate, lab-frame contribution $\approx -0.022$~fm$^2$; observed prolate $\Qd = +0.286$~fm$^2$ is orbital-dominated.
+\item \textbf{New PROP-SS-6-2}: universal Bethe-Peierls gives $\anp = 1/\kappa = 4.32$~fm ($-20\%$) from $\Bd$; effective-range inversion additionally gives $\rzero = 1.76$~fm ($+0.8\%$).
 \end{itemize}
 
 % ===================================================================
@@ -187,7 +229,7 @@ In SS-5, the deuteron is the face-to-face contact of two hybrid-tetrahedral nucl
 \begin{itemize}
 \item three quarks at the vertices of a triangular base face,
 \item one ``open'' vertex opposite the base carrying net polarity ($+$ for proton, $-$ for neutron) but no additional electromagnetic charge,
-\item isosceles base geometry: u-u edge stretched to $r_{uu} = (1 + \varepsilon_{\mathrm{cage}}) \ledge = 1.07$~fm with $\varepsilon_{\mathrm{cage}} = 1.94$; u-d edges at $r_{ud} = 0.62$~fm (SS-2).
+\item isosceles base geometry: u-u edge stretched to $r_{uu} = (1 + \varepsilon_{\mathrm{cage}}) \ledge = 1.07$~fm with $\varepsilon_{\mathrm{cage}} = 1.94$; u-d edges at $r_{ud} = 0.62$~fm (SS-2 \cite{abshier2026ss2}).
 \end{itemize}
 
 In the base-to-base deuteron configuration, the proton base $\{u, u, d\}$ contacts the neutron base $\{d, d, u\}$ with the three charge-opposite vertex pairs aligned, forming a K$_3$ contact face. Three quark-quark DP chains span the contact, with K$_3$ collective mode reducing the three oscillators to one effective binding mode at $\Bpair = \Mzero/\phig = 2.342$~MeV (LO).
@@ -196,7 +238,7 @@ The open vertices of the two nucleons point \emph{outward} along the symmetry ax
 
 \subsection{Key geometric lengths}
 
-For the numerical scale of the bipyramid core, SS-2 gives:
+For the numerical scale of the bipyramid core, SS-2 \cite{abshier2026ss2} and SM-8 \cite{abshier2026sm8} give:
 \begin{align*}
 \ledge &= 0.364 \text{ fm}, \\
 \lunit &= \hbar c / \Lambda_{\mathrm{QCD}} = 0.589 \text{ fm}, \\
@@ -212,7 +254,7 @@ These scales are all ${\lesssim}1.3$~fm --- substantially smaller than the obser
 
 A crucial physical fact: in the deuteron, the proton and neutron are \emph{not} locked in the contact bipyramid geometry. They orbit at an rms separation of ${\sim}4$~fm (inferred from $r_d^2 = \langle r_{np}^2 \rangle/4$, giving $\langle r_{np}^2 \rangle^{1/2} \approx 3.95$~fm). This is $\sim 10\times$ the bipyramid's internal scale and $\sim 4\times$ the bipyramid's apex-to-apex dimension.
 
-This separation of scales is not a CPP issue --- it is a standard feature of the deuteron recognized in all nuclear-physics treatments. The deuteron is a \emph{loosely-bound} state: $\Bd = 2.22$~MeV, kinetic energy $\sim 20$~MeV, potential depth $\sim 35$~MeV (standard values), giving a binding that is less than $10\%$ of the characteristic nuclear energy scale. The wavefunction extends far outside the attractive-potential range. The asymptotic behaviour $\psi(r) \sim e^{-\kappa r}/r$ with $1/\kappa = 4.32$~fm sets the observed size.
+This separation of scales is not a CPP issue --- it is a standard feature of the deuteron recognized in all nuclear-physics treatments. The deuteron is a \emph{loosely-bound} state: $\Bd = 2.22$~MeV, kinetic energy $T \sim 33$~MeV, potential depth $V \sim 35$~MeV (standard textbook values), giving a binding $B = V - T \approx 2$~MeV that is the difference of two large, nearly-cancelling energies. The wavefunction extends far outside the attractive-potential range. The asymptotic behaviour $\psi(r) \sim e^{-\kappa r}/r$ with $1/\kappa = 4.32$~fm sets the observed size.
 
 This separation of scales is the dominant physics controlling $\Qd$, $r_d$, $\PD$, and $\mud$. It is \emph{not} controlled by the bipyramid core.
 
@@ -230,7 +272,7 @@ Already addressed in SS-5 §7 at the bipyramid level: $J^P = 1^+$, $I = 0$. Thes
 \subsection{Quadrupole moment $\Qd$}
 \label{sec:Qd}
 
-\subsubsection{Intrinsic bipyramid quadrupole}
+\subsubsection{Intrinsic bipyramid quadrupole (body frame)}
 
 Consider the bipyramid at rigid contact ($s = 0$ gap between the two bases). The three quark-quark DP chains span the contact with opposite-charge pairs superposed at identical $(x, y)$ positions on the $z = 0$ contact plane:
 \begin{itemize}
@@ -242,33 +284,46 @@ where $y_3 = \sqrt{r_{ud}^2 - (r_{uu}/2)^2} = 0.313$~fm is the base-triangle hei
 
 The apices at $z = \pm h$ carry polarity (one extra $\qCP$ each), not electromagnetic charge. They do not contribute to the intrinsic charge quadrupole.
 
-For a charge distribution at positions $\vec r_i$ with charges $q_i$, the intrinsic quadrupole moment relative to the $z$-axis is
+In the \emph{body frame} (bipyramid symmetry axis aligned with $z$), with charges at positions $\vec r_i$ and values $q_i$, the intrinsic quadrupole moment is
 \[
-\Qd^{\mathrm{int}} = \sum_i q_i (3 z_i^2 - r_i^2).
+Q_0^{\mathrm{body}} = \sum_i q_i (3 z_i^2 - r_i^2).
 \]
 With all three charges at $z_i = 0$, the formula reduces to
 \[
-\Qd^{\mathrm{int}} = -\sum_i q_i (x_i^2 + y_i^2) = -\frac{1}{3}\left[2 \cdot \frac{r_{uu}^2}{4} + y_3^2\right] = -\frac{1}{3}\left[\frac{(1.07)^2}{2} + (0.313)^2\right] = -0.224 \text{ fm}^2.
+Q_0^{\mathrm{body}} = -\sum_i q_i (x_i^2 + y_i^2) = -\frac{1}{3}\left[2 \cdot \frac{r_{uu}^2}{4} + y_3^2\right] = -\frac{1}{3}\left[\frac{(1.07)^2}{2} + (0.313)^2\right] = -0.224 \text{ fm}^2.
 \]
 
-\begin{finding}[Intrinsic bipyramid quadrupole has wrong sign]
+The negative sign indicates an \emph{oblate} intrinsic charge distribution: charge concentrated equatorially, neutral poles axially.
+
+\subsubsection{Conversion to lab-frame spectroscopic quadrupole}
+
+The observed deuteron quadrupole $\Qd = +0.286$~fm$^2$ \cite{pdg2024} is the \emph{spectroscopic} quadrupole in the $J=1, M=\pm 1$ stretched state. For a rigid rotor with symmetry axis $K = J$, the conversion from body-frame intrinsic $Q_0^{\mathrm{body}}$ to lab-frame spectroscopic $Q$ is standard \cite{krane_nuclear}:
+\[
+Q = Q_0^{\mathrm{body}} \cdot \frac{J(2J-1)}{(J+1)(2J+3)}.
+\]
+For $J = K = 1$: $Q = Q_0^{\mathrm{body}} / 10$. Applying this to the bipyramid's $Q_0^{\mathrm{body}} = -0.224$~fm$^2$ gives the spectroscopic value one would observe \emph{if the bipyramid dominated the deuteron's charge distribution}:
+\[
+Q^{\mathrm{bipyramid-only}} = \frac{-0.224}{10} \approx -0.022 \text{ fm}^2.
+\]
+
+\begin{finding}[Bipyramid cannot produce the observed $\Qd$]
 \label{find:Qd_sign}
-The rigid base-to-base bipyramid, with electromagnetic charge concentrated in the equatorial contact plane and polarity-only apices along the axis, has intrinsic quadrupole moment $\Qd^{\mathrm{int}} = -0.22$~fm$^2$ (oblate). The measured deuteron quadrupole moment $\Qd = +0.286$~fm$^2$ is prolate. The signs are opposite.
+If the rigid base-to-base bipyramid dominated the deuteron's charge distribution, the predicted lab-frame quadrupole would be $Q^{\mathrm{bipyramid-only}} \approx -0.022$~fm$^2$: an order of magnitude smaller than the measured $\Qd = +0.286$~fm$^2$, \emph{and} the opposite sign. The bipyramid's equatorial-charge / neutral-pole geometry is intrinsically oblate; the observed deuteron charge distribution is prolate. This two-way mismatch cannot be closed by finite corrections to the bipyramid geometry.
 \end{finding}
 
 \subsubsection{Interpretation}
 
-This is not a failure of the bipyramid mechanism. It is a diagnostic. The observed $\Qd$ is well-known in conventional nuclear physics to arise from the D-wave ($L = 2$) component of the deuteron wavefunction at orbital separation $r_{np} \sim 2$~fm. The relationship (standard):
+This is not a failure of the bipyramid mechanism. It is a diagnostic. The observed $\Qd$ is well-known in conventional nuclear physics to arise from the D-wave ($L = 2$) component of the deuteron wavefunction at orbital separation $r_{np} \sim 2$~fm. The relationship (standard \cite{krane_nuclear}):
 \[
 \Qd \approx \frac{\sqrt 2}{10} \int_0^\infty u(r) w(r) r^2 \, dr - \frac{1}{20}\int_0^\infty w(r)^2 r^2 \, dr,
 \]
 where $u(r)$ is the S-wave radial wavefunction and $w(r)$ is the D-wave wavefunction, weights $\Qd$ heavily with the large-$r$ structure of the wavefunction. With $\langle r^2 \rangle \approx 15$~fm$^2$ for the deuteron, the dominant contribution to $\Qd$ comes from $r \gtrsim 2$~fm, far outside the ${\lesssim}1$~fm bipyramid core.
 
-The rigid bipyramid predicts $-0.22$~fm$^2$; the orbital wavefunction produces $+0.286 + 0.22 = +0.506$~fm$^2$ of outward-pointing prolate contribution, so that the net observed value is $+0.286$~fm$^2$. In other words, the orbital-dominated quadrupole contribution must be $\sim$ twice as large as the observed $\Qd$ and of opposite sign to cancel the bipyramid's oblate intrinsic moment.
+The bipyramid's lab-frame spectroscopic contribution is $\approx -0.022$~fm$^2$ (oblate, small). The orbital wavefunction must therefore supply the entire observed $+0.286$~fm$^2$ plus a small compensating $+0.022$~fm$^2$ to cancel the bipyramid's intrinsic oblateness --- a total orbital contribution of $\approx +0.308$~fm$^2$. The bipyramid contribution is only ${\sim}7\%$ of the orbital contribution by magnitude; this is why the orbital regime dominates $\Qd$ observationally.
 
 \begin{proposition}[PROP-SS-6-1: $\Qd$ is orbital-dominated]
 \label{prop:Qd_orbital}
-The rigid base-to-base bipyramid produces an oblate intrinsic quadrupole $\Qd^{\mathrm{int}} = -0.22$~fm$^2$. The observed prolate $\Qd = +0.286$~fm$^2$ therefore cannot arise from the bipyramid core alone; it is dominated by the orbital-scale ($r \gtrsim 2$~fm) D-wave wavefunction. Quantitative prediction of $\Qd$ from CPP therefore requires OPEN-SS-21 (orbital wavefunction), not bipyramid geometry alone.
+The rigid base-to-base bipyramid produces an oblate body-frame $Q_0^{\mathrm{body}} = -0.22$~fm$^2$, converting to a lab-frame spectroscopic contribution $\approx -0.022$~fm$^2$ --- an order of magnitude smaller than and opposite in sign to the observed prolate $\Qd = +0.286$~fm$^2$. The observed quadrupole therefore cannot arise from the bipyramid core alone; it is dominated by the orbital-scale ($r \gtrsim 2$~fm) D-wave wavefunction. Quantitative prediction of $\Qd$ from CPP requires OPEN-SS-21 (orbital wavefunction), not bipyramid geometry alone.
 \end{proposition}
 
 \textbf{Category C (orbital-dominated).}
@@ -281,13 +336,13 @@ The relative-motion contribution is controlled by the asymptotic form $\psi(r) \
 
 \subsection{D-state admixture $\PD$ and magnetic moment $\mud$}
 
-The D-state admixture is the fractional weight of the $L=2$ component of the deuteron wavefunction. Modern NN-potential extractions give $\PD = 4.5$--$5.8\%$ (Argonne v18: $5.76\%$; CD-Bonn: $4.85\%$; chiral N$^3$LO: $4.5$--$4.9\%$). The D-wave extends throughout the orbital region; its weight is fixed by the full wavefunction, not by the bipyramid's intrinsic angular structure.
+The D-state admixture is the fractional weight of the $L=2$ component of the deuteron wavefunction. Modern NN-potential extractions give $\PD = 4.5$--$5.8\%$ (Argonne v18 \cite{argonne_v18}: $5.76\%$; CD-Bonn: $4.85\%$; chiral N$^3$LO \cite{machleidt_entem}: $4.5$--$4.9\%$). The D-wave extends throughout the orbital region; its weight is fixed by the full wavefunction, not by the bipyramid's intrinsic angular structure.
 
 The magnetic moment $\mud$ follows from $\PD$ via standard spin algebra:
 \[
 \mud = \mu_p + \mu_n - \frac{3}{2} \PD (\mu_p + \mu_n - \tfrac{1}{2}),
 \]
-with $\mu_p = 2.793 \mu_N$, $\mu_n = -1.913 \mu_N$. The experimental $\mud = 0.8574 \mu_N$ implies $\PD \approx 3.9\%$ from this relation (slightly below the NN-potential extraction range, with the discrepancy attributed to meson-exchange and relativistic corrections).
+with $\mu_p = 2.793 \mu_N$, $\mu_n = -1.913 \mu_N$ \cite{pdg2024}. The experimental $\mud = 0.8574 \mu_N$ implies $\PD \approx 3.9\%$ from this relation (slightly below the NN-potential extraction range, with the discrepancy attributed to meson-exchange and relativistic corrections).
 
 Both $\PD$ and $\mud$ are downstream consequences of the orbital wavefunction. \textbf{Category C.}
 
@@ -307,29 +362,31 @@ so that
 \anp = \frac{1}{\kappa}\left(1 + \frac{\rzero \kappa}{2} + \ldots\right).
 \]
 
-With $\Bd = 2.2246$~MeV and reduced mass $\mu = m_N/2 = 469.45$~MeV:
+With $\Bd = 2.2246$~MeV \cite{ame2020} and reduced mass $\mu = m_N/2 = 469.45$~MeV:
 \[
 \kappa = \frac{\sqrt{2 \mu \Bd}}{\hbar c} = 0.2316 \text{ fm}^{-1}, \quad \frac{1}{\kappa} = 4.318 \text{ fm}.
 \]
 
-\begin{proposition}[PROP-SS-6-2: Zero-range scattering length from $\Bd$]
+\begin{proposition}[PROP-SS-6-2: Zero-range scattering length follows from $\Bd$ via universal two-body theory]
 \label{prop:anp_zero_range}
-The zero-range Bethe-Peierls limit gives
+For any shallow two-body bound state, the Bethe-Peierls zero-range limit gives
 \[
-\anp^{(0)} = \frac{1}{\kappa} = 4.318 \text{ fm},
+\anp^{(0)} = \frac{1}{\kappa} = 4.318 \text{ fm}
 \]
-using $\Bd$ as the only input. The measured value is $\anp = 5.425$~fm \cite{anp_reference}, giving a leading-order error of $-20.4\%$. The finite-range correction requires the effective range $\rzero$, which in turn requires the short-range potential $\VSR(r)$ (OPEN-SS-20).
+using $\Bd$ as the only input. This is not a CPP-specific prediction --- it is universal two-body quantum-mechanical scattering theory applied to any theory that correctly predicts $\Bd$. The measured value is $\anp = 5.425$~fm \cite{anp_reference}, giving a zero-range error of $-20.4\%$ that is the well-known finite-range shortfall of the deuteron.
 \end{proposition}
 
-\subsubsection{Status}
+\subsubsection{What CPP owes, and what CPP has already supplied}
 
-The $20\%$ residual is outside the CPP $\sim 5\%$ generic band, so this is not a zero-parameter CPP prediction at SS-5 precision. However, it is a standard-physics result requiring only $\Bd$ as input. What CPP must supply, to go beyond zero-range precision, is $\VSR(r)$.
+CPP's path to a precision $\anp$ prediction is structural: CPP supplies $\Bd$ (done in SS-5); two-body scattering theory supplies $\anp^{(0)} = 1/\kappa$ automatically (universal); and CPP must additionally supply $\VSR(r)$ (OPEN-SS-20) to reach $\rzero$ and the finite-range-corrected $\anp$.
 
-Inverting the Bethe-Peierls relation using measured $\anp$ and $\kappa$:
+The $20\%$ zero-range residual is therefore not a ``CPP error'' at all; it is the distance any theory must travel from zero-range approximation to finite-range precision. What CPP \emph{has} supplied --- via $\Bd$ --- is the scale on which the whole construction rests.
+
+Inverting the Bethe-Peierls relation $1/\anp = \kappa - \rzero \kappa^2/2 + \ldots$ using measured $\anp = 5.425$~fm and $\kappa = 0.2316$~fm$^{-1}$:
 \[
-\rzero \approx 2\left(\anp - \frac{1}{\kappa}\right) = 2(5.425 - 4.318) = 2.21 \text{ fm}.
+\rzero = \frac{2(\kappa - 1/\anp)}{\kappa^2} = \frac{2(0.2316 - 0.1843)}{(0.2316)^2} = 1.76 \text{ fm}.
 \]
-The experimental effective range is $\rzero^{\mathrm{exp}} = 1.749$~fm \cite{effective_range}, so even this first-order inversion is $\sim 26\%$ off --- the full expansion has significant higher-order terms for the deuteron.
+The experimental effective range is $\rzero^{\mathrm{exp}} = 1.749$~fm \cite{effective_range}, so the leading-order effective-range expansion reproduces $\rzero$ to $+0.8\%$ using only $\Bd$ and $\anp$ as inputs. This is a notable consistency check: the deuteron is loosely enough bound that the effective-range expansion converges well at leading order, suggesting the underlying potential $\VSR(r)$ is smooth and reasonably characterized by the single length scale $\rzero$. Whatever CPP eventually derives for $\VSR(r)$ must be consistent with this observation.
 
 \textbf{Category B (bipyramid-via-$\VSR$).}
 
@@ -357,9 +414,9 @@ Binding energy $\Bd$ & $2.2246$ MeV & A (bipyramid) & \textbf{Derived} in SS-5 a
 Spin $J^P = 1^+$ & $1^+$ & A (bipyramid) & Derived in SS-5 \\
 Isospin $I = 0$ & $0$ & A (bipyramid) & Derived in SS-5 \\
 Scattering length $\anp$ & $5.425$ fm & B (via $\VSR$) & Zero-range: $4.32$ fm ($-20\%$) \\
-Effective range $\rzero$ & $1.749$ fm & B (via $\VSR$) & Requires $\VSR(r)$; unknown \\
+Effective range $\rzero$ & $1.749$ fm & B (via $\VSR$) & Inverted from $\anp, \kappa$: $1.76$ fm ($+0.8\%$) \\
 Singlet virtual state & $+66$ keV & B (via $\VSR^{(s)}$) & Requires singlet $\VSR$ \\
-Quadrupole $\Qd$ & $+0.286$ fm$^2$ & C (orbital) & Bipyramid intrinsic oblate, wrong sign \\
+Quadrupole $\Qd$ & $+0.286$ fm$^2$ & C (orbital) & Bipyramid lab-frame $-0.022$ fm$^2$: wrong sign, 10$\times$ too small \\
 Matter radius $r_d$ & $1.975$ fm & C (orbital) & Orbital-scale \\
 Charge radius $r_c$ & $2.141$ fm & C (orbital) & Orbital-scale \\
 D-state admix $\PD$ & $4.5$--$5.8\%$ & C (orbital) & Requires orbital WF \\
@@ -445,7 +502,7 @@ Applied to deuteron observables beyond the binding energy, the SS-5 base-to-base
 \item \textbf{C (orbital-dominated):} $\Qd$, $r_d$, $\PD$, $\mud$ --- await orbital wavefunction (OPEN-SS-21).
 \end{itemize}
 
-The rigid-bipyramid intrinsic quadrupole has the wrong sign --- a diagnostic result revealing that the observed $\Qd$ is orbital-dominated. The zero-range scattering length from $\Bd$ alone is $\anp = 4.32$~fm ($-20\%$ from measured).
+The rigid-bipyramid body-frame quadrupole is oblate, and its lab-frame contribution ($-0.022$ fm$^2$) is ten times smaller and opposite in sign to the measured $\Qd = +0.286$ fm$^2$ --- a diagnostic revealing that the observed $\Qd$ is orbital-dominated. Two universal scattering-theory consistency checks from $\Bd$ alone: zero-range $\anp = 1/\kappa = 4.32$ fm ($-20\%$ vs 5.43 fm), and effective-range inversion $\rzero = 2(\kappa - 1/\anp)/\kappa^2 = 1.76$ fm ($+0.8\%$ vs 1.749 fm). The 0.8\% $\rzero$ match is not a CPP-specific prediction but a notable consistency indicating the deuteron's short-range potential is smooth and well-characterized by a single length scale.
 
 This paper does not close either of its two new open problems. Its contribution is scope clarification: it maps out which deuteron observables are downstream of the bipyramid (SS-5's territory), which require one further CPP input (OPEN-SS-20), and which require a new CPP framework for the orbital regime (OPEN-SS-21). The programme gains two sharp open problems and one definitive negative finding in exchange for an honest assessment of what the base-to-base mechanism actually claims.
 
@@ -455,8 +512,8 @@ This paper does not close either of its two new open problems. Its contribution 
 \item OPEN-SS-10 (nuclear $V(r)$): clarified --- integrated binding at A=2,3,4 done in SS-5; short-range shape now separately OPEN-SS-20.
 \item NEW OPEN-SS-20 ($\VSR(r)$ shape): OPEN.
 \item NEW OPEN-SS-21 (orbital wavefunction): OPEN.
-\item NEW PROP-SS-6-1 ($\Qd$ orbital-dominated, bipyramid intrinsic oblate): SUPPORTED by explicit calculation.
-\item NEW PROP-SS-6-2 (zero-range $\anp = 1/\kappa$ from $\Bd$): DERIVED (standard Bethe-Peierls), $-20\%$ from experiment.
+\item NEW PROP-SS-6-1 ($\Qd$ orbital-dominated; bipyramid lab-frame contribution 10$\times$ smaller and wrong sign): SUPPORTED by explicit body-frame and lab-frame calculations.
+\item NEW PROP-SS-6-2 (universal Bethe-Peierls $\anp = 1/\kappa$ plus effective-range inversion): DERIVED from standard two-body theory. Zero-range $\anp = 4.32$~fm ($-20\%$); inverted $\rzero = 1.76$~fm ($+0.8\%$).
 \end{itemize}
 
 % ===================================================================

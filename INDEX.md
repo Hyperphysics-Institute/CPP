@@ -43,7 +43,7 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 
 ## [`series_strong/`](series_strong/) — Strong Sector (SS)
 
-The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucleon structure, string tension, and deuteron binding. **SS-1 registered on OSF. SS-2, SS-3, SS-4, SS-5 pending.**
+The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucleon structure, string tension, deuteron binding, and deuteron observables scoping. **SS-1 registered on OSF. SS-2, SS-3, SS-4, SS-5, SS-6 pending.**
 
 | File | Description |
 |------|-------------|
@@ -53,18 +53,20 @@ The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucle
 | `SS-3_su3_uniqueness.tex/.pdf` | **SS-3** (v1.3) — SU(3) uniqueness from tetrahedral cage |
 | `SS-3_su3_uniqueness.py` | Numerical verification (5 checks) |
 | `SS-4_string_tension.tex/.pdf` | **SS-4** (v0.1) — String tension from face-mode multiplicity, $\sigma = M_0 z^2/(\varphi\,l_\text{edge}) = 926.5$ MeV/fm |
-| `SS-5_light_nuclei_open_vertex_cascade.tex/.pdf` | **SS-5** (v0.2) — Light-nuclei binding via open-vertex cascade; $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ at $\leq 5.3\%$ error, zero params; $^5$He, $^5$Li, $^8$Be unbound predictions |
+| `SS-5_light_nuclei_open_vertex_cascade.tex/.pdf` | **SS-5** (v6) — Light-nuclei binding via open-vertex cascade; $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ at $\leq 5.3\%$ error, zero params; $^5$He, $^5$Li, $^8$Be unbound predictions |
+| `SS-6_deuteron_observables_beyond_binding.tex/.pdf` | **SS-6** (v0.1) — Deuteron observables beyond binding (scoping): rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np} = 1/\kappa = 4.32$ fm from $B_d$ alone |
 | `cpp_strong_series.bib` | Bibliography |
 
 **Documentation:** SS-1: `mechanism-SS-1.md`, `glossary-SS-1.md`, `phenomena-SS-1.md`, `reviews-SS-1.md`, `FAQ-SS-1.md`, `philosophy-SS-1.md`, `development-SS-1.md`, `keywords-SS-1.md`
 SS-2: `mechanism-SS-2.md`, `glossary-SS-2.md`, `phenomena-SS-2.md`, `philosophy-SS-2.md`, `development-SS-2.md`, `reviews-SS-2.md`, `keywords-SS-2.md`
 SS-3: `mechanism-SS-3.md`, `glossary-SS-3.md`, `phenomena-SS-3.md`, `philosophy-SS-3.md`, `development-SS-3.md`, `reviews-SS-3.md`, `keywords-SS-3.md`, `FAQ-SS-3.md`
 SS-4: documentation suite pending
-SS-5: `mechanism-SS-5.md`, `glossary-SS-5.md`, `phenomena-SS-5.md`, `philosophy-SS-5.md`, `keywords-SS-5.md`, `development-SS-5.md` (development/reviews in progress)
+SS-5: `mechanism-SS-5.md`, `glossary-SS-5.md`, `phenomena-SS-5.md`, `philosophy-SS-5.md`, `keywords-SS-5.md`, `development-SS-5.md`, `reviews-SS-5.md` (all at v6 header currency)
+SS-6: documentation suite pending
 
 **Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.) + `SS-2_lattice_scale_nucleon.py` + `SS-3_su3_uniqueness.py`
 
-**Development transcripts:** `SS-2_development_transcript_opus.md`, `SS-5_session_bootup_prompt.md`
+**Development transcripts:** `SS-2_development_transcript_opus.md`, `SS-5_session_bootup_prompt.md`, `SS-5_development_transcript.md` (new, 18 April 2026)
 
 ---
 

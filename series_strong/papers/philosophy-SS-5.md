@@ -1,7 +1,7 @@
 # Philosophy: SS-5 — Light-Nuclei Binding from the Open-Vertex Cascade
 
-**Paper:** SS-5 v0.2
-**Last updated:** 17 April 2026
+**Paper:** SS-5 v6 (consolidation; numerical content unchanged from v0.2)
+**Last updated:** 18 April 2026 (v6 version bump; see SS-5_development_transcript.md for v0.2→v6 evolution)
 **Document type:** Epistemological framing and honest assessment
 
 ---

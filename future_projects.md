@@ -17,17 +17,23 @@
 **Current best lead:** DI-bit propagation (A3) provides complex amplitudes at c = l_P/t_P. The PCD cycle is the natural candidate for operator structure. The DP Sea at T_P is the natural system-bath coupling source.
 **Paper ID:** To be determined (SD-6 if foundational, or late SS number if strong-sector-focused)
 
-### Project 0b: SS-5 — Light-Nuclei Binding from Open-Vertex Cascade — **v0.2 COMPLETE 17 April 2026**
-**Status:** ✅ v0.2 drafted 17 April 2026 (Opus + ChatGPT referee). Compiles cleanly. Documentation suite v0.1 complete, v0.2 updates pending.
-**Result:** Cascade formula $B(A,Z) = (A-1) n_{np} M_0/\varphi - n_{pp}\alpha_{em}\hbar c/(1.2 A^{1/3}) - (n_{pp}+n_{nn}) M_0/\varphi^3 + \delta_{A,4} M_0/\varphi$. Four zero-parameter quantitative predictions: $B_d = 2.342$ MeV (+5.3%), $B(^3\mathrm{H}) = 8.474$ MeV (−0.09%), $B(^3\mathrm{He}) = 7.642$ MeV (−1.0%), $B(^4\mathrm{He}) = 27.904$ MeV (−1.4%). Three structural unboundness predictions: $^5$He ($S_n = -0.89$ MeV), $^5$Li ($S_p = -1.97$ MeV), $^8$Be (−92 keV), all confirmed. Registered as CONJ-SS-11 with honest conjecture status on the (A-1) multiplicity and Pauli coefficient (OPEN-SS-19). Resolves OPEN-SS-10 across A=2,3,4.
-**Remaining:** Grok and Copilot independent review of the $(A-1)$ cascade-factor argument and Pauli $M_0/\varphi^3$ coefficient; documentation-suite v0.2 updates; OSF registration after reviews pass.
+### Project 0b: SS-5 — Light-Nuclei Binding from Open-Vertex Cascade — **v6 POLISH COMPLETE 18 April 2026**
+**Status:** ✅ v6 published-ready 18 April 2026 (Opus + ChatGPT + Copilot reviewers, independent Opus v4 stress-test completed). Compiles cleanly at 19 pages; all 15 bibliography entries cited inline. Documentation suite at v6 header currency (7 files); development transcript created (`SS-5_development_transcript.md`, 259 lines).
+**Result:** Cascade formula $B(A,Z) = (A-1) n_{np} M_0/\varphi - n_{pp}\alpha_{em}\hbar c/(1.2 A^{1/3}) - (n_{pp}+n_{nn}) M_0/\varphi^3 + \delta_{A,4} M_0/\varphi$. Four zero-parameter quantitative predictions: $B_d = 2.342$ MeV (+5.3%), $B(^3\mathrm{H}) = 8.474$ MeV (−0.09%), $B(^3\mathrm{He}) = 7.642$ MeV (−1.0%), $B(^4\mathrm{He}) = 27.904$ MeV (−1.4%). Three structural unboundness predictions: $^5$He ($S_n = -0.89$ MeV), $^5$Li ($S_p = -1.97$ MeV), $^8$Be (−92 keV), all confirmed. Registered as CONJ-SS-11 with honest conjecture status on the (A-1) multiplicity and Pauli coefficient (OPEN-SS-19). Resolves OPEN-SS-10 across A=2,3,4. v5→v6 added four Copilot "Remark X" inserts + ChatGPT A=3 stress-test sentence; all inline citations added; Rod Nave fabricated-dedication error caught and corrected.
+**Remaining:** Grok numerical verification of v6; Sonnet hostile-reviewer pass; reviews-SS-5.md Parts 3 (v4 stress-test) and 4 (Copilot review) bodies to be appended; OSF registration after review cycle completes.
 
-### Project 0c: SS-6 — Heavy-Nuclei Alpha-Cluster Regime (OPEN-SS-18) — **NEW PRIORITY**
-**Status:** Registered 17 April 2026 as OPEN-SS-18. Preliminary SS-5 v0.2 §9 analysis shows alpha-cluster residual ≈ $n \cdot M_0/\varphi$ per alpha-alpha contact for ${}^{12}$C and ${}^{16}$O, breaking down for heavier nuclei.
+### Project 0c: SS-6 — Deuteron Observables Beyond Binding (Scoping) — **v0.1 COMPLETE 18 April 2026**
+**Status:** ✅ v0.1 scoping draft complete 18 April 2026. 12 pages, clean compile, all 10 references cited inline. Companion documentation suite pending (7 files).
+**Result:** Three-category classification of deuteron observables by CPP derivability. Category A (bipyramid-geometric): binding, J^P, I — all derived in SS-5. Category B (bipyramid-via-$V_{SR}$): $a_{np}$, $r_0$, singlet virtual state — require OPEN-SS-20. Category C (orbital-dominated): $Q_d$, $r_d$, $P_D$, $\mu_d$ — require OPEN-SS-21. Key finding: rigid-bipyramid intrinsic $Q_d^{\mathrm{int}} = -0.22$ fm$^2$ (oblate) has wrong sign vs observed $+0.286$ fm$^2$ (prolate) — reveals $Q_d$ is orbital-dominated, not bipyramid-dominated. Zero-range Bethe-Peierls gives $a_{np} = 1/\kappa = 4.32$ fm from $B_d$ alone ($-20\%$ vs observed 5.425 fm). Registers OPEN-SS-20 ($V_{SR}(r)$ shape), OPEN-SS-21 (orbital wavefunction), PROP-SS-6-1 ($Q_d$ orbital-dominated), PROP-SS-6-2 (zero-range $a_{np}$).
+**Remaining:** Companion documentation suite (mechanism, phenomena, glossary, keywords, philosophy, development, reviews); Grok/Copilot/Sonnet review; OSF registration.
+**Significance:** Sharpens SS-5's claims by classifying what the bipyramid does and does not predict. Honest scoping rather than attempting additional bipyramid-based derivations where the orbital regime dominates.
+
+### Project 0d: SS-7 — Heavy-Nuclei Alpha-Cluster Regime (OPEN-SS-18) — **NEXT PRIORITY**
+**Status:** Registered 17 April 2026 as OPEN-SS-18; slot reassigned from SS-6 to SS-7 on 18 April 2026 when SS-6 became the deuteron-bipyramid scoping paper. Preliminary SS-5 v3 §9 analysis shows alpha-cluster residual ≈ $n \cdot M_0/\varphi$ per alpha-alpha contact for ${}^{12}$C and ${}^{16}$O, breaking down for heavier nuclei.
 **Goal:** Derive $B(A,Z)$ for $A \geq 6$ from coupled-alpha-cluster structure within the CPP open-vertex framework. Target: empirical binding curve up to ${}^{40}$Ca or ${}^{56}$Fe (peak binding-per-nucleon) at CPP residual precision.
 **Effort:** 3–5 sessions
 **Significance:** Completes the nuclear chart mapping. Would give CPP coverage across the empirical binding curve, with the stability valley and the A=56 peak as explicit structural predictions.
-**Dependencies:** SS-5 v0.2 (A≤4 cascade established), alpha-cluster structural theory.
+**Dependencies:** SS-5 v6 (A≤4 cascade established), alpha-cluster structural theory.
 
 ### Project 1: SM-10 GPU FEM Implementation — **#1 COMPUTATIONAL PRIORITY**
 **Status:** Phase 1-2 (CPU proof-of-concept) complete; Phase 3 (GPU) pending

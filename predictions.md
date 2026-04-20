@@ -1,7 +1,7 @@
 # CPP Predictions Registry
 
 **Repository location:** CPP root level (peer of `Research_Frontier.md`, `theorem-registry.md`)
-**Last updated:** 17 April 2026 (SS-5 v0.2: 3 light-nuclei bindings added, unboundness predictions expanded)
+**Last updated:** 18 April 2026 (SS-5 v6 polish; 3 light-nuclei bindings added, unboundness predictions expanded)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
 ---
@@ -68,16 +68,16 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-28 | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
 | PRED-C-29 | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
 | PRED-C-31 | String tension σ (Cornell fit) | 926.5 MeV/fm | ~910 MeV/fm | +1.8% | SS-4 v0.1 |
-| PRED-C-32 | **Deuteron binding energy B_d** | **2.342 MeV** | **2.22457 MeV** | **+5.3%** | **SS-5 v0.2** |
-| PRED-C-33 | **Triton binding energy B(³H)** | **8.474 MeV** | **8.482 MeV** | **−0.09%** | **SS-5 v0.2** |
-| PRED-C-34 | **³He binding energy B(³He)** | **7.642 MeV** | **7.718 MeV** | **−1.0%** | **SS-5 v0.2** |
-| PRED-C-35 | **⁴He binding energy B(⁴He)** | **27.904 MeV** | **28.296 MeV** | **−1.4%** | **SS-5 v0.2** |
-| PRED-C-36 | Diproton ²He unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v0.2 |
-| PRED-C-37 | Dineutron ²n unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v0.2 |
-| PRED-C-38 | Deuteron I=0, S=1 channel | Forced by K₃ contact antisymmetry | I=0, S=1 observed | Exact (qual.) | SS-5 v0.2 |
-| PRED-C-39 | **⁵He unbound (S_n < 0)** | Unbound | $S_n = -0.89$ MeV | Exact (qual.) | **SS-5 v0.2** |
-| PRED-C-40 | **⁵Li unbound (S_p < 0)** | Unbound | $S_p = -1.97$ MeV | Exact (qual.) | **SS-5 v0.2** |
-| PRED-C-41 | **⁸Be near-threshold unbound** | Near-threshold unbound | $-92$ keV | Exact (qual.) | **SS-5 v0.2** |
+| PRED-C-32 | **Deuteron binding energy B_d** | **2.342 MeV** | **2.22457 MeV** | **+5.3%** | **SS-5 v6** |
+| PRED-C-33 | **Triton binding energy B(³H)** | **8.474 MeV** | **8.482 MeV** | **−0.09%** | **SS-5 v6** |
+| PRED-C-34 | **³He binding energy B(³He)** | **7.642 MeV** | **7.718 MeV** | **−1.0%** | **SS-5 v6** |
+| PRED-C-35 | **⁴He binding energy B(⁴He)** | **27.904 MeV** | **28.296 MeV** | **−1.4%** | **SS-5 v6** |
+| PRED-C-36 | Diproton ²He unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v6 |
+| PRED-C-37 | Dineutron ²n unbound | Unbound (qual.) | Unbound | Exact (qual.) | SS-5 v6 |
+| PRED-C-38 | Deuteron I=0, S=1 channel | Forced by K₃ contact antisymmetry | I=0, S=1 observed | Exact (qual.) | SS-5 v6 |
+| PRED-C-39 | **⁵He unbound (S_n < 0)** | Unbound | $S_n = -0.89$ MeV | Exact (qual.) | **SS-5 v6** |
+| PRED-C-40 | **⁵Li unbound (S_p < 0)** | Unbound | $S_p = -1.97$ MeV | Exact (qual.) | **SS-5 v6** |
+| PRED-C-41 | **⁸Be near-threshold unbound** | Near-threshold unbound | $-92$ keV | Exact (qual.) | **SS-5 v6** |
 
 ---
 

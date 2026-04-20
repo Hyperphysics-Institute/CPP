@@ -1,6 +1,6 @@
 # CPP Paper Catalog
 
-**Last updated:** 17 April 2026 (after SS-5 v0.2)
+**Last updated:** 18 April 2026 (after SS-5 v6 polish + SS-6 v0.1 scoping draft)
 
 ---
 
@@ -37,14 +37,15 @@
 | **SS-2** | Paper | Lattice-Scale Grounding and Nucleon Structure | `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` (v1.0) | **OSF pending** |
 | **SS-3** | Paper | Uniqueness of SU(3) from the Tetrahedral Cage | `series_strong/papers/SS-3_su3_uniqueness.tex` (v1.3) | **Submission-ready** |
 | **SS-4** | Paper | String Tension from the 600-Cell Face-Mode Multiplicity | `series_strong/papers/SS-4_string_tension.tex` (v0.1) | **OSF pending** |
-| **SS-5** | Paper | Light-Nuclei Binding Energies from the Open-Vertex Cascade | `series_strong/papers/SS-5_light_nuclei_open_vertex_cascade.tex` (v0.2) | **OSF pending** |
+| **SS-5** | Paper | Light-Nuclei Binding Energies from the Open-Vertex Cascade | `series_strong/papers/SS-5_light_nuclei_open_vertex_cascade.tex` (v6) | **OSF pending** (awaiting Grok numerical + Sonnet hostile review) |
+| **SS-6** | Paper | Deuteron Observables Beyond Binding: Scope and Limits of the Base-to-Base Picture | `series_strong/papers/SS-6_deuteron_observables_beyond_binding.tex` (v0.1) | **Scoping draft** (companion docs pending) |
 | SS-1a | Companion | Cage Geometry and Eigenvalue Bridge | `series_strong/SS-1a_cage_geometry_eigenvalue_bridge.tex` | Supporting |
 | SS-1b | Companion | SU(3) Algebra Exact Proof | `series_strong/SS-1b_su3_algebra_exact_proof.tex` | Supporting |
 | SS-1c | Companion | Eight Gluons as hDP Structures | `series_strong/SS-1c_eight_gluons_hdp_structures.tex` | Supporting |
 | SS-1d | Companion | Confinement and Beta Function | `series_strong/SS-1d_confinement_beta_function.tex` | Supporting |
 | SS-1e | Companion | Hadron Spectrum | `series_strong/SS-1e_hadron_spectrum.tex` | Supporting |
 
-**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete. SS-3: 8 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords, FAQ). SS-4: documentation suite pending. SS-5: 5 of 7 documentation files complete (mechanism, glossary, phenomena, philosophy, keywords); development and reviews pending.
+**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete. SS-3: 8 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords, FAQ). SS-4: documentation suite pending. SS-5: 7 of 7 documentation files present at v6 header currency (mechanism, glossary, phenomena, philosophy, keywords, development, reviews); reviews-SS-5.md has review-status table updated to v6, but body sections for v4 stress-test and Copilot review still pending. Development transcript `SS-5_development_transcript.md` added 18 April 2026. SS-6: documentation suite pending (7 files).
 
 ---
 

@@ -1,7 +1,7 @@
 # Reviews: SS-5 — Light-Nuclei Binding from the Open-Vertex Cascade
 
-**Paper:** SS-5 v0.2
-**Last updated:** 17 April 2026
+**Paper:** SS-5 v6
+**Last updated:** 18 April 2026
 
 ---
 
@@ -10,9 +10,12 @@
 | Reviewer | Status | Date | Output |
 |---|---|---|---|
 | ChatGPT (OpenAI) | **v0.1 review received** | 17 April 2026 | Three valid critiques → v0.2 reframe |
-| Grok (xAI) | v0.2 pending | — | Numerical verification requested |
-| Copilot (Microsoft) | v0.2 pending | — | Referee-grade review requested |
-| Claude Sonnet (Anthropic) | v0.2 pending | — | Hostile review pass requested |
+| ChatGPT (OpenAI) | **v3 numerical stress-test received** | 17 April 2026 | ³H and ³He arithmetic independently verified; A=3 mirror-pair endorsement added to v6 §5.6 |
+| Independent Claude Opus session | **v4 produced** | 17 April 2026 | Architectural improvements (D1–D4, LO+correction); claimed NLO mechanism **rejected** after stress-test (see Part 3 below) |
+| Copilot (Microsoft/OpenAI) | **v5 referee review received** | 18 April 2026 | "Publishable as-is"; four explanatory Remark X inserts + NLO framing sentence incorporated into v6 |
+| Grok (xAI) | v6 pending | — | Numerical verification requested |
+| Claude Sonnet (Anthropic) | v6 pending | — | Hostile review pass requested |
+| OSF preregistration | v6 pending | — | Await Grok + Sonnet reviews |
 
 ---
 

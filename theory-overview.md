@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 17 April 2026 (after SS-5 v0.2)
+**Last updated:** 18 April 2026 (after SS-5 v6 polish + SS-6 v0.1 scoping draft)
 
 ---
 
@@ -31,7 +31,8 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SS-2 | Lattice-Scale Grounding and Nucleon Structure | l_unit = 0.589 fm; r_proton = 0.883 fm (+5%, 0 params) | v1.0 |
 | SS-3 | Uniqueness of SU(3) from Tetrahedral Cage | SU(3) unique; 4+4 physical mode basis; det(M) = 2/√3 | v1.3 |
 | SS-4 | String Tension from 600-Cell Face-Mode Multiplicity | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs Cornell) | v0.1 |
-| SS-5 | Light-Nuclei Binding Energies from Open-Vertex Cascade | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound ✓ | v0.2 |
+| SS-5 | Light-Nuclei Binding Energies from Open-Vertex Cascade | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound $\checkmark$ | v6 |
+| SS-6 | Deuteron Observables Beyond Binding (scoping) | Rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np}=1/\kappa=4.32$ fm from $B_d$ alone (-20%) | v0.1 |
 
 ---
 
