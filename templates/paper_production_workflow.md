@@ -245,7 +245,7 @@ series_[name]/development-transcripts/
 | `predictions.md` | Add new quantitative predictions with status |
 | `theorem-registry.md` | Add new theorems (THEO), corollaries (CORL) with axiom dependencies |
 | `Research_Frontier.md` | Update problem status; move resolved items to §5; add new problems/conjectures |
-| `problem_histories/` | Update history files for any problems touched this session |
+| `problem_histories/` | Create or update `PH-[ID].md` for each problem the paper resolved (fully or partially) or substantially advanced. Follow the procedure in `operating_system.md` §10 "problem_histories/ update procedure." Document what the resolution did NOT do alongside what it did. Easy to miss because it lives outside the repo root — do not skip. |
 
 ### 9b. Navigation documents (update structure)
 

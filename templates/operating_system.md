@@ -390,6 +390,8 @@ Standard structure:
 
 - [ ] **C4.** `paper_catalog.md` — update the paper row: version, date, status, reviewer verdicts, open-problem registrations, target for next paper.
 
+- [ ] **C5.** `problem_histories/` — for each OPEN-*/CONJ-*/PROP- entry the paper resolved (fully or partially), or for each NEW entry with a substantive narrative arc (not just a birth-registration), create or update the corresponding `PH-[ID].md` file per the procedure at §10 "problem_histories/ update procedure." Apply the symmetric-honesty threshold: document what the resolution did NOT do, not only what it did. Skip this step ONLY for new OPEN-* entries that have no arc beyond birth-registration (those are covered by Research_Frontier.md in C1); create their PH files later when substantive work begins. **This step is easy to miss: problem_histories/ is a registry-adjacent artifact, not in the repo root with the other four C-items. Future-you: do not skip C5.**
+
 #### D. Development transcript (`series_[name]/development-transcripts/`)
 
 - [ ] **D1.** Collect raw transcript files from all sessions that contributed to the paper's development.
