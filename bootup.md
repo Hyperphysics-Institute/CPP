@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/bootup.md`
 **Purpose:** Load this file at the start of every new AI session working on CPP. It provides everything needed to continue productive work.
-**Last updated:** 16 April 2026
+**Last updated:** 20 April 2026 (§9 now points at `templates/paper_completion_checklist.md` as authoritative)
 
 ---
 
@@ -233,7 +233,9 @@ Full list: `Research_Frontier.md` and `future_projects.md`.
 
 ## 9. What to Update After Every Paper
 
-**TRIGGER:** Run this checklist after completing the documentation suite (Phase 7), BEFORE pushing to GitHub. Full procedures in `operating_system.md` Section 10.
+**TRIGGER:** Run this checklist after completing the documentation suite (Phase 7), BEFORE pushing to GitHub.
+
+**Authoritative atomic checklist:** `templates/paper_completion_checklist.md`. Run that file end-to-end; the table below is an abbreviated quick-reference covering only content and navigation updates. The full checklist additionally covers companion documentation suite (Section A), verification notebooks (B), development transcripts (E), OSF registration (F), git commit/push (G), and final verification (H). Per-file reference procedures live in `operating_system.md` §10.
 
 | Document | What to update |
 |----------|----------------|

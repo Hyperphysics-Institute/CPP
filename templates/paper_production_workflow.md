@@ -234,33 +234,9 @@ series_[name]/development-transcripts/
 
 **Update every affected document after each paper.**
 
-### 9a. Theory-state documents (update content)
+The atomic task list for Phase 9 (content registry updates, navigation updates, final verification, and git commit/push) is consolidated into `templates/paper_completion_checklist.md` Sections C, D, G, and H. Execute those sections against this paper; skip items whose trigger condition is not met. Reference-level update procedures for each individual file live in `operating_system.md` §10.
 
-| Document | What to update |
-|----------|----------------|
-| `theory-overview.md` | Add new results to scorecard, update formula card, open problems |
-| `axiom-registry.md` | Check axiom usage, add predictions, update growth table |
-| `master_glossary.md` | Add any new terms, acronyms, particles, or processes introduced |
-| `founders_vision.md` | Add any new physical intuitions captured during the session |
-| `predictions.md` | Add new quantitative predictions with status |
-| `theorem-registry.md` | Add new theorems (THEO), corollaries (CORL) with axiom dependencies |
-| `Research_Frontier.md` | Update problem status; move resolved items to §5; add new problems/conjectures |
-| `problem_histories/` | Create or update `PH-[ID].md` for each problem the paper resolved (fully or partially) or substantially advanced. Follow the procedure in `operating_system.md` §10 "problem_histories/ update procedure." Document what the resolution did NOT do alongside what it did. Easy to miss because it lives outside the repo root — do not skip. |
-
-### 9b. Navigation documents (update structure)
-
-| Document | What to update |
-|----------|----------------|
-| `README.md` | Add paper to Registered Papers table, update count, strongest results |
-| `INDEX.md` | Add new files and folders |
-| `paper_catalog.md` | Add paper entry with ID, title, version, status |
-| `series_[name]/README.md` | Add paper to series table |
-
-### 9c. Final steps
-
-1. Push all new files to GitHub.
-2. Verify all links in OSF wiki still work.
-3. Confirm no stale references in README or INDEX.
+Do NOT re-enumerate the per-file tasks here. The 20 April 2026 consolidation moved atomic tasks to a single authoritative file to prevent drift between parallel enumerations.
 
 **Output:** Clean, up-to-date repository.
 
@@ -285,20 +261,16 @@ Date registered on OSF:
 [ ] Phase 4e: Final version (v2.x)
 [ ] Phase 5: Axiom registry updated
 [ ] Phase 6: PDF uploaded to OSF, wiki updated
-[ ] Phase 7: Documentation suite (8 files)
-[ ] Phase 8: Transcripts curated and filed
-[ ] Phase 9a: theory-overview.md updated
-[ ] Phase 9a: master_glossary.md updated
-[ ] Phase 9a: founders_vision.md updated (if new intuitions)
-[ ] Phase 9a: predictions.md updated (if new predictions)
-[ ] Phase 9a: theorem-registry.md updated (if new theorems)
-[ ] Phase 9a: Research_Frontier.md updated (if problems addressed)
-[ ] Phase 9b: README.md updated
-[ ] Phase 9b: INDEX.md updated
-[ ] Phase 9b: paper_catalog.md updated
-[ ] Phase 9b: series README updated
-[ ] Phase 9c: GitHub pushed, links verified
+[ ] Phase 7–9: Execute templates/paper_completion_checklist.md in full
+               (documentation suite, notebooks, registry updates, navigation
+               updates, transcripts, OSF finalisation, git commit/push,
+               final verification)
 ```
+
+*Phase 7–9 was previously enumerated as ~13 separate checkbox items here;
+consolidated 20 April 2026 into `templates/paper_completion_checklist.md`.
+Run that checklist end-to-end; its completion criterion covers Phase 7–9
+in full.*
 
 ---
 
@@ -307,6 +279,7 @@ Date registered on OSF:
 | Date | Change |
 |------|--------|
 | 3 April 2026 | Initial version, codifying SM-6/SM-7 workflow |
+| 20 April 2026 | Phase 9 tables and Phase 0-9 copy-template reduced to pointers at `templates/paper_completion_checklist.md`. Atomic task enumeration consolidated into a single authoritative file to prevent drift. Reference procedures remain in `operating_system.md` §10. |
 
 ---
 

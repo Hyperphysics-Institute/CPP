@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/operating_system.md`
 **Purpose:** The complete workflow manual for the CPP research programme. Covers every procedure from session startup to OSF registration, including multi-AI coordination, document management, and recovery from interruptions.
-**Last updated:** 11 April 2026
+**Last updated:** 20 April 2026 (§4.10 and §10 consolidated — atomic tasks moved to `templates/paper_completion_checklist.md`; §10 reorganised as reference procedures)
 **Audience:** Future-Opus, Future-Grok, Future-Copilot, Future-Sonnet, and any new AI or human collaborator joining the programme.
 
 ---
@@ -329,121 +329,13 @@ Standard structure:
 
 ---
 
-### Phase 7 Execution Checklist — ATOMIC TASK LIST (added 20 April 2026)
+### Phase 7 Execution Checklist — pointer (consolidated 20 April 2026)
 
-**Purpose:** This checklist is the single-source, all-in-one atomic task list for executing the documentation suite against a stable paper. It contains every task, in execution order, with zero prose dependencies. A programme principal can run this checklist without reading any other section of `operating_system.md` and produce the complete, accurate documentation suite.
+The atomic post-completion checklist — covering the documentation suite, verification notebooks, registry updates, navigation updates, transcript curation, OSF registration, repository commit, and final verification — lives at `templates/paper_completion_checklist.md`. Execute every applicable item there; check each item's trigger condition before skipping.
 
-**Trigger condition:** paper is at v1.0 or later AND has passed round-1 external review AND no mechanism-changing critiques pending. (If any of these are not met, do NOT execute this checklist; return to Phase 2 or Phase 4.)
+This section deliberately does NOT duplicate the checklist content. The 20 April 2026 consolidation moved atomic tasks to a single authoritative file precisely to prevent the drift that had caused `problem_histories/` to be missed from earlier parallel enumerations. Reference-level update procedures for individual files remain in §10 of this document; the checklist points at them.
 
-**Deliverables:** 7 companion documentation files + N verification notebooks + updates to 4 registry files. All deliverables go to `series_[name]/` unless otherwise specified.
-
-**Filename pattern:** `[S]-[N]` is the paper identifier (e.g., `SS-7`). `[S]` is the series prefix (e.g., `SS`, `SM`, `EW`, `QM`, `SD`). `[N]` is the paper number (e.g., `7`).
-
-**Canonical filenames never include version suffixes** (per `operating_system.md` §11); version is tracked in the internal CHANGELOG only.
-
----
-
-#### A. Companion documentation suite (7 files, `series_[name]/companions/`)
-
-- [ ] **A1.** `mechanism-[S]-[N].md` — step-by-step mechanism narrative with mathematical-correspondence table. Template sections: **Overview**, **Inputs and constants**, **Step-by-step derivation**, **Mathematical correspondence table** (physics claim ↔ equation number ↔ paper section), **Failure modes** (where the mechanism is known to break down, with references to OPEN-* registrations).
-
-- [ ] **A2.** `glossary-[S]-[N].md` — paper-specific terms with definitions, organized by category. Required categories: **Constants** (numerical values), **Structural terms** (geometric/topological), **Mechanism terms** (physics process), **Methodology terms** (review, protocol, paper-type). Each entry: term, definition, first-use location in paper, related terms.
-
-- [ ] **A3.** `phenomena-[S]-[N].md` — what the paper explains. Three required sections: **PHEN-E** (empirical facts explained, one entry per observed quantity the paper addresses), **PHEN-P** (predictions, one entry per zero-parameter prediction with numerical value and experimental comparison), **PHEN-V** (consilience with other CPP results, one entry per cross-paper agreement including same constants, same mechanism, or same geometric structure reused).
-
-- [ ] **A4.** `philosophy-[S]-[N].md` — epistemological framing. Required subsections: **Certainty level** (theorem / empirically supported hypothesis / conjecture / scoping), **Relationship to Standard Model** (extends / replaces / reproduces / disagrees), **Falsifiability inventory** (enumerated conditions under which the paper would be decisively wrong, with threshold values where applicable), **Paper-type declaration** (per `operating_system.md` §4 taxonomy: theorem / prediction / derivation / scoping / infrastructure), **Limits of scope** (what the paper explicitly does not claim).
-
-- [ ] **A5.** `development-[S]-[N].md` — development history. Required subsections: **Version timeline** (v0.1 → final, with date, key change, and decision rationale per version), **Key decisions** (at least 3 decisions with alternatives considered and reason for choice), **Dead ends** (models or approaches tried and rejected, with reason for rejection), **Contributor roles** (authors and reviewers, with specific contributions attributed), **Transcript references** (list of development-transcript files with session dates).
-
-- [ ] **A6.** `reviews-[S]-[N].md` — all reviews + FAQ. Two-part structure. **Part 1:** formal reviews organized by reviewer and round, with quoted verdict, major strengths noted, critiques accepted vs declined, integration outcomes. Reference the individual response documents (`SS-[N]_v[X.Y]_[reviewer]_review_response.md`) for full detail. **Part 2:** FAQ organized by category (methodology, scope, falsifiability, relationship to SM, future work), 5--15 entries.
-
-- [ ] **A7.** `keywords-[S]-[N].md` — keywords and registry. Required sections: **Primary keywords** (5--10 terms for search and indexing), **Secondary keywords** (10--20 terms for related-work discovery), **Cross-references to other CPP papers** (with brief relationship note per paper), **Axiom/theorem/conjecture entries registered or resolved** (with OPEN-*, CONJ-*, PROP-*, etc. identifiers).
-
-#### B. Verification notebooks (`series_[name]/notebooks/`)
-
-- [ ] **B1.** Enumerate every numerical quantity cited in the paper. This includes: predicted values, extracted constants, experimental values compared against, derived intermediates, numerical stress-test results.
-
-- [ ] **B2.** For each quantity, create or confirm existence of a reproducible standalone Python script at `series_[name]/notebooks/[S]-[N]_[description].py` with the required header:
-```python
-# ============================================================
-# [S]-[N]: [Description]
-# Paper: [Full paper title]
-# Computation: [What this notebook computes]
-# Key result: [The number(s) this produces, cited in the paper]
-# Author: [AI name], [date]
-# ============================================================
-```
-
-- [ ] **B3.** Each script must run from scratch (only standard dependencies: numpy, scipy, matplotlib, itertools) and print or plot the cited result. Test each script independently before archiving.
-
-- [ ] **B4.** Skip notebook creation for: LaTeX compilation, file management, trivial arithmetic verifiable by hand.
-
-- [ ] **B5.** Add each notebook to `INDEX.md` in `series_[name]/notebooks/`.
-
-#### C. Registry updates (repository-root files)
-
-- [ ] **C1.** `Research_Frontier.md` — update entries for each OPEN-*, CONJ-*, PROP-* registered or resolved by the paper. Mark resolved entries with ✓ and the resolving paper; add new entries with paper reference.
-
-- [ ] **C2.** `predictions.md` — add each new zero-parameter prediction from the paper as a row (nucleus/observable, predicted value, experimental value, error, paper reference, status).
-
-- [ ] **C3.** `axiom-registry.md` — update axiom count and add any new axioms/assumptions the paper introduces (e.g., C1--C4 for SS-7).
-
-- [ ] **C4.** `paper_catalog.md` — update the paper row: version, date, status, reviewer verdicts, open-problem registrations, target for next paper.
-
-- [ ] **C5.** `problem_histories/` — for each OPEN-*/CONJ-*/PROP- entry the paper resolved (fully or partially), or for each NEW entry with a substantive narrative arc (not just a birth-registration), create or update the corresponding `PH-[ID].md` file per the procedure at §10 "problem_histories/ update procedure." Apply the symmetric-honesty threshold: document what the resolution did NOT do, not only what it did. Skip this step ONLY for new OPEN-* entries that have no arc beyond birth-registration (those are covered by Research_Frontier.md in C1); create their PH files later when substantive work begins. **This step is easy to miss: problem_histories/ is a registry-adjacent artifact, not in the repo root with the other four C-items. Future-you: do not skip C5.**
-
-#### D. Development transcript (`series_[name]/development-transcripts/`)
-
-- [ ] **D1.** Collect raw transcript files from all sessions that contributed to the paper's development.
-
-- [ ] **D2.** Curate each transcript per Section 6 protocol: preserve substance, remove tooling noise, keep dead ends.
-
-- [ ] **D3.** Save as `[S]-[N]_transcript_[N]_[AI].md` in `series_[name]/development-transcripts/`.
-
-- [ ] **D4.** Ensure each transcript is referenced in `development-[S]-[N].md` (item A5 above).
-
-#### E. OSF registration
-
-- [ ] **E1.** If the paper has no OSF DOI yet: create a new OSF project, get a pending DOI, attach the final PDF.
-
-- [ ] **E2.** If the paper has an existing OSF DOI from an earlier version: update the OSF project with the new PDF and CHANGELOG summary.
-
-- [ ] **E3.** Update the paper's `.tex` CHANGELOG to reference the OSF DOI.
-
-- [ ] **E4.** Update `paper_catalog.md` row with the OSF DOI status.
-
-#### F. Repository commit
-
-- [ ] **F1.** `git add` all new and modified files from A--E.
-
-- [ ] **F2.** `git commit` with message following the pattern: `[S]-[N] v[X.Y]: documentation suite complete — [brief summary of scope]`.
-
-- [ ] **F3.** `git push` to the canonical remote.
-
-- [ ] **F4.** Verify GitHub shows the expected file structure under `series_[name]/`.
-
-#### G. Final verification
-
-- [ ] **G1.** Open the paper PDF and confirm it references each companion file at least once (either by mention in the paper body or by implicit reference via shared terminology).
-
-- [ ] **G2.** Spot-check each companion file for: correct paper version noted, internal cross-references valid, no placeholder text ("[TO BE WRITTEN]", "TODO", etc.) remaining.
-
-- [ ] **G3.** Confirm every numerical value in `predictions.md` and `phenomena-[S]-[N].md` matches the paper exactly.
-
-- [ ] **G4.** Confirm every OPEN-*, CONJ-*, PROP-* identifier used in the paper appears in `Research_Frontier.md`.
-
-- [ ] **G5.** Update `founders_vision.md` with a one-paragraph milestone note if the paper represents a significant programme advance.
-
----
-
-**Completion criterion:** All checkboxes above are marked complete. The paper's documentation state is now stable at version v[X.Y]. Future paper revisions (v1.2, v2.0) will re-run items G1--G4 plus whatever items from A--F are affected by the revision; the full suite does not need re-execution unless mechanism or main claims change.
-
-**Estimated effort:** 1 full session (~3--5 hours) for items A--F with a prepared paper. Item G is ~30 minutes.
-
-**Failure modes and recovery:**
-- If a numerical value in a companion file does not match the paper: the paper is the source of truth; fix the companion.
-- If a companion file must be rewritten mid-execution due to discovered paper error: return to Phase 2, produce a revised paper version, then restart the checklist.
-- If OSF registration fails (network, permissions): complete A--D and F, flag E as pending, proceed; do not block the suite on OSF.
+If a new atomic task needs to be added to the Phase 7 pipeline, add it to `templates/paper_completion_checklist.md` and update any pointers. Do not re-enumerate here.
 
 ---
 
@@ -660,26 +552,19 @@ Standard structure:
 
 ---
 
-## 10. Repository Housekeeping Checklist
+## 10. Repository Housekeeping — Reference Procedures
 
-**TRIGGER:** Run this checklist immediately after completing Phase 7 (Documentation Suite) of the paper production pipeline — BEFORE pushing to GitHub. Do not push until all items are checked.
+**Role:** This section holds the **reference-level update procedures** for each repository-level content and navigation document. It is NOT an atomic task list. The atomic post-completion task list lives at `templates/paper_completion_checklist.md`; checklist items there cite procedures here by name.
 
-**Estimated time:** 15-20 minutes for a single paper.
+**Consolidated 20 April 2026.** Prior to consolidation, §10 carried atomic task checkbox lists that duplicated content in `operating_system.md` §4.10 and `paper_production_workflow.md` §9. Those parallel enumerations drifted — `problem_histories/` was missed from §4.10 Section C despite being present here. All atomic task content has been moved to the checklist; §10 now holds only the per-file procedures.
 
-**Run after every paper is completed:**
+**When to consult this section:** while executing a specific atomic item in `paper_completion_checklist.md` that cites a procedure here. Example: checklist C2 (`axiom-registry.md`) points at the "axiom-registry.md update procedure" below.
+
+**When to update this section:** when the procedure for updating a specific file changes (e.g., new columns in the Prediction Ledger, new format for glossary entries). When a NEW file is added to the repository's ongoing maintenance surface, both (1) add its reference procedure here and (2) add an atomic item to `paper_completion_checklist.md` Section C or D pointing at it.
+
+**Do NOT re-introduce atomic task checkboxes here.** The consolidation exists to prevent drift.
 
 ### Content documents (update substance)
-- [ ] `theory-overview.md` (see procedure below)
-- [ ] `axiom-registry.md` (see procedure below)
-- [ ] `theorem-registry.md` (see procedure below)
-- [ ] `Research_Frontier.md` (see procedure below)
-- [ ] `master_glossary.md` (see procedure below)
-- [ ] `founders_vision.md` (see procedure in Section 7)
-- [ ] `predictions.md` (see procedure below)
-- [ ] `future_projects.md` (see procedure below)
-- [ ] `CPP_the_theory.md` (see procedure below)
-- [ ] `bibliography/cpp_references.bib` (see procedure below)
-- [ ] `problem_histories/` (see procedure below)
 
 #### theory-overview.md update procedure
 1. Add any new quantitative results to the "Strongest Quantitative Results" table
@@ -785,10 +670,6 @@ Standard structure:
 **[ARCHIVED — 12 April 2026]** The `open_problems/` directory has been replaced by `Research_Frontier.md` (dashboard) and `problem_histories/` (narratives). New problems go in `Research_Frontier.md` §1. Narrative updates go in `problem_histories/PH-[ID].md`. The archived copies are at `archive/pre_frontier_2026-04-12/open_problems/`.
 
 ### Navigation documents (update structure)
-- [ ] `README.md` — add paper to table, update counts (see procedure below)
-- [ ] `INDEX.md` — add new files (see procedure below)
-- [ ] `paper_catalog.md` — add paper entry
-- [ ] `series_[name]/README.md` — add paper to series
 
 #### README.md update procedure
 1. Add the new paper to the "Registered Papers" table:
@@ -821,10 +702,6 @@ Standard structure:
 2. Update the total paper count at the top
 
 ### History documents (create/update)
-- [ ] `development-[S]-[N].md` — paper development narrative (see procedure below)
-- [ ] Verification notebooks in `series_[name]/notebooks/` (see Phase 7b)
-- [ ] Curated transcripts — all sessions contributing to the paper
-- [ ] Comprehensive development transcript (see procedure below)
 
 #### development-[S]-[N].md procedure
 **TRIGGER:** Create during Phase 3 of paper production. Update throughout.
@@ -848,11 +725,6 @@ start of the next session (to capture what was missed).
 1. Add the paper to the series paper table
 2. Update the series description if the new paper changes the series scope
 3. Add any new cross-references between papers in the series
-
-### Final steps
-- [ ] Push all files to GitHub
-- [ ] Register on OSF (if applicable)
-- [ ] Verify OSF wiki links
 
 ---
 
