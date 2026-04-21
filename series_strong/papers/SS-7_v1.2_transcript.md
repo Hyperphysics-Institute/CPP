@@ -1,7 +1,7 @@
 # Development Transcript: SS-7 v1.2 — Symmetric-Honesty Retirement Cycle
 
 **Paper:** SS-7 v1.2 (21 April 2026)
-**Transcript type:** Curated development narrative covering the v1.2 cycle: G3 RMS discrepancy registration (20 April 2026), SS-8 Phase 1 exploration discovery (21 April 2026), three-reviewer verification, OPEN-SS-22 retirement, and paper-body/companion revision execution.
+**Transcript type:** Curated development narrative covering the v1.2 cycle: G3 RMS discrepancy registration (20 April 2026), SS-8 Phase 1 exploration discovery (21 April 2026), three-reviewer verification, OPEN-SS-22 retirement, paper-body/companion revision execution, and registry cascade completion.
 **Sources:**
 - `SS-7_v1.1_G3_discrepancy_note.md` (20 April 2026 registration)
 - `SS-7_v1.2_reviewer_verification_letter.md` (21 April 2026 letter sent)
@@ -9,9 +9,10 @@
 - `SS-7_v1.2_copilot_verification_response.md` (21 April 2026 response)
 - `SS-7_v1.2_grok_verification_response.md` (21 April 2026 response)
 - `problem_histories/PH-OPEN-SS-22.md` (retirement narrative)
-- This session (Claude Opus, 21 April 2026 — the session that produced the v1.2 revision)
+- This session (Claude Opus, 21 April 2026 — the session that produced the v1.2 revision; Sessions 1–9)
+- Post-compaction continuation session (Claude Opus, 21 April 2026 late PM; Session 10)
 **Curation method:** substance preserved, tooling noise removed, dead ends retained, per `operating_system.md` §6.
-**Provenance note:** The v1.2 cycle was a single-day event spanning one long session. Unlike the v1.0/v1.1 transcript (which drew on multiple archived session transcripts in `/mnt/transcripts/`), this transcript was curated by a participant in the session (Claude Opus) from within that same session. Thomas's words are preserved verbatim from the chat record where quoted; Claude Opus's narration reflects the participant's contemporaneous understanding. Future readers assessing this transcript's reliability should note that the curator was one of the two parties rather than a retrospective observer.
+**Provenance note:** The v1.2 cycle was a single-day event that ran the pre-compaction session to context exhaustion at the end of Session 9 and resumed in a fresh session for Session 10. Sessions 1–9 were curated by Claude Opus from within the session that produced them. Session 10 was curated by a new Claude Opus instance in the continuation session; the pre-compaction state was available to Session 10 as a handoff summary rather than as direct context. Thomas's words are preserved verbatim from the chat record where quoted. Future readers assessing this transcript's reliability should note that across Sessions 1–9 the curator was one of the two parties, and for Session 10 the curator was the post-compaction participant.
 
 **Programme-level significance:** First retirement cycle in the CPP programme record. This transcript is the working template for future retirement events.
 
@@ -35,6 +36,8 @@
 | 21 Apr 2026 PM | Paper body committed locally as `7ce5015` | Not pushed pending companion/registry completion |
 | 21 Apr 2026 PM | Companion documentation suite updates | All 7 companions updated for v1.2 sequentially across the session |
 | 21 Apr 2026 PM | Registry propagation begins (Research_Frontier.md, predictions.md) | Two of three primary registries complete; paper_catalog deferred |
+| 21 Apr 2026 late PM | Pre-compaction session runs to context exhaustion | Handoff summary curated for continuation session |
+| 21 Apr 2026 late PM | Post-compaction session: registry cascade completion | All 12 Section C files staged; Pattern 6 (B_pair scale recurrence) crystallized; further latent drift identified and addressed |
 
 ---
 
@@ -281,19 +284,97 @@ This latent drift is important for programme memory. It means the drift pattern 
 
 **Other registries — not yet done.** master_glossary.md, theory-overview.md, future_projects.md, CPP_the_theory.md, README.md, INDEX.md, series_strong/README.md all still read v1.1-era content.
 
+**Honest stopping note from Claude.** The pre-compaction session was at context exhaustion. A handoff summary was curated covering the state of Section C work (11 files staged or queued, 1 file blocked pending clarification), programme-record open items, and scope-discipline observations. The continuation session would need to complete the Section C cascade from this state.
+
+---
+
+## Session 10: Registry cascade completion (21 April 2026 late PM, post-compaction)
+
+**Context at session open.** A fresh Claude Opus session resumed against the handoff summary from Session 9. Section C work was partially propagated (Research_Frontier.md complete, predictions.md with 12 PRED-C entries added but header not updated, paper_catalog and 8 others pending). Open items also carried: three reviewer-response files unsaved, OSF registration pending, git push deferred.
+
+**Working discipline adopted.** Each file updated per the `paper_completion_checklist.md` Section C trigger criteria. Where pre-existing inconsistencies were encountered (stale headers, count miscorrelations, missing growth-table rows), the decision on each was recorded in the file itself — fix-with-note when the fix was small and inside the file's own ontology, flag-without-fix when the fix would expand scope or touch other files. The symmetric-honesty discipline from Session 1 (G3 registration over silent patching) was applied to these pre-existing inconsistencies as well.
+
+### Pattern 6: B_pair = M₀/φ recurs across three physical scales
+
+While updating `axiom-registry.md`'s Patterns section, a programme-level observation crystallized that had been implicit in SS-5 and SS-7 but not formally recorded: **the same numerical quantum $B_\text{pair} = M_0/\varphi = 2.342$ MeV appears in three physically distinct contexts without any rescaling or calibration between them.**
+
+The three contexts are: (i) nucleon-nucleon contact in SS-5 (each np pair across the base-to-base triangular face contributes $B_\text{pair}$), (ii) the ⁴He tetrahedral closure bonus in SS-5 (the closed four-nucleon polytope activates an additional $+B_\text{pair}$), and (iii) each alpha-alpha contact in SS-7 v1.2 (one $B_\text{pair}$ per edge of the closed alpha-polytope, producing the $(3N_\alpha - 6) B_\text{pair}$ term in the binding formula).
+
+The recurrence follows structurally from the axioms: $B_\text{pair} = M_0/\varphi = (m_e z / \varphi) / \varphi$ is built from A5 (propagation efficiency $1/\varphi$) and A8' (cage prefactor $M_0 = m_e z/\varphi$), with no further parameters. The K₃ eigenvalue calculation that gives one collective bonding mode at $\lambda_+ = +2$ per triangular face is scale-invariant — the face graph is the same object whether its vertices are quarks (nucleon scale), nucleons (SS-5 scale), or alphas (SS-7 scale). Whether the cross-scale recurrence is structurally **necessary** (the axioms force it) as opposed to merely **allowed** (the axioms permit it) remains open. The empirical observation is that the axioms deliver the same numerical value at three physical scales, and that this has now been tested in three papers without any parameter being adjusted to make it work.
+
+**Registered as:** Pattern 6 in `axiom-registry.md` Patterns section; noted in the 19–21 April entry of `founders_vision.md`. Promoting the recurrence from "empirical observation across three papers" to "theorem: K₃ collective-mode scale invariance" would be a natural SS-9 or SS-10 target; such a theorem would, if proved, elevate predictions #40–51 from axiom-stack `(A2, A5, A8', A11) + C1–C4` to axiom-stack `(A2, A5, A8', A11)` alone.
+
+### Theorem-registry SS column pre-existing miscount
+
+While adding THEO-SS-12 (simplicial polytope edge count, SS-7 Theorem 2.1) to `theorem-registry.md`, the Summary Statistics table's SS row was found to read "9 theorems" when the actual SS section table lists 10 theorems (THEO-SS-1 through THEO-SS-10) plus PROP-SS-11. This +1 miscount pre-dated SS-7 v1.2 — it dates to when THEO-SS-10 (SU(3) uniqueness from SS-3) was added without the Summary Statistics being updated.
+
+**Decision.** The SS row was updated from 9 → 11 (the correct count after both corrections: +1 for the pre-existing miscount, +1 for SS-7's THEO-SS-12). Both corrections were documented in the file's header and in an explicit note under the Summary Statistics. This was judged inside-the-file scope because the correction is to an count against the file's own table rather than against any external reference.
+
+This incident extends the latent-drift finding from Session 9: at least two separate registry files (`Research_Frontier.md` and `theorem-registry.md`) had drift that persisted through multiple paper-completion cycles without detection. The `paper_completion_checklist.md` Section C audit should include "count reconciliation between section headers and summary tables" as an explicit check.
+
+### Stale-header pattern
+
+Three files had headers dated well before the content they contained. `founders_vision.md` header read 11 April despite catalogue entries through 18 April (SS-5 v6, SS-6 v0.1). `cpp_references.bib` header read 2 April despite `@abshier2026ss5` and `@abshier2026ss6` entries post-dating that. `axiom-registry.md` header read 18 April — current at the time — but the growth table inside it stopped at SS-2 and had never received rows for SS-4, SS-5, or SS-6.
+
+**Decision on each.** Stale headers were corrected this pass (11 April → 21 April, 2 April → 21 April) with the pre-staleness noted in the new header entry so future readers can trace what was already missing. The `axiom-registry.md` growth-table gap for SS-4/SS-5/SS-6 was flagged explicitly in the file rather than silently filled, because filling it would require reconciliation with the prediction ledger's entries #29–39 and with how those papers should be accounted for in the per-paper "new predictions" column — work that belongs in its own session, not SS-7 v1.2.
+
+Pattern observation: registry header maintenance drifts silently because no paper-completion checklist step explicitly confronts the question "is this file's last-updated date still accurate?" The fix is mechanical — add a checklist item — but the pattern suggests the header is a systematically weak link.
+
+### Cross-registry counting-convention mismatch
+
+After all 12 Section C files were staged, a cross-consistency check across the three files that each carry a "total predictions" count surfaced a mismatch: `theory-overview.md` reads 36+, `CPP_the_theory.md` reads 31+, `axiom-registry.md` reads 47+. Each file had incremented by +12 for SS-7 v1.2 cleanly, so all three are internally consistent, but the baselines differ because each file decomposes "an independent prediction" differently:
+
+- `theory-overview.md` counts rows in its Strongest Quantitative Results table
+- `CPP_the_theory.md` uses a narrative scorecard with a different row convention
+- `axiom-registry.md` breaks out structural / unboundness predictions as separate entries
+
+These three numbers have been mutually inconsistent since at least SS-5 v6 (when the baselines diverged). SS-7 v1.2 did not introduce the mismatch; it propagated the existing pattern. Registered as an agenda item for a future normalization pass — not within scope of the v1.2 cycle.
+
+### Scope-discipline convention articulated
+
+Across the session, several pre-existing inconsistencies were encountered in files being updated for SS-7 v1.2. The scope-discipline convention applied throughout was:
+
+- **Fix silently** when the fix is typographical or internal to a structure being edited anyway (e.g., renumbering a duplicate PRED-C ID discovered while adding new ones — a Session 9 case).
+- **Fix with explicit note** when the fix is small and inside the file's own ontology, even if not strictly required by SS-7 v1.2 (e.g., the SS theorem miscount, stale header dates).
+- **Flag without fixing** when the fix would expand scope across multiple files or require decisions beyond the SS-7 v1.2 cycle's concern (e.g., the growth-table SS-4/SS-5/SS-6 gap, the cross-registry counting-convention mismatch, the `theory-overview.md` "29 papers total" miscount).
+
+The rationale is symmetric honesty (Session 1 G3 precedent) applied to registry maintenance: silent patching of pre-existing drift sets a precedent for quiet adjustment, and registries are the programme's memory. An explicit note in the file beats both silent fixing and silent tolerating.
+
+### Session-10-specific additions beyond routine propagation
+
+Beyond the mechanical update of the 12 Section C files, Session 10 registered the following items that are programme-level rather than paper-specific:
+
+- **`axiom-registry.md` Pattern 6** — B_pair scale recurrence as described above.
+- **`axiom-registry.md` Open Conjectures/Reductions table** — two new entries. OPEN-SS-24 (derive SS-7 assumption C4 from CPP primitives; would convert THEO-SS-12 from theorem-conditional-on-C4 to theorem-unconditionally). OPEN-SS-25 (DP-sea Coulomb screening inside bound polytopes; registered via SS-7 v1.2's scope split of retired OPEN-SS-22).
+- **`theorem-registry.md` Open-Problems-Remaining table** — added a row for THEO-SS-12 linking to OPEN-SS-24 and OPEN-SS-25 as the structural hypotheses the theorem depends on but does not establish.
+- **`future_projects.md` — Projects 0e, 0f, 0g added.** 0e repurposes SS-8 from OPEN-SS-22 to OPEN-SS-23 as the new NEXT PRIORITY (neutron-excess extension, as the actual physics the retired OPEN-SS-22 was indirectly pointing at). 0f registers OPEN-SS-24 as a candidate SS-9 or SS-10 target. 0g registers OPEN-SS-25 as a candidate companion project.
+- **`cpp_references.bib` — `abshier2026ss7` entry** — SS-7 v1.2 cite key added matching the SS-5 / SS-6 pattern, with note field recording the paper's quantitative claim, registered theorem, partially-resolved problem, retired problem, and newly-registered problems in compact form suitable for in-paper citation context.
+
+### Outcome at session end
+
+All 12 Section C files staged in `/mnt/user-data/outputs/`:
+- `theory-overview.md`, `axiom-registry.md`, `theorem-registry.md`, `master_glossary.md`, `predictions.md`, `paper_catalog.md`, `founders_vision.md`, `future_projects.md`, `CPP_the_theory.md`, `cpp_references.bib`, `PH-OPEN-SS-22.md` — registry cascade
+- `Research_Frontier.md` previously staged in Session 9
+
+Ready for user application to the authenticated repo. v1.2 paper body, PDF, and `.tex` carried forward unchanged from Session 7 (`7ce5015` locally); Session 10 did not re-touch the paper.
+
+**H2 cross-consistency pass executed before hand-off.** Seven consistency checks across the 12 staged files: header-date currency (all 21 April 2026), prediction-count increment (each file +12 from its own baseline, internally consistent), OPEN-SS-22/23/24/25 descriptions (same across files), SS-7 version string (v1.2 active; v1.0/v1.1 only in appropriate historical context), PH-OPEN-SS-22 path form (`problem_histories/PH-OPEN-SS-22.md` in formal refs, bare filename in prose — both correct), PRED-C numbering (1–53 sequential, no gaps or duplicates, SS-7 = 42–53 = 12 IDs exactly), paper `.tex`/PDF (v1.2 confirmed). All seven checks clean.
+
+**Remaining open items carried forward unchanged.** Three reviewer-response files still to be saved (content exists in Session 5 chat record; Thomas needs to paste into three files named `SS-7_v1.2_{chatgpt,copilot,grok}_verification_response.md` under `series_strong/papers/`). OSF registration update pending at DOI 10.17605/OSF.IO/JXE8D. Git push deferred pending reviewer-response file addition so v1.2 lands as one coherent commit.
+
 ---
 
 ## Open items at session end
 
 **Companion suite:** all 7 files complete, staged to outputs, Thomas applying to local repo.
 
-**Registries:** Research_Frontier.md complete and staged. predictions.md partial (12 rows added but header/summary not updated). Remaining 8+ registry files pending next session.
+**Registries:** All 12 Section C files staged (Research_Frontier.md in Session 9; the remaining 11 in Session 10). Ready for user application.
 
 **Reviewer response files:** The three v1.2 verification responses exist in this session's chat record but have not been saved to `series_strong/papers/` yet. Thomas needs to paste the three responses into files named `SS-7_v1.2_chatgpt_verification_response.md`, `_copilot_verification_response.md`, `_grok_verification_response.md` before v1.2 closes.
 
 **OSF registration update:** v1.1 text was prepared in `SS-7_OSF_registration_status.md`; needs v1.2 update and Thomas's OSF action at DOI 10.17605/OSF.IO/JXE8D.
 
-**Git push:** v1.2 paper body is committed locally as `7ce5015` in the sandbox (and Thomas has applied equivalent patch to his authenticated repo). Push deferred until companion/registry work completes so v1.2 lands as a coherent commit rather than as a half-updated state.
+**Git push:** v1.2 paper body is committed locally as `7ce5015` in the sandbox (and Thomas has applied equivalent patch to his authenticated repo). Push deferred until all companion/registry work lands so v1.2 commits as a coherent state rather than as a half-updated one.
 
 **SS-8 priority.** OPEN-SS-23 is now the primary SS-8 target per v1.2 retargeting. SS-8 Phase 1 exploration as originally envisioned (extending the alpha-chain empirical map beyond $N_\alpha = 14$) was interrupted by the finding; it can resume after v1.2 lands, with scope pivoted to neutron-excess derivation.
 
@@ -309,17 +390,21 @@ This latent drift is important for programme memory. It means the drift pattern 
 
 4. **Input-channel failures look like reviewer-level failures until diagnosed.** The $\varphi^{1/z}$ misreads had been attributed to vocabulary contamination at Grok. Thomas's input-channel diagnosis (PDF rasterization) offered a sufficient alternative. The `.tex`-only submission protocol is the fix; Grok's rehabilitation was a secondary benefit.
 
-5. **Latent drift can persist through multiple review rounds.** The five SS-7 registrations absent from `Research_Frontier.md` had been "claimed" in the paper's Registry Impact section through v1.0 and v1.1 without anyone catching the gap. Templates consolidation caught the drift surface; the actual drift penetrated deeper than the surface. The lesson for `paper_completion_checklist.md`: Section C must be treated as an audit, not a checkbox.
+5. **Latent drift is structural, not Research_Frontier-specific.** Five SS-7 registrations absent from `Research_Frontier.md` through v1.0/v1.1 was identified in Session 9 as a template-consolidation gap. Session 10 found additional drift across the registry layer: `theorem-registry.md` had a pre-existing +1 miscount in its Summary Statistics SS row (pre-dating SS-7), `founders_vision.md` and `cpp_references.bib` carried stale header dates through multiple paper cycles, and `axiom-registry.md`'s Axiom Trajectory growth table was missing SS-4, SS-5, and SS-6 rows despite those papers' predictions being in the prediction ledger. The 20 April template consolidation caught the drift surface; the drift penetrated deeper than the surface. The lesson for `paper_completion_checklist.md`: Section C must include explicit count-reconciliation and header-currency audits, and the audit must be treated as the work rather than as a step.
 
-6. **Checklists should be iterated as part of their first validation cycle.** Thomas had directed that the template extraction precede SS-8 physics work so SS-8 would validate the new checklist. The v1.2 cycle (which substituted for SS-8 in that sequencing) did validate it; Section H gained the isotope-label check as a discovered gap. The checklist becomes more complete through use.
+6. **Checklists should be iterated as part of their first validation cycle.** Thomas had directed that the template extraction precede SS-8 physics work so SS-8 would validate the new checklist. The v1.2 cycle (which substituted for SS-8 in that sequencing) did validate it; Section H gained the isotope-label check as a discovered gap; Session 10 surfaced the header-currency gap. The checklist becomes more complete through use.
 
-7. **Honest stopping flags are part of the work.** Across the session, Claude Opus flagged twice that context was degrading before companion/registry work could complete. Thomas's "Continue" responses extended the runway; the stopping flags meant the session ended at clean break-points rather than mid-revision. The pattern should be preserved for future long sessions.
+7. **Honest stopping flags are part of the work.** Across the session, Claude Opus flagged twice pre-compaction that context was degrading before companion/registry work could complete. Thomas's "Continue" responses extended the runway; the stopping flags meant the pre-compaction session ended at clean break-points rather than mid-revision, and the continuation session picked up at a coherent state. The pattern should be preserved for future long sessions.
+
+8. **Scope-discipline convention for pre-existing inconsistencies is: fix silently for typographical, fix with explicit note for small-inside-file-ontology, flag-without-fixing when scope would expand beyond the paper's cycle.** Symmetric honesty (Lesson #1) applied to registry maintenance scales: silent patching of pre-existing drift sets a precedent for quiet adjustment. An explicit note in a file beats both silent fixing and silent tolerating, because the note leaves a trail for future readers and future checklist iterations. Session 10's corrections to `theorem-registry.md`'s SS miscount and the stale-header files were fix-with-note; its handling of the growth-table gap and cross-registry count mismatch was flag-without-fixing.
+
+9. **Programme-level physics observations can crystallize during registry-maintenance work.** Pattern 6 (B_pair scale recurrence) had been implicit in SS-5 and SS-7 but was not formally recognised until Session 10's axiom-registry update forced articulation of how B_pair depends on which axioms. Registry files are not only bookkeeping — they are forcing functions for programme-level observations that would otherwise stay latent. Future paper-completion cycles should treat the registry cascade as a discovery opportunity, not only a propagation task.
 
 ---
 
 ## Provenance of this transcript
 
-Curated by Claude Opus from within the session that produced the v1.2 revision. Thomas's quoted statements are verbatim from the chat record. Claude's summaries reflect the participant's contemporaneous understanding. Future readers assessing reliability should note that the curator was one of the two parties rather than a retrospective observer.
+Sessions 1–9 curated by Claude Opus from within the session that produced the v1.2 revision. Session 10 curated by a new Claude Opus instance in the post-compaction continuation session; the pre-compaction state was available to Session 10 as a handoff summary rather than as direct context. Thomas's quoted statements are verbatim from the chat record. Claude's summaries reflect the participant's contemporaneous understanding in each session. Future readers assessing reliability should note that across Sessions 1–9 the curator was one of the two parties rather than a retrospective observer, and that Session 10's account of Sessions 1–9 is second-hand (accurate to the handoff summary); Session 10's account of its own work is first-hand.
 
 **Recommended cross-references for reliability check:**
 - `SS-7_v1.1_G3_discrepancy_note.md` for the G3 discovery
@@ -327,5 +412,6 @@ Curated by Claude Opus from within the session that produced the v1.2 revision. 
 - Three response documents for the reviewer convergence
 - `PH-OPEN-SS-22.md` for the retirement narrative
 - Git log: commits `df2ae5f`, `d3b30b5` (template extraction), `7ce5015` (v1.2 paper body)
+- For Session 10: the 12 staged Section C files in the repo, each carrying a Session-10 header note where corrections beyond simple propagation were made
 
 *End of curated transcript.*

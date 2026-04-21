@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/axiom-registry.md` (canonical — this is the ONLY copy)
 **Purpose:** Track every postulated rule of Conscious Point behaviour, where each axiom is used, what it predicts, and whether the axiom set is growing or stabilising.
-**Last updated:** 18 April 2026 (SS-5 v6 polish; original v0.2 light-nuclei cascade predictions; 35+ total)
+**Last updated:** 21 April 2026 (SS-7 v1.2 alpha-cluster regime; 12 new predictions added #40–51 for strict N=Z alpha-chain; no new axioms — SS-7's C1–C4 are paper-level structural hypotheses, not programme-level axioms; 47+ total)
 **Maintainer:** Thomas Lee Abshier ND, with AI team
 
 **Note:** This file supersedes the duplicate at `series_standard_model/papers/axiom-registry.md`. That copy should be replaced with a redirect to this file.
@@ -164,9 +164,23 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | **37** | **⁵He unbound (S_n < 0)** | **unbound** | **S_n = −0.89 MeV** | **structural** | **A2 (closed-polytope gap)** | **SS-5 v6** |
 | **38** | **⁵Li unbound (S_p < 0)** | **unbound** | **S_p = −1.97 MeV** | **structural** | **A2 (closed-polytope gap)** | **SS-5 v6** |
 | **39** | **⁸Be near-threshold unbound** | **near-threshold unbound** | **−92 keV** | **structural** | **A2 (cage separation)** | **SS-5 v6** |
+| **40** | **B(¹²C) — $N_\alpha = 3$** | **91.915 MeV** | **92.162** | **−0.27%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **41** | **B(¹⁶O) — $N_\alpha = 4$** | **127.237 MeV** | **127.619** | **−0.30%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **42** | **B(²⁰Ne) — $N_\alpha = 5$** | **162.560 MeV** | **160.645** | **+1.19%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **43** | **B(²⁴Mg) — $N_\alpha = 6$** | **197.882 MeV** | **198.257** | **−0.19%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **44** | **B(²⁸Si) — $N_\alpha = 7$** | **233.204 MeV** | **236.537** | **−1.41%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **45** | **B(³²S) — $N_\alpha = 8$** | **268.526 MeV** | **271.781** | **−1.20%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **46** | **B(³⁶Ar) — $N_\alpha = 9$** | **303.848 MeV** | **306.717** | **−0.94%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **47** | **B(⁴⁰Ca) — $N_\alpha = 10$** | **339.170 MeV** | **342.052** | **−0.84%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **48** | **B(⁴⁴Ti) — $N_\alpha = 11$** | **374.492 MeV** | **375.475** | **−0.26%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **49** | **B(⁴⁸Cr) — $N_\alpha = 12$, strict N=Z** | **409.814 MeV** | **411.463** | **−0.40%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **50** | **B(⁵²Fe) — $N_\alpha = 13$, strict N=Z** | **445.136 MeV** | **447.697** | **−0.57%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
+| **51** | **B(⁵⁶Ni) — $N_\alpha = 14$, strict N=Z** | **480.458 MeV** | **483.988** | **−0.73%** | **A2, A5, A8', A11 + C1–C4** | **SS-7 v1.2** |
 
-**Net predictions (subtracting calibrations):** 35+
-**Axiom-to-prediction ratio:** 9/35 ≈ **0.26** (dropping; the ratio approaches zero as predictions accumulate)
+**SS-7 v1.2 axiom attribution note:** Entries #40–51 share the same CPP programme-level axiom stack as SS-5 v6 (#30–33) — specifically A2 (600-cell topology), A5 (propagation efficiency η = 1/φ), A8' (cage-volume scaling, supplying $B_\alpha = 28.296$ MeV via SS-5's ⁴He derivation), and A11 (lattice-scale grounding, supplying $B_\text{pair} = M_0/\varphi = 2.342$ MeV). They additionally invoke four paper-level structural assumptions (C1 alpha rigidity, C2 alpha-alpha base-to-base contact, C3 K₃ collective mode at alpha-alpha contact, C4 simplicial polytope connectivity) that are explicitly labelled as hypotheses in SS-7 v1.2 rather than axioms. C4 is the most exposed to falsification; first-principles derivation of C4 from CPP primitives is OPEN-SS-24. The SS-7 ⁸Be near-threshold unbound derivation (single-edge Coulomb cancellation, $R_{\alpha\alpha} = 2.37$ fm by inversion) provides an independent mechanism-level check on entry #39 and is not separately listed to avoid double-counting the same observed fact.
+
+**Net predictions (subtracting calibrations):** 47+
+**Axiom-to-prediction ratio:** 9/47 ≈ **0.19** (dropping; SS-7 added 12 predictions with zero new axioms, pushing the ratio below 0.20 for the first time)
 
 ### Qualitative predictions (QM series)
 
@@ -196,9 +210,12 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | **SM-9** | **8** | **0** | **1 (degeneracy theorem)** | **—** |
 | **SM-10** | **8** | **0** | **0 (proposal)** | **—** |
 | **SS-2** | **9** | **+1 (A11)** | **6** | **6.0** |
-| **Total** | **9** | — | **28+** | **3.1 avg** |
+| **SS-7 v1.2** | **9** | **0** | **12 (alpha-chain ¹²C→⁵⁶Ni at $N_\alpha \in [3,14]$)** | **∞** |
+| **Total** | **9** | — | **40+** | **3.1 avg** |
 
-**Trend:** The programme added 15 predictions from SM-8 through SM-10 and SS-2 while increasing the axiom count by only 2 (net). The ratio improved from 1.1 to 0.38. Each new axiom produces ~2.6 predictions on average.
+**Trend:** The programme added 15 predictions from SM-8 through SM-10 and SS-2 while increasing the axiom count by only 2 (net). SS-7 v1.2 added 12 more predictions with **zero** new axioms, pushing the axiom-to-prediction ratio below 0.20 for the first time. Each new axiom produces ~4.4 predictions on average.
+
+**Scope-disclosed gap:** The growth table skips SS-4 (+1 prediction), SS-5 v0.1/v0.2/v6 (+10 predictions: #30–39), and SS-6 v0.1 (no new programme-level predictions but two paper-level propositions). These rows were never backfilled when those papers completed; the ledger items #29–39 correctly attribute axioms but the per-paper growth accounting is stale. The Total row shown above (40+) is calculated by adding SS-7 v1.2's 12 to the prior table's 28+; the Prediction Ledger's "Net predictions" line (47+) is the correct aggregate count and is the figure other CPP registries cross-reference.
 
 ---
 
@@ -214,6 +231,8 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 
 5. **The Nexus is underused.** A4 appears only in QM and SD series. It should appear in charge quantisation, baryon number conservation, etc.
 
+6. **B_pair = M₀/φ recurs across three scales (SS-7 observation).** The same binding quantum B_pair = M₀/φ = 2.342 MeV — built from A8' (M₀ = m_e z/φ) and A5 (1/φ propagation efficiency), with no further parameters — now appears in three physically distinct contexts: (i) nucleon-nucleon contact in SS-5 (each np pair contributes B_pair), (ii) the ⁴He tetrahedral closure bonus in SS-5 (the closed four-nucleon polytope activates an additional +B_pair), and (iii) each alpha-alpha contact in SS-7 v1.2 (one B_pair per edge of the closed alpha-polytope, producing the $(3N_\alpha - 6) B_\text{pair}$ term in the binding formula). The recurrence is not coincidental: the SS-5 eigenvalue calculation over a K₃ face structure replicates identically at the alpha scale because the underlying graph is the same geometric object. Whether the recurrence is structurally *necessary* across scales (as opposed to merely *allowed* by the axiom set) remains open; the observation is that the axioms deliver the same numerical quantum at three physical scales without any rescaling, calibration, or new parameter.
+
 ---
 
 ## Open Conjectures and Reductions
@@ -226,6 +245,8 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | CONJ-red-A5 | A5 → A2 (efficiency from geometry) | Plausible, needs proof |
 | CONJ-red-A10 | A10 → A2 + A6' (colour sign from energy minimisation) | Speculative |
 | CONJ-cage-Koide | Cage 2/3 fraction = Koide K = 2/3 (same origin) | Tantalising, unexplored |
+| OPEN-SS-24 | SS-7 assumption C4 (alpha clusters realise simplicial polytope connectivity) derivable from CPP lattice primitives | Would convert SS-7 Theorem 2.1 from "theorem conditional on C4" to "theorem unconditionally"; would promote predictions #40–51 from axiom-stack (A2,A5,A8',A11 + C1–C4) to axiom-stack (A2,A5,A8',A11) only |
+| OPEN-SS-25 | DP-sea Coulomb screening reduces effective alpha-alpha Coulomb inside bound polytopes | Registered 21 April 2026 (SS-7 v1.2). Inferred from the observation that the Coulomb-free SS-7 formula fits #40–51 within 1.5% despite each alpha carrying Z=2, while the isolated-contact ⁸Be case (#39) preserves full Coulomb at the same R_αα |
 
 ---
 
@@ -247,4 +268,5 @@ The goal: **axiom count stabilises; prediction count grows.**
 *Document created 2 April 2026 by Claude Opus.*
 *Updated 8 April 2026: merged root and series copies, added SM-8 consolidation (A6' replacing A6-A9), added SM-8/SM-9 predictions, updated counts.*
 *Updated 11 April 2026: added A8' (Cage-Volume Scaling), A11 (Lattice-Scale Grounding), SM-8/9 and SS-2 predictions (15 new), CONJ-SM-9-2 and CONJ-SS-2-1, growth table through SS-2.*
+*Updated 21 April 2026: added SS-7 v1.2 alpha-chain bindings (12 predictions #40–51) with no new programme-level axioms (SS-7's C1–C4 are paper-level structural hypotheses, explicitly not promoted to axiom status per Thomas's honesty principle); axiom-to-prediction ratio below 0.20 for the first time; B_pair = M₀/φ scale recurrence added as Pattern 6; OPEN-SS-24 (C4 derivation) and OPEN-SS-25 (DP-sea Coulomb screening) added to conjectures/reductions table; growth-table gap for SS-4/SS-5/SS-6 rows flagged as pre-existing accounting stale (ledger is authoritative).*
 *The duplicate at `series_standard_model/papers/axiom-registry.md` should be deleted and replaced with a note redirecting to this file.*
