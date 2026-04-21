@@ -1,6 +1,6 @@
 # CPP Paper Catalog
 
-**Last updated:** 18 April 2026 (after SS-5 v6 polish + SS-6 v0.1 scoping draft)
+**Last updated:** 21 April 2026 (after SS-7 v1.2 symmetric-honesty corrections; OPEN-SS-22 retired as first retired open problem in programme record)
 
 ---
 
@@ -39,13 +39,14 @@
 | **SS-4** | Paper | String Tension from the 600-Cell Face-Mode Multiplicity | `series_strong/papers/SS-4_string_tension.tex` (v0.1) | **OSF pending** |
 | **SS-5** | Paper | Light-Nuclei Binding Energies from the Open-Vertex Cascade | `series_strong/papers/SS-5_light_nuclei_open_vertex_cascade.tex` (v6) | **OSF pending** (awaiting Grok numerical + Sonnet hostile review) |
 | **SS-6** | Paper | Deuteron Observables Beyond Binding: Scope and Limits of the Base-to-Base Picture | `series_strong/papers/SS-6_deuteron_observables_beyond_binding.tex` (v0.1) | **Scoping draft** (companion docs pending) |
+| **SS-7** | Paper | Alpha-Cluster Regime and the 3N−6 Edge Formula for Medium-Mass Nuclei | `series_strong/papers/SS-7_alpha_cluster_edge_formula.tex` (v1.2) | **OSF pending** (v1.2 symmetric-honesty corrections; 12 concurrent zero-parameter N=Z alpha-chain predictions at N_α ∈ [3,14], RMS 0.80%; retires OPEN-SS-22, registers OPEN-SS-25) |
 | SS-1a | Companion | Cage Geometry and Eigenvalue Bridge | `series_strong/SS-1a_cage_geometry_eigenvalue_bridge.tex` | Supporting |
 | SS-1b | Companion | SU(3) Algebra Exact Proof | `series_strong/SS-1b_su3_algebra_exact_proof.tex` | Supporting |
 | SS-1c | Companion | Eight Gluons as hDP Structures | `series_strong/SS-1c_eight_gluons_hdp_structures.tex` | Supporting |
 | SS-1d | Companion | Confinement and Beta Function | `series_strong/SS-1d_confinement_beta_function.tex` | Supporting |
 | SS-1e | Companion | Hadron Spectrum | `series_strong/SS-1e_hadron_spectrum.tex` | Supporting |
 
-**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete. SS-3: 8 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords, FAQ). SS-4: documentation suite pending. SS-5: 7 of 7 documentation files present at v6 header currency (mechanism, glossary, phenomena, philosophy, keywords, development, reviews); reviews-SS-5.md has review-status table updated to v6, but body sections for v4 stress-test and Copilot review still pending. Development transcript `SS-5_development_transcript.md` added 18 April 2026. SS-6: documentation suite pending (7 files).
+**Documentation:** SS-1: 6 files complete. SS-2: 7 files complete. SS-3: 8 files complete (mechanism, glossary, phenomena, philosophy, development, reviews, keywords, FAQ). SS-4: documentation suite pending. SS-5: 7 of 7 documentation files present at v6 header currency (mechanism, glossary, phenomena, philosophy, keywords, development, reviews); reviews-SS-5.md has review-status table updated to v6, but body sections for v4 stress-test and Copilot review still pending. Development transcript `SS-5_development_transcript.md` added 18 April 2026. SS-6: documentation suite pending (7 files). SS-7: 7 of 7 documentation files updated to v1.2 header currency (mechanism, glossary, phenomena, philosophy, keywords, development, reviews); three reviewer verification responses (ChatGPT, Copilot, Grok) archived at `series_strong/papers/SS-7_v1.2_*_verification_response.md`; problem history `problem_histories/PH-OPEN-SS-22.md` records the first retired open problem in the programme. Development transcript for v1.2 cycle pending.
 
 ---
 
@@ -132,14 +133,14 @@
 
 | Category | Count |
 |----------|-------|
-| **Submission-ready / registered papers** | **16 (SS-1, SS-2, SS-3, SS-4, SS-5, SM-1 through SM-10, SR-1)** |
+| **Submission-ready / registered papers** | **17 (SS-1, SS-2, SS-3, SS-4, SS-5, SS-7, SM-1 through SM-10, SR-1)** |
 | Submission-ready Tech Notes | 1 (SM-TN-1) |
 | Tech Notes needing correction | 1 (SM-TN-2) |
 | Papers needing consolidation | 5 (EW series) |
 | Papers needing review | 6 (QM-1, SD-1 through SD-5) |
 | Research agenda | 1 (SD-5) |
 | Planned | 1 (CC-1) |
-| **Total identified** | **30** |
+| **Total identified** | **31** |
 
 ---
 

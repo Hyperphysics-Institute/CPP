@@ -6,7 +6,7 @@
 **Repository:** [github.com/Hyperphysics-Institute/CPP](https://github.com/Hyperphysics-Institute/CPP)
 **OSF:** [doi.org/10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D)
 **Document type:** Living master narrative — the complete theory in connected prose
-**Last updated:** 11 April 2026
+**Last updated:** 21 April 2026
 
 ---
 
@@ -266,37 +266,114 @@ The ZBW orbit radius equals the lattice spacing to 7%: r_ZBW/l_unit = Λ_QCD/m_c
 
 ---
 
-## Part VI: Open Problems and Conjectures
+## Part VI: The Alpha-Cluster Regime
 
-### Chapter 21: The Scaling Exponent [OPEN-P-SM-cage-1]
+*Note on scope: This part currently covers SS-7 only. SS-5 v0.2 (light-nuclei cascade formula for d, ³H, ³He, ⁴He bindings and the ⁵He/⁵Li/⁸Be unboundness predictions) and SS-6 (deuteron observables beyond binding) are not yet integrated into this narrative; they will be added in subsequent updates. The references to SS-5 below are to the v6 / cascade content those papers have independently established, even though the cascade narrative itself is not yet in this master document.*
+
+### Chapter 21: Alpha Particles as Secondary Tetrahedra
+
+SS-5 established that light nuclei up to ⁴He are built by face-to-face contact of hybrid-tetrahedral nucleons, with a cascade formula that terminates at A=4 because the tetrahedron is the unique closed 3-polytope on 4 vertices. Nuclei at A=5, 8 are structurally unbound because no closed polytope exists at those vertex counts — a prediction re-derivable in-formula from SS-7.
+
+SS-7 extends this paradigm one level up. For A ≥ 8 nuclei, alpha particles themselves act as rigid tetrahedral building blocks — secondary tetrahedra — assembling into closed polytopes of alphas with quark-quark contact bonds across each shared face. The K₃ collective-mode mechanism that SS-5 derived for nucleon-nucleon contact replicates identically at the larger alpha-alpha scale, because the K₃ graph is scale-invariant: three nucleon-nucleon pair connections across a shared triangular contact face reduce to one collective bonding eigenvalue at the same quantum B_pair = M₀/φ = 2.342 MeV.
+
+Under this hypothesis, an N_α-alpha cluster nucleus (with A = 4N_α, Z = 2N_α) has binding energy
+
+**B(N_α) = N_α · B_α + (3N_α − 6) · B_pair**
+
+where B_α = 28.296 MeV is the ⁴He binding (from SS-5), B_pair = M_0/φ = 2.342 MeV is the nucleon-pair binding quantum (also from SS-5, now recurring at the alpha scale), and 3N_α − 6 is the exact edge count of any simplicial triangulation of a convex polytope on N_α vertices. The coefficient is a consequence of Euler's formula applied to closed triangulated spheres: V − E + F = 2, combined with the triangle constraint 2E = 3F, gives E = 3V − 6 unconditionally.
+
+The formula has **zero fitted parameters**. Against the AME 2020 atomic mass evaluation, it reproduces the binding energies of twelve strict N=Z alpha-chain nuclei from ¹²C through ⁵⁶Ni within ±1.5%:
+
+| Nucleus | N_α | Polytope | Predicted (MeV) | Measured (MeV) | Residual |
+|---------|-----|----------|-----------------|----------------|----------|
+| ¹²C  | 3  | triangle (degenerate) | 91.915  | 92.162  | −0.27% |
+| ¹⁶O  | 4  | tetrahedron | 127.237 | 127.619 | −0.30% |
+| ²⁰Ne | 5  | trigonal bipyramid | 162.560 | 160.645 | +1.19% |
+| ²⁴Mg | 6  | octahedron | 197.883 | 198.257 | −0.19% |
+| ²⁸Si | 7  | pentagonal bipyramid | 233.205 | 236.537 | −1.41% |
+| ³²S  | 8  | — | 268.528 | 271.781 | −1.20% |
+| ³⁶Ar | 9  | — | 303.851 | 306.716 | −0.93% |
+| ⁴⁰Ca | 10 | — | 339.173 | 342.052 | −0.84% |
+| ⁴⁴Ti | 11 | — | 374.490 | 375.475 | −0.26% |
+| ⁴⁸Cr | 12 | icosahedron | 409.812 | 411.462 | −0.40% |
+| ⁵²Fe | 13 | — | 445.134 | 447.696 | −0.57% |
+| ⁵⁶Ni | 14 | — | 480.456 | 483.990 | −0.73% |
+
+Twelve independent zero-parameter predictions. RMS error across all twelve: 0.80%. Widest deviation: ²⁰Ne at +1.19%, consistent with that nucleus's known prolate deformation. The formula applies only to strict N=Z alpha-chain nuclei; non-N=Z isotopes (odd-A, neutron-rich) require separate mechanism registered as OPEN-SS-23. [SS-7 v1.2, §1 Main Result]
+
+**Edge-count is a topological invariant, not polytope identity.** Remarkably, the formula does not require identifying WHICH simplicial polytope is realised at each N_α. The edge count 3N_α − 6 is a universal property of any triangulated sphere on N_α vertices; the octahedron and triangular antiprism at N_α = 6 both have 12 edges, so the binding formula produces the same answer either way. This is the key geometric fact powering SS-7's predictive economy. [SS-7 v1.2, Theorem 2.1 and Remark]
+
+**The B_pair recurrence across scales.** The same quantum B_pair = M₀/φ = 2.342 MeV now appears in three physically distinct contexts: (i) nucleon-nucleon contact in SS-5 (each np pair contributes B_pair), (ii) the ⁴He closure bonus in SS-5 (the tetrahedral polytope activates an additional +B_pair), and (iii) each alpha-alpha contact in SS-7 (one B_pair per edge of the closed alpha-polytope). The recurrence is not coincidental — the SS-5 eigenvalue calculation over a K₃ face structure replicates identically at the alpha scale because the underlying graph is the same geometric object at different spatial scales. Whether the recurrence is structurally *necessary* across scales (rather than merely allowed) remains an open problem. What is empirical: concurrent zero-parameter consistency across three physically distinct sectors using the same numerical value. [SS-7 v1.2 §7.2, OPEN-SS-24]
+
+**The ⁸Be limit.** At N_α = 2, the simplicial polytope degenerates to two alphas on a line with one edge. The single alpha-alpha contact bond (+B_pair = +2.342 MeV) is almost exactly cancelled by Coulomb repulsion at the alpha-alpha contact distance R_αα. Inverting against the observed 92 keV near-threshold unboundness of ⁸Be gives R_αα = 2.37 fm. This value is comparable to the alpha RMS radius (1.68 fm) and consistent with base-to-base face contact of two tetrahedral alphas — but it is an inversion (consistency parameter), not a forward prediction. A first-principles derivation of R_αα from CPP lattice primitives is OPEN-SS-24-adjacent. The ⁸Be unboundness is therefore not fine-tuning: it is the near-perfect cancellation of two CPP-level quantities (the B_pair contact bond vs. the Coulomb term), with the 92 keV residual being what's left over. At N_α ≥ 3, multiple geometrically-reinforced alpha-alpha contacts produce a net binding much larger than any single Coulomb can cancel — the structural reason for the "⁸Be bottleneck" in stellar nucleosynthesis. [SS-7 v1.2 §4]
+
+**The hostile-geometry stress test.** The claim "alpha clusters arrange as simplicial polytopes" (assumption C4) is a modeling hypothesis, not a theorem. SS-7's hostile-geometry stress test replaces the simplicial edge count with physically arguable lower-edge alternatives (cube, square antiprism, monocapped antiprism, wheel-like 7-skeleton, pentagonal antiprism) at fixed CPP constants (B_α, B_pair). In all five tested cases (³²S at two alternatives, ²⁸Si, ³⁶Ar, ⁴⁰Ca), the simplicial 3N_α − 6 rule outperforms the lower-edge alternative. The tightest case is ³⁶Ar: dropping a single edge (from 21 to 20) degrades the fit from −0.94% to −1.70%, exactly the one-B_pair single-quantum difference expected. This is **edge-count dominance**: binding tracks edge count E almost exclusively, and the data prefer E = 3N_α − 6 at single-quantum sensitivity. The paper transitions from "plausible counting that matches data" to "constrained combinatorial model that survives systematic perturbation away from 3N_α − 6 at fixed CPP constants." [SS-7 v1.2 §6.5, contributed by ChatGPT re-review]
+
+### Chapter 22: The First Retired Open Problem
+
+SS-7 v1.1 (20 April 2026) registered OPEN-SS-22 — a proposed structural-onset bonus at N_α = 12, motivated by an apparent −2 to −2.5% residual plateau at N_α = 12, 13, 14 in v1.1's Table 1. The icosahedron being the unique closed convex 3-polytope on 12 vertices with maximum vertex coordination suggested an "icosahedral closure" signature, directly analogous to SS-5's A = 4 tetrahedral closure bonus. OPEN-SS-22 became the flagship open problem targeted for SS-8.
+
+During SS-8 Phase 1 exploration on 21 April 2026, a single empirical observation collapsed the hypothesis: v1.1's Table 1 rows at N_α ≥ 12 had used non-N=Z isotopes (⁴⁸Ti, ⁵²Cr, ⁵⁶Fe; each with N − Z = +4) rather than the strict N=Z counterparts (⁴⁸Cr, ⁵²Fe, ⁵⁶Ni). When the formula is applied to the strict N=Z alpha-chain at these N_α values, the residuals are +0.26% to +0.73% — in family with the primary eight nuclei. The residual plateau disappears. The −2 MeV per extra neutron seen in the non-N=Z rows is standard neutron-excess binding, explicitly outside the alpha-chain formula's scope per SS-7 §1.5.
+
+Three independent reviewers (ChatGPT, Copilot, Grok — the last with Benjamin/Lucas/Harper multi-agent environment verification) examined the finding through a formal verification letter. All three converged on the same interpretation: **isotope-selection artifact**, no defensible physical reason for the non-N=Z choice, OPEN-SS-22 should be retired or substantially reframed. None constructed a defensible alternative interpretation.
+
+OPEN-SS-22 was retired in SS-7 v1.2, becoming the **first retired open problem in the CPP programme record**. The physics content of the retirement split cleanly:
+
+- The structural-onset hypothesis itself — not supported; no replacement problem needed.
+- The DP-sea screening question (§8 passages on why effective alpha-alpha Coulomb is reduced inside bound polytopes) — valid physics independent of OPEN-SS-22's empirical anchor; registered as new OPEN-SS-25.
+- The neutron-excess extension (explaining ~2 MeV/neutron in ΔN > 0 nuclei) — absorbed into the existing OPEN-SS-23 scope, which becomes the actual target for SS-8.
+
+The retirement establishes a new programme-record status transition: **OPEN → RETIRED**, distinguished from OPEN → RESOLVED (solution found) and CONJ → FALSIFIED (well-defined claim disproved). Applied when an open problem's empirical anchor is shown to be an artifact rather than a structural signature, with no replacement problem needed for the retired hypothesis itself. Full narrative preserved permanently at `problem_histories/PH-OPEN-SS-22.md`.
+
+Full turnaround: 24 hours from registration (20 April) to retirement (21 April). Three factors enabled the rapid correction: (i) SS-8 Phase 1 ran independent AME 2020 lookups across the full alpha-chain rather than accepting the paper's three data points; (ii) the symmetric-honesty protocol established on 20 April during an unrelated discrepancy note made transparent re-examination the default posture; (iii) three-reviewer convergence within one day confirmed the diagnosis without needing a full review cycle. The general idea that icosahedral geometry might be physically relevant to some nuclear observable is not closed by the retirement; only this specific hypothesis with this specific empirical anchor is. If a future CPP paper identifies a genuine N_α = 12 signature in some other observable (excited-state spectrum, cluster knockout, Hoyle-state analog at higher A), a new open problem can be registered against that signature. [`problem_histories/PH-OPEN-SS-22.md`]
+
+**Programme-record significance.** Before OPEN-SS-22, the CPP programme's documented status transitions were OPEN → RESOLVED, OPEN → PARTIALLY RESOLVED, CONJ → THEOREM, and CONJ → FALSIFIED. The retirement vocabulary adds a fifth transition, needed for a specific failure mode that falsification does not capture: a falsified conjecture had a well-defined claim that turned out false; a retired open problem never had a well-defined empirical anchor in the first place, and the retirement reflects discovery of that fact. The permanent narrative preservation in `problem_histories/` (rather than deletion) is the programme's commitment to not hiding its mistakes — a commitment directly inherited from the "A theory that hides its failures is not science" principle of the Falsified Predictions section of `predictions.md`.
+
+---
+
+## Part VII: Open Problems and Conjectures
+
+### Chapter 23: The Scaling Exponent [OPEN-P-SM-cage-1]
 
 The exponent 7/3 in the V^(7/3) mass scaling law has a partial decomposition (V² from pair counting, V^(1/3) from linear dimension) but has not been rigorously derived from first principles. FEM simulation of the cascade mechanism (SM-10) is the most promising path forward, but requires the DP-DP interaction potential from the SS-series. [SM-9, SM-10]
 
 Conjecture (Grok): α = 3 − 1/φ ≈ 2.382. Matches the s→c value to 0.27%. Physical argument: "3 from K₃ face structure, 1/φ from golden-ratio metric correction." Not proved. [CONJ-SM-9-1]
 
-### Chapter 22: The 2/3 Connection [OPEN-P-SM-cage-3]
+### Chapter 24: The 2/3 Connection [OPEN-P-SM-cage-3]
 
 The Koide ratio K = 2/3 (from K₃ eigenvalues) and the cage attractive fraction 2/3 (from charge structure) are the same number. Is this coincidental or structural? If both arise from the same geometric property of the 600-cell, connecting them would unify the two mass models (Koide ratios and cage vertex scaling).
 
-### Chapter 23: Leptons and Cages [OPEN-P-SM-cage-6]
+### Chapter 25: Leptons and Cages [OPEN-P-SM-cage-6]
 
 Do leptons also map to cage structures? The electron is hosted by a tetrahedral cage (SM-6). Do the muon and tau correspond to larger cages, analogous to the quark hierarchy? If the cage model applies to leptons AND quarks with the same geometric structures, the universality would be powerful evidence. If it fails for leptons, the cage model may be quark-specific.
 
-### Chapter 24: The Dodecahedron Anomaly [OPEN-P-SM-cage-4]
+### Chapter 26: The Dodecahedron Anomaly [OPEN-P-SM-cage-4]
 
 The dodecahedron (bottom quark cage) is the only cage whose maximum attractive fraction (4/5) exceeds 2/3. If the bottom quark's cage operates at 4/5 rather than 2/3, this would affect its internal oscillation energy. Does this explain any observed property of the bottom quark?
 
-### Chapter 25: The Pairwise Model and the Top Quark [OPEN-P-SM-cage-8]
+### Chapter 27: The Pairwise Model and the Top Quark [OPEN-P-SM-cage-8]
 
 The C(n,2) pair-counting model predicts the bottom quark to 0.6% but the pre-gap top to -32%. The angular-weighted version improves the top to -5% but worsens the bottom to +12%. Can a single model achieve both? What is geometrically special about the dodecahedron that makes its pair distribution "democratic" (all 45 pairs contribute equally)?
 
-### Chapter 26: Strange Quark Residual [OPEN]
+### Chapter 28: Strange Quark Residual [OPEN]
 
 The strange quark has the largest error in the zero-parameter formula (+3.1%). Candidate explanations include: absent surface blanket (the tetrahedral cage is too small for a well-developed tangential network), chiral condensate coupling, and ZBW instability at small cage size.
 
+### Chapter 29: Non-N=Z and Odd-A Nuclei [OPEN-SS-23]
+
+The SS-7 alpha-chain formula is restricted to strict N=Z nuclei. Three extensions register here as OPEN-SS-23, primary target for SS-8: (i) neutron-excess even-even isotopes at alpha-chain N_α values (⁴⁸Ti, ⁵²Cr, ⁵⁶Fe as the nearest cases at ΔN = +4; ⁴⁸Ca at ΔN = +8 as a stress test); (ii) odd-A nuclei with single extra nucleons bound to alpha cores (⁷Li, ⁹Be, ¹¹B, ¹³C); (iii) non-alpha-clustered structures (⁶Li ≈ ⁴He + d, ¹⁴N, ¹⁸O). Preliminary ⁶Li inspection gives a residual alpha-deuteron binding of 1.47 MeV ≈ 2B_pair/3 ≈ 1.56 MeV, suggestive of an incomplete K₃ face at the alpha-d contact. Success criterion: the stability valley from ⁴⁰K through ²⁰⁸Pb reproduced within CPP residual precision. [SS-7 v1.2 §5.2]
+
+### Chapter 30: Simplicial Contact Structure from CPP [OPEN-SS-24]
+
+Why do alpha-chain nuclei realise simplicial polytope connectivity rather than lower-connected graphs? Assumption C4 of SS-7 is a structural hypothesis, supported empirically by the twelve-nucleus agreement and the hostile-geometry stress tests, but not derived from CPP lattice primitives. A first-principles derivation would convert C4 from modeling hypothesis to theorem. Three physical intuitions (already in SS-7): (i) triangular faces follow from C1–C2 rigid-tetrahedral base-to-base contact; (ii) simplicial maximises contact reinforcement (thermodynamic selection at fixed N_α); (iii) convexity follows from rigid-packing constraints on non-interpenetrating tetrahedra. These intuitions need to become quantitative constraints. Target paper: SS-9 candidate. [SS-7 v1.2 §2.1]
+
+### Chapter 31: DP-Sea Screening of Alpha-Alpha Coulomb [OPEN-SS-25]
+
+The Coulomb-free SS-7 formula fits within 1.5% despite each alpha carrying Z = 2. Adding full alpha-alpha Coulomb at R_αα = 2.37 fm with the ⁸Be-derived strength (~2.4 MeV per contact) would produce substantial over-subtraction (⁴⁰Ca would degrade to ~−18%). Yet ⁸Be itself is consistent with full Coulomb. The contrast suggests the dipole-pair sea between two alphas at close contact reorganises to partially neutralise the local charge product, but only when at least one additional alpha neighbour is present — isolated contacts see vacuum Coulomb, embedded contacts see strongly-screened Coulomb. Derive the DP-sea reorganisation that produces this effective V_C^eff reduction from CPP primitives, reproducing full-Coulomb ⁸Be at N_α = 2 and the effective-near-zero Coulomb implied by the Table 1 agreement at N_α = 3–14. [SS-7 v1.2 §5.4, newly registered v1.2]
+
 ---
 
-## Part VII: The Complete Prediction Scorecard
+## Part VIII: The Complete Prediction Scorecard
 
 ### Predictions with zero free parameters
 | Prediction | CPP value | Experimental | Error | Paper |
@@ -315,6 +392,19 @@ The strange quark has the largest error in the zero-parameter formula (+3.1%). C
 | α_s(m_H) | 0.1132 | 0.1130 | +0.2% | SS-2 |
 | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
 | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
+| B(¹²C) (alpha-cluster) | 91.915 MeV | 92.162 MeV | −0.27% | SS-7 |
+| B(¹⁶O) | 127.237 MeV | 127.619 MeV | −0.30% | SS-7 |
+| B(²⁰Ne) | 162.560 MeV | 160.645 MeV | +1.19% | SS-7 |
+| B(²⁴Mg) | 197.883 MeV | 198.257 MeV | −0.19% | SS-7 |
+| B(²⁸Si) | 233.205 MeV | 236.537 MeV | −1.41% | SS-7 |
+| B(³²S) | 268.528 MeV | 271.781 MeV | −1.20% | SS-7 |
+| B(³⁶Ar) | 303.851 MeV | 306.716 MeV | −0.93% | SS-7 |
+| B(⁴⁰Ca) | 339.173 MeV | 342.052 MeV | −0.84% | SS-7 |
+| B(⁴⁴Ti) | 374.490 MeV | 375.475 MeV | −0.26% | SS-7 |
+| B(⁴⁸Cr) | 409.812 MeV | 411.462 MeV | −0.40% | SS-7 |
+| B(⁵²Fe) | 445.134 MeV | 447.696 MeV | −0.57% | SS-7 |
+| B(⁵⁶Ni) | 480.456 MeV | 483.990 MeV | −0.73% | SS-7 |
+| Alpha-chain RMS (12 nuclei) | 0.80% | — | — | SS-7 |
 
 ### Predictions with one calibration
 | Prediction | CPP value | Experimental | Error | Calibrated from | Paper |
@@ -328,8 +418,8 @@ The strange quark has the largest error in the zero-parameter formula (+3.1%). C
 
 ### Axiom-to-prediction ratio
 - Axioms: 7 (plus A8', A9')
-- Independent predictions: 19+
-- Ratio: 0.47 (each axiom produces ~2.1 predictions on average)
+- Independent predictions: 31+ (19 from SM/SS-2 series + 12 new from SS-7 v1.2 alpha-chain)
+- Ratio: 0.29 (each axiom produces ~3.4 predictions on average after SS-7 v1.2 addition)
 
 ---
 
@@ -338,8 +428,8 @@ The strange quark has the largest error in the zero-parameter formula (+3.1%). C
 After each session that produces new physics:
 1. Add new results to the appropriate chapter
 2. Update the prediction scorecard
-3. Move resolved open problems from Part VI to the relevant chapter
-4. Add new open problems to Part VI
+3. Move resolved open problems from Part VII to the relevant chapter
+4. Add new open problems to Part VII
 5. Update the "Last updated" date
 
 This document is the Kindle version of the CPP book. It tells the story. The papers provide the proofs. Together they are the complete theory.
@@ -352,3 +442,4 @@ This document is the Kindle version of the CPP book. It tells the story. The pap
 
 *Initiated 8 April 2026 by Claude Opus, at Thomas's request.*
 *Updated 11 April 2026 — SM-8/9/10 physics integrated (V^(7/3) formula, z×C_F=16 multiplier, cascade mechanism, organised DP density); SS-2 content added (lattice grounding, nucleon structure); scorecard expanded to 19+ predictions.*
+*Updated 21 April 2026 — SS-7 v1.2 alpha-cluster regime integrated as new Part VI (Chapters 21–22); 3N−6 edge formula with twelve concurrent zero-parameter predictions (¹²C through ⁵⁶Ni, RMS 0.80%); OPEN-SS-22 (icosahedral closure) retired as first retired open problem in the CPP programme record, narrative preserved at `problem_histories/PH-OPEN-SS-22.md`; OPEN-SS-23, OPEN-SS-24, OPEN-SS-25 added to open-problems part; scorecard expanded to 31+ predictions. Scope caveat: SS-5 v0.2 (light-nuclei cascade formula) and SS-6 (deuteron observables) are referenced but not yet integrated into this master narrative; that backfill is deferred to subsequent updates.*

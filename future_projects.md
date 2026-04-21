@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/future_projects.md`
 **Purpose:** Prioritised list of next papers, infrastructure work, and long-term goals.
-**Last updated:** 16 April 2026
+**Last updated:** 21 April 2026 (SS-7 v1.2 completed and reclassified; SS-8 retargeted to OPEN-SS-23 as new NEXT PRIORITY; OPEN-SS-24 and OPEN-SS-25 registered)
 
 ---
 
@@ -28,12 +28,35 @@
 **Remaining:** Companion documentation suite (mechanism, phenomena, glossary, keywords, philosophy, development, reviews); Grok/Copilot/Sonnet review; OSF registration.
 **Significance:** Sharpens SS-5's claims by classifying what the bipyramid does and does not predict. Honest scoping rather than attempting additional bipyramid-based derivations where the orbital regime dominates.
 
-### Project 0d: SS-7 — Heavy-Nuclei Alpha-Cluster Regime (OPEN-SS-18) — **NEXT PRIORITY**
-**Status:** Registered 17 April 2026 as OPEN-SS-18; slot reassigned from SS-6 to SS-7 on 18 April 2026 when SS-6 became the deuteron-bipyramid scoping paper. Preliminary SS-5 v3 §9 analysis shows alpha-cluster residual ≈ $n \cdot M_0/\varphi$ per alpha-alpha contact for ${}^{12}$C and ${}^{16}$O, breaking down for heavier nuclei.
-**Goal:** Derive $B(A,Z)$ for $A \geq 6$ from coupled-alpha-cluster structure within the CPP open-vertex framework. Target: empirical binding curve up to ${}^{40}$Ca or ${}^{56}$Fe (peak binding-per-nucleon) at CPP residual precision.
+### Project 0d: SS-7 — Alpha-Cluster Regime and 3N−6 Edge Formula — **v1.2 COMPLETE 21 April 2026**
+**Status:** ✅ v1.2 published-ready 21 April 2026 (Opus + ChatGPT + Copilot + Grok reviewers, symmetric-honesty correction cycle completed in 24 hours). 25 pages; clean compile; documentation suite at v1.2 header currency (7 files); PH-OPEN-SS-22.md retirement narrative written.
+**Result:** Zero-parameter formula $B(N_\alpha) = N_\alpha B_\alpha + (3N_\alpha - 6) B_\text{pair}$ with $B_\alpha = 28.296$ MeV and $B_\text{pair} = M_0/\varphi = 2.342$ MeV, both from SS-5. Twelve concurrent zero-parameter predictions across strict $N{=}Z$ alpha-chain nuclei at $N_\alpha \in [3, 14]$ (${}^{12}$C through ${}^{56}$Ni) all within ±1.5%, RMS 0.80%. Widest deviation ${}^{20}$Ne at +1.19%. ⁸Be near-threshold unbound derived in-formula via single-edge Coulomb cancellation; inversion gives $R_{\alpha\alpha} = 2.37$ fm (consistency parameter, not forward prediction). Theorem 2.1 registered as THEO-SS-12 (simplicial polytope edge count = $3N_\alpha - 6$ from Euler's formula). Partially resolves OPEN-SS-18. Hostile-geometry stress test (ChatGPT re-review contribution) establishes edge-count dominance: simplicial rule outperforms lower-edge alternatives in all five tested cases at single-$B_\text{pair}$ sensitivity.
+**OPEN-SS-22 retirement (first in CPP programme record):** v1.1's empirical anchor (−2% residual plateau at $N_\alpha = 12, 13, 14$) was an isotope-selection artifact — v1.1 used non-$N{=}Z$ isotopes (${}^{48}$Ti, ${}^{52}$Cr, ${}^{56}$Fe, each $N-Z=+4$); strict $N{=}Z$ counterparts (${}^{48}$Cr, ${}^{52}$Fe, ${}^{56}$Ni) show no plateau. Three-reviewer convergence (ChatGPT, Copilot, Grok with Benjamin/Lucas/Harper) on "isotope-selection artifact, retirement correct." Physics content split: DP-sea Coulomb screening → new OPEN-SS-25; neutron-excess empirical signal (~2 MeV/neutron) absorbed into existing OPEN-SS-23; structural-onset hypothesis itself retired, no replacement needed.
+**Registry cascade completed:** theory-overview.md, axiom-registry.md (if applicable), theorem-registry.md (THEO-SS-12), master_glossary.md (SS-7 v1.2 terms section), Research_Frontier.md (OPEN-SS-22 retired, OPEN-SS-25 registered), predictions.md (PRED-C-42 through PRED-C-53), paper_catalog.md, founders_vision.md, CPP_the_theory.md (new Part VI), problem_histories/PH-OPEN-SS-22.md. Bibliography entry pending.
+**Remaining:** OSF registration for v1.2 (update DOI JXE8D); development transcript for v1.2 cycle (registration→retirement 24h arc).
+**Significance:** Third predictive nuclear sector after SS-5 ($A \leq 4$ cascade) and SS-6 (deuteron observables scoping). 12 independent zero-parameter predictions — densest single-paper star shot to date under the swarm-validation doctrine. First retired open problem establishes the OPEN → RETIRED status transition in the programme record.
+
+### Project 0e: SS-8 — Neutron-Excess Extension of Alpha-Chain Formula (OPEN-SS-23) — **NEW NEXT PRIORITY**
+**Status:** Registered as primary target 21 April 2026 following SS-7 v1.2 retirement of OPEN-SS-22 and absorption of the ~2 MeV-per-neutron signal into OPEN-SS-23. SS-8 Phase 1 exploration (AME 2020 alpha-chain map) already produced the isotope-selection catch that drove OPEN-SS-22 retirement.
+**Goal:** Extend the SS-7 3N−6 alpha-chain formula to non-N=Z nuclei: (i) neutron-excess even-even isotopes at alpha-chain $N_\alpha$ values (${}^{48}$Ti, ${}^{52}$Cr, ${}^{56}$Fe at $\Delta N = +4$ as the immediate cases; ${}^{48}$Ca at $\Delta N = +8$ as a stress test); (ii) odd-A nuclei with single extra nucleons bound to alpha cores (${}^7$Li, ${}^9$Be, ${}^{11}$B, ${}^{13}$C); (iii) non-alpha-clustered structures (${}^6$Li ≈ ${}^4$He + d, ${}^{14}$N, ${}^{18}$O). Preliminary ${}^6$Li inspection gives a residual alpha-deuteron binding of 1.47 MeV ≈ $2B_\text{pair}/3 \approx 1.56$ MeV, suggestive of an incomplete K₃ face at the alpha-d contact.
+**Success criterion:** The stability valley from ${}^{40}$K through ${}^{208}$Pb reproduced within CPP residual precision; the ~2 MeV-per-extra-neutron pattern derived from first principles rather than calibrated.
 **Effort:** 3–5 sessions
-**Significance:** Completes the nuclear chart mapping. Would give CPP coverage across the empirical binding curve, with the stability valley and the A=56 peak as explicit structural predictions.
-**Dependencies:** SS-5 v6 (A≤4 cascade established), alpha-cluster structural theory.
+**Significance:** Completes the nuclear-chart coverage that OPEN-SS-22 was originally intended to anchor. Under the swarm-validation doctrine this extends star shots to the dominant portion of the nuclear chart (all isotopes, all mass numbers 6–208). The neutron-excess physics is the actual content; the icosahedral-closure hypothesis was a misread of where the physics lived.
+**Dependencies:** SS-5 v6, SS-7 v1.2, OPEN-SS-24 (simplicial contact structure; not blocking — SS-8 can proceed with C4 hypothesis), OPEN-SS-25 (DP-sea screening; may need to be addressed for neutron-excess Coulomb).
+
+### Project 0f: Simplicial Contact Structure from CPP Primitives (OPEN-SS-24)
+**Status:** Registered 21 April 2026 as spin-off from SS-7 v1.2 theorem-vs-hypothesis split. Would convert SS-7 assumption C4 (alpha clusters arrange as simplicial polytopes) from hypothesis to theorem.
+**Goal:** Derive simplicial polytope connectivity from CPP lattice primitives. Three physical intuitions registered in SS-7: (i) triangular faces follow from C1–C2 rigid-tetrahedral base-to-base contact; (ii) simplicial maximises contact reinforcement (thermodynamic selection at fixed $N_\alpha$); (iii) convexity follows from rigid-packing constraints on non-interpenetrating tetrahedra. These need to become quantitative constraints.
+**Effort:** 2–3 sessions (mathematical, potentially self-contained)
+**Significance:** Would complete the theorem-status of SS-7's central result (from "theorem conditional on C4" to "theorem unconditionally"). A candidate SS-9 paper.
+**Dependencies:** SS-2 (lattice-scale grounding), SS-5 (contact-face mechanism), SS-7 (statement of hypothesis).
+
+### Project 0g: DP-Sea Screening of Alpha-Alpha Coulomb (OPEN-SS-25)
+**Status:** Registered 21 April 2026 as spin-off from SS-7 v1.2. The Coulomb-free SS-7 formula fits within 1.5% despite each alpha carrying $Z = 2$ — adding full vacuum Coulomb at $R_{\alpha\alpha} = 2.37$ fm (~2.4 MeV per contact) would produce substantial over-subtraction at $N_\alpha \geq 3$, yet ${}^8$Be itself is consistent with full Coulomb. The contrast implies DP-sea screening that requires at least one additional alpha neighbour.
+**Goal:** Derive the DP-sea reorganisation that produces the effective $V_C^{\text{eff}}$ reduction from CPP primitives. Must reproduce ${}^8$Be full-Coulomb limit at $N_\alpha = 2$ (isolated contact) and the effective-near-zero Coulomb implied by the Table 1 agreement at $N_\alpha = 3$–$14$ (embedded contacts).
+**Effort:** 2–4 sessions
+**Significance:** Addresses a quantitative puzzle in SS-7's numerical agreement. Progress here could also inform Coulomb handling in SS-8's neutron-excess extension.
+**Dependencies:** DP Sea description (founders_vision §3 — still [to be filled]), SS-2 (lattice-scale), SS-7 (statement of puzzle).
 
 ### Project 1: SM-10 GPU FEM Implementation — **#1 COMPUTATIONAL PRIORITY**
 **Status:** Phase 1-2 (CPU proof-of-concept) complete; Phase 3 (GPU) pending
@@ -148,6 +171,10 @@
 - [x] SM-10 v0.1: FEM chain network proposal (9 April 2026)
 - [x] SS-2 v1.0: Lattice-scale grounding + nucleon structure (10 April 2026)
 - [x] Metafile reconciliation: bootup, operating_system, founders_vision, CPP_the_theory (11 April 2026)
+- [x] SS-5 v6: Light-nuclei binding from open-vertex cascade (18 April 2026)
+- [x] SS-6 v0.1: Deuteron observables scoping (18 April 2026)
+- [x] SS-7 v1.2: Alpha-cluster regime and 3N−6 edge formula; 12 concurrent zero-parameter predictions; OPEN-SS-22 retired as first retired open problem in CPP programme record (21 April 2026)
+- [x] PH-OPEN-SS-22.md: First retired-open-problem narrative in CPP programme record (21 April 2026)
 
 ---
 

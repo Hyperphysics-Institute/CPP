@@ -1,7 +1,7 @@
 # CPP Predictions Registry
 
 **Repository location:** CPP root level (peer of `Research_Frontier.md`, `theorem-registry.md`)
-**Last updated:** 18 April 2026 (SS-5 v6 polish; 3 light-nuclei bindings added, unboundness predictions expanded)
+**Last updated:** 21 April 2026 (SS-7 v1.2: 12 alpha-chain binding predictions added for N_α ∈ [3,14], strict N=Z)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
 ---
@@ -65,8 +65,8 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-28 | SU(3) is the unique gauge group of 3 colour states | exact | — | Structural | SS-3 |
 | PRED-C-29 | No exotic gauge group (SO(8), Sp(4), G₂) from cage | exact | — | Structural | SS-3 |
 | PRED-C-30 | Exactly 3 colours (not 2 or 4) from 600-cell tetrahedra | exact | — | Structural | SS-3 |
-| PRED-C-28 | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
-| PRED-C-29 | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
+| PRED-C-29a | Λ_QCD | 335 MeV | ~330 MeV | +2% | SS-2 |
+| PRED-C-29b | μ_neutron | −1.847 μ_N | −1.913 μ_N | −3.4% | SS-2 |
 | PRED-C-31 | String tension σ (Cornell fit) | 926.5 MeV/fm | ~910 MeV/fm | +1.8% | SS-4 v0.1 |
 | PRED-C-32 | **Deuteron binding energy B_d** | **2.342 MeV** | **2.22457 MeV** | **+5.3%** | **SS-5 v6** |
 | PRED-C-33 | **Triton binding energy B(³H)** | **8.474 MeV** | **8.482 MeV** | **−0.09%** | **SS-5 v6** |
@@ -78,6 +78,18 @@ These are results CPP derives independently that agree with measurement.
 | PRED-C-39 | **⁵He unbound (S_n < 0)** | Unbound | $S_n = -0.89$ MeV | Exact (qual.) | **SS-5 v6** |
 | PRED-C-40 | **⁵Li unbound (S_p < 0)** | Unbound | $S_p = -1.97$ MeV | Exact (qual.) | **SS-5 v6** |
 | PRED-C-41 | **⁸Be near-threshold unbound** | Near-threshold unbound | $-92$ keV | Exact (qual.) | **SS-5 v6** |
+| PRED-C-42 | **${}^{12}$C binding energy** | **91.915 MeV** | 92.162 MeV | **−0.27%** | **SS-7 v1.2** |
+| PRED-C-43 | **${}^{16}$O binding energy** | **127.237 MeV** | 127.619 MeV | **−0.30%** | **SS-7 v1.2** |
+| PRED-C-44 | **${}^{20}$Ne binding energy** | **162.560 MeV** | 160.645 MeV | **+1.19%** | **SS-7 v1.2** |
+| PRED-C-45 | **${}^{24}$Mg binding energy** | **197.883 MeV** | 198.257 MeV | **−0.19%** | **SS-7 v1.2** |
+| PRED-C-46 | **${}^{28}$Si binding energy** | **233.205 MeV** | 236.537 MeV | **−1.41%** | **SS-7 v1.2** |
+| PRED-C-47 | **${}^{32}$S binding energy** | **268.528 MeV** | 271.781 MeV | **−1.20%** | **SS-7 v1.2** |
+| PRED-C-48 | **${}^{36}$Ar binding energy** | **303.851 MeV** | 306.716 MeV | **−0.93%** | **SS-7 v1.2** |
+| PRED-C-49 | **${}^{40}$Ca binding energy** | **339.173 MeV** | 342.052 MeV | **−0.84%** | **SS-7 v1.2** |
+| PRED-C-50 | **${}^{44}$Ti binding energy** | **374.490 MeV** | 375.475 MeV | **−0.26%** | **SS-7 v1.2** |
+| PRED-C-51 | **${}^{48}$Cr binding energy** | **409.812 MeV** | 411.462 MeV | **−0.40%** | **SS-7 v1.2** |
+| PRED-C-52 | **${}^{52}$Fe binding energy** | **445.134 MeV** | 447.696 MeV | **−0.57%** | **SS-7 v1.2** |
+| PRED-C-53 | **${}^{56}$Ni binding energy** | **480.456 MeV** | 483.990 MeV | **−0.73%** | **SS-7 v1.2** |
 
 ---
 
@@ -188,7 +200,8 @@ Quick reference map of which paper contributes which predictions.
 | Propositions | PRED-O-3, PRED-O-4, PRED-O-11, PRED-O-12, PRED-Q-2 to PRED-Q-6 |
 | SM-8 | PRED-C-17 to PRED-C-24 (zero-param quarks, 3-gen, 2/3 fraction, charge census, non-hadronization) |
 | SM-9 | Symmetry Degeneracy Theorem (mathematical, not a prediction per se) |
-| SS-2 | PRED-C-25 to PRED-C-29 (r_proton, μ_proton, α_s(m_H), Λ_QCD, μ_neutron) |
+| SS-2 | PRED-C-25 to PRED-C-27 (r_proton, μ_proton, α_s(m_H)), PRED-C-29a (Λ_QCD), PRED-C-29b (μ_neutron) |
+| SS-7 | PRED-C-42 to PRED-C-53: twelve concurrent zero-parameter binding-energy predictions for strict N=Z alpha-chain nuclei (¹²C through ⁵⁶Ni) at N_α ∈ [3,14]; RMS 0.80% across all twelve |
 
 ---
 

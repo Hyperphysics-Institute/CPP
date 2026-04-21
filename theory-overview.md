@@ -2,13 +2,13 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 18 April 2026 (after SS-5 v6 polish + SS-6 v0.1 scoping draft)
+**Last updated:** 21 April 2026 (after SS-7 v1.2 symmetric-honesty corrections; OPEN-SS-22 retired as first retired open problem in CPP programme record)
 
 ---
 
 ## The Theory in One Paragraph
 
-Conscious Point Physics derives the Standard Model from the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cells, coordination z=12). All gauge couplings are mode fractions of the lattice weighted by η = 1/φ. All fermion masses follow from the K₃ eigenvalue structure (bonding eigenvalue +2, antibonding −1) perturbed by isotropic gauge shifts, and from the zero-parameter cage mass formula M = m_e(z/φ)V^(7/3). The theory has 9 axioms (7 core + A8' + A11), 2 calibration constants (m_e, m_c), and 0 shape parameters. It predicts 24+ independent quantitative results and 6 qualitative QM results.
+Conscious Point Physics derives the Standard Model from the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cells, coordination z=12). All gauge couplings are mode fractions of the lattice weighted by η = 1/φ. All fermion masses follow from the K₃ eigenvalue structure (bonding eigenvalue +2, antibonding −1) perturbed by isotropic gauge shifts, and from the zero-parameter cage mass formula M = m_e(z/φ)V^(7/3). The SS-5/SS-7 nuclear sector extends the K₃ mechanism to nucleon-nucleon and alpha-alpha contact with the recurring binding quantum B_pair = M₀/φ = 2.342 MeV. The theory has 9 axioms (7 core + A8' + A11), 2 calibration constants (m_e, m_c), and 0 shape parameters. It predicts 36+ independent quantitative results and 6 qualitative QM results.
 
 ---
 
@@ -33,6 +33,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SS-4 | String Tension from 600-Cell Face-Mode Multiplicity | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs Cornell) | v0.1 |
 | SS-5 | Light-Nuclei Binding Energies from Open-Vertex Cascade | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound $\checkmark$ | v6 |
 | SS-6 | Deuteron Observables Beyond Binding (scoping) | Rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np}=1/\kappa=4.32$ fm from $B_d$ alone (-20%) | v0.1 |
+| SS-7 | Alpha-Cluster Regime and 3N−6 Edge Formula | 12 concurrent zero-param alpha-chain bindings at $N_\alpha\in[3,14]$ (¹²C→⁵⁶Ni), RMS 0.80%; retires OPEN-SS-22 (first retired open problem) | v1.2 |
 
 ---
 
@@ -65,8 +66,11 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | B(⁴He) | Cascade A=4, 1 Coul, 2 Pauli, +closure | 27.90 MeV | 28.30 | −1.4% | 0 | SS-5 |
 | ⁵He, ⁵Li, ⁸Be unbound | Closed-polytope gap A=5,8 | Unbound | Unbound ✓ | qual. exact | 0 | SS-5 |
 | Diproton / dineutron unbound | K₃ charge-misalignment | Unbound | Unbound | exact (qual.) | 0 | SS-5 |
+| Alpha-chain binding (12 nuclei, ¹²C→⁵⁶Ni) | $N_\alpha B_\alpha + (3N_\alpha{-}6) B_\text{pair}$ | All within ±1.5% | AME 2020 | RMS 0.80% | 0 | SS-7 |
+| ⁸Be near-threshold unbound | 1-edge Coulomb cancellation | 92 keV unbound (inverted → $R_{\alpha\alpha}=2.37$ fm) | 91.84 keV | consistency | 0 | SS-7 |
+| Alpha-polytope edge count | Euler + triangle constraint | $E = 3N_\alpha − 6$ | — | theorem | 0 | SS-7 |
 
-**Net scorecard:** 24+ independent predictions from 9 axioms and 2 calibrations. SM requires 19+ parameters for the same quantities.
+**Net scorecard:** 36+ independent predictions from 9 axioms and 2 calibrations (24+ from SM/SS-2/SS-5 series; 12 concurrent zero-param alpha-chain bindings from SS-7 v1.2). SM requires 19+ parameters for the same quantities.
 
 ---
 
@@ -173,8 +177,12 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 | — | Derive σ from lattice mode spectrum | Would promote CONJ-SS-2-1 to theorem |
 | OPEN-SS-10 | Nuclear Binding Energy V(r) | **RESOLVED at A=2,3,4 by SS-5 v0.2 (CONJ-SS-11); full V(r) shape remains** |
 | OPEN-SS-17 | Light-nuclei binding curve | PARTIALLY RESOLVED by SS-5 v0.2 at A=2,3,4; A≥6 → OPEN-SS-18 |
-| OPEN-SS-18 (new) | Heavy-nuclei alpha-cluster regime A≥6 | OPEN — future SS-series paper |
+| OPEN-SS-18 | Heavy-nuclei alpha-cluster regime A≥6 | **PARTIALLY RESOLVED by SS-7 v1.2 for strict N=Z alpha-chain at $N_\alpha\in[3,14]$ (¹²C→⁵⁶Ni, RMS 0.80%); non-N=Z and odd-A extension → OPEN-SS-23** |
 | OPEN-SS-19 (new) | Rigorous derivation of (A-1) cascade factor and Pauli coefficient | OPEN |
+| OPEN-SS-22 | Icosahedral closure bonus at $N_\alpha=12$ | **✗ RETIRED 21 April 2026 — first retired open problem in CPP programme record; empirical anchor shown to be isotope-selection artifact; narrative at `problem_histories/PH-OPEN-SS-22.md`** |
+| OPEN-SS-23 | Non-N=Z and odd-A nuclei (neutron-excess extension) | OPEN — primary target for SS-8; absorbed residual empirical signal from retired OPEN-SS-22 |
+| OPEN-SS-24 | First-principles derivation of simplicial contact structure (SS-7 assumption C4) | OPEN — would convert C4 from hypothesis to theorem |
+| OPEN-SS-25 (new) | DP-sea screening of alpha-alpha Coulomb in bound polytopes | OPEN — newly registered in SS-7 v1.2; reconciles Table 1 fit with ⁸Be full-Coulomb cancellation |
 
 ---
 
@@ -183,23 +191,26 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 | Series | Papers | Compliance | PDFs | Doc suite | README | Keywords |
 |--------|--------|-----------|------|-----------|--------|----------|
 | SM (1-10) | 10 | ✅ | ✅ | ✅ (SM-1–10) | ✅ | ✅ |
-| SS (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SS (1-7) | 7 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | EW (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | QM (1-6) | 6 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SR-1 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SD (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**29 papers total. SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SS-2 v1.0, SS-4 v0.1, SS-5 v0.2 pending OSF registration.**
+**29 papers total. SM-1–7 on OSF; SM-8 v4.1, SM-9 v2.2, SM-10 v0.1, SS-2 v1.0, SS-4 v0.1, SS-5 v0.2, SS-6 v0.1, SS-7 v1.2 pending OSF registration.**
 
 ---
 
 ## Pending Tasks (not urgent)
 
 - [ ] Register SM-8, SM-9, SM-10, SS-2 on OSF
+- [ ] Register SS-7 v1.2 on OSF (update existing DOI JXE8D with v1.2 PDF and CHANGELOG)
+- [ ] Curate SS-7 v1.2 development transcript (registration→retirement 24h arc)
 - [ ] Curate SM-8/9/10/11 development transcripts
 - [ ] Generate SM-8/9 verification notebooks (retroactive)
 - [ ] Regenerate site-wide cpp_references.bib from all local .bib files
 - [ ] Fill remaining sections of founders_vision.md (CP, DI-bit, Nexus, Vision, Theology)
+- [ ] SS-8 Phase 1: begin empirical map of neutron-excess extension (OPEN-SS-23)
 
 ---
 
