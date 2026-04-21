@@ -33,7 +33,7 @@ Problems with no candidate solution, or where candidate solutions have been expl
 
 ---
 
-## Strong Sector (SS) — 14 problems
+## Strong Sector (SS) — 18 problems (1 retired)
 
 ### OPEN-SS-1: Quark Mass Formula M_q(n_layers)
 **Status:** OPEN (PARTIAL — Theorems 2–3 proved; full formula open)
@@ -244,15 +244,67 @@ Problems with no candidate solution, or where candidate solutions have been expl
 ---
 
 ### OPEN-SS-18: Heavy-Nuclei Alpha-Cluster Regime $B(A, Z)$ for A$\geq$6
-**Status:** OPEN
+**Status:** PARTIALLY RESOLVED (by SS-7 v1.2 at $N_\alpha = 3$ through 14 for strict $N{=}Z$ alpha-chain nuclei, 21 April 2026). Remainder open as OPEN-SS-23.
 **Sector(s):** SS (nuclear physics)
 **Priority:** HIGH
 **One-line statement:** Derive the empirical binding curve for $A \geq 6$ nuclei from coupled-alpha-particle cluster structure within the CPP open-vertex framework.
 **What a solution looks like:** A structural account of $^6$Li, $^6$He, $^{12}$C, $^{16}$O, $^{20}$Ne, ..., $^{56}$Fe (peak binding-per-nucleon) that reproduces the empirical binding curve within the CPP residual band. Must include: (a) alpha-alpha residual binding at scale $\sim M_0/\varphi$ per contact, (b) decreasing per-contact binding with increasing $n_\alpha$ (saturation), (c) onset of stability valley and peak at $A=56$, (d) termination of stability at heavy nuclei.
 **Dependencies:** CONJ-SS-11 (SS-5 v6 cascade formula); structural theory of alpha-cluster interactions.
-**Current best lead:** Preliminary SS-5 v3 §9 sketch: residual above cluster sum is approximately $n \cdot M_0/\varphi$ for $^{12}$C ($n \approx 3$), $^{16}$O ($n \approx 6$), with scaling that breaks down for heavier nuclei. Full analysis requires its own paper (slotted as SS-7 after SS-6's bipyramid-scoping paper).
-**Paper(s):** SS-7 (future)
-**Registered:** 17 April 2026 (updated 18 April 2026: SS-6 slot reassigned to deuteron-bipyramid scoping, alpha-cluster moved to SS-7)
+**Current best lead:** SS-7 v1.2 formula $B(N_\alpha) = N_\alpha\Balpha + (3N_\alpha-6)B_{\text{pair}}$ resolves the strict $N{=}Z$ alpha-chain at $N_\alpha \in [3, 14]$ (${}^{12}$C through ${}^{56}$Ni) to within $\pm 1.5\%$ against AME 2020; RMS $0.80\%$ across all twelve nuclei. Remainder (non-$N{=}Z$ isotopes, odd-$A$ nuclei, non-alpha-clustered structures) registered as OPEN-SS-23.
+**Paper(s):** SS-7 v1.2 (primary resolution). Registrations downstream: CONJ-SS-12, PROP-SS-7-1, OPEN-SS-23, OPEN-SS-24, OPEN-SS-25.
+**Registered:** 17 April 2026 (updated 18 April 2026: SS-6 slot reassigned to deuteron-bipyramid scoping, alpha-cluster moved to SS-7; partially resolved 21 April 2026 by SS-7 v1.2, with remainder split to OPEN-SS-23)
+
+---
+
+### OPEN-SS-22: Heavy-Nuclei Icosahedral Closure at $N_\alpha \geq 12$ — RETIRED
+**Status:** ✗ **RETIRED 21 April 2026** (SS-7 v1.2). First retired open problem in the CPP programme record. See `problem_histories/PH-OPEN-SS-22.md` for the full retirement narrative.
+**Sector(s):** SS (nuclear physics)
+**Historical one-line statement (as registered 20 April 2026):** Derive the behavior of the alpha-polytope edge formula at $N_\alpha \geq 12$; proposed activation of an icosahedral closure bonus at $N_\alpha = 12$ analogous to SS-5's ${}^4$He tetrahedral closure.
+**Registered:** 20 April 2026 in SS-7 v1.1 §5.1
+**Retired:** 21 April 2026 in SS-7 v1.2 §5.1
+**Reason for retirement:** The empirical anchor — an apparent $-2$ to $-2.5\%$ residual plateau at $N_\alpha = 12, 13, 14$ — was found to be an isotope-selection artifact. The v1.1 Table 1 used non-$N{=}Z$ isotopes (${}^{48}$Ti, ${}^{52}$Cr, ${}^{56}$Fe, each with $N - Z = +4$); the strict $N{=}Z$ counterparts (${}^{48}$Cr, ${}^{52}$Fe, ${}^{56}$Ni) stay in family with the primary set at $+0.40\%, +0.57\%, +0.73\%$ — no structural onset visible. The ~2 MeV/neutron seen in the v1.1 rows is standard neutron-excess binding, outside the alpha-chain formula's scope by construction.
+**Verification:** Three-reviewer convergence on interpretation (a) — isotope-selection artifact, no defensible physical reason for the non-$N{=}Z$ choice — established on 21 April 2026 (ChatGPT, Copilot, Grok). Convergence itself is part of the evidence supporting retirement, not author-team choice alone.
+**Downstream registration:** The ~2 MeV/neutron signal (neutron-excess physics) is absorbed into OPEN-SS-23, which is now the primary SS-8 target. The DP-sea screening physics previously tagged "OPEN-SS-22-adjacent" in v1.1 is registered as new OPEN-SS-25.
+**Programme-level significance:** First retirement precedent in the CPP programme record. Establishes RETIRED as a new open-problem status, distinct from RESOLVED (solution found), PARTIALLY RESOLVED (sub-scope solved), FALSIFIED (claim disproved). Retirement applies when a problem's registered empirical anchor is subsequently found to be an artifact such that no well-defined replacement anchor exists for the hypothesis that motivated registration.
+
+---
+
+### OPEN-SS-23: Non-$N{=}Z$ and Odd-$A$ Extension of the Alpha-Chain Formula
+**Status:** OPEN (primary SS-8 target after v1.2 priority upgrade)
+**Sector(s):** SS (nuclear physics)
+**Priority:** HIGH
+**One-line statement:** Extend the SS-7 alpha-chain binding formula to non-$N{=}Z$ isotopes at alpha-chain $N_\alpha$ values, odd-$A$ nuclei with extra-nucleon-bound-to-alpha-core structures, and non-alpha-clustered nuclei.
+**What a solution looks like:** A CPP derivation of the $\sim 2$ MeV per extra neutron signal visible in non-$N{=}Z$ isotopes (${}^{48}$Ti, ${}^{52}$Cr, ${}^{56}$Fe each with $N - Z = +4$; ${}^{48}$Ca at $N - Z = +8$ as a stress test). A CPP treatment of single-nucleon excess bound to an alpha-polytope core (${}^7$Li, ${}^9$Be, ${}^{11}$B, ${}^{13}$C). A CPP treatment of partial-alpha substructures (${}^6$Li $\approx$ ${}^4$He + d, ${}^{14}$N, ${}^{18}$O, ${}^{30}$Si). Success criterion: the stability valley from ${}^{40}$K through ${}^{208}$Pb reproduced within CPP residual precision.
+**Dependencies:** SS-7 v1.2 formula and constants (${}^4$He binding, $B_{\text{pair}} = M_0/\varphi$). CPP treatment of DP-sea behaviour in non-$N{=}Z$ configurations.
+**Current best lead:** Preliminary SS-7 inspection of ${}^6$Li: residual alpha-deuteron binding 1.47 MeV, approximately $2B_{\text{pair}}/3 \approx 1.56$ MeV — suggestive of an incomplete K$_3$ face at the alpha-d contact. The ${}^{48}$Ti/${}^{52}$Cr/${}^{56}$Fe block (shown in SS-7 v1.2 footnote Table 2) provides the nearest empirical anchor for the neutron-excess derivation.
+**Paper(s):** SS-8 (primary target, per v1.2 retargeting from the retired OPEN-SS-22).
+**Registered:** 20 April 2026 in SS-7 v1.0; priority upgraded 21 April 2026 in SS-7 v1.2 to primary SS-8 target.
+
+---
+
+### OPEN-SS-24: First-Principles CPP Derivation of Simplicial Contact Structure
+**Status:** OPEN
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM-HIGH
+**One-line statement:** Derive assumption C4 of SS-7 (alpha clusters in bound strict-$N{=}Z$ nuclei arrange as vertices of simplicial convex 3-polytopes) from CPP lattice-level dynamics.
+**What a solution looks like:** A rigorous demonstration, starting from SS-2's nucleon structure and the CPP 600-cell lattice, that the ground-state configuration of $N_\alpha$ rigid alpha tetrahedra with base-to-base K$_3$ contact faces realizes a convex, triangular-faced, simplicial 3-polytope. Would convert SS-7's assumption C4 from empirically-supported hypothesis to derived structural result. Would also yield $R_{\alpha\alpha}$ as a forward prediction rather than a consistency parameter inverted from ${}^8$Be (Finding 4.1).
+**Dependencies:** SS-2 nucleon structure; SS-5 K$_3$ collective-mode machinery; CPP open-vertex closure principles.
+**Current best lead:** Physical-intuition arguments present in SS-7 §2.1 (triangular faces from rigid-tetrahedra shared-face geometry; maximal connectivity from thermodynamic selection at fixed vertex count; convexity from rigid-packing constraints). These are suggestive but not rigorous. Full derivation likely requires explicit treatment of the DP-sea reorganization as alpha-polytopes form.
+**Paper(s):** SS-9 candidate (future, theory paper).
+**Registered:** 20 April 2026 in SS-7 v1.0.
+
+---
+
+### OPEN-SS-25: DP-Sea Screening of Alpha-Alpha Coulomb in Bound Polytopes
+**Status:** OPEN
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM
+**One-line statement:** Derive the effective Coulomb reduction $V_C^{\rm eff}$ between alphas embedded in a bound polytope from CPP primitives, reproducing the full-Coulomb limit at isolated alpha-alpha contact (${}^8$Be case).
+**What a solution looks like:** A CPP derivation of the DP-sea reorganization that occurs when two alphas in contact are surrounded by additional alpha neighbours (as in $N_\alpha \geq 3$ bound polytopes). Must reproduce: (a) full vacuum Coulomb $\sim 2.4$ MeV at isolated contact (recovers SS-7 ${}^8$Be 92 keV unboundness, Finding 4.1); (b) effective Coulomb near zero for embedded contacts (required by SS-7 Table 1 agreement of the Coulomb-free formula within $\pm 1.5\%$ at $N_\alpha \geq 3$); (c) smooth interpolation between the two regimes as $N_\alpha$ grows.
+**Dependencies:** SS-7 v1.2 (the 12-nucleus agreement is the empirical evidence that effective Coulomb is strongly reduced in bound polytopes); SS-2 / SS-5 DP-sea machinery; CPP treatment of collective charge redistribution.
+**Current best lead:** SS-7 v1.2 §5.4 discussion: qualitative scaling argument and cluster-model comparison support the screening mechanism. Figure 4 is a schematic representation only; the full DP-sea charge profile is not derived. This was tagged "OPEN-SS-22-adjacent" in SS-7 v1.1 §8; registered as its own open problem in v1.2 when the umbrella OPEN-SS-22 was retired.
+**Paper(s):** Target paper deferred. Likely uses the same lattice-geometry machinery as OPEN-SS-24.
+**Registered:** 21 April 2026 in SS-7 v1.2 (absorbs the DP-sea screening content that was tagged "OPEN-SS-22-adjacent" in v1.1).
 
 ---
 
@@ -314,6 +366,32 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **What confirms it:** Standard two-body scattering theory applied to a loosely-bound state with the observed $\Bd$ as input. No CPP-specific structure required.
 **Implication:** CPP's path to a precision $a_{np}$ prediction must supply the finite-range correction via $V_{\mathrm{SR}}(r)$ shape (OPEN-SS-20). The $20\%$ residual measures the distance CPP has to travel beyond zero range.
 **Registered:** 18 April 2026
+
+---
+
+## Conjectures and Propositions registered from SS-7 (20-21 April 2026)
+
+### CONJ-SS-12: Alpha-Polytope Edge Formula
+**Status:** CONJECTURE — empirically supported by 12 concurrent zero-parameter predictions + 5 hostile-geometry stress tests
+**Sector(s):** SS
+**One-line statement:** For strict $N{=}Z$ alpha-chain nuclei at $N_\alpha \in [3, 14]$, the binding energy is $B(N_\alpha) = N_\alpha \Balpha + (3N_\alpha - 6) B_{\text{pair}}$ where $\Balpha = 28.296$ MeV (${}^4$He binding, from SS-5), $B_{\text{pair}} = M_0/\varphi = 2.342$ MeV (SS-5 nucleon-pair binding quantum), and $3N_\alpha - 6$ is Euler's edge count for any simplicial convex polytope on $N_\alpha$ vertices.
+**What confirms it:** SS-7 v1.2 Table 1 — all twelve predictions within $\pm 1.5\%$ of AME 2020 experimental values; RMS $0.80\%$ across all twelve, $0.91\%$ across the primary set at $N_\alpha \in [3, 10]$. ${}^8$Be's 92 keV unboundness re-derived in-formula from the degenerate $N_\alpha = 2$ ($E = 0$) case plus Coulomb at $R_{\alpha\alpha} = 2.37$ fm. Five hostile-geometry stress tests (cube, square antiprism, wheel-like, monocapped antiprism, pentagonal antiprism) all underperform the simplicial $3N_\alpha - 6$ rule at fixed $(\Balpha, B_{\text{pair}})$.
+**Dependencies:** PROP-SS-7-1 (simplicial polytope hypothesis, C4); SS-5 constants; ${}^4$He binding.
+**Implication:** Resolves OPEN-SS-18 for the strict $N{=}Z$ alpha-chain at $N_\alpha \in [3, 14]$. Further status upgrade to THEOREM would require resolution of OPEN-SS-24 (first-principles derivation of C4).
+**Paper(s):** SS-7 v1.2 (primary); SS-7 v1.0/v1.1 (registered at 8 nuclei; extended to 12 in v1.2).
+**Registered:** 20 April 2026 in SS-7 v1.0; support strengthened 21 April 2026 in SS-7 v1.2 (12 predictions rather than 8, extended domain through ${}^{56}$Ni).
+
+---
+
+### PROP-SS-7-1: Alpha Clusters Realize Simplicial Convex 3-Polytopes
+**Status:** SUPPORTED — empirically by SS-7 v1.2 Table 1 agreement (12 concurrent zero-parameter matches) and 5 hostile-geometry stress tests; derivation from CPP primitives deferred to OPEN-SS-24
+**Sector(s):** SS
+**One-line statement:** In strict $N{=}Z$ alpha-chain nuclei with $N_\alpha \in [3, 14]$, the $N_\alpha$ alpha clusters arrange as the vertices of a convex, triangular-faced, simplicial 3-polytope. Each edge of the polytope is one alpha-alpha base-to-base K$_3$ contact, contributing one $B_{\text{pair}} = M_0/\varphi$ quantum.
+**What confirms it:** SS-7 v1.2 §6.5 hostile-geometry stress tests — the simplicial edge count $3N_\alpha - 6$ outperforms every plausible lower-edge alternative tested, at fixed $(\Balpha, B_{\text{pair}})$. ${}^{36}$Ar is the single-edge-sensitivity diagnostic: dropping $E$ by 1 degrades agreement from $-0.94\%$ to $-1.70\%$, matching one $B_{\text{pair}}$ quantum.
+**Does not assert:** which specific simplicial polytope is realized at each $N_\alpha$ (Remark 2.2 in SS-7). The formula depends only on edge count, not polytope identity — ${}^{24}$Mg could be an octahedron or a triangular antiprism (both 12 edges at $N_\alpha = 6$); SS-7 does not distinguish.
+**Implication:** C4 assumption of SS-7 is empirically supported but not derived. OPEN-SS-24 targets the first-principles derivation from CPP lattice geometry.
+**Paper(s):** SS-7 v1.2 (§2.1 assumption C4; §6.5 empirical test). SS-9 candidate will target derivation.
+**Registered:** 20 April 2026 in SS-7 v1.0; empirical support extended 21 April 2026 in SS-7 v1.2.
 
 ---
 

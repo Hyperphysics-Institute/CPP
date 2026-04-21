@@ -1,0 +1,248 @@
+# SS-7 v1.2 COMPLETION HANDOVER
+
+**For:** next Opus session
+**Created by:** Claude Opus, 21 April 2026 evening
+**Session context:** prior session executed template extraction + SS-8 Phase 1 discovery + SS-7 v1.2 paper body revision, then stopped at context depletion before companion/registry/transcript work.
+
+---
+
+## FIRST-ACTION CHECKLIST (do in order, do not skip)
+
+1. **Read `templates/relationship_protocol.md`** — governs correction delivery and reviewer engagement. Load before writing any prose that goes to reviewers or lands in the paper record.
+
+2. **Confirm the v1.2 paper body is in the repo and compiles.**
+   - Local commit `7ce5015` should be present: "SS-7 v1.2 partial: paper body, verification notebook, PH-OPEN-SS-22"
+   - If the patch `ss7_v12_partial.patch` was applied instead of the sandbox commit migrating, expect the same end-state.
+   - Run `pdflatex` on `series_strong/papers/SS-7_alpha_cluster_edge_formula.tex` twice; should produce a 25-page PDF with zero undefined references.
+   - Run `series_strong/papers/SS-7_alpha_cluster_edge_formula.py` to confirm numerical output: 12 predictions, all-12 RMS 0.80%, primary-8 RMS 0.91%, extended-4 RMS 0.52%.
+
+3. **Read `templates/paper_completion_checklist.md`** — this is the checklist. v1.2 is the validation test for the new consolidated checklist. Execute every applicable item. Flag any defect you find in the checklist itself; the checklist failing would be an item of interest, not just a nuisance.
+
+4. **Ask Thomas for session priority.** You may not need everything below in one session. Thomas may want to split the remaining work over 2-3 sessions. Default ordering assumption is the numbered sequence below, but confirm before executing.
+
+---
+
+## WHAT IS DONE (do not redo)
+
+### Paper body (.tex) — committed as `7ce5015`
+- CHANGELOG + Contributors block updated for v1.2
+- Abstract extended to 12 strict N=Z alpha-chain nuclei (N_α = 3-14)
+- Main Result box: 12 concurrent predictions, RMS 0.80% all-12
+- Plain Language Summary: extended through ⁵⁶Ni
+- §4.3 line 591: factual error on ⁴⁸Cr fixed (was "not observed bound"; actually 411.462 MeV, particle-stable)
+- Table 1: replaced three v1.1 non-N=Z rows with strict N=Z rows (⁴⁴Ti, ⁴⁸Cr, ⁵²Fe, ⁵⁶Ni); original non-N=Z rows retained in traceability footnote table
+- Figure 3: rebuilt with 12 strict N=Z data points, no red-square/structural-onset framing; caption documents v1.1→v1.2 change
+- §5.1: complete rewrite; OPEN-SS-22 retired with pointer to PH-OPEN-SS-22.md
+- §5.2: OPEN-SS-23 priority upgraded to primary SS-8 target with neutron-excess emphasis
+- §5.3, Figure 4 caption, §7 final paragraph: "OPEN-SS-22-adjacent" DP-sea references → OPEN-SS-25 (new)
+- §6 Registry Impact: RETIRED entry for OPEN-SS-22, NEW entry for OPEN-SS-25, OPEN-SS-18 resolution extended to N_α=14
+- §9 Conclusion: rewritten for 12-nucleus claim, v1.2 retirement summary, SS-8 retargeted
+- Acknowledgements: v1.2 reviewer-contributions paragraph added
+- Compiles clean: 25 pages, zero undefined references, zero substantive warnings
+
+### Verification notebook (.py) — committed as `7ce5015`
+- Header CHANGELOG has v1.2 entry
+- Section 5.1 block replaced with extended N=Z chain
+- RMS prints cleanly for both conventions (all-12, primary-8, extended-4, 7-excl-20Ne)
+- v1.1 non-N=Z rows retained as traceability block
+
+### PH-OPEN-SS-22.md — committed as `7ce5015`
+- Retirement narrative in standard PH format (Problem / Journey / Tractable / Does-Not-Do / Significance / Future)
+- Documents the 24-hour arc from v1.1 registration through v1.2 retirement
+- Positions as the first RETIRED entry in CPP problem_histories record
+
+### Process artifacts (these are for reference; do NOT commit to repo)
+- `SS-7_v1.2_reviewer_verification_letter.md` — was sent to reviewers
+- `SS-7_v1.2_revision_plan.md` — planning doc, superseded by the committed work
+- `SS-7_v1.2_scope_audit.md` — scope audit used to drive the .tex edits; can be discarded or archived as development record (your call per G-Section)
+- `ss8_empirical_map.py` — the script that surfaced the finding; archive as a development record or discard
+
+---
+
+## WHAT REMAINS (execute per `paper_completion_checklist.md`)
+
+### Block 1: Reviewer response archives (Section A6 trigger, but actually prep work)
+
+Save the three reviewer responses to `series_strong/papers/`:
+- `SS-7_v1.2_chatgpt_verification_response.md`
+- `SS-7_v1.2_copilot_verification_response.md`
+- `SS-7_v1.2_grok_verification_response.md`
+
+Thomas has these from the previous session — they're the three-reviewer Branch A convergence responses. Ask him to paste them to you if they're not already in the repo. These get referenced from `reviews-SS-7.md` (Block 2, item A6).
+
+### Block 2: Companion documentation suite (Section A)
+
+Seven files in `series_strong/papers/`. Priority of updates:
+
+**A1. `mechanism-SS-7.md`** — light touch. Extended N_α domain to 14 changes the "claimed applicability" statement; mathematical correspondence table should add the 4 new rows if it enumerates per-nucleus.
+
+**A2. `glossary-SS-7.md`** — light touch. Check for new terms introduced in v1.2: "isotope-selection artifact," "RETIRED status," "strict N=Z alpha-chain" as a defined phrase.
+
+**A3. `phenomena-SS-7.md`** — substantive. PHEN-P needs the 4 new predictions added; PHEN-V (consilience) needs review in light of the 4-fold N_α range; PHEN-E (empirical facts) needs the corrected ⁴⁸Cr/⁵²Fe/⁵⁶Ni values.
+
+**A4. `philosophy-SS-7.md`** — substantive. Falsifiability inventory threshold scope extended to N_α ∈ [3,14]. Paper-type declaration unchanged (still prediction paper, but now "12 zero-parameter predictions" not "8").
+
+**A5. `development-SS-7.md`** — substantive. Add version-timeline entry for v1.2; new key-decision entry for the retirement (retirement as new status transition). Transcript reference points at the forthcoming SS-7 v1.2 development transcript (see Block 5). One strong recommendation: the retirement itself is a programme-level decision worth documenting in detail — this is the first retirement in the CPP record, and future retirements will look here for precedent.
+
+**A6. `reviews-SS-7.md`** — substantive. Add Part 1 entries for the v1.2 verification letter + three responses. Thomas sent the letter and received responses on 21 April 2026; all three reviewers converged Branch A. Paste each reviewer's verdict and the interpretation-(a) consensus.
+
+**A7. `keywords-SS-7.md`** — substantive. Registry entries change: OPEN-SS-22 status RETIRED, OPEN-SS-25 NEW. Cross-references to ⁵⁶Fe removed (no longer primary-table nucleus); ⁵⁶Ni added. Any changes to CONJ-SS-12 status (empirical support strengthened) should be reflected here.
+
+### Block 3: Registry updates (Section C of checklist)
+
+Per `paper_completion_checklist.md` Section C items:
+
+**C1. `theory-overview.md`** — conditional. Check for any enumeration of zero-parameter predictions (should become 12, not 8). Check for OPEN-SS-22 listing.
+
+**C2. `axiom-registry.md`** — probably no change. v1.2 didn't add or remove axioms. Verify.
+
+**C3. `theorem-registry.md`** — check whether CONJ-SS-12 is tracked there and needs status note.
+
+**C4. `master_glossary.md`** — add any new globally-useful terms introduced by v1.2 (the phrase "retirement" as a problem-status transition is worth defining).
+
+**C5. `Research_Frontier.md`** — **substantive, careful.** This is the primary registry touched by v1.2:
+  - OPEN-SS-22: mark RETIRED with reference to `problem_histories/PH-OPEN-SS-22.md`
+  - OPEN-SS-23: priority note (primary SS-8 target)
+  - OPEN-SS-25: register as NEW open problem (DP-sea screening of alpha-alpha Coulomb in bound polytopes)
+  - OPEN-SS-18: note resolution extended to N_α = 14
+  - CONJ-SS-12: note empirical support strengthened (12 predictions, not 8)
+
+**C6. `predictions.md`** — add the 4 new predictions:
+  - ⁴⁴Ti: pred 374.490 MeV, exp 375.475 MeV, −0.26%
+  - ⁴⁸Cr: pred 409.812 MeV, exp 411.462 MeV, −0.40%
+  - ⁵²Fe: pred 445.134 MeV, exp 447.696 MeV, −0.57%
+  - ⁵⁶Ni: pred 480.456 MeV, exp 483.990 MeV, −0.73%
+  Check: the 3 v1.1 non-N=Z rows (⁴⁸Ti, ⁵²Cr, ⁵⁶Fe) should be either removed or relabeled as OPEN-SS-23 forward predictions (not part of SS-7's primary claim).
+
+**C7. `paper_catalog.md`** — add v1.2 row; update paper's status, version, date.
+
+**C8. `founders_vision.md`** — judgment call. The retirement event is a programme-level milestone (first retirement in CPP history); a brief founder's-vision milestone note may be appropriate. Thomas's call.
+
+**C9. `future_projects.md`** — SS-8 target redirected (OPEN-SS-22 → OPEN-SS-23). Update the "current #1 priority" line.
+
+**C10. `CPP_the_theory.md`** — substantive. The Prediction Scorecard should gain 4 new predictions. The narrative section covering SS-7 needs a small update (12 nuclei, retirement note). This is the trade-book target; write in connected prose.
+
+**C11. `bibliography/cpp_references.bib`** — verify. No new external citations added in v1.2 AFAIK; confirm. Check whether the paper's own .bib entry needs version bump or similar.
+
+**C12. `problem_histories/`** — PH-OPEN-SS-22.md already created in Block 0; verify it's present in the committed state.
+
+### Block 4: Navigation updates (Section D)
+
+**D1. `README.md`** — update paper count (v1.2 if tracked by versions, otherwise unchanged paper count); update headline results (SS-7 now "12 concurrent predictions, RMS 0.80%"); check axiom count line.
+
+**D2. `INDEX.md`** — add new files: PH-OPEN-SS-22.md (if not already), three reviewer response files (if Block 1 is executed).
+
+**D3. `series_strong/README.md`** — update SS-7 row in series paper table (version, prediction count).
+
+### Block 5: Development transcript (Section E)
+
+Curate the v1.2 cycle into `series_strong/development-transcripts/SS-7_v1.2_transcript.md` (or appropriate name per E3). The cycle spans:
+- SS-8 Phase 1 discovery that surfaced the Table 1 finding
+- Reviewer verification letter drafting
+- Three reviewer responses
+- v1.2 revision plan, scope audit, paper body execution
+- Template extraction (earlier in the session but adjacent context)
+
+Source material (all in `/mnt/transcripts/` or in this handover's originating session — Thomas can provide if needed):
+- The session transcript containing the discovery and letter drafting
+- The three reviewer response documents themselves (Block 1 archives)
+- Artifacts: `SS-7_v1.2_reviewer_verification_letter.md`, `SS-7_v1.2_revision_plan.md`, `SS-7_v1.2_scope_audit.md`, `ss8_empirical_map.py`
+
+Keep Thomas's verbatim decision-points. Particularly: the decision to proceed with D then C (verify data, then revision), the endorsement of the retirement-vs-reframe choice, the "continue" sequence that kept pushing execution. These are the programme-level judgment points that development-SS-7.md (A5) will reference.
+
+### Block 6: OSF registration (Section F)
+
+F1-F4: Thomas needs to update OSF DOI 10.17605/OSF.IO/JXE8D with the v1.2 PDF. Text was prepared in v1.1 in `series_strong/papers/SS-7_OSF_registration_status.md`; update that file with v1.2 specifics before Thomas does the OSF action.
+
+### Block 7: Repository commit + push (Section G)
+
+G1-G4: standard. Commit message template:
+
+```
+SS-7 v1.2 complete: companion suite, registries, transcript
+
+Completes SS-7 v1.2 revision cycle started in commit 7ce5015.
+- Companion documentation suite (7 files) updated for v1.2
+- Registry propagation: OPEN-SS-22 RETIRED, OPEN-SS-25 NEW,
+  OPEN-SS-18 resolution extended, CONJ-SS-12 support strengthened,
+  4 new predictions (44Ti, 48Cr, 52Fe, 56Ni) added to predictions.md
+- Navigation files updated
+- v1.2 development transcript curated and archived
+- Three reviewer response files archived
+
+Completes the first RETIRED-problem cycle in CPP programme history.
+SS-7 paper body previously committed as 7ce5015; this commit closes
+out the v1.2 landing per templates/paper_completion_checklist.md.
+```
+
+Push (G3) is a user-action item requiring Thomas's authenticated environment; flag and defer.
+
+### Block 8: Final verification (Section H)
+
+H1-H5 per checklist. Particular attention:
+- **H3 is the G3-equivalent check** on v1.2. Confirm every numerical value in `predictions.md` and `phenomena-SS-7.md` matches Table 1 of the paper to 0.001 MeV. This is the check that caught v1.1's G3 discrepancy; not exempting v1.2's own values is what gives the retirement its programmatic credibility.
+- **H5 scan**: README.md and INDEX.md should have no references to "8 concurrent predictions" or to OPEN-SS-22 as active.
+
+---
+
+## LESSONS FROM THIS SESSION (for the next)
+
+1. **"Continue" is ambiguous.** I (the prior Opus) read it as "push through." The safer read is "do the next clean-stopping-point amount." Ask Thomas to confirm scope if a "continue" would push past a natural stop.
+
+2. **Paper body first was correct prioritization.** The paper is what ships; companions/registries can lag. But don't try to do body + companions + registries + transcript in one session. Two to three sessions is the honest estimate.
+
+3. **Compile before declaring "done".** My v1.2 body compile caught two undefined-reference errors (`sec:scope` → `sec:limits`) that the grep-sweep missed. Always run a compile before saying the paper is done.
+
+4. **Symmetric-honesty applies to self.** If v1.2 introduces a new inconsistency (predictions.md vs. Table 1, or scorecard vs. paper), register and fix; do not silently patch. v1.2 itself is the template.
+
+5. **The checklist is now being validated.** `paper_completion_checklist.md` is being exercised for the first time. If a task gets missed or a pointer breaks, that's a checklist defect — fix the checklist, not just the instance. The extraction's whole point was to prevent drift; if the checklist doesn't catch a drift, it needs to.
+
+6. **PDF vs .tex for reviewers.** Submission protocol is now `.tex` source only, not compiled PDF. This was established in the v1.2 cycle after two v1.1 reviewers independently misread φ^(1/z) as φ^(1/2) from PDF superscript rendering. Preserve this protocol for any new reviewer interactions in the v1.2 closure.
+
+---
+
+## FILE INVENTORY
+
+All paths relative to repo root.
+
+### Already modified and committed (`7ce5015`)
+- `series_strong/papers/SS-7_alpha_cluster_edge_formula.tex`
+- `series_strong/papers/SS-7_alpha_cluster_edge_formula.py`
+- `series_strong/papers/SS-7_alpha_cluster_edge_formula.pdf`
+- `problem_histories/PH-OPEN-SS-22.md` (new)
+
+### Files to create
+- `series_strong/papers/SS-7_v1.2_chatgpt_verification_response.md`
+- `series_strong/papers/SS-7_v1.2_copilot_verification_response.md`
+- `series_strong/papers/SS-7_v1.2_grok_verification_response.md`
+- `series_strong/development-transcripts/SS-7_v1.2_transcript.md` (or canonical name)
+
+### Files to modify
+- `series_strong/papers/mechanism-SS-7.md`
+- `series_strong/papers/glossary-SS-7.md`
+- `series_strong/papers/phenomena-SS-7.md`
+- `series_strong/papers/philosophy-SS-7.md`
+- `series_strong/papers/development-SS-7.md`
+- `series_strong/papers/reviews-SS-7.md`
+- `series_strong/papers/keywords-SS-7.md`
+- `series_strong/papers/SS-7_OSF_registration_status.md`
+- `theory-overview.md`
+- `master_glossary.md`
+- `Research_Frontier.md`
+- `predictions.md`
+- `paper_catalog.md`
+- `founders_vision.md` (conditional)
+- `future_projects.md`
+- `CPP_the_theory.md`
+- `README.md`
+- `INDEX.md`
+- `series_strong/README.md`
+
+### Files to leave alone
+- `axiom-registry.md` (no axiom changes in v1.2)
+- `theorem-registry.md` (verify CONJ-SS-12 entry; else no change)
+- `bibliography/cpp_references.bib` (verify no new externals)
+
+---
+
+Good luck. This is the first CPP paper revision cycle to exercise `paper_completion_checklist.md` end-to-end. The checklist is being tested as much as v1.2 itself.
