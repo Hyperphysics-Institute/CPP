@@ -17,7 +17,9 @@ The SS-8 H2' derivation note opened **OPEN-SS-26** as the first-principles targe
 
 This sketch attempts that derivation via explicit SSV-energy evaluation at four candidate site classes — vertex, edge-midpoint, face-center, centroid — on two test polytopes: the octahedron (N_α = 6) and the gyroelongated square bipyramid (N_α = 10). These two polytopes are chosen because Phase 1b §8.6 reports both matched observation to <1.5% at N_ex = 2 (ratio 1.003 and 1.011 respectively), i.e. they are the strongest-agreement zero-parameter cases in the H2' prediction table.
 
-The headline result is stronger than anticipated on one axis and weaker on another: **D1 promotes from structural hypothesis to conditional theorem, via two distinct and mutually-reinforcing premises** — but neither premise reduces to programme-level primitives alone. The route to full first-principles derivation from A2+A3+A5 remains open, and is now more precisely located: it is the premise shared by both sketch paths (short-range-pair physics at the interstitial scale), not the localization claim itself.
+The headline result is stronger than anticipated on one axis and weaker on another: **D1 promotes from structural hypothesis to conditional theorem, via two functionally distinct realizations of a shared proximity-binding premise** — but neither realization reduces to programme-level primitives alone, and full physical-principle independence (Level 3) is not established. The route to full first-principles derivation from A2+A3+A5 remains open, and is now more precisely located: it is the premise shared by both sketch paths (short-range pair physics at the interstitial scale), not the localization claim itself.
+
+*Round 2 review refinement (22 April 2026):* Following ChatGPT's algebraic-reduction challenge and the subsequent analysis (`SS-8_D1_Q2_algebraic_reduction_analysis.md`), the "two independent premises" framing is refined to "two functionally distinct realizations of a shared proximity-binding premise." Both Model A and Model B were shown to be Level-2-independent (functionally distinct by multiplicity vector, site ordering, and degree scaling) but not Level-3-independent (both rest on the same proximity-binding intuition). The conditional theorem tier stands; the language is sharpened.
 
 Equally importantly, the sketch surfaces a **structural coupling between D1 and D2** that was not visible at the hypothesis-tier labeling stage: under one of the two models (Model A), D1 is a trivial consequence of D2. This suggests OPEN-SS-26 and OPEN-SS-27 should be reconsidered as **not independent sub-problems but coupled aspects of a single open question** (§5 below).
 
@@ -60,7 +62,7 @@ Model B energy depends on λ_nn. For the SR regime, we use λ_nn = 0.35 × (poly
 
 **Where they diverge:** Model A presumes D2's K₃-face-participation counting rule (paper-level structural hypothesis); Model B presumes SR-nn-pair physics (inherited from SS-5 pair-potential range and SS-7 alpha-alpha contact distance, both registered but not collapsed to programme-level axioms).
 
-A full first-principles derivation of D1 would reduce to programme-level axioms alone. Neither model achieves that; both reduce to programme-level axioms *plus one paper-level premise*. What the sketch does deliver — stronger than initially planned — is that **the same D1 conclusion follows from two independent premises**, strengthening the hypothesis to a "conditional theorem under either sufficient premise" tier.
+A full first-principles derivation of D1 would reduce to programme-level axioms alone. Neither model achieves that; both reduce to programme-level axioms *plus one paper-level premise*. What the sketch does deliver — stronger than initially planned — is that **the same D1 conclusion follows from two functionally distinct realizations of the underlying proximity-binding principle** (Level-2 independence, per the Q2 analysis document). This strengthens the hypothesis to a "conditional theorem under either sufficient realization" tier. The two realizations differ in multiplicity structure, site-ordering predictions, and vertex-degree scaling — they are not algebraically reducible to one another — but they share the same ancestor principle (proximity-binding), so Level-3 independence (derivation from distinct physical principles) is not claimed.
 
 ---
 
@@ -153,13 +155,35 @@ The numerical evaluation of §3 confirms the proof sketches with concrete gaps o
 
 ### 4.2 Conditional theorem status explained
 
-D1 promotes from "structural hypothesis at SS-7 C4 tier" to **"conditional theorem, supported by two independent sufficient premises."** The conditionality is not arbitrary — it depends on a specific named premise (A or B) that is itself a paper-level claim, not a programme-level axiom. But:
+D1 promotes from "structural hypothesis at SS-7 C4 tier" to **"conditional theorem, supported by two functionally distinct realizations of the shared proximity-binding premise."** The conditionality is not arbitrary — it depends on a specific named realization (A or B) that is itself a paper-level claim, not a programme-level axiom. But:
 
-1. **Either premise suffices.** The theorem is robust to which premise is adopted; reviewers objecting to one can still accept D1 via the other.
-2. **Both premises are physically reasonable.** Premise A (D2) is inherited from SS-7's K₃-mode framework plus the registry's Pattern 6 recurrence. Premise B (SR-nn-pair) is inherited from SS-5 pair physics and SS-7's alpha-alpha contact distance of 2.37 fm (which makes λ_nn << L_αα by construction for any reasonable λ_nn ≲ 1 fm).
+1. **Either realization suffices.** The theorem is robust to which realization is adopted; reviewers objecting to one can still accept D1 via the other.
+2. **Both realizations are physically reasonable.** Premise A (D2) is inherited from SS-7's K₃-mode framework plus the registry's Pattern 6 recurrence. Premise B (SR-nn-pair) is inherited from SS-5 pair physics and SS-7's alpha-alpha contact distance of 2.37 fm (which makes λ_nn << L_αα by construction for any reasonable λ_nn ≲ 1 fm).
 3. **The remaining work is premise-derivation**, not localization-derivation. The localization claim D1 is no longer the bottleneck; the bottlenecks are derivation of D2 (Premise A) or of SR-nn-pair scaling (Premise B) from programme-level primitives.
 
 This is a non-trivial strengthening from the H2' note's §6.2 "structural hypothesis" framing. D1 is now at a tier strictly between SS-7 C4 (pure hypothesis) and SS-7 Theorem 3N-6 (pure mathematical theorem) — it is conditional-theorem.
+
+### 4.3 Independence levels — what is and is not claimed
+
+Following the Round 2 algebraic-reduction analysis (`SS-8_D1_Q2_algebraic_reduction_analysis.md`), independence between Premise A and Premise B is explicitly decomposed:
+
+- **Level 1 (algebraic independence):** Model B is not reducible to a monotonic function of vertex degree. Established.
+- **Level 2 (functional independence):** Model A and Model B have different multiplicity vectors ((deg(v), 2, 1, 0) vs. (1, 2, 3, V)), different non-vertex site orderings (Model A: edge > face > centroid; Model B: centroid > face > edge), and different vertex-degree scaling (Model A: linear in deg(v); Model B: approximately constant at strict SR). Established.
+- **Level 3 (physical-principle independence):** Both models share the proximity-binding ancestor principle. Not established. A derivation of D1 from a mechanism unrelated to proximity-aggregation (topological, entropic, geometric-phase) would be required.
+
+"Conditional theorem under either sufficient realization" is the correct tier at Level 2. Level-3 independence is a separate and stronger claim, promoted to a programme-level OPEN-FRONTIER question.
+
+### 4.4 Response to Q2 algebraic-reduction test (Round 2)
+
+ChatGPT's Round 2 review posed the Q2 algebraic-reduction test: *Does Model B's energy ranking reduce, after algebraic simplification, to a monotonic function of vertex degree or adjacency count?* If yes, Model B would be Model A in disguise, and the "two premises" framing would collapse.
+
+The test was executed (`SS-8_D1_Q2_algebraic_reduction_analysis.md`) with three categorical findings:
+
+- **Multiplicity vector mismatch:** Model B's leading-order SR structure is $-V_0 \cdot n_{\min} \cdot e^{-d_{\min}/\lambda}$ with $(n_{\min}, d_{\min})$ at each site class given by $(1, 0)$ at vertex, $(2, L/2)$ at edge-midpoint, $(3, d_{\text{face}})$ at face-center, $(V, R)$ at centroid. Model A's corresponding vector is $(\deg(v), 2, 1, 0)$. These differ in three of four positions.
+- **Site-ordering reversal:** At the sketch-tested $\lambda = 0.35 \cdot L_{\text{edge}}$, Model A ranks non-vertex sites as edge > face > centroid; Model B ranks them as centroid > face > edge. Direct functional-form mismatch.
+- **Degree-scaling contrast:** Model A predicts $E_{\text{vertex}}(\deg=4)/E_{\text{vertex}}(\deg=5) = 0.8$. At strict SR ($\lambda = 0.05 \cdot L$), Model B gives this ratio as **1.0000** — all vertex sites have identical energy regardless of degree. The ratio never approaches 0.8 at any tested $\lambda$.
+
+Level-1 and Level-2 independence are thereby established (Model B is not Model A in any algebraic or functional sense). Level-3 independence is not established (both models share proximity-binding as ancestor). The conditional-theorem tier stands with the refined language of §4.3.
 
 ---
 

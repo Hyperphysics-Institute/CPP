@@ -167,14 +167,16 @@ The Phase 1b 2E/V fit (findings §8.4) sits numerically between these two altern
 
 This intuition parallels SS-7's C4 physical-intuition argument structure ("thermodynamic selection": the ground-state configuration should minimize SSV stress by maximizing usable K₃ contacts). It is verbal reasoning, not derivation; a full SSV-minimization proof over candidate localization sites is the content of OPEN-SS-26, partially delivered by the SSV-minimization sketch of 21 April 2026 (see below).
 
-**Status (updated 21 April 2026).** D1 promotes from structural hypothesis to **conditional theorem**, supported by two independent sufficient premises derived in `SS-8_D1_ssv_minimization_sketch.md`:
+**Status (updated 22 April 2026).** D1 promotes from structural hypothesis to **conditional theorem under two functionally distinct realizations of a shared proximity-binding premise**, as established in `SS-8_D1_ssv_minimization_sketch.md` and refined by the Round 2 Q2 algebraic-reduction analysis (`SS-8_D1_Q2_algebraic_reduction_analysis.md`). The two realizations:
 
 - **Premise A (D2-counting):** given D2's K₃-face-participation counting rule, D1 is a corollary by polytope combinatorics alone — deg(v) ≥ 3 > 2 (edge) > 1 (face) > 0 (centroid) for any simplicial 3-polytope with V ≥ 4.
-- **Premise B (SR-nn-pair):** given SR-nn-pair physics with range λ_nn << L_αα (inherited from SS-5 pair physics and SS-7's alpha-alpha contact distance L_αα = 2.37 fm), vertex wins via Yukawa localization, independent of D2.
+- **Premise B (SR-nn-pair):** given SR-nn-pair physics with range λ_nn << L_αα (inherited from SS-5 pair physics and SS-7's alpha-alpha contact distance L_αα = 2.37 fm), vertex wins via Yukawa localization, independent of D2's counting rule.
 
 Numerical evaluation at the octahedron (N_α = 6) and gyroelongated square bipyramid (N_α = 10) — the two Phase 1b predictions matched to <1.5% — confirms gap factors of 2.0× and 2.5× under Premise A, 1.57× and 1.59× under Premise B.
 
-First-principles derivation of either premise from programme-level axioms alone is not yet delivered. Since both premises suffice and both reduce to SS-5/SS-7-inherited substrate, the remaining first-principles work is consolidated with **OPEN-SS-27** (see §5 of the sketch and §10 below). D1 and D2 are coupled, not independent — Premise A makes D1 a corollary of D2, so deriving D2 from primitives delivers D1 as an automatic consequent.
+The two realizations are **Level-1 and Level-2 independent** (algebraically and functionally distinct by multiplicity vector, site ordering, and degree scaling), but they share the proximity-binding ancestor principle, so **Level-3 independence is not established**. The conditional-theorem tier respects this distinction: "either sufficient realization" does not mean "either distinct physical principle." A derivation of D1 from a non-proximity mechanism (topological, entropic, geometric-phase) would be needed for full Level-3 independence and is promoted to a programme-level OPEN-FRONTIER question (see §10).
+
+First-principles derivation of either premise from programme-level axioms alone is not yet delivered. Since both premises reduce to SS-5/SS-7-inherited substrate, the remaining first-principles work is consolidated with **OPEN-SS-27** (functional content) and promoted to programme-level OPEN-FRONTIER registry (physical-principle content). D1 and D2 are coupled, not independent — Premise A makes D1 a corollary of D2, so deriving D2 from primitives delivers D1 as an automatic consequent.
 
 ### 6.3 D2 — K₃-edge coupling at the host alpha-vertex
 
@@ -305,7 +307,10 @@ Following the SS-7 precedent (OPEN-SS-18 splitting into -22, -23, -24 as distinc
 
 **Status update (21 April 2026).** Partially resolved by `SS-8_D1_ssv_minimization_sketch.md`. D1 promotes from structural hypothesis to **conditional theorem** under either of two independent sufficient premises: (A) the D2 counting rule makes D1 a corollary via simplicial polytope combinatorics (gap factor 2.0× for octahedron, 2.5× for GESBP); (B) SR-nn-pair physics with λ_nn << L_αα makes D1 a Yukawa-localization consequence, independent of D2 (gap factor 1.57× and 1.59× respectively). Numerical evaluation at both test polytopes confirms vertex-preference under both models.
 
-**Remaining content absorbed into OPEN-SS-27.** The residual first-principles work — deriving either Premise A (D2 counting rule) or Premise B (SR-nn-pair scaling) from programme-level axioms alone — reduces to the derivation of D2, since Premise A plus the simplicial combinatorics gives D1 automatically, and Premise B and Premise A are empirically-equivalent paths at the conditional-theorem tier. OPEN-SS-27 (D2 derivation) therefore subsumes the remaining OPEN-SS-26 content.
+**Remaining content — split by independence level (refined 22 April 2026).** Following the Round 2 Q2 algebraic-reduction analysis, the residual first-principles work is split into two tiers:
+
+- **Functional content (absorbed into OPEN-SS-27):** Deriving either Premise A (D2 counting rule) or Premise B (SR-nn-pair scaling) from programme-level axioms alone. Premise A plus simplicial combinatorics gives D1 automatically; deriving D2 therefore closes Level-2 independence of D1 at programme tier. OPEN-SS-27 (D2 derivation) subsumes this content.
+- **Physical-principle content (promoted to programme-level OPEN-FRONTIER):** Deriving D1 from a mechanism unrelated to proximity-aggregation (topological, entropic, geometric-phase). Both Model A and Model B share the proximity-binding ancestor principle; a Level-3-independent derivation would require exhibiting D1 under a distinct physical premise. This is a programme-wide structural question, not SS-8-specific, and is promoted to `Research_Frontier.md` as OPEN-FRONTIER-NNN rather than kept under the SS-8 OPEN-SS list.
 
 **Target paper:** conditional theorem now in sketch; full first-principles content merged into OPEN-SS-27's scope.
 

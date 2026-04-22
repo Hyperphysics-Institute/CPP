@@ -186,9 +186,9 @@ This is the cleanest possible falsification of "Model B reduces to vertex-degree
 
 ---
 
-## 7. Verdict on ChatGPT's Q2
+## 7. Verdict on ChatGPT's Q2 (with level-of-independence refinement)
 
-**Model B does not reduce to Model A after algebraic simplification.**
+**Model B does not reduce to Model A after algebraic simplification.** This is the strictly-established result; Q2's strongest form (isomorphism) is categorically ruled out.
 
 The evidence is threefold:
 
@@ -198,23 +198,45 @@ The evidence is threefold:
 
 3. **Different vertex-degree dependence.** Model A predicts $E_{\text{vertex}}$ scales linearly with $\deg(v)$; Model B predicts it is approximately constant across vertices of different degrees at strict SR, with a weak and quantitatively distinct correction at finite $\lambda$.
 
-Model B is therefore a *genuinely independent* SR-physics derivation of the vertex-preference conclusion (D1), not a restatement of Model A's K₃-face-participation counting.
+### 7.1 Levels of independence — what is and is not established
+
+Following ChatGPT's Round 2 review of this analysis, the verdict above is refined to distinguish three levels of independence between Model A and Model B:
+
+- **Level 1 (algebraic independence):** Model B is not reducible to a monotonic function of $\deg(v)$ or any other Model A counting quantity, at any tested $\lambda$. **Established** by the three discriminators above.
+- **Level 2 (functional independence):** Model B's functional form differs from Model A's — different multiplicity structure, different site orderings, different degree scaling. **Established** by the same discriminators.
+- **Level 3 (physical-premise independence):** Model B would be derived from a physical mechanism unrelated to proximity-binding (e.g., topological, entropic, or geometric-phase). **Not established.** Both models share the proximity-binding ancestor principle (see §8).
+
+Model B is therefore a *functionally distinct realization of proximity-driven binding, sharing an ancestor principle with Model A but not reducible to it.* "Genuinely independent derivation" is too strong; "functionally distinct realization" is the precise descriptor, and it is what this analysis strictly establishes.
+
+This refinement preserves the sketch's Theorem 3 conclusion (D1 follows from either Model A or Model B) while sharpening the epistemic claim about what "either" means. The two premises are two distinct functional routes to the same conclusion, not two independent physical principles.
 
 ---
 
-## 8. A caveat worth naming — shared ancestry
+## 8. Shared-ancestry caveat — and the path to true Level-3 independence
 
 Both Model A and Model B rest on a common physical intuition: **an interstitial neutron binds preferentially where it has access to alpha-vertex structure.** Model A operationalizes this as "count the K₃ faces the neutron participates in"; Model B operationalizes it as "sum the short-range pair potentials to each alpha-vertex." They share the proximity-binding ancestor principle.
 
-In a stricter sense of "independent" — where two derivations would have to start from unrelated physical mechanisms (e.g., proximity-binding for one and, say, topological-phase or entropy-driven localization for the other) — the sketch's two models are not fully independent. They are **functionally distinct derivations from a shared proximity-binding principle**, not fully-independent derivations from distinct first principles.
+Independence here means **functional non-equivalence, not independence of physical intuition.** The Q2 analysis establishes the former decisively; the latter is a distinct and stronger claim that this analysis does not make.
 
-This caveat does not change the Q2 verdict (Model B is not Model A in disguise), but it does refine the framing of the sketch's "conditional theorem under either sufficient premise" claim:
+In a stricter sense of "independent" — where two derivations would start from *unrelated* physical mechanisms (e.g., proximity-binding for one, and topological-phase or entropy-driven localization for the other) — the sketch's two models are not fully independent. They are **functionally distinct formalizations of a shared proximity-binding principle**, not independent derivations from distinct first principles.
 
-- Both premises are distinct functional forms.
+This caveat sharpens the framing of the sketch's Theorem 3:
+
+- Both premises are functionally distinct realizations (Level 2 independence: established).
 - Both premises deliver vertex-preference as their primary conclusion.
-- Both premises reduce (if taken all the way back) to a proximity-binding intuition.
+- Both premises reduce (if traced back) to the same proximity-binding intuition (Level 3 independence: not established).
 
-A **stronger** sketch would derive D1 from a mechanism that doesn't rely on proximity-binding at all. A **weaker** reading of the current sketch would acknowledge that the two models are alternative formalizations of the same underlying intuition. The honest intermediate is what the sketch currently supports: the two models are functionally independent, mutually reinforcing, and together raise D1 to conditional-theorem tier while leaving the underlying proximity-binding principle itself at premise-level.
+**Full independence would require a derivation of D1 from a mechanism not based on proximity aggregation.** That derivation is not attempted in this analysis. A natural future target — worth registering as a programme-level OPEN-FRONTIER question rather than as an SS-8 sub-problem — would be: "Can D1 be derived from a mechanism unrelated to proximity-aggregation (topological, entropic, or geometric-phase)?"
+
+If such a Model C is eventually produced and delivers D1 independent of Model A/B's common principle, then D1 would achieve Level-3 independence and its conditional-theorem tier would be maximally strengthened. The current analysis establishes that D1 holds under any functional formalization of proximity-binding we've tested; what it does not establish is that D1 holds independent of proximity-binding itself.
+
+### 8.1 What this refinement changes and does not change
+
+- **Does not change:** Theorem 3 (D1 follows from either Premise A or Premise B). The two premises are functionally distinct.
+- **Does not change:** Numerical gap factors, site orderings, degree-scaling results. These are all empirical and stand as computed.
+- **Does not change:** OPEN-SS-26 → OPEN-SS-27 consolidation as a *pragmatic* choice for SS-8's open-problem cascade.
+- **Does change:** The rhetorical force of the "two independent premises" claim. It becomes "two functionally distinct realizations of a shared ancestor principle." The claim is narrower but more defensible.
+- **Does change:** The registry action. Rather than "OPEN-SS-26 is fully subsumed by OPEN-SS-27," the more precise framing is "OPEN-SS-26's functional content is subsumed by OPEN-SS-27; its physical-principle content (Level-3 independence) becomes a separate OPEN-FRONTIER question at programme level."
 
 ---
 
@@ -236,27 +258,35 @@ This discriminator is out of scope for SS-8 as currently defined but is a natura
 
 ## 10. Implications for the sketch and the H2' note
 
-### 10.1 Conditional theorem tier — stands
+### 10.1 Conditional theorem tier — stands with refined language
 
-The sketch's Theorem 3 (D1 as conditional theorem under either Premise A or Premise B) remains valid as stated. The two premises correspond to two functionally distinct derivations with a shared proximity-binding ancestor; they are not reducible to one another. "Conditional theorem under either sufficient premise" is the correct tier.
+The sketch's Theorem 3 (D1 as conditional theorem under either Premise A or Premise B) remains valid, with the refined language: "conditional theorem under two functionally distinct realizations of a shared proximity-binding premise." The two premises are Level-2-independent (functionally distinct) but not Level-3-independent (not derived from unrelated physical principles; they share the proximity-binding ancestor). This is the precise epistemic claim the analysis supports.
 
-### 10.2 OPEN-SS-26 → OPEN-SS-27 consolidation — stands
+### 10.2 OPEN-SS-26 → OPEN-SS-27 consolidation — pragmatically warranted, with residue
 
-Deriving Premise A (D2's counting rule) from programme-level axioms still delivers D1 as a corollary via simplicial combinatorics. Deriving Premise B (SR-nn-pair physics) from programme-level axioms independently delivers D1. Either path closes the remaining first-principles work on D1, and OPEN-SS-27 scope expansion remains the clean formulation.
+Deriving Premise A (D2's counting rule) from programme-level axioms still delivers D1 as a corollary via simplicial combinatorics. Deriving Premise B (SR-nn-pair physics) from programme-level axioms independently delivers D1. For SS-8's open-problem cascade, OPEN-SS-27 can pragmatically subsume OPEN-SS-26's functional-independence content. However, OPEN-SS-26's *physical-principle-independence* content — "is there a derivation of D1 that does not rest on proximity-aggregation?" — is distinct and does not fit under OPEN-SS-27's A6'-extension scope. The honest framing is:
 
-### 10.3 Proposed minor additions
+- OPEN-SS-26 (functional content): subsumed by OPEN-SS-27.
+- OPEN-SS-26 (physical-principle content): promoted to a separate programme-level OPEN-FRONTIER question, to be registered in `Research_Frontier.md` rather than the SS-8-specific OPEN-SS list.
+
+This preserves the pragmatic consolidation at the SS-8 paper level while preserving the harder physical question at the programme level.
+
+### 10.3 Proposed additions
 
 To the sketch document (`SS-8_D1_ssv_minimization_sketch.md`):
 
+- Update Theorem 3 statement in §4.1 with refined "functionally distinct realizations" language.
 - Add §4.4 "Response to Q2 algebraic reduction test" summarizing §§4–7 of this note.
-- Add §8 caveat on shared ancestry (paraphrasing §8 of this note).
-- Add §9 empirical discriminator as future work note.
-- Cross-reference this analysis document as appendix.
+- Update §5 "OPEN-SS-26 → OPEN-SS-27 consolidation" text with the functional/physical-principle split.
 
 To the H2' note (`SS-8_H2prime_derivation_note.md`):
 
-- §6.2 D1 status — update the "conditional theorem" language to explicitly acknowledge the shared-ancestry caveat ("functionally distinct, sharing proximity-binding ancestor").
-- No change to §6.3 or §10.
+- §6.2 D1 status — update the "conditional theorem" language to read "conditional theorem under two functionally distinct realizations of a shared proximity-binding premise."
+- §10 OPEN-SS-26 entry — note the functional/physical-principle split and the new programme-level OPEN-FRONTIER question on Level-3 independence.
+
+To the programme registry (`Research_Frontier.md`, when ratified):
+
+- New OPEN-FRONTIER entry: "Level-3 independence of D1 — can interstitial-neutron vertex localization be derived from a physical mechanism not based on proximity-aggregation (e.g., topological, entropic, geometric-phase)?"
 
 ---
 
