@@ -764,6 +764,25 @@ CPP papers use standard semantic-version-style labels to communicate maturity:
 
 **Grandfather clause:** Papers already labeled with non-standard version numbers (SS-5 v6, SM-8 v4.1, SS-3 v1.3, etc.) will be relabeled during the comprehensive programme-wide polish pass. The convention above applies to all papers started from 19 April 2026 onward.
 
+### Commit cadence (adopted 22 April 2026)
+
+Commit triggers are decoupled from version milestones. The principle is **production first, batch housekeeping at natural seams**.
+
+Two valid commit triggers:
+
+1. **Section-end batch.** When a discrete target within a paper is complete (e.g., "D1 SSV-minimization attack," "SM-11 lattice-scale grounding," "nuclear-scale companion suite"), batch-commit all artifacts produced in that attack as a single coherent commit. The commit message names the section and what was delivered.
+2. **Context-pressure preservation.** When a context window is approaching its boundary and substantive work on disk has not yet been committed, commit before compaction. This is not optional: transcript summaries are lossy (specific numbers, exact wording, and registry statuses get abbreviated or extrapolated), whereas committed files are verbatim. Anything that would hurt to reconstruct from a summary must be committed before the summary happens.
+
+What is explicitly **not** a commit trigger:
+- Reviewer-cycle settlement on a sub-deliverable. A single reviewer round closing does not by itself justify a commit; if the work is mid-attack it stays on disk until the attack completes or context pressure forces the commit.
+- Version milestones (v0.1 → v1.0) in isolation. The paper-completion checklist still runs at v1.0 (see `paper_completion_checklist.md`), but commits have already happened at section-ends; v1.0 is a Tier M milestone with its own documentation expectations layered on top of the existing commit record.
+
+Commit message convention for section-end batches:
+- Title: `[series/paper] [section name] — [one-line deliverable summary]`
+- Body: bullet list of files added/modified, with one-line purpose each; cross-reference to any opened or resolved OPEN-SS problems; note any registry implications pending ratification.
+
+This rule supersedes the prior implicit convention that archival happened only at v1.0. The v1.0 documentation suite remains the canonical Tier M milestone for paper-level external use; the section-end commit cadence runs beneath it to preserve work continuously.
+
 ### Staging/scratch files
 - Files like `SM-8_integration_items.md` (work-orders collecting items to integrate elsewhere) should be moved to `archive/` once all items are integrated.
 - Do not leave completed staging files in `papers/`.

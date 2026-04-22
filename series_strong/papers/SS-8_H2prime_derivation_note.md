@@ -165,9 +165,16 @@ The Phase 1b 2E/V fit (findings §8.4) sits numerically between these two altern
 
 **Physical intuition (SSV-minimization, schematic).** In SS-5/SS-7, alpha-alpha contact forms a K₃ structure because the three outer nucleons of each alpha's face meet three-to-three. An interstitial neutron approaching the alpha-polytope would, in this geometric picture, find its lowest-SSV-stress site not at an abstract face-center (where no pre-existing K₃ structure terminates) but at an alpha-vertex, where multiple K₃ faces terminate in a single nucleon of one of the alphas. At such a vertex, the incoming neutron sees $\deg(v)$ incident K₃ edge-contacts and can form a compound K-mode analogous to the alpha-alpha K₃ mode but at the (interstitial-n)-(alpha-outer-nucleon) scale.
 
-This intuition parallels SS-7's C4 physical-intuition argument structure ("thermodynamic selection": the ground-state configuration should minimize SSV stress by maximizing usable K₃ contacts). It is verbal reasoning, not derivation; a full SSV-minimization proof over candidate localization sites is the content of OPEN-SS-26.
+This intuition parallels SS-7's C4 physical-intuition argument structure ("thermodynamic selection": the ground-state configuration should minimize SSV stress by maximizing usable K₃ contacts). It is verbal reasoning, not derivation; a full SSV-minimization proof over candidate localization sites is the content of OPEN-SS-26, partially delivered by the SSV-minimization sketch of 21 April 2026 (see below).
 
-**Status.** D1 is a **paper-level structural hypothesis** at the same tier SS-7 C4 lives at: supported empirically by Phase 1b's elimination of alternatives, supported intuitively by the SSV-minimization argument, but not derived from CPP lattice primitives. First-principles derivation is the content of **OPEN-SS-26** (see §10 below).
+**Status (updated 21 April 2026).** D1 promotes from structural hypothesis to **conditional theorem**, supported by two independent sufficient premises derived in `SS-8_D1_ssv_minimization_sketch.md`:
+
+- **Premise A (D2-counting):** given D2's K₃-face-participation counting rule, D1 is a corollary by polytope combinatorics alone — deg(v) ≥ 3 > 2 (edge) > 1 (face) > 0 (centroid) for any simplicial 3-polytope with V ≥ 4.
+- **Premise B (SR-nn-pair):** given SR-nn-pair physics with range λ_nn << L_αα (inherited from SS-5 pair physics and SS-7's alpha-alpha contact distance L_αα = 2.37 fm), vertex wins via Yukawa localization, independent of D2.
+
+Numerical evaluation at the octahedron (N_α = 6) and gyroelongated square bipyramid (N_α = 10) — the two Phase 1b predictions matched to <1.5% — confirms gap factors of 2.0× and 2.5× under Premise A, 1.57× and 1.59× under Premise B.
+
+First-principles derivation of either premise from programme-level axioms alone is not yet delivered. Since both premises suffice and both reduce to SS-5/SS-7-inherited substrate, the remaining first-principles work is consolidated with **OPEN-SS-27** (see §5 of the sketch and §10 below). D1 and D2 are coupled, not independent — Premise A makes D1 a corollary of D2, so deriving D2 from primitives delivers D1 as an automatic consequent.
 
 ### 6.3 D2 — K₃-edge coupling at the host alpha-vertex
 
@@ -180,6 +187,8 @@ The scale at which this K₃ calculation is run has shifted: SS-5 runs it over a
 **Connection to A6' (Walk-Dimension Gauge Principle).** A6' currently describes two coupling regimes at the 600-cell cage scale: the **edge sector** (1D walks, coupling to "2 internal K₃ bonds per vertex", U(1)) and the **face sector** (2D walks, coupling to "z = 12 incident bonds in the closed neighbourhood", SU(3)). The SS-8 interstitial-coupling pattern, $\deg(v) = 2E/V$ averaged across $v$, sits between these two regimes and is not currently spanned by A6' as written. Whether D2 can be derived as a nucleon-scale analog of A6' (with $\deg(v) = 2E/V$ emerging as the correct coordination number at the interstitial-alpha scale) is the content of **OPEN-SS-27** (see §10).
 
 **Status.** D2 is a **paper-level structural hypothesis** at the same tier SS-7 C3 lives at: supported empirically by Phase 1b's 2E/V fit, supported geometrically by the Pattern-6 scale-recurrence argument, but not derived from the programme-level axiom stack. OPEN-SS-27 targets the A6'-extension derivation.
+
+**D1–D2 coupling note (added 21 April 2026).** D1 and D2 are not logically independent. Under the Premise A path of `SS-8_D1_ssv_minimization_sketch.md` §4, D1 (vertex localization) is a corollary of D2 (K₃-face-participation counting) plus simplicial polytope combinatorics — deg(v) ≥ 3 > 2 > 1 > 0 holds for any simplicial 3-polytope with V ≥ 4. The reverse implication does not hold: D1 alone does not determine the per-face strength. D2 therefore stands as the **primary paper-level hypothesis** of Layer 2b, with D1 its localization-consequent. Deriving D2 from programme-level axioms (the content of OPEN-SS-27) automatically delivers D1 as a corollary; the original OPEN-SS-26 (first-principles D1 derivation) is subsumed accordingly (§10).
 
 ### 6.4 D3 — Bulk-regime averaging
 
@@ -290,25 +299,31 @@ The systematic +0.1 to +0.3 residual in the $N_\alpha \geq 8$ regime is predicti
 
 Following the SS-7 precedent (OPEN-SS-18 splitting into -22, -23, -24 as distinct numbered problems with separate PH records), the H2' derivation target from findings §8.7 splits into three sub-problems:
 
-### OPEN-SS-26 — Derivation of D1 (interstitial localization)
+### OPEN-SS-26 — Derivation of D1 (interstitial localization) — **partially resolved 21 April 2026**
 
 **Statement.** Derive from A2 (600-cell lattice), A5 (propagation efficiency), A11 (lattice scale), and an SSV energy-minimization principle that an interstitial neutron, when added to an alpha-cluster bound state, preferentially localizes near one of the $N_\alpha$ alpha-vertices rather than at a face-center, edge-midpoint, or polytope-interior site.
 
-**Target:** Show that the SSV stress-energy functional evaluated over the lattice DP-sea has a local minimum at each alpha-vertex, and that these minima are deeper than minima at face-centers, edge-midpoints, or the polytope centroid. Layer 1b's empirical elimination (findings §8.2–8.3) motivates the claim but does not derive it.
+**Status update (21 April 2026).** Partially resolved by `SS-8_D1_ssv_minimization_sketch.md`. D1 promotes from structural hypothesis to **conditional theorem** under either of two independent sufficient premises: (A) the D2 counting rule makes D1 a corollary via simplicial polytope combinatorics (gap factor 2.0× for octahedron, 2.5× for GESBP); (B) SR-nn-pair physics with λ_nn << L_αα makes D1 a Yukawa-localization consequence, independent of D2 (gap factor 1.57× and 1.59× respectively). Numerical evaluation at both test polytopes confirms vertex-preference under both models.
 
-**Target paper:** SS-8 v0.1 if tractable in-paper; otherwise deferred to an SS-10 candidate.
+**Remaining content absorbed into OPEN-SS-27.** The residual first-principles work — deriving either Premise A (D2 counting rule) or Premise B (SR-nn-pair scaling) from programme-level axioms alone — reduces to the derivation of D2, since Premise A plus the simplicial combinatorics gives D1 automatically, and Premise B and Premise A are empirically-equivalent paths at the conditional-theorem tier. OPEN-SS-27 (D2 derivation) therefore subsumes the remaining OPEN-SS-26 content.
 
-**Relationship:** Parallel to OPEN-SS-24 (C4 derivation) but at the interstitial scale rather than the alpha-polytope scale.
+**Target paper:** conditional theorem now in sketch; full first-principles content merged into OPEN-SS-27's scope.
 
-### OPEN-SS-27 — Derivation of D2 (K₃-edge coupling at interstitial scale)
+**Relationship:** Originally parallel to OPEN-SS-24 (C4 derivation). Post-resolution: D1 is a corollary of D2; OPEN-SS-26 is effectively a sub-clause of OPEN-SS-27.
+
+**Registry action pending:** create PH-OPEN-SS-26 marking partial resolution with reference to this sketch.
+
+### OPEN-SS-27 — Derivation of D2 (K₃-edge coupling at interstitial scale) — **expanded scope 21 April 2026**
 
 **Statement.** Extend A6' (Walk-Dimension Gauge Principle) from the 600-cell cage scale to the (interstitial-nucleon)-(alpha-vertex) contact scale, deriving that the coupling coordination number equals $\deg(v)$ (the K₃-edge count incident at the host vertex) rather than the edge-sector value $z_{\text{edge}} = 2$ or the face-sector value $z_{\text{face}} = 12$.
+
+**Scope expansion (21 April 2026).** Post the SSV-minimization sketch, OPEN-SS-27 additionally subsumes the residual first-principles content of OPEN-SS-26. Deriving D2 from programme-level axioms automatically delivers D1 via the D1–D2 coupling (§6.3 of this note). OPEN-SS-27 is therefore the single substantive Layer 2b first-principles target for SS-8.
 
 **Target:** A6' currently distinguishes 1D edge walks (U(1), $z_{\text{edge}} = 2$) from 2D face walks (SU(3), $z_{\text{face}} = 12$). The interstitial-neutron coupling pattern ($\deg(v) = 2E/V$) is neither; it is a new regime at the nucleon-scale contact manifold. A fully-derived D2 would either (a) show that the A6' principle extends to this regime with $\deg(v)$ as the correct coordination count, or (b) introduce a new principle A6'' for nucleon-scale contacts.
 
 **Target paper:** SS-8 v0.1 if tractable; otherwise an A6'-extension paper (SM-series candidate) or SS-11 candidate.
 
-**Relationship:** Extension of A6' to a new walk regime.
+**Relationship:** Extension of A6' to a new walk regime. Now also the derivation target for D1 (via D1–D2 coupling).
 
 ### OPEN-SS-28 — Derivation of D3 (bulk-regime averaging and residual structure)
 
@@ -324,9 +339,9 @@ Following the SS-7 precedent (OPEN-SS-18 splitting into -22, -23, -24 as distinc
 
 SS-7 left behind: **OPEN-SS-23** (odd-A and non-alpha-chain, retargeted to SS-8), **OPEN-SS-24** (C4 → theorem, SS-9 candidate), **OPEN-SS-25** (DP-sea Coulomb screening, SS-7-adjacent).
 
-SS-8 (this Phase 1b work) adds: **OPEN-SS-26** (D1), **OPEN-SS-27** (D2), **OPEN-SS-28** (D3), all as targets for first-principles mechanism derivation that H2'-as-a-hypothesis leaves open.
+SS-8 (this Phase 1b work) adds: **OPEN-SS-26** (D1, partially resolved 21 April 2026 — conditional theorem delivered, remainder subsumed by OPEN-SS-27), **OPEN-SS-27** (D2, expanded scope — now includes the residual D1 content), **OPEN-SS-28** (D3, unchanged). The net substantive first-principles count for SS-8's Layer 2b is therefore two open problems (OPEN-SS-27 and OPEN-SS-28), reduced from three by the D1–D2 coupling discovery.
 
-None of these five change the programme-level axiom count (still 9 as of SS-7 v1.2). All are paper-level hypothesis derivation targets.
+None of these changes the programme-level axiom count (still 9 as of SS-7 v1.2). All are paper-level hypothesis derivation targets.
 
 ---
 
