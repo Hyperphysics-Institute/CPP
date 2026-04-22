@@ -29,9 +29,13 @@
 
 ### Step 2: Check what happened last
 
-- Read the most recent transcript in `series_standard_model/development-transcripts/`
-- Check `/mnt/transcripts/` for raw conversation logs
-- Check if Thomas has Grok/Copilot exchanges to share
+- **If Thomas names a specific paper (e.g., "SS-8", "SM-11"), first fetch its curated development transcript:**
+  `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/development-SS-8.md`
+  (or replace `series_strong` with `series_masses` / `series_standard_model` as appropriate for the series)
+  This file is the **canonical narrative record** of that paper's development, preserved verbatim at each section-end commit per `operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §11 below for the full rule.
+- Read the most recent transcript in `series_standard_model/development-transcripts/` if no specific paper is named.
+- Check `/mnt/transcripts/` for raw conversation logs.
+- Check if Thomas has Grok/Copilot exchanges to share.
 
 ### Step 3: Ask Thomas
 
@@ -228,6 +232,56 @@ Axiom count: 7 (plus A8', A9'). Predictions: 15+. Ratio: 0.47.
 8. **OPEN-SS-16 (Layer B Gap):** Derive operator formalism and system-bath coupling from CPP primitives. Closes the Layer B gap across SM-3, SS-3, and all future papers. **Highest-leverage single piece of work remaining.** Target paper: SS-4.
 
 Full list: `Research_Frontier.md` and `future_projects.md`.
+
+---
+
+## 8.5 Active Work Pointer — fetch the paper's development transcript first
+
+**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-11", "SS-4"), fetch that paper's curated development transcript as the first concrete action, BEFORE attempting any substantive work.**
+
+The pattern:
+
+```
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/development-<PAPER-ID>.md
+```
+
+where `<series-folder>` is one of:
+- `series_strong` (SS-N papers)
+- `series_standard_model` (SM-N papers)
+- `series_masses` (SM-N mass-sector papers)
+- `series_quantum` (QM-N papers)
+- `series_electroweak` (EW-N papers)
+- `series_relativity` (SR-N papers)
+- `series_foundations` (SD-N papers)
+
+Example (SS-8):
+```
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/development-SS-8.md
+```
+
+### Why this matters
+
+The curated development transcript is the **canonical narrative record** of a paper's development — produced and committed at each section-end per `operating_system.md`'s context-pressure preservation checklist (§"Context-pressure preservation checklist"). It preserves verbatim:
+- Timeline and session-by-session outputs
+- Reviewer engagements and their outcomes
+- Registry actions opened, partially resolved, or pending
+- Decisions that were made (and why)
+- Next-session options with current priorities
+
+**Compaction summaries and training data do NOT preserve these specifics.** Numerical results get rounded, decision rationales get compressed, and registry statuses get flattened. If you start substantive work from a compaction summary without reading the development transcript, you will either (a) ask Thomas to re-explain state he already documented, or (b) guess wrong about the current conditional-theorem tiers, consolidated open problems, or reviewer positions.
+
+### If no development transcript exists yet for the named paper
+
+Some papers haven't reached the curated-transcript stage yet. If the fetch returns 404, fall back to:
+1. The paper's `.tex` file and its internal CHANGELOG header.
+2. `Research_Frontier.md` for related open problems.
+3. Ask Thomas directly: "I don't see a development-[paper].md in the repo — can you point me to where the current state of this paper lives?"
+
+**Do not improvise state from training data.** A paper named but without a curated transcript is a signal that either the paper is very early or the transcript hasn't been created yet — both cases warrant asking rather than guessing.
+
+### Maintenance rule for development transcripts
+
+Update the transcript at each section-end commit and at every context-pressure crossing (per `operating_system.md`'s context-pressure preservation checklist). Curate directly from the active session — do NOT regenerate from a session summary, which is lossy by design.
 
 ---
 
