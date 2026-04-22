@@ -823,6 +823,39 @@ These intermediate triggers prevent registry drift between the full v1.0 documen
 ### Infrastructure
 - Descriptive lowercase with underscores: `founders_vision.md`, `theory_overview.md`
 
+### Per-paper subfolder convention (adopted 22 April 2026)
+
+Papers whose development begins on or after 22 April 2026 use a per-paper subfolder under `series_[name]/papers/`, rather than the flat-file convention used by earlier papers. The structure is:
+
+```
+series_[name]/papers/[PAPER-ID]/
+├── README.md                  ← folder overview + transition notes
+├── [PAPER-ID]_paper.tex       ← the paper (canonical filename, no version suffix)
+├── [PAPER-ID]_paper.pdf       ← current build
+├── reviews/                   ← verbatim reviewer correspondence
+│   ├── round1_[reviewer].md   ← one file per reviewer per round per target
+│   ├── round2_[reviewer]_on_[target].md
+│   └── README.md              ← catalog of reviews by round/reviewer/target
+├── letters/                   ← Claude Opus correspondence
+│   ├── [PAPER-ID]_[round]_review_request.md
+│   ├── [PAPER-ID]_[round]_synthesis_letter.md
+│   └── [PAPER-ID]_correction_letter_to_[reviewer].md
+├── sketches/                  ← derivation notes, findings, exploratory analyses
+├── scripts/                   ← Python verification scripts
+├── founders_voice/            ← Thomas's recorded intuitions and organizational notes
+└── documentation_suite/       ← 7-file companion suite (created at v1.0)
+```
+
+**Lazy folder creation.** Do not create subfolders that have no content yet. A brand-new paper with only a sketch has `sketches/` and nothing else. `documentation_suite/` is created when the v1.0 milestone is reached.
+
+**What goes in `founders_voice/`.** Thomas's organizational vision for the paper, gedanken experiments, pattern-recognition intuitions, decisions about structure and presentation, recorded verbatim or as he provides them. This is analogous to `letters/` for Claude and `reviews/` for external reviewers: it captures the founder's voice as a first-class artefact class of the paper's development record. Contributions may be occasional — Thomas does not need to produce a founder's-voice entry for every session.
+
+**Transition rule for existing papers.** Papers that existed before 22 April 2026 remain in the flat `series_[name]/papers/` layout. Do not migrate them unless a specific reason arises (e.g., the flat layout becomes unmanageable, or the paper is reopened for substantive revision). When migrating, use `git mv` to preserve history; update every cross-reference in the development transcript, letters, and bootup.md.
+
+**First paper using this convention.** SS-8 — see `series_strong/papers/SS-8/` and its README for the transition-period layout (canonical artefacts at flat `series_strong/papers/` location, reviews subfolder active).
+
+**Why the change.** The flat convention was shaped by the prior workflow in which Thomas alone moved files from Downloads into the repo; ergonomic considerations favoured a single destination directory. Under the Git-Bash-Patch workflow (see §13), Claude generates files directly in the sandbox and patches them into the repo, so folder depth imposes no ergonomic cost. Subfolders then become a clean win: they separate artefact classes with different maintenance rhythms (reviews are append-only, sketches iterate, the paper .tex overwrites in place), they make review archives discoverable without markdown-noise flooding, and they let the per-paper workspace scale as more reviewer rounds accumulate.
+
 ---
 
 ## 12. The AI Team: Roles and Specialties
@@ -849,6 +882,61 @@ These intermediate triggers prevent registry drift between the full v1.0 documen
 - **Limitations:** Tends toward philosophical rejection ("this isn't real physics") rather than constructive critique; may miss the forest for the trees
 - **Best used for:** Final review before OSF registration; identifying what a hostile referee would say
 - **Notable contributions:** Scheme-dependence criticism (SM-8); circular-validation catch (SM-10) — the single most valuable insight across 10 reviews
+
+---
+
+## 13. The Git-Bash-Patch Workflow (adopted 22 April 2026)
+
+Claude's sandbox has no push credentials to origin (by design — Anthropic's infrastructure does not hold GitHub tokens for Thomas's account). Commits authored by Claude therefore reach origin via a patch handoff rather than a direct push. The workflow is deterministic, recoverable, and preserves Claude's authorship in git history.
+
+### The nine-step flow
+
+1. **Discussion and analysis in chat.** Thomas and Claude work through the substantive problem. No file writes yet.
+2. **Claude clones or pulls the repo into its sandbox** at `/home/claude/CPP` if not already present. Branch from `main` if the work is non-trivial.
+3. **Claude drafts artefacts.** Files are created, edited, and verified in the sandbox. Claude sets the committer identity once per sandbox session: `git config user.email "noreply@anthropic.com"` and `git config user.name "Claude Opus"`.
+4. **Section-end batch commit in sandbox.** When the discrete target is complete, Claude stages the artefacts and commits with a section-and-deliverable-style message (see §11 "Commit cadence" and "Commit message convention").
+5. **Patch generation.** `git format-patch -1 HEAD --output=/mnt/user-data/outputs/NNNN-description.patch` (or `-N HEAD~N..HEAD` for multi-commit batches).
+6. **Claude presents the patch via `present_files`.** The patch appears in Thomas's artefact panel as a download.
+7. **Thomas downloads the patch** to local Downloads folder.
+8. **Thomas applies the patch locally:**
+   ```
+   cd ~/Documents/GitHub/CPP
+   git am ~/Downloads/NNNN-description.patch
+   ```
+9. **Thomas pushes to origin:** `git push origin main`. The commits now exist on GitHub with Claude's authorship intact.
+
+Optional tenth step: Thomas deletes the local patch file. Not required — the commit is already on origin.
+
+### What makes it work
+
+- **Authorship preservation.** `git am` preserves the commit author and message exactly as Claude wrote them; Thomas appears in git history as the committer who applied the patch, not as the author.
+- **Human-in-the-loop control.** Thomas can review the patch before applying, reject it, or amend it. The handoff is explicit.
+- **Git-native.** No ad-hoc file copying, no manual reconstruction. Patches are the standard interchange format for disconnected git workflows.
+- **Recoverable failure modes.** Every failure has a documented recovery path (below).
+
+### Failure modes and recovery
+
+**Baseline drift.** Patch was generated against Claude's sandbox tip X, but Thomas's origin has moved past X (perhaps Thomas made commits directly, or another session pushed first). Symptom: `error: patch does not apply`. Recovery: Claude re-pulls origin into the sandbox, rebases or regenerates the patch against the actual current tip.
+
+**Duplicate apply.** Patch was already applied (e.g., Thomas downloaded and applied it earlier, now trying again). Symptom: `already exists in index` or similar. Recovery: `git am --skip` if the patch is definitely already in history; `git am --abort` and verify state otherwise.
+
+**Claude's sandbox out of sync.** Claude modifies files in the sandbox against an outdated clone, not noticing that origin has advanced. Symptom: generated patch does not apply cleanly. Prevention: Claude always runs `git pull origin main` (or equivalent re-clone) at session start before any edits.
+
+**Identity not set.** Commit is authored with the default sandbox identity, not `Claude Opus <noreply@anthropic.com>`. Symptom: git history attributes the commit to `root` or similar. Recovery: amend the commit with `git commit --amend --author="Claude Opus <noreply@anthropic.com>"` before generating the patch. Prevention: set identity as the first action in a new sandbox session.
+
+### When to use each flow
+
+- **Git-Bash-Patch** — structural edits, multi-file changes, new files, any case where Claude's authorship should be recorded in git history. This is the default for substantive session work.
+- **Direct-file-copy (legacy)** — single-file one-off edits Thomas makes himself, when Claude's authorship is not relevant. Thomas may still use this for his own edits.
+- **Claude Code (not yet in use for CPP)** — agentic-coding sessions where Claude has direct push access. Not currently configured for CPP; mentioned here for completeness.
+
+### Commit message conventions apply
+
+Patches inherit the commit message Claude wrote in the sandbox. Follow §11 "Commit message convention for section-end batches": title is `[series/paper] [section name] — [one-line deliverable summary]`; body is a bullet list of files changed with one-line purpose each, plus cross-references to any opened or resolved OPEN-SS problems and any pending registry ratifications.
+
+### Relation to the per-paper subfolder convention
+
+The Git-Bash-Patch workflow is what made the per-paper subfolder convention (§11) ergonomic. Under the prior flat-files workflow, Thomas moved files one at a time from Downloads into `series_[name]/papers/`; subdirectories multiplied the manual steps. Under Git-Bash-Patch, the patch encodes the entire folder structure and `git am` creates any missing directories automatically. Deeper hierarchy is now free.
 
 ---
 

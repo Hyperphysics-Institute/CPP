@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/bootup.md`
 **Purpose:** Load this file at the start of every new AI session working on CPP. It provides everything needed to continue productive work.
-**Last updated:** 20 April 2026 (§9 now points at `templates/paper_completion_checklist.md` as authoritative)
+**Maintenance principle:** This file is infrastructure. It should rarely be updated — only when conventions, repository structure, or orientation protocols change. For current state (results, active problems, papers in progress), follow the pointers in §3 to the living tracking documents; do not rely on bootup for current state.
 
 ---
 
@@ -29,17 +29,16 @@
 
 ### Step 2: Check what happened last
 
-- **If Thomas names a specific paper (e.g., "SS-8", "SM-11"), first fetch its curated development transcript:**
+- **If Thomas names a specific paper (e.g., "SS-8", "SS-2", "SM-10"), first fetch its curated development transcript:**
   `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/development-SS-8.md`
-  (or replace `series_strong` with `series_masses` / `series_standard_model` as appropriate for the series)
-  This file is the **canonical narrative record** of that paper's development, preserved verbatim at each section-end commit per `operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §11 below for the full rule.
-- Read the most recent transcript in `series_standard_model/development-transcripts/` if no specific paper is named.
-- Check `/mnt/transcripts/` for raw conversation logs.
+  (replace `series_strong` with the appropriate series folder per §8.5 below, and `SS-8` with the paper ID)
+  This file is the **canonical narrative record** of that paper's development, preserved verbatim at each section-end commit per `operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §8.5 below for the full rule.
+- Development transcripts now live per-paper at `series_[name]/papers/development-[ID].md`. If no paper is named, check `/mnt/transcripts/` for raw conversation logs instead.
 - Check if Thomas has Grok/Copilot exchanges to share.
 
-### Step 3: Ask Thomas
+### Step 3: Proceed with the queued work
 
-"What would you like to work on today?"
+Unless Thomas redirects in his opening message, proceed with the next-session items listed at the end of the development transcript fetched in Step 2. A development transcript whose final section is titled something like "Open items for next session" or "Next-session task list" is giving you the default action. Execute it. If the transcript has no such list, or if Thomas's opening message gives a different direction, follow that instead.
 
 ### If resuming after buffer overflow:
 
@@ -102,18 +101,25 @@ CPP/
 │   └── [PH-[ID].md files]
 │
 ├── ── PAPER SERIES ──
-├── series_standard_model/            ← SM-1 through SM-10
+├── series_standard_model/            ← SM-N papers (Standard Model, includes mass sector)
 │   ├── papers/                       ← .tex, .pdf, .bib files
-│   ├── [type]-SM-N.md                ← 7 documentation suite files per paper
+│   │   └── [PAPER-ID]/               ← per-paper subfolder (for papers adopted ≥ 22 Apr 2026)
+│   │       ├── reviews/              ← verbatim reviewer correspondence
+│   │       ├── letters/              ← correspondence from Claude (synthesis, review requests)
+│   │       ├── sketches/             ← derivation notes, findings, exploratory analyses
+│   │       ├── scripts/              ← Python verification scripts
+│   │       ├── founders_voice/       ← Thomas's recorded intuitions and organizational notes
+│   │       └── documentation_suite/  ← 7-file companion suite (created at v1.0)
+│   ├── [type]-SM-N.md                ← 7 documentation suite files per paper (flat, for pre-subfolder papers)
 │   ├── figures/figures-SM-N/         ← SVG + PDF figures
 │   ├── notebooks/                    ← Verification notebooks
-│   └── development-transcripts/      ← Curated conversation logs
+│   └── development-transcripts/      ← Curated conversation logs (legacy location)
 │
-├── series_electroweak/               ← EW-1 through EW-5
-├── series_quantum_mechanics/         ← QM-1 through QM-6
-├── series_relativity/                ← SR-1
-├── series_strong/                    ← SS-1
-├── series_foundations/               ← SD-1 through SD-5
+├── series_electroweak/               ← EW-N papers
+├── series_quantum_mechanics/         ← QM-N papers
+├── series_relativity/                ← SR-N papers
+├── series_strong/                    ← SS-N papers (Strong Sector)
+├── series_foundations/               ← SD-N papers (foundations/superdeterminism)
 │
 └── archive/                          ← Superseded material
 ```
@@ -193,51 +199,33 @@ CPP/
 
 ---
 
-## 7. Strongest Current Results (April 2026)
+## 7. Current Results
 
-### Zero-Parameter Formula (SM-8 v4.1 + SM-9 v2.2)
+For current headline results, strongest predictions, and scorecard, read:
 
-```
-M_q = m_e (z/φ) V^(7/3)           q = s, c, b
-M_t = m_e (z/φ) V_t^(7/3) × 16   q = t
-```
+- **`README.md`** — public-facing results table (updated each paper)
+- **`predictions.md`** — every quantitative prediction with PDG comparison and status
+- **`theory-overview.md`** — reference card (formulas, scorecard, key numbers)
 
-RMS = 2.1% across four orders of magnitude, **zero free parameters**.
-
-| Prediction | CPP | Experimental | Error | Params |
-|-----------|-----|-------------|-------|--------|
-| m_s (zero-param) | 96.3 MeV | 93.4 MeV | +3.1% | 0 |
-| m_c (zero-param) | 1,249 MeV | 1,270 MeV | −1.6% | 0 |
-| m_b (zero-param) | 4,115 MeV | 4,180 MeV | −1.6% | 0 |
-| m_t (zero-param) | 169,571 MeV | 172,760 MeV | −1.8% | 0 |
-| m_t (calibrated, v3.x) | 172,800 MeV | 172,760 MeV | 0.02% | 2 |
-| sin²θ_W | 3/(8φ) = 0.2312 | 0.23121 | 0.24% | 0 |
-| m_μ (Koide) | 105.66 MeV | 105.66 MeV | <0.01% | 1 cal |
-| m_τ (Koide) | 1776.9 MeV | 1776.9 MeV | <0.01% | 1 cal |
-| # Generations | 3 | 3 | exact | 0 |
-
-Axiom count: 7 (plus A8', A9'). Predictions: 15+. Ratio: 0.47.
+Do not rely on bootup for current result values. Results drift between papers; the authoritative sources drift with them.
 
 ---
 
-## 8. Currently Active Open Problems
+## 8. Current Active Open Problems
 
-1. **OPEN-P-SM-cage-1:** Rigorous derivation of α = 7/3 from cage geometry (partially resolved in SM-9; FEM target in SM-10)
-2. **OPEN-P-SM-cage-7:** Why does C(n,2) predict m_b/m_s to 0.6%?
-3. **OPEN-P-SM-cage-3:** Connect cage 2/3 fraction to Koide K = 2/3
-4. **OPEN-P-SM-cage-6:** Apply cage model to leptons
-5. **OPEN-P-FV-1:** SSV_abs → Lorentz factor (SR-1 re-derivation)
-6. **SM-10 FEM Simulation:** First-principles quark mass from chain network simulation — the #1 priority forward project. Phase 1 (CPU proof-of-concept) can be attempted immediately.
-7. **Strange quark residual (+3.1%):** Largest error in zero-parameter formula. Candidate explanations: absent surface blanket, chiral condensate coupling, ZBW instability.
-8. **OPEN-SS-16 (Layer B Gap):** Derive operator formalism and system-bath coupling from CPP primitives. Closes the Layer B gap across SM-3, SS-3, and all future papers. **Highest-leverage single piece of work remaining.** Target paper: SS-4.
+For the live dashboard of open problems, conjectures, and propositions with status and dependencies:
 
-Full list: `Research_Frontier.md` and `future_projects.md`.
+- **`Research_Frontier.md`** — the canonical dashboard for all open problems across series
+- **`future_projects.md`** — prioritised research targets
+- **`problem_histories/`** — narrative histories of major open problems
+
+Do not rely on bootup for the open-problem list. Active problems are created, resolved, and consolidated frequently; `Research_Frontier.md` is the single source of truth.
 
 ---
 
 ## 8.5 Active Work Pointer — fetch the paper's development transcript first
 
-**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-11", "SS-4"), fetch that paper's curated development transcript as the first concrete action, BEFORE attempting any substantive work.**
+**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), fetch that paper's curated development transcript as the first concrete action, BEFORE attempting any substantive work.**
 
 The pattern:
 
@@ -246,13 +234,12 @@ https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder
 ```
 
 where `<series-folder>` is one of:
-- `series_strong` (SS-N papers)
-- `series_standard_model` (SM-N papers)
-- `series_masses` (SM-N mass-sector papers)
-- `series_quantum` (QM-N papers)
+- `series_strong` (SS-N papers — strong sector)
+- `series_standard_model` (SM-N papers — Standard Model, including mass-sector work)
+- `series_quantum_mechanics` (QM-N papers)
 - `series_electroweak` (EW-N papers)
 - `series_relativity` (SR-N papers)
-- `series_foundations` (SD-N papers)
+- `series_foundations` (SD-N papers — superdeterminism)
 
 Example (SS-8):
 ```
@@ -349,18 +336,17 @@ Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
 
 ---
 
-## 12. Papers in the Programme (April 2026)
+## 12. Papers in the Programme
 
-| Series | Papers | Status |
-|--------|--------|--------|
-| Standard Model (SM) | SM-1 through SM-10 | SM-1–7 on OSF; SM-8 v4.1 ready; SM-9 v2.2 ready; SM-10 v0.1 proposal |
-| Electroweak (EW) | EW-1 through EW-5 | On OSF |
-| Quantum Mechanics (QM) | QM-1 through QM-6 | On OSF |
-| Relativity (SR) | SR-1 | On OSF |
-| Strong Sector (SS) | SS-1, SS-2, SS-3 | SS-1 on OSF; SS-2 v1.0 pending; SS-3 v1.3 submission-ready |
-| Foundations (SD) | SD-1 through SD-5 | On OSF |
+For the current paper list with IDs, titles, versions, and OSF status:
 
-Total: 28 papers. Full details: `paper_catalog.md`.
+- **`paper_catalog.md`** — master catalog across all series
+- **`README.md`** — public paper table
+- **`series_[name]/README.md`** — per-series overview
+
+Series codes: SM (Standard Model), SS (Strong Sector), EW (Electroweak), QM (Quantum Mechanics), SR (Relativity), SD (Foundations/Superdeterminism). See §11 for naming conventions.
+
+Do not rely on bootup for paper counts or versions; `paper_catalog.md` is the single source of truth.
 
 ---
 

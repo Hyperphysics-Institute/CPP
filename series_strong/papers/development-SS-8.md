@@ -283,23 +283,24 @@ Authorship: `Claude Opus <noreply@anthropic.com>` for sessions where Claude drov
 
 ## 12. Preserved reviewer content
 
-Round 1 reviews:
-- Copilot Round 1 (on H2' note) — substantive, structural recommendations.
-- Grok Round 1 (on H2' note) — substantive, first-principles attack offer.
-- ChatGPT Round 1 (on H2' note) — misread as deuteron derivation; retracted.
-- ChatGPT Round 1 re-review (after correction letter) — full protocol compliance; named four post-correction priorities including Pattern 6 necessity.
+Full verbatim text of all reviewer correspondence is now committed to `series_strong/papers/SS-8/reviews/` (adopted per the per-paper subfolder convention documented in `templates/operating_system.md` §11). See `reviews/README.md` for the catalog. Summary pointers below:
 
-Round 2 reviews:
-- Copilot Round 2 (on D1 sketch) — endorses conditional theorem tier and consolidation; flags seven areas for v0.1 drafting.
-- Grok Round 2 (on D1 sketch) — endorses conditional theorem tier, consolidation, and Position B on Pattern 6.
-- ChatGPT Round 2 (on D1 sketch) — substantive Q2 algebraic-reduction test proposed.
+Round 1 reviews (on H2' note):
+- `reviews/round1_copilot.md` — substantive, structural recommendations.
+- `reviews/round1_grok.md` — substantive, first-principles attack offer.
+- `reviews/round1_chatgpt_initial.md` — misread as deuteron derivation; retracted. Preserved because the H2'/²H notation collision it exposes directly motivated the "explicit not-deuteron disambiguation" recommendation.
+- `reviews/round1_chatgpt_corrected.md` — ChatGPT's re-review after correction letter; full protocol compliance; named four post-correction priorities including Pattern 6 necessity. This is the canonical Round 1 ChatGPT position.
 
-Round 2 analysis reviews (on Q2 analysis document):
-- Grok — endorses without reservation; "categorically resolves ChatGPT's Q2 concern."
-- Copilot — endorses; flags language clarification on independence meaning.
-- ChatGPT — substantive critique; Level-1/2/3 independence decomposition; refined language adopted.
+Round 2 reviews on the Round 2 request package (letter + D1 sketch + note updates):
+- `reviews/round2_copilot_on_review_request.md` — Q1–Q7 answers; endorses conditional theorem tier and consolidation.
+- `reviews/round2_grok_on_review_request.md` — Q1–Q7 answers; endorses conditional theorem, consolidation, and Position B on Pattern 6.
+- `reviews/round2_chatgpt_on_D1_sketch.md` — substantive Q2 algebraic-reduction test proposed (triggered the Q2 analysis document).
+- `reviews/round2_chatgpt_on_review_request.md` — meta-review of the review-request letter itself.
 
-Full verbatim text of reviewer content is preserved in session transcripts (may be lossy across compaction) and in paste-dumps within Thomas's session record.
+Round 2 reviews on the Q2 algebraic-reduction analysis:
+- `reviews/round2_grok_on_Q2_analysis.md` — endorses without reservation; "categorically resolves ChatGPT's Q2 concern."
+- `reviews/round2_copilot_on_Q2_analysis.md` — endorses; flags language clarification on independence meaning.
+- `reviews/round2_chatgpt_on_Q2_analysis.md` — substantive critique; Level-1/2/3 independence decomposition; refined language adopted.
 
 ---
 
