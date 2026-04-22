@@ -23,6 +23,7 @@
 | 5 | `Research_Frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min |
 | 6 | `theorem-registry.md` | What we've proved — all theorems by series with axiom dependencies | 5 min |
 | 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min |
+| 8 | `templates/AI_team_expectations.md` | Team-level conventions, per-AI expectations, identified failure modes | 5 min |
 
 **For sessions involving open problem work or repo restructuring**, also read:
 - `templates/Research_Frontier_Architecture.md` — the three-layer architecture (dashboard → problem histories → papers)
@@ -223,11 +224,21 @@ Do not rely on bootup for the open-problem list. Active problems are created, re
 
 ---
 
-## 8.5 Active Work Pointer — fetch the paper's development transcript first
+## 8.5 Active Work Pointer — fetch the paper's handover document first
 
-**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), fetch that paper's curated development transcript as the first concrete action, BEFORE attempting any substantive work.**
+**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), fetch that paper's session-handover document as the first concrete action, BEFORE attempting any substantive work.**
 
-The pattern:
+### URL patterns
+
+Two patterns are currently in use. Try the per-paper-subfolder pattern first (used for papers adopted 22 April 2026 forward); fall back to the legacy-flat pattern (used for earlier papers).
+
+**Per-paper-subfolder pattern (current convention):**
+
+```
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md
+```
+
+**Legacy-flat pattern (pre-22-April papers):**
 
 ```
 https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/development-<PAPER-ID>.md
@@ -241,32 +252,39 @@ where `<series-folder>` is one of:
 - `series_relativity` (SR-N papers)
 - `series_foundations` (SD-N papers — superdeterminism)
 
-Example (SS-8):
+Example (SS-8, using current per-paper-subfolder pattern):
 ```
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/development-SS-8.md
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/SS-8/documentation_suite/handover-SS-8.md
+```
+
+Example (SM-8, using legacy-flat pattern):
+```
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_standard_model/papers/development-SM-8.md
 ```
 
 ### Why this matters
 
-The curated development transcript is the **canonical narrative record** of a paper's development — produced and committed at each section-end per `operating_system.md`'s context-pressure preservation checklist (§"Context-pressure preservation checklist"). It preserves verbatim:
-- Timeline and session-by-session outputs
-- Reviewer engagements and their outcomes
-- Registry actions opened, partially resolved, or pending
-- Decisions that were made (and why)
-- Next-session options with current priorities
+The handover document (or its legacy-flat predecessor `development-[ID].md`) is the **canonical session-continuity state record** — produced and committed at each session close per `operating_system.md`'s context-pressure preservation checklist. It names:
+- What paper is active and what state it is in
+- What section-end was most recently closed
+- What open items are queued for next session (with priority ordering)
+- What registry updates are pending ratification
+- Pointers to verbatim artefacts (reviews, letters, sketches, scripts) that hold the substantive content
 
-**Compaction summaries and training data do NOT preserve these specifics.** Numerical results get rounded, decision rationales get compressed, and registry statuses get flattened. If you start substantive work from a compaction summary without reading the development transcript, you will either (a) ask Thomas to re-explain state he already documented, or (b) guess wrong about the current conditional-theorem tiers, consolidated open problems, or reviewer positions.
+The handover is a bounded state snapshot — a few hundred lines, not a full narrative. For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention also provides `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map to verbatim artefacts). See `templates/operating_system.md` §11 for the three-file convention.
 
-### If no development transcript exists yet for the named paper
+**Compaction summaries and training data do NOT preserve these specifics.** Numerical results get rounded, decision rationales get compressed, and registry statuses get flattened. If you start substantive work from a compaction summary without reading the handover, you will either (a) ask Thomas to re-explain state he already documented, or (b) guess wrong about the current conditional-theorem tiers, consolidated open problems, or reviewer positions.
 
-Some papers haven't reached the curated-transcript stage yet. If the fetch returns 404, fall back to:
+### If no handover document exists yet for the named paper
+
+Some papers haven't reached the handover-document stage yet. If both fetch patterns return 404, fall back to:
 1. The paper's `.tex` file and its internal CHANGELOG header.
 2. `Research_Frontier.md` for related open problems.
-3. Ask Thomas directly: "I don't see a development-[paper].md in the repo — can you point me to where the current state of this paper lives?"
+3. Ask Thomas directly: "I don't see a handover or development document for this paper in the repo — can you point me to where the current state lives?"
 
-**Do not improvise state from training data.** A paper named but without a curated transcript is a signal that either the paper is very early or the transcript hasn't been created yet — both cases warrant asking rather than guessing.
+**Do not improvise state from training data.** A paper named but without a handover document is a signal that either the paper is very early or the document hasn't been created yet — both cases warrant asking rather than guessing.
 
-### Maintenance rule for development transcripts
+### Maintenance rule for handover documents
 
 Update the transcript at each section-end commit and at every context-pressure crossing (per `operating_system.md`'s context-pressure preservation checklist). Curate directly from the active session — do NOT regenerate from a session summary, which is lossy by design.
 

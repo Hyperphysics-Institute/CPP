@@ -1,6 +1,6 @@
 # SS-8 D1 Sketch — Q2 Algebraic Reduction Test
 
-**Location:** `/CPP/series_strong/papers/SS-8_D1_Q2_algebraic_reduction_analysis.md`
+**Location:** `/CPP/series_strong/papers/SS-8/sketches/SS-8_D1_Q2_algebraic_reduction_analysis.md`
 **Produced:** 22 April 2026
 **Author:** Claude Opus
 **Tier:** **EXPLORATORY** — appendix to `SS-8_D1_ssv_minimization_sketch.md`, addressing ChatGPT's Round 2 Q2 concern.
@@ -308,10 +308,10 @@ ChatGPT's Q2 concern was the single most consequential question in Round 2. The 
 
 ## 13. References
 
-- `/CPP/series_strong/papers/SS-8_D1_ssv_minimization_sketch.md` (21 April 2026) — the sketch this analysis addresses.
-- `/CPP/series_strong/papers/SS-8_Round2_review_request.md` — Round 2 review request.
-- `/CPP/series_strong/papers/ss8_Q2_algebraic_reduction_test.py` — numerical script for the algebraic verification.
-- `/CPP/series_strong/papers/ss8_ssv_minimization_sketch.py` — original sketch script (producing the $\lambda = 0.35 \cdot L$ values).
+- `/CPP/series_strong/papers/SS-8/sketches/SS-8_D1_ssv_minimization_sketch.md` (21 April 2026) — the sketch this analysis addresses.
+- `/CPP/series_strong/papers/SS-8/letters/SS-8_Round2_review_request.md` — Round 2 review request.
+- `/CPP/series_strong/papers/SS-8/scripts/ss8_Q2_algebraic_reduction_test.py` — numerical script for the algebraic verification.
+- `/CPP/series_strong/papers/SS-8/scripts/ss8_ssv_minimization_sketch.py` — original sketch script (producing the $\lambda = 0.35 \cdot L$ values).
 - ChatGPT Round 2 review — §2.3 and §3.2 pose the Q2 test and diagnose the failure mode.
 
 ---

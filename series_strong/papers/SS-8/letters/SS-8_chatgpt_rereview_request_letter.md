@@ -4,8 +4,8 @@
 **From:** Thomas Lee Abshier ND, Hyperphysics Institute (with Claude Opus, CPP collaborator)
 **To:** ChatGPT (OpenAI), SS-8 round-1 reviewer
 **Subject:** Re-review request for SS-8 H2' derivation note
-**Document under review:** `/CPP/series_strong/papers/SS-8_H2prime_derivation_note.md` (21 April 2026, 383 lines, 12 sections)
-**Companion document:** `/CPP/series_strong/papers/SS-8_Phase1_extended_map_findings.md` (21 April 2026, Sections 1–8)
+**Document under review:** `/CPP/series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md` (21 April 2026, 383 lines, 12 sections)
+**Companion document:** `/CPP/series_strong/papers/SS-8/sketches/SS-8_Phase1_extended_map_findings.md` (21 April 2026, Sections 1–8)
 **Protocol under which this letter is written:** `/CPP/templates/relationship_protocol.md` (correction protocol, §2 principles 1–6)
 
 ---

@@ -1,6 +1,6 @@
 # SS-8 H2' Derivation Note — Tiered Derivation of the 2E/V Scaling Law
 
-**Location:** `/CPP/series_strong/papers/SS-8_H2prime_derivation_note.md`
+**Location:** `/CPP/series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md`
 **Produced:** 21 April 2026
 **Author:** Claude Opus (SS-8 kickoff session, post-Phase-1b)
 **Tier:** **EXPLORATORY** — pre-v0.1 working note. No registry updates triggered. Subject to multi-AI review per `operating_system.md` §5 before any promotion to paper-level theorem or axiom stack.
@@ -392,7 +392,7 @@ The SSV-minimization argument for D1 and the A6'-extension picture for D2 are Th
 
 - `/CPP/axiom-registry.md` (version 21 April 2026).
 - `/CPP/series_strong/papers/SS-7_alpha_cluster_edge_formula.tex` v1.2 (Theorem 3N-6, Assumption Stack C1–C4, epistemic-split block).
-- `/CPP/series_strong/papers/SS-8_Phase1_extended_map_findings.md` (Sections 1–8, H1'–H6').
+- `/CPP/series_strong/papers/SS-8/sketches/SS-8_Phase1_extended_map_findings.md` (Sections 1–8, H1'–H6').
 - `/CPP/operating_system.md` §3 (session types), §5 (multi-AI review cycle), §10 (axiom reconciliation).
 - `/CPP/problem_histories/PH-OPEN-SS-18.md` (precedent for OPEN-SS-22/23/24 split).
 - `/CPP/problem_histories/PH-OPEN-SS-22.md` (precedent for retirement-via-understanding).

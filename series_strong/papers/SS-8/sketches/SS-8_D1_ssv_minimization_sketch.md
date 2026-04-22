@@ -1,6 +1,6 @@
 # SS-8 D1 SSV-Minimization Sketch — OPEN-SS-26 Closure Attempt
 
-**Location:** `/CPP/series_strong/papers/SS-8_D1_ssv_minimization_sketch.md`
+**Location:** `/CPP/series_strong/papers/SS-8/sketches/SS-8_D1_ssv_minimization_sketch.md`
 **Produced:** 21 April 2026
 **Author:** Claude Opus (OPEN-SS-26 substantive attack, post-SS-8 H2' derivation note)
 **Tier:** **EXPLORATORY** — pre-v0.1 working note. Targets closure of OPEN-SS-26 as opened in `SS-8_H2prime_derivation_note.md` §10.
@@ -318,11 +318,11 @@ The sketch is now ready for Round 2 review by the three-reviewer AI team, per §
 
 ## 10. References
 
-- `/CPP/series_strong/papers/SS-8_H2prime_derivation_note.md` (21 April 2026) — source note, §6 D1-D3 statements, §10 OPEN-SS-26 opening.
-- `/CPP/series_strong/papers/SS-8_Phase1_extended_map_findings.md` — Phase 1b empirical substrate, §8.6 prediction table (N_α = 6 at 1.003, N_α = 10 at 1.011).
+- `/CPP/series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md` (21 April 2026) — source note, §6 D1-D3 statements, §10 OPEN-SS-26 opening.
+- `/CPP/series_strong/papers/SS-8/sketches/SS-8_Phase1_extended_map_findings.md` — Phase 1b empirical substrate, §8.6 prediction table (N_α = 6 at 1.003, N_α = 10 at 1.011).
 - `/CPP/series_strong/papers/SS-7_alpha_cluster_edge_formula.tex` v1.2 — C3 (K₃ collective mode), L_αα = 2.37 fm (SS-7 v1.2 inversion), the Pattern 6 precedent.
 - `/CPP/axiom-registry.md` — A2, A5, A8', A11 (Layer 2a sourcing); Pattern 6 (line 234, scale recurrence observation).
-- `/CPP/series_strong/papers/ss8_ssv_minimization_sketch.py` — numerical evaluation script.
+- `/CPP/series_strong/papers/SS-8/scripts/ss8_ssv_minimization_sketch.py` — numerical evaluation script.
 - `/CPP/templates/relationship_protocol.md` — review protocol for Round 2 adversarial engagement.
 
 ---

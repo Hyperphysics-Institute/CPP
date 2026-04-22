@@ -829,32 +829,74 @@ Papers whose development begins on or after 22 April 2026 use a per-paper subfol
 
 ```
 series_[name]/papers/[PAPER-ID]/
-├── README.md                  ← folder overview + transition notes
-├── [PAPER-ID]_paper.tex       ← the paper (canonical filename, no version suffix)
-├── [PAPER-ID]_paper.pdf       ← current build
-├── reviews/                   ← verbatim reviewer correspondence
-│   ├── round1_[reviewer].md   ← one file per reviewer per round per target
+├── README.md                            ← folder overview + transition notes
+├── [PAPER-ID]_paper.tex                 ← the paper (canonical filename, no version suffix)
+├── [PAPER-ID]_paper.pdf                 ← current build
+├── reviews/                             ← verbatim reviewer correspondence
+│   ├── round1_[reviewer].md             ← one file per reviewer per round per target
 │   ├── round2_[reviewer]_on_[target].md
-│   └── README.md              ← catalog of reviews by round/reviewer/target
-├── letters/                   ← Claude Opus correspondence
+│   └── README.md                        ← catalog of reviews by round/reviewer/target
+├── letters/                             ← Claude Opus correspondence
 │   ├── [PAPER-ID]_[round]_review_request.md
 │   ├── [PAPER-ID]_[round]_synthesis_letter.md
 │   └── [PAPER-ID]_correction_letter_to_[reviewer].md
-├── sketches/                  ← derivation notes, findings, exploratory analyses
-├── scripts/                   ← Python verification scripts
-├── founders_voice/            ← Thomas's recorded intuitions and organizational notes
-└── documentation_suite/       ← 7-file companion suite (created at v1.0)
+├── sketches/                            ← derivation notes, findings, exploratory analyses
+├── scripts/                             ← Python verification scripts
+├── founders_voice/                      ← Thomas's recorded intuitions and organizational notes
+└── documentation_suite/                 ← the paper's companion documentation (three-file handover + the 7-file suite)
+    ├── handover-[PAPER-ID].md           ← session-continuity state (bounded snapshot)
+    ├── development-[PAPER-ID].md        ← session-by-session vignettes (append-only, never retroactively edited)
+    ├── transcript-[PAPER-ID].md         ← transaction-indexed pointer-map (optional)
+    ├── mechanism-[PAPER-ID].md          ← 7-file suite files — added progressively from first to v1.0+
+    ├── glossary-[PAPER-ID].md
+    ├── phenomena-[PAPER-ID].md
+    ├── philosophy-[PAPER-ID].md
+    ├── reviews-[PAPER-ID].md
+    ├── keywords-[PAPER-ID].md
+    └── FAQ-[PAPER-ID].md
 ```
 
-**Lazy folder creation.** Do not create subfolders that have no content yet. A brand-new paper with only a sketch has `sketches/` and nothing else. `documentation_suite/` is created when the v1.0 milestone is reached.
+**Lazy folder creation.** Do not create subfolders that have no content yet. A brand-new paper with only a sketch has `sketches/` and nothing else. `documentation_suite/` is created as soon as the first suite file is written — typically `handover-[PAPER-ID].md` at the first session close.
 
 **What goes in `founders_voice/`.** Thomas's organizational vision for the paper, gedanken experiments, pattern-recognition intuitions, decisions about structure and presentation, recorded verbatim or as he provides them. This is analogous to `letters/` for Claude and `reviews/` for external reviewers: it captures the founder's voice as a first-class artefact class of the paper's development record. Contributions may be occasional — Thomas does not need to produce a founder's-voice entry for every session.
 
-**Transition rule for existing papers.** Papers that existed before 22 April 2026 remain in the flat `series_[name]/papers/` layout. Do not migrate them unless a specific reason arises (e.g., the flat layout becomes unmanageable, or the paper is reopened for substantive revision). When migrating, use `git mv` to preserve history; update every cross-reference in the development transcript, letters, and bootup.md.
+**Transition rule for existing papers.** Papers that existed before 22 April 2026 remain in the flat `series_[name]/papers/` layout. Do not migrate them unless a specific reason arises (e.g., the flat layout becomes unmanageable, or the paper is reopened for substantive revision). When migrating, use `git mv` to preserve history; update every cross-reference.
 
-**First paper using this convention.** SS-8 — see `series_strong/papers/SS-8/` and its README for the transition-period layout (canonical artefacts at flat `series_strong/papers/` location, reviews subfolder active).
+**First paper using this convention.** SS-8 — see `series_strong/papers/SS-8/` for the reference layout.
 
 **Why the change.** The flat convention was shaped by the prior workflow in which Thomas alone moved files from Downloads into the repo; ergonomic considerations favoured a single destination directory. Under the Git-Bash-Patch workflow (see §13), Claude generates files directly in the sandbox and patches them into the repo, so folder depth imposes no ergonomic cost. Subfolders then become a clean win: they separate artefact classes with different maintenance rhythms (reviews are append-only, sketches iterate, the paper .tex overwrites in place), they make review archives discoverable without markdown-noise flooding, and they let the per-paper workspace scale as more reviewer rounds accumulate.
+
+### The three-file documentation-suite convention (adopted 22 April 2026)
+
+Within `documentation_suite/`, three files serve distinct session-continuity purposes and must not be merged. Their behaviors differ by design:
+
+**`transcript-[PAPER-ID].md` — transaction-indexed pointer-map.** An ordinal-numbered index of every substantive transaction in the paper's development history. Each entry: three-digit transaction ID (e.g., `001`, `002`), date, one-line description, pointer to the artefact that holds the verbatim content (a file in `reviews/`, `letters/`, `sketches/`, `founders_voice/`, or `scripts/`). The transcript is a roadmap, not an archive — the substantive content lives at the pointer targets. Append-only as new transactions occur.
+
+**`development-[PAPER-ID].md` — session-by-session vignettes.** A chronological sequence of session summaries, each written at the session's end, preserving the texture of what that session believed at that moment. Append-only. **Never retrospectively edited.** If a later session proves an earlier session's framing wrong, the later session's vignette records the correction; the earlier vignette stays as written. This preserves in-moment honesty — a decision that looked weird at the time and turned out to be right should be recorded as it was thought, not prettified in hindsight. A compact leading table tracks vignettes by date and one-liner.
+
+**`handover-[PAPER-ID].md` — bounded current-state snapshot.** The prospective operational document for the next Claude context window. Names the active paper, current state, queued open items with priority ordering, pending registry ratifications, and pointers to substantive artefacts. Ruthlessly short: a few hundred lines max. Replaced (not appended to) at each session close; old handover content moves into `development-[PAPER-ID].md` as a vignette.
+
+**Division of labor.** The test that tells the three files apart:
+- If the content is **verbatim and substantive**, it goes in a standalone artefact (`reviews/`, `letters/`, `sketches/`, `founders_voice/`, `scripts/`), and the three documentation-suite files point at it.
+- If the content is **retrospective narrative about the paper's lineage written in-moment**, it goes in `development-[PAPER-ID].md`.
+- If the content is **forward-looking state for the next session**, it goes in `handover-[PAPER-ID].md`.
+- If the content is **a transaction identifier to be referenced later**, it goes in `transcript-[PAPER-ID].md`.
+
+**No crystallization point.** The documentation-suite files have no "completion" state. v1.0 is a milestone of external-readiness, not finality; post-v1.0 revisions (reviewer feedback, OSF reader feedback, public feedback, programme-level discoveries that affect the paper's framing) are expected and their treatment is identical to pre-v1.0 revisions. The documentation suite tracks these continuously. The seven narrative companion files (`mechanism-`, `glossary-`, `phenomena-`, `philosophy-`, `reviews-`, `keywords-`, `FAQ-`) are built progressively from the first section-end forward, not heroically at v1.0; incremental authorship keeps rationales fresher than retrospective writing does.
+
+**Post-publication feedback.** External feedback that arrives after OSF registration (reader emails, social-media engagement, experimental results bearing on predictions, citations-by-criticism) is filed in `reviews/` alongside pre-publication reviewer correspondence. The content type is the same; only the source and timing differ. Keeping it in one folder ensures a future researcher finds all external voices on the paper in one place.
+
+### Documentation continuity — the three hierarchies (adopted 22 April 2026)
+
+CPP maintains three separate documentation hierarchies that drift if not updated continuously. Every session that produces substantive content must ask: "Does any file in any of these three hierarchies need an update?" If yes, the update rides in the same patch as the substantive work.
+
+**Hierarchy 1 — Per-paper documentation suite.** Files in `series_[name]/papers/[PAPER-ID]/documentation_suite/` for papers using the per-paper subfolder convention, or files at `series_[name]/papers/` for legacy-flat papers. These are updated at each session close (handover and development files specifically) and at section-ends (other suite files as relevant).
+
+**Hierarchy 2 — Programme-level registry.** Files at `/CPP` root: `axiom-registry.md`, `theorem-registry.md`, `Research_Frontier.md`, `predictions.md`, `master_glossary.md`, `founders_vision.md`, `theory-overview.md`, `paper_catalog.md`, `future_projects.md`, `CPP_the_theory.md`, `postulates_and_theorems.md`, `propositions.md`, `solution_candidates.md`, `README.md`, `INDEX.md`. Updates are triggered by: new theorems or corollaries (theorem-registry), new axioms (axiom-registry), new or resolved open problems (Research_Frontier), new predictions (predictions), new terminology (master_glossary), new Thomas-voice intuitions (founders_vision), etc. A subtantive section-end commit should sweep these files — even if no update is needed, the check itself prevents drift.
+
+**Hierarchy 3 — Templates and conventions.** Files in `templates/`: `operating_system.md`, `relationship_protocol.md`, `AI_team_expectations.md`, `paper-formatting.md`, `documentation-suite.md`, `paper_production_workflow.md`, `paper_completion_checklist.md`, `nomenclature.md`, `Research_Frontier_Architecture.md`. Updates are triggered when the session identifies a new workflow pattern, failure mode, or team convention. New rules that won't reach the next session unless committed belong here.
+
+**Update discipline.** The bootup, section-end, and handover moments all trigger the three-hierarchies sweep. If a session identified a registry-relevant result and failed to update Hierarchy 2, or identified a protocol pattern and failed to update Hierarchy 3, that's a failure mode for `AI_team_expectations.md` §2 (Claude Opus), not a neutral state. Per Thomas (22 April 2026): "There are no sacred cows; everyone depends on everyone, and we can't get better without knowing the results of our actions."
 
 ---
 

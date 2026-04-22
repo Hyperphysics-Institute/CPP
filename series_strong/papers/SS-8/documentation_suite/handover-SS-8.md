@@ -1,10 +1,14 @@
-# SS-8 Development Transcript (Curated)
+# SS-8 Handover Document
 
+**File:** `handover-SS-8.md` (renamed from flat `development-SS-8.md` on 22 April 2026; see `templates/operating_system.md` §11 three-file documentation-suite convention)
 **Paper:** SS-8 — Interstitial-neutron binding in alpha-cluster nuclei
 **Status:** Pre-v0.1 exploratory; Round 2 review closed 22 April 2026
-**Curator:** Claude Opus (22 April 2026)
-**Purpose:** Preserve the development narrative at curated fidelity. Raw session transcripts are lossy across compaction boundaries; this file is verbatim-preserved in git and should be treated as the canonical account of how the SS-8 substrate was produced.
-**Maintenance rule:** Update at each section-end commit. Do not regenerate from session summary — always curate directly from the work session before compaction.
+**Role:** Session-continuity state snapshot. Bounded (few hundred lines). Replaced at each session close, not appended. Old content moves into `development-SS-8.md` as a vignette. Purpose: orient the next Claude context window to current state in ~30 seconds.
+**Related files:**
+- `development-SS-8.md` — session-by-session vignettes (append-only, in-moment voice, never retroactively edited)
+- `transcript-SS-8.md` — transaction-indexed pointer-map to verbatim artefacts (optional, grows over time)
+
+**Maintenance rule:** Update at each session close per `templates/operating_system.md` §11 "Context-pressure preservation checklist". The handover is state, not narrative; for narrative of how we got here, read `development-SS-8.md`.
 
 ---
 
@@ -12,12 +16,12 @@
 
 | Date | Session | Output |
 |---|---|---|
-| ~20 April 2026 | Phase 1 empirical map | 12×5 grid of alpha-cluster binding data; `ss8_empirical_map_extended.py`, `ame2020_loader.py`, `ss8_polytope_enumeration.py`; findings note with H1'–H6' hypotheses |
+| ~20 April 2026 | Phase 1 empirical map | 12×5 grid of alpha-cluster binding data; `scripts/ss8_empirical_map_extended.py`, `scripts/ame2020_loader.py`, `scripts/ss8_polytope_enumeration.py`; `sketches/SS-8_Phase1_extended_map_findings.md` with H1'–H6' hypotheses |
 | 21 April 2026 | Phase 1b refinement | Extended table identifies 2E/V scaling law $\Delta_1 = (6 - 12/N_\alpha) B_{\text{pair}}$; N_α = 6 and N_α = 10 match <1.5% |
 | 21 April 2026 | H2' derivation note | Three-layer tiered derivation (L1 combinatorics / L2a B_pair sourcing / L2b D1-D3 hypotheses); opens OPEN-SS-26, -27, -28 |
-| 21 April 2026 | Round 1 reviews | Copilot, Grok, ChatGPT engage; ChatGPT Round 1 misreads H2' as ²H (deuteron); re-review letter issued; ChatGPT Round 1 corrected cleanly; Case 2 archived in `relationship_protocol.md` |
+| 21 April 2026 | Round 1 reviews | Copilot, Grok, ChatGPT engage; ChatGPT Round 1 misreads H2' as ²H (deuteron); re-review letter issued; ChatGPT Round 1 corrected cleanly; Case 2 archived in `templates/relationship_protocol.md` |
 | 21 April 2026 | OPEN-SS-26 attack | D1 SSV-minimization sketch delivers conditional theorem under Model A (D2 + simplicial combinatorics) and Model B (SR-nn-pair Yukawa); proposes OPEN-SS-26 → OPEN-SS-27 consolidation |
-| 22 April 2026 | Commit-cadence rule | `operating_system.md` updated with section-end-batch + context-pressure commit triggers |
+| 22 April 2026 | Commit-cadence rule | `templates/operating_system.md` updated with section-end-batch + context-pressure commit triggers |
 | 22 April 2026 | Round 2 reviews | Copilot, Grok, ChatGPT engage; ChatGPT flags Q2 algebraic-reduction test not executed by the other two reviewers |
 | 22 April 2026 | Q2 algebraic-reduction attack | Three categorical discriminators prove Model B ≠ Model A; surfaces empirical discriminator for future work |
 | 22 April 2026 | Round 2 closure | ChatGPT Level-1/2/3 independence decomposition adopted; conditional theorem language refined; OPEN-SS-26 split into functional (→ OPEN-SS-27) and physical-principle (→ programme-level OPEN-FRONTIER); synthesis letter drafted |

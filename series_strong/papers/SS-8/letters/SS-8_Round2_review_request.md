@@ -113,10 +113,10 @@ If a reviewer identifies material problems in any of these, please flag them sep
 
 All artifacts live in the `Hyperphysics-Institute/CPP` repository on GitHub:
 
-- `series_strong/papers/SS-8_H2prime_derivation_note.md` — the H2' derivation note, post-update (the Round 2 baseline)
-- `series_strong/papers/SS-8_D1_ssv_minimization_sketch.md` — the Round 2 target
-- `series_strong/papers/ss8_ssv_minimization_sketch.py` — numerical script (useful for Q5)
-- `series_strong/papers/SS-8_Phase1_extended_map_findings.md` — Phase 1b substrate (context, not under review)
+- `series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md` — the H2' derivation note, post-update (the Round 2 baseline)
+- `series_strong/papers/SS-8/sketches/SS-8_D1_ssv_minimization_sketch.md` — the Round 2 target
+- `series_strong/papers/SS-8/scripts/ss8_ssv_minimization_sketch.py` — numerical script (useful for Q5)
+- `series_strong/papers/SS-8/sketches/SS-8_Phase1_extended_map_findings.md` — Phase 1b substrate (context, not under review)
 
 The commit that landed the sketch + updates is on main as of 22 April 2026; reference it if you want to pin to a fixed state.
 
