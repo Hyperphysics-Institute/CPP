@@ -783,6 +783,30 @@ Commit message convention for section-end batches:
 
 This rule supersedes the prior implicit convention that archival happened only at v1.0. The v1.0 documentation suite remains the canonical Tier M milestone for paper-level external use; the section-end commit cadence runs beneath it to preserve work continuously.
 
+### Context-pressure preservation checklist (adopted 22 April 2026)
+
+When a context window approaches its boundary and compaction is imminent, certain artifacts are at risk of being lost or degraded because they live only in the active session, not yet in git. The commit-cadence rule above covers *code and document files*; this checklist covers *narrative and state artifacts* that must also be preserved before compaction.
+
+At context-pressure threshold (≥70% context consumed, or before any planned session end), verify the following are committed:
+
+1. **Curated development transcript (`development-[S]-[N].md` in the paper's folder).** A verbatim narrative record of the session's work — what was produced, what was decided, what reviewer content was engaged with, what conclusions were reached. This is **not** the auto-generated session summary, which is lossy. It must be curated directly from the active session before compaction. If no `development-[S]-[N].md` exists yet for the paper, create one. If one exists, append a new section covering the recent work. Never regenerate from a transcript summary — always curate from the active session.
+2. **Registry updates pending ratification.** If a session has opened, resolved, or modified any OPEN-SS-NN problems, axiom entries, or theorem registrations, those updates must be written into `Research_Frontier.md`, `axiom-registry.md`, `theorem-registry.md`, or the appropriate problem-history file (`problem_histories/PH-*.md`) before compaction, with "pending ratification" flags where human review is required. Registry state held only in the active session is lossy and produces drift at the next session start.
+3. **Reviewer response artifacts.** If a session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers), these must be committed in full verbatim form. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.
+4. **Protocol or operating-system updates the session produced.** If the session identified a new protocol case (as in `relationship_protocol.md` §6) or a new operating-system rule (as in this section), write the update into the appropriate file before compaction. Do not leave the codification for "next session" — next session starts from a lossy summary and will not remember the specific reasoning that produced the rule.
+
+A minimal context-pressure preservation commit may include: curated transcript update + registry update pending-ratifications + any reviewer letters not yet committed + any protocol/operating-system updates the session produced. Commit message: `[paper/series] context-pressure preservation — [brief summary of preserved items]`.
+
+This rule is distinct from the section-end-batch rule above. Section-end batches are driven by task completion; context-pressure commits are driven by session-continuity concerns. Both may occur in the same session.
+
+### Intermediate registry-suite triggers (adopted 22 April 2026)
+
+The v1.0 paper-completion checklist triggers the full 7-file documentation suite. Two *intermediate* registry-suite triggers exist beneath v1.0:
+
+1. **Substantial section-end with registry implications.** When a section-end commit (per commit-cadence rule) opens or partially resolves OPEN-SS problems, the following registry files must be checked for updates before the next session: `Research_Frontier.md` (new problems), `problem_histories/PH-*.md` (partial resolutions), paper's own `[paper].tex` CHANGELOG header (if the paper exists yet). If any are not updated, flag as "pending" in the section-end commit message.
+2. **Context-pressure crossing.** The context-pressure preservation checklist (above) includes registry updates as one of its four required items. This is an intermediate trigger independent of v1.0 milestone.
+
+These intermediate triggers prevent registry drift between the full v1.0 documentation-suite events, which can be weeks or months apart during exploratory development.
+
 ### Staging/scratch files
 - Files like `SM-8_integration_items.md` (work-orders collecting items to integrate elsewhere) should be moved to `archive/` once all items are integrated.
 - Do not leave completed staging files in `papers/`.
