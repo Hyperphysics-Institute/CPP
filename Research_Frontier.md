@@ -1,7 +1,7 @@
 # CPP Research Frontier
 
 **Location:** `/CPP/Research_Frontier.md`
-**Last updated:** 12 April 2026
+**Last updated:** 23 April 2026
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Architecture:** See `templates/Research_Frontier_Architecture.md`
 **Nomenclature:** See `nomenclature.md`
@@ -305,6 +305,50 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Current best lead:** SS-7 v1.2 §5.4 discussion: qualitative scaling argument and cluster-model comparison support the screening mechanism. Figure 4 is a schematic representation only; the full DP-sea charge profile is not derived. This was tagged "OPEN-SS-22-adjacent" in SS-7 v1.1 §8; registered as its own open problem in v1.2 when the umbrella OPEN-SS-22 was retired.
 **Paper(s):** Target paper deferred. Likely uses the same lattice-geometry machinery as OPEN-SS-24.
 **Registered:** 21 April 2026 in SS-7 v1.2 (absorbs the DP-sea screening content that was tagged "OPEN-SS-22-adjacent" in v1.1).
+
+---
+
+### OPEN-SS-26: D1 Interstitial Site Localization from SSV Minimization
+**Status:** OPEN (PARTIAL — Level-1 algebraic + Level-2 functional independence achieved under Models A/B; Level-3 physical-principle independence open)
+**Sector(s):** SS (nuclear physics)
+**Priority:** HIGH
+**One-line statement:** Derive D1 (an interstitial neutron added to a bulk alpha-polytope localizes at an alpha-vertex rather than at an edge-midpoint, face-center, or centroid site) from CPP primitives via SSV-minimization.
+**What a solution looks like:** A CPP derivation establishing that vertex sites minimize the neutron-localization SSV functional across all bulk simplicial deltahedra, from axioms A1–A11 without importing proximity-binding as an unstated assumption. Once D1 is proved at Level-3, the H2' 2E/V scaling law for interstitial neutron binding becomes a geometric corollary of D1 + D2.
+**Dependencies:** None blocking for Path α (derive proximity-binding from A1–A3). OPEN-SS-27 closure provides a third conditional realization under D2 but shares the proximity-binding ancestor, so does not close the Level-3 gap.
+**Cross-sector connections:** Methodological — the Level-1/2/3 independence decomposition generalizes to any CPP claim stated as "proved from independent premises X, Y." Spot audit of existing theorems against this discipline is a cheap programme-level hygiene check.
+**Current best lead:** Dual-model SSV-minimization sketch (22 April 2026) delivers D1 as a conditional theorem under two functionally independent realizations of proximity-binding — Model A (K₃-edge counting under D2) and Model B (short-range Yukawa pair physics). Q2 algebraic reduction test shows Model B does NOT reduce to Model A under any short-range regime (three decisive discriminators: multiplicity vectors, non-vertex orderings, vertex-degree scaling). Both models share a proximity-binding ancestor principle; if that principle fails programme-wide, both models fail together. Level-3 independence remains open: would require either (a) deriving proximity-binding from CPP primitives, or (b) constructing a third model that produces D1 without invoking proximity.
+**Falsification route:** Construction of a bulk simplicial deltahedron at which CPP pair-binding physics predicts an interstitial site outside the vertex class, under any plausible proximity-binding mechanism. Or: demonstration that proximity-binding itself is incompatible with a derived CPP axiom.
+**History file:** `problem_histories/PH-OPEN-SS-26.md` (captures Round 2 narrative + Level-1/2/3 decomposition methodology)
+**Paper(s):** SS-8 (v0.1 target).
+**Registered:** 21 April 2026 in SS-8 H2' derivation note §10 (formal registry entry added 23 April 2026).
+
+---
+
+### OPEN-SS-27: D2 K₃-Edge Coupling via A6' Extension
+**Status:** OPEN
+**Sector(s):** SS (nuclear physics)
+**Priority:** HIGH (two-for-one — closure delivers D1 automatically via simplicial combinatorics under Model A)
+**One-line statement:** Derive D2 (each K₃-edge contact between adjacent alphas contributes per-edge binding strength $B_{	ext{pair}} = M_0/arphi$ to the interstitial-neutron energy landscape) from CPP primitives via an extension of axiom A6' (SS-5 base-to-base K₃-reduced collective-mode framework).
+**What a solution looks like:** A CPP derivation extending A6' from the base-to-base K₃-reduced collective-mode framework (as it operates at alpha-alpha contact faces in SS-5 nucleon binding) to the per-edge framework needed for SS-7 alpha-polytope edge-counting and SS-8 interstitial-neutron localization. Must reproduce: (a) the per-edge $B_{	ext{pair}}$ strength empirically supported by SS-7 v1.2 twelve-nucleus agreement, (b) the vertex-degree-dependent enhancement at D1 alpha-vertex sites, (c) consistency with the CPP A1–A11 axiom set without introducing new structural assumptions.
+**Dependencies:** SS-5 collective-mode machinery (A6' or its successor); SS-7 v1.2 empirical anchor; CPP treatment of DP-sea reorganization across polytope edges.
+**Cross-sector connections:** Closure automatically delivers D1 as a two-for-one under simplicial combinatorics (Model A). Delivers SS-7's $3N_lpha - 6$ edge formula as a derived structural result rather than an empirical regularity (converts CONJ-SS-12 from conjecture to corollary of THEO-SS-27).
+**Current best lead:** SS-5 v6 establishes the base-to-base K₃-reduced mechanism at the alpha-alpha contact face. SS-7 v1.2 extends empirically to per-edge strength in bulk polytopes. The A6' derivation is the structural missing link between the two. Likely approach: treat the alpha-polytope as a graph with alpha-vertices and K₃-edge contacts, express the SS-5 collective-mode structure as local to each K₃ face, verify the local structure tiles correctly over the polytope. May require explicit DP-sea redistribution calculation at polytope edges (related to OPEN-SS-24 and OPEN-SS-25 methodology).
+**Paper(s):** Opened in SS-8 H2' derivation note §10 (21 April 2026). Target paper: SS-9 candidate (shares structural-polytope machinery with OPEN-SS-24).
+**Registered:** 21 April 2026 in SS-8 H2' derivation note §10 (formal registry entry added 23 April 2026).
+
+---
+
+### OPEN-SS-28: D3 Bulk Averaging and Residual Decomposition
+**Status:** OPEN
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM
+**One-line statement:** Derive D3 (bulk averaging of the interstitial-neutron SSV landscape reproduces the 2E/V scaling law of H2' with residuals accounted for by a small set of identifiable physical mechanisms) from CPP primitives, and decompose the observed residual in the SS-8 Phase 1 empirical map into its constituent mechanisms.
+**What a solution looks like:** (a) A CPP derivation of the bulk averaging procedure showing that over any bulk simplicial deltahedron the average alpha-vertex degree $ar{d}_v = 6 - 12/V$ controls the interstitial-neutron energy to leading order, with explicit error bounds. (b) An identified residual decomposition: given the Phase 1 empirical map's ~0.3–0.5 MeV residual at $N_lpha = 8, 12$ and matching Ca-chain odd-even staggering, isolate the contributions from (i) opposite-polarity $N_	ext{ex} = 2$ pair bonus, (ii) small-polytope attenuation at $N_lpha \leq 4$, (iii) polytope-identity fine structure at non-unique $N_lpha$ (e.g., octahedron vs triangular antiprism at $N_lpha = 6$), and (iv) any additional mechanisms the data require.
+**Dependencies:** OPEN-SS-26, OPEN-SS-27 (both feed the averaging derivation); SS-5 pair-bonus mechanism (for residual decomposition).
+**Cross-sector connections:** Completes the H2' structural derivation. Residual decomposition is where SS-8 meets the Ca-isotope chain work.
+**Current best lead:** Phase 1 empirical map identified k_eff plateau at ~5 matching 2E/V = 6 − 12/V for bulk simplicial polytopes. Residuals at $N_lpha = 4, 8, 12$ are the right size and sign for $B_{	ext{pair}}$-scale opposite-polarity pair bonuses from $N_	ext{ex} = 2$ contributions. The decomposition is empirically suggestive but not yet derived from structural principles.
+**Paper(s):** SS-8 (v0.1 target, downstream).
+**Registered:** 21 April 2026 in SS-8 H2' derivation note §10 (formal registry entry added 23 April 2026).
 
 ---
 
@@ -1256,6 +1300,7 @@ Ordered by: fewest prerequisites, most tractable, highest leverage on downstream
 | 3 | OPEN-SS-8 | Clear SU(6) + ZBW path. | 1–2 sessions |
 | 4 | OPEN-SS-12 | Requires reading EW-2; high physical importance. | 2 sessions |
 | 5 | OPEN-SS-1 | Mechanism established; find ZBW-frequency kernel. | Multi-session |
+| 6 | OPEN-SS-27 | D2 derivation via A6' extension. Closure auto-delivers D1 under simplicial combinatorics (two-for-one). SS-8 v0.1 drafting target. | 2-3 sessions |
 | 7 | OPEN-SD-1 | Resolves superdeterminism amplitude conjecture. | 2 sessions |
 | 8 | CONJ-EW-1 | Gates CONJ-SM-6 (which gives θ to 0.003%). | Multi-session |
 | 9 | OPEN-SS-3 | ZBW notebooks give starting point. | 2 sessions |
@@ -1315,14 +1360,14 @@ CROSS-SERIES:
 
 | Sector | Total | Open | Conj | Prop | Resolved | Falsified |
 |--------|-------|------|------|------|----------|-----------|
-| SS (Strong) | 22 | 13 | 4 | 1 | 1 | 1 |
+| SS (Strong) | 25 | 16 | 4 | 1 | 1 | 1 |
 | SM (Standard Model) | 23 | 11 | 6 | 1 | 3 | 5 |
 | EW (Electroweak) | 9 | 6 | 2 | 0 | 0 | 0 |
 | QM (Quantum Mechanics) | 13 | 5 | 0 | 4 | 3 | 0 |
 | SR (Relativity) | 8 | 8 | 0 | 0 | 0 | 0 |
 | SD (Foundations) | 7 | 6 | 1 | 0 | 0 | 0 |
 | GLOBAL | 2 | 2 | 0 | 0 | 0 | 0 |
-| **Total** | **84** | **51** | **13** | **6** | **7** | **6** |
+| **Total** | **87** | **54** | **13** | **6** | **7** | **6** |
 
 *(Note: Propositions counted only at Tier 2–3 level in this summary. Tier 4 items (10) grouped under PROP-6–15.)*
 

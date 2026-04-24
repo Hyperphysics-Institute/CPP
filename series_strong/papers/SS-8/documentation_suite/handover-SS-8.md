@@ -308,17 +308,6 @@ Round 2 reviews on the Q2 algebraic-reduction analysis:
 
 ---
 
-## 13. What comes next
-
-Four candidate next targets, in rough order of value-per-effort:
-
-1. **OPEN-FRONTIER registration** — quick cleanup. Add the Level-3 independence question to `Research_Frontier.md`. ~15 min.
-2. **v0.1 drafting** — convert the substrate (H2' note + sketch + Q2 analysis + Round 2 synthesis) into formal paper structure following `paper_completion_checklist.md`. 2–3 focused sessions.
-3. **OPEN-SS-27 first-principles attack** — derive D2 from A6' extension at interstitial scale. Full session target. If successful, delivers D1 automatically as Level-2 corollary and elevates SS-8 from "conditional theorem" to "theorem at Level-2 tier."
-4. **OPEN-SS-23 revisit** — odd-A and non-alpha-chain. Inherited from SS-7; not yet engaged in SS-8 work. Naturally a post-v0.1 extension topic.
-
-Thomas's direction pending.
-
 ---
 
 ## 14. Curation maintenance rules
@@ -334,3 +323,29 @@ This file should be updated at each section-end commit during SS-8 development. 
 
 *End of SS-8 curated development transcript.*
 *Last updated: 22 April 2026, covering SS-8 work from ~20 April through 22 April.*
+
+---
+
+## Next session items (updated 23 April 2026)
+
+The programme-level Hierarchy 2 + Hierarchy 3 sweep has been completed (patch 3, 23 April 2026): OPEN-SS-26, OPEN-SS-27, and OPEN-SS-28 are now formally registered in `Research_Frontier.md`; the Level-3 methodology is archived in `problem_histories/PH-OPEN-SS-26.md`; two new Claude Opus failure-mode entries are recorded in `templates/AI_team_expectations.md`.
+
+Remaining queue for SS-8, in priority order:
+
+1. **SS-8 v0.1 paper drafting (multi-session).** Primary next-session work. Builds on the H2' derivation note, the D1 SSV-minimization sketch, the Q2 algebraic reduction analysis, and the SS-5 v6 + SS-7 v1.2 antecedent papers. Framing B (absolute binding) is the primary framing; Framing C (asymmetry) recovered as corollary. Per founders_voice/003, production is primary and documentation seams happen at section-ends. Expected cadence: one section-end batch commit per paper section.
+
+2. **OPEN-SS-27 attack — D2 derivation via A6' extension (2-3 sessions).** Closure delivers D1 automatically via simplicial combinatorics (two-for-one: resolves OPEN-SS-26 Model A conditional via derived D2, and advances Level-3 independence work). Now registered in Research_Frontier.md §7 Recommended Attack Order at rank 6. Can be pursued in parallel with v0.1 drafting or after. Caution: attacking D2 before v0.1 drafts surfaces what D2's published form should look like carries some risk of solving the wrong problem; defer until v0.1 structure forces the question.
+
+3. **OPEN-SS-28 attack — D3 bulk averaging + residual decomposition.** Lower priority. Phase 1 empirical map provides the data; the structural derivation is downstream of OPEN-SS-26 and OPEN-SS-27.
+
+4. **PH-OPEN-SS-27 / PH-OPEN-SS-28 history files.** Create when attack sessions begin and substantive history accumulates. Not needed at problem-registration time.
+
+### Level-3 independence (programme-level open question)
+
+OPEN-SS-26 remains PARTIAL at Level-3 (physical-principle independence). Two paths to Level-3 closure:
+
+- **Path α:** Derive proximity-binding itself from CPP primitives (A1–A3 plus downstream axioms). This would validate both Model A and Model B retrospectively and close Level-3 via derived foundation.
+- **Path β:** Construct a third D1 model that does not invoke proximity-binding. This would achieve Level-3 independence directly via non-proximity demonstration.
+
+The methodological implication is broader than SS-8: any CPP theorem stated as "proved from independent premises X and Y" should be audited against the Level-1/2/3 decomposition. See `problem_histories/PH-OPEN-SS-26.md` for the methodology.
+

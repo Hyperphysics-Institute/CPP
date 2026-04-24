@@ -69,6 +69,12 @@ When an axiom, a theorem, a registry entry, or a reviewer claim is about to be c
 
 - **Re-viewing files repeatedly during edits wastes context.** When performing multiple `str_replace` operations on the same file, Claude sometimes re-views the entire file between each edit. This is cheap per view but expensive in aggregate on long files. Plan edits upfront, batch them, re-view with narrow `view_range` only when needed.
 
+- **Panic-declaring sandbox-output loss.** (Observed 23 April 2026, patch 2 delivery session.) After generating a patch file to `/mnt/user-data/outputs/` and then hitting a transient `ls` failure during network instability, Claude concluded the output file was lost and the sandbox had been reset. The file had not been lost — `/mnt/user-data/outputs/` is a user-mounted volume that persists across sandbox resets within a conversation. Claude spent multiple tool calls trying to reconstruct work that was already safely delivered.
+  - **Rule:** `/mnt/user-data/outputs/` is persistent across sandbox resets within a single conversation. If a single check appears to show a file missing, verify with a second method (different tool, different shell syntax, explicit path) before concluding loss. The persistent-storage claim is not a guess; it is the documented behavior of the user-mount.
+
+- **Web-rendered repo pages treated as authoritative for repo state.** (Observed 23 April 2026, during diagnosis of whether patch 2 had been applied.) Claude fetched origin's `bootup.md` via `web_fetch` and, seeing content inconsistent with patch 1's expected changes, concluded both patches 1 and 2 had not been applied. The real state (confirmed by Thomas's `git log`) was that patch 1 was applied as commit `56594b4` and the web-rendered page was either serving cached pre-patch content or Claude misread the fetched HTML.
+  - **Rule:** When the user has shell access to the working copy, `git log` on their machine is authoritative for repo state. `web_fetch` of `github.com` or `raw.githubusercontent.com` URLs can return cached content and is not reliable evidence of current main. For any diagnostic question of the form "did X commit land on origin main?", ask for the output of `git log --oneline origin/main | head -5` rather than attempting to verify by fetching specific files.
+
 ### Claude Sonnet (hostile reviewer)
 
 **Role:** Final adversarial review, identifying unstated assumptions, what a hostile referee would say.
@@ -129,6 +135,8 @@ This section is for patterns that worked unusually well and deserve replication.
 - **Line-cited correction protocol.** (Case 2, `relationship_protocol.md`.) When ChatGPT's Round 1 review of SS-8 contained systematic misreads, the correction letter used quote-review-claim / quote-document-text / delta-observation format with a non-accusatory diagnostic framing (notation collision). ChatGPT acknowledged the error in full and produced a substantive re-review. This pattern should be the default for any inter-AI or AI-to-human correction.
 
 - **Section-end batch commits with detailed messages.** (SS-8 session, 22 April 2026.) Commit messages naming the section, the deliverables, the files changed, and the registry implications produced a git history readable as a session-level record without needing to read the files. Continue this pattern for all substantive commits.
+
+- **Level-1/2/3 independence decomposition for structural claims.** (Round 2 closure on SS-8 D1, 22 April 2026.) ChatGPT's proposal of the three-level decomposition (algebraic / functional / physical-principle independence) is a programme-general review discipline. Any CPP claim of the form "proved under two independent premises" benefits from checking: is the independence Level-1 (algebraic), Level-2 (functional), or Level-3 (physical-principle)? Level-1 and Level-2 are the lower bar; Level-3 is the honest bar for programme-level claims about what CPP has and has not derived. The audit is cheap to apply and may surface unnoticed dependencies. See `problem_histories/PH-OPEN-SS-26.md` for the first application.
 
 ---
 
