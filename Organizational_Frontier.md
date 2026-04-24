@@ -294,6 +294,45 @@ Approximate effort: 5 minutes.
 
 ---
 
+## OPEN-ORG-008: Handover-protocol trigger failure — promote visibility, adopt dual trigger (user-initiated + Claude-initiated prompt)
+
+**Status:** OPEN — workable in next session
+**Identified:** 24 April 2026, at close of SS-8 v0.2 session, after Thomas surfaced the handover preservation gap
+**Priority:** MEDIUM (affects reliability of every future session-close preservation)
+
+**Originating context:** The context-pressure preservation protocol (`templates/operating_system.md` §10, adopted 22 April 2026) specifies that at ≥70% context consumed or before any planned session end, four artifacts must be committed: curated development transcript, registry updates pending ratification, reviewer letters generated this session, and protocol/operating-system updates. During the SS-8 v0.2 session of 23–24 April 2026, items 2–4 fired correctly (registries got updated, PDs committed, letters preserved), but item 1 failed entirely: the session's narrative and handover state were being written into chat rather than into `development-SS-8.md` and `handover-SS-8.md`. Thomas had to explicitly prompt the preservation at session close; without his prompt, the session's reasoning would have degraded at compaction.
+
+**Problem:** Four diagnostic layers contributed to the protocol's failure to fire:
+
+1. Claude cannot reliably self-monitor context consumption — "≥70% context consumed" is not an observable quantity Claude can reference against.
+2. During substantive work (paper drafting, governance PD construction, Grok exchange, AME infrastructure), the protocol was not in Claude's active working set; Claude's attention was on the work itself, not on periodic self-audit against the operating system.
+3. Claude conflated "governance files committed" (item 4 of the checklist) with "curated development transcript preserved" (item 1 — missed entirely). Item 4's completion felt like protocol satisfaction.
+4. Claude wrote session-close summaries in final chat messages rather than to disk. Each "Session status" block at the end of Claude's responses was exactly the content that should have gone into `handover-SS-8.md`, but it stayed in chat.
+
+All four are Claude-side execution failures, not protocol specification failures. The protocol was adequate; the firing was not.
+
+**Proposed fix:** Dual-trigger mechanism that moves the fire-decision from Claude's unreliable self-monitoring to observable external signals:
+
+1. **User-initiated trigger.** Thomas says "please execute handover protocol" (or "execute handover" / "handover protocol" / similar variants) as the authoritative trigger. This is the canonical command — when Thomas utters it, Claude immediately begins the four-item preservation sequence regardless of what else is pending. Thomas can reliably detect when he is approaching session-close readiness; this moves the trigger to the reliable sensor.
+
+2. **Claude-initiated prompt on workflow-shape signals.** When Claude notices workflow-shape patterns that historically correlate with session-end readiness — long session duration, "we've done a lot," "good stopping point," "ready to close," or any Claude-authored observation that a session has reached substantive closure — Claude should immediately ask: "Do you want to initiate handover protocol?" This is a prompting discipline, not an auto-fire; it moves the decision back to Thomas but ensures the opportunity to fire doesn't get missed. Signal patterns are documented in PD-003 §"Signals that reflexive-drop is warranted" as an existing list (with minor extension for session-close-shape vs reflexive-drop-shape distinction).
+
+3. **Promote protocol visibility in `operating_system.md`.** Current context-pressure preservation checklist is in §10, buried under "commit cadence." Proposal: either (a) promote to its own top-level section titled "Session-close Handover Protocol" with explicit checklist numbering, OR (b) add cross-reference in §1 "Quick Start" making the command pattern ("please execute handover protocol") visible at the top of the operating system document. The second is lower-cost and probably sufficient.
+
+4. **Codify the command vocabulary.** Standardize "execute handover protocol" as the canonical phrase with minor variations accepted. Document in §10 (or new section per item 3). The phrase acts like a hotkey — unambiguous, short, memorable.
+
+Approximate effort: 30–45 minutes for all four elements.
+
+**Trigger condition:** Next session. The current session's preservation has already completed via manual execution (patch 0011 — this patch); future sessions should operate under the dual-trigger protocol from their start.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing. Current session preserved manually; future sessions will have the protocol before the issue recurs if OPEN-ORG-008 is addressed in the next session.
+
+**History:**
+- 24 Apr 2026 — Handover-protocol failure-mode diagnosed at session close; Thomas surfaced the gap after noticing development artifacts were not being generated; dual-trigger fix designed during session-close conversation. Registered as OPEN-ORG-008 during the handover-preservation patch itself.
+
+---
+
 # §2 — Entry Template
 
 Copy this template for new entries. Fields in `{brackets}` are placeholders.
@@ -335,15 +374,15 @@ Copy this template for new entries. Fields in `{brackets}` are placeholders.
 
 # §4 — Statistics
 
-**As of 24 April 2026:**
-- Open: 7
+**As of 24 April 2026 (after patch 0011 handover preservation):**
+- Open: 8
 - In-progress: 0
 - Resolved: 0
 - Deferred indefinitely: 0
 
 **By priority:**
 - HIGH: 0
-- MEDIUM: 1 (OPEN-ORG-003)
+- MEDIUM: 2 (OPEN-ORG-003, OPEN-ORG-008)
 - LOW: 6 (OPEN-ORG-001, -002, -004, -005, -006, -007)
 
 **By trigger type:**
@@ -351,4 +390,4 @@ Copy this template for new entries. Fields in `{brackets}` are placeholders.
 - Threshold-triggered: 1 (OPEN-ORG-002)
 - Milestone-triggered: 1 (OPEN-ORG-003)
 - Opportunistic: 3 (OPEN-ORG-004, -005, -006)
-- Next-session: 1 (OPEN-ORG-007)
+- Next-session: 2 (OPEN-ORG-007, OPEN-ORG-008)

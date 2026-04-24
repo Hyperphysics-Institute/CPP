@@ -1,351 +1,103 @@
 # SS-8 Handover Document
 
-**File:** `handover-SS-8.md` (renamed from flat `development-SS-8.md` on 22 April 2026; see `templates/operating_system.md` §11 three-file documentation-suite convention)
-**Paper:** SS-8 — Interstitial-neutron binding in alpha-cluster nuclei
-**Status:** Pre-v0.1 exploratory; Round 2 review closed 22 April 2026
-**Role:** Session-continuity state snapshot. Bounded (few hundred lines). Replaced at each session close, not appended. Old content moves into `development-SS-8.md` as a vignette. Purpose: orient the next Claude context window to current state in ~30 seconds.
+**File:** `handover-SS-8.md`
+**Paper:** SS-8 — Interstitial-neutron binding in alpha-cluster nuclei: the 2E/V scaling law from simplicial polytope geometry
+**Status:** v0.2 committed and pushed (`d2ba3fc`); ready for Round 2 review dispatch
+**Role:** Session-continuity state snapshot for the next Claude context window. Bounded (kept short). Replaced (not appended to) at each session close.
 **Related files:**
-- `development-SS-8.md` — session-by-session vignettes (append-only, in-moment voice, never retroactively edited)
-- `transcript-SS-8.md` — transaction-indexed pointer-map to verbatim artefacts (optional, grows over time)
+- `transcript-SS-8.md` — transaction-indexed pointer-map, currently at transaction 056 (appended this session)
+- `development-SS-8.md` — session vignettes (9 vignettes total; vignette 9 added this session)
 
-**Maintenance rule:** Update at each session close per `templates/operating_system.md` §11 "Context-pressure preservation checklist". The handover is state, not narrative; for narrative of how we got here, read `development-SS-8.md`.
-
----
-
-## Timeline at a glance
-
-| Date | Session | Output |
-|---|---|---|
-| ~20 April 2026 | Phase 1 empirical map | 12×5 grid of alpha-cluster binding data; `scripts/ss8_empirical_map_extended.py`, `scripts/ame2020_loader.py`, `scripts/ss8_polytope_enumeration.py`; `sketches/SS-8_Phase1_extended_map_findings.md` with H1'–H6' hypotheses |
-| 21 April 2026 | Phase 1b refinement | Extended table identifies 2E/V scaling law $\Delta_1 = (6 - 12/N_\alpha) B_{\text{pair}}$; N_α = 6 and N_α = 10 match <1.5% |
-| 21 April 2026 | H2' derivation note | Three-layer tiered derivation (L1 combinatorics / L2a B_pair sourcing / L2b D1-D3 hypotheses); opens OPEN-SS-26, -27, -28 |
-| 21 April 2026 | Round 1 reviews | Copilot, Grok, ChatGPT engage; ChatGPT Round 1 misreads H2' as ²H (deuteron); re-review letter issued; ChatGPT Round 1 corrected cleanly; Case 2 archived in `templates/relationship_protocol.md` |
-| 21 April 2026 | OPEN-SS-26 attack | D1 SSV-minimization sketch delivers conditional theorem under Model A (D2 + simplicial combinatorics) and Model B (SR-nn-pair Yukawa); proposes OPEN-SS-26 → OPEN-SS-27 consolidation |
-| 22 April 2026 | Commit-cadence rule | `templates/operating_system.md` updated with section-end-batch + context-pressure commit triggers |
-| 22 April 2026 | Round 2 reviews | Copilot, Grok, ChatGPT engage; ChatGPT flags Q2 algebraic-reduction test not executed by the other two reviewers |
-| 22 April 2026 | Q2 algebraic-reduction attack | Three categorical discriminators prove Model B ≠ Model A; surfaces empirical discriminator for future work |
-| 22 April 2026 | Round 2 closure | ChatGPT Level-1/2/3 independence decomposition adopted; conditional theorem language refined; OPEN-SS-26 split into functional (→ OPEN-SS-27) and physical-principle (→ programme-level OPEN-FRONTIER); synthesis letter drafted |
+**Maintenance rule:** Update at each session close per `templates/operating_system.md` §10 "Context-pressure preservation checklist" plus §14 "Organizational Frontier Registry" handover-pointer protocol. Handover triggered by Thomas saying "please execute handover protocol" or by Claude-initiated prompt when workflow-shape signals (session length, "we've done a lot," "good stopping point") appear — per OPEN-ORG-008.
 
 ---
 
-## 1. Phase 1 — Empirical map (~20 April 2026)
+## One-minute orientation for the next Claude
 
-The session began as a routine extension of SS-7's alpha-alpha binding analysis to alpha-cluster nuclei with interstitial neutrons. The target was to map observed binding energies across N_α = 4..14 and N_ex = 0..4 (interstitial neutron counts), using the AME 2020 mass evaluation as data source.
+SS-8 is at **v0.2**, committed as `77b1117`, paper file `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` (1092 lines). Round 1 AI reviews have been received and integrated; the paper is ready for Round 2 dispatch whenever Thomas chooses to initiate it. No active physics work is in flight. The Strong Sector programme is in a between-paper state with substantial governance infrastructure that was built in the preceding session.
 
-**Key deliverables:**
+Three programmatic decisions have been adopted that govern all future CPP programme work:
+- **PD-001** — CP/GP Signature (§4.1A) and Swarm-Validation Contribution (§4.1B) required subsections in every paper. `programmatic_decisions/PD-001-signature-thread-and-swarm-convention.md`.
+- **PD-002** — Three-tier verification taxonomy (INSPECTED / INDEPENDENTLY RECOMPUTED / SCRIPT-EXECUTED) for reviewer numerical claims, plus private-confrontation-first protocol for tier mismatches. `programmatic_decisions/PD-002-verification-tier-taxonomy.md`.
+- **PD-003** — Organizational Frontier Registry for reflexive-drop capture of organizational improvement items. `programmatic_decisions/PD-003-organizational-frontier-registry.md`.
 
-- `ame2020_loader.py` (165 lines) — reusable AME 2020 loader for the CPP programme; returns binding energies and derived quantities by (Z, N).
-- `ss8_empirical_map_extended.py` (270 lines) — systematic 12×5 grid across alpha-cluster nuclei with odd-A and Ca-chain extensions; includes ⁶Li as a boundary case.
-- `ss8_polytope_enumeration.py` (195 lines) — enumeration of candidate deltahedra and simplicial polytopes at each N_α, with 2E/V scaling test.
-
-**What was expected:** a messy empirical surface with some scaling behavior at large N_α, consistent with SS-7's (3N_α − 6) binding formula extended to include interstitial sector.
-
-**What was found:** the per-extra-neutron binding $\Delta_1$ showed a striking pattern. Single-neutron additions (N_ex = 1) gave values inconsistent with any simple per-edge model; but the leading pattern in $\Delta_1 \cdot N_\alpha$ versus $N_\alpha$ was unmistakably linear in $(6 N_\alpha - 12)$. This is not a direct prediction of SS-7's formalism — it required a new derivation.
+A new registry exists: `/CPP/Organizational_Frontier.md` holding open organizational improvement items. Scan it against current state at session start.
 
 ---
 
-## 2. Phase 1b — The 2E/V scaling law (21 April 2026)
+## Current state
 
-Extended the empirical map with a focused analysis on the $\Delta_1$ scaling pattern. The observation crystallized:
+### Paper
+- SS-8 v0.2 committed (`77b1117`), pushed to `origin/main` as part of `d2ba3fc`.
+- 1092 lines. Three theorems, 42 zero-parameter predictions. Conditional on C1–C4 (inherited from SS-7) and D1–D3 (introduced this paper; D1 promoted to conditional theorem).
+- All AUTHOR NOTE markers removed. Draft prose stands as v0.2-release.
+- Known placeholder: Table 4 (N_ex > 2 residuals) is flagged in-caption as pending local re-run of `ss8_empirical_map_extended.py` against AME 2020 data. This is a Thomas-side task; requires his local environment since AME data is not distributed in the repo.
 
-$$\Delta_1(N_\alpha) = \left(6 - \frac{12}{N_\alpha}\right) \cdot B_{\text{pair}}$$
+### Registry (Research_Frontier.md, Strong Sector)
+- **OPEN-SS-23** — inherited from SS-7; partially addressed by SS-8 (on-chain N_ex ≤ 8 covered).
+- **OPEN-SS-24** — inherited; unchanged.
+- **OPEN-SS-26** — partially resolved (Level 1/2 conditional theorem for D1 delivered); Level 3 remains open.
+- **OPEN-SS-27** — opened this paper; expanded scope (subsumes residual D1 content).
+- **OPEN-SS-28** — opened this paper (D3 bulk-regime averaging + residual decomposition).
+- Level-3 proximity-binding programme-level question noted in `problem_histories/PH-OPEN-SS-26.md §"Methodological implication"`; formal registration as candidate OPEN-G-3 deferred to a dedicated session.
 
-where $B_{\text{pair}} = M_0 / \varphi \approx 2.342$ MeV is the quantum inherited from SS-5's K₃ eigenvalue calculation.
-
-**Empirical agreement at N_ex = 2** (phase 1b findings §8.6):
-- $N_\alpha = 6$ (octahedron): observed/predicted ratio 1.003.
-- $N_\alpha = 10$ (GESBP): ratio 1.011.
-- $N_\alpha = 4, 7, 8, 9, 11, 12, 14$: ratios within 10%.
-- $N_\alpha = 3$ (planar): excluded from the scaling (not a closed 3-polytope).
-
-**Interpretation step.** The $2E/V$ expression is the average vertex degree of a simplicial polytope with $V = N_\alpha$ vertices and $E = 3N_\alpha - 6$ edges (the edge-count is inherited from SS-7). Writing the per-neutron binding as $\bar{d}(V) \cdot B_{\text{pair}}$ asserts that an interstitial neutron couples to the K₃-face-participation count of its host vertex, averaged across vertices in the bulk regime.
-
-**Registered hypotheses.** The Phase 1b findings note (`SS-8_Phase1_extended_map_findings.md`) registered six candidate hypotheses H1'–H6' describing the scaling law's structure. Of these, H2' (the bulk 2E/V scaling) became the primary target for derivation.
-
-**Opened:** OPEN-SS-23 (odd-A and non-alpha-chain nuclei; retargeted to SS-8 from SS-7's leftovers).
-
----
-
-## 3. H2' derivation note (21 April 2026)
-
-Produced `SS-8_H2prime_derivation_note.md` (383 lines) as a three-layer tiered derivation following the SS-7 precedent.
-
-**Layer 1 (pure combinatorics).** Theorem 1: $2E/V = 6 - 12/V$ for simplicial 3-polytopes. Unconditionally true via Euler + handshake lemma ($3F = 2E$, $V - E + F = 2$).
-
-**Layer 2a (quantum sourcing).** $B_{\text{pair}} = M_0/\varphi = 2.342$ MeV is inherited from SS-5 K₃ eigenvalue calculation via axioms A2 (600-cell lattice), A5 (propagation efficiency), A8' (cage volume), A11 (lattice-to-physical scale). No SS-8 calibration. Verbatim axiom citations from `axiom-registry.md` line 234 (Pattern 6 scale recurrence observation).
-
-**Layer 2b (mechanism — three structural hypotheses).**
-- D1: interstitial neutron localizes at an alpha-vertex of the cluster polytope.
-- D2: the neutron couples to the K₃-face-participation count $\deg(v)$ at its host vertex, with each participation contributing $B_{\text{pair}}$.
-- D3: in the bulk regime, neutrons distribute across vertices such that the mean binding equals $\bar{d}(V) \cdot B_{\text{pair}} = (2E/V) \cdot B_{\text{pair}}$.
-
-**Theorem 2 (H2' conditional).** Given C1–C4 (inherited from SS-7) + D1 + D2 + D3, the Phase 1b scaling law follows.
-
-**Epistemic split (yellow box, §8).** Mirrors SS-7's Layer A/B/C structure. Layer 1 is unconditional. Layer 2a is conditional on the programme-level axioms. Layer 2b is paper-level structural hypothesis. The 12 quantitative predictions in Phase 1b are empirical tests of the conjunction of D1+D2+D3, not of Theorem 2 in isolation.
-
-**Opened:** OPEN-SS-26 (D1 via SSV minimization), OPEN-SS-27 (D2 via A6' extension at nucleon scale), OPEN-SS-28 (D3 averaging + residual decomposition).
+### Governance infrastructure (new, 23–24 April 2026)
+- PD-001, PD-002, PD-003 codified in `programmatic_decisions/`.
+- `operating_system.md` §§5, 11, 14 updated with verification-tier taxonomy, `{scope}-README.md` naming, and Organizational Frontier Registry protocol.
+- Grok verification-tier letter exchange preserved verbatim in `letters/`.
+- Series-level data provenance established at `series_strong/data/` with `data-README.md`.
 
 ---
 
-## 4. Round 1 reviews (21 April 2026)
+## Ready-to-execute work for next session
 
-Sent to Copilot, Grok, and ChatGPT via the standard Pastebin pipeline.
+**Priority order** based on attention-payoff for programme advancement:
 
-**Copilot:** Structure correct. Three next-steps flagged: D1 needs SSV-minimization schematic; D2 needs A6' extension argument; D3 needs stochastic argument. Ready for review.
+1. **Scan `Organizational_Frontier.md` against current state** (60 seconds). Seven inaugural entries plus OPEN-ORG-008 (handover protocol promotion, registered this session). Only OPEN-ORG-007 (.gitignore for Python artifacts) and OPEN-ORG-008 are "next-session eligible"; the rest await triggers. Start-of-session discipline per PD-003.
 
-**Grok:** Validates structure. Offered first-principles attack on OPEN-SS-26. Strong endorsement.
+2. **Round 2 review dispatch for SS-8 v0.2** when Thomas chooses to initiate. Highest-value reviewer for round 2 is ChatGPT — a second pass specifically checking whether the three structural critiques from round 1 (conditional-prediction disclaimer, D3 objection paragraph, H3′ reframe) are now adequately addressed. Grok re-review is valuable as first empirical test of whether PD-002 three-tier taxonomy is actually being used in review language. Copilot re-review is lower-value given round 1 produced mostly validation.
 
-**ChatGPT (Round 1):** Four factual mismatches identified — but each mismatch was against a document ChatGPT imagined, not the one sent. Pattern-matched "H2'" (hypothesis 2-prime) to "²H" (deuteron). All four substantive critiques were internally coherent under the deuteron reading but inapplicable to the actual H2' target.
+3. **OPEN-ORG-008 execution** — promote handover-protocol visibility in `operating_system.md` and codify the dual trigger (user-initiated "please execute handover protocol" + Claude-initiated prompt on workflow-shape signals). Small patch, ~15 minutes.
 
-### 4.1 Re-review letter (21 April midday)
+4. **OPEN-ORG-007 execution** — add repo-level `.gitignore` for Python build artifacts. 5 minutes.
 
-Drafted `SS-8_chatgpt_rereview_request_letter.md` (161 lines) under `relationship_protocol.md` discipline:
-- §2: acceptance of genuine contributions
-- §3: line-cited verbatim mismatches for all four items
-- §4: diagnostic framing — "H2' / ²H notation collision" as most likely mechanism
-- §5: re-read anchors pointing to note sections that confirm actual target
-- §6: self-accountability — note §1 lacks explicit "not the deuteron" scope negation; title too compressed
-- §7: continued engagement
+5. **OPEN-ORG-003 execution** becomes required **before SS-9 drafting can properly produce §4.1B**. If SS-9 is the next paper, sequence is: OPEN-ORG-003 first (swarm-tally header in `predictions.md`), then SS-9 draft.
 
-Zero prohibited words (hallucination, careless, sloppy, lazy). Joint voice: Thomas + Claude.
-
-### 4.2 ChatGPT Round 1 corrected response
-
-Full protocol compliance:
-- Explicit acknowledgement: "I conflated H2' with ²H."
-- Three named retractions: deuteron target claim, 2.22 MeV calibration critique, spin/bound-state uniqueness requirement.
-- Substantive Round 2 review delivered against actual document.
-- Four new priorities: D1–D3 explicit as assumptions, why 2E/V uniquely forced, residual decomposition strategy, **Pattern 6 necessity** (ChatGPT's distinct post-correction contribution).
-
-**Case 2 archived** in `relationship_protocol.md` §6 documenting the successful notation-collision correction cycle.
+6. **Table 4 regeneration** (Thomas-side; requires local AME 2020 data download per `series_strong/data/data-README.md` instructions).
 
 ---
 
-## 5. OPEN-SS-26 first-principles attack (21 April 2026)
+## Context Thomas may want to revisit
 
-Between Round 1 and Round 2, the decision was made to attack OPEN-SS-26 substantively before circulating to reviewers for Round 2. Rationale: the OPEN-SS-26/-27/-28 triad was logically opaque; a concrete attack would clarify which questions were genuinely independent.
-
-### 5.1 Numerical script
-
-`ss8_ssv_minimization_sketch.py` (262 lines). Evaluated two energy models at four site classes on two test polytopes:
-
-**Model A (K₃-face-participation counting, D2-derived):**
-- Vertex: $-\deg(v) \cdot B_{\text{pair}}$
-- Edge-midpoint: $-2 \cdot B_{\text{pair}}$
-- Face-center: $-1 \cdot B_{\text{pair}}$
-- Centroid: $0$
-
-**Model B (SR-nn-pair Yukawa, λ_nn = 0.35 × edge):**
-- Octahedron: vertex $-1.247$ vs centroid $-0.796$ (runner-up). Gap 1.57×.
-- GESBP: vertex $-1.336$ vs centroid $-0.842$. Gap 1.59×.
-
-Script ran clean. Both models ranked vertex as the minimum.
-
-### 5.2 Sketch document (`SS-8_D1_ssv_minimization_sketch.md`, 307 lines)
-
-**Theorem 3 (initial form).** D1 promotes to conditional theorem under either Premise A (D2 + simplicial combinatorics) or Premise B (SR-nn-pair physics).
-
-**Unexpected finding during the attack:** D1 and D2 are not logically independent. Under Premise A, D1 is an arithmetic corollary of D2 because deg(v) ≥ 3 > 2 > 1 > 0 holds for any simplicial 3-polytope.
-
-**Proposed consequence:** OPEN-SS-26 (D1 derivation) subsumes into OPEN-SS-27 (D2 derivation). The registry can be simplified from three open problems to two.
-
-This consolidation was labeled "proposed but not adopted" pending Round 2 reviewer concurrence.
+- **SS-9 planning.** OPEN-SS-28's closure — first-principles derivation of D3 uniform averaging plus residual decomposition into H3′/H4′/H5′ — is a natural target for SS-9 or SS-10. Would supersede the provisional H3′ transport in SS-8 §3.5 with a derived-tier mechanism.
+- **Grok Round 2.** First empirical test of whether the three-tier verification taxonomy actually changes reviewer language in practice (vs being documentation without force).
+- **Curriculum-phase deepening** of SS-8 §§5 (Physical Interpretation) and §6 (CPP-to-Conventional Mapping) remains deferred per PD-001 mathematical-mapping-phase scoping. No priority.
 
 ---
 
-## 6. Round 2 reviews (22 April 2026)
+## Commits from this session (23–24 April 2026)
 
-Sent the sketch + note updates to all three reviewers with a generic Round 2 review request (`SS-8_Round2_review_request.md`) posing seven specific questions (Q1–Q7).
+Session produced eleven commits across paper content, governance infrastructure, and this handover patch:
 
-### 6.1 Convergence on Q1–Q5
+- `ea01e72` — SS-8 v0.1 initial draft (via patch 0004)
+- `c853180` — SS-8 paper content (GitHub Desktop auto-sync)
+- `fe34bc5` — Filename convention retroactive application (via patch 0006)
+- `77b1117` — SS-8 v0.2 Round 1 AI-review response (via patch 0007)
+- `2d1bf1c` — PD-001 signature-thread and swarm-validation conventions (via patch 0005)
+- `37a2e34` — PD-002 verification-tier taxonomy + Grok exchange + v0.2 CHANGELOG correction (via patch 0008)
+- `8c2b021` — SS-8 paper via GitHub Desktop (content edit)
+- `d8e0b22` — AME 2020 data dependency + `{scope}-README.md` convention (via patch 0009)
+- `5b5474b` — PD-003 Organizational Frontier Registry (via patch 0010, pushed as `d2ba3fc`)
+- **[this patch 0011 — handover preservation; commit hash assigned at commit time]**
 
-All three reviewers endorsed:
-- Q1 D1–D2 coupling as genuine (not circular)
-- Q2 Model B as not-reducible-to-Model-A (*with an important caveat from ChatGPT — see §6.3*)
-- Q3 conditional theorem tier as correct (with language refinement per ChatGPT)
-- Q4 OPEN-SS-26/-27 consolidation as warranted (with ChatGPT noting it as pragmatic rather than logically forced)
-- Q5 numerical robustness across tested λ and polytope choices
-
-### 6.2 Q6 Pattern 6 disagreement
-
-- **Copilot:** Position A (Pattern 6 as observation). SS-8 does not yet derive K₃ eigenvalue structure at the interstitial scale.
-- **Grok:** Position B (Pattern 6 as theorem-tier within SS-8 but "doesn't require axiom-registry promotion").
-- **ChatGPT:** Position A. Position B "requires demonstration that K₃ structure recurs dynamically, not just combinatorially."
-
-Grok's formulation ("theorem-tier but not registry-level") is internally inconsistent with `operating_system.md`'s theorem-registry convention — theorems either meet the bar and get registered, or they don't. 2-of-3 majority plus this inconsistency resolved Q6 to Position A.
-
-### 6.3 The ChatGPT Q2 concern
-
-ChatGPT alone raised a deeper concern that Copilot and Grok did not test: *Does Model B's energy ranking reduce, after algebraic simplification, to a monotonic function of vertex degree or adjacency count?* If yes, Model B would be "Model A in disguise" and the "two independent premises" framing would collapse.
-
-This was the single Round 2 question that neither of the other two reviewers had substantively tested. The attack:
-
-### 6.4 Q2 algebraic-reduction analysis
-
-`ss8_Q2_algebraic_reduction_test.py` (276 lines) evaluated Model B at 8 lambda values from strict SR (λ = 0.05 × edge) to long-range (λ = 1.5 × edge).
-
-`SS-8_D1_Q2_algebraic_reduction_analysis.md` (290 lines before Round 2 closure refinement) delivered three categorical discriminators:
-
-1. **Multiplicity vector mismatch.** Model A's counting at (vertex, edge, face, centroid) is $(\deg(v), 2, 1, 0)$. Model B's leading-order SR structure gives $(1, 2, 3, V)$. Different integer vectors.
-
-2. **Non-vertex ordering reversal.** At the sketch-tested λ = 0.35 × edge: Model A ranks edge > face > centroid; Model B ranks centroid > face > edge. Opposite ordering of non-vertex sites.
-
-3. **Degree-scaling contrast.** At strict SR (λ = 0.05 × edge): $E_B(\deg=4) / E_B(\deg=5) = 1.000$ in Model B. Model A predicts 0.8. The ratio never approaches 0.8 at any tested λ. Model B is degree-independent at leading order; Model A is linear in deg(v) at all scales.
-
-**Empirical discriminator (unexpected bonus):** Model A and Model B predict opposite behavior for how binding varies with host-vertex degree. Phase 1b data is averaged over all vertices per polytope, so can't discriminate. A site-resolved future measurement or tight-binding calculation would. Registered as future work for SS-11 candidate.
-
-**Initial verdict (before Round 2 closure refinement):** Model B is a "genuinely independent derivation." Conditional theorem tier stands.
+All commits on `origin/main`.
 
 ---
 
-## 7. Round 2 closure and independence-level refinement (22 April 2026)
+## How to use this file
 
-Each reviewer was asked to review the Q2 analysis document.
+**If you are the next Claude reading this:** You have 30 seconds of orienting text above and 5 minutes of detail below it. For deeper context, read `development-SS-8.md` vignette 9 (the most recent session's reasoning that wasn't captured elsewhere). For paper substance, go straight to `SS-8_interstitial_neutron_2EV_scaling.tex` and its CHANGELOG header. For governance context, read PD-001 through PD-003 in order of date.
 
-### 7.1 Grok on the Q2 analysis
+**If Thomas wants the current state:** The one-minute orientation above is designed for you too. State is SS-8 v0.2, Round 1 reviews done, governance infrastructure built, ready for Round 2 dispatch when you say so.
 
-Endorsed without reservation. "Categorically resolves ChatGPT's Q2 concern. The three discriminators are clean, reproducible, and decisive."
-
-### 7.2 Copilot on the Q2 analysis
-
-Endorsed. Flagged one language concern: "Clarify the meaning of 'independent premises' — recommend adding one sentence: 'Independence here means functional non-equivalence, not independence of physical intuition.'"
-
-### 7.3 ChatGPT on the Q2 analysis
-
-Substantive critique. Distinguished three levels of independence:
-- **Level 1 (algebraic):** established by the analysis.
-- **Level 2 (functional):** established.
-- **Level 3 (physical-principle independence):** NOT established. Both models rest on a shared proximity-binding ancestor principle.
-
-ChatGPT's diagnosis: the analysis's §7 claim of "genuinely independent derivation" is internally inconsistent with its own §8 acknowledgment of shared ancestry. The refinement: "two functionally distinct realizations of a shared proximity-binding premise."
-
-**On review, ChatGPT was substantively right.** Two of three reviewers (ChatGPT more formally, Copilot more gently) independently identified the same issue; only Grok was permissive. The refinement was adopted.
-
-### 7.4 Refinements adopted (commit `324584f`)
-
-Across three documents:
-
-- `SS-8_D1_Q2_algebraic_reduction_analysis.md` §7 Verdict refined with explicit Level-1/2/3 decomposition. §8 expanded with path to true Level-3 independence. §10 proposed additions revised to split functional vs physical-principle content.
-- `SS-8_D1_ssv_minimization_sketch.md` §1 headline, §2.3 claim, §4.2 tier language refined. New §4.3 "Independence levels" subsection. New §4.4 "Response to Q2 algebraic-reduction test."
-- `SS-8_H2prime_derivation_note.md` §6.2 D1 status refined. §10 OPEN-SS-26 entry split into functional (→ OPEN-SS-27) and physical-principle (→ programme-level OPEN-FRONTIER question).
-
-### 7.5 Synthesis letter (`SS-8_Round2_synthesis_letter.md`)
-
-Round 2 closure letter to all three reviewers. Acknowledges each reviewer's distinct contribution. Credits ChatGPT's Levels 1/2/3 decomposition as the single most consequential Round 2 contribution — caught an internal inconsistency the other two reviewers missed. Round 2 declared closed pending material-problem flag.
-
----
-
-## 8. Commit-cadence rule (22 April 2026)
-
-Separate from the SS-8 substantive work but arising in the same session: `operating_system.md` updated with a new "Commit cadence (adopted 22 April 2026)" section codifying two commit triggers — section-end batch and context-pressure preservation — decoupled from version milestones. Applied successfully to the SS-8 D1 attack commit (`cc91b09`) and the subsequent Q2 analysis (`6b842af`) and Round 2 closure (`324584f`) commits.
-
-The rule specifies: "Transcript summaries are lossy (specific numbers, exact wording, and registry statuses get abbreviated or extrapolated), whereas committed files are verbatim. Anything that would hurt to reconstruct from a summary must be committed before the summary happens."
-
-This curated transcript file is itself an instance of that rule: preserving the narrative of development in git-committed form before context compaction can degrade it.
-
----
-
-## 9. State of the SS-8 open-problem cascade
-
-**OPEN-SS-23** (odd-A and non-alpha-chain nuclei). Inherited from SS-7. Retargeted to SS-8. Not yet addressed in SS-8 work to date. Unchanged.
-
-**OPEN-SS-24** (C4 → theorem, deferred to SS-9 candidate). Inherited from SS-7. Unchanged.
-
-**OPEN-SS-25** (DP-sea Coulomb screening, SS-7-adjacent). Inherited. Unchanged.
-
-**OPEN-SS-26** (D1 interstitial vertex localization). *Partially resolved 22 April 2026.* Conditional-theorem delivered at Level-2 tier. Functional content subsumed by OPEN-SS-27; physical-principle content (Level-3 independence) promoted to programme-level OPEN-FRONTIER question on `Research_Frontier.md` (registration pending).
-
-**OPEN-SS-27** (D2 via A6' extension). *Expanded scope 21 April 2026, reconfirmed 22 April 2026.* Subsumes OPEN-SS-26's functional content. Single substantive first-principles target for SS-8 Layer 2b. Not yet attacked.
-
-**OPEN-SS-28** (D3 bulk-regime averaging + residual decomposition). Unchanged.
-
-**OPEN-FRONTIER-NNN** (*pending registration*). "Can D1 (interstitial-neutron vertex localization) be derived from a physical mechanism not based on proximity-aggregation (e.g., topological, entropic, geometric-phase)?" Programme-level structural question arising from the Round 2 Level-3 independence analysis.
-
----
-
-## 10. Registry status
-
-- Programme-level axioms: **9** (unchanged since SS-7 v1.2). No SS-8 additions.
-- Theorem registry: no SS-8 entries yet (Theorem 1 Layer 1 combinatorics and Theorem 3 D1 conditional both remain at exploratory tier pending v0.1).
-- PH-OPEN-SS-26 registry action pending: create with "partially resolved" status and cross-reference to the D1 sketch + Q2 analysis + Round 2 synthesis letter.
-
----
-
-## 11. What has been committed
-
-Five commits landed on origin/main:
-
-- `814d431` (21 April) — SS-8 Phase 1 + 1b exploratory artifacts + H2' derivation note (original version)
-- `cc91b09` (22 April) — SS-8 D1 SSV-minimization attack + OPEN-SS-26/-27 consolidation proposal + commit-cadence rule
-- `5526b0d` (22 April) — Round 2 review request document
-- `6b842af` (22 April) — Q2 algebraic-reduction test + analysis
-- `324584f` (22 April) — Round 2 closure + Level-1/2/3 refinement + synthesis letter
-
-Authorship: `Claude Opus <noreply@anthropic.com>` for sessions where Claude drove the substantive work; other commits under your identity.
-
----
-
-## 12. Preserved reviewer content
-
-Full verbatim text of all reviewer correspondence is now committed to `series_strong/papers/SS-8/reviews/` (adopted per the per-paper subfolder convention documented in `templates/operating_system.md` §11). See `reviews/README.md` for the catalog. Summary pointers below:
-
-Round 1 reviews (on H2' note):
-- `reviews/round1_copilot.md` — substantive, structural recommendations.
-- `reviews/round1_grok.md` — substantive, first-principles attack offer.
-- `reviews/round1_chatgpt_initial.md` — misread as deuteron derivation; retracted. Preserved because the H2'/²H notation collision it exposes directly motivated the "explicit not-deuteron disambiguation" recommendation.
-- `reviews/round1_chatgpt_corrected.md` — ChatGPT's re-review after correction letter; full protocol compliance; named four post-correction priorities including Pattern 6 necessity. This is the canonical Round 1 ChatGPT position.
-
-Round 2 reviews on the Round 2 request package (letter + D1 sketch + note updates):
-- `reviews/round2_copilot_on_review_request.md` — Q1–Q7 answers; endorses conditional theorem tier and consolidation.
-- `reviews/round2_grok_on_review_request.md` — Q1–Q7 answers; endorses conditional theorem, consolidation, and Position B on Pattern 6.
-- `reviews/round2_chatgpt_on_D1_sketch.md` — substantive Q2 algebraic-reduction test proposed (triggered the Q2 analysis document).
-- `reviews/round2_chatgpt_on_review_request.md` — meta-review of the review-request letter itself.
-
-Round 2 reviews on the Q2 algebraic-reduction analysis:
-- `reviews/round2_grok_on_Q2_analysis.md` — endorses without reservation; "categorically resolves ChatGPT's Q2 concern."
-- `reviews/round2_copilot_on_Q2_analysis.md` — endorses; flags language clarification on independence meaning.
-- `reviews/round2_chatgpt_on_Q2_analysis.md` — substantive critique; Level-1/2/3 independence decomposition; refined language adopted.
-
----
-
----
-
-## 14. Curation maintenance rules
-
-This file should be updated at each section-end commit during SS-8 development. Update rules:
-
-- **At section end:** append a new §N covering the session's work. Do not rewrite prior sections.
-- **At context-pressure threshold:** before compaction, verify this transcript covers the substantive session work. If gaps exist, fill them by curating directly from the active session, NOT by regenerating from a transcript summary.
-- **At v0.1 milestone:** move this file to `development-SS-8.md` (following the SS-7 precedent) and begin the documentation suite per `paper_completion_checklist.md`.
-- **At v1.0 milestone:** the development transcript is complete; subsequent revisions to the paper are tracked in the paper's own CHANGELOG header and in per-version reviewer response documents.
-
----
-
-*End of SS-8 curated development transcript.*
-*Last updated: 22 April 2026, covering SS-8 work from ~20 April through 22 April.*
-
----
-
-## Next session items (updated 23 April 2026)
-
-The programme-level Hierarchy 2 + Hierarchy 3 sweep has been completed (patch 3, 23 April 2026): OPEN-SS-26, OPEN-SS-27, and OPEN-SS-28 are now formally registered in `Research_Frontier.md`; the Level-3 methodology is archived in `problem_histories/PH-OPEN-SS-26.md`; two new Claude Opus failure-mode entries are recorded in `templates/AI_team_expectations.md`.
-
-Remaining queue for SS-8, in priority order:
-
-1. **SS-8 v0.1 paper drafting (multi-session).** Primary next-session work. Builds on the H2' derivation note, the D1 SSV-minimization sketch, the Q2 algebraic reduction analysis, and the SS-5 v6 + SS-7 v1.2 antecedent papers. Framing B (absolute binding) is the primary framing; Framing C (asymmetry) recovered as corollary. Per founders_voice/003, production is primary and documentation seams happen at section-ends. Expected cadence: one section-end batch commit per paper section.
-
-2. **OPEN-SS-27 attack — D2 derivation via A6' extension (2-3 sessions).** Closure delivers D1 automatically via simplicial combinatorics (two-for-one: resolves OPEN-SS-26 Model A conditional via derived D2, and advances Level-3 independence work). Now registered in Research_Frontier.md §7 Recommended Attack Order at rank 6. Can be pursued in parallel with v0.1 drafting or after. Caution: attacking D2 before v0.1 drafts surfaces what D2's published form should look like carries some risk of solving the wrong problem; defer until v0.1 structure forces the question.
-
-3. **OPEN-SS-28 attack — D3 bulk averaging + residual decomposition.** Lower priority. Phase 1 empirical map provides the data; the structural derivation is downstream of OPEN-SS-26 and OPEN-SS-27.
-
-4. **PH-OPEN-SS-27 / PH-OPEN-SS-28 history files.** Create when attack sessions begin and substantive history accumulates. Not needed at problem-registration time.
-
-### Level-3 independence (programme-level open question)
-
-OPEN-SS-26 remains PARTIAL at Level-3 (physical-principle independence). Two paths to Level-3 closure:
-
-- **Path α:** Derive proximity-binding itself from CPP primitives (A1–A3 plus downstream axioms). This would validate both Model A and Model B retrospectively and close Level-3 via derived foundation.
-- **Path β:** Construct a third D1 model that does not invoke proximity-binding. This would achieve Level-3 independence directly via non-proximity demonstration.
-
-The methodological implication is broader than SS-8: any CPP theorem stated as "proved from independent premises X and Y" should be audited against the Level-1/2/3 decomposition. See `problem_histories/PH-OPEN-SS-26.md` for the methodology.
-
+**If you are triaging what to do next:** Scan `Organizational_Frontier.md`, answer "are we starting a new paper or continuing v0.2 work?", and use the priority list above.
