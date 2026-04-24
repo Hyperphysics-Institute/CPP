@@ -968,7 +968,8 @@ Optional tenth step: Thomas deletes the local patch file. Not required — the c
 
 ### When to use each flow
 
-- **Git-Bash-Patch** — structural edits, multi-file changes, new files, any case where Claude's authorship should be recorded in git history. This is the default for substantive session work.
+- **Git-Bash-Patch** — structural edits, multi-file changes, new files where commit-message structure and Claude's authorship should be recorded in git history, and any case where the patch needs to encode folder structure or file-move semantics. This is the default for substantive session work and for any commit touching 3+ files.
+- **Drag-drop + GitHub Desktop (for single-file drops)** — single new .tex paper files or single-file edits. Thomas downloads the file from Claude's outputs, renames to drop the `_v0.x` suffix (canonical filenames carry no version suffix; version history lives in the internal CHANGELOG), drops into the target folder via file explorer, and commits via GitHub Desktop with a sensible message. This is more ergonomic than Git-Bash-Patch for single-file cases and was adopted as the standard workflow for such cases on 24 April 2026 during the SS-8 v0.1 session. Claude still produces a format-patch as a fallback option in the same session in case Thomas prefers it, but the expectation for single-file drops is the drag-drop path.
 - **Direct-file-copy (legacy)** — single-file one-off edits Thomas makes himself, when Claude's authorship is not relevant. Thomas may still use this for his own edits.
 - **Claude Code (not yet in use for CPP)** — agentic-coding sessions where Claude has direct push access. Not currently configured for CPP; mentioned here for completeness.
 

@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/templates/paper-formatting.md`
 **Purpose:** Master template for generating and finalising all CPP series papers.
-**Last updated:** 2 April 2026
+**Last updated:** 24 April 2026 (added §§4.1A and 4.1B — CP/GP Signature and Swarm-Validation Contribution required subsections, per PD-001; previously 2 April 2026)
 **Maintainer:** Thomas Lee Abshier ND, with AI team
 
 ---
@@ -200,8 +200,10 @@ When figures are inserted, add a comment block explaining placement:
 \subsection{Open Problems Addressed}   % ← list which Research_Frontier.md entries this paper confronts
 \section{...}  (body sections — definitions, lemmas, theorems, proofs)
 \section{Physical Interpretation}       % ← CPP mechanism: what physical objects are involved and what are they doing?
+\subsection{CP/GP Signature at This Scale}    % ← REQUIRED (PD-001, 24 Apr 2026); see §4.1A below
 \section{CPP-to-Conventional-Physics Mapping}  % ← structural correspondence table
 \section{Conclusion}
+\subsection{Swarm-Validation Contribution}    % ← REQUIRED (PD-001, 24 Apr 2026); see §4.1B below
 \subsection{Problem Status After This Paper}  % ← state new status of each problem addressed
 \section*{Acknowledgements}
 \bibliography{...}
@@ -219,7 +221,37 @@ advances CONJ-SM9-1 (pair counting decomposition) to partially proved status.
 
 **CPP-to-Conventional-Physics Mapping** (after Physical Interpretation): Provide a table or structured comparison showing how each element of the CPP mechanistic account corresponds to the conventional physics description. The mapping is *structural*, not literal — CPP operates at a finer granularity than perturbative QFT. The correspondence is at the level of symmetry, degrees of freedom, and observable predictions.
 
-**Problem Status After This Paper** (in Conclusion): State the updated status of each problem. Example:
+#### 4.1A CP/GP Signature at This Scale (REQUIRED — per PD-001, 24 April 2026)
+
+Every CPP paper includes this subsection, typically as the final subsection of Physical Interpretation. Rationale and full context: `programmatic_decisions/PD-001-signature-thread-and-swarm-convention.md`.
+
+The subsection must do three things, each in its own paragraph or labelled block:
+
+1. **Load-bearing axiom identification.** Name which axiom(s) do load-bearing work in this paper's derivation. Example (SS-8): A2 (600-cell topology, supplying $z=12$), A5 (propagation efficiency, supplying $1/\varphi$), A8$'$ (cage-volume scaling, supplying $M_0 = m_e z/\varphi$), A11 (lattice-scale grounding, fixing MeV units via $\Lambda_{\text{QCD}}$).
+
+2. **Visible-vs-smoothed discreteness.** Identify where the discrete lattice structure is still visible in the paper's result — the $\varphi$ factors, the $z=12$ coordination, the $K_3$ recurrence, the simplicial-polytope combinatorics — versus where the discreteness has been averaged-out by summing over many lattice sites, cage volumes, or DP-sea contributions. This is where Thomas's orders-of-magnitude-dilution concern is explicitly addressed.
+
+3. **Macroscopic shadow correspondence.** Note which empirical regularity in conventional (non-CPP) physics is the macroscopic shadow of the sub-quantum discreteness articulated by this paper. Example (SS-8): the $2E/V$ scaling law is the macroscopic shadow of nucleon-nucleon $K_3$ collective modes happening at many simultaneous contact faces at each alpha-vertex; what conventional nuclear physics calls "mean-field pairing" is, in CPP, the averaged-out manifestation of discrete face-participation counting.
+
+Purpose: without this subsection, readers (reviewers, critics, later curriculum readers) have no anchor connecting the paper's macroscopic-scale predictions to the programme's sub-quantum foundations. Including it makes the CP/GP-to-conventional-physics thread explicit within each paper, without requiring the heavy metaphorical/illustrative work that belongs in the curriculum-development phase. Length: typically half to one page; longer only when the signature is especially intricate.
+
+#### 4.1B Swarm-Validation Contribution (REQUIRED — per PD-001, 24 April 2026)
+
+Every CPP paper includes this subsection as the standard closing subsection of Conclusion, immediately before Problem Status. Rationale and full context: `programmatic_decisions/PD-001-signature-thread-and-swarm-convention.md`.
+
+The subsection is short (one paragraph typical, formulaic) and states:
+
+1. **Predictions added.** How many zero-parameter (or explicitly-parameter-counted) empirical correspondences this paper contributes. Example (SS-8): 12 primary ($N_{\text{ex}} = 2$) + 30 secondary ($N_{\text{ex}} \in \{3,\ldots,8\}$) = 42 predictions.
+
+2. **Running swarm total.** The cumulative count of zero-parameter empirical correspondences across the entire CPP programme as of this paper, derived from the same unchanged axiom stack. Source: `predictions.md` cumulative-counter header (to be added).
+
+3. **Implausibility-of-accident statement.** A brief statement that the probability of such correspondence from accident or hidden tuning scales as $(\text{residual band} / \text{typical parameter space})^N$ and is astronomically small at the swarm's present size.
+
+Purpose: the programme's epistemic weight lives in the cumulative swarm, not in any individual paper's result. Without this closing subsection, each paper reads as an isolated correspondence that could plausibly be coincidence. With it, every paper participates in and reinforces the cumulative argument — the single most important thing each paper does for the programme as a whole.
+
+**Retroactive adoption.** Existing papers (SS-5, SS-7, SM-3, SM-8, SM-11, etc.) will add both §4.1A and §4.1B at their next major-revision cycle; the mathematical content is already present and only the explicit articulation is being added. SS-8 v0.2 will establish the realized template.
+
+**Problem Status After This Paper** (in Conclusion, after Swarm-Validation Contribution): State the updated status of each problem. Example:
 ```latex
 \subsection{Problem Status After This Paper}
 \begin{itemize}
