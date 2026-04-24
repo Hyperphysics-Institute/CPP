@@ -1036,8 +1036,75 @@ The Git-Bash-Patch workflow is what made the per-paper subfolder convention (§1
 
 ---
 
+## 14. Organizational Frontier Registry (adopted 24 April 2026)
+
+**Registry file:** `/CPP/Organizational_Frontier.md`
+**Rationale file:** `/CPP/programmatic_decisions/PD-003-organizational-frontier-registry.md`
+**Parallel to:** `Research_Frontier.md` (theoretical/physics problems)
+
+### Purpose
+
+Captures organizational, infrastructural, and governance-level improvement items that have been identified during programme work but have not yet been acted on. Solves the chronic failure mode where "good ideas for later" degrade across session compaction, drift through repeated handover paraphrasing, or become irretrievable when the underlying failure mode recurs in future sessions.
+
+### The reflexive-drop protocol
+
+When an organizational improvement idea surfaces during active work (paper drafting, infrastructure building, review cycles), do **not** act on it immediately (scope disruption) and do **not** carry it in session memory (compaction loss). Instead:
+
+1. **Stop for 60–90 seconds.**
+2. **Open `Organizational_Frontier.md`.**
+3. **Add an `OPEN-ORG-NNN` entry** using the template in §2 of that file. Full fidelity: originating context, problem description, proposed fix, trigger condition, blocking dependencies, history.
+4. **Commit** (immediately, or stage for the next batched commit).
+5. **Return to current work.**
+
+The attention loop closes at step 5; the preservation loop was closed at step 3–4. The idea survives compaction because it's in a committed file, not in active session memory.
+
+### Trigger-condition types
+
+Each entry specifies when it becomes workable. Five trigger types are recognized:
+
+1. **Between-paper execution.** Workable in any session where no paper-drafting is actively in flight and no higher-priority OPEN-ORG item is queued ahead.
+2. **Threshold-triggered.** Fires when programme state crosses a specified threshold (e.g., `operating_system.md` exceeds ~1500 lines).
+3. **Opportunistic / combine-with.** Executes combined with some other work that's going to happen anyway (e.g., SS-7 script refactor combined with SS-7 subfolder migration).
+4. **Milestone-triggered.** Fires when the programme reaches a specified milestone (e.g., swarm-tally header required before SS-9 drafting).
+5. **Next-session.** Execute at the next available opportunity. Used sparingly, only when recurring friction makes deferral costly.
+
+### Session-close handover protocol
+
+The "Pending for next session" list at each session close **no longer carries content** for organizational items. Instead, it points at the registry:
+
+> OPEN-ORG registry current as of this session. Newly registered this session: OPEN-ORG-{X}, OPEN-ORG-{Y}. Became workable this session but deferred to time constraints: OPEN-ORG-{Z}. Next session should scan registry against current state to identify workable items.
+
+The content lives in `Organizational_Frontier.md` (durable, version-controlled, searchable). The handover is a short pointer. This eliminates the paraphrase-drift failure mode where pending items get restated slightly differently each session until they detach from original intent.
+
+### Signals that reflexive-drop is warranted
+
+The following phrases, when they arise during session work, are signals that an organizational item is about to be carried in session memory instead of durable infrastructure. The correct response is always: register, return.
+
+- "We should eventually X"
+- "This is a good idea but out of scope now"
+- "Noting this for later"
+- "Future Opus should Y"
+- "At some point we need to Z"
+- "Flag for the next session"
+- "I'll mention this in the handover"
+
+Each of these uttered in a session is a reflexive-drop cue. Cost: 60–90 seconds. Benefit: elimination of degradation risk.
+
+### Maintenance cadence
+
+- **Scanned at each session start** against current programme state. Items whose triggers have fired are candidates for the session slot (if any slot is available).
+- **Scanned at each paper's v1.0 completion milestone** alongside `Research_Frontier.md`. Workable items get queued; completed items get moved to §3 (Resolved) of the registry file with resolution-date and commit reference.
+- **Scanned when a new entry is added** to check for duplication or relationship with existing entries.
+
+### Meta-discipline: this file is itself registry content
+
+If, during future sessions, this §14 needs updating (new trigger types, refined protocols, clarifications), the update itself may be registered as an OPEN-ORG item rather than implemented inline. The registry holds itself to the same discipline it asks of other programme work.
+
+---
+
 *This document supersedes `bootup.md` as the complete reference.*
 *`bootup.md` remains the quick-start guide for sessions.*
 *Created 8 April 2026 by Claude Opus at Thomas's request.*
 *Updated 9 April 2026 — SM-8/9/10 trilogy lessons, 7-file suite, SM-10 FEM references, Post-Session Quick Checklist, axiom reconciliation note.*
 *Reconciled 11 April 2026 — merged operating_system.md and operating_system2.md; restored Phase 7b (Verification Notebooks) and transcript include/exclude guidance from v1.*
+*Updated 24 April 2026 — added §14 Organizational Frontier Registry (adopted per PD-003).*
