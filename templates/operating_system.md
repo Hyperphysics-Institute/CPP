@@ -739,6 +739,11 @@ start of the next session (to capture what was missed).
   - `SM-8_quark_generation_600cell_shells.tex`
   - `SM-9_scaling_exponent.tex`
   - `SM-10_chain_network_FEM.tex`
+  - `SS-5_light_nuclei_open_vertex_cascade.tex`
+  - `SS-7_alpha_cluster_edge_formula.tex`
+  - `SS-8_interstitial_neutron_2EV_scaling.tex`
+
+**Enforcement reminder.** This rule is checked at first file-creation, not after. Writing `SS-N_paper.tex` as a placeholder "to be renamed later" creates a rename commit that pollutes history; write the canonical descriptive filename the first time. If the final descriptive title isn't yet settled at first-draft time, pause and decide it before creating the file. (This rule was violated during SS-8 v0.1 initial drafting on 23 April 2026; the rename commit that added these SS-family examples was the correction.)
 
 ### Version management
 - **ONE file per paper, overwritten with each revision.** Git history preserves all versions.

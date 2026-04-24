@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/templates/paper-formatting.md`
 **Purpose:** Master template for generating and finalising all CPP series papers.
-**Last updated:** 24 April 2026 (added §§4.1A and 4.1B — CP/GP Signature and Swarm-Validation Contribution required subsections, per PD-001; previously 2 April 2026)
+**Last updated:** 24 April 2026 (added §15 cross-reference to operating_system.md §11 for filename convention after SS-8 v0.1 rename correction; added §§4.1A and 4.1B CP/GP Signature and Swarm-Validation Contribution required subsections per PD-001; previously 2 April 2026)
 **Maintainer:** Thomas Lee Abshier ND, with AI team
 
 ---
@@ -763,6 +763,7 @@ Before declaring a paper "ready for OSF registration," verify:
 
 **Key placement rules:**
 
+- **Filename convention for `.tex`, `.pdf`, `.bib`:** see `operating_system.md` §11 "File Naming Conventions / Papers" — the canonical specification is `[S]-[N]_[short_descriptive_slug].tex`, slug 3-5 lowercase words separated by underscores, no version suffix. The `[PAPER-ID]_[title].tex` placeholder in the tree above resolves to e.g. `SS-8_interstitial_neutron_2EV_scaling.tex`. This rule is checked at first file-creation, not after; writing `SS-N_paper.tex` as a placeholder to be renamed later is incorrect.
 - The `.bib`, `.tex`, and `.pdf` are together in `papers/` — no separate bibliography subfolder. LaTeX compiles with `\bibliography{SM-6_references}` (no path prefix needed).
 - Figures go in a series-level `figures/` folder with a paper subfolder. From `papers/`, the `\graphicspath` is `{{../figures/figures-[SERIES]-[N]/}}`.
 - Notebooks go in a series-level `notebooks/` folder, shared across papers in the series.
