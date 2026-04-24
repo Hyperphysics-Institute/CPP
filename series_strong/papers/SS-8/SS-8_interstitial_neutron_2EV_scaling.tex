@@ -3,16 +3,81 @@
 %        The 2E/V Scaling Law from Simplicial Polytope Geometry
 % Strong Sector Series
 %
-% Version 0.2 — 24 April 2026 (Round 1 AI-review response)
-%
-% FILENAME NOTE: This paper was initially written to disk as
-%   SS-8_paper.tex and renamed to SS-8_interstitial_neutron_2EV_scaling.tex
-%   on 24 April 2026 via `git mv` to conform to the CPP filename convention
-%   [series]-N_descriptive_snake_case.tex (codified in
-%   templates/paper-formatting.md §11, added in the same patch as the rename).
-%   Git history preserves the rename; LaTeX compilation is unaffected.
+% Version 1.0 — 24 April 2026 (Round 2 AI-review response, first publishable version)
 %
 % CHANGELOG:
+%   v1.0 (24 Apr 2026) — Round 2 AI-review response. Three reviews
+%     received on v0.2 (Copilot Round 2; Grok Round 2 reiterating three
+%     unaddressed Round 1 polishing items; ChatGPT Round 2 confirming
+%     v0.2 structural edits successfully integrated). Reviewer
+%     dispositions documented in handover-SS-8.md and reviews/round2_*
+%     files. v1.0 is the first publishable baseline: all reviewer
+%     polishing items workable inside the PD-001 mathematical-mapping-
+%     phase scope have been integrated; curriculum-phase deepening of
+%     §§5, 6 remains deferred to v1.x per PD-001.
+%
+%     PD-002 verification-tier taxonomy first empirical firing: Grok's
+%     Round 2 review opens with an explicit "Verification Tier
+%     Statement" labelling each finding as INSPECTED, INDEPENDENTLY
+%     RECOMPUTED, or SCRIPT-EXECUTED. The taxonomy adopted in v0.2 is
+%     now in active use in review language, not merely documented. This
+%     was the open empirical question identified in handover-SS-8.md
+%     for Round 2; the affirmative answer is recorded here.
+%
+%     Polishing edits integrated:
+%       - §1.4 (new): "How to read this paper" subsection added between
+%         the central formula (§1.3) and the deliverables list (now
+%         §1.5). Four-sentence roadmap orienting the reader to the
+%         primary/secondary content split, the conditional-prediction
+%         epistemic frame, and the residual-model status. Adopted from
+%         Copilot Round 2 item 2.
+%       - §3.5 (H3' attenuation factor): explicit one-sentence
+%         disclaimer added at the opening of "Provisional transport:
+%         the attenuation factor" stating that 1/varphi^2 is a natural
+%         geometric candidate motivated by Pattern 6 and SS-5's same-
+%         polarity ratio, not a first-principles-derived value (closure
+%         registered as OPEN-SS-28). Adopted from Grok Round 1/2 item 1
+%         and Copilot Round 2 item 4.
+%       - §1.7 (Open Problems Addressed): cross-reference added to
+%         problem_histories/PH-OPEN-SS-26.md §"Methodological
+%         implication (programme-level)" in the OPEN-SS-26 bullet, for
+%         the programme-level proximity-binding question. Adopted from
+%         Grok Round 1/2 item 2.
+%       - §7.6 (Level-3 frontier): cross-reference subsection name
+%         normalized from §"Methodological implication" to
+%         §"Methodological implication (programme-level)" for
+%         consistency with §7.3 (sec:open-ss-26). Adopted from Grok
+%         Round 1/2 item 2.
+%       - §6 (CPP-to-Conventional Mapping): explicit standalone
+%         sentence added after the mapping table reinforcing that "no
+%         numerical equivalence is claimed; the comparison is
+%         structural only" at the section level rather than only in a
+%         table cell. Adopted from Copilot Round 2 item 5.
+%       - Body text: residual "v0.1" / "v0.2" references updated to
+%         current version where they refer to this paper (preserving
+%         historical references in the CHANGELOG block itself).
+%       - Filename note from v0.2 header pruned: rename history is
+%         preserved in git, no longer needs to occupy the header.
+%
+%     Items not adopted for v1.0:
+%       - Copilot Round 2 item 1 (tighten §1.1/§1.2 by ~10%): declined.
+%         ChatGPT Round 1 and Grok Round 1/2 both praised the
+%         introduction; tightening for its own sake risks clarity loss
+%         without compensating gain.
+%       - Copilot Round 2 item 3 (D3 schematic showing vertex degrees /
+%         SSV landscape / Pauli blocking): deferred to v1.x or to
+%         OPEN-SS-28 closure paper. Rationale: medium-effort figure;
+%         curriculum-phase deepening is deferred per PD-001
+%         mathematical-mapping-phase scoping; the §2.9 D3 paragraph and
+%         OPEN-SS-28 registration adequately frame the gap for a
+%         technical reader.
+%       - Grok Round 1/2 item 3 (Table 4 regen against AME 2020 full
+%         loader): Thomas-side task. Requires local environment with
+%         AME 2020 data file per series_strong/data/data-README.md.
+%         Table 4 caption updated to flag the regeneration target as
+%         post-v1.0 rather than pre-v0.2; values themselves unchanged
+%         pending the regen.
+%
 %   v0.2 (24 Apr 2026) — Round 1 AI-review response. Three reviews
 %     received (Copilot, ChatGPT, Grok); ChatGPT's review carried the
 %     substantive load and drove the three structural edits below.
@@ -199,7 +264,7 @@
   \small AI Research Collaborator%
 }
 
-\date{24 April 2026 \\[2pt] \small Version 0.2 (Round 1 AI-review response)}
+\date{24 April 2026 \\[2pt] \small Version 1.0 (first publishable version)}
 
 \begin{document}
 
@@ -247,7 +312,7 @@ Two empirically distinguishable framings of interstitial binding are available. 
 
 This paper targets Framing~B as its primary derivation. Framing~C is recovered in \S\ref{sec:recovery-of-C} as a corollary of the alpha-polytope differential: removing one alpha from an $\Nalpha$-polytope and redistributing two of its nucleons as interstitials on the $(\Nalpha - 1)$-polytope changes the engaged \Kthree-edge count from $3\Nalpha - 6$ to $3(\Nalpha - 1) - 6 + k_{\text{interstitial}}$, with the asymmetry-energy signature emerging from the geometric differential. The Framing~B primary choice reflects a scientific commitment: the absolute-binding derivation must be general enough that Framing~C emerges as a consequence of the geometry, not as a separate calibration. This parallels SS-7's relationship to SS-5, where the ${}^{4}\mathrm{He}$ closure binding emerged as the $\Nalpha = 1$ special case of the alpha--alpha derivation rather than as a separately fitted result.
 
-\textbf{Primary-domain scope} for \S\ref{sec:numerical-predictions}: even-even nuclei on the strict $N = Z$ alpha-chain with $\Nalpha \in \{3, \ldots, 14\}$ at $\Nex = 2$. \textbf{Secondary scope} for \S\ref{sec:extension-nex}: the same alpha-chain at $\Nex \in \{3, \ldots, 8\}$, at acknowledged-looser precision. \textbf{Out of scope for v0.1}: non-alpha-chain cores (odd $Z$), heavy nuclei ($\Nalpha > 14$), dripline-asymptotic regimes, and nuclei whose substructure requires partial-alpha treatment (${}^{6}\mathrm{Li}$-like); these are registered under OPEN-SS-23 in \S\ref{sec:scope-limits}.
+\textbf{Primary-domain scope} for \S\ref{sec:numerical-predictions}: even-even nuclei on the strict $N = Z$ alpha-chain with $\Nalpha \in \{3, \ldots, 14\}$ at $\Nex = 2$. \textbf{Secondary scope} for \S\ref{sec:extension-nex}: the same alpha-chain at $\Nex \in \{3, \ldots, 8\}$, at acknowledged-looser precision. \textbf{Out of scope for v1.0}: non-alpha-chain cores (odd $Z$), heavy nuclei ($\Nalpha > 14$), dripline-asymptotic regimes, and nuclei whose substructure requires partial-alpha treatment (${}^{6}\mathrm{Li}$-like); these are registered under OPEN-SS-23 in \S\ref{sec:scope-limits}.
 
 \subsection{The central formula}
 \label{sec:central-formula}
@@ -261,10 +326,15 @@ Equation~\eqref{eq:central} is the combined output of Theorem~\ref{thm:euler-deg
 
 Equation~\eqref{eq:central} is a \emph{conditional theorem}. It is unconditionally true given the seven-hypothesis stack C1--C4 (inherited from SS-7) and D1--D3 (introduced in this paper), in the sense of SS-7 v1.2 \S2.3's epistemic-split discipline. Each hypothesis has a specific and separately registered first-principles derivation target (\S\ref{sec:registry-impact}). The 12-prediction agreement documented in \S\ref{sec:numerical-predictions} is therefore an empirical test of the conjunction of those seven hypotheses, \emph{not} of the programme-level axiom set alone.
 
+\subsection{How to read this paper}
+\label{sec:roadmap}
+
+The paper is organized as a \emph{primary} content layer (\S\S\ref{sec:derivation}--\ref{sec:numerical-predictions}) followed by a \emph{secondary} content layer (\S\ref{sec:extension-nex}) and an interpretive layer (\S\S\ref{sec:physical-interpretation}--\ref{sec:mapping}). A reader interested only in the central result should read the abstract, this section, \S\ref{sec:derivation} (derivation), and \S\ref{sec:numerical-predictions} (twelve $\Nex = 2$ predictions); these sections together establish the conditional 2E/V scaling law and its empirical agreement on the strict $N = Z$ alpha-chain. The provisional residual model in \S\ref{sec:residual-decomposition} (H3$'$) is offered \emph{after} the leading-order prediction, not as part of the proof, and may be accepted or rejected without affecting the status of the twelve primary predictions; the same applies to the $\Nex > 2$ extension in \S\ref{sec:extension-nex}, which deliberately operates at acknowledged-looser precision (8--15\% rather than the primary band's $\leq 15\%$ at $\Nex = 2$ tightening to 3--7\% under H3$'$). The CPP-to-conventional-physics mapping in \S\ref{sec:mapping} is structural and presented for orientation against shell-model and liquid-drop frameworks; it does not establish numerical equivalence with any conventional pairing-gap or coordination-number coefficient. Throughout, ``prediction'' carries the conditional sense of \S\ref{sec:central-formula}: zero-parameter from the seven-hypothesis stack, not from the programme-level axiom set alone.
+
 \subsection{What SS-8 delivers}
 \label{sec:deliverables}
 
-SS-8 v0.2 provides the following zero-parameter deliverables. As stated in the abstract and formalized in the \S\ref{sec:epistemic-split} epistemic split, every ``prediction'' below is \emph{conditional-zero-parameter}: derived without any SS-8-specific parameter fitting, but conditional on the seven paper-level hypotheses C1--C4 (inherited unchanged from SS-7) and D1--D3 (introduced here, with D1 at conditional-theorem tier). The predictions are empirical tests of the full hypothesis-stack conjunction, not of the programme-level axiom set alone.
+SS-8 v1.0 provides the following zero-parameter deliverables. As stated in the abstract and formalized in the \S\ref{sec:epistemic-split} epistemic split, every ``prediction'' below is \emph{conditional-zero-parameter}: derived without any SS-8-specific parameter fitting, but conditional on the seven paper-level hypotheses C1--C4 (inherited unchanged from SS-7) and D1--D3 (introduced here, with D1 at conditional-theorem tier). The predictions are empirical tests of the full hypothesis-stack conjunction, not of the programme-level axiom set alone.
 
 \begin{enumerate}
   \item A zero-parameter scaling law $\Delta_1(\Nalpha) = (6 - 12/\Nalpha)\,\Bpair$ for single-neutron interstitial binding in even-even $N = Z$ alpha-cluster nuclei, established as conditional Theorem~\ref{thm:h2prime} in \S\ref{sec:theorem2}.
@@ -279,13 +349,13 @@ SS-8 v0.2 provides the following zero-parameter deliverables. As stated in the a
 \subsection{What SS-8 does not deliver}
 \label{sec:non-deliverables}
 
-SS-8 v0.2 does not provide:
+SS-8 v1.0 does not provide:
 
 \begin{enumerate}
   \item A first-principles derivation of the \Kthree-face-participation counting rule D2 from programme-level CPP axioms. This derivation is the content of OPEN-SS-27 (expanded scope; \S\ref{sec:open-ss-27}); its resolution would automatically deliver D1 via the D1--D2 coupling of \S\ref{sec:d1-d2-coupling}.
   \item A first-principles derivation of bulk-regime averaging D3 or of the residual decomposition into H3$'$ (opposite-polarity pairing), H5$'$ (small-polytope attenuation), and H4$'$ (Pauli decrement at higher $\Nex$). This is the content of OPEN-SS-28 (\S\ref{sec:open-ss-28}).
   \item A first-principles derivation of the interstitial-interstitial pair-bonus magnitude from CPP primitives. \S\ref{sec:residual-decomposition} transports SS-5's mechanism at the provisional tier; full derivation is part of OPEN-SS-28's scope.
-  \item Level-3 physical-principle independence for D1. Both sufficient premises of Theorem~\ref{thm:d1-cond} share a proximity-binding ancestor principle; a D1 derivation from a non-proximity mechanism (topological, entropic, or geometric-phase) would be needed and is flagged as a candidate programme-level problem in \S\ref{sec:level-3-gap}. Registration as a cross-series OPEN is deferred to a dedicated programme-level review and is not part of v0.1's scope.
+  \item Level-3 physical-principle independence for D1. Both sufficient premises of Theorem~\ref{thm:d1-cond} share a proximity-binding ancestor principle; a D1 derivation from a non-proximity mechanism (topological, entropic, or geometric-phase) would be needed and is flagged as a candidate programme-level problem in \S\ref{sec:level-3-gap}. Registration as a cross-series OPEN is deferred to a dedicated programme-level review and is not part of v1.0's scope.
   \item A first-principles derivation of the simplicial-polytope connectivity assumption C4 itself. C4 is inherited from SS-7 as a structural hypothesis with its derivation registered as OPEN-SS-24.
   \item Coverage of non-alpha-chain cores (odd $Z$), heavy nuclei ($\Nalpha > 14$), dripline-asymptotic regimes, or nuclei with partial-alpha substructure beyond those that fall on the $N = Z$ alpha-chain. Extension to these domains is registered under OPEN-SS-23 (\S\ref{sec:scope-limits}).
 \end{enumerate}
@@ -296,8 +366,8 @@ SS-8 v0.2 does not provide:
 This paper confronts the following entries of \texttt{Research\_Frontier.md}:
 
 \begin{itemize}
-  \item \textbf{OPEN-SS-23} (inherited from SS-7 v1.2): neutron-excess binding beyond the strict $N = Z$ alpha-chain. \emph{Partially addressed.} SS-8 v0.2 covers the interstitial regime $\Nex \in \{0, \ldots, 8\}$ on-chain; full OPEN-SS-23 scope (off-chain and dripline-asymptotic regimes) remains open.
-  \item \textbf{OPEN-SS-26} (new, this paper): first-principles derivation of D1 (interstitial vertex localization) from SSV minimization. \emph{Partially resolved.} A conditional theorem is delivered (Theorem~\ref{thm:d1-cond}) at Level~1 + Level~2 independence under two sufficient premises; Level~3 physical-principle independence remains open, and the functional content is consolidated with OPEN-SS-27.
+  \item \textbf{OPEN-SS-23} (inherited from SS-7 v1.2): neutron-excess binding beyond the strict $N = Z$ alpha-chain. \emph{Partially addressed.} SS-8 v1.0 covers the interstitial regime $\Nex \in \{0, \ldots, 8\}$ on-chain; full OPEN-SS-23 scope (off-chain and dripline-asymptotic regimes) remains open.
+  \item \textbf{OPEN-SS-26} (new, this paper): first-principles derivation of D1 (interstitial vertex localization) from SSV minimization. \emph{Partially resolved.} A conditional theorem is delivered (Theorem~\ref{thm:d1-cond}) at Level~1 + Level~2 independence under two sufficient premises; Level~3 physical-principle independence remains open, and the functional content is consolidated with OPEN-SS-27. The Level-3 gap surfaces a programme-level proximity-binding question discussed in \texttt{problem\_histories/PH-OPEN-SS-26.md} \S``Methodological implication (programme-level)'' and revisited in \S\ref{sec:level-3-frontier}.
   \item \textbf{OPEN-SS-27} (new, this paper, expanded scope): first-principles derivation of D2 (\Kthree-edge coupling at the interstitial-alpha contact scale) via extension of A6$'$ from the 600-cell cage scale to the nucleon-interstitial scale. \emph{Opened.} Closure would automatically deliver the residual D1 content as a corollary.
   \item \textbf{OPEN-SS-28} (new, this paper): first-principles derivation of D3 (bulk-regime averaging) together with the residual decomposition into H3$'$, H5$'$, and H4$'$ without hidden mechanisms absorbed into ``pairing bonus''. \emph{Opened.} Bounds the achievable precision of the \S\ref{sec:extension-nex} secondary result.
 \end{itemize}
@@ -702,7 +772,7 @@ At the interstitial scale, two interstitial neutrons occupying adjacent alpha-ve
 
 \paragraph{Provisional transport: the attenuation factor.}
 
-The mediated coupling is expected to be weaker than the direct SS-5 pair bonus by a geometric factor reflecting the inter-vertex separation. A natural candidate is the $1/\phig^2$ factor, which has two independent motivations from the SS-5 machinery:
+The $1/\phig^2$ attenuation factor adopted below is a \emph{natural geometric candidate} motivated by Pattern 6 and by the numerical coincidence with SS-5's same-polarity Pauli-penalty ratio --- it is \emph{not} a first-principles-derived value at the interstitial scale; closure of this gap is registered as OPEN-SS-28 (\S\ref{sec:open-ss-28}). The mediated coupling is expected to be weaker than the direct SS-5 pair bonus by a geometric factor reflecting the inter-vertex separation. A natural candidate is the $1/\phig^2$ factor, which has two independent motivations from the SS-5 machinery:
 
 \begin{enumerate}
   \item It is the ratio $\Mzero/(\phig \cdot \Bpair) = 1/\phig$, applied twice: once for the attenuation from the direct $\Mzero$-scale contact to the $\Bpair$-scale \Kthree-mode (as in SS-5's single-K3 eigenvalue reduction), and once more for the further attenuation from direct $\Bpair$-scale contact to the mediated interstitial-interstitial coupling across the shared alpha-alpha \Kthree\ face.
@@ -797,7 +867,7 @@ Applying equation~\eqref{eq:h4prime} to the extended Phase 1 empirical map (from
 
 \begin{table}[h]
 \centering
-\caption{Extension residuals $(k_{\text{eff}}^{\text{obs}} - k_{\text{eff}}^{\text{pred-H4'}})/k_{\text{eff}}^{\text{pred-H4'}}$ as fraction of prediction. \textbf{Placeholder values pending local re-run of \texttt{ss8\_empirical\_map\_extended.py}} (v0.1 sandbox did not contain AME~2020 data file; entries below are the author's best read from Phase~1b empirical-map sketches and are to be regenerated before v0.2). Parenthesized rows indicate polytope-identity-ambiguity points where multiple simplicial deltahedra could realize the observed $\Nalpha$; residuals in those rows carry additional uncertainty attributable to OPEN-SS-24.}
+\caption{Extension residuals $(k_{\text{eff}}^{\text{obs}} - k_{\text{eff}}^{\text{pred-H4'}})/k_{\text{eff}}^{\text{pred-H4'}}$ as fraction of prediction. \textbf{Provisional values pending local re-run of \texttt{ss8\_empirical\_map\_extended.py} against AME~2020} (sandbox does not contain AME~2020 data file; entries below are the author's best read from Phase~1b empirical-map sketches and are flagged for regeneration in a Thomas-side post-v1.0 update per \texttt{series\_strong/data/data-README.md}). The $\Nex = 2$ primary results of \S\ref{sec:numerical-predictions} are independent of any regeneration of this table. Parenthesized rows indicate polytope-identity-ambiguity points where multiple simplicial deltahedra could realize the observed $\Nalpha$; residuals in those rows carry additional uncertainty attributable to OPEN-SS-24.}
 \label{tab:ext-nex}
 \begin{tabular}{@{}rrrrrrr@{}}
 \toprule
@@ -901,6 +971,8 @@ Three observations on the mapping:
   \item \emph{Polytope-identity universality is a CPP prediction.} Conventional shell-model and cluster-model calculations produce $\Nalpha$-specific predictions that depend on the detailed geometric arrangement of the alphas. SS-8 predicts (via Remark~\ref{rem:universality}) that the interstitial binding depends only on $\Nalpha$, not on which simplicial polytope is realized. This is a strong empirical test: if experiment reveals a nucleus whose interstitial binding cleanly requires a polytope-identity-specific correction beyond the 5\% band, SS-8's structural assumption would be falsified.
 \end{enumerate}
 
+\paragraph{No numerical equivalence is claimed.} The correspondences in Table~\ref{tab:mapping} are structural only. In particular, the row pairing $\Bpair$ with the empirical pairing-gap coefficient $12/\sqrt{A}$~MeV reflects a numerical comparability at $A \sim 30$ but does \emph{not} assert that CPP derives the conventional pairing-gap formula or that the conventional formula derives $\Bpair$. Each framework operates with its own derivational ancestry; the table records where their predictions land in the same numerical neighborhood and where they diverge structurally (notably at the Pattern 6 row, where CPP predicts a recurrence that conventional frameworks do not).
+
 % ============================================================
 % SECTION 7: Scope Limits and Open Problems
 % ============================================================
@@ -908,7 +980,7 @@ Three observations on the mapping:
 \section{Scope Limits and Open Problems}
 \label{sec:scope-limits}
 
-\subsection{What SS-8 v0.2 covers}
+\subsection{What SS-8 v1.0 covers}
 \label{sec:coverage}
 
 Primary scope (\S\ref{sec:numerical-predictions}): even-even nuclei on the strict $N = Z$ alpha-chain with $\Nalpha \in \{3, \ldots, 14\}$ at $\Nex = 2$. Twelve predictions.
@@ -917,12 +989,12 @@ Secondary scope (\S\ref{sec:extension-nex}): same alpha-chain at $\Nex \in \{3, 
 
 Registry inheritances: C1--C4 from SS-7 unchanged, axioms A1--A11 from the programme-level stack unchanged.
 
-\subsection{What SS-8 v0.2 defers: OPEN-SS-23 (inherited from SS-7)}
+\subsection{What SS-8 v1.0 defers: OPEN-SS-23 (inherited from SS-7)}
 \label{sec:open-ss-23}
 
 \textbf{Status:} Partially addressed (on-chain $\Nex \leq 8$ covered); off-chain and dripline-asymptotic regimes remain open.
 
-Non-alpha-chain cores (odd $Z$) and very heavy nuclei ($\Nalpha > 14$) are outside the alpha-cluster substrate assumption of C1--C4. Extension requires either a generalization of the alpha-polytope framework to mixed-core configurations or a separate derivation for non-alpha-cluster binding. Neither is attempted in SS-8 v0.2. Dripline-asymptotic regimes (where interstitial-neutron binding approaches zero) will reveal whether the H4$'$ functional form captures the full Pauli decrement structure; present data at $\Nex = 8$ for $\Nalpha \leq 14$ is within the alpha-chain bound region and does not extend to dripline.
+Non-alpha-chain cores (odd $Z$) and very heavy nuclei ($\Nalpha > 14$) are outside the alpha-cluster substrate assumption of C1--C4. Extension requires either a generalization of the alpha-polytope framework to mixed-core configurations or a separate derivation for non-alpha-cluster binding. Neither is attempted in SS-8 v1.0. Dripline-asymptotic regimes (where interstitial-neutron binding approaches zero) will reveal whether the H4$'$ functional form captures the full Pauli decrement structure; present data at $\Nex = 8$ for $\Nalpha \leq 14$ is within the alpha-chain bound region and does not extend to dripline.
 
 \subsection{OPEN-SS-26 (new, partially resolved)}
 \label{sec:open-ss-26}
@@ -936,7 +1008,7 @@ The conditional theorem of \S\ref{sec:theorem3} establishes D1 under two functio
 
 \textbf{Status:} Opened; no resolution attempted in this paper.
 
-A first-principles derivation of D2 (\Kthree-edge coupling at interstitial-alpha contact scale) via extension of A6$'$ from the 600-cell cage scale to the nucleon-interstitial scale. Closure would automatically deliver the residual D1 content as a corollary (via the D1--D2 coupling of \S\ref{sec:d1-d2-coupling}). Target paper: SS-8 v0.x if tractable, or a dedicated A6$'$-extension paper otherwise.
+A first-principles derivation of D2 (\Kthree-edge coupling at interstitial-alpha contact scale) via extension of A6$'$ from the 600-cell cage scale to the nucleon-interstitial scale. Closure would automatically deliver the residual D1 content as a corollary (via the D1--D2 coupling of \S\ref{sec:d1-d2-coupling}). Target paper: SS-8 v1.x if tractable, or a dedicated A6$'$-extension paper otherwise.
 
 \subsection{OPEN-SS-28 (new)}
 \label{sec:open-ss-28}
@@ -948,7 +1020,7 @@ A first-principles derivation of D3 (bulk-regime averaging) plus a proof that th
 \subsection{Level-3 independence as programme-level question}
 \label{sec:level-3-frontier}
 
-Beyond the three SS-specific open problems above, SS-8's Level-1/2/3 independence decomposition for D1 surfaces a programme-wide question: \emph{Is proximity-binding implicitly assumed across multiple CPP geometric-aggregation claims?} SS-5's cascade formula, SS-7's edge formula, SM-3's Koide cage-counting, and SS-8 here all share an unstated proximity-binding ancestor; a negative result on one might propagate to all. This question is identified in \texttt{problem\_histories/PH-OPEN-SS-26.md} \S``Methodological implication'' and is marked for dedicated programme-level registry action (candidate slot in the OPEN-G cross-series register). SS-8 v0.2 neither attempts its registration nor claims a placeholder registry ID; the question is flagged here for later attention in a separate session dedicated to the cross-paper audit it requires.
+Beyond the three SS-specific open problems above, SS-8's Level-1/2/3 independence decomposition for D1 surfaces a programme-wide question: \emph{Is proximity-binding implicitly assumed across multiple CPP geometric-aggregation claims?} SS-5's cascade formula, SS-7's edge formula, SM-3's Koide cage-counting, and SS-8 here all share an unstated proximity-binding ancestor; a negative result on one might propagate to all. This question is identified in \texttt{problem\_histories/PH-OPEN-SS-26.md} \S``Methodological implication (programme-level)'' and is marked for dedicated programme-level registry action (candidate slot in the OPEN-G cross-series register). SS-8 v1.0 neither attempts its registration nor claims a placeholder registry ID; the question is flagged here for later attention in a separate session dedicated to the cross-paper audit it requires.
 
 % ============================================================
 % SECTION 8: Registry Impact
