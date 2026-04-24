@@ -3,7 +3,7 @@
 %        The 2E/V Scaling Law from Simplicial Polytope Geometry
 % Strong Sector Series
 %
-% Version 0.1 — 23 April 2026 (initial draft)
+% Version 0.2 — 24 April 2026 (Round 1 AI-review response)
 %
 % FILENAME NOTE: This paper was initially written to disk as
 %   SS-8_paper.tex and renamed to SS-8_interstitial_neutron_2EV_scaling.tex
@@ -13,6 +13,68 @@
 %   Git history preserves the rename; LaTeX compilation is unaffected.
 %
 % CHANGELOG:
+%   v0.2 (24 Apr 2026) — Round 1 AI-review response. Three reviews
+%     received (Copilot, ChatGPT, Grok); ChatGPT's review carried the
+%     substantive load and drove the three structural edits below.
+%     Copilot contributed one useful pruning suggestion. Grok's review
+%     contained a fabricated "all numerical claims verified against
+%     scripts" assertion (scripts were not executed); the error was
+%     confronted per symmetric-honesty standard, and Grok's non-
+%     fabricated editorial suggestions were folded in where they
+%     aligned with ChatGPT's or Copilot's independent findings. The
+%     four-persona self-consistency architecture (Benjamin, Lucas,
+%     Harper, Grok) is Grok's legitimate internal method and not a
+%     drift pattern.
+%
+%     Structural edits (ChatGPT-driven):
+%       - Abstract: added one-sentence disclaimer that "prediction" in
+%         this paper means conditional-zero-parameter (conditional on
+%         C1-C4 + D1-D3), not prediction from the programme-level
+%         axiom set alone. Reframed H3' characterization to make the
+%         post-Theorem-2 residual-model status explicit.
+%       - §1.4 Deliverables: added matching conditional-prediction
+%         framing sentence at the top of the deliverables list.
+%       - §2.9 (D3): added a full paragraph raising the natural
+%         objection ("why uniform averaging rather than highest-
+%         degree-first?") and sketching a partial Pauli-exclusion
+%         answer transported from SS-5. D3 is now named as the
+%         primary structural vulnerability (second only to D2) of the
+%         Layer 2b derivation. Full closure of this objection is
+%         OPEN-SS-28 content and target of SS-9/SS-10 treatment.
+%       - §3.5 (H3'): rewritten to be an explicitly post-Theorem-2
+%         provisional residual-interpretation model rather than a
+%         strengthening of the proof. New epistemic-framing paragraph
+%         opens the section; status paragraph reinforces that readers
+%         may accept or reject H3' without affecting the status of
+%         the 12 primary predictions. Future SS-9/SS-10 derivation
+%         will supersede the provisional transport.
+%
+%     Editorial edits (Copilot- and self-identified):
+%       - Table 1 caption: row N_α=3 explicitly flagged as degenerate
+%         2D extension, not theorem-domain case.
+%       - §6 mapping table: B_pair ↔ pairing-gap-coefficient row
+%         softened ("numerically comparable... no derived equivalence
+%         claimed"); Pattern-6 row explicitly marked "No conventional
+%         analog. CPP-distinctive structural claim."
+%       - AUTHOR NOTE markers removed from §3.4, §5, §6, §9.3, §9.4
+%         (per Thomas's 24 Apr 2026 scoping decision: the draft prose
+%         stands as first-pass publishable content; curriculum-phase
+%         deepening remains deferred to v1.x per PD-001 division of
+%         labour, but the markers themselves read as incompleteness
+%         to external reviewers and are not needed for v0.2).
+%
+%     Not adopted: Copilot's suggestion to add the square antiprism
+%       as a hostile-geometry test was declined on geometric grounds
+%       (Copilot described it as "simplicial but non-deltahedral"
+%       but the square antiprism has two square faces and is
+%       therefore not simplicial; Alternative 1 in §3.4 already
+%       covers the non-simplicial case via the cube).
+%
+%     Not adopted for v0.2 but queued: full first-principles
+%       derivation of H3' attenuation factor (target SS-9 or SS-10);
+%       §§5, 6 curriculum-phase deepening with metaphorical/
+%       illustrative layer (Thomas's later work per PD-001).
+%
 %   v0.1 (23 Apr 2026) — INITIAL DRAFT. First paper drafted under the
 %     per-paper subfolder convention (operating_system.md §11) and the
 %     three-file documentation-suite convention adopted 22 April 2026.
@@ -120,7 +182,7 @@
   \small AI Research Collaborator%
 }
 
-\date{23 April 2026 \\[2pt] \small Version 0.1 (initial draft)}
+\date{24 April 2026 \\[2pt] \small Version 0.2 (Round 1 AI-review response)}
 
 \begin{document}
 
@@ -131,7 +193,7 @@ Single-neutron interstitial binding in alpha-cluster nuclei is derived from Cons
 \[
 \Delta_1(\Nalpha) \;=\; \frac{2E}{V}\,\Bpair \;=\; \left(6 - \frac{12}{\Nalpha}\right)\Bpair,
 \]
-where $V = \Nalpha$ is the alpha-polytope vertex count, $E = 3V - 6$ its edge count under simplicial 3-polytope topology, and $\Bpair = \Mzero/\phig \approx 2.342$~MeV the fourth-scale occurrence of the programme-level \Kthree-mode quantum first identified in SS-5 and subsequently transported to the alpha--alpha contact scale in SS-7. This is a \emph{prediction paper}. It reports twelve concurrent zero-parameter predictions at $\Nex = 2$ across the strict $N = Z$ alpha-chain for $\Nalpha \in \{3, \ldots, 14\}$, with the effective-coordination residual $|k_{\text{eff}}^{\text{obs}} - 2E/V|$ below 15\% for eleven of twelve rows (the exception being the $\Nalpha = 3$ planar degenerate case) and below 1.5\% for $\Nalpha = 6$ (${}^{26}\mathrm{Mg}$, octahedron) and $\Nalpha = 10$ (${}^{42}\mathrm{Ca}$, gyroelongated square bipyramid). Among the six canonical even-$\Nalpha$ validation nuclei, five match observed binding under the zero-parameter prediction to within 10\%. Zero SS-8-specific parameters are fitted; the derivation inherits axioms A2, A5, A8$'$, A11 and hypotheses C1--C4 unchanged from SS-5/SS-7, extended by three interstitial-scale hypotheses D1--D3 with D1 (vertex localization) promoted to a conditional theorem under two functionally independent sufficient premises (Level~1 algebraic and Level~2 functional independence established; Level~3 physical-principle independence explicitly open). Residual structure is decomposed (\S\ref{sec:residual-decomposition}) into an opposite-polarity pair bonus H3$'$ --- transported at provisional tier from SS-5's \Kthree\ pair mechanism with an inherited $1/\phig^2$ geometric attenuation --- and small-polytope attenuation H5$'$; factoring H3$'$ out of the bulk-regime residual tightens the predicted band from 8--15\% to 3--7\% at unchanged parameter count. Secondary content in \S\ref{sec:extension-nex} extends the same derivation to $\Nex \in \{3, \ldots, 8\}$ at residual magnitudes in the 8--15\% range under the same DP-pair polarity mechanics of SS-5, at a precision bounded above by OPEN-SS-28 (bulk-regime averaging) and OPEN-SS-24 (simplicial connectivity from primitives). The \S\ref{sec:numerical-predictions} primary result stands independently of any \S\ref{sec:extension-nex} outcome.
+where $V = \Nalpha$ is the alpha-polytope vertex count, $E = 3V - 6$ its edge count under simplicial 3-polytope topology, and $\Bpair = \Mzero/\phig \approx 2.342$~MeV the fourth-scale occurrence of the programme-level \Kthree-mode quantum first identified in SS-5 and subsequently transported to the alpha--alpha contact scale in SS-7. This is a \emph{prediction paper}. ``Prediction'' here means zero-parameter concurrent prediction \emph{conditional on} hypotheses C1--C4 (inherited from SS-7) and D1--D3 (introduced in this paper), not prediction from the programme-level axiom set alone; the epistemic contract is made explicit in \S\ref{sec:epistemic-split}. It reports twelve concurrent zero-parameter predictions at $\Nex = 2$ across the strict $N = Z$ alpha-chain for $\Nalpha \in \{3, \ldots, 14\}$, with the effective-coordination residual $|k_{\text{eff}}^{\text{obs}} - 2E/V|$ below 15\% for eleven of twelve rows (the exception being the $\Nalpha = 3$ planar degenerate case) and below 1.5\% for $\Nalpha = 6$ (${}^{26}\mathrm{Mg}$, octahedron) and $\Nalpha = 10$ (${}^{42}\mathrm{Ca}$, gyroelongated square bipyramid). Among the six canonical even-$\Nalpha$ validation nuclei, five match observed binding under the zero-parameter prediction to within 10\%. Zero SS-8-specific parameters are fitted; the derivation inherits axioms A2, A5, A8$'$, A11 and hypotheses C1--C4 unchanged from SS-5/SS-7, extended by three interstitial-scale hypotheses D1--D3 with D1 (vertex localization) promoted to a conditional theorem under two functionally independent sufficient premises (Level~1 algebraic and Level~2 functional independence established; Level~3 physical-principle independence explicitly open). A provisional residual model (\S\ref{sec:residual-decomposition}), applied \emph{after} the leading-order prediction rather than as part of the proof of Theorem~\ref{thm:h2prime}, decomposes the bulk-regime residual into an opposite-polarity pair bonus H3$'$ --- transported from SS-5's \Kthree\ pair mechanism with an inherited $1/\phig^2$ geometric attenuation --- plus small-polytope attenuation H5$'$. The residual model is interpretive, not parameter-fitted, and carries less confidence than the leading-order Theorem~\ref{thm:h2prime}; it tightens the apparent bulk-regime band from 8--15\% to 3--7\%, but the paper's primary epistemic load remains on the conditional 2E/V law itself. Secondary content in \S\ref{sec:extension-nex} extends the same derivation to $\Nex \in \{3, \ldots, 8\}$ at residual magnitudes in the 8--15\% range under the same DP-pair polarity mechanics of SS-5, at a precision bounded above by OPEN-SS-28 (bulk-regime averaging) and OPEN-SS-24 (simplicial connectivity from primitives). The \S\ref{sec:numerical-predictions} primary result stands independently of any \S\ref{sec:extension-nex} outcome.
 \end{abstract}
 
 \medskip\noindent
@@ -185,7 +247,7 @@ Equation~\eqref{eq:central} is a \emph{conditional theorem}. It is unconditional
 \subsection{What SS-8 delivers}
 \label{sec:deliverables}
 
-SS-8 v0.1 provides:
+SS-8 v0.2 provides the following zero-parameter deliverables. As stated in the abstract and formalized in the \S\ref{sec:epistemic-split} epistemic split, every ``prediction'' below is \emph{conditional-zero-parameter}: derived without any SS-8-specific parameter fitting, but conditional on the seven paper-level hypotheses C1--C4 (inherited unchanged from SS-7) and D1--D3 (introduced here, with D1 at conditional-theorem tier). The predictions are empirical tests of the full hypothesis-stack conjunction, not of the programme-level axiom set alone.
 
 \begin{enumerate}
   \item A zero-parameter scaling law $\Delta_1(\Nalpha) = (6 - 12/\Nalpha)\,\Bpair$ for single-neutron interstitial binding in even-even $N = Z$ alpha-cluster nuclei, established as conditional Theorem~\ref{thm:h2prime} in \S\ref{sec:theorem2}.
@@ -200,7 +262,7 @@ SS-8 v0.1 provides:
 \subsection{What SS-8 does not deliver}
 \label{sec:non-deliverables}
 
-SS-8 v0.1 does not provide:
+SS-8 v0.2 does not provide:
 
 \begin{enumerate}
   \item A first-principles derivation of the \Kthree-face-participation counting rule D2 from programme-level CPP axioms. This derivation is the content of OPEN-SS-27 (expanded scope; \S\ref{sec:open-ss-27}); its resolution would automatically deliver D1 via the D1--D2 coupling of \S\ref{sec:d1-d2-coupling}.
@@ -217,7 +279,7 @@ SS-8 v0.1 does not provide:
 This paper confronts the following entries of \texttt{Research\_Frontier.md}:
 
 \begin{itemize}
-  \item \textbf{OPEN-SS-23} (inherited from SS-7 v1.2): neutron-excess binding beyond the strict $N = Z$ alpha-chain. \emph{Partially addressed.} SS-8 v0.1 covers the interstitial regime $\Nex \in \{0, \ldots, 8\}$ on-chain; full OPEN-SS-23 scope (off-chain and dripline-asymptotic regimes) remains open.
+  \item \textbf{OPEN-SS-23} (inherited from SS-7 v1.2): neutron-excess binding beyond the strict $N = Z$ alpha-chain. \emph{Partially addressed.} SS-8 v0.2 covers the interstitial regime $\Nex \in \{0, \ldots, 8\}$ on-chain; full OPEN-SS-23 scope (off-chain and dripline-asymptotic regimes) remains open.
   \item \textbf{OPEN-SS-26} (new, this paper): first-principles derivation of D1 (interstitial vertex localization) from SSV minimization. \emph{Partially resolved.} A conditional theorem is delivered (Theorem~\ref{thm:d1-cond}) at Level~1 + Level~2 independence under two sufficient premises; Level~3 physical-principle independence remains open, and the functional content is consolidated with OPEN-SS-27.
   \item \textbf{OPEN-SS-27} (new, this paper, expanded scope): first-principles derivation of D2 (\Kthree-edge coupling at the interstitial-alpha contact scale) via extension of A6$'$ from the 600-cell cage scale to the nucleon-interstitial scale. \emph{Opened.} Closure would automatically deliver the residual D1 content as a corollary.
   \item \textbf{OPEN-SS-28} (new, this paper): first-principles derivation of D3 (bulk-regime averaging) together with the residual decomposition into H3$'$, H5$'$, and H4$'$ without hidden mechanisms absorbed into ``pairing bonus''. \emph{Opened.} Bounds the achievable precision of the \S\ref{sec:extension-nex} secondary result.
@@ -433,7 +495,13 @@ In the bulk regime $\Nex \ll V$, interstitial neutrons distribute across the $V$
   \label{eq:d3}
 \end{equation}
 
-\paragraph{Status.} D3 is a paper-level structural hypothesis at a tier analogous to SS-5's uniform nucleon-distribution assumption: supported empirically by the \S\ref{sec:numerical-predictions} fit, but not derived from first principles. First-principles derivation of D3 plus a proof that the observed residuals decompose exactly as H3$'$ (pairing) $+$ H5$'$ (small-polytope) $+$ H4$'$ (Pauli) without hidden absorption is the content of OPEN-SS-28 (\S\ref{sec:open-ss-28}).
+\paragraph{The natural objection, and its partial answer.} A hostile referee will ask: \emph{Why should interstitial neutrons sample the alpha-vertices uniformly rather than occupying the highest-degree vertices first?} The question is the natural challenge to equation~\eqref{eq:d3}; without an answer, the uniform-averaging assumption reads as convenient rather than principled.
+
+A partial answer follows from SS-5's same-polarity Pauli cost, transported to the interstitial scale. At $\Nex = 1$, a single interstitial does occupy its host-vertex-of-choice freely; D1 (Theorem~\ref{thm:d1-cond}) localizes it at \emph{some} alpha-vertex, but does not privilege any specific one beyond the proximity-binding ordering. For polytopes with homogeneous degree distributions (e.g.\ the octahedron at $\Nalpha = 6$, all $\degv = 4$), the ``uniform-averaging'' and ``highest-degree-first'' pictures are indistinguishable at $\Nex = 1$ because every vertex is a highest-degree vertex. At $\Nex = 2$, a second interstitial cannot occupy the same vertex as the first at the same polarity --- the SS-5 same-polarity Pauli cost $\Mzero/\phig^3 \approx 0.895$~MeV is a concrete energetic barrier, not merely a symmetry statement. The second interstitial therefore either adopts opposite polarity at the same vertex (gaining the H3$'$ pair bonus of \S\ref{sec:residual-decomposition}) or localizes at a different vertex; at the degree-homogeneous polytopes where our tightest agreement is realized, the second vertex choice has the same $\degv$ as the first by symmetry, making ``uniform average'' equivalent to ``both interstitials at their respective highest-degree vertices.'' For polytopes with heterogeneous degree distributions (e.g.\ the gyroelongated square bipyramid at $\Nalpha = 10$, with $\degv \in \{4, 5\}$), a true ``highest-degree-first'' policy would predict $\Delta_1 = 5 \cdot \Bpair$ at $\Nex = 1$ (a $5/4.8 = 1.042$ enhancement over the uniform-average prediction), degrading to the uniform average only as $\Nex$ grows large enough to saturate the high-degree subset. The empirical $\Nalpha = 10$ residual of $+0.05$ in $k_{\text{eff}}$ (Table~\ref{tab:k-eff}) is within the bulk-regime noise band and does not clearly discriminate ``uniform average'' from ``high-degree-first saturating at $\Nex = 2$.''
+
+The uniform-averaging assumption is therefore defensible at $\Nex = 2$ for the polytopes in the primary domain, but it is an \emph{assumption} at this point in the derivation, not a theorem. A first-principles derivation would combine the SS-5 Pauli cost, the D1 proximity-binding ordering, and an explicit combinatorial enumeration of interstitial-site assignments at each $(\Nalpha, \Nex)$; this is the content of OPEN-SS-28. The present paper registers D3 as the primary remaining structural vulnerability in the derivation, second only to D2 at the Layer 2b tier.
+
+\paragraph{Status.} D3 is a paper-level structural hypothesis at a tier analogous to SS-5's uniform nucleon-distribution assumption: supported empirically by the \S\ref{sec:numerical-predictions} fit, with the natural objection raised and partially answered via SS-5 Pauli-cost transport, but not derived from first principles. First-principles derivation of D3 plus a proof that the observed residuals decompose exactly as H3$'$ (pairing) $+$ H5$'$ (small-polytope) $+$ H4$'$ (Pauli) without hidden absorption is the content of OPEN-SS-28 (\S\ref{sec:open-ss-28}).
 
 \subsection{Theorem 2: The H2$'$ interstitial scaling law}
 \label{sec:theorem2}
@@ -519,7 +587,7 @@ so that Theorem~\ref{thm:h2prime} predicts $k_{\text{eff}}^{\text{pred}}(\Nalpha
 
 \begin{table}[h]
 \centering
-\caption{Empirical $k_{\text{eff}}$ vs.\ Theorem~\ref{thm:h2prime} prediction for the strict $N = Z$ alpha-chain at $\Nex = 2$, from the Phase 1b empirical map. Data source: AME~2020 binding energies. Predicted values computed with $\Bpair = 2.342$~MeV from equation~\eqref{eq:Bpair}; no parameters fitted.}
+\caption{Empirical $k_{\text{eff}}$ vs.\ Theorem~\ref{thm:h2prime} prediction for the strict $N = Z$ alpha-chain at $\Nex = 2$, from the Phase 1b empirical map. Data source: AME~2020 binding energies. Predicted values computed with $\Bpair = 2.342$~MeV from equation~\eqref{eq:Bpair}; no parameters fitted. Row $\Nalpha = 3$ is included as a degenerate 2D extension of the derivation (see Remark~\ref{rem:v3}), not as a theorem-domain case; its $+0.85$ residual is the H5$'$ small-polytope excess and is not treated on the same footing as the $\Nalpha \geq 4$ bulk-regime rows.}
 \label{tab:k-eff}
 \begin{tabular}{@{}rrrrr@{}}
 \toprule
@@ -587,8 +655,6 @@ All twelve predictions in Table~\ref{tab:k-eff} emerge from the same two constan
 \subsection{Hostile-geometry stress test}
 \label{sec:hostile-geometry}
 
-\textbf{(AUTHOR NOTE: this subsection requires Thomas's eye before Round 1 submission. The approach here mirrors SS-7 v1.2 §6.5 but the specific alternative geometries to test for SS-8 need your judgment. Draft content follows for structural completeness.)}
-
 If the $2E/V$ scaling law reflected random geometric fitting rather than genuine simplicial-polytope physics, substituting non-simplicial alternatives should degrade agreement. Two alternatives tested:
 
 \emph{Alternative 1: Non-simplicial polytopes.} Substituting $2E/V$ with the average vertex degree for a cube ($V = 8$, all $\degv = 3$, $\bar{d} = 3$) at $\Nalpha = 8$ gives $\Delta_{\text{pred}} = 6\Bpair = 14.05$~MeV against ${}^{34}\mathrm{S}$'s observed 23.32~MeV --- a 40\% underprediction. The simplicial-polytope choice is not arbitrary.
@@ -599,10 +665,12 @@ If the $2E/V$ scaling law reflected random geometric fitting rather than genuine
 
 The formula's specificity survives all three substitutions. Agreement at Table~\ref{tab:k-eff}'s level is not achievable with minor variants of the derivation.
 
-\subsection{Residual decomposition: provisional H3$'$ transport of the opposite-polarity pair bonus}
+\subsection{Residual interpretation: a provisional model for the bulk-regime residual}
 \label{sec:residual-decomposition}
 
-The mean residual across the bulk regime ($\Nalpha \in \{6, \ldots, 14\}$) is $+0.38$ in units of $k_{\text{eff}}$, or $+0.9$~MeV per interstitial neutron. This residual is \emph{predicted, not absorbed}, and decomposes into three separately registered mechanisms:
+\textbf{Epistemic framing of this subsection.} The H3$'$ content below is a \emph{provisional residual model}, applied \emph{after} the leading-order Theorem~\ref{thm:h2prime} prediction, rather than part of the proof. H3$'$ is \emph{not} used to derive, strengthen, or prove Theorem~\ref{thm:h2prime}. It is a separate interpretive claim about the structure of the observed residual, motivated by inheritance from SS-5 but not first-principles-derived at the interstitial scale. The paper's primary epistemic load sits on the conditional 2E/V law of \S\ref{sec:theorem2}, which stands independently of whether H3$'$'s specific attenuation turns out to be correct. Readers may accept or reject H3$'$ without affecting the status of the 12 primary predictions in Tables~\ref{tab:k-eff} and \ref{tab:delta-nuclide}. The purpose of reporting the residual decomposition here is transparency about what the residual looks like and what SS-5-derived mechanisms might plausibly explain it; the purpose is \emph{not} to improve the paper's headline fit via post-hoc rescue.
+
+With that framing, the observed residual: the mean residual across the bulk regime ($\Nalpha \in \{6, \ldots, 14\}$) is $+0.38$ in units of $k_{\text{eff}}$, or $+0.9$~MeV per interstitial neutron. The residual exhibits structure, not noise: it is uniformly positive across the bulk regime, and comparable in magnitude to SS-5's opposite-polarity pair bonus transported by a plausible geometric attenuation. We interpret this structure as follows.
 
 \begin{hypothesis}[H3$'$: opposite-polarity pair bonus at interstitial scale, provisional tier]
 \label{hyp:h3prime}
@@ -633,7 +701,7 @@ per opposite-polarity pair, or $0.382 \cdot \Bpair$. Empirically, the $+0.21$ me
 
 \paragraph{Status and scope.}
 
-H3$'$ is \emph{provisional}, not derived. The specific attenuation $1/\phig^2$ in equation~\eqref{eq:eps-pair-refined} is motivated by the Pattern 6 geometric recurrence and by the numerical coincidence with SS-5's Pauli-penalty ratio, but not rigorously established; alternative attenuations within a factor of 2 of equation~\eqref{eq:eps-pair-refined} (e.g., $1/\phig$ giving $0.618\Bpair$, or $1/\phig^{3/2}$ giving $0.486\Bpair$) would also fit the empirical pair-bonus magnitude within a factor of 2. A first-principles derivation of the pair-bonus magnitude at the interstitial scale --- which would fix the attenuation factor and distinguish H3$'$ from its plausible competitors --- is content of OPEN-SS-28.
+H3$'$ is \emph{provisional} and \emph{interpretive}, not derived and not part of the proof of Theorem~\ref{thm:h2prime}. The specific attenuation $1/\phig^2$ in equation~\eqref{eq:eps-pair-refined} is motivated by the Pattern 6 geometric recurrence and by the numerical coincidence with SS-5's Pauli-penalty ratio, but not rigorously established; alternative attenuations within a factor of 2 of equation~\eqref{eq:eps-pair-refined} (e.g., $1/\phig$ giving $0.618\Bpair$, or $1/\phig^{3/2}$ giving $0.486\Bpair$) would also fit the empirical pair-bonus magnitude within a factor of 2. The role of H3$'$ in the paper is to explain \emph{what} the residual likely is (an opposite-polarity pair bonus of SS-5-inherited character), not to prove that the residual must have this form. A first-principles derivation of the pair-bonus magnitude at the interstitial scale --- which would fix the attenuation factor, distinguish H3$'$ from its plausible competitors, and promote H3$'$ from interpretive to derived tier --- is content of OPEN-SS-28 and of the prospective SS-9 / SS-10 treatment of opposite-polarity interstitial coupling.
 
 \emph{No fitted parameters are introduced by H3$'$.} The pair-bonus magnitude $\epsilon_{\text{pair}}$ is predicted from SS-5's mechanism via an inherited geometric factor; it is not tuned to the residual. The alternative framing --- leaving $\epsilon_{\text{pair}}$ as a free parameter fit to the $+0.21$ residual --- would violate the zero-parameter discipline and is explicitly rejected here. The provisional tier acknowledges that the specific attenuation $1/\phig^2$ carries less confidence than the SS-5 \Kthree\ mechanism itself, while preserving the predict-not-absorb posture.
 
@@ -757,8 +825,6 @@ The $\Nex = 2$ agreement documented in \S\ref{sec:numerical-predictions} is unaf
 \section{Physical Interpretation}
 \label{sec:physical-interpretation}
 
-\textbf{(AUTHOR NOTE: this section is a v0.1 draft awaiting Thomas's review. It attempts to render the interstitial-neutron mechanism in CPP-native language --- CPs, DPs, chains, cages, SSV fields, DI-bit propagation. The founders-voice content of this section is load-bearing for the paper's accessibility to CPP-internal readers; revision with Thomas's direct input is expected before Round 1 submission.)}
-
 \subsection{The interstitial neutron as a CP-aggregate at a host alpha-vertex}
 \label{sec:interstitial-cp}
 
@@ -785,8 +851,6 @@ Remark~\ref{rem:universality} established mathematically that all simplicial 3-p
 \section{CPP-to-Conventional-Physics Mapping}
 \label{sec:mapping}
 
-\textbf{(AUTHOR NOTE: this section is a v0.1 draft awaiting Thomas's review. The structural correspondences below are first-pass; Thomas's judgment on the right granularity and whether particular mappings are too literal or not literal enough is needed.)}
-
 Table~\ref{tab:mapping} presents the structural correspondences between SS-8's CPP-native derivation and the conventional nuclear-physics description. The mapping is structural, not literal: CPP operates at a finer granularity than conventional nuclear physics, and the correspondences are at the level of symmetry, degrees of freedom, and observable predictions.
 
 \begin{table}[h]
@@ -801,8 +865,8 @@ Table~\ref{tab:mapping} presents the structural correspondences between SS-8's C
 Interstitial CP-aggregate at host alpha-vertex & Valence neutron in a nuclear shell-model state above the closed $N = Z$ core \\
 \Kthree\ collective-mode coupling at $\degv$ incident contact faces & Residual pairing interaction between valence nucleon and closed-shell core \\
 $\degv$ averaged as $2E/V$ over alpha-polytope & Mean-field coordination number in a semi-classical liquid-drop or cluster model \\
-$\Bpair = \Mzero/\phig$ from SS-5 \Kthree\ eigenvalue & Pairing-interaction strength $\sim 12/\sqrt{A}$~MeV (roughly matches at $A \sim 30$) \\
-Pattern 6 scale recurrence (nucleon-nucleon, alpha-alpha, interstitial-alpha) & --- (no conventional analog; CPP-distinctive) \\
+$\Bpair = \Mzero/\phig$ from SS-5 \Kthree\ eigenvalue & Empirical pairing-gap coefficient of order $12/\sqrt{A}$~MeV, which is numerically comparable at $A \sim 30$; the match is suggestive only and no derived numerical equivalence is claimed \\
+Pattern 6 scale recurrence (nucleon-nucleon, alpha-alpha, interstitial-alpha) & \textbf{No conventional analog.} CPP-distinctive structural claim: the same lattice quantum $\Bpair$ appears unchanged at multiple physical scales because the underlying \Kthree\ contact graph is scale-invariant. No mean-field or shell-model framework predicts this. \\
 $2E/V$ universality across polytope identity (Remark~\ref{rem:universality}) & Independence of binding from specific single-particle orbitals at mean-field level \\
 H3$'$ opposite-polarity pair bonus & Neutron-pairing contribution to binding in even-$N$ nuclei \\
 H4$'$ Pauli decrement at higher $\Nex$ & Shell-structure attenuation of binding gain with increasing valence occupancy \\
@@ -827,7 +891,7 @@ Three observations on the mapping:
 \section{Scope Limits and Open Problems}
 \label{sec:scope-limits}
 
-\subsection{What SS-8 v0.1 covers}
+\subsection{What SS-8 v0.2 covers}
 \label{sec:coverage}
 
 Primary scope (\S\ref{sec:numerical-predictions}): even-even nuclei on the strict $N = Z$ alpha-chain with $\Nalpha \in \{3, \ldots, 14\}$ at $\Nex = 2$. Twelve predictions.
@@ -836,12 +900,12 @@ Secondary scope (\S\ref{sec:extension-nex}): same alpha-chain at $\Nex \in \{3, 
 
 Registry inheritances: C1--C4 from SS-7 unchanged, axioms A1--A11 from the programme-level stack unchanged.
 
-\subsection{What SS-8 v0.1 defers: OPEN-SS-23 (inherited from SS-7)}
+\subsection{What SS-8 v0.2 defers: OPEN-SS-23 (inherited from SS-7)}
 \label{sec:open-ss-23}
 
 \textbf{Status:} Partially addressed (on-chain $\Nex \leq 8$ covered); off-chain and dripline-asymptotic regimes remain open.
 
-Non-alpha-chain cores (odd $Z$) and very heavy nuclei ($\Nalpha > 14$) are outside the alpha-cluster substrate assumption of C1--C4. Extension requires either a generalization of the alpha-polytope framework to mixed-core configurations or a separate derivation for non-alpha-cluster binding. Neither is attempted in SS-8 v0.1. Dripline-asymptotic regimes (where interstitial-neutron binding approaches zero) will reveal whether the H4$'$ functional form captures the full Pauli decrement structure; present data at $\Nex = 8$ for $\Nalpha \leq 14$ is within the alpha-chain bound region and does not extend to dripline.
+Non-alpha-chain cores (odd $Z$) and very heavy nuclei ($\Nalpha > 14$) are outside the alpha-cluster substrate assumption of C1--C4. Extension requires either a generalization of the alpha-polytope framework to mixed-core configurations or a separate derivation for non-alpha-cluster binding. Neither is attempted in SS-8 v0.2. Dripline-asymptotic regimes (where interstitial-neutron binding approaches zero) will reveal whether the H4$'$ functional form captures the full Pauli decrement structure; present data at $\Nex = 8$ for $\Nalpha \leq 14$ is within the alpha-chain bound region and does not extend to dripline.
 
 \subsection{OPEN-SS-26 (new, partially resolved)}
 \label{sec:open-ss-26}
@@ -867,7 +931,7 @@ A first-principles derivation of D3 (bulk-regime averaging) plus a proof that th
 \subsection{Level-3 independence as programme-level question}
 \label{sec:level-3-frontier}
 
-Beyond the three SS-specific open problems above, SS-8's Level-1/2/3 independence decomposition for D1 surfaces a programme-wide question: \emph{Is proximity-binding implicitly assumed across multiple CPP geometric-aggregation claims?} SS-5's cascade formula, SS-7's edge formula, SM-3's Koide cage-counting, and SS-8 here all share an unstated proximity-binding ancestor; a negative result on one might propagate to all. This question is identified in \texttt{problem\_histories/PH-OPEN-SS-26.md} \S``Methodological implication'' and is marked for dedicated programme-level registry action (candidate slot in the OPEN-G cross-series register). SS-8 v0.1 neither attempts its registration nor claims a placeholder registry ID; the question is flagged here for later attention in a separate session dedicated to the cross-paper audit it requires.
+Beyond the three SS-specific open problems above, SS-8's Level-1/2/3 independence decomposition for D1 surfaces a programme-wide question: \emph{Is proximity-binding implicitly assumed across multiple CPP geometric-aggregation claims?} SS-5's cascade formula, SS-7's edge formula, SM-3's Koide cage-counting, and SS-8 here all share an unstated proximity-binding ancestor; a negative result on one might propagate to all. This question is identified in \texttt{problem\_histories/PH-OPEN-SS-26.md} \S``Methodological implication'' and is marked for dedicated programme-level registry action (candidate slot in the OPEN-G cross-series register). SS-8 v0.2 neither attempts its registration nor claims a placeholder registry ID; the question is flagged here for later attention in a separate session dedicated to the cross-paper audit it requires.
 
 % ============================================================
 % SECTION 8: Registry Impact
@@ -931,8 +995,6 @@ The $\Bpair = \Mzero/\phig$ quantum now appears at four distinct physical scales
 \subsection{Falsifiability inventory}
 \label{sec:falsifiability}
 
-\textbf{(AUTHOR NOTE: this subsection requires Thomas's review. The specific predictions below are drafted as structural examples; their precise framing and the priority ordering are founders-voice decisions.)}
-
 SS-8's claims are falsifiable in at least four ways:
 
 \begin{enumerate}
@@ -944,8 +1006,6 @@ SS-8's claims are falsifiable in at least four ways:
 
 \subsection{Hostile-geometry stress test and limits of the formula}
 \label{sec:hostile-geometry-limits}
-
-\textbf{(AUTHOR NOTE: see also \S\ref{sec:hostile-geometry}. Thomas's review should determine whether to consolidate both discussions or keep them separated.)}
 
 SS-7 v1.2 \S6.5 established a ``hostile-geometry stress test'' convention: test the formula against alternative geometric assumptions that would plausibly produce similar-looking agreement by accident. \S\ref{sec:hostile-geometry} reports three such tests (non-simplicial polytopes, $E/V$ instead of $2E/V$, infinite-sheet limit $\bar{d} = 6$). All three degrade agreement by $\gtrsim 40\%$, establishing that the formula's specificity is not accidental.
 
