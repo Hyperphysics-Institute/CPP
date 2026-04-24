@@ -375,6 +375,33 @@ If a new atomic task needs to be added to the Phase 7 pipeline, add it to `templ
 - When two reviewers independently propose axiom entries (e.g., Grok proposes A9', Copilot proposes A8'), reconcile into one entry when updating `axiom-registry.md`.
 - The multi-AI cycle typically produces 3-5 paper versions over 1-2 days.
 
+### Verification-tier taxonomy (adopted 24 April 2026)
+
+Following the SS-8 v0.1 Round 1 review exchange with Grok (documented in `series_strong/papers/SS-8/letters/letter_to_grok_re_numerical_verification_methodology.md` and `grok_response_re_numerical_verification_methodology.md`, rationale codified in `programmatic_decisions/PD-002-verification-tier-taxonomy.md`), all CPP reviewers are asked to label numerical claims in reviews according to the following three-tier taxonomy:
+
+| Tier | Label | Meaning | Example |
+|------|-------|---------|---------|
+| 1 | **INSPECTED** | Careful reading plus arithmetic consistency checking of the paper's own reported numbers against the paper's own stated formulas and inputs. No external data or independent computation is performed. | "I verified Table 1's predicted column equals 2E/V·B_pair for the stated N_α values using the B_pair inherited from SS-5 as stated in the paper." |
+| 2 | **INDEPENDENTLY RECOMPUTED** | Algebraic or numerical recomputation of claims that do not require external data files. The reviewer derives or computes the result independently from first principles or from publicly available mathematical definitions, not from the paper's asserted values. | "I independently computed 2E/V for V = 3..14 using the handshaking lemma plus Euler's formula; values match Table 1 to machine precision." |
+| 3 | **SCRIPT-EXECUTED** | Actual execution of the cited scripts against the cited data files, in an environment where both are available. The reviewer runs the computation pipeline end-to-end and compares the output to the paper's claims. | "I ran `ss8_empirical_map_extended.py` with `ame2020_mass.txt` loaded via `ame2020_loader.py`; Table 4's residual column matches script output to the fourth decimal." |
+
+**Why the taxonomy matters.** Reviews that mix tiers without explicit labeling create false confidence. Tier 1 is genuinely useful — internal consistency checking catches arithmetic errors and formula transcription mistakes. Tier 2 is stronger — it catches formula errors that tier 1 cannot. Tier 3 is strongest — it catches script implementation errors and data-loading issues that tiers 1 and 2 cannot. A reviewer who performed tier 1 work but reports it as tier 3 creates false confidence about empirical validation that cannot be defended if challenged.
+
+**Labeling convention in review documents.** Reviewers should tag each numerical claim or section with its verification tier, either inline (`"Table 1 [INSPECTED + INDEPENDENTLY RECOMPUTED]: arithmetic consistent; 2E/V values verified from first principles"`) or as a summary block at the top or bottom of the review:
+
+```
+VERIFICATION TIERS APPLIED IN THIS REVIEW:
+- §2 derivation: INDEPENDENTLY RECOMPUTED (algebraic checks of Theorems 1, 2, 3)
+- §3 Tables 1-3: INSPECTED + INDEPENDENTLY RECOMPUTED (combinatorial columns
+  recomputed; empirical columns inspected against stated inputs)
+- §4 Table 4: INSPECTED only (script infrastructure not available in my environment)
+- §5-10 prose: not a verification target; structural review only
+```
+
+**Tier mismatches are non-punitive failures.** A reviewer who labels tier 1 work correctly is contributing exactly the value tier 1 provides. A reviewer who labels tier 1 work as tier 3 is creating a failure mode — not because tier 1 is bad, but because the mismatch misleads downstream integrators about what has been empirically tested. When a tier mismatch is detected, the appropriate response is a private letter asking for clarification (not public confrontation), which produces either a clarification of what actually happened (possibly revealing the work was better than initially claimed, as in the Grok exchange which revealed genuine tier-2 combinatorial recomputation), or an acknowledged shorthand that can be corrected in future reviews. Either outcome is healthy.
+
+**Applies to all reviewers.** The taxonomy applies uniformly to Opus, Grok, Copilot, Sonnet, ChatGPT, and any additional AI reviewers added to the cycle. Human reviewers (Thomas, future collaborators) follow the same convention when providing written reviews.
+
 ---
 
 ## 6. Transcript and History Management
