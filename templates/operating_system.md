@@ -777,6 +777,34 @@ start of the next session (to capture what was missed).
 
 **Enforcement reminder.** This rule is checked at first file-creation, not after. Writing `SS-N_paper.tex` as a placeholder "to be renamed later" creates a rename commit that pollutes history; write the canonical descriptive filename the first time. If the final descriptive title isn't yet settled at first-draft time, pause and decide it before creating the file. (This rule was violated during SS-8 v0.1 initial drafting on 23 April 2026; the rename commit that added these SS-family examples was the correction.)
 
+### README files — `{scope}-README.md` convention (adopted 24 April 2026)
+
+**Format:** `{scope}-README.md` where `{scope}` is a short identifier naming the directory's purpose (e.g., `data`, `SS-8`, `series_strong`, `scripts`).
+
+**Rationale.** Plain `README.md` is a GitHub-standard convention and has the virtue of being universally recognized. However, it has two failure modes in the CPP programme's actual workflow:
+
+1. **Download ambiguity.** A file downloaded from a browser (common for patch review and artifact-sharing workflows) loses its folder context and arrives in `Downloads/` with a generic name; if multiple READMEs are in flight simultaneously, the OS de-duplicates them with `README (1).md`, `README (2).md` suffixes and the information trail is lost.
+2. **Drag-drop misfiling.** A generic name provides no intrinsic signal about where the file belongs; drag-drop to the wrong directory is easy and has happened during actual CPP work.
+
+The `{scope}-README.md` prefix preserves the README convention's semantic (any tool searching for `*README*` still finds it, and GitHub's web interface still auto-renders files with `README` in the name) while adding context that travels with the file when it leaves its directory. This matches the paper-filename pattern (`SS-8_interstitial_neutron_2EV_scaling.tex` rather than `paper.tex`) — filenames should carry their own context.
+
+**Cost acknowledged.** GitHub's web interface treats plain `README.md` slightly specially: when browsing a directory on github.com, the unprefixed `README.md` is auto-displayed beneath the file listing. A `{scope}-README.md` still renders, but requires a click. This cost is small because CPP readers primarily navigate via local file explorer and text editor, not casual GitHub browsing.
+
+**Examples:**
+- `series_strong/data/data-README.md` — documents external data dependencies for the Strong Sector series (the first file created under this convention, 24 April 2026).
+- `series_strong/series_strong-README.md` (candidate rename) — currently named `series_strong_README.md`; underscore-vs-hyphen normalization deferred to the README-cleanup patch (see "Retroactive normalization" below).
+- `series_strong/papers/SS-8/SS-8-README.md` (candidate rename) — currently `README.md`; to be normalized.
+
+**Format details:**
+- Hyphen between scope and "README" (not underscore).
+- `README` is uppercase (matching GitHub ecosystem convention).
+- `.md` extension.
+- Scope identifier uses the same conventions as the directory name itself (snake_case or SS-N style, as appropriate to the directory).
+
+**Retroactive normalization.** The CPP repository contains existing README files using three inconsistent conventions: plain `README.md`, `{scope}_README.md` with underscore, and `README-{scope}.md` with leading-README format. A programmatic decision and cleanup patch will normalize all existing READMEs to the `{scope}-README.md` convention at a future session; this is not a forcing priority since content is unaffected, only filenames.
+
+**New READMEs** created from 24 April 2026 onward use the `{scope}-README.md` convention from creation. Writing a plain `README.md` as a placeholder "to be renamed later" creates exactly the rename-commit-pollution failure mode this convention is designed to avoid.
+
 ### Version management
 - **ONE file per paper, overwritten with each revision.** Git history preserves all versions.
 - The `.tex` header contains a CHANGELOG block documenting each version.

@@ -15,13 +15,33 @@ Format spec (from the file's own preamble):
 
 We read BE/A in keV, return total B = (BE/A) * A in MeV, flagged experimental vs estimated.
 
+Data file location: the loader expects the AME 2020 data file to be at
+  series_strong/data/ame2020_mass.txt
+(relative to the CPP repository root). The data file itself is NOT
+distributed with the repository for licensing and version-hygiene reasons;
+see series_strong/data/data-README.md for download instructions and the
+canonical citation.
+
 Author: Claude Opus, 21 April 2026 (SS-8 Phase 1).
+Default-path migration: 24 April 2026 — path changed from sandbox-specific
+  /home/claude/ame_data/data/ame2020_mass.txt to repo-relative
+  series_strong/data/ame2020_mass.txt. FileNotFoundError handling added
+  with pointer to data-README.md. No behavior change for scripts that pass
+  an explicit path argument.
 """
 
 from pathlib import Path
 
-# --- default path: sibling to this file via a local clone; falls back to /home/claude ---
-_DEFAULT = Path("/home/claude/ame_data/data/ame2020_mass.txt")
+# --- default path: repo-relative, at series_strong/data/ ---
+# This loader is located at series_strong/papers/ame2020_loader.py,
+# so the data directory is one level up from papers/. The path is
+# computed relative to this file's location so the loader works
+# regardless of the user's current working directory at call time.
+#
+# The AME 2020 data file itself is NOT distributed with the CPP
+# repository. See series_strong/data/data-README.md for the rationale
+# and for current download instructions.
+_DEFAULT = Path(__file__).resolve().parent.parent / "data" / "ame2020_mass.txt"
 
 
 def _parse_float(field: str):
@@ -55,6 +75,21 @@ def load_ame2020(path: Path = _DEFAULT) -> dict:
     Rows with '*' in the BE/A field (unbound / not calculable) are skipped.
     """
     table = {}
+
+    path = Path(path)  # accept str or Path
+    if not path.exists():
+        raise FileNotFoundError(
+            f"AME 2020 mass data file not found at expected location:\n"
+            f"  {path}\n\n"
+            f"This data file is required but is not distributed with the CPP\n"
+            f"repository (AME 2020 redistribution permissions not pursued;\n"
+            f"researchers download directly from the canonical source). For\n"
+            f"current download instructions, expected filename, and file-format\n"
+            f"details, see:\n\n"
+            f"  series_strong/data/data-README.md\n\n"
+            f"Place the downloaded file at the path above (named 'ame2020_mass.txt')\n"
+            f"and retry."
+        )
 
     with open(path) as f:
         lines = f.readlines()

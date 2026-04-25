@@ -1,0 +1,4 @@
+# This file exists to ensure the series_strong/data/ directory is present
+# in all clones of the CPP repository, even though the external data files
+# it is meant to hold (e.g. ame2020_mass.txt) are excluded from the repo
+# per the licensing and version-hygiene policy documented in data-README.md.

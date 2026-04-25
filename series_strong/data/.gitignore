@@ -1,0 +1,18 @@
+# series_strong/data/.gitignore
+#
+# Exclude external data files that are downloaded separately by each
+# researcher from canonical sources (see data-README.md in this
+# directory for the rationale and download instructions).
+#
+# These files are NOT distributed with the CPP repository. This .gitignore
+# prevents them from being accidentally committed on a subsequent patch.
+
+# AME 2020 atomic mass evaluation (Wang et al. 2021)
+ame2020_mass.txt
+mass_1.mas20
+mass.mas20
+
+# Future: additional external data files should be added here as they
+# are adopted by Strong Sector scripts. Keep entries grouped by data
+# source (AME, NNDC/ENSDF, etc.) with a comment header identifying
+# the source and citation.
