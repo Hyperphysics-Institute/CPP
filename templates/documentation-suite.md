@@ -1,27 +1,51 @@
 # CPP Documentation Suite Template
 
 **Location:** `/CPP/templates/documentation-suite.md`
-**Purpose:** Defines the structure and content expectations for each of the 7 documentation files that accompany every CPP paper.
-**Last updated:** 2 April 2026
+**Purpose:** Defines the structure and content expectations for each documentation file that accompanies every CPP paper.
+**Last updated:** 24 April 2026 (folder-location section added; lab-notebook trio aligned with doc-suite folder per Thomas's decision during SS-5/6/7 migration scoping)
 
 ---
 
 ## Overview
 
-Every CPP paper has 8 companion `.md` files. These files serve different audiences and purposes:
+Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, plus optionally 2 lab-notebook-trio files (handover, transcript) that serve session-continuity purposes. The 8 doc-suite files serve different audiences and purposes:
 
 | File | Audience | Purpose |
 |------|----------|---------|
-| `development-[S]-[N].md` | Future collaborators (human + AI) | How the paper came to be — decisions, dead ends, timeline |
+| `development-[S]-[N].md` | Future collaborators (human + AI) | How the paper came to be — decisions, dead ends, timeline. Also serves as the lab-notebook vignette file (see "Relationship to lab-notebook trio" below). |
 | `glossary-[S]-[N].md` | All readers | Define every technical term; status labels |
 | `mechanism-[S]-[N].md` | Physicists | Physical mechanisms with intuitive explanations |
 | `phenomena-[S]-[N].md` | Physicists + general | What the paper explains and predicts |
 | `philosophy-[S]-[N].md` | Theorists + philosophers | Conceptual content, type classification, honest assessment |
 | `reviews-[S]-[N].md` | Authors + referees | External reviews received, critiques addressed |
-| `FAQ-[S]-[N].md` | General readers + web | Anticipated questions and clear answers |
+| `FAQ-[S]-[N].md` | General readers + web | Anticipated questions and clear answers (legacy-allowed; not required for papers adopted ≥ 22 April 2026) |
 | `keywords-[S]-[N].md` | SEO / web tooling / search | Keywords, PACS/MSC codes, elevator pitch |
 
-Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD), `[N]` = paper number.
+Some papers also carry a `lay-summary-[S]-[N].md` file (e.g., SS-7) for non-physicist accessibility; this is allowed but not required.
+
+Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD), `[N]` = paper number. Canonical filenames carry no version suffix; version history lives in the file's internal `**Last updated:**` header line, not in the filename.
+
+---
+
+## Folder Location (decision adopted 24 April 2026)
+
+**All documentation suite files for a given paper live in `series_[name]/papers/[PAPER-ID]/documentation_suite/`** under the per-paper-subfolder convention adopted 22 April 2026 (`templates/operating_system.md` §11). This applies uniformly to:
+
+- The 8 canonical doc-suite files listed above (development, glossary, mechanism, phenomena, philosophy, reviews, FAQ, keywords)
+- The 2 lab-notebook-trio session-continuity files (`handover-[S]-[N].md`, `transcript-[S]-[N].md`) introduced for SS-8 and codified in `operating_system.md` §15
+- Any optional supplementary files such as `lay-summary-[S]-[N].md`
+
+For papers adopted before 22 April 2026 (SS-1 through SS-7, SM-N legacy papers), doc-suite files currently live flat in `series_[name]/papers/` and migrate to per-paper subfolders under OPEN-ORG-004's opportunistic trigger.
+
+### Relationship to lab-notebook trio
+
+`operating_system.md` §15 specifies a session-continuity *lab-notebook trio*: `development-[S]-[N].md` (vignette-style narrative, append-only), `handover-[S]-[N].md` (current-state orientation document, replaced at each session close), and `transcript-[S]-[N].md` (transaction-indexed pointer-map). The `development-[S]-[N].md` member of the trio is the **same file** as the canonical doc-suite's `development-[S]-[N].md` listed above — a single file serving both purposes (intellectual laboratory record AND session-by-session vignette history). The `handover` and `transcript` files are additions specific to the per-paper-subfolder convention and do not exist in the older flat-files layout.
+
+A paper at v1.0+ under the per-paper-subfolder convention may therefore have up to 10 file types in `documentation_suite/`: the 8 canonical doc-suite files plus `handover-[S]-[N].md` plus `transcript-[S]-[N].md`. A paper still under the legacy-flat layout has only the doc-suite files at `series_[name]/papers/` level.
+
+### Decision rationale
+
+Thomas's decision (24 April 2026, during SS-5/6/7 migration scoping): *"All 7 .md files you noted go in the documentation suite (mechanism, glossary, phenomena, philosophy, reviews, keywords, development). The definitions of what each of these files is [are] defined, probably in Templates, but these files are called the 'documentation suite.'"* Codification here resolves the prior ambiguity about whether the older 8-file doc-suite and the SS-8 3-file lab-notebook trio occupied separate folders or shared one. They share `documentation_suite/`. Naming overlap on `development-[S]-[N].md` is not a collision because it is the same file under both conventions.
 
 ---
 

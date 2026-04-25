@@ -294,6 +294,49 @@ Approximate effort: 5 minutes.
 
 ---
 
+## OPEN-ORG-009: Bootup orientation completeness audit and reinforcement
+
+**Status:** OPEN — workable in dedicated execution session
+**Identified:** 24 April 2026, during SS-5/6/7 migration scoping conversation, after Thomas observed "for all the other instructions I gave you besides bootup.md, we should make sure all of them are included so I don't have to generate them all from memory at the start of each new context window"
+**Priority:** MEDIUM (affects every session-start reliability; same failure-mode class as OPEN-ORG-008)
+
+**Originating context:** At the start of the 24 April 2026 SS-8 v1.0 / OPEN-ORG-008 / SS-5–7 migration session, Thomas's opening message contained four orienting instructions beyond "read bootup.md": (1) clone the repo into the sandbox; (2) "note the importance of the operating_system.md files in the /templates folder"; (3) "note the handover.md document — that should orient you to the current session and state of development of the current SS-8 paper"; (4) the canonical Git-Bash-Patch command pattern (`git am ~/Downloads/NNNN-*.patch && git push origin main`). Thomas then explicitly asked: "Do we have the command-line method documented anywhere? I told you what I wanted, and I don't think you would have known about that otherwise. If that is not documented, put that down as another open organizational task that we want to do."
+
+Investigation confirmed each of these IS documented somewhere, but the documentation is not reliably reaching active-Claude attention at session start:
+
+- `bootup.md` does direct sessions to read `operating_system.md` (Step 1, priority 7), where the workflow-manual including §13 Git-Bash-Patch is found. So the command pattern is documented.
+- `bootup.md` §8.5 ("Active Work Pointer") correctly directs sessions to the per-paper-subfolder handover document (`papers/[PAPER-ID]/documentation_suite/handover-[PAPER-ID].md`).
+- However, `bootup.md`'s "Step 2: Check what happened last" block (in the top "How to Use This File" section, which a top-to-bottom reader hits first) still points at the *legacy-flat* URL (`papers/development-[ID].md`) rather than the current-convention handover URL. A new-session-Claude reading top-to-bottom hits the wrong URL first; §8.5 corrects course only if the reader gets that far.
+- `operating_system.md`'s priority-7 placement in `bootup.md` Step 1 means session-start Claude reads `CPP_the_theory.md` (15 min), `theory-overview.md` (5 min), `founders_vision.md` (10 min), `Research_Frontier.md` (10 min), and `theorem-registry.md` (5 min) — totalling 45 minutes — before reaching the workflow manual where the Git-Bash command pattern lives. For a session that opens with substantive work rather than physics orientation, this ordering may be inverted from what's optimal.
+- The `templates/AI_team_expectations.md` (priority 8) is even later, but contains conventions around per-AI working patterns that future-Claude needs early.
+
+**Problem:** Same root-cause class as OPEN-ORG-008 (handover-protocol trigger failure): a protocol or instruction set exists on paper but does not reliably fire because of visibility/active-working-set issues. The specific failure-modes here:
+
+1. **Step 2 / §8.5 inconsistency in `bootup.md`.** Two different URL patterns specified in the same file; top-to-bottom readers hit the stale one first.
+2. **Priority ordering of session-start reads.** Physics orientation precedes workflow orientation by 45 minutes of read-time; for sessions opening with substantive work, this is the wrong direction.
+3. **CLI-command-pattern not surfaced at session-start.** The Git-Bash-Patch flow is in `operating_system.md` §13, but a session that doesn't reach §13 quickly will miss it. Thomas felt he needed to teach it explicitly at this session's start despite it being documented.
+4. **General "Thomas had to give instructions besides bootup.md" pattern.** Thomas's opening message contained four reinforcement instructions; if `bootup.md` alone were sufficient, none should have been needed. The gap is whatever's missing from `bootup.md` such that Thomas-at-session-start feels he needs to compensate.
+
+**Proposed fix:** Dedicated execution session conducting a structured audit and reinforcement of `bootup.md`. Approximate scope:
+
+1. **Resolve Step 2 / §8.5 inconsistency.** Replace the legacy-flat URL in Step 2 with the current per-paper-subfolder handover URL, OR collapse Step 2 and §8.5 into a single canonical location higher in the file. Eliminate the contradiction.
+2. **Re-evaluate priority ordering of Step 1 reads.** For sessions opening with substantive work rather than physics onboarding, `operating_system.md` should likely be earlier than priority 7. Possibly add a "session-type fork" near the top: "If this is a new-collaborator orientation session, read in the order below. If this is a continuation session, read `operating_system.md` and `templates/AI_team_expectations.md` first, then proceed to the handover doc per §8.5."
+3. **Surface the Git-Bash-Patch command pattern at session-start visibility.** Either include the two-line apply pattern (`git am ~/Downloads/NNNN-*.patch && git push origin main`) in `bootup.md` itself (not just in the priority-7 deeper read), OR add an explicit reference: "After producing your first patch, the Thomas-side apply pattern is documented at `operating_system.md` §13 step 8–9."
+4. **Audit the four reinforcement instructions Thomas gave at this session's start.** For each, ask: is the reason Thomas felt he needed to repeat it that `bootup.md` doesn't contain it, or that `bootup.md` contains it but doesn't surface it? If the former, add it. If the latter, fix the surfacing (location, formatting, prioritization).
+5. **Establish a maintenance discipline.** When future sessions reveal new "instructions Thomas had to give that should have been in `bootup.md`," register them as discrete OPEN-ORG items rather than adding them ad-hoc. The audit should run again periodically or whenever a new such gap is identified.
+
+Approximate effort: 30–60 minutes, varying by depth of audit. The execution session should be a between-paper session with no substantive physics work in flight, since the work is meta-organizational.
+
+**Trigger condition:** Dedicated session. Like OPEN-ORG-008, this is a structural improvement to programme infrastructure that warrants its own attention rather than being squeezed into a paper-drafting or migration session. Could be combined with execution of OPEN-ORG-002 (`operating_system.md` restructuring) if both are addressed in one governance-focused session, but that combination is opportunistic, not required.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing critical. Current workaround is Thomas continuing to give the four reinforcement instructions at each session start, which is exactly the friction the entry exists to eliminate.
+
+**History:**
+- 24 Apr 2026 — Identified by Thomas during SS-5/6/7 migration scoping, after he observed his opening message contained four reinforcement instructions beyond "read bootup.md." Registered immediately per PD-003 reflexive-drop discipline. Same failure-mode class as OPEN-ORG-008 (visibility/active-working-set issues with documented protocols).
+
+---
+
 # §2 — Entry Template
 
 Copy this template for new entries. Fields in `{brackets}` are placeholders.
@@ -367,15 +410,15 @@ All four were Claude-side execution failures, not protocol specification failure
 
 # §4 — Statistics
 
-**As of 24 April 2026 (after patch 0013 OPEN-ORG-008 resolution):**
-- Open: 7
+**As of 24 April 2026 (after patch 0015 OPEN-ORG-009 registration):**
+- Open: 8
 - In-progress: 0
 - Resolved: 1 (OPEN-ORG-008)
 - Deferred indefinitely: 0
 
 **By priority:**
 - HIGH: 0
-- MEDIUM: 1 (OPEN-ORG-003)
+- MEDIUM: 2 (OPEN-ORG-003, OPEN-ORG-009)
 - LOW: 6 (OPEN-ORG-001, -002, -004, -005, -006, -007)
 
 **By trigger type:**
@@ -384,3 +427,4 @@ All four were Claude-side execution failures, not protocol specification failure
 - Milestone-triggered: 1 (OPEN-ORG-003)
 - Opportunistic: 3 (OPEN-ORG-004, -005, -006)
 - Next-session: 1 (OPEN-ORG-007)
+- Dedicated execution session: 1 (OPEN-ORG-009)
