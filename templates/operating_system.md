@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/operating_system.md`
 **Purpose:** The complete workflow manual for the CPP research programme. Covers every procedure from session startup to OSF registration, including multi-AI coordination, document management, and recovery from interruptions.
-**Last updated:** 20 April 2026 (§4.10 and §10 consolidated — atomic tasks moved to `templates/paper_completion_checklist.md`; §10 reorganised as reference procedures)
+**Last updated:** 24 April 2026 (§15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution; four-item preservation checklist relocated from §10 with handover-[S]-[N].md added; canonical command vocabulary "execute handover protocol" codified)
 **Audience:** Future-Opus, Future-Grok, Future-Copilot, Future-Sonnet, and any new AI or human collaborator joining the programme.
 
 ---
@@ -21,6 +21,9 @@
 10. Repository Housekeeping Checklist
 11. File Naming Conventions
 12. The AI Team: Roles and Specialties
+13. The Git-Bash-Patch Workflow
+14. Organizational Frontier Registry
+15. Session-close Handover Protocol
 
 ---
 
@@ -40,6 +43,8 @@
 **If resuming a specific paper:** Also read the paper's `.tex` file and its `development-[S]-[N].md`.
 
 **If this is a continuation after buffer overflow:** Read the compacted summary at the top of this conversation, then read the transcript file referenced there for full detail. Proceed from where the summary indicates.
+
+**Canonical command for session-close preservation:** When Thomas says **"please execute handover protocol"** (or "execute handover" / "handover protocol" / minor variants), the AI assistant immediately begins the four-item preservation sequence documented in §15 Session-close Handover Protocol. This is the authoritative trigger. The AI assistant should also proactively prompt — "Do you want to initiate handover protocol?" — when workflow-shape signals indicate session-close readiness; signal patterns are documented in §15.
 
 ---
 
@@ -815,27 +820,18 @@ Commit message convention for section-end batches:
 
 This rule supersedes the prior implicit convention that archival happened only at v1.0. The v1.0 documentation suite remains the canonical Tier M milestone for paper-level external use; the section-end commit cadence runs beneath it to preserve work continuously.
 
-### Context-pressure preservation checklist (adopted 22 April 2026)
+### Context-pressure preservation checklist
 
-When a context window approaches its boundary and compaction is imminent, certain artifacts are at risk of being lost or degraded because they live only in the active session, not yet in git. The commit-cadence rule above covers *code and document files*; this checklist covers *narrative and state artifacts* that must also be preserved before compaction.
+**Promoted to §15 Session-close Handover Protocol (24 April 2026, per OPEN-ORG-008 resolution).** The four-item checklist that previously lived in this subsection — covering curated development transcript, registry updates pending ratification, reviewer response artifacts, and protocol/operating-system updates — has been relocated to top-level §15 to make it visible from the table of contents and from the §1 Quick Start command vocabulary. The trigger is unchanged: at context-pressure threshold (≥70% context consumed) or before any planned session end, the four-item sequence runs.
 
-At context-pressure threshold (≥70% context consumed, or before any planned session end), verify the following are committed:
-
-1. **Curated development transcript (`development-[S]-[N].md` in the paper's folder).** A verbatim narrative record of the session's work — what was produced, what was decided, what reviewer content was engaged with, what conclusions were reached. This is **not** the auto-generated session summary, which is lossy. It must be curated directly from the active session before compaction. If no `development-[S]-[N].md` exists yet for the paper, create one. If one exists, append a new section covering the recent work. Never regenerate from a transcript summary — always curate from the active session.
-2. **Registry updates pending ratification.** If a session has opened, resolved, or modified any OPEN-SS-NN problems, axiom entries, or theorem registrations, those updates must be written into `Research_Frontier.md`, `axiom-registry.md`, `theorem-registry.md`, or the appropriate problem-history file (`problem_histories/PH-*.md`) before compaction, with "pending ratification" flags where human review is required. Registry state held only in the active session is lossy and produces drift at the next session start.
-3. **Reviewer response artifacts.** If a session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers), these must be committed in full verbatim form. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.
-4. **Protocol or operating-system updates the session produced.** If the session identified a new protocol case (as in `relationship_protocol.md` §6) or a new operating-system rule (as in this section), write the update into the appropriate file before compaction. Do not leave the codification for "next session" — next session starts from a lossy summary and will not remember the specific reasoning that produced the rule.
-
-A minimal context-pressure preservation commit may include: curated transcript update + registry update pending-ratifications + any reviewer letters not yet committed + any protocol/operating-system updates the session produced. Commit message: `[paper/series] context-pressure preservation — [brief summary of preserved items]`.
-
-This rule is distinct from the section-end-batch rule above. Section-end batches are driven by task completion; context-pressure commits are driven by session-continuity concerns. Both may occur in the same session.
+**The commit-cadence linkage holds.** The "context-pressure preservation" trigger in the commit cadence rule above (item 2) fires the §15 protocol. The two are interlocked: commit cadence says "commit before compaction"; §15 specifies what must be committed and in what form. See §15 for the canonical procedure and the user-/Claude-initiated dual-trigger mechanism.
 
 ### Intermediate registry-suite triggers (adopted 22 April 2026)
 
 The v1.0 paper-completion checklist triggers the full 7-file documentation suite. Two *intermediate* registry-suite triggers exist beneath v1.0:
 
 1. **Substantial section-end with registry implications.** When a section-end commit (per commit-cadence rule) opens or partially resolves OPEN-SS problems, the following registry files must be checked for updates before the next session: `Research_Frontier.md` (new problems), `problem_histories/PH-*.md` (partial resolutions), paper's own `[paper].tex` CHANGELOG header (if the paper exists yet). If any are not updated, flag as "pending" in the section-end commit message.
-2. **Context-pressure crossing.** The context-pressure preservation checklist (above) includes registry updates as one of its four required items. This is an intermediate trigger independent of v1.0 milestone.
+2. **Context-pressure crossing.** The §15 Session-close Handover Protocol four-item checklist (formerly in this section, see back-pointer above) includes registry updates as one of its four required items. This is an intermediate trigger independent of v1.0 milestone.
 
 These intermediate triggers prevent registry drift between the full v1.0 documentation-suite events, which can be weeks or months apart during exploratory development.
 
@@ -1102,9 +1098,82 @@ If, during future sessions, this §14 needs updating (new trigger types, refined
 
 ---
 
+## 15. Session-close Handover Protocol (promoted to top level 24 April 2026)
+
+**Purpose.** Specifies the procedure that runs when a session is approaching its end — whether due to context-pressure crossing, planned session close, or substantive milestone completion — to ensure that no narrative, registry, reviewer, or protocol artifact is lost to compaction. This section was promoted from a buried subsection of §10 to top-level visibility per OPEN-ORG-008 resolution, after a 23–24 April 2026 SS-8 v0.2 session demonstrated the failure mode where the protocol existed on paper but did not fire because Claude could not reliably self-monitor and the procedure was not in Claude's active working set during substantive work.
+
+### Dual-trigger mechanism
+
+The protocol fires on either of two triggers, by design redundant. Self-monitoring of context consumption by Claude has proven unreliable; the dual-trigger discipline moves the fire-decision to observable signals.
+
+**Trigger 1: User-initiated (canonical).** When Thomas says any of the following, Claude immediately begins the four-item preservation sequence below regardless of what else is in flight:
+
+- "please execute handover protocol"
+- "execute handover protocol"
+- "execute handover"
+- "handover protocol"
+- "run the handover"
+- Any minor variant carrying the same intent
+
+This is the authoritative trigger. Thomas can reliably detect when he is approaching session-close readiness; this moves the fire-decision to the reliable sensor. The phrase functions as a hotkey — unambiguous, short, memorable.
+
+**Trigger 2: Claude-initiated prompt on workflow-shape signals.** When Claude notices any of the following workflow-shape patterns during a session, Claude immediately asks Thomas: **"Do you want to initiate handover protocol?"** This is a prompting discipline, not an auto-fire — the decision still belongs to Thomas, but the opportunity to fire does not get missed because Claude was absorbed in the work itself.
+
+Workflow-shape signals that warrant the prompt:
+
+- Substantive milestone just completed (v1.0 paper shipped, major registry update committed, multi-step infrastructure landed)
+- Long session duration (multiple hours of dense work, multiple commits to origin)
+- "We've done a lot today" / "good stopping point" / "ready to close" / "this is a good place to stop" — uttered by Thomas
+- Claude itself observing that "the session has reached a natural seam" or similar
+- Any topic-shift cue suggesting the substantive work is winding down
+
+Note: these overlap with but are distinct from the §14 reflexive-drop signals. The §14 list catches *individual organizational ideas* that should be registered immediately; this §15 list catches *whole-session shape changes* that warrant the four-item preservation sequence. When a workflow-shape signal fires, Claude prompts; if Thomas confirms, the four-item sequence below runs.
+
+### The four-item preservation checklist
+
+When the protocol fires (by either trigger), verify the following four artifacts are committed before session-close. The trigger threshold is also documented in §10 commit-cadence rule item 2 ("context-pressure preservation"); the procedural body lives here.
+
+1. **Curated narrative state in `development-[S]-[N].md` AND `handover-[S]-[N].md`.**
+
+   - **`development-[S]-[N].md`** (in the paper's `documentation_suite/` folder): a verbatim narrative record of the session's work — what was produced, what was decided, what reviewer content was engaged with, what conclusions were reached, which dead ends were closed. This is the lab notebook. It is **not** the auto-generated session summary, which is lossy. Curate directly from the active session before compaction. If no file exists yet, create one. If one exists, append a new section covering the recent work. Never regenerate from a transcript summary — always curate from the active session.
+   - **`handover-[S]-[N].md`** (in the same folder): a forward-looking orientation document for the next session. Names the current state of the paper, the open queue in priority order, the empirical questions next-session must answer, and any preconditions that must be in place before substantive work resumes. This is the document the next session will read first; its quality determines whether the next session starts oriented or starts confused.
+
+   These are two separate artifacts with two separate purposes (backward-looking record vs. forward-looking orientation). Both must be present and current. A frequent failure mode is to generate one and treat it as covering both.
+
+2. **Registry updates pending ratification.** If the session opened, resolved, or modified any OPEN-SS-NN problems, OPEN-ORG-NNN items, axiom entries, or theorem registrations, those updates must be written into `Research_Frontier.md`, `Organizational_Frontier.md`, `axiom-registry.md`, `theorem-registry.md`, or the appropriate problem-history file (`problem_histories/PH-*.md`) before compaction, with "pending ratification" flags where human review is required. Registry state held only in active session is lossy and produces drift at the next session start.
+
+3. **Reviewer response artifacts.** If the session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers, multi-AI exchange transcripts), commit these in full verbatim form to the paper's `letters/` and/or `reviews/` folders. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.
+
+4. **Protocol or operating-system updates the session produced.** If the session identified a new protocol case (as in `relationship_protocol.md`), a new operating-system rule, a new programmatic-decision that warrants codification (PD-NNN), or any procedural refinement, write the update into the appropriate file before compaction. Do not leave codification for "next session" — next session starts from a lossy summary and will not remember the specific reasoning that produced the rule.
+
+A minimal preservation commit may include items 1–4 in any combination produced by the session. Commit message convention: `[paper/series] session-close handover preservation — [brief summary of preserved items]`. This is distinct from the section-end-batch commit cadence in §10; section-end batches are task-driven, handover-protocol commits are session-continuity-driven. Both may occur in the same session.
+
+### Output: relationship to §14 pointer format
+
+The §14 "Session-close handover protocol" subsection (a narrower-scope subsection within the Organizational Frontier Registry section) specifies the *output format* for the OPEN-ORG queue at session close: a short pointer to the registry rather than restated content. That format is one *element* of what gets included in `handover-[S]-[N].md` (item 1 above). The §15 protocol is the broader procedure; §14's pointer format is the shape of one specific paragraph within the handover document. Both are in scope at session close.
+
+### Anti-patterns to recognize
+
+The following are signs that the protocol is being mistakenly skipped or that its execution is degrading:
+
+- **Writing session-close narrative into chat instead of disk.** "Here's where we are at session pause: ..." in a final assistant message is exactly the content that should be in `handover-[S]-[N].md`. The chat-only version dies at compaction.
+- **Conflating "governance files committed" with "protocol fired completely."** The four items are independent; satisfying any subset does not satisfy the whole. In particular, registry updates (item 2) often fire during the session as a side effect of work; this does not by itself satisfy items 1, 3, or 4.
+- **Treating the auto-generated session summary as adequate substitute for `development-[S]-[N].md`.** The summary is lossy by design — specific numbers, exact phrasing, and registry statuses get abbreviated or extrapolated. Curated narrative is verbatim and must be authored from the active session.
+- **Deferring protocol/OS updates to "next session."** Next session starts from a lossy summary. The reasoning that produced a new rule will not survive compaction.
+- **Skipping `handover-[S]-[N].md` because `development-[S]-[N].md` exists.** They serve different functions (record vs. orientation) and a future-session arriving at the paper folder will look for handover before development.
+
+### Maintenance cadence
+
+- This §15 is itself §14-registered content per the meta-discipline rule above; if the protocol needs refinement, the refinement may be registered as an OPEN-ORG item rather than edited inline.
+- The four-item checklist may be extended (e.g., a fifth item may be added) when a session-close failure mode demonstrates an artifact class not currently covered. As of 24 April 2026, four items cover the observed failure space.
+- The canonical command vocabulary may be extended with additional accepted variants over time; the existing list is illustrative rather than exhaustive.
+
+---
+
 *This document supersedes `bootup.md` as the complete reference.*
 *`bootup.md` remains the quick-start guide for sessions.*
 *Created 8 April 2026 by Claude Opus at Thomas's request.*
 *Updated 9 April 2026 — SM-8/9/10 trilogy lessons, 7-file suite, SM-10 FEM references, Post-Session Quick Checklist, axiom reconciliation note.*
 *Reconciled 11 April 2026 — merged operating_system.md and operating_system2.md; restored Phase 7b (Verification Notebooks) and transcript include/exclude guidance from v1.*
 *Updated 24 April 2026 — added §14 Organizational Frontier Registry (adopted per PD-003).*
+*Updated 24 April 2026 — added §15 Session-close Handover Protocol promoted from §10 buried subsection per OPEN-ORG-008 resolution; canonical command vocabulary "execute handover protocol" codified; dual-trigger mechanism (user-initiated + Claude-initiated workflow-shape prompt) documented; four-item checklist extended to name handover-[S]-[N].md alongside development-[S]-[N].md.*
