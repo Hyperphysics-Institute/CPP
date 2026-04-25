@@ -2,17 +2,17 @@
 
 **Location:** `/CPP/theory-overview.md`
 **Purpose:** Snapshot of all CPP results, open problems, and next targets. Read at the start of each session.
-**Last updated:** 21 April 2026 (after SS-7 v1.2 symmetric-honesty corrections; OPEN-SS-22 retired as first retired open problem in CPP programme record)
+**Last updated:** 26 April 2026 (after SS-8 v1.0: 42 conditional zero-parameter predictions on alpha-chain interstitial-neutron binding; cumulative swarm total 103 from 9 axioms per `predictions.md` Cumulative Swarm Tally)
 
 ---
 
 ## The Theory in One Paragraph
 
-Conscious Point Physics derives the Standard Model from the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cells, coordination z=12). All gauge couplings are mode fractions of the lattice weighted by η = 1/φ. All fermion masses follow from the K₃ eigenvalue structure (bonding eigenvalue +2, antibonding −1) perturbed by isotropic gauge shifts, and from the zero-parameter cage mass formula M = m_e(z/φ)V^(7/3). The SS-5/SS-7 nuclear sector extends the K₃ mechanism to nucleon-nucleon and alpha-alpha contact with the recurring binding quantum B_pair = M₀/φ = 2.342 MeV. The theory has 9 axioms (7 core + A8' + A11), 2 calibration constants (m_e, m_c), and 0 shape parameters. It predicts 36+ independent quantitative results and 6 qualitative QM results.
+Conscious Point Physics derives the Standard Model from the 600-cell polytope (120 vertices, 720 edges, 1200 faces, 600 cells, coordination z=12). All gauge couplings are mode fractions of the lattice weighted by η = 1/φ. All fermion masses follow from the K₃ eigenvalue structure (bonding eigenvalue +2, antibonding −1) perturbed by isotropic gauge shifts, and from the zero-parameter cage mass formula M = m_e(z/φ)V^(7/3). The SS-5/SS-7/SS-8 nuclear cascade extends the K₃ mechanism across three structural scales — nucleon-nucleon (SS-5), alpha-alpha (SS-7), and interstitial-alpha (SS-8) — with the recurring binding quantum B_pair = M₀/φ = 2.342 MeV unrescaled at each scale (Pattern 6 scale recurrence). The theory has 9 axioms (7 core + A8' + A11), 2 calibration constants (m_e, m_c), and 0 shape parameters. As of 26 April 2026 it predicts 103 zero-parameter empirical correspondences (per `predictions.md` Cumulative Swarm Tally: 23 unconditional D-N + 55 conditional D-N + 12 D-X + 4 D-S + 9 D-Q), of which 78 are quantitative numerical with stated empirical residuals.
 
 ---
 
-## Registered Papers (13 on OSF or pending)
+## Registered Papers (18 on OSF or pending)
 
 | ID | Title | Key Result | Version |
 |----|-------|------------|---------|
@@ -34,6 +34,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SS-5 | Light-Nuclei Binding Energies from Open-Vertex Cascade | $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ all $\leq 5.3\%$ zero-param; $^5$He/$^5$Li/$^8$Be unbound $\checkmark$ | v6 |
 | SS-6 | Deuteron Observables Beyond Binding (scoping) | Rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np}=1/\kappa=4.32$ fm from $B_d$ alone (-20%) | v0.1 |
 | SS-7 | Alpha-Cluster Regime and 3N−6 Edge Formula | 12 concurrent zero-param alpha-chain bindings at $N_\alpha\in[3,14]$ (¹²C→⁵⁶Ni), RMS 0.80%; retires OPEN-SS-22 (first retired open problem) | v1.2 |
+| SS-8 | Interstitial-Neutron Binding and the 2E/V Scaling Law on the Alpha-Polytope | 42 conditional zero-parameter predictions ($N_\text{ex}=2$ primary 12 + $N_\text{ex}\in[3,8]$ secondary 30); two sub-1% agreements (²⁶Mg octahedron, ⁴²Ca gyroelongated square bipyramid); D1–D3 conditional theorems; opens OPEN-SS-26/27/28; partially resolves OPEN-SS-23 | v1.0 |
 
 ---
 
@@ -69,8 +70,12 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | Alpha-chain binding (12 nuclei, ¹²C→⁵⁶Ni) | $N_\alpha B_\alpha + (3N_\alpha{-}6) B_\text{pair}$ | All within ±1.5% | AME 2020 | RMS 0.80% | 0 | SS-7 |
 | ⁸Be near-threshold unbound | 1-edge Coulomb cancellation | 92 keV unbound (inverted → $R_{\alpha\alpha}=2.37$ fm) | 91.84 keV | consistency | 0 | SS-7 |
 | Alpha-polytope edge count | Euler + triangle constraint | $E = 3N_\alpha − 6$ | — | theorem | 0 | SS-7 |
+| Interstitial-n binding $\Delta_1$ ²⁶Mg ($N_\alpha=6$ octahedron) | $(6-12/N_\alpha) B_\text{pair}$, conditional on C1–C4 + D1–D3 | 9.37 MeV | 9.39 MeV | **−0.2%** | 0 | SS-8 |
+| Interstitial-n binding $\Delta_1$ ⁴²Ca ($N_\alpha=10$ gyroelong. sq. bipyramid) | $(6-12/N_\alpha) B_\text{pair}$, conditional on C1–C4 + D1–D3 | 11.24 MeV | 11.36 MeV | **−1.0%** | 0 | SS-8 |
+| Interstitial-n binding (12 alpha-chain rows at $N_\text{ex}=2$) | $(6-12/N_\alpha) B_\text{pair}$, conditional on C1–C4 + D1–D3 | All within 15% (11 of 12) | AME 2020 | bulk-regime band | 0 | SS-8 |
+| Average vertex degree (Euler-degree theorem) | Combinatorial corollary of THEO-SS-12 | $2E/V = 6 - 12/V$ | — | theorem | 0 | SS-8 |
 
-**Net scorecard:** 36+ independent predictions from 9 axioms and 2 calibrations (24+ from SM/SS-2/SS-5 series; 12 concurrent zero-param alpha-chain bindings from SS-7 v1.2). SM requires 19+ parameters for the same quantities.
+**Net scorecard:** 103 zero-parameter empirical correspondences from 9 axioms and 2 calibrations, per `predictions.md` Cumulative Swarm Tally (26 April 2026). Breakdown: 23 unconditional D-N + 55 conditional D-N + 12 D-X + 4 D-S + 9 D-Q. Of the 78 quantitative numerical (D-N) entries, 55 are conditional on paper-level structural-hypothesis stacks (C1–C4 inherited through SS-5→SS-7→SS-8 cascade; D1–D3 introduced in SS-8). Closing OPEN-SS-24 + OPEN-SS-26 + OPEN-SS-27 + OPEN-SS-28 would jointly promote 54 of these 55 conditional D-Ns to unconditional. SM requires ~19 parameters for the same SM-side quantities.
 
 ---
 
@@ -180,7 +185,7 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 | OPEN-SS-18 | Heavy-nuclei alpha-cluster regime A≥6 | **PARTIALLY RESOLVED by SS-7 v1.2 for strict N=Z alpha-chain at $N_\alpha\in[3,14]$ (¹²C→⁵⁶Ni, RMS 0.80%); non-N=Z and odd-A extension → OPEN-SS-23** |
 | OPEN-SS-19 (new) | Rigorous derivation of (A-1) cascade factor and Pauli coefficient | OPEN |
 | OPEN-SS-22 | Icosahedral closure bonus at $N_\alpha=12$ | **✗ RETIRED 21 April 2026 — first retired open problem in CPP programme record; empirical anchor shown to be isotope-selection artifact; narrative at `problem_histories/PH-OPEN-SS-22.md`** |
-| OPEN-SS-23 | Non-N=Z and odd-A nuclei (neutron-excess extension) | OPEN — primary target for SS-8; absorbed residual empirical signal from retired OPEN-SS-22 |
+| OPEN-SS-23 | Non-N=Z and odd-A nuclei (neutron-excess extension) | **PARTIALLY RESOLVED by SS-8 v1.0 for $N_\text{ex} \in [2, 8]$, $N_\alpha \in [3, 14]$ even-even nuclei via the conditional 2E/V scaling law $\Delta_1 = (6-12/N_\alpha) B_\text{pair}$; remainder (odd-A, $N_\alpha > 14$, partial-alpha substructures) remains OPEN** |
 | OPEN-SS-24 | First-principles derivation of simplicial contact structure (SS-7 assumption C4) | OPEN — would convert C4 from hypothesis to theorem |
 | OPEN-SS-25 (new) | DP-sea screening of alpha-alpha Coulomb in bound polytopes | OPEN — newly registered in SS-7 v1.2; reconciles Table 1 fit with ⁸Be full-Coulomb cancellation |
 
@@ -210,7 +215,7 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 - [ ] Generate SM-8/9 verification notebooks (retroactive)
 - [ ] Regenerate site-wide cpp_references.bib from all local .bib files
 - [ ] Fill remaining sections of founders_vision.md (CP, DI-bit, Nexus, Vision, Theology)
-- [ ] SS-8 Phase 1: begin empirical map of neutron-excess extension (OPEN-SS-23)
+- [x] SS-8 Phase 1: empirical map of neutron-excess extension (OPEN-SS-23) — **DONE 25 April 2026 via SS-8 v1.0 (`series_strong/papers/SS-8/`); 42 conditional zero-parameter predictions registered**
 
 ---
 

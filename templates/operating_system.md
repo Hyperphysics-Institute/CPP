@@ -344,6 +344,31 @@ If a new atomic task needs to be added to the Phase 7 pipeline, add it to `templ
 
 ---
 
+### Phase 7 Completion Gate (adopted 26 April 2026) — *do not start a new paper until the prior paper's Phase 7 is closed*
+
+**The rule.** A new paper does not enter Phase 1 until the prior paper's Phase 7 is complete. "Complete" means every applicable item on `templates/paper_completion_checklist.md` is checked or has a documented exception (e.g., OSF registration deferred per Section F's failure-mode allowance). The gate applies whether the prior paper is in the same series or a different one — it is a programme-wide ordering constraint, not a per-series one.
+
+**The rationale (Thomas's policy point, 26 April 2026 session).** *"The development context only exists while the session-window holds it; once a fresh window opens for the next paper, the prior paper's review-cycle texture, decision rationale, and Thomas-verbatim physical insights become inaccessible except through whatever artifacts get written down."* Phase 7 is the act of writing those artifacts. If Phase 7 is deferred until "after the next paper," in practice it does not happen — the context is gone and what gets written is reconstruction, not preservation. The cost of that reconstruction is not measurable in pages; it is measurable in the loss of the in-moment honesty that the development-vignette discipline (`operating_system.md` §11.2) is specifically designed to preserve.
+
+**Empirical basis.** Three failures of pre-26-April-2026 practice motivate the gate:
+- **SS-5 v6 reviews-SS-5.md body still pending.** Per `paper_catalog.md` Documentation Status (line 49), reviews-SS-5.md has a status table updated to v6 but body sections for the v4 stress-test and the Copilot review still pending. The v4 → v5 → v6 cycle ran in late April; by the time SS-6, SS-7, and SS-8 had each consumed reviewer attention, the SS-5 reviewer-narrative texture was no longer easily reconstructable.
+- **SS-6 documentation suite pending entirely.** SS-6 v0.2 has been complete since 18 April 2026; its companion documentation suite has not been written, and as of SS-8 v1.0 (24 April) the SS-6 mechanism-narrative would have to be reconstructed from the .tex itself rather than from the development context.
+- **SS-7 INDEX.md omission undetected for the entire SS-7 development arc.** Per `paper_catalog.md` row 49 and the patch 0017 audit, SS-7 was missing from `INDEX.md` from v0.1 through v1.2 — a registry omission that would have been caught by Phase 7 at v0.1 close but was instead caught two paper cycles later by an unrelated audit.
+
+Each failure mode shares a structure: Phase 7 was not run at the prior paper's v1.0 close; the next paper began; the prior paper's documentation gaps became dormant technical debt that surfaced later under a different audit's lens.
+
+**What this means in practice.**
+- When a paper reaches v1.0, the next session executes `templates/paper_completion_checklist.md` against it before any work on a new paper begins. Companion documentation suite (Section A), verification notebooks (Section B), all 12 registry updates (Section C), 3 navigation updates (Section D), and development transcripts (Section E) are required. OSF registration (Section F) and final verification (Section H) are required but may be deferred to the next-paper-side handoff under the §F failure-mode allowance (network, permissions, push authentication).
+- The "Session 1 / Session 2" decomposition introduced during the SS-8 paper-completion work is allowed: high-priority registry + navigation updates first (Session 1), then 7-file documentation suite (Session 2), then medium-priority items (master_glossary, problem_histories, theory-overview, founders_vision, CPP_the_theory). Both sessions are required before the next paper begins; only the sequencing within Phase 7 is flexible.
+- A new-paper drafting session that opens with the prior paper's Phase 7 incomplete is itself a Phase 7 execution session — the new-paper work waits.
+- Exceptions require explicit Thomas-side authorization with the deferred items registered as `OPEN-ORG-*` debt entries in `Organizational_Frontier.md`. The default is no exception.
+
+**Recovery from prior incompleteness.** Papers that completed their v1.0 milestone before 26 April 2026 with incomplete Phase 7 (notably SS-5 reviews-body pending, SS-6 suite pending entirely, SS-4 suite pending) are tracked under OPEN-ORG-005 (retroactive Phase 7 completion). The gate does not retroactively block forward work — it applies prospectively from 26 April 2026. SS-9 inherits the gate at its own v1.0 close.
+
+**Why this is a hard rule rather than a soft recommendation.** Soft recommendations have a documented failure mode in this programme (the three empirical cases above are all instances of "we'll do it later" in practice not happening). Phase 7 work is also predictable in scope and schedulable in advance — there is no benefit to deferring it that justifies the documented cost. The gate matches the evidence.
+
+---
+
 ## 5. The Multi-AI Review Cycle
 
 ### Established during SM-7/SM-8 (April 2026)

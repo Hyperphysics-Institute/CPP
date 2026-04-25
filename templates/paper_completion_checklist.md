@@ -32,6 +32,18 @@ external review AND no mechanism-changing critiques are pending. If any
 of these are not met, do NOT execute this checklist; return to Phase 2
 or Phase 4 of `operating_system.md` §4.
 
+**⚠️ Phase 7 Completion Gate (adopted 26 April 2026):** *No new paper enters
+Phase 1 until this checklist is closed for the prior paper.* See
+`operating_system.md` §4 "Phase 7 Completion Gate" for the full rule and
+rationale. The gate is enforced because deferred Phase 7 work in this
+programme has historically not happened — the development context is
+session-window-bounded and reconstruction loses the in-moment honesty the
+documentation suite is designed to preserve. Three empirical failures
+(SS-5 reviews-body pending, SS-6 suite pending entirely, SS-7 INDEX
+omission undetected for the full development arc) motivate the gate.
+Exceptions require explicit Thomas-side authorization with deferred items
+registered as `OPEN-ORG-*` debt entries.
+
 **Deliverables:** 7 companion documentation files + N verification
 notebooks + updates to up to 12 registry files + updates to 3 navigation
 files + curated transcripts + OSF registration + git commit/push +
