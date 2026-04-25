@@ -252,48 +252,6 @@ Whichever fires first.
 
 ---
 
-## OPEN-ORG-007: Repository-level `.gitignore` for Python build artifacts
-
-**Status:** OPEN — workable in next dev session
-**Identified:** 24 April 2026, during SS-8 v0.2 session patch-staging
-**Priority:** LOW (manual unstaging handled the issue twice, but will recur)
-
-**Originating context:** During patches 0006 and 0009, `series_strong/papers/__pycache__/` appeared in `git status` as an untracked directory because Python script execution during the session created bytecode caches. Both times, the pycache was manually unstaged with `git restore --staged` and deleted with `rm -rf` before the commit. A repo-level `.gitignore` would prevent the recurrence.
-
-**Problem:** `__pycache__` directories appear whenever Python scripts are executed from the sandbox. Without a `.gitignore` entry, each occurrence requires manual intervention. With ~5–10 dev sessions per month, this accumulates to a small but persistent friction item, and occasionally one such pycache may slip into a commit if the staging step is not carefully checked.
-
-**Proposed fix:** Create repo-level `/.gitignore` with standard Python ignores:
-```
-# Python build artifacts
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
-# OS / editor artifacts
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-```
-
-Approximate effort: 5 minutes.
-
-**Trigger condition:** Next session where any Python development work happens AND the staging area is clean before the work begins. Essentially "do it at the start of the next dev session before touching anything else."
-
-**Blocking dependencies:** None.
-**Blocks:** Nothing. Current workflow handles the issue manually.
-
-**History:**
-- 24 Apr 2026 — Registered during SS-8 v0.2 session after second manual unstaging of `__pycache__` during patch preparation.
-
----
-
 ## OPEN-ORG-009: Bootup orientation completeness audit and reinforcement
 
 **Status:** OPEN — workable in dedicated execution session
@@ -334,6 +292,49 @@ Approximate effort: 30–60 minutes, varying by depth of audit. The execution se
 
 **History:**
 - 24 Apr 2026 — Identified by Thomas during SS-5/6/7 migration scoping, after he observed his opening message contained four reinforcement instructions beyond "read bootup.md." Registered immediately per PD-003 reflexive-drop discipline. Same failure-mode class as OPEN-ORG-008 (visibility/active-working-set issues with documented protocols).
+
+---
+
+## OPEN-ORG-010: Tracked `.ipynb_checkpoints` files (mostly orphaned, SM-8 territory)
+
+**Status:** OPEN — requires Thomas-judgment before execution
+**Identified:** 24 April 2026, during patch 0016 (.gitignore + desktop.ini cleanup) audit
+**Priority:** LOW (no active harm; legacy clutter that only matters if the orphan checkpoints contain unrecoverable work)
+
+**Originating context:** While auditing the repo for tracked artifacts that match the new `.gitignore` patterns being added in patch 0016, 11 tracked `.ipynb_checkpoints/` files were found:
+
+```
+archive/grok-exploratory-SM/p2-structure-formation-mc/derivations/.ipynb_checkpoints/structure-formation-mc-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02-SM8-spectral_dimension-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_600cell_1ring_builder-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_600cell_2ring_builder-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_cage_spectral_dimension_gpu-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_cage_spectral_dimension_gpu_old-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_generate_600cell-checkpoint.py
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_random_walk_gpu-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_return_prob_data_current_graph_copy-checkpoint.csv
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_spectral_dimension_clean-checkpoint.ipynb
+series_standard_model/notebooks/.ipynb_checkpoints/nb02_SM8_spectral_dimension_clean2-checkpoint.ipynb
+```
+
+Of these 11 files: 1 has a matching parent notebook (the archive entry) and 10 are **orphans** — their parent notebooks no longer exist in the repo. Orphan checkpoints are a Jupyter pathology: they reference work-in-progress states from notebooks that have since been deleted, renamed, or moved without their checkpoint subfolder being cleaned up.
+
+**Problem:** Once the `.gitignore` from patch 0016 is in place, these files are tracked-but-now-ignored — git allows this state but it's confusing (changes to them won't show in `git status` but they remain in history). More importantly, the orphan status means the parent notebooks were intentionally removed but their checkpoint side-files weren't, suggesting the cleanup was incomplete. Removing them is mechanically straightforward via `git rm`, but warrants a check: **could any of the 10 orphan checkpoints contain SM-8 work-in-progress code that exists nowhere else and might be wanted later?**
+
+**Proposed fix:**
+1. Thomas-judgment step: review the 10 orphan checkpoint filenames against memory of SM-8 development history. For any that correspond to work whose final state was preserved elsewhere (committed notebooks, papers, or other artifacts), the checkpoint is safe to remove. For any that might contain unique work-in-progress, copy the content to `archive/sm8-orphan-checkpoints/` first, then remove from tracking.
+2. Execution step: `git rm` all 11 files (after step 1's review). If any are preserved to archive, `git mv` instead of `git rm`.
+3. Verify with `git ls-files | grep ipynb_checkpoints` returning empty.
+
+Approximate effort: 15–30 minutes for review + execution. The `.gitignore` file added in patch 0016 already prevents recurrence; this entry is purely about cleaning up the historical leftovers.
+
+**Trigger condition:** Opportunistic — any session where SM-8 territory is being touched anyway (e.g., SM-8 v4.x revision, SM-8 review cycle, FEM-related notebook work). Could also be a between-paper cleanup-batch session. Not blocking anything time-sensitive.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing. Current state is cosmetic clutter with no functional impact.
+
+**History:**
+- 24 Apr 2026 — Identified during patch 0016 .gitignore audit. The .gitignore prevents future checkpoint pollution; this entry covers the pre-existing tracked checkpoints that pre-date the ignore rule. Registered per PD-003 reflexive-drop discipline rather than executing inline because (a) the orphan-status of 10 of 11 files warrants Thomas-judgment, and (b) the work is in SM-8 territory which is outside the SS-5/6/7 migration session's scope.
 
 ---
 
@@ -408,23 +409,50 @@ All four were Claude-side execution failures, not protocol specification failure
 
 ---
 
+## OPEN-ORG-007: Repository-level `.gitignore` for Python build artifacts
+
+**Status:** RESOLVED — 24 April 2026 (patch 0016, this session immediately following OPEN-ORG-009 registration in patch 0015)
+**Identified:** 24 April 2026, during SS-8 v0.2 session patch-staging
+**Priority at resolution:** LOW (manual unstaging had handled the issue twice; .gitignore prevents recurrence)
+
+**Originating context:** During patches 0006 and 0009, `series_strong/papers/__pycache__/` appeared in `git status` as an untracked directory because Python script execution during the session created bytecode caches. Both times, the pycache was manually unstaged with `git restore --staged` and deleted with `rm -rf` before the commit. A repo-level `.gitignore` would prevent the recurrence.
+
+**Problem:** `__pycache__` directories appear whenever Python scripts are executed from the sandbox. Without a `.gitignore` entry, each occurrence required manual intervention. With ~5–10 dev sessions per month, this accumulated to a small but persistent friction item, and occasionally one such pycache could slip into a commit if the staging step was not carefully checked.
+
+**Resolution as adopted (patch 0016):**
+
+1. **Created `/.gitignore` at repo root** with the patterns specified in the original entry plus one minimal addition. Final content covers Python build artifacts (`__pycache__/`, `*.pyc`, `*.pyo`, `*.pyd`, `.Python`, `*.egg-info/`), Jupyter notebook checkpoints (`.ipynb_checkpoints/`), and OS/editor artifacts (`.DS_Store`, `Thumbs.db`, `desktop.ini`, `*.swp`, `*.swo`).
+2. **Removed two tracked Windows artifacts** discovered during the .gitignore audit: `series_standard_model/papers/desktop.ini` and `series_strong/papers/desktop.ini` (Windows OS-generated, zero project content). The .gitignore was extended with one pattern (`desktop.ini`) beyond the originally registered set so these don't recreate on Thomas's local checkout.
+3. **Registered OPEN-ORG-010** for separate handling of 11 tracked `.ipynb_checkpoints/` files (10 of them orphaned, in SM-8 territory) discovered during the same audit. Cleanup deferred because the orphan-status warrants Thomas-judgment about whether any contain unrecoverable work, and because SM-8 territory was outside the SS-5/6/7 migration session scope.
+
+**Scope expansion disclosure:** the original entry's "Proposed fix" did not include `desktop.ini` in the OS/editor artifacts list; this was added during execution because the same patch removes existing tracked desktop.ini files and the ignore rule is the natural complement. The extension was minimal (one line) and tightly coupled to the cleanup work; documented here for traceability.
+
+**Items not adopted:** LaTeX build artifacts (`.aux`, `.log`, `.out`, `.toc`, `.synctex.gz`, `.bbl`, `.blg`, `.fls`, `.fdb_latexmk`) were not added to the .gitignore. The repo currently has zero tracked LaTeX build artifacts, so prevention is not currently needed. If LaTeX pollution emerges in a future session, a one-line append to `.gitignore` adds them. Not registered as OPEN-ORG because it's preventive-only with no current symptom.
+
+**Closing commit reference:** patch 0016 in this session, sandbox commit hash assigned at commit time.
+
+**History:**
+- 24 Apr 2026 — Registered during SS-8 v0.2 session after second manual unstaging of `__pycache__` during patch preparation.
+- 24 Apr 2026 — RESOLVED via patch 0016 immediately after OPEN-ORG-009 registration. Adopted at start of SS-5/6/7 migration prep so subsequent migration commits would not stage build artifacts.
+
+---
+
 # §4 — Statistics
 
-**As of 24 April 2026 (after patch 0015 OPEN-ORG-009 registration):**
+**As of 24 April 2026 (after patch 0016 OPEN-ORG-007 resolution + OPEN-ORG-010 registration):**
 - Open: 8
 - In-progress: 0
-- Resolved: 1 (OPEN-ORG-008)
+- Resolved: 2 (OPEN-ORG-007, OPEN-ORG-008)
 - Deferred indefinitely: 0
 
 **By priority:**
 - HIGH: 0
 - MEDIUM: 2 (OPEN-ORG-003, OPEN-ORG-009)
-- LOW: 6 (OPEN-ORG-001, -002, -004, -005, -006, -007)
+- LOW: 6 (OPEN-ORG-001, -002, -004, -005, -006, -010)
 
 **By trigger type:**
 - Between-paper: 1 (OPEN-ORG-001)
 - Threshold-triggered: 1 (OPEN-ORG-002)
 - Milestone-triggered: 1 (OPEN-ORG-003)
-- Opportunistic: 3 (OPEN-ORG-004, -005, -006)
-- Next-session: 1 (OPEN-ORG-007)
+- Opportunistic: 4 (OPEN-ORG-004, -005, -006, -010)
 - Dedicated execution session: 1 (OPEN-ORG-009)
