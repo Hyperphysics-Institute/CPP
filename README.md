@@ -15,7 +15,7 @@
 
 Conscious Point Physics proposes that physical reality consists of Conscious Points (CPs) — fundamental entities with polarity, position on a 600-cell lattice, and the capacity to perceive and respond to their local environment. All Standard Model particles emerge as stable geometric configurations of CPs within the lattice, and all fundamental forces arise from a single interaction: the Space Stress Vector (SSV) between CPs.
 
-The theory is built on six axioms (see [`axiom-registry.md`](axiom-registry.md)) and derives its results from the geometry of the 600-cell — a regular 4-dimensional polytope with 120 vertices, 720 edges, and icosahedral H₄ symmetry. The 600-cell is the sole geometric input; all particle masses, coupling constants, and mixing angles are consequences of its structure. For proved results, see [`theorem-registry.md`](theorem-registry.md). For open problems and conjectures, see [`Research_Frontier.md`](Research_Frontier.md).
+The theory is built on nine axioms (see [`axiom-registry.md`](axiom-registry.md)) and derives its results from the geometry of the 600-cell — a regular 4-dimensional polytope with 120 vertices, 720 edges, and icosahedral H₄ symmetry. The 600-cell is the sole geometric input; all particle masses, coupling constants, and mixing angles are consequences of its structure. For proved results, see [`theorem-registry.md`](theorem-registry.md). For open problems and conjectures, see [`Research_Frontier.md`](Research_Frontier.md).
 
 ---
 
@@ -32,7 +32,7 @@ The Standard Model requires 3 free parameters for the charged lepton masses. The
 
 ---
 
-## Registered Papers (15)
+## Registered Papers (19)
 
 All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D). PDFs are available on the [OSF project page](https://osf.io/9dfya/). Source files and documentation are in this repository.
 
@@ -44,6 +44,8 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | **SS-4** | String Tension from the 600-Cell Face-Mode Multiplicity | σ = M₀z²/(φ l_edge) = 926.5 MeV/fm (+1.8% vs Cornell) |
 | **SS-5** | Light-Nuclei Binding Energies from Open-Vertex Cascade | d, ³H, ³He, ⁴He all ≤5.3% error, 0 params; ⁵He/⁵Li/⁸Be unbound predictions $\checkmark$ |
 | **SS-6** | Deuteron Observables Beyond Binding: Scope and Limits of the Base-to-Base Picture | Scoping paper: rigid-bipyramid intrinsic Q_d oblate (reveals Q_d orbital-dominated); zero-range a_np = 1/κ = 4.32 fm from B_d alone |
+| **SS-7** | Alpha-Cluster Regime and the 3N−6 Edge Formula for Medium-Mass Nuclei | 12 zero-parameter strict-N=Z alpha-chain bindings ¹²C through ⁵⁶Ni, RMS 0.80% |
+| **SS-8** | Interstitial-Neutron Binding and the 2E/V Scaling Law on the Alpha-Polytope | 42 conditional zero-parameter predictions; sub-1% agreements at ²⁶Mg octahedron and ⁴²Ca gyroelongated square bipyramid |
 | **SM-1** | Binding Mechanisms and Cage Stability | Tetrahedral cage as electron ground state; δ = 1/3; SSV₀ = 0.2555 MeV |
 | **SM-2** | Mass Generation from Geometric Hierarchies | Semi-empirical mass framework; one calibration constant k ≈ 0.0185 |
 | **SM-3** | K3 Spectral Theorem and the Koide Formula | K = 2/3 from K₃ eigenvalue ratio, conditional on Layer B thermalisation — zero free parameters |
@@ -52,7 +54,7 @@ All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.or
 | **SR-1** | Mechanistic Derivation of Relativistic Effects | Lorentz invariance from 600-cell lattice wave propagation |
 | **SM-6** | The Charged Lepton Mass Spectrum from 600-Cell Lattice Geometry | sin²θ_W = 3/(8φ); Koide phase derived; 1 calibration, 0 shape parameters |
 | **SM-7** | Heavy Quark Mass Spectrum and Strong Coupling | α_s = 5/(8φ); quark Koide phase; m_b 1.4%, m_t 1.7% |
-| **SM-8** | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses RMS 2.1%; 3-generation theorem |
+| **SM-8** | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses RMS 2.1%; four-bonded-cage-types theorem (per Theorem 4.1) |
 | **SM-9** | The Quark Mass Scaling Exponent | V^(7/3) derivation; Symmetry Degeneracy Theorem |
 | **SM-10** | First-Principles Quark Mass from FEM Chain Network Simulation | Cascade mechanism; two-regime physics; organised DP density |
 

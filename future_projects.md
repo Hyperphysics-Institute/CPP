@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/future_projects.md`
 **Purpose:** Prioritised list of next papers, infrastructure work, and long-term goals.
-**Last updated:** 21 April 2026 (SS-7 v1.2 completed and reclassified; SS-8 retargeted to OPEN-SS-23 as new NEXT PRIORITY; OPEN-SS-24 and OPEN-SS-25 registered)
+**Last updated:** 26 April 2026 (SS-8 v1.0 completed and reclassified; SS-9 selection deferred — candidate slate enumerated below)
 
 ---
 
@@ -36,20 +36,33 @@
 **Remaining:** OSF registration for v1.2 (update DOI JXE8D); development transcript for v1.2 cycle (registration→retirement 24h arc).
 **Significance:** Third predictive nuclear sector after SS-5 ($A \leq 4$ cascade) and SS-6 (deuteron observables scoping). 12 independent zero-parameter predictions — densest single-paper star shot to date under the swarm-validation doctrine. First retired open problem establishes the OPEN → RETIRED status transition in the programme record.
 
-### Project 0e: SS-8 — Neutron-Excess Extension of Alpha-Chain Formula (OPEN-SS-23) — **NEW NEXT PRIORITY**
-**Status:** Registered as primary target 21 April 2026 following SS-7 v1.2 retirement of OPEN-SS-22 and absorption of the ~2 MeV-per-neutron signal into OPEN-SS-23. SS-8 Phase 1 exploration (AME 2020 alpha-chain map) already produced the isotope-selection catch that drove OPEN-SS-22 retirement.
-**Goal:** Extend the SS-7 3N−6 alpha-chain formula to non-N=Z nuclei: (i) neutron-excess even-even isotopes at alpha-chain $N_\alpha$ values (${}^{48}$Ti, ${}^{52}$Cr, ${}^{56}$Fe at $\Delta N = +4$ as the immediate cases; ${}^{48}$Ca at $\Delta N = +8$ as a stress test); (ii) odd-A nuclei with single extra nucleons bound to alpha cores (${}^7$Li, ${}^9$Be, ${}^{11}$B, ${}^{13}$C); (iii) non-alpha-clustered structures (${}^6$Li ≈ ${}^4$He + d, ${}^{14}$N, ${}^{18}$O). Preliminary ${}^6$Li inspection gives a residual alpha-deuteron binding of 1.47 MeV ≈ $2B_\text{pair}/3 \approx 1.56$ MeV, suggestive of an incomplete K₃ face at the alpha-d contact.
-**Success criterion:** The stability valley from ${}^{40}$K through ${}^{208}$Pb reproduced within CPP residual precision; the ~2 MeV-per-extra-neutron pattern derived from first principles rather than calibrated.
-**Effort:** 3–5 sessions
-**Significance:** Completes the nuclear-chart coverage that OPEN-SS-22 was originally intended to anchor. Under the swarm-validation doctrine this extends star shots to the dominant portion of the nuclear chart (all isotopes, all mass numbers 6–208). The neutron-excess physics is the actual content; the icosahedral-closure hypothesis was a misread of where the physics lived.
-**Dependencies:** SS-5 v6, SS-7 v1.2, OPEN-SS-24 (simplicial contact structure; not blocking — SS-8 can proceed with C4 hypothesis), OPEN-SS-25 (DP-sea screening; may need to be addressed for neutron-excess Coulomb).
+### Project 0e: SS-8 — Interstitial-Neutron Binding and the 2E/V Scaling Law on the Alpha-Polytope — **v1.0 COMPLETE 25 April 2026**
+**Status:** ✅ v1.0 published-ready 25 April 2026 (multi-AI Round 1 + Round 2 review cycles complete: Opus, ChatGPT, Copilot, Grok). 1184 lines / paper at v1.0 in `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex`. Per-paper subfolder structure complete (reviews/, letters/, sketches/, scripts/, founders_voice/, documentation_suite/ all populated). 5 Python verification scripts in `scripts/`. Round 1 + Round 2 reviewer correspondence preserved verbatim (10 review files + 5 letters).
+**Result:** Conditional zero-parameter scaling law $\Delta_1(N_\alpha) = (6 - 12/N_\alpha)\,B_\text{pair}$ for single-neutron interstitial binding in alpha-cluster nuclei, where $B_\text{pair} = M_0/\varphi = 2.342$ MeV is the third-scale recurrence of the SS-5 K₃-mode quantum and $2E/V = 6 - 12/N_\alpha$ follows from Euler's formula on simplicial 3-polytopes. **42 conditional zero-parameter predictions:** 12 primary at $N_\text{ex} = 2$ across $N_\alpha \in [3, 14]$ + 30 secondary at $N_\text{ex} \in [3, 8]$. Two sub-1% agreements at the most symmetric polytopes: ${}^{26}$Mg (octahedron at $N_\alpha = 6$, $-0.2\%$) and ${}^{42}$Ca (gyroelongated square bipyramid at $N_\alpha = 10$, $-1.0\%$). 11 of 12 within 15% in the bulk regime; 5 of 6 even-$N_\alpha$ validation rows within 10%. **3 paper-level conditional theorems registered:** D1 (proximity-binding / vertex localization), D2 (K₃-edge coupling at host vertex), D3 (bulk-regime averaging). D1 promoted to a conditional theorem under two functionally independent sufficient premises (Level-1 algebraic and Level-2 functional independence established; Level-3 physical-principle independence open). Registers OPEN-SS-26 (D1 derivation from SSV minimization, Level-3 PARTIAL), OPEN-SS-27 (D2 K₃-edge coupling derivation via A6′ extension), OPEN-SS-28 (D3 bulk-regime averaging derivation + residual decomposition). Partially resolves OPEN-SS-23 (non-N=Z extension restricted to $N_\text{ex} \leq 8$, $N_\alpha \in [3, 14]$).
+**Registry cascade completed (patches 0024–0026):** predictions.md (PRED-C-54 through PRED-C-95 added; cumulative swarm-tally section established at 103 entries; ratio 11.4×); axiom-registry.md (cross-referenced; entry #14 reframed from accommodation to derivation per audit follow-up). Documentation suite (mechanism-/glossary-/phenomena-/philosophy-/reviews-/keywords-/FAQ-) pending (Session 2 of paper-completion checklist). Theorem-registry, paper_catalog, README/INDEX, master_glossary updates in progress (this patch / patch 0027).
+**Significance:** Completes the SS-5 → SS-7 → SS-8 cascade across three nuclear scales. Demonstrates the K₃-mode quantum's third recurrence at the interstitial-alpha contact scale (Pattern 6 in axiom-registry.md). Adds 42 conditional empirical correspondences to the cumulative CPP swarm — the densest single-paper contribution to date. Establishes the conditional-theorem-with-independence-tiers methodology (D1's Level-1+2 promotion under functionally independent realizations).
+**Remaining for SS-8 v1.0 archive close:** Documentation suite (7 companion files), problem_histories/PH-OPEN-SS-27.md and PH-OPEN-SS-28.md, OSF registration. None blocking SS-9 drafting.
 
-### Project 0f: Simplicial Contact Structure from CPP Primitives (OPEN-SS-24)
-**Status:** Registered 21 April 2026 as spin-off from SS-7 v1.2 theorem-vs-hypothesis split. Would convert SS-7 assumption C4 (alpha clusters arrange as simplicial polytopes) from hypothesis to theorem.
-**Goal:** Derive simplicial polytope connectivity from CPP lattice primitives. Three physical intuitions registered in SS-7: (i) triangular faces follow from C1–C2 rigid-tetrahedral base-to-base contact; (ii) simplicial maximises contact reinforcement (thermodynamic selection at fixed $N_\alpha$); (iii) convexity follows from rigid-packing constraints on non-interpenetrating tetrahedra. These need to become quantitative constraints.
-**Effort:** 2–3 sessions (mathematical, potentially self-contained)
-**Significance:** Would complete the theorem-status of SS-7's central result (from "theorem conditional on C4" to "theorem unconditionally"). A candidate SS-9 paper.
-**Dependencies:** SS-2 (lattice-scale grounding), SS-5 (contact-face mechanism), SS-7 (statement of hypothesis).
+### Project 0f: SS-9 selection — **DEFERRED, candidate slate below**
+**Status:** SS-8 v1.0 completion (25 April 2026) closes the OPEN-SS-22 → OPEN-SS-23 retargeting arc. SS-9 selection deferred pending Thomas review of candidates.
+
+**Candidate slate (in priority order by my read; Thomas's call):**
+
+1. **OPEN-SS-24 — First-principles derivation of C4 simplicial connectivity from CPP primitives.** *Highest-leverage by far.* Closing this converts 54 of 55 conditional D-N predictions (12 SS-7 alpha-chain bindings + 42 SS-8 interstitial bindings) to unconditional. The single-largest swarm-count promotion available. Effort: 2–3 sessions, mathematical, potentially self-contained. Three physical intuitions already registered in SS-7. **Recommendation: this is the high-leverage SS-9 if the math is tractable.**
+
+2. **OPEN-SS-23 remainder — Non-N=Z and odd-A extension beyond what SS-8 covered.** *Quicker but less impactful.* SS-8 covered $N_\text{ex} \in [2, 8]$ at $N_\alpha \in [3, 14]$; remainder is odd-A nuclei (single extra nucleons bound to alpha cores) and non-alpha-clustered structures (${}^6$Li, ${}^{14}$N, ${}^{18}$O). Effort: 2–4 sessions. Significance: extends nuclear-chart coverage but doesn't close the conditional-theorem chain.
+
+3. **OPEN-SS-26 Level-3 — D1 vertex localization from CPP primitives, completing the Level-3 independence gap.** *Targeted spin-off from SS-8.* Effort: 1–2 sessions. Significance: promotes SS-8's D1 from conditional theorem to unconditional theorem, but the 42 SS-8 predictions stay conditional on C1–C4 + D2 + D3 even after this closes — so leverage is smaller than OPEN-SS-24.
+
+4. **OPEN-SS-27 — D2 K₃-edge coupling via A6′ extension.** Effort: 2 sessions. Significance: as #3 (targeted spin-off, modest leverage).
+
+5. **OPEN-SS-28 — D3 bulk-regime averaging derivation + residual decomposition.** Effort: 2 sessions. Significance: would tighten SS-8's secondary 30 predictions from 8–15% to under 5%, but doesn't promote any conditional D-N to unconditional.
+
+6. **DP-sea Coulomb screening (OPEN-SS-25).** Effort: 1–2 sessions. Significance: addresses a quantitative puzzle in SS-7's numerical agreement but doesn't add new predictions; leverage is mostly defensive.
+
+7. **Charge quantisation post-mortem paper.** PH-THEO-SS-9 already documents the proof; could anchor an SS-9 that draws out the unification with the K₃ spectral theorem (both K = 2/3 and δ = 1/3 emerge from the same K₃ graph — the deepest two CPP lepton results share one geometric source). Significance: high pedagogical value, modest research leverage.
+
+**My recommendation: OPEN-SS-24** — the leverage on the swarm count is unmatched. Pivot to OPEN-SS-23 remainder if OPEN-SS-24's math turns out to be intractable in a 2–3 session window.
 
 ### Project 0g: DP-Sea Screening of Alpha-Alpha Coulomb (OPEN-SS-25)
 **Status:** Registered 21 April 2026 as spin-off from SS-7 v1.2. The Coulomb-free SS-7 formula fits within 1.5% despite each alpha carrying $Z = 2$ — adding full vacuum Coulomb at $R_{\alpha\alpha} = 2.37$ fm (~2.4 MeV per contact) would produce substantial over-subtraction at $N_\alpha \geq 3$, yet ${}^8$Be itself is consistent with full Coulomb. The contrast implies DP-sea screening that requires at least one additional alpha neighbour.

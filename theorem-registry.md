@@ -4,7 +4,7 @@
 **Purpose:** Complete record of every theorem and corollary proved from CPP axioms, organised by series, with proof references and axiom dependencies.
 **Companion file:** `axiom-registry.md` — what we assume.
 **Architecture:** See `templates/Research_Frontier_Architecture.md`
-**Last updated:** 21 April 2026 (SS-7 v1.2 Theorem 2.1 added as THEO-SS-12; Summary Statistics SS row corrected from 9→11 to reflect the pre-existing 10-theorem SS state plus the new addition)
+**Last updated:** 26 April 2026 (SS-8 v1.0 added: THEO-SS-13 Euler-degree theorem, THEO-SS-14 D1 conditional vertex localization Level-1+2, THEO-SS-15 2E/V interstitial scaling law conditional on C1-C4 + D1-D3; Summary Statistics SS row updated from 11 to 14)
 
 ---
 
@@ -12,9 +12,9 @@
 
 The axiom-registry tracks what CPP *assumes*. This file tracks what CPP has *proved*. Together they define the deductive structure of the theory. The primary health metric is the ratio:
 
-**Theorems : Axioms = 49 : 6 ≈ 8.2 theorems per axiom**
+**Theorems : Axioms = 52 : 6 ≈ 8.7 theorems per axiom**
 
-*(Counting theorems + corollaries. Axiom count uses the 6-axiom set from postulates_and_theorems.md. SS row corrected this pass: the Summary Statistics previously listed SS at 9 theorems, but the actual SS section table lists 10 (THEO-SS-1 through THEO-SS-10) plus PROP-SS-11 — a pre-existing +1 miscount. With SS-7 v1.2 adding THEO-SS-12, the correct SS theorem count is now 11.)*
+*(Counting theorems + corollaries. Axiom count uses the 6-axiom set from postulates_and_theorems.md. SS-8 v1.0 added THEO-SS-13, THEO-SS-14, THEO-SS-15 — note that THEO-SS-14 and THEO-SS-15 are conditional theorems on paper-level structural hypotheses C1–C4 + D1–D3, not unconditional from the programme axiom set; per OS §11.7 these are still counted as theorems for the registry totals. SS-7 v1.2 added THEO-SS-12; pre-existing SS state had 10 theorems THEO-SS-1 through THEO-SS-10 + PROP-SS-11.)*
 
 ---
 
@@ -35,9 +35,9 @@ Theorems reference axioms from two numbering systems (to be unified in a future 
 
 ---
 
-# Strong Sector (SS) — 11 Theorems, 1 Proposition
+# Strong Sector (SS) — 14 Theorems, 1 Proposition
 
-Sources: SS-1 (Strong Sector unified paper), SS-3 (SU(3) uniqueness), SS-7 (alpha-cluster regime).
+Sources: SS-1 (Strong Sector unified paper), SS-3 (SU(3) uniqueness), SS-7 (alpha-cluster regime), SS-8 (interstitial-neutron 2E/V scaling).
 
 | ID | Name | Result | Axioms Used | Paper Reference |
 |----|------|--------|-------------|-----------------|
@@ -53,6 +53,9 @@ Sources: SS-1 (Strong Sector unified paper), SS-3 (SU(3) uniqueness), SS-7 (alph
 | **THEO-SS-10** | SU(3) uniqueness | SU(3) is the unique Lie algebra of the tetrahedral cage. Any 8 linearly independent traceless Hermitian 3×3 operators generate su(3) and nothing else. Resolves OPEN-SS-11. | AXIM-1, AXIM-2 | SS-3, Theorem 3.3 |
 | **PROP-SS-11** | Physical basis transformation | The 4+4 physical mode basis {L₁...L₄, H₁...H₄} spans su(3). Change-of-basis matrix M has det = 2/√3. Inverse: T³ = ½(L₂−L₄), T⁸ = (√3/2)(L₂+L₄). | AXIM-1, AXIM-2 | SS-3, Proposition 6.5 |
 | **THEO-SS-12** | Simplicial polytope edge count | For a simplicial polytope on $N_\alpha \geq 4$ vertices (closed triangulated 2-sphere), Euler's formula $V - E + F = 2$ combined with the triangle constraint $2E = 3F$ give $E = 3N_\alpha - 6$ exactly. Independent of which specific polytope is realised; the octahedron and triangular antiprism at $N_\alpha = 6$ both have 12 edges. Basis of the SS-7 $3N_\alpha - 6$ binding-edge formula. | Pure graph theory (Euler's formula); invoked in SS-7 under structural assumption C4 (alpha clusters realise simplicial polytope connectivity) — not yet derived from CPP axioms, OPEN-SS-24 targets that derivation | SS-7 v1.2, Theorem 2.1 |
+| **THEO-SS-13** | Euler-degree theorem | For a simplicial 3-polytope with $V$ vertices, the average vertex degree is $2E/V = 6 - 12/V$ exactly, where $E = 3V - 6$ is the edge count from Euler's formula. Combinatorial corollary of THEO-SS-12 specialized to vertex-degree analysis. Provides the geometric basis for the SS-8 interstitial-neutron 2E/V scaling law. | Pure graph theory (corollary of THEO-SS-12) | SS-8 v1.0, Theorem `thm:euler-degree` |
+| **THEO-SS-14** | D1 — Conditional vertex localization (Level-1+2 independence) | An interstitial neutron added to a bulk simplicial alpha-polytope localizes at an alpha-vertex (rather than at edge-midpoint, face-center, or centroid) under either of two functionally independent realizations of proximity-binding: Model A (K₃-edge counting under D2) and Model B (short-range Yukawa pair physics). Q2 algebraic reduction test confirms Model B does not reduce to Model A under any short-range regime (multiplicity vectors, non-vertex orderings, vertex-degree scaling all distinguish). Level-1 algebraic independence and Level-2 functional independence proved; Level-3 physical-principle independence open as OPEN-SS-26 PARTIAL (both models share a proximity-binding ancestor). | A1, A2, A11; SS-5 collective-mode framework; D2 (under Model A) | SS-8 v1.0, Theorem `thm:d1-cond` |
+| **THEO-SS-15** | 2E/V interstitial scaling law (conditional) | For a simplicial alpha-polytope on $N_\alpha$ vertices in the bulk regime, the per-neutron interstitial binding strength is $\Delta_1(N_\alpha) = (2E/V) \cdot B_{\text{pair}} = (6 - 12/N_\alpha) \cdot B_{\text{pair}}$ where $B_{\text{pair}} = M_0/\varphi = 2.342$ MeV is the third-scale recurrence of the SS-5 K₃-mode quantum. Twelve concurrent zero-parameter empirical predictions across the strict $N{=}Z$ alpha-chain at $N_\alpha \in [3, 14]$, with two sub-1% agreements at the most symmetric polytopes (${}^{26}$Mg octahedron, ${}^{42}$Ca gyroelongated square bipyramid). Conditional on C1–C4 (inherited from SS-7) plus D1 (THEO-SS-14), D2, and D3. | A2, A5, A8', A11; THEO-SS-12, THEO-SS-13, THEO-SS-14; conditional on C1–C4 + D1–D3 | SS-8 v1.0, Theorem `thm:h2prime` |
 
 ---
 
@@ -174,15 +177,15 @@ Sources: SD-1 through SD-5. These theorems establish the CPP superdeterministic 
 
 | Series | Theorems | Corollaries | Total |
 |--------|----------|-------------|-------|
-| SS (Strong) | 11 | 0 | 11 |
+| SS (Strong) | 14 | 0 | 14 |
 | SM (Standard Model) | 9 | 4 | 13 |
 | EW (Electroweak) | 8 | 0 | 8 |
 | QM (Quantum Mechanics) | 10 | 3 | 13 |
 | SD (Foundations) | 10 | 0 | 10 |
 | Partner-switching | 1 | 2 | 3 |
-| **Total** | **49** | **9** | **58** |
+| **Total** | **52** | **9** | **61** |
 
-*SS row corrected from 9 to 11 this pass: the pre-existing count was a +1 miscount (actual SS table had 10 theorems THEO-SS-1 through THEO-SS-10 plus PROP-SS-11, listed as "10 Theorems, 1 Proposition" in the SS section header); SS-7 v1.2 added THEO-SS-12 bringing the total to 11.*
+*SS row updated from 11 to 14 this pass: SS-8 v1.0 added THEO-SS-13 (Euler-degree theorem), THEO-SS-14 (D1 conditional vertex localization, Level-1+2 independence), and THEO-SS-15 (2E/V interstitial scaling law, conditional on C1–C4 + D1–D3). THEO-SS-14 and THEO-SS-15 are conditional theorems on paper-level structural hypotheses; they are counted as theorems per the operating-system convention but their conditionality is documented inline in the entries.*
 
 ---
 
@@ -213,6 +216,9 @@ How many theorems depend on each axiom:
 | THEO-SM8-2 (quark mass) | Heavy quarks at 2.1%; light quarks and full formula open (OPEN-SS-1) |
 | THEO-SS-3 (β₀ = 7) | One-loop; two-loop open (OPEN-SS-4) |
 | THEO-SS-12 (E = 3N_α − 6) | Combinatorial edge count proved; structural hypothesis C4 that alpha clusters realise this connectivity (OPEN-SS-24) and DP-sea Coulomb screening (OPEN-SS-25) remain open |
+| THEO-SS-13 (Euler-degree) | Combinatorial corollary of THEO-SS-12 specialized to vertex-degree analysis; same structural-hypothesis caveat as THEO-SS-12 (OPEN-SS-24) |
+| THEO-SS-14 (D1 conditional) | Level-1+2 independence proved; Level-3 physical-principle independence open (OPEN-SS-26 PARTIAL); both models share a proximity-binding ancestor |
+| THEO-SS-15 (2E/V scaling) | Conditional zero-parameter law proved; conditional on C1–C4 + D1–D3; promotion path closes if OPEN-SS-24 + OPEN-SS-26 + OPEN-SS-27 + OPEN-SS-28 are all closed |
 | THEO-QM-1 (Schrödinger) | OP-QM-2 **SOLVED** |
 | THEO-QM-2 (Born rule) | Stated; rigorous ZBW phase derivation still open (OPEN-QM-1) |
 | THEO-QM-6 (Lindblad) | OP-QM-4 **effectively SOLVED** |

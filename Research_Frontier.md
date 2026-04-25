@@ -1,7 +1,7 @@
 # CPP Research Frontier
 
 **Location:** `/CPP/Research_Frontier.md`
-**Last updated:** 23 April 2026
+**Last updated:** 26 April 2026 (SS-8 v1.0 status updates: OPEN-SS-23 partially resolved; OPEN-SS-26 cross-reference cleaned up; OPEN-SS-27/28 paper references updated)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Architecture:** See `templates/Research_Frontier_Architecture.md`
 **Nomenclature:** See `nomenclature.md`
@@ -270,15 +270,15 @@ Problems with no candidate solution, or where candidate solutions have been expl
 ---
 
 ### OPEN-SS-23: Non-$N{=}Z$ and Odd-$A$ Extension of the Alpha-Chain Formula
-**Status:** OPEN (primary SS-8 target after v1.2 priority upgrade)
+**Status:** PARTIALLY RESOLVED by SS-8 v1.0 (25 April 2026) for $N_\text{ex} \in [2, 8]$, $N_\alpha \in [3, 14]$ even-even nuclei via the conditional 2E/V scaling law $\Delta_1(N_\alpha) = (6 - 12/N_\alpha) B_\text{pair}$. Remainder (odd-$A$ nuclei, $N_\alpha > 14$, partial-alpha substructures) remains OPEN.
 **Sector(s):** SS (nuclear physics)
-**Priority:** HIGH
+**Priority:** MEDIUM (downgraded from HIGH after partial resolution)
 **One-line statement:** Extend the SS-7 alpha-chain binding formula to non-$N{=}Z$ isotopes at alpha-chain $N_\alpha$ values, odd-$A$ nuclei with extra-nucleon-bound-to-alpha-core structures, and non-alpha-clustered nuclei.
 **What a solution looks like:** A CPP derivation of the $\sim 2$ MeV per extra neutron signal visible in non-$N{=}Z$ isotopes (${}^{48}$Ti, ${}^{52}$Cr, ${}^{56}$Fe each with $N - Z = +4$; ${}^{48}$Ca at $N - Z = +8$ as a stress test). A CPP treatment of single-nucleon excess bound to an alpha-polytope core (${}^7$Li, ${}^9$Be, ${}^{11}$B, ${}^{13}$C). A CPP treatment of partial-alpha substructures (${}^6$Li $\approx$ ${}^4$He + d, ${}^{14}$N, ${}^{18}$O, ${}^{30}$Si). Success criterion: the stability valley from ${}^{40}$K through ${}^{208}$Pb reproduced within CPP residual precision.
 **Dependencies:** SS-7 v1.2 formula and constants (${}^4$He binding, $B_{\text{pair}} = M_0/\varphi$). CPP treatment of DP-sea behaviour in non-$N{=}Z$ configurations.
-**Current best lead:** Preliminary SS-7 inspection of ${}^6$Li: residual alpha-deuteron binding 1.47 MeV, approximately $2B_{\text{pair}}/3 \approx 1.56$ MeV — suggestive of an incomplete K$_3$ face at the alpha-d contact. The ${}^{48}$Ti/${}^{52}$Cr/${}^{56}$Fe block (shown in SS-7 v1.2 footnote Table 2) provides the nearest empirical anchor for the neutron-excess derivation.
-**Paper(s):** SS-8 (primary target, per v1.2 retargeting from the retired OPEN-SS-22).
-**Registered:** 20 April 2026 in SS-7 v1.0; priority upgraded 21 April 2026 in SS-7 v1.2 to primary SS-8 target.
+**Current best lead:** SS-8 v1.0 derives the conditional 2E/V scaling law for the even-$N_\alpha$ alpha-chain at $N_\text{ex} \in [2, 8]$ (42 conditional zero-parameter predictions; 11 of 12 primary $N_\text{ex} = 2$ rows within 15%, two within 1%). SS-8's residual model (H3′ pair bonus + H5′ small-polytope attenuation) provides a structural template for the remainder. Preliminary SS-7 inspection of ${}^6$Li: residual alpha-deuteron binding 1.47 MeV, approximately $2B_{\text{pair}}/3 \approx 1.56$ MeV — suggestive of an incomplete K$_3$ face at the alpha-d contact.
+**Paper(s):** SS-8 v1.0 (primary partial resolution). SS-9 candidate for remainder.
+**Registered:** 20 April 2026 in SS-7 v1.0; priority upgraded 21 April 2026 in SS-7 v1.2 to primary SS-8 target; partially resolved 25 April 2026 by SS-8 v1.0; remainder priority downgraded to MEDIUM 26 April 2026.
 
 ---
 
@@ -319,7 +319,7 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Current best lead:** Dual-model SSV-minimization sketch (22 April 2026) delivers D1 as a conditional theorem under two functionally independent realizations of proximity-binding — Model A (K₃-edge counting under D2) and Model B (short-range Yukawa pair physics). Q2 algebraic reduction test shows Model B does NOT reduce to Model A under any short-range regime (three decisive discriminators: multiplicity vectors, non-vertex orderings, vertex-degree scaling). Both models share a proximity-binding ancestor principle; if that principle fails programme-wide, both models fail together. Level-3 independence remains open: would require either (a) deriving proximity-binding from CPP primitives, or (b) constructing a third model that produces D1 without invoking proximity.
 **Falsification route:** Construction of a bulk simplicial deltahedron at which CPP pair-binding physics predicts an interstitial site outside the vertex class, under any plausible proximity-binding mechanism. Or: demonstration that proximity-binding itself is incompatible with a derived CPP axiom.
 **History file:** `problem_histories/PH-OPEN-SS-26.md` (captures Round 2 narrative + Level-1/2/3 decomposition methodology)
-**Paper(s):** SS-8 (v0.1 target).
+**Paper(s):** SS-8 v1.0 (registered the conditional theorem and the Level-1/2/3 decomposition methodology). SS-9 candidate for closure of Level-3 gap.
 **Registered:** 21 April 2026 in SS-8 H2' derivation note §10 (formal registry entry added 23 April 2026).
 
 ---
@@ -333,7 +333,7 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Dependencies:** SS-5 collective-mode machinery (A6' or its successor); SS-7 v1.2 empirical anchor; CPP treatment of DP-sea reorganization across polytope edges.
 **Cross-sector connections:** Closure automatically delivers D1 as a two-for-one under simplicial combinatorics (Model A). Delivers SS-7's $3N_lpha - 6$ edge formula as a derived structural result rather than an empirical regularity (converts CONJ-SS-12 from conjecture to corollary of THEO-SS-27).
 **Current best lead:** SS-5 v6 establishes the base-to-base K₃-reduced mechanism at the alpha-alpha contact face. SS-7 v1.2 extends empirically to per-edge strength in bulk polytopes. The A6' derivation is the structural missing link between the two. Likely approach: treat the alpha-polytope as a graph with alpha-vertices and K₃-edge contacts, express the SS-5 collective-mode structure as local to each K₃ face, verify the local structure tiles correctly over the polytope. May require explicit DP-sea redistribution calculation at polytope edges (related to OPEN-SS-24 and OPEN-SS-25 methodology).
-**Paper(s):** Opened in SS-8 H2' derivation note §10 (21 April 2026). Target paper: SS-9 candidate (shares structural-polytope machinery with OPEN-SS-24).
+**Paper(s):** Opened in SS-8 v1.0 (formal registry entry added 23 April 2026; SS-8 invoked D2 as a paper-level conditional theorem). Target paper: SS-9 candidate (shares structural-polytope machinery with OPEN-SS-24).
 **Registered:** 21 April 2026 in SS-8 H2' derivation note §10 (formal registry entry added 23 April 2026).
 
 ---
@@ -347,7 +347,7 @@ Problems with no candidate solution, or where candidate solutions have been expl
 **Dependencies:** OPEN-SS-26, OPEN-SS-27 (both feed the averaging derivation); SS-5 pair-bonus mechanism (for residual decomposition).
 **Cross-sector connections:** Completes the H2' structural derivation. Residual decomposition is where SS-8 meets the Ca-isotope chain work.
 **Current best lead:** Phase 1 empirical map identified k_eff plateau at ~5 matching 2E/V = 6 − 12/V for bulk simplicial polytopes. Residuals at $N_lpha = 4, 8, 12$ are the right size and sign for $B_{	ext{pair}}$-scale opposite-polarity pair bonuses from $N_	ext{ex} = 2$ contributions. The decomposition is empirically suggestive but not yet derived from structural principles.
-**Paper(s):** SS-8 (v0.1 target, downstream).
+**Paper(s):** Opened in SS-8 v1.0 (D3 invoked as paper-level conditional theorem; residual decomposition presented as provisional, not part of the main proof). Target paper: SS-9 candidate or later.
 **Registered:** 21 April 2026 in SS-8 H2' derivation note §10 (formal registry entry added 23 April 2026).
 
 ---
