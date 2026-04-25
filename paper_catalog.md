@@ -38,7 +38,7 @@
 | **SS-3** | Paper | Uniqueness of SU(3) from the Tetrahedral Cage | `series_strong/papers/SS-3_su3_uniqueness.tex` (v1.3) | **Submission-ready** |
 | **SS-4** | Paper | String Tension from the 600-Cell Face-Mode Multiplicity | `series_strong/papers/SS-4_string_tension.tex` (v0.1) | **OSF pending** |
 | **SS-5** | Paper | Light-Nuclei Binding Energies from the Open-Vertex Cascade | `series_strong/papers/SS-5_light_nuclei_open_vertex_cascade.tex` (v6) | **OSF pending** (awaiting Grok numerical + Sonnet hostile review) |
-| **SS-6** | Paper | Deuteron Observables Beyond Binding: Scope and Limits of the Base-to-Base Picture | `series_strong/papers/SS-6_deuteron_observables_beyond_binding.tex` (v0.1) | **Scoping draft** (companion docs pending) |
+| **SS-6** | Paper | Deuteron Observables Beyond Binding: Scope and Limits of the Base-to-Base Picture | `series_strong/papers/SS-6/SS-6_deuteron_observables_beyond_binding.tex` (v0.2) | **Scoping draft** (companion docs pending; per-paper subfolder migration completed via patch 0018) |
 | **SS-7** | Paper | Alpha-Cluster Regime and the 3N−6 Edge Formula for Medium-Mass Nuclei | `series_strong/papers/SS-7_alpha_cluster_edge_formula.tex` (v1.2) | **OSF pending** (v1.2 symmetric-honesty corrections; 12 concurrent zero-parameter N=Z alpha-chain predictions at N_α ∈ [3,14], RMS 0.80%; retires OPEN-SS-22, registers OPEN-SS-25) |
 | SS-1a | Companion | Cage Geometry and Eigenvalue Bridge | `series_strong/SS-1a_cage_geometry_eigenvalue_bridge.tex` | Supporting |
 | SS-1b | Companion | SU(3) Algebra Exact Proof | `series_strong/SS-1b_su3_algebra_exact_proof.tex` | Supporting |

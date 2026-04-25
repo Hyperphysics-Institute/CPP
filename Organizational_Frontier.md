@@ -167,7 +167,7 @@ Approximate effort: 1–2 hours including initial audit to count existing predic
 
 ## OPEN-ORG-004: SS-5, SS-6, SS-7 migration to per-paper subfolder convention
 
-**Status:** OPEN — deferred to opportunistic trigger
+**Status:** IN-PROGRESS — SS-6 completed 25 April 2026 (patch 0018); SS-5 and SS-7 remaining
 **Identified:** 23 April 2026, during SS-8 v0.1 pre-drafting planning
 **Priority:** LOW (existing papers functional; convention applies forward)
 
@@ -184,6 +184,8 @@ Approximate effort: 2–3 hours (primary cost is the cross-reference audit and u
 
 **Trigger condition:** Any session where a substantive edit to SS-5, SS-6, or SS-7 is planned anyway (e.g., retroactive §4.1A/B addition per OPEN-ORG-005, or an SS-7 script refactor per OPEN-ORG-006). Migrate the paper being edited at that time, so the migration work piggybacks on work already happening. Three separate opportunistic triggers; migrate one paper at a time rather than all three at once.
 
+*Trigger override (25 April 2026):* Thomas elected to execute the migration as a dedicated batch in this session rather than wait for opportunistic triggers, after the doc-suite folder convention codification (patch 0015) and `.gitignore` baseline (patch 0016) were completed. The opportunistic trigger remains the registered design intent for any future similar deferral; this batch execution is a one-time override.
+
 **Blocking dependencies:** None.
 **Blocks:** Completion of OPEN-ORG-005 and OPEN-ORG-006 for SS-5/6/7 specifically (those items can be done without migration, but combining them is more efficient per this item's trigger condition).
 
@@ -191,6 +193,7 @@ Approximate effort: 2–3 hours (primary cost is the cross-reference audit and u
 - 22 Apr 2026 — Per-paper subfolder convention adopted.
 - 23 Apr 2026 — Thomas's ruling: "Let's take territory first" — defer migration until SS-8 v0.1 complete.
 - 24 Apr 2026 — Registered here with explicit opportunistic trigger during OPEN-ORG inaugural population.
+- 25 Apr 2026 — **SS-6 migration completed (patch 0018).** Three files migrated: `.tex` and `.pdf` to `series_strong/papers/SS-6/`, and one Claude-correspondence response file (`SS-6_v02_copilot_review_response.md`) to `series_strong/papers/SS-6/letters/`. Five empty subfolders created with `.gitkeep` placeholders (`documentation_suite/`, `founders_voice/`, `reviews/`, `scripts/`, `sketches/`). New `SS-6-README.md` created using the `{scope}-README.md` convention from §11. Cross-references updated in `INDEX.md` (line 57) and `paper_catalog.md` (line 41); both also corrected v0.1 → v0.2 version mismatch noticed during the migration audit. SS-5 and SS-7 remain to be migrated; SS-7 includes the additional task of resolving the v1.1-vs-v1.2 duplicate flagged earlier this session (the v1.2 root copy at `series_strong/SS-7_alpha_cluster_edge_formula.tex` becomes canonical at `series_strong/papers/SS-7/`; the v1.1 papers copy gets archived).
 
 ---
 
@@ -439,9 +442,9 @@ All four were Claude-side execution failures, not protocol specification failure
 
 # §4 — Statistics
 
-**As of 24 April 2026 (after patch 0016 OPEN-ORG-007 resolution + OPEN-ORG-010 registration):**
-- Open: 8
-- In-progress: 0
+**As of 25 April 2026 (after patch 0018 SS-6 migration):**
+- Open: 7
+- In-progress: 1 (OPEN-ORG-004 — SS-6 done; SS-5, SS-7 remaining)
 - Resolved: 2 (OPEN-ORG-007, OPEN-ORG-008)
 - Deferred indefinitely: 0
 
@@ -454,5 +457,5 @@ All four were Claude-side execution failures, not protocol specification failure
 - Between-paper: 1 (OPEN-ORG-001)
 - Threshold-triggered: 1 (OPEN-ORG-002)
 - Milestone-triggered: 1 (OPEN-ORG-003)
-- Opportunistic: 4 (OPEN-ORG-004, -005, -006, -010)
+- Opportunistic: 4 (OPEN-ORG-004 [in-progress], -005, -006, -010)
 - Dedicated execution session: 1 (OPEN-ORG-009)
