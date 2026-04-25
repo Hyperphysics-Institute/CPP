@@ -43,7 +43,7 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 
 ## [`series_strong/`](series_strong/) — Strong Sector (SS)
 
-The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucleon structure, string tension, deuteron binding, and deuteron observables scoping. **SS-1 registered on OSF. SS-2, SS-3, SS-4, SS-5, SS-6 pending.**
+The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucleon structure, string tension, deuteron binding, deuteron observables scoping, and alpha-cluster regime. **SS-1 registered on OSF. SS-2, SS-3, SS-4, SS-5, SS-6 pending. SS-7 has existing OSF DOI from v0.1; v1.2 update pending.**
 
 | File | Description |
 |------|-------------|
@@ -55,6 +55,7 @@ The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucle
 | `SS-4_string_tension.tex/.pdf` | **SS-4** (v0.1) — String tension from face-mode multiplicity, $\sigma = M_0 z^2/(\varphi\,l_\text{edge}) = 926.5$ MeV/fm |
 | `SS-5/SS-5_light_nuclei_open_vertex_cascade.tex/.pdf` | **SS-5** (v6) — Light-nuclei binding via open-vertex cascade; $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ at $\leq 5.3\%$ error, zero params; $^5$He, $^5$Li, $^8$Be unbound predictions. Per-paper subfolder per §11 convention. |
 | `SS-6/SS-6_deuteron_observables_beyond_binding.tex/.pdf` | **SS-6** (v0.2) — Deuteron observables beyond binding (scoping): rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np} = 1/\kappa = 4.32$ fm from $B_d$ alone. Per-paper subfolder per §11 convention. |
+| `SS-7/SS-7_alpha_cluster_edge_formula.tex/.pdf` | **SS-7** (v1.2) — Alpha-cluster regime and the 3N−6 edge formula for medium-mass nuclei; 12 concurrent zero-parameter N=Z alpha-chain predictions at $N_\alpha \in [3,14]$, RMS 0.80%; retires OPEN-SS-22, registers OPEN-SS-25. Per-paper subfolder per §11 convention. |
 | `cpp_strong_series.bib` | Bibliography |
 
 **Documentation:** SS-1: `mechanism-SS-1.md`, `glossary-SS-1.md`, `phenomena-SS-1.md`, `reviews-SS-1.md`, `FAQ-SS-1.md`, `philosophy-SS-1.md`, `development-SS-1.md`, `keywords-SS-1.md`
@@ -63,6 +64,7 @@ SS-3: `mechanism-SS-3.md`, `glossary-SS-3.md`, `phenomena-SS-3.md`, `philosophy-
 SS-4: documentation suite pending
 SS-5: 7 doc-suite files in `series_strong/papers/SS-5/documentation_suite/` (mechanism, glossary, phenomena, philosophy, keywords, development, reviews — all at v6 header currency); plus `transcript-SS-5.md` (renamed from `SS-5_development_transcript.md` during patch 0019 migration)
 SS-6: documentation suite pending
+SS-7: 8 doc-suite files in `series_strong/papers/SS-7/documentation_suite/` (mechanism, glossary, phenomena, philosophy, keywords, development, reviews, lay-summary — all at v1.2 header currency); plus `transcript-SS-7.md` (renamed from `SS-7_development_transcript.md` during patch 0020 migration), `SS-7_v1.2_transcript.md` (v1.2 cycle addendum), `handover-SS-7.md` (renamed from `SS-7_v1.2_handover.md`), and `SS-7_OSF_registration_status.md` (v1.1 status doc; v1.2 update pending)
 
 **Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.) + `SS-2_lattice_scale_nucleon.py` + `SS-3_su3_uniqueness.py`
 

@@ -165,39 +165,6 @@ Approximate effort: 1–2 hours including initial audit to count existing predic
 
 ---
 
-## OPEN-ORG-004: SS-5, SS-6, SS-7 migration to per-paper subfolder convention
-
-**Status:** IN-PROGRESS — SS-6 completed 25 April 2026 (patch 0018); SS-5 completed 25 April 2026 (patch 0019); SS-7 remaining
-**Identified:** 23 April 2026, during SS-8 v0.1 pre-drafting planning
-**Priority:** LOW (existing papers functional; convention applies forward)
-
-**Originating context:** Per-paper subfolder convention adopted 22 April 2026 (`operating_system.md` §11). SS-8 was the first paper drafted under the new convention, with `series_strong/papers/SS-8/` containing `sketches/`, `founders_voice/`, `reviews/`, `documentation_suite/`, `letters/`, `scripts/`. Earlier papers (SS-5, SS-6, SS-7) predate the convention and have their artifacts distributed across `series_strong/` at a different level of organization.
-
-**Problem:** Inconsistent organization. A researcher navigating `series_strong/` sees SS-5/SS-6/SS-7 artifacts at one level of structure and SS-8 artifacts at another. When SS-9 or SS-10 is drafted, it will follow SS-8's pattern, widening the asymmetry.
-
-**Proposed fix:** Migrate SS-5, SS-6, SS-7 to per-paper subfolder structure:
-- Create `series_strong/papers/SS-5/`, `series_strong/papers/SS-6/`, `series_strong/papers/SS-7/` with the six standard subfolders each.
-- `git mv` existing artifacts (sketches, reviews, transcripts, problem histories) from their current locations to the appropriate per-paper subfolders.
-- Update any cross-references in `INDEX.md`, `paper_catalog.md`, README files, and the papers themselves (bibliography paths, figure paths).
-
-Approximate effort: 2–3 hours (primary cost is the cross-reference audit and update, not the git mv itself).
-
-**Trigger condition:** Any session where a substantive edit to SS-5, SS-6, or SS-7 is planned anyway (e.g., retroactive §4.1A/B addition per OPEN-ORG-005, or an SS-7 script refactor per OPEN-ORG-006). Migrate the paper being edited at that time, so the migration work piggybacks on work already happening. Three separate opportunistic triggers; migrate one paper at a time rather than all three at once.
-
-*Trigger override (25 April 2026):* Thomas elected to execute the migration as a dedicated batch in this session rather than wait for opportunistic triggers, after the doc-suite folder convention codification (patch 0015) and `.gitignore` baseline (patch 0016) were completed. The opportunistic trigger remains the registered design intent for any future similar deferral; this batch execution is a one-time override.
-
-**Blocking dependencies:** None.
-**Blocks:** Completion of OPEN-ORG-005 and OPEN-ORG-006 for SS-5/6/7 specifically (those items can be done without migration, but combining them is more efficient per this item's trigger condition).
-
-**History:**
-- 22 Apr 2026 — Per-paper subfolder convention adopted.
-- 23 Apr 2026 — Thomas's ruling: "Let's take territory first" — defer migration until SS-8 v0.1 complete.
-- 24 Apr 2026 — Registered here with explicit opportunistic trigger during OPEN-ORG inaugural population.
-- 25 Apr 2026 — **SS-6 migration completed (patch 0018).** Three files migrated: `.tex` and `.pdf` to `series_strong/papers/SS-6/`, and one Claude-correspondence response file (`SS-6_v02_copilot_review_response.md`) to `series_strong/papers/SS-6/letters/`. Five empty subfolders created with `.gitkeep` placeholders (`documentation_suite/`, `founders_voice/`, `reviews/`, `scripts/`, `sketches/`). New `SS-6-README.md` created using the `{scope}-README.md` convention from §11. Cross-references updated in `INDEX.md` (line 57) and `paper_catalog.md` (line 41); both also corrected v0.1 → v0.2 version mismatch noticed during the migration audit. SS-5 and SS-7 remain to be migrated; SS-7 includes the additional task of resolving the v1.1-vs-v1.2 duplicate flagged earlier this session (the v1.2 root copy at `series_strong/SS-7_alpha_cluster_edge_formula.tex` becomes canonical at `series_strong/papers/SS-7/`; the v1.1 papers copy gets archived).
-- 25 Apr 2026 — **SS-5 migration completed (patch 0019).** Substantial migration: 19 file moves total. Eleven files migrated into the new `series_strong/papers/SS-5/` structure: canonical `.tex` and `.pdf` to the SS-5 root; 7 doc-suite files (development, glossary, keywords, mechanism, phenomena, philosophy, reviews) to `documentation_suite/`; `SS-5_development_transcript.md` renamed to `transcript-SS-5.md` during the move (matching the SS-8 lab-notebook-trio convention); `SS-5_session_bootup_prompt.md` to `founders_voice/` (Thomas's documented session-start intent for SS-5 drafting). Eight pre-§11-convention versioned drafts (`_v1`/`_v2`/`_v3`/`_v4`, .tex + .pdf each) archived to new `archive/SS-5_versioned_drafts/` directory with explanatory README rather than brought into the new structure, per §11's "ONE file per paper" rule. Four empty subfolders (`letters/`, `reviews/`, `scripts/`, `sketches/`) carry `.gitkeep` placeholders. New `SS-5-README.md` created. Cross-references updated in `INDEX.md` (3 references) and `paper_catalog.md` (2 references). Notable file-rename judgment: `SS-5_development_transcript.md` → `transcript-SS-5.md` to align with SS-8's `[type]-[S]-[N].md` lab-notebook-trio naming convention; the file's purpose is conceptually identical (multi-session transcript) and the rename eliminates one cross-paper naming asymmetry.
-
----
-
 ## OPEN-ORG-005: Retroactive §4.1A (CP/GP Signature) and §4.1B (Swarm-Validation) subsections in existing papers
 
 **Status:** OPEN — deferred to per-paper opportunistic trigger
@@ -441,22 +408,58 @@ All four were Claude-side execution failures, not protocol specification failure
 
 ---
 
+## OPEN-ORG-004: SS-5, SS-6, SS-7 migration to per-paper subfolder convention
+
+**Status:** RESOLVED — 25 April 2026 (patch 0020 completes SS-7, the third and final paper)
+**Identified:** 23 April 2026, during SS-8 v0.1 pre-drafting planning
+**Priority at resolution:** LOW (existing papers were functional pre-migration; convention applies forward — completion eliminates structural asymmetry between pre-22-April papers and SS-8/future papers)
+
+**Originating context:** Per-paper subfolder convention adopted 22 April 2026 (`operating_system.md` §11). SS-8 was the first paper drafted under the new convention, with `series_strong/papers/SS-8/` containing `sketches/`, `founders_voice/`, `reviews/`, `documentation_suite/`, `letters/`, `scripts/`. Earlier papers (SS-5, SS-6, SS-7) predated the convention and had their artifacts distributed across `series_strong/` at a different level of organization.
+
+**Problem:** Inconsistent organization. A researcher navigating `series_strong/` saw SS-5/SS-6/SS-7 artifacts at one level of structure and SS-8 artifacts at another. When SS-9 or SS-10 were drafted, they would follow SS-8's pattern, widening the asymmetry.
+
+**Resolution path:** Three sequential migrations executed across patches 0018 (SS-6), 0019 (SS-5), and 0020 (SS-7), in increasing order of complexity. SS-6 (3 files) was the warm-up; SS-5 (19 file moves including 8 archived versioned drafts) was the substantial-volume case; SS-7 (30 file moves including v1.1/v1.2 duplicate cleanup) was the most complex. All three migrations completed in a single dedicated session on 25 April 2026.
+
+**Trigger override note (25 April 2026):** OPEN-ORG-004 was originally registered with an opportunistic trigger ("any session where a substantive edit to SS-5, SS-6, or SS-7 is planned anyway"). Thomas elected to execute the migration as a dedicated batch rather than wait for opportunistic triggers, after the doc-suite folder convention codification (patch 0015) and `.gitignore` baseline (patch 0016) made the work straightforward to batch. The opportunistic-trigger discipline remains the registered design intent for any future similar deferral; this batch was a one-time override with explicit Thomas approval.
+
+**Migration summary by paper:**
+
+- **SS-6 (patch 0018, commit shipped via Thomas's apply on 25 April 2026):** Three files migrated. `.tex` and `.pdf` to `series_strong/papers/SS-6/`, and one Claude-correspondence response file to `letters/`. Five empty subfolders with `.gitkeep`. New `SS-6-README.md` using `{scope}-README.md` convention. Cross-references updated in `INDEX.md` and `paper_catalog.md`; v0.1 → v0.2 version mismatch corrected during audit.
+- **SS-5 (patch 0019, shipped via Thomas's apply on 25 April 2026):** Nineteen file moves. Eleven into the new `series_strong/papers/SS-5/` structure (canonical .tex/.pdf, 7 doc-suite files to `documentation_suite/`, `SS-5_development_transcript.md` renamed to `transcript-SS-5.md`, `SS-5_session_bootup_prompt.md` to `founders_voice/`); eight pre-§11-convention versioned drafts (`_v1`/`_v2`/`_v3`/`_v4`, .tex + .pdf each) archived to new `archive/SS-5_versioned_drafts/`. New `SS-5-README.md` and archive subfolder README created.
+- **SS-7 (patch 0020, this entry's resolution):** Thirty file moves. Twenty-five into the new `series_strong/papers/SS-7/` structure (canonical v1.2 .tex/.pdf/.py from `series_strong/` root; 8 doc-suite files to `documentation_suite/`; 8 review-cycle letters to `letters/`; 2 sketches; 1 script; `SS-7_development_transcript.md` renamed to `transcript-SS-7.md`; `SS-7_v1.2_handover.md` renamed to `handover-SS-7.md`; `SS-7_v1.2_transcript.md` and `SS-7_OSF_registration_status.md` placed in `documentation_suite/` without rename). Five files archived to `archive/SS-7_versioned_drafts/`: the v1.1 stale paper trio (.tex/.pdf/.py) per Thomas's instruction during scoping, plus two transient v1.2-cycle artifacts (`SS-7_v1.2_apply_instructions.md`, `0003-SS-7-v1.2-partial-paper-body-notebook-PH.patch`). New `SS-7-README.md` and archive README created. INDEX.md and paper_catalog.md cross-references updated; INDEX.md was missing SS-7 entirely (catalog staleness finding), corrected during audit by adding the SS-7 row + including SS-7 in the pending-papers list.
+
+**Cumulative migration totals:** 52 file moves across the three migrations, 3 new paper-folder READMEs, 2 new archive subfolder READMEs, 13 .gitkeep placeholders, ~18 cross-reference updates in `INDEX.md` and `paper_catalog.md`. Three pre-§11-convention naming-asymmetry issues resolved by rename during migration: `SS-5_development_transcript.md` → `transcript-SS-5.md`, `SS-7_development_transcript.md` → `transcript-SS-7.md`, `SS-7_v1.2_handover.md` → `handover-SS-7.md`.
+
+**Naming inconsistencies preserved as audit findings (deferred):** `SS-7_v1.2_transcript.md` retains its version-suffixed name (sits in `documentation_suite/` next to `transcript-SS-7.md`); the two are non-overlapping in scope (broader v0.1→v1.1 narrative vs. v1.2-cycle-specific narrative). The version-suffix violates §11's no-version-suffix-in-filename rule for paper files but the rule does not strictly bind transcript files. Consolidation into a single transcript file or further renaming is left for a future session if desired; not a forcing concern.
+
+**Closing commit reference:** patch 0020 in this session, commit `[hash assigned at commit time]`. SS-7 is the third and final paper in OPEN-ORG-004's scope.
+
+**History:**
+- 22 Apr 2026 — Per-paper subfolder convention adopted.
+- 23 Apr 2026 — Thomas's ruling: "Let's take territory first" — defer migration until SS-8 v0.1 complete.
+- 24 Apr 2026 — Registered here with explicit opportunistic trigger during OPEN-ORG inaugural population.
+- 25 Apr 2026 — SS-6 migration completed (patch 0018, 3 files).
+- 25 Apr 2026 — SS-5 migration completed (patch 0019, 19 files including 8 archive moves).
+- 25 Apr 2026 — RESOLVED via patch 0020 with SS-7 migration (30 files including 5 archive moves; v1.1/v1.2 duplicate cleanup completed). All three papers in OPEN-ORG-004's scope are now under the per-paper subfolder convention; structural asymmetry between pre-22-April papers and SS-8/future papers eliminated.
+
+---
+
 # §4 — Statistics
 
-**As of 25 April 2026 (after patch 0019 SS-5 migration; OPEN-ORG-004 2-of-3 done):**
-- Open: 7
-- In-progress: 1 (OPEN-ORG-004 — SS-6 done, SS-5 done; SS-7 remaining)
-- Resolved: 2 (OPEN-ORG-007, OPEN-ORG-008)
+**As of 25 April 2026 (after patch 0020 SS-7 migration; OPEN-ORG-004 RESOLVED):**
+- Open: 6
+- In-progress: 0
+- Resolved: 3 (OPEN-ORG-004, OPEN-ORG-007, OPEN-ORG-008)
 - Deferred indefinitely: 0
 
 **By priority:**
 - HIGH: 0
 - MEDIUM: 2 (OPEN-ORG-003, OPEN-ORG-009)
-- LOW: 6 (OPEN-ORG-001, -002, -004, -005, -006, -010)
+- LOW: 5 (OPEN-ORG-001, -002, -005, -006, -010)
 
 **By trigger type:**
 - Between-paper: 1 (OPEN-ORG-001)
 - Threshold-triggered: 1 (OPEN-ORG-002)
 - Milestone-triggered: 1 (OPEN-ORG-003)
-- Opportunistic: 4 (OPEN-ORG-004 [in-progress], -005, -006, -010)
+- Opportunistic: 3 (OPEN-ORG-005, -006, -010)
 - Dedicated execution session: 1 (OPEN-ORG-009)
