@@ -12,7 +12,21 @@
 
 **AI assistant does:**
 
-### Step 1: Read these files IN ORDER
+### Step 0 — BEFORE READING ANYTHING ELSE: clone the repo locally
+
+Every file referenced in this guide lives in the CPP repo. Many Claude session environments have a fetcher with a URL whitelist that rejects `raw.githubusercontent.com` sub-paths even within domains the session has already touched — the bootup file itself can be fetched (because the user pasted that exact URL), but every subsequent file referenced inside the bootup will return a permissions error. The reliable access path is `git clone`, then read locally via view/bash. `github.com` is in the standard allowed-domains list for Claude container environments with a bash tool.
+
+Run this first, in the container working directory (typically `/home/claude`):
+
+    git clone https://github.com/Hyperphysics-Institute/CPP.git
+    cd CPP
+    git pull   # if the repo was cloned in an earlier turn
+
+After cloning, every subsequent file referenced in this bootup (and in §8.5, and in every handover document) is read from the local clone using filesystem tools — NOT via web_fetch. URL patterns shown in this document and in §8.5 are reference paths; the actual reads happen against the cloned working tree.
+
+If `git clone` fails (no bash tool, network restriction, github.com unreachable), STOP and tell Thomas — do not attempt to bootstrap by fetching individual `raw.githubusercontent` URLs. That path works for the bootup file itself and then fails opaquely on everything downstream.
+
+### Step 1: Read these files IN ORDER (from the local clone)
 
 | Priority | File | What it gives you | Time |
 |----------|------|-------------------|------|
@@ -30,16 +44,19 @@
 
 ### Step 2: Check what happened last
 
-- **If Thomas names a specific paper (e.g., "SS-8", "SS-2", "SM-10"), first fetch its curated development transcript:**
-  `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/development-SS-8.md`
-  (replace `series_strong` with the appropriate series folder per §8.5 below, and `SS-8` with the paper ID)
-  This file is the **canonical narrative record** of that paper's development, preserved verbatim at each section-end commit per `operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §8.5 below for the full rule.
-- Development transcripts now live per-paper at `series_[name]/papers/development-[ID].md`. If no paper is named, check `/mnt/transcripts/` for raw conversation logs instead.
+- **If Thomas names a specific paper (e.g., "SS-8", "SS-2", "SM-10"), first read its session-handover document from your local clone.** Per-paper-subfolder pattern (current convention, papers adopted ≥ 22 Apr 2026):
+  `series_strong/papers/SS-8/documentation_suite/handover-SS-8.md`
+  Legacy-flat pattern (older papers):
+  `series_strong/papers/development-SS-8.md`
+  (replace `series_strong` with the appropriate series folder per §8.5 below, and `SS-8` with the paper ID.)
+  The handover (or its legacy-flat predecessor) is the **canonical session-continuity state record**, preserved verbatim at each session close per `templates/operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §8.5 below for the full rule.
+- Per-paper subfolders also contain `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map). The handover is the one to read first; the others are deeper context if needed.
+- If no paper is named, check `/mnt/transcripts/` for raw conversation logs.
 - Check if Thomas has Grok/Copilot exchanges to share.
 
 ### Step 3: Proceed with the queued work
 
-Unless Thomas redirects in his opening message, proceed with the next-session items listed at the end of the development transcript fetched in Step 2. A development transcript whose final section is titled something like "Open items for next session" or "Next-session task list" is giving you the default action. Execute it. If the transcript has no such list, or if Thomas's opening message gives a different direction, follow that instead.
+Unless Thomas redirects in his opening message, proceed with the next-session items listed at the end of the handover document read in Step 2. A handover whose final section is titled something like "Ready-to-execute work for next session" or "Next-session task list" is giving you the default action. Execute it. If the handover has no such list, or if Thomas's opening message gives a different direction, follow that instead.
 
 ### If resuming after buffer overflow:
 
@@ -54,6 +71,8 @@ Conscious Point Physics derives the Standard Model from the geometry of the 600-
 ---
 
 ## 2. Repository Location and Access
+
+**Step 0 of the bootup** is to run `git clone https://github.com/Hyperphysics-Institute/CPP.git` in the container working directory. If you have not yet cloned, stop reading this file and clone now — see the Step 0 block in the "How to Use This File" section above for rationale.
 
 ```
 GitHub: https://github.com/Hyperphysics-Institute/CPP
@@ -224,24 +243,24 @@ Do not rely on bootup for the open-problem list. Active problems are created, re
 
 ---
 
-## 8.5 Active Work Pointer — fetch the paper's handover document first
+## 8.5 Active Work Pointer — read the paper's handover document first
 
-**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), fetch that paper's session-handover document as the first concrete action, BEFORE attempting any substantive work.**
+**When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), read that paper's session-handover document from your local clone as the first concrete action, BEFORE attempting any substantive work. (Per Step 0 you should already have a local clone — if not, clone now.)**
 
-### URL patterns
+### Path patterns (repo-relative, read with view/bash from the local clone)
 
 Two patterns are currently in use. Try the per-paper-subfolder pattern first (used for papers adopted 22 April 2026 forward); fall back to the legacy-flat pattern (used for earlier papers).
 
 **Per-paper-subfolder pattern (current convention):**
 
 ```
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md
+<series-folder>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md
 ```
 
 **Legacy-flat pattern (pre-22-April papers):**
 
 ```
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/development-<PAPER-ID>.md
+<series-folder>/papers/development-<PAPER-ID>.md
 ```
 
 where `<series-folder>` is one of:
@@ -254,12 +273,21 @@ where `<series-folder>` is one of:
 
 Example (SS-8, using current per-paper-subfolder pattern):
 ```
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/SS-8/documentation_suite/handover-SS-8.md
+series_strong/papers/SS-8/documentation_suite/handover-SS-8.md
 ```
 
 Example (SM-8, using legacy-flat pattern):
 ```
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_standard_model/papers/development-SM-8.md
+series_standard_model/papers/development-SM-8.md
+```
+
+### Equivalent raw URLs (reference only — for documentation, citation, and external readers)
+
+The same files served via raw GitHub. **Do not use these as the access path inside a Claude session; the fetcher whitelist will reject them after the bootup file itself.** Use the local clone.
+
+```
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/development-<PAPER-ID>.md
 ```
 
 ### Why this matters
@@ -277,7 +305,7 @@ The handover is a bounded state snapshot — a few hundred lines, not a full nar
 
 ### If no handover document exists yet for the named paper
 
-Some papers haven't reached the handover-document stage yet. If both fetch patterns return 404, fall back to:
+Some papers haven't reached the handover-document stage yet. If both paths above resolve to absent files in the local clone, fall back to:
 1. The paper's `.tex` file and its internal CHANGELOG header.
 2. `Research_Frontier.md` for related open problems.
 3. Ask Thomas directly: "I don't see a handover or development document for this paper in the repo — can you point me to where the current state lives?"
