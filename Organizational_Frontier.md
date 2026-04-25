@@ -167,7 +167,7 @@ Approximate effort: 1–2 hours including initial audit to count existing predic
 
 ## OPEN-ORG-004: SS-5, SS-6, SS-7 migration to per-paper subfolder convention
 
-**Status:** IN-PROGRESS — SS-6 completed 25 April 2026 (patch 0018); SS-5 and SS-7 remaining
+**Status:** IN-PROGRESS — SS-6 completed 25 April 2026 (patch 0018); SS-5 completed 25 April 2026 (patch 0019); SS-7 remaining
 **Identified:** 23 April 2026, during SS-8 v0.1 pre-drafting planning
 **Priority:** LOW (existing papers functional; convention applies forward)
 
@@ -194,6 +194,7 @@ Approximate effort: 2–3 hours (primary cost is the cross-reference audit and u
 - 23 Apr 2026 — Thomas's ruling: "Let's take territory first" — defer migration until SS-8 v0.1 complete.
 - 24 Apr 2026 — Registered here with explicit opportunistic trigger during OPEN-ORG inaugural population.
 - 25 Apr 2026 — **SS-6 migration completed (patch 0018).** Three files migrated: `.tex` and `.pdf` to `series_strong/papers/SS-6/`, and one Claude-correspondence response file (`SS-6_v02_copilot_review_response.md`) to `series_strong/papers/SS-6/letters/`. Five empty subfolders created with `.gitkeep` placeholders (`documentation_suite/`, `founders_voice/`, `reviews/`, `scripts/`, `sketches/`). New `SS-6-README.md` created using the `{scope}-README.md` convention from §11. Cross-references updated in `INDEX.md` (line 57) and `paper_catalog.md` (line 41); both also corrected v0.1 → v0.2 version mismatch noticed during the migration audit. SS-5 and SS-7 remain to be migrated; SS-7 includes the additional task of resolving the v1.1-vs-v1.2 duplicate flagged earlier this session (the v1.2 root copy at `series_strong/SS-7_alpha_cluster_edge_formula.tex` becomes canonical at `series_strong/papers/SS-7/`; the v1.1 papers copy gets archived).
+- 25 Apr 2026 — **SS-5 migration completed (patch 0019).** Substantial migration: 19 file moves total. Eleven files migrated into the new `series_strong/papers/SS-5/` structure: canonical `.tex` and `.pdf` to the SS-5 root; 7 doc-suite files (development, glossary, keywords, mechanism, phenomena, philosophy, reviews) to `documentation_suite/`; `SS-5_development_transcript.md` renamed to `transcript-SS-5.md` during the move (matching the SS-8 lab-notebook-trio convention); `SS-5_session_bootup_prompt.md` to `founders_voice/` (Thomas's documented session-start intent for SS-5 drafting). Eight pre-§11-convention versioned drafts (`_v1`/`_v2`/`_v3`/`_v4`, .tex + .pdf each) archived to new `archive/SS-5_versioned_drafts/` directory with explanatory README rather than brought into the new structure, per §11's "ONE file per paper" rule. Four empty subfolders (`letters/`, `reviews/`, `scripts/`, `sketches/`) carry `.gitkeep` placeholders. New `SS-5-README.md` created. Cross-references updated in `INDEX.md` (3 references) and `paper_catalog.md` (2 references). Notable file-rename judgment: `SS-5_development_transcript.md` → `transcript-SS-5.md` to align with SS-8's `[type]-[S]-[N].md` lab-notebook-trio naming convention; the file's purpose is conceptually identical (multi-session transcript) and the rename eliminates one cross-paper naming asymmetry.
 
 ---
 
@@ -442,9 +443,9 @@ All four were Claude-side execution failures, not protocol specification failure
 
 # §4 — Statistics
 
-**As of 25 April 2026 (after patch 0018 SS-6 migration):**
+**As of 25 April 2026 (after patch 0019 SS-5 migration; OPEN-ORG-004 2-of-3 done):**
 - Open: 7
-- In-progress: 1 (OPEN-ORG-004 — SS-6 done; SS-5, SS-7 remaining)
+- In-progress: 1 (OPEN-ORG-004 — SS-6 done, SS-5 done; SS-7 remaining)
 - Resolved: 2 (OPEN-ORG-007, OPEN-ORG-008)
 - Deferred indefinitely: 0
 

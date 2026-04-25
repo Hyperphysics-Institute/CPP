@@ -53,7 +53,7 @@ The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucle
 | `SS-3_su3_uniqueness.tex/.pdf` | **SS-3** (v1.3) — SU(3) uniqueness from tetrahedral cage |
 | `SS-3_su3_uniqueness.py` | Numerical verification (5 checks) |
 | `SS-4_string_tension.tex/.pdf` | **SS-4** (v0.1) — String tension from face-mode multiplicity, $\sigma = M_0 z^2/(\varphi\,l_\text{edge}) = 926.5$ MeV/fm |
-| `SS-5_light_nuclei_open_vertex_cascade.tex/.pdf` | **SS-5** (v6) — Light-nuclei binding via open-vertex cascade; $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ at $\leq 5.3\%$ error, zero params; $^5$He, $^5$Li, $^8$Be unbound predictions |
+| `SS-5/SS-5_light_nuclei_open_vertex_cascade.tex/.pdf` | **SS-5** (v6) — Light-nuclei binding via open-vertex cascade; $B_d, B_{^3H}, B_{^3He}, B_{^4He}$ at $\leq 5.3\%$ error, zero params; $^5$He, $^5$Li, $^8$Be unbound predictions. Per-paper subfolder per §11 convention. |
 | `SS-6/SS-6_deuteron_observables_beyond_binding.tex/.pdf` | **SS-6** (v0.2) — Deuteron observables beyond binding (scoping): rigid-bipyramid intrinsic $Q_d$ oblate (reveals $Q_d$ orbital-dominated); zero-range $a_{np} = 1/\kappa = 4.32$ fm from $B_d$ alone. Per-paper subfolder per §11 convention. |
 | `cpp_strong_series.bib` | Bibliography |
 
@@ -61,12 +61,12 @@ The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucle
 SS-2: `mechanism-SS-2.md`, `glossary-SS-2.md`, `phenomena-SS-2.md`, `philosophy-SS-2.md`, `development-SS-2.md`, `reviews-SS-2.md`, `keywords-SS-2.md`
 SS-3: `mechanism-SS-3.md`, `glossary-SS-3.md`, `phenomena-SS-3.md`, `philosophy-SS-3.md`, `development-SS-3.md`, `reviews-SS-3.md`, `keywords-SS-3.md`, `FAQ-SS-3.md`
 SS-4: documentation suite pending
-SS-5: `mechanism-SS-5.md`, `glossary-SS-5.md`, `phenomena-SS-5.md`, `philosophy-SS-5.md`, `keywords-SS-5.md`, `development-SS-5.md`, `reviews-SS-5.md` (all at v6 header currency)
+SS-5: 7 doc-suite files in `series_strong/papers/SS-5/documentation_suite/` (mechanism, glossary, phenomena, philosophy, keywords, development, reviews — all at v6 header currency); plus `transcript-SS-5.md` (renamed from `SS-5_development_transcript.md` during patch 0019 migration)
 SS-6: documentation suite pending
 
 **Notebooks:** 12 notebooks in `notebooks/` (confinement, hadron spectrum, magnetic moments, etc.) + `SS-2_lattice_scale_nucleon.py` + `SS-3_su3_uniqueness.py`
 
-**Development transcripts:** `SS-2_development_transcript_opus.md`, `SS-5_session_bootup_prompt.md`, `SS-5_development_transcript.md` (new, 18 April 2026)
+**Development transcripts:** `SS-2_development_transcript_opus.md`, `series_strong/papers/SS-5/founders_voice/SS-5_session_bootup_prompt.md`, `series_strong/papers/SS-5/documentation_suite/transcript-SS-5.md` (renamed from `SS-5_development_transcript.md` via patch 0019)
 
 ---
 
