@@ -212,6 +212,21 @@ The full journey of each major open problem — from identification through wron
 
 ---
 
+## [`session_logs/`](session_logs/) — Cross-Paper Session Logs
+
+Running journal for cross-paper work — sessions that touch programme-level infrastructure (registries, bootup, OS), produce policy/methodology decisions, span multiple papers, or carry post-completion addenda for prior papers. Established 26 April 2026 per the Two-Trigger Documentation Discipline (`templates/operating_system.md` §4).
+
+| File | Topic |
+|------|-------|
+| `README.md` | Convention description and indexing |
+| `2026-04-25_session_log.md` | Bootup stress-test (patches 0022–0023); OPEN-ORG-003 swarm-tally audit (patches 0024–0026); SS-8 v1.0 paper-completion Session 1 (patch 0027) |
+| `2026-04-25_session_log_2.md` | (continuation) SS-8 v1.0 documentation suite (patch 0028) |
+| `2026-04-26_session_log.md` | SS-8 v1.0 Session 2 medium-priority (patch 0029); Phase 7 Completion Gate adoption-then-repeal; Two-Trigger Discipline + Cross-Paper Session Log convention (patch 0030) |
+
+**Per-paper continuity files** (`handover-[S]-[N].md`, `transcript-[S]-[N].md`, `development-[S]-[N].md`) live alongside each paper in `series_*/papers/[S]-[N]/documentation_suite/` per `operating_system.md` §11. The session log folder is for the cross-cutting work that doesn't fit those files.
+
+---
+
 ## [`archive/`](archive/) — Superseded and Exploratory Material
 
 | Directory | Content |

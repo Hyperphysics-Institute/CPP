@@ -344,28 +344,73 @@ If a new atomic task needs to be added to the Phase 7 pipeline, add it to `templ
 
 ---
 
-### Phase 7 Completion Gate (adopted 26 April 2026) — *do not start a new paper until the prior paper's Phase 7 is closed*
+### Documentation Discipline — Two Triggers (adopted 26 April 2026, revised same day)
 
-**The rule.** A new paper does not enter Phase 1 until the prior paper's Phase 7 is complete. "Complete" means every applicable item on `templates/paper_completion_checklist.md` is checked or has a documented exception (e.g., OSF registration deferred per Section F's failure-mode allowance). The gate applies whether the prior paper is in the same series or a different one — it is a programme-wide ordering constraint, not a per-series one.
+**The discipline has two triggers, each addressing a real data-loss surface.**
 
-**The rationale (Thomas's policy point, 26 April 2026 session).** *"The development context only exists while the session-window holds it; once a fresh window opens for the next paper, the prior paper's review-cycle texture, decision rationale, and Thomas-verbatim physical insights become inaccessible except through whatever artifacts get written down."* Phase 7 is the act of writing those artifacts. If Phase 7 is deferred until "after the next paper," in practice it does not happen — the context is gone and what gets written is reconstruction, not preservation. The cost of that reconstruction is not measurable in pages; it is measurable in the loss of the in-moment honesty that the development-vignette discipline (`operating_system.md` §11.2) is specifically designed to preserve.
+#### Trigger 1: Context-window full / session ending
 
-**Empirical basis.** Three failures of pre-26-April-2026 practice motivate the gate:
-- **SS-5 v6 reviews-SS-5.md body still pending.** Per `paper_catalog.md` Documentation Status (line 49), reviews-SS-5.md has a status table updated to v6 but body sections for the v4 stress-test and the Copilot review still pending. The v4 → v5 → v6 cycle ran in late April; by the time SS-6, SS-7, and SS-8 had each consumed reviewer attention, the SS-5 reviewer-narrative texture was no longer easily reconstructable.
-- **SS-6 documentation suite pending entirely.** SS-6 v0.2 has been complete since 18 April 2026; its companion documentation suite has not been written, and as of SS-8 v1.0 (24 April) the SS-6 mechanism-narrative would have to be reconstructed from the .tex itself rather than from the development context.
-- **SS-7 INDEX.md omission undetected for the entire SS-7 development arc.** Per `paper_catalog.md` row 49 and the patch 0017 audit, SS-7 was missing from `INDEX.md` from v0.1 through v1.2 — a registry omission that would have been caught by Phase 7 at v0.1 close but was instead caught two paper cycles later by an unrelated audit.
+When a session is closing — context window approaching capacity, time running out, fresh-eyes-needed checkpoint — write enough that the next session can resume cleanly. This is the *session-window-bounded data-loss trigger*: the in-moment thinking, the decision rationale, the Thomas-verbatim physical insights, the unfinished thread that will be picked up next session. None of this survives the window close unless it is written down.
 
-Each failure mode shares a structure: Phase 7 was not run at the prior paper's v1.0 close; the next paper began; the prior paper's documentation gaps became dormant technical debt that surfaced later under a different audit's lens.
+**For per-paper work:** Update the paper's `handover-[S]-[N].md` (current state) and `transcript-[S]-[N].md` (transaction-indexed pointer-map) per §11. Append a development vignette to `development-[S]-[N].md` if substantive thinking happened in the session. These three files are the per-paper continuity discipline; §11 specifies them in detail.
 
-**What this means in practice.**
-- When a paper reaches v1.0, the next session executes `templates/paper_completion_checklist.md` against it before any work on a new paper begins. Companion documentation suite (Section A), verification notebooks (Section B), all 12 registry updates (Section C), 3 navigation updates (Section D), and development transcripts (Section E) are required. OSF registration (Section F) and final verification (Section H) are required but may be deferred to the next-paper-side handoff under the §F failure-mode allowance (network, permissions, push authentication).
-- The "Session 1 / Session 2" decomposition introduced during the SS-8 paper-completion work is allowed: high-priority registry + navigation updates first (Session 1), then 7-file documentation suite (Session 2), then medium-priority items (master_glossary, problem_histories, theory-overview, founders_vision, CPP_the_theory). Both sessions are required before the next paper begins; only the sequencing within Phase 7 is flexible.
-- A new-paper drafting session that opens with the prior paper's Phase 7 incomplete is itself a Phase 7 execution session — the new-paper work waits.
-- Exceptions require explicit Thomas-side authorization with the deferred items registered as `OPEN-ORG-*` debt entries in `Organizational_Frontier.md`. The default is no exception.
+**For cross-paper work:** Write or append to a cross-paper session log per the discipline below. Cross-paper work means anything that touches the programme outside any single paper's scope: registry audits, bootup-protocol failures, programme-policy decisions, methodological discipline introductions, multi-paper integration sessions.
 
-**Recovery from prior incompleteness.** Papers that completed their v1.0 milestone before 26 April 2026 with incomplete Phase 7 (notably SS-5 reviews-body pending, SS-6 suite pending entirely, SS-4 suite pending) are tracked under OPEN-ORG-005 (retroactive Phase 7 completion). The gate does not retroactively block forward work — it applies prospectively from 26 April 2026. SS-9 inherits the gate at its own v1.0 close.
+#### Trigger 2: Paper finished, ready for publication
 
-**Why this is a hard rule rather than a soft recommendation.** Soft recommendations have a documented failure mode in this programme (the three empirical cases above are all instances of "we'll do it later" in practice not happening). Phase 7 work is also predictable in scope and schedulable in advance — there is no benefit to deferring it that justifies the documented cost. The gate matches the evidence.
+When a paper has reached its publication-ready state — passed external review, no mechanism-changing critiques pending, ready for OSF registration — execute the full Phase 7 paper-completion checklist (`templates/paper_completion_checklist.md`). This is the *publication-readiness completion trigger*: the comprehensive archive entry that future researchers and historians will find when they look up the paper.
+
+The Phase 7 checklist work — companion documentation suite, master_glossary updates, problem_histories, theory-overview row, founders_vision milestone, CPP_the_theory chapter — is overhead. It buys posterity value, not programme-development value. The discipline accepts this overhead at Trigger 2 because the publication-readiness moment is when the paper crystallises into its archived form, and that is when comprehensive documentation has the highest fidelity-to-cost ratio.
+
+**Trigger 2 does not gate the next paper.** A new paper can enter Phase 1 while the prior paper's Trigger 2 work is in progress. The two-trigger discipline does not impose a programme-wide ordering constraint. The earlier "Phase 7 Completion Gate" framing (codified briefly on 26 April 2026, repealed same day) was rejected as too strong: it imposed a throughput tax that did not match the actual data-loss surface.
+
+**Trigger 2 fires at the genuinely-final-version mark, not at any v1.x mark.** The OPEN-SS-22 retirement experience (SS-7 v1.1 → v1.2, where v1.1 looked finished but turned out to need substantive revision after SS-8 Phase 1 work) shows that "ready for publication" is a judgment call. Premature Trigger 2 firing on a paper that turns out to need revision generates rework cost; deferred Trigger 2 firing on a paper that genuinely is done loses no information because the per-session Trigger 1 work captures everything that's session-window-bounded. Default to deferring Trigger 2 until the paper is unambiguously done.
+
+#### Why this discipline rather than a v1.0 hard gate
+
+The purpose of the documentation is for posterity, not for development. Future researchers and historians who someday study this programme will want to see how it developed; the documentation is for them. The two-trigger discipline preserves what is actually session-window-bounded (the verbatim discovery passages, the in-moment thinking, the decision rationale) while letting the registry/scorecard work happen on a schedule that fits the programme's pace.
+
+A hard v1.0 gate would force Phase 7 work at every v1.0 close, which compounds across many papers into a substantial throughput tax. The benefit (historian convenience) does not justify the cost at every paper. The two-trigger discipline accepts the same posterity goal but matches the discipline to the actual data-loss surface, taking the overhead only when the data is genuinely at risk.
+
+**Empirical basis for the discipline.** Three failures of soft-recommendation practice motivated the original v1.0-gate codification: SS-5 reviews-SS-5.md body still pending; SS-6 documentation suite pending entirely; SS-7 INDEX.md omission undetected through the full development arc. These failures remain real evidence that documentation discipline matters. The two-trigger discipline addresses them by ensuring (a) per-session work captures session-window-bounded context whether or not the paper is at v1.0, and (b) Trigger 2 fires when the paper is genuinely done. The three failures are tracked under OPEN-ORG-005 (retroactive Phase 7 completion) and would be addressed by either retroactive Trigger 2 work on those papers or by Trigger 1 session-log addenda referencing the gaps.
+
+---
+
+### Cross-Paper Session Log Convention (adopted 26 April 2026)
+
+**Purpose.** A running journal for cross-paper work. Sessions that span multiple papers, that touch programme-level infrastructure (registries, bootup, OS), or that produce policy/methodology decisions don't fit cleanly under any single paper's `handover-[S]-[N].md` and `transcript-[S]-[N].md`. The session log is where they live.
+
+**Location.** `session_logs/` at the repository root. Treats the log as first-class programme infrastructure, parallel to `problem_histories/`. Visible from the top-level directory listing; findable without bootup-protocol guidance.
+
+**Naming.** `YYYY-MM-DD_session_log.md` for the default case (one session per day). When a day has multiple sessions, append a topic suffix: `YYYY-MM-DD_session_log_[topic].md`. Files are date-sortable; the optional topic suffix disambiguates cross-paper-vs-bootup-protocol sessions on the same day.
+
+**What goes in a session log.**
+- Cross-paper audit/registry work (e.g., the OPEN-ORG-003 swarm-tally audit that touched 25+ files across all series).
+- Bootup-protocol failures and recoveries (e.g., the 25 April 2026 bootup-stress-test that surfaced OPEN-ORG-009).
+- Programme-policy decisions (e.g., the Phase 7 Completion Gate adoption-then-repeal on 26 April 2026; the PD-001 audit-pass methodology codification; the PD-002 verification-tier discipline introduction).
+- Methodological discipline introductions (e.g., the 22 April 2026 Q2 algebraic-reduction analysis that produced the Level-1/2/3 independence methodology).
+- Multi-paper integration sessions (e.g., a session that draws connections across SS-5/SS-7/SS-8 cascade structure).
+- Post-paper-completion addenda — corrections, reviewer comments, retroactive discoveries, methodology refinements that update prior papers — see "Post-completion addendum workflow" below.
+
+**What does NOT go in a session log.** Per-paper work belongs in the paper's `handover-[S]-[N].md` and `transcript-[S]-[N].md`. Substantive paper development belongs in `development-[S]-[N].md` vignettes. The session log is for the cross-cutting work that doesn't fit those files.
+
+**Format.** Date-stamped sections within each log file. Each section names the topic (audit work, bootup recovery, policy decision, etc.), the artefacts produced (patches, files, registry updates), and the unfinished threads that will be picked up next session if any. The format follows the §11.2 vignette discipline: in-moment thinking captured at the time of the session and not retroactively edited when later work proves the framing partially wrong. If a later session updates the understanding, the next session's log entry records the update; the prior entry stays as written.
+
+**Indexing.** Add new session logs to `INDEX.md` under a "Cross-paper session logs" sub-section so they are findable from the navigation file. Consider also referencing them from `journal.txt` if that file is being maintained.
+
+**When to start a new session log file.** Each calendar day that contains cross-paper work gets its own log file. Multi-day continuous work (e.g., a 25–26 April session arc spanning midnight) splits at the calendar-day boundary with cross-references between consecutive files.
+
+#### Post-completion addendum workflow
+
+The session log enables a low-cost path for post-completion paper updates. When something arrives that updates a prior paper after its Trigger 2 has already fired (a reviewer comment, a discovered error, a new connection to a later paper, a methodology refinement that retroactively applies, an empirical update to AME data), the addendum has two paths:
+
+**Path A — session log only (low cost, always required).** Record the addendum in the current session log under a "Post-completion addendum" subsection naming the affected paper(s). Cross-reference the relevant per-paper artefact (e.g., `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` v1.2). The addendum is permanent and findable. This path is required.
+
+**Path B — full integration into distributed archives (higher cost, optional).** Append the addendum to the affected paper's documentation suite (mechanism-/glossary-/phenomena-/philosophy-/reviews-/keywords-/FAQ-), update master_glossary if new terminology emerged, update CPP_the_theory chapter if the addendum changes the narrative content, update theory-overview if the scorecard shifts. This path is optional; whether to take it depends on the addendum's significance. A small reviewer-comment addendum stays at Path A; a methodology refinement that retroactively reframes a paper's central result probably warrants Path B.
+
+The discipline separates two concerns the v1.0-gate model had conflated: *recording the addendum* (always required, low cost) from *integrating the addendum into distributed archives* (sometimes worthwhile, higher cost, deferrable). Path A is the safety net; Path B is the polish.
+
+**Default rule:** if you're uncertain whether a post-completion addendum warrants Path B, take Path A only and record the Path B question explicitly in the session log. A future session can decide whether to upgrade. Recording is cheap; rework is expensive.
 
 ---
 

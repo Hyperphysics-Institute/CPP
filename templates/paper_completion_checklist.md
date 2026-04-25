@@ -32,17 +32,20 @@ external review AND no mechanism-changing critiques are pending. If any
 of these are not met, do NOT execute this checklist; return to Phase 2
 or Phase 4 of `operating_system.md` §4.
 
-**⚠️ Phase 7 Completion Gate (adopted 26 April 2026):** *No new paper enters
-Phase 1 until this checklist is closed for the prior paper.* See
-`operating_system.md` §4 "Phase 7 Completion Gate" for the full rule and
-rationale. The gate is enforced because deferred Phase 7 work in this
-programme has historically not happened — the development context is
-session-window-bounded and reconstruction loses the in-moment honesty the
-documentation suite is designed to preserve. Three empirical failures
-(SS-5 reviews-body pending, SS-6 suite pending entirely, SS-7 INDEX
-omission undetected for the full development arc) motivate the gate.
-Exceptions require explicit Thomas-side authorization with deferred items
-registered as `OPEN-ORG-*` debt entries.
+**Documentation Discipline — Two Triggers (revised 26 April 2026):** This
+checklist is the *Trigger 2* work — execute it when the paper is finished
+and ready for publication. It does NOT gate the next paper's start. The
+brief "Phase 7 Completion Gate" framing codified earlier on 26 April 2026
+was repealed the same day; see `operating_system.md` §4 "Documentation
+Discipline — Two Triggers" for the discipline now in force. The
+session-window-bounded data-loss surface is addressed by *Trigger 1*
+(per-paper continuity files at session close per §11; cross-paper session
+logs in `session_logs/` for cross-paper work). Trigger 2 fires at the
+genuinely-final-version mark — defer firing on a paper that may still
+need revision (the OPEN-SS-22 retirement experience shows v1.x can turn
+out to need substantive revision). Default to deferring Trigger 2 until
+the paper is unambiguously done; the per-session Trigger 1 work captures
+session-window-bounded context whether or not Trigger 2 has fired.
 
 **Deliverables:** 7 companion documentation files + N verification
 notebooks + updates to up to 12 registry files + updates to 3 navigation
