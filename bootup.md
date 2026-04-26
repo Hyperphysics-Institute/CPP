@@ -84,6 +84,40 @@ Web:   https://hyperphysics.com
 
 Always `git pull` before starting work. Thomas pushes frequently.
 
+### Thomas's local working path and the `git am` commit flow
+
+When Claude generates files, patches, or document edits during a session, Thomas commits them from his local clone — NOT from the Claude container. The container is ephemeral; Thomas's local clone is the source of truth that gets pushed to GitHub.
+
+**Standard local path (Thomas's machine):**
+
+```
+~/Documents/GitHub/CPP
+```
+
+**Standard commit flow for Claude-generated patches.** Claude produces git mailbox-format patch files (numbered `00NN-description.patch`) that Thomas downloads to `~/Downloads/` and applies via `git am`. This preserves authorship, timestamps, and commit messages exactly as Claude composed them, with a single command on Thomas's end:
+
+```
+cd ~/Documents/GitHub/CPP
+git am ~/Downloads/00NN-description.patch
+git push origin main
+```
+
+For multiple patches in sequence (this is the common case — a session typically produces 2–6 patches), apply each in order:
+
+```
+cd ~/Documents/GitHub/CPP
+git am ~/Downloads/0034-first-patch.patch
+git am ~/Downloads/0035-second-patch.patch
+git am ~/Downloads/0036-third-patch.patch
+git push origin main
+```
+
+**Patch numbering convention.** Continue from the highest existing patch number in the repo's commit history. Use `git log --oneline | head -20` to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. As of 26 April 2026 Session 2, the highest committed patch was 0033.
+
+**When `git am` flow is NOT appropriate.** For trivial single-line edits Thomas wants to make himself, or for files Claude generates that don't need preserved authorship metadata, the simpler `git add` + `git commit` + `git push` flow can be used instead. Claude defaults to `git am` for any substantive deliverable (file additions, multi-line edits to existing files, anything with a meaningful commit message).
+
+**When to use the in-container clone vs. Thomas's local clone.** Claude reads files from the in-container clone at `/home/claude/CPP` (or wherever Step 0 placed it). Claude does NOT push to the in-container clone; the in-container clone is read-only from Thomas's perspective. All commits and pushes happen from Thomas's local clone at `~/Documents/GitHub/CPP` after the patches are downloaded and applied via `git am`.
+
 ---
 
 ## 3. Complete Repository Structure
