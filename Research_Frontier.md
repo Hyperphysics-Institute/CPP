@@ -352,6 +352,51 @@ Problems with no candidate solution, or where candidate solutions have been expl
 
 ---
 
+### OPEN-SS-29: Programme-Level Closure of C5 (Ground-State Energy Minimization)
+**Status:** OPEN — registered as candidate, pending ratification (registered 26 April 2026 Session 2 in SS-9 Phase 1 v0.2 working draft scaffold)
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM-HIGH
+**One-line statement:** Derive C5 (the bound alpha-cluster ground state minimizes total energy among physically realizable rigid-tetrahedral packing configurations) from CPP primitives A1–A11 without importing energy minimization as a structural assumption.
+**What a solution looks like:** A CPP derivation establishing that the lattice-level dynamics of A1–A11 — Conscious Points executing the Polarize-Capture-Depolarize cycle on the 600-cell substrate — drives bound configurations to global energy minima rather than metastable local minima. Likely path: show that the SS-7 binding formula's edge-additivity ($B_{	ext{pair}}$ contributions add cleanly across edges, with no inter-face couplings beyond what C3's K₃ collective mode captures) is itself derivable from CPP primitives, at which point ground-state selection is a generic statistical-mechanics consequence.
+**Dependencies:** SS-5 collective-mode machinery (A6' or its successor); the K₃ scale-recurrence (Pattern 6) status as forced-vs-permitted by A1–A11. Likely entanglement with OPEN-SS-27 (D2 derivation) since both reduce to A6' extension questions.
+**Cross-sector connections:** A successful C5 closure would also strengthen the D2 (OPEN-SS-27) and D3 (OPEN-SS-28) closures by establishing that bulk averaging procedures reach genuine ground states, not provisional ones. Methodologically, a C5 closure that reduces to "Pattern 6 holds by construction" would be a substantial programme-level result clarifying the structural status of K₃ scale-recurrence across SS-3, SS-5, SS-7, SS-8.
+**Current best lead:** SS-9 Phase 1 v0.2 working draft (`session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md`) Lemma C uses C5 as a paper-level conditional. The Phase 4 attempt sketched in §9 of that draft anticipates that programme-level closure of C5 reduces to a Pattern 6 question. Phase 4 is not yet attempted.
+**Falsification route:** Demonstration that CPP lattice dynamics permit metastable bound configurations that are not global energy minima at typical formation timescales; or demonstration that the SS-7 binding formula's edge-additivity itself fails at some derivable structural level.
+**Paper(s):** SS-9 candidate (registered as paper-level conditional in Phase 1 working draft; programme-level closure target for Phase 4 or later session).
+**Registered:** 26 April 2026 Session 2 in SS-9 Phase 1 v0.2 working draft §1 (formal registry entry pending ratification).
+
+---
+
+### OPEN-SS-30: Programme-Level Closure of C6 (Cluster Surface-Realization, No Interior Alphas)
+**Status:** OPEN — registered as candidate, pending ratification (registered 26 April 2026 Session 2 in SS-9 Phase 1 v0.2 working draft scaffold)
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM
+**One-line statement:** Derive C6 (in bound alpha-cluster ground states at $N_lpha \leq 14$, all alpha centroids lie on the boundary of the cluster's convex hull; no alpha is interior to the cluster) from CPP primitives A1–A11 via direct rigid-tetrahedral packing analysis.
+**What a solution looks like:** A finite computational verification, executed at each $N_lpha$ from 4 through 14, showing that minimum-energy rigid-tetrahedral packings under C1+C2+C3 do not place any alpha interior to the convex hull. The verification is finite and tractable; either (a) direct enumeration of candidate configurations at each $N_lpha$, or (b) analytic argument from rigid-packing geometry that interior-alpha configurations are energetically dominated by surface-only configurations at all $N_lpha \leq 14$.
+**Dependencies:** None blocking. The verification can proceed independently of OPEN-SS-29; both are required for unconditional closure of OPEN-SS-24, but they are functionally independent (geometric vs. energetic principles).
+**Cross-sector connections:** Methodological — sets a precedent for finite computational verification of structural hypotheses in the strong sector. If C6 closes by direct enumeration at each $N_lpha$, the methodology generalizes to similar small-$N$ structural claims elsewhere in the programme.
+**Current best lead:** Empirically supported by SS-7 Table 1 (12 strict-$N{=}Z$ alpha-chain nuclei; the eight Freudenthal-van der Waerden convex deltahedra at $N_lpha \in \{4,5,6,7,8,9,10,12\}$ all have all-vertex-on-surface realizations; the deltahedra-gap nuclei at $N_lpha \in \{11,13,14\}$ are conjecturally also all-surface, though the polytope identity is the subject of OPEN-SS-31). Direct computation at small $N_lpha$ should settle the question.
+**Falsification route:** Identification of any $N_lpha \leq 14$ at which the minimum-energy rigid-tetrahedral packing places an alpha interior to the convex hull, demonstrated by either explicit construction or exhaustive enumeration.
+**Paper(s):** SS-9 candidate (registered as paper-level conditional in Phase 1 working draft; programme-level closure target for Phase 4 or later session).
+**Registered:** 26 April 2026 Session 2 in SS-9 Phase 1 v0.2 working draft §1 (formal registry entry pending ratification).
+
+---
+
+### OPEN-SS-31: Structural Realization of Alpha Clusters at the Deltahedra-Gap $N_\alpha \in \{11, 13, 14\}$
+**Status:** OPEN — registered as candidate, pending ratification (registered 26 April 2026 Session 2 in SS-9 Phase 1 v0.2 working draft scaffold)
+**Sector(s):** SS (nuclear physics)
+**Priority:** MEDIUM
+**One-line statement:** Determine the structural realization of bound alpha clusters at $N_lpha \in \{11, 13, 14\}$ — the values where SS-7 Table 1 successfully predicts binding energies (⁴⁴Ti at $-0.26\%$, ⁵²Fe at $-0.57\%$, ⁵⁶Ni at $-0.73\%$) but no convex deltahedron exists per the Freudenthal-van der Waerden enumeration.
+**What a solution looks like:** A definitive characterization of which of three resolution options applies at each deltahedra-gap $N_lpha$: (a) small-band edge-length variation around $R_{lpha lpha}$, with the cluster realizing a convex simplicial 3-polytope but with non-uniform edge lengths; (b) weakened convexity at these specific $N_lpha$, with the cluster slightly non-convex but still graph-simplicial; (c) non-3-polytope-realized graph-simpliciality, with the contact graph being a maximal planar graph but the geometric arrangement being a different topological object. The empirical record (sub-1% accuracy at all three nuclei) constrains the resolution but doesn't decide between options.
+**Dependencies:** None blocking. Resolution likely informed by the cluster-model literature on ⁴⁴Ti, ⁵²Fe, ⁵⁶Ni geometries.
+**Cross-sector connections:** Methodologically related to the SS-7 Remark 2.2 disclaimer on polytope identity — a closure of OPEN-SS-31 may simultaneously strengthen the polytope-identity question (OPEN-SS-31 candidate-adjacent) for the deltahedra-gap nuclei specifically.
+**Current best lead:** SS-9 Phase 1 v0.2 working draft §6 registers the three resolution options. The Freudenthal-van der Waerden enumeration of convex deltahedra (8 members at $V \in \{4,5,6,7,8,9,10,12\}$) is well-established classical mathematics; the empirical agreement at $\pm 1\%$ across the gap nuclei is the constraint on resolution. The honest formulation of OPEN-SS-24's closure target separates graph-simpliciality (the weaker claim, what the SS-9 Theorem establishes) from deltahedral realizability (the stronger claim, registered here).
+**Falsification route:** Empirical or theoretical demonstration that one of the three options is incompatible with the SS-7 Table 1 binding predictions at $N_lpha \in \{11, 13, 14\}$, or with rigid-tetrahedral packing constraints at these vertex counts.
+**Paper(s):** SS-9 candidate (registered as scope question in Phase 1 working draft).
+**Registered:** 26 April 2026 Session 2 in SS-9 Phase 1 v0.2 working draft §6 (formal registry entry pending ratification).
+
+---
+
 ### OPEN-SS-19: Rigorous Derivation of $(A{-}1)$ Cascade Multiplicity and Pauli Coefficient
 **Status:** OPEN
 **Sector(s):** SS (nuclear physics)
