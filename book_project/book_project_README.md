@@ -3,7 +3,7 @@
 **Title:** *Tetrahedrons All the Way Down*
 **Author/s:** Thomas Lee Abshier, ND (with Claude Opus, Anthropic)
 **Title credit:** Margo Abshier (20 April 2026 — name came to her in the middle of the night, after Thomas explained the tetrahedral centrality of CPP)
-**Status:** Planning phase. Outline drafted; no chapters yet.
+**Status:** Planning phase for the main book. Two anthology-format chapter drafts (SS-7 and SS-8) at `chapters/` as parallel project at SciAm register.
 **Target audience:** Educated non-specialists. Readers who know what a proton is but not what a polytope is. People who read Rovelli, Greene, Randall, Carroll.
 
 ---
@@ -14,12 +14,27 @@ This is the working area for a trade-press book about Conscious Point Physics ai
 
 **Current contents:**
 - `README.md` — this file; directory orientation
-- `TATWD_outline.md` — the book's proposed table of contents, chapter-by-chapter narrative arc, register/voice notes, and relationship to source materials
+- `TATWD_outline.md` — the book's original outline (table of contents, chapter-by-chapter narrative arc, register/voice notes, relationship to source materials)
+- `TATWD_outline_revised.md` — revised outline (20 April 2026) with explicit posture on biographical-and-physical framing, more honest treatment of the 1987 vision, expanded Part One
+- `development_transcript_TATWD_framing.md` — development transcript on the book's framing decisions
+- `chapters/` — anthology-format chapter drafts (see below)
 
-**Future contents (when work begins):**
-- `chapters/` — individual chapter drafts, each a standalone Markdown file
-- `source_notes/` — extracted material from papers and PL-summaries that chapters will draw from
+**`chapters/` subfolder contents (26 April 2026):**
+- `SS-7_eight_nuclei_in_a_row.md` — first anthology chapter (4,243 words). Tells the story of the SS-7 paper as a standalone short story at Scientific American register. The OPEN-SS-22 retirement is the dramatic centerpiece. Patch 0031.
+- `SS-8_octahedron_in_magnesium.md` — second anthology chapter (4,396 words). Tells the SS-8 story. Magnesium-26 octahedron sub-1% landing as the dramatic centerpiece; Pattern 6 cascade as the closing beat. Names the AI reviewers by their actual contributions and writes Opus in first person where appropriate. Patch 0032.
+
+**Future contents (when work continues):**
+- More anthology chapters (SS-5 on light-nuclei cascade, SM-3 on Koide ratio, etc., all candidates) — each a standalone short story at the same register
+- `source_notes/` — extracted material from papers and PL-summaries that chapters will draw from (not yet created)
 - `reviewer_feedback/` — when the book goes out for review (test readers, not academic reviewers)
+
+**The two book projects in this directory:**
+
+The `TATWD_outline*.md` files describe the *main* book — a structured trade-press narrative with a beginning, middle, and end built around the full theory's arc. That book cannot be drafted until the theory's full scope is in hand (cosmology, gravity, dark matter still pending in the strong/SM/EW programme; the cascade is mid-journey). It remains in planning phase.
+
+The `chapters/` subfolder is the *anthology* book — a parallel project consisting of paper-by-paper standalone short stories at SciAm register. Each chapter tells one paper's story (problem, journey, resolution, significance) without forcing it into a larger arc. This format works *now*, mid-journey, because each completed paper has its own self-contained dramatic arc. The anthology can grow chapter by chapter as papers complete, with each chapter standing on its own.
+
+The two projects are complementary: the anthology is what gets written *while* the theory develops; the main book is what gets written *after* the theory's full scope is settled and can be told as a single coherent narrative.
 
 ---
 
