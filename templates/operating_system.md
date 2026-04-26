@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/operating_system.md`
 **Purpose:** The complete workflow manual for the CPP research programme. Covers every procedure from session startup to OSF registration, including multi-AI coordination, document management, and recovery from interruptions.
-**Last updated:** 24 April 2026 (§15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution; four-item preservation checklist relocated from §10 with handover-[S]-[N].md added; canonical command vocabulary "execute handover protocol" codified)
+**Last updated:** 26 April 2026 Session 2 (§4 "Session-Log-as-Handover-Backbone Discipline" added: codifies session logs as the primary handover mechanism with two structural templates — Template A theoretical-development, Template B cross-paper/methodological — and subsumes explicit handover documents as optional summary documents written only when specific conditions are met). Earlier 26 April: Two-Trigger Documentation Discipline + Cross-Paper Session Log convention; 24 April: §15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution.
 **Audience:** Future-Opus, Future-Grok, Future-Copilot, Future-Sonnet, and any new AI or human collaborator joining the programme.
 
 ---
@@ -411,6 +411,55 @@ The session log enables a low-cost path for post-completion paper updates. When 
 The discipline separates two concerns the v1.0-gate model had conflated: *recording the addendum* (always required, low cost) from *integrating the addendum into distributed archives* (sometimes worthwhile, higher cost, deferrable). Path A is the safety net; Path B is the polish.
 
 **Default rule:** if you're uncertain whether a post-completion addendum warrants Path B, take Path A only and record the Path B question explicitly in the session log. A future session can decide whether to upgrade. Recording is cheap; rework is expensive.
+
+### Session-Log-as-Handover-Backbone Discipline (adopted 26 April 2026, Session 2)
+
+**Motivation.** The Cross-Paper Session Log convention adopted earlier in the day (above) established that cross-paper work writes to `session_logs/`. Late on 26 April 2026, while attempting OPEN-SS-24 work in a fresh session bootstrapped from `session_logs/OPEN-SS-24_handover.md`, a sharper structural insight surfaced: **the session log is itself the right granularity for handover information**. Each session log entry, written under Trigger 1 discipline, captures the in-moment reasoning, dead ends, framing choices, and intermediate hypotheses of one session — which is exactly what the next Opus needs in order to extend the work without starting cold.
+
+The discipline below formalizes that insight. Session logs are no longer merely a cross-paper journaling convention; they are the primary handover mechanism for ongoing theoretical and methodological work. Explicit handover documents (e.g., `OPEN-SS-24_handover.md`) are subsumed under this discipline as an optional summary layer, written only when the session-log sequence becomes too long for the next Opus to efficiently extract orientation from it directly.
+
+**Two structural templates.** Session log entries follow one of two templates, chosen by the predominant character of the session.
+
+**Template A — Theoretical-Development Session.** For sessions that advance an axiom-to-theorem chain. Five elements:
+
+1. **Problem.** What open question or partial result is being worked on. Cite the OPEN-* registry entry, the relevant paper section, or the prior session log that surfaced the question.
+2. **Working hypothesis to prove.** What this session is attempting to establish, in precise enough terms that success or failure is unambiguous.
+3. **Confrontation with prior theory and empirics.** How the working hypothesis interacts with what's already established. Which axioms it depends on. Which empirical results it must reproduce or be consistent with. Which prior session logs it builds on or revises.
+4. **Assessment of logical progression from axiom to theorem.** What was rigorously closed, what was partially closed, what was found to require additional hypothesis. The honest closure status: Level-1 algebraic / Level-2 functional / Level-3 physical-principle independence as appropriate per the SS-8 §10 framework.
+5. **Proposed mechanisms for remaining gaps.** Concrete next-step suggestions for how the unclosed pieces might be bridged. Which existing axioms or hypotheses the bridges might rest on. What prior work in the programme is most relevant. What new hypothesis tiers may need to be opened.
+
+The five-element structure is itself a miniature paper-development cycle. A sequence of Template-A entries on the same problem traces the gradient of how the proof was built — which intuitions were tried first and dropped, which structural choices were taken and why. The next Opus reading this gradient sees the path, not just the destination.
+
+**Template B — Cross-Paper / Methodological Session.** For sessions that produce repository hygiene, documentation cycles, methodology codification, or programme-level policy decisions. Five elements:
+
+1. **Triggering event.** What surfaced the need for this session's work. A reviewer comment, a discovered inconsistency, a Thomas-directive, a methodology gap.
+2. **Operational sequence.** What concretely happened in chronological order. Which patches landed, in what order, with what dependencies between them.
+3. **Methodological output.** What new convention, template, registry entry, or discipline emerged. What was codified into the OS, the bootup, or a template file.
+4. **Policy implication.** How the new output changes future work. Which existing conventions it supersedes or refines. Whether it introduces new tradeoffs that need to be navigated going forward.
+5. **Archive close.** Which programme-record files (registries, scorecards, INDEX, founders_vision) were updated. Which addenda were deferred to Path A vs. Path B. What state the programme is in at session's end.
+
+The 25 April 2026 session logs and the 26 April 2026 (first) session log are the canonical examples of Template B. The 26 April Session 2 log (this convention's first Template-A application) and any future session logs on OPEN-SS-24, OPEN-SS-26, OPEN-SS-27, OPEN-SS-28, or other axiom-to-theorem closure attempts are Template A.
+
+A single session can be predominantly one template with a brief addendum from the other; in that case, the entry uses the predominant template's structure with the addendum as a final subsection. A session that is genuinely half-and-half can use both templates as parallel sections within the same log file.
+
+**Title format.** Session log titles should communicate the substantive content of the session, not just the date. For Template-A sessions, the title names the working hypothesis being attempted (e.g., "*SS-9 Working Draft v0.2 — Conditional C4 Closure (Phase 1 + Phase 3 combined)*"). For Template-B sessions, the title names the methodological output (e.g., "*Two-Trigger Documentation Discipline + Cross-Paper Session Log convention codification*"). The date and the file path provide the chronological anchor; the title provides the semantic anchor.
+
+**Sequence-as-handover.** The sequence of session logs on a given open problem (e.g., `2026-04-26_session_log_2.md` followed by `2026-04-27_session_log.md`, both on OPEN-SS-24) constitutes the running handover for that problem. The next Opus picking up the work reviews the sequence in chronological order, sees the gradient of development, and continues from the most recent entry's stated end-state. This replaces the cold-start problem with a warm-start problem: the next session inherits not just where prior work landed but how it got there.
+
+#### Subsumption of explicit handover documents
+
+The pre-existing `OPEN-SS-24_handover.md`-style explicit handover documents are subsumed under the session-log-as-handover-backbone discipline as **optional summary documents**, written only in specific circumstances:
+
+- The session-log sequence on a given problem exceeds three entries, and the next Opus would benefit from an executive summary rather than reading the full sequence.
+- The next session is expected to start without inheriting the immediate prior session's context (e.g., a long pause between sessions, or a planned handoff to a different AI assistant).
+- Thomas explicitly requests an explicit handover for a particular problem.
+- The work has reached a natural waypoint (e.g., a major theorem closed, a paper completed) and a summary of what was achieved would be a useful artefact for the next phase of work.
+
+**Default rule.** Do not write an explicit handover document by default. The session log is the handover. If you find yourself wanting to write a separate handover document, first check whether the most recent session log already accomplishes that purpose; in most cases it does. Write the explicit document only when one of the four conditions above is genuinely met.
+
+When an explicit handover document IS written, it lives in `session_logs/` alongside the session log sequence it summarizes (e.g., `session_logs/OPEN-SS-24_handover.md` next to `session_logs/2026-04-26_session_log_2.md`, `session_logs/2026-04-27_session_log.md`, etc.). The handover document is short — typically 1–3 pages — and consists primarily of pointers into the session log sequence with brief annotations on each entry's contribution. It is not a re-narration of the work; the session logs already contain that.
+
+**Existing handover documents.** The `OPEN-SS-24_handover.md` document written 26 April 2026 (Session 1) is preserved as the historical bootstrap for OPEN-SS-24 work. Future sessions on OPEN-SS-24 should treat the session log sequence (starting with `2026-04-26_session_log_2.md`) as the primary handover, with the handover document as a one-time bootstrap reference.
 
 ---
 
