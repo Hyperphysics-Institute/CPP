@@ -1,9 +1,9 @@
 # Session Log — 26 April 2026 (Session 2)
 
 **Location:** `/CPP/session_logs/2026-04-26_session_log_2.md`
-**Title:** SS-9 Working Draft v0.2 — Conditional C4 Closure (Phase 1 + Phase 3 combined)
-**Template:** A (Theoretical-Development)
-**Patches produced:** 0034 (OS update — Session-Log-as-Handover-Backbone Discipline), 0035 (bootup.md — local working path + git am flow), 0036 (SS-9 Phase 1 v0.2 working draft), 0037 (this session log)
+**Title:** SS-9 Working Draft v0.2 — Conditional C4 Closure (Phase 1 + Phase 3 combined) + Session-Log-as-Handover-Backbone Discipline codification
+**Template:** A (Theoretical-Development) predominant, with parallel Template-B (Cross-Paper / Methodological) section for the OS-codification subsession
+**Patches produced:** 0034 (OS update — Session-Log-as-Handover-Backbone Discipline), 0035 (bootup.md — local working path + git am flow), 0036 (SS-9 Phase 1 v0.2 working draft), 0037 (this session log), 0038 (this section: parallel Template-B section added retroactively)
 **Continued from:** `2026-04-26_session_log.md` (Session 1; Two-Trigger Documentation Discipline + Cross-Paper Session Log convention codification, book project chapters, OPEN-SS-24 handover authored)
 **Continuation:** TBD — next session on OPEN-SS-24 should pick up from §5 of `OPEN-SS-24_phase1_v0.2_working_draft.md` and attempt to close the two Lemma B gaps.
 
@@ -113,9 +113,93 @@ The trade-off is that Lemma B becomes explicitly a conditional theorem (conditio
 
 ---
 
+## Parallel Template-B section: Session-Log-as-Handover-Backbone Discipline codification
+
+This section captures the methodological subsession that ran in parallel with the OPEN-SS-24 attempt. The subsession produced patches 0034 (OS update) and 0035 (bootup.md update) and was substantial enough to warrant its own structural treatment under Template B, per the convention codified in patch 0034 itself: *"A session that is genuinely half-and-half can use both templates as parallel sections within the same log file."* This session was not half-and-half — the Template-A work was the predominant 80% of the substantive output — but the Template-B subsession was substantial enough that burying it inside the Template-A "Methodological observations" subsection under-documented it.
+
+The decision to add this parallel section came late in the session, after Thomas asked: *"Did we capture the organizational work as a session log?"* The honest answer was that the methodological work was mentioned in three places (state-at-close patch list, methodological-observations paragraph, contextually throughout) but had not received its own structural treatment. Patch 0038 (this section) is the remediation. The act of adding a Template-B section to the same session log that codified the both-templates discipline is the convention's first reference example, demonstrating how the parallel-sections pattern works in practice.
+
+### (1) Triggering event
+
+Mid-session, after the OPEN-SS-24 working draft scaffold reached a natural reporting point with two registered Lemma B gaps, the session approached a Trigger 1 close decision. The assistant proposed three reasonable next moves: (a) push hard on Lemma B gap closure, (b) write up what's solid as an SS-9 outline and defer gap closure, (c) pivot to Phase 4 programme-level closure attempt. The assistant recommended (b), citing the discipline of clean handoffs over rushed mid-attempt continuations.
+
+When the assistant offered to draft a session log entry under Trigger 1 to preserve the work, Thomas's response reframed the proposal substantially. Rather than treating session logs as one of several documentation artefacts, Thomas proposed that **session logs serve as the de facto handover document**, with each session log capturing a five-element structure (problem → working hypothesis → confrontation with prior theory and empirics → assessment of logical progression → proposed mechanisms for remaining gaps) that constitutes a miniature paper-development cycle. The sequence of session logs would then form a fine-grained gradient of how a proof was built — exactly what the next Opus needs to extend the work without starting cold.
+
+The assistant agreed with the substance, pushed back on one piece (the proposed five-element structure was a perfect fit for theoretical-development sessions but not for cross-paper/methodological sessions, which had a different shape), and proposed splitting the convention into two structural templates with an explicit pattern for which to use. Thomas agreed and authorized codifying both templates simultaneously.
+
+A separate question surfaced about explicit handover documents (e.g., the `OPEN-SS-24_handover.md` written 26 April Session 1): the new discipline made them somewhat redundant. Two options were presented — subsume (handover documents become an optional summary layer written only when needed) vs. coexist (both granular session logs and executive-summary handovers are written). Thomas chose subsume.
+
+### (2) Operational sequence
+
+Three calibration questions were resolved before patch generation:
+- Subsume vs. coexist for handover documents → subsume, with written-when-needed escalation rule (four specific conditions enumerated)
+- Patch numbering → continue sequentially from 0033, using numbers as they come
+- Codify Template B alongside Template A → yes, codify both at the same time
+
+The assistant then generated four patches in sequence:
+
+**Patch 0034** (OS update): inserted a new subsection "Session-Log-as-Handover-Backbone Discipline (adopted 26 April 2026, Session 2)" into `templates/operating_system.md` §4, immediately after the existing "Cross-Paper Session Log Convention" section. The new subsection codified:
+- Two structural templates (A theoretical-development, B cross-paper/methodological), each with a five-element structure
+- The both-templates-in-one-file pattern for genuinely half-and-half sessions
+- Title-format guidance (titles communicate substantive content, not just date)
+- Sequence-as-handover principle (session log sequences on a problem constitute the running handover)
+- Subsumption of explicit handover documents (four conditions under which to write one; default rule "do not write an explicit handover document by default")
+- Disposition of existing handover documents (the OPEN-SS-24_handover.md preserved as historical bootstrap)
+
+The OS file's "Last updated" timestamp was updated to reflect the new section.
+
+**Patch 0035** (bootup.md update): inserted a new subsection "Thomas's local working path and the `git am` commit flow" into `bootup.md` §2, immediately after the "Always git pull" line. The new subsection codified:
+- Standard local path on Thomas's machine: `~/Documents/GitHub/CPP`
+- Standard commit flow: `git am ~/Downloads/00NN-description.patch`
+- Patch numbering convention (sequential across all sessions, no reset)
+- When `git am` flow is NOT appropriate (trivial single-line edits)
+- Distinction between in-container clone (read-only, ephemeral, where Claude reads from) and Thomas's local clone (commit/push source of truth)
+
+**Patch 0036** (SS-9 working draft): committed `session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md`. This is Template-A substantive content; documented under Template A above.
+
+**Patch 0037** (session log): committed `session_logs/2026-04-26_session_log_2.md` in Template-A form. This was the *first non-bootstrap* application of the convention — the bootstrap application being the Cross-Paper Session Log convention itself, codified earlier in the day in `2026-04-26_session_log.md`.
+
+All four patches were generated as `git format-patch` mailbox-format files at `/mnt/user-data/outputs/patches/`, downloaded to Thomas's `~/Downloads/`, and applied via `git am` in sequence. Patches 0036 and 0037 generated cosmetic whitespace warnings (trailing space on one line in the working draft, blank line at EOF in both new files); `git am` applied them anyway and the commits landed cleanly. Push to `origin/main` succeeded as `f947835..3b37163`.
+
+### (3) Methodological output
+
+**Two-templates discipline.** Future session log entries follow Template A (theoretical-development) or Template B (cross-paper / methodological) by predominant character, with parallel sections when genuinely half-and-half. The choice is not arbitrary: the five elements of each template reflect a real difference in what the session is doing. Template A traces an axiom-to-theorem chain; Template B traces a methodological codification or repository hygiene cycle. Each is a complete miniature cycle in its own genre.
+
+**Sequence-as-handover principle.** The sequence of session logs on a given open problem (e.g., this entry on OPEN-SS-24, plus future entries) constitutes the running handover for that problem. The next Opus picking up the work reviews the sequence in chronological order, sees the gradient of development, and continues from the most recent entry's stated end-state. This replaces the cold-start problem with a warm-start problem.
+
+**Subsumption of explicit handover documents.** The pre-existing handover-document genre (e.g., `OPEN-SS-24_handover.md`) becomes an optional summary layer, written only under four specific conditions: session-log sequence exceeds three entries; next session expected to start without inheriting prior context; Thomas explicitly requests; work has reached a natural waypoint. The default is that the session log IS the handover.
+
+**Local-clone-and-commit pattern codification.** The round-trip pattern (Claude generates patches in container → Thomas downloads to `~/Downloads/` → `git am` applies in `~/Documents/GitHub/CPP` → push) was previously implicit knowledge. Codifying it in `bootup.md` ensures future Opus sessions understand the pattern without needing to ask.
+
+### (4) Policy implication
+
+**Every future session log follows the convention.** The convention's first non-bootstrap application is this very entry. Every subsequent session log is structured under it. The Template-A entries on OPEN-SS-24 follow-up sessions, OPEN-SS-26/27/28 closure attempts, and any new theoretical-development work all use the five-element Template-A structure. Cross-paper sessions (registry updates, documentation cycles, methodology codifications) use Template B.
+
+**The handover-document genre nearly retires.** The `OPEN-SS-24_handover.md` from 26 April Session 1 is the last of its genre under the old convention. New explicit handover documents are written rarely and only under the four specified conditions. The session-log sequence accumulating across sessions does the handover work that the explicit document used to do.
+
+**The bootup.md update reduces session-startup friction.** Future Opus sessions inherit the local-clone-and-commit pattern from `bootup.md` rather than reconstructing it from context or asking. This was a small but real friction in past sessions; the codification removes it.
+
+**A new tradeoff is visible.** Session log entries under Template A are substantially more substantive than the older session-log entries — five structural elements with prose content, rather than running-journal-style recording. This costs more context window per session-close. The benefit (warm-start handovers, fine-grained development gradient) outweighs the cost in the assistant's read, but the cost is real. Future sessions should be aware that the closing budget for a Template-A session log is meaningful and plan accordingly.
+
+**The both-templates pattern's first reference example is in this very file.** Future sessions wanting to know how to handle a session that's predominantly one template with a substantial subsession of the other can read this log as the canonical example. The Template-A predominant section captures the OPEN-SS-24 attempt; the Template-B parallel section captures the OS-codification subsession; the two coexist in the same file with clear structural separation.
+
+### (5) Archive close
+
+- `templates/operating_system.md` updated: new §4 subsection "Session-Log-as-Handover-Backbone Discipline" codified; "Last updated" timestamp refreshed
+- `bootup.md` updated: new §2 subsection "Thomas's local working path and the git am commit flow" codified
+- `session_logs/2026-04-26_session_log_2.md` (this file): created in Template-A form initially (patch 0037), parallel Template-B section added retroactively (patch 0038)
+- `session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md`: created (patch 0036), captures the OPEN-SS-24 substantive work
+- `session_logs/OPEN-SS-24_handover.md` (from Session 1): preserved as historical bootstrap; nothing new added in that genre
+- INDEX.md not updated this session — the new session log entries inherit visibility from the existing `session_logs/` folder structure, which is already indexed at the directory level
+- Research_Frontier.md not updated this session — registration of OPEN-SS-29, OPEN-SS-30, OPEN-SS-31 deferred to a future Trigger 2 cycle for SS-9 (per the discipline that registries are updated when papers ship, not when working drafts circulate)
+- founders_vision.md not updated this session — the methodological codification doesn't constitute a milestone in Thomas's physical-intuition development; the OPEN-SS-24 work would warrant a milestone entry only when SS-9 ships
+- CPP_the_theory.md not updated this session — same rationale as founders_vision
+
+---
+
 ## State at session close
 
-- **Patches landed:** 0034 (OS update), 0035 (bootup.md update), 0036 (SS-9 Phase 1 v0.2 working draft), 0037 (this session log).
+- **Patches landed:** 0034 (OS update), 0035 (bootup.md update), 0036 (SS-9 Phase 1 v0.2 working draft), 0037 (this session log in Template-A form), 0038 (parallel Template-B section added to this same session log retroactively).
 - **Cumulative programme state unchanged from start of session:** 9 axioms, 103 zero-parameter empirical correspondences, ratio 11.4×, 18 papers in catalog, 52 theorems / 9 corollaries.
 - **OPEN-SS-24 status:** ATTEMPTED in this session; conditional theorem scaffold delivered; two Lemma B gaps registered; Status remains OPEN pending gap closure.
 - **New open problems surfaced (registration deferred to next session's Research_Frontier.md update):**
@@ -141,5 +225,5 @@ The trade-off is that Lemma B becomes explicitly a conditional theorem (conditio
 
 ---
 
-*Session log entry per `templates/operating_system.md` §4 "Session-Log-as-Handover-Backbone Discipline" Template A. First non-bootstrap application of the convention.*
+*Session log entry per `templates/operating_system.md` §4 "Session-Log-as-Handover-Backbone Discipline." First non-bootstrap application of the convention. Predominantly Template A (theoretical-development; the OPEN-SS-24 substantive work) with parallel Template B section (cross-paper / methodological; the OS-codification subsession) added retroactively as patch 0038. First reference example of the both-templates-in-one-file pattern.*
 
