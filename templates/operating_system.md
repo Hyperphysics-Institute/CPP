@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/operating_system.md`
 **Purpose:** The complete workflow manual for the CPP research programme. Covers every procedure from session startup to OSF registration, including multi-AI coordination, document management, and recovery from interruptions.
-**Last updated:** 26 April 2026 Session 2 (§4 "Session-Log-as-Handover-Backbone Discipline" added: codifies session logs as the primary handover mechanism with two structural templates — Template A theoretical-development, Template B cross-paper/methodological — and subsumes explicit handover documents as optional summary documents written only when specific conditions are met). Earlier 26 April: Two-Trigger Documentation Discipline + Cross-Paper Session Log convention; 24 April: §15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution.
+**Last updated:** 26 April 2026 Session 2 (§15 four-item checklist reconciled with §4 Session-Log-as-Handover-Backbone Discipline: item 1's handover-[S]-[N].md requirement replaced by session log entry per §4 for in-progress work in session_logs/; item 1's development-[S]-[N].md requirement partially satisfied by Template-A session log but verbatim content still requires curated transcript file; items 2–4 unchanged; legacy §15 form applies in full for Trigger 2 paper-completion cycles in series_strong/papers/SS-N/documentation_suite/). Earlier 26 April Session 2: §4 "Session-Log-as-Handover-Backbone Discipline" added. Earlier 26 April: Two-Trigger Documentation Discipline + Cross-Paper Session Log convention; 24 April: §15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution.
 **Audience:** Future-Opus, Future-Grok, Future-Copilot, Future-Sonnet, and any new AI or human collaborator joining the programme.
 
 ---
@@ -460,6 +460,8 @@ The pre-existing `OPEN-SS-24_handover.md`-style explicit handover documents are 
 When an explicit handover document IS written, it lives in `session_logs/` alongside the session log sequence it summarizes (e.g., `session_logs/OPEN-SS-24_handover.md` next to `session_logs/2026-04-26_session_log_2.md`, `session_logs/2026-04-27_session_log.md`, etc.). The handover document is short — typically 1–3 pages — and consists primarily of pointers into the session log sequence with brief annotations on each entry's contribution. It is not a re-narration of the work; the session logs already contain that.
 
 **Existing handover documents.** The `OPEN-SS-24_handover.md` document written 26 April 2026 (Session 1) is preserved as the historical bootstrap for OPEN-SS-24 work. Future sessions on OPEN-SS-24 should treat the session log sequence (starting with `2026-04-26_session_log_2.md`) as the primary handover, with the handover document as a one-time bootstrap reference.
+
+**Reconciliation with §15 four-item preservation checklist.** §4 modifies but does not replace the §15 protocol. For sessions where work-in-progress lives in `session_logs/`, §4 replaces item 1's `handover-[S]-[N].md` requirement; the session log IS the handover. §4 partially satisfies item 1's `development-[S]-[N].md` requirement via the Template-A five-element structure, but verbatim content (multi-AI exchanges, Thomas-verbatim physical insights) still requires a separate curated transcript file. Items 2 (registry updates), 3 (reviewer artifacts), and 4 (protocol/OS updates) of the §15 checklist are unchanged. For Trigger 2 paper-completion cycles, the legacy §15 form applies in full: papers that reach v1.0 produce `development-SS-N.md` and `handover-SS-N.md` in their documentation suite directory, with the relevant session log entries from `session_logs/` serving as source material for the synthesized lab-notebook record. See §15 "Reconciliation with §4 Session-Log-as-Handover-Backbone Discipline" for full detail.
 
 ---
 
@@ -1295,9 +1297,28 @@ When the protocol fires (by either trigger), verify the following four artifacts
 
 A minimal preservation commit may include items 1–4 in any combination produced by the session. Commit message convention: `[paper/series] session-close handover preservation — [brief summary of preserved items]`. This is distinct from the section-end-batch commit cadence in §10; section-end batches are task-driven, handover-protocol commits are session-continuity-driven. Both may occur in the same session.
 
+### Reconciliation with §4 Session-Log-as-Handover-Backbone Discipline (added 26 April 2026 Session 2)
+
+The §4 Session-Log-as-Handover-Backbone Discipline (adopted 26 April 2026 Session 2) modifies item 1 of the four-item checklist for sessions where the work is in-progress and lives in `session_logs/` rather than in a paper documentation suite. The reconciliation between §15 and §4 is as follows:
+
+**For sessions where work-in-progress lives in `session_logs/` (no paper directory yet exists):**
+- Item 1's `handover-[S]-[N].md` requirement is **replaced** by a Template-A or Template-B session log entry per §4. The session log IS the handover. Do NOT generate a separate `handover-[S]-[N].md` file.
+- Item 1's `development-[S]-[N].md` requirement is **partially satisfied** by the Template-A session log entry, which captures the lab-notebook function (in-moment reasoning, dead ends, framing choices) in five-element semantic-anchor form. This is adequate for theoretical-development sessions where the work is exploratory mathematical reasoning.
+- However, when a session contains **verbatim content** that the structured five-element form cannot adequately preserve — multi-AI exchange transcripts, Thomas-verbatim physical insights articulated in specific phrasing, exact wording of decisions made under pressure — a separate curated transcript file should still be produced (e.g., `session_logs/SS-9_session_2_transcript.md`), or the verbatim content should be embedded in the session log as an explicit verbatim subsection. **Do not rely on the auto-generated session summary** for verbatim preservation; it is lossy by design (see anti-patterns below).
+- Items 2, 3, and 4 are **unchanged** by §4. Registry updates still land in registry files; reviewer artifacts still land in `letters/` and `reviews/` folders; protocol/OS updates still land in template/protocol files.
+
+**For Trigger 2 paper-completion cycles (when a paper reaches v1.0 and gets its own `series_strong/papers/SS-N/documentation_suite/` directory):**
+- The full §15 four-item checklist applies in its **legacy form** — `development-SS-N.md` and `handover-SS-N.md` are produced as separate files in the documentation suite, alongside the standard documentation suite (mechanism, glossary, phenomena, philosophy, transcript, reviews, FAQ, keywords, lay-summary). The §4 discipline is for in-progress work; the documentation suite is for completed work.
+- A paper that ships at Trigger 2 should retroactively produce a `development-SS-N.md` synthesizing the relevant session log entries from `session_logs/` into the lab-notebook genre. Session logs become the *source material* for `development-SS-N.md`; the synthesized doc becomes the canonical record.
+
+**For sessions that span both modes (work-in-progress + Trigger 2 cycle on a different paper):**
+- Both apply in parallel. Session log entry for the in-progress work; documentation suite update for the completing paper. The two are not mutually exclusive.
+
+**Anti-pattern specific to the §15/§4 reconciliation:** Treating the Template-A session log as adequate substitute for the documentation suite at Trigger 2. The session log captures *one session's* development gradient; the documentation suite synthesizes the *paper's full* development gradient and is needed for external readers (reviewers, the Christos AI training corpus, the book project anthology). A paper at v1.0 needs both: the session log sequence preserves how the work was built; the documentation suite preserves what the work is.
+
 ### Output: relationship to §14 pointer format
 
-The §14 "Session-close handover protocol" subsection (a narrower-scope subsection within the Organizational Frontier Registry section) specifies the *output format* for the OPEN-ORG queue at session close: a short pointer to the registry rather than restated content. That format is one *element* of what gets included in `handover-[S]-[N].md` (item 1 above). The §15 protocol is the broader procedure; §14's pointer format is the shape of one specific paragraph within the handover document. Both are in scope at session close.
+The §14 "Session-close handover protocol" subsection (a narrower-scope subsection within the Organizational Frontier Registry section) specifies the *output format* for the OPEN-ORG queue at session close: a short pointer to the registry rather than restated content. That format is one *element* of what gets included in `handover-[S]-[N].md` (item 1 above) **for Trigger 2 cycles** or in the session log entry **for in-progress work per §4**. The §15 protocol is the broader procedure; §14's pointer format is the shape of one specific paragraph within whichever handover artifact is being produced. Both are in scope at session close.
 
 ### Anti-patterns to recognize
 
