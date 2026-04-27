@@ -3,9 +3,68 @@
 %        for Medium-Mass Nuclei
 % Strong Sector Series
 %
-% Version 1.2 — 21 April 2026 (post-v1.1 symmetric-honesty corrections)
+% Version 1.3 — 26 April 2026 (multi-faceted rigidity refinement of C1)
 %
 % CHANGELOG:
+%   v1.3 (26 Apr 2026) — C1 REFINEMENT. Off-track investigation of OPEN-SS-24
+%     surfaced an internal-consistency concern in the strict reading of C1
+%     ("rigid regular tetrahedral alpha with four equilateral triangular
+%     outer faces"): at N_alpha >= 7 the deltahedral cluster geometries
+%     have vertices of degree >= 5, which the strict 4-face reading cannot
+%     host. Reading SS-5 directly establishes that alpha rigidity is
+%     leading-order with characteristic ~5% LO correction band (SS-5 v6
+%     Remark on rigid-mode LO residuals); the strict 4-face reading was
+%     an SS-7-level interpretive choice, not an SS-5 derivation.
+%
+%     The SS-7 Table 1 residual pattern reveals a structured ~+B_pair-
+%     scale binding excess that tracks with cluster shape class:
+%     ~0 at N_alpha <= 6 (Regime A, no degree-5 vertices); ~+0.55 B_pair
+%     at N_alpha in {7,8,9,10} (Regime B, J-solid deltahedra with belt
+%     structure); ~+0.30 B_pair at N_alpha = 12 (icosahedron, full I_h
+%     symmetry quenches belt-distortion mode); variable at N_alpha in
+%     {11,13,14} (Regime C, deltahedra-gap, belt structure restored).
+%     This pattern matches an additional cluster-level collective mode
+%     activating at belt/seam-supporting shapes, structurally analogous
+%     to SS-5's A=4 closure bonus and SS-8's H3' opposite-polarity pair
+%     bonus — the K_3 quantum recurring at the cluster-shape scale.
+%
+%     CHANGES FROM v1.2:
+%       - C1 statement (§2.1) refined: leading-order rigidity made
+%         explicit; three structurally independent accommodation modes
+%         (a)/(b)/(c) named; mode (c) registered as the SS-7-level
+%         analog of SS-8's H3' provisional pair-bonus mechanism.
+%       - C1 status note added: cross-references the multi-faceted
+%         rigidity pattern across SS-5/SS-7/SS-8; cites cluster-physics
+%         literature consilience (oblate deformation in 28Si, 40Ca+α
+%         core+halo in 44Ti, alpha-gas in 56Ni, hollow polytope shapes
+%         in Tohsaki & Itagaki 2018).
+%
+%     REGISTRY CHANGES:
+%       - OPEN-SS-32: NEW. Cluster-level collective oblate-deformation
+%         mode at belt/seam-supporting alpha-cluster shapes. First-
+%         principles derivation of the +B_pair-attenuated quantum.
+%         MEDIUM priority. Pending ratification.
+%       - PRED-O-* slots: PRED-O-16, PRED-O-17, PRED-O-18 added to
+%         predictions.md as forward-looking predictions on single-
+%         cluster slip-plane extension (PRED-O-16), single-to-
+%         hierarchical regime transition (PRED-O-17), and hierarchical
+%         slip-plane additivity (PRED-O-18). All three are conditional
+%         on the OPEN-SS-32 mechanism reading; they are testable
+%         against AME 2020 data for alpha-chain nuclei beyond N_alpha
+%         = 14.
+%
+%     WHAT v1.3 DOES NOT CHANGE: Theorem 2.1; central formula; Table 1
+%     numerical predictions; assumption stack as a sequence (C1-C4 still
+%     in place); §6.5 stress tests; §5.1 heavy-nuclei treatment; OPEN-SS-22
+%     retirement. The refinement is structural-clarification only:
+%     C1 is restated to make explicit a multi-faceted rigidity pattern
+%     that was already operating implicitly across SS-5, SS-7, and SS-8.
+%     No numerical content is changed; no new fitted parameters are
+%     introduced; the conditional theorem in Theorem 2.1 is unaffected.
+%     C4 remains OPEN-SS-24's target. The off-track investigation that
+%     produced this refinement is documented in
+%     session_logs/2026-04-26_session_log_3.md.
+%
 %   v1.2 (21 Apr 2026) — SYMMETRIC-HONESTY CORRECTIONS. Two separate
 %     findings surfaced in the 24 hours after v1.1 shipped:
 %
@@ -443,11 +502,23 @@ These are \emph{concurrent} predictions in the SS-5 sense: all twelve use the sa
 In the style of SS-5's D1--D4 stack, SS-7 rests on four assumptions. Each is stated, then supported:
 
 \begin{enumerate}[label=(C\arabic*)]
-\item \textbf{Alpha-particle rigidity at nuclear scale.} At the energy scales relevant to medium-mass nuclei ($E \sim 10$--$50$ MeV per nucleon), the SS-5-derived $\Balpha = 27.9$ MeV binding is large enough that alpha particles act as approximately rigid tetrahedral units. Internal excitations (alpha breakup) are suppressed.
+\item \textbf{Alpha-particle leading-order rigidity at nuclear scale.} At the energy scales relevant to medium-mass nuclei ($E \sim 10$--$50$ MeV per nucleon), the SS-5-derived $\Balpha = 27.9$ MeV binding is large enough that alpha particles act as approximately rigid tetrahedral units to leading order. Internal excitations (alpha breakup) are suppressed. The rigidity is leading-order in the SS-5 sense (SS-5 v6 Remark following \S4.0 \emph{``Why a $\sim 5\%$ LO residual is expected''}): rigid-mode LO predictions across the CPP programme consistently land within a characteristic $4$--$6\%$ residual band, reflecting the fact that LO treats geometric oscillators as perfectly rigid and neglects tensor couplings, zero-point fluctuations, and finite-separation effects. The alpha is a tetrahedron of four nucleons \emph{at LO}; corrections to strict rigidity become diagnostic in specific cluster regimes (refined-C1 facets (a)/(b)/(c) below).
 
 \emph{Quantitative support.} The first excited state of ${}^4$He lies at 20.2 MeV above the ground state (above the $^3$H + p breakup threshold); ground-state ${}^4$He has no bound excitations. Nuclear assembly energies per alpha-alpha contact in SS-7 are $\sim \Bpair = 2.3$ MeV, which is $\sim 10\%$ of the alpha's internal binding and $\sim 1\%$ of its first excitation threshold. Alphas therefore see contact interactions as gentle perturbations relative to their internal structure, justifying leading-order rigidity. This is consistent with the alpha-cluster tradition in conventional nuclear physics \cite{brink1966, ikeda1968, freer_alpha}.
 
-\item \textbf{Alpha-alpha base-to-base contact.} When two alphas meet in a nuclear assembly, the dominant configuration is base-to-base contact between two alpha polytopes, analogous to the nucleon-nucleon base-to-base configuration of SS-5. The four outer faces of a tetrahedral alpha provide four candidate contact faces.
+\emph{Refined rigidity facets (v1.3).} Alpha rigidity decomposes into three structurally independent accommodation modes, each diagnostic in a particular cluster regime. Naming them explicitly resolves an internal-consistency concern surfaced during the OPEN-SS-24 closure attempt (the strict 4-face reading is inconsistent with the degree-$\geq 5$ vertices required by deltahedral cluster geometries at $\Nalpha \geq 7$).
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Internal LO rigidity.} The alpha is approximately a regular tetrahedron with four equilateral triangular outer faces. The K$_3$ mode value $\Bpair = \Mzero/\phig$ depends on the \emph{graph} K$_3$ (complete graph on three vertices), not on the geometric shape of the contact triangle: SS-5's eigenvalue calculation works through to the same $+2$ eigenvalue under any triangular-topology three-coupling configuration, even when the underlying triangle is the scalene-isosceles base of the SS-2 nucleon (SS-5 v6 \S9, where the first-order shift from base-asymmetry vanishes by trace-free structure). Internal LO rigidity is therefore load-bearing for $\Balpha = 28.296$ MeV and for the $\Bpair$ scale, but \emph{not} for the K$_3$ topological mode count.
+
+\item \textbf{Vertex-hosting accommodation.} When cluster topology requires alpha vertices of degree $\geq 5$ (deltahedra at $\Nalpha \in \{7, 8, 9, 10, 12\}$ all have degree-$5$ vertices; the icosahedron at $\Nalpha = 12$ is degree-$5$ at every vertex), the alpha hosts the additional contacts via a mechanism within the LO rigidity envelope. Candidate mechanisms include face-edge hybrid contact, K$_3$ delocalization across adjacent faces, or partial-overlap docking; identifying the specific mechanism is registered separately. The empirical cost is small per-vertex, well within the LO residual band, and structurally distinct from facet (c).
+
+\item \textbf{Cluster-level collective oblate-deformation mode (provisional, OPEN-SS-32).} When cluster shape has symmetry-breakable belt or seam structure (the J-solid deltahedra at $\Nalpha \in \{7, 8, 9, 10\}$ all have such structure: pentagonal bipyramid's equatorial belt, snub disphenoid's dihedral seam, etc.), an oblate deformation activates with a quantized binding contribution of approximately $+\Bpair \times \text{attenuation factor}$, via the K$_3$ collective-mode mechanism applied at the cluster-shape scale. Quenched at fully closed shapes (icosahedron at $\Nalpha = 12$, where I$_h$ symmetry forbids oblate deformation): empirical excess drops from $\approx +0.55\,\Bpair$ in the J-solid range to $\approx +0.30\,\Bpair$ at the icosahedron. Empirically supported by SS-7 Table~\ref{tab:SS7_predictions} residual-pattern decomposition (Regime~A at $\Nalpha \in \{3,4,5,6\}$: $\approx 0$; Regime~B at $\Nalpha \in \{7,8,9,10\}$: $\approx +0.55\,\Bpair$; Regime~C at $\Nalpha \in \{11,13,14\}$: variable; icosahedron at $\Nalpha = 12$: suppressed). Structurally consistent with the cluster-physics literature on oblate density-wave at the edge of cluster states (KanadaEn'yo 2011 on $^{28}$Si pentagon shape; Tohsaki \& Itagaki 2018 on hollow polytope shapes; the $^{40}$Ca + $\alpha$ core+halo identification of $^{44}$Ti). This facet is the SS-7-level analog of SS-8's H3$'$ provisional opposite-polarity pair-bonus mechanism --- both are $+\Bpair$-with-attenuation collective-mode contributions registered at provisional tier with a forward-looking open problem for first-principles derivation. Registered as OPEN-SS-32; testable predictions for higher-$\Nalpha$ alpha-chain nuclei registered as PRED-O-16 (single-cluster extension), PRED-O-17 (single-to-hierarchical regime transition), PRED-O-18 (hierarchical slip-plane additivity).
+\end{enumerate}
+
+\emph{Pattern-6 context.} The K$_3$ quantum $\Bpair = \Mzero/\phig$ now recurs at five identified scales across the strong-sector papers: SS-5's nucleon-pair K$_3$ face contact; SS-5's A=4 closure bonus; SS-7's alpha-alpha edge K$_3$ contact (C3); SS-8's interstitial-to-host-vertex K$_3$ coupling (D2); and (provisionally) the SS-7 cluster-level oblate-deformation mode of facet (c). The recurrence is the K$_3$ scale-recurrence pattern documented across the programme (Pattern 6 in the SS-8 mechanism doc framing); facet (c) is a candidate fifth-scale instance, registered as OPEN-SS-32 pending first-principles derivation.
+
+\item \textbf{Alpha-alpha base-to-base contact.} When two alphas meet in a nuclear assembly, the dominant configuration is base-to-base contact between two alpha polytopes, analogous to the nucleon-nucleon base-to-base configuration of SS-5. The four outer faces of a tetrahedral alpha provide four candidate contact faces \emph{at LO}; vertex-hosting accommodation per refined-C1 facet (b) extends this where cluster topology requires.
 
 \item \textbf{K$_3$ collective mode at each alpha-alpha contact.} The triangular contact face between two alphas bears three nucleon-nucleon pair connections (one per vertex of the triangle), forming a K$_3$ structure. By the SS-5 rule, each K$_3$ face contributes one collective bonding mode at $\Bpair = \Mzero/\phig$.
 
