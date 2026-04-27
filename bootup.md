@@ -157,13 +157,18 @@ CPP/
 ├── ── PAPER SERIES ──
 ├── series_standard_model/            ← SM-N papers (Standard Model, includes mass sector)
 │   ├── papers/                       ← .tex, .pdf, .bib files
-│   │   └── [PAPER-ID]/               ← per-paper subfolder (for papers adopted ≥ 22 Apr 2026)
+│   │   └── [PAPER-ID]/               ← per-paper subfolder (created early — see §3.5 below)
 │   │       ├── reviews/              ← verbatim reviewer correspondence
 │   │       ├── letters/              ← correspondence from Claude (synthesis, review requests)
 │   │       ├── sketches/             ← derivation notes, findings, exploratory analyses
 │   │       ├── scripts/              ← Python verification scripts
 │   │       ├── founders_voice/       ← Thomas's recorded intuitions and organizational notes
-│   │       └── documentation_suite/  ← 7-file companion suite (created at v1.0)
+│   │       └── documentation_suite/  ← four-tier documentation discipline (see §3.5)
+│   │           ├── reasoning-[ID].md       ← Tier 4: verbatim Opus reasoning (canonical)
+│   │           ├── development-[ID].md     ← Tier 3: curated paragraph-form vignettes
+│   │           ├── transcript-[ID].md      ← Tier 2: transaction pointer-map
+│   │           └── (seven companion files: mechanism/glossary/phenomena/
+│   │                philosophy/keywords/reviews/FAQ — produced at Trigger 2)
 │   ├── [type]-SM-N.md                ← 7 documentation suite files per paper (flat, for pre-subfolder papers)
 │   ├── figures/figures-SM-N/         ← SVG + PDF figures
 │   ├── notebooks/                    ← Verification notebooks
@@ -177,6 +182,33 @@ CPP/
 │
 └── archive/                          ← Superseded material
 ```
+
+---
+
+## 3.5 Four-Tier Documentation Discipline (per-paper subfolder convention)
+
+When you produce work that will become or modify a paper, that work is preserved across **four tiers** of artifacts. The discipline is codified in `templates/operating_system.md` §4 "Four-Tier Documentation Discipline." Brief tour:
+
+**Tier 1 — Per-session warm-start summaries.** Session logs in `session_logs/` (Template A or Template B) plus Thomas-verbatim insights in `series_<name>/papers/<ID>/founders_voice/`. Session-bounded, written for the next Opus's orientation.
+
+**Tier 2 — Paper-level transaction pointer-map.** `series_<name>/papers/<ID>/documentation_suite/transcript-<ID>.md`. A numbered transaction log indexing every substantive transaction across the paper's full development arc. Each entry is a single line pointing to the artefact, vignette, or reasoning section that holds its substance. The transcript file is empty of substance; substance lives at the pointer targets. Append-only across sessions.
+
+**Tier 3 — Curated paper-level vignettes.** `series_<name>/papers/<ID>/documentation_suite/development-<ID>.md`. Curated narrative vignettes summarizing each substantive transaction in finished prose (typically 1–3 paragraphs per vignette). Append-only across sessions; accumulates as the paper develops.
+
+**Tier 4 — Verbatim Opus reasoning (the canonical record).** `series_<name>/papers/<ID>/documentation_suite/reasoning-<ID>.md`. Opus's substantive reasoning preserved verbatim across the full development arc, with housekeeping excluded but no summarization or compression of substantive content. **This is the canonical source from which all other tiers are derived.** Append-only at session close.
+
+What goes in Tier 4 (and what is excluded as housekeeping):
+
+- **Included:** multi-paragraph reasoning turns where Opus is doing analysis, testing a hypothesis, working through an argument, articulating a structural observation, considering alternatives, revising an earlier framing, flagging uncertainty, pushing back on a framing, or otherwise engaging in substantive theoretical or methodological work.
+- **Excluded:** tool-call narration ("let me check"), status confirmations ("got it"), procedural housekeeping ("should I commit now"), tool-output narration, verbatim quotations from existing repository files (recoverable from sources).
+
+**When the per-paper subfolder is created.** Early. As soon as in-progress work accumulates beyond a single session log — when there are two or more session logs, a working draft, a sketch, a founders_voice insight, or a registered open problem specific to the candidate paper, the subfolder is created with the four-tier `documentation_suite/` plus `founders_voice/`, `sketches/`, `scripts/`, `letters/`, `reviews/` (empty subfolders carry `.gitkeep` placeholders). Pre-paper subfolder creation is correct and encouraged; deferring to v1.0 forces retroactive curation that loses fidelity. SS-9 was the first paper created under early-subfolder discipline (26 April 2026 Session 3, ahead of any v0.x paper text).
+
+**At Trigger 2 (genuinely-final shipped version, regardless of version label),** the seven companion documentation-suite files (mechanism/glossary/phenomena/philosophy/keywords/reviews/FAQ) are synthesized from the Tier 4 verbatim reasoning + Tier 3 curated vignettes, with Tier 1 session logs and Tier 2 pointer-map as supporting reference. The Tier 4 reasoning files remain alongside as the verbatim source after the synthesis.
+
+**"v1.0" is not the operative trigger.** Trigger 2 fires when the paper is unambiguously done, whatever the version number happens to be. Defer if the version label is provisional; fire when the version is unambiguously final. The per-session Trigger 1 work (four-tier accumulation) captures everything session-window-bounded, so deferring Trigger 2 does not lose information.
+
+See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for the full codification.
 
 ---
 
@@ -333,7 +365,7 @@ The handover document (or its legacy-flat predecessor `development-[ID].md`) is 
 - What registry updates are pending ratification
 - Pointers to verbatim artefacts (reviews, letters, sketches, scripts) that hold the substantive content
 
-The handover is a bounded state snapshot — a few hundred lines, not a full narrative. For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention also provides `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map to verbatim artefacts). See `templates/operating_system.md` §11 for the three-file convention.
+The handover is a bounded state snapshot — a few hundred lines, not a full narrative. For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention provides the four-tier documentation discipline (see §3.5): `documentation_suite/development-[ID].md` (Tier 3 — curated paragraph-form vignettes), `documentation_suite/transcript-[ID].md` (Tier 2 — transaction-indexed pointer-map), and `documentation_suite/reasoning-[ID].md` (Tier 4 — verbatim Opus reasoning, the canonical record from which the other tiers derive). When ongoing work has produced substantive Opus reasoning beyond housekeeping, append to the Tier 4 reasoning file at session close. See `templates/operating_system.md` §4 for the full Four-Tier Documentation Discipline codification.
 
 **Compaction summaries and training data do NOT preserve these specifics.** Numerical results get rounded, decision rationales get compressed, and registry statuses get flattened. If you start substantive work from a compaction summary without reading the handover, you will either (a) ask Thomas to re-explain state he already documented, or (b) guess wrong about the current conditional-theorem tiers, consolidated open problems, or reviewer positions.
 
