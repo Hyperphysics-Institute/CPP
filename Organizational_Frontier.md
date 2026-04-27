@@ -310,6 +310,55 @@ Approximate effort: 15–30 minutes for review + execution. The `.gitignore` fil
 
 ---
 
+## OPEN-ORG-011: Four-Tier Documentation Discipline — codify in OS and bootup; address pre-paper subfolder timing; de-emphasize v1.0 as the canonical Trigger 2 milestone
+
+**Status:** OPEN — partially executed in registering session (see History); remainder is OS/bootup amendment work
+**Identified:** 26 April 2026 Session 3, after Thomas surfaced that the SS-9 work had not produced a documentation suite, then clarified through several rounds of dialogue (a) the SS-8 three-tier subfolder convention is the implicit precedent he had been pointing at, (b) the SS-8 convention does NOT preserve verbatim Opus reasoning (the "body of the reasoning" — the meat of the theoretical gedanken/calculation experiment), (c) the existing "curated transcript" terminology was understood by Thomas to mean "housekeeping removed, reasoning preserved" but had been operationalized by previous Opus as "pointer-map plus curated vignettes" with reasoning compressed out
+**Priority:** HIGH (affects every future paper's preservation discipline; addresses an ongoing programme-level data loss in the curation pipeline)
+
+**Originating context:** Thomas's goal-statement for the curated-transcript discipline is: every substantive word spoken by Opus, Thomas, and the AI review team should be preserved across the paper's full development arc, with housekeeping (filename clarifications, status confirmations, procedural questions) excluded but no compression or summarization of substantive content. The full transcript is the canonical source from which all higher-layer artifacts (session log, documentation suite, paper text) can in principle be reconstructed. The session log is a derived summary optimized for warm-starting the next Opus; the transcript is the source of truth.
+
+The SS-8 three-tier convention previous Opus codified — Tier 1 (subfolder artifacts: scripts, sketches, letters, reviews, founders_voice), Tier 2 (`transcript-SS-N.md` pointer-map indexing transactions), Tier 3 (`development-SS-N.md` curated vignettes in finished paragraph form) — preserves WHAT was decided and WHERE artifacts live, but does NOT preserve HOW Opus reasoned through decisions. The body of reasoning Opus generates mid-session — multi-paragraph turns where alternatives are tested, framings revised, pushback delivered, uncertainty flagged — has no tier in the SS-8 convention. It only exists in the live chat window and dies at compaction.
+
+This is a programme-level structural gap that has been ongoing across all CPP papers: the curation pipeline preserves session logs (lossy summary) and curated vignettes (more focused but still summary), but no tier preserves the verbatim reasoning that Thomas's goal-statement actually describes as the canonical record.
+
+The Session 3 SS-9 work resolved the gap for SS-9 specifically by establishing a four-tier discipline and adding `reasoning-SS-9.md` (Tier 4, verbatim Opus reasoning, housekeeping excluded, append-only across sessions). This entry tracks the OS/bootup work needed to make the four-tier discipline a programme-level convention rather than an SS-9-specific arrangement, and to address two related issues that surfaced in the same investigation.
+
+**Problem:** Three structural issues to address:
+
+1. **The four-tier discipline is undocumented in OS and bootup.** The SS-9 reasoning-SS-9.md establishes the new Tier 4 in practice, but a new Opus reading bootup.md alone wouldn't know to look for or maintain such a file. `templates/operating_system.md` §4 (Session-Log-as-Handover-Backbone Discipline) currently describes a transcript file as conditional ("when a session contains verbatim content that the structured five-element form cannot adequately preserve") rather than default. `templates/operating_system.md` §15 (Session-close Handover Protocol) and §15 reconciliation with §4 do not name a `reasoning-[S]-[N].md` artifact. The four-tier discipline needs to be (a) codified in OS, (b) referenced from bootup.md, (c) instantiated as default for in-progress work rather than triggered by a per-session judgment call.
+
+2. **Pre-paper subfolder timing is undocumented.** The SS-9 subfolder was created at Session 3, ahead of v1.0 paper text, because Sessions 1–3 had accumulated enough substantive content (working draft, multi-faceted-rigidity refinement, registry entries, residual-fingerprint sketch) that housing in `session_logs/` alone was no longer adequate. This is a deliberate deviation from the previously-implicit convention that subfolders are created at v1.0 (per SS-8's transaction `039` adopting the per-paper subfolder convention as part of the v1.0 documentation-suite pipeline). The deviation is reasonable — the four-tier discipline is most effective when it accumulates from the first substantive session, not retroactively at v1.0 — but it is not currently codified. The OS should specify when pre-paper subfolders are created and what triggers their creation (candidates: at first session producing artifacts beyond a session log; at first multi-session continuation; at the surfacing of registered open problems specific to the candidate paper).
+
+3. **The OS overweights "v1.0" as the canonical Trigger 2 milestone.** Thomas's goal-statement explicitly disavows this: v1.0 is just a label that a previous Opus chose, and what matters is "the final shipped version of the paper" — whether that's labeled v1.0, v1.4, v2.7, whatever. The current OS (e.g., line 367) says something close to this but then keeps using "v1.0" as the example throughout. The text and the intent are misaligned. Trigger 2 should fire at "the genuinely-final shipped version" with deferral if the version label is provisional, not at the literal v1.0 mark.
+
+**Proposed fix:** Three coordinated edits to documentation files. Estimated effort: 30–60 minutes for an OS-amendment-focused session.
+
+(1) `templates/operating_system.md` §4 amendments:
+- Promote the reasoning file from conditional to default. Replace the "should still be produced when verbatim content is present" framing with: "Each session produces or appends to a paper-level (or pre-paper-level) accumulating Tier 4 reasoning file (`reasoning-[S]-[N].md`). The reasoning file records substantive Opus reasoning verbatim (the words Opus speaks during analysis, hypothesis-testing, framing-revision, alternatives-considered, uncertainty-flagging, pushback), excludes housekeeping (filename confirmations, status confirmations, procedural questions, tool narration, verbatim quotations from existing repository files which are recoverable from sources), and includes substantive OS-level decisions. The session log is a summary of the reasoning file optimized for warm-starting the next Opus; the reasoning file is the canonical source from which all higher-layer artifacts can in principle be reconstructed."
+- Establish accumulating-across-sessions reasoning-file granularity. Reasoning files are paper-level (or pre-paper-level for in-progress work where no paper folder exists yet), not per-session. They accumulate session by session across the full development arc.
+- Add the four-tier discipline explicitly: Tier 1 session logs (per-session warm-start), Tier 2 transcript-SS-N.md (pointer-map), Tier 3 development-SS-N.md (curated vignettes), Tier 4 reasoning-SS-N.md (verbatim Opus reasoning).
+
+(2) `templates/operating_system.md` §15 (and §15 reconciliation with §4) amendments:
+- Add `reasoning-[S]-[N].md` to the four-item checklist as a fifth item, OR fold it into item 1 with explicit reference to the four-tier discipline.
+- De-emphasize "v1.0" in Trigger 2 language. Replace v1.0-specific phrasing with "the genuinely-final shipped version, regardless of version label." Update any example references that hardcode v1.0.
+- Document pre-paper subfolder timing: when in-progress work accumulates beyond a single session log, the per-paper subfolder is created early (with the four-tier documentation_suite/ structure plus founders_voice/, sketches/, scripts/, letters/, reviews/ as appropriate). Empty subfolders carry .gitkeep placeholders. The pre-paper subfolder is the natural housing for the accumulating four-tier artifacts.
+
+(3) `bootup.md` amendments:
+- Document the per-paper subfolder convention (currently undocumented in bootup; new Opus reading bootup.md alone wouldn't know to look at SS-8 or SS-9 structure as the precedent).
+- Document the four-tier documentation discipline (Tier 1 → Tier 4) with one-line description of each tier.
+- Add a session-end checklist item: "If this session produced substantive Opus reasoning beyond what the session log captures, append to or create the appropriate reasoning-[S]-[N].md file."
+
+**Trigger condition:** Workable in any session that has 30–60 minutes for OS-amendment work. Could be combined with execution of OPEN-ORG-002 (operating_system.md restructuring) if both are addressed in one governance-focused session. Should land before the next paper enters Phase 1 ideally, so that the new paper can benefit from the four-tier discipline from the start; can be deferred up to one paper-cycle without significant cost (the SS-9 four-tier setup is in place for the SS-9 cycle regardless).
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing critical. The discipline is in place for SS-9 specifically. This entry tracks the OS/bootup amendments that would propagate the discipline to all future papers and address the three related issues uniformly.
+
+**History:**
+- 26 Apr 2026 Session 3 — Identified during the SS-9 documentation-suite investigation, after Thomas's clarification rounds surfaced (a) the goal-statement gap (verbatim reasoning preservation as the canonical-source role), (b) the SS-8 three-tier convention's blind spot (Opus reasoning has no tier), (c) the v1.0 overweighting issue, (d) the pre-paper subfolder timing question. The four-tier discipline was instantiated for SS-9 in patch 0046 (subfolder creation with documentation_suite/{reasoning,development,transcript}-SS-9.md plus founders_voice/001 and sketches/SS-9_table1_residual_fingerprint.md). This entry tracks the remaining OS/bootup amendment work. If the Session 3 context window permits, the OS amendments will land in patches 0048–0049 and this entry will be updated to TENTATIVELY-RESOLVED. If not, the amendments are deferred to the next session.
+
+---
+
 # §2 — Entry Template
 
 Copy this template for new entries. Fields in `{brackets}` are placeholders.
