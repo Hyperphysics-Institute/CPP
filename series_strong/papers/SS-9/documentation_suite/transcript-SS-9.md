@@ -173,3 +173,35 @@
 - `120` 2 May Session 4 follow-up 4th sub-arc — `development-SS-9.md` Vignette 9 added (self-correction narrative) → `series_strong/papers/SS-9/documentation_suite/development-SS-9.md`
 - `121` 2 May Session 4 follow-up 4th sub-arc — `reasoning-SS-9.md` Session 4 follow-up 4 verbatim Opus reasoning appended → `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md`
 - `122` 2 May Session 4 follow-up 4th sub-arc — Session 4 session log appended with fourth follow-up sub-arc continuation → `session_logs/2026-05-02_session_log.md`
+
+### Session 5 — AME 2020 lookup (Phase 1) and OPEN-SS-35 scoping (Phase 2) (2 May 2026)
+
+#### Phase 1 — AME 2020 lookup for ${}^{92}$Pd and ${}^{96}$Cd
+
+- `123` 2 May Session 5 Phase 1 — Thomas requested next-session work: priority (3) AME 2020 lookup followed by priority (2) OPEN-SS-35 attempt. Phase 1 retrieves AME 2020 evaluated mass-excess values via web search → `series_strong/papers/SS-9/sketches/SS-9_AME2020_lookup_92Pd_96Cd.md` §1
+- `124` 2 May Session 5 Phase 1 — ${}^{92}$Pd: ME = $-54576.23$ keV (chemlin.org, AME 2020 vintage 2020-10-15); cross-check $B = 761.149$ MeV, $B/A = 8.273$ MeV → `SS-9_AME2020_lookup_92Pd_96Cd.md` §1
+- `125` 2 May Session 5 Phase 1 — ${}^{96}$Cd: ME $\approx -56104$ keV (periodictable.com); cross-check $B/A = 8.265$ MeV → $B = 793.40$ MeV → `SS-9_AME2020_lookup_92Pd_96Cd.md` §1
+- `126` 2 May Session 5 Phase 1 — Honesty caveat: both values are AME 2020 evaluations, not direct mass measurements. Kimura+2025 (arXiv:2504.12639) measured ${}^{84}$Mo and ${}^{88}$Ru directly but did NOT include ${}^{92}$Pd or ${}^{96}$Cd. Direct measurements remain a future-strengthening target → `SS-9_AME2020_lookup_92Pd_96Cd.md` §1
+- `127` 2 May Session 5 Phase 1 — CPP predictions vs AME 2020: ${}^{92}$Pd residual $+0.95$ MeV (0.13%), ${}^{96}$Cd residual $+2.56$ MeV (0.32%) using calibrated formula; refined-decomposition residuals $+0.48$ MeV and $+1.98$ MeV → `SS-9_AME2020_lookup_92Pd_96Cd.md` §2
+- `128` 2 May Session 5 Phase 1 — **Substantial empirical finding:** per-nucleus $B_{\rm slip}$ sequence accelerates sharply approaching ${}^{100}$Sn boundary: $1.94 \to 2.11 \to 2.80 \to 3.28 \, B_{\rm pair}$ at $N_\alpha = 22, 23, 24, 25$. Non-linear, with large jump at $N=23 \to 24$. Confirms shell-closure-influence concentrated at doubly-magic point → `SS-9_AME2020_lookup_92Pd_96Cd.md` §3; see reasoning Session 5 Phase 1
+- `129` 2 May Session 5 Phase 1 — PRED-C-77 (${}^{92}$Pd) and PRED-C-78 (${}^{96}$Cd) registered as confirmed predictions at extrapolation level. Direct mass measurements would strengthen → `predictions.md` §1
+- `130` 2 May Session 5 Phase 1 — Cumulative swarm tally: 105 → **107** zero-parameter empirical correspondences (105 with direct anchors + 2 conditional on AME 2020 evaluation accuracy) → `predictions.md` §Cumulative Swarm Tally
+- `131` 2 May Session 5 Phase 1 — Script extension: `PRED_O_19_VERIFICATION` updated with new 'evaluated' status flag distinguishing AME 2020 evaluations from direct measurements → `series_strong/papers/SS-9/scripts/SS-9_alpha_chain_extended.py`
+- `132` 2 May Session 5 Phase 1 — `future_projects.md` cross-session priority queue: queue item B (AME lookup) marked completed; queue item A (OPEN-SS-35) leverage description expanded with Phase 1 empirical reinforcement → `future_projects.md` Session-level priority queue
+
+#### Phase 2 — OPEN-SS-35 scoping
+
+- `133` 2 May Session 5 Phase 2 — OPEN-SS-35 first-principles attempt opened. Strategy: SS-6-style scoping document since full closure is multi-session → see reasoning Session 5 Phase 2 "Strategy"
+- `134` 2 May Session 5 Phase 2 — Five candidate routes evaluated: A (3D HO + spin-orbit from CPP), B (Pattern-6 at nucleon-shell scale), C (H$_4$ symmetry group), D (600-cell shell counts directly), E (Route A specific instance) → `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_scoping.md` §2
+- `135` 2 May Session 5 Phase 2 — **Route D ruled out by computation:** 600-cell distance shells from reference vertex have cumulative counts $\{13, 33, 45, 75, 87, 107, 119, 120\}$, NOT matching the strong magic numbers $\{2, 8, 20, 28, 50, 82, 126\}$. Magic numbers must emerge from nucleon-orbital structure, not lattice geometry directly → `SS-9_OPEN-SS-35_scoping.md` §2 Route D; `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_scoping.py` `compute_600_cell_distance_shells`
+- `136` 2 May Session 5 Phase 2 — Route A adopted as primary (most tractable); Routes B, C deferred → `SS-9_OPEN-SS-35_scoping.md` §2
+- `137` 2 May Session 5 Phase 2 — **Level-0 consistency check (HO frequency):** CPP estimate $\hbar\omega = (3/2)(\hbar c)^2/(m_n R_\alpha^2) = 11.07$ MeV at $R_\alpha = 2.37$ fm matches empirical Bohr-Mottelson $41/A^{1/3}$ at $A = 56$ to ~3% with no fitted parameters → `SS-9_OPEN-SS-35_scoping.md` §3.1
+- `138` 2 May Session 5 Phase 2 — **Level-0 consistency check (spin-orbit):** CPP ratio $V_{\rm SO}/\hbar\omega \sim 0.10$ from ZBW + nuclear $v/c \sim 0.3$; empirical ratio $\sim 0.14$ at $A = 56$. CPP value falls in magic-number-producing range → `SS-9_OPEN-SS-35_scoping.md` §3.2
+- `139` 2 May Session 5 Phase 2 — **Combined consistency verdict:** Both scales align without fitting. OPEN-SS-35 closure attempt is **promising** rather than open-ended → `SS-9_OPEN-SS-35_scoping.md` §3.3
+- `140` 2 May Session 5 Phase 2 — Three sub-questions registered for sequential closure: (a) HO mean-field from K$_3$ collective modes; (b) spin-orbit from ZBW phase correlations; (c) ratio verification across A range. Sub-question (a) identified as next-session-tractable → `SS-9_OPEN-SS-35_scoping.md` §5
+- `141` 2 May Session 5 Phase 2 — OPEN-SS-35 entry in `Research_Frontier.md` updated: status changed from "registered candidate" to "scoping work begun, Level-0 consistency check passed" → `Research_Frontier.md` OPEN-SS-35 entry
+- `142` 2 May Session 5 Phase 2 — Reproducible Python script `SS-9_OPEN-SS-35_scoping.py` produced with HO consistency check, spin-orbit consistency check, 600-cell shell-count negative result, and B_slip acceleration display → `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_scoping.py`
+- `143` 2 May Session 5 Phase 2 — `transcript-SS-9.md` Session 5 Phase 1+2 transactions appended (this entry) → `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md`
+- `144` 2 May Session 5 Phase 2 — `development-SS-9.md` Vignette 10 added → `series_strong/papers/SS-9/documentation_suite/development-SS-9.md`
+- `145` 2 May Session 5 Phase 2 — `reasoning-SS-9.md` Session 5 Phase 1+2 verbatim Opus reasoning appended → `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md`
+- `146` 2 May Session 5 Phase 2 — Session log appended with Session 5 entry → `session_logs/2026-05-02_session_log.md`
