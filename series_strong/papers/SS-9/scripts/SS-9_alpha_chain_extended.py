@@ -40,6 +40,12 @@ B_PAIR  = 2.342    # MeV — M_0 / phi (SS-5 derived via C3)
 # Calibrated parameter (Regime II only, calibrated from 56Ni residual)
 B_SLIP  = 4.0      # MeV — persistent slip-plane bonus on the deltahedron core
 
+# Candidate Pattern-6-natural exact form (OPEN-SS-36, registered 2 May 2026
+# 3rd sub-arc in OPEN-SS-34 derivation): three-K3-mode symmetric coupling at
+# the satellite-attachment face produces SU(2) eigenvalue sqrt(3).
+import math
+B_SLIP_SQRT3 = math.sqrt(3) * B_PAIR  # MeV; agrees with 56Ni calibration to 1.4%
+
 
 # ---------------------------------------------------------------------------
 # Empirical data: strict-N=Z alpha-chain binding energies (TOI 98, MeV)
@@ -106,6 +112,13 @@ def B_satellite(N, B_slip=B_SLIP):
     """Regime II formula: deltahedron-core (N=14) + satellite alphas, plus
     persistent slip-plane bonus B_slip on the core. Valid for N >= 14."""
     return N * B_ALPHA + (N + 22) * B_PAIR + B_slip
+
+
+def B_satellite_zero_param(N):
+    """Zero-parameter Regime II formula candidate (OPEN-SS-36):
+    B_slip = sqrt(3) * B_pair from three-K3-mode symmetric coupling.
+    Valid for N >= 14."""
+    return N * B_ALPHA + (N + 22) * B_PAIR + B_SLIP_SQRT3
 
 def E_actual(N, B_exp):
     """Effective contact-graph edge count, inverted from binding."""
@@ -261,6 +274,45 @@ def cumulative_satellite_fit():
     print()
 
 
+def zero_parameter_satellite_fit():
+    """Zero-parameter satellite-regime fit using B_slip = sqrt(3)*B_pair
+    (OPEN-SS-36 candidate exact form, registered 2 May 2026 3rd sub-arc)."""
+    print("=" * 88)
+    print(f"Zero-parameter satellite-regime fit (B_slip = sqrt(3)*B_pair = {B_SLIP_SQRT3:.4f} MeV)")
+    print("=" * 88)
+    print(f"{'N_a':>3} {'Nuc':>5} {'B_pred':>10} {'B_exp':>10} {'Resid':>8} {'Resid_Bp':>9}")
+    print("-" * 60)
+    rms_sum = 0.0
+    n = 0
+    residuals = []
+    for N, nuc, B in ALPHA_CHAIN:
+        if N < 14: continue
+        b_pred = B_satellite_zero_param(N)
+        resid = B - b_pred
+        residuals.append(resid)
+        rms_sum += resid**2
+        n += 1
+        print(f"{N:>3} {nuc:>5} {b_pred:>10.3f} {B:>10.3f} {resid:>+8.3f} {resid/B_PAIR:>+9.3f}")
+    for N, nuc, Z, Nn, ME, sig_ME, src, status in PRED_O_19_VERIFICATION:
+        if N in (21, 22) and status == 'measured':
+            B_exp = binding_from_ME(Z, Nn, ME)
+            b_pred = B_satellite_zero_param(N)
+            resid = B_exp - b_pred
+            residuals.append(resid)
+            rms_sum += resid**2
+            n += 1
+            print(f"{N:>3} {nuc:>5} {b_pred:>10.3f} {B_exp:>10.3f} {resid:>+8.3f} {resid/B_PAIR:>+9.3f}")
+    rms = np.sqrt(rms_sum / n)
+    print(f"\n  RMS residual: {rms:.3f} MeV across {n} nuclei (N_alpha = 14-22)")
+    print(f"  Mean residual: {sum(residuals)/n:+.3f} MeV")
+    print(f"  Max |residual|: {max(abs(r) for r in residuals):.3f} MeV")
+    print(f"  Relative accuracy: {rms / np.mean([d[2] for d in ALPHA_CHAIN if d[0] >= 14]) * 100:.3f}%")
+    print()
+    print("  NB: This formula has NO calibrated parameter — B_slip is")
+    print("      the OPEN-SS-36 candidate exact form sqrt(3)*B_pair.")
+    print()
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -275,3 +327,4 @@ if __name__ == "__main__":
     analyse_satellite_regime()
     verify_O19()
     cumulative_satellite_fit()
+    zero_parameter_satellite_fit()
