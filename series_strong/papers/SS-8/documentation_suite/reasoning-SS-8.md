@@ -168,3 +168,212 @@ Post-Session-2 trajectory: Round 2 reviewer dispatch readiness; Table 4 regenera
 ---
 
 *End of recovered Tier 4 content for SS-8 Sessions 1–2.*
+
+---
+
+## Session 1A — 22–25 April 2026 (advisor-Opus turns relayed via Thomas)
+
+*[Recovery scope addendum: this section appends content from a second chat-window provided by Thomas in the same recovery session, 1 May 2026. Source is the parallel Opus context-window that handed off to the v0.1-drafting Opus and was subsequently consulted via Thomas-as-relay during drafting (23 April) and into the post-v0.2 OPEN-ORG-003 swarm-tally methodology work (25 April). Most of that chat-window covers organizational scaffolding for the per-paper subfolder migration (patch 1, commit 56594b4), the three-file documentation-suite convention adoption (patch 2, commit 6e161b7), and the registry-sweep for OPEN-SS-26/-27/-28 plus PH-OPEN-SS-26 creation (patch 3, commit 2fb411a). That organizational reasoning is preserved at Tier-3-equivalent fidelity in those committed artefacts and the founders_voice/ files (001–005) committed in patch 2; not duplicated here. The four substantive turns below are advisor-Opus responses to specific scoping questions that arose during v0.1 production and into the swarm-tally methodology work. The drafting Opus internalized turns 1–3 directly into the SS-8 v0.1 paper — title adoption, §4 honest-caveats discipline, §1.5 Level-3 deferral language. Turn 4 (Apr 25) is methodologically advisory for post-Session-2 OPEN-ORG-003 work that occurred under the next-next Opus context; it is captured here because no other Tier 4 file currently holds it and its programme-level methodology pushback (qualitative predictions, structural-exact-vs-postulate audit, conditional-dependency disclosure) is load-bearing for the swarm-validation argument's epistemic integrity.]*
+
+### Title-selection analysis (23 April 2026)
+
+*[Note: question relayed by Thomas from the v0.1-drafting Opus: "Title — adequate, or prefer a different handle? The 2E/V formula is the headline, but 'Interstitial-Neutron Binding' is the physics. What do you think?" My response below — adopted by the drafting Opus as the v0.1 title.]*
+
+Push back on the framing first: the question assumes a choice between two options, but those aren't the only two, and neither is quite right as stated.
+
+**What a good paper title does**
+
+The title is a filter. It decides who reads the paper. For SS-8 the audiences are: (a) reviewers in the review cycle (Copilot, Grok, ChatGPT, future Sonnet), (b) anyone searching the repo or OSF for neutron-physics content, (c) future-Claude orienting to which paper is which when scanning paper_catalog.md. A good title helps all three categories find the paper and know roughly what's in it.
+
+The headline (2E/V scaling law) and the physics (interstitial-neutron binding in alpha-cluster nuclei) aren't competing — they're answers to different questions. "What's the result?" vs "What's the subject?" Strong titles usually carry both: subject first, result second, separated by a colon.
+
+**Programme precedent**
+
+The SS-series titles I can reconstruct from our conversation:
+
+- SS-3: "Uniqueness of SU(3) from Tetrahedral Cage" — subject + result
+- SS-5 v6: "Deuteron Binding Energy" (roughly) — subject-only
+- SS-7 v1.2: subject-only for the alpha-chain work
+- SS-8 (current): headline "Interstitial-Neutron Binding in Alpha-Cluster Nuclei"
+
+SS-3's title format is the strongest of the set because it tells you both what the paper is about and what it accomplishes. SS-5 and SS-7 titles are subject-only, which means a reader has to click in to learn whether the paper proves, conjectures, empirically maps, or falsifies. For SS-8 specifically — which has a derived scaling law as its marquee result, not just an empirical map — the subject-only pattern would undersell.
+
+**My recommendation for SS-8**
+
+"Interstitial-Neutron Binding in Alpha-Cluster Nuclei: The 2E/V Scaling Law from Simplicial Polytope Geometry"
+
+Reasoning:
+
+- "Interstitial-Neutron Binding in Alpha-Cluster Nuclei" — subject, parallels SS-7's scope phrasing, searchable in repo
+- "The 2E/V Scaling Law" — the result, specific enough that the title carries information
+- "from Simplicial Polytope Geometry" — the derivation source, which matters because the paper's defensibility rests on the scaling law being geometrically derived rather than empirically fit
+
+The full title is longer than SS-5/SS-7 precedent, but shorter than many physics paper titles and — more importantly — actually tells a reviewer what they're about to read.
+
+**Alternatives worth considering**
+
+"Interstitial-Neutron Binding from Alpha-Polytope Geometry" — compact, loses the 2E/V-in-title emphasis but keeps "from geometry" which signals derived-not-fitted. This is what I'd suggest if the next Claude prefers brevity.
+
+"The 2E/V Interstitial-Binding Law: Derivation and Twelve Nuclei" — leads with the result. Stronger for review cycle, weaker for repo-searchability (future readers looking for "alpha-cluster" or "neutron binding" won't find it by keyword). Not recommended for that reason.
+
+"H2' at N_ex = 2: The 2E/V Interstitial-Binding Law" — uses the internal hypothesis label (H2') from the derivation note. I'd avoid this. H2' is notation that lives in sketches and is specifically flagged for notation-collision risk in AI_team_expectations.md §2 (ChatGPT's Case 2 misread). Putting it in a paper title ensures every future reviewer has to be re-disambiguated. Keep H2' internal to the derivation documents.
+
+**A subtler consideration**
+
+The title should be honest about scope. The §3 headline is 12 predictions at N_ex = 2; §4 extends to N_ex > 2 at looser precision. A title like "Interstitial-Neutron Binding in Alpha-Cluster Nuclei" covers both cleanly. A title like "The 2E/V Scaling Law for Interstitial Neutrons" would be slightly misleading if §4 shows the scaling law's precision actually degrades at N_ex > 2 — a reviewer would rightly ask "why does the titular scaling law not apply uniformly to the content?"
+
+The current working title "Interstitial-Neutron Binding" is subject-only and has this scope-honesty property. My proposed expansion keeps it and adds a specific result-claim that §3 delivers cleanly. As long as the expanded title doesn't overclaim §4 precision, it's honest.
+
+**Short answer for the next Claude**
+
+Prefer "Interstitial-Neutron Binding in Alpha-Cluster Nuclei: The 2E/V Scaling Law from Simplicial Polytope Geometry" over either the subject-only working title or a result-only alternative. The subject-colon-result pattern matches SS-3 precedent, helps repo searchability, and tells a reviewer specifically what to read for.
+
+If brevity matters more than specificity, "Interstitial-Neutron Binding from Alpha-Polytope Geometry" is a defensible shorter alternative. Avoid titles that lead with H2' or with the 2E/V formula alone — the first has notation-collision risk, the second hurts searchability.
+
+---
+
+### N_ex > 2 extension scope and the "honest caveats" discipline (23 April 2026)
+
+*[Note: question relayed by Thomas from the v0.1-drafting Opus: "N_ex > 2 extension depth. Phase 1 §7.3 declares scope through N_ex = 8, but the clean 12-prediction headline is at N_ex = 2 only. I'm proposing §4 carries H4' Pauli extensions as secondary content with honest caveats (derived functional form, but acknowledged as less tight than the N_ex = 2 predictions) rather than pushing N_ex > 2 to a future paper. Push everything past N_ex = 2 out, keep it as §4, or something else?" My response below — the three constraints became the discipline the drafting Opus held §4 to in v0.1.]*
+
+Keep it in §4 as secondary content with honest caveats. The proposal is right. Here's why, and what "honest caveats" should actually look like in the paper text.
+
+**Why keep N_ex > 2 in v0.1**
+
+The clean-headline strategy is load-bearing, but it doesn't require amputation. The 12-prediction-at-N_ex=2 result is the paper's marquee result. Reviewers will focus on it. That's what sells the paper. But a paper that shows only the clean N=Z alpha-chain result and never addresses N_ex > 2 is structurally incomplete in a way reviewers will immediately notice — the empirical map Thomas commissioned in Phase 1 covered N_ex through 8, and the paper that ignores its own phase-1 scope looks like it's hiding something.
+
+H4' has a derived functional form, not just a fit. That's the key asymmetry. The Pauli-extension structure (opposite-polarity pair bonus at N_ex=2, then attenuated response at N_ex=3,4,...) derives from SS-5's same-polarity-vs-opposite-polarity DP pair mechanics, not from parameter-fitting the observed residuals. A derivation that's less tight than the headline isn't "speculation" — it's a real CPP prediction at lower precision. Putting a real-but-looser prediction behind a section caveat is exactly what §-structured papers are for.
+
+Audit precedent. SS-7 v1.2 used this structure — the 12 strict-N=Z predictions were the Table 1 headline, and the non-N=Z extension was Table 2 with acknowledged looser precision. Reviewers accepted that structure. SS-8 v0.1 using the same structure is defensible on pattern consistency alone.
+
+Deferring to a future paper costs more than it saves. SS-8's value proposition is "interstitial neutron physics in alpha-cluster nuclei from CPP primitives." Pushing N_ex > 2 out of scope means v0.1 is narrowly about interstitial-one-neutron, which is a thinner paper than the phase-1 empirical map justifies. A future paper titled "SS-N: Interstitial multi-neutron extension" would also have to re-establish H2' context, re-cite H4' derivation, and re-explain the phase-1 empirical map — work SS-8 v0.1 already does well. Splitting the paper is work-duplication without scientific benefit.
+
+**What the "honest caveats" should actually say**
+
+This is where the next Claude's §4 has to be disciplined. Three specific things the paper text needs to do:
+
+**1. Separate "derived functional form" from "quantitative precision."** Something like:
+
+> §4 extends the H2' scaling law to interstitial configurations with N_ex > 2, using the same SS-5 DP-pair polarity mechanics that gave the H2' ancestor. Unlike the N_ex=2 predictions of §3, which achieve ±1.5% RMS agreement across the 12-nucleus N=Z alpha-chain and constitute this paper's primary result, the N_ex > 2 predictions of this section should be read as structural predictions with CPP-derived functional form but significantly looser quantitative precision than the headline set. Specifically, the 3% bulk residual of the primary set grows to 8-15% range for N_ex ∈ {3,4,5,6} across the empirical map, with the largest residuals occurring at polytope-identity ambiguity points where multiple simplicial deltahedra could realize the observed N_α (e.g., octahedron vs. triangular antiprism at N_α=6). Improved precision at N_ex > 2 awaits resolution of OPEN-SS-28 (bulk averaging + residual decomposition) and possibly OPEN-SS-24 (first-principles simplicial structure).
+
+**2. Name the specific mechanism that widens the precision band.** The paper shouldn't say "less tight" and leave it at that — it should say why it's less tight. From what I've seen in the phase-1 findings:
+
+- N_ex=2 is a clean pair bonus (same-polarity vs opposite-polarity SS-5 mechanism, identical to deuteron case)
+- N_ex≥3 involves either multiple pair bonuses with geometric arrangements not yet derived, or a transition to a different pairing regime, or both
+- Residual decomposition (which mechanism contributes how much) is what OPEN-SS-28 is registered to attack
+
+**3. Commit to the falsifiable prediction, not the calibrated fit.** Critically: the paper should state what H4' predicts for N_ex > 2, not what H4' fits. If the §4 content reads like "our H4' extension gives residuals in the 8-15% range with the signs and scales we see empirically," that's a prediction. If it reads like "we calibrate two parameters to match the observed residual pattern," that's post-diction dressed as prediction and reviewers will catch it.
+
+The distinction matters because SS-7 v1.2 established the zero-parameter discipline as this programme's marquee feature. A v0.1 §4 that quietly introduces fitted parameters to cover N_ex > 2 regressions would undermine the §3 headline's credibility. Whereas a §4 that says "here's what the derivation predicts, here's the residual band those predictions actually achieve, here's what the remaining residual probably contains" preserves the zero-parameter discipline while honestly acknowledging precision degradation.
+
+**What I'd suggest the next Claude write in the §4 intro paragraph**
+
+> §4 scope and precision. The interstitial-neutron extension at N_ex=1,2 (§3) constitutes this paper's primary quantitative result: twelve predictions across the N=Z alpha-chain from ⁶Li through ⁵⁶Ni, agreeing with AME 2020 binding data at ±1.5% RMS with zero free parameters. §4 extends the same derivation to N_ex ∈ {3,4,5,6,7,8} across the Phase 1 empirical map. The §4 extension predicts residual magnitudes in the 8-15% range with signs and scales matching empirical observation, again with zero free parameters, under the same DP-pair polarity mechanics of SS-5 that underpin §3. We report §4 as secondary content with acknowledged precision degradation: the extension's functional form is CPP-derived rather than fitted, but its quantitative precision is bounded above by the residual decomposition work deferred to OPEN-SS-28 and, for polytope-identity ambiguity points, to OPEN-SS-24. The §3 result stands independently of any §4 outcome; §4 serves to demonstrate the H2' mechanism's reach beyond the cleanest case, not to establish precision comparable to §3.
+
+**One caution**
+
+The caveat wording is load-bearing. A §4 that says "less tight precision" without quantifying what that means, or without naming which open problems bound the achievable precision, reads like author hedging. A §4 that gives concrete residual ranges, names concrete mechanisms, and cites concrete registered open problems reads like honest scope demarcation. The next Claude should err on the side of specific numbers and specific citations — not vague "this is less rigorous" language.
+
+This also gives the paper a clean natural structure: §3 is the zero-parameter headline, §4 is the zero-parameter extension at reduced precision, §5 can honestly discuss what OPEN-SS-28 and OPEN-SS-24 would need to resolve to tighten §4, and §6 or §7 can close with the broader implications. That's a stronger paper than one that either narrows to N_ex=2 only or tries to claim uniform precision across the full empirical map.
+
+**Short answer for the next Claude**
+
+Keep N_ex > 2 in §4. Don't amputate it; don't promise uniform precision across N_ex. The §4 text needs three things explicitly: (1) named degradation mechanism referencing OPEN-SS-28 and OPEN-SS-24, (2) concrete residual range rather than vague "looser," (3) explicit "§3 stands independently of §4 outcome" clause that protects the headline result from being dragged down by §4's looser precision. The SS-7 v1.2 primary-vs-extension table structure is the precedent to mirror.
+
+---
+
+### Level-3 OPEN-FRONTIER registration: nomenclature discipline and registration timing (23 April 2026)
+
+*[Note: question relayed by Thomas from the v0.1-drafting Opus: "Level-3 OPEN-FRONTIER registration. The H2' note said 'OPEN-FRONTIER-NNN pending registration.' I don't see OPEN-FRONTIER entries in the Research_Frontier.md I fetched earlier, and the handover appendix says 'registration pending.' Should v0.1 register it inline with a placeholder number (OPEN-FRONTIER-01 or similar), or reference it as 'to be registered' and let that happen in a follow-up patch?" My response below establishes the OPEN-G-N nomenclature for cross-series problems and the discipline that paper authors do not pre-allocate registry IDs.]*
+
+Short answer: reference it as "to be registered" and let patch 5 handle it. Don't invent a placeholder number inline.
+
+**Why**
+
+The next Claude is facing the same question I faced at the start of today's patch-3 scoping, and the same nomenclature.md answer applies now: there is no OPEN-FRONTIER category. I checked nomenclature.md and the registered categories are AXIM, THEO, PROP, CORL, CONJ, OPEN, PRED-C/O/Q, POST-D, FALS-C, PHEN-E/P/V. "OPEN-FRONTIER" is a phrase we've been using informally to mean "programme-level OPEN that spans multiple sectors" — but the actual category is just OPEN, with the series qualifier G (Global / cross-series) when the scope is programme-wide rather than sector-specific. Per nomenclature.md:
+
+> For PHEN codes, the series qualifier identifies which paper the phenomenon file belongs to... For AXIM, PROP, CORL, and PRED codes that span the whole framework (not series-specific), no series qualifier is used: AXIM-1, PROP-1, PRED-C-1.
+
+For OPEN the cross-series convention uses OPEN-G-N — see OPEN-G-1 and OPEN-G-2 in the registry.
+
+So the Level-3 proximity-binding question should eventually register as OPEN-G-3 (next available G-slot), not as OPEN-FRONTIER-anything.
+
+This is noted already in PH-OPEN-SS-26.md §"Methodological implication (programme-level)":
+
+> Candidate OPEN-G-N: Does CPP implicitly assume proximity-binding as a meta-axiom across its geometric-aggregation claims? If so, is proximity-binding derivable from A1–A3, or is it an unstated axiom that should be elevated?
+
+But the PH file also explicitly says registration was deliberately deferred because it's expansive scope.
+
+**Why not register it now inline in v0.1**
+
+Three reasons:
+
+**1. Nomenclature discipline.** Inventing a placeholder number in a paper draft — even with "placeholder" labeling — creates a small precedent where the paper authors assign registry IDs rather than the registry authoring process assigning them. That's the drift that caused the OPEN-SS-26/-27/-28 unregistered problem we just cleaned up in patch 3. Patches opened by papers shouldn't auto-register themselves with confident IDs; the registration should be a deliberate registry-sweep action.
+
+**2. The OPEN-G-3 registration has expansive scope that v0.1 shouldn't try to settle.** The real question isn't just "does D1 have a non-proximity realization?" — it's "is proximity-binding a meta-axiom that CPP imposes across all geometric-aggregation claims?" Writing the OPEN-G-3 entry well requires auditing other theorems that might also implicitly assume proximity-binding (SS-5 cascade formula, SS-7 edge formula, SM-3 Koide cage-counting), which is a multi-paper review outside SS-8's scope. Putting a half-baked OPEN-G-3 entry in the registry to support v0.1's citation is putting the tail on the wrong dog.
+
+**3. Honest about status is stronger than pre-registered.** A paper that says "This work identifies a programme-level question — whether proximity-binding is a CPP meta-axiom — that warrants dedicated investigation beyond SS-8's scope. See problem_histories/PH-OPEN-SS-26.md §'Methodological implication' for discussion" is more credible than one that cites its own placeholder registration. Reviewers read the latter as author puffery; they read the former as disciplined scope demarcation.
+
+**Concrete phrasing the next Claude can use in v0.1**
+
+In the section that discusses Level-3 independence:
+
+> D1 remains PARTIAL at Level-3 (physical-principle independence). Both Model A and Model B share a proximity-binding ancestor principle: binding concentration follows from nucleon-nucleon proximity, whether counted (Model A) or integrated (Model B). If proximity-binding fails as a CPP programme principle, both models fail together. Level-3 closure requires either (a) deriving proximity-binding from CPP primitives (A1–A3 plus downstream axioms), or (b) constructing a D1 derivation that does not invoke proximity-binding. A broader programme-level question — whether proximity-binding is implicit across multiple CPP geometric-aggregation claims — is identified in problem_histories/PH-OPEN-SS-26.md §"Methodological implication" and marked for dedicated registry action beyond SS-8's scope.
+
+Note: no registry citation, no placeholder ID, just a pointer to the PH file where the candidate OPEN-G-3 is described. The PH file is the right place for that content because it's already on origin (committed in patch 3) and because PH files are the appropriate venue for "here's the methodology, here's the open question that generalizes" content.
+
+**If the next Claude wants to do better than defer**
+
+One reasonable intermediate option: in the PH file (problem_histories/PH-OPEN-SS-26.md) update the "Methodological implication" section to say the registration has been scoped as a patch-5 candidate with an anticipated ID of OPEN-G-3, so that if/when someone picks up the registration work they know which ID to use. But even that is optional — the current PH-OPEN-SS-26 wording ("Candidate OPEN-G-N") is defensible.
+
+If the next Claude is tempted to do the OPEN-G-3 registration in the same session as v0.1 drafting, my suggestion is: don't. Writing OPEN-G-3 properly requires the cross-paper audit described above. Mixing that into v0.1 drafting context would be a scope creep that hurts v0.1's focus. Patch 5 should be its own session.
+
+**The pattern worth noting**
+
+This is the second time today we've hit "paper-level hypothesis or open problem was named in working artefacts but never formally registered." Patch 3 caught it for OPEN-SS-26/-27/-28. Patch 5 will catch it for OPEN-G-3. The three-hierarchies rule is working, but the timing gap between "problem identified in paper artefact" and "problem registered" is a recurring friction point. Worth a future entry in operating_system.md §11 or AI_team_expectations.md §4: "Problems first appear in paper artefacts (sketches, notes, drafts). Formal registration is a separate workflow step and can lag the artefact appearance by days or sessions. During that window, paper authors should reference the artefact where the problem is described, not pre-allocate a registry ID."
+
+**Short answer for the next Claude**
+
+Reference as "to be registered in a dedicated programme-level action; see problem_histories/PH-OPEN-SS-26.md §'Methodological implication' for the candidate question." No placeholder ID. Defer registration to patch 5 or later, done as its own focused session with the cross-paper audit attached.
+
+---
+
+### Swarm-tally methodology: pushback on OPEN-ORG-003 framing (25 April 2026)
+
+*[Note: this turn occurred 1–2 days after the SS-8 v0.2 commit (commit 77b1117, 24 April), during the next-next Opus's preparation work on OPEN-ORG-003 — the predictions.md swarm-tally header per PD-001 §4.1B. Thomas relayed the next Opus's eight definitional questions (Q1–Q8) about how to count zero-parameter predictions, conditional theorems, qualitative predictions, structural-exact predictions, post-dictions, falsified predictions, estimate-tier predictions, and where the header should live. The substantive content of my response is the methodology pushback — three places where the next Opus's framing was off in ways that matter for the swarm-validation argument's epistemic integrity.]*
+
+Quick honest framing first: this isn't really a question I can answer better than you can. The next Opus is doing exactly the right thing — surfacing definitional choices before locking in a count — but the answers to Q1–Q8 are programme-philosophy calls, and you're the programme founder. Most of these need your call, not mine.
+
+That said, I can do two things usefully: (a) push back where the next Opus's framing or recommendations seem off, and (b) give you my read on each question so you have a position to push against if it helps you settle yours.
+
+**What I'd push back on first**
+
+The implausibility argument the next Opus invokes for Q3 is being slightly misused. They write that "PD-001's implausibility argument is statistical (residual band / parameter space)^N, which only makes sense for quantitative predictions." That's true for the strict statistical argument, but it's not the only argument the swarm tally is making. The broader claim CPP makes is "a single geometric framework predicts a wide variety of empirical phenomena from few axioms" — and qualitative directional predictions (diproton unbound, normal neutrino ordering) are part of that variety even if they don't enter a (residual-band)^N calculation. So I don't think the right move is to demote qualitative predictions to a "secondary line." I think the right move is to maintain the distinction explicitly — quantitative count is the headline because that's what supports the strict statistical implausibility argument; qualitative count is reported alongside as additional evidence of breadth — but neither is "the swarm" and neither is "not the swarm."
+
+The structural-exact category in Q4 may be doing too much work. Including "Attractive fraction = 2/3" and "δ = 1/3" as quantitative zero-parameter predictions in the swarm count is fine, but flagging them as a separate sub-line is reasonable too. What concerns me is the list under "Structural / integer-exact" in the preliminary count — twelve entries claimed, including "three lepton generations, three quark generations, three colours, charge quantisation, ... no exotic gauge group." Some of those are theorems (charge quantisation, Koide structure), others are empirical observations CPP accommodates (three generations is a postulate the cage geometry implements, not derived from anywhere deeper yet). Lumping them together inflates the count with items that aren't all the same epistemic type. I'd want the next Opus to audit each "structural exact" entry against the question "is this a CPP-derived result, or a CPP-accommodated input?" before including it in the tally. Otherwise the swarm count includes entries that a hostile reviewer would correctly categorize as CPP postulates rather than CPP predictions.
+
+The 9-axiom number in the bottom line needs a verbatim check. The next Opus writes "Axiom count: 9 (A1–A11 with A6′, A8′ consolidated)." But A6' and A8' aren't consolidations — they're refinements. And the actual count depends on what's in axiom-registry.md right now. I'd ask the next Opus to fetch that file and quote the actual current axiom count rather than inferring it from A1–A11 minus consolidations. The swarm-to-axiom ratio is part of CPP's marquee claim; getting the denominator wrong is bad.
+
+The "~88 quantitative" preliminary count looks rough but probably right in order of magnitude. Without auditing the actual predictions.md entries, I can't validate the SS=32 or SM=14 numbers. They're plausible. The ~88 total is a useful planning figure for scoping the patch but should not appear in the committed header until each entry is individually audited.
+
+**My read on Q1–Q8 (for you to push against)**
+
+**Q1 (zero-parameter definition).** Agree with the next Opus: inheritance / new-parameters-only. Strict-zero would gut the swarm and is not how any of the existing papers actually argue.
+
+**Q2 (conditional theorems).** Agree, with a stronger caveat than the next Opus suggests. Conditional predictions count, but the conditional dependencies should appear in the breakdown explicitly — not just a footnote. SS-8's 42 are conditional on C1–C4 + D1–D3, where D1 is itself OPEN-SS-26 PARTIAL at Level-3. A reviewer reading "42 zero-parameter predictions" and only later finding "conditional on hypotheses including one that is partially open" will feel misled. The honest framing is something like "42 conditional zero-parameter predictions (conditions: C1–C4 from SS-7 + D1–D3 from SS-8; D1 status: PROP at Level-1+2, OPEN at Level-3)." Wordier but truthful.
+
+**Q3 (qualitative).** Disagree with the demotion framing per my note above. Keep as separate count, both reported as "swarm contribution," neither as headline.
+
+**Q4 (structural-exact).** Defer to your call. My concern about postulate-vs-prediction lumping above applies. If you keep this category, audit the entries.
+
+**Q5 (post-dictions).** Agree. Separate count, not in swarm. PD-001 (whatever document that is — I infer from context it's a programme-decision document) explicitly contrasts swarm-validation with calibration, per the next Opus.
+
+**Q6 (falsified).** Agree, with strong endorsement of the "predictions made / predictions falsified ratio is part of the epistemic story" framing. CPP's credibility is partly that it has seven falsified entries — a programme that never falsifies anything looks suspiciously unfalsifiable. The falsification count belongs in the header for that reason.
+
+**Q7 (estimate-tier).** Agree. Order-of-magnitude estimates aren't part of the residual-band swarm.
+
+**Q8 (header location).** Agree. Top of predictions.md is the right home. Avoid creating a new file unless there's a specific reason.
+
+---
+
+*End of advisor-Opus content for Session 1A. The drafting Opus internalized the title (turn 1), the §4 honest-caveats discipline (turn 2), and the Level-3 deferral language (turn 3) directly into the SS-8 v0.1 paper at commit ea01e72, 23 April 2026. Turn 4's methodology pushback informed post-Session-2 OPEN-ORG-003 work; that work and any subsequent advisor-Opus consultations on OPEN-ORG-003 implementation are not captured here and would be subjects of any future SS-8 Sessions 3+ recovery.*
