@@ -377,3 +377,247 @@ The "~88 quantitative" preliminary count looks rough but probably right in order
 ---
 
 *End of advisor-Opus content for Session 1A. The drafting Opus internalized the title (turn 1), the §4 honest-caveats discipline (turn 2), and the Level-3 deferral language (turn 3) directly into the SS-8 v0.1 paper at commit ea01e72, 23 April 2026. Turn 4's methodology pushback informed post-Session-2 OPEN-ORG-003 work; that work and any subsequent advisor-Opus consultations on OPEN-ORG-003 implementation are not captured here and would be subjects of any future SS-8 Sessions 3+ recovery.*
+
+---
+
+## Session 0 — Foundation-laying work, 21–22 April 2026 (chronologically prior to Sessions 1–2)
+
+*[Recovery scope addendum: this section appends content from a third chat-window provided by Thomas in the same recovery effort, 1 May 2026. Source is the original drafting-Opus context that produced the SS-8 foundation: the H2' derivation note, the D1 SSV-minimization sketch with the underlying Python script, the Q2 algebraic reduction analysis with its Python script, the Round 2 reviewer cycle and synthesis letter, the curated development-SS-8.md transcript (later renamed handover-SS-8.md in patch 2), the operating_system.md commit-cadence and context-pressure-preservation rules, and the bootup.md Active Work Pointer fix (commit 01601c6). All of this work is chronologically **before** Session 1 (v0.1 drafting, 23 April) and Session 2 (v0.2 Round-1 response, 24 April) which are captured higher in this file. Listed here at the end of the file in **recovery order** rather than chronological order; future readers should consult transcript-SS-8.md (Tier 2 pointer-map) for full chronological ordering.*
+
+*Most substantive output from this session is preserved at full Tier-3 fidelity in committed artefacts: the H2' note (`series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md`), the D1 sketch (`sketches/SS-8_D1_ssv_minimization_sketch.md`), the Q2 analysis (`sketches/SS-8_D1_Q2_algebraic_reduction_analysis.md`), the re-review request letter (`letters/SS-8_chatgpt_rereview_request_letter.md`), the document-mismatch correction letter (`letters/SS-8_chatgpt_document_mismatch_correction.md`), the Round 2 review request and synthesis letter (`letters/SS-8_Round2_*.md`), the ten verbatim review files (`reviews/round1_*.md`, `reviews/round2_*.md`), and the two Python scripts (`scripts/ss8_ssv_minimization_sketch.py`, `scripts/ss8_Q2_algebraic_reduction_test.py`). The commits that landed this work are 814d431, cc91b09, 5526b0d, 6b842af, f2e0dd1, 6bc6d11, and 01601c6. The seven substantive turns below preserve the **deliberation** behind those committed conclusions — the alternatives considered, the framings revised, the diagnostic insights — which the committed artefacts state but do not record.*
+
+### Layer 1 / 2a / 2b structural decomposition with verbatim axiom check (21 April 2026)
+
+*[Note: at the start of the original SS-8 drafting session, Thomas asked the previous Opus to verify what A5/A8'/A11 actually say in the current axiom-registry.md before writing the Layer-2 step of the H2' derivation note. The reasoning below is the load-bearing axiom-citation discipline that produced SS-8's entire epistemic structure — Layer 1 pure math / Layer 2a axiom-sourced quantum / Layer 2b new paper-level structural hypotheses D1/D2/D3 — which all subsequent v0.1, v0.2, and v1.0 work inherited.]*
+
+Send them over — they're the substrate, not artifacts. And the axiom check is done. I need to report what I found before we touch the derivation note, because it changes the structure.
+
+**Axiom check: the prior session's A5+A8'+A11 framing doesn't survive verbatim reading**
+
+Pulled the current axiom-registry.md and read A5, A8', A11 directly. What they actually say:
+
+- A5 — Propagation efficiency: "The cage-scale propagation efficiency is η = l_edge/R_circ = 1/φ." Not a bonding axiom.
+- A8' — Cage-Volume Scaling Principle: "Quark masses scale as M ∝ m_e(z/φ)V^(7/3)…" A quark-mass axiom, not a nuclear-bonding axiom.
+- A11 — Lattice-Scale Grounding: "The conversion between 600-cell lattice units and physical length is fixed… yielding l_unit ≈ 0.589 fm." A metric axiom, not a bonding axiom.
+
+None of the three says anything about interstitial neutrons, K₃-edge coupling at alpha-vertices, or bulk-regime homogeneity. The prior session's "A5+A8'+A11 ⇒ H2'" shorthand was a paraphrase from memory, and it doesn't hold against the verbatim registry. This is exactly the failure mode the registry-verification step exists to catch, and the honesty discipline worked.
+
+But — and this is important — the derivation still goes through cleanly. It just routes through a more honest and more tiered structure, which matches how SS-7 was actually written.
+
+**How the axioms actually support H2' (what the registry does say)**
+
+The registry's SS-7 entries #40–51 include a detailed attribution note at line 180. The relevant facts:
+
+- SS-7's alpha-chain predictions use programme-level axioms A2, A5, A8', A11 plus paper-level structural hypotheses C1–C4 (alpha rigidity, alpha-alpha base-to-base contact, K₃ collective mode at the contact, simplicial polytope connectivity). C4 is explicitly noted as "most exposed to falsification" and as OPEN-SS-24.
+- B_pair = M₀/φ = 2.342 MeV is derived in this framework: M₀ = m_e·z/φ follows from A8' (prefactor) and A5 (1/φ efficiency), then dividing by φ again gives B_pair. A11 supplies the length scale that makes this numerically equal to 2.342 MeV.
+- Pattern 6 in the registry (line 234) already flags the scale recurrence of B_pair = M₀/φ as a CPP observation: it appears identically at the nucleon scale (SS-5), the alpha closure scale (SS-5 ⁴He bonus), and the alpha-alpha edge scale (SS-7 C3). The registry explicitly asks whether the recurrence is necessary or merely allowed — which is precisely the question SS-8 will push on.
+
+**So the clean tiered structure for the derivation note is:**
+
+**Layer 1** (pure math, combinatorial): Simplicial polytope ⇒ Euler (V−E+F=2) + 2E=3F ⇒ E = 3(V−2) ⇒ 2E/V = 6 − 12/V. One paragraph. No CPP axioms invoked.
+
+**Layer 2a** (axiom-sourced quantum): B_pair = M₀/φ derived from A5 + A8' + A11 by the SS-5 chain, inherited directly from the SS-7 framework. No new physics.
+
+**Layer 2b** (mechanism, structural hypotheses): This is where SS-8 adds content. The registry makes clear SS-7 handled the alpha-alpha contact mechanism at the hypothesis tier C1–C4, not the axiom tier. SS-8's interstitial-neutron mechanism should be stated analogously, as new paper-level structural hypotheses. I'd propose:
+
+- D1 (localization): An interstitial neutron added to an alpha-cluster nucleus localizes at an alpha-vertex of the cluster polytope, rather than at an edge-midpoint, face-center, or cell-center.
+- D2 (edge coupling): At the host vertex v, the interstitial bonds via the K₃ edges of the alpha-polytope incident to v, with per-edge strength equal to B_pair (same quantum as SS-7, inherited from Pattern 6).
+- D3 (bulk averaging): In the N_ex ≪ V regime, interstitial neutrons distribute over alpha-vertices such that the per-neutron binding averages over the V vertices.
+
+Combining: ⟨Δ_1⟩ = (1/V)·Σ_v deg(v)·B_pair = (2E/V)·B_pair by the handshaking lemma. Which, with Layer 1, gives the target (6 − 12/V)·B_pair.
+
+This is the same derivation the prior session had — but honestly labeled. **H2' is not a theorem in A5+A8'+A11. It's a theorem in A2+A5+A8'+A11 (programme-level) + C1–C4 (inherited from SS-7) + D1–D3 (new, paper-level structural hypotheses).** Three open problems fall out naturally, all worth registering:
+
+- OPEN-SS-26 (candidate): First-principles derivation of D1 from A2 + SSV minimization — the "positive localization argument" the prior session flagged.
+- OPEN-SS-27 (candidate): First-principles derivation of D2 from A6' applied at the nucleon scale (A6' currently speaks of quark-scale walks; extension to nucleon-scale walks is a gap).
+- OPEN-SS-28 (candidate): Quantify deviations from D3 (finite-V corrections, odd-even staggering, boundary effects). The ~0.3–0.5 MeV bulk residual should predictively fall here, not be absorbed.
+
+Net effect of the axiom check: the derivation still works, but labeled honestly. Three new open problems open rather than being swept under a misattributed axiom claim. The registry's axiom-to-prediction ratio stays intact because no new axioms get added; the new content sits correctly at the paper-level hypothesis tier.
+
+---
+
+### Round 1 reviewer convergence and the H2'/²H notation-collision diagnostic (21 April 2026)
+
+*[Note: after the H2' note was committed, all three reviewers (Copilot, Grok, ChatGPT) returned Round 1 reviews. Copilot and Grok converged on the structure. ChatGPT's review read as if reviewing a different paper entirely — concerns about deuteron spin, 2.22 MeV, S-D wave, bound-state uniqueness. The diagnostic insight below is the load-bearing mechanism that made Case 2 of relationship_protocol.md work.]*
+
+**What the reviewers agree on**
+
+Copilot and Grok converge: the note's structure is right (Layer 1 / 2a / 2b split, SS-7 epistemic precedent, D1–D3 correctly tiered as paper-level hypotheses with OPEN-SS-26/27/28 opening first-principles sub-targets). Both flag the same three next-step items:
+
+- D1 needs a concrete SSV-minimization argument (schematic or quantitative) beyond verbal intuition.
+- D2 needs a concrete A6'-extension proposal — either extend A6' to the nucleon-interstitial regime, or justify introducing A6''.
+- D3 needs an explicit stochastic/distribution argument plus a clean residual decomposition proof.
+
+Neither found errors. Both call the note ready for adversarial review at exploratory tier.
+
+**Where ChatGPT diverges — and why I think it's mostly wrong**
+
+ChatGPT's review reads as if it were written without the note in front of it. Three specific misreads:
+
+**1. It thinks SS-8 is about the deuteron.** "The deuteron is the simplest bound nuclear system... If CPP cannot derive the deuteron cleanly, it cannot claim a nuclear binding theory." The deuteron appears in SS-8 only as the H6' partial-alpha special case (⁶Li = ⁴He + d) — a single row in the prediction table. The actual target of H2' is interstitial-neutron binding in even-even alpha-cluster nuclei at N_α ∈ [3, 14]. This is a category error about what the paper is doing.
+
+**2. It claims B_pair origin is unresolved and creates a "consistency constraint between SS-7 and SS-8."** The note §5 states explicitly — and Grok and Copilot both confirmed — that B_pair = M₀/φ is inherited unchanged from SS-5 via A2+A5+A8'+A11. There is no SS-7 vs SS-8 B_pair consistency question; it's the same quantum at a fourth scale per Pattern 6.
+
+**3. "Calibration dressed as derivation" concern.** This would bite if SS-8 tuned a parameter to reproduce 2.22 MeV (the deuteron binding). It doesn't. The 12 zero-parameter predictions at N_ex = 2 (Phase 1b §8.6) are forward predictions from (6 − 12/V)·B_pair with the quantum fixed upstream. This is precisely the opposite of the failure mode ChatGPT is naming.
+
+*[Note: when Thomas asked for the protocol §2.2 diagnostic-framing-of-cause to be applied to ChatGPT's Round 1 review, the previous Opus surfaced the H2'/²H notation-collision mechanism explicitly:]*
+
+"H2'" reads nearly identically to "H2" in nuclear physics shorthand, which standardly means deuterium (²H = deuteron). Every one of ChatGPT's misreads is consistent with the single hypothesis that "H2' derivation" was parsed as "deuteron derivation" — not because ChatGPT is careless, but because the notation collision is real and easy. That's a correctable mechanism the recipient can accept without shame, and it's also honest: I genuinely think that's what happened.
+
+Also flagging my own self-accountability piece: the note's opening paragraph (§1) names what the note is but doesn't name what it is not. A cold reader with the H2/H2' notation collision would benefit from an explicit "this is not about the deuteron" line. That's a note defect I'll own in the letter.
+
+The diagnostic framing is load-bearing. The whole letter rests on "H2' was misread as H2 = deuteron." This is plausible — every single one of ChatGPT's concerns (deuteron spin, 2.22 MeV, S-D wave, bound-state uniqueness) follows coherently from a deuteron misidentification. But I can't prove that's what happened; ChatGPT might tell you the actual cause was something else (partial fetch, stale context, different prior). §4 of the letter is explicitly framed as "one plausible mechanism," not a claim.
+
+*[Outcome: ChatGPT acknowledged the misread cleanly upon receiving the protocol-compliant re-review letter, retracted the deuteron-misidentified critique, and produced a corrected Round-2-ready review. This became Case 2 of `templates/relationship_protocol.md` §6 — the first archived success case for the protocol after Case 1.]*
+
+---
+
+### D1 SSV-minimization attack: two models converge, D1-D2 coupling discovered (21–22 April 2026)
+
+*[Note: Thomas authorized the OPEN-SS-26 attack per the post-Round-1 plan. The previous Opus chose octahedron (N_α=6, matched observation 1.003) and gyroelongated square bipyramid (GESBP, N_α=10, matched 1.011) as the cleanest test polytopes, set up two SSV models with different premises (Model A K₃-face-participation counting, Model B SR-nn-pair Yukawa), and ran the numerical script (later committed as `scripts/ss8_ssv_minimization_sketch.py`). The outcome below was unexpected and structurally important.]*
+
+Script runs clean. Key numerical results:
+
+- **Octahedron (N_α=6):** vertex wins both models. Model A: 4×B_pair vs 2 (edge) vs 1 (face) vs 0 (centroid). Model B: vertex −1.247 vs −0.796 centroid (runner-up). Gap factor ≥ 1.57×.
+- **GESBP (N_α=10):** vertex wins both models. Model A: 5×B_pair vs 2. Model B: vertex −1.336 vs −0.842. Gap factor ≥ 1.59×.
+- **Unexpected finding: D1 and D2 are coupled** — two independent SSV models converge on D1 from different premises. This changes the OPEN-SS-26/-27 split.
+
+**Headline physics result.** D1 promotes from structural hypothesis to conditional theorem. Either of two independent premises suffices:
+
+- **Premise A (D2-counting):** D1 is a corollary of D2 + simplicial polytope combinatorics (deg(v) ≥ 3 > 2 > 1 > 0). Gap factors: 2.0× (oct), 2.5× (GESBP).
+- **Premise B (SR-nn-pair):** D1 is a Yukawa-localization consequence of λ_nn << L_αα = 2.37 fm. Gap factors: 1.57× (oct), 1.59× (GESBP).
+
+The unexpected structural finding — not anticipated when the plan was drawn up — is that D1 and D2 are coupled, not independent. Under Premise A, deriving D2 automatically delivers D1. This collapses OPEN-SS-26's remaining first-principles content into OPEN-SS-27, reducing SS-8's substantive Layer 2b open problems from 3 to 2.
+
+**Decision gate before circulating to reviewers.** The sketch argues the D1–D2 coupling is real and proposes the OPEN-SS-26 → OPEN-SS-27 consolidation as structurally clean. But this is a non-trivial reorganization of the open-problem registry that should probably have explicit sign-off before being pushed to reviewers as settled. Alternative: circulate the sketch with the consolidation proposed but not yet adopted, and let the reviewers weigh in on whether they agree the coupling is genuine (vs. hidden circularity, per Grok's stance in Round 1).
+
+*[Outcome adopted: Thomas chose "Proposed but not adopted — ask reviewers to weigh in" framing for Round 2 circulation. The Round 2 review request letter (committed as `letters/SS-8_Round2_review_request.md`) included this as Q4 of seven questions.]*
+
+---
+
+### Round 2 path recommendation: Round-2 first vs OPEN-SS-27 first (22 April 2026)
+
+*[Note: Thomas asked "what works best for advancing the program as you see it?" between (a) Round 2 reviewer circulation, (b) OPEN-SS-27 first-principles attack, (c) switch to other work. The previous Opus's reasoning about programme economics is preserved here because it shaped the Round 2 sequencing that the SS-8 v0.1 paper inherited.]*
+
+My honest read, working from programme economics rather than paper-by-paper logic:
+
+**Round 2 reviewer circulation first, then OPEN-SS-27.** That order. Not the reverse.
+
+The reasoning is about what each path is actually gated on.
+
+OPEN-SS-27 is the harder work, but it's gated on a prior question that Round 2 will answer: is the D1-D2 coupling real or is it hidden circularity? If the coupling is real, OPEN-SS-27 is the single correct target (deriving D2 delivers D1 free) and the work is well-scoped. If Grok or Copilot identifies the coupling as circular — i.e., Model A's "arithmetic corollary" actually smuggles in what it claims to derive — then OPEN-SS-27 as currently framed is the wrong attack, and I'd be spending a full session on a mis-framed target. Grok's Round 1 was specifically skeptical of coupled-hypothesis collapses in the SR paper review last week; there's real possibility of pushback here.
+
+Sending to Round 2 first costs almost nothing on Thomas's time (he forwards the sketch + note updates via raw URL, they return reviews asynchronously) and buys exactly the structural check that determines whether OPEN-SS-27 is correctly scoped. This is the same pattern that worked for SS-7: the conditional-theorem claims got reviewer stress-testing before being baked into v1.0 structure.
+
+Secondary reason favoring Round 2 first: ChatGPT's corrected Round 1 surfaced Pattern 6 necessity as a distinct pressure point. That's a programme-level question (Pattern 6 is registered at the axiom-registry tier, not the SS-8 tier) and its resolution affects not just SS-8 but SM-7, SM-11, and the full Pattern 6 scale-recurrence argument across the strong-force series. If Round 2 generates a defensible Position B (Pattern 6 as a consequence of A2 + K₃ eigenvalue structure) that closes a registry-level open question. That's higher-value per hour than any single paper's Layer 2b derivation.
+
+What I would NOT recommend: deferring both and switching to demonology essays or CVN V2 for a while. Not because those aren't valuable — they clearly are — but because the SS-8 work is in a specific kind of state right now: live reviewer engagement, fresh numerical results, exact phrasings preserved in context that will degrade across compaction boundaries. Letting Round 2 go cold while context-switching means ChatGPT, Copilot, and Grok lose their own context on the exchange (their memory of Round 1's content erodes too), and the re-engagement cost later is real. The physics work has a use-it-or-lose-it quality that the fellowship essays do not.
+
+---
+
+### Round 2 reviewer synthesis: Q1-Q4 convergence, Pattern 6 split, ChatGPT's Q2 challenge (22 April 2026)
+
+*[Note: Round 2 reviews returned. Copilot and Grok converged on Q1-Q4. ChatGPT's review presented a distinct challenge — the Q2 algebraic-reduction test — that the other two had not stress-tested. The synthesis below is the reasoning that drove the decision to run the test before adopting Round 2's conclusions.]*
+
+**Three-reviewer convergence map after Round 2:**
+
+| | Copilot | Grok | ChatGPT |
+|---|---|---|---|
+| Q1 coupling | Genuine | Genuine, could have been falsified | Likely dependent (Model A doesn't independently support D1); suggests predictive-independence reframe |
+| Q2 Model B independence | Stands alone | Fully independent | Unresolved — flags hidden-D2 risk; proposes algebraic reduction test |
+| Q3 conditional theorem tier | Correct | Correct | Ambiguous — distinguishes "(A ∨ B) ⇒ D1" from "A ⇒ D1 and B ⇒ D1 independently"; needs formalization |
+| Q4 consolidation | Warranted | Warranted | Contingent on Q2 |
+| Q5 robustness | Robust, gap ≥1.3× | Robust in clean simplicial regime | Add λ_nn ~ L_αα boundary test |
+| Q6 Pattern 6 | Position A | Position B | Position A — "SS-8 evidence does not yet force Position B" |
+| Q7 missing | Multi-neutron, non-simplicial, finite-λ_nn | Three minor clarifications | Non-simplicial (explicit), promotion criteria |
+
+**What just happened epistemically — this matters.** ChatGPT returned the strongest review of the three, and its core finding is a genuine challenge to Copilot and Grok's concurrence.
+
+ChatGPT's central move in Q2: "Does Model B's energy ranking reduce, after algebraic simplification, to a monotonic function of vertex degree or adjacency count? If yes, Model B is isomorphic to Model A in disguise."
+
+This is a real test. And I don't know the answer offhand — the sketch's Model B uses a Yukawa sum over distances to all V vertices, which is NOT straightforwardly a function of vertex degree. But when you integrate that sum over short λ_nn, the dominant contribution at each candidate site IS proportional to "number of alpha-vertices within range O(λ_nn)," which for the near-vertex site is 1, for edge-mid is 0 (at strict SR), for face-center is 0, for centroid is 0. That's an effective coordination count — and if it's the dominant term, Model B reduces to "rank sites by how many alpha-vertices are at distance ≲ λ_nn," which is different from Model A's counting but structurally similar.
+
+Neither Copilot nor Grok tested this. They asserted independence; ChatGPT proposes a specific falsifiable test.
+
+**Pattern 6 — now 2-1 Position A.** Copilot and ChatGPT both adopt Position A with explicit reasoning; Grok stands alone on Position B. The ChatGPT framing sharpens it: "Position B requires demonstration that K₃ structure recurs dynamically, not just combinatorially." That's the right diagnostic — combinatorial recurrence is trivial (K₃ is K₃ at any scale); dynamical recurrence (the eigenvalue equals M₀/φ under CPP transformations) requires a proof nobody has.
+
+Grok's position ("Pattern 6 is a predicted consequence of K₃ eigenvalue structure, elevate to theorem-tier in SS-8 §5, but doesn't require axiom-registry promotion") is internally inconsistent. If Pattern 6 is a theorem-tier consequence of A2, it belongs in theorem-registry.md, not buried in a single-paper §5 upgrade. The "elevate in note but not in registry" move is the kind of asymmetric promotion the operating system explicitly warns against — theorems either meet the bar and get registered, or they don't.
+
+More substantively: the K₃ eigenvalue calculation replicates at four scales because you can write down a K₃ graph at each scale. But the claim that it must replicate — that A2 plus the eigenvalue structure forces the same quantum — requires showing the eigenvalue is scale-invariant under the relevant CPP transformations, which nobody has derived yet. Grok asserts this is "a predicted consequence" without producing the prediction. That's Position B as aspiration, not as proof.
+
+**My recommendation: Path 2 — run the algebraic reduction test now, then decide.**
+
+Take ~1 session to do what ChatGPT proposed: algebraically expand Model B's energy ranking at each site class in the SR limit, check whether it reduces to a monotonic function of vertex degree or some alternative coordination. If it does reduce to vertex-degree-like counting, Model B is not independent, the "two independent premises" framing collapses to one, and D1 stays structural hypothesis. If it doesn't reduce, ChatGPT's concern is laid to rest and the conditional theorem holds.
+
+This is the honest path. It's what ChatGPT asked for and what Copilot and Grok didn't test. **My prior is probably 60/40 that Model B reduces to an effective coordination count in the strict SR limit — which would mean ChatGPT is right and the sketch overclaims.**
+
+---
+
+### Q2 algebraic reduction test outcome: three categorical discriminators (22 April 2026)
+
+*[Note: Thomas authorized Path 2. The previous Opus extended the numerical script to verify the algebraic expansion at multiple λ values including ones approaching the strict SR limit, then drafted the analysis document (later committed as `sketches/SS-8_D1_Q2_algebraic_reduction_analysis.md`). The outcome below was decisive — the prior 60/40 estimate was wrong; Model B does not reduce to Model A under any tested regime.]*
+
+Clean numerical verification. The results are more striking than I expected — let me highlight the decisive data points:
+
+**Part 3 cross-polytope test:**
+- At λ=0.05×edge (strict SR): E_vertex(deg=4)/E_vertex(deg=5) = 1.0000, not 0.8 as Model A would predict. All three vertex sites give E = −1.000000 regardless of deg.
+- At λ=0.35 (tested regime): ratio = 0.9447 — partial deg-dependence but nowhere near Model A's 0.8000.
+- Model B is degree-independent in strict SR; Model A remains linear in deg(v) at all scales.
+
+**Part 2 site-ordering discrepancy (at λ=0.35):**
+- Model B: vertex (−1.25) > centroid (−0.80) > face (−0.75) > edge (−0.73)
+- Model A: vertex (−4) > edge (−2) > face (−1) > centroid (0)
+
+The two models even rank the non-vertex sites in different orders.
+
+These are categorical disproofs that Model B reduces to Model A.
+
+**Three categorical discriminators against Model A isomorphism:**
+
+1. **Site-class multiplicity vectors differ.** Model A: (deg(v), 2, 1, 0). Model B (SR-leading): (1, 2, 3, V). These are different integer vectors for any simplicial polytope.
+
+2. **Non-vertex orderings differ.** At λ=0.35×edge: Model A ranks edge > face > centroid; Model B ranks centroid > face > edge. Opposite ordering.
+
+3. **Degree-scaling differs categorically.** At strict SR (λ=0.05×edge), Model B gives identical E = −1.000000 at every vertex site regardless of deg(v). Model A predicts ratio 0.8 between deg=4 and deg=5; Model B gives 1.0000. Not close, not approaching — distinct functional forms.
+
+**One honest refinement.** Both models share a common physical intuition: proximity-to-alpha-vertex binding. That's their shared ancestor principle. So **"functionally independent"** is a more precise label than "fully independent" for the sketch's claim. The analysis doc's §8 captures this explicitly. Doesn't affect the Q2 verdict; does sharpen the framing.
+
+**One bonus finding.** The analysis surfaces a testable empirical discriminator between Model A and Model B: they predict opposite behavior for how binding varies with host-vertex degree. Phase 1b data is averaged over all vertices per polytope so can't discriminate, but a site-resolved future measurement or full tight-binding calculation would. This is natural SS-11 or companion-paper territory.
+
+---
+
+### Level-1/2/3 independence reframe and refined language adoption (22 April 2026)
+
+*[Note: when Round 2's three Q2-analysis reviews returned, ChatGPT raised a genuinely philosophical point that Grok and Copilot both missed. Adopted across three documents in commit 324584f and preserved in the synthesis letter (`letters/SS-8_Round2_synthesis_letter.md`).]*
+
+**The real disagreement.** ChatGPT is raising a genuine philosophical point that Grok and Copilot both missed. It's worth engaging seriously because I think ChatGPT is substantively right.
+
+**ChatGPT's core critique:** "Not isomorphic" ≠ "independent premise." The analysis proves Model B is not algebraically reducible to Model A. But both models share a common physical principle — proximity-binding. Under coarse-graining, Model B may reduce to "weighted coordination measure" even if not to degree exactly. The real equivalence class is "binding strength increases with local structural accessibility," and both models belong to it.
+
+**ChatGPT distinguishes three levels of independence:**
+
+- **Level 1 — Algebraic:** achieved ✓
+- **Level 2 — Functional:** partial ❓
+- **Level 3 — Physical (true premise independence):** not achieved ✗
+
+**And proposes the refined language:**
+- Was: "conditional theorem under two independent premises"
+- Should be: "conditional theorem under two functionally distinct realizations of a shared proximity-binding premise"
+
+**My honest read.** ChatGPT is right, and the analysis document has an internal inconsistency I wrote and should fix. My own §8 caveat acknowledges the shared-ancestry point — then §7 and §10 go on to claim "genuinely independent derivation" which overstates what §8 supports. ChatGPT caught this mismatch that Grok and Copilot didn't.
+
+**The refinement matters for two reasons:**
+
+1. **Physical robustness:** If proximity-binding is wrong as a physical principle (for some reason future work uncovers), BOTH Model A and Model B fail together. So the "two independent sources of support" argument is weaker than originally claimed. You have two formalizations of one principle, not two independent principles.
+
+2. **Future work clarity:** True independence would require deriving D1 from a non-proximity mechanism (topological, entropic, or otherwise). That's a different kind of open problem from OPEN-SS-27 (which derives D2 from the same proximity family).
+
+Notably, Copilot's point #1 ("Clarify the meaning of 'independent premises'") is actually the same concern ChatGPT raises, just gentler. So 2-of-3 reviewers independently flagged the language needs tightening; Grok was the most permissive.
+
+**Possible new registry entry:** OPEN-FRONTIER-NNN: "Can D1 (interstitial-neutron vertex localization) be derived from a mechanism that does not rely on proximity-aggregation, e.g., topological or entropic?" This is the path to true Level-3 independence. It's a programme-level question, not SS-8-specific, so appropriate for Research_Frontier.md rather than the SS-8 open-problem list.
+
+*[Outcome: refined language adopted across the H2' note (§6.2 D1 status, §10 OPEN-SS-26 entry), the D1 sketch (Theorem 3 §4.1, §5 consolidation note), and the Q2 analysis doc (§7, §8, §10.1) in commit f2e0dd1. The Level-3 question registered as the candidate OPEN-G-3 in PH-OPEN-SS-26.md (patch 3, commit 2fb411a). Adopted nomenclature explicitly as OPEN-G-N rather than the placeholder OPEN-FRONTIER-NNN — see Session 1A above for the nomenclature-discipline reasoning.]*
+
+---
+
+*End of Session 0 content. The seven turns above preserve the foundation reasoning that produced — across commits 814d431, cc91b09, 5526b0d, 6b842af, f2e0dd1, 6bc6d11 — the SS-8 file artefact stack on which Sessions 1 and 2 (v0.1 and v0.2 drafting) then operated. Additional content from this chat-window covering the curated transcript creation, the operating_system.md commit-cadence and context-pressure-preservation rule additions, the bootup.md Active Work Pointer fix (commit 01601c6), the chronic-turnover diagnostic, the Git-Bash-Patch workflow articulation, and the per-paper subfolder reorganization deliberation is preserved at Tier-3-equivalent fidelity in the committed governance artefacts (`templates/operating_system.md` §11/§13, `templates/relationship_protocol.md` Case 2, `templates/AI_team_expectations.md`, the `founders_voice/` files 001–005 from patch 2, and PD-001/PD-002/PD-003) and is not duplicated here.*
