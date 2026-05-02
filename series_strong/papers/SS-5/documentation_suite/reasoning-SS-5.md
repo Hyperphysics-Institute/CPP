@@ -178,6 +178,104 @@ This is informative: it rules out the configuration-mixing escape and confirms b
 
 ---
 
+## Session 2.5 — v4 parallel-session source derivation: the cage-distortion NLO that Session 3 then rejected (17 April 2026, mid-afternoon)
+
+*[Recovery context: This session is the **source chat-window** for the "v4 parallel session" that Session 3 below references. It was a separate Opus context window — running concurrently with the main v0.2 → v3 work — that produced the cage-distortion NLO derivation claiming B_d = 2.222 MeV at −0.09% accuracy. Thomas's "Yes, please commit" was issued in this parallel session. The four-problem stress test in Session 3 below was the **subsequent catch** when Thomas asked for it; that catch is what rejected this work and demoted Möbius α to Appendix-B candidate-not-validated. Recovery is from chat-window pasted 2 May 2026; preserved at Tier 4 fidelity per the precedent set by the Rod Nave fabricated-dedication catch (Session 5) — rejected in-house work has Tier 4 value. The four-problem analysis that rejected this work appears in full in Session 3 below; this Session 2.5 captures only the *source side* of the v4 derivation, with cross-references to where Session 3 found each problem.]*
+
+*[Sequencing note: This entry is numbered "2.5" rather than appended at end-of-file because chronologically and developmentally it precedes Session 3 — Session 3 critiques what is recovered here. Numbering "2.5" preserves the chronological order of the existing file. The retroactive insertion is documented in the recovery patch (0023, 2 May 2026) so that future readers see the full lifecycle: v4 was attempted (Session 2.5), then rejected (Session 3), then v5 was extracted from v4's salvageable spine (Session 4).]*
+
+---
+
+### The D-state pushback — refusing to accept ChatGPT's "I do not see a non-ad hoc way"
+
+*[Note: ChatGPT's v0.1 referee report had explicitly conceded: "I do not see a non-ad hoc way to claim κ_d ≈ 0.950" — the missing-binding correction needed to bring the leading-order B_d^(0) = M_0/φ = 2.342 MeV down to the experimental 2.224 MeV. The substantive Opus turn below pushed back on the concession as premature, citing the well-known D-state admixture in standard nuclear physics as a candidate for the CPP analogue. This pushback is what triggered the cage-distortion derivation that follows — and that is what Session 3 then rejected for post-hoc parameter selection.]*
+
+ChatGPT says "I do not see a non-ad hoc way to claim κ_d ≈ 0.950." I'd want to at least look before conceding. The deuteron has a well-known D-state admixture of about 4–7% (experimentally ~5.7%). That means the deuteron is not pure S-wave — the tensor force mixes in an L = 2 component. A 5% D-state probability reduces the S-wave binding by roughly that fraction. **The fact that ε_d ≈ 0.050 matches the D-state fraction is probably not a coincidence.**
+
+In CPP terms, the K₃ bonding-mode calculation assumes all three contact oscillators are in phase (the symmetric bonding eigenvector $(1,1,1)/\sqrt{3}$), but the real base-to-base configuration has angular structure from the tetrahedral distortion that would mix in antibonding components — exactly analogous to D-state admixture. **This is worth attempting, even if it only gets flagged as a conjecture rather than a derivation.**
+
+*[Outcome: Thomas authorized the attempt with "Before we rewrite it I would like to see how far you can follow your comment toward your suggested resolution." The work that followed produced the cage-distortion derivation below. In hindsight (per Session 3) the pushback's instinct was correct that *something* was there at the 5% level, but the specific derivation that followed used post-hoc parameter selection and the precise numerical agreement was fortuitous.]*
+
+---
+
+### The cage-distortion derivation chain
+
+*[Note: The four-step derivation chain that produced B_d = 2.222 MeV at −0.09% accuracy. Each step is preserved verbatim because the subsequent Session 3 four-problem stress test critiques the chain step-by-step; preserving the chain at Tier 4 lets a future reader see exactly what was rejected and why.]*
+
+**Step 1 — Asymmetry parameter from cage distortion.** From SS-2 force balance, the proton and neutron cages are prolate (not regular) tetrahedra, with distortion ε = 1.94. This defines a natural asymmetry parameter:
+
+$$\alpha \equiv \frac{\varepsilon - 1}{\varepsilon + 1} = \frac{0.94}{2.94} = 0.320$$
+
+**Step 2 — Antibonding admixture from quadrupole coupling.** The prolate shape means the inter-baryon coupling has a quadrupole component that mixes antibonding K₃ modes into the ground state. Treating this as a perturbation of the K₃ bonding mode by a quadrupole-like operator with the asymmetry $\alpha$ as its small parameter, and dividing by the K₃ eigenvalue gap $\Delta = 3$ (from $\lambda_+ = +2$ to $\lambda_- = -1$), the antibonding admixture probability is:
+
+$$p = \frac{\alpha^2}{\Delta} = \frac{(\varepsilon - 1)^2}{3 (\varepsilon + 1)^2} = 0.0341 \approx 3.4\%$$
+
+*[Session 3 catch — Problem (a): the perturbation-theory normalization is wrong. Standard PT has p ~ α²/Δ², not α²/Δ. The factor of Δ in the denominator is an unjustified choice. Session 3 documents this in detail.]*
+
+**Step 3 — Binding correction from antibonding cost.** Each unit of antibonding admixture costs $3\varepsilon$ in binding (the eigenvalue gap from $+2$ to $-1$). The fractional binding reduction is therefore $\kappa = 1 - 3p/2$, which expanded gives:
+
+$$\kappa = 1 - \frac{(\varepsilon - 1)^2}{2 (\varepsilon + 1)^2}$$
+
+**Step 4 — Predicted deuteron binding energy.**
+
+$$B_d = \frac{m_e \, z}{\varphi^2} \left[1 - \frac{(\varepsilon - 1)^2}{2 (\varepsilon + 1)^2}\right] = 2.342 \times 0.9491 = \mathbf{2.2225 \text{ MeV}}$$
+
+against the experimental 2.2246 MeV. **Agreement: −0.09%, with zero deuteron-specific parameters** (ε comes from SS-2 force balance, not from fitting deuteron).
+
+*[Session 3 catch — Problem (b): the choice of α = (ε − 1)/(ε + 1) (Möbius form) is one of at least 13 plausible asymmetry parameterizations. Other candidates: α' = (ε − 1)/ε, α'' = (ε² − 1)/(ε² + 1), α''' = ln(ε), and so on. Each gives a different numerical correction. Without an *independent* derivation of why the Möbius form is the right one, the agreement to 0.09% is post-hoc selection — fitting α to deuteron data and then declaring "zero parameters."]*
+
+---
+
+### Secondary prediction — D-state probability
+
+*[Note: The derivation produces a secondary prediction: $P_D = p = 3.4\%$, claimed to lie within the experimental range of 4–7%. This was framed as independent validation. Session 3 catches this too as Problem (c) — 3.4% is actually *below* the modern experimental D-state range (4.5–5.8%), so it is in tension rather than agreement.]*
+
+**As a bonus prediction:** The formula predicts a D-state probability of $P_D = p = 3.4\%$, within the experimental range of 4–7% (model-dependent). This is a second independent prediction from the same mechanism.
+
+*[Session 3 catch — Problem (c): the modern experimental D-state range is 4.5–5.8%, not 4–7%. The wider range was an older bound. At the modern bound, 3.4% is in tension, not in agreement. Framing 3.4% as confirmatory was selective.]*
+
+---
+
+### The honest labeling — registered as conjecture, not theorem
+
+*[Note: At the time of v4 drafting, the derivation was registered with the right epistemic posture — "Conjecture" rather than "Theorem" — because the perturbation-theory normalization (Step 2) was acknowledged as physically motivated rather than rigorously derived. The text below preserves the contemporaneous self-assessment. Session 3's catch is that *even with the conjecture labeling*, the four problems above mean the derivation should not be in the paper at all, not just labeled differently.]*
+
+**What I'd flag honestly:** The coefficient in step 2 (dividing by the gap $\Delta = 3$) is physically motivated by perturbation theory but the exact normalization needs more rigorous justification. The 0.09% agreement could be partly fortuitous at this level of approximation. I'd register this as **CONJ** (conjecture with strong numerical support), not **THEO** (theorem), until the perturbation theory is derived from the actual cage-cage coupling Hamiltonian.
+
+The ε value that gives exact agreement is ε = 1.928, compared to SS-2's ε = 1.94 — they differ by 0.6%. The correction formula is robust to the input.
+
+*[Session 3 catch — Problem (d): the "robustness to ε" claim hides reverse calibration. Reading SS-2's ε from deuteron data (ε = 1.928) and SS-2's force-balance ε (1.94) being within 0.6% of each other doesn't validate either; if anything, it suggests the deuteron is being used as an additional constraint on the cage-distortion parameter. The paper claimed zero deuteron-specific parameters, but the choice of ε = 1.94 itself is partly a deuteron-fit if the values agree only to 0.6%.]*
+
+---
+
+### v4 paper draft outcome — what was committed before the stress test
+
+The v4 draft was authored, presented to Thomas, and authorization was given to commit ("That is great work! What an unexpected breakthrough! Please write your discovery in detail in your next .tex version of ss-5"). The paper was structured per ChatGPT's earlier "LO + correction programme" recommendation: §4 stated B_d^(0) = M_0/φ = 2.342 MeV as a clean Proposition; §5 stated the cage-distortion correction as a Conjecture with the four-step derivation above; §6 stated P_D = 3.4% as a secondary prediction; §9 registered new open problems for the perturbation-theory closure. 11 pages, zero LaTeX errors.
+
+What was *not yet caught*: the four problems Session 3 surfaces below. The committed v4 was reviewed by Thomas with the request "let's stress-test this before any further work" — and Session 3 is what that stress test produced.
+
+*[Outcome of Session 3: v4's NLO claim was retracted. Möbius α was demoted to Appendix B as a "candidate, not validated." The cage-distortion *intuition* (that something at the 5% level explains the deuteron residual) survived as physically motivated, but the specific numerical agreement to 0.09% was recognized as fortuitous post-hoc selection. v5 (Session 4 below) extracted the salvageable v4 spine — the Layer A LO proposition and the D1–D4 assumption framework — and dropped the failed NLO. The lesson registered in the SS-5 development record is that in-house Opus derivations need the same hostile-reviewer treatment as external ChatGPT/Grok proposals; the four-problem analysis Session 3 applied to v4 became a methodological precedent.]*
+
+---
+
+### Forward-looking pointers
+
+- **Session 3 below** contains the full four-problem stress test that rejected this work. Any future reader of Session 2.5 should immediately follow into Session 3 to see the rejection.
+- **Session 4 (v5)** below extracted the salvageable v4 spine (Layer A LO + D1–D4 framework) and dropped the failed NLO. The architectural decision to keep v4's framing while demoting its central claim is itself substantive methodology.
+- The D-state intuition that triggered this derivation — that *something* at the 5% level should connect cage distortion to deuteron residual via antibonding admixture — is not refuted by the four-problem catch. What was refuted is the specific numerical match. A more rigorous derivation of the perturbation-theory coefficient (from the actual cage-cage coupling Hamiltonian rather than ad-hoc normalization by the K₃ gap) is registered as a future-work item.
+
+### What is preserved elsewhere
+
+- **The v4 paper file itself** — this was committed to the repo per Thomas's authorization at the time, then later updated to v5 / v6 reflecting the rejection. The git history retains v4 as an intermediate version. The final published v6 reflects the v5 spine extraction; v4's failed NLO is not in v6 §5.
+- **Session 3 of this same file** contains the four-problem stress test in full. The cross-references in the v4 derivation steps above (Problems a, b, c, d) point at Session 3's analysis.
+- **`reviews-SS-5.md`** records the v4 → v5 transition as a self-correction event in the review log.
+- **`development-SS-5.md`** vignettes capture the v4 → v5 architectural extraction as a documented decision.
+- **Programme-methodology precedent**: the Session 3 four-problem analysis became the template for "in-house Opus derivations get the same hostile-reviewer treatment as external proposals." This precedent is referenced in the Rod Nave catch (Session 5), and the symmetric application of correction discipline is now part of the SS-5 development record's methodological contributions.
+
+*End of Session 2.5 reasoning (recovery patch 0023, 2 May 2026). Session 3 immediately below is the rejection; the v5 extraction in Session 4 is the recovery.*
+
+---
+
 ## Session 3 — v4 four-problem stress test: catching post-hoc parameter selection (17 April 2026 afternoon)
 
 *A parallel Opus session — running independently after Thomas accidentally sent ChatGPT's v0.1 review to the wrong window — produced a paper labelled v4 that claimed an exact deuteron match (B_d = 2.222 MeV, −0.09%) via a "cage-distortion NLO derivation." Thomas asked for a stress test before any further work. The four-problem analysis below was the resulting catch. This is the methodologically substantive turn — symmetric application of CPP's correction discipline to in-house Opus work, not just to external reviewers.*
