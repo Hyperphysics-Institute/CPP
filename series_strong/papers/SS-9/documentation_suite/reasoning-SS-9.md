@@ -1695,3 +1695,86 @@ The `future_projects.md` priority queue removes queue item B (AME lookup complet
 ---
 
 *End of Session 5 Phase 1+2 Opus reasoning. Future sessions append below.*
+
+---
+
+## Session 6 — OPEN-SS-35 sub-question (a) Level-1 partial closure (2 May 2026)
+
+**Title:** Sub-question (a) of OPEN-SS-35 — derivation of the harmonic-oscillator mean field for nucleons in alpha clusters from K$_3$ collective-mode contact contributions, advanced from "registered" to "Level-1 partial closure under hypotheses E1, E2."
+
+**Tier 4 inclusion scope.** Reasoning preserved verbatim, housekeeping excluded per OS §4.
+
+### Strategy
+
+The Session 5 Phase 2 scoping document had registered three sub-questions for OPEN-SS-35 closure (Route A: HO + spin-orbit derived from CPP). Sub-question (a) was identified as the most tractable: rigorous derivation of HO mean-field from K$_3$ collective modes. The work extends the SS-8 vertex-localized binding result $-\deg(v) B_{\rm pair}$ to general nucleon position.
+
+The challenge: SS-8 establishes that an interstitial neutron *at vertex $v$* of the alpha-polytope binds with $-\deg(v) B_{\rm pair}$ from the K$_3$ collective modes incident at $v$. Sub-question (a) needs the binding for a nucleon at *general position* $\vec r$ inside the cluster, not just at vertices. The position-dependent potential $V_{K_3}(\vec r)$ should then be expanded around the cluster centroid to extract a harmonic-oscillator form, and the resulting $\hbar\omega$ should match (at least at order-of-magnitude) the empirical Bohr-Mottelson $41/A^{1/3}$ MeV for nuclei in the alpha-cluster regime.
+
+### Hypothesis introduction
+
+Two structural hypotheses make this concrete:
+
+**E1 (Gaussian overlap).** The nucleon-alpha overlap function $f_i(\vec r) = \exp(-|\vec r - \vec R_i|^2/(2\sigma^2))$ is Gaussian with width $\sigma$ equal to the nucleon's quantum localization scale, set by the harmonic-oscillator ground state geometry $\sigma = \hbar c/\sqrt{m_n \hbar\omega}$.
+
+**E2 (overlap-weighted binding).** The binding at general position is the overlap-weighted sum of per-vertex SS-8 contributions: $V_{K_3}(\vec r) = -B_{\rm pair} \sum_i \deg(v_i) f_i(\vec r)$.
+
+Both hypotheses are well-motivated by standard nuclear physics. AMD (Antisymmetrized Molecular Dynamics) uses Gaussian wavepackets routinely for cluster nuclei. The overlap-weighted sum is the natural extrapolation of SS-8's vertex-binding to general position. But neither is rigorously derived from CPP primitives, and closure of E1, E2 to CPP machinery is registered as a sub-sub-question for future work.
+
+The vertex-limit consistency check passes: as $\sigma \to 0$, $f_j(\vec R_j) = 1$ and $f_{i \neq j}(\vec R_j) \ll 1$, so $V_{K_3}(\vec R_j) \to -\deg(v_j) B_{\rm pair}$ — recovers SS-8. At finite $\sigma$, the vertex value is enhanced by overlap with neighboring vertices (the nucleon's wavepacket overlaps multiple alphas simultaneously), which is physically reasonable.
+
+### Closed-form Hessian
+
+The Hessian of $V_{K_3}$ at the cluster centroid was computed analytically. For symmetric polytopes whose centroid is at the symmetry center, the Hessian is isotropic (eigenvalues all equal) and has the closed form:
+
+$$k = \frac{B_{\rm pair}}{\sigma^2} \sum_i \deg(v_i) \cdot f_i(R_c) \cdot \left(1 - \frac{|\vec R_c - \vec R_i|^2}{3\sigma^2}\right)$$
+
+For positive (binding) curvature, $\sigma^2 > R_c^2/3$ — the nucleon wavepacket must be wide enough to overlap multiple alphas. This is the same constraint that emerged from numerical exploration: for Gaussian widths smaller than $R_c/\sqrt{3}$, the centroid sits in a "void" between alphas with negative curvature (anti-binding).
+
+### Self-consistency
+
+The 1D harmonic-oscillator ground state has $\sigma = \sqrt{\hbar/(m\omega)}$, equivalently $\sigma = \hbar c/\sqrt{m_n \hbar\omega}$ in natural units. So $\sigma$ depends on $\omega$, while $\omega = \sqrt{k(\sigma)/m}$ depends on $\sigma$. Self-consistency requires solving these together.
+
+The fixed-point iteration $\omega_{\rm new} = \hbar c\sqrt{k(\sigma(\omega))/m_n}$ converges robustly for tetrahedron and octahedron (~5 iterations to $10^{-3}$ MeV tolerance). For the icosahedron, the map has multiple fixed points: a low-$\omega$ basin near 11 MeV and a high-$\omega$ basin near 20 MeV. The physical ground state is the lowest-$\omega$ fixed point (largest $\sigma$, lowest kinetic energy). Higher fixed points correspond to wavepackets localized below the inter-alpha spacing, energetically unfavorable.
+
+### Numerical results
+
+| Polytope | $N_\alpha$ | $A$ | $\hbar\omega^*$ (MeV) | empirical $41/A^{1/3}$ | ratio |
+|---|---|---|---|---|---|
+| tet | 4 | 16 | 14.60 | 16.27 | 0.90 |
+| oct | 6 | 24 | 18.06 | 14.21 | 1.27 |
+| ico | 12 | 48 | 11.13 | 11.28 | 0.99 |
+
+Mean ratio = 1.05; max deviation 27%. Icosahedron at $A = 48$ matches to 1% — particularly encouraging because (a) it is the largest cluster studied (where empirical $A^{-1/3}$ scaling is most relevant), (b) it has the most vertices contributing to the mean field, and (c) it has the highest coordination $z = 5$.
+
+Zero free parameters used. Inputs: $B_{\rm pair} = M_0/\varphi = 2.342$ MeV (SS-5), $R_\alpha = 2.37$ fm (SS-7), $\deg(v_i) = z$ (polytope topology), $m_n$ and $\hbar c$ (standard physical constants), $\sigma$ (self-consistent).
+
+### Programme verdict
+
+**Sub-question (a) is in Level-1 partial closure under E1, E2.** The HO mean field is constructively derived (not just dimensionally estimated, as in the Phase 2 Level-0 consistency check). Multiple cluster sizes verify the result. Zero free parameters. The closure is *partial* because hypotheses E1, E2 are not yet derived from CPP primitives; closure of these is the next sub-layer.
+
+**Pattern 6 K$_3$ scale-recurrence: 6 → 7 confirmed instances.** The 7th instance is the K$_3$ quantum $B_{\rm pair}$ producing the harmonic-oscillator mean field at the nucleon-orbital scale. With 7 confirmed instances spanning nucleon-pair, alpha-pair, alpha-cluster, interstitial-vertex, deltahedron-topology, and now nucleon-orbital, the case for K$_3$ as a structural feature of CPP becomes substantially stronger. This was the explicit motivation for prioritizing sub-question (a) in Session 5 forward-looking pointers.
+
+### Future work registered
+
+Three sub-sub-questions registered within sub-question (a) for full closure:
+- **E1-closure:** derivation of Gaussian overlap form from CPP primitives. Could come from path-integral / DI-bit dynamics.
+- **E2-closure:** rigorous justification of overlap-weighted binding as the unique extrapolation of SS-8 to general position. Could be approached via demanding consistency with SS-8 at the vertex limit AND with the cluster-binding sum at the cluster level.
+- **A-scaling:** reproduce $A^{-1/3}$ scaling across the alpha-chain regime. This requires extending the work from regular polytopes (tet/oct/ico) to the canonical SS-7/SS-8 deltahedra at each $N_\alpha$ (snub disphenoid for N=8, gyroelongated square bipyramid for N=10, etc.).
+
+These three layers, together with sub-questions (b) (spin-orbit from ZBW) and (c) (ratio verification across A range), constitute the remaining work for full OPEN-SS-35 closure.
+
+### What's preserved elsewhere
+
+The session log Session 6 entry covers this work at Tier 1.
+
+Vignette 11 in `development-SS-9.md` (Tier 3) gives the curated narrative.
+
+The transcript-SS-9.md (Tier 2) entries `147`–`163` index Session 6 transactions.
+
+The substantive sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a.md` and reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a.py` are the deliverables.
+
+The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 6 sub-question (a) Level-1 partial closure.
+
+---
+
+*End of Session 6 Opus reasoning. Future sessions append below.*
