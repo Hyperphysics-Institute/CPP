@@ -205,3 +205,23 @@
 - `144` 2 May Session 5 Phase 2 — `development-SS-9.md` Vignette 10 added → `series_strong/papers/SS-9/documentation_suite/development-SS-9.md`
 - `145` 2 May Session 5 Phase 2 — `reasoning-SS-9.md` Session 5 Phase 1+2 verbatim Opus reasoning appended → `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md`
 - `146` 2 May Session 5 Phase 2 — Session log appended with Session 5 entry → `session_logs/2026-05-02_session_log.md`
+
+### Session 6 — OPEN-SS-35 sub-question (a) Level-1 partial closure (2 May 2026)
+
+- `147` 2 May Session 6 — Thomas requested next-session work on OPEN-SS-35 sub-question (a) per Session 5 forward-looking pointer → see reasoning Session 6 "Strategy"
+- `148` 2 May Session 6 — Strategy: extend SS-8 vertex-binding result $-\deg(v) B_{\rm pair}$ to general nucleon position via overlap-weighted sum; expand around centroid; check harmonic form → `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a.md` §1
+- `149` 2 May Session 6 — Hypothesis E1 introduced: nucleon-alpha overlap is Gaussian with width = HO ground-state $\sigma = \hbar c/\sqrt{m_n \hbar\omega}$ → `SS-9_OPEN-SS-35_subquestion_a.md` §2.1
+- `150` 2 May Session 6 — Hypothesis E2 introduced: binding at general position is overlap-weighted sum $V_{K_3}(\vec r) = -B_{\rm pair} \sum_i \deg(v_i) f_i(\vec r)$ → `SS-9_OPEN-SS-35_subquestion_a.md` §2.2
+- `151` 2 May Session 6 — Vertex-limit consistency verified: $V_{K_3}(\vec R_j) \to -\deg(v_j) B_{\rm pair}$ as $\sigma \to 0$, recovering SS-8 → `SS-9_OPEN-SS-35_subquestion_a.md` §2.2
+- `152` 2 May Session 6 — Closed-form analytic Hessian derived: $k = (B_{\rm pair}/\sigma^2) \sum_i \deg(v_i) f_i(R_c)(1 - |R_c - R_i|^2/(3\sigma^2))$ for symmetric polytopes → `SS-9_OPEN-SS-35_subquestion_a.md` §3.2
+- `153` 2 May Session 6 — Self-consistency relation: $\sigma = \hbar c/\sqrt{m_n \hbar\omega}$ from HO ground state → `SS-9_OPEN-SS-35_subquestion_a.md` §4.1
+- `154` 2 May Session 6 — **Tetrahedron (N=4, A=16):** self-consistent $\hbar\omega^* = 14.60$ MeV, $\sigma^* = 1.69$ fm; matches empirical Bohr-Mottelson 16.27 MeV to ratio 0.90 → `SS-9_OPEN-SS-35_subquestion_a.md` §4.2; `SS-9_OPEN-SS-35_subquestion_a.py`
+- `155` 2 May Session 6 — **Octahedron (N=6, A=24):** $\hbar\omega^* = 18.06$ MeV; empirical 14.21; ratio 1.27 → `SS-9_OPEN-SS-35_subquestion_a.md` §4.2
+- `156` 2 May Session 6 — **Icosahedron (N=12, A=48):** $\hbar\omega^* = 11.13$ MeV; empirical 11.28; **ratio 0.99** (within 1%) → `SS-9_OPEN-SS-35_subquestion_a.md` §4.2
+- `157` 2 May Session 6 — Multiple fixed points found for icosahedron (10 distinct values clustering at ~11 MeV and ~20 MeV); physical ground state selected as lowest-$\omega$ fixed point (largest $\sigma$, lowest kinetic energy) → `SS-9_OPEN-SS-35_subquestion_a.md` §4.2; `SS-9_OPEN-SS-35_subquestion_a.py` `find_physical_fixed_point`
+- `158` 2 May Session 6 — Mean ratio CPP/empirical = 1.05 across the three regular polytopes; max deviation 27%. Zero free parameters → `SS-9_OPEN-SS-35_subquestion_a.md` §4.2
+- `159` 2 May Session 6 — **Pattern 6 K$_3$ scale-recurrence: 6 → 7 confirmed instances.** The 7th instance is the K$_3$ quantum producing the harmonic-oscillator mean field at the nucleon-orbital-organization scale → `SS-9_OPEN-SS-35_subquestion_a.md` §5.2
+- `160` 2 May Session 6 — Three sub-sub-questions registered within sub-question (a) for full closure: E1-closure (Gaussian overlap from CPP), E2-closure (overlap-weighted binding rigorous justification), A-scaling reproduction → `SS-9_OPEN-SS-35_subquestion_a.md` §6.1, §6.2
+- `161` 2 May Session 6 — OPEN-SS-35 entry in `Research_Frontier.md` updated: status changes from "scoping work begun, Level-0 consistency check passed" to "sub-question (a) Level-1 partial closure delivered" → `Research_Frontier.md` OPEN-SS-35 entry
+- `162` 2 May Session 6 — Reproducible Python script `SS-9_OPEN-SS-35_subquestion_a.py` produced with analytic Hessian, multi-start fixed-point search, and convergence-detail output → `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a.py`
+- `163` 2 May Session 6 — `transcript-SS-9.md` Session 6 transactions appended (this entry); `development-SS-9.md` Vignette 11 added; `reasoning-SS-9.md` Session 6 verbatim Opus reasoning appended → see those files
