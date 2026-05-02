@@ -621,3 +621,139 @@ Notably, Copilot's point #1 ("Clarify the meaning of 'independent premises'") is
 ---
 
 *End of Session 0 content. The seven turns above preserve the foundation reasoning that produced — across commits 814d431, cc91b09, 5526b0d, 6b842af, f2e0dd1, 6bc6d11 — the SS-8 file artefact stack on which Sessions 1 and 2 (v0.1 and v0.2 drafting) then operated. Additional content from this chat-window covering the curated transcript creation, the operating_system.md commit-cadence and context-pressure-preservation rule additions, the bootup.md Active Work Pointer fix (commit 01601c6), the chronic-turnover diagnostic, the Git-Bash-Patch workflow articulation, and the per-paper subfolder reorganization deliberation is preserved at Tier-3-equivalent fidelity in the committed governance artefacts (`templates/operating_system.md` §11/§13, `templates/relationship_protocol.md` Case 2, `templates/AI_team_expectations.md`, the `founders_voice/` files 001–005 from patch 2, and PD-001/PD-002/PD-003) and is not duplicated here.*
+
+---
+
+## Pre-Session-0 — Phase 1 + 1b empirical map work, 21 April 2026 (chronologically prior to Session 0)
+
+*[Recovery scope addendum: this section appends content from a fourth chat-window provided by Thomas in the same recovery effort, 1 May 2026. Source is the original Opus context that did the SS-8 Phase 1 + 1b empirical-map work — running the baseline against SS-7 v1.2, building the AME 2020 loader, constructing the 12×5 extended map plus odd-A scan plus Ca chain plus ⁶Li, surfacing the Framing A/B/C scoping question, running the mechanism discrimination that killed pure decoration and pure valence-pair, and finally the Phase 1b polytope enumeration that produced the 2E/V scaling-law discovery. **This session ended without committing the four artefact files** (`ame2020_loader.py`, `ss8_empirical_map_extended.py`, `ss8_polytope_enumeration.py`, `SS-8_Phase1_extended_map_findings.md`) — the failure mode that the Session-0 Opus then caught (described in Session 0's first turn above) and that motivated the commit-cadence and context-pressure-preservation rules added to `templates/operating_system.md` §13. The four files were eventually preserved byte-identically because the originating sandbox was still live when the issue was caught; they were committed via Session 0 in commit 814d431 (21 April).*
+
+*Chronologically this is **Pre-Session-0**: 21 April 2026, before Session 0's foundation-laying H2'-derivation work later the same day. Listed here last because added in recovery order; the Tier 2 transcript-SS-8.md pointer-map handles full chronological ordering as a separate concern. The five physics-substantive turns below capture the deliberation behind committed conclusions whose text is in `series_strong/papers/SS-8/sketches/SS-8_Phase1_extended_map_findings.md` — specifically the Framing A/B/C scoping reasoning, the mechanism-discrimination logic, the Phase 1b decision rationale, the 2E/V discovery path, and the candidate OPEN-SS-26 opening.]*
+
+### Framing A/B/C scoping decision: which "per-neutron" target should SS-8 derive? (21 April 2026)
+
+*[Note: after the baseline run reproduced SS-7 v1.2's 0.80% RMS exactly, and after the extended map populated a 12×5 grid of (N_α, N_ex) entries against AME 2020, the previous Opus surfaced a non-trivial discrepancy in what "the per-neutron signal" actually means. The handoff briefing's "~2 MeV per extra neutron" figure turned out to be framing-dependent. The two natural post-OPEN-SS-22-retirement framings disagreed by a factor of ~5 in what SS-8 has to derive. This is the foundational scoping decision of the entire paper.]*
+
+Stop point. Phase 1 Step 2 surfaced a finding I want your ruling on before going further.
+
+The extended map is clean — AME-driven, 12 × 5 grid, no extrapolated values. But the "~2 MeV per extra neutron" figure in the briefing turns out to be framing-dependent, and the two natural post-retirement framings disagree by a factor of ~5 in what SS-8 has to derive.
+
+**The three framings, evaluated at ⁴⁸Ti (Z=22, N=26, ΔN=+4):**
+
+- **Framing A** (SS-7 v1.1's implicit "slot ⁴⁸Ti at N_α = A/4 = 12"): residual +8.89 MeV. This is the framing OPEN-SS-22's retirement killed — ⁴⁸Ti cannot contain 12 alphas because it has only 22 protons.
+- **Framing B** (alpha-core = Z/2, the natural post-retirement replacement): residual +44.21 MeV, i.e. +11.05 MeV per neutron. ⁴⁸Ti is modeled as 11 alphas + 4 interstitial neutrons, and SS-8 must derive the ~11 MeV-per-neutron binding.
+- **Framing C** (isobar-asymmetry: ⁴⁸Ti vs ⁴⁸Cr at same A): residual +7.24 MeV, i.e. +1.81 MeV per neutron — this is the briefing's target figure, and it's the standard SEMF asymmetry-energy signature a_A (N−Z)²/A.
+
+The three are arithmetically closed: B = A + 35.32 (one SS-7 alpha step), A = C + R(⁴⁸Cr).
+
+**Why this matters for mechanism space.** Under Framing B, the per-neutron signal in the bulk regime (N_α ≥ 8) is ~11–13 MeV, which is 4.7–5.6 × B_pair. That kills briefing candidate #1 (decoration at one B_pair per neutron) by scale — but it fits candidate #3 (interstitial neutron coordinated to 4–6 nucleon nearest-neighbors via qDP K₃-like contacts) beautifully. Under Framing C, the target is ~2 MeV/n and the mechanism space is a different physics entirely — an isobar-difference calculation between an N_α and (N_α−1) polytope configuration.
+
+**Other structural findings worth noting:**
+
+- Δ / N_ex decreases monotonically with N_ex within each row — asymmetry-like curvature is unambiguously present.
+- Δ / N_ex at N_ex=2 plateaus at ~11–13 MeV for N_α ≥ 8, drops to ~6 MeV at N_α=4, ~3–7 MeV at N_α=3 (dripline-near).
+- ⁴⁸Ca stress test: +76.83 MeV = +9.60 MeV/n, sitting on the smooth Ca-chain trend, not an enhanced doubly-magic outlier.
+
+**My recommendation: target Framing B (absolute binding).** That's the natural SS-7 extension — SS-8 derives B_SS8(N_α, N_ex) with SS-7 recovered at N_ex=0, and the ~2 MeV/n asymmetry signature emerges as a derived consequence of the formula, not as a calibrated input. This parallels SS-7's relationship to SS-5 (SS-7 derives absolute binding; SS-5's ⁴He closure is a special case).
+
+But I don't want to commit the paper's scope to Framing B without your explicit sign-off, because (a) the briefing's language is anchored on Framing C's 2 MeV/n figure, and (b) Framing B implies the paper needs to reach ~4–5 B_pair/neutron binding, which is a more ambitious derivation than matching the asymmetry energy alone.
+
+*[Outcome: Thomas chose "Both — derive absolute (B), recover C as corollary." This became founders_voice/001_framing_B_decision.md (committed in patch 2) and is the load-bearing decision behind SS-8 v0.1's primary §3 result + §4 derived corollary structure.]*
+
+---
+
+### Phase 1 mechanism discrimination: odd-A scan, Ca chain, ⁶Li partial-alpha (21 April 2026)
+
+*[Note: with Framing B + C target settled and "develop interstitial alongside valence-pair" authorized, the previous Opus added the discriminating empirical tests — odd-A rows, the full Ca isotope chain scan, and the ⁶Li α-d partial-alpha case. The discrimination was decisive across all three.]*
+
+Phase 1 complete. All five briefing-sequence steps done, mechanism discrimination is decisive, and a clean set of working hypotheses is ready for v0.1.
+
+**Three key results:**
+
+**Odd-A scan:** Δ(N_ex=1) ≈ Δ(N_ex=2)/2 within ~0.7 MeV across N_α = 7–14. This kills pure valence-pair (which predicts Δ(odd) ≈ 0) and cleanly supports interstitial coordination with a small pairing bonus.
+
+**Ca isotope chain:** Classic nuclear odd-even staggering is visible in the second differences of Δ vs N_ex (±3 MeV alternating sign). That's consistent with a ~1.3 B_pair pairing bonus sitting on top of the interstitial contribution — matches SS-5's same-polarity/opposite-polarity DP pair mechanics exactly.
+
+**⁶Li α-d binding:** 1.474 MeV observed vs (2/3) B_pair = 1.561 MeV predicted. Ratio 0.944, match within 6%. The briefing's K₃-incomplete hypothesis for partial-alpha is empirically vindicated.
+
+**Headline findings:**
+
+| Claim | Observed | From CPP primitives (zero-parameter) |
+|---|---|---|
+| Δ(N_α ≥ 8, N_ex=2) saturation | mean 25.0 MeV across 7 values | 11 × B_pair = 25.76 MeV |
+| ⁶Li α-d binding | 1.474 MeV | (2/3) × B_pair = 1.561 MeV (ratio 0.944) |
+| Odd-A per-neutron scaling | Δ_1 / (Δ_2/2) avg 0.94 | single-neutron interstitial coordination with minor pairing decrement |
+| Ca chain odd-even stagger | ±3 MeV alternating | ≈ 1.3 B_pair per pair (SS-5 mechanism adapted) |
+
+**Ruled out:** pure decoration (#1, scale off 5×), pure valence-pair (#2, odd-A Δ is firmly nonzero). **Supported:** interstitial coordination k ≈ 4–6 (#3) as main-line mechanism, K₃-incomplete contact (#5) as partial-alpha special case.
+
+**Hypotheses ready for v0.1 (labelled H1–H6, not axioms):**
+
+- H1: polytope-specific interstitial site inventory with coordination numbers k(site, N_α)
+- H2: single-neutron binding = k × B_pair (same qDP K-mode machinery as SS-5)
+- H3: opposite-polarity pairing bonus ~0.3–1.3 × B_pair per pair
+- H4: same-polarity Pauli decrement producing asymmetry-like N_ex curvature
+- H5: small-polytope attenuation at N_α ≤ 4 (no interior sites → k ≤ 3)
+- H6: K₃-incomplete partial-alpha mechanism for ⁶Li, and tentatively ¹⁴N, ¹⁸O
+
+Framing C emerges as a derived corollary: the ~2 MeV/n SEMF-asymmetry signature comes out as the geometric differential between an N_α polytope and an (N_α−1) polytope plus 2 interstitial neutrons, with no separate calibration.
+
+**Two things I want to flag before you commit to the next step:**
+
+1. H1 is the hypothesis that will drive the paper. It says "for each N_α, the polytope's interstitial site inventory gives a specific set of k values." For N_α = 5–14 the polytopes are well-defined convex solids (triangular bipyramid, octahedron, pentagonal bipyramid, snub disphenoid, tricapped triangular prism, etc.), and the geometric enumeration of interstitial sites is a real but tractable calculation. Doing this enumeration before writing v0.1 would let us predict Δ(N_α, N_ex) from first polytope geometry, not just confirm it fits — which would make v0.1 quantitatively predictive in the same way SS-7 is for the strict N=Z chain.
+
+2. Alternatively, v0.1 can proceed with H1–H6 as structural commitments and the polytope enumeration deferred to v0.2 or to a companion paper. That's faster to first draft but produces a paper whose empirical strength is an order-of-magnitude match rather than a zero-parameter match.
+
+---
+
+### Phase 1b decision: polytope enumeration before v0.1 drafting (21 April 2026)
+
+*[Note: Thomas authorized "use your best judgement." The previous Opus chose option 1 (Phase 1b enumeration first) and surfaced one structural concern about SS-7's C4 hypothesis along the way.]*
+
+Best judgment: option 1 (Phase 1b enumeration first), with scope discipline — I'll enumerate the convex deltahedra for N_α ∈ {3,...,12}, compute the naive face-center k=3 interstitial site inventory, and test whether k × B_pair binding reproduces the observed scale. This is the single most predictive thing I can do before v0.1 commits, and if the naive picture is off, catching that now beats catching it in a v1.1 reviewer round.
+
+**Note: there is no convex deltahedron at N_α = 11 (Freudenthal 1947).** This is an interesting gap I'll report on, since SS-7's C4 hypothesis nominally requires simplicial connectivity at every N_α — though the empirical ⁴⁴Ti residual at N_α=11 is only −0.2%, so the constraint is graph-simplicial (3N−6 edges), not polytope-deltahedral.
+
+---
+
+### The 2E/V scaling law discovery (21 April 2026)
+
+*[Note: the Phase 1b polytope enumeration produced a much cleaner result than the previous Opus expected — the central physics finding of SS-8. The naive face-center k=3 model and the interior-centroid model both failed by scale. But the effective k value extracted from each polytope's bulk-regime Δ_2 plateaued at ~5, and the recognition that 2E/V for any simplicial polytope is exactly 6 − 12/V (the average vertex degree, by Euler + handshaking) made the entire scaling law fall out zero-parameter. This identification — the 2E/V scaling law as the SS-8 analog of SS-7's 3N−6 theorem — became the central H2' of the paper that everything downstream (Session 0's Layer 1/2a/2b decomposition, Session 1's v0.1 draft, Session 2's v0.2 response) was built on.]*
+
+This is a much cleaner finding than I expected. Look at Section C carefully:
+
+**k_eff plateaus at ~5 in the bulk regime.** And 2E/V for a simplicial polytope is exactly 6 − 12/V — the average alpha-vertex degree. Let me check the correspondence:
+
+| N_α | 2E/V (predicted) | k_eff (observed) | residual |
+|---|---|---|---|
+| 4 | 3.00 | 2.68 | −0.32 |
+| 6 | 4.00 | 4.01 | +0.01 |
+| 8 | 4.50 | 4.98 | +0.48 |
+| 10 | 4.80 | 4.85 | +0.05 |
+| 12 | 5.00 | 5.39 | +0.39 |
+
+**The scaling law k_eff = 2E/V = 6 − 12/V captures the observation zero-parameter,** with a small systematic residual ~0.3–0.5 that's the right size to be the opposite-polarity pairing bonus from the nn pair at N_ex=2 (matching the Ca-chain odd-even staggering independently).
+
+This is the geometric predictive core SS-8 needed. Each interstitial neutron's binding scales with the average alpha-vertex degree — which follows from simplicial polytope combinatorics with no geometric measurement needed. The K₃ edges are the bonding mediators (consistent with SS-5), and the neutron's "k" is the count of K₃ edges at the alpha-vertex it's near.
+
+---
+
+### Session-end summary, candidate OPEN-SS-26, and the failure to commit (21 April 2026)
+
+*[Note: at session close the previous Opus locked in the central finding and flagged surprises for the next session. The candidate OPEN-SS-26 opening here — first-principles derivation of H2' (the 2E/V rule) from A5+A8'+A11 without geometric input — is the one that Session 0 then sharpened (correctly to A2+A5+A8'+A11 + C1-C4 + D1-D3) and that v0.1 inherited. The session ended thinking the four artefact files were committed. They weren't — the Session-0 Opus caught the failure the next morning and the originating sandbox happened to still be live, which is the only reason the byte-identical files were recoverable. That close call became the motivating example for the operating_system.md §13 commit-cadence rule.]*
+
+**The central Phase 1 result in one line:** Δ_1(N_α) = (6 − 12/V) × B_pair per extra interstitial neutron — the SS-8 analog of SS-7's 3N−6 theorem, zero-parameter, matching observation within 10% across N_α = 4..14 with residual consistent in sign and magnitude with the independently-observed nn pairing bonus.
+
+**Flagged surprises along the way:**
+
+- The briefing's "~2 MeV per extra neutron" figure is Framing C (isobar-asymmetry), not the absolute-binding signal a direct SS-7 extension needs. Framing B gives ~11 MeV/n in the bulk. Both targets are derivable from a single H2' scaling law; the asymmetry energy comes out as the (N_α) − (N_α−1) differential as predicted.
+- No convex deltahedron at N_α = 11. SS-7's −0.20% residual at ⁴⁴Ti works anyway because C4 is graph-simplicial, not polytope-deltahedral. Worth a footnote in SS-8 and possibly an ancillary note in the axiom-registry C4 entry.
+- Pure decoration (candidate #1) and pure valence-pair (candidate #2) are both falsified by the data in Phase 1. Decoration by scale (5× off), valence-pair by odd-A (non-zero Δ at N_ex=1).
+- The ⁶Li α-d binding matches (2/3) × B_pair within 6%, zero-parameter, corroborating H6'.
+- **Candidate OPEN-SS-26 opens naturally:** first-principles derivation of H2' (the 2E/V rule) from A5+A8'+A11 without geometric input. Not blocking for v0.1.
+
+*[Outcome trajectory: this session closed believing the four artefact files (`ame2020_loader.py`, `ss8_empirical_map_extended.py`, `ss8_polytope_enumeration.py`, `SS-8_Phase1_extended_map_findings.md`) had been committed when in fact they only existed in the live sandbox. Session 0 the next day caught this; the originating sandbox happened to still be live so the files were preserved byte-identically and committed as commit 814d431. This near-loss event is the empirical motivation behind the operating_system.md §13 "Commit cadence (adopted 22 April 2026)" rule with its two triggers — section-end batch and context-pressure preservation — and the "transcript summaries are lossy, committed files are verbatim" principle. The candidate OPEN-SS-26 framing here ("derivation of H2' from A5+A8'+A11") was sharpened by Session 0 the next day to the more honest A2+A5+A8'+A11 (programme) + C1–C4 (inherited from SS-7) + D1–D3 (new, paper-level structural hypotheses) decomposition — see Session 0's first turn above for the verbatim axiom check that produced that correction.]*
+
+---
+
+*End of Pre-Session-0 content. SS-8 Tier 4 recovery is now substantially complete: Pre-Session-0 (Phase 1+1b empirical map), Session 0 (foundation H2'/D1/Q2/Round-2), Sessions 1–2 (v0.1/v0.2 drafting), and Session 1A (advisor turns in parallel). Sessions 3+ (post-v0.2 work, including v1.0 production and OPEN-ORG-003 implementation) remain uncovered at Tier 4 fidelity; their reasoning is recoverable only from existing development-SS-8.md vignettes and committed artefacts at Tier-3 fidelity. If chat-window content for those sessions surfaces later, this file will be appended in subsequent recovery patches.*
