@@ -67,11 +67,16 @@ Multi-day continuous work (e.g., a 25–26 April session arc spanning midnight) 
 
 ## Existing log entries (chronological)
 
-| Date | Topic | Subject |
+| File | Topic | Subject |
 |------|-------|---------|
-| 2026-04-25 | session log | Bootup stress-test (patches 0022–0023); OPEN-ORG-003 swarm-tally audit (patches 0024–0026); SS-8 v1.0 paper-completion Session 1 high-priority registry (patch 0027) |
-| 2026-04-25_2 | session log | (continuation) SS-8 v1.0 paper-completion Session 2 — 7-file documentation suite (patch 0028) |
-| 2026-04-26 | session log | SS-8 v1.0 paper-completion Session 2 medium-priority items (patch 0029); Phase 7 Completion Gate adoption-then-repeal; Two-Trigger Documentation Discipline + Cross-Paper Session Log convention codification (patch 0030) |
+| `2026-04-25_session_log.md` | Template B | Bootup stress-test (patches 0022–0023); OPEN-ORG-003 swarm-tally audit (patches 0024–0026); SS-8 v1.0 paper-completion Session 1 high-priority registry (patch 0027) |
+| `2026-04-25_session_log_2.md` | Template B | (continuation) SS-8 v1.0 paper-completion Session 2 — 7-file documentation suite (patch 0028) |
+| `2026-04-26_session_log.md` | Template B | SS-8 v1.0 paper-completion Session 2 medium-priority items (patch 0029); Phase 7 Completion Gate adoption-then-repeal; Two-Trigger Documentation Discipline + Cross-Paper Session Log convention codification (patch 0030); anthology chapters SS-7 and SS-8 (patches 0031–0032); anthology chapter template + three full arcs (patch 0034) |
+| `2026-04-26_session_log_2.md` | Template A + Template B parallel | OPEN-SS-24 Phase 1 Steinitz-pivoted conditional-theorem scaffold (patches 0036–0038); §4 Session-Log-as-Handover-Backbone Discipline codification (patch 0038) |
+| `2026-04-26_session_log_3.md` | Template B | Off-track investigation of alpha rigidity, refined C1 with multi-faceted rigidity facets (patch 0040); Four-Tier Documentation Discipline codification (patch 0042) |
+| `2026-04-26_information_management_journey.md` | Template B retrospective | Meta-record of the methodology-development arc across the originating session arc (patches 0022–0034). Not a fresh session; written at Thomas's request to capture the information-management journey as its own artifact alongside the technical session logs. |
+| `OPEN-SS-24_handover.md` | Handover document | Bootstrap for next-Opus OPEN-SS-24 work; subsumed under §4 Session-Log-as-Handover-Backbone Discipline as a one-time historical bootstrap |
+| `OPEN-SS-24_phase1_v0.2_working_draft.md` | Working draft | OPEN-SS-24 Phase 1 working draft (Steinitz-pivoted conditional-theorem scaffold, patch 0036) |
 
 ---
 
