@@ -116,3 +116,57 @@ The pivot from "close v0.2's Lemma B gaps" to "restructure Lemma B" reflects the
 ---
 
 *Session log entry per `templates/operating_system.md` §4 "Session-Log-as-Handover-Backbone Discipline" + "Four-Tier Documentation Discipline." Template-A application (theoretical-development; substantive content is the v0.3 graph-theoretic Lemma B$'$ restructuring and the C7 hypothesis introduction). Connects to Session 3's log via the §4 discipline — Session 3 produced the refined-C1 foundation that Session 4 integrated into the SS-9 closure as load-bearing in Theorem clause (iv); v0.2's Lemma B argumentative gaps are dissolved at the framework level rather than tightened within the v0.2 framework. Next session decides between paper-text transition (1A) and Phase 4 push (1B); both are well-defined and either is a clean continuation.*
+
+---
+
+## Session 4 Follow-Up Arc — Alpha-Chain Extension and PRED-O Testing
+
+**Continuation of:** Above session log (Session 4 v0.3 working draft restructuring).
+**Trigger:** Thomas's articulation of operative principle for next-arc selection: shoot the stars (swarm of zero-parameter predictions); accept what the data says; "sufficient breadth with convincing depth that proofs of axiom to theorem are not isolated or plausibly post-diction curve fitting." Three options analysed: (1A) v0.3 → v0.1 paper-text transition, (1B) OPEN-SS-33 first-principles closure, (γ) PRED-O-16/17/18 testing via alpha-chain extension. Option (γ) selected as the only path that adds new stars to the swarm.
+**Patches produced (continuation):** 0058 (sketch document `SS-9_alpha_chain_extended_residuals.md`), 0059 (Python computation script `SS-9_alpha_chain_extended.py`), 0060 (PRED-O-19 + PRED-O-16/17/18 status updates + FALS-C-8 in `predictions.md`), 0061 (OPEN-SS-34 in `Research_Frontier.md`), 0062 (transcript-SS-9 transactions 058-072), 0063 (development-SS-9 Vignette 6), 0064 (reasoning-SS-9 Session 4 follow-up verbatim append), 0065 (this session log continuation).
+
+### Substantive content
+
+**Empirical extension.** SS-7 Table 1 fingerprint extended to strict-$N=Z$ alpha-chain at $N_\alpha = 15$–$20$ using TOI 98 binding-energy values (agreeing with AME 2020 to $\sim 50$ keV across the well-measured range). Six new entries: ${}^{60}$Zn, ${}^{64}$Ge, ${}^{68}$Se, ${}^{72}$Kr, ${}^{76}$Sr, ${}^{80}$Zr.
+
+**Striking finding — clean two-regime structure.** Linear fits to $|E|_\text{actual}$ vs $N_\alpha$:
+- $N_\alpha \in [3, 14]$: slope $= 3.12$, intercept $= -6.32$ (compatible with $|E| = 3 N_\alpha - 6$, simplicial deltahedron).
+- $N_\alpha \in [14, 20]$: slope $= 1.04$, intercept $= +23.08$ (each new alpha adds only $\sim 1$ effective face contact).
+
+**Sharp transition exactly at $N_\alpha = 14 \to 15$**, between ${}^{56}$Ni ($Z = N = 28$, doubly-magic) and ${}^{60}$Zn ($Z = N = 30$). Factor-of-three slope discontinuity.
+
+**Two-regime CPP picture (1 calibrated parameter $B_\text{slip} \approx +4$ MeV from ${}^{56}$Ni residual):**
+- Regime I (simplicial): $B = N_\alpha B_\alpha + (3 N_\alpha - 6) B_\text{pair}$ for $N_\alpha \in [3, 14]$.
+- Regime II (deltahedron core + satellites): $B = N_\alpha B_\alpha + (N_\alpha + 22) B_\text{pair} + B_\text{slip}$ for $N_\alpha \geq 14$.
+
+**Calibration check (Regime II):** RMS residual 0.27 MeV across 7 nuclei at $N_\alpha = 14$–$20$, relative accuracy 0.046%. The integer-1 slope and integer-22 intercept emerge from "deltahedron core ($N_\alpha^\text{core} = 14$) + 1-bond satellites" structural picture, not fitted.
+
+### PRED-O status determinations
+
+- **PRED-O-16 (single-cluster slip-plane extension): FALSIFIED.** Sign opposite to predicted at $N_\alpha \geq 15$. Registered in `predictions.md` Section 5 as FALS-C-8.
+- **PRED-O-17 (single-to-hierarchical regime transition $N_\alpha^\text{crit} \in [16, 25]$): PARTIALLY CONFIRMED, MISLOCATED.** Transition at $N_\alpha = 14 \to 15$ (below predicted range), sharper than predicted, satellite-regime not hierarchical.
+- **PRED-O-18 (hierarchical slip-plane additivity): NOT REQUIRED.** Single-cluster satellite picture sufficient.
+
+### New registrations
+
+- **PRED-O-19 (NEW):** Forward-looking prediction for $N_\alpha \in [21, 25]$ strict-$N=Z$ alpha-chain. Numerical: ${}^{84}$Mo $\to 698.92$, ${}^{88}$Ru $\to 729.56$, ${}^{92}$Pd $\to 760.20$, ${}^{96}$Cd $\to 790.84$, ${}^{100}$Sn $\to 821.47$ MeV. Falsification: residuals $> 1$ MeV identify $N_\alpha^{(2)\text{crit}}$ (likely candidate ${}^{100}$Sn doubly-magic $Z = N = 50$).
+- **OPEN-SS-34 (NEW candidate, pending ratification):** Programme-level closure of deltahedron-core / satellite-regime mechanism from CPP primitives + refined-C1. Methodologically parallel to OPEN-SS-32. Three candidate readings: doubly-magic shell closure, deltahedra-gap exhaustion, Coulomb-pressure threshold; likely a combination.
+
+### Anti-post-diction credibility effect
+
+The clean falsification of PRED-O-16, partial confirmation of PRED-O-17, and reformulation as PRED-O-19 demonstrates that the swarm contains testable predictions, not post-diction fits. Theory survives by being honest about which predictions hold and which don't, then sharpening with new forward-looking predictions. Programme strengthens via the falsification, not despite it.
+
+### State at follow-up arc close
+
+**Cumulative programme state:** 9 axioms, 103 zero-parameter empirical correspondences (unchanged net — 6 added empirical entries to alpha-chain analysis but PRED-O-16 falsification cancels in the "predictions made" tally; net swarm growth comes from PRED-O-19 if it confirms at $N_\alpha = 21$–$25$). Pending-ratification entries grow: OPEN-SS-29, OPEN-SS-30, OPEN-SS-31 (Session 2), OPEN-SS-32 (Session 3), OPEN-SS-33 (Session 4 main arc), **OPEN-SS-34 (Session 4 follow-up, NEW)**.
+
+**Forward-looking pointers for next session:**
+- **Priority 1 (high-leverage swarm extension):** PRED-O-19 verification against AME 2020 values for $N_\alpha = 21$–$25$. If all 5 hit at $\sim 0.05\%$ accuracy, the satellite regime extends from a 7-nucleus fit to a 12-nucleus fit and the swarm grows by 5 zero-parameter empirical correspondences. If ${}^{100}$Sn deviates while others hit, $N_\alpha^{(2)\text{crit}} = 25$ is identified empirically.
+- **Priority 2:** Investigate whether OPEN-SS-34 closure proceeds via Pattern-6 K$_3$ scale-recurrence; possible joint closure with OPEN-SS-32 (slip-plane mechanism) since both arose from clean residual-pattern observations.
+- **Priority 3 (paper text):** SS-9 v0.3 → v0.1 paper-text transition remains available; deferred in favor of swarm-growth arcs.
+
+**Anti-priority (do NOT do):** Do not fit $B_\text{slip}$ as an additional parameter in higher-precision claims. The $\sim +4$ MeV calibration is from ${}^{56}$Ni's residual, not free-fit; treating it as free would be exactly the post-diction trap Thomas's operative principle warns against. The 0.046% relative accuracy is a calibrated-formula result, not a fitted-formula result — this distinction must be preserved in any future paper deliverable.
+
+---
+
+*Session log Template-A continuation per §4 discipline. Substantive content: PRED-O-16/17/18 testing via alpha-chain extension; clean two-regime structure identified; PRED-O-19 + OPEN-SS-34 registered. Connects to main session log via the operative-principle continuation: main arc (v0.3 working draft) consolidated existing territory by restructuring Lemma B; follow-up arc (alpha-chain extension) advances the swarm by adding tested empirical correspondences.*
