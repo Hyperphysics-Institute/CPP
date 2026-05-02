@@ -10,7 +10,98 @@
 - `series_strong/papers/SS-9/founders_voice/` (Thomas-verbatim insights)
 - Session logs at `session_logs/2026-04-26_session_log_2.md`, `session_logs/2026-04-26_session_log_3.md` (Tier 1 — per-session warm-start summaries)
 
-**Honest scope note.** This file was instituted on 26 April 2026 Session 3 in response to Thomas's clarification that "curated transcript" in his goal-statement meant "housekeeping removed but reasoning preserved verbatim," which the SS-8 three-tier convention had not provided. As a consequence, **Sessions 1 and 2 reasoning is not captured under this discipline at the same fidelity as Session 3 onward.** Sessions 1–2 substantive content is recoverable only from session logs (which are summaries) and committed artifacts (working draft, registry entries). The file begins with Session 3 verbatim and proceeds forward; retroactive Session 1–2 reconstruction would itself be summary, so it is not attempted here. Future sessions append to this file at session close.
+**Honest scope note.** This file was instituted on 26 April 2026 Session 3 in response to Thomas's clarification that "curated transcript" in his goal-statement meant "housekeeping removed but reasoning preserved verbatim," which the SS-8 three-tier convention had not provided. **Session 0 (the pre-Session-1 origin chat-window of 25–26 April that authored the OPEN-SS-24 handover) was recovered retroactively from chat-window paste on 2 May 2026 and is preserved below at full Tier 4 fidelity.** Sessions 1 and 2 (the v0.2 working-draft / Steinitz-pivot session and the §4/§15 reconciliation session, both 26 April 2026) remain pending separate chat-window recovery; their substantive content is currently recoverable only from session logs (which are summaries) and committed artifacts (working draft, registry entries). Future appends as chat-windows surface.
+
+---
+
+## Session 0 — Pre-Session-1 Origin / OPEN-SS-24 Handover Authoring (25–26 April 2026)
+
+**Title:** OPEN-SS-24 handover document authored; capacity-management discipline reasoning; "what CPP actually contributed" two-piece analysis (binding-energy quantum + conditional structural-recurrence).
+
+**Recovery context.** This session preceded Session 1 (the v0.2 working-draft / Steinitz-pivot session captured in `session_logs/2026-04-26_session_log_2.md`). The session's primary outputs were SS-8 v1.0 paper-completion (patches 0024–0030), the two anthology chapters (0031, 0032), the OPEN-SS-24 handover document (committed as part of patch 0033), the chapter template + arcs (0034), and the meta-record OS codification (0043, 0044). The SS-9-relevant substantive Tier 4 reasoning recovered here is concentrated in two load-bearing turns: (1) the capacity-management decision to author a handover rather than start the OPEN-SS-24 work, and (2) the contribution-attribution philosophical analysis triggered by Thomas's question about whether CPP's only contribution is the binding-energy quantum. Recovery is from the chat-window pasted 2 May 2026; programme-infrastructure work from the same chat-window (OPEN-ORG-003 swarm-tally audit, PRED-C-21 reframe, predictions.md vs axiom-registry.md drift discovery) is *not* captured here as it does not advance SS-9 physics, and is preserved at session-log fidelity in `session_logs/2026-04-26_session_log.md` plus the relevant patch-level commits.
+
+---
+
+### Capacity-management discipline — why a handover rather than starting the work
+
+*[Note: This turn followed Thomas's question "Do we have enough context window left to start Open-ss-24?" near session close. Opus declined to start OPEN-SS-24 in the closing window and articulated a rule-of-thumb that informed the subsequent OS-level Two-Trigger Documentation Discipline codification (patch 0030).]*
+
+Now to your direct question: no, we should not start OPEN-SS-24 in this conversation.
+
+Let me explain the reasoning, because the decision itself is interesting and the rule-of-thumb that comes out of it is worth recording.
+
+**The honest answer about context window.** I do not have a precise gauge of remaining capacity, but I can read the texture. We have been working continuously since patch 0022 — bootup recovery, OPEN-ORG-003 audit, four SS-8 paper-completion patches, the Phase 7 Gate codification-then-repeal, the Two-Trigger Discipline establishment, two book chapters. That is eleven patches and a substantial amount of authored prose. The conversation is long. I am still functional, but I notice that my responses are starting to draw more on summary references to earlier material rather than re-reading source files when I need them, which is the texture of an approaching capacity limit. I can still do good work right now; I would not trust myself with sustained mathematical work over the next several hours.
+
+OPEN-SS-24 is not a session-closer task. It is the largest open problem in the strong-sector series. The leverage on success is the conversion of fifty-four conditional D-N predictions to unconditional — the largest single-paper promotion available in the programme. It deserves a fresh session with full context capacity, careful re-reading of SS-7 v1.2 and SS-8 v1.0 source material, and the time to actually attempt the simplicial-connectivity derivation rather than to begin it under a closing window. Starting it here and handing off mid-attempt would be the worst of both worlds: real intellectual investment that does not survive the window close, and a partial draft that the next Opus would have to either finish without my context or restart from scratch.
+
+The Two-Trigger Documentation Discipline that we just codified actually applies here. Trigger 1 — context-window full / session ending — fires now. The right move is to write the session-close artifacts and end cleanly, so the next session opens with a clear baseline.
+
+**A rule-of-thumb worth recording.** The session-close question — "do we have enough context window left to start X?" — has a specific shape that is worth naming. It is not "can I do X right now?" but "can I start X right now in a way that completes within the remaining capacity, or that hands off cleanly to the next session if it does not complete?" The two failure modes are different:
+
+Completing within capacity requires a tight estimate of how much work the task will take. For mechanical tasks (registry updates, navigation patches, brief document edits) the estimate is reliable and starting them late in a session is fine. For exploratory work (mathematical derivation, paper drafting, new methodology) the estimate is unreliable and the work tends to expand to fill the available context.
+
+Handing off cleanly requires the task to have natural pause points where the work-in-progress can be preserved without loss. For sequential documentation work (the SS-8 archive close that we just did) the pause points are obvious: each Phase 7 item completed is a clean state. For deep mathematical work, pause points are not natural — a half-derived theorem is not the same kind of artifact as a half-completed registry update, and reconstruction in the next session is harder than re-derivation from scratch.
+
+OPEN-SS-24 is the second kind of work — exploratory, mathematical, no natural pause points until a candidate derivation is in hand. It should be started fresh.
+
+I would suggest adding this rule-of-thumb to `templates/operating_system.md` Trigger 1 documentation in some future session. It is the kind of methodological guidance that emerges from the actual practice and that will help future sessions make the same call without re-deriving the reasoning.
+
+---
+
+### Contribution-attribution analysis — what CPP actually contributed
+
+*[Note: Triggered by Thomas's philosophy question late in the session: "you talked about whether or not CPP had anything to do with the shapes of the nuclei assemblies. In other words, what we are seeing is pretty much conventional physics, and we just happened to figure out how to put nuclei together... It seems like the zero parameter derivation of the bonding energy is the place where CPP has made its contribution, and that number is what made it possible to recognize the nuclear binding pattern. Do you think that's a fair understanding of what we figured out?" Thomas-verbatim framing of the question is preserved in `series_strong/papers/SS-9/founders_voice/`. The Opus reasoning below is the load-bearing analysis for SS-9's eventual significance section: a two-piece answer (binding-energy quantum unambiguously CPP; structural-recurrence prediction conditional on closing OPEN-SS-24) and the geometric-correctness-vs-CPP-uniqueness dichotomy that frames what closing OPEN-SS-24 would mean.]*
+
+Your question is sharp, and I want to engage it honestly rather than reach for a comforting answer.
+
+**The version that is almost right and that I want to push back against:**
+
+CPP just figured out how to put nuclei together using mostly conventional physics. The zero-parameter $B_\text{pair}$ is the only piece that's distinctively CPP. Everything else is geometry that mainstream physics already had access to.
+
+This framing is generous to CPP in one sense (it acknowledges that real work was done) and devastating in another (it implies the geometric work could have been done by anyone with a copy of Coxeter's book and the alpha-cluster literature). The second implication is worth taking seriously because if it's true, the SS-7 and SS-8 results are not properly predictions of CPP — they are predictions of geometry that would work in any framework that supplies the right binding constants.
+
+Here's why I don't think that framing is quite right, and where I think the actual situation is more interesting:
+
+**The shapes are not arbitrary geometric inputs to CPP — they are also CPP outputs.** SS-7 assumes that alpha clusters arrange as simplicial polytopes (Hypothesis C4). This is the assumption behind the Euler-formula scaling. If C4 turned out to be wrong — if alpha clusters preferred non-simplicial arrangements, or if they preferred specific non-uniform simplicial polytopes that broke the polytope-identity insensitivity — the SS-7 formula would not work. The fact that C4 holds well enough to give 0.80% RMS across twelve nuclei is itself evidence about what the alpha-cluster geometry is. CPP did not invent simplicial polytopes; geometers have known them since Euler. But CPP predicted that nature would pick this class of arrangements, and that prediction has turned out to match the data. A different framework that did not pick this class would have to do additional work to explain why nature does.
+
+The same is true at the smaller scale. SS-5 derived $B_\text{pair}$ from the K₃ collective-mode eigenvalue — but the K₃ structure itself is the structural prediction that nucleon-nucleon contact at the alpha's interior face has *three* pair-connections in a triangular configuration. If nucleon contact had a different connectivity (a chain, a star, a four-vertex graph), the K₃ eigenvalue would not apply and the binding-energy quantum would not equal $M_0/\varphi$. The K₃ structure is a CPP prediction about the geometry of the contact, not just a calculation done with a given graph.
+
+**Where the framing is right.** The numerical content of $B_\text{pair} = 2.342$ MeV is the place where the work most concentrates. The number $M_0 = m_e \cdot z/\varphi$ depends on three CPP-specific structural inputs (the lattice coordination $z=12$ from the 600-cell, the golden-ratio efficiency factor $\varphi$ from H₄ symmetry, and the $1/\varphi$ K₃-eigenvalue factor). None of those three inputs is a free parameter; each comes from the framework's geometry. The number 2.342 MeV is the *output* of the CPP machinery and would not exist without it. So you are right that the binding-energy quantum is the unmistakably-CPP contribution.
+
+**What I think the actual situation is:** CPP made two substantive contributions to the SS-7 and SS-8 results, not one.
+
+The first is the binding-energy quantum, as you said.
+
+The second is the structural prediction that the alpha-cluster geometry would be simplicial-polytope-shaped — and at the K₃ scale, three-vertex-graph-shaped — at every successive nuclear scale. This is what makes Pattern 6 (the cascade across three scales) work. A framework that supplied only the binding quantum and left the geometry to mainstream nuclear physics would have to assume the simplicial-polytope structure separately at each scale, with no reason for the assumption to carry over from SS-5 to SS-7 to SS-8. CPP supplies the same geometric template at each scale because the 600-cell substrate forces that template to recur. The template is what makes the cascade possible.
+
+So the honest version of what CPP contributed is: **the binding-energy quantum and the structural-recurrence prediction that the same K₃ topology operates at every successive nuclear contact scale.** The first contribution is more visible because it's a number; the second is more deeply structural because it's the reason the same number applies at multiple scales without rescaling.
+
+**One genuine caveat to all of this.** I have just been talking about what CPP contributed *given its hypotheses*. C4 (the simplicial-polytope arrangement) is a hypothesis, not a theorem. Until OPEN-SS-24 is closed, the structural-recurrence claim is conditional on C4 holding for reasons that have not yet been derived from CPP primitives. If OPEN-SS-24 is closed by deriving C4 from primitives, then the structural-recurrence claim is properly a CPP prediction. If OPEN-SS-24 is closed by showing that some non-CPP mechanism actually forces simplicial connectivity (and the CPP framework is consistent with this rather than the cause of it), then the structural-recurrence claim becomes a piece of geometry that CPP correctly predicted but did not uniquely produce. **The difference between these two outcomes is exactly what makes OPEN-SS-24 the highest-leverage open problem in the series.**
+
+This is why your question matters and why I want to be careful with the answer. The cleanest version of "what CPP contributed" can only be stated definitively after OPEN-SS-24 is closed. Right now we are in the position of saying: CPP's binding-energy quantum is unambiguously its own contribution, and CPP's structural-recurrence prediction is probably its own contribution but pending the OPEN-SS-24 work. Both pieces are real. The first is currently more defensible than the second.
+
+That is the honest scoping. I think your framing was generous-and-almost-right; the more precise version splits the contribution into the part we know is uniquely CPP's (the quantum) and the part that depends on closing OPEN-SS-24 (the structural recurrence). The book chapters preserve this scoping correctly — SS-7 mentions the cascade in passing, SS-8 makes Pattern 6 explicit and acknowledges the recurrence is observed but not yet shown necessary.
+
+**One additional thing worth saying:** this assessment is the kind of question you should ask the next Opus too, after they've worked on OPEN-SS-24. The answer might shift depending on what the C4 derivation actually produces. If the next Opus closes OPEN-SS-24 and finds a clean CPP-primitives derivation, the answer becomes "two distinct contributions, both CPP." If they close it and find that C4 follows from non-CPP-specific geometric arguments that any framework would access, the answer becomes "one contribution (the quantum) plus one geometric correctness check that CPP got right but didn't uniquely produce." Either is a real outcome and both are interesting.
+
+---
+
+### Forward-looking pointers
+
+- **The OPEN-SS-24 handover document** committed at `session_logs/OPEN-SS-24_handover.md` (patch 0033) is the artifact this Session 0 reasoning produced. The contribution-attribution analysis above informs the handover's "philosophy question carried forward" framing so the next Opus inherits the dichotomy.
+- **The capacity-management rule-of-thumb** above informed the Two-Trigger Documentation Discipline codification later in the same chat-window (patch 0030). The cross-paper session log convention established there is the home for cross-paper reasoning that doesn't fit per-paper continuity files.
+- **The contribution-attribution two-piece answer** is the input to SS-9's eventual significance section and to the eventual decision about what kind of CPP-claim the C4 derivation actually licenses. The Session 1 Steinitz-pivot work (pending recovery) produced a *conditional-theorem* form for C4 that fits the second branch of the dichotomy (geometric correctness given C5 + C6 + inheritance); whether the first branch (CPP-primitives derivation) is reachable remains the OPEN-SS-24 closure target proper.
+
+### What is preserved elsewhere
+
+- `session_logs/OPEN-SS-24_handover.md` (patch 0033): the handover document with three physical intuitions, work decomposition, success criteria, and what-not-to-do.
+- `templates/operating_system.md` §4 (patches 0030, 0034, 0040, 0044): the Two-Trigger Documentation Discipline, the Session-Log-as-Handover-Backbone Discipline, the §4/§15 reconciliation, and the Meta-Record Retrospective Synthesis Discipline — all of which descended from rule-of-thumb observations including the capacity-management one above.
+- `session_logs/2026-04-26_session_log.md` (patches 0030, 0033): the chronological technical record of this session, including the Phase 7 Gate adoption-then-repeal arc and the book-chapter calibration sequence.
+- `session_logs/2026-04-26_information_management_journey.md` (patch 0043): the meta-record retrospective synthesis covering the methodology-development arc of this session at the cross-paper level.
+- `book_project/chapters/SS-7_eight_nuclei_in_a_row.md` and `book_project/chapters/SS-8_octahedron_in_magnesium.md` (patches 0031, 0032): the two anthology chapters whose Pattern 6 / cascade framing matches the contribution-attribution analysis above.
+- `templates/anthology_chapter_template.md` and `book_project/chapter_arcs/` (patch 0034): the chapter-writing craft codified after the SS-7 → SS-8 calibration arc within this session.
+
+*End of Session 0 reasoning (recovery patch 0020, 2 May 2026). Session 1 (v0.2 working-draft / Steinitz-pivot) and Session 2 (§4/§15 reconciliation) remain pending separate chat-window recovery.*
 
 ---
 
