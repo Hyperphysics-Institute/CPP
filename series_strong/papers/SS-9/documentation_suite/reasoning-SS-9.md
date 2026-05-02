@@ -958,3 +958,133 @@ For this session specifically, the deliverable would be `series_strong/papers/SS
 ---
 
 *End of Session 3 Opus reasoning. Future sessions append below.*
+
+---
+
+## Session 4 — v0.3 graph-theoretic Lemma B$'$ restructuring (2 May 2026)
+
+**Title:** Substantive diagnosis of v0.2 forward-direction supporting-hyperplane gap as orthogonal to the strict-C1/degree-5 inconsistency; v0.3 restructuring via new C7 (contact-graph planarity) hypothesis + Steinitz black-box + FvdW classification; refined-C1 facet (b) integrated as load-bearing in Theorem clause (iv).
+
+**Tier 4 inclusion scope for this session:** Substantive reasoning preserved verbatim — the diagnosis of the v0.2 gap, the orthogonality observation, the three-options analysis, the v0.3 framing decisions, the structural observations about the load-bearing role of facet (b), and the Lemma B$'$ proof structure. Housekeeping excluded per OS §4: tool-call narration ("let me clone the repo," "running the search"); status confirmations ("got it," "applied successfully"); procedural housekeeping (filename clarifications, where-should-this-file-live); tool-output narration; verbatim quotations from the v0.2 working draft and SS-7 v1.3 §2.1 (recoverable from source files at the pointer targets).
+
+### Bootup and orientation reasoning
+
+The handover from 26 April Session 3 is dense and well-structured. Re-reading it carefully before touching anything: the priority is unambiguous (Priority 1: Lemma B gap closure on refined-C1 foundation), the anti-priorities are explicit (don't write a separate handover, don't attempt PRED-O testing, don't attempt retroactive Tier 4 reconstruction without accessible chat windows), and the four-tier discipline is to run continuously from this point. The closing observation in the handover (about parallel substantive + methodological leverage) is itself a methodological flag: this session's deliverable should be substantive (Lemma B closure) without trying to also produce methodology leverage in parallel; that would balloon scope.
+
+The bootup file at the public raw URL came back dated 8 April 2026 with no §3.5 four-tier discipline content and only SS-1 listed in the strong sector. My initial reading was that patches 0048/0049 must not have actually pushed to `origin/main` — the handover claimed they had, but the public bootup didn't reflect them. I flagged this as a possible loose end before diving in. After cloning the repo and checking `git log bootup.md`, the situation is clearer: patches 0022 (Step 0 clone-first, OPEN-ORG-009) and 0049 (per-paper subfolder + four-tier discipline) are both present on `main`, dated 27 April 2026. The public `raw.githubusercontent.com` URL was just serving stale CDN-cached content — common operational behavior for that service, with cache TTLs that can lag the canonical `main` state by hours. Worth flagging to Thomas as a persistent operational concern for any URL-sharing workflow with collaborators, but not a substantive issue.
+
+The clone-first instruction in bootup is present (Step 0 was added at patch 0022, weeks before this session). My initial concern that bootup was missing the explicit clone step was based on the stale public version. The current bootup at main is correct on this point. The clone-first instruction is genuinely useful and Thomas's gut question ("was that obscure/not there, and should be rewritten to emphasize?") deserves a clean operational answer: no patch needed, the existing Step 0 already covers it. The cause of my early confusion was downstream of the staleness, not the bootup content itself.
+
+### Diagnosis of the v0.2 forward-direction gap
+
+The handover describes the v0.2 Lemma B forward-direction gap as a "supporting-hyperplane argument at the shared face $F_{ij}$" that "needs sharpening." Reading v0.2 §3 carefully against the actual claim it's trying to establish, the diagnosis is sharper than "needs sharpening": **the v0.2 argument has a substantive structural gap, not merely an incomplete sketch.**
+
+The v0.2 forward direction is: $\alpha_i \sim \alpha_j$ ⇒ $\overline{c_i c_j}$ is an edge of $H = \text{conv}(c_1, \ldots, c_{N_\alpha})$. The argument v0.2 sketches: "$F_{ij}$ lies on the surface of $H$ (it is part of the outer boundary of the cluster), so the segment $\overline{c_i c_j}$ either lies on the surface of $H$ ... or is an internal chord."
+
+The substantive issue: $F_{ij}$ does not lie on the surface of $H$ in any direct sense. $F_{ij}$ has nucleon-position vertices (the three quark-bearing vertices of the shared triangular face), not centroid vertices. $H$ is the convex hull of the centroids $\{c_1, \ldots, c_{N_\alpha}\}$, not the convex hull of the nucleon positions. There's no direct relationship between $F_{ij}$ and $\partial H$. Maybe $F_{ij}$'s plane intersects $\partial H$ in some 2D region, but that region need not contain $F_{ij}$ itself; and even if it does, that doesn't establish $\overline{c_i c_j}$ as a polytope edge.
+
+Reducing the forward direction to a clean supporting-hyperplane construction: $\overline{c_i c_j}$ is an edge of $H$ iff there exists a linear functional $\phi$ with $\phi(c_i) = \phi(c_j) > \phi(c_k)$ for all $k \neq i, j$. Equivalently: the projections of all other centroids onto the plane perpendicular to $\overline{c_i c_j}$ lie in some open half-plane through the origin (where the line $\overline{c_i c_j}$ projects to the origin). Equivalently: the line $\overline{c_i c_j}$ does not pass through $\text{conv}\{c_k : k \neq i, j\}$.
+
+Now: rigid packing forbids other *alphas* from intersecting $\overline{c_i c_j}$. But the convex hull of other *centroids* can in principle cross $\overline{c_i c_j}$ — three or more centroids surrounding the bipyramid $\alpha_i \cup \alpha_j$ at multiple angular positions could form a triangle in the perpendicular projection that contains the origin. The v0.2 hypothesis stack (C1+C2+C6+rigid packing) does not exclude this. C6 says all centroids are on $\partial H$; this rules out *interior* alphas but does not constrain how the boundary centroids are arranged angularly relative to any specific edge candidate.
+
+Concrete failure check: I considered whether the rigid-tetrahedral structure of the cluster constrains other-alpha-centroid projections enough to guarantee the supporting-hyperplane construction. The immediate neighbors of $\alpha_i$ (other than $\alpha_j$) sit on the three other tetrahedral axes at angle $109.47°$ from the $\widehat{c_j - c_i}$ direction; their projections onto the perpendicular plane are at $120°$ angular separation, forming an equilateral triangle around the origin. If $\alpha_i$ has three other neighbors (degree 4 in the contact graph), those three projections alone surround the origin — meaning the supporting half-plane construction *cannot* find a half-plane excluding all of them. The supporting-hyperplane construction fails at the local level for a degree-4 alpha, even before considering non-immediate neighbors or the rest of the cluster.
+
+This rules out a clean rigid-packing-based supporting-hyperplane proof. The v0.2 framing is structurally insufficient.
+
+### Refined-C1 doesn't directly close the gap
+
+Session 3's refined-C1 work dissolves the strict-4-face/degree-5 inconsistency: at $N_\alpha \geq 7$, deltahedral cluster geometries require degree-$\geq 5$ vertices, which strict-C1 cannot host; refined-C1 facet (b) provides accommodation modes that keep the geometric realization in the LO rigidity envelope. But this concerns the *existence* of the FvdW deltahedral packing at those $N_\alpha$ values — not the v0.2 forward-direction supporting-hyperplane gap.
+
+The supporting-hyperplane gap is orthogonal: it would persist even at $N_\alpha = 4$ where strict-C1 is consistent. At $N_\alpha = 4$ the cluster realizes the regular tetrahedron of centroids, with each pair of centroids connected by a hull edge (4 vertices, 6 edges, 4 faces — Euler checks). The forward direction holds (each contact corresponds to a hull edge), but the v0.2 supporting-hyperplane argument doesn't actually prove it cleanly even at this trivial case.
+
+So refined-C1 from Session 3 doesn't directly close v0.2's Lemma B gap. The two issues are independent. Session 3's contribution to OPEN-SS-24 closure is real (it dissolves the inconsistency that would have made closing v0.2 produce a tightened proof of a literally-false statement), but it doesn't supply the proof step v0.2 was missing. v0.3 needs additional structural work, not just inheritance.
+
+This is the load-bearing recognition for the session. The handover's framing ("Lemma B gap closure can proceed within the LO-rigidity envelope plus facets (b) and (c)") implicitly suggests refined-C1 + LO framework would carry the v0.2 argument over the line. Reading v0.2 against that framing: the LO framing helps with conceptual clarity but doesn't supply the missing supporting-hyperplane content. The honest position is that v0.2's Lemma B framing was structurally suboptimal from the start, not just suffering from a sharpening need.
+
+### Three options for v0.3
+
+Three paths surfaced:
+
+**(A) FvdW-realization restructuring with new C7 hypothesis + Steinitz black-box.** Replace v0.2's general Lemma B with: (i) Lemma B$'$ stating the contact graph is the 1-skeleton of a convex 3-polytope, derived graph-theoretically via a new C7 (contact-graph planarity) hypothesis + Lemma C + Euler (max-edge ⇒ simplicial triangulation) + standard "triangulation of $S^2$ on $N \geq 4$ ⇒ 3-connected" + Steinitz; (ii) Theorem clause (iv) identifying the polytope as the FvdW deltahedron at listed $N_\alpha$ via uniform edge length from C2 + FvdW classification. Pros: forward-direction supporting-hyperplane gap dissolved (no longer needed); reverse-direction C5-dependency made explicit in Lemma C + Lemma B$'$ Step 3; refined-C1 facet (b) becomes load-bearing in clause (iv) for the existence of geometric realization at $N_\alpha \geq 7$. Cons: adds one new hypothesis (C7); requires registering OPEN-SS-33 candidate; the C7 motivation paragraph in §1 is a verbal physical argument (cluster shell topology + alpha-dual embedding ⇒ planarity) that's plausible but not formally derived.
+
+**(B) Attempt rigorous supporting-hyperplane construction.** Strengthen C6 to include topological content (cluster outer surface = $S^2$, or contact-graph planar via the alpha-dual embedding), or provide a careful local-geometry argument that uses refined-C1's tetrahedral-axis structure plus C5 selection to constrain other-centroid projections enough to make the supporting-hyperplane construction work. Pros: closer to v0.2's intent; doesn't require restructuring the proof. Cons: harder; the local-geometry route hits the surrounded-by-three-neighbors-at-$120°$ wall I identified above; the strengthened-C6 route ends up effectively introducing C7 anyway, just bundled into C6 instead of separated. The end-state under (B) is structurally similar to (A) but with weaker modularity.
+
+**(C) Pause and discuss before committing.** Surface the v0.2-gap diagnosis and the three options to Thomas before producing v0.3. Cost: an extra round-trip; benefit: avoids producing a v0.3 in a framing Thomas doesn't endorse.
+
+My recommendation to Thomas: (A). The structural argument for (A) over (B) is that (A) factors the proof cleanly into (i) graph-theoretic content via Steinitz on $G$ as an abstract simple-planar-3-connected graph, and (ii) geometric realization content via FvdW classification on the polytope $P$ Steinitz produces. This factorization makes refined-C1 facet (b)'s role precise: it's load-bearing for (ii) at $N_\alpha \geq 7$, where strict-C1 cannot host degree-5 vertices; (i) doesn't depend on facet (b). The factorization also makes the C5/C6/C7 conditional structure transparent: each conditional has a specific role in the proof and a corresponding follow-up open problem. Under (B), the conditional structure is more entangled (C6 doing both centroid-extremity and topological work).
+
+Thomas selected (A). The bootup question was a separate item: rewrite or register OPEN-ORG. After confirming bootup is already correct on main (Step 0 from patch 0022, §3.5 from patch 0049), no patch is needed.
+
+### v0.3 framing decisions
+
+Locked-in structure for v0.3:
+
+**Setup (§1):** Same skeleton as v0.2. C1 → C1$'$ importing refined-C1 facets (a)/(b)/(c) from SS-7 v1.3 §2.1. C5 and C6 unchanged from v0.2. New **C7 (contact-graph planarity)**: $G(\mathcal{C})$ admits a planar embedding (equivalently, is planar in the abstract graph-theoretic sense). Physical motivation: under C6 + cluster contractibility, the cluster's outer 2-surface $\Sigma \cong S^2$, the alpha-dual embedding maps $G$ onto $\Sigma$, planarity follows. C7 is registered as paper-level structural hypothesis at the C5/C6 inheritance tier with OPEN-SS-33 candidate for programme-level closure from A1–A11.
+
+**Lemma A (§2):** Pairwise contact ⇒ triangular face. Same as v0.2, with refined-C1 facet (a) replacing strict-C1 in the proof. Trivial under refined-C1 facet (a) + C2.
+
+**Lemma C (§3):** Promoted from v0.2 §4. Max-edge under C5 + C3. Trivial.
+
+**Lemma B$'$ (§4):** *Replacement* for v0.2 §3 Lemma B. Statement: under C1$'$, C2, C3, C5, C6, C7, rigid packing, 3D-non-degeneracy, the ground-state contact graph $G$ is the 1-skeleton of a simplicial convex 3-polytope with $|E| = 3 N_\alpha - 6$ and every face triangular.
+
+Proof structure:
+- Step 1: $G$ simple. Trivial under C1$'$ facet (a) + C2 (Lemma A).
+- Step 2: $G$ planar. By C7.
+- Step 3: $|E| = 3 N_\alpha - 6$ and every face of the planar embedding triangular. Standard Euler argument applied to a connected simple planar graph: $V - E + F = 2$, $|F| \leq 2|E|/3$ (each face $\geq 3$ edges, each edge on 2 faces), substitute to get $|E| \leq 3V - 6$ with equality iff every face triangular. Lemma C gives max $|E|$, hence $3N_\alpha - 6$ achieved at simplicial triangulation.
+- Step 4: $G$ 3-vertex-connected. Standard result: every triangulation of $S^2$ on $\geq 4$ vertices is 3-connected (Whitney 1932; Diestel 4.5). Step 3 gives the triangulation; $N_\alpha \geq 4$ excludes the degenerate case.
+- Step 5: Apply Steinitz (1922; Ziegler 4.1). Simple-planar-3-connected ⇒ 1-skeleton of convex 3-polytope.
+
+**Theorem (§5):** Same conclusions (i)–(iv) as v0.2, but proof now (i)–(iii) directly from Lemma B$'$, and (iv) from $|E| = 3N_\alpha - 6$ + simplicial + uniform edge length (C2) + FvdW classification at listed $N_\alpha$ values. Plus paragraph on geometric realizability at $N_\alpha \geq 7$ via refined-C1 facet (b) — without facet (b), clause (iv) is vacuous because no rigid-tetrahedral realization of the FvdW deltahedron at those $N_\alpha$ values exists; with facet (b), the realization exists at LO with sub-LO corrections in the rigidity band (and registered separately as facet (c)'s slip-plane bonus).
+
+**Scope notes (§6), honest closure assessment (§7), gaps (§8), Phase 4 (§9), changelog (§10):** Carry over from v0.2 with light edits to reflect v0.3 framing. Add OPEN-SS-33 as new conditional registered for C7 closure. Add §10 changelog explicitly documenting the v0.2 → v0.3 restructuring decision and what the new framing buys/costs.
+
+### Structural observations on the v0.3 framing
+
+**(1) Refined-C1 facet (b) is load-bearing in clause (iv), not just a side-issue dissolution.** This is the satisfying structural integration of Session 3's work into SS-9. Session 3 framed facet (b) primarily as the dissolution of the strict-4-face/degree-5 inconsistency; v0.3 makes it the geometric-existence enabler for the FvdW realization at $N_\alpha \geq 7$. The two roles are equivalent — same content, different framing — but the v0.3 framing gives facet (b) a definite role in a formal theorem proof, which Session 3's framing did not. This makes facet (b) more than a model-revision footnote; it's a core ingredient of the SS-9 conditional theorem.
+
+**(2) Refined-C1 facet (c) is *not* used in v0.3's proof.** Facet (c) — the slip-plane / cluster-level oblate-deformation mode — is an NLO correction to the binding formula, accounting for the SS-7 Table 1 Regime B excess. v0.3 Theorem is at LO (binding $= N B_\alpha + (3N-6) B_\text{pair}$), and facet (c) corrections show up only as the OPEN-SS-32 forward-looking derivation target, not in the LO proof structure. This is appropriate: Lemma B$'$ derives the geometric structure (1-skeleton = contact graph), not the binding energy decomposition. Facet (c)'s slip-plane bonus is consistent with Lemma B$'$ but not part of it.
+
+**(3) C7 is a real new hypothesis, not a free lunch.** The v0.3 restructuring exchanges the v0.2 supporting-hyperplane gap (a substantive argumentative issue) for a new explicit hypothesis (C7) that is then registered as OPEN-SS-33 candidate. This is not "closing the gap by hypothesis"; it's recognizing that the topological content the v0.2 supporting-hyperplane argument was implicitly relying on is best stated explicitly. The v0.3 framing has fewer hidden assumptions than v0.2 did — what v0.2 was trying to derive from rigid packing alone is now stated as an explicit conditional. The hypothesis stack is more transparent. Whether C7 closes from CPP primitives is the OPEN-SS-33 question; preliminary motivation in §1 sketches the cluster-shell-topology route.
+
+**(4) The v0.3 closure target is sharper than v0.2's.** v0.2 wrote Lemma B as a generic claim about rigid-tetrahedral packings ("contact graph = 1-skeleton of convex hull of centroids"), trying to derive this from rigid packing alone. v0.3 separates the claim into: (i) graph-theoretic content about $G$ as an abstract graph (Lemma B$'$), and (ii) geometric realization content about $P$ embedded in $\mathbb{R}^3$ at the centroids (Theorem clause iv). The factorization is what enables Steinitz to do its work cleanly: Steinitz is about (i), FvdW classification is about (ii), neither directly answers v0.2's bundled question. v0.2's framing tried to get both at once and ended up with both parts under-supported.
+
+### What v0.3 doesn't deliver
+
+**Argumentative gaps NOT closed by v0.3:**
+
+- C5 first-principles derivation. Preserved as OPEN-SS-29 candidate, same as v0.2.
+- C6 first-principles derivation. Preserved as OPEN-SS-30 candidate, same as v0.2.
+- **C7 first-principles derivation. NEW: OPEN-SS-33 candidate.** v0.3 §9 sketches the closure route via cluster-shell-topology under C6 + cluster contractibility. Not formally closed.
+- Deltahedra-gap structural realization at $N_\alpha \in \{11, 13, 14\}$. Preserved as OPEN-SS-31 candidate, same as v0.2.
+- Facet (b) mechanism identification (face-edge hybrid? K$_3$ delocalization? partial-overlap?). Mentioned but not derived. Could fold into OPEN-SS-32 derivation if facets (b) and (c) share Layer-3 ancestry as the same K$_3$ scale-recurrence operating at different geometric venues.
+- Facet (c) attenuation factor derivation (the OPEN-SS-32 target). Same as Session 3 status.
+- Programme-uniqueness (whether CPP forces simpliciality vs. it being a property of any C1$'$-C7 framework). Honest framing: this proof is geometric + graph-theoretic, so any framework with the same C1$'$-C7 stack gets the same conclusion. Pattern 6's CPP-uniqueness remains contingent on the deeper question of why the K$_3$ scale-recurrence is forced.
+
+**Net programme effect:**
+- C4 promoted from "structural hypothesis" (B-tier) to "conditional theorem at C5+C6+C7 inheritance tier on the refined-C1 foundation."
+- 54 of 55 conditional D-N entries promote conditionally: now C5+C6+C7+C1$'$+C2+C3-conditional.
+- Net change relative to v0.2: one additional conditional (C7).
+- Net change relative to pre-v0.2: one structural hypothesis (C4) replaced by three new structural hypotheses (C5, C6, C7).
+- Unconditional promotion now requires closing OPEN-SS-29/30/31/33 plus existing OPEN-SS-26/27/28 from SS-8.
+
+### Forward-looking pointers
+
+**v0.3 → v0.1 paper-text transition.** With v0.3's conditional-theorem structure tight, the next natural deliverable is the SS-9 v0.1 paper text at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`. The conversion from working draft to paper text is mostly mechanical: convert markdown to LaTeX, write abstract/intro/discussion sections, add the SS-7 §2.1 K$_3$ contact figure pattern adapted for cluster-level diagrams, register at OSF with DOI. Before drafting, one decision point: whether C4 itself needs refinement under the C1$'$+C5+C6+C7 stack (Session 3 deliberately left C4 unrefined; SS-9 is the right place to revisit). My read is that C4 can stay as written in SS-7 — the v0.3 conditional theorem effectively *is* the refinement, derived from C1$'$ + the additional hypotheses.
+
+**Phase 4 candidates.** Programme-level closure of any of OPEN-SS-29/30/31/32/33 is a natural next pivot. Most leverage is plausibly OPEN-SS-33 (C7 first-principles closure): it's the new hypothesis introduced in v0.3, the closure route via cluster-shell-topology is sketched, and if it closes cheaply the v0.3 conditional theorem inherits a stronger foundation. OPEN-SS-29 and OPEN-SS-30 may share Layer-3 ancestry with OPEN-SS-33 (all three reduce to Pattern 6 K$_3$ scale-recurrence via different routes). OPEN-SS-32 is the mechanism-derivation question for facet (c) and is methodologically parallel to SS-8's OPEN-SS-28; could share an SS-10 candidate paper with SS-8's H3$'$ derivation.
+
+**Forward predictions.** PRED-O-16/17/18 from Session 3 remain registered, conditional on the slip-plane mechanism reading. Testing requires either a separate paper (SS-10 candidate) or extension of SS-7's Table 1 to higher $N_\alpha$. Not in scope for this session or the immediate v0.1 transition.
+
+### What is preserved elsewhere
+
+The session log `session_logs/2026-05-02_session_log.md` (Tier 1) summarizes Session 4's content at warm-start fidelity — the v0.2 gap diagnosis, the orthogonality observation, the three-options selection, the v0.3 framing decisions, the facet (b) load-bearing observation. It is the next-Opus-orientation artifact, not the canonical reasoning record (which is this Tier 4 file).
+
+Vignette 5 in `development-SS-9.md` (Tier 3) gives the curated narrative form of Session 4's substantive arc. Three paragraphs: (a) the diagnosis, (b) the option selection and proof structure, (c) the structural payoff (facet (b) load-bearing). Distilled from this Tier 4 file plus the v0.3 working draft itself.
+
+The transcript-SS-9.md (Tier 2) entries `044`–`057` index the Session 4 transactions and point back to this file (substantive reasoning) or to the v0.3 working draft (technical content) or to the session log (next-Opus orientation summary).
+
+The v0.3 working draft itself at `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md` is the technical artifact produced. It is the inheritor of v0.2; v0.2 stays in place as historical record of the Steinitz pivot and the strict-C1 inconsistency. When SS-9 v0.1 paper text is drafted, both v0.2 and v0.3 working drafts will move to `sketches/`.
+
+---
+
+*End of Session 4 Opus reasoning. Future sessions append below.*
