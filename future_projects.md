@@ -191,4 +191,23 @@
 
 ---
 
+## Session-level priority queue (cross-session backlog)
+
+**Purpose:** Track high-leverage moves that have been identified but deferred to keep individual sessions focused. Updated 2 May 2026 to preserve OPEN-SS-35 attempt and AME 2020 lookup as the current backlog after Session 4 follow-up's three sub-arcs delivered the alpha-chain swarm growth + OPEN-SS-34 Level-1 derivation.
+
+### Active queue (next-session ready)
+
+**(A) OPEN-SS-35 attempt — first-principles derivation of shell-magic-number sequence from CPP primitives.**
+*Priority:* HIGH (largest cross-paradigm consilience target the programme has identified). *Scope:* Multi-session, possibly multi-paper. *Trigger:* OPEN-SS-34 Level-1 derivation (2 May 2026 third sub-arc) identified H3 (shell-magic numbers $Z, N \in \{2, 8, 20, 28, 50, 82, 126\}$) as the load-bearing dependency. Closure would unlock OPEN-SS-34 from "Level-1 conditional on H3" to "Level-2 derived from CPP primitives." *Best lead at registration:* CPP analog of spin-orbit coupling from 600-cell coordination + ZBW phase structure. Pattern-6 K$_3$ scale-recurrence at the nucleon-shell-organization scale. *Registered:* 2 May 2026 Session 4 follow-up 3rd sub-arc, OPEN-SS-35 entry in `Research_Frontier.md`. *Companion:* `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-34_derivation_attempt.md` §8.
+
+**(B) AME 2020 lookup for ${}^{92}$Pd and ${}^{96}$Cd — complete PRED-O-19/PRED-O-20 verification.**
+*Priority:* MEDIUM (mechanical, ~5 minutes for Opus via direct table fetch from amdc.impcas.ac.cn). *Scope:* Single-turn-tractable. *Trigger:* Second sub-arc of Session 4 follow-up (2 May 2026) verified 3 of 5 PRED-O-19 nuclei with reliable experimental anchors (${}^{84}$Mo, ${}^{88}$Ru, ${}^{100}$Sn); ${}^{92}$Pd and ${}^{96}$Cd remain ${}^\#$-flagged AME 2020 extrapolations not yet retrieved. *If both hit at $\lesssim 0.5$ MeV residuals:* swarm grows by 2 more confirmed predictions (PRED-C-77 and PRED-C-78), bringing the alpha-chain forward-prediction count to 4 (PRED-C-75/76/77/78) + PRED-O-19/20 confirmed. *Registered:* PRED-O-20 candidate entry in `predictions.md`; sketch flag at `series_strong/papers/SS-9/sketches/SS-9_PRED-O-19_verification.md` §6.
+
+### Completed and removed from queue
+
+- ✅ **2 May 2026:** PRED-O-19 verification at ${}^{84}$Mo, ${}^{88}$Ru, ${}^{100}$Sn (Kimura+2025, Mougeot+2021). Two direct hits + one regime-termination deviation at registered falsification route. Patches 0066–0072.
+- ✅ **2 May 2026:** OPEN-SS-34 Level-1 derivation under H1–H4. Three target derivations (T1, T2, T3) + $\sqrt{3}$ refinement (T4). OPEN-SS-35 and OPEN-SS-36 registered as deepest dependencies. Patches 0073–0079.
+
+---
+
 *This document is updated as projects are completed or new ones are identified.*
