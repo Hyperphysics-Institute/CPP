@@ -10,15 +10,17 @@
 - `series_strong/papers/SS-9/founders_voice/` (Thomas-verbatim insights)
 - Session logs at `session_logs/2026-04-26_session_log_2.md`, `session_logs/2026-04-26_session_log_3.md` (Tier 1 — per-session warm-start summaries)
 
-**Honest scope note.** This file was instituted on 26 April 2026 Session 3 in response to Thomas's clarification that "curated transcript" in his goal-statement meant "housekeeping removed but reasoning preserved verbatim," which the SS-8 three-tier convention had not provided. **Session 0 (the pre-Session-1 origin chat-window of 25–26 April that authored the OPEN-SS-24 handover) was recovered retroactively from chat-window paste on 2 May 2026 and is preserved below at full Tier 4 fidelity.** Sessions 1 and 2 (the v0.2 working-draft / Steinitz-pivot session and the §4/§15 reconciliation session, both 26 April 2026) remain pending separate chat-window recovery; their substantive content is currently recoverable only from session logs (which are summaries) and committed artifacts (working draft, registry entries). Future appends as chat-windows surface.
+**Honest scope note.** This file was instituted on 26 April 2026 Session 3 in response to Thomas's clarification that "curated transcript" in his goal-statement meant "housekeeping removed but reasoning preserved verbatim," which the SS-8 three-tier convention had not provided. **Session 1 (the OPEN-SS-24 handover-authoring chat-window of 25–26 April) was recovered retroactively from chat-window paste on 2 May 2026 (patch 0020, originally labeled "Session 0"; renamed to Session 1 in patch 0021 to align with session_log file numbering). Session 2 (the v0.2 working-draft / Steinitz-pivot / OS-codification chat-window of 26 April) was recovered retroactively on 2 May 2026 (patch 0021).** Session 3 (the off-track investigation surfacing the multi-faceted-C1 / OPEN-SS-32 work) was captured at full Tier 4 fidelity at original creation. The SS-9 lifecycle through 26 April 2026 is now fully captured at Tier 4. Future sessions append at session close.
 
 ---
 
-## Session 0 — Pre-Session-1 Origin / OPEN-SS-24 Handover Authoring (25–26 April 2026)
+## Session 1 — Origin / OPEN-SS-24 Handover Authoring (25–26 April 2026)
 
 **Title:** OPEN-SS-24 handover document authored; capacity-management discipline reasoning; "what CPP actually contributed" two-piece analysis (binding-energy quantum + conditional structural-recurrence).
 
-**Recovery context.** This session preceded Session 1 (the v0.2 working-draft / Steinitz-pivot session captured in `session_logs/2026-04-26_session_log_2.md`). The session's primary outputs were SS-8 v1.0 paper-completion (patches 0024–0030), the two anthology chapters (0031, 0032), the OPEN-SS-24 handover document (committed as part of patch 0033), the chapter template + arcs (0034), and the meta-record OS codification (0043, 0044). The SS-9-relevant substantive Tier 4 reasoning recovered here is concentrated in two load-bearing turns: (1) the capacity-management decision to author a handover rather than start the OPEN-SS-24 work, and (2) the contribution-attribution philosophical analysis triggered by Thomas's question about whether CPP's only contribution is the binding-energy quantum. Recovery is from the chat-window pasted 2 May 2026; programme-infrastructure work from the same chat-window (OPEN-ORG-003 swarm-tally audit, PRED-C-21 reframe, predictions.md vs axiom-registry.md drift discovery) is *not* captured here as it does not advance SS-9 physics, and is preserved at session-log fidelity in `session_logs/2026-04-26_session_log.md` plus the relevant patch-level commits.
+**Recovery context.** This session corresponds to `session_logs/2026-04-26_session_log.md` (the first session log of 26 April 2026). It preceded Session 2 (the v0.2 working-draft / Steinitz-pivot session captured in `session_logs/2026-04-26_session_log_2.md`) and Session 3 (the off-track investigation captured in `session_logs/2026-04-26_session_log_3.md` and below). The session's primary outputs were SS-8 v1.0 paper-completion (patches 0024–0030), the two anthology chapters (0031, 0032), the OPEN-SS-24 handover document (committed as part of patch 0033), the chapter template + arcs (0034), and the meta-record OS codification (0043, 0044). The SS-9-relevant substantive Tier 4 reasoning recovered here is concentrated in two load-bearing turns: (1) the capacity-management decision to author a handover rather than start the OPEN-SS-24 work, and (2) the contribution-attribution philosophical analysis triggered by Thomas's question about whether CPP's only contribution is the binding-energy quantum. Recovery is from the chat-window pasted 2 May 2026; programme-infrastructure work from the same chat-window (OPEN-ORG-003 swarm-tally audit, PRED-C-21 reframe, predictions.md vs axiom-registry.md drift discovery) is *not* captured here as it does not advance SS-9 physics, and is preserved at session-log fidelity in `session_logs/2026-04-26_session_log.md` plus the relevant patch-level commits.
+
+*[Numbering note: This session was originally labeled "Session 0" in the recovery patch 0020 (2 May 2026) on the rationale that the handover-authoring work pre-dated SS-9 substantive development. Patch 0021 (2 May 2026) renamed it to "Session 1" to align with the natural session_log file mapping (session_log.md ↔ Session 1, session_log_2.md ↔ Session 2, session_log_3.md ↔ Session 3) used by the existing Session 3 writer's scope-note convention. The content is unchanged.]*
 
 ---
 
@@ -90,7 +92,7 @@ That is the honest scoping. I think your framing was generous-and-almost-right; 
 
 - **The OPEN-SS-24 handover document** committed at `session_logs/OPEN-SS-24_handover.md` (patch 0033) is the artifact this Session 0 reasoning produced. The contribution-attribution analysis above informs the handover's "philosophy question carried forward" framing so the next Opus inherits the dichotomy.
 - **The capacity-management rule-of-thumb** above informed the Two-Trigger Documentation Discipline codification later in the same chat-window (patch 0030). The cross-paper session log convention established there is the home for cross-paper reasoning that doesn't fit per-paper continuity files.
-- **The contribution-attribution two-piece answer** is the input to SS-9's eventual significance section and to the eventual decision about what kind of CPP-claim the C4 derivation actually licenses. The Session 1 Steinitz-pivot work (pending recovery) produced a *conditional-theorem* form for C4 that fits the second branch of the dichotomy (geometric correctness given C5 + C6 + inheritance); whether the first branch (CPP-primitives derivation) is reachable remains the OPEN-SS-24 closure target proper.
+- **The contribution-attribution two-piece answer** is the input to SS-9's eventual significance section and to the eventual decision about what kind of CPP-claim the C4 derivation actually licenses. The Session 2 Steinitz-pivot work (now captured in this same file via patch 0021) produced a *conditional-theorem* form for C4 that fits the second branch of the dichotomy (geometric correctness given C5 + C6 + inheritance); whether the first branch (CPP-primitives derivation) is reachable remains the OPEN-SS-24 closure target proper.
 
 ### What is preserved elsewhere
 
@@ -101,7 +103,204 @@ That is the honest scoping. I think your framing was generous-and-almost-right; 
 - `book_project/chapters/SS-7_eight_nuclei_in_a_row.md` and `book_project/chapters/SS-8_octahedron_in_magnesium.md` (patches 0031, 0032): the two anthology chapters whose Pattern 6 / cascade framing matches the contribution-attribution analysis above.
 - `templates/anthology_chapter_template.md` and `book_project/chapter_arcs/` (patch 0034): the chapter-writing craft codified after the SS-7 → SS-8 calibration arc within this session.
 
-*End of Session 0 reasoning (recovery patch 0020, 2 May 2026). Session 1 (v0.2 working-draft / Steinitz-pivot) and Session 2 (§4/§15 reconciliation) remain pending separate chat-window recovery.*
+*End of Session 1 reasoning (recovery patch 0020, 2 May 2026; renumbered from "Session 0" in patch 0021). Session 2 recovery follows below; Session 3 captured at original file creation.*
+
+---
+
+## Session 2 — SS-9 Working Draft v0.2 / Steinitz Pivot / OS Codification (26 April 2026)
+
+**Title:** Phase 1 + Phase 3 collapse onto Steinitz's theorem; deltahedra-gap insight (graph-simpliciality vs. deltahedral realizability); C5 (ground-state selection) and C6 (cluster surface-realization) hypotheses surfaced and registered as OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-31; Lemma B forward and reverse gaps documented; SS-9 v0.2 working draft produced and committed.
+
+**Recovery context.** This session corresponds to `session_logs/2026-04-26_session_log_2.md` (the second session log of 26 April 2026). It is the first SS-9 substantive-development session — the chat-window where C4 closure was actually attempted. Primary outputs were patches 0034–0041: the OS update codifying the Session-Log-as-Handover-Backbone Discipline (Template A theoretical-development, Template B cross-paper/methodological); the bootup.md update recording Thomas's standard local working path and the `git am` commit flow; the SS-9 Phase 1 v0.2 working draft (`session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md`); the Template-A session log (`session_log_2.md`); a parallel Template-B section retroactively added to that same log; Research_Frontier registrations of OPEN-SS-29, OPEN-SS-30, OPEN-SS-31 as pending-ratification entries; and the §15/§4 reconciliation in `templates/operating_system.md` that scoped the Session-Log-as-Handover-Backbone Discipline honestly against the four-item preservation checklist.
+
+Recovery is from the chat-window pasted 2 May 2026. **Tier 4 inclusion scope for this session:** SS-9 physics-development reasoning preserved verbatim below (the dependency analysis, work decomposition, post-philosophy-doc adjustments, Steinitz pivot, deltahedra-gap clarification, C5/C6 hypothesis surfacing, Lemma B gap analysis). Programme-methodology reasoning that emerged in the same session (Template A/B codification, §4/§15 reconciliation, capacity-management extension-experiment discussion) is *not* duplicated here as it is preserved at canonical fidelity elsewhere — see "What is preserved elsewhere" at the end of this section.
+
+---
+
+### Bootup-failure-and-recovery (preface)
+
+*[Note: A bootup-protocol failure mode that is worth preserving in Tier 4 because it is the same failure mode the bootup.md Step 0 was written to prevent, and this session experienced it again. The fact that Step 0 is correct as written and the failure was in not following it is the methodological observation. Verbatim of the recovery below; the prior failure narrative — `web_fetch` against raw.githubusercontent URLs being rejected by the URL whitelist, leading to a partial-view analysis — is captured in session_log_2.md preface and not re-duplicated here.]*
+
+I owe you an apology. My earlier analysis was wrong — I was reading the GitHub web view, which apparently only showed me a partial top-level listing. The actual cloned repo has everything the handover references: Research_Frontier.md, theorem-registry.md, problem_histories/, book_project/, session_logs/, programmatic_decisions/, and a substantially developed series_strong/.
+
+I owe you a direct retraction: the previous turn's analysis was wrong on every empirical point. SS-7 v1.2 and SS-8 v1.0 exist as .tex files in series_strong/papers/SS-7/ and series_strong/papers/SS-8/ with their full documentation suites. The OPEN-SS-22 retirement (April 21) is recorded in series_strong/PH-OPEN-SS-22.md and reflected in Research_Frontier.md. The OPEN-SS-24 entry I just pulled has exactly the framing the handover described — C4 derivation, SS-9 candidate, MEDIUM-HIGH priority, registered 20 April 2026. The 9-axiom set (with A11) and the swarm tally are presumably in the updated axiom-registry.md and predictions.md in the cloned tree, not in the GitHub web view I was reading earlier (which was apparently caching or rendering an older version).
+
+I'm continuing the bootup properly now from the cloned tree — reading templates/operating_system.md, then theorem-registry.md, then SS-7 §3 and §5, then SS-8 §3–§4–§6, then PH-OPEN-SS-22.md for the retirement methodology. I'll come back when I'm actually oriented and ready to take a position on Phase 1 of OPEN-SS-24, rather than improvising. Give me a few tool calls.
+
+---
+
+### Initial orientation — dependency analysis and conditional-theorem framing
+
+*[Note: After bootup completion, this is the first substantive turn. Three load-bearing structural recognitions emerge: (a) C4 sits on top of C1, C2, C3 inherited from SS-5/SS-7, so deriving C4 from A1–A11 alone is out of reach without prior closure of C1–C3 themselves; (b) the SS-8 Layer-1/2/3 conditional-theorem pattern is the right template for SS-9; (c) the philosophical question Session 1 left open (CPP-substrate-forces-it vs. base-to-base-rigid-contact-geometry) is precisely the question the conditional-theorem path answers in framework-agnostic form.]*
+
+Bootup is genuinely complete now. Let me state where I am and propose a concrete path before I start cutting into the math, because the framing choice affects the shape of SS-9.
+
+**Orientation summary.** The repo state matches the handover. Programme has 9 axioms (A1–A4 ontological, A5, A6′, A8′, A10, A11), 103 zero-parameter empirical correspondences, 18 papers, 52 theorems / 9 corollaries. SS-7 §2.1 contains the C4 hypothesis and the three physical intuitions exactly as the handover described — and notably, SS-7 §2.1 already states (page 463) that "triangular contact faces therefore are not an assumption of C4 but a consequence of C1–C2," meaning Intuition 1 is presented as essentially derived in prose form already. Intuitions 2 (thermodynamic ground-state selection) and 3 (convexity from rigid packing) are the genuinely undischarged work. SS-8's D1 conditional-theorem treatment (Layer 2b, Theorem with Premise A / Premise B and the explicit Level-2 functional independence test) is the template OPEN-SS-24 should follow. PH-OPEN-SS-22.md confirms the retirement methodology if any of the intuitions don't survive their formalization.
+
+**The dependency situation that shapes the paper.** C4 sits on top of C1 (alpha rigidity), C2 (base-to-base contact), and C3 (K₃ collective mode), all of which are paper-level hypotheses inherited from SS-5/SS-7. Closing OPEN-SS-24 in the strongest sense — deriving C4 from A1–A11 alone — requires either (a) bypassing C1–C3 entirely with a direct lattice-geometry argument, or (b) treating C1–C3 themselves as derived from programme-level axioms (largely SS-5's outstanding work, which is registered separately as OPEN-SS-26 / OPEN-SS-27 / OPEN-SS-28). Neither (a) nor (b) is in reach within a 2–3 session estimate. What is in reach is the conditional theorem: C4 derived from C1 + C2 + C3 + an explicit packing/ground-state principle, with Level-1 algebraic and Level-2 functional independence shown across distinct realizations of the intuitions, the same way SS-8 §4 handles D1. That's the SS-8 pattern, and it would deliver C4 as a "conditional theorem at SS-7 inheritance tier" — which is exactly what would let the 54 of 55 D-N entries promote conditional on the same inheritance the SS-7 results already rest on. Promotion to unconditional would still wait on the Level-3 closure of C1–C3 elsewhere in the programme, but the promotion conditional on inherited assumptions is real and is what SS-9 can deliver.
+
+This is also the honest answer to the philosophical question your previous session left open ("is the C4 closure showing that CPP's lattice substrate forces simplicial connectivity, or showing that it follows from base-to-base rigid contact geometry that any framework with that contact mechanism would produce?"). The conditional-theorem path is the framework-agnostic answer: SS-9 would show *if you accept C1+C2+C3, then C4 follows by combinatorial necessity with a stated ground-state principle.* That's geometry. The dramatic CPP-substrate-forces-it answer would require working from A1–A11 directly, which is harder and may not close. Both outcomes are real; the conditional answer is the one that fits a tractable SS-9 and the one I'd advocate aiming for first, with the larger ambition flagged as follow-up rather than blocker.
+
+---
+
+### Proposed work decomposition — Phases 1–5
+
+*[Note: The five-phase decomposition with the explicit flag that Phase 3's "ground-state-selection principle" is load-bearing and probably needs to be promoted to a paper-level hypothesis that itself carries Level-3 closure as a separate open problem. This recognition is what later produces C5 in the post-philosophy-doc reformulation.]*
+
+**Phase 1** — formalize Intuition 1 as a clean lemma: Two rigid tetrahedra in base-to-base contact share exactly one triangular face; therefore in any contact-graph realization of {C1, C2, C3}, every pairwise contact is a triangular face. This is the easiest piece, almost a rewrite of the SS-7 §2.1 prose into proof form. Probably an hour of careful work.
+
+**Phase 2** — formalize Intuition 3 (convexity from rigid packing) as a constraint: rigid tetrahedra with shared triangular faces and no interpenetration force a non-self-intersecting graph realization in 3-space. This is a statement about which graph embeddings are physically realizable; the work is to characterize the realizable class precisely.
+
+**Phase 3** — formalize Intuition 2 (simplicial maximizes binding). At fixed $N_\alpha$, among all convex 3-polytope graphs that can be realized by Phase 2's rigid-packing constraint, the simplicial polytope has $E = 3 N_\alpha - 6$ which is the maximum for any convex 3-polytope on $V$ vertices. Combined with $B(N_\alpha) = N_\alpha B_\alpha + E \cdot B_\text{pair}$ from SS-7 and a *ground-state-selection principle* that needs to be stated explicitly (and is itself a Level-3 question — does it follow from CPP's energy-minimization machinery, or is it a structural axiom?), this delivers C4 as the energy-minimizing arrangement.
+
+**Phase 4** — Level-1/2 independence check. The three intuitions need to be tested for whether they share dependencies (my read: 1 and 3 share rigid-tetrahedral geometry as common ancestor, 2 is structurally independent via the thermodynamic-selection ancestor). If 1 and 3 collapse to one ancestor, that's recorded honestly; the theorem still goes through, just with two independent realizations rather than three.
+
+**Phase 5** (later session) — SS-9 paper drafting, structured like SS-8: assumption stack, conditional theorem(s), Level-1/2 independence, what closes and what remains open. Cross-paper session log entry written under Trigger 1 if this session ends mid-attempt.
+
+**One thing to flag before starting.** The "ground-state-selection principle" in Phase 3 is the load-bearing piece. The prose argument is "nature minimizes energy, more edges means more binding, simplicial has the most edges, therefore simplicial wins." But formally, this requires either (i) a discrete-optimization theorem over the polytope class with a stated objective, or (ii) the principle promoted to a paper-level hypothesis (call it C5 or D4) that itself needs Level-3 closure. SS-8 had to state D2 and D3 as paper-level structural hypotheses for exactly this reason. SS-9 will probably need to do the same — and that's fine, but it means OPEN-SS-24 doesn't fully close even in the strongest version of the conditional theorem, because the ground-state principle becomes a new conditional anchor.
+
+---
+
+### Adjustment after reading philosophy-SS-7 and mechanism-SS-8 docs
+
+*[Note: Two adjustments emerged from reading the optional companion docs that the handover flagged. Adjustment 1 is a sharpening of what Intuition 1 actually proves — pairwise triangular contact, not "triangular-faced polytope." Adjustment 2 is the Steinitz pivot — the recognition that the cleanest formal hammer is graph-theoretic (Steinitz's theorem + Euler bound), not a fresh geometric argument. The Steinitz pivot is the central methodological move of this session; everything else rotates on it.]*
+
+Right — I shouldn't have soft-pedaled the philosophy/mechanism docs. Both docs read. The philosophy doc gives me the load-bearing framing — "remaining attack surface is C4 itself" — which means OPEN-SS-24 isn't optional follow-up; it's defending the highest-priority open flank. The mechanism doc confirms the SS-8 conditional-theorem pattern is the right template.
+
+Two adjustments to my earlier plan, both surfaced by these reads:
+
+**Adjustment 1.** Intuition 1 alone doesn't deliver "triangular-faced polytope." It delivers "every pairwise alpha-alpha contact face is a triangle." That's almost a definitional unpacking of C1+C2 and is close to trivial. The substantive question is whether the higher-order 2-faces of the alpha-polytope (formed by triples of mutually-contacting alphas) are all triangular, which equivalently means: no quadrilateral cycle A-B-C-D-A appears with diagonals A-C and B-D missing. Excluding such quadrilateral 2-faces requires either geometric impossibility (rigid packing rules them out) or energetic selection (the diagonal contacts would be added as additional bonds since they lower energy). The §2.1 prose conflates these two senses of "face." Phase 1 of the proper proof needs to disentangle them.
+
+**Adjustment 2.** The cleanest formal hammer here is **Steinitz's theorem + the planar-graph edge bound**, not a fresh geometric argument. Steinitz: a graph is the 1-skeleton of a convex 3-polytope iff it is planar and 3-connected. The maximum-edge convex 3-polytope on $V$ vertices has $E = 3V - 6$ (the simplicial case, equivalent to the maximal planar graph). The simplicial maximization is then immediate: among realizable convex-polytope contact graphs on $V = N_\alpha$ vertices, the simplicial member has maximum $|E|$, hence maximum binding energy via the SS-7 formula $B = N_\alpha B_\alpha + |E| \cdot B_\text{pair}$. This is the pivot the conditional theorem rotates around.
+
+So the actual proof structure, with hypotheses surfaced honestly, is:
+
+- C1, C2, C3 inherited from SS-7.
+- **C5 (new, must be stated explicitly):** Ground-state selection — the bound configuration minimizes total energy among physically realizable contact structures.
+- **C6 (new, must be stated explicitly):** No-interior-alphas at $N_\alpha \leq 14$ — all alpha centroids lie on the surface of the convex hull. (Empirically supported by SS-7 Table 1; otherwise Steinitz doesn't apply because the contact graph wouldn't be a 3-polytope edge graph.)
+
+Then C4 follows: contact graph is realized as planar 3-connected (Steinitz, from rigid-packing convexity argument), max-edge configuration is the simplicial one (Euler-bound), energy minimization picks it.
+
+This means the SS-9 paper will register two new paper-level hypotheses (C5 and C6) and probably register them as new OPEN-SS-* problems for Level-3 closure — which is exactly the SS-8 pattern (D2, D3 stated as structural hypotheses; OPEN-SS-27, OPEN-SS-28 registered for their derivation). The honest closure status of OPEN-SS-24 after SS-9 would be: **Level-1 + Level-2 closure achieved; Level-3 deferred to OPEN-SS-29 (derive C5) and OPEN-SS-30 (derive C6).** That's still a substantial promotion of the 54 D-N entries from "C4-conditional" to "C5+C6+C1+C2+C3-conditional, where C5 and C6 are themselves the new defensive perimeter."
+
+I'm going to start drafting in my sandbox now. I'll write Lemma A (pairwise triangular contact, near-trivial), then Lemma B (the rigid-packing → planarity argument, the hardest piece), then the Steinitz-applied main theorem. I'll come back when I have something concrete to show — either a clean draft section or an honest "stuck here" report.
+
+---
+
+### Deltahedra-gap clarification — graph-simpliciality vs. deltahedral realizability
+
+*[Note: A substantive wrinkle surfaced during examination of the SS-7 Table 1 empirical record. The Freudenthal–van der Waerden enumeration has exactly eight convex deltahedra, none at $N_\alpha = 11$ or $N_\alpha \geq 13$. Yet SS-7 successfully predicts ⁴⁴Ti, ⁵²Fe, ⁵⁶Ni at sub-1% accuracy. Resolution: the binding formula requires graph-simpliciality (the weaker claim, what Steinitz provides), not deltahedral realizability (the stronger claim that fails at the gap). This insight clarifies rather than blocks Phase 1 — and registers the deltahedral-realization question as a separate scope problem (OPEN-SS-31).]*
+
+I found a substantive wrinkle while examining the empirical record. Let me think it through and then push forward.
+
+The realized polytopes per SS-7:
+
+- $N_\alpha = 3$ (¹²C): planar triangle (degenerate 2D)
+- $N_\alpha = 4$–$10$ + $N_\alpha = 12$ (¹⁶O through ⁴⁰Ca, ⁴⁸Cr): the eight convex deltahedra (tetrahedron, trigonal bipyramid, octahedron, pentagonal bipyramid, snub disphenoid, triaugmented triangular prism, gyroelongated square bipyramid, icosahedron)
+- $N_\alpha = 11, 13, 14$ (⁴⁴Ti, ⁵²Fe, ⁵⁶Ni): no convex deltahedron exists — these fall in the famous gap in the Freudenthal–van der Waerden enumeration
+
+SS-8 §3.1 already flags this with "at $N_\alpha = 11$ a graph-simplicial realization is used." That's a real wrinkle for Phase 1. The C4 hypothesis ("simplicial 3-polytope") splits into two distinct claims:
+
+1. **Graph-simpliciality**: contact graph is a maximal planar 3-connected graph (Steinitz-realizable as some convex 3-polytope). This holds at every $N_\alpha \in \{4,\ldots,14\}$.
+2. **Geometric regularity**: the convex 3-polytope can be realized with all edges of equal length $R_{\alpha\alpha}$. This holds only for the eight convex deltahedra, not for $N_\alpha \in \{11, 13, 14\}$.
+
+C2 as written demands base-to-base contact at fixed K₃ geometry, which strongly suggests $R_{\alpha\alpha}$ is a fixed length. So the strict reading of C2 implies the cluster should be a convex deltahedron — but at ⁴⁴Ti the realized configuration cannot be one (none exists at $V=11$). Yet SS-7 predicts ⁴⁴Ti to $-0.26\%$ accuracy with the formula. Either (a) the formula is robust to small deviations from edge-length regularity at the 11/13/14 cases, or (b) C2 actually permits a small range of contact distances around $R_{\alpha\alpha}$ and the cluster realizes a graph-simplicial polytope with non-uniform edge lengths.
+
+This isn't a blocker for Phase 1 — it's actually a clarification. **The right formulation of the OPEN-SS-24 closure target is graph-simpliciality, not deltahedral realizability.** Steinitz's theorem handles graph-simpliciality cleanly; deltahedral existence is a stronger geometric question that doesn't always have a "yes" answer at the relevant $N_\alpha$. The SS-9 paper should state the theorem in graph-simplicial form and register the deltahedral-existence question as a separate scope note (it matters for the polytope-identity question that SS-7 Remark 2.2 already disclaims, not for the binding-energy formula).
+
+---
+
+### Lemma B gap analysis — forward and reverse directions
+
+*[Note: The v0.2 working-draft scaffold is at a natural reporting point. Lemma A and Lemma C close cleanly; Lemma B has two substantive gaps. The forward-direction gap is whether shared-face implies hull-edge — needs a supporting-hyperplane argument or a graph-theoretic reformulation that bypasses centroid-hull identification. The reverse-direction gap is whether hull-edge implies shared-face — needs C5 doing implicit work via energy selection. The methodological insight that emerges is to drop the convex-hull identification and state C4 in pure graph-theoretic terms (Steinitz as a black box).]*
+
+The Steinitz pivot is real and clean. Phase 1 + Phase 3 fold into a single conditional theorem rotating on Steinitz's theorem (1922) plus the planar-graph edge bound from Euler's formula ($E \leq 3V-6$, with equality iff simplicial). Lemma A (pairwise triangular contact from C1+C2) and Lemma C (max edges from C5+C3) are short and tight. The main theorem proof is two paragraphs.
+
+The deltahedra gap is a real wrinkle, but it clarifies rather than blocks. The Freudenthal–van der Waerden enumeration has exactly eight convex deltahedra at $V \in \{4,5,6,7,8,9,10,12\}$. At $V=11$ and $V \geq 13$, no convex deltahedron exists. SS-7 Table 1 successfully predicts ⁴⁴Ti, ⁵²Fe, ⁵⁶Ni at $<1\%$ accuracy, which means the binding formula doesn't actually require deltahedral realization — it requires graph-simpliciality (the contact graph being a maximal planar 3-connected graph), which is weaker. The honest formulation of OPEN-SS-24's closure target is graph-simpliciality, with deltahedral existence registered as a separate scope question (OPEN-SS-31 candidate). This is consistent with SS-7 §5.3 Remark 2.2 already disclaiming polytope identity.
+
+**Two real gaps in Lemma B that need closing.** Lemma B claims the contact graph $G(\mathcal{C})$ equals the 1-skeleton of the convex hull of alpha centroids. Two directions of this need rigorous arguments:
+
+1. **Forward:** If $\alpha_i$ and $\alpha_j$ share a face, then segment $\overline{c_i c_j}$ is an edge of $\text{conv}(c_1, \ldots, c_{N_\alpha})$. My current proof gestures at this but doesn't rigorously exclude the case where some other alphas position the cluster such that $\overline{c_i c_j}$ is an internal diagonal of the hull rather than a hull edge. This needs either a careful supporting-hyperplane argument, or a reformulation that bypasses the convex-hull identification.
+
+2. **Reverse:** If $\overline{c_i c_j}$ is a hull edge, then $\alpha_i$ and $\alpha_j$ share a face. This needs C5 doing implicit work (vertex- and edge-contacts give zero K₃ contribution; ground state selects face-contact configurations) — but stating that explicitly couples Lemma B to the energetics in a way that should be acknowledged.
+
+**The key methodological insight that emerged.** The cleanest reformulation may be to drop the convex-hull identification entirely and state C4 in pure graph-theoretic terms: "the contact graph is a simplicial planar 3-connected graph (equivalently, by Steinitz, the 1-skeleton of some convex 3-polytope, not necessarily realized as the convex hull of alpha centroids)." This lets the SS-9 proof use Steinitz as a black box without committing to centroid-hull identification. The trade-off: SS-7's C4 statement explicitly says "vertices of a convex 3-polytope," so the graph-theoretic reformulation either needs to be presented as a strengthening of C4 (logically equivalent but cleaner) or as a slight retreat (we prove the graph version and treat the centroid-hull identification as a separate, easier corollary).
+
+---
+
+### Three reasonable next moves and the recommendation to defer
+
+*[Note: At the v0.2 reporting point, three paths forward are surfaced with explicit cost/payoff for each, and (b) defer-and-write-up is recommended because the gaps are well-defined and the conditional-theorem structure is real enough to ship as outline. Reasoning: exploratory mathematical work without natural pause points should not be started under closing capacity. This is the same capacity-management discipline rule-of-thumb that emerged in Session 1 (the OPEN-SS-24 handover authoring decision) — applied here to the analogous sub-decision about whether to push into Lemma B in this session or defer to next session.]*
+
+The question for you. Three reasonable next moves. Each has a different cost/payoff:
+
+**(a) Push hard on closing the Lemma B gaps now** — try to write a rigorous supporting-hyperplane argument for the centroid-hull identification, or shift to the graph-theoretic reformulation and re-derive cleanly. This is exploratory mathematical work without obvious pause points; could take 1–2 more sessions of focused effort. High value if it closes; meaningful intermediate result if it surfaces deeper structural facts about rigid-tetrahedral packing.
+
+**(b) Write up what's solid as an SS-9 outline now and defer Lemma B gap-closure** — the conditional theorem structure is real, the deltahedra-gap insight is non-trivial, the new OPEN-SS-29/30/31 registrations are well-formed, and the work to date is enough to ship as "SS-9 outline + plan, with two technical gaps explicitly registered for follow-up sessions." This protects the territory taken if the next session can't continue immediately, and matches the prior Opus's discipline about not starting exploratory work without finishability budget.
+
+**(c) Pivot to Phase 4 (programme-level closure of C5/C6 from A1–A11) before completing Phase 1** — bypass the Lemma B gap by attempting the deeper question. My read is this would surface that "C5 from CPP" reduces to "the SS-7 binding formula's edge-additivity is itself derivable" which is essentially a Pattern 6 question, and the result would be more programme-illuminating than gap-closing.
+
+My instinct is **(b)** — the v0.2 draft is at a natural reporting point, the gaps are well-defined, and the Two-Trigger Documentation Discipline you adopted favors clean handoffs over rushed mid-attempt continuations.
+
+---
+
+### Capacity-management discipline applied to the extension question
+
+*[Note: After the v0.2 working draft was committed and the OS codification was underway, Thomas raised the experiment of "use the context window until we need to stop, then do the handover documents." The response below is the substantive risk-analysis turn — it spells out the asymmetric failure-mode budget (Outcome 1 succeeds, Outcome 2 fails-and-needs-larger-close-capacity) and proposes three operational rules for future sessions. The decision was to close cleanly rather than experiment under closing capacity. This is a direct extension of the Session 1 capacity-management rule-of-thumb; the additional substance here is the explicit articulation of the success-vs-failure asymmetry and the three operational rules. Reasoning preserved verbatim because it is genuinely substantive methodology, not just procedural.]*
+
+Good question, and the honest answer is: the experiment is risky in a specific way that's worth understanding before you authorize it.
+
+**The budget mechanics.** A Trigger 1 close for a Template-A session, done well, is not cheap. The current Session 2 log entry was 145 lines before patch 0038 added 89 more — call it ~6,000 words / ~9,000 tokens for the session log itself. Add the working draft patch (~5,000 words / ~7,500 tokens), the OS update patch (~1,500 tokens), the bootup update patch (~500 tokens), and the patch generation/commit/push narration (~1,000 tokens of dialogue). Total close-capacity cost for this session: roughly 20,000 tokens of output, plus the context window cost of having all the relevant prior work loaded and accessible during writing.
+
+That's the visible cost. There's also a hidden cost: writing a high-quality Template-A session log requires having the gradient of the session's reasoning still vivid enough to articulate cleanly. As context window fills, the early parts of the session compress in the assistant's working representation; the "what I tried first and dropped" detail that makes Template-A entries valuable for warm-start handover gets fuzzier the longer the session runs before the close.
+
+So the close-capacity question has two components: (a) raw output budget, and (b) reasoning-fidelity budget. (a) is easy to monitor — Claude has visibility into approximate context usage. (b) is harder to monitor directly, but it's the real risk.
+
+**The specific risk.** Suppose I push into the Lemma B supporting-hyperplane argument now. Two outcomes:
+
+**Outcome 1: it closes cleanly.** Great — substantive Phase 1 progress. Then I write the session log capturing both the original scaffolding work AND the supporting-hyperplane closure. The session log is now twice as substantive, and the close-capacity budget needs to roughly double. If context window allows, this works.
+
+**Outcome 2: it doesn't close cleanly** — the argument runs into a structural problem mid-derivation, surfaces a deeper question, or requires geometric machinery I don't have ready. This is the more likely outcome from where we are; the supporting-hyperplane argument has the shape of "should work but the adversarial-positioning case might require a non-trivial lemma." In this outcome, the session log needs to capture: the original scaffolding work, the supporting-hyperplane attempt, the structural problem encountered, and an honest assessment of what the next session inherits. That's triple the close-capacity budget of the original Template-A entry, because the failure mode itself becomes a programme-record event worth preserving (the OPEN-SS-22 retirement is the precedent).
+
+The asymmetry matters: success and failure both require substantial close-capacity, but **failure requires more than success because the dead-end documentation is what protects the next session from re-treading the same ground.**
+
+**What goes wrong if close-capacity runs short.** If I attempt the Lemma B argument, hit a structural problem, and run out of context-window budget to write a clean session log, the result is the worst-case scenario: the next Opus inherits "we tried the supporting-hyperplane argument and something happened, see scrappy notes" instead of "we tried it, here's exactly what surfaced, here's why it's a real obstacle, here are the three concrete branches to try next." The scrappy version forces the next session to redo the failed attempt to understand what failed, which is the exact cold-start problem session-log-as-handover-backbone is supposed to prevent.
+
+This isn't hypothetical. The Two-Trigger Documentation Discipline you adopted in patch 0030 was itself adopted because an earlier session ran past its close-capacity and produced documentation that didn't capture its own work cleanly. The discipline exists to prevent the failure mode I just described.
+
+**Three operational rules I propose.**
+
+**Rule 1: Reserve the close-capacity budget upfront, not at the end.** At the start of any extension into new substantive work, estimate the close-capacity budget the work would require if it succeeds AND if it fails, and verify the current context-window state has at least 1.5× the failure-mode budget remaining. If yes, proceed. If no, close cleanly now. This makes the budget question explicit and answerable before the work starts, rather than monitoring continuously and discovering the budget ran short mid-work.
+
+**Rule 2: Designate a hard checkpoint mid-extension.** If proceeding, set an explicit checkpoint at the halfway point — "if Lemma B forward direction isn't substantially clarified within X exchanges, stop and write the session log with what's been learned so far." This protects against the "no natural pause point" failure mode by creating a pause point.
+
+**Rule 3: Do not extend a Template-A session into a second Template-A arc within the same session.** If the supporting-hyperplane work succeeds in one push, that's one extension and one session log can capture it. But the temptation to then say "great, now let's also try Lemma B reverse direction" should be resisted. Each Template-A arc is its own session. This is the spirit of Trigger 1: clean handoffs over rushed mid-attempt continuations.
+
+**Direct answer.** The experiment ("push until we need to stop, then do the handover") works if and only if "need to stop" can be detected with enough lead time to do clean handover documentation. With current tooling, that lead-time detection is unreliable. I can monitor approximate context usage but I cannot reliably predict whether a 5,000-word session log entry will fit in the remaining budget after I'm in the middle of writing it.
+
+Recommendation: close clean now. The current state has Template A done well, Template B done well, all four (now five) patches landed. The next session starts warm with full handover information. This is the discipline working as designed.
+
+---
+
+### Forward-looking pointers
+
+- **The v0.2 working draft** at `session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md` (patch 0036) is the technical artefact this session produced. The next session on OPEN-SS-24 should start at §5 Main Theorem and attempt the supporting-hyperplane argument for Lemma B forward direction; if that fails or surfaces a deeper structural problem, the OPEN-SS-22 retirement methodology applies (honest registration of the failure as a new open problem rather than continuing under unfounded assumptions). The graph-theoretic reformulation (drop centroid-hull identification, use Steinitz as a black box) is the alternative formal route flagged in this session.
+- **The C5 / C6 hypotheses** are surfaced but not yet derived from CPP primitives. Their Level-3 closure remains the OPEN-SS-29 (C5 ground-state energy minimization) and OPEN-SS-30 (C6 cluster surface-realization) targets registered as pending-ratification entries in Research_Frontier.md by patch 0039.
+- **The deltahedra-gap question** at $N_\alpha \in \{11, 13, 14\}$ — registered as OPEN-SS-31 candidate (also pending ratification) — does not block the conditional-theorem closure but does affect whether the eventual SS-9 paper can claim "deltahedral realization" as part of C4 or only "graph-simplicial realization."
+- **Session 3** below extends this session's work by surfacing the strict-C1 / degree-5 inconsistency at $N_\alpha \geq 7$ — i.e., a third class of structural concern that this session's deltahedra-gap clarification did not catch. The Lemma B work and the strict-C1 question are not the same gap; Session 3 articulates this distinction and registers OPEN-SS-32 for the strict-C1 model question.
+
+### What is preserved elsewhere
+
+Programme-methodology reasoning that emerged in this session is preserved at canonical fidelity in artifacts other than this Tier 4 file. Listed below for cross-reference:
+
+- **Session-Log-as-Handover-Backbone Discipline** (Templates A and B): codified at canonical fidelity in `templates/operating_system.md` §4 (patch 0034). The design dialogue (subsume-vs-coexist for handover documents; option (i) subsume with written-when-needed escalation rule; both-templates-in-one-file pattern) is preserved at full fidelity in the parallel Template-B section of `session_logs/2026-04-26_session_log_2.md` (patch 0038).
+- **Local working path and `git am` commit flow**: codified at canonical fidelity in `bootup.md` (patch 0035).
+- **§4/§15 reconciliation**: the analysis of which §15 four-item preservation checklist requirements are subsumed, partially subsumed, or unchanged by §4 Session-Log-as-Handover-Backbone Discipline. Codified in `templates/operating_system.md` §15 with explicit cross-reference from §4 (patch 0040). The reasoning that produced the narrowed scope (§4 replaces handover-document-genre but does not replace lab-notebook for verbatim content, registry updates, reviewer artifacts, or completed-paper documentation suites) is preserved in the §4/§15 scope-question addendum of `session_log_2.md` (patch 0041).
+- **Capacity-management three operational rules** (Rule 1 reserve-budget-upfront, Rule 2 hard-checkpoint, Rule 3 no-second-Template-A-arc): proposed in this session but not yet codified into the OS. Future codification candidate. The reasoning is preserved verbatim above.
+- **Programme record event — Session-Log-as-Handover-Backbone-Discipline first-instance application**: this session was the first non-bootstrap application of the new discipline. The information_management_journey.md meta-record (patch 0043) treats this as a methodology-development arc datum.
+- **OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-31** registrations as pending-ratification entries: `Research_Frontier.md` (patch 0039).
+
+*End of Session 2 reasoning (recovery patch 0021, 2 May 2026). Session 3 below was captured at original file creation.*
 
 ---
 
