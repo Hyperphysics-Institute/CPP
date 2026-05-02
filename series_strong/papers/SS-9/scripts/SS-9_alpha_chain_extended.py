@@ -37,14 +37,34 @@ import numpy as np
 B_ALPHA = 28.296   # MeV — experimental 4He binding (AME inherited)
 B_PAIR  = 2.342    # MeV — M_0 / phi (SS-5 derived via C3)
 
-# Calibrated parameter (Regime II only, calibrated from 56Ni residual)
-B_SLIP  = 4.0      # MeV — persistent slip-plane bonus on the deltahedron core
+# Calibrated parameter (Regime II only, calibrated from cumulative 9-nucleus fit)
+B_SLIP  = 4.0      # MeV — empirical mean of B_slip across N_alpha = 14-22
+                   # NOTE: this is a fitted parameter, not zero-parameter
 
-# Candidate Pattern-6-natural exact form (OPEN-SS-36, registered 2 May 2026
-# 3rd sub-arc in OPEN-SS-34 derivation): three-K3-mode symmetric coupling at
-# the satellite-attachment face produces SU(2) eigenvalue sqrt(3).
+# RETIRED 2 May 2026 4th sub-arc: B_SLIP_SQRT3 was the 3rd sub-arc's
+# constant-form candidate (B_slip = sqrt(3) * B_pair = 4.056 MeV).
+# Closer empirical analysis showed B_slip is NOT constant — it grows
+# from 1.51*B_pair at N_alpha=14 to 1.94*B_pair at N_alpha=22. The
+# constant-sqrt(3) form was a midpoint-fit artifact. Retained here for
+# historical reference and reproducibility of the 3rd sub-arc results.
 import math
-B_SLIP_SQRT3 = math.sqrt(3) * B_PAIR  # MeV; agrees with 56Ni calibration to 1.4%
+B_SLIP_SQRT3 = math.sqrt(3) * B_PAIR  # MeV; RETIRED — see SS-9_OPEN-SS-36_derivation_attempt.md
+
+# REFINED 2 May 2026 4th sub-arc: B_slip decomposes structurally as
+# closure-bonus + shell-closure-influence:
+#   B_slip(N_alpha) = B_pair + B_shell(N_alpha)
+# where B_pair is the universal SS-5-style closure quantum (Level-1
+# derivable) and B_shell(N_alpha) is the OPEN-SS-35-dependent piece
+# growing from ~0.5*B_pair at N=14 to ~1*B_pair at N=22.
+B_CLOSURE = B_PAIR  # the closure-bonus piece (SS-5-derived)
+# B_shell empirical anchors:
+B_SHELL_AT_14 = 1.197  # MeV at 56Ni (= 0.511 * B_pair)
+B_SHELL_AT_22 = 2.201  # MeV at 88Ru (= 0.940 * B_pair)
+def B_shell_linear(N):
+    """Linear-interpolation model for B_shell(N_alpha) between
+    N_alpha=14 (~0.5*B_pair) and N_alpha=25 (extrapolated to ~1.5*B_pair).
+    Empirical model only; OPEN-SS-35 closure required for derivation."""
+    return 0.5 * B_PAIR + 0.5 * B_PAIR * (N - 14) / 11.0
 
 
 # ---------------------------------------------------------------------------
@@ -117,8 +137,23 @@ def B_satellite(N, B_slip=B_SLIP):
 def B_satellite_zero_param(N):
     """Zero-parameter Regime II formula candidate (OPEN-SS-36):
     B_slip = sqrt(3) * B_pair from three-K3-mode symmetric coupling.
-    Valid for N >= 14."""
+    Valid for N >= 14.
+
+    RETIRED 2 May 2026 4th sub-arc: this constant form was a midpoint-fit
+    artifact; B_slip is actually N-dependent. Retained for reproducibility
+    of 3rd-sub-arc results. Use B_satellite_decomposed for the corrected
+    formula."""
     return N * B_ALPHA + (N + 22) * B_PAIR + B_SLIP_SQRT3
+
+
+def B_satellite_decomposed(N):
+    """Refined Regime II formula (OPEN-SS-36 4th sub-arc):
+    B_sat(N) = N*B_alpha + (N+23)*B_pair + B_shell(N)
+    where (N+23)*B_pair absorbs the closure-bonus piece +B_pair into the
+    pair-edge count, and B_shell(N) is the empirical shell-closure-influence
+    piece (linear interpolation between N=14 and N=25).
+    Valid for N >= 14."""
+    return N * B_ALPHA + (N + 23) * B_PAIR + B_shell_linear(N)
 
 def E_actual(N, B_exp):
     """Effective contact-graph edge count, inverted from binding."""
@@ -274,6 +309,55 @@ def cumulative_satellite_fit():
     print()
 
 
+def refined_decomposition_satellite_fit():
+    """Refined satellite-regime fit using the OPEN-SS-36 4th sub-arc
+    decomposition: B_slip(N) = B_pair (closure) + B_shell(N) (shell influence).
+
+    The closure piece +B_pair is Level-1 derived (SS-5 generalized).
+    The shell piece B_shell(N) is empirically anchored, requires OPEN-SS-35
+    closure for full CPP derivation."""
+    print("=" * 88)
+    print(f"Refined satellite-regime fit (closure + shell decomposition)")
+    print("=" * 88)
+    print(f"  B_slip(N) = B_pair (closure) + B_shell(N) (shell-closure influence)")
+    print(f"  Closure piece: +B_pair = {B_PAIR:.4f} MeV (SS-5 generalized, Level-1 derived)")
+    print(f"  Shell piece:   linear interpolation between N=14 (~0.5*B_pair) and N=25 (~1.5*B_pair)")
+    print()
+    print(f"{'N_a':>3} {'Nuc':>5} {'B_pred':>10} {'B_exp':>10} {'Resid':>8} {'Resid_Bp':>9} {'B_shell':>9}")
+    print("-" * 70)
+    rms_sum = 0.0
+    n = 0
+    residuals = []
+    for N, nuc, B in ALPHA_CHAIN:
+        if N < 14: continue
+        b_pred = B_satellite_decomposed(N)
+        resid = B - b_pred
+        residuals.append(resid)
+        rms_sum += resid**2
+        n += 1
+        b_shell = B_shell_linear(N)
+        print(f"{N:>3} {nuc:>5} {b_pred:>10.3f} {B:>10.3f} {resid:>+8.3f} {resid/B_PAIR:>+9.3f} {b_shell:>9.3f}")
+    for N, nuc, Z, Nn, ME, sig_ME, src, status in PRED_O_19_VERIFICATION:
+        if N in (21, 22) and status == 'measured':
+            B_exp = binding_from_ME(Z, Nn, ME)
+            b_pred = B_satellite_decomposed(N)
+            resid = B_exp - b_pred
+            residuals.append(resid)
+            rms_sum += resid**2
+            n += 1
+            b_shell = B_shell_linear(N)
+            print(f"{N:>3} {nuc:>5} {b_pred:>10.3f} {B_exp:>10.3f} {resid:>+8.3f} {resid/B_PAIR:>+9.3f} {b_shell:>9.3f}")
+    rms = np.sqrt(rms_sum / n)
+    print(f"\n  RMS residual: {rms:.3f} MeV across {n} nuclei (N_alpha = 14-22)")
+    print(f"  Mean residual: {sum(residuals)/n:+.3f} MeV")
+    print(f"  Max |residual|: {max(abs(r) for r in residuals):.3f} MeV")
+    print(f"  Relative accuracy: {rms / np.mean([d[2] for d in ALPHA_CHAIN if d[0] >= 14]) * 100:.3f}%")
+    print()
+    print("  NB: B_shell linear interpolation has 2 empirical parameters.")
+    print("      Full zero-parameter status requires OPEN-SS-35 closure.")
+    print()
+
+
 def zero_parameter_satellite_fit():
     """Zero-parameter satellite-regime fit using B_slip = sqrt(3)*B_pair
     (OPEN-SS-36 candidate exact form, registered 2 May 2026 3rd sub-arc)."""
@@ -328,3 +412,4 @@ if __name__ == "__main__":
     verify_O19()
     cumulative_satellite_fit()
     zero_parameter_satellite_fit()
+    refined_decomposition_satellite_fit()
