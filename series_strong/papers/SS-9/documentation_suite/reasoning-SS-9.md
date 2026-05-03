@@ -2377,3 +2377,190 @@ The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 10 paragr
 ---
 
 *End of Session 10 Opus reasoning. Future sessions append below.*
+
+## Session 11 Phase 1 — Cluster-surface Thomas-form spin-orbit RULED OUT (2 May 2026)
+
+### Strategy
+
+Session 10 bounded the simple HO + L·S framework at $V_{\rm SO}/\hbar\omega \approx 0.11$, about 56% of the empirical strong-magic threshold (0.20–0.25), and identified two multi-session paths for further closure: Path (i) cluster-surface Thomas-form spin-orbit with weight $\xi(r) \propto -(1/r)\,dV/dr$ peaking at the cluster boundary (the Bohr-Mottelson form factor that empirically produces magic-strength gaps for high-l j-shell partners); Path (ii) numerical diagonalization of the full K$_3$ Gaussian-modulated Hamiltonian beyond Taylor expansion. Session 11 Phase 1 is the first phase of the multi-session arc on Path (i).
+
+The central question: **does the spherically-averaged K$_3$ Gaussian-modulated mean field at $A = 56$ produce a Thomas-form weight $f_{\rm SO}(r) = (1/r) \cdot dV_{\rm avg}/dr$ that enhances $V_{\rm SO}^{\rm eff}$ for high-l surface-localized states**, in the way Bohr-Mottelson Woods-Saxon $df/dr/r$ does empirically?
+
+If yes, layer 3 magic-strength gap closure is achievable through Path (i) and Phase 2+ would extend to full shell-model spectrum with l-dependent V_SO_eff. If no, Path (i) is ruled out and the closure path must move outside the simple K$_3$ Gaussian-modulated mean field framework.
+
+### Cluster geometry
+
+For the magic-strength test case $A = 56$ (deltahedron-core configuration with $N_\alpha = 14$ alphas), model the cluster as a thin spherical shell of $N_\alpha$ alphas at radius $R_{\rm cluster} = 2.37$ fm (alpha-vertex radius, using $A = 48$ icosahedron value as proxy for $A = 56$ deltahedron-core). Each alpha contributes a Gaussian to $V_{K_3}$ with depth $V_0 = B_{\rm pair} \cdot \langle\deg\rangle = 2.342 \cdot 5 = 11.71$ MeV and width $\sigma = \hbar c/\sqrt{m_n c^2 \cdot \hbar\omega} = 1.7855$ fm.
+
+**Sharpness ratio**: $\sigma/R_{\rm cluster} = 0.75$. Compare Bohr-Mottelson Woods-Saxon $a/R \sim 0.1$ — the K$_3$ Gaussian-modulated mean field is **about a factor of 7 more diffuse**. This is the structural feature that drives the entire Phase 1 result.
+
+### Spherically-averaged K$_3$ shell potential
+
+Standard derivation via shell average of Gaussians centered at $|\vec R'| = R$ shell:
+$$\int_{\rm shell} \exp(-|\vec r - \vec R'|^2/2\sigma^2)\,d\Omega_{R'} = \frac{2\pi\sigma^2}{rR}[\exp(-(r-R)^2/2\sigma^2) - \exp(-(r+R)^2/2\sigma^2)]$$
+
+Multiplied by $N_\alpha V_0/(4\pi)$ for total shell contribution:
+$$V_{\rm avg}(r) = -\frac{N_\alpha V_0 \sigma^2}{2 r R_{\rm cluster}} \cdot [\exp(-(r-R_{\rm cluster})^2/2\sigma^2) - \exp(-(r+R_{\rm cluster})^2/2\sigma^2)]$$
+
+Numerically:
+- $V_{\rm avg}(0) = -N_\alpha V_0 \exp(-R_{\rm cluster}^2/2\sigma^2) = -14 \cdot 11.71 \cdot \exp(-0.881) = -67.93$ MeV (well bottom)
+- $V_{\rm avg}(R_{\rm cluster}) = -45.15$ MeV (alpha-vertex shell)
+- $V_{\rm avg}(5\text{ fm}) = -7.45$ MeV (well outside cluster)
+- $V_{\rm avg}(7\text{ fm}) = -0.55$ MeV (negligible)
+
+The potential has Gaussian-bottom interior and decays to zero at large r. The fuzzy surface ($\sigma \approx R$) gives a smooth, slow transition rather than the sharp Woods-Saxon edge.
+
+### Thomas-form weight $f_{\rm SO}(r) = (1/r) \cdot dV_{\rm avg}/dr$
+
+Numerical profile (computed via central differences):
+- $f_{\rm SO}(0) = 8.79$ MeV/fm$^2$ (peak — at the center, by L'Hopital limit)
+- $f_{\rm SO}(R_{\rm cluster}) = 7.18$ MeV/fm$^2$
+- $f_{\rm SO}(3\text{ fm}) = 5.84$ MeV/fm$^2$
+- $f_{\rm SO}(5\text{ fm}) = 1.53$ MeV/fm$^2$
+- $f_{\rm SO}(7\text{ fm}) = 0.12$ MeV/fm$^2$
+
+**$f_{\rm SO}(r)$ peaks at the cluster CENTER ($r \to 0$) and decreases monotonically outward.** This is the **opposite** of Bohr-Mottelson Woods-Saxon $f_{\rm SO}^{\rm WS}(r)$, which peaks at the cluster surface where $df/dr$ is sharp.
+
+**Comparison to pure HO**: $f_{\rm SO}^{\rm HO} = m_n\omega^2 = 4.08$ MeV/fm$^2$ uniformly. K$_3$ shell exceeds HO at the center (factor 2.16×) and falls below HO at $r = 5$ fm (factor 0.37×). K$_3$ has *steeper* central curvature than asymptotic HO and *gentler* falloff at large r, but no surface peak.
+
+### Why no surface peak
+
+The structural reason is the fuzzy surface. For a sharp-surface form factor (Woods-Saxon with $a/R \sim 0.1$), the gradient $-dV/dr$ is sharply concentrated in a narrow band around $r = R$, and the weight $df/dr/r \sim |df/dr|/R$ is sharply peaked at the surface where the wavefunctions of high-l states live. For a fuzzy-surface form factor ($\sigma/R = 0.75$ in CPP K$_3$), the gradient is broad and peaks somewhere displaced from the center; but it gets divided by $r$, so the weight $(1/r) \cdot dV/dr$ peaks closer to the origin where $r$ is small. The overall shape becomes centrally weighted rather than surface-weighted.
+
+This is a consequence of the Gaussian shape itself, not a parameter choice. The K$_3$ mean field's smooth Gaussian-bottom interior and exponentially-decaying tail give a $V'/r$ profile that necessarily peaks near the origin.
+
+### Matrix elements in HO basis
+
+HO ground-state-of-l radial wavefunction:
+$$R_{0,l}(r) = \sqrt{\frac{2}{a^3 \Gamma(l+3/2)}} \cdot \left(\frac{r}{a}\right)^l \exp\!\left(-\frac{r^2}{2a^2}\right)$$
+with $a = \sigma = 1.7855$ fm (self-consistent K$_3$/HO matching from Session 6).
+
+Verified normalization $\int |R_{0,l}|^2 r^2 dr = 1$ for $l = 0, 3, 6$: all give 1.000000 ✓
+
+**Mean radii** (the key spatial diagnostic):
+
+| $l$ | orbital | $\langle r \rangle$ (fm) | location relative to $R_{\rm cluster} = 2.37$ fm |
+|---|---|---|---|
+| 0 | 1s | 2.015 | inside cluster |
+| 3 | 1f (magic 28) | 3.684 | beyond cluster surface |
+| 4 | 1g (magic 50) | 4.093 | well beyond surface |
+| 5 | 1h (magic 82) | 4.465 | well beyond surface |
+| 6 | 1i (magic 126) | 4.809 | well beyond surface |
+
+The spin-orbit-driven magic orbitals have wavefunctions peaked *outside* the cluster shell, in the region where $f_{\rm SO}(r)$ has decayed to a fraction of its central value.
+
+**Matrix elements** $\langle 0, l | f_{\rm SO}(r) | 0, l \rangle$ (computed via `scipy.integrate.quad`):
+
+| $l$ | orbital | $\langle f_{\rm SO}\rangle_{0,l}$ (MeV/fm$^2$) | ratio to $l=0$ |
+|---|---|---|---|
+| 0 | 1s | 7.4098 | 1.000 |
+| 1 | 1p | 6.3112 | 0.852 |
+| 2 | 1d | 5.2432 | 0.708 |
+| 3 | 1f | 4.2742 | 0.577 |
+| 4 | 1g | 3.4326 | 0.463 |
+| 5 | 1h | 2.7234 | 0.367 |
+| 6 | 1i | 2.1391 | 0.289 |
+
+**Matrix elements decrease monotonically from 7.41 (l=0) to 2.14 MeV/fm$^2$ (l=6), factor 3.5× reduction.**
+
+### Calibration and $V_{\rm SO}^{\rm eff}(l)$
+
+Anchor proportionality constant $K$ to Session 8 baseline value $V_{\rm SO}^{\rm central} = 1.17$ MeV at $l = 0$:
+$$K = \frac{V_{\rm SO}^{\rm central}}{\langle f_{\rm SO}\rangle_{0,0}} = \frac{1.17}{7.4098} = 0.158\text{ fm}^2$$
+
+For reference: bare relativistic Thomas value $K_{\rm bare} = (\hbar c)^2/(2(m_n c^2)^2) = 0.022$ fm$^2$. The CPP-internal calibration is about 7× larger, consistent with the $(v_F/c)^2 \cdot \hbar\omega$ formulation in Session 8 incorporating non-Thomas SSV-PSR_eff coupling beyond bare relativistic Thomas precession.
+
+**$V_{\rm SO}^{\rm eff}(l) = K \cdot \langle f_{\rm SO}\rangle_{0,l}$**:
+
+| $l$ | orbital | empirical magic | $V_{\rm SO}^{\rm eff}$ (MeV) | $V_{\rm SO}^{\rm eff}/\hbar\omega$ | % of strong-magic threshold (0.20) |
+|---|---|---|---|---|---|
+| 0 | 1s | – | 1.170 | 0.0900 | 45% |
+| 1 | 1p | 8 | 0.997 | 0.0767 | 38% |
+| 2 | 1d | 20 | 0.828 | 0.0637 | 32% |
+| 3 | 1f | **28** | 0.675 | 0.0519 | 26% |
+| 4 | 1g | **50** | 0.542 | 0.0417 | 21% |
+| 5 | 1h | **82** | 0.430 | 0.0331 | 17% |
+| 6 | 1i | **126** | 0.338 | 0.0260 | 13% |
+
+**The orbitals responsible for empirical strong magics 28, 50, 82, 126 (l = 3, 4, 5, 6) get progressively weaker $V_{\rm SO}^{\rm eff}$**, reaching only 13% of the strong-magic threshold at $l = 6$. This is *worse* than Session 9's uniform $V_{\rm SO} = 1.17$ MeV assumption (45% of threshold uniformly).
+
+### Path (i) verdict: RULED OUT
+
+Three grounds:
+
+1. **Wrong sign**: $V_{\rm SO}^{\rm eff}(l)$ decreases monotonically with $l$, opposite of empirical centrifugal-style enhancement. Bohr-Mottelson Woods-Saxon enhances high-l via sharp surface form factor; CPP K$_3$ Gaussian mean field reduces high-l via fuzzy form factor.
+
+2. **Magnitude**: $V_{\rm SO}^{\rm eff}(l = 6) = 0.338$ MeV is 13% of empirical strong-magic threshold, **worse** than Session 9's uniform 1.17 MeV (45%). The cluster-surface refinement makes the closure picture less favorable, not more.
+
+3. **Structural origin**: K$_3$ Gaussian-modulated mean field has fuzzy surface ($\sigma/R = 0.75$ at $A = 56$), in contrast to Woods-Saxon sharp surface ($a/R \sim 0.1$). The geometric deficiency is shape-level — cannot be fixed by parameter adjustment within the K$_3$ Gaussian-bottom framework.
+
+**Fourth programme-level negative-result demonstration in OPEN-SS-35 closure programme**:
+
+| # | route | session | finding |
+|---|---|---|---|
+| 1 | Route D | Session 5 Phase 2 | direct lattice-shell counting fails |
+| 2 | Route B-γ | Session 7 Phase 2 | K$_3$-mode phase coupling fails |
+| 3 | Route 1b | Session 10 | central anharmonic correction wrong sign |
+| 4 | Path (i) | Session 11 Phase 1 | cluster-surface form factor wrong direction |
+
+The progressive ruling-out sharpens the diagnosis substantially: **the empirical magic-strength gap closure of OPEN-SS-35 sub-question (b) Route B-α layer 3 cannot be achieved within the K$_3$ Gaussian-modulated mean field + simple HO + L·S + V_SO refinement framework, regardless of how V_SO is parametrized**.
+
+### Implications for Path (ii)
+
+Path (ii) numerical diagonalization remains formally open but with substantially reduced expectations. The structural deficiency identified in Phase 1 is **geometric** (Gaussian shape, fuzzy surface), not **perturbative** (Taylor expansion failing). Numerical diagonalization can capture cluster-edge effects more accurately than HO-basis perturbation theory, but it cannot change the shape of the mean field. If the smooth Gaussian-bottom shape is the issue, no amount of computational refinement of the same shape will fix it.
+
+Path (ii) might still produce a different result if the actual K$_3$ mean field eigenstates have substantially different surface localization than HO basis suggests (e.g., bound only to the cluster, not extending beyond), or if the full deltahedron geometry (not spherical average) produces sharper local features at vertex positions. But the qualitative expectation is that Path (ii) will refine but not reverse Phase 1's conclusion.
+
+### Programme-level effects
+
+**Sub-question (b) Route B-α layer 3 status further refined**: "bounded refinement: simple HO + L·S framework saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$" (Session 10) → "**the K$_3$ Gaussian-modulated mean field framework is fundamentally insufficient for magic-strength gap closure; gap-strength match requires additional CPP physics beyond the smooth Gaussian-bottom mean field**" (this Session 11 Phase 1).
+
+**Path (i) RULED OUT.**
+
+**Path (ii) status**: still formally open, reduced expectations.
+
+**OPEN-SS-35 closure trajectory: 6 programme-level stages preserved.** Phase 1 refines stage (vi) but does not advance to a new stage.
+
+**First qualitative cross-paradigm consilience claim (Session 9) intact**: empirical magic-number sequence reproduced from CPP first-principles. The qualitative consilience does not depend on quantitative gap-strength match.
+
+**Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.** Phase 1 uses existing K$_3$ machinery (instance 7: K$_3$ at nucleon-orbital scale); no new K$_3$ scale-recurrence instance.
+
+**Identification of further-future avenues** (multi-session by scope):
+- (a) Sharper-surface contributions to K$_3$ mean field (K$_3$ edge mechanism + Pauli-blocking at cluster boundary)
+- (b) Additional binding terms beyond Gaussian sum (higher-order K$_3$ modes, color-coupling at cluster-internal scale)
+- (c) L·S operator structure beyond Bohr-Mottelson form (interacts with OPEN-SS-16 Layer B)
+- (d) Recognition that empirical magic-strength hierarchy may not be solely a mean-field property (pairing, deformation, other nuclear-structure effects)
+
+Avenue (d) might reframe the closure programme entirely — moving from "derive empirical gap strengths from CPP mean field" to "derive empirical magic-number SEQUENCE from CPP, with gap-strength hierarchy as a derived-or-imposed structural-influence parameter requiring additional physics beyond the mean field."
+
+### Forward-looking pointers for next session
+
+**Priority 1 (programme pivot)**: Recognize gap-strength closure requires physics outside the simple K$_3$ Gaussian + HO + L·S framework, and pivot the OPEN-SS-35 closure programme. Multi-session decision point. Single-session-tractable subtasks:
+- Survey OPEN-SS-16 Layer B (operator structure of L·S)
+- Survey sub-question (a) A-scaling closure (R1 or R2 from Session 7 Phase 1) for whether $\hbar\omega$ refinement affects the closure picture
+
+**Priority 2 (Path (ii) reduced)**: Numerical diagonalization of full K$_3$ Hamiltonian. Multi-session by scope, reduced priority after Phase 1 result.
+
+**Priority 3**: Pursue avenues (a)–(d) above. Each multi-session by scope; (d) might reframe closure programme entirely.
+
+**Priority 4**: Sub-question (a) A-scaling closure (R1 or R2). Single-session-tractable.
+
+**Anti-priority**: Do not pursue further refinement of $V_{\rm SO}$ within the simple K$_3$ Gaussian + HO + L·S framework. Phase 1 has demonstrated this framework cannot achieve gap-strength closure regardless of how V_SO is parametrized.
+
+### What's preserved elsewhere
+
+The Session 11 Phase 1 entry in `session_logs/2026-05-02_session_log.md` covers this work at Tier 1.
+
+Vignette 16 in `development-SS-9.md` (Tier 3) gives the curated narrative.
+
+The transcript-SS-9.md (Tier 2) entries `245`–`263` index Session 11 Phase 1 transactions.
+
+Session 11 Phase 1 deliverables:
+- Sketch: `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_cluster_surface_phase1.md`
+- Reproducible script: `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_cluster_surface_phase1.py`
+
+The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 11 Phase 1 paragraph after Session 10 update.
+
+---
+
+*End of Session 11 Phase 1 Opus reasoning. Future sessions append below.*
