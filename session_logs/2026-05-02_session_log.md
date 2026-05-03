@@ -866,3 +866,128 @@ Six meaningful programme-level stages, all on single calendar day's session sequ
 ---
 
 *Session log Template-A Session 9 entry per §4 discipline. Substantive content: B-α layer 3 partial closure. All 7 empirical magic numbers reproduced as cumulative shell-closure positions in CPP-derived shell-model spectrum. Gap magnitudes: HO-boundary (2, 8, 20) match empirical to 20%; spin-orbit (28, 50, 82, 126) at 23-60% of empirical. First qualitative cross-paradigm consilience claim of OPEN-SS-35 closure programme. Terminology correction: "Dirac negative-energy mixing" replaced by CPP-native SSV-PSR_eff articulation. Pattern 6 K$_3$ scale-recurrence unchanged at 7 confirmed instances.*
+
+## Session 10 — V_SO refinement: Routes 1a, 1b, 1c; Route 1b ruled out
+
+**Continuation of:** Session 9 (B-α layer 3 partial closure: shell SEQUENCE reproduced; gap magnitudes at soft end of empirical). Session 9 forward-looking pointers identified Priority 1 = refine $V_{\rm SO}$ toward $V_{\rm SO}/\hbar\omega \geq 0.20$ via Route 1a (refined $v_F/c$), Route 1b (centrifugal correction from K$_3$ HO mean field), or Route 1c (higher-order relativistic corrections beyond leading $(v/c)^2$).
+**Trigger:** Thomas's request to continue trajectory per Session 9 forward-looking pointers.
+**Patches produced:** 0128-0134 (Session 10 sketch + script + Research_Frontier + four-tier docs + session log).
+
+### Strategy
+
+Single-phase substantive work pursuing all three Priority-1 routes. Route 1b is the principal investigation because it tests whether the K$_3$ mean field's *intrinsic anharmonicity* provides empirical centrifugal-style enhancement (Bohr-Mottelson $D \cdot l(l+1)$). Routes 1a and 1c are quantitative refinements layered on top.
+
+If Route 1b succeeds, layer 3 closes via CPP-internal mechanism without additional physics. If Route 1b fails, the bound on Routes 1a + 1c identifies the missing physics for full layer 3 closure.
+
+### Route 1b: K$_3$ Gaussian central expansion and quartic perturbation
+
+K$_3$ confining potential at cluster centroid: $V_{K_3}(\vec r) = -B_{\rm pair}\sum_i \deg(v_i)\exp(-|\vec r - \vec R_i|^2/2\sigma^2)$.
+
+Single Gaussian Taylor-expands as $V(r) = -V_0 + (V_0/2\sigma^2)r^2 - (V_0/8\sigma^4)r^4 + \ldots$
+
+HO frequency: $m_n\omega^2 = V_0/\sigma^2$. Quartic coefficient: $C_4 = -V_0/(8\sigma^4) = -m_n\omega^2/(8\sigma^2)$, **negative**.
+
+Diagonal HO matrix elements: $\langle n,l|r^4|n,l\rangle = (\hbar/m_n\omega)^2 \cdot f(N,l)$ where $f(N,l) = (N+3/2)^2 + 2n(n+l+3/2) + l + 3/2$. Verified at ground state: $f(0,0) = 15/4$ ✓.
+
+Quartic shift: $\Delta E_{N,l} = -\hbar^2/(8 m_n \sigma^2) \cdot f(N,l)$. With $\sigma = 1.7855$ fm at $\hbar\omega = 13$ MeV: $\Delta E = -1.625 \cdot f(N,l)$ MeV.
+
+### Sign analysis: WRONG SIGN for empirical centrifugal enhancement
+
+At fixed $N$, $f(N,l)$ is largest for low-l and decreases with $l$:
+
+| $N$ | $f(N, l_{\rm low})$ | $f(N, l_{\rm high})$ |
+|---|---|---|
+| 2 | $f(2,0) = 18.75$ | $f(2,2) = 15.75$ |
+| 3 | $f(3,1) = 29.75$ | $f(3,3) = 24.75$ |
+| 4 | $f(4,0) = 45.75$ | $f(4,4) = 35.75$ |
+| 5 | $f(5,1) = 62.75$ | $f(5,5) = 48.75$ |
+| 6 | $f(6,0) = 84.75$ | $f(6,6) = 63.75$ |
+
+Combined with $C_4 < 0$: low-l states are *lowered more* by quartic than high-l. **Wrong sign for empirical centrifugal enhancement**, where Bohr-Mottelson $D \cdot l(l+1)$ with $D > 0$ lowers high-l states relative to low-l.
+
+### Magnitude warning: perturbation theory breakdown
+
+$|\Delta E|$ for $N = 4, 5, 6$ states (where spin-orbit-driven magics 28, 50, 82, 126 sit) is 60-140 MeV >> $\hbar\omega = 13$ MeV. First-order perturbation theory FAILS. High-N HO wavefunctions extend beyond Gaussian width $\sigma$ and probe cluster boundary at $\sim 3$-$4$ fm.
+
+### Route 1b verdict: RULED OUT
+
+Two grounds:
+1. **Wrong sign:** quartic correction lowers low-l more than high-l at fixed $N$, opposite of empirical centrifugal enhancement.
+2. **Framework breakdown:** first-order perturbation theory fails for high-N states where spin-orbit-driven magics live.
+
+Combined diagnosis: missing physics is **cluster-surface Thomas-form spin-orbit** $V_{\rm SO}^{\rm surface} = \langle \xi(r) \rangle$ with $\xi(r) \propto -dV/dr$ peaking at cluster boundary — different physics than central-region anharmonicity.
+
+### Route 1a: refined $v_F/c$ via Approach C surface-region emphasis
+
+For Thomas-form spin-orbit, relevant velocity is at cluster surface where $-dV/dr$ peaks. Session 8 Approach C (surface-region) gave $v_F/c \in [0.278, 0.356]$. At $A = 56$, between $A = 48$ icosahedron Approach C value 0.307 and $A = 40$ gyroelongated square bipyramid 0.356, interpolated:
+
+$v_F/c = 0.32$, $V_{\rm SO} = (0.32)^2 \cdot 13 = 1.331$ MeV, $V_{\rm SO}/\hbar\omega = 0.1024$.
+
+Increase from baseline 0.090: **+13.8%**.
+
+### Route 1c: higher-order relativistic via SSV-PSR_eff expansion
+
+CPP SR paper machinery: $\textsf{PSR}_{\rm eff} = l_P/(1 + k\Delta\textsf{SSV}) = 1 - \alpha(v/c)^2 + \alpha^2(v/c)^4 - \ldots$
+
+Multiplicative factor on $V_{\rm SO}$ from next-order: $1 + \beta(v_F/c)^2$ with $\beta \approx 1$. At $v_F/c = 0.32$: factor $= 1.102$.
+
+Combined Routes 1a + 1c: $V_{\rm SO} = 1.331 \cdot 1.102 = 1.468$ MeV, $V_{\rm SO}/\hbar\omega = 0.113$.
+
+Additional increase from Route 1c: **+10.7%** (atop Route 1a).
+
+### Synthesis: bounded refinement
+
+| route | $V_{\rm SO}/\hbar\omega$ | rel. baseline |
+|---|---|---|
+| Session 8 layer 1 | 0.090 | 1.00× |
+| Route 1a (refined $v_F/c$) | 0.102 | 1.14× |
+| Routes 1a + 1c combined | **0.113** | **1.25×** |
+| Empirical strong-magic threshold | 0.20–0.25 | 2.22–2.78× |
+
+**Combined Session 10 result: $V_{\rm SO}/\hbar\omega = 0.113$, +25% over Session 8 baseline. Reaches 56% of empirical strong-magic threshold (0.20). Remaining gap factor 1.77-2.21.**
+
+**Session 10 establishes the BOUND of the simple HO + L·S + V_SO refinement framework: $V_{\rm SO}/\hbar\omega \approx 0.11$**, about half the empirical strong-magic threshold. Further closure requires multi-session physics work outside this framework.
+
+### Identification of missing physics (multi-session paths)
+
+**Path (i):** Cluster-surface Thomas-form spin-orbit. Compute $V_{\rm SO} = \langle \xi(r) \rangle$ with $\xi(r) \propto -dV/dr$ peaking at boundary. Direct continuation of Session 10's negative result on Route 1b.
+
+**Path (ii):** Numerical diagonalization of full K$_3$ Hamiltonian beyond Taylor expansion. Captures cluster-edge effects.
+
+### State at Session 10 close
+
+**Cumulative programme state:** 9 axioms, **107 zero-parameter empirical correspondences** (unchanged; Session 10 refines without adding).
+
+**OPEN-SS-35 status:**
+- Sub-question (a) Level-1 partial closure (Session 6) remains valid.
+- A-scaling sub-sub-question: substantive Level-0/Level-1 mixed result (Session 7 Phase 1).
+- Sub-question (b) Route B-α layer 3 status: refined to "**bounded refinement: simple HO + L·S framework saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$; closure of gap-strength match requires cluster-surface Thomas-form spin-orbit or numerical diagonalization beyond Taylor expansion**".
+- First qualitative cross-paradigm consilience claim (Session 9) intact.
+- Layer 2 (operator structure) still depends on OPEN-SS-16.
+- Sub-question (c) remains pending.
+
+**Third programme-level negative-result demonstration in OPEN-SS-35 closure programme**, after Route D (Session 5 Phase 2) and Route B-γ (Session 7 Phase 2). Progressive ruling-out of candidate routes sharpens the closure path.
+
+**Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.** Negative result on Route 1b confirms that empirical centrifugal enhancement responsible for magic-strength gaps is *not* a K$_3$ mechanism; it's a Thomas-form surface effect requiring different physics.
+
+### Cumulative OPEN-SS-35 trajectory
+
+(i) Speculative cross-paradigm bridge (Session 4 registration) → (ii) scoping passed (Session 5 Phase 2) → (iii) sub-question (a) Level-1 partial closure (Session 6) → (iv) sub-question (a) A-scaling extension + sub-question (b) scoping (Session 7) → (v) sub-question (b) B-α layer 1 closed; magnitude Level-1 partial (Session 8) → (vi) **sub-question (b) B-α layer 3 partial closure: empirical magic-number sequence reproduced from CPP first-principles** (Session 9; refined this Session 10).
+
+**Six meaningful programme-level stages preserved.** Session 10 refines existing stage (vi) but does not advance to new programme-level stage.
+
+### Forward-looking pointers for next session
+
+**Priority 1 (highest-leverage, multi-session):** Cluster-surface Thomas-form spin-orbit (Path (i) above). Direct continuation of Session 10 negative result on Route 1b. Multi-session by scope.
+
+**Priority 2:** Numerical diagonalization of full K$_3$ Hamiltonian (Path (ii)). Multi-session.
+
+**Priority 3:** OPEN-SS-16 / Layer B closure work. Unlocks B-α layer 2. Multi-session.
+
+**Priority 4:** Sub-question (a) A-scaling closure (R1 or R2 from Session 7 Phase 1). Single-session-tractable.
+
+**Anti-priority:** Do not pursue further refinement of Routes 1a, 1c — Session 10 has bounded what they can achieve at $V_{\rm SO}/\hbar\omega \approx 0.11$.
+
+---
+
+*Session log Template-A Session 10 entry per §4 discipline. Substantive content: V_SO refinement bounded at $V_{\rm SO}/\hbar\omega \approx 0.11$. Route 1b ruled out (wrong sign + perturbation breakdown). Routes 1a + 1c combined give +25% over Session 8 baseline; reaches 56% of empirical strong-magic threshold. Identifies cluster-surface Thomas-form spin-orbit as missing physics for full layer 3 closure. Third programme-level negative-result demonstration in OPEN-SS-35 closure programme. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.*
