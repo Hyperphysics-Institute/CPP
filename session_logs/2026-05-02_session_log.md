@@ -991,3 +991,131 @@ Additional increase from Route 1c: **+10.7%** (atop Route 1a).
 ---
 
 *Session log Template-A Session 10 entry per §4 discipline. Substantive content: V_SO refinement bounded at $V_{\rm SO}/\hbar\omega \approx 0.11$. Route 1b ruled out (wrong sign + perturbation breakdown). Routes 1a + 1c combined give +25% over Session 8 baseline; reaches 56% of empirical strong-magic threshold. Identifies cluster-surface Thomas-form spin-orbit as missing physics for full layer 3 closure. Third programme-level negative-result demonstration in OPEN-SS-35 closure programme. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.*
+
+## Session 11 Phase 1 — Cluster-surface Thomas-form spin-orbit RULED OUT
+
+**Continuation of:** Session 10 (V_SO refinement bounded at $V_{\rm SO}/\hbar\omega \approx 0.11$). Session 10 forward-looking pointers identified Priority 1 (multi-session) = cluster-surface Thomas-form spin-orbit, computing $V_{\rm SO} = \langle \xi(r) \rangle$ in surface-localized states with $\xi(r) \propto -(1/r) \cdot dV/dr$.
+**Trigger:** Thomas's request to continue trajectory per Session 10 forward-looking pointers (Priority 1 = cluster-surface Thomas-form, multi-session arc; Phase 1 = principal investigation).
+**Patches produced:** 0135-0141 (Session 11 Phase 1 sketch + script + Research_Frontier + four-tier docs + session log).
+
+### Strategy
+
+Phase 1 of multi-session arc on Path (i). Test whether spherically-averaged K$_3$ Gaussian-modulated mean field at $A = 56$ produces a Thomas-form weight $f_{\rm SO}(r) = (1/r) \cdot dV_{\rm avg}/dr$ that enhances $V_{\rm SO}^{\rm eff}$ for high-l surface-localized states (Bohr-Mottelson mechanism for empirical magic-strength gaps).
+
+If yes, layer 3 magic-strength closure is achievable through Path (i). If no, Path (i) is ruled out and the closure path must move outside the simple K$_3$ Gaussian-modulated mean field framework.
+
+### Cluster geometry
+
+For magic-strength test case $A = 56$ (deltahedron-core, $N_\alpha = 14$): thin spherical shell at $R_{\rm cluster} = 2.37$ fm, each alpha contributing Gaussian of depth $V_0 = B_{\rm pair} \cdot \langle\deg\rangle = 11.71$ MeV and width $\sigma = \hbar c/\sqrt{m_n c^2 \cdot \hbar\omega} = 1.7855$ fm.
+
+**Sharpness ratio**: $\sigma/R_{\rm cluster} = 0.75$. Bohr-Mottelson Woods-Saxon: $a/R \sim 0.1$. **K$_3$ Gaussian-modulated mean field is a factor of 7 more diffuse.**
+
+### Spherically-averaged shell potential
+
+$$V_{\rm avg}(r) = -\frac{N_\alpha V_0 \sigma^2}{2 r R_{\rm cluster}} \cdot [\exp(-(r-R_{\rm cluster})^2/2\sigma^2) - \exp(-(r+R_{\rm cluster})^2/2\sigma^2)]$$
+
+Numerically: $V_{\rm avg}(0) = -67.93$ MeV, $V_{\rm avg}(R_{\rm cluster}) = -45.15$ MeV, $V_{\rm avg}(5\text{ fm}) = -7.45$ MeV.
+
+### Thomas-form weight peaks at the CENTER, not the surface
+
+$f_{\rm SO}(r) = (1/r) \cdot dV_{\rm avg}/dr$ profile:
+
+| $r$ (fm) | $f_{\rm SO}(r)$ (MeV/fm$^2$) |
+|---|---|
+| 0.01 | 8.79 (peak) |
+| 1.0 | 8.64 |
+| 2.0 | 7.78 |
+| 2.37 ($= R_{\rm cluster}$) | 7.18 |
+| 3.0 | 5.84 |
+| 5.0 | 1.53 |
+| 7.0 | 0.12 |
+
+**$f_{\rm SO}(r)$ peaks at the CENTER and decreases monotonically outward.** OPPOSITE of Bohr-Mottelson Woods-Saxon $df/dr/r$ which peaks at the surface.
+
+Pure HO: $f_{\rm SO}^{\rm HO} = m_n\omega^2 = 4.08$ MeV/fm$^2$ uniformly. K$_3$ shell exceeds HO at center (factor 2.16×) and falls below HO at $r = 5$ fm (factor 0.37×) — but no surface peak. Geometric consequence of fuzzy surface.
+
+### Matrix elements decrease monotonically with $l$
+
+HO ground-state-of-l: $R_{0,l}(r) = \sqrt{2/(a^3 \Gamma(l+3/2))} \cdot (r/a)^l \exp(-r^2/2a^2)$ with $a = \sigma$.
+
+Mean radii: 2.02 (l=0), 3.68 (l=3), 4.09 (l=4), 4.47 (l=5), 4.81 fm (l=6). **Spin-orbit-driven magic orbitals (1f, 1g, 1h, 1i) have wavefunctions peaked beyond $R_{\rm cluster} = 2.37$ fm, in region where $f_{\rm SO}(r)$ has decayed.**
+
+Matrix elements $\langle f_{\rm SO}\rangle_{0,l}$:
+
+| $l$ | orbital | $\langle f_{\rm SO}\rangle_{0,l}$ (MeV/fm$^2$) | ratio to $l=0$ |
+|---|---|---|---|
+| 0 | 1s | 7.4098 | 1.000 |
+| 1 | 1p | 6.3112 | 0.852 |
+| 2 | 1d | 5.2432 | 0.708 |
+| 3 | 1f (magic 28) | 4.2742 | 0.577 |
+| 4 | 1g (magic 50) | 3.4326 | 0.463 |
+| 5 | 1h (magic 82) | 2.7234 | 0.367 |
+| 6 | 1i (magic 126) | 2.1391 | 0.289 |
+
+**Decrease monotonically, factor 3.5× from $l = 0$ to $l = 6$.**
+
+### $V_{\rm SO}^{\rm eff}(l)$ via calibration to Session 8 baseline
+
+Calibration: $K = V_{\rm SO}^{\rm central}/\langle f_{\rm SO}\rangle_{0,0} = 1.17/7.4098 = 0.158$ fm$^2$ (compare bare relativistic Thomas $K_{\rm bare} = 0.022$ fm$^2$; CPP-internal calibration ~7× larger, consistent with $(v_F/c)^2 \cdot \hbar\omega$ formulation incorporating non-Thomas SSV-PSR_eff coupling).
+
+| $l$ | orbital | empirical magic | $V_{\rm SO}^{\rm eff}$ (MeV) | $V_{\rm SO}^{\rm eff}/\hbar\omega$ | % of strong-magic threshold |
+|---|---|---|---|---|---|
+| 0 | 1s | – | 1.170 | 0.0900 | 45% |
+| 3 | 1f | **28** | 0.675 | 0.0519 | 26% |
+| 4 | 1g | **50** | 0.542 | 0.0417 | 21% |
+| 5 | 1h | **82** | 0.430 | 0.0331 | 17% |
+| 6 | 1i | **126** | 0.338 | 0.0260 | 13% |
+
+**Wrong direction.** $V_{\rm SO}^{\rm eff}(l)$ DECREASES with $l$ — opposite of empirical centrifugal-style enhancement. Worse than Session 9's uniform $V_{\rm SO} = 1.17$ MeV (45% of threshold uniformly).
+
+### Path (i) verdict: RULED OUT
+
+Three grounds:
+1. **Wrong sign**: $V_{\rm SO}^{\rm eff}(l)$ decreases monotonically with $l$, opposite of empirical centrifugal-style enhancement.
+2. **Magnitude**: $V_{\rm SO}^{\rm eff}(l = 6) = 0.338$ MeV is 13% of empirical strong-magic threshold, **worse** than Session 9's uniform 1.17 MeV (45%).
+3. **Structural origin**: K$_3$ Gaussian-modulated mean field has fuzzy surface ($\sigma/R = 0.75$), in contrast to Woods-Saxon sharp surface ($a/R \sim 0.1$). Geometric deficiency is shape-level — cannot be fixed by parameter adjustment within K$_3$ Gaussian-bottom framework.
+
+**Fourth programme-level negative-result demonstration in OPEN-SS-35 closure programme** (after Route D in Session 5 Phase 2, Route B-γ in Session 7 Phase 2, Route 1b in Session 10):
+
+| # | route | session | finding |
+|---|---|---|---|
+| 1 | Route D | Session 5 Phase 2 | direct lattice-shell counting fails |
+| 2 | Route B-γ | Session 7 Phase 2 | K$_3$-mode phase coupling fails |
+| 3 | Route 1b | Session 10 | central anharmonic correction wrong sign |
+| 4 | Path (i) | Session 11 Phase 1 | cluster-surface form factor wrong direction |
+
+**Programme implication**: gap-strength closure of OPEN-SS-35 sub-question (b) Route B-α layer 3 cannot be achieved within K$_3$ Gaussian-modulated mean field + simple HO + L·S + V_SO refinement framework, regardless of how V_SO is parametrized.
+
+### Path (ii) status: reduced expectations
+
+Numerical diagonalization remains formally open but with reduced expectations after Phase 1. The structural deficiency identified is **geometric** (Gaussian shape, fuzzy surface), not **perturbative** (Taylor expansion failing). Numerical refinement of the same shape should not reverse the qualitative conclusion. Path (ii) might still produce different results if (a) actual K$_3$ eigenstates are bound only to cluster, or (b) full deltahedron geometry produces sharper local features than spherical average.
+
+### Sub-question (b) Route B-α layer 3 status further refined
+
+"bounded refinement: simple HO + L·S framework saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$" (Session 10) → "**the K$_3$ Gaussian-modulated mean field framework is fundamentally insufficient for magic-strength gap closure; gap-strength match requires additional CPP physics beyond the smooth Gaussian-bottom mean field**" (this Session 11 Phase 1).
+
+**Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.** Phase 1 uses existing K$_3$ machinery (instance 7); no new K$_3$ scale.
+
+### Cumulative OPEN-SS-35 trajectory
+
+(i) Speculative cross-paradigm bridge (Session 4 registration) → (ii) scoping passed (Session 5 Phase 2) → (iii) sub-question (a) Level-1 partial closure (Session 6) → (iv) sub-question (a) A-scaling extension + sub-question (b) scoping (Session 7) → (v) sub-question (b) B-α layer 1 closed; magnitude Level-1 partial (Session 8) → (vi) **sub-question (b) B-α layer 3 partial closure: empirical magic-number sequence reproduced from CPP first-principles** (Session 9; refined Session 10; further refined this Session 11 Phase 1).
+
+**Six meaningful programme-level stages preserved.** Session 11 Phase 1 refines existing stage (vi) but does not advance to new programme-level stage. **First qualitative cross-paradigm consilience claim (Session 9) intact.**
+
+### Forward-looking pointers for next session
+
+**Priority 1 (programme pivot):** Recognize gap-strength closure requires physics outside the simple K$_3$ Gaussian + HO + L·S framework, and pivot the OPEN-SS-35 closure programme. Multi-session decision point. Single-session-tractable subtasks:
+- Survey OPEN-SS-16 Layer B (operator structure of L·S)
+- Survey sub-question (a) A-scaling closure (R1 or R2 from Session 7 Phase 1)
+
+**Priority 2 (Path (ii) reduced):** Numerical diagonalization of full K$_3$ Hamiltonian. Multi-session by scope, reduced priority after Phase 1 result.
+
+**Priority 3:** Pursue avenues for additional CPP physics — (a) sharper-surface contributions (K$_3$ edge mechanism + Pauli-blocking); (b) additional binding terms beyond Gaussian sum (higher-order K$_3$ modes, color-coupling); (c) L·S operator structure beyond Bohr-Mottelson form (interacts with OPEN-SS-16 Layer B); (d) recognition that empirical magic-strength hierarchy may not be solely a mean-field property. Each multi-session by scope; (d) might reframe closure programme entirely.
+
+**Priority 4:** Sub-question (a) A-scaling closure (R1 or R2). Single-session-tractable.
+
+**Anti-priority:** Do not pursue further $V_{\rm SO}$ refinement within simple K$_3$ Gaussian + HO + L·S framework. Phase 1 has demonstrated this framework cannot achieve gap-strength closure regardless of how V_SO is parametrized.
+
+---
+
+*Session log Template-A Session 11 Phase 1 entry per §4 discipline. Substantive content: cluster-surface Thomas-form spin-orbit RULED OUT. K$_3$ Gaussian fuzzy surface ($\sigma/R = 0.75$) gives $f_{\rm SO}(r)$ peaking at center, not surface — opposite of Woods-Saxon. Matrix elements decrease monotonically with $l$ (factor 3.5× from $l = 0$ to $l = 6$). $V_{\rm SO}^{\rm eff}(l = 6) = 0.338$ MeV — 13% of strong-magic threshold, worse than Session 9 uniform baseline. Fourth programme-level negative-result demonstration in OPEN-SS-35 closure programme. Layer 3 status: gap-strength closure requires CPP physics beyond K$_3$ Gaussian-modulated mean field. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.*
