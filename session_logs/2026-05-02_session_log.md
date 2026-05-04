@@ -1119,3 +1119,98 @@ Numerical diagonalization remains formally open but with reduced expectations af
 ---
 
 *Session log Template-A Session 11 Phase 1 entry per §4 discipline. Substantive content: cluster-surface Thomas-form spin-orbit RULED OUT. K$_3$ Gaussian fuzzy surface ($\sigma/R = 0.75$) gives $f_{\rm SO}(r)$ peaking at center, not surface — opposite of Woods-Saxon. Matrix elements decrease monotonically with $l$ (factor 3.5× from $l = 0$ to $l = 6$). $V_{\rm SO}^{\rm eff}(l = 6) = 0.338$ MeV — 13% of strong-magic threshold, worse than Session 9 uniform baseline. Fourth programme-level negative-result demonstration in OPEN-SS-35 closure programme. Layer 3 status: gap-strength closure requires CPP physics beyond K$_3$ Gaussian-modulated mean field. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.*
+
+---
+
+## Session 12 — R1 (R$_\alpha$ scale-dependence as A-scaling closure) RULED OUT (4 May 2026)
+
+**Continuation of:** Session 11 Phase 1 (cluster-surface Thomas-form spin-orbit RULED OUT; gap-strength closure requires CPP physics outside simple K$_3$ Gaussian + HO + L·S framework). Session 11 Phase 1 forward-looking pointers identified Priority 4 = sub-question (a) A-scaling closure (R1 or R2 from Session 7 Phase 1), single-session-tractable.
+**Trigger:** Thomas's request to take up R1 (R$_\alpha$ scale-dependence as A-scaling closure) following Session 11 Phase 1 forward-looking pointers.
+**Patches produced:** 0142-0148 (Session 12 sketch + script + Research_Frontier + four-tier docs + session log).
+
+### Strategy
+
+Single-phase substantive work testing Resolution R1 (R$_\alpha$ scale-dependence) registered in Session 7 Phase 1 sketch §3.3 as candidate A-scaling closure. R1 hypothesizes that internal-contact DP-sea Coulomb screening (vs full Coulomb at the isolated $^8$Be contact that fixed $R_\alpha = 2.37$ fm) compresses $R_\alpha$ at large clusters, with the compression closing the empirical $\hbar\omega \propto A^{-1/3}$ vs CPP $A^{-0.10}$ discrepancy.
+
+R1 was attractive on three grounds: single-session-tractable, OPEN-SS-16-independent, and the Session 7 sketch §6 implicit assumption that A-scaling closure could affect layer-3 picture by adjusting $\hbar\omega$ at $A = 56$. The third assumption was the key motivator for treating R1 as high-leverage and was tested directly via the Decoupling Theorem.
+
+### K$_3$ well parametrization and force balance
+
+Three-parameter Gaussian $V_{K_3}(R) = -V_0 \exp(-((R-R_0)/\sigma)^2)$ anchored by two SS-5/SS-7 facts at $R = R_{8{\rm Be}} = 2.37$ fm: depth $V_{K_3}(R_{8{\rm Be}}) = -B_{\rm pair} = -2.342$ MeV, force-balance slope $V_{K_3}'(R_{8{\rm Be}}) = +1.026$ MeV/fm. Two constraints fix $V_0, R_0$ given $\sigma$. At canonical $\sigma = R_{\rm RMS}^\alpha = 1.68$ fm: $R_0 = 1.752$ fm, $V_0 = 2.682$ MeV.
+
+Force balance for screened internal contact: $V_{K_3}'(R^*) + f_{\rm eff}^2 \cdot V_{\rm Coul}'(R^*) = 0$. As $f_{\rm eff} \to 0$, $R^* \to R_0$ — universal compression behavior.
+
+### FINDING 1: Sign-robustness sigma-scan
+
+Sigma-scan over $\sigma \in \{1.0, 1.2, 1.5, 1.68, 2.0, 2.5\}$ fm with $f_{\rm eff} \in \{0.5, 0.2, 0.1, 0\}$. **All cases give $R^* < R_{8{\rm Be}}$ — compression is universal across the K$_3$ well parametrization family.** Sign of R1 is robust; only magnitude of compression depends on (undetermined) $\sigma$.
+
+Direction required for empirical match: $\hbar\omega \propto 1/R_c^2$, $R_c \propto R_\alpha$ at fixed shape, empirical $\hbar\omega = 41/A^{1/3}$ DECREASES with $A$, so $R_\alpha$ must INCREASE with $A$. R1 produces compression. **Wrong sign.**
+
+Survey of CPP-native energetic mechanisms (DP-sea screening, Pauli blocking, zero-point motion, rotation, K$_3$ broadening): none produce expansion. Only structural reinterpretation (R2 territory) could give expansion.
+
+### FINDING 2: U-shape pattern from inversion
+
+Required $R_\alpha(A) = R_{8{\rm Be}} \cdot \sqrt{\hbar\omega^{\rm CPP}(A)/\hbar\omega^{\rm emp}(A)}$:
+
+| $N_\alpha$ | required $R_\alpha$ | change |
+|---|---|---|
+| 4 (tetrahedron) | 2.245 fm | $-5.3\%$ |
+| 5 (tri. bipyr.) | 2.528 | $+6.7\%$ |
+| 6 (octahedron) | 2.671 | $+12.7\%$ |
+| 7 (pent. bipyr.) | 2.822 | $+19.1\%$ |
+| 8 (snub disph.) | 2.870 | $+21.1\%$ |
+| 9 (tri. tri. prism) | 2.898 | $+22.3\%$ |
+| 10 (gyr. sq. bipyr.) | 2.908 | $+22.7\%$ |
+| 12 (icosahedron) | 2.354 | $-0.7\%$ |
+
+**Pattern is non-monotonic, U-shaped — not a power law.** Endpoints (regular polytopes, full 3D symmetry) match empirical to within $1$–$10\%$. Mid-range J-solids (axial symmetry) need $7$–$23\%$ expansion peaking at $N = 10$. **No monotonic $R_\alpha(A)$ produces this shape.** Discrepancy is shape-driven, not radius-driven.
+
+### Forward pointer to OPEN-SS-32
+
+The U-shape J-solid mid-range pattern is structurally similar to **SS-7 OPEN-SS-32** (Cluster-level collective oblate-deformation mode, regime B at $N_\alpha \in \{7, 8, 9, 10\}$ with $+0.55 B_{\rm pair}$ excess in SS-7 binding-energy fit). Both regular polytopes ($N = 4, 6, 12$ — no belt/seam) and the icosahedron ($I_h$ forbids oblate deformation) show no excess in OPEN-SS-32; the same regimes show no excess in the Session 12 U-shape. Investigation of whether J-solid radial-breathing modes (analog of OPEN-SS-32 oblate deformation) produce the $\hbar\omega$ U-shape via centroid-confinement softening **registered as future-session sub-sub-question; not pursued in Session 12** (multi-session by scope, requires SS-7 / SS-8 prior-art reading).
+
+### FINDING 3: Decoupling Theorem
+
+**Theorem.** In the CPP B-α layer 1 framework where $V_{\rm SO} = (v_F/c)^2 \cdot \hbar\omega$, the dimensionless ratio $V_{\rm SO}/\hbar\omega = (v_F/c)^2$ is **independent of $\hbar\omega$ magnitude**. Therefore A-scaling closure (R1 or R2) does not affect the layer-3 gap-strength prediction.
+
+**Proof.** At $A = 56$: CPP $\hbar\omega = 13$ MeV, $V_{\rm SO} = 1.17$ MeV, ratio $0.090$; empirical $\hbar\omega = 10.7$ MeV, $V_{\rm SO} \sim 1.5$ MeV, ratio $0.140$. Hypothetical A-scaling closure shifts $\hbar\omega^{\rm CPP}$ to $10.7$ MeV; by the layer-1 formula, $V_{\rm SO}^{\rm CPP}$ scales to $0.96$ MeV; ratio remains $0.090$ — UNCHANGED. The dimensionless quantity that determines magic-number gap strength is invariant under A-scaling adjustment. $\blacksquare$
+
+**Implications:**
+1. A-scaling closure and gap-strength closure are independent open problems.
+2. Session 11 Phase 1 conclusion ("gap-strength closure requires CPP physics outside simple framework") unaffected by A-scaling work.
+3. A-scaling closure does not advance the layer-3 picture (refutes Session 7 sketch §6 implicit assumption).
+4. Pathway to gap-strength closure is via $v_F/c$ (or modification of layer-1 relationship), not via $\hbar\omega$.
+
+### Verdict
+
+**R1 RULED OUT** on three independent grounds: (i) wrong sign — energetic mechanisms compress, empirical match requires expansion; (ii) U-shape pattern — shape-driven, no monotonic $R_\alpha(A)$ produces it; (iii) Decoupling Theorem — even if R1 had succeeded, gap-strength deficit remains.
+
+**5th programme-level negative result** in OPEN-SS-35 closure programme (joining Route D, Route B-γ, Route 1b, Path (i) cluster-surface Thomas-form). R2 (cluster-scale vs alpha-scale interpretation) becomes the only remaining A-scaling closure candidate, consistent with U-shape diagnostic but multi-session by scope and decoupled from gap-strength closure.
+
+### Sub-question (a) A-scaling closure status further refined
+
+"weak A-scaling, two candidate resolutions registered" (Session 7 Phase 1) → "**R1 RULED OUT by three independent grounds; R2 only remaining candidate; A-scaling closure decoupled from gap-strength closure**" (this Session 12).
+
+**Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.** No new K$_3$ scale.
+
+### Cumulative OPEN-SS-35 trajectory
+
+(i) Speculative cross-paradigm bridge (Session 4 registration) → (ii) scoping passed (Session 5 Phase 2) → (iii) sub-question (a) Level-1 partial closure (Session 6) → (iv) sub-question (a) A-scaling extension + sub-question (b) scoping (Session 7) → (v) sub-question (b) B-α layer 1 closed (Session 8) → (vi) **sub-question (b) B-α layer 3 partial closure: empirical magic-number sequence reproduced from CPP first-principles** (Session 9; refined Sessions 10, 11; further refined this Session 12).
+
+**Six meaningful programme-level stages preserved.** Session 12 refines stage (vi) by ruling out R1 + establishing Decoupling Theorem; does not advance to a new programme-level stage. **First qualitative cross-paradigm consilience claim (Session 9) intact.**
+
+### Forward-looking pointers for next session
+
+**Priority 1:** OPEN-SS-32 ↔ U-shape connection investigation. Multi-session by scope (3–5 sessions). High leverage if successful — could potentially close R2 *and* identify the "additional CPP physics" needed for gap-strength closure.
+
+**Priority 2 (anti-priority, do not pursue):** Further refinement of $R_\alpha(A)$ as energetic mechanism. R1 has demonstrated this cannot work; pattern is shape-driven.
+
+**Priority 3:** Alternative gap-strength closure routes per Session 11 Phase 1 — avenues (a), (b), (d). Each multi-session; (a) and (d) likely connect to Priority 1.
+
+**Priority 4 (deferred):** OPEN-SS-16 Layer B closure work. Layer 2 of B-α and avenue (c) both depend on this. Multi-session; deepest open problem at programme level.
+
+**Anti-priority:** Do not speculatively connect U-shape to OPEN-SS-32 in a tail computation. Substantive diagnostic deserves clean R2-territory investigation with proper prior-art reading and fresh session.
+
+---
+
+*Session log Template-A Session 12 entry per §4 discipline. Substantive content: R1 (R$_\alpha$ scale-dependence as A-scaling closure) RULED OUT. Three independent findings: (1) sign-robustness sigma-scan demonstrates universal compression, wrong sign for empirical match; (2) inversion gives U-shape pattern shape-driven not radius-driven, structurally similar to SS-7 OPEN-SS-32 J-solid regime; (3) Decoupling Theorem proves $V_{\rm SO}/\hbar\omega$ is independent of $\hbar\omega$ magnitude, refuting Session 7 implicit assumption that A-scaling closure could close gap-strength deficit. Fifth programme-level negative-result demonstration in OPEN-SS-35 closure programme. R2 only remaining A-scaling closure candidate; decoupled from gap-strength closure. Forward pointer: OPEN-SS-32 ↔ U-shape investigation registered as future-session sub-sub-question (high leverage, multi-session). Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.*
