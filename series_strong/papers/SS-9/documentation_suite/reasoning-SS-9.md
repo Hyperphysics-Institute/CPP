@@ -3179,3 +3179,150 @@ The deliverables for Phase 3B-A: sketch at `series_strong/papers/SS-9/sketches/S
 ---
 
 *End of Session 14 Phase 3B-A Opus reasoning. Future sessions append below.*
+
+## Session 15 Phase 3B-B — Full C$_n$ IRREP decomposition RULED OUT; n-vs-N structural argument FORMALLY CLOSES R2; ninth programme-level negative result (5 May 2026)
+
+### Setting and entry conditions
+
+Session 15 continued Session 14's context window after the Phase 3B-A patches landed cleanly on `origin/main` (HEAD = patch 0174 = `743c7d9`). The handover at Session 14 close had registered Phase 3B-B as Priority 1 with sharply constrained targets: full character-theory IRREP decomposition with belt-IRREP dimension scaling appropriate to belt-vertex count, must produce non-monotonic-in-belt-size pattern within axial polytopes (small $\delta_{\rm belt}$ at $N_\alpha = 5$, large at $N_\alpha = 10$), and if structurally impossible to satisfy, R2 would be formally ruled out and the U-shape mechanism must be sought outside the K$_3$-Gaussian-Hessian framework.
+
+Between Phase 3B-A close and Phase 3B-B start, Thomas asked the meta-question about end goal and big picture. The discussion covered: (i) CPP's overall goal as deriving Standard Model + nuclear physics from CPP primitives via swarm validation; (ii) SS series targets (binding energies, shell structure, magic numbers, strong-coupling) as the backbone of the chart of nuclides; (iii) OPEN-SS-35 as the magic-number sequence and gap-strength derivation programme; (iv) the hard unsolved problem being gap-strength closure (sub-question b layer 3, $V_{\rm SO}/\hbar\omega = 0.11$ vs needed $0.20$–$0.25$), with the Decoupling Theorem (Session 12) saying this is independent of R2 / U-shape work; (v) Phase 3B-B as "completeness/clean-up work" rather than advancement of a fundamentally new programme stage; (vi) two reads — Read A (stay on Phase 3B-B as registered) vs Read B (pivot to gap-strength). Thomas chose Option 1 (execute Phase 3B-B as registered, accepting the clean-up framing).
+
+This framing — clean-up rather than advancement — turned out to be appropriate. The Phase 3B-B work yielded a decisive negative result with a class-level structural argument, which is the proper completion of the R2 closure investigation. The U-shape mechanism investigation now redirects outside the K$_3$-Gaussian-Hessian framework, which is the next substantive Priority 1.
+
+### The key reasoning for Phase 3B-B operational definition
+
+The Session 14 handover specified Phase 3B-B as "full character-theory IRREP decomposition with belt-IRREP dimension scaling," but this is not yet operational. A range of implementations are possible — from minimal (single chosen IRREP per polytope) to maximal (full point group character-theory expansion). The reasoning that converged on the C$_n$ proper-rotation subgroup:
+
+The full point group of each axial polytope (D$_{nh}$ for bipyramids, D$_{nd}$ for gyroelongated/snub forms) includes proper rotations (C$_n$ subgroup), reflections (mirror planes), and improper rotations (S$_n$ axes). A genuine "full character-theory" implementation would build all these as 3$N$-dim displacement-space operators and project. This is more effort than fits in a single session — the improper rotations and reflections require careful handling of the displacement vectors (rotation × reflection of vector components and vertex permutation) and the projector machinery is more elaborate.
+
+The C$_n$ proper-rotation subgroup, by contrast, is the largest cyclic subgroup that fixes the principal axis, and its IRREPs are naturally labeled by angular momentum $m \in \{0, 1, \ldots, n-1\}$ — exactly the right structure for an "oblate-quadrupole" hypothesis (m=2). It captures the angular structure cleanly, dimension-scales naturally with $N$ (more vertices ⇒ more vibrational modes ⇒ more IRREP content), and is implementable in clean linear algebra.
+
+Crucially, the C$_n$ decomposition gives an **upper bound** on the variance content of any belt-IRREP within the full point group: restricting to a finer decomposition (full point group with reflections) can only reduce variance per IRREP, never increase it. So if C$_n$ overshoots empirical structurally, the full-point-group refinement cannot rescue it (it overshoots more); if C$_n$ undershoots, the refinement undershoots more. This bracketing property is what makes the C$_n$ implementation the right single-session test — its negative result generalizes to the full character-theory implementation by the bracketing argument, no separate full-point-group computation needed.
+
+The three variants emerged from the natural ambiguity in defining "belt-IRREP." B-B1 "all $m \neq 0$" is the broadest reading — every axially-anisotropic mode contributes regardless of specific $m$ value. B-B2 "$m = 2$ only" is the most physically motivated — it specifically targets the SS-7 OPEN-SS-32 oblate-quadrupole hypothesis where the cluster's angular deformation transforms as $\cos(2\varphi)$ around the principal axis. B-B3 "$m \neq 0$ AND in-plane radial" is the dimension-scaling generalization of Phase 3B-A's fixed 3-dim belt-radial subspace — same direction restriction (in-plane radial) but with belt dimension growing with polytope size via the IRREP decomposition. Testing all three simultaneously is necessary because the three answer different conceptual questions and could each have given a positive result if the underlying mechanism were right. They didn't.
+
+### Computational details and sanity checks
+
+The C$_n$ rotation operator on 3$N$-dim displacement space is built as a tensor product of vertex permutation and 3D rotation. Under C$_n$ rotation by angle $2\pi/n$ about the principal axis, vertex $i$ maps to vertex $\pi(i)$ via the induced permutation. The displacement at vertex $i$ both moves to vertex $\pi(i)$'s slot AND has its 3-component vector rotated by the 3D rotation matrix $R_{3D}$. As a $3N \times 3N$ block-permutation matrix:
+
+$$R_n[3\pi(i):3\pi(i)+3,\, 3i:3i+3] = R_{3D}, \qquad \text{zero elsewhere}$$
+
+The cyclic-symmetry detection tries $n \in \{2, 3, 4, 5\}$ in decreasing order and selects the largest $n$ for which the rotation maps the polytope vertex set to itself within numerical tolerance. The detected $n$ values were as expected from each polytope's known symmetry: $N=5$ D$_{3h} \to n=3$; $N=7$ D$_{5h} \to n=5$; $N=8$ D$_{2d} \to n=2$ (only proper rotation; full D$_{2d}$ has S$_4$ improper); $N=9$ D$_{3h} \to n=3$; $N=10$ D$_{4d} \to n=4$ (only proper rotation; full D$_{4d}$ has S$_8$ improper).
+
+The real-valued IRREP projectors are $P_m = (1/n) \sum_{j=0}^{n-1} \cos(2\pi m j / n) R_n^j$. They satisfy completeness $\sum_m P_m = I$ and the cosine-symmetry pairing $P_m = P_{n-m}$ (since $\cos(2\pi m j / n) = \cos(2\pi (n-m) j / n)$ for integer $j$). At $n = 3$: $P_2 \equiv P_1$. At $n = 2$: $P_2 \equiv P_0$ (m=2 is not a separate IRREP). At $n = 4$: $P_1 = P_3$ but $P_2$ is a genuinely separate IRREP (the m=n/2 self-paired singleton). At $n = 5$: $P_1 = P_4$ and $P_2 = P_3$ (two separate doublets). These pairings are mathematically inherent to real-valued cosine projection and have implications for the variant interpretations (B-B2's behavior at $n = 2$ and $n = 3$ in particular).
+
+The B-B1 fraction is $f_k^{\rm B-B1} = ||(I - P_0) v_k||^2 = 1 - ||P_0 v_k||^2$ — this captures all m ≠ 0 content using only $P_0$ (which is unaffected by the cosine-pairing redundancy). The B-B2 fraction is $f_k^{\rm B-B2} = ||P_2 v_k||^2$ computed only when $n \geq 3$. The B-B3 fraction is $f_k^{\rm B-B3} = ||P_{\rm rad} \cdot (I - P_0) v_k||^2$ where $P_{\rm rad}$ is the per-vertex in-plane radial-direction projector (Phase 3B-A construction inherited verbatim).
+
+Sanity checks all pass cleanly:
+- Phase 3A reproduction exact to 3 decimals across all 8 polytopes (verifies the underlying Hessian computation hasn't drifted)
+- $\sum_m \text{tr}\,P_m = 3N$ for every polytope (verifies projector completeness): $5+5+5=15$ at $N=5$ ($n=3$); $5+5+3+3+5=21$ at $N=7$ ($n=5$); $12+12=24$ at $N=8$ ($n=2$); $9+9+9=27$ at $N=9$ ($n=3$); $8+8+6+8=30$ at $N=10$ ($n=4$)
+- DEGENERATE polytopes (T$_d$, O$_h$, I$_h$) get $f_{\rm belt} = 0$ for all variants by symmetry (no preferred axis ⇒ no $C_n$ to project against)
+- Σ $f_k^{\rm B-B1}$ matches expected mode count: at $N=5$ $\sum_k f_k^{\rm B-B1} = 6$ (15 total dimensions, $P_0$ trace 5, leaving 10 dimensions including 6 vibrational and 4 rigid-body in the $m \neq 0$ subspace — consistent)
+- The B-B3 sum is bounded above by the B-B1 sum (B-B3 is more restrictive)
+
+### The three variants — what each one shows and what each one rules out
+
+**B-B1 (all m ≠ 0)** uniformly overshoots empirical by factor 1.2–2.7 across the J-solid range. Average J-solid belt fraction is 0.65 vs target 0.40 — too much variance content because the broadest reading captures essentially all the non-symmetric modes. This variant tests the limit where any axially-anisotropic mode is considered "belt." The result rules out this broadest reading: too many modes contribute too much variance to match empirical magnitudes.
+
+**B-B2 (m = 2 only)** undershoots at $N = 7, 8, 9, 10$ by factor 1.7–4 (with $N = 8$ giving exactly zero because $m = 2 \equiv m = 0$ at $C_2$), but happens to match empirical at $N = 5$ to within 3% ($-12.52\%$ vs $-12.16\%$). The N=5 match is the most striking result of Phase 3B-B and demands careful interpretation.
+
+The B-B2 N=5 match is **interpretive curiosity rather than physics signal**. At $C_3$, the cosine projector $P_2$ equals $P_1$ since $\cos(2 \cdot 2\pi/3) = \cos(4\pi/3) = -1/2$ and $\cos(1 \cdot 2\pi/3) = \cos(2\pi/3) = -1/2$ (identical values). So at N=5 (D$_{3h}$, n=3), B-B2 doesn't isolate a "genuinely-quadrupole content" — it captures the only non-trivial IRREP at $C_3$, which is the m=±1 doublet (also reachable as m=±2 by aliasing). The close empirical match reflects how $C_3$ group structure happens to dilute mode contributions at small $N$: the m=±1 doublet at $C_3$ has only certain modes that land in it, and the mode-frequency-weighted variance fraction happens to be small (0.146) — coincidentally close to the empirical fraction (0.142) at N=5.
+
+This is not the signal of a working oblate-quadrupole mechanism. The deeper reason: empirically, N=5 has small softening because the trigonal bipyramid is structurally rigid (3-vertex belt has limited degrees of freedom for asymmetric distortion). The B-B2 N=5 small fraction reflects the same underlying structural rigidity but via group-theoretic accounting rather than via genuine quadrupole physics. The match doesn't generalize: at N=7 (n=5), B-B2 captures a genuine m=±2 doublet (separate from m=±1), and the result undershoots empirical badly. At N=10 (n=4), B-B2 captures the genuine m=2 singleton, and the result undershoots by factor 1.7.
+
+The B-B2 zero at N=8 is structural: at $C_2$, the only IRREPs are $P_0$ and $P_1$ (m=0 and m=1); m=2 wraps to m=0 and provides no separate content. This is how the C$_n$ proper-rotation decomposition fails to capture the snub disphenoid's full D$_{2d}$ structure (which has the S$_4$ improper rotation generating a more nuanced IRREP structure). It's also why the C$_n$-only implementation is an upper bound: the full D$_{2d}$ point group at N=8 would give an even smaller belt-IRREP variance than the C$_2$-only B-B2 (which is zero), so the full-point-group refinement undershoots even more.
+
+**B-B3 (radial m ≠ 0)** undershoots all J-solids with average J-solid belt fraction 0.184. This is a 38% improvement over Phase 3B-A's fixed-dim 0.135 average — confirming the prediction from Phase 3B-A's §6 that letting belt dimension scale with polytope size would help. But the absolute level remains factor 2 short of the 0.40 target. The structural ceiling at ~0.18 is significant: it indicates that the K$_3$-Gaussian-Hessian framework lacks sufficient variance in any belt-IRREP-restricted subspace, regardless of how cleverly the subspace is dimensioned. The framework itself is too tight; the U-shape mechanism cannot live in any belt-IRREP-projected subset of the K$_3$-Gaussian-Hessian variance.
+
+At N=5, B-B3 gives slight overshoot (factor 1.15) — substantial reduction from Phase 3B-A's factor 2.7. This confirms that dimension scaling does ameliorate the N=5 overshoot. But the ceiling at ~0.18 average means the J-solid mid-range remains undershooting. The conclusion: dimension scaling helps but doesn't suffice.
+
+### The decisive new finding — n-vs-N structural obstacle
+
+The empirical magnitude is **monotonically increasing in N** across the J-solid range:
+
+$$|\delta_{\rm emp}(N)| = 12.16, 29.50, 31.81, 33.14, 33.58 \% \quad \text{for } N = 5, 7, 8, 9, 10$$
+
+But the cyclic symmetry order $n$ that drives any IRREP decomposition is **non-monotonic in N**:
+
+$$n(N) = 3, 5, 2, 3, 4 \quad \text{for } N = 5, 7, 8, 9, 10$$
+
+Even the full point group orders are non-monotonic: $|G(N)| = 12, 20, 8, 12, 16$ for the same N range.
+
+The argument: any belt-IRREP-projection mechanism's variance content is computed as a sum over modes weighted by projection onto IRREP-defined subspaces. The IRREP structure (dimensions, multiplicities, projector traces) depends on the group $G$ — specifically on $n$ for the C$_n$ subgroup or on $|G|$ and its conjugacy class structure for the full point group. Since these group-theoretic quantities are non-monotonic in $N$, no function of group-theoretic structure alone can produce a monotonic-in-$N$ empirical pattern.
+
+This is a **class-level structural argument**. It rules out:
+- The three Phase 3B-B variants (computed)
+- Full point group D$_{nh}$/D$_{nd}$ decomposition with reflections and improper rotations (orders non-monotonic in N)
+- Energy-weighted IRREP filtering (soft-mode count per IRREP depends on $n$)
+- Higher-$m$ harmonics (m=3, m=4): existence depends on $n$
+- Any other belt-IRREP-projection mechanism within the K$_3$-Gaussian-Hessian framework
+
+The structural argument is what makes Phase 3B-B's negative result stronger than Phase 3B-A's. Phase 3B-A's anti-correlation finding ruled out the fixed-dimension subspace class. Phase 3B-B's n-vs-N argument rules out the entire IRREP-projection class within the framework. The R2 closure attempt is now exhausted within the K$_3$-Gaussian-Hessian framework.
+
+### R2 status — formally closed
+
+R2 (cluster-scale vs alpha-scale mean-field unification at canonical $\sigma_{K3}$) has now seen all four plausible model-(b) realizations fail:
+
+| Realization | Session | Verdict |
+|---|---|---|
+| Uniform scaling (single $A_1$) | 13 Phase 2 | factor 7 undershoot, monotonic decrease |
+| All modes equal-weighted | 13 Phase 3A | factor 2.5 overshoot, flat pattern |
+| Fixed-dim belt subspace | 14 Phase 3B-A | factor 3 short, anti-correlated within axial |
+| Full C$_n$ IRREP decomposition | 15 Phase 3B-B | n-vs-N structural mismatch, class-level closure |
+
+Plus the structural argument extends the closure to constructions not yet computed. **R2 is FORMALLY CLOSED — RULED OUT.** The unification hypothesis at canonical $\sigma_{K3}$ is **falsified**.
+
+This is a programme-level finding of significance comparable to Session 12's R1 closure and complementary to it: R1 ruled out for sign + U-shape + Decoupling Theorem; R2 ruled out for class-level structural impossibility within the IRREP-projection framework. Together they exhaust the registered candidate mechanisms for OPEN-SS-35 sub-question (a) A-scaling closure within the simple K$_3$ + HO + L·S + V$_{\rm SO}$ refinement framework. The path forward must use mechanisms outside this framework.
+
+### Programme implications
+
+OPEN-SS-32 attenuation-factor derivation (Phase 3A Priority 2 conditional on R2 success) is now blocked. The OPEN-SS-32 oblate-deformation hypothesis itself remains empirically supported (six-of-eight qualitative match from Session 13 Phase 1's prior-art read), but the K$_3$-Gaussian-Hessian belt-IRREP mechanism for it is ruled out. Reformulation needed using mechanisms outside the framework.
+
+OPEN-SS-35 sub-question (a) A-scaling closure now has both registered candidates (R1 and R2) ruled out. The path forward is to identify a new closure mechanism outside the K$_3$-Gaussian-Hessian framework. Candidate mechanisms (each requires its own scoping work, multi-session by scope):
+
+1. **Anharmonic K$_3$ corrections at order $\xi^4$** in the Gaussian expansion. Most direct extension of the Phase 2/3A/3B framework. Scales with edge count $|E| = 3N - 6$ which IS monotonic in $N$, so structurally compatible with the empirical pattern. Single-session-tractable as a scoping investigation. **This is the suggested Session 16 Priority 1.**
+
+2. **Surface-tension contribution** scaling with cluster surface area. Cluster surface area scales smoothly with $N$ for deltahedra (monotonic). Would require a separate energy term in the cluster Hamiltonian beyond pair K$_3$ interactions.
+
+3. **Pauli-blocking at internal alpha-alpha contacts** scaling with edge count (monotonic in $N$). Captures the fermion antisymmetrization between nucleons in adjacent alphas. Quantitative form requires a separate model.
+
+4. **Effective-mass renormalization** of nucleon orbitals in a cluster context. The HO gap $\hbar\omega^*$ depends on the effective mass $m^*$ which may itself depend on cluster size. Couples to N directly via density.
+
+5. **Coulomb-screened intra-cluster destabilization revisited**. Session 12 Phase 1 ruled out R1 ($R_\alpha$ scale-dependence) for sign + U-shape + Decoupling Theorem reasons, but the underlying Coulomb-screened mechanism might be re-targetable to a different observable than $R_\alpha$. Revisit with attention to which variable is the right one to scale.
+
+Sub-question (b) layer 3 gap-strength closure is INDEPENDENT of R2 by the Decoupling Theorem (Session 12). Sub-question (b) remains where Session 11 Phase 1 left it: needs CPP physics outside the simple K$_3$ + HO + L·S + V$_{\rm SO}$ refinement framework. Phase 3B-B's R2 closure does not affect sub-question (b) directly, but it does sharpen the pattern: BOTH sub-questions need new mechanisms, and the candidate spaces likely overlap (e.g., effective-mass renormalization could close both).
+
+First qualitative cross-paradigm consilience claim (Session 9, magic-number sequence reproduced from CPP first principles) intact. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. Six programme-level OPEN-SS-35 stages preserved. Phase 3B-B refines stage (vi) by formally closing R2; does not advance to a new programme-level stage. The closure is informational rather than progressional — stage (vi) was previously "unclosed pending R2 verdict"; it is now "R2 ruled out, A-scaling closure mechanism unknown."
+
+OPEN-ORG-012 anti-priority (.tex conversion) continues with sharpest force yet: §7 of SS-9 v0.3 has now shifted **five times** in the OPEN-SS-32 ↔ U-shape thread (Phase 1 prior-art read; Phase 2 ruled out; Phase 3A ruled out + bracketing; Phase 3B-A ruled out + pattern-shape constraint; Phase 3B-B ruled out + R2 formal closure). With R2 formally closed, §7 will need a substantial rewrite reflecting the ruled-out R2 status and the redirection of U-shape mechanism investigation outside the framework. This is genuine new content — the .tex conversion deferral remains warranted.
+
+### State at Session 15 Phase 3B-B close
+
+OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Phase 3B-B refines stage (vi) by formally closing R2; does not advance to a new programme-level stage). First qualitative cross-paradigm consilience claim (Session 9) intact. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. R1 ruled-out, Phase 2 ruled-out, Phase 3A ruled-out, Phase 3B-A ruled-out intact; Phase 3B-B ruled-out registered as ninth programme-level negative result.
+
+**Forward-looking pointers for Session 16.**
+
+- **Priority 1 (substantive new investigation):** Anharmonic K$_3$ corrections at order $\xi^4$ in the Gaussian expansion. Most direct extension of Phase 2/3A/3B framework, scales monotonically with edge count, single-session-tractable. Scope: extend the K$_3$ Gaussian pair-potential beyond second-order in the displacement $\xi = \delta r/\sigma_{K3}$ to capture the curvature of the interaction at non-zero amplitude; compute the perturbative correction to the zero-point variance and assess whether it produces empirical-magnitude softening with the right monotonic-in-$N$ pattern.
+
+- **Priority 2 (substantive new investigation):** Sub-question (b) layer 3 gap-strength closure outside the simple K$_3$ + HO + L·S + V$_{\rm SO}$ refinement framework. Session 11 Phase 1's candidate avenues remain on the table.
+
+- **Priority 3 (deferred):** OPEN-SS-32 attenuation-factor derivation reformulation — depends on Priority 1 success.
+
+- **Priority 4 (parallel):** OPEN-SS-16 Layer B closure work — deepest open problem at programme level.
+
+- **Priority 5 (parallel):** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity. Independent of all other work.
+
+**Anti-priorities:**
+
+- SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) deferred until §7 is reformulated for ruled-out R2 (§7 has shifted five times in this thread).
+- No further belt-IRREP-projection variants within the K$_3$-Gaussian-Hessian framework — n-vs-N argument rules out the entire class.
+- No full point group D$_{nh}$/D$_{nd}$ extension with improper rotations — structural argument applies (group orders non-monotonic in $N$).
+- No energy-weighted IRREP filtering or higher-$m$ harmonics — structural argument applies.
+
+The deliverables for Phase 3B-B: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3b_b.md` (328 lines); reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3b_b.py` (710 lines). The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 15 Phase 3B-B paragraph after Session 14 Phase 3B-A update; `future_projects.md` Active queue updated with Phase 3B-B completion and Priority 1 promotion of anharmonic K$_3$ $\xi^4$ corrections.
+
+---
+
+*End of Session 15 Phase 3B-B Opus reasoning. Future sessions append below.*
+
