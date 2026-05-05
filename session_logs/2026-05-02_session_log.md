@@ -1592,3 +1592,52 @@ Total: **19 patches landed** on `origin/main` across Session 13 (once 0169 appli
 ---
 
 *Session log Session 13 final close-out entry per §4 discipline. Substantive content: OPEN-ORG-014 registered-and-resolved same-session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; bootup.md Row 7 annotation extended; future_projects.md updated through Session 13; inaugural `handover-SS-9.md` created as Step H demonstration. Nineteen patches total landed on origin/main across Session 13. Three substantive physics deliverables + one reading deliverable + two organizational register-and-resolve cycles + one documentation closure + one canonical-protocol adoption. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 14 Phase 3B-A — Minimal fixed-dim belt-subspace projection RULED OUT; pattern-shape anti-correlation; eighth programme-level negative result (5 May 2026)
+
+**Session 14 trigger and orientation:** Fresh context window. Thomas asked Claude to start where best — Phase 3B-A registered as Session 13 close Priority 1 from the Phase 3A bracketing benchmark with three sharply constrained quantitative targets. No prior Session 14 work present in the repo at start (HEAD = patch 0169). Claude oriented from `bootup.md` §3 (patch flow), Phase 3A predecessor sketch + script + Tier 4 reasoning closing entry, then specified the Phase 3B-A operational definition before coding.
+
+**Patches produced this entry:** 0170 (Phase 3B-A sketch + script substantive deliverable); patch 0171 onward (Steps A–H per §15 protocol).
+
+### Action
+
+Phase 3B-A executed the simplest tractable subphase of Phase 3B specified at Phase 3A §6: full Hessian decomposition (inherited verbatim from Phase 3A) followed by projection of each eigenmode onto a minimal belt subspace. The belt subspace is constructed per axial polytope as the span of three vectors — A$_1$ in-plane radial breathing (monopole), and the two E$_2$ quadrupole patterns cos(2$\varphi$) and sin(2$\varphi$) at each belt vertex. For polytopes with degenerate inertia tensor (T$_d$, O$_h$, I$_h$), no preferred axis exists; the construction sets dim(B) = 0 by symmetry, implementing Reading A's structural commitment. After projecting out the rigid-body subspace (3 translations + 3 rotations) and Gram-Schmidt orthonormalising, dim(B) ≤ 3 per polytope. Belt fraction per mode is $f_k^{\rm belt} = \sum_a |\langle \hat e^a | v_k \rangle|^2 \in [0,1]$, and belt-projected total variance weights each mode's per-edge MSD contribution by $f_k^{\rm belt}$.
+
+**Result.** Phase 3B-A is **RULED OUT** as a complete R2 closure mechanism on two structural grounds:
+
+1. **Magnitude (target a fails).** Average J-solid mid-range belt fraction is 0.135 vs target 0.40 — factor 3 too small at empirical peak. Belt-projected softening at $N_\alpha = 10$ is $-8.2\%$ vs empirical $-33.6\%$. This is a 3.3× improvement over the 1D-monopole-only construction (which would give $f_{\rm belt} \approx 0.04$) but still substantively short.
+
+2. **Pattern shape (anti-correlation).** Belt fraction monotonically *decreases* within axial polytopes from $N_\alpha = 5$ (0.39) through $N_\alpha = 10$ (0.10); empirical magnitude monotonically *increases* across the same range ($-12.2\%$ to $-34\%$). The two patterns are anti-correlated. This is structural: a fixed-dimension belt subspace fully spans small belts (3 vertices at $N_\alpha = 5$ — full radial-displacement subspace covered) and partially spans large belts (8 vertices at $N_\alpha = 10$ — only 3/8 covered). The empirical U-shape requires the opposite scaling.
+
+Targets (b) and (c) — near-zero at regular polytopes, $O_h \ll D_{2d}$ — are met by symmetry construction (DEGEN inertia → dim(B) = 0) rather than as differential tests. Any inertia-degeneracy-aware belt-IRREP construction satisfies them automatically. They do not differentially support Reading A.
+
+The N$_\alpha = 5$ overshoot (model $-33\%$ vs empirical $-12\%$, factor 2.7 too large) is the structurally hardest constraint: at small belts, any sufficient-dimension belt subspace saturates the radial-displacement space and overshoots empirical. This may indicate the U-shape mechanism is **not** purely belt-IRREP-projection of the K$_3$ Gaussian Hessian.
+
+### Cumulative count
+
+**Eighth programme-level negative-result demonstration** in OPEN-SS-35 closure programme (was seven at Session 13 close):
+
+| # | route | session | reason |
+|---|---|---|---|
+| 1 | Route D lattice-shell counting | 5 Phase 2 | shells don't match magic numbers |
+| 2 | Route B-γ K$_3$-mode phase | 7 Phase 2 | $V_{\rm SO}/\hbar\omega \sim 10^{-3}$ |
+| 3 | Route 1b $V_{\rm SO}$ refinement | 10 | saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$ |
+| 4 | Path (i) cluster-surface | 11 Phase 1 | $f_{\rm SO}(r)$ peaks at center |
+| 5 | R1 $R_\alpha$ scale-dependence | 12 | wrong sign + U-shape + decoupled |
+| 6 | Phase 2 model (a) uniform | 13 Phase 2 | factor 7 undershoot, monotonic |
+| 7 | Phase 3A naive full-Hessian | 13 Phase 3A | flat, factor 2.5 overshoot |
+| 8 | **Phase 3B-A fixed-dim belt subspace** | **14 Phase 3B-A** | **mag × 3 short + pattern anti-correlated** |
+
+R2 (cluster-scale vs alpha-scale unification at canonical $\sigma_{K3}$) further weakened: three of four plausible model-(b) realizations have now failed. Phase 3B-B (full character-theory IRREP decomposition with belt-IRREP dimension-scaling) is the sole untested R2 realization within the K$_3$-Gaussian-Hessian framework.
+
+### Forward pointers (Session 15)
+
+**Priority 1:** Phase 3B-B — full IRREP-selective decomposition with character theory. Sharpened constraint from Phase 3B-A: must produce non-monotonic-in-belt-size pattern within axial polytopes; specifically small $\delta_{\rm belt}$ at $N_\alpha = 5$ (empirical $-12\%$) and large at $N_\alpha = 10$ (empirical $-34\%$). If structurally impossible (any belt-IRREP-projection at $N_\alpha = 5$ saturates the 3-vertex belt), R2 is formally ruled out and U-shape mechanism must be sought outside the K$_3$-Gaussian-Hessian framework.
+**Priority 2 (deferred indefinitely):** OPEN-SS-32 attenuation-factor derivation — defer until Phase 3B-B closes.
+**Priority 3 (parallel):** OPEN-SS-16 Layer B closure work.
+**Priority 4 (parallel):** Reading B literature check.
+**Anti-priorities:** SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) — wait for Phase 3B-B closure (§7 has now shifted four times in this thread); do not pursue further fixed-dimension belt-subspace variants (1D, 2D, etc.) — anti-correlation is structural and rules them out collectively; do not add higher-m harmonics as incremental enhancement (cannot fix N$_\alpha = 5$ overshoot, only worsens it).
+
+---
+
+*Session log Session 14 Phase 3B-A entry per §4 discipline. Substantive content: minimal fixed-dim belt-subspace projection RULED OUT on two structural grounds (magnitude × 3 short + pattern-shape anti-correlation); eighth programme-level negative-result demonstration; R2 reduced to one untested realization; sharpened constraint on Phase 3B-B from N$_\alpha = 5$ overshoot structural insight. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
