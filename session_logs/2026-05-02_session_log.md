@@ -1769,3 +1769,85 @@ OPEN-SS-32 attenuation-factor derivation reformulation depends on identifying a 
 ---
 
 *Session log Session 16 Phase 4 entry per §4 discipline. Substantive content: anharmonic K$_3$ $\xi^4$ first-order PT and all-orders Gaussian-average extension RULED OUT; **tenth programme-level negative-result demonstration**; sign theorem (§2.4 of sketch) provides rigorous all-orders closure of Gaussian-K$_3$ framework at fixed cluster geometry; U-shape mechanism investigation redirected to (a) geometric-shift mechanisms beyond R1 — channels R3, R4 — or (b) out-of-framework channels. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+---
+
+## Session 17 Phase 5 — Geometric-shift R3/R4 PASSES SCOPING; sign-orthogonal complement to Phase 4 Gaussian-K$_3$ framework closure; first non-rule-out outcome in five sequential phases (5 May 2026)
+
+### Context
+
+Session 16 Phase 4 formally closed the Gaussian-K$_3$ framework at fixed cluster geometry via the §2.4 sign theorem on $f(s) = (1+s)^{-1/2} - 1 + s/2 > 0$ for $s > 0$, combined with Rayleigh–Ritz: any perturbative or variational improvement of harmonic K$_3$ at canonical geometry produces *more* binding while empirical needs *less*. The Phase 4 handover (§6.1) forward-pointed Priority 1 to cluster-geometry shift mechanisms beyond R1: channels R3 (uniform $R_\alpha(N)$ shift) and R4 (cluster shape distortion). The handover also registered a methodology lesson — apply analytical sign check first, before computation — derived from the Phase 4 result being decided by a one-paragraph sign argument.
+
+### What was done
+
+Phase 5 applied the F1 analytical sign check first, then computational scoping for F2 magnitude capacity and F3 pattern monotonicity. Both R3 and R4 were tested across all eight polytopes ($N = 4, 5, 6, 7, 8, 9, 10, 12$) at canonical $\sigma_{K3} = 1.68$ fm.
+
+### F1 sign — analytical, universal pass
+
+The K$_3$ pair potential $V_{\rm pair}(\delta r) = -B_{\rm pair} \exp(-\delta r^2/(2\sigma^2))$ is symmetric in $\delta r$ around equilibrium. For any displacement $\delta r \neq 0$ (R3) or any non-zero edge distortion $\epsilon$ (R4): $\Delta V_{\rm edge} = B_{\rm pair} \cdot [1 - \exp(-\delta r^2/(2\sigma^2))] > 0$ — positive for any sign of $\delta r$. Empirical J-solid range needs $\Delta E > 0$ (cluster grows → less binding than canonical K$_3$). **F1 PASSES universally for R3 and R4 by Gaussian symmetry alone.**
+
+**Sign-orthogonal contrast with Phase 4.** Phase 4's anharmonic ξ⁴ correction had $\Delta E < 0$ universally by Wick's theorem. Phase 5's geometric shift has $\Delta E > 0$ universally by Gaussian symmetry. The two Gaussian-K$_3$ extension classes are sign-orthogonal — Phase 4 was forced to fail F1, Phase 5 passes F1, both by structural properties of the same Gaussian function. The closure of one class motivates the opening of the other.
+
+### F2 magnitude capacity — passes with substantial overhead
+
+R3 maximum binding loss: $|E| \cdot B_{\rm pair} = 24 \cdot 2.342 = 56.2$ MeV total at $N = 10$ = $5.62$ MeV/α, well above empirical $\sim 1$ MeV/α scale. R3-emp using empirical $R_{\rm pct}$ values delivers $0.04$–$0.28$ MeV/α (J-solid range); R3-lin calibrated to $1$ MeV/α at $N = 10$ requires $\delta R(10) = 1.05$ fm = $44.4$% of $R_{\rm canon}$ — large but not unphysical. R4-flat with $\epsilon_{\rm rms} = 10$% of $R_{\rm canon}$ delivers $\sim 0.05$ MeV/α at $N = 10$. **The bottleneck is which $\delta R(N)$ or $\epsilon_{\rm rms}(N)$ is physically realized by CPP physics, not whether the Gaussian-K$_3$ framework has enough magnitude.**
+
+### F3 pattern — passes for any monotonic parameterization
+
+R3-lin (linear $\delta R(N)$) and R4-flat (constant $\epsilon_{\rm rms}$ with edge-count scaling) both produce monotonically increasing $|\Delta E/\alpha|$ across the J-solid range. R3-lin grows faster (linear-in-$N$ shift); R4-flat grows slowly via $(3N-6)/N$ factor. Functional shape will discriminate between them at the next level of investigation.
+
+### Phase 5 result — POSITIVE SCOPING
+
+**First non-rule-out outcome in five sequential phases** of OPEN-SS-32 ↔ U-shape investigation:
+
+| Phase | Mechanism | Status |
+|-------|-----------|--------|
+| 2 | Uniform-only zero-point softening | RULED OUT |
+| 3A | Naive full-Hessian | RULED OUT |
+| 3B-A | Fixed-dim belt subspace | RULED OUT |
+| 3B-B | Full $C_n$ IRREP decomposition | RULED OUT — R2 FORMALLY CLOSED |
+| 4 | Anharmonic ξ⁴ + all-orders Gaussian | RULED OUT — Gaussian-K$_3$ framework CLOSED |
+| **5** | **Geometric shift R3 + R4** | **PASSES SCOPING** |
+
+R3 and R4 advance to multi-session derivation status. **Phase 5 does NOT claim to derive the U-shape mechanism**; it establishes channel-compatibility (sign + magnitude + pattern) and forward-points to identifying $\delta R(N)$ from CPP first principles.
+
+### Constructive content from Phase 5
+
+- **Sign-orthogonal closure pattern**: Phase 4 closed negative-ΔE mechanisms; Phase 5 opens positive-ΔE mechanisms. Both consequences of the same Gaussian function — its symmetry. The closure of one systematically opens the other. This pattern provides a clean partition of the OPEN-SS-32 candidate space.
+- **R3 magnitude capacity**: $5.62$ MeV/α maximum at $N = 10$, far above empirical scale. Framework permits any required value; CPP physics will realize a fraction.
+- **R3-lin calibration**: $\alpha = 0.175$ fm/(N-4 unit), $\delta R(10) \approx 1$ fm = $44$% of $R_{\rm canon}$ to deliver $1$ MeV/α at $N = 10$. Sets target for first-principles derivation.
+
+### Methodology lesson reinforced
+
+The Phase 4 lesson — **F1 sign analytical check first, before computation** — was applied in Phase 5 from the outset. The analytical sign argument took one paragraph and decided F1 universally before any code was written. Computational scoping was for F2 and F3 only. **This methodology should be the default for any future scoping investigation.** For Gaussian-K$_3$-framework-related questions specifically: any positive-ΔE candidate passes F1 trivially via Gaussian symmetry; any negative-ΔE candidate is ruled out by Phase 4's sign theorem. The Gaussian function's symmetry has effectively partitioned the OPEN-SS-32 candidate space by sign.
+
+### Programme implications
+
+Negative-result count unchanged at **10 programme-level negative results** (no new ruling-out in Session 17). OPEN-SS-35 stages preserved at 6. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. R2 remains formally closed (Session 15). Gaussian-K$_3$ framework at fixed cluster geometry remains formally closed (Session 16). **OPEN-SS-35 sub-question (a) A-scaling closure now has Phase 5 R3 and R4 channels under active scoping investigation — first time since Session 12's R1 closure that the sub-question has a non-ruled-out candidate.** Sub-question (b) layer 3 gap-strength closure INDEPENDENT by Decoupling Theorem (Session 12), unaffected.
+
+§7 of SS-9 v0.3 working draft has now shifted **seven times** in the OPEN-SS-32 ↔ U-shape thread (was 6 at Session 16 close); OPEN-ORG-012 .tex conversion further deferred.
+
+### Forward pointers (Session 18)
+
+**Priority 1 (multi-session derivation):** Identify $\delta R(N)$ functional form from CPP first principles. Candidate physics, each requiring multi-session derivation: (R3-Coulomb) cluster Coulomb repulsion driving $R_\alpha$ outward, CPP-derivable from charge structure of alpha clusters on 600-cell lattice; (R3-Pauli) Pauli blocking at internal alpha-alpha contacts, scales with edge count; (R3-surface) alternative surface-density forms (NOT R1's surface-tension form, ruled out); (R4-shape) spin-orbit cluster contributions with shape dependence. Natural Session 18 first move: R3-Coulomb scoping using simplified CPP charge model, compare to Phase 5 R3-lin calibration ($\delta R(10) \approx 1$ fm), assess Coulomb / Pauli / both.
+
+**Priority 2 (parallel, registered):** Inelastic / out-of-framework channels (Hoyle-state mixing, surface-energy shape dependence, Coulomb cluster-arrangement effects). Less natural Priority 1 than R3-physics-derivation because R3/R4 has known sign/magnitude/pattern compatibility from Phase 5.
+
+**Priority 3 (deferred):** OPEN-SS-32 attenuation-factor derivation reformulation — depends on Priority 1 success.
+
+**Priority 4 (parallel, deferred):** OPEN-SS-16 Layer B closure.
+
+**Priority 5 (parallel, registered):** Reading B literature check.
+
+**Anti-priorities (sharpened from Phase 4):**
+- SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) further deferred — §7 needs reformulation reflecting Phase 5's positive scoping result on top of Phase 4's framework closure on top of Phase 3B-B's R2 closure (§7 has shifted SEVEN times in OPEN-SS-32 ↔ U-shape thread).
+- No further perturbative anharmonic refinement within Gaussian-K$_3$ at fixed geometry — closed Phase 4.
+- No further belt-IRREP-projection variants — closed Phase 3B-B.
+- No full point group $D_{nh}/D_{nd}$ extension — closed Phase 3B-B.
+- No further $V_{\rm SO}$ refinement within simple K$_3$ + HO + L·S framework.
+- No further $R_\alpha(A)$ in surface-tension form (R1).
+- **No phenomenological parameterization of $\delta R(N)$ without CPP-physics grounding.** Phase 5's R3-lin calibration is a target for first-principles derivation, not a model to be fit.
+
+---
+
+*Session log Session 17 Phase 5 entry per §4 discipline. Substantive content: geometric-shift R3 (uniform $R_\alpha$ shift) and R4 (cluster shape distortion) PASS SCOPING — F1 sign by Gaussian symmetry, F2 magnitude capacity well above empirical, F3 pattern monotonic for any monotonic parameterization. **First non-rule-out outcome in five sequential phases.** Sign-orthogonal complement to Phase 4 closure: same Gaussian function generates Phase 4's negative ΔE (closure) and Phase 5's positive ΔE (opening) in different framings. R3 and R4 advance to multi-session derivation status; next phase identifies $\delta R(N)$ from CPP physics (Coulomb, Pauli, surface-density alternative, spin-orbit). Methodology lesson from Phase 4 reinforced: F1 sign analytical check applied first, computation only for F2/F3. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. Programme negative-result count unchanged at 10.*
