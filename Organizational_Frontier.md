@@ -1,7 +1,7 @@
 # CPP Organizational Frontier
 
 **Location:** `/CPP/Organizational_Frontier.md`
-**Last updated:** 5 May 2026 (Session 13 close: OPEN-ORG-013 registered AND resolved in the same session — `bootup.md` commit-flow content promoted to top-level §3 with READ FIRST IF GENERATING PATCHES callout, Step-1 priority table extended with "Don't skip" annotation column, cascade-renumber of §3.5 → §4.5 and §4 → §5 through §14)
+**Last updated:** 5 May 2026 (Session 13 close: OPEN-ORG-014 registered AND resolved in the same session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; demonstrated via inaugural `handover-SS-9.md`. Mirrors OPEN-ORG-013's same-session register-and-resolve pattern.)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Rationale:** See `programmatic_decisions/PD-003-organizational-frontier-registry.md`
 **Companion registry:** `Research_Frontier.md` (theoretical/physics problems)
@@ -440,6 +440,47 @@ Copy this template for new entries. Fields in `{brackets}` are placeholders.
 # §3 — Resolved Organizational Problems
 
 *(Resolved entries accumulate here with resolution-date and reference to the closing commit.)*
+
+## OPEN-ORG-014: Replace four-item handover checklist with sequenced 8-step protocol; add Step H paste-ready handover document
+
+**Status:** RESOLVED — 5 May 2026 (patch 0169, this same Session 13 close, building on the OPEN-ORG-013 same-session register-and-resolve pattern)
+**Identified:** 5 May 2026 Session 13 close, after Thomas asked at session close whether the transcript and other documentation-discipline artifacts had been produced. Discovery: Tier 2 (transcript-SS-9.md transactions 283–317) and Tier 4 (reasoning-SS-9.md Phase 1, 2, 3A entries) had been silently skipped across all three Session 13 phases despite the work being substantive paper-scoped reasoning. Thomas surfaced the gap; patch 0168 retroactively closed Tiers 2 and 4. The structural failure mode was then named: the §15 four-item checklist exists but does not reliably fire because each item is independently auditable rather than mechanically sequenced, and the §4-vs-§15 reconciliation distributes the handover function across multiple files rather than concentrating it in a single paste-ready artifact.
+**Priority at resolution:** HIGH (the failure mode caused three consecutive missed Tier 2/Tier 4 captures within a single session, and would have caused a fourth at session close had Thomas not asked; cumulative session-time cost across the programme is substantial)
+
+**Originating context:** Session 13 produced three substantive paper-scoped phases (Phase 1 prior-art read, Phase 2 uniform-scaling RULED OUT, Phase 3A naive full-Hessian RULED OUT) plus one organizational register-and-resolve cycle (OPEN-ORG-013 bootup.md restructure). At the close of each phase, a session log entry (Tier 1) and a development-SS-9.md vignette (Tier 3) were committed correctly. But Tier 2 (transcript-SS-9.md transaction pointer-map) and Tier 4 (reasoning-SS-9.md verbatim Opus reasoning narrative) were skipped at every phase close. The pattern: Tiers 1 and 3 are visually salient (session log is the file Thomas writes session-close commands into; vignettes are narrative prose); Tiers 2 and 4 are less visually salient (pointer-maps look mechanical; reasoning files are append-only at the bottom of long files). The §15 four-item checklist did not distinguish between "salient" and "non-salient" items, and the §4 reconciliation paragraph muddied the question of whether Tiers 2 and 4 were required for in-progress work or only for Trigger 2 paper-completion cycles.
+
+This is the second consecutive same-session register-and-resolve pattern. OPEN-ORG-013 surfaced the bootup.md commit-flow visibility failure and closed it in patches 0166–0167; OPEN-ORG-014 surfaces the §15-handover protocol failure and closes it in patches 0168–0169. The pattern is now established: when Thomas surfaces a recurring documentation-discipline failure at session close, the right response is in-session restructure of the canonical mechanism, not deferral to a future session.
+
+**Problem:** Three concrete failure modes the four-item checklist did not prevent:
+
+1. **Salience asymmetry across the four items.** Items 1 (development + handover) and 2 (registry updates) are visually salient and got executed reliably across Sessions 5–13. Item 3 (reviewer artifacts) and item 4 (protocol/OS updates) only fire when there is content in those classes, so their N/A status was implicit. But Item 1's "development-[S]-[N].md" component was implicitly satisfied by the session log entry (Tier 1) under §4 reconciliation, which left Tier 2 and Tier 4 (canonical Opus reasoning) without a checklist anchor at all. Tiers 2 and 4 are *functionally* part of Item 1 but *checklist-procedurally* invisible.
+2. **§15-vs-§4 reconciliation tension.** §4 said "session log replaces handover-[S]-[N].md for in-progress work"; §15 said "produce both development-[S]-[N].md and handover-[S]-[N].md"; the reconciliation paragraph's three-page treatment of which-rule-fires-when produced a procedural ambiguity that Claude resolved by defaulting to whichever subset was most visible. Tiers 2 and 4 (transcript pointer-map and reasoning) were neither in the four-item checklist nor in the §4 reconciliation rules — they lived only in §4's body discussion of the four-tier discipline, which was structurally separated from §15.
+3. **No paste-ready handover artifact.** Bootup.md §9.5 directed new sessions to look for handover-[S]-[N].md as the first concrete action after Step 0, but for in-progress work the §4 reconciliation said no such file exists. The next session's bootup-pass therefore terminates with "no handover; fall back to scanning session log entries + Tier 4 reasoning + Research_Frontier OPEN entry" — distributed sources requiring synthesis. The handover function was nowhere consolidated.
+
+**Resolution as adopted (patch 0169):** Three structural changes to `templates/operating_system.md` §15:
+
+1. **Four-item preservation checklist replaced by 8-step handover sequence.** Each step is explicitly numbered (A–H) and has a definite trigger and completion criterion. Items that are N/A this session are explicitly marked N/A in Step H's audit table — never silently skipped. The 8 steps are: A (Tier 1 session log), B (Tier 2 transcript pointer-map), C (Tier 3 vignette), D (Tier 4 verbatim reasoning), E (registries — 9 individually audited), F (reviewer artifacts), G (protocol/OS updates), H (paste-ready handover document).
+
+2. **Step H added as the canonical session-close artifact.** A 80–120 line concentrated forward-looking document, created or overwritten as `series_<name>/papers/<ID>/documentation_suite/handover-<ID>.md` (paper-scoped) or `session_logs/handover-current.md` (cross-paper / methodological). Includes: repository state (HEAD hash, highest patch number), one-paragraph state-of-paper summary, forward queue with priorities and anti-priorities, pointers to detailed sources (last session log entry, latest Tier 4 reasoning, active sketches/scripts, live registry entries), per-step audit table for Steps A–G (✓ or N/A with brief note), recent session count, quick-start instructions for next session. Designed for direct paste into the new context window.
+
+3. **§4-vs-§15 reconciliation paragraph deleted.** The 8-step sequence incorporates §4's four-tier discipline directly into Steps A–D; there is no longer a separate "session log replaces handover" rule. Both produced; Step H is the new canonical "first artifact next session reads" replacing both the legacy `handover-[S]-[N].md` artifact (for in-progress papers) and the legacy "session log IS the handover" rule (for cross-paper work). Trigger 2 paper-completion cycles produce the documentation suite *in addition to* Steps A–H, not as a replacement.
+
+Plus updates to:
+- Anti-patterns list extended with: "half-firing the protocol" (silent omission rather than explicit N/A); "producing Step H as inline chat text instead of committed file"; "treating auto-generated session summary as substitute"; "bundling registries without per-registry audit"; "skipping Step H because Steps A–G have it covered."
+- `bootup.md` Step-1 priority table Row 7 (`templates/operating_system.md`) annotation extended to call out §15 by name with the Trigger 1 vocabulary ("execute handover protocol") and the instruction to execute Steps A–H exactly as specified rather than improvising or substituting chat summary for Step H.
+- `templates/operating_system.md` §15 Maintenance Cadence noted that the 8-step sequencing was adopted 5 May 2026 Session 13 close per OPEN-ORG-014 register-and-resolve; future major refinements warrant inline edits with cross-reference to the originating OPEN-ORG entry.
+
+**Demonstration:** Patch 0169 also produces the actual `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` for Session 13 close as the inaugural Step H artifact, demonstrating the 8-step protocol end-to-end and providing the next-session paste-doc that is the visible benefit of the restructure.
+
+**Closing commit reference:** patch 0169 in this same session, immediately following the OPEN-ORG-014-precedent patch 0168 (Tier 2 + Tier 4 retrospective closure for Session 13). Single sandbox commit modifies `templates/operating_system.md` (§15 substantial restructure), `bootup.md` (Row 7 annotation extension), `Organizational_Frontier.md` (this entry's status block), and creates `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (inaugural Step H). Also updates `future_projects.md` (the long-stale file flagged in the same audit that surfaced OPEN-ORG-014).
+
+**Cycle time:** Surfaced at Session 13 close after the Tier 2/4 gap was discovered; resolved in the immediately following patch 0169 within the same conversation context window. Same-session register-and-resolve pattern, mirroring OPEN-ORG-013.
+
+**History:**
+- 5 May 2026 Session 13 close — Surfaced after Thomas asked whether the transcript and other documentation-discipline artifacts had been produced, and the gap was discovered to span all three Session 13 phases (Tiers 2 and 4 silently skipped). Patch 0168 retroactively closed Tiers 2 and 4. Thomas then proposed the canonical handover protocol with paste-ready handover document as the structural fix; OPEN-ORG-014 was registered to capture the reasoning trail.
+- 5 May 2026 Session 13 close — RESOLVED via patch 0169 in the immediately following commit. The 8-step sequence replaces the four-item checklist; Step H paste-ready handover added; §4-vs-§15 reconciliation tension resolved by integration; demonstration via inaugural handover-SS-9.md. Same-session register-and-resolve pattern mirroring OPEN-ORG-013.
+
+---
 
 ## OPEN-ORG-013: Promote `bootup.md` commit-flow section to top-level §3 with READ FIRST IF GENERATING PATCHES callout
 

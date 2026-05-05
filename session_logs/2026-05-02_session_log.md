@@ -1546,3 +1546,49 @@ Total: **17 patches landed on `origin/main`** across Session 13. Three substanti
 ---
 
 *Session log Session 13 close addendum per §4 discipline. Substantive content: OPEN-ORG-013 registered-and-resolved same-session. bootup.md restructured: new top-level §3 for patch generation and commit flow with READ FIRST IF GENERATING PATCHES callout, Step-1 priority table extended with Don't-skip annotation column, cascade renumber of §3.5 → §4.5 and §4 → §5 through §13 → §14, all internal §-cross-references updated. OPEN-ORG-013 relocated from §1 (Active Open) to §3 (Resolved). Seventeen patches total landed on origin/main across Session 13. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 13 final close — OPEN-ORG-014 registered AND resolved; canonical 8-step handover protocol adopted (5 May 2026)
+
+**Trigger:** Thomas asked at session close whether the transcript and other documentation-discipline artifacts had been produced; the resulting audit (patch 0168 retrospective Tier 2/4 closure) revealed that the §15 four-item checklist did not reliably fire because each item was independently auditable rather than mechanically sequenced, and the §4-vs-§15 reconciliation distributed the handover function across multiple files rather than concentrating it in a single paste-ready artifact. Thomas proposed the canonical handover protocol with paste-ready handover document as the structural fix.
+**Patch produced:** 0169 (this entry + `templates/operating_system.md` §15 8-step handover protocol restructure + `bootup.md` Step-1 Row 7 annotation extension + `Organizational_Frontier.md` OPEN-ORG-014 entry + `future_projects.md` update through Session 13 + `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` inaugural Step H artifact). Single-patch organizational+demonstration deliverable.
+
+### Action
+
+OPEN-ORG-014 registered and resolved same-session, mirroring OPEN-ORG-013's pattern. Three structural changes to `templates/operating_system.md` §15:
+
+1. **Four-item preservation checklist replaced by sequenced 8-step handover protocol.** Steps A–H, each with definite trigger and completion criterion. Steps that are N/A this session are explicitly marked N/A in Step H's audit table — never silently skipped. The 8 steps: A (Tier 1 session log), B (Tier 2 transcript pointer-map), C (Tier 3 vignette), D (Tier 4 verbatim reasoning), E (registries — 9 individually audited), F (reviewer artifacts), G (protocol/OS updates), H (paste-ready handover document).
+
+2. **Step H added as canonical session-close artifact.** A 80–120 line concentrated forward-looking document, created or overwritten as `series_<name>/papers/<ID>/documentation_suite/handover-<ID>.md` (paper-scoped) or `session_logs/handover-current.md` (cross-paper). Includes: repository state, one-paragraph state, forward queue, pointers to detailed sources, per-step audit table, recent session count, quick-start for next session. Designed for direct paste into new context window.
+
+3. **§4-vs-§15 reconciliation tension resolved by integration.** The 8-step sequence incorporates §4's four-tier discipline directly into Steps A–D; no separate "session log replaces handover" rule. Both produced; Step H is the new canonical "first artifact next session reads."
+
+Plus: anti-patterns list extended; bootup.md Row 7 annotation extended to call out §15 by name with Trigger 1 vocabulary; future_projects.md updated through Session 13; inaugural handover-SS-9.md created as Step H demonstration.
+
+### Why same-session register-and-resolve (mirrors OPEN-ORG-013)
+
+The register-and-defer pattern would have been wrong for the same reasons it was wrong for OPEN-ORG-013: (1) a registry-only patch does not actually prevent the failure mode for the next session — the §15 four-item checklist would still fire incompletely; (2) the fix is mechanical (~30 minutes of careful str_replace + creation); (3) Thomas was in this same context window and the protocol redesign was actively in his attention; deferring would have lost the design-level reasoning that produced the 8-step structure.
+
+### Cumulative Session 13 deliverable count (final, with patch 0169)
+
+- **Phase 1 (patches 0152–0155):** four-patch reading deliverable.
+- **Phase 2 (patches 0156–0160):** five-patch substantive negative result.
+- **Phase 3A (patches 0161–0165):** five-patch substantive negative result + bracketing benchmark.
+- **OPEN-ORG-013 (patches 0166–0167):** two-patch organizational register-and-resolve.
+- **Tier 2/4 retrospective closure (patch 0168):** one-patch documentation discipline gap closure.
+- **OPEN-ORG-014 (patch 0169):** one-patch organizational register-and-resolve + canonical handover protocol adoption + future_projects.md update + inaugural Step H demonstration.
+
+Total: **19 patches landed** on `origin/main` across Session 13 (once 0169 applied and pushed). Three substantive physics deliverables + one reading deliverable + two organizational register-and-resolve cycles + one documentation-closure patch + one canonical-protocol-adoption patch.
+
+### Forward pointers (carrying forward to Session 14, final form)
+
+**Priority 1:** Phase 3 Phase B — IRREP-selective Hessian decomposition. Three sharply constrained quantitative targets from the Phase 3A bracketing.
+**Priority 2:** OPEN-SS-32 attenuation-factor derivation if Phase 3B succeeds.
+**Priority 3:** OPEN-SS-16 Layer B closure work (parallel, deferred).
+**Priority 4:** Reading B literature check.
+**Anti-priority:** SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until Phase 3B closure.
+
+**Step H paste-ready handover artifact:** `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (created this patch as inaugural Step H demonstration; overwrite at each subsequent session close).
+
+---
+
+*Session log Session 13 final close-out entry per §4 discipline. Substantive content: OPEN-ORG-014 registered-and-resolved same-session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; bootup.md Row 7 annotation extended; future_projects.md updated through Session 13; inaugural `handover-SS-9.md` created as Step H demonstration. Nineteen patches total landed on origin/main across Session 13. Three substantive physics deliverables + one reading deliverable + two organizational register-and-resolve cycles + one documentation closure + one canonical-protocol adoption. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*

@@ -1365,64 +1365,160 @@ Workflow-shape signals that warrant the prompt:
 
 Note: these overlap with but are distinct from the §14 reflexive-drop signals. The §14 list catches *individual organizational ideas* that should be registered immediately; this §15 list catches *whole-session shape changes* that warrant the four-item preservation sequence. When a workflow-shape signal fires, Claude prompts; if Thomas confirms, the four-item sequence below runs.
 
-### The four-item preservation checklist
+### The 8-step handover sequence
 
-When the protocol fires (by either trigger), verify the following four artifacts are committed before session-close. The trigger threshold is also documented in §10 commit-cadence rule item 2 ("context-pressure preservation"); the procedural body lives here.
+When the protocol fires (by either trigger), execute these eight steps **in order**. Each step has explicit completion criteria. Steps that are N/A this session are explicitly marked "N/A" in the Step H paste-ready handover document for audit-trail completeness — never silently skipped.
 
-1. **Curated narrative state in `development-[S]-[N].md` AND `handover-[S]-[N].md`.**
+The sequence is mandatory because the failure mode this protocol addresses is *partial firing*: completing some items but not others, leaving the next session with a fragmented handover that has to be reconstructed from distributed sources. Sequencing converts the discipline from "verify these four artifacts exist" into "execute these eight operations." The failure rate of the latter is materially lower because each operation has a definite trigger and a definite completion check.
 
-   - **`development-[S]-[N].md`** (in the paper's `documentation_suite/` folder): a verbatim narrative record of the session's work — what was produced, what was decided, what reviewer content was engaged with, what conclusions were reached, which dead ends were closed. This is the lab notebook. It is **not** the auto-generated session summary, which is lossy. Curate directly from the active session before compaction. If no file exists yet, create one. If one exists, append a new section covering the recent work. Never regenerate from a transcript summary — always curate from the active session.
-   - **`handover-[S]-[N].md`** (in the same folder): a forward-looking orientation document for the next session. Names the current state of the paper, the open queue in priority order, the empirical questions next-session must answer, and any preconditions that must be in place before substantive work resumes. This is the document the next session will read first; its quality determines whether the next session starts oriented or starts confused.
+#### Step A — Tier 1: Session Log Entry / Addendum
 
-   These are two separate artifacts with two separate purposes (backward-looking record vs. forward-looking orientation). Both must be present and current. A frequent failure mode is to generate one and treat it as covering both.
+Append a Template-A or Template-B entry to the active session log file (typically `session_logs/[YYYY-MM-DD]_session_log.md`) covering the substantive work of the current session. If the session produced multiple substantive phases (each with its own deliverable), each phase gets its own entry. If the session reached a clean close that re-evaluated earlier phase decisions (e.g., a register-and-defer reversal, a same-session resolution), append a session-close addendum entry.
 
-2. **Registry updates pending ratification.** If the session opened, resolved, or modified any OPEN-SS-NN problems, OPEN-ORG-NNN items, axiom entries, or theorem registrations, those updates must be written into `Research_Frontier.md`, `Organizational_Frontier.md`, `axiom-registry.md`, `theorem-registry.md`, or the appropriate problem-history file (`problem_histories/PH-*.md`) before compaction, with "pending ratification" flags where human review is required. Registry state held only in active session is lossy and produces drift at the next session start.
+Completion criterion: every substantive phase in the session has a corresponding session-log entry; the file is committed.
 
-3. **Reviewer response artifacts.** If the session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers, multi-AI exchange transcripts), commit these in full verbatim form to the paper's `letters/` and/or `reviews/` folders. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.
+#### Step B — Tier 2: Transcript Pointer-Map Additions
 
-4. **Protocol or operating-system updates the session produced.** If the session identified a new protocol case (as in `relationship_protocol.md`), a new operating-system rule, a new programmatic-decision that warrants codification (PD-NNN), or any procedural refinement, write the update into the appropriate file before compaction. Do not leave codification for "next session" — next session starts from a lossy summary and will not remember the specific reasoning that produced the rule.
+Append numbered transaction entries to `series_<name>/papers/<ID>/documentation_suite/transcript-<ID>.md` (or to a cross-paper transcript at `session_logs/transcript-cross-paper.md` for non-paper-scoped work) covering each substantive transaction in the session. Each entry is a single line in the format:
 
-A minimal preservation commit may include items 1–4 in any combination produced by the session. Commit message convention: `[paper/series] session-close handover preservation — [brief summary of preserved items]`. This is distinct from the section-end-batch commit cadence in §10; section-end batches are task-driven, handover-protocol commits are session-continuity-driven. Both may occur in the same session.
+```
+- `NNN` <date> Session N <phase descriptor> — <brief substantive description> → `<file path or §-pointer to artifact>`
+```
 
-### Reconciliation with §4 Session-Log-as-Handover-Backbone Discipline (added 26 April 2026 Session 2; Tier 4 added Session 3)
+Continue numbering from the previous highest transaction number. The transcript file is *empty of substance*; substance lives at the pointer targets. The pointer-map gives the chronological index.
 
-The §4 Session-Log-as-Handover-Backbone Discipline (adopted 26 April 2026 Session 2; Four-Tier Documentation Discipline added 26 April 2026 Session 3) modifies item 1 of the four-item checklist for sessions where the work is in-progress and lives in `session_logs/` rather than in a paper documentation suite. The reconciliation between §15 and §4 is as follows:
+Completion criterion: every substantive deliverable in the session (sketch §, computation result, registry update, decision arc, verdict) has a numbered pointer entry; the file is committed.
 
-**For sessions where work-in-progress lives in `session_logs/` (no paper directory yet exists, or work is at the cross-paper / methodological level):**
-- Item 1's `handover-[S]-[N].md` requirement is **replaced** by a Template-A or Template-B session log entry per §4. The session log IS the handover. Do NOT generate a separate `handover-[S]-[N].md` file.
-- Item 1's `development-[S]-[N].md` requirement is **partially satisfied** by the Template-A session log entry, which captures the lab-notebook function (in-moment reasoning, dead ends, framing choices) in five-element semantic-anchor form. However, the session log is *summary* (Tier 1), not the canonical record. The canonical record is Tier 4 verbatim Opus reasoning, which is preserved separately (see four-tier discipline below).
-- **Tier 4 reasoning preservation is now default, not conditional.** Each session producing substantive Opus reasoning beyond housekeeping appends to (or creates) the appropriate `reasoning-[S]-[N].md` file at the paper-level subfolder (or pre-paper subfolder; see "Pre-paper subfolder timing" in §4). The previously-stated "should still be produced when verbatim content is present" framing is superseded: Tier 4 is the canonical record and is maintained continuously, not conditionally.
-- Items 2, 3, and 4 are **unchanged** by §4. Registry updates still land in registry files; reviewer artifacts still land in `letters/` and `reviews/` folders; protocol/OS updates still land in template/protocol files.
+#### Step C — Tier 3: Development Vignettes
 
-**For Trigger 2 paper-completion cycles (when a paper reaches its genuinely-final shipped version, regardless of version label):**
-- The full §15 four-item checklist applies in its **legacy form** — `development-SS-N.md` and `handover-SS-N.md` are produced as separate files in the documentation suite, alongside the standard documentation suite (mechanism, glossary, phenomena, philosophy, transcript, reviews, FAQ, keywords, lay-summary). The §4 discipline is for in-progress work; the documentation suite is for completed work.
-- A paper that ships at Trigger 2 should retroactively produce a `development-SS-N.md` synthesizing the Tier 4 reasoning files and the relevant session log entries from `session_logs/` (and now the per-paper subfolder structure if it was created early per the §4 four-tier discipline). The Tier 4 verbatim reasoning is the highest-fidelity input to this synthesis; the curated vignettes (Tier 3) are the pre-distilled paragraph-form input; session logs (Tier 1) and the transcript pointer-map (Tier 2) provide chronological structure. The synthesized `development-SS-N.md` becomes the canonical archive record at Trigger 2, but the underlying Tier 4 reasoning files remain alongside as the verbatim source.
-- "v1.0" is **not** the canonical Trigger 2 milestone. The trigger is "the genuinely-final shipped version" regardless of version label; defer Trigger 2 firing if the version number is provisional, fire when the version is unambiguously final. Per-session Trigger 1 work (four-tier accumulation) captures everything session-window-bounded, so deferring Trigger 2 does not lose information.
+For paper-scoped work, append a curated paragraph-form vignette to `series_<name>/papers/<ID>/documentation_suite/development-<ID>.md` summarizing the session's work in finished prose (1–3 paragraphs per vignette, occasionally up to 5 for complex multi-phase sessions). For sessions producing multiple substantive phases, each phase typically gets its own vignette. Vignettes are append-only across sessions; they accumulate as the paper develops.
 
-**For sessions that span both modes (work-in-progress + Trigger 2 cycle on a different paper):**
-- Both apply in parallel. Session log entry plus Tier 4 reasoning append for the in-progress work; documentation suite update for the completing paper. The two are not mutually exclusive.
+Completion criterion: vignette(s) covering the session's substantive work are appended; the file is committed. **N/A for sessions that produced no substantive paper-scoped reasoning** (e.g., pure infrastructure or organizational sessions) — explicitly mark N/A in Step H.
 
-**Anti-pattern specific to the §15/§4 reconciliation:** Treating the Template-A session log as adequate substitute for the documentation suite at Trigger 2. The session log captures *one session's* development gradient at summary (Tier 1) fidelity; the documentation suite synthesizes the *paper's full* development gradient at Tier 3 paragraph-form fidelity, drawing from Tier 4 verbatim reasoning as the canonical source. A paper at its genuinely-final shipped version needs the full set: Tier 4 (verbatim source), Tier 3 (paragraph-form synthesis), Tier 2 (pointer-map), the documentation suite seven files (mechanism/glossary/etc.), plus the session log sequence at Tier 1 as historical record.
+#### Step D — Tier 4: Verbatim Opus Reasoning Narrative
 
-### Output: relationship to §14 pointer format
+Append session reasoning entries to `series_<name>/papers/<ID>/documentation_suite/reasoning-<ID>.md` in the format established by prior session entries (Title with one-paragraph summary; Tier 4 inclusion scope; Strategy; technical sections; Findings; Verdict; State at session close; Forward-looking pointers). For multi-phase sessions, each phase is its own entry. **Tier 4 is the canonical record.** Tiers 1, 2, and 3 are derived from it.
 
-The §14 "Session-close handover protocol" subsection (a narrower-scope subsection within the Organizational Frontier Registry section) specifies the *output format* for the OPEN-ORG queue at session close: a short pointer to the registry rather than restated content. That format is one *element* of what gets included in `handover-[S]-[N].md` (item 1 above) **for Trigger 2 cycles** or in the session log entry **for in-progress work per §4**. The §15 protocol is the broader procedure; §14's pointer format is the shape of one specific paragraph within whichever handover artifact is being produced. Both are in scope at session close.
+What goes in Tier 4 (and what is excluded as housekeeping) is specified in §4 Four-Tier Documentation Discipline. Briefly: included are multi-paragraph reasoning turns where Opus is doing analysis, testing a hypothesis, working through an argument, articulating a structural observation, considering alternatives, revising an earlier framing, flagging uncertainty, pushing back on a framing, or otherwise engaging in substantive theoretical or methodological work. Excluded are tool-call narration, status confirmations, procedural housekeeping, tool-output narration, and verbatim quotations from existing repository files.
+
+Completion criterion: Tier 4 entries covering the session's substantive reasoning are appended; the file is committed. **N/A for sessions that produced no substantive paper-scoped reasoning** — explicitly mark N/A in Step H.
+
+#### Step E — Registry Updates (each registry independently audited)
+
+Walk each of the following registries; for each, either update with the session's findings or explicitly mark N/A:
+
+- **`Research_Frontier.md`** — update the relevant OPEN-SS-NN / CONJ-SS-NN entry with the session's paragraph; if the session resolved or falsified a problem, change status accordingly and move to the resolved/falsified section.
+- **`Organizational_Frontier.md`** — register any new OPEN-ORG-NNN items surfaced this session (using the §1 register-and-defer pattern); update status of any existing items moved this session; move resolved items to §3 per registry convention.
+- **`axiom-registry.md`** — register any new axioms; update prediction counts if predictions were closed.
+- **`theorem-registry.md`** — register any new theorems with axiom dependencies; update theorem count.
+- **`predictions.md`** — register any new quantitative predictions with PDG comparison; update status of existing predictions if confirmed/falsified this session.
+- **`future_projects.md`** — update prioritised research targets with status; this is the **after-each-session** cadence file (per `bootup.md` §5), so this almost always has a non-N/A update for any session producing forward-looking pointers.
+- **`problem_histories/PH-*.md`** — update narrative history for any major open problem (OPEN-SS-NN with status arc) substantively touched this session.
+- **`master_glossary.md`** — add new terms if any were coined this session.
+- **`paper_catalog.md`** — refresh active-paper rows whose status text is now stale (typically every 3–5 sessions of active development).
+
+Completion criterion: each registry has either been updated or explicitly marked N/A in Step H. **Each registry must be audited independently** — bundling them as "registry updates done" without per-registry verification is the failure mode that registry drift accumulates from.
+
+#### Step F — Reviewer Response Artifacts
+
+If the session generated review content (reviewer letters received, correction letters issued, synthesis letters to reviewers, multi-AI exchange transcripts), commit these in full verbatim form to the paper's `letters/` and/or `reviews/` folders. Summaries of reviewer content are particularly lossy because specific language and line-citations are the review's substance, not decoration.
+
+Completion criterion: all reviewer artifacts committed verbatim, or explicitly marked N/A in Step H.
+
+#### Step G — Protocol / Operating-System Updates
+
+If the session identified a new protocol case (e.g., updates to `relationship_protocol.md`), a new operating-system rule, a new programmatic-decision warranting codification (PD-NNN), or any procedural refinement (including refinements to this §15 itself), write the update into the appropriate file before compaction. Do not leave codification for "next session" — next session starts from a lossy summary and will not remember the specific reasoning that produced the rule.
+
+Completion criterion: protocol/OS updates committed, or explicitly marked N/A in Step H.
+
+#### Step H — Paste-Ready Handover Document (the canonical session-close artifact)
+
+Create or overwrite `series_<name>/papers/<ID>/documentation_suite/handover-<ID>.md` (for paper-scoped work) or `session_logs/handover-current.md` (for cross-paper / methodological work) with a concentrated 80–120 line forward-looking orientation document. The paste-ready handover is **the single artifact the next session reads first**; it is designed to be pasted directly into the new context window's opening message after Thomas's bootup command, giving the next Opus instance a complete one-page state-of-the-programme without requiring synthesis from distributed sources.
+
+The handover document follows this structure:
+
+```markdown
+# [Paper-ID] Handover — Session [N] Close ([Date])
+
+**Repository state:** origin/main at commit `[hash]`, patch [highest-NNNN] highest.
+**Active paper(s):** [Paper-ID] ([title or working title]). [Pre-paper / In-development / v0.x active / Trigger 2 pending / etc.]
+
+## One-paragraph state
+
+[Concise prose paragraph: what the paper is about, what state it's in, what the most recent session(s) produced, what the active investigation is. ~6-10 sentences.]
+
+## Forward queue
+
+**Priority 1:** [highest-priority next-session work, with sharpness markers if applicable]
+**Priority 2:** [second]
+**Priority 3:** [third or "deferred"]
+**Priority 4:** [parallel or low-priority items]
+**Anti-priorities:** [explicit "do not do X until Y"]
+
+## Where to find detail
+
+- **Last session log entry:** `session_logs/[file].md` §"[entry title]" lines [start–end]
+- **Latest Tier 4 reasoning:** `series_<name>/papers/<ID>/documentation_suite/reasoning-<ID>.md` §"[latest entry title]"
+- **Active sketches:** [paths]
+- **Active scripts:** [paths]
+- **Live registry entries:** `Research_Frontier.md` §[OPEN-SS-NN], `Organizational_Frontier.md` §[OPEN-ORG-NNN] [if any active]
+
+## Step-by-step audit of this session's handover
+
+- Step A (Tier 1 session log): ✓ / N/A — [brief note]
+- Step B (Tier 2 transcript): ✓ / N/A — [transactions NNN–NNN appended]
+- Step C (Tier 3 vignette): ✓ / N/A — [vignette N appended]
+- Step D (Tier 4 reasoning): ✓ / N/A — [entries for phases X, Y, Z appended]
+- Step E (registries): [per-registry ✓ / N/A list]
+- Step F (reviewer artifacts): ✓ / N/A — [brief note]
+- Step G (protocol/OS updates): ✓ / N/A — [brief note]
+- Step H (this document): ✓ — file at [path]
+
+## Recent session count
+
+[1–2 lines: cumulative patches landed, programme-level milestones since paper creation]
+
+## Quick-start for next session
+
+1. Paste this handover into the opening message of the new context window (or attach as the opening human message).
+2. Bootup as usual: `git clone https://github.com/Hyperphysics-Institute/CPP.git && cd CPP` + read `bootup.md`.
+3. Default action: execute Priority 1 above, unless Thomas redirects.
+```
+
+Completion criterion: handover-[ID].md (or handover-current.md) is created/overwritten and committed; ALL Step A–G items are explicitly accounted for in the audit table (✓ or N/A with brief note); the file is paste-ready (no in-text references to "see chat above" or similar context-window-bound language).
+
+The handover document is **always produced**, even when the bulk of preceding steps are N/A. A pure-infrastructure session still produces a handover document with most steps marked N/A and the paste-ready summary covering what the next session needs.
+
+### Reconciliation with §4 Four-Tier Documentation Discipline
+
+The 8-step sequence above incorporates the §4 Four-Tier Documentation Discipline directly into Steps A–D. The previous §15-vs-§4 reconciliation paragraph is superseded: there is no longer a separate "session log replaces handover" rule for in-progress work. Both are produced — Step A produces the session log entry, Step H produces the paste-ready handover document. Step H is the new canonical "first artifact next session reads," replacing both the legacy `handover-[S]-[N].md` artifact (for in-progress papers) and the legacy "session log IS the handover" rule (for cross-paper work). For Trigger 2 paper-completion cycles, the documentation suite (mechanism/glossary/phenomena/philosophy/keywords/reviews/FAQ + lay-summary) is produced *in addition to* Steps A–H, not as a replacement for them.
+
+### Reconciliation with §14 Pointer Format
+
+The §14 "Session-close handover protocol" subsection (a narrower-scope subsection within the Organizational Frontier Registry section) specifies the *output format* for the OPEN-ORG queue: a short pointer to the registry rather than restated content. That format applies inside Step H's "Live registry entries" subsection — the OPEN-ORG queue gets a pointer, not restated content. §15 specifies the broader 8-step procedure; §14 specifies one output format inside Step H.
+
+### Commit message convention
+
+Commit messages for handover-protocol patches follow the convention: `[paper/series] Session [N] handover protocol — [brief summary of preserved items]`. This is distinct from the section-end-batch commit cadence in §10; section-end batches are task-driven, handover-protocol commits are session-continuity-driven. Both may occur in the same session.
 
 ### Anti-patterns to recognize
 
 The following are signs that the protocol is being mistakenly skipped or that its execution is degrading:
 
-- **Writing session-close narrative into chat instead of disk.** "Here's where we are at session pause: ..." in a final assistant message is exactly the content that should be in `handover-[S]-[N].md`. The chat-only version dies at compaction.
-- **Conflating "governance files committed" with "protocol fired completely."** The four items are independent; satisfying any subset does not satisfy the whole. In particular, registry updates (item 2) often fire during the session as a side effect of work; this does not by itself satisfy items 1, 3, or 4.
-- **Treating the auto-generated session summary as adequate substitute for `development-[S]-[N].md`.** The summary is lossy by design — specific numbers, exact phrasing, and registry statuses get abbreviated or extrapolated. Curated narrative is verbatim and must be authored from the active session.
-- **Deferring protocol/OS updates to "next session."** Next session starts from a lossy summary. The reasoning that produced a new rule will not survive compaction.
-- **Skipping `handover-[S]-[N].md` because `development-[S]-[N].md` exists.** They serve different functions (record vs. orientation) and a future-session arriving at the paper folder will look for handover before development.
+- **Half-firing the protocol.** Completing some steps but not others without explicitly marking the unexecuted steps N/A. The 8-step sequence is mandatory; "I did the obvious ones" is the failure mode the sequencing is designed to prevent. If a step is genuinely N/A, it gets a "N/A" mark in the Step H audit table with brief rationale — not silent omission.
+- **Producing the paste-ready handover (Step H) as inline chat text instead of a committed file.** The handover document only serves its function if it lives on disk where the next session can read it; an inline chat summary at session close dies at compaction. If the user asks for a session-close summary, that summary goes into Step H's file, not into the chat reply.
+- **Treating the auto-generated session summary or compaction as a substitute for Steps A–H.** The summary is lossy by design — specific numbers, exact phrasing, and registry statuses get abbreviated or extrapolated. The 8-step sequence is verbatim by construction; the summary is not.
+- **Bundling registries as "registry updates done" without per-registry audit.** Step E walks 9 registries individually because registry drift is the #1 source of next-session disorientation, and registry drift accumulates from registries that were "implicitly covered" but not actually checked. Each registry gets its own ✓ or N/A in the Step H audit.
+- **Conflating "governance files committed" with "protocol fired completely."** The 8 steps are independent; satisfying any subset does not satisfy the whole. In particular, registry updates (Step E) often fire during the session as a side effect of work; this does not by itself satisfy Steps A, B, C, D, F, G, or H.
+- **Deferring protocol/OS updates (Step G) to "next session."** Next session starts from a lossy summary or a paste-ready handover that doesn't reflect the as-yet-uncodified rule. The reasoning that produced a new rule will not survive compaction unless it is committed in this session. (This is the failure mode that produced OPEN-ORG-013's same-session register-then-resolve pattern.)
+- **Skipping Step H because Steps A–G "have it covered."** They don't. Step H is the only artifact designed for direct paste into a new context window; the others are reference material. The 80–120-line concentrated form is structurally distinct from any of the inputs to it. Treating "we wrote the session log" as adequate handover is the failure mode the §4 reconciliation tried to address but didn't fully solve, which is why Step H now exists as a first-class step rather than an inferred consequence of the others.
 
 ### Maintenance cadence
 
-- This §15 is itself §14-registered content per the meta-discipline rule above; if the protocol needs refinement, the refinement may be registered as an OPEN-ORG item rather than edited inline.
-- The four-item checklist may be extended (e.g., a fifth item may be added) when a session-close failure mode demonstrates an artifact class not currently covered. As of 24 April 2026, four items cover the observed failure space.
+- This §15 is itself §14-registered content per the meta-discipline rule above; if the protocol needs refinement, the refinement may be registered as an OPEN-ORG item rather than edited inline. Major refinements that fundamentally restructure the protocol (e.g., the 8-step sequencing replacement of the four-item checklist, adopted 5 May 2026 Session 13 close per OPEN-ORG-014 register-and-resolve) warrant inline edits with cross-reference to the originating OPEN-ORG entry.
+- The 8-step sequence may be extended (e.g., a ninth step may be added) when a session-close failure mode demonstrates an artifact class not currently covered. As of 5 May 2026, eight steps cover the observed failure space, with Step H (paste-ready handover) added in this revision specifically to address the §4-vs-§15 reconciliation tension that produced fragmented handovers across distributed sources.
 - The canonical command vocabulary may be extended with additional accepted variants over time; the existing list is illustrative rather than exhaustive.
+- The Step H handover document template may be refined (additional sections added, audit table extended) as new failure modes surface; refinements should preserve the 80–120-line target length, since the artifact's value depends on its concentratedness.
 
 ---
 

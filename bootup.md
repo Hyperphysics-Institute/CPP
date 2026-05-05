@@ -36,7 +36,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
 | 5 | `Research_Frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min | — |
 | 6 | `theorem-registry.md` | What we've proved — all theorems by series with axiom dependencies | 5 min | — |
-| 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min | §4 (Four-Tier Documentation Discipline) — required reading before producing reasoning/development/transcript artifacts. |
+| 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min | §4 (Four-Tier Documentation Discipline) — required reading before producing reasoning/development/transcript artifacts. **§15 (Session-Close Handover Protocol)** — the canonical 8-step sequence Thomas invokes with "execute handover protocol" or equivalent. If Thomas asks for the handover at session-close, **execute Steps A–H exactly as specified**; do not improvise the sequence or substitute a chat summary for Step H's paste-ready handover document. |
 | 8 | `templates/AI_team_expectations.md` | Team-level conventions, per-AI expectations, identified failure modes | 5 min | — |
 
 **Also check `Organizational_Frontier.md` §1** for any open organizational items (`OPEN-ORG-NNN`) that may bear on the current session. Items registered there have been deferred awaiting their trigger condition; if you are at a natural pause point with capacity, scan whether any are workable.
