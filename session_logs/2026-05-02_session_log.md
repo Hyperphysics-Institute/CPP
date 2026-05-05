@@ -1291,3 +1291,81 @@ Single-session-tractable computation of the radial-breathing mode of J-solid del
 ---
 
 *Session log Template-A Session 13 entry per §4 discipline. Reading deliverable; no new physics; no new programme-level stage. Substantive content: Phase 1 prior-art read of OPEN-SS-32 mechanism (SS-7 v1.3 §2.1 facet (c)) and SS-8 H3$'$ provisional residual model (SS-8 §3.5); methodological parallel OPEN-SS-32 ↔ OPEN-SS-28; geometric assessment of radial-breathing analog (geometrically natural by Pattern 6 + empirical-coincidence + closure-leverage); refinement of Research_Frontier patch 0149 cross-link from "coincides exactly" to "qualitative six-of-eight with octahedron discriminator"; Phase 2 single-session-tractable work plan with discriminating $N_\alpha = 6$ test. Six programme-level stages preserved; Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 13 Phase 2 — Uniform-scaling radial-breathing model RULED OUT; sixth programme-level negative result (4 May 2026)
+
+**Continuation of:** Session 13 Phase 1 (OPEN-SS-32 ↔ U-shape unification prior-art read; unification hypothesis assessed as geometrically natural; Phase 2 single-session-tractable computation registered).
+**Trigger:** Thomas's "take territory" priority directive — proceed to Phase 2 in same context window since context budget remains and Phase 1 prior-art reading discipline boundary is satisfied by the structure of the session (Phase 1 patches 0152–0155 already committed and pushed to origin/main as `c858a3e` before Phase 2 began).
+**Patches produced:** 0156–0160 (Phase 2 sketch + reproducible script + Research_Frontier update + Vignette 19 + this session log entry). Standard five-patch single-session deliverable suite.
+
+### Strategy
+
+Phase 1 §6.3 step 1 specified two candidate definitions of the breathing degree of freedom: (a) uniform scaling $\vec R_i \to \lambda \vec R_i$ for all vertices (simplest, single dof); (b) symmetry-resolved breathing modes (one dof per IRREP of cluster point group). Prescription was to start with (a) and revisit (b) only if (a) failed to reproduce the observed selection rules. Phase 2 executed (a).
+
+### Model and computation
+
+Energy at $\lambda$ detuning: $E_{\rm cluster}(\lambda) = \text{const} - |E| \cdot B_{\rm pair} \cdot \exp(-(\lambda-1)^2 R_\alpha^2/(2\sigma_{K3}^2))$. Spring constant $k_\lambda = |E| \cdot B_{\rm pair} \cdot (R_\alpha/\sigma_{K3})^2$. Effective mass $M_\lambda c^2 = m_\alpha \sum_i |\vec R_i|^2$. Zero-point $\langle(\Delta\lambda)^2\rangle = \hbar c / (2 \sqrt{k_\lambda M_\lambda c^2})$. Fractional softening of nucleon-orbital $\hbar\omega^*$: $-2 \langle(\Delta\lambda)^2\rangle$. Canonical $\sigma_{K3} = R_{\rm RMS}^\alpha = 1.68$ fm (SS-7 §11 alpha overlap scale); sensitivity scan over $\sigma_{K3} \in [1.0, 2.5]$ fm.
+
+### Results: eight-row table
+
+| $N_\alpha$ | polytope | sym | $|E|$ | $\hbar\omega_{\rm br}$ (MeV) | predicted softening | empirical required | pred/emp |
+|---|---|---|---|---|---|---|---|
+| 4 | tetrahedron | $T_d$ | 6 | 5.89 | $-21.05\%$ | $+11.5\%$ | sign mismatch |
+| 5 | trig. bipyr. | $D_{3h}$ | 9 | 5.78 | $-13.78\%$ | $-12.2\%$ | $1.13$ |
+| 6 | octahedron | $O_h$ | 12 | 5.89 | $-10.53\%$ | $-21.3\%$ | $0.50$ |
+| 7 | pent. bipyr. | $D_{5h}$ | 15 | 5.58 | $-7.99\%$ | $-29.5\%$ | $0.27$ |
+| 8 | snub disph. | $D_{2d}$ | 18 | 5.43 | $-6.47\%$ | $-31.8\%$ | $0.20$ |
+| 9 | triaug. tri. prism | $D_{3h}$ | 21 | 5.30 | $-5.42\%$ | $-33.1\%$ | $0.16$ |
+| 10 | gyroel. sq. bipyr. | $D_{4d}$ | 24 | 5.11 | $-4.57\%$ | $-33.6\%$ (peak) | $0.14$ |
+| 12 | icosahedron | $I_h$ | 30 | 4.90 | $-3.50\%$ | $+1.4\%$ | sign mismatch |
+
+### Three independent failure modes
+
+**Failure 1 (wrong magnitude).** At empirical peak $N_\alpha = 10$, model gives $-4.57\%$ vs empirical $-33.6\%$ required — factor 7.4 undershoot. Sensitivity scan confirms factor 2.5 magnitude variation across physically reasonable $\sigma_{K3}$ range; closing empirical magnitude would require $\sigma_{K3} \approx 8$ fm, broader than the cluster itself.
+
+**Failure 2 (wrong pattern).** Model is monotonically decreasing in $N_\alpha$ (peak $-21\%$ at $N_\alpha = 4$, $-3.5\%$ at $N_\alpha = 12$). Empirical is U-shaped with peak at $N_\alpha = 10$. Structural reason: $\langle(\Delta\lambda)^2\rangle \sim 1/\sqrt{|E| \cdot \sum |R_i|^2} \sim 1/N$ for deltahedra at fixed edge length. Uniform scaling captures bulk-density scaling but not shape-class selection.
+
+**Failure 3 (wrong endpoint signs).** Empirical $N_\alpha = 4$ requires no softening (slight compression actually); empirical $N_\alpha = 12$ requires near-zero. Model predicts substantial softening at both endpoints, with peak softening at the tetrahedron (the smallest deltahedron) — opposite of empirical.
+
+### $N_\alpha = 6$ Reading-A test result
+
+Model predicts $-10.53\%$ softening at the octahedron — non-zero. Structurally trivially consistent with Reading A (broader breathing selection rule), but the consistency is automatic since uniform scaling has no shape-class selection rule whatsoever. Real Reading-A vs B/C discrimination requires model (b) where the radial-breathing dof can be projected onto specific IRREPs.
+
+### Verdict
+
+**Uniform-scaling radial-breathing model (a) RULED OUT** as a complete R2 closure mechanism on three independent grounds (magnitude, pattern, endpoint signs).
+
+**Sixth programme-level negative-result demonstration** in OPEN-SS-35 closure programme:
+
+| # | Route/Path | Session | Reason ruled out |
+|---|---|---|---|
+| 1 | Route D (lattice-shell counting) | Session 5 Phase 2 | distance shells don't match magic numbers |
+| 2 | Route B-γ (K$_3$-mode phase coupling) | Session 7 Phase 2 | $V_{\rm SO}/\hbar\omega \sim 10^{-3}$, magnitude insufficient |
+| 3 | Route 1b ($V_{\rm SO}$ refinement) | Session 10 | saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$ |
+| 4 | Path (i) cluster-surface Thomas | Session 11 Phase 1 | $f_{\rm SO}(r)$ peaks at center, not surface |
+| 5 | R1 ($R_\alpha$ scale-dependence) | Session 12 | wrong sign + U-shape + decoupled from gap strength |
+| 6 | **Phase 2 model (a) uniform breathing** | **Session 13 Phase 2** | wrong magnitude + wrong pattern + wrong endpoint signs |
+
+**The unification hypothesis itself is NOT refuted.** Phase 1 §6.3 explicitly anticipated this branch. Model (b) symmetry-resolved breathing decomposition remains untested. The selection-rule structure of the empirical U-shape is precisely shape-class-driven, which uniform scaling cannot produce by construction; the OPEN-SS-32 mechanism itself selects for J-solid belt/seam structure, and the breathing-mode analog must also do so for the unification to hold. Phase 3 (model b) is the natural multi-session next step.
+
+**R2 substantively weakened but not closed.** Simplest plausible mechanism fails badly. Magnitude shortfall is large enough that simple refinements of (a) cannot bridge it. R2 not yet ruled out — model (b) remains untested.
+
+### Cumulative OPEN-SS-35 trajectory
+
+Six programme-level stages preserved. Phase 2 refines stage (vi) by ruling out one R2 closure realization; no new programme-level stage. First qualitative cross-paradigm consilience claim (Session 9) intact. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. R1 ruled-out (Session 12) intact.
+
+### Forward-looking pointers for Session 14
+
+**Priority 1:** Phase 3 — symmetry-resolved breathing decomposition (model (b)). Project breathing dof onto IRREPs of each cluster's point group; identify belt-localized modes for J-solid deltahedra; compute their frequencies and zero-point amplitudes separately; check whether belt-mode contributions alone produce U-shape. Multi-session by scope (3–5 sessions). Discriminating tests: pattern (U-shape vs monotonic), magnitude, $N_\alpha = 6$ selection rule (under model (b), $O_h$ should give zero or near-zero belt-localized mode, distinguishing Reading A from B/C).
+
+**Priority 2 (deferred):** OPEN-SS-32 attenuation-factor derivation. If Phase 3 succeeds, the OPEN-SS-32 mechanism itself can be derived from the same belt-mode framework.
+
+**Priority 3 (parallel):** OPEN-SS-16 Layer B closure work. Deepest open problem; deferred.
+
+**Priority 4 (parallel, registered for future session):** Reading B literature check — whether the empirical $41/A^{1/3}$ formula's $A$-range of validity excludes $A = 16, 24$, which would partially discriminate Reading B from A and C complementing the Phase 3 mechanistic test.
+
+**Anti-priority:** Do not initiate the SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until Phase 3 returns a result.
+
+---
+
+*Session log Template-A Session 13 Phase 2 entry per §4 discipline. Substantive content: uniform-scaling radial-breathing model (a) RULED OUT as R2 closure mechanism. Three independent failures: magnitude (factor 7 undershoot at peak), pattern (monotonic vs U-shape), endpoint signs (wrong at $N=4$ and $N=12$). Sixth programme-level negative-result demonstration in OPEN-SS-35 closure programme. Unification hypothesis itself NOT refuted; model (b) symmetry-resolved breathing decomposition registered as Session 14 Priority 1. R2 substantively weakened but not closed. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
