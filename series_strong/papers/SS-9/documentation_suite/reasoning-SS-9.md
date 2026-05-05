@@ -3326,3 +3326,119 @@ The deliverables for Phase 3B-B: sketch at `series_strong/papers/SS-9/sketches/S
 
 *End of Session 15 Phase 3B-B Opus reasoning. Future sessions append below.*
 
+
+## Session 16 Phase 4 — Anharmonic K$_3$ $\xi^4$ + all-orders Gaussian RULED OUT; sign theorem closes Gaussian-K$_3$ framework at fixed geometry; tenth programme-level negative result (5 May 2026)
+
+### Strategic framing — what changed since Phase 3B-B
+
+Session 15 Phase 3B-B formally closed R2 via the n-vs-N structural argument and forward-pointed Priority 1 to anharmonic K$_3$ corrections at order $\xi^4$ in the Gaussian expansion as the most direct framework extension. The motivation was structural: the perturbative anharmonic correction acts at every contact, so the total contribution scales with edge count $|E| = 3N - 6$, which is monotonic in $N$ across the J-solid range (15, 18, 21, 24 for $N = 7, 8, 9, 10$). This is structurally compatible with the empirical monotonic-in-$N$ pattern, in contrast to belt-IRREP-projection mechanisms whose variance scales with non-monotonic-in-$N$ group structure (closed Phase 3B-B). The handover scoped two falsifiers — magnitude in the empirical 5–10% range, and monotonic-in-$N$ pattern — and proposed a single-session-tractable computation with a binary outcome: pass both ⇒ scope multi-session derivation; fail either ⇒ ruled out as tenth programme-level negative result.
+
+The investigation yielded a result the original scoping plan did not anticipate: a third falsifier — sign — that resolves the question on dispositive grounds before either of the originally-planned criteria is needed. The decoupling is structural, and the closure extends beyond first-order $\xi^4$ to all orders in the Gaussian expansion via a Rayleigh–Ritz variational argument independent of computation.
+
+### The pre-computation analytical sign argument
+
+The K$_3$ pair potential is $V_{\rm pair}(\xi) = -B_{\rm pair} \exp(-\xi^2/2)$ with $\xi = \delta r / \sigma_{K3}$. Taylor expansion around equilibrium ($\xi = 0$):
+
+$$ V_{\rm pair}(\xi) = -B_{\rm pair} + \frac{B_{\rm pair}}{2}\xi^2 - \frac{B_{\rm pair}}{8}\xi^4 + \frac{B_{\rm pair}}{48}\xi^6 - \frac{B_{\rm pair}}{384}\xi^8 + \cdots $$
+
+The harmonic part $-B_{\rm pair} + (B_{\rm pair}/2)\xi^2$ is what Phases 2 / 3A / 3B-A / 3B-B used (giving the per-edge spring constant $k_{\rm edge} = B_{\rm pair}/\sigma^2$). The leading anharmonic is $V_4 = -(B_{\rm pair}/8)\xi^4$ — Taylor coefficient *negative*.
+
+In the harmonic ground state of any normal mode, $\langle \xi^4 \rangle_0 = 3 \langle \xi^2 \rangle_0^2 > 0$ by Wick's theorem (Gaussian wavefunction). First-order perturbation theory gives
+
+$$ \Delta E^{(1)}_{\rm anharm} = \langle V_4 \rangle_0 = -\frac{B_{\rm pair}}{8} \langle \xi^4 \rangle_0 = -\frac{3 B_{\rm pair}}{8} \langle \xi^2 \rangle_0^2 < 0 $$
+
+per edge — a *more-binding* shift, lower energy than the harmonic estimate.
+
+The empirical U-shape pattern in the J-solid range needs $R_{\rm pct} > 0$ (cluster wants to grow → empirical binding *less* than canonical K$_3$), corresponding to $\Delta E_{\rm empirical} > 0$ (positive shift = less bound). The signs are uniformly opposite across the J-solid range. F1 (sign) fails universally before computation. This was apparent within minutes of looking at the Taylor expansion.
+
+### Why this was not predicted in the Session 15 handover
+
+The Session 15 handover proposed Priority 1 with magnitude and pattern as falsifiers. Sign was not flagged because the heuristic argument used was symmetry/scaling: anharmonic corrections at every edge → total scales with $|E| = 3N - 6$ → monotonic in $N$ → structurally compatible with empirical. This argument was correct but incomplete. It established that pattern *could* match, but it did not check that the perturbative correction acts in the *direction* needed to reduce binding. The mismatch is between Taylor-coefficient sign and required-shift sign — a one-paragraph analytical check that yields the answer immediately. Lesson for future scoping investigations: always run the analytical sign check before committing to computation.
+
+### The all-orders strengthening — Rayleigh–Ritz argument
+
+The first-order $\xi^4$ result is rigorous in the small-$s$ limit where $s \equiv \langle \xi^2 \rangle_0 \ll 1$. Computation revealed $\langle s \rangle \approx 0.85$ across all polytopes (range only $[0.847, 0.864]$, $\sim 2\%$), much larger than the handover's estimate of $\sim 0.5$. At $s = 0.85$, $\xi_{\rm rms} \approx 0.92$ — near the inflection point of $\exp(-\xi^2/2)$ at $\xi = 1$. The Gaussian Taylor expansion converges slowly: successive terms in $(1+s)^{-1/2}$ are 0.575, 0.271, 0.192, 0.143, ... in absolute value. This raises a legitimate concern that higher-order Taylor terms might flip the sign of the all-orders correction — the alternating-sign series might over-cancel and reverse direction.
+
+The all-orders correction in the harmonic-GS-trial Gaussian wavefunction has a closed form. For a Gaussian distribution with variance $s$:
+
+$$ \langle \exp(-\xi^2/2) \rangle = \int \frac{d\xi}{\sqrt{2\pi s}} \exp(-\xi^2/(2s)) \exp(-\xi^2/2) = (1 + s)^{-1/2} $$
+
+Therefore $\langle V_{\rm pair} \rangle_{\rm HOgs} = -B_{\rm pair} (1+s)^{-1/2}$. The all-orders cluster-total anharmonic shift in the harmonic-GS-trial ansatz:
+
+$$ \Delta E_{\rm anharm}^{\rm all\text{-}orders} = -B_{\rm pair} \sum_{\rm edges} \left[ (1 + s_{ab})^{-1/2} - \left( 1 - \frac{s_{ab}}{2} \right) \right] = -B_{\rm pair} \sum_{\rm edges} f(s_{ab}) $$
+
+with $f(s) \equiv (1+s)^{-1/2} - 1 + s/2$.
+
+**Sign theorem.** $f(s)$ is strictly positive for all $s > 0$. Proof: $f(0) = (1+0)^{-1/2} - 1 + 0 = 0$. $f'(s) = -\frac{1}{2}(1+s)^{-3/2} + \frac{1}{2} = \frac{1}{2}[1 - (1+s)^{-3/2}]$. For $s > 0$, $(1+s)^{-3/2} < 1$, hence $f'(s) > 0$. Therefore $f$ is strictly increasing on $(0, \infty)$ from $f(0) = 0$, so $f(s) > 0$ for $s > 0$. $\square$
+
+Therefore $\Delta E_{\rm anharm}^{\rm all\text{-}orders} = -B_{\rm pair} \sum f(s_{ab}) < 0$ universally, for any positive per-edge variance.
+
+**Variational corollary.** By Rayleigh–Ritz, the true ground state energy of the full Gaussian Hamiltonian $H_{\rm full} = T + V_{\rm full}$ satisfies
+
+$$ E^{\rm full}_{0,{\rm true}} \le \langle T + V_{\rm full} \rangle_{\rm HOgs} = E^{\rm harm}_0 + (\langle V_{\rm full} \rangle_{\rm HOgs} - \langle V_{\rm harm} \rangle_{\rm HOgs}) = E^{\rm harm}_0 + \Delta E_{\rm anharm}^{\rm all\text{-}orders} < E^{\rm harm}_0 $$
+
+The true cluster ground state in the full Gaussian potential is, with mathematical certainty, *more* bound than the harmonic estimate, never less. No reordering of perturbative scheme, no truncation level, no clever resummation can flip this. It is a structural property of the Gaussian-K$_3$ framework at fixed cluster geometry.
+
+### Programme-level closure consequence
+
+The empirical U-shape requires $\Delta E_{\rm empirical} > 0$ in the J-solid range (binding less than canonical K$_3$). The sign theorem combined with Rayleigh–Ritz establishes that no perturbative or variational improvement of the harmonic K$_3$ ground-state estimate within the Gaussian-K$_3$ framework can produce a positive shift. Therefore:
+
+> **The U-shape mechanism cannot live within the Gaussian expansion of K$_3$ at fixed cluster geometry — provably.**
+
+This is a stronger statement than Phase 3B-B's R2 closure (which closed only the harmonic-Hessian-belt-IRREP family at canonical $\sigma$). Phase 3B-B closed one mechanistic class within the harmonic-Hessian framework. Phase 4 closes the entire Gaussian-K$_3$ perturbative-correction framework at canonical geometry. Together: the entire Gaussian-K$_3$ framework at fixed cluster geometry cannot produce empirical U-shape — provably.
+
+The U-shape mechanism must therefore live in one of:
+- **(R3, R4)** Cluster-geometry shift mechanisms beyond R1 — N-dependent boundary conditions on $R_\alpha$, cluster shape distortion. R1 (Session 12) tested the specific surface-tension-motivated $R_\alpha(A)$ form and ruled it out. R3 and R4 are different geometric-shift forms and remain open.
+- **(b)** Coupling to inelastic excitations — alpha breathing modes, Hoyle-state $0^+_2$ mixing, or other non-rigid-cluster physics. Not in the rigid-K$_3$ assumption.
+- **(c)** Physics outside K$_3$ entirely — surface-energy shape dependence (Strutinsky-like shell corrections), Coulomb cluster-arrangement effects, spin-orbit cluster corrections.
+
+None of these is a Gaussian-K$_3$-internal correction.
+
+### Numerical results — first-order $\xi^4$
+
+Per-cluster anharmonic correction at canonical $\sigma_{K3} = 1.68$ fm (constants $B_{\rm pair} = 2.342$ MeV, $R_\alpha = 2.37$ fm, $m_\alpha = 3727.4$ MeV/c²; anharmonic prefactor $3 B_{\rm pair}/(8 \sigma^4) = 0.1103$ MeV/fm⁴):
+
+$$\begin{aligned}
+N=4 &: \langle s \rangle = 0.863, \quad \Delta E^{(1)} = -3.93 \text{ MeV}, \quad \Delta E^{(1)}/\alpha = -0.98 \text{ MeV} \\
+N=5 &: 0.853, \quad -5.75, \quad -1.15 \\
+N=6 &: 0.861, \quad -7.81, \quad -1.30 \\
+N=7 &: 0.848, \quad -9.48, \quad -1.35 \\
+N=8 &: 0.851, \quad -11.44, \quad -1.43 \\
+N=9 &: 0.849, \quad -13.31, \quad -1.48 \\
+N=10 &: 0.847, \quad -15.14, \quad -1.51 \\
+N=12 &: 0.845, \quad -18.81, \quad -1.57
+\end{aligned}$$
+
+All eight polytopes give $\Delta E^{(1)} < 0$. The fractional shift $|\Delta E^{(1)} / B_{K3}| \approx 27\%$ across all polytopes (range only 0.6%, near-polytope-independent). The pattern $|\Delta E^{(1)}|/\alpha = 1.15, 1.35, 1.43, 1.48, 1.51$ MeV for the J-solid range is monotonic in $N$, scaling roughly as $(3N-6)/N$ since $\langle s \rangle$ is near-constant.
+
+### Numerical results — all-orders Gaussian average
+
+The all-orders shift reduces magnitude by factor $\sim 0.59$ (polytope-independent because $\langle s \rangle$ is near-constant). Numerical results: $\Delta E_{\rm anharm}^{\rm all\text{-}orders} = -2.31, -3.40, -4.60, -5.61, -6.76, -7.87, -8.96, -11.15$ MeV for $N = 4, 5, 6, 7, 8, 9, 10, 12$. All negative — consistent with the §2.4 sign theorem. Higher-order Taylor terms partially cancel the leading $\xi^4$ overshoot but never flip the sign.
+
+### Magnitude (F2) and pattern (F3) — for completeness
+
+F2 magnitude: $|\Delta E^{(1)} / B_{K3}|\%$ vs $|d_{\rm emp}|\%$ (J-solid range): $27.96/24.56=1.14$ at $N=5$; $27.80/21.27=1.31$ at $N=6$; $26.97/29.50=0.91$ at $N=7$; $27.13/31.81=0.85$ at $N=8$; $27.05/33.14=0.82$ at $N=9$; $26.92/33.58=0.80$ at $N=10$. In the J-solid range, ratios are within a factor of order unity of empirical. F2 *would have* passed in isolation. The icosahedron $N=12$ overshoot (ratio 18.92) is because empirical $|d_{\rm emp}|$ is essentially zero for $I_h$ (the ground state of ⁴⁸Cr clusters very near the canonical K$_3$ prediction).
+
+F3 pattern: $|\Delta E^{(1)}|/\alpha$ monotonic in $N$ across J-solid range, scaling as $(3N-6)/N \cdot$ const. Pattern qualitatively consistent.
+
+But F2 and F3 are moot once F1 fails. The sign mismatch is dispositive and rigorous (extends to all orders).
+
+### Constructive content
+
+Despite the negative result, Phase 4 contributes constructively:
+
+- **Sign theorem (§2.4 of sketch).** A closure tool with broader applicability — any future Gaussian-K$_3$ refinement at fixed geometry must invoke geometry change, inelastic channels, or out-of-framework physics to escape it. The proof is one paragraph from Rayleigh–Ritz + monotonicity of $f(s) = (1+s)^{-1/2} - 1 + s/2$.
+- **$\langle s \rangle \approx 0.85$ near-constancy** across all eight polytopes (range only $\sim 2\%$): non-trivial empirical observation that mean per-edge zero-point variance is essentially independent of cluster topology in the J-solid range. Explains why $|\Delta E / B_{K3}|$ is nearly polytope-independent — cluster topology drops out of the leading anharmonic correction in any framework where mean variance is the dominant input.
+- **$\xi_{\rm rms} \approx 0.92$ regime** (near inflection point of Gaussian): quantitative caution flag for any future programme work assuming small-displacement perturbative expansion of K$_3$.
+
+### Cumulative state
+
+Tenth programme-level negative-result demonstration. Fifth in the OPEN-SS-32 ↔ U-shape thread. The thread now contains five sequential closures: Phase 2 uniform-only (Session 13), Phase 3A all-modes (Session 13), Phase 3B-A fixed-dim belt subspace (Session 14), Phase 3B-B C$_n$ IRREP decomposition (Session 15, R2 formal closure), Phase 4 anharmonic perturbative correction (Session 16, sign theorem closing Gaussian-K$_3$ framework at fixed geometry).
+
+Phase 3B-B closed the harmonic-Hessian-belt-IRREP family at canonical $\sigma$. Phase 4 closes the perturbative-correction family at canonical geometry. Together: the entire Gaussian-K$_3$ framework at fixed cluster geometry cannot produce the empirical U-shape — provably. OPEN-SS-35 sub-question (a) A-scaling closure now requires either geometric-shift mechanisms beyond R1 (channels R3, R4) or out-of-framework physics ((b) or (c)). Sub-question (b) layer 3 gap-strength closure remains independent (Decoupling Theorem, Session 12), unaffected. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. Six programme-level OPEN-SS-35 stages preserved.
+
+§7 of SS-9 v0.3 working draft has now shifted **six** times in the OPEN-SS-32 ↔ U-shape thread — OPEN-ORG-012 .tex conversion further deferred.
+
+*End of Session 16 Phase 4 Opus reasoning. Future sessions append below.*
+
+---
