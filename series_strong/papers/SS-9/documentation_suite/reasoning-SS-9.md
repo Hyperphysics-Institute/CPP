@@ -3025,3 +3025,157 @@ The deliverables for Phase 3A: sketch at `series_strong/papers/SS-9/sketches/SS-
 ---
 
 *End of Session 13 Phase 3A Opus reasoning. Future sessions append below.*
+
+## Session 14 Phase 3B-A — Minimal fixed-dim belt-subspace projection RULED OUT; pattern-shape anti-correlation; eighth programme-level negative result (5 May 2026)
+
+**Phase 3B-A** executes the simplest tractable subphase of Phase 3B specified in Phase 3A §6: project full Hessian eigenmodes onto a minimal belt subspace (3D basis: A$_1$ in-plane radial breathing monopole + 2D E$_2$ quadrupole cos/sin patterns) at each axial polytope, weight per-mode zero-point variance by $f_k^{\rm belt}$, and tabulate against the three sharply constrained quantitative targets registered at Session 13 close. Result: the construction is **RULED OUT** as a complete R2 closure mechanism on two structural grounds — target (a) magnitude factor 3× too small at empirical peak, plus pattern-shape within axial polytopes is anti-correlated with empirical (belt fraction monotonically *decreases* N$_\alpha$=5→10 while empirical magnitude monotonically *increases*). Targets (b) and (c) are met by symmetry-structural-identity (DEGEN inertia → dim(B) = 0) rather than as differential tests. **Eighth programme-level negative-result demonstration**; R2 reduced to one untested realization.
+
+### Tier 4 inclusion scope
+
+Tier 4 included for Session 14 Phase 3B-A: the strategic decision of which belt subspace dimensionality to commit to in the simplest tractable subphase; the inertia-classification operational definition and its physical motivation; the belt-basis construction including the choice of monopole + 2D quadrupole over richer alternatives; the variance-weighting scheme; the structural interpretation of the eight-row results; the new pattern-shape anti-correlation finding and its structural origin; the N$_\alpha$=5 overshoot insight and its consequences for any belt-IRREP-projection mechanism; the constructive implications for Phase 3B-B.
+
+Tier 4 excluded for Session 14 Phase 3B-A: the verbatim repository orientation (file paths, bootup §3 patch-flow conventions, predecessor file lengths); the procedural script-running and patch-staging operations; the 8-step protocol mechanics for handover production.
+
+### Strategy: the simplest tractable subphase of Phase 3B
+
+Phase 3A's bracketing benchmark — empirical peak at $-33.6\%$ lying $\sim 40\%$ between Phase 2's $-4.6\%$ uniform-scaling lower bound and Phase 3A's $-85\%$ full-Hessian upper bound — left Phase 3B as the sharply constrained next investigation. The §6 forward pointer specified IRREP-selective decomposition projecting onto belt-localized modes, with three quantitative targets: (a) average belt-fraction $\sim 0.4$ at J-solid mid-range $N_\alpha = 7$–$10$, (b) near-zero at regular polytopes T$_d$, I$_h$, (c) $O_h \ll D_{2d}$ at $N_\alpha = 6$.
+
+The full character-theory IRREP decomposition is multi-session by scope — eight different point groups, each requiring projection-operator construction from character tables, with separate handling for each polytope's belt-IRREP. **Phase 3B-A** is the minimal single-session realization: a fixed-dimension belt subspace constructed uniformly across all axial polytopes from physics motivation rather than per-polytope group theory. The construction is the simplest one that captures the qualitative structure of the SS-7 OPEN-SS-32 oblate-quadrupole pattern:
+
+- **Monopole** ($A_1$ in-plane radial breathing): a single basis vector that pulls all belt vertices outward by their unit radial vectors $\hat\rho_i$. This is the totally-symmetric component of belt deformation — present in any axial polytope.
+- **Quadrupole** ($E_2$ angular cos and sin): two basis vectors that displace belt vertex $i$ as $\cos(2\varphi_i) \hat\rho_i$ and $\sin(2\varphi_i) \hat\rho_i$ respectively. These are the angular-$m=2$ patterns of in-plane radial displacement — the natural "oblate quadrupole" of group-theoretic belt physics.
+
+For polytopes with degenerate inertia tensor (T$_d$, O$_h$, I$_h$), no preferred axis exists; the construction sets dim(B) = 0 by symmetry. This implements **Reading A**'s structural commitment: no belt-IRREP exists at fully-symmetric polytopes.
+
+The strategic question Phase 3B-A asks is whether this **minimal** physically-motivated belt subspace — rich enough to capture A$_1$ and E$_2$ symmetry-respecting belt patterns, while staying fixed-dimension and tractable — produces the three Phase 3A targets. If yes, Phase 3B is essentially closed at the minimal level and richer constructions are unnecessary. If no, the failure mode informs what richer construction is needed.
+
+I expected partial success — magnitude likely short but in the right direction, pattern likely correct in shape if not amplitude. The actual outcome was sharper than I expected on the ruling-out side and more informative than I expected on the constructive side, in ways the Phase 3A forward pointer did not anticipate.
+
+### Inertia classification: implementing Reading A's structural commitment
+
+The inertia tensor $I_{ab} = \sum_i (\delta_{ab} r_i^2 - r_{i,a} r_{i,b})$ about the COM has three eigenvalues. For polytopes with full point-group symmetry under the rotation group ($T_d$, $O_h$, $I_h$), the inertia tensor is a multiple of the identity: $I = I_0 \mathbb{1}$. There is no preferred axis; the polytope is rotationally symmetric in the inertia sense. For axial polytopes (with $C_n$ symmetry for some $n \ge 3$ or $C_2$ + dihedral structure for $n=2$), the inertia tensor has a unique eigenvalue corresponding to the axis: smallest if PROLATE (rocket — mass concentrated on the axis), largest if OBLATE (discus — mass concentrated perpendicular to axis).
+
+The classification declares dim(B) = 0 for DEGENERATE polytopes by structural commitment. This is the **direct implementation of Reading A**: belt-IRREP modes do not exist at fully-symmetric polytopes because there is no preferred axis around which to define a belt. I considered briefly whether to compute belt projections along each of the three principal axes for DEGENERATE polytopes and average — but the symmetry argument is cleaner: under the full point group, the three putative axes are exchanged, the belt-projection along axis 1 is symmetry-related to the belt-projection along axis 2, and proper symmetry-adapted modes mix these. There is no symmetry-respecting "single belt" at DEGENERATE polytopes; declaring dim(B) = 0 is the consistent commitment.
+
+This commitment makes targets (b) and (c) automatic structural identities under the construction. T$_d$, O$_h$, I$_h$ have $f_k^{\rm belt} = 0$ for every mode; $\delta_{\rm belt} = 0$ exactly. Target (b) is met. The ratio O$_h$/D$_{2d}$ is $0/\text{(non-zero)} = 0 \ll 1$; target (c) is met. **Whether these are differential support for Reading A is a separate question** I return to below — in advance, I noted the structural-identity nature of the result and was prepared for it.
+
+### Belt-basis construction and rigid-body cleanup
+
+For an axial polytope, the principal axis $\hat z_p$ is the eigenvector of the unique inertia eigenvalue. Build an orthonormal frame $\{\hat x_p, \hat y_p, \hat z_p\}$ and assign each vertex cylindrical coordinates $(\rho_i, \varphi_i, z_i)$ in this frame. The three raw belt basis vectors are 3$N$-component displacement fields:
+
+$$b^{(0)}_i = \hat\rho_i, \qquad b^{(c)}_i = \cos(2\varphi_i)\,\hat\rho_i, \qquad b^{(s)}_i = \sin(2\varphi_i)\,\hat\rho_i$$
+
+with vertices on the axis ($\rho_i \approx 0$) contributing zero (no radial direction to displace along).
+
+Two cleanup steps prevent rigid-body contamination:
+
+1. Construct the orthonormal rigid-body basis (3 translations + 3 rotations about COM, Gram-Schmidt-orthonormalised) and project each raw belt basis vector onto its orthogonal complement. This removes any net center-of-mass motion or net rotation that the raw belt patterns might inadvertently carry.
+
+2. Gram-Schmidt-orthonormalise the survivors. Linear dependencies (which appear at low-$n$ symmetries — see below for the N=8 D$_{2d}$ case) are dropped automatically, giving an orthonormal belt basis $\{\hat e^a\}$ with $\dim(B) \le 3$.
+
+I verified the cleanup empirically by checking $\sum_k f_k^{\rm belt} = \dim(B)$ for each polytope. This identity holds iff the belt basis is exactly orthogonal to the rigid-body subspace and the Hessian eigenmodes form a complete orthonormal basis of the non-rigid-body subspace. The check passed for all eight polytopes. No rigid-body leakage.
+
+The dim(B) = 2 result for N=8 (snub disphenoid, D$_{2d}$) is structurally interesting and worth understanding. The snub disphenoid's vertex configuration has $C_2$ rotation symmetry plus $S_4$ improper-rotation symmetry. Under this group, the pattern $\cos(2\varphi)$ at the 8 vertices reduces — when combined with the C$_2$ symmetry — to a linear combination of the monopole pattern. So $\{b^{(0)}, b^{(c)}, b^{(s)}\}$ has rank 2 rather than 3 after Gram-Schmidt. This is a structural feature of the symmetry, correctly captured by the orthonormalisation; it does NOT bias target evaluation.
+
+### Variance-weighting scheme: the cleanest implementation of belt selection
+
+The Phase 3A per-mode variance contribution to per-edge MSD is $C_k^{\rm edge} = (\hbar c / 2 \sqrt{m_\alpha \lambda_k}) \sum_{(i,j) \in E} [(v_k(i) - v_k(j)) \cdot \hat n_{ij}]^2$. Phase 3A summed all modes equally and produced the constant $-85\%$ result. Phase 3B-A weights the mode-$k$ contribution by the belt fraction $f_k^{\rm belt} = \sum_a |\langle \hat e^a | v_k\rangle|^2$:
+
+$$\langle (\delta r)^2\rangle_{\rm belt} = \frac{1}{|E|} \sum_k f_k^{\rm belt}\, C_k^{\rm edge}$$
+
+I considered an alternative — replace $v_k$ in the variance formula by its belt-subspace projection $P_B v_k$ and recompute. This corresponds to "restricting dynamics to the belt subspace before computing edge variance." But $P_B v_k$ is not an eigenmode of any natural restricted Hessian, and the resulting expression has no clean interpretation as zero-point fluctuation of a well-defined system. The variance-weighted-summation scheme above is the conceptually cleaner implementation of "the U-shape is driven by modes with substantial belt content; sum mode contributions weighted by belt content."
+
+In the limit $f_k^{\rm belt} = 1$ ∀$k$ (which would hold if the belt subspace equaled the full mode space), we recover Phase 3A's $-85\%$. In the limit $f_k^{\rm belt} = 0$ ∀$k$ (DEGEN polytopes), we get exactly zero. The construction interpolates between these limits via the belt-content weighting.
+
+### Eight-row results and target audits
+
+The script runs cleanly. Phase 3A reproduction is exact to 3 decimal places across all eight polytopes (the full-Hessian path is identical, only the post-processing differs). The eight-row table:
+
+| $N_\alpha$ | sym | inertia | dim(B) | $-\delta_{\rm full}\%$ | $-\delta_{\rm belt}\%$ | $-\delta_{\rm emp}\%$ | belt fraction |
+|---|---|---|---|---|---|---|---|
+| 4 | T$_d$ | DEGEN | 0 | $-86.77$ | 0.00 | $+11.51$ | 0.000 |
+| 5 | D$_{3h}$ | PROLATE | 3 | $-85.71$ | $-33.12$ | $-12.16$ | 0.386 |
+| 6 | O$_h$ | DEGEN | 0 | $-86.53$ | 0.00 | $-21.27$ | 0.000 |
+| 7 | D$_{5h}$ | OBLATE | 3 | $-85.22$ | $-17.16$ | $-29.50$ | 0.201 |
+| 8 | D$_{2d}$ | PROLATE | 2 | $-85.47$ | $-9.40$ | $-31.81$ | 0.110 |
+| 9 | D$_{3h}$ | OBLATE | 3 | $-85.35$ | $-11.36$ | $-33.14$ | 0.133 |
+| 10 | D$_{4d}$ | PROLATE | 3 | $-85.15$ | $-8.16$ | $-33.58$ | 0.096 |
+| 12 | I$_h$ | DEGEN | 0 | $-84.92$ | 0.00 | $+1.41$ | 0.000 |
+
+**Target (a) — magnitude target — FAILS factor 3.** Average J-solid (N=7..10) belt fraction is 0.135 vs target 0.40. Belt-projected softening at the empirical peak ($N_\alpha = 10$) is $-8.2\%$ vs empirical $-33.6\%$. The construction captures only $\sim 25\%$ of the empirical magnitude at the target peak.
+
+**Target (b) — near-zero at regular polytopes — passes by symmetry construction.** All three DEGEN polytopes have dim(B) = 0 by inertia-degeneracy classification, so $f_{\rm belt} = 0$ for every mode and $\delta_{\rm belt} = 0$ exactly. This is a structural identity, automatic for any inertia-degeneracy-aware construction. **Not a differential test of Reading A.** Reading B and Reading C, if implemented with similar respect for full point-group symmetry, would also produce zero at DEGEN polytopes — they would also commit to "no belt because no preferred axis." Target (b) being met validates the symmetry consistency of the construction; it does not validate Reading A's underlying physical claim.
+
+**Target (c) — $O_h \ll D_{2d}$ — passes by symmetry, but Reading A empirical fails.** O$_h$ has dim(B) = 0; D$_{2d}$ has dim(B) = 2 with belt fraction 0.110. The ratio $0/0.11 = 0$ certainly satisfies "$\ll$ 1." But the **empirical** ratio of softenings at $N_\alpha = 6$ vs $N_\alpha = 8$ is $-21.3\%/-31.8\% = 0.67$ — substantially less than 1, but not $\ll 1$. Empirically, the octahedron's softening is comparable in magnitude to the snub disphenoid's; **Reading A's prediction of $\approx 0$ at the octahedron fails substantively**. So target (c) being met by my construction does not support Reading A; it tells us the construction faithfully implements Reading A, which is then itself empirically falsified at this discriminator. (The patch-0149 cross-link refinement registered this as the qualitative-six-of-eight observation: empirical and CPP agree on shape ordering at six of eight polytopes, with the octahedron as the principal disagreement.)
+
+### Pattern-shape: the new structural finding
+
+Within axial polytopes ($N_\alpha = 5, 7, 8, 9, 10$), the belt-projected softening pattern is non-trivially structured:
+
+| $N_\alpha$ | belt fraction | $-\delta_{\rm belt}\%$ | $-\delta_{\rm emp}\%$ |
+|---|---|---|---|
+| 5 | 0.386 | $-33.1$ | $-12.2$ |
+| 7 | 0.201 | $-17.2$ | $-29.5$ |
+| 8 | 0.110 | $-9.4$ | $-31.8$ |
+| 9 | 0.133 | $-11.4$ | $-33.1$ |
+| 10 | 0.096 | $-8.2$ | $-33.6$ |
+
+**Belt fraction monotonically decreases** from $N_\alpha = 5$ (0.39) through $N_\alpha = 10$ (0.10). **Empirical magnitude monotonically increases** across the same range from $-12\%$ to $-34\%$. The two patterns are **anti-correlated**.
+
+The structural origin is straightforward and important. At $N_\alpha = 5$ (trigonal bipyramid), the belt has 3 vertices arranged at $\varphi = 0, 2\pi/3, 4\pi/3$. The 3-dim belt basis $\{b^{(0)}, b^{(c)}, b^{(s)}\}$ spans the *entire* 3-dim radial-displacement subspace at the belt — every belt-radial mode contributes $f_{\rm belt} = 1$ weight. There is nothing the construction can "filter out." At $N_\alpha = 10$ (gyroelongated square bipyramid), the belt has 8 vertices in two squashed-square layers; the radial-displacement subspace at the belt is 8-dim. The same 3-dim basis spans only 3/8 of this; most belt-radial modes are projected out.
+
+**The empirical U-shape requires the OPPOSITE scaling.** Small softening at small axial $N$ where the belt is small, large softening at large axial $N$ where the belt is rich. **No fixed-dimension belt subspace can produce this pattern.** This rules out the entire class of fixed-dimension belt-subspace constructions: 1D (monopole only), 2D (monopole + one quadrupole component), 3D (this Phase 3B-A), or higher-dimensional fixed bases. They all share the structural feature "subspace dimension is N-independent" and therefore "fraction of belt-radial space covered shrinks as belt grows."
+
+### The N$_\alpha = 5$ overshoot is the structurally hardest constraint
+
+At $N_\alpha = 5$, the model predicts $-33\%$ softening; empirical wants $-12\%$. The model OVERSHOOTS by factor 2.7. This is the structurally hardest constraint Phase 3B-A reveals.
+
+**Enlarging the belt subspace dimension cannot fix this overshoot.** At $N_\alpha = 5$ the 3-dim basis already saturates the 3-vertex belt's radial-displacement subspace; richer constructions (more basis vectors) can only *increase* $f_{\rm belt}$ further (or hold it at 1, which is the maximum). Specifically: any construction that includes the monopole and the 2D E$_2$ quadrupole — the *minimal* physically-motivated belt content — will saturate at $N_\alpha = 5$ and overshoot by $\ge$ factor 2.7. Higher-$m$ harmonics (E$_3$, E$_4$, ...) at $N_\alpha = 5$ either don't exist (E$_3$ requires 6+ belt vertices to be linearly independent; only 3 here) or further saturate the already-full subspace.
+
+**The N$_\alpha = 5$ small empirical softening is therefore a constraint on the underlying dynamics, not just on belt subspace size**, and it is hostile to *any* pure belt-IRREP-projection mechanism that respects the $A_1 \oplus E_2$ symmetry content. The plausible escapes:
+
+- **Frequency-filtered belt projection.** Only soft (low-$\omega$) belt modes contribute; stiff (high-$\omega$) belt modes are filtered out via some physical mechanism. At $N_\alpha = 5$, perhaps the belt modes happen to be high-frequency and therefore filtered out, while at $N_\alpha = 10$ they are low-frequency and contribute. This requires an additional physical filter beyond pure IRREP selection.
+- **Energy-dependent IRREP weight.** The U-shape is driven by belt-IRREP modes weighted by some N-dependent factor (e.g., proportional to the mode's overlap with a specific N-dependent reference state, like the cluster-scale K$_3$ collective mode). This goes beyond the pure-projection framework.
+- **Non-belt-IRREP mechanism.** The U-shape is not driven by belt-IRREP zero-point fluctuations at all; some other mechanism is responsible (elastic stiffness from edge curvature, contributions from finite-temperature thermal fluctuations, off-diagonal Gaussian-mixing terms, etc.). This abandons R2 as currently formulated.
+
+**This insight upgrades Phase 3B-A from "fails one quantitative test" to "rules out the entire class of fixed-dimension belt-subspace projections AND severely constrains any dimension-scaling generalization."**
+
+### Constructive implications for Phase 3B-B
+
+The Phase 3B-A negative result is constructive in three ways:
+
+1. **Targets (b) and (c) are not differential tests.** Future Phase 3B realizations should not be evaluated against these — they are symmetry consistency checks that any inertia-degeneracy-aware construction satisfies automatically. The real differential tests are target (a) plus the pattern-shape constraint (small at $N_\alpha = 5$, large at $N_\alpha = 10$).
+
+2. **The pattern-shape anti-correlation rules out the entire class of fixed-dimension belt-subspace constructions.** Phase 3B-B (full character-theory IRREP decomposition with belt-IRREP dimension scaling) must produce a fundamentally different N-dependence: belt-IRREP dimension must scale with belt-vertex-count, not be fixed. But even this dimension-scaling generalization is constrained by point 3 below.
+
+3. **The N$_\alpha = 5$ overshoot indicates the U-shape mechanism may not be purely belt-IRREP-projection of the K$_3$-Gaussian-Hessian.** Any belt-IRREP construction capturing the 3-vertex belt's full radial-displacement subspace at $N_\alpha = 5$ overshoots empirical $-12\%$. Phase 3B-B must either (i) demonstrate that the full-IRREP construction at $N_\alpha = 5$ produces small softening despite covering the radial-displacement space (via cancellations or frequency-filtering structurally absent in Phase 3B-A), or (ii) confirm that Phase 3B-B cannot solve the N$_\alpha = 5$ problem and therefore R2 must be ruled out and the U-shape mechanism sought elsewhere.
+
+### Verdict
+
+**Phase 3B-A — minimal fixed-dimension belt-subspace projection (3D basis: A$_1$ in-plane breathing monopole + 2D E$_2$ quadrupole) — RULED OUT** as a complete R2 closure mechanism on two structural grounds (target (a) magnitude × 3 short + pattern-shape anti-correlation within axial polytopes).
+
+**Eighth programme-level negative-result demonstration** in OPEN-SS-35 closure programme.
+
+**R2 severely weakened — three of four model-(b) realizations now failed.** Phase 2 uniform-only (factor 7 undershoot); Phase 3A all-modes (factor 2.5 overshoot, flat); Phase 3B-A fixed-dim belt subspace (magnitude × 3 short, pattern anti-correlated). Only Phase 3B-B (full character-theory IRREP decomposition with belt-IRREP dimension scaling) remains untested. The $N_\alpha = 5$ overshoot insight further constrains Phase 3B-B sharply.
+
+### State at Session 14 Phase 3B-A close
+
+OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Phase 3B-A refines stage (vi) by ruling out a third realization of R2 closure; does not advance to a new programme-level stage). First qualitative cross-paradigm consilience claim (Session 9) intact. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. R1 ruled-out, Phase 2 ruled-out, Phase 3A ruled-out intact.
+
+**Forward-looking pointers for Session 15.**
+
+- **Priority 1 (sharply constrained):** Phase 3B-B — full IRREP-selective decomposition with character theory. Sharpened constraint from Phase 3B-A: must produce non-monotonic-in-belt-size pattern within axial polytopes; small $\delta_{\rm belt}$ at $N_\alpha = 5$ and large at $N_\alpha = 10$. If structurally impossible, R2 formally ruled out and U-shape mechanism must be sought outside the K$_3$-Gaussian-Hessian framework.
+- **Priority 2 (deferred indefinitely):** OPEN-SS-32 attenuation-factor derivation — defer until Phase 3B-B closes.
+- **Priority 3 (parallel):** OPEN-SS-16 Layer B closure work — deepest open problem at programme level.
+- **Priority 4 (parallel):** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity.
+
+**Anti-priorities:**
+- SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) deferred until Phase 3B-B closes; §7 has now shifted four times in this thread.
+- No further fixed-dimension belt-subspace variants (1D, 2D, etc.) — pattern-shape anti-correlation rules these out collectively as a class.
+- No higher-$m$ harmonics (m=3, m=4) as incremental enhancement of current Phase 3B-A basis — cannot fix the N$_\alpha = 5$ overshoot and may worsen it.
+
+The deliverables for Phase 3B-A: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3b_a.md` (285 lines); reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3b_a.py` (662 lines). The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 14 Phase 3B-A paragraph after Session 13 Phase 3A update; `future_projects.md` Active queue updated.
+
+---
+
+*End of Session 14 Phase 3B-A Opus reasoning. Future sessions append below.*
