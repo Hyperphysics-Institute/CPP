@@ -2719,3 +2719,309 @@ The deliverables for Session 12: sketch at `series_strong/papers/SS-9/sketches/S
 ---
 
 *End of Session 12 Opus reasoning. Future sessions append below.*
+
+## Session 13 Phase 1 — OPEN-SS-32 ↔ U-shape unification prior-art read (4 May 2026)
+
+**Title:** Phase 1 prior-art reading deliverable for the OPEN-SS-32 ↔ U-shape unification investigation registered as Session 12 Priority 1. No computation; structured digest of the SS-7 v1.3 §2.1 facet (c) treatment of OPEN-SS-32 (cluster-level oblate-deformation, $+0.55 B_{\rm pair}$ excess at J-solid $N_\alpha \in \{7, 8, 9, 10\}$, K$_3$ collective mode at cluster-shape scale) and the SS-8 §3.5 H3$'$ provisional residual model (interstitial-scale K$_3$ collective with $1/\phi^2$ attenuation). Methodological parallel OPEN-SS-32 ↔ OPEN-SS-28 noted. Geometric assessment of the radial-breathing analog: geometrically natural by Pattern 6 + empirical-coincidence + closure-leverage. **Refinement of patch-0149 cross-link from "coincides exactly" to "qualitative six-of-eight with octahedron $N_\alpha = 6$ as discriminator"** identified as the most consequential analytical finding of Phase 1. Three admissible readings of the six-of-eight coincidence: A (broader breathing selection, $O_h$ partially active); B (U-shape false positive at small $A$); C (two distinct partially-overlapping mechanisms). Reading-A vs B/C discriminator is the $N_\alpha = 6$ test. Phase 2 work plan (model (a) uniform scaling, single-session-tractable) registered.
+
+**Tier 4 inclusion scope.** Reasoning preserved at session close; reading deliverable, not computation, so substantive content is structural assessment of the unification hypothesis rather than numerical results. Housekeeping excluded per OS §4.
+
+### Strategy
+
+Session 12 closed by ruling out R1 and registering the U-shape ↔ OPEN-SS-32 connection investigation as Session 13 Priority 1, with the explicit anti-priority "do not speculatively connect U-shape to OPEN-SS-32 in Session 12 — clean R2-territory investigation requires careful prior-art reading and fresh session." Phase 1 honors that boundary. The deliverable is a digest, not a derivation. The intended outputs are: (a) shared vocabulary for the OPEN-SS-32 mechanism so Phase 2 computation has unambiguous referents; (b) sharp specification of the unification hypothesis so it is falsifiable; (c) inventory of which empirical and structural facts the unification must reproduce, with the most consequential one identified; (d) Phase 2 single-session-tractable work plan with discriminating test specified ahead of computation.
+
+The methodological discipline is that prior-art reading and computation are distinct sessions because reading shapes the question being asked, and computation answers a fixed question. Combining them in one session risks the computation being shaped by reading-time analytical drift, producing a result that answers a question that has shifted. Session 11 Phase 1 used this same boundary: Path (i) cluster-surface Thomas-form was scoped by reading the Bohr-Mottelson formalism before computing, not while computing. Phase 1 here mirrors that pattern.
+
+### SS-7 OPEN-SS-32 prior-art digest
+
+OPEN-SS-32 is registered in the SS-7 v1.3 binding-energy fit at §2.1 facet (c): the alpha-cluster binding-energy model $E_b(N_\alpha) = N_\alpha \cdot M_0 - N_e \cdot B_{\rm pair} \cdot f_{\rm SP}(N_\alpha) + \delta_{\rm shape}(N_\alpha)$ requires a non-zero $\delta_{\rm shape}$ specifically at $N_\alpha \in \{7, 8, 9, 10\}$, with the magnitude $+0.55 B_{\rm pair}$ excess fitting the AME 2020 binding-energies for $^{28}{\rm Si}$, $^{32}{\rm S}$, $^{36}{\rm Ar}$, $^{40}{\rm Ca}$ within $\pm 0.015 B_{\rm pair}$ scatter (SS-7 §3.4 fit table). The mechanism named in SS-7 §11 is **cluster-level collective oblate-deformation mode** — a K$_3$ excitation at cluster-shape scale that activates when the polytope has axial symmetry with belt-vs-apex distinction. The four J-solids in this regime — pentagonal bipyramid ($D_{5h}$), snub disphenoid ($D_{2d}$), triaugmented triangular prism ($D_{3h}$), gyroelongated square bipyramid ($D_{4d}$) — all have a principal axis of order $\geq 2$ and a distinguished equatorial belt; they admit oblate distortion that lowers $E_{\rm cluster}$ via collective K$_3$-mode resonance.
+
+Critically, the regular polytopes $T_d$ ($N_\alpha = 4$), $O_h$ ($N_\alpha = 6$), and $I_h$ ($N_\alpha = 12$) do *not* admit oblate distortion in the same sense — they are vertex-transitive with full 3D symmetry, no preferred axis, and OPEN-SS-32 gives $\delta_{\rm shape} \approx 0$ there. The $\{7, 8, 9, 10\}$ regime is sharply defined by the J-solid axial-symmetry-with-belt structure; OPEN-SS-32 is a shape-class-selective mechanism, not a smooth function of $A$.
+
+The K$_3$-mode classification matters because Pattern 6 (K$_3$ scale-recurrence at 7 confirmed instances) demonstrates that K$_3$ collective excitations appear at every relevant scale in CPP — quark-confinement scale (instance 1), nucleon scale (instance 2), alpha-cluster contact scale (instances 3, 4: SS-5, SS-7), nuclear cluster surface (instance 5), nucleon-orbital scale (instance 6, Session 6), and so on. OPEN-SS-32 is instance-7-territory: a K$_3$-mode at cluster-shape scale, complementing the established cluster-contact-scale K$_3$ from SS-5/SS-7.
+
+### SS-8 H3$'$ provisional residual model digest
+
+SS-8 §3.5 introduces a parallel mechanism at the *interstitial* scale (the gap-filling regions between alphas in non-close-packed polytopes): the H3$'$ provisional residual model. SS-8's structural finding is that the binding-energy-vs-A pattern across light nuclei has small systematic residuals after the SS-7 fit at the alpha-contact scale, and these residuals correlate with interstitial geometry rather than cluster-contact geometry. The proposed H3$'$ mechanism is an opposite-polarity pair-bonus at interstitial scale, attenuated by $1/\phi^2$ relative to the alpha-contact pair-bonus.
+
+The methodological parallel to OPEN-SS-32 is that both invoke geometrically-selective K$_3$ collective excitations at scales other than the alpha-alpha contact scale: OPEN-SS-32 at cluster-shape scale (K$_3$ at the polytope's collective oblate distortion); H3$'$ at interstitial scale (K$_3$ at the gap-filling pair geometry). They are not the same mechanism — the scales differ, the polarities differ, and the regimes of activation differ — but they share structural pattern: shape-class-selective K$_3$-mode physics at non-contact scales. This is consistent with Pattern 6 K$_3$ scale-recurrence.
+
+### Methodological parallel OPEN-SS-32 ↔ OPEN-SS-28
+
+OPEN-SS-28 (interstitial mechanism, registered in SS-7 §11) is structurally similar to OPEN-SS-32 in that both are shape-class-selective rather than $A$-monotonic. Where SS-7 fits the bulk binding-energy trend with a smooth $A$-dependent function of $N_\alpha$ and $N_e$, both OPEN-SS-28 and OPEN-SS-32 are activated by specific cluster-shape regimes — the regime selectivity is the diagnostic signature distinguishing them from energetic mechanisms that vary smoothly with $A$. In the OPEN-SS-35 closure programme, this pattern matters because the empirical $\hbar\omega = 41/A^{1/3}$ vs CPP $A^{-0.10}$ discrepancy was diagnosed in Session 12 (R1 ruled-out) as **shape-driven not radius-driven** — the U-shape inversion table peaks at J-solid mid-range and is near-zero at regular polytopes. Shape-class selectivity is the structural signature consistent with OPEN-SS-28, OPEN-SS-32, and the U-shape diagnostic.
+
+### Geometric assessment of radial-breathing analog
+
+The candidate U-shape mechanism is: cluster-frame radial-breathing zero-point fluctuation softens the nucleon-orbital $\hbar\omega^*$ via mode-amplitude modulation of the K$_3$-mediated mean field. The mechanism is geometrically natural on three independent grounds:
+
+**(i) Pattern 6 K$_3$ scale-recurrence.** The cluster-shape-scale K$_3$ mode is the established collective channel at this scale (instance 7 territory, OPEN-SS-32). Activating it via radial-breathing zero-point fluctuation is structurally consistent with the way K$_3$-mode physics appears at every relevant scale in CPP.
+
+**(ii) Empirical coincidence.** J-solid $N_\alpha \in \{7, 8, 9, 10\}$ in the U-shape Session 12 inversion table peaks at the same regime as OPEN-SS-32. This is — at first glance — a strong empirical hint that the same mechanism is operating: a K$_3$ collective at cluster-shape scale producing both the $+0.55 B_{\rm pair}$ binding-energy excess (energy-domain effect, OPEN-SS-32) and the U-shape softening of $\hbar\omega^*$ (mode-amplitude-domain effect via zero-point fluctuation).
+
+**(iii) Closure leverage.** A single mechanism unifying these would close R2 (the only remaining A-scaling closure candidate) *and* identify additional CPP physics for gap-strength closure (the avenues registered in Session 11 Phase 1 — radial-breathing zero-point fluctuation at cluster-shape scale could affect both $\hbar\omega^*$ and indirectly the layer-3 spin-orbit picture via shape-mediated coupling). One mechanism, two closures. High leverage if true.
+
+### Refinement of patch-0149 cross-link — the most consequential Phase 1 finding
+
+The Research_Frontier patch 0149 cross-link from Session 12 close registered the U-shape diagnostic with the language "U-shape and OPEN-SS-32 oblate regimes coincide exactly." Phase 1 reading reveals this claim is **false at $N_\alpha = 6$**.
+
+The octahedron is **inside** the U-shape mid-range — Session 12's inversion table gives $R_\alpha(N_\alpha = 6) = 1.127 \cdot R_{8{\rm Be}}$, a $+12.7\%$ expansion required for empirical match, comparable to the $+19.1\%$ at $N_\alpha = 7$ and not near zero. By Session 12's logic, $N_\alpha = 6$ exhibits the same radius-expansion-from-shape pattern as J-solid mid-range.
+
+But the octahedron is **outside** the OPEN-SS-32 oblate regime. The octahedron is a regular polytope ($O_h$ symmetry, vertex-transitive, no preferred principal axis, no equatorial belt). In SS-7 §3.4 fit, $\delta_{\rm shape}(N_\alpha = 6) \approx 0$; OPEN-SS-32 does not activate at the octahedron because the mechanism requires axial-symmetry-with-belt structure that $O_h$ does not have.
+
+So at $N_\alpha = 6$ we have empirical U-shape signature (Session 12) but not OPEN-SS-32 signature (SS-7). The coincidence is six-of-eight, not exact: $\{5, 7, 8, 9, 10\} + \{4, 12 \text{ trivially zero in both}\} = 7$ matches; $\{6\}$ doesn't.
+
+Six-of-eight is still strong qualitative coincidence, but the discrepancy at $N_\alpha = 6$ is the discriminator. Three admissible readings:
+
+**Reading A (broader breathing selection).** The radial-breathing channel selects for axial *or* full 3D symmetry — i.e., the mechanism is broader than OPEN-SS-32, activates at any polytope with sufficient symmetry to support a coherent radial-breathing zero-point mode. Under Reading A, the $O_h$ octahedron *should* exhibit U-shape softening because its full 3D symmetry permits clean radial breathing. This would predict positive U-shape softening at $N_\alpha = 6$, in agreement with the empirical $+12.7\%$ expansion requirement.
+
+**Reading B (U-shape false positive at small $A$).** The empirical $\hbar\omega = 41/A^{1/3}$ formula may not extend cleanly to $A = 16, 24$ (i.e., the formula's validity may be restricted to mid-mass nuclei). The Session 12 inversion at $N_\alpha = 4, 5, 6$ requires $\hbar\omega^{\rm CPP}/\hbar\omega^{\rm emp}$ ratios that may simply be artifacts of fitting a single power-law to a regime where it doesn't apply. Under Reading B, the apparent U-shape at small $A$ is not real physics — only the J-solid mid-range $\{7, 8, 9, 10\}$ is genuine, and OPEN-SS-32 ↔ U-shape is then exact rather than six-of-eight.
+
+**Reading C (two distinct partially-overlapping mechanisms).** The U-shape and OPEN-SS-32 might be separate physics that happen to overlap in the J-solid mid-range. Under Reading C, the unification hypothesis is wrong — what looks like one mechanism is two — and the Phase 2 / Phase 3 work would be testing each independently.
+
+**Discriminator: the $N_\alpha = 6$ test.** Reading A predicts $O_h$ exhibits U-shape softening; Readings B and C do not. Phase 2 / Phase 3 computation must report on $N_\alpha = 6$ explicitly. This is the central single test that Phase 2 must address.
+
+### Phase 2 work plan
+
+Two candidate definitions of the breathing degree of freedom: (a) uniform scaling $\vec R_i \to \lambda \vec R_i$ for all vertices (simplest, single dof); (b) symmetry-resolved breathing modes (one dof per IRREP of cluster point group). Prescription: start with (a), revisit (b) only if (a) fails to reproduce observed selection rules. The reasoning: (a) is single-session-tractable and lets us bound the magnitude of the radial-breathing contribution before investing in the more elaborate (b). If (a) gives the right magnitude and right pattern, the unification is established at coarse resolution. If (a) gives the wrong magnitude or wrong pattern, the failure mode tells us how (b) must differ.
+
+Discriminating tests for Phase 2: pattern (U-shape vs monotonic), magnitude (factor close to 1 at peak), endpoint signs ($N_\alpha = 4$ and $N_\alpha = 12$ should give near-zero), and the $N_\alpha = 6$ Reading-A vs B/C discriminator.
+
+### State at Session 13 Phase 1 close
+
+Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. Six programme-level stages preserved. First qualitative cross-paradigm consilience claim (Session 9) intact. Phase 1 is reading deliverable; no new programme-level stage. The deliverable for Phase 1: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase1.md` (291 lines). The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 13 Phase 1 paragraph after Session 12 update; the cross-link claim refined from "coincides exactly" to "qualitative six-of-eight with octahedron discriminator."
+
+**Forward-looking pointers for Phase 2 (continuation in same session per Thomas's "take territory" priority directive).**
+
+- **Priority 1:** Phase 2 model (a) uniform scaling computation — single-session-tractable, should resolve magnitude + pattern + endpoint sign.
+- **Priority 2:** Phase 3 model (b) IRREP decomposition — multi-session by scope (3–5 sessions), workable only after Phase 2 establishes whether the simpler model carries enough structure.
+- **Priority 3 (deferred):** OPEN-SS-16 Layer B closure work — deepest open problem; deferred.
+- **Priority 4 (parallel):** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity (does it exclude $A = 16, 24$?).
+
+**Anti-priority:** Do not initiate SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until investigation reaches stable state.
+
+---
+
+*End of Session 13 Phase 1 Opus reasoning.*
+
+## Session 13 Phase 2 — Uniform-scaling radial-breathing model (a) RULED OUT (4 May 2026)
+
+**Title:** Execute Phase 1 §6.3 step 1 — model (a) uniform scaling $\vec R_i \to \lambda \vec R_i$ for all vertices, single dof per cluster. Compute zero-point fluctuation in $\lambda$ from K$_3$ potential curvature, derive fractional softening of nucleon-orbital $\hbar\omega^*$, sweep over eight polytopes $N_\alpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, compare to Session 12 U-shape inversion table. **Three independent failure modes — magnitude (factor 7.4 undershoot at peak), pattern (monotonic decreasing vs U-shape), endpoint signs (wrong at $N=4$ and $N=12$).** Model (a) RULED OUT as complete R2 closure mechanism. **Sixth programme-level negative result.** Unification hypothesis itself NOT refuted; Phase 1 §6.3 anticipated this branch. R2 substantively weakened but not closed; model (b) symmetry-resolved decomposition remains untested.
+
+**Tier 4 inclusion scope.** Reasoning preserved verbatim at session close; computation deliverable. Housekeeping excluded per OS §4.
+
+### Strategy
+
+Phase 1 §6.3 step 1 specified model (a) uniform scaling as the simplest test. Two competing prior expectations: (1) optimistic — uniform scaling captures enough structure to give magnitude and pattern at coarse resolution, with model (b) IRREP decomposition only refining details; (2) pessimistic — uniform scaling is a single dof per cluster and lacks the shape-class selection structure that the empirical U-shape demands, so model (a) will fail badly, with the failure mode being precisely the absence of shape-class selection. Phase 2 distinguishes between (1) and (2).
+
+### Model and computation
+
+Treat the cluster as a rigid polytope under a uniform radial scaling $\lambda$. Each vertex $\vec R_i$ moves as $\vec R_i(\lambda) = \lambda \vec R_i^{(0)}$. The K$_3$ collective mean field at cluster-shape scale gives a binding $E_{\rm cluster}(\lambda)$ that minimizes at $\lambda = 1$. Modeling the K$_3$ potential as Gaussian in $(\lambda - 1)$ at the K$_3$ width $\sigma_{K3}$:
+
+$$E_{\rm cluster}(\lambda) = \text{const} - |E| \cdot B_{\rm pair} \cdot \exp\left(-\frac{(\lambda-1)^2 R_\alpha^2}{2\sigma_{K3}^2}\right) \tag{P2.1}$$
+
+where $|E|$ is the number of pair contacts (cluster edges), $B_{\rm pair} = 2.342$ MeV is the SS-5 K$_3$ collective contribution per pair, $R_\alpha = 1.68$ fm is the alpha overlap scale (anchor for the K$_3$ width per SS-7 §11), and $\sigma_{K3}$ is the K$_3$ Gaussian width with canonical value $1.68$ fm (= $R_\alpha$, scale-recurrence). The Gaussian form is justified by the Pattern 6 K$_3$ scale-recurrence: the K$_3$ potential at cluster-shape scale follows the same Gaussian ansatz used at every other scale, with parameters anchored by the established alpha-alpha pair physics.
+
+Spring constant in $\lambda$:
+$$k_\lambda = \left.\frac{d^2 E_{\rm cluster}}{d\lambda^2}\right|_{\lambda=1} = |E| \cdot B_{\rm pair} \cdot \frac{R_\alpha^2}{\sigma_{K3}^2} \tag{P2.2}$$
+
+Effective mass (kinetic-energy coefficient in $\lambda$):
+$$M_\lambda c^2 = m_\alpha c^2 \cdot \sum_i |\vec R_i^{(0)}|^2 \tag{P2.3}$$
+
+where $m_\alpha c^2 = 3727$ MeV. Zero-point fluctuation:
+$$\langle (\Delta\lambda)^2 \rangle = \frac{\hbar c}{2 \sqrt{k_\lambda M_\lambda c^2}} \tag{P2.4}$$
+
+(in natural units with $\hbar c = 197.327$ MeV·fm). Fractional softening of the nucleon-orbital $\hbar\omega^*$ (which scales as $1/R_c^2 \propto 1/\lambda^2$):
+$$\frac{\Delta \hbar\omega^*}{\hbar\omega^*_0} \approx -2 \langle (\Delta\lambda)^2 \rangle \tag{P2.5}$$
+
+The factor 2 is the leading-order Taylor expansion of $1/\lambda^2$ about $\lambda = 1$.
+
+Sensitivity scan: $\sigma_{K3} \in [1.0, 2.5]$ fm to probe magnitude robustness. Wider $\sigma_{K3}$ gives flatter K$_3$ potential, larger zero-point fluctuation, larger softening. The canonical $\sigma_{K3} = R_\alpha = 1.68$ fm is the Pattern-6-anchored value.
+
+### Eight-row results table
+
+Polytope inputs: vertex coordinates from canonical 600-cell deltahedra (consistent with SS-7 §3 conventions). $|E|$ counted directly. $\sum |\vec R_i|^2$ computed numerically.
+
+| $N_\alpha$ | polytope            | sym       | $|E|$ | $\hbar\omega_{\rm br}$ (MeV) | predicted softening | empirical required | pred/emp |
+|---|---|---|---|---|---|---|---|
+| 4  | tetrahedron         | $T_d$     | 6  | 5.89 | $-21.05\%$ | $+11.5\%$       | sign mismatch |
+| 5  | trig. bipyr.        | $D_{3h}$  | 9  | 5.78 | $-13.78\%$ | $-12.2\%$       | $1.13$ |
+| 6  | octahedron          | $O_h$     | 12 | 5.89 | $-10.53\%$ | $-21.3\%$       | $0.50$ |
+| 7  | pent. bipyr.        | $D_{5h}$  | 15 | 5.58 | $-7.99\%$  | $-29.5\%$       | $0.27$ |
+| 8  | snub disph.         | $D_{2d}$  | 18 | 5.43 | $-6.47\%$  | $-31.8\%$       | $0.20$ |
+| 9  | triaug. tri. prism  | $D_{3h}$  | 21 | 5.30 | $-5.42\%$  | $-33.1\%$       | $0.16$ |
+| 10 | gyroel. sq. bipyr.  | $D_{4d}$  | 24 | 5.11 | $-4.57\%$  | $-33.6\%$ (peak)| $0.14$ |
+| 12 | icosahedron         | $I_h$     | 30 | 4.90 | $-3.50\%$  | $+1.4\%$        | sign mismatch |
+
+The breathing-mode quanta $\hbar\omega_{\rm br} = \sqrt{k_\lambda / M_\lambda} \cdot \hbar c$ are all in the range 4.9–5.9 MeV — the breathing degree of freedom is moderately stiff at this scale, and the zero-point fluctuation amplitudes are correspondingly modest.
+
+### FINDING 1: Wrong magnitude
+
+At empirical peak $N_\alpha = 10$, the model gives $-4.57\%$ vs the empirical $-33.6\%$ requirement — factor 7.4 undershoot. The sensitivity scan confirms factor 2.5 magnitude variation across $\sigma_{K3} \in [1.0, 2.5]$ fm: larger $\sigma_{K3}$ gives larger softening because the K$_3$ potential is flatter, but even at $\sigma_{K3} = 2.5$ fm (the upper bound of physically reasonable values, larger than the alpha overlap scale itself), the softening at $N_\alpha = 10$ reaches only $\approx -11.4\%$ — still factor 3 undershoot. Closing the empirical magnitude would require $\sigma_{K3} \approx 8$ fm, broader than the cluster itself, and entirely unphysical (the K$_3$ width cannot exceed the typical inter-vertex distances).
+
+This is structural failure, not parameter-tuning failure. Model (a)'s mode amplitude is bounded by the K$_3$ stiffness, and the K$_3$ stiffness is anchored by the established alpha-alpha pair physics that produced the SS-5/SS-7 successes. There is no physically reasonable adjustment of $\sigma_{K3}$ that closes the magnitude.
+
+### FINDING 2: Wrong pattern
+
+The model predicts monotonically decreasing softening with $N_\alpha$ (peak $-21\%$ at $N_\alpha = 4$ tetrahedron, smallest deltahedron). The empirical pattern is U-shape with peak at $N_\alpha = 10$ gyroelongated square bipyramid. These patterns are qualitatively incompatible.
+
+Structural reason: $\langle (\Delta\lambda)^2 \rangle \sim 1/\sqrt{|E| \cdot \sum |\vec R_i|^2} \sim 1/N_\alpha$ for deltahedra at fixed edge length (because $|E| \propto N_\alpha$ at fixed coordination and $\sum |\vec R_i|^2 \propto N_\alpha$ at fixed scale). Uniform scaling captures *bulk-density scaling* — larger clusters have larger total moment of inertia, smaller fractional zero-point fluctuation in the breathing dof, smaller softening. This is correct bulk-density physics, but it is not the empirical signal. The empirical U-shape is *shape-class-driven* — the J-solid mid-range $\{7, 8, 9, 10\}$ shows enhanced softening because of belt-vs-apex axial-symmetry structure that the regular polytopes don't have. Model (a) has no shape-class structure; it only sees bulk density. The wrong pattern is the inevitable consequence.
+
+This failure mode is informative: it identifies precisely the structure that model (b) IRREP decomposition must add — shape-class selection via projection onto belt-deformation IRREPs of each cluster's point group.
+
+### FINDING 3: Wrong endpoint signs
+
+The empirical $N_\alpha = 4$ row requires $+11.5\%$ — slight compression rather than softening. The empirical $N_\alpha = 12$ row requires $+1.4\%$ — near zero. Model (a) predicts substantial softening at both endpoints ($-21.05\%$ at $T_d$, $-3.50\%$ at $I_h$). Sign mismatch at the regular polytopes.
+
+The structural reason for the empirical near-zero / slight-compression at $T_d$ and $I_h$ is precisely that these are vertex-transitive with no preferred axis — the radial-breathing mode is fully symmetric (totally symmetric IRREP $A_1$) and either does not couple to nucleon-orbital softening, or couples in a way that is canceled by other symmetric modes. Model (a) in its uniform-scaling form sees no symmetry distinction, just bulk density, and predicts substantial softening at the small-$N$ tetrahedron where the breathing mode is "softest" by the $1/N$ argument.
+
+The endpoint-sign mismatch confirms that model (a) is missing the symmetry-projection structure that the empirical pattern demands.
+
+### $N_\alpha = 6$ Reading-A test
+
+Model (a) predicts $-10.53\%$ softening at the octahedron — non-zero. Trivially consistent with Reading A (broader breathing selection rule). But the consistency is automatic since uniform scaling has *no* shape-class selection rule whatsoever — all eight polytopes get non-zero softening, including the octahedron. Real Reading-A vs Reading-B/C discrimination requires model (b) where the radial-breathing dof can be projected onto specific IRREPs of each point group; Reading A would predict $O_h$ has non-zero amplitude in the relevant breathing IRREP, Reading B/C would predict $O_h$ has zero or near-zero amplitude.
+
+Phase 2 cannot resolve the Reading-A vs B/C question. Phase 3 is required for that.
+
+### Verdict
+
+**Uniform-scaling radial-breathing model (a) RULED OUT** as a complete R2 closure mechanism on three independent grounds (magnitude, pattern, endpoint signs).
+
+**Sixth programme-level negative-result demonstration** in OPEN-SS-35 closure programme.
+
+**The unification hypothesis itself is NOT refuted.** Phase 1 §6.3 explicitly anticipated this branch. Model (b) symmetry-resolved breathing decomposition remains untested. The selection-rule structure of the empirical U-shape is precisely shape-class-driven, which uniform scaling cannot produce by construction; the OPEN-SS-32 mechanism itself selects for J-solid belt/seam structure, and the breathing-mode analog must also do so for the unification to hold. Phase 3 (model b) is the natural multi-session next step.
+
+### State at Session 13 Phase 2 close
+
+R2 substantively weakened (simplest plausible mechanism fails badly, magnitude shortfall too large for simple refinements of (a) to bridge it) but not closed. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. R1 ruled-out (Session 12) intact.
+
+**Forward-looking pointers for Phase 3 (Session 14 — anticipated Phase 3A scoping in this session per Thomas's "take territory" directive).**
+
+- **Priority 1:** Phase 3 model (b) symmetry-resolved breathing decomposition. Project breathing dof onto IRREPs of each cluster's point group; identify belt-localized modes for J-solid deltahedra; check whether belt-mode contributions alone produce U-shape. Multi-session by scope.
+- **Priority 2 (deferred):** OPEN-SS-32 attenuation-factor derivation if Phase 3 succeeds.
+- **Priority 3 (parallel):** OPEN-SS-16 Layer B closure work.
+- **Priority 4 (parallel):** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity.
+
+**Anti-priority:** Do not initiate SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until Phase 3 returns a result.
+
+---
+
+*End of Session 13 Phase 2 Opus reasoning.*
+
+## Session 13 Phase 3A — Naive full-Hessian RULED OUT; upper-bound benchmark established (5 May 2026)
+
+**Title:** Phase 3 was registered as multi-session (3–5 sessions) with Phase A as single-session-tractable scoping step: full-mode-space Hessian decomposition without IRREP projection. Phase A serves as upper-bound benchmark and as falsifier of the simplest possible model (b) realization. **Three structural findings — flat pattern across all polytopes ($-85 \pm 1\%$), factor 2.5 OVERSHOOT at empirical peak, $O_h \approx D_{2d}$ selection failure.** Naive full-Hessian RULED OUT. **Seventh programme-level negative result.** **Constructive content:** empirical $-33.6\%$ peak now bracketed between Phase 2 lower bound $-4.6\%$ and Phase 3A upper bound $-85\%$; empirical is $\sim 40\%$ of upper bound. Mode space contains sufficient amplitude; **selection is the bottleneck.** Phase 3B IRREP-selective decomposition registered with three sharply constrained quantitative targets, turning Phase 3B from qualitative search into sharp falsifier.
+
+**Tier 4 inclusion scope.** Reasoning preserved verbatim at session close; computation deliverable. Housekeeping excluded per OS §4.
+
+### Strategy
+
+Phase 2 ruled out model (a) uniform scaling on three grounds. Phase 3 explores model (b) symmetry-resolved breathing decomposition. Phase 3 proper (IRREP projection per cluster point group) is multi-session by scope. The full-mode-space upper bound is the diametrically opposite extreme: include all $3N - 6$ vibrational modes without IRREP projection. This is single-session-tractable and serves as Phase 3 scoping:
+
+- If the full Hessian still cannot reach empirical magnitudes, the unification programme is dead from the mode-amplitude side. Phase 3B IRREP work would be wasted — there is no amplitude to select from.
+- If the full Hessian overshoots empirical, IRREP projection becomes the selection mechanism — model (b) the only remaining route — and Phase 3B IRREP work is the right next multi-session investment, with the constraint that some specific fraction of full-mode-space amplitude must be in belt-localized IRREPs.
+
+The bracketing logic is the Phase 3A deliverable. Even if Phase 3A itself fails (ruled out as a complete mechanism), it is constructive if it brackets the empirical between the two extremes.
+
+### Model and computation
+
+Each of the cluster's $|E|$ edges contributes a spring along the inter-vertex direction $\hat n_{ij} = (\vec R_j - \vec R_i)/|\vec R_j - \vec R_i|$:
+$$k_{\rm edge} = \frac{B_{\rm pair}}{\sigma_{K3}^2} = \frac{2.342 \text{ MeV}}{(1.68 \text{ fm})^2} = 0.83 \text{ MeV/fm}^2 \tag{P3A.1}$$
+
+(canonical, K$_3$ width and pair binding from SS-5/SS-7 — same values used in Phase 2).
+
+The full $3N \times 3N$ Hessian is:
+$$H_{i\mu, j\nu} = \sum_{\langle kl \rangle: i \in \{k,l\}, j \in \{k,l\}} \pm k_{\rm edge} \cdot \hat n_{kl,\mu} \hat n_{kl,\nu} \tag{P3A.2}$$
+
+with sign rule: $+$ for diagonal vertex-pair contributions ($i = j$), $-$ for off-diagonal ($i \neq j$). Diagonalize $H$, exclude six rigid-body zero-modes (three translations + three rotations). For each non-rigid mode $k$ with eigenvalue $\lambda_k$ and unit-normalized eigenvector $\vec v_k \in \mathbb{R}^{3N}$:
+
+$$\langle (\delta r_{ij})^2 \rangle_k = \frac{\hbar c}{2 \sqrt{m_\alpha c^2 \cdot \lambda_k}} \cdot [(\vec v_k(i) - \vec v_k(j)) \cdot \hat n_{ij}]^2 \tag{P3A.3}$$
+
+where $\vec v_k(i) \in \mathbb{R}^3$ is the displacement of vertex $i$ in mode $k$. This is the per-mode contribution to the variance of the edge $ij$ length.
+
+Sum over all $3N - 6$ non-rigid modes, average over edges:
+$$\langle (\delta r)^2 \rangle_{\rm full} = \frac{1}{|E|} \sum_{\langle ij \rangle} \sum_k \langle (\delta r_{ij})^2 \rangle_k \tag{P3A.4}$$
+
+Fractional softening:
+$$\frac{\Delta \hbar\omega^*}{\hbar\omega^*_0} \approx -\frac{2 \langle (\delta r)^2 \rangle_{\rm full}}{R_\alpha^2} \tag{P3A.5}$$
+
+This is the same factor-2 Taylor expansion used in Phase 2, applied now at edge level rather than uniform-scaling level.
+
+### Eight-row results table
+
+| $N_\alpha$ | polytope            | sym       | $|E|$ | $3N-6$ modes | softening (full)        | empirical            | pred/emp        |
+|---|---|---|---|---|---|---|---|
+| 4  | tetrahedron         | $T_d$     | 6  | 6  | $-86.77\%$ | $+11.5\%$       | sign mismatch |
+| 5  | trig. bipyr.        | $D_{3h}$  | 9  | 9  | $-85.71\%$ | $-12.2\%$       | $7.0$ |
+| 6  | octahedron          | $O_h$     | 12 | 12 | $-86.53\%$ | $-21.3\%$       | $4.1$ |
+| 7  | pent. bipyr.        | $D_{5h}$  | 15 | 15 | $-85.22\%$ | $-29.5\%$       | $2.9$ |
+| 8  | snub disph.         | $D_{2d}$  | 18 | 18 | $-85.47\%$ | $-31.8\%$       | $2.7$ |
+| 9  | triaug. tri. prism  | $D_{3h}$  | 21 | 21 | $-85.35\%$ | $-33.1\%$       | $2.6$ |
+| 10 | gyroel. sq. bipyr.  | $D_{4d}$  | 24 | 24 | $-85.15\%$ | $-33.6\%$ (peak)| $2.5$ |
+| 12 | icosahedron         | $I_h$     | 30 | 30 | $-84.92\%$ | $+1.4\%$        | sign mismatch |
+
+### FINDING 1: FLAT pattern across all polytopes
+
+Full-Hessian softening clusters at $-85 \pm 1\%$ for all eight polytopes (range $-84.92\%$ to $-86.77\%$, total spread $1.9\%$). No shape-class selection. The full mode space cannot produce U-shape selectivity by itself.
+
+**Structural origin of the flat pattern.** At canonical $\sigma_{K3} = 1.68$ fm with $R_\alpha = 1.68$ fm, the K$_3$ potential is so flat compared to inter-vertex distances that single-edge variance computed for an isolated edge ($k_{\rm edge} = 0.83$ MeV/fm$^2$, isolated pair, no vertex coupling) gives $\langle (\delta r)^2 \rangle_{\rm isolated} \sim 2.51$ fm$^2$. The full-Hessian computation gives $\sim 2.4$ fm$^2$ across all polytopes — a 2\% reduction. **Edges are nearly independent in this weakly-bound system.** Vertex-coupling (the off-diagonal Hessian structure) is barely modulating the per-edge variance.
+
+In a stiffly-bound system (large $k_{\rm edge}$, deep potential), vertex-coupling would matter substantially — modes would mix strongly across vertices, and different polytope topologies would produce sharply different mode spectra. But in this regime — $\sigma_{K3} \approx R_\alpha$, weakly-bound K$_3$ collective at cluster-shape scale — the coupling between edges is weak, and the polytope topology is barely visible in the integrated mode-space variance. This is *why* the eight-row results are flat: not because the polytopes are similar (they aren't — the symmetry groups span $T_d$ to $D_{4d}$ to $I_h$), but because in this weakly-bound regime, integrated mode amplitude is dominated by the per-edge contribution, which is invariant under polytope choice.
+
+This is a structural insight, not a computational artifact. Model (b) without IRREP projection sees only integrated mode amplitude, which is weak-coupling-flat. Only the *shape* of the mode-space — which IRREPs receive amplitude — is polytope-dependent in this regime, and that shape is invisible to the integrated computation.
+
+### FINDING 2: Factor 2.5 OVERSHOOT at empirical peak
+
+At $N_\alpha = 10$, full-Hessian gives $-85.15\%$ vs empirical $-33.6\%$. Factor 2.5 overshoot. Compared to Phase 2 model (a) which gave $-4.57\%$, Phase 3A is factor 18.6 closer to empirical magnitude. **The full mode space contains sufficient zero-point amplitude to reach empirical magnitudes — the bottleneck is selection, not amplitude.**
+
+This is the most important quantitative finding of Phase 3A. Phase 2 alone was ambiguous about whether the radial-breathing mechanism even has enough amplitude in principle to close R2 — the factor 7.4 undershoot of model (a) could have meant either "wrong mechanism" or "right mechanism but wrong dof count." Phase 3A resolves the ambiguity: the right mechanism has *too much* amplitude when integrated over all modes, so the closure mechanism must be selection (a fraction of mode amplitude).
+
+The fraction is approximately $0.40$: empirical $-33.6\%$ / Phase 3A $-85\%$ = 0.395. Phase 3B IRREP-selective decomposition must produce a belt-localized fraction of $\sim 0.40$ of the full mode amplitude at J-solid mid-range to match empirical.
+
+### FINDING 3: $N_\alpha = 6$ Reading-A test fails for full-Hessian
+
+Octahedron $O_h$ gives $-86.53\%$ softening vs $D_{2d}$ snub disphenoid $-85.47\%$ — ratio 1.012, essentially identical. Full-Hessian model with no IRREP projection cannot distinguish $O_h$ (no belt) from $D_{2d}$ (belt-active).
+
+This is *not* a Reading-A vs B/C verdict at the unification level — it's a verdict that the full-mode-space implementation lacks the selection structure needed to test the unification. The full-Hessian sees integrated mode amplitude, which is flat across symmetry classes; it doesn't see which IRREP receives the amplitude. Reading A vs B/C is precisely a question about *which IRREP* receives the amplitude at $O_h$ — totally symmetric ($A_{1g}$) vs belt-deformation-active. Phase 3B can resolve this; Phase 3A cannot.
+
+### Constructive content of the negative result
+
+Empirical peak softening $-33.6\%$ at $N_\alpha = 10$ lies cleanly between Phase 2 lower bound ($-4.6\%$) and Phase 3A upper bound ($-85\%$). Empirical is approximately $40\%$ of full-mode-space upper bound.
+
+The mode space contains sufficient amplitude. Therefore the obstruction to R2 closure — assuming R2 closure exists — is selection: which fraction of mode amplitude is belt-localized vs delocalized. This is precisely the discriminator IRREP projection is designed to address. Phase 3A converts Phase 3 from "is there enough amplitude?" (yes) to "which symmetry channel selects the belt-localized portion?" (Phase 3B's task) — a sharper and more productive question.
+
+The bracketing also yields **three sharply constrained quantitative targets** for Phase 3B:
+
+1. **Target (a):** $\sim 40\%$ of full-mode-space softening at J-solid mid-range ($N_\alpha = 7$–$10$). Belt-localized fraction of the total mode amplitude must be $\sim 0.4$ in this regime.
+2. **Target (b):** Near-zero at regular polytopes ($T_d$, $I_h$). Belt-IRREP must be empty or trivially populated by symmetry — $T_d$ and $I_h$ have no belt IRREP in their character tables, so the belt-localized projection must vanish at these polytopes.
+3. **Target (c):** Substantially less at $N_\alpha = 6$ ($O_h$) than at $N_\alpha = 8$ ($D_{2d}$). $O_h$ has belt-equivalent IRREPs ($E_g$) but no axial preference; $D_{2d}$ has a unique principal $S_4$ axis with belt-deformation IRREPs that should populate strongly. The Reading-A vs B/C discriminator at $N_\alpha = 6$ becomes a sharp prediction: $O_h$/$D_{2d}$ ratio in Phase 3B should be $\ll 1$ if Reading B or C, and substantial (close to 1) if Reading A.
+
+These three targets together turn Phase 3B into a sharp falsifier rather than a qualitative search.
+
+### Verdict
+
+**Naive full-Hessian decomposition (model (b) without IRREP projection) RULED OUT** as a complete R2 closure mechanism on three grounds (flat pattern, factor 2.5 overshoot, $O_h \approx D_{2d}$ selection failure).
+
+**Seventh programme-level negative-result demonstration** in OPEN-SS-35 closure programme.
+
+**Phase 3A is constructive despite being a negative result.** Phase 2 established lower bound $-4.6\%$. Phase 3A establishes upper bound $-85\%$. Empirical $-33.6\%$ is bracketed and is $\sim 40\%$ of upper bound. R2 closure if it exists must be a partial-mode-space selection within the bracketed region.
+
+**R2 severely weakened but not formally closed.** Two of three plausible model-(b) realizations have failed (uniform scaling at lower extreme; full-Hessian at upper extreme). Only IRREP-selective decomposition (Phase 3B) remains untested — and the bracketing constrains its expected behavior sharply.
+
+### State at Session 13 Phase 3A close
+
+OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Phase 3A refines stage (vi) by establishing the upper bound and ruling out the simplest model (b) realization; no new programme-level stage). First qualitative cross-paradigm consilience claim (Session 9) intact. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. R1 ruled-out (Session 12), Phase 2 ruled-out intact.
+
+**Forward-looking pointers for Session 14.**
+
+- **Priority 1 (sharply constrained):** Phase 3 Phase B — IRREP-selective decomposition. Three targets specified above turn Phase 3B into a sharp falsifier.
+- **Priority 2 (deferred):** OPEN-SS-32 attenuation-factor derivation if Phase 3B succeeds (same belt-IRREP framework).
+- **Priority 3 (parallel):** OPEN-SS-16 Layer B closure work — deepest open problem; deferred.
+- **Priority 4 (parallel):** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity (does it exclude $A = 16, 24$?). Partial discrimination of Reading B from A and C complementing Phase 3B mechanistic test.
+
+**Anti-priority:** Do not initiate SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until Phase 3B returns a result. §7 has shifted three times in this single session.
+
+The deliverables for Phase 3A: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3a.md`; reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3a.py`. The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 13 Phase 3A paragraph after Phase 2 update.
+
+---
+
+*End of Session 13 Phase 3A Opus reasoning. Future sessions append below.*
