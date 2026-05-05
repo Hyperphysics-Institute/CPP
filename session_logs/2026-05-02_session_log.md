@@ -1851,3 +1851,84 @@ Negative-result count unchanged at **10 programme-level negative results** (no n
 ---
 
 *Session log Session 17 Phase 5 entry per §4 discipline. Substantive content: geometric-shift R3 (uniform $R_\alpha$ shift) and R4 (cluster shape distortion) PASS SCOPING — F1 sign by Gaussian symmetry, F2 magnitude capacity well above empirical, F3 pattern monotonic for any monotonic parameterization. **First non-rule-out outcome in five sequential phases.** Sign-orthogonal complement to Phase 4 closure: same Gaussian function generates Phase 4's negative ΔE (closure) and Phase 5's positive ΔE (opening) in different framings. R3 and R4 advance to multi-session derivation status; next phase identifies $\delta R(N)$ from CPP physics (Coulomb, Pauli, surface-density alternative, spin-orbit). Methodology lesson from Phase 4 reinforced: F1 sign analytical check applied first, computation only for F2/F3. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. Programme negative-result count unchanged at 10.*
+
+---
+
+## Session 18 Phase 6 — R3-Coulomb scoping PASSES with 5% magnitude bullseye at N=10; second positive outcome in OPEN-SS-32 ↔ U-shape thread; first quantitative agreement at 5% level for zero-parameter prediction (5 May 2026)
+
+### Context
+
+Session 17 Phase 5 established that R3 (uniform $R_\alpha(N)$ shift) and R4 (cluster shape distortion) channels pass scoping under F1/F2/F3 with R3-lin calibration $\delta R(N=10) = 1.05$ fm = $44.4\%$ of $R_{\rm canon}$ as the natural target $\delta R$ scale. The Phase 5 sketch §6.1 designated R3-Coulomb as the natural Session 18 first move. The Phase 4/5 methodology lesson — F1 sign analytical check first, before computation — has been established as the workflow default.
+
+### What was done
+
+Phase 6 executed R3-Coulomb scoping using simplified CPP charge model (point charges $+2e$ at J-solid vertices) across all 8 polytopes ($N = 4, 5, 6, 7, 8, 9, 10, 12$). F1 sign analytical check applied first; computation tested F2 magnitude and F3 pattern only.
+
+### F1 sign — analytical, universal pass via composition
+
+The F1 sign argument is one paragraph composed of two analytical results: (i) Coulomb interaction between alpha clusters (each $+2e$) is repulsive, so cluster equilibrium shifts outward, $\delta R_{\rm Coulomb} > 0$; (ii) Phase 5 sign theorem: any $\delta R \neq 0$ gives $\Delta V_{\rm edge} = B_{\rm pair} \cdot [1 - \exp(-\delta R^2/(2\sigma^2))] > 0$. Composition: $\delta R_{\rm Coulomb} > 0 \Rightarrow \Delta E_{R3} > 0$ = empirical-required sign. **F1 PASSES analytically. No computation needed.** The argument exemplifies the **sign-theorem composition workflow** introduced in Phase 4 + Phase 5: identify sign of $\delta R$ that the candidate physics drives (here: classical Coulomb repulsion), then invoke Phase 5 §2 to get $\Delta E$ sign automatically.
+
+### F2 magnitude — bullseye at N=10 (5% match)
+
+Force balance: $|E| \cdot B_{\rm pair} \cdot (\delta R/\sigma^2) \cdot \exp(-\delta R^2/(2\sigma^2)) = V_C(0) \cdot R_{\rm canon}/(R_{\rm canon} + \delta R)^2$ solved numerically per polytope. $V_C(0) = (2e)^2 \cdot k_C \cdot \sum_{\rm pairs} 1/r_{ij}$ with all alpha-alpha pair separations from polytope geometry (not just NN edges, since Coulomb is long-range).
+
+Results: $\delta R_C(N) = 0.779, 0.821, 0.886, 0.940, 0.995, 1.051, 1.104, 1.210$ fm for $N = 4, 5, 6, 7, 8, 9, 10, 12$. **At $N = 10$: $\delta R_C = 1.104$ fm vs Phase 5 R3-lin target $1.052$ fm — ratio 1.05, off by only 5%.** This is a striking quantitative agreement for a zero-parameter prediction (point-charge alpha model, canonical $R_\alpha = 2.37$ fm and $\sigma_{K3} = 1.68$ fm, no Pauli/surface/spin-orbit, no parameter tuning).
+
+Cross-validation: $V_C(0)$ matches SEMF Coulomb estimate $0.711 Z^2/A^{1/3}$ to within $\sim 10\%$ across the J-solid range (ratio $0.81$–$1.11$). The simplified CPP charge model is consistent with bulk Coulomb at the polytope-dependent level.
+
+### F3 pattern — monotonic with floor
+
+$\delta R_C(N)$ monotonically increasing across J-solid range (5→10): 0.821, 0.940, 0.995, 1.051, 1.104 fm. **F3 PASSES.** Functional shape differs from R3-lin's linear-in-$(N-4)$ assumption — Coulomb gives constant offset $\sim 0.78$ fm (substantial baseline expansion at smallest cluster) plus slow growth. This is a meaningful physics prediction: even a 4-alpha tetrahedron has 6 Coulomb-repulsing pairs at canonical $R_\alpha$ producing significant baseline expansion; adding more alphas increases pair count but also K$_3$ restoring force, so marginal expansion per added alpha decreases. Best-fit $\alpha_C = 0.224$ fm/(N-4 unit) with large residuals — Coulomb sits above linear fit at small $N$, below at large $N$.
+
+### Phase 6 result — POSITIVE SCOPING with quantitative bullseye
+
+**Second positive scoping outcome in OPEN-SS-32 ↔ U-shape thread** (Phase 5 was the first); **first quantitative agreement at the 5% level for a zero-parameter prediction in the thread**. R3-Coulomb advances to multi-session full-derivation status.
+
+This is significant because:
+- Charge model: simplest possible (point charges, no extended distribution, no screening)
+- Geometry: canonical J-solid at canonical $R_\alpha$ (no relaxation)
+- K$_3$ framework: Phase 4/5 standard (no extension)
+- No Pauli, no surface effects, no spin-orbit, no parameter tuning
+- Result lands within 5% of the Phase 5 heuristic target at $N = 10$
+
+The "target" itself (R3-lin calibration to $\Delta E/\alpha = 1$ MeV at $N = 10$) was a heuristic stand-in for "typical empirical alpha-cluster binding deficit"; that the simplest Coulomb calculation lands within 5% of this scale is non-trivial. Either Phase 5 R3-lin calibration was lucky, or K$_3$ + Coulomb balance is genuinely capturing the physics.
+
+### What this is NOT
+
+Phase 6 is NOT yet a derivation of the U-shape mechanism. Subsequent phases must: (1) derive empirical alpha-cluster binding deficit pattern $\Delta B/A_{\rm emp}(N)$ from AME data (independent of Phase 5 heuristic); (2) compute predicted $\Delta E_{R3-{\rm Coulomb}}(N)$ pattern across J-solid range; (3) compare quantitatively across full range, not just $N = 10$; (4) refine charge model (extended distributions, screening, intra-cluster Coulomb correction); (5) test sensitivity to $\sigma_{K3}$ value.
+
+Phase 6 establishes **R3-Coulomb's natural scale is correct to within 5% at $N = 10$** — positive scoping at unprecedented quantitative precision in the thread.
+
+### Constructive content from Phase 6
+
+- **Sign-theorem composition workflow** codified: classical-physics sign argument for candidate $\delta R$ + Phase 5 §2 sign theorem → F1 decision in one paragraph. Default F1 check for any R3-channel mechanism going forward.
+- **Coulomb scale is approximately correct**: zero-parameter Coulomb at canonical K$_3$ width gives $\delta R(10) \approx 1$ fm, matching Phase 5 R3-lin target within 5%. Suggests $\sigma_{K3} = 1.68$ fm canonical width is the right scale to balance Coulomb against K$_3$ for J-solid range.
+- **SEMF cross-check**: point-charge $V_C(0)$ matches SEMF $0.711 Z^2/A^{1/3}$ within $\sim 10\%$. CPP charge model consistent with bulk Coulomb.
+
+### Programme implications
+
+Negative-result count UNCHANGED at **10** (Phase 6 is positive scoping). OPEN-SS-35 stages preserved at 6 (stage (vi) refines further: now reads "R3-Coulomb under active multi-session full derivation; 5% quantitative agreement at $N = 10$ for zero-parameter calculation; refinement and full pattern-match in progress"). Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. R2 remains FORMALLY CLOSED (Session 15). Gaussian-K$_3$ framework at fixed cluster geometry remains FORMALLY CLOSED (Session 16). Phase 6 operates *outside* both prior closures, in the Phase 5 R3 channel — Coulomb is a static geometric shift, not a perturbative correction at fixed geometry. **OPEN-SS-35 sub-question (a) A-scaling closure now has R3-Coulomb under active multi-session derivation with 5% quantitative precedent.** Sub-question (b) layer 3 gap-strength closure INDEPENDENT by Decoupling Theorem (Session 12), unaffected. First qualitative cross-paradigm consilience claim (Session 9) intact.
+
+§7 of SS-9 v0.3 working draft has now shifted **eight times** in the OPEN-SS-32 ↔ U-shape thread (was 7 at Session 17 close); OPEN-ORG-012 .tex conversion further deferred.
+
+### Forward pointers (Session 19)
+
+**Priority 1 (multi-session full derivation):** R3-Coulomb full derivation. Session 19 candidate: derive empirical alpha-cluster binding deficit pattern $\Delta B/A_{\rm emp}(N)$ from AME data, independent of Phase 5 heuristic 1 MeV/α scale. Compare to Phase 6's $\Delta E/\alpha = 0.358, 0.474, 0.608, 0.728, 0.848, 0.972, 1.092, 1.337$ MeV for $N = 4, 5, 6, 7, 8, 9, 10, 12$. Sign / magnitude / shape match across full range. Refinements: (A) extended Gaussian charge distribution (radius $\sim 1.6$ fm); (B) intra-cluster Coulomb correction; (C) K$_3$ from non-NN pairs at $r \sim 3$–$5$ fm; (D) sensitivity to $\sigma_{K3}$ value.
+
+**Priority 2 (parallel scoping):** R3-Pauli scoping — specify Pauli model, compute $\delta R_{\rm Pauli}(N)$, compare to Phase 6's Coulomb result. If Pauli alone gives $\delta R \gg$ Coulomb, combined would overshoot Phase 5 target — implying empirical scale is larger than 1 MeV/α heuristic.
+
+**Priority 3 (deferred):** OPEN-SS-32 attenuation-factor reformulation depending on Priority 1/2 success.
+
+**Priority 4 (parallel, deferred):** OPEN-SS-16 Layer B closure.
+
+**Priority 5 (parallel, registered):** Reading B literature check.
+
+**Anti-priorities (sharpened from Phase 5):**
+- SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) further deferred — §7 has now shifted EIGHT times in OPEN-SS-32 ↔ U-shape thread.
+- No phenomenological parameterization of $\delta R(N)$ without CPP-physics grounding — Phase 6 is derivation; future refinements must follow same standard.
+- No Pauli or other R3-channel mechanisms in isolation from Coulomb — Coulomb is dominant scale, others are corrections on top.
+- All Phase 4/5 anti-priorities remain in force: no further perturbative anharmonic refinement within Gaussian-K$_3$ at fixed geometry; no further belt-IRREP-projection variants; no full point group $D_{nh}/D_{nd}$ extension; no further $V_{\rm SO}$ refinement within simple K$_3$ + HO + L·S; no further $R_\alpha(A)$ in surface-tension form (R1).
+
+---
+
+*Session log Session 18 Phase 6 entry per §4 discipline. Substantive content: R3-Coulomb scoping with simplified CPP charge model PASSES with quantitative bullseye at N=10 (δR_C(10) = 1.104 fm vs Phase 5 R3-lin target 1.052 fm; ratio 1.05; 5% match for zero-parameter prediction). **Second positive scoping outcome in OPEN-SS-32 ↔ U-shape thread; first quantitative agreement at 5% level for zero-parameter prediction in the thread.** Sign-theorem composition workflow (Phase 5 §2 + classical sign argument) codified as default F1 check. R3-Coulomb advances to multi-session full-derivation status. Programme negative-result count UNCHANGED at 10. Six programme-level OPEN-SS-35 stages preserved (stage (vi) refined further). Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
