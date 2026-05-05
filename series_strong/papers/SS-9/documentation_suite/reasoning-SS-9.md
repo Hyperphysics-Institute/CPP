@@ -4047,3 +4047,185 @@ Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. R2 remains 
 Phase 8 executed Refinement A (extended Gaussian alpha charge distribution, $r_\alpha^{\rm charge} = 1.68$ fm, $\sigma_q = 0.970$ fm) as the first multi-session refinement of R3-Coulomb. F1 sign passes analytically by sign-theorem composition workflow at both within-mechanism and empirical-comparison levels. F2 magnitude delivers factor 3.6 improvement in polytope-residual scale (Phase 8 max $0.050$ MeV/α vs Phase 6 $0.014$ vs empirical $0.104$ — now at 48% of empirical). F3 pattern improves to 6/8 sign agreement (vs Phase 6 5/8) with **near-exact match at $^{40}$Ca (within 0.0001 MeV/α) and $^{36}$Ar (within 0.001 MeV/α)** — zero-parameter predictions. $^{24}$Mg sign now correct. Persistent failures at $^{28}$Si and $^{32}$S (sub-shell-closure nuclei, likely shell-physics-dominated outside R3 scope). Smooth-A scale tightens further: $\delta R(N=10) = 1.042$ fm vs Phase 5 R3-lin $1.052$ fm — **1% match** (tighter than Phase 6's 5%).
 
 **Third positive scoping outcome in OPEN-SS-32 ↔ U-shape thread; second-most-quantitative agreement in the thread (after Phase 6 smooth-A 5%).** Refinement A advances to multi-session integration with Refinements C, D, and R3-Pauli scoping. The mechanism (NN-fraction-weighted differential Coulomb softening) is identified, quantified, and confirmed as polytope-residual-generating. Programme negative-result count UNCHANGED at 10. R2 + Gaussian-K$_3$ formal closures preserved. Sign-theorem composition workflow validated at refinement level. Refinement A captures ~half of empirical polytope-residual scale; the other half pending Refinements C, D, R3-Pauli scoping, and shell-physics decomposition for sub-shell-closure nuclei.
+
+## Session 21 Phase 9 — Refinement C (non-NN K$_3$ contributions): RULED OUT by F3 pattern failure; eleventh programme-level negative result; sixth ruling-out in OPEN-SS-32 ↔ U-shape thread; Phase 5/6/8 NN-only K$_3$ framework confirmed as correct (5 May 2026)
+
+### Strategy
+
+Session 20 Phase 8 (sketch §6.1 / 0204 handover) registered Session 21 Priority 1 as Refinement C — non-NN K$_3$ contributions. Phase 8 Refinement A (extended Gaussian alpha charge distribution at $r_\alpha^{\rm charge} = 1.68$ fm) had achieved factor 3.6 polytope-residual magnitude improvement over Phase 6 (max residual $0.0495$ MeV/α vs Phase 6 $0.0137$ vs empirical $0.1042$); near-exact zero-parameter match at $^{40}$Ca (within 0.0001 MeV/α) and $^{36}$Ar (within 0.001 MeV/α); 6/8 sign agreement; smooth-A scale tightened to 1% match at $N=10$. Phase 8 captured ~half (48%) of empirical polytope-residual scale; remaining 52% pending Refinements C, D, R3-Pauli, shell-physics decomposition.
+
+The handover predicted that Refinement C would test whether the icosahedron's 30-second-shell K$_3$ bonus pushes $^{48}$Cr in the right direction (Phase 8 currently overshoots empirical $+0.021$ vs Phase 8 $+0.041$). Phase 9 executed Refinement C as the natural next single-session refinement: extend K$_3$ binding from NN pairs only (Phase 6/8 framework) to ALL pair distances. The Phase 4–8 methodology lesson — F1 sign analytical check first via the sign-theorem composition workflow — is applied at two levels (within-mechanism Level 1, empirical-comparison Level 2), now extended to non-NN K$_3$.
+
+### F1 sign argument — both levels
+
+**Level 1 (within-mechanism):** K$_3$ binding $V_{K3}(r) = -B_{\rm pair}\exp(-(r-R_\alpha)^2/(2\sigma_{K3}^2))$ has minimum at $r = R_\alpha$. For any pair past peak ($r > R_\alpha$, like non-NN diagonals), $dV_{K3}/dr > 0$ — force is **inward** toward peak. Adding non-NN K$_3$ contributions provides ADDITIONAL inward force on the $\delta R$ coordinate.
+
+By the sign-theorem composition workflow (Phase 6 §5.2 → Phase 8 §2 → Phase 9):
+
+- Adding non-NN K$_3$ → additional inward force → equilibrium $\delta R_{C+A} < \delta R_A$ (less expansion)
+- Phase 5 sign theorem extended: for $\delta R > 0$, all pairs (NN at $r_0 = R_\alpha$ AND non-NN at $r_0 > R_\alpha$) move further from K$_3$ peak, so $\Delta V_{K3} > 0$ per pair (binding loss)
+- At equilibrium $\delta R_{C+A} > 0$, Coulomb savings still exceed total K$_3$ loss (NN + non-NN) by force balance → net binding gain > 0
+- **F1 PASSES at within-mechanism level by composition.**
+
+**Level 2 (empirical-comparison):** Refinement C+A predicts net binding gain > 0 vs canonical-no-expansion (positive direction, same as Phase 6/8). Empirical alpha-conjugate nuclei show binding excess vs smooth (non-clustering) baseline. **F1 SIGN COMPATIBLE at smooth-A level.** Polytope-residual sign agreement requires computation — that is what Phase 9 tests.
+
+### Pair distance distributions per polytope
+
+| $N$ | sym | #NN | #non-NN | unique non-NN distances [fm] |
+|-----|-----|-----|---------|------------------------------|
+|  4 | $T_d$    |  6 |  0 | (none) |
+|  5 | $D_{3h}$ |  9 |  1 | 3.870(1) |
+|  6 | $O_h$    | 12 |  3 | 3.352(3) |
+|  7 | $D_{5h}$ | 15 |  6 | 2.492(1), 3.835(5) |
+|  8 | $D_{2d}$ | 18 | 10 | 3.055(2), 3.586(4), 4.076(4) |
+|  9 | $D_{3h}$ | 21 | 15 | 3.352(6), 3.912(6), 4.088(3) |
+| 10 | $D_{4d}$ | 24 | 21 | 3.352(4), 3.682(8), 4.033(8), 5.345(1) |
+| 12 | $I_h$    | 30 | 36 | 3.835(30), 4.508(6) |
+
+Tetrahedron has zero non-NN pairs; icosahedron has 36 non-NN pairs across two unique distances (30 second-shell at $\varphi R_\alpha = 3.835$ fm where K$_3 = 0.684$, plus 6 antipodal at $\sqrt{1+\varphi^2}R_\alpha = 4.508$ fm where K$_3 = 0.445$).
+
+### K$_3$ binding contributions at canonical $\delta R = 0$
+
+| $N$ | sym | $V_{K3}^{NN}(0)$ [MeV] | $V_{K3}^{nonNN}(0)$ [MeV] | $V_{K3}^{total}(0)$ [MeV] | non-NN frac |
+|-----|-----|---------|---------|---------|---------|
+|  4 | $T_d$    | $-14.05$ |   $0.00$ |  $-14.05$ |   0.0% |
+|  5 | $D_{3h}$ | $-21.08$ |  $-1.57$ |  $-22.65$ |   7.5% |
+|  6 | $O_h$    | $-28.11$ |  $-5.92$ |  $-34.03$ |  21.1% |
+|  7 | $D_{5h}$ | $-35.14$ | $-10.35$ |  $-45.48$ |  29.4% |
+|  8 | $D_{2d}$ | $-42.16$ | $-17.12$ |  $-59.28$ |  40.6% |
+|  9 | $D_{3h}$ | $-49.19$ | $-25.24$ |  $-74.43$ |  51.3% |
+| 10 | $D_{4d}$ | $-56.22$ | $-33.68$ |  $-89.89$ |  59.9% |
+| 12 | $I_h$    | $-70.27$ | $-54.31$ | $-124.58$ |  77.3% |
+
+Non-NN K$_3$ contribution grows from 0% (tetrahedron) to **77.3% (icosahedron)** of NN contribution — substantial fraction of additional binding from naive long-range extension.
+
+### Equilibrium δR collapse — DECISIVE FINDING
+
+Force balance with both NN and non-NN K$_3$:
+
+$$ F_C^{(A)}(\delta R) = \sum_{\rm pairs} B_{\rm pair} \cdot \frac{u(\delta R) \cdot r_0/R_\alpha}{\sigma_{K3}^2} \cdot \exp\!\biggl(-\frac{u(\delta R)^2}{2\sigma_{K3}^2}\biggr) $$
+
+with $u(\delta R) = r_0(1 + \delta R/R_\alpha) - R_\alpha$. Solved numerically per polytope.
+
+| $N$ | sym | $\delta R_A$ (Phase 8) [fm] | $\delta R_{C+A}$ (Phase 9) [fm] | shift |
+|-----|-----|---------|---------|---------|
+|  4 | $T_d$    | $0.668$ | $0.668$ |   0% |
+|  5 | $D_{3h}$ | $0.718$ | $0.570$ |  -21% |
+|  6 | $O_h$    | $0.794$ | $0.466$ |  -41% |
+|  7 | $D_{5h}$ | $0.855$ | $0.367$ |  -57% |
+|  8 | $D_{2d}$ | $0.920$ | $0.236$ |  -74% |
+|  9 | $D_{3h}$ | $0.984$ | $0.121$ |  -88% |
+| 10 | $D_{4d}$ | $1.042$ | **$0.027$** | **-97%** |
+| 12 | $I_h$    | $1.158$ | **$0.000$** | **-100%** |
+
+**The equilibrium expansion δR is almost entirely suppressed at $N \geq 10$.** For the icosahedron, non-NN K$_3$ inward force exactly balances Coulomb outward force at $\delta R = 0$ — cluster does not relax under Coulomb stress at all. **This is unphysical**: the cluster is supposed to expand under Coulomb stress, and the K$_3$ binding mechanism that prevents collapse should not also prevent expansion.
+
+### Smooth-A slope sign reversal
+
+| Phase | Smooth-A linear fit |
+|-------|---------------------|
+| Phase 6 | $+0.208 \cdot N - 0.302$ MeV/α |
+| Phase 8 | $+0.177 \cdot N - 0.452$ MeV/α |
+| **Phase 9** | $\mathbf{-0.045 \cdot N + 0.473}$ **MeV/α (sign reversal)** |
+| empirical | $-0.016 \cdot N + 0.153$ MeV/α |
+
+Phase 9's smooth-A slope is closer in **sign** to empirical than Phase 6/8 (both empirical and Phase 9 negative; Phase 6/8 positive), but factor 2.8 too large in magnitude. This is interesting — it suggests that some non-NN K$_3$ contribution may be physical, but at much-reduced amplitude or width (motivating Refinement D).
+
+However, the smooth-A part is absorbed into SEMF parameters during fit (Phase 7 methodology). The diagnostic test is at the polytope-residual level.
+
+### Polytope-residual decomposition — DECISIVE FAILURE
+
+| $N$ | nucleus | Phase 8 resid | Phase 9 resid | empirical resid | sign? P9 | sign? P8 |
+|-----|------|--------|--------|--------|--------|--------|
+|  4 | $^{16}$O   | $+0.0495$ | $+0.0099$ | $+0.1042$ | YES | YES |
+|  5 | $^{20}$Ne  | $-0.0003$ | $+0.0143$ | $-0.0995$ | **no** | YES |
+|  6 | $^{24}$Mg  | $-0.0113$ | $+0.0359$ | $-0.0427$ | **no** | YES |
+|  7 | $^{28}$Si  | $-0.0329$ | $-0.0084$ | $+0.0309$ | no | no |
+|  8 | $^{32}$S   | $-0.0276$ | $-0.0392$ | $+0.0033$ | no | no |
+|  9 | $^{36}$Ar  | $-0.0144$ | $-0.0478$ | $-0.0136$ | YES | YES |
+| 10 | $^{40}$Ca  | $-0.0038$ | $-0.0262$ | $-0.0038$ | YES | YES |
+| 12 | $^{48}$Cr  | $+0.0409$ | $+0.0615$ | $+0.0212$ | YES | YES |
+
+**Phase 9 sign agreement: 4/8 polytopes** (vs Phase 8's 6/8) — degraded. **$^{20}$Ne and $^{24}$Mg sign agreement LOST** in Phase 9; both had correct signs in Phase 8.
+
+### Phase 8 anchor matches DESTROYED
+
+Phase 8's most decisive achievements were the near-exact zero-parameter matches at $^{40}$Ca and $^{36}$Ar:
+
+| Nucleus | empirical | Phase 8 | Phase 9 | Phase 9 error |
+|---------|-----------|---------|---------|---------------|
+| $^{40}$Ca | $-0.0038$ | $-0.0038$ (within 0.0001) | $-0.0262$ | factor **7×** |
+| $^{36}$Ar | $-0.0136$ | $-0.0144$ (within 0.001) | $-0.0478$ | factor **3.4×** |
+
+**The Phase 8 anchor achievements are destroyed by naive Refinement C.** This is the strongest single piece of evidence that the naive Refinement C is wrong physics — any further refinement of the framework MUST preserve these matches (registered as forward constraint).
+
+### $^{48}$Cr handover hypothesis REFUTED
+
+Handover hypothesis: "Tests whether icosahedron's 30-second-shell K$_3$ bonus pushes $^{48}$Cr in right direction (Phase 8 currently overshoots empirical $+0.021$ vs Phase 8 $+0.041$)."
+
+**Result:** Phase 9 gives $^{48}$Cr = $+0.0615$ — moves FURTHER FROM empirical (+0.021). The icosahedron's 30-second-shell K$_3$ bonus pushes $^{48}$Cr in the WRONG direction. Sharp empirical refutation of the naive non-NN K$_3$ hypothesis.
+
+### $^{16}$O degraded
+
+| Nucleus | empirical | Phase 8 | Phase 9 |
+|---------|-----------|---------|---------|
+| $^{16}$O | $+0.1042$ | $+0.0495$ | $+0.0099$ |
+
+Phase 9 gives $^{16}$O an even smaller residual than Phase 8 — further from empirical. Tetrahedron has no non-NN pairs, but the Phase 9 smooth-A re-fit shifts the linear-in-N component, so all polytopes' polytope-residuals change.
+
+### Verdict — RULED OUT (eleventh programme-level negative result)
+
+**F1 PASSES analytically. F3 FAILS DECISIVELY.** Sign agreement 6/8 → 4/8; both anchor matches lost; $^{48}$Cr opposite-direction; $^{16}$O degraded; cluster expansion unphysically suppressed at high N.
+
+**Phase 9 (naive Refinement C — apply canonical $\sigma_{K3} = 1.68$ fm K$_3$ Gaussian to all pair distances) is RULED OUT.** Eleventh programme-level negative result; sixth ruling-out in OPEN-SS-32 ↔ U-shape thread (Phase 2 uniform-only Session 13, Phase 3A naive full-Hessian Session 13, Phase 3B-A fixed-dim belt Session 14, Phase 3B-B IRREP decomposition Session 15 (R2 closure), Phase 4 anharmonic ξ⁴ Session 16 (Gaussian-K$_3$-at-fixed-geometry closure), Phase 9 naive non-NN K$_3$ Session 21).
+
+### Constructive content — Phase 5/6/8 NN-only K$_3$ framework confirmed
+
+The negative result has substantial positive content:
+
+1. **Phase 5/6/8 implicit NN-only K$_3$ treatment is the correct physical framework.** The use of |E| = 3N - 6 edges per Euler (Phase 6/8 force balance) accurately captures the K$_3$ binding mechanism. Any future refinement must preserve this NN-only structure.
+
+2. **K$_3$ binding in CPP is NN-localized 3-body correlation, not a long-range Gaussian field.** The Gaussian form $V_{K3}(r) = -B_{\rm pair} \exp(-(r-R_\alpha)^2/(2\sigma^2))$ is a calibration of how K$_3$ varies with NN bond stretching, NOT a description of inter-pair binding at all distances.
+
+3. **Naive extrapolation of $\sigma_{K3} = 1.68$ fm to all pair distances overcounts long-range binding.** At non-NN distances 3.35-4.5 fm, K$_3$ would only be physical if mediated by 3-body terms with much shorter effective range, or if amplitude-suppressed by intervening DP-sea structure (CPP first principles).
+
+4. **Phase 8 anchor achievements at $^{40}$Ca and $^{36}$Ar are PRESERVED as Phase 8 (not Phase 9) results.** Future refinements must preserve these matches — registered constraint on Refinement D, R3-Pauli, and any further refinements.
+
+5. **Forward priorities re-ordered:** Refinement D ($\sigma_{K3}$ sensitivity) is no longer just a sensitivity check — it becomes potentially diagnostic. If $\sigma_{K3}$ is much smaller than 1.68 fm (e.g., 0.5-1.0 fm), non-NN K$_3$ contributions become exponentially small, recovering Phase 5/6/8 NN-only framework. R3-Pauli scoping (Priority 2) gains importance — Pauli is naturally NN-localized via wave-function overlap.
+
+### Methodological lesson — sign-theorem composition is necessary but not sufficient
+
+Phase 9 is the cleanest demonstration in the OPEN-SS-32 ↔ U-shape thread of an important methodological distinction: **F1 sign analytical check eliminates obviously-wrong-sign refinements quickly, but does not by itself guarantee correct F3 pattern**. Phase 9 F1 PASSES analytically while F3 FAILS DECISIVELY. Future scoping should treat F1 sign as gateway, not endorsement. Sign-theorem composition workflow is necessary but not sufficient — F3 pattern check still required at the polytope-residual level.
+
+### Programme implications
+
+Negative-result count grows from 10 to **11**. OPEN-SS-35 stages preserved at 6 — stage (vi) refines further to add "naive non-NN K$_3$ extension RULED OUT (Phase 9) — Phase 5/6/8 NN-only K$_3$ framework confirmed as correct." Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. R2 remains FORMALLY CLOSED (Session 15). Gaussian-K$_3$ framework at fixed cluster geometry remains FORMALLY CLOSED (Session 16). Phase 9 operates outside both prior closures, in Phase 5 R3 channel with extended-charge correction plus naive non-NN K$_3$ extension; consistent with both formal closures (the closures bracket what's ruled out — Phase 9 ruling-out adds another negative result without altering the framework structure).
+
+Phase 8 Refinement A factor 3.6 polytope-residual improvement preserved as standing best refinement. Sub-question (b) layer 3 gap-strength closure INDEPENDENT by Decoupling Theorem (Session 12), unaffected. First qualitative cross-paradigm consilience claim (Session 9) intact.
+
+§7 of SS-9 v0.3 working draft has now shifted **eleven times** in the OPEN-SS-32 ↔ U-shape thread (was 10 at Session 20 close); OPEN-ORG-012 .tex conversion further deferred.
+
+### Forward pointers (Session 22)
+
+**Priority 1 — Refinement D ($\sigma_{K3}$ sensitivity), promoted from Phase 8 Priority 3.** Phase 9 result motivates this strongly: if $\sigma_{K3}$ is significantly smaller than canonical 1.68 fm (e.g., 0.5–1.0 fm) for non-NN distances, non-NN K$_3$ contributions become exponentially small, recovering Phase 5/6/8 NN-only framework while perhaps allowing some calibrated non-NN contribution that doesn't destroy anchor matches. Tests: (i) does Phase 6 5% smooth-A bullseye persist under $\sigma_{K3}$ variation? (ii) does Phase 8 polytope-residual structure persist? (iii) do the $^{40}$Ca and $^{36}$Ar near-exact matches survive? (iv) does $\sigma_{K3}$ vary by polytope (cluster-topology-dependent)? The numerical coincidence $r_\alpha^{\rm charge} = 1.68$ fm = $\sigma_{K3}^{\rm canon}$ deserves structural interpretation. Predicted F1 (analytical): $\sigma_{K3}$ variation does not change Coulomb push outward; only modifies K$_3$ inward pull magnitude/range. F1 PASSES analytically by composition.
+
+**Priority 2 — R3-Pauli scoping (parallel).** Status unchanged from Phase 8. Pauli is naturally NN-localized via wave-function overlap (alpha-alpha Pauli core acts at short range; exponentially suppressed at non-NN distances). Phase 9 result strengthens the case for R3-Pauli as the "correct" non-Coulomb polytope-specific signal source — it has the right symmetry (NN-localized) that naive non-NN K$_3$ extension lacks. Predicted F1: Pauli repulsive → $\delta R_{\rm Pauli} > 0$ → Phase 5 sign theorem → $\Delta E > 0$, F1 PASSES analytically.
+
+**Priority 3 — Sub-shell-closure interpretation (deferred, registered).** $^{28}$Si and $^{32}$S persistent failures (Phase 8 + Phase 9) confirm sub-shell-physics-dominance interpretation. Phase 9 negative result does not improve these; if anything they're slightly worse in Phase 9 ($^{32}$S residual $-0.039$ in P9 vs $-0.028$ in P8). Multi-paper scope.
+
+### Anti-priorities sharpened from Phase 8
+
+- §7 has shifted **eleven** times in OPEN-SS-32 ↔ U-shape thread (was 10 at Session 20 close); OPEN-ORG-012 .tex conversion further deferred.
+- No raw Phase-N net binding gain magnitudes vs empirical $\Delta(B/A)$ without first detrending smooth-A (Phase 7 methodology preserved).
+- No R3-channel mechanisms in isolation from Coulomb (Phase 6/7/8/9 — Phase 9 confirms Coulomb is anchor; non-Coulomb mechanisms must be carefully scoped).
+- Do not expect R3-channel mechanism to reproduce $^{28}$Si and $^{32}$S residuals (Phase 8 anti-priority preserved; Phase 9 confirms).
+- **NEW from Phase 9:** Do NOT extend K$_3$ Gaussian width $\sigma_{K3} = 1.68$ fm to non-NN pair distances naively. The K$_3$ binding mechanism is NN-localized 3-body correlation; long-range extension requires shorter effective $\sigma_{K3,\rm non-NN}$ or amplitude suppression — registered for Refinement D investigation.
+- **NEW from Phase 9:** Phase 8 anchor matches at $^{40}$Ca (within 0.0001 MeV/α) and $^{36}$Ar (within 0.001 MeV/α) are now registered CONSTRAINTS on future refinements. Any refinement that destroys these matches (as Phase 9 did) is ruled out.
+
+### Summary
+
+Phase 9 executed Session 20 Phase 8's Priority 1 forward pointer (Refinement C: non-NN K$_3$ contributions on top of Phase 8 Refinement A extended-charge Coulomb). F1 sign passes analytically by sign-theorem composition workflow (extended to non-NN K$_3$). F2 magnitude grows mildly (Phase 9 max residual $0.062$ MeV/α vs Phase 8 $0.050$; ratio to empirical grows from 48% to 59%). **F3 pattern FAILS decisively**: sign agreement degrades 6/8 → 4/8; $^{40}$Ca anchor (within 0.0001) and $^{36}$Ar anchor (within 0.001) are LOST (Phase 9 errors factor 7 and 3.4 respectively); $^{48}$Cr moves further from empirical (opposite of handover hypothesis); $^{16}$O degraded. Cluster expansion δR collapses at high N: $\delta R_{C+A}(N=10) = 0.027$ fm and $\delta R_{C+A}(N=12) = 0$ fm — unphysical. Smooth-A slope sign reverses ($+0.18 \cdot N$ Phase 8 → $-0.045 \cdot N$ Phase 9; empirical $-0.016 \cdot N$).
+
+**Phase 9 Refinement C in its naive form (apply canonical $\sigma_{K3} = 1.68$ fm to all pair distances) is RULED OUT** — eleventh programme-level negative result; sixth ruling-out in OPEN-SS-32 ↔ U-shape thread. The constructive content is substantial: **Phase 5/6/8 NN-only K$_3$ framework (|E| = 3N-6 edges per Euler) is CONFIRMED as the correct physical model**. K$_3$ binding in CPP is NN-localized 3-body correlation, not a long-range Gaussian field. The Gaussian form $V_{K3}(r) = -B_{\rm pair}\exp(-(r-R_\alpha)^2/(2\sigma^2))$ is a calibration of NN bond-stretching response, not an inter-pair distance law. Phase 8 anchor matches at $^{40}$Ca and $^{36}$Ar are PRESERVED as Phase 8 (not Phase 9) achievements and are now registered constraints on future refinements.
+
+**Forward priority shifts: Refinement D ($\sigma_{K3}$ sensitivity) promoted to Priority 1** — Phase 9 result motivates this strongly because a smaller $\sigma_{K3,\rm non-NN}$ would naturally suppress the unphysical long-range K$_3$ extension. R3-Pauli scoping (Priority 2) gains importance as a NN-localized polytope-specific signal source — it has the right symmetry that naive non-NN K$_3$ extension lacks. Programme negative-result count grows to **11**. Phase 8 Refinement A status preserved (factor 3.6 polytope-residual improvement, near-exact zero-parameter $^{40}$Ca/$^{36}$Ar matches). All earlier closures (R2, Gaussian-K$_3$-at-fixed-geometry, Phase 5 channel pass, Phase 6 smooth-A bullseye, Phase 7 methodology, Phase 8 Refinement A) preserved. **Sign-theorem composition workflow validated again at refinement level, but with mixed F1-pass / F3-fail outcome — sign-theorem composition is necessary but not sufficient; F3 pattern check still required.** This is a methodological lesson registered: F1 sign analytical pre-check is gateway, not endorsement.
