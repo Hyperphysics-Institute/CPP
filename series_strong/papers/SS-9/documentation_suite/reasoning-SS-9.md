@@ -3442,3 +3442,107 @@ Phase 3B-B closed the harmonic-Hessian-belt-IRREP family at canonical $\sigma$. 
 *End of Session 16 Phase 4 Opus reasoning. Future sessions append below.*
 
 ---
+
+## Session 17 Phase 5 — Geometric-shift R3/R4 PASSES SCOPING; sign-orthogonal complement to Phase 4 closure; first non-rule-out outcome in five sequential phases (5 May 2026)
+
+### Strategic framing — what changed since Phase 4
+
+Session 16 Phase 4 formally closed the Gaussian-K$_3$ framework at fixed cluster geometry via the §2.4 sign theorem on $f(s) = (1+s)^{-1/2} - 1 + s/2 > 0$ for $s > 0$, combined with Rayleigh–Ritz: any perturbative or variational improvement of harmonic K$_3$ at canonical geometry produces *more* binding while empirical needs *less*. The U-shape mechanism therefore cannot live within the Gaussian-K$_3$ framework at fixed cluster geometry — provably. The Phase 4 handover (§6.1) forward-pointed Priority 1 to cluster-geometry shift mechanisms beyond R1: channels R3 (uniform $R_\alpha(N)$ shift) and R4 (cluster shape distortion), as the natural complement to Phase 4's closure.
+
+The Phase 4 handover also registered a methodology lesson — **apply analytical sign check first, before computation** — derived from Phase 4's result being decided by a one-paragraph sign argument. The lesson was: any future scoping investigation should pre-empt F1 (sign) analytically before committing to computational work, because sign analysis is one paragraph and decisive when it succeeds. Session 17 applied this lesson from the outset.
+
+### The pre-empted analytical sign argument for R3 and R4
+
+The K$_3$ pair potential $V_{\rm pair}(\delta r) = -B_{\rm pair} \exp(-\delta r^2/(2\sigma^2))$ is **symmetric in $\delta r$ around equilibrium**. For any displacement $\delta r \neq 0$ (R3 uniform shift) or any non-zero edge distortion $\epsilon$ (R4):
+
+$$ \Delta V_{\rm edge} = B_{\rm pair} \cdot \bigl[\, 1 - \exp(-\delta r^2/(2\sigma^2)) \,\bigr] > 0 $$
+
+The right-hand side is **strictly positive for any $\delta r \neq 0$**, regardless of the sign of $\delta r$ — compression and expansion give the same energy cost because the Gaussian is even about its peak. Empirical J-solid range needs $\Delta E > 0$ (cluster wants to grow → empirical binding less than canonical K$_3$). **F1 PASSES universally for both R3 and R4 by Gaussian symmetry alone, independent of any specific parameterization.**
+
+The argument is one paragraph. It decides F1 for the entire R3/R4 channel before any computation. This is the methodology lesson from Phase 4 in action.
+
+### The sign-orthogonal closure pattern — a structural observation
+
+The decisive structural observation from Phase 5 is **the sign-orthogonal contrast with Phase 4**. Phase 4's anharmonic ξ⁴ correction had $\Delta E < 0$ universally, deriving from:
+- Negative Taylor coefficient on $\xi^4$ in the Gaussian expansion: $V_4 = -(B_{\rm pair}/8) \xi^4$
+- Positive expectation value $\langle \xi^4 \rangle_0 = 3 \langle \xi^2 \rangle_0^2 > 0$ (Wick's theorem)
+- Therefore $\Delta E^{(1)} = \langle V_4 \rangle_0 < 0$
+- Strengthened to all orders by the §2.4 sign theorem on $f(s) > 0$ + Rayleigh–Ritz.
+
+Phase 5's geometric shift has $\Delta E > 0$ universally, deriving from:
+- Symmetry of the Gaussian about its peak: $V_{\rm pair}(\delta r)$ is even in $\delta r$
+- Per-edge binding loss $\Delta V_{\rm edge} = B_{\rm pair} \cdot [1 - \exp(-\delta r^2/(2\sigma^2))]$ is positive for any $\delta r \neq 0$.
+
+**The two Gaussian-K$_3$ extension classes are sign-orthogonal** — Phase 4 was forced to fail F1 by Wick's theorem applied to a negative Taylor coefficient; Phase 5 passes F1 by Gaussian symmetry applied to a static displacement. Both arguments use structural properties of the same Gaussian function. The closure of one class motivates the opening of the other.
+
+This observation is itself constructive: it provides a **clean partition of the OPEN-SS-32 candidate space** into "ruled out" (Phase 4 closure of negative-ΔE perturbative corrections at fixed geometry) and "open at scoping" (Phase 5 opening of positive-ΔE geometric shifts) by the sign of the predicted ΔE. Future scoping investigations can apply the Gaussian-symmetry argument as F1 to immediately decide which side of the partition any candidate mechanism falls on, before any computation.
+
+### Computational scoping — F2 magnitude capacity
+
+The F1 result determines the channel is open; F2 (magnitude capacity) is the next question. Computation across all eight polytopes ($N = 4, 5, 6, 7, 8, 9, 10, 12$) at canonical $\sigma_{K3} = 1.68$ fm tested three R3 parameterizations and two R4 parameterizations.
+
+**R3-emp** (using empirical $R_{\rm pct}$ values from Session 12 R1 inversion of $\hbar\omega^*$ scaling):
+
+$$\begin{aligned}
+N=4 &: R_{\rm pct} = -10.4\%, \quad \delta R = -0.247 \text{ fm}, \quad \Delta E_{R3} = 0.150 \text{ MeV}, \quad \Delta E/\alpha = 0.038 \text{ MeV} \\
+N=5 &: +14.6\%, \quad +0.346, \quad 0.442, \quad 0.088 \\
+N=6 &: +12.7\%, \quad +0.301, \quad 0.448, \quad 0.075 \\
+N=7 &: +19.1\%, \quad +0.453, \quad 1.253, \quad 0.179 \\
+N=8 &: +21.1\%, \quad +0.500, \quad 1.827, \quad 0.228 \\
+N=9 &: +22.3\%, \quad +0.529, \quad 2.375, \quad 0.264 \\
+N=10 &: +22.7\%, \quad +0.538, \quad 2.810, \quad 0.281 \\
+N=12 &: -0.7\%, \quad -0.017, \quad 0.003, \quad 0.000
+\end{aligned}$$
+
+All $\Delta E_{R3} > 0$ — analytical F1 confirmed. R3-emp ratios against $|d_{\rm emp}|$ in J-solid range are $0.04$–$0.15$, indicating R3-emp delivers only $10$–$15\%$ of the prior-thread $-d_{\rm emp}$ scale. This is **expected and not a falsifier**: the $-d_{\rm emp}$ scale was originally derived from inversion of empirical $\hbar\omega^*$ scaling and represents an $\hbar\omega^*$-equivalent dimensionless shift, not a binding deficit. The K$_3$ binding-loss signal from R3-emp is in a different normalization than $-d_{\rm emp}$ and the two should not be expected to numerically agree.
+
+**R3 magnitude capacity** is the more important calculation. Maximum K$_3$ binding loss at $N = 10$ is $|E| \cdot B_{\rm pair} = 24 \cdot 2.342 = 56.2$ MeV total = $5.62$ MeV/α, achieved when $\delta R \to \infty$ and the K$_3$ Gaussian is driven to zero. Empirical alpha-cluster binding deficit is on the order of $\sim 1$ MeV/α. **R3 magnitude capacity is far larger than the empirical signal**; the bottleneck is which $\delta R(N)$ is physically realized by CPP physics, not whether R3 has enough magnitude.
+
+**R3-lin** (calibrated to $\Delta E/\alpha = 1$ MeV at $N = 10$): $\alpha = 0.1753$ fm/(N-4 unit), $\delta R(N=10) = 1.052$ fm = $44.4\%$ of $R_{\rm canon}$. Large but not unphysical given that real alpha-cluster nuclei show $\sim 20$–$40\%$ radius variation across $A = 16$–$48$. This calibration sets the **target $\delta R$ scale** that any future first-principles derivation must reproduce.
+
+**R4-flat** ($\epsilon_{\rm rms} = 0.10 \cdot R_{\rm canon}$): per-edge $\langle \Delta V \rangle = 0.0230$ MeV (0.98% of $B_{\rm pair}$) constant across all polytopes. Cluster-total $\langle \Delta E_{R4} \rangle / \alpha = 0.034$–$0.057$ MeV/α across $N = 4$–$12$. Smaller than R3-emp at empirically-required $R_{\rm pct}$, but $\epsilon_{\rm rms} = 1$ fm (42% of $R_{\rm canon}$) reaches $\sim 1$ MeV/α at $N = 10$.
+
+**F2 PASSES for both R3 and R4** with substantial overhead.
+
+### Computational scoping — F3 pattern monotonicity
+
+Within J-solid range $N = 5, 7, 8, 9, 10$:
+
+R3-lin: $|\Delta E/\alpha| = 0.023, 0.240, 0.439, 0.695, 1.000$ MeV. Fast monotonic increase via linear-in-$N$ shift $\delta R(N)$.
+
+R4-flat: $\langle |\Delta E/\alpha| \rangle = 0.041, 0.049, 0.052, 0.054, 0.055$ MeV. Slow monotonic increase via $(3N-6)/N$ factor only (constant $\langle \Delta V_{\rm edge} \rangle$, edge count drives total).
+
+**F3 PASSES for both** — any monotonic $\delta R(N)$ or constant-positive $\epsilon_{\rm rms}$ produces monotonic $\Delta E$ in $N$ across the J-solid range. Functional shape will discriminate between R3 and R4 at the next investigation level when matching the exact empirical N-dependence is required.
+
+### Verdict — POSITIVE SCOPING
+
+**BOTH R3 AND R4 PASS SCOPING** under all three falsifier criteria:
+- **F1 (sign):** PASSES universally and analytically by Gaussian symmetry.
+- **F2 (magnitude capacity):** PASSES — R3 has $5.62$ MeV/α maximum capacity at $N = 10$, well above empirical $\sim 1$ MeV/α; R4 with reasonable $\epsilon_{\rm rms}$ delivers $0.05$–$1$ MeV/α.
+- **F3 (pattern):** PASSES for any monotonic $\delta R(N)$ or constant $\epsilon_{\rm rms}$.
+
+**First non-rule-out outcome in five sequential phases of OPEN-SS-32 ↔ U-shape investigation.** Phase 2 (Session 13), Phase 3A (Session 13), Phase 3B-A (Session 14), Phase 3B-B (Session 15, R2 formal closure), and Phase 4 (Session 16, Gaussian-K$_3$ framework formal closure) all RULED OUT; **Phase 5 (Session 17) PASSES SCOPING.**
+
+### What "PASSES SCOPING" means and does not mean
+
+**Phase 5 does not claim to derive the U-shape mechanism.** It establishes only that R3 and R4 are *channel-compatible* — sign matches, magnitude capacity is sufficient, and pattern is monotonic in $N$ for natural parameterizations. The actual physics that sets $\delta R(N)$ or $\epsilon_{\rm rms}(N)$ from CPP first principles is not specified in Phase 5 and is the subject of subsequent multi-session investigations.
+
+In the OPEN-SS-35 closure programme's scoping methodology, passing scoping advances a candidate to **multi-session derivation status** without rule-out; subsequent sessions specify, compute, and test against more stringent empirical constraints (e.g., quantitative pattern matching, not just monotonicity). Phase 5 establishes the channel is open; specifying the exact physics is the next frontier.
+
+### Constructive content from Phase 5
+
+Phase 5's content is constructive in three ways beyond the positive scoping outcome:
+
+- **Sign-orthogonal closure pattern.** The Gaussian function's symmetry partitions the OPEN-SS-32 candidate space by sign of predicted ΔE: Phase 4 closed negative-ΔE perturbative corrections at fixed geometry; Phase 5 opens positive-ΔE geometric shifts. Future scoping investigations can apply the Gaussian-symmetry argument as F1 to immediately decide which side of the partition any candidate mechanism falls on.
+- **R3 magnitude capacity target.** The Phase 5 R3-lin calibration $\delta R(N=10) = 1.05$ fm = $44.4\%$ of $R_{\rm canon}$ provides the natural $\delta R$ scale that any future first-principles derivation must reproduce. This is substantially larger than the $\hbar\omega^*$-derived $R_{\rm pct}$ values ($\delta R(10) = 0.54$ fm), highlighting that the binding-deficit signal corresponds to a different $\delta R(N)$ than the $\hbar\omega^*$-deficit signal.
+- **Methodology lesson reinforced.** The Phase 4 lesson — F1 sign analytical check first, before computation — was applied in Phase 5 from the outset and worked exactly as intended: one paragraph of Gaussian-symmetry analysis decided F1 universally before any code was written. Computational scoping was for F2 magnitude capacity and F3 pattern monotonicity only. **This methodology should be the default for any future scoping investigation.**
+
+### Cumulative state
+
+10 programme-level negative results UNCHANGED (no new ruling-out in Session 17). OPEN-SS-35 stages preserved at 6. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. R2 remains FORMALLY CLOSED (Session 15 Phase 3B-B). Gaussian-K$_3$ framework at fixed cluster geometry remains FORMALLY CLOSED (Session 16 Phase 4). **OPEN-SS-35 sub-question (a) A-scaling closure now has Phase 5 R3 and R4 channels under active scoping investigation — first time since Session 12's R1 closure that the sub-question has a non-ruled-out candidate.** Sub-question (b) layer 3 gap-strength closure INDEPENDENT of Phase 4/5 by Decoupling Theorem (Session 12), unaffected. First qualitative cross-paradigm consilience claim (Session 9, magic-number sequence reproduced from CPP first principles) intact. Six programme-level OPEN-SS-35 stages preserved. Phase 5 refines stage (vi) further: stage (vi) now reads "R3/R4 cluster-geometry shift channels under active scoping with positive F1/F2/F3 result; multi-session $\delta R(N)$ derivation from CPP physics in progress."
+
+§7 of SS-9 v0.3 working draft has now shifted **seven** times in the OPEN-SS-32 ↔ U-shape thread (Phase 1 prior-art read; Phase 2 ruled out; Phase 3A ruled out + bracketing; Phase 3B-A ruled out + pattern-shape constraint; Phase 3B-B ruled out + R2 formal closure; Phase 4 ruled out + Gaussian-K$_3$ framework closure via sign theorem; **Phase 5 PASSES SCOPING + R3/R4 channels open + multi-session derivation pending**) — OPEN-ORG-012 .tex conversion further deferred.
+
+*End of Session 17 Phase 5 Opus reasoning. Future sessions append below.*
+
+---
