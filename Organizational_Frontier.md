@@ -1,7 +1,7 @@
 # CPP Organizational Frontier
 
 **Location:** `/CPP/Organizational_Frontier.md`
-**Last updated:** 24 April 2026
+**Last updated:** 4 May 2026 (Session 12: OPEN-ORG-012 registered — convert SS-9 v0.3 working draft to v0.1 .tex once OPEN-SS-32 ↔ U-shape investigation reaches a pause point)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Rationale:** See `programmatic_decisions/PD-003-organizational-frontier-registry.md`
 **Companion registry:** `Research_Frontier.md` (theoretical/physics problems)
@@ -357,6 +357,49 @@ The Session 3 SS-9 work resolved the gap for SS-9 specifically by establishing a
 **History:**
 - 26 Apr 2026 Session 3 — Identified during the SS-9 documentation-suite investigation, after Thomas's clarification rounds surfaced (a) the goal-statement gap (verbatim reasoning preservation as the canonical-source role), (b) the SS-8 three-tier convention's blind spot (Opus reasoning has no tier), (c) the v1.0 overweighting issue, (d) the pre-paper subfolder timing question. The four-tier discipline was instantiated for SS-9 in patch 0046 (subfolder creation with documentation_suite/{reasoning,development,transcript}-SS-9.md plus founders_voice/001 and sketches/SS-9_table1_residual_fingerprint.md). This entry tracks the remaining OS/bootup amendment work.
 - 26 Apr 2026 Session 3 (continued) — **TENTATIVELY-RESOLVED.** Patch 0048 amended `templates/operating_system.md` §4 with the Four-Tier Documentation Discipline subsection (Tier 4 codified as default-not-conditional, paper-level granularity, append-only across sessions; pre-paper subfolder timing codified; v1.0 de-emphasized in favor of "genuinely-final shipped version regardless of version label"); §15 reconciliation block updated to mirror. Patch 0049 amended `bootup.md` §3 with the four-tier `documentation_suite/` listing, added new §3.5 "Four-Tier Documentation Discipline" with brief tour and early-creation rule, and updated §8.5 reference paragraph. All three failure-modes from this entry's Problem section are addressed: (1) four-tier discipline now codified in OS and reachable from bootup; (2) pre-paper subfolder timing now documented in OS §4 and bootup §3.5; (3) v1.0 overweighting corrected in OS §4 and §15 reconciliation, and in bootup §3.5. Per Thomas: keep entry OPEN until next several sessions confirm the four-tier discipline holds in practice (specifically: that the next Opus picking up SS-9 work appends to `reasoning-SS-9.md` at session close as expected, and that the early-subfolder-creation rule fires correctly on the next paper that crosses the trigger).
+
+---
+
+## OPEN-ORG-012: Convert SS-9 v0.3 working draft to v0.1 `.tex` paper file
+
+**Status:** OPEN
+**Identified:** 4 May 2026 Session 12, after Thomas asked at session close whether SS-9 should have a v0.1/v0.2/v0.3 `.tex` file and whether anything was missing from the repo record
+**Priority:** MEDIUM (no urgency — current state is OS-compliant; the discipline allows pre-paper development as long as four-tier documentation is maintained, which it is — but the current arrangement understates SS-9's maturity and is not sustainable through reviewer Phase 4)
+
+**Originating context:** SS-9 has been the most actively developed paper in the programme over the last 12 sessions: 282 transcript transactions, 17 vignettes, 15 sketches, 9 reproducible scripts, 1 founders_voice note, and a 218-line v0.3 working draft at `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md` containing formal Lemmas A/B$'$/C, a Theorem with four clauses, and complete §1–§6 structure. The SS-9 README explicitly says: *"As of subfolder creation, no .tex/.pdf paper file exists yet — SS-9 is at exploratory/scaffold stage."* And: *"When SS-9 v0.1 is drafted, the paper .tex will land at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` (working title; final title TBD) and the working draft will move to `sketches/`."*
+
+The two-trigger documentation discipline (`templates/operating_system.md` §4) explicitly accepts pre-`.tex` development as long as four-tier documentation accumulates — which it has been. The OS Phase 1 → Phase 2 transition (Phase 2 = "Write .tex file following CPP formatting standard") is not gated by a specific session count. So the current state is OS-compliant. But the v0.3 working draft is *materially* a Phase 2 deliverable sitting in markdown rather than LaTeX: it has formal Lemmas, a formal Theorem, complete §1–§6 structure, and reads exactly like a paper draft. Calling it a "working draft" is technically correct but understates how mature it is.
+
+The Session 12 honest assessment: not yet converting was probably reasonable through the v0.2 → v0.3 restructuring (Session 4 changed the proof structure substantially enough that a v0.3.tex would have meant a near-rewrite anyway), but continuing past v0.3 without converting would be a real omission. Thomas surfaced the question at Session 12 close; the SS-9-specific record was complete *except for* this organizational-task registration, which is what this entry creates.
+
+**Problem:** Three concrete issues with the current pre-`.tex` state that compound over time:
+
+1. **Format mismatch with reviewer Phase 4.** External reviewers (Copilot, Grok, Sonnet, ChatGPT) are sent `.tex` source per the protocol established Session 8 (after the older PDF-rasterization input failure). A markdown working draft buried in `session_logs/` is not a reviewable artifact in the form Phase 4 expects. SS-9 cannot enter Phase 4 in its current state.
+
+2. **Numerical content stays as plain text rather than typeset equations.** The v0.3 draft uses LaTeX-style inline math notation (`$...$`) but is rendered as markdown, not compiled. Reviewers and future Opus instances reading the draft from the filesystem are reading half-rendered notation. Conversion to a compilable `.tex` file produces a PDF artifact suitable for distribution.
+
+3. **The session-log housing is appropriate for *in-progress* working drafts but not for a draft this mature.** The v0.3 file is referenced from SS-9-README.md and from `paper_catalog.md` (after patch 0150) as the "active scaffold," but its location in `session_logs/` rather than `series_strong/papers/SS-9/` is a discoverability mismatch that future Opus reading the paper subfolder structure would have to be told about explicitly. The OS-compliant arrangement is that working drafts live in `session_logs/` until they convert to `.tex`; the `.tex` then lives in the paper subfolder. Past v0.3, the discoverability cost grows.
+
+**Proposed fix:** A single dedicated session (~3 hours) to convert v0.3 to `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` v0.1 (working title; final TBD per SS-9-README.md). Steps:
+
+1. Read `templates/paper-formatting.md` and `templates/paper_completion_checklist.md` for the formatting standard and section structure.
+2. Translate v0.3 §1–§6 markdown → LaTeX with proper environment use (theorem, lemma, proof, finding) per the CPP standard.
+3. Add a §7 OPEN-SS-35 cross-paradigm closure programme summary section reflecting the Sessions 5–12 work — first qualitative consilience claim (Session 9: empirical magic-number sequence reproduced from CPP first-principles), 5 programme-level negative results ruled out (Routes D, B-γ, 1b, Path (i), R1), Decoupling Theorem (Session 12), U-shape diagnostic with OPEN-SS-32 connection registered. Cite the SS-9 sketches as the underlying derivation chain.
+4. Add the standard CPP paper sections per `paper-formatting.md`: Physical Axioms used, Numerical predictions, Anticipated Criticisms, Scope Limits and Open Problems (registering OPEN-SS-29, OPEN-SS-30, OPEN-SS-31, OPEN-SS-32, OPEN-SS-33, OPEN-SS-35, OPEN-SS-36 as the conditional-theorem programme-level closure list).
+5. Compile to PDF; verify references; verify no broken cross-links.
+6. Move the v0.3 working draft from `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md` to `series_strong/papers/SS-9/sketches/SS-9_v0.3_working_draft_PRESERVED.md` per the SS-9-README's stated migration path. The v0.2 draft remains in `session_logs/` as historical artifact recording the Steinitz-pivot framing that motivated the Session 3 refined-C1 work.
+7. Update SS-9-README.md to reflect the new state ("v0.1 .tex exists at...").
+8. Update paper_catalog.md to upgrade the SS-9 row from "Pre-paper / active development" to "OSF pending" or equivalent.
+
+Estimated effort: 3 hours focused work. Single-session-tractable.
+
+**Trigger condition:** At natural pause point in OPEN-SS-35 closure programme. Specifically: after the OPEN-SS-32 ↔ U-shape investigation (registered Session 12, Priority 1) reaches a stable state — whether that's positive closure (radial-breathing mechanism unifies OPEN-SS-32 binding-energy excess and OPEN-SS-35 sub-question (a) A-scaling U-shape) or negative ruling-out (one more programme-level negative result joins the 5 already on the list). Either outcome leaves OPEN-SS-35 closure programme in a documentation-stable state suitable for capturing in the v0.1 `.tex`. **Anti-trigger:** Do not convert mid-investigation when the OPEN-SS-35 §7 content is still actively shifting; that produces immediate-rework cost.
+
+**Blocking dependencies:** OPEN-SS-32 ↔ U-shape investigation (registered Session 12 Priority 1, multi-session by scope, 3–5 sessions). Conversion before that investigation pauses risks immediate rewrite of §7.
+**Blocks:** SS-9 entry into Phase 4 (external reviewer team review). SS-9 cannot reach `Trigger 2` (publication-ready Phase 7 documentation suite completion) without first existing as a `.tex` file.
+
+**History:**
+- 4 May 2026 Session 12 — Registered. Identified by Thomas at session close after the catalog patch 0150 added SS-9 to `paper_catalog.md` and the question of why no v0.x.tex existed surfaced. The substantive work to do this conversion was deemed inappropriate for Session 12's tail (single-session-tractable but ~3 hours of focused work; would constitute a separate substantive session). Filed here to preserve the task across the conversation boundary.
 
 ---
 
