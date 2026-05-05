@@ -1369,3 +1369,92 @@ Six programme-level stages preserved. Phase 2 refines stage (vi) by ruling out o
 ---
 
 *Session log Template-A Session 13 Phase 2 entry per §4 discipline. Substantive content: uniform-scaling radial-breathing model (a) RULED OUT as R2 closure mechanism. Three independent failures: magnitude (factor 7 undershoot at peak), pattern (monotonic vs U-shape), endpoint signs (wrong at $N=4$ and $N=12$). Sixth programme-level negative-result demonstration in OPEN-SS-35 closure programme. Unification hypothesis itself NOT refuted; model (b) symmetry-resolved breathing decomposition registered as Session 14 Priority 1. R2 substantively weakened but not closed. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 13 Phase 3A — Naive full-Hessian decomposition RULED OUT; upper-bound benchmark established (4 May 2026)
+
+**Continuation of:** Session 13 Phase 2 (uniform-scaling radial-breathing model RULED OUT; symmetry-resolved decomposition registered as Phase 3 work).
+**Trigger:** Thomas's reaffirmed "take territory" priority directive after Phase 2 patches 0156–0160 were prepared. Phase 3 was scheduled as multi-session (3–5 sessions) with Phase A as a single-session-tractable scoping step: full-mode-space Hessian decomposition without IRREP projection. Phase A serves as upper-bound benchmark and as falsifier of the simplest possible model (b) realization.
+**Patches produced:** 0161–0165 (Phase 3A sketch + reproducible script + Research_Frontier update + Vignette 20 + this session log entry). Standard five-patch single-session deliverable suite.
+
+### Strategy
+
+Phase 2 ruled out model (a) uniform scaling on three grounds. Phase 3 explores model (b) symmetry-resolved breathing decomposition. The full-mode-space upper bound is the diametrically opposite extreme: include all $3N - 6$ vibrational modes without IRREP projection. If the full Hessian still cannot reach empirical magnitudes, the unification programme is dead from the mode-amplitude side. If the full Hessian overshoots empirical, IRREP projection becomes the selection mechanism — model (b) the only remaining route — and Phase 3B IRREP work is the right next multi-session investment.
+
+### Model and computation
+
+Each of the cluster's $N_e$ edges contributes a spring along $\hat n_{ij}$: $k_{\rm edge} = B_{\rm pair}/\sigma_{K3}^2 = 0.83$ MeV/fm$^2$ (canonical). Build the full $3N \times 3N$ Hessian by summing edge-spring contributions. Diagonalize, exclude six rigid-body zero-modes (three translation + three rotation). For each non-rigid mode $k$ with eigenvalue $\lambda_k$ and eigenvector $\vec v_k$:
+$$\langle (\delta r_{ij})^2 \rangle_k = \frac{\hbar c}{2 \sqrt{m_\alpha c^2 \cdot \lambda_k}} \left[(\vec v_k(i) - \vec v_k(j)) \cdot \hat n_{ij}\right]^2$$
+
+Sum over all $3N - 6$ modes to get $\langle (\delta r_{ij})^2 \rangle_{\rm full}$ per edge; average over edges. Fractional softening $= -2 \langle (\delta r)^2 \rangle / R_\alpha^2$.
+
+### Results: eight-row table
+
+| $N_\alpha$ | polytope | sym | $N_e$ | $3N-6$ modes | softening (full) | empirical | pred/emp |
+|---|---|---|---|---|---|---|---|
+| 4  | tetrahedron        | $T_d$    | 6  | 6  | $-86.77\%$ | $+11.5\%$ | sign mismatch |
+| 5  | trig. bipyr.       | $D_{3h}$ | 9  | 9  | $-85.71\%$ | $-12.2\%$ | $7.0$ |
+| 6  | octahedron         | $O_h$    | 12 | 12 | $-86.53\%$ | $-21.3\%$ | $4.1$ |
+| 7  | pent. bipyr.       | $D_{5h}$ | 15 | 15 | $-85.22\%$ | $-29.5\%$ | $2.9$ |
+| 8  | snub disph.        | $D_{2d}$ | 18 | 18 | $-85.47\%$ | $-31.8\%$ | $2.7$ |
+| 9  | triaug. tri. prism | $D_{3h}$ | 21 | 21 | $-85.35\%$ | $-33.1\%$ | $2.6$ |
+| 10 | gyroel. sq. bipyr. | $D_{4d}$ | 24 | 24 | $-85.15\%$ | $-33.6\%$ (peak) | $2.5$ |
+| 12 | icosahedron        | $I_h$    | 30 | 30 | $-84.92\%$ | $+1.4\%$  | sign mismatch |
+
+### Three structural findings
+
+**Finding 1 (FLAT pattern across all polytopes).** Full-Hessian softening clusters at $-85 \pm 1\%$ for all eight polytopes (range $-84.9\%$ to $-86.8\%$, total spread $1.9\%$). No shape-class selection. The full mode space cannot produce U-shape selectivity by itself. Structural origin: at canonical $\sigma_{K3} = 1.68$ fm with $R_\alpha = 1.68$ fm, the K$_3$ potential is so flat compared to inter-vertex distances that single-edge variance ($\sim 2.51$ fm$^2$, isolated pair) is barely modified by full-Hessian vertex coupling ($\sim 2.4$ fm$^2$ across all polytopes — a 2\% reduction). Edges nearly independent in this weakly-bound system.
+
+**Finding 2 (factor 2.5 OVERSHOOT at empirical peak).** At $N_\alpha = 10$, full-Hessian gives $-85.15\%$ vs empirical $-33.6\%$. Factor 18.6 improvement over Phase 2 model (a) which gave $-4.57\%$. The full mode space contains sufficient zero-point amplitude to reach empirical magnitudes — the bottleneck is selection, not amplitude.
+
+**Finding 3 ($N_\alpha = 6$ Reading-A test fails for full-Hessian).** Octahedron $O_h$ gives $-86.53\%$ softening vs $D_{2d}$ snub disphenoid $-85.47\%$ — ratio 1.012, essentially identical. Full-Hessian model with no IRREP projection cannot distinguish $O_h$ (no belt) from $D_{2d}$ (belt-active). This is not a Reading-A vs B/C verdict at the unification level — only a verdict that the full-mode-space implementation lacks the selection structure.
+
+### Constructive content of the negative result
+
+Empirical peak softening $-33.6\%$ at $N_\alpha = 10$ lies cleanly between Phase 2 lower bound $-4.6\%$ and Phase 3A upper bound $-85\%$. Empirical is approximately $40\%$ of full-mode-space upper bound. The mode space contains sufficient amplitude. Therefore the obstruction is selection — which fraction of mode amplitude is belt-localized vs delocalized. This is precisely the discriminator IRREP projection is designed to address. Phase 3A converts Phase 3 from "is there enough amplitude?" (yes) to "which symmetry channel selects the belt-localized portion?" — a sharper and more productive question.
+
+### Verdict
+
+**Naive full-Hessian decomposition (model (b) without IRREP projection) RULED OUT** as a complete R2 closure mechanism on three independent grounds (flat pattern, factor 2.5 overshoot, $O_h \approx D_{2d}$ selection failure).
+
+**Seventh programme-level negative-result demonstration** in OPEN-SS-35 closure programme:
+
+| # | Route/Path | Session | Reason ruled out |
+|---|---|---|---|
+| 1 | Route D (lattice-shell counting) | Session 5 Phase 2 | distance shells don't match magic numbers |
+| 2 | Route B-γ (K$_3$-mode phase coupling) | Session 7 Phase 2 | $V_{\rm SO}/\hbar\omega \sim 10^{-3}$, magnitude insufficient |
+| 3 | Route 1b ($V_{\rm SO}$ refinement) | Session 10 | saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$ |
+| 4 | Path (i) cluster-surface Thomas | Session 11 Phase 1 | $f_{\rm SO}(r)$ peaks at center, not surface |
+| 5 | R1 ($R_\alpha$ scale-dependence) | Session 12 | wrong sign + U-shape + decoupled from gap strength |
+| 6 | Phase 2 model (a) uniform breathing | Session 13 Phase 2 | wrong magnitude + wrong pattern + wrong endpoint signs |
+| 7 | **Phase 3A naive full-Hessian** | **Session 13 Phase 3A** | flat pattern + factor 2.5 overshoot + $O_h \approx D_{2d}$ selection failure |
+
+**Phase 3A is constructive despite being a negative result.** Phase 2 established lower bound $-4.6\%$. Phase 3A establishes upper bound $-85\%$. Empirical $-33.6\%$ is bracketed and is $\sim 40\%$ of upper bound. R2 closure if it exists must be a partial-mode-space selection within the bracketed region.
+
+**R2 severely weakened but not formally closed.** Two of three plausible model-(b) realizations have failed (uniform scaling at lower extreme; full-Hessian at upper extreme). Only IRREP-selective decomposition (Phase 3B) remains untested — and the bracketing constrains its expected behavior sharply.
+
+### Cumulative OPEN-SS-35 trajectory
+
+Six programme-level stages preserved. Phase 3A refines stage (vi) by establishing the upper bound and ruling out the simplest model (b) realization; no new programme-level stage. First qualitative cross-paradigm consilience claim (Session 9) intact. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. R1 ruled-out (Session 12), Phase 2 ruled-out (this session) intact.
+
+### Forward-looking pointers for Session 14
+
+**Priority 1 (sharply constrained):** Phase 3 Phase B — IRREP-selective decomposition. Project Hessian eigenvectors onto belt-deformation IRREPs of each cluster's point group. Sharply constrained quantitative targets from the bracketing established here:
+- Target (a): $\sim 40\%$ of full-mode-space softening at J-solid mid-range ($N_\alpha = 7$–$10$), i.e., belt-localized fraction $\sim 0.4$ of total mode amplitude;
+- Target (b): near-zero at regular polytopes ($T_d$, $I_h$) — belt-IRREP must be empty or trivially populated;
+- Target (c): substantially less at $N_\alpha = 6$ ($O_h$) than at $N_\alpha = 8$ ($D_{2d}$) — discriminates Reading A (broader selection, $O_h$ partially active) vs B/C ($O_h$ fully suppressed by symmetry).
+
+These three targets together turn Phase 3B into a sharp falsifier rather than a qualitative search.
+
+**Priority 2 (deferred):** OPEN-SS-32 attenuation-factor derivation — same belt-IRREP framework if Phase 3B succeeds.
+
+**Priority 3 (parallel):** OPEN-SS-16 Layer B closure work. Deepest open problem; deferred.
+
+**Priority 4 (parallel):** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity (does it exclude $A = 16, 24$?). Partial discrimination of Reading B from A and C complementing Phase 3B mechanistic test.
+
+**Anti-priority:** Do not initiate SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until Phase 3B returns a result. §7 has shifted three times in this single session.
+
+**Housekeeping (registered for end-of-session, deferred per Thomas's "take territory" directive):** Promote bootup.md commit-flow section to top-level §3; may register as OPEN-ORG-013 mirroring OPEN-ORG-012 register-and-defer pattern.
+
+---
+
+*Session log Template-A Session 13 Phase 3A entry per §4 discipline. Substantive content: naive full-mode-space Hessian decomposition RULED OUT as R2 closure mechanism. Three independent findings: flat pattern across all polytopes ($-85 \pm 1\%$, no shape-class selection), factor 2.5 overshoot at empirical peak (mode space has sufficient amplitude), $O_h$/$D_{2d}$ selection failure (full-mode-space cannot distinguish belt-active from belt-inactive). Seventh programme-level negative-result demonstration. Constructive content: empirical $-33.6\%$ now bracketed between lower bound $-4.6\%$ (Phase 2) and upper bound $-85\%$ (Phase 3A); empirical is $\sim 40\%$ of upper bound. Phase 3B IRREP-selective decomposition registered as Session 14 Priority 1 with sharply constrained quantitative targets. R2 severely weakened but not formally closed. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
