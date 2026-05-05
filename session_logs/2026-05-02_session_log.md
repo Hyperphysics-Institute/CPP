@@ -1641,3 +1641,69 @@ R2 (cluster-scale vs alpha-scale unification at canonical $\sigma_{K3}$) further
 ---
 
 *Session log Session 14 Phase 3B-A entry per §4 discipline. Substantive content: minimal fixed-dim belt-subspace projection RULED OUT on two structural grounds (magnitude × 3 short + pattern-shape anti-correlation); eighth programme-level negative-result demonstration; R2 reduced to one untested realization; sharpened constraint on Phase 3B-B from N$_\alpha = 5$ overshoot structural insight. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 15 Phase 3B-B — Full C_n IRREP decomposition RULED OUT; n-vs-N structural argument FORMALLY CLOSES R2; ninth programme-level negative result; U-shape mechanism redirected outside K$_3$-Gaussian-Hessian framework (5 May 2026)
+
+**Session 15 trigger and orientation:** Continuation in same context window after Phase 3B-A patches landed cleanly on `origin/main` (HEAD = patch 0174 = `743c7d9`). Thomas asked the meta-question about end goal and big picture; after that exchange, committed to Option 1 (execute Phase 3B-B as registered in Session 14 close handover, accepting the clean-up framing).
+
+**Patches produced this entry:** 0175 (Phase 3B-B sketch + script substantive deliverable); 0176 onward (Steps A–H per §15 protocol).
+
+### Action
+
+Phase 3B-B implements the natural single-session realization of "full character-theory IRREP decomposition" specified at Session 14 close: project full Hessian eigenmodes onto belt-IRREP subspaces using each axial polytope's C$_n$ proper-rotation subgroup (the largest cyclic subgroup of the full point group). Three natural belt-IRREP variants tested simultaneously: B-B1 "all $m \neq 0$" (broadest, every axially-anisotropic mode); B-B2 "$m = 2$ only" (oblate-quadrupole IRREP, most physically motivated SS-7 OPEN-SS-32 hypothesis target); B-B3 "$m \neq 0$ AND in-plane radial" (dimension-scaling generalization of Phase 3B-A's fixed 3-dim belt-radial subspace). DEGENERATE polytopes (T$_d$, O$_h$, I$_h$) get $\dim(\text{belt}) = 0$ by symmetry, identical to Phase 3B-A.
+
+Sanity checks pass: Phase 3A reproduction exact to 3 decimals across all 8 polytopes; $\sum_m \text{tr}\,P_m = 3N$ for every polytope (verified $5+5+5=15$ at N=5, $5+5+3+3+5=21$ at N=7, $12+12=24$ at N=8, $9+9+9=27$ at N=9, $8+8+6+8=30$ at N=10).
+
+**All three variants RULED OUT.** B-B1 uniformly overshoots empirical by factor 1.2–2.7 across J-solid range (avg belt fraction 0.65 vs target 0.40). B-B2 happens to match empirical at N=5 to within 3% (−12.52% vs −12.16%) — the structurally hardest case from Phase 3B-A — but undershoots N=7,8,9,10 by factor 1.7–4 (avg belt fraction 0.118). The N=5 match is interpretive curiosity rather than physics signal: at C$_3$, $m = 2 \equiv m = 1$ under cosine projection, so B-B2 captures "the only non-trivial IRREP" at N=5 rather than a genuinely-quadrupole content. B-B3 undershoots all J-solids; 38% improvement over Phase 3B-A's fixed-dim 0.135 (now 0.184 average) but still factor 2 short.
+
+### The decisive new finding: n-vs-N structural obstacle
+
+Empirical magnitude is **monotonically increasing in N** across J-solid range: $N=5,7,8,9,10 \to |\delta_{\rm emp}| = 12.16, 29.50, 31.81, 33.14, 33.58\%$. But the cyclic symmetry order $n$ that drives any IRREP decomposition is **non-monotonic in N**: $n = 3, 5, 2, 3, 4$ for the same N values. Full point group orders are also non-monotonic: $|G| = 12, 20, 8, 12, 16$.
+
+**Any belt-IRREP-projection mechanism's variance content depends on $n$ (or $|G|$). Therefore no function of group-theoretic structure alone can produce a monotonic-in-N pattern when $n$ is non-monotonic in N.**
+
+This is a **class-level structural argument** that rules out the entire family of belt-IRREP-projection mechanisms within the K$_3$-Gaussian-Hessian framework, not just the three Phase 3B-B variants. It extends to constructions not yet computed:
+- Full point group decomposition (D$_{nh}$, D$_{nd}$ with reflections and improper rotations) — $|G|$ non-monotonic in N
+- Energy-weighted IRREP filtering — soft-mode count depends on $n$ via the IRREP decomposition
+- Higher-$m$ harmonics — exist or don't exist depending on $n$
+
+### R2 status — FORMALLY CLOSED
+
+R2 (cluster-scale vs alpha-scale mean-field unification at canonical $\sigma_{K3}$) has now seen all four plausible model-(b) realizations fail:
+
+| realization | session | verdict |
+|---|---|---|
+| Uniform scaling (single $A_1$) | 13 Phase 2 | RULED OUT |
+| All modes equal-weighted | 13 Phase 3A | RULED OUT |
+| Fixed-dim belt subspace | 14 Phase 3B-A | RULED OUT |
+| **Full C$_n$ IRREP decomposition** | **15 Phase 3B-B** | **RULED OUT — class-level closure** |
+
+The structural argument extends the closure to all model-(b) variants within the framework. **R2 is FORMALLY CLOSED — RULED OUT.** The unification hypothesis at canonical $\sigma_{K3}$ is **falsified**.
+
+**Ninth programme-level negative-result demonstration** — decisively stronger than Phase 3B-A's because the structural argument extends beyond the specific implementations to the entire mechanistic class.
+
+### Programme implications
+
+OPEN-SS-32 attenuation-factor derivation loses its primary candidate mechanism (was conditional on R2 success). OPEN-SS-35 sub-question (a) A-scaling closure now has both registered candidates (R1 and R2) ruled out; needs new closure mechanism outside the framework. Sub-question (b) layer 3 gap-strength closure is INDEPENDENT of R2 (Decoupling Theorem, Session 12); remains where Session 11 Phase 1 left it. First qualitative cross-paradigm consilience claim (Session 9, magic-number sequence reproduced) intact. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged. Six programme-level OPEN-SS-35 stages preserved.
+
+### Forward pointers (Session 16)
+
+**Priority 1 (substantive new investigation):** Identify the U-shape mechanism outside the K$_3$-Gaussian-Hessian framework. Suggested first scope: **anharmonic K$_3$ corrections at order $\xi^4$ in the Gaussian expansion** — most direct extension of the Phase 2/3A/3B framework, scales with edge count $|E| = 3N - 6$ (monotonic in N), single-session-tractable. Other candidate mechanisms (multi-session each): surface-tension contribution; Pauli-blocking at internal alpha-alpha contacts; effective-mass renormalization of nucleon orbitals; Coulomb-screened intra-cluster destabilization revisited.
+
+**Priority 2 (substantive new investigation):** Sub-question (b) layer 3 gap-strength closure outside the simple K$_3$ + HO + L·S + V$_{\rm SO}$ refinement framework (Session 11 Phase 1's candidate avenues).
+
+**Priority 3 (deferred):** OPEN-SS-32 attenuation-factor derivation reformulation — depends on Priority 1 success.
+
+**Priority 4 (parallel):** OPEN-SS-16 Layer B closure work.
+
+**Priority 5 (parallel):** Reading B literature check.
+
+**Anti-priorities:**
+- SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) — wait until §7 is reformulated for ruled-out R2 (§7 has now shifted **five** times in this thread).
+- No further belt-IRREP-projection variants within K$_3$-Gaussian-Hessian framework — n-vs-N argument rules out the entire class.
+- No full point group (D$_{nh}$, D$_{nd}$ with improper rotations) IRREP decomposition extension — structural argument applies.
+- No energy-weighted IRREP filtering or higher-$m$ harmonics — structural argument applies.
+
+---
+
+*Session log Session 15 Phase 3B-B entry per §4 discipline. Substantive content: full C$_n$ IRREP decomposition (three variants) RULED OUT on n-vs-N structural argument; **ninth programme-level negative-result demonstration**; **R2 formally closed — RULED OUT** (all four model-(b) realizations failed plus class-level structural argument); unification hypothesis at canonical $\sigma_{K3}$ falsified; U-shape mechanism investigation redirected outside K$_3$-Gaussian-Hessian framework with Priority 1 = anharmonic K$_3$ corrections at order $\xi^4$. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
