@@ -1458,3 +1458,43 @@ These three targets together turn Phase 3B into a sharp falsifier rather than a 
 ---
 
 *Session log Template-A Session 13 Phase 3A entry per §4 discipline. Substantive content: naive full-mode-space Hessian decomposition RULED OUT as R2 closure mechanism. Three independent findings: flat pattern across all polytopes ($-85 \pm 1\%$, no shape-class selection), factor 2.5 overshoot at empirical peak (mode space has sufficient amplitude), $O_h$/$D_{2d}$ selection failure (full-mode-space cannot distinguish belt-active from belt-inactive). Seventh programme-level negative-result demonstration. Constructive content: empirical $-33.6\%$ now bracketed between lower bound $-4.6\%$ (Phase 2) and upper bound $-85\%$ (Phase 3A); empirical is $\sim 40\%$ of upper bound. Phase 3B IRREP-selective decomposition registered as Session 14 Priority 1 with sharply constrained quantitative targets. R2 severely weakened but not formally closed. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 13 close — OPEN-ORG-013 registered (bootup.md commit-flow promotion); register-and-defer (5 May 2026)
+
+**Trigger:** End-of-session housekeeping pass after Phase 3A handoff (patches 0156–0165 pushed to `origin/main` at `233d87d`). Thomas requested the organizational items recommended during Phase 1 close be handled before the new context window.
+**Patch produced:** 0166 (this entry + OPEN-ORG-013 registration in `Organizational_Frontier.md`). Single-patch organizational deliverable.
+
+### Action
+
+Registered OPEN-ORG-013 in `Organizational_Frontier.md` mirroring the OPEN-ORG-012 register-and-defer pattern. The substantive bootup.md restructure (promote commit-flow subsection to top-level §3 with "READ FIRST IF GENERATING PATCHES" callout, add Step-1 priority-table annotation column) is captured with full fidelity in the entry's Proposed Fix section but execution is deferred to a future session with ~30–60 minutes of organizational capacity. Anti-trigger: do not initiate mid-session; this is a structural restructure of the file every session reads first.
+
+### Rationale for register-and-defer rather than execute-now
+
+The fix is mechanical (~30–60 minutes) and could in principle have been executed in this same window. Three reasons not to:
+
+1. **Discipline boundary.** Session 13 already produced three substantive results (Phases 1, 2, 3A) which is 3× the standard one-substantive-result-per-session pattern. Adding a fourth deliverable — even a small organizational one — at session tail risks the diminishing-quality pattern that the discipline boundary is designed to prevent.
+2. **Restructure of canonical bootstrap file.** The bootup.md file is what every fresh Opus session reads first. A botched restructure (broken cross-reference, mis-numbered section, lost callout) propagates the failure mode across every subsequent session. Executing this as a dedicated focused task is materially safer than executing as a tail-of-session housekeeping push.
+3. **Mirroring OPEN-ORG-012.** OPEN-ORG-012 (SS-9 v0.3 → v0.1 .tex conversion) was registered Session 12 close using exactly this pattern — capture full fidelity, defer execution to natural pause. Consistency in register-and-defer convention strengthens the registry as a discipline.
+
+### Verdict
+
+OPEN-ORG-013 registered. Execution deferred to a future session with appropriate capacity. No physics dependency; no programme blocker. The bootup-visibility failure mode itself is now captured in the registry; the next Opus session that reads `Organizational_Frontier.md` during its bootup pass will see OPEN-ORG-013 in §1 §"Open Organizational Problems" and have the option to act on it before reaching the patch-generation step where the failure historically occurs — which itself partially mitigates the failure mode even before the bootup.md restructure executes.
+
+### Cumulative Session 13 deliverable count
+
+Five-patch handoff for Phase 1 (0152–0155, four patches: sketch + Research_Frontier + vignette + session log). Five-patch handoff for Phase 2 (0156–0160). Five-patch handoff for Phase 3A (0161–0165). One-patch handoff for OPEN-ORG-013 registration (0166). Total: 16 patches landed on `origin/main` across Session 13.
+
+Three substantive physics deliverables (Phase 2 RULED OUT, Phase 3A RULED OUT + bracketing benchmark) plus one reading deliverable (Phase 1 prior-art read) plus one organizational-registration deliverable (OPEN-ORG-013). Per-result patch budget: ~4–5 patches per substantive result, 1 patch per organizational registration. Consistent with established programme cadence.
+
+### Forward pointers (carrying forward to Session 14 unchanged)
+
+**Priority 1:** Phase 3 Phase B — IRREP-selective Hessian decomposition. Three sharply constrained quantitative targets from the Phase 3A bracketing: ~40% of full-mode-space softening at J-solid mid-range; near-zero at regular polytopes; $O_h \ll D_{2d}$ ratio at $N_\alpha = 6$.
+**Priority 2:** OPEN-SS-32 attenuation-factor derivation if Phase 3B succeeds (same belt-IRREP framework).
+**Priority 3:** OPEN-SS-16 Layer B closure work (parallel, deepest open problem, deferred).
+**Priority 4:** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity (does it exclude $A = 16, 24$?).
+**Anti-priority:** SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) — wait for Phase 3B closure.
+**Workable any session:** OPEN-ORG-013 bootup.md restructure (this entry).
+
+---
+
+*Session log Session 13 close-out entry per §4 discipline. Substantive content: OPEN-ORG-013 registered using register-and-defer pattern mirroring OPEN-ORG-012. No physics result; organizational registration only. Sixteen patches total landed on `origin/main` across Session 13. Three substantive physics deliverables + one reading deliverable + one organizational registration. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
