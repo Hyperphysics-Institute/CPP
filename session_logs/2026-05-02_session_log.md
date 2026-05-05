@@ -1214,3 +1214,80 @@ The U-shape J-solid mid-range pattern is structurally similar to **SS-7 OPEN-SS-
 ---
 
 *Session log Template-A Session 12 entry per §4 discipline. Substantive content: R1 (R$_\alpha$ scale-dependence as A-scaling closure) RULED OUT. Three independent findings: (1) sign-robustness sigma-scan demonstrates universal compression, wrong sign for empirical match; (2) inversion gives U-shape pattern shape-driven not radius-driven, structurally similar to SS-7 OPEN-SS-32 J-solid regime; (3) Decoupling Theorem proves $V_{\rm SO}/\hbar\omega$ is independent of $\hbar\omega$ magnitude, refuting Session 7 implicit assumption that A-scaling closure could close gap-strength deficit. Fifth programme-level negative-result demonstration in OPEN-SS-35 closure programme. R2 only remaining A-scaling closure candidate; decoupled from gap-strength closure. Forward pointer: OPEN-SS-32 ↔ U-shape investigation registered as future-session sub-sub-question (high leverage, multi-session). Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged.*
+
+## Session 13 — OPEN-SS-32 ↔ U-shape unification Phase 1 prior-art read (4 May 2026)
+
+**Continuation of:** Session 12 (R1 RULED OUT; U-shape diagnostic registered with structural forward pointer to SS-7 OPEN-SS-32 J-solid regime; investigation registered as future-session sub-sub-question with explicit discipline boundary "proper prior-art reading and fresh session" required before any computation).
+**Trigger:** Thomas's request at fresh session opening to proceed per the Session 12 forward-looking pointers, Priority 1.
+**Patches produced:** 0152-0155 (Session 13 Phase 1 sketch + Research_Frontier Phase 1 update + four-tier development vignette + this session log entry). Smaller patch suite than Session 12's seven-patch standard reflects the Tier 1/2 character of a prior-art reading deliverable; no substantive Tier 4 reasoning content (no new physics derivations) and no transcript file (single Phase 1 document is the substantive output).
+
+### Strategy
+
+Session 12 §6 forward-looking pointers identified Priority 1 as the OPEN-SS-32 ↔ U-shape connection investigation, multi-session by scope (3–5 sessions), with a discipline boundary registered as anti-priority that the investigation requires "proper prior-art reading and fresh session" before any computation. Session 13 honored that boundary by opening with Phase 1 of the multi-session arc — the prior-art reading itself, with synthesis assessment of geometric naturalness and a Phase 2 work plan — rather than jumping to computation.
+
+### Phase 1 deliverable: prior-art digest
+
+Single sketch (`series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase1.md`, 291 lines) covering:
+
+- **OPEN-SS-32 mechanism** (SS-7 v1.3 §2.1 facet (c)): Cluster-level collective oblate-deformation mode at J-solid regime $N_\alpha \in \{7, 8, 9, 10\}$; K$_3$ collective mode at cluster-shape scale; Pattern 6 candidate fifth-scale instance; empirical $+0.55 B_{\rm pair}$ at Regime B, $+0.30 B_{\rm pair}$ at icosahedron, $\approx 0$ at Regime A; attenuation factor unknown.
+
+- **SS-8 H3$'$ analog** (SS-8 §3.5): Opposite-polarity pair-bonus at interstitial scale; mediated rather than direct (interstitials separated by $L_{\alpha\alpha} = 2.37$ fm, not by intra-alpha spacing); $1/\varphi^2$ attenuation factor with two independent SS-5 inheritance motivations (successive K$_3$ reductions; numerical equality with SS-5 same-polarity Pauli ratio); methodological template — provisional-tier mechanism reported alongside but not part of leading-order proof.
+
+- **Methodological parallel** OPEN-SS-32 ↔ OPEN-SS-28: Both are provisional-tier residual models, both are Pattern 6 candidate fifth-scale instances. SS-8's $1/\varphi^2$ at the cluster-shape scale would predict $+0.38 B_{\rm pair}$, undershooting empirical $+0.55 B_{\rm pair}$ by factor 1.5 — Phase 2 attenuation factor must differ from $1/\varphi^2$ or the empirical excess has a contribution beyond OPEN-SS-32 alone.
+
+- **Geometric assessment** of the radial-breathing analog: Static oblate deformation vs dynamic radial-breathing are two distinct modes that share an activation condition but are not identical. Unification hypothesis is geometrically natural by Pattern 6 + empirical-coincidence + closure-leverage criteria.
+
+### Most consequential Phase 1 finding
+
+The Research_Frontier patch 0149 cross-link asserts the U-shape and OPEN-SS-32 oblate regimes "coincide exactly" with same polytope-shape selection rules. Phase 1 reading of SS-7 §2.1 facet (c) and the Session 12 inversion table side-by-side establishes the coincidence is **qualitative (six of eight rows) rather than literal**:
+
+| $N_\alpha$ | U-shape required expansion | OPEN-SS-32 oblate-active? | Match? |
+|---|---|---|---|
+| 4 (tetrahedron) | $-5.3\%$ | no (Regime A) | yes |
+| 5 (trigonal bipyramid) | $+6.7\%$ | yes (Regime B) | yes |
+| **6 (octahedron)** | **$+12.7\%$** | **no (Regime A, $O_h$)** | **NO** |
+| 7 (pentagonal bipyramid) | $+19.1\%$ | yes (Regime B) | yes |
+| 8 (snub disphenoid) | $+21.1\%$ | yes (Regime B) | yes |
+| 9 (triaugmented prism) | $+22.3\%$ | yes (Regime B) | yes |
+| 10 (gyroelongated bipyr.) | $+22.7\%$ | yes (Regime B) | yes |
+| 12 (icosahedron) | $-0.7\%$ | no (suppressed by $I_h$) | yes |
+
+The octahedron at $N_\alpha = 6$ is inside the U-shape mid-range overshoot but outside the OPEN-SS-32 oblate regime ($O_h$ point-symmetric, no belt/seam). Patch-0149 framing was registered before the prior-art reading was done and overstates what the data show; Session 13 patch 0153 refines the cross-link to "qualitative six-of-eight with $N_\alpha = 6$ octahedron as discriminator."
+
+### Three admissible readings of the data
+
+- **Reading A:** Radial-breathing mode has a broader selection rule than static oblate deformation, activating at any axially-non-trivial cluster shape rather than only at belt/seam structure. $O_h$ symmetry forbids static oblate deformation but does not forbid a finite-frequency radial-breathing mode. Predicts non-zero radial-breathing softening at the octahedron.
+
+- **Reading B:** Session 12 inversion table treats $\hbar\omega$ as a single observable with empirical $41/A^{1/3}$, but at small $A$ (octahedron $A = 24$) the empirical fit is extrapolated rather than directly measured. The $+12.7\%$ required expansion at $N_\alpha = 6$ may be an empirical-formula-extrapolation artifact rather than a true U-shape feature. Predicts zero or near-zero radial-breathing softening at the octahedron.
+
+- **Reading C:** Two distinct K$_3$ scale-recurrence mechanisms at the cluster-shape scale that share most but not all selection rules. Predicts zero or near-zero radial-breathing softening at the octahedron.
+
+Phase 2 has clean discriminating power: the $N_\alpha = 6$ result distinguishes Reading A (non-zero softening) from Readings B/C (zero or near-zero softening).
+
+### Phase 2 work plan
+
+Single-session-tractable computation of the radial-breathing mode of J-solid deltahedra. Required inputs all present at HEAD: Session 6/7 Level-1 partial closure machinery (K$_3$ Gaussian-modulated mean field with self-consistent $\sigma$); cluster mass $m_{\rm cluster} = N_\alpha \cdot m_\alpha$; eight deltahedron geometries from Session 7 sketch; empirical $41/A^{1/3}$ formula. Computation steps: define radial-breathing dof (uniform scaling $\vec R_i \to \lambda \vec R_i$ as simplest single-dof start); compute radial restoring force from second derivative of total cluster binding with respect to $\lambda$; extract $\omega_{\rm br} = \sqrt{k_\lambda/m_{\rm cluster}}$; compute zero-point broadening $\langle(\Delta R_\alpha)^2\rangle$; translate to fractional $\hbar\omega^*$ softening. Three diagnostics: sign (a priori correct), magnitude (empirical $7$–$23\%$ mid-range), $N_\alpha = 6$ selection-rule test.
+
+### Status updates
+
+**OPEN-SS-32 ↔ U-shape investigation status:** "registered as future-session sub-sub-question" (Session 12 close) → "**Phase 1 prior-art read complete; unification hypothesis assessed as geometrically natural with one discriminating data point ($N_\alpha = 6$); Phase 2 single-session-tractable**" (this Session 13).
+
+**OPEN-SS-32 cross-link in Research_Frontier:** "coincides exactly" (patch 0149) → "qualitative six-of-eight with $N_\alpha = 6$ octahedron as discriminator" (patch 0153).
+
+**OPEN-ORG-012 (SS-9 v0.3 → v0.1 .tex conversion):** Trigger condition explicitly not yet met; anti-trigger applies because Phase 1 of OPEN-SS-32 ↔ U-shape has begun and §7 of SS-9 v0.3 will shift during Phase 2. Conversion deferred.
+
+**No new programme-level stage.** Six programme-level stages of OPEN-SS-35 closure programme preserved. Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. First qualitative cross-paradigm consilience claim (Session 9) intact. R1 ruled-out (Session 12) intact.
+
+### Forward-looking pointers for Session 14
+
+**Priority 1:** Phase 2 of the OPEN-SS-32 ↔ U-shape unification investigation per the Session 13 sketch §6. Single-session-tractable; standard seven-patch deliverable suite. Either confirms unification (closes R2, identifies missing CPP physics for layer 3) or rules it out / refines reading A/B/C.
+
+**Priority 2 (deferred until Phase 2 returns):** Phase 3 — if Phase 2 confirms unification, derive the OPEN-SS-32 attenuation factor at the cluster-shape scale from CPP primitives. Multi-session by scope.
+
+**Priority 3 (parallel, lower priority):** OPEN-SS-16 Layer B closure work. Deepest open problem; still deferred.
+
+**Anti-priority:** Do not initiate the SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until the OPEN-SS-32 ↔ U-shape investigation reaches a stable state (positive closure or negative ruling-out at Phase 2 or Phase 3). Anti-trigger from patch 0151 explicit.
+
+---
+
+*Session log Template-A Session 13 entry per §4 discipline. Reading deliverable; no new physics; no new programme-level stage. Substantive content: Phase 1 prior-art read of OPEN-SS-32 mechanism (SS-7 v1.3 §2.1 facet (c)) and SS-8 H3$'$ provisional residual model (SS-8 §3.5); methodological parallel OPEN-SS-32 ↔ OPEN-SS-28; geometric assessment of radial-breathing analog (geometrically natural by Pattern 6 + empirical-coincidence + closure-leverage); refinement of Research_Frontier patch 0149 cross-link from "coincides exactly" to "qualitative six-of-eight with octahedron discriminator"; Phase 2 single-session-tractable work plan with discriminating $N_\alpha = 6$ test. Six programme-level stages preserved; Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
