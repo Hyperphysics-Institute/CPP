@@ -1707,3 +1707,65 @@ OPEN-SS-32 attenuation-factor derivation loses its primary candidate mechanism (
 ---
 
 *Session log Session 15 Phase 3B-B entry per §4 discipline. Substantive content: full C$_n$ IRREP decomposition (three variants) RULED OUT on n-vs-N structural argument; **ninth programme-level negative-result demonstration**; **R2 formally closed — RULED OUT** (all four model-(b) realizations failed plus class-level structural argument); unification hypothesis at canonical $\sigma_{K3}$ falsified; U-shape mechanism investigation redirected outside K$_3$-Gaussian-Hessian framework with Priority 1 = anharmonic K$_3$ corrections at order $\xi^4$. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+---
+
+## Session 16 Phase 4 — Anharmonic K$_3$ $\xi^4$ + all-orders Gaussian RULED OUT; sign theorem closes Gaussian-K$_3$ framework at fixed geometry; tenth programme-level negative result (5 May 2026)
+
+### Context
+
+Session 15 Phase 3B-B formally closed R2 via the n-vs-N structural argument and forward-pointed Priority 1 to anharmonic K$_3$ corrections at order $\xi^4$ in the Gaussian expansion as the most direct framework extension. This was scoped as a single-session investigation with two falsifiers (magnitude and pattern). Session 16 executed that investigation.
+
+### What was done
+
+Phase 4 perturbative anharmonic correction was computed for all eight polytopes ($N = 4, 5, 6, 7, 8, 9, 10, 12$) at canonical $\sigma_{K3} = 1.68$ fm. Per-edge zero-point variance from the harmonic Hessian was accumulated mode-by-mode; first-order energy correction in the harmonic ground state used $\langle \xi^4 \rangle_0 = 3 \langle \xi^2 \rangle_0^2$. The pre-computation analytical sign argument (negative Taylor coefficient on $\xi^4$, positive $\langle \xi^4 \rangle_0$, hence negative energy shift = more binding) was verified computationally and extended to all orders of the Gaussian expansion via $\langle V_{\rm pair} \rangle_{\rm HOgs} = -B_{\rm pair} (1 + s)^{-1/2}$.
+
+### Result — RULED OUT on F1 sign
+
+For every polytope including the entire J-solid range ($N = 5, 7, 8, 9, 10$): $\Delta E^{(1)}_{\rm anharm} < 0$ (more binding). Empirical J-solid range needs $\Delta E > 0$ (binding less than canonical K$_3$). **Signs uniformly opposite.** F1 (sign) fails universally.
+
+The all-orders Gaussian-average extension reduces magnitude by factor $\sim 0.59$ (polytope-independent because $\langle s \rangle \approx 0.85$ is near-constant across polytopes) but preserves the negative sign.
+
+**Sign theorem (rigorous all-orders closure).** $f(s) \equiv (1+s)^{-1/2} - 1 + s/2$ satisfies $f(0) = 0$ and $f'(s) = (1/2)[1 - (1+s)^{-3/2}] > 0$ for $s > 0$, hence $f(s) > 0$ for $s > 0$, hence $\Delta E_{\rm anharm}^{\rm all\text{-}orders} = -B_{\rm pair} f(s) < 0$ universally. By Rayleigh–Ritz, the true ground state energy of the full Gaussian Hamiltonian in the harmonic-GS-trial ansatz is bounded above by $E^{\rm harm}_0 + \Delta E_{\rm anharm}^{\rm all\text{-}orders}$, hence is *strictly more bound* than the harmonic estimate.
+
+**Programme-level closure consequence.** The Gaussian-K$_3$ framework at fixed cluster geometry provably cannot produce less-than-harmonic binding. The empirical U-shape requires the opposite. Therefore the U-shape mechanism does not live within Gaussian-K$_3$ at fixed geometry, period. This is a stronger statement than Phase 3B-B's R2 closure (which closed only the harmonic-Hessian-belt-IRREP family at canonical $\sigma$). Phase 4 closes the perturbative-correction family at canonical geometry.
+
+Magnitude (F2) and pattern (F3) were also computed for completeness: $|\Delta E / B_{K3}| \approx 27\%$ (in J-solid range) vs $|d_{\rm emp}|$ 21–34% — *would have* passed in isolation; pattern is monotonic in $|E| = 3N - 6$, qualitatively consistent with empirical. Both moot given F1 dispositive.
+
+**Tenth programme-level negative-result demonstration.** Fifth in the OPEN-SS-32 ↔ U-shape thread (Phase 2 uniform-only, Phase 3A all-modes, Phase 3B-A fixed-dim, Phase 3B-B IRREP, **Phase 4 anharmonic + sign theorem**).
+
+### Constructive content from Phase 4
+
+- **Sign theorem** (sketch §2.4): provable closure tool for any future Gaussian-K$_3$ refinement at fixed geometry.
+- **$\langle s \rangle \approx 0.85$ near-constancy** across all 8 polytopes (range only $\sim 2$%): non-trivial empirical observation that mean per-edge zero-point variance is essentially independent of cluster topology in the J-solid range — explains why $|\Delta E / B_{K3}|$ is nearly polytope-independent.
+- **$\xi_{\rm rms} \approx 0.92$ regime caution** for any future K$_3$ work assuming small-displacement perturbative expansion; harmonic GS sits past the convergence regime.
+
+### Programme implications
+
+OPEN-SS-32 attenuation-factor derivation reformulation depends on identifying a U-shape mechanism *outside* the Gaussian-K$_3$ framework at fixed geometry. OPEN-SS-35 sub-question (a) A-scaling closure now requires either geometric-shift mechanisms beyond R1 (channels R3 = N-dependent boundary conditions on $R_\alpha$, R4 = cluster shape distortion) or out-of-framework physics (channels (b) inelastic excitations, (c) Strutinsky shell / Coulomb arrangement / surface shape). Sub-question (b) layer 3 gap-strength closure is INDEPENDENT of Phase 4 by Decoupling Theorem (Session 12); unaffected.
+
+§7 of SS-9 v0.3 working draft has now shifted **six times** in the OPEN-SS-32 ↔ U-shape thread (was 5 at Session 15 close); OPEN-ORG-012 .tex conversion further deferred.
+
+### Forward pointers (Session 17)
+
+**Priority 1 (substantive new investigation):** Cluster-geometry shift mechanisms beyond R1 (channels R3, R4). R1 tested specific surface-tension-motivated $R_\alpha(A)$ form; ruled out at Session 12. R3 and R4 are different geometric-shift forms not yet tested. Single-session-tractable as scoping investigations.
+
+**Priority 2 (substantive new investigation):** Inelastic / out-of-framework channels (§4.2 (b), (c) of Phase 4 sketch). Hoyle-state mixing, surface-energy shape dependence, Coulomb cluster-arrangement effects. Multi-session by scope; single-session scoping investigation feasible to identify which channel matches empirical sign/pattern.
+
+**Priority 3 (deferred):** OPEN-SS-32 attenuation-factor derivation reformulation — depends on Priority 1 / 2 success.
+
+**Priority 4 (parallel, deferred):** OPEN-SS-16 Layer B closure.
+
+**Priority 5 (parallel, registered):** Reading B literature check.
+
+**Anti-priorities (sharpened from Session 15):**
+- No further perturbative anharmonic refinement (ξ⁶, ξ⁸, hybrid PT) within Gaussian-K$_3$ at fixed geometry — universally closed by §2.4 sign theorem.
+- No further belt-IRREP-projection variants — closed Phase 3B-B.
+- No full point group $D_{nh}/D_{nd}$ extension — closed Phase 3B-B.
+- SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) further deferred — §7 needs reformulation reflecting Phase 4 closure layered on top of Phase 3B-B R2 closure (§7 now shifted 6 times in this thread).
+- No further $V_{\rm SO}$ refinement within simple K$_3$ + HO + L·S framework.
+- No further $R_\alpha(A)$ in the specific surface-tension form (R1; new geometric-shift forms R3/R4 are different).
+
+---
+
+*Session log Session 16 Phase 4 entry per §4 discipline. Substantive content: anharmonic K$_3$ $\xi^4$ first-order PT and all-orders Gaussian-average extension RULED OUT; **tenth programme-level negative-result demonstration**; sign theorem (§2.4 of sketch) provides rigorous all-orders closure of Gaussian-K$_3$ framework at fixed cluster geometry; U-shape mechanism investigation redirected to (a) geometric-shift mechanisms beyond R1 — channels R3, R4 — or (b) out-of-framework channels. Six programme-level OPEN-SS-35 stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
