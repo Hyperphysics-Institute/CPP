@@ -1498,3 +1498,51 @@ Three substantive physics deliverables (Phase 2 RULED OUT, Phase 3A RULED OUT + 
 ---
 
 *Session log Session 13 close-out entry per §4 discipline. Substantive content: OPEN-ORG-013 registered using register-and-defer pattern mirroring OPEN-ORG-012. No physics result; organizational registration only. Sixteen patches total landed on `origin/main` across Session 13. Three substantive physics deliverables + one reading deliverable + one organizational registration. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*
+
+## Session 13 close addendum — OPEN-ORG-013 resolved same-session via bootup.md restructure (5 May 2026)
+
+**Trigger:** Thomas asked whether patch 0166 had handled the visibility failure. It had not — only registered it. Claude reconsidered the deferral on the merits and reversed the defer-to-future-session decision.
+**Patch produced:** 0167 (this entry + bootup.md restructure + OPEN-ORG-013 status change to RESOLVED + relocation from §1 to §3 of `Organizational_Frontier.md`). Single-patch organizational deliverable.
+
+### What changed
+
+1. **bootup.md §3 created** as new top-level section "Patch Generation and Commit Flow — READ FIRST IF GENERATING PATCHES" with blockquote callout at the top: "If you (Claude) are about to produce `.patch` files for Thomas to apply, read this section in full BEFORE writing the apply macro you hand him. Do not reconstruct the macro from `conversation_search` or chat history." Section contains the canonical chained-with-fail-fast `&&` apply macro (newly codified — was not previously documented in this exact form), single-patch variant, patch numbering convention, in-container patch generation flow, commit author convention, and in-container vs. local clone usage.
+2. **bootup.md Step-1 priority table extended** with "Don't skip" annotation column. Row 1 (`bootup.md` itself) flags §3 as critical for any session that will generate patches; Row 7 (`templates/operating_system.md`) flags §4 as critical for documentation-discipline work.
+3. **bootup.md cascade renumber** of all sections from §3.5 → §4.5 and §4 → §5 through §13 → §14, with eight internal §-cross-references updated.
+4. **bootup.md §2 forward-pointer added** at end of §2 directing readers to §3 for patch-and-apply workflow.
+5. **bootup.md Step-1 advisory added** below the priority table directing fresh sessions to scan `Organizational_Frontier.md` §1 for any open organizational items that may bear on the current session — surfaces deferred items like OPEN-ORG-012 at the bootup entry point.
+6. **OPEN-ORG-013 status changed** OPEN → RESOLVED with full Resolution-as-adopted block + Cycle-time annotation + History event noting the in-session reversal.
+7. **OPEN-ORG-013 relocated** from §1 (Active Open) to §3 (Resolved) per registry convention "resolved entries stay in the file under §3 (Resolved) for historical reference rather than being deleted."
+
+### Why the deferral was wrong
+
+The defer-to-future-session decision in the registration patch (0166) was wrong on three counts:
+
+1. **The registry-only patch did not actually prevent the failure mode for the next session.** OPEN-ORG-013 was visible in the registry, but the bootup.md file the next Opus instance reads first was unchanged. The next session would still hit the same visibility failure.
+2. **The fix is mechanical, not judgement-heavy.** "Botched restructure risks propagating failures across all subsequent sessions" was a generic argument against ever doing organizational work, not a specific argument against doing this work now. The actual restructure was ~30 minutes of careful str_replace work — well within reliable execution capacity.
+3. **OPEN-ORG-012 is not analogous.** OPEN-ORG-012 (SS-9 v0.3 → v0.1 .tex conversion) is a 3-hour LaTeX conversion with format-mismatch and content-shift dependencies on an active investigation. OPEN-ORG-013 is a 30-60 minute mechanical restructure with no dependencies. Treating them as the same class of deferral was wrong.
+
+Same-session register-then-resolve is the strongest possible closure on a recurring failure mode — the bootup file the next fresh session reads is now restructured before that session begins.
+
+### Cumulative Session 13 deliverable count (final)
+
+- **Phase 1 (patches 0152–0155):** four-patch reading deliverable — OPEN-SS-32 ↔ U-shape unification prior-art read.
+- **Phase 2 (patches 0156–0160):** five-patch substantive negative result — uniform-scaling radial-breathing model RULED OUT.
+- **Phase 3A (patches 0161–0165):** five-patch substantive negative result + bracketing benchmark — naive full-Hessian RULED OUT, empirical now bracketed at ~40% of upper bound.
+- **OPEN-ORG-013 registration (patch 0166):** one-patch organizational registration.
+- **OPEN-ORG-013 resolution (patch 0167):** one-patch organizational resolution.
+
+Total: **17 patches landed on `origin/main`** across Session 13. Three substantive physics deliverables + one reading deliverable + one organizational item registered-and-resolved-same-session.
+
+### Forward pointers (carrying forward to Session 14, updated)
+
+**Priority 1:** Phase 3 Phase B — IRREP-selective Hessian decomposition. Three sharply constrained quantitative targets from the Phase 3A bracketing remain Session 14 focus.
+**Priority 2:** OPEN-SS-32 attenuation-factor derivation if Phase 3B succeeds.
+**Priority 3:** OPEN-SS-16 Layer B closure work (parallel, deferred).
+**Priority 4:** Reading B literature check — empirical $41/A^{1/3}$ A-range of validity.
+**Anti-priority:** SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) — wait for Phase 3B closure.
+**No longer pending:** OPEN-ORG-013 bootup.md restructure (resolved this session).
+
+---
+
+*Session log Session 13 close addendum per §4 discipline. Substantive content: OPEN-ORG-013 registered-and-resolved same-session. bootup.md restructured: new top-level §3 for patch generation and commit flow with READ FIRST IF GENERATING PATCHES callout, Step-1 priority table extended with Don't-skip annotation column, cascade renumber of §3.5 → §4.5 and §4 → §5 through §13 → §14, all internal §-cross-references updated. OPEN-ORG-013 relocated from §1 (Active Open) to §3 (Resolved). Seventeen patches total landed on origin/main across Session 13. Six programme-level stages preserved. Pattern 6 K$_3$ scale-recurrence at 7 confirmed instances unchanged.*

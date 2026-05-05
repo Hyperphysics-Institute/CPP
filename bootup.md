@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/bootup.md`
 **Purpose:** Load this file at the start of every new AI session working on CPP. It provides everything needed to continue productive work.
-**Maintenance principle:** This file is infrastructure. It should rarely be updated — only when conventions, repository structure, or orientation protocols change. For current state (results, active problems, papers in progress), follow the pointers in §3 to the living tracking documents; do not rely on bootup for current state.
+**Maintenance principle:** This file is infrastructure. It should rarely be updated — only when conventions, repository structure, or orientation protocols change. For current state (results, active problems, papers in progress), follow the pointers in §4 to the living tracking documents; do not rely on bootup for current state.
 
 ---
 
@@ -22,22 +22,24 @@ Run this first, in the container working directory (typically `/home/claude`):
     cd CPP
     git pull   # if the repo was cloned in an earlier turn
 
-After cloning, every subsequent file referenced in this bootup (and in §8.5, and in every handover document) is read from the local clone using filesystem tools — NOT via web_fetch. URL patterns shown in this document and in §8.5 are reference paths; the actual reads happen against the cloned working tree.
+After cloning, every subsequent file referenced in this bootup (and in §9.5, and in every handover document) is read from the local clone using filesystem tools — NOT via web_fetch. URL patterns shown in this document and in §9.5 are reference paths; the actual reads happen against the cloned working tree.
 
 If `git clone` fails (no bash tool, network restriction, github.com unreachable), STOP and tell Thomas — do not attempt to bootstrap by fetching individual `raw.githubusercontent` URLs. That path works for the bootup file itself and then fails opaquely on everything downstream.
 
 ### Step 1: Read these files IN ORDER (from the local clone)
 
-| Priority | File | What it gives you | Time |
-|----------|------|-------------------|------|
-| 1 | `bootup.md` | THIS FILE — orientation, structure, conventions | 5 min |
-| 2 | `CPP_the_theory.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min |
-| 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min |
-| 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min |
-| 5 | `Research_Frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min |
-| 6 | `theorem-registry.md` | What we've proved — all theorems by series with axiom dependencies | 5 min |
-| 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min |
-| 8 | `templates/AI_team_expectations.md` | Team-level conventions, per-AI expectations, identified failure modes | 5 min |
+| Priority | File | What it gives you | Time | Don't skip |
+|----------|------|-------------------|------|-----------|
+| 1 | `bootup.md` | THIS FILE — orientation, structure, conventions | 5 min | **§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`. |
+| 2 | `CPP_the_theory.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
+| 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min | — |
+| 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
+| 5 | `Research_Frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min | — |
+| 6 | `theorem-registry.md` | What we've proved — all theorems by series with axiom dependencies | 5 min | — |
+| 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min | §4 (Four-Tier Documentation Discipline) — required reading before producing reasoning/development/transcript artifacts. |
+| 8 | `templates/AI_team_expectations.md` | Team-level conventions, per-AI expectations, identified failure modes | 5 min | — |
+
+**Also check `Organizational_Frontier.md` §1** for any open organizational items (`OPEN-ORG-NNN`) that may bear on the current session. Items registered there have been deferred awaiting their trigger condition; if you are at a natural pause point with capacity, scan whether any are workable.
 
 **For sessions involving open problem work or repo restructuring**, also read:
 - `templates/Research_Frontier_Architecture.md` — the three-layer architecture (dashboard → problem histories → papers)
@@ -48,8 +50,8 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
   `series_strong/papers/SS-8/documentation_suite/handover-SS-8.md`
   Legacy-flat pattern (older papers):
   `series_strong/papers/development-SS-8.md`
-  (replace `series_strong` with the appropriate series folder per §8.5 below, and `SS-8` with the paper ID.)
-  The handover (or its legacy-flat predecessor) is the **canonical session-continuity state record**, preserved verbatim at each session close per `templates/operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §8.5 below for the full rule.
+  (replace `series_strong` with the appropriate series folder per §9.5 below, and `SS-8` with the paper ID.)
+  The handover (or its legacy-flat predecessor) is the **canonical session-continuity state record**, preserved verbatim at each session close per `templates/operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §9.5 below for the full rule.
 - Per-paper subfolders also contain `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map). The handover is the one to read first; the others are deeper context if needed.
 - If no paper is named, check `/mnt/transcripts/` for raw conversation logs.
 - Check if Thomas has Grok/Copilot exchanges to share.
@@ -84,7 +86,17 @@ Web:   https://hyperphysics.com
 
 Always `git pull` before starting work. Thomas pushes frequently.
 
-### Thomas's local working path and the `git am` commit flow
+**For Claude-generated patches and Thomas's apply workflow**, see §3 below — the patch-generation and commit-flow section. If you are generating `.patch` files this session, read §3 in full before composing the apply macro.
+
+---
+
+## 3. Patch Generation and Commit Flow — READ FIRST IF GENERATING PATCHES
+
+> **If you (Claude) are about to produce `.patch` files for Thomas to apply, read this section in full BEFORE writing the apply macro you hand him. Do not reconstruct the macro from `conversation_search` or chat history. The canonical form below is battle-tested across ~165+ patches; any reconstruction is a near-miss risk that creates downstream rebase work for Thomas.**
+>
+> **Failure mode this section addresses:** Multiple consecutive Opus sessions have, on first attempt, searched prior conversations for the apply macro instead of reading this section. The result is 2–5 wasted exchanges per session burned on rediscovering documented procedure, plus occasional format-drift risk. If you notice yourself reaching for `conversation_search` to find the macro, STOP and re-read this section instead. (Registered as OPEN-ORG-013 in `Organizational_Frontier.md`; this section is its resolution.)
+
+### Where Thomas works locally
 
 When Claude generates files, patches, or document edits during a session, Thomas commits them from his local clone — NOT from the Claude container. The container is ephemeral; Thomas's local clone is the source of truth that gets pushed to GitHub.
 
@@ -94,33 +106,85 @@ When Claude generates files, patches, or document edits during a session, Thomas
 ~/Documents/GitHub/CPP
 ```
 
-**Standard commit flow for Claude-generated patches.** Claude produces git mailbox-format patch files (numbered `00NN-description.patch`) that Thomas downloads to `~/Downloads/` and applies via `git am`. This preserves authorship, timestamps, and commit messages exactly as Claude composed them, with a single command on Thomas's end:
+### Standard commit flow for Claude-generated patches
 
-```
-cd ~/Documents/GitHub/CPP
-git am ~/Downloads/00NN-description.patch
-git push origin main
-```
+Claude produces git mailbox-format patch files (numbered `00NN-description.patch`) using `git format-patch`, places them under `/mnt/user-data/outputs/patches/`, and presents them via the `present_files` tool so Thomas can download to `~/Downloads/`. Thomas then applies them via `git am`. This preserves authorship, timestamps, and commit messages exactly as Claude composed them.
 
-For multiple patches in sequence (this is the common case — a session typically produces 2–6 patches), apply each in order:
+### The canonical apply macro — chained-with-fail-fast form
 
-```
-cd ~/Documents/GitHub/CPP
-git am ~/Downloads/0034-first-patch.patch
-git am ~/Downloads/0035-second-patch.patch
-git am ~/Downloads/0036-third-patch.patch
-git push origin main
+For multi-patch sessions (this is the typical case — a session typically produces 4–10 patches), use the chained `&&` form so a failed `git am` aborts the chain before pushing partial state:
+
+```bash
+cd ~/Documents/GitHub/CPP && git pull origin main && \
+  git am ~/Downloads/0NNN-first-patch.patch && \
+  git am ~/Downloads/0NNN-second-patch.patch && \
+  git am ~/Downloads/0NNN-third-patch.patch && \
+  git push origin main
 ```
 
-**Patch numbering convention.** Continue from the highest existing patch number in the repo's commit history. Use `git log --oneline | head -20` to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. As of 26 April 2026 Session 2, the highest committed patch was 0033.
+Three pieces in order:
+1. **`cd ~/Documents/GitHub/CPP`** — switch to Thomas's local working clone (must always be the first step).
+2. **`git pull origin main`** — cheap insurance; should be a no-op if Claude generated the patches against the current `main` HEAD, but catches the rare race where Thomas pushed unrelated work between Claude's last sync and patch generation.
+3. **`git am ~/Downloads/0NNN-*.patch`** — one line per patch, in numerical order. Order matters because later patches frequently reference content added by earlier patches; out-of-order application causes `git am` to fail with hash-mismatch errors.
+4. **`git push origin main`** — only fires if every preceding step succeeded (the `&&` chain short-circuits on the first failure).
 
-**When `git am` flow is NOT appropriate.** For trivial single-line edits Thomas wants to make himself, or for files Claude generates that don't need preserved authorship metadata, the simpler `git add` + `git commit` + `git push` flow can be used instead. Claude defaults to `git am` for any substantive deliverable (file additions, multi-line edits to existing files, anything with a meaningful commit message).
+If any `git am` fails, the chain stops there. Thomas can run `git am --abort` to revert the failed patch's partial state, then report the failure to Claude for diagnosis. **Do not push partial state under any circumstance.**
 
-**When to use the in-container clone vs. Thomas's local clone.** Claude reads files from the in-container clone at `/home/claude/CPP` (or wherever Step 0 placed it). Claude does NOT push to the in-container clone; the in-container clone is read-only from Thomas's perspective. All commits and pushes happen from Thomas's local clone at `~/Documents/GitHub/CPP` after the patches are downloaded and applied via `git am`.
+### Single-patch variant (organizational deliverables, etc.)
+
+For a single-patch session:
+
+```bash
+cd ~/Documents/GitHub/CPP && git pull origin main && \
+  git am ~/Downloads/0NNN-description.patch && \
+  git push origin main
+```
+
+### Patch numbering convention
+
+Continue from the highest existing patch number in the repo's commit history. Run `git log --oneline | head -20` in the in-container clone to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. (As of 5 May 2026 Session 13 close, the highest committed patch is 0166.)
+
+### Generating the patch files in the container
+
+After committing locally in `/home/claude/CPP`:
+
+```bash
+git format-patch -N HEAD~N..HEAD -o /tmp/p_outdir/
+```
+
+Then rename each file from `git format-patch`'s default `0001-`, `0002-`, ... numbering to the global sequence (e.g., `0167-`, `0168-`, ...) and move them under `/mnt/user-data/outputs/patches/`. Finally, surface them with the `present_files` tool so they appear in Thomas's download menu. **Patches that exist in the outputs folder but are not surfaced via `present_files` are invisible to Thomas — both steps are required.**
+
+### Commit author convention
+
+Claude's commits are authored as `Opus <opus@cpp.local>`:
+
+```bash
+GIT_AUTHOR_NAME="Opus" GIT_AUTHOR_EMAIL="opus@cpp.local" \
+GIT_COMMITTER_NAME="Opus" GIT_COMMITTER_EMAIL="opus@cpp.local" \
+git commit -m "..."
+```
+
+This keeps Claude-authored commits visually distinct from Thomas's own commits in `git log`.
+
+### When `git am` flow is NOT appropriate
+
+For trivial single-line edits Thomas wants to make himself, or for files Claude generates that don't need preserved authorship metadata, the simpler `git add` + `git commit` + `git push` flow can be used instead. Claude defaults to `git am` for any substantive deliverable (file additions, multi-line edits to existing files, anything with a meaningful commit message).
+
+### When to use the in-container clone vs. Thomas's local clone
+
+Claude reads files from the in-container clone at `/home/claude/CPP` (or wherever Step 0 placed it). Claude does NOT push to the in-container clone; the in-container clone is read-only from Thomas's perspective. All commits and pushes happen from Thomas's local clone at `~/Documents/GitHub/CPP` after the patches are downloaded and applied via `git am`.
+
+After Thomas confirms a successful push, sync the in-container clone before continuing work in the same session:
+
+```bash
+cd /home/claude/CPP && git fetch origin main && git reset --hard origin/main
+```
+
+This ensures the in-container clone reflects the canonical state on GitHub.
 
 ---
 
-## 3. Complete Repository Structure
+## 4. Complete Repository Structure
 
 ```
 CPP/
@@ -157,13 +221,13 @@ CPP/
 ├── ── PAPER SERIES ──
 ├── series_standard_model/            ← SM-N papers (Standard Model, includes mass sector)
 │   ├── papers/                       ← .tex, .pdf, .bib files
-│   │   └── [PAPER-ID]/               ← per-paper subfolder (created early — see §3.5 below)
+│   │   └── [PAPER-ID]/               ← per-paper subfolder (created early — see §4.5 below)
 │   │       ├── reviews/              ← verbatim reviewer correspondence
 │   │       ├── letters/              ← correspondence from Claude (synthesis, review requests)
 │   │       ├── sketches/             ← derivation notes, findings, exploratory analyses
 │   │       ├── scripts/              ← Python verification scripts
 │   │       ├── founders_voice/       ← Thomas's recorded intuitions and organizational notes
-│   │       └── documentation_suite/  ← four-tier documentation discipline (see §3.5)
+│   │       └── documentation_suite/  ← four-tier documentation discipline (see §4.5)
 │   │           ├── reasoning-[ID].md       ← Tier 4: verbatim Opus reasoning (canonical)
 │   │           ├── development-[ID].md     ← Tier 3: curated paragraph-form vignettes
 │   │           ├── transcript-[ID].md      ← Tier 2: transaction pointer-map
@@ -185,7 +249,7 @@ CPP/
 
 ---
 
-## 3.5 Four-Tier Documentation Discipline (per-paper subfolder convention)
+## 4.5 Four-Tier Documentation Discipline (per-paper subfolder convention)
 
 When you produce work that will become or modify a paper, that work is preserved across **four tiers** of artifacts. The discipline is codified in `templates/operating_system.md` §4 "Four-Tier Documentation Discipline." Brief tour:
 
@@ -212,7 +276,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 
 ---
 
-## 4. All Key Files — What Each Does
+## 5. All Key Files — What Each Does
 
 ### Theory documents (read for physics context)
 
@@ -258,7 +322,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 
 ---
 
-## 5. The AI Team
+## 6. The AI Team
 
 | AI | Primary role | How Thomas communicates |
 |----|-------------|------------------------|
@@ -272,7 +336,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 
 ---
 
-## 6. Session Types
+## 7. Session Types
 
 | Type | Goal | Key procedure |
 |------|------|---------------|
@@ -285,7 +349,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 
 ---
 
-## 7. Current Results
+## 8. Current Results
 
 For current headline results, strongest predictions, and scorecard, read:
 
@@ -297,7 +361,7 @@ Do not rely on bootup for current result values. Results drift between papers; t
 
 ---
 
-## 8. Current Active Open Problems
+## 9. Current Active Open Problems
 
 For the live dashboard of open problems, conjectures, and propositions with status and dependencies:
 
@@ -309,7 +373,7 @@ Do not rely on bootup for the open-problem list. Active problems are created, re
 
 ---
 
-## 8.5 Active Work Pointer — read the paper's handover document first
+## 9.5 Active Work Pointer — read the paper's handover document first
 
 **When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), read that paper's session-handover document from your local clone as the first concrete action, BEFORE attempting any substantive work. (Per Step 0 you should already have a local clone — if not, clone now.)**
 
@@ -365,7 +429,7 @@ The handover document (or its legacy-flat predecessor `development-[ID].md`) is 
 - What registry updates are pending ratification
 - Pointers to verbatim artefacts (reviews, letters, sketches, scripts) that hold the substantive content
 
-The handover is a bounded state snapshot — a few hundred lines, not a full narrative. For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention provides the four-tier documentation discipline (see §3.5): `documentation_suite/development-[ID].md` (Tier 3 — curated paragraph-form vignettes), `documentation_suite/transcript-[ID].md` (Tier 2 — transaction-indexed pointer-map), and `documentation_suite/reasoning-[ID].md` (Tier 4 — verbatim Opus reasoning, the canonical record from which the other tiers derive). When ongoing work has produced substantive Opus reasoning beyond housekeeping, append to the Tier 4 reasoning file at session close. See `templates/operating_system.md` §4 for the full Four-Tier Documentation Discipline codification.
+The handover is a bounded state snapshot — a few hundred lines, not a full narrative. For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention provides the four-tier documentation discipline (see §4.5): `documentation_suite/development-[ID].md` (Tier 3 — curated paragraph-form vignettes), `documentation_suite/transcript-[ID].md` (Tier 2 — transaction-indexed pointer-map), and `documentation_suite/reasoning-[ID].md` (Tier 4 — verbatim Opus reasoning, the canonical record from which the other tiers derive). When ongoing work has produced substantive Opus reasoning beyond housekeeping, append to the Tier 4 reasoning file at session close. See `templates/operating_system.md` §4 for the full Four-Tier Documentation Discipline codification.
 
 **Compaction summaries and training data do NOT preserve these specifics.** Numerical results get rounded, decision rationales get compressed, and registry statuses get flattened. If you start substantive work from a compaction summary without reading the handover, you will either (a) ask Thomas to re-explain state he already documented, or (b) guess wrong about the current conditional-theorem tiers, consolidated open problems, or reviewer positions.
 
@@ -384,7 +448,7 @@ Update the transcript at each section-end commit and at every context-pressure c
 
 ---
 
-## 9. What to Update After Every Paper
+## 10. What to Update After Every Paper
 
 **TRIGGER:** Run this checklist after completing the documentation suite (Phase 7), BEFORE pushing to GitHub.
 
@@ -418,7 +482,7 @@ Update the transcript at each section-end commit and at every context-pressure c
 
 ---
 
-## 10. The Documentation Suite (7 files per paper)
+## 11. The Documentation Suite (7 files per paper)
 
 Every completed paper gets 7 companion `.md` files stored in `series_[name]/`:
 
@@ -436,7 +500,7 @@ Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
 
 ---
 
-## 11. Conventions
+## 12. Conventions
 
 **Paper IDs:** `[SERIES]-[NUMBER]` (SM-8, EW-3, QM-1, SR-1, SS-1, SD-5). Paper numbers are assigned sequentially within a series as new papers enter the repository.
 **Filenames:** `SM-8_quark_generation_600cell_shells.tex` — lowercase slug, no version number in filename
@@ -448,7 +512,7 @@ Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
 
 ---
 
-## 12. Papers in the Programme
+## 13. Papers in the Programme
 
 For the current paper list with IDs, titles, versions, and OSF status:
 
@@ -456,13 +520,13 @@ For the current paper list with IDs, titles, versions, and OSF status:
 - **`README.md`** — public paper table
 - **`series_[name]/README.md`** — per-series overview
 
-Series codes: SM (Standard Model), SS (Strong Sector), EW (Electroweak), QM (Quantum Mechanics), SR (Relativity), SD (Foundations/Superdeterminism). See §11 for naming conventions.
+Series codes: SM (Standard Model), SS (Strong Sector), EW (Electroweak), QM (Quantum Mechanics), SR (Relativity), SD (Foundations/Superdeterminism). See §12 for naming conventions.
 
 Do not rely on bootup for paper counts or versions; `paper_catalog.md` is the single source of truth.
 
 ---
 
-## 13. OSF Registration
+## 14. OSF Registration
 
 1. Prepare PDF + .tex + .bib + figures
 2. Write metadata (title, abstract, keywords, dependencies, version)

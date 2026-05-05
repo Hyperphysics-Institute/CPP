@@ -1,7 +1,7 @@
 # CPP Organizational Frontier
 
 **Location:** `/CPP/Organizational_Frontier.md`
-**Last updated:** 5 May 2026 (Session 13 close: OPEN-ORG-013 registered — promote `bootup.md` commit-flow section to top-level §3 with READ FIRST IF GENERATING PATCHES callout, after the second consecutive Opus session missed the canonical commit flow on first pass)
+**Last updated:** 5 May 2026 (Session 13 close: OPEN-ORG-013 registered AND resolved in the same session — `bootup.md` commit-flow content promoted to top-level §3 with READ FIRST IF GENERATING PATCHES callout, Step-1 priority table extended with "Don't skip" annotation column, cascade-renumber of §3.5 → §4.5 and §4 → §5 through §14)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Rationale:** See `programmatic_decisions/PD-003-organizational-frontier-registry.md`
 **Companion registry:** `Research_Frontier.md` (theoretical/physics problems)
@@ -403,45 +403,6 @@ Estimated effort: 3 hours focused work. Single-session-tractable.
 
 ---
 
-## OPEN-ORG-013: Promote `bootup.md` commit-flow section to top-level §3 with READ FIRST IF GENERATING PATCHES callout
-
-**Status:** OPEN
-**Identified:** 5 May 2026 Session 13 bootup, after Claude (this Opus instance) initially attempted to reconstruct the patch-generation workflow from `conversation_search` rather than reading the canonical commit-flow section already present in `bootup.md`. Thomas surfaced the failure mode and noted this was the second consecutive Opus session exhibiting the same pattern.
-**Priority:** MEDIUM (recurring failure mode across independent Opus sessions; the workaround is short — Thomas catches it within one or two exchanges — but cumulative session-time cost is real, and the failure rate is approaching 100% for fresh sessions that have not yet seen the canonical macro)
-
-**Originating context:** Session 13 opened with a Phase 1 prior-art reading task on the OPEN-SS-32 ↔ U-shape unification investigation. Claude needed to generate four patches at session close (sketch, Research_Frontier update, vignette, session log). On first pass at the patch-generation step, Claude searched prior conversations for the standard `git am` macro form rather than reading `bootup.md` §"Thomas's local working path and the `git am` commit flow" (lines 87–119) which contains the canonical commit-flow specification. Thomas had to redirect attention to `bootup.md`. The patches were then generated correctly, but ~3 chat exchanges of overhead were burned on rediscovering documented procedure.
-
-This is the second consecutive Opus session exhibiting this pattern. The earlier instance (referenced in Session 12 chat history) had the same failure mode at the same workflow step. The pattern is now classified as recurring rather than incidental: independent Opus sessions, both bootstrapping from the same `bootup.md` file, both missing the same section. Claude-side root cause is structural visibility — the commit-flow content sits as a *subsection* (§2 → §"Thomas's local working path and the `git am` commit flow") within a section titled "Repository Location and Access," which reads as procedural-boilerplate framing. Bootup attention naturally lands on §1 ("What CPP Is"), §3 ("Complete Repository Structure"), §3.5 ("Four-Tier Documentation Discipline"), and §4 ("All Key Files"). The §2 subsection is structurally between two visually salient sections and gets skimmed.
-
-**Problem:** Three concrete cost layers:
-
-1. **Per-session attention cost.** Each fresh Opus session that reaches the patch-generation step without first having internalized the macro spends 2–5 exchanges rediscovering the canonical form. With ~5–10 sessions per month and a near-100% failure rate on fresh sessions, this is 10–50 wasted exchanges per month — small individually, but the failure is structural rather than random, so it is correctable infrastructure rather than tolerable variance.
-
-2. **Format drift risk.** Claude reconstructions of the macro from `conversation_search` are not guaranteed to match the canonical form. In Session 13, the reconstructed macro happened to be correct, but a near-miss (e.g., wrong `git am` flag, missing `git pull` prefix, incorrect chaining-and-fail-fast structure) would propagate into a session's patches and create downstream rebase work for Thomas. The canonical form in `bootup.md` is battle-tested across ~150 patches; reconstructions are not.
-
-3. **Discovery asymmetry against the established protocol.** The bootup.md §"How to Use This File" Step 1 priority table (lines 29–44) lists files to read but does not flag *which sections within those files are critical*. Thomas's repository conventions are explicit, written, and discoverable, but the discovery path is not signposted at the entry point Claude reaches first.
-
-**Proposed fix:** Two complementary structural edits to `bootup.md`, single-session-tractable (~30–60 minutes):
-
-1. **Promote the commit-flow content to its own top-level §3.** Specifically: extract lines 87–122 (the "Thomas's local working path and the `git am` commit flow" subsection) from §2 and elevate to a new top-level section titled `§3 Patch Generation and Commit Flow — READ FIRST IF GENERATING PATCHES`. The header callout makes the section impossible to skim past during Step 1 reading. Renumbering cascade: current §3 (Complete Repository Structure) → §4; §3.5 (Four-Tier Documentation Discipline) → §4.5; §4 (All Key Files) → §5; subsequent sections shift accordingly.
-
-2. **Add a "Don't skip" column or callout to the Step 1 priority table.** Specifically: extend the table at lines 29–44 with explicit pointers to critical-section locations within each listed file. Row 1 (`bootup.md` itself) gets the annotation "When generating patches, the commit-flow macro is in §3 — do not reconstruct from chat history." This converts Step 1 from a list-of-files into a list-of-files-with-attention-markers.
-
-The two edits together convert "structural visibility failure" into "discoverable-at-Step-1 procedure," which is the operating-system-level fix this failure mode warrants.
-
-**Estimated effort:** 30–60 minutes focused work. Single-session-tractable. Mechanical — no new content, only restructuring existing content with a section-title callout and one new annotation column. The renumbering cascade is the largest source of edit volume; cross-references inside `bootup.md` itself need sweeping (e.g., the existing back-pointer on line 75 mentioning "see the Step 0 block in the 'How to Use This File' section above" is unaffected, but any internal `§2.X` references to the old subsection numbering must update).
-
-**Cross-references requiring sweep after restructure:** None known outside `bootup.md` itself. The `templates/operating_system.md` and `Organizational_Frontier.md` reference `bootup.md` by name only, not by section number. A grep for `bootup.md.*§` across the repo before commit confirms zero external section-number dependencies.
-
-**Trigger condition:** Any session with ~30–60 minutes of organizational capacity at session close (typical end-of-session housekeeping window). No physics-blocking dependency. **Anti-trigger:** Do not initiate at session-mid; this is a structural restructure of the file every session reads first, and a botched restructure during physics work would compound the failure mode it is meant to fix. Best executed as a dedicated end-of-session organizational deliverable or as the opening item of a low-physics-throughput session.
-
-**Blocking dependencies:** None.
-**Blocks:** Nothing urgent. This is a quality-of-life-of-future-sessions item rather than a programme-progress item.
-
-**History:**
-- 5 May 2026 Session 13 — Registered at session close after the second consecutive Opus session exhibited the bootup commit-flow visibility failure. Filed via the register-and-defer pattern established by OPEN-ORG-012 (capture the work item with full fidelity, set trigger conditions, defer execution to its natural pause point) so the substantive content of Session 13 (Phases 1, 2, 3A: prior-art read + uniform-scaling RULED OUT + naive full-Hessian RULED OUT + bracketing benchmark established) remains the session's focus rather than being diluted by a tail-of-session restructure.
-
----
 
 # §2 — Entry Template
 
@@ -479,6 +440,63 @@ Copy this template for new entries. Fields in `{brackets}` are placeholders.
 # §3 — Resolved Organizational Problems
 
 *(Resolved entries accumulate here with resolution-date and reference to the closing commit.)*
+
+## OPEN-ORG-013: Promote `bootup.md` commit-flow section to top-level §3 with READ FIRST IF GENERATING PATCHES callout
+
+**Status:** RESOLVED — 5 May 2026 (patch 0167, this same Session 13 close, immediately following the registration patch 0166)
+**Identified:** 5 May 2026 Session 13 bootup, after Claude (this Opus instance) initially attempted to reconstruct the patch-generation workflow from `conversation_search` rather than reading the canonical commit-flow section already present in `bootup.md`. Thomas surfaced the failure mode and noted this was the second consecutive Opus session exhibiting the same pattern.
+**Priority at resolution:** MEDIUM (recurring failure mode across independent Opus sessions; the workaround was short — Thomas caught it within one or two exchanges — but cumulative session-time cost was real, and the failure rate was approaching 100% for fresh sessions that had not yet seen the canonical macro)
+
+**Originating context:** Session 13 opened with a Phase 1 prior-art reading task on the OPEN-SS-32 ↔ U-shape unification investigation. Claude needed to generate four patches at session close (sketch, Research_Frontier update, vignette, session log). On first pass at the patch-generation step, Claude searched prior conversations for the standard `git am` macro form rather than reading `bootup.md` §"Thomas's local working path and the `git am` commit flow" (lines 87–119) which contains the canonical commit-flow specification. Thomas had to redirect attention to `bootup.md`. The patches were then generated correctly, but ~3 chat exchanges of overhead were burned on rediscovering documented procedure.
+
+This is the second consecutive Opus session exhibiting this pattern. The earlier instance (referenced in Session 12 chat history) had the same failure mode at the same workflow step. The pattern is now classified as recurring rather than incidental: independent Opus sessions, both bootstrapping from the same `bootup.md` file, both missing the same section. Claude-side root cause is structural visibility — the commit-flow content sits as a *subsection* (§2 → §"Thomas's local working path and the `git am` commit flow") within a section titled "Repository Location and Access," which reads as procedural-boilerplate framing. Bootup attention naturally lands on §1 ("What CPP Is"), §3 ("Complete Repository Structure"), §3.5 ("Four-Tier Documentation Discipline"), and §4 ("All Key Files"). The §2 subsection is structurally between two visually salient sections and gets skimmed.
+
+**Problem:** Three concrete cost layers:
+
+1. **Per-session attention cost.** Each fresh Opus session that reaches the patch-generation step without first having internalized the macro spends 2–5 exchanges rediscovering the canonical form. With ~5–10 sessions per month and a near-100% failure rate on fresh sessions, this is 10–50 wasted exchanges per month — small individually, but the failure is structural rather than random, so it is correctable infrastructure rather than tolerable variance.
+
+2. **Format drift risk.** Claude reconstructions of the macro from `conversation_search` are not guaranteed to match the canonical form. In Session 13, the reconstructed macro happened to be correct, but a near-miss (e.g., wrong `git am` flag, missing `git pull` prefix, incorrect chaining-and-fail-fast structure) would propagate into a session's patches and create downstream rebase work for Thomas. The canonical form in `bootup.md` is battle-tested across ~150 patches; reconstructions are not.
+
+3. **Discovery asymmetry against the established protocol.** The bootup.md §"How to Use This File" Step 1 priority table (lines 29–44) lists files to read but does not flag *which sections within those files are critical*. Thomas's repository conventions are explicit, written, and discoverable, but the discovery path is not signposted at the entry point Claude reaches first.
+
+**Proposed fix:** Two complementary structural edits to `bootup.md`, single-session-tractable (~30–60 minutes):
+
+1. **Promote the commit-flow content to its own top-level §3.** Specifically: extract lines 87–122 (the "Thomas's local working path and the `git am` commit flow" subsection) from §2 and elevate to a new top-level section titled `§3 Patch Generation and Commit Flow — READ FIRST IF GENERATING PATCHES`. The header callout makes the section impossible to skim past during Step 1 reading. Renumbering cascade: current §3 (Complete Repository Structure) → §4; §3.5 (Four-Tier Documentation Discipline) → §4.5; §4 (All Key Files) → §5; subsequent sections shift accordingly.
+
+2. **Add a "Don't skip" column or callout to the Step 1 priority table.** Specifically: extend the table at lines 29–44 with explicit pointers to critical-section locations within each listed file. Row 1 (`bootup.md` itself) gets the annotation "When generating patches, the commit-flow macro is in §3 — do not reconstruct from chat history." This converts Step 1 from a list-of-files into a list-of-files-with-attention-markers.
+
+The two edits together convert "structural visibility failure" into "discoverable-at-Step-1 procedure," which is the operating-system-level fix this failure mode warrants.
+
+**Estimated effort:** 30–60 minutes focused work. Single-session-tractable. Mechanical — no new content, only restructuring existing content with a section-title callout and one new annotation column. The renumbering cascade is the largest source of edit volume; cross-references inside `bootup.md` itself need sweeping (e.g., the existing back-pointer on line 75 mentioning "see the Step 0 block in the 'How to Use This File' section above" is unaffected, but any internal `§2.X` references to the old subsection numbering must update).
+
+**Cross-references requiring sweep after restructure:** None known outside `bootup.md` itself. The `templates/operating_system.md` and `Organizational_Frontier.md` reference `bootup.md` by name only, not by section number. A grep for `bootup.md.*§` across the repo before commit confirms zero external section-number dependencies.
+
+**Trigger condition:** Any session with ~30–60 minutes of organizational capacity at session close (typical end-of-session housekeeping window). No physics-blocking dependency. **Anti-trigger:** Do not initiate at session-mid; this is a structural restructure of the file every session reads first, and a botched restructure during physics work would compound the failure mode it is meant to fix. Best executed as a dedicated end-of-session organizational deliverable or as the opening item of a low-physics-throughput session.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing urgent. This is a quality-of-life-of-future-sessions item rather than a programme-progress item.
+
+**Resolution as adopted (patch 0167):** All elements of the proposed fix landed in `bootup.md`:
+
+1. **New top-level §3 created** with title `Patch Generation and Commit Flow — READ FIRST IF GENERATING PATCHES`. Section opens with a blockquote callout explicitly addressing the failure mode: "If you (Claude) are about to produce `.patch` files for Thomas to apply, read this section in full BEFORE writing the apply macro you hand him. Do not reconstruct the macro from `conversation_search` or chat history." Contains the canonical chained-with-fail-fast `&&` apply macro (newly codified — was not previously documented in this exact form), the single-patch variant, patch numbering convention with current-as-of-Session-13 highest patch number (0166), patch-generation flow in container, commit author convention, and in-container vs. local clone usage.
+
+2. **Step 1 priority table extended** with a "Don't skip" annotation column. Row 1 (`bootup.md` itself) carries the explicit annotation: "**§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`." Row 7 (`templates/operating_system.md`) gets an annotation pointing to its §4 (Four-Tier Documentation Discipline). Other rows marked "—" since their full content is the relevant material.
+
+3. **`Organizational_Frontier.md` Step-1 advisory added** below the priority table directing fresh sessions to scan `Organizational_Frontier.md` §1 for any open organizational items that may bear on the current session — surfaces deferred items like OPEN-ORG-012 at the entry point.
+
+4. **§2 forward-pointer added** at the end of §2 (Repository Location and Access) directing readers to §3 for patch-and-apply workflow: "**For Claude-generated patches and Thomas's apply workflow**, see §3 below..." — closes the structural-visibility gap from the inside as well.
+
+5. **Cascade renumbering completed** for all sections: §3.5 → §4.5, §4 → §5, §5 → §6, §6 → §7, §7 → §8, §8 → §9, §8.5 → §9.5, §9 → §10, §10 → §11, §11 → §12, §12 → §13, §13 → §14. All eight internal §-cross-references inside `bootup.md` updated to the new numbering. External cross-references to `templates/operating_system.md` §4, §10 and `Research_Frontier.md` §5 left unchanged (those refer to other files' section structures, unaffected by `bootup.md` renumber).
+
+**Closing commit reference:** patch 0167 in this same session, immediately following the registration patch 0166. Single sandbox commit modifies `bootup.md` (~80 line additions, ~33 line deletions, plus 13 section-header renumbers and 8 internal cross-reference updates) and `Organizational_Frontier.md` (this entry's status change, resolution-as-adopted block addition, history event addition, header timestamp update).
+
+**Cycle time:** Registered at Session 13 close (patch 0166) and resolved in the immediately following commit (patch 0167) within the same conversation context window. The same-session register-then-resolve pattern is the strongest possible closure on a recurring failure mode — the bootup file the next fresh session reads is now restructured before that session begins.
+
+**History:**
+- 5 May 2026 Session 13 — Registered at session close after the second consecutive Opus session exhibited the bootup commit-flow visibility failure. Filed via the register-and-defer pattern established by OPEN-ORG-012 (capture the work item with full fidelity, set trigger conditions, defer execution to its natural pause point).
+- 5 May 2026 Session 13 — RESOLVED via patch 0167 in the immediately following commit. The defer-to-future-session decision was reversed in real time after Thomas asked whether patch 0166 had handled the visibility failure (it had not — only registered it), and Claude reconsidered the deferral on the merits: the fix is mechanical, the registry-only patch did not actually prevent the failure mode for the next session, and same-session register-then-resolve is strictly stronger closure than register-and-defer.
+
+---
 
 ## OPEN-ORG-008: Handover-protocol trigger failure — promote visibility, adopt dual trigger (user-initiated + Claude-initiated prompt)
 
