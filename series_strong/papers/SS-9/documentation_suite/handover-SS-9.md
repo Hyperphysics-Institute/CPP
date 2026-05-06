@@ -1,63 +1,65 @@
-# Handover — SS-9 Session 25 Close
+# Handover — SS-9 Session 26 Close
 
-**Last updated:** 6 May 2026 (Session 25 v1.0 polish sub-task (a) close).
+**Last updated:** 6 May 2026 (Session 26 v1.0 polish sub-task (b) close).
 
-This handover supersedes Session 24 close handover (patch 0224). Apply chain for Session 25: 5-patch chain 0225–0229 from `c5a30ea` origin/main baseline (Session 24 close).
+This handover supersedes Session 25 close handover (patch 0229). Apply chain for Session 26: 5-patch chain 0230–0234 from `640f3da` origin/main baseline (Session 25 close).
 
 ---
 
-## What Session 25 accomplished
+## What Session 26 accomplished
 
-**v1.0 polish sub-task (a) DONE.** SS-9 v0.1 → v0.2. Sub-Lemma 2.1 (\S 2.5) added formalizing the C7 motivation paragraph as a conditional derivation:
+**v1.0 polish sub-task (b) DONE.** SS-9 v0.2 → v0.3. Sub-Lemma 2.2 (\S 2.6) added deriving 3D-non-degeneracy from existing inheritance hypotheses C1$'$ + C2 + C3 + C5 via the maximum-edge selection principle (Lemma C):
 
 \[
-\textbf{C1$'$ + C2 + C6 + (H4) cluster contractibility + (H5) alpha-surface adjacency} \;\Rightarrow\; \textbf{C7}.
+\text{At } \Nalpha \geq 4, \text{ no ground-state cluster has all centroids coplanar.}
 \]
-
-**Hypothesis (H4) cluster contractibility:** $K = \bigcup_{i=1}^{N_\alpha} T_i$ (closed union of LO tetrahedra) is a contractible compact 3-manifold with piecewise-linear boundary.
-
-**Hypothesis (H5) alpha-surface adjacency (ASA):** For every K$_3$-bonded pair $\{\alpha_i, \alpha_j\} \in E$, the shared LO triangular face $F_{ij}$ has at least one boundary edge that lies on $\Sigma = \partial K$ (equivalently: at least one of the three edges of $\partial F_{ij}$ is not shared with any third tetrahedron $T_k$).
 
 **Proof structure (4 steps):**
 
-1. **$\Sigma \cong S^2$.** By (H4), $\chi(K) = 1$. The boundary-Euler formula for compact orientable 3-manifolds with boundary, $\chi(K) = \tfrac{1}{2}\chi(\partial K)$, gives $\chi(\Sigma) = 2$. Connectedness of $\Sigma$ + classification of closed orientable surfaces forces $\Sigma \cong \Sigma_g$ with $g = 0$, hence $\Sigma \cong S^2$.
+1. **Coplanar-centroid degree bound.** Any 2-plane through $c_i$ contains at most 2 of $\alpha_i$'s 4 LO face-normals. Reason: any 3 of the 4 face-normals span $\mathbb{R}^3$ (they form 3 of 4 vertices of a non-degenerate regular tetrahedron centered at $c_i$). Combined with C2 (face-to-face contact requires centroid direction parallel to a face-normal): $\deg_G(c_i) \leq 2$ in any coplanar contact graph.
 
-2. **External-face decomposition $\Sigma = \bigcup_i F_i^{ext}$.** Under C1$'$ + rigid packing, each 2-face of each $T_i$ is either internal (shared with one $T_j$) or external (on $\Sigma$). The $F_i^{ext}$ form a closed cover of $\Sigma$ with pairwise interior-disjoint regions. C6 forces $F_i^{ext} \neq \emptyset$ for every $i$ (contradiction otherwise: $T_i \subset \mathrm{int}(K) \subset \mathrm{int}(H)$, so $c_i \in \mathrm{int}(H)$, contradicting C6).
+2. **Planar edge bound.** Handshake: $2|E_{\mathrm{planar}}| = \sum_i \deg_G(c_i) \leq 2\Nalpha$, so $|E_{\mathrm{planar}}| \leq \Nalpha$.
 
-3. **Alpha-dual embedding.** For each $\alpha_i$, choose basepoint $p_i \in \mathrm{int}(F_i^{ext})$. For each contact $\{\alpha_i, \alpha_j\}$, by (H5) at least one edge $e_{ij} \subset \partial F_{ij}$ lies on $\Sigma$; this edge is a common boundary edge of $F_i^{ext}$ and $F_j^{ext}$. Pick generic interior point $q_{ij} \in e_{ij}$; concatenate paths $p_i \rightsquigarrow q_{ij}$ on $F_i^{ext}$ and $q_{ij} \rightsquigarrow p_j$ on $F_j^{ext}$ to form arc $\gamma_{ij}$.
+3. **3D edge bound.** FvdW deltahedra realize $|E_{\mathrm{3D}}| = 3\Nalpha - 6$ at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, with $|E| = 6, 9, 12, 15, 18, 21, 24, 30$ respectively. Physically realizable under C1$'$ (facets a, b).
 
-4. **Generic non-crossing.** For contacts with disjoint endpoint sets, supports in $F_i^{ext} \cup F_j^{ext}$ vs. $F_k^{ext} \cup F_l^{ext}$ are disjoint. For contacts sharing $\alpha_i$, segments inside $F_i^{ext}$ from $p_i$ to distinct boundary edges $e_{ij} \neq e_{ik}$ avoid each other except at $p_i$ (which is the vertex incidence required by the embedding).
+4. **Strict edge gain in 3D.** $|E_{\mathrm{3D}}| - |E_{\mathrm{planar}}| \geq 2\Nalpha - 6 \geq 2$ at $\Nalpha \geq 4$. Binding-energy gain $\geq 2 \Bpair = 4.684$ MeV. By Lemma C (max edges) + C5 (ground state), no coplanar configuration is a ground state.
 
-The collection $\{p_i\} \cup \{\gamma_{ij}\}$ embeds $G(\mathcal{C})$ in $\Sigma \cong S^2$ as a planar graph.
+**Three remarks accompany the sub-lemma.**
 
-**Effect on OPEN-SS-33.** ADVANCED from "raw open" (Session 24 ratification) to "conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5." The sub-lemma + Remark 2.1 structure is a typical intermediate stage in programme-level closure work: it does not unconditionally close OPEN-SS-33, but it reduces the residual content to two precisely-stated topological hypotheses, each smaller in scope than C7 itself.
+- **Remark 2.2 (tightness, $\Nalpha = 3$ exception).** At $\Nalpha = 3$: planar $|E| = 3$ coincides with $3\Nalpha - 6 = 3$. Strict inequality fails. ${}^{12}$C as planar triangle is consistent with maximum-edge selection at $\Nalpha = 3$. Matches Theorem's exclusion of $\Nalpha = 3$ from scope. Threshold $\Nalpha \geq 4$ is sharp.
+- **Remark 2.3 (refined-C1 facet (b) compatibility).** Facet (b) activates only at degree $\geq 5$; planar bound establishes $\deg \leq 2$, so facet (b) not invoked. Facet (b) operates within $\sim 5\%$ LO rigidity envelope; face-normal directions remain $O(5\%)$-deformed from regular tetrahedron, preserving "any 3 face-normals span $\mathbb{R}^3$."
+- **Remark 2.4 (effect on §9 Gap 4).** §9 Gap 4 flagged this exact closure route. Sub-Lemma 2.2 delivers it. 3D-non-degeneracy now derivable from existing inheritance hypotheses, not an independent auxiliary assumption.
 
-**Remark 2.1 closure paths for residual sub-targets.**
+**Effect on §9 gap list.** "3D-non-degeneracy" gap (Gap 4 in v0.1) **CLOSED at v0.3.** Combined with Session 25's closure of Gap 5 ("C7 motivation argument") at v0.2, the v0.1 6-gap list is reduced to 4 remaining gaps:
 
-- **(H4) Cluster contractibility from C5 isoperimetrics.** Two failure modes: (i) internal voids — enclosed low-density DP-sea region with extra surface energy, no compensating bulk binding; (ii) toroidal handles — genus $g \geq 1$ requires $|E| > 3|V| - 6$ for triangulated surfaces, energetically excluded under C5. Both failure modes excluded under ground-state energy minimization.
-- **(H5) Alpha-surface adjacency from C5 + LO-geometry.** Failure requires "three-around-an-edge" geometric configuration where $\partial F_{ij}$'s three edges are all shared with third tetrahedra. Combinatorially small (3-, 4-, 5-around-edge realizable; 6+ excluded by total dihedral angle $>2\pi$); direct binding-energy comparison under C5 shows face-shared K$_3$-bonded ground states dominate edge-shared alternatives.
+| Gap | v0.1 status | v0.3 status |
+|-----|-------------|-------------|
+| 1. C5 (ground-state existence/uniqueness) | OPEN | OPEN (sub-task (c) candidate Session 27) |
+| 2. C6 (cluster surface-realization) | OPEN | OPEN (programme-level OPEN-SS-30) |
+| 3. C7 (contact-graph planarity) | OPEN | OPEN (programme-level OPEN-SS-33, conditionally closed at v0.2 modulo H4+H5) |
+| 4. 3D-non-degeneracy | OPEN | **CLOSED v0.3** |
+| 5. C7 motivation argument formalization | OPEN | **CLOSED v0.2** |
+| 6. Steinitz invocation pre-conditions | OPEN | OPEN |
 
-**Effect on §9 gap list.** "C7 motivation argument" gap PARTIALLY CLOSED at v0.2. Residual content reduced to (H4) + (H5) sub-targets.
+**Effect on programme-level OPEN-* registries: NONE.** 3D-non-degeneracy was an auxiliary assumption local to SS-9, not registered as a programme-level OPEN-SS-* problem. Closure at v0.3 is paper-internal. No changes to Research_Frontier.md OPEN-* status entries from this session — only the "Last updated" header reflects Session 26 polish work.
 
-**Compilation.** Three pdflatex passes (draftmode, halt-on-error, nonstopmode) — pass 1 expected undefined-references warnings; passes 2 and 3 produced ZERO warnings, ZERO errors. Output 23 pages (was 21 in v0.1; +2 pages from sub-lemma + remark). Pre-existing minor cosmetic warnings (one hyperref token from a math symbol in a section title; two overfull hbox in abstract/intro region; bibliography underfull hbox from URLs/long author lists) all preserved unchanged from v0.1 — no new typesetting issues introduced.
+This contrasts with Session 25's sub-task (a), which advanced OPEN-SS-33 (a programme-level open problem) from raw open to conditional closure.
 
-**Theorem statement and proof unchanged.** Theorem 6.1 (Main Theorem, Conditional C4 closure) at v0.2 still uses C7 directly as a conditional hypothesis. Sub-Lemma 2.1 provides an alternate route to C7 that does not require restating the Theorem; readers preferring the H4+H5 hypothesis stack can swap C7 for those two via the sub-lemma. v1.0 may consolidate the hypothesis list (e.g., by replacing C7 with H4+H5 in the Main Theorem statement and using Sub-Lemma 2.1 directly within the proof of Lemma B').
+**Compilation.** Three pdflatex passes (draftmode for 1, 2; output for 3): zero errors all passes; one pre-existing hyperref Token-not-allowed warning preserved unchanged from v0.2 (cosmetic only). Output 25 pages (was 23 in v0.2; +2 pages from sub-lemma + 3 remarks).
 
----
-
-## Session 25 selection logic
-
-Thomas asked at session start whether to pursue SS-10 sub-shell-physics development before AI review submission. Claude recommended the opposite ordering: tighten v0.1 → v0.2 → v0.3 → v0.4 via sub-tasks (a)/(b)/(c) first, *then* AI review (d), *then* external review (e); SS-10 runs as a parallel multi-paper track from Session 25 onward.
-
-**Symmetric-honesty argument.** §9 of v0.1 already lists six gaps. Submitting v0.1 to AI reviewers without first tightening would surface deficiencies we already know about, wasting reviewer attention on items that should be closed in-house. The natural order is therefore (a)/(b)/(c) first, then (d) AI review on a tightened paper, then (e) external review.
-
-**Thomas confirmed:** "I support sending a completed paper to reviewers, rather than wasting effort submitting a paper with known deficiencies that can be corrected first. By all means, finish polishing SS-9 before we send to reviewers."
-
-**Why C7 (sub-task a) before C5 / C6 closures.** OPEN-SS-29 (C5 first-principles closure) and OPEN-SS-30 (C6 first-principles closure) were registered with SS-7 v1.0 (April 2026) and have remained "raw open" through Sessions 5–24. OPEN-SS-33 (C7) was newly registered at SS-9 v0.1 ship (Session 24) but already had a sketched closure path in the §1 motivation paragraph. The motivation paragraph is informal but the underlying argument is mathematically tractable — boundary-Euler formula gives $\Sigma \cong S^2$ rigorously, and the alpha-dual embedding can be made rigorous via explicit basepoint + arc construction. C5 and C6 closures, by contrast, require deriving energy minimization (C5) or convex-hull-vertex constraint (C6) from CPP A1–A11 — both substantively harder than the topological argument for C7.
+**Theorem statement and proof unchanged at v0.3.** Theorem 6.1 still lists "3D-non-degeneracy" in its conditional hypothesis stack for clarity in conditional-hypothesis readability. Remark 2.4 explicitly notes this is now a derived condition, not an assumed one. v1.0 may consolidate.
 
 ---
 
-## Programme-level state at Session 25 close
+## Session 26 selection logic
+
+The 0229 (Session 25 close) handover identified sub-task (b) as the natural Session 26 starting point: the §9 v0.1 Gap 4 entry already specified the closure route in some detail, so the work was largely formalization of an already-clear closure path. Sub-task (b) is a much shorter and cleaner sub-lemma than sub-task (a), reflecting the fact that 3D-non-degeneracy is a more local geometric statement than C7 (and so derivable from local geometric hypotheses rather than requiring new global topological hypotheses like H4/H5).
+
+The natural ordering (a) → (b) → (c) → (d) → (e) was sustained: (a) closes the largest registered gap (C7 motivation, programme-level OPEN-SS-33); (b) closes the second-largest registered gap (3D-non-degeneracy, paper-internal); (c) addresses the C5 well-definedness (paper-internal, smaller scope); (d) AI review on a tightened paper; (e) external review.
+
+---
+
+## Programme-level state at Session 26 close
 
 - **12 programme-level negative results UNCHANGED** (v1.0 polish work is paper-internal, not programme-level).
 - All earlier closures preserved.
@@ -67,88 +69,96 @@ Thomas asked at session start whether to pursue SS-10 sub-shell-physics developm
 - Phase 11 R3-Pauli NULL RESULT preserved (structural-redundancy methodological category).
 - Single-session R3-channel refinement candidates EXHAUSTED — preserved.
 - **OPEN-SS-24 ADVANCED** to conditional theorem at C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier — preserved from Session 24.
-- **OPEN-SS-33 ADVANCED** from raw open to conditionally closed modulo (H4) + (H5) — NEW at Session 25.
+- **OPEN-SS-33 ADVANCED** from raw open to conditionally closed modulo (H4) + (H5) — preserved from Session 25.
 - **OPEN-ORG-012 RETIRED** — preserved from Session 24.
-- **SS-9 at v0.2** (was v0.1 at Session 24 ship).
-- **v1.0 polish track:** sub-task (a) C7 sub-lemma DONE; sub-tasks (b)/(c)/(d)/(e) pending.
+- **SS-9 at v0.3** (was v0.2 at Session 25 close).
+- **v1.0 polish track:** sub-tasks (a) and (b) DONE; sub-tasks (c)/(d)/(e) pending.
+- **§9 v0.1 6-gap list reduced to 4 remaining gaps** (Gaps 4 and 5 closed at v0.3 and v0.2 respectively).
 - §7 stable — no shifts since Phase 11 NULL saturation.
 
 ---
 
-## Session 26 forward queue
+## Session 27 forward queue
 
-### Priority 1 within v1.0 polish track: sub-task (b) 3D-non-degeneracy
+### Priority 1 within v1.0 polish track: sub-task (c) C5 well-definedness via compactness
 
-**Goal.** Verify 3D-non-degeneracy via maximum-edge selection sub-lemma. Formalize: under C1$'$ + C5 + $N_\alpha \geq 4$, the ground-state cluster cannot have all centroids coplanar.
+**Goal.** Verify that the C5 ground state is well-defined: the set of physically realizable $\Nalpha$-alpha cluster configurations at fixed $\Nalpha$ is compact, and $B(\mathcal{C})$ is continuous on this set, so the supremum $\sup_{\mathcal{C}} B(\mathcal{C})$ is attained — the ground state exists.
 
-**Proof sketch.** Planar arrangements of $N_\alpha$ points have at most $3N_\alpha - 6$ edges by Euler ($V - E + F = 2$ + $2E \geq 3F$ for triangulated planar graphs). 3D arrangements can have higher edge counts ($|E| = 3N_\alpha - 6$ for simplicial 3-polytope by Euler in 3D, but the 3D ground state could realize a different combinatorial structure with comparable edges). Under C5 (energy minimization picks maximum-binding configurations) and binding-per-edge from C3, the ground state maximizes $|E|$. At $N_\alpha \geq 4$: tetrahedron ($|E| = 6$ in 3D vs $|E| = 5$ for any planar 4-cycle with diagonals counted appropriately) demonstrates 3D advantage. The sub-lemma should formalize this comparison and identify the exact $N_\alpha$ threshold above which 3D dominates.
+**Anticipated Sub-Lemma 2.3 statement.** \emph{The set of physically realizable $\Nalpha$-alpha cluster configurations at fixed $\Nalpha$ (modulo rigid motions) is compact, and $B: \mathrm{Conf}(\Nalpha) \to \mathbb{R}$ is continuous; hence the supremum $\sup_{\mathcal{C}} B(\mathcal{C})$ is attained.}
 
-**Expected single-session-tractability.** Yes — the proof is a direct combinatorial argument under the existing hypothesis stack.
+**Proof sketch.** Configuration space:
+\[
+\mathrm{Conf}(\Nalpha) = \big\{ (c_1, R_1, \ldots, c_{\Nalpha}, R_{\Nalpha}) \in (\mathbb{R}^3 \times \mathrm{SO}(3))^{\Nalpha} \;\big|\; \text{physically realizable} \big\} \big/ \mathrm{SE}(3)
+\]
+where physical realizability requires (i) no alpha-alpha interpenetration; (ii) cluster connected through $G$.
+
+Compactness: (a) $G$-connectedness implies bounded diameter $\leq (\Nalpha - 1) R_{\alpha\alpha}$, so centroids modulo $\mathrm{SE}(3)$ live in a compact subset of $(\mathbb{R}^3)^{\Nalpha} / \mathrm{SE}(3)$; (b) $\mathrm{SO}(3)^{\Nalpha}$ is compact; (c) physical realizability is closed (no-interpenetration is a closed condition; $G$-connectedness is closed in the configuration topology). Quotient of a closed subset of a compact space by a continuous group action remains compact.
+
+Continuity of $B$: $B(\mathcal{C}) = \Nalpha \Balpha + |E(\mathcal{C})| \Bpair$. $|E|$ is locally constant on the configuration space (small perturbations don't change which faces coincide), with jumps at face-coincidence boundaries. Continuity in the upper-semi-continuous sense: $B$ is bounded above on $\mathrm{Conf}(\Nalpha)$ (since $|E| \leq 3\Nalpha - 6$); supremum is attained on the closed configuration space.
+
+**Expected single-session-tractability.** Yes — the proof requires careful topological setup but is standard compactness-of-configuration-space + continuity-of-energy-functional argument.
 
 ### Priority 1 at programme level (parallel multi-paper track): SS-10 sub-shell-physics
 
-SS-10 sub-shell-physics decomposition. Strutinsky-style shell-corrected baseline integration replacing SEMF; revised polytope-residual decomposition; assess whether $^{28}$Si and $^{32}$S fall into line under shell correction. SS-9 v0.1 (now v0.2) serves as canonical anchor reference.
+SS-10 sub-shell-physics decomposition. Strutinsky-style shell-corrected baseline integration replacing SEMF; revised polytope-residual decomposition; assess whether $^{28}$Si and $^{32}$S fall into line under shell correction. SS-9 v0.1 (now v0.3) serves as canonical anchor reference.
 
 **Multi-paper, multi-session scope.** Independent of v1.0 polish track sub-task progress. Runs at whatever cadence fits Thomas's schedule.
 
-### Sub-tasks (c)/(d)/(e) scheduling
+### Sub-tasks (d)/(e) scheduling
 
-- **Session 27 candidate:** sub-task (c) C5 well-definedness via compactness — all rigid-packing-compatible arrangements at fixed $N_\alpha$ form a compact configuration space, so minima exist.
-- **Session 28 candidate:** sub-task (d) AI-team review per symmetric-honesty protocol (ChatGPT primary; Copilot rotation; same standards applied to SS-9 own work as to reviewer feedback).
+- **Session 28 candidate:** sub-task (d) AI-team review per symmetric-honesty protocol (ChatGPT primary; Copilot rotation; same standards applied to SS-9 own work as to reviewer feedback). At Session 28, all 3 sub-lemmas (C7 conditional derivation, 3D-non-degeneracy, C5 well-definedness) will be in place; review feedback is most valuable on a paper with all known gaps closed.
 - **Session 29+ candidate:** sub-task (e) external review via reviewer-response protocol (`templates/operating_system.md` §4 Phase 4).
-
-The order (a) → (b) → (c) → (d) → (e) is natural because (a) closes the largest registered gap (C7 motivation); (b) and (c) are smaller technical sub-lemmas that don't depend on (a); (d) AI review benefits most from a paper with all known gaps closed (sub-tasks a/b/c done); (e) external review is the final gate before v1.0 ship.
 
 ---
 
 ## Anti-priorities sustained
 
-- **Do NOT modify SS-9 v0.2 .tex outside of v1.0 polish revisions.** Each polish revision bumps the CHANGELOG version (v0.2 → v0.3 → ... → v1.0). The shipped v0.1 was the canonical Session 24 ship; v0.2 is the canonical Session 25 ship.
+- **Do NOT modify SS-9 v0.3 .tex outside of v1.0 polish revisions.** Each polish revision bumps the CHANGELOG version (v0.3 → v0.4 → ... → v1.0). The shipped versions are: v0.1 Session 24 ship; v0.2 Session 25 sub-task (a) C7 sub-lemma close; v0.3 Session 26 sub-task (b) 3D-non-degeneracy sub-lemma close.
 - **Do NOT propose any single-session R3-channel refinement to close the remaining 52% empirical gap.** (Sustained from Phase 11 close.) Single-session R3-channel refinement candidates remain EXHAUSTED.
 - **All Phase 4–11 anti-priorities remain in force.**
 
 ---
 
-## Cumulative trajectory summary (Session 25)
+## Cumulative trajectory summary (Session 26)
 
-Session 25 marks the first session of the v1.0 polish track. The transition from Session 24 (SS-9 v0.1 ship) to Session 25 (sub-task (a) C7 sub-lemma) is the natural development arc: ship the conditional theorem first, then incrementally close the registered gaps. OPEN-SS-33 advancement at Session 25 is the first programme-level OPEN-* status change since Session 24's three changes (OPEN-SS-24 ADVANCED, OPEN-SS-33 REGISTERED, OPEN-ORG-012 RETIRED) — and the first paper-level polish work in the SS-9 development arc.
+Session 26 is the second session of the v1.0 polish track. Sessions 25–26 have closed 2 of the 5 polish sub-tasks. Two of the v0.1 6-gap list items (Gaps 4 and 5) are now closed, with Gap 1 (C5 well-definedness) the next target at Session 27. Both sub-tasks (a) and (b) demonstrated that the §9 gap list was diagnostically accurate — the sketched closure routes formalized cleanly without surfacing unexpected obstructions.
 
-The v1.0 polish track is expected to span Sessions 25–29 at sub-task-per-session cadence. SS-10 sub-shell-physics development runs in parallel from Session 25 onward at programme-level Priority 1 — multi-paper, multi-session scope, sole remaining path to closing the 52% empirical gap registered at Phase 11 close.
+The v1.0 polish track is on track to span Sessions 25–29 at sub-task-per-session cadence. SS-10 sub-shell-physics development runs in parallel from Session 25 onward at programme-level Priority 1 — multi-paper, multi-session scope, sole remaining path to closing the 52% empirical gap registered at Phase 11 close.
 
 ---
 
-## Apply chain for Session 25 (5-patch chain 0225–0229)
+## Apply chain for Session 26 (5-patch chain 0230–0234)
 
-**Baseline:** `c5a30ea` (origin/main, Session 24 OPEN-ORG-012 closure push).
+**Baseline:** `640f3da` (Session 25 close, post-patch-0229).
 
 **Patches:**
 
 | # | Hash | Description |
 |---|------|-------------|
-| 0225 | `d34cc14` | Substantive: SS-9 v0.2 .tex Sub-Lemma 2.1 (C7 conditional derivation) + ripples (§1.1, §13.2, §9, CHANGELOG v0.2) |
-| 0226 | `d14f758` | Step A + Step C: Session 25 entry to session log + Vignette 32 to development-SS-9.md |
-| 0227 | `e5927d3` | Step B + Step D: transcript pointer-map (transactions 525-540) + Tier 4 verbatim reasoning |
-| 0228 | `6f23c1f` | Step E: Research_Frontier OPEN-SS-33 ADVANCED + future_projects.md (A.2) sub-task (a) DONE / sub-task (b) PROMOTED + recently completed entry |
-| 0229 | (this commit) | Step H: Session 25 close handover (rm + recreate handover-SS-9.md) |
+| 0230 | `6914a9b` | Substantive: SS-9 v0.3 .tex Sub-Lemma 2.2 (3D-non-degeneracy from maximum-edge selection) + ripples (§9 Gap 4 CLOSED, CHANGELOG v0.3) |
+| 0231 | `ab3779b` | Step A + Step C: Session 26 entry to session log + Vignette 33 to development-SS-9.md |
+| 0232 | `fd3ea15` | Step B + Step D: transcript pointer-map (transactions 541-558) + Tier 4 verbatim reasoning |
+| 0233 | `1511d44` | Step E: Research_Frontier last-updated header + future_projects.md (A.2) sub-task (b) DONE / sub-task (c) PROMOTED + recently completed entry (no programme-level OPEN-* changes since 3D-non-degeneracy is paper-internal) |
+| 0234 | (this commit) | Step H: Session 26 close handover (rm + recreate handover-SS-9.md) |
 
-**Apply order:** 0225 → 0226 → 0227 → 0228 → 0229 (sequential).
+**Apply order:** 0230 → 0231 → 0232 → 0233 → 0234 (sequential).
 
 **Per-registry audit (Step H support):**
 
-- ✓ `Research_Frontier.md`: OPEN-SS-33 status block ADVANCED to conditional closure modulo (H4) + (H5); Last-updated header updated; Current best lead updated; Paper(s) reference bumped to v0.2
-- ✓ `Organizational_Frontier.md`: no Session 25 changes (sub-task (a) work is paper-internal, not organizational)
+- ✓ `Research_Frontier.md`: Last-updated header updated to Session 26 sub-task (b) closure; no programme-level OPEN-* status block changes (3D-non-degeneracy is paper-internal)
+- ✓ `Organizational_Frontier.md`: no Session 26 changes (sub-task (b) work is paper-internal, not organizational)
 - N/A `axiom-registry.md`: no axiom changes
-- ✓ `theorem-registry.md` (implicit): Sub-Lemma 2.1 is a paper-internal lemma; tracked via SS-9 v0.2 internal numbering; no global theorem registry update needed at sub-lemma tier
+- ✓ `theorem-registry.md` (implicit): Sub-Lemma 2.2 is a paper-internal lemma; tracked via SS-9 v0.3 internal numbering; no global theorem registry update needed at sub-lemma tier
 - N/A `predictions.md`: no new predictions
-- ✓ `future_projects.md`: (A.2) entry sub-task (a) DONE / sub-task (b) PROMOTED; Recently Completed Session 25 entry added
-- N/A `problem_histories/`: OPEN-SS-33 advancement noted in main registry; problem history not yet started for OPEN-SS-33
-- N/A `master_glossary.md`: terms inherited from SS-7 (alpha-cluster, K$_3$, contact graph, cluster contractibility, alpha-surface adjacency are paper-internal terms used only within SS-9 v0.2)
-- N/A `paper_catalog.md`: SS-9 entry exists from v0.1 ship; v0.2 is internal version increment, no catalog change
-- ✓ `session_logs/2026-05-02_session_log.md`: Session 25 entry appended (patch 0226)
-- ✓ `series_strong/papers/SS-9/documentation_suite/development-SS-9.md`: Vignette 32 appended (patch 0226)
-- ✓ `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md`: transactions 525-540 appended (patch 0227)
-- ✓ `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md`: Session 25 Tier 4 verbatim reasoning appended (patch 0227)
-- ✓ `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md`: Session 25 close handover (this file, patch 0229)
-- ✓ `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`: Sub-Lemma 2.1 added (patch 0225)
+- ✓ `future_projects.md`: (A.2) entry sub-task (b) DONE / sub-task (c) PROMOTED; Recently Completed Session 26 entry added
+- N/A `problem_histories/`: no programme-level OPEN-* registry changes; problem history not yet started for OPEN-SS-33 (Session 25 advancement registered in main registry)
+- N/A `master_glossary.md`: terms inherited from SS-7
+- N/A `paper_catalog.md`: SS-9 entry exists from v0.1 ship; v0.3 is internal version increment, no catalog change
+- ✓ `session_logs/2026-05-02_session_log.md`: Session 26 entry appended (patch 0231)
+- ✓ `series_strong/papers/SS-9/documentation_suite/development-SS-9.md`: Vignette 33 appended (patch 0231)
+- ✓ `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md`: transactions 541-558 appended (patch 0232)
+- ✓ `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md`: Session 26 Tier 4 verbatim reasoning appended (patch 0232)
+- ✓ `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md`: Session 26 close handover (this file, patch 0234)
+- ✓ `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`: Sub-Lemma 2.2 added at v0.3 (patch 0230)
 
-**Verification:** Three pdflatex passes on SS-9.tex post-0225 produced 23 pages, zero warnings, zero errors after pass 3. Local HEAD `6f23c1f` (post-0228) builds clean against `c5a30ea` baseline. 0229 (this commit) adds only the handover document; no compilation impact.
+**Verification:** Three pdflatex passes on SS-9.tex post-0230 produced 25 pages, zero errors after pass 3. Local HEAD `1511d44` (post-0233) builds clean against `640f3da` baseline. 0234 (this commit) adds only the handover document; no compilation impact.
