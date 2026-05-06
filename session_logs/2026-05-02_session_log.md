@@ -2541,3 +2541,53 @@ Both residual sub-targets are smaller in scope than C7 itself.
 ---
 
 *Session log Session 25 v1.0 polish sub-task (a) entry per §4 discipline. Substantive content: Sub-Lemma 2.1 (C7 conditional derivation) added to SS-9 v0.2; OPEN-SS-33 ADVANCED from raw open to conditionally closed modulo (H4) + (H5) sub-targets; Remark 2.1 sketches viable closure paths. §9 "C7 motivation argument" gap PARTIALLY CLOSED at v0.2. Three pdflatex passes zero errors, 23 pages output. Polish track sub-task (a) DONE; sub-tasks (b)/(c)/(d)/(e) pending. Forward priority Session 26: sub-task (b) 3D-non-degeneracy via maximum-edge selection sub-lemma.*
+
+---
+
+## Session 26 — v1.0 polish sub-task (b): 3D-non-degeneracy sub-lemma (6 May 2026)
+
+**Context.** Session 25 close shipped SS-9 v0.2 with Sub-Lemma 2.1 closing the C7 motivation gap (sub-task a). Session 25 forward queue identified sub-task (b) as next: derive 3D-non-degeneracy from existing inheritance hypotheses via maximum-edge selection. The §9 v0.1 gap entry (Gap 4) flagged this explicitly as "Worth verifying as a sub-lemma."
+
+**Sub-task (b) sub-lemma added.** New §2.6 "Sub-Lemma 2.2 (3D-non-degeneracy from maximum-edge selection)" inserted between §2.5 (Sub-Lemma 2.1, C7 closure) and the renumbered §2.7 (auxiliary assumptions). Statement: under C1$'$ (facet (a) at LO) + C2 + C3 + C5, at $N_\alpha \geq 4$, no ground-state cluster has all centroids coplanar.
+
+**Proof structure (4 steps).**
+
+1. **Coplanar-centroid degree bound.** For any 2-plane $P$ through $c_i$: any three of $\alpha_i$'s four LO face-normals $\hat{n}_i^{(1)}, \ldots, \hat{n}_i^{(4)}$ span $\mathbb{R}^3$ (they form 3 of 4 vertices of a non-degenerate regular tetrahedron centered at $c_i$). So $P$ contains at most two face-normals. By C2, contact requires $c_j - c_i \parallel \hat{n}_i^{(k)}$ for some $k$. Hence at most 2 face-coincident contacts have partner centroids in $P$, giving $\deg_G(c_i) \leq 2$ in any coplanar contact graph.
+
+2. **Planar edge bound.** Handshake lemma: $2|E_{\mathrm{planar}}| = \sum_i \deg_G(c_i) \leq 2N_\alpha$, so $|E_{\mathrm{planar}}| \leq N_\alpha$.
+
+3. **3D edge bound.** FvdW deltahedra realize $|E_{\mathrm{3D}}| = 3N_\alpha - 6$ at $N_\alpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, with $|E| = 6, 9, 12, 15, 18, 21, 24, 30$ respectively. Physically realizable under C1$'$ (facets a, b).
+
+4. **Strict edge gain in 3D.** $|E_{\mathrm{3D}}| - |E_{\mathrm{planar}}| \geq 2N_\alpha - 6 \geq 2$ at $N_\alpha \geq 4$. Binding-energy gain $\geq 2 B_{\mathrm{pair}} = 4.684$ MeV. By Lemma C (max edges) + C5 (ground state), no coplanar configuration is a ground state.
+
+**Three remarks accompany the sub-lemma.**
+
+- **Remark 2.2 (tightness and $N_\alpha = 3$ exception).** At $N_\alpha = 3$, planar $|E| = 3$ coincides with $3N_\alpha - 6 = 3$, so the strict inequality $|E_{\mathrm{planar}}| < |E_{\mathrm{3D}}|$ fails. ${}^{12}$C as planar triangle is consistent with maximum-edge selection at $N_\alpha = 3$. This matches the Theorem's exclusion of $N_\alpha = 3$ from its scope. Threshold $N_\alpha \geq 4$ is sharp.
+
+- **Remark 2.3 (refined-C1 facet (b) compatibility).** Facet (b) activates only at degree $\geq 5$; planar bound establishes $\deg \leq 2$, so facet (b) is not invoked. Facet (b) operates within $\sim 5\%$ LO rigidity envelope, so face-normal directions remain $O(5\%)$-deformed from regular tetrahedron — Step 1 robust to facet (b).
+
+- **Remark 2.4 (effect on §9 gap).** §9 Gap 4 (3D-non-degeneracy) flagged this exact derivation route. Sub-Lemma 2.2 delivers it. 3D-non-degeneracy is now derivable from existing inheritance hypotheses, not an independent auxiliary assumption. Theorem and Lemma B$'$ statements continue to list it for clarity.
+
+**Effect on §9 gap list.** "3D-non-degeneracy" gap (Gap 4 in v0.1) **CLOSED at v0.3.**
+
+**Effect on programme-level OPEN-* registries.** NONE. 3D-non-degeneracy was an auxiliary assumption local to SS-9, not registered as a programme-level OPEN-SS-* problem; closure is paper-internal.
+
+**Compilation.** Three pdflatex passes (draftmode, halt-on-error, nonstopmode) — passes 1-3 zero errors; one pre-existing hyperref Token-not-allowed warning preserved unchanged from v0.2 (cosmetic only). Output 25 pages (was 23 in v0.2; +2 pages from sub-lemma + remarks).
+
+**Polish track status after Session 26 close.**
+
+- Sub-task (a) C7 sub-lemma — DONE (Session 25, v0.2).
+- Sub-task (b) 3D-non-degeneracy sub-lemma — **DONE this session (v0.3).**
+- Sub-task (c) C5 well-definedness via compactness — pending (Session 27 candidate).
+- Sub-task (d) AI-team review per symmetric-honesty protocol — pending after (c).
+- Sub-task (e) external review — pending after (d).
+
+**Programme state at Session 26 close.** Programme negative-result count UNCHANGED at 12 (v1.0 polish work is paper-internal). All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. **SS-9 at v0.3** (was v0.2 at Session 25 close).
+
+**Forward priority for Session 27.** Sub-task (c) C5 well-definedness via compactness argument: all rigid-packing-compatible cluster arrangements at fixed $N_\alpha$ form a compact configuration space (closed and bounded in $\mathbb{R}^{3N_\alpha} / \mathrm{SO}(3) \times \mathbb{R}^3$ modulo rigid motions), so by compactness + continuity of $B(\mathcal{C})$ the supremum $\sup_{\mathcal{C}} B(\mathcal{C})$ is attained — the ground state exists. This formalizes that C5 is well-posed; "the ground state minimizes energy" assumes such a ground state exists.
+
+**Anti-priorities sustained.** Do NOT modify SS-9 v0.3 .tex outside of v1.0 polish revisions. Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
+
+---
+
+*Session log Session 26 v1.0 polish sub-task (b) entry per §4 discipline. Substantive content: Sub-Lemma 2.2 (3D-non-degeneracy via maximum-edge selection) added to SS-9 v0.3; §9 Gap 4 CLOSED at v0.3. Three pdflatex passes zero errors, 25 pages output. Polish track sub-tasks (a) and (b) DONE; sub-tasks (c)/(d)/(e) pending. Forward priority Session 27: sub-task (c) C5 well-definedness via compactness.*

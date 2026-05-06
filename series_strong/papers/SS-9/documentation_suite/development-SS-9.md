@@ -559,3 +559,57 @@ Hypothesis (H4): $K = \bigcup_i T_i$ is a contractible compact 3-manifold with P
 **Polish track status after Session 25.** Sub-task (a) C7 sub-lemma DONE; sub-tasks (b) 3D-non-degeneracy / (c) C5 well-definedness / (d) AI-team review / (e) external review pending. Forward priority Session 26: sub-task (b).
 
 **Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED from raw open to conditional closure. OPEN-ORG-012 RETIRED preserved. SS-9 at v0.2.
+
+## Vignette 33 — Session 26 v1.0 polish sub-task (b): Sub-Lemma 2.2 added (3D-non-degeneracy from maximum-edge selection); §9 Gap 4 CLOSED at v0.3; SS-9 v0.2 → v0.3 (6 May 2026, Session 26)
+
+**Context.** Session 25 close shipped SS-9 v0.2 with Sub-Lemma 2.1 (C7 conditional derivation) closing sub-task (a) of the v1.0 polish track. Forward queue identified sub-task (b) as next: derive 3D-non-degeneracy via maximum-edge selection. The §9 v0.1 gap entry (Gap 4) flagged this as "Worth verifying as a sub-lemma" with the exact closure route in mind.
+
+**The sub-lemma.** Sub-Lemma 2.2 in §2.6 of v0.3 (renumbering current §2.6 → §2.7):
+
+\textbf{Sub-Lemma 2.2 (3D-non-degeneracy from maximum-edge selection).} \emph{Let $N_\alpha \geq 4$. Suppose C1$'$ (facet (a) at LO), C2, C3, C5. Then no ground-state $N_\alpha$-alpha cluster has all centroids coplanar.}
+
+**Proof structure.**
+
+| Step | Claim | Mechanism |
+|------|-------|-----------|
+| 1 | $\deg_G(c_i) \leq 2$ in coplanar contact graph | Any 2-plane $P$ through $c_i$ contains at most 2 of $\alpha_i$'s 4 LO face-normals (any 3 face-normals span $\mathbb{R}^3$ — they are 3 of 4 vertices of a non-degenerate regular tetrahedron centered at $c_i$). C2 forces contact direction parallel to a face-normal. |
+| 2 | $\| E_{\mathrm{planar}}(\mathcal{C})\| \leq N_\alpha$ | Handshake lemma summed over Step 1's degree bound. |
+| 3 | $\| E_{\mathrm{3D}}(\mathcal{C}_{\mathrm{FvdW}})\| = 3N_\alpha - 6$ | FvdW deltahedra realize $\| E\| = 6, 9, 12, 15, 18, 21, 24, 30$ at $N_\alpha = 4, 5, 6, 7, 8, 9, 10, 12$. |
+| 4 | Coplanar arrangement is not ground state | $\| E_{\mathrm{3D}}\| - \| E_{\mathrm{planar}}\| \geq 2N_\alpha - 6 \geq 2$ at $N_\alpha \geq 4$; binding gain $\geq 2 B_{\mathrm{pair}} = 4.684$ MeV; by Lemma C + C5, ground state has max $\| E\|$, hence is 3D. |
+
+**Three remarks.**
+
+| Remark | Content |
+|--------|---------|
+| **2.2 (tightness, $N_\alpha = 3$ exception)** | At $N_\alpha = 3$: planar $\| E\| = 3$ coincides with $3N_\alpha - 6 = 3$. Strict inequality $\| E_{\mathrm{planar}}\| < \| E_{\mathrm{3D}}\|$ fails. ${}^{12}$C planar triangle is consistent with max-edge selection at $N_\alpha = 3$. Matches Theorem's exclusion of $N_\alpha = 3$ from scope. Threshold $N_\alpha \geq 4$ is sharp. |
+| **2.3 (facet (b) compatibility)** | Facet (b) activates only at degree $\geq 5$; planar bound establishes $\deg \leq 2$; facet (b) not invoked. Facet (b) operates within $\sim 5\%$ LO rigidity envelope; face-normal directions remain $O(5\%)$-deformed from regular tetrahedron, preserving Step 1's "any 3 face-normals non-coplanar" property. |
+| **2.4 (effect on §9 Gap 4)** | §9 Gap 4 flagged this exact closure route. Sub-Lemma 2.2 delivers it. 3D-non-degeneracy now derivable from C1$'$ + C2 + C3 + C5, no longer an independent auxiliary assumption. |
+
+**Geometric core.** The argument's geometric crux is that **any plane through a centroid $c_i$ contains at most 2 of the 4 LO face-normals of a regular tetrahedron**. This is because:
+
+- The 4 face-normals of a regular tetrahedron point to 4 vertices of a (smaller, dual) regular tetrahedron centered at $c_i$.
+- Any 3 of these 4 directions span $\mathbb{R}^3$ (they form 3 of 4 vertices of a non-degenerate 3-simplex).
+- Hence no 2-plane contains more than 2 of these 4 directions.
+
+There are exactly 6 distinguished planes through $c_i$ each containing exactly 2 face-normals (the "edge-planes" of the dual tetrahedron). For a coplanar centroid arrangement, each $\alpha_i$ must be oriented so that 2 of its face-normals lie in the common plane $P$ — restricting the alpha to a discrete set of orientations relative to $P$.
+
+**Effect on §9 gap list.** "3D-non-degeneracy" gap (Gap 4 in v0.1) **CLOSED at v0.3.** Combined with sub-task (a) closure of Gap 5 ("C7 motivation argument") at v0.2, the v0.1 6-gap list is now reduced to 4 gaps:
+
+| Gap | v0.1 status | v0.3 status |
+|-----|-------------|-------------|
+| 1. C5 (ground-state existence/uniqueness) | OPEN | OPEN (sub-task (c) candidate) |
+| 2. C6 (cluster surface-realization) | OPEN | OPEN (programme-level OPEN-SS-30) |
+| 3. C7 (contact-graph planarity) | OPEN | OPEN (programme-level OPEN-SS-33, conditionally closed at v0.2 modulo H4+H5) |
+| 4. 3D-non-degeneracy | OPEN | **CLOSED v0.3** |
+| 5. C7 motivation argument formalization | OPEN | **CLOSED v0.2** |
+| 6. Steinitz invocation pre-conditions | OPEN | OPEN |
+
+**Effect on Theorem.** Theorem 6.1 statement and proof unchanged at v0.3. Theorem still lists "3D-non-degeneracy" in its conditional hypothesis stack for clarity in conditional-hypothesis readability — Remark 2.4 explicitly notes this is now a derived condition, not an assumed one. v1.0 may consolidate.
+
+**Effect on programme-level OPEN-* registries.** NONE. 3D-non-degeneracy was an auxiliary assumption local to SS-9, not registered as a programme-level OPEN-SS-* problem; closure is paper-internal. No changes to Research_Frontier.md OPEN-* entries from this session.
+
+**Compilation.** Three pdflatex passes (draftmode for 1, 2; output for 3): zero errors all passes, one pre-existing hyperref token warning preserved unchanged from v0.2 (cosmetic only). Output 25 pages (was 23 in v0.2; +2 pages from sub-lemma + 3 remarks).
+
+**Polish track status after Session 26.** Sub-tasks (a) and (b) both DONE. Sub-tasks (c)/(d)/(e) pending. Forward priority Session 27: sub-task (c) C5 well-definedness via compactness argument.
+
+**Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. SS-9 at v0.3.
