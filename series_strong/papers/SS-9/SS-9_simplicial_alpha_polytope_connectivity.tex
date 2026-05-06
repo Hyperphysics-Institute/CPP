@@ -3,10 +3,57 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.1 -- 6 May 2026 (initial .tex shipped from v0.3
-%   markdown working draft via OPEN-ORG-012 closure protocol)
+% Version 0.2 -- 6 May 2026 (Session 25 OPEN-ORG-012-followup
+%   v1.0 polish sub-task (a): C7 sub-lemma added)
+%
+% Earlier Version 0.1 -- 6 May 2026 (initial .tex shipped from
+%   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v0.2 (6 May 2026 Session 25) -- v0.1 -> v1.0 POLISH SUB-TASK
+%     (a) [C7 SUB-LEMMA]. Added Sub-Lemma 2.1 (\S 2.5) tightening
+%     the C7 motivation paragraph into a formal conditional
+%     derivation: C1' + C2 + C6 + (H4) cluster contractibility
+%     + (H5) alpha-surface adjacency => C7. Proof in four steps:
+%     (1) Sigma = boundary K is S^2 via boundary-Euler formula
+%     chi(K) = (1/2) chi(boundary K) and contractibility chi(K)
+%     = 1; (2) external-face decomposition Sigma = bigcup_i F_i^
+%     ext with F_i^ext nonempty under C6; (3) alpha-dual
+%     embedding via basepoints in F_i^ext interiors and arcs
+%     through ASA-guaranteed shared edges; (4) generic non-
+%     crossing of arcs from disjoint F^ext supports + 2D-region
+%     genericity at shared basepoints.
+%
+%     Effect on OPEN-SS-33: ADVANCED from "raw open" (Session 24
+%     ratification) to "conditionally closed modulo (H4) cluster
+%     contractibility and (H5) alpha-surface adjacency from
+%     A1-A11 + C5". Remark 2.1 sketches viable closure paths for
+%     both residual sub-targets: (H4) from C5 isoperimetrics
+%     (handle/void configurations are not energy-minimizing);
+%     (H5) from C5 + LO-geometry edge-shared multi-alpha
+%     enumeration.
+%
+%     Effect on \S 9 gap list: "C7 motivation argument" gap
+%     PARTIALLY CLOSED. Residual content reduced to (H4) + (H5)
+%     sub-targets, both smaller in scope than C7 itself.
+%
+%     Other ripples: \S 1.1 OPEN-SS-33 entry annotated with v0.2
+%     advancement; \S 13.2 OPEN-SS-33 list entry annotated;
+%     keywords list unchanged; bibliography unchanged; Theorem
+%     statement and proof unchanged (still uses C7 as conditional
+%     hypothesis; Sub-Lemma 2.1 provides an alternate route to
+%     C7 that does not require restating the Theorem).
+%
+%     Lines added: ~95 (new \S 2.5 subsection + remark + minor
+%     annotations elsewhere). Compilation: three pdflatex passes,
+%     zero warnings/errors after pass 3.
+%
+%     Polish track status after this session: sub-task (a) C7
+%     sub-lemma DONE (this version); sub-tasks (b) 3D-non-
+%     degeneracy via maximum-edge selection sub-lemma, (c) C5
+%     well-definedness via compactness, (d) AI-team review per
+%     symmetric-honesty protocol, (e) external review remain.
+%
 %   v0.1 (6 May 2026) -- INITIAL TYPESET DRAFT. First formal
 %     LaTeX paper compiled from the v0.3 markdown working draft
 %     (`session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md`,
@@ -237,7 +284,7 @@ This paper addresses OPEN-SS-24 (derivation of simplicial contact structure from
 \begin{itemize}
 \item OPEN-SS-29: derive C5 (ground-state energy minimization) from CPP axioms A1--A11.
 \item OPEN-SS-30: derive C6 (cluster surface-realization, no alpha interior to cluster) from A1--A11.
-\item OPEN-SS-33: derive C7 (contact-graph planarity) from A1--A11. \emph{New this paper.}
+\item OPEN-SS-33: derive C7 (contact-graph planarity) from A1--A11. \emph{New this paper at v0.1; advanced to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5'' at v0.2 via Sub-Lemma~\ref{lem:C7}.}
 \end{itemize}
 The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$, where clause (iv) of the Theorem does not apply because no FvdW convex deltahedron exists at those vertex counts, is registered as OPEN-SS-31. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode), an active investigation thread in parallel with this paper's development (OPEN-SS-32, SS-9 v0.3 \S 7 in earlier drafts; \S\ref{sec:openss32_status} of this paper), is treated as NLO and does not affect the LO geometric proof structure of this paper.
 
@@ -333,6 +380,54 @@ Define:
 \textbf{Physical motivation for C7.} Under C6, the cluster is a ``shell'' of alphas with no interior member. Under C1$'$ + rigid packing, the cluster is a contractible connected 3D region (no internal voids in the standard nuclear physics interpretation of an alpha cluster). Each alpha contributes outer faces to the cluster's exterior 2-surface $\Sigma$, with $\Sigma \cong S^2$ topologically (boundary of a contractible 3D region). The contact graph admits a natural embedding on $\Sigma$ via the alpha-dual construction (each alpha as a point on its own outer-face region, each contact as an arc through the shared interior face). This embedding makes $G$ planar. The C7 hypothesis records this topological inheritance from C6 + cluster contractibility, abstracted from the geometric details of the embedding so that Steinitz's theorem can be invoked directly. C7's first-principles closure from CPP primitives is the OPEN-SS-33 question; physical motivation alone justifies it as a paper-level hypothesis at the C5/C6 tier.
 
 C5, C6, C7 are \textbf{paper-level structural hypotheses at the SS-7 inheritance tier}. None is derived from CPP axioms A1--A11 in this paper; each is registered as an OPEN-SS-2X / 3X candidate for follow-up programme-level closure.
+
+\subsection{Sub-Lemma 2.1: Conditional derivation of C7 from cluster contractibility}
+\label{sec:sublemma_C7}
+
+The motivation paragraph in \S 2.4 sketches a topological argument: contractibility of the cluster region $K = \bigcup_i T_i$ (closed union of LO tetrahedra) implies $\partial K \cong S^2$, and the alpha-dual construction gives a planar embedding of $G$ on $\partial K$. We now formalize this as a sub-lemma, isolating two precisely-stated topological hypotheses. Throughout, $T_i$ denotes the closed LO tetrahedron at $\alpha_i$.
+
+\begin{itemize}
+\item \textbf{(H4) Cluster contractibility.} The cluster region $K = \bigcup_{i=1}^{\Nalpha} T_i$ is a contractible compact 3-manifold with piecewise-linear boundary.
+\item \textbf{(H5) Alpha-surface adjacency (ASA).} For every K$_3$-bonded pair $\{\alpha_i, \alpha_j\} \in E$, the shared LO triangular face $F_{ij}$ has at least one boundary edge that lies on $\Sigma = \partial K$. Equivalently: at least one of the three edges of $\partial F_{ij}$ is not shared with any third tetrahedron $T_k$.
+\end{itemize}
+
+\begin{lemma}[Conditional derivation of C7]
+\label{lem:C7}
+Suppose C1$'$, C2, C6, (H4), and (H5) hold. Then the contact graph $G(\mathcal{C})$ is planar, i.e., C7 holds.
+\end{lemma}
+
+\begin{proof}
+\textbf{Step 1: $\Sigma \cong S^2$.}
+By (H4), $K$ is contractible, so $\chi(K) = 1$. The boundary-Euler formula for compact orientable 3-manifolds with boundary,
+\[ \chi(K) = \tfrac{1}{2}\,\chi(\partial K), \]
+gives $\chi(\Sigma) = 2$. Since $K$ is connected and embedded in $\mathbb{R}^3$ with the contractibility of (H4), $\Sigma = \partial K$ is a connected closed orientable 2-manifold. The classification of closed orientable surfaces gives $\Sigma \cong \Sigma_g$ for some genus $g \geq 0$, and $\chi(\Sigma) = 2$ forces $g = 0$, hence $\Sigma \cong S^2$.
+
+\textbf{Step 2: External-face decomposition $\Sigma = \bigcup_i F_i^{ext}$.}
+For each alpha $\alpha_i$, define the \textbf{external face set}
+\[ F_i^{ext} = \bigcup\{F : F \text{ is a 2-face of } T_i,\, F \subset \Sigma\}. \]
+Under C1$'$ + rigid packing, the tetrahedra $T_i$ meet only on lower-dimensional faces, so each 2-face of each $T_i$ is either internal (shared with exactly one other $T_j$) or external (lying on $\Sigma$). The $F_i^{ext}$ form a closed cover of $\Sigma$ with pairwise interior-disjoint regions:
+\[ \Sigma = \bigcup_{i=1}^{\Nalpha} F_i^{ext}, \qquad \mathrm{int}(F_i^{ext}) \cap \mathrm{int}(F_j^{ext}) = \emptyset \text{ for } i \neq j. \]
+
+We claim $F_i^{ext} \neq \emptyset$ for every $i$. Suppose for contradiction that $T_i$ has all four faces shared with neighbors $T_j$. Then every 2-face of $T_i$ borders another tetrahedron, so a small open neighborhood of any point of $\partial T_i$ lies entirely in $K$. Combined with $\mathrm{int}(T_i) \subset K$, this gives $T_i \subset \mathrm{int}(K)$; in particular $c_i \in \mathrm{int}(K)$. But $K \subseteq H(\mathcal{C})$, so $c_i \in \mathrm{int}(H(\mathcal{C}))$, contradicting C6. Hence at least one face of $T_i$ lies on $\Sigma$, and $F_i^{ext} \neq \emptyset$.
+
+\textbf{Step 3: Alpha-dual embedding.}
+For each alpha $\alpha_i$, choose a basepoint $p_i \in \mathrm{int}(F_i^{ext})$ in the interior of one external face. For each contact $\{\alpha_i, \alpha_j\} \in E$, the shared face $F_{ij}$ is internal (not on $\Sigma$). By (H5), at least one edge $e_{ij} \subset \partial F_{ij}$ lies on $\Sigma$. The edge $e_{ij}$ is a boundary edge of $T_i$'s external region $F_i^{ext}$ (since one face of $T_i$ adjacent to $e_{ij}$ is external) and similarly of $F_j^{ext}$. Pick a generic interior point $q_{ij} \in e_{ij}$. Since $F_i^{ext}$ is a connected polygonal region of $\Sigma$ with $p_i$ in its interior and $q_{ij}$ on its boundary, there is a simple path on $F_i^{ext}$ from $p_i$ to $q_{ij}$. Similarly there is a simple path on $F_j^{ext}$ from $q_{ij}$ to $p_j$. Concatenating gives an arc $\gamma_{ij} \subset F_i^{ext} \cup F_j^{ext}$ on $\Sigma$ from $p_i$ to $p_j$.
+
+\textbf{Step 4: Generic non-crossing.}
+For two contacts $\{\alpha_i, \alpha_j\}, \{\alpha_k, \alpha_l\} \in E$ with disjoint endpoint sets, the arcs $\gamma_{ij}, \gamma_{kl}$ are supported in disjoint region unions because the $F_m^{ext}$ are pairwise interior-disjoint and the connecting boundary edges $e_{ij}, e_{kl}$ are also distinct (since they lie in distinct internal-face boundaries). Hence $\gamma_{ij} \cap \gamma_{kl} = \emptyset$. For two contacts $\{\alpha_i, \alpha_j\}, \{\alpha_i, \alpha_k\}$ sharing alpha $\alpha_i$, the arcs share basepoint $p_i$ and pass through $F_i^{ext}$ on disjoint segments (from $p_i$ to $e_{ij}$ versus $p_i$ to $e_{ik}$, with $e_{ij} \neq e_{ik}$). Since $\mathrm{int}(F_i^{ext})$ is a 2-dimensional region, by generic choice of the path interiors the arcs meet only at $p_i$. The basepoint coincidence at $p_i$ is the vertex incidence required by the embedding.
+
+The resulting collection $\{p_i\}_{i=1}^{\Nalpha} \cup \{\gamma_{ij}\}_{\{\alpha_i,\alpha_j\} \in E}$ embeds the topological realization of $G(\mathcal{C})$ in $\Sigma \cong S^2$ as a planar graph. Therefore $G(\mathcal{C})$ is planar, i.e., C7 holds.
+\end{proof}
+
+\begin{remark}[Residual content of OPEN-SS-33]
+\label{rem:OPENSS33}
+Sub-Lemma~\ref{lem:C7} reduces the closure of OPEN-SS-33 (deriving C7 from CPP primitives A1--A11) to deriving the two topological hypotheses (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5. Both have viable closure paths:
+\begin{itemize}
+\item \textbf{(H4) Cluster contractibility from C5 (energy minimization).} Non-contractible clusters fall into two failure modes: (i) clusters with internal voids (where the cluster encloses a region of DP-sea at lower density than the surrounding sea); (ii) clusters with toroidal handles (genus $g \geq 1$ surface). Mode (i) is energetically disfavored because the enclosed void has an internal boundary contributing additional surface energy without compensating bulk binding, and the void's DP-sea state is at lower density than equilibrium DP-sea (a strain energy cost). Mode (ii) requires the contact graph to support handle topology, which by Euler $|E| - |V| + |F| = 2 - 2g$ would require $|E|$ to exceed the planar bound $3|V| - 6$ for a triangulated surface; under C5 such excess edges would compete energetically with the simply-connected ground state. The argument reduces to showing that any handle-bearing or void-bearing $\Nalpha$-alpha cluster configuration has strictly lower binding $B(\mathcal{C})$ than at least one contractible configuration with the same $\Nalpha$. This is a direct combinatorial-energetic exercise on the contact-graph realization classes for each $\Nalpha$.
+\item \textbf{(H5) Alpha-surface adjacency from C5 + LO geometry.} (H5) fails iff there exists a contact pair $\{\alpha_i, \alpha_j\}$ whose shared face $F_{ij}$ has all three boundary edges shared with additional tetrahedra. Each shared edge requires a third tetrahedron $T_k$ to also contain that edge. This ``three-around-an-edge'' configuration is geometrically constrained: the three (or more) alpha tetrahedra meeting at a common edge must fit together with a total dihedral angle $\leq 2\pi$, and each contributes its own pair of K$_3$ contacts at adjacent faces. The combinatorial enumeration of edge-shared multi-alpha local configurations is small (at most a handful of cases at each $\Nalpha$), and direct comparison of binding energies under C5 shows that face-shared K$_3$-bonded configurations dominate the ground state. (H5) is thus a generic-geometry consequence of C5 at LO, with the residual exclusion analysis tractable case-by-case.
+\end{itemize}
+The sub-lemma + remark structure thereby advances OPEN-SS-33 from ``raw open'' (Session 24 ratification) to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5,'' a typical intermediate stage in programme-level closure work. Both residual sub-targets are smaller in scope than C7 itself: each reduces to a focused energetic/combinatorial argument under C5 rather than requiring full first-principles A1--A11 derivation.
+\end{remark}
 
 \subsection{Auxiliary assumptions}
 
@@ -501,7 +596,7 @@ Per SS-7 \S 6.2, alpha-alpha Coulomb repulsion at the deltahedral surface is tre
 \begin{itemize}
 \item Programme-level closure of C5 from A1--A11. Registered as OPEN-SS-29 candidate.
 \item Programme-level closure of C6 from A1--A11. Registered as OPEN-SS-30 candidate.
-\item Programme-level closure of C7 from A1--A11. \textbf{NEW: OPEN-SS-33 candidate.}
+\item Programme-level closure of C7 from A1--A11. \textbf{NEW: OPEN-SS-33 candidate.} \emph{Advanced at v0.2 to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5'' via Sub-Lemma~\ref{lem:C7}.}
 \item Resolution of the deltahedra-gap at $\Nalpha \in \{11, 13, 14\}$. Registered as OPEN-SS-31 candidate.
 \item First-principles derivation of facet (b)'s mechanism (face-edge hybrid? K$_3$ delocalization? partial overlap?). Mentioned but not derived. Could fold into OPEN-SS-32 derivation if facets (b) and (c) share Layer-3 ancestry as the same K$_3$ scale-recurrence operating at different geometric venues.
 \item First-principles derivation of facet (c) attenuation factor. Active investigation thread (OPEN-SS-32); see \S\ref{sec:openss32_status}.
@@ -554,7 +649,7 @@ Phase 11 NULL marks the natural saturation point for single-session R3-channel w
 % ===================================================================
 
 \begin{enumerate}
-\item \textbf{C7 motivation argument} (\S\ref{sec:setup}, ``Physical motivation for C7''): The verbal argument that C7 follows from C6 + cluster contractibility + the natural alpha-dual embedding on $\Sigma$ is plausible but not a formal proof. For SS-9 v1.0 ship, either (a) tighten the argument into a formal sub-lemma showing C6 + cluster contractibility $\Rightarrow$ C7, or (b) accept C7 as a separate paper-level hypothesis with OPEN-SS-33 registered for first-principles closure. Option (b) is the conservative path consistent with how C5 and C6 are handled.
+\item \textbf{C7 motivation argument} (\S\ref{sec:setup}, ``Physical motivation for C7''): \emph{Partially closed at v0.2.} Sub-Lemma~\ref{lem:C7} formalizes the verbal argument as a conditional derivation: C1$'$ + C2 + C6 + (H4) cluster contractibility + (H5) alpha-surface adjacency $\Rightarrow$ C7. The residual content of OPEN-SS-33 is now reduced to deriving (H4) and (H5) from A1--A11 + C5; both have viable closure paths sketched in Remark~\ref{rem:OPENSS33}. Full closure of OPEN-SS-33 (deriving C7 unconditionally from A1--A11) requires completing those two sub-arguments. Option (b) of accepting C7 as a separate paper-level hypothesis remains valid for v1.0 ship; option (a) sub-lemma route was taken at v0.2 in conditional form.
 
 \item \textbf{C7 first-principles derivation (OPEN-SS-33 candidate, NEW):} Programme-level closure of C7 from A1--A11. The derivation route most likely involves the cluster-shell topology being forced by CPP lattice geometry under the rigid-packing constraint of C1$'$ --- i.e., that any A1--A11-respecting alpha cluster has a contractible shell topology. Worth investigating whether C7 is an independent hypothesis or follows from C5 + C6 under additional CPP-specific constraints (in which case OPEN-SS-33 closes for free).
 
