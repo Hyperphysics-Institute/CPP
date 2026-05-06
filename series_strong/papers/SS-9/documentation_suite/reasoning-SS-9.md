@@ -4751,3 +4751,136 @@ Do NOT propose any single-session R3-channel refinement to close the remaining 5
 - OPEN-ORG-012 RETIRED — preserved from Session 24.
 - SS-9 at **v0.2** (was v0.1 at Session 24 ship).
 - v1.0 polish track: sub-task (a) DONE; sub-tasks (b)/(c)/(d)/(e) pending.
+
+---
+
+## Session 26 v1.0 Polish Sub-Task (b) — Tier 4 Verbatim Reasoning (6 May 2026)
+
+### Context inheritance from Session 25 close
+
+Session 25 closed sub-task (a) with Sub-Lemma 2.1 advancing OPEN-SS-33 from raw open to conditionally closed modulo (H4) + (H5). Session 25 forward queue identified sub-task (b) as next: derive 3D-non-degeneracy via maximum-edge selection. The §9 v0.1 Gap 4 entry already specified the closure route in some detail — "Should ideally be derived from 'cluster is genuinely 3-dimensional at $N_\alpha \geq 4$' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $N_\alpha \geq 4$, so C5 picks 3D)" — so the work was largely formalization of an already-clear closure path.
+
+### Why this sub-lemma is short and clean compared to Sub-Lemma 2.1
+
+Sub-Lemma 2.1 (C7) factored into two new hypothesis names (H4) cluster contractibility and (H5) alpha-surface adjacency, plus a 4-step proof using boundary-Euler topology and alpha-dual embedding theory. The closure was conditional, not unconditional, because (H4) and (H5) themselves required residual derivations from C5.
+
+Sub-Lemma 2.2 (3D-non-degeneracy), by contrast, is **unconditional** under the existing inheritance hypotheses C1$'$ + C2 + C3 + C5 — no new hypothesis names introduced. The reason is that 3D-non-degeneracy is a much more local geometric statement than C7: it concerns only the relationship between LO face-normal directions of a single tetrahedron and the dimensionality of centroid arrangements, not the global topology of the cluster region. Local geometric statements are typically derivable from local geometric hypotheses (here: regular-tetrahedron geometry from C1$'$ facet (a)), while global topological statements (like C7) typically require global hypotheses (like H4 contractibility).
+
+### The geometric core
+
+The proof's pivotal observation is:
+
+**For a regular tetrahedron $T$ with centroid at $O$, any 2-plane through $O$ contains at most 2 of $T$'s 4 face-normals.**
+
+This is because:
+- The 4 face-normals point from $O$ to the 4 face-centroids, which are themselves the 4 vertices of a smaller, dual regular tetrahedron centered at $O$.
+- These 4 directions are equivalent to the 4 vertices of a regular tetrahedron (modulo a uniform scaling).
+- Any 3 of these 4 directions span $\mathbb{R}^3$ — they are 3 of 4 vertices of a non-degenerate 3-simplex, and 3 vertices of a non-degenerate 3-simplex are never coplanar with the simplex's centroid (here $O$).
+- Hence no 2-plane through $O$ contains 3 or more of these 4 directions.
+
+There are exactly $\binom{4}{2} = 6$ "edge-planes" of the dual tetrahedron, each containing exactly 2 face-normals. These are the only planes through $O$ that contain exactly 2 face-normals; all other planes through $O$ contain at most 1.
+
+### From geometric core to coplanar degree bound
+
+The geometric core combines with C2 (face-to-face contact) to give the degree bound. C2 says that for $\alpha_i \sim \alpha_j$, the centroid difference $c_j - c_i$ is parallel to one of $\alpha_i$'s face-normals (pointing through $\alpha_i$'s outward face that is shared with $\alpha_j$).
+
+If all centroids lie in plane $P$, then $c_j - c_i \in P$ for every pair. So the face-normal direction $\hat{n}_i^{(k)}$ that hosts the contact $\alpha_i \sim \alpha_j$ must lie in $P$ (parallel to a vector in $P$).
+
+Combining: at most 2 of $\alpha_i$'s 4 face-normals can lie in $P$, so at most 2 of $\alpha_i$'s 4 faces can host a contact whose partner centroid is in $P$. Hence $\deg_G(c_i) \leq 2$.
+
+### From degree bound to edge bound
+
+Standard handshake lemma: $\sum_i \deg_G(c_i) = 2|E|$. With each degree at most 2, the sum is at most $2N_\alpha$, so $|E| \leq N_\alpha$.
+
+This is much tighter than the planar-graph bound $|E| \leq 3N_\alpha - 6$. Why? Because the planar-graph bound is purely combinatorial (Euler's formula on $S^2$); the $|E| \leq N_\alpha$ bound here adds the rigidity constraint from the regular-tetrahedron face-normals.
+
+### Strict edge gain at $N_\alpha \geq 4$
+
+The 3D maximum is $|E_{\mathrm{3D}}| = 3N_\alpha - 6$, achieved by the FvdW deltahedra. The planar bound is $|E_{\mathrm{planar}}| \leq N_\alpha$. The gain is at least
+\[
+(3N_\alpha - 6) - N_\alpha = 2N_\alpha - 6.
+\]
+This is strictly positive iff $N_\alpha > 3$, equivalently $N_\alpha \geq 4$. At $N_\alpha = 3$, gain is 0 — both planar and 3D realize $|E| = 3$, which corresponds to the equilateral-triangle ground state of ${}^{12}$C (Hoyle state precursor).
+
+By Lemma C, the ground state has maximum $|E|$; by C5, the ground state minimizes energy. At $N_\alpha \geq 4$, the 3D arrangement strictly beats any coplanar arrangement, so the ground state is 3D. At $N_\alpha = 3$, the planar and 3D edge counts coincide, so the ground state can be either — and ${}^{12}$C as planar triangle is consistent with the framework. This is the natural sharpness of the $N_\alpha \geq 4$ threshold.
+
+### Sharpness check at $N_\alpha = 4$
+
+At $N_\alpha = 4$: $|E_{\mathrm{planar}}| \leq 4$ vs $|E_{\mathrm{3D}}| = 6$ (regular tetrahedron of 4 alpha centroids). Gain = 2 edges = $2 B_{\mathrm{pair}} = 4.684$ MeV.
+
+This matches the canonical FvdW realization at $N_\alpha = 4$ (${}^{16}$O as alpha-tetrahedron) and the standard nuclear-physics interpretation that ${}^{16}$O has tetrahedral cluster geometry.
+
+### Refined-C1 facet (b) does not weaken the bound
+
+Two reasons:
+
+(1) **Facet (b) only activates at degree $\geq 5$.** The planar bound establishes $\deg \leq 2$, so facet (b)'s vertex-hosting accommodation mechanism is not invoked in any coplanar configuration. The proof uses only LO regularity (facet (a)).
+
+(2) **Facet (b) operates within $\sim 5\%$ rigidity envelope.** Even if facet (b) were active, it deforms the alpha tetrahedron only within a $\sim 5\%$ residual band per the SS-5 LO-rigidity remark. Face-normal directions remain $O(5\%)$-deformed from the regular tetrahedron's. The proof's Step 1 needs only "any 3 face-normals span $\mathbb{R}^3$," which is robust to small deformations: the determinant of the 3-vector matrix is bounded away from zero at LO regularity, and small perturbations preserve non-vanishing of the determinant. So Step 1 is robust to facet (b).
+
+### Effect on §9 Gap 4
+
+§9 Gap 4 in v0.1 reads: "3D-non-degeneracy: Stated as an assumption. Should ideally be derived from 'cluster is genuinely 3-dimensional at $N_\alpha \geq 4$' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $N_\alpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma."
+
+Sub-Lemma 2.2 delivers exactly this derivation. The Gap 4 entry is annotated CLOSED at v0.3 with the original v0.1 entry preserved for historical record.
+
+### v0.2 → v0.3 ripples
+
+The sub-lemma addition propagates to:
+
+1. **§2.6 (new)** — Sub-Lemma 2.2 + 4-step proof + 3 remarks. ~85 lines TeX.
+2. **§9 Gap 4 entry** — annotated CLOSED at v0.3 with brief summary; original v0.1 entry preserved. ~5 lines change.
+3. **CHANGELOG header** — v0.3 entry added with ~70 lines documenting sub-lemma + proof structure + ripples + polish track status.
+
+The Theorem 6.1 statement and proof are unchanged at v0.3. The Theorem still lists "3D-non-degeneracy" in its hypothesis stack for clarity — Remark 2.4 explicitly notes this is now a derived condition. v1.0 may consolidate the hypothesis list (e.g., remove "3D-non-degeneracy" from the Theorem statement and apply Sub-Lemma 2.2 directly within the proof of Lemma B').
+
+Lemma B$'$ uses 3D-non-degeneracy directly. v0.3 leaves Lemma B$'$ unchanged for the same readability reasons. v1.0 may reformulate.
+
+### Effect on programme-level OPEN-* registries
+
+NONE. 3D-non-degeneracy was an auxiliary assumption local to SS-9, not registered as a programme-level OPEN-SS-* problem. Closure at v0.3 is paper-internal. No changes to Research_Frontier.md OPEN-* status entries from this session. Only the "Last updated" header gets updated to reflect Session 26 polish work.
+
+This contrasts with Session 25's sub-task (a), which advanced OPEN-SS-33 (a programme-level open problem) from raw open to conditional closure.
+
+### Polish track sub-task ordering after Session 26
+
+- Sub-task (a) C7 sub-lemma — DONE Session 25 (v0.2).
+- Sub-task (b) 3D-non-degeneracy sub-lemma — **DONE Session 26 (v0.3).**
+- Session 27 candidate: sub-task (c) C5 well-definedness via compactness.
+- Session 28 candidate: sub-task (d) AI-team review per symmetric-honesty protocol.
+- Session 29+ candidate: sub-task (e) external review.
+
+### Forward priority Session 27: sub-task (c) C5 well-definedness via compactness
+
+C5 (ground-state energy minimization) currently states: "Among all $N_\alpha$-alpha cluster configurations $\mathcal{C}$ that are physically realizable (no alpha-alpha interpenetration; cluster connected through $G$), the realized ground state minimizes total energy, equivalently maximizes $B(\mathcal{C})$."
+
+The implicit assumption is that such a ground state EXISTS. Sub-task (c) addresses this:
+
+**Sub-Lemma 2.3 (anticipated, Session 27).** *The set of physically realizable $N_\alpha$-alpha cluster configurations at fixed $N_\alpha$ is compact (under appropriate quotient by rigid motions), and $B(\mathcal{C})$ is continuous on this set. Hence the supremum $\sup_{\mathcal{C}} B(\mathcal{C})$ is attained — the ground state exists.*
+
+Compactness argument: the configuration space is the set of $(c_1, \ldots, c_{N_\alpha}, R_1, \ldots, R_{N_\alpha}) \in \mathbb{R}^{3N_\alpha} \times \mathrm{SO}(3)^{N_\alpha}$ (centroid positions + alpha orientations) modulo $\mathrm{SE}(3) = \mathbb{R}^3 \rtimes \mathrm{SO}(3)$ rigid motions, restricted to physically realizable configurations (no interpenetration, $G$ connected). The quotient is compact because (i) connectedness requires bounded diameter ($\leq (N_\alpha - 1) \cdot R_{\alpha\alpha}$ via path through $G$); (ii) bounded centroid positions modulo rigid motions live in a compact set; (iii) $\mathrm{SO}(3)^{N_\alpha}$ is compact; (iv) physical realizability is closed (no-interpenetration is closed; $G$-connectedness is closed in the appropriate topology).
+
+Continuity of $B(\mathcal{C})$ in the configuration is straightforward: $B$ is a sum over discrete edge counts, but $|E|$ is locally constant on the configuration space (small perturbations don't change which faces coincide), so $B$ is locally constant + jumps at face-coincidence boundaries. Sup is attained on the closure.
+
+This sub-lemma should be straightforward to write but requires careful topological setup. Anticipated single-session-tractable.
+
+### Anti-priority sustained
+
+Do NOT modify SS-9 v0.3 .tex outside of v1.0 polish revisions. Each polish revision bumps the CHANGELOG version. The shipped versions are:
+- v0.1: Session 24 ship.
+- v0.2: Session 25 sub-task (a) C7 sub-lemma close.
+- v0.3: Session 26 sub-task (b) 3D-non-degeneracy sub-lemma close.
+
+Do NOT propose any single-session R3-channel refinement to close the remaining 52% empirical gap. Single-session R3-channel refinement candidates remain EXHAUSTED.
+
+### Programme state at Session 26 close
+
+- 12 programme-level negative results UNCHANGED (v1.0 polish work is paper-internal, not programme-level).
+- All earlier closures preserved.
+- Phase 8 Refinement A standing best refinement preserved.
+- OPEN-SS-24 ADVANCED to conditional theorem — preserved.
+- OPEN-SS-33 ADVANCED to conditional closure modulo (H4) + (H5) — preserved from Session 25.
+- OPEN-ORG-012 RETIRED — preserved.
+- SS-9 at **v0.3** (was v0.2 at Session 25 close).
+- v1.0 polish track: sub-tasks (a) and (b) DONE; sub-tasks (c)/(d)/(e) pending.
+- §9 v0.1 6-gap list now reduced to 4 remaining gaps (Gaps 4 and 5 closed at v0.3 and v0.2 respectively).
