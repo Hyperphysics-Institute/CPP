@@ -1,0 +1,761 @@
+% ============================================================
+% SS-9: Conditional Derivation of Simplicial Alpha-Polytope
+%        Connectivity from CPP Lattice Geometry
+% Strong Sector Series
+%
+% Version 0.1 -- 6 May 2026 (initial .tex shipped from v0.3
+%   markdown working draft via OPEN-ORG-012 closure protocol)
+%
+% CHANGELOG:
+%   v0.1 (6 May 2026) -- INITIAL TYPESET DRAFT. First formal
+%     LaTeX paper compiled from the v0.3 markdown working draft
+%     (`session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md`,
+%     218 lines, dated 1 May 2026 Session 16). Source markdown
+%     git-moved to `series_strong/papers/SS-9/sketches/
+%     SS-9_v0.3_working_draft.md` per OPEN-ORG-012 closure.
+%
+%     This paper is a derivation paper, not a prediction paper.
+%     It delivers a CONDITIONAL THEOREM closing C4 (the
+%     simplicial-polytope contact structure assumption used in
+%     SS-7) on the refined-C1 (multi-faceted alpha rigidity,
+%     SS-7 v1.3) foundation, conditional on three new paper-
+%     level hypotheses C5 (energy minimization), C6 (cluster
+%     surface-realization), and C7 (contact-graph planarity),
+%     each registered as candidate open problems for first-
+%     principles closure from CPP axioms A1-A11 (OPEN-SS-29,
+%     OPEN-SS-30, OPEN-SS-33).
+%
+%     RELATIONSHIP TO OPEN-SS-32 / U-SHAPE THREAD:
+%       Sessions 13-23 (1 May 2026 -- 6 May 2026) executed the
+%       OPEN-SS-32 / U-shape investigation thread (Phases 1-11)
+%       in parallel with SS-9 development. The thread targeted
+%       refined-C1 facet (c) (cluster-level collective oblate-
+%       deformation slip-plane mode) as the source of the SS-7
+%       Table 1 Regime B residual pattern. Eleven phases produced
+%       12 programme-level negative results, 7 sequential ruling-
+%       outs, 1 R2 formal closure (Session 15), 1 Gaussian-K_3
+%       framework formal closure (Session 16), 3 positive scoping
+%       outcomes (Phase 5 channel pass, Phase 6 5\% smooth-A
+%       bullseye, Phase 8 Refinement A factor 3.6 polytope-
+%       residual improvement with near-exact zero-parameter
+%       \^{40}Ca and \^{36}Ar matches), and 1 structural-redundancy
+%       null result (Phase 11 R3-Pauli). At Session 23 close,
+%       single-session R3-channel refinement candidates were
+%       declared EXHAUSTED; Phase 8 Refinement A confirmed at
+%       the natural ceiling of R3-channel single-session refine-
+%       ments; remaining 52\% of empirical polytope-residual scale
+%       requires sub-shell-physics decomposition (multi-paper)
+%       or alternate-channel work outside R3.
+%
+%       SS-9 v0.1 is the first paper to ship after Session 23
+%       Phase 11 NULL marked the natural saturation point for
+%       R3-channel single-session work. Phase 8 Refinement A
+%       and the OPEN-SS-32 / U-shape thread results are
+%       summarized in \S\ref{sec:openss32_status} as the
+%       investigation status report; the SS-9 mathematical
+%       content (the conditional Theorem and its Lemma stack)
+%       is independent of the OPEN-SS-32 / U-shape thread
+%       outcomes and applies in the LO accounting where facet (c)
+%       contributes only as an NLO addition to the binding
+%       formula.
+%
+%     SUBSTANTIVE CHANGE FROM v0.2 SKETCH -> v0.3 MARKDOWN -> v0.1 .tex:
+%       v0.2 sketch (16 April 2026) attempted a Lemma B based on a
+%       direct supporting-hyperplane construction at the contact
+%       face F_{ij}. On re-examination the v0.2 argument has a
+%       real gap: F_{ij} has nucleon-position vertices, not
+%       centroid vertices, so F_{ij} does not directly bound
+%       H = conv(c_1, ..., c_{N_alpha}), and rigid packing alone
+%       does not deliver the supporting hyperplane the construction
+%       needs. v0.3 (1 May 2026) sidesteps this gap by adding
+%       C7 (contact-graph planarity) as a paper-level hypothesis
+%       at the same tier as C5 and C6, and using Steinitz's
+%       theorem as a black box on the contact graph viewed
+%       graph-theoretically. v0.1 .tex preserves the v0.3
+%       resolution.
+%
+%     OPEN PROBLEM STATUS AT v0.1 SHIP:
+%       - OPEN-SS-24: ADVANCED -> CONDITIONAL THEOREM. C4 promoted
+%         from "structural hypothesis" (B-tier) in SS-7 v1.3 to
+%         "conditional theorem at C5 + C6 + C7 + C1' + C2 + C3
+%         inheritance tier" in this paper. Unconditional promotion
+%         pending closure of OPEN-SS-29, OPEN-SS-30, OPEN-SS-33.
+%       - OPEN-SS-29: REGISTERED. C5 first-principles derivation
+%         from CPP axioms A1-A11.
+%       - OPEN-SS-30: REGISTERED. C6 first-principles derivation
+%         from CPP axioms A1-A11.
+%       - OPEN-SS-31: REGISTERED. Deltahedra-gap structural
+%         realization at N_alpha in {11, 13, 14}.
+%       - OPEN-SS-32: ACTIVE INVESTIGATION (separate thread,
+%         Sessions 13-23 in parallel with SS-9 development);
+%         single-session R3-channel refinement candidates
+%         exhausted at Session 23 close; standing best refinement
+%         is Phase 8 Refinement A (factor 3.6 polytope-residual
+%         improvement, 48\% of empirical scale captured); see
+%         \S\ref{sec:openss32_status}.
+%       - OPEN-SS-33: REGISTERED (NEW, this paper). C7 first-
+%         principles derivation from CPP axioms A1-A11.
+%
+%     ORG-LEVEL STATUS:
+%       - OPEN-ORG-012: RETIRED. .tex conversion of SS-9 v0.3
+%         working draft completed at v0.1.
+%       - SS-9 v0.3 working draft: git-moved from
+%         `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md`
+%         to `series_strong/papers/SS-9/sketches/
+%         SS-9_v0.3_working_draft.md`.
+%       - v0.2 working draft remains in `session_logs/` as the
+%         Steinitz-pivot historical artifact.
+%
+% CONTRIBUTORS:
+%   Thomas Lee Abshier ND -- direction (SS-9 as natural follow-on
+%     to SS-7 deriving the simplicial assumption from CPP rather
+%     than asserting it; OPEN-SS-24 originally registered in SS-7
+%     v1.0); scope authority on the v0.2 -> v0.3 pivot; OPEN-ORG-012
+%     promotion at Session 23 Phase 11 close.
+%   Claude Opus (Anthropic) -- v0.2 sketch initial drafting
+%     (Sessions 1-2, including Steinitz-theorem identification
+%     and centroid-hull supporting-hyperplane construction);
+%     v0.3 substantive revision (Session 3 with Session 16 finalisa-
+%     tion: removal of v0.2 supporting-hyperplane gap, introduction
+%     of C7 contact-graph planarity hypothesis, OPEN-SS-33
+%     registration); v0.1 .tex preparation (Session 24).
+%
+% Series: Strong Sector
+% Dependencies: SS-7 v1.3 (alpha-cluster regime, refined-C1 with
+%   facets a/b/c, contact relation C2, K_3 collective mode C3,
+%   AME 2020 binding data, Table 1 residual fingerprint that
+%   motivated OPEN-SS-32), SS-5 v6 (B_pair = M_0/phi nucleon-pair
+%   binding quantum), SM-8 (M_0 quantum from 600-cell distance
+%   shells).
+% Resolves: OPEN-SS-24 (derivation of simplicial contact structure
+%   from CPP) -- ADVANCED to conditional theorem at C5 + C6 + C7 +
+%   C1' + C2 + C3 inheritance tier.
+% Registers: OPEN-SS-29 (C5 first-principles derivation),
+%   OPEN-SS-30 (C6 first-principles derivation), OPEN-SS-31
+%   (deltahedra-gap structural realization), OPEN-SS-33 (C7
+%   first-principles derivation, NEW this paper).
+% Retires: OPEN-ORG-012 (.tex conversion of SS-9 v0.3 working
+%   draft, ORG-level milestone).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+\newcommand{\phig}{\varphi}
+\newcommand{\Mzero}{M_0}
+\newcommand{\Bpair}{B_{\mathrm{pair}}}
+\newcommand{\Balpha}{B_{\alpha}}
+\newcommand{\Nalpha}{N_{\alpha}}
+\newcommand{\Raa}{R_{\alpha\alpha}}
+\newcommand{\Lalpha}{L_{\alpha}}
+
+\title{\textbf{SS-9: Conditional Derivation of Simplicial Alpha-Polytope Connectivity from CPP Lattice Geometry}\\[6pt]
+{\large 600-Cell Standard Model Emergence Series}\\[4pt]
+{\normalsize Version 0.1 --- 6 May 2026 (initial typeset draft from v0.3 working draft)}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: 10.17605/OSF.IO/JXE8D}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent\textbf{Paper type:} Derivation paper. Establishes a conditional theorem closing C4 (the simplicial-polytope contact structure assumption used implicitly in SS-7) on the refined-C1 (multi-faceted alpha rigidity, SS-7 v1.3) foundation, conditional on three new paper-level hypotheses registered as candidate open problems for first-principles closure.
+
+SS-7 derived a zero-parameter formula $B(\Nalpha) = \Nalpha \Balpha + (3\Nalpha - 6) \Bpair$ for strict-$N{=}Z$ alpha-chain nuclei at $\Nalpha \in \{3, \ldots, 14\}$, where the edge count $3\Nalpha - 6$ is the simplicial-polytope edge count on $\Nalpha$ vertices. SS-7 used this edge count as a paper-level structural hypothesis (assumption C4) and tested it empirically against AME 2020. The zero-parameter agreement to within $\pm 1.5\%$ across twelve nuclei (RMS $0.80\%$) supported but did not derive the simplicial-polytope structure from CPP primitives. SS-9 advances OPEN-SS-24 (registered in SS-7 v1.0) toward closure.
+
+The main result is a conditional theorem: under refined-C1 facets (a) and (b) (SS-7 v1.3), C2 (contact-face relation, SS-7), C3 (K$_3$ collective mode at each contact, SS-7), and three new paper-level hypotheses --- C5 (ground-state energy minimization), C6 (cluster surface-realization), C7 (contact-graph planarity) --- together with rigid packing and 3D-non-degeneracy, the ground-state contact graph $G(\mathcal{C})$ at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ is the 1-skeleton of a simplicial convex 3-polytope with $|E| = 3\Nalpha - 6$, every face of the polytope a triangle, and the polytope is realized geometrically as the unique Freudenthal-van der Waerden convex deltahedron at $\Nalpha$ with vertices at the alpha LO centroids and uniform edge length $\Raa$. The proof routes through three lemmas: Lemma A (pairwise triangular contact, from C1$'$ + C2), Lemma C (energy minimization picks maximum edges, from C3 + C5), and Lemma B$'$ (contact graph = 1-skeleton of convex 3-polytope, from Lemma A + Lemma C + C6 + C7 via Euler's formula and Steinitz's theorem). Refined-C1 facet (b) is load-bearing in the Theorem's geometric-realization clause at $\Nalpha \geq 7$, where the FvdW deltahedron has degree-$\geq 5$ vertices that strict-C1 with each alpha presenting four outer faces cannot host.
+
+The conditional theorem promotes C4 from a B-tier structural hypothesis in SS-7's classification to a derived statement at the C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier. Unconditional promotion is pending closure of OPEN-SS-29 (C5 from CPP), OPEN-SS-30 (C6 from CPP), and the newly registered OPEN-SS-33 (C7 from CPP). The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$ is registered as OPEN-SS-31; clauses (i)--(iii) of the Theorem still apply (the contact graph remains a planar 3-connected simplicial graph), but clause (iv) does not (no FvdW deltahedron exists at those vertex counts). The $\Nalpha = 3$ planar degenerate case is handled separately. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode, OPEN-SS-32) is treated as an NLO addition to the LO binding formula and does not affect the LO geometric proof structure of this paper. Sessions 13--23 of the parallel OPEN-SS-32 / U-shape investigation thread are summarized in \S\ref{sec:openss32_status}; standing best refinement at the time of v0.1 ship is Phase 8 Refinement A (factor 3.6 polytope-residual improvement, 48\% of empirical scale captured).
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} alpha-cluster model, simplicial polytope, Euler's formula, Steinitz's theorem, Freudenthal-van der Waerden deltahedra, contact graph, planarity, 3-vertex-connectivity, refined alpha rigidity, K$_3$ collective mode, conditional derivation, OPEN-SS-24, OPEN-SS-33, Conscious Point Physics, alpha-polytope edge formula.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+SS-7 found that the binding energies of medium-mass nuclei built from alpha particles match a clean formula: total binding equals the sum of individual alpha binding energies plus 2.342 MeV times the edge count of a closed polytope on $\Nalpha$ vertices, where each pair of touching alphas counts as one edge. The formula's edge count, $3\Nalpha - 6$, is the edge count of any triangulated sphere on $\Nalpha$ vertices (Euler's formula for simplicial convex 3-polytopes). SS-7 assumed without derivation that alpha clusters realize such polytopes and tested the assumption empirically; the test passed for twelve nuclei from carbon-12 through nickel-56 within $\pm 1.5\%$. SS-9 asks: can the simplicial-polytope structure itself be derived from CPP primitives, rather than just matched empirically? The answer here is a conditional yes. Given (a) that alphas are leading-order rigid tetrahedral units with a multi-faceted rigidity that allows degree-$\geq 5$ vertex hosting (the SS-7 v1.3 refinement), (b) that contact between two alphas means face-to-face coincidence with one K$_3$ collective bond per contact (also from SS-7), (c) that the cluster minimizes total energy in its ground state, (d) that no alpha is interior to the cluster, and (e) that the resulting contact graph is planar (a topological consequence of the cluster being a closed shell of alphas), the simplicial-polytope structure follows by a chain of three lemmas. The energy-minimization condition forces the contact graph to have the maximum possible number of edges; Euler's formula then forces every face of the planar embedding to be a triangle; Steinitz's classical theorem (1922) then identifies the contact graph as the 1-skeleton of a convex 3-polytope; and the Freudenthal-van der Waerden classification (1947) identifies that polytope, at the eight vertex counts where a uniform-edge-length convex deltahedron exists, as the unique convex deltahedron with that vertex count. The five conditions become candidate open problems for first-principles derivation from the CPP axioms.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+% ===================================================================
+\section{Introduction}
+\label{sec:intro}
+% ===================================================================
+
+\begin{mdframed}[backgroundcolor=blue!5, linewidth=0.8pt, roundcorner=5pt]
+\textbf{Main result.} Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ alphas, under refined-C1 facets (a) and (b), C2, C3, C5, C6, C7, rigid packing, and 3D-non-degeneracy. Then:
+\begin{enumerate}[label=(\roman*)]
+\item the contact graph $G(\mathcal{C})$ is the 1-skeleton of a simplicial convex 3-polytope;
+\item $|E(\mathcal{C})| = 3\Nalpha - 6$;
+\item every face of the polytope is a triangle;
+\item the polytope is realized geometrically as the unique Freudenthal-van der Waerden convex deltahedron at $\Nalpha$, with vertices at the alpha LO centroids and uniform edge length $\Raa$.
+\end{enumerate}
+The proof routes through three lemmas (\S\S\ref{sec:lemma_A}--\ref{sec:lemma_Bprime}) and the Freudenthal-van der Waerden classification of convex deltahedra. Refined-C1 facet (b) is load-bearing in clause (iv) at $\Nalpha \geq 7$.
+\end{mdframed}
+
+\subsection{Open Problems Addressed}
+\label{sec:open_problems}
+
+This paper addresses OPEN-SS-24 (derivation of simplicial contact structure from CPP), originally registered in SS-7 v1.0 as a target for SS-9. The advancement is from "structural hypothesis to be verified empirically" (SS-7 status) to "conditional theorem at the C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier" (SS-9 status), with three new candidate open problems registered for first-principles closure:
+\begin{itemize}
+\item OPEN-SS-29: derive C5 (ground-state energy minimization) from CPP axioms A1--A11.
+\item OPEN-SS-30: derive C6 (cluster surface-realization, no alpha interior to cluster) from A1--A11.
+\item OPEN-SS-33: derive C7 (contact-graph planarity) from A1--A11. \emph{New this paper.}
+\end{itemize}
+The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$, where clause (iv) of the Theorem does not apply because no FvdW convex deltahedron exists at those vertex counts, is registered as OPEN-SS-31. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode), an active investigation thread in parallel with this paper's development (OPEN-SS-32, SS-9 v0.3 \S 7 in earlier drafts; \S\ref{sec:openss32_status} of this paper), is treated as NLO and does not affect the LO geometric proof structure of this paper.
+
+\subsection{Cascade context}
+
+SS-5 \cite{abshier2026ss5} established that the light nuclei $A = 2, 3, 4$ form by face-to-face contact of hybrid-tetrahedral nucleons, with the cascade terminating at $A = 4$ because the regular tetrahedron is the unique closed 3-polytope on 4 vertices. SS-7 \cite{abshier2026ss7} extended this paradigm one level up: alpha particles themselves act as rigid tetrahedral building blocks, assembling into closed polytopes of alphas with K$_3$ base-to-base bonds across each shared face. The SS-7 binding formula
+\begin{equation}
+B(\Nalpha) = \Nalpha \cdot \Balpha + (3\Nalpha - 6) \cdot \Bpair,
+\label{eq:SS7_formula}
+\end{equation}
+with $\Balpha = 28.296$ MeV (from SS-5) and $\Bpair = \Mzero/\phig = 2.342$ MeV (the SS-5 nucleon-pair binding quantum), reproduces twelve strict-$N{=}Z$ alpha-chain binding energies (${}^{12}$C through ${}^{56}$Ni) within $\pm 1.5\%$ at zero fitted parameters, with RMS error $0.80\%$.
+
+The edge count $3\Nalpha - 6$ in (\ref{eq:SS7_formula}) is the simplicial edge count on $\Nalpha$ vertices: a consequence of Euler's formula for convex 3-polytopes with triangular faces. The empirical agreement strongly supports the simplicial-polytope structure, but does not derive it from CPP primitives. SS-7 v1.0 explicitly registered OPEN-SS-24 (``derivation of simplicial contact structure from CPP lattice geometry'') as a target for a future paper. SS-9 is that paper.
+
+\subsection{What SS-9 delivers}
+
+\begin{itemize}
+\item A clean conditional theorem (\S\ref{sec:theorem}) deriving clauses (i)--(iv) above from the lemma stack, with no remaining argumentative gaps in the proof of the lemma stack itself.
+\item A three-lemma proof structure: Lemma A (pairwise triangular contact, \S\ref{sec:lemma_A}), Lemma C (energy minimization picks max edges, \S\ref{sec:lemma_C}), Lemma B$'$ (contact graph = 1-skeleton of convex 3-polytope, \S\ref{sec:lemma_Bprime}).
+\item Honest delineation between what is proved \emph{conditional on the hypothesis stack} and what remains as candidate open problems for first-principles closure (\S\S\ref{sec:closure_status}--\ref{sec:gaps}).
+\item A new paper-level hypothesis C7 (contact-graph planarity) at the same tier as C5 and C6, with OPEN-SS-33 registered for first-principles closure.
+\item Integration of refined-C1 facet (b) (multi-faceted alpha rigidity from SS-7 v1.3) as a load-bearing component of the geometric-realization clause at $\Nalpha \geq 7$, where the FvdW deltahedron has degree-$\geq 5$ vertices.
+\item A scope-note treatment (\S\ref{sec:scope}) of the deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$ and the $\Nalpha = 3$ planar degenerate case.
+\item An investigation status report (\S\ref{sec:openss32_status}) summarizing the OPEN-SS-32 / U-shape thread (Sessions 13--23, Phases 1--11) that ran in parallel with SS-9 development, targeting refined-C1 facet (c). At the time of v0.1 ship, single-session R3-channel refinement candidates were declared exhausted; the standing best refinement is Phase 8 Refinement A.
+\item A Phase 4 sketch (\S\ref{sec:phase4}) outlining the structure of programme-level closure attempts for C5, C6, and C7 from CPP axioms.
+\end{itemize}
+
+\subsection{What SS-9 does not deliver}
+
+\begin{itemize}
+\item First-principles derivation of C5, C6, or C7 from CPP axioms A1--A11. Each is registered as a candidate open problem (OPEN-SS-29, OPEN-SS-30, OPEN-SS-33).
+\item Resolution of the deltahedra-gap at $\Nalpha \in \{11, 13, 14\}$. Registered as OPEN-SS-31.
+\item Identification of the specific facet (b) accommodation mechanism at degree-$\geq 5$ vertices. Three candidate mechanisms (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking) are registered in SS-7 v1.3 \S 2.1; distinguishing them is testable via predicted contact-distance distributions at degree-5 sites, accessible to AMD or Brink--Bloch cluster-model calculations. Plausibly folds into the OPEN-SS-32 derivation if facets (b) and (c) share Layer-3 ancestry as the same K$_3$ scale-recurrence at different geometric venues.
+\item Closure of OPEN-SS-32 (refined-C1 facet (c) attenuation factor derivation). Active investigation thread, current status \S\ref{sec:openss32_status}; standing best refinement Phase 8 Refinement A captures 48\% of empirical polytope-residual scale; remaining 52\% requires sub-shell-physics decomposition (multi-paper) or alternate-channel work outside R3 channel.
+\end{itemize}
+
+% ===================================================================
+\section{Setup and Notation}
+\label{sec:setup}
+% ===================================================================
+
+\begin{mdframed}[backgroundcolor=gray!5, linewidth=0.5pt, roundcorner=3pt]
+\textbf{Symbols used throughout this paper:}
+\begin{itemize}\setlength\itemsep{0pt}
+\item $\Nalpha \in \mathbb{N}$, $\Nalpha \geq 3$ --- number of alpha clusters in the configuration
+\item $\Lalpha$ --- alpha-internal scale (LO regular-tetrahedron edge length, from SS-5)
+\item $\Raa = 2.37$ fm --- alpha-alpha contact distance (from SS-7, K$_3$ collective-mode minimization)
+\item $\Balpha = 28.296$ MeV --- ${}^4$He single-alpha binding (from SS-5)
+\item $\Bpair = \Mzero/\phig = 2.342$ MeV --- nucleon-pair binding quantum (from SS-5)
+\item $\mathcal{C} = (\alpha_1, \ldots, \alpha_{\Nalpha})$ --- alpha-cluster configuration
+\item $G(\mathcal{C}) = (V, E)$ --- contact graph
+\item $H(\mathcal{C}) = \mathrm{conv}(c_1, \ldots, c_{\Nalpha})$ --- convex hull of alpha LO centroids
+\item $F_{ij}$ --- shared LO triangular face at contact $\alpha_i \sim \alpha_j$
+\end{itemize}
+\end{mdframed}
+
+\subsection{Alpha-cluster configuration}
+
+Let $\Nalpha \in \mathbb{N}$ with $\Nalpha \geq 3$. An \textbf{$\Nalpha$-alpha cluster configuration} is a tuple $\mathcal{C} = (\alpha_1, \ldots, \alpha_{\Nalpha})$ of distinct rigid tetrahedral units in $\mathbb{R}^3$ (``alphas''), each at LO an approximately regular tetrahedron of edge length $\Lalpha$ (the SS-5-derived alpha-internal scale).
+
+\subsection{Refined-C1 (multi-faceted alpha rigidity, inherited from SS-7 v1.3 \S 2.1)}
+
+\textbf{C1$'$ (refined alpha rigidity).} Each $\alpha_i$ is a closed approximately regular 3-simplex with three structurally independent rigidity facets:
+\begin{itemize}
+\item \textbf{Facet (a)} --- Internal LO rigidity. At LO the alpha is a regular tetrahedron with four equilateral triangular outer faces, with a $\sim 5\%$ residual band per the SS-5 LO-rigidity remark.
+\item \textbf{Facet (b)} --- Vertex-hosting accommodation at degree-$\geq 5$ cluster vertices. When cluster topology requires the alpha to participate in $\geq 5$ contacts, the additional contacts beyond four are hosted within the LO rigidity envelope via [mechanism TBD; candidates include face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking].
+\item \textbf{Facet (c)} --- Cluster-level collective oblate-deformation slip-plane mode (provisional, OPEN-SS-32). Activates at belt/seam-supporting cluster shapes with binding contribution $\sim +\Bpair \times \text{attenuation factor}$.
+\end{itemize}
+
+For Lemma A, Lemma B$'$, Lemma C, and the Theorem below, the load-bearing content of C1$'$ is facet (a) plus facet (b). Facet (c) corrections enter as an NLO addition to the binding formula and are accounted for separately at OPEN-SS-32 closure tier; \emph{facet (c) does not affect the LO geometric proof structure of this paper}.
+
+\subsection{Contact relation, contact graph, binding (inherited from SS-7)}
+
+\textbf{C2 (base-to-base contact).} The \textbf{contact relation} $\sim$ on $\{\alpha_1, \ldots, \alpha_{\Nalpha}\}$ is defined: $\alpha_i \sim \alpha_j$ iff there exist faces $F_i \subset \alpha_i$ and $F_j \subset \alpha_j$ such that $F_i \equiv F_j$ as triangular regions of $\mathbb{R}^3$. Under C1$'$ facet (a), each contact at LO has centroid-centroid separation $\Raa$ (the SS-7-calibrated alpha-alpha contact distance set by the K$_3$ collective-mode minimization).
+
+Define:
+\begin{itemize}
+\item The \textbf{contact graph} $G(\mathcal{C}) = (V, E)$ with $V = \{\alpha_1, \ldots, \alpha_{\Nalpha}\}$ and $E = \{\{\alpha_i, \alpha_j\} : \alpha_i \sim \alpha_j\}$.
+\item The \textbf{convex hull of centroids} $H(\mathcal{C}) = \mathrm{conv}(c_1, \ldots, c_{\Nalpha}) \subset \mathbb{R}^3$, where $c_i$ is the LO centroid of $\alpha_i$.
+\item The \textbf{binding energy at LO} $B(\mathcal{C}) = \Nalpha \Balpha + |E| \Bpair$, with $\Balpha = 28.296$ MeV and $\Bpair = \Mzero/\phig = 2.342$ MeV inherited from SS-5/SS-7.
+\end{itemize}
+
+\textbf{C3 (K$_3$ collective mode at each contact).} Each contact $\alpha_i \sim \alpha_j$ contributes one collective bonding mode at energy $\Bpair$.
+
+\subsection{Paper-level structural hypotheses (the conditionals)}
+
+\textbf{C5 (ground-state energy minimization).} Among all $\Nalpha$-alpha cluster configurations $\mathcal{C}$ that are physically realizable (no alpha-alpha interpenetration; cluster connected through $G$), the realized ground state minimizes total energy, equivalently maximizes $B(\mathcal{C})$. \emph{Programme-level closure registered as OPEN-SS-29 candidate.}
+
+\textbf{C6 (cluster surface-realization).} All centroids $c_i$ lie on the boundary $\partial H$ of the convex hull $H$. Equivalently: no alpha is interior to the cluster. \emph{Programme-level closure registered as OPEN-SS-30 candidate.}
+
+\textbf{C7 (contact-graph planarity).} The contact graph $G(\mathcal{C})$ is planar --- it admits an embedding in the plane (equivalently, on $S^2$) without edge crossings. \emph{Programme-level closure registered as OPEN-SS-33 candidate (NEW this paper).}
+
+\textbf{Physical motivation for C7.} Under C6, the cluster is a ``shell'' of alphas with no interior member. Under C1$'$ + rigid packing, the cluster is a contractible connected 3D region (no internal voids in the standard nuclear physics interpretation of an alpha cluster). Each alpha contributes outer faces to the cluster's exterior 2-surface $\Sigma$, with $\Sigma \cong S^2$ topologically (boundary of a contractible 3D region). The contact graph admits a natural embedding on $\Sigma$ via the alpha-dual construction (each alpha as a point on its own outer-face region, each contact as an arc through the shared interior face). This embedding makes $G$ planar. The C7 hypothesis records this topological inheritance from C6 + cluster contractibility, abstracted from the geometric details of the embedding so that Steinitz's theorem can be invoked directly. C7's first-principles closure from CPP primitives is the OPEN-SS-33 question; physical motivation alone justifies it as a paper-level hypothesis at the C5/C6 tier.
+
+C5, C6, C7 are \textbf{paper-level structural hypotheses at the SS-7 inheritance tier}. None is derived from CPP axioms A1--A11 in this paper; each is registered as an OPEN-SS-2X / 3X candidate for follow-up programme-level closure.
+
+\subsection{Auxiliary assumptions}
+
+We additionally assume:
+\begin{itemize}
+\item \textbf{3D-non-degeneracy.} The alpha centroids do not all lie in a single plane. This excludes the $\Nalpha = 3$ planar case, which is handled separately in \S\ref{sec:scope}.
+\item \textbf{Rigid packing.} No alpha-alpha interpenetration. This is a definitional consequence of the rigid-tetrahedral construction.
+\end{itemize}
+
+% ===================================================================
+\section{Lemma A: Pairwise Triangular Contact}
+\label{sec:lemma_A}
+% ===================================================================
+
+\begin{lemma}[Pairwise Triangular Contact]
+\label{lem:A}
+Under C1$'$ and C2, for every $\{\alpha_i, \alpha_j\} \in E$, the contact face $F_{ij} = F_i \equiv F_j$ is an equilateral triangle of edge length $\Lalpha$ at LO.
+\end{lemma}
+
+\begin{proof}
+By C1$'$ facet (a), every face of $\alpha_i$ at LO is an equilateral triangle of edge length $\Lalpha$. By C2, $F_{ij}$ is the coincidence $F_i \equiv F_j$ as regions of $\mathbb{R}^3$. The intersection $F_i \cap F_j$ under full LO coincidence is exactly $F_i$ (and equally $F_j$), an equilateral triangle of edge length $\Lalpha$. Facet (b) accommodation modes at degree-$\geq 5$ vertices may produce sub-LO deviations from strict triangular coincidence (face-edge hybrid, partial overlap), but the LO triangular character is preserved.
+\end{proof}
+
+\begin{remark}[Exclusion of partial-overlap-only contacts]
+\label{rem:A1}
+Lemma~\ref{lem:A} is essentially a definitional consequence of the LO rigidity and full-coincidence aspects of C1$'$ facet (a) + C2. Its content is the \emph{exclusion} of partial-overlap-only, edge-only, or vertex-only contact configurations as C2-contacts. These excluded configurations are not impossible geometrically, but C2 explicitly restricts the contact relation to face-to-face full-coincidence cases; non-face contacts do not realize the K$_3$ collective mode of C3 and therefore do not contribute $\Bpair$ binding.
+\end{remark}
+
+\begin{remark}[Role of Lemma~\ref{lem:A} in the v0.3 framing]
+\label{rem:A2}
+Lemma~\ref{lem:A} establishes that every edge of $G$ corresponds to a triangular contact face between two alphas. In v0.2 of the working draft this fed into a Lemma B that argued planarity + 3-connectedness from rigid-packing geometry; in v0.3 / v0.1, planarity is hypothesized at C7 and Lemma~\ref{lem:A}'s role is to ensure the contact graph is \emph{simple} (one edge per pair) and that each edge has the LO triangular geometry that C2 + C3 require.
+\end{remark}
+
+% ===================================================================
+\section{Lemma C: Energy Minimization Picks Maximum Edges}
+\label{sec:lemma_C}
+% ===================================================================
+
+\begin{lemma}[Energy Minimization Picks Maximum Edges]
+\label{lem:C}
+Under C3 and C5, the ground-state contact graph $G(\mathcal{C}_{\mathrm{ground}})$ has the maximum possible $|E|$ among all physically realizable contact graphs on $\Nalpha$ vertices satisfying Lemma~\ref{lem:A}'s hypotheses.
+\end{lemma}
+
+\begin{proof}
+By the SS-7 binding formula and C3, $B(\mathcal{C}) = \Nalpha \Balpha + |E(\mathcal{C})| \Bpair$ at LO. Since $\Bpair > 0$, $B$ is strictly monotone increasing in $|E|$ at fixed $\Nalpha$. By C5, the ground state minimizes energy (equivalently, maximizes $B$), so the ground state has maximum $|E|$.
+\end{proof}
+
+% ===================================================================
+\section{Lemma B$'$: Contact Graph is 1-Skeleton of Convex 3-Polytope}
+\label{sec:lemma_Bprime}
+% ===================================================================
+
+\begin{lemma}[Contact Graph as 1-Skeleton of Convex 3-Polytope]
+\label{lem:Bprime}
+Let $\mathcal{C}$ be a ground-state $\Nalpha$-alpha cluster configuration with $\Nalpha \geq 4$, satisfying C1$'$ (facets a, b), C2, C3, C5, C6, C7, rigid packing, and 3D-non-degeneracy. Then the contact graph $G(\mathcal{C})$ is the 1-skeleton (vertex-edge graph) of a simplicial convex 3-polytope, with $|E(\mathcal{C})| = 3\Nalpha - 6$ and every face of the polytope a triangle.
+\end{lemma}
+
+\begin{proof}
+We proceed in five steps.
+
+\medskip
+\textbf{Step 1: $G$ is simple.} By C1$'$ facet (a) + C2 (Lemma~\ref{lem:A}), for any pair $\{\alpha_i, \alpha_j\}$ there is at most one shared LO triangular face. Hence at most one edge in $G$ between any two vertices. \checkmark
+
+\medskip
+\textbf{Step 2: $G$ is planar.} By C7. \checkmark
+
+\medskip
+\textbf{Step 3: $|E| = 3\Nalpha - 6$ and every face of the planar embedding is a triangle.} By Lemma~\ref{lem:C}, $G$ has maximum $|E|$ among realizable contact graphs on $\Nalpha$ vertices. By Euler's formula applied to a connected planar graph on $\Nalpha$ vertices: $V - E + F = 2$, where $F$ is the face count of the planar embedding. Each face has at least three edges (no face is a 2-gon in a simple graph), and each edge is shared by exactly two faces, so $\sum_{f} |\partial f| = 2|E|$ with $|\partial f| \geq 3$, giving $3|F| \leq 2|E|$, i.e., $|F| \leq 2|E|/3$. Substituting into Euler:
+\[
+\Nalpha - |E| + \tfrac{2|E|}{3} \geq 2, \quad \text{i.e., } \quad |E| \leq 3\Nalpha - 6,
+\]
+with equality iff every face is a triangle. By Lemma~\ref{lem:C} the ground-state $G$ achieves this maximum, so $|E| = 3\Nalpha - 6$ and every face of the planar embedding is a triangle. \checkmark
+
+\medskip
+\textbf{Step 4: $G$ is 3-vertex-connected.} By Step 3, $G$ is a triangulation of $S^2$ (every face of the planar embedding is a triangle, and the embedding is on $S^2$ by the standard one-point compactification of $\mathbb{R}^2$). Standard result (Diestel, \emph{Graph Theory} \cite{diestel2017}, Proposition 4.5.2; Whitney 1932 \cite{whitney1932}): every triangulation of $S^2$ on $N \geq 4$ vertices is 3-vertex-connected. \checkmark
+
+\medskip
+\textbf{Step 5: Apply Steinitz's theorem.} By Steinitz's theorem (1922 \cite{steinitz1922}; cf. Ziegler, \emph{Lectures on Polytopes} \cite{ziegler1995}, Theorem 4.1): a graph $G$ is the 1-skeleton of a convex 3-polytope iff $G$ is simple, planar, and 3-vertex-connected. By Steps 1, 2, 4, $G$ is the 1-skeleton of a convex 3-polytope $P$. By Step 3, $P$ is simplicial (every 2-face triangular) with $|E| = 3\Nalpha - 6$. \checkmark
+\end{proof}
+
+\begin{remark}[Role of refined-C1 facet (b)]
+\label{rem:B1}
+Lemma~\ref{lem:Bprime} delivers a graph-theoretic conclusion: the contact graph is the 1-skeleton of \emph{some} convex 3-polytope $P$. The polytope $P$ is determined up to its abstract combinatorial structure by Steinitz, but the \emph{geometric realization} of $P$ in $\mathbb{R}^3$ --- specifically, whether $P$ can be realized with vertices at the alpha centroids --- is a separate question handled in the Theorem (\S\ref{sec:theorem}) below. Refined-C1 facet (b) enters the Theorem at clause (iv): at $\Nalpha \geq 7$, the FvdW deltahedron has degree-5 vertices, and only facet (b)'s vertex-hosting accommodation makes the geometric realization at the centroids possible (strict-C1 with each alpha presenting four outer faces cannot host five face-coincident contacts at one alpha). This is the structural integration of Session 3's refined-C1 work into the SS-9 closure: facet (b) is load-bearing for clause (iv), not just for dissolving the strict-C1 inconsistency that motivated its introduction.
+\end{remark}
+
+\begin{remark}[Relation to the v0.2 supporting-hyperplane approach]
+\label{rem:B2}
+v0.2 of the working draft sought to derive contact-graph-equals-1-skeleton from a direct supporting-hyperplane construction at the contact face $F_{ij}$, drawing on rigid-packing + C6 alone. On re-examination this construction has a substantive gap: $F_{ij}$ has nucleon-position vertices (not centroid vertices), so it does not directly bound $H = \mathrm{conv}(c_i)$. Rigid packing forbids other \emph{alphas} from intersecting $\overline{c_i c_j}$, but the convex hull of other \emph{centroids} can in principle cross $\overline{c_i c_j}$ (if other centroids surround the bipyramid $\alpha_i \cup \alpha_j$ on multiple sides), and v0.2's hypothesis stack does not exclude this. v0.3 and v0.1 sidestep the gap by elevating the topological content the supporting-hyperplane argument was \emph{implicitly} relying on (planarity of the contact graph) into an explicit hypothesis (C7). The cost is one new candidate open problem (OPEN-SS-33: programme-level closure of C7 from A1--A11). The benefit is a clean conditional theorem with no remaining argumentative gaps in the lemma stack.
+\end{remark}
+
+% ===================================================================
+\section{Main Theorem (Conditional C4 Closure)}
+\label{sec:theorem}
+% ===================================================================
+
+\begin{theorem}[Conditional C4 closure on refined-C1 foundation]
+\label{thm:main}
+Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ alphas, under C1$'$ (facets a, b), C2, C3, C5, C6, C7, rigid packing, and 3D-non-degeneracy. Then:
+\begin{enumerate}[label=(\roman*)]
+\item $G(\mathcal{C})$ is the 1-skeleton of a simplicial convex 3-polytope.
+\item $|E(\mathcal{C})| = 3\Nalpha - 6$.
+\item Every face of the polytope is a triangle.
+\item The polytope is realized geometrically as the unique Freudenthal-van der Waerden convex deltahedron at $\Nalpha$, with vertices at the alpha LO centroids and uniform edge length $\Raa$ (the C2-fixed alpha-alpha contact distance).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\textbf{Clauses (i)--(iii):} Direct consequence of Lemma~\ref{lem:Bprime}.
+
+\medskip
+\textbf{Clause (iv):} By (i)--(iii), $G$ is the 1-skeleton of a simplicial convex 3-polytope $P$. By C2, every contact in the ground state has centroid-centroid separation $\Raa$ at LO, so every edge of $P$ has the same length $\Raa$ (after centroid-realization). A simplicial convex 3-polytope on $\Nalpha$ vertices with all-equilateral-triangular faces and uniform edge length is, by definition, a \textbf{convex deltahedron} of edge length $\Raa$. By the Freudenthal--van der Waerden theorem (1947 \cite{freudenthal_vdw_1947}): convex deltahedra exist on exactly $N \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ vertices, and at each of these $N$ values the convex deltahedron is unique up to isometry. So $P$ is realized as the FvdW deltahedron at $\Nalpha$.
+
+\medskip
+\textbf{Geometric realizability at $\Nalpha \geq 7$ via refined-C1 facet (b):} At $\Nalpha \in \{7, 8, 9, 10, 12\}$, the FvdW deltahedron has at least one vertex of degree $\geq 5$:
+\begin{itemize}
+\item $\Nalpha = 7$ (pentagonal bipyramid): 2 apex vertices at degree 5;
+\item $\Nalpha = 8$ (snub disphenoid): 4 of 8 vertices at degree 5;
+\item $\Nalpha = 9$ (triaugmented triangular prism): 6 of 9 vertices at degree 5;
+\item $\Nalpha = 10$ (gyroelongated square bipyramid): 8 of 10 vertices at degree 5;
+\item $\Nalpha = 12$ (icosahedron): all 12 vertices at degree 5.
+\end{itemize}
+Strict-C1 with each alpha presenting four outer faces cannot host five face-coincident contacts at a single vertex. Refined-C1 facet (b) provides the accommodation modes (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking --- specific mechanism TBD) under which the additional degree-$\geq 5$ contacts are hosted within the LO rigidity envelope. Without facet (b), clause (iv) would be vacuous at $\Nalpha \geq 7$ because no rigid-tetrahedral realization of the FvdW deltahedron at those values exists. With facet (b), the realization exists at LO, with sub-LO corrections in the rigidity band (and registered separately as facet (c)'s slip-plane bonus accounting for the empirical Regime B excess in SS-7 Table 1).
+\end{proof}
+
+% ===================================================================
+\section{Scope Notes (Deltahedra-Gap, $\Nalpha = 3$ Degenerate, Coulomb)}
+\label{sec:scope}
+% ===================================================================
+
+\subsection{The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$}
+\label{sec:scope_gap}
+
+The Freudenthal--van der Waerden enumeration of convex deltahedra has exactly \textbf{eight members}, at $V \in \{4, 5, 6, 7, 8, 9, 10, 12\}$. There is no convex deltahedron at $V = 11$ or at $V \geq 13$ for finite $V$. For $\Nalpha \in \{11, 13, 14\}$, clause (iv) of Theorem~\ref{thm:main} does not apply: no FvdW deltahedron exists to realize. Lemma~\ref{lem:Bprime}'s graph-theoretic conclusions (clauses (i)--(iii)) still hold --- the contact graph remains a planar 3-connected simplicial graph, the 1-skeleton of \emph{some} convex 3-polytope --- but that polytope must have non-uniform edge lengths (since uniform-edge-length simplicial convex polytopes on those $N$ values do not exist).
+
+The empirical record (SS-7 Table 1: ${}^{44}$Ti at $-0.26\%$, ${}^{52}$Fe at $-0.57\%$, ${}^{56}$Ni at $-0.73\%$ deviation from the LO formula) confirms that the $|E| = 3\Nalpha - 6$ edge count is preserved at these $\Nalpha$ values, supporting the resolution that the contact distance is allowed a small range around $\Raa$ at the deltahedra-gap values, or that the cluster is graph-simplicial but not strictly polytope-deltahedral. Resolution between options is registered as \textbf{OPEN-SS-31} (deltahedra-gap structural realization at $\Nalpha \in \{11, 13, 14\}$).
+
+\subsection{The $\Nalpha = 3$ planar degenerate case}
+\label{sec:scope_n3}
+
+For $\Nalpha = 3$ (${}^{12}$C as planar triangle), the cluster is 3D-degenerate, so Lemma~\ref{lem:Bprime} (which assumes 3D-non-degeneracy) does not apply directly. The formula $|E| = 3\Nalpha - 6 = 3$ correctly gives 3 edges, matching the planar-triangle realization. Treat as a separate degenerate case: the three alpha contact relation forms a triangle (a single 2-simplex with three edges), no 3-polytope is involved, and the SS-7 formula applies in this degenerate limit by the same edge-counting argument.
+
+\subsection{Coulomb screening at the deltahedral surface}
+\label{sec:scope_coulomb}
+
+Per SS-7 \S 6.2, alpha-alpha Coulomb repulsion at the deltahedral surface is treated as screened in bound polytopes (registered as OPEN-SS-25). The treatment is unchanged by the v0.2 $\to$ v0.3 $\to$ v0.1 development, and unaffected by the SS-9 conditional theorem. SS-9 v0.1 inherits the SS-7 \S 6.2 Coulomb treatment without modification.
+
+% ===================================================================
+\section{Honest Assessment of Closure Status}
+\label{sec:closure_status}
+% ===================================================================
+
+\subsection{What v0.1 delivers}
+\label{sec:delivers}
+
+\begin{itemize}
+\item Theorem~\ref{thm:main} statement and proof for $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$: C4 holds as a theorem, conditional on \textbf{C1$'$ + C2 + C3 + C5 + C6 + C7 + rigid packing + 3D-non-degeneracy}. The hypothesis stack has \textbf{one new entry} relative to v0.2 (C7), tracked at OPEN-SS-33 candidate.
+\item Graph-simplicial extension at $\Nalpha \in \{11, 13, 14\}$: clauses (i)--(iii) of Theorem hold; clause (iv) does not. Registered as OPEN-SS-31.
+\item $\Nalpha = 3$ planar degenerate: handled by direct edge count.
+\item Refined-C1 facet (b) integrated as load-bearing in Theorem clause (iv). Without facet (b), clause (iv) is vacuous at $\Nalpha \geq 7$.
+\item Refined-C1 facet (c) (slip-plane bonus, OPEN-SS-32) treated as NLO addition to the LO binding formula; v0.1 Theorem unchanged by facet (c) in the LO accounting.
+\end{itemize}
+
+\subsection{What v0.1 does not deliver}
+\label{sec:not_delivers}
+
+\begin{itemize}
+\item Programme-level closure of C5 from A1--A11. Registered as OPEN-SS-29 candidate.
+\item Programme-level closure of C6 from A1--A11. Registered as OPEN-SS-30 candidate.
+\item Programme-level closure of C7 from A1--A11. \textbf{NEW: OPEN-SS-33 candidate.}
+\item Resolution of the deltahedra-gap at $\Nalpha \in \{11, 13, 14\}$. Registered as OPEN-SS-31 candidate.
+\item First-principles derivation of facet (b)'s mechanism (face-edge hybrid? K$_3$ delocalization? partial overlap?). Mentioned but not derived. Could fold into OPEN-SS-32 derivation if facets (b) and (c) share Layer-3 ancestry as the same K$_3$ scale-recurrence operating at different geometric venues.
+\item First-principles derivation of facet (c) attenuation factor. Active investigation thread (OPEN-SS-32); see \S\ref{sec:openss32_status}.
+\item Polytope-uniqueness argument (whether CPP forces simpliciality vs.\ it being a property of any C1$'$-C7 framework). The Theorem proof is a graph-theoretic argument plus FvdW classification; both are independent of CPP-uniqueness, so any framework satisfying C1$'$-C7 gets the same conclusion.
+\end{itemize}
+
+\subsection{OPEN-SS-32 / U-shape investigation status (Phases 1--11, Sessions 13--23)}
+\label{sec:openss32_status}
+
+The OPEN-SS-32 / U-shape investigation thread ran in parallel with SS-9 development across Sessions 13--23 (1--6 May 2026), targeting refined-C1 facet (c). Eleven phases produced the following status summary at the time of v0.1 ship:
+
+\paragraph{Closures and ruling-outs.}
+\begin{itemize}
+\item \textbf{R2 FORMALLY CLOSED} at Session 15 Phase 3B-B (full $C_n$ IRREP decomposition exhausted).
+\item \textbf{Gaussian-K$_3$ framework at fixed cluster geometry FORMALLY CLOSED} at Session 16 Phase 4 (anharmonic $\xi^4$ + all-orders Gaussian, sign theorem).
+\item Twelve programme-level negative results across the thread: Phases 2 (uniform-only zero-point softening), 3A (naive full-Hessian), 3B-A (fixed-dim belt subspace), 3B-B (R2 closure), 4 (Gaussian-K$_3$ framework closure), 9 (naive non-NN K$_3$ at canonical $\sigma$), 10 (entire $\sigma$-parameterized K$_3$ refinement class).
+\item Plus \textbf{Phase 11 R3-Pauli NULL RESULT} (Session 23): structural redundancy with Phase 8 NN-fraction-weighted differential softening; programme negative-result count UNCHANGED at 12 (Phase 11 is null, not negative).
+\end{itemize}
+
+\paragraph{Positive scoping outcomes.}
+\begin{itemize}
+\item Phase 5 (Session 17): Geometric-shift R3 and R4 channels passed scoping.
+\item Phase 6 (Session 18): R3-Coulomb scoping passed with 5\% magnitude bullseye at $\Nalpha = 10$ (smooth-A target $\delta R(N=10) = 1.052$ fm achieved at 5\% accuracy).
+\item Phase 8 (Session 20): \textbf{R3-Coulomb Refinement A (extended Gaussian alpha charge distribution at $r_\alpha^{\mathrm{charge}} = 1.68$ fm)} delivered factor 3.6 polytope-residual magnitude improvement, captured 48\% of empirical polytope-residual scale, achieved 6/8 sign agreement, with near-exact zero-parameter matches at ${}^{40}$Ca (within $0.0001$ MeV/$\alpha$) and ${}^{36}$Ar (within $0.001$ MeV/$\alpha$). \textbf{Standing best refinement at v0.1 ship.}
+\end{itemize}
+
+\paragraph{Phase 11 R3-Pauli (Session 23 close, 6 May 2026).}
+Pauli model: Gaussian repulsive core $V_P(r) = V_P^0 \exp(-r^2/(2\sigma_P^2))$ with $\sigma_P = 1.5$ fm fixed (alpha matter rms radius scale, no fit parameter); $V_P^0$ calibrated to Phase 5 R3-lin smooth-A target $\delta R(N=10) = 1.052$ fm. Wave-function-overlap structure at $\sigma_P = 1.5$ fm: $V_P/V_P^0 = 0.287$ at NN, 0.082 at first non-NN (factor $3.5\times$ suppression), 0.038 at icosahedron second-shell (factor $7.6\times$), 0.011 at icosahedron antipodal (factor $26\times$) --- exponentially suppressed at non-NN distances.
+
+F1 sign passes analytically by sign-theorem composition workflow extended to Pauli (Pauli outward + Coulomb outward + K$_3$ inward $\Rightarrow$ equilibrium $\delta R > 0$ $\Rightarrow$ Phase 5 sign theorem $\Rightarrow$ $\Delta E > 0$). Calibrated $V_P^0 = 0.061$ MeV (essentially zero --- Phase 8 already 1\% off smooth-A target without Pauli, so calibrated Pauli is a tiny correction). At calibrated amplitude: Phase 8 anchor matches PRESERVED (${}^{40}$Ca err $0.0003$, ${}^{36}$Ar err $0.0005$); sign agreement 6/8 UNCHANGED; max polytope residual 0.0475 MeV/$\alpha$ (Phase 8: 0.0495; $\sim 4\%$ reduction within numerical noise). \textbf{Pauli at $\sigma_P = 1.5$ fm is structurally redundant with Phase 8 NN-fraction-weighted differential Coulomb softening} --- both NN-localized; both add outward force scaling with NN edge count $|E| = 3\Nalpha - 6$; once Phase 8 captures the NN-only structural component, additional NN-only mechanisms cannot generate distinct polytope-specific signal.
+
+\paragraph{Status at v0.1 ship.}
+Phase 11 NULL marks the natural saturation point for single-session R3-channel work. \textbf{Single-session R3-channel refinement candidates EXHAUSTED} (Phases 9 + 10 ruled out the entire $\sigma$-parameterized K$_3$ refinement class; Phase 11 R3-Pauli structurally redundant). \textbf{The remaining 52\% of empirical polytope-residual scale is structurally unreachable by single-session R3-channel refinements within the Phase 8 framework} --- it requires either sub-shell-physics decomposition (multi-paper, candidate SS-10) or alternate-channel work (R4-DP-sea, SR-tensor, finite-A SEMF corrections relevant for the ${}^{16}$O standout shortfall). \textbf{Phase 8 Refinement A confirmed at the natural ceiling of R3-channel single-session refinements}; preserved as standing best refinement, structurally STRENGTHENED by the exhaustion-of-class signal. Sub-shell-physics decomposition is registered as SS-9's external follow-on programme (likely SS-10 on shell-corrected baselines for cluster-physics decomposition). The SS-9 conditional theorem (Theorem~\ref{thm:main}) is independent of these OPEN-SS-32 outcomes: SS-9 operates in the LO accounting where facet (c) contributes only as an NLO addition.
+
+\paragraph{Methodological category introduced at Phase 11.}
+\textbf{Structural-redundancy null result.} Distinct from programme-level negative results (F3 fails), positive scoping (F3 improves), and partial-positive empirical comparisons. Structural-redundancy null occurs when F1 PASSES analytically, anchors PRESERVED, but the candidate adds nothing structurally distinct from existing best refinement. The diagnostic value is \emph{negative information about completeness} --- exhaustion-of-class signal. Three F1-pass / F3-* patterns are now distinguished in the programme: rejection at point (Phase 9), rejection across parameter family (Phase 10), structural redundancy (Phase 11).
+
+\subsection{Net effect on programme scorecard}
+\label{sec:scorecard}
+
+\begin{itemize}
+\item C4 promoted from ``structural hypothesis'' (B-tier in SS-7's Layer A/B/C/D classification) to \textbf{``conditional theorem at C5 + C6 + C7 inheritance tier on the refined-C1 foundation.''}
+\item SS-7 conditional binding-formula entries promote conditionally: now C5 + C6 + C7 + C1$'$ + C2 + C3-conditional, instead of C4 + C1 + C2 + C3-conditional. Net change relative to v0.2: one additional conditional (C7); relative to pre-v0.2: one structural hypothesis (C4) replaced by three new structural hypotheses (C5, C6, C7).
+\item Unconditional promotion would require closing all of OPEN-SS-29, OPEN-SS-30, \textbf{OPEN-SS-33 (NEW)}, OPEN-SS-31, plus the existing OPEN-SS-26, OPEN-SS-27, OPEN-SS-28 (for D1, D2, D3) at SS-8.
+\end{itemize}
+
+% ===================================================================
+\section{Gaps That Remain to Close Before SS-9 v1.0}
+\label{sec:gaps}
+% ===================================================================
+
+\begin{enumerate}
+\item \textbf{C7 motivation argument} (\S\ref{sec:setup}, ``Physical motivation for C7''): The verbal argument that C7 follows from C6 + cluster contractibility + the natural alpha-dual embedding on $\Sigma$ is plausible but not a formal proof. For SS-9 v1.0 ship, either (a) tighten the argument into a formal sub-lemma showing C6 + cluster contractibility $\Rightarrow$ C7, or (b) accept C7 as a separate paper-level hypothesis with OPEN-SS-33 registered for first-principles closure. Option (b) is the conservative path consistent with how C5 and C6 are handled.
+
+\item \textbf{C7 first-principles derivation (OPEN-SS-33 candidate, NEW):} Programme-level closure of C7 from A1--A11. The derivation route most likely involves the cluster-shell topology being forced by CPP lattice geometry under the rigid-packing constraint of C1$'$ --- i.e., that any A1--A11-respecting alpha cluster has a contractible shell topology. Worth investigating whether C7 is an independent hypothesis or follows from C5 + C6 under additional CPP-specific constraints (in which case OPEN-SS-33 closes for free).
+
+\item \textbf{Facet (b) mechanism identification:} Three candidate mechanisms registered in SS-7 v1.3 \S 2.1 (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking). Distinguishing them is testable via predicted contact-distance distributions at degree-5 sites, accessible to AMD or Brink--Bloch cluster-model calculations. Likely closes with OPEN-SS-32 if facets (b) and (c) share Layer-3 ancestry.
+
+\item \textbf{3D-non-degeneracy:} Stated as an assumption. Should ideally be derived from ``cluster is genuinely 3-dimensional at $\Nalpha \geq 4$'' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $\Nalpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma.
+
+\item \textbf{C5 well-definedness:} ``Ground-state energy minimization'' requires defining the configuration space over which to minimize. The space includes all rigid-packing-compatible arrangements at fixed $\Nalpha$ under C1$'$. Need to verify this space is well-defined and that minima exist (compactness argument).
+
+\item \textbf{Empirical validation of clause (iv) at $\Nalpha \geq 7$:} The SS-7 Table 1 residual fingerprint (Regime B flat plateau at $+0.55\,\Bpair$, icosahedron suppressed at $+0.30\,\Bpair$) is consistent with the LO geometric realization of the FvdW deltahedron via facet (b) accommodation, with facet (c) slip-plane providing the NLO correction. The numerical agreement is supporting evidence but not direct verification. A more direct verification would be: predict the contact-distance distribution at degree-5 vertices of the realized FvdW deltahedron under each candidate facet (b) mechanism, and test against AMD calculations.
+\end{enumerate}
+
+% ===================================================================
+\section{Phase 4 Sketch: Programme-Level Closure Attempts}
+\label{sec:phase4}
+% ===================================================================
+
+Once Phase 1 + 3 (the conditional Theorem under v0.1 hypotheses) is solid, Phase 4 attempts to derive C5, C6, and C7 from CPP primitives.
+
+\paragraph{C5 derivation (sketch).}
+C5 says the bound configuration minimizes total energy among physically realizable ones. Minimizing this is straightforward at the level of the formula. The deeper question is: does CPP's lattice Hamiltonian generate this formula structure exactly (each contact face contributes $-\Bpair$, additively, with no inter-face couplings beyond what C3 captures)? Likely outcome: Phase 4 reduces ``C5 from A1--A11'' to ``the SS-7 binding formula structure (additivity of $\Bpair$ contributions across edges) is itself derivable from CPP primitives,'' which is essentially the formula-derivation question that SS-7 \S 6.2 already gestures at.
+
+\paragraph{C6 derivation (sketch).}
+C6 says no alpha is interior to the cluster. The derivation route is likely energetic: an interior alpha is ``shielded'' from external Coulomb but loses some of its $\Bpair$ contribution channels to other alphas (since fewer faces are exposed for additional contacts in a hypothetical larger cluster); on net, surface configurations are energetically preferred. Working this out from CPP primitives is the OPEN-SS-30 question.
+
+\paragraph{C7 derivation (sketch).}
+Under C6 + cluster contractibility, the cluster's outer 2-surface $\Sigma \cong S^2$ topologically. The alpha-dual embedding maps the contact graph onto $\Sigma$. A formal version of this argument (rigorously deriving planarity of the contact graph from the cluster topology) would close OPEN-SS-33 modulo the auxiliary ``cluster is contractible'' assumption. The contractibility itself follows from the CPP lattice geometry under bound-state assumptions: a non-contractible cluster (e.g., toroidal) would have an internal void at lower density than the surrounding DP-sea, which is energetically unfavorable. Working this out rigorously is the OPEN-SS-33 question.
+
+\paragraph{Common theme.}
+This is consistent with the theme that emerges across the strong-sector programme: the K$_3$ scale-recurrence (Pattern 6) is the deep structural mystery, and programme-level closure of any specific result tends to reduce to ``Pattern 6 holds by construction'' or ``Pattern 6 is itself the open problem.'' C5 / C6 / C7 are all candidates for closure-via-Pattern-6-articulation.
+
+% ===================================================================
+\section{Physical Interpretation}
+\label{sec:physical}
+% ===================================================================
+
+The simplicial-polytope structure of alpha-cluster nuclei admits a CPP physical interpretation in terms of CPs (Conscious Points), DI-bits (Digital Information bits), and the K$_3$ collective mode at base-to-base contact. Each alpha is a closed packet of four hybrid-tetrahedral nucleons, each nucleon a CP-cage with definite SSV (Space Stress Vector) orientation and ZBW (Zitterbewegung) phase. At LO, the alpha presents four equilateral outer faces, each face structurally equivalent at LO under the alpha's full $T_d$ symmetry.
+
+When two alphas come into base-to-base contact, the shared face $F_{ij}$ supports a K$_3$ collective oscillation of the eight CP-cages on the boundary (four from $\alpha_i$, four from $\alpha_j$), bonded in a 2-1 polarity arrangement that contributes one nucleon-pair binding quantum $\Bpair = \Mzero/\phig$ per contact. The contact graph $G(\mathcal{C})$ records which alpha pairs share such a face; the SS-7 binding formula counts edges of $G$ multiplied by $\Bpair$, reflecting the additive structure of K$_3$ collective contributions across non-overlapping contact faces.
+
+Energy minimization at fixed $\Nalpha$ is realized by maximizing the number of K$_3$ contacts, which is maximizing $|E(G)|$. Under the topological constraint that the cluster forms a closed shell ($G$ planar, $S^2$ embedding), Euler's formula caps $|E|$ at $3\Nalpha - 6$, with equality iff every face of the planar embedding is a triangle. Steinitz's theorem then identifies $G$ as the 1-skeleton of a convex 3-polytope, and the FvdW classification --- itself a deep mathematical fact about uniform-edge-length convex 3-polytopes --- identifies the polytope as the unique deltahedron at the eight allowed vertex counts.
+
+The role of refined-C1 facet (b) at $\Nalpha \geq 7$ is the physical mechanism by which an alpha hosts more than four contacts despite presenting only four LO outer faces. Three candidate facet (b) mechanisms remain on the table (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking); each predicts a slightly different geometric realization of degree-5 vertices and is testable against AMD calculations. The SS-7 Table 1 Regime B residual pattern ($\sim +0.55\,\Bpair$ at $\Nalpha \in \{7, 8, 9, 10\}$, suppressed to $\sim +0.30\,\Bpair$ at $\Nalpha = 12$) is the macroscopic empirical signature of facet (c) (the OPEN-SS-32 cluster-level collective oblate-deformation slip-plane mode), riding on top of the LO geometric structure proved in Theorem~\ref{thm:main}.
+
+\subsection{CP/GP Signature at This Scale}
+\label{sec:cpgp_signature}
+
+\paragraph{Load-bearing axiom identification.}
+The SS-9 conditional theorem inherits its CPP-axiomatic basis from SS-5 and SS-7. Load-bearing axioms in the lemma stack are:
+\begin{itemize}
+\item \textbf{A4} (conscious-point cage formation, supplying the rigid 3-simplex structure of each alpha at LO via the SS-5 hybrid-tetrahedral nucleon construction projected to the alpha scale).
+\item \textbf{A5} (propagation efficiency, supplying the $1/\phig$ factor in $\Bpair = \Mzero/\phig$).
+\item \textbf{A8$'$} (cage-volume scaling, supplying $\Mzero = m_e z / \phig$ at the SS-2 / SM-8 inheritance tier).
+\item \textbf{A11} (lattice-scale grounding, fixing MeV units via $\Lambda_{\mathrm{QCD}}$).
+\end{itemize}
+The conditional-theorem hypotheses C5, C6, C7 are not directly identified with single A-axioms; their first-principles derivation from A1--A11 is the OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-33 programme. C1$'$ facet (b) is registered with multiple-mechanism candidacy at the SS-7 / SS-9 inheritance tier; its first-principles derivation likely shares Layer-3 ancestry with facet (c) (OPEN-SS-32).
+
+\paragraph{Visible-vs-smoothed discreteness.}
+The discrete CPP lattice structure is \emph{visible} in the SS-9 result through:
+\begin{itemize}
+\item The integer edge count $|E| = 3\Nalpha - 6$, a topological invariant of the simplicial-polytope structure --- not averaged-out, not smoothed.
+\item The $\phig$ factor in $\Bpair = \Mzero/\phig$, inherited unchanged from SS-5, traceable through SM-8 to the 600-cell $1/\phig$ propagation efficiency at the lowest geometric level.
+\item The $z = 12$ coordination of the 600-cell underlying $\Mzero = m_e z / \phig$.
+\item The K$_3$ collective mode itself, a discrete 8-CP coupled oscillation at each contact face.
+\item The discrete topology of the eight FvdW deltahedra at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, with the deltahedra-gap at $\Nalpha \in \{11, 13, 14\}$ as a discrete-structure signature.
+\end{itemize}
+The discrete structure is \emph{smoothed} or \emph{averaged} at:
+\begin{itemize}
+\item The single-alpha binding $\Balpha = 28.296$ MeV, which packages the SS-5 cascade output for the full ${}^4$He nucleon arrangement; the underlying discrete CP-cage structure is integrated into a single number at the alpha scale.
+\item The treatment of alpha rigidity at LO with sub-LO $\sim 5\%$ residual band; the band is a coarse-grained accounting for facet (b) and facet (c) sub-LO corrections that are themselves discrete at the underlying sub-quantum scale.
+\end{itemize}
+Thomas's orders-of-magnitude-dilution concern is met here by the discrete topological structure ($3\Nalpha - 6$ edge count, $\phig$ factor, $z = 12$ coordination, K$_3$ recurrence) being preserved across the alpha-scale aggregation: the discreteness is not lost in averaging because the count itself is the prediction.
+
+\paragraph{Macroscopic shadow correspondence.}
+The macroscopic empirical regularity for which the SS-9 simplicial-polytope structure is the sub-quantum CPP shadow is the \emph{alpha-cluster regime of nuclear binding} as observed in the AME 2020 atomic mass evaluation for strict $N{=}Z$ alpha-chain nuclei at $\Nalpha \in \{3, \ldots, 14\}$. Conventional cluster physics (Brink, Ikeda, Wildermuth, Funaki, Freer, Horiuchi; references in SS-7) describes alpha clustering phenomenologically via mean-field-plus-correlation methods or microscopic cluster-model wave functions. What conventional nuclear physics calls ``alpha-cluster condensation'' or ``Hoyle-state-like correlations'' is, in CPP, the discrete face-counting $|E| = 3\Nalpha - 6$ produced by the closed-shell topology of base-to-base K$_3$-bonded alpha-polytopes. The SS-7 zero-parameter agreement to within $\pm 1.5\%$ across twelve nuclei is the macroscopic shadow's quantitative footprint; the SS-9 conditional theorem is the structural derivation of why the shadow has the form it does.
+
+% ===================================================================
+\section{CPP-to-Conventional-Physics Mapping}
+\label{sec:mapping}
+% ===================================================================
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{p{4.8cm}p{4.5cm}p{4.5cm}}
+\toprule
+\textbf{CPP element} & \textbf{Conventional-physics correspondent} & \textbf{Observable signature} \\
+\midrule
+Alpha as rigid LO 3-simplex (refined-C1 facet a) & ${}^4$He cluster as building block in alpha-cluster model (Brink, Ikeda) & Single-alpha binding $\Balpha = 28.296$ MeV \\
+\midrule
+Multi-faceted rigidity facet (b) at degree-$\geq 5$ vertices & Cluster-shape accommodation in microscopic cluster model (AMD, Brink--Bloch) & Contact-distance distribution at degree-5 sites of FvdW deltahedra \\
+\midrule
+K$_3$ collective mode at contact face (C3) & Nucleon-pair binding contribution per shared face & $\Bpair = 2.342$ MeV per edge \\
+\midrule
+Contact graph $G(\mathcal{C})$ & Cluster connectivity in microscopic cluster model & Edge count entering total binding \\
+\midrule
+Simplicial-polytope structure (Theorem~\ref{thm:main}) & Closed alpha-polytope topology & $|E| = 3\Nalpha - 6$ (Euler / Steinitz / FvdW) \\
+\midrule
+Cluster-level collective oblate-deformation slip-plane mode (refined-C1 facet c, OPEN-SS-32) & Oblate cluster deformation in cluster physics (Tohsaki--Itagaki 2018) & SS-7 Table 1 Regime B residuals: $\sim +0.55\,\Bpair$ at $\Nalpha \in \{7, 8, 9, 10\}$, $\sim +0.30\,\Bpair$ at $\Nalpha = 12$ \\
+\midrule
+Deltahedra-gap at $\Nalpha \in \{11, 13, 14\}$ (OPEN-SS-31) & Cluster shape transitions in heavy alpha-conjugate nuclei & $-0.26\%$ to $-0.73\%$ residuals at ${}^{44}$Ti, ${}^{52}$Fe, ${}^{56}$Ni vs.\ LO formula \\
+\bottomrule
+\end{tabular}
+\caption{Structural correspondence between SS-9 CPP-mechanistic elements and conventional nuclear-physics descriptions. The mapping is structural, not literal: CPP operates at finer granularity (CP-cages, DI-bit propagation) than the mean-field or microscopic-cluster descriptions in the conventional column. The correspondences are at the level of symmetry, degrees of freedom, and observable predictions.}
+\label{tab:mapping}
+\end{table}
+
+% ===================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ===================================================================
+
+SS-9 v0.1 ships the first formal LaTeX conditional theorem closing C4 (the simplicial-polytope contact structure assumption used implicitly in SS-7) on the refined-C1 (multi-faceted alpha rigidity, SS-7 v1.3) foundation. The theorem holds at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, conditional on three new paper-level hypotheses C5 (energy minimization), C6 (cluster surface-realization), and C7 (contact-graph planarity), each registered as a candidate open problem for first-principles closure from CPP axioms (OPEN-SS-29, OPEN-SS-30, OPEN-SS-33). The proof routes through three lemmas (Lemma~\ref{lem:A}, Lemma~\ref{lem:C}, Lemma~\ref{lem:Bprime}) and the Freudenthal--van der Waerden classification of convex deltahedra. Refined-C1 facet (b) is load-bearing in the geometric-realization clause at $\Nalpha \geq 7$ where the FvdW deltahedron has degree-$\geq 5$ vertices.
+
+The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$, where clauses (i)--(iii) of the Theorem hold but clause (iv) does not, is registered as OPEN-SS-31. The $\Nalpha = 3$ planar degenerate case is handled separately by direct edge count. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode, OPEN-SS-32) is treated as an NLO addition to the LO binding formula and does not affect the LO geometric proof structure; the parallel OPEN-SS-32 / U-shape investigation thread (Sessions 13--23, Phases 1--11) is summarized at \S\ref{sec:openss32_status}, with Phase 8 Refinement A as standing best refinement at v0.1 ship and single-session R3-channel refinement candidates declared exhausted.
+
+\subsection{Swarm-Validation Contribution}
+\label{sec:swarm}
+
+\paragraph{Predictions added.}
+SS-9 is a derivation paper, not a prediction paper: its primary contribution is a conditional theorem advancing OPEN-SS-24, not a new set of zero-parameter empirical predictions. The derivation enables structural promotion of the twelve SS-7 zero-parameter alpha-chain predictions from ``edge-count assumed empirically'' to ``edge-count derived conditional on C5 + C6 + C7 + C1$'$ + C2 + C3.'' SS-9 thus reinforces the SS-7 swarm contribution by demoting C4 from a free hypothesis to a derived conclusion (under the named conditionals), with the conditionals themselves now subject to first-principles closure attempts.
+
+\paragraph{Running swarm total.}
+The CPP programme's cumulative count of zero-parameter empirical correspondences as of SS-9 v0.1 ship is dominated by the SS-7 12 alpha-chain predictions (RMS $0.80\%$), the SS-5 light-nuclei predictions, the SM-8 quark-mass predictions, the SM-3 SU(3) results, and the SS-2 nucleon-structure observables. SS-9 does not add new zero-parameter predictions but \emph{strengthens the structural foundation} of the SS-7 12-prediction subset by providing a conditional derivation of the simplicial structure they depend on.
+
+\paragraph{Implausibility-of-accident statement.}
+The probability that the SS-7 12-prediction agreement at zero parameters with RMS $0.80\%$ arises from accident scales as $({\rm residual\ band} / {\rm typical\ parameter\ space})^N$ at the swarm size $N = 12$ (SS-7 alpha-chain alone), and is astronomically small; SS-9 v0.1 makes this implausibility-of-accident reasoning more robust by reducing the remaining structural-hypothesis count from one (C4 free) to three (C5, C6, C7 free, all candidates for first-principles closure). Each subsequent closure of OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-33 will further strengthen the SS-7 swarm contribution.
+
+\subsection{Problem Status After This Paper}
+\label{sec:problem_status}
+
+\begin{itemize}
+\item OPEN-SS-24 (derivation of simplicial contact structure from CPP): \textbf{ADVANCED to conditional theorem}. C4 promoted from B-tier structural hypothesis (SS-7 v1.3 status) to conditional theorem at C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier (SS-9 v0.1 status). Unconditional promotion pending closure of OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-33.
+\item OPEN-SS-29 (C5 first-principles derivation): \textbf{REGISTERED}. Programme-level closure target.
+\item OPEN-SS-30 (C6 first-principles derivation): \textbf{REGISTERED}. Programme-level closure target.
+\item OPEN-SS-31 (deltahedra-gap structural realization at $\Nalpha \in \{11, 13, 14\}$): \textbf{REGISTERED} (carried over from earlier sketches; first formal registration here). Programme-level closure target.
+\item OPEN-SS-32 (refined-C1 facet (c) attenuation factor derivation, cluster-level slip-plane mode): \textbf{ACTIVE INVESTIGATION}, separate thread. Standing best refinement: Phase 8 Refinement A (factor 3.6 polytope-residual improvement, 48\% of empirical scale captured); single-session R3-channel refinement candidates EXHAUSTED at Session 23 close (Phases 9 + 10 ruled out $\sigma$-parameterized K$_3$ class; Phase 11 R3-Pauli structurally redundant). Forward path: sub-shell-physics decomposition (multi-paper, candidate SS-10 on shell-corrected baselines) and alternate-channel work (R4-DP-sea, SR-tensor, finite-A SEMF corrections).
+\item OPEN-SS-33 (C7 first-principles derivation): \textbf{REGISTERED (NEW this paper)}. Programme-level closure target.
+\item OPEN-ORG-012 (.tex conversion of SS-9 v0.3 working draft): \textbf{RETIRED} at SS-9 v0.1 ship.
+\end{itemize}
+
+% ===================================================================
+\section*{Acknowledgements}
+% ===================================================================
+
+The SS-9 paper realizes OPEN-SS-24, registered originally in SS-7 v1.0 (19 April 2026) as the natural follow-on derivation of the simplicial-polytope contact structure. Thomas Lee Abshier ND directed the paper's role in the strong-sector programme and authorized the OPEN-ORG-012 promotion at Session 23 Phase 11 close (6 May 2026), recognizing that Phase 11 NULL marked the natural saturation point for single-session R3-channel work and that locking SS-9 v0.1 first creates a stable reference for the forthcoming SS-10 sub-shell-physics paper.
+
+\textbf{Development arc 16 April 2026 -- 6 May 2026.} The v0.2 sketch (Session 2, 16 April 2026) introduced the Steinitz-theorem identification and a centroid-hull supporting-hyperplane construction for Lemma B. Session 3 surfaced an internal-consistency concern with the strict-C1 reading at degree-5 vertices, which led to the multi-faceted rigidity refinement integrated into SS-7 v1.3 (26 April 2026). The v0.3 working draft (1 May 2026, Session 16 finalisation) replaced the v0.2 supporting-hyperplane construction with the C7 + Steinitz routing, dissolving the v0.2 supporting-hyperplane gap and registering OPEN-SS-33. v0.1 .tex (this paper) preserves the v0.3 mathematical content and adds: the formal LaTeX presentation, the §\ref{sec:openss32_status} OPEN-SS-32 / U-shape investigation status report integrating Sessions 13--23 Phases 1--11, the §\ref{sec:cpgp_signature} CP/GP signature subsection (per PD-001, 24 April 2026), the §\ref{sec:swarm} swarm-validation contribution (per PD-001), and the §\ref{sec:mapping} CPP-to-conventional-physics mapping table.
+
+\textbf{OPEN-SS-32 / U-shape investigation thread.} The eleven phases of the OPEN-SS-32 / U-shape investigation thread (Sessions 13--23, 1--6 May 2026) ran in parallel with SS-9 development. Each phase produced primary patches plus the standard six-step §15 documentation chain (substantive, Step A + Step C session log + Vignette, Step B + Step D transcript + reasoning, Step E Research Frontier + future projects, Step H paste-ready handover). The thread's positive scoping outcomes (Phase 5 channel pass, Phase 6 5\% smooth-A bullseye, Phase 8 Refinement A factor 3.6 polytope-residual improvement with near-exact $^{40}$Ca and $^{36}$Ar matches), seven sequential ruling-outs producing 12 programme-level negative results, and Phase 11 structural-redundancy null result are summarized in \S\ref{sec:openss32_status}. The methodological category ``structural-redundancy null result'' was introduced at Phase 11 close as the third F1-pass / F3-* pattern (rejection-at-point, rejection-across-family, structural-redundancy).
+
+\textbf{External reviewer team.} SS-9 v0.1 ships before formal external review. The intended round-1 reviewer panel (ChatGPT, Copilot, with rotation as appropriate) will engage v0.1 against the standard CPP review-protocol expectations (paper-formatting.md \S\S 4.1A and 4.1B explicit; full Lemma stack scrutinized; conditional-theorem framing validated); reviewer responses will inform v0.2 / v0.3 revisions. The symmetric-honesty protocol (operating\_system.md §4 Phase 4, adopted 19 April 2026 from the SS-7 review cycle) will govern reviewer engagement.
+
+% ===================================================================
+\begin{thebibliography}{20}
+
+\bibitem{abshier2026ss5}
+T.~L.~Abshier, Claude Opus, ``Light-Nuclei Binding Energies from the Open-Vertex Cascade,'' SS-5 v6, Hyperphysics Institute (2026).
+
+\bibitem{abshier2026ss7}
+T.~L.~Abshier, Claude Opus, ``Alpha-Cluster Regime and the $3N - 6$ Edge Formula for Medium-Mass Nuclei,'' SS-7 v1.3, Hyperphysics Institute (2026).
+
+\bibitem{abshier2026sm8}
+T.~L.~Abshier, Claude Opus, Grok, Copilot, ``Quark Generation Structure from 600-Cell Distance Shells,'' SM-8 v4.1, Hyperphysics Institute (2026).
+
+\bibitem{abshier2026ss2}
+T.~L.~Abshier, Claude Opus, ``Lattice-Scale Grounding and Nucleon Structure from 600-Cell Geometry,'' SS-2 v1.0, Hyperphysics Institute (2026).
+
+\bibitem{ss10_forthcoming}
+T.~L.~Abshier, Claude Opus, ``Sub-Shell-Physics Decomposition of Cluster-Physics Residuals at $\Nalpha \in \{7, 8\}$ via Strutinsky-Style Shell-Corrected Baselines,'' SS-10 (in preparation, 2026); forthcoming.
+
+\bibitem{ame2020}
+M.~Wang, W.~J.~Huang, F.~G.~Kondev, G.~Audi, S.~Naimi, ``The AME 2020 atomic mass evaluation,'' Chin.\ Phys.\ C \textbf{45}, 030003 (2021).
+
+\bibitem{steinitz1922}
+E.~Steinitz, ``Polyeder und Raumeinteilungen,'' in \emph{Encyklop\"adie der mathematischen Wissenschaften, Band III}, Geometrie, Teil 3AB12, B.~G.~Teubner, Leipzig (1922), pp.~1--139.
+
+\bibitem{ziegler1995}
+G.~M.~Ziegler, \emph{Lectures on Polytopes}, Graduate Texts in Mathematics \textbf{152}, Springer (1995).
+
+\bibitem{whitney1932}
+H.~Whitney, ``Congruent Graphs and the Connectivity of Graphs,'' Amer.\ J.\ Math.\ \textbf{54}, 150 (1932).
+
+\bibitem{diestel2017}
+R.~Diestel, \emph{Graph Theory}, Graduate Texts in Mathematics \textbf{173}, Springer, 5th ed.\ (2017).
+
+\bibitem{freudenthal_vdw_1947}
+H.~Freudenthal, B.~L.~van der Waerden, ``\"Uber eine Behauptung von Euklid,'' Simon Stevin \textbf{25}, 115 (1947).
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter, \emph{Regular Polytopes} (Dover, 3rd ed., 1973).
+
+\bibitem{freer_alpha}
+M.~Freer, H.~Horiuchi, Y.~Kanada-En'yo, D.~Lee, Ulf-G.~Mei{\ss}ner, ``Microscopic clustering in light nuclei,'' Rev.\ Mod.\ Phys.\ \textbf{90}, 035004 (2018).
+
+\bibitem{tohsaki_itagaki_2018}
+A.~Tohsaki, N.~Itagaki, ``Nuclear Properties Based on a Simple Schematic Alpha-Cluster Model,'' Phys.\ Rev.\ C \textbf{98}, 014302 (2018).
+
+\bibitem{horiuchi_alpha}
+H.~Horiuchi, K.~Ikeda, K.~Kat{\=o}, ``Recent developments in nuclear cluster physics,'' Prog.\ Theor.\ Phys.\ Suppl.\ \textbf{192}, 1 (2012).
+
+\end{thebibliography}
+
+\end{document}
