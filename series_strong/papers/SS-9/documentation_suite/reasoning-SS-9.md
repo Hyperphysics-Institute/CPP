@@ -4884,3 +4884,167 @@ Do NOT propose any single-session R3-channel refinement to close the remaining 5
 - SS-9 at **v0.3** (was v0.2 at Session 25 close).
 - v1.0 polish track: sub-tasks (a) and (b) DONE; sub-tasks (c)/(d)/(e) pending.
 - §9 v0.1 6-gap list now reduced to 4 remaining gaps (Gaps 4 and 5 closed at v0.3 and v0.2 respectively).
+
+---
+
+## Session 27 v1.0 Polish Sub-Task (c) — Tier 4 Verbatim Reasoning (6 May 2026)
+
+### Context inheritance from Sessions 25–26 close
+
+Session 25 closed sub-task (a) with Sub-Lemma 2.1 (C7 conditional derivation), advancing OPEN-SS-33 from raw open to conditionally closed modulo (H4) + (H5). Session 26 closed sub-task (b) with Sub-Lemma 2.2 (3D-non-degeneracy from maximum-edge selection), closing §9 Gap 4 unconditionally. Session 27 starts with sub-task (c): C5 well-definedness via compactness — the third and final formal sub-lemma in the v1.0 polish track.
+
+### Why sub-task (c) is qualitatively different from sub-tasks (a) and (b)
+
+Sub-tasks (a) and (b) closed gaps in the **derivation** of properties that are USED in the conditional theorem (C7's planarity is used in Lemma B$'$; 3D-non-degeneracy is used in the Theorem statement). Sub-task (c) is different: it closes a gap in the **statement** of C5 itself — specifically, it ensures that "the ground state minimizes energy" is a meaningful claim (i.e., a ground state exists).
+
+This is a **precondition on C5's coherence**, not a derivation of C5 from earlier hypotheses. Programme-level OPEN-SS-29 (deriving C5 from A1–A11) is untouched by this sub-lemma; what is closed is the internal precondition that C5's claim requires existence of the optimum it asserts.
+
+### Configuration space construction
+
+The configuration space is defined as a quotient:
+\[
+\mathrm{Conf}(\Nalpha) = \big\{(c_1, R_1, \ldots, c_{\Nalpha}, R_{\Nalpha}) \in (\mathbb{R}^3 \times \mathrm{SO}(3))^{\Nalpha} : \text{rigid packing}; |E| \geq \Nalpha - 1\big\} / \mathrm{SE}(3).
+\]
+
+Each alpha is specified by (centroid, orientation) $\in \mathbb{R}^3 \times \mathrm{SO}(3)$ — 6 parameters per alpha. Total before quotient: $6\Nalpha$ parameters. After $\mathrm{SE}(3) = \mathbb{R}^3 \rtimes \mathrm{SO}(3)$ quotient (6-parameter rigid motion group): $6\Nalpha - 6 = 6(\Nalpha - 1)$ parameters in the reduced configuration space.
+
+The two physical-realizability conditions are:
+1. **Rigid packing** (no alpha-alpha interpenetration). Closed condition: $\{(c_i, R_i)_i : \exists i \neq j \text{ with } \mathrm{int}(\alpha_i) \cap \mathrm{int}(\alpha_j) \neq \emptyset\}$ is open (interpenetration is an open condition); its complement (rigid packing) is closed.
+2. **$G$-connectedness** ($|E| \geq \Nalpha - 1$). NOT a closed condition: $|E|$ is upper-semi-continuous, so $\{|E| \geq \Nalpha - 1\}$ is the pre-image of $[\Nalpha - 1, \infty)$ under a USC function, which is generally **not closed** (USC means $\{|E| \geq c\}$ is **closed**! — wait let me reconsider).
+
+For $f$ USC: $\{f \geq c\}$ is closed (this is the level-set definition of USC). So actually $\{|E| \geq \Nalpha - 1\}$ IS closed.
+
+Combined: the configuration space is the intersection of two closed conditions in the compact ambient quotient, hence closed. Closed subset of compact space is compact. ✓
+
+### Upper-semi-continuity of $|E|$ in detail
+
+Define the **face-coincidence subvariety** for ordered pair $(i, j)$ with $i < j$ and face indices $a, b \in \{1, 2, 3, 4\}$:
+\[
+F_{ij}^{ab} = \big\{(c_k, R_k)_k : \text{face $a$ of } \alpha_i \text{ coincides with face $b$ of } \alpha_j\big\}.
+\]
+
+Face-coincidence is a finite system of polynomial equality constraints:
+- Parallel face normals: $R_i \hat{n}^{(a)} = -R_j \hat{n}^{(b)}$ (3 equations from comparing 3-vectors).
+- Centroid distance: $|c_j - c_i| = \Raa$ (1 equation).
+- Centroid alignment with normal: $c_j - c_i = \Raa R_i \hat{n}^{(a)}$ (3 equations, redundant with the above 4 except for orientation along the normal).
+- In-face vertex correspondence: each of the 3 vertices of face $a$ of $\alpha_i$ at LO maps to a vertex of face $b$ of $\alpha_j$ via reflection through the centroid of the shared face — this is a discrete index choice (3 rotations of the matching) plus implied by the normal-and-distance constraints under LO regularity.
+
+Net: $F_{ij}^{ab}$ is a closed algebraic subvariety of the configuration space.
+
+The **contact pair** $(i, j)$ is realized iff $\mathcal{C} \in F_{ij} = \bigcup_{a, b \in \{1,2,3,4\}} F_{ij}^{ab}$, a finite union of closed sets, hence closed.
+
+The pair indicator $\mathbf{1}_{F_{ij}}$ is USC because $F_{ij}$ is closed:
+- For $\mathcal{C} \in F_{ij}$: $\mathbf{1}_{F_{ij}}(\mathcal{C}) = 1 \geq \limsup_n \mathbf{1}_{F_{ij}}(\mathcal{C}_n)$ (the $\limsup$ is at most 1).
+- For $\mathcal{C} \notin F_{ij}$: $\mathcal{C} \in F_{ij}^c$ which is open, so $\mathcal{C}_n \in F_{ij}^c$ for $n$ large, giving $\mathbf{1}_{F_{ij}}(\mathcal{C}_n) = 0$ for $n$ large, so $\limsup = 0 = \mathbf{1}_{F_{ij}}(\mathcal{C})$.
+
+USC of $|E| = \sum_{i<j} \mathbf{1}_{F_{ij}}$ follows from the fact that finite sums of USC functions are USC. (Caveat: this uses the finite-sum property; infinite sums of USC functions need not be USC. Here the sum is over $\binom{\Nalpha}{2}$ pairs, finite.)
+
+USC of $B = \Nalpha \Balpha + \Bpair |E|$ follows from $\Bpair > 0$ (positive scaling preserves USC) and adding a constant ($\Nalpha \Balpha$ preserves USC).
+
+### Compactness derivation in detail
+
+Step 1: $G$-connectedness gives $\mathrm{diam}(\{c_i\}) \leq (\Nalpha - 1) \Raa$.
+
+Proof: connectedness of the contact graph means any two centroids $c_i, c_j$ are linked by a path $c_i = c_{i_0} \sim c_{i_1} \sim \ldots \sim c_{i_k} = c_j$ in $G$ with $k \leq \Nalpha - 1$ (paths in a connected graph on $\Nalpha$ vertices have at most $\Nalpha - 1$ edges). Each edge $c_{i_l} \sim c_{i_{l+1}}$ corresponds to a K$_3$ contact, which by C2 has centroid-distance $\Raa$. Triangle inequality: $|c_j - c_i| \leq \sum_l |c_{i_l} - c_{i_{l-1}}| \leq k \Raa \leq (\Nalpha - 1) \Raa$.
+
+Step 2: After centering on $c_1 = 0$ (using the translation part of $\mathrm{SE}(3)$), all $c_i$ lie in $\overline{B(0, (\Nalpha - 1) \Raa)}$. The orientations $R_i$ live in $\mathrm{SO}(3)^{\Nalpha}$. Both factors compact. The remaining quotient by $\mathrm{SO}(3)$ (rotation around $c_1 = 0$) is a quotient of a compact space by a continuous group action, which is compact (when the group is compact, the quotient is compact).
+
+Step 3: Rigid packing is closed; $G$-connectedness ($|E| \geq \Nalpha - 1$) is closed (USC level set). Closed subset of compact space is compact.
+
+### Attainment of supremum in detail
+
+Standard USC argument. Let $S = \sup_{\mathcal{C} \in \mathrm{Conf}(\Nalpha)} B(\mathcal{C})$. Take a maximizing sequence $\mathcal{C}_n$ with $B(\mathcal{C}_n) \to S$. By compactness, $\mathcal{C}_n$ has a convergent subsequence $\mathcal{C}_{n_k} \to \mathcal{C}^*$ in $\mathrm{Conf}(\Nalpha)$ (using closedness of $\mathrm{Conf}$).
+
+By USC: $B(\mathcal{C}^*) \geq \limsup_k B(\mathcal{C}_{n_k}) = \lim_n B(\mathcal{C}_n) = S$.
+
+Trivially $B(\mathcal{C}^*) \leq S$ (since $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$ and $S$ is the sup). Combined: $B(\mathcal{C}^*) = S$, attained.
+
+### Why uniqueness is NOT delivered
+
+Uniqueness would require strict concavity of $-B$ or some equivalent strict-monotonicity property. $B$ is just a sum of indicators, locally constant on the open dense subset (no contacts) and jumping up at face-coincidence subvarieties. Multiple distinct configurations can have the same $|E|$ value, hence the same $B$ value — including configurations related by symmetry (rotation, reflection) and configurations that are genuinely different geometric realizations.
+
+Outside the eight FvdW values $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ where the FvdW deltahedron is provably unique, the C5 ground state may genuinely be non-unique. C5 as stated does not require uniqueness; "the ground state" should be read as "some ground state" (or as the equivalence class up to symmetry).
+
+For the eight FvdW values, uniqueness is supplied separately via Theorem clause (iv): the FvdW deltahedron at $\Nalpha$ is unique up to congruence by the Freudenthal–van der Waerden theorem (1947). This is downstream of C5 — it depends on the contact graph being the 1-skeleton of a convex 3-polytope (Lemma B$'$) plus C2 fixing edge length to $\Raa$, then invoking FvdW uniqueness.
+
+### v0.3 → v0.4 ripples
+
+The sub-lemma addition propagates to:
+
+1. **§2.7 (new)** — Sub-Lemma 2.3 + 5-step proof + 3 remarks. ~135 lines TeX.
+2. **§9 Gap 1 entry** — annotated PARTIALLY CLOSED at v0.4 with brief summary; original v0.1 entry preserved. ~5 lines change.
+3. **CHANGELOG header** — v0.4 entry added with ~95 lines documenting sub-lemma + proof structure + remarks + ripples + polish track milestone.
+4. **Citation key fix** — initial draft used `freudenthal1947`, corrected to existing bibliography key `freudenthal_vdw_1947`. 1 character change.
+
+The Theorem 6.1 statement and proof are unchanged at v0.4. The Theorem still lists C5 in its hypothesis stack; Sub-Lemma 2.3 ensures the C5 ground state exists. v1.0 may consolidate the hypothesis list or reformulate, but the conditional structure is preserved at v0.4 for clarity.
+
+### Effect on programme-level OPEN-* registries
+
+**NONE direct.** C5 well-definedness was an internal precondition for applying C5 in this paper, not a programme-level OPEN-SS-* problem. **OPEN-SS-29** (programme-level closure of C5 from A1–A11) status UNCHANGED — well-definedness establishes the existence machinery for C5's CLAIM, not the derivation of C5 from CPP primitives.
+
+This contrasts with Session 25's sub-task (a), which advanced OPEN-SS-33 (a programme-level open problem). Sessions 26 and 27 closed paper-internal items; Session 25 closed a paper-internal item AND advanced a programme-level item.
+
+### Polish track milestone: THREE SUB-LEMMAS IN PLACE
+
+With Session 27 close, **all three formal sub-lemmas are in place**:
+
+1. **Sub-Lemma 2.1 (Conditional derivation of C7)** — §2.5, v0.2.
+2. **Sub-Lemma 2.2 (3D-non-degeneracy from maximum-edge selection)** — §2.6, v0.3.
+3. **Sub-Lemma 2.3 (Well-definedness of C5 ground state)** — §2.7, v0.4.
+
+The §9 v0.1 6-gap list is reduced to 4 remaining gaps:
+
+| Gap | Status at v0.4 | Sub-task addressing |
+|-----|----------------|---------------------|
+| 1. C5 well-definedness | PARTIALLY CLOSED v0.4 (existence) | (c) — DONE Session 27 |
+| 2. C6 closure | OPEN (programme OPEN-SS-30) | not in v1.0 polish scope |
+| 3. C7 closure | OPEN (programme OPEN-SS-33, conditional v0.2) | (a) advanced Session 25 |
+| 4. 3D-non-degeneracy | CLOSED v0.3 | (b) — DONE Session 26 |
+| 5. C7 motivation | CLOSED v0.2 | (a) — DONE Session 25 |
+| 6. Steinitz invocation pre-conditions | OPEN | may be addressed by (d) AI review |
+
+The four remaining gaps after v0.4 are:
+- Gap 1 (residual: uniqueness for non-FvdW $\Nalpha$, handled by FvdW Theorem clause (iv) for the eight specified $\Nalpha$).
+- Gap 2 (programme-level OPEN-SS-30, beyond polish scope).
+- Gap 3 (programme-level OPEN-SS-33, conditionally closed at v0.2 modulo H4+H5; further closure requires deriving H4 and H5 from C5).
+- Gap 6 (Steinitz invocation pre-conditions — smaller technical item, may be addressed by AI review feedback at Session 28 or carried forward to v1.0+1).
+
+### Forward priority Session 28: sub-task (d) AI-team review
+
+**Goal.** Submit SS-9 v0.4 .tex source (NOT compiled PDF) to AI reviewers (ChatGPT primary; possibly Copilot rotation) per symmetric-honesty protocol established after the Grok rasterization failures.
+
+**Symmetric-honesty protocol.** Apply the same review standards to SS-9 own work as Claude applies to reviewer feedback. Specifically:
+- Identify substantive vs.\ stylistic issues in reviewer comments.
+- Distinguish between "this would improve clarity" (incorporate into v0.5 polish) and "this surfaces a substantive gap" (incorporate as additional sub-lemma or revise existing content).
+- Track reviewer feedback in development-SS-9.md as a new vignette per session.
+- Do not defer to reviewer judgments inconsistent with established programme principles.
+
+**Expected scope.** Single session per reviewer; multi-session cumulative for full review cycle. ChatGPT review at Session 28 is the natural starting point given ChatGPT's identified strength on the team.
+
+**Expected outcomes.**
+- Best case: review surfaces minor stylistic issues + Gap 6 closure suggestion. Incorporate at v0.5 polish.
+- Likely case: review surfaces 2–3 substantive issues requiring v0.4 → v0.5 revision (e.g., tightening of one of the three sub-lemmas, or new technical issue not in §9).
+- Worst case: review surfaces fundamental issue requiring rethink of one of the three sub-lemmas. Defer v1.0 ship by 1–2 sessions.
+
+### Anti-priority sustained
+
+Do NOT modify SS-9 v0.4 .tex outside of v1.0 polish revisions. Each polish revision bumps the CHANGELOG version. Shipped versions:
+- v0.1 — Session 24 ship.
+- v0.2 — Session 25 sub-task (a) C7 sub-lemma.
+- v0.3 — Session 26 sub-task (b) 3D-non-degeneracy sub-lemma.
+- v0.4 — Session 27 sub-task (c) C5 well-definedness sub-lemma.
+
+Do NOT propose any single-session R3-channel refinement to close the remaining 52% empirical gap. Single-session R3-channel refinement candidates remain EXHAUSTED.
+
+### Programme state at Session 27 close
+
+- 12 programme-level negative results UNCHANGED (v1.0 polish work is paper-internal).
+- All earlier closures preserved.
+- Phase 8 Refinement A standing best refinement preserved.
+- OPEN-SS-24 ADVANCED to conditional theorem — preserved.
+- OPEN-SS-33 ADVANCED to conditional closure modulo (H4) + (H5) — preserved from Session 25.
+- OPEN-ORG-012 RETIRED — preserved.
+- **SS-9 at v0.4** (was v0.3 at Session 26 close).
+- v1.0 polish track: sub-tasks (a), (b), (c) all DONE; sub-tasks (d), (e) pending.
+- §9 v0.1 6-gap list reduced to 4 remaining gaps (1 partial, 3 open) at v0.4.
+- **Polish track milestone: THREE SUB-LEMMAS IN PLACE.** Ready for Session 28 sub-task (d) AI-team review.
