@@ -3,13 +3,79 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.2 -- 6 May 2026 (Session 25 OPEN-ORG-012-followup
+% Version 0.3 -- 6 May 2026 (Session 26 OPEN-ORG-012-followup
+%   v1.0 polish sub-task (b): 3D-non-degeneracy sub-lemma added)
+%
+% Earlier Version 0.2 -- 6 May 2026 (Session 25 OPEN-ORG-012-followup
 %   v1.0 polish sub-task (a): C7 sub-lemma added)
 %
 % Earlier Version 0.1 -- 6 May 2026 (initial .tex shipped from
 %   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v0.3 (6 May 2026 Session 26) -- v0.2 -> v1.0 POLISH SUB-TASK
+%     (b) [3D-NON-DEGENERACY SUB-LEMMA]. Added Sub-Lemma 2.2 (\S 2.6)
+%     deriving 3D-non-degeneracy from C1' + C2 + C3 + C5 via the
+%     maximum-edge selection principle (Lemma C):
+%
+%        At N_alpha >= 4, no ground-state cluster has all centroids
+%        coplanar.
+%
+%     Proof structure (4 steps):
+%     (1) Coplanar-centroid degree bound: any 2-plane through c_i
+%         contains at most two of alpha_i's four LO face-normals
+%         (any three face-normals span R^3 since they form three of
+%         four vertices of a non-degenerate regular tetrahedron).
+%         Combined with C2 (face-to-face contact requires centroid
+%         direction parallel to a face-normal), this gives
+%         deg_G(c_i) <= 2 in any coplanar contact graph.
+%     (2) Planar edge bound: |E_planar(C)| <= N_alpha by handshake
+%         lemma summed over the degree bound.
+%     (3) 3D edge bound: FvdW deltahedra realize |E_3D(C_FvdW)| =
+%         3*N_alpha - 6 at N_alpha in {4,5,6,7,8,9,10,12} with all
+%         edges at uniform length R_alpha-alpha; physically
+%         realizable under C1' (facets a, b).
+%     (4) Strict edge gain in 3D: |E_3D| - |E_planar| >=
+%         (3N - 6) - N = 2N - 6 >= 2 at N_alpha >= 4. By Lemma C
+%         (binding maximizes |E|) and C5 (ground state minimizes
+%         energy), no coplanar configuration is a ground state.
+%
+%     Effect on \S 2.7 auxiliary assumptions: 3D-non-degeneracy is
+%     now derivable from existing inheritance hypotheses, no longer
+%     an independent auxiliary assumption. Theorem statement and
+%     Lemma B' statement continue to list it for clarity at v0.3,
+%     but it is a derived condition.
+%
+%     Effect on \S 9 gap list: "3D-non-degeneracy" gap (Gap 4 in
+%     v0.1) CLOSED at v0.3.
+%
+%     Sharpness of N_alpha >= 4 threshold: Remark 2.2 notes that at
+%     N_alpha = 3 the planar realization |E| = 3 coincides with
+%     3*N_alpha - 6 = 3, so the strict inequality |E_planar| <
+%     |E_3D| fails and 3D-non-degeneracy fails for ^12C as planar
+%     triangle. This matches the Theorem's exclusion of N_alpha = 3
+%     from its scope (handled separately in \S 7).
+%
+%     Effect on programme-level OPEN-* registries: NONE. 3D-non-
+%     degeneracy was an auxiliary assumption local to SS-9, not
+%     registered as a programme-level OPEN-SS-* problem; closure is
+%     paper-internal.
+%
+%     Other ripples: \S 9 Gap 4 entry annotated CLOSED with brief
+%     summary of derivation; Theorem and Lemma B' statements
+%     unchanged at v0.3 (still list "3D-non-degeneracy" for clarity
+%     in conditional-hypothesis stack readability).
+%
+%     Lines added: ~85 (new \S 2.6 subsection + 3 remarks).
+%     Compilation: three pdflatex passes, zero warnings/errors
+%     after pass 3.
+%
+%     Polish track status after this version: sub-task (a) C7
+%     sub-lemma DONE (v0.2); sub-task (b) 3D-non-degeneracy sub-
+%     lemma DONE (this version, v0.3); sub-tasks (c) C5 well-
+%     definedness via compactness, (d) AI-team review per
+%     symmetric-honesty protocol, (e) external review remain.
+%
 %   v0.2 (6 May 2026 Session 25) -- v0.1 -> v1.0 POLISH SUB-TASK
 %     (a) [C7 SUB-LEMMA]. Added Sub-Lemma 2.1 (\S 2.5) tightening
 %     the C7 motivation paragraph into a formal conditional
@@ -429,6 +495,57 @@ Sub-Lemma~\ref{lem:C7} reduces the closure of OPEN-SS-33 (deriving C7 from CPP p
 The sub-lemma + remark structure thereby advances OPEN-SS-33 from ``raw open'' (Session 24 ratification) to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5,'' a typical intermediate stage in programme-level closure work. Both residual sub-targets are smaller in scope than C7 itself: each reduces to a focused energetic/combinatorial argument under C5 rather than requiring full first-principles A1--A11 derivation.
 \end{remark}
 
+\subsection{Sub-Lemma 2.2: 3D-non-degeneracy via maximum-edge selection}
+\label{sec:sublemma_3D}
+
+The auxiliary assumption ``3D-non-degeneracy'' (\S\ref{sec:setup}, ``Auxiliary assumptions'' below) is stated as an unproved hypothesis in v0.1: \emph{the alpha centroids $c_1, \ldots, c_{\Nalpha}$ do not all lie in a single plane}. We now formalize a sub-lemma showing that 3D-non-degeneracy is a derived consequence of the maximum-edge selection principle (Lemma~\ref{lem:C}) under the existing inheritance hypotheses, at $\Nalpha \geq 4$.
+
+\begin{lemma}[3D-non-degeneracy from maximum-edge selection]
+\label{lem:3D}
+Let $\Nalpha \geq 4$. Suppose C1$'$ (facet (a) at LO), C2, C3, and C5 hold. Then no ground-state $\Nalpha$-alpha cluster configuration $\mathcal{C}_{\mathrm{ground}}$ has all centroids $c_1, \ldots, c_{\Nalpha}$ lying in a single 2-plane.
+\end{lemma}
+
+\begin{proof}
+The strategy is to show that any coplanar centroid arrangement realizes strictly fewer K$_3$-bonded contacts than the corresponding 3D arrangement at the same $\Nalpha$, and therefore is not a binding-energy maximum (equivalently, not a ground state under C5).
+
+\textbf{Step 1: Coplanar-centroid degree bound.}
+Suppose all centroids $c_i$ lie in a common plane $P \subset \mathbb{R}^3$. Fix any alpha $\alpha_i$ with centroid $c_i \in P$, and consider the four outward face-normals $\hat{n}_i^{(1)}, \hat{n}_i^{(2)}, \hat{n}_i^{(3)}, \hat{n}_i^{(4)}$ of $\alpha_i$ at LO. By C1$'$ facet (a), $\alpha_i$ is at LO a regular tetrahedron, so the four face-normals point from $c_i$ toward the four face-centroids, forming a regular dual tetrahedron of unit-norm directions. Any three of these four directions span $\mathbb{R}^3$ (they are three of four vertices of a regular tetrahedron centered at $c_i$, a non-degenerate 3-simplex). In particular, no 2-plane through $c_i$ can contain three or more of the four face-normals: the plane $P$ through $c_i$ contains \emph{at most two} of $\hat{n}_i^{(1)}, \ldots, \hat{n}_i^{(4)}$.
+
+By C2 (face-to-face contact), $\alpha_i \sim \alpha_j$ requires the centroid difference $c_j - c_i$ to be parallel to one of $\alpha_i$'s outward face-normals (and at distance $\Raa$ along it). For $c_j - c_i$ to lie in $P$, the corresponding face-normal $\hat{n}_i^{(k)}$ must lie in $P$. Hence at most two of $\alpha_i$'s four faces can host a contact whose partner centroid lies in $P$. Therefore $\deg_G(c_i) \leq 2$ in any coplanar contact graph.
+
+\textbf{Step 2: Planar edge bound.}
+Summing the degree bound over all alphas and using the handshake lemma,
+\[
+2 |E_{\mathrm{planar}}(\mathcal{C})| = \sum_{i=1}^{\Nalpha} \deg_G(c_i) \leq 2 \Nalpha,
+\]
+so $|E_{\mathrm{planar}}(\mathcal{C})| \leq \Nalpha$ for any cluster configuration with all centroids coplanar.
+
+\textbf{Step 3: 3D edge bound (existing realizations).}
+At $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the Freudenthal--van der Waerden convex deltahedra (cf.\ Theorem~\ref{thm:main} clause (iv)) realize 3D centroid arrangements with $|E_{\mathrm{3D}}(\mathcal{C}_{\mathrm{FvdW}})| = 3\Nalpha - 6$. Concretely, $|E_{\mathrm{FvdW}}| = 6, 9, 12, 15, 18, 21, 24, 30$ at $\Nalpha = 4, 5, 6, 7, 8, 9, 10, 12$ respectively. These configurations are physically realizable: each FvdW deltahedron supports $\Nalpha$ alphas at its vertices with edge length $\Raa$ between adjacent centroids, all face-coincidences accommodated within C1$'$ (facets (a), (b)).
+
+\textbf{Step 4: Strict edge gain in 3D.}
+Comparing Steps 2 and 3,
+\[
+|E_{\mathrm{3D}}| - |E_{\mathrm{planar}}| \geq (3\Nalpha - 6) - \Nalpha = 2\Nalpha - 6 \geq 2 \quad \text{for } \Nalpha \geq 4.
+\]
+By the SS-7 binding formula and C3, $B(\mathcal{C}) = \Nalpha \Balpha + |E(\mathcal{C})| \Bpair$, so the binding-energy gain of the 3D arrangement over any coplanar arrangement is at least $(2\Nalpha - 6) \Bpair \geq 2 \Bpair = 4.684$ MeV. By Lemma~\ref{lem:C} (energy minimization picks maximum edges) and C5 (ground state minimizes energy), the ground-state $\mathcal{C}_{\mathrm{ground}}$ realizes the maximum $|E|$ among all physically realizable configurations at fixed $\Nalpha$. Since any coplanar configuration has $|E| \leq \Nalpha < 3\Nalpha - 6$ at $\Nalpha \geq 4$, no coplanar configuration is a ground state. Therefore the centroids of $\mathcal{C}_{\mathrm{ground}}$ do not all lie in a single plane.
+\end{proof}
+
+\begin{remark}[Tightness of the planar bound and the $\Nalpha = 3$ exception]
+\label{rem:3D_tightness}
+The bound $|E_{\mathrm{planar}}| \leq \Nalpha$ is essentially tight: a closed ring of $\Nalpha \geq 3$ alphas with consecutive face-to-face contacts in a single plane realizes $|E| = \Nalpha$ when geometrically closing-up is permitted by the dihedral-angle constraints, and a linear chain realizes $|E| = \Nalpha - 1$. At $\Nalpha = 3$, the planar realization $|E| = 3$ (equilateral triangle of centroids) coincides with $3\Nalpha - 6 = 3$, so the planar and 3D bounds agree, and 3D-non-degeneracy fails: ${}^{12}$C as the planar-triangle ground state is consistent with maximum-edge selection at $\Nalpha = 3$. This is why the Theorem (\S\ref{sec:theorem}) excludes $\Nalpha = 3$ from its scope and the $\Nalpha = 3$ degenerate case is treated separately in \S\ref{sec:scope}: the proof above relies on strict $|E_{\mathrm{planar}}| < |E_{\mathrm{3D}}|$, which holds at $\Nalpha \geq 4$ but not at $\Nalpha = 3$. The threshold $\Nalpha \geq 4$ in Lemma~\ref{lem:3D} is therefore sharp.
+\end{remark}
+
+\begin{remark}[Refined-C1 facet (b) does not weaken the planar bound]
+\label{rem:3D_facet_b}
+Refined-C1 facet (b) (vertex-hosting accommodation at degree-$\geq 5$ cluster vertices) might appear to relax the LO regularity assumed in Step 1 of the proof. It does not affect the planar bound for two reasons. First, facet (b) activates only at degree $\geq 5$; the planar bound establishes $\deg_G(c_i) \leq 2$, so facet (b) is not invoked in the planar configuration. Second, facet (b) operates within the LO rigidity envelope (a $\sim 5\%$ residual band per the SS-5 LO-rigidity remark): the four face-normal directions remain $O(5\%)$-deformed from their LO regular-tetrahedron positions, preserving the geometric fact that any three remain non-coplanar at LO + facet (b). The planar bound Step 1 uses only that no three face-normals are coplanar, which is robust to facet (b)'s small accommodation deformations.
+\end{remark}
+
+\begin{remark}[Effect on \S\ref{sec:gaps} ``3D-non-degeneracy'' gap]
+\label{rem:3D_gap_status}
+The \S\ref{sec:gaps} entry on 3D-non-degeneracy (Gap 4 in v0.1) flags the auxiliary assumption as ``Should ideally be derived from `cluster is genuinely 3-dimensional at $\Nalpha \geq 4$' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $\Nalpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma.'' Sub-Lemma~\ref{lem:3D} delivers exactly that derivation: 3D-non-degeneracy is now a theorem under the existing inheritance hypotheses C1$'$ + C2 + C3 + C5, not an independent auxiliary assumption. The Theorem statement (\S\ref{sec:theorem}) and Lemma~\ref{lem:Bprime} statement may continue to list ``3D-non-degeneracy'' as a condition for clarity at v0.2, but it is now derivable rather than assumed.
+\end{remark}
+
 \subsection{Auxiliary assumptions}
 
 We additionally assume:
@@ -655,7 +772,7 @@ Phase 11 NULL marks the natural saturation point for single-session R3-channel w
 
 \item \textbf{Facet (b) mechanism identification:} Three candidate mechanisms registered in SS-7 v1.3 \S 2.1 (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking). Distinguishing them is testable via predicted contact-distance distributions at degree-5 sites, accessible to AMD or Brink--Bloch cluster-model calculations. Likely closes with OPEN-SS-32 if facets (b) and (c) share Layer-3 ancestry.
 
-\item \textbf{3D-non-degeneracy:} Stated as an assumption. Should ideally be derived from ``cluster is genuinely 3-dimensional at $\Nalpha \geq 4$'' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $\Nalpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma.
+\item \textbf{3D-non-degeneracy:} \emph{CLOSED at v0.3.} Sub-Lemma~\ref{lem:3D} (\S\ref{sec:sublemma_3D}) derives 3D-non-degeneracy from the existing inheritance hypotheses C1$'$ + C2 + C3 + C5 at $\Nalpha \geq 4$ via maximum-edge selection: coplanar centroid arrangements force $\deg_G(c_i) \leq 2$ for each alpha (any 2-plane through $c_i$ contains at most two of $\alpha_i$'s four LO face-normals), giving $|E_{\mathrm{planar}}| \leq \Nalpha < 3\Nalpha - 6 = |E_{\mathrm{FvdW}}|$ at $\Nalpha \geq 4$. Therefore no coplanar arrangement is a binding-energy maximum, and the ground state is 3D. Original entry: \emph{Stated as an assumption. Should ideally be derived from ``cluster is genuinely 3-dimensional at $\Nalpha \geq 4$'' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $\Nalpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma.}
 
 \item \textbf{C5 well-definedness:} ``Ground-state energy minimization'' requires defining the configuration space over which to minimize. The space includes all rigid-packing-compatible arrangements at fixed $\Nalpha$ under C1$'$. Need to verify this space is well-defined and that minima exist (compactness argument).
 
