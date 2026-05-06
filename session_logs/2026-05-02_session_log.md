@@ -2315,3 +2315,97 @@ Negative-result count grows from 11 to **12**. Phase 10 is the **seventh ruling-
 ---
 
 *Session log Session 22 Phase 10 entry per §4 discipline. Substantive content: Refinement D ($\sigma_{K3}$ sensitivity, two tracks: Track 1 uniform σ_K3 ±10%; Track 2 split-width σ_K3,NN = 1.68 fm fixed, σ_K3,non-NN varies) RULED OUT — Track 1 all variants produce unphysical $\delta R(12) = 0$; Track 2 NO σ_K3,non-NN value preserves Phase 8 anchor matches (anchor accuracy is delicately balanced structural signature of strict NN-only K$_3$, not numerical coincidence). Twelfth programme-level negative result; seventh ruling-out in OPEN-SS-32 ↔ U-shape thread. Constructive content: Phase 8 Refinement A standing best refinement structurally STRENGTHENED; K$_3$ binding in CPP is strictly NN-localized regardless of width; entire σ-parameterized K$_3$ refinement class eliminated; methodological lesson sharpened from Phase 9 (F1-pass / F3-fail-across-parameter-family pattern). Forward priority shifts: R3-Pauli scoping PROMOTED to Priority 1 for Session 23 (sole remaining single-session candidate); sub-shell-physics decomposition PROMOTED to Priority 2 (multi-paper structural-independence path).*
+
+---
+
+## Session 23 Phase 11 — R3-Pauli scoping (Gaussian repulsive core): NULL RESULT — Pauli structurally redundant with Phase 8 NN-fraction-weighted differential softening; single-session R3-channel refinement candidates exhausted; remaining 52% empirical gap requires sub-shell-physics multi-paper work (6 May 2026)
+
+### Context
+
+Session 22 Phase 10 (sketch §7.1 / 0214 handover) registered Session 23 Priority 1 as R3-Pauli scoping with specified Pauli model — sole remaining single-session-tractable refinement candidate after Phases 9 + 10 ruled out the entire $\sigma$-parameterized K$_3$ refinement class. Pauli is naturally NN-localized via wave-function overlap (alpha-alpha Pauli core acts at short range; exponentially suppressed at non-NN distances) — has the right structural symmetry that K$_3$-σ-tuning variants lacked.
+
+### What was done
+
+Pauli model: Gaussian repulsive core $V_P(r) = V_P^0 \exp(-r^2/(2\sigma_P^2))$ with $\sigma_P = 1.5$ fm fixed (alpha matter rms radius scale, no fit parameter); $V_P^0$ scanned in {0.5, 1.0, 1.5, 2.0, 3.0, 5.0, 10.0} MeV; calibrated to Phase 5 R3-lin smooth-A target $\delta R(N=10) = 1.052$ fm. F1 sign analytical check applied first via sign-theorem composition workflow extended to Pauli.
+
+### Wave-function-overlap structure verification
+
+At $\sigma_P = 1.5$ fm: $V_P/V_P^0 = 0.287$ at NN ($R_\alpha = 2.37$ fm); 0.082 at first non-NN (factor 3.5× suppression); 0.038 at icosahedron second-shell (factor 7.6×); 0.011 at icosahedron antipodal (factor 26×). **Pauli at $\sigma_P = 1.5$ fm is exponentially suppressed at non-NN distances — exactly the structural symmetry K$_3$-σ-tuning variants lacked.**
+
+### F1 sign — analytical pass via composition (both levels)
+
+Level 1 (within-mechanism): $V_P(r) > 0$ (repulsive); $dV_P/dr < 0$ for $r > 0$ → force outward; adding Pauli to Phase 8 → additional outward force on δR; equilibrium $\delta R_{P+A} > \delta R_A$; Phase 5 sign theorem unchanged; at $\delta R_{P+A} > 0$, Coulomb-plus-Pauli savings exceed K$_3$ loss → net binding gain > 0. **F1 PASSES analytically.** Level 2: F1 SIGN COMPATIBLE at smooth-A level.
+
+### V_P^0 scan — Phase 8 anchor matches degrade rapidly above V_P^0 ≥ 1 MeV
+
+| $V_P^0$ [MeV] | sign agreement | $^{36}$Ar err | $^{40}$Ca err | $\delta R(10)$ [fm] |
+|---|---|---|---|---|
+| 0.5 | 6/8 | 0.009 | 0.003 | 1.117 |
+| 1.0 | 2/8 | 0.020 | 0.006 | 1.185 |
+| 2.0 | 3/8 | 0.041 | 0.011 | 1.302 |
+| 5.0 | 3/8 | 0.105 | 0.025 | 1.570 |
+| 10.0 | 3/8 | 0.217 | 0.046 | 1.875 |
+
+Phase 8 reference: 6/8 sign, 36Ar err 0.0008, 40Ca err 0.0001, $\delta R(10) = 1.042$ fm.
+
+### Smooth-A calibration
+
+Goal: find $V_P^0$ such that $\delta R(N=10) = 1.052$ fm (Phase 5 R3-lin target). Phase 8 ($V_P^0 = 0$) gives $\delta R(N=10) = 1.042$ fm — already 1% off target. **Calibration result: $V_P^0 = 0.061$ MeV** (essentially zero — Pauli adds tiny correction).
+
+### At calibrated $V_P^0 = 0.061$ MeV — Phase 11 vs Phase 8
+
+| $N$ | nucleus | empirical | Phase 8 | Phase 11 | P11-P8 | sign? P11 | $\delta R_{P11}$ |
+|-----|---------|-----------|---------|----------|--------|-----------|------|
+|  4 | $^{16}$O   | $+0.1042$ | $+0.0495$ | $+0.0475$ | $-0.002$ | YES | 0.681 |
+|  5 | $^{20}$Ne  | $-0.0995$ | $-0.0003$ | $-0.0013$ | $-0.001$ | YES | 0.730 |
+|  6 | $^{24}$Mg  | $-0.0427$ | $-0.0113$ | $-0.0103$ | $+0.001$ | YES | 0.806 |
+|  7 | $^{28}$Si  | $+0.0309$ | $-0.0329$ | $-0.0316$ | $+0.001$ | no | 0.866 |
+|  8 | $^{32}$S   | $+0.0033$ | $-0.0276$ | $-0.0261$ | $+0.001$ | no | 0.931 |
+|  9 | $^{36}$Ar  | $-0.0136$ | $-0.0144$ | $-0.0131$ | $+0.001$ | YES | 0.994 |
+| 10 | $^{40}$Ca  | $-0.0038$ | $-0.0038$ | $-0.0034$ | $+0.000$ | YES | 1.052 |
+| 12 | $^{48}$Cr  | $+0.0212$ | $+0.0409$ | $+0.0384$ | $-0.002$ | YES | 1.167 |
+
+**All shifts $\leq 0.002$ MeV/α — within numerical noise.** Sign agreement: 6/8 (UNCHANGED). Max residual: 0.0475 vs Phase 8's 0.0495 (4% reduction within noise). $^{40}$Ca anchor: 0.0003 err (Phase 8: 0.0001 — both within roundoff). $^{36}$Ar anchor: 0.0005 err (Phase 8: 0.0008 — slight tightening within noise). $^{48}$Cr: $+0.0384$ (Phase 8: $+0.0409$, empirical $+0.0212$) — slight improvement, still factor 1.8× empirical overshoots.
+
+### Phase 11 outcome — NULL RESULT (not negative result)
+
+**F1 PASSES analytically. F2 magnitude UNCHANGED. F3 pattern UNCHANGED.** Pauli at calibrated amplitude is essentially a tiny smooth-A correction — leaves Phase 8 polytope-residual structure unchanged. **Phase 11: NULL RESULT** — neither positive scoping nor programme-level negative result. Phase 8 anchor matches PRESERVED, sign agreement UNCHANGED, magnitude UNCHANGED.
+
+### Programme negative-result count UNCHANGED at 12
+
+Phase 11 is null, not negative. Programme negative-result count remains **12**.
+
+### Constructive content — structural diagnosis of redundancy
+
+1. **Pauli at $\sigma_P = 1.5$ fm is structurally redundant with Phase 8 NN-fraction-weighted differential Coulomb softening.** Both mechanisms are NN-localized (Pauli by wave-function overlap exponential decay; Phase 8 differential softening by erf factor saturating at non-NN distances). Both add outward force scaling with NN edge count $|E| = 3N - 6$. Once Phase 8 captures the NN-only structural component, additional NN-only mechanisms cannot generate distinct polytope-specific signal.
+
+2. **The remaining 52% of empirical polytope-residual scale is structurally unreachable by single-session R3-channel refinements within the Phase 8 framework.** Phases 9 + 10 ruled out σ-parameterized K$_3$ extensions; Phase 11 shows Pauli is structurally redundant. **Single-session R3-channel refinement candidates exhausted.**
+
+3. **Implication: the 52% gap requires sub-shell-physics decomposition** (multi-paper). Persistent failures at $^{28}$Si and $^{32}$S across Phases 8, 9, 10, 11 confirm sub-shell-physics-dominance.
+
+4. **Phase 8 Refinement A confirmed at natural ceiling of R3-channel single-session refinements.**
+
+5. **Methodological category introduced: structural-redundancy null result.** Distinct from negative results (F3 fails), positive scoping (F3 improves), and partial-positive empirical comparisons. Structural-redundancy null occurs when F1 PASSES, anchors PRESERVED, but candidate adds nothing structurally distinct from existing best refinement. Diagnostic value: **negative information about completeness** — exhaustion-of-class signal.
+
+### Programme implications
+
+Negative-result count UNCHANGED at **12**. Phase 11 is the second null result in the OPEN-SS-32 ↔ U-shape thread (after Phase 7 partial-positive reframing) but with a different methodological character — structural redundancy rather than empirical reframing. OPEN-SS-35 stages preserved at 6 — stage (vi) refines further to add "R3-Pauli structurally redundant with Phase 8 NN-fraction-weighted differential softening (Phase 11 NULL); single-session R3-channel refinement candidates exhausted; remaining 52% requires sub-shell-physics decomposition (multi-paper)."
+
+§7 of SS-9 v0.3 working draft has now shifted **thirteen times** in the OPEN-SS-32 ↔ U-shape thread (was 12 at Session 22 close); **Phase 11 NULL marks natural saturation point — OPEN-ORG-012 .tex conversion can now begin** as the thread enters multi-paper completion phase. R2 remains FORMALLY CLOSED (Session 15). Gaussian-K$_3$ framework at fixed cluster geometry remains FORMALLY CLOSED (Session 16). Phase 9 + Phase 10 K$_3$ class closures preserved. Phase 8 Refinement A factor 3.6 polytope-residual improvement preserved AND structurally STRENGTHENED at Session 23 close (Phase 11 confirms it is at natural ceiling). Sub-question (b) layer 3 gap-strength closure INDEPENDENT by Decoupling Theorem (Session 12), unaffected. First qualitative cross-paradigm consilience claim (Session 9) intact.
+
+### Forward pointers (Session 24)
+
+**Priority 1 (PROMOTED from Phase 10 Priority 2):** Sub-shell-physics decomposition. Multi-paper scope. Sole remaining path to closing the 52% empirical polytope-residual gap. $^{28}$Si and $^{32}$S persistent failures across Phases 8, 9, 10, 11 confirm sub-shell-physics-dominance. Likely warrants its own SS-paper (SS-10?) on shell-corrected baselines. Apply F1 sign analytical check first via composition workflow.
+
+**Priority 2:** OPEN-ORG-012 (.tex conversion of SS-9 v0.3). Phase 11 NULL marks natural saturation; §7 stable enough for formal write-up. SS-9 paper formalizes Phase 8 Refinement A as standing best refinement, with §7 noting 52% gap as multi-paper future work referring to forthcoming sub-shell-physics paper.
+
+**Priority 3 (deferred):** Alternate-channel investigations — finite-A SEMF corrections (relevant for $^{16}$O standout shortfall); R4-DP-sea contributions; SR-tensor channel. Multi-paper scope; not in scope until sub-shell-physics decomposition completed.
+
+**Anti-priorities sharpened from Phase 10:**
+- §7 has shifted **thirteen** times — but **Phase 11 NULL marks natural saturation**: OPEN-ORG-012 .tex conversion can now begin.
+- **NEW from Phase 11:** Do NOT propose any single-session R3-channel refinement to close the remaining 52% empirical gap. Phases 9 + 10 + 11 together exhaust the natural single-session refinement candidates.
+- **NEW from Phase 11:** Phase 8 Refinement A is at the natural ceiling of R3-channel single-session refinements — confirmed by exhausting all viable refinements.
+
+---
+
+*Session log Session 23 Phase 11 entry per §4 discipline. Substantive content: R3-Pauli scoping with Gaussian repulsive core ($\sigma_P = 1.5$ fm fixed; $V_P^0$ calibrated to smooth-A target) — F1 PASSES analytically; Phase 8 anchor matches PRESERVED; sign agreement UNCHANGED at 6/8; max polytope residual UNCHANGED at 0.048 MeV/α (Phase 8: 0.050); polytope-by-polytope shifts $\leq 0.002$ MeV/α within numerical noise. **NULL RESULT — Pauli structurally redundant with Phase 8 NN-fraction-weighted differential softening (both are NN-only).** Single-session R3-channel refinement candidates EXHAUSTED (Phases 9 + 10 ruled out σ-parameterized K$_3$ class; Phase 11 R3-Pauli structurally redundant). Methodological category introduced: structural-redundancy null result. Phase 8 Refinement A confirmed at natural ceiling of R3-channel single-session refinements; structurally STRENGTHENED. Programme negative-result count UNCHANGED at 12. §7 has shifted 13 times — Phase 11 NULL marks natural saturation point; OPEN-ORG-012 .tex conversion can now begin. Forward priorities: sub-shell-physics decomposition PROMOTED to Priority 1 for Session 24 (multi-paper scope, sole remaining path to closing 52% empirical gap); OPEN-ORG-012 .tex conversion Priority 2.*
