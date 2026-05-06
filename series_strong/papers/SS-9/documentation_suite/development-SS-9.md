@@ -613,3 +613,62 @@ There are exactly 6 distinguished planes through $c_i$ each containing exactly 2
 **Polish track status after Session 26.** Sub-tasks (a) and (b) both DONE. Sub-tasks (c)/(d)/(e) pending. Forward priority Session 27: sub-task (c) C5 well-definedness via compactness argument.
 
 **Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. SS-9 at v0.3.
+
+## Vignette 34 — Session 27 v1.0 polish sub-task (c): Sub-Lemma 2.3 added (C5 well-definedness via compactness); §9 Gap 1 PARTIALLY CLOSED at v0.4; SS-9 v0.3 → v0.4 (6 May 2026, Session 27)
+
+**Context.** Sessions 25 and 26 closed sub-tasks (a) C7 sub-lemma and (b) 3D-non-degeneracy sub-lemma respectively. Session 27 starts with sub-task (c): verify C5 well-definedness via compactness. This is the third and final formal sub-lemma in the v1.0 polish track (sub-tasks (d) AI review and (e) external review do not add new mathematical content). The §9 v0.1 Gap 1 entry already specified the closure route ("compactness argument"), so the work was largely formalization.
+
+**The sub-lemma.** Sub-Lemma 2.3 in §2.7 of v0.4 (renumbering current §2.7 → §2.8):
+
+\textbf{Sub-Lemma 2.3 (Well-definedness of C5 ground state).} \emph{Let $\Nalpha \geq 2$. Define the configuration space
+\[
+\mathrm{Conf}(\Nalpha) = \big\{(c_1, R_1, \ldots, c_{\Nalpha}, R_{\Nalpha}) : \text{rigid packing}; \; |E(\mathcal{C})| \geq \Nalpha - 1\big\} / \mathrm{SE}(3).
+\]
+Then $\sup_{\mathcal{C} \in \mathrm{Conf}(\Nalpha)} B(\mathcal{C})$ is attained at some $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$.}
+
+**Proof structure.**
+
+| Step | Claim | Mechanism |
+|------|-------|-----------|
+| 1 | Diameter bound | $G$-connectedness ($|E| \geq \Nalpha - 1$) forces $\mathrm{diam} \leq (\Nalpha - 1)\Raa$ via path-counting |
+| 2 | Pre-compactness | Reduced space embeds in compact product $\overline{B}^{\Nalpha-1} \times \mathrm{SO}(3)^{\Nalpha}$; rigid-packing closed |
+| 3 | USC of $B$ | Each $F_{ij}^{ab}$ closed (face-coincidence equality constraints); 1-indicator USC for closed sets; $B = \Nalpha \Balpha + \Bpair \sum 1_{F_{ij}}$ USC |
+| 4 | Sup attained | USC + compact + bounded above $\Rightarrow$ maximizing sequence converges, $B(\mathcal{C}^*) \geq \limsup B(\mathcal{C}_n) = \sup B$ |
+| 5 | $\mathcal{C}^*$ in $\mathrm{Conf}$ | Linear-chain feasibility: $\sup B \geq \Nalpha \Balpha + (\Nalpha - 1)\Bpair$, forces $|E(\mathcal{C}^*)| \geq \Nalpha - 1$ |
+
+**Three remarks.**
+
+| Remark | Content |
+|--------|---------|
+| **2.5 (uniqueness vs.\ existence)** | Sub-lemma establishes existence only. C5 does not require uniqueness; multiple equivalent ground states may exist (symmetry, FvdW non-uniqueness outside specified $\Nalpha$). Uniqueness for the eight specified $\Nalpha$ supplied separately via FvdW Theorem clause (iv). |
+| **2.6 ($\Nalpha \geq 2$ threshold)** | Well-definedness threshold is broader than Sub-Lemma 2.2's $\Nalpha \geq 4$ or Theorem's $\Nalpha \in \{4, \ldots, 12\}$. Sub-lemma applies uniformly; downstream lemmas impose stricter thresholds for their own reasons. |
+| **2.7 (effect on §9 Gap 1)** | Existence half delivered; uniqueness half not delivered (not C5's claim). Gap 1 PARTIALLY CLOSED at v0.4. Residual content reduced from "existence + uniqueness" to "uniqueness alone." |
+
+**Conceptual core.** The proof is a textbook compactness + upper-semi-continuity argument adapted to the specific structure of K$_3$-bonded alpha clusters:
+
+- **Compactness via $G$-connectedness diameter bound.** Without the connectedness condition, alphas could fly apart to infinity (non-compact). C5's own physical-realizability requirement ($G$-connectedness) supplies the bound.
+- **USC of $B$ via face-coincidence equality constraints.** Face-to-face contact at LO requires exact face-coincidence (parallel face normals with opposite orientation, centroid distance $\Raa$, in-face vertex correspondence). Each "contact pair $(i,j)$ realized via face-pair $(a,b)$" condition is a finite set of polynomial equalities, defining a closed subvariety. Indicator of a closed set is USC; finite sum of USC is USC.
+- **Interior of $\mathrm{Conf}(\Nalpha)$.** The sup is achieved interior because a feasible "linear chain" with $|E| = \Nalpha - 1$ contacts gives $B = \Nalpha \Balpha + (\Nalpha - 1)\Bpair$ as a lower bound on the sup; this floor forces any maximizer to have $|E| \geq \Nalpha - 1$, matching $\mathrm{Conf}(\Nalpha)$'s defining condition.
+
+**Effect on §9 gap list.** Gap 1 PARTIALLY CLOSED at v0.4. Combined with Sessions 25 and 26 closures, the v0.1 6-gap list now stands at:
+
+| Gap | v0.1 status | v0.4 status |
+|-----|-------------|-------------|
+| 1. C5 well-definedness | OPEN | **PARTIALLY CLOSED v0.4** (existence; uniqueness handled by FvdW Theorem) |
+| 2. C6 (cluster surface-realization) | OPEN | OPEN (programme-level OPEN-SS-30) |
+| 3. C7 (contact-graph planarity) | OPEN | OPEN (programme-level OPEN-SS-33, conditionally closed at v0.2 modulo H4+H5) |
+| 4. 3D-non-degeneracy | OPEN | **CLOSED v0.3** |
+| 5. C7 motivation argument | OPEN | **CLOSED v0.2** |
+| 6. Steinitz invocation pre-conditions | OPEN | OPEN |
+
+Three of six gaps now closed (4, 5) or partially closed (1) via v1.0 polish track. Gaps 2, 3, 6 remain — Gap 2 (C6 closure) and Gap 3 (C7 unconditional closure) are programme-level OPEN-SS-30 / OPEN-SS-33 items beyond paper-internal polish scope; Gap 6 (Steinitz invocation pre-conditions) is a smaller technical item that may be addressed by sub-task (d) AI review feedback or carried forward to v1.0+1 if needed.
+
+**Effect on Theorem.** Theorem 6.1 statement and proof unchanged at v0.4. C5 still listed as paper-level structural hypothesis; Sub-Lemma 2.3 ensures the C5 ground state exists.
+
+**Effect on programme-level OPEN-* registries.** NONE direct. C5 well-definedness was an internal precondition, not a programme-level OPEN-SS-* problem. **OPEN-SS-29** (programme-level closure of C5 from A1–A11) status UNCHANGED — well-definedness establishes the existence machinery for C5's CLAIM, not the derivation of C5 from CPP primitives.
+
+**Compilation.** Three pdflatex passes: zero errors all passes; one pre-existing hyperref token warning preserved unchanged from v0.3. Output 27 pages (was 25 in v0.3; +2 pages from sub-lemma + 3 remarks). Initial draft used citation key `freudenthal1947` triggering an undefined-reference warning; corrected to existing bibliography key `freudenthal_vdw_1947` before final commit.
+
+**Polish track milestone.** With Session 27 close, **all three formal sub-lemmas (C7 conditional derivation, 3D-non-degeneracy, C5 well-definedness) are in place.** SS-9 v0.4 is ready for sub-task (d) AI-team review submission at Session 28. Per symmetric-honesty protocol: submit v0.4 .tex source (NOT compiled PDF, after Grok rasterization failures), apply same review standards to SS-9 own work as to reviewer feedback.
+
+**Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. SS-9 at v0.4.
