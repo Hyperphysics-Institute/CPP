@@ -2652,3 +2652,76 @@ Three of six gaps now CLOSED or PARTIALLY CLOSED at v0.4 via the polish track.
 ---
 
 *Session log Session 27 v1.0 polish sub-task (c) entry per §4 discipline. Substantive content: Sub-Lemma 2.3 (C5 well-definedness via compactness) added to SS-9 v0.4; §9 Gap 1 PARTIALLY CLOSED (existence half) at v0.4. Three pdflatex passes zero errors, 27 pages output. Polish track sub-tasks (a), (b), (c) all DONE; sub-tasks (d)/(e) pending. Forward priority Session 28: sub-task (d) AI-team review per symmetric-honesty protocol on v0.4 .tex source.*
+
+---
+
+## Session 28 — v1.0 polish sub-task (d.1): ChatGPT review feedback incorporation (6 May 2026)
+
+**Context.** Session 27 close shipped SS-9 v0.4 with three formal sub-lemmas (C7 conditional derivation, 3D-non-degeneracy, C5 well-definedness). v0.4 was submitted to ChatGPT for sub-task (d) AI-team review per symmetric-honesty protocol on the .tex source. ChatGPT's review identified 5 substantive issues — none stylistic, all real gaps.
+
+**Per-point verification.** All 5 points verified against the v0.4 source before incorporation. Per symmetric-honesty: same review standards applied to SS-9 own work as to ChatGPT's feedback (don't rubber-stamp; verify each claim).
+
+| Point | ChatGPT claim | Verification |
+|-------|---------------|--------------|
+| 1 | Sub-Lemma 2.3 Step 4 uses planar bound $|E| \leq 3N-6$ before C7 is in play | CONFIRMED. Planarity not yet a hypothesis at C5 well-definedness stage. Trivial $\binom{N}{2}$ bound is the correct fix. |
+| 2 | $|E| \geq N-1$ is necessary but not sufficient for connectedness | CONFIRMED. Counterexample: triangle $+$ isolated vertex on $N=4$ has $|E| = 3 = N-1$ but disconnected. Use "$G$ connected" directly. |
+| 3 | Lemma B$'$ Step 3 overclaims equality | CONFIRMED. Lemma C maximizes over physically realizable graphs; Euler bounds abstract planar graphs; equality requires existence of physically realizable triangulation. |
+| 4 | Theorem clause (iv) "after centroid-realization" is undischarged | CONFIRMED. Steinitz produces abstract polytope; centroid positions are determined by physics; nothing yet links them. |
+| 5 | Facet (b) language asserts existence | CONFIRMED. "Makes the geometric realization at the centroids possible" is existence-claim phrasing without construction or citation. |
+
+**v0.5 architectural decision.** Points 3, 4, 5 reflect the same underlying gap: from "abstract simplicial convex 3-polytope structure" (delivered by Lemma B$'$) to "geometric realization at the alpha LO centroids with edge length $\Raa$" (claimed by Theorem clause (iv)). Cleanest fix: register a new paper-level structural hypothesis **C8 (FvdW centroid-realizability)**, parallel to C5/C6/C7. With C8:
+
+- Lemma B$'$ Step 3 invokes C8 explicitly for the realizability claim.
+- Theorem clause (iv) explicitly conditional on C8.
+- Facet (b) reframed as necessary precondition for C8's plausibility at degree-$\geq 5$ vertices.
+- Programme-level closure registered as **OPEN-SS-37** candidate.
+
+Points 1, 2 are simpler technical fixes within Sub-Lemma 2.3.
+
+**Sub-Lemma 2.3 corrections (Points 1, 2).**
+
+- Configuration space: $\{(c_i, R_i)_i : \text{rigid packing}; |E| \geq \Nalpha - 1\} / \mathrm{SE}(3)$ → $\{(c_i, R_i)_i : \text{rigid packing}; G(\mathcal{C}) \text{ connected}\} / \mathrm{SE}(3)$.
+- Step 1 (diameter bound) rewritten to derive directly from connectedness; explicit note about $|E| \geq N-1$ being necessary not sufficient added.
+- Step 4 (sup is finite): planar bound $|E| \leq 3\Nalpha - 6$ → trivial $|E| \leq \binom{\Nalpha}{2}$ which holds without invoking planarity.
+- Step 5: linear-chain feasibility argument extended with new connectedness-at-the-maximum claim — if $G(\mathcal{C}^*)$ disconnected, can join components by rigid translation, contradicting maximality of $B(\mathcal{C}^*)$.
+
+**C8 registration.** New §2.4 entry alongside C5/C6/C7:
+
+\textbf{C8 (FvdW centroid-realizability).} \emph{At $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the abstract simplicial convex 3-polytope structure derived in Lemma B$'$ admits a geometric realization in $\mathbb{R}^3$ with vertices at the alpha LO centroids $c_i$ and uniform edge length $\Raa$.}
+
+Equivalently: there exists a physically realizable $\Nalpha$-alpha cluster configuration whose contact graph is the 1-skeleton of the FvdW convex deltahedron at $\Nalpha$. Programme-level closure registered as **OPEN-SS-37** candidate (NEW at v0.5).
+
+**Lemma B$'$ Step 3 rework (Point 3).** Equality $|E| = 3\Nalpha - 6$ deduced from Lemma C $+$ Euler upper bound now requires explicit invocation of C8: at $\Nalpha \in \{4,...,12\}$, C8 supplies a physically realizable triangulation (the FvdW deltahedron), so Lemma C's maximum equals the Euler bound and equality holds.
+
+**Theorem clause (iv) rework (Point 4).** Proof now distinguishes (1) abstract identification of $P$ as the FvdW deltahedron via Steinitz $+$ FvdW classification (without C8) from (2) geometric realization at the c_i positions (via C8). The "after centroid-realization" undischarged assumption is replaced by an explicit invocation of C8.
+
+**Facet (b) reframe (Point 5).** Remark on facet (b) reframed: facet (b) is a *necessary precondition* for C8's plausibility at $\Nalpha \geq 7$ (it removes the strict-C1 obstruction at degree-5 vertices); whether facet (b) is also *sufficient* to construct the realization is part of OPEN-SS-37.
+
+**Effect on §9 gap list.** New entry "Steinitz-to-centroid realization gap" CLOSED via C8 registration at v0.5. The four other v0.1 gap entries unchanged from v0.4 status (Gap 1 partial; Gaps 2, 3 open; Gaps 4, 5 fully closed; Gap 6 empirical-validation entry unchanged).
+
+**Effect on programme-level OPEN-* registries.** **OPEN-SS-37 REGISTERED (NEW)** for C8 first-principles closure from A1–A11. Programme negative-result count UNCHANGED at 12 (registration of new conditional, not negative result). OPEN-SS-29 (C5 closure), OPEN-SS-30 (C6 closure), OPEN-SS-33 (C7 closure, conditionally closed at v0.2) all unchanged.
+
+**Hypothesis stack expansion.** Now C1$'$ + C2 + C3 + C5 + C6 + C7 + **C8** + rigid packing + 3D-non-degeneracy. One additional conditional (C8) relative to v0.4. Honest accounting — the realization gap was implicit in v0.4; making it explicit with C8 is what symmetric-honesty requires.
+
+**Compilation.** Three pdflatex passes (draftmode for 1, 2; output for 3): zero errors all passes; one pre-existing hyperref Token-not-allowed warning preserved (cosmetic only); one bare-`c_i` math-mode error in initial draft Theorem clause (iv) text fixed before final commit. Output 29 pages (was 27 in v0.4; +2 pages from C8 + ripples).
+
+**Polish track status after Session 28 close.**
+
+- Sub-task (a) C7 sub-lemma — DONE (Session 25, v0.2).
+- Sub-task (b) 3D-non-degeneracy sub-lemma — DONE (Session 26, v0.3).
+- Sub-task (c) C5 well-definedness sub-lemma — DONE (Session 27, v0.4).
+- Sub-task (d.1) ChatGPT review incorporation — **DONE this session (v0.5).**
+- Sub-task (d.2) Copilot review (or other reviewer rotation) — pending **Session 29**.
+- Sub-task (e) external review — pending after (d.2).
+
+**Programme state at Session 28 close.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. **OPEN-SS-37 REGISTERED (NEW)**. **SS-9 at v0.5** (was v0.4 at Session 27 close). v0.5 represents the cleanest formal state of the conditional theorem after one round of substantive AI review.
+
+**Forward priority for Session 29.** Sub-task (d.2) Copilot review (or other AI reviewer rotation) on v0.5 .tex source per symmetric-honesty protocol. With v0.5 incorporating ChatGPT's full review feedback, Copilot's review provides a second independent check; agreement between reviewers raises confidence; disagreement surfaces residual issues. Possibly run Copilot review in parallel with continued work on OPEN-SS-37 closure investigation (analogous to how OPEN-SS-33 was advanced via Sub-Lemma 2.1).
+
+**Anti-priorities sustained.** Do NOT modify SS-9 v0.5 .tex outside of v1.0 polish revisions. Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
+
+**Symmetric-honesty observation.** The protocol worked exactly as designed: ChatGPT surfaced gaps that Sessions 25–27 own-work review missed. The gap was real (implicit Steinitz-to-centroid realization), the fix is principled (register as paper-level conditional, parallel to C5/C6/C7), and the v0.5 hypothesis stack expansion is honest accounting (one new conditional explicit, rather than implicit).
+
+---
+
+*Session log Session 28 v1.0 polish sub-task (d.1) entry per §4 discipline. Substantive content: 5 ChatGPT review points incorporated as v0.5 corrections; new paper-level conditional C8 (FvdW centroid-realizability) registered; OPEN-SS-37 REGISTERED (NEW). Three pdflatex passes zero errors, 29 pages output. Polish track sub-tasks (a), (b), (c), (d.1) DONE; sub-tasks (d.2), (e) pending. Forward priority Session 29: sub-task (d.2) Copilot review on v0.5 .tex source per symmetric-honesty protocol.*
