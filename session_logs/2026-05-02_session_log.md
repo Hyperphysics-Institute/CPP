@@ -2409,3 +2409,76 @@ Negative-result count UNCHANGED at **12**. Phase 11 is the second null result in
 ---
 
 *Session log Session 23 Phase 11 entry per §4 discipline. Substantive content: R3-Pauli scoping with Gaussian repulsive core ($\sigma_P = 1.5$ fm fixed; $V_P^0$ calibrated to smooth-A target) — F1 PASSES analytically; Phase 8 anchor matches PRESERVED; sign agreement UNCHANGED at 6/8; max polytope residual UNCHANGED at 0.048 MeV/α (Phase 8: 0.050); polytope-by-polytope shifts $\leq 0.002$ MeV/α within numerical noise. **NULL RESULT — Pauli structurally redundant with Phase 8 NN-fraction-weighted differential softening (both are NN-only).** Single-session R3-channel refinement candidates EXHAUSTED (Phases 9 + 10 ruled out σ-parameterized K$_3$ class; Phase 11 R3-Pauli structurally redundant). Methodological category introduced: structural-redundancy null result. Phase 8 Refinement A confirmed at natural ceiling of R3-channel single-session refinements; structurally STRENGTHENED. Programme negative-result count UNCHANGED at 12. §7 has shifted 13 times — Phase 11 NULL marks natural saturation point; OPEN-ORG-012 .tex conversion can now begin. Forward priorities: sub-shell-physics decomposition PROMOTED to Priority 1 for Session 24 (multi-paper scope, sole remaining path to closing 52% empirical gap); OPEN-ORG-012 .tex conversion Priority 2.*
+
+---
+
+## Session 24 OPEN-ORG-012 Closure — SS-9 v0.1 .tex shipped from v0.3 working draft (6 May 2026)
+
+### Context
+
+Session 23 Phase 11 close (patch 0219) explicitly recommended OPEN-ORG-012 (.tex conversion of SS-9 v0.3) as Session 24 Priority 2 (PROMOTED from anti-priority through Phases 1-10), with rationale that Phase 11 NULL marked the natural saturation point for single-session R3-channel work — §7 stable enough for formal write-up. Priority 1 (sub-shell-physics decomposition / SS-10) is multi-paper scope and cannot complete in a single session; locking SS-9 v0.1 first creates a stable reference for SS-10. Session 24 selected Priority 2 (OPEN-ORG-012) on this reasoning.
+
+### What was done
+
+Created `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` (761 lines), a formal LaTeX paper modeled on the SS-7 v1.3 pattern. Source content imported from `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md` (218-line working draft from Session 16, 1 May 2026), with:
+- Complete preamble (article class, standard CPP packages, theorem environments, custom commands matching SS-7).
+- Full CHANGELOG header documenting v0.1 first-typeset status, OPEN-ORG-012 closure protocol, parallel OPEN-SS-32 / U-shape investigation thread (Sessions 13–23, Phases 1–11), substantive change history v0.2 (sketch) → v0.3 (markdown) → v0.1 (.tex), and complete OPEN-* problem status at v0.1 ship.
+- Title block, abstract (~3 paragraphs), keywords (~14 terms), Plain Language Summary (~one paragraph), TOC.
+- §1 Introduction with Main Result mdframed box, §1.1 Open Problems Addressed, §1.2 Cascade context, §1.3 What SS-9 delivers, §1.4 What SS-9 does not deliver.
+- §2 Setup and Notation: symbols mdframed box; §2.1 Alpha-cluster configuration; §2.2 Refined-C1 (multi-faceted alpha rigidity, facets a/b/c); §2.3 Contact relation, contact graph, binding (C2, C3); §2.4 Paper-level structural hypotheses (C5, C6, C7 with physical motivation for C7); §2.5 Auxiliary assumptions (3D-non-degeneracy, rigid packing).
+- §3 Lemma A (pairwise triangular contact), with Remarks A.1 (exclusion of partial-overlap-only) and A.2 (role of Lemma A in v0.3 framing).
+- §4 Lemma C (energy minimization picks max edges).
+- §5 Lemma B' (contact graph = 1-skeleton of convex 3-polytope) with five-step proof routing through Steinitz + Whitney + Euler, Remark B'.1 (role of refined-C1 facet (b)), Remark B'.2 (relation to v0.2 supporting-hyperplane approach).
+- §6 Main Theorem (Conditional C4 Closure on refined-C1 foundation) with four clauses (i)–(iv) and proof including geometric realizability at $N_\alpha \geq 7$ via refined-C1 facet (b).
+- §7 Scope Notes: §7.1 deltahedra-gap range, §7.2 $N_\alpha = 3$ planar degenerate case, §7.3 Coulomb screening (inheriting SS-7 §6.2 unchanged).
+- §8 Honest Assessment of Closure Status: §8.1 What v0.1 delivers, §8.2 What v0.1 does not deliver, **§8.3 OPEN-SS-32 / U-shape investigation status (Phases 1–11, Sessions 13–23)** — full integration of all investigation thread results: closures and ruling-outs (R2 Session 15, Gaussian-K_3 Session 16, twelve programme-level negative results Phases 2/3A/3B-A/3B-B/4/9/10), positive scoping outcomes (Phase 5/6/8), Phase 11 R3-Pauli NULL detail, status at v0.1 ship (single-session R3-channel candidates EXHAUSTED, Phase 8 Refinement A at natural ceiling, 52% empirical gap requires multi-paper work), methodological category structural-redundancy null result. §8.4 net effect on programme scorecard.
+- §9 Gaps That Remain to Close (six items including C7 motivation argument, C7 first-principles derivation, facet (b) mechanism identification, 3D-non-degeneracy as sub-lemma, C5 well-definedness, empirical validation at $N_\alpha \geq 7$).
+- §10 Phase 4 Sketch: programme-level closure attempts for C5, C6, C7 from CPP primitives.
+- §11 Physical Interpretation with **§11.1 CP/GP Signature at This Scale** (REQUIRED per PD-001, three paragraphs covering load-bearing axiom identification A4/A5/A8'/A11, visible-vs-smoothed discreteness analysis, macroscopic shadow correspondence to alpha-cluster regime in AME 2020).
+- §12 CPP-to-Conventional-Physics Mapping (table with seven rows mapping CPP elements to conventional-physics correspondents and observable signatures).
+- §13 Conclusion with **§13.1 Swarm-Validation Contribution** (REQUIRED per PD-001 — predictions added, running swarm total, implausibility-of-accident statement) and §13.2 Problem Status After This Paper (OPEN-SS-24 ADVANCED, OPEN-SS-29/30/31/33 REGISTERED, OPEN-SS-32 ACTIVE INVESTIGATION, OPEN-ORG-012 RETIRED).
+- Acknowledgements (development arc 16 April 2026 – 6 May 2026; OPEN-SS-32 / U-shape thread acknowledgement; external reviewer team note pre-review).
+- thebibliography (15 entries: SS-5 v6, SS-7 v1.3, SM-8, SS-2, SS-10 forthcoming, AME 2020, Steinitz 1922, Ziegler 1995, Whitney 1932, Diestel 2017, Freudenthal-vdW 1947, Coxeter 1973, Freer et al., Tohsaki-Itagaki 2018, Horiuchi-Ikeda-Kato).
+
+Git-moved `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md` to `series_strong/papers/SS-9/sketches/SS-9_v0.3_working_draft.md` per OPEN-ORG-012 closure protocol. v0.2 working draft remains in `session_logs/` as the Steinitz-pivot historical artifact.
+
+### Compilation verification
+
+Three pdflatex passes (draftmode, halt-on-error, nonstopmode). First pass: expected undefined-references warnings. Second pass: zero warnings or errors. Third pass: zero warnings or errors. Final output 21 pages. Document compiles cleanly.
+
+### Programme negative-result count UNCHANGED at 12
+
+OPEN-ORG-012 closure is organizational, not scientific. No new programme-level negative results introduced.
+
+### Programme-level state
+
+- 12 programme-level negative results (UNCHANGED from Session 23 — Phase 11 was null, OPEN-ORG-012 closure is organizational).
+- R2 remains FORMALLY CLOSED (Session 15) — unchanged.
+- Gaussian-K$_3$ framework at fixed cluster geometry remains FORMALLY CLOSED (Session 16) — unchanged.
+- Phase 9 + Phase 10 K$_3$ class closures preserved.
+- Phase 11 R3-Pauli structural-redundancy null result preserved.
+- Phase 8 Refinement A factor 3.6 polytope-residual improvement preserved AND structurally STRENGTHENED.
+- Sub-question (b) INDEPENDENT by Decoupling Theorem (Session 12) — unaffected.
+- First qualitative cross-paradigm consilience claim (Session 9) — intact.
+- §7 of SS-9 v0.3 stability: now formalized as §7 + §8 of SS-9 v0.1 .tex; further substantive shifts will come from multi-paper sub-shell-physics work (SS-10), not single-session refinements of SS-9.
+- OPEN-SS-32 / U-shape investigation thread: status report integrated as §8.3 of SS-9 v0.1 paper; thread enters multi-paper completion phase.
+- **OPEN-ORG-012 RETIRED** (organizational milestone).
+- **OPEN-SS-24 ADVANCED** from "structural hypothesis to be verified empirically" (SS-7 status) to "conditional theorem at C5 + C6 + C7 + C1' + C2 + C3 inheritance tier" (SS-9 v0.1 status).
+- **OPEN-SS-33 REGISTERED (NEW)**: C7 first-principles derivation from CPP axioms A1–A11.
+
+### Forward pointers (Session 25)
+
+**Priority 1 (UNCHANGED from Session 23 forward queue):** Sub-shell-physics decomposition (multi-paper, candidate SS-10 on Strutinsky-style shell-corrected baselines). With SS-9 v0.1 now shipped as stable reference, SS-10 has a canonical anchor to cite. $^{28}$Si and $^{32}$S persistent failures across Phases 8, 9, 10, 11 confirm sub-shell-physics-dominance interpretation. Apply F1 sign analytical check first via composition workflow extended to shell-corrected baselines.
+
+**Priority 2 (NEW for Session 25):** SS-9 v0.1 → v1.0 polish in subsequent sessions: (a) tighten C7 motivation argument as formal sub-lemma showing C6 + cluster contractibility ⇒ C7 (alternative to keeping it as paper-level hypothesis with OPEN-SS-33 registered); (b) verify 3D-non-degeneracy via maximum-edge selection sub-lemma; (c) verify C5 well-definedness via compactness argument; (d) AI-team review (ChatGPT, Copilot) per symmetric-honesty protocol; (e) external review.
+
+**Priority 3 (deferred):** Alternate-channel investigations — finite-A SEMF corrections (for $^{16}$O standout shortfall); R4-DP-sea contributions; SR-tensor channel. Multi-paper scope; not in scope until sub-shell-physics decomposition completed.
+
+**Anti-priorities sharpened from Session 23:**
+- Do NOT propose any single-session R3-channel refinement to close the remaining 52% empirical gap (Phases 9 + 10 + 11 exhausted natural candidates).
+- Phase 8 Refinement A is at the natural ceiling of R3-channel single-session refinements.
+- OPEN-ORG-012 anti-priority through Phases 1-10 retired at this session close.
+
+---
+
+*Session log Session 24 OPEN-ORG-012 closure entry per §4 discipline. Substantive content: SS-9 v0.1 .tex (761 lines) created from v0.3 working draft; v0.3 markdown moved to sketches/; §8.3 OPEN-SS-32 / U-shape investigation status (Phases 1–11, Sessions 13–23) integrated; required §11.1 CP/GP Signature and §13.1 Swarm-Validation Contribution subsections per PD-001 included; document compiles cleanly through three pdflatex passes; **OPEN-ORG-012 RETIRED**; **OPEN-SS-24 ADVANCED to conditional theorem**; **OPEN-SS-33 REGISTERED (NEW)** for C7 first-principles closure. Programme negative-result count UNCHANGED at 12. SS-9 v0.1 now serves as stable reference for SS-10 sub-shell-physics paper development; OPEN-SS-32 / U-shape thread enters multi-paper completion phase. Forward queue: SS-10 sub-shell-physics multi-paper development as Priority 1; SS-9 v0.1 → v1.0 polish as Priority 2; alternate-channel work Priority 3 deferred.*
