@@ -3,7 +3,10 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.3 -- 6 May 2026 (Session 26 OPEN-ORG-012-followup
+% Version 0.4 -- 6 May 2026 (Session 27 OPEN-ORG-012-followup
+%   v1.0 polish sub-task (c): C5 well-definedness sub-lemma added)
+%
+% Earlier Version 0.3 -- 6 May 2026 (Session 26 OPEN-ORG-012-followup
 %   v1.0 polish sub-task (b): 3D-non-degeneracy sub-lemma added)
 %
 % Earlier Version 0.2 -- 6 May 2026 (Session 25 OPEN-ORG-012-followup
@@ -13,6 +16,91 @@
 %   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v0.4 (6 May 2026 Session 27) -- v0.3 -> v1.0 POLISH SUB-TASK
+%     (c) [C5 WELL-DEFINEDNESS SUB-LEMMA]. Added Sub-Lemma 2.3
+%     (\S 2.7) establishing existence of the C5 ground state via
+%     compactness:
+%
+%        For N_alpha >= 2, sup_{C in Conf(N_alpha)} B(C) is
+%        attained at some C* in Conf(N_alpha).
+%
+%     Configuration space:
+%        Conf(N_alpha) = {(c_i, R_i) : rigid packing,
+%                                       |E(C)| >= N_alpha - 1}
+%                       / SE(3),
+%     i.e., N_alpha-tuples of (centroid, orientation) pairs
+%     satisfying no alpha-alpha interpenetration and G-connected-
+%     ness, modulo rigid motions.
+%
+%     Proof structure (5 steps):
+%     (1) G-connectedness gives diameter bound: |E| >= N_alpha - 1
+%         forces diameter <= (N_alpha - 1) * R_{alpha-alpha} via
+%         path-counting through the contact graph; modulo SE(3),
+%         centroids fit in a closed ball.
+%     (2) Pre-compactness: configuration space modulo SE(3) embeds
+%         into closed-ball^{N_alpha-1} x SO(3)^{N_alpha}, a
+%         compact product; rigid-packing is closed; intersection
+%         with compact ambient space is compact.
+%     (3) Upper-semi-continuity of B: each contact pair {alpha_i ~
+%         alpha_j} corresponds to a finite union of closed face-
+%         coincidence subvarieties F_{ij}^{ab} (16 face-pair
+%         choices, each closed); pair indicator is USC since F is
+%         closed; B = N_alpha B_alpha + B_pair * sum_{ij} 1_{F_ij}
+%         is USC (positive linear combination of USC + constant).
+%     (4) Attainment of supremum: sup B finite (bounded above by
+%         N_alpha B_alpha + (3 N_alpha - 6) B_pair via Euler);
+%         maximizing sequence has convergent subsequence by
+%         compactness; USC gives B(C*) >= limsup B(C_n) = sup B,
+%         so sup attained at C*.
+%     (5) C* is interior to Conf(N_alpha): linear-chain
+%         configuration C_chain with |E| = N_alpha - 1 is feasible
+%         and gives B(C_chain) = N_alpha B_alpha + (N_alpha - 1)
+%         B_pair, so sup B >= this value, forcing |E(C*)| >=
+%         N_alpha - 1, hence C* in Conf(N_alpha) (not just its
+%         closure).
+%
+%     Effect on \S 9 gap list: "C5 well-definedness" gap (Gap 1
+%     in v0.1) PARTIALLY CLOSED at v0.4. Existence half delivered
+%     by Sub-Lemma 2.3; uniqueness half not delivered (and not
+%     part of C5's claim per Remark 2.5) -- uniqueness is supplied
+%     separately via FvdW deltahedron uniqueness in Theorem clause
+%     (iv) at the eight specified N_alpha.
+%
+%     Three remarks accompany the sub-lemma. Remark 2.5
+%     (uniqueness vs.\ existence) clarifies that C5 does not
+%     require uniqueness; multiple equivalent ground states may
+%     exist (symmetry, FvdW non-uniqueness outside specified
+%     N_alpha). Remark 2.6 (N_alpha >= 2 threshold) notes the
+%     well-definedness threshold is broader than Sub-Lemma 2.2's
+%     N_alpha >= 4 or the Theorem's N_alpha in {4,...,12}; sub-
+%     lemma applies uniformly. Remark 2.7 (effect on \S 9 Gap 1)
+%     records the partial closure status.
+%
+%     Effect on programme-level OPEN-* registries: NONE direct.
+%     C5 well-definedness was an internal precondition for
+%     applying C5 in this paper, not a programme-level OPEN-SS-*
+%     problem; closure is paper-internal. OPEN-SS-29 (programme-
+%     level closure of C5 from A1-A11) status UNCHANGED -- well-
+%     definedness establishes the existence machinery for C5's
+%     CLAIM, not the derivation of C5 from CPP primitives.
+%
+%     Other ripples: \S 9 Gap 1 entry annotated PARTIALLY CLOSED;
+%     Theorem and Lemma B' statements unchanged at v0.4 (C5 still
+%     listed as paper-level structural hypothesis for clarity).
+%
+%     Lines added: ~135 (new \S 2.7 subsection + 3 remarks +
+%     5-step proof + footnote).
+%     Compilation: three pdflatex passes, zero warnings/errors
+%     after pass 3.
+%
+%     Polish track status after this version: sub-task (a) C7
+%     sub-lemma DONE (v0.2); sub-task (b) 3D-non-degeneracy sub-
+%     lemma DONE (v0.3); sub-task (c) C5 well-definedness sub-
+%     lemma DONE (this version, v0.4); sub-tasks (d) AI-team
+%     review per symmetric-honesty protocol, (e) external review
+%     remain. THREE SUB-LEMMAS NOW IN PLACE -- ready for sub-task
+%     (d) review submission at Session 28.
+%
 %   v0.3 (6 May 2026 Session 26) -- v0.2 -> v1.0 POLISH SUB-TASK
 %     (b) [3D-NON-DEGENERACY SUB-LEMMA]. Added Sub-Lemma 2.2 (\S 2.6)
 %     deriving 3D-non-degeneracy from C1' + C2 + C3 + C5 via the
@@ -546,6 +634,70 @@ Refined-C1 facet (b) (vertex-hosting accommodation at degree-$\geq 5$ cluster ve
 The \S\ref{sec:gaps} entry on 3D-non-degeneracy (Gap 4 in v0.1) flags the auxiliary assumption as ``Should ideally be derived from `cluster is genuinely 3-dimensional at $\Nalpha \geq 4$' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $\Nalpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma.'' Sub-Lemma~\ref{lem:3D} delivers exactly that derivation: 3D-non-degeneracy is now a theorem under the existing inheritance hypotheses C1$'$ + C2 + C3 + C5, not an independent auxiliary assumption. The Theorem statement (\S\ref{sec:theorem}) and Lemma~\ref{lem:Bprime} statement may continue to list ``3D-non-degeneracy'' as a condition for clarity at v0.2, but it is now derivable rather than assumed.
 \end{remark}
 
+\subsection{Sub-Lemma 2.3: Well-definedness of the C5 ground state via compactness}
+\label{sec:sublemma_C5_compact}
+
+C5 (\S\ref{sec:setup}) asserts that ``the realized ground state minimizes total energy, equivalently maximizes $B(\mathcal{C})$.'' This presupposes that such a maximum exists --- i.e., that the supremum $\sup_{\mathcal{C}} B(\mathcal{C})$ over physically realizable configurations is attained. We now formalize a sub-lemma showing well-definedness of the C5 ground state under the standard topology on cluster configurations.
+
+\begin{lemma}[Well-definedness of C5 ground state]
+\label{lem:C5}
+Let $\Nalpha \geq 2$. Define the configuration space
+\[
+\mathrm{Conf}(\Nalpha) \;=\; \big\{(c_1, R_1, \ldots, c_{\Nalpha}, R_{\Nalpha}) \in (\mathbb{R}^3 \times \mathrm{SO}(3))^{\Nalpha} \,:\, \text{rigid packing; } |E(\mathcal{C})| \geq \Nalpha - 1\big\} \big/ \mathrm{SE}(3),
+\]
+i.e., $\Nalpha$-tuples of (centroid, orientation) pairs satisfying no alpha-alpha interpenetration and $G$-connectedness, modulo the rigid motion group $\mathrm{SE}(3) = \mathbb{R}^3 \rtimes \mathrm{SO}(3)$. Then $\sup_{\mathcal{C} \in \mathrm{Conf}(\Nalpha)} B(\mathcal{C})$ is attained at some $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$.
+\end{lemma}
+
+\begin{proof}
+\textbf{Step 1: $G$-connectedness gives diameter bound.}
+$G$-connectedness requires the contact graph to be connected, equivalently $|E(\mathcal{C})| \geq \Nalpha - 1$ (at least a spanning tree). For $\mathcal{C}$ connected through $G$, any two centroids $c_i, c_j$ are linked by a path in $G$ of length at most $\Nalpha - 1$, with each edge contributing centroid-distance $\Raa$. Hence $\mathrm{diam}(\{c_i\}) \leq (\Nalpha - 1) \Raa$. Modulo $\mathrm{SE}(3)$ (translation $+$ rotation), the centroids fit inside a closed ball $\overline{B(0, (\Nalpha-1)\Raa)} \subset \mathbb{R}^3$ after centering on $c_1 = 0$.
+
+\textbf{Step 2: Pre-compactness of $\mathrm{Conf}(\Nalpha)$.}
+The reduced configuration space (after $\mathrm{SE}(3)$ quotient) embeds into
+\[
+\overline{B(0, (\Nalpha-1)\Raa)}^{\Nalpha-1} \times \mathrm{SO}(3)^{\Nalpha},
+\]
+a product of a compact subset of $(\mathbb{R}^3)^{\Nalpha-1}$ (after centering) and a compact group. The product is compact. Rigid packing (no alpha-alpha interpenetration) is a closed condition: the open exclusion region $\mathrm{int}(\alpha_i) \cap \mathrm{int}(\alpha_j) \neq \emptyset$ is open, so its complement is closed. The intersection of a closed set with the compact ambient space is compact. Hence $\mathrm{Conf}(\Nalpha)$ is contained in a compact set $\overline{\mathrm{Conf}}(\Nalpha)$ obtained by including limit configurations where $G$-connectedness may degenerate.
+
+\textbf{Step 3: Upper-semi-continuity of $B$.}
+The contact relation $\alpha_i \sim \alpha_j$ at LO requires exact face-coincidence between a face of $\alpha_i$ and a face of $\alpha_j$. For each ordered pair $(i, j)$ and each pair of face indices $(a, b) \in \{1, 2, 3, 4\}^2$, the condition ``face $a$ of $\alpha_i$ coincides with face $b$ of $\alpha_j$'' is a system of equality constraints on $(c_i, R_i, c_j, R_j)$: parallel face normals (with opposite orientation), centroid-to-centroid distance $\Raa$, and aligned in-face vertex correspondence. Each such condition defines a closed subvariety $F_{ij}^{ab} \subset \overline{\mathrm{Conf}}(\Nalpha)$. The contact pair is realized iff $\mathcal{C} \in \bigcup_{a, b} F_{ij}^{ab}$, a finite union of closed subvarieties, hence closed. Denote this union $F_{ij}$. The pair indicator $\mathbf{1}_{F_{ij}}$ is upper-semi-continuous (USC) since $F_{ij}$ is closed.\footnote{For $F$ closed and $x_n \to x$: if $x \in F$, then $\mathbf{1}_F(x) = 1 \geq \limsup \mathbf{1}_F(x_n)$ (which is at most 1); if $x \notin F$, then $x_n \notin F$ for $n$ large (since $F^c$ is open), so $\limsup \mathbf{1}_F(x_n) = 0 = \mathbf{1}_F(x)$.}
+
+By the SS-7 binding formula and C3,
+\[
+B(\mathcal{C}) \;=\; \Nalpha \Balpha + |E(\mathcal{C})| \Bpair \;=\; \Nalpha \Balpha + \Bpair \sum_{i < j} \mathbf{1}_{F_{ij}}(\mathcal{C}).
+\]
+Since $\Bpair > 0$ and $\mathbf{1}_{F_{ij}}$ is USC, $B$ is a positive linear combination of USC functions plus a constant, hence USC.
+
+\textbf{Step 4: Attainment of supremum.}
+The supremum is finite: $|E| \leq 3\Nalpha - 6$ by Euler's formula on $S^2$ for any planar realization (a generic upper bound, possibly not achieved for non-FvdW $\Nalpha$), so $B(\mathcal{C}) \leq \Nalpha \Balpha + (3\Nalpha - 6) \Bpair < \infty$.
+
+Take a maximizing sequence $\mathcal{C}_n \in \mathrm{Conf}(\Nalpha)$ with $B(\mathcal{C}_n) \to \sup B$. By Step 2, $\overline{\mathrm{Conf}}(\Nalpha)$ is compact, so $\mathcal{C}_n$ has a convergent subsequence $\mathcal{C}_{n_k} \to \mathcal{C}^* \in \overline{\mathrm{Conf}}(\Nalpha)$. By Step 3, $B$ is USC, so
+\[
+B(\mathcal{C}^*) \geq \limsup_k B(\mathcal{C}_{n_k}) = \sup B.
+\]
+Since $B(\mathcal{C}^*) \leq \sup B$ trivially, $B(\mathcal{C}^*) = \sup B$. The supremum is attained.
+
+\textbf{Step 5: $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$ (not just its closure).}
+A simple linear chain of $\Nalpha$ alphas with $\Nalpha - 1$ consecutive face-to-face contacts is physically realizable (rigid packing satisfied; $G$-connected via the chain). Call this $\mathcal{C}_{\mathrm{chain}}$. Then $B(\mathcal{C}_{\mathrm{chain}}) = \Nalpha \Balpha + (\Nalpha - 1) \Bpair$, so $\sup B \geq \Nalpha \Balpha + (\Nalpha - 1) \Bpair$. Hence $B(\mathcal{C}^*) \geq \Nalpha \Balpha + (\Nalpha - 1) \Bpair$, which forces $|E(\mathcal{C}^*)| \geq \Nalpha - 1$ (since $\Bpair > 0$). Therefore $\mathcal{C}^*$ is $G$-connected, i.e., $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$.
+
+The supremum is attained at $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$, so the C5 ground state exists.
+\end{proof}
+
+\begin{remark}[Uniqueness vs.\ existence]
+\label{rem:C5_uniqueness}
+Sub-Lemma~\ref{lem:C5} establishes \emph{existence} of the C5 ground state, not uniqueness. Multiple configurations $\mathcal{C}^*_1, \mathcal{C}^*_2$ with $B(\mathcal{C}^*_1) = B(\mathcal{C}^*_2) = \sup B$ may exist, particularly when symmetry leaves multiple equivalent realizations or when the FvdW deltahedron at a given $\Nalpha$ is not unique. C5 as stated does not require uniqueness; the Theorem (\S\ref{sec:theorem}) addresses uniqueness via the FvdW realization clause (iv) at the eight specified $\Nalpha$ values, where the FvdW deltahedron is provably unique up to congruence \cite{freudenthal_vdw_1947}. Outside of those eight $\Nalpha$, the C5 ground state may be non-unique, and ``the ground state'' should be read as ``some ground state.''
+\end{remark}
+
+\begin{remark}[Why $\Nalpha \geq 2$ rather than $\Nalpha \geq 4$]
+\label{rem:C5_threshold}
+The well-definedness threshold $\Nalpha \geq 2$ is broader than the Theorem's scope $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ or Sub-Lemma~\ref{lem:3D}'s threshold $\Nalpha \geq 4$. At $\Nalpha = 2$, $G$-connectedness requires $|E| \geq 1$, achievable by face-to-face contact between $\alpha_1$ and $\alpha_2$; the ground state exists (it is the unique up-to-congruence pair configuration with one face-coincidence). At $\Nalpha = 3$, $G$-connectedness requires $|E| \geq 2$, achievable by the $\alpha_1$--$\alpha_2$--$\alpha_3$ open-chain or the equilateral triangle; the ground state is the equilateral triangle ($|E| = 3$). The C5 well-definedness sub-lemma applies uniformly; downstream lemmas (Lemma~\ref{lem:Bprime}, Theorem~\ref{thm:main}) impose stricter $\Nalpha$ thresholds for their own structural reasons.
+\end{remark}
+
+\begin{remark}[Effect on \S\ref{sec:gaps} ``C5 well-definedness'' gap]
+\label{rem:C5_gap_status}
+The \S\ref{sec:gaps} entry on C5 well-definedness (Gap 1 in v0.1) flags ``Need to verify that this minimum exists and is unique. Compactness argument: all rigid-packing-compatible configurations at fixed $\Nalpha$ form a compact configuration space, so minima exist. Worth verifying as a sub-lemma.'' Sub-Lemma~\ref{lem:C5} delivers the existence half: $\mathrm{Conf}(\Nalpha)$ is pre-compact, $B$ is USC, sup is attained. Uniqueness is not delivered (and is not C5's claim, per Remark~\ref{rem:C5_uniqueness}); this leaves the uniqueness sub-question as a residual open problem at v0.3, downgraded from ``existence + uniqueness'' to ``uniqueness alone'' --- and uniqueness is supplied separately via FvdW deltahedron uniqueness in Theorem clause (iv) at the eight specified $\Nalpha$.
+\end{remark}
+
 \subsection{Auxiliary assumptions}
 
 We additionally assume:
@@ -774,7 +926,7 @@ Phase 11 NULL marks the natural saturation point for single-session R3-channel w
 
 \item \textbf{3D-non-degeneracy:} \emph{CLOSED at v0.3.} Sub-Lemma~\ref{lem:3D} (\S\ref{sec:sublemma_3D}) derives 3D-non-degeneracy from the existing inheritance hypotheses C1$'$ + C2 + C3 + C5 at $\Nalpha \geq 4$ via maximum-edge selection: coplanar centroid arrangements force $\deg_G(c_i) \leq 2$ for each alpha (any 2-plane through $c_i$ contains at most two of $\alpha_i$'s four LO face-normals), giving $|E_{\mathrm{planar}}| \leq \Nalpha < 3\Nalpha - 6 = |E_{\mathrm{FvdW}}|$ at $\Nalpha \geq 4$. Therefore no coplanar arrangement is a binding-energy maximum, and the ground state is 3D. Original entry: \emph{Stated as an assumption. Should ideally be derived from ``cluster is genuinely 3-dimensional at $\Nalpha \geq 4$'' via the maximum-edge selection (planar arrangements have fewer edges than 3D arrangements at $\Nalpha \geq 4$, so C5 picks 3D). Worth verifying as a sub-lemma.}
 
-\item \textbf{C5 well-definedness:} ``Ground-state energy minimization'' requires defining the configuration space over which to minimize. The space includes all rigid-packing-compatible arrangements at fixed $\Nalpha$ under C1$'$. Need to verify this space is well-defined and that minima exist (compactness argument).
+\item \textbf{C5 well-definedness:} \emph{PARTIALLY CLOSED at v0.4 (existence half).} Sub-Lemma~\ref{lem:C5} (\S\ref{sec:sublemma_C5_compact}) establishes that $\sup_{\mathcal{C} \in \mathrm{Conf}(\Nalpha)} B(\mathcal{C})$ is attained, hence the C5 ground state exists. Proof: $G$-connectedness gives diameter bound $(\Nalpha - 1) \Raa$; configuration space modulo $\mathrm{SE}(3)$ pre-compact in finite-dim quotient; rigid-packing closed; $|E|$ upper-semi-continuous (sum of indicators of closed face-coincidence subvarieties); USC + compact + bounded above $\Rightarrow$ sup attained. Linear chain $\mathcal{C}_{\mathrm{chain}}$ with $|E| = \Nalpha - 1$ ensures the supremum is at $\mathcal{C}^*$ with $|E(\mathcal{C}^*)| \geq \Nalpha - 1$, i.e., $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$ (not just its closure). Uniqueness is not delivered by the sub-lemma and is not C5's claim (see Remark~\ref{rem:C5_uniqueness}); uniqueness is supplied separately via FvdW deltahedron uniqueness in Theorem clause (iv) at the eight specified $\Nalpha$. Original v0.1 entry: \emph{``Ground-state energy minimization'' requires defining the configuration space over which to minimize. The space includes all rigid-packing-compatible arrangements at fixed $\Nalpha$ under C1$'$. Need to verify this space is well-defined and that minima exist (compactness argument).}
 
 \item \textbf{Empirical validation of clause (iv) at $\Nalpha \geq 7$:} The SS-7 Table 1 residual fingerprint (Regime B flat plateau at $+0.55\,\Bpair$, icosahedron suppressed at $+0.30\,\Bpair$) is consistent with the LO geometric realization of the FvdW deltahedron via facet (b) accommodation, with facet (c) slip-plane providing the NLO correction. The numerical agreement is supporting evidence but not direct verification. A more direct verification would be: predict the contact-distance distribution at degree-5 vertices of the realized FvdW deltahedron under each candidate facet (b) mechanism, and test against AMD calculations.
 \end{enumerate}
