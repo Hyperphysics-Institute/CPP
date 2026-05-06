@@ -3,7 +3,11 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.4 -- 6 May 2026 (Session 27 OPEN-ORG-012-followup
+% Version 0.5 -- 6 May 2026 (Session 28 OPEN-ORG-012-followup
+%   v1.0 polish sub-task (d.1): ChatGPT review feedback
+%   incorporation -- 5 substantive corrections + C8 registration)
+%
+% Earlier Version 0.4 -- 6 May 2026 (Session 27 OPEN-ORG-012-followup
 %   v1.0 polish sub-task (c): C5 well-definedness sub-lemma added)
 %
 % Earlier Version 0.3 -- 6 May 2026 (Session 26 OPEN-ORG-012-followup
@@ -16,6 +20,121 @@
 %   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v0.5 (6 May 2026 Session 28) -- v0.4 -> v1.0 POLISH SUB-TASK
+%     (d.1) [CHATGPT REVIEW INCORPORATION]. ChatGPT review of v0.4
+%     surfaced 5 substantive issues; all 5 incorporated as v0.5
+%     corrections. Per symmetric-honesty protocol: same review
+%     standards applied to SS-9 own work as to reviewer feedback.
+%     All 5 points verified as correct against v0.4 source before
+%     incorporation.
+%
+%     Point 1 (Sub-Lemma 2.3 Step 4): planar bound |E| <= 3N-6
+%     used before C7 assumed. Replaced with trivial bound |E| <=
+%     binomial(N, 2) which holds without invoking planarity.
+%
+%     Point 2 (Sub-Lemma 2.3 config space): |E| >= N-1 used as
+%     equivalent to G-connected (false: necessary but not
+%     sufficient -- triangle + isolated vertex on N=4 has |E| =
+%     3 = N-1 but disconnected). Replaced with "G connected"
+%     directly. Step 1 diameter bound rewritten to use
+%     connectedness directly. Step 5 adds the connectedness-
+%     at-the-maximum argument (disconnected ground state improvable
+%     by joining components -> contradicts maximality).
+%
+%     Point 3 (Lemma B' Step 3): equality |E| = 3N-6 deduced from
+%     Lemma C + Euler upper bound, but Lemma C maximizes over
+%     PHYSICALLY REALIZABLE graphs while Euler bounds ABSTRACT
+%     planar graphs. Equality requires existence of a physically
+%     realizable triangulation. Lemma B' Step 3 reworked to
+%     explicitly invoke C8 (FvdW centroid-realizability, NEW
+%     paper-level conditional) for this realizability claim.
+%
+%     Point 4 (Theorem clause (iv)): "after centroid-realization"
+%     was an undischarged assumption -- Steinitz produces an
+%     abstract polytope; the c_i positions are determined by
+%     physics; nothing yet links them. Theorem clause (iv) proof
+%     reworked to explicitly invoke C8 for the geometric
+%     realization at the centroids; FvdW supplies the abstract
+%     classification, C8 supplies the physical realization at the
+%     specific c_i positions.
+%
+%     Point 5 (facet (b) language): "facet (b)'s vertex-hosting
+%     accommodation MAKES the geometric realization at the
+%     centroids POSSIBLE" was existence-claim phrasing without
+%     construction or citation. Reframed: facet (b) is a
+%     NECESSARY PRECONDITION for C8's plausibility at N >= 7
+%     (removes the strict-C1 obstruction at degree-5 vertices);
+%     whether facet (b) is also SUFFICIENT to construct the
+%     realization is part of OPEN-SS-37.
+%
+%     Architectural addition: NEW paper-level structural
+%     hypothesis C8 (FvdW centroid-realizability) registered in
+%     \S 2.4 alongside C5/C6/C7. Programme-level closure registered
+%     as OPEN-SS-37 candidate. C8 statement: "At N_alpha in
+%     {4, 5, 6, 7, 8, 9, 10, 12}, the abstract simplicial convex
+%     3-polytope structure derived in Lemma B' admits a geometric
+%     realization in R^3 with vertices at the alpha LO centroids
+%     c_i and uniform edge length R_{alpha-alpha}." Equivalent
+%     formulation: "There exists a physically realizable
+%     N_alpha-alpha cluster configuration whose contact graph is
+%     the 1-skeleton of the FvdW convex deltahedron at N_alpha."
+%
+%     Effect on hypothesis stack: now C1' + C2 + C3 + C5 + C6 +
+%     C7 + C8 + rigid packing + 3D-non-degeneracy. One additional
+%     conditional (C8) relative to v0.4. The expansion of the
+%     conditional stack is honest accounting -- the realization
+%     gap was implicit in v0.4; making it explicit with C8 is
+%     what symmetric-honesty requires.
+%
+%     Effect on \S 9 gap list: NEW entry (Gap 7 effective)
+%     "Steinitz-to-centroid realization gap" CLOSED via C8
+%     registration at v0.5. The four other v0.1 gap entries
+%     unchanged (Gap 1 partial; Gaps 2, 3 open; Gaps 4, 5
+%     fully closed; Gap 6 empirical-validation entry unchanged).
+%
+%     Effect on programme-level OPEN-* registries: OPEN-SS-37
+%     REGISTERED (NEW) for C8 first-principles closure from
+%     A1-A11. Programme negative-result count UNCHANGED at 12
+%     (registration of new conditional, not negative result).
+%     OPEN-SS-29 (C5 closure) unchanged. OPEN-SS-30 (C6
+%     closure) unchanged. OPEN-SS-33 (C7 closure, advanced
+%     v0.2) unchanged.
+%
+%     Other ripples: Theorem statement, Lemma B' statement,
+%     Main Result mdframed, intro narrative, Open Problems
+%     Addressed list, Keywords, "What v0.1 delivers" /
+%     "What v0.1 does not deliver", swarm-contribution
+%     narrative, OPEN-SS-24 advancement narrative -- all
+%     updated to include C8 in hypothesis stack and OPEN-SS-37
+%     in pending-closure list.
+%
+%     Lines added: ~110 (C8 hypothesis + motivation in \S 2.4
+%     ~25; Sub-Lemma 2.3 corrections ~25; Lemma B' Step 3
+%     rework ~10; Theorem clause (iv) rework ~10; facet (b)
+%     remark rework ~5; \S 9 new entry ~10; CHANGELOG entry
+%     ~25). No content removed (original v0.1 phrasing
+%     preserved in remarks where appropriate).
+%
+%     Compilation: three pdflatex passes, zero errors after
+%     pass 3.
+%
+%     Polish track status after this version: sub-task (a) C7
+%     sub-lemma DONE (v0.2); sub-task (b) 3D-non-degeneracy
+%     sub-lemma DONE (v0.3); sub-task (c) C5 well-definedness
+%     sub-lemma DONE (v0.4); sub-task (d.1) ChatGPT review
+%     incorporation DONE (this version, v0.5); sub-task (d.2)
+%     Copilot review (or other reviewer rotation), (e) external
+%     review remain. v0.5 represents the cleanest formal state
+%     of the conditional theorem after one round of substantive
+%     AI review.
+%
+%     Anti-priority: do NOT modify SS-9 v0.5 .tex outside of
+%     v1.0 polish revisions. v1.0 ship now contingent on
+%     either (a) sub-task (d.2) / (e) reviews surfacing no
+%     further substantive gaps, or (b) advancement of C8
+%     toward conditional closure (analogous to Sub-Lemma 2.1's
+%     advancement of C7).
+%
 %   v0.4 (6 May 2026 Session 27) -- v0.3 -> v1.0 POLISH SUB-TASK
 %     (c) [C5 WELL-DEFINEDNESS SUB-LEMMA]. Added Sub-Lemma 2.3
 %     (\S 2.7) establishing existence of the C5 ground state via
@@ -398,13 +517,13 @@
 
 SS-7 derived a zero-parameter formula $B(\Nalpha) = \Nalpha \Balpha + (3\Nalpha - 6) \Bpair$ for strict-$N{=}Z$ alpha-chain nuclei at $\Nalpha \in \{3, \ldots, 14\}$, where the edge count $3\Nalpha - 6$ is the simplicial-polytope edge count on $\Nalpha$ vertices. SS-7 used this edge count as a paper-level structural hypothesis (assumption C4) and tested it empirically against AME 2020. The zero-parameter agreement to within $\pm 1.5\%$ across twelve nuclei (RMS $0.80\%$) supported but did not derive the simplicial-polytope structure from CPP primitives. SS-9 advances OPEN-SS-24 (registered in SS-7 v1.0) toward closure.
 
-The main result is a conditional theorem: under refined-C1 facets (a) and (b) (SS-7 v1.3), C2 (contact-face relation, SS-7), C3 (K$_3$ collective mode at each contact, SS-7), and three new paper-level hypotheses --- C5 (ground-state energy minimization), C6 (cluster surface-realization), C7 (contact-graph planarity) --- together with rigid packing and 3D-non-degeneracy, the ground-state contact graph $G(\mathcal{C})$ at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ is the 1-skeleton of a simplicial convex 3-polytope with $|E| = 3\Nalpha - 6$, every face of the polytope a triangle, and the polytope is realized geometrically as the unique Freudenthal-van der Waerden convex deltahedron at $\Nalpha$ with vertices at the alpha LO centroids and uniform edge length $\Raa$. The proof routes through three lemmas: Lemma A (pairwise triangular contact, from C1$'$ + C2), Lemma C (energy minimization picks maximum edges, from C3 + C5), and Lemma B$'$ (contact graph = 1-skeleton of convex 3-polytope, from Lemma A + Lemma C + C6 + C7 via Euler's formula and Steinitz's theorem). Refined-C1 facet (b) is load-bearing in the Theorem's geometric-realization clause at $\Nalpha \geq 7$, where the FvdW deltahedron has degree-$\geq 5$ vertices that strict-C1 with each alpha presenting four outer faces cannot host.
+The main result is a conditional theorem: under refined-C1 facets (a) and (b) (SS-7 v1.3), C2 (contact-face relation, SS-7), C3 (K$_3$ collective mode at each contact, SS-7), and four new paper-level hypotheses --- C5 (ground-state energy minimization), C6 (cluster surface-realization), C7 (contact-graph planarity), C8 (FvdW centroid-realizability) --- together with rigid packing and 3D-non-degeneracy, the ground-state contact graph $G(\mathcal{C})$ at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ is the 1-skeleton of a simplicial convex 3-polytope with $|E| = 3\Nalpha - 6$, every face of the polytope a triangle, and the polytope is realized geometrically as the unique Freudenthal-van der Waerden convex deltahedron at $\Nalpha$ with vertices at the alpha LO centroids and uniform edge length $\Raa$. The proof routes through three lemmas: Lemma A (pairwise triangular contact, from C1$'$ + C2), Lemma C (energy minimization picks maximum edges, from C3 + C5), and Lemma B$'$ (contact graph = 1-skeleton of convex 3-polytope, from Lemma A + Lemma C + C6 + C7 + C8 via Euler's formula and Steinitz's theorem). Refined-C1 facet (b) is a necessary precondition for C8's plausibility at $\Nalpha \geq 7$, where the FvdW deltahedron has degree-$\geq 5$ vertices that strict-C1 with each alpha presenting four outer faces cannot host.
 
-The conditional theorem promotes C4 from a B-tier structural hypothesis in SS-7's classification to a derived statement at the C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier. Unconditional promotion is pending closure of OPEN-SS-29 (C5 from CPP), OPEN-SS-30 (C6 from CPP), and the newly registered OPEN-SS-33 (C7 from CPP). The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$ is registered as OPEN-SS-31; clauses (i)--(iii) of the Theorem still apply (the contact graph remains a planar 3-connected simplicial graph), but clause (iv) does not (no FvdW deltahedron exists at those vertex counts). The $\Nalpha = 3$ planar degenerate case is handled separately. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode, OPEN-SS-32) is treated as an NLO addition to the LO binding formula and does not affect the LO geometric proof structure of this paper. Sessions 13--23 of the parallel OPEN-SS-32 / U-shape investigation thread are summarized in \S\ref{sec:openss32_status}; standing best refinement at the time of v0.1 ship is Phase 8 Refinement A (factor 3.6 polytope-residual improvement, 48\% of empirical scale captured).
+The conditional theorem promotes C4 from a B-tier structural hypothesis in SS-7's classification to a derived statement at the C5 + C6 + C7 + C8 + C1$'$ + C2 + C3 inheritance tier. Unconditional promotion is pending closure of OPEN-SS-29 (C5 from CPP), OPEN-SS-30 (C6 from CPP), OPEN-SS-33 (C7 from CPP), and the newly registered OPEN-SS-37 (C8 from CPP). The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$ is registered as OPEN-SS-31; clauses (i)--(iii) of the Theorem still apply (the contact graph remains a planar 3-connected simplicial graph), but clause (iv) does not (no FvdW deltahedron exists at those vertex counts). The $\Nalpha = 3$ planar degenerate case is handled separately. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode, OPEN-SS-32) is treated as an NLO addition to the LO binding formula and does not affect the LO geometric proof structure of this paper. Sessions 13--23 of the parallel OPEN-SS-32 / U-shape investigation thread are summarized in \S\ref{sec:openss32_status}; standing best refinement at the time of v0.1 ship is Phase 8 Refinement A (factor 3.6 polytope-residual improvement, 48\% of empirical scale captured).
 \end{abstract}
 
 \medskip\noindent
-\textbf{Keywords:} alpha-cluster model, simplicial polytope, Euler's formula, Steinitz's theorem, Freudenthal-van der Waerden deltahedra, contact graph, planarity, 3-vertex-connectivity, refined alpha rigidity, K$_3$ collective mode, conditional derivation, OPEN-SS-24, OPEN-SS-33, Conscious Point Physics, alpha-polytope edge formula.
+\textbf{Keywords:} alpha-cluster model, simplicial polytope, Euler's formula, Steinitz's theorem, Freudenthal-van der Waerden deltahedra, contact graph, planarity, 3-vertex-connectivity, refined alpha rigidity, K$_3$ collective mode, conditional derivation, OPEN-SS-24, OPEN-SS-33, OPEN-SS-37, Conscious Point Physics, alpha-polytope edge formula.
 
 \bigskip\noindent
 \textbf{Plain Language Summary:}
@@ -421,7 +540,7 @@ SS-7 found that the binding energies of medium-mass nuclei built from alpha part
 % ===================================================================
 
 \begin{mdframed}[backgroundcolor=blue!5, linewidth=0.8pt, roundcorner=5pt]
-\textbf{Main result.} Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ alphas, under refined-C1 facets (a) and (b), C2, C3, C5, C6, C7, rigid packing, and 3D-non-degeneracy. Then:
+\textbf{Main result.} Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ alphas, under refined-C1 facets (a) and (b), C2, C3, C5, C6, C7, C8, rigid packing, and 3D-non-degeneracy. Then:
 \begin{enumerate}[label=(\roman*)]
 \item the contact graph $G(\mathcal{C})$ is the 1-skeleton of a simplicial convex 3-polytope;
 \item $|E(\mathcal{C})| = 3\Nalpha - 6$;
@@ -434,11 +553,12 @@ The proof routes through three lemmas (\S\S\ref{sec:lemma_A}--\ref{sec:lemma_Bpr
 \subsection{Open Problems Addressed}
 \label{sec:open_problems}
 
-This paper addresses OPEN-SS-24 (derivation of simplicial contact structure from CPP), originally registered in SS-7 v1.0 as a target for SS-9. The advancement is from "structural hypothesis to be verified empirically" (SS-7 status) to "conditional theorem at the C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier" (SS-9 status), with three new candidate open problems registered for first-principles closure:
+This paper addresses OPEN-SS-24 (derivation of simplicial contact structure from CPP), originally registered in SS-7 v1.0 as a target for SS-9. The advancement is from "structural hypothesis to be verified empirically" (SS-7 status) to "conditional theorem at the C5 + C6 + C7 + C8 + C1$'$ + C2 + C3 inheritance tier" (SS-9 status), with four new candidate open problems registered for first-principles closure:
 \begin{itemize}
 \item OPEN-SS-29: derive C5 (ground-state energy minimization) from CPP axioms A1--A11.
 \item OPEN-SS-30: derive C6 (cluster surface-realization, no alpha interior to cluster) from A1--A11.
 \item OPEN-SS-33: derive C7 (contact-graph planarity) from A1--A11. \emph{New this paper at v0.1; advanced to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5'' at v0.2 via Sub-Lemma~\ref{lem:C7}.}
+\item OPEN-SS-37: derive C8 (FvdW centroid-realizability) from A1--A11. \emph{New at v0.5; surfaced by Session 28 ChatGPT review of v0.4 as the previously implicit Steinitz-to-centroid realization gap. Closure route involves showing the alpha cluster physics realizes the FvdW deltahedron geometry at the centroid positions; refined-C1 facet (b) is a necessary precondition at $\Nalpha \geq 7$.}
 \end{itemize}
 The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$, where clause (iv) of the Theorem does not apply because no FvdW convex deltahedron exists at those vertex counts, is registered as OPEN-SS-31. Refined-C1 facet (c) (cluster-level collective oblate-deformation slip-plane mode), an active investigation thread in parallel with this paper's development (OPEN-SS-32, SS-9 v0.3 \S 7 in earlier drafts; \S\ref{sec:openss32_status} of this paper), is treated as NLO and does not affect the LO geometric proof structure of this paper.
 
@@ -531,9 +651,14 @@ Define:
 
 \textbf{C7 (contact-graph planarity).} The contact graph $G(\mathcal{C})$ is planar --- it admits an embedding in the plane (equivalently, on $S^2$) without edge crossings. \emph{Programme-level closure registered as OPEN-SS-33 candidate (NEW this paper).}
 
+\textbf{C8 (FvdW centroid-realizability).} At $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the abstract simplicial convex 3-polytope structure derived in Lemma~\ref{lem:Bprime} admits a geometric realization in $\mathbb{R}^3$ with vertices at the alpha LO centroids $c_i$ and uniform edge length $\Raa$. Equivalently: there exists a physically realizable $\Nalpha$-alpha cluster configuration whose contact graph is the 1-skeleton of the FvdW convex deltahedron at $\Nalpha$, geometrically embedded at the alpha centroids. \emph{Programme-level closure registered as OPEN-SS-37 candidate (NEW at v0.5).}
+
+\medskip
+\textbf{Physical motivation for C8.} Steinitz's theorem (1922) classifies graphs that are 1-skeletons of convex 3-polytopes \emph{abstractly}: any simple, planar, 3-vertex-connected graph $G$ is the 1-skeleton of \emph{some} convex 3-polytope $P$. The polytope $P$ is determined up to abstract combinatorial structure, but its \emph{geometric realization} in $\mathbb{R}^3$ --- in particular, whether $P$ can be realized with vertices at \emph{specifically} the alpha LO centroid positions $c_i$ (which are determined by the physics of rigid packing $+$ C2 face-coincidences, not chosen abstractly) --- requires a separate argument. C8 records this geometric realizability claim as a paper-level hypothesis. The Freudenthal--van der Waerden theorem (1947) supplies the abstract polytope side: at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the unique simplicial convex 3-polytope on $\Nalpha$ vertices with all-equilateral-triangular faces and uniform edge length is the FvdW deltahedron. C2 supplies the uniform-edge-length condition $\Raa$. The remaining ingredient --- that the alpha cluster physics actually realizes this geometry --- is C8. Refined-C1 facet (b) (vertex-hosting accommodation at degree-$\geq 5$ vertices) is a necessary precondition for C8's plausibility at $\Nalpha \geq 7$, since strict-C1 with each alpha presenting four outer faces cannot host the degree-5 vertices of the FvdW deltahedra at $\Nalpha \geq 7$; whether facet (b) is also \emph{sufficient} to construct the realization (not just remove the strict-C1 obstruction) is part of OPEN-SS-37.
+
 \textbf{Physical motivation for C7.} Under C6, the cluster is a ``shell'' of alphas with no interior member. Under C1$'$ + rigid packing, the cluster is a contractible connected 3D region (no internal voids in the standard nuclear physics interpretation of an alpha cluster). Each alpha contributes outer faces to the cluster's exterior 2-surface $\Sigma$, with $\Sigma \cong S^2$ topologically (boundary of a contractible 3D region). The contact graph admits a natural embedding on $\Sigma$ via the alpha-dual construction (each alpha as a point on its own outer-face region, each contact as an arc through the shared interior face). This embedding makes $G$ planar. The C7 hypothesis records this topological inheritance from C6 + cluster contractibility, abstracted from the geometric details of the embedding so that Steinitz's theorem can be invoked directly. C7's first-principles closure from CPP primitives is the OPEN-SS-33 question; physical motivation alone justifies it as a paper-level hypothesis at the C5/C6 tier.
 
-C5, C6, C7 are \textbf{paper-level structural hypotheses at the SS-7 inheritance tier}. None is derived from CPP axioms A1--A11 in this paper; each is registered as an OPEN-SS-2X / 3X candidate for follow-up programme-level closure.
+C5, C6, C7, C8 are \textbf{paper-level structural hypotheses at the SS-7 inheritance tier}. None is derived from CPP axioms A1--A11 in this paper; each is registered as an OPEN-SS-2X / 3X candidate for follow-up programme-level closure.
 
 \subsection{Sub-Lemma 2.1: Conditional derivation of C7 from cluster contractibility}
 \label{sec:sublemma_C7}
@@ -643,14 +768,14 @@ C5 (\S\ref{sec:setup}) asserts that ``the realized ground state minimizes total 
 \label{lem:C5}
 Let $\Nalpha \geq 2$. Define the configuration space
 \[
-\mathrm{Conf}(\Nalpha) \;=\; \big\{(c_1, R_1, \ldots, c_{\Nalpha}, R_{\Nalpha}) \in (\mathbb{R}^3 \times \mathrm{SO}(3))^{\Nalpha} \,:\, \text{rigid packing; } |E(\mathcal{C})| \geq \Nalpha - 1\big\} \big/ \mathrm{SE}(3),
+\mathrm{Conf}(\Nalpha) \;=\; \big\{(c_1, R_1, \ldots, c_{\Nalpha}, R_{\Nalpha}) \in (\mathbb{R}^3 \times \mathrm{SO}(3))^{\Nalpha} \,:\, \text{rigid packing; } G(\mathcal{C}) \text{ connected}\big\} \big/ \mathrm{SE}(3),
 \]
 i.e., $\Nalpha$-tuples of (centroid, orientation) pairs satisfying no alpha-alpha interpenetration and $G$-connectedness, modulo the rigid motion group $\mathrm{SE}(3) = \mathbb{R}^3 \rtimes \mathrm{SO}(3)$. Then $\sup_{\mathcal{C} \in \mathrm{Conf}(\Nalpha)} B(\mathcal{C})$ is attained at some $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$.
 \end{lemma}
 
 \begin{proof}
 \textbf{Step 1: $G$-connectedness gives diameter bound.}
-$G$-connectedness requires the contact graph to be connected, equivalently $|E(\mathcal{C})| \geq \Nalpha - 1$ (at least a spanning tree). For $\mathcal{C}$ connected through $G$, any two centroids $c_i, c_j$ are linked by a path in $G$ of length at most $\Nalpha - 1$, with each edge contributing centroid-distance $\Raa$. Hence $\mathrm{diam}(\{c_i\}) \leq (\Nalpha - 1) \Raa$. Modulo $\mathrm{SE}(3)$ (translation $+$ rotation), the centroids fit inside a closed ball $\overline{B(0, (\Nalpha-1)\Raa)} \subset \mathbb{R}^3$ after centering on $c_1 = 0$.
+$G$ being connected means any two centroids $c_i, c_j$ are linked by a path in $G$ of length at most $\Nalpha - 1$ (a connected graph on $\Nalpha$ vertices has diameter at most $\Nalpha - 1$). Each edge of this path corresponds to a face-to-face contact, contributing centroid-distance $\Raa$ via C2. By the triangle inequality, $\mathrm{diam}(\{c_i\}) \leq (\Nalpha - 1) \Raa$. Modulo $\mathrm{SE}(3)$ (translation $+$ rotation), the centroids fit inside a closed ball $\overline{B(0, (\Nalpha-1)\Raa)} \subset \mathbb{R}^3$ after centering on $c_1 = 0$. (Note: $|E| \geq \Nalpha - 1$ is necessary but not sufficient for connectedness --- a triangle plus an isolated vertex on $\Nalpha = 4$ has $|E| = 3 = \Nalpha - 1$ but is disconnected --- so we use $G$ connected directly, not the edge-count proxy.)
 
 \textbf{Step 2: Pre-compactness of $\mathrm{Conf}(\Nalpha)$.}
 The reduced configuration space (after $\mathrm{SE}(3)$ quotient) embeds into
@@ -669,7 +794,7 @@ B(\mathcal{C}) \;=\; \Nalpha \Balpha + |E(\mathcal{C})| \Bpair \;=\; \Nalpha \Ba
 Since $\Bpair > 0$ and $\mathbf{1}_{F_{ij}}$ is USC, $B$ is a positive linear combination of USC functions plus a constant, hence USC.
 
 \textbf{Step 4: Attainment of supremum.}
-The supremum is finite: $|E| \leq 3\Nalpha - 6$ by Euler's formula on $S^2$ for any planar realization (a generic upper bound, possibly not achieved for non-FvdW $\Nalpha$), so $B(\mathcal{C}) \leq \Nalpha \Balpha + (3\Nalpha - 6) \Bpair < \infty$.
+The supremum is finite: $|E| \leq \binom{\Nalpha}{2} = \Nalpha(\Nalpha - 1)/2$ trivially (the maximum number of pairs among $\Nalpha$ alphas; this bound holds without invoking planarity, which is not yet a hypothesis at the C5 well-definedness stage). Hence $B(\mathcal{C}) \leq \Nalpha \Balpha + [\Nalpha(\Nalpha - 1)/2] \Bpair < \infty$.
 
 Take a maximizing sequence $\mathcal{C}_n \in \mathrm{Conf}(\Nalpha)$ with $B(\mathcal{C}_n) \to \sup B$. By Step 2, $\overline{\mathrm{Conf}}(\Nalpha)$ is compact, so $\mathcal{C}_n$ has a convergent subsequence $\mathcal{C}_{n_k} \to \mathcal{C}^* \in \overline{\mathrm{Conf}}(\Nalpha)$. By Step 3, $B$ is USC, so
 \[
@@ -678,7 +803,9 @@ B(\mathcal{C}^*) \geq \limsup_k B(\mathcal{C}_{n_k}) = \sup B.
 Since $B(\mathcal{C}^*) \leq \sup B$ trivially, $B(\mathcal{C}^*) = \sup B$. The supremum is attained.
 
 \textbf{Step 5: $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$ (not just its closure).}
-A simple linear chain of $\Nalpha$ alphas with $\Nalpha - 1$ consecutive face-to-face contacts is physically realizable (rigid packing satisfied; $G$-connected via the chain). Call this $\mathcal{C}_{\mathrm{chain}}$. Then $B(\mathcal{C}_{\mathrm{chain}}) = \Nalpha \Balpha + (\Nalpha - 1) \Bpair$, so $\sup B \geq \Nalpha \Balpha + (\Nalpha - 1) \Bpair$. Hence $B(\mathcal{C}^*) \geq \Nalpha \Balpha + (\Nalpha - 1) \Bpair$, which forces $|E(\mathcal{C}^*)| \geq \Nalpha - 1$ (since $\Bpair > 0$). Therefore $\mathcal{C}^*$ is $G$-connected, i.e., $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$.
+A simple linear chain of $\Nalpha$ alphas with $\Nalpha - 1$ consecutive face-to-face contacts is physically realizable (rigid packing satisfied; $G$-connected via the chain). Call this $\mathcal{C}_{\mathrm{chain}}$. Then $B(\mathcal{C}_{\mathrm{chain}}) = \Nalpha \Balpha + (\Nalpha - 1) \Bpair$, so $\sup B \geq \Nalpha \Balpha + (\Nalpha - 1) \Bpair$, hence $|E(\mathcal{C}^*)| \geq \Nalpha - 1$ (since $\Bpair > 0$).
+
+We further claim $G(\mathcal{C}^*)$ is connected. Suppose for contradiction $G(\mathcal{C}^*)$ has $r \geq 2$ connected components $K_1, \ldots, K_r$. By rigid translation of $K_2$ relative to $K_1$ (a degree of freedom not constrained by physical realizability \emph{within} $K_1$ or \emph{within} $K_2$), $K_2$ can be brought into face-to-face contact with $K_1$ along an outward face of one alpha in each (achievable by appropriate rigid motion of the entire $K_2$ component, with orientation aligned to share a face-normal). The resulting configuration $\mathcal{C}'$ has $|E(\mathcal{C}')| \geq |E(\mathcal{C}^*)| + 1$ (the original within-component edges preserved, plus the new join-contact edge), so $B(\mathcal{C}') > B(\mathcal{C}^*) = \sup B$, contradicting $\sup B$ being the supremum. Therefore $G(\mathcal{C}^*)$ is connected, and $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$.
 
 The supremum is attained at $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$, so the C5 ground state exists.
 \end{proof}
@@ -695,7 +822,7 @@ The well-definedness threshold $\Nalpha \geq 2$ is broader than the Theorem's sc
 
 \begin{remark}[Effect on \S\ref{sec:gaps} ``C5 well-definedness'' gap]
 \label{rem:C5_gap_status}
-The \S\ref{sec:gaps} entry on C5 well-definedness (Gap 1 in v0.1) flags ``Need to verify that this minimum exists and is unique. Compactness argument: all rigid-packing-compatible configurations at fixed $\Nalpha$ form a compact configuration space, so minima exist. Worth verifying as a sub-lemma.'' Sub-Lemma~\ref{lem:C5} delivers the existence half: $\mathrm{Conf}(\Nalpha)$ is pre-compact, $B$ is USC, sup is attained. Uniqueness is not delivered (and is not C5's claim, per Remark~\ref{rem:C5_uniqueness}); this leaves the uniqueness sub-question as a residual open problem at v0.3, downgraded from ``existence + uniqueness'' to ``uniqueness alone'' --- and uniqueness is supplied separately via FvdW deltahedron uniqueness in Theorem clause (iv) at the eight specified $\Nalpha$.
+The \S\ref{sec:gaps} entry on C5 well-definedness (Gap 1 in v0.1) flags ``Need to verify that this minimum exists and is unique. Compactness argument: all rigid-packing-compatible configurations at fixed $\Nalpha$ form a compact configuration space, so minima exist. Worth verifying as a sub-lemma.'' Sub-Lemma~\ref{lem:C5} delivers the existence half: $\mathrm{Conf}(\Nalpha)$ is pre-compact, $B$ is USC, sup is attained. Uniqueness is not delivered (and is not C5's claim, per Remark~\ref{rem:C5_uniqueness}); this leaves the uniqueness sub-question as a residual open problem at v0.3, downgraded from ``existence + uniqueness'' to ``uniqueness alone'' --- and uniqueness is supplied separately via FvdW deltahedron uniqueness in Theorem clause (iv) at the eight specified $\Nalpha$. \emph{v0.5 update}: at v0.4 the configuration space was incorrectly defined using $|E(\mathcal{C})| \geq \Nalpha - 1$ rather than ``$G$ connected'' (the former is necessary but not sufficient for connectedness), and Step 4 incorrectly invoked the planar Euler bound $|E| \leq 3\Nalpha - 6$ before C7 was assumed. Both are corrected at v0.5: configuration space uses $G$ connected directly; Step 4 uses the trivial bound $|E| \leq \binom{\Nalpha}{2}$; Step 5 adds the connectedness-at-the-maximum argument (a disconnected ground state could be improved by joining two components, contradicting maximality).
 \end{remark}
 
 \subsection{Auxiliary assumptions}
@@ -751,7 +878,7 @@ By the SS-7 binding formula and C3, $B(\mathcal{C}) = \Nalpha \Balpha + |E(\math
 
 \begin{lemma}[Contact Graph as 1-Skeleton of Convex 3-Polytope]
 \label{lem:Bprime}
-Let $\mathcal{C}$ be a ground-state $\Nalpha$-alpha cluster configuration with $\Nalpha \geq 4$, satisfying C1$'$ (facets a, b), C2, C3, C5, C6, C7, rigid packing, and 3D-non-degeneracy. Then the contact graph $G(\mathcal{C})$ is the 1-skeleton (vertex-edge graph) of a simplicial convex 3-polytope, with $|E(\mathcal{C})| = 3\Nalpha - 6$ and every face of the polytope a triangle.
+Let $\mathcal{C}$ be a ground-state $\Nalpha$-alpha cluster configuration with $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, satisfying C1$'$ (facets a, b), C2, C3, C5, C6, C7, C8, rigid packing, and 3D-non-degeneracy. Then the contact graph $G(\mathcal{C})$ is the 1-skeleton (vertex-edge graph) of a simplicial convex 3-polytope, with $|E(\mathcal{C})| = 3\Nalpha - 6$ and every face of the polytope a triangle.
 \end{lemma}
 
 \begin{proof}
@@ -764,11 +891,11 @@ We proceed in five steps.
 \textbf{Step 2: $G$ is planar.} By C7. \checkmark
 
 \medskip
-\textbf{Step 3: $|E| = 3\Nalpha - 6$ and every face of the planar embedding is a triangle.} By Lemma~\ref{lem:C}, $G$ has maximum $|E|$ among realizable contact graphs on $\Nalpha$ vertices. By Euler's formula applied to a connected planar graph on $\Nalpha$ vertices: $V - E + F = 2$, where $F$ is the face count of the planar embedding. Each face has at least three edges (no face is a 2-gon in a simple graph), and each edge is shared by exactly two faces, so $\sum_{f} |\partial f| = 2|E|$ with $|\partial f| \geq 3$, giving $3|F| \leq 2|E|$, i.e., $|F| \leq 2|E|/3$. Substituting into Euler:
+\textbf{Step 3: $|E| = 3\Nalpha - 6$ and every face of the planar embedding is a triangle.} By Lemma~\ref{lem:C}, $G$ has maximum $|E|$ among \emph{physically realizable} contact graphs on $\Nalpha$ vertices. By Euler's formula applied to a connected planar graph on $\Nalpha$ vertices: $V - E + F = 2$, where $F$ is the face count of the planar embedding. Each face has at least three edges (no face is a 2-gon in a simple graph), and each edge is shared by exactly two faces, so $\sum_{f} |\partial f| = 2|E|$ with $|\partial f| \geq 3$, giving $3|F| \leq 2|E|$, i.e., $|F| \leq 2|E|/3$. Substituting into Euler:
 \[
 \Nalpha - |E| + \tfrac{2|E|}{3} \geq 2, \quad \text{i.e., } \quad |E| \leq 3\Nalpha - 6,
 \]
-with equality iff every face is a triangle. By Lemma~\ref{lem:C} the ground-state $G$ achieves this maximum, so $|E| = 3\Nalpha - 6$ and every face of the planar embedding is a triangle. \checkmark
+with equality iff every face is a triangle. The Euler bound establishes $|E| \leq 3\Nalpha - 6$ as an \emph{upper bound} on any planar graph; equality $|E| = 3\Nalpha - 6$ requires that some physically realizable triangulation on $\Nalpha$ vertices exists, since Lemma~\ref{lem:C}'s maximum is over physically realizable graphs (not over all abstract planar graphs). By C8 (FvdW centroid-realizability), at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the FvdW deltahedron --- a triangulated convex 3-polytope on $\Nalpha$ vertices --- is physically realizable as an alpha cluster. Hence at these $\Nalpha$, a physically realizable triangulation exists, Lemma~\ref{lem:C}'s maximum equals $3\Nalpha - 6$, and the ground-state $G$ achieves $|E| = 3\Nalpha - 6$ with every face triangular. \checkmark
 
 \medskip
 \textbf{Step 4: $G$ is 3-vertex-connected.} By Step 3, $G$ is a triangulation of $S^2$ (every face of the planar embedding is a triangle, and the embedding is on $S^2$ by the standard one-point compactification of $\mathbb{R}^2$). Standard result (Diestel, \emph{Graph Theory} \cite{diestel2017}, Proposition 4.5.2; Whitney 1932 \cite{whitney1932}): every triangulation of $S^2$ on $N \geq 4$ vertices is 3-vertex-connected. \checkmark
@@ -777,9 +904,9 @@ with equality iff every face is a triangle. By Lemma~\ref{lem:C} the ground-stat
 \textbf{Step 5: Apply Steinitz's theorem.} By Steinitz's theorem (1922 \cite{steinitz1922}; cf. Ziegler, \emph{Lectures on Polytopes} \cite{ziegler1995}, Theorem 4.1): a graph $G$ is the 1-skeleton of a convex 3-polytope iff $G$ is simple, planar, and 3-vertex-connected. By Steps 1, 2, 4, $G$ is the 1-skeleton of a convex 3-polytope $P$. By Step 3, $P$ is simplicial (every 2-face triangular) with $|E| = 3\Nalpha - 6$. \checkmark
 \end{proof}
 
-\begin{remark}[Role of refined-C1 facet (b)]
+\begin{remark}[Role of refined-C1 facet (b) at degree-$\geq 5$ vertices]
 \label{rem:B1}
-Lemma~\ref{lem:Bprime} delivers a graph-theoretic conclusion: the contact graph is the 1-skeleton of \emph{some} convex 3-polytope $P$. The polytope $P$ is determined up to its abstract combinatorial structure by Steinitz, but the \emph{geometric realization} of $P$ in $\mathbb{R}^3$ --- specifically, whether $P$ can be realized with vertices at the alpha centroids --- is a separate question handled in the Theorem (\S\ref{sec:theorem}) below. Refined-C1 facet (b) enters the Theorem at clause (iv): at $\Nalpha \geq 7$, the FvdW deltahedron has degree-5 vertices, and only facet (b)'s vertex-hosting accommodation makes the geometric realization at the centroids possible (strict-C1 with each alpha presenting four outer faces cannot host five face-coincident contacts at one alpha). This is the structural integration of Session 3's refined-C1 work into the SS-9 closure: facet (b) is load-bearing for clause (iv), not just for dissolving the strict-C1 inconsistency that motivated its introduction.
+Lemma~\ref{lem:Bprime} delivers a graph-theoretic conclusion: the contact graph is the 1-skeleton of \emph{some} convex 3-polytope $P$. The polytope $P$ is determined up to its abstract combinatorial structure by Steinitz, but the \emph{geometric realization} of $P$ in $\mathbb{R}^3$ at the alpha LO centroids is the content of C8 (\S\ref{sec:setup}, paper-level structural hypotheses), handled in the Theorem (\S\ref{sec:theorem}) below. Refined-C1 facet (b) enters as a \emph{necessary precondition for C8's plausibility} at $\Nalpha \geq 7$: the FvdW deltahedron at $\Nalpha = 7$ has degree-5 vertices, and strict-C1 with each alpha presenting four outer faces cannot host five face-coincident contacts at one alpha; facet (b)'s vertex-hosting accommodation removes this strict-C1 obstruction, making C8 a viable hypothesis at $\Nalpha \geq 7$. Whether facet (b) is also \emph{sufficient} to construct the FvdW realization at the centroids (not just to remove the strict-C1 obstruction) is part of OPEN-SS-37. The structural integration of Session 3's refined-C1 work into the SS-9 closure is therefore: facet (b) is load-bearing for C8's viability, not directly for the geometric realization itself.
 \end{remark}
 
 \begin{remark}[Relation to the v0.2 supporting-hyperplane approach]
@@ -794,7 +921,7 @@ v0.2 of the working draft sought to derive contact-graph-equals-1-skeleton from 
 
 \begin{theorem}[Conditional C4 closure on refined-C1 foundation]
 \label{thm:main}
-Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ alphas, under C1$'$ (facets a, b), C2, C3, C5, C6, C7, rigid packing, and 3D-non-degeneracy. Then:
+Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ alphas, under C1$'$ (facets a, b), C2, C3, C5, C6, C7, C8, rigid packing, and 3D-non-degeneracy. Then:
 \begin{enumerate}[label=(\roman*)]
 \item $G(\mathcal{C})$ is the 1-skeleton of a simplicial convex 3-polytope.
 \item $|E(\mathcal{C})| = 3\Nalpha - 6$.
@@ -807,7 +934,9 @@ Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \i
 \textbf{Clauses (i)--(iii):} Direct consequence of Lemma~\ref{lem:Bprime}.
 
 \medskip
-\textbf{Clause (iv):} By (i)--(iii), $G$ is the 1-skeleton of a simplicial convex 3-polytope $P$. By C2, every contact in the ground state has centroid-centroid separation $\Raa$ at LO, so every edge of $P$ has the same length $\Raa$ (after centroid-realization). A simplicial convex 3-polytope on $\Nalpha$ vertices with all-equilateral-triangular faces and uniform edge length is, by definition, a \textbf{convex deltahedron} of edge length $\Raa$. By the Freudenthal--van der Waerden theorem (1947 \cite{freudenthal_vdw_1947}): convex deltahedra exist on exactly $N \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ vertices, and at each of these $N$ values the convex deltahedron is unique up to isometry. So $P$ is realized as the FvdW deltahedron at $\Nalpha$.
+\textbf{Clause (iv):} By (i)--(iii), $G$ is the 1-skeleton of a simplicial convex 3-polytope $P$, abstractly identified by Steinitz's theorem from the combinatorial structure of $G$. By C2, every contact in the ground state has centroid-centroid separation $\Raa$ at LO, so every edge of $P$ has the same length $\Raa$. By the Freudenthal--van der Waerden theorem (1947 \cite{freudenthal_vdw_1947}): convex deltahedra (simplicial convex 3-polytopes with all-equilateral-triangular faces and uniform edge length) exist on exactly $N \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ vertices, and at each of these $N$ values the convex deltahedron is unique up to isometry. Hence the polytope $P$ is the FvdW deltahedron at $\Nalpha$ \emph{abstractly}.
+
+The remaining step is the geometric realization at the alpha LO centroid positions $c_i$, which is exactly the content of C8 (FvdW centroid-realizability). Steinitz produces an abstract polytope; FvdW classifies it as the FvdW deltahedron; C8 supplies the geometric realization with vertices at the $c_i$ and edges of length $\Raa$. By C8, such a realization exists at each $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$. So $P$ is realized as the FvdW deltahedron at $\Nalpha$ with vertices at the alpha LO centroids and uniform edge length $\Raa$. \checkmark
 
 \medskip
 \textbf{Geometric realizability at $\Nalpha \geq 7$ via refined-C1 facet (b):} At $\Nalpha \in \{7, 8, 9, 10, 12\}$, the FvdW deltahedron has at least one vertex of degree $\geq 5$:
@@ -852,7 +981,7 @@ Per SS-7 \S 6.2, alpha-alpha Coulomb repulsion at the deltahedral surface is tre
 \label{sec:delivers}
 
 \begin{itemize}
-\item Theorem~\ref{thm:main} statement and proof for $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$: C4 holds as a theorem, conditional on \textbf{C1$'$ + C2 + C3 + C5 + C6 + C7 + rigid packing + 3D-non-degeneracy}. The hypothesis stack has \textbf{one new entry} relative to v0.2 (C7), tracked at OPEN-SS-33 candidate.
+\item Theorem~\ref{thm:main} statement and proof for $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$: C4 holds as a theorem, conditional on \textbf{C1$'$ + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy}. The hypothesis stack has \textbf{two new entries} relative to v0.4 ChatGPT-review baseline: C8 (FvdW centroid-realizability), tracked at OPEN-SS-37 candidate; and tightened use of C7 / Lemma~\ref{lem:Bprime} consistent with C8's separate role. Relative to pre-v0.5: C7 (tracked at OPEN-SS-33) and C8 (tracked at OPEN-SS-37).
 \item Graph-simplicial extension at $\Nalpha \in \{11, 13, 14\}$: clauses (i)--(iii) of Theorem hold; clause (iv) does not. Registered as OPEN-SS-31.
 \item $\Nalpha = 3$ planar degenerate: handled by direct edge count.
 \item Refined-C1 facet (b) integrated as load-bearing in Theorem clause (iv). Without facet (b), clause (iv) is vacuous at $\Nalpha \geq 7$.
@@ -866,6 +995,7 @@ Per SS-7 \S 6.2, alpha-alpha Coulomb repulsion at the deltahedral surface is tre
 \item Programme-level closure of C5 from A1--A11. Registered as OPEN-SS-29 candidate.
 \item Programme-level closure of C6 from A1--A11. Registered as OPEN-SS-30 candidate.
 \item Programme-level closure of C7 from A1--A11. \textbf{NEW: OPEN-SS-33 candidate.} \emph{Advanced at v0.2 to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5'' via Sub-Lemma~\ref{lem:C7}.}
+\item Programme-level closure of C8 (FvdW centroid-realizability) from A1--A11. \textbf{NEW at v0.5: OPEN-SS-37 candidate.} Surfaced by Session 28 ChatGPT review of v0.4 as a previously implicit gap; registered as a paper-level structural hypothesis at v0.5 to make the Steinitz-to-centroid realization gap explicit. Closure route likely involves showing that the alpha cluster physics (rigid packing $+$ C2 face-coincidences $+$ refined-C1 facet (b) at degree-$\geq 5$ vertices) is consistent with --- and ideally forces --- the FvdW deltahedron geometry at the centroid positions. Refined-C1 facet (b) is a necessary precondition for the realization at $\Nalpha \geq 7$; whether facet (b) is also sufficient to construct the realization is the primary content of OPEN-SS-37.
 \item Resolution of the deltahedra-gap at $\Nalpha \in \{11, 13, 14\}$. Registered as OPEN-SS-31 candidate.
 \item First-principles derivation of facet (b)'s mechanism (face-edge hybrid? K$_3$ delocalization? partial overlap?). Mentioned but not derived. Could fold into OPEN-SS-32 derivation if facets (b) and (c) share Layer-3 ancestry as the same K$_3$ scale-recurrence operating at different geometric venues.
 \item First-principles derivation of facet (c) attenuation factor. Active investigation thread (OPEN-SS-32); see \S\ref{sec:openss32_status}.
@@ -907,8 +1037,8 @@ Phase 11 NULL marks the natural saturation point for single-session R3-channel w
 \label{sec:scorecard}
 
 \begin{itemize}
-\item C4 promoted from ``structural hypothesis'' (B-tier in SS-7's Layer A/B/C/D classification) to \textbf{``conditional theorem at C5 + C6 + C7 inheritance tier on the refined-C1 foundation.''}
-\item SS-7 conditional binding-formula entries promote conditionally: now C5 + C6 + C7 + C1$'$ + C2 + C3-conditional, instead of C4 + C1 + C2 + C3-conditional. Net change relative to v0.2: one additional conditional (C7); relative to pre-v0.2: one structural hypothesis (C4) replaced by three new structural hypotheses (C5, C6, C7).
+\item C4 promoted from ``structural hypothesis'' (B-tier in SS-7's Layer A/B/C/D classification) to \textbf{``conditional theorem at C5 + C6 + C7 + C8 inheritance tier on the refined-C1 foundation.''}
+\item SS-7 conditional binding-formula entries promote conditionally: now C5 + C6 + C7 + C8 + C1$'$ + C2 + C3-conditional, instead of C4 + C1 + C2 + C3-conditional. Net change relative to v0.4 ChatGPT-review baseline: one additional conditional (C8); relative to v0.2: two additional conditionals (C7 and C8); relative to pre-v0.2: one structural hypothesis (C4) replaced by four new structural hypotheses (C5, C6, C7, C8).
 \item Unconditional promotion would require closing all of OPEN-SS-29, OPEN-SS-30, \textbf{OPEN-SS-33 (NEW)}, OPEN-SS-31, plus the existing OPEN-SS-26, OPEN-SS-27, OPEN-SS-28 (for D1, D2, D3) at SS-8.
 \end{itemize}
 
@@ -929,6 +1059,8 @@ Phase 11 NULL marks the natural saturation point for single-session R3-channel w
 \item \textbf{C5 well-definedness:} \emph{PARTIALLY CLOSED at v0.4 (existence half).} Sub-Lemma~\ref{lem:C5} (\S\ref{sec:sublemma_C5_compact}) establishes that $\sup_{\mathcal{C} \in \mathrm{Conf}(\Nalpha)} B(\mathcal{C})$ is attained, hence the C5 ground state exists. Proof: $G$-connectedness gives diameter bound $(\Nalpha - 1) \Raa$; configuration space modulo $\mathrm{SE}(3)$ pre-compact in finite-dim quotient; rigid-packing closed; $|E|$ upper-semi-continuous (sum of indicators of closed face-coincidence subvarieties); USC + compact + bounded above $\Rightarrow$ sup attained. Linear chain $\mathcal{C}_{\mathrm{chain}}$ with $|E| = \Nalpha - 1$ ensures the supremum is at $\mathcal{C}^*$ with $|E(\mathcal{C}^*)| \geq \Nalpha - 1$, i.e., $\mathcal{C}^* \in \mathrm{Conf}(\Nalpha)$ (not just its closure). Uniqueness is not delivered by the sub-lemma and is not C5's claim (see Remark~\ref{rem:C5_uniqueness}); uniqueness is supplied separately via FvdW deltahedron uniqueness in Theorem clause (iv) at the eight specified $\Nalpha$. Original v0.1 entry: \emph{``Ground-state energy minimization'' requires defining the configuration space over which to minimize. The space includes all rigid-packing-compatible arrangements at fixed $\Nalpha$ under C1$'$. Need to verify this space is well-defined and that minima exist (compactness argument).}
 
 \item \textbf{Empirical validation of clause (iv) at $\Nalpha \geq 7$:} The SS-7 Table 1 residual fingerprint (Regime B flat plateau at $+0.55\,\Bpair$, icosahedron suppressed at $+0.30\,\Bpair$) is consistent with the LO geometric realization of the FvdW deltahedron via facet (b) accommodation, with facet (c) slip-plane providing the NLO correction. The numerical agreement is supporting evidence but not direct verification. A more direct verification would be: predict the contact-distance distribution at degree-5 vertices of the realized FvdW deltahedron under each candidate facet (b) mechanism, and test against AMD calculations.
+
+\item \textbf{Steinitz-to-centroid realization gap:} \emph{CLOSED via C8 registration at v0.5} (sub-task (d.1) ChatGPT-review incorporation). Sessions 25--27 closed the §9 v0.1 gaps that were explicit but did not surface this implicit gap: Steinitz's theorem produces an \emph{abstract} simplicial convex 3-polytope from the contact graph, but the \emph{geometric realization} of that polytope at the specific alpha LO centroid positions $c_i$ (which are determined by the physics, not chosen abstractly) requires a separate argument. ChatGPT's v0.4 review (Session 28) flagged this gap as Lemma~\ref{lem:Bprime} Step 3 (overclaiming equality $|E| = 3\Nalpha - 6$ from Lemma~\ref{lem:C} $+$ Euler upper bound without explicit realizability), Theorem clause (iv) (overclaiming the centroid-realization), and the facet (b) language (asserting realization rather than motivating its plausibility). v0.5 addresses all three faces of the gap by registering \textbf{C8 (FvdW centroid-realizability)} as a paper-level structural hypothesis (\S\ref{sec:setup}), and tightening Lemma~\ref{lem:Bprime} Step 3, Theorem clause (iv), and the facet (b) remark to invoke C8 explicitly. C8's first-principles derivation from A1--A11 is registered as \textbf{OPEN-SS-37} candidate (NEW at v0.5).
 \end{enumerate}
 
 % ===================================================================
@@ -1039,7 +1171,7 @@ The deltahedra-gap range $\Nalpha \in \{11, 13, 14\}$, where clauses (i)--(iii) 
 \label{sec:swarm}
 
 \paragraph{Predictions added.}
-SS-9 is a derivation paper, not a prediction paper: its primary contribution is a conditional theorem advancing OPEN-SS-24, not a new set of zero-parameter empirical predictions. The derivation enables structural promotion of the twelve SS-7 zero-parameter alpha-chain predictions from ``edge-count assumed empirically'' to ``edge-count derived conditional on C5 + C6 + C7 + C1$'$ + C2 + C3.'' SS-9 thus reinforces the SS-7 swarm contribution by demoting C4 from a free hypothesis to a derived conclusion (under the named conditionals), with the conditionals themselves now subject to first-principles closure attempts.
+SS-9 is a derivation paper, not a prediction paper: its primary contribution is a conditional theorem advancing OPEN-SS-24, not a new set of zero-parameter empirical predictions. The derivation enables structural promotion of the twelve SS-7 zero-parameter alpha-chain predictions from ``edge-count assumed empirically'' to ``edge-count derived conditional on C5 + C6 + C7 + C8 + C1$'$ + C2 + C3.'' SS-9 thus reinforces the SS-7 swarm contribution by demoting C4 from a free hypothesis to a derived conclusion (under the named conditionals), with the conditionals themselves now subject to first-principles closure attempts.
 
 \paragraph{Running swarm total.}
 The CPP programme's cumulative count of zero-parameter empirical correspondences as of SS-9 v0.1 ship is dominated by the SS-7 12 alpha-chain predictions (RMS $0.80\%$), the SS-5 light-nuclei predictions, the SM-8 quark-mass predictions, the SM-3 SU(3) results, and the SS-2 nucleon-structure observables. SS-9 does not add new zero-parameter predictions but \emph{strengthens the structural foundation} of the SS-7 12-prediction subset by providing a conditional derivation of the simplicial structure they depend on.
@@ -1051,7 +1183,7 @@ The probability that the SS-7 12-prediction agreement at zero parameters with RM
 \label{sec:problem_status}
 
 \begin{itemize}
-\item OPEN-SS-24 (derivation of simplicial contact structure from CPP): \textbf{ADVANCED to conditional theorem}. C4 promoted from B-tier structural hypothesis (SS-7 v1.3 status) to conditional theorem at C5 + C6 + C7 + C1$'$ + C2 + C3 inheritance tier (SS-9 v0.1 status). Unconditional promotion pending closure of OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-33.
+\item OPEN-SS-24 (derivation of simplicial contact structure from CPP): \textbf{ADVANCED to conditional theorem}. C4 promoted from B-tier structural hypothesis (SS-7 v1.3 status) to conditional theorem at C5 + C6 + C7 + C8 + C1$'$ + C2 + C3 inheritance tier (SS-9 v0.5 status). Unconditional promotion pending closure of OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-33 / OPEN-SS-37.
 \item OPEN-SS-29 (C5 first-principles derivation): \textbf{REGISTERED}. Programme-level closure target.
 \item OPEN-SS-30 (C6 first-principles derivation): \textbf{REGISTERED}. Programme-level closure target.
 \item OPEN-SS-31 (deltahedra-gap structural realization at $\Nalpha \in \{11, 13, 14\}$): \textbf{REGISTERED} (carried over from earlier sketches; first formal registration here). Programme-level closure target.
