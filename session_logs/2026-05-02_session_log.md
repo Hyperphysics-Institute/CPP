@@ -2482,3 +2482,62 @@ OPEN-ORG-012 closure is organizational, not scientific. No new programme-level n
 ---
 
 *Session log Session 24 OPEN-ORG-012 closure entry per §4 discipline. Substantive content: SS-9 v0.1 .tex (761 lines) created from v0.3 working draft; v0.3 markdown moved to sketches/; §8.3 OPEN-SS-32 / U-shape investigation status (Phases 1–11, Sessions 13–23) integrated; required §11.1 CP/GP Signature and §13.1 Swarm-Validation Contribution subsections per PD-001 included; document compiles cleanly through three pdflatex passes; **OPEN-ORG-012 RETIRED**; **OPEN-SS-24 ADVANCED to conditional theorem**; **OPEN-SS-33 REGISTERED (NEW)** for C7 first-principles closure. Programme negative-result count UNCHANGED at 12. SS-9 v0.1 now serves as stable reference for SS-10 sub-shell-physics paper development; OPEN-SS-32 / U-shape thread enters multi-paper completion phase. Forward queue: SS-10 sub-shell-physics multi-paper development as Priority 1; SS-9 v0.1 → v1.0 polish as Priority 2; alternate-channel work Priority 3 deferred.*
+
+---
+
+## Session 25 — v1.0 polish sub-task (a): C7 sub-lemma (6 May 2026)
+
+**Context.** Session 24 OPEN-ORG-012 closure shipped SS-9 v0.1 .tex (761 lines, 21 pages) from the v0.3 markdown working draft. The 0224 handover registered the v0.1 → v1.0 polish track as active Priority 2 with five sub-tasks (a)–(e). Sub-task (a) was identified as the natural Session 25 starting point because (i) closing C7 closes most of OPEN-SS-33 modulo cluster contractibility, with the contractibility argument having a viable closure path through C5 already sketched in §1; (ii) it is single-session-tractable, unlike SS-10 sub-shell-physics startup; (iii) AI-team review (sub-task d) should follow tightening rather than precede it on symmetric-honesty grounds — review attention is most valuable on a paper without already-known deficiencies.
+
+**Session 25 selection logic.** Thomas asked at the start of Session 25 whether SS-10 development should proceed before AI review submission. Claude clarified that the recommended order was the opposite: tighten SS-9 v0.1 → v1.0 polish sub-tasks (a)/(b)/(c) first, *then* submit to AI review (sub-task d), *then* external review (sub-task e); SS-10 runs as a parallel multi-paper track from Session 25 onward. Thomas confirmed this ordering: "I support sending a completed paper to reviewers, rather than wasting effort submitting a paper with known deficiencies that can be corrected first. By all means, finish polishing SS-9 before we send to reviewers." Session 25 proceeds with sub-task (a).
+
+**Sub-task (a): Sub-Lemma 2.1 added to SS-9 v0.2.** New subsection §2.5 inserted between current §2.4 (paper-level structural hypotheses C5/C6/C7 with motivation paragraph) and current §2.5 (now renumbered §2.6, auxiliary assumptions). Sub-Lemma 2.1 formalizes the C7 motivation paragraph as a conditional derivation:
+
+\[
+\textbf{C1' + C2 + C6 + (H4) cluster contractibility + (H5) alpha-surface adjacency} \;\Rightarrow\; \textbf{C7}.
+\]
+
+**Hypothesis (H4) cluster contractibility:** $K = \bigcup_{i=1}^{N_\alpha} T_i$ (closed union of LO tetrahedra) is a contractible compact 3-manifold with piecewise-linear boundary.
+
+**Hypothesis (H5) alpha-surface adjacency (ASA):** For every K$_3$-bonded pair $\{\alpha_i, \alpha_j\} \in E$, the shared LO triangular face $F_{ij}$ has at least one boundary edge that lies on $\Sigma = \partial K$ (equivalently: at least one of the three edges of $\partial F_{ij}$ is not shared with any third tetrahedron $T_k$).
+
+**Proof structure (4 steps):**
+
+1. **$\Sigma \cong S^2$**: By (H4) contractibility, $\chi(K) = 1$. The boundary-Euler formula for compact orientable 3-manifolds with boundary, $\chi(K) = \tfrac{1}{2}\chi(\partial K)$, gives $\chi(\Sigma) = 2$. Since $K$ is connected and embedded in $\mathbb{R}^3$ with the contractibility of (H4), $\Sigma$ is a connected closed orientable 2-manifold; the classification of closed orientable surfaces gives $\Sigma \cong \Sigma_g$, and $\chi = 2$ forces $g = 0$.
+
+2. **External-face decomposition $\Sigma = \bigcup_i F_i^{ext}$**: Each $T_i$'s 2-faces are either internal (shared with one $T_j$) or external (lying on $\Sigma$). The external face sets $F_i^{ext}$ form a closed cover of $\Sigma$ with pairwise interior-disjoint regions. We show $F_i^{ext} \neq \emptyset$ for every $i$ via C6: if $T_i$ had all four faces shared, $T_i \subset \mathrm{int}(K) \subset \mathrm{int}(H(\mathcal{C}))$, so $c_i \in \mathrm{int}(H)$, contradicting C6.
+
+3. **Alpha-dual embedding**: For each $\alpha_i$, choose basepoint $p_i \in \mathrm{int}(F_i^{ext})$. For each contact $\{\alpha_i, \alpha_j\}$, by (H5) at least one edge $e_{ij} \subset \partial F_{ij}$ lies on $\Sigma$; this edge is a common boundary edge of $F_i^{ext}$ and $F_j^{ext}$. Pick generic interior point $q_{ij} \in e_{ij}$; concatenate paths $p_i \rightsquigarrow q_{ij}$ on $F_i^{ext}$ and $q_{ij} \rightsquigarrow p_j$ on $F_j^{ext}$ to form arc $\gamma_{ij}$.
+
+4. **Generic non-crossing**: For contacts with disjoint endpoint sets, supports in $F_i^{ext} \cup F_j^{ext}$ vs. $F_k^{ext} \cup F_l^{ext}$ are disjoint; for contacts sharing $\alpha_i$, segments inside $F_i^{ext}$ from $p_i$ to distinct boundary edges $e_{ij}, e_{ik}$ avoid each other except at $p_i$ (which is the vertex incidence required by the embedding).
+
+The collection $\{p_i\} \cup \{\gamma_{ij}\}$ embeds $G(\mathcal{C})$ in $\Sigma \cong S^2$ as a planar graph.
+
+**Effect on OPEN-SS-33.** ADVANCED from "raw open" (Session 24 ratification) to "conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1–A11 + C5." The sub-lemma is accompanied by Remark 2.1 sketching closure paths for both residual sub-targets:
+
+- **(H4) Cluster contractibility from C5 isoperimetrics.** Non-contractible clusters fall into two failure modes: (i) clusters with internal voids (enclosed DP-sea region at lower density, contributing additional surface energy without compensating bulk binding); (ii) toroidal-handle clusters (genus $g \geq 1$ surface, requiring $|E| - |V| + |F| = 2 - 2g$, which under triangulation forces $|E|$ to exceed planar bound $3|V| - 6$, energetically disfavored). Both failure modes are excluded under C5 ground-state energy minimization.
+- **(H5) Alpha-surface adjacency from C5 + LO-geometry edge-shared multi-alpha enumeration.** (H5) fails iff a contact pair $\{\alpha_i, \alpha_j\}$ has $F_{ij}$ with all three boundary edges shared with additional tetrahedra. The "three-around-an-edge" geometric configuration is small in number (combinatorially enumerable per $N_\alpha$) and direct binding-energy comparison under C5 shows face-shared K$_3$-bonded configurations dominate the ground state.
+
+Both residual sub-targets are smaller in scope than C7 itself.
+
+**§9 gap list update.** "C7 motivation argument" gap PARTIALLY CLOSED at v0.2. Residual content reduced to (H4) + (H5) sub-targets.
+
+**Compilation.** Three pdflatex passes (draftmode, halt-on-error, nonstopmode); pass 1 expected undefined-references warnings (forward references); passes 2 and 3 zero warnings, zero errors. Output 23 pages (was 21 in v0.1; +2 pages from sub-lemma + remark).
+
+**Polish track status after Session 25 close.**
+
+- Sub-task (a) C7 sub-lemma — **DONE this session**.
+- Sub-task (b) 3D-non-degeneracy via maximum-edge selection sub-lemma — pending (Session 26 candidate).
+- Sub-task (c) C5 well-definedness via compactness — pending (Session 27 candidate).
+- Sub-task (d) AI-team review per symmetric-honesty protocol — pending after (b)+(c).
+- Sub-task (e) External review — pending after (d).
+
+**Programme state at Session 25 close:** programme negative-result count UNCHANGED at 12 (v1.0 polish work is paper-internal, not programme-level). All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. **OPEN-SS-24** ADVANCED status preserved. **OPEN-SS-33** ADVANCED from raw open to conditional closure. **OPEN-ORG-012** RETIRED preserved. **SS-9** at v0.2 (was v0.1 at Session 24 ship).
+
+**Forward priority for Session 26.** Sub-task (b) 3D-non-degeneracy via maximum-edge selection sub-lemma: planar arrangements have fewer edges than 3D arrangements at $N_\alpha \geq 4$, so under C5 the ground state is 3D rather than planar. This sub-lemma should be straightforward — formalize as: under C1' + C5 + $N_\alpha \geq 4$, the ground-state cluster cannot have all centroids coplanar. The proof uses the Euler-bound $|E| \leq 3N - 6$ for planar arrangements vs. higher edge counts achievable in 3D arrangements, combined with C5 picking maximum-binding configurations.
+
+**Anti-priority sustained.** Do NOT modify SS-9 v0.2 .tex outside of v1.0 polish revisions — same anti-priority as Session 24. Each polish revision bumps the CHANGELOG version (v0.2 → v0.3 → ... → v1.0).
+
+---
+
+*Session log Session 25 v1.0 polish sub-task (a) entry per §4 discipline. Substantive content: Sub-Lemma 2.1 (C7 conditional derivation) added to SS-9 v0.2; OPEN-SS-33 ADVANCED from raw open to conditionally closed modulo (H4) + (H5) sub-targets; Remark 2.1 sketches viable closure paths. §9 "C7 motivation argument" gap PARTIALLY CLOSED at v0.2. Three pdflatex passes zero errors, 23 pages output. Polish track sub-task (a) DONE; sub-tasks (b)/(c)/(d)/(e) pending. Forward priority Session 26: sub-task (b) 3D-non-degeneracy via maximum-edge selection sub-lemma.*

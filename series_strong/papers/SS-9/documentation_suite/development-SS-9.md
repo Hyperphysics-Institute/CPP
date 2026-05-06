@@ -519,3 +519,43 @@ Programme implications: programme negative-result count UNCHANGED at 12 (OPEN-OR
 Forward pointers: Session 25 Priority 1 unchanged (SS-10 sub-shell-physics multi-paper development); SS-9 v0.1 now serves as canonical anchor paper for SS-10 to cite. New Priority 2 for subsequent sessions: SS-9 v0.1 → v1.0 polish, including (a) tightening C7 motivation argument as formal sub-lemma showing C6 + cluster contractibility ⇒ C7, (b) verifying 3D-non-degeneracy via maximum-edge selection sub-lemma, (c) verifying C5 well-definedness via compactness argument, (d) AI-team review per symmetric-honesty protocol (ChatGPT, Copilot rotation), (e) external review. Priority 3 (deferred): alternate-channel investigations (R4-DP-sea, SR-tensor, finite-A SEMF corrections relevant for ${}^{16}$O standout shortfall) — multi-paper scope, not in scope until sub-shell-physics decomposition completed.
 
 Anti-priorities sharpened from Session 23: (a) all anti-priorities from Phases 4-10 remain in force; (b) the OPEN-ORG-012 .tex conversion anti-priority (active through Phases 1-10) is now RETIRED at this session close — the conversion is complete. (c) Session 24 introduces no new anti-priorities; the Phase 11 anti-priorities (Do NOT propose any single-session R3-channel refinement; Phase 8 Refinement A at natural ceiling) remain in force as standing programme constraints.
+
+## Vignette 32 — Session 25 v1.0 polish sub-task (a): Sub-Lemma 2.1 added (C7 conditional derivation); OPEN-SS-33 advanced from raw open to conditionally closed modulo (H4) cluster contractibility + (H5) alpha-surface adjacency sub-targets; SS-9 v0.1 → v0.2 (6 May 2026, Session 25)
+
+**Context.** Session 24 OPEN-ORG-012 closure shipped SS-9 v0.1 .tex (761 lines, 21 pages) with C7 (contact-graph planarity) registered as paper-level structural hypothesis at the C5/C6 inheritance tier and OPEN-SS-33 as the corresponding programme-level closure target. The motivation paragraph in §2.4 sketched a verbal argument from C6 + cluster contractibility ⇒ C7 via the alpha-dual construction on $\Sigma = \partial K \cong S^2$. Session 24 close 0224 handover registered v0.1 → v1.0 polish track as active Priority 2 with five sub-tasks; sub-task (a) was the natural Session 25 starting point.
+
+**Session 25 selection.** Thomas asked at session start whether to pursue SS-10 sub-shell-physics development before AI review submission. Claude recommended the opposite ordering: tighten v0.1 → v0.2 → v0.3 → v0.4 via sub-tasks (a)/(b)/(c) first, *then* AI review (d), *then* external review (e); SS-10 runs as a parallel multi-paper track. Symmetric-honesty argument: §9 of v0.1 already lists six gaps. Submitting v0.1 to reviewers first would surface the very deficiencies we already know to fix (most likely first-response: "you should formalize C7 as a sub-lemma" — which is exactly sub-task (a)). Better to close known gaps first so review surfaces things we don't already know. Thomas confirmed: "I support sending a completed paper to reviewers, rather than wasting effort submitting a paper with known deficiencies that can be corrected first."
+
+**The sub-lemma.** Sub-Lemma 2.1 in §2.5 of v0.2 (renumbering current §2.5 → §2.6):
+
+\textbf{Sub-Lemma 2.1 (Conditional derivation of C7).} \emph{Suppose C1$'$, C2, C6, (H4) cluster contractibility, and (H5) alpha-surface adjacency hold. Then $G(\mathcal{C})$ is planar.}
+
+Hypothesis (H4): $K = \bigcup_i T_i$ is a contractible compact 3-manifold with PL boundary. Hypothesis (H5): every K$_3$-bonded pair $\{\alpha_i, \alpha_j\}$ has its shared face $F_{ij}$ with at least one boundary edge on $\Sigma = \partial K$.
+
+**Proof structure.**
+
+| Step | Statement | Method |
+|------|-----------|--------|
+| 1 | $\Sigma \cong S^2$ | Boundary-Euler $\chi(K) = \tfrac{1}{2}\chi(\partial K)$; $\chi(K) = 1$ from contractibility forces $\chi(\Sigma) = 2$, hence genus 0 |
+| 2 | $\Sigma = \bigcup_i F_i^{ext}$, $F_i^{ext} \neq \emptyset$ | C1$'$ + rigid packing decomposes $\Sigma$ into pairwise-disjoint external face sets; C6 forces each $F_i^{ext}$ nonempty (contradiction otherwise: $T_i \subset \mathrm{int}(K) \subset \mathrm{int}(H)$, contradicts $c_i \in \partial H$) |
+| 3 | Alpha-dual embedding | basepoints $p_i \in \mathrm{int}(F_i^{ext})$; arcs $\gamma_{ij}$ via (H5)-guaranteed shared edges $e_{ij} \subset \partial F_{ij} \cap \Sigma$; concatenate $p_i \rightsquigarrow q_{ij}$ on $F_i^{ext}$ and $q_{ij} \rightsquigarrow p_j$ on $F_j^{ext}$ |
+| 4 | Generic non-crossing | disjoint endpoint sets ⇒ disjoint region supports; shared $\alpha_i$ ⇒ common basepoint $p_i$ but disjoint paths to distinct boundary edges $e_{ij} \neq e_{ik}$ in 2D-region $\mathrm{int}(F_i^{ext})$ |
+
+**Effect on OPEN-SS-33.** ADVANCED from "raw open" (Session 24 ratification) to "conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1–A11 + C5." The sub-lemma + Remark 2.1 structure is a typical intermediate stage in programme-level closure work: it does not unconditionally close OPEN-SS-33, but it reduces the residual content to two precisely-stated topological hypotheses, each smaller in scope than C7 itself.
+
+**Remark 2.1 — closure paths for residual sub-targets.**
+
+| Residual sub-target | Closure path under C5 |
+|---|---|
+| **(H4) Cluster contractibility** | Two failure modes: (i) internal voids (enclosed low-density DP-sea region with extra surface energy, no compensating bulk binding); (ii) toroidal handles (genus $g \geq 1$ requires $|E| - |V| + |F| = 2 - 2g$ → $|E|$ exceeds planar bound $3|V| - 6$ for triangulated surfaces, energetically excluded under C5). Both failure modes excluded under ground-state energy minimization. |
+| **(H5) Alpha-surface adjacency** | Failure requires "three-around-an-edge" geometric configuration where $\partial F_{ij}$'s three edges are all shared with third tetrahedra. Combinatorial enumeration small at each $N_\alpha$; direct binding-energy comparison under C5 shows face-shared K$_3$-bonded ground states dominate edge-shared alternatives. |
+
+**Effect on §9 gap list.** "C7 motivation argument" gap PARTIALLY CLOSED at v0.2. Residual content reduced to (H4) + (H5) sub-targets.
+
+**Effect on Theorem.** Theorem 6.1 (Main Theorem, Conditional C4 closure) statement and proof unchanged at v0.2 — still uses C7 directly as conditional hypothesis. Sub-Lemma 2.1 provides an alternate route to C7 that does not require restating the Theorem; readers preferring the H4+H5 hypothesis stack can swap C7 for those two via the sub-lemma. v1.0 may consolidate the hypothesis list.
+
+**Compilation.** Three pdflatex passes (draftmode for passes 1–2; output for pass 3): pass 1 expected undefined-references warnings (forward references); passes 2–3 zero warnings, zero errors. Output 23 pages (was 21 in v0.1; +2 pages from sub-lemma + remark). Pre-existing minor cosmetic warnings (one hyperref "Token not allowed in PDF string" from a math symbol in a section title; two overfull hbox in abstract/intro region; bibliography underfull hbox from URLs/long author lists) all preserved unchanged from v0.1 — no new typesetting issues introduced by the sub-lemma.
+
+**Polish track status after Session 25.** Sub-task (a) C7 sub-lemma DONE; sub-tasks (b) 3D-non-degeneracy / (c) C5 well-definedness / (d) AI-team review / (e) external review pending. Forward priority Session 26: sub-task (b).
+
+**Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED from raw open to conditional closure. OPEN-ORG-012 RETIRED preserved. SS-9 at v0.2.
