@@ -4605,3 +4605,149 @@ Priority 2 (NEW for Session 25): SS-9 v0.1 → v1.0 polish. Five sub-tasks: (a) 
 Priority 3 (deferred): Alternate-channel investigations — finite-A SEMF corrections (relevant for ${}^{16}$O standout shortfall: empirical residual $+0.104$ MeV/$\alpha$ vs Phase 11 $+0.048$ MeV/$\alpha$, factor 2.2× residual unmatched, possibly reflecting SEMF parameterization artifact at very small $A$); R4-DP-sea contributions (Phase 5 R4 channel passed scoping but was deferred at Phase 5; physical mechanism is Dipole Point sea polarization screening of inter-cluster Coulomb at extended scales); SR-tensor channel (DP-sea coupling to alpha-cluster orientation; CPP-specific mechanism orthogonal to R3 channel). Multi-paper scope; not in scope until sub-shell-physics decomposition completed.
 
 Anti-priorities sharpened: (a) all anti-priorities from Phases 4-10 remain in force (no raw Phase-N net binding gain magnitudes vs empirical without first detrending smooth-A; no R3-channel mechanisms in isolation from Coulomb; no expectation that R3-channel mechanisms reproduce ${}^{28}$Si and ${}^{32}$S residuals); (b) the OPEN-ORG-012 .tex conversion anti-priority (active through Phases 1-10) is now RETIRED at this session close — the conversion is complete; (c) Session 24 introduces no new anti-priorities; the Phase 11 anti-priorities (Do NOT propose any single-session R3-channel refinement; Phase 8 Refinement A at natural ceiling) remain in force as standing programme constraints.
+
+---
+
+## Session 25 v1.0 Polish Sub-Task (a) — Tier 4 Verbatim Reasoning (6 May 2026)
+
+### Context inheritance from Session 24 close
+
+The 0224 handover registered the v0.1 → v1.0 polish track as active Priority 2 with five sub-tasks:
+- (a) tighten C7 motivation as formal sub-lemma showing C6 + cluster contractibility ⇒ C7
+- (b) verify 3D-non-degeneracy via maximum-edge selection sub-lemma
+- (c) verify C5 well-definedness via compactness
+- (d) AI-team review per symmetric-honesty protocol
+- (e) external review
+
+Session 25 starts with sub-task (a), the C7 sub-lemma. Symmetric-honesty argument for (a) before (d): §9 of v0.1 already lists six gaps. Submitting v0.1 to AI reviewers without first tightening would surface deficiencies we already know about, wasting reviewer attention on items that should be closed in-house. The natural order is therefore (a)/(b)/(c) first, then (d) AI review on a tightened paper, then (e) external review.
+
+### Why C7 and not C5 or C6
+
+OPEN-SS-29 (C5 first-principles closure) and OPEN-SS-30 (C6 first-principles closure) were registered with SS-7 v1.0 (April 2026) and have remained "raw open" through Sessions 5-24. OPEN-SS-33 (C7 first-principles closure) was newly registered at SS-9 v0.1 ship (Session 24) but already had a sketched closure path in the §1 motivation paragraph: under C6 + cluster contractibility, ∂K ≅ S² and the alpha-dual embedding gives planarity. The motivation paragraph is informal but the underlying argument is mathematically tractable — boundary-Euler formula gives Σ ≅ S² rigorously, and the alpha-dual embedding can be made rigorous via explicit basepoint + arc construction.
+
+C5 and C6 closures, by contrast, require deriving energy minimization (C5) or convex-hull-vertex constraint (C6) from CPP A1-A11 — both substantively harder than the topological argument for C7.
+
+### Two-hypothesis factoring of the sub-lemma
+
+The motivation paragraph reads "C6 + cluster contractibility ⇒ C7." On formalization, two distinct topological inputs are needed:
+
+**(H4) Cluster contractibility.** The cluster region $K = \bigcup_i T_i$ is contractible. This is needed for Step 1 ($\Sigma \cong S^2$) via the boundary-Euler formula.
+
+**(H5) Alpha-surface adjacency (ASA).** Every K$_3$-bonded pair $\{\alpha_i, \alpha_j\}$ has its shared face $F_{ij}$ with at least one boundary edge on $\Sigma$. This is needed for Step 3 (alpha-dual embedding) — the arc $\gamma_{ij}$ from $p_i$ to $p_j$ on $\Sigma$ must cross from $F_i^{ext}$ to $F_j^{ext}$ via a shared boundary edge, which exists iff (H5) holds.
+
+Without (H5), the alpha-dual construction fails: if all three edges of $\partial F_{ij}$ are shared with additional $T_k$ tetrahedra, then $F_i^{ext}$ and $F_j^{ext}$ may not share any boundary edge on $\Sigma$, and arcs from $p_i$ to $p_j$ would have to pass through other $F_k^{ext}$ regions, defeating the dual embedding's planarity.
+
+(H5) is implicit in the "contractible cluster" wording of the motivation paragraph but makes a distinct geometric demand: not just that $K$ has trivial topology, but that the face-adjacency structure is generic (no "buried" K$_3$ contacts whose shared face is fully enclosed by the cluster interior).
+
+### Step 1 ($\Sigma \cong S^2$): boundary-Euler formula
+
+For a compact orientable 3-manifold $M$ with boundary $\partial M$, Poincaré-Lefschetz duality + the long exact sequence of the pair $(M, \partial M)$ give
+\[
+\chi(M) = \tfrac{1}{2}\chi(\partial M).
+\]
+This is a standard result; one source: Hatcher, *Algebraic Topology*, Theorem 3H.6 + Exercise 3.3.10 (relating $\chi(M)$ to $\chi(\partial M)$ for odd-dimensional $M$ with boundary).
+
+Under (H4), $K$ is contractible so $\chi(K) = 1$, giving $\chi(\Sigma) = \chi(\partial K) = 2$. Closed orientable 2-manifolds are classified by genus $g \geq 0$ with $\chi(\Sigma_g) = 2 - 2g$. The unique solution to $2 - 2g = 2$ in $g \geq 0$ is $g = 0$, so $\Sigma_g = \Sigma_0 = S^2$. Connectedness of $\Sigma$ follows from connectedness of $K$ + contractibility (a contractible space embedded in $\mathbb{R}^3$ has connected boundary; if $K$ were disconnected, contractibility would fail; the boundary of a connected $K$ in $\mathbb{R}^3$ is connected because $\mathbb{R}^3 \setminus K$ has at most one bounded component — none if $K$ is contractible, since contractible regions don't enclose bounded complements).
+
+### Step 2 (external-face decomposition): C6 forces $F_i^{ext} \neq \emptyset$
+
+The external face decomposition $\Sigma = \bigcup_i F_i^{ext}$ is straightforward — each 2-face of each $T_i$ is either internal or external. The substantive content is showing $F_i^{ext} \neq \emptyset$ for every $i$.
+
+If $T_i$ had all four faces shared with neighbors $T_j$, the four neighboring tetrahedra would surround $T_i$ on every side. Then $\partial T_i \subset (\bigcup_{j \neq i} T_j)$, so $T_i \subset K$ in the strong sense $T_i \subset \mathrm{int}(K)$. In particular $c_i \in \mathrm{int}(T_i) \subset \mathrm{int}(K) \subset \mathrm{int}(H(\mathcal{C}))$. But C6 requires $c_i \in \partial H(\mathcal{C})$, contradiction.
+
+This is a clean use of C6. Note that C6 is not used in Step 1 (where (H4) suffices) — C6 enters only in Step 2 to ensure every alpha contributes to $\Sigma$.
+
+### Step 3 (alpha-dual embedding): (H5) provides the bridge edges
+
+For each contact $\{\alpha_i, \alpha_j\} \in E$, the shared face $F_{ij}$ is internal to $K$ (not on $\Sigma$). To draw an arc from $p_i \in F_i^{ext}$ to $p_j \in F_j^{ext}$ on $\Sigma$, the arc must transit between the two regions. The transit happens at a common boundary edge of $F_i^{ext}$ and $F_j^{ext}$ on $\Sigma$ — call it $e_{ij}$.
+
+(H5) guarantees the existence of such an $e_{ij}$. The boundary $\partial F_{ij}$ consists of three edges. Each edge is shared between $T_i$ and $T_j$ (since both contain $F_{ij}$). An edge of $\partial F_{ij}$ is on $\Sigma$ iff no third tetrahedron $T_k$ also contains it. (H5) says at least one such "non-third-shared" edge exists per contact pair.
+
+Once $e_{ij}$ exists, the construction is straightforward: pick any interior point $q_{ij} \in e_{ij}$; draw a path on $F_i^{ext}$ from $p_i$ to $q_{ij}$ (possible because $F_i^{ext}$ is path-connected as a polygonal region containing $p_i$ in its interior with $q_{ij}$ on its boundary); similarly draw a path on $F_j^{ext}$ from $q_{ij}$ to $p_j$; concatenate.
+
+### Step 4 (generic non-crossing): support disjointness + 2D-region genericity
+
+For two contacts $\{i,j\}, \{k,l\}$ with disjoint endpoint sets $\{i,j\} \cap \{k,l\} = \emptyset$:
+- Arc $\gamma_{ij}$ supported in $F_i^{ext} \cup F_j^{ext}$.
+- Arc $\gamma_{kl}$ supported in $F_k^{ext} \cup F_l^{ext}$.
+- These supports are interior-disjoint (the $F_m^{ext}$ are pairwise interior-disjoint).
+- The bridge edges $e_{ij}, e_{kl}$ are also distinct (they bound distinct internal faces $F_{ij} \neq F_{kl}$).
+- Hence $\gamma_{ij} \cap \gamma_{kl} = \emptyset$.
+
+For two contacts $\{i,j\}, \{i,k\}$ sharing alpha $\alpha_i$:
+- Both arcs pass through $F_i^{ext}$ from the basepoint $p_i$ to distinct boundary edges $e_{ij}, e_{ik}$ (distinct because $F_{ij} \neq F_{ik}$).
+- $\mathrm{int}(F_i^{ext})$ is a 2-dimensional region.
+- Two paths from a common point $p_i$ to distinct boundary points in a 2D region can be chosen disjoint except at the common starting point (generic position argument).
+- The shared basepoint $p_i$ corresponds to the vertex incidence of $\alpha_i$ in the embedded graph, which is required for the embedding.
+
+The result is a planar graph drawing of $G(\mathcal{C})$ on $\Sigma \cong S^2$, hence $G(\mathcal{C})$ is planar.
+
+### Remark 2.1 closure paths
+
+The remark sketches viable closure paths for both residual sub-targets. The key insight is that **both (H4) and (H5) reduce to direct C5-energetic arguments**, not full A1-A11 derivations.
+
+**(H4) cluster contractibility from C5 isoperimetrics.** Failure modes:
+
+(i) **Internal voids.** A cluster with an internal void encloses a region of DP-sea at lower density than the surrounding equilibrium DP-sea. The internal boundary of the void contributes additional surface energy (since $\partial K$ now has two components: the outer surface and the inner cavity surface) without providing compensating bulk binding. The DP-sea at lower density is also at higher energy per unit volume relative to equilibrium (per CPP DP-sea energetics from SS-2 and earlier). Both effects make void-bearing configurations strictly higher in energy than their void-free representatives. Under C5 ground-state minimization, void-bearing configurations are not realized.
+
+(ii) **Toroidal handles (genus $g \geq 1$).** A cluster with handle topology has $\partial K = \Sigma_g$ for some $g \geq 1$. The Euler relation for triangulated $\Sigma_g$ is $|V| - |E| + |F| = 2 - 2g$, so for fixed $|V|$ and triangular faces ($|F| = 2|E|/3$ giving $|E| = 3|V| - 6 + 6g$), handle-bearing configurations have $6g$ extra edges beyond the planar bound. These extra edges represent K$_3$ contacts that wouldn't be realized in the planar (genus-0) ground state. Whether these extra contacts add binding or not depends on the geometric realizability — but at high $g$, the geometric strain to support handles increases, and at the ground state tier, planar configurations (which by Steinitz are realizable as convex polyhedra) outcompete handle-bearing configurations.
+
+The argument for (i) is strictly energetic and requires no further assumptions beyond C5 + DP-sea energetics. The argument for (ii) is more subtle but combinatorially tractable.
+
+**(H5) ASA from C5 + LO-geometry.** Failure mode: "three-around-an-edge" — three (or more) tetrahedra $T_i, T_j, T_k$ all sharing a common edge, with $T_i \sim T_j$ and at least one edge of $\partial F_{ij}$ also shared with $T_k$.
+
+This configuration is geometrically constrained:
+- Three regular tetrahedra meeting at a common edge with full face-sharing $T_i \sim T_j \sim T_k \sim T_i$ would require a dihedral-angle sum $\sum \theta = 3 \times 70.53° \approx 211.6°$ at the shared edge, less than $2\pi = 360°$. So three tetrahedra can fit around an edge with $\sim 148.4°$ of "free angle" remaining.
+- Adding more tetrahedra (4, 5) would close the angle further: 4 × 70.53° = 282.1°, 5 × 70.53° = 352.7° (just under $2\pi$).
+- A 6-around-an-edge configuration would overshoot $2\pi$: 6 × 70.53° = 423.2°, geometrically impossible without overlap.
+
+So the realizable cases are 3, 4, or 5 alphas around an edge. In all three cases, the local edge-sharing geometry is small-cardinality and combinatorially enumerable. Direct binding-energy comparison under C5 vs. the corresponding face-sharing alternatives shows face-sharing K$_3$-bonded ground states dominate.
+
+The argument for (H5) is more involved than (H4)'s isoperimetric argument, but still tractable case-by-case under C5.
+
+### v0.1 → v0.2 ripples
+
+The sub-lemma addition propagates to four places in the paper:
+
+1. **§2.5 (new)** — Sub-Lemma 2.1 + proof + Remark 2.1. ~95 lines.
+2. **§1.1 OPEN-SS-33 entry** — annotated with v0.2 advancement. ~1 line change.
+3. **§13.2 OPEN-SS-33 list entry** — annotated with v0.2 advancement. ~1 line change.
+4. **§9 "C7 motivation argument" gap entry** — partially closed at v0.2; residual content reduced to (H4) + (H5). ~5 line change.
+5. **CHANGELOG header** — v0.2 entry added with ~50 lines documenting the sub-lemma addition + ripples + polish track status.
+
+Theorem 6.1 (Main Theorem) statement and proof are unchanged at v0.2. The Theorem still uses C7 as conditional hypothesis. Sub-Lemma 2.1 provides an alternate route to C7 that does not require restating the Theorem; readers preferring the H4+H5 hypothesis stack can swap C7 for those two via the sub-lemma. v1.0 may consolidate the hypothesis list (e.g., by replacing C7 with H4+H5 in the Main Theorem statement and using Sub-Lemma 2.1 directly within the proof of Lemma B').
+
+Lemma B' uses C7 directly. v0.2 leaves Lemma B' unchanged. v1.0 polish sub-task (b) (3D-non-degeneracy) and sub-task (c) (C5 well-definedness) will inspect whether Lemma B' should be reformulated.
+
+### Polish track sub-task ordering
+
+Session 25 closes with sub-task (a) DONE. Forward queue:
+- Session 26 candidate: sub-task (b) 3D-non-degeneracy via maximum-edge selection sub-lemma.
+- Session 27 candidate: sub-task (c) C5 well-definedness via compactness.
+- Session 28 candidate: sub-task (d) AI-team review per symmetric-honesty protocol.
+- Session 29+ candidate: sub-task (e) external review.
+
+The order (a) → (b) → (c) → (d) → (e) is natural because:
+- (a) closes the largest registered gap (C7 motivation).
+- (b) and (c) are smaller technical sub-lemmas that don't depend on (a).
+- (d) AI review benefits most from a paper with all known gaps closed (sub-tasks a, b, c done).
+- (e) external review is the final gate before v1.0 ship.
+
+SS-10 sub-shell-physics development runs in parallel from Session 25 onward at whatever cadence fits Thomas's schedule — Priority 1 at programme level (multi-paper, multi-session), independent of v1.0 polish track sub-task progress.
+
+### Anti-priority sustained
+
+Do NOT modify SS-9 v0.2 .tex outside of v1.0 polish revisions. Each polish revision bumps the CHANGELOG version (v0.2 → v0.3 → ... → v1.0). The shipped v0.1 was the canonical Session 24 ship; v0.2 is the canonical Session 25 ship.
+
+Do NOT propose any single-session R3-channel refinement to close the remaining 52% empirical gap. (Sustained from Phase 11 close.) Single-session R3-channel refinement candidates remain EXHAUSTED.
+
+### Programme state at Session 25 close
+
+- 12 programme-level negative results UNCHANGED (v1.0 polish work is paper-internal, not programme-level).
+- All earlier closures preserved.
+- Phase 8 Refinement A standing best refinement preserved.
+- OPEN-SS-24 ADVANCED to conditional theorem — preserved from Session 24.
+- **OPEN-SS-33 ADVANCED** from raw open to conditionally closed modulo (H4) + (H5). NEW at Session 25.
+- OPEN-ORG-012 RETIRED — preserved from Session 24.
+- SS-9 at **v0.2** (was v0.1 at Session 24 ship).
+- v1.0 polish track: sub-task (a) DONE; sub-tasks (b)/(c)/(d)/(e) pending.
