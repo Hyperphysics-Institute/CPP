@@ -6322,3 +6322,86 @@ Session 34 ships a new SS-9 artifact (the anthology chapter at `book_project/cha
 Steps F (problem_history) is not applicable because Session 34 did not register, advance, or close any OPEN-* / CONJ- / PROP- entries. The chapter is documentation work that does not modify the programme's open-problem state.
 
 The Session 34 documentation suite is the first test of the Session 33 lesson learned discipline: a non-paper-text SS-9 artifact (chapter in book_project/) triggering the full four-tier discipline. The chain delivered without the gap that Session 33's first attempt produced — patches 0276 through 0279 ship the suite cleanly per the discipline now in force. Future Claude sessions seeing this pattern in the `reasoning-SS-9.md` Tier 4 reasoning will have a precedent for applying the discipline to other non-paper-text artifacts that ship in future sessions.
+
+---
+
+# Tier 4 verbatim reasoning Session 35 (7 May 2026) — TATWD integration of SS-9 v1.0 into CPP_the_theory.md and TATWD_outline_revised.md
+
+## I. Pre-session inspection methodology and what it surfaced
+
+The (A.4) registration in `future_projects.md` for Session 35 specified four required pre-session reads: `CPP_the_theory.md` plus `book_project/TATWD_outline.md` plus `book_project/TATWD_outline_revised.md` plus `book_project/development_transcript_TATWD_framing.md`. The pre-session inspection took on the order of 15 minutes (file sizes total ~17K words across the four files; targeted reading focused on integration points rather than full re-reads). What it surfaced:
+
+(i) **CPP_the_theory.md is the master technical narrative**. 478 lines, 8 Parts. Part VI "The Alpha-Cluster Regime" contains Chapter 21 (SS-7 main result), Chapter 22 (OPEN-SS-22 retirement), Chapter 22b (SS-8 third structural scale). The Part VI scope note at line 271 explicitly states the document covers "SS-7 (alpha-alpha contact regime, Chapters 21–22) and SS-8 (interstitial-neutron 2E/V scaling at the third structural scale, Chapter 22b)" — SS-9 is not yet integrated. Part VII "Open Problems and Conjectures" contains Chapter 30 OPEN-SS-24 entry as the explicit anticipation that SS-9 would close; the entry's text reads "Target paper: SS-9 candidate."
+
+(ii) **TATWD_outline_revised.md is the canonical popular-science book outline**. 185 lines. The 20 April 2026 second-revision header notes the framing decisions (religious register preserved, altered-state framing disclosed, biographical posture). Chapter 11 "Eight Nuclei in a Row" sources "SS-7 v1.1" only — pre-SS-7 v1.2 (which fixed the OPEN-SS-22 retirement) and pre-SS-8 (which is now Chapter 22b in the master document) and pre-SS-9 (the entire current paper completion sequence). Chapter 15 "What Is Still Open" lists OPEN-SS-22 as "the next paper" (which is no longer accurate since OPEN-SS-22 was retired) and OPEN-SS-24 as "slated further out" (which is no longer accurate since SS-9 closed it conditionally).
+
+(iii) **development_transcript_TATWD_framing.md** is the framing-decisions transcript from 20 April 2026. The framing is settled (biographical-religious-physical posture; religious register preserved; altered-state framing disclosed; AI collaborator naming included). Session 35 does not need to revisit any of these decisions; it just needs to integrate SS-9 content under the existing framing.
+
+(iv) **TATWD_outline.md is the original first-pass outline**. Less authoritative than the revised version. Confirmed identical Chapter 11 and Chapter 15 entries before the 20 April revision; no separate integration needed.
+
+The pre-session inspection's primary effect was to confirm that the integration architecture is straightforward: SS-9 needs new chapter content in Part VI of CPP_the_theory.md (parallel to Chapter 22b for SS-8), updates to existing chapters (21 framing, 22b correction, 30 status transition), and new chapters in Part VII for the four sub-conditions. TATWD_outline_revised.md needs targeted updates to Chapter 11 (expand source list and description) and Chapter 15 (rewrite open-problem inventory). The framing of the book itself does not need to change.
+
+## II. Integration architecture identification — why Chapter 22c parallel to Chapter 22b is the right structural choice and why Chapters 32-35 (four new chapters) is the right granularity for the four sub-conditions
+
+The integration architecture has two structural decisions:
+
+**Decision 1: Add new Chapter 22c (rather than expand Chapter 21 or fold into Chapter 22b).** The choice is between (a) expanding Chapter 21 with SS-9 content as additional final paragraphs (treating SS-9 as a footnote to SS-7); (b) folding SS-9 content into Chapter 22b (treating SS-7 + SS-8 + SS-9 as a single chapter); (c) adding a new chapter parallel to Chapter 22b. Choice (a) was rejected because SS-9 has substantial enough content (8 paragraphs of master-narrative register; the full conditional-theorem closure paper architecture, the bridge centerpiece, the four sub-conditions, the v1.0-on-AI-review-only framing, the Lesson 6 codification, the relation to OPEN-SS-22 retirement) to warrant its own chapter. Choice (b) was rejected because Chapter 22b is the SS-8 chapter and folding SS-9 into it would conflate two distinct structural results (SS-8's 2E/V scaling at the third K₃ scale vs. SS-9's conditional polytope derivation). Choice (c) is the right choice — Chapter 22c parallel to Chapter 22b, three chapters in Part VI for SS-7 (Chapter 21) + SS-8 (Chapter 22b) + SS-9 (Chapter 22c), with Chapter 22 (OPEN-SS-22 retirement) sitting between Chapter 21 and Chapter 22b as the methodology-event chapter that's already there.
+
+**Decision 2: Add Chapters 32-35 (four new chapters in Part VII) rather than expand Chapter 30 or add a single sub-conditions chapter.** The choice is between (a) keeping all four sub-conditions in Chapter 30 (treating them as bullet points within a single chapter); (b) adding one new chapter for all four sub-conditions; (c) adding four new chapters, one per sub-condition. Choice (a) was rejected because Chapter 30's text needed to be focused on the OPEN-SS-24 transition (raw OPEN → ADVANCED → CLOSED conditional) and the four sub-conditions are individually substantial enough to deserve their own chapters with their own status descriptions, lemma references, and closure-route registries. Choice (b) was rejected for similar reasons — a single combined chapter would either be too long or would compress each sub-condition's content too much to be useful as programme-level reference. Choice (c) is the right choice — each sub-condition gets its own chapter (32-35), each chapter is short (3-4 sentences in the master-narrative register), and the four chapters together form a coherent block at the end of Part VII immediately before Part VIII (the Prediction Scorecard).
+
+## III. Chapter 22c content design rationale — the eight-paragraph structure capturing the SS-9 distinctive contribution at master-narrative register
+
+Chapter 22c at the master-narrative register is more terse than the anthology chapter at Rovelli/SciAm register. The master-narrative register prioritizes structural completeness over dramatic arc — every paragraph is a substantive content claim with reference paths to the source paper. The eight paragraphs of Chapter 22c each carry one substantive content claim:
+
+(1) **Opening paragraph** — Identifies SS-9 as the programme's first conditional theorem closure paper. The framing is general (not just SS-9-specific) — the paragraph notes the framing applies retroactively to SS-7 and SS-8.
+
+(2) **The proof architecture** — States the five-clause Theorem 6.1 explicitly, with the three lemmas (A, B′, C) and three sub-lemmas (2.1, 2.2, 2.3) named. The paragraph's purpose is to give the reader the proof's structural skeleton without diving into the details.
+
+(3) **The bridge centerpiece** — Identifies Steinitz's 1922 theorem and FvdW's 1947 classification as the external mathematical machinery that CPP converges with rather than producing. The paragraph's purpose is to show that the proof's central content is a *bridge* between CPP physics and existing mathematics, not a wholly internal CPP construction.
+
+(4) **The four new sub-conditions** — Maps C5 → OPEN-SS-29 → Chapter 32; C6 → OPEN-SS-30 → Chapter 33; C7 → OPEN-SS-33 → Chapter 34; C8 → OPEN-SS-37 → Chapter 35. The paragraph's purpose is to make the conditionalization explicit — readers can navigate from Chapter 22c to the per-sub-condition chapters.
+
+(5) **The deltahedra-gap** — OPEN-SS-31 at $N_\alpha \in \{11, 13, 14\}$ as scope-extension target. The paragraph's purpose is to address what the theorem does NOT cover, preserving the honesty discipline.
+
+(6) **The v1.0 ship basis** — Seven AI review passes, sub-task (e) rescope, public-posting venues. The paragraph's purpose is to document the unusual basis of the v1.0 designation and the rescope reasoning.
+
+(7) **Lesson 6 codification** — Programmatic invariant audit as derived programme-level methodology. The paragraph's purpose is to show that SS-9's polish track produced a programme-level methodology lesson, not just a v1.0 ship.
+
+(8) **Anthology and book integration** — Pointer to the parallel anthology chapter at `book_project/chapters/SS-9_the_polyhedrons_conditions.md`. The paragraph's purpose is to make the three-level integration explicit (paper text + anthology chapter + master document + book outline).
+
+The eight-paragraph structure is dense by design. Each paragraph could be expanded into its own section if the chapter were a paper rather than a master-document chapter, but the master-document register requires terseness — readers reading CPP_the_theory.md want the structural picture, not the proof narrative. The proof narrative lives in the SS-9 .tex paper; the dramatic narrative lives in the anthology chapter; this chapter is the structural integration.
+
+## IV. Chapter 21 and 22b retroactive update reasoning — why both needed updates and how the corrections preserve historical context
+
+**Chapter 21 update — preserving the C4-as-modeling-hypothesis framing as historical context**: The original Chapter 21 paragraph "The hostile-geometry stress test" stated "The claim 'alpha clusters arrange as simplicial polytopes' (assumption C4) is a modeling hypothesis, not a theorem." This framing was correct at the time of writing (April 2026, before SS-9). The Session 35 update preserves this framing as historical context (the paragraph still states C4 was originally a modeling hypothesis) and adds a follow-on paragraph that updates the framing to the post-SS-9 status (C4 is now a conditional theorem under SS-9 with four named sub-conditions). The two paragraphs together give the reader the historical arc: C4 was a modeling hypothesis when SS-7 introduced it; SS-9 promoted C4 to a conditional theorem; the conditional dependencies are now named and registered. Erasing the original framing would have been dishonest about how the programme arrived at its current understanding; preserving it as historical context with a follow-on update is the right discipline.
+
+**Chapter 22b update — correcting the SS-9 alpha-deuteron speculation that didn't materialize**: The original Chapter 22b paragraph "The cascade across three nuclear scales" speculated that SS-9 might pursue the fourth-scale alpha-deuteron contact extension (with preliminary ⁶Li residual binding 1.47 MeV vs. predicted $2 B_\text{pair}/3 \approx 1.56$ MeV). This speculation was reasonable at the time of writing (April 2026, when SS-8 v1.0 shipped) but did not materialize — SS-9 went the C4-derivation direction instead. The Session 35 update corrects the paragraph to reflect what actually happened: SS-9 attacked OPEN-SS-24 directly; the alpha-deuteron line remains a candidate target for SS-10 or beyond; the preliminary ⁶Li residual binding observation is still on the table as suggestive but unworked. The correction preserves the programme's record of what was speculated and acknowledges that the speculation was wrong about which direction SS-9 would go. This is the symmetric-honesty discipline applied to one's own past predictions — the same standard applied to reviewers is applied to oneself.
+
+## V. TATWD outline updates as popular-science register companion to master-document register updates — the three-level integration architecture
+
+Session 35's integration spans three artifacts at three registers:
+
+(1) **SS-9 .tex paper** at full technical register (32 pages, formal proofs, complete theorem statements, .tex source frozen at v1.0 per anti-priority). This is the canonical artifact. Frozen at Session 32 v1.0 ship.
+
+(2) **`book_project/chapters/SS-9_the_polyhedrons_conditions.md`** at Rovelli/Scientific American register (~5389 words, 11 sections, dramatic arc with bridge centerpiece, AI collaborator naming, closing image thematic continuation). This is the parallel narrative artifact at SciAm register. Shipped at Session 34.
+
+(3) **`CPP_the_theory.md`** at master-narrative register (Chapter 22c with 8 dense paragraphs, Chapter 30 status update, Chapters 32-35 for the four sub-conditions). This is the integration into the master technical narrative. Shipped at Session 35.
+
+(4) **`book_project/TATWD_outline_revised.md`** at popular-science book outline register (Chapter 11 description expanded, Chapter 15 inventory updated, source-materials table updated). This is the integration into the book outline that points to all the above. Shipped at Session 35.
+
+The four artifacts at four registers serve different audiences: (1) for technical specialists who want to verify the proof; (2) for educated lay readers who want the dramatic narrative; (3) for programme participants and serious students of the theory who want the structural integration; (4) for prospective readers of the book and for Thomas-and-collaborators planning the book's writing. All four artifacts are about the same underlying physics (SS-9 v1.0 conditional theorem closure of OPEN-SS-24) but at different levels of compression and dramatic shaping.
+
+The Session 35 integration's distinctive contribution is making the master-narrative-and-book-outline level explicit. SS-9's content was in the .tex (Session 32) and the anthology chapter (Session 34) but had not yet been folded into the programme's master technical narrative or popular-science book outline. Session 35 closes this gap.
+
+## VI. Documentation discipline at Session 35 close — second test of Session 33 lesson learned applying full Steps A-H to non-paper-text SS-9 artifact (master document narrative integration)
+
+Session 33's lesson learned (codified in handover-SS-9.md Session 33 close as a NEW anti-priority): "the four-tier documentation discipline applies whenever new SS-9 artifacts ship, not only during paper-text development. Only the .tex source is 'frozen at v1.0' (per the existing anti-priority); the documentation suite continues to grow with each session that adds SS-9 content."
+
+Session 34 was the first test of this discipline (anthology chapter at `book_project/chapters/SS-9_the_polyhedrons_conditions.md` triggered full Steps A through H). Session 35 is the second test (TATWD integration into `CPP_the_theory.md` and `book_project/TATWD_outline_revised.md` triggers full Steps A through H). The two tests differ in the type of artifact:
+
+- **Session 34 artifact**: NEW file at `book_project/chapters/SS-9_the_polyhedrons_conditions.md` (single-file new content)
+- **Session 35 artifact**: Modifications to existing files (`CPP_the_theory.md` 478 → 516 lines; `TATWD_outline_revised.md` line-level edits) + NEW chapters within existing files
+
+Both tests successfully apply the discipline. The Steps A through H pattern works equally well for new-file artifacts (Session 34) and existing-file-modification artifacts (Session 35). The Session 35 documentation suite proves the discipline is robust to artifact type.
+
+A future Claude instance reading this Tier 4 reasoning section will see two precedents (Session 34 and Session 35) for applying the discipline to non-paper-text SS-9 artifacts. The pattern is stable: full Steps A (session log entry) + B (transcript transactions) + C (Vignette in development-SS-9.md) + D (Tier 4 reasoning in reasoning-SS-9.md) + E (Research_Frontier last-updated header + future_projects status update + Recently Completed entry) + H (handover-SS-9.md updated to current session close).
