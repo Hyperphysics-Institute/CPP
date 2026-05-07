@@ -3,7 +3,11 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.5 -- 6 May 2026 (Session 28 OPEN-ORG-012-followup
+% Version 0.6 -- 6 May 2026 (Session 29 OPEN-ORG-012-followup
+%   v1.0 polish sub-task (d.2): Copilot review feedback
+%   incorporation -- editorial polish + clarifying additions)
+%
+% Earlier Version 0.5 -- 6 May 2026 (Session 28 OPEN-ORG-012-followup
 %   v1.0 polish sub-task (d.1): ChatGPT review feedback
 %   incorporation -- 5 substantive corrections + C8 registration)
 %
@@ -20,6 +24,142 @@
 %   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v0.6 (6 May 2026 Session 29) -- v0.5 -> v1.0 POLISH SUB-TASK
+%     (d.2) [COPILOT REVIEW INCORPORATION]. Copilot review of v0.5
+%     delivered an editorial review (qualitatively different from
+%     ChatGPT's v0.4 substantive review): 0 new logical gaps, 0
+%     substantive technical issues, recommendations focused on
+%     clarity and reader experience. Per symmetric-honesty
+%     protocol, all Copilot points assessed against the v0.5
+%     source independently before incorporation. Some accepted,
+%     some adapted, some pushed back.
+%
+%     ACCEPTED EDITORIAL POLISH (v0.5 -> v0.6):
+%
+%     (1) Formal "rigid packing" definition added as new \S 2.4.
+%         Three bullets: no interpenetration; alphas meet only on
+%         faces/edges/vertices; no centroid coincidence. Rigid
+%         packing was used freely throughout v0.1-v0.5 without
+%         formal definition; v0.6 makes it explicit. Located
+%         after \S 2.3 (Contact relation, contact graph, binding)
+%         and before \S 2.5 (Paper-level structural hypotheses).
+%
+%     (2) C8 entry (\S 2.5) appended with explicit "Important
+%         caveat" paragraph: C8 is not derivable from C1' + C2 +
+%         rigid packing alone (Steinitz delivers abstract
+%         polytope, not centroid-realization), C8 is not
+%         guaranteed by facet (b) (facet (b) removes obstruction
+%         but does not constructively produce realization), C8's
+%         first-principles closure (OPEN-SS-37) is parallel in
+%         conceptual weight to OPEN-SS-29 (C5), OPEN-SS-30 (C6),
+%         OPEN-SS-33 (C7). Note: NOT framed as "dominant"
+%         remaining gap (Copilot's recommended framing), since
+%         C5/C6/C7/C8 sit parallel and ranking is unjustified.
+%
+%     (3) C7 entry (\S 2.5) appended with explicit "To be
+%         explicit" sentence: C7 is not derived in this paper, is
+%         not guaranteed by rigid packing alone, is a paper-level
+%         structural hypothesis pending OPEN-SS-33 (advanced at
+%         v0.2 to conditionally closed modulo H4+H5 via Sub-Lemma
+%         2.1).
+%
+%     (4) Lemma B' Step 5 expanded with: (a) one-line
+%         enumeration of Steinitz preconditions met (simplicity
+%         from C2/rigid packing; planarity from C7; 3-vertex-
+%         connectedness from triangulation); (b) one-line
+%         emphasis that the polytope P is abstract combinatorial,
+%         the convex hull H(C) is on centroids c_i not nucleon
+%         positions, and geometric realization is the separate
+%         content of C8 in Theorem clause (iv).
+%
+%     (5) New "Roadmap to v1.0" subsection added at end of \S 9
+%         (Gaps That Remain). Six parallel programme-level
+%         tasks: OPEN-SS-29 (C5), OPEN-SS-30 (C6), OPEN-SS-33
+%         (C7), OPEN-SS-37 (C8), OPEN-SS-31 (deltahedra-gap),
+%         Coulomb screening at NLO. Notes that the four
+%         C-conditional closures sit parallel in conceptual
+%         weight; ranking depends on tractability of candidate
+%         closure routes, not on conceptual centrality to the
+%         proof structure.
+%
+%     PUSHED BACK (NOT incorporated):
+%
+%     (a) Move \S 11 (Physical Interpretation) to appendix.
+%         Pushed back: \S 11 is 45 lines, comparable to other
+%         main-body sections (\S 5 Lemma B' is 43 lines, \S 6
+%         Theorem is 36 lines). \S 11 connects abstract derivation
+%         to broader CPP programme (CP/GP signature mapping); main-
+%         body placement is structural, not stylistic preference.
+%
+%     (b) Move \S 8.3 (OPEN-SS-32 status) to supplementary
+%         document. Pushed back: \S 8.3 is 31 lines, integral to
+%         honest-assessment narrative documenting Phases 1-11 of
+%         the parallel investigation thread. Cross-paper coherence
+%         requires keeping it in main body.
+%
+%     (c) Frame C8 as "the dominant remaining open problem."
+%         Pushed back: C5/C6/C7/C8 sit parallel as paper-level
+%         conditionals; ranking among them is a value judgment
+%         not justified by the proof structure. v0.6 explicitly
+%         states the four conditional closures are parallel
+%         (Roadmap subsection final paragraph).
+%
+%     Effect on hypothesis stack: UNCHANGED. C1' + C2 + C3 + C5 +
+%     C6 + C7 + C8 + rigid packing + 3D-non-degeneracy. v0.6 is
+%     editorial polish only, not structural change.
+%
+%     Effect on \S 9 gap list: UNCHANGED in entries; new Roadmap
+%     subsection added documenting v1.0 closure path.
+%
+%     Effect on programme-level OPEN-* registries: UNCHANGED. No
+%     new OPEN-SS-* registration. Copilot review delivered no new
+%     conditionals, only editorial recommendations. Programme
+%     negative-result count UNCHANGED at 12.
+%
+%     Other ripples: none. Theorem statement, Lemma B' statement,
+%     Sub-Lemmas 2.1/2.2/2.3 statements, Main Result mdframed,
+%     intro narrative, Open Problems Addressed, Keywords -- all
+%     UNCHANGED at v0.6. Editorial polish only.
+%
+%     Symmetric-honesty observation: ChatGPT review (sub-task
+%     d.1) and Copilot review (sub-task d.2) deliver
+%     qualitatively different feedback profiles. ChatGPT was
+%     surgical-technical (5 substantive logical gaps with line-
+%     level specificity, requiring v0.4 -> v0.5 substantive
+%     correction). Copilot is editorial (0 new logical gaps,
+%     polish recommendations only). Both reviewers reading v0.5
+%     say the math is sound; ChatGPT's fixes from v0.4 -> v0.5
+%     have been independently endorsed by Copilot (Strengths
+%     1.1-1.5 in Copilot review). This is the validation signal:
+%     two independent reviewers agreeing on the soundness of the
+%     lemma stack and theorem structure raises confidence that
+%     v0.5 -> v0.6 polish is sufficient before sub-task (e)
+%     external review.
+%
+%     Lines added: ~75 (rigid packing definition ~15;
+%     C8 caveat ~15; C7 clarification ~5; Lemma B' Step 5
+%     expansion ~10; Roadmap to v1.0 ~30). No content removed.
+%
+%     Compilation: three pdflatex passes, zero errors after
+%     pass 3.
+%
+%     Polish track status after this version: sub-task (a) C7
+%     sub-lemma DONE (v0.2); sub-task (b) 3D-non-degeneracy
+%     sub-lemma DONE (v0.3); sub-task (c) C5 well-definedness
+%     sub-lemma DONE (v0.4); sub-task (d.1) ChatGPT review
+%     incorporation DONE (v0.5); sub-task (d.2) Copilot review
+%     incorporation DONE (this version, v0.6); sub-task (e)
+%     external review remains. v0.6 represents the cleanest
+%     formal state of the conditional theorem after two rounds
+%     of substantive AI review, with editorial polish complete.
+%
+%     Anti-priority: do NOT modify SS-9 v0.6 .tex outside of
+%     v1.0 polish revisions. v1.0 ship now contingent on either
+%     (a) sub-task (e) external review surfacing no further
+%     substantive gaps, or (b) advancement of one or more of
+%     C5/C6/C7/C8 toward conditional closure (analogous to
+%     Sub-Lemma 2.1's advancement of C7).
+%
 %   v0.5 (6 May 2026 Session 28) -- v0.4 -> v1.0 POLISH SUB-TASK
 %     (d.1) [CHATGPT REVIEW INCORPORATION]. ChatGPT review of v0.4
 %     surfaced 5 substantive issues; all 5 incorporated as v0.5
@@ -643,6 +783,18 @@ Define:
 
 \textbf{C3 (K$_3$ collective mode at each contact).} Each contact $\alpha_i \sim \alpha_j$ contributes one collective bonding mode at energy $\Bpair$.
 
+\subsection{Rigid packing}
+\label{sec:rigid_packing}
+
+The phrase \textbf{rigid packing} is used throughout this paper as a structural condition on physically realizable cluster configurations. A configuration $\mathcal{C}$ satisfies rigid packing iff:
+\begin{enumerate}
+\item \textbf{No interpenetration.} For all $i \neq j$, $\mathrm{int}(\alpha_i) \cap \mathrm{int}(\alpha_j) = \emptyset$. The interiors of distinct alpha tetrahedra do not overlap.
+\item \textbf{Contact only on faces, edges, or vertices.} If $\alpha_i \cap \alpha_j \neq \emptyset$, the intersection $\alpha_i \cap \alpha_j$ is a face, edge, or vertex of both $\alpha_i$ and $\alpha_j$ (or a subset thereof). No partial face overlaps, no point-on-interior contacts.
+\item \textbf{No centroid coincidence.} For all $i \neq j$, $c_i \neq c_j$. Centroids of distinct alphas occupy distinct positions in $\mathbb{R}^3$; equivalently, two alphas cannot occupy the same location modulo orientation.
+\end{enumerate}
+
+Rigid packing is a closed condition on configuration space (the open exclusion regions are the complements). It is invoked alongside C2 (which specifies the form of the contact relation when alphas do touch) and is logically independent of the C5/C6/C7/C8 paper-level structural hypotheses.
+
 \subsection{Paper-level structural hypotheses (the conditionals)}
 
 \textbf{C5 (ground-state energy minimization).} Among all $\Nalpha$-alpha cluster configurations $\mathcal{C}$ that are physically realizable (no alpha-alpha interpenetration; cluster connected through $G$), the realized ground state minimizes total energy, equivalently maximizes $B(\mathcal{C})$. \emph{Programme-level closure registered as OPEN-SS-29 candidate.}
@@ -656,7 +808,9 @@ Define:
 \medskip
 \textbf{Physical motivation for C8.} Steinitz's theorem (1922) classifies graphs that are 1-skeletons of convex 3-polytopes \emph{abstractly}: any simple, planar, 3-vertex-connected graph $G$ is the 1-skeleton of \emph{some} convex 3-polytope $P$. The polytope $P$ is determined up to abstract combinatorial structure, but its \emph{geometric realization} in $\mathbb{R}^3$ --- in particular, whether $P$ can be realized with vertices at \emph{specifically} the alpha LO centroid positions $c_i$ (which are determined by the physics of rigid packing $+$ C2 face-coincidences, not chosen abstractly) --- requires a separate argument. C8 records this geometric realizability claim as a paper-level hypothesis. The Freudenthal--van der Waerden theorem (1947) supplies the abstract polytope side: at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the unique simplicial convex 3-polytope on $\Nalpha$ vertices with all-equilateral-triangular faces and uniform edge length is the FvdW deltahedron. C2 supplies the uniform-edge-length condition $\Raa$. The remaining ingredient --- that the alpha cluster physics actually realizes this geometry --- is C8. Refined-C1 facet (b) (vertex-hosting accommodation at degree-$\geq 5$ vertices) is a necessary precondition for C8's plausibility at $\Nalpha \geq 7$, since strict-C1 with each alpha presenting four outer faces cannot host the degree-5 vertices of the FvdW deltahedra at $\Nalpha \geq 7$; whether facet (b) is also \emph{sufficient} to construct the realization (not just remove the strict-C1 obstruction) is part of OPEN-SS-37.
 
-\textbf{Physical motivation for C7.} Under C6, the cluster is a ``shell'' of alphas with no interior member. Under C1$'$ + rigid packing, the cluster is a contractible connected 3D region (no internal voids in the standard nuclear physics interpretation of an alpha cluster). Each alpha contributes outer faces to the cluster's exterior 2-surface $\Sigma$, with $\Sigma \cong S^2$ topologically (boundary of a contractible 3D region). The contact graph admits a natural embedding on $\Sigma$ via the alpha-dual construction (each alpha as a point on its own outer-face region, each contact as an arc through the shared interior face). This embedding makes $G$ planar. The C7 hypothesis records this topological inheritance from C6 + cluster contractibility, abstracted from the geometric details of the embedding so that Steinitz's theorem can be invoked directly. C7's first-principles closure from CPP primitives is the OPEN-SS-33 question; physical motivation alone justifies it as a paper-level hypothesis at the C5/C6 tier.
+\emph{Important caveat (added v0.6 per Copilot review).} C8 is a \textbf{strong geometric hypothesis} requiring future first-principles work. Specifically: C8 is \emph{not} derivable from C1$'$ $+$ C2 $+$ rigid packing alone (Steinitz delivers an abstract polytope, not a centroid-realization at the $c_i$ positions), C8 is \emph{not} guaranteed by refined-C1 facet (b) (facet (b) removes the strict-C1 obstruction at degree-$\geq 5$ vertices but does not constructively produce the realization), and C8's first-principles closure (OPEN-SS-37) sits parallel in conceptual weight to OPEN-SS-29 (C5 derivation), OPEN-SS-30 (C6 derivation), and OPEN-SS-33 (C7 derivation). Empirical support for C8 is strong: SS-7 Table 1 confirms the FvdW edge-count formula at all eight specified $\Nalpha$ values within $\pm 1.5\%$ for twelve nuclei; this is consistent with C8 holding empirically but does not constitute a derivation. Sub-task (e) external review and OPEN-SS-37 closure attempts are the natural follow-up routes.
+
+\textbf{Physical motivation for C7.} Under C6, the cluster is a ``shell'' of alphas with no interior member. Under C1$'$ + rigid packing, the cluster is a contractible connected 3D region (no internal voids in the standard nuclear physics interpretation of an alpha cluster). Each alpha contributes outer faces to the cluster's exterior 2-surface $\Sigma$, with $\Sigma \cong S^2$ topologically (boundary of a contractible 3D region). The contact graph admits a natural embedding on $\Sigma$ via the alpha-dual construction (each alpha as a point on its own outer-face region, each contact as an arc through the shared interior face). This embedding makes $G$ planar. The C7 hypothesis records this topological inheritance from C6 + cluster contractibility, abstracted from the geometric details of the embedding so that Steinitz's theorem can be invoked directly. C7's first-principles closure from CPP primitives is the OPEN-SS-33 question; physical motivation alone justifies it as a paper-level hypothesis at the C5/C6 tier. \emph{To be explicit (added v0.6 per Copilot review): C7 is not derived in this paper. C7 is not guaranteed by rigid packing alone --- a generic 3D rigid-packed cluster has a contact graph that need not be planar in the absence of C6's shell condition. C7 is a paper-level structural hypothesis pending OPEN-SS-33 closure (advanced at v0.2 to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5'' via Sub-Lemma~\ref{lem:C7}).}
 
 C5, C6, C7, C8 are \textbf{paper-level structural hypotheses at the SS-7 inheritance tier}. None is derived from CPP axioms A1--A11 in this paper; each is registered as an OPEN-SS-2X / 3X candidate for follow-up programme-level closure.
 
@@ -901,7 +1055,7 @@ with equality iff every face is a triangle. The Euler bound establishes $|E| \le
 \textbf{Step 4: $G$ is 3-vertex-connected.} By Step 3, $G$ is a triangulation of $S^2$ (every face of the planar embedding is a triangle, and the embedding is on $S^2$ by the standard one-point compactification of $\mathbb{R}^2$). Standard result (Diestel, \emph{Graph Theory} \cite{diestel2017}, Proposition 4.5.2; Whitney 1932 \cite{whitney1932}): every triangulation of $S^2$ on $N \geq 4$ vertices is 3-vertex-connected. \checkmark
 
 \medskip
-\textbf{Step 5: Apply Steinitz's theorem.} By Steinitz's theorem (1922 \cite{steinitz1922}; cf. Ziegler, \emph{Lectures on Polytopes} \cite{ziegler1995}, Theorem 4.1): a graph $G$ is the 1-skeleton of a convex 3-polytope iff $G$ is simple, planar, and 3-vertex-connected. By Steps 1, 2, 4, $G$ is the 1-skeleton of a convex 3-polytope $P$. By Step 3, $P$ is simplicial (every 2-face triangular) with $|E| = 3\Nalpha - 6$. \checkmark
+\textbf{Step 5: Apply Steinitz's theorem.} By Steinitz's theorem (1922 \cite{steinitz1922}; cf. Ziegler, \emph{Lectures on Polytopes} \cite{ziegler1995}, Theorem 4.1): a graph $G$ is the 1-skeleton of a convex 3-polytope iff $G$ is simple, planar, and 3-vertex-connected. The three preconditions are met by the present setup: simplicity is automatic (the contact graph has no multi-edges or loops, since each $\alpha_i \sim \alpha_j$ contributes one edge by C2 and self-contacts are excluded by rigid packing), planarity is supplied by C7, and 3-vertex-connectedness follows from triangulation by Step 4. By Steps 1, 2, 4, $G$ is the 1-skeleton of a convex 3-polytope $P$. By Step 3, $P$ is simplicial (every 2-face triangular) with $|E| = 3\Nalpha - 6$. The polytope $P$ here is an abstract combinatorial object; its geometric realization at the alpha LO centroids $c_i$ (i.e., the convex hull $H(\mathcal{C}) = \mathrm{conv}(c_1, \ldots, c_{\Nalpha})$ of \emph{centroids}, not nucleon positions) with edge length $\Raa$ is the separate content of C8, handled in Theorem~\ref{thm:main} clause (iv). \checkmark
 \end{proof}
 
 \begin{remark}[Role of refined-C1 facet (b) at degree-$\geq 5$ vertices]
@@ -1062,6 +1216,27 @@ Phase 11 NULL marks the natural saturation point for single-session R3-channel w
 
 \item \textbf{Steinitz-to-centroid realization gap:} \emph{CLOSED via C8 registration at v0.5} (sub-task (d.1) ChatGPT-review incorporation). Sessions 25--27 closed the §9 v0.1 gaps that were explicit but did not surface this implicit gap: Steinitz's theorem produces an \emph{abstract} simplicial convex 3-polytope from the contact graph, but the \emph{geometric realization} of that polytope at the specific alpha LO centroid positions $c_i$ (which are determined by the physics, not chosen abstractly) requires a separate argument. ChatGPT's v0.4 review (Session 28) flagged this gap as Lemma~\ref{lem:Bprime} Step 3 (overclaiming equality $|E| = 3\Nalpha - 6$ from Lemma~\ref{lem:C} $+$ Euler upper bound without explicit realizability), Theorem clause (iv) (overclaiming the centroid-realization), and the facet (b) language (asserting realization rather than motivating its plausibility). v0.5 addresses all three faces of the gap by registering \textbf{C8 (FvdW centroid-realizability)} as a paper-level structural hypothesis (\S\ref{sec:setup}), and tightening Lemma~\ref{lem:Bprime} Step 3, Theorem clause (iv), and the facet (b) remark to invoke C8 explicitly. C8's first-principles derivation from A1--A11 is registered as \textbf{OPEN-SS-37} candidate (NEW at v0.5).
 \end{enumerate}
+
+\subsection*{Roadmap to v1.0 (added v0.6)}
+\label{sec:roadmap_v1}
+
+The remaining work to convert the v0.6 conditional theorem into an unconditional theorem at the CPP-axiom tier comprises six parallel programme-level tasks:
+
+\begin{enumerate}
+\item \textbf{OPEN-SS-29 (C5 first-principles closure).} Derive the ground-state energy minimization principle from CPP axioms A1--A11. Sub-Lemma~\ref{lem:C5} establishes well-definedness of the C5 ground state via compactness; OPEN-SS-29 is the residual derivation of the minimization principle itself from CPP primitives.
+
+\item \textbf{OPEN-SS-30 (C6 first-principles closure).} Derive the cluster surface-realization condition (no alpha interior to cluster) from CPP axioms. Untouched in this paper; closure route candidates include energy-cost arguments for interior alphas under the K$_3$ collective-mode cost structure of SS-7.
+
+\item \textbf{OPEN-SS-33 (C7 first-principles closure).} Derive contact-graph planarity from CPP axioms. Advanced at v0.2 to ``conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5'' via Sub-Lemma~\ref{lem:C7}; residual closure path is to derive H4 and H5 from C5 (sketched in Remark~\ref{rem:OPENSS33}).
+
+\item \textbf{OPEN-SS-37 (C8 first-principles closure, NEW at v0.5).} Derive the FvdW centroid-realizability condition from CPP axioms. Three closure-route candidates registered: (a) facet (b) sufficiency derivation; (b) constraint-counting argument matching DOF to face-coincidence equations; (c) direct construction. May share Layer-3 ancestry with OPEN-SS-32 (slip-plane mechanism) via shared K$_3$ scale-recurrence.
+
+\item \textbf{OPEN-SS-31 (deltahedra-gap resolution).} The Theorem applies at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$; $\Nalpha \in \{11, 13, 14\}$ have no convex deltahedron, so clause (iv) does not apply. Resolution requires either an extension of the FvdW classification to non-deltahedral simplicial polytopes (if such are physically realizable as alpha clusters), or an empirical demonstration that AME 2020 alpha-chain nuclei at $\Nalpha = 11, 13, 14$ are inconsistent with simplicial-polytope binding patterns.
+
+\item \textbf{Coulomb screening (NLO correction).} The LO conditional theorem treats binding without explicit Coulomb correction. NLO Coulomb effects shift binding by $\sim 1\%$ at the FvdW alpha counts (per SS-7 Table 1's $\pm 1.5\%$ residual fingerprint). v1.0 ship can accommodate Coulomb at NLO without altering the LO geometric proof structure.
+\end{enumerate}
+
+Closure of OPEN-SS-29, 30, 33, 37 unconditionally promotes the SS-9 conditional theorem; OPEN-SS-31 extends its scope; Coulomb screening accounts for NLO empirical corrections. The four C-conditional closures (C5, C6, C7, C8) sit parallel in conceptual weight; ranking among them depends on tractability of the candidate closure routes for each, not on their conceptual centrality to the proof structure.
 
 % ===================================================================
 \section{Phase 4 Sketch: Programme-Level Closure Attempts}
