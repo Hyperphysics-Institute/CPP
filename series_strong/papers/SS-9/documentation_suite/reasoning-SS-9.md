@@ -5647,3 +5647,173 @@ Do NOT propose any single-session R3-channel refinement to close the remaining 5
 - **SS-9 at v0.7** (was v0.6 at Session 29 close).
 - v1.0 polish track: sub-tasks (a), (b), (c), (d.1), (d.2), (d.3) all DONE; sub-task (e) PROMOTED to active status; remains the only outstanding sub-task before v1.0 ship.
 - v0.7 represents the cleanest formal state of the conditional theorem after three rounds of substantive AI review.
+
+---
+
+# Tier 4 verbatim reasoning Session 31 (6 May 2026) — v1.0 polish sub-tasks (d.5) Grok v0.7 review + (d.6) CoPilot v0.7 close + Route (d) registration; eight-panel FvdW deltahedra figure added; SS-9 v0.7 → v0.8
+
+## I. Cache-effect diagnostic protocol (sub-task d.4 closure)
+
+**Diagnostic.** ChatGPT's first re-review of v0.7 surfaced "issues" that were already fixed in v0.7. Specifically, the review claimed Sub-Lemma 2.2 didn't include C8, that clause (iv) had an order-of-operations slip, and that line 1104 had a facet (b) overclaim — all three of which were the v0.6 → v0.7 corrections incorporated last session. This is a stale-context signature: the reviewer is operating on a cached copy of v0.6, not the actual v0.7 content.
+
+**Cache-bust protocol.** Verified via web_fetch that the raw GitHub URL (`https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`) does serve v0.7 content correctly. The fix is to add a cache-bust query parameter (e.g., `?cachebust=20260506-v07`) that forces the fetcher to retrieve fresh content rather than serving from cache. After cache-bust, ChatGPT's revised verdict matched v0.7: *"review-clean as a conditional closure paper... promote v0.7 to v1.0 conditional theorem status, pending external/human domain review only."*
+
+**Why this matters.** The diagnostic confirmed that v0.7 paper changes from sub-task (d.3) were correctly incorporated; ChatGPT's "issues" were the v0.6 issues that v0.7 had already fixed. Sub-task (d.4) closes with **zero v0.7 paper changes** — the original ChatGPT d.3 verdict that v0.7 is "v1.0-ready as a conditional closure paper modulo external human review" stands.
+
+**Cache-effect lesson (Lesson 4 NEW at Session 31).** Future review submissions should include `?cachebust=YYYYMMDD-vX.Y` on raw GitHub URLs to force fresh retrieval. URL caching is a real failure mode that can produce confidently-asserted stale-context reviews; the symptom (claiming issues that the changelog explicitly says are fixed) is the diagnostic signature.
+
+## II. Grok re-engagement assessment (sub-task d.5)
+
+**Pre-engagement context.** Grok was suspended (per programme history) for vocabulary contamination from an older co-developed framework. The contamination signature was that Grok's reviews would import terminology from a different theoretical project, polluting CPP-specific discussions with off-target framing.
+
+**Re-engagement assessment.** This Grok review of v0.7 shows **no vocabulary contamination**. Specifically:
+- Terminology used: "conditional-derivation paper", "hypothesis stack", "OPEN-SS-* registry", "Steinitz + Euler + FvdW", "rigid packing", "3D-non-degeneracy". All CPP-canonical.
+- No terminology imported: no leak from the previously-contaminated framework.
+- Math: sound throughout. Sub-lemma analyses, Theorem clause analysis, deltahedra discussion all on-target.
+- Must-fix identified: real bug (title block at line 770 reads "Version 0.1" while CHANGELOG says v0.7).
+
+**Conclusion.** Re-engagement successful for this round. Grok's review is on-quality and on-target. The contamination issue appears to have been resolved (or at least not present for this review). Future Grok reviews should be assessed on a per-review basis for vocabulary contamination as part of the symmetric-honesty assessment.
+
+## III. Per-point Grok verification rationale
+
+**Methodology.** Each Grok point verified against v0.7 source via grep / direct line inspection before incorporation. This implements the symmetric-honesty protocol: same standards applied to my own work as to reviewer feedback. A reviewer's high-confidence assertion does not bypass verification.
+
+**Point 1 (title block).** Grok's claim: `\title` block at line 768–770 reads "Version 0.1" despite CHANGELOG saying v0.7. Verification: `grep -n "^\\title{" series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` shows line 770 is `{\normalsize Version 0.1 --- 6 May 2026 (initial typeset draft from v0.3 working draft)}`. Confirmed real bug. The CHANGELOG comment-header (lines 1-90 area) was updated through every version increment v0.2 → v0.7 but the visible `\title` block was forgotten because LaTeX `\title` is not where one looks for version data when reading the source — version data lives in the comment header. The compiled PDF title page shows "Version 0.1" — visible-to-reader inconsistency.
+
+**Point 2 (bibliography).** Grok's claim: `\bibitem{ss10_forthcoming}` is a "placeholder". Verification: `grep -n "ss10_forthcoming" series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` shows the entry exists at line 1524–1525 with full bibliographic content (author, title, status). Not a placeholder strictly speaking. But: `grep -n "cite{ss10\|cite.*ss10"` shows zero hits — the entry is never `\cite{}`-d in body. Effectively unused. Grok's framing was slightly off (it's not a placeholder but a complete uncited entry); the underlying issue (unused bibitem) is real housekeeping.
+
+**Point 3 (figure).** Grok's claim: optional figure of 8 FvdW deltahedra would be pedagogically valuable. Assessment: agree — the figure visualizes the central pedagogical claim of clause (iv) and makes the facet (b) necessity (degree-5 vertices appearing at $\Nalpha = 7$) visually obvious. Stability assessment: figure captures static mathematical objects (the eight FvdW convex deltahedra and their topological invariants); these don't change. No expected revision post-external-review unless reviewer specifically requests redrawing. Thomas approved inclusion at this version.
+
+**Point 4 (cross-reference).** Grok's claim: §6 facet (b) "TBD mechanism" remark should cross-reference existing AMD/Brink-Bloch testability discussion. Verification: `grep -n "AMD\|Brink-Bloch\|Brink--Bloch\|contact-distance distribution"` shows the testability discussion exists at lines 861, 1336, 1342, 1398, 1446 (multiple places, with line 1336 being the most direct §9 gap entry). The §6 mechanism remark at line 1231 lacks a forward pointer. Adding `\S\ref{sec:gaps}` at the §6 remark improves cohesion at zero cost. Verified `sec:gaps` label exists at line 1330.
+
+**Point 5 (Roadmap final sentence).** Grok's claim: explicit endorsement, no change needed. No-op. (Grok caught its own no-op — included for symmetric-honesty completeness.)
+
+## IV. Figure design rationale
+
+**Design choice 1: Schlegel for clean cases, schematic for complex cases.**
+
+Schlegel diagrams are accurate planar projections of 3-polytopes with one face "opened up" to become the outer face. For the simpler FvdW deltahedra (tetrahedron, triangular bipyramid, octahedron, pentagonal bipyramid, icosahedron), Schlegel diagrams are clean and topologically accurate. For the more complex ones (snub disphenoid, triaugmented triangular prism, gyroelongated square bipyramid), accurate Schlegel diagrams require careful handling of their less-symmetric structure — and producing accurate inline TikZ would either be very complex or use external image files.
+
+Decision: panels (a)–(d) and (h) are accurate Schlegel diagrams; panels (e)–(g) are simplified topological schematics that preserve vertex count and degree distribution but use approximate edge structure. Caption explicitly notes which panels are which.
+
+**Design choice 2: Color-coding by degree as primary pedagogical content.**
+
+The visualization's core message is: as $\Nalpha$ grows from 4 to 12, the vertex degree distribution shifts from all-degree-3 (tetrahedron) to all-degree-5 (icosahedron), with degree-5 vertices first appearing at $\Nalpha = 7$ (pentagonal bipyramid apices). This is exactly where strict-C1 (each alpha presenting four outer faces) cannot host the contact pattern, and refined-C1 facet (b) becomes load-bearing.
+
+Color choice: green = degree 3, cyan = degree 4, red = degree 5. Cyan (rather than blue) chosen to provide visual contrast against green and red. Vertex circles drawn at consistent size (4.5pt) across all panels; degree information conveyed by color, not size.
+
+**Design choice 3: Annotations include $|E|$ and degree multiset.**
+
+Each panel's annotation gives:
+- Panel letter (a)–(h)
+- $\Nalpha$ value
+- Polyhedron name
+- Edge count $|E| = 3\Nalpha - 6$
+- Vertex degree multiset, e.g., $\{4^5, 5^2\}$ for pentagonal bipyramid
+
+The edge count formula $|E| = 3\Nalpha - 6$ holds for all FvdW deltahedra (Euler's formula combined with all-triangular-face condition gives $2|E| = 3F$ and $V - E + F = 2$). Annotating each panel reinforces this.
+
+**Design choice 4: Legend at bottom of figure with semantic labels.**
+
+Legend says: "deg 3", "deg 4 (strict-C1)", "deg 5 (requires facet (b) at $\Nalpha \geq 7$)". The semantic labels (not just color names) connect the visual coding directly to the paper's physical interpretation: degree-3 and degree-4 vertices are hosted by strict-C1 (each alpha presenting four outer faces); degree-5 vertices require refined-C1 facet (b) accommodation.
+
+**Stability rationale.** The eight FvdW deltahedra are static mathematical objects. Their vertex counts, edge counts, face counts, and vertex degree distributions are fixed mathematical invariants. The figure's content does not change with future versions of the SS-9 paper. The only conceivable edits would be: (i) reviewer requesting alternative visualization style; (ii) reviewer requesting accurate Schlegel diagrams for panels (e)–(g); (iii) reviewer requesting different color scheme. None of these are forced by anything internal to the SS-9 mathematical content.
+
+## V. Route (d) mathematical content rationale (Programme-level registry update)
+
+**Origin.** ChatGPT d.4 forward-looking suggestion (delivered as part of the v0.7 review cycle). ChatGPT proposed reframing C8 as a recognized mathematical question rather than an isolated realizability axiom: *"Given a contact graph $G$, with all contact lengths fixed to $\Raa$, does there exist a non-degenerate centroid embedding in $\mathbb{R}^3$ realizing the simplicial polytope?"*
+
+**Why this is valuable.** Routes (a)–(c) all approach C8 from inside the SS-9 / CPP framework:
+- Route (a) (facet (b) sufficiency derivation): given facet (b)'s necessary-precondition role, derive whether facet (b) is also sufficient to construct the realization.
+- Route (b) (constraint-counting): show that the constraint count (rigid packing + C2 face-coincidences) uniquely determines the FvdW realization at each $\Nalpha$.
+- Route (c) (direct construction): place alphas at FvdW deltahedron vertices and verify all face-coincidences at edge length $\Raa$ are simultaneously satisfiable.
+
+Routes (a)–(c) require deriving new results within CPP framework. Route (d) connects C8 to recognized mathematical programmes external to CPP, where decades of accumulated mathematical results may directly apply.
+
+**The four mathematical programme connections.**
+
+**1. Euclidean distance matrix (EDM) theory.** A symmetric $n \times n$ matrix $D$ with $D_{ii} = 0$ and $D_{ij} = \|c_i - c_j\|^2$ is realizable in $\mathbb{R}^k$ iff its associated Cayley–Menger determinants of order $\geq k+2$ vanish (Schoenberg 1935). For C8: fix $D_{ij} = \Raa^2$ on contact edges (specified by $G$) and ask whether the remaining entries can be chosen so the full matrix is realizable as an EDM in $\mathbb{R}^3$ with the FvdW combinatorial structure. Cayley–Menger conditions provide algebraic characterization of realizability checkable at each FvdW $\Nalpha$.
+
+**2. Rigidity theory.** Maxwell–Cremona rigidity (1864) and Asimow–Roth (1978) provide the modern framework. A graph $G$ embedded in $\mathbb{R}^3$ with edge length constraints is *generically rigid* iff $|E| \geq 3|V| - 6$ (with equality being minimally rigid). The FvdW deltahedra all satisfy $|E| = 3\Nalpha - 6$ exactly — they are the boundary case (minimally rigid in $\mathbb{R}^3$). C8 becomes: does the alpha cluster physics specifically pick the *unique* (modulo isometry) FvdW realization rather than some other minimally-rigid embedding? Combinatorial rigidity matroids (Laman's theorem in 2D; Pollaczek-Geiringer's theorem in 3D) provide tools for analyzing realizability spaces.
+
+**3. Alpha complexes (Edelsbrunner et al., 1995).** The alpha cluster's centroid configuration $\mathcal{C} = \{c_1, \ldots, c_{\Nalpha}\}$ has a natural alpha-complex structure (geometric simplicial complex parameterized by a radius). At the LO physical scale (alpha radius $\sim \Raa/2$), the alpha complex's 1-skeleton corresponds to the contact graph. C8 becomes: do physical constraints (rigid packing + C2 face-coincidences) force this alpha complex to be combinatorially equivalent to the FvdW deltahedron? Direct mathematical literature: Edelsbrunner & Mücke (1994), "Three-dimensional alpha shapes"; Edelsbrunner (1995), "The union of balls and its dual shape"; subsequent work on persistent homology and topological data analysis by Carlsson and others.
+
+**4. Realization spaces.** Mnëv's universality theorem (1988) shows that polytope realization spaces can be arbitrarily complex (homotopy-equivalent to any algebraic variety). Richter-Gebert's monograph "Realization Spaces of Polytopes" (1996) provides the modern framework. For C8: realization spaces of polytopes provide the broader context for asking whether a combinatorial polytope structure (the FvdW deltahedron) has a unique geometric realization (modulo isometry) under additional constraints (uniform edge length, rigid packing).
+
+**Why Route (d) doesn't displace Routes (a)–(c).** Route (a) (facet (b) sufficiency) remains the most physically motivated route given facet (b)'s established necessary-precondition role. Routes (b) and (c) remain available with their distinct internal logic. Route (d) provides external programme legibility and may unlock results from recognized mathematical literature, but does not invalidate Routes (a)–(c).
+
+**Strategic value for sub-task (e).** External human reviewers (especially those with backgrounds in computational geometry / mathematical physics / discrete geometry) may immediately recognize Route (d) framing and provide pointers to relevant literature. Even if no Route closes C8 immediately, Route (d) makes the mathematical content of C8 legible to external audiences and increases the likelihood of productive external feedback.
+
+**Closure-route status.** Route (d) registered as a candidate at Session 31; literature review pending. Initial directions to investigate:
+- Whether the FvdW deltahedra are characterized in EDM theory as "minimal rigid embeddings of triangulated 2-spheres with uniform edge length" — if so, C8 may follow directly from EDM theory.
+- Whether explicit Cayley–Menger determinant calculations at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ verify the FvdW realizability.
+- Whether the alpha complex literature has results on the structure of alpha complexes of "tightly packed" point clouds applicable to alpha cluster geometry.
+
+## VI. Lessons 4 and 5 from cumulative six-pass cycle (d.1 through d.6)
+
+**Lesson 4 (NEW at Session 31): Cache effects can produce stale-context errors.**
+
+Mechanism: AI reviewers may have cached versions of frequently-accessed URLs. When the URL content has updated (new version of the paper), but the cached version has not been invalidated, the reviewer operates on stale content. The symptom: the reviewer asserts issues that the explicit changelog says are fixed, with the reviewer being confidently wrong (operating on cached belief, not actual content).
+
+Diagnostic: surface "issues" that match a previous version's known issues exactly. If the asserted issues match the version BEFORE the most recent fix, cache effect is highly likely.
+
+Resolution: cache-bust query parameter (e.g., `?cachebust=YYYYMMDD-vX.Y`) on raw GitHub URLs forces fresh retrieval. Submit URLs with cache-bust as standard protocol for review submissions.
+
+**Lesson 5 (NEW at Session 31): Reviewer profiles are complementary, not redundant.**
+
+Across six passes (d.1 through d.6), the three reviewers caught different categories of issues:
+
+- **ChatGPT (d.1, d.3, d.4)**: surgical-technical. Caught logical gaps (Sub-Lemma 2.2 missing C8 in d.3), order-of-operations slips (clause (iv) abstract-vs-metric in d.3), implicit assumptions (Steinitz-to-centroid realization gap in d.1 leading to C8 + OPEN-SS-37 registration). Forward-looking: suggested Route (d) for OPEN-SS-37 in d.4.
+
+- **CoPilot (d.2, d.6)**: editorial / mathematical. Caught polish opportunities in d.2 (rigid packing definition, C8 caveat paragraph, C7 clarifying sentence, Lemma B' Step 5 expansion, §9 Roadmap subsection). Delivered explicit v1.0-ready endorsements in d.6 with no substantive issues. Provides "expert reader" perspective: catches what reads awkwardly or unclearly.
+
+- **Grok (d.5)**: structural-with-cohesion + housekeeping. Caught housekeeping bugs (title block at line 770; unused `\bibitem{ss10_forthcoming}`), pedagogical opportunities (FvdW deltahedra figure), cohesion improvements (facet (b) cross-reference). Provides "structural reader" perspective: catches inconsistencies between elements (visible PDF title vs. CHANGELOG; bibliography vs. body citations).
+
+The three profiles are complementary. ChatGPT alone would miss the title-block bug (doesn't typically check `\title` against CHANGELOG); Grok alone would miss the Sub-Lemma 2.2 hypothesis-list bug (doesn't typically deep-check sub-lemma proof structure); CoPilot alone would miss both (focuses on editorial / readability).
+
+**Implication for future review cycles.** At minimum, two distinct reviewers per major version increment. Ideally, three reviewers of different profiles per version increment, with v1.0 ship requiring at least two independent v1.0-ready verdicts.
+
+## VII. v0.8 figure stability rationale
+
+**Question.** Should the figure be included at v0.8, or deferred to v0.9 / post-external-review?
+
+**Argument for inclusion at v0.8.** Figure captures static mathematical objects (the eight FvdW convex deltahedra and their topological invariants). These don't change. Vertex counts, edge counts, face counts, and vertex degree distributions are fixed mathematical invariants of the polyhedra. The figure's content does not depend on any pending derivation (e.g., it doesn't depend on Routes (a)–(d) for OPEN-SS-37 closure). Including the figure now provides immediate pedagogical value and doesn't create future-revision risk.
+
+**Argument for deferral.** External reviewer might want a different visualization style (e.g., 3D renders rather than 2D Schlegel diagrams), in which case redrawing would be required. But: this is reviewer-style preference, not figure-content-change.
+
+**Decision.** Include at v0.8. Risk of redrawing for stylistic reasons is low and would not invalidate the figure's mathematical content. Thomas approved inclusion at this version.
+
+## VIII. Programme effect summary
+
+**Hypothesis stack: UNCHANGED.** C1' + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy.
+
+**§9 gap list: UNCHANGED.** No new gaps closed or opened. v0.8 is paper polish + new figure; doesn't change the gap registry.
+
+**Programme-level OPEN-* registries: 12 OPEN-* count UNCHANGED.** OPEN-SS-37 closure-route count: 3 → 4 (Route (d) added). No new OPEN-SS-* registration.
+
+**Programme negative-result count: UNCHANGED at 12.**
+
+**SS-9 paper status: v0.7 → v0.8.** 32 pages (was 31 in v0.7; +1 from figure). Three pdflatex passes zero errors after pass 3.
+
+**Sub-task status: (a), (b), (c), (d.1), (d.2), (d.3), (d.4 closed), (d.5), (d.6) all DONE; (e) ACTIVE Session 32+.**
+
+**Three independent AI-reviewer v1.0-ready verdicts in hand.** ChatGPT (post-cache-bust), Grok, CoPilot.
+
+## IX. Forward priority for Session 32+
+
+**Primary**: Sub-task (e) external review on v0.8 .tex source via reviewer-response protocol. Submit raw GitHub URL with cache-bust query parameter (per Lesson 4) to a human domain-expert reviewer (nuclear physics / alpha-cluster theory).
+
+Best case: external reviewer agrees → v0.8 → v1.0 ship.
+Likely case: external reviewer surfaces 1–3 issues mixing substantive and editorial → v0.8 → v0.9 incorporation cycle.
+
+**Parallel (Priority 2)**: Continued investigation of OPEN-SS-37 closure routes:
+- Route (a) facet (b) sufficiency derivation given facet (b)'s established necessary-precondition role.
+- Route (d) literature review (EDM theory, rigidity theory, alpha complexes, realization spaces).
+
+**Parallel (Priority 1)**: SS-10 sub-shell-physics multi-paper development continues at programme level.
+
+**Anti-priorities sustained**:
+- Do NOT modify SS-9 v0.8 .tex outside of v1.0 polish revisions.
+- Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
+- Pre-flight bare-c_i pattern check now standard protocol.
+- All Phase 4–11 anti-priorities remain in force.
