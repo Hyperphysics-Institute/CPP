@@ -3072,3 +3072,117 @@ In parallel: continued investigation of OPEN-SS-37 closure routes (Route (a) fac
 ---
 
 *Session log Session 32 v1.0 polish sub-task (d.7) + v1.0 SHIP entry per §4 discipline. Substantive content: ChatGPT d.7 review of v0.8 (two figure bugs in panels (c) and (e) of FvdW deltahedra figure); programmatic invariant audit (Lesson 6 NEW) confirming both bugs and verifying all 8 panels post-fix; v0.8 → v0.9 figure corrections + caption softening; v0.9 → v1.0 promotion with sub-task (e) rescope from blocking gate to open invitation post-v1.0 ship; "Note on the v1.0 designation" paragraph added to §9 Roadmap subsection. Three pdflatex passes zero errors at both v0.9 and v1.0; 32 pages output. Polish track: sub-tasks (a)-(d.7) all DONE; sub-task (e) RESCOPED; v1.0 SHIPPED. **Seven independent AI-reviewer passes converged on v1.0-ready.**.*
+
+---
+
+# Session 33 — Paper completion sequence Tracks 3+4: registers freeze + OSF/arXiv post-ship submission guide (7 May 2026)
+
+**Session goal.** Now that SS-9 is shipped at v1.0 on GitHub origin/main (Session 32 push to commit `84ee07f`), begin the paper completion sequence proper. This session covers Tracks 3 (registers freeze) and Track 4 (OSF/arXiv post-ship prep guide); Tracks 1 (anthology chapter at Rovelli register) and 2 (TATWD integration as C4 closure on refined-C1 foundation) deferred to dedicated Sessions 34 and 35 respectively.
+
+**Why this order.** The four paper completion sequence tracks have different shapes — Track 3 is hygienic/mechanical (~half-session of register updates), Track 4 is a prep document (~half-session of guide-writing), Track 1 is creative narrative writing (full session for Rovelli-register prose at ~3000-5000 words), Track 2 needs prior inspection of TATWD's structure (`CPP_the_theory.md` + `book_project/TATWD_outline*.md`) before producing content. Doing Tracks 3 + 4 first locks in the post-v1.0 hygiene; Tracks 1 and 2 can then proceed without ambiguity about register status.
+
+## Track 3: registers freeze
+
+Three programme-level register files updated to reflect SS-9 SHIPPED at v1.0:
+
+**1. paper_catalog.md.** The SS-9 row, last updated 4 May 2026 Session 12 with "Pre-paper / active development" and "no .tex yet" and "v0.3 working draft," was significantly stale. Replaced with v1.0 SHIPPED state covering:
+- Paper status: "OSF pending"
+- Filename: `SS-9_simplicial_alpha_polytope_connectivity.tex` (v1.0)
+- Compile state: 32 pages, three pdflatex passes zero errors after pass 3
+- v1.0 promotion basis: seven independent AI review passes (d.1-d.7) with reviewer attribution
+- Sub-task (e) RESCOPED at v1.0 from blocking gate to open invitation post-v1.0 ship via public posting
+- Hypothesis stack: C1' + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy
+- Programme effect: **OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship** (the conditional closure that OPEN-SS-24 was registered for)
+- OPEN-SS-37 four candidate closure routes (Routes a/b/c/d, with Route (d) NEW distance-geometry/EDM/rigidity/realization-spaces)
+- OPEN-SS-29/30/33 preserved as C5/C6/C7 closure targets
+- OPEN-SS-31 deltahedra-gap preserved
+- Lessons systematized 1-6 across full polish track
+- Documentation suite at v1.0 freeze: Vignettes 1-39, transcripts 1-710, Tier 4 reasoning through Session 32, Session 32 v1.0 SHIP handover
+- Forward queue: anthology chapter, TATWD integration, OSF deposit, arXiv submission
+
+The Documentation paragraph SS-9 sentence was rewritten with full v1.0 freeze details, replacing the stale "0 of 7 companion documentation files" / "v0.3 working draft" / "12 sessions" content. The `paper_catalog.md` last-updated header was updated to Session 33 with Earlier 4 May 2026 attribution preserved.
+
+**2. theorem-registry.md.** SS sector header updated:
+- Header: "14 Theorems, 1 Proposition" → "15 Theorems, 1 Proposition"
+- Sources line extended to include "SS-9 (simplicial alpha-polytope connectivity, conditional theorem closure paper)"
+- **THEO-SS-16 added** covering the five-clause SS-9 main theorem:
+  - **(i)** alpha-cluster contact graph $G(\mathcal{C})$ connected (via Lemma A)
+  - **(ii)** centroids non-coplanar in $\mathbb{R}^3$ (via Sub-Lemma 2.2)
+  - **(iii)** $|E(G)| = 3N_\alpha - 6$ exactly (via Lemma C + Euler's formula; equivalent to THEO-SS-12 specialized)
+  - **(iv)** for $N_\alpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ (FvdW values), $G$ is the 1-skeleton of the unique FvdW convex deltahedron at $N_\alpha$ realized geometrically with edges at uniform contact length $R_{\alpha\alpha}$ (via Lemma B' + Steinitz + FvdW classification + C8)
+  - **(v)** $G$ is planar and triangulated
+
+The proof routes through three lemmas (A, C, B') plus three sub-lemmas (2.1 conditional C7 derivation; 2.2 3D-non-degeneracy; 2.3 C5 well-definedness). Conditional on hypothesis stack with C5/C6/C7/C8 first-principles closure registered as OPEN-SS-29/30/33/37. v1.0 SHIPPED 7 May 2026 Session 32 on the explicit basis of seven independent AI review passes; sub-task (e) external/human review rescoped from "blocking gate" to "open invitation post-v1.0 ship via public posting."
+
+**3. master_glossary.md.** A new "Terms Added — SS-9 v1.0 (7 May 2026)" addendum appended at the end of the file (parallel to existing SS-7/SS-8 v-marked addenda). Six new entries:
+
+1. **Conditional theorem closure paper** — the framing concept introduced at SS-9 v1.0; v1.0 designation rests on what the paper claims to deliver (conditional theorem under registered hypotheses with first-principles-closure questions registered as programme-level open problems), not on hypothetical claims it does not make.
+
+2. **FvdW (Freudenthal–van der Waerden) classification** — 1947 theorem establishing exactly 8 convex deltahedra at $N_\alpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ with no convex deltahedron at $N_\alpha \in \{11, 13, 14\}$ (= OPEN-SS-31 deltahedra-gap). Basis of SS-9 Theorem clause (iv); used as visual reference in SS-9 Figure 1 eight-panel schematic. Classification is combinatorial — whether the alpha-cluster physics actually realizes the FvdW deltahedron is the content of C8 (OPEN-SS-37).
+
+3. **Note on the v1.0 designation (programme practice)** — documentation discipline introduced at SS-9 v1.0 ship for any paper advancing to v1.0 on AI-review-only basis when human review unavailable. Five required components: AI review passes documented, sub-task (e) rescope explicit, honest reading as AI-validated rather than human-validated, public-posting venues named, invitation for domain-expert feedback in named topical areas. Conditional-theorem framing makes the v1.0 designation coherent under the rescope.
+
+4. **Programmatic invariant audit (TikZ figures)** — Lesson 6 NEW at SS-9 v0.9 sub-task d.7. Discipline for verifying combinatorial-structure figures generated in TikZ: parser extracts figure's combinatorial content from .tex source and verifies against mathematical invariants (vertex/edge counts, degree distributions, label-to-data consistency). Run before commit. Visual inspection insufficient — eye fills in expected structure even when absent on page. SS-9 Figure 1 audit script preserved in `transcript-SS-9.md` transactions 681-685 and `reasoning-SS-9.md` Session 32 §II.
+
+5. **Schlegel diagram (and Schlegel-style projection)** — planar embedding of 3-polytope via projection through one face onto opposite face's plane with no edge crossings. SS-9 Figure 1 panels (a)/(b)/(d)/(h) accurate Schlegel diagrams; panel (c) octahedron uses Schlegel-style projection with one rendering crossing in square+two-apexes layout; panels (e)/(f)/(g) use simplified topological schematics. Visual edge crossings reflect projection layout, not graph intersections — every FvdW deltahedron is a planar 3-polytope by Steinitz. Rendering-crossing distinction added at v0.9 per ChatGPT d.7 review.
+
+6. **Steinitz's theorem** — Ernst Steinitz, 1922: a graph $G$ is the 1-skeleton of some convex 3-polytope iff $G$ is a 3-vertex-connected planar graph. Used in SS-9 Lemma B' Step 5 to identify alpha-cluster contact graph as 1-skeleton of convex 3-polytope; bridge from graph-theoretic Lemmas to polytope content of Theorem clause (iv). Abstract polytope from Steinitz alone; geometric realization at uniform edge length $R_{\alpha\alpha}$ requires C8 (FvdW centroid-realizability = OPEN-SS-37).
+
+## Track 4: OSF/arXiv post-ship submission guide
+
+New file created at `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md` (~270 lines). Sections:
+
+- **§1 Pre-submission checklist** — paper compiles cleanly, Figure 1 invariants verified per Lesson 6, bibliography correct, cross-references resolve, PDF is v1.0, license decision documented (CC BY 4.0), GitHub origin/main reflects v1.0 at `84ee07f` or later
+- **§2 OSF deposit procedure** — DOI 10.17605/OSF.IO/JXE8D registered; artifacts to deposit (.tex source, .pdf compiled, .bib bibliography, optional sketches/ and documentation_suite/); metadata fields (title, authors, affiliation, DOI, abstract, tags, license, date); project description suggested text; cross-references to GitHub repo and arXiv submission; expected timing immediate
+- **§3 arXiv submission procedure** — categories `nucl-th` (primary) + `math-ph` (secondary); endorsement requirement; LaTeX source upload format with `cpp_references.bib`; metadata fields including comments with seven-pass AI review history and rescope explanation; license CC BY 4.0; MSC and PACS classifications; expected timing 1-2 business days standard moderation
+- **§4 Post-submission tracking** — filing incoming external feedback at `series_strong/papers/SS-9/reviews/external/`; v1.x revision triggers on same polish-track cadence as v0.1→v1.0 with per-symmetric-honesty verification of each external point; programme-level tracking via Research_Frontier.md and future_projects.md updates; no-feedback case handling — sub-task (e) satisfied by act of public posting, not receipt of feedback
+- **§5 Symmetric-honesty notes** — preserving conditional-theorem framing (paper does not claim unconditional derivation; reader who interprets it that way is misreading) and AI-review-only basis transparency (v1.0 rests on seven AI review passes, not human domain-expert review; reader who interprets v1.0 as human-validated is misreading)
+- **§6 Coordination with other paper completion sequence tracks** — anthology chapter Session 34, TATWD integration Session 35, registers freeze this session
+- **§7 Decision authority and execution** — Thomas decides timing and metadata, Isak handles OSF execution per existing programme practice (paper_catalog.md "Publication Plan" section), Thomas or Isak handles arXiv with endorsement step
+
+The guide serves as the venue for sub-task (e) external/human review in its rescoped form: any incoming external feedback gets filed under `reviews/external/` and triggers v1.x revisions if substantive issues are surfaced.
+
+## Programme state at Session 33 close
+
+**No changes from Session 32 close** — registers freeze + OSF/arXiv guide is documentation-and-bookkeeping work that captures the post-v1.0 state without altering it:
+
+- Programme negative-result count: 12 (UNCHANGED)
+- All earlier closures preserved
+- **OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship** (recorded at Session 32 close; reflected in registers at Session 33)
+- OPEN-SS-33 ADVANCED status preserved
+- OPEN-ORG-012 RETIRED preserved
+- OPEN-SS-37 REGISTERED with closure routes 4 (UNCHANGED at v1.0)
+- SS sector problem count: 19 (UNCHANGED)
+- SS-9 SHIPPED at v1.0 (no .tex changes per anti-priority)
+
+## Forward queue Sessions 34+
+
+**Session 34 (planned)**: Track 1 — anthology chapter at Rovelli/Scientific American register, parallel to SS-7 and SS-8 chapters. Dramatic arc (per the Tier 4 reasoning Session 32 §X synthesis):
+- The puzzle: SS-7 found $B(N) = N \cdot B_\alpha + (3N-6) \cdot B_{\text{pair}}$ fits twelve nuclei to within 1.5% at FvdW values
+- The clue: $3N-6$ is suspiciously Euler's formula
+- The journey: deriving the simplicial-polytope structure from physical primitives via three lemmas and Steinitz's theorem
+- The result: conditional theorem on 9 hypotheses
+- The honesty: 4 OPEN-SS-* registries — the proof itself reveals what isn't yet derived
+- What's still open: FvdW realization (OPEN-SS-37), deltahedra-gap nuclei (OPEN-SS-31), facet (b) mechanism
+
+**Session 35 (planned)**: Track 2 — TATWD integration. SS-9 slots into the Standard Model emergence narrative in `CPP_the_theory.md` as the **C4 closure on the refined-C1 foundation from SS-7**. Combined SS-7 + SS-9 narrative: from CPP primitives + refined-C1 + C2 + C3, get the binding formula plus the simplicial-polytope structure conditionally on C5/C6/C7/C8, with twelve zero-parameter nuclear binding predictions to within 1.5%. Pre-session inspection: Claude reviews `CPP_the_theory.md` plus `book_project/TATWD_outline*.md` to identify exactly where SS-9 slots in.
+
+**Public posting timing**: at Thomas's discretion. The OSF/arXiv guide (this session's deliverable) provides the operational protocol; Thomas decides when to execute. Reasonable options: (a) post immediately to lock in priority date and start the external-feedback clock; (b) wait until anthology chapter and TATWD integration are complete to present a more complete programme picture at posting time. Either is consistent with the rescoped sub-task (e). The paper is on GitHub since 7 May 2026 and remains accessible there regardless.
+
+**OPEN-SS-37 closure routes investigation continues at programme level**:
+- Route (a): facet (b) sufficiency derivation
+- Route (d): literature review across EDM theory, rigidity theory, alpha complexes, realization spaces
+
+SS-10 sub-shell-physics multi-paper development continues at programme level as Priority 1.
+
+## Anti-priorities sustained
+
+- Do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions (v1.0 is shipped; revisions are post-feedback only). **Track 3 + Track 4 at this session honored this anti-priority** — registers and new guide document only; SS-9 v1.0 .tex untouched.
+- Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
+- Pre-flight bare-c_i pattern check standard protocol.
+- Per-panel TikZ invariant audit standard protocol for any new figure (Lesson 6).
+- All Phase 4–11 anti-priorities remain in force.
+
+---
+
+*Session log Session 33 paper completion sequence Tracks 3+4 entry per §4 discipline. Substantive content: Track 3 registers freeze across paper_catalog.md (SS-9 row + last-updated header + Documentation paragraph), theorem-registry.md (SS sector header count + Sources extension + THEO-SS-16 added), master_glossary.md (Terms Added — SS-9 v1.0 addendum with 6 new entries); Track 4 OSF/arXiv post-ship submission guide created at series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md (~270 lines, 7 sections). Tracks 1 (anthology chapter) and 2 (TATWD integration) deferred to dedicated Sessions 34 and 35 respectively. Programme state at Session 33 close: UNCHANGED from Session 32 close (registers freeze is documentation work; doesn't alter programme state). Forward queue Sessions 34+ established with concrete pre-session preparation protocol (Session 35 TATWD integration requires prior inspection of CPP_the_theory.md and book_project/TATWD_outline*.md).*
