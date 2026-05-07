@@ -1,12 +1,12 @@
-# SS-9 Handover — Session 31 v1.0 polish sub-tasks (d.5)+(d.6) close (6 May 2026)
+# SS-9 Handover — Session 32 v1.0 SHIP close (7 May 2026)
 
-**Last session: Session 31** — v1.0 polish sub-task (d.5) Grok v0.7 review feedback incorporation + sub-task (d.6) CoPilot v0.7 close + Route (d) registration for OPEN-SS-37 (per ChatGPT d.4 forward-looking suggestion).
+**Last session: Session 32** — v1.0 polish sub-task (d.7) ChatGPT v0.8 review feedback incorporation + v1.0 SHIP with sub-task (e) rescoped.
 
-## Status as of Session 31 close
+## Status as of Session 32 close
 
-**SS-9 paper status:** v0.8 (was v0.7 at Session 30 close); 32 pages output; three pdflatex passes zero errors after pass 3.
+**SS-9 paper status: SHIPPED at v1.0** (was v0.7 at Session 30 close, v0.8 at Session 31 close, v0.9 mid-Session 32). 32 pages compiled output; three pdflatex passes zero errors after pass 3.
 
-**Polish track status:**
+**Polish track FINAL STATUS:**
 
 | Sub-task | Description | Status | Session |
 |----------|-------------|--------|---------|
@@ -17,132 +17,174 @@
 | (d.2) | Copilot v0.5 review incorporation | DONE | Session 29, v0.6 |
 | (d.3) | ChatGPT v0.6 re-review incorporation | DONE | Session 30, v0.7 |
 | (d.4) | ChatGPT v0.7 re-review | CLOSED via cache-resolution | Session 31 (no paper changes) |
-| (d.5) | Grok v0.7 review incorporation | **DONE** | **Session 31, v0.8** |
-| (d.6) | CoPilot v0.7 close | **DONE** | **Session 31, v0.8 (no incorporation needed)** |
-| (e) | external (human domain-expert) review | **ACTIVE Session 32+** | only outstanding sub-task before v1.0 ship |
+| (d.5) | Grok v0.7 review incorporation | DONE | Session 31, v0.8 |
+| (d.6) | CoPilot v0.7 close | DONE | Session 31, v0.8 (no incorporation needed) |
+| (d.7) | ChatGPT v0.8 review incorporation | **DONE** | **Session 32, v0.9** |
+| (e) | external/human review | **RESCOPED** | **Session 32, v1.0 (from blocking gate to open invitation post-v1.0 ship via public posting)** |
+| **v1.0 SHIP** | **conditional theorem closure paper** | **SHIPPED** | **Session 32 (this session)** |
 
-**Three independent AI-reviewer v1.0-ready verdicts in hand:**
-- ChatGPT (post-cache-bust, d.4): "review-clean as a conditional closure paper... promote v0.7 to v1.0 conditional theorem status, pending external/human domain review only"
-- Grok (d.5): "Ship as v1.0 after the title/version update and optional figure"
-- CoPilot (d.6): "v0.7 is mathematically clean, structurally consistent, and ready for external human review as a v1.0-candidate. No further mathematical or structural edits are required"
+**Cumulative seven-pass review tally (all converged on v1.0-ready):**
 
-All three reviewers converge on external-human-review as the only remaining gate before v1.0 ship.
+| Pass | Reviewer | Version | Result |
+|------|----------|---------|--------|
+| d.1 | ChatGPT | v0.4 | 5 substantive issues + C8 + OPEN-SS-37 → v0.5 |
+| d.2 | CoPilot | v0.5 | 0 issues, polish suggestions → v0.6 |
+| d.3 | ChatGPT | v0.6 | 3 residuals → v0.7 |
+| d.4 | ChatGPT | v0.7 | 0 (post-cache-bust) → no change; Lesson 4 |
+| d.5 | Grok | v0.7 | 1 must-fix + housekeeping + figure → v0.8 |
+| d.6 | CoPilot | v0.7 | 0, explicit v1.0-ready → no change |
+| d.7 | ChatGPT | v0.8 | 2 figure bugs → v0.9; Lesson 6 |
 
-**Programme state (UNCHANGED at Session 31 close):**
+Final convergence: all seven passes converged on v1.0-ready (d.7 with fixes incorporated at v0.9 prior to v1.0 ship).
+
+**Programme state at Session 32 close:**
+
 - Programme negative-result count: 12 (UNCHANGED)
 - All earlier closures preserved
 - Phase 8 Refinement A standing best refinement preserved
-- OPEN-SS-24 ADVANCED status preserved
+- **OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship** (the conditional closure that OPEN-SS-24 was registered for)
 - OPEN-SS-33 ADVANCED status preserved
 - OPEN-ORG-012 RETIRED preserved
-- OPEN-SS-37 REGISTERED preserved with closure routes 3 → 4 (Route (d) added)
+- OPEN-SS-37 REGISTERED preserved with closure routes 4 (UNCHANGED at v1.0)
 - SS sector problem count: 19 (UNCHANGED)
 - No new OPEN-SS-* registration this session
 
-## What Session 31 accomplished
+## What Session 32 accomplished
 
-**Sub-task (d.4) ChatGPT v0.7 cache-resolution diagnostic** — CLOSED with zero v0.7 paper changes.
+**Sub-task (d.7) ChatGPT v0.8 review** — DONE; v0.8 → v0.9 with two figure fixes + caption softening.
 
-ChatGPT's first re-review of v0.7 surfaced "issues" already fixed in v0.7 (stale-context error). Cache-bust diagnostic via web_fetch with `?cachebust=YYYYMMDD-vX.Y` query parameter on raw GitHub URL forced fresh retrieval. Revised verdict matched v0.7 content. Sub-task closes with no paper changes.
+ChatGPT delivered v0.8 review with verdict: *"Almost — but I would fix one v0.8-specific figure issue before stamping v1.0."* Two specific bugs in the eight-panel FvdW deltahedra figure: panel (c) octahedron drew 11 of 12 edges (missing (c6)–(c4)); panel (e) snub disphenoid drew 17 of 18 edges (missing (e3)–(e4)) with degree-coloring not matching adjacency. Recommendation: micro-patch v0.9 fixing figure, then promote to v1.0; no further proof edits identified.
 
-**Sub-task (d.5) Grok v0.7 review** — DONE; v0.7 → v0.8 with 5 paper edits + Route (d) registration.
+**Per-symmetric-honesty programmatic invariant audit (Lesson 6 NEW).** Both ChatGPT-flagged bugs verified independently against v0.8 source via Python parser that extracts vertex declarations (color = expected degree) and edge declarations (handling chained `--` syntax via tokenize-and-walk and `\foreach` expansion), computes drawn degree per vertex, verifies against color-declared degree and against expected (V, |E|, deg-distribution) for each FvdW deltahedron. Pre-fix audit confirmed both bugs; six other panels CLEAN.
 
-Grok was previously suspended for vocabulary contamination from older co-developed framework; re-engaged for d.5 with no vocabulary contamination this round. Per symmetric-honesty protocol, all 5 Grok points verified against v0.7 source independently before incorporation:
+**v0.8 → v0.9 paper edits:**
+1. Panel (c) octahedron: added `(c6) -- (c4)` to c6 spokes line. Post-fix |E|=12, all 6 vertices drawn at deg 4 matching cyan color.
+2. Panel (e) snub disphenoid: added `(e3) -- (e4)` closing the e3-e4-e6-e5-e3 equator cycle. Post-fix |E|=18, drawn-degree {4⁴, 5⁴} matches color-declared distribution.
+3. Caption softening: distinguishes "Schlegel-style projections" (a, b, d, h preserving combinatorial 1-skeleton exactly), notes panel (c) has "one rendering crossing while preserving the 1-skeleton", labels (e)–(g) as "simplified topological schematics", adds clarifying sentence about visual edge crossings reflecting projection layout, not graph intersections.
+4. Title block: "Version 0.9 — 7 May 2026 (v1.0 polish sub-task d.7: ChatGPT v0.8 review incorporation — Figure 1 panel (c) and (e) corrections)".
 
-1. **Title block fix** (must-fix). `\title` block at line 770 read "Version 0.1" despite seven version bumps; CHANGELOG comment-header was updated each version but `\title{}` was forgotten. Updated to "Version 0.8 — 6 May 2026 (v1.0 polish sub-task d.5: Grok v0.7 review incorporation, sub-task d.6: CoPilot v0.7 close)". Compiled PDF title page now displays correct version.
+**Final invariant audit on v0.9: ALL 8 PANELS CLEAN.**
 
-2. **Bibliography cleanup**. Removed unused `\bibitem{ss10_forthcoming}` (uncited in body).
+**Sub-task (e) rescope** — from "blocking gate" to "open invitation post-v1.0 ship via public posting".
 
-3. **Facet (b) cross-reference**. §6 facet (b) "specific mechanism TBD" remark now points to existing AMD/Brink–Bloch testability discussion in §9 via `\S\ref{sec:gaps}`. Improves cohesion at zero cost.
+Per Thomas's Session 32 statement: *"I don't have any human reviewers in my contact universe. I think we will have to advance to v1.0 with AI review only."* Sub-task (e) was originally registered as the blocking gate before v1.0 ship: external/human domain-expert review by a nuclear physicist or alpha-cluster theorist. Rescoped at v1.0 to "open invitation post-v1.0 ship via public posting" because no human domain-expert reviewer is available in the author's research network.
 
-4. **NEW: Eight-panel FvdW deltahedra figure** (Fig.~1). Inserted after Theorem proof and before §7 Scope Notes. Each panel shows planar schematic of one of the eight FvdW convex deltahedra at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ with vertices color-coded by degree (green = deg 3, cyan = deg 4, red = deg 5). Panels (a)–(d) and (h) are Schlegel diagrams; panels (e)–(g) are simplified topological schematics. Visualizes the central pedagogical claim: degree-5 vertices first appear at $\Nalpha = 7$ (pentagonal bipyramid apices) and dominate by $\Nalpha = 12$ (icosahedron, all vertices degree 5), which is exactly why facet (b) is necessary at $\Nalpha \geq 7$ for C8's plausibility. Added `\usepackage{tikz}` and `\usetikzlibrary{positioning,calc}` to preamble.
+**The rescope is documented in five places:**
+1. Title block (visible to first-time readers on PDF title page)
+2. §9 Roadmap to v1.0 subsection — new "Note on the v1.0 designation" three-paragraph block (~280 words)
+3. CHANGELOG v1.0 entry (~165 lines)
+4. Research_Frontier.md last-updated header for Session 32
+5. future_projects.md (A.2) entry — sub-task (e) status RESCOPED
 
-5. **Roadmap final sentence** — explicit no-change endorsement from Grok.
+**The honesty argument**: a paper that claimed v1.0 status on AI review alone, without making the basis of that status explicit, would mislead readers about the type of validation the paper has received. The rescope is honest, documented, and creates the explicit invitation channel for domain experts via public posting.
 
-**Sub-task (d.6) CoPilot v0.7 close** — DONE with zero substantive issues. Explicit v1.0-ready endorsement: "No further mathematical or structural edits are required."
+**v0.9 → v1.0 SHIP** — DONE; conditional theorem closure paper.
 
-**Programme-level registry update — Route (d) for OPEN-SS-37** (per ChatGPT d.4 forward-looking suggestion).
+**v1.0 substantive edits:**
 
-Added Route (d) — distance-geometry / EDM theory / rigidity theory / realization-spaces approach — to `problem_histories/PH-OPEN-SS-37.md`. Reframes C8 as a recognized mathematical question rather than an isolated realizability axiom: *"Given a contact graph $G$, with all contact lengths fixed to $\Raa$, does there exist a non-degenerate centroid embedding in $\mathbb{R}^3$ realizing the simplicial polytope?"*
+1. **Title block update**: now reads "Version 1.0 — 7 May 2026 (conditional theorem closure paper; v1.0 promotion from v0.9 on the explicit basis of seven independent AI review passes; sub-task (e) external/human review rescoped to open invitation post-v1.0 ship via public posting — see Note on v1.0 designation in §9)".
 
-Connects to four mathematical programmes:
-- **Euclidean distance matrix (EDM) theory** (Cayley–Menger determinants for realizability conditions)
-- **Rigidity theory** (Maxwell–Cremona, Asimow–Roth; FvdW deltahedra are minimally rigid in $\mathbb{R}^3$)
-- **Alpha complexes** (Edelsbrunner et al.; alpha cluster centroid configurations have natural alpha-complex structure)
-- **Realization spaces** (Mnëv's universality theorem, Richter-Gebert)
+2. **NEW: "Note on the v1.0 designation"** three-paragraph block (~280 words) added at end of §9 Roadmap to v1.0 subsection. Documents:
+   - The seven AI review passes that contributed to v1.0
+   - The rescope of sub-task (e)
+   - The honest reading of v1.0 as "AI-validated conditional theorem closure paper, ready for external feedback via public posting" rather than "human-domain-expert-validated"
+   - Explicit invitation for domain-expert feedback from nuclear physics, alpha-cluster theory, computational geometry (EDM theory and rigidity theory connecting to OPEN-SS-37 Route (d)), and discrete mathematics (Steinitz theorem realizations, FvdW classification literature)
+   - Clarification that v1.0 is a "conditional theorem closure paper" not a "v1.0 unconditional derivation"
 
-OPEN-SS-37 closure routes count: 3 → 4. Routes (a)–(c) preserved; Route (d) provides parallel framing not displacement.
+3. **CHANGELOG v1.0 entry** (~165 lines) with cumulative seven-pass review tally, lessons systematized 1–6, post-v1.0 protocol.
 
-**Lessons 4 and 5 systematized** across the cumulative six-pass cycle (d.1 through d.6):
+**Lessons systematized 1–6 across the full polish track:**
 
-- **Lesson 4 (NEW at Session 31)**: Cache effects can produce stale-context errors. Future review submissions should include `?cachebust=YYYYMMDD-vX.Y` on raw GitHub URLs to force fresh retrieval.
-- **Lesson 5 (NEW at Session 31)**: Reviewer profiles are complementary, not redundant. ChatGPT (surgical-technical), CoPilot (editorial), Grok (structural-with-cohesion + housekeeping + pedagogical) — across six passes, the reviewers caught different categories of issues. Future review cycles benefit from rotating multiple reviewers; at minimum, two distinct reviewers per major version increment, with v1.0 ship requiring at least two independent v1.0-ready verdicts.
+1. (Session 30) Re-review by same reviewer at later version is valuable.
+2. (Session 30) Incorporation cycles can introduce new local issues.
+3. (Session 30) Reviews can have systematic blind spots that persist across reviewers.
+4. (Session 31) Cache effects can produce stale-context errors; cache-bust query parameter protocol required.
+5. (Session 31) Reviewer profiles are complementary, not redundant; rotate multiple reviewers; v1.0 ship requires at least two independent v1.0-ready verdicts.
+6. **(Session 32 NEW) Programmatic invariant audit for TikZ figures**: visual inspection is insufficient because the eye fills in expected structure even when absent on the page; write a parser that extracts the figure's combinatorial content and verifies it against the mathematical invariants before commit.
 
-## Forward queue Session 32+
+## Forward queue Session 33+ (paper completion sequence proper)
 
-**Primary**: Sub-task (e) external review on v0.8 .tex source via reviewer-response protocol (`templates/operating_system.md` §4 Phase 4). Submit raw GitHub URL with cache-bust query parameter (per Lesson 4) to a human domain-expert reviewer (nuclear physics / alpha-cluster theory).
+Now that SS-9 is shipped at v1.0, the paper completion sequence proper begins:
 
-Best case at sub-task (e): external reviewer agrees → v0.8 → v1.0 ship.
-Likely case: external reviewer surfaces 1–3 issues → v0.8 → v0.9 incorporation cycle.
+**Track 1: anthology chapter** at Rovelli/Scientific American register, parallel to SS-7 and SS-8 chapters in the anthology. Dramatic arc:
+- The puzzle: SS-7 found B(N) = N·B_α + (3N−6)·B_pair fits twelve nuclei to within 1.5% at FvdW values
+- The clue: 3N−6 is suspiciously Euler's formula
+- The journey: deriving the simplicial-polytope structure from physical primitives via three lemmas and Steinitz's theorem
+- The result: conditional theorem on 9 hypotheses
+- The honesty: 4 OPEN-SS-* registries — the proof identifies what isn't yet derived
+- What's still open: FvdW realization (OPEN-SS-37), deltahedra-gap nuclei (OPEN-SS-31), facet (b) mechanism
 
-**Parallel (Priority 2)**: Continued investigation of OPEN-SS-37 closure routes:
-- **Route (a)** facet (b) sufficiency derivation given facet (b)'s established necessary-precondition role.
-- **Route (d)** literature review (EDM theory, rigidity theory, alpha complexes, realization spaces). Initial directions:
-  - Whether the FvdW deltahedra are characterized in EDM theory as "minimal rigid embeddings of triangulated 2-spheres with uniform edge length"
-  - Whether explicit Cayley–Menger determinant calculations at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ verify the FvdW realizability
-  - Whether the alpha complex literature has results on the structure of alpha complexes of "tightly packed" point clouds applicable to alpha cluster geometry
+**Track 2: TATWD integration.** SS-9 slots into the Standard Model emergence narrative as the **C4 closure on the refined-C1 foundation from SS-7**. Combined SS-7 + SS-9 narrative: from CPP primitives + refined-C1 + C2 + C3, get the binding formula + simplicial-polytope structure conditionally on C5/C6/C7/C8, with twelve zero-parameter nuclear binding predictions to within 1.5%.
 
-**Parallel (Priority 1)**: SS-10 sub-shell-physics multi-paper development continues at programme level.
+**Track 3: registers freeze.** Multiple programme-level files need final updates marking SS-9 SHIPPED at v1.0:
+- `paper_catalog.md`: SS-9 v1.0 entry
+- `theorem-registry.md`: Theorem 6.1 (SS-9 main theorem) + Sub-Lemma 2.1 (C7 conditional derivation) + Sub-Lemma 2.2 (3D-non-degeneracy) + Sub-Lemma 2.3 (C5 well-definedness)
+- `Research_Frontier.md`: final update marking SS-9 SHIPPED at v1.0
+- `master_glossary.md`: any new terms locked in (FvdW deltahedron, Schlegel diagram, alpha complex, EDM theory, Cayley-Menger determinant)
+- `future_projects.md`: (A.2) entry status FINAL — v1.0 SHIPPED Session 32; sub-task (e) RESCOPED Session 32
+
+**Track 4: public posting.** OSF deposit (DOI 10.17605/OSF.IO/JXE8D registered earlier) and arXiv submission as the public-posting venue for sub-task (e) in its rescoped form.
+
+**Parallel priorities.** OPEN-SS-37 closure routes investigation continues:
+- Route (a): facet (b) sufficiency derivation (needs AMD or Brink–Bloch cluster-model calculations)
+- Route (d): literature review — EDM theory (Schoenberg/Cayley-Menger), rigidity theory (Maxwell-Cremona/Asimow-Roth/Laman/Pollaczek-Geiringer), alpha complexes (Edelsbrunner et al.), realization spaces (Mnëv/Richter-Gebert)
+
+SS-10 sub-shell-physics multi-paper development continues at programme level as Priority 1.
 
 ## Anti-priorities sustained
 
-- Do NOT modify SS-9 v0.8 .tex outside of v1.0 polish revisions.
+- Do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions (v1.0 is shipped; revisions are post-feedback only).
 - Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
-- Pre-flight bare-c_i pattern check now standard protocol (zero hits in paper body confirmed for v0.8).
+- Pre-flight bare-c_i pattern check now standard protocol (zero hits in v1.0 confirmed).
+- Per-panel TikZ invariant audit now standard protocol for any new figure.
 - All Phase 4–11 anti-priorities remain in force.
 
-## Apply chain (5-patch chain 0256–0260, Session 31 deliverables)
+## Apply chain (6-patch chain 0262–0267, Session 32 deliverables)
 
-**Baseline**: Session 30 close commit `a168527` (in this environment) / `717d2fd` (on Thomas's local — origin/main HEAD after Session 30 push).
+**Baseline**: Session 31 close commit `684a37f` (origin/main HEAD after Session 31 push).
 
 **Patch chain:**
 
 | Patch | Step(s) | Description |
 |-------|---------|-------------|
-| 0256 | Substantive | SS-9 .tex 5 paper edits (title block, bibliography, facet (b) cross-reference, Fig.~1 FvdW deltahedra figure, CHANGELOG v0.8) + PH-OPEN-SS-37.md Route (d) registration |
-| 0257 | Step A + Step C | session_logs/2026-05-02_session_log.md Session 31 entry + development-SS-9.md Vignette 38 |
-| 0258 | Step B + Step D | transcript-SS-9.md transactions 651-680 + reasoning-SS-9.md Tier 4 verbatim Session 31 |
-| 0259 | Step E | Research_Frontier.md last-updated header for Session 31 + future_projects.md (A.2) sub-task (d.4)/(d.5)/(d.6) status update |
-| 0260 | Step H | This handover (rm + recreate Session 31 close handover-SS-9.md) |
+| 0262 | Substantive (v0.9) | SS-9 v0.8 → v0.9 figure fixes (panel (c), panel (e), caption softening, title block, CHANGELOG v0.9) |
+| 0263 | Substantive (v1.0) | SS-9 v0.9 → v1.0 SHIP (title block v1.0, NEW Note on the v1.0 designation paragraph, CHANGELOG v1.0) |
+| 0264 | Step A + Step C | session_logs/2026-05-02_session_log.md Session 32 entry + development-SS-9.md Vignette 39 |
+| 0265 | Step B + Step D | transcript-SS-9.md transactions 681-710 + reasoning-SS-9.md Tier 4 verbatim Session 32 |
+| 0266 | Step E | Research_Frontier.md last-updated Session 32 + OPEN-SS-24 ADVANCED→CLOSED + OPEN-SS-37 v1.0 ref + future_projects.md (A.2) v1.0 SHIPPED milestone |
+| 0267 | Step H | This handover (rm + recreate Session 32 close handover-SS-9.md) |
 
-**No Step F** — three reviewers delivered no new programme-level OPEN-SS-* registration target; Route (d) is closure-route addition for existing OPEN-SS-37, not new OPEN-SS-* entry.
+**No Step F** — sub-task (d.7) closed an existing OPEN-SS-* registry but didn't create a new one; sub-task (e) rescope is a status change, not a new registry entry.
 
-**Apply sequence on Thomas's local** (from baseline `717d2fd`):
+**Apply sequence on Thomas's local** (per OS §13 Standard apply-chain protocol, three-phase form):
 
-```bash
-cd /path/to/CPP
+```
+cd ~/Documents/GitHub/CPP
 git checkout main
-git pull origin main  # confirm at 717d2fd Session 30 close
-git am 0256-*.patch 0257-*.patch 0258-*.patch 0259-*.patch 0260-*.patch
-# OR with brace expansion glob:
-# git am 02{56,57,58,59,60}-*.patch
+git pull origin main
+git am ~/Downloads/0262-ss9-v09-figure-fixes-d7.patch
+git am ~/Downloads/0263-ss9-v10-ship-substantive.patch
+git am ~/Downloads/0264-step-a-c-session-log-vignette39.patch
+git am ~/Downloads/0265-step-b-d-transcript-reasoning.patch
+git am ~/Downloads/0266-step-e-research-frontier-future-projects.patch
+git am ~/Downloads/0267-step-h-session32-close-handover.patch
 git push origin main
 ```
 
-After successful push, sub-task (e) external review can begin with cache-bust URL submission to human domain-expert reviewer.
+After successful push, **SS-9 v1.0 is on GitHub origin/main** and the paper completion sequence proper can begin Session 33+.
 
-## Key file paths (verbatim, post-Session 31)
+## Key file paths (verbatim, post-Session 32)
 
-- `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` — v0.8, 32 pages compiled, three pdflatex passes zero errors
-- `series_strong/papers/SS-9/documentation_suite/development-SS-9.md` — Vignettes 1–38 (Vignette 38 added at Session 31)
-- `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md` — transactions 1–680 (transactions 651–680 added at Session 31)
-- `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md` — Tier 4 verbatim through Session 31 (Session 31 added)
-- `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` — this file (Session 31 close)
-- `Research_Frontier.md` — last-updated header at Session 31; OPEN-SS-37 entry shows 4 closure routes
-- `future_projects.md` — (A.2) entry shows 9 sub-tasks complete; (e) ACTIVE Session 32+
-- `problem_histories/PH-OPEN-SS-37.md` — Route (d) added at Session 31; closure routes 3 → 4
-- `session_logs/2026-05-02_session_log.md` — Session 31 entry appended
+- `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` — **v1.0 SHIPPED**, 32 pages compiled, three pdflatex passes zero errors
+- `series_strong/papers/SS-9/documentation_suite/development-SS-9.md` — Vignettes 1–39 (Vignette 39 added at Session 32)
+- `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md` — transactions 1–710 (transactions 681–710 added at Session 32)
+- `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md` — Tier 4 verbatim through Session 32 (Session 32 added)
+- `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` — this file (Session 32 close, v1.0 SHIP)
+- `Research_Frontier.md` — last-updated header at Session 32; OPEN-SS-24 status CLOSED via SS-9 v1.0 ship; OPEN-SS-37 entry shows SS-9 v1.0 reference
+- `future_projects.md` — (A.2) entry shows v1.0 SHIPPED milestone with all 11 sub-tasks complete or rescoped
+- `problem_histories/PH-OPEN-SS-37.md` — 4 closure routes (UNCHANGED at v1.0)
+- `session_logs/2026-05-02_session_log.md` — Session 32 entry appended
 
 ## Final word
 
-SS-9 v0.8 represents the cleanest formal state of the conditional theorem after **six rounds of substantive AI review** with **three independent v1.0-ready verdicts in hand**. Per the symmetric-honesty protocol, this is the strongest possible AI-validation outcome. Sub-task (e) external human review is the only remaining gate before v1.0 ship.
+**SS-9 SHIPPED at v1.0 (7 May 2026).** Conditional theorem closure paper. v1.0 promotion made on the explicit basis of seven independent AI review passes (d.1–d.7) all converging on v1.0-ready, with sub-task (e) external/human review honestly rescoped from "blocking gate" to "open invitation post-v1.0 ship via public posting." This is the cleanest formal state of the conditional theorem after twelve increments (v0.1 → v1.0) and seven AI review rounds. The paper completion sequence proper (anthology chapter, TATWD integration, registers freeze, OSF deposit + arXiv submission) begins Session 33+.
