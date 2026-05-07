@@ -53,12 +53,15 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
   (replace `series_strong` with the appropriate series folder per §9.5 below, and `SS-8` with the paper ID.)
   The handover (or its legacy-flat predecessor) is the **canonical session-continuity state record**, preserved verbatim at each session close per `templates/operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §9.5 below for the full rule.
 - Per-paper subfolders also contain `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map). The handover is the one to read first; the others are deeper context if needed.
+- **Also read `todolist.md` at repo root** (introduced 7 May 2026 Session 33). This is the carried-over deferred items list. The next paper does NOT start until P1 — Must clear before next paper is empty. New items get added there as they're identified; cleared items move to "Cleared items (history)" with date and patch number for audit. Check the P1 list at session start so any deferred items relevant to the work being done are visible.
 - If no paper is named, check `/mnt/transcripts/` for raw conversation logs.
 - Check if Thomas has Grok/Copilot exchanges to share.
 
 ### Step 3: Proceed with the queued work
 
 Unless Thomas redirects in his opening message, proceed with the next-session items listed at the end of the handover document read in Step 2. A handover whose final section is titled something like "Ready-to-execute work for next session" or "Next-session task list" is giving you the default action. Execute it. If the handover has no such list, or if Thomas's opening message gives a different direction, follow that instead.
+
+If `todolist.md` P1 has items, the queued work in the handover may be the work to clear them, or the work to clear them may be next after the handover's queue. Defer to Thomas's opening message if there's any ambiguity.
 
 ### If resuming after buffer overflow:
 

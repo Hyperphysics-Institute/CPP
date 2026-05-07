@@ -73,6 +73,7 @@
 | `documentation-suite.md` | 7-file companion template per paper |
 | `paper-formatting.md` | LaTeX standards |
 | `future_projects.md` | Prioritised research targets |
+| `todolist.md` | **Carried-over deferred items + hygiene gaps** (introduced 7 May 2026 Session 33). The "easy to lose" things — small enough to skip a `future_projects.md` entry but compound if not externalized. **The next paper does NOT start until this file's P1 — Must clear before next paper section is empty.** Maintenance: any session that completes a TODO moves it to "Cleared items (history)" with date and patch number; any session that identifies a new deferral adds it here under the appropriate priority. If P1 grows beyond ~10 items, promote items to `future_projects.md` as registered multi-session projects. |
 
 ### Navigation
 | Document | Purpose |
