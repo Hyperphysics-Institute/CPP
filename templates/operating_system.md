@@ -46,6 +46,8 @@
 
 **Canonical command for session-close preservation:** When Thomas says **"please execute handover protocol"** (or "execute handover" / "handover protocol" / minor variants), the AI assistant immediately begins the four-item preservation sequence documented in §15 Session-close Handover Protocol. This is the authoritative trigger. The AI assistant should also proactively prompt — "Do you want to initiate handover protocol?" — when workflow-shape signals indicate session-close readiness; signal patterns are documented in §15.
 
+**Apply-chain protocol (mandatory format for patch delivery):** When delivering a patch chain to Thomas, the AI assistant generates the explicit three-phase command sequence (sync → apply → push) with all paths and filenames spelled out for the target repo. Generic placeholders like `cd /path/to/CPP` are NOT acceptable. Known target repos: CPP at `~/Documents/GitHub/CPP`, RM at `~/Documents/GitHub/RM`. Browser downloads land in `~/Downloads`. See §13 "Standard apply-chain protocol" for the full three-phase template, repo registry, anti-patterns, and optional shell-function convenience layer.
+
 ---
 
 ## 2. The Document Ecosystem
@@ -1229,6 +1231,163 @@ Optional tenth step: Thomas deletes the local patch file. Not required — the c
 **Claude's sandbox out of sync.** Claude modifies files in the sandbox against an outdated clone, not noticing that origin has advanced. Symptom: generated patch does not apply cleanly. Prevention: Claude always runs `git pull origin main` (or equivalent re-clone) at session start before any edits.
 
 **Identity not set.** Commit is authored with the default sandbox identity, not `Claude Opus <noreply@anthropic.com>`. Symptom: git history attributes the commit to `root` or similar. Recovery: amend the commit with `git commit --amend --author="Claude Opus <noreply@anthropic.com>"` before generating the patch. Prevention: set identity as the first action in a new sandbox session.
+
+### Standard apply-chain protocol — adopted 7 May 2026
+
+This subsection defines the canonical procedure by which Claude-authored patches reach origin/main on Thomas's local machine. The protocol is **repo-agnostic**: it works identically for CPP, RM, and any future Claude-collaborative repo Thomas adopts. The shell function variants documented at the end of this subsection are optional convenience layers, not the primary mechanism — adoption is encouraged but not required, and Claude does not depend on them when generating apply-chain instructions.
+
+**Environment.** Thomas runs Git Bash on Windows (MINGW64). Browser downloads land in `~/Downloads`. The home directory is `/c/Users/DrThomas` in MINGW64-speak; in normal use, `~` is the only path prefix needed.
+
+**Repo registry.** Known Claude-collaborative repos:
+
+| Repo  | Local path                       | Origin                                       | Used for                                |
+|-------|----------------------------------|----------------------------------------------|-----------------------------------------|
+| CPP   | `~/Documents/GitHub/CPP`         | github.com/Hyperphysics-Institute/CPP        | Conscious Point Physics programme       |
+| RM    | `~/Documents/GitHub/RM`          | github.com/Renaissance-Ministries/RM         | Renaissance Ministries content + CVN    |
+| (new) | `~/Documents/GitHub/<REPO>`      | (varies)                                     | (per-repo)                              |
+
+When Claude works in either repo, it follows the same three-phase apply-chain protocol below; only the repo path changes. New repos added to this registry should follow the `~/Documents/GitHub/<REPO>` pattern unless Thomas specifies otherwise.
+
+### The three-phase protocol
+
+**Phase 1 — Sync.** Reset to origin/main and confirm baseline.
+
+```
+cd ~/Documents/GitHub/<REPO>
+git checkout main
+git pull origin main
+```
+
+After `git pull`, note the short SHA of HEAD — this is the baseline against which patches will apply. If `git pull` reports "Already up to date" the local main matches origin/main and apply can proceed; if it reports new commits being merged, Claude's patches were generated against a different baseline and may fail to apply (see Failure modes).
+
+**Phase 2 — Apply.** Apply each patch in order, one `git am` per line for visibility.
+
+```
+git am ~/Downloads/<patch-1>.patch
+git am ~/Downloads/<patch-2>.patch
+git am ~/Downloads/<patch-3>.patch
+...
+```
+
+Each line is a distinct command. The terminal echoes the commit subject after each successful application so Thomas can visually verify each patch landed. **If any `git am` fails, run `git am --abort` immediately and stop — do not proceed to Phase 3 with an incomplete apply.** A partially-applied chain leaves the working tree in a recoverable state, but pushing it would commit incomplete history to origin.
+
+**Phase 3 — Push.**
+
+```
+git push origin main
+```
+
+After successful push, GitHub origin/main contains the new commits with Claude's authorship preserved. The apply chain is complete.
+
+### Claude's delivery obligation
+
+When Claude delivers a patch chain to Thomas, Claude generates the full command sequence with all paths and filenames explicit:
+
+- `~/Documents/GitHub/<REPO>` filled in with the actual repo from the registry above (no `/path/to/REPO` or `cd /path/to/CPP` placeholders)
+- `~/Downloads/<filename>.patch` for each patch, with the actual filename Claude generated
+- One command per line, sequential, copy-pasteable
+- Brace-expansion globs (`02{56,57,58,59,60,61}-*.patch`) acceptable for contiguous, dense ranges if Thomas prefers compactness; explicit one-per-line is the default
+
+Claude must also state which repo the chain targets and the baseline commit it applies against, so Thomas can verify before running.
+
+### Failure modes and recovery
+
+**Baseline drift.** Patch was generated against a baseline that no longer matches Thomas's local origin/main. Symptom: `error: patch does not apply`. Recovery: Thomas runs `git am --abort`, reports the actual `git rev-parse HEAD` after `git pull`, and Claude regenerates the chain against that baseline.
+
+**Duplicate apply.** A patch in the chain is already in history. Symptom: `Patch already applied` or `nothing to commit`. Recovery: `git am --skip` to advance past the redundant patch, then continue. If unclear whether a patch is already applied, abort and verify via `git log --oneline | head -10`.
+
+**Patch file missing in Downloads.** Symptom: `git am` reports "could not open ... No such file or directory". Recovery: confirm the file is in `~/Downloads/` (not in `Downloads/Patches/` or some sub-folder; not still in browser-download "Downloads" overlay); re-run.
+
+**Chain abort mid-stream.** If `git am` fails on patch N and Thomas runs `git am --abort`, patches 1 through N-1 are still applied locally but not pushed. Recovery: either `git push origin main` to push what landed (incomplete chain) and ask Claude to regenerate from N onward, OR `git reset --hard origin/main` to discard the partial apply and restart the full chain from a clean baseline. The latter is usually cleaner.
+
+### Anti-patterns (Claude must not produce these)
+
+- Generic `cd /path/to/CPP` or `cd /path/to/REPO` placeholders. These fail on copy-paste and require Thomas to mentally substitute paths every time.
+- `git am NNNN-*.patch` without the `~/Downloads/` path prefix. This assumes the patches are in the working directory, which is rarely true after a fresh download.
+- Ambiguous `git am *.patch` globbing. May apply unintended files; never use.
+- Mixing repos in a single chain. Each chain targets exactly one repo; cross-repo work requires separate chains.
+- Assuming `cpp-apply` / `rm-apply` shell functions are installed without first confirming. The protocol above does not depend on them.
+
+### Optional convenience: shell-function wrappers
+
+For Thomas's day-to-day use, the three-phase protocol can be compressed into a single command by installing thin shell-function wrappers in `~/.bashrc`. Adoption is optional — the manual protocol above works regardless, and Claude continues to generate the explicit three-phase form for delivery.
+
+The recommended function set is a generic `repo-apply` plus one thin wrapper per known repo:
+
+```bash
+# Generic apply function — takes repo path as first argument
+repo-apply() {
+  local repo="$1"; shift
+  local downloads=~/Downloads
+
+  if [ -z "$repo" ] || [ $# -eq 0 ]; then
+    echo "Usage: repo-apply <repo-path> <patch-prefix> [<patch-prefix> ...]"
+    return 1
+  fi
+
+  cd "$repo" || { echo "ERROR: cannot cd to $repo"; return 1; }
+
+  echo "=== Sync $repo with origin/main ==="
+  git checkout main || return 1
+  git pull origin main || return 1
+  echo "Baseline HEAD: $(git rev-parse --short HEAD)"
+
+  echo "=== Verify patches present in $downloads ==="
+  local missing=0
+  for n in "$@"; do
+    local found=("$downloads"/"$n"-*.patch)
+    if [ -e "${found[0]}" ]; then
+      echo "  found:   ${found[0]##*/}"
+    else
+      echo "  MISSING: $n-*.patch"; missing=1
+    fi
+  done
+  [ $missing -eq 1 ] && { echo "Aborting."; return 1; }
+
+  echo "=== Apply patches in order ==="
+  for n in "$@"; do
+    echo "--- $n ---"
+    git am "$downloads"/"$n"-*.patch || {
+      echo "FAILED applying $n. Run 'git am --abort' to back out."
+      return 1
+    }
+  done
+
+  echo "=== Push to origin ==="
+  git push origin main || return 1
+  echo "=== Done. New HEAD: $(git rev-parse --short HEAD) ==="
+}
+
+# Thin wrappers for known repos
+cpp-apply() { repo-apply ~/Documents/GitHub/CPP "$@"; }
+rm-apply()  { repo-apply ~/Documents/GitHub/RM  "$@"; }
+```
+
+After installation, every CPP apply chain reduces to `cpp-apply 0256 0257 0258 0259 0260 0261` and every RM apply chain to `rm-apply <prefixes>`. New repos can be added by writing a new wrapper line.
+
+**Recommended installation method.** The most reliable way to append a multi-line block to `~/.bashrc` is via a single-quoted heredoc, which prevents bash from expanding `$repo`, `$downloads`, etc. while writing:
+
+```
+cat >> ~/.bashrc << 'BASHRC_EOF'
+[paste the function block here, including the 'BASHRC_EOF' delimiter at the end on its own line]
+BASHRC_EOF
+```
+
+After saving, run `source ~/.bashrc` (on a separate prompt line, not glued to the closing brace) to activate in the current shell. The functions persist across all future Git Bash sessions thereafter.
+
+If heredoc paste fails (Windows line-ending interaction with Git Bash is occasionally finicky), the alternative is to open `~/.bashrc` in an editor (`nano ~/.bashrc` or `notepad ~/.bashrc`), scroll to the end, paste the function block, save, and run `source ~/.bashrc`. The editor path is more robust against paste-buffer artifacts.
+
+### Origin and rationale
+
+Adopted 7 May 2026 after two failure modes in close succession:
+
+1. **The placeholder failure.** SS-9 v0.8 patch chain (0256-0260) failed on first apply because Claude handed Thomas a generic `cd /path/to/CPP` template. Bash error: `cd: /path/to/CPP: No such file or directory`. The friction was recurring across sessions.
+
+2. **The shell-function setup failure.** Initial fix proposed a `cpp-apply` shell function added via heredoc to `~/.bashrc`. The heredoc paste in Git Bash glued the closing `}` to the next command (`}source ~/.bashrc`), leaving the shell waiting for a function-body terminator that never came. The function was never defined; the apply chain didn't run.
+
+The lesson: the protocol must work *without* depending on optional setup. The three-phase manual protocol above is the canonical procedure; shell functions are layered on top as a convenience for users who have installed them. Claude generates explicit three-phase commands as the primary delivery, and the protocol is independent of any local shell state.
+
+The protocol is also explicitly multi-repo from the start: CPP and RM are first-class entries in the repo registry, and the same procedure applies to both.
 
 ### When to use each flow
 
