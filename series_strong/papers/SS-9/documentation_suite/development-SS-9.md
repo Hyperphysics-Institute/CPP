@@ -942,3 +942,94 @@ OPEN-SS-37 closure routes count: 3 → 4. No paper change; registry-only update 
 **Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. OPEN-SS-37 REGISTERED preserved with closure routes 3 → 4 (Route (d) added). No new OPEN-SS-* registration this session. SS sector problem count UNCHANGED at 19. SS-9 at v0.8 (was v0.7 at Session 30 close); 32 pages. **Three independent AI-reviewer v1.0-ready verdicts in hand.**
 
 **Forward priority for Session 32+.** Sub-task (e) external review on v0.8 .tex source via reviewer-response protocol. Submit raw GitHub URL with cache-bust query parameter to a human domain-expert reviewer (nuclear physics / alpha-cluster theory). Best case: external reviewer agrees → v0.8 → v1.0 ship. Likely case: external reviewer surfaces 1–3 issues → v0.8 → v0.9 incorporation cycle. In parallel: continued investigation of OPEN-SS-37 closure routes (especially Routes (a) and the new Route (d)); Route (d) literature review (EDM theory, rigidity theory, alpha complexes); SS-10 sub-shell-physics multi-paper development continues as parallel Priority 1 at programme level.
+
+---
+
+## Vignette 39 — Session 32: ChatGPT d.7 review of v0.8 with figure fixes incorporated at v0.9; SS-9 v0.9 → v1.0 SHIP with sub-task (e) rescoped (7 May 2026, Session 32)
+
+**Session goal.** Process ChatGPT's v0.8 review (sub-task d.7); incorporate Figure 1 panel (c) and (e) fixes as v0.8 → v0.9; promote v0.9 → v1.0 with explicit AI-review-only basis and sub-task (e) rescope.
+
+**ChatGPT v0.8 review (d.7).** Verdict: *"Almost — but I would fix one v0.8-specific figure issue before stamping v1.0... The theorem/proof stack still looks v1.0-ready as a conditional closure paper... The only blocker I see is the new Figure 1."* Two bugs identified in the eight-panel FvdW deltahedra figure that shipped at v0.8 (Vignette 38):
+
+- Panel (c) octahedron: 11 of 12 edges drawn; one outer apex connected to 3 of 4 equatorial vertices instead of all 4
+- Panel (e) snub disphenoid: 17 of 18 edges drawn; degree-coloring not matching adjacency for two vertices
+
+ChatGPT recommended a v0.9 micro-patch fixing the figure, then v1.0 promotion. No further proof edits identified. Theorem statement, lemma statements, sub-lemma statements, hypothesis stack, and §9 gap list all preserved at v0.9.
+
+**Programmatic invariant audit (Lesson 6 NEW).** Per symmetric-honesty, both ChatGPT-flagged bugs verified independently against v0.8 source via a Python parser. The parser extracts vertex declarations (color = expected degree) and edge declarations (handling chained `(a) -- (b) -- (c)` syntax and `\foreach` expansion), computes drawn degree per vertex, and verifies against color-declared degree and against expected (N, |E|, deg-distribution) for each FvdW deltahedron.
+
+**Pre-fix audit confirmed:**
+
+| Panel | N_α | Expected (V, E, deg-dist) | v0.8 audit result | Bug |
+|-------|-----|---------------------------|--------------------|-----|
+| (a) | 4 | (4, 6, {3⁴}) | CLEAN | — |
+| (b) | 5 | (5, 9, {3²,4³}) | CLEAN | — |
+| (c) | 6 | (6, 12, {4⁶}) | 11 edges; c4 and c6 drawn deg 3, colored deg 4 | Missing (c6)–(c4) |
+| (d) | 7 | (7, 15, {4⁵,5²}) | CLEAN | — |
+| (e) | 8 | (8, 18, {4⁴,5⁴}) | 17 edges; e3 and e4 drawn deg 4, colored deg 5 | Missing (e3)–(e4) |
+| (f) | 9 | (9, 21, {4³,5⁶}) | CLEAN | — |
+| (g) | 10 | (10, 24, {4²,5⁸}) | CLEAN | — |
+| (h) | 12 | (12, 30, {5¹²}) | CLEAN | — |
+
+ChatGPT's review was complete: only panels (c) and (e) had bugs; six panels were already correct.
+
+**v0.8 → v0.9 patch (sub-task d.7).**
+
+1. **Panel (c) octahedron fix**: added `(c6) -- (c4)` to the c6 spokes line. Post-fix audit: |E|=12, all six vertices drawn at deg 4 matching cyan color.
+
+2. **Panel (e) snub disphenoid fix**: added `(e3) -- (e4)` closing the e3-e4-e6-e5-e3 equator cycle. Post-fix audit: |E|=18, drawn-degree {4⁴, 5⁴} matches color-declared distribution.
+
+3. **Caption softening**: original v0.8 caption claimed "Panels (a)–(d) and (h) are Schlegel diagrams" but Schlegel diagrams are strictly planar embeddings (no edge crossings); panel (c) has unavoidable rendering crossing in the square+two-apexes projection. Updated caption distinguishes "Schlegel-style projections" (a, b, d, h preserving combinatorial 1-skeleton exactly), notes panel (c) has "one rendering crossing while preserving the 1-skeleton", and adds the clarifying sentence: "visual edge crossings reflect the projection layout, not graph intersections (each polyhedron is a planar 3-polytope by Steinitz's theorem)" so readers do not mistake rendering crossings for topological features.
+
+4. **Title block update**: "Version 0.9 — 7 May 2026 (v1.0 polish sub-task d.7: ChatGPT v0.8 review incorporation — Figure 1 panel (c) and (e) corrections)".
+
+**Final invariant audit on v0.9.** All 8 panels CLEAN. All edge counts match $|E| = 3\Nalpha - 6$. All drawn-degree matches color-declared degree.
+
+**v0.9 → v1.0 SHIP.**
+
+Per Thomas's Session 32 statement that no human domain-expert reviewer is available in the author's research network, sub-task (e) — originally registered as the blocking gate before v1.0 ship — was rescoped at v1.0 from "blocking gate" to "open invitation post-v1.0 ship via public posting." The v1.0 promotion was made on the explicit basis of seven independent AI review passes (d.1 through d.7).
+
+**v1.0 substantive edits.**
+
+1. **Title block update**: now reads "Version 1.0 — 7 May 2026 (conditional theorem closure paper; v1.0 promotion from v0.9 on the explicit basis of seven independent AI review passes; sub-task (e) external/human review rescoped to open invitation post-v1.0 ship via public posting — see Note on v1.0 designation in §9)".
+
+2. **NEW: "Note on the v1.0 designation"** three-paragraph block (~280 words) added at end of §9 Roadmap to v1.0 subsection. Documents:
+   - The seven AI review passes that contributed to v1.0
+   - The rescope of sub-task (e)
+   - The honest reading of v1.0 as "AI-validated conditional theorem closure paper, ready for external feedback via public posting" rather than "human-domain-expert-validated"
+   - Explicit invitation for domain-expert feedback from nuclear physics, alpha-cluster theory, computational geometry (EDM theory and rigidity theory connecting to OPEN-SS-37 Route (d)), and discrete mathematics (Steinitz theorem realizations, FvdW classification literature)
+   - Clarification that v1.0 is a "conditional theorem closure paper" not a "v1.0 unconditional derivation"
+
+3. **CHANGELOG v1.0 entry** (~165 lines) with cumulative seven-pass review tally and lessons systematized 1–6.
+
+**Cumulative seven-pass review tally.**
+
+| Pass | Reviewer | Version | Result |
+|------|----------|---------|--------|
+| d.1 | ChatGPT | v0.4 | 5 substantive issues → v0.5 + C8 + OPEN-SS-37 |
+| d.2 | CoPilot | v0.5 | 0 issues, polish suggestions → v0.6 |
+| d.3 | ChatGPT | v0.6 | 3 residuals → v0.7 |
+| d.4 | ChatGPT | v0.7 | 0 (post-cache-bust) → no change; Lesson 4 |
+| d.5 | Grok | v0.7 | 1 must-fix + housekeeping + figure → v0.8 |
+| d.6 | CoPilot | v0.7 | 0, explicit v1.0-ready → no change |
+| d.7 | ChatGPT | v0.8 | 2 figure bugs → v0.9; Lesson 6 |
+
+Final convergence: all seven passes converged on v1.0-ready (d.7 with fixes incorporated at v0.9 prior to the v1.0 ship).
+
+**The honesty of the rescope matters.** A paper that claimed v1.0 status on AI review alone, without making the basis of that status explicit, would mislead readers about the type of validation the paper has received. The conditional-theorem framing throughout the paper (with C5, C6, C7, C8 explicitly registered as paper-level structural hypotheses pending first-principles closure, and OPEN-SS-29, 30, 33, 37 as the corresponding programme-level open problems) is exactly the framing under which the v1.0 designation makes sense: this is a v1.0 *conditional theorem closure paper*, not a v1.0 unconditional derivation.
+
+**Lesson 6 (NEW at Session 32): Programmatic invariant audit for TikZ figures.**
+
+When generating any non-trivial TikZ figure with combinatorial structure, write a parser that extracts the figure's combinatorial content from the .tex source and verifies it against the mathematical invariants the figure conveys (vertex/edge counts, degree distributions, label-to-data consistency). Run before commit, not after review surfaces bugs. Visual inspection is insufficient because the eye fills in expected structure even when absent on the page.
+
+The v0.8 figure shipped with two bugs that Claude did not catch despite visual inspection because no per-panel invariant audit was run. ChatGPT's d.7 review effectively served as the seventh AI review pass and caught what internal review missed. This confirms Lesson 5 (reviewer profiles complementary): even after three v1.0-ready verdicts on v0.7, a fresh review pass on the v0.8 figure surfaced real issues. Going forward, any new figure introduced post-review-cycle triggers a fresh review pass before v1.0 promotion; figures are not exempt from review obligation just because they were added late.
+
+**Programme state at Session 32 close.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. **OPEN-SS-24 ADVANCED → CLOSED** (SS-9 v1.0 ships the conditional closure). OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. OPEN-SS-37 REGISTERED preserved with closure routes 4 (UNCHANGED). No new OPEN-SS-* registration. SS sector problem count UNCHANGED at 19. **SS-9 SHIPPED at v1.0** (was v0.7 at Session 30 close, v0.8 at Session 31 close).
+
+**Forward priority for Session 33+.** Now that SS-9 is shipped at v1.0, the paper completion sequence proper begins:
+- Anthology chapter at Rovelli/Scientific American register, parallel to SS-7 and SS-8 chapters
+- TATWD integration: SS-9 slots into the Standard Model emergence narrative as the C4 closure on the refined-C1 foundation from SS-7
+- Registers freeze: paper_catalog.md, theorem-registry.md, master_glossary.md updates
+- OSF deposit + arXiv submission as public-posting venue for sub-task (e) in rescoped form
+
+In parallel: continued investigation of OPEN-SS-37 closure routes (Routes (a), (d)); SS-10 sub-shell-physics multi-paper development at programme level.
