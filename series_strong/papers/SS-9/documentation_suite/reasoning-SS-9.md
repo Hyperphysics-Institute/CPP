@@ -5817,3 +5817,221 @@ Likely case: external reviewer surfaces 1–3 issues mixing substantive and edit
 - Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
 - Pre-flight bare-c_i pattern check now standard protocol.
 - All Phase 4–11 anti-priorities remain in force.
+
+---
+
+# Tier 4 verbatim reasoning Session 32 (7 May 2026) — ChatGPT d.7 review of v0.8 with figure fixes at v0.9; v0.9 → v1.0 SHIP with sub-task (e) rescope
+
+## I. ChatGPT d.7 review reception protocol
+
+ChatGPT delivered a v0.8 review with the verdict: *"Almost — but I would fix one v0.8-specific figure issue before stamping v1.0."* Two specific bugs identified in the eight-panel FvdW deltahedra figure that shipped at v0.8: panel (c) octahedron drew 11 of 12 edges with two color/drawing mismatches; panel (e) snub disphenoid drew 17 of 18 edges with two color/drawing mismatches. Recommendation: micro-patch v0.9 fixing figure, then promote to v1.0.
+
+Reception protocol: per symmetric-honesty, do not accept ChatGPT's bug claims on faith; verify each independently against v0.8 source. Standard verification path for paper-text claims is `grep` for the alleged text and inspect line content. For figure claims, line-level inspection is insufficient — the figure's correctness depends on the relationship between vertex declarations (color = expected degree) and edge declarations (which determines drawn degree). Visual inspection of the rendered figure is also insufficient, as I found out in v0.8's case (I had visually verified the rendered figure and missed both bugs).
+
+The right verification protocol for figure claims is **programmatic invariant audit**: parse the figure's combinatorial content from the .tex source, compute drawn invariants (vertex count, edge count, per-vertex degree, degree distribution), and compare against the figure's claimed invariants (color-declared degree, expected (V, E, deg-distribution) per FvdW deltahedron). This is Lesson 6.
+
+## II. Programmatic invariant audit Lesson 6 mechanism
+
+**Mechanism.** A Python parser that walks the .tex source between `\begin{figure}` and `\end{figure}` extracts the figure's combinatorial content and verifies its invariants.
+
+**Stage 1: vertex extraction.** Direct vertex declarations match the pattern `\node[v[345]]\s+\((\w+)\)` where `v3`/`v4`/`v5` are the color classes corresponding to expected degrees 3, 4, 5. `\foreach` loops with vertex declarations match `\foreach\s+\\i/\\angle\s+in\s+\{...\}\s*\{[^}]*\\node\[(v[345])\]\s+\(\\i\)`. Each panel produces a {name → color} dictionary.
+
+**Stage 2: edge extraction.** Each `\draw[e] ...;` block is parsed via a tokenize-and-walk algorithm that handles both:
+- Independent edges: `(a) -- (b) (c) -- (d)` → 2 edges
+- Chained edges: `(a) -- (b) -- (c)` → 2 edges (a-b and b-c)
+The algorithm tokenizes into vertex names and `--` operators, then walks tokens tracking "expecting chain continuation" state: after `--`, the next vertex token completes an edge with the previous vertex; after a vertex token without preceding `--`, the previous vertex is reset.
+
+`\foreach \i in {list} { \draw[e] (X) -- (\i); ... }` loops require expansion: for each list item, substitute the item for `\i` in the loop body and parse the expanded text as if it had been written explicitly.
+
+**Stage 3: invariant verification.** Per panel, compute:
+- Vertex count |V|
+- Edge count |E| (after dedup of repeat edges)
+- Drawn degree per vertex (count edges incident to each vertex)
+- Color-declared degree per vertex (from {name → color} dictionary)
+- Drawn degree distribution (histogram)
+
+Verify:
+- |V| matches expected vertex count for the FvdW deltahedron
+- |E| matches expected edge count = $3 N_\alpha - 6$
+- Drawn degree matches color-declared degree for every vertex (no mismatches)
+- Drawn degree distribution matches expected for the FvdW deltahedron (e.g., {4⁵, 5²} for pentagonal bipyramid)
+
+**Diagnostic value.** Any mismatch surfaces immediately with vertex name, drawn degree, and color-declared degree. The parser is deterministic and doesn't rely on visual inspection. It catches bugs the eye misses.
+
+**Future-cycle implications.** Lesson 6 is now standard protocol for any new figure: write the audit parser before commit. The SS-9 figure's parser is preserved in transcript-SS-9.md (transactions 681-685 reference) and can be adapted for other figures with similar combinatorial structure (vertex-edge-degree). For figures with non-graph structure (charts, plots, tables), analogous invariant audits apply: extract the figure's data from the source and verify it matches the source-of-truth data.
+
+## III. Per-panel audit results pre-fix and post-fix
+
+**Pre-fix audit on v0.8 source.**
+
+| Panel | N_α | Expected (V, E, deg-dist) | Drawn (V, E, deg-dist) | Bug |
+|-------|-----|---------------------------|------------------------|-----|
+| (a) | 4 | (4, 6, {3⁴}) | (4, 6, {3⁴}) | — |
+| (b) | 5 | (5, 9, {3²,4³}) | (5, 9, {3²,4³}) | — |
+| (c) | 6 | (6, 12, {4⁶}) | (6, 11, {3²,4⁴}) | Missing (c6)–(c4); c4 and c6 drawn deg 3 but colored deg 4 |
+| (d) | 7 | (7, 15, {4⁵,5²}) | (7, 15, {4⁵,5²}) | — |
+| (e) | 8 | (8, 18, {4⁴,5⁴}) | (8, 17, {4⁶,5²}) | Missing (e3)–(e4); e3 and e4 drawn deg 4 but colored deg 5 |
+| (f) | 9 | (9, 21, {4³,5⁶}) | (9, 21, {4³,5⁶}) | — |
+| (g) | 10 | (10, 24, {4²,5⁸}) | (10, 24, {4²,5⁸}) | — |
+| (h) | 12 | (12, 30, {5¹²}) | (12, 30, {5¹²}) | — |
+
+ChatGPT's review was complete: only panels (c) and (e) had bugs; six panels were already correct.
+
+**Post-fix audit on v0.9 source.** All 8 panels CLEAN. (c) drew (6, 12, {4⁶}); (e) drew (8, 18, {4⁴,5⁴}); both match expected invariants exactly. No mismatches between drawn and color-declared degrees for any vertex in any panel.
+
+## IV. Figure fix design rationale
+
+**Panel (c) octahedron fix: add (c6)–(c4).**
+
+Octahedron has 6 vertices, 12 edges, all degree 4. Schlegel-style projection: 4-vertex equator (square c1–c2–c3–c4) plus 2 apices (c5 inner, c6 outer). c5 connects to all 4 equatorial vertices (drawn correctly). c6 should also connect to all 4 equatorial vertices but in v0.8 source only drew connections to c1, c2, c3 (missing (c6)–(c4)).
+
+Fix: append `(c6) -- (c4)` to the c6 spokes line. The added edge is a long diagonal across the square interior connecting the right-side outer apex to the bottom-left equatorial vertex. This produces one rendering crossing in the planar layout (the (c6)–(c4) line crosses (c5)–(c2) and (c5)–(c3) lines), but does not introduce a topological crossing — the underlying graph is still the octahedron's 1-skeleton, which is planar by Steinitz.
+
+**Panel (e) snub disphenoid fix: add (e3)–(e4).**
+
+Snub disphenoid has 8 vertices (4 deg-4 + 4 deg-5) and 18 edges. The simplified topological schematic has axial pair e1–e2 (top) and e7–e8 (bottom) — both deg-4 — and equatorial cycle e3–e5–e6–e4 — all deg-5. v0.8 source drew the equatorial cycle as e3–e5, e5–e6, e4–e6 (3 edges) but missed the closing edge e3–e4 that completes the 4-cycle.
+
+Fix: prepend `(e3) -- (e4)` to the equator drawline. The added edge closes the equatorial 4-cycle. Post-fix, e3 and e4 each gain one degree (from 4 to 5) matching their red v5 color; the 4 equatorial vertices each have degree 5 as required.
+
+**Why these specific edges.** For panel (c), the missing edge is uniquely determined: the four vertices c1, c2, c3, c4 are the equator and c6 is one apex; c6 must connect to all four (Schlegel octahedron has both apices connected to all equator vertices). For panel (e), multiple choices of "missing edge" could fix the degree counts in a simplified topological schematic — the choice e3–e4 (vs. e1–e7 or e2–e8 or others) was made because it closes the equatorial cycle as a recognizable structural feature, matching the snub disphenoid's actual topology where deg-5 equatorial vertices form alternating bonds.
+
+**Both fixes are minimal.** Single edge addition per panel. Zero changes to vertex declarations (colors). Zero changes to other panels. Zero changes to caption text-flow except for the softening (separate edit). The figure's pedagogical content (degree-5 vertices first appear at $N_\alpha = 7$, dominate by $N_\alpha = 12$) is preserved exactly; the bugs were rendering errors, not pedagogical errors.
+
+## V. Caption softening rationale (Schlegel strict definition vs stylized projection language)
+
+**The strict Schlegel definition.** A Schlegel diagram of a 3-polytope is a planar embedding obtained by projecting the polytope through one face onto the opposite face's plane. The defining property is that the projection has no edge crossings — the result is a straight-line planar drawing of the polytope's 1-skeleton.
+
+**v0.8 caption claim.** "Panels (a)–(d) and (h) are Schlegel diagrams." This was strictly inaccurate:
+- Panels (a) tetrahedron and (b) triangular bipyramid have planar Schlegel diagrams without crossings — claim correct
+- Panel (c) octahedron's standard Schlegel diagram is planar (a square with two apices), but the specific layout I used in v0.8 (c5 inner apex, c6 outer apex on the right) requires the (c6)–(c4) edge to be drawn as a long diagonal across the square interior, producing a rendering crossing with (c5)–(c2) and (c5)–(c3). Panel (c) has a rendering crossing.
+- Panel (d) pentagonal bipyramid's standard Schlegel diagram is planar; my layout (pentagon equator with two apices on either side) is a valid Schlegel embedding without crossings — claim correct
+- Panel (h) icosahedron has a planar Schlegel diagram and my layout achieves it — claim correct
+
+So strictly, the claim "Panels (a)–(d) and (h) are Schlegel diagrams" is wrong because panel (c) has a rendering crossing.
+
+**Two ways to handle this.** (i) Redraw panel (c) without the rendering crossing — possible in principle (use a different planar embedding) but adds layout work and may introduce other visual issues. (ii) Soften the caption to acknowledge the rendering crossing while preserving the underlying topological correctness claim.
+
+I chose (ii) for three reasons: (a) the underlying graph is still the octahedron's 1-skeleton, which is planar by Steinitz — the rendering crossing is a layout artifact, not a topological error; (b) future readers should understand that visual edge crossings in figures of 3-polytopes do not indicate the polytopes are non-planar; (c) the change is more honest — admits the rendering imperfection while keeping the figure usable.
+
+**Updated caption distinguishes.**
+- "Schlegel-style projections" for (a), (b), (d), (h) — preserve the polytope's combinatorial 1-skeleton exactly (no rendering crossings)
+- Panel (c) shows "the octahedron's 1-skeleton with one rendering crossing"
+- "Simplified topological schematics" for (e)–(g) — preserve vertex count, edge count, and vertex degree distribution but use approximate edge structure (the snub disphenoid, triaugmented triangular prism, and gyroelongated square bipyramid are difficult to embed cleanly in 2D without crossings)
+
+The new clarifying sentence "visual edge crossings reflect the projection layout, not graph intersections (each polyhedron is a planar 3-polytope by Steinitz's theorem)" addresses the broader interpretive question: any reader who notices crossings in any panel should understand they are layout artifacts, not topological features.
+
+## VI. v1.0 promotion rationale on AI-review-only basis
+
+**The original protocol.** The polish track sub-task list registered (a)–(c) as sub-lemma sub-tasks, (d.1)–(d.k) as AI review incorporation sub-tasks (one per review pass), and (e) as external/human review sub-task. (e) was registered as the blocking gate before v1.0 ship: external/human domain-expert review was required.
+
+**The reality.** Thomas confirmed at Session 32 that no human domain-expert reviewer is available in the author's research network. *"I don't have any human reviewers in my contact universe."* This is a real practical constraint, not a temporary one.
+
+**Three options for v1.0 ship.**
+1. Hold v0.9 as v0.9 indefinitely. Wait for a human reviewer to materialize. Risk: paper never ships; the conditional theorem result, which is genuinely novel and useful, never reaches the broader scientific community.
+2. Ship v1.0 silently on AI review and pretend it's the same as v1.0 with human review. Dishonest; misleads readers about validation status.
+3. Ship v1.0 explicitly on AI-review-only basis with sub-task (e) rescoped from "blocking gate" to "open invitation post-v1.0 ship via public posting." Honest; gets the paper out; preserves the option for v1.x revisions when external feedback eventually arrives.
+
+Option 3 is the right answer.
+
+**Why three independent AI reviewers is sufficient evidence for v1.0.** ChatGPT, CoPilot, and Grok have different reviewer profiles (surgical-technical, editorial, structural-with-cohesion). Across seven passes (d.1–d.7), they caught different categories of issues. By Session 32, all three had delivered v1.0-ready verdicts on at least one version: ChatGPT post-cache-bust (d.4), Grok (d.5), CoPilot (d.6), and ChatGPT again on the v0.9 figure-fix (d.7 with the fix incorporated). The convergence is strong.
+
+**Why v1.0 with rescope is honest.** The Note on the v1.0 designation paragraph states explicitly: "The v1.0 designation should therefore be read as 'AI-validated conditional theorem closure paper, ready for external feedback via public posting,' *not* as 'human-domain-expert-validated.'" Future readers know what v1.0 means in this paper's case.
+
+**Why v1.0 is not "premature."** The conditional theorem framing is the key. The paper does not claim to derive the FvdW realization unconditionally — it derives it under registered hypotheses C1' + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy, with C5, C6, C7, C8 explicitly registered as paper-level structural hypotheses pending first-principles closure (OPEN-SS-29, 30, 33, 37). The "v1.0" designation rests on what the paper claims to deliver (a v1.0 conditional theorem closure paper), not on hypothetical claims it does not make.
+
+## VII. Sub-task (e) rescope rationale and honesty argument
+
+**The rescope is from "blocking gate" to "open invitation post-v1.0 ship via public posting."**
+
+In its blocking-gate form, (e) was: "external (human domain-expert) review by a nuclear physicist or alpha-cluster theorist must be performed before v1.0 ship; v1.0 ship requires (e) DONE."
+
+In its rescoped form, (e) is: "external feedback from domain experts is invited via public posting of v1.0 (OSF deposit, arXiv submission); substantive feedback surfaced post-v1.0-ship will produce v1.x revisions on the same polish-track cadence as v0.1 → v1.0."
+
+**The rescope is documented in five places.**
+1. Title block (visible to first-time readers on PDF title page)
+2. §9 Roadmap to v1.0 subsection — new "Note on the v1.0 designation" paragraph
+3. CHANGELOG v1.0 entry (visible to anyone reading the source)
+4. Companion file Research_Frontier.md (last-updated header for Session 32)
+5. Companion file future_projects.md (A.2) entry — sub-task (e) status RESCOPED
+
+**The honesty argument.** A paper that claimed v1.0 status on AI review alone, without making the basis of that status explicit, would mislead readers about the type of validation the paper has received. Three concrete failure modes of pretending:
+- A reader assumes the paper has been peer-reviewed by a domain expert; they take its conclusions more seriously than they should given the actual validation
+- A future programme-level audit (e.g., for SS-10 or a successor paper) treats the paper's conclusions as having human-expert validation when they do not
+- A future Claude session (with this paper in context) treats the v1.0 designation as more strongly validated than it is, propagating the overclaim across the programme
+
+The rescope avoids all three failure modes by being explicit. It also creates the explicit invitation channel: domain experts who happen to read the public posting know they are being asked for feedback that would produce v1.x revisions. The OSF deposit and arXiv submission are real public-posting venues; sub-task (e) gets its chance, just on a longer time horizon than the original blocking-gate form.
+
+**The conditional-theorem framing makes the rescope coherent.** The paper does not claim unconditional results; it claims a conditional theorem under registered hypotheses with explicit programme-level open problems (OPEN-SS-29, 30, 33, 37) for the conditions. v1.0 says: this is the v1.0 conditional theorem closure paper. AI review confirmed the conditional reasoning is sound. Whether the conditions themselves can be derived from CPP primitives is a separate question, registered for follow-up. Sub-task (e) rescoped is consistent with this framing.
+
+## VIII. Note on v1.0 designation content rationale
+
+The "Note on the v1.0 designation" paragraph in §9 Roadmap to v1.0 subsection has three paragraphs.
+
+**Paragraph 1: factual record.** Lists the seven AI review passes (d.1 ChatGPT v0.4, d.2 CoPilot v0.5, d.3 ChatGPT v0.6, d.4 ChatGPT v0.7 post-cache-bust, d.5 Grok v0.7, d.6 CoPilot v0.7, d.7 ChatGPT v0.8 with fixes at v0.9) and the rescope of sub-task (e). Anyone reading this knows exactly which reviewers contributed to v1.0 and on which versions. Future researchers (or future Claudes) can verify the seven-pass cycle from CHANGELOG entries v0.4 onward.
+
+**Paragraph 2: honest reading.** States that v1.0 should be read as "AI-validated conditional theorem closure paper, ready for external feedback via public posting," not as "human-domain-expert-validated." States that the paper is not frozen at v1.0 — substantive issues from external feedback after public posting will produce v1.1, v1.2, etc., on the same polish-track cadence. Names OSF deposit (DOI 10.17605/OSF.IO/JXE8D registered earlier) and arXiv submission as the public-posting venues. Names the specific feedback the author seeks: nuclear physics, alpha-cluster theory, computational geometry (especially EDM theory and rigidity theory connecting to OPEN-SS-37 Route (d)), discrete mathematics.
+
+**Paragraph 3: rationale for rescope honesty.** Articulates why the rescope is documented explicitly rather than handled silently: a paper that claimed v1.0 on AI review alone without making the basis explicit would mislead readers about validation type. Clarifies that v1.0 is a "conditional theorem closure paper" not a "v1.0 unconditional derivation" — the v1.0 designation rests on what the paper claims to deliver, not on hypothetical claims it does not make.
+
+**Why this content rather than less.** The paragraph could have been shorter (one sentence: "v1.0 was advanced on AI review only; external feedback is invited via public posting"). The fuller version is more useful because: (i) it names the seven specific reviewers and versions, providing factual record; (ii) it states the honest reading explicitly, preempting overclaim by readers; (iii) it identifies specific domains where feedback is most useful, channeling external feedback efficiently; (iv) it justifies the rescope rather than simply asserting it.
+
+**Why this content rather than more.** Could have included reviewer-by-reviewer verdict quotes, full CHANGELOG-style detail, or programme-level commentary on AI vs. human review. These belong in the CHANGELOG entry (which has them) and the documentation suite (which has them in transcript and reasoning files), not in the paper body. The paper body should articulate the v1.0 designation crisply and point readers to where they can learn more.
+
+## IX. Cumulative seven-pass cycle synthesis
+
+**The seven-pass cycle (d.1 through d.7) is, in retrospect, a complete arc.**
+
+**Stage 1: opening-round substantive (d.1, d.3).** ChatGPT's v0.4 and v0.6 reviews caught the substantive issues that had escaped the prior sub-lemma reviews of Sessions 25–27. d.1 surfaced the implicit Steinitz-to-centroid realization gap (leading to C8 registration and OPEN-SS-37). d.3 surfaced three residual technical corrections (Sub-Lemma 2.2 missing C8; clause (iv) order-of-operations; line 1104 facet (b) leftover). These are the issues a surgical-technical reviewer catches first.
+
+**Stage 2: editorial polish (d.2, d.6).** CoPilot's v0.5 and v0.7 reviews delivered editorial polish without substantive issues. d.2 surfaced rigid packing definition, C8 caveat paragraph, C7 clarifying sentence, Lemma B' Step 5 expansion, §9 Roadmap subsection. d.6 was an explicit v1.0-ready endorsement with zero substantive issues. Editorial readers catch readability/clarity issues that surgical-technical readers might miss.
+
+**Stage 3: structural/housekeeping (d.5).** Grok's v0.7 review caught housekeeping bugs (title block at line 770 reading "Version 0.1" despite seven version bumps; unused `\bibitem{ss10_forthcoming}`) and a pedagogical opportunity (FvdW deltahedra figure). The structural reader catches inconsistencies between elements (visible PDF title vs. CHANGELOG; bibliography vs. body citations).
+
+**Stage 4: cache-resolution diagnostic (d.4).** ChatGPT's v0.7 re-review initially produced a stale-context review (cached v0.6) — diagnosed via cache-bust query parameter. After cache-bust, d.4 confirmed v0.7 was review-clean. This contributed Lesson 4 (cache effects).
+
+**Stage 5: late-figure regression (d.7).** ChatGPT's v0.8 review caught two figure bugs that v0.8 shipped with — bugs introduced when the figure was added at d.5 and not caught by visual inspection or the d.6 CoPilot review (which doesn't typically deep-audit figures). d.7 contributed Lesson 6 (programmatic invariant audit for TikZ figures).
+
+**The arc shows three structural insights.**
+1. Reviewer profiles are complementary (Lesson 5). Each profile catches different categories of issues. ChatGPT alone, or CoPilot alone, or Grok alone, would have caught fewer issues than the combination.
+2. New artifacts introduced post-review-cycle need fresh review (d.7 lesson). The figure was added at d.5; d.5/d.6 didn't deep-audit it; d.7 caught its bugs. Going forward, any new artifact triggers a fresh review pass before v1.0 ship.
+3. Programmatic invariant audits scale better than visual inspection for combinatorial artifacts (Lesson 6). Code-generated figures with combinatorial structure benefit from code-level verification. The audit script for SS-9's Figure 1 is preserved in transcript-SS-9.md and can be adapted for future figures.
+
+**The seven-pass cycle as a quality-validation outcome.** Three independent reviewers, seven passes total, all converging on v1.0-ready (d.7 with fixes incorporated at v0.9). This is the strongest possible AI-validation outcome short of human domain-expert review. The rescope of sub-task (e) is honest: AI review is not a substitute for human review, but seven passes worth of AI review by three different profiles is substantively informative about the paper's quality, and it supports v1.0 ship under the rescoped framing.
+
+## X. Forward queue Session 33+ (paper completion sequence)
+
+Now that SS-9 is shipped at v1.0, the paper completion sequence proper begins. Four parallel tracks:
+
+**Track 1: anthology chapter** at Rovelli/Scientific American register, parallel to the SS-7 and SS-8 chapters in the anthology. The dramatic arc to tell:
+- The puzzle: SS-7 found B(N) = N·B_α + (3N−6)·B_pair fits twelve nuclei to within 1.5% at the FvdW values
+- The clue: 3N−6 is suspiciously Euler's formula
+- The journey: deriving the simplicial-polytope structure from physical primitives via three lemmas and Steinitz's theorem
+- The result: conditional theorem on 9 hypotheses
+- The honesty: 4 OPEN-SS-* registries — the proof identifies what isn't yet derived
+- What's still open: FvdW realization (OPEN-SS-37), deltahedra-gap nuclei (OPEN-SS-31), facet (b) mechanism
+
+That's a Rovelli-register story — the *limits of what was proven* are part of the narrative rather than something to hide.
+
+**Track 2: TATWD integration.** SS-9 slots into the Standard Model emergence narrative as the **C4 closure on the refined-C1 foundation from SS-7**. Specifically: SS-7 v1.3 introduced refined-C1 (multi-faceted alpha rigidity) replacing strict-C1 of v1.2. SS-9 builds on this by deriving the simplicial-polytope assumption (C4) that SS-7 had used as a paper-level structural hypothesis. The combined SS-7 + SS-9 narrative reads: "We start from CPP primitives + refined-C1 + C2 + C3, we get the binding formula + the simplicial-polytope structure conditionally on C5/C6/C7/C8, and we get twelve zero-parameter nuclear binding predictions to within 1.5%."
+
+**Track 3: registers freeze.** Multiple programme-level files need final updates marking SS-9 SHIPPED at v1.0:
+- `paper_catalog.md`: SS-9 v1.0 entry
+- `theorem-registry.md`: Theorem 6.1 (SS-9 main theorem) + Sub-Lemma 2.1 (C7 conditional derivation) + Sub-Lemma 2.2 (3D-non-degeneracy) + Sub-Lemma 2.3 (C5 well-definedness)
+- `Research_Frontier.md`: final update marking SS-9 SHIPPED at v1.0
+- `master_glossary.md`: any new terms locked in (FvdW deltahedron, Schlegel diagram, alpha complex, EDM theory, Cayley-Menger determinant)
+- `future_projects.md`: (A.2) entry status FINAL — v1.0 SHIPPED Session 32; sub-task (e) RESCOPED Session 32
+
+**Track 4: public posting.** OSF deposit (DOI 10.17605/OSF.IO/JXE8D registered earlier) and arXiv submission as the public-posting venue for sub-task (e) in its rescoped form. The paper has been on GitHub origin/main throughout the polish track (Sessions 22–32), so OSF deposit is the *first* registered public posting in the academic sense.
+
+**Parallel priorities.** OPEN-SS-37 closure routes investigation continues:
+- Route (a): facet (b) sufficiency derivation (needs AMD or Brink–Bloch cluster-model calculations of contact-distance distributions at degree-5 sites)
+- Route (d): literature review — EDM theory (Schoenberg/Cayley-Menger), rigidity theory (Maxwell-Cremona/Asimow-Roth/Laman/Pollaczek-Geiringer), alpha complexes (Edelsbrunner et al.), realization spaces (Mnëv/Richter-Gebert)
+
+SS-10 sub-shell-physics multi-paper development continues at programme level as Priority 1.
+
+**Anti-priorities sustained.**
+- Do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions (v1.0 is shipped; revisions are post-feedback only)
+- Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap
+- Pre-flight bare-c_i pattern check now standard protocol
+- Per-panel TikZ invariant audit now standard protocol for any new figure
+- All Phase 4–11 anti-priorities remain in force
