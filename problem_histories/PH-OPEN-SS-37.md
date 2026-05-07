@@ -5,7 +5,7 @@
 **Sector:** SS (nuclear physics)
 **Location in registry:** `Research_Frontier.md` §1, Strong Sector (SS)
 **File created:** 6 May 2026 (Session 28 v1.0 polish sub-task (d.1))
-**Purpose:** Record the registration narrative of OPEN-SS-37 — the programme-level closure target for C8 (FvdW centroid-realizability), introduced at SS-9 v0.5 in response to ChatGPT review of v0.4. Document the gap that C8 addresses (Steinitz-to-centroid realization), the three candidate closure routes, and the dependency structure linking OPEN-SS-37 to OPEN-SS-32 (slip-plane mechanism) via shared facet (b) Layer-3 ancestry.
+**Purpose:** Record the registration narrative of OPEN-SS-37 — the programme-level closure target for C8 (FvdW centroid-realizability), introduced at SS-9 v0.5 in response to ChatGPT review of v0.4. Document the gap that C8 addresses (Steinitz-to-centroid realization), the four candidate closure routes (Route (d) added at v0.8 Session 31 per ChatGPT d.4 forward-looking suggestion), and the dependency structure linking OPEN-SS-37 to OPEN-SS-32 (slip-plane mechanism) via shared facet (b) Layer-3 ancestry.
 
 ---
 
@@ -48,7 +48,7 @@ This file records the registration narrative and the candidate closure scope.
 
 ## Candidate closure scope
 
-Three closure routes for OPEN-SS-37 are registered in `Research_Frontier.md`:
+Four closure routes for OPEN-SS-37 are registered (Routes (a)--(c) registered at v0.5 Session 28; Route (d) added at v0.8 Session 31 per ChatGPT d.4 forward-looking suggestion):
 
 ### Route (a): Facet (b) sufficiency derivation
 The natural priority route given facet (b)'s established necessary-precondition role for C8 at $\Nalpha \geq 7$. Facet (b) was introduced in SS-7 v1.3 §2.1 with three candidate mechanisms:
@@ -67,6 +67,31 @@ For $\Nalpha = 4$: DOF = 18, edges = 6, simple counting gives 18 vs 6×{constrai
 Place alphas at the FvdW deltahedron vertices and verify all face-coincidences at edge length $\Raa$ are simultaneously satisfiable. Essentially the empirical observation (SS-7 Table 1 confirms the formula at the FvdW values) elevated to a derivation.
 
 The empirical match between SS-7 Table 1 zero-parameter binding-energy predictions and AME 2020 data at the eight FvdW values ($\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$) provides strong empirical support for C8 (twelve nuclei matched within $\pm 1.5\%$, RMS 0.80\%), but does not constitute a derivation.
+
+### Route (d): Distance-geometry / rigidity / realization-spaces approach (NEW at Session 31)
+
+**Origin:** ChatGPT d.4 forward-looking suggestion (delivered as part of the v0.7 review cycle, registered at SS-9 v0.8 Session 31). ChatGPT proposed reframing C8 as a recognized mathematical programme rather than an isolated realizability axiom: *"Given a contact graph $G$, with all contact lengths fixed to $\Raa$, does there exist a non-degenerate centroid embedding in $\mathbb{R}^3$ realizing the simplicial polytope?"*
+
+**Mathematical content.** Route (d) reformulates C8 as a question in three connected research programmes:
+
+1. **Euclidean distance matrix (EDM) theory.** A symmetric $n \times n$ matrix $D$ with $D_{ii} = 0$ and $D_{ij} = \|c_i - c_j\|^2$ is realizable in $\mathbb{R}^k$ iff its associated Cayley--Menger determinants of order $\geq k+2$ vanish. For C8: fix $D_{ij} = \Raa^2$ on contact edges (specified by $G$) and ask whether the remaining entries can be chosen so the full matrix is realizable as an EDM in $\mathbb{R}^3$ with the FvdW combinatorial structure. Cayley--Menger determinant conditions provide an algebraic characterization of realizability that can in principle be checked at each FvdW $\Nalpha$.
+
+2. **Rigidity theory (Maxwell--Cremona, Asimow--Roth).** A graph $G$ embedded in $\mathbb{R}^3$ with edge length constraints is *generically rigid* iff $|E| \geq 3|V| - 6$ (with equality being minimally rigid). The FvdW deltahedra all satisfy $|E| = 3\Nalpha - 6$ exactly --- they are the boundary case (minimally rigid as graphs in $\mathbb{R}^3$). This places C8's geometric realization within rigidity theory: the question is whether the alpha cluster physics specifically picks the *unique* (modulo isometry) FvdW realization rather than some other minimally-rigid embedding. Combinatorial rigidity matroids (Laman's theorem in 2D; Pollaczek-Geiringer in 3D) provide tools for analyzing realizability spaces.
+
+3. **Alpha complexes (Edelsbrunner et al., 1995) and realization spaces.** The alpha cluster's centroid configuration $\mathcal{C} = \{c_1, \ldots, c_{\Nalpha}\}$ has a natural alpha-complex structure (geometric simplicial complex parameterized by a radius). At the LO physical scale (alpha radius $\sim \Raa/2$), the alpha complex's 1-skeleton corresponds to the contact graph. C8 is then the question of whether physical constraints (rigid packing $+$ C2 face-coincidences) force this alpha complex to be combinatorially equivalent to the FvdW deltahedron. Realization spaces of polytopes (Mn\"ev's universality theorem, Richter-Gebert) provide the broader framework.
+
+**What Route (d) buys, beyond Routes (a)--(c).** Routes (a) (facet (b) sufficiency derivation), (b) (constraint-counting), and (c) (direct construction) all approach C8 from inside the SS-9 / CPP framework. Route (d) connects C8 to recognized mathematical programmes external to the CPP project. This has two benefits:
+
+- **Recognized mathematical machinery.** EDM theory, rigidity theory, and alpha complexes have decades of accumulated mathematical results that may directly apply. Closure of C8 may follow as a corollary of an existing theorem rather than requiring a new derivation.
+- **Programme legibility for external review.** Sub-task (e) external human review will benefit from C8 being framed as a question in EDM theory / rigidity theory rather than as an isolated realizability axiom. External reviewers (especially those with backgrounds in computational geometry or mathematical physics) may immediately recognize the question and provide pointers to the relevant literature.
+
+**Closure route status.** Route (d) is registered as a candidate at Session 31; literature review pending. Initial directions to investigate:
+
+- Whether the FvdW deltahedra are characterized in EDM theory as "minimal rigid embeddings of triangulated 2-spheres with uniform edge length" --- if so, C8 may follow directly from EDM theory.
+- Whether Cayley--Menger determinant calculations at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ explicitly verify the FvdW realizability and identify it as unique up to isometry.
+- Whether the alpha complex literature (Edelsbrunner, Mücke 1994; Edelsbrunner 1995; subsequent work on persistent homology and topological data analysis) has results on the structure of alpha complexes of "tightly packed" point clouds that directly apply to alpha cluster geometry.
+
+**Relation to other routes.** Route (d) does not displace Routes (a)--(c); it provides a parallel framing. Route (a) (facet (b) sufficiency) remains the most physically motivated route given facet (b)'s established necessary-precondition role. Routes (b) and (c) remain available. Route (d) provides external programme legibility and may unlock results from recognized mathematical literature.
 
 ---
 
