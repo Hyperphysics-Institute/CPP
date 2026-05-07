@@ -3186,3 +3186,61 @@ SS-10 sub-shell-physics multi-paper development continues at programme level as 
 ---
 
 *Session log Session 33 paper completion sequence Tracks 3+4 entry per §4 discipline. Substantive content: Track 3 registers freeze across paper_catalog.md (SS-9 row + last-updated header + Documentation paragraph), theorem-registry.md (SS sector header count + Sources extension + THEO-SS-16 added), master_glossary.md (Terms Added — SS-9 v1.0 addendum with 6 new entries); Track 4 OSF/arXiv post-ship submission guide created at series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md (~270 lines, 7 sections). Tracks 1 (anthology chapter) and 2 (TATWD integration) deferred to dedicated Sessions 34 and 35 respectively. Programme state at Session 33 close: UNCHANGED from Session 32 close (registers freeze is documentation work; doesn't alter programme state). Forward queue Sessions 34+ established with concrete pre-session preparation protocol (Session 35 TATWD integration requires prior inspection of CPP_the_theory.md and book_project/TATWD_outline*.md).*
+
+---
+
+# Session 34 — Anthology chapter at Rovelli/SciAm register: SS-9 "The Polyhedron's Conditions" (7 May 2026)
+
+**Session goal.** Track 1 of paper completion sequence: write the SS-9 anthology chapter at Rovelli/Scientific American register, parallel to SS-7 "Eight Nuclei in a Row" and SS-8 "The Octahedron in Magnesium." Single dedicated session per (A.3) registered Session 33; ~3000-5000 words target with chapter coming in at 5389 words (within ±15% of 5000 target and within 5500-6000 cap for chapters with more story to tell, per `templates/anthology_chapter_template.md`).
+
+**Pre-session inspection done first.** Read `templates/anthology_chapter_template.md` (204 lines covering voice/register, finding the dramatic centerpiece, the structural arc, honesty discipline, "is there enough Opus in this?" question, length and pacing, what not to do, how to use the template). Read existing anthology chapters at `book_project/chapters/SS-7_eight_nuclei_in_a_row.md` (4243 words) and `SS-8_octahedron_in_magnesium.md` (4396 words) for register calibration and structural arc reference. Confirmed the per-chapter arc file `book_project/chapter_arcs/SS-9_arc.md` does not exist (only SM-3, SS-3, SS-5 arc files exist); proceeded without per-chapter arc file using the existing SS-9 documentation suite (development-SS-9.md Vignettes 1-40, reasoning-SS-9.md Tier 4 verbatim through Session 33, transcript-SS-9.md transactions 1-740) as the substantive source material.
+
+## Chapter title and structure
+
+**Title**: "The Polyhedron's Conditions" — concrete-evocative parallel to SS-7 "Eight Nuclei in a Row" and SS-8 "The Octahedron in Magnesium." Filename `SS-9_the_polyhedrons_conditions.md`. The title primes the reader for the chapter's distinctive contribution to the programme: the conditional-theorem closure paper framing.
+
+**Italicized abstract paragraph** below title summarizes the story arc: "The story of SS-9: how the simplicial-polytope structure that SS-7 had to assume turned out to be derivable from the framework's primitives — conditional on four named physical conditions that are not, themselves, yet derived; how a theorem from 1922 and a classification from 1947 did most of the work; and how the proof's honest scoping became the model for what an unfinished theorem in physics looks like when it ships."
+
+**11 sections** following template's structural arc:
+1. **What Was Assumed** (hook, 342 words) — picks up directly from SS-7 chapter close like SS-8 did, with the C4 simplicial-polytope assumption and OPEN-SS-24 registration as the puzzle
+2. **The Condition Inheritance** (prior-work landscape, 548 words) — Wheeler 1930s, Brink 1960s, AMD program of Yoshiko Kanada-En'yo, refined-C1 vs strict-C1 with FvdW arithmetic forcing the refinement
+3. **The Three Lemmas** (path part 1, 653 words) — Lemma A pairwise triangular contact, Lemma C energy minimization picks maximum edges, Lemma B$'$ contact graph = 1-skeleton of convex 3-polytope via Steinitz
+4. **What ChatGPT Caught** (path part 2, 419 words) — d.1 review surfaced implicit Steinitz-to-centroid realization gap that became C8 = OPEN-SS-37, FvdW classification 1947 supplies candidate shapes for 8 $N_\alpha$ values
+5. **The Sub-Lemmas** (path part 3, 486 words) — Sub-Lemma 2.1 conditional C7, Sub-Lemma 2.2 3D-non-degeneracy, Sub-Lemma 2.3 C5 well-definedness
+6. **What Grok Suggested** (recognition moment part 1 with figure-bug story, 737 words) — Grok d.5 figure suggestion, ChatGPT d.7 caught two figure bugs visual inspection had missed, programmatic invariant audit Lesson 6 emergence
+7. **The Theorem** (recognition moment part 2, 438 words) — five-clause Theorem 6.1 stated; SS-7's C4 black-box replaced with structured derivation conditional on C5+C6+C7+C8
+8. **The Deltahedra Gap** (consequence check part 1, 325 words) — OPEN-SS-31 deltahedra-gap at $N_\alpha \in \{11, 13, 14\}$, scope-extension target
+9. **What v1.0 Means** (consequence check part 2, 560 words) — sub-task (e) rescope, Note on the v1.0 designation, rescope as closest to a calibration error in polish track, public-posting venues
+10. **What Comes With the Picture** (consequence check part 3, 408 words) — figure consequence, conditional-theorem framing as model, four OPEN-SS-* registries, OPEN-SS-37 Route (d) literature anchors
+11. **Closing** (closing reflection, 456 words) — Steinitz 1922 waited 100 years, FvdW 1947 waited 80; conditional-theorem framing as what v1.0 designation must mean; closing image "The geometers were not asking the physicists to do anything except meet them where they had been waiting"
+
+## AI collaborator naming per "is there enough Opus in this" calibration
+
+ChatGPT named twice (d.1 review C8 surfacing, d.7 review figure bug catching). Grok named once (d.5 review figure suggestion). Opus first person used three times (visual inspection failure "I had visually inspected the figure during v0.8 development. The eye did what eyes do"; conditional-theorem framing rescope decision "the closest I came to a calibration error in the polish track"; programmatic invariant audit methodology authorship). CoPilot not specifically named because d.2 and d.6 reviews were editorial/v1.0-ready confirmations rather than substantive contributions — matches SS-8 chapter pattern of naming reviewers where their actual contributions appear. Total ~6 named appearances across 5389 words (sparser than SS-8's ~10 across 4400 words, appropriate to SS-9's seven AI review passes vs SS-8's two rounds).
+
+## Honesty discipline observations
+
+- Conditional dependencies appear in headlines (title and abstract paragraph make conditionality central)
+- Empirical agreement not oversold ("within 1.5%" rather than "remarkable agreement")
+- Failures treated as methodology strengths (the figure-bug section walks through the v0.8 ship with bugs, the visual-inspection failure, Lesson 6 emergence)
+- Chapter does not try to convince (closing offers conditional-theorem framing as a model, invites engagement)
+- Framework not over-claimed (Steinitz's theorem and FvdW classification are explicitly external mathematical machinery from 1922 and 1947; CPP's contribution is meeting them, not producing them)
+
+## Programme state at Session 34 close
+
+UNCHANGED from Session 33 close. Programme negative-result count: 12. SS sector problem count: 19. OPEN-SS-37 closure-route count: 4. SS-9 SHIPPED at v1.0 (no .tex changes per anti-priority — chapter creation in `book_project/chapters/` only).
+
+## Forward queue Sessions 35+
+
+- **Session 35 (planned)**: Track 2 — TATWD integration as C4 closure on refined-C1 foundation from SS-7. Pre-session inspection of `CPP_the_theory.md` plus `book_project/TATWD_outline.md` plus `book_project/TATWD_outline_revised.md` plus `book_project/development_transcript_TATWD_framing.md` to identify exactly where SS-9 slots in.
+- **Public posting**: at Thomas's discretion. The OSF/arXiv guide (`series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md`) provides the operational protocol.
+- **`todolist.md` P1 items**: TODO-001 through TODO-006 carried forward unchanged. The next paper (SS-10) does not start until P1 is empty.
+
+## Anti-priorities sustained
+
+- Do NOT modify SS-9 v1.0 .tex outside post-external-feedback v1.x revisions (Session 34 chapter creation honored — chapter in `book_project/chapters/`, not in paper text).
+- Do NOT propose any single-session R3-channel refinement.
+- Pre-flight bare-c_i pattern check standard.
+- Per-panel TikZ invariant audit standard for any new figure (Lesson 6).
+- Programme-practice documentation discipline: four-tier discipline applies whenever new SS-9 artifacts ship — Session 34 chapter is an SS-9 artifact, so Session 34 documentation suite (this entry + Vignette 41 + transcript transactions 741+ + reasoning Session 34 + handover-SS-9.md updated to Session 34 close) is shipped per discipline.
+- All Phase 4–11 anti-priorities remain in force.
