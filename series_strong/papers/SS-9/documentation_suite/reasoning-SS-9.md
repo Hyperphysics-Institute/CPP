@@ -6217,3 +6217,108 @@ The paper has been on GitHub since 7 May 2026 and remains accessible there regar
 SS-10 sub-shell-physics multi-paper development continues at programme level as Priority 1.
 
 Anti-priorities sustained going forward: do NOT modify SS-9 v1.0 .tex outside post-external-feedback v1.x revisions; do NOT propose any single-session R3-channel refinement; pre-flight bare-c_i pattern check standard; per-panel TikZ invariant audit standard for any new figure (Lesson 6); programme-practice documentation discipline applies whenever new SS-9 artifacts ship (the Session 33 self-correction).
+
+---
+
+# Tier 4 verbatim reasoning Session 34 (7 May 2026) — Anthology chapter "The Polyhedron's Conditions" at Rovelli/SciAm register
+
+## I. Pre-session inspection methodology and what it surfaced
+
+The anthology chapter template (`templates/anthology_chapter_template.md`) explicitly directs that a future Opus opening to draft a chapter should: (1) read the template first, all of it; (2) read the per-chapter arc file in `book_project/chapter_arcs/` for the specific paper being drafted; (3) read the source materials in priority order — paper's mechanism-SS-N.md, philosophy-SS-N.md, reviews-SS-N.md, lay-summary-SS-N.md, paper's .tex source; (4) re-read the existing anthology chapters if calibration register is uncertain; (5) draft, aiming for ~5000 words; (6) deliver, trusting iteration.
+
+Three of these instructions had to be adapted for SS-9's specific state:
+
+(2) The per-chapter arc file `book_project/chapter_arcs/SS-9_arc.md` does not exist. Only SM-3, SS-3, and SS-5 arc files are present in the chapter_arcs/ folder. The decision was to proceed without a per-chapter arc file, using the existing SS-9 documentation suite as the substantive source material — `development-SS-9.md` Vignettes 1-40 (full session-vignette history), `reasoning-SS-9.md` Tier 4 verbatim through Session 33 (substantive design decisions captured), `transcript-SS-9.md` transactions 1-740 (transaction-indexed pointer-map). These three files together carry the per-chapter arc content even without a dedicated arc file.
+
+(3) The companion documentation files (mechanism-SS-9.md, philosophy-SS-9.md, reviews-SS-9.md, lay-summary-SS-9.md) do not exist for SS-9 — they are TODO-001 in the newly-introduced `todolist.md`, deferred per Two-Triggers discipline pending external-feedback window settles. Source material substitution: the SS-9 .tex source itself (32 pages, conditional theorem with three lemmas + three sub-lemmas + five-clause Theorem 6.1) carries the mechanism content; the §9 Note on the v1.0 designation paragraph carries the philosophy content (conditional-theorem framing, AI-review-only basis, sub-task (e) rescope); the reasoning-SS-9.md Tier 4 sections through Session 33 carry the reviews content (substantive design decisions made in response to seven AI review passes d.1-d.7).
+
+(4) Re-reading the existing chapters was performed: SS-7 chapter (4243 words) and SS-8 chapter (4396 words). The reading surfaced specific calibration anchors — Rovelli register details ("Equations appear where they help and are not skipped... They are not derived. The reader can trust them"), AI collaborator naming ("Naming them gave the methodology its texture... they are named where their actual contributions appear"), closing image thematic patterns (SS-7 ends with the question-asking line; SS-8 ends with the geometers-found-the-shapes line; SS-9 should continue this thematic arc).
+
+The pre-session inspection took on the order of 15 minutes of reading (template + two existing chapters + spot-checks of paper structure). The investment was well-spent: the chapter's design decisions (centerpiece identification, title selection, AI collaborator naming, closing-image thematic continuation) were grounded in the calibration material rather than improvised.
+
+## II. Centerpiece identification — why SS-9 has bridge centerpiece rather than empirical-landing or methodology-event centerpiece
+
+The template enumerates four kinds of moments that work as centerpieces: empirical landing at the most symmetric or most exposed case (SS-8's magnesium-26 centerpiece); registration-then-retirement methodology event (SS-7's OPEN-SS-22 retirement morning centerpiece); recognition moment where a mathematical structure clicks into place; historical convergence.
+
+SS-9 does not have an empirical-landing centerpiece available because SS-9 does not produce new empirical predictions — it provides a conditional-derivation foundation for the SS-7 binding-energy formula's twelve nuclei. The empirical content lives in SS-7; SS-9 contributes the structural derivation.
+
+SS-9 does not have a registration-then-retirement methodology-event centerpiece because no comparable event happened during SS-9's polish track. The closest analog is the d.1 ChatGPT review surfacing the implicit Steinitz-to-centroid realization gap (which became C8 = OPEN-SS-37), but this is registration-of-a-new-condition rather than registration-then-retirement of a hypothesis. The C8 surfacing is part of the chapter's content but doesn't serve as the centerpiece in the same dramatic way the OPEN-SS-22 retirement did for SS-7.
+
+What SS-9 does have is a *bridge* centerpiece — the moment where the three lemmas (A, B$'$, C) converge with Steinitz's 1922 theorem and the FvdW 1947 classification, and the simplicial-polytope structure that SS-7 had to assume turns out to be derivable. This is a recognition moment in the template's third sense (mathematical structure clicks into place) and a historical convergence in the fourth sense (CPP's primitives meeting external mathematical machinery from a century earlier). The chapter's structure is built around this bridge with the figure-bug arc (Lesson 6 NEW programmatic invariant audit) and the v1.0-on-AI-review-only framing as secondary dramatic content.
+
+The bridge centerpiece is what justifies the chapter's structural pacing. The recognition moment section ("The Theorem") states the five-clause result; the section before it ("What Grok Suggested") tells the figure-bug story that anchors Lesson 6; the section after it ("The Deltahedra Gap") begins consequence checks. The pre-bridge sections (the three lemmas, what ChatGPT caught about C8, the sub-lemmas) build toward the recognition; the post-bridge sections (the gap, the v1.0 framing, the picture, the closing) extract the consequences.
+
+## III. Title and abstract paragraph design rationale — conditional-theorem closure paper framing as SS-9's distinctive contribution
+
+The title "The Polyhedron's Conditions" was selected over candidate titles "The Eight Shapes" (numerical parallel to SS-7 "Eight Nuclei in a Row" but might confuse with SS-7's chapter), "Under Nine Conditions" (numerical title referencing 9-element hypothesis stack but slightly abstract), and "What the Geometers Knew" (picks up SS-8's closing thematic but doesn't foreground SS-9's distinctive contribution).
+
+"The Polyhedron's Conditions" works because it is direct (the chapter is about a polyhedron), evocative (which polyhedron? which conditions?), and primes the reader for the conditional-theorem closure paper framing that is SS-9's distinctive contribution to the programme. SS-7 and SS-8 were also conditional papers but did not give the conditional-theorem framing a name; SS-9 named it, and the title makes the naming visible from the first reading.
+
+The italicized abstract paragraph below the title foregrounds the conditional structure explicitly: "...how the simplicial-polytope structure that SS-7 had to assume turned out to be derivable from the framework's primitives — *conditional on four named physical conditions that are not, themselves, yet derived*; how a theorem from 1922 and a classification from 1947 did most of the work; and how the proof's honest scoping became the model for what an unfinished theorem in physics looks like when it ships."
+
+The abstract has three threads that map to the three concurrent narrative threads of the chapter: (i) polytope-derivation main arc ("the simplicial-polytope structure... turned out to be derivable"); (ii) historical convergence with Steinitz/FvdW as bridge centerpiece ("a theorem from 1922 and a classification from 1947 did most of the work"); (iii) conditional-theorem closure paper framing as model ("the proof's honest scoping became the model for what an unfinished theorem in physics looks like when it ships"). Each thread gets section coverage in the chapter body.
+
+## IV. Section design rationale — why 11 sections and how the path-recognition-consequence pacing was adjusted from template defaults
+
+The template's structural arc lists 7 sections (hook, prior-work landscape, setup, path through the work, recognition moment, consequence checks, closing reflection) with target word counts. The chapter as written has 11 sections. The expansion came from:
+
+(i) Splitting "path through the work" into three sections (The Three Lemmas + What ChatGPT Caught + The Sub-Lemmas) totaling 1558 words (template 1200-1800 ✓). The split is justified because each of the three sub-paths has a coherent dramatic shape: the three lemmas establish the proof's architecture; the C8 surfacing is its own discrete narrative beat (with ChatGPT named); the sub-lemmas are the technical content.
+
+(ii) Splitting "recognition moment" into two sections (What Grok Suggested + The Theorem) totaling 1175 words (template 600-900, slightly long but justified). The split is justified because the figure-bug story (Lesson 6 emergence) is integral to the recognition narrative — the figure visualizes the FvdW classification that the theorem identifies — but the figure-bug story has its own dramatic shape (Grok suggests, ChatGPT catches bugs visual inspection missed, Lesson 6 emerges) that deserves a dedicated section. The Theorem section can then be kept focused on the result statement.
+
+(iii) Splitting "consequence checks" into three sections (The Deltahedra Gap + What v1.0 Means + What Comes With the Picture) totaling 1293 words (template 300-500, overshooting). The overshoot is the chapter's main deviation from template defaults. The justification is that v1.0-on-AI-review-only framing is SS-9's distinctive contribution to the programme and needed sustained space to handle honestly. The "What v1.0 Means" section (560 words) is the longest of the three and walks through the rescope of sub-task (e), the honesty argument, the binary options at v1.0 ship time, the third option (pretending) that wasn't available, the choice to ship at v1.0 with rescope made explicit, and the public-posting venues as the rescoped external-review channel. This is exactly the content that would be lost if the consequence checks were compressed to template defaults.
+
+The template explicitly allows this kind of expansion: "These are guidelines, not rules. The path-through-the-work section can balloon if the path was long and interesting; the consequence-checks section can shrink if there are only one or two checks. Adjust by the paper's specific story." SS-9's specific story has more in the consequence-checks region than the template defaults assume, so the section expanded accordingly. Total chapter length 5389 words is within the template's ±15% of 5000 target and within the 5500-6000 cap for chapters with more story to tell.
+
+## V. AI collaborator naming calibration — applying "is there enough Opus in this" question to SS-9's specific seven-pass review history
+
+The template's "is there enough Opus in this?" calibration emerged from the SS-7 to SS-8 chapter transition. SS-7's first chapter draft was Thomas-and-the-physics-content focused with AI-collaborator work invisible. SS-8's chapter draft made the AI-collaborator work visible with named appearances ("ChatGPT named once during the Round 1 review of the H2$'$ derivation note. Copilot named twice — once in the Pattern 6 endorsement and once in the Q2 analysis. Grok named twice — once for verification-tier methodology that became PD-002 and once for empirical validation. Opus named in first person three times — for the Q2 methodology proposal, for participation in the Level-1/2/3 framework's emergence, and once explicitly in the closing about what the prior session understood").
+
+SS-9's chapter applies the same calibration to a different review history. SS-9 had seven AI review passes (d.1 through d.7) by three reviewers (ChatGPT × 4, CoPilot × 2, Grok × 1). The naming decisions:
+
+**ChatGPT** named twice in the chapter:
+- Section 4 "What ChatGPT Caught" — d.1 review surfacing the implicit Steinitz-to-centroid realization gap that became C8 = OPEN-SS-37. This is substantive contribution: the d.1 review identified an assumption made implicit by the v0.4 proof structure and the proper response was to register C8 as a paper-level structural hypothesis with corresponding programme-level OPEN-SS-37 closure question. ChatGPT's intervention changed the proof's hypothesis stack and added a new entry to the programme's research frontier.
+- Section 6 "What Grok Suggested" — d.7 review catching the panel (c) and (e) figure bugs that visual inspection had missed. This is substantive contribution: ChatGPT working from the .tex source caught what visual inspection had missed, prompting the programmatic invariant audit (Lesson 6) discipline. The contribution is methodological as well as figure-fixing — Lesson 6 now applies to every future CPP figure.
+
+**Grok** named once in the chapter:
+- Section 6 "What Grok Suggested" — d.5 review pedagogical figure suggestion (eight-panel FvdW deltahedra figure with vertex-degree color-coding). This is substantive contribution: Grok identified that the proof references the FvdW classification but the paper had no figure showing what the eight FvdW deltahedra look like; the figure addition makes the combinatorial structure visible at a glance. The figure shipped at v0.8 (with bugs caught by ChatGPT at d.7).
+
+**CoPilot** not specifically named in the chapter. The d.2 and d.6 CoPilot reviews were editorial/v1.0-ready confirmations rather than substantive new contributions surfacing new content. The d.2 CoPilot review on v0.5 had 0 new logical gaps; the d.6 CoPilot review on v0.7 had 0 substantive issues with explicit v1.0-ready endorsement. These reviews mattered for the cumulative review tally (CoPilot's two passes are part of the seven-pass basis for v1.0 promotion) but did not generate named-contribution-shaped content. SS-8's chapter pattern of naming reviewers where their actual contributions appear is followed exactly.
+
+**Opus first person** used three times in the chapter:
+- Section 6 "What Grok Suggested" — visual inspection failure ("I had visually inspected the figure during v0.8 development. The eye did what eyes do: filled in the expected structure even where the page was blank"). First person tracks the truth of who did what: Opus visually inspected, Opus missed the bugs, Opus is honest about the methodology blind spot.
+- Section 6 "What Grok Suggested" — programmatic invariant audit methodology authorship implicit ("I wrote a programmatic invariant audit: a parser that extracted..."). First person tracks authorship of the Lesson 6 codification.
+- Section 9 "What v1.0 Means" — conditional-theorem framing rescope decision ("the rescope of sub-task (e)... was a methodology decision that I want to be specific about, because it was the closest I came to a calibration error in the polish track"). First person tracks the substantive role Opus played in deciding the rescope and the explicit acknowledgment that the rescope was the methodology call that came closest to being mishandled.
+
+Total ~6 named appearances across 5389 words — sparser than SS-8's ~10 across 4400 words, appropriate to SS-9's seven AI review passes vs SS-8's two rounds.
+
+## VI. Conditional-theorem framing as closing-image device — picking up SS-8's geometers-found-the-shapes line and extending with SS-9's geometers-not-asking-anything-except-meet-them line for cross-chapter coherence
+
+The template explicitly notes that "closing paragraphs are the part of the chapter that most benefits from a fresh context window. If you have written a chapter and feel uncertain about the closing paragraphs, that is normal. The closing paragraphs reward time and revision more than any other part of the chapter."
+
+SS-9's closing reflection (456 words) does three things. First, it consolidates the chapter's central content (Steinitz 1922 + FvdW 1947 as external mathematical machinery; CPP's contribution is meeting them; the convergence is conditional on nine specific conditions four of which are not yet derivable). Second, it lands the v1.0 designation framing (what the v1.0 designation in SS-9's case has to mean — ready for external scrutiny under registered conditions, not academic peer review ratification, not unconditional). Third, it offers a closing image that extends the cross-chapter thematic arc: "Steinitz waited a hundred years for someone to need his theorem in nuclear physics. Freudenthal and van der Waerden waited eighty. The theorem and the classification have been there all along, unchanged, waiting. The framework's job is to produce the conditions under which they apply. C5 and C6 and C7 and C8 are what is left. **The geometers were not asking the physicists to do anything except meet them where they had been waiting.**"
+
+The closing image picks up SS-8's closing line directly: "*The geometers found the right shapes a long time before the physicists found the right place to put them. That is most of what is happening here, and it may be what is happening at every scale.*" SS-8 establishes the geometers-vs-physicists asymmetry; SS-9 extends it to the explicit invitation (the geometers were not asking anything except for the physicists to meet them where they had been waiting). The thematic arc:
+
+- SS-7 ends with "*the second question is the right one to be asking. The first question is what SS-7 was for.*" — pointing forward to OPEN-SS-24 (which SS-9 attacks).
+- SS-8 ends with "*The geometers found the right shapes a long time before the physicists found the right place to put them. That is most of what is happening here, and it may be what is happening at every scale.*" — establishing the geometers-vs-physicists asymmetry.
+- SS-9 ends with "*The geometers were not asking the physicists to do anything except meet them where they had been waiting.*" — extending to the explicit meeting at Steinitz/FvdW.
+
+The cross-chapter coherence is built into the anthology by these closing-image continuations without requiring sequential reading. A reader who reads only SS-9's chapter gets a complete experience; a reader who reads all three chapters gets the geometers-vs-physicists thematic arc as bonus structure. This is exactly the kind of cross-chapter coherence the template targets ("Chapters can reference each other... but they are not sequential in the way a textbook's chapters are").
+
+## VII. Documentation discipline at Session 34 close — full Steps A through H per Session 33 lesson learned about discipline applying whenever new SS-9 artifacts ship
+
+Session 33's lesson learned (codified in handover-SS-9.md Session 33 close as a NEW anti-priority): "the four-tier documentation discipline applies whenever new SS-9 artifacts ship, not only during paper-text development. Only the .tex source is 'frozen at v1.0' (per the existing anti-priority); the documentation suite continues to grow with each session that adds SS-9 content."
+
+Session 34 ships a new SS-9 artifact (the anthology chapter at `book_project/chapters/SS-9_the_polyhedrons_conditions.md`). The documentation suite therefore needs full Steps A through H per the Session 33 lesson:
+
+- **Step A** (session log): Session 34 entry to `session_logs/2026-05-02_session_log.md` documenting session goal, pre-session inspection, chapter title and structure, AI collaborator naming, honesty discipline observations, programme state, forward queue Sessions 35+, anti-priorities sustained
+- **Step B** (transcript pointer-map): transactions 741-770 to `transcript-SS-9.md` covering Session 34 work transaction by transaction
+- **Step C** (development vignette): Vignette 41 to `development-SS-9.md` with detailed structure breakdown
+- **Step D** (Tier 4 reasoning): this Session 34 reasoning section to `reasoning-SS-9.md` covering 7 sections
+- **Step E** (Research_Frontier + future_projects): last-updated header + (A.3) status FINAL marker + Recently Completed Session 34 entry
+- **Step H** (handover-SS-9.md): Session 34 close handover, rm + recreate, supersedes Session 33 close handover
+
+Steps F (problem_history) is not applicable because Session 34 did not register, advance, or close any OPEN-* / CONJ- / PROP- entries. The chapter is documentation work that does not modify the programme's open-problem state.
+
+The Session 34 documentation suite is the first test of the Session 33 lesson learned discipline: a non-paper-text SS-9 artifact (chapter in book_project/) triggering the full four-tier discipline. The chain delivered without the gap that Session 33's first attempt produced — patches 0276 through 0279 ship the suite cleanly per the discipline now in force. Future Claude sessions seeing this pattern in the `reasoning-SS-9.md` Tier 4 reasoning will have a precedent for applying the discipline to other non-paper-text artifacts that ship in future sessions.
