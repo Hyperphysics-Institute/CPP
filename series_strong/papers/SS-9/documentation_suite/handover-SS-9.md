@@ -1,13 +1,13 @@
 # SS-9 Handover Document — Session 35 Close (7 May 2026)
 
-**Paper**: `series_strong/papers/SS-9/SS-9_alpha_cluster_simplicial_polytope_derivation.tex`
+**Paper**: `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`
 **Status**: **v1.0 SHIPPED** (sub-task (e) RESCOPED to open invitation post-v1.0 ship via public posting; cumulative seven-pass review tally with d.6 + d.7 explicit v1.0-ready endorsements). Programme practice introduced Session 33: four-tier documentation discipline applies whenever new SS-9 artifacts ship. **.tex source frozen at v1.0 per anti-priority**. **Documentation suite ACTIVE — Session 34 added the anthology chapter at `book_project/chapters/SS-9_the_polyhedrons_conditions.md` (~5389 words at Rovelli/SciAm register); Session 35 added the TATWD integration to `CPP_the_theory.md` (NEW Chapter 22c parallel to Chapter 22b for SS-8, NEW Chapters 32-35 for the four sub-conditions, plus targeted updates to Chapters 21, 22b, 30) and `book_project/TATWD_outline_revised.md` (Chapter 11 expansion, Chapter 15 inventory update, source-materials table updates).**
 
 ---
 
 ## Status as of Session 35 close
 
-**Paper**: SHIPPED at v1.0 (Session 32 close). The .tex file at `series_strong/papers/SS-9/SS-9_alpha_cluster_simplicial_polytope_derivation.tex` carries the conditional theorem closure paper as v1.0 with sub-task (e) rescoped. **Per the SS-9 v1.0-ship anti-priority, the .tex source itself is FROZEN at v1.0 unless and until external feedback (post-public-posting) prompts a v1.x revision.**
+**Paper**: SHIPPED at v1.0 (Session 32 close). The .tex file at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` carries the conditional theorem closure paper as v1.0 with sub-task (e) rescoped. **Per the SS-9 v1.0-ship anti-priority, the .tex source itself is FROZEN at v1.0 unless and until external feedback (post-public-posting) prompts a v1.x revision.**
 
 **SS-9 documentation suite**: ACTIVE, not frozen. Sessions 33 + 34 + 35 each added new SS-9 artifacts at progressively wider registers — Session 33 added supplemental documentation (Step C Vignette 40 + Step B/D transcript 711-740 + Tier 4 reasoning Session 33) plus introduced the `todolist.md` programme practice; Session 34 added the anthology chapter at Rovelli/SciAm register (`book_project/chapters/SS-9_the_polyhedrons_conditions.md`, ~5389 words); Session 35 added the TATWD integration (master technical narrative + popular-science book outline). The four-tier documentation discipline applies whenever new SS-9 artifacts ship — only the .tex source is "frozen at v1.0," not the documentation suite. This was the explicit lesson from Session 33's self-correction; Session 34 was the first test of the discipline; **Session 35 is the second test, confirming the pattern is stable across artifact types** (Session 34 = new-file artifact; Session 35 = existing-file-modification + new-chapters-within-existing-files).
 
@@ -103,7 +103,7 @@ Or via `cpp-apply` shell function if defined in `~/.bashrc`. Patches must apply 
 
 ## Key file paths post-Session 35
 
-- **Paper (v1.0 frozen)**: `series_strong/papers/SS-9/SS-9_alpha_cluster_simplicial_polytope_derivation.tex` (.tex frozen per anti-priority; .pdf compiled via three-pass pdflatex+bibtex)
+- **Paper (v1.0 frozen)**: `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` (.tex frozen per anti-priority; .pdf compiled locally via three-pass pdflatex+bibtex during Session 32 v1.0 ship but NOT yet committed to the repo — see TODO-002 in `todolist.md` for the SS-8 + SS-9 PDF compile-and-commit hygiene gap that is a posting prerequisite)
 - **Anthology chapter (Session 34)**: `book_project/chapters/SS-9_the_polyhedrons_conditions.md` (~5389 words at Rovelli/SciAm register)
 - **Master theory document (Session 35 NEW Chapter 22c + Chapters 32-35)**: `CPP_the_theory.md` (516 lines; Part VI Alpha-Cluster Regime now contains Chapters 21 + 22 + 22b + 22c covering SS-7 + retirement + SS-8 + SS-9; Part VII Open Problems now contains Chapters 23-35 with Chapter 30 OPEN-SS-24 ADVANCED → CLOSED and Chapters 32-35 for the four new sub-conditions)
 - **Book outline (Session 35 expansions)**: `book_project/TATWD_outline_revised.md` (Chapter 11 description expanded; Chapter 15 open-problems inventory updated; source-materials table expanded)

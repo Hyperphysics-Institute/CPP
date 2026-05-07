@@ -35,13 +35,14 @@ A new item belongs here (rather than in `future_projects.md`) if it's: small eno
 **Why deferred**: Two-Triggers discipline (`templates/paper_completion_checklist.md` lines 35-48): default to deferring Trigger 2 until paper is unambiguously done. SS-9's sub-task (e) was rescoped to "open invitation post-v1.0 ship via public posting," creating a built-in feedback pipeline that may produce v1.x. Producing 7 companion files now risks needing to redo them. The OPEN-SS-22 retirement experience (SS-7 v1.1 → v1.2) is the precedent.
 **Registered**: 7 May 2026 Session 33 close.
 
-### TODO-002 — SS-8 PDF compile
+### TODO-002 — SS-8 and SS-9 PDF compile (posting prerequisite)
 
-**Status**: HYGIENE GAP
-**Issue**: `series_strong/papers/SS-8/` has `SS-8_interstitial_neutron_2EV_scaling.tex` but no `.pdf`. SS-7 has both .tex and .pdf; SS-9 has both. SS-8 is missing Phase 6 of the paper production pipeline.
-**Deliverable**: Three-pass `pdflatex` + `bibtex` build of SS-8 v1.0; commit `.pdf` to repo at `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.pdf`. Verify against `paper_catalog.md` SS-8 row (currently shows v1.0 OSF pending).
-**Estimated effort**: 1 small patch (~15 minutes Claude work + Thomas apply chain).
-**Registered**: 7 May 2026 Session 33 close.
+**Status**: HYGIENE GAP — also a TODO-007 (public posting) prerequisite
+**Issue**: Two papers are missing their `.pdf` artifacts in the repo despite having been compiled locally during their respective ship sessions. (a) `series_strong/papers/SS-8/` has `SS-8_interstitial_neutron_2EV_scaling.tex` but no `.pdf`; SS-8 has v1.0 OSF pending per `paper_catalog.md` but the PDF was never committed. (b) `series_strong/papers/SS-9/` has `SS-9_simplicial_alpha_polytope_connectivity.tex` but no `.pdf`; `paper_catalog.md` describes SS-9 as "32 pages compiled, three pdflatex passes zero errors after pass 3" referring to the local Session 32 v1.0 ship compile, but `git log --all` shows the PDF was never committed. (Compare SS-7 which has both `SS-7_alpha_cluster_edge_formula.tex` AND `SS-7_alpha_cluster_edge_formula.pdf` in the repo.) **The original TODO-002 entry in this file at Session 33 close incorrectly stated "SS-9 has both .tex and .pdf" — that was an error caught Session 36.** Both PDFs are posting prerequisites since OSF and arXiv submissions both require PDF.
+**Deliverable**: Three-pass `pdflatex` + `bibtex` build of SS-8 v1.0 AND SS-9 v1.0; commit both `.pdf` files to the repo at `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.pdf` and `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.pdf`. Verify against `paper_catalog.md` rows (currently both show v1.0 OSF pending).
+**Estimated effort**: 1 small patch from Thomas's local environment (~15 minutes for both PDFs combined; pdflatex not available in Claude's sandbox so this is a Thomas action).
+**Apply chain when ready**: `git add series_strong/papers/SS-8/*.pdf series_strong/papers/SS-9/*.pdf && git commit -m "TODO-002 cleared: SS-8 + SS-9 PDF compile and commit" && git push origin main`. No format-patch chain needed — single direct commit + push from Thomas's local repo.
+**Registered**: 7 May 2026 Session 33 close; **scope corrected** 7 May 2026 Session 36 patch 0285 to include SS-9.
 
 ### TODO-003 — Tier 4 reasoning recovery for chat window `a49b320e` (March 19 – April 6, 2026)
 
