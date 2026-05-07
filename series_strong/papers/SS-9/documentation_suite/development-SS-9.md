@@ -1143,3 +1143,23 @@ UNCHANGED from Session 32 close (registers freeze is documentation-and-bookkeepi
 **(A.3) status FINAL**: anthology chapter Session 34 PLANNED → DONE.
 
 **Forward queue**: Session 35 TATWD integration as C4 closure on refined-C1 foundation; public posting timing at Thomas's discretion. `todolist.md` P1 items unchanged.
+
+---
+
+## Vignette 42 — Session 35: TATWD integration of SS-9 v1.0 into CPP_the_theory.md and TATWD_outline_revised.md (7 May 2026, Session 35)
+
+**Session goal.** Track 2 of paper completion sequence per (A.4) registered Session 33: integrate SS-9 v1.0 into the *Tetrahedrons All the Way Down* main book project at the master technical narrative level (CPP_the_theory.md) and the popular-science book outline level (TATWD_outline_revised.md). Single dedicated session.
+
+**Pre-session inspection** of `CPP_the_theory.md` (478 lines, identified Chapter 21 + 22 + 22b + 30 as integration points), `book_project/TATWD_outline.md` (126 lines, original), `book_project/TATWD_outline_revised.md` (185 lines, canonical, identified Chapter 11 + 15 as integration points), `book_project/development_transcript_TATWD_framing.md` (110 lines, 20 April 2026 framing decisions). Surfaced the integration architecture: SS-9 needs new Chapter 22c in Part VI parallel to Chapter 22b for SS-8, plus new Chapters 32-35 in Part VII for the four sub-conditions, plus targeted updates to Chapters 21, 22b, 30.
+
+**CPP_the_theory.md changes**: Last-updated bumped to 7 May 2026; Chapter 21 new paragraph "The C4 framing as of SS-9 v1.0" updates C4 from modeling hypothesis to conditional theorem; Chapter 22b paragraph corrected (SS-9 did not pursue alpha-deuteron line, attacked OPEN-SS-24 directly); NEW Chapter 22c (~24 lines, 8 paragraphs covering proof architecture, bridge centerpiece, four sub-conditions, deltahedra-gap, v1.0 ship basis, Lesson 6, OPEN-SS-22 retirement vs conditional closure relation, anthology integration); Chapter 30 ADVANCED → CLOSED with conditionalization; NEW Chapters 32-35 for OPEN-SS-29/30/33/37 (C5/C6/C7/C8 sub-conditions). File grew 478 → 516 lines (+38 lines, ~2200 words new content).
+
+**TATWD_outline_revised.md changes**: Last-updated bumped to 7 May 2026; Chapter 11 description expanded to note SS-9's C4 derivation; Chapter 15 inventory updated with OPEN-SS-22 retirement + OPEN-SS-24 conditional closure + OPEN-SS-29/30/33/37 sub-conditions; source-materials table Chapter 11 expanded to SS-7 v1.2 + SS-8 + SS-9 with anthology chapter as PL-summary dependency, Chapter 15 row expanded with OPEN-SS-29/30/33/37 + problem_histories audit trail. File grew 185 → 185 lines (in-place text expansion, no new lines).
+
+**Programme effect**: SS-9 v1.0 is now fully integrated at three levels — paper text (frozen at v1.0 per anti-priority), anthology chapter (Session 34 at Rovelli/SciAm register, `book_project/chapters/SS-9_the_polyhedrons_conditions.md`, ~5389 words), and master theory document + book outline (Session 35 at master-narrative + popular-science registers, this session). The conditional-theorem framing that emerged from SS-9's ship is documented as a programme methodology pattern in CPP_the_theory.md Chapter 22c and TATWD Chapter 15.
+
+**(A.4) status FINAL**: TATWD integration Session 35 PLANNED → DONE.
+
+**Forward queue**: Public posting timing PENDING Thomas's discretion (Option A post now / Option B wait — both options now available since Sessions 34 + 35 complete). `todolist.md` P1 items TODO-001 through TODO-006 carried forward unchanged. Next paper SS-10 does NOT start until P1 empty.
+
+**Documentation discipline at Session 35 close**: Second test of Session 33 lesson learned discipline (non-paper-text SS-9 artifact triggering full Steps A through H). Steps A (this session log entry) + B (transcript transactions 771-790) + C (this Vignette 42) + D (Tier 4 reasoning Session 35) + E (Research_Frontier last-updated header for Session 35 + future_projects (A.4) FINAL + Session 35 Recently Completed entry) + H (handover-SS-9.md updated to Session 35 close, supersedes Session 34 close handover patch 0279).

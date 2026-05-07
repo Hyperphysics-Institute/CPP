@@ -3244,3 +3244,46 @@ UNCHANGED from Session 33 close. Programme negative-result count: 12. SS sector 
 - Per-panel TikZ invariant audit standard for any new figure (Lesson 6).
 - Programme-practice documentation discipline: four-tier discipline applies whenever new SS-9 artifacts ship — Session 34 chapter is an SS-9 artifact, so Session 34 documentation suite (this entry + Vignette 41 + transcript transactions 741+ + reasoning Session 34 + handover-SS-9.md updated to Session 34 close) is shipped per discipline.
 - All Phase 4–11 anti-priorities remain in force.
+
+---
+
+# Session 35 — TATWD integration: SS-9 v1.0 conditional theorem closure of OPEN-SS-24 integrated into CPP_the_theory.md and TATWD_outline_revised.md (7 May 2026)
+
+**Session goal.** Track 2 of paper completion sequence per (A.4) registered Session 33: integrate SS-9 v1.0 into the *Tetrahedrons All the Way Down* main book project. The integration spans two artifacts at different registers: `CPP_the_theory.md` (master technical narrative — the complete theory in connected prose) and `book_project/TATWD_outline_revised.md` (popular-science book outline aimed at general readers). Single dedicated session.
+
+**Pre-session inspection done.** Read four required pre-session sources per the (A.4) registration: `CPP_the_theory.md` (478 lines, identified Chapter 21 SS-7 content + Chapter 22 OPEN-SS-22 retirement + Chapter 22b SS-8 + Chapter 30 OPEN-SS-24 entry as integration points); `book_project/TATWD_outline.md` (126 lines, original outline); `book_project/TATWD_outline_revised.md` (185 lines, canonical revised outline at 18 chapters across 5 parts, identified Chapter 11 "Eight Nuclei in a Row" and Chapter 15 "What Is Still Open" as integration points); `book_project/development_transcript_TATWD_framing.md` (110 lines, 20 April 2026 framing decisions — biographical-religious-physical posture settled). The pre-session inspection took ~15 minutes and surfaced the integration architecture: SS-9 needs a new chapter in Part VI of CPP_the_theory.md (parallel to Chapter 22b for SS-8), plus four new chapters in Part VII for the new sub-conditions, plus updates to existing Chapter 30 (OPEN-SS-24) and minor updates to Chapter 21 (C4 framing) and Chapter 22b (correct the now-inaccurate SS-9 alpha-deuteron speculation).
+
+## CPP_the_theory.md updates (substantive)
+
+**Chapter 21 update — C4 framing**: The "hostile-geometry stress test" final paragraph received a new follow-on paragraph ("The C4 framing as of SS-9 v1.0") that updates C4 from "modeling hypothesis, not a theorem" to "conditional theorem under SS-9 with four new sub-conditions C5/C6/C7/C8 named." The new paragraph points forward to Chapter 22c for the full integration narrative. The C4-as-modeling-hypothesis framing in the original paragraph is preserved as historical context (SS-7's original framing) before being updated.
+
+**Chapter 22b update — SS-9 alpha-deuteron correction**: The "cascade across three nuclear scales" final paragraph contained speculation that SS-9 might pursue alpha-deuteron contact extension as a fourth-scale K₃ recurrence test (with preliminary ⁶Li residual binding 1.47 MeV vs. predicted 2*B_pair/3 ≈ 1.56 MeV, 6% match). This speculation did not materialize — SS-9 went the C4-derivation direction instead. The paragraph now correctly notes that SS-9 attacked OPEN-SS-24 directly while the alpha-deuteron line remains a candidate target for SS-10 or beyond.
+
+**NEW Chapter 22c**: Inserted between Chapter 22b and the Part VI/VII separator. ~24 lines, 8 substantive paragraphs covering the proof architecture (five-clause Theorem 6.1 with three lemmas + three sub-lemmas), the bridge centerpiece to Steinitz 1922 + FvdW 1947, the four new sub-conditions C5/C6/C7/C8 mapped to OPEN-SS-29/30/33/37 = Chapters 32-35 below, the deltahedra-gap at $N_\alpha \in \{11, 13, 14\}$ as OPEN-SS-31 scope-extension target, the v1.0 ship basis on seven AI review passes with sub-task (e) rescope, Lesson 6 programmatic invariant audit as derived programme-level methodology, the relation to OPEN-SS-22 retirement vs conditional closure as two distinct methodological postures, and the anthology and book integration noting parallel chapter at `book_project/chapters/SS-9_the_polyhedrons_conditions.md`.
+
+**Chapter 30 update — OPEN-SS-24 transition**: Updated from raw OPEN to "ADVANCED → CLOSED conditionally under SS-9" with conditionalization to four new sub-condition closure questions OPEN-SS-29/30/33/37 registered as Chapters 32-35 below. The original three physical intuitions (already in SS-7 §2.1) are noted as now formalized in SS-9's three lemmas plus three sub-lemmas. Complete narrative integration referenced at Chapter 22c.
+
+**NEW Chapters 32-35**: Added between Chapter 31 (OPEN-SS-25) and Part VIII (Prediction Scorecard), one per new sub-condition. Chapter 32 OPEN-SS-29 (C5 ground-state energy minimization). Chapter 33 OPEN-SS-30 (C6 cluster surface-realization). Chapter 34 OPEN-SS-33 (C7 contact-graph planarity, ADVANCED to "conditionally closed modulo H4 + H5"). Chapter 35 OPEN-SS-37 (C8 FvdW centroid-realizability with four candidate closure routes a/b/c/d).
+
+**Last-updated header**: bumped from "21 April 2026" to "7 May 2026" with Session 35 description.
+
+## TATWD_outline_revised.md updates (substantive)
+
+**Chapter 11 "Eight Nuclei in a Row"**: description expanded to note SS-9's conditional first-principles derivation of C4 from CPP primitives plus four named structural conditions, with Steinitz's 1922 theorem and FvdW's 1947 classification appearing in the bridge. The chapter notes the SS-9 derivation in its closing paragraphs without digressing into proof structure; the full SS-9 story has its own anthology chapter "The Polyhedron's Conditions." SS-8 third-scale K₃ recurrence touched on as part of the cascade picture.
+
+**Chapter 15 "What Is Still Open"**: open-problem inventory updated — OPEN-SS-22 noted as retired one day after registration as an isotope-selection artifact (the programme's first registered-then-retired open problem and a methodology event of its own); OPEN-SS-24 noted as conditionally closed by SS-9 in May 2026 under nine specific structural conditions, with four new sub-conditions C5/C6/C7/C8 registered as OPEN-SS-29/30/33/37 — the new programme-level closure questions for the post-SS-9 frontier. Conditional-theorem framing introduced as a programme methodology pattern (register what is conditional, name the sub-conditions, ship under registered hypotheses, let sub-conditions become the next-decade research frontier). Chapter closes loop on registration-then-retirement and conditional-closure transitions as evidence of methodology working, not as failures of theory.
+
+**Source-materials table**: Chapter 11 row expanded from "SS-7 v1.1" alone to "SS-7 v1.2 (alpha-chain main result), SS-8 (interstitial-neutron 2E/V scaling at the third K₃ scale), SS-9 (conditional polytope-derivation grounding for the SS-7 formula via Steinitz 1922 + FvdW 1947)" with PL-summary dependencies updated. Chapter 15 row expanded to include explicit reference to OPEN-SS-29/30/33/37 from the SS-9 sub-conditions plus `problem_histories/PH-OPEN-SS-22.md` and `PH-OPEN-SS-24.md` as audit-trail sources.
+
+**Last-updated header**: bumped from "20 April 2026" to "7 May 2026" with Session 35 description.
+
+## Programme state at Session 35 close
+
+UNCHANGED in the technical sense (no new theorems, no new empirical predictions, no programme-state counters changed). The SS-9 conditional theorem closure of OPEN-SS-24 was already shipped at v1.0 (Session 32) and Track 3 freezing of registers happened at Session 33; Session 35 is the *narrative integration* of SS-9 into the master theory document and book outline. Programme negative-result count UNCHANGED at 12. SS sector problem count UNCHANGED at 19 (the four new OPEN-SS-29/30/33/37 entries are not new at Session 35 — they were registered at Session 32 v1.0 ship; Session 35 just adds them to the master document narrative). OPEN-SS-37 closure-route count UNCHANGED at 4. SS-9 SHIPPED at v1.0 (.tex untouched per anti-priority).
+
+## Forward queue Sessions 36+
+
+- **(A.4) status**: PLANNED Session 35 → DONE Session 35.
+- **Public posting timing**: at Thomas's discretion. The OSF/arXiv guide (`series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md`) provides the operational protocol. With Sessions 34 (anthology chapter) and 35 (TATWD integration) now both complete, the "Option B wait until anthology + TATWD complete to present a fuller programme picture at posting time" trade-off is now available — Thomas can either post immediately (Option A, lock priority date) or wait until further programme work (Option B, present fuller picture). TODO-007 remains P2 in `todolist.md`.
+- **`todolist.md` P1 items**: TODO-001 through TODO-006 carried forward unchanged. Next paper SS-10 does NOT start until P1 empty.
+- **Anti-priorities sustained** including programme-practice documentation discipline (Session 35 is second test of Session 33 lesson learned discipline — non-paper-text SS-9 artifact (the master-document integration) triggering full Steps A through H) and `todolist.md` discipline.
