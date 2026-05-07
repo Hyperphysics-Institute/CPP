@@ -827,3 +827,118 @@ What the protocol *didn't* deliver: a third class of substantive issue caught by
 **Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. OPEN-SS-37 REGISTERED preserved. No new OPEN-SS-* registration this session. SS sector problem count UNCHANGED at 19. SS-9 at v0.7. **v0.7 represents the cleanest formal state of the conditional theorem after three rounds of substantive AI review.** Per ChatGPT d.3 verdict, v0.7 is "v1.0-ready as a conditional closure paper" modulo external human review.
 
 **Forward priority for Session 31+.** Sub-task (e) external review on v0.7 .tex source via reviewer-response protocol (`templates/operating_system.md` §4 Phase 4). Submit raw GitHub URL to a human domain-expert reviewer (nuclear physics / alpha-cluster theory). Best case: external reviewer agrees → v0.7 → v1.0 ship. Likely case: external reviewer surfaces 1–3 issues mixing substantive and editorial → v0.7 → v0.8 incorporation cycle. In parallel: continued investigation of OPEN-SS-37 closure routes (especially route (a) facet (b) sufficiency derivation); SS-10 sub-shell-physics multi-paper development continues as parallel Priority 1 at programme level.
+
+---
+
+## Vignette 38 — Session 31 v1.0 polish sub-tasks (d.5) Grok v0.7 review + (d.6) CoPilot v0.7 close + Route (d) registration; eight-panel FvdW deltahedra figure added; SS-9 v0.7 → v0.8 (6 May 2026, Session 31)
+
+**Session goal.** Process three independent v0.7 AI reviews (ChatGPT d.4 cache-resolution diagnostic; Grok d.5; CoPilot d.6); incorporate Grok's substantive items as v0.7 → v0.8; register Route (d) for OPEN-SS-37 per ChatGPT d.4 forward-looking suggestion.
+
+**Three independent v1.0-ready verdicts.**
+
+| Reviewer | Verdict | Substantive issues |
+|----------|---------|---------------------|
+| ChatGPT (post-cache-bust, d.4) | "review-clean as a conditional closure paper... promote v0.7 to v1.0 conditional theorem status, pending external/human domain review only" | 0 (Route (d) as forward suggestion) |
+| Grok (d.5) | "Ship as v1.0 after the title/version update and optional figure" | 1 must-fix, 1 housekeeping, 1 figure, 1 cohesion, 1 no-change |
+| CoPilot (d.6) | "v0.7 is mathematically clean, structurally consistent, and ready for external human review as a v1.0-candidate. No further mathematical or structural edits are required" | 0 |
+
+**Sub-task (d.4) ChatGPT v0.7 cache-resolution diagnostic.** ChatGPT's first re-review of v0.7 surfaced "issues" already fixed in v0.7 (stale-context error). Cache-bust diagnostic via web_fetch confirmed GitHub URL serves v0.7 correctly; ChatGPT had cached v0.6. After URL cache-bust query parameter, ChatGPT's revised verdict matched the actual v0.7 content. Sub-task (d.4) closes with **zero v0.7 paper changes**. Cache-effect lesson: future review submissions should include `?cachebust=YYYYMMDD-vX.Y` on raw GitHub URLs to force fresh retrieval.
+
+**Sub-task (d.5) Grok v0.7 review.** Grok was previously suspended (programme history) for vocabulary contamination from an older co-developed framework. Re-engaged for d.5; the review showed **no vocabulary contamination** — terminology was appropriate, math was sound, the must-fix Grok identified was real. Re-engagement successful for this round.
+
+**Per-symmetric-honesty assessment of Grok's five points.**
+
+1. **Title block fix** (must-fix, ACCEPTED). Verified line 770 read "Version 0.1 — 6 May 2026 (initial typeset draft from v0.3 working draft)" despite seven version bumps. CHANGELOG comment-header was updated each version but `\title` was forgotten. Real bug; visible in compiled PDF title page. Fix: updated to "Version 0.8 — 6 May 2026 (v1.0 polish sub-task d.5: Grok v0.7 review incorporation, sub-task d.6: CoPilot v0.7 close)".
+
+2. **Bibliography cleanup** (housekeeping, ACCEPTED). Verified `\bibitem{ss10_forthcoming}` exists in bibliography but is never `\cite{}`-d in body. Removed unused entry.
+
+3. **FvdW deltahedra figure** (pedagogical, ACCEPTED — Thomas approved at this version). Eight-panel figure added.
+
+4. **Facet (b) cross-reference** (cohesion, ACCEPTED). Verified §6 facet (b) "TBD mechanism" remark lacks forward pointer to existing AMD/Brink–Bloch testability discussion in §9. Added `\S\ref{sec:gaps}` cross-reference.
+
+5. **Roadmap final sentence** (no-change, NO-OP). Explicit endorsement from Grok itself.
+
+**Sub-task (d.6) CoPilot v0.7 close.** CoPilot delivered explicit v1.0-ready endorsement with zero substantive issues. Sub-task closes with no incorporation work.
+
+**Eight-panel FvdW deltahedra figure (NEW at v0.8).**
+
+The figure visualizes the central pedagogical claim of clause (iv): the eight Freudenthal–van der Waerden convex deltahedra at $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ classify simplicial alpha-cluster geometries.
+
+| Panel | $\Nalpha$ | Polyhedron | $|E|$ | Vertex degrees |
+|-------|-----------|------------|-------|----------------|
+| (a) | 4 | Tetrahedron | 6 | $\{3^4\}$ |
+| (b) | 5 | Triangular bipyramid | 9 | $\{3^2, 4^3\}$ |
+| (c) | 6 | Octahedron | 12 | $\{4^6\}$ |
+| (d) | 7 | Pentagonal bipyramid | 15 | $\{4^5, 5^2\}$ |
+| (e) | 8 | Snub disphenoid | 18 | $\{4^4, 5^4\}$ |
+| (f) | 9 | Triaugmented triangular prism | 21 | $\{4^3, 5^6\}$ |
+| (g) | 10 | Gyroelongated square bipyramid | 24 | $\{4^2, 5^8\}$ |
+| (h) | 12 | Icosahedron | 30 | $\{5^{12}\}$ |
+
+Color-coding: green = degree 3 (3 face-coincidences); cyan = degree 4 (strict-C1 hosted); red = degree 5 (requires facet (b) at $\Nalpha \geq 7$). Panels (a)–(d) and (h) are Schlegel diagrams; panels (e)–(g) are simplified topological schematics indicating the correct vertex degree distribution and approximate edge structure.
+
+**Pedagogical takeaway.** As $\Nalpha$ grows from 4 to 12, the vertex degree distribution shifts from all-degree-3 (tetrahedron) to all-degree-5 (icosahedron). Degree-5 vertices first appear at $\Nalpha = 7$ (pentagonal bipyramid apices), which is exactly the threshold where strict-C1 (each alpha presenting four outer faces) cannot host the contact pattern, and refined-C1 facet (b) becomes load-bearing. The figure makes the facet (b) necessity visually obvious.
+
+**Implementation.** TikZ figure embedded inline in the .tex source. Added `\usepackage{tikz}` and `\usetikzlibrary{positioning,calc}` to preamble. Vertex coordinates and edge lists hand-specified for each panel; Schlegel diagrams (a–d, h) are topologically accurate; topological schematics (e–g) preserve vertex count and degree distribution but use simplified edge structure for visual clarity.
+
+**Stability.** The figure captures static mathematical objects (the eight FvdW deltahedra and their topological invariants); no expected change post-external-review unless reviewer specifically requests redrawing.
+
+**Route (d) registration for OPEN-SS-37.**
+
+Per ChatGPT d.4 forward-looking suggestion. Reframes C8 (FvdW centroid-realizability) as a question in recognized mathematical programmes:
+
+- **Euclidean distance matrix (EDM) theory** — Cayley–Menger determinant conditions provide algebraic characterization of realizability in $\mathbb{R}^k$. C8 becomes: given fixed contact distances $\Raa$ on the FvdW contact graph, do the Cayley–Menger conditions admit a $\mathbb{R}^3$ realization at each FvdW $\Nalpha$?
+
+- **Rigidity theory** (Maxwell–Cremona, Asimow–Roth). FvdW deltahedra all satisfy $|E| = 3\Nalpha - 6$ exactly — the minimally-rigid boundary case in $\mathbb{R}^3$. C8 becomes the question of whether alpha cluster physics specifically picks the FvdW realization rather than another minimally-rigid embedding.
+
+- **Alpha complexes** (Edelsbrunner et al., 1995). Alpha cluster centroid configurations have natural alpha-complex structure. C8 becomes: do physical constraints (rigid packing + C2 face-coincidences) force this alpha complex to be combinatorially equivalent to the FvdW deltahedron?
+
+- **Realization spaces** (Mnëv's universality theorem, Richter-Gebert). Polytope realization spaces provide the broader framework for asking whether a combinatorial polytope structure has a unique geometric realization (modulo isometry).
+
+**Strategic value.** Routes (a)–(c) approach C8 from inside the SS-9 / CPP framework. Route (d) connects C8 to recognized mathematical programmes external to the CPP project. Two benefits: (i) recognized mathematical machinery may directly apply (closure of C8 may follow as corollary of existing theorem); (ii) programme legibility for external review (sub-task (e) reviewers with backgrounds in computational geometry / mathematical physics may immediately recognize the question and provide pointers to relevant literature).
+
+OPEN-SS-37 closure routes count: 3 → 4. No paper change; registry-only update to `problem_histories/PH-OPEN-SS-37.md`.
+
+**Symmetric-honesty observation across the d.4+d.5+d.6 review cycle.**
+
+| Review | Reviewer | Profile | Logical gaps | Effect on paper |
+|--------|----------|---------|--------------|-----------------|
+| d.4 (Session 31) | ChatGPT (re-review of v0.7) | Cache-affected → cache-bust resolved → review-clean | 0 | No paper changes (cache diagnostic only) |
+| d.5 (Session 31) | Grok | Structural-with-cohesion + housekeeping | 1 must-fix, 1 housekeeping, 1 cohesion, 1 figure pedagogical | v0.7 → v0.8 + figure |
+| d.6 (Session 31) | CoPilot | Editorial / mathematical | 0 | No paper changes (explicit v1.0-ready) |
+
+**Cumulative six-pass cycle (d.1 through d.6):**
+
+| Review | Reviewer | Profile | Logical gaps | Effect |
+|--------|----------|---------|--------------|--------|
+| d.1 (Session 28) | ChatGPT | Surgical-technical | 5 | v0.4 → v0.5 + C8 + OPEN-SS-37 |
+| d.2 (Session 29) | Copilot | Editorial high-level | 0 | v0.5 → v0.6 polish |
+| d.3 (Session 30) | ChatGPT | Re-review residual | 3 | v0.6 → v0.7 |
+| d.4 (Session 31) | ChatGPT | Re-review v0.7 (cache-affected) | 0 (post-cache-bust) | No paper changes |
+| d.5 (Session 31) | Grok | Structural + housekeeping | 1 must-fix, 1 housekeeping, 1 cohesion, 1 figure | v0.7 → v0.8 + figure |
+| d.6 (Session 31) | CoPilot | Editorial / mathematical | 0 | No paper changes (explicit v1.0-ready) |
+
+**Lessons across the cumulative cycle.**
+
+**Lesson 4 (NEW at Session 31)**: Cache effects can produce stale-context errors. ChatGPT d.4 initially reviewed cached v0.6 thinking it was v0.7 (URL was correct but content was cached); resolved by URL cache-bust query parameter. Future review submissions should include cache-bust to force fresh retrieval.
+
+**Lesson 5 (NEW at Session 31)**: Reviewer profiles are complementary, not redundant. Across six passes, the reviewers caught different categories of issues — ChatGPT caught logical gaps and order-of-operations slips; CoPilot caught editorial polish opportunities; Grok caught housekeeping (title block) and pedagogical opportunities (figure). Future review cycles benefit from rotating multiple reviewers rather than relying on a single reviewer profile.
+
+(Lessons 1–3 from Session 30 remain in force.)
+
+**Polish track status after Session 31.**
+
+- Sub-task (a) C7 sub-lemma — DONE (Session 25, v0.2).
+- Sub-task (b) 3D-non-degeneracy sub-lemma — DONE (Session 26, v0.3).
+- Sub-task (c) C5 well-definedness sub-lemma — DONE (Session 27, v0.4).
+- Sub-task (d.1) ChatGPT v0.4 review — DONE (Session 28, v0.5).
+- Sub-task (d.2) Copilot v0.5 review — DONE (Session 29, v0.6).
+- Sub-task (d.3) ChatGPT v0.6 re-review — DONE (Session 30, v0.7).
+- Sub-task (d.4) ChatGPT v0.7 re-review — CLOSED via cache-resolution this session (no paper changes).
+- Sub-task (d.5) Grok v0.7 review — **DONE this session (v0.8).**
+- Sub-task (d.6) CoPilot v0.7 close — **DONE this session (v0.8 with no incorporation needed).**
+- Sub-task (e) external (human domain-expert) review — remains the only outstanding sub-task before v1.0 ship.
+
+**Programme state.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. OPEN-SS-37 REGISTERED preserved with closure routes 3 → 4 (Route (d) added). No new OPEN-SS-* registration this session. SS sector problem count UNCHANGED at 19. SS-9 at v0.8 (was v0.7 at Session 30 close); 32 pages. **Three independent AI-reviewer v1.0-ready verdicts in hand.**
+
+**Forward priority for Session 32+.** Sub-task (e) external review on v0.8 .tex source via reviewer-response protocol. Submit raw GitHub URL with cache-bust query parameter to a human domain-expert reviewer (nuclear physics / alpha-cluster theory). Best case: external reviewer agrees → v0.8 → v1.0 ship. Likely case: external reviewer surfaces 1–3 issues → v0.8 → v0.9 incorporation cycle. In parallel: continued investigation of OPEN-SS-37 closure routes (especially Routes (a) and the new Route (d)); Route (d) literature review (EDM theory, rigidity theory, alpha complexes); SS-10 sub-shell-physics multi-paper development continues as parallel Priority 1 at programme level.
