@@ -6035,3 +6035,185 @@ SS-10 sub-shell-physics multi-paper development continues at programme level as 
 - Pre-flight bare-c_i pattern check now standard protocol
 - Per-panel TikZ invariant audit now standard protocol for any new figure
 - All Phase 4–11 anti-priorities remain in force
+
+---
+
+# Tier 4 verbatim reasoning Session 33 (7 May 2026) — Paper completion sequence Tracks 3+4: registers freeze + OSF/arXiv post-ship submission guide; documentation discipline self-correction
+
+## I. Strategic ordering of paper completion sequence tracks
+
+The four paper completion sequence tracks identified at Session 32 close handover:
+1. Anthology chapter at Rovelli/SciAm register
+2. TATWD integration as C4 closure on refined-C1 foundation from SS-7
+3. Registers freeze: paper_catalog.md, theorem-registry.md, master_glossary.md
+4. OSF deposit + arXiv submission as venue for rescoped sub-task (e)
+
+These have substantively different shapes:
+
+**Track 3 (registers freeze).** Hygienic, mechanical, bounded. Update three programme-level register files (paper_catalog.md SS-9 row + theorem-registry.md SS-9 theorem + master_glossary.md SS-9 v1.0 terms). Predictable scope (~half-session); no creative or strategic decisions of large weight; mostly documentation craft applied to the v1.0 freeze state.
+
+**Track 4 (OSF/arXiv prep guide).** A new document (~270 lines) covering pre-submission checklist, OSF deposit procedure, arXiv submission procedure, post-submission tracking, symmetric-honesty notes, coordination, decision authority. Half-session of guide-writing; not creative narrative but operationally important for Thomas/Isak to execute the public posting.
+
+**Track 1 (anthology chapter at Rovelli register).** Creative narrative writing, ~3000-5000 words at register one step above the paper — Rovelli's accessible scientific-prose style as exemplified in *Reality Is Not What It Seems* and *Seven Brief Lessons on Physics*. The writing craft is substantively different from theorem prose: it requires drawing the *journey* from puzzle to result with limits-of-what-was-proven as part of the narrative rather than something to hide. This is dedicated-session work because narrative writing benefits from sustained focus rather than being bolted onto a hygiene session.
+
+**Track 2 (TATWD integration as C4 closure).** Integration into the working narrative book `CPP_the_theory.md`. Requires pre-session inspection of TATWD's existing structure (where does SS-7 currently appear; what role does refined-C1 play; where is the simplicial-polytope assumption invoked) before producing content. Cannot be done blind; needs the inspection step. Dedicated session work because the integration must respect TATWD's existing narrative arc.
+
+The right ordering is: **Tracks 3 + 4 first** (locks in post-v1.0 hygiene; supports the other tracks); **Track 1 next** (dedicated session for narrative); **Track 2 last** (after I've inspected TATWD). Public posting timing is at Thomas's discretion, with options now (lock priority date) or after Sessions 34 + 35 (more complete programme picture); both consistent with rescoped sub-task (e).
+
+## II. paper_catalog.md SS-9 row design rationale
+
+The stale entry from 4 May Session 12 was inaccurate in seven important ways that needed correction:
+
+1. **"Pre-paper / active development"** — wrong; paper is SHIPPED at v1.0
+2. **"no .tex yet"** — wrong; SS-9_simplicial_alpha_polytope_connectivity.tex exists at 32 pages compiled
+3. **"v0.3 working draft"** — wrong; v1.0 SHIPPED 7 May 2026 Session 32
+4. **No mention of OPEN-SS-37 registration** — incomplete; OPEN-SS-37 was registered at v0.5 (Session 28 d.1) covering C8 first-principles closure with 4 candidate closure routes
+5. **No mention of OPEN-SS-24 closure** — incomplete; OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship (the conditional closure OPEN-SS-24 was registered for)
+6. **OPEN-SS-32 ↔ U-shape connection registered as next-session investigation** — outdated (OPEN-SS-32 was advanced separately during the SS-7 v1.2 cycle and is not Session 33's concern)
+7. **Cross-paradigm OPEN-SS-35 programme content** — was relevant when SS-9 was a placeholder for OPEN-SS-24 closure work; now the paper is shipped at v1.0 and OPEN-SS-35 is a separate active programme not directly tied to SS-9's row
+
+The new entry needed to capture the v1.0 ship state honestly: paper status "OSF pending" (not yet OSF-deposited but compiled and on GitHub); 32 pages compiled; seven independent AI review passes basis for v1.0 promotion; sub-task (e) RESCOPED at v1.0; full hypothesis stack listed; OPEN-SS-24 ADVANCED → CLOSED; OPEN-SS-37 four closure routes; lessons 1-6 systematized; documentation suite at v1.0 freeze.
+
+The Documentation paragraph SS-9 sentence had similar staleness issues (12 sessions / 282 transactions / 17 vignettes / 3 working drafts in session_logs/); rewritten with v1.0 freeze accurate counts (Vignettes 1-39, transcripts 1-710, Tier 4 reasoning through Session 32, Session 32 v1.0 SHIP handover, plus 1 letter NEW at Session 33 for the OSF/arXiv guide, plus pending external reviewer correspondence under reviews/external/).
+
+The "Last updated" header was updated to Session 33 with Earlier 4 May 2026 attribution preserved (consistent with the programme practice of preserving session-log audit trail).
+
+## III. theorem-registry.md THEO-SS-16 phrasing rationale
+
+The theorem-registry table format is compact (one row per theorem) but the SS-9 main theorem is genuinely complex (five clauses, three lemmas, three sub-lemmas, conditional on a 9-element hypothesis stack). The phrasing challenge: capture enough structure that a reader skimming the registry understands what the theorem says, without overwhelming the row.
+
+The phrasing decision: list all five clauses with one-line characterizations, then a single sentence describing the proof structure (three lemmas + three sub-lemmas), then a single paragraph on conditional dependencies (full hypothesis stack with C5/C6/C7/C8 first-principles closure → OPEN-SS-29/30/33/37 mapping), then the v1.0 SHIP basis statement (seven independent AI review passes), then a final sentence on the refined-C1 facet (b) precondition role.
+
+Specific phrasing choices:
+- "Five-clause conditional theorem" rather than "conditional theorem with five parts" — more precise
+- For clause (i): "alpha-cluster contact graph $G(\mathcal{C})$ is connected" with explicit "(via Lemma A)" — points to proof source
+- For clause (iii): "$|E(G)| = 3N_\alpha - 6$ exactly (equivalent to THEO-SS-12 specialized to the alpha-cluster regime)" — preserves the THEO-SS-12 cross-reference link from SS-7 v1.2
+- For clause (iv): full statement of FvdW values $\{4, 5, 6, 7, 8, 9, 10, 12\}$ explicitly, "1-skeleton of the unique Freudenthal–van der Waerden convex deltahedron at $N_\alpha$," "centroid configuration realizes that deltahedron geometrically with edges at uniform contact length $R_{\alpha\alpha}$" — captures the abstract-vs-metric distinction made explicit at v0.5 per ChatGPT d.1 review
+- Refined-C1 facet (b) "is a necessary precondition for C8's plausibility at $N_\alpha \geq 7$ where the FvdW deltahedron has degree-$\geq 5$ vertices that strict-C1 (each alpha presenting four outer faces) cannot host" — captures the C8/facet (b) relationship clarified at v0.5/v0.7
+
+The "Axioms Used" column was filled with the full hypothesis stack mapping rather than abbreviated. Rationale: the conditional-theorem framing is exactly what makes SS-9 SS-9; abbreviating would lose the conditional structure that's the paper's central honest contribution.
+
+## IV. master_glossary.md SS-9 v1.0 addendum entry-by-entry rationale
+
+The 6 new entries were chosen by a "minimal sufficient" criterion: include each term that (a) is genuinely new at SS-9 (not already covered by earlier glossary entries), and (b) is needed to support either the SS-9 paper, the registers entries, or the future_projects (A.3)/(A.4)/Route (d) tracking.
+
+**Conditional theorem closure paper.** New programme-level concept introduced at SS-9 v1.0; needed because future papers may use the same framing (conditional theorem under registered hypotheses with first-principles-closure questions registered as programme-level open problems). The entry articulates the framing precisely: "v1.0 designation rests on what the paper claims to deliver, not on hypothetical claims it does not make."
+
+**FvdW (Freudenthal–van der Waerden) classification.** The existing "Deltahedron" entry mentions the 8 convex deltahedra but does not credit the classification theorem or anchor it historically. The new FvdW entry credits the 1947 Freudenthal & van der Waerden paper, lists the 8 deltahedra at FvdW values, notes the gap at $\{11, 13, 14\}$ = OPEN-SS-31, and crucially distinguishes the *combinatorial* classification (which polytope topologies admit convex realization) from the *metric* realization (whether alpha-cluster physics actually realizes them) — the latter being the content of C8 = OPEN-SS-37. This distinction is central to clause (iv) of THEO-SS-16 and to the OPEN-SS-37 Route (d) literature anchors (EDM theory and rigidity theory address realization-spaces questions).
+
+**Note on the v1.0 designation (programme practice).** This entry codifies the programme practice of explicitly documenting AI-review-only basis when human review is unavailable. Five required components: AI review passes documented, sub-task (e) rescope explicit, honest reading as AI-validated rather than human-validated, public-posting venues named, invitation for domain-expert feedback in named topical areas. Future papers in similar circumstances now have a referenced practice rather than re-inventing the discipline.
+
+**Programmatic invariant audit (TikZ figures).** Lesson 6 NEW from Session 32 d.7 review. The discipline emerged from a real failure (v0.8 shipped with two figure bugs that visual inspection missed). The entry captures the methodology (parser extracts figure's combinatorial content from .tex source; verifies against mathematical invariants the figure conveys) and the diagnostic (visual inspection insufficient because the eye fills in expected structure even when absent on the page). The audit script for SS-9 Figure 1 is preserved in transcript-SS-9.md transactions 681-685 and reasoning-SS-9.md Session 32 §II for future adaptation.
+
+**Schlegel diagram (and Schlegel-style projection).** The strict definition of a Schlegel diagram is a planar embedding of a 3-polytope obtained by projecting through one face onto the opposite face's plane with no edge crossings. The v0.8 figure caption misnamed panels (a)/(b)/(c)/(d)/(h) all as "Schlegel diagrams" but panel (c) octahedron uses a layout with one rendering crossing. The v0.9 caption distinguishes accurate Schlegel diagrams (a, b, d, h) from Schlegel-style projection with rendering crossing (c) from simplified topological schematics (e, f, g). The glossary entry codifies this distinction so that future references can use the precise term.
+
+**Steinitz's theorem.** Used in SS-9 Lemma B' Step 5 but not previously in master_glossary.md. The entry credits the 1922 Steinitz paper, gives the statement (a graph $G$ is the 1-skeleton of some convex 3-polytope iff $G$ is a 3-vertex-connected planar graph), and explicitly distinguishes the abstract polytope from Steinitz alone vs. the geometric realization at uniform edge length $R_{\alpha\alpha}$ requiring C8 = OPEN-SS-37. This abstract-vs-metric distinction is exactly the content that ChatGPT's d.1 review of v0.4 surfaced (the implicit Steinitz-to-centroid realization gap that led to C8 registration). Glossary entry preserves the distinction in programme reference material.
+
+What I considered including but rejected:
+- **Cayley-Menger determinant** / **Maxwell-Cremona rigidity** / **Mnëv universality** / **Edelsbrunner alpha complexes** — the four mathematical-programme references for OPEN-SS-37 Route (d). Rejected because these are external mathematical literature anchors, not CPP-internal terms; better preserved in PH-OPEN-SS-37.md problem history file (which already has them) than imported into master_glossary.md. The master_glossary should contain CPP-internal terms; cross-references to external mathematical literature live in problem-history files.
+
+## V. OSF/arXiv submission guide structure rationale (7 sections)
+
+The guide needed to be operationally useful (Thomas/Isak can execute from it) without being so prescriptive that it locks out programme judgment. Seven sections balance these:
+
+**§1 Pre-submission checklist.** Six discrete checks (paper compiles cleanly; Figure 1 invariants verified; bibliography correct; cross-references resolve; PDF is v1.0; license documented; GitHub origin/main reflects v1.0). Each check has a precise criterion (zero pdflatex errors after pass 3; bare-c_i pattern check zero hits; etc.). The checklist enables go/no-go on submission readiness.
+
+**§2 OSF deposit procedure.** DOI 10.17605/OSF.IO/JXE8D was registered earlier in the programme (per existing OSF practice for the SS series). The deposit step uploads v1.0 artifacts. Subsections: artifacts to deposit (.tex source, .pdf compiled, .bib bibliography, optional sketches/ and documentation_suite/); metadata fields with concrete entries to copy into OSF form fields; project description suggested text (uses the conditional-theorem framing language); cross-references; expected timing.
+
+**§3 arXiv submission procedure.** Categories: nucl-th primary (alpha-cluster physics) + math-ph secondary (conditional theorem framework, Steinitz application, FvdW classification, Route (d) connections). The combination signals appropriately to both audiences. Endorsement requirement noted (one-time per category). LaTeX source upload format strongly preferred over PDF-only (arXiv compiles on its own infrastructure). Metadata fields with comments field including seven-pass review history and rescope explanation. License CC BY 4.0. MSC and PACS classifications listed.
+
+**§4 Post-submission tracking.** Filing protocol for incoming external feedback at series_strong/papers/SS-9/reviews/external/ (parallel to existing AI-review filing convention). v1.x revision triggers on same polish-track cadence as v0.1→v1.0. Programme-level tracking via Research_Frontier.md and future_projects.md. No-feedback case: sub-task (e) is satisfied by act of public posting, not by receipt of feedback (the rescope's purpose).
+
+**§5 Symmetric-honesty notes.** Two specific framings that must not be softened in the public-posting context: (a) the conditional-theorem framing (paper does not claim unconditional derivation); (b) the AI-review-only basis (v1.0 rests on seven AI review passes, not human domain-expert review). The §5 section preempts the temptation to soften these for marketing purposes; the symmetric-honesty discipline applied throughout the polish track must be preserved at public-posting time.
+
+**§6 Coordination with other paper completion sequence tracks.** Locates SS-9's public posting within the larger Sessions 33+ work (anthology chapter Session 34, TATWD integration Session 35, registers freeze Session 33). Helpful for Thomas to see the integration picture.
+
+**§7 Decision authority and execution.** Thomas decides timing and metadata; Isak handles OSF execution per existing programme practice (paper_catalog.md "Publication Plan" section: "Isak Gutierrez handles OSF submissions"); Thomas or Isak handles arXiv with endorsement step. Explicit role assignment avoids ambiguity at execution time.
+
+The 7-section structure is more explicit than minimum-needed (could have collapsed §5 into §1; could have folded §6 + §7 into a single section). The trade-off is verbosity for clarity; given that Thomas is reviewing this guide once before submission and not iteratively, clarity wins. The guide can be shortened on a future iteration if Thomas finds it bloated.
+
+## VI. Sub-task (e) rescope reinforcement rationale (preserving conditional-theorem framing in public-posting context)
+
+The rescope of sub-task (e) at v1.0 ship (Session 32) was already well-documented in five places (title block, §9 Note, CHANGELOG v1.0, Research_Frontier.md, future_projects.md). The OSF/arXiv guide adds a sixth place: the public-posting context where the temptation to soften the rescope for marketing purposes is highest.
+
+The §5 symmetric-honesty notes section addresses this directly. Two specific framings:
+
+(a) **Conditional-theorem framing.** A reader who interprets the paper as "Abshier and Claude have derived the alpha-cluster geometry from CPP" without attaching "conditionally on C5+C6+C7+C8" is misreading. The OSF abstract and arXiv comments must reinforce, not soften, the conditional framing. The §9 Roadmap to v1.0 subsection's six-item enumeration plus the Note on the v1.0 designation paragraph plus the title block plus the CHANGELOG v1.0 entry all establish the conditional framing explicitly; the public-posting venues should preserve this.
+
+(b) **AI-review-only basis.** The v1.0 designation rests on seven AI review passes by three independent reviewers (ChatGPT, CoPilot, Grok). It does not rest on human domain-expert review. A reader who interprets v1.0 as "human-domain-expert-validated" is misreading. The OSF description and arXiv comments must preserve this transparency rather than soften it for marketing.
+
+The honesty argument is the same one made at v1.0 ship: a paper that claimed v1.0 status without disclosing the AI-review-only basis would mislead readers about the validation type, and the symmetric-honesty discipline applied throughout the polish track would be broken. Three concrete failure modes of pretending: (a) reader assumes peer review by domain expert; takes conclusions more seriously than warranted. (b) Future programme-level audit treats conclusions as having human-expert validation when they do not. (c) Future Claude session treats v1.0 designation as more strongly validated than it is, propagating overclaim across the programme. The rescope avoids all three by being explicit.
+
+## VII. (A.3) anthology chapter entry mechanism rationale
+
+The (A.3) entry registers Session 34's deliverable explicitly so future Claude sessions (or Thomas himself) have a referenced specification of the anthology chapter's intended content. The mechanism details a six-stage dramatic arc:
+
+1. **The puzzle** (SS-7's empirical fit): introduce the $B(N) = N \cdot B_\alpha + (3N-6) \cdot B_{\text{pair}}$ formula and the twelve-nuclei 1.5% empirical fit at FvdW values. Highlight that the formula uses simplicial-polytope structure as a paper-level structural hypothesis — left unexplained at the SS-7 level.
+
+2. **The clue** ($3N-6$ as Euler's formula): note that for any simplicial 3-polytope on $N$ vertices, $|E| = 3N - 6$ exactly via Euler's formula combined with the triangle constraint $2E = 3F$. The empirical fit's coefficient is suspiciously a topological invariant, not a free parameter.
+
+3. **The journey** (three lemmas + Steinitz + FvdW classification): introduce Lemma A (pairwise triangular contact from C1$'$ + C2), Lemma C (energy minimization picks maximum edges from C3 + C5), Lemma B$'$ (contact graph = 1-skeleton of convex 3-polytope via Steinitz from Lemma A + Lemma C + C6 + C7 + C8). Show how Steinitz's theorem provides the bridge from graph-theoretic Lemmas to polytope content, and how FvdW classification specializes the polytope to the 8 specific deltahedra at FvdW values.
+
+4. **The result** (conditional theorem on 9 hypotheses): state Theorem 6.1's five clauses (graph connected; centroids non-coplanar; $|E| = 3N_\alpha - 6$; 1-skeleton of unique FvdW deltahedron at FvdW values; planar and triangulated). The simplicial-polytope assumption used as paper-level structural hypothesis in SS-7 is now derived as a theorem clause.
+
+5. **The honesty** (4 OPEN-SS-* registries): each of C5, C6, C7, C8 is a paper-level structural hypothesis pending first-principles closure. OPEN-SS-29 (C5 ground-state minimization), OPEN-SS-30 (C6 cluster surface-realization), OPEN-SS-33 (C7 contact-graph planarity, ADVANCED via Sub-Lemma 2.1 to "conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1-A11 + C5"), OPEN-SS-37 (C8 FvdW centroid-realizability with 4 candidate closure routes including Route (d) NEW). The proof itself reveals what is not yet derived; this is part of the narrative, not something to hide.
+
+6. **What's still open** (beyond the four registries): OPEN-SS-31 deltahedra-gap at $N_\alpha \in \{11, 13, 14\}$ where no convex deltahedron exists; the Coulomb screening NLO correction; sub-task (e) external/human review (rescoped to open invitation post-v1.0 ship via public posting). The chapter ends with the conditional theorem closure paper framing as a model for how CPP papers ship: AI review confirms the conditional reasoning is sound; whether the conditions can be derived from CPP primitives is a separate question, registered for follow-up.
+
+The Rovelli register means: accessible scientific prose; no abstract algebra notation in the body text (math relegated to footnotes or sidebars); concrete physical motivation for each hypothesis; the *journey* from puzzle to result told as discovery rather than presented as fait accompli. The 3000-5000 word target reflects typical anthology chapter length; SS-7 and SS-8 chapters in the existing anthology should be matched in length.
+
+## VIII. (A.4) TATWD integration entry mechanism rationale
+
+The TATWD-level treatment is at register one step above the paper but one step below the anthology chapter — more technical than Rovelli but less formal than the SS-9 paper itself. The integration mechanism inserts SS-9 as the C4-derivation closure on the refined-C1 foundation from SS-7.
+
+Combined SS-7 + SS-9 narrative (the new TATWD content): "from CPP primitives + refined-C1 + C2 + C3, get the binding formula plus the simplicial-polytope structure conditionally on C5/C6/C7/C8, with twelve zero-parameter nuclear binding predictions to within 1.5%."
+
+This makes explicit that the simplicial-polytope structure is *derivable* (conditionally on C5-C8 first-principles closure) rather than purely structural. It's the bridge that connects:
+- SS-7 (empirical fit + structural hypothesis C4 simplicial-polytope assumption)
+- SS-9 (derivation of C4 conditional on C5-C8)
+- SS-8 (interstitial-neutron 2E/V scaling, which inherits the simplicial polytope assumption)
+
+The pre-session inspection (Session 35 start) is critical: I cannot integrate SS-9 into TATWD without first knowing where SS-7 currently sits, what role refined-C1 plays in the existing narrative, and where the simplicial-polytope assumption is currently invoked. The four files to inspect (CPP_the_theory.md + 3 book_project files) capture both the current state and the planning history.
+
+The integration may revise SS-7's TATWD section to flag "see C4 derivation in §[SS-9 chapter]" — depending on what TATWD currently says. It may also connect to subsequent SS-8 content (interstitial-neutron 2E/V scaling). The exact integration shape depends on inspection results.
+
+## IX. Documentation discipline self-correction (why first attempt skipped Steps B/C/D/H)
+
+The first attempt at Session 33 close shipped only Step A (session log) + Step E (Research_Frontier + future_projects) + the substantive content (patches 0268-0270). Steps B (transcript pointer-map), C (development vignette), D (Tier 4 reasoning), and H (handover update) were skipped.
+
+The reasoning at first attempt was: SS-9 documentation suite was "frozen at v1.0" per Session 32 handover language, so programme-level work (registers freeze) didn't need per-paper docs updates. This reasoning was wrong on two counts:
+
+(i) **The OSF/arXiv guide is SS-9 paper-specific documentation, not just programme-level work.** The file lives at `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md` — it's in SS-9's letters/ subfolder, the natural location for SS-9 correspondence. By the standard documentation-suite-update trigger (any new SS-9 artifact), this warrants a corresponding documentation-suite update.
+
+(ii) **The substantive design decisions in Session 33 are Opus reasoning that warrants Tier 4 capture.** THEO-SS-16 phrasing decisions, glossary entry phrasing decisions, OSF/arXiv guide structure decisions, sub-task (e) framing reinforcement decisions — these are exactly the kind of substantive reasoning the Tier 4 discipline is meant to capture verbatim for future-session continuity. Skipping Tier 4 would lose this reasoning (or force a future session to re-derive it).
+
+Thomas caught the gap by asking "Did we do the documentation suite?" — a direct check that surfaces the discrepancy.
+
+The corrective patch chain (0271-0273) closes the gap:
+- Patch 0271 Step C: Vignette 40 to development-SS-9.md
+- Patch 0272 Step B + Step D: transcript transactions 711-740 + this Tier 4 reasoning Session 33
+- Patch 0273 Step H: handover-SS-9.md updated to Session 33 close (rm + recreate, supersedes Session 32 v1.0 SHIP close)
+
+**Lesson learned (programme practice).** The documentation suite is *not* "frozen at v1.0 ship" if subsequent sessions add SS-9-specific artifacts (letters, register entries, etc.); the four-tier discipline applies whenever new SS-9 artifacts ship, not only during paper-text development. The "frozen at v1.0" language applies to the .tex source itself (preserved by the anti-priority "do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions"), not to the documentation suite which continues to grow with each session that adds SS-9 content. Session 32's "frozen at v1.0 ship" framing in handover-SS-9.md was loose; the corrective Session 33 close handover (patch 0273) will be precise about what is frozen (the .tex) and what continues (the documentation suite).
+
+## X. Forward queue refinement Sessions 34+
+
+Based on Session 33's work and the documentation-discipline self-correction:
+
+**Session 34 (planned)**: Anthology chapter at Rovelli/SciAm register. Six-stage dramatic arc per (A.3). Single dedicated session, ~3000-5000 words. Structure: introduce puzzle from SS-7, identify Euler-formula clue, walk through three-lemma + Steinitz + FvdW journey, state conditional theorem result, acknowledge 4 OPEN-SS-* registries with honesty, close with conditional theorem closure paper framing as model. New folder `series_strong/papers/SS-9/anthology/` to be created with SS-9 chapter file. Documentation suite Step C will add Vignette 41 (Session 34 anthology chapter), Step B will add transcript transactions 741+, Step D will add reasoning Session 34, Step H will update handover-SS-9.md to Session 34 close.
+
+**Session 35 (planned)**: TATWD integration as C4 closure on refined-C1 foundation from SS-7. Pre-session inspection of CPP_the_theory.md + book_project/TATWD_outline.md + TATWD_outline_revised.md + development_transcript_TATWD_framing.md. Integration mechanism inserts SS-9 as C4-derivation closure. Documentation suite Step C will add Vignette 42 (Session 35 TATWD integration), Step B will add transcript transactions 7XX+, Step D will add reasoning Session 35, Step H will update handover-SS-9.md to Session 35 close.
+
+**Public posting timing decision** is at Thomas's discretion. Two options both consistent with rescoped sub-task (e):
+- Option A: post now (lock priority date, start external-feedback clock immediately; risk - feedback arriving mid-Session 34 chapter writing could disrupt narrative work)
+- Option B: wait for anthology + TATWD complete (more complete programme picture at posting time; risk - delay loses ~1-2 weeks of potential external-feedback collection)
+
+The paper has been on GitHub since 7 May 2026 and remains accessible there regardless of OSF/arXiv timing. Thomas's call.
+
+**OPEN-SS-37 closure routes investigation continues at programme level**:
+- Route (a): facet (b) sufficiency derivation (needs AMD or Brink–Bloch cluster-model calculations of contact-distance distributions at degree-5 sites)
+- Route (d): literature review across EDM theory (Schoenberg/Cayley-Menger), rigidity theory (Maxwell-Cremona/Asimow-Roth/Laman/Pollaczek-Geiringer), alpha complexes (Edelsbrunner et al., 1995), realization spaces (Mnëv's universality theorem, Richter-Gebert)
+
+SS-10 sub-shell-physics multi-paper development continues at programme level as Priority 1.
+
+Anti-priorities sustained going forward: do NOT modify SS-9 v1.0 .tex outside post-external-feedback v1.x revisions; do NOT propose any single-session R3-channel refinement; pre-flight bare-c_i pattern check standard; per-panel TikZ invariant audit standard for any new figure (Lesson 6); programme-practice documentation discipline applies whenever new SS-9 artifacts ship (the Session 33 self-correction).
