@@ -3,7 +3,16 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.9 -- 7 May 2026 (Session 32 OPEN-ORG-012-followup
+% Version 1.0 -- 7 May 2026 (Session 32 OPEN-ORG-012-followup
+%   v1.0 SHIP: conditional theorem closure paper; v1.0 promotion
+%   from v0.9 on the explicit basis of seven independent AI
+%   review passes d.1-d.7; sub-task (e) external/human review
+%   rescoped from "blocking gate" to "open invitation post-v1.0
+%   ship via public posting" per Thomas's confirmation that no
+%   human domain-expert reviewer is available in the author's
+%   research network)
+%
+% Earlier Version 0.9 -- 7 May 2026 (Session 32 OPEN-ORG-012-followup
 %   v1.0 polish sub-task (d.7): ChatGPT v0.8 review feedback
 %   incorporation -- Figure 1 panel (c) and (e) corrections;
 %   pre-v1.0 ship)
@@ -39,6 +48,179 @@
 %   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v1.0 (7 May 2026 Session 32) -- v0.9 -> v1.0 SHIP. Conditional
+%     theorem closure paper promoted from v0.9 to v1.0 on the
+%     explicit basis of seven independent AI review passes (d.1
+%     ChatGPT v0.4 -> v0.5; d.2 CoPilot v0.5 -> v0.6; d.3 ChatGPT
+%     v0.6 -> v0.7; d.4 ChatGPT v0.7 post-cache-bust [no paper
+%     changes]; d.5 Grok v0.7 -> v0.8; d.6 CoPilot v0.7 [no paper
+%     changes]; d.7 ChatGPT v0.8 -> v0.9 with figure fixes). All
+%     seven passes ultimately converged on v1.0-ready (d.7 with
+%     fixes incorporated at v0.9 prior to this v1.0 ship).
+%
+%     SUB-TASK (e) RESCOPE. Originally registered as the blocking
+%     gate before v1.0 ship: "external (human domain-expert)
+%     review by a nuclear physicist or alpha-cluster theorist."
+%     Rescoped at this version (Session 32) from "blocking gate"
+%     to "open invitation post-v1.0 ship via public posting"
+%     because no human domain-expert reviewer is available in
+%     the author's research network. The rescope is explicit and
+%     documented:
+%       - In the title block (visible in compiled PDF)
+%       - In the §9 Roadmap subsection (new "Note on the v1.0
+%         designation" paragraph)
+%       - In this CHANGELOG entry
+%       - In all programme-level companion files (Research_
+%         Frontier.md, future_projects.md, handover-SS-9.md,
+%         documentation suite)
+%     The honesty of this rescope matters: the v1.0 designation
+%     rests on AI review, not human domain-expert review. Readers
+%     deserve to know what the v1.0 designation means.
+%
+%     v1.0 SUBSTANTIVE EDITS:
+%
+%     (1) Title block update. "Version 0.9 --- 7 May 2026 (v1.0
+%         polish sub-task d.7: ChatGPT v0.8 review incorporation
+%         --- Figure 1 panel (c) and (e) corrections)" -> "Version
+%         1.0 --- 7 May 2026 (conditional theorem closure paper;
+%         v1.0 promotion from v0.9 on the explicit basis of
+%         seven independent AI review passes; sub-task (e)
+%         external/human review rescoped to open invitation
+%         post-v1.0 ship via public posting --- see Note on v1.0
+%         designation in \S\ref{sec:roadmap_v1})". The compiled
+%         PDF title page now shows "Version 1.0" with the
+%         rescope rationale visible to first-time readers.
+%
+%     (2) New "Note on the v1.0 designation" paragraph in §9
+%         Roadmap to v1.0 subsection. Three paragraphs (~280
+%         words) documenting: (i) the seven AI review passes
+%         that contributed to v1.0; (ii) the rescope of sub-task
+%         (e) from blocking gate to open invitation post-v1.0
+%         ship; (iii) the honest reading of v1.0 as
+%         "AI-validated conditional theorem closure paper, ready
+%         for external feedback via public posting" rather than
+%         as "human-domain-expert-validated"; (iv) explicit
+%         invitation for domain-expert feedback from nuclear
+%         physics, alpha-cluster theory, computational geometry
+%         (EDM theory and rigidity theory connecting to
+%         OPEN-SS-37 Route (d)), and discrete mathematics
+%         (Steinitz theorem realizations, FvdW classification
+%         literature); (v) clarifying that v1.0 is a "conditional
+%         theorem closure paper," not a "v1.0 unconditional
+%         derivation" -- the v1.0 designation rests on what the
+%         paper claims to deliver (conditional theorem under
+%         registered hypotheses), not on hypothetical claims
+%         it does not make.
+%
+%     (3) CHANGELOG v1.0 entry (this entry).
+%
+%     UNCHANGED AT v1.0:
+%
+%     - Theorem statement (clause (i)-(v)): UNCHANGED.
+%     - Lemma A, B', C statements: UNCHANGED.
+%     - Sub-Lemma 2.1, 2.2, 2.3 statements: UNCHANGED.
+%     - Hypothesis stack C1' + C2 + C3 + C5 + C6 + C7 + C8 +
+%       rigid packing + 3D-non-degeneracy: UNCHANGED.
+%     - Main Result mdframed: UNCHANGED.
+%     - §9 Gaps That Remain (six items + Roadmap to v1.0
+%       enumeration): UNCHANGED. The Note on the v1.0
+%       designation is a NEW addition; the existing
+%       enumeration is unchanged.
+%     - Figure 1 (post-v0.9 figure fixes): UNCHANGED.
+%     - Bibliography: UNCHANGED.
+%     - All cross-references, labels, equation numbers:
+%       UNCHANGED.
+%
+%     Effect on hypothesis stack: UNCHANGED.
+%     Effect on §9 gap list: UNCHANGED (additions to Roadmap
+%       subsection only).
+%     Effect on programme-level OPEN-* registries: UNCHANGED in
+%       OPEN-SS-* count. OPEN-SS-37 closure routes UNCHANGED at
+%       4. Programme negative-result count UNCHANGED at 12. SS
+%       sector problem count UNCHANGED at 19. No new OPEN-SS-*
+%       registration.
+%
+%     Compilation: three pdflatex passes, zero errors after
+%     pass 3. Output 32 pages (UNCHANGED from v0.9; the new
+%     "Note on the v1.0 designation" paragraphs filled
+%     existing whitespace at the end of §9 without overflowing
+%     to a new page). Pre-flight bare-c_i pattern check clean.
+%
+%     POLISH TRACK STATUS AT v1.0 SHIP:
+%
+%     - Sub-task (a) C7 sub-lemma: DONE (Session 25, v0.2)
+%     - Sub-task (b) 3D-non-degeneracy sub-lemma: DONE
+%       (Session 26, v0.3)
+%     - Sub-task (c) C5 well-definedness sub-lemma: DONE
+%       (Session 27, v0.4)
+%     - Sub-task (d.1) ChatGPT v0.4 review: DONE
+%       (Session 28, v0.5)
+%     - Sub-task (d.2) Copilot v0.5 review: DONE
+%       (Session 29, v0.6)
+%     - Sub-task (d.3) ChatGPT v0.6 re-review: DONE
+%       (Session 30, v0.7)
+%     - Sub-task (d.4) ChatGPT v0.7 re-review: CLOSED via
+%       cache-resolution (Session 31, no paper changes)
+%     - Sub-task (d.5) Grok v0.7 review: DONE
+%       (Session 31, v0.8)
+%     - Sub-task (d.6) CoPilot v0.7 close: DONE
+%       (Session 31, v0.8 with no incorporation needed)
+%     - Sub-task (d.7) ChatGPT v0.8 review: DONE
+%       (Session 32, v0.9 figure fixes)
+%     - Sub-task (e) external/human review: RESCOPED at this
+%       version from "blocking gate" to "open invitation
+%       post-v1.0 ship via public posting"
+%     - v1.0 SHIP: this version
+%
+%     SEVEN INDEPENDENT AI REVIEWER PASSES (CUMULATIVE TALLY):
+%
+%     Pass | Reviewer | Version | Result
+%     -----+----------+---------+-------
+%     d.1  | ChatGPT  | v0.4    | 5 substantive issues -> v0.5
+%     d.2  | CoPilot  | v0.5    | 0 issues, polish suggestions -> v0.6
+%     d.3  | ChatGPT  | v0.6    | 3 residuals -> v0.7
+%     d.4  | ChatGPT  | v0.7    | 0 (post-cache-bust) -> no change
+%     d.5  | Grok     | v0.7    | 1 must-fix + housekeeping -> v0.8
+%     d.6  | CoPilot  | v0.7    | 0, explicit v1.0-ready -> no change
+%     d.7  | ChatGPT  | v0.8    | 2 figure bugs -> v0.9
+%
+%     Final convergence: all seven passes converged on v1.0-ready
+%     (d.7 with fixes incorporated at v0.9 prior to this ship).
+%
+%     LESSONS SYSTEMATIZED ACROSS THE FULL POLISH TRACK (1-6):
+%
+%     Lesson 1 (Session 30): Re-review by same reviewer at later
+%       version is valuable.
+%     Lesson 2 (Session 30): Incorporation cycles can introduce
+%       new local issues.
+%     Lesson 3 (Session 30): Reviews can have systematic blind
+%       spots that persist across reviewers.
+%     Lesson 4 (Session 31): Cache effects can produce
+%       stale-context errors; cache-bust query parameter
+%       protocol required.
+%     Lesson 5 (Session 31): Reviewer profiles are
+%       complementary, not redundant; rotate multiple reviewers;
+%       v1.0 ship requires at least two independent v1.0-ready
+%       verdicts (here we got seven passes worth).
+%     Lesson 6 (Session 32): Programmatic invariant audit for
+%       TikZ figures; visual inspection is insufficient.
+%
+%     POST-v1.0 PROTOCOL:
+%
+%     - Public posting via OSF deposit (DOI 10.17605/OSF.IO/
+%       JXE8D, registered earlier) and arXiv submission as the
+%       venue for sub-task (e) in its rescoped form.
+%     - External feedback surfacing substantive issues will
+%       produce v1.1, v1.2, etc., on the same polish-track
+%       cadence as v0.1 -> v1.0.
+%     - The conditional-theorem framing (with C5, C6, C7, C8
+%       registered as paper-level structural hypotheses pending
+%       first-principles closure, and OPEN-SS-29, 30, 33, 37 as
+%       corresponding programme-level open problems) is the
+%       framing under which v1.0 makes sense: this is a v1.0
+%       *conditional theorem closure paper*, not a v1.0
+%       unconditional derivation.
+%
 %   v0.9 (7 May 2026 Session 32) -- v0.8 -> v1.0 POLISH SUB-TASK
 %     (d.7) [CHATGPT v0.8 REVIEW INCORPORATION]. ChatGPT reviewed
 %     v0.8 and identified two graphical inconsistencies in the
@@ -1111,7 +1293,7 @@
 
 \title{\textbf{SS-9: Conditional Derivation of Simplicial Alpha-Polytope Connectivity from CPP Lattice Geometry}\\[6pt]
 {\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version 0.9 --- 7 May 2026 (v1.0 polish sub-task d.7: ChatGPT v0.8 review incorporation --- Figure 1 panel (c) and (e) corrections)}}
+{\normalsize Version 1.0 --- 7 May 2026 (conditional theorem closure paper; v1.0 promotion from v0.9 on the explicit basis of seven independent AI review passes; sub-task (e) external/human review rescoped to open invitation post-v1.0 ship via public posting --- see Note on v1.0 designation in \S\ref{sec:roadmap_v1})}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -1895,6 +2077,13 @@ The remaining work to convert the v0.6 conditional theorem into an unconditional
 \end{enumerate}
 
 Closure of OPEN-SS-29, 30, 33, 37 unconditionally promotes the SS-9 conditional theorem; OPEN-SS-31 extends its scope; Coulomb screening accounts for NLO empirical corrections. The four C-conditional closures (C5, C6, C7, C8) sit parallel in conceptual weight; ranking among them depends on tractability of the candidate closure routes for each, not on their conceptual centrality to the proof structure.
+
+\paragraph{Note on the v1.0 designation.}
+The promotion of this paper from v0.9 to v1.0 (Session 32, 7 May 2026) was made on the explicit basis of \emph{seven independent AI review passes} (sub-tasks d.1 through d.7), not on human domain-expert review. The polish track originally registered sub-task (e) --- external/human review by a domain expert in nuclear physics or alpha-cluster theory --- as the blocking gate before v1.0 ship. At Session 32, sub-task (e) was rescoped from ``blocking gate'' to ``open invitation post-v1.0 ship via public posting'' because no human domain-expert reviewer was available in the author's research network. The seven AI review passes were: d.1 ChatGPT (Session 28, v0.4 review), d.2 CoPilot (Session 29, v0.5 review), d.3 ChatGPT (Session 30, v0.6 re-review), d.4 ChatGPT (Session 31, v0.7 re-review post-cache-bust), d.5 Grok (Session 31, v0.7 review), d.6 CoPilot (Session 31, v0.7 close), d.7 ChatGPT (Session 32, v0.8 review with figure-fix recommendation incorporated at v0.9). All seven ultimately converged on v1.0-ready --- d.7 with the figure fixes incorporated at v0.9 prior to this v1.0 ship.
+
+The v1.0 designation should therefore be read as ``AI-validated conditional theorem closure paper, ready for external feedback via public posting,'' \emph{not} as ``human-domain-expert-validated.'' The paper is not frozen at v1.0; substantive issues surfaced by external feedback after public posting will produce v1.1, v1.2, etc., on the same polish-track cadence as v0.1 through v1.0. The OSF deposit at DOI 10.17605/OSF.IO/JXE8D and any subsequent arXiv submission constitute the public-posting venue through which sub-task (e) is performed in its rescoped form. The author actively invites domain-expert feedback from researchers in nuclear physics, alpha-cluster theory, computational geometry (especially EDM theory and rigidity theory, which connect to OPEN-SS-37 Route (d)), and discrete mathematics (Steinitz's theorem realizations, Freudenthal--van der Waerden classification literature).
+
+The honesty of this rescope matters: a paper that claims v1.0 status on AI review alone, without making the basis of that status explicit, would mislead readers about the type of validation the paper has received. The conditional-theorem framing throughout the paper (with C5, C6, C7, C8 explicitly registered as paper-level structural hypotheses pending first-principles closure, and OPEN-SS-29, 30, 33, 37 as the corresponding programme-level open problems) is exactly the framing under which the v1.0 designation makes sense: this is a v1.0 \emph{conditional theorem closure paper}, not a v1.0 unconditional derivation.
 
 % ===================================================================
 \section{Phase 4 Sketch: Programme-Level Closure Attempts}
