@@ -3,7 +3,11 @@
 %        Connectivity from CPP Lattice Geometry
 % Strong Sector Series
 %
-% Version 0.6 -- 6 May 2026 (Session 29 OPEN-ORG-012-followup
+% Version 0.7 -- 6 May 2026 (Session 30 OPEN-ORG-012-followup
+%   v1.0 polish sub-task (d.3): ChatGPT v0.6 re-review feedback
+%   incorporation -- 3 residual technical corrections)
+%
+% Earlier Version 0.6 -- 6 May 2026 (Session 29 OPEN-ORG-012-followup
 %   v1.0 polish sub-task (d.2): Copilot review feedback
 %   incorporation -- editorial polish + clarifying additions)
 %
@@ -24,6 +28,129 @@
 %   v0.3 markdown working draft via OPEN-ORG-012 closure protocol)
 %
 % CHANGELOG:
+%   v0.7 (6 May 2026 Session 30) -- v0.6 -> v1.0 POLISH SUB-TASK
+%     (d.3) [CHATGPT v0.6 RE-REVIEW INCORPORATION]. ChatGPT
+%     re-reviewed v0.6 (after sub-task d.1 ChatGPT review of v0.4
+%     and sub-task d.2 Copilot review of v0.5) and surfaced 3
+%     residual technical issues that survived the d.1 + d.2 cycle.
+%     Per symmetric-honesty protocol, all 3 ChatGPT re-review
+%     points verified against v0.6 source independently before
+%     incorporation; all 3 confirmed as real technical issues
+%     (none stylistic, none push-back-warranted). All 3 accepted
+%     as v0.7 fixes.
+%
+%     Fix 1 (Sub-Lemma 2.2 hypothesis list missing C8): Sub-Lemma
+%     2.2 was added at v0.3 (Session 26 sub-task b) before C8
+%     existed; v0.5 registered C8 but did NOT update Sub-Lemma
+%     2.2's hypothesis list to include C8. Yet Step 3 of the
+%     proof asserts FvdW configurations are physically realizable
+%     -- exactly C8's content. Sub-Lemma 2.2 was implicitly
+%     assuming C8 without listing it. Fixed by: (a) adding C8 to
+%     the lemma hypothesis list; (b) narrowing scope from
+%     N_alpha >= 4 to N_alpha in {4, 5, 6, 7, 8, 9, 10, 12} (the
+%     FvdW values where C8 applies); (c) Step 3 explicitly
+%     invokes C8 with prose acknowledging that physical
+%     realizability of FvdW configurations is not derivable from
+%     C1' + C2 + C3 + C5 alone -- which is why C8 appears in
+%     the hypothesis list. ChatGPT itself missed this issue in
+%     d.1 (v0.4 review); residual surfaced on second pass.
+%
+%     Fix 2 (Theorem clause (iv) edge-length argument routes
+%     through C8): clause (iv) v0.6 wording said "By C2, every
+%     contact in the ground state has centroid-centroid
+%     separation R_aa at LO, so every edge of P has the same
+%     length R_aa." This conflated "edge of contact graph G"
+%     (concrete, with centroid endpoints separated by R_aa via
+%     C2) with "edge of abstract polytope P" (combinatorial
+%     1-cell in Steinitz's abstract polytope, no metric yet --
+%     needs C8 to give P a geometric realization).
+%     Order-of-operations slip: claim about edges-of-P metric
+%     structure asserted before C8 invoked. Fixed by: (a)
+%     explicit acknowledgment that P is at this stage an abstract
+%     combinatorial object without a metric; (b) reframing the C2
+%     claim as "every contact edge in G corresponds to a centroid
+%     pair (c_i, c_j) with separation |c_i - c_j| = R_aa at LO";
+%     (c) clarifying that C8 supplies the geometric realization
+%     that identifies the abstract polytope's edges with the
+%     concrete centroid-pair contact edges of G, each of length
+%     R_aa by C2. This issue was introduced by my v0.5 d.1
+%     incorporation work (the rework of clause (iv) to invoke C8
+%     explicitly created the order-of-operations slip); d.2
+%     Copilot review didn't catch it.
+%
+%     Fix 3 (Line 1104 facet (b) overclaim): "With facet (b),
+%     the realization exists at LO" overclaimed -- facet (b) is
+%     necessary precondition for C8's plausibility at N_alpha >=
+%     7, NOT sufficient construction (per v0.5 reframe at
+%     Session 28 that re-cast facet (b) as necessary
+%     precondition). The line 1104 sentence was a leftover from
+%     earlier versions that survived all three review rounds
+%     (d.1 ChatGPT, d.2 Copilot, internal). Fixed by rephrasing
+%     as: "Without facet (b), C8 (FvdW centroid-realizability)
+%     would be vacuous at N_alpha >= 7: facet (b) is a necessary
+%     precondition for C8's plausibility at N_alpha >= 7. With
+%     C8, and with facet (b) removing the strict-C1 obstruction
+%     at degree->= 5 vertices, the realization exists at LO."
+%     The phrasing now correctly attributes the realization to
+%     C8 (with facet (b) as necessary precondition), parallel to
+%     the v0.5 Remark on facet (b) reframe.
+%
+%     Effect on hypothesis stack: Sub-Lemma 2.2 now requires C8
+%     (paper-internal scope adjustment; the global theorem
+%     hypothesis stack at C1' + C2 + C3 + C5 + C6 + C7 + C8 +
+%     rigid packing + 3D-non-degeneracy is unchanged).
+%
+%     Effect on \S 9 gap list: UNCHANGED. v0.7 is paper-internal
+%     precision tightening; no new gaps closed or opened.
+%
+%     Effect on programme-level OPEN-* registries: UNCHANGED. No
+%     new OPEN-SS-* registration. Programme negative-result count
+%     UNCHANGED at 12.
+%
+%     Other ripples: none. Theorem statement, Lemma B' statement,
+%     Sub-Lemmas 2.1/2.3 statements, Main Result mdframed, intro
+%     narrative, Open Problems Addressed, Keywords, abstract,
+%     introduction, Roadmap to v1.0 -- all UNCHANGED at v0.7.
+%
+%     Symmetric-honesty observation: ChatGPT's d.1 review (v0.4)
+%     missed Fix 1 (Sub-Lemma 2.2 missing C8 hypothesis); the
+%     issue was present even in v0.4 (Sub-Lemma 2.2 added at
+%     v0.3 Session 26 implicitly assuming FvdW realizability;
+%     d.1 review at Session 28 didn't flag the implicit
+%     assumption). Fix 2 was introduced by my v0.5 d.1
+%     incorporation work and survived d.2 Copilot review. Fix 3
+%     is an even older leftover that survived all three review
+%     rounds. Lesson: re-review by the same reviewer at a later
+%     version catches residuals that the first pass missed,
+%     especially when the version increment includes substantial
+%     restructuring. Multi-pass review by the same reviewer is
+%     genuinely valuable.
+%
+%     Lines added: ~15 (Sub-Lemma 2.2 hyp list +1; Sub-Lemma 2.2
+%     Step 3 expanded by ~3; clause (iv) rephrase ~5; line 1104
+%     rephrase ~3; CHANGELOG entry ~75). No content removed.
+%
+%     Compilation: three pdflatex passes, zero errors after
+%     pass 3. Output 30 pages (UNCHANGED from v0.6).
+%
+%     Polish track status after this version: sub-task (a) C7
+%     sub-lemma DONE (v0.2); sub-task (b) 3D-non-degeneracy
+%     sub-lemma DONE (v0.3); sub-task (c) C5 well-definedness
+%     sub-lemma DONE (v0.4); sub-task (d.1) ChatGPT review
+%     incorporation DONE (v0.5); sub-task (d.2) Copilot review
+%     incorporation DONE (v0.6); sub-task (d.3) ChatGPT v0.6
+%     re-review incorporation DONE (this version, v0.7);
+%     sub-task (e) external review remains. Per ChatGPT's d.3
+%     review verdict: "after those edits, I'd call this
+%     v1.0-ready as a conditional closure paper." v0.7
+%     represents the cleanest formal state of the conditional
+%     theorem after three rounds of substantive AI review.
+%
+%     Anti-priority: do NOT modify SS-9 v0.7 .tex outside of
+%     v1.0 polish revisions. v1.0 ship now contingent on
+%     sub-task (e) external (human domain-expert) review
+%     surfacing no further substantive gaps.
+%
 %   v0.6 (6 May 2026 Session 29) -- v0.5 -> v1.0 POLISH SUB-TASK
 %     (d.2) [COPILOT REVIEW INCORPORATION]. Copilot review of v0.5
 %     delivered an editorial review (qualitatively different from
@@ -869,7 +996,7 @@ The auxiliary assumption ``3D-non-degeneracy'' (\S\ref{sec:setup}, ``Auxiliary a
 
 \begin{lemma}[3D-non-degeneracy from maximum-edge selection]
 \label{lem:3D}
-Let $\Nalpha \geq 4$. Suppose C1$'$ (facet (a) at LO), C2, C3, and C5 hold. Then no ground-state $\Nalpha$-alpha cluster configuration $\mathcal{C}_{\mathrm{ground}}$ has all centroids $c_1, \ldots, c_{\Nalpha}$ lying in a single 2-plane.
+Let $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$. Suppose C1$'$ (facet (a) at LO), C2, C3, C5, and C8 (FvdW centroid-realizability) hold. Then no ground-state $\Nalpha$-alpha cluster configuration $\mathcal{C}_{\mathrm{ground}}$ has all centroids $c_1, \ldots, c_{\Nalpha}$ lying in a single 2-plane.
 \end{lemma}
 
 \begin{proof}
@@ -888,7 +1015,7 @@ Summing the degree bound over all alphas and using the handshake lemma,
 so $|E_{\mathrm{planar}}(\mathcal{C})| \leq \Nalpha$ for any cluster configuration with all centroids coplanar.
 
 \textbf{Step 3: 3D edge bound (existing realizations).}
-At $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the Freudenthal--van der Waerden convex deltahedra (cf.\ Theorem~\ref{thm:main} clause (iv)) realize 3D centroid arrangements with $|E_{\mathrm{3D}}(\mathcal{C}_{\mathrm{FvdW}})| = 3\Nalpha - 6$. Concretely, $|E_{\mathrm{FvdW}}| = 6, 9, 12, 15, 18, 21, 24, 30$ at $\Nalpha = 4, 5, 6, 7, 8, 9, 10, 12$ respectively. These configurations are physically realizable: each FvdW deltahedron supports $\Nalpha$ alphas at its vertices with edge length $\Raa$ between adjacent centroids, all face-coincidences accommodated within C1$'$ (facets (a), (b)).
+At $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$, the Freudenthal--van der Waerden convex deltahedra (cf.\ Theorem~\ref{thm:main} clause (iv)) realize 3D centroid arrangements with $|E_{\mathrm{3D}}(\mathcal{C}_{\mathrm{FvdW}})| = 3\Nalpha - 6$. Concretely, $|E_{\mathrm{FvdW}}| = 6, 9, 12, 15, 18, 21, 24, 30$ at $\Nalpha = 4, 5, 6, 7, 8, 9, 10, 12$ respectively. By C8 (FvdW centroid-realizability, \S\ref{sec:setup}), each FvdW deltahedron at the specified $\Nalpha$ values is physically realized as an alpha cluster configuration with $\Nalpha$ alphas at its vertices, edge length $\Raa$ between adjacent centroids, and all face-coincidences accommodated within C1$'$ (facets (a), (b)). The existence of these 3D realizations is precisely the content of C8 and is not derivable from C1$'$ + C2 + C3 + C5 alone --- this is why C8 appears in the lemma hypothesis list.
 
 \textbf{Step 4: Strict edge gain in 3D.}
 Comparing Steps 2 and 3,
@@ -1088,9 +1215,9 @@ Let $\mathcal{C}$ be the ground-state alpha-cluster configuration of $\Nalpha \i
 \textbf{Clauses (i)--(iii):} Direct consequence of Lemma~\ref{lem:Bprime}.
 
 \medskip
-\textbf{Clause (iv):} By (i)--(iii), $G$ is the 1-skeleton of a simplicial convex 3-polytope $P$, abstractly identified by Steinitz's theorem from the combinatorial structure of $G$. By C2, every contact in the ground state has centroid-centroid separation $\Raa$ at LO, so every edge of $P$ has the same length $\Raa$. By the Freudenthal--van der Waerden theorem (1947 \cite{freudenthal_vdw_1947}): convex deltahedra (simplicial convex 3-polytopes with all-equilateral-triangular faces and uniform edge length) exist on exactly $N \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ vertices, and at each of these $N$ values the convex deltahedron is unique up to isometry. Hence the polytope $P$ is the FvdW deltahedron at $\Nalpha$ \emph{abstractly}.
+\textbf{Clause (iv):} By (i)--(iii), $G$ is the 1-skeleton of a simplicial convex 3-polytope $P$, abstractly identified by Steinitz's theorem from the combinatorial structure of $G$. The polytope $P$ is at this stage an abstract combinatorial object without a metric --- the edges of $P$ are 1-cells in the combinatorial polytope, not yet identified with concrete geometric segments. By C2, every contact edge in $G$ corresponds to a centroid pair $(c_i, c_j)$ with separation $|c_i - c_j| = \Raa$ at LO. By the Freudenthal--van der Waerden theorem (1947 \cite{freudenthal_vdw_1947}): convex deltahedra (simplicial convex 3-polytopes with all-equilateral-triangular faces and uniform edge length) exist on exactly $N \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ vertices, and at each of these $N$ values the convex deltahedron is unique up to isometry. Hence the polytope $P$ is the FvdW deltahedron at $\Nalpha$ \emph{abstractly} (i.e., as a combinatorial polytope).
 
-The remaining step is the geometric realization at the alpha LO centroid positions $c_i$, which is exactly the content of C8 (FvdW centroid-realizability). Steinitz produces an abstract polytope; FvdW classifies it as the FvdW deltahedron; C8 supplies the geometric realization with vertices at the $c_i$ and edges of length $\Raa$. By C8, such a realization exists at each $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$. So $P$ is realized as the FvdW deltahedron at $\Nalpha$ with vertices at the alpha LO centroids and uniform edge length $\Raa$. \checkmark
+The remaining step is the geometric realization at the alpha LO centroid positions $c_i$, which is exactly the content of C8 (FvdW centroid-realizability). Steinitz produces an abstract polytope; FvdW classifies it as the FvdW deltahedron; C8 supplies the geometric realization that identifies the abstract polytope's edges with the concrete centroid-pair contact edges of $G$, each of length $\Raa$ by C2. By C8, such a realization exists at each $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$. So $P$ is realized as the FvdW deltahedron at $\Nalpha$ with vertices at the alpha LO centroids and uniform edge length $\Raa$. \checkmark
 
 \medskip
 \textbf{Geometric realizability at $\Nalpha \geq 7$ via refined-C1 facet (b):} At $\Nalpha \in \{7, 8, 9, 10, 12\}$, the FvdW deltahedron has at least one vertex of degree $\geq 5$:
@@ -1101,7 +1228,7 @@ The remaining step is the geometric realization at the alpha LO centroid positio
 \item $\Nalpha = 10$ (gyroelongated square bipyramid): 8 of 10 vertices at degree 5;
 \item $\Nalpha = 12$ (icosahedron): all 12 vertices at degree 5.
 \end{itemize}
-Strict-C1 with each alpha presenting four outer faces cannot host five face-coincident contacts at a single vertex. Refined-C1 facet (b) provides the accommodation modes (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking --- specific mechanism TBD) under which the additional degree-$\geq 5$ contacts are hosted within the LO rigidity envelope. Without facet (b), clause (iv) would be vacuous at $\Nalpha \geq 7$ because no rigid-tetrahedral realization of the FvdW deltahedron at those values exists. With facet (b), the realization exists at LO, with sub-LO corrections in the rigidity band (and registered separately as facet (c)'s slip-plane bonus accounting for the empirical Regime B excess in SS-7 Table 1).
+Strict-C1 with each alpha presenting four outer faces cannot host five face-coincident contacts at a single vertex. Refined-C1 facet (b) provides the accommodation modes (face-edge hybrid contact, K$_3$ delocalization across adjacent faces, partial-overlap docking --- specific mechanism TBD) under which the additional degree-$\geq 5$ contacts can be hosted within the LO rigidity envelope. Without facet (b), C8 (FvdW centroid-realizability) would be vacuous at $\Nalpha \geq 7$ because no rigid-tetrahedral realization of the FvdW deltahedron at those values would be possible: facet (b) is a \emph{necessary precondition} for C8's plausibility at $\Nalpha \geq 7$. With C8, and with facet (b) removing the strict-C1 obstruction at degree-$\geq 5$ vertices, the realization exists at LO, with sub-LO corrections in the rigidity band (and registered separately as facet (c)'s slip-plane bonus accounting for the empirical Regime B excess in SS-7 Table 1). Whether facet (b) is also \emph{sufficient} to construct the realization (not just remove the strict-C1 obstruction) is part of OPEN-SS-37.
 \end{proof}
 
 % ===================================================================
