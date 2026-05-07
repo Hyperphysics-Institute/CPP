@@ -1,12 +1,16 @@
-# SS-9 Handover — Session 32 v1.0 SHIP close (7 May 2026)
+# SS-9 Handover — Session 33 close (7 May 2026)
 
-**Last session: Session 32** — v1.0 polish sub-task (d.7) ChatGPT v0.8 review feedback incorporation + v1.0 SHIP with sub-task (e) rescoped.
+**Last session: Session 33** — paper completion sequence Tracks 3+4 (registers freeze + OSF/arXiv post-ship submission guide) plus corrective documentation suite chain (Steps B/C/D/H added after first-attempt gap caught).
 
-## Status as of Session 32 close
+**Supersedes**: Session 32 v1.0 SHIP close handover (patch 0267).
 
-**SS-9 paper status: SHIPPED at v1.0** (was v0.7 at Session 30 close, v0.8 at Session 31 close, v0.9 mid-Session 32). 32 pages compiled output; three pdflatex passes zero errors after pass 3.
+## Status as of Session 33 close
 
-**Polish track FINAL STATUS:**
+**SS-9 paper status**: SHIPPED at v1.0 (was v0.7 at Session 30 close, v0.8 at Session 31 close). 32 pages compiled output; three pdflatex passes zero errors after pass 3. **No .tex changes from Session 32 v1.0 ship through Session 33 close** — the .tex source is frozen per anti-priority "do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions."
+
+**SS-9 documentation suite status**: ACTIVE (not frozen). Continues to grow with each session that adds SS-9-specific artifacts. The "frozen at v1.0" framing in the prior Session 32 handover applied to the .tex source, not to the documentation suite. Lesson from Session 33 self-correction: the four-tier discipline applies whenever new SS-9 artifacts ship.
+
+**Polish track FINAL STATUS** (unchanged from Session 32 close):
 
 | Sub-task | Description | Status | Session |
 |----------|-------------|--------|---------|
@@ -19,172 +23,152 @@
 | (d.4) | ChatGPT v0.7 re-review | CLOSED via cache-resolution | Session 31 (no paper changes) |
 | (d.5) | Grok v0.7 review incorporation | DONE | Session 31, v0.8 |
 | (d.6) | CoPilot v0.7 close | DONE | Session 31, v0.8 (no incorporation needed) |
-| (d.7) | ChatGPT v0.8 review incorporation | **DONE** | **Session 32, v0.9** |
-| (e) | external/human review | **RESCOPED** | **Session 32, v1.0 (from blocking gate to open invitation post-v1.0 ship via public posting)** |
-| **v1.0 SHIP** | **conditional theorem closure paper** | **SHIPPED** | **Session 32 (this session)** |
+| (d.7) | ChatGPT v0.8 review incorporation | DONE | Session 32, v0.9 |
+| (e) | external/human review | RESCOPED to "open invitation post-v1.0 ship via public posting" | Session 32 |
+| **v1.0 SHIP** | conditional theorem closure paper | **SHIPPED** | Session 32 |
 
-**Cumulative seven-pass review tally (all converged on v1.0-ready):**
+**Cumulative seven-pass review tally** (all converged on v1.0-ready):
 
 | Pass | Reviewer | Version | Result |
 |------|----------|---------|--------|
 | d.1 | ChatGPT | v0.4 | 5 substantive issues + C8 + OPEN-SS-37 → v0.5 |
-| d.2 | CoPilot | v0.5 | 0 issues, polish suggestions → v0.6 |
+| d.2 | CoPilot | v0.5 | 0 issues, polish → v0.6 |
 | d.3 | ChatGPT | v0.6 | 3 residuals → v0.7 |
 | d.4 | ChatGPT | v0.7 | 0 (post-cache-bust) → no change; Lesson 4 |
-| d.5 | Grok | v0.7 | 1 must-fix + housekeeping + figure → v0.8 |
+| d.5 | Grok | v0.7 | 1 must-fix + figure → v0.8 |
 | d.6 | CoPilot | v0.7 | 0, explicit v1.0-ready → no change |
 | d.7 | ChatGPT | v0.8 | 2 figure bugs → v0.9; Lesson 6 |
 
-Final convergence: all seven passes converged on v1.0-ready (d.7 with fixes incorporated at v0.9 prior to v1.0 ship).
-
-**Programme state at Session 32 close:**
+**Programme state at Session 33 close** (unchanged from Session 32):
 
 - Programme negative-result count: 12 (UNCHANGED)
 - All earlier closures preserved
-- Phase 8 Refinement A standing best refinement preserved
-- **OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship** (the conditional closure that OPEN-SS-24 was registered for)
+- **OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship**
 - OPEN-SS-33 ADVANCED status preserved
 - OPEN-ORG-012 RETIRED preserved
-- OPEN-SS-37 REGISTERED preserved with closure routes 4 (UNCHANGED at v1.0)
+- OPEN-SS-37 REGISTERED with closure routes 4 (UNCHANGED at v1.0)
 - SS sector problem count: 19 (UNCHANGED)
-- No new OPEN-SS-* registration this session
 
-## What Session 32 accomplished
+## What Sessions 32 + 33 accomplished (cumulative paper completion sequence so far)
 
-**Sub-task (d.7) ChatGPT v0.8 review** — DONE; v0.8 → v0.9 with two figure fixes + caption softening.
+### Session 32 (already on origin/main since 84ee07f push)
 
-ChatGPT delivered v0.8 review with verdict: *"Almost — but I would fix one v0.8-specific figure issue before stamping v1.0."* Two specific bugs in the eight-panel FvdW deltahedra figure: panel (c) octahedron drew 11 of 12 edges (missing (c6)–(c4)); panel (e) snub disphenoid drew 17 of 18 edges (missing (e3)–(e4)) with degree-coloring not matching adjacency. Recommendation: micro-patch v0.9 fixing figure, then promote to v1.0; no further proof edits identified.
+- v0.8 → v0.9: ChatGPT d.7 review of v0.8 caught two figure bugs (panel (c) octahedron 11 of 12 edges; panel (e) snub disphenoid 17 of 18 edges with degree-coloring mismatch). Per-symmetric-honesty programmatic invariant audit (Lesson 6 NEW) verified both bugs and confirmed all 8 panels CLEAN post-fix. Caption softened from "Schlegel diagrams" to "Schlegel-style projections" with rendering-crossing distinction.
 
-**Per-symmetric-honesty programmatic invariant audit (Lesson 6 NEW).** Both ChatGPT-flagged bugs verified independently against v0.8 source via Python parser that extracts vertex declarations (color = expected degree) and edge declarations (handling chained `--` syntax via tokenize-and-walk and `\foreach` expansion), computes drawn degree per vertex, verifies against color-declared degree and against expected (V, |E|, deg-distribution) for each FvdW deltahedron. Pre-fix audit confirmed both bugs; six other panels CLEAN.
+- v0.9 → v1.0 SHIP: title block updated to v1.0; new "Note on the v1.0 designation" three-paragraph block (~280 words) at end of §9 Roadmap; CHANGELOG v1.0 entry. Sub-task (e) RESCOPED from blocking gate to open invitation post-v1.0 ship via public posting. v1.0 promotion on the explicit basis of seven independent AI review passes; no human domain-expert review available in author's research network; rescope documented in five places (title block, §9 Note, CHANGELOG v1.0, Research_Frontier.md, future_projects.md).
 
-**v0.8 → v0.9 paper edits:**
-1. Panel (c) octahedron: added `(c6) -- (c4)` to c6 spokes line. Post-fix |E|=12, all 6 vertices drawn at deg 4 matching cyan color.
-2. Panel (e) snub disphenoid: added `(e3) -- (e4)` closing the e3-e4-e6-e5-e3 equator cycle. Post-fix |E|=18, drawn-degree {4⁴, 5⁴} matches color-declared distribution.
-3. Caption softening: distinguishes "Schlegel-style projections" (a, b, d, h preserving combinatorial 1-skeleton exactly), notes panel (c) has "one rendering crossing while preserving the 1-skeleton", labels (e)–(g) as "simplified topological schematics", adds clarifying sentence about visual edge crossings reflecting projection layout, not graph intersections.
-4. Title block: "Version 0.9 — 7 May 2026 (v1.0 polish sub-task d.7: ChatGPT v0.8 review incorporation — Figure 1 panel (c) and (e) corrections)".
+### Session 33 (now on origin/main since 8c74067 push)
 
-**Final invariant audit on v0.9: ALL 8 PANELS CLEAN.**
+**Track 3 registers freeze** (patch 0268):
 
-**Sub-task (e) rescope** — from "blocking gate" to "open invitation post-v1.0 ship via public posting".
+- `paper_catalog.md` SS-9 row replaced from "Pre-paper / active development" with "no .tex yet" and "v0.3 working draft" (stale at 4 May Session 12) to "OSF pending" with v1.0 SHIPPED state covering 32 pages compiled, hypothesis stack documented, OPEN-SS-24 ADVANCED → CLOSED, OPEN-SS-37 four closure routes including Route (d) NEW, sub-task (e) RESCOPED, lessons 1-6 systematized, four-tier documentation suite at v1.0 freeze. Last-updated header updated to Session 33 with Earlier 4 May 2026 attribution preserved. Documentation paragraph SS-9 sentence rewritten with full v1.0 freeze details.
 
-Per Thomas's Session 32 statement: *"I don't have any human reviewers in my contact universe. I think we will have to advance to v1.0 with AI review only."* Sub-task (e) was originally registered as the blocking gate before v1.0 ship: external/human domain-expert review by a nuclear physicist or alpha-cluster theorist. Rescoped at v1.0 to "open invitation post-v1.0 ship via public posting" because no human domain-expert reviewer is available in the author's research network.
+- `theorem-registry.md` SS sector header "14 Theorems, 1 Proposition" → "15 Theorems, 1 Proposition" with Sources line extended to include SS-9 attribution. **THEO-SS-16 added** covering five-clause SS-9 main theorem (clauses i-v with three-lemma + three-sub-lemma proof structure conditional on full hypothesis stack with C5/C6/C7/C8 first-principles closure registered as OPEN-SS-29/30/33/37).
 
-**The rescope is documented in five places:**
-1. Title block (visible to first-time readers on PDF title page)
-2. §9 Roadmap to v1.0 subsection — new "Note on the v1.0 designation" three-paragraph block (~280 words)
-3. CHANGELOG v1.0 entry (~165 lines)
-4. Research_Frontier.md last-updated header for Session 32
-5. future_projects.md (A.2) entry — sub-task (e) status RESCOPED
+- `master_glossary.md` new "Terms Added — SS-9 v1.0 (7 May 2026)" addendum with 6 new entries (Conditional theorem closure paper, FvdW classification, Note on v1.0 designation programme practice, Programmatic invariant audit Lesson 6, Schlegel diagram with rendering-crossing distinction, Steinitz's theorem).
 
-**The honesty argument**: a paper that claimed v1.0 status on AI review alone, without making the basis of that status explicit, would mislead readers about the type of validation the paper has received. The rescope is honest, documented, and creates the explicit invitation channel for domain experts via public posting.
+**Track 4 OSF/arXiv post-ship submission guide** (patch 0268, same chain):
 
-**v0.9 → v1.0 SHIP** — DONE; conditional theorem closure paper.
+New file `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md` (~270 lines, 7 sections):
+- §1 Pre-submission checklist
+- §2 OSF deposit procedure (DOI 10.17605/OSF.IO/JXE8D registered)
+- §3 arXiv submission procedure (categories nucl-th + math-ph; CC BY 4.0 license)
+- §4 Post-submission tracking (filing under reviews/external/; v1.x revision protocol)
+- §5 Symmetric-honesty notes (preserving conditional-theorem framing and AI-review-only basis transparency)
+- §6 Coordination with other paper completion sequence tracks
+- §7 Decision authority and execution (Thomas decides timing; Isak handles OSF; Thomas/Isak handles arXiv)
 
-**v1.0 substantive edits:**
+The guide serves as the venue for sub-task (e) external/human review in its rescoped form.
 
-1. **Title block update**: now reads "Version 1.0 — 7 May 2026 (conditional theorem closure paper; v1.0 promotion from v0.9 on the explicit basis of seven independent AI review passes; sub-task (e) external/human review rescoped to open invitation post-v1.0 ship via public posting — see Note on v1.0 designation in §9)".
+**Step A** (patch 0269): Session 33 entry to `session_logs/2026-05-02_session_log.md`.
 
-2. **NEW: "Note on the v1.0 designation"** three-paragraph block (~280 words) added at end of §9 Roadmap to v1.0 subsection. Documents:
-   - The seven AI review passes that contributed to v1.0
-   - The rescope of sub-task (e)
-   - The honest reading of v1.0 as "AI-validated conditional theorem closure paper, ready for external feedback via public posting" rather than "human-domain-expert-validated"
-   - Explicit invitation for domain-expert feedback from nuclear physics, alpha-cluster theory, computational geometry (EDM theory and rigidity theory connecting to OPEN-SS-37 Route (d)), and discrete mathematics (Steinitz theorem realizations, FvdW classification literature)
-   - Clarification that v1.0 is a "conditional theorem closure paper" not a "v1.0 unconditional derivation"
+**Step E** (patch 0270): Research_Frontier.md last-updated header for Session 33; future_projects.md (A.2) milestone tail FINAL marker with five-item post-v1.0 work status; new (A.3) anthology chapter entry PLANNED Session 34; new (A.4) TATWD integration entry PLANNED Session 35; Session 33 entry in Recently Completed.
 
-3. **CHANGELOG v1.0 entry** (~165 lines) with cumulative seven-pass review tally, lessons systematized 1–6, post-v1.0 protocol.
+**Documentation discipline self-correction** — corrective patch chain (patches 0271-0273) added after Thomas caught the gap of skipped Steps B/C/D/H at first attempt:
+- Patch 0271 Step C: Vignette 40 to development-SS-9.md
+- Patch 0272 Step B + Step D: transcript transactions 711-740 + Tier 4 reasoning Session 33
+- Patch 0273 Step H: this handover update (rm + recreate Session 33 close, supersedes Session 32 v1.0 SHIP close)
 
-**Lessons systematized 1–6 across the full polish track:**
+**Lesson learned (programme practice)**: documentation suite is not "frozen at v1.0 ship" if subsequent sessions add SS-9-specific artifacts; the four-tier discipline applies whenever new SS-9 artifacts ship, not only during paper-text development.
 
-1. (Session 30) Re-review by same reviewer at later version is valuable.
-2. (Session 30) Incorporation cycles can introduce new local issues.
-3. (Session 30) Reviews can have systematic blind spots that persist across reviewers.
-4. (Session 31) Cache effects can produce stale-context errors; cache-bust query parameter protocol required.
-5. (Session 31) Reviewer profiles are complementary, not redundant; rotate multiple reviewers; v1.0 ship requires at least two independent v1.0-ready verdicts.
-6. **(Session 32 NEW) Programmatic invariant audit for TikZ figures**: visual inspection is insufficient because the eye fills in expected structure even when absent on the page; write a parser that extracts the figure's combinatorial content and verifies it against the mathematical invariants before commit.
+## Forward queue Sessions 34+
 
-## Forward queue Session 33+ (paper completion sequence proper)
+**Session 34 (planned)**: **Track 1 — anthology chapter at Rovelli/SciAm register** parallel to SS-7 and SS-8 chapters. Single dedicated session, ~3000-5000 words. Six-stage dramatic arc:
+1. The puzzle (SS-7's $3N{-}6$ formula fits twelve nuclei to 1.5%)
+2. The clue ($3N{-}6$ is suspiciously Euler's formula)
+3. The journey (three lemmas + Steinitz + FvdW classification)
+4. The result (conditional theorem)
+5. The honesty (4 OPEN-SS-* registries)
+6. What's still open (deltahedra-gap OPEN-SS-31, Coulomb screening NLO, sub-task (e) rescoped)
 
-Now that SS-9 is shipped at v1.0, the paper completion sequence proper begins:
+Chapter ends with conditional theorem closure paper framing as model for how CPP papers ship. New folder `series_strong/papers/SS-9/anthology/` to be created with SS-9 chapter file. Documentation suite Step C will add Vignette 41 (Session 34 anthology chapter), Step B will add transcript transactions 741+, Step D will add reasoning Session 34, Step H will update handover-SS-9.md to Session 34 close.
 
-**Track 1: anthology chapter** at Rovelli/Scientific American register, parallel to SS-7 and SS-8 chapters in the anthology. Dramatic arc:
-- The puzzle: SS-7 found B(N) = N·B_α + (3N−6)·B_pair fits twelve nuclei to within 1.5% at FvdW values
-- The clue: 3N−6 is suspiciously Euler's formula
-- The journey: deriving the simplicial-polytope structure from physical primitives via three lemmas and Steinitz's theorem
-- The result: conditional theorem on 9 hypotheses
-- The honesty: 4 OPEN-SS-* registries — the proof identifies what isn't yet derived
-- What's still open: FvdW realization (OPEN-SS-37), deltahedra-gap nuclei (OPEN-SS-31), facet (b) mechanism
+**Session 35 (planned)**: **Track 2 — TATWD integration as C4 closure on refined-C1 foundation from SS-7**. Pre-session inspection at start of Session 35:
+- Read `CPP_the_theory.md` (top-level TATWD book file)
+- Read `book_project/TATWD_outline.md`, `book_project/TATWD_outline_revised.md`, `book_project/development_transcript_TATWD_framing.md` (TATWD planning documents)
+- Identify (i) where SS-7 currently appears in TATWD narrative; (ii) what role refined-C1 plays in TATWD; (iii) where the simplicial-polytope assumption (C4) is invoked; (iv) what existing chapter or section structure would naturally host SS-9 derivation
 
-**Track 2: TATWD integration.** SS-9 slots into the Standard Model emergence narrative as the **C4 closure on the refined-C1 foundation from SS-7**. Combined SS-7 + SS-9 narrative: from CPP primitives + refined-C1 + C2 + C3, get the binding formula + simplicial-polytope structure conditionally on C5/C6/C7/C8, with twelve zero-parameter nuclear binding predictions to within 1.5%.
+Integration mechanism: insert SS-9 as the C4-derivation closure on the refined-C1 foundation. Combined SS-7 + SS-9 narrative: "from CPP primitives + refined-C1 + C2 + C3, get the binding formula plus the simplicial-polytope structure conditionally on C5/C6/C7/C8, with twelve zero-parameter nuclear binding predictions to within 1.5%." TATWD-level treatment at register one step above paper but one step below anthology chapter. Documentation suite Step C will add Vignette 42, Step B will add transcript transactions 7XX+, Step D will add reasoning Session 35, Step H will update handover-SS-9.md to Session 35 close.
 
-**Track 3: registers freeze.** Multiple programme-level files need final updates marking SS-9 SHIPPED at v1.0:
-- `paper_catalog.md`: SS-9 v1.0 entry
-- `theorem-registry.md`: Theorem 6.1 (SS-9 main theorem) + Sub-Lemma 2.1 (C7 conditional derivation) + Sub-Lemma 2.2 (3D-non-degeneracy) + Sub-Lemma 2.3 (C5 well-definedness)
-- `Research_Frontier.md`: final update marking SS-9 SHIPPED at v1.0
-- `master_glossary.md`: any new terms locked in (FvdW deltahedron, Schlegel diagram, alpha complex, EDM theory, Cayley-Menger determinant)
-- `future_projects.md`: (A.2) entry status FINAL — v1.0 SHIPPED Session 32; sub-task (e) RESCOPED Session 32
+**Public posting timing** (Track 4 follow-on; PENDING Thomas's discretion):
 
-**Track 4: public posting.** OSF deposit (DOI 10.17605/OSF.IO/JXE8D registered earlier) and arXiv submission as the public-posting venue for sub-task (e) in its rescoped form.
+Two reasonable options both consistent with rescoped sub-task (e):
 
-**Parallel priorities.** OPEN-SS-37 closure routes investigation continues:
+- **Option A: post now.** Locks priority date and starts the external-feedback clock immediately. Risk: feedback arriving mid-Session 34 chapter writing could disrupt narrative work. Benefit: ~1-2 weeks earlier external-feedback collection.
+
+- **Option B: wait for anthology + TATWD complete.** Presents a more complete programme picture at posting time (paper + chapter + TATWD all at v1.0/shipped state). Risk: ~1-2 weeks delay loses potential feedback collection time. Benefit: cleaner narrative integration at posting time.
+
+The paper has been on GitHub since 7 May 2026 and remains accessible there regardless of OSF/arXiv timing. Thomas's call. The OSF/arXiv submission guide (`series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md`) provides the operational protocol for whichever timing is chosen.
+
+**OPEN-SS-37 closure routes investigation continues at programme level**:
 - Route (a): facet (b) sufficiency derivation (needs AMD or Brink–Bloch cluster-model calculations)
-- Route (d): literature review — EDM theory (Schoenberg/Cayley-Menger), rigidity theory (Maxwell-Cremona/Asimow-Roth/Laman/Pollaczek-Geiringer), alpha complexes (Edelsbrunner et al.), realization spaces (Mnëv/Richter-Gebert)
+- Route (d): literature review across EDM theory (Schoenberg/Cayley-Menger), rigidity theory (Maxwell-Cremona/Asimow-Roth/Laman/Pollaczek-Geiringer), alpha complexes (Edelsbrunner et al., 1995), realization spaces (Mnëv/Richter-Gebert)
 
 SS-10 sub-shell-physics multi-paper development continues at programme level as Priority 1.
 
 ## Anti-priorities sustained
 
-- Do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions (v1.0 is shipped; revisions are post-feedback only).
+- Do NOT modify SS-9 v1.0 .tex outside of post-external-feedback v1.x revisions (.tex frozen at v1.0).
 - Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
-- Pre-flight bare-c_i pattern check now standard protocol (zero hits in v1.0 confirmed).
-- Per-panel TikZ invariant audit now standard protocol for any new figure.
+- Pre-flight bare-c_i pattern check standard protocol.
+- Per-panel TikZ invariant audit standard protocol for any new figure (Lesson 6).
 - All Phase 4–11 anti-priorities remain in force.
+- **NEW (Session 33)**: programme-practice documentation discipline applies whenever new SS-9 artifacts ship; the four-tier discipline is not "frozen at v1.0 ship" — it continues with each session that adds SS-9 content (letters, register entries, anthology chapter, TATWD integration). Only the .tex source is frozen at v1.0 (per the existing anti-priority above).
 
-## Apply chain (6-patch chain 0262–0267, Session 32 deliverables)
+## Apply chain instructions for Session 33 supplemental docs (patches 0271-0273)
 
-**Baseline**: Session 31 close commit `684a37f` (origin/main HEAD after Session 31 push).
+**Baseline**: origin/main HEAD `8c74067` (after Session 33 Tracks 3+4 push). Confirm via `git log origin/main --oneline -1`.
 
-**Patch chain:**
-
-| Patch | Step(s) | Description |
-|-------|---------|-------------|
-| 0262 | Substantive (v0.9) | SS-9 v0.8 → v0.9 figure fixes (panel (c), panel (e), caption softening, title block, CHANGELOG v0.9) |
-| 0263 | Substantive (v1.0) | SS-9 v0.9 → v1.0 SHIP (title block v1.0, NEW Note on the v1.0 designation paragraph, CHANGELOG v1.0) |
-| 0264 | Step A + Step C | session_logs/2026-05-02_session_log.md Session 32 entry + development-SS-9.md Vignette 39 |
-| 0265 | Step B + Step D | transcript-SS-9.md transactions 681-710 + reasoning-SS-9.md Tier 4 verbatim Session 32 |
-| 0266 | Step E | Research_Frontier.md last-updated Session 32 + OPEN-SS-24 ADVANCED→CLOSED + OPEN-SS-37 v1.0 ref + future_projects.md (A.2) v1.0 SHIPPED milestone |
-| 0267 | Step H | This handover (rm + recreate Session 32 close handover-SS-9.md) |
-
-**No Step F** — sub-task (d.7) closed an existing OPEN-SS-* registry but didn't create a new one; sub-task (e) rescope is a status change, not a new registry entry.
-
-**Apply sequence on Thomas's local** (per OS §13 Standard apply-chain protocol, three-phase form):
+**Patch chain** (per OS §13 Standard apply-chain protocol, three-phase form):
 
 ```
 cd ~/Documents/GitHub/CPP
 git checkout main
 git pull origin main
-git am ~/Downloads/0262-ss9-v09-figure-fixes-d7.patch
-git am ~/Downloads/0263-ss9-v10-ship-substantive.patch
-git am ~/Downloads/0264-step-a-c-session-log-vignette39.patch
-git am ~/Downloads/0265-step-b-d-transcript-reasoning.patch
-git am ~/Downloads/0266-step-e-research-frontier-future-projects.patch
-git am ~/Downloads/0267-step-h-session32-close-handover.patch
+git am ~/Downloads/0271-step-c-vignette40-development.patch
+git am ~/Downloads/0272-step-b-d-transcript-reasoning.patch
+git am ~/Downloads/0273-step-h-handover-session33-close.patch
 git push origin main
 ```
 
-After successful push, **SS-9 v1.0 is on GitHub origin/main** and the paper completion sequence proper can begin Session 33+.
+After successful push, **the SS-9 documentation suite catches up to the substantive work** — Sessions 32 v1.0 SHIP close handover is superseded by this Session 33 close handover; transcript pointer-map covers transactions 1-740 (was 1-710 before Session 33 supplemental docs); development-SS-9.md covers Vignettes 1-40 (was 1-39 before); reasoning-SS-9.md covers Tier 4 verbatim through Session 33 (was through Session 32 before).
 
-## Key file paths (verbatim, post-Session 32)
+## Key file paths (verbatim, post-Session 33)
 
-- `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` — **v1.0 SHIPPED**, 32 pages compiled, three pdflatex passes zero errors
-- `series_strong/papers/SS-9/documentation_suite/development-SS-9.md` — Vignettes 1–39 (Vignette 39 added at Session 32)
-- `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md` — transactions 1–710 (transactions 681–710 added at Session 32)
-- `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md` — Tier 4 verbatim through Session 32 (Session 32 added)
-- `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` — this file (Session 32 close, v1.0 SHIP)
-- `Research_Frontier.md` — last-updated header at Session 32; OPEN-SS-24 status CLOSED via SS-9 v1.0 ship; OPEN-SS-37 entry shows SS-9 v1.0 reference
-- `future_projects.md` — (A.2) entry shows v1.0 SHIPPED milestone with all 11 sub-tasks complete or rescoped
-- `problem_histories/PH-OPEN-SS-37.md` — 4 closure routes (UNCHANGED at v1.0)
-- `session_logs/2026-05-02_session_log.md` — Session 32 entry appended
+- `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` — **v1.0 SHIPPED** (frozen per anti-priority), 32 pages compiled
+- `series_strong/papers/SS-9/documentation_suite/development-SS-9.md` — Vignettes 1–40 (Vignette 40 added at Session 33 supplemental docs)
+- `series_strong/papers/SS-9/documentation_suite/transcript-SS-9.md` — transactions 1–740 (711-740 added at Session 33 supplemental docs)
+- `series_strong/papers/SS-9/documentation_suite/reasoning-SS-9.md` — Tier 4 verbatim through Session 33 (Session 33 added at supplemental docs)
+- `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` — this file (Session 33 close, supersedes Session 32 v1.0 SHIP close)
+- `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md` — NEW at Session 33; ~270 lines; OSF + arXiv submission protocol; venue for sub-task (e) external/human review in rescoped form
+- `paper_catalog.md` — SS-9 row at v1.0 SHIPPED; last-updated header at Session 33; Documentation paragraph SS-9 sentence at v1.0 freeze accurate state
+- `theorem-registry.md` — SS sector header at "15 Theorems, 1 Proposition"; **THEO-SS-16** present covering SS-9 main theorem
+- `master_glossary.md` — "Terms Added — SS-9 v1.0 (7 May 2026)" addendum at end with 6 new entries
+- `Research_Frontier.md` — last-updated header at Session 33; OPEN-SS-24 status CLOSED via SS-9 v1.0 ship; OPEN-SS-37 entry shows SS-9 v1.0 reference
+- `future_projects.md` — (A.2) entry FINAL with five-item post-v1.0 work status; new (A.3) anthology chapter entry PLANNED Session 34; new (A.4) TATWD integration entry PLANNED Session 35; Recently Completed Session 33 entry above Session 32 entry
+- `problem_histories/PH-OPEN-SS-37.md` — 4 closure routes including Route (d) (UNCHANGED at v1.0)
+- `session_logs/2026-05-02_session_log.md` — Session 33 entry appended; total 3188 lines
 
 ## Final word
 
-**SS-9 SHIPPED at v1.0 (7 May 2026).** Conditional theorem closure paper. v1.0 promotion made on the explicit basis of seven independent AI review passes (d.1–d.7) all converging on v1.0-ready, with sub-task (e) external/human review honestly rescoped from "blocking gate" to "open invitation post-v1.0 ship via public posting." This is the cleanest formal state of the conditional theorem after twelve increments (v0.1 → v1.0) and seven AI review rounds. The paper completion sequence proper (anthology chapter, TATWD integration, registers freeze, OSF deposit + arXiv submission) begins Session 33+.
+**SS-9 SHIPPED at v1.0 (7 May 2026 Session 32)** with conditional theorem closure paper framing. **Session 33 paper completion sequence Tracks 3+4 + supplemental documentation discipline DONE (7 May 2026)** — programme-level registers and SS-9 documentation suite both reflect the current SS-9 v1.0 freeze accurately. Remaining paper completion sequence work: Session 34 anthology chapter, Session 35 TATWD integration, public posting at Thomas's discretion. The paper completion sequence is on track; the next two sessions are the substantive narrative-and-integration work that puts SS-9 in conversation with the broader programme (Rovelli-register accessibility for the anthology, technical-book integration for TATWD).
