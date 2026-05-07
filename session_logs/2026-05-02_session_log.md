@@ -2725,3 +2725,72 @@ Equivalently: there exists a physically realizable $\Nalpha$-alpha cluster confi
 ---
 
 *Session log Session 28 v1.0 polish sub-task (d.1) entry per §4 discipline. Substantive content: 5 ChatGPT review points incorporated as v0.5 corrections; new paper-level conditional C8 (FvdW centroid-realizability) registered; OPEN-SS-37 REGISTERED (NEW). Three pdflatex passes zero errors, 29 pages output. Polish track sub-tasks (a), (b), (c), (d.1) DONE; sub-tasks (d.2), (e) pending. Forward priority Session 29: sub-task (d.2) Copilot review on v0.5 .tex source per symmetric-honesty protocol.*
+
+---
+
+## Session 29 — v1.0 polish sub-task (d.2): Copilot review feedback incorporation (6 May 2026)
+
+**Context.** Session 28 close shipped SS-9 v0.5 with 5 ChatGPT corrections + new paper-level conditional C8 (FvdW centroid-realizability) registered + OPEN-SS-37 REGISTERED (NEW). Sub-task (d.2) AI-team review per symmetric-honesty protocol: submit v0.5 .tex source to Copilot for second independent check after ChatGPT.
+
+**Copilot review delivered.** Editorial review (qualitatively different from ChatGPT's substantive review). 0 new logical gaps identified, 0 substantive technical issues flagged. Copilot specifically endorses ChatGPT's v0.5 corrections as well-implemented (Strengths 1.1–1.5: "lemma stack is now watertight", "C7 and C8 are now correctly separated", "Sub-Lemma 2.1 is rigorous and clean", "Sub-Lemma 2.3 (3D non-degeneracy) is excellent", "the conditional theorem is now fully justified"). Recommendations focus on clarity, reader experience, and editorial rebalancing.
+
+**Per-symmetric-honesty assessment of Copilot points.** All Copilot points assessed against the v0.5 source independently before incorporation. Results:
+
+| # | Copilot point | Assessment | Disposition |
+|---|---------------|-----------|-------------|
+| 2.1 | C8 motivation needs explicit "dominant remaining gap" framing | C8 paragraph already states the realizability claim is paper-level hypothesis; "dominant" is unjustified ranking (C5/C6/C7/C8 sit parallel); explicit-warning sentence is reasonable | **Partial accept**: add explicit caveat without "dominant" framing |
+| 2.2 | C7 framing implies "expected" rather than "assumed" | §2.4 wrap-up already says "None is derived from CPP axioms A1–A11"; redundant clarity is fine | **Accept**: minor clarifying sentence |
+| 2.3 | §11 Physical Interpretation too long (move to appendix) | §11 is 45 lines — comparable to other sections (§5 Lemma B$'$ 43 lines, §6 Theorem 36 lines); §11 connects abstract derivation to broader CPP programme | **Push back**: §11 stays in main body |
+| 2.4 | §8.3 OPEN-SS-32 status oversized (move to supplement) | §8.3 is 31 lines, integral to honest-assessment narrative; cross-paper coherence requires main-body placement | **Push back**: §8.3 stays in main body |
+| 3.1 | Rigid packing should be defined more explicitly | Verified — rigid packing used freely without formal definition | **Accept**: add 3-bullet definition |
+| 3.2 | Clarify H(C) on centroids, not nucleon positions | Already stated in Lemma B$'$ proof; one-line emphasis at first occurrence is fine | **Accept** |
+| 3.3 | One-sentence reminder of why Steinitz applies | Easy add in Lemma B$'$ Step 5 | **Accept** |
+| 4.1 | Boxed statement: C8 is dominant remaining gap | **Reject "dominant"** (see 2.1); replace with neutral acknowledgment that C8 is parallel to C5/C6/C7 | **Adapt** |
+| 4.2 | Clarifying sentence under C7 | Same as 2.2 | **Accept** |
+| 4.3 | Move §11 or §8.3 to appendix | Same as 2.3, 2.4 | **Push back** |
+| 4.4 | Add "Roadmap to v1.0" paragraph in §9 | Genuinely useful for readers; summarizes the four pending OPEN-SS-* closures plus deltahedra-gap and Coulomb | **Accept** |
+
+**Thomas decision on Point 2.1/4.1**: confirmed override on "dominant" framing — C5/C6/C7/C8 sit parallel; ranking is unjustified.
+
+**v0.6 substantive edits (patch 0246).**
+
+1. **§2.4 Rigid packing definition (NEW subsection)**: 3 bullets — no interpenetration; alphas meet only on faces/edges/vertices; no centroid coincidence. Inserted between §2.3 (Contact relation, contact graph, binding) and the existing C5/C6/C7/C8 paper-level structural hypotheses subsection.
+2. **§2.5 C8 caveat paragraph (NEW)**: appended "Important caveat (added v0.6 per Copilot review)" — C8 not derivable from C1$'$+C2+rigid packing alone, not guaranteed by facet (b), parallel to OPEN-SS-29/30/33. Empirical support strong (SS-7 Table 1) but does not constitute derivation.
+3. **§2.5 C7 clarification sentence (NEW)**: appended "To be explicit (added v0.6 per Copilot review)" — C7 not derived in this paper, not guaranteed by rigid packing alone, paper-level hypothesis pending OPEN-SS-33.
+4. **§5 Lemma B$'$ Step 5 expansion**: one-line enumeration of Steinitz preconditions met (simplicity from C2/rigid packing; planarity from C7; 3-vertex-connectedness from triangulation); one-line emphasis that the polytope $P$ is abstract combinatorial, $H(\mathcal{C}) = \mathrm{conv}(c_1, \ldots, c_{\Nalpha})$ is convex hull of centroids, geometric realization is separate content of C8 in Theorem clause (iv).
+5. **§9 Roadmap to v1.0 subsection (NEW)**: six parallel programme-level tasks — OPEN-SS-29 (C5), OPEN-SS-30 (C6), OPEN-SS-33 (C7), OPEN-SS-37 (C8), OPEN-SS-31 (deltahedra-gap), Coulomb screening at NLO. Notes that the four C-conditional closures sit parallel in conceptual weight; ranking among them depends on tractability of candidate closure routes, not on conceptual centrality to the proof structure.
+
+**Pushed back (kept as-is at v0.6).**
+
+- §11 Physical Interpretation stays in main body (45 lines, comparable to other sections, programme coherence).
+- §8.3 OPEN-SS-32 status stays in main body (31 lines, cross-paper coherence).
+- C8 NOT framed as "dominant" remaining gap (C5/C6/C7/C8 sit parallel).
+
+**Effect on hypothesis stack.** UNCHANGED. C1$'$ + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy. v0.6 is editorial polish only, not structural change.
+
+**Effect on §9 gap list.** UNCHANGED in entries; new Roadmap subsection added documenting v1.0 closure path.
+
+**Effect on programme-level OPEN-* registries.** UNCHANGED. Copilot review surfaced no new conditionals. Programme negative-result count UNCHANGED at 12.
+
+**Compilation.** Three pdflatex passes (draftmode for 1, 2; output for 3): zero errors all passes; one pre-existing hyperref Token-not-allowed warning preserved (cosmetic only). One bare-`c_i` math-mode error in initial draft caveat paragraph caught and fixed before final commit. Output 30 pages (was 29 in v0.5; +1 page from v0.6 edits).
+
+**Symmetric-honesty observation.** Two reviewers agreeing on the soundness of v0.5's lemma stack and theorem structure raises confidence that v0.5 → v0.6 polish is sufficient before sub-task (e) external review. ChatGPT (sub-task d.1) and Copilot (sub-task d.2) deliver qualitatively different feedback profiles — surgical-technical vs editorial — and the protocol's value is precisely this complementarity. Future review cycles may benefit from explicitly soliciting both feedback types.
+
+**Polish track status after Session 29 close.**
+
+- Sub-task (a) C7 sub-lemma — DONE (Session 25, v0.2).
+- Sub-task (b) 3D-non-degeneracy sub-lemma — DONE (Session 26, v0.3).
+- Sub-task (c) C5 well-definedness sub-lemma — DONE (Session 27, v0.4).
+- Sub-task (d.1) ChatGPT review incorporation — DONE (Session 28, v0.5).
+- Sub-task (d.2) Copilot review incorporation — **DONE this session (v0.6).**
+- Sub-task (e) external review — PROMOTED to active status for Session 30+.
+
+**Programme state at Session 29 close.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. OPEN-SS-37 REGISTERED preserved. **No new OPEN-SS-* registration this session.** **SS-9 at v0.6** (was v0.5 at Session 28 close). v0.6 represents the cleanest formal state of the conditional theorem after two rounds of substantive AI review with editorial polish complete.
+
+**Forward priority for Session 30+.** Sub-task (e) external review via reviewer-response protocol (`templates/operating_system.md` §4 Phase 4) on v0.6 .tex source. In parallel: continued investigation of OPEN-SS-37 closure routes (especially route (a) facet (b) sufficiency derivation given facet (b)'s established necessary-precondition role); SS-10 sub-shell-physics multi-paper development continues as parallel Priority 1 at programme level.
+
+**Anti-priorities sustained.** Do NOT modify SS-9 v0.6 .tex outside of v1.0 polish revisions. Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
+
+---
+
+*Session log Session 29 v1.0 polish sub-task (d.2) entry per §4 discipline. Substantive content: Copilot review delivered editorial feedback with 0 new logical gaps; v0.5 → v0.6 with rigid packing definition + C8/C7 clarifications + Lemma B$'$ Step 5 expansion + Roadmap to v1.0 subsection; pushed back on §11/§8.3 appendix moves and "dominant C8" framing per symmetric-honesty assessment. Three pdflatex passes zero errors, 30 pages output. Polish track sub-tasks (a), (b), (c), (d.1), (d.2) DONE; sub-task (e) external review PROMOTED to active status. Forward priority Session 30+: sub-task (e) external review on v0.6 .tex source.*
