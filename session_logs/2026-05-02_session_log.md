@@ -2794,3 +2794,69 @@ Equivalently: there exists a physically realizable $\Nalpha$-alpha cluster confi
 ---
 
 *Session log Session 29 v1.0 polish sub-task (d.2) entry per §4 discipline. Substantive content: Copilot review delivered editorial feedback with 0 new logical gaps; v0.5 → v0.6 with rigid packing definition + C8/C7 clarifications + Lemma B$'$ Step 5 expansion + Roadmap to v1.0 subsection; pushed back on §11/§8.3 appendix moves and "dominant C8" framing per symmetric-honesty assessment. Three pdflatex passes zero errors, 30 pages output. Polish track sub-tasks (a), (b), (c), (d.1), (d.2) DONE; sub-task (e) external review PROMOTED to active status. Forward priority Session 30+: sub-task (e) external review on v0.6 .tex source.*
+
+---
+
+## Session 30 — v1.0 polish sub-task (d.3): ChatGPT v0.6 re-review feedback incorporation (6 May 2026)
+
+**Context.** Session 29 close shipped SS-9 v0.6 with Copilot d.2 editorial polish complete. v0.6 was submitted for sub-task (d.3) — second-pass ChatGPT review of v0.6 (after sub-task d.1 ChatGPT review of v0.4 and sub-task d.2 Copilot review of v0.5). ChatGPT delivered re-review with 3 residual technical issues that survived the d.1+d.2 cycle.
+
+**ChatGPT d.3 verdict**: "v0.6 is much improved and nearly review-clean as a conditional theorem, but I would not mark it v1.0 until two small consistency fixes are made... after those edits, I'd call this v1.0-ready as a conditional closure paper."
+
+**Per-symmetric-honesty assessment.** All 3 ChatGPT d.3 points verified against v0.6 source independently before incorporation. All 3 confirmed real technical issues (none stylistic, none push-back-warranted).
+
+| # | Issue | Severity | Disposition |
+|---|-------|----------|-------------|
+| 1 | Sub-Lemma 2.2 hypothesis list missing C8 | Real bug — Step 3 implicitly assumes FvdW physical realizability = C8's content | Accept |
+| 2 | Theorem clause (iv) "every edge of P has length R_aa by C2" — order-of-operations slip (P is abstract until C8 invoked) | Subtle but real | Accept |
+| 3 | Line 1104 "With facet (b), the realization exists at LO" — leftover overclaim | Survived d.1, d.2, internal review | Accept |
+
+**v0.7 fixes (patch 0251).**
+
+**Fix 1 (Sub-Lemma 2.2)**: Added C8 to hypothesis list. Scope narrowed from $\Nalpha \geq 4$ to $\Nalpha \in \{4, 5, 6, 7, 8, 9, 10, 12\}$ (the FvdW values where C8 applies). Step 3 now explicitly invokes C8 with prose: "By C8 (FvdW centroid-realizability, §2.5), each FvdW deltahedron at the specified $\Nalpha$ values is physically realized as an alpha cluster configuration... The existence of these 3D realizations is precisely the content of C8 and is not derivable from C1$'$ + C2 + C3 + C5 alone --- this is why C8 appears in the lemma hypothesis list."
+
+**Fix 2 (Theorem clause (iv))**: Rephrased to make the order-of-operations explicit. New phrasing: "The polytope $P$ is at this stage an abstract combinatorial object without a metric --- the edges of $P$ are 1-cells in the combinatorial polytope, not yet identified with concrete geometric segments. By C2, every contact edge in $G$ corresponds to a centroid pair $(c_i, c_j)$ with separation $|c_i - c_j| = \Raa$ at LO." Then C8 supplies the geometric realization identifying abstract polytope edges with concrete centroid-pair contact edges.
+
+**Fix 3 (Line 1104 facet (b) rephrase)**: "Without facet (b), C8 (FvdW centroid-realizability) would be vacuous at $\Nalpha \geq 7$: facet (b) is a necessary precondition for C8's plausibility at $\Nalpha \geq 7$. With C8, and with facet (b) removing the strict-C1 obstruction at degree-$\geq 5$ vertices, the realization exists at LO." Routes the realization claim through C8 with facet (b) as necessary precondition (parallel to the v0.5 Remark on facet (b) reframe that this leftover sentence had missed).
+
+**Effect on hypothesis stack.** Sub-Lemma 2.2 now requires C8 (paper-internal scope adjustment). Global theorem hypothesis stack UNCHANGED at C1$'$ + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy.
+
+**Effect on §9 gap list.** UNCHANGED. v0.7 is paper-internal precision tightening; no new gaps closed or opened.
+
+**Effect on programme-level OPEN-* registries.** UNCHANGED. No new OPEN-SS-* registration. Programme negative-result count UNCHANGED at 12.
+
+**Pre-flight pattern check (new).** Implemented bare-c_i / c_j / c_n / c_1 etc. token check before pdflatex pass per Session 29 lesson. Pattern caught 4 hits in v0.7 source — all inside CHANGELOG comment lines (`%` prefix, doesn't reach paper body), so no fix needed. Pre-flight works as designed for filtering false positives via comment-line context. No bare-c_i math-mode errors at first compile pass for v0.7 (vs. v0.5 and v0.6 which both had bare-c_i errors caught at compile time).
+
+**Compilation.** Three pdflatex passes (draftmode for 1, 2; output for 3): zero errors all passes; one pre-existing hyperref Token-not-allowed warning preserved (cosmetic only). Output 31 pages (was 30 in v0.6; +1 page from v0.7 edits and CHANGELOG entry).
+
+**Symmetric-honesty observation across d.1+d.2+d.3 review cycle.** Cumulative observations now warrant systematic recording:
+
+- **d.1 ChatGPT review of v0.4 (Session 28)**: 5 substantive logical/structural gaps identified. Required v0.4 → v0.5 substantive correction + new paper-level hypothesis (C8) registration.
+- **d.2 Copilot review of v0.5 (Session 29)**: 0 new logical gaps. Editorial polish recommendations only. Independently endorsed ChatGPT's d.1 fixes.
+- **d.3 ChatGPT re-review of v0.6 (Session 30)**: 3 residual technical issues. Sub-Lemma 2.2 missing C8 (issue present even in v0.4 — ChatGPT's own d.1 review missed it); clause (iv) order-of-operations slip (introduced by my v0.5 incorporation, missed by d.2); line 1104 facet (b) leftover (oldest, survived all three rounds).
+
+**Lesson 1**: Even the strongest reviewer's first pass misses things their own second pass catches. Re-review by the same reviewer at a later version is genuinely valuable, especially when the version increment includes substantial restructuring (as v0.4 → v0.5 did with C8 registration and clause (iv) rework).
+
+**Lesson 2**: The incorporation cycle itself can introduce new local issues. Fix 2 (clause (iv) order-of-operations) was specifically created by my v0.5 work — the rework to invoke C8 explicitly created the slip between abstract-polytope edges and metric-edges. Self-review pass after each incorporation should specifically check for "issues introduced by the fix."
+
+**Lesson 3**: Reviews can have systematic blind spots that persist across reviewers. Fix 3 (line 1104) survived three reviews — d.1 ChatGPT, d.2 Copilot, internal — because the offending sentence is in a section (Theorem proof, geometric realizability subsection) that all three reviewers may have skimmed as "physical-interpretation context" rather than "core proof claim." Future reviews should specifically pass over physical-interpretation sections with the same scrutiny as core lemma proofs.
+
+**Polish track status after Session 30 close.**
+
+- Sub-task (a) C7 sub-lemma — DONE (Session 25, v0.2).
+- Sub-task (b) 3D-non-degeneracy sub-lemma — DONE (Session 26, v0.3).
+- Sub-task (c) C5 well-definedness sub-lemma — DONE (Session 27, v0.4).
+- Sub-task (d.1) ChatGPT v0.4 review incorporation — DONE (Session 28, v0.5).
+- Sub-task (d.2) Copilot v0.5 review incorporation — DONE (Session 29, v0.6).
+- Sub-task (d.3) ChatGPT v0.6 re-review incorporation — **DONE this session (v0.7).**
+- Sub-task (e) external (human domain-expert) review — PROMOTED to active status; remains the only outstanding sub-task before v1.0 ship.
+
+**Programme state at Session 30 close.** Programme negative-result count UNCHANGED at 12. All earlier closures preserved. Phase 8 Refinement A standing best refinement preserved. OPEN-SS-24 ADVANCED status preserved. OPEN-SS-33 ADVANCED status preserved. OPEN-ORG-012 RETIRED preserved. OPEN-SS-37 REGISTERED preserved. **No new OPEN-SS-* registration this session.** SS sector problem count UNCHANGED at 19. **SS-9 at v0.7** (was v0.6 at Session 29 close). v0.7 represents the cleanest formal state of the conditional theorem after three rounds of substantive AI review.
+
+**Forward priority for Session 31+.** Sub-task (e) external review on v0.7 .tex source. Per ChatGPT d.3 verdict, v0.7 is "v1.0-ready as a conditional closure paper" modulo external human review. Best case at sub-task (e): external reviewer agrees → v0.7 → v1.0 ship. Likely case: external reviewer surfaces 1–3 issues mixing substantive and editorial (per the d.1 + d.2 + d.3 pattern) → v0.7 → v0.8 incorporation cycle. In parallel: continued investigation of OPEN-SS-37 closure routes (especially route (a) facet (b) sufficiency derivation); SS-10 sub-shell-physics multi-paper development continues as parallel Priority 1 at programme level.
+
+**Anti-priorities sustained.** Do NOT modify SS-9 v0.7 .tex outside of v1.0 polish revisions. Do NOT propose any single-session R3-channel refinement to close the 52% empirical gap.
+
+---
+
+*Session log Session 30 v1.0 polish sub-task (d.3) entry per §4 discipline. Substantive content: ChatGPT v0.6 re-review delivered 3 residual technical issues (Sub-Lemma 2.2 missing C8; clause (iv) order-of-operations slip; line 1104 facet (b) leftover); v0.6 → v0.7 with all 3 incorporated as accept-no-pushback fixes; pre-flight bare-c_i pattern check implemented per Session 29 lesson. Three pdflatex passes zero errors, 31 pages output. Polish track sub-tasks (a), (b), (c), (d.1), (d.2), (d.3) DONE; sub-task (e) external review the only outstanding sub-task before v1.0 ship. Per ChatGPT d.3 verdict: v0.7 is v1.0-ready as conditional closure paper modulo external human review.*
