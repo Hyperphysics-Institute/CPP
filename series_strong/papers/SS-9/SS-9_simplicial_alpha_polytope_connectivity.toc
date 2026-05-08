@@ -1,0 +1,52 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Open Problems Addressed}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Cascade context}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}What SS-9 delivers}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}What SS-9 does not deliver}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Setup and Notation}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Alpha-cluster configuration}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Refined-C1 (multi-faceted alpha rigidity, inherited from SS-7 v1.3 \S 2.1)}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Contact relation, contact graph, binding (inherited from SS-7)}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Rigid packing}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Paper-level structural hypotheses (the conditionals)}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Sub-Lemma 2.1: Conditional derivation of C7 from cluster contractibility}{9}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Sub-Lemma 2.2: 3D-non-degeneracy via maximum-edge selection}{11}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Sub-Lemma 2.3: Well-definedness of the C5 ground state via compactness}{13}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Auxiliary assumptions}{15}{subsection.2.9}%
+\contentsline {section}{\numberline {3}Lemma A: Pairwise Triangular Contact}{15}{section.3}%
+\contentsline {section}{\numberline {4}Lemma C: Energy Minimization Picks Maximum Edges}{16}{section.4}%
+\contentsline {section}{\numberline {5}Lemma B$'$: Contact Graph is 1-Skeleton of Convex 3-Polytope}{16}{section.5}%
+\contentsline {section}{\numberline {6}Main Theorem (Conditional C4 Closure)}{17}{section.6}%
+\contentsline {section}{\numberline {7}Scope Notes (Deltahedra-Gap, $N_{\alpha }= 3$ Degenerate, Coulomb)}{20}{section.7}%
+\contentsline {subsection}{\numberline {7.1}The deltahedra-gap range $N_{\alpha }\in \{11, 13, 14\}$}{20}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The $N_{\alpha }= 3$ planar degenerate case}{20}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Coulomb screening at the deltahedral surface}{20}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Honest Assessment of Closure Status}{20}{section.8}%
+\contentsline {subsection}{\numberline {8.1}What v0.1 delivers}{20}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}What v0.1 does not deliver}{21}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}OPEN-SS-32 / U-shape investigation status (Phases 1--11, Sessions 13--23)}{21}{subsection.8.3}%
+\contentsline {paragraph}{Closures and ruling-outs.}{21}{section*.3}%
+\contentsline {paragraph}{Positive scoping outcomes.}{22}{section*.4}%
+\contentsline {paragraph}{Phase 11 R3-Pauli (Session 23 close, 6 May 2026).}{22}{section*.5}%
+\contentsline {paragraph}{Status at v0.1 ship.}{22}{section*.6}%
+\contentsline {paragraph}{Methodological category introduced at Phase 11.}{23}{section*.7}%
+\contentsline {subsection}{\numberline {8.4}Net effect on programme scorecard}{23}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Gaps That Remain to Close Before SS-9 v1.0}{23}{section.9}%
+\contentsline {paragraph}{Note on the v1.0 designation.}{26}{section*.9}%
+\contentsline {section}{\numberline {10}Phase 4 Sketch: Programme-Level Closure Attempts}{26}{section.10}%
+\contentsline {paragraph}{C5 derivation (sketch).}{26}{section*.10}%
+\contentsline {paragraph}{C6 derivation (sketch).}{26}{section*.11}%
+\contentsline {paragraph}{C7 derivation (sketch).}{27}{section*.12}%
+\contentsline {paragraph}{Common theme.}{27}{section*.13}%
+\contentsline {section}{\numberline {11}Physical Interpretation}{27}{section.11}%
+\contentsline {subsection}{\numberline {11.1}CP/GP Signature at This Scale}{28}{subsection.11.1}%
+\contentsline {paragraph}{Load-bearing axiom identification.}{28}{section*.14}%
+\contentsline {paragraph}{Visible-vs-smoothed discreteness.}{28}{section*.15}%
+\contentsline {paragraph}{Macroscopic shadow correspondence.}{29}{section*.16}%
+\contentsline {section}{\numberline {12}CPP-to-Conventional-Physics Mapping}{29}{section.12}%
+\contentsline {section}{\numberline {13}Conclusion}{29}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Swarm-Validation Contribution}{30}{subsection.13.1}%
+\contentsline {paragraph}{Predictions added.}{30}{section*.18}%
+\contentsline {paragraph}{Running swarm total.}{30}{section*.19}%
+\contentsline {paragraph}{Implausibility-of-accident statement.}{30}{section*.20}%
+\contentsline {subsection}{\numberline {13.2}Problem Status After This Paper}{30}{subsection.13.2}%

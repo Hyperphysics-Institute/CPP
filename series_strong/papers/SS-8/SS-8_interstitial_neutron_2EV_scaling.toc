@@ -1,0 +1,77 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}The cascade paradigm extended to interstitials}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Scope and framing}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}The central formula}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}How to read this paper}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}What SS-8 delivers}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}What SS-8 does not deliver}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Open Problems Addressed}{7}{subsection.1.7}%
+\contentsline {section}{\numberline {2}Derivation}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Inherited assumption stack (C1--C4)}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}New interstitial-scale hypothesis stack (D1--D3)}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Layer 1: Pure combinatorics}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Layer 2a: Quantum sourcing of $B_{\text {pair}}$}{9}{subsection.2.4}%
+\contentsline {paragraph}{Axiom citations (from \texttt {axiom-registry.md}, 23 April 2026).}{9}{section*.2}%
+\contentsline {paragraph}{The $B_{\text {pair}}$ derivation.}{10}{section*.3}%
+\contentsline {paragraph}{Pattern 6: scale recurrence.}{10}{section*.4}%
+\contentsline {subsection}{\numberline {2.5}Layer 2b: D1 as a conditional theorem}{11}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Conditional-theorem status explained}{11}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Level-1, Level-2, Level-3 independence decomposition}{12}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}The D1--D2 coupling}{12}{subsubsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.6}Layer 2b: D2 --- \ensuremath {K_3}-edge coupling at the host vertex}{13}{subsection.2.6}%
+\contentsline {paragraph}{Geometric justification.}{13}{section*.5}%
+\contentsline {paragraph}{Connection to A6$'$.}{13}{section*.6}%
+\contentsline {paragraph}{Status.}{13}{section*.7}%
+\contentsline {subsection}{\numberline {2.7}Layer 2b: D3 --- Bulk-regime averaging}{13}{subsection.2.7}%
+\contentsline {paragraph}{The natural objection, and its partial answer.}{13}{section*.8}%
+\contentsline {paragraph}{Status.}{14}{section*.9}%
+\contentsline {subsection}{\numberline {2.8}Theorem 2: The H2$'$ interstitial scaling law}{14}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Theorem vs.\ hypothesis: the epistemic split}{15}{subsection.2.9}%
+\contentsline {section}{\numberline {3}Numerical Predictions}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The 12-row $k_{\text {eff}}$ table at $N_{\text {ex}}= 2$}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Zero-parameter-integrity audit}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Concurrent-fit interpretation}{17}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Hostile-geometry stress test}{17}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Residual interpretation: a provisional model for the bulk-regime residual}{18}{subsection.3.5}%
+\contentsline {paragraph}{Inheritance from SS-5 (not new physics).}{18}{section*.10}%
+\contentsline {paragraph}{Provisional transport: the attenuation factor.}{19}{section*.11}%
+\contentsline {paragraph}{Status and scope.}{19}{section*.12}%
+\contentsline {paragraph}{Tightened residual band.}{19}{section*.13}%
+\contentsline {paragraph}{Honest reporting.}{20}{section*.14}%
+\contentsline {subsection}{\numberline {3.6}Recovery of Framing C as corollary}{20}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Extension to $N_{\text {ex}}> 2$: Secondary content with acknowledged precision degradation}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Scope and precision statement}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}H4$'$: Pauli decrement at higher $N_{\text {ex}}$}{21}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Empirical map across $N_{\text {ex}}\in \{3, \ldots , 8\}$}{21}{subsection.4.3}%
+\contentsline {paragraph}{Precision bound and sources.}{22}{section*.15}%
+\contentsline {paragraph}{The \S \ref {sec:numerical-predictions} headline stands independently.}{22}{section*.16}%
+\contentsline {section}{\numberline {5}Physical Interpretation}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}The interstitial neutron as a CP-aggregate at a host alpha-vertex}{22}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}DP-sea rearrangement and the SSV field}{23}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Why the scaling law is universal across polytope identity}{23}{subsection.5.3}%
+\contentsline {section}{\numberline {6}CPP-to-Conventional-Physics Mapping}{23}{section.6}%
+\contentsline {paragraph}{No numerical equivalence is claimed.}{24}{section*.17}%
+\contentsline {section}{\numberline {7}Scope Limits and Open Problems}{24}{section.7}%
+\contentsline {subsection}{\numberline {7.1}What SS-8 v1.0 covers}{24}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}What SS-8 v1.0 defers: OPEN-SS-23 (inherited from SS-7)}{24}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}OPEN-SS-26 (new, partially resolved)}{24}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}OPEN-SS-27 (new, expanded scope)}{25}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}OPEN-SS-28 (new)}{25}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Level-3 independence as programme-level question}{25}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Registry Impact}{25}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Axioms (no change)}{25}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Theorems (three new)}{25}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Open problems (three opened, one partially resolved)}{26}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Predictions (12 primary, 30 secondary)}{26}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Pattern 6 instances}{26}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Discussion}{26}{section.9}%
+\contentsline {subsection}{\numberline {9.1}The emergence of a second nuclear-chart mapping}{26}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Recurrence of $M_0/\varphi $ across four scales}{27}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Falsifiability inventory}{27}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Hostile-geometry stress test and limits of the formula}{27}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Conclusion}{28}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Problem Status After This Paper}{28}{subsection.10.1}%
+\contentsline {section}{Acknowledgements}{28}{section*.18}%
+\contentsline {section}{\numberline {A}Script Inventory}{29}{appendix.A}%
+\contentsline {section}{\numberline {B}Data Sources}{29}{appendix.B}%
+\contentsline {section}{\numberline {C}Notation Glossary}{30}{appendix.C}%

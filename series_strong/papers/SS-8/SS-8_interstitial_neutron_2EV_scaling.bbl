@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{abshier2026ss5}
+Thomas~Lee Abshier and {Claude Opus (Anthropic)}.
+\newblock {Light-Nuclei Binding Energies from the Open-Vertex Cascade}.
+\newblock {\em Hyperphysics Institute}, 2026.
+\newblock SS-5 v6; light-nuclei cascade B(A,Z) = (A-1) n\_np M\_0/\phi -
+  Coulomb - (n\_pp+n\_nn) M\_0/\phi^3 + $\delta_{A,4}$ M\_0/\phi; four
+  zero-parameter bindings (d, 3H, 3He, 4He) at $\leq 5.3\%$ error; three
+  unboundness predictions (5He, 5Li, 8Be) confirmed; v6 adds inline citations
+  and four Copilot explanatory remarks.
+
+\bibitem{abshier2026ss7}
+Thomas~Lee Abshier, {Claude Opus (Anthropic)}, ChatGPT, {Copilot (Microsoft)},
+  and {Grok (xAI)}.
+\newblock {The Alpha-Cluster Regime and the $3N-6$ Edge Formula: Zero-Parameter
+  Binding Energies for Strict $N{=}Z$ Alpha-Chain Nuclei}.
+\newblock {\em Hyperphysics Institute}, 2026.
+\newblock SS-7 v1.2; alpha-cluster formula $B(N_\alpha) = N_\alpha B_\alpha +
+  (3N_\alpha - 6) B_\text{pair}$ with $B_\alpha = 28.296$ MeV and
+  $B_\text{pair} = M_0/\varphi = 2.342$ MeV (both from SS-5); 12 concurrent
+  zero-parameter predictions across strict $N{=}Z$ alpha-chain nuclei at
+  $N_\alpha \in [3, 14]$ (${}^{12}$C through ${}^{56}$Ni) all within $\pm
+  1.5\%$, RMS $0.80\%$; ${}^8$Be near-threshold unbound derived in-formula via
+  single-edge Coulomb cancellation, $R_{\alpha\alpha} = 2.37$ fm by inversion;
+  hostile-geometry stress test establishes edge-count dominance at
+  single-$B_\text{pair}$ sensitivity; registers THEO-SS-12 (simplicial polytope
+  edge count $= 3N_\alpha - 6$, Euler's formula) and OPEN-SS-24 (simplicial
+  contact structure derivation), OPEN-SS-25 (DP-sea Coulomb screening);
+  partially resolves OPEN-SS-18 (alpha-cluster regime); retires OPEN-SS-22
+  (icosahedral closure) as first retired open problem in CPP programme record,
+  v1.1 empirical anchor shown to be isotope-selection artifact during SS-8
+  Phase 1 exploration with three-reviewer convergence; narrative at
+  \texttt{problem\_histories/PH-OPEN-SS-22.md}.
+
+\end{thebibliography}
