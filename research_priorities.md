@@ -215,6 +215,30 @@ arXiv requires endorsement from existing arXiv authors in target categories befo
 
 **Workaround if endorsement is unobtainable**: Zenodo as primary venue. Zenodo issues real DOIs, is operated by CERN (institutional credibility), has no submission friction, and is increasingly used by physicists for preprints when arXiv access is unavailable.
 
+### arXiv endorsement readiness criteria (Thomas-articulated, Session 36 close+)
+
+Thomas has identified two friends peripherally connected to arXiv-authorized authors. He is **willing to make a limited appeal to those friends** for endorsement — but only when the appeal is well-substantiated. Burning that limited social capital prematurely would be costly and irreversible.
+
+**Three preconditions must all be met before the endorsement appeal happens**:
+
+1. **A well-substantiated paper that solves a known-unknown in physics is in hand.** Track 1 (hierarchy paper) at v1.0 SHIP minimum; possibly strengthened by Track 2 (anomaly paper #2) landing for cumulative force.
+
+2. **The full CPP theory is documented on OSF** (or equivalent durable-DOI venue if OSF resolution falls through to Zenodo). This means: the paper series + supporting documentation + axiom set + companion files visible as a coherent body of work, not just a single paper standing alone. The endorsement evaluation likely involves the friend (or their arXiv-connected contact) checking what stands behind the paper they're being asked to endorse.
+
+3. **The theory is well-presented on hyperphysics.com.** This is the "first impression" venue when an evaluator Googles the work or follows a website link from the paper. The website's quality directly mediates the endorsement-readiness judgment, and it's also the venue most physicists who encounter CPP via paper citation will find first.
+
+**Timing implication**: All three preconditions are 9–15 months out at current pace (Track 1 ~2-3 months, Track 2 ~3-5 months after that, OSF/Zenodo full-deposit ~1-2 months parallel work, hyperphysics.com presentation refresh ~unknown depending on current state). The endorsement appeal is therefore **not an immediate action item**; it's the gate at the end of the next major work phase.
+
+**Strategic implications for current priority order**:
+
+- **`hyperphysics.com` presentation becomes an active strategic project**, not background. It's the first-impression venue for endorsement evaluation and for any physicist who Googles CPP after seeing a paper. Worth tracking as a parallel strand alongside Tracks 1-4 papers. Status: not currently registered as an active project; **promote when Track 1 paper drafting reaches mid-stage** (~Sessions 39-41) so website refresh and Track 1 v1.0 SHIP can land together.
+
+- **OSF JXE8D resolution becomes a strategic blocker**, not just an inconvenience. The endorsement criteria push it harder than just "wait 5 business days then Zenodo fallback." Two paths: (a) **resolve OSF JXE8D actively** (escalation, support follow-through, persistence) so the master deposit lives there as originally planned; or (b) **commit fully to Zenodo as the master-deposit venue**, migrating JXE8D's intended purpose to Zenodo's structure. **Decision deferred to Session 37+**, but not indefinitely — by the time Track 1 ships, the master-deposit venue must be settled.
+
+- **The Track 2 candidate selection** can be informed by the endorsement criteria. A second known-unknown solution paper materially strengthens precondition 1. So Track 2 is not optional in the endorsement-readiness sequence; it's the second of two anchor papers.
+
+**Risk note**: Endorsement requests from peripheral connections are a one-shot resource. If made too early (before the work warrants the trust being asked for), the friend may decline OR provide endorsement but with reservations that propagate to their arXiv-authorized contact. Either failure mode poisons the channel for years. The discipline of waiting until all three preconditions are met is therefore strategically correct, even if it feels slow.
+
 ### OSF status (as of Session 36 close)
 
 OSF Open-Ended Registration `10.17605/OSF.IO/JXE8D` (the Conscious Point Physics Paper Series master) was created Mar 31, 2026, and is currently stuck in **"Pending Admin Contributor Approval"** state for 38+ days despite documented 48-hour auto-approval window. Thomas is the sole admin contributor; multiple support tickets have gone unanswered (one received a wrong-registration response). One more diagnostic-precise support ticket has been queued.
