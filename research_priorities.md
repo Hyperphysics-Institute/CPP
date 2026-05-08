@@ -93,7 +93,7 @@ By this test:
 ### Track 1 — Hierarchy problem reframing paper [ACTIVE]
 
 **Status**: PLANNED → drafting begins Session 37+
-**Outline location**: `papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md`
+**Outline location**: `flagship_papers/hierarchy_problem/hierarchy_paper_outline.md` (relocated from `papers_in_progress/` per patch 0293 — see [`flagship_papers/README.md`](flagship_papers/README.md))
 **Working title**: *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*
 **Estimated effort**: 5-8 sessions to v1.0
 **Target venue**: Zenodo (DOI) primary; arXiv hep-ph + math-ph if endorsement obtainable

@@ -41,6 +41,19 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 
 ---
 
+## [`flagship_papers/`](flagship_papers/) — Cross-Cutting Apex Papers
+
+Cross-cutting papers that solve named unsolved problems in physics (hierarchy problem, cosmological constant, strong CP, muon g-2, etc.), make forced-choice prospective predictions, or provide cross-domain unification. These are the artifacts that carry the framework to the physics community; series papers are the derivation infrastructure they build on. Established at Session 37 opening (patch 0293) per the Session 36 close+ strategic decision.
+
+| File / Folder | Description |
+|------|-------------|
+| [`README.md`](flagship_papers/README.md) | Folder rationale, inclusion criterion, current contents |
+| [`hierarchy_problem/`](flagship_papers/hierarchy_problem/) | **Track 1 [ACTIVE]** — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*; outline-stage, drafting begins Session 37+ |
+
+See [`research_priorities.md`](research_priorities.md) for the strategic frame and four-track priority order.
+
+---
+
 ## [`series_strong/`](series_strong/) — Strong Sector (SS)
 
 The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucleon structure, string tension, deuteron binding, deuteron observables scoping, alpha-cluster regime, and interstitial-neutron 2E/V scaling. **SS-1 registered on OSF. SS-2, SS-3, SS-4, SS-5, SS-6, SS-8 pending. SS-7 has existing OSF DOI from v0.1; v1.2 update pending.**

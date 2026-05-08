@@ -32,6 +32,17 @@ The Standard Model requires 3 free parameters for the charged lepton masses. The
 
 ---
 
+## Flagship Papers
+
+[`flagship_papers/`](flagship_papers/) houses the programme's cross-cutting apex artifacts: papers that solve named unsolved problems in mainstream physics (hierarchy problem, cosmological constant, strong CP, muon g-2), make forced-choice prospective predictions, or provide cross-domain unification. They build on the series papers below — they do not replace them — and are written for an audience reading across sectors. Currently in development:
+
+- **Track 1 [ACTIVE]** — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells.* The full Standard Model fermion mass spectrum from a single mass scale $M_0 = m_e \cdot z/\phi \approx 3.79$ MeV via 600-cell distance-shell multipliers and the K3 spectral structure. Outline at [`flagship_papers/hierarchy_problem/`](flagship_papers/hierarchy_problem/).
+- **Tracks 2-4 [PLANNED]** — second anomaly-targeting paper, eight-experiment manifesto audit, and cross-cutting unification paper. See [`flagship_papers/README.md`](flagship_papers/README.md).
+
+The strategic frame governing flagship-paper selection and series-paper completeness is in [`research_priorities.md`](research_priorities.md).
+
+---
+
 ## Registered Papers (19)
 
 All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D). PDFs are available on the [OSF project page](https://osf.io/9dfya/). Source files and documentation are in this repository.
