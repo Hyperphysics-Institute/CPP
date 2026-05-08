@@ -154,31 +154,29 @@ Patch 0288 (Session 36 close): `todolist.md` cleanup + Session 36 entry to `sess
 
 ---
 
-## Patches landed Session 36 (chronological)
+## Patches landed Session 36 (chronological — full session including close+)
 
-| # | Patch | Effect | Commit |
+| # | Patch | Effect | Commit (origin/main) |
 |---|---|---|---|
 | 1 | 0285 | Session 36 errata: handover-SS-9.md filename (3 places) + todolist.md TODO-002 scope | `0fcf2a1` |
 | 2 | 0286 | SS-8.tex `\Kthree` macro `\ensuremath` wrapper (line 248) | `4ad9775` |
 | 3 | 0287 | SS-8.tex `\usepackage{xcolor}` import (line 231, before mdframed) | `e8031b3` |
 | - | (Direct) | SS-8 + SS-9 clean PDFs added to repo (binary build artifacts, no patch chain) | `55c5986` |
 | - | (Revert) | Damaged-PDF commit `6e86818` reverted | `ccb6041` |
-| 4 | 0288 | Session 36 close P1 hygiene cleanup: todolist.md + session log + Research_Frontier.md last-updated | `2004327` (sandbox; needs Thomas push) |
+| 4 | 0288 | Session 36 close P1 hygiene cleanup: todolist.md + session log + Research_Frontier.md last-updated | `2004327` |
+| 5 | 0289 | THIS handover document, initial version (Session 36 close) | `447dac9` |
+| 6 | 0290 | Strategic conversation deliverables: NEW research_priorities.md + NEW papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md + UPDATED handover (this file) + UPDATED session log + UPDATED Research_Frontier.md | `12646fe` |
+| - | (Direct) | SS-8 + SS-9 LaTeX build artifacts (.aux/.bbl/.blg/.log/.out/.toc) inadvertently committed during Thomas's local rebuild — see "Build artifacts hygiene" note below | `9a5ed4f` |
+| 7 | 0291 | Session 36 close+ arXiv endorsement readiness criteria added to research_priorities.md (Thomas-articulated 3 preconditions + timing implication + strategic implications) | `ad54d95` |
 
-**Note on patch 0288**: Apply chain when Thomas next runs sessions:
-```bash
-cd ~/Documents/GitHub/CPP
-git checkout main
-git pull origin main
-git am ~/Downloads/0288-session36-close-p1-hygiene-cleanup.patch
-git push origin main
-```
+**Origin/main HEAD at Session 36 final close**: `ad54d95` (verified Friday 8 May 2026, after both 0290 and 0291 pushed).
 
-The patch file is at `/mnt/user-data/outputs/0288-session36-close-p1-hygiene-cleanup.patch` (note: NOT `/mnt/user-data/outputs/patches/` — that subdirectory hit I/O errors during Session 36 close, so the patch was placed in the parent directory).
+**Build artifacts hygiene note (re commit `9a5ed4f`)**: While compiling SS-8 and SS-9 PDFs, Thomas's local build added 12 LaTeX intermediate files (.aux, .bbl, .blg, .log, .out, .toc) to the repo. These are normally .gitignored. Not a crisis — they're harmless content — but worth cleaning up at some point: add the relevant patterns to `.gitignore` and `git rm --cached` the existing files. Low-priority hygiene task; not Session 37 forward queue.
 
 ---
 
 ## Strategic decision at Session 36 close (SUPERSEDES previous Forward queue Active item 1)
+
 
 **After patch 0289 was complete, Thomas opened a substantive strategic conversation that produced a programme-wide reprioritization.** The previous forward-queue assumption (Session 37 opens with "what should SS-10 be?") is **superseded**. The new strategic frame and active priorities are documented in:
 
@@ -303,20 +301,103 @@ When Session 37 starts, the next Opus context should:
 
 ---
 
-## How to use this handover
+## Workflow lessons from Session 36 close (for future Opus context windows working with Thomas in Git Bash)
+
+Several terminal-interaction patterns surfaced during Session 36 close that future contexts should anticipate:
+
+### 1. Pager (`less`) behavior in Git Bash
+
+Git auto-paginates output from `git log`, `git show`, `git diff` if it exceeds screen height. Symptom: Thomas's terminal shows `:` at the bottom instead of `$` prompt. Anything typed at this state goes to the pager, not bash.
+
+**Fix**: Press `q` to exit pager. Then back at `$` prompt.
+
+**Avoidance for diagnostic commands**: Use `git --no-pager <subcommand>` to dump output directly. E.g., `git --no-pager show --stat <hash>` instead of `git show --stat <hash>`. **The next context window should default to `--no-pager` for inspection commands** to spare Thomas this friction.
+
+### 2. Bracketed-paste mode escape sequences
+
+Git Bash sometimes negotiates bracketed-paste mode without the shell stripping the markers. Symptom: pasted commands fail with `^[[200~git: command not found` or appear to land but don't execute. Tilde character `~` at command end is the closing marker.
+
+**Fix per session**: `printf '\e[?2004l'` once at session start.
+
+**Workaround**: Have Thomas type commands manually instead of pasting when this state is active.
+
+### 3. Stuck `git am` state
+
+Symptom: prompt shows `(main|AM 1/1)` instead of `(main)`. A previous patch apply left scratch directory `.git/rebase-apply` behind. Subsequent `git am` calls fail with `fatal: previous rebase directory .git/rebase-apply still exists but mbox given`.
+
+**Fix**: `git am --abort`. Verify with `git status` — should show clean working tree.
+
+**Avoidance**: When delivering patches, future contexts should explicitly note "if any error occurs during apply, run `git am --abort` before troubleshooting" so Thomas knows the recovery step.
+
+### 4. Apply ≠ Push
+
+`git am` only commits to local repo. **It does NOT push to GitHub.** Recurring lapse pattern: patch applied, work moves on, push step forgotten, patch sits stranded on local HEAD until Thomas notices files missing from origin/main.
+
+**Future-context discipline**: At the end of every patch delivery message, include the explicit two-step:
+
+```
+Apply: git am ~/Downloads/<patch-file>
+Push:  git push origin main
+```
+
+Both steps. Always. As the last thing in the message. This makes the push step impossible to miss because it's right there. Patch 0290 was almost stranded this way; only Session 36 close conversation surfaced the lapse.
+
+**Optional structural fix** (Thomas can decide): add `cpp-apply-and-push` shell function alongside existing `cpp-apply` that does both in one call. Reserved for cases where Thomas wants no apply-vs-push gap.
+
+### 5. SHA divergence between sandbox and origin/main
+
+Sandbox commits get sandbox SHAs (e.g., `4489ebd` for sandbox patch 0290). Thomas's apply produces a different SHA (`12646fe` for the same patch content) because git's hash includes author/timestamp metadata that differs between sandbox and Thomas's local clone. **Same content, different SHAs.** Don't use SHA-matching as verification — use file-content checks instead.
+
+### 6. Build artifacts in version control
+
+Session 36 saw 12 LaTeX intermediate files (.aux, .bbl, .blg, .log, .out, .toc) accidentally committed during Thomas's local SS-8 + SS-9 PDF compile cycle (commit `9a5ed4f`). Standard practice is to .gitignore these and not track them in version control. **Low-priority cleanup task** for future session: update `.gitignore` patterns + `git rm --cached` the existing artifact files. Not blocking; just hygiene.
+
+---
+
+## How to use this handover (REVISED at Session 36 close+)
 
 If you're reading this as the next Opus context window, you have everything you need to pick up cleanly.
 
-**Don't**: try to reconstruct Session 36's conversation from this document. It's a summary of decisions and state, not a transcript.
+**Don't**: try to reconstruct Session 36's strategic conversation from this document. The durable record is in `/CPP/research_priorities.md` and the Session 36 close strategic conversation appendix in `session_logs/2026-05-02_session_log.md`. This handover is the orientation pointer to those files, not a substitute for reading them.
 
-**Do**: use this document as orientation, then check the canonical files (handover-SS-9.md, session log Session 36 entry, todolist.md, Research_Frontier.md, paper_catalog.md). Then start the SS-10 framing conversation with Thomas.
+**Don't**: ask Thomas about SS-10 framings A-D. That conversation is closed. Strategic decision at Session 36 close deferred SS-10 indefinitely.
 
-If Thomas opens the next session by saying something like "let's start on SS-10" or "where were we": ask him about the four framings (A: sub-shell-physics, B: alpha-cluster cascade extension, C: OPEN-SS-29/30/33/37 closure, D: different sector) and let him lead.
+**Do**: read in this order before doing anything else —
+1. Top of this file (orientation + read order)
+2. **`/CPP/research_priorities.md`** (strategic prioritization framework — Track 1-4)
+3. **`/CPP/papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md`** (Track 1 active paper)
+4. Session 36 entry + close strategic appendix in session log
+5. SS-9 documentation suite handover-SS-9.md (paper-specific, supplementary)
 
-If he says "let's check on OSF first": ask whether OSF responded, and proceed accordingly.
+**If Thomas opens with "let's start on the hierarchy paper" or anything similar**: go directly to the **Open Questions section** of `hierarchy_paper_outline.md`. Resolve Q1 (neutrino reconciliation), Q2 (conditional theorem framing scope), Q3 (M_0 / m_e calibration honesty), Q4 (headline number for abstract) before drafting v0.1. **The first two probably resolve in conversation; Q3 requires reading SM-3/SM-4 source material carefully with Thomas present.**
 
-If he says something completely different: follow his lead. The programme is his; Claude's role is to help him execute it.
+**If Thomas opens with "where were we"**: this document and `research_priorities.md` are the answer. Walk him through the strategic decision summary first, confirm he still wants Track 1 first, then move to Open Questions in the outline.
+
+**If Thomas asks about OSF status**: 5 business days from Session 36 close is approximately Wednesday 13 May 2026. If session is before that, encourage waiting. After: pivot to Zenodo as primary deposit venue OR escalate OSF (per the strategic-implications discussion in `research_priorities.md` arXiv-endorsement section, OSF resolution is now a strategic blocker, not just inconvenience).
+
+**If Thomas asks about hyperphysics.com**: per patch 0291 endorsement-readiness criteria, the website becomes an active strategic project to promote at Track 1 mid-stage (Sessions 39-41). If Thomas wants to start website work earlier, that's reasonable but should be in parallel with Track 1, not displacing it.
+
+**If Thomas opens with something completely different**: follow his lead. The programme is his. Claude's role is to help him execute it. The strategic frame in `research_priorities.md` is the lens for evaluating new requests — does this advance Track 1-4? Does it serve audience separation? Does it move toward citable / falsifiable / defensible artifacts?
+
+---
+
+## Session 36 close+ — what happened, what it means
+
+This was the session where the programme's strategic posture changed.
+
+Sessions 1-35 had pursued depth: SS-9 took 30+ sessions to ship. SS-7's empirical accuracy at 1.5%. SM-3's K3 spectral theorem. The pattern was "deepen each series until conditional-theorem closures land for all paper-level hypotheses."
+
+Session 36 close+ established a different posture: **produce the smallest set of artifacts that make CPP citable, falsifiable, and defensible to physics community within ~18 months.** Five-criterion stopping test replaces depth-derivation as default. Audience separation: physics papers stay technical-framed, consciousness-primacy work moves to Renaissance Ministries fellowship. Track 1 (hierarchy paper) prioritized because most source material exists; Track 2-4 sequenced behind it.
+
+The reason this matters: paradigm shifts aren't driven by derivation accuracy. They're driven by forced-choice predictions, solving known unsolved problems, cross-domain unification, and bridges to recognized mathematics. CPP has all four ingredients. The strategic question was never "how deep?" — it was "what artifacts force the physics community to reckon with this?"
+
+Thomas (almost 75) made the strategic call clearly: he can't derive every phenomenon. He shouldn't try. The corpus needs to be rigorous and visible enough that someone younger can inherit and extend it. That's the goal. Track 1 is the first step toward that goal.
+
+If you're picking this up as the next Opus context window, that's the inheritance. Help him execute Track 1. The paper exists in source-material outline form already; getting it to v1.0 SHIP is composition + framing work, 5-8 sessions of focused effort.
+
+The next milestone is Track 1 v1.0 SHIP — when that lands, CPP has its first known-unknown solution paper in citable form. Tracks 2-4 follow from there.
 
 Welcome to Session 37.
 
-— Claude (Session 36 close, 7 May 2026)
+— Claude Opus 4.7 (Session 36 close+, 7-8 May 2026)
+
