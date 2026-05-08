@@ -19,9 +19,18 @@ A new item belongs here (rather than in `future_projects.md`) if it's: small eno
 
 ## P1 — Must clear before next paper (SS-10)
 
+*(Empty — gate cleared 7 May 2026 Session 36 close patch 0288. SS-10 may begin.)*
+
+The Session 36 P1 audit found that all originally-P1 items except TODO-002 were either deferred on external triggers (TODO-001) or were historical/programme hygiene that does not actually forward-block SS-10 (TODO-003, 004, 005, 006). Per this file's own escape-valve discipline (*"If a P1 item turns out not to actually block the next paper on reflection, demote it to P2 with a note explaining why"*), they were demoted to P2 and TODO-002 was cleared after its actual completion via patches 0286 + 0287 + commit `55c5986`. Result: P1 genuinely empty; SS-10 begins on a clean slate at the next session.
+
+---
+
+## P2 — At Thomas's discretion (not blocking next paper)
+
 ### TODO-001 — SS-9 Phase 7 Section A 7-companion documentation suite
 
-**Status**: DEFERRED pending trigger
+**Status**: DEFERRED pending external-feedback trigger; not a forward blocker for SS-10
+**Why P2 (Session 36 demotion)**: The Two-Triggers discipline (`templates/paper_completion_checklist.md` lines 35-48) defers this until SS-9 is unambiguously done — meaning until either (a) v1.x revision ships and stabilizes after external feedback or (b) a reasonable post-posting window passes with no feedback. The trigger is gated on TODO-007 (public posting) and is *external* in nature, so the item cannot fire on its own and producing the 7 companion files prematurely risks rework. Demotion to P2 acknowledges that the file's own discipline is being honored: this is a deferred item awaiting an external trigger, not an item the next session must clear before starting SS-10.
 **Trigger**: After (a) public posting (OSF + arXiv) lands AND (b) external-feedback window settles — either no v1.x revision arrives within Thomas's chosen window, or v1.x ships and stabilizes.
 **Deliverable**: 7 companion files per `templates/paper_completion_checklist.md` Section A and `templates/documentation-suite.md`:
 - `mechanism-SS-9.md` (A1) — step-by-step mechanism narrative with mathematical-correspondence table
@@ -32,63 +41,54 @@ A new item belongs here (rather than in `future_projects.md`) if it's: small eno
 - `reviews-SS-9.md` (A6) — all reviews + FAQ
 - `keywords-SS-9.md` (A7) — keywords and registry cross-refs
 **Estimated effort**: 1 dedicated session (~3-5 hours per checklist).
-**Why deferred**: Two-Triggers discipline (`templates/paper_completion_checklist.md` lines 35-48): default to deferring Trigger 2 until paper is unambiguously done. SS-9's sub-task (e) was rescoped to "open invitation post-v1.0 ship via public posting," creating a built-in feedback pipeline that may produce v1.x. Producing 7 companion files now risks needing to redo them. The OPEN-SS-22 retirement experience (SS-7 v1.1 → v1.2) is the precedent.
-**Registered**: 7 May 2026 Session 33 close.
-
-### TODO-002 — SS-8 and SS-9 PDF compile (posting prerequisite)
-
-**Status**: HYGIENE GAP — also a TODO-007 (public posting) prerequisite
-**Issue**: Two papers are missing their `.pdf` artifacts in the repo despite having been compiled locally during their respective ship sessions. (a) `series_strong/papers/SS-8/` has `SS-8_interstitial_neutron_2EV_scaling.tex` but no `.pdf`; SS-8 has v1.0 OSF pending per `paper_catalog.md` but the PDF was never committed. (b) `series_strong/papers/SS-9/` has `SS-9_simplicial_alpha_polytope_connectivity.tex` but no `.pdf`; `paper_catalog.md` describes SS-9 as "32 pages compiled, three pdflatex passes zero errors after pass 3" referring to the local Session 32 v1.0 ship compile, but `git log --all` shows the PDF was never committed. (Compare SS-7 which has both `SS-7_alpha_cluster_edge_formula.tex` AND `SS-7_alpha_cluster_edge_formula.pdf` in the repo.) **The original TODO-002 entry in this file at Session 33 close incorrectly stated "SS-9 has both .tex and .pdf" — that was an error caught Session 36.** Both PDFs are posting prerequisites since OSF and arXiv submissions both require PDF.
-**Deliverable**: Three-pass `pdflatex` + `bibtex` build of SS-8 v1.0 AND SS-9 v1.0; commit both `.pdf` files to the repo at `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.pdf` and `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.pdf`. Verify against `paper_catalog.md` rows (currently both show v1.0 OSF pending).
-**Estimated effort**: 1 small patch from Thomas's local environment (~15 minutes for both PDFs combined; pdflatex not available in Claude's sandbox so this is a Thomas action).
-**Apply chain when ready**: `git add series_strong/papers/SS-8/*.pdf series_strong/papers/SS-9/*.pdf && git commit -m "TODO-002 cleared: SS-8 + SS-9 PDF compile and commit" && git push origin main`. No format-patch chain needed — single direct commit + push from Thomas's local repo.
-**Registered**: 7 May 2026 Session 33 close; **scope corrected** 7 May 2026 Session 36 patch 0285 to include SS-9.
+**Registered**: 7 May 2026 Session 33 close as P1; **demoted to P2** 7 May 2026 Session 36 close patch 0288.
 
 ### TODO-003 — Tier 4 reasoning recovery for chat window `a49b320e` (March 19 – April 6, 2026)
 
-**Status**: PROGRAMME-LEVEL DEFERRED (largest single backlog item)
-**Issue**: Foundational development of SR-1, EW-1 through EW-5, SS-1, QM-1 through QM-6, SM-1 through SM-5 happened in this chat window; substantive Opus reasoning has not been recovered into per-paper `reasoning-[ID].md` files.
+**Status**: PROGRAMME-LEVEL DEFERRED multi-session backlog; not a forward blocker for SS-10
+**Why P2 (Session 36 demotion)**: Recovery of substantive Opus reasoning into per-paper `reasoning-[ID].md` files for already-shipped historical papers (16 papers: SR-1, EW-1 through EW-5, SS-1, QM-1 through QM-6, SM-1 through SM-5) is hygiene work on the historical record, not a precondition for new paper work. SS-10's framing and execution do not depend on having recovered reasoning artifacts for unrelated earlier papers. This item should be revisited as a long-term backlog candidate; if it grows into a dedicated multi-session project, it should be promoted to `future_projects.md` rather than carried as a single TODO.
+**Issue**: Foundational development of SR-1, EW-1 through EW-5, SS-1, QM-1 through QM-6, SM-1 through SM-5 happened in chat window `a49b320e`; substantive Opus reasoning has not been recovered into per-paper `reasoning-[ID].md` files.
 **Deliverable**: Per-paper `reasoning-SR-1.md`, `reasoning-EW-1.md` through `reasoning-EW-5.md`, `reasoning-SS-1.md`, `reasoning-QM-1.md` through `reasoning-QM-6.md`, `reasoning-SM-1.md` through `reasoning-SM-5.md` (16 files). Source: chat window `a49b320e` transcript at `/mnt/transcripts/` if accessible, or `conversation_search` recovery per the `templates/operating_system.md` §6 protocol.
-**Estimated effort**: Multi-session — could be ~16 separate small patches (one per paper) or a single large multi-patch chain. Pre-session inspection of the source transcript will determine scope.
-**Registered**: 7 May 2026 Session 33 close (carried over from earlier programme-level backlog per Claude's memory of prior work).
+**Estimated effort**: Multi-session — could be ~16 separate small patches (one per paper) or a single large multi-patch chain.
+**Registered**: 7 May 2026 Session 33 close as P1; **demoted to P2** 7 May 2026 Session 36 close patch 0288.
 
 ### TODO-004 — `reasoning-SM-9.md` (patch 0027, pine-tree model)
 
-**Status**: PROGRAMME-LEVEL DEFERRED
-**Issue**: SM-9 development arc captured Opus reasoning around the pine-tree model derivation; not yet recovered to `reasoning-SM-9.md`.
+**Status**: PROGRAMME-LEVEL DEFERRED; not a forward blocker for SS-10
+**Why P2 (Session 36 demotion)**: Same logic as TODO-003 — historical hygiene for an already-shipped paper, does not gate SS-10.
 **Deliverable**: `reasoning-SM-9.md` per the four-tier discipline format used for SS-9.
-**Estimated effort**: 1 patch (per the previously-planned patch 0027 numbering).
-**Registered**: 7 May 2026 Session 33 close (carried over).
+**Estimated effort**: 1 patch.
+**Registered**: 7 May 2026 Session 33 close as P1; **demoted to P2** 7 May 2026 Session 36 close patch 0288.
 
 ### TODO-005 — `reasoning-SM-10.md` (patch 0028, FEM journey)
 
-**Status**: PROGRAMME-LEVEL DEFERRED
-**Issue**: SM-10 development arc captured Opus reasoning around the FEM (finite element method) journey; not yet recovered to `reasoning-SM-10.md`.
+**Status**: PROGRAMME-LEVEL DEFERRED; not a forward blocker for SS-10
+**Why P2 (Session 36 demotion)**: Same logic as TODO-003.
 **Deliverable**: `reasoning-SM-10.md` per the four-tier discipline format.
-**Estimated effort**: 1 patch (per the previously-planned patch 0028 numbering).
-**Registered**: 7 May 2026 Session 33 close (carried over).
+**Estimated effort**: 1 patch.
+**Registered**: 7 May 2026 Session 33 close as P1; **demoted to P2** 7 May 2026 Session 36 close patch 0288.
 
-### TODO-006 — OPEN-WORKFLOW-1 legacy `.bib` file cleanup
+### TODO-006 — OPEN-WORKFLOW-1 legacy `.bib` file cleanup (programme-wide bibliography migration)
 
-**Status**: PROGRAMME HYGIENE
+**Status**: PROGRAMME-WIDE MIGRATION — scope much larger than originally registered; not a forward blocker for SS-10
+**Why P2 (Session 36 demotion + scope expansion)**: The Session 36 audit found **14 stray `.bib` files** across the repo, with most still **actively cited** by ~25 `.tex` files spanning every series. This is not a quick "audit and delete" patch — it's a programme-wide migration touching SR-1, SM-6 through SM-10, EW-1 through EW-5, QM-1 through QM-6, SS-1, SD-1 through SD-5, plus the orphan-or-active `series_strong/papers/cpp_strong_series.bib` and three `series_strong/cpp_strong_series*.bib` files at the series root. SS-7 and SS-9 use inline `\begin{thebibliography}` blocks (no .bib file at all). SS-8 and SM-3 use the canonical `bibliography/cpp_references.bib`. SS-10 can adopt the canonical pattern (like SS-8 did) regardless of what other papers use, so this migration does not forward-block SS-10. **Recommendation for next session**: consider promoting this to `future_projects.md` as a multi-session OPEN-WORKFLOW-1 project, since it's no longer "1 small patch" scope.
 **Issue**: Bibliography consolidation policy established `bibliography/cpp_references.bib` as single source of truth; legacy per-series and per-paper `.bib` files are deprecated (per `templates/paper_production_workflow.md` Phase 2 note: "Do NOT create a new per-paper `[ID]_references.bib` file — those are deprecated"). Cleanup audit is registered as OPEN-WORKFLOW-1.
-**Deliverable**: Audit `series_*/` and `series_*/papers/*/` for stray `.bib` files; delete or migrate entries to `bibliography/cpp_references.bib`; verify all paper `.tex` files cite the central `.bib`.
-**Estimated effort**: 1 small audit-and-cleanup patch (depends on how many strays exist).
-**Registered**: 7 May 2026 Session 33 close (carried over from earlier OPEN-WORKFLOW-1 registration).
-
----
-
-## P2 — At Thomas's discretion (not blocking next paper)
+**Stray .bib inventory (Session 36 audit)**: `series_strong/cpp_strong_series.bib`, `series_strong/cpp_strong_series_papers.bib`, `series_strong/cpp_strong_series_root.bib`, `series_strong/papers/cpp_strong_series.bib`, `series_standard_model/papers/cpp_references.bib` (note: NOT canonical path), `series_standard_model/papers/SM-{6,7,8,9,10}_references.bib`, `series_electroweak/papers/cpp_ew_series.bib`, `series_quantum_mechanics/papers/cpp_qm_series.bib`, `series_foundations/series_superdeterminism/cpp_foundations_series.bib`, `series_relativity/papers/SR-1_references.bib`. Active `.tex` consumers identified per audit.
+**Deliverable**: Programme-wide migration: (1) merge unique entries from each stray `.bib` into `bibliography/cpp_references.bib`; (2) update `\bibliography{...}` line in each consuming `.tex` to point to `../../../bibliography/cpp_references` (path depth varies by series structure); (3) delete strays; (4) recompile each affected paper to verify no broken citations.
+**Estimated effort**: Multi-session if done thoroughly (likely 2-3 sessions); paper-by-paper migration with recompile verification per paper.
+**Registered**: 7 May 2026 Session 33 close as P1; **demoted to P2 with scope expansion** 7 May 2026 Session 36 close patch 0288.
 
 ### TODO-007 — SS-9 public posting (OSF deposit + arXiv submission)
 
-**Status**: PENDING Thomas's timing decision
+**Status**: PENDING Thomas's timing decision; OSF complication identified Session 36 (see below)
 **Operational protocol**: `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md` (created Session 33 patch 0268).
-**Two reasonable options** (both consistent with rescoped sub-task (e)):
+**Session 36 update — OSF complication identified**: Thomas's existing Open-Ended Registration `10.17605/OSF.IO/JXE8D` (the "Conscious Point Physics Paper Series" master registration created Mar 31, 2026, listing SS-1, SM-1 through SM-5, SR-1) has been stuck in **"Pending Admin Contributor Approval"** state for 5+ weeks despite the documented 48-hour auto-approval window. Thomas is the only admin contributor listed. Multiple support tickets sent; one received an unhelpful response (about a different registration); subsequent tickets unanswered including a Claude-drafted escalation. The DOI is real and the priority date (Mar 31, 2026) is locked, but the registration is technically not finalized. **Decision Session 36**: Thomas will submit one more diagnostic-specific support ticket framing the issue precisely as "Pending Admin Contributor Approval state stuck >38 days, only one admin contributor, auto-approval timer never fired." Wait 5 business days for OSF response. **If OSF resolves** → add SS-9 as an Update to the existing JXE8D registration (the registration is Open-Ended, designed to be added to over time), and post to arXiv in parallel (categories nucl-th + math-ph). **If OSF still silent after 5 business days** → fallback to depositing SS-9 on **Zenodo** (CERN-run, gives DOI, no comparable workflow issues) plus arXiv, treating OSF as a later catch-up.
+**Two original options remain open** (both consistent with rescoped sub-task (e)):
 - **Option A**: post now to lock priority date and start external-feedback clock.
 - **Option B**: wait until anthology chapter (Session 34) and TATWD integration (Session 35) are complete to present a fuller programme picture at posting time.
+Both are now fully available since Sessions 34 and 35 are complete; only the OSF technical issue remains as a delay factor.
 **Note**: TODO-001 (SS-9 Phase 7 Section A) trigger depends on this resolving — public posting is the precondition for the external-feedback window.
-**Registered**: 7 May 2026 Session 33 close.
+**Registered**: 7 May 2026 Session 33 close; **OSF complication and fallback plan added** 7 May 2026 Session 36 close patch 0288.
 
 ---
 
@@ -96,7 +96,11 @@ A new item belongs here (rather than in `future_projects.md`) if it's: small eno
 
 *Items move here with date and patch number when completed. Cleared items are not deleted — they form an audit trail of what was done and when.*
 
-(none yet — this file introduced 7 May 2026 Session 33 close, patch 0274)
+### TODO-002 — SS-8 and SS-9 PDF compile (posting prerequisite) — CLEARED 7 May 2026 Session 36
+
+**Cleared**: 7 May 2026 Session 36 via patches 0286 (SS-8.tex `\Kthree` macro `\ensuremath` fix) + 0287 (SS-8.tex `\usepackage{xcolor}` import for `yellow!10` blend) + direct commit `55c5986` (PDFs added to repo: SS-8 31 pages 507596 bytes, SS-9 32 pages 638209 bytes; both visually verified clean before commit; SS-9 compile triggered MiKTeX auto-install of `float.sty` per Phase C MiKTeX setting change).
+**Resolution narrative**: First Thomas attempt (without patches 0285+0286+0287) compiled with errors and produced damaged PDFs (SS-8 abstract garbled with run-together italicized text from `\Kthree`-mode-quantum text, mdframed alert box on pages 15-16 rendering as solid black from undefined `yellow!10`). Damaged PDFs were committed as `6e86818` then reverted as `ccb6041` after diagnosis. Patches 0286 (`\Kthree` `\ensuremath` wrapper) and 0287 (`xcolor` package import) were then applied; MiKTeX auto-install set to "Yes"; aux files cleaned; recompile produced clean PDFs verified visually (K₃ subscript renders cleanly, alert box light-yellow as designed). Commit `55c5986` pushed both PDFs to origin successfully.
+**Original registration**: 7 May 2026 Session 33 close patch 0274; scope corrected Session 36 patch 0285 to include SS-9.
 
 ---
 
