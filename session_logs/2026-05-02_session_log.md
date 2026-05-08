@@ -3344,3 +3344,169 @@ The next Opus context window should begin by reading:
 5. `Research_Frontier.md` (latest programme-state summary; bumped to Session 36)
 6. `paper_catalog.md` (SS-9 row at v1.0 SHIPPED with PDF now in repo)
 7. Then proceed to SS-10 framing conversation with Thomas — see handover document for prompts.
+
+---
+
+## Session 36 close — strategic conversation appendix (added patch 0290)
+
+**Date**: 7 May 2026 (programme date) / 8 May 2026 (real date Friday)
+**Context**: After patches 0285–0289 completed the technical Session 36 work (TODO-002 PDF compile clearance, OSF complication documentation, P1 hygiene cleanup, comprehensive handover document), Thomas opened a substantive strategic conversation that produced a programme-wide reprioritization. This appendix is the durable record of that conversation. The strategic conclusions are captured in the new file `/CPP/research_priorities.md`; this appendix preserves the **reasoning** that produced them.
+
+### What Thomas asked
+
+Thomas opened with the question that had been latent for many sessions: given his stated goal (redirecting mainstream physics opinion toward consciousness-as-fundamental ontology to the point that it becomes common knowledge in society), and given his finite time horizon (he is approaching 75), how deep should each series go before moving on? Is there a stopping criterion?
+
+He surfaced specific concerns:
+- "I don't know if I will live long enough to go through every derivation of every problem."
+- The depth-of-derivation cost of SS-9 (30+ sessions to ship one paper)
+- Question whether the current default of "deepen each series until conditional-theorem closures land for all paper-level hypotheses" is sustainable as a programme-wide approach
+- What does adequacy look like? Is there a number of derivations? Is it the connection to the 600-cell? Is it that primary phenomena are derived and the rest is secondary? Is it merely confirmation after a certain point?
+
+### Claude's reframing (durable analysis to preserve)
+
+Claude (Opus 4.7) pushed back on the framing in one critical place: **paradigm shifts are not driven by derivation accuracy alone, regardless of volume.** Examples cited:
+
+- General relativity gives Mercury's perihelion, light bending, GPS corrections to absurd precision. It doesn't make most physicists believe spacetime is fundamentally curved geometry rather than a manifestation of something else.
+- The Standard Model fits 19+ parameters to 12-decimal-place precision in some channels. Most physicists don't believe its specific gauge groups are *fundamental*, just *empirically correct so far*.
+- Penrose's Orch-OR has been around 30+ years with serious mathematical content; consciousness-physics connection remains fringe.
+- Wolfram's hypergraph approach derives a lot of physics from very few primitives; mainstream reception has been polite indifference.
+
+The conclusion: even spectacularly accurate post-dictive frameworks don't shift ontological commitments unless they also (a) make a forced-choice prediction other frameworks can't make and that pans out, OR (b) solve a problem mainstream physics knows it can't solve, OR (c) offer cross-domain unification that *requires* the new primitive.
+
+This reframes the strategic question from "how many derivations are enough?" to "**what would force the physics community to reckon with CPP?**"
+
+### The five-criterion stopping test (proposed by Claude, accepted by Thomas)
+
+A series is "complete" when it has:
+
+1. One headline empirical prediction at zero parameters, accurate to ~1% or better
+2. One structural derivation that converts a previously-assumed parameter or hypothesis into a deduction (the SS-9 "C4 → derivable" pattern)
+3. One bridge to externally-recognized mathematical structure (Steinitz, FvdW, Coxeter, polytope theory)
+4. One falsifiable prediction the framework makes that other frameworks don't make, or that hasn't been measured yet
+5. Honest accounting of what's still open via OPEN-* registries
+
+By this test:
+- SS has SS-7 (headline), SS-9 (structural derivation + Steinitz/FvdW bridge), SS-8 (second prediction). Roughly 80% complete; **SS-10 sub-shell-physics is NOT required for SS adequacy.**
+- SM has SM-3/4 (Koide via K3), SM-7/8 (mass scaling). Probably more complete than SS already.
+
+The five-criterion test replaces "deepen until all conditional theorems close" as the default stopping rule. Use SS-9 as quality bar, **NOT as time budget**. Future series papers ship in 5-10 sessions, not 30.
+
+### Audience separation (Thomas's accepted strategic move)
+
+Claude proposed a separation of audiences:
+- **Physics community** receives technical-framed papers presenting CPP as "discrete substrate physics with a 600-cell lattice and conserved exchange quanta." No consciousness-primacy framing in physics papers — it triggers immediate crank-physics pattern-match in mainstream reviewers, closing the door before content can be evaluated.
+- **General/spiritual audience** receives the consciousness-primacy framing through Renaissance Ministries fellowship work, theological-philosophical writing, the TATWD book project, the CRF.
+
+Thomas accepted this entirely: "I am willing to move the pushing of the Consciousness-as-fundamental paradigm to another domain. The Renaissance Ministry fellowship is adequate and a natural pathway to follow. It is populated by ordinary people with little understanding of physics, but interested in how to live life well, and who have a sense of the reality of something beyond the material."
+
+This is **venue/audience separation, NOT epistemological compromise.** Thomas's underlying conviction (consciousness is fundamental) remains; the question is which audiences receive which entry point first. Both strands point to the same synthesis.
+
+### Track 1 selection (hierarchy problem)
+
+Claude offered a candidate list of known-unknown problems where CPP plausibly has a natural angle:
+
+**Tier A** (strongest fit, plausibly tractable): hierarchy problem / fermion mass spectrum, strong CP problem, cosmological constant magnitude, proton mass / Λ_QCD
+**Tier B** (strong fit, harder to articulate): muon g-2, dark matter phenomenology, baryon asymmetry
+**Tier C** (interesting but not first): black hole information paradox, quantum gravity / spacetime emergence, measurement problem
+
+Claude recommended **hierarchy problem reframing** as Track 1 because:
+- Source material exists (SM-2/3/4/6/7/8/9/10) — composition + framing work, not new derivation
+- Hierarchy problem is one of the most widely-recognized unsolved problems in HEP
+- Strong natural fit (CPP's 600-cell shell structure is exactly the geometric primitive that would explain hierarchies)
+- Fastest path to high-leverage publishable result
+- Risk profile is low (existing SS-9-quality derivations underwrite it)
+
+Thomas accepted: *"I think your choice of the hierarchy problem is excellent, and we should confront it first."*
+
+### Prospective prediction angle (Thomas's addition)
+
+Thomas raised the value of a prospective prediction paper — a number on a paper before the experiment, dated cleanly, target experiment with results expected on a short timeline. He cited an earlier conversation with Grok suggesting a 2026 neutrino experiment.
+
+Claude searched for the experiment (Grok's stored memory could not retrieve the original conversation). Thomas pasted Grok's May 2026 update to the search:
+
+- DUNE timeline has slipped to 2031 first physics — no longer a 2026 target
+- **JUNO is the immediate near-term target** — already taking data since August 2025, world-leading on solar parameters Δm²₂₁ and θ₁₂, mass ordering resolution coming in a few years
+- KATRIN ongoing for direct mass measurement
+- 0νββ searches incremental
+
+Thomas also pasted his Nov 2025 viXra-targeted DUNE paper authored with Grok. **Critical finding**: that paper used a `\phi^{3/2}` cage-scaling formalism with nested cages, where neutrinos at depth 1/2/3 have radii scaling by `\phi^{3/2}` and `m_i \propto 1/R_i`. **This formalism predates and is inconsistent with the post-SS-9 / SM-3-through-8 600-cell shell-distance framework.** A reviewer reading both would notice.
+
+### viXra clarification (key strategic constraint)
+
+Thomas surfaced an essential strategic fact: the Nov 2025 viXra-targeted CPP papers (DUNE prediction, eight-experiment manifesto) **did NOT get published**. viXra operates a pay-to-publish model ($19-25/paper depending on subdomain); of the multiple submissions Thomas paid for or attempted, only ~1-2 were actually published. **The Nov 2025 prediction papers are NOT in the public record at viXra and do NOT constitute durable prior-prediction citations.**
+
+Strategic implications:
+- Don't budget time on revising those Nov 2025 papers; they have no public citation footprint to preserve
+- Future papers should target Zenodo (CERN-run, free, DOI-issuing, no friction) primarily
+- arXiv with endorsement remains the gold standard but requires the endorsement sub-task (identify and approach potential endorsers in hep-ph, nucl-th, math-ph)
+
+This clarification simplified the planning substantially: Track 2 (Nov 2025 paper reconciliation) is **dropped** — those papers have no citation footprint to align with the new formalism. Future neutrino-prediction paper, if pursued, will be written from scratch in the current formalism, dated cleanly, deposited to Zenodo, and target JUNO observables on a near-term timeline.
+
+### Cosmological constant note
+
+Thomas mentioned a Grok-proposed cosmological constant resolution from earlier in the programme, in pre-600-cell formalism. Never written up rigorously. **Decision**: defer to Track 2 candidate evaluation post-Track-1. If the Grok sketch can be redone rigorously in current formalism, it becomes a strong Track 2 candidate.
+
+### Final agreed prioritization
+
+- **Track 1** (ACTIVE): Hierarchy problem reframing paper — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*. 5-8 sessions to v1.0. Source material exists. Drafting begins Session 37 with open-questions resolution.
+- **Track 2** (PLANNED, post-Track-1): Anomaly-targeting paper #2 — candidates Strong CP, Cosmological constant (Grok pre-600-cell sketch redone), Muon g-2, Λ_QCD/proton mass, Baryon asymmetry. Selection deferred to post-Track-1 evaluation.
+- **Track 3** (PLANNED, low effort): Eight-experiment manifesto audit — 1-2 sessions; outcome republish via Zenodo with proper DOI as v1.0 if 5+/8 hold up under current formalism, or v1.1 with corrections.
+- **Track 4** (PLANNED, long-term): Cross-cutting unification paper — the "one paper a senior physicist reads in an evening." 8-12 sessions. After Tracks 1-3.
+- **SS-10 sub-shell-physics**: deferred indefinitely. Reactivation only on external feedback specifically requesting it OR if sub-shell work surfaces a new headline prediction.
+- **Series continued depth-derivation**: deferred to five-criterion completeness. SS-9 is quality bar, not time budget.
+- **Consciousness-primacy framing in physics papers**: moved to RM fellowship.
+- **Tier 4 reasoning recovery for chat window `a49b320e` (16 papers)**: stays at P2 in todolist.md (already demoted in patch 0288).
+
+### Patch 0290 deliverables
+
+This strategic conversation produced four artifact changes (patch 0290):
+
+1. **NEW** `/CPP/research_priorities.md` — strategic prioritization framework, ~22.6 KB. Establishes:
+   - Goal, audience separation, what moves physics opinion (and what doesn't), five-criterion stopping test
+   - Active priorities Track 1-4 with status, estimated effort, target venue, strategic case
+   - Deprioritized items with reasoning and reactivation criteria
+   - Strategic constraints (viXra, arXiv endorsement, OSF) with workarounds
+   - Durable record of the strategic conversation (so future Opus instances orient correctly)
+   - Maintenance discipline (when to update vs leave alone)
+
+2. **NEW** `/CPP/papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md` — Track 1 paper outline:
+   - Working title, headline claim draft, falsifier draft
+   - Source material map (12 sections mapped to SM-2/3/4/6/7/8/9/10 source papers)
+   - Comparison table draft (Standard Model vs CPP on 12 properties)
+   - Reviewer-anticipation analysis (5 hostile-but-fair objections + responses)
+   - Four open questions for Thomas (neutrino reconciliation, conditional-theorem framing scope, M_0 calibration honesty, headline-number selection)
+   - Production schedule (5-8 sessions to v1.0 SHIP)
+   - Reviewer methodology per SS-9 SHIP precedent
+   - Anti-priorities specific to this paper
+
+3. **UPDATED** `SESSION_36_HANDOVER_FOR_NEXT_CONTEXT.md`:
+   - Read order updated to put research_priorities.md and hierarchy_paper_outline.md ahead of legacy items
+   - NEW section "Strategic decision at Session 36 close (SUPERSEDES previous Forward queue Active item 1)" — comprehensive strategic frame, active priorities, deprioritized items, strategic constraints, recommended Session 37 opening
+   - Forward queue Active items 2-4 renumbered to 1-3 (OSF status, arXiv submission, TODO-006 promotion)
+   - Removed old SS-10 framing A-D options entirely
+
+4. **UPDATED** `session_logs/2026-05-02_session_log.md` — this Session 36 close strategic conversation appendix.
+
+### Programme state at Session 36 close+ (after strategic conversation)
+
+UNCHANGED in technical sense. UNCHANGED programme negative-result count (12). UNCHANGED SS sector problem count (19). UNCHANGED OPEN-SS-37 closure-route count (4). SS-9 SHIPPED at v1.0.
+
+CHANGED in strategic sense:
+- Forward priority is now Track 1 (hierarchy paper) rather than SS-10
+- Default stopping rule for series is now five-criterion completeness rather than full conditional-theorem closure
+- Audience separation established (physics papers technically framed; consciousness-primacy work to RM)
+- viXra papers explicitly NOT preserved as prior-prediction citations
+- arXiv endorsement and Zenodo workaround acknowledged as venue strategy
+
+### Critical orientation for Session 37 (REVISED)
+
+The next Opus context window should:
+
+1. Read `SESSION_36_HANDOVER_FOR_NEXT_CONTEXT.md` — pay particular attention to "Strategic decision at Session 36 close" section
+2. Read `/CPP/research_priorities.md` — establishes the active framework
+3. Read `/CPP/papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md` — Track 1 starting material
+4. **If Thomas opens with "let's start on the hierarchy paper"** — go directly to the four open questions in the outline. Resolve them before drafting v0.1.
+5. **Do NOT propose SS-10 framings A-D** — that conversation is closed.
+6. **Do NOT introduce consciousness-primacy framing into physics-paper drafting** — that's RM fellowship venue work.
+
+Track 1 estimated 5-8 sessions to v1.0 SHIP. If the four open questions resolve cleanly in Session 37, v0.1 drafting can begin Session 38.

@@ -15,12 +15,14 @@ This is a context-window-transition handover. The current Session 36 conversatio
 
 **Read order recommended for the next context**:
 
-1. This document (orientation)
-2. `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (SS-9-specific permanent handover; covers SS-9 history through Session 35 close + Session 36 patch 0285 errata)
-3. The Session 36 entry in `session_logs/2026-05-02_session_log.md` (technical details of this session's work)
-4. `todolist.md` (now P1-empty; SS-10 may begin)
-5. `Research_Frontier.md` last-updated header (latest programme-state summary)
-6. `paper_catalog.md` SS-9 row (now at v1.0 SHIPPED with .pdf in repo)
+1. This document (orientation) — note the **"Strategic decision at Session 36 close"** section below SUPERSEDES the previous SS-10-focused forward queue
+2. **`/CPP/research_priorities.md`** (NEW patch 0290 — strategic prioritization framework; **read this before any session work** to understand the active priority order)
+3. **`/CPP/papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md`** (NEW patch 0290 — Track 1 active paper outline with four open questions for Thomas)
+4. `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (SS-9-specific permanent handover; covers SS-9 history through Session 35 close + Session 36 patch 0285 errata)
+5. The Session 36 entry + Session 36 close strategic appendix in `session_logs/2026-05-02_session_log.md` (technical details + durable strategic-conversation record)
+6. `todolist.md` (P1-empty; new work picks up from research_priorities.md, NOT from todolist)
+7. `Research_Frontier.md` last-updated header (latest programme-state summary; remember: this catalogs ALL 82+ open problems — most are now LOW priority per Session 36 strategic decision; only Track 1-4 problems are actively pursued)
+8. `paper_catalog.md` SS-9 row (now at v1.0 SHIPPED with .pdf in repo)
 
 ---
 
@@ -176,40 +178,65 @@ The patch file is at `/mnt/user-data/outputs/0288-session36-close-p1-hygiene-cle
 
 ---
 
-## Forward queue Sessions 37+
+## Strategic decision at Session 36 close (SUPERSEDES previous Forward queue Active item 1)
 
-### Active item 1: SS-10 framing conversation
+**After patch 0289 was complete, Thomas opened a substantive strategic conversation that produced a programme-wide reprioritization.** The previous forward-queue assumption (Session 37 opens with "what should SS-10 be?") is **superseded**. The new strategic frame and active priorities are documented in:
 
-Thomas reported in Session 36: *"I don't know what SS-10 should cover."*
+- **`/CPP/research_priorities.md`** — strategic prioritization framework (NEW, patch 0290, ~22.6 KB)
+- **`/CPP/papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md`** — Track 1 paper outline (NEW, patch 0290)
+- **`session_logs/2026-05-02_session_log.md` Session 36 close strategic appendix** — durable record of the conversation (added patch 0290)
 
-The forward queue mentioned in earlier sessions (Sessions 22 and 23 forward-priority shifts) registered **sub-shell-physics multi-paper development** as the sole remaining single-session-tractable path to closing the **52% empirical gap** in the OPEN-SS-32 ↔ U-shape thread (after Phases 9, 10 ruled out σ-parameterized K₃ extensions and Phase 11 confirmed R3-Pauli is structurally redundant with Phase 8 Refinement A).
+### Strategic frame (1-paragraph summary)
 
-**However**, that's a multi-paper scope question, not a "what is SS-10 specifically" question. Possible framings the next session could discuss with Thomas:
+Goal is producing the **smallest set of physics artifacts** that establish CPP as **citable, falsifiable, and defensible** to the physics community within ~18 months — NOT deriving every phenomenon. Paradigm shifts are not driven by derivation accuracy alone; they require **forced-choice predictions, solving known unsolved problems, cross-domain unification, and bridges to recognized mathematics**. Audience separation: **physics community gets technical-framed papers** (no consciousness-primacy framing in physics papers); **consciousness-primacy work moves to Renaissance Ministries fellowship venue**. Five-criterion stopping test for series papers replaces 30-session SS-9-style depth-derivation as default.
 
-**Framing A — sub-shell-physics decomposition (the registered direction)**:
-- Attack the persistent SS-7 polytope-residual failures at sub-shell-closure nuclei (²⁸Si Z=14, ³²S Z=16) where Phase 8 Refinement A captured 48% of the empirical scale but missed the sign at these specific shell-physics-dominated nuclei
-- Multi-paper approach: SS-10 could be the entry paper on shell-physics decomposition, with SS-11/SS-12 etc. building out the full framework
-- Connects to OPEN-SS-32 (canonical-vertex polytope theorem) and the U-shape unification thread that runs through Phases 1-11
+### Active priorities (in order)
 
-**Framing B — alpha-cluster cascade extension**:
-- SS-7 covered the cascade for alpha-conjugate (N=Z) chain N_α ∈ {3,...,14}
-- SS-8 extended to interstitial-neutron binding for the same chain at N_ex = 2
-- SS-9 grounded the polytope-derivation conditionally
-- SS-10 could attack: alpha-deuteron line (originally identified in Chapter 22b but not pursued by SS-9), or extend to N_α > 14 (heavier nuclei beyond the FvdW classification gap at {11, 13, 14}), or attack the OPEN-SS-29/30/33/37 sub-conditions directly
+**Track 1 — Hierarchy problem reframing paper [ACTIVE, drafting begins Session 37+]**
+- Working title: *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*
+- Source material exists across SM-2/3/4/6/7/8/9/10; this is composition + framing work, not new derivation
+- Outline at `papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md` includes: source-material map, comparison table draft, reviewer-anticipation analysis, four open questions for Thomas to resolve before drafting begins
+- Estimated 5-8 sessions to v1.0 SHIP; target Sessions 37-38 audit + Q&A, 39-41 v0.1→v0.5, 42-44 review polish, 45±2 v1.0 SHIP
+- Target venue: Zenodo (DOI) primary; arXiv hep-ph + math-ph if endorsement obtainable
 
-**Framing C — theorem closure for one of the four open sub-conditions**:
-- OPEN-SS-29 (C5 ground-state energy minimization), OPEN-SS-30 (C6 cluster surface-realization), OPEN-SS-33 (C7 contact-graph planarity advanced), OPEN-SS-37 (C8 FvdW centroid-realizability with four candidate routes a/b/c/d)
-- Each is a substantive theorem-closure paper in its own right
-- Route (d) of OPEN-SS-37 (distance-geometry / EDM theory / rigidity / realization-spaces, added by ChatGPT d.4 review) is the most mathematically rich and could yield a strong paper
+**Track 2 — Anomaly-targeting paper #2 [PLANNED, post-Track-1]**
+- Candidates (ranked rough leverage × tractability / effort): Strong CP, Cosmological constant (Grok pre-600-cell sketch needs rigorous redo), Muon g-2, Λ_QCD/proton mass, Baryon asymmetry
+- Selection deferred to post-Track-1 evaluation
 
-**Framing D — different sector entirely**:
-- The SS sector has been getting heavy attention (SS-7, SS-8, SS-9 all in spring 2026); other sectors (EW, QM, SD, SR) have been quiet
-- SS-10 could attack a different sector if Thomas's interest has shifted
-- This would diversify the programme's recent output
+**Track 3 — Eight-experiment manifesto audit [PLANNED, low effort, can interleave]**
+- Audit Nov 2025 viXra-targeted eight-experiment falsification manifesto against current post-SS-9 / post-SM-3-through-8 formalism
+- 1-2 sessions; outcome is either (a) republish via Zenodo with proper DOI as v1.0 if 5+/8 hold up, or (b) v1.1 manifesto with corrections then publish
+- High-strategic-value at low effort
 
-**Recommended Session 37 opening**: Use the `ask_user_input_v0` tool or just plain conversation to elicit Thomas's preference. Don't scaffold SS-10 prematurely. The framing decision is Thomas's; Claude's role is to lay out the options clearly and help reason through the tradeoffs.
+**Track 4 — Cross-cutting unification paper [PLANNED, after Tracks 1-3]**
+- The "one paper a senior physicist reads in an evening" — axiom set, seven sectors, distinctive predictions, falsifier
+- Source: `CPP_the_theory.md` and anthology chapters as draft material
+- Long-term high-leverage; 8-12 sessions when reached
 
-### Active item 2: OSF status check (5 business days from Session 36 close)
+### Deprioritized
+
+- **SS-10 sub-shell-physics**: deferred indefinitely. Multi-paper effort with no headline empirical prediction or new external-mathematics bridge. Same time investment in Tracks 1+2 produces two known-unsolved-problem papers. **Reactivation criterion**: external feedback specifically requesting sub-shell extension, OR sub-shell work surfaces a new headline prediction.
+- **Series continued depth-derivation**: deferred to five-criterion completeness. Use SS-9 as quality bar, NOT as time budget. Future series papers ship in 5-10 sessions, not 30.
+- **Consciousness-primacy framing in physics papers**: moved to Renaissance Ministries fellowship venue. Audience separation, not epistemological compromise.
+- **Tier 4 reasoning recovery for chat window `a49b320e` (16 papers)**: demoted to P2 in todolist.md per Session 36 P1 hygiene cleanup.
+
+### Strategic constraints
+
+- **viXra status**: Nov 2025 viXra-targeted CPP papers (DUNE prediction, eight-experiment manifesto) did NOT get published. viXra is pay-to-publish ($19-25/paper); only ~2 of Thomas's submissions ever appeared, and the prediction papers were not among them. **Nov 2025 papers do NOT constitute durable prior-prediction citations.** Don't budget time on revising them.
+- **arXiv endorsement is a sub-task**: arXiv requires endorsement from existing arXiv authors in target categories (hep-ph, nucl-th, math-ph). Sub-task to identify endorsers OR use Zenodo as primary venue (CERN-run, free, DOI-issuing, no friction).
+- **OSF status**: Registration JXE8D stuck "Pending Admin Contributor Approval" 38+ days. Wait 5 business days from Session 36 close, then Zenodo fallback if no response.
+
+### Recommended Session 37 opening
+
+If Thomas opens with "let's start on the hierarchy paper," go directly to `papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md` and walk through the Open Questions section. Resolve Q1-Q4 before drafting v0.1.
+
+If Thomas opens with anything else, the `research_priorities.md` document gives the framework to evaluate the request. **Do NOT propose SS-10 framings A-D** — that conversation is closed at Session 36 close.
+
+---
+
+## Forward queue Sessions 37+ (operational items)
+
+### Active item 1: OSF status check (5 business days from Session 36 close)
 
 If Session 37 happens within 5 business days of Session 36 close (i.e., before approximately May 14, 2026): wait, do not press OSF, do not deposit elsewhere yet.
 
@@ -217,17 +244,17 @@ If Session 37 happens after May 14 with no OSF response: pivot to **Zenodo + arX
 
 If Session 37 happens within 5 business days but Thomas got an OSF response: discuss the response and proceed accordingly. If OSF approved the registration, then SS-9 can be added as an Update to JXE8D via the blue "Update" button on the registration page. arXiv in parallel.
 
-### Active item 3: arXiv submission for SS-9 (independent of OSF)
+### Active item 2: arXiv submission for SS-9 (independent of OSF)
 
 This can proceed at any time per Thomas's decision. Categories: nucl-th + math-ph. Submission guide at `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_submission_guide.md`.
 
 Does Thomas have an arXiv endorsement? The submission guide notes endorsement is required for first-time submitters in physics categories. If Thomas has prior arXiv submissions, this is a non-issue. If not, Claude should help draft an endorsement request.
 
-### Active item 4: TODO-006 promotion decision
+### Active item 3: TODO-006 promotion decision
 
 The Session 36 audit revealed TODO-006 (legacy .bib cleanup) is now a programme-wide migration scope, not a quick audit. Recommendation: at Session 37 or shortly after, promote it to `future_projects.md` as **OPEN-WORKFLOW-1 multi-session bibliography migration project**. Likely 2-3 sessions of paper-by-paper migration with recompile verification per paper.
 
-Note: the registered direction for SS-10 (sub-shell-physics) and the bibliography migration are independent — they don't compete for the same session. The migration could run in parallel as a "low-context fill-in" between SS-10 sessions, or be batched as dedicated cleanup sessions when SS-10 progress hits a natural pause.
+Note: with SS-10 deferred indefinitely (Session 36 strategic decision), the bibliography migration could run as a "low-context fill-in" between Track 1 hierarchy paper drafting sessions, or be batched as dedicated cleanup sessions when Track 1 progress hits a natural pause.
 
 ---
 
