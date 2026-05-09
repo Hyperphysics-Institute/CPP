@@ -69,6 +69,12 @@ Filenames follow CPP convention: no version suffixes in filenames (version histo
 
 The `sketches/` subfolder pattern is imported from SS-9's `series_strong/papers/SS-9/sketches/`: working documents that develop subsidiary derivations before integration into the main `.tex` source. They are open-source and effectively part of the paper for any reader who wants to see the development path.
 
+## Operational discipline — family switches
+
+The SF-line is developed serially with one Claude conversation window active at a time. Default primary work is the active heavy-lift paper (currently SF-4). Other family papers are advanced as derivation logic dictates rather than by fixed shipping priority — when a specific identified derivation gap in the active paper is most cleanly closed by first developing a specific result in another family, work switches to that family until the result ships, then returns.
+
+Every such switch is recorded in [`SF-line_switch_log.md`](SF-line_switch_log.md) with trigger, target, planned return condition, and outcome (filled in on return). The protocol exists to prevent procrastination disguised as redirection, to make the SF-line's actual development path readable to future reviewers, and to keep family-switches grounded in derivation logic rather than paper-shipping pressure or vague stuckness.
+
 ---
 
 *Architecture established at Session 38 opening (patch 0295) per Thomas's strategic adoption of Option-3 four-family + SF-5 unification. Original folder established Session 37 (patch 0293). See [`../research_priorities.md`](../research_priorities.md) for the strategic frame.*

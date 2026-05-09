@@ -48,6 +48,7 @@ Cross-cutting papers that solve named unsolved problems in physics, make forced-
 | File / Folder | Description |
 |------|-------------|
 | [`README.md`](flagship_papers/README.md) | Architecture overview, inclusion criterion, SF-line table, current status |
+| [`SF-line_switch_log.md`](flagship_papers/SF-line_switch_log.md) | Family-switch protocol + log; serial SF-line work with derivation-logic-driven switches between families |
 | [`charged_leptons/`](flagship_papers/charged_leptons/) | **SF-1** — Charged Lepton Mass Spectrum from K3 + 600-Cell Geometry; planned, primarily reframing of SM-3/4/6 |
 | [`electroweak/`](flagship_papers/electroweak/) | **SF-2** — Electroweak Sector Unification from 600-Cell Geometry; planned, reframing + identified gaps |
 | [`quarks/`](flagship_papers/quarks/) | **SF-3** — Quark Sector Unification from 600-Cell Distance Shells; planned, primarily reframing of SM-7/8/9/10 |
