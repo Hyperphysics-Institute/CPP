@@ -262,4 +262,85 @@ Two observations about the SF-line work itself, not specific to SF-4:
 
 ---
 
-*Transcript file established at Session 38 close (patch 0297). Future SF-line sessions append new sections (§16, §17, ...) with their reasoning chains. The transcript grows monotonically; earlier sections are not edited except for typo correction.*
+## §16. Session 41 — architectural revision to 7-paper SF-line
+
+Session 41 had two arcs: (a) opening SF-4 derivation work via OPEN-FP-SF-4-1 partial closure (covered substantively in `flagship_papers/neutrinos/sketches/SF-4_suppression_derivation.md` §7–§9, not transcribed here to avoid duplication), and (b) an architectural-revision conversation triggered partway through by Thomas's question about SM particle counting that revealed scope inconsistencies in the 5-paper Option-3 architecture. This section captures arc (b).
+
+### §16.1 Opening: the 12-vs-17 SM particle counting question
+
+The conversation opened with Thomas's observation that earlier session framing had said "12 SM particles" needing unification, with "9 SM particles if neutrinos go elsewhere," but counting his anthology-chapter list — 3 charged leptons + 3 neutrinos + 5 EW (W, Z, Higgs, photon, gluon) + 6 quarks — gave 17. Where was the discrepancy?
+
+Two distinct things were being conflated. The "12 fermion masses from one calibration" framing was specifically about fermion masses (3 charged leptons + 6 quarks + 3 neutrinos = 12), which is the SF-1/SF-3/SF-4 scope. Thomas's count of 17 was a broader accounting including the gauge bosons covered by SF-2. The "9" figure was the same fermion subset minus SF-4 — relevant to the architectural question of whether neutrinos belong in the SF-line at all, but not to the broader "all SM particles" count.
+
+The full SF-line scope — including bosons, masslessness predictions, and mixing parameters — addresses approximately 33 quantitative predictions, not 12. The "12 fermion masses" headline frames the most familiar subset; the actual scope is broader.
+
+### §16.2 The structural-symmetry observation about photon and gluon
+
+In responding to the counting question, Claude noted (briefly) that the gluon is technically strong-sector rather than electroweak in canonical SM terminology, and that bundling it into SF-2 would be unusual. Thomas's response sharpened this into a structural argument:
+
+> "You are correct to note that the gluons are in a different category than the electroweak bosons, although choosing to separate out the gluon requires us to separate out the photon also to apply our choice symmetrically."
+
+This was the load-bearing observation. Thomas elaborated with substantive CPP physical content for each particle:
+
+- **W±, W⁰, Z, H** are eCP/qCP cage-bound combinations (hDPs) with specific cage geometries (12-CP bracelet for W⁰, 12-CP icosahedron for Z, 20-CP dodecahedron for H). Mass derivation via cage-stability mechanics. The W⁰ is a CPP-novel particle — not in SM phenomenology — that functions as catalyst-substrate for the W± states.
+- **The photon** is a quantum (volume) of polarized eDPs, polarized by a non-conservative/radiative impulse of motion. *Not* cage-bound.
+- **The gluon** is a qDP (quark-DP) relationship that becomes visible as a neutral chain of qDPs extending between unpaired qCPs of opposite polarity (the meson). The CPP claim — that there are not 8 distinct gluon types but rather different bonding relationships between the 4 tetrahedral vertices upon which a baryon forms — was reiterated as the strong-sector structural picture. *Not* cage-bound.
+- **The glueball** is a neutral spherical mass of qDPs (per the glueball entry, distinct from the cage-bound mesons).
+
+The structural point was that the original SF-2 grouping of "5 neutral/bosonic particles" papered over four mechanistically distinct categories. Cage bosons (W±/W⁰/Z/H) operate by cage-stability. The photon operates by eDP-sea polarization. The gluon operates by qDP-bonding-relationship. Folding all into one paper would have required three different mechanism narratives in one apex paper, undermining argumentative unity.
+
+Thomas's proposed resolution:
+
+> "Including the gluon as a separate category, as a subset of Strong Series unification makes sense, for SF-5. Including the photon as a subset of Electromagnetism as a category in SF-6 would truly connect classical, relativistic, and quantum concepts."
+
+### §16.3 The 7-paper architecture proposal
+
+Claude's response framed Thomas's proposal as a 7-paper architectural revision and laid out the resulting structure:
+
+- SF-1 charged leptons (unchanged)
+- SF-2 electroweak cage bosons — W±/W⁰/Z/H (scope-narrowed)
+- SF-3 quarks (unchanged)
+- SF-4 neutrinos (active, unchanged)
+- **SF-5 strong-sector unification (NEW)** — gluon counting, glueballs, confinement, SS-corpus synthesis
+- **SF-6 electromagnetism unified (NEW)** — classical EM + SR + QED bridge from eDP-sea polarization
+- **SF-7 grand unification (renumbered from SF-5; expanded scope)** — synthesis of all 6 predecessor flagships
+
+Three reasons advanced over the 5-paper architecture: (1) mechanistic coherence within each paper (each flagship gets a single underlying CPP mechanism narrative); (2) audience-fit by particle class (different specialists, different entry-question expectations); (3) source-corpus richness justifies the count (SF-5 has SS-1 through SS-9+ + OPEN-SS-6 + OPEN-SS-37 routes, SF-6 has EW-1 through EW-5 + SR-1 + QM-1 through QM-6, both substantial).
+
+The cost — 2 more flagship-class papers worth of work — was acknowledged as real but the structural improvement was substantial. Importantly, *most of the new work is already done in the existing series papers*; SF-5 and SF-6 are syntheses rather than new derivation campaigns. The marginal cost is the writing/synthesis labor, not the physics.
+
+### §16.4 Two items registered as separate CONJ entries
+
+Two substantive things in Thomas's message needed independent registration:
+
+**The W⁰ as a novel CPP particle prediction.** The CPP claim that the W⁰ exists as a neutral massive boson with bracelet/open-configuration cage structure, functioning as catalyst-substrate for the W± states, is a forced-choice falsifiable claim against the SM phenomenology that does not name a W⁰. Registered as **CONJ-EW-W0** (sector EW + FP/SF-2; HIGH priority) with specific derivation targets: (a) cage-stability for the bracelet shape, (b) W⁰ mass prediction, (c) bound-charge mechanism producing W± states, (d) experimental signature distinguishing W⁰ from existing SM channels.
+
+**The no-8-gluons claim.** The CPP claim that the 8-fold SU(3) gluon octet is phenomenological dressing of a smaller underlying 4-tetrahedral-vertex bonding-relationship structure — registered as **CONJ-SS-Gluon-4Vertex** (sector SS + FP/SF-5; HIGH priority) with derivation targets: (a) substrate-level enumeration of distinct bonding relationships at the 4 baryon vertices, (b) mapping from CPP bonding-relationship structure to SM SU(3) octet phenomenology, (c) divergence predictions where the two pictures might be experimentally distinguishable.
+
+Both registrations live in `Research_Frontier.md` §2 (CONJ); these are the two CPP claims most directly at stake when SF-5 and SF-6 ship.
+
+### §16.5 Decision and choice (a) adoption
+
+The architectural-revision conversation closed with three branch options:
+
+- **(a) Architecture-first.** Land the SF-line architectural revision now (this patch 0301), return to SF-4 derivation in Session 43 (OPEN-FP-SF-4-2 K3-Cage-Shell Consistency since OPEN-FP-SF-4-1 had just hit partial closure cleanly).
+- **(b) Derivation-first.** Continue SF-4 work in Session 42; defer architectural revision to a later session.
+- **(c) Hybrid.** Small architecture-note patch (just register W⁰ and gluon claims); defer full SF-line README rewrite.
+
+Claude recommended (a). Reasons: (i) the architectural conversation is loaded *now*, fresh in mutual context — doing it later means re-loading; (ii) the novel predictions (W⁰, no-8-gluons) need registration regardless of architecture timing — leaving them in chat history risks loss; (iii) SF-4 work has just hit a natural pause point with OPEN-FP-SF-4-1 partial closure landed, so the cost of session-switching to architectural work is minimal.
+
+Thomas confirmed: "Please proceed with choice (a), full agreement with strategy."
+
+### §16.6 Texture observations from §16
+
+**Thomas's CPP physical-content paragraphs are programme-level inputs.** The W⁰ description (bracelet/open-configuration cage, catalyst role) and the gluon description (4-tetrahedral-vertex bonding relationships, not 8 octet types) and the glueball description (neutral spherical mass of qDPs) and the photon description (polarized eDP volume) are all substantive physical claims that hadn't been fully systematized in the corpus before Session 41. They appeared in the conversation as Thomas-side physical-intuition input and got immediately registered as CONJ entries — that is the pattern to repeat going forward. When Thomas drops physical content in conversation, register it in `Research_Frontier.md` immediately rather than leaving it to memory or later patches.
+
+**The structural-symmetry argument is a generalizable architectural test.** "If we separate X for being in category A, we should separate Y for the same reason" is the test that surfaced the photon/gluon distinction. Future architectural decisions in the SF-line and elsewhere should explicitly run this symmetry test — when one element is separated for a reason, all elements that share the reason should be separated for consistency.
+
+**The 5-paper → 7-paper revision shows the value of architectural patches early.** The 5-paper Option-3 architecture lasted 3 days (Session 38 to Session 41) before being revised. That is *good*: identifying scope inconsistencies before they become embedded in published papers is much cheaper than identifying them after. Architectural revisions should be embraced, not avoided, while the corpus is in development. The architecture-history table in the new `flagship_papers/README.md` makes this revision-friendliness visible.
+
+**The cost of the revision is largely write-up, not research.** SF-5 source corpus (SS-1 through SS-9+) was already written under the SS series; SF-6 source corpus (EW + SR + QM) was already written under those series. The 7-paper architecture acknowledges scope that already existed in the corpus rather than adding new derivation work. This is the cleanest kind of architectural revision: one that brings the architecture in line with the actual corpus, rather than committing to new research directions.
+
+---
+
+*Transcript through §16 captures Sessions 37–41 of SF-line development. Future sessions append §17, §18, ... per the established discipline. The transcript grows monotonically; earlier sections are not edited except for typo correction.*

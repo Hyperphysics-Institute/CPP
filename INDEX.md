@@ -43,18 +43,20 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 
 ## [`flagship_papers/`](flagship_papers/) — Cross-Cutting Apex Papers
 
-Cross-cutting papers that solve named unsolved problems in physics, make forced-choice prospective predictions, or provide cross-domain unification. Established Session 37 (patch 0293); reorganized at Session 38 (patch 0295) into the **Option-3 four-family + unification SF-line architecture** — four family flagship papers (SF-1 through SF-4) plus a unification synthesis (SF-5).
+Cross-cutting papers that solve named unsolved problems in physics, make forced-choice prospective predictions, or provide cross-domain unification. Established Session 37 (patch 0293); reorganized at Session 38 (patch 0295) into the Option-3 four-family + unification SF-line architecture; **revised at Session 41 (patch 0301) to 7-paper architecture** — six family/sector flagship papers (SF-1 through SF-6) plus a grand unification synthesis (SF-7).
 
 | File / Folder | Description |
 |------|-------------|
 | [`README.md`](flagship_papers/README.md) | Architecture overview, inclusion criterion, SF-line table, current status |
 | [`SF-line_switch_log.md`](flagship_papers/SF-line_switch_log.md) | Family-switch protocol + log; serial SF-line work with derivation-logic-driven switches between families |
 | [`charged_leptons/`](flagship_papers/charged_leptons/) | **SF-1** — Charged Lepton Mass Spectrum from K3 + 600-Cell Geometry; planned, primarily reframing of SM-3/4/6 |
-| [`electroweak/`](flagship_papers/electroweak/) | **SF-2** — Electroweak Sector Unification from 600-Cell Geometry; planned, reframing + identified gaps |
+| [`electroweak/`](flagship_papers/electroweak/) | **SF-2** — Electroweak Cage-Boson Unification (W±/W⁰/Z/H); planned, scope-narrowed at S41 to cage bosons only (photon → SF-6, gluon → SF-5); includes W⁰ novel-particle prediction (CONJ-EW-W0) |
 | [`quarks/`](flagship_papers/quarks/) | **SF-3** — Quark Sector Unification from 600-Cell Distance Shells; planned, primarily reframing of SM-7/8/9/10 |
-| [`neutrinos/`](flagship_papers/neutrinos/) | **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry; audit complete (Session 37); mechanism selected (Session 39) — Candidate C with $\alpha=2$ and assignment (tet, ico, icosid); Sessions 40+ open OPEN-FP-SF-4-1 (suppression mechanism) and OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency Theorem) |
-| [`neutrinos/sketches/`](flagship_papers/neutrinos/sketches/) | SF-4 staging documents. Currently: `SF-4_neutrino_sector_audit.md` (audit + Candidate-C falsifier check), `SF-4_mechanism_selected.md` (Session 39 decision document, patch 0298) |
-| [`unification/`](flagship_papers/unification/) | **SF-5** — Standard Model Unification — Hierarchy Without Hierarchy; synthesis on top of SF-1 through SF-4. Contains original Track-1 hierarchy outline as source material |
+| [`neutrinos/`](flagship_papers/neutrinos/) | **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry; audit complete (Session 37); mechanism selected (Session 39) — Candidate C with $\alpha=2$ and assignment (tet, ico, icosid); Sessions 40+ open OPEN-FP-SF-4-1 (suppression mechanism, partial closure achieved S41) and OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency Theorem) |
+| [`neutrinos/sketches/`](flagship_papers/neutrinos/sketches/) | SF-4 staging documents. Currently: `SF-4_neutrino_sector_audit.md`, `SF-4_mechanism_selected.md`, `SF-4_suppression_derivation.md` (all active) |
+| [`strong/`](flagship_papers/strong/) | **SF-5 (NEW S41)** — Strong-Sector Unification: gluon counting from 4-tetrahedral-vertex bonding (CONJ-SS-Gluon-4Vertex), glueballs (OPEN-SS-6), confinement, hadron spectrum from SS-1 through SS-9+ corpus |
+| [`electromagnetism/`](flagship_papers/electromagnetism/) | **SF-6 (NEW S41)** — Electromagnetism Unified: classical Maxwell + special-relativistic photon kinematics + QED phenomena from eDP-sea polarization; cross-domain bridge synthesizing EW-1 through EW-5 + SR-1 + QM-1 through QM-6 |
+| [`unification/`](flagship_papers/unification/) | **SF-7 (renumbered S41 from SF-5)** — Standard Model Grand Unification — Hierarchy Without Hierarchy; synthesis on top of SF-1 through SF-6. Contains original Track-1 hierarchy outline as source material |
 
 See [`research_priorities.md`](research_priorities.md) for the strategic frame.
 
