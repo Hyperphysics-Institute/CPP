@@ -43,15 +43,19 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 
 ## [`flagship_papers/`](flagship_papers/) — Cross-Cutting Apex Papers
 
-Cross-cutting papers that solve named unsolved problems in physics (hierarchy problem, cosmological constant, strong CP, muon g-2, etc.), make forced-choice prospective predictions, or provide cross-domain unification. These are the artifacts that carry the framework to the physics community; series papers are the derivation infrastructure they build on. Established at Session 37 opening (patch 0293) per the Session 36 close+ strategic decision.
+Cross-cutting papers that solve named unsolved problems in physics, make forced-choice prospective predictions, or provide cross-domain unification. Established Session 37 (patch 0293); reorganized at Session 38 (patch 0295) into the **Option-3 four-family + unification SF-line architecture** — four family flagship papers (SF-1 through SF-4) plus a unification synthesis (SF-5).
 
 | File / Folder | Description |
 |------|-------------|
-| [`README.md`](flagship_papers/README.md) | Folder rationale, inclusion criterion, current contents |
-| [`hierarchy_problem/`](flagship_papers/hierarchy_problem/) | **Track 1 [ACTIVE]** — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*; outline + sketches; drafting begins after Q1 mechanism selection |
-| [`hierarchy_problem/sketches/`](flagship_papers/hierarchy_problem/sketches/) | Staging documents (SS-9-pattern sketches → development → paper-text discipline). Currently: `SS-Q1_neutrino_sector_audit.md` (audit phase Session 37) |
+| [`README.md`](flagship_papers/README.md) | Architecture overview, inclusion criterion, SF-line table, current status |
+| [`charged_leptons/`](flagship_papers/charged_leptons/) | **SF-1** — Charged Lepton Mass Spectrum from K3 + 600-Cell Geometry; planned, primarily reframing of SM-3/4/6 |
+| [`electroweak/`](flagship_papers/electroweak/) | **SF-2** — Electroweak Sector Unification from 600-Cell Geometry; planned, reframing + identified gaps |
+| [`quarks/`](flagship_papers/quarks/) | **SF-3** — Quark Sector Unification from 600-Cell Distance Shells; planned, primarily reframing of SM-7/8/9/10 |
+| [`neutrinos/`](flagship_papers/neutrinos/) | **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry; audit complete (Session 37); mechanism-selection pending Session 39 |
+| [`neutrinos/sketches/`](flagship_papers/neutrinos/sketches/) | SF-4 staging documents. Currently: `SF-4_neutrino_sector_audit.md` (audit + Candidate-C falsifier check) |
+| [`unification/`](flagship_papers/unification/) | **SF-5** — Standard Model Unification — Hierarchy Without Hierarchy; synthesis on top of SF-1 through SF-4. Contains original Track-1 hierarchy outline as source material |
 
-See [`research_priorities.md`](research_priorities.md) for the strategic frame and four-track priority order.
+See [`research_priorities.md`](research_priorities.md) for the strategic frame.
 
 ---
 

@@ -34,12 +34,17 @@ The Standard Model requires 3 free parameters for the charged lepton masses. The
 
 ## Flagship Papers
 
-[`flagship_papers/`](flagship_papers/) houses the programme's cross-cutting apex artifacts: papers that solve named unsolved problems in mainstream physics (hierarchy problem, cosmological constant, strong CP, muon g-2), make forced-choice prospective predictions, or provide cross-domain unification. They build on the series papers below — they do not replace them — and are written for an audience reading across sectors. Currently in development:
+[`flagship_papers/`](flagship_papers/) houses the programme's cross-cutting apex artifacts: papers that solve named unsolved problems in mainstream physics, make forced-choice prospective predictions, or provide cross-domain unification. They build on the series papers below — they do not replace them — and are written for an audience reading across sectors.
 
-- **Track 1 [ACTIVE]** — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells.* The full Standard Model fermion mass spectrum from a single mass scale $M_0 = m_e \cdot z/\phi \approx 3.79$ MeV via 600-cell distance-shell multipliers and the K3 spectral structure. Outline at [`flagship_papers/hierarchy_problem/`](flagship_papers/hierarchy_problem/).
-- **Tracks 2-4 [PLANNED]** — second anomaly-targeting paper, eight-experiment manifesto audit, and cross-cutting unification paper. See [`flagship_papers/README.md`](flagship_papers/README.md).
+The Standard-Model fermion-mass programme is structured as **four family-paper flagships plus a unification synthesis**, the SF-line:
 
-The strategic frame governing flagship-paper selection and series-paper completeness is in [`research_priorities.md`](research_priorities.md).
+- **SF-1** — Charged Lepton Mass Spectrum from K3 + 600-Cell Geometry. [`flagship_papers/charged_leptons/`](flagship_papers/charged_leptons/)
+- **SF-2** — Electroweak Sector Unification from 600-Cell Geometry. [`flagship_papers/electroweak/`](flagship_papers/electroweak/)
+- **SF-3** — Quark Sector Unification from 600-Cell Distance Shells. [`flagship_papers/quarks/`](flagship_papers/quarks/)
+- **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry. Audit phase complete (Session 37); mechanism-selection pending. [`flagship_papers/neutrinos/`](flagship_papers/neutrinos/)
+- **SF-5** — Standard Model Unification — *Hierarchy Without Hierarchy*. The synthesis paper on top of SF-1 through SF-4. [`flagship_papers/unification/`](flagship_papers/unification/)
+
+The strategic frame governing flagship-paper selection and the SF-line architecture is in [`research_priorities.md`](research_priorities.md) and [`flagship_papers/README.md`](flagship_papers/README.md).
 
 ---
 

@@ -93,7 +93,7 @@ By this test:
 ### Track 1 — Hierarchy problem reframing paper [ACTIVE]
 
 **Status**: PLANNED → drafting begins Session 37+
-**Outline location**: `flagship_papers/hierarchy_problem/hierarchy_paper_outline.md` (relocated from `papers_in_progress/` per patch 0293 — see [`flagship_papers/README.md`](flagship_papers/README.md))
+**Outline location**: `flagship_papers/unification/hierarchy_paper_outline.md` (originally established in `papers_in_progress/` per patch 0290; relocated to `flagship_papers/hierarchy_problem/` per patch 0293; relocated again to `flagship_papers/unification/` per patch 0295 when Option-3 four-family + unification SF-line architecture was adopted, restructuring this work as SF-5 the synthesis paper sitting on top of SF-1 charged_leptons / SF-2 electroweak / SF-3 quarks / SF-4 neutrinos — see [`flagship_papers/README.md`](flagship_papers/README.md))
 **Working title**: *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*
 **Estimated effort**: 5-8 sessions to v1.0
 **Target venue**: Zenodo (DOI) primary; arXiv hep-ph + math-ph if endorsement obtainable

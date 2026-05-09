@@ -17,7 +17,7 @@ This is a context-window-transition handover. The current Session 36 conversatio
 
 1. This document (orientation) — note the **"Strategic decision at Session 36 close"** section below SUPERSEDES the previous SS-10-focused forward queue
 2. **`/CPP/research_priorities.md`** (NEW patch 0290 — strategic prioritization framework; **read this before any session work** to understand the active priority order)
-3. **`/CPP/flagship_papers/hierarchy_problem/hierarchy_paper_outline.md`** (Track 1 active paper outline with four open questions for Thomas — relocated from `papers_in_progress/` per patch 0293; see also [`/CPP/flagship_papers/README.md`](flagship_papers/README.md) for the flagship-folder rationale)
+3. **`/CPP/flagship_papers/unification/hierarchy_paper_outline.md`** (original Track-1 active paper outline with four open questions for Thomas — relocated from `papers_in_progress/` per patch 0293; folder renamed `hierarchy_problem/` → `unification/` per patch 0295 when Option-3 four-family + unification SF-line architecture was adopted; this outline now serves as source material for SF-5 the unification synthesis paper; Q1 dissolved into SF-4 neutrinos — see [`/CPP/flagship_papers/README.md`](flagship_papers/README.md))
 4. `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (SS-9-specific permanent handover; covers SS-9 history through Session 35 close + Session 36 patch 0285 errata)
 5. The Session 36 entry + Session 36 close strategic appendix in `session_logs/2026-05-02_session_log.md` (technical details + durable strategic-conversation record)
 6. `todolist.md` (P1-empty; new work picks up from research_priorities.md, NOT from todolist)
@@ -181,7 +181,7 @@ Patch 0288 (Session 36 close): `todolist.md` cleanup + Session 36 entry to `sess
 **After patch 0289 was complete, Thomas opened a substantive strategic conversation that produced a programme-wide reprioritization.** The previous forward-queue assumption (Session 37 opens with "what should SS-10 be?") is **superseded**. The new strategic frame and active priorities are documented in:
 
 - **`/CPP/research_priorities.md`** — strategic prioritization framework (NEW, patch 0290, ~22.6 KB)
-- **`/CPP/flagship_papers/hierarchy_problem/hierarchy_paper_outline.md`** — Track 1 paper outline (NEW, patch 0290; relocated to `flagship_papers/` per patch 0293)
+- **`/CPP/flagship_papers/unification/hierarchy_paper_outline.md`** — original Track-1 paper outline (NEW, patch 0290; relocated to `flagship_papers/hierarchy_problem/` per patch 0293; folder renamed to `flagship_papers/unification/` per patch 0295 — Option-3 SF-line restructures this work as SF-5 synthesis paper)
 - **`session_logs/2026-05-02_session_log.md` Session 36 close strategic appendix** — durable record of the conversation (added patch 0290)
 
 ### Strategic frame (1-paragraph summary)
@@ -193,7 +193,7 @@ Goal is producing the **smallest set of physics artifacts** that establish CPP a
 **Track 1 — Hierarchy problem reframing paper [ACTIVE, drafting begins Session 37+]**
 - Working title: *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*
 - Source material exists across SM-2/3/4/6/7/8/9/10; this is composition + framing work, not new derivation
-- Outline at `flagship_papers/hierarchy_problem/hierarchy_paper_outline.md` (relocated from `papers_in_progress/` per patch 0293) includes: source-material map, comparison table draft, reviewer-anticipation analysis, four open questions for Thomas to resolve before drafting begins
+- Outline at `flagship_papers/unification/hierarchy_paper_outline.md` (originally `papers_in_progress/`; relocated to `flagship_papers/hierarchy_problem/` per patch 0293; folder renamed to `flagship_papers/unification/` per patch 0295 reflecting Option-3 architecture where this becomes SF-5 source material) includes: source-material map, comparison table draft, reviewer-anticipation analysis, four open questions originally for the single-paper Track 1; Q1 (neutrino mechanism) dissolved into SF-4; Q2/Q3/Q4 remain SF-5 questions
 - Estimated 5-8 sessions to v1.0 SHIP; target Sessions 37-38 audit + Q&A, 39-41 v0.1→v0.5, 42-44 review polish, 45±2 v1.0 SHIP
 - Target venue: Zenodo (DOI) primary; arXiv hep-ph + math-ph if endorsement obtainable
 
@@ -226,7 +226,7 @@ Goal is producing the **smallest set of physics artifacts** that establish CPP a
 
 ### Recommended Session 37 opening
 
-If Thomas opens with "let's start on the hierarchy paper," go directly to `flagship_papers/hierarchy_problem/hierarchy_paper_outline.md` and walk through the Open Questions section. Resolve Q1-Q4 before drafting v0.1.
+If Thomas opens with "let's start on the hierarchy paper," note that the architecture has been restructured under Option-3 (Session 38 patch 0295): the original single-paper Track-1 hierarchy work now lives as **SF-5** in `flagship_papers/unification/`, with the eight-parameter neutrino sector promoted to its own **SF-4** flagship at `flagship_papers/neutrinos/`. The Q1 audit at `flagship_papers/neutrinos/sketches/SF-4_neutrino_sector_audit.md` is the active foundation document; mechanism-selection conversation is the natural next step. SF-5 drafting follows SF-1 through SF-4 ship.
 
 If Thomas opens with anything else, the `research_priorities.md` document gives the framework to evaluate the request. **Do NOT propose SS-10 framings A-D** — that conversation is closed at Session 36 close.
 
@@ -365,7 +365,7 @@ If you're reading this as the next Opus context window, you have everything you 
 **Do**: read in this order before doing anything else —
 1. Top of this file (orientation + read order)
 2. **`/CPP/research_priorities.md`** (strategic prioritization framework — Track 1-4)
-3. **`/CPP/flagship_papers/hierarchy_problem/hierarchy_paper_outline.md`** (Track 1 active paper)
+3. **`/CPP/flagship_papers/unification/hierarchy_paper_outline.md`** (original Track-1 outline; SF-5 source material under Option-3) and **`/CPP/flagship_papers/neutrinos/sketches/SF-4_neutrino_sector_audit.md`** (SF-4 active foundation)
 4. Session 36 entry + close strategic appendix in session log
 5. SS-9 documentation suite handover-SS-9.md (paper-specific, supplementary)
 

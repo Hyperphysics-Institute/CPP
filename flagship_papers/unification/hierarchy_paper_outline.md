@@ -1,5 +1,9 @@
 # Hierarchy Problem Reframing Paper — Working Outline
 
+> **Update — Session 38 (9 May 2026, patch 0295):** This outline was authored at Session 36 close+ as the original Track-1 single-paper plan covering all 12 fermion masses in one document. At Session 38, Thomas adopted Option-3 four-family + unification SF-line architecture, which restructures this work as **SF-5** (the unification synthesis paper) sitting on top of SF-1 (charged leptons), SF-2 (electroweak), SF-3 (quarks), and SF-4 (neutrinos). The outline body below remains valuable as detailed source material for SF-5's eventual synthesis content — the source-material map, the comparison table draft, the falsifier framing, and the conditional-theorem inheritance discussion all carry forward to SF-5 with structural restructuring (synthesis paper rather than primary derivation paper). Q1 (neutrino mechanism) dissolved into SF-4 — see [`../neutrinos/`](../neutrinos/). Q2, Q3, Q4 remain SF-5 questions to resolve at SF-5 drafting time after SF-1 through SF-4 are in place. Body content unchanged below for continuity.
+
+---
+
 **Status**: PLANNED → drafting begins Session 37+
 **Track**: Track 1 (priority 1) per `/CPP/research_priorities.md`
 **Working title**: *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*
