@@ -1,6 +1,6 @@
 # SF-4: Neutrino Sector Unification from 600-Cell Geometry
 
-**Status:** Active. Audit phase complete (Session 37, patch 0294); mechanism-selection pending Session 39+ (renumbered to align with Option-3).
+**Status:** Active. Audit phase complete (Session 37, patch 0294); mechanism selected (Session 39, patch 0298) — Candidate C with $\alpha = 2$ and assignment $(\nu_e, \nu_\mu, \nu_\tau) \to$ (tetrahedron $V=4$, icosahedron $V=12$, icosidodecahedron $V=30$); Sessions 40+ derivation campaign opens with OPEN-FP-SF-4-1 (Unbound-Mode Suppression Mechanism) as first sub-problem.
 **Estimated sessions to v1.0 SHIP:** 10–14 (audit done; selection + derivation campaign + writing).
 **Inclusion criterion fit:** (1) named known-unknown — neutrino masses, mass hierarchy ordering, $\delta_{CP}$, the eight neutrino oscillation parameters in toto; (4) bridge to recognized mathematics — polytope theory and distance-shell structure of the 600-cell.
 
@@ -52,12 +52,14 @@ SF-4 is the pivot paper of the SF-line: longest derivation campaign, highest sci
 Currently:
 - `README.md` — this file
 - `sketches/README.md` — staging-document discipline
-- `sketches/SF-4_neutrino_sector_audit.md` — eight-parameter audit (Session 37)
+- `sketches/SF-4_neutrino_sector_audit.md` — eight-parameter audit (Session 37, patch 0294)
+- `sketches/SF-4_mechanism_selected.md` — mechanism-selection decision document (Session 39, patch 0298)
 
 To come:
-- `sketches/SF-4_mechanism_selected.md` — mechanism selection decision document (Session 39+)
-- `sketches/SF-4_*.md` — sub-derivation working documents per the SS-9 staging discipline
-- `sf-4_outline.md` once mechanism is selected
+- `sketches/SF-4_suppression_derivation.md` — OPEN-FP-SF-4-1 working document (Sessions 40+)
+- `sketches/SF-4_k3_cage_shell_consistency.md` — OPEN-FP-SF-4-2 working document (Sessions 43+)
+- `sketches/SF-4_*.md` — additional sub-derivation working documents per the SS-9 staging discipline
+- `sf-4_outline.md` once both sub-problems close
 - `sf-4_neutrinos.tex/.pdf` once derivation campaign produces v0.1
 - `documentation_suite/`, `letters/`, `founders_voice/` per SS-9 four-tier discipline as the paper develops
 

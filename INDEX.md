@@ -52,8 +52,8 @@ Cross-cutting papers that solve named unsolved problems in physics, make forced-
 | [`charged_leptons/`](flagship_papers/charged_leptons/) | **SF-1** — Charged Lepton Mass Spectrum from K3 + 600-Cell Geometry; planned, primarily reframing of SM-3/4/6 |
 | [`electroweak/`](flagship_papers/electroweak/) | **SF-2** — Electroweak Sector Unification from 600-Cell Geometry; planned, reframing + identified gaps |
 | [`quarks/`](flagship_papers/quarks/) | **SF-3** — Quark Sector Unification from 600-Cell Distance Shells; planned, primarily reframing of SM-7/8/9/10 |
-| [`neutrinos/`](flagship_papers/neutrinos/) | **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry; audit complete (Session 37); mechanism-selection pending Session 39 |
-| [`neutrinos/sketches/`](flagship_papers/neutrinos/sketches/) | SF-4 staging documents. Currently: `SF-4_neutrino_sector_audit.md` (audit + Candidate-C falsifier check) |
+| [`neutrinos/`](flagship_papers/neutrinos/) | **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry; audit complete (Session 37); mechanism selected (Session 39) — Candidate C with $\alpha=2$ and assignment (tet, ico, icosid); Sessions 40+ open OPEN-FP-SF-4-1 (suppression mechanism) and OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency Theorem) |
+| [`neutrinos/sketches/`](flagship_papers/neutrinos/sketches/) | SF-4 staging documents. Currently: `SF-4_neutrino_sector_audit.md` (audit + Candidate-C falsifier check), `SF-4_mechanism_selected.md` (Session 39 decision document, patch 0298) |
 | [`unification/`](flagship_papers/unification/) | **SF-5** — Standard Model Unification — Hierarchy Without Hierarchy; synthesis on top of SF-1 through SF-4. Contains original Track-1 hierarchy outline as source material |
 
 See [`research_priorities.md`](research_priorities.md) for the strategic frame.
