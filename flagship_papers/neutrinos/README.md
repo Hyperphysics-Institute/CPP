@@ -54,9 +54,9 @@ Currently:
 - `sketches/README.md` — staging-document discipline
 - `sketches/SF-4_neutrino_sector_audit.md` — eight-parameter audit (Session 37, patch 0294)
 - `sketches/SF-4_mechanism_selected.md` — mechanism-selection decision document (Session 39, patch 0298)
+- `sketches/SF-4_suppression_derivation.md` — OPEN-FP-SF-4-1 working document (Session 40+, patch 0299; leading-order $d_{\text{eff}} = 5$ result with $\sigma = 120^{-5}$ and the $z^{-10}$ numerical observation)
 
 To come:
-- `sketches/SF-4_suppression_derivation.md` — OPEN-FP-SF-4-1 working document (Sessions 40+)
 - `sketches/SF-4_k3_cage_shell_consistency.md` — OPEN-FP-SF-4-2 working document (Sessions 43+)
 - `sketches/SF-4_*.md` — additional sub-derivation working documents per the SS-9 staging discipline
 - `sf-4_outline.md` once both sub-problems close
