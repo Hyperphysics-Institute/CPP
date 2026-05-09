@@ -48,7 +48,8 @@ Cross-cutting papers that solve named unsolved problems in physics (hierarchy pr
 | File / Folder | Description |
 |------|-------------|
 | [`README.md`](flagship_papers/README.md) | Folder rationale, inclusion criterion, current contents |
-| [`hierarchy_problem/`](flagship_papers/hierarchy_problem/) | **Track 1 [ACTIVE]** — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*; outline-stage, drafting begins Session 37+ |
+| [`hierarchy_problem/`](flagship_papers/hierarchy_problem/) | **Track 1 [ACTIVE]** — *Hierarchy Without Hierarchy: Standard Model Mass Spectrum from 600-Cell Distance Shells*; outline + sketches; drafting begins after Q1 mechanism selection |
+| [`hierarchy_problem/sketches/`](flagship_papers/hierarchy_problem/sketches/) | Staging documents (SS-9-pattern sketches → development → paper-text discipline). Currently: `SS-Q1_neutrino_sector_audit.md` (audit phase Session 37) |
 
 See [`research_priorities.md`](research_priorities.md) for the strategic frame and four-track priority order.
 
