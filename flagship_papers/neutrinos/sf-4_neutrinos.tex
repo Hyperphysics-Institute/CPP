@@ -3,6 +3,16 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 0.5 -- 9 May 2026 (Session 49 v0.5 integration polish:
+%   stale v0.x version-number references in body text removed
+%   throughout (abstract, §1.4, §4.3 framing, §4.3 Table 4.1,
+%   §4.5, §5.8); cross-section consistency verified between §3.4,
+%   §4.4, §6.1 predictions tables; equation-reference and theorem-
+%   reference resolution checked (all \\ref and \\eqref targets
+%   resolve to existing labels); paper now reads as v1.0-target
+%   document rather than mid-iteration draft; v1.0 SHIP after AI
+%   review passes per SS-9 methodology)
+%
 % Version 0.4 -- 9 May 2026 (Session 48 v0.4 fills §6-§11 closing
 %   sections to full draft quality; all 12 sections (§0-§11) now
 %   at full paper quality; v0.5 next is integration polish before
@@ -31,6 +41,35 @@
 %   per the §11 drafting plan in sf-4_outline.md)
 %
 % CHANGELOG:
+%   v0.5 (9 May 2026 Session 49) -- integration polish pass.
+%     Substantive content of all 12 sections unchanged from v0.4;
+%     this pass cleans stale-version-number references and verifies
+%     internal consistency. Edits:
+%     - Abstract (§0): "PARTIAL CLOSURE in v0.1" + "v0.2-v0.3
+%       drafting iterations" → "ship at PARTIAL CLOSURE" (forward-
+%       looking framing, no draft-iteration history)
+%     - §1.4 What this paper does not deliver: 3 instances of
+%       "in v0.1" → cleaned (removed unnecessary version qualifier,
+%       cleaner forward-reference to "post-v1.0 work")
+%     - §4.3 three-pictures framing: "single-pick at v0.x" →
+%       "single-pick at the v1.0 level"
+%     - §4.3 Table 4.1: column header "v0.2 status" → "v1.0 status"
+%     - §4.5 OPEN-FP-SF-4-1: "v1.0+ work. The v0.1-v0.5 SF-4 paper
+%       ships at" → "post-v1.0 work. The SF-4 paper ships at"
+%     - §5.8 OPEN-FP-SF-4-2: same v0.1-v0.5 reference cleaned
+%     Verification:
+%     - All \\ref and \\eqref targets resolve to existing \\label
+%       definitions (verified by comm of grep extractions)
+%     - Numerical predictions consistent across §3.4 (splitting
+%       ratios 9.00/56.25), §4.4 (mass values 0.98/8.81/55.1/64.9
+%       meV), §6.1 (master predictions table)
+%     - Theorem 5.1 / Proposition 5.2 / Theorem 5.3 numbering
+%       verified consistent throughout
+%     - 22 bibliography entries (12 internal + 10 external)
+%       formatted consistently
+%     Net: 7 stale-version-reference fixes; ~10 lines net change;
+%     paper now at 1270-line v1.0-target draft.
+%
 %   v0.4 (9 May 2026 Session 48) -- §6-§11 closing sections filled to
 %     full draft quality. All six closing sections expanded from
 %     stubs to full paper-quality content:
@@ -204,7 +243,7 @@
 \title{\textbf{SF-4: Neutrino Sector Unification from 600-Cell Geometry}\\[6pt]
 {\large Eight Parameters from One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\normalsize Version 0.4 --- 9 May 2026 (\S6--\S11 closing sections filled to full draft quality; all 12 sections (\S0--\S11) now drafted at full paper quality; v0.5 next is integration polish before AI review passes toward v1.0 SHIP)}}
+{\normalsize Version 0.5 --- 9 May 2026 (integration polish pass: stale version-number references in body text removed; cross-section consistency verified; equation-reference and theorem-reference checks complete; v1.0 SHIP after AI review passes per SS-9 methodology)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -229,7 +268,7 @@ uses the same mass quantum $\Mzero$ and 600-cell coordination $z = 12$ that anch
 
 The paper makes specific zero-parameter quantitative predictions and identifies clean falsifiers: JUNO 2026+ resolution of mass ordering would falsify the cage-shell assignment if inverted hierarchy is confirmed; precision direct mass measurement above $\sim 5$ meV (KATRIN++, Project 8) or cosmological tightening to $\Sigma m_\nu < 50$ meV (DESI/CMB-S4) would falsify the $\sigmanu = z^{-10}$ prediction; PMNS deviation from TBM at zeroth order (after SM-5's higher-order Capotauro corrections) would falsify the K3-eigenmode-identification ansatz that SM-5 introduces and SF-4 inherits.
 
-The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) are at PARTIAL CLOSURE in v0.1: structural-physical pictures established with quantitative numerical predictions in hand; theorem-level rigor pending v0.2--v0.3 drafting iterations and closure of the open theorem-level work catalogued in \S\ref{sec:openwork}.
+The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) ship at PARTIAL CLOSURE: structural-physical pictures established with quantitative numerical predictions in hand; theorem-level rigor pending closure of the open theorem-level work catalogued in \S\ref{sec:openwork}.
 \end{abstract}
 
 \medskip\noindent
@@ -291,11 +330,11 @@ The paper delivers, at the structural-derivation level with explicit theorem-lev
 To be honest about scope:
 
 \begin{itemize}[leftmargin=2em]
-\item Theorem-level closure of the suppression mechanism from CPP axioms A1--A11 (Picture A formalization) is at PARTIAL CLOSURE in v0.1; rigorous derivation is registered as OPEN-FP-SF-4-1 and is v1.0+ work.
+\item Theorem-level closure of the suppression mechanism from CPP axioms A1--A11 (Picture A formalization) ships at PARTIAL CLOSURE; rigorous derivation is registered as OPEN-FP-SF-4-1 and is post-v1.0 work.
 \item Theorem-level closure of OPEN-FP-SF-4-2 at the vertex-by-vertex coupling level is tied to SM-5's existing open problem on lifting the K3 antibonding-doublet degeneracy. SF-4 ships at the SM-5-inheritance level; theorem-level closure requires resolving SM-5's open problem.
 \item Quantitative $\delta_{CP}$ prediction is deferred to SF-2 (route (ii), per OP-SM-7d EW-sector inheritance).
-\item Majorana versus Dirac character is not specified by the cage-shell mechanism in v0.1; registered as open.
-\item Sterile-neutrino predictions are outside the active-flavor scope of v0.1; registered as open.
+\item Majorana versus Dirac character is not specified by the cage-shell mechanism; registered as open.
+\item Sterile-neutrino predictions are outside the active-flavor scope of this paper; registered as open.
 \end{itemize}
 
 \subsection{Position in the SF-line}
@@ -539,7 +578,7 @@ This is a leading-order count from integer channel enumeration. Sub-leading cont
 
 The empirical 2\% match with $\sigmanu = z^{-2 \deff}$, $z = 12$, $\deff = 5$ requires $\sigma_{\mathrm{channel}} = 1/z^2$ per walk channel. Three candidate physical pictures all give the same numerical answer; they differ in which CPP primitive does the work, and in which closure path is most natural for theorem-level rigor.
 
-The discipline at this stage is to lay them out as candidates rather than pick one prematurely. The underlying physics has too many degrees of freedom and not enough independent constraints to single-pick at v0.x. Each picture is internally consistent and consistent with CPP's existing primitives; the eventual selection will come from cross-checking against (a) other unbound-mode physics where one picture predicts differently from another, and (b) which closure path actually goes through under axioms A1--A11.
+The discipline at this stage is to lay them out as candidates rather than pick one prematurely. The underlying physics has too many degrees of freedom and not enough independent constraints to single-pick at the v1.0 level. Each picture is internally consistent and consistent with CPP's existing primitives; the eventual selection will come from cross-checking against (a) other unbound-mode physics where one picture predicts differently from another, and (b) which closure path actually goes through under axioms A1--A11.
 
 \subsubsection{Picture A: Two-sided DI-bit exchange}
 \label{sec:pictureA}
@@ -617,7 +656,7 @@ Closure path under A1--A11 & Most direct (DI-bit already a CPP primitive) & Dire
 \addlinespace
 Programme-level coherence & Standalone (specific to mass) & Connects to spin (unified explanation) & Connects to gauge sector (SF-2 alignment) \\
 \addlinespace
-v0.2 status & LEADING candidate for theorem-level closure & Live alternative & Speculative; adopt if A and B both fail \\
+v1.0 status & LEADING candidate for theorem-level closure & Live alternative & Speculative; adopt if A and B both fail \\
 \bottomrule
 \end{tabular}
 \caption{Cross-comparison of the three candidate physical pictures for $\sigma_{\mathrm{channel}} = 1/z^2$. All three converge on the same numerical answer and all three correctly predict $\sigmanu = 1$ for bound modes. The robustness of the numerical result across three independent pictures is itself a positive structural signal: $\sigmanu = z^{-2 \deff}$ is not contingent on a specific mechanism choice. Picture A is the priority closure path for theorem-level rigor at v1.0+; Pictures B and C remain available as alternatives if Picture A surfaces an obstruction.}
@@ -668,7 +707,7 @@ The structural-physical picture established in \S\S\ref{sec:walkdim}--\ref{sec:t
 \item Bound/unbound boundary derivation: $V^{7/3} \to V^2$ in \eqref{eq:alphareduction} is currently structurally argued; rigorous derivation from A1--A11 closes the $\alpha = 2$ exponent simultaneously.
 \end{enumerate}
 
-Theorem-level closure is v1.0+ work. The v0.1--v0.5 SF-4 paper ships at PARTIAL-CLOSURE level for OPEN-FP-SF-4-1, with explicit pointers to this open work.
+Theorem-level closure is post-v1.0 work. The SF-4 paper ships at PARTIAL-CLOSURE level for OPEN-FP-SF-4-1, with explicit pointers to this open work.
 
 % ===================================================================
 \section{The K3-Cage-Shell Consistency Theorem}
@@ -868,7 +907,7 @@ The structural-physical picture established in \S\S\ref{sec:massbasis_clarificat
 \item Routes A and B as alternative closures: if Route C surfaces an obstruction at theorem-level rigor, fall back to Route A (symmetry-shell correspondence beyond $S_3 \subset H_3$) or Route B (inscribed-tetrahedron sub-shell decomposition with the V = 4 tetrahedron as a specific sub-structure of the V = 12 icosahedron).
 \end{enumerate}
 
-The numerical zeroth-order consistency (Theorem \ref{thm:tbm_recovery}, exact by construction under mass-basis reading) is robust to which structural route closes Argument 3 to theorem level. The v0.1--v0.5 SF-4 paper ships at PARTIAL-CLOSURE level for OPEN-FP-SF-4-2 with explicit pointers to this open work and explicit acknowledgment that theorem-level closure is tied to SM-5's open problem.
+The numerical zeroth-order consistency (Theorem \ref{thm:tbm_recovery}, exact by construction under mass-basis reading) is robust to which structural route closes Argument 3 to theorem level. The SF-4 paper ships at PARTIAL-CLOSURE level for OPEN-FP-SF-4-2 with explicit pointers to this open work and explicit acknowledgment that theorem-level closure is tied to SM-5's open problem.
 
 % ===================================================================
 \section{Predictions Summary}
