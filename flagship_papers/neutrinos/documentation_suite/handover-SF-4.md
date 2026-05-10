@@ -1,27 +1,61 @@
-# SF-4 Handover Document — Session 54 v1.0 SHIP Close
+# SF-4 Handover Document — Session 60 v2.0 SHIP Close
 
 **Paper**: `flagship_papers/neutrinos/sf-4_neutrinos.tex`
-**Status**: **v1.0 SHIPPED** (Session 54 close, 9 May 2026, patch 0314).
-**Reviewer convergence**: Five independent AI review passes (ChatGPT × 3, Grok × 1, Copilot × 1) all converged on v1.0-promotion-ready. ChatGPT pass-3 forward-looking statement: *"After those fixes, I would be comfortable promoting SF-4 to v1.0 SHIP as a partial-closure flagship prediction paper."*
+**Status**: **v2.0 SHIPPED** (Session 60 close, 10 May 2026, patch 0321). Picture A axiomatic closure achieved at theorem level.
+**Closure path**: OPEN-FP-SF-4-1 Picture A axiomatic closure campaign across Sessions 55–60 (patches 0316–0321) delivered four sub-claim closures from CPP axioms A1–A11 plus three foundational inputs. The leading-order prediction $\sigma_\nu = (1/z^2)^5 = 1/z^{10} \approx 1.62 \times 10^{-11}$ is now rigorously derived.
 
 ---
 
-## Status as of Session 54 close
+## Status as of Session 60 close
 
-**Paper**: SHIPPED at v1.0. The .tex file at `flagship_papers/neutrinos/sf-4_neutrinos.tex` carries the cage-shell-formula partial-closure flagship neutrino-sector paper as v1.0 SHIPPED. **Per the v1.0-ship anti-priority lessons learned from SS-9, the .tex source itself is FROZEN at v1.0 unless and until external feedback (post-public-posting) prompts a v1.x revision.**
+**Paper**: SHIPPED at v2.0. The .tex file at `flagship_papers/neutrinos/sf-4_neutrinos.tex` carries the cage-shell mass formula + Picture A axiomatic closure as v2.0 SHIPPED. **Per v1.0-ship and v2.0-ship anti-priority lessons learned from SS-9, the .tex source itself is FROZEN at v2.0 unless and until either (a) external feedback prompts a v2.x revision, or (b) the residual α-exponent sub-task closes and warrants a v3.0 promotion.**
 
 **SF-4 documentation suite**: ACTIVE, not frozen. Subsequent sessions can add new SF-4 artifacts (anthology chapter, TATWD integration, supplemental docs, post-arXiv reviews) at progressively wider registers without re-opening the .tex source.
 
 **Compiled state**:
-- Source: 1850+ lines `.tex`
-- PDF: 40 pages, 537 KB
+- Source: 2101 lines `.tex`
+- PDF: 42 pages, 559 KB
 - Two-pass `pdflatex` clean, all cross-references resolve
 
-## What v1.0 SHIPPED contains
+## What v2.0 SHIPPED contains beyond v1.0
 
-### Substantive content (frozen at v1.0)
+### Picture A axiomatic closure (NEW at v2.0)
 
-**Foundation (§0–§3)**: Abstract, founder's voice (§1.5), claim-status ledger (§1.6 Table 1.1), SM-5 K3-eigenmode foundation (§2), Candidate-C cage-shell mass formula (§3) including:
+**§4.3.1 Picture A subsubsection — full rewrite** from "leading candidate for theorem-level closure" (v1.0) to "AXIOMATIC CLOSURE ACHIEVED at theorem level" (v2.0). Four sub-claim closures enumerated and proved:
+
+- **Sub-claim (a) Substrate independence** (Sessions 56–57, patches 0317–0318): closes via timescale separation $\kappa_1 \le 2m/m_P$ (orbital ZBW frequency to Planck frequency ratio) + A6' edge-sector substrate-substrate independence + total probability + causality. For all sub-Planck modes (every SM particle), correction to $\sigma_\text{channel} = 1/z^2$ is at most $(m/m_P)^2/z^3$ — utterly negligible: $\sim 3 \times 10^{-17}$ for top quark, $\sim 10^{-31}$ for neutrinos. (V1) sanity check confirmed via SM-7/SM-8/SM-9 cage-cooperative SSV reinforcement reading: bound modes have effective per-link energies amplified by $V^{7/3}/N_\text{links}$ via cage cooperation, but unbound modes lack confinement volume so per-chain frequency is exactly $mc^2/\hbar$ — exactly as the §8.3 timescale argument requires. (V2) and (V3) verification flags also resolved favorably.
+
+- **Sub-claim (b) AND-of-factors across channels** (Session 57, patch 0318): closes at theorem level via A6' edge-sector decomposition of substrate state $(\rho, \phi, \vec{O})$ into independent gauge sectors. Cross-channel correlations are at most $O(\alpha_\text{EM}) \sim 10^{-2}$ per pair, contributing sub-leading corrections to the leading-order multiplicative form.
+
+- **Sub-claim (c) Equilibrium uniform marginal** (Session 58, patch 0319): closes at theorem level via the **transitive-action uniformity lemma** — any $G$-invariant probability measure on a finite set with transitive $G$-action is uniform — applied to the icosahedral group $I_h$ acting on the 12 DP-orientation options at each vertex, under A2 + A4 + A6' edge dynamics. Robust across (R2)-S vs (R2)-L readings of "DP orientation". Equilibrium reachability for cosmological neutrino propagation is overwhelming ($\sim 10^{42}$ relaxation times).
+
+- **$d_\text{eff} = 5$ — Walk-channel count from icosahedral irrep decomposition** (Session 59, patch 0320): closes at theorem level via $\mathbf{3}_\text{vector}$ (spatial gradient information; 3 channels for the 3 Cartesian axes) $\oplus\, \mathbf{1}$ (ZBW phase; trivial $U(1)$ irrep; 1 channel) $\oplus\, \mathbf{3}_\text{axial}$ (orbital angular-momentum direction; reduced to 1 channel by spin-orbital 2:1 frequency-locking and icosahedral discretization). Channel-completeness verified: no color (singlets), no weak isospin per-channel for free propagation, no flavor for single mass-eigenstate, chirality locked, no separate helicity. Total: $3 + 1 + 1 = 5$.
+
+**Combined boxed result (eq:sigma_nu_closed)**:
+$$\sigma_\nu = \sigma_\text{channel}^{d_\text{eff}} = (1/z^2)^5 = 1/z^{10} \approx 1.62 \times 10^{-11} \text{ at } z = 12$$
+rigorously derived from CPP axioms A1–A11 plus three foundational inputs.
+
+### Foundational vs. derived accounting (NEW at v2.0)
+
+The closure rests on three foundational inputs that are CPP-internal but not derivable from A1–A11:
+1. **3D embedding** of the 600-cell substrate (inherent to CPP's structural setup; underlies SR-1's PSR framework)
+2. **Identification of the neutrino as an unbound 3D orbital ZBW configuration** of dipole-pair structures (per SF-4 v1.0 §4.1 starting hypothesis)
+3. **Spin-orbital 2:1 frequency-locking convention** for fermion ZBW structure
+
+Given these foundational inputs, the four sub-claims are rigorously derived from A1–A11. This represents the strongest closure achievable without re-deriving the foundational inputs themselves, which is outside the scope of OPEN-FP-SF-4-1.
+
+### Sub-leading 2% empirical residual is not a Picture A correction (NEW at v2.0)
+
+A finding of the v2.0 closure work (Session 56 Finding 4 in the working sketch document §8.8) is that the 2% empirical match between $\sigma_\nu = z^{-10}$ predicted and observation is too small to be a Picture A correction (which is at most $(m/m_P)^2/z^3 \sim 10^{-65}$ for neutrinos). The 2% comes from sub-leading effects elsewhere in the SF-4 derivation chain:
+- (i) the $V^2$-vs-$V^{7/3}$ approximation in the cage-shell mass formula at the bound/unbound boundary (the $\alpha = 2$ exponent reduction; structural argument at v1.0 §3.3, theorem-level closure remaining as the residual OPEN-FP-SF-4-1 sub-task),
+- (ii) the K3-eigenstructure partial-binding correction to the orientation channel,
+- (iii) cross-channel correlations at $O(\alpha_\text{EM})$ from sub-claim (b).
+
+These sub-leading effects compose to the observed $\sim 2\%$ residual without modifying the leading-order $\sigma_\nu = 1/z^{10}$ rigorous result.
+
+### What v1.0 SHIPPED contains (preserved at v2.0)
+
+**Foundation (§0–§3)**: Abstract, founder's voice (§1.5), claim-status ledger (§1.6 Table 1.1 — σ_ν row updated v1.0 PARTIAL CLOSURE → v2.0 CLOSED at theorem level), SM-5 K3-eigenmode foundation (§2), Candidate-C cage-shell mass formula (§3) including:
 - Mass formula $m_{\nu_i} = M_0 \cdot V_{\nu_i}^2 \cdot \sigma_\nu$
 - Cage-shell assignment $V \in \{4, 12, 30\}$ in mass basis (with prominent boxed clarification at first appearance)
 - Geometric-origin paragraph for $V$ values (icosahedral first shell / tetrahedral inscribed sub-cage / icosidodecahedral $d^2 = 2$ shell)
@@ -87,19 +121,19 @@ The 8th parameter ($\delta_{CP}$) is registered open and deferred to SF-2 EW-fla
 - **Negative results**: programme negative-result count UNCHANGED
 - **Falsifiers registered**: 5 (JUNO inverted hierarchy; cosmological tightening to $\Sigma m_\nu < 50$ meV; principled direct-mass falsifier at $m_\beta \approx 8.7$ meV; PMNS deviation from TBM; substrate-mechanism deviation from $\sigma_\nu = z^{-2 d_{\mathrm{eff}}}$ form)
 
-## Post-v1.0 work queue (priority order)
+## Post-v2.0 work queue (priority order)
 
-### A. OPEN-FP-SF-4-1 Picture A formalization (HIGH PRIORITY)
+### A. OPEN-FP-SF-4-1 α-exponent residual sub-task (MEDIUM PRIORITY — natural follow-up post-v2.0)
 
-The suppression mechanism's structural-physical picture is at PARTIAL CLOSURE: three convergent CPP physical pictures, integer channel enumeration, 2% empirical match. Theorem-level closure from CPP axioms A1–A11 is registered as v1.0+ work.
+**Status update at v2.0**: Picture A axiomatic closure RESOLVED (sub-goals 1–3 of v1.0 list). The fourth sub-goal — theorem-level derivation of the $V^{7/3} \to V^2$ exponent reduction at the bound/unbound boundary — is unaddressed by Picture A and remains as the residual open work for OPEN-FP-SF-4-1.
 
-Four enumerated sub-goals (from §10.1):
-1. Picture A formalization (priority): rigorously establish (a) DI-bit send/receive independence in unbound regime, (b) channel coherence as AND of both sides aligning, (c) per-moment $1/z^2$ from these.
-2. Independence verification: rule out (or quantify) substrate correlations between send and receive choices.
-3. Channel-count rigor: quantify sub-leading corrections to $d_{\mathrm{eff}} = 5$ from partial-binding effects.
-4. $\alpha = 2$ closure: theorem-level derivation of the $V^{7/3} \to V^2$ reduction at the bound/unbound boundary.
+Four enumerated sub-goals (from v1.0 §10.1; updated status at v2.0):
+1. ~~Picture A formalization (priority)~~ — **RESOLVED Sessions 56–57** (timescale separation $\kappa_1 \le 2m/m_P$ + A6' edge-sector independence + total probability + causality).
+2. ~~Independence verification~~ — **RESOLVED Session 57** (V1 sanity check via SM-7/8/9 cage-cooperative SSV reinforcement reading).
+3. ~~Channel-count rigor~~ — **RESOLVED Session 59** (icosahedral irrep decomposition $\mathbf{3}_\text{vector} \oplus \mathbf{1} \oplus \mathbf{3}_\text{axial}|_\text{spin-orbital-locked}$).
+4. **$\alpha = 2$ closure: REMAINS OPEN** — theorem-level derivation of the $V^{7/3} \to V^2$ reduction at the bound/unbound boundary. Distinct from Picture A and post-v2.0 work.
 
-**Estimated effort**: 5–10 sessions of focused derivation work plus AI-review iteration. Single-paper continuation work; could ship as SF-4 v2.0 update or as a standalone follow-up paper.
+**Estimated effort**: 3–5 sessions of focused derivation work plus AI-review iteration. The reduction relates to the cage-shell mass formula's dependence on cage volume in the unbound regime; closure may fold with future SS-corpus work on the bound/unbound mass-formula transition. Could ship as SF-4 v3.0 update or as a standalone follow-up paper.
 
 ### B. SM-5 antibonding-doublet open problem (CROSS-SECTOR COOPERATION)
 
@@ -131,28 +165,41 @@ When the JUNO arXiv:2511.14593 paper progresses to peer-reviewed publication, re
 
 **Estimated effort**: 0.1 sessions (housekeeping); triggered by external event.
 
-## File inventory at v1.0 SHIP
+## File inventory at v2.0 SHIP
 
 ```
 flagship_papers/neutrinos/
-├── README.md                          ← v1.0 SHIPPED status
-├── sf-4_neutrinos.tex                 ← v1.0 SHIPPED, 1850+ lines
-├── sf-4_neutrinos.pdf                 ← v1.0 SHIPPED, 40 pages, 537 KB
+├── README.md                          ← v2.0 SHIPPED status
+├── sf-4_neutrinos.tex                 ← v2.0 SHIPPED, 2101 lines
+├── sf-4_neutrinos.pdf                 ← v2.0 SHIPPED, 42 pages, 559 KB
 ├── sf-4_outline.md                    ← v0.1 outline (Session 44, historical)
-├── sketches/                          ← Pre-paper working documents
+├── sketches/                          ← Pre-paper + closure working documents
 │   ├── README.md
-│   ├── SF-4_neutrino_sector_audit.md       (Session 37)
-│   ├── SF-4_mechanism_selected.md          (Session 39)
-│   ├── SF-4_suppression_derivation.md      (Sessions 40–41)
-│   └── SF-4_k3_cage_shell_consistency.md   (Sessions 42–43)
-└── documentation_suite/               ← v1.0 SHIP four-tier docs
-    ├── handover-SF-4.md                    ← THIS FILE (Session 54 v1.0 SHIP)
+│   ├── SF-4_neutrino_sector_audit.md           (Session 37)
+│   ├── SF-4_mechanism_selected.md              (Session 39)
+│   ├── SF-4_suppression_derivation.md          (Sessions 40–41)
+│   ├── SF-4_k3_cage_shell_consistency.md       (Sessions 42–43)
+│   └── SF-4_picture_A_axiomatic_closure.md     (Sessions 55–59, 1106 lines)
+└── documentation_suite/               ← v2.0 SHIP four-tier docs
+    ├── handover-SF-4.md                    ← THIS FILE (Session 60 v2.0 SHIP)
     ├── development-SF-4.md                 ← Per-session development arc
     ├── transcript-SF-4.md                  ← Per-session transactions
     └── reasoning-SF-4.md                   ← Tier 4 verbatim reasoning
 ```
 
-## Lessons learned from SF-4 v1.0 campaign
+## Lessons learned from SF-4 v2.0 campaign (Sessions 55–60)
+
+In addition to the v1.0 lessons (preserved below), the v2.0 axiomatic closure campaign added the following lessons:
+
+7. **Sketch document as canonical Tier-4 source.** The `SF-4_picture_A_axiomatic_closure.md` working sketch document (1106 lines across 13 sections, growing monotonically across Sessions 55–59) served as the canonical Tier-4 verbatim reasoning capture for the closure campaign. The session-by-session derivation captured in §3 (sub-claim a Session 55 outcome 2 → Session 56 outcome 1), §8 (Session 56 closure), §9 (Session 57 V1/V2/V3), §10 (Session 57 sub-claim b), §11 (Session 58 sub-claim c), §12 (Session 59 d_eff = 5), and §13 (foundational/derived accounting Session 59) provides the verbatim reasoning trail. Lesson: when a multi-session campaign produces verbatim reasoning, the sketch document IS the Tier 4 reasoning capture; no separate per-session reasoning entries needed in `reasoning-SF-4.md`.
+
+8. **Foundational vs derived accounting is essential for axiomatic closure papers.** The v2.0 closure does not derive everything from A1–A11; it derives the four sub-claims from A1–A11 + three foundational inputs (3D embedding, neutrino identification, spin-orbital 2:1 frequency convention). Distinguishing these explicitly avoids over-claiming. Lesson: every "axiomatic closure" claim needs explicit accounting of what's foundational (assumed) vs. what's derived (proved from foundational inputs + axioms).
+
+9. **Sub-leading correction analysis is necessary to interpret residuals.** The 2% empirical residual at $\sigma_\nu = z^{-10}$ initially looked like it might be a Picture A correction needing closure. The Session 56 timescale analysis showed Picture A corrections are at most $(m/m_P)^2/z^3 \sim 10^{-65}$ for neutrinos — far smaller than 2%. The 2% must therefore be downstream effects (V²-vs-V$^{7/3}$ approximation, K3 partial-binding, $O(\alpha_\text{EM})$ cross-correlations). Lesson: when an empirical residual is at a particular scale, check that the proposed closure mechanism's correction scale is compatible — order-of-magnitude analysis catches misattribution of residuals to wrong mechanisms.
+
+10. **Verification flags as scoping discipline.** The (V1)/(V2)/(V3) flags raised at Session 56 (cage-cooperative SSV reinforcement check, off-resonance check, face-sector check) were tracked and individually discharged at Session 57 before claiming sub-claim (a) closure. Lesson: when a closure proof rests on assumptions that could be falsified by elsewhere-in-CPP physics, register them explicitly as flags and discharge each before declaring closure.
+
+## Lessons learned from SF-4 v1.0 campaign (preserved at v2.0)
 
 1. **Multi-reviewer review passes converge faster than single-reviewer iteration.** The Grok + Copilot pass at v0.7 surfaced polish items ChatGPT had missed (operator-level picture, geometric-origin paragraph, Σm_ν sanity check, partial-failure scenarios) — independent reviewers catch independent blind spots.
 
@@ -164,11 +211,36 @@ flagship_papers/neutrinos/
 
 5. **Five passes (3 + 1 + 1) is sufficient where SS-9 needed seven.** SS-9 used 7 review passes (ChatGPT × 4 + Copilot × 2 + Grok × 1) with cache-resolution issues. SF-4's 5-pass discipline benefited from the reviewer-protocol lessons learned (submit .tex not PDF; trust convergence). Forward lesson: 5 passes is a defensible SHIP floor for partial-closure flagship papers when reviewers explicitly converge.
 
-6. **Documentation suite is ACTIVE post-v1.0; .tex source is FROZEN.** The SS-9 lesson learned at Session 33 applies to SF-4: the four-tier documentation discipline applies whenever new SF-4 artifacts ship. Only the .tex source freezes at v1.0.
+6. **Documentation suite is ACTIVE post-v1.0; .tex source is FROZEN.** The SS-9 lesson learned at Session 33 applies to SF-4: the four-tier documentation discipline applies whenever new SF-4 artifacts ship. Only the .tex source freezes at v1.0 (and similarly at v2.0).
 
 ---
 
-## Session 54 v1.0 SHIP CLOSE
+## Session 60 v2.0 SHIP CLOSE
+
+SF-4 v2.0 SHIPPED. OPEN-FP-SF-4-1 Picture A axiomatic closure achieved at theorem level via Sessions 55–60 campaign. Flagship neutrino-sector paper now SHIPPED at v2.0 with:
+- 7 of 8 zero-parameter predictions (3 masses + 3 mixing angles + hierarchy ordering, $\delta_{CP}$ deferred) — UNCHANGED from v1.0
+- 1 conditional theorem (Theorem 5.1) + 1 proposition (Proposition 5.2) + 1 secondary theorem (Theorem 5.3) — UNCHANGED from v1.0
+- **NEW at v2.0**: four sub-claim closure theorems for Picture A axiomatic closure (substrate independence, AND-of-factors, equilibrium uniform marginal, $d_\text{eff} = 5$); programme-level theorem registry promotion candidate at Session 61
+- **NEW at v2.0**: $\sigma_\nu = 1/z^{10}$ rigorously derived from A1–A11 + foundational inputs (boxed eq:sigma_nu_closed)
+- **NEW at v2.0**: sub-leading 2% empirical residual identified as downstream effects, not Picture A corrections
+- 5 clean falsifiers — UNCHANGED from v1.0
+- 23 bibliography entries (22 v1.0 + sf4_picture_A_closure NEW at v2.0)
+- 42-page compiled PDF (was 40 at v1.0)
+- Four-tier documentation suite (this file Session 60 close; development/transcript/reasoning Session 61 work)
+
+Forward work flows through residual α-exponent sub-task closure + SM-5 cooperation + SF-2 closure for $\delta_{CP}$. Anthology chapter and TATWD integration are post-ship doc-suite work that does not re-open the .tex.
+
+**SF-4 v2.0 SHIPPED.**
+
+---
+
+*Session 60 close, 10 May 2026, patch 0321. Next active work: residual α-exponent V$^{7/3}$ → V² reduction sub-task (post-v2.0); SF-2 EW or SF-1 charged leptons per SF-line architecture as next active flagship paper; SM-5 cooperation cross-sector mutual closure available in parallel.*
+
+*Earlier handover: Session 54 v1.0 SHIP close (preserved below).*
+
+---
+
+## EARLIER: Session 54 v1.0 SHIP CLOSE (historical, preserved at v2.0)
 
 SF-4 v1.0 SHIPPED. Five-pass review discipline complete. Partial-closure flagship neutrino-sector paper SHIPPED with:
 - 7 of 8 zero-parameter predictions (3 masses + 3 mixing angles + hierarchy ordering, $\delta_{CP}$ deferred)
@@ -178,10 +250,4 @@ SF-4 v1.0 SHIPPED. Five-pass review discipline complete. Partial-closure flagshi
 - 40-page compiled PDF
 - Four-tier documentation suite
 
-Forward work flows through OPEN-FP-SF-4-1 + SM-5 cooperation + SF-2 closure. Anthology chapter and TATWD integration are post-ship doc-suite work that does not re-open the .tex.
-
-**SF-4 SHIPPED.**
-
----
-
-*Session 54 close, 9 May 2026, patch 0314. Next active flagship paper: SF-2 EW or SF-1 charged leptons per SF-line architecture; OPEN-FP-SF-4-1 follow-up work can proceed in parallel.*
+*Session 54 close, 9 May 2026, patch 0314.*

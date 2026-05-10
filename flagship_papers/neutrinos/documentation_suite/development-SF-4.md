@@ -219,4 +219,53 @@ Post-v1.0 work queue:
 
 ---
 
-*Development document closes at Session 54 v1.0 SHIP. Future SF-4 development arc for v1.x revision (if external feedback prompts) or for OPEN-FP-SF-4-1 follow-up work continues in subsequent vignettes appended to this file.*
+## Vignettes 18–24: Sessions 55–60 OPEN-FP-SF-4-1 Picture A axiomatic closure campaign
+
+After SF-4 v1.0 SHIPPED at Session 54 (partial closure flagship paper), the OPEN-FP-SF-4-1 Picture A axiomatic closure campaign began at Session 55 and ran through Session 60 (six sessions, six patches 0316–0321). The campaign delivered Picture A axiomatic closure at theorem level and integrated the closure into the SF-4 paper as v2.0 SHIPPED.
+
+### Vignette 18: Session 55 — Working sketch document established (patch 0316)
+
+The OPEN-FP-SF-4-1 closure campaign opened at Session 55 with the establishment of the working sketch document `flagship_papers/neutrinos/sketches/SF-4_picture_A_axiomatic_closure.md`. The document organized the closure target into four sub-claims plus the d_eff = 5 channel count: sub-claim (a) substrate independence, sub-claim (b) AND-of-factors across channels, sub-claim (c) equilibrium uniform marginal, and the d_eff = 5 first-principles channel enumeration. Session 55 delivered §0–§7 of the document (476 lines): firewall, setup, sub-claim decomposition, deep analysis of sub-claim (a), and sketches for (b)/(c)/d_eff. Three findings registered (Findings 1–3); sub-claim (a) reached "Outcome 2" status at Session 55 close — close but not closed, with $\sim 42\%$ correction pending κ_1 refinement.
+
+### Vignette 19: Session 56 — Sub-claim (a) closes at theorem level (patch 0317)
+
+Session 56 closed sub-claim (a) at theorem level via a key insight: the $\kappa_1$ correction in the substrate independence proof is bounded by the timescale separation between the orbital ZBW frequency $\omega = mc^2/\hbar$ and the Planck frequency $\omega_P = m_P c^2/\hbar$. For all sub-Planck modes (every SM particle), the per-moment phase advance ratio $m/m_P$ bounds the mode-substrate coupling at probability level: $\kappa_1 \le 2m/m_P$. Combined with A6' edge-sector substrate-substrate independence (which gives $\kappa_2 \le 1/z$), the joint correction $\kappa_1 \cdot \kappa_2 \le 2m/(m_P z)$ is utterly negligible: $\sim 3 \times 10^{-17}$ for top quark, $\sim 10^{-31}$ for neutrinos. The Session 55 §3.4 structural error (1/√z per-branch amplitude misidentified as mode-substrate coupling rather than wavefunction normalization) was identified and corrected. Findings 2 closes (outcome 1, not outcome 2); Findings 4 (the 2% empirical residual is downstream effects, not Picture A corrections) and 5 (κ_1 ~ m/m_P provides cross-sector support for bound/unbound boundary) registered.
+
+### Vignette 20: Session 57 — V1 sanity check confirmed + sub-claim (b) at theorem level (patch 0318)
+
+Session 57 ran the (V1) sanity check raised at Session 56: does the cage-cooperative SSV reinforcement reading of bound modes (per SM-7/SM-8/SM-9) survive the Picture A closure framework? The reading pass confirmed: bound modes have effective per-link energies amplified by $V^{7/3}/N_\text{links}$ via cage cooperation (e.g., 166× for top quark via SM-8 Shell 3 gap z=12 multiplier), but unbound modes lack confinement volume so per-chain frequency is exactly $mc^2/\hbar$ — exactly as the §8.3 timescale argument requires. (V2) and (V3) verification flags also resolved favorably. Sub-claim (b) AND-of-factors closed at theorem level via A6' edge-sector decomposition of substrate state $(\rho, \phi, \vec{O})$ into independent gauge sectors, with sub-leading $O(\alpha_\text{EM}) \sim 1\%$ cross-correlations per pair. Findings 6 (channel decomposition is most load-bearing remaining) and 7 (amplitude AND structure refined into amplitude × ANDing) registered.
+
+### Vignette 21: Session 58 — Sub-claim (c) closes at theorem level (patch 0319)
+
+Session 58 closed sub-claim (c) equilibrium uniform marginal at theorem level via the **transitive-action uniformity lemma**: any $G$-invariant probability measure on a finite set with transitive $G$-action is uniform. Applied to the icosahedral group $I_h$ acting transitively on the 12 DP-orientation options at each vertex (standard property of icosahedral symmetry), under A2 + A4 + A6' edge dynamics, any stationary distribution is $I_h$-invariant; by the lemma, uniform $1/z = 1/12$. By 600-cell vertex-transitivity, this holds at every vertex. The closure is robust across (R2)-S vs (R2)-L readings of "DP orientation". Equilibrium reachability for cosmological neutrino propagation is overwhelming ($\sim 10^{42}$ relaxation times). Finding 8 (sub-claim (c) closes via A2+A4+A6'; equilibrium does not need separate axiom) registered.
+
+### Vignette 22: Session 59 — d_eff = 5 closes at theorem level (patch 0320)
+
+Session 59 closed the d_eff = 5 first-principles channel enumeration at theorem level via icosahedral irrep decomposition. The substrate information transmitted per channel decomposes into icosahedral irreducible representations: $\mathbf{3}_\text{vector}$ (spatial gradient information; 3 channels for the 3 Cartesian axes) $\oplus\, \mathbf{1}$ (ZBW phase; trivial U(1) irrep; 1 channel) $\oplus\, \mathbf{3}_\text{axial}$ (orbital angular-momentum direction; reduced to 1 channel by spin-orbital 2:1 frequency-locking and icosahedral discretization). Channel-completeness verified: no color (singlets), no weak isospin per-channel for free propagation, no flavor for single mass-eigenstate, chirality locked, no separate helicity. Total: $3 + 1 + 1 = 5$. **Picture A axiomatic closure complete.** Findings 9 (foundational vs derived accounting) and 10 (icosahedral irrep cross-sector framework) registered.
+
+### Vignette 23: Session 60 — SF-4 v2.0 SHIPPED (patch 0321)
+
+Session 60 lands the SF-4 v2.0 .tex source revision integrating the Sessions 55–59 closure into the flagship paper. SF-4 advances from v1.0 SHIPPED (Session 54 partial closure) to v2.0 SHIPPED (Session 60 Picture A axiomatic closure achieved). 10 substantive .tex changes: title block + CHANGELOG v2.0 entry, §1.4 closure-status update, §1.5 claim status ledger σ_ν row to CLOSED at theorem level, §4.0 suppression mechanism opening updated, **§4.3.1 Picture A FULL REWRITE** with four sub-claim closures enumerated and boxed eq:sigma_nu_closed, §4.3.4 cross-comparison table v2.0 row added, §4.5 OPEN-FP-SF-4-1 status update with Picture A sub-task RESOLVED + α-exponent residual flagged, §11 OPEN-FP-SF-4-1 closing subsection rewrite, bibliography sf4_picture_A_closure bibitem added. Source: 1974 → 2101 lines. PDF: 40 → 42 pages, 537 → 559 KB. pdflatex two-pass clean.
+
+### Vignette 24: Session 61 — programme-level registration (in progress)
+
+Session 61 is the SHIP-mechanics session for SF-4 v2.0 at the programme level: (i) Research_Frontier.md OPEN-FP-SF-4-1 entry advanced from PARTIAL CLOSURE to ADVANCED; (ii) Research_Frontier.md last-updated header prepended with Sessions 55–60 entry; (iii) paper_catalog.md SF-4 row updated to v2.0 SHIPPED; (iv) handover-SF-4.md (this document's parent) updated to Session 60 v2.0 SHIP close; (v) development-SF-4.md (this file) Vignettes 18–24 added; (vi) transcript-SF-4.md per-session transactions Sessions 55–60 added; (vii) reasoning-SF-4.md Tier 4 reasoning capture pointer to working sketch document added; (viii) INDEX.md sf-4_neutrinos.tex/.pdf rows updated to v2.0 SHIPPED; (ix) flagship_papers/neutrinos/README.md v1.0 → v2.0 transition; (x) flagship_papers/SF-line_development_transcript.md §18 added covering Sessions 55–60. After Session 61, OPEN-FP-SF-4-1 Picture A axiomatic closure is fully RESOLVED at all levels (paper, sketch, documentation suite, programme registries).
+
+---
+
+## Cumulative campaign metrics at v2.0
+
+- **Total sessions**: 24 (Session 37 audit through Session 60 v2.0 SHIP)
+- **Total patches**: 27 (0294 audit through 0321 v2.0 SHIP)
+- **Source line count**: 0 → 1974 (v1.0) → 2101 (v2.0)
+- **PDF page count**: 0 → 32 (v0.5) → 37 (v0.6) → 38 (v0.7) → 40 (v0.8/v0.9/v1.0) → 42 (v2.0)
+- **Bibliography**: 12 internal + 10 external + sf4_picture_A_closure (NEW v2.0) = 23 entries
+- **Theorems**: 1 conditional (THEO-SF-4-1) + 1 proposition + 1 secondary theorem (registered v1.0); + 4 sub-claim closure theorems (Picture A; pending registry promotion at Session 61)
+- **Predictions**: 7 of 8 neutrino-sector parameters at zero free parameters (UNCHANGED from v1.0)
+- **Falsifiers**: 5 (UNCHANGED from v1.0)
+- **Reviews**: v1.0 had 5 AI passes (ChatGPT × 3 + Grok × 1 + Copilot × 1); v2.0 closure based on internal verification + sketch-document Tier-4 discipline (no external review for v2.0 closure mechanics; AI review TBD post-v2.0 if external reviewers engage)
+- **Working sketch document `SF-4_picture_A_axiomatic_closure.md`**: 1106 lines, 13 sections, growing monotonically across Sessions 55–59
+
+---
+
+*Development document continues at Session 60 v2.0 SHIP; Session 61 wraps programme-level registration. Future SF-4 development arc for v2.x revision or for residual α-exponent sub-task closure (post-v2.0) continues in subsequent vignettes appended to this file.*

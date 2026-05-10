@@ -212,9 +212,83 @@ PDF: 40 pages, 537 KB.
 | 52 | 0312 | v0.8 Grok+Copilot | 1591 → 1758 | PDF 40pp |
 | 53 | 0313 | v0.9 ChatGPT 3 | 1758 → 1850 | PDF 40pp |
 | **54** | **0314** | **v1.0 SHIP** | **1850 → 1950+** | **PDF 40pp, 537 KB** |
+| 55 | 0316 | OPEN-FP-SF-4-1 working sketch established | (sketches/SF-4_picture_A_axiomatic_closure.md 0 → 476 lines) | sketch §0–§7 |
+| 56 | 0317 | Sub-claim (a) closes at theorem level | (sketch 476 → 700 lines, §8 added) | timescale separation $\kappa_1 \le 2m/m_P$ |
+| 57 | 0318 | V1 sanity check + sub-claim (b) | (sketch 700 → 880 lines, §9–§10 added) | A6' edge-sector decomposition |
+| 58 | 0319 | Sub-claim (c) closes | (sketch 880 → 980 lines, §11 added) | transitive-action uniformity lemma |
+| 59 | 0320 | $d_\text{eff} = 5$ closes | (sketch 980 → 1106 lines, §12–§13 added) | icosahedral irrep decomposition |
+| **60** | **0321** | **v2.0 SHIP** | **1974 → 2101 lines** | **PDF 42pp, 559 KB** |
+| 61 | 0322 | programme-level registration | various | this patch (Session 61) |
 
-**Total**: 18 sessions, 21 patches, ~1950 lines source, 40-page PDF, four-tier documentation suite, 5-pass AI review.
+**Total at v2.0**: 24 sessions, 27 patches, 2101 lines source, 42-page PDF, four-tier documentation suite at Session 60 v2.0 freeze (Session 61 closes programme-level registration).
 
 ---
 
-*Transcript document closes at Session 54 v1.0 SHIP. Future per-session transactions for SF-4 v1.x revisions or OPEN-FP-SF-4-1 follow-up work continue here as appended sections.*
+## Sessions 55–60: OPEN-FP-SF-4-1 Picture A axiomatic closure campaign
+
+### Session 55 (patch 0316) — Working sketch established
+
+| Transaction | Description |
+|---|---|
+| Pre-session | Forward queue from Session 54 v1.0 SHIP handover: OPEN-FP-SF-4-1 Picture A formalization is HIGH PRIORITY ~5–10 sessions of focused derivation work. |
+| Action | Establish working sketch document `flagship_papers/neutrinos/sketches/SF-4_picture_A_axiomatic_closure.md`. Patch 0316 creates the document with 476 lines across §0–§7. |
+| Outcome | Closure target organized into four sub-claims plus d_eff = 5. Sub-claim (a) deep analysis at outcome 2 with ~42% correction pending. Three findings registered. |
+
+### Session 56 (patch 0317) — Sub-claim (a) closure
+
+| Transaction | Description |
+|---|---|
+| Pre-session | QM-1 §2-3 read pass (lattice Hamiltonian); SR-1 §2-3 read pass (substrate-stress framework). |
+| Identification | Session 55 §3.4 structural error: the 1/√z per-branch amplitude is wavefunction normalization, NOT mode-substrate coupling. |
+| Refinement | $\kappa_1 \le 2m/m_P$ from timescale separation (orbital ZBW frequency mc²/ℏ vs Planck frequency m_P c²/ℏ; per-moment phase advance is m/m_P in Planck units). |
+| Closure | Sub-claim (a) closes at theorem level under outcome 1 (not outcome 2). Combined with $\kappa_2 \le 1/z$, correction is at most $(m/m_P)^2/z^3$. |
+| Findings registered | Finding 4 (the 2% empirical residual is downstream effects, NOT Picture A); Finding 5 ($\kappa_1 \sim m/m_P$ provides cross-sector support for bound/unbound boundary). |
+
+### Session 57 (patch 0318) — V1 confirmed + sub-claim (b)
+
+| Transaction | Description |
+|---|---|
+| Pre-session | V1 sanity check raised at Session 56: cage-cooperative SSV reinforcement reading needed for bound modes. |
+| V1 reading | SM-7/SM-8/SM-9 reading pass confirms: bound modes have $V^{7/3}/N_\text{links}$ amplification (e.g., 166× for top quark via SM-8 Shell 3 gap z=12 multiplier); unbound modes lack confinement volume. |
+| V2/V3 | Off-resonance and face-sector flags resolved favorably. |
+| Sub-claim (b) closure | At theorem level via A6' edge-sector decomposition of substrate state $(\rho, \phi, \vec{O})$ into independent gauge sectors. Cross-correlations at $O(\alpha_\text{EM}) \sim 1\%$ per pair. |
+| Findings registered | Finding 6 (channel decomposition is most load-bearing remaining); Finding 7 (amplitude AND structure refined into amplitude × ANDing). |
+
+### Session 58 (patch 0319) — Sub-claim (c) closure
+
+| Transaction | Description |
+|---|---|
+| Method identified | Transitive-action uniformity lemma: any G-invariant probability measure on a finite set with transitive G-action is uniform. |
+| Application | Icosahedral group $I_h$ acts transitively on the 12 DP-orientation options at each vertex (standard property). Under A2 + A4 + A6' edge dynamics, any stationary distribution is $I_h$-invariant. |
+| Closure | By the lemma, stationary distribution is $1/z = 1/12$. By 600-cell vertex-transitivity, holds at every vertex. |
+| Robustness | Closure robust across (R2)-S vs (R2)-L readings of "DP orientation". Equilibrium reachability $\sim 10^{42}$ relaxation times for cosmological neutrino propagation. |
+| Findings registered | Finding 8 (sub-claim (c) closes via A2+A4+A6'; equilibrium does not need separate axiom). |
+
+### Session 59 (patch 0320) — $d_\text{eff} = 5$ closure
+
+| Transaction | Description |
+|---|---|
+| Method identified | Icosahedral irrep decomposition of substrate information per channel. |
+| Decomposition | $\mathbf{3}_\text{vector}$ (spatial gradient; 3 channels for 3 Cartesian axes) $\oplus\, \mathbf{1}$ (ZBW phase; trivial U(1); 1 channel) $\oplus\, \mathbf{3}_\text{axial}|_\text{spin-orbital-locked}$ (orbital angular-momentum direction; reduced to 1 channel). |
+| Channel-completeness | No color (singlets), no weak isospin per-channel for free propagation, no flavor for single mass-eigenstate, chirality locked, no separate helicity. Total: $3 + 1 + 1 = 5$. |
+| Closure | Picture A axiomatic closure complete. |
+| Findings registered | Finding 9 (foundational vs derived accounting); Finding 10 (icosahedral irrep cross-sector framework — potential SF-2/SF-3/SF-5 application for other unbound modes). |
+
+### Session 60 (patch 0321) — SF-4 v2.0 SHIPPED
+
+| Transaction | Description |
+|---|---|
+| Action | .tex source v2.0 revision integrating Sessions 55–59 closure into SF-4 paper. |
+| 10 substantive changes | Title block + CHANGELOG v2.0; §1.4 closure-status update; §1.5 claim status ledger σ_ν row CLOSED; §4.0 suppression mechanism opening updated; **§4.3.1 Picture A FULL REWRITE** with four sub-claim closures and boxed eq:sigma_nu_closed; §4.3.4 cross-comparison table v2.0 row; §4.5 OPEN-FP-SF-4-1 status with Picture A RESOLVED + α-exponent residual; §11 OPEN-FP-SF-4-1 closing subsection rewrite; bibliography sf4_picture_A_closure bibitem added. |
+| Source | 1974 → 2101 lines (+127 net, +192 insertions, -32 deletions). |
+| PDF | 40 → 42 pages, 537 → 559 KB. pdflatex two-pass clean (only cosmetic float/Unicode warnings). |
+| SF-4 paper status | v1.0 SHIPPED → **v2.0 SHIPPED**. |
+| Programme state | OPEN-FP-SF-4-1 PARTIAL CLOSURE → ADVANCED (Picture A RESOLVED; α-exponent residual remains). |
+
+### Session 61 (patch 0322) — programme-level registration
+
+This session lands the programme-level registration of v2.0 SHIP: Research_Frontier.md OPEN-FP-SF-4-1 entry update, Research_Frontier.md last-updated header prepend, paper_catalog.md SF-4 row update, four-tier documentation suite update (handover Session 60 close, this transcript update, development vignettes 18–24, reasoning Tier-4 pointer to working sketch). After Session 61, OPEN-FP-SF-4-1 Picture A axiomatic closure is fully RESOLVED at all levels.
+
+---
+
+*Transcript document continues at Session 60 v2.0 SHIP; Session 61 wraps programme-level registration. Future per-session transactions for SF-4 v2.x revisions or residual α-exponent sub-task closure (post-v2.0) continue here.*
