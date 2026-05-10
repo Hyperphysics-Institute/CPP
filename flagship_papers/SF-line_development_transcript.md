@@ -343,4 +343,125 @@ Thomas confirmed: "Please proceed with choice (a), full agreement with strategy.
 
 ---
 
-*Transcript through §16 captures Sessions 37–41 of SF-line development. Future sessions append §17, §18, ... per the established discipline. The transcript grows monotonically; earlier sections are not edited except for typo correction.*
+*Transcript through §16 captures Sessions 37–41 of SF-line development. §17 captures Sessions 42–54 SF-4 v1.0 SHIP arc. Future sessions append §18, §19, ... per the established discipline. The transcript grows monotonically; earlier sections are not edited except for typo correction.*
+
+# §17 — SF-4 v1.0 SHIP arc (Sessions 42–54)
+
+The SF-4 v1.0 SHIP arc spans 13 sessions across two distinct phases: the substantive-derivation phase (Sessions 42–48 producing the four-tier sub-derivations and the v0.4 substantive content) and the polish-and-review phase (Sessions 49–54 producing the v0.5 → v1.0 sequence with five-pass independent AI review). This section captures both phases with subsections per major milestone.
+
+## §17.1 Sub-derivation campaign (Sessions 42–43)
+
+OPEN-FP-SF-4-1 (suppression mechanism) was at PARTIAL CLOSURE coming out of Session 41. Sessions 42–43 closed OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency) at the same partial-closure level.
+
+Session 42 (patch 0302) work: numerical zeroth-order consistency. The cage-shell V assignment $(V_{\nu_1}, V_{\nu_2}, V_{\nu_3}) = (4, 12, 30)$ in mass basis produces a $\mu\tau$-symmetric mass operator $\hat{V}^2_\mathrm{flavor}$ in flavor basis. Direct calculation:
+
+$$\hat{V}^2_\mathrm{flavor} = U_\mathrm{TBM} \cdot \mathrm{diag}(16, 144, 900) \cdot U_\mathrm{TBM}^T = \begin{pmatrix} 58.\overline{6} & 42.\overline{6} & 42.\overline{6} \\ 42.\overline{6} & 500.\overline{6} & -399.\overline{3} \\ 42.\overline{6} & -399.\overline{3} & 500.\overline{6} \end{pmatrix}$$
+
+The matrix is exactly $\mu\tau$-symmetric (Proposition 5.2). Diagonalizing recovers eigenvalues $(16, 144, 900)$ on eigenmodes that are exactly the TBM directions (Theorem 5.3). This is tautological-by-construction once the mass-basis reading is adopted.
+
+The mass-basis-vs-flavor-basis observation is the load-bearing claim of §5.2. The alternative flavor-basis reading would produce a diagonal mass operator in flavor basis with PMNS = identity, contradicting both SM-5 and observation. Only the mass-basis reading is consistent.
+
+Session 43 (patch 0303) work: structural-physical part via Route C. Direct 600-cell distance-shell computation verifies the V values $\{4, 12, 30\}$ are forced by topology + SM-1 four-cage taxonomy ($V = 20$ excluded). Three arguments establish the K3-eigenmode-to-shell coupling pattern: bonding mode → V=12 forced by full-$S_3$ symmetry + $S_3 \subset H_3$; antibonding doublet → V=4 / V=30 inheriting SM-5's antibonding-doublet TBM-direction selection. SF-4 introduces no new ansatz beyond what SM-5 already registers.
+
+OPEN-FP-SF-4-2 status at end of Session 43: PARTIAL CLOSURE with theorem-level vertex-by-vertex K3-coupling registered as v1.0+ work tied to SM-5's open problem.
+
+## §17.2 Paper drafting (Sessions 44–48)
+
+Session 44 (patch 0304) established the v0.1 outline: 12-section structure (§0 abstract through §11 discussion). The outline document `flagship_papers/neutrinos/sf-4_outline.md` was the structural skeleton for the v0.1 .tex draft.
+
+Session 45 (patch 0305) shipped v0.1 .tex: 565 lines source, foundation §0–§3 at full draft quality, derivation §4–§5 + closing §6–§11 as substantive stubs in yellow-shaded mdframed status boxes. The pattern: ship the foundation at full quality, mark stubs explicitly, iterate one section per session.
+
+Session 46 (patch 0306) shipped v0.2 §4: Suppression Mechanism. 565 → 766 lines. Three-pictures comparison table; $V^{7/3} \to V^2$ structural argument; combined result Table 4.2 with predictions. OPEN-FP-SF-4-1 sub-goals enumerated.
+
+Session 47 (patch 0307) shipped v0.3 §5: K3-Cage-Shell Consistency Theorem. 766 → 972 lines. Theorem 5.1 (3 clauses), Proposition 5.2, Theorem 5.3. Mass-basis-vs-flavor-basis clarification with proof-by-contradiction. Route C closure. Three-arguments structure for K3-eigenmode-to-shell coupling.
+
+Session 48 (patch 0308) shipped v0.4 §6–§11: 972 → 1270 lines. Master predictions table grouped categories. $\delta_{CP}$ posture full justification + 4 candidate handles. Higher-order corrections inheritance posture. Cumulative Falsifier developed across direct/framework levels. Open theorem-level work catalog. Discussion across programme-level pattern + cross-sector implications. Bibliography seeded with 10 external entries.
+
+The pacing — one substantive section per session at roughly 200-300 lines added — kept the work tractable and the per-session cognitive load reasonable. By Session 48 close, the paper had its full substantive content at draft quality (1270 lines source) and was ready for integration polish.
+
+## §17.3 Polish and first PDF (Session 49)
+
+Session 49 (patch 0309) work: integration polish + first PDF compilation. Stale-version-number sweeps (7 fixes across abstract / §1.4 / §4.3 / Table 4.1 / §4.5 / §5.8). Cross-reference integrity verified. **First PDF compilation: 32 pages, 498 KB**. PDF and .tex shipped together per SS-9 convention.
+
+The 32-page first compile result was a useful empirical signal: the substantive content at draft quality is a 32-page paper. By the v1.0 ship, polish iterations grew the paper to 40 pages — the additional 8 pages came primarily from the Grok+Copilot polish pass at v0.8 (§3.2 boxed remark, §3.3 operator picture, §3.2 geometric origin, §4.5 sanity check, §9.2 partial-failure scenarios).
+
+## §17.4 Five-pass review iteration (Sessions 50–53)
+
+The review iteration phase consumed four sessions and five independent AI review passes:
+
+**Session 50 (patch 0310, v0.6 ChatGPT pass 1)**: "NOT v1.0-shippable yet" verdict with 8 substantive corrections required + 10 bibliography updates + paper-wide "derives" overclaiming audit (6 softenings). The big substantive items: new §1.6 Claim Status Ledger, $m_{\nu_e} = m_1$ identification removed, direct-mass falsifier reframed as principled-not-near-programmatic, "no new ansatz" → "no new fitted parameter; new structural-coupling claim" propagated through 6 instances. PDF: 37 pages.
+
+**Session 51 (patch 0311, v0.7 ChatGPT pass 2)**: "Close to v1.0 SHIP quality" verdict with 3 fixes. The big item: **direct-mass falsifier numerical-logic bug**. v0.6 §9.1.2 had an internal contradiction (predicted $m_\beta \approx 8.7$ meV but said "$m_\beta > 5$ meV would falsify" — a measurement of 5 meV is BELOW prediction, not above). v0.7 reframed as two-sided inconsistency around the predicted central value. Lesson: numerical-logic bugs can survive review until pointed out; arithmetic-consistency sweeps should be a deliberate pre-ship pass. PDF: 38 pages.
+
+**Session 52 (patch 0312, v0.8 Grok + Copilot independent passes)**: Two independent reviewers returned near-identical "close to v1.0 SHIP quality" / "very close to v1.0 SHIP quality" verdicts. Ten consolidated polish edits landed: JUNO 2025 first physics integration (NuFIT 6.0 → JUNO 2025 first physics: $\sin^2\theta_{12} = 0.3092 \pm 0.0087$, $\Delta m^2_{21} = 7.50 \pm 0.12 \times 10^{-5}$); structural-vs-statistical residual note; ratios-vs-absolute-scale conceptual separation; operator-level picture for $\alpha = 2$; geometric-origin paragraph for $V \in \{4, 12, 30\}$; **prominent boxed mass-basis-vs-flavor-basis remark in §3.2**; $\Sigma m_\nu$ cosmological-bound sanity check (eq:sumcheck) with explicit no-empirical-input derivation; **partial-failure scenarios subsection in §9.2**; expanded out-of-scope (running, leptogenesis); §6.1 master table category labels refined. One LaTeX math-mode bugfix during compile. PDF: 40 pages.
+
+The Grok + Copilot pass at v0.7 was exceptionally productive: independent reviewers caught polish items ChatGPT had missed across two prior passes (operator-level picture, geometric-origin paragraph, $\Sigma m_\nu$ sanity check, partial-failure scenarios). Lesson: multi-reviewer review passes converge faster than single-reviewer iteration.
+
+**Session 53 (patch 0313, v0.9 ChatGPT pass 3)**: "Promote to v0.9, not v1.0 yet" verdict with 3 v1.0-blocking fixes + bookkeeping. The big substantive item: **mass-ratio arithmetic consistency**. v0.8 §3.4 quoted three numbers together that cannot all be true under any single normalization convention: empirical $m_2/m_1 = 8.66$, $m_3/m_1 = 50.9$, $m_1 \approx 0.96$ meV. Verification: 8.66 and 50.9 are absolute mass values in meV under $m_1 \to 0$ massless approximation, not ratios; for these to be ratios both would need $m_1 = 1.007$ meV / 0.999 meV (consistently $\approx 1$ meV). 0.96 meV is the back-solved value from SF-4 prediction $m_2/m_1 = 9$, not the empirical-ratio convention. v0.9 §3.4 rewrite drops the inconsistent "0.96 meV self-consistent fit" language, adopts $m_1 \to 0$ massless approximation explicitly, presents two equivalent comparison conventions side-by-side (absolute-mass 2%/8% vs ratio-level 4%/11%). Plus: JUNO uncertainty formatting bug (dimensional misplacement); JUNO bibliography update from "in preparation" → arXiv:2511.14593; CHANGELOG bookkeeping ("Eight specific edits" → "Ten distinct edits"). PDF: 40 pages, 536 KB.
+
+ChatGPT pass-3 forward-looking statement: *"After those fixes, I would be comfortable promoting SF-4 to v1.0 SHIP as a partial-closure flagship prediction paper."* This was the cleanest possible v1.0-promotion signal.
+
+## §17.5 v1.0 SHIP (Session 54)
+
+Session 54 task: execute v1.0 SHIP mechanics on the basis of five-pass review convergence + ChatGPT pass-3 forward-looking statement.
+
+The decision to promote at five passes (where SS-9 used seven) was based on: (i) cleaner reviewer protocol from the start (.tex source not PDF, lessons learned from SS-9); (ii) explicit reviewer "comfortable promoting" statement on v0.9; (iii) convergence pattern across 3 independent reviewers (ChatGPT, Grok, Copilot) all giving "close to v1.0" / "v1.0-ready" verdicts; (iv) the trajectory v0.6 (8 fixes) → v0.7 (3 fixes) → v0.8 (10 polish) → v0.9 (3 fixes) showing decreasing-substance issues across passes.
+
+Patch 0314 SHIP mechanics:
+1. Title block updated to "Version 1.0 SHIPPED" with reviewer convergence statement
+2. Header version comment + full v1.0 CHANGELOG entry preserving v0.1–v0.9 history
+3. PDF recompiled: 40 pages, 537 KB
+4. Four-tier documentation suite created at `flagship_papers/neutrinos/documentation_suite/`:
+   - `handover-SF-4.md` Session 54 v1.0 SHIP close handover
+   - `development-SF-4.md` 17 vignettes covering Sessions 37–54
+   - `transcript-SF-4.md` per-session transactions log
+   - `reasoning-SF-4.md` Tier 4 verbatim reasoning across 7 sections
+5. theorem-registry.md: new SF-Line section added between SM and EW sections; THEO-SF-4-1 + PROP-SF-4-2 + THEO-SF-4-3 registered; Summary Statistics SF row added; Total updated 52 → 54 (+ 1 proposition); Last-updated header refreshed
+6. paper_catalog.md: new SF-Line catalog section added between Standard Model Series and Special Relativity Series with SF-4 v1.0 SHIPPED row; Documentation paragraph for SF-4 added; Last-updated header refreshed
+7. flagship_papers/SF-line_development_transcript.md: §17 added (this section)
+8. INDEX.md: SF-4 .tex/.pdf rows updated from "v0.9" to "v1.0 SHIPPED Session 54 patch 0314"
+9. flagship_papers/neutrinos/README.md: transitioned from "v1.0-promotion-ready" to "v1.0 SHIPPED Session 54"
+10. Research_Frontier.md: programme-state-changes captured in Last-updated header
+
+Programme state changes from v1.0 SHIP:
+- Theorem registrations: THEO-SF-4-1, PROP-SF-4-2, THEO-SF-4-3 added; theorem count 52 → 54 (+ 1 proposition)
+- Predictions registered (qualitative): 7/8 neutrino-sector parameters at zero free parameters
+- Open problems: OPEN-FP-SF-4-1 + OPEN-FP-SF-4-2 PARTIAL CLOSURE preserved
+- Conjectures: CONJ-EW-W0 + CONJ-SS-Gluon-4Vertex (registered Session 41) preserved through SHIP
+- Negative-result count UNCHANGED
+
+Post-v1.0 work queue (priority order):
+- (A) HIGH PRIORITY: OPEN-FP-SF-4-1 Picture A formalization from CPP axioms A1–A11; estimated 5–10 sessions of focused derivation
+- (B) CROSS-SECTOR: SM-5 antibonding-doublet open problem closure cooperation; closure benefits both SM-5 and SF-4 OPEN-FP-SF-4-2 simultaneously
+- (C) NEXT FLAGSHIP: SF-2 EW-flagship drafting for $\delta_{CP}$ via OP-SM-7d Capotauro mechanism (route ii closure delivers 8/8 prediction count)
+- (D) ANTHOLOGY: chapter at Rovelli/SciAm register parallel to SS-9 "The Polyhedron's Conditions" (~5000 words, 1–2 sessions)
+- (E) TATWD: integration to CPP_the_theory.md parallel to SS-9 integration (1 session)
+- (F) HOUSEKEEPING: JUNO peer-reviewed publication bibliography update when arXiv:2511.14593 progresses
+
+## §17.6 Texture observations from §17
+
+**Six lessons from the SF-4 v1.0 campaign** (captured verbatim in the handover document):
+
+1. **Multi-reviewer review passes converge faster than single-reviewer iteration.** The Grok + Copilot pass at v0.7 surfaced polish items ChatGPT had missed across two prior passes — independent reviewers catch independent blind spots.
+
+2. **Numerical-logic bugs slip past review until pointed-out.** v0.6 §9.1.2 contained a self-contradiction surviving 2 ChatGPT passes; v0.8 §3.4 contained a multi-number arithmetic inconsistency surviving 4 review passes. Pattern: arithmetic-consistency sweeps should be a deliberate pre-ship pass, not assumed correct.
+
+3. **Mass-ratio vs mass-squared-splitting language is a recurring trap.** The 4-pass mass-ratio language sweep shows how easy it is for terminology to drift between drafts. When fixing terminology in one place, run a paper-wide grep.
+
+4. **Reviewer convergence on "v1.0-ready" forward-looking statement is the right SHIP signal.** After convergence pattern across 3 independent reviewers, ChatGPT pass-3's "comfortable promoting after these fixes" verdict was the cleanest possible v1.0-promotion signal.
+
+5. **Five passes (3+1+1) is sufficient where SS-9 needed seven.** SS-9's 7-pass discipline included cache-resolution issues that aren't present here. SF-4 benefited from SS-9 reviewer-protocol lessons learned (.tex source not PDF; trust convergence). 5 passes is a defensible SHIP floor for partial-closure flagship papers when reviewers explicitly converge.
+
+6. **Documentation suite is ACTIVE post-v1.0; .tex source is FROZEN.** The SS-9 lesson learned at Session 33 applies to SF-4: the four-tier documentation discipline applies whenever new SF-4 artifacts ship. Only the .tex source freezes at v1.0.
+
+**The structural form of partial-closure flagship papers.** SF-4 v1.0 ships at PARTIAL CLOSURE with two registered open theorems (OPEN-FP-SF-4-1, OPEN-FP-SF-4-2) and one inherited open problem (SM-5 antibonding-doublet). The strict-C inheritance discipline keeps these openness boundaries crisp: SF-4 introduces no new fitted parameter and no new ansatz beyond what SM-5 already registers; the cage-shell coupling assignment to specific K3 eigenmodes is the new structural-coupling claim whose theorem-level proof is OPEN-FP-SF-4-2 — and that closure is tied to SM-5's antibonding-doublet open problem. Cross-sector mutual-closure opportunities are valuable: SF-4's structural form makes the SM-5 cooperation opportunity explicit.
+
+**The pacing of substantive paper drafting.** Sessions 45–48 produced 1270 lines of substantive content at one section per session (~200-300 lines added per session). This pacing kept the per-session cognitive load reasonable and produced consistent quality across sections. The polish phase (Sessions 49–54) added another ~580 lines through six review iterations. Lesson: substantive content is harder to ship per-session than polish; budget accordingly.
+
+**The cost of architectural revisions mid-derivation campaign.** The Session 41 architectural revision (5-paper → 7-paper SF-line) at patch 0301 happened mid-SF-4 campaign without affecting SF-4 work — the architectural patches were small (README + Research_Frontier + transcript §16) and SF-4 derivation continued at Session 42 patch 0302 the next day. This was the second architectural revision cost-test (after Sessions 38 → 41 was the first); both were near-zero-cost. Lesson: architectural revisions are cheap when the corpus is in development; avoid the temptation to defer them.
+
+**The reviewer-protocol learning curve continues.** SS-9's 7-pass discipline included cache-resolution issues (Round-d.4 cache-resolution diagnostic). SF-4 had no cache issues across 5 passes — submitting .tex source not PDF rasterization is the lesson learned. The reviewer-protocol learning curve for AI-review-only ship discipline is now mature enough for partial-closure flagship papers at 5-pass discipline.
+
+---
+
+*Transcript closes at Session 54 v1.0 SHIP. Future SF-line sessions append §18 covering subsequent flagship work (SF-2 EW drafting, SF-1 charged leptons, etc.) and follow-up SF-4 work (OPEN-FP-SF-4-1 Picture A formalization, anthology chapter, TATWD integration, etc.). The transcript grows monotonically.*

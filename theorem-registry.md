@@ -4,7 +4,7 @@
 **Purpose:** Complete record of every theorem and corollary proved from CPP axioms, organised by series, with proof references and axiom dependencies.
 **Companion file:** `axiom-registry.md` — what we assume.
 **Architecture:** See `templates/Research_Frontier_Architecture.md`
-**Last updated:** 26 April 2026 (SS-8 v1.0 added: THEO-SS-13 Euler-degree theorem, THEO-SS-14 D1 conditional vertex localization Level-1+2, THEO-SS-15 2E/V interstitial scaling law conditional on C1-C4 + D1-D3; Summary Statistics SS row updated from 11 to 14)
+**Last updated:** 9 May 2026 (SF-4 v1.0 SHIPPED Session 54 added: THEO-SF-4-1 K3-Cage-Shell Consistency conditional theorem (clauses (i)+(ii) exact, clause (iii) at SM-5-inheritance level), PROP-SF-4-2 $\mu\tau$-exchange symmetry of mass operator, THEO-SF-4-3 exact TBM angle recovery; new SF-Line section added between SM and EW sections; Summary Statistics SF row added with 2 theorems + 1 proposition; Total updated 52 → 54 theorems + 1 proposition. Earlier 26 April 2026 (SS-8 v1.0 added: THEO-SS-13 Euler-degree theorem, THEO-SS-14 D1 conditional vertex localization Level-1+2, THEO-SS-15 2E/V interstitial scaling law conditional on C1-C4 + D1-D3; Summary Statistics SS row updated from 11 to 14))
 
 ---
 
@@ -12,9 +12,9 @@
 
 The axiom-registry tracks what CPP *assumes*. This file tracks what CPP has *proved*. Together they define the deductive structure of the theory. The primary health metric is the ratio:
 
-**Theorems : Axioms = 52 : 6 ≈ 8.7 theorems per axiom**
+**Theorems : Axioms = 54 : 6 ≈ 9.0 theorems per axiom**
 
-*(Counting theorems + corollaries. Axiom count uses the 6-axiom set from postulates_and_theorems.md. SS-8 v1.0 added THEO-SS-13, THEO-SS-14, THEO-SS-15 — note that THEO-SS-14 and THEO-SS-15 are conditional theorems on paper-level structural hypotheses C1–C4 + D1–D3, not unconditional from the programme axiom set; per OS §11.7 these are still counted as theorems for the registry totals. SS-7 v1.2 added THEO-SS-12; pre-existing SS state had 10 theorems THEO-SS-1 through THEO-SS-10 + PROP-SS-11.)*
+*(Counting theorems + corollaries; PROP-SF-4-2 counted separately as proposition. Axiom count uses the 6-axiom set from postulates_and_theorems.md. SF-4 v1.0 added THEO-SF-4-1 (K3-Cage-Shell Consistency, conditional on SM-5 antibonding-doublet TBM-direction ansatz at clause (iii)), PROP-SF-4-2 ($\mu\tau$-exchange symmetry, exact), THEO-SF-4-3 (exact TBM angle recovery, tautological-by-construction). SS-8 v1.0 added THEO-SS-13, THEO-SS-14, THEO-SS-15 — note that THEO-SS-14 and THEO-SS-15 are conditional theorems on paper-level structural hypotheses C1–C4 + D1–D3, not unconditional from the programme axiom set; per OS §11.7 these are still counted as theorems for the registry totals. SS-7 v1.2 added THEO-SS-12; pre-existing SS state had 10 theorems THEO-SS-1 through THEO-SS-10 + PROP-SS-11.)*
 
 ---
 
@@ -78,7 +78,19 @@ Sources: SM-1 through SM-9.
 
 ---
 
-# Electroweak Series (EW) — 8 Theorems
+# SF-Line Flagship Papers (SF) — 2 Theorems, 1 Proposition
+
+Sources: SF-4 (neutrino sector unification, v1.0 SHIPPED Session 54).
+
+*Note: SF-line papers are flagship synthesis papers covering Sector Foundations questions. SF-4 is the first SF-line paper to ship at v1.0; the cage-shell mass formula is at PARTIAL CLOSURE (suppression mechanism conditional on OPEN-FP-SF-4-1 Picture A theorem-level closure) but the K3-Cage-Shell Consistency Theorem and its companion proposition are paper-level theorems at ship.*
+
+| ID | Name | Result | Axioms Used | Paper Reference |
+|----|------|--------|-------------|-----------------|
+| **THEO-SF-4-1** | K3-Cage-Shell Consistency (conditional) | Three-clause theorem: (i) the mass-basis reading of the cage-shell V assignment $(V_{\nu_1}, V_{\nu_2}, V_{\nu_3}) = (4, 12, 30)$ produces a $\mu\tau$-symmetric mass operator $\hat{V}^2_\mathrm{flavor}$ in flavor basis; (ii) the eigenvectors of $\hat{V}^2_\mathrm{flavor}$ coincide with the TBM directions exactly at zeroth order; (iii) the cage-shell vertex assignment to specific K3 eigenmodes is forced by 600-cell topology + SM-1 four-cage taxonomy + SM-5 antibonding-doublet TBM-direction selection. Clauses (i)+(ii) are exact at zeroth order; clause (iii) is at SM-5-inheritance level (vertex-by-vertex coupling theorem registered as OPEN-FP-SF-4-2, tied to SM-5's antibonding-doublet open problem). | AXIM-2, AXIM-4; THEO-SM-3, THEO-SM-4; conditional on SM-5 antibonding-doublet TBM-direction ansatz | SF-4 v1.0, Theorem 5.1 |
+| **PROP-SF-4-2** | $\mu\tau$-exchange symmetry of mass operator | The mass operator $\hat{V}^2_\mathrm{flavor}$ derived from the cage-shell V assignment $(V_{\nu_1}, V_{\nu_2}, V_{\nu_3}) = (4, 12, 30)$ via $\hat{V}^2_\mathrm{flavor} = U_\mathrm{TBM} \cdot \mathrm{diag}(V_{\nu_1}^2, V_{\nu_2}^2, V_{\nu_3}^2) \cdot U_\mathrm{TBM}^T$ is exactly $\mu\tau$-symmetric: $(\hat{V}^2_\mathrm{flavor})_{22} = (\hat{V}^2_\mathrm{flavor})_{33}$ and $(\hat{V}^2_\mathrm{flavor})_{12} = (\hat{V}^2_\mathrm{flavor})_{13}$. | AXIM-2, AXIM-4; THEO-SM-4 | SF-4 v1.0, Proposition 5.2 |
+| **THEO-SF-4-3** | Exact recovery of TBM angles | Diagonalization of the cage-shell-derived mass operator $\hat{V}^2_\mathrm{flavor}$ recovers the TBM mixing angles exactly: $\sin^2\theta_{12} = 1/3$, $\sin^2\theta_{23} = 1/2$, $\sin^2\theta_{13} = 0$. Tautological by construction (the assignment is in mass basis with TBM as the change-of-basis to flavor basis), but explicit verification confirms internal consistency of the cage-shell mass-mechanism construction. | AXIM-2, AXIM-4; THEO-SM-4; PROP-SF-4-2 | SF-4 v1.0, Theorem 5.3 |
+
+---
 
 Sources: EW-1 through EW-5.
 
@@ -180,13 +192,16 @@ Sources: SD-1 through SD-5. These theorems establish the CPP superdeterministic 
 |--------|----------|-------------|-------|
 | SS (Strong) | 14 | 0 | 14 |
 | SM (Standard Model) | 9 | 4 | 13 |
+| **SF (Flagship)** | **2 (+1 proposition)** | **0** | **2 (+1 prop)** |
 | EW (Electroweak) | 8 | 0 | 8 |
 | QM (Quantum Mechanics) | 10 | 3 | 13 |
 | SD (Foundations) | 10 | 0 | 10 |
 | Partner-switching | 1 | 2 | 3 |
-| **Total** | **52** | **9** | **61** |
+| **Total** | **54 (+1 proposition)** | **9** | **63 (+1 prop)** |
 
-*SS row updated from 11 to 14 this pass: SS-8 v1.0 added THEO-SS-13 (Euler-degree theorem), THEO-SS-14 (D1 conditional vertex localization, Level-1+2 independence), and THEO-SS-15 (2E/V interstitial scaling law, conditional on C1–C4 + D1–D3). THEO-SS-14 and THEO-SS-15 are conditional theorems on paper-level structural hypotheses; they are counted as theorems per the operating-system convention but their conditionality is documented inline in the entries.*
+*SF row added this pass: SF-4 v1.0 SHIPPED Session 54 added THEO-SF-4-1 (K3-Cage-Shell Consistency, conditional on SM-5 antibonding-doublet TBM-direction ansatz at clause (iii) but exact at clauses (i)+(ii)), PROP-SF-4-2 ($\mu\tau$-exchange symmetry of mass operator in flavor basis), and THEO-SF-4-3 (exact recovery of TBM angles, tautological-by-construction confirmation). Total theorem count 52 → 54 (+ 1 proposition).*
+
+*SS row updated from 11 to 14 in earlier pass: SS-8 v1.0 added THEO-SS-13 (Euler-degree theorem), THEO-SS-14 (D1 conditional vertex localization, Level-1+2 independence), and THEO-SS-15 (2E/V interstitial scaling law, conditional on C1–C4 + D1–D3). THEO-SS-14 and THEO-SS-15 are conditional theorems on paper-level structural hypotheses; they are counted as theorems per the operating-system convention but their conditionality is documented inline in the entries.*
 
 ---
 

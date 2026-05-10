@@ -3,6 +3,22 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 1.0 -- 9 May 2026 (Session 54 v1.0 SHIP. Five independent
+%   AI review passes converged on v1.0-promotion-ready: ChatGPT × 3
+%   (passes 1-3 across v0.5 → v0.9) + Grok × 1 + Copilot × 1
+%   (independent passes on v0.7). Reviewer's pass-3 forward-looking
+%   statement: "After those fixes, I would be comfortable promoting
+%   SF-4 to v1.0 SHIP as a partial-closure flagship prediction
+%   paper." v1.0 SHIP mechanics: title block updated, CHANGELOG
+%   entry added, theorem-registry entries (THEO-SF-4-1/PROP-SF-4-2/
+%   THEO-SF-4-3) registered, paper_catalog SF-line section added
+%   with SF-4 v1.0 SHIPPED row, four-tier documentation suite
+%   created (handover/development/transcript/reasoning), SF-line
+%   transcript §17 Sessions 42-54 added, repo metadata transitioned
+%   to v1.0 SHIPPED status. Substantive content frozen at v1.0;
+%   future work flows through OPEN-FP-SF-4-1 + OPEN-FP-SF-4-2 +
+%   SF-2 closure for delta_CP.)
+%
 % Version 0.9 -- 9 May 2026 (Session 53 v0.9 incorporates ChatGPT
 %   review pass 3 feedback on v0.8. ChatGPT pass 3 verdict: "promote
 %   to v0.9, not v1.0 yet" with three blocking polish/numerical
@@ -75,6 +91,112 @@
 %   per the §11 drafting plan in sf-4_outline.md)
 %
 % CHANGELOG:
+%   v1.0 (9 May 2026 Session 54) -- SHIPPED.
+%
+%     The v1.0 SHIP promotion lands after a six-session derivation
+%     campaign (Sessions 38-43 mechanism + sub-derivations),
+%     four-session paper drafting campaign (Sessions 44-48
+%     v0.1-v0.4), one-session integration polish (Session 49 v0.5),
+%     three-session ChatGPT review iteration (Sessions 50-51 + 53
+%     v0.6/v0.7/v0.9), one-session Grok+Copilot independent reviews
+%     (Session 52 v0.8), and the present Session 54 SHIP-mechanics
+%     pass.
+%
+%     Five independent AI review passes converged on v1.0-promotion-
+%     ready:
+%       - ChatGPT pass 1 (v0.5 → v0.6, Session 50): "NOT v1.0-
+%         shippable yet" → 8 substantive corrections + bibliography
+%         updates + "derives" overclaiming audit
+%       - ChatGPT pass 2 (v0.6 → v0.7, Session 51): "Close to v1.0
+%         SHIP quality" → 3 fixes (mass-ratio language propagation;
+%         direct-mass falsifier numerical-logic bug; cross-ref
+%         integrity)
+%       - Grok pass 1 (v0.7 → v0.8, Session 52): "very close to v1.0
+%         SHIP quality" → 6 polish suggestions
+%       - Copilot pass 1 (v0.7 → v0.8, Session 52): "close to v1.0
+%         SHIP quality" → 11 polish suggestions
+%       - ChatGPT pass 3 (v0.8 → v0.9, Session 53): "promote to v0.9,
+%         not v1.0 yet" → 3 v1.0-blocking fixes (JUNO uncertainty
+%         formatting; mass-ratio arithmetic consistency; JUNO
+%         bibliography arXiv:2511.14593) + bookkeeping
+%       - ChatGPT pass-3 forward-looking: "After those fixes, I
+%         would be comfortable promoting SF-4 to v1.0 SHIP as a
+%         partial-closure flagship prediction paper."
+%
+%     Substantive content (§0-§11) is frozen at v1.0. The .tex
+%     source file is not edited further unless and until external
+%     post-public-posting feedback prompts a v1.x revision. The
+%     four-tier documentation suite (documentation_suite/handover-
+%     SF-4.md, development-SF-4.md, transcript-SF-4.md, reasoning-
+%     SF-4.md) is ACTIVE — additional documentation artifacts
+%     (anthology chapter, TATWD integration, supplemental docs)
+%     can ship post-v1.0 without re-opening the .tex.
+%
+%     v1.0 SHIP DELIVERABLES:
+%       1. Title block updated to "Version 1.0 SHIPPED"
+%       2. theorem-registry.md: SF-line section added with
+%          THEO-SF-4-1 (K3-Cage-Shell Consistency, structural-
+%          numerical level; conditional on K3-eigenmode-
+%          identification ansatz from SM-5), PROP-SF-4-2
+%          (mu-tau-exchange symmetry of mass operator in flavor
+%          basis), THEO-SF-4-3 (exact recovery of TBM angles).
+%          Summary-Statistics SF row added: 2 theorems + 1
+%          proposition. Total theorem count updated.
+%       3. paper_catalog.md: SF-line catalog section added with
+%          SF-4 v1.0 SHIPPED row.
+%       4. Four-tier documentation suite created at
+%          flagship_papers/neutrinos/documentation_suite/
+%          (handover-SF-4.md, development-SF-4.md, transcript-
+%          SF-4.md, reasoning-SF-4.md).
+%       5. flagship_papers/SF-line_development_transcript.md §17
+%          added covering Sessions 42-54 SF-4 v1.0 ship arc.
+%       6. INDEX.md and flagship_papers/neutrinos/README.md
+%          transitioned to v1.0 SHIPPED status.
+%       7. Research_Frontier.md programme-state-changes captured.
+%
+%     PROGRAMME STATE CHANGES from v1.0 SHIP:
+%       - Theorem registrations: THEO-SF-4-1, PROP-SF-4-2,
+%         THEO-SF-4-3 added to theorem-registry. Theorem count
+%         52 → 54 (+ 1 proposition).
+%       - No new conjectures registered (CONJ-EW-W0 and
+%         CONJ-SS-Gluon-4Vertex were already registered at
+%         Session 41 patch 0301).
+%       - Predictions registered (qualitative): seven of eight
+%         neutrino-sector parameters at zero free parameters via
+%         the cage-shell mass formula + K3-Cage-Shell Consistency
+%         Theorem. Quantitative prediction registry update is
+%         scope-deferred to a future Research_Frontier sweep.
+%       - Programme negative-result count UNCHANGED.
+%       - Open-problem registry: OPEN-FP-SF-4-1 PARTIAL CLOSURE
+%         preserved; OPEN-FP-SF-4-2 PARTIAL CLOSURE preserved;
+%         both flagged as primary v1.0+ targets in the SF-4
+%         post-ship work plan.
+%
+%     POST-v1.0 WORK QUEUE (in priority order):
+%       (A) OPEN-FP-SF-4-1 Picture A formalization from CPP axioms
+%         A1-A11 — single-paper continuation work; estimated 5-10
+%         sessions of focused derivation. Closure converts the
+%         suppression mechanism from PARTIAL CLOSURE to theorem
+%         level.
+%       (B) Cross-sector cooperation with SM-5 antibonding-doublet
+%         open problem closure — closure benefits both SM-5 and
+%         SF-4's OPEN-FP-SF-4-2 simultaneously. Cross-sector
+%         mutual-closure opportunity.
+%       (C) SF-2 EW-flagship drafting — produces delta_CP via
+%         OP-SM-7d Capotauro mechanism (route ii deferral). On
+%         SF-2 closure, SF-4 v2.0 update extends prediction count
+%         from 7/8 to 8/8 zero-parameter.
+%       (D) Anthology chapter at Rovelli/SciAm register (parallel
+%         to SS-9 "The Polyhedron's Conditions"). Title TBD; ~5000
+%         words at popular-science register. ~Session 55-56.
+%       (E) TATWD integration to CPP_the_theory.md (popular-science
+%         book outline). Parallel to SS-9 integration in Session
+%         35. ~Session 56-57.
+%       (F) JUNO 2025 follow-up at peer-review publication: when
+%         the JUNO arXiv:2511.14593 paper progresses to peer-
+%         reviewed publication, replace the bibitem with the
+%         peer-reviewed reference. Minor bibliography sweep only.
+%
 %   v0.9 (9 May 2026 Session 53) -- ChatGPT review pass 3 feedback
 %     on v0.8 incorporated. Three v1.0-blocking issues plus minor
 %     CHANGELOG bookkeeping. Reviewer verdict: "promote to v0.9,
@@ -678,7 +800,8 @@
 \title{\textbf{SF-4: Neutrino Sector Unification from 600-Cell Geometry}\\[6pt]
 {\large Eight Parameters from One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\normalsize Version 0.9 --- 9 May 2026 (incorporates ChatGPT review pass 3 feedback on v0.8: JUNO $\Delta m^2_{21}$ uncertainty formatting bug fixed (parenthesized correctly as $(7.50 \pm 0.12) \times 10^{-5}$ eV$^2$); empirical mass-ratio arithmetic recomputed self-consistently in \S3.4 with explicit dual-convention presentation (absolute-mass-comparison 2\%/8\% and ratio-level 4\%/11\%); JUNO 2025 bibliography updated from ``in preparation'' to arXiv:2511.14593; CHANGELOG bookkeeping ``Eight specific edits'' $\to$ ``Ten distinct edits''; reviewer convergence on v1.0-promotion-ready)}}
+{\Large \textbf{Version 1.0 --- SHIPPED --- 9 May 2026}} \\[0.5em]
+{\normalsize Five independent AI review passes converged on v1.0-promotion-ready: ChatGPT $\times$ 3 (passes 1--3 across v0.5 $\to$ v0.9) plus Grok $\times$ 1 plus Copilot $\times$ 1 (independent passes on v0.7). Reviewer's pass-3 forward-looking statement: ``After those fixes, I would be comfortable promoting SF-4 to v1.0 SHIP as a partial-closure flagship prediction paper.'' Promoted to v1.0 SHIP at Session 54. Substantive content frozen at v1.0; future work flows through OPEN-FP-SF-4-1 (suppression-mechanism Picture A theorem-level closure), OPEN-FP-SF-4-2 (vertex-by-vertex K3-coupling theorem; tied to SM-5 antibonding-doublet open problem), and SF-2 EW-flagship closure for the deferred $\delta_{CP}$ derivation per route (ii).}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
