@@ -1,6 +1,6 @@
 # SF-4: Neutrino Sector Unification from 600-Cell Geometry
 
-**Status:** Active. Audit phase complete (Session 37, patch 0294); mechanism selected (Session 39, patch 0298); both substantive sub-derivations at PARTIAL CLOSURE — OPEN-FP-SF-4-1 (Session 41 patch 0300) and OPEN-FP-SF-4-2 (Session 43 patch 0303). Outline established Session 44 patch 0304. v0.1 .tex shipped Session 45 patch 0305; v0.2 §4 Session 46 patch 0306; v0.3 §5 Session 47 patch 0307; v0.4 §6-§11 Session 48 patch 0308; v0.5 integration polish + first PDF Session 49 patch 0309. **v0.6 ChatGPT review pass 1 corrections incorporated Session 50 patch 0310** — 8 substantive corrections (claim-status ledger, mass-ratio language, $m_{\nu_e}$/$m_1$ identification fix, direct-mass falsifier reframing, NuFIT 6.0 update, JUNO timing softening, cosmological-bound qualification, "no new ansatz" → cleaner language) plus bibliography updates and "derives" overclaiming audit. Paper at 37-page PDF, ready for AI review pass 2.
+**Status:** Active. Audit phase complete (Session 37, patch 0294); mechanism selected (Session 39, patch 0298); both substantive sub-derivations at PARTIAL CLOSURE — OPEN-FP-SF-4-1 (Session 41 patch 0300) and OPEN-FP-SF-4-2 (Session 43 patch 0303). Outline established Session 44 patch 0304. v0.1 .tex shipped Session 45 patch 0305; v0.2 §4 Session 46 patch 0306; v0.3 §5 Session 47 patch 0307; v0.4 §6-§11 Session 48 patch 0308; v0.5 integration polish + first PDF Session 49 patch 0309; v0.6 ChatGPT pass 1 corrections Session 50 patch 0310. **v0.7 ChatGPT pass 2 corrections incorporated Session 51 patch 0311** — mass-ratio language fully propagated (6 relabels), direct-mass falsifier numerical-logic bug corrected (reframed around inconsistency with predicted m_β ≈ 8.7 meV rather than backwards "m_β > 5 meV" framing). Reviewer's pass 2 assessment: "close to v1.0 SHIP quality as a partial-closure flagship prediction paper". Paper at 38-page PDF.
 **Estimated sessions to v1.0 SHIP:** 10–14 (audit done; selection + derivation campaign + writing).
 **Inclusion criterion fit:** (1) named known-unknown — neutrino masses, mass hierarchy ordering, $\delta_{CP}$, the eight neutrino oscillation parameters in toto; (4) bridge to recognized mathematics — polytope theory and distance-shell structure of the 600-cell.
 
@@ -52,8 +52,8 @@ SF-4 is the pivot paper of the SF-line: longest derivation campaign, highest sci
 Currently:
 - `README.md` — this file
 - `sf-4_outline.md` — v0.1 paper outline (Session 44, patch 0304)
-- **`sf-4_neutrinos.tex`** — **v0.6 paper draft (Session 50, patch 0310)**: ChatGPT review pass 1 corrections incorporated; 1506 lines source; 8 substantive corrections plus bibliography updates and "derives" audit
-- **`sf-4_neutrinos.pdf`** — **v0.6 compiled PDF (Session 50, patch 0310)**: 37 pages, 512 KB; ready for AI review pass 2
+- **`sf-4_neutrinos.tex`** — **v0.7 paper draft (Session 51, patch 0311)**: ChatGPT review pass 2 corrections incorporated; 1591 lines source; mass-ratio language fully propagated, direct-mass falsifier numerical-logic bug fixed
+- **`sf-4_neutrinos.pdf`** — **v0.7 compiled PDF (Session 51, patch 0311)**: 38 pages, 521 KB; reviewer assessment "close to v1.0 SHIP quality"
 - `sketches/README.md` — staging-document discipline
 - `sketches/SF-4_neutrino_sector_audit.md` — eight-parameter audit (Session 37, patch 0294)
 - `sketches/SF-4_mechanism_selected.md` — mechanism-selection decision document (Session 39, patch 0298)

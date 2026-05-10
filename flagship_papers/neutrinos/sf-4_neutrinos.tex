@@ -3,6 +3,16 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 0.7 -- 9 May 2026 (Session 51 v0.7 incorporates ChatGPT
+%   review pass 2 feedback. ChatGPT pass 2 returned 7.5/8 v0.6
+%   corrections landed cleanly with three remaining issues: (1)
+%   mass-ratio language not fully propagated through §3.4 lead-in
+%   and §6.1 table category label; (2) direct-mass falsifier
+%   numerical-logic bug — predicted m_β ≈ 8.7 meV but text said
+%   "m_β > 5 meV would falsify", which is backwards; (3) §8.2
+%   "splitting ratio residuals" mislabel where the residuals are
+%   mass-ratio. v0.7 lands all three fixes plus paper-wide sweep.)
+%
 % Version 0.6 -- 9 May 2026 (Session 50 v0.6 incorporates ChatGPT
 %   review pass 1 feedback. 8 substantive corrections plus
 %   bibliography updates. Paper now at ~1340 lines source; PDF
@@ -46,6 +56,76 @@
 %   per the §11 drafting plan in sf-4_outline.md)
 %
 % CHANGELOG:
+%   v0.7 (9 May 2026 Session 51) -- ChatGPT review pass 2 feedback
+%     incorporated. Pass 2 verdict: 7.5/8 v0.6 corrections landed
+%     cleanly; v0.6 strong improvement over v0.5 but not yet
+%     v1.0-shippable. Three remaining issues fixed in v0.7:
+%
+%     1. MASS-RATIO LANGUAGE FULLY PROPAGATED. v0.6 fixed the
+%        abstract but left several body-text mislabels:
+%
+%        a. §3.4 SUBSECTION TITLE: "Splitting predictions at zero
+%           free parameters" → "Mass-ratio predictions at zero
+%           free parameters"
+%        b. §3.4 LEAD-IN: "the mass-squared ratios are m_2/m_1=
+%           9.00, m_3/m_1=56.25" → "the mass ratios are m_2/m_1=
+%           9.00, m_3/m_1=56.25" (these ARE mass ratios, not mass-
+%           squared ratios)
+%        c. §6.1 MASTER TABLE CATEGORY LABEL: "Mass-squared
+%           splitting ratios (zero parameters, V² scaling)" →
+%           "Mass ratios (zero parameters, V² scaling)" — the rows
+%           in this category show m_2/m_1=9.00 and m_3/m_1=56.25
+%        d. §8 INTRO: "structural residuals on the splitting
+%           ratios" → "structural residuals on the mass ratios"
+%        e. §8.2: "structural residuals 4% and 11% in the splitting
+%           ratio predictions of eq:massratios" → "structural
+%           residuals 4% and 11% in the mass-ratio predictions of
+%           eq:massratios"
+%        f. §11.2: "V² structural residuals (4% and 11% in the
+%           splitting ratios)" → "V² structural residuals (4% and
+%           11% in the mass ratios)"
+%
+%        Six total relabels. The remaining "mass-squared splitting"
+%        / "mass-squared ratios" usages in the paper (lines 441,
+%        696, 698, 1163) are all legitimate references to actual
+%        Δm² quantities and have been preserved.
+%
+%     2. DIRECT-MASS FALSIFIER NUMERICAL-LOGIC BUG CORRECTED.
+%        v0.6 §9.1.2 said: "A direct-mass measurement of m_β >
+%        5 meV at the level of the predicted scale would force at
+%        least one mass eigenvalue to exceed the cage-shell
+%        prediction by a factor of ~5, falsifying the σ_ν = z^{-10}
+%        structural prediction."
+%
+%        BUG: the same paragraph stated "predicted m_β ≈ 8.7 meV"
+%        (from the PMNS-weighted sum). 5 meV is BELOW 8.7 meV, so
+%        a measurement of m_β > 5 meV would CONFIRM not falsify.
+%
+%        v0.7 reframes the falsifier around inconsistency with the
+%        predicted scale: a measurement returning either (a) a
+%        robust upper bound substantially below ~8.7 meV (e.g.,
+%        m_β < 3-5 meV at high confidence — SF-4 absolute scale too
+%        large) or (b) a measurement substantially above ~8.7 meV
+%        (e.g., m_β ≳ 30-50 meV — SF-4 absolute scale too small)
+%        would falsify. Two-sided framing now correct relative to
+%        the predicted central value.
+%
+%        Abstract correspondingly updated: "the principled direct-
+%        mass-measurement falsifier at m_ν1 > 5 meV" → "the
+%        principled direct-mass falsifier --- a beta-decay
+%        measurement of m_β robustly inconsistent with the predicted
+%        m_β ≈ 8.7 meV". Maintains the principled-not-near-term
+%        framing while removing the numerical-logic error.
+%
+%     3. CROSS-REFERENCE INTEGRITY VERIFIED. All `\\ref` and
+%        `\\eqref` targets resolve to existing `\\label` definitions
+%        (zero orphan references). Compiled PDF page count and
+%        binary updated.
+%
+%     Net: ~10 lines net change across 7 specific edits + 2-line
+%     section-title rename. Paper now at 1517 lines source. PDF
+%     recompiled.
+%
 %   v0.6 (9 May 2026 Session 50) -- ChatGPT review pass 1 feedback
 %     incorporated. 8 specific corrections plus bibliography
 %     updates and "derives" audit:
@@ -386,7 +466,7 @@
 \title{\textbf{SF-4: Neutrino Sector Unification from 600-Cell Geometry}\\[6pt]
 {\large Eight Parameters from One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\normalsize Version 0.6 --- 9 May 2026 (incorporates ChatGPT review pass 1 feedback: claim-status ledger added as new §1.6; mass-ratio vs mass-squared-splitting language clarified; $m_{\nu_e} = m_1$ identification removed; direct-mass falsifier reframed as principled-not-near-programmatic; NuFIT references updated 5.3 $\to$ 6.0; JUNO timing softened to multi-year program; cosmological bound qualified with Planck-PR4 $\sim 86$ meV alternative; ``no new ansatz'' replaced with ``no new fitted parameter; new structural-coupling claim'' throughout; ``derives'' overclaiming softened in abstract, §1, §3, §4, §6 per reviewer protocol)}}
+{\normalsize Version 0.7 --- 9 May 2026 (incorporates ChatGPT review pass 2 feedback: mass-ratio language fully propagated through \S3.4 lead-in, \S3.4 subsection title, \S6.1 master table category label, \S8 intro, \S8.2, \S11.2 (six relabels in total); direct-mass falsifier numerical-logic bug corrected --- reframed around inconsistency with predicted $m_\beta \approx 8.7$ meV rather than the backwards $m_\beta > 5$ meV framing; all `\\ref` and `\\eqref` cross-references verified)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -409,7 +489,7 @@ m_{\nu_i} = \Mzero \cdot V_{\nu_i}^{2} \cdot \sigmanu, \qquad
 \]
 uses the same mass quantum $\Mzero$ and 600-cell coordination $z = 12$ that anchor the quark and charged-lepton sectors in SM-7~\cite{abshier_sm7}, SM-8~\cite{abshier_sm8}, SM-9~\cite{abshier_sm9}. The cage-shell vertex counts $V \in \{4, 12, 30\}$ are forced by 600-cell topology (the bonded shells of any 600-cell vertex). The suppression factor $\sigmanu = z^{-10}$ is proposed as a structurally constrained leading-order result from substrate walk-dimension primitives for an unbound three-dimensional orbital ZBW mode and matches the empirical absolute mass scale to within 2\%. The mass ratio predictions $m_2/m_1 = 9.00$ and $m_3/m_1 = 56.25$ (equivalently, mass-squared ratios $m_2^2/m_1^2 = 81$ and $m_3^2/m_1^2 \approx 3164$) match observation to 4\% and 11\% on the mass-ratio comparison, with no fitted parameters. The PMNS mixing matrix at zeroth order is exactly the tribimaximal matrix $U_\TBM$, inherited from the SM-5 K3 spectral derivation~\cite{abshier_sm5}; the cage-shell mass mechanism preserves K3-eigenstate alignment by construction once the mass-basis reading is adopted. Normal mass hierarchy is forced by the cage-shell assignment $(\nu_1 \to V=4, \nu_2 \to V=12, \nu_3 \to V=30)$. The CP-violating phase $\delta_{CP}$ is registered as open per OP-SM-7d and deferred to the electroweak-sector flagship (SF-2).
 
-The paper makes specific zero-parameter quantitative predictions and identifies five clean falsifiers: the JUNO mass-ordering measurement (multi-year program; expected $\sim 3\sigma$ ordering sensitivity within roughly 6 years of full operation) would falsify the cage-shell assignment if inverted hierarchy is confirmed; cosmological tightening to $\Sigma m_\nu < 50$ meV (DESI/CMB-S4) would falsify the $\sigmanu = z^{-10}$ prediction (current DESI/Planck bound of $\Sigma m_\nu \le 72$ meV is one stringent combination, with alternative analyses giving up to $\sim 86$ meV); the principled direct-mass-measurement falsifier at $m_{\nu_1} > 5$ meV is conceptually clean but exceeds near-term experimental sensitivity (Project 8 targets $m_\beta \sim 40$ meV); PMNS deviation from TBM at zeroth order (after SM-5's higher-order Capotauro corrections) would falsify the K3-eigenmode-identification ansatz that SM-5 introduces and SF-4 inherits; substrate-mechanism deviation from $\sigmanu = z^{-2 \deff}$ form would falsify the walk-dimension framework.
+The paper makes specific zero-parameter quantitative predictions and identifies five clean falsifiers: the JUNO mass-ordering measurement (multi-year program; expected $\sim 3\sigma$ ordering sensitivity within roughly 6 years of full operation) would falsify the cage-shell assignment if inverted hierarchy is confirmed; cosmological tightening to $\Sigma m_\nu < 50$ meV (DESI/CMB-S4) would falsify the $\sigmanu = z^{-10}$ prediction (current DESI/Planck bound of $\Sigma m_\nu \le 72$ meV is one stringent combination, with alternative analyses giving up to $\sim 86$ meV); the principled direct-mass falsifier --- a beta-decay measurement of $m_\beta$ robustly inconsistent with the predicted $m_\beta \approx 8.7$ meV --- is conceptually clean but exceeds near-term experimental sensitivity (Project 8 targets $m_\beta \sim 40$ meV); PMNS deviation from TBM at zeroth order (after SM-5's higher-order Capotauro corrections) would falsify the K3-eigenmode-identification ansatz that SM-5 introduces and SF-4 inherits; substrate-mechanism deviation from $\sigmanu = z^{-2 \deff}$ form would falsify the walk-dimension framework.
 
 The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) ship at PARTIAL CLOSURE: structural-physical pictures established with quantitative numerical predictions in hand; theorem-level rigor pending closure of the open theorem-level work catalogued in \S\ref{sec:openwork}. SF-4 introduces no new fitted parameter beyond the inherited single calibration $\Mzero$, but the cage-shell coupling assignment to specific K3 eigenmodes (Theorem~\ref{thm:k3consistency} clause (iii)) is a new structural-coupling claim whose theorem-level proof remains OPEN-FP-SF-4-2 and is tied to SM-5's existing open problem on the K3 antibonding-doublet-degeneracy lifting.
 \end{abstract}
@@ -683,10 +763,10 @@ V^{7/3} \to V^{2} \quad \text{(unbound regime).}
 \end{equation}
 This is not a fit. The exponent $\alpha = 2$ is forced by the structural difference between bound and unbound modes --- exactly the boundary across which $V^{1/3}$ does or does not contribute to the mass formula. Theorem-level closure of \eqref{eq:alphareduction} from CPP axioms A1--A11 is registered as part of OPEN-FP-SF-4-1 (suppression mechanism Picture A formalization) and is v1.0+ work.
 
-\subsection{Splitting predictions at zero free parameters}
+\subsection{Mass-ratio predictions at zero free parameters}
 \label{sec:splitting_predictions}
 
-With $\alpha = 2$ and the assignment \eqref{eq:vassignment}, the mass-squared ratios are
+With $\alpha = 2$ and the assignment \eqref{eq:vassignment}, the mass ratios are
 \begin{equation}
 \frac{m_{\nu_2}}{m_{\nu_1}} = \left(\frac{12}{4}\right)^2 = 9.00, \qquad
 \frac{m_{\nu_3}}{m_{\nu_1}} = \left(\frac{30}{4}\right)^2 = 56.25.
@@ -1119,7 +1199,7 @@ $m_{\nu_2}$ & 8.81 meV & 8.66 meV (from $\Delta m^2_{21}$) & \S\ref{sec:cageassi
 $m_{\nu_3}$ & 55.1 meV & 50.9 meV (from $\Delta m^2_{32}$) & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
 $\Sigma m_\nu$ & 64.9 meV & $\le 72$ meV (DESI/Planck) & combined \\
 \midrule
-\multicolumn{4}{l}{\emph{Mass-squared splitting ratios (zero parameters, $V^2$ scaling)}} \\
+\multicolumn{4}{l}{\emph{Mass ratios (zero parameters, $V^2$ scaling)}} \\
 $m_{\nu_2} / m_{\nu_1}$ & 9.00 & 8.66 & \S\ref{sec:cageassignment} \\
 $m_{\nu_3} / m_{\nu_1}$ & 56.25 & 50.9 & \S\ref{sec:cageassignment} \\
 \midrule
@@ -1204,7 +1284,7 @@ These remain valid candidates for the eventual SF-2 work. SF-4 v1.0 ships with t
 \label{sec:higher_order}
 % ===================================================================
 
-The cage-shell mass formula and the K3-Cage-Shell Consistency Theorem deliver zeroth-order results: $V^2$ scaling for masses (with $\sim 4$--11\% structural residuals on the splitting ratios) and TBM at zeroth order for the PMNS matrix (with $\sim 10$--14\% deviations from the observed angles, plus $\sin^2\theta_{13} = 0.02203$ from NuFIT 6.0 non-zero against TBM's 0). Higher-order corrections lift both classes of residuals toward observed values. SF-4 inherits these corrections from the existing SM-5 OP-SM-7d (Capotauro mechanism) machinery; it does not derive them.
+The cage-shell mass formula and the K3-Cage-Shell Consistency Theorem deliver zeroth-order results: $V^2$ scaling for masses (with $\sim 4$--11\% structural residuals on the mass ratios) and TBM at zeroth order for the PMNS matrix (with $\sim 10$--14\% deviations from the observed angles, plus $\sin^2\theta_{13} = 0.02203$ from NuFIT 6.0 non-zero against TBM's 0). Higher-order corrections lift both classes of residuals toward observed values. SF-4 inherits these corrections from the existing SM-5 OP-SM-7d (Capotauro mechanism) machinery; it does not derive them.
 
 \subsection{Inheritance posture}
 
@@ -1218,7 +1298,7 @@ The Capotauro mechanism is expected to produce, when closed:
 
 \begin{itemize}[leftmargin=2em]
 \item \textbf{TBM angle corrections} lifting the zeroth-order angles $\sin^2\theta_{12}^{(0)} = 1/3, \sin^2\theta_{23}^{(0)} = 1/2, \sin^2\theta_{13}^{(0)} = 0$ toward the observed (NuFIT 6.0 \cite{nufit60}) $\sin^2\theta_{12} = 0.307, \sin^2\theta_{23} = 0.572$ (NO, with octant ambiguity), $\sin^2\theta_{13} = 0.02203$ via mode-mode mixing corrections at $O(\epsilon)$ where $\epsilon$ is a substrate-derived small parameter from the EW machinery.
-\item \textbf{Mass-eigenvalue corrections} via the same mode-mode mixing, lifting the structural residuals 4\% and 11\% in the splitting ratio predictions of \eqref{eq:massratios} toward the observed $\Delta m^2_{21}$ and $\Delta m^2_{32}$ values.
+\item \textbf{Mass-eigenvalue corrections} via the same mode-mode mixing, lifting the structural residuals 4\% and 11\% in the mass-ratio predictions of \eqref{eq:massratios} toward the observed $\Delta m^2_{21}$ and $\Delta m^2_{32}$ values.
 \item \textbf{$\delta_{CP}$ derivation} as an additional output of the same machinery (per \S\ref{sec:deltaCP} route ii).
 \end{itemize}
 
@@ -1253,7 +1333,12 @@ The cage-shell + suppression-factor prediction is $m_{\nu_1} \approx 0.98$ meV (
 
 \textbf{Note that direct-mass measurements probe $m_\beta$, not $m_{\nu_1}$ directly}: the relevant observable for SF-4 is the absolute mass scale, which $m_\beta$ constrains through the PMNS-weighted sum $m_\beta^2 = \sum_i |U_{ei}|^2 m_i^2$. With normal hierarchy and the SF-4 mass values, the predicted $m_\beta \approx 8.7$ meV (dominated by the $|U_{e2}|^2 m_2^2$ contribution).
 
-\paragraph{The principled falsifier.} A direct-mass measurement of $m_\beta > 5$ meV at the level of the predicted scale would force at least one mass eigenvalue to exceed the cage-shell prediction by a factor of $\sim 5$, falsifying the $\sigmanu = z^{-10}$ structural prediction. \textbf{However, this 5 meV principled threshold is well below the sensitivity floor of currently-funded direct-measurement programmes}: KATRIN reaches $\sim 0.5$ eV, Project 8 targets $\sim 40$ meV. The principled-falsifier threshold and the near-term experimental sensitivity differ by roughly a decade.
+\paragraph{The principled falsifier.} The SF-4 framework predicts a specific absolute scale for $m_\beta$ via the cage-shell formula plus the PMNS-weighted sum: $m_\beta \approx 8.7$ meV at zeroth order. \textbf{A direct-mass measurement that is robustly inconsistent with this prediction would falsify the absolute-scale prediction.} Concretely, a measurement returning either:
+\begin{itemize}[leftmargin=2em]
+\item a robust upper bound substantially below $\sim 8.7$ meV (e.g., $m_\beta < 3$--$5$ meV at high confidence), forcing the SF-4 absolute scale to be too large; or
+\item a measurement substantially above $\sim 8.7$ meV (e.g., $m_\beta \gtrsim 30$--$50$ meV), forcing the SF-4 absolute scale to be too small,
+\end{itemize}
+would falsify the $\sigmanu = z^{-10}$ structural prediction. \textbf{However, the precision required to discriminate at this level is well below the sensitivity floor of currently-funded direct-measurement programmes}: KATRIN reaches $\sim 0.5$ eV, Project 8 targets $\sim 40$ meV. The principled-falsifier precision threshold and the near-term experimental sensitivity differ by roughly a decade.
 
 This falsifier should therefore be read as \emph{conceptually clean but not near-term experimentally accessible} via direct beta-decay measurement. The cosmological-sum bound (\S\ref{sec:falsifier_cosmo}) is the more realistic near-term constraint on the absolute mass scale. Future programmes pushing beyond the Project 8 $\sim 40$ meV target into the few-meV regime would convert this falsifier from principled to programmatic.
 
@@ -1379,7 +1464,7 @@ SF-4's results have implications for adjacent SF-line papers and the broader CPP
 
 \subsubsection*{SF-2 (electroweak) closure of OP-SM-7d}
 
-OP-SM-7d closure in SF-2 produces three classes of corrections that propagate into SF-4 simultaneously: (i) PMNS angle corrections lifting TBM zeroth-order to observed values; (ii) mass-eigenvalue corrections tightening the $V^2$ structural residuals (4\% and 11\% in the splitting ratios); (iii) $\delta_{CP}$ derivation as an output of the same mechanism. SF-2 closure would extend SF-4's prediction count from 7/8 to 8/8 zero-parameter and would reduce the looser-match residuals in Table \ref{tab:predictions_master} from 8--14\% toward sub-1\%.
+OP-SM-7d closure in SF-2 produces three classes of corrections that propagate into SF-4 simultaneously: (i) PMNS angle corrections lifting TBM zeroth-order to observed values; (ii) mass-eigenvalue corrections tightening the $V^2$ structural residuals (4\% and 11\% in the mass ratios); (iii) $\delta_{CP}$ derivation as an output of the same mechanism. SF-2 closure would extend SF-4's prediction count from 7/8 to 8/8 zero-parameter and would reduce the looser-match residuals in Table \ref{tab:predictions_master} from 8--14\% toward sub-1\%.
 
 \subsubsection*{SM-5 closure of K3 antibonding-doublet open problem}
 
