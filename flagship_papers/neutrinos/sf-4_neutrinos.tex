@@ -3,6 +3,11 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 0.6 -- 9 May 2026 (Session 50 v0.6 incorporates ChatGPT
+%   review pass 1 feedback. 8 substantive corrections plus
+%   bibliography updates. Paper now at ~1340 lines source; PDF
+%   recompiled. Ready for AI review pass 2.)
+%
 % Version 0.5 -- 9 May 2026 (Session 49 v0.5 integration polish:
 %   stale v0.x version-number references in body text removed
 %   throughout (abstract, §1.4, §4.3 framing, §4.3 Table 4.1,
@@ -41,6 +46,144 @@
 %   per the §11 drafting plan in sf-4_outline.md)
 %
 % CHANGELOG:
+%   v0.6 (9 May 2026 Session 50) -- ChatGPT review pass 1 feedback
+%     incorporated. 8 specific corrections plus bibliography
+%     updates and "derives" audit:
+%
+%     1. ABSTRACT (§0): full rewrite incorporating multiple fixes:
+%        - "derives seven of eight parameters" → "proposes a
+%          structurally constrained leading-order derivation of
+%          seven parameters" (softening overclaiming until
+%          OPEN-FP-SF-4-1 is closed)
+%        - "mass-squared splitting predictions m_2/m_1=9.00 and
+%          m_3/m_1=56.25" → "mass ratio predictions" (these are
+%          mass ratios, not mass-squared splittings); added explicit
+%          mass-squared ratio values (81 and 3164) for clarity
+%        - JUNO falsifier: "JUNO 2026+ resolution" → "JUNO mass-
+%          ordering measurement (multi-year program; ~3sigma in ~6
+%          years)"
+%        - Cosmological bound: noted "one stringent combination"
+%          framing with $\sim 86$ meV alternative analyses
+%        - Direct-mass falsifier: explicit "principled... but
+%          exceeds near-term experimental sensitivity" framing
+%        - "SF-4 introduces no new ansatz beyond SM-5's" →
+%          "SF-4 introduces no new fitted parameter beyond inherited
+%          single calibration M_0, but the cage-shell coupling
+%          assignment to specific K3 eigenmodes is a new structural-
+%          coupling claim whose theorem-level proof remains
+%          OPEN-FP-SF-4-2"
+%
+%     2. §1.5 FOUNDER'S VOICE: softened "This paper derives seven of
+%        those eight numbers" to "proposes a structurally constrained
+%        leading-order derivation of seven of those eight numbers";
+%        "JUNO experiment will deliver in 2026+" softened to
+%        multi-year program; mass-ordering identification fixed
+%        ("electron neutrino" → "muon neutrino" for the m_2 closest-
+%        in-mass case)
+%
+%     3. NEW §1.6 CLAIM STATUS LEDGER: 12-row table (Table
+%        tab:claim_ledger) with explicit closure status for each
+%        substantive claim. Categories: THEOREM (inherited or
+%        computed); INHERITED TAXONOMY (not independent SF-4
+%        theorem); STRUCTURAL ARGUMENT (open theorem closure);
+%        PARTIAL CLOSURE (numerical exact, theorem v1.0+);
+%        INHERITED CONDITIONAL THEOREM; INHERITED ANSATZ
+%        (open problem); FORCED CONSEQUENCE; REGISTER-AS-OPEN;
+%        NOT PREDICTED; NOT SPECIFIED. Caption explicitly states
+%        the framework's epistemic posture: "no new fitted
+%        parameter; one new structural-coupling claim at PARTIAL
+%        CLOSURE level".
+%
+%     4. §1.3 + §3.1: "exponent alpha=2 derived from the bound/
+%        unbound boundary" softened to "argued from the bound/
+%        unbound boundary (structural argument; theorem-level
+%        closure registered as part of OPEN-FP-SF-4-1)"
+%
+%     5. §2.5 INHERITANCE TABLE caption: "no new ansatz" replaced
+%        with "no new fitted parameter beyond M_0; new structural-
+%        coupling claim is OPEN-FP-SF-4-2"
+%
+%     6. §3.4 SPLITTINGS: NuFIT 5.3 numbers (Δm²_21=7.39e-5,
+%        |Δm²_32|=2.52e-3) updated to NuFIT 6.0 (7.49e-5, 2.513e-3);
+%        added explicit clarification paragraph distinguishing mass-
+%        ratio comparison (4%/11% match) from mass-squared splitting
+%        ratio (Δm²_31/Δm²_21 = 39.5 predicted vs 34.1 empirical,
+%        13% match)
+%
+%     7. §4 INTRO: "This section derives σ_ν=z^{-10}" → "proposes
+%        a structurally constrained leading-order derivation of
+%        σ_ν=z^{-10}... Theorem-level rigor from CPP axioms A1-A11
+%        is registered as OPEN-FP-SF-4-1 and is post-v1.0 work"
+%
+%     8. §4.2: "§4.3 derives the per-channel suppression" softened
+%        to "§4.3 proposes the per-channel suppression strength via
+%        three convergent physical pictures"
+%
+%     9. §4.4 TABLE 4.2: removed "(= m_νe in NH)" identification
+%        (m_νe usually means m_β in beta-decay, not m_1);
+%        analogous "(= m_νμ)" and "(= m_ντ)" removed
+%
+%     10. §5 INTRO + §5.7 + §5.8: three instances of "no new ansatz
+%         beyond SM-5's" replaced with "no new fitted parameter
+%         beyond inherited single calibration M_0; new structural-
+%         coupling claim is OPEN-FP-SF-4-2"
+%
+%     11. §6.1 MASTER PREDICTIONS TABLE:
+%         - "(JUNO 2026+)" → "(JUNO multi-year program)"
+%         - NuFIT 5.3 → NuFIT 6.0; updated angle values:
+%           sin²θ12 = 0.307±0.013; sin²θ23 = 0.572 (NO, octant
+%           ambiguity); sin²θ13 = 0.02203±0.00056
+%         - Caption: added "one stringent combination" framing for
+%           DESI/Planck bound; added "Planck PR4 + supernovae" $\sim
+%           86$ meV alternative reference
+%
+%     12. §6.2 + §8.2: sin²θ13=0.0224 → 0.02203 (NuFIT 6.0)
+%
+%     13. §6.3 A_4 COMPARISON: "additionally derives the absolute
+%         mass scale" softened to "additionally proposes a
+%         structurally constrained derivation of the absolute mass
+%         scale"
+%
+%     14. §9.1.1 JUNO FALSIFIER: full rewrite. Title: "Inverted
+%         hierarchy (JUNO 2026+)" → "Inverted hierarchy (JUNO
+%         multi-year program)". Body: removed crisp 2026-2028
+%         resolution claim; added multi-year program / ~6 years
+%         to ~3sigma framing; added current global-fit position
+%         note (NuFIT 6.0 NO/IO equipoise without SK-atm); added
+%         DUNE/Hyper-K reinforcement note
+%
+%     15. §9.1.2 DIRECT-MASS FALSIFIER: full rewrite. Title:
+%         "Direct mass measurement above ~5 meV" → "Principled
+%         direct-mass falsifier (longer-timescale)". Body:
+%         distinguishes m_β (beta-decay observable) from m_ν1
+%         (lightest mass eigenstate); predicted m_β ≈ 8.7 meV with
+%         NH+SF-4 values; explicit "5 meV principled threshold is
+%         well below the sensitivity floor of currently-funded
+%         direct-measurement programmes" with KATRIN ~0.5 eV /
+%         Project 8 ~40 meV current sensitivity stated; framed as
+%         "conceptually clean but not near-term experimentally
+%         accessible"
+%
+%     16. §9.1.3 COSMOLOGICAL BOUND: full rewrite. Added "Dataset-
+%         dependence of the cosmological bound" subsection
+%         qualifying the 72 meV bound as "one stringent combination"
+%         and noting Planck PR4 + supernovae alternative analyses
+%         relax to ~86 meV. SF-4 prediction Σm_ν=64.9 meV stated as
+%         consistent with all current cosmological bounds across
+%         dataset-combination range. Falsifier strength reframed
+%         as scaling with dataset-independence of any future
+%         tightening
+%
+%     17. BIBLIOGRAPHY: \bibitem{nufit53} replaced with
+%         \bibitem{nufit60} (Esteban et al. arXiv:2410.05380, Oct
+%         2024 - NuFit-6.0); added \bibitem{naredo_tuero_2024} for
+%         Planck-PR4 supernova-relaxation analysis (arXiv:2407.07595
+%         + arXiv:2406.14554)
+%
+%     Net: ~70 lines new content (claim ledger ~50 + falsifier
+%     rewrites ~30 - 10 net of softenings); paper now at 1340 lines
+%     source. PDF recompilation succeeds.
+%
 %   v0.5 (9 May 2026 Session 49) -- integration polish pass.
 %     Substantive content of all 12 sections unchanged from v0.4;
 %     this pass cleans stale-version-number references and verifies
@@ -243,7 +386,7 @@
 \title{\textbf{SF-4: Neutrino Sector Unification from 600-Cell Geometry}\\[6pt]
 {\large Eight Parameters from One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\normalsize Version 0.5 --- 9 May 2026 (integration polish pass: stale version-number references in body text removed; cross-section consistency verified; equation-reference and theorem-reference checks complete; v1.0 SHIP after AI review passes per SS-9 methodology)}}
+{\normalsize Version 0.6 --- 9 May 2026 (incorporates ChatGPT review pass 1 feedback: claim-status ledger added as new §1.6; mass-ratio vs mass-squared-splitting language clarified; $m_{\nu_e} = m_1$ identification removed; direct-mass falsifier reframed as principled-not-near-programmatic; NuFIT references updated 5.3 $\to$ 6.0; JUNO timing softened to multi-year program; cosmological bound qualified with Planck-PR4 $\sim 86$ meV alternative; ``no new ansatz'' replaced with ``no new fitted parameter; new structural-coupling claim'' throughout; ``derives'' overclaiming softened in abstract, §1, §3, §4, §6 per reviewer protocol)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -258,17 +401,17 @@
 \begin{abstract}
 \noindent\textbf{Paper type:} Flagship derivation paper. Establishes a parameter-economic derivation of the neutrino sector's eight observable quantities from the 600-cell substrate machinery developed in the Standard Model Emergence (SM) and Strong Sector (SS) series.
 
-The Standard Model has no internal explanation for neutrino masses, mixing angles, or hierarchy ordering --- the eight observable parameters of the neutrino sector are empirical inputs. SF-4 derives seven of these eight parameters at zero free parameters from a single calibration ($m_e$, the electron mass) plus the 600-cell substrate geometry and Conscious Point Physics (CPP) primitives. The neutrino mass formula
+The Standard Model has no internal explanation for neutrino masses, mixing angles, or hierarchy ordering --- the eight observable parameters of the neutrino sector are empirical inputs. SF-4 proposes a structurally constrained leading-order derivation of seven of these eight parameters at zero free parameters from a single calibration ($m_e$, the electron mass) plus the 600-cell substrate geometry and Conscious Point Physics (CPP) primitives. The neutrino mass formula
 \[
 m_{\nu_i} = \Mzero \cdot V_{\nu_i}^{2} \cdot \sigmanu, \qquad
 \Mzero = m_e \cdot z/\phig \approx 3.79 \text{ MeV}, \qquad
 \sigmanu = z^{-10} \approx 1.62 \times 10^{-11},
 \]
-uses the same mass quantum $\Mzero$ and 600-cell coordination $z = 12$ that anchor the quark and charged-lepton sectors in SM-7~\cite{abshier_sm7}, SM-8~\cite{abshier_sm8}, SM-9~\cite{abshier_sm9}. The cage-shell vertex counts $V \in \{4, 12, 30\}$ are forced by 600-cell topology (the bonded shells of any 600-cell vertex). The suppression factor $\sigmanu = z^{-10}$ derives from substrate walk-dimension primitives for an unbound three-dimensional orbital ZBW mode and matches the empirical absolute mass scale to within 2\%. The mass-squared splitting predictions $m_2/m_1 = 9.00$ and $m_3/m_1 = 56.25$ match observation to 4\% and 11\% with no fitted parameters. The PMNS mixing matrix at zeroth order is exactly the tribimaximal matrix $U_\TBM$, inherited from the SM-5 K3 spectral derivation~\cite{abshier_sm5}; the cage-shell mass mechanism preserves K3-eigenstate alignment by construction once the mass-basis reading is adopted. Normal mass hierarchy is forced by the cage-shell assignment $(\nu_1 \to V=4, \nu_2 \to V=12, \nu_3 \to V=30)$. The CP-violating phase $\delta_{CP}$ is registered as open per OP-SM-7d and deferred to the electroweak-sector flagship (SF-2).
+uses the same mass quantum $\Mzero$ and 600-cell coordination $z = 12$ that anchor the quark and charged-lepton sectors in SM-7~\cite{abshier_sm7}, SM-8~\cite{abshier_sm8}, SM-9~\cite{abshier_sm9}. The cage-shell vertex counts $V \in \{4, 12, 30\}$ are forced by 600-cell topology (the bonded shells of any 600-cell vertex). The suppression factor $\sigmanu = z^{-10}$ is proposed as a structurally constrained leading-order result from substrate walk-dimension primitives for an unbound three-dimensional orbital ZBW mode and matches the empirical absolute mass scale to within 2\%. The mass ratio predictions $m_2/m_1 = 9.00$ and $m_3/m_1 = 56.25$ (equivalently, mass-squared ratios $m_2^2/m_1^2 = 81$ and $m_3^2/m_1^2 \approx 3164$) match observation to 4\% and 11\% on the mass-ratio comparison, with no fitted parameters. The PMNS mixing matrix at zeroth order is exactly the tribimaximal matrix $U_\TBM$, inherited from the SM-5 K3 spectral derivation~\cite{abshier_sm5}; the cage-shell mass mechanism preserves K3-eigenstate alignment by construction once the mass-basis reading is adopted. Normal mass hierarchy is forced by the cage-shell assignment $(\nu_1 \to V=4, \nu_2 \to V=12, \nu_3 \to V=30)$. The CP-violating phase $\delta_{CP}$ is registered as open per OP-SM-7d and deferred to the electroweak-sector flagship (SF-2).
 
-The paper makes specific zero-parameter quantitative predictions and identifies clean falsifiers: JUNO 2026+ resolution of mass ordering would falsify the cage-shell assignment if inverted hierarchy is confirmed; precision direct mass measurement above $\sim 5$ meV (KATRIN++, Project 8) or cosmological tightening to $\Sigma m_\nu < 50$ meV (DESI/CMB-S4) would falsify the $\sigmanu = z^{-10}$ prediction; PMNS deviation from TBM at zeroth order (after SM-5's higher-order Capotauro corrections) would falsify the K3-eigenmode-identification ansatz that SM-5 introduces and SF-4 inherits.
+The paper makes specific zero-parameter quantitative predictions and identifies five clean falsifiers: the JUNO mass-ordering measurement (multi-year program; expected $\sim 3\sigma$ ordering sensitivity within roughly 6 years of full operation) would falsify the cage-shell assignment if inverted hierarchy is confirmed; cosmological tightening to $\Sigma m_\nu < 50$ meV (DESI/CMB-S4) would falsify the $\sigmanu = z^{-10}$ prediction (current DESI/Planck bound of $\Sigma m_\nu \le 72$ meV is one stringent combination, with alternative analyses giving up to $\sim 86$ meV); the principled direct-mass-measurement falsifier at $m_{\nu_1} > 5$ meV is conceptually clean but exceeds near-term experimental sensitivity (Project 8 targets $m_\beta \sim 40$ meV); PMNS deviation from TBM at zeroth order (after SM-5's higher-order Capotauro corrections) would falsify the K3-eigenmode-identification ansatz that SM-5 introduces and SF-4 inherits; substrate-mechanism deviation from $\sigmanu = z^{-2 \deff}$ form would falsify the walk-dimension framework.
 
-The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) ship at PARTIAL CLOSURE: structural-physical pictures established with quantitative numerical predictions in hand; theorem-level rigor pending closure of the open theorem-level work catalogued in \S\ref{sec:openwork}.
+The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) ship at PARTIAL CLOSURE: structural-physical pictures established with quantitative numerical predictions in hand; theorem-level rigor pending closure of the open theorem-level work catalogued in \S\ref{sec:openwork}. SF-4 introduces no new fitted parameter beyond the inherited single calibration $\Mzero$, but the cage-shell coupling assignment to specific K3 eigenmodes (Theorem~\ref{thm:k3consistency} clause (iii)) is a new structural-coupling claim whose theorem-level proof remains OPEN-FP-SF-4-2 and is tied to SM-5's existing open problem on the K3 antibonding-doublet-degeneracy lifting.
 \end{abstract}
 
 \medskip\noindent
@@ -276,7 +419,7 @@ The substantive derivations of the suppression mechanism (\S\ref{sec:suppression
 
 \bigskip\noindent
 \textbf{Plain Language Summary:}
-The Standard Model needs eight separate empirical numbers to describe neutrinos: three masses, three mixing angles, a CP-violating phase, and the ordering of the masses. None of these comes out of the SM equations --- they are all measured and inserted by hand. This paper derives seven of those eight numbers from a single measured input (the electron mass) plus the geometry of a four-dimensional shape called the 600-cell. The mass of each neutrino is given by a simple formula: a basic mass scale ($\approx 3.79$ MeV, computed from the electron mass and the 600-cell's connectivity number 12), times the square of an integer counting how many vertices a particular geometric shape has, times a small suppression number that comes from how the neutrino propagates through the substrate. The integers (4, 12, 30) are forced by the geometry --- they are the numbers of vertices in three specific shapes that naturally appear when you measure distances on the 600-cell from any vertex. The suppression number works out to $12^{-10}$, which agrees with observation to about 2\%. The mixing angles come exactly from a graph theorem about the triangle $K_3$, established in an earlier paper (SM-5). The mass ordering --- whether the lightest neutrino is closest in mass to the electron neutrino or to the tau neutrino --- is forced to be the ``normal'' ordering by the cage-shell assignment, providing a clean test the JUNO experiment will deliver in 2026+. The eighth parameter, the CP phase, is left as an open problem; its derivation belongs in a different paper covering the electroweak sector. The paper makes its predictions and falsifiers explicit so that future precision measurements can confirm or kill the framework cleanly.
+The Standard Model needs eight separate empirical numbers to describe neutrinos: three masses, three mixing angles, a CP-violating phase, and the ordering of the masses. None of these comes out of the SM equations --- they are all measured and inserted by hand. This paper proposes a structurally constrained leading-order derivation of seven of those eight numbers from a single measured input (the electron mass) plus the geometry of a four-dimensional shape called the 600-cell. The mass of each neutrino is given by a simple formula: a basic mass scale ($\approx 3.79$ MeV, computed from the electron mass and the 600-cell's connectivity number 12), times the square of an integer counting how many vertices a particular geometric shape has, times a small suppression number arising from how the neutrino propagates through the substrate. The integers (4, 12, 30) are forced by the geometry --- they are the numbers of vertices in three specific shapes that naturally appear when you measure distances on the 600-cell from any vertex. The suppression number works out to $12^{-10}$, which agrees with observation to about 2\%. The mixing angles come exactly from a graph theorem about the triangle $K_3$, established in an earlier paper (SM-5). The mass ordering --- whether the lightest neutrino is closest in mass to the muon neutrino or the tau neutrino --- is forced to be the ``normal'' ordering by the cage-shell assignment, providing a clean test the JUNO experiment will deliver after several years of data (multi-year program targeting roughly $3\sigma$ sensitivity within $\sim 6$ years of full operation). The eighth parameter, the CP phase, is left as an open problem; its derivation belongs in a different paper covering the electroweak sector. Substantive theorem-level rigor for the suppression factor and the cage-shell-to-K3-eigenmode coupling assignment remains open work catalogued in the closing sections; the paper is explicit about where it ships at theorem level versus partial closure. The paper makes its predictions and falsifiers explicit so that future precision measurements can confirm or kill the framework cleanly.
 
 \bigskip
 \raggedright
@@ -318,7 +461,7 @@ The strict-C posture has consequences for what this paper claims and does not cl
 The paper delivers, at the structural-derivation level with explicit theorem-level open work:
 
 \begin{enumerate}[leftmargin=2em]
-\item A neutrino mass formula $m_{\nu_i} = \Mzero \cdot V_{\nu_i}^{2} \cdot \sigmanu$ with the same $\Mzero = m_e \cdot z/\phig$ as the quark and charged-lepton sectors, the cage-shell exponent $\alpha = 2$ derived from the bound/unbound boundary, and the cage-shell vertex assignment $(V_1, V_2, V_3) = (4, 12, 30)$ forced by 600-cell topology with $V=20$ excluded by SM-1 particle-type taxonomy.
+\item A neutrino mass formula $m_{\nu_i} = \Mzero \cdot V_{\nu_i}^{2} \cdot \sigmanu$ with the same $\Mzero = m_e \cdot z/\phig$ as the quark and charged-lepton sectors, the cage-shell exponent $\alpha = 2$ argued from the bound/unbound boundary (structural argument; theorem-level closure registered as part of OPEN-FP-SF-4-1), and the cage-shell vertex assignment $(V_1, V_2, V_3) = (4, 12, 30)$ forced by 600-cell topology with $V=20$ excluded by SM-1 particle-type taxonomy.
 \item A walk-dimension framework for the suppression factor $\sigmanu$, with $\deff = 5$ from integer channel enumeration (3 spatial + 1 ZBW phase + 1 orientation) and per-channel suppression $z^{-2}$ from three independent CPP physical pictures, producing $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$ at 2\% empirical match to the absolute neutrino mass scale.
 \item A K3-Cage-Shell Consistency Theorem at the SM-5-inheritance level: the mass-basis reading of the cage-shell assignment produces a $\mu\tau$-symmetric mass operator in flavor basis whose eigenvectors coincide with the TBM directions exactly, and the cage-shell vertex assignment to specific K3 eigenmodes is forced by 600-cell geometry plus the SM-5-ansatzed TBM-direction selection (Route C structural closure).
 \item A predictions table covering all eight neutrino parameters, with seven at zero free parameters and the eighth ($\delta_{CP}$) deferred to SF-2 per route (ii). Five clean falsifiers identified.
@@ -341,6 +484,49 @@ To be honest about scope:
 \label{sec:intro_sfline}
 
 SF-4 is the active heavy-lift paper in the SF-line, the seven-paper flagship architecture covering all 17 Standard Model particles plus the W$^0$ CPP-novel prediction \cite{flagship_papers_readme}. SF-1 (charged leptons), SF-2 (electroweak cage bosons including W$^0$), SF-3 (quarks) are primarily reframings of established corpus; SF-4 (this paper) is the only SF-line paper requiring substantive new derivation work; SF-5 (strong sector) and SF-6 (electromagnetism: classical/SR/QED unified) are corpus-rich syntheses; SF-7 (grand unification) synthesizes all six predecessors. The strict-C posture and inheritance discipline established here for SF-4 propagate through the rest of the SF-line.
+
+\subsection{Claim status ledger}
+\label{sec:claim_ledger}
+
+To prevent overclaiming and to make the paper's epistemic accounting visible at a single glance, Table~\ref{tab:claim_ledger} summarizes each substantive claim of the SF-4 derivation chain with its current closure status. The ledger explicitly distinguishes (a) results that close at theorem level from CPP primitives or direct topological computation, (b) results inherited as theorem-level statements from prior corpus papers, (c) structural arguments that close numerically but await theorem-level rigor, (d) ansatz-level claims inherited from prior corpus papers, and (e) registered open problems.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{p{6.5cm}p{8.5cm}}
+\toprule
+\textbf{Claim} & \textbf{Closure status} \\
+\midrule
+$\Mzero = m_e \cdot z/\phig$ as substrate-derived mass scale & THEOREM (inherited from SM-7--SM-9 \cite{abshier_sm7,abshier_sm8,abshier_sm9}) \\
+\addlinespace
+$z = 12$ as 600-cell coordination number & THEOREM (inherited from SS-1 \cite{abshier_ss1}, SM-1 \cite{abshier_sm1}) \\
+\addlinespace
+Available cage-shell vertex counts $V \in \{4, 12, 30\}$ from any 600-cell reference vertex & THEOREM/COMPUTATION (numerically verified shell sequence \S\ref{sec:route_C}) \\
+\addlinespace
+$V = 20$ exclusion for the lepton-flavor neutrino sector & INHERITED TAXONOMY (from SM-1 \cite{abshier_sm1} particle-type assignment), \emph{not} an independent SF-4 theorem \\
+\addlinespace
+$V^{7/3} \to V^2$ at the bound/unbound boundary (exponent $\alpha = 2$) & STRUCTURAL ARGUMENT (\S\ref{sec:alpha_derivation}); theorem-level closure registered as part of OPEN-FP-SF-4-1 \\
+\addlinespace
+$\sigmanu = z^{-10}$ from walk-dimension primitives & PARTIAL CLOSURE (three convergent CPP physical pictures, integer channel enumeration, 2\% empirical match; theorem-level rigor v1.0+ via OPEN-FP-SF-4-1 Picture A formalization) \\
+\addlinespace
+PMNS = $U_\TBM$ at zeroth order & INHERITED CONDITIONAL THEOREM (SM-5 \cite{abshier_sm5} K3 spectral derivation) \\
+\addlinespace
+TBM-direction selection in K3 antibonding doublet (which orthonormal pair within the 2D degenerate subspace) & INHERITED ANSATZ (SM-5 explicit open problem on lifting K3 antibonding-doublet degeneracy) \\
+\addlinespace
+$\nu_1 \leftrightarrow V=4$, $\nu_2 \leftrightarrow V=12$, $\nu_3 \leftrightarrow V=30$ cage-shell-to-K3-eigenmode coupling & PARTIAL CLOSURE (numerical zeroth-order consistency exact via Theorem~\ref{thm:tbm_recovery}; structural closure at SM-5-inheritance level via Route C, \S\ref{sec:route_C}); theorem-level vertex-by-vertex coupling tied to SM-5 open problem; SF-4 introduces no new fitted parameter but registers this as new structural-coupling claim OPEN-FP-SF-4-2 \\
+\addlinespace
+Normal mass hierarchy ordering & FORCED CONSEQUENCE of cage-shell assignment $V_1 < V_2 < V_3$ (\S\ref{sec:cageassignment}) \\
+\addlinespace
+Higher-order PMNS corrections (deviations from TBM at $\sim 10\%$) & REGISTER-AS-OPEN (inherited from SM-5 \cite{abshier_sm5} OP-SM-7d Capotauro mechanism; deferred to SF-2 EW-flagship) \\
+\addlinespace
+$\delta_{CP}$ derivation & NOT PREDICTED in v1.0 (route ii deferral to SF-2 per OP-SM-7d, with four candidate handles enumerated for forward reference, \S\ref{sec:deltaCP}) \\
+\addlinespace
+Majorana versus Dirac character & NOT SPECIFIED by the cage-shell mechanism in v1.0; registered as open \\
+\bottomrule
+\end{tabular}
+\caption{SF-4 v1.0 claim-status ledger. Each substantive claim of the derivation chain is shown with its closure status (THEOREM, INHERITED, PARTIAL CLOSURE, INHERITED ANSATZ, REGISTER-AS-OPEN, NOT PREDICTED). The ledger makes the framework's epistemic posture visible at a glance: SF-4 introduces no new fitted parameter beyond the inherited single calibration $\Mzero$, but adds one new structural-coupling claim (the cage-shell-to-K3-eigenmode assignment) at PARTIAL CLOSURE level whose theorem-level closure is OPEN-FP-SF-4-2.}
+\label{tab:claim_ledger}
+\end{table}
 
 % ===================================================================
 \section{The SM-5 K3-Eigenmode Foundation}
@@ -447,7 +633,7 @@ Higher-order PMNS corrections (Capotauro mechanism) & OP-SM-7d & REGISTER-AS-OPE
 $\delta_{CP}$ derivation & OP-SM-7d (EW sector) & REGISTER-AS-OPEN (route ii) \\
 \bottomrule
 \end{tabular}
-\caption{What SF-4 inherits from the SM and SS series corpus, classified by inheritance level. SF-4 introduces no new ansatz beyond what SM-5 and OP-SM-7d already register.}
+\caption{What SF-4 inherits from the SM and SS series corpus, classified by inheritance level. SF-4 introduces no new fitted parameter beyond the single inherited calibration $\Mzero = m_e \cdot z/\phig$; the new structural-coupling claim of cage-shell-to-K3-eigenmode assignment is registered as OPEN-FP-SF-4-2 (\S\ref{sec:claim_ledger}, Table~\ref{tab:claim_ledger}).}
 \label{tab:inheritance}
 \end{table}
 
@@ -464,7 +650,7 @@ The Candidate C neutrino mass formula, selected at Session 39 mechanism review \
 \boxed{m_{\nu_i} = \Mzero \cdot V_{\nu_i}^{2} \cdot \sigmanu}
 \label{eq:massformula}
 \end{equation}
-with mass quantum $\Mzero \approx 3.79$ MeV given by \eqref{eq:M0}, cage-shell vertex count $V_{\nu_i}$ specified in \S\ref{sec:cageassignment}, exponent $\alpha = 2$ derived from the bound/unbound boundary in \S\ref{sec:alpha_derivation}, and suppression factor $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$ derived in \S\ref{sec:suppression}.
+with mass quantum $\Mzero \approx 3.79$ MeV given by \eqref{eq:M0}, cage-shell vertex count $V_{\nu_i}$ specified in \S\ref{sec:cageassignment}, exponent $\alpha = 2$ argued from the bound/unbound boundary in \S\ref{sec:alpha_derivation} (structural argument; theorem-level closure part of OPEN-FP-SF-4-1), and suppression factor $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$ proposed in \S\ref{sec:suppression} as a structurally constrained leading-order result.
 
 The formula is structurally continuous with the bound-mode quark/lepton machinery: same $\Mzero$, same 600-cell vertex-count framework, same dimensionless geometry-only structure. The two unbound-regime modifications are: (1) exponent $\alpha = 7/3 \to 2$ (linear-cage-dimension factor drops out), and (2) introduction of the substrate-derived $\sigmanu$ replacing the per-mode $\mu_q$ multipliers used in the quark sector \cite{abshier_sm9}.
 
@@ -507,7 +693,9 @@ With $\alpha = 2$ and the assignment \eqref{eq:vassignment}, the mass-squared ra
 \label{eq:massratios}
 \end{equation}
 
-The observed mass-squared splittings $\Delta m^2_{21} = 7.39 \times 10^{-5}$ eV$^2$ and $|\Delta m^2_{32}| = 2.52 \times 10^{-3}$ eV$^2$ (NuFIT 5.3) imply, in the absence of independent absolute-mass information, a self-consistent fit at $m_{\nu_1} \approx 0.96$ meV with predicted ratio $m_{\nu_\mu}/m_{\nu_e} = 8.66$ from the splittings versus 9.00 from \eqref{eq:massratios} (4\% match) and predicted $m_{\nu_\tau}/m_{\nu_e} = 50.9$ from the splittings versus 56.25 from \eqref{eq:massratios} (11\% match). The structural residuals 4\% and 11\% reflect the same $V^2$ approximation and recur as the same residual pattern in the $V^2$ scaling assumption.
+The observed mass-squared splittings $\Delta m^2_{21} = 7.49 \times 10^{-5}$ eV$^2$ and $|\Delta m^2_{32}| = 2.513 \times 10^{-3}$ eV$^2$ (NuFIT 6.0 \cite{nufit60}) imply, in the absence of independent absolute-mass information, a self-consistent fit at $m_{\nu_1} \approx 0.96$ meV with empirical mass ratios $m_{\nu_2}/m_{\nu_1} = 8.66$ from the splittings versus 9.00 from \eqref{eq:massratios} (4\% match) and $m_{\nu_3}/m_{\nu_1} = 50.9$ from the splittings versus 56.25 from \eqref{eq:massratios} (11\% match). The structural residuals 4\% and 11\% reflect the leading-order $V^2$ approximation; they recur as the same residual pattern in the absolute mass predictions (\S\ref{sec:suppression_combined}).
+
+The comparison in \eqref{eq:massratios} is at the \emph{mass ratio} level, not the mass-squared splitting level. The cage-shell formula \eqref{eq:massformula} predicts mass eigenvalues directly via $V^2$ scaling; the corresponding mass-squared ratios are $m_2^2/m_1^2 = 81$ and $m_3^2/m_1^2 \approx 3164$, and the mass-squared splitting ratio $\Delta m^2_{31}/\Delta m^2_{21} = (m_3^2 - m_1^2)/(m_2^2 - m_1^2) \approx 39.5$ (predicted) versus $\sim 34.1$ (empirical from NuFIT 6.0) at the 13\% match level. The mass-ratio comparison in \eqref{eq:massratios} is the cleanest direct test of the $V^2$ scaling structure; the mass-squared splitting ratio is the historically standard observable but reflects the same underlying structural prediction.
 
 The structural agreement at zero free parameters is the load-bearing signal; the residuals are the framework's intrinsic precision at the leading-order $V^2$ approximation. Higher-order corrections via OP-SM-7d would tighten these.
 
@@ -516,7 +704,7 @@ The structural agreement at zero free parameters is the load-bearing signal; the
 \label{sec:suppression}
 % ===================================================================
 
-The cage-shell mass formula \eqref{eq:massformula} is anchored at $\Mzero \approx 3.79$ MeV, which is twelve orders of magnitude above the empirical neutrino mass scale of $\sim 1$--$10^2$ meV. The suppression factor $\sigmanu$ closes that gap. This section derives $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$ from substrate walk-dimension primitives via integer channel enumeration ($\deff = 5$) and per-channel suppression $1/z^2$ established through three independent and convergent CPP physical pictures.
+The cage-shell mass formula \eqref{eq:massformula} is anchored at $\Mzero \approx 3.79$ MeV, which is twelve orders of magnitude above the empirical neutrino mass scale of $\sim 1$--$10^2$ meV. The suppression factor $\sigmanu$ closes that gap. This section proposes a structurally constrained leading-order derivation of $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$ from substrate walk-dimension primitives via integer channel enumeration ($\deff = 5$) and per-channel suppression $1/z^2$ established through three independent and convergent CPP physical pictures. Theorem-level rigor from CPP axioms A1--A11 is registered as OPEN-FP-SF-4-1 and is post-v1.0 work.
 
 The headline result, stated in advance:
 \begin{equation}
@@ -546,7 +734,7 @@ The walk-dimension framework formalizes the substrate-coupling structure that pr
 
 \paragraph{Bound versus unbound boundary.} For \emph{bound modes} (charged leptons, quarks), the mode sits in a cage of CPs that pins its state. The cage-resonance condition locks the ZBW phase, the cage symmetry locks orbital orientation, and the central CP locks spatial position. None of the channels samples the substrate freely --- all are substrate-locked. Therefore $\deff = 0$ and $\sigmanu = 1$ for bound modes, recovering the bound-mode mass formula $m = \Mzero \cdot V^{7/3}$ of SM-9 \cite{abshier_sm9} without additional suppression.
 
-For \emph{unbound modes} (neutrinos), no central CP anchor exists and no rigid cage forms. Each channel samples the substrate freely per absolute moment. The walk dimension $\deff$ is the count of these free channels. \S\ref{sec:channels} enumerates them; \S\ref{sec:three_pictures} derives the per-channel suppression strength.
+For \emph{unbound modes} (neutrinos), no central CP anchor exists and no rigid cage forms. Each channel samples the substrate freely per absolute moment. The walk dimension $\deff$ is the count of these free channels. \S\ref{sec:channels} enumerates them; \S\ref{sec:three_pictures} proposes the per-channel suppression strength via three convergent physical pictures.
 
 \subsection{Channel enumeration for an unbound 3D orbital ZBW mode}
 \label{sec:channels}
@@ -683,9 +871,9 @@ matching the boxed headline result \eqref{eq:sigmanu}. Substituted into the cage
 \textbf{Quantity} & \textbf{SF-4 prediction} & \textbf{Empirical / observational} & \textbf{Match} \\
 \midrule
 $\sigmanu$ & $1.62 \times 10^{-11}$ & $\sim 1.59 \times 10^{-11}$ (target) & within 2\% \\
-$m_{\nu_1}$ ($= m_{\nu_e}$ in NH) & 0.98 meV & $\le 5$ meV (cosmological + splittings) & within consistency window \\
-$m_{\nu_2}$ ($= m_{\nu_\mu}$) & 8.81 meV & $\sim 8.66$ meV (from $\Delta m^2_{21}$) & within 2\% \\
-$m_{\nu_3}$ ($= m_{\nu_\tau}$) & 55.1 meV & $\sim 50.9$ meV (from $\Delta m^2_{32}$) & within 8\% \\
+$m_{\nu_1}$ (lightest, NH) & 0.98 meV & $\le 5$ meV (cosmological + splittings) & within consistency window \\
+$m_{\nu_2}$ & 8.81 meV & $\sim 8.66$ meV (from $\Delta m^2_{21}$) & within 2\% \\
+$m_{\nu_3}$ & 55.1 meV & $\sim 50.9$ meV (from $\Delta m^2_{32}$) & within 8\% \\
 $\Sigma m_\nu$ & 64.9 meV & $\le 72$ meV (DESI/Planck combined) & within bound \\
 \bottomrule
 \end{tabular}
@@ -716,7 +904,7 @@ Theorem-level closure is post-v1.0 work. The SF-4 paper ships at PARTIAL-CLOSURE
 
 The cage-shell mass formula \eqref{eq:massformula} attaches three numerical mass values $\{16, 144, 900\} \cdot \Mzero \sigmanu$ to the three neutrino species via the cage-shell vertex assignment $V \in \{4, 12, 30\}$. SM-5 \cite{abshier_sm5} attaches three TBM mixing-amplitude eigenstates to the same three neutrino species via the K3 ZBW Hamiltonian eigenmode identification. Both must hold simultaneously: the SF-4 mass formula must produce mass eigenstates that align with SM-5's K3-eigenmode identification, otherwise the SM-5 PMNS theorem is silently broken.
 
-The K3-Cage-Shell Consistency Theorem establishes this alignment. The numerical part is exact at zeroth order, by construction once the mass-basis reading of \eqref{eq:vassignment} is adopted (\S\ref{sec:massbasis_clarification}); the structural-physical part closes at SM-5-inheritance level via direct 600-cell distance-shell computation (\S\ref{sec:route_C}); SF-4 introduces no new ansatz beyond SM-5's existing K3-eigenmode-identification ansatz.
+The K3-Cage-Shell Consistency Theorem establishes this alignment. The numerical part is exact at zeroth order, by construction once the mass-basis reading of \eqref{eq:vassignment} is adopted (\S\ref{sec:massbasis_clarification}); the structural-physical part closes at SM-5-inheritance level via direct 600-cell distance-shell computation (\S\ref{sec:route_C}). SF-4 introduces no new fitted parameter beyond the inherited single calibration $\Mzero$, but the assignment of specific cage-shell V values to specific K3 eigenmodes (Theorem~\ref{thm:k3consistency} clause (iii)) is itself a new structural-coupling claim whose theorem-level proof is registered as OPEN-FP-SF-4-2 and is tied to SM-5's existing open problem on the K3 antibonding-doublet-degeneracy lifting.
 
 \subsection{What the theorem must establish}
 
@@ -889,7 +1077,7 @@ Route C closes Theorem \ref{thm:k3consistency} at the following level:
 \item Antibonding modes split between V = 4 and V = 30 with $\nu_1 \leftrightarrow V = 4$ and $\nu_3 \leftrightarrow V = 30$ via the wavefunction-spread / $\mu\tau$-symmetry-character argument (\S\ref{sec:eigenmode_shell_coupling} Argument 3), \textbf{inheriting SM-5's existing open problem on the lifting of the K3 antibonding doublet degeneracy}.
 \end{itemize}
 
-The K3-Cage-Shell Consistency Theorem clause (iii) \textbf{introduces no new ansatz beyond SM-5's existing one}. Where SM-5 ansatzes the specific TBM directions in the K3 antibonding doublet (registered as SM-5's open problem), SF-4 inherits that selection and shows that the V$^2$ mass-operator directions coincide with TBM directions exactly. The cage-shell V values and their assignment to specific eigenmodes are then forced by 600-cell geometry plus the SM-5-ansatzed TBM directions.
+The K3-Cage-Shell Consistency Theorem clause (iii) \textbf{introduces no new fitted parameter beyond the inherited single calibration $\Mzero$}, but the specific cage-shell-to-K3-eigenmode coupling assignment is a new structural-coupling claim whose theorem-level proof is registered as OPEN-FP-SF-4-2 and is tied to SM-5's existing open problem on the K3 antibonding-doublet-degeneracy lifting. Where SM-5 ansatzes the specific TBM directions in the K3 antibonding doublet (registered as SM-5's open problem), SF-4 inherits that selection and shows that the V$^2$ mass-operator directions coincide with TBM directions exactly. The cage-shell V values and their assignment to specific eigenmodes are then forced by 600-cell geometry plus the SM-5-ansatzed TBM directions plus the symmetry-hierarchy and wavefunction-spread arguments of \S\ref{sec:eigenmode_shell_coupling}.
 
 \begin{remark}[Inheritance, not weakening]
 \label{rem:inheritance_not_weakening}
@@ -899,7 +1087,7 @@ SF-4 does not weaken SM-5's open-problem position; it precisely inherits it. Clo
 \subsection{Open theorem-level work (OPEN-FP-SF-4-2)}
 \label{sec:k3_openwork}
 
-The structural-physical picture established in \S\S\ref{sec:massbasis_clarification}--\ref{sec:route_c_closure} is at PARTIAL CLOSURE: numerical zeroth-order consistency exact (Theorems \ref{thm:tbm_recovery}, \ref{prop:mutau_symmetry}); structural closure of clause (iii) at SM-5-inheritance level via Route C; SF-4 introduces no new ansatz beyond SM-5's. Theorem-level closure of OPEN-FP-SF-4-2 at the vertex-by-vertex K3-coupling level is registered as v1.0+ work, with the following sub-goals:
+The structural-physical picture established in \S\S\ref{sec:massbasis_clarification}--\ref{sec:route_c_closure} is at PARTIAL CLOSURE: numerical zeroth-order consistency exact (Theorems \ref{thm:tbm_recovery}, \ref{prop:mutau_symmetry}); structural closure of clause (iii) at SM-5-inheritance level via Route C; SF-4 introduces no new fitted parameter, but the cage-shell-to-K3-eigenmode coupling assignment is a new structural-coupling claim. Theorem-level closure of OPEN-FP-SF-4-2 at the vertex-by-vertex K3-coupling level is registered as v1.0+ work, with the following sub-goals:
 
 \begin{enumerate}[leftmargin=2em]
 \item Vertex-by-vertex K3-coupling theorem: rigorously establish that the cage-shell coupling pattern is forced not just at the symmetry level (Argument 1, Argument 2) but at the explicit vertex-coupling level for each K3 eigenmode and each cage shell. This requires explicit 600-cell geometric calculation of the K3-eigenmode wavefunction overlap with each candidate shell.
@@ -936,18 +1124,18 @@ $m_{\nu_2} / m_{\nu_1}$ & 9.00 & 8.66 & \S\ref{sec:cageassignment} \\
 $m_{\nu_3} / m_{\nu_1}$ & 56.25 & 50.9 & \S\ref{sec:cageassignment} \\
 \midrule
 \multicolumn{4}{l}{\emph{PMNS mixing angles (zero parameters at zeroth order; OP-SM-7d for higher order)}} \\
-$\sin^2\theta_{12}$ & $1/3 = 0.333$ & $0.304 \pm 0.012$ (NuFIT) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
-$\sin^2\theta_{23}$ & $1/2 = 0.500$ & $0.570 \pm 0.018$ (NuFIT) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
-$\sin^2\theta_{13}$ & 0 (0$^{\mathrm{th}}$ order) & $0.0224 \pm 0.0007$ & \S\ref{sec:k3consistency} + \S\ref{sec:higher_order} (OP-SM-7d) \\
+$\sin^2\theta_{12}$ & $1/3 = 0.333$ & $0.307 \pm 0.013$ (NuFIT 6.0) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
+$\sin^2\theta_{23}$ & $1/2 = 0.500$ & $0.572^{+0.018}_{-0.022}$ (NuFIT 6.0, NO; octant ambiguity) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
+$\sin^2\theta_{13}$ & 0 (0$^{\mathrm{th}}$ order) & $0.02203 \pm 0.00056$ (NuFIT 6.0, NO) & \S\ref{sec:k3consistency} + \S\ref{sec:higher_order} (OP-SM-7d) \\
 \midrule
 \multicolumn{4}{l}{\emph{Mass ordering (forced by cage-shell assignment)}} \\
-Mass ordering & Normal hierarchy & Unresolved (JUNO 2026+) & \S\ref{sec:cageassignment} (forced) \\
+Mass ordering & Normal hierarchy & Unresolved (JUNO multi-year program) & \S\ref{sec:cageassignment} (forced) \\
 \midrule
 \multicolumn{4}{l}{\emph{CP phase (deferred)}} \\
 $\delta_{CP}$ & Open (route ii) & $\sim 195^\circ \pm 100^\circ$ & \S\ref{sec:deltaCP} (defer to SF-2) \\
 \bottomrule
 \end{tabular}
-\caption{Master predictions table for the eight neutrino sector parameters. Seven of eight parameters at zero free parameters; $\delta_{CP}$ registered as open and deferred to the EW-sector flagship (SF-2) per route (ii). Empirical values from NuFIT 5.3 \cite{nufit53}; cosmological bound from DESI/Planck combined analysis \cite{desi2024,planck2018}.}
+\caption{Master predictions table for the eight neutrino sector parameters. Seven of eight parameters at zero free parameters; $\delta_{CP}$ registered as open and deferred to the EW-sector flagship (SF-2) per route (ii). Empirical values from NuFIT 6.0 \cite{nufit60}; cosmological bound from the DESI/Planck combined analysis as one stringent combination \cite{desi2024,planck2018}, with alternative analyses (e.g., Planck PR4 + supernovae) relaxing the bound to $\sim 86$ meV \cite{naredo_tuero_2024}.}
 \label{tab:predictions_master}
 \end{table}
 
@@ -961,7 +1149,7 @@ The match levels for the predictions distribute into two classes:
 \item \textbf{Looser matches (8--14\%):} $m_{\nu_3}$ at 8\% from $\Delta m^2_{32}$, $m_3/m_1 = 56.25$ at 11\%, $\sin^2\theta_{12}$ and $\sin^2\theta_{23}$ at $\sim 10\%$.
 \end{itemize}
 
-The looser matches concentrate on quantities where the SM-5 OP-SM-7d Capotauro corrections (\S\ref{sec:higher_order}) are expected to lift the zeroth-order prediction toward the observed value. The TBM angles deviate from observation by $\sim 10\%$ for $\theta_{12}, \theta_{23}$ (and $\sin^2\theta_{13} = 0.0224$ is non-zero against TBM's 0); the same Capotauro mechanism that produces those corrections in the EW sector also lifts the $V^2$ scaling residuals of $m_{\nu_3}$ via mode-mode mixing terms beyond leading order.
+The looser matches concentrate on quantities where the SM-5 OP-SM-7d Capotauro corrections (\S\ref{sec:higher_order}) are expected to lift the zeroth-order prediction toward the observed value. The TBM angles deviate from observation by $\sim 10\%$ for $\theta_{12}, \theta_{23}$ (and $\sin^2\theta_{13} = 0.02203$ from NuFIT 6.0 is non-zero against TBM's 0); the same Capotauro mechanism that produces those corrections in the EW sector also lifts the $V^2$ scaling residuals of $m_{\nu_3}$ via mode-mode mixing terms beyond leading order.
 
 The tight matches concentrate on quantities not directly affected by Capotauro corrections: $\sigmanu$ is purely a substrate-walk-dimension prediction independent of the K3 eigenstructure mixing, and $m_{\nu_2}$ corresponds to the K3 bonding mode that is the unmixed singlet (the eigenmode least affected by antibonding-doublet corrections).
 
@@ -972,7 +1160,7 @@ The mathematical observation that K3 ($\mathbb{Z}_3 \cong A_3$) eigenvectors giv
 
 The CPP-specific contribution is not the mathematical observation (which is known and not novel) but the \emph{physical identification}: K3 is the colour-cage base of the 600-cell tetrahedral cage in SM-1, not an abstract flavor symmetry postulated ad hoc. SF-4 builds on this physical identification to derive the absolute mass scale ($\sigmanu = z^{-10}$ from substrate walk-dimension primitives) and the cage-shell assignment ($V \in \{4, 12, 30\}$ forced by 600-cell topology + SM-1 particle-type taxonomy) --- both of which are outside the scope of pure $A_4$ models, which produce mixing structure but not absolute mass scales without additional Yukawa-coupling assumptions.
 
-The SF-4 framework is therefore complementary to $A_4$ models: where $A_4$ explains TBM mixing from group theory, SF-4 grounds TBM mixing in physical substrate geometry and additionally derives the absolute mass scale and the mass-squared splittings from the same substrate primitives at zero free parameters.
+The SF-4 framework is therefore complementary to $A_4$ models: where $A_4$ explains TBM mixing from group theory, SF-4 grounds TBM mixing in physical substrate geometry and additionally proposes a structurally constrained derivation of the absolute mass scale and the mass-squared splittings from the same substrate primitives at zero free parameters.
 
 % ===================================================================
 \section{$\delta_{CP}$ Posture (Route ii)}
@@ -1016,7 +1204,7 @@ These remain valid candidates for the eventual SF-2 work. SF-4 v1.0 ships with t
 \label{sec:higher_order}
 % ===================================================================
 
-The cage-shell mass formula and the K3-Cage-Shell Consistency Theorem deliver zeroth-order results: $V^2$ scaling for masses (with $\sim 4$--11\% structural residuals on the splitting ratios) and TBM at zeroth order for the PMNS matrix (with $\sim 10$--14\% deviations from the observed angles, plus $\sin^2\theta_{13} = 0.0224$ non-zero against TBM's 0). Higher-order corrections lift both classes of residuals toward observed values. SF-4 inherits these corrections from the existing SM-5 OP-SM-7d (Capotauro mechanism) machinery; it does not derive them.
+The cage-shell mass formula and the K3-Cage-Shell Consistency Theorem deliver zeroth-order results: $V^2$ scaling for masses (with $\sim 4$--11\% structural residuals on the splitting ratios) and TBM at zeroth order for the PMNS matrix (with $\sim 10$--14\% deviations from the observed angles, plus $\sin^2\theta_{13} = 0.02203$ from NuFIT 6.0 non-zero against TBM's 0). Higher-order corrections lift both classes of residuals toward observed values. SF-4 inherits these corrections from the existing SM-5 OP-SM-7d (Capotauro mechanism) machinery; it does not derive them.
 
 \subsection{Inheritance posture}
 
@@ -1029,7 +1217,7 @@ SF-4's posture: \textbf{register higher-order corrections as conditional on EW-s
 The Capotauro mechanism is expected to produce, when closed:
 
 \begin{itemize}[leftmargin=2em]
-\item \textbf{TBM angle corrections} lifting the zeroth-order angles $\sin^2\theta_{12}^{(0)} = 1/3, \sin^2\theta_{23}^{(0)} = 1/2, \sin^2\theta_{13}^{(0)} = 0$ toward the observed $\sin^2\theta_{12} = 0.304, \sin^2\theta_{23} = 0.570, \sin^2\theta_{13} = 0.0224$ via mode-mode mixing corrections at $O(\epsilon)$ where $\epsilon$ is a substrate-derived small parameter from the EW machinery.
+\item \textbf{TBM angle corrections} lifting the zeroth-order angles $\sin^2\theta_{12}^{(0)} = 1/3, \sin^2\theta_{23}^{(0)} = 1/2, \sin^2\theta_{13}^{(0)} = 0$ toward the observed (NuFIT 6.0 \cite{nufit60}) $\sin^2\theta_{12} = 0.307, \sin^2\theta_{23} = 0.572$ (NO, with octant ambiguity), $\sin^2\theta_{13} = 0.02203$ via mode-mode mixing corrections at $O(\epsilon)$ where $\epsilon$ is a substrate-derived small parameter from the EW machinery.
 \item \textbf{Mass-eigenvalue corrections} via the same mode-mode mixing, lifting the structural residuals 4\% and 11\% in the splitting ratio predictions of \eqref{eq:massratios} toward the observed $\Delta m^2_{21}$ and $\Delta m^2_{32}$ values.
 \item \textbf{$\delta_{CP}$ derivation} as an additional output of the same machinery (per \S\ref{sec:deltaCP} route ii).
 \end{itemize}
@@ -1049,30 +1237,36 @@ The SF-4 framework makes specific zero-parameter quantitative predictions; the p
 
 \subsection{Direct SF-4 falsifiers}
 
-\subsubsection{Inverted hierarchy (JUNO 2026+)}
+\subsubsection{Inverted hierarchy (JUNO multi-year program)}
 \label{sec:falsifier_juno}
 
 The cage-shell assignment \eqref{eq:vassignment} forces the mass-squared ordering by the $V^2$ scaling: $V_{\nu_1} = 4 < V_{\nu_2} = 12 < V_{\nu_3} = 30$ implies $m_{\nu_1} < m_{\nu_2} < m_{\nu_3}$ (normal hierarchy). The framework cannot accommodate inverted hierarchy --- no permutation of the cage-shell assignment is consistent with $V \in \{4, 12, 30\}$ from 600-cell topology while reproducing the observed splittings.
 
-The Jiangmen Underground Neutrino Observatory (JUNO) \cite{juno_design} is expected to resolve mass ordering at $> 3\sigma$ confidence by 2026--2028 via reactor antineutrino oscillation pattern measurement. \textbf{If JUNO confirms inverted hierarchy, the SF-4 cage-shell assignment is dead}, and the framework's central derivation chain fails. This is a \textbf{clean, named, near-term falsifier} with no escape via parameter adjustment --- the cage-shell assignment is forced by 600-cell topology, not chosen.
+The Jiangmen Underground Neutrino Observatory (JUNO) \cite{juno_design} aims to determine the neutrino mass ordering at $\sim 3\sigma$ confidence after several years of data --- a multi-year program rather than a single-date deliverable, with sensitivity studies suggesting roughly six years of full operation are required to reach the $3\sigma$ threshold via the reactor antineutrino oscillation pattern measurement. \textbf{If JUNO determines inverted hierarchy at high confidence, the SF-4 cage-shell assignment is dead}, and the framework's central derivation chain fails. This is a \textbf{clean, named falsifier} with no escape via parameter adjustment --- the cage-shell assignment is forced by 600-cell topology, not chosen.
 
-\subsubsection{Direct mass measurement above $\sim 5$ meV}
+The current global-fit position (NuFIT 6.0 \cite{nufit60}) already shows mild preference for normal ordering, but with sensitivity dependent on inclusion of the Super-Kamiokande atmospheric $\chi^2$; without the Super-K atmospheric data, the two orderings are nearly equally well-fit. JUNO's reactor-antineutrino sensitivity is independent of the atmospheric input and provides the cleanest resolution path. Independent contributions from DUNE \cite{dune2020} and Hyper-Kamiokande over similar timescales will reinforce the JUNO conclusion.
+
+\subsubsection{Principled direct-mass falsifier (longer-timescale)}
 \label{sec:falsifier_direct_mass}
 
-The cage-shell + suppression-factor prediction is $m_{\nu_1} \approx 0.98$ meV (the lightest mass eigenvalue, identified with $m_{\nu_e}$ in normal hierarchy). KATRIN \cite{katrin2022} currently bounds $m_\beta < 0.8$ eV; future direct-measurement programmes (KATRIN++, Project 8 \cite{project8}) target the sub-eV decade with sub-100 meV sensitivity over the coming decade.
+The cage-shell + suppression-factor prediction is $m_{\nu_1} \approx 0.98$ meV (the lightest mass eigenvalue, in the normal-hierarchy convention adopted here). KATRIN \cite{katrin2022} currently bounds the beta-decay effective mass $m_\beta = \sqrt{\sum_i |U_{ei}|^2 m_i^2} < 0.8$ eV; future direct-measurement programmes (KATRIN++, Project 8 \cite{project8}) target sub-eV sensitivity over the coming decade, with Project 8's stated programmatic goal at approximately $m_\beta \sim 40$ meV.
 
-A direct mass measurement of $m_{\nu_e} > 5$ meV would force the lightest mass to a value inconsistent with the cage-shell + $\sigmanu$ prediction (which constrains $m_{\nu_1}$ to $\approx 1$ meV with $\sim 2\%$ structural uncertainty from the leading-order $V^2$ approximation). The 5-meV threshold corresponds to $\approx 5\sigma$ deviation from the predicted value; smaller deviations could be accommodated by higher-order corrections from OP-SM-7d (\S\ref{sec:higher_order}).
+\textbf{Note that direct-mass measurements probe $m_\beta$, not $m_{\nu_1}$ directly}: the relevant observable for SF-4 is the absolute mass scale, which $m_\beta$ constrains through the PMNS-weighted sum $m_\beta^2 = \sum_i |U_{ei}|^2 m_i^2$. With normal hierarchy and the SF-4 mass values, the predicted $m_\beta \approx 8.7$ meV (dominated by the $|U_{e2}|^2 m_2^2$ contribution).
 
-This falsifier is on a longer timescale than JUNO (decade-class rather than 2026+ near-term) but is an unambiguous direct-measurement test.
+\paragraph{The principled falsifier.} A direct-mass measurement of $m_\beta > 5$ meV at the level of the predicted scale would force at least one mass eigenvalue to exceed the cage-shell prediction by a factor of $\sim 5$, falsifying the $\sigmanu = z^{-10}$ structural prediction. \textbf{However, this 5 meV principled threshold is well below the sensitivity floor of currently-funded direct-measurement programmes}: KATRIN reaches $\sim 0.5$ eV, Project 8 targets $\sim 40$ meV. The principled-falsifier threshold and the near-term experimental sensitivity differ by roughly a decade.
+
+This falsifier should therefore be read as \emph{conceptually clean but not near-term experimentally accessible} via direct beta-decay measurement. The cosmological-sum bound (\S\ref{sec:falsifier_cosmo}) is the more realistic near-term constraint on the absolute mass scale. Future programmes pushing beyond the Project 8 $\sim 40$ meV target into the few-meV regime would convert this falsifier from principled to programmatic.
 
 \subsubsection{Cosmological tightening to $\Sigma m_\nu < 50$ meV}
 \label{sec:falsifier_cosmo}
 
-The current DESI/Planck combined bound is $\Sigma m_\nu \le 72$ meV \cite{desi2024,planck2018}; SF-4 predicts $\Sigma m_\nu = 64.9$ meV (sum of three predicted masses with normal hierarchy). The prediction sits comfortably under the current bound but with limited margin.
+The current DESI/Planck combined bound is $\Sigma m_\nu \le 72$ meV \cite{desi2024,planck2018}; SF-4 predicts $\Sigma m_\nu = 64.9$ meV (sum of three predicted masses with normal hierarchy). The prediction sits comfortably under the most stringent combination but with limited margin.
 
-Future cosmological surveys (DESI full-survey results, CMB-S4, LSST) are expected to tighten the bound. \textbf{Tightening below $\sim 50$ meV would falsify the SF-4 prediction directly}: $\Sigma m_\nu = 64.9$ meV cannot be reduced to $< 50$ meV by higher-order corrections without breaking the splitting structure. The cage-shell assignment forces a specific $\Sigma m_\nu$ once the absolute scale is fixed by $\sigmanu$.
+\paragraph{Dataset-dependence of the cosmological bound.} The 72 meV figure is one stringent combination of DESI BAO + Planck 2018 likelihoods. Alternative analyses with the Planck PR4 likelihood and supernova datasets relax the bound to $\sim 86$ meV \cite{naredo_tuero_2024}, and the bound depends meaningfully on Planck likelihood-implementation choices, the inclusion or exclusion of specific late-time supernova datasets, and the priors on cosmological parameters. The SF-4 prediction $\Sigma m_\nu = 64.9$ meV is consistent with all current cosmological bounds across the dataset-combination range.
 
-A bound tightening to $\Sigma m_\nu < 50$ meV is plausible on a 5--10 year timescale.
+\paragraph{Future tightening as the falsifier.} Future cosmological surveys (DESI full-survey results, CMB-S4, LSST) are expected to tighten the bound. \textbf{Tightening below $\sim 50$ meV across robust dataset combinations would falsify the SF-4 prediction directly}: $\Sigma m_\nu = 64.9$ meV cannot be reduced to $< 50$ meV by higher-order corrections without breaking the splitting structure. The cage-shell assignment forces a specific $\Sigma m_\nu$ once the absolute scale is fixed by $\sigmanu$.
+
+A bound tightening to $\Sigma m_\nu < 50$ meV across multiple independent dataset combinations is plausible on a 5--10 year timescale; the falsifier strength scales with how dataset-independent the tightening is.
 
 \subsection{Framework-level falsifiers}
 
@@ -1274,8 +1468,11 @@ SF-line Architecture Overview, \texttt{flagship\_papers/README.md}, Session 41 p
 
 % --- External experimental and phenomenological references ---
 
-\bibitem{nufit53}
-I.~Esteban, M.~C.~Gonzalez-Garcia, M.~Maltoni, T.~Schwetz, and A.~Zhou, \emph{The fate of hints: updated global analysis of three-flavor neutrino oscillations}, J.\ High Energy Phys.\ \textbf{09}, 178 (2020); NuFIT 5.3 (2024) update at \url{http://www.nu-fit.org}.
+\bibitem{nufit60}
+I.~Esteban, M.~C.~Gonzalez-Garcia, M.~Maltoni, I.~Martinez-Soler, J.~P.~Pinheiro, T.~Schwetz, and A.~Zhou, \emph{NuFit-6.0: Updated global analysis of three-flavor neutrino oscillations}, arXiv:2410.05380 (October 2024); web update at \url{http://www.nu-fit.org}.
+
+\bibitem{naredo_tuero_2024}
+D.~Naredo-Tuero, M.~Escudero, E.~Fernandez-Martinez, X.~Marcano, and V.~Poulin, \emph{Living at the edge: A critical look at the cosmological neutrino mass bound}, arXiv:2407.07595 (2024); see also \emph{Neutrino mass bounds from DESI 2024 are relaxed by Planck PR4 and might be further relaxed by ACT}, arXiv:2406.14554 (2024). Documents Planck-likelihood-implementation dependence and supernova-dataset variation in the cosmological $\Sigma m_\nu$ bound.
 
 \bibitem{desi2024}
 DESI Collaboration, \emph{DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations}, arXiv:2404.03002 (2024).
