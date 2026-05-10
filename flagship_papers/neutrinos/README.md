@@ -1,6 +1,6 @@
 # SF-4: Neutrino Sector Unification from 600-Cell Geometry
 
-**Status:** Active. Audit phase complete (Session 37, patch 0294); mechanism selected (Session 39, patch 0298); both substantive sub-derivations at PARTIAL CLOSURE — OPEN-FP-SF-4-1 (Session 41 patch 0300, three pictures for $\sigma = z^{-2 d_{\text{eff}}}$ at 2% empirical match) and OPEN-FP-SF-4-2 (Session 43 patch 0303, Route C structural closure at SM-5-inheritance level). **v0.1 outline established Session 44 patch 0304** — drafting begins Session 45+.
+**Status:** Active. Audit phase complete (Session 37, patch 0294); mechanism selected (Session 39, patch 0298); both substantive sub-derivations at PARTIAL CLOSURE — OPEN-FP-SF-4-1 (Session 41 patch 0300) and OPEN-FP-SF-4-2 (Session 43 patch 0303). Outline established Session 44 patch 0304. **v0.1 .tex shipped Session 45 patch 0305** — foundation sections §0-§3 at full draft quality; derivation sections §4-§5 and closing §6-§11 at substantive-stub quality with key results stated; v0.2-v0.5 iterations fill stubs from the established sub-derivation working documents.
 **Estimated sessions to v1.0 SHIP:** 10–14 (audit done; selection + derivation campaign + writing).
 **Inclusion criterion fit:** (1) named known-unknown — neutrino masses, mass hierarchy ordering, $\delta_{CP}$, the eight neutrino oscillation parameters in toto; (4) bridge to recognized mathematics — polytope theory and distance-shell structure of the 600-cell.
 
@@ -51,7 +51,8 @@ SF-4 is the pivot paper of the SF-line: longest derivation campaign, highest sci
 
 Currently:
 - `README.md` — this file
-- `sf-4_outline.md` — **v0.1 paper outline (Session 44, patch 0304)**; section-by-section structure, predictions table, falsifier set, source-material map, drafting plan
+- `sf-4_outline.md` — v0.1 paper outline (Session 44, patch 0304)
+- **`sf-4_neutrinos.tex`** — **v0.1 paper draft (Session 45, patch 0305)**: foundation sections §0-§3 at full quality; §4-§11 as substantive stubs
 - `sketches/README.md` — staging-document discipline
 - `sketches/SF-4_neutrino_sector_audit.md` — eight-parameter audit (Session 37, patch 0294)
 - `sketches/SF-4_mechanism_selected.md` — mechanism-selection decision document (Session 39, patch 0298)
@@ -59,9 +60,9 @@ Currently:
 - `sketches/SF-4_k3_cage_shell_consistency.md` — OPEN-FP-SF-4-2 working document (Sessions 42-43, patches 0302/0303; PARTIAL CLOSURE: structural-physical picture established at SM-5-inheritance level)
 
 To come:
+- `sf-4_neutrinos.pdf` — compiled output once v0.x iteration produces complete §4 and §5 substantive content (v0.2-v0.3)
 - `sketches/SF-4_*.md` — additional sub-derivation working documents per the SS-9 staging discipline
-- `sf-4_neutrinos.tex/.pdf` once derivation campaign produces v0.1
-- `documentation_suite/`, `letters/`, `founders_voice/` per SS-9 four-tier discipline as the paper develops
+- `documentation_suite/`, `letters/`, `founders_voice/` per SS-9 four-tier discipline as the paper develops to v0.5+
 
 ---
 
