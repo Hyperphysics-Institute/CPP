@@ -55,7 +55,7 @@ Currently:
 - `sketches/SF-4_neutrino_sector_audit.md` — eight-parameter audit (Session 37, patch 0294)
 - `sketches/SF-4_mechanism_selected.md` — mechanism-selection decision document (Session 39, patch 0298)
 - `sketches/SF-4_suppression_derivation.md` — OPEN-FP-SF-4-1 working document (Sessions 40-41, patches 0299/0300; PARTIAL CLOSURE physical picture in hand at $\sigma = z^{-2 d_{\text{eff}}}$)
-- `sketches/SF-4_k3_cage_shell_consistency.md` — OPEN-FP-SF-4-2 working document (Session 42, patch 0302; PARTIAL — numerical exact, structural three-routes in progress)
+- `sketches/SF-4_k3_cage_shell_consistency.md` — OPEN-FP-SF-4-2 working document (Sessions 42-43, patches 0302/0303; PARTIAL CLOSURE: structural-physical picture established at SM-5-inheritance level)
 
 To come:
 - `sketches/SF-4_*.md` — additional sub-derivation working documents per the SS-9 staging discipline
