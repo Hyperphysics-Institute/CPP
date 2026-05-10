@@ -3,6 +3,15 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 0.8 -- 9 May 2026 (Session 52 v0.8 incorporates Grok and
+%   Copilot independent review pass feedback. Both reviewers
+%   independently assessed v0.7 as "close to v1.0 SHIP quality" with
+%   mostly polish items. v0.8 lands the consolidated polish: JUNO
+%   2025 update, prominent mass-basis remark, operator picture,
+%   geometric-origin reminder, Sigma m_nu sanity check, partial-
+%   failure scenarios, expanded out-of-scope, refined category
+%   labels.)
+%
 % Version 0.7 -- 9 May 2026 (Session 51 v0.7 incorporates ChatGPT
 %   review pass 2 feedback. ChatGPT pass 2 returned 7.5/8 v0.6
 %   corrections landed cleanly with three remaining issues: (1)
@@ -56,6 +65,129 @@
 %   per the §11 drafting plan in sf-4_outline.md)
 %
 % CHANGELOG:
+%   v0.8 (9 May 2026 Session 52) -- Grok and Copilot independent
+%     review pass 1 feedback incorporated. Both reviewers
+%     independently assessed v0.7 as "close to v1.0 SHIP quality" /
+%     "very close to v1.0 SHIP quality" with mostly polish items.
+%     v0.8 lands the consolidated set of polish items from both
+%     review streams. Eight specific edits:
+%
+%     1. JUNO 2025 FIRST PHYSICS RESULTS INTEGRATION (Grok #1):
+%        - §3.4 lead-in updated: Δm²_21 from NuFIT 6.0 (7.49e-5)
+%          → JUNO 2025 first physics (7.50e-5 ± 0.12) with NuFIT
+%          6.0 cited as consistent corroboration
+%        - §6.1 master predictions table sin²θ12 row: 0.307±0.013
+%          (NuFIT 6.0) → 0.3092±0.0087 (JUNO 2025; NuFIT 6.0 cited
+%          as consistent)
+%        - Bibliography: new \\bibitem{juno2025_first_results}
+%          entry for the JUNO 2025 first-physics public values,
+%          marked "in preparation" with note to update reference
+%          when peer-reviewed publication available
+%
+%     2. STRUCTURAL-VS-STATISTICAL RESIDUAL NOTE (Grok #3):
+%        §3.4 added clarifying sentence noting that the 4% and 11%
+%        residuals are STRUCTURAL (the same V² scaling assumption
+%        produces them across both ratios simultaneously) rather
+%        than STATISTICAL (independent measurement uncertainties),
+%        and that OP-SM-7d Capotauro mechanism is the natural
+%        lifting mechanism.
+%
+%     3. RATIOS-VS-ABSOLUTE-SCALE CONCEPTUAL SEPARATION (Copilot
+%        suggestion #3): §3.4 added "Two distinct structural claims"
+%        paragraph at end of section explicitly distinguishing
+%        (a) mass-ratio prediction (zero-parameter, robust to σ_ν
+%        closure level) from (b) absolute-scale claim (separate
+%        structural claim via σ_ν, carries OPEN-FP-SF-4-1
+%        PARTIAL CLOSURE status). Pointers to master table and
+%        claim-status ledger included.
+%
+%     4. OPERATOR-LEVEL PICTURE FOR α=2 (Copilot suggestion #1):
+%        §3.3 added new paragraph "Operator-level picture" giving
+%        explicit CPP-operator interpretation of the V^{7/3} → V²
+%        reduction at the bound/unbound boundary. The neutrino
+%        mass operator is proportional to substrate pair-
+%        interaction count summed over cage-shell vertices; for
+%        bound modes this is multiplied by linear-cage-dimension
+%        factor capturing rigid-cage spatial extent; for unbound
+%        modes the geometric-extent term has no CPP-operational
+%        definition (no rigid cage exists for unbound 3D ZBW
+%        configuration), so the leading non-zero contribution is
+%        the V² pair-count alone. This addresses "what is mass?"
+%        directly at operator level.
+%
+%     5. GEOMETRIC-ORIGIN PARAGRAPH FOR V ∈ {4,12,30} (Grok #4):
+%        §3.2 added new paragraph "Geometric origin of the three V
+%        values" explaining each: (i) V=12 is the icosahedral first
+%        shell (z=12 coordination); (ii) V=4 is the tetrahedral
+%        inscribed sub-cage of shell 1 via compound-of-five-
+%        tetrahedra, distinguished by SM-1 four-cage taxonomy;
+%        (iii) V=30 is the icosidodecahedral d²=2 shell (15
+%        antipodal pairs). Pointers to §5.5.1 Table 5.1 verified
+%        shell sequence and \cite{abshier_sm1} for taxonomy.
+%
+%     6. PROMINENT MASS-BASIS-VS-FLAVOR-BASIS BOXED REMARK (Copilot
+%        suggestion #11): §3.2 inserted blue-shaded mdframed
+%        clarification box at first appearance of \eqref{eq:vassignment}
+%        (the cage-shell assignment). Explicitly states that the
+%        assignment is in mass basis (K3-eigenmode basis from
+%        SM-5), not flavor basis (K3 vertex basis); flavor-basis
+%        reading would force PMNS=identity contradicting
+%        observation. Pointer to §5 and §5.2 for full discussion.
+%        Promotes the load-bearing observation to first appearance.
+%
+%     7. Σm_ν COSMOLOGICAL-BOUND SANITY CHECK (Copilot suggestion
+%        #2): §4.5 (Combined cage-shell + suppression result) added
+%        new paragraph "Cosmological-bound sanity check" with
+%        explicit derivation eq:sumcheck:
+%          Σm_ν = M_0 · σ_ν · (V_1² + V_2² + V_3²) = M_0 · σ_ν · 1060
+%               ≈ 64.9 meV
+%        Note that no empirical input was used; absolute-scale
+%        prediction is purely structural via σ_ν. Comparison to
+%        DESI/Planck 72 meV bound and Planck PR4 supernova 86 meV
+%        alternative bound. Pointer to §9.1.3 cosmological falsifier.
+%
+%     8. PARTIAL-FAILURE SCENARIOS / MODULAR FALSIFICATION (Copilot
+%        suggestion #9): §9.2 added new subsection
+%        "Partial-failure scenarios and modular falsification" with
+%        three explicit scenarios:
+%        - TBM falsified, mass ratios survive → cage-shell mass
+%          mechanism remains viable; K3-eigenmode-identification
+%          ansatz needs revision
+%        - Mass ratios falsified, hierarchy survives → cage-shell
+%          vertex assignment {4,12,30} needs revision; mass-
+%          mechanism principle (m ∝ V^α) potentially viable
+%        - Hierarchy falsified (JUNO inverted) → cleanest single-
+%          claim falsification of cage-shell assignment
+%        Closes with: strict-C inheritance discipline ensures
+%        inherited content carries inherited risk structurally
+%        separable from new SF-4 content.
+%
+%     9. §10.3 EXPANDED OUT-OF-SCOPE (Copilot suggestion #7-8):
+%        Two additional explicit out-of-scope items added:
+%        - Radiative corrections and renormalization-group running
+%          (mass formula at zeroth-order tree level; substrate
+%          provides regulator; v1.0+ work bundled with SF-2 OP-SM-7d)
+%        - Leptogenesis and baryon-asymmetry origin (requires δ_CP
+%          deferred to SF-2 plus cosmological evolution; SF-4
+%          makes no claim about leptogenesis viability or BAU
+%          magnitude)
+%
+%     10. §6.1 MASTER PREDICTIONS TABLE CATEGORY LABEL REFINEMENT
+%        (Copilot suggestion #3): "Mass eigenvalues (zero parameters)"
+%        → "Mass eigenvalues (absolute scale: PARTIAL CLOSURE via
+%        σ_ν)"; "Mass ratios (zero parameters, V² scaling)" → "Mass
+%        ratios (zero-parameter, V² scaling alone --- robust to
+%        σ_ν closure)". Makes the structural-claim distinction
+%        visible at a glance in the master table.
+%
+%     M_0 NOTATION: Copilot's suggestion #5 (z/φ vs "z/4") was an
+%     OCR misread; verified M_0 = m_e · z/φ_g consistent throughout
+%     v0.7 source via grep. No notational fix needed.
+%
+%     Net: ~120 lines new content across 10 distinct edits. Paper
+%     advanced from 1591 lines (v0.7) to ~1700 lines (v0.8).
+%     PDF recompiled.
+%
 %   v0.7 (9 May 2026 Session 51) -- ChatGPT review pass 2 feedback
 %     incorporated. Pass 2 verdict: 7.5/8 v0.6 corrections landed
 %     cleanly; v0.6 strong improvement over v0.5 but not yet
@@ -466,7 +598,7 @@
 \title{\textbf{SF-4: Neutrino Sector Unification from 600-Cell Geometry}\\[6pt]
 {\large Eight Parameters from One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\normalsize Version 0.7 --- 9 May 2026 (incorporates ChatGPT review pass 2 feedback: mass-ratio language fully propagated through \S3.4 lead-in, \S3.4 subsection title, \S6.1 master table category label, \S8 intro, \S8.2, \S11.2 (six relabels in total); direct-mass falsifier numerical-logic bug corrected --- reframed around inconsistency with predicted $m_\beta \approx 8.7$ meV rather than the backwards $m_\beta > 5$ meV framing; all `\\ref` and `\\eqref` cross-references verified)}}
+{\normalsize Version 0.8 --- 9 May 2026 (incorporates Grok and Copilot independent review feedback: JUNO 2025 first physics results integrated; mass-basis-vs-flavor-basis clarification promoted to prominent boxed remark in \S3.2; operator-level picture for $\alpha = 2$ added in \S3.3; geometric origin paragraph for $V \in \{4,12,30\}$ added in \S3.2; $\Sigma m_\nu$ cosmological-bound sanity check derivation added in \S4.5; ratios-vs-absolute-scale conceptual separation made explicit in \S3.4; \S6.1 master table category labels refined to distinguish absolute-scale PARTIAL CLOSURE from mass-ratio zero-parameter; \S9.2 partial-failure modular-falsification scenarios added; \S10.3 expanded with running/radiative/leptogenesis explicit out-of-scope items)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -747,7 +879,11 @@ The neutrino mass eigenstates $\nu_1, \nu_2, \nu_3$ have cage-shell vertex count
 corresponding respectively to the tetrahedral cage (subset of 600-cell shell 1), the icosahedral first shell of the 600-cell, and the icosidodecahedral shell at $d^2 = 2$.
 \end{proposition}
 
-The assignment is in \emph{mass basis} (the K3-eigenmode basis from SM-5, equation \eqref{eq:nu_id}), \emph{not} flavor basis (the K3 vertex basis $|V_\alpha\rangle$). The mass-basis reading is forced by the requirement that $U_\PMNS^{(0)} = U_\TBM$ continue to hold; the alternative flavor-basis reading would force PMNS = identity contradicting both SM-5 and observation. This clarification is the load-bearing observation of \S\ref{sec:k3consistency} below.
+\paragraph{Geometric origin of the three V values.} The three numbers (4, 12, 30) are not adjusted to fit data; they are the available cage-shell vertex counts forced by 600-cell topology. Specifically: (i) $V = 12$ is the icosahedral first shell — every 600-cell vertex has exactly 12 nearest neighbours arranged at icosahedral angles ($z = 12$ is the 600-cell coordination number); (ii) $V = 4$ is the tetrahedral inscribed sub-cage of shell 1 — the icosahedron contains five inscribed regular tetrahedra (the famous compound-of-five-tetrahedra), each using 4 of the 12 first-shell vertices, and the lepton-flavor structure picks out one such tetrahedron via SM-1's four-cage taxonomy; (iii) $V = 30$ is the icosidodecahedral shell at squared distance $d^2 = 2$ — the third bonded shell from any 600-cell reference vertex, with 30 vertices arranged in 15 antipodal pairs. Detailed verification of the shell sequence is given in \S\ref{sec:route_C} (Table~\ref{tab:bonded_shells}); the SM-1 particle-type taxonomy of which cage hosts which Standard Model particle (and consequently which shells the neutrino sector can couple to) is established in \cite{abshier_sm1}.
+
+\begin{mdframed}[backgroundcolor=blue!5, linewidth=0.8pt, roundcorner=5pt]
+\textbf{Mass basis vs flavor basis (key clarification).} The cage-shell assignment \eqref{eq:vassignment} is in \emph{mass basis} (the K3-eigenmode basis from SM-5 \cite{abshier_sm5}, equation \eqref{eq:nu_id}), \emph{not} flavor basis (the K3 vertex basis $|V_\alpha\rangle$ corresponding to charged-lepton flavor labels). The mass-basis reading is forced by the requirement that $U_\PMNS^{(0)} = U_\TBM$ continue to hold; the alternative flavor-basis reading would force PMNS = identity, contradicting both SM-5 and observation. This is the load-bearing observation of the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}, in particular \S\ref{sec:massbasis_clarification}); it is highlighted here at first appearance of \eqref{eq:vassignment} because the entire derivation chain of SF-4 hangs on the mass-basis reading.
+\end{mdframed}
 
 \paragraph{Why $V = 20$ is excluded.} The four-cage taxonomy \cite{abshier_sm1} assigns $V = 20$ (the dodecahedral second shell) to the bottom quark and Higgs boson. The lepton-flavor neutrino sector does not couple to this shell; SF-4's cage-shell assignment uses the three available shells $\{4, 12, 30\}$ from the lepton-cage substrate. The $V = 20$ exclusion is forced by the SM-1 particle-type taxonomy, not by SF-4 fitting.
 
@@ -761,7 +897,11 @@ For unbound modes (no central CP anchor; no rigid cage by hypothesis), no rigid 
 V^{7/3} \to V^{2} \quad \text{(unbound regime).}
 \label{eq:alphareduction}
 \end{equation}
-This is not a fit. The exponent $\alpha = 2$ is forced by the structural difference between bound and unbound modes --- exactly the boundary across which $V^{1/3}$ does or does not contribute to the mass formula. Theorem-level closure of \eqref{eq:alphareduction} from CPP axioms A1--A11 is registered as part of OPEN-FP-SF-4-1 (suppression mechanism Picture A formalization) and is v1.0+ work.
+This is not a fit. The exponent $\alpha = 2$ is forced by the structural difference between bound and unbound modes --- exactly the boundary across which $V^{1/3}$ does or does not contribute to the mass formula.
+
+\paragraph{Operator-level picture.} In CPP terms, the neutrino mass operator is proportional to the substrate pair-interaction count summed over the cage-shell vertices. For the bound-mode quark/lepton sectors this operator is multiplied by a linear-cage-dimension factor capturing the spatial extent of a rigid 3D cage at fixed local density. For the unbound neutrino mode, the operator retains its $V^2$ pair-count scaling, while the geometric extent term has no CPP-operational definition (no rigid cage exists for an unbound 3D orbital ZBW configuration; there is no spatial extent to characterize). The structural argument for $\alpha = 2$ is that the operator decomposition $\Mzero \cdot V^{7/3} = \Mzero \cdot V^2 \cdot V^{1/3}$ has its second factor $V^{1/3}$ undefined for unbound modes, so the leading non-zero contribution is the pair-count scaling alone.
+
+Theorem-level closure of \eqref{eq:alphareduction} from CPP axioms A1--A11 is registered as part of OPEN-FP-SF-4-1 (suppression mechanism Picture A formalization) and is post-v1.0 work.
 
 \subsection{Mass-ratio predictions at zero free parameters}
 \label{sec:splitting_predictions}
@@ -773,9 +913,11 @@ With $\alpha = 2$ and the assignment \eqref{eq:vassignment}, the mass ratios are
 \label{eq:massratios}
 \end{equation}
 
-The observed mass-squared splittings $\Delta m^2_{21} = 7.49 \times 10^{-5}$ eV$^2$ and $|\Delta m^2_{32}| = 2.513 \times 10^{-3}$ eV$^2$ (NuFIT 6.0 \cite{nufit60}) imply, in the absence of independent absolute-mass information, a self-consistent fit at $m_{\nu_1} \approx 0.96$ meV with empirical mass ratios $m_{\nu_2}/m_{\nu_1} = 8.66$ from the splittings versus 9.00 from \eqref{eq:massratios} (4\% match) and $m_{\nu_3}/m_{\nu_1} = 50.9$ from the splittings versus 56.25 from \eqref{eq:massratios} (11\% match). The structural residuals 4\% and 11\% reflect the leading-order $V^2$ approximation; they recur as the same residual pattern in the absolute mass predictions (\S\ref{sec:suppression_combined}).
+The observed mass-squared splittings $\Delta m^2_{21} = 7.50 \times 10^{-5}$ eV$^2 \pm 0.12$ (JUNO 2025 first physics results \cite{juno2025_first_results}; consistent with NuFIT 6.0 \cite{nufit60} value $7.49 \times 10^{-5}$) and $|\Delta m^2_{32}| = 2.513 \times 10^{-3}$ eV$^2$ (NuFIT 6.0) imply, in the absence of independent absolute-mass information, a self-consistent fit at $m_{\nu_1} \approx 0.96$ meV with empirical mass ratios $m_{\nu_2}/m_{\nu_1} = 8.66$ from the splittings versus 9.00 from \eqref{eq:massratios} (4\% match) and $m_{\nu_3}/m_{\nu_1} = 50.9$ from the splittings versus 56.25 from \eqref{eq:massratios} (11\% match). The structural residuals 4\% and 11\% reflect the leading-order $V^2$ approximation and are expected to be \emph{structural} rather than \emph{statistical}: the same $V^2$ scaling assumption produces them across both ratios simultaneously, and the OP-SM-7d Capotauro mechanism (\S\ref{sec:higher_order}) is the natural lifting mechanism. They recur as the same residual pattern in the absolute mass predictions (\S\ref{sec:suppression_combined}).
 
 The comparison in \eqref{eq:massratios} is at the \emph{mass ratio} level, not the mass-squared splitting level. The cage-shell formula \eqref{eq:massformula} predicts mass eigenvalues directly via $V^2$ scaling; the corresponding mass-squared ratios are $m_2^2/m_1^2 = 81$ and $m_3^2/m_1^2 \approx 3164$, and the mass-squared splitting ratio $\Delta m^2_{31}/\Delta m^2_{21} = (m_3^2 - m_1^2)/(m_2^2 - m_1^2) \approx 39.5$ (predicted) versus $\sim 34.1$ (empirical from NuFIT 6.0) at the 13\% match level. The mass-ratio comparison in \eqref{eq:massratios} is the cleanest direct test of the $V^2$ scaling structure; the mass-squared splitting ratio is the historically standard observable but reflects the same underlying structural prediction.
+
+\paragraph{Two distinct structural claims.} The neutrino sector predictions partition into two structurally distinct classes: (a) the \emph{mass ratios} $m_2/m_1 = 9$ and $m_3/m_1 = 56.25$ are zero-parameter predictions of the $V^2$ scaling forced by 600-cell topology alone; (b) the \emph{absolute mass scale} (and consequently $m_{\nu_1} \approx 0.98$ meV, $\Sigma m_\nu \approx 64.9$ meV) is a separate structural claim via the suppression factor $\sigmanu = z^{-10}$, which carries its own PARTIAL CLOSURE status as the substantive content of \S\ref{sec:suppression}. The mass-ratio claim is robust to closure level of $\sigmanu$; the absolute-scale claim is conditional on the OPEN-FP-SF-4-1 closure path. Master predictions Table~\ref{tab:predictions_master} (\S\ref{sec:predictions}) and the claim-status ledger (Table~\ref{tab:claim_ledger}, \S\ref{sec:claim_ledger}) keep this distinction visible.
 
 The structural agreement at zero free parameters is the load-bearing signal; the residuals are the framework's intrinsic precision at the leading-order $V^2$ approximation. Higher-order corrections via OP-SM-7d would tighten these.
 
@@ -962,6 +1104,13 @@ $\Sigma m_\nu$ & 64.9 meV & $\le 72$ meV (DESI/Planck combined) & within bound \
 \end{table}
 
 \paragraph{Note on the $z = 12$ factor.} The integer 12 entering the suppression formula is the 600-cell coordination number --- each vertex has 12 nearest neighbors arranged icosahedrally. This is the same 12 that enters the mass quantum $\Mzero = m_e \cdot z/\phig$ in \eqref{eq:M0} via SM-7--SM-9 \cite{abshier_sm7,abshier_sm8,abshier_sm9}, and the same 12 that is the vertex count of the icosahedral cage shell $V_{\nu_2} = 12$ in the cage-shell assignment \eqref{eq:vassignment}. The 12 is not a fitted parameter; it is a 600-cell topological invariant that recurs across multiple structural roles in the SF-4 derivation.
+
+\paragraph{Cosmological-bound sanity check.} The total absolute scale prediction
+\begin{equation}
+\Sigma m_\nu = m_{\nu_1} + m_{\nu_2} + m_{\nu_3} = \Mzero \cdot \sigmanu \cdot (V_1^2 + V_2^2 + V_3^2) = \Mzero \cdot \sigmanu \cdot 1060 \approx 64.9 \text{ meV}
+\label{eq:sumcheck}
+\end{equation}
+is computed at zero free parameters from the inherited $\Mzero \approx 3.79$ MeV, the topologically forced cage shells $V \in \{4, 12, 30\}$ (sum-of-squares $16 + 144 + 900 = 1060$), and the structurally constrained $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$. The result $\Sigma m_\nu \approx 64.9$ meV is below the most stringent current cosmological combination ($\Sigma m_\nu \le 72$ meV from DESI BAO + Planck 2018 \cite{desi2024,planck2018}) with limited margin, and well below the alternative-analysis bound ($\sim 86$ meV from Planck PR4 + supernova datasets \cite{naredo_tuero_2024}). \textbf{Note that no empirical input was used in deriving \eqref{eq:sumcheck}}; the absolute-scale prediction is purely structural via $\sigmanu$ and the empirical-comparison column of Table~\ref{tab:masspredictions} is a check of the framework against observation rather than a tuning of the framework to observation. The cosmological-bound sanity check thus also provides one of the cleanest near-term framework falsifiers (\S\ref{sec:falsifier_cosmo}).
 
 \subsection{Open theorem-level work (OPEN-FP-SF-4-1)}
 \label{sec:suppression_openwork}
@@ -1193,18 +1342,18 @@ The cage-shell mass formula \eqref{eq:massformula} with the cage-shell assignmen
 \toprule
 \textbf{Parameter} & \textbf{SF-4 prediction} & \textbf{Empirical value} & \textbf{Source section} \\
 \midrule
-\multicolumn{4}{l}{\emph{Mass eigenvalues (zero parameters)}} \\
+\multicolumn{4}{l}{\emph{Mass eigenvalues (absolute scale: PARTIAL CLOSURE via $\sigmanu$)}} \\
 $m_{\nu_1}$ (lightest, NH) & 0.98 meV & $\le 5$ meV (cosmological + $\Delta m^2$) & \S\ref{sec:formula}, \S\ref{sec:suppression} \\
 $m_{\nu_2}$ & 8.81 meV & 8.66 meV (from $\Delta m^2_{21}$) & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
 $m_{\nu_3}$ & 55.1 meV & 50.9 meV (from $\Delta m^2_{32}$) & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
 $\Sigma m_\nu$ & 64.9 meV & $\le 72$ meV (DESI/Planck) & combined \\
 \midrule
-\multicolumn{4}{l}{\emph{Mass ratios (zero parameters, $V^2$ scaling)}} \\
+\multicolumn{4}{l}{\emph{Mass ratios (zero-parameter, $V^2$ scaling alone --- robust to $\sigmanu$ closure)}} \\
 $m_{\nu_2} / m_{\nu_1}$ & 9.00 & 8.66 & \S\ref{sec:cageassignment} \\
 $m_{\nu_3} / m_{\nu_1}$ & 56.25 & 50.9 & \S\ref{sec:cageassignment} \\
 \midrule
 \multicolumn{4}{l}{\emph{PMNS mixing angles (zero parameters at zeroth order; OP-SM-7d for higher order)}} \\
-$\sin^2\theta_{12}$ & $1/3 = 0.333$ & $0.307 \pm 0.013$ (NuFIT 6.0) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
+$\sin^2\theta_{12}$ & $1/3 = 0.333$ & $0.3092 \pm 0.0087$ (JUNO 2025 first physics; consistent with NuFIT 6.0 \cite{nufit60} value $0.307 \pm 0.013$) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
 $\sin^2\theta_{23}$ & $1/2 = 0.500$ & $0.572^{+0.018}_{-0.022}$ (NuFIT 6.0, NO; octant ambiguity) & \S\ref{sec:k3consistency} (TBM 0$^{\mathrm{th}}$) + \S\ref{sec:higher_order} \\
 $\sin^2\theta_{13}$ & 0 (0$^{\mathrm{th}}$ order) & $0.02203 \pm 0.00056$ (NuFIT 6.0, NO) & \S\ref{sec:k3consistency} + \S\ref{sec:higher_order} (OP-SM-7d) \\
 \midrule
@@ -1369,6 +1518,19 @@ The suppression factor $\sigmanu = z^{-10}$ has the structural form $z^{-2 \deff
 
 This falsifier is also framework-level: it would falsify the walk-dimension framework's applicability to neutrino propagation, which has implications for any other unbound-mode CPP physics that uses the same framework. The $z^{-10}$ form is sharp; a precision direct mass measurement that produces an absolute scale of $\sim 0.5$ meV (a factor of 2 below the prediction) would be inconsistent with $\sigmanu = z^{-10}$ and would force the framework to either accept a different integer $\deff$ (revising channel enumeration) or abandon the walk-dimension framework entirely.
 
+\subsubsection{Partial-failure scenarios and modular falsification}
+\label{sec:partial_failure}
+
+The five falsifiers above target structurally distinct claims, and their failure modes decouple in informative ways. The two most illuminating partial-failure scenarios:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{TBM falsified, mass ratios survive.} If precision PMNS measurement reveals zeroth-order angles inconsistent with TBM (after OP-SM-7d Capotauro corrections), but the mass-ratio predictions $m_2/m_1 = 9$ and $m_3/m_1 = 56.25$ continue to match observation within the $V^2$ structural-residual band, then the SF-4 cage-shell mass mechanism remains viable while the inherited K3-eigenmode-identification ansatz from SM-5 would require revision. The mass-mechanism and the mixing-mechanism are independently falsifiable; falsification of one does not automatically falsify the other.
+\item \textbf{Mass ratios falsified, hierarchy survives.} If the mass-ratio predictions are forced significantly outside the $V^2$ structural-residual band (say, $m_2/m_1$ measured to $< 5$ or $> 15$ at high confidence), but the normal hierarchy ordering remains intact, then the cage-shell vertex assignment $\{4, 12, 30\}$ would require revision — perhaps a different shell sequence, but the cage-shell mechanism's structural basis (mass formula proportional to $V^\alpha$) remains potentially viable. In this case the cage-shell assignment becomes the failure point rather than the mass-mechanism principle itself.
+\item \textbf{Hierarchy falsified.} JUNO confirmation of inverted hierarchy is the cleanest single-claim falsification: the cage-shell assignment $V_1 < V_2 < V_3$ fails, the cage-shell mass formula's $V^2$ scaling produces normal-hierarchy mass ordering by construction, and no internal modification of the framework can accommodate inverted hierarchy without abandoning the cage-shell assignment entirely. This is the cleanest framework falsifier on the experimental near-term horizon.
+\end{itemize}
+
+The decoupling structure makes the framework's claims modularly falsifiable and provides an informative diagnostic posture: each falsifier targets a structurally distinct claim, and partial failures point to which structural claim has failed and which remain viable. This is by design --- the strict-C inheritance discipline ensures that inherited content (TBM, $\Mzero$ calibration) carries inherited risk that is structurally separable from the new content (cage-shell assignment, suppression mechanism) introduced by SF-4.
+
 \subsection{What is not predicted}
 
 SF-4 does not predict Majorana versus Dirac character (\S\ref{sec:openwork}). Detection of $0\nu\beta\beta$ decay (the GERDA, CUORE, KamLAND-Zen experiments and successors) would constrain Majorana mass via the effective Majorana parameter $m_{\beta\beta}$, but does not directly falsify or confirm the cage-shell mass derivation. A detection or a tightening null result is informative for the eventual SF-4 v1.0+ work on Majorana-vs-Dirac character but is not a near-term cumulative-falsifier item.
@@ -1423,6 +1585,8 @@ The $V^{7/3} \to V^2$ reduction at the bound/unbound boundary (\S\ref{sec:alpha_
 \item \textbf{Majorana versus Dirac character.} The cage-shell mechanism in v1.0 does not specify whether neutrinos are Majorana or Dirac fermions. The mass formula $m_{\nu_i} = \Mzero V_{\nu_i}^2 \sigmanu$ produces three mass eigenvalues without specifying the fermion-number-violating character; both pictures are consistent with the v1.0 result. Registered as open for v1.0+ work; closure depends on substrate-level CP-conjugation properties of the unbound 3D orbital ZBW configuration.
 \item \textbf{$0\nu\beta\beta$ rate prediction.} Depends on the Majorana question above. If neutrinos are Majorana, the effective Majorana parameter $m_{\beta\beta}$ depends on PMNS structure and Majorana phases (which themselves are unspecified in v1.0). Registered as v1.0+ open conditional on Majorana-vs-Dirac closure.
 \item \textbf{Sterile-neutrino predictions.} The cage-shell assignment uses $V \in \{4, 12, 30\}$ (the available shells from the lepton position with $V = 20$ excluded by SM-1 taxonomy). Whether the cage-shell mechanism extends to additional sterile states in higher 600-cell shells, or specifically rules them out, is a v1.0+ open problem. The 600-cell substrate has additional shells at higher $d^2$ values (Table \ref{tab:bonded_shells}); some of these could in principle host sterile-neutrino-like configurations, but the SF-4 active-flavor scope does not address this.
+\item \textbf{Radiative corrections and renormalization-group running.} The mass formula \eqref{eq:massformula} is at zeroth-order tree level; SF-4 does not address radiative corrections to the cage-shell mass operator nor RG running of the predicted mass eigenvalues from the substrate scale to the experimental scale. The CPP framework's natural scale is the substrate scale (no UV cutoff in the conventional sense; the substrate provides the regulator), so RG running concerns the embedding of the CPP-derived mass scale into low-energy effective theory rather than RG flow within CPP. Registered as v1.0+ work, naturally bundled with the SF-2 EW closure of OP-SM-7d which addresses similar mass-mixing-running questions for the charged-lepton and quark sectors.
+\item \textbf{Leptogenesis and baryon-asymmetry origin.} The cosmological baryon-asymmetry-of-the-universe (BAU) and the related question of leptogenesis (whether the matter-antimatter asymmetry originates in lepton-sector CP-violation) are outside the active-flavor scope of SF-4. Resolution of these questions requires the EW-sector CP-violating phase $\delta_{CP}$ (deferred to SF-2 per route ii) plus cosmological evolution machinery beyond the SF-line scope. SF-4 makes no claim about leptogenesis viability or BAU magnitude.
 \end{itemize}
 
 \subsection{Forward roadmap}
@@ -1567,6 +1731,9 @@ Planck Collaboration, \emph{Planck 2018 results VI: Cosmological parameters}, As
 
 \bibitem{juno_design}
 JUNO Collaboration, \emph{Neutrino Physics with JUNO}, J.\ Phys.\ G \textbf{43}, 030401 (2016); \emph{JUNO Conceptual Design Report}, arXiv:1508.07166.
+
+\bibitem{juno2025_first_results}
+JUNO Collaboration, \emph{First measurement of the $\theta_{12}$ mixing angle and $\Delta m^2_{21}$ mass-squared splitting from JUNO commissioning data}, in preparation (2025); preliminary first-physics-results values $\sin^2\theta_{12} \approx 0.3092 \pm 0.0087$ and $\Delta m^2_{21} = (7.50 \pm 0.12) \times 10^{-5}$ eV$^2$ as reported in the JUNO Collaboration's first-physics public communications. Reference to be updated to peer-reviewed publication when available.
 
 \bibitem{katrin2022}
 KATRIN Collaboration, \emph{Direct neutrino-mass measurement with sub-electronvolt sensitivity}, Nature Phys.\ \textbf{18}, 160--166 (2022).
