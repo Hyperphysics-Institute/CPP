@@ -1,3 +1,50 @@
+# SM-5 Development Log
+
+## 10 May 2026 — op:nu_id RESOLVED cross-sector at v4.0 (SF-4 paper)
+
+**Programme-level update**: SM-5's foundational open problem `op:nu_id` ("Derive from CPP interaction rules why the neutrino mass eigenstates are diagonal in the K3 eigenmode basis while charged-lepton mass eigenstates are diagonal in the K3 vertex basis") is **RESOLVED at theorem level cross-sector** via the OPEN-FP-SF-4-2 closure campaign of Sessions 68–71 (working sketch document at `flagship_papers/neutrinos/sketches/SF-4_open_fp_sf_4_2_closure.md`).
+
+### Closure mechanism
+
+The Composite K3-Cage-Shell Coupling Theorem (NEW Theorem 5.2 in SF-4 v4.0, integrated Session 72 patch 0333) derives the TBM-aligned basis $\{|\phi_-^{(1)}\rangle = (2,-1,-1)/\sqrt{6}, |\phi_-^{(2)}\rangle = (0,-1,1)/\sqrt{2}\}$ from CPP substrate dynamics + standard $S_3$ representation theory, rather than ansatzing it as SM-5 op:nu_id required.
+
+**The derivation steps** (sub-claims (a) and (b) of the Composite Theorem):
+
+1. **Sub-claim (a)** — Degeneracy lifting: the charged lepton at K3 vertex $V_k$ (per SM-4 mass-formula structure: $e \leftrightarrow V_1$, $\mu \leftrightarrow V_2$, $\tau \leftrightarrow V_3$) produces a substrate-internal perturbation $\Delta H_\text{relevant} = \epsilon_L |V_k\rangle\langle V_k|$ with $\epsilon_L > 0$ (three positive contributions: mass-energy A9, substrate-stress A7, DI-bit interaction A1). This breaks the K3 Hamiltonian's full $S_3$ symmetry down to the stabilizer subgroup $S_2(V_k) = \{1, P_{ij}\}_{i,j \neq k}$ and lifts the antibonding-doublet degeneracy.
+
+2. **Sub-claim (b)** — TBM-basis selection from $S_3 \to S_2$ branching rule: the K3 ZBW Hamiltonian's antibonding doublet is the standard 2D irrep $\mathbf{2}$ of $S_3$. Under the residual $S_2(V_k) \subset S_3$, the branching rule $\mathbf{2}|_{S_2} = \mathbf{1}_+ \oplus \mathbf{1}_-$ uniquely (up to phase) yields the symmetry-adapted basis. For lepton at $V_1$, this is precisely SM-5's TBM-aligned basis: $|\phi_-^{(1)}\rangle$ has $P_{23}$ eigenvalue $+1$ (μτ-symmetric, $\mathbf{1}_+$ irrep); $|\phi_-^{(2)}\rangle$ has $P_{23}$ eigenvalue $-1$ (μτ-antisymmetric, $\mathbf{1}_-$ irrep).
+
+**The key structural fact** (Finding β-2 of the closure campaign): the perturbation $\Delta H_\text{relevant} \propto |V_1\rangle\langle V_1|$ is **automatically diagonal in the TBM basis** because $|\phi_-^{(2)}\rangle = (0,-1,1)/\sqrt{2}$ has zero amplitude on $V_1$ (the off-diagonal matrix element $\langle \phi_-^{(1)} | \Delta H | \phi_-^{(2)} \rangle = 0$). The TBM basis is forced, not chosen.
+
+### Status update for SM-5 paper
+
+The SM-5 paper text (`SM-5_tribimaximal_neutrino_mixing_from_k3.tex`) currently states:
+
+- Proposition prop:nu_id is marked as "ansatz, not derived"
+- Open Problem op:nu_id is registered as "the foundational open problem of the CPP neutrino sector"
+
+**Both should be updated** in a future SM-5 revision to reflect the v4.0 cross-sector closure:
+- Proposition prop:nu_id status updates from "ansatz" to "theorem at SM-corpus + CPP-axiom inheritance level via SF-4 v4.0 Composite K3-Cage-Shell Coupling Theorem"
+- Open Problem op:nu_id status updates from OPEN to RESOLVED at v4.0 cross-sector (deferred to next SM-5 paper revision; programme-registry-level closure is achieved at this Session 73 SHIP)
+
+### Cross-sector closure methodology
+
+This is the **first cross-sector closure in CPP** — a single derivation chain (Sessions 68–71 of OPEN-FP-SF-4-2 closure campaign) simultaneously resolves open problems in two distinct papers (SM-5 op:nu_id + SF-4 OPEN-FP-SF-4-2). The methodological pattern (foundational inputs from one sector + substrate dynamics from CPP axioms + standard rep theory → structural derivation resolving open problems in both sectors) templates future cross-sector mutual closures.
+
+Potential future applications of the cross-sector closure pattern:
+- SF-2 (EW flagship) ↔ SM-5 OP-SM-4 (Capotauro mechanism) — $\delta_{CP}$ derivation could close both simultaneously
+- SS-corpus ↔ SF-5 (strong unification flagship) — gluon counting and confinement
+- SR-corpus ↔ SF-6 (electromagnetism flagship) — eDP-sea polarization
+
+### References
+
+- Full derivation: `flagship_papers/neutrinos/sketches/SF-4_open_fp_sf_4_2_closure.md` (750 lines, 12 sections + 10 findings + close)
+- Paper integration: SF-4 v4.0 §5 (especially §5.7 NEW Composite K3-Cage-Shell Coupling Theorem; Theorem thm:k3_cage_shell_coupling)
+- Programme registries: `Research_Frontier.md` OPEN-FP-SF-4-2 entry RESOLVED at v4.0; `paper_catalog.md` SF-4 row at v4.0
+- Patches: 0329 (Session 68 launch) → 0330 (Session 69 sub-claim (a) closure) → 0331 (Session 70 sub-claims (b)(c) closure) → 0332 (Session 71 verification flag discharge + composite theorem) → 0333 (Session 72 SF-4 v4.0 paper integration) → 0334 (Session 73 programme-level registration this patch)
+
+---
+
 # Development History: SM-5 — Tribimaximal Neutrino Mixing from the K3 Cage Base Graph
 
 **Series:** 600-Cell Standard Model Emergence
