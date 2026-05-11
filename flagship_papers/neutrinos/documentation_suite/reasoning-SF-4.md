@@ -456,3 +456,37 @@ This lesson made it into the SF-4 v2.0 SHIP handover document as Lesson #9.
 ---
 
 *Tier 4 reasoning document continues at Session 60 v2.0 SHIP; the working sketch document `SF-4_picture_A_axiomatic_closure.md` is the canonical Tier-4 source for Sessions 55–59 verbatim reasoning. Future reasoning capture for SF-4 v2.x revisions, residual α-exponent sub-task closure, or related continuation work appends here.*
+
+
+---
+
+## Tier 4 Reasoning Capture for Sessions 55-79 — Pointer Section
+
+The Tier 4 verbatim reasoning for Sessions 55-79 (the post-v1.0 SHIP closure campaigns + ChatGPT review trajectory + programme-level closeout) lives canonically in three campaign sketch documents and in the patch commit messages, rather than being reproduced in this file. This convention diverges from Sessions 37-54 (which captured reasoning verbatim here in §§1-7 above) because the campaigns of Sessions 55-79 were sufficiently large that capturing reasoning in dedicated working-sketch documents per campaign was more useful than a monolithic file.
+
+### Where the Tier 4 reasoning for each campaign lives
+
+**v2.0 Picture A axiomatic closure (Sessions 55-60):**
+- Canonical Tier 4 source: `flagship_papers/neutrinos/sketches/SF-4_picture_A_axiomatic_closure.md` (1106 lines across 13 sections + 9 findings + close). Growing monotonically across the campaign; preserves the four-sub-claim closure reasoning verbatim including timescale-separation argument for sub-claim (a), AND-of-factors argument for sub-claim (b), transitive-action uniformity lemma for sub-claim (c), and icosahedral irrep decomposition for sub-claim (d). Three foundational inputs explicitly named at the closure boundary (3D embedding, neutrino identification, spin-orbital 2:1 frequency-locking).
+- Commit-message reasoning: patches 0316-0321 carry detailed reasoning for each sub-claim in their commit-message bodies. See `transcript-SF-4.md` for patch index and `git log` for full content.
+
+**v3.0 α-exponent residual closure (Sessions 62-66):**
+- Canonical Tier 4 source: `flagship_papers/neutrinos/sketches/SF-4_alpha_exponent_closure.md` (1184 lines across 13 sections + 9 findings + close). Preserves the four-sub-claim closure reasoning verbatim including cage-cooperation argument for sub-claim (a), unbound-3D-ZBW-no-rigid-cage argument for sub-claim (b), central-CP-anchor identification + leading-correlator argument for sub-claim (c), and combinatorial pair-count + SM-7-calibration argument for sub-claim (d). Four foundational inputs explicitly named at the closure boundary (FI-α-1 SM-9-inheritance, FI-α-2 cage-cooperative SSV reinforcement, FI-α-3 neutrino as unbound 3D orbital ZBW, FI-α-4 rigid-cage operational definition).
+- Six verification flags Vα-1 through Vα-6 discharged Session 65; reasoning for each flag in §§10-11 of the sketch document.
+
+**v4.0 cross-sector closure (Sessions 68-72):**
+- Canonical Tier 4 source: `flagship_papers/neutrinos/sketches/SF-4_open_fp_sf_4_2_closure.md` (750 lines). Preserves the perturbation-analysis reasoning verbatim including the breaking of K3's S_3 down to S_2(V_k) stabilizer via charged-lepton K3-vertex occupation, the off-diagonal-element-vanishes-because-|φ_-^(2)⟩-has-zero-amplitude-on-V_1 finding (Finding β-2), the standard S_3 → S_2 branching rule application yielding the TBM-aligned basis (Finding β-6), and the cross-sector closure methodology (Finding β-10). Six foundational inputs FI-K-1 through FI-K-6 explicitly named at the closure boundary; four CPP axioms A1+A4+A7+A9 with A1+A7+A9 most load-bearing.
+- Six verification flags Vβ-1 through Vβ-6 discharged Session 71; reasoning for each flag in §10 of the sketch document.
+
+**v4.x ChatGPT review-cycle trajectory (Sessions 75-77):**
+- The four ChatGPT review verdicts and Claude's verification + fix incorporation reasoning live in the commit messages of patches 0336/0337/0338. Each commit message is substantial (>3000 words) and captures both ChatGPT's specific items and Claude's verification-against-source + fix-design reasoning per item. See `transcript-SF-4.md` for patch index.
+- Methodological observation registered across the four cycles: external review at scale identifies the conditional-vs-full closure distinction as the critical interpretive lens that internal review tends to elide.
+
+**Programme-level closeout (Sessions 78-79):**
+- Reasoning for the programme-level registers freeze (patch 0339) and the methodology artifacts (patch 0340) lives in those patches' commit messages plus the new documents themselves (`templates/conditional_closure_framework.md` is itself a Tier 4 capture of the conditional-closure-framework reasoning, since it explains the framework's emergence, content, and forward applications). See those files directly.
+
+### Tier 4 discipline convention going forward
+
+For future flagship papers (SF-2 onward), the same convention applies: Tier 4 reasoning for closure campaigns lives in dedicated working-sketch documents in the paper's `sketches/` subdirectory, growing monotonically across the campaign and freezing at SHIP. The four-tier documentation suite's `reasoning-*.md` file holds Tier 4 reasoning for the pre-paper development phase (audit through v1.0 SHIP) and pointer sections to campaign sketches for the post-v1.0 phase. This avoids duplication and keeps reasoning capture co-located with the campaign it documents.
+
+The convention was implicit in SF-4's Sessions 55-72 (where the sketches were created without an explicit policy) and is now formalized via this pointer section. The convention should be added to `templates/documentation-suite.md` template at the next opportunity.

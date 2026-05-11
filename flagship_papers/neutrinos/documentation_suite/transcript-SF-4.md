@@ -292,3 +292,55 @@ This session lands the programme-level registration of v2.0 SHIP: Research_Front
 ---
 
 *Transcript document continues at Session 60 v2.0 SHIP; Session 61 wraps programme-level registration. Future per-session transactions for SF-4 v2.x revisions or residual α-exponent sub-task closure (post-v2.0) continue here.*
+
+
+---
+
+## Sessions 55-79 — Post-v1.0 SHIP campaigns and review-cycle trajectory
+
+### Session 55-60: v2.0 Picture A axiomatic closure campaign
+- **Patch 0316** (Session 55): Picture A campaign launch — sub-claim (a) substrate independence via timescale separation κ_1 ≤ 2m/m_P + A6' edge-sector independence.
+- **Patch 0317** (Session 56): Sub-claim (a) closure + V1 cross-check confirms unbound modes have orbital internal frequency = mc²/ℏ exactly as the timescale argument requires.
+- **Patch 0318** (Session 57): Sub-claim (b) channel coherence as AND-of-factors via A6' edge-sector decomposition.
+- **Patch 0319** (Session 58): Sub-claim (c) equilibrium uniform marginal via transitive-action uniformity lemma applied to I_h on 12 DP-orientation options.
+- **Patch 0320** (Session 59): Sub-claim (d) d_eff = 5 via icosahedral irrep decomposition 3_vector ⊕ 1 ⊕ 3_axial|_{spin-orbital-locked}.
+- **Patch 0321** (Session 60): v2.0 SHIP — Picture A axiomatic closure integrated into paper; σ_ν = (1/z²)⁵ = 1/z¹⁰ rigorously derived; 2% empirical residual identified as downstream effects, not Picture A corrections.
+
+### Sessions 62-66: v3.0 α-exponent residual closure campaign
+- **Patch 0323** (Session 62): α-exponent campaign launch — sub-claims (a) cage cooperation requires rigid cage + (b) unbound 3D orbital ZBW has no rigid cage at FI-level.
+- **Patch 0324** (Session 63): Sub-claim (c) no cooperation → bare per-link energy M₀ via central-CP-anchor argument; O(1/V²) sub-leading corrections from K3-eigenmode discrete-symmetry residual.
+- **Patch 0325** (Session 64): Sub-claim (d) bare per-link energy → V² scaling via combinatorial pair-count theorem; Theorem 3.1 composite proven.
+- **Patch 0326** (Session 65): Six verification flags Vα-1 through Vα-6 discharged including Vα-3 antibonding-mode bound refinement.
+- **Patch 0327** (Session 66): Working sketch SF-4_alpha_exponent_closure.md complete at 1184 lines.
+- **Patch 0328** (Session 67): v3.0 SHIP — α-exponent closure integrated; OPEN-FP-SF-4-1 RESOLVED at all four sub-goals; empirical residual decomposition (A)+(B)+(C) identifies OPEN-FP-SF-4-2 as next priority.
+
+### Sessions 68-72: v4.0 cross-sector closure campaign (FIRST CROSS-SECTOR CLOSURE IN CPP)
+- **Patch 0329** (Session 68): Cross-sector campaign launch — charged-lepton K3-vertex occupation perturbation analysis; Finding β-2 (off-diagonal element vanishes because |φ_-^(2)⟩ has zero amplitude on V_1).
+- **Patch 0330** (Session 69): Sub-claim (a) degeneracy lifting + sub-claim (b) wavefunction-spread argument.
+- **Patch 0331** (Session 70): Sub-claim (c) symmetry-character argument via S_3 → S_2 branching rule 2|_{S_2} = 1_+ ⊕ 1_-; Finding β-6 (basis selection from standard rep theory closes SM-5 op:nu_id).
+- **Patch 0332** (Session 71): Six verification flags Vβ-1 through Vβ-6 discharged; FI accounting consolidated (6 FIs + 4 CPP axioms; A1+A7+A9 most load-bearing); Finding β-10 (cross-sector closure methodology) registered.
+- **Patch 0333** (Session 72): v4.0 SHIP — Composite K3-Cage-Shell Coupling Theorem (Theorem 5.2) integrated; OPEN-FP-SF-4-2 + SM-5 op:nu_id jointly RESOLVED; first cross-sector closure in CPP.
+- **Patch 0334** (Session 73): Programme-level registration of v4.0 (paper_catalog SF-4 row v3.0 → v4.0; Research_Frontier OPEN-FP-SF-4-2 + SM-5 op:nu_id status updates; theorem-registry deferred to patch 0339).
+
+### Session 74: Anthology chapter
+- **Patch 0335** (Session 74): Anthology chapter "Where Two Problems Met" produced at ~4630 words in Rovelli/SciAm register across 9 sections.
+
+### Sessions 75-77: ChatGPT review-cycle trajectory v4.0 → v4.3
+- **Patch 0336** (Session 75): v4.1 ChatGPT v4.0 review incorporation — 6 structural fixes + NEW Lemma 3.1 (No-Anchor Correlator Vanishing) + 11 stale-text cleanups in §1.3/§1.5/§5.6/§11. Specs: 2387 lines source (+91 from v4.0).
+- **Patch 0337** (Session 76): v4.2 ChatGPT v4.1 review incorporation — 4 calibration fixes (Lemma 3.1 renamed "Suppression"; Theorem 5.2 "uniquely" softened; NEW Remark rem:conditional_closure added). TEX-ONLY per new workflow. Specs: 2442 lines source (+55).
+- **Patch 0338** (Session 77): v4.3 ChatGPT v4.2 review incorporation — 3 textual consistency fixes (§1.3 split, §1.4 K3-Cage-Shell deliverable updated, §1.5 "full RESOLUTION" → "conditional theorem-level resolution"). ChatGPT v4.3 review verdict (a) "v1.0 SHIP-ready, no further substantive edits required" ACHIEVED. Specs: 2503 lines source (+61).
+
+### Sessions 78-79: Programme-level closeout
+- **Patch 0339** (Session 78): SF-4 v4.3 closeout — programme-level registers freeze (theorem-registry: THEO-SF-4-1 status upgrade + NEW THEO-SF-4-4 + NEW LEMMA-SF-4-1 + NEW THEO-SF-4-5; master_glossary 8 new entries; paper_catalog SF-4 row v4.0 → v4.3) + Binary Artifact Workflow infrastructure (NEW scripts/cpp-recompile-pdf.sh + OS section) + anthology chapter §8 v4.3 touch-up.
+- **Patch 0340** (Session 79): Programme-level methodology artifacts — NEW templates/conditional_closure_framework.md (170 lines generalizing SF-4 v4.2's Remark rem:conditional_closure to programme convention) + NEW theorem-dependency-graph.md (120 lines, sector-organized inheritance map) + OS cross-references.
+
+### Session 80+: Forward queue (not yet executed)
+- **Patch 0341+** (Session 80): Four-tier documentation suite catch-up — handover-SF-4.md rewrite to Session 79 close + development-SF-4.md vignettes 18-25 + transcript-SF-4.md entries Sessions 55-79 + reasoning-SF-4.md pointer section. (THIS PATCH.)
+- TATWD integration to CPP_the_theory.md at v4.3.
+- SF-2 EW flagship campaign launch (δ_CP via OP-SM-7d Capotauro; candidate for second cross-sector closure in CPP).
+- Public posting v4.3 (Zenodo + arXiv) at Thomas's discretion.
+- ClearPC recompile of v4.3 PDF via cpp-recompile-pdf.sh (separate Thomas-side commit).
+
+---
+
+**Total patches Sessions 55-79: 25 patches** (0316-0340 inclusive), covering three closure campaigns + four ChatGPT review cycles + two programme-level closeout patches. SF-4 closure status across the trajectory: PARTIAL CLOSURE (v1.0) → ADVANCED (v2.0 Picture A) → fully RESOLVED OPEN-FP-SF-4-1 (v3.0 α-exponent) → cross-sector closure OPEN-FP-SF-4-2 + SM-5 op:nu_id (v4.0) → v4.3 SHIP-ready conditional theorem closure paper (verdict (a) achieved).
