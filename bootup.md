@@ -12,6 +12,11 @@
 
 **AI assistant does:**
 
+**Programme-state staleness audit (adopted 11 May 2026, patch 0344):** This file (`bootup.md`) is *infrastructure* — patterns, conventions, repository structure — not *current state*. Current results, predictions, theorem counts, paper versions, axiom counts, and open-problem status drift over time and are not maintained here. The authoritative current-state pointers are in §§4, 5, 8, 9, 13, and 9.5 below; follow them rather than reading any current-state-looking numbers in this file as authoritative. Hard-coded numbers in this file may be from older programme states (e.g., the patch-number reference in §3 is a deliberately occasional update).
+
+If you see a discrepancy between numbers / dates / status in this file and the live tracking documents, **trust the live tracking documents** (`paper_catalog.md`, `theorem-registry.md`, `predictions.md`, `Research_Frontier.md`, `master_glossary.md`, `axiom-registry.md`, `CPP_the_theory.md` Part VIII Predictions Scorecard) — they are updated per-paper and per-architecture event; this file is updated only when conventions, structure, or protocols change.
+
+
 ### Step 0 — BEFORE READING ANYTHING ELSE: clone the repo locally
 
 Every file referenced in this guide lives in the CPP repo. Many Claude session environments have a fetcher with a URL whitelist that rejects `raw.githubusercontent.com` sub-paths even within domains the session has already touched — the bootup file itself can be fetched (because the user pasted that exact URL), but every subsequent file referenced inside the bootup will return a permissions error. The reliable access path is `git clone`, then read locally via view/bash. `github.com` is in the standard allowed-domains list for Claude container environments with a bash tool.
@@ -145,7 +150,7 @@ cd ~/Documents/GitHub/CPP && git pull origin main && \
 
 ### Patch numbering convention
 
-Continue from the highest existing patch number in the repo's commit history. Run `git log --oneline | head -20` in the in-container clone to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. (As of 5 May 2026 Session 13 close, the highest committed patch is 0166.)
+Continue from the highest existing patch number in the repo's commit history. Run `git log --oneline | head -20` in the in-container clone to verify the current highest number. Patches are numbered sequentially across all sessions; the numbering does not reset. (As of 11 May 2026 Session 81 close, the highest committed patch is 0344; check `git log --oneline | head -1` for the actual current.) **Sub-commits between patches**: the Binary Artifact Workflow (adopted Session 78, patch 0339; documented in `templates/operating_system.md` §13 Binary Artifact Workflow) produces non-numbered ClearPC-local PDF-recompile commits between numbered Claude patches — these are PDF-only commits that don't receive a patch number. When determining "highest committed patch", read the highest `Patch NNNN:` in commit messages, not the highest commit SHA.
 
 ### Generating the patch files in the container
 

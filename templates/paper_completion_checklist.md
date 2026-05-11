@@ -203,11 +203,38 @@ whose trigger is not met.
   `operating_system.md` §10 "future_projects.md update procedure." Check
   the "current #1 priority" line for staleness.
 
-- [ ] **C10.** `CPP_the_theory.md` — update if the paper produced new
-  results that belong to any chapter (always the case for substantive
-  papers). Add results in connected prose (not bullets). Update the
-  Prediction Scorecard in Part VI. Procedure: `operating_system.md`
-  §10 "CPP_the_theory.md update procedure."
+- [ ] **C10.** `CPP_the_theory.md` (TATWD) — **MANDATORY at every
+  paper v1.0 SHIP** and at every programme-architecture event
+  (cross-sector closure, new methodology framework, sector synthesis).
+  Add results in connected prose (not bullets). Add a new chapter if
+  the paper synthesizes a sector or methodology pattern (e.g., SS-9
+  v1.0 added Chapter 22c; SF-4 v4.4 added Chapter 22d). Update the
+  Predictions Scorecard in Part VIII with new zero-parameter
+  correspondences. Move any resolved open problems from Part VII to
+  the relevant chapter and add new ones to Part VII. Procedure:
+  `operating_system.md` §10 "CPP_the_theory.md update procedure."
+  **Cadence calibration adopted 11 May 2026 (patch 0344):**
+  - **Mandatory** at v1.0 SHIP of any new paper, at any version that
+    adds new theorems / chapters / open problems to the programme,
+    and at any programme-architecture event.
+  - **Optional** for intra-paper revisions (v_n.x review-cycle
+    calibration, archival polish, wording-precision updates) when no
+    programme-state changes. Batch deferred updates into the
+    dossier-completeness closeout sequence.
+  - **Backstop**: the dossier-completeness closeout sequence
+    (`operating_system.md` §15) explicitly verifies TATWD integration
+    before the campaign closes; any deferred updates get caught
+    there. The Session 81 patch 0343 closeout that landed SF-4
+    v1.0 → v4.4 TATWD integration in a single batch is the
+    precedent — that batch was too large (4 SHIPs accumulated), and
+    the cadence-calibration above is designed to prevent recurrence.
+
+  The failure mode this calibration prevents: forward-queueing TATWD
+  integration at each SHIP and never executing it. SF-4 had TATWD
+  integration listed in the post-SHIP forward queue at v1.0 / v2.0 /
+  v3.0 / v4.0 and never executed until Session 81's closeout. The
+  new discipline makes the v1.0 SHIP integration mandatory rather
+  than aspirational.
 
 - [ ] **C11.** `bibliography/cpp_references.bib` — add a BibTeX entry for
   the new CPP paper; add BibTeX entries for any external works newly

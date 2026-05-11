@@ -35,7 +35,7 @@
 1. Read `bootup.md` — repository structure, conventions, what CPP is
 2. Read `theory-overview.md` — current physics state, strongest results, open problems
 3. Read `founders_vision.md` — Thomas's physical intuition (the WHY behind every equation)
-4. Read `CPP_the_theory.md` — the complete theory narrative (skim Part I-III, read Part V for open problems)
+4. Read `CPP_the_theory.md` — the complete theory narrative (skim Part I-III, read Part VII for open problems, Part VIII for the predictions scorecard). **Staleness audit (adopted 11 May 2026, patch 0344):** check the `Last updated` header against `paper_catalog.md`'s `Last updated` header — if there is more than one paper v1.0 SHIP between them, flag TATWD as stale and prioritize TATWD integration in the current session (per §10 cadence). The TATWD is the programme's master orientation document; new context windows read it first, and a stale TATWD produces stale orientation.
 5. Read `master_glossary.md` — all CPP terms and acronyms
 6. Check the most recent transcript in `/mnt/transcripts/` or `development-transcripts/` for where the last session left off
 7. Ask Thomas: "What would you like to work on today?"
@@ -879,12 +879,21 @@ VERIFICATION TIERS APPLIED IN THIS REVIEW:
 5. **Current #1 priority (April 2026):** SM-10 FEM chain network simulation — Phase 1 (CPU proof-of-concept) can be attempted immediately
 
 #### CPP_the_theory.md update procedure
-1. Identify which chapter(s) the new results belong to
-2. Add the results in connected prose (not bullet points — this is the "Kindle book")
-3. Update the Prediction Scorecard in Part VI
-4. If a new chapter is needed (new topic area), add it in the appropriate Part
-5. Move any resolved open problems from Part V to the relevant chapter
-6. Add any new open problems to Part V
+
+**Cadence (adopted 11 May 2026, patch 0344):**
+- **Mandatory** at v1.0 SHIP of any new paper; at any paper version that adds new theorems / chapters / open problems to the programme; at any programme-architecture event (cross-sector closure, new methodology framework, sector synthesis).
+- **Optional** for intra-paper revisions (v_n.x review-cycle calibration, archival polish, wording-precision updates) when no programme-state changes occur. Batch deferred updates into the dossier-completeness closeout sequence (§15 below).
+- **Backstop**: the dossier-completeness closeout sequence explicitly verifies TATWD integration before the campaign closes; deferred updates get caught there.
+
+**Procedure (6 steps):**
+1. Identify which chapter(s) the new results belong to.
+2. Add the results in connected prose (not bullet points — this is the "Kindle book").
+3. Update the Predictions Scorecard in Part VIII with new zero-parameter correspondences. Update the axiom-to-prediction ratio if it shifts.
+4. If a new chapter is needed (new topic area, new sector synthesis, new methodology pattern), add it in the appropriate Part. Recent precedents: Chapter 22c for SS-9 conditional theorem closure (Session 35); Chapter 22d for SF-4 neutrino sector + first cross-sector closure (Session 81); Chapter 35.5 for the conditional-closure framework + cross-sector closure programme methodology (Session 81).
+5. Move any resolved open problems from Part VII to the relevant chapter (preserve narrative continuity in Part VII via "RESOLVED via ... (see Chapter X)").
+6. Add any new open problems to Part VII with cross-reference to the paper that registered them.
+
+**Failure mode this procedure prevents:** forward-queueing TATWD integration at each SHIP and never executing it. SF-4 had TATWD integration listed in the post-SHIP forward queue at v1.0 / v2.0 / v3.0 / v4.0 and was not executed until Session 81's dossier-completeness closeout (patch 0343) batched all four into a single integration. The cadence-calibration above makes v1.0 SHIP integration mandatory rather than aspirational; intra-paper revisions are explicitly exempted to avoid churn.
 
 #### bibliography/cpp_references.bib update procedure
 **TRIGGER:** After any new paper is completed, or when a new external reference is cited.
@@ -1622,6 +1631,12 @@ What goes in Tier 4 (and what is excluded as housekeeping) is specified in §4 F
 Completion criterion: Tier 4 entries covering the session's substantive reasoning are appended; the file is committed. **N/A for sessions that produced no substantive paper-scoped reasoning** — explicitly mark N/A in Step H.
 
 #### Step E — Registry Updates (each registry independently audited)
+
+**TATWD integration audit** (adopted 11 May 2026, patch 0344): As a final step of registry-update audit, verify that `CPP_the_theory.md` (TATWD) has been integrated for any v1.0 SHIPs or programme-architecture events that landed during this session's work or in unresolved forward-queue items. The cadence specified in §10 makes TATWD integration mandatory at v1.0 SHIP and at programme-architecture events; if the integration was deferred (e.g., for intra-paper revision sequences), the dossier-completeness closeout sequence is where the catch-up happens. Check the `Last updated` header of `CPP_the_theory.md` against `paper_catalog.md`'s `Last updated` header — if the TATWD header is older than the most recent v1.0 SHIP or architecture event in paper_catalog, TATWD update is required before declaring the session-close handover complete.
+
+The Session 81 patch 0343 closeout that batched SF-4 v1.0 → v4.4 TATWD integration in a single update is the precedent for "delayed batch" cases. With the §10 cadence calibration in force, future delayed batches should not accumulate past one or two paper revisions before integration.
+
+
 
 Walk each of the following registries; for each, either update with the session's findings or explicitly mark N/A:
 
