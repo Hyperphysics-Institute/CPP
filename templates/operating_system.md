@@ -1454,6 +1454,17 @@ The script runs `pdflatex` twice (for cross-reference resolution), cleans auxili
 
 ---
 
+### Programme-level methodology references — adopted 11 May 2026
+
+Two programme-level methodology documents capture conventions that flagship papers depend on:
+
+- **`templates/conditional_closure_framework.md`** — programme-wide convention on conditional theorem closure, foundational input (FI) accounting, and the "RESOLVED" terminology convention. First instantiated in SF-4 v4.2 via Remark `rem:conditional_closure`; generalized to programme convention here. Every future flagship paper should produce an equivalent paper-level Remark setting the conditional-closure framing globally for its own scope.
+- **`theorem-dependency-graph.md`** — programme-level theorem dependency map. Sector-organized inventory of all formal mathematical objects (theorems, propositions, lemmas, corollaries) with their inheritance and load-bearing relationships. Companion to `theorem-registry.md` (which holds the mathematical statements); this document maps the relationships between statements.
+
+Both documents are updated at each flagship-paper SHIP or version increment that adds new formal objects or changes closure level. The update should be part of the SHIP-mechanics checklist in `templates/paper_completion_checklist.md` going forward.
+
+---
+
 ## Appendix: Lessons Learned (April 2026)
 
 ### From SM-8
