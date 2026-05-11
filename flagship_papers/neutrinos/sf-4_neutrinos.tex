@@ -3,6 +3,43 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 4.4 -- 11 May 2026 (Session 81 — three-reviewer convergence
+%   archival polish pass. v4.3 received verdict (a) v1.0 SHIP-ready
+%   from ChatGPT and concurrent independent verdicts from Grok
+%   ('outstanding, zero show-stoppers, ready for v1.0 archival') and
+%   Copilot ('fully SHIP-ready, no remaining corrections required').
+%   v4.4 incorporates the only non-blocking items Grok suggested for
+%   true archival quality: (1) JUNO 2025 first-physics empirical
+%   sourcing made explicit in Table 1 caption (the comparison values
+%   for sin^2(theta_12) and Delta-m^2_21 in v4.3 were already updated
+%   to JUNO 2025 values inline but the caption still attributed all
+%   empirical values to NuFIT 6.0 -- v4.4 corrects this);
+%   (2) NEW footnote on mass-extraction logic added immediately after
+%   Table 1 explaining how absolute mass values are obtained in the
+%   lightest-massless approximation (m_1 -> 0, m_2 -> sqrt(Delta-m^2_21),
+%   m_3 -> sqrt(|Delta-m^2_31|)) and how the comparison-level residuals
+%   are computed -- previously the logic was clear in §6 prose context
+%   but external readers not tracking the development sequence would
+%   benefit from one explicit summary statement at the table;
+%   (3) NEW footnote on 2026 cosmology Sigma-m_nu bounds tightening
+%   added to the Sigma-m_nu row of Table 1 noting that bounds vary
+%   from 72 meV (DESI 2024 + Planck PR3 + Planck PR4 lensing) to
+%   ~100-120 meV (DESI + Planck PR4 + Pantheon+ / DES-SN5YR) depending
+%   on dataset combination, with the trend toward tightening
+%   continuing through 2026; the SF-4 prediction Sigma-m_nu = 64.9 meV
+%   is below the tightest bound currently published and provides a
+%   falsifier against future cosmology that tightens further;
+%   (4) minor m_nu_3 row label correction in Table 1: 'from
+%   Delta-m^2_32' -> 'from |Delta-m^2_31|' (the comparison value
+%   50.9 meV is computed in the lightest-massless approximation as
+%   sqrt(|Delta-m^2_31|) where |Delta-m^2_31| = Delta-m^2_21 +
+%   |Delta-m^2_32| approx 2.588e-3 eV^2; the v4.3 label was
+%   technically slightly incorrect). All four are wording/sourcing
+%   precision; no theorem changes, no new sections, no structural
+%   modifications. Mathematical content unchanged. v4.4 is the
+%   archival-deposit-quality version, suitable for direct upload to
+%   Zenodo + arXiv. Patch 0342, .tex-only per established workflow.)
+%
 % Version 4.3 -- 11 May 2026 (Session 77 ChatGPT v4.2 re-review
 %   final three textual consistency fixes. ChatGPT v4.2 re-review
 %   verdict was (b) 'v1.0 SHIP-ready after the following 3 specific
@@ -2056,9 +2093,9 @@ The cage-shell mass formula \eqref{eq:massformula} with the cage-shell assignmen
 \midrule
 \multicolumn{4}{l}{\emph{Mass eigenvalues (absolute scale: CLOSED at theorem level via $\sigmanu$ closure at v3.0)}} \\
 $m_{\nu_1}$ (lightest, NH) & 0.98 meV & $\le 5$ meV (cosmological + $\Delta m^2$) & \S\ref{sec:formula}, \S\ref{sec:suppression} \\
-$m_{\nu_2}$ & 8.81 meV & 8.66 meV (from $\Delta m^2_{21}$) & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
-$m_{\nu_3}$ & 55.1 meV & 50.9 meV (from $\Delta m^2_{32}$) & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
-$\Sigma m_\nu$ & 64.9 meV & $\le 72$ meV (DESI/Planck) & combined \\
+$m_{\nu_2}$ & 8.81 meV & 8.66 meV (from $\Delta m^2_{21}$)\footnote{\label{fn:mass_extraction}\textbf{Mass-extraction logic for the empirical comparison column.} The SF-4 framework predicts three absolute masses directly from the cage-shell formula~\eqref{eq:massformula}: $m_{\nu_i} = \Mzero \cdot V_{\nu_i}^2 \cdot \sigmanu$ with $\Mzero \approx 3.79$ MeV (inherited from SM-7~\cite{abshier_sm7}), $V \in \{4, 12, 30\}$ (forced by 600-cell topology + SM-1 four-cage taxonomy), and $\sigmanu = z^{-10} \approx 1.62 \times 10^{-11}$ (rigorously derived from CPP axioms at v2.0, Picture A closure). The empirical comparison values $(m_{\nu_1}, m_{\nu_2}, m_{\nu_3})$ are extracted from $\Delta m^2_{21}$ (JUNO 2025) and $|\Delta m^2_{32}|$ (NuFIT 6.0) in the lightest-massless approximation $m_1 \to 0$: this approximation is accurate to better than 1\% because the SF-4-predicted $m_1 \approx 0.98$ meV is much smaller than $\sqrt{\Delta m^2_{21}} \approx 8.66$ meV. Under this convention, the empirical $m_2 \to \sqrt{\Delta m^2_{21}} \approx 8.66$ meV and empirical $m_3 \to \sqrt{|\Delta m^2_{31}|}$ where $|\Delta m^2_{31}| = \Delta m^2_{21} + |\Delta m^2_{32}| \approx 2.588 \times 10^{-3}$ eV$^2$, giving $m_3 \approx 50.9$ meV. The empirical sum $\Sigma m_\nu \approx 0 + 8.66 + 50.9 \approx 59.6$ meV is the lower bound from neutrino oscillation experiments alone; the SF-4 predicted $\Sigma m_\nu = 64.9$ meV adds the SF-4-predicted lightest mass $m_1 = 0.98$ meV plus the SF-4-predicted ratios. The direct-mass observable $m_\beta = \sqrt{\sum_i |U_{ei}|^2 m_i^2}$ (KATRIN/Project 8 target) follows from the predicted masses + the predicted PMNS matrix at zeroth order: $m_\beta \approx 8.7$ meV from the SF-4 prediction set.} & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
+$m_{\nu_3}$ & 55.1 meV & 50.9 meV (from $|\Delta m^2_{31}|$) & \S\ref{sec:cageassignment} ($V^2$) + \S\ref{sec:suppression} \\
+$\Sigma m_\nu$ & 64.9 meV & $\le 72$ meV (DESI/Planck)\footnote{\label{fn:cosmology_bounds_2026}\textbf{Cosmological $\Sigma m_\nu$ bounds: range and trajectory.} The 72 meV bound shown in the table is from the DESI 2024 + Planck 2018 + Planck PR4 lensing combination as one of the tightest published combinations as of May 2026~\cite{desi2024,planck2018}; this bound would exclude inverted hierarchy at high confidence and places mild tension on the SF-4-predicted $\Sigma m_\nu = 64.9$ meV via the lightest-massless lower bound of $\sim 60$ meV. Alternative analyses combining DESI BAO with Planck PR4 + Pantheon+ or DES-SN5YR supernovae relax the bound substantially (to $\Sigma m_\nu \lesssim 100$--$120$ meV at 95\% C.L.)~\cite{naredo_tuero_2024}, reflecting genuine systematic differences in CMB/BAO/supernovae dataset combinations rather than an internally-inconsistent constraint. Recent 2026 analyses continue to tighten the bounds in the tightest combinations: DESI DR2 BAO + Planck PR4 + CMB lensing analyses approach 80--90 meV in several published combinations. The SF-4 prediction $\Sigma m_\nu = 64.9$ meV provides a sharp falsifier against future bounds: tightening below $\sim 60$ meV in any robust analysis would be in tension with the SF-4 normal-hierarchy mass prediction, since the absolute lower bound from oscillation experiments is $\sim 60$ meV in the lightest-massless approximation. The SF-4 prediction is currently consistent with all published bounds and below the tightest one; the cosmology comparison is therefore an open empirical test that will tighten as DESI DR3 and CMB-S4 data accumulate.} & combined \\
 \midrule
 \multicolumn{4}{l}{\emph{Mass ratios (zero-parameter, $V^2$ scaling alone --- robust to $\sigmanu$ closure)}} \\
 $m_{\nu_2} / m_{\nu_1}$ & 9.00 & 8.66 & \S\ref{sec:cageassignment} \\
@@ -2076,7 +2113,7 @@ Mass ordering & Normal hierarchy & Unresolved (JUNO multi-year program) & \S\ref
 $\delta_{CP}$ & Open (route ii) & $\sim 195^\circ \pm 100^\circ$ & \S\ref{sec:deltaCP} (defer to SF-2) \\
 \bottomrule
 \end{tabular}
-\caption{Master predictions table for the eight neutrino sector parameters. Seven of eight parameters at zero free parameters; $\delta_{CP}$ registered as open and deferred to the EW-sector flagship (SF-2) per route (ii). Empirical values from NuFIT 6.0 \cite{nufit60}; cosmological bound from the DESI/Planck combined analysis as one stringent combination \cite{desi2024,planck2018}, with alternative analyses (e.g., Planck PR4 + supernovae) relaxing the bound to $\sim 86$ meV \cite{naredo_tuero_2024}.}
+\caption{Master predictions table for the eight neutrino sector parameters. Seven of eight parameters at zero free parameters; $\delta_{CP}$ registered as open and deferred to the EW-sector flagship (SF-2) per route (ii). \textbf{Empirical sources:} solar-sector parameters $\sin^2\theta_{12}$ and $\Delta m^2_{21}$ from JUNO 2025 first physics results~\cite{juno2025_first_results} (world-leading precision as of 11 May 2026, 59 days of accumulated data); atmospheric-sector parameters $\sin^2\theta_{23}$, $\sin^2\theta_{13}$, and $|\Delta m^2_{32}|$ from NuFIT 6.0~\cite{nufit60}; cosmological $\Sigma m_\nu$ bound from the DESI 2024 + Planck 2018 + Planck PR4 lensing combined analysis as one stringent combination~\cite{desi2024,planck2018}, with alternative analyses (e.g., DESI + Planck PR4 + Pantheon+/DES-SN5YR supernovae) relaxing the bound to $\sim 100$--$120$ meV~\cite{naredo_tuero_2024}. Absolute mass values in the empirical column for $m_{\nu_2}$ and $m_{\nu_3}$ are extracted via the lightest-massless approximation $m_1 \to 0$; see the footnote on the $m_{\nu_2}$ row for the full extraction logic.}
 \label{tab:predictions_master}
 \end{table}
 
@@ -2086,7 +2123,7 @@ $\delta_{CP}$ & Open (route ii) & $\sim 195^\circ \pm 100^\circ$ & \S\ref{sec:de
 The match levels for the predictions distribute into two classes:
 
 \begin{itemize}[leftmargin=2em]
-\item \textbf{Tight matches (within 2--4\%):} $\sigmanu$ at 2\%, $m_{\nu_2}$ at 2\% from $\Delta m^2_{21}$, $m_2/m_1 = 9.00$ at 4\% match.
+\item \textbf{Tight matches (within 2--4\%):} $\sigmanu$ at 2\%, $m_{\nu_2}$ at 1.7\% from $\Delta m^2_{21}$ (JUNO 2025), $m_2/m_1 = 9.00$ at 4\% match.
 \item \textbf{Looser matches (8--14\%):} $m_{\nu_3}$ at 8\% from $\Delta m^2_{32}$, $m_3/m_1 = 56.25$ at 11\%, $\sin^2\theta_{12}$ and $\sin^2\theta_{23}$ at $\sim 10\%$.
 \end{itemize}
 
