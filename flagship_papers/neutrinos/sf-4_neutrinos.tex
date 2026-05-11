@@ -3,6 +3,56 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 4.2 -- 11 May 2026 (Session 76 ChatGPT v4.1 re-review
+%   incorporation. ChatGPT v4.1 re-review returned verdict (b)
+%   "v1.0 SHIP-ready after the following 4 specific fixes" --
+%   substantial improvement from v4.0's (c) "not yet v1.0 SHIP-ready"
+%   verdict. The four remaining issues are wording precision and
+%   proof-strength calibration, not structural contradictions; v4.2
+%   incorporates all four. (1) Lemma 3.1 (No-Anchor Correlator
+%   Vanishing) statement and proof reworded to avoid overclaiming
+%   exact vanishing: the lemma's content is correctly stated as
+%   "correlator contributes no coherent V^(1/3)-order enhancement"
+%   rather than "correlator vanishes" -- the O(1/V^2) bound is the
+%   actual result; the framing now matches that bound rather than
+%   claiming exact zero. Sub-claim (c) text in the alpha-exponent
+%   derivation updated to match the revised lemma statement.
+%   Lemma title softened from "No-Anchor Correlator Vanishing" to
+%   "No-Anchor Correlator Suppression". (2) Theorem 5.2 clause
+%   (iii) "uniquely" / "Forced by" language softened to
+%   "structurally selected within the symmetry-preserving perturbative
+%   class" / "Determined by" -- the cage-shell-to-K3-eigenmode
+%   assignment is uniquely selected within the symmetry class allowed
+%   by S_2(V_1)-invariance, not uniquely forced in an unqualified
+%   sense (nearby symmetry-equivalent embeddings under relabelings
+%   are not excluded by the perturbation alone). Mathematical content
+%   unchanged; phrasing now matches the actual proof strength.
+%   (3) NEW Remark on closure level added immediately after the
+%   Composite K3-Cage-Shell Coupling Theorem statement (Section 5.7)
+%   making the conditional-theorem-closure framing explicit: the
+%   Composite Theorem closes OPEN-FP-SF-4-2 and SM-5 op:nu_id at the
+%   conditional theorem closure level within the current CPP theorem
+%   stack (six FIs + four CPP axioms load-bearing), not at the full
+%   derivational closure level from CPP primitives alone. References
+%   to OPEN-FP-SF-4-2 and op:nu_id as "RESOLVED" throughout the
+%   paper should be read in this conditional sense. This makes
+%   visible the same FI-accounting structure that v3.0 had for
+%   OPEN-FP-SF-4-1 closure. (4) Terminology sweep: selective
+%   "RESOLVED" instances in conclusion-adjacent sections and
+%   forward-roadmap qualified with "conditionally resolved at the
+%   current CPP theorem stack inheritance level" or equivalent
+%   phrasing where the conflation between conditional closure and
+%   full derivational closure could occur. Most "RESOLVED"
+%   statements are preserved as-is (the conditional sense is set by
+%   the new Remark in Section 5.7); only locations where the closure
+%   sense was ambiguous receive the qualifier. Programme state
+%   UNCHANGED: v4.2 is wording precision and calibration work, not
+%   new theorem content. Theorem count UNCHANGED at 5. Bibliography
+%   UNCHANGED at 25 entries. PDF compilation: two pdflatex passes
+%   clean. ChatGPT v4.2 re-review expected to verify the four
+%   calibration fixes and clear v1.0-SHIP-readiness verdict (a) for
+%   public posting. Patch 0337.)
+%
 % Version 4.1 -- 11 May 2026 (Session 75 ChatGPT v4.0 review
 %   incorporation. ChatGPT v4.0 review identified six specific
 %   structural and consistency issues blocking v4.0 to v1.0-SHIP-
@@ -1103,7 +1153,7 @@ uses the same mass quantum $\Mzero$ and 600-cell coordination $z = 12$ that anch
 
 The paper makes specific zero-parameter quantitative predictions and identifies five clean falsifiers: the JUNO mass-ordering measurement (multi-year program; expected $\sim 3\sigma$ ordering sensitivity within roughly 6 years of full operation) would falsify the cage-shell assignment if inverted hierarchy is confirmed; cosmological tightening to $\Sigma m_\nu < 50$ meV (DESI/CMB-S4) would falsify the $\sigmanu = z^{-10}$ prediction (current DESI/Planck bound of $\Sigma m_\nu \le 72$ meV is one stringent combination, with alternative analyses giving up to $\sim 86$ meV); the principled direct-mass falsifier --- a beta-decay measurement of $m_\beta$ robustly inconsistent with the predicted $m_\beta \approx 8.7$ meV --- is conceptually clean but exceeds near-term experimental sensitivity (Project 8 targets $m_\beta \sim 40$ meV); PMNS deviation from TBM at zeroth order (after SM-5's higher-order Capotauro corrections) would falsify the K3-eigenmode-identification ansatz that SM-5 introduces and SF-4 inherits; substrate-mechanism deviation from $\sigmanu = z^{-2 \deff}$ form would falsify the walk-dimension framework.
 
-The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) ship at theorem level at v4.0. The suppression mechanism advanced to CLOSED at theorem level via the Picture A axiomatic closure (v2.0) and the $\alpha$-exponent residual closure (v3.0), jointly resolving OPEN-FP-SF-4-1 at all four sub-goals. The K3-Cage-Shell Consistency advanced to CLOSED at theorem level via the joint OPEN-FP-SF-4-2 + SM-5 op:nu\_id cross-sector closure (v4.0), resolving the cage-shell coupling assignment to specific K3 eigenmodes (Theorem~\ref{thm:k3consistency} clause (iii)) from CPP substrate dynamics + standard $S_3$ representation theory. SF-4 introduces no new fitted parameter beyond the inherited single calibration $\Mzero$; the new structural-coupling claim OPEN-FP-SF-4-2 is now rigorously derived (the first cross-sector closure in CPP, simultaneously resolving SM-5's foundational open problem op:nu\_id on lifting the K3 antibonding-doublet degeneracy).
+The substantive derivations of the suppression mechanism (\S\ref{sec:suppression}) and the K3-Cage-Shell Consistency Theorem (\S\ref{sec:k3consistency}) ship at theorem level at v4.0. The suppression mechanism advanced to CLOSED at theorem level via the Picture A axiomatic closure (v2.0) and the $\alpha$-exponent residual closure (v3.0), jointly resolving OPEN-FP-SF-4-1 at all four sub-goals. The K3-Cage-Shell Consistency advanced to CLOSED at theorem level via the joint OPEN-FP-SF-4-2 + SM-5 op:nu\_id cross-sector closure (v4.0), resolving the cage-shell coupling assignment to specific K3 eigenmodes (Theorem~\ref{thm:k3consistency} clause (iii)) from CPP substrate dynamics + standard $S_3$ representation theory at the conditional theorem closure level (see Remark~\ref{rem:conditional_closure} for the FI-accounting framing). SF-4 introduces no new fitted parameter beyond the inherited single calibration $\Mzero$; the new structural-coupling claim OPEN-FP-SF-4-2 is now rigorously derived at conditional theorem closure (the first cross-sector closure in CPP, simultaneously resolving SM-5's foundational open problem op:nu\_id on lifting the K3 antibonding-doublet degeneracy at the same conditional closure level).
 \end{abstract}
 
 \medskip\noindent
@@ -1394,26 +1444,26 @@ This is the rigorous form of the v1.0/v2.0 structural argument: the $V^{1/3}$ fa
 
 \item \textbf{Sub-claim (b) [Session 62 \cite{sf4_alpha_exponent_closure} \S 4, FI-level]:} The unbound 3D orbital ZBW configuration does not satisfy the rigid-cage condition. Proof: by FI-$\alpha$-3, the unbound 3D orbital ZBW has no central CP anchor; this immediately fails FI-$\alpha$-4 condition (iii). Hence not a rigid cage.
 
-\item \textbf{Sub-claim (c) [Session 63 \cite{sf4_alpha_exponent_closure} \S 8, theorem level]:} Without cage cooperation, the per-link substrate-stress energy reduces to bare $\Mzero$ at leading order. The load-bearing element is the central CP anchor: bound modes have a central anchor that creates a radially-peaked substrate-information density and coordinated SSV directions, enabling the SM-9 \S 7.2 cascade structure that gives $V^{7/3}/N_{\text{links}}$ per-link amplification; unbound modes lack the anchor, the leading two-point SSV correlator vanishes at leading order (Lemma~\ref{lem:no_anchor_correlator}), and the per-link energy reduces to bare $\Mzero$. The cooperative amplification factor is $\langle A_{ij}\rangle = 1 + O(1/V^2)$ at leading order, with sub-leading corrections from the K3-eigenmode discrete-symmetry residual.
+\item \textbf{Sub-claim (c) [Session 63 \cite{sf4_alpha_exponent_closure} \S 8, theorem level]:} Without cage cooperation, the per-link substrate-stress energy reduces to bare $\Mzero$ at leading order. The load-bearing element is the central CP anchor: bound modes have a central anchor that creates a radially-peaked substrate-information density and coordinated SSV directions, enabling the SM-9 \S 7.2 cascade structure that gives $V^{7/3}/N_{\text{links}}$ per-link amplification; unbound modes lack the anchor, the leading two-point SSV correlator is suppressed at $O(1/V^2)$ and contributes no coherent $V^{1/3}$-order enhancement to the per-link energy (Lemma~\ref{lem:no_anchor_correlator}), and the per-link energy reduces to bare $\Mzero$ at leading order in $V$. The cooperative amplification factor is $\langle A_{ij}\rangle = 1 + O(1/V^2)$, with sub-leading corrections from the K3-eigenmode discrete-symmetry residual.
 
-\begin{lemma}[No-Anchor Correlator Vanishing]
+\begin{lemma}[No-Anchor Correlator Suppression]
 \label{lem:no_anchor_correlator}
-Let the cage-shell configuration of $V$ CPs lack a central CP anchor (per FI-$\alpha$-3). Then for any two distinct cage-shell vertices $i \neq j$, the leading-order two-point SSV correlator vanishes:
+Let the cage-shell configuration of $V$ CPs lack a central CP anchor (per FI-$\alpha$-3). Then for any two distinct cage-shell vertices $i \neq j$, the two-point SSV correlator is suppressed at $O(1/V^2)$:
 \begin{equation}
 \langle \vec{S}_i \cdot \vec{S}_j \rangle = O(1/V^2)
 \label{eq:no_anchor_correlator}
 \end{equation}
-at leading order in $V$, with sub-leading corrections arising from the K3-eigenmode discrete-symmetry residual.
+at leading order in $V$. In particular, no coherent $V^{1/3}$-order enhancement of the per-link energy survives in the unanchored configuration --- the prerequisite that the SM-9 \S 7.2 cascade structure requires to deliver $V^{7/3}/N_{\text{links}}$ per-link amplification is absent.
 \end{lemma}
 
 \noindent
-\textit{Proof.} By A4 (substrate isotropy at vertex level), the substrate-information distribution at any cage-shell vertex is locally isotropic when no broken-symmetry mechanism singles out a preferred direction at that vertex. The absence of a central CP anchor (FI-$\alpha$-3) means no shared reference direction connects the cage-shell vertices: bound modes have a central anchor that creates the radial direction from anchor to each vertex (a shared reference axis), whereas unbound modes have no such shared reference. At vertex $V_i$ in the unanchored configuration, the SSV direction $\vec{S}_i$ is uniformly distributed within the A4-allowed orbit at $V_i$; with no anchor to single out a sub-orbit, the orbit is the full SO(3) sphere of substrate orientations at $V_i$.
+\textit{Proof.} By A4 (substrate isotropy at vertex level), the substrate-information distribution at any cage-shell vertex is locally isotropic when no broken-symmetry mechanism singles out a preferred direction at that vertex. The absence of a central CP anchor (FI-$\alpha$-3) means no shared reference direction connects the cage-shell vertices: bound modes have a central anchor that creates the radial direction from anchor to each vertex (a shared reference axis); unbound modes have no such shared reference. At vertex $V_i$ in the unanchored configuration, the SSV direction $\vec{S}_i$ is distributed within the A4-allowed orbit at $V_i$; with no anchor to single out a sub-orbit, no preferred radial or tangential direction survives at leading order.
 
 For the two-point correlator $\langle \vec{S}_i \cdot \vec{S}_j \rangle$, the joint distribution over $(\vec{S}_i, \vec{S}_j)$ factorizes at leading order because the A4-allowed orbits at $V_i$ and at $V_j$ have no shared symmetry constraint (no anchor $\Rightarrow$ no common reference axis). The expectation factors:
 \[
 \langle \vec{S}_i \cdot \vec{S}_j \rangle = \langle \vec{S}_i \rangle \cdot \langle \vec{S}_j \rangle + \text{(connected correlation)}.
 \]
-The single-vertex expectation $\langle \vec{S}_i \rangle = 0$ at leading order by A4 (already established as Verification Flag V$\alpha$-4 in \cite{sf4_alpha_exponent_closure} \S 11). The connected correlation requires a shared reference; with no anchor, the leading shared reference structure is the K3 base sub-graph of the cage shell, which provides only $O(1/V^2)$ residual correlations through the K3 eigenmode discrete-symmetry sector. Hence $\langle \vec{S}_i \cdot \vec{S}_j \rangle = O(1/V^2)$. $\square$
+The single-vertex expectation $\langle \vec{S}_i \rangle = 0$ at leading order by A4 (already established as Verification Flag V$\alpha$-4 in \cite{sf4_alpha_exponent_closure} \S 11). The connected correlation requires a shared reference axis; with no anchor, the leading shared reference structure is the K3 base sub-graph of the cage shell, which provides only $O(1/V^2)$ residual correlations through the K3 eigenmode discrete-symmetry sector. The leading-order content of the lemma is therefore the suppression at $O(1/V^2)$ rather than exact vanishing: $\langle \vec{S}_i \cdot \vec{S}_j \rangle = O(1/V^2)$, with the operational consequence that no coherent $V^{1/3}$-order enhancement of the per-link energy survives. $\square$
 
 \noindent
 \textit{Remark.} Bound modes, in contrast, have a central CP anchor that produces a shared radial reference direction from anchor to each vertex; the SSV directions $\vec{S}_i$ at cage-shell vertices align preferentially with this radial direction (broken local isotropy by the anchor's substrate-stress field per A7), producing $O(1)$ two-point correlations among cage-shell vertices --- the substrate signature of the SM-9 \S 7.2 cascade structure that delivers $V^{7/3}/N_{\text{links}}$ per-link amplification. The presence vs absence of the anchor is the binary distinction at the cooperative-factor level (Picture A V1 cross-check, \cite{sf4_alpha_exponent_closure} \S 10): bound modes have cooperative factor $\sim 4$--$1000$ via cage-cooperative SSV reinforcement; unbound modes have cooperative factor $1 + O(1/V^2)$ via Lemma~\ref{lem:no_anchor_correlator}.
@@ -1917,7 +1967,7 @@ Under the K3 ZBW Hamiltonian $H_0 = \hbar\omega_0 A_{K_3}$ with spectrum $\lambd
 
 \item \textbf{TBM-basis selection:} the symmetry-adapted basis of the 2D antibonding eigenspace under $S_2(V_k)$ is uniquely (up to phase) the decomposition $\mathbf{2}|_{S_2} = \mathbf{1}_+ \oplus \mathbf{1}_-$, given by the standard $S_3$ representation-theory branching rule applied to the antibonding doublet's standard 2D irrep. For lepton at $V_1$, this basis is the TBM-aligned basis $\{|\phi_-^{(1)}\rangle = (2,-1,-1)/\sqrt{6}, |\phi_-^{(2)}\rangle = (0,-1,1)/\sqrt{2}\}$ from \eqref{eq:nu_id}. This closes SM-5's foundational open problem op:nu\_id at theorem level.
 
-\item \textbf{Cage-shell coupling:} the K3-eigenmode-to-cage-shell assignment is uniquely $|\phi_-^{(1)}\rangle \to V = 4$ (tetrahedral cage hosting K3 base), $|\phi_+\rangle \to V = 12$ (icosahedral first shell, $H_3$-symmetric), $|\phi_-^{(2)}\rangle \to V = 30$ (icosidodecahedral shell 3, $I_h$-symmetric antipodal-pair structure with $\mathbf{1}_-$ multiplicity 14 under $S_2(V_1) \subset I_h$). Forced by (a) symmetry hierarchy $S_3 \subset H_3$ for the bonding mode, (b) symmetry exclusion of V=12 for antibonding modes, (c) the $V_1$-support / $\mu\tau$-parity structure of $|\phi_-^{(1)}\rangle$ vs $|\phi_-^{(2)}\rangle$ matching the V=4 tetrahedral / V=30 icosidodecahedral shell structures respectively. This (c)-condition has two consistent reformulations: as wavefunction-spread (concentrated amplitude near $V_1$ vs delocalized amplitude away from $V_1$) and as symmetry-character matching ($\mathbf{1}_+$ irrep matches $T_d$ structure of V=4; $\mathbf{1}_-$ irrep matches $\mathbf{1}_-$ multiplicity 14 in V=30 under $S_2(V_1) \subset I_h$). The two reformulations express the same underlying $V_1$-support / $\mu\tau$-parity content of the antibonding eigenstates --- not two independent derivations --- and their consistency confirms internal coherence rather than overdetermination from independent sources.
+\item \textbf{Cage-shell coupling:} within the symmetry-preserving perturbative class allowed by $S_2(V_1)$-invariance, the K3-eigenmode-to-cage-shell assignment is structurally selected as $|\phi_-^{(1)}\rangle \to V = 4$ (tetrahedral cage hosting K3 base), $|\phi_+\rangle \to V = 12$ (icosahedral first shell, $H_3$-symmetric), $|\phi_-^{(2)}\rangle \to V = 30$ (icosidodecahedral shell 3, $I_h$-symmetric antipodal-pair structure with $\mathbf{1}_-$ multiplicity 14 under $S_2(V_1) \subset I_h$). Determined by (a) symmetry hierarchy $S_3 \subset H_3$ for the bonding mode, (b) symmetry exclusion of V=12 for antibonding modes, (c) the $V_1$-support / $\mu\tau$-parity structure of $|\phi_-^{(1)}\rangle$ vs $|\phi_-^{(2)}\rangle$ matching the V=4 tetrahedral / V=30 icosidodecahedral shell structures respectively. This (c)-condition has two consistent reformulations: as wavefunction-spread (concentrated amplitude near $V_1$ vs delocalized amplitude away from $V_1$) and as symmetry-character matching ($\mathbf{1}_+$ irrep matches $T_d$ structure of V=4; $\mathbf{1}_-$ irrep matches $\mathbf{1}_-$ multiplicity 14 in V=30 under $S_2(V_1) \subset I_h$). The two reformulations express the same underlying $V_1$-support / $\mu\tau$-parity content of the antibonding eigenstates --- not two independent derivations --- and their consistency confirms internal coherence rather than overdetermination from independent sources. Uniqueness is up to symmetry-equivalent relabelings of the K3 vertex basis (which would relabel $V_1 \leftrightarrow V_2 \leftrightarrow V_3$ accordingly); the assignment is unique within any fixed choice of basis for the residual $S_2(V_k) \subset S_3$ stabilizer.
 \end{enumerate}
 \end{theorem}
 
@@ -1926,6 +1976,11 @@ The theorem rests on six FIs and four CPP axioms, plus inheritance from Picture 
 
 \begin{remark}[First cross-sector closure in CPP]
 The Composite Theorem~\ref{thm:k3_cage_shell_coupling} simultaneously resolves \textbf{two distinct open problems in two different papers}: OPEN-FP-SF-4-2 (Vertex-by-vertex K3-Cage-Shell Consistency) in SF-4 and op:nu\_id (Foundational open problem of the CPP neutrino sector: derive from CPP interaction rules why neutrino mass eigenstates are diagonal in the K3 eigenmode basis) in SM-5 \cite{abshier_sm5}. This is the first cross-sector closure in CPP: a single derivation chain (Sessions 68--71, four sessions) resolves open problems in two papers simultaneously. The methodological pattern (foundational inputs from one sector + substrate dynamics from CPP axioms $\to$ structural derivation that resolves open problems in both sectors) templates future cross-sector closures. Methodology finding: cross-sector entanglement can be turned into structural advantage when the foundational inputs of one closure are sufficiently rich to determine the closure in another sector.
+\end{remark}
+
+\begin{remark}[Conditional theorem closure vs full derivational closure]
+\label{rem:conditional_closure}
+The Composite K3-Cage-Shell Coupling Theorem~\ref{thm:k3_cage_shell_coupling} closes OPEN-FP-SF-4-2 and SM-5's op:nu\_id at the \emph{conditional theorem closure} level within the current CPP theorem stack --- that is, the resolution depends on the six foundational inputs FI-K-1 through FI-K-6 (all elsewhere-derived from SM-corpus and SF-4 v3.0) plus the four CPP axioms A1, A4, A7, A9 (A1+A7+A9 most load-bearing). It is not a full derivational closure from CPP primitives alone; the foundational inputs are themselves load-bearing and would each have to be re-derived from CPP primitives for the closure to ascend to full derivational level. The closure is the strongest theorem-level result achievable without re-deriving the foundational inputs --- inheritance pattern consistent with the v2.0 Picture A axiomatic closure (3 FIs) and the v3.0 $\alpha$-exponent residual closure (4 FIs). \textbf{References to OPEN-FP-SF-4-2 and op:nu\_id as ``RESOLVED'' throughout this paper should be read in this conditional sense} --- i.e., resolved at the current CPP theorem stack inheritance level, not as full unconditional derivational closure. The conditional-closure framing is consistent with how SS-9's main theorem ships (conditional theorem closure paper conditional on hypothesis stack C1--C8) and how the SF-line in general handles partial-closure flagship papers: explicit FI accounting at the closure boundary, with each FI named and traceable to its own derivation paper.
 \end{remark}
 
 \subsection{OPEN-FP-SF-4-2 closure status (RESOLVED at v4.0)}
@@ -2180,10 +2235,10 @@ The four enumerated sub-goals (\S\ref{sec:suppression_openwork}):
 
 The Picture A and alpha-exponent closures combined rest on at most six foundational inputs (Picture A's three: 3D embedding, neutrino identification, spin-orbital 2:1 frequency convention; plus alpha-exponent's four: SM-9-inheritance for $V^{7/3}$, cage-cooperative SSV reinforcement, neutrino identification (shared with Picture A), rigid-cage operational definition). All other content of OPEN-FP-SF-4-1 closure is derived from CPP axioms A1--A11. The combined closure represents the strongest theorem-level result achievable without re-deriving the foundational inputs themselves. Working sketch documents \cite{sf4_picture_A_closure, sf4_alpha_exponent_closure} capture the closure verbatim per Tier 4 discipline.
 
-\subsubsection*{OPEN-FP-SF-4-2: Vertex-by-vertex K3-coupling theorem --- RESOLVED at v4.0}
+\subsubsection*{OPEN-FP-SF-4-2: Vertex-by-vertex K3-coupling theorem --- conditionally RESOLVED at v4.0}
 \label{sec:open_fp_sf42}
 
-\textbf{OPEN-FP-SF-4-2 is RESOLVED at theorem level at v4.0} via the joint OPEN-FP-SF-4-2 + SM-5 op:nu\_id cross-sector closure of Sessions 68--71 \cite{sf4_open_fp_sf_4_2_closure}, formalized as the Composite K3-Cage-Shell Coupling Theorem~\ref{thm:k3_cage_shell_coupling} (\S\ref{sec:k3_cage_shell_coupling}). The K3-Cage-Shell Consistency Theorem (Theorem \ref{thm:k3consistency}) now closes at theorem level on all three clauses: (i) and (ii) close exactly at zeroth order; clause (iii) closes via the Composite Theorem, with V values $\{4, 12, 30\}$ forced by 600-cell topology, V = 20 exclusion forced by SM-1 particle-type taxonomy, the bonding-mode-to-V=12 assignment forced by $S_3 \subset H_3$ symmetry-hierarchy, and the antibonding-doublet split (V = 4 for $\nu_1$, V = 30 for $\nu_3$) derived from CPP substrate dynamics + standard $S_3 \to S_2$ representation-theory branching rule. \textbf{The cross-sector mutual closure simultaneously resolves SM-5's foundational open problem op:nu\_id on the K3-eigenmode identification from CPP interaction rules --- first cross-sector closure in CPP.}
+\textbf{OPEN-FP-SF-4-2 is RESOLVED at the conditional theorem closure level at v4.0} (i.e., resolved at the current CPP theorem stack inheritance level conditional on the six FIs and four CPP axioms enumerated in Remark~\ref{rem:conditional_closure}; not a full derivational closure from CPP primitives alone) via the joint OPEN-FP-SF-4-2 + SM-5 op:nu\_id cross-sector closure of Sessions 68--71 \cite{sf4_open_fp_sf_4_2_closure}, formalized as the Composite K3-Cage-Shell Coupling Theorem~\ref{thm:k3_cage_shell_coupling} (\S\ref{sec:k3_cage_shell_coupling}). The K3-Cage-Shell Consistency Theorem (Theorem \ref{thm:k3consistency}) now closes at theorem level on all three clauses: (i) and (ii) close exactly at zeroth order; clause (iii) closes via the Composite Theorem, with V values $\{4, 12, 30\}$ forced by 600-cell topology, V = 20 exclusion forced by SM-1 particle-type taxonomy, the bonding-mode-to-V=12 assignment forced by $S_3 \subset H_3$ symmetry-hierarchy, and the antibonding-doublet split (V = 4 for $\nu_1$, V = 30 for $\nu_3$) derived from CPP substrate dynamics + standard $S_3 \to S_2$ representation-theory branching rule. \textbf{The cross-sector mutual closure simultaneously resolves SM-5's foundational open problem op:nu\_id on the K3-eigenmode identification from CPP interaction rules --- first cross-sector closure in CPP.}
 
 The three v1.0 sub-goals are all DELIVERED at v4.0 (\S\ref{sec:k3_openwork}):
 \begin{enumerate}[leftmargin=2em]
@@ -2213,8 +2268,8 @@ With OPEN-FP-SF-4-1 fully RESOLVED at v3.0 and OPEN-FP-SF-4-2 fully RESOLVED at 
 The five-item open-work catalog above structures SF-4's continuation:
 
 \begin{itemize}[leftmargin=2em]
-\item \textbf{COMPLETED at v3.0:} OPEN-FP-SF-4-1 Picture A formalization + $\alpha$-exponent residual closure (Sessions 55--67, patches 0316--0328). All four v1.0 sub-goals RESOLVED.
-\item \textbf{COMPLETED at v4.0:} OPEN-FP-SF-4-2 vertex-by-vertex theorem via cross-sector closure with SM-5's op:nu\_id (Sessions 68--73, patches 0329--0334). First cross-sector closure in CPP. Both OPEN-FP-SF-4-2 and SM-5 op:nu\_id RESOLVED.
+\item \textbf{COMPLETED at v3.0 (conditional theorem closure):} OPEN-FP-SF-4-1 Picture A formalization + $\alpha$-exponent residual closure (Sessions 55--67, patches 0316--0328). All four v1.0 sub-goals resolved at the current CPP theorem stack inheritance level (3 FIs + 4 FIs respectively; see \S\ref{sec:alpha_derivation} and \S\ref{sec:pictureA} for FI enumeration).
+\item \textbf{COMPLETED at v4.0 (conditional theorem closure, cross-sector):} OPEN-FP-SF-4-2 vertex-by-vertex theorem via cross-sector closure with SM-5's op:nu\_id (Sessions 68--73, patches 0329--0334). First cross-sector closure in CPP. Both OPEN-FP-SF-4-2 and SM-5 op:nu\_id resolved at the current CPP theorem stack inheritance level (6 FIs + 4 CPP axioms; see Remark~\ref{rem:conditional_closure}).
 \item \textbf{High priority for SF-2 closure $\to$ v5.0:} $\delta_{CP}$ derivation via OP-SM-7d (route ii). Adds 8th zero-parameter prediction; ships in SF-2, propagates to SF-4 update when SF-2 ships. Candidate for a second cross-sector closure in CPP (SF-2 $\leftrightarrow$ SM-5 OP-SM-4 Capotauro), per the methodological pattern from v4.0.
 \item \textbf{Long-term:} Majorana-vs-Dirac, $0\nu\beta\beta$, sterile-neutrino extensions. v5.0+ scope; depends on substrate-level CP-conjugation work plus cosmological/experimental data.
 \end{itemize}
