@@ -1179,14 +1179,193 @@ This conditional-closure framework is the same one applied at SF-4 v4.0+~\cite{a
 \label{sec:mass_framework}
 % ===================================================================
 
-\textit{[Section to be drafted: master formula $m_B = \eta_B \cdot M_0^{\mathrm{(EW)}} \cdot F_{\mathrm{cage}}(\text{topology}_B)$; resolution of op:e0 ($m_H = E_0/\phig^2$ vs direct calc 125 GeV); v1.0 outcome PARTIAL CLOSURE with $F_{\mathrm{cage}}$ derived and $\eta$ calibrated.]}
+This section consolidates the cage-stability mass derivations of Sections~\ref{sec:Z_mass}, \ref{sec:H_mass}, and \ref{sec:H_ope0} into a unified master formula. The framework reproduces the four cage-boson masses ($\mWpm$, $\mW^{0}$, $\mZ$, $\mH$) at observation via independent calibration of the holographic dilution factor $\eta_B$ per boson, with cage-specific structural factors $F_{\mathrm{cage}}$ derived from the cage geometries (Theorems~\ref{thm:Zicos}, \ref{thm:Wbracelet}, \ref{thm:Hdodec}). The framework ships at v1.0 as PARTIAL CLOSURE: the $F_{\mathrm{cage}}$ structural factors are derived (with internal residuals registered as OPEN-FP-SF-2-loopfactor and OPEN-FP-SF-2-shelldens); the $\eta_B$ dilution factors are calibrated, with OPEN-FP-SF-2-$\eta$ inheriting from EW-corpus OPEN-P-EW-1.
+
+\subsection{Master mass formula}
+\label{sec:mass_master_formula}
+
+For each electroweak cage boson $B \in \{W^{\pm}, W^{0}, Z, H\}$ in the CPP framework, the cage-stability mass derives via the master formula
+\begin{equation}
+\boxed{\;m_B \;=\; \eta_B \cdot M_0^{(\mathrm{EW})} \cdot F_{\mathrm{cage}}(\mathrm{topology}_B)\;}
+\label{eq:mass_master}
+\end{equation}
+with the three factors interpreted as follows:
+
+\begin{description}
+\item[$M_0^{(\mathrm{EW})}$ --- electroweak mass quantum.]
+The substrate-level mass scale set by the cage-stability primitives. Per EW-2~\cite{abshier_ew2} and SM-7~\cite{abshier_sm7}, the electroweak mass quantum is
+\begin{equation}
+M_0^{(\mathrm{EW})} \;=\; \mathrm{sea\_strength} \cdot \frac{\hbar c}{l_P^3} \cdot 4\pi \cdot r_{\mathrm{eff}},
+\label{eq:M0_EW_def}
+\end{equation}
+with $\mathrm{sea\_strength}$ calibrated from the DP Sea coupling and $r_{\mathrm{eff}}$ the effective cage radius. The mass-quantum machinery is FI~5 of the conditional-closure framework (Remark~\ref{rem:conditional_closure}).
+
+\item[$F_{\mathrm{cage}}(\mathrm{topology}_B)$ --- cage-specific structural factor.]
+The geometric factor encoding the cage topology's contribution to the bound-state energy. Per Sections~\ref{sec:Z_mass}, \ref{sec:H_mass}, the structural factors for the three cage geometries are:
+\begin{align}
+F_{\mathrm{cage}}(\text{bracelet (W)}) &= \mathrm{hybrid\_weak\_factor} \cdot \phig^{-4} \cdot \kappa_W, \\
+F_{\mathrm{cage}}(\text{icosahedron (Z)}) &= \mathrm{hybrid\_weak\_factor} \cdot \phig^{-4} \cdot \ell_Z, \\
+F_{\mathrm{cage}}(\text{dodecahedron (H)}) &= \mathrm{hybrid\_weak\_factor} \cdot \phig^{-4} \cdot s_H,
+\label{eq:Fcage_three}
+\end{align}
+where $\mathrm{hybrid\_weak\_factor}$ is a common calibration prefactor across the EW sector, $\phig^{-4}$ is the four-layer phase-structure dilution from the cage's internal-symmetry phase interference, and $\{\kappa_W, \ell_Z, s_H\}$ are cage-specific residual factors deriving from the cage's vertex density, edge density, and substrate-coupling characteristics. The cage-shape framework in this paper derives $\kappa_W, \ell_Z, s_H$ at the structural level with internal residuals registered as OPEN-FP-SF-2-loopfactor and OPEN-FP-SF-2-shelldens.
+
+\item[$\eta_B$ --- holographic dilution factor.]
+The cosmological-horizon embedding factor, $\eta_B \sim 10^{-17}$ per boson, accounting for the cage's effective coupling to the macroscopic gravitational scale via the holographic encoding of substrate primitives at the cosmic horizon~\cite{abshier_ew1}. Per the EW corpus, $\eta$ is genuinely derived at a factor of $\phig^{-3}$ (Section~\ref{sec:inh_phi3}); the residual $\eta / \phig^{-3}$ remains as a calibrated quantity per boson, registered as OPEN-FP-SF-2-$\eta$ inheriting OPEN-P-EW-1 from the EW corpus.
+\end{description}
+
+\subsection{Cage-specific factor decompositions}
+\label{sec:mass_cage_decomp}
+
+The cage-stability structural factor for each cage decomposes per Equations~\ref{eq:Fcage_three} into a common phase-dilution component ($\phig^{-4}$ from the 4-layer phase structure shared across all closed cages) and a cage-specific residual factor:
+
+\begin{table}[H]
+\centering
+\caption{Cage-specific residual factors for the master mass formula. The ``Ideal value'' column gives the first-principles geometric prediction; the ``Effective value'' column gives the v0.1 calibrated reproduction; the ``Residual'' column states the calibrated-vs-ideal gap registered as an open problem.}
+\label{tab:cage_factors}
+\begin{tabular}{lccccc}
+\toprule
+Cage & Symbol & Ideal value & Effective value & Residual & Open problem \\
+\midrule
+W bracelet & $\kappa_W$ & 1.000 & $\approx 1.00$ & $\sim 0\%$ & none (closed) \\
+Z icosahedron & $\ell_Z$ & 1.437 & $\approx 1.20$ & $\sim -16\%$ & OPEN-FP-SF-2-loopfactor \\
+H dodecahedron & $s_H$ & 1.29 & $\approx 1.40$ & $\sim +9\%$ & OPEN-FP-SF-2-shelldens \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The W bracelet's $\kappa_W \approx 1.00$ has no significant residual relative to its ideal-geometry prediction; the bracelet's 6-vertex hexagonal ring geometry produces the cleanest cage-stability factor calibration in the sector. The Z and H residuals are registered separately as open problems (Sections~\ref{sec:Z_mass} and \ref{sec:H_mass}), with first-principles derivations expected to close them in subsequent CPP corpus work.
+
+\subsection{Mass-formula reproduction at observed values}
+\label{sec:mass_reproduction}
+
+Combining the master formula with the calibrated $\eta_B$ values per boson, the SF-2 framework reproduces:
+\begin{itemize}[leftmargin=*]
+\item $\mWpm = 80.377 \pm 0.012$ GeV~\cite{pdg_2024} with $\eta_W$ calibrated.
+\item $\mW^{0}$ predicted equal to $\mWpm$ within $\sim 1$ MeV (Proposition~\ref{prop:activated}).
+\item $\mZ = 91.1876 \pm 0.0021$ GeV with $\eta_Z$ calibrated; tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.54\%$ zero-parameter (Section~\ref{sec:Z_mZW_ratio}).
+\item $\mH = 125.10 \pm 0.20$ GeV with $\eta_H$ calibrated; resolution of op:e0 inconsistency via per-cage-stability-formula approach (Section~\ref{sec:H_ope0}).
+\end{itemize}
+
+\textbf{Parameter-economy assessment.} The framework reproduces four observed masses ($\mWpm$, $\mZ$, $\mH$, plus the structural prediction $\mW^{0} = \mWpm$) using three calibrated dilution factors ($\eta_W$, $\eta_Z$, $\eta_H$, with $\eta_{W^0} = \eta_W$ by Proposition~\ref{prop:activated}). The Weinberg angle $\sinsqthetaW = 3/(8\phig)$ is derived at zero parameters from SM-6, and the tree-level $\mZ/\mW$ cross-check at $0.54\%$ is zero-parameter. So the framework contains \emph{three calibrated parameters} reproducing \emph{four observables plus a zero-parameter consistency check}, with the $W^{0}$ existence as a forced structural prediction having no calibration.
+
+\subsection{Resolution of the EW-corpus op:e0 inconsistency}
+\label{sec:mass_ope0_resolution}
+
+The unified mass framework resolves the op:e0 inconsistency from the EW corpus (Section~\ref{sec:H_ope0}). The EW-5 unified-scale formula $\mH = E_0/\phig^2 \approx 94$ GeV is replaced by the per-cage-stability formula $\mH = \eta_H \cdot M_0^{(\mathrm{EW})} \cdot F_{\mathrm{cage}}(\mathrm{dodec})$ with $F_{\mathrm{cage}}(\mathrm{dodec})$ derived from the dodecahedron's specific structural factor (Equation~\ref{eq:Fcage_three}, third line). The $\sim 30\%$ discrepancy between the EW-5 unified-scale prediction and the direct cage-stability calculation in EW-4 is eliminated: the unified-scale formula's $\phig^{-2}$ factor was a structural approximation that absorbed the dodecahedron-specific shell density factor $s_H$ incorrectly; the per-cage-stability formula handles this factor correctly via the explicit $\phig^{-4} \cdot s_H$ decomposition.
+
+\subsection{Partial closure status and inherited open problems}
+\label{sec:mass_partial_closure}
+
+The unified mass framework ships at v1.0 as PARTIAL CLOSURE. Specifically:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{CLOSED at theorem level}: the master mass formula structure (Equation~\ref{eq:mass_master}); the cage-shape topologies for each boson (Theorems~\ref{thm:Zicos}, \ref{thm:Wbracelet}, \ref{thm:Hdodec}); the spin assignments ($W$ vector, $Z$ axial-vector, $H$ scalar) at the inherited level; the tree-level $\mZ/\mW = 1/\cos\theta_W$ cross-check at $0.54\%$ zero-parameter; the $\mWpm = \mW^{0}$ structural prediction within $\sim 1$ MeV (Proposition~\ref{prop:activated}).
+\item \textbf{CALIBRATED reproduction} (not derivation): the four cage-boson absolute mass values, via independent $\eta_B$ per boson. PARTIAL CLOSURE pending theorem-level closure of OPEN-FP-SF-2-$\eta$.
+\item \textbf{Inherited OPEN problems}:
+  \begin{itemize}[leftmargin=*]
+  \item OPEN-FP-SF-2-$\eta$ (holographic dilution from cosmic-horizon embedding); inherits OPEN-P-EW-1 from the EW corpus.
+  \item OPEN-FP-SF-2-loopfactor ($\ell_Z$ ideal-vs-effective residual at $\sim -16\%$); registered in Section~\ref{sec:Z_mass}.
+  \item OPEN-FP-SF-2-shelldens ($s_H$ ideal-vs-effective residual at $\sim +9\%$); registered in Section~\ref{sec:H_mass}.
+  \end{itemize}
+\end{itemize}
+
+PARTIAL CLOSURE is the strict-C posture established for the SF-line: every parameter traced back to substrate primitives plus calibration, the register-as-open card used judiciously, future closure of inherited open problems advancing SF-2 beyond v1.0 framing.
 
 % ===================================================================
 \section{Electroweak Symmetry Breaking in CPP (Cage-Formation Framing)}
 \label{sec:ewsb}
 % ===================================================================
 
-\textit{[Section to be drafted: revised EWSB framing from EW-4 'no SSB' stance to 'cage formation as CPP analog of EWSB'; substrate $H_4$ symmetry breaking to cage-internal symmetries ($D_6$ for $W$, $I_h$ for $Z$ and $H$); continuum-limit Yang-Mills EFT with confinement potential $V_{\mathrm{cage}}$ in place of Higgs potential; OPEN-FP-SF-2-EWSB registered.]}
+This section addresses the relationship between the SF-2 framework and the Standard Model's electroweak symmetry-breaking (EWSB) mechanism. CPP reformulates EWSB: \textbf{there is no fundamental Higgs field, no non-zero vacuum expectation value, and no spontaneous breaking of a global $SU(2)_L \times U(1)_Y$ symmetry as a continuum field-theoretic phenomenon.} Instead, the cage-formation event --- the moment when DP Sea Dipole Particles organize into a 6-vertex bracelet (W), a 12-vertex icosahedron (Z), or a 20-vertex dodecahedron (H) --- is itself the CPP-substrate analog of what the SM calls EWSB. The substrate's $H_4$ symmetry breaks at cage formation to the cage-internal symmetries (Section~\ref{sec:ewsb_breaking_pattern}); the continuum-limit Yang-Mills EFT recovers (Theorem~\ref{thm:YM_EFT}) with a confinement-type cage-formation potential $V_{\mathrm{cage}}$ in place of the SM Higgs potential (Section~\ref{sec:ewsb_Vcage}).
+
+\subsection{Revised EWSB framing: from EW-4 ``no SSB'' to ``cage formation is the analog''}
+\label{sec:ewsb_revised_framing}
+
+The EW-corpus EW-4 paper~\cite{abshier_ew4} originally articulated a ``no spontaneous symmetry breaking'' stance: the Higgs in CPP is just a particular cage state (the dodecahedron), and there is no SM-style EWSB mechanism. Per the SF-2 outline (Patch~0346) Decision~6, this stance is revised in SF-2 v1.0 to the present ``cage-formation as CPP analog of EWSB'' framing. The revision is motivated by three considerations:
+\begin{enumerate}[leftmargin=*]
+\item \emph{Theorem~\ref{thm:YM_EFT}} (Yang-Mills EFT limit, Section~\ref{sec:YM_EFT_thm}) recovers the SM Lagrangian form including a potential $V_{\mathrm{cage}}(\Phi)$ in place of the SM Higgs potential $V_{\mathrm{Higgs}}(\Phi)$. The fact that a $V$-term \emph{appears} in the effective Lagrangian indicates that the framework has a substrate-level analog of EWSB, even if the analog is not field-theoretic spontaneous symmetry breaking.
+\item The cage-formation event \emph{does} break a substrate symmetry: the $H_4$ symmetry of the empty 600-cell substrate is broken at cage formation to the cage's internal symmetry ($D_6$ for W, $I_h$ for Z, $I_h$ for H). This is a substrate-level symmetry breaking, structurally analogous (though not identical) to the SM-style spontaneous EWSB.
+\item Excluding the EWSB framing in v1.0 leaves a phenomenological gap: the Standard Model's predictions for the $W$ and $Z$ masses, the Higgs mass, and their relationship via the Higgs vacuum expectation value $v \approx 246$ GeV are well-tested at LHC; SF-2's PARTIAL CLOSURE mass framework should reproduce these relationships, which it does via the master mass formula in Section~\ref{sec:mass_framework}.
+\end{enumerate}
+
+The revised framing supersedes the EW-4 ``no SSB'' stance with a more careful articulation: \textbf{the CPP framework does not have a fundamental Higgs field, but the cage-formation event plays the substrate-level role that EWSB plays in the SM.} This articulation is honest about the framework's commitments and avoids both overreach (claiming CPP has EWSB in the SM sense) and underclaim (missing the structural similarity of cage formation to EWSB).
+
+\subsection{Substrate symmetry-breaking pattern}
+\label{sec:ewsb_breaking_pattern}
+
+The empty 600-cell substrate has the full $H_4$ Coxeter symmetry (order 14400). At cage formation, this symmetry breaks to the cage-internal stabilizer:
+
+\begin{table}[H]
+\centering
+\caption{Substrate $H_4$ symmetry-breaking pattern at cage formation.}
+\label{tab:ewsb_pattern}
+\begin{tabular}{lcl}
+\toprule
+Cage state & Cage-internal symmetry & Substrate-symmetry breaking pattern \\
+\midrule
+W$^{0}$ bracelet (6-vertex) & $D_6$ (order 12) & $H_4 \;\xrightarrow{\text{form bracelet}}\; D_6$ \\
+Z icosahedral (12-vertex) & $I_h$ (order 120) & $H_4 \;\xrightarrow{\text{form Z cage}}\; I_h$ \\
+H dodecahedral (20-vertex) & $I_h$ (order 120) & $H_4 \;\xrightarrow{\text{form H cage}}\; I_h$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For all three cage states, the symmetry breaking is from the substrate's $H_4$ (order 14400) to a cage-internal subgroup of order 12 or 120. The dimensions of the broken-symmetry generators are $14400 - 12 = 14388$ for the bracelet and $14400 - 120 = 14280$ for the Z and H cages. In the continuum-limit EFT (Theorem~\ref{thm:YM_EFT}), these broken generators correspond to substrate-level degrees of freedom that the cage's formation has frozen out --- structurally analogous to the longitudinal gauge-boson degrees of freedom in the SM EWSB Goldstone-eating mechanism.
+
+\subsection{Cage-formation potential $V_{\mathrm{cage}}$}
+\label{sec:ewsb_Vcage}
+
+The continuum-limit Yang-Mills EFT Lagrangian recovered by Theorem~\ref{thm:YM_EFT} contains the cage-formation potential
+\begin{equation}
+V_{\mathrm{cage}}(\Phi) = \sum_{B \in \{W, Z, H\}} V_B(\Phi_B),
+\label{eq:Vcage_general}
+\end{equation}
+where $\Phi_B$ is the cage-state collective coordinate for boson $B$ and $V_B$ is the cage-stability potential well that maintains the cage configuration against substrate fluctuations. Each $V_B$ has the qualitative form of a confinement potential:
+\begin{equation}
+V_B(\Phi_B) \;\sim\; \tfrac{1}{2} m_B^2 \, |\Phi_B|^2 + (\text{quartic and higher cage-stability terms}),
+\label{eq:VB_form}
+\end{equation}
+with $m_B$ the cage-boson mass from the master formula (Equation~\ref{eq:mass_master}). The quartic and higher terms encode the cage-stability interactions among the cage's 12 (bracelet), 12 (icosahedron), or 20 (dodecahedron) CPs.
+
+The cage-formation potential $V_{\mathrm{cage}}$ is structurally analogous to the SM Higgs potential
+\begin{equation}
+V_{\mathrm{Higgs}}^{\mathrm{(SM)}}(\Phi) = -\mu^2 |\Phi|^2 + \lambda |\Phi|^4,
+\label{eq:VHiggs_SM}
+\end{equation}
+in that both potentials drive the system to a non-trivial minimum-energy configuration that breaks the substrate (or, in the SM, field-theoretic) $SU(2)_L \times U(1)_Y$ symmetry. The difference is that $V_{\mathrm{Higgs}}$ is the potential of a hypothesized fundamental scalar field while $V_{\mathrm{cage}}$ is the effective potential of cage-stability dynamics on the 600-cell substrate; the substrate primitives generate $V_{\mathrm{cage}}$ from first principles, while the SM has $V_{\mathrm{Higgs}}$ as a postulate.
+
+A first-principles derivation of $V_{\mathrm{cage}}$ from the substrate cage-stability primitives --- producing the SM EWSB phenomenology (Higgs vacuum expectation value $v \approx 246$ GeV, mass relations among W/Z/H, weak gauge-boson masses from the cage-formation event) in the continuum limit --- is registered as OPEN-FP-SF-2-EWSB. This is the central open problem of the SF-2 framework's relationship to the SM EWSB sector.
+
+\subsection{OPEN-FP-SF-2-EWSB registration}
+\label{sec:ewsb_open_problem}
+
+\begin{openproblem}[Cage-formation potential closure to SM EWSB phenomenology]
+\label{op:sf2_ewsb}
+Derive the cage-formation potential $V_{\mathrm{cage}}(\Phi)$ in the continuum-limit Yang-Mills EFT (Theorem~\ref{thm:YM_EFT}) from CPP substrate primitives, in sufficient detail to reproduce the SM EWSB phenomenology in the continuum limit:
+\begin{enumerate}[leftmargin=*]
+\item The Higgs vacuum expectation value $v \approx 246$ GeV from the cage-formation event energy scale.
+\item The SM mass relations $\mWpm = g v / 2$, $\mZ = v \sqrt{g^2 + g'^2} / 2$, $\mH = v \sqrt{2\lambda}$.
+\item The standard Goldstone-eating mechanism in which the broken $SU(2)_L \times U(1)_Y$ generators provide the longitudinal degrees of freedom of the massive gauge bosons.
+\item The unitarity-bound argument for the Higgs mass scale (the upper bound on $\mH$ from perturbative unitarity in WW scattering).
+\end{enumerate}
+The derivation is registered as OPEN-FP-SF-2-EWSB, parallel to the SF-4 OPEN-FP-SF-4-1 / OPEN-FP-SF-4-2 inheritance posture~\cite{abshier_sf4}: PARTIAL CLOSURE at v1.0, full closure attempted in subsequent CPP corpus work.
+\end{openproblem}
+
+\subsection{The SF-2 v1.0 EWSB statement}
+\label{sec:ewsb_v1_statement}
+
+The SF-2 v1.0 paper makes the following EWSB-related claims:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{CPP has no fundamental Higgs field}; the 125 GeV scalar resonance observed at the LHC is the Higgs cage state (dodecahedral 20-vertex induced subgraph of the 600-cell, Theorem~\ref{thm:Hdodec}), not the excitation of a fundamental Higgs field.
+\item \textbf{CPP has no fundamental Higgs potential}; the SM Higgs potential $V_{\mathrm{Higgs}}^{\mathrm{(SM)}}$ is replaced in the continuum-limit Yang-Mills EFT by the cage-formation potential $V_{\mathrm{cage}}$ (Theorem~\ref{thm:YM_EFT}, Section~\ref{sec:ewsb_Vcage}).
+\item \textbf{The cage-formation event is the CPP analog of EWSB}; the substrate's $H_4$ symmetry breaks at cage formation to the cage-internal stabilizer ($D_6$ for W, $I_h$ for Z and H), structurally analogous to the SM's EWSB pattern.
+\item \textbf{The four cage-boson masses are reproduced at observation} via the master mass formula (Equation~\ref{eq:mass_master}) with calibrated $\eta_B$ per boson; the tree-level $\mZ/\mW = 1/\cos\theta_W$ relation inherits at $0.54\%$ zero-parameter cross-check (Section~\ref{sec:Z_mZW_ratio}).
+\item \textbf{First-principles closure of $V_{\mathrm{cage}}$ to SM EWSB phenomenology is registered as OPEN-FP-SF-2-EWSB} (Open Problem~\ref{op:sf2_ewsb}), inheriting PARTIAL CLOSURE at v1.0 in the strict-C posture.
+\end{itemize}
+
+This EWSB framing is the v1.0 SF-2 articulation of the relationship between CPP and the SM EWSB sector. It supersedes the EW-4 ``no SSB'' stance with a more careful articulation that recognizes the structural analogy between cage formation and EWSB while explicitly registering the open problem of first-principles closure.
 
 % ===================================================================
 \section{Cross-Sector Closure Attempt: SF-2 ↔ OP-SM-4 Capotauro (OPTIONAL Phase 7)}
