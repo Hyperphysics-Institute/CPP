@@ -98,12 +98,26 @@ flagship_papers/electroweak/
 │   └── oblique_parameters_sensitivity_scan.py
 └── documentation_suite/               (four-tier discipline)
     ├── handover-SF-2.md               (Session 83 close handover; Patch 0369)
-    ├── reasoning-SF-2.md              (planned Patch 0371)
-    ├── development-SF-2.md            (planned Patch 0372)
-    └── transcript-SF-2.md             (planned Patch 0372)
+    ├── reasoning-SF-2.md              (Tier 4 verbatim reasoning capture, 10 thematic sections, 460 lines; Patch 0371)
+    ├── development-SF-2.md            (19 patch-grouped vignettes + 6 lessons learned, 277 lines; Patch 0372)
+    └── transcript-SF-2.md             (20 per-patch transaction entries + patch summary table, 238 lines; Patch 0372)
 ```
 
-The 7-file companion documentation suite (mechanism / glossary / phenomena / philosophy / development-extension / reviews / keywords) is planned for Patch 0373 per `templates/documentation-suite.md` discipline. Anthology chapter at Rovelli/SciAm register planned for Patch 0374. TATWD integration planned for Patch 0375.
+**The four-tier documentation suite is the canonical documentation deliverable at v1.0 SHIP per PD-005 (four-tier subsumption for SF-line flagships).** The originally-planned 7-file companion suite (mechanism / glossary / phenomena / philosophy / reviews / keywords / FAQ-or-lay-summary) has been subsumed into the four-tier files plus programme-level registries plus the planned anthology chapter, per the precedent established by SS-9 v1.0 (Patch 0282) and SF-4 v1.0/v4.4 (Patches 0314 / 0344). The subsumption mapping:
+
+| 7-file suite slot | Subsumed into |
+|---|---|
+| glossary | `master_glossary.md` SF-2 v1.0 W⁰ catalyst framework terms section (10 entries; Patch 0370) |
+| mechanism | Main paper §5 + `reasoning-SF-2.md` Sections 1, 3, 5 |
+| phenomena | `predictions.md` Section 2 (PRED-O-21 through PRED-O-24) + Section 6 SF-2 row + paper §6 |
+| philosophy | `reasoning-SF-2.md` Sections 1, 10 + paper §11 EWSB framing |
+| reviews | Patches 0359, 0360, 0361, 0363, 0364, 0366, 0367 commit messages + main paper / Companion title-block CHANGELOG entries + `reasoning-SF-2.md` Section 7 |
+| keywords | Companion paper §2 glossary + main paper abstract + `master_glossary.md` SF-2 entries |
+| FAQ / lay-summary | Anthology chapter at Rovelli/SciAm register, planned for Patch 0374 (~5,000-6,000 words) |
+
+Two-Triggers discipline preserves the option to produce specific companion-suite files if external feedback substantively warrants (e.g., a sustained correspondence about the W⁰ catalyst mechanism would activate `mechanism-SF-2.md`) or if a v1.x revision produces substantive new content. The subsumption is the default, not an absolute rule. See `programmatic_decisions/PD-005-four-tier-subsumption-for-sf-line-flagships.md` for full rationale.
+
+Anthology chapter at Rovelli/SciAm register planned for Patch 0374. TATWD integration planned for Patch 0375.
 
 ---
 
