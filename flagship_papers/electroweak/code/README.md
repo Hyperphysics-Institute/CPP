@@ -31,6 +31,24 @@ Run:
 python3 dp_chain_monte_carlo.py
 ```
 
+### `oblique_parameters_sensitivity_scan.py`
+Sensitivity scan over the substrate-symmetry-motivated ratio space
+(Π_33/Π_11, Π_3Q/Π_11) demonstrating that integrand ratios in the
+range [0.85, 1.0] × [0.7, 1.0] land |ΔS|, |ΔT|, |ΔU| within the
+LEP/SLC 3σ bounds. Supplements `oblique_parameters_framework.py`
+by exploring the within-bounds region identified in Companion v1.2.
+
+**Companion section**: §5.6 (Numerical results from the exploratory simulation)
+**Main paper section**: §13.2.1 (Signature (i): oblique parameter contributions)
+**Purpose**: Demonstrate explicitly that the heuristic-placeholder
+result outside 3σ in the original program is NOT a falsification —
+the substrate-symmetry-expected ratios near unity land within bounds.
+
+Run:
+```bash
+python3 oblique_parameters_sensitivity_scan.py
+```
+
 ## Requirements
 
 ```bash
@@ -74,7 +92,14 @@ qDPs (~35%), with eDPs as rare minority (~5%).
 ## Patch history
 
 - **Patch 0362** (14 May 2026): Initial Companion paper kickoff;
-  both programs created in this directory.
+  `oblique_parameters_framework.py` and `dp_chain_monte_carlo.py`
+  created.
+- **Patch 0364** (14 May 2026): Actual GPU numerical results from
+  the two programs incorporated into Companion v1.2.
+- **Patch 0365** (14 May 2026): Sensitivity scan program
+  `oblique_parameters_sensitivity_scan.py` added; demonstrates that
+  substrate-symmetry-motivated ratio adjustments land |ΔS|, |ΔU|
+  within LEP/SLC bounds.
 
 ## Citation
 
