@@ -258,6 +258,17 @@ Standard structure:
 - **Registry files** (`Research_Frontier.md`, `predictions.md`, `axiom-registry.md`) — updated when a paper introduces new entries
 - **Paper catalog** (`paper_catalog.md`) — paper row updated when version changes
 
+**Version-discipline rule (adopted Patch 0367, 14 May 2026).** Every patch that modifies a `.tex` source file beyond cosmetic whitespace MUST also increment the version marker rendered in the paper's `\title{}` block (typically the `{\Large \textbf{Version X.Y --- date}}` line on the title page). Failure to do this is a chronic source of reviewer confusion: when a reviewer requests the paper at "the current version" and the title-block string still shows an older version number, the reviewer's feedback is filed against the wrong version and integration becomes ambiguous.
+
+Operational protocol:
+1. **At patch-authoring time**: every `str_replace` / patch that touches `.tex` source content checks whether the title-block version string requires increment. If yes, the patch includes a line touching the version string (typically `vX.Y` → `vX.(Y+1)`) and the date if changed.
+2. **At pre-commit verification**: a quick grep for the version string against the patch description should confirm match. The CHANGELOG block in the `.tex` header should also receive a new entry describing the patch.
+3. **At PDF compile time**: the title page is the most reliable place to verify the version is current; a mismatch between title-page version and recent patch history is a documentation defect to fix before the next reviewer round.
+
+This rule applies to all paper `.tex` files in `flagship_papers/`, `series_strong/papers/`, `series_standard_model/papers/`, etc. Companion `.tex` files (e.g., `sf-2_companion.tex`) carry their own version numbers and increment independently of the main paper version.
+
+Cosmetic-only patches (whitespace, comment-line edits, formatting) do not require version increment, but should be rare; the default assumption is that any patch substantively touching a `.tex` source crosses the increment threshold.
+
 **When a paper is at v0.x:** only the transcript, CHANGELOG, and registry entries are kept current. Do NOT start the 7-file suite.
 
 **Create all 7 companion files per `documentation-suite.md` when the paper is stable.** Each file should note the paper version it documents (e.g., "Paper: SM-8 v1.0").

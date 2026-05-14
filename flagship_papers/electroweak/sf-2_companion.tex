@@ -4,19 +4,18 @@
 %
 % Companion paper to SF-2 v1.0 (sf-2_electroweak.tex)
 %
-% Version 1.3 -- 14 May 2026 (Session 83 -- incorporation of Thomas's
-%   actual GPU sensitivity-scan results from oblique_parameters_
-%   sensitivity_scan.py. The 16x16 grid scan over (Pi_33/Pi_11,
-%   Pi_3Q/Pi_11) in [0.85, 1.0] x [0.7, 1.0] showed 214/256 = 83.6%
-%   of substrate-symmetry-motivated ratio combinations land within
-%   LEP/SLC 3-sigma bounds, with the geometric constraint
-%   |r33 - r3q| <~ 0.18 with r33 >= 0.85 clearly visible in the
-%   PASS/FAIL pattern. New Section 5.7 'Sensitivity scan: the within-
-%   bounds region explicitly' added documenting the result with a
-%   PASS/FAIL grid table, corner-case sensitivity table, and
-%   interpretation. Patch 0366.)
+% Version 1.4 -- 14 May 2026 (Session 83 -- ChatGPT v1.3 pair review
+%   final polish: emphatic red boxed disclaimer added immediately above
+%   the parametric scaling ansatz equations in Section 5.3 stating
+%   "These are dimensional scaling heuristics only, not renormalized
+%   one-loop electroweak corrections" with full enumeration of the
+%   five missing rigor ingredients. Companion to SF-2 main paper v0.8
+%   (Patch 0367) which receives parallel polish: Weinberg-angle phrasing
+%   tightened to "zero-parameter numerical correspondence emerging from
+%   spectral trace structure", Section 1.4 positioning paragraph aligned
+%   to PD-004 publication-pathway Layer 2 + Layer 3 language. Patch 0367.)
 %
-% v1.2 history (Patch 0364, Session 83):
+% v1.3 history (Patch 0366, Session 83):
 %   - ChatGPT: rigor-language tightening for S/T/U (parametric scaling
 %     heuristics) and Monte Carlo (exploratory statistical toy model)
 %   - ChatGPT: glossary W^0 entry neutralized (removed externalized-
@@ -88,8 +87,8 @@
 % =====================================================================
 \title{\textbf{SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks, and Reference Tables}\\[6pt]
 \large \textit{Companion to SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry}\\[6pt]
-{\Large \textbf{Version 1.3 --- 14 May 2026}} \\[0.5em]
-{\normalsize Companion paper to SF-2 flagship (sf-2\_electroweak.tex v0.7); issued jointly with SF-2 v1.0 SHIP. Six deliverables corresponding to Copilot and Grok review recommendations: executive overview, cage geometry figures, glossary, cheat-sheet reference tables, parametric scaling heuristics for $W^0$ oblique-parameter sensitivity with GPU-runnable exploratory simulation, and DP-chain composition exploratory Monte Carlo with GPU-runnable proof-of-concept program. Patch 0362 (Session 83): initial Companion kickoff. Patch 0363 (Session 83): v1.0 $\to$ v1.1 review-cycle incorporation (ChatGPT rigor-language tightening, Copilot reading-order box and DP-species table, Grok caption precision and embedded Python listings). Patch 0364 (Session 83): v1.1 $\to$ v1.2 incorporation of actual GPU numerical results --- DP-chain species ratios refined to (40.3 / 29.7 / 29.6 / 0.4)\% qualitatively validating the framework with eDP even rarer than estimated; oblique-parameter $\Delta T \approx 0$ confirms the $m_{W^0} = m_{W^{\pm}}$ mass-degeneracy prediction; $|\Delta S|, |\Delta U|$ at heuristic placeholders outside 3$\sigma$ emerges as a substantive constraint on the continuum-EFT derivation. Patch 0366 (Session 83): v1.2 $\to$ v1.3 incorporation of actual sensitivity-scan results from the supplementary scan program --- 214/256 = 83.6\% of substrate-symmetry-motivated ratio combinations land within LEP/SLC 3$\sigma$ bounds, with the geometric constraint $|r_{33} - r_{3Q}| \lesssim 0.18$ with $r_{33} \geq 0.85$ visible in the PASS/FAIL pattern. New Section 5.7 added.}}
+{\Large \textbf{Version 1.4 --- 14 May 2026}} \\[0.5em]
+{\normalsize Companion paper to SF-2 flagship (sf-2\_electroweak.tex v0.8); issued jointly with SF-2 v1.0 SHIP. Six deliverables corresponding to Copilot and Grok review recommendations: executive overview, cage geometry figures, glossary, cheat-sheet reference tables, parametric scaling heuristics for $W^0$ oblique-parameter sensitivity with GPU-runnable exploratory simulation, and DP-chain composition exploratory Monte Carlo with GPU-runnable proof-of-concept program. Patch 0362 (Session 83): initial Companion kickoff. Patch 0363 (Session 83): v1.0 $\to$ v1.1 review-cycle incorporation. Patch 0364 (Session 83): v1.1 $\to$ v1.2 incorporation of actual GPU numerical results --- DP-chain (40.3 / 29.7 / 29.6 / 0.4)\% qualitatively validating the framework; oblique-parameter $\Delta T \approx 0$ confirms the $m_{W^0} = m_{W^{\pm}}$ mass-degeneracy prediction. Patch 0366 (Session 83): v1.2 $\to$ v1.3 incorporation of sensitivity-scan results --- 214/256 = 83.6\% of substrate-symmetry-motivated ratio combinations land within LEP/SLC 3$\sigma$ bounds. Patch 0367 (Session 83): v1.3 $\to$ v1.4 ChatGPT v1.3 pair review final polish --- emphatic red boxed disclaimer added immediately above the parametric scaling ansatz equations in $\S 5.3$ stating ``These are dimensional scaling heuristics only, not renormalized one-loop electroweak corrections'' with full enumeration of the five missing rigor ingredients. Companion to SF-2 main paper v0.8 (parallel Patch 0367 polish on the main paper).}}
 \author{Thomas Lee Abshier, ND \\ and Anthropic Claude Opus 4}
 \date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
 \texttt{github.com/Hyperphysics-Institute/CPP}}
@@ -692,6 +691,11 @@ Two qualitative features distinguish $W^0$ contributions to $\Delta S, \Delta T,
 \subsection{Parametric scaling ansätze}
 
 At parametric-scaling level, the expected magnitudes of $\Delta S^{(W^0)}$, $\Delta T^{(W^0)}$, $\Delta U^{(W^0)}$ may be estimated by dimensional analysis. Using standard $1/(16\pi^2)$ loop-counting factors, $D_6$-symmetry-motivated structural coefficients $\delta_{D_6}, \delta_{\mathrm{mass}}, \delta_{\mathrm{kinetic}}$ of order unity, and the bracelet cage scale $Q_{\mathrm{cage}}$ relative to $m_W$:
+
+\begin{mdframed}[backgroundcolor=red!8, linewidth=1.0pt, roundcorner=4pt, innertopmargin=8pt, innerbottommargin=8pt]
+\textbf{Critical rigor disclaimer (the formulas below).} The expressions in the three lines immediately following this box \emph{are dimensional scaling heuristics only, not renormalized one-loop electroweak corrections}. Despite their visual resemblance to standard EFT one-loop oblique-parameter formulas, they are \emph{not} derived from a continuum effective field theory: no Lagrangian has been constructed, no gauge-fixing has been performed, no regulator preserving Ward identities has been applied, and no one-loop diagrammatic computation has been carried out (the five required ingredients for a derived calculation are listed in the rigor positioning box at the start of \S\ref{sec:stu_framework}). The expressions are written in EFT-resembling notation to make the parametric scaling intuition transparent and to indicate the form a derived calculation would eventually take, but they should not be treated as predictions from a derived theory or as substitutes for one-loop electroweak corrections in any quantitative comparison to data. A reviewer encountering these formulas should read them as parametric scaling ansätze, not as one-loop EFT corrections.
+\end{mdframed}
+
 \begin{align}
 \Delta S^{(W^0)} &\sim \frac{1}{12\pi} \cdot \delta_{D_6} \cdot \log\left( \frac{Q^2_{\mathrm{cage}}}{m_W^2} \right) \quad \text{(\emph{dimensional ansatz, not derived})} \\
 \Delta T^{(W^0)} &\sim \frac{1}{16\pi^2} \cdot \frac{m_W^2}{m_W^2 - m_{W^0}^2} \cdot \delta_{\mathrm{mass}} \quad \text{(\emph{dimensional ansatz, not derived})} \\
