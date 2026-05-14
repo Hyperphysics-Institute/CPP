@@ -1,0 +1,210 @@
+# SF-2 Handover — Session 83 Close (Patch 0368 v1.0 SHIPPED + Patch 0369 documentation initiation)
+
+**Paper**: `flagship_papers/electroweak/sf-2_electroweak.tex` (main) + `flagship_papers/electroweak/sf-2_companion.tex` (Companion)
+**Status**: **v1.0 SHIPPED** (Session 83 close, 14 May 2026, Patch 0368). Joint main paper + Companion v1.0 SHIP issued in single patch with full version synchronization. Three-reviewer convergence on SHIP-at-v1.0 verdict achieved (ChatGPT v1.3 pair review: structural achievement validated; Copilot v1.0 + v1.2 reviews: SHIP-ready; Grok v0.8 pair review explicit verdict: *"This is flagship-series work at its strongest. SHIP at v1.0."*). Suitable for direct Zenodo + arXiv upload at Thomas's discretion.
+**Closure path**: Twenty-four-patch SF-2 campaign across Sessions 81–83 (Patches 0345–0368). Main paper progressed from v0.1 initial drafting through v1.0 SHIP via three multi-reviewer convergence cycles (ChatGPT pass 1+2, Copilot v0.5/v0.6/v1.0/v1.2, Grok v0.5/v0.6/v0.8). Companion paper progressed from initial Patch 0362 kickoff through v1.0 SHIP via Companion-specific review cycle plus actual GPU result incorporation (Patches 0364, 0366) and ChatGPT v1.3 pair-review polish (Patch 0367). Joint v1.0 SHIP at Patch 0368 (this session).
+
+---
+
+## Status as of Session 83 close
+
+### Paper files
+- **Main paper** `flagship_papers/electroweak/sf-2_electroweak.tex` at **v1.0 SHIPPED** state
+  - 1821 lines source
+  - 23,000+ words; ~50-60 pages compiled (PDF compile pending on ClearPC per Binary Artifact Workflow)
+  - 8 theorems + 9 corollaries + 6 propositions + 6 OPEN-FP-SF-2-* entries
+  - All `\ref` and `\eqref` cross-references resolve (verified sandbox-side); 0 broken citations
+  - All LaTeX environments balanced
+
+- **Companion paper** `flagship_papers/electroweak/sf-2_companion.tex` at **v1.0 SHIPPED** state
+  - 1041 lines source
+  - 11 bibliography entries; 4 TikZ figures (W bracelet, Z icosahedron, H dodecahedron, 600-cell distance shells); 11 tables; 4 mdframed rigor-positioning boxes; 2 embedded Python listings
+  - All cross-references resolve; all environments balanced
+  - Companion to main paper v1.0 SHIPPED; cross-references synchronized
+
+### Code suite (companion to Companion paper)
+- `flagship_papers/electroweak/code/oblique_parameters_framework.py` (230 lines PyTorch GPU-runnable)
+- `flagship_papers/electroweak/code/dp_chain_monte_carlo.py` (212 lines PyTorch GPU-runnable)
+- `flagship_papers/electroweak/code/oblique_parameters_sensitivity_scan.py` (302 lines PyTorch GPU-runnable)
+- `flagship_papers/electroweak/code/README.md` (96 lines)
+- All three programs verified to run on Thomas's machine; actual GPU output incorporated into Companion §5.6, §5.7, §6.3.
+
+### Programme-level registrations
+- **PD-004 publication-pathway** created at Patch 0367 (`programmatic_decisions/PD-004-publication-pathway.md`). Captures ChatGPT's five-layer publication-pathway strategic guidance: Layer 1 (mathematical-combinatorial geometry), Layer 2 (symmetry/orbit classification), Layer 3 (discrete substrate phenomenology), Layer 4 (continuum-limit development), Layer 5 (eventual EFT bridge). SF-2 positioned as Layer 2 + Layer 3 work in §1.4 of main paper.
+- **Operating system §4 Phase 7** updated at Patch 0367 with Version-discipline rule: every patch modifying `.tex` source must increment the title-block version marker. Addresses chronic Grok-version-confusion mode.
+- **W⁰ neutrino scattering insight sketch** captured at Patch 0367 (`flagship_papers/electroweak/sketches/W0_neutrino_scattering_centroid_decoupling.md`). Thomas's verbatim insight + physical evaluation + three-Layer development requirement (operational definition of centroid passage, quantification of post-emergence direction selection, bridge to V-A phenomenology). Five provisional research questions registered. Available for future flagship-paper integration when authorized.
+
+### Anthology chapter
+- **Not yet produced.** Planned for Patch 0374 (~Session 85). Pattern parallel to SS-9's "The Polyhedron's Conditions" chapter (~5,000-6,000 words at Rovelli/SciAm register). The bridge centerpiece for SF-2 anthology is the **W⁰ catalyst framework discovery arc**: ten years from qCP concept (2016) to physical intuition (Sunday) to complete flagship paper (Thursday).
+
+### TATWD integration
+- **Not yet produced.** Planned for Patch 0375 (~Session 86). Pattern parallel to SS-9's Chapter 22c integration into CPP_the_theory.md Part VI + Part VII updates + TATWD_outline_revised.md updates. SF-2 slots into the Standard Model emergence narrative as the electroweak-sector closure paper.
+
+### PDF production
+- **Pending Thomas-side ClearPC compile.** Both main paper and Companion paper at v1.0 SHIPPED .tex source are compile-ready (verified sandbox-side environment balance + cross-reference integrity). Compile command per Binary Artifact Workflow:
+  ```bash
+  cd ~/Documents/GitHub/CPP
+  bash scripts/cpp-recompile-pdf.sh flagship_papers/electroweak
+  ```
+
+### Documentation suite (this file's home)
+- `documentation_suite/handover-SF-2.md` — **THIS FILE**, created at Patch 0369 to Session 83 close state. Per operating_system §15 Step H, this is the canonical session-close artifact.
+- `documentation_suite/development-SF-2.md` — **planned Patch 0372**. Will contain campaign-grouped narrative vignettes for Sessions 81-83 (24 patches).
+- `documentation_suite/transcript-SF-2.md` — **planned Patch 0372**. Will contain per-patch transactions log for Patches 0345-0368.
+- `documentation_suite/reasoning-SF-2.md` — **planned Patch 0371**. Tier 4 verbatim Opus reasoning capture across the SF-2 campaign.
+
+---
+
+## What's resolved at v1.0 SHIP
+
+### Cage-shape uniqueness theorems
+**Status: RESOLVED at theorem-level rigor.** Four cage-shape uniqueness theorems delivered in main paper §4:
+- **W bracelet**: 1200-orbit of induced 6-cycles in 600-cell under $H_4$ action, $D_6$ stabilizer, uniquely maximum-symmetry (Theorem 4.2; orbit size 1200, total enumeration 4800 induced 6-cycles partitioned into exactly 2 orbits).
+- **Z icosahedron**: 12-vertex first Euclidean distance shell at $d^2 = 1/\phi^2$, $I_h$ stabilizer (Theorem 4.1).
+- **H dodecahedron**: 20-vertex second Euclidean distance shell at $d^2 = 1$, $I_h$ stabilizer via Platonic duality (Theorem 4.3).
+- **Mass-gap**: no electroweak scalar cage between $V=12$ and $V=20$ vertices (Theorem 4.4; falsifier prediction $m_H < 200$ GeV maximum below additional electroweak scalar).
+
+### W⁰ catalyst framework
+**Status: RESOLVED at framework level.** Six propositions in main paper §5 formalize the W⁰ catalyst-substrate role:
+- **Prop 5.1 (centroid capture)**: external charge captured at $D_6$-symmetric centroid.
+- **Prop 5.2 (activation transition)**: bracelet transitions to activated $W^\pm$ state upon centroid capture.
+- **Prop 5.3 (mass-degeneracy)**: $m_{W^0} = m_{W^\pm}$ within ~1 MeV (sharp structural prediction; CONFIRMED at parametric-scaling level by $\Delta T \approx 0$ across entire Companion sensitivity-scan grid).
+- **Prop 5.4 (disintegration timescale)**: activated $W^\pm$ disintegration on weak timescale.
+- **Prop 5.5 (reorganization probabilities)**: V-A branching emerges from $D_6$ phase structure.
+- **Prop 5.6 (universality)**: catalyst-substrate role universal across decay channels.
+
+### Weinberg angle numerical correspondence
+**Status: ESTABLISHED via SM-6 inheritance.** $\sin^2\theta_W = 3/(8\phi) \approx 0.23121$ inherited from SM-6 spectral-trace argument as zero-parameter numerical correspondence emerging from the 600-cell's topological invariants. Numerically coincident with low-energy effective value (Weinberg angle runs with scale; renormalization-scheme conventions differ at per-mille level).
+
+### Mass formula and tree-level cross-check
+**Status: PARTIAL CLOSURE (calibrated).** Three calibrated dilution factors ($\eta_W, \eta_Z, \eta_H$) reproduce $m_W, m_Z, m_H$ at observed values. Tree-level mass-ratio $m_Z/m_W = 1/\cos\theta_W = 1.140$ vs observed $1.134$ matches to 0.54% with zero cross-calibration. Structural prediction $m_{W^0} = m_{W^\pm}$ within ~1 MeV. The framework contains three calibrated parameters reproducing four observables plus a zero-parameter consistency check.
+
+### Yang-Mills EFT emergence
+**Status: PROOF OUTLINE.** Theorem 8.3 of main paper states the continuum-limit Yang-Mills EFT recovery as the coarse-graining limit of CPP substrate dynamics at proof-outline level. Full continuum derivation registered as future work (PD-004 Layer 4 dedicated paper).
+
+### Six OPEN-FP-SF-2-* problems
+All systematically registered with closure routes identified:
+- **OPEN-FP-SF-2-η**: substrate-derivation of cage-stability dilution factor $\eta$ (proof-outline future work)
+- **OPEN-FP-SF-2-EWSB**: substrate-derivation of EWSB cage-formation mechanism
+- **OPEN-FP-SF-2-loopfactor**: substrate-derivation of one-loop oblique correction structure (the v1.3 sensitivity scan identifies the geometric band $|r_{33} - r_{3Q}| \lesssim 0.18$ with $r_{33} \geq 0.85$ as the research target)
+- **OPEN-FP-SF-2-shelldens**: substrate-derivation of shell-density factor
+- **OPEN-FP-SF-2-chaincomp**: substrate-thermodynamic derivation of DP-chain composition (the v1.3 toy MC reports $(40.3\% : 29.7\% : 29.6\% : 0.4\%)$ as exploratory baseline; full closure requires substrate-thermodynamic framework)
+- **OPEN-FP-SF-2-CHIR**: chirality emergence in W bracelet structure (V-A coupling derivation; potential closure path via W⁰ neutrino scattering centroid-decoupling mechanism captured at Patch 0367)
+
+### Six falsifiers articulated
+- Oblique-parameter $W^0$ contribution to $S, T, U$ outside LEP/SLC 3$\sigma$ in derived calculation
+- $m_{W^0} \neq m_{W^\pm}$ observed by future precision measurement
+- Mass-gap violated by additional electroweak scalar observed below ~200 GeV
+- W-decay branching ratios deviate from $D_6$-symmetric structural predictions
+- Higgs spin observed not consistent with $A_5$ trivial-irrep
+- Continuum-limit Yang-Mills EFT recovery fails (registered as Layer 4 falsifier)
+
+---
+
+## What's open at v1.0 SHIP
+
+### Continuum-EFT bridge (Layer 4 per PD-004)
+**Status: REGISTERED as dedicated future paper.** ChatGPT v1.3 review identified this as the central remaining open problem: "Without a valid continuum bridge, the framework remains geometric phenomenology, not a completed physical theory." Per PD-004, this is Layer 4 work — should be its own paper (not folded into a flagship), addressing the five ingredients listed in Companion §5 rigor-positioning box: (i) continuum EFT with explicit Lagrangian and propagator, (ii) gauge-fixing prescription, (iii) Ward-identity-preserving regulator, (iv) renormalization scheme matching, (v) one-loop diagrammatic computation.
+
+### Continuum quantum dynamics for W⁰ catalyst
+**Status: REGISTERED open frontier.** ChatGPT v1.3: "The catalyst idea is probably the framework's most original physical proposal. But currently: transition amplitudes are absent, no Hilbert-space formulation exists, no scattering formalism exists, no operator algebra exists, no unitarity proof exists." This is Layer 4 work parallel to continuum-EFT bridge.
+
+### Substrate thermodynamics
+**Status: REGISTERED open frontier.** ChatGPT v1.3: "equilibrium undefined, effective temperature undefined, ensemble measure undefined, ergodicity undefined, substrate dynamics undefined." Required for OPEN-FP-SF-2-chaincomp first-principles closure.
+
+### W⁰ neutrino scattering centroid-decoupling mechanism
+**Status: SKETCH CAPTURED.** Thomas's Patch 0367 insight on neutrino scattering angles via momentary DP Sea decoupling at W⁰ centroid passage. Three-Layer development required before paper integration (operational definition, quantification, V-A bridge). Available for SF-2 v1.1+ revision or dedicated paper or OPEN-FP-SF-2-CHIR closure path.
+
+### Public posting
+**Status: PENDING.** OSF batch DOI 10.17605/OSF.IO/JXE8D registered for the programme. arXiv submission expected after Zenodo deposit. ClearPC PDF compile is prerequisite.
+
+---
+
+## Forward queue
+
+Priority order for post-Session 83 work:
+
+**Priority 1: Patch 0370 — Registers freeze** (next session). Per SS-9 Session 33 + SF-4 Session 54 patterns:
+- `theorem-registry.md` SF-line section update with SF-2 theorems (8 theorems + 9 corollaries + 6 propositions registered)
+- `master_glossary.md` SF-2 addendum with new CPP terminology (W⁰ catalyst, activated bracelet, centroid-capture, hybrid-tetrahedron, qDP/hDP-A/hDP-B/eDP)
+- `predictions.md` SF-2 v1.0 predictions registered
+- Problem-history files for the six OPEN-FP-SF-2-* entries
+- `Research_Frontier.md` last-updated header SF-2 entry with full 24-patch campaign narrative
+
+**Priority 2: Patch 0371 — Tier-4 reasoning-SF-2.md**. Per operating_system §4 Four-Tier Documentation Discipline: verbatim Opus reasoning capture across the 24-patch campaign. Canonical Tier-4 source. ~7-10 thematic sections following SF-4's reasoning-SF-4.md structure: (1) the W⁰ catalyst insight arc; (2) the cage-shape uniqueness proofs; (3) the W bracelet $D_6$-orbit argument; (4) the Weinberg-angle inheritance; (5) the mass-degeneracy structural prediction; (6) the Companion paper architectural decision; (7) the multi-reviewer convergence cycle; (8) the GPU-results incorporation; (9) the sensitivity-scan demonstration; (10) the v1.0 SHIP decision.
+
+**Priority 3: Patch 0372 — development-SF-2.md + transcript-SF-2.md**. Vignettes per patch (24 entries) + per-session transactions log (Sessions 81-83). Parallel to SF-4's documentation suite.
+
+**Priority 4: Patch 0373 — 7-file documentation suite**. Per `templates/documentation-suite.md`: mechanism-SF-2.md, glossary-SF-2.md, phenomena-SF-2.md, philosophy-SF-2.md, development-SF-2.md (extension), reviews-SF-2.md, keywords-SF-2.md.
+
+**Priority 5: Patch 0374 — Anthology chapter**. SF-2 at Rovelli/SciAm register parallel to SS-7 / SS-8 / SS-9 / SF-4 chapters. ~5,000-6,000 words. Pre-session inspection: `templates/anthology_chapter_template.md` + the four existing anthology chapters. Bridge centerpiece: W⁰ catalyst framework discovery arc (10 years from qCP concept to flagship paper).
+
+**Priority 6: Patch 0375 — TATWD integration**. `CPP_the_theory.md` new chapter parallel to SS-9 Chapter 22c + Part VI/VII updates + `TATWD_outline_revised.md` updates. Pre-session inspection: existing CPP_the_theory.md + TATWD_outline files.
+
+**Priority 7: ClearPC PDF compile + public posting**. Thomas-side at Thomas's discretion.
+
+**Anti-priorities:**
+- Do NOT modify `sf-2_electroweak.tex` or `sf-2_companion.tex` post-v1.0 SHIP except for v1.x revisions triggered by external (post-public-posting) feedback. The .tex sources are FROZEN at v1.0.
+- Do NOT begin work on W⁰ neutrino scattering paper-integration until Patches 0370-0375 documentation sequence completes.
+- Do NOT defer the Tier-4 reasoning capture indefinitely — the verbatim-reasoning content degrades as sessions accumulate.
+
+---
+
+## Where to find detail
+
+- **Last patch landed**: Patch 0368 SF-2 v1.0 SHIPPED (commit `09b7cfc` on origin/main as of Session 83 close).
+- **PD-004 publication-pathway**: `programmatic_decisions/PD-004-publication-pathway.md` (Patch 0367)
+- **Version-discipline rule**: `templates/operating_system.md` §4 Phase 7 (Patch 0367)
+- **W⁰ neutrino sketch**: `flagship_papers/electroweak/sketches/W0_neutrino_scattering_centroid_decoupling.md` (Patch 0367)
+- **Active sketches**:
+  - `flagship_papers/electroweak/sketches/SF-2_W0_derivation.md` (Sessions 81-82 W⁰ derivation working document)
+  - `flagship_papers/electroweak/sketches/SF-2_electroweak_sector_audit.md` (Session 81 audit)
+  - `flagship_papers/electroweak/sketches/W0_neutrino_scattering_centroid_decoupling.md` (Patch 0367 captured insight)
+- **Code suite**: `flagship_papers/electroweak/code/` (3 GPU-runnable programs + README)
+- **Live programme registrations**:
+  - `Research_Frontier.md` — full programme problem inventory
+  - `theorem-registry.md` — programme-level theorem catalog (SF-2 entries pending Patch 0370)
+  - `paper_catalog.md` — paper inventory and status (SF-2 row pending Patch 0370 update)
+  - `programmatic_decisions/PD-001` through `PD-004` — strategic decisions trail
+- **Source files**: 
+  - `flagship_papers/electroweak/sf-2_electroweak.tex` (main paper v1.0 SHIPPED, 1821 lines)
+  - `flagship_papers/electroweak/sf-2_companion.tex` (Companion v1.0 SHIPPED, 1041 lines)
+
+---
+
+## Step-by-step audit of this session's handover
+
+- Step A (Tier 1 session log): N/A — Session 83 was a single multi-patch arc (Patches 0345–0368 across Sessions 81–83) without a dedicated cross-paper session log; the campaign content is captured in the per-paper four-tier discipline.
+- Step B (Tier 2 transcript): N/A — planned for Patch 0372 (`transcript-SF-2.md` will document patches 0345-0368).
+- Step C (Tier 3 vignette): N/A — planned for Patch 0372 (`development-SF-2.md` campaign-grouped vignettes).
+- Step D (Tier 4 reasoning): N/A — planned for Patch 0371 (`reasoning-SF-2.md` verbatim Opus reasoning capture). This is the highest-priority documentation work post-handover.
+- Step E (registries): N/A this patch — full registers freeze planned for Patch 0370 (next session). This patch (0369) updates `Research_Frontier.md` last-updated header + `paper_catalog.md` SF-2 row + `flagship_papers/electroweak/README.md` status + `INDEX.md` SF-2 rows. The deeper theorem-registry + master_glossary + predictions + problem-histories work lives in Patch 0370.
+- Step F (reviewer artifacts): N/A — Patches 0359, 0360, 0361, 0363, 0364, 0366, 0367 already incorporated all reviewer feedback inline; no separate reviewer-response documents were produced (the inline incorporation pattern matches the SF-4 v3.0+ campaign approach).
+- Step G (protocol/OS updates): ✓ — operating_system.md §4 Phase 7 Version-discipline rule added at Patch 0367; PD-004 publication-pathway created at Patch 0367. Both protocol/OS updates landed before this handover.
+- Step H (this document): ✓ — file at `flagship_papers/electroweak/documentation_suite/handover-SF-2.md`, created Patch 0369.
+
+---
+
+## Recent session count
+
+24 patches landed across Sessions 81–83 (Patches 0345–0368). Sessions 81-82: main paper v0.1 through v0.7 across 17 patches including three multi-reviewer convergence cycles. Session 83: Companion paper v1.0 through v1.0 SHIP across 7 patches (0362-0368) plus joint v1.0 SHIP. Twelve theorem-class objects registered in main paper (8 theorems + 9 corollaries + 6 propositions) + six open-frontier problems (OPEN-FP-SF-2-*).
+
+---
+
+## Quick-start for next session
+
+1. **Paste this handover** into the opening message of the new context window (or attach as the opening human message).
+2. **Bootup as usual**: `git clone https://github.com/Hyperphysics-Institute/CPP.git && cd CPP` + read `bootup.md`.
+3. **Default action**: Execute Priority 1 (Patch 0370 — Registers freeze) per the protocol above. Specifically:
+   - Update `theorem-registry.md` with SF-2 SF-line section addition
+   - Update `master_glossary.md` with SF-2 v1.0 terms addendum
+   - Update `predictions.md` with SF-2 v1.0 predictions registry
+   - Create problem-history files for OPEN-FP-SF-2-η, -EWSB, -loopfactor, -shelldens, -chaincomp, -CHIR (six entries; follow SF-4's problem_histories pattern from `problem_histories/`)
+   - Update `Research_Frontier.md` last-updated header with full Sessions 81-83 SF-2 campaign narrative
+   - Verify SF-2 row in `paper_catalog.md` is current (this Patch 0369 sets the initial v1.0 SHIPPED row)
+
+If Thomas redirects to a different priority (e.g., authorizes Tier-4 reasoning capture Patch 0371 before registers freeze), execute that instead.
+
+---
+
+**Completion of this handover**: Session 83 closes at Patch 0369 with SF-2 v1.0 SHIPPED at all source-file levels and programme-level registers SHIPPED-aware (Research_Frontier last-updated header + paper_catalog SF-2 row + README status + INDEX). Deeper registry updates (theorem-registry, master_glossary, predictions, problem-histories) + documentation suite (Tier 4 reasoning + transcript + vignettes + 7-file companion suite) + anthology chapter + TATWD integration + ClearPC PDF + public posting all flow forward across Patches 0370-0375+ in subsequent sessions.
