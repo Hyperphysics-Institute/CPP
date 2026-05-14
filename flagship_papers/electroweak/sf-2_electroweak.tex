@@ -861,41 +861,50 @@ The collision-supplied $W$ production. Mechanism:
 
 This subsubsection elaborates the hadronic-channel reorganization mechanism in $\tau$ decay (Section~\ref{sec:dm_tau}, total hadronic branching $\sim 65\%$) by walking through two specific channels: $\tau^- \to \pi^- + \nu_\tau$ (branching $10.8\%$) and $\tau^- \to K^- + \nu_\tau$ (branching $0.7\%$). The walkthroughs demonstrate that the CPP framework reproduces specific meson compositions and conservation patterns from CP redistribution alone, with the $W^{0}$ as catalyst and no fundamental selection rules beyond charge and energy conservation.
 
-\textbf{Meson composition in CPP.}
-The CPP framework assigns each Standard Model quark a specific CP composition (per the SM-1 cage taxonomy and the EW-corpus quark-cage analysis~\cite{abshier_sm1, abshier_ew2}):
+\textbf{Quark CP composition: hierarchical build-up.}
+The CPP framework assigns each Standard Model quark a CP composition via a hierarchical build-up structure (per the SM-1 cage taxonomy and the EW-corpus quark-cage analysis~\cite{abshier_sm1, abshier_ew2}), in which each heavier quark adds a cage component to a lower-flavor base:
 \begin{equation}
 \begin{aligned}
-u &: +\qCP, \qquad \bar u : -\qCP, \\
-d &: +\qCP + (\text{linear oscillator } -\eCP), \qquad \bar d : -\qCP + (\text{linear oscillator } +\eCP), \\
-s &: +\qCP + (\text{linear oscillator } -\eCP) + (\text{hybrid tetrahedron}), \\
-\bar s &: -\qCP + (\text{linear oscillator } +\eCP) + (\text{hybrid tetrahedron}).
+u &: +\qCP, & \bar u &: -\qCP, \\
+d &: u + (\text{linear oscillator } -\eCP), & \bar d &: \bar u + (\text{linear oscillator } +\eCP), \\
+s &: d + (\text{hybrid tetrahedron cage}), & \bar s &: \bar d + (\text{hybrid tetrahedron cage}).
 \end{aligned}
 \label{eq:quark_cp_composition}
 \end{equation}
-The up-quark is the bare $+\qCP$ (charge $+2/3$); the down-quark adds a linear-oscillator $-\eCP$ (yielding net charge $-1/3$); the strange-quark adds both a linear-oscillator $-\eCP$ and a hybrid-tetrahedron cage substructure (for the strange's additional mass, per SM-1 cage-stability primitives).
+The up-quark is a bare $+\qCP$ (charge $+2/3$); the down-quark adds a linear-oscillator $-\eCP$ to the up (net charge $-1/3$); the strange-quark adds a hybrid-tetrahedron cage substructure to the down (cage-stability primitives in SM-1 supply the additional mass). The hybrid tet wraps the strange's single central $+\qCP$ as the cage's stabilized charge --- analogous to the lepton-cage precedent in which each cage wraps a single central charge (electron: bare $-\eCP$; muon: $-\eCP$ + hybrid tetrahedron; tau: $-\eCP$ + hybrid icosahedron). The hybrid tet does \emph{not} envelope the $\qCP$ pair shared between the strange and its partner antiquark; that pair is bonded by DP chains, see below.
+
+\textbf{Heavier-quark cage hierarchy.} The hierarchy continues to the heavier quark generations with progressively larger cages~\cite{abshier_sm7, abshier_sm8}: charm $= u +$ icosahedral cage (12-vertex), bottom $= d +$ dodecahedral cage (20-vertex), top $= u +$ icosidodecahedral cage (30-vertex). Cage vertex-count correlates with quark mass; the cages are stable substructures of the 600-cell lattice (SM-1 cage taxonomy). The two worked walkthroughs below focus on the strange-quark hybrid-tetrahedron case ($K^-$ channel); the framework extends to charm/bottom/top mesons (D, B, T) with analogous structural decompositions deferred to v0.5+ refinement.
 
 Combining quarks into mesons via standard quark-content rules~\cite{pdg_2024}:
 
 \begin{table}[H]
 \centering
-\caption{Light-meson CP composition in CPP. Each row gives the meson's standard $q\bar{q}'$ quark content and the resulting net CP composition. The ``linear $\pm\eCP$'' notation denotes the down/anti-down or strange/anti-strange linear-oscillator $\eCP$ contributions.}
+\caption{Light-meson two-quark structural composition in CPP. Each row gives the meson's standard $q\bar{q}'$ quark content and the resulting two-quark structural decomposition. Each half-quark cage retains its own internal CP structure per the hierarchical build-up of Equation~\ref{eq:quark_cp_composition}; the two halves are bonded by DP chains drawn from the DP Sea (see DP-chain composition paragraph below).}
 \label{tab:meson_cp_composition}
 \begin{tabular}{lll}
 \toprule
-Meson & Quark content & CP composition \\
+Meson & Quark content & Two-quark structural composition \\
 \midrule
-$\pi^0$ & $(u\bar{u} - d\bar{d})/\sqrt{2}$ & $\qCP$ pair (qDP), $\pm\eCP$ pair (from $d\bar{d}$ component) \\
-$\pi^+$ & $u + \bar{d}$ & $+\qCP$, $-\qCP$, linear $+\eCP$ \\
-$\pi^-$ & $d + \bar{u}$ & $+\qCP$, $-\qCP$, linear $-\eCP$ \\
-$K^+$ & $u + \bar{s}$ & $+\qCP$, $-\qCP$, linear $+\eCP$, hybrid tetrahedron \\
-$K^-$ & $s + \bar{u}$ & $+\qCP$, $-\qCP$, linear $-\eCP$, hybrid tetrahedron \\
-$K^0$ & $d + \bar{s}$ & $+\qCP$, $-\qCP$, linear $\pm\eCP$ pair, hybrid tetrahedron \\
-$\bar{K}^0$ & $s + \bar{d}$ & $+\qCP$, $-\qCP$, linear $\pm\eCP$ pair, hybrid tetrahedron \\
+$\pi^0$ & $(u\bar{u} - d\bar{d})/\sqrt{2}$ & $u$-half ($+\qCP$) + $\bar u$-half ($-\qCP$), flavor-superposed with $d\bar{d}$ \\
+$\pi^+$ & $u + \bar{d}$ & $u$-half (bare $+\qCP$) + $\bar d$-half ($-\qCP$ + linear $+\eCP$) \\
+$\pi^-$ & $d + \bar{u}$ & $d$-half ($+\qCP$ + linear $-\eCP$) + $\bar u$-half (bare $-\qCP$) \\
+$K^+$ & $u + \bar{s}$ & $u$-half (bare $+\qCP$) + $\bar s$-half ($\bar d$-structure + hybrid tet wrapping $\bar s$'s $-\qCP$) \\
+$K^-$ & $s + \bar{u}$ & $s$-half ($d$-structure + hybrid tet wrapping $s$'s $+\qCP$) + $\bar u$-half (bare $-\qCP$) \\
+$K^0$ & $d + \bar{s}$ & $d$-half + $\bar s$-half (cage on $\bar s$-half only) \\
+$\bar{K}^0$ & $s + \bar{d}$ & $s$-half (cage on $s$-half) + $\bar d$-half (no cage) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The composition pattern is hierarchical: $u/\bar{u}$ contribute only $\qCP$s; $d/\bar{d}$ add linear-oscillator $\eCP$s; $s/\bar{s}$ add both linear-oscillator $\eCP$s and hybrid-tetrahedron cage substructures. Heavier mesons containing $c$, $b$, $t$ quarks extend the hierarchy with additional cage components inherited from the SM-7/SM-8 cage taxonomy.
+The structural decomposition pattern is hierarchical at two levels: (i) each quark-half builds up from a lower-flavor base via successive cage additions (Equation~\ref{eq:quark_cp_composition}); (ii) the meson is two complete quark-halves bonded together, with each quark-half retaining its own cage structure (the cage wraps a single central qCP at the quark's center, never envelops a $\qCP$ pair). Heavier mesons (D, B, T) follow the same two-quark-cage pattern with charm/bottom/top cages replacing the strange's hybrid tetrahedron on the heavier-quark half.
+
+\textbf{DP-chain composition (the meson bond).} The bond between the two quark-halves of a meson is mediated by chains of Dipoles drawn from the DP Sea, analogous to the SM gluon-mediated strong binding. The chain is a statistical mixture of multiple DP species:
+\begin{itemize}[leftmargin=*]
+\item \textbf{qDP} ($+\qCP/-\qCP$ pair, carrying strong charge): strongest per-link coupling to the chain-endpoint quark qCPs, but lower DP-Sea concentration ($\sim$ half the concentration of hDPs).
+\item \textbf{hDP type A} ($+\qCP/-\eCP$) and \textbf{hDP type B} ($-\qCP/+\eCP$): moderate per-link coupling, double-majority concentration in the DP Sea relative to qDPs. By virtue of the concentration majority, hDPs contribute the largest numerical share of chain links despite their lower per-link coupling than qDPs.
+\item \textbf{eDP} ($-\eCP/+\eCP$ pair): weakest coupling due to absence of strong charge; low-statistic minority in the chain, present at all only as a rare sub-component.
+\end{itemize}
+The actual chain composition reflects this concentration-vs-coupling competition: hDP-A and hDP-B species dominate by number, qDPs contribute the strongest per-link strong-charge binding, and eDPs appear as a rare minority sub-component. A first-principles determination of the chain composition ratios from substrate-level binding energies is registered as a v0.5+ refinement (OPEN-FP-SF-2-chaincomp).
 
 \textbf{Worked walkthrough: $\tau^- \to \pi^- + \nu_\tau$ (branching $10.8\%$).}
 The mechanism proceeds in five steps:
@@ -908,23 +917,25 @@ The mechanism proceeds in five steps:
 \end{enumerate}
 
 \textbf{CP-conservation tally.} 
-Reactant CP content: 13 CPs from $\tau^-$ (12 icosahedral + 1 central $-\eCP$). Product CP content: $\nu_\tau$ (4 CPs in spinning hybrid tetrahedron) + $\pi^-$ (3 CPs: $+\qCP$, $-\qCP$, $-\eCP$) = 7 CPs in observable products. The remaining 6 tau-debris CPs dissolve back into the DP Sea, transferring their cage-stability energy to the kinetic energy of $\nu_\tau$ and $\pi^-$. Net electric charge balance: $\tau^- (-1) \to \nu_\tau (0) + \pi^- (-1)$ $\checkmark$.
+Reactant CP content: $\tau^-$ supplies 13 CPs (12 icosahedral + 1 central $-\eCP$); the transient W$^{0}$ bracelet supplies 12 CPs (in 6 hDPs). Product CP content: $\nu_\tau$ (4 CPs from one tetrahedral subset of tau-icosahedral debris) + $\pi^-$ (3 CPs: $+\qCP$ and $-\qCP$ from the bracelet's surviving qDP + centroid-captured $-\eCP$ from the tau's central position) = 7 CPs in observable products. The remaining 8 tau-icosahedral-debris CPs and 10 bracelet hDP CPs dissolve back into the DP Sea, transferring their cage-stability energy to the kinetic energy of $\nu_\tau$ and $\pi^-$. Net electric charge balance: $\tau^- (-1) \to \nu_\tau (0) + \pi^- (-1)$ $\checkmark$.
 
-\textbf{Postdiction.} The $\pi^-$'s specific composition follows from the framework: the surviving qDP from the bracelet provides the quark-pair core, and the centroid-captured $-\eCP$ supplies the linear oscillator distinguishing the down-quark in the $\pi^-$. The standard $\pi^- = d + \bar{u}$ assignment inherits at structural level.
+\textbf{Postdiction.} The $\pi^-$'s specific composition follows from the framework: the surviving qDP from the bracelet provides the two-quark structural pair ($+\qCP$ for the $d$-half and $-\qCP$ for the $\bar u$-half), and the centroid-captured $-\eCP$ supplies the linear oscillator distinguishing the down-quark in the $\pi^-$. The two quark-halves are bonded by qDP/hDP chains drawn from the DP Sea (per the DP-chain composition description above). The standard $\pi^- = d + \bar{u}$ assignment inherits at structural level.
 
 \textbf{Worked walkthrough: $\tau^- \to K^- + \nu_\tau$ (branching $0.7\%$).}
-Similar five-step mechanism with the additional feature that the $K^-$ contains a hybrid-tetrahedron cage substructure within the strange quark:
+Similar five-step mechanism with the $K^-$ structured as two quark-halves (the strange-half carrying a hybrid-tetrahedron cage, the antiup-half bare) bonded by a DP chain:
 \begin{enumerate}[leftmargin=*]
 \item--3. Identical to $\tau^- \to \pi^- + \nu_\tau$ through activated $W^-$ formation and disintegration.
 \setcounter{enumi}{3}
-\item One tetrahedral subset of 4 CPs from the tau's icosahedral debris reforms as $\nu_\tau$. A \emph{second} tetrahedral subset of 4 CPs from the remaining 8 tau debris CPs reforms as the strange-quark's hybrid-tetrahedron cage substructure within the $K^-$.
-\item The bracelet substrate collapses except a single surviving qDP (providing the strange-anti-up quark-pair core) and the centroid-captured $-\eCP$ (becoming the strange-quark's linear oscillator). The energy released powers the hDP chaining and the hybrid-tetrahedron's cage-stability energy.
+\item One tetrahedral subset of 4 CPs from the tau's icosahedral debris reforms as $\nu_\tau$. A \emph{second} tetrahedral subset of 4 CPs from the remaining 8 tau debris CPs reforms as the strange-quark's hybrid-tetrahedron cage. The hybrid tet wraps the strange-half's single central $+\qCP$ (per the lepton-cage precedent of a cage wrapping one central charge), \emph{not} the $\qCP$-pair shared between the strange and the antiup; that pair is bonded externally by a DP chain.
+\item The bracelet substrate collapses, separating into the two meson quark-halves: the surviving $+\qCP$ from the bracelet's qDP becomes the strange-half's central charge (wrapped by the hybrid tet built from tau debris); the surviving $-\qCP$ becomes the antiup-half (a bare $-\qCP$, no cage); the centroid-captured $-\eCP$ becomes the strange-half's linear oscillator (the strange-quark inherits its $d$-structure linear-eCP component). The two quark-halves are then bonded by a qDP/hDP chain drawn from the DP Sea, forming the $K^-$ as (strange-half cage) connected to (antiup-half bare $-\qCP$) by a chain link.
 \end{enumerate}
 
 \textbf{CP-conservation tally.} 
-Reactant: 13 tau CPs. Products: $\nu_\tau$ (4 CPs) + $K^-$ (3 CPs in $+\qCP/-\qCP/-\eCP$ core + 4 CPs in hybrid tetrahedron = 7 CPs) = 11 CPs in observable products. The remaining 2 tau-debris CPs dissolve back into the DP Sea. Net electric charge balance: $-1 \to 0 + (-1)$ $\checkmark$.
+Reactant: $\tau^-$ supplies 13 CPs; bracelet supplies 12 CPs. Products: $\nu_\tau$ (4 CPs from one tetrahedral subset of tau-icosahedral debris) + $K^-$ (7 CPs total: 2 CPs from the bracelet's surviving qDP --- the strange-half's $+\qCP$ and the antiup-half's $-\qCP$ --- plus 1 CP for the strange-half's linear $-\eCP$ from the tau central, plus 4 CPs in the strange-half's hybrid tetrahedron from a second tetrahedral subset of tau-icosahedral debris) = 11 CPs in observable products. The remaining 4 tau-icosahedral-debris CPs and 10 bracelet hDP CPs dissolve back into the DP Sea. Net electric charge balance: $-1 \to 0 + (-1)$ $\checkmark$.
 
 The substantially lower branching ratio ($0.7\%$ for $K^-\nu_\tau$ vs $10.8\%$ for $\pi^-\nu_\tau$) reflects the lower statistical probability of organizing \emph{two} distinct tetrahedral CP-subsets from the tau's icosahedral debris (one for $\nu_\tau$, one for the kaon's hybrid tetrahedron), compared to organizing just one for $\nu_\tau$ in the simpler $\pi^-$ channel. The strange-quark's heavier mass requires the additional cage-substructure organization, which is statistically rarer.
+
+\textbf{SF-2+ refinement note (structural and energy considerations).} The structural picture above --- hybrid tet wrapping the strange-half's single central $+\qCP$, with the antiup-half as a bare $-\qCP$ bonded by a DP chain --- is selected over an alternative ``hybrid tet enveloping a $\qCP$-pair core'' framing on the SSV-cancellation argument: a single central charge inside the cage allows symmetric SSV-gradient cancellation under the cage's $T_d/I_h$ stabilizer group, while a charge-pair within the cage breaks the symmetric cancellation and produces a higher-energy configuration. A direct calculation of the SSV-binding energy in the two configurations is registered as a v0.5+ refinement, parallel to the DP-chain composition refinement (OPEN-FP-SF-2-chaincomp).
 
 \textbf{Extension to multi-meson channels.} The framework extends naturally to higher-multiplicity hadronic channels of $\tau$ decay, which dominate the hadronic branching: $\tau^- \to \pi^- \pi^0 \nu_\tau$ ($25.5\%$), $\tau^- \to \pi^- \pi^0 \pi^0 \nu_\tau$ ($9.3\%$), $\tau^- \to \pi^- \pi^+ \pi^- \nu_\tau$ ($9.0\%$), and analogous multi-pion structures. In each case the tau's 12 icosahedral CPs plus the captured central $-\eCP$ redistribute among the final-state mesons, with $\nu_\tau$ always emerging from one tetrahedral CP-subset and the remaining CPs distributing among multiple $\pi$ or $K$ cores. Quantitative branching-ratio predictions for each multi-meson channel from substrate primitives are registered as v0.1+ refinement work; the framework's reach to these channels is structural.
 
