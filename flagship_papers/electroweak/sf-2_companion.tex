@@ -4,21 +4,34 @@
 %
 % Companion paper to SF-2 v1.0 (sf-2_electroweak.tex)
 %
-% Version 1.0 -- 14 May 2026 (Session 83 -- initial Companion paper
-%   kickoff per Thomas's editorial decision that Companion is integral
-%   to SF-2 v1.0 SHIP).
+% Version 1.1 -- 14 May 2026 (Session 83 -- Companion review-cycle
+%   incorporation: ChatGPT rigor-language tightening for S/T/U and MC
+%   sections, Copilot reading-order box + DP species charges table +
+%   600-cell distance shells figure, Grok caption precision + version
+%   sync + embedded Python listings. Patch 0363.)
 %
-% Six deliverables (corresponding to six reviewer recommendations):
-%   1. Executive Overview (Copilot recommendation 1)
-%   2. Cage Geometry Figures with TikZ diagrams (Grok recommendation 1)
-%   3. Glossary of CPP terminology (Copilot recommendation 2)
-%   4. SF-2 Cheat Sheet consolidated reference tables (Grok recommendation 5)
-%   5. Quantitative W^0 Oblique-Parameter (S/T/U) Framework
-%      (Grok recommendation 3)
-%   6. DP-Chain Composition Monte Carlo Framework
-%      (Grok recommendation 4)
+% v1.0 history (Patch 0362, Session 83):
+%   - Initial Companion kickoff with six deliverables: executive
+%     overview, cage figures, glossary, cheat sheet, S/T/U framework,
+%     DP-chain MC framework.
+%   - GPU-runnable Python programs created in code/ subdirectory.
 %
-% Companion to: SF-2 v0.7+ (flagship_papers/electroweak/sf-2_electroweak.tex)
+% v1.1 (Patch 0363, this version):
+%   - ChatGPT: rigor-language tightening for S/T/U (parametric scaling
+%     heuristics) and Monte Carlo (exploratory statistical toy model)
+%   - ChatGPT: glossary W^0 entry neutralized (removed externalized-
+%     validation rhetoric)
+%   - ChatGPT: global figure caveat re symmetry-compatible embeddings
+%   - ChatGPT: "exact match" sin^2 theta_W -> "numerically coincident
+%     with low-energy effective value" (Weinberg angle runs with scale)
+%   - Grok: version sync v0.7+ -> v0.7; caption precision "main paper"
+%     -> "SF-2 main paper"; embedded short Python snippets in S/T/U
+%     and MC sections via lstlisting
+%   - Copilot: new "How to read SF-2 + Companion together" 4-step
+%     reading-order box at start; new DP species charges + concentrations
+%     table in Monte Carlo section
+%   - New 4th TikZ figure: 600-cell distance shells concentric-circles
+%     visualization (Copilot rec 2)
 % =====================================================================
 
 \documentclass[11pt]{article}
@@ -75,8 +88,8 @@
 % =====================================================================
 \title{\textbf{SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary, Quantitative Frameworks, and Reference Tables}\\[6pt]
 \large \textit{Companion to SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry}\\[6pt]
-{\Large \textbf{Version 1.0 --- 14 May 2026}} \\[0.5em]
-{\normalsize Companion paper to SF-2 flagship (sf-2\_electroweak.tex v0.7+); issued jointly with SF-2 v1.0 SHIP. Six deliverables corresponding to Copilot and Grok review recommendations: executive overview, cage geometry figures, glossary, cheat-sheet reference tables, quantitative $W^0$ oblique-parameter framework with GPU-runnable Python program, and DP-chain composition Monte Carlo framework with GPU-runnable Python program. Patch 0362, Session 83 (initial Companion kickoff).}}
+{\Large \textbf{Version 1.1 --- 14 May 2026}} \\[0.5em]
+{\normalsize Companion paper to SF-2 flagship (sf-2\_electroweak.tex v0.7); issued jointly with SF-2 v1.0 SHIP. Six deliverables corresponding to Copilot and Grok review recommendations: executive overview, cage geometry figures, glossary, cheat-sheet reference tables, parametric scaling heuristics for $W^0$ oblique-parameter sensitivity with GPU-runnable exploratory simulation, and DP-chain composition exploratory Monte Carlo with GPU-runnable proof-of-concept program. Patch 0363 (Session 83): Companion v1.0 $\to$ v1.1 review-cycle incorporation: ChatGPT rigor-language tightening, Copilot reading-order box and DP-species table, Grok caption precision and embedded Python listings.}}
 \author{Thomas Lee Abshier, ND \\ and Anthropic Claude Opus 4}
 \date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
 \texttt{github.com/Hyperphysics-Institute/CPP}}
@@ -86,16 +99,39 @@
 \maketitle
 
 \begin{abstract}
-\noindent This Companion paper to SF-2 v1.0 (\textit{Electroweak Cage-Boson Unification from 600-Cell Geometry}~\cite{sf2_main}) provides the visual, pedagogical, computational, and reference content that complements the main paper's structural-derivation core. The Companion is organized into six sections, each addressing a specific recommendation from the SF-2 v0.5-v0.6 multi-reviewer convergence cycle (ChatGPT, Copilot, Grok). The Executive Overview (\S\ref{sec:exec_overview}) provides a one-page navigation map of the entire SF-2 derivation pipeline for new readers. The Cage Geometry Figures (\S\ref{sec:cage_figures}) provide TikZ diagrams of the three cage geometries (W bracelet, Z icosahedron, H dodecahedron) with vertex labeling, CP placement, and stabilizer-group structure. The Glossary (\S\ref{sec:glossary}) provides alphabetical definitions of all CPP-specific terminology (hDP, qCP, eCP, SSV, PCD, DP Sea, Nexus, ZBW, and related primitives). The SF-2 Cheat Sheet (\S\ref{sec:cheat_sheet}) consolidates cage vertex counts, stabilizer groups, mass-formula factors, registered open problems, and quantitative predictions into single-page reference tables. The Quantitative $W^0$ Oblique-Parameter Framework (\S\ref{sec:stu_framework}) develops the substrate-level framework for computing the $W^0$ contribution to the precision-electroweak oblique parameters $S$, $T$, $U$ at one loop, with a GPU-runnable Python program providing numerical estimates. The DP-Chain Composition Monte Carlo Framework (\S\ref{sec:dpchain_mc}) develops the substrate-level framework for computing the qDP/hDP-A/hDP-B/eDP species ratios in meson interbond chains, with a GPU-runnable Python program providing the framework-level closure. The Companion does not replicate the main paper's content; rather, it provides the visual, computational, and reference material that the main paper repeatedly cites. Reading the SF-2 main paper and Companion together is the intended SHIP-level experience.
+\noindent This Companion paper to SF-2 v1.0 (\textit{Electroweak Cage-Boson Unification from 600-Cell Geometry}~\cite{sf2_main}) provides the visual, pedagogical, computational, and reference content that complements the SF-2 main paper's structural-derivation core. The Companion is organized into six sections, each addressing a specific recommendation from the SF-2 v0.5-v0.6 multi-reviewer convergence cycle (ChatGPT, Copilot, Grok). The Executive Overview (\S\ref{sec:exec_overview}) provides a one-page navigation map of the entire SF-2 derivation pipeline for new readers. The Cage Geometry Figures (\S\ref{sec:cage_figures}) provide TikZ diagrams of the three cage geometries (W bracelet, Z icosahedron, H dodecahedron) plus the 600-cell distance-shell visualization, with vertex labeling, illustrative CP placement, and stabilizer-group structure. The Glossary (\S\ref{sec:glossary}) provides alphabetical definitions of all CPP-specific terminology (hDP, qCP, eCP, SSV, PCD, DP Sea, Nexus, ZBW, and related primitives). The SF-2 Cheat Sheet (\S\ref{sec:cheat_sheet}) consolidates cage vertex counts, stabilizer groups, mass-formula factors, registered open problems, and quantitative predictions into single-page reference tables. The $W^0$ Oblique-Parameter Sensitivity Heuristics (\S\ref{sec:stu_framework}) develops parametric scaling heuristics for the $W^0$ contribution to the precision-electroweak oblique parameters $S$, $T$, $U$, with a GPU-runnable exploratory simulation; the formulas in this section are dimensional ansätze, not derived one-loop oblique corrections from a continuum EFT. The DP-Chain Composition Exploratory Monte Carlo (\S\ref{sec:dpchain_mc}) develops a substrate-statistical toy model for the qDP/hDP-A/hDP-B/eDP species ratios in meson interbond chains, with a GPU-runnable proof-of-concept program; the underlying substrate thermodynamics (effective temperature, equilibrium, ergodicity) is not yet defined at theorem level and the program is exploratory rather than predictive. The Companion does not replicate the main paper's content; rather, it provides the visual, exploratory-computational, and reference material that the main paper repeatedly cites. Reading the SF-2 main paper and Companion together is the intended SHIP-level experience.
 \end{abstract}
 
 \medskip\noindent
-\textbf{Keywords:} SF-2 Companion paper, cage geometry diagrams, CPP glossary, oblique parameters Monte Carlo, DP-chain composition Monte Carlo, $W^0$ catalyst framework, executive overview, cheat sheet, reference tables, flagship paper companion.
+\textbf{Keywords:} SF-2 Companion paper, cage geometry diagrams, CPP glossary, oblique-parameter scaling heuristics, DP-chain exploratory Monte Carlo, $W^0$ catalyst framework, executive overview, cheat sheet, reference tables, flagship paper companion.
 
 \bigskip\noindent
-\textbf{Companion to:} SF-2 v0.7+ (sf-2\_electroweak.tex). Joint SHIP at v1.0 anticipated upon Companion v1.0 issuance.
+\textbf{Companion to:} SF-2 v0.7 (sf-2\_electroweak.tex). Joint SHIP at v1.0 anticipated upon Companion finalization.
 
 \vspace{1em}
+
+% =====================================================================
+\section{How to Read SF-2 + Companion Together}
+\label{sec:reading_order}
+% =====================================================================
+
+This section provides a 4-step reading order for new readers approaching the SF-2 flagship pair (main paper + Companion). Per Copilot's v1.0 review recommendation, this orientation reduces the entry barrier to the framework.
+
+\begin{mdframed}[backgroundcolor=blue!5, linewidth=0.8pt, roundcorner=5pt]
+\textbf{4-step reading order:}
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Start with the Companion Executive Overview} (\S\ref{sec:exec_overview} of this document). One page; gives the entire SF-2 derivation pipeline at a glance: substrate, cage theorems, $W^0$ catalyst, Z/H phenomenology, $SU(2)_L$ emergence, Weinberg angle, mass formula, EWSB framing, open frontier.
+
+\item \textbf{Read the Companion Glossary} (\S\ref{sec:glossary} of this document) before diving into the main paper. CPP terminology density is the framework's single biggest readability barrier; the glossary stabilizes vocabulary (CP, DP, hDP, qDP, eDP, SSV, PCD, DP Sea, Nexus, ZBW, cage-stability, etc.) before they appear in technical context.
+
+\item \textbf{Read the SF-2 main paper} (\texttt{sf-2\_electroweak.tex}~\cite{sf2_main}) for the structural-derivation content: cage-shape theorems ($\S 4$), $W^0$ catalyst framework with six propositions ($\S 5$), Z and H cage phenomenology ($\S 6$--$7$), $SU(2)_L$ emergence and Yang-Mills EFT limit ($\S 8$), Weinberg angle inheritance ($\S 9$), master mass formula ($\S 10$), EWSB cage-formation framing ($\S 11$), Capotauro Phase 7 OPTIONAL ($\S 12$), predictions and falsifiers ($\S 13$).
+
+\item \textbf{Return to the Companion} for visual references (Figures 1--4, \S\ref{sec:cage_figures}), the cheat-sheet tables (\S\ref{sec:cheat_sheet}), the exploratory $S/T/U$ scaling heuristics (\S\ref{sec:stu_framework}), and the DP-chain exploratory Monte Carlo (\S\ref{sec:dpchain_mc}). The cross-reference map (\S\ref{sec:cross_ref}) tells you which Companion section corresponds to each main-paper section.
+\end{enumerate}
+\end{mdframed}
+
+\noindent Readers with prior CPP background may skip steps 1--2 and read the main paper directly; readers new to CPP are strongly encouraged to start with the Companion. The SF-2 + Companion pair is intended to be read as a single deliverable; reading either in isolation loses essential context.
 
 % =====================================================================
 \section{Executive Overview: The SF-2 Derivation Pipeline}
@@ -173,7 +209,11 @@ The Companion sections that follow provide the visual, computational, and refere
 \label{sec:cage_figures}
 % =====================================================================
 
-This section provides TikZ diagrams of the three SF-2 cage geometries with vertex labeling, CP placement, and stabilizer-group structure. These figures correspond to Theorems 4.1, 4.2, 4.3 of the main paper.
+This section provides TikZ diagrams of the three SF-2 cage geometries (W bracelet, Z icosahedron, H dodecahedron) plus a fourth figure visualizing the 600-cell's nine-shell distance structure. The cage figures correspond to Theorems 4.1, 4.2, 4.3 of the SF-2 main paper; the shell figure corresponds to Theorem~3.1 of the SF-2 main paper (distance-shell partition).
+
+\begin{mdframed}[backgroundcolor=yellow!10, linewidth=0.8pt, roundcorner=5pt]
+\textbf{Global caveat on the cage figures.} The diagrams in Figures~\ref{fig:W_bracelet}, \ref{fig:Z_icosahedron}, and \ref{fig:H_dodecahedron} visualize \emph{representative symmetry-compatible embeddings} rather than uniquely derived microscopic occupancy states. The SF-2 framework structurally constrains \emph{cage topology} (W bracelet $D_6$ hexagonal ring, Z icosahedron, H dodecahedron, Theorems~4.1--4.3 of the SF-2 main paper), \emph{orbit class} (1200-orbit for W bracelet under $H_4$ action), and \emph{stabilizer symmetry} ($D_6$ for W, $I_h$ for Z and H); the framework does \emph{not} uniquely fix the per-vertex CP polarity assignments displayed in the diagrams. Multiple polarity assignments are compatible with the cage-stability constraints (alternating-polarity patterns under the stabilizer group's symmetric action); the figures show one such representative arrangement. A reviewer encountering specific CP polarity labels at specific vertices should read them as \emph{illustrative, not theorem-level}. Quantitative claims in the SF-2 framework rest on topology, orbit, and stabilizer, not on a specific microconfiguration.
+\end{mdframed}
 
 \subsection{Figure 1: The W Bracelet (regular hexagonal ring, $D_6$ stabilizer)}
 \label{sec:fig_W_bracelet}
@@ -208,7 +248,7 @@ This section provides TikZ diagrams of the three SF-2 cage geometries with verte
 % Title
 \node[anchor=north] at (0, -2.8) {\textbf{W bracelet: 6 hDPs / 12 CPs, $D_6$ stabilizer (order 12)}};
 \end{tikzpicture}
-\caption{The W bracelet: a regular hexagonal ring of 6 vertices each hosting one CP (alternating polarities to satisfy $D_6$ symmetry under cage-stability). Six hDPs span the six edges of the bracelet (one hDP per edge); each hDP contains 2 CPs distributed across two adjacent vertices, giving 12 CPs total across the bracelet's 6 vertices ($2$ CPs per vertex). The centroid (gray, center) is the $D_6$-symmetric SSV-gradient minimum; when an external charge is captured at the centroid, the bracelet transitions to the activated $W^{\pm}$ state. The W bracelet is the unique $H_4$-orbit of induced 6-cycles in the 600-cell with maximum-symmetry $D_6$ stabilizer (Theorem 4.2 of the main paper, orbit size 1200, total enumeration 4800 induced 6-cycles partitioned into exactly 2 orbits).}
+\caption{The W bracelet: a regular hexagonal ring of 6 vertices each hosting one CP (alternating polarities to satisfy $D_6$ symmetry under cage-stability). Six hDPs span the six edges of the bracelet (one hDP per edge); each hDP contains 2 CPs distributed across two adjacent vertices, giving 12 CPs total across the bracelet's 6 vertices ($2$ CPs per vertex). The centroid (gray, center) is the $D_6$-symmetric SSV-gradient minimum; when an external charge is captured at the centroid, the bracelet transitions to the activated $W^{\pm}$ state. The W bracelet is the unique $H_4$-orbit of induced 6-cycles in the 600-cell with maximum-symmetry $D_6$ stabilizer (Theorem 4.2 of the SF-2 main paper, orbit size 1200, total enumeration 4800 induced 6-cycles partitioned into exactly 2 orbits).}
 \label{fig:W_bracelet}
 \end{figure}
 
@@ -272,7 +312,7 @@ This section provides TikZ diagrams of the three SF-2 cage geometries with verte
 % Title
 \node[anchor=north] at (0, -3.7) {\textbf{Z icosahedron: 12 CPs (3 each of $\pm$eCP, $\pm$qCP), $I_h$ stabilizer (order 120)}};
 \end{tikzpicture}
-\caption{The Z icosahedron: 12 vertices forming the first Euclidean distance shell at $d^2 = 1/\phig^2$ from any reference vertex of the 600-cell (Theorem 4.1 of the main paper). Each vertex hosts one CP, distributed as $3 \times (+\eCP)$, $3 \times (-\eCP)$, $3 \times (+\qCP)$, $3 \times (-\qCP)$ under $I_h$ cage-stability (Corollary 4.1.2). The icosahedron is a closed polyhedral surface; unlike the W bracelet, the centroid is not externally accessible (no centroid-capture mechanism). The $I_h$ stabilizer has order 120; total enumeration gives 120 distinct icosahedral shells in the 600-cell. Three pairs of interlocked tetrahedra at $120°$ phase rotations produce the four-layer phase interference structure that gives Z its axial-vector coupling character.}
+\caption{The Z icosahedron: 12 vertices forming the first Euclidean distance shell at $d^2 = 1/\phig^2$ from any reference vertex of the 600-cell (Theorem 4.1 of the SF-2 main paper). Each vertex hosts one CP, distributed as $3 \times (+\eCP)$, $3 \times (-\eCP)$, $3 \times (+\qCP)$, $3 \times (-\qCP)$ under $I_h$ cage-stability (Corollary 4.1.2). The icosahedron is a closed polyhedral surface; unlike the W bracelet, the centroid is not externally accessible (no centroid-capture mechanism). The $I_h$ stabilizer has order 120; total enumeration gives 120 distinct icosahedral shells in the 600-cell. Three pairs of interlocked tetrahedra at $120°$ phase rotations produce the four-layer phase interference structure that gives Z its axial-vector coupling character.}
 \label{fig:Z_icosahedron}
 \end{figure}
 
@@ -353,8 +393,76 @@ This section provides TikZ diagrams of the three SF-2 cage geometries with verte
 % Title
 \node[anchor=north] at (0, -3.7) {\textbf{H dodecahedron: 20 CPs (5 each of $\pm$eCP, $\pm$qCP), $I_h$ stabilizer (order 120)}};
 \end{tikzpicture}
-\caption{The H dodecahedron: 20 vertices forming the second Euclidean distance shell at $d^2 = 1$ from any reference vertex of the 600-cell (Theorem 4.3 of the main paper). Each vertex hosts one CP, distributed as $5 \times (+\eCP)$, $5 \times (-\eCP)$, $5 \times (+\qCP)$, $5 \times (-\qCP)$ under $I_h$ cage-stability (Corollary 4.3.4). The dodecahedron shares the $I_h$ stabilizer group (order 120) with the Z icosahedron via Platonic duality (Corollary 4.3.2). The dodecahedron's rotation group $A_5$ admits only the trivial irreducible representation of dimension 1, giving cage-internal angular momentum $J_{\mathrm{cage}} = 0$; the relativistic Lorentz-scalar character inherits via the continuum-limit Yang-Mills EFT (Theorem 8.3 of the main paper). The 12 pentagonal faces of the dodecahedron provide additional substrate-coupling channels relative to the icosahedron's 20 triangular faces; this contributes to the $s_H$ shell-density factor in the master mass formula.}
+\caption{The H dodecahedron: 20 vertices forming the second Euclidean distance shell at $d^2 = 1$ from any reference vertex of the 600-cell (Theorem 4.3 of the SF-2 main paper). Each vertex hosts one CP, distributed as $5 \times (+\eCP)$, $5 \times (-\eCP)$, $5 \times (+\qCP)$, $5 \times (-\qCP)$ under $I_h$ cage-stability (Corollary 4.3.4). The dodecahedron shares the $I_h$ stabilizer group (order 120) with the Z icosahedron via Platonic duality (Corollary 4.3.2). The dodecahedron's rotation group $A_5$ admits only the trivial irreducible representation of dimension 1, giving cage-internal angular momentum $J_{\mathrm{cage}} = 0$; the relativistic Lorentz-scalar character inherits via the continuum-limit Yang-Mills EFT (Theorem 8.3 of the SF-2 main paper). The 12 pentagonal faces of the dodecahedron provide additional substrate-coupling channels relative to the icosahedron's 20 triangular faces; this contributes to the $s_H$ shell-density factor in the master mass formula.}
 \label{fig:H_dodecahedron}
+\end{figure}
+
+\subsection{Figure 4: The 600-cell distance-shell structure}
+\label{sec:fig_distance_shells}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.0, every node/.style={font=\scriptsize}]
+% Concentric circles for the 9 shells of the 600-cell
+% Shell sequence: {1, 12, 20, 12, 30, 12, 20, 12, 1}
+% Squared distances: {0, 1/phi^2, 1, 1+1/phi^2, 2, 1+phi, 3, 1+1/phi^2+2, 4}
+
+% Center (reference vertex, shell 0)
+\fill[red!80!black] (0,0) circle (0.10);
+\node[anchor=west, font=\footnotesize] at (0.15, 0) {$V_0 = 1$ (reference vertex)};
+
+% Shell 1: 12 vertices (icosahedron) at d^2 = 1/phi^2
+\draw[blue!60!black, thick] (0,0) circle (1.0);
+\node[anchor=south west, font=\scriptsize] at (0.7, 0.7) {$V_1 = 12$};
+\node[anchor=north west, font=\scriptsize, blue!70!black] at (0.7, 0.55) {(icosahedron, \textbf{Z cage})};
+\node[anchor=west, font=\scriptsize, gray] at (1.0, 0) {$d^2 = 1/\phig^2$};
+
+% Shell 2: 20 vertices (dodecahedron) at d^2 = 1
+\draw[green!60!black, thick] (0,0) circle (1.6);
+\node[anchor=south west, font=\scriptsize] at (1.1, 1.15) {$V_2 = 20$};
+\node[anchor=north west, font=\scriptsize, green!50!black] at (1.1, 1.0) {(dodecahedron, \textbf{H cage})};
+\node[anchor=west, font=\scriptsize, gray] at (1.6, 0) {$d^2 = 1$};
+
+% Shell 3: 12 vertices at d^2 = 1 + 1/phi^2
+\draw[blue!40!black, thin, dashed] (0,0) circle (2.05);
+\node[anchor=south west, font=\scriptsize] at (1.4, 1.5) {$V_3 = 12$};
+\node[anchor=west, font=\scriptsize, gray] at (2.05, 0) {$d^2 \approx 1.38$};
+
+% Shell 4: 30 vertices (icosidodecahedron) at d^2 = 2
+\draw[purple!50!black, thick] (0,0) circle (2.45);
+\node[anchor=south west, font=\scriptsize] at (1.7, 1.75) {$V_4 = 30$};
+\node[anchor=north west, font=\scriptsize, purple!50!black] at (1.7, 1.6) {(icosidodecahedron)};
+\node[anchor=west, font=\scriptsize, gray] at (2.45, 0) {$d^2 = 2$};
+
+% Shell 5: 12 vertices at d^2 = 1 + phi
+\draw[blue!40!black, thin, dashed] (0,0) circle (2.8);
+\node[anchor=south west, font=\scriptsize] at (1.95, 2.0) {$V_5 = 12$};
+
+% Shell 6: 20 vertices at d^2 = 3
+\draw[green!40!black, thin, dashed] (0,0) circle (3.15);
+\node[anchor=south west, font=\scriptsize] at (2.2, 2.25) {$V_6 = 20$};
+
+% Shell 7: 12 vertices at d^2 ~ 3.38
+\draw[blue!40!black, thin, dashed] (0,0) circle (3.45);
+\node[anchor=south west, font=\scriptsize] at (2.4, 2.45) {$V_7 = 12$};
+
+% Shell 8: 1 vertex (antipodal) at d^2 = 4
+\fill[red!80!black] (3.7, 0) circle (0.10);
+\node[anchor=west, font=\footnotesize] at (3.85, 0) {$V_8 = 1$ (antipodal vertex)};
+\draw[red!40!black, very thin, dashed] (0,0) circle (3.7);
+
+% Total annotation
+\node[anchor=north, font=\footnotesize] at (0, -3.5) {\textbf{Total: $\sum V_i = 1+12+20+12+30+12+20+12+1 = 120$ vertices}};
+\node[anchor=north, font=\footnotesize, gray!70] at (0, -3.8) {(matching the binary icosahedral group $\Gamma$ order)};
+
+% Mass-gap annotation
+\draw[<->, red!50!black, thick] (1.1, -1.0) -- (1.5, -1.0);
+\node[anchor=north, font=\scriptsize, red!50!black] at (1.3, -1.05) {mass gap};
+\node[anchor=north, font=\scriptsize, red!50!black] at (1.3, -1.25) {no shell in $(12, 20)$};
+\node[anchor=north, font=\scriptsize, red!50!black] at (1.3, -1.45) {(Thm 4.4)};
+\end{tikzpicture}
+\caption{The 600-cell's nine-shell Euclidean distance structure from any reference vertex (red center). The shell sequence $\{1, 12, 20, 12, 30, 12, 20, 12, 1\}$ partitions all 120 vertices of the 600-cell into shells at squared distances $\{0, 1/\phig^2, 1, 1+1/\phig^2, 2, 1+\phig, 3, 1+1/\phig^2+2, 4\}$. The shells at $V_1 = 12$ and $V_2 = 20$ provide the Z and H cage topologies respectively (Theorems~4.1 and~4.3 of the SF-2 main paper). The mass-gap prediction (Theorem~4.4 of the SF-2 main paper) is the structural statement that no vertex count $V$ lies strictly between 12 and 20: no additional electroweak scalar cage exists between $m_Z$ and $m_H$. Concentric circles drawn at illustrative radii; actual 4D distance structure is metric, not embedding-dependent. The figure visualizes the substrate-level basis for the cage-shape theorem hierarchy and provides reader orientation when navigating between shell-distance arguments (Sections~3 of the SF-2 main paper) and cage-shape theorems (Section~4 of the SF-2 main paper).}
+\label{fig:distance_shells}
 \end{figure}
 
 % =====================================================================
@@ -409,7 +517,7 @@ This section provides alphabetical definitions of CPP-specific terms used throug
 
 \item[\textbf{Master mass formula}] $m_B = \eta_B \cdot M_0^{(\mathrm{EW})} \cdot F_{\mathrm{cage}}(\mathrm{topology}_B)$. PARTIAL CLOSURE at v1.0 with $\eta_B$ per boson calibrated.
 
-\item[\textbf{Nexus}] The discrete moment-by-moment substrate-level update event in CPP. At each Nexus tick, CPs exchange DI-bits with the DP Sea via the PCD cycle. Local Nexus gauge invariance (Theorem 8.2 of the main paper) follows from the discrete Ward identity at each Nexus tick.
+\item[\textbf{Nexus}] The discrete moment-by-moment substrate-level update event in CPP. At each Nexus tick, CPs exchange DI-bits with the DP Sea via the PCD cycle. Local Nexus gauge invariance (Theorem 8.2 of the SF-2 main paper) follows from the discrete Ward identity at each Nexus tick.
 
 \item[\textbf{PCD (Polarize-Capture-Depolarize)}] The fundamental CP interaction cycle at each Nexus tick. Each CP polarizes the DP Sea around it, captures DI-bits from neighboring CPs, and depolarizes when releasing DI-bits to other CPs. PCD cycles drive all substrate-level dynamics in CPP.
 
@@ -427,7 +535,7 @@ This section provides alphabetical definitions of CPP-specific terms used throug
 
 \item[\textbf{V--A coupling}] Vector-minus-axial-vector coupling structure of the SM weak interaction. In CPP, 75\% V--A at the bracelet $D_6$ phase-bias structural level; 100\% V--A at the massless helicity limit (OPEN-FP-SF-2-CHIR).
 
-\item[\textbf{W$^0$ catalyst framework}] The framework articulating that the observed $W^{\pm}$ is the activated state of an underlying neutral W bracelet (W$^0$), with the bracelet serving as transient catalyst-substrate for charged-current decays. Six propositions in SF-2 main \S 5 formalize the framework. \emph{The central original idea of SF-2}; externally validated across three independent reviewer passes (ChatGPT, Copilot, Grok).
+\item[\textbf{W$^0$ catalyst framework}] The framework articulating that the observed $W^{\pm}$ is the activated state of an underlying neutral W bracelet (W$^0$), with the bracelet serving as transient catalyst-substrate for charged-current decays. Six propositions in SF-2 main \S 5 formalize the framework: centroid capture (Prop 5.1), activation transition (Prop 5.2), $W^0$ mass identification (Prop 5.3), disintegration timescale (Prop 5.4), reorganization probabilities (Prop 5.5), and universality (Prop 5.6).
 
 \item[\textbf{Weinberg angle}] The mixing angle $\theta_W$ in the SM electroweak gauge structure. In CPP, $\sinsqthetaW = 3/(8\phig) \approx 0.23121$ at zero parameters from SM-6 spectral traces. Topological-invariant interpretation: 1440/3840 = 3/8 is the fraction of EW modes in $U(1)_Y$ vs $SU(2)_L$ channels.
 
@@ -481,18 +589,18 @@ H dodecahedron ($s_H$) & $\mathrm{hybrid\_weak\_factor} \cdot \phig^{-4} \cdot s
 
 \begin{table}[H]
 \centering
-\caption{SF-2 zero-parameter predictions and consistency cross-checks. ``Observation'' values from PDG 2024.}
+\caption{SF-2 zero-parameter predictions and consistency cross-checks. ``Observation'' values from PDG 2024. \\ \hspace{3em} $^*$\emph{Numerically coincident}: the topological-invariant prediction $\sinsqthetaW = 3/(8\phig) = 0.23121$ is numerically coincident with the low-energy effective value of the Weinberg angle. The Weinberg angle runs with scale ($\sinsqthetaW$ evolves $\sim 0.23121$ at $m_Z$ to other values at higher and lower scales per electroweak RG), and renormalization-scheme conventions ($\overline{\text{MS}}$ vs on-shell) differ at the per-mille level. The CPP framework's prediction is a topological-invariant equality at the substrate level; its mapping to a specific renormalization scheme is via SM-6 inheritance.}
 \label{tab:cheat_sheet_predictions}
 \begin{tabular}{lccc}
 \toprule
 Quantity & Predicted & Observed & Agreement \\
 \midrule
-$\sinsqthetaW = 3/(8\phig)$ & 0.23121 & $0.23121 \pm 0.00004$ & exact match \\
+$\sinsqthetaW = 3/(8\phig)$ & 0.23121 & $0.23121 \pm 0.00004$ & numerically coincident$^*$ \\
 $\mZ/\mW = 1/\cos\theta_W$ & 1.1405 & 1.1344 & $0.54\%$ \\
 $\mWpm$ (calibrated $\eta_W$) & 80.377 GeV & $80.377 \pm 0.012$ GeV & calibration target \\
 $\mZ$ (calibrated $\eta_Z$) & 91.1876 GeV & $91.1876 \pm 0.0021$ GeV & calibration target \\
 $\mH$ (calibrated $\eta_H$) & 125.10 GeV & $125.10 \pm 0.20$ GeV & calibration target \\
-$\Gamma_W$ (calibrated $N \sim 3.5$) & $\sim m_W e^{-N}$ & 2.085 GeV & order-of-magnitude framework \\
+$\Gamma_W$ (calibrated $N \sim 3.5$) & $\sim m_W e^{-N}$ & 2.085 GeV & order-of-magnitude heuristic \\
 $W$ lep/had split & 33\%/67\% & 32.8\%/67.2\% & match \\
 $\tau$ lep/had split & 35\%/65\% & 35.2\%/64.8\% & match \\
 $\mW^0 = \mWpm$ & within $\sim 1$ MeV & not directly tested & sharp framework prediction \\
@@ -549,13 +657,17 @@ OPEN-CORPUS-EIGENVAL-CORRECTION & QM-6 spectrum-claim corpus correction \\
 \end{table}
 
 % =====================================================================
-\section{Quantitative $W^0$ Oblique-Parameter ($S$, $T$, $U$) Framework}
+\section{$W^0$ Oblique-Parameter Sensitivity: Parametric Scaling Heuristics}
 \label{sec:stu_framework}
 % =====================================================================
 
-This section develops the substrate-level framework for computing the $W^0$ contribution to the precision-electroweak oblique parameters $S$, $T$, $U$ (Peskin-Takeuchi parameterization) at one loop. The framework is at framework-level closure: it identifies the relevant CPP substrate primitives and the calculation structure but does not provide a full continuum-limit one-loop result. A GPU-runnable Python program (\texttt{code/oblique\_parameters\_framework.py}) provides numerical estimates at framework level.
+This section develops \emph{parametric scaling heuristics} for the $W^0$ contribution to the precision-electroweak oblique parameters $S$, $T$, $U$ (Peskin-Takeuchi parameterization). The content here is \emph{exploratory}: the formulas presented are dimensional ansätze guided by the substrate symmetry structure of the W bracelet (its $D_6$ stabilizer and zero-net-charge geometry); they are \emph{not} derived one-loop oblique corrections from a fully constructed continuum effective field theory.
 
-\subsection{The oblique-parameter framework}
+\begin{mdframed}[backgroundcolor=yellow!10, linewidth=0.8pt, roundcorner=5pt]
+\textbf{Rigor positioning for this section.} A fully derived one-loop calculation of $\Delta S^{(W^0)}$, $\Delta T^{(W^0)}$, $\Delta U^{(W^0)}$ requires: (i) a continuum EFT with explicit Lagrangian and propagator structure including the $W^0$ degree of freedom; (ii) a gauge-fixing prescription preserving the substrate's $D_6$ structure under coarse-graining; (iii) a regulator preserving Ward identities; (iv) a renormalization scheme defining the on-shell vs $\overline{\text{MS}}$ matching; and (v) actual one-loop diagrammatic computation. None of (i)--(v) is established at SF-2 v1.0; the construction of the continuum EFT is registered as proof-outline future work in Section~8.3 of the SF-2 main paper. The formulas in this section should be read as \emph{parametric scaling estimates} indicating expected magnitudes for $\Delta S, \Delta T, \Delta U$ based on dimensional analysis and symmetry, \emph{not} as predictions from a derived theory. The accompanying Python program (\S\ref{sec:stu_python_program}) is an \emph{exploratory numerical probe}, not a continuum-EFT one-loop calculation.
+\end{mdframed}
+
+\subsection{The oblique-parameter framework (standard SM context)}
 
 The precision-electroweak oblique parameters $S$, $T$, $U$ measure deviations from the SM at one loop through gauge-boson vacuum polarization integrals. The contributions of new physics to $S$, $T$, $U$ are given by:
 \begin{align}
@@ -563,116 +675,168 @@ The precision-electroweak oblique parameters $S$, $T$, $U$ measure deviations fr
 \Delta T &= \frac{4\pi}{\sin^2\theta_W \cos^2\theta_W m_Z^2} \left[ \Pi_{11}(0) - \Pi_{33}(0) \right]_{\mathrm{new}}, \\
 \Delta U &= 16\pi \left[ \Pi'_{11}(0) - \Pi'_{33}(0) \right]_{\mathrm{new}},
 \end{align}
-where $\Pi_{ij}(q^2)$ are the gauge-boson self-energies. The LEP/SLC global-fit allowed regions (PDG 2024 averages) are:
+where $\Pi_{ij}(q^2)$ are the gauge-boson self-energies in a fully constructed continuum EFT. The LEP/SLC global-fit allowed regions (PDG 2024 averages) are:
 \begin{equation}
 S = 0.00 \pm 0.07, \quad T = 0.03 \pm 0.06, \quad U = 0.00 \pm 0.06.
 \end{equation}
+These formulas are the standard SM theoretical framework; their application to CPP requires the continuum-EFT construction referenced above.
 
-\subsection{The $W^0$ contribution to vacuum polarization}
+\subsection{Substrate-symmetry-motivated scaling features}
 
-In SF-2, the activated $W^0$ contributes to vacuum polarization through its substrate-level coupling structure. Two distinguishing features of the $W^0$ contribution relative to SM $W^{\pm}$ contributions:
+Two qualitative features distinguish $W^0$ contributions to $\Delta S, \Delta T, \Delta U$ from SM $W^{\pm}$ contributions at the symmetry-structure level:
 \begin{enumerate}[leftmargin=*]
-\item \emph{Zero net charge of the bracelet}: the bracelet's $D_6$ stabilizer enforces zero net electric charge across the six bracelet vertices. The charge-dependent vacuum-polarization integrals cancel symmetrically; only the charge-independent (or charge-magnitude-squared) contributions survive.
-\item \emph{Energy-scale dependence}: the bracelet's debris-configuration dependence on momentum-transfer scale produces a $Q^2$-dependent contribution to $\Pi_{ij}(Q^2)$ that differs from the SM $W^{\pm}$ contribution.
+\item \emph{Zero net charge of the bracelet}: the W bracelet's $D_6$ stabilizer enforces zero net electric charge across the six bracelet vertices. In a substrate-symmetric reading of the vacuum-polarization integrand, charge-dependent contributions cancel symmetrically; only charge-magnitude-squared contributions are expected to survive at leading order. \emph{This is a symmetry observation, not a calculated suppression.}
+\item \emph{Mass-degeneracy of $W^0$ and $W^{\pm}$}: per Proposition~5.3 of the SF-2 main paper, $m_{W^0} = m_{W^{\pm}}$ within $\sim 1$ MeV. In standard new-physics analyses of $\Delta T$, mass-splittings are the leading source of $\Delta T$ contributions. With $m_{W^0} \approx m_{W^{\pm}}$, the mass-splitting factor is small, suggesting that $\Delta T^{(W^0)}$ is expected to be suppressed. \emph{This is a heuristic expectation based on the standard mass-splitting role in $\Delta T$ formulas, not a derived result.}
 \end{enumerate}
 
-\subsection{Framework-level estimate}
+\subsection{Parametric scaling ansätze}
 
-At framework level, the $W^0$ contribution to $S$, $T$, $U$ is estimated as:
+At parametric-scaling level, the expected magnitudes of $\Delta S^{(W^0)}$, $\Delta T^{(W^0)}$, $\Delta U^{(W^0)}$ may be estimated by dimensional analysis. Using standard $1/(16\pi^2)$ loop-counting factors, $D_6$-symmetry-motivated structural coefficients $\delta_{D_6}, \delta_{\mathrm{mass}}, \delta_{\mathrm{kinetic}}$ of order unity, and the bracelet cage scale $Q_{\mathrm{cage}}$ relative to $m_W$:
 \begin{align}
-\Delta S^{(W^0)} &\sim \frac{1}{12\pi} \cdot \delta_{D_6} \cdot \log\left( \frac{Q^2_{\mathrm{cage}}}{m_W^2} \right) \\
-\Delta T^{(W^0)} &\sim \frac{1}{16\pi^2} \cdot \frac{m_W^2}{m_W^2 - m_{W^0}^2} \cdot \delta_{\mathrm{mass}} \\
-\Delta U^{(W^0)} &\sim \frac{1}{6\pi} \cdot \delta_{\mathrm{kinetic}}
+\Delta S^{(W^0)} &\sim \frac{1}{12\pi} \cdot \delta_{D_6} \cdot \log\left( \frac{Q^2_{\mathrm{cage}}}{m_W^2} \right) \quad \text{(\emph{dimensional ansatz, not derived})} \\
+\Delta T^{(W^0)} &\sim \frac{1}{16\pi^2} \cdot \frac{m_W^2}{m_W^2 - m_{W^0}^2} \cdot \delta_{\mathrm{mass}} \quad \text{(\emph{dimensional ansatz, not derived})} \\
+\Delta U^{(W^0)} &\sim \frac{1}{6\pi} \cdot \delta_{\mathrm{kinetic}} \quad \text{(\emph{dimensional ansatz, not derived})}
 \end{align}
-where $\delta_{D_6}$, $\delta_{\mathrm{mass}}$, $\delta_{\mathrm{kinetic}}$ are framework-level dimensionless coefficients of order unity, $Q_{\mathrm{cage}}$ is the bracelet cage scale, and $m_{W^0}$ is the bare bracelet mass (predicted $m_{W^0} = m_{W^{\pm}}$ within $\sim 1$ MeV by Proposition 5.3 of the main paper).
+where the form factors and structural coefficients $\delta_{D_6}, \delta_{\mathrm{mass}}, \delta_{\mathrm{kinetic}}$ are at present heuristic placeholders. These scaling ansätze \emph{indicate expected magnitudes} for $\Delta S, \Delta T, \Delta U$ assuming an eventual continuum EFT is constructed; they are not predictions from a derived theory.
 
-\emph{Critical observation}: because $m_{W^0} = m_{W^{\pm}}$ within $\sim 1$ MeV, the mass-splitting factor $m_W^2 - m_{W^0}^2$ is approximately zero, suggesting that $\Delta T^{(W^0)}$ is suppressed at leading order. This is consistent with the LEP/SLC observation $T = 0.03 \pm 0.06$ (zero within $1\sigma$).
+\subsection{Exploratory simulation: Python program}
+\label{sec:stu_python_program}
 
-\subsection{Python program for GPU-accelerated numerical estimates}
+The companion Python program (\texttt{code/oblique\_parameters\_framework.py}) provides an \emph{exploratory numerical probe} of the scaling ansätze above. The program uses PyTorch for GPU acceleration (CPU fallback automatic). \emph{The program is a proof-of-concept exploratory tool, not a continuum-EFT one-loop computation}; its output should be interpreted as exploring the parametric-scaling regime, not as predicting renormalized oblique parameters.
 
-The companion Python program (\texttt{code/oblique\_parameters\_framework.py}) provides GPU-runnable numerical estimates of the framework-level $\Delta S^{(W^0)}$, $\Delta T^{(W^0)}$, $\Delta U^{(W^0)}$ values. The program uses PyTorch for GPU acceleration; it requires PyTorch installed with CUDA support if running on Nvidia GPU.
-
-\textbf{Program structure}:
+\textbf{Program structure} (proof-of-concept):
 \begin{enumerate}[leftmargin=*]
-\item Set up the W bracelet's $D_6$-symmetric substrate-level vacuum-polarization integrand.
-\item Sample momentum-transfer values $Q^2$ across the LEP/SLC range ($Q^2 \in [m_Z^2, (200~\mathrm{GeV})^2]$).
-\item For each $Q^2$, evaluate the substrate-level $\Pi^{(W^0)}_{ij}(Q^2)$ contribution via Monte Carlo integration over bracelet vertex configurations.
-\item Combine via the Peskin-Takeuchi formulas to extract $\Delta S$, $\Delta T$, $\Delta U$.
-\item Compare to LEP/SLC allowed region.
+\item Generate Monte Carlo samples of $D_6$-symmetric W bracelet vertex CP-charge configurations (zero net charge).
+\item For each sample at sampled $Q^2 \in [m_Z^2, (200~\text{GeV})^2]$, evaluate a heuristic substrate-symmetric integrand for $\Pi_{ij}(Q^2)$.
+\item Combine via the Peskin-Takeuchi formulas to extract heuristic $\Delta S, \Delta T, \Delta U$ scaling estimates.
+\item Compare estimated magnitudes to LEP/SLC allowed regions.
 \end{enumerate}
 
-\textbf{Expected output}: $\Delta S^{(W^0)}$ and $\Delta U^{(W^0)}$ at the $10^{-3}$ to $10^{-2}$ level (per-mille to per-cent of the LEP/SLC uncertainty); $\Delta T^{(W^0)}$ suppressed at $10^{-4}$ to $10^{-3}$ due to $m_{W^0} = m_{W^{\pm}}$. The framework-level estimates fall comfortably within the LEP/SLC allowed regions $|S, T, U| \lesssim 0.1$.
+\textbf{Key code excerpt} (substrate-symmetric integrand, parametric scaling):
+\begin{lstlisting}
+def vacuum_polarization_W0(q_sq, charges, device):
+    """
+    Heuristic substrate-symmetric integrand for Pi_{ij}^(W^0)(q^2).
+    Parametric scaling ansatz, NOT a derived one-loop calculation.
+    """
+    q_sq_sum = torch.sum(charges ** 2, dim=1)  # sum_i q_i^2 per bracelet
+    form_factor = q_sq / M_W ** 2 / (1.0 + q_sq / M_W ** 2)
+    # Three components at substrate-symmetry-motivated relative scales:
+    pi_11 = ALPHA_EM * q_sq_sum * form_factor              # ~ sum q^2 * f
+    pi_33 = ALPHA_EM * q_sq_sum * form_factor * 0.7        # icosa-motivated
+    pi_3Q = ALPHA_EM * q_sq_sum * form_factor * 0.05       # D_6 cancellation
+    return torch.stack([pi_11, pi_33, pi_3Q], dim=1)
+\end{lstlisting}
 
-\subsection{Falsification window}
+\textbf{Expected exploratory output magnitudes}: parametric-scaling estimates suggest $\Delta S^{(W^0)}, \Delta U^{(W^0)}$ at the $10^{-3}$--$10^{-2}$ level (per-mille to per-cent of LEP/SLC uncertainty) and $\Delta T^{(W^0)}$ further suppressed at $10^{-4}$--$10^{-3}$ due to $m_{W^0} \approx m_{W^{\pm}}$. These magnitudes fall comfortably within the LEP/SLC allowed regions $|S, T, U| \lesssim 0.1$.
 
-Per the SF-2 main paper \S 13.2.1, if the predicted $W^0$ contribution to $S, T, U$ falls outside the LEP/SLC global-fit allowed region at $> 3\sigma$, the SF-2 framework is falsified by existing data. At framework level (this section), the predicted contributions are estimated to fall within the allowed region, so no falsification is currently implied. Full continuum-limit one-loop calculation (registered for v0.5+ refinement work parallel to OPEN-FP-SF-2-$\eta$) will tighten the prediction.
+\textbf{Important interpretive caution}: the magnitudes above are \emph{exploratory scaling estimates}, not theoretical predictions. A reviewer should not interpret a numerical output of the program as a one-loop prediction; rather, the program demonstrates that the substrate-symmetry-motivated parametric scaling is \emph{consistent} with the LEP/SLC region, and quantifies the order-of-magnitude expected sensitivity.
+
+\subsection{Falsification window (scaling-level statement)}
+
+Per Section~13.2.1 of the SF-2 main paper, if a derived $W^0$ contribution to $S, T, U$ falls outside the LEP/SLC allowed region at $> 3\sigma$, the SF-2 framework is falsified by existing data. At parametric-scaling level (this section), the expected magnitudes fall within the allowed region, so no falsification is currently implied. \emph{Definitive falsification or confirmation awaits the construction of a derived continuum EFT for the $W^0$ degree of freedom} (proof-outline future work; registered for refinement parallel to OPEN-FP-SF-2-$\eta$ and the continuum-derivation steps of Theorem~8.3 in the SF-2 main paper).
 
 % =====================================================================
-\section{DP-Chain Composition Monte Carlo Framework}
+\section{DP-Chain Composition: Exploratory Statistical Toy Model}
 \label{sec:dpchain_mc}
 % =====================================================================
 
-This section develops the framework for computing the DP-chain species composition ratios (qDP : hDP-A : hDP-B : eDP) in meson interbond chains from substrate-level primitives. The framework is at framework-level closure: it identifies the relevant DP Sea concentration and per-link coupling primitives but does not provide a definitive numerical ratio. A GPU-runnable Python program (\texttt{code/dp\_chain\_monte\_carlo.py}) provides framework-level numerical estimates.
+This section presents an \emph{exploratory statistical toy model} for the DP-chain species composition ratios (qDP : hDP-A : hDP-B : eDP) in meson interbond chains. The content here is exploratory: substrate thermodynamics (effective temperature, equilibrium, ergodicity) is not yet defined at theorem level in the CPP corpus; the model below is a proof-of-concept statistical exploration, not a derived substrate-thermodynamic prediction.
+
+\begin{mdframed}[backgroundcolor=yellow!10, linewidth=0.8pt, roundcorner=5pt]
+\textbf{Rigor positioning for this section.} A derived first-principles calculation of the DP-chain composition would require: (i) a substrate-thermodynamic framework defining the effective temperature $k_{\mathrm{eff}} T_{\mathrm{cage}}$ from CPP primitives; (ii) an equilibrium condition justifying Boltzmann statistics over a non-equilibrium substrate; (iii) an ergodic-mixing argument for the DP Sea over the relevant timescales; (iv) first-principles derivation of DP species concentrations $n(X)$ from substrate dynamics; and (v) first-principles derivation of per-link binding energies $E(X)$ from cage-stability primitives. None of (i)--(v) is established at SF-2 v1.0; the substrate-thermodynamics framework is registered as OPEN-FP-SF-2-chaincomp future work. The model below uses Boltzmann-like statistics as a \emph{toy statistical exploration} of how concentration and per-link coupling could compete to produce species ratios; it is not yet a substrate-thermodynamic derivation. The accompanying Python program is a \emph{proof-of-concept Monte Carlo} for parameter exploration, not a derived prediction.
+\end{mdframed}
 
 \subsection{The chain composition question}
 
-The W$^0$ catalyst framework's meson hadronic decay channels (SF-2 main \S 5.7.6) require DP-chain bonds between the two quark-halves of each meson (e.g., $K^- = $ strange-half + antiup-half bonded by chain). The chain is a statistical mixture of four DP species:
-\begin{itemize}[leftmargin=*]
-\item \textbf{qDP}: strongest per-link strong-charge coupling
-\item \textbf{hDP-A} ($+\qCP/-\eCP$): moderate per-link coupling, double-majority concentration
-\item \textbf{hDP-B} ($-\qCP/+\eCP$): moderate per-link coupling, double-majority concentration
-\item \textbf{eDP}: weakest per-link coupling (no strong charge), low-statistic minority
-\end{itemize}
-The DP Sea concentrations are approximately: $n(\mathrm{hDP\text{-}A}) \approx n(\mathrm{hDP\text{-}B}) \approx 2 \cdot n(\mathrm{qDP})$, with $n(\mathrm{eDP}) \ll n(\mathrm{qDP})$. The per-link binding energies are $E(\mathrm{qDP}) > E(\mathrm{hDP\text{-}A}) \approx E(\mathrm{hDP\text{-}B}) > E(\mathrm{eDP})$.
-
-The chain composition $(p_q : p_A : p_B : p_e)$ (probabilities for each species at each chain link) is the answer to the OPEN-FP-SF-2-chaincomp question.
-
-\subsection{The Monte Carlo framework}
-
-The chain composition is determined by competition between concentration (favoring hDPs) and per-link coupling (favoring qDPs). At equilibrium, the species-occupation probability at each chain link is governed by a Boltzmann-like statistical balance:
-\begin{equation}
-p_X \propto n(X) \cdot \exp\left( \frac{E(X)}{k_{\mathrm{eff}} T_{\mathrm{cage}}} \right)
-\end{equation}
-where $X \in \{q, A, B, e\}$, $n(X)$ is the DP Sea concentration, $E(X)$ is the per-link binding energy, and $k_{\mathrm{eff}} T_{\mathrm{cage}}$ is the effective cage-stability temperature. The Monte Carlo evaluates this Boltzmann distribution over chain configurations.
-
-\subsection{Expected framework-level result}
-
-At order-of-magnitude estimates with $n(\mathrm{hDP}) / n(\mathrm{qDP}) \approx 2$ and per-link energy ratios $E(\mathrm{qDP})/E(\mathrm{hDP}) \approx 1.5$ (from cage-stability considerations of strong-charge coupling vs mixed-charge coupling):
+The W$^0$ catalyst framework's meson hadronic decay channels (Section~5.7.6 of the SF-2 main paper) require DP-chain bonds between the two quark-halves of each meson (e.g., $K^- = $ strange-half + antiup-half bonded by chain). The chain is hypothesized to be a statistical mixture of four DP species. Table~\ref{tab:dp_species_charges} consolidates the DP species charge content and their expected DP Sea concentrations.
 
 \begin{table}[H]
 \centering
-\caption{Framework-level estimate of DP-chain composition ratios. The qDP species dominates per-link binding strength despite hDPs' higher concentration; eDPs are a low-statistic minority. Numerical values are framework-level estimates; full Monte Carlo runs (\texttt{code/dp\_chain\_monte\_carlo.py}) will refine.}
-\label{tab:dpchain_estimate}
-\begin{tabular}{lcccc}
+\caption{DP species charge content and DP Sea concentrations. The DP Sea is a statistically distributed background of paired CPs; the four species differ in charge composition and concentration. Per-link binding energies are heuristic ranking, not derived values; numerical values are placeholders for the exploratory toy model.}
+\label{tab:dp_species_charges}
+\begin{tabular}{lccccc}
 \toprule
-Species & Concentration $n(X)$ & Per-link energy $E(X)$ & Probability $p_X$ \\
+Species & CP composition & Net charge & EM charge & Sea concentration & Binding energy ranking \\
 \midrule
-qDP & 1.0 & $1.5 \cdot E_0$ & $\sim 35\%$ \\
-hDP-A & 2.0 & $1.0 \cdot E_0$ & $\sim 30\%$ \\
-hDP-B & 2.0 & $1.0 \cdot E_0$ & $\sim 30\%$ \\
-eDP & 0.1 & $0.3 \cdot E_0$ & $\sim 5\%$ \\
+qDP & $+\qCP / -\qCP$ & 0 & 0 & $n_0$ (reference) & strongest (strong-charge) \\
+hDP-A & $+\qCP / -\eCP$ & 0 & $-1/3$ & $\sim 2 n_0$ (double majority) & moderate (mixed-charge) \\
+hDP-B & $-\qCP / +\eCP$ & 0 & $+1/3$ & $\sim 2 n_0$ (double majority) & moderate (mixed-charge) \\
+eDP & $+\eCP / -\eCP$ & 0 & 0 & $\ll n_0$ (rare, EM-only) & weakest (EM-only) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The framework-level estimate has chains dominated by qDPs ($\sim 35\%$) and hDPs ($\sim 60\%$ combined hDP-A + hDP-B), with eDPs as the rare minority. This is consistent with the structural argument from SF-2 main \S 5.7.6 (DP-chain composition note): hDPs dominate by number due to concentration majority, qDPs contribute the strongest per-link binding, eDPs are rare.
+The chain-composition question is: \emph{at each link of a meson interbond chain, what is the probability of finding each DP species?} This is the OPEN-FP-SF-2-chaincomp problem, which requires substrate-thermodynamic closure to answer rigorously.
 
-\subsection{Python program for GPU-accelerated Monte Carlo}
+\subsection{The exploratory toy model}
 
-The companion Python program (\texttt{code/dp\_chain\_monte\_carlo.py}) provides GPU-runnable Monte Carlo of the chain composition. The program uses PyTorch for GPU acceleration.
+The toy model assumes: (a) the DP-chain links are statistically independent (no inter-link correlation); (b) Boltzmann-like statistics are an appropriate \emph{exploratory} approximation; (c) species concentration ratios $n(X)$ and per-link binding energies $E(X)$ are parametric inputs, not derived. Under these assumptions, the toy species-occupation probability at each chain link is:
+\begin{equation}
+p_X \propto n(X) \cdot \exp\left( \frac{E(X)}{k_{\mathrm{eff}} T_{\mathrm{cage}}} \right) \quad \text{(\emph{toy-statistical ansatz, not derived})}
+\end{equation}
+where $X \in \{q, A, B, e\}$ and $k_{\mathrm{eff}} T_{\mathrm{cage}}$ is the effective cage-stability temperature parameter. \emph{The Boltzmann form is a heuristic guess, not a justified equilibrium-statistical result.} The toy Monte Carlo evaluates this distribution over chain configurations to explore the parameter dependence.
 
-\textbf{Program structure}:
+\subsection{Exploratory parameter-scan estimates}
+
+At placeholder parameter values $n(\mathrm{hDP}) / n(\mathrm{qDP}) \approx 2$, $E(\mathrm{qDP}) / E(\mathrm{hDP}) \approx 1.5$, and $k_{\mathrm{eff}} T \approx 0.5 E_0$:
+
+\begin{table}[H]
+\centering
+\caption{Exploratory toy-model estimate of DP-chain composition ratios at placeholder parameter values. The qDP species is favored per-link by stronger binding; the hDP species are favored by higher concentration; the net competition produces the ratios shown. These are toy-model exploration values, not substrate-derived predictions.}
+\label{tab:dpchain_estimate}
+\begin{tabular}{lcccc}
+\toprule
+Species & Concentration $n(X)$ & Per-link energy $E(X)$ & Toy probability $p_X$ \\
+\midrule
+qDP & 1.0 & $1.5 \cdot E_0$ & $\sim 35\%$ (exploratory) \\
+hDP-A & 2.0 & $1.0 \cdot E_0$ & $\sim 30\%$ (exploratory) \\
+hDP-B & 2.0 & $1.0 \cdot E_0$ & $\sim 30\%$ (exploratory) \\
+eDP & 0.1 & $0.3 \cdot E_0$ & $\sim 5\%$ (exploratory) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The toy-model estimate has chains dominated by qDPs ($\sim 35\%$) and hDPs ($\sim 60\%$ combined hDP-A + hDP-B), with eDPs as the rare minority. \emph{This consistency with the structural argument in Section~5.7.6 of the SF-2 main paper} (hDPs dominate by number; qDPs dominate per-link binding; eDPs are rare) is encouraging but not a substrate-thermodynamic derivation.
+
+\subsection{Exploratory simulation: Python program}
+
+The companion Python program (\texttt{code/dp\_chain\_monte\_carlo.py}) provides a GPU-accelerated \emph{proof-of-concept Monte Carlo} of the toy chain-composition model. The program uses PyTorch for GPU acceleration (CPU fallback automatic). \emph{The program is an exploratory parameter-sensitivity probe, not a substrate-thermodynamic derivation.}
+
+\textbf{Program structure} (proof-of-concept):
 \begin{enumerate}[leftmargin=*]
 \item Initialize a chain of $N$ link sites between two quark-halves.
-\item At each link, sample a DP species from the Boltzmann distribution $p_X \propto n(X) \exp(E(X) / k T)$.
-\item Compute total chain binding energy: $E_{\mathrm{chain}} = \sum_i E(X_i)$.
-\item Repeat $M$ Monte Carlo samples; record species occupation frequencies $f_X = (\text{count of } X)/(\text{total links})$.
-\item Output: $(f_q : f_A : f_B : f_e)$ ratios with statistical error bars.
+\item At each link, sample a DP species from the toy Boltzmann distribution.
+\item Compute total chain binding energy and species occupation frequencies.
+\item Repeat $M$ Monte Carlo samples; report ratios with statistical error.
+\item Scan over $k_{\mathrm{eff}} T_{\mathrm{cage}}$ parameter to explore sensitivity.
 \end{enumerate}
 
-\textbf{Expected output}: Species ratios approximately $(35\% : 30\% : 30\% : 5\%)$ for qDP : hDP-A : hDP-B : eDP at framework-level parameter values; full parameter scan over $n$ and $E$ ratios provides sensitivity.
+\textbf{Key code excerpt} (toy-statistical sampling):
+\begin{lstlisting}
+def species_probabilities(concentrations, energies, kt):
+    """
+    Toy-statistical species probability ansatz.
+    Boltzmann-like balance, NOT derived from substrate thermodynamics.
+    """
+    weights = concentrations * torch.exp(energies / kt)
+    return weights / weights.sum()
 
-\textbf{GPU acceleration}: For typical meson chain length $N \sim 10$ and Monte Carlo sample size $M \sim 10^6$, the program runs in seconds on a single Nvidia GPU. Parameter scans ($\sim 10^4$ parameter points) complete in minutes.
+def sample_chain(probs, n_chains, n_length, device):
+    """
+    Proof-of-concept Monte Carlo: sample chain link species from probs.
+    Each link independent; no inter-link correlation modeled.
+    """
+    probs_2d = probs.unsqueeze(0).expand(n_chains * n_length, -1)
+    samples = torch.multinomial(probs_2d, num_samples=1).squeeze(-1)
+    return samples.reshape(n_chains, n_length)
+\end{lstlisting}
+
+\textbf{Expected exploratory output}: Species ratios approximately $(35\% : 30\% : 30\% : 5\%)$ for qDP : hDP-A : hDP-B : eDP at placeholder parameter values; full parameter scan over $n$ and $E$ ratios and over $k_{\mathrm{eff}} T$ provides toy-model sensitivity.
+
+\textbf{Important interpretive caution}: the species ratios above are \emph{toy-model exploratory values}, not substrate-derived predictions. A reviewer should interpret the program output as exploring the parametric regime under Boltzmann-like sampling, not as predicting DP-chain composition. Substrate-derived predictions await OPEN-FP-SF-2-chaincomp closure with a proper substrate-thermodynamic framework.
+
+\textbf{GPU acceleration}: For typical meson chain length $N \sim 10$ and Monte Carlo sample size $M \sim 10^6$, the proof-of-concept program runs in seconds on a single Nvidia GPU. Parameter scans ($\sim 10^4$ parameter points over $k_{\mathrm{eff}} T$ in $[0.2, 2.0]$) complete in minutes.
 
 % =====================================================================
 \section{Cross-Reference Map: Main Paper $\leftrightarrow$ Companion}
@@ -681,20 +845,22 @@ The companion Python program (\texttt{code/dp\_chain\_monte\_carlo.py}) provides
 
 \begin{table}[H]
 \centering
-\caption{Cross-reference map between SF-2 main paper sections and Companion sections. Readers may use this map to navigate between the structural-derivation core (main paper) and the visual/computational/reference content (Companion).}
+\caption{Cross-reference map between SF-2 main paper sections and Companion sections. Readers may use this map to navigate between the structural-derivation core (SF-2 main paper) and the visual/exploratory-computational/reference content (Companion).}
 \label{tab:cross_ref_map}
 \begin{tabular}{lll}
 \toprule
-Main paper section & Topic & Companion section \\
+SF-2 main paper section & Topic & Companion section \\
 \midrule
+(Reader orientation, all readers) & 4-step reading order & \S\ref{sec:reading_order} How to Read \\
 \S 1 Introduction & Programme overview & \S\ref{sec:exec_overview} Executive Overview \\
 \S 2 Inheritance (CPP terminology) & CPP primitives & \S\ref{sec:glossary} Glossary \\
-\S 4 Cage-shape theorems & W bracelet, Z icosa, H dodec & \S\ref{sec:cage_figures} Cage Figures + \S\ref{sec:cheat_sheet} Table 1 \\
+\S 3 Distance-shell classification & Shell sequence $\{1,12,20,\ldots\}$ & \S\ref{sec:fig_distance_shells} Figure 4 (shells) \\
+\S 4 Cage-shape theorems & W bracelet, Z icosa, H dodec & \S\ref{sec:cage_figures} Figures 1--3 + \S\ref{sec:cheat_sheet} Table 1 \\
 \S 5 W catalyst framework & W$^0$ mechanism & \S\ref{sec:glossary} (Activated W, Catalyst, etc.) \\
-\S 5.7.6 hadronic decay channels & DP-chain composition & \S\ref{sec:dpchain_mc} Monte Carlo framework \\
+\S 5.7.6 hadronic decay channels & DP-chain composition & \S\ref{sec:dpchain_mc} Exploratory MC toy model \\
 \S 10 Mass formula & Calibration factors $\eta_B$, $\ell_Z$, $s_H$, $\kappa_W$ & \S\ref{sec:cheat_sheet} Table 2 \\
 \S 13.1 Predictions catalog & Quantitative cross-checks & \S\ref{sec:cheat_sheet} Table 3 \\
-\S 13.2.1 Oblique parameters & $W^0$ contribution to $S, T, U$ & \S\ref{sec:stu_framework} S/T/U Framework \\
+\S 13.2.1 Oblique parameters & $W^0$ scaling sensitivity & \S\ref{sec:stu_framework} $S/T/U$ scaling heuristics \\
 \S 13.3 Six falsifiers & Falsification windows & \S\ref{sec:cheat_sheet} Table 5 \\
 \S 14 Discussion (open frontier) & OPEN-FP-SF-2-$\ast$ problems & \S\ref{sec:cheat_sheet} Table 4 \\
 \bottomrule
