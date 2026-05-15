@@ -412,9 +412,15 @@ The following are questions where Thomas's physical intuition is the load-bearin
 
 ## §7 Next session priorities
 
-1. **OPEN-SM-4 vs OPEN-SM-7d labeling housekeeping**: 1-patch fix renaming throughout the SF-4 + SF-2 corpus to use OPEN-SM-4 consistently. Should happen before paper drafting opens.
-2. **Sub-claim (b) χ-value resolution session**: priority work item per §5.1. This is the analog of SF-4 Session 40.
-3. **Confirmation from Thomas on the six open questions in §6**: should ideally happen at start of next session before §5.1 work begins.
+*Status as of Session 85 close (Patch 0378). Sub-claim (b) χ-value resolution work is partially advanced: the OP-SM-4 archive arithmetic error is corrected (Finding C-3), the 600-cell distance structure is verified computationally (Finding C-4), and the candidate χ table is enumerated (§9). Sub-claim (b) is not yet closed at theorem level — the perturbation framework of sub-claim (c) needs to validate which candidate is the right $\chi$ for the closure.*
+
+1. **OPEN-SM-4 vs OPEN-SM-7d labeling housekeeping**: 1-patch fix renaming throughout the SF-4 + SF-2 + (newly) Research_Timeline.md corpus to use OPEN-SM-4 consistently. Should happen before paper drafting opens. *Updated note: Patch 0377 (Research_Timeline.md) propagated the "OP-SM-7d" labeling into the new medium-term scheduling artifact — Priority 1 entry. The housekeeping rename should cover this new file as well, plus the same six SF-line artifacts listed in §1.1.*
+
+2. **Sub-claim (c) Wigner-Eckart perturbation framework setup** (promoted from Session 86-87 priority to Session 86 priority following the Session 85 χ-candidate enumeration): construct the $\hat{V}_\chi$ perturbation operator on the TBM-aligned basis at theorem level, identify the Wigner-Eckart coefficients $v_{ij}$ from 600-cell geometry, and compute the leading TBM angle corrections. The sub-claim (c) calculation determines which of the candidate χ-values from §9 is consistent with the empirical data, replacing pattern-matching with derivation.
+
+3. **Confirmation from Thomas on the six open questions in §6**: should ideally happen at start of next session before §5.2 work begins. Q3 in particular (is χ φ⁻¹, φ⁻², φ⁻³, 1/√5, or something else?) now has a sharper computational ground: the bias parameter from the edge-to-1 ratio is $\phi^{-3}$, but Picture A/B/C/D may motivate a different χ via mechanism-specific arguments.
+
+4. **Picture B Patch 0367 sketch advancement** (deferred priority): the W⁰ centroid-decoupling sketch needs the three-Layer development (operational definition + post-emergence direction quantification + V-A phenomenology bridge) before sub-claim (e) closure work begins.
 
 ---
 
@@ -422,11 +428,128 @@ The following are questions where Thomas's physical intuition is the load-bearin
 
 - **Finding C-1.** The Grok exploratory δ_CP formula $\delta_{CP} \approx 180° + (\chi \times 360°/\phi^2 - 180°)$, when evaluated directly with $\chi = \phi^{-1} \approx 0.618$, does not give 195°; it gives 84.97° (if sign(bias) = +1) or 264.97° (if sign(bias) = −1). The claim δ_CP ≈ 195° from this formula needs re-derivation from scratch. The formula may be mis-stated in the archive, or the sign/structure may be applied in a way not visible from the document.
 - **Finding C-2.** The Grok exploratory sin²θ₁₃ formula $\sin^2\theta_{13} \approx \phi^{-2}/[\text{coefficient}]$ does not give the right magnitude under simple coefficient values. The intended formula needs re-derivation or the coefficient needs identification from CPP geometry.
-- **Finding C-3 (working).** *Working finding pending Session 85 first-pass closure attempt.* The χ-value resolution is the central first sub-task; will be registered as Finding C-3 once derived.
+- **Finding C-3 (REGISTERED Session 85).** The OP-SM-4 archive's derivation of $\chi = \phi^{-2}$ from the edge-ratio symmetric-bias calculation contains an arithmetic error in the final simplification step. The archive wrote "$(1 - \phi^{-1})/(1 + \phi^{-1}) = \phi^{-1}/\phi = \phi^{-2}$", but the correct simplification using $\phi - 1 = 1/\phi$ and $\phi + 1 = \phi^2$ gives $(1 - \phi^{-1})/(1 + \phi^{-1}) = (1/\phi)/\phi^2 = \mathbf{\phi^{-3}} \approx 0.236$. The error lost one factor of $1/\phi$ in the simplification. The corrected dimensionless symmetric-bias χ from the φ:1 length-ratio in the 600-cell is $\chi = \phi^{-3}$, not $\phi^{-2}$. See §9 for the verification and §10 for what this implies for the down-stream sub-claims.
+- **Finding C-4 (REGISTERED Session 85).** The 600-cell has **eight distinct pairwise distances** at unit circumradius — not two, as the OP-SM-4 archive's "two edge types with ratio φ:1" framing implied. The eight distances are $\{1/\phi, 1, \sqrt{3-\phi}, \sqrt{2}, \phi, \sqrt{3}, \sqrt{(5+\sqrt{5})/2}, 2\}$. All 720 edges have a *single* length $1/\phi$; the polytope is regular and edge-uniform. The φ:1 ratio that motivates Capotauro's bias parameter is the edge-to-first-non-edge-distance ratio ($1/\phi$ to $1$), not a "two edge types" structure. See §9 for the full distance table.
+- **Finding C-5 (Session 85 numerical observation; not derivation).** With the corrected $\chi = \phi^{-3}$, the formula $\delta_{CP} = 180° + \arctan(\chi)$ evaluates to $193.28°$, within $2°$ of the NuFIT 6.0 empirical central value $195° \pm 40°$. This is a numerical proximity observation, not a derivation; the actual $\delta_{CP}$ formula must come from the sub-claim (c) Wigner-Eckart-style perturbation calculation, not from pattern-matching. Registered as a numerical signpost that supports the corrected $\chi = \phi^{-3}$ value but does not validate it.
+- **Finding C-6 (RETRACTED Session 85).** *Earlier working claim that $\sin^2\theta_{13} \approx \phi^{-9} \approx 0.021$ matches the empirical value $0.0220$ at 3%.* Direct computation gives $\phi^{-9} \approx 0.0132$, a 40% deviation from empirical, not 3%. The pattern-match claim is withdrawn. No simple $\phi^{-n}$ power matches $\sin^2\theta_{13}$ at the 5%-or-better level. The sin²θ₁₃ value must come from the sub-claim (c) Wigner-Eckart calculation, not from $\chi^n$ pattern-matching.
 
 ---
 
-## §9 Scope and external references
+## §9 Session 85 computational findings — 600-cell distance structure and corrected χ derivation
+
+This section captures the Session 85 computational verification work targeting §5.1 sub-claim (b) χ-value resolution. The computations are based on standard 600-cell vertex coordinates at unit circumradius:
+
+- **Class 1 (8 vertices):** $(\pm 1, 0, 0, 0)$ and the 7 other axis permutations.
+- **Class 2 (16 vertices):** $(\pm \tfrac{1}{2}, \pm \tfrac{1}{2}, \pm \tfrac{1}{2}, \pm \tfrac{1}{2})$.
+- **Class 3 (96 vertices):** even permutations of $(0, \pm \tfrac{1}{2\phi}, \pm \tfrac{1}{2}, \pm \tfrac{\phi}{2})$, with the 2³ = 8 sign combinations on the three non-zero positions.
+
+Total $8 + 16 + 96 = 120$ ✓; all on the unit 3-sphere.
+
+### §9.1 Distance spectrum (Finding C-4)
+
+Direct computation of all $\binom{120}{2} = 7140$ pairwise distances yields **eight distinct values**, with the following multiplicities:
+
+| Distance | Closed form | Number of vertex pairs | Identification |
+|---:|:---:|---:|:---|
+| 0.618034 | $1/\phi$ | 720 | **edge** (all 720 edges, single length) |
+| 1.000000 | $1$ | 1200 | first non-edge shell |
+| 1.175571 | $\sqrt{3 - \phi}$ | 720 | second non-edge shell |
+| 1.414214 | $\sqrt{2}$ | 1800 | $90°$ apart on the 3-sphere |
+| 1.618034 | $\phi$ | 720 | median shell |
+| 1.732051 | $\sqrt{3}$ | 1200 | golden-section apart |
+| 1.902113 | $\sqrt{(5+\sqrt{5})/2}$ | 720 | near-antipodal shell |
+| 2.000000 | $2$ | 60 | **antipodal pairs** (each vertex with its antipode) |
+
+Vertex degree under the edge relation: 12 for all 120 vertices (verified). Total edges: 720 ✓ (consistent with the 600-cell's known $V=120, E=720, F=1200, C=600$ structure).
+
+**Finding C-4 implication.** The "two edge types with ratio $\phi : 1$" framing in the OP-SM-4 archive sub-problem 2 is factually imprecise. The 600-cell is a regular polytope with a single edge length. The $\phi : 1$ ratio that motivates the symmetric-bias parameter is the **edge-to-first-non-edge-distance** ratio ($1/\phi$ to $1$), not a "two edge types" structure. The bias parameter is well-defined; the original framing was loose.
+
+### §9.2 The χ arithmetic correction (Finding C-3)
+
+The OP-SM-4 archive computes:
+$$\chi = \frac{\phi^{-1} - \phi^{-2}}{\phi^{-1} + \phi^{-2}} = \frac{1 - \phi^{-1}}{1 + \phi^{-1}} = \frac{\phi^{-1}}{\phi} = \phi^{-2}$$
+
+The final equality is the error. The correct simplification uses two golden-ratio identities:
+- $\phi - 1 = 1/\phi$ (the defining property of the golden ratio)
+- $\phi + 1 = \phi^2$ (since $\phi^2 = \phi + 1$ is the golden-ratio quadratic)
+
+Substituting:
+$$\frac{1 - \phi^{-1}}{1 + \phi^{-1}} = \frac{(\phi - 1)/\phi}{(\phi + 1)/\phi} = \frac{\phi - 1}{\phi + 1} = \frac{1/\phi}{\phi^2} = \frac{1}{\phi^3} = \boxed{\phi^{-3}}$$
+
+Numerical verification: $1/\phi^3 = 0.236068$. The archive's claimed value $\phi^{-2} = 0.381966$ is off by exactly one factor of $1/\phi$ (the ratio $0.236068 / 0.381966 = 0.618034 = 1/\phi$ confirms the missing factor).
+
+**Finding C-3 conclusion.** The dimensionless symmetric-bias parameter from the edge-to-first-non-edge length ratio in the 600-cell is $\chi = \phi^{-3} \approx 0.236$. The archive's $\chi = \phi^{-2}$ is an arithmetic error. The $\phi^{-1}$ value used elsewhere in the Grok exploratory work is *not* a normalized bias parameter; it is the bare edge length in unit-circumradius normalization, which is a length not a dimensionless ratio.
+
+### §9.3 Candidate χ enumeration from natural geometric pairs
+
+A more systematic enumeration: for each pair (edge length, other-shell distance), compute the dimensionless symmetric-bias $\chi = (L_\text{long} - L_\text{short})/(L_\text{long} + L_\text{short})$. With $L_\text{short} = 1/\phi$ fixed (edges):
+
+| $L_\text{long}$ | $L_\text{long} / L_\text{short}$ | $\chi$ | Closed form | Numerical |
+|:---:|:---:|:---:|:---:|:---:|
+| $1$ | $\phi$ | $(\phi - 1)/(\phi + 1)$ | $\phi^{-3}$ | 0.236068 |
+| $\sqrt{3 - \phi}$ | $\phi\sqrt{3-\phi}$ | (mixed) | — | 0.310847 |
+| $\sqrt{2}$ | $\phi\sqrt{2}$ | (mixed) | — | 0.391773 |
+| $\phi$ | $\phi^2$ | $(\phi^2 - 1)/(\phi^2 + 1) = \phi / (\phi + 2)$ | $1/\sqrt{5}$ | 0.447214 |
+| $\sqrt{3}$ | $\phi\sqrt{3}$ | (mixed) | — | 0.474033 |
+| $\sqrt{(5+\sqrt{5})/2}$ | $\phi\sqrt{(5+\sqrt{5})/2}$ | (mixed) | — | 0.509525 |
+| $2$ (antipodal) | $2\phi$ | $(2\phi - 1)/(2\phi + 1) = \sqrt{5}/(2+\sqrt{5})$ | $5 - 2\sqrt{5}$ | 0.527864 |
+
+The cleanest closed-form values are at the "natural" geometric pairs: $\chi = \phi^{-3}$ (edge-to-1), $\chi = 1/\sqrt{5}$ (edge-to-φ), and $\chi = 5 - 2\sqrt{5}$ (edge-to-antipode). The other entries (`mixed`) are not simple φ-quantities.
+
+**Observation.** The value $\phi^{-2} \approx 0.382$ that the OP-SM-4 archive intended for χ does not correspond to *any* of these natural bias-pair calculations. The closest natural value is $\phi^{-2} \approx 0.382$ vs $\phi\sqrt{2}/(\phi\sqrt{2}+\text{...}) \approx 0.392$ (the edge-to-$\sqrt{2}$ bias) — but these differ by 3%, and $\sqrt{2}$ is not a "natural" partner for the chirality bias (it is the $90°$-apart inner-product distance, which is geometrically uncorrelated to the chiral structure). The $\phi^{-2}$ value should be retired as a candidate.
+
+### §9.4 Numerical observations on δ_CP and sin²θ₁₃ candidate formulas
+
+With $\chi = \phi^{-3}$ in hand, several numerical proximity-checks are worth running as *signposts*, not derivations:
+
+**δ_CP via $180° + \arctan(\chi)$ pattern.** Three candidate χ-values plugged into $\delta_{CP} = 180° + \arctan(\chi)$:
+
+| $\chi$ | $\arctan(\chi)$ | $180° + \arctan(\chi)$ | Distance from empirical 195° |
+|:---:|:---:|:---:|:---:|
+| $\phi^{-3} \approx 0.236$ | $13.28°$ | **$193.28°$** | $1.72°$ |
+| $\phi^{-2} \approx 0.382$ | $20.91°$ | $200.91°$ | $5.91°$ |
+| $1/\sqrt{5} \approx 0.447$ | $24.09°$ | $204.09°$ | $9.09°$ |
+
+The $\chi = \phi^{-3}$ candidate gives the closest match by a factor of 3–5 over the other candidates. **Finding C-5 registered as a numerical signpost.** This does *not* validate the $180° + \arctan(\chi)$ formula at theory level — the formula must come from the sub-claim (c) Wigner-Eckart calculation. But the numerical proximity is supportive of the corrected $\chi = \phi^{-3}$ value.
+
+**sin²θ₁₃ via $\chi^n$ patterns.** With $\chi = \phi^{-3}$, the simple powers give:
+- $\chi^2 = \phi^{-6} = 0.0557$ — 2.5× too large vs empirical 0.0220.
+- $\chi^3 = \phi^{-9} = 0.0132$ — 40% too small vs empirical 0.0220.
+
+**No simple $\chi^n$ power matches sin²θ₁₃ at the 5%-or-better level.** This is **Finding C-6 (retracted): my earlier working claim that $\sin^2\theta_{13} \approx \phi^{-9}$ at 3%** was numerically wrong (I conflated $\phi^{-9} \approx 0.013$ with empirical $\approx 0.022$; the actual gap is 40%). The numerical-coincidence path for sin²θ₁₃ is closed; the value must come from sub-claim (c) Wigner-Eckart calculation with explicit cage-shell overlap factors, not from pattern-matching.
+
+### §9.5 What the corrected χ resolution does and does not deliver
+
+**Delivered at Session 85 close.**
+- The OP-SM-4 archive arithmetic error is identified and corrected: $\chi = \phi^{-3}$, not $\phi^{-2}$.
+- The 600-cell distance structure is computationally verified: eight distinct pairwise distances, all 720 edges at single length $1/\phi$.
+- The candidate χ-table from natural geometric pairs is enumerated; three have clean closed forms ($\phi^{-3}$, $1/\sqrt{5}$, $5-2\sqrt{5}$).
+- A numerical signpost for δ_CP at $\chi = \phi^{-3}$: $180° + \arctan(\phi^{-3}) = 193.28°$, within $2°$ of empirical $195°$.
+- Two prior Grok-exploratory numerical claims are now resolved at the "needs proper derivation" level (Findings C-1, C-2, C-6).
+
+**NOT delivered at Session 85 close.**
+- The χ-value at *theorem level*. The corrected $\phi^{-3}$ is a candidate; the sub-claim (c) Wigner-Eckart calculation has to validate that this is indeed the χ that the K3-doublet perturbation responds to. Other candidates from §9.3 remain in play until the perturbation framework is constructed.
+- The $\delta_{CP}$ formula at theorem level. The $180° + \arctan(\chi)$ proximity is a numerical observation, not a derivation. The actual formula must emerge from sub-claim (c).
+- The $\sin^2\theta_{13}$ formula at any level. Pattern-matching is closed; only sub-claim (c) can deliver it.
+
+---
+
+## §10 Implications for sub-claim (c) and the closure architecture
+
+The Session 85 χ-resolution work sharpens sub-claim (c) in three ways:
+
+**One.** The candidate χ-values to test against the Wigner-Eckart matrix elements are now down to three cleanly-derived values ($\phi^{-3}$, $1/\sqrt{5}$, $5 - 2\sqrt{5}$) rather than the loosely-stated archive value $\phi^{-2}$ plus the un-normalized edge-length $\phi^{-1}$. The numerical signpost for δ_CP favors $\phi^{-3}$. Sub-claim (c) should compute the perturbation matrix elements explicitly and verify which χ candidate is selected by the geometric overlap structure.
+
+**Two.** The Wigner-Eckart calculation has a specific input it needs from §3 mechanism candidates: which geometric pair (edge-to-1, edge-to-φ, or edge-to-antipodal) corresponds to the "chirality-broken" symmetric bias in the substrate-level mechanism Thomas selects from Q1 of §6. Picture A (global enantiomorph selection) most naturally corresponds to a *global* symmetric bias which would use the longest characteristic ratio — likely edge-to-antipodal $\chi = 5 - 2\sqrt{5}$. Picture C ($H_4 \to I_4$ branching) corresponds to a *symmetry-orbit* bias which would use the natural orbit-size ratio — likely the edge-to-φ $\chi = 1/\sqrt{5}$, since $|H_4| / |I_4| = 2$ and the φ-quantities in $I_4$ are mediated by $1/\sqrt{5}$ (related to the eigenvalues of the icosahedral group representation). Picture B (W⁰ centroid-decoupling) corresponds to a *local* bias which would use the nearest-neighbor ratio — edge-to-1 $\chi = \phi^{-3}$. **The δ_CP numerical proximity at $\chi = \phi^{-3}$ favors Picture B as the source of the chirality bias visible in PMNS-sector observables.** This is a substantive structural finding: it points the closure architecture toward the W⁰ centroid-decoupling local-mechanism story (the Patch 0367 sketch), even though Picture A (global enantiomorph selection) is the more familiar Capotauro framing.
+
+**Three.** The closure architecture recommendation from §3.5 (pursue Pictures A + B + C jointly as three convergent candidates) is partially refined: Picture B is now indicated as the primary mechanism for the PMNS-observable content, with Picture A potentially as the *substrate-level cause* of the local bias Picture B describes, and Picture C as the *representation-theoretic machinery* for the perturbation. This is the SF-4 v4.0 pattern at a different level — multiple mechanism candidates converging on a single closure when they describe complementary facets of the same underlying physics.
+
+**Implication for the Capotauro paper structure (when drafting begins).** The dedicated paper should likely follow the SF-4 v4.0 architecture: open with the substrate-level mechanism (Picture A), develop the local manifestation (Picture B = W⁰ centroid-decoupling), and execute the representation-theoretic perturbation at the K3-doublet level (Picture C → Wigner-Eckart). The χ-value $\phi^{-3}$ enters as the dimensionless coupling at the bridge between Picture A and Picture B. Each Picture contributes a clause to the composite closure theorem; the cross-sector closure with OPEN-FP-SF-2-CHIR rides on Picture B specifically.
+
+---
+
+
+## §11 Scope and external references
 
 **This sketch document is the canonical Tier-4 reasoning capture for the Capotauro closure campaign.** It is paired with:
 
@@ -438,6 +561,6 @@ The following are questions where Thomas's physical intuition is the load-bearin
 - W⁰ neutrino scattering centroid-decoupling sketch: `flagship_papers/electroweak/sketches/W0_neutrino_scattering_centroid_decoupling.md` (Patch 0367; Picture B local-mechanism candidate).
 - Cross-sector closure framework: `templates/conditional_closure_framework.md` (PD-005 four-tier subsumption; Finding β-10 cross-sector closure pattern).
 
-**This sketch makes no claim of theorem-level closure at Session 84.** All sub-claims (a) through (f) are open. The sketch establishes the setup, foundational inputs, mechanism candidates, sub-claim decomposition, and first-pass work plan. Subsequent sessions develop each sub-claim toward conditional theorem-level closure on the SF-4 v4.0 methodology template.
+**This sketch makes no claim of theorem-level closure at Session 85.** All sub-claims (a) through (f) are open. The sketch establishes the setup, foundational inputs, mechanism candidates, sub-claim decomposition, and first-pass work plan; Session 85 (§9–§10) advances sub-claim (b) χ-resolution work with the corrected $\chi = \phi^{-3}$ derivation and the candidate enumeration. Subsequent sessions develop each sub-claim toward conditional theorem-level closure on the SF-4 v4.0 methodology template.
 
-**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 84 (Patch 0376, 14 May 2026).
+**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 84 (Patch 0376, 14 May 2026). Extended Session 85 (Patch 0378, 15 May 2026) with §9 + §10 χ-resolution computational findings.
