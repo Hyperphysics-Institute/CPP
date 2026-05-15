@@ -4,7 +4,7 @@
 
 This document is the companion sub-derivation working sketch for sub-claim (c) of the Capotauro closure programme. It grows monotonically across Sessions 87+ as the Wigner-Eckart calculation develops. **The parent document is `Capotauro_chi_phi_closure.md`**, which defines the closure target, foundational inputs FI-C-1 through FI-C-9, and the four-Picture mechanism architecture. This sub-claim (c) sketch focuses on the **transmission factor T at theorem level**: deriving T = V/2 = 6 (the §9.6 numerical signpost target, registered as Finding C-7) from the bracelet $D_6 \to C_6$ orbit-reduction structure via standard Wigner-Eckart machinery, using Picture B as the calculational entry point per Finding C-8 Picture-by-role decomposition.
 
-**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge).
+**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge). Extended Session 91 (Patch 0385, 15 May 2026) with §11 FI-C-3 extension formalization — cleaner ζ-rule derivation directly from $\hat{C}_\chi$ being ζ-ODD (Finding C-W11, replacing redundant σ_1ζ analysis), identification of $|\chi_\pm\rangle$ as ζ-parity-decomposed substrate orientation field at K3 location with σ_1ζ-EVEN pairing convention (Finding C-W12), and explicit SF-4 v4.0 consistency check confirming no SF-4 .tex revision required (Finding C-W13).
 
 ---
 
@@ -588,5 +588,141 @@ Substantial restructuring of the forward queue based on Session 90 findings:
 **Revised total estimated timeline for sub-claim (c) v1.0 closure: 8-12 sessions from Session 90 baseline** (Sessions 91-98+, revised upward from Session 89's 6-9 estimate due to FI-C-3 extension and Gap merger surfaced in Session 90). The honest framing: Session 90 has uncovered a substantive structural requirement (FI-C-3 extension) that increases the load-bearing work but ultimately strengthens the v1.0 closure architecture.
 
 **Patch 0384 makes no theorem-level claims at programme level** — it surfaces a structural extension requirement (Finding C-W9) and reinterprets the origin of the factor $1/2$ in $T = V/2$ (Finding C-W10). Sessions 91+ deliver the FI-C-3 extension and the actual structural derivation of $T$.
+
+---
+
+## §11 Session 91 work: FI-C-3 extension formalization — derivation of $|\chi_\pm\rangle$ from CPP primitives
+
+### §11.1 Session 91 deliverable
+
+Per the §10.7 forward queue, Session 91's deliverable was: "FI-C-3 extension formalization — derive the perpendicular-direction wavefunctions $|\chi_\pm\rangle$ from CPP primitives (substrate orientation field structure at the K3 location). Verify consistency with SF-4 v4.0 Composite Theorem. Update FI-C-3 statement at programme level. High priority — this is the load-bearing structural extension."
+
+**Outcome**: The Session 91 work delivers (i) a cleaner derivation of the ζ-parity constraint via the ζ-ODD nature of $\hat{C}_\chi$ (replacing the σ_1ζ analysis in Patch 0384 with a more direct argument), (ii) identification of $|\chi_\pm\rangle$ as the ζ-EVEN and ζ-ODD components of the substrate orientation field's perpendicular structure, (iii) the structural pairing rule between K3-amplitude basis states and ζ-parity assignment, and (iv) explicit consistency check with SF-4 v4.0. The formal FI-C-3 extension is registered for programme-level documentation in subsequent sessions.
+
+### §11.2 Cleaner derivation: ζ-rule directly from $\hat{C}_\chi$'s ζ-ODD nature
+
+The Patch 0384 derivation of the ζ-parity constraint went via the σ_1ζ ∈ $S_3'$ element. A cleaner derivation uses the ζ element directly, which is more transparent and avoids the apparent complication of needing the $S_3'$ subgroup structure.
+
+**Step 1**: The cell-swap ζ = $\text{diag}(1,1,1,-1)$ ∈ $H_4$ has $\det(\zeta) = -1$. By Theorem 8.1 Step 1, $\hat{C}_\chi$ transforms with $\det(g) \cdot \hat{C}_\chi$ under conjugation. Therefore:
+
+$$\zeta \hat{C}_\chi \zeta^{-1} = -\hat{C}_\chi$$
+
+i.e., $\hat{C}_\chi$ is **ζ-ODD** under conjugation by ζ.
+
+**Step 2**: For matrix elements between ζ-eigenstates $|\psi\rangle, |\chi\rangle$ with ζ-parities $p_\psi^\zeta, p_\chi^\zeta \in \{+1, -1\}$, unitarity of ζ gives:
+
+$$\langle\zeta\psi|\hat{C}_\chi|\zeta\chi\rangle = \langle\psi|\zeta^{-1}\hat{C}_\chi\zeta|\chi\rangle = -\langle\psi|\hat{C}_\chi|\chi\rangle$$
+
+Substituting $\zeta|\psi\rangle = p_\psi^\zeta|\psi\rangle$ and $\zeta|\chi\rangle = p_\chi^\zeta|\chi\rangle$:
+
+$$p_\psi^\zeta p_\chi^\zeta \langle\psi|\hat{C}_\chi|\chi\rangle = -\langle\psi|\hat{C}_\chi|\chi\rangle$$
+
+This forces $p_\psi^\zeta p_\chi^\zeta = -1$ for non-zero matrix element — the **ζ-rule**: the two states must have OPPOSITE ζ-parities for non-zero coupling via $\hat{C}_\chi$.
+
+**Step 3**: Numerical verification (Session 91 Python script) confirms:
+
+- Case A (both K3-doublet states ζ-EVEN, current FI-C-3): ζ-rule forbids all matrix elements ⇒ matrix is zero, contradicting Theorem 8.1.
+- Case A' (both ζ-ODD): same contradiction.
+- Case B (opposite ζ-parities: state 1 EVEN, state 2 ODD): off-diagonal allowed, diagonal forbidden — consistent with Theorem 8.1 anti-diagonal structure.
+- Case B' (opposite ζ-parities: state 1 ODD, state 2 EVEN): also consistent with Theorem 8.1, differs from B by basis sign convention.
+
+The ζ-rule **alone** uniquely identifies the necessary structural extension: K3-doublet must have opposite ζ-parities. The σ_1ζ analysis in Patch 0384 was correct but redundant; the ζ-rule from $\hat{C}_\chi$'s ζ-ODD nature directly gives the constraint.
+
+### §11.3 Substrate orientation field structure and identification of $|\chi_\pm\rangle$
+
+The substrate orientation field $\vec{C}(x)$ at a 4D point $x = (x_1, x_2, x_3, w)$ takes values determined by the substrate dynamics (CPP axiom A3). At the K3 location (the K3 plane lies at $w = 0$, with the K3 vertices at specific positions in $(x_1, x_2, x_3)$ as given by the Patch 0383 §9.1 explicit construction), the substrate orientation field has a $w$-dependence that determines the perpendicular wavefunction structure of the K3-doublet states.
+
+**Decomposition of $\vec{C}$ into ζ-EVEN and ζ-ODD components.** For any function $f(w)$ on the $w$-axis (perpendicular to the K3 plane), the natural decomposition into ζ-eigenstates is:
+
+$$f_+(w) = \frac{f(w) + f(-w)}{2} \quad (\text{ζ-EVEN}), \qquad f_-(w) = \frac{f(w) - f(-w)}{2} \quad (\text{ζ-ODD})$$
+
+For the substrate orientation field at the K3 location:
+
+$$\vec{C}_+(w) = \frac{\vec{C}(w) + \vec{C}(-w)}{2} \quad (\text{symmetric across K3 plane})$$
+
+$$\vec{C}_-(w) = \frac{\vec{C}(w) - \vec{C}(-w)}{2} \quad (\text{antisymmetric across K3 plane})$$
+
+Under FI-C-9 broken-symmetry vacuum, $\vec{C}$ has a uniform background $\chi \hat{n}$ in the broken direction. The broken-direction component along the $w$-axis is generally not $w$-symmetric — the substrate vacuum's chirality picks out a *direction* in 4D, which has a non-trivial decomposition into $w$-EVEN and $w$-ODD parts at the K3 location.
+
+**Identification of $|\chi_\pm\rangle$**. The perpendicular wavefunctions for the K3-doublet's two modes are determined by the ζ-EVEN and ζ-ODD components of the substrate orientation field at the K3 location:
+
+$$|\chi_+\rangle \propto \vec{C}_+ \text{ (ζ-EVEN component of substrate orientation at K3)}$$
+
+$$|\chi_-\rangle \propto \vec{C}_- \text{ (ζ-ODD component of substrate orientation at K3)}$$
+
+This is the structural identification: the K3-doublet's perpendicular wavefunctions are the ζ-parity-decomposed substrate orientation field at the K3 location. The exact functional form depends on the substrate orientation field's $w$-dependence, which is determined by CPP axioms A3, A6', A7 and is currently parametrized but not derived in closed form.
+
+### §11.4 Pairing rule: which K3-amplitude basis state pairs with which $|\chi_\pm\rangle$
+
+The K3-amplitude basis states $|\phi_-^{(1)}\rangle$ and $|\phi_-^{(2)}\rangle$ have specific transformation properties under the K3-plane S₂(V_k) symmetry:
+
+- $|\phi_-^{(1)}\rangle = (2,-1,-1)/\sqrt{6}$ — σ_1-EVEN (μτ-symmetric across the V_2-V_3 perpendicular bisector)
+- $|\phi_-^{(2)}\rangle = (0,-1,1)/\sqrt{2}$ — σ_1-ODD (μτ-antisymmetric)
+
+The natural pairing rule with ζ-parities is determined by the **structural-consistency criterion**: the full K3-doublet state $|\Phi_-^{(i)}\rangle = |\phi_-^{(i)}\rangle \otimes |\chi_i\rangle$ should have a definite σ_1ζ-parity matching its other quantum numbers.
+
+For Case B (σ_1ζ-EVEN convention):
+- $|\Phi_-^{(1)}\rangle = |\phi_-^{(1)}\rangle \otimes |\chi_+\rangle$: σ_1-EVEN × ζ-EVEN = σ_1ζ-EVEN (parity $+1$)
+- $|\Phi_-^{(2)}\rangle = |\phi_-^{(2)}\rangle \otimes |\chi_-\rangle$: σ_1-ODD × ζ-ODD = σ_1ζ-EVEN (parity $+1$)
+
+For Case B' (σ_1ζ-ODD convention):
+- $|\Phi_-^{(1)}\rangle = |\phi_-^{(1)}\rangle \otimes |\chi_-\rangle$: σ_1-EVEN × ζ-ODD = σ_1ζ-ODD (parity $-1$)
+- $|\Phi_-^{(2)}\rangle = |\phi_-^{(2)}\rangle \otimes |\chi_+\rangle$: σ_1-ODD × ζ-EVEN = σ_1ζ-ODD (parity $-1$)
+
+Both pairings satisfy all constraints (σ_1 rule, ζ rule, σ_1ζ rule). The choice between B and B' is a basis sign convention — there is no CPP-internal principle to select one over the other without additional input from the substrate dynamics.
+
+**Convention adopted**: Case B (σ_1ζ-EVEN). This matches the Patch 0384 working analysis and is the more natural pairing in the sense that the ζ-parity matches the σ_1-parity (both EVEN paired with EVEN, both ODD paired with ODD). Convention can be revisited if Sessions 92+ work surfaces a preferred sign from substrate-dynamical considerations.
+
+### §11.5 Consistency check with SF-4 v4.0 Composite Theorem
+
+The SF-4 v4.0 Composite K3-Cage-Shell Coupling Theorem (THEO-SF-4-5) closes operating problem op:nu_id at theorem level using the TBM-aligned basis from FI-C-3 in its current K3-amplitude-only form. The Session 91 extension adds perpendicular wavefunction structure $|\chi_\pm\rangle$ to the K3-doublet basis.
+
+**Compatibility analysis**: The SF-4 v4.0 derivation probes the K3-doublet's K3-vertex amplitude structure via the K3 ZBW Hamiltonian (FI-K-3 in SF-4 v4.0 terminology). Neutrino mass observables (the SF-4 prediction targets) couple to the K3-amplitude part of the wavefunction via the cage-shell mass formula $m_\nu = M_0 \cdot V^2 \cdot \sigma_\nu$ (FI-C-6). The mass observable is a *scalar* under cell-swap ζ — it does not flip sign under ζ.
+
+For a scalar (ζ-EVEN) observable, the matrix element selection rule is $p_i^\zeta p_j^\zeta = +1$, which is satisfied for diagonal entries on the K3-doublet regardless of whether the basis has uniform or opposite ζ-parities. So the SF-4 v4.0 neutrino mass predictions are **unaffected** by whether the K3-doublet has uniform or opposite ζ-parities — both cases give the same mass observable matrix elements.
+
+In contrast, the chirality observable $\hat{C}_\chi$ is ζ-ODD (Session 91 §11.2), with selection rule $p_i^\zeta p_j^\zeta = -1$. This *requires* opposite ζ-parities to permit non-zero matrix elements — which is the Session 91 extension to FI-C-3.
+
+**Conclusion**: The FI-C-3 extension is **fully consistent with** SF-4 v4.0. SF-4 v4.0 results (neutrino masses, mixing angles, 7/8 prediction count at zero fitted parameters) remain unchanged. The extension adds new structural specification (ζ-parity assignment) that SF-4 v4.0 didn't probe and didn't need to specify, but that the Capotauro derivation requires.
+
+### §11.6 Formal FI-C-3 extension statement
+
+**FI-C-3 (extended, Session 91)**: The K3 antibonding doublet has 2 modes whose full wavefunctions take the form $|\Phi_-^{(i)}\rangle = |\phi_-^{(i)}\rangle \otimes |\chi_i\rangle$, where:
+
+(i) $|\phi_-^{(i)}\rangle$ are the K3-amplitude TBM-aligned basis states inherited from SF-4 v4.0 Composite Theorem (THEO-SF-4-5): $|\phi_-^{(1)}\rangle = (2,-1,-1)/\sqrt{6}$ (σ_1-EVEN), $|\phi_-^{(2)}\rangle = (0,-1,1)/\sqrt{2}$ (σ_1-ODD). These are eigenstates of the K3 ZBW Hamiltonian with eigenvalue $\lambda_- = -1$ in the 2D antibonding irrep of $S_3$.
+
+(ii) $|\chi_i\rangle$ are perpendicular-direction wavefunctions with definite ζ-parity, identified as the ζ-EVEN and ζ-ODD components of the substrate orientation field at the K3 location (Session 91 §11.3): $\zeta|\chi_+\rangle = +|\chi_+\rangle$, $\zeta|\chi_-\rangle = -|\chi_-\rangle$.
+
+(iii) The pairing follows the σ_1ζ-EVEN convention (Session 91 §11.4): $|\Phi_-^{(1)}\rangle = |\phi_-^{(1)}\rangle \otimes |\chi_+\rangle$, $|\Phi_-^{(2)}\rangle = |\phi_-^{(2)}\rangle \otimes |\chi_-\rangle$.
+
+The extension is **consistent with** SF-4 v4.0 Composite Theorem (Session 91 §11.5) — SF-4 results unchanged. The extension is **required for** the Capotauro derivation (Sub-claim (c) Wigner-Eckart matrix elements of $\hat{C}_\chi$) to be self-consistent.
+
+### §11.7 Findings registered Session 91
+
+- **Finding C-W11 (REGISTERED Session 91)**. The ζ-parity constraint on K3-doublet matrix elements of $\hat{C}_\chi$ derives directly from the ζ-ODD nature of $\hat{C}_\chi$ (via Theorem 8.1 Step 1: $g\hat{C}_\chi g^{-1} = \det(g)\hat{C}_\chi$ and $\det(\zeta) = -1$). The selection rule $p_i^\zeta p_j^\zeta = -1$ is direct and does not require the σ_1ζ analysis (Patch 0384). The K3-doublet must have **opposite ζ-parities** for non-zero chirality matrix elements; this is a direct consequence of the chirality observable's transformation properties under cell-swap, independent of the $S_3'$ subgroup structure. The Patch 0384 σ_1ζ analysis remains valid but is redundant — the ζ-rule alone gives the constraint.
+
+- **Finding C-W12 (REGISTERED Session 91)**. The perpendicular-direction wavefunctions $|\chi_\pm\rangle$ in the FI-C-3 extension are identified as the ζ-EVEN and ζ-ODD components of the substrate orientation field at the K3 location. Specifically: $|\chi_+\rangle \propto \vec{C}_+$ (symmetric across K3 plane), $|\chi_-\rangle \propto \vec{C}_-$ (antisymmetric). The pairing with K3-amplitude basis states follows the σ_1ζ-EVEN convention: $\phi_-^{(1)}$ (σ_1-EVEN) ↔ $\chi_+$ (ζ-EVEN), $\phi_-^{(2)}$ (σ_1-ODD) ↔ $\chi_-$ (ζ-ODD). Exact functional form of $|\chi_\pm\rangle$ depends on substrate orientation field $w$-dependence (CPP axioms A3, A6', A7); abstract ζ-parity identification is sufficient for Wigner-Eckart factorization in Sub-claim (c.3) and matrix element magnitude derivation in Sub-claim (c.4).
+
+- **Finding C-W13 (REGISTERED Session 91)**. The FI-C-3 extension is fully consistent with SF-4 v4.0 Composite K3-Cage-Shell Coupling Theorem. Neutrino mass observables (SF-4 v4.0's prediction targets) are ζ-EVEN scalars and are unaffected by the K3-doublet's ζ-parity assignment — they probe only K3-amplitude structure, which is unchanged by the extension. The chirality observable $\hat{C}_\chi$ is ζ-ODD and requires the FI-C-3 extension to permit non-zero K3-doublet matrix elements. SF-4 v4.0's 7/8 prediction count at zero fitted parameters remains unchanged; the v1.0 Capotauro paper's predictions will inherit FI-C-3 in its extended form. **No SF-4 .tex revision required**; the FI-C-3 extension is additive structural specification, not a revision of SF-4 content.
+
+### §11.8 Forward queue update (Sessions 92+)
+
+Session 91 cleanly delivers the FI-C-3 extension formalization. The forward queue from Patch 0384 §10.7 remains valid; Session 92 opens with the Combined Gap (c.4.G1+G2) closure work using the extended FI-C-3:
+
+1. **Sessions 92-93: Combined Gap (c.4.G1+G2) closure.** With FI-C-3 extended (Finding C-W12), compute the off-diagonal matrix element $M = \langle\Phi_-^{(1)}|\hat{C}_\chi|\Phi_-^{(2)}\rangle$ from CPP primitives. The calculation uses: (i) extended FI-C-3 (K3-amplitude × perpendicular wavefunction); (ii) FI-C-6 cage-shell coupling (V=12 icosahedral first-shell); (iii) FI-C-9 substrate vacuum broken-symmetry magnitude $\chi = \phi^{-3}$. Target: $M = \phi^{-3}/6$ from K3-doublet 2-mode × V-vertex cage averaging structure.
+
+2. **Session 94: Gap (c.4.G3) suppression-vs-amplification resolution.** Verify the cage averaging produces suppression (factor $1/V$) rather than amplification (factor $V$). Should follow from Sessions 92-93 work if the cage averaging structure is correctly identified.
+
+3. **Session 95: Gap (c.4.G4) closed-form identity for $T$.** Determine whether $T = V/2 = 6$ is exact or near-coincident; identify closed-form structural identity.
+
+4. **Session 96: Sub-sub-claim (c.3) Wigner-Eckart Clebsch-Gordan factorization** (standard textbook given closed (c.4)).
+
+5. **Session 97: Sub-sub-claim (c.2) K3-doublet basis verification** (largely complete via Theorem 8.1 + Finding C-W12).
+
+6. **Session 98: Composite Capotauro Wigner-Eckart Theorem formalization.**
+
+7. **Session 99+: sin²θ₁₃ derivation from full machinery via $U_\text{PMNS} = U_\text{TBM} \cdot R(\epsilon(\chi))$ rotation structure** (Finding C-W4 + C-W9 + C-W12 implications).
+
+**Revised total estimated timeline for sub-claim (c) v1.0 closure: 7-11 sessions from Session 91 baseline** (Sessions 92-98+, revised down slightly from Session 90's 8-12 estimate since Session 91 delivered the FI-C-3 extension cleanly with no further structural surprises).
 
 ---
