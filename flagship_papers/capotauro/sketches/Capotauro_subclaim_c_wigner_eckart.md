@@ -4,7 +4,7 @@
 
 This document is the companion sub-derivation working sketch for sub-claim (c) of the Capotauro closure programme. It grows monotonically across Sessions 87+ as the Wigner-Eckart calculation develops. **The parent document is `Capotauro_chi_phi_closure.md`**, which defines the closure target, foundational inputs FI-C-1 through FI-C-9, and the four-Picture mechanism architecture. This sub-claim (c) sketch focuses on the **transmission factor T at theorem level**: deriving T = V/2 = 6 (the §9.6 numerical signpost target, registered as Finding C-7) from the bracelet $D_6 \to C_6$ orbit-reduction structure via standard Wigner-Eckart machinery, using Picture B as the calculational entry point per Finding C-8 Picture-by-role decomposition.
 
-**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge). Extended Session 91 (Patch 0385, 15 May 2026) with §11 FI-C-3 extension formalization — cleaner ζ-rule derivation directly from $\hat{C}_\chi$ being ζ-ODD (Finding C-W11, replacing redundant σ_1ζ analysis), identification of $|\chi_\pm\rangle$ as ζ-parity-decomposed substrate orientation field at K3 location with σ_1ζ-EVEN pairing convention (Finding C-W12), and explicit SF-4 v4.0 consistency check confirming no SF-4 .tex revision required (Finding C-W13).
+**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge). Extended Session 91 (Patch 0385, 15 May 2026) with §11 FI-C-3 extension formalization — cleaner ζ-rule derivation directly from $\hat{C}_\chi$ being ζ-ODD (Finding C-W11, replacing redundant σ_1ζ analysis), identification of $|\chi_\pm\rangle$ as ζ-parity-decomposed substrate orientation field at K3 location with σ_1ζ-EVEN pairing convention (Finding C-W12), and explicit SF-4 v4.0 consistency check confirming no SF-4 .tex revision required (Finding C-W13). Extended Session 92 (Patch 0386, 15 May 2026) with §12 Combined Gap (c.4.G1+G2) opening — three candidate structural forms ($M = 2\chi/V$, $\chi/|S_3|$, $\chi \cdot d_E/|D_6|$) all giving $M = \chi/6$ exactly via structural identity $2/V = 1/|S_3| = d_E/|D_6| = 1/6$ (Finding C-W14), Candidate C ($D_6$ Wigner-Eckart with extended FI-C-3) identified as leading hypothesis for rigorous theorem-level derivation (Finding C-W15), closure deferred to Sessions 93+ with substrate-dynamical inputs required.
 
 ---
 
@@ -724,5 +724,145 @@ Session 91 cleanly delivers the FI-C-3 extension formalization. The forward queu
 7. **Session 99+: sin²θ₁₃ derivation from full machinery via $U_\text{PMNS} = U_\text{TBM} \cdot R(\epsilon(\chi))$ rotation structure** (Finding C-W4 + C-W9 + C-W12 implications).
 
 **Revised total estimated timeline for sub-claim (c) v1.0 closure: 7-11 sessions from Session 91 baseline** (Sessions 92-98+, revised down slightly from Session 90's 8-12 estimate since Session 91 delivered the FI-C-3 extension cleanly with no further structural surprises).
+
+---
+
+## §12 Session 92 work: Combined Gap (c.4.G1+G2) opening — matrix element factorization framework and structural-form enumeration
+
+### §12.1 Session 92 deliverable as scoped
+
+Per the §11.8 forward queue, Session 92's deliverable was opening "Combined Gap (c.4.G1+G2) closure — K3-doublet 2-mode × icosahedral cage V=12 averaging factor derivation. Target: $M = \phi^{-3}/6$ from K3-doublet 2-mode × V-vertex cage averaging structure." This is the load-bearing sub-sub-claim for v1.0 sub-claim (c) closure, expected to span 2-3 sessions per Patch 0383 estimates.
+
+**Outcome**: Session 92 cleanly **sets up** the calculation framework, **enumerates** the candidate structural forms for $M$, identifies their numerical equivalence at $M = \chi/6 \approx 0.0394$, and **defers theorem-level closure** to Sessions 93+ with explicit dependencies on substrate-dynamical inputs (CPP axioms A3 + A7 substrate orientation field structure at the K3 location). This is honest setup work, not closure work.
+
+### §12.2 Matrix element setup with extended FI-C-3
+
+Using the extended FI-C-3 from Session 91 (Finding C-W12), the K3-doublet basis states are:
+
+$$|\Phi_-^{(1)}\rangle = |\phi_-^{(1)}\rangle \otimes |\chi_+\rangle \text{ (ζ-EVEN)}, \qquad |\Phi_-^{(2)}\rangle = |\phi_-^{(2)}\rangle \otimes |\chi_-\rangle \text{ (ζ-ODD)}$$
+
+The off-diagonal matrix element of $\hat{C}_\chi$:
+
+$$M = \langle\Phi_-^{(1)}|\hat{C}_\chi|\Phi_-^{(2)}\rangle = \langle\phi_-^{(1)} \otimes \chi_+|\hat{C}_\chi|\phi_-^{(2)} \otimes \chi_-\rangle$$
+
+**Factorization attempt**: If $\hat{C}_\chi$ approximately factorizes as $\hat{C}_\chi = \hat{A}_{K_3} \otimes \hat{B}_\perp + (\text{correction})$ between K3-amplitude and perpendicular Hilbert spaces:
+
+$$M \approx \langle\phi_-^{(1)}|\hat{A}_{K_3}|\phi_-^{(2)}\rangle \cdot \langle\chi_+|\hat{B}_\perp|\chi_-\rangle$$
+
+**Constraints on the factors**:
+
+- $\hat{A}_{K_3}$ is the K3-amplitude part of $\hat{C}_\chi$. Per Theorem 8.1 and the σ_1-ODD nature of $\hat{C}_\chi$, $\hat{A}_{K_3}$ has the anti-diagonal structure $\hat{A}_{K_3} = M_A \cdot [[0,1],[1,0]]$ in the TBM-aligned basis, with $M_A = \langle\phi_-^{(1)}|\hat{A}_{K_3}|\phi_-^{(2)}\rangle$.
+
+- $\hat{B}_\perp$ is the perpendicular part of $\hat{C}_\chi$, ζ-ODD operator on the $|\chi_\pm\rangle$ Hilbert space. Its matrix element $M_\perp = \langle\chi_+|\hat{B}_\perp|\chi_-\rangle$ depends on the explicit form of $|\chi_\pm\rangle$ as ζ-parity components of the substrate orientation field (Session 91 §11.3).
+
+**Factorized matrix element**: $M = M_A \cdot M_\perp$.
+
+For the factorization to give the empirical target $M = \chi/6 \approx 0.0394$, the product $M_A \cdot M_\perp = \chi/6$ must hold structurally. The Session 92 work surfaces multiple candidate structural origins for this factor of 6 (see §12.4 below).
+
+### §12.3 Load-bearing ingredients for (c.4) closure
+
+To compute $M$ at theorem level, the following structural ingredients are needed:
+
+**Substrate-dynamical inputs (require derivation from CPP primitives):**
+
+1. **Substrate orientation field $\vec{C}(x)$ at K3 location** (CPP axiom A3 + A7). The K3-amplitude content $\hat{A}_{K_3}$ and the perpendicular content $\hat{B}_\perp$ both depend on the substrate orientation field's geometric structure at the K3. Currently parametrized but not derived in closed form.
+
+2. **Cage-shell coupling for chirality observable** (extension of FI-C-6). The cage-shell mass formula $m_\nu = M_0 \cdot V^2 \cdot \sigma_\nu$ gives the *mass* coupling structure between K3 and icosahedral cage. The analog for the *chirality* observable (with different transformation properties under cell-swap) is implicit in the cage geometry but has not been explicitly extracted.
+
+3. **K3-doublet 2-mode coupling structure** (extension of FI-C-3). The way the two K3-doublet modes $|\Phi_-^{(i)}\rangle$ couple to the cage vertices, and how their coupling combines to produce the off-diagonal chirality matrix element.
+
+**Group-theoretic inputs (already in hand):**
+
+- $\hat{C}_\chi$ in $B_2$ irrep of $D_6$ (Patch 0384 §10.2)
+- K3-doublet in $E_1$ irrep of $D_6$ (= $E$ of $S_3'$, Patch 0384 §10.2)
+- Wigner-Eckart Clebsch-Gordan for $E \otimes \text{sign} \to E$ in $S_3$: anti-diagonal Pauli-$\sigma_x$ structure (Session 92 numerical verification)
+- Theorem 8.1 selection rule + extended FI-C-3 ζ-parity assignment (Sessions 88, 91)
+
+### §12.4 Three candidate structural forms for $M$, all numerically giving $\chi/6$
+
+The Session 92 numerical analysis identifies three "natural" structural origins for the factor of $6$ in $M = \chi/6$:
+
+**Candidate A: K3-doublet 2-mode × icosahedral cage V-vertex averaging.** $M = 2\chi/V$ with $V = 12$:
+
+- Factor $2$ from K3-doublet's 2-mode structure (Finding C-W10 reinterpretation; the K3-doublet has 2 antibonding eigenmodes with opposite ζ-parities, and the chirality observable couples between them with a factor-2 amplification from the 2-mode coherent contribution)
+- Factor $1/V$ from cage averaging (the K3-doublet wavefunction extends to all V=12 cage vertices, and the chirality observable averages over them with a $1/V$ suppression)
+- Combined: $M = 2\chi/V = 2 \cdot \phi^{-3}/12 = \phi^{-3}/6 \approx 0.0394$ ✓
+
+**Candidate B: Schur orthogonality on $S_3$.** $M = \chi/|S_3|$ with $|S_3| = 6$:
+
+- The substrate chirality magnitude $\chi$ is averaged over the $S_3$ residual symmetry of the K3-vertex stabilizer (FI-C-3 inheritance)
+- Schur orthogonality gives the normalization factor $1/|G|$ for projection onto specific irrep components, with $|S_3| = 6$
+- Combined: $M = \chi/|S_3| = \phi^{-3}/6 \approx 0.0394$ ✓
+
+**Candidate C: $D_6$ Schur normalization with $E$-doublet dimension.** $M = \chi \cdot d_E/|D_6|$ with $d_E = 2$, $|D_6| = 12$:
+
+- The K3 stabilizer is $D_6$ of order 12 (Finding C-W6)
+- The K3-doublet transforms in the 2D $E$ irrep, with dimension $d_E = 2$
+- $D_6$ Schur orthogonality with $E$-projection gives normalization $d_E/|D_6| = 2/12 = 1/6$
+- Combined: $M = \chi \cdot d_E/|D_6| = \chi \cdot 2/12 = \chi/6 \approx 0.0394$ ✓
+
+**Numerical equivalence at $M = \chi/6$**: All three candidates give $M = \phi^{-3}/6$ EXACTLY in closed form (not just numerically). The candidates are related by:
+
+$$\frac{2}{V} = \frac{1}{|S_3|} = \frac{d_E}{|D_6|} = \frac{1}{6}$$
+
+This is **not** a coincidence — there are structural relationships:
+- $V = 12 = |D_6|$: the icosahedral cage's V=12 vertex count equals the K3 stabilizer $|D_6|$
+- $|S_3| = |D_6|/2$: the K3-plane $S_3$ has half the order of the full K3 stabilizer $D_6$
+- $d_E = 2$: the K3-doublet dimension
+
+So the three candidates are related by:
+$$\frac{2}{V} = \frac{d_E}{|D_6|} = \frac{1}{|D_6|/d_E} = \frac{1}{|S_3|}$$
+
+The numerical equivalence is a **structural identity**, not a coincidence. This suggests that the three candidates may be **alternative descriptions of the same underlying structure** — the K3-doublet 2-mode (Candidate A) is the $E$-irrep dimension (Candidate C), and the cage V-vertex count is $|D_6|$ via the K3 stabilizer identification.
+
+### §12.5 Structural questions surfaced for Sessions 93+
+
+Despite the numerical equivalence, the three candidates correspond to physically distinct claims:
+
+- Candidate A says "M arises from cage averaging × K3-doublet mode count" — a *substrate-dynamical* claim
+- Candidate B says "M arises from Schur orthogonality on the K3-plane $S_3$ symmetry" — a *group-theoretic* claim
+- Candidate C says "M arises from $D_6$ Wigner-Eckart with $E$-doublet projection" — a *Wigner-Eckart-theoretic* claim
+
+**Key question for Sessions 93+**: Are these alternative descriptions, or does only one correspond to the rigorous theorem-level derivation?
+
+**Structural answer (tentative)**: Likely **Candidate C** is the most rigorous (Wigner-Eckart with full $D_6$ symmetry of the K3 stabilizer, using the extended FI-C-3 basis), with Candidates A and B as physical/group-theoretic interpretations of the same underlying calculation. Sessions 93-94 should establish this rigorously.
+
+**Open structural questions** for Session 93+:
+
+(Q1) Does the Wigner-Eckart machinery on $D_6$ with extended FI-C-3 (ζ-parity assignment) reproduce $M = \chi \cdot d_E/|D_6| = \chi/6$ at theorem level? This is the central calculation.
+
+(Q2) What is the explicit form of the substrate orientation field $\vec{C}(x)$ at the K3 location, and how does it factor into the K3-amplitude × perpendicular Hilbert space structure?
+
+(Q3) Is the factor of $\chi$ in $M = \chi/T$ derived from the substrate vacuum's broken-symmetry order parameter (FI-C-9), or does it require additional substrate-dynamical input?
+
+(Q4) Does the cage-shell coupling structure for the chirality observable (extension of FI-C-6) carry the V=12 factor as $|D_6|$ or as a separate cage vertex count?
+
+### §12.6 Findings registered Session 92
+
+- **Finding C-W14 (REGISTERED Session 92)**. Three candidate structural forms for the chirality matrix element $M$ — Candidate A (K3-doublet 2-mode × cage V averaging, $M = 2\chi/V$), Candidate B (Schur orthogonality on $S_3$, $M = \chi/|S_3|$), Candidate C ($D_6$ Wigner-Eckart with $E$-doublet projection, $M = \chi \cdot d_E/|D_6|$) — all give $M = \phi^{-3}/6 \approx 0.0394$ exactly, matching empirical $\Delta p_{LR} \approx 0.04$ within 2%. The numerical equivalence is a **structural identity** ($2/V = 1/|S_3| = d_E/|D_6| = 1/6$), not a coincidence: the three candidates are related by $V = 12 = |D_6|$, $|S_3| = |D_6|/2$, $d_E = 2$. This suggests the three candidates are alternative descriptions of the same underlying structure rather than competing derivations.
+
+- **Finding C-W15 (REGISTERED Session 92, working level)**. Candidate C ($D_6$ Wigner-Eckart with extended FI-C-3 + $E$-doublet projection) is the **leading hypothesis** for the rigorous theorem-level derivation of $M$. Candidates A and B are physical/group-theoretic interpretations of the same calculation. The verification of this hypothesis requires Sessions 93+ work on (Q1) explicit Wigner-Eckart computation on $D_6$ with extended FI-C-3, (Q2) substrate orientation field structure at K3 location from CPP A3 + A7, (Q3) interpretation of the $\chi$ factor as substrate vacuum order parameter, and (Q4) cage-shell coupling structure for the chirality observable.
+
+### §12.7 Forward queue refinement (Sessions 93+)
+
+Substantive update to the timeline based on Session 92 findings:
+
+1. **Session 93: Candidate C closure attempt** — $D_6$ Wigner-Eckart on extended FI-C-3 basis. Goal: derive $M = \chi \cdot d_E/|D_6| = \chi/6$ at theorem level by explicit Wigner-Eckart computation. Expected to be tractable using standard character-theoretic machinery + Theorem 8.1 + Finding C-W12 (extended FI-C-3).
+
+2. **Session 94: Substrate orientation field framework** — derive $\vec{C}(x)$ structure at K3 location from CPP axioms A3 (substrate orientation primitive) + A7 (substrate-stress framework). This is required for the $\chi$ factor to be interpreted as $\phi^{-3}$ via the broken-symmetry order parameter of FI-C-9. May surface additional structural requirements.
+
+3. **Session 95: Gap (c.4.G3) suppression-vs-amplification resolution** — verify the cage-shell coupling produces suppression rather than amplification in the chirality observable matrix element. Should follow from Sessions 93-94 work.
+
+4. **Session 96: Gap (c.4.G4) closed-form identity for T** — determine whether $T = 6$ is exact or near-coincident; identify which structural form (Candidate A/B/C) is the rigorous derivation.
+
+5. **Session 97: Sub-sub-claim (c.3) Wigner-Eckart Clebsch-Gordan factorization** (largely complete via Session 93 work).
+
+6. **Session 98: Sub-sub-claim (c.2) basis verification** (largely complete via Theorem 8.1 + Finding C-W12).
+
+7. **Session 99: Composite Capotauro Wigner-Eckart Theorem formalization.**
+
+8. **Session 100+: sin²θ₁₃ derivation from full machinery via $U_\text{PMNS} = U_\text{TBM} \cdot R(\epsilon(\chi))$ rotation structure** (Finding C-W4 + C-W9 + C-W12 implications).
+
+**Revised total estimated timeline for sub-claim (c) v1.0 closure: 8-12 sessions from Session 92 baseline** (Sessions 93-99+, revised slightly upward from Session 91's 7-11 estimate to accommodate Session 94 substrate orientation field framework). The honest framing: Session 92 has clarified that the v1.0 closure path is Candidate C (Wigner-Eckart with extended FI-C-3 on $D_6$), but full closure requires substrate-dynamical inputs that have not yet been developed at theorem level. **Patch 0386 makes no theorem-level claims at programme level** — it identifies the leading hypothesis and surfaces the explicit derivation gaps for Sessions 93+.
 
 ---
