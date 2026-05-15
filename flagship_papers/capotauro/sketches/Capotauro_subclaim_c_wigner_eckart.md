@@ -4,7 +4,7 @@
 
 This document is the companion sub-derivation working sketch for sub-claim (c) of the Capotauro closure programme. It grows monotonically across Sessions 87+ as the Wigner-Eckart calculation develops. **The parent document is `Capotauro_chi_phi_closure.md`**, which defines the closure target, foundational inputs FI-C-1 through FI-C-9, and the four-Picture mechanism architecture. This sub-claim (c) sketch focuses on the **transmission factor T at theorem level**: deriving T = V/2 = 6 (the §9.6 numerical signpost target, registered as Finding C-7) from the bracelet $D_6 \to C_6$ orbit-reduction structure via standard Wigner-Eckart machinery, using Picture B as the calculational entry point per Finding C-8 Picture-by-role decomposition.
 
-**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space.
+**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+).
 
 ---
 
@@ -329,5 +329,144 @@ The closure of (c.1a) rests on the following foundational inputs and CPP axioms:
 ### §8.7 Verification flag for Session 89+
 
 **Vγ-1**: Working assumption in Step 2 of the proof — "the K3 stabilizer embedding $S_3 \hookrightarrow H_4$ extends σ to an orientation-reversing element of $H_4$." This is structurally clear (reflections preserve their reflection character under natural embeddings) but should be verified at theorem level by explicit computation of the K3 stabilizer in $H_4$ and confirmation that σ has det = −1 in the standard 4D representation. Estimated 1 session for verification; deferred to Session 89 opening.
+
+---
+
+## §9 Session 89 work: Vγ-1 discharge + K3 stabilizer structure + sub-sub-claim (c.4) framework with explicit gap identification
+
+### §9.1 Vγ-1 fully discharged: σ ∈ H₄ has det = −1 in standard 4D representation
+
+**Construction.** Pick K3 triangle in the 600-cell with explicit unit-quaternion vertices:
+
+$$V_1 = (1, 0, 0, 0), \qquad V_2 = (\phi/2, 1/2, 1/(2\phi), 0), \qquad V_3 = (\phi/2, 1/2, -1/(2\phi), 0)$$
+
+These are mutually at distance $1/\phi$ (the 600-cell edge length at unit circumradius). Direct computation: $|V_1 - V_2|^2 = (1 - \phi/2)^2 + 1/4 + 1/(4\phi^2) = 2 - \phi = 1/\phi^2$, so $|V_1 - V_2| = 1/\phi$. ✓ Similarly for $|V_1 - V_3|$ and $|V_2 - V_3|$. So K3 = $\{V_1, V_2, V_3\}$ is the equilateral triangle at edge $1/\phi$.
+
+Since $V_2$ and $V_3$ differ only in their third coordinate ($+1/(2\phi)$ vs $-1/(2\phi)$), the S₂-generator σ that swaps $V_2 \leftrightarrow V_3$ while fixing $V_1$ is the 4D matrix:
+
+$$\sigma = \text{diag}(1, 1, -1, 1) \quad \in O(4)$$
+
+(reflection across the hyperplane $z = 0$ in $\mathbb{R}^4$, where $z$ is the third coordinate).
+
+**Verification of σ acting on K3:**
+- $\sigma \cdot V_1 = (1, 0, 0, 0) = V_1$ ✓
+- $\sigma \cdot V_2 = (\phi/2, 1/2, -1/(2\phi), 0) = V_3$ ✓
+- $\sigma \cdot V_3 = (\phi/2, 1/2, +1/(2\phi), 0) = V_2$ ✓
+
+**Determinant:** $\det(\sigma) = 1 \cdot 1 \cdot (-1) \cdot 1 = -1$ ✓
+
+**Verification that σ preserves the full 600-cell vertex set:** The 600-cell has 120 vertices in three classes — 8 from {±1, ±i, ±j, ±k}, 16 from $(\pm 1/2)^4$, and 96 even permutations of $(0, \pm 1/2, \pm \phi/2, \pm 1/(2\phi))$. The reflection $z \to -z$ preserves each class (because all sign combinations are present in each). Numerically verified by explicit construction of all 120 vertices and confirmation that $\sigma$ maps each to another 600-cell vertex.
+
+**Conclusion: σ ∈ H₄ has det = −1, so σ ∈ H₄ \ I₄ (the orientation-reversing coset). Vγ-1 discharged. Step 2 of Theorem 8.1 (Patch 0382) is now confirmed at full numerical rigor.**
+
+### §9.2 K3 stabilizer structure: $D_6 = S_3 \times Z_2$ with explicit det-parity decomposition
+
+**Stabilizer order verification.** $H_4$ acts orbit-transitively on the 1200 triangular faces of the 600-cell. The K3 stabilizer therefore has order $|H_4| / 1200 = 14400 / 1200 = 12$. This matches the order of the dihedral group $D_6$.
+
+**Generators of the K3 stabilizer:**
+
+The full K3 stabilizer in $H_4$ has order 12 and decomposes as $D_6 = S_3 \times \mathbb{Z}_2$, where:
+
+- $S_3 = \langle r, \sigma_1 \rangle$ is the permutation group of the three K3 vertices $\{V_1, V_2, V_3\}$, with:
+  - $e$ identity
+  - $r$ = 120° rotation of K3 plane (cyclic permutation $V_1 \to V_2 \to V_3 \to V_1$)
+  - $r^2$ = 240° rotation
+  - $\sigma_1, \sigma_2, \sigma_3$ = three reflections fixing $V_1, V_2, V_3$ respectively
+  - In the 4D representation, the K3-plane action extends trivially to the perpendicular plane: rotations have det = +1, reflections have det = −1.
+
+- $\mathbb{Z}_2 = \langle \zeta \rangle$ is the "cell-swap" generator that fixes the K3 plane pointwise and exchanges the two adjacent tetrahedral cells of the 600-cell. Explicit construction (numerically verified):
+
+$$\zeta = \text{diag}(1, 1, 1, -1) \quad \in O(4)$$
+
+  (reflection across the hyperplane $w = 0$ in $\mathbb{R}^4$, where $w$ is the fourth coordinate). $\zeta$ has det = −1.
+
+  Verification of $\zeta$ fixing K3 pointwise: all three K3 vertices have $w = 0$, so $\zeta \cdot V_i = V_i$ for $i = 1, 2, 3$. ✓
+
+**Det-parity decomposition of $D_6 = S_3 \times \mathbb{Z}_2$:**
+
+| Element | Type | det |
+|---|---|---|
+| $e$ | identity | +1 |
+| $r$, $r^2$ | K3-plane rotations | +1 |
+| $\sigma_1, \sigma_2, \sigma_3$ | K3-plane reflections | −1 |
+| $\zeta$ | cell-swap | −1 |
+| $r\zeta$, $r^2\zeta$ | rotation × cell-swap | −1 |
+| $\sigma_i \zeta$ | reflection × cell-swap | +1 |
+
+**Six elements with det = +1** (the orientation-preserving subgroup $I_4 \cap D_6$): $\{e, r, r^2, \sigma_1\zeta, \sigma_2\zeta, \sigma_3\zeta\}$
+
+**Six elements with det = −1** (the orientation-reversing coset $(H_4 \setminus I_4) \cap D_6$): $\{\sigma_1, \sigma_2, \sigma_3, \zeta, r\zeta, r^2\zeta\}$
+
+### §9.3 Sub-sub-claim (c.4) framework: target, structural decomposition candidate, and honest identification of derivation gaps
+
+**Target.** Derive the Wigner-Eckart reduced matrix element $M = \langle K_3 \| \hat{C}_\chi \| K_3 \rangle$ at theorem level. Numerical signpost from Finding C-7: $M = \chi/T$ with $T = V/2 = 6$, giving $M = \phi^{-3}/6 \approx 0.0394$ matching empirical $\Delta p_{LR} \approx 0.04$ within 2%.
+
+**§9.3.1 Chirality-preserving subgroup under FI-C-9 broken vacuum.** By Theorem 8.1 + Reading I, $\hat{C}_\chi$ flips sign under any det = −1 element of $H_4$. The broken vacuum (FI-C-9) is therefore stabilized by the index-2 det = +1 subgroup $I_4 \cap H_4 = H_4^+$. Restricted to the K3 stabilizer $D_6$, this is the order-6 subgroup of det = +1 elements: $\{e, r, r^2, \sigma_1\zeta, \sigma_2\zeta, \sigma_3\zeta\}$.
+
+**This subgroup has structure $S_3 \cong D_3$ (NOT $C_6$).** Group order analysis: among the 6 det = +1 elements, $e$ has order 1, $r$ and $r^2$ have order 3, and $\sigma_i\zeta$ have order 2 (since $(\sigma_i\zeta)^2 = \sigma_i^2 \zeta^2 = e \cdot e = e$). This element-order distribution (1 + 2 order-3 + 3 order-2) matches $S_3$, not $C_6$ (which would have orders 1 + 1 order-2 + 2 order-3 + 2 order-6).
+
+**Corrigendum to §3.1 informal framing.** The §3.1 informal pathway described the chirality activation as "bracelet $D_6 \to C_6$ orbit reduction." This was structurally imprecise: the actual reduction under FI-C-9 broken vacuum is $D_6 \to S_3'$ where $S_3' = \langle r, \sigma_1\zeta \rangle$ is the chirality-preserving order-6 subgroup (a *different* $S_3$ subgroup from the K3-plane vertex-permutation $S_3 = \langle r, \sigma_1 \rangle$). The two $S_3$ subgroups are isomorphic as abstract groups but are different subgroups of $D_6$; only $S_3'$ is the chirality-preserving subgroup.
+
+The index-2 factor $|D_6| / |S_3'| = 12/6 = 2$ is preserved, so the "factor 1/2" in $T = V/2$ remains accessible at the numerical level. But the structural derivation must use the correct subgroup ($S_3'$, not $C_6$) and the correct Clebsch-Gordan / character-theoretic machinery for $D_6 \downarrow S_3'$.
+
+**§9.3.2 Open derivation gaps for sub-sub-claim (c.4) theorem-level closure.**
+
+The structural decomposition $M = \chi / T$ with $T = V/2 = 6$ needs the following gaps closed at theorem level for v1.0 closure:
+
+- **Gap (c.4.G1) — Cage-shell coupling structure.** How does the icosahedral first-shell vertex count $V = 12$ (FI-C-2 + FI-C-5) enter the K3-doublet matrix element of $\hat{C}_\chi$? The cage-shell mass formula FI-C-6 has $V$ appearing as $V^2$ (mass scales as $V^2$ in $m = M_0 V^2 \sigma_\nu$). For the chirality observable (which is linear in the substrate orientation field, not quadratic in cage-shell density), the corresponding power may be $V^1$ or $V^0$ or something else. The §3.1 informal hand-waving did not derive this from CPP primitives.
+
+- **Gap (c.4.G2) — Subgroup reduction factor structure.** The index-2 reduction $D_6 \to S_3'$ gives a factor of 2 *somewhere* (whether in numerator or denominator). The §3.1 informal framing put 1/2 in the denominator of $M$, but the rigorous Wigner-Eckart calculation may put it differently. Specifically: the projection of the rank-1 axial tensor $\hat{C}_\chi$ onto the trivial irrep of $S_3'$ (the chirality-preserving subgroup) determines the matrix-element structure, and the projection coefficient may not be exactly 1/2.
+
+- **Gap (c.4.G3) — Suppression vs amplification.** The numerical target $M = \chi/T$ requires *suppression* (M < χ). A coherent sum over $V = 12$ cage-shell vertices would naively give *amplification* ($M \sim V \cdot \chi$). The structural derivation must show that the broken-symmetry reduction produces destructive interference among the 12 contributions, yielding a *fraction* of $\chi$ rather than a multiple. The cleanest candidate mechanism: the substrate orientation field is $D_6$-equivariant in the unbroken vacuum, with the 12 cage-shell values summing to zero by symmetry; under broken $D_6 \to S_3'$, only the trivial-$S_3'$-irrep component survives, giving a small fraction of the maximum possible sum. The structural factor of this fraction needs explicit computation.
+
+- **Gap (c.4.G4) — Closed-form structural identity for $T = V/2 = 6$.** If $T \neq V/2 = 6$ exactly at theorem level — i.e., if the rigorous derivation produces $T = 5.9$ or $T = 6.1$ or some other value close-but-not-equal to 6 — the Finding C-7 numerical signpost gets reinterpreted as a near-coincidence rather than a structural identity. The current 2% agreement to empirical $\Delta p_{LR} = 0.04$ is suggestive but may be a near-fit that doesn't admit a clean closed-form theorem-level expression.
+
+These four gaps are the load-bearing work for v1.0 sub-claim (c) closure. They need to be addressed sequentially in Sessions 90+. The framework here is rigorous (FI-C-9 + Theorem 8.1 + K3 stabilizer $D_6$ structure with $S_3'$ chirality-preserving subgroup), but the specific factor $T = V/2 = 6$ is at present a *numerical signpost*, not a theorem-level result.
+
+**§9.3.3 Candidate derivation pathways for Sessions 90+.**
+
+Three candidate approaches to closing gaps (c.4.G1)-(c.4.G4):
+
+- **Pathway A (Wigner-Eckart with K3 stabilizer D₆ irreps).** Most rigorous. Identify which $D_6$ irrep contains the chirality observable $\hat{C}_\chi$; compute the Wigner-Eckart reduced matrix element using $D_6$ Clebsch-Gordan coefficients; identify the $S_3'$-trivial projection coefficient. This requires explicit $D_6$ character-theoretic computation but is standard textbook work. Estimated 2-3 sessions.
+
+- **Pathway B (Cage-shell coherent sum).** More physical. Compute the substrate orientation field at the V = 12 cage-shell vertices, weighted by the K3-doublet wavefunction; identify the symmetric/antisymmetric components; verify that the antisymmetric component survives under broken $D_6 \to S_3'$. This requires explicit cage-shell wavefunction structure and substrate orientation field calculation. Estimated 2-3 sessions.
+
+- **Pathway C (Bracelet phase structure, inheriting from SF-2 v1.0).** Uses FI-C-4 (W bracelet $D_6$ stabilizer + W⁰ catalyst framework from SF-2 v1.0). Compute the matrix element via the bracelet phase structure on the K3-doublet, using the SF-2 v1.0 PROP-SF-2-5 result (V-A 75% from 120°/240° phase bias). Introduces additional inheritance from SF-2 v1.0. Estimated 1-2 sessions if SF-2 v1.0 structure carries over cleanly.
+
+**Recommended path: Pathway A** (Wigner-Eckart with $D_6$ irreps) for rigor, with Pathway C as a sanity check (the SF-2 inheritance should give consistent answers if both are correct). Pathway B is the most physical but most likely to surface unexpected subtleties.
+
+### §9.4 Findings registered Session 89
+
+- **Finding C-W5 (REGISTERED Session 89).** Vγ-1 discharged at full numerical rigor. σ = diag(1, 1, −1, 1) ∈ $H_4$ has det = −1 in the standard 4D representation. Explicit construction with K3 = {(1,0,0,0), (φ/2, 1/2, 1/(2φ), 0), (φ/2, 1/2, −1/(2φ), 0)} verified all 120 vertices of the 600-cell map to other 600-cell vertices under σ. Step 2 of Theorem 8.1 is now confirmed at full rigor.
+
+- **Finding C-W6 (REGISTERED Session 89).** The K3 stabilizer in $H_4$ is $D_6 = S_3 \times \mathbb{Z}_2$ of order 12, with $S_3 = \langle r, \sigma_1 \rangle$ acting on K3 vertices and $\mathbb{Z}_2 = \langle \zeta \rangle$ acting on the perpendicular 2-plane (cell-swap). The cell-swap generator $\zeta = \text{diag}(1, 1, 1, -1)$ has det = −1 (it is a 4D hyperplane reflection across the $w = 0$ hyperplane, not a 4D rotation as the §3.1 informal framing implicitly assumed). The K3 stabilizer decomposes as 6 det = +1 elements (orientation-preserving) and 6 det = −1 elements (orientation-reversing) in the natural way.
+
+- **Finding C-W7 (REGISTERED Session 89).** The chirality-preserving subgroup of $D_6$ under FI-C-9 broken vacuum is the index-2 det = +1 subgroup $S_3' = \langle r, \sigma_1 \zeta \rangle$ of order 6. This $S_3'$ has the abstract group structure of $S_3 \cong D_3$ (1 identity + 2 order-3 elements + 3 order-2 elements), NOT of $C_6$ (cyclic of order 6). This *corrects* the §3.1 informal framing which described the chirality activation as "bracelet $D_6 \to C_6$ orbit reduction" — the accurate reduction is $D_6 \to S_3'$ with $S_3'$ being a different $S_3$ subgroup from the K3-plane vertex-permutation $S_3$. The index-2 factor $|D_6|/|S_3'| = 2$ is preserved (so the "factor 1/2" in $T = V/2$ remains accessible), but the structural derivation must use $D_6 \downarrow S_3'$ character theory rather than the imprecise $D_6 \to C_6$ framing.
+
+- **Finding C-W8 (REGISTERED Session 89, status: numerical signpost not theorem).** The Finding C-7 candidate $T = V/2 = 6$ is *not yet a theorem-level result*. The §9.3.2 derivation gaps (c.4.G1) through (c.4.G4) must be closed for v1.0 sub-claim (c) closure. At Session 89 close, $T = V/2 = 6$ remains a numerical signpost with structural decomposition candidate $T = V \cdot |D_6|^{-1} \cdot |S_3'| = V/2$, but the specific power of $V$ (linear, quadratic, fractional) and the projection coefficient from the chirality-preserving subgroup require explicit Wigner-Eckart / character-theoretic computation. Sessions 90+ work.
+
+### §9.5 Revised forward queue (Sessions 90+) — sub-sub-claim (c.4) gap-by-gap closure
+
+The Session 89 work tightens the sub-claim (c) closure architecture: Vγ-1 discharged, K3 stabilizer $D_6$ structure rigorously established, but the §3.1 informal framing of "D_6 → C_6" was corrected to "D_6 → S_3'" and the gap-by-gap derivation work for $T = V/2 = 6$ is now explicit. **Revised total estimated timeline for sub-claim (c) v1.0 closure: 6-9 sessions from Session 89 baseline** (Sessions 90-98), revised back upward from the Session 88 estimate of 4-7 sessions because the §3.1 imprecision required reformulation and the (c.4) gap-by-gap closure is more substantial than initially scoped.
+
+1. **Session 90: Sub-sub-claim (c.4.G2) — Subgroup reduction factor structure.** Compute the projection of the rank-1 axial tensor $\hat{C}_\chi$ onto the trivial irrep of the chirality-preserving subgroup $S_3'$ via $D_6$ character theory. Identify the projection coefficient at theorem level. Recommended: Pathway A (Wigner-Eckart with $D_6$ irreps).
+
+2. **Session 91: Sub-sub-claim (c.4.G1) — Cage-shell coupling structure.** Determine the power of $V = 12$ in the chirality observable matrix element using the cage-shell coupling structure (FI-C-2 + FI-C-5 + FI-C-6). Likely answer: $V^1$ from coherent sum over cage-shell vertices (vs $V^2$ from cage-shell mass formula for the mass observable). Verify at theorem level.
+
+3. **Session 92: Sub-sub-claim (c.4.G3) — Suppression vs amplification structural argument.** Show that the broken-symmetry reduction produces destructive interference among the 12 cage-shell contributions, yielding $M = \chi \times f$ with $f < 1$. Identify $f$ as the chirality-preserving subgroup's trivial-irrep projection coefficient from (c.4.G2) combined with the cage-shell coupling structure from (c.4.G1).
+
+4. **Session 93: Sub-sub-claim (c.4.G4) — Closed-form identity for $T$.** Combine results from (c.4.G1)-(c.4.G3) into a closed-form expression for $T$. Verify (or refute) the $T = V/2 = 6$ numerical signpost as a structural identity. If the rigorous answer is $T = V/2$ exactly, the Capotauro closure architecture is validated; if not, document the actual value and identify the path to revised closure.
+
+5. **Session 94: Cross-check via Pathway C (bracelet phase structure from SF-2 v1.0).** Compute the matrix element via the W bracelet $D_6$ stabilizer + W⁰ catalyst framework (FI-C-4); verify consistency with Pathway A result from (c.4.G2)-(c.4.G4).
+
+6. **Session 95: Sub-sub-claim (c.3) Wigner-Eckart Clebsch-Gordan factorization.** Standard textbook calculation given (c.1a) + (c.4) closure. Compute the Clebsch-Gordan coefficient for $\mathbf{1}_+ \otimes \mathbf{1}_- \to \mathbf{1}_-$ in $S_2$; verify the K3-doublet matrix-element magnitude is consistent with Reading I and the (c.4) closure.
+
+7. **Session 96: Sub-sub-claim (c.2) K3-doublet basis verification.** Inheritance check from SF-4 v4.0 (FI-C-3); identify any additional substrate-vacuum-orientation modifications.
+
+8. **Session 97: Composite Capotauro Wigner-Eckart Theorem formalization.** Combine (c.1a) Theorem 8.1 + (c.4) gap closures + (c.3) Wigner-Eckart factorization + (c.2) basis verification into a Composite Theorem statement. Foundational/derived accounting; verification flag enumeration; load-bearing axiom identification.
+
+9. **Session 98+: sin²θ₁₃ derivation from the full Wigner-Eckart machinery.** Once sub-claim (c) is closed, the sin²θ₁₃ prediction follows from the $U_\text{PMNS} = U_\text{TBM} \cdot R(\epsilon(\chi))$ rotation structure (Finding C-W4 implication). v1.0+ work after sub-claim (c) closure.
+
+**Revised total estimated timeline for sub-claim (c) v1.0 closure: 6-9 sessions from Session 89 baseline.** After sub-claim (c) closure, sub-claims (a), (b), (d), (e), (f) of the parent Capotauro sketch open in parallel toward v1.0 paper drafting (an additional ~10-15 sessions per SF-4 precedent).
 
 ---
