@@ -4,7 +4,7 @@
 
 This document is the companion sub-derivation working sketch for sub-claim (c) of the Capotauro closure programme. It grows monotonically across Sessions 87+ as the Wigner-Eckart calculation develops. **The parent document is `Capotauro_chi_phi_closure.md`**, which defines the closure target, foundational inputs FI-C-1 through FI-C-9, and the four-Picture mechanism architecture. This sub-claim (c) sketch focuses on the **transmission factor T at theorem level**: deriving T = V/2 = 6 (the §9.6 numerical signpost target, registered as Finding C-7) from the bracelet $D_6 \to C_6$ orbit-reduction structure via standard Wigner-Eckart machinery, using Picture B as the calculational entry point per Finding C-8 Picture-by-role decomposition.
 
-**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge). Extended Session 91 (Patch 0385, 15 May 2026) with §11 FI-C-3 extension formalization — cleaner ζ-rule derivation directly from $\hat{C}_\chi$ being ζ-ODD (Finding C-W11, replacing redundant σ_1ζ analysis), identification of $|\chi_\pm\rangle$ as ζ-parity-decomposed substrate orientation field at K3 location with σ_1ζ-EVEN pairing convention (Finding C-W12), and explicit SF-4 v4.0 consistency check confirming no SF-4 .tex revision required (Finding C-W13). Extended Session 92 (Patch 0386, 15 May 2026) with §12 Combined Gap (c.4.G1+G2) opening — three candidate structural forms ($M = 2\chi/V$, $\chi/|S_3|$, $\chi \cdot d_E/|D_6|$) all giving $M = \chi/6$ exactly via structural identity $2/V = 1/|S_3| = d_E/|D_6| = 1/6$ (Finding C-W14), Candidate C ($D_6$ Wigner-Eckart with extended FI-C-3) identified as leading hypothesis for rigorous theorem-level derivation (Finding C-W15), closure deferred to Sessions 93+ with substrate-dynamical inputs required. Extended Session 93 (Patch 0387, 15 May 2026) with §13 Candidate C closure attempt — Wigner-Eckart framework set up cleanly on extended FI-C-3, K3-amplitude matrix element computed symbolically as $M_{K_3} = (b - 2a)/\sqrt{3}$ where $(a, b)$ parameterize σ_1-ODD operator subspace (Finding C-W16), three Session 92 candidates identified as structural ansätze rather than Wigner-Eckart-derived results (Finding C-W17), load-bearing substrate-dynamical inputs explicitly identified — substrate orientation field $\vec{C}(x)$ at K3 vertices from CPP axioms A3 + A7, perpendicular wavefunction matrix element $M_\perp$, possibly cage-shell coupling extension (Finding C-W18); the empirical constraint $(b - 2a) \cdot M_\perp \approx \phi^{-3}/(2\sqrt{3})$ provides the target for Sessions 94+ derivations. Extended Session 94 (Patch 0388, 15 May 2026) with §14 substrate orientation field framework opening — axiom-labeling correction flagging that parent sketch §1.4 uses pre-consolidation labels (A3 = DI-bit propagation per current `axiom-registry.md`; A7 consolidated into A6′; Finding C-W19 registered as housekeeping), substrate orientation field reframed as emergent quantity from A1 + A2 + A3 + A4 + FI-C-9 not a separate primitive, enumeration of four candidate structural decompositions D1-D4 of the empirical constraint all numerically consistent with the framework through Session 93 but distinguishable only by substrate-physics input (Finding C-W20), four open structural questions Q5-Q8 registered for Sessions 95+ work on substrate-vacuum direction and explicit $\vec{C}(V_k)$ + perpendicular wavefunction derivations.
+**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge). Extended Session 91 (Patch 0385, 15 May 2026) with §11 FI-C-3 extension formalization — cleaner ζ-rule derivation directly from $\hat{C}_\chi$ being ζ-ODD (Finding C-W11, replacing redundant σ_1ζ analysis), identification of $|\chi_\pm\rangle$ as ζ-parity-decomposed substrate orientation field at K3 location with σ_1ζ-EVEN pairing convention (Finding C-W12), and explicit SF-4 v4.0 consistency check confirming no SF-4 .tex revision required (Finding C-W13). Extended Session 92 (Patch 0386, 15 May 2026) with §12 Combined Gap (c.4.G1+G2) opening — three candidate structural forms ($M = 2\chi/V$, $\chi/|S_3|$, $\chi \cdot d_E/|D_6|$) all giving $M = \chi/6$ exactly via structural identity $2/V = 1/|S_3| = d_E/|D_6| = 1/6$ (Finding C-W14), Candidate C ($D_6$ Wigner-Eckart with extended FI-C-3) identified as leading hypothesis for rigorous theorem-level derivation (Finding C-W15), closure deferred to Sessions 93+ with substrate-dynamical inputs required. Extended Session 93 (Patch 0387, 15 May 2026) with §13 Candidate C closure attempt — Wigner-Eckart framework set up cleanly on extended FI-C-3, K3-amplitude matrix element computed symbolically as $M_{K_3} = (b - 2a)/\sqrt{3}$ where $(a, b)$ parameterize σ_1-ODD operator subspace (Finding C-W16), three Session 92 candidates identified as structural ansätze rather than Wigner-Eckart-derived results (Finding C-W17), load-bearing substrate-dynamical inputs explicitly identified — substrate orientation field $\vec{C}(x)$ at K3 vertices from CPP axioms A3 + A7, perpendicular wavefunction matrix element $M_\perp$, possibly cage-shell coupling extension (Finding C-W18); the empirical constraint $(b - 2a) \cdot M_\perp \approx \phi^{-3}/(2\sqrt{3})$ provides the target for Sessions 94+ derivations. Extended Session 94 (Patch 0388, 15 May 2026) with §14 substrate orientation field framework opening — axiom-labeling correction flagging that parent sketch §1.4 uses pre-consolidation labels (A3 = DI-bit propagation per current `axiom-registry.md`; A7 consolidated into A6′; Finding C-W19 registered as housekeeping), substrate orientation field reframed as emergent quantity from A1 + A2 + A3 + A4 + FI-C-9 not a separate primitive, enumeration of four candidate structural decompositions D1-D4 of the empirical constraint all numerically consistent with the framework through Session 93 but distinguishable only by substrate-physics input (Finding C-W20), four open structural questions Q5-Q8 registered for Sessions 95+ work on substrate-vacuum direction and explicit $\vec{C}(V_k)$ + perpendicular wavefunction derivations. Extended Session 95 (Patch 0389, 15 May 2026) with §15 Q5 attempt surfaces substantive correction to Session 93 framework: the σ_1-ODD operator parameterization used in Session 93 (two parameters $a, b$ giving $M_{K_3} = (b-2a)/\sqrt{3}$) was for general σ_1-ODD operators including both $E$ and $A_2$ irrep components of $S_3$, but $\hat{C}_\chi$ in $B_2$ of $D_6$ requires K3-amplitude part in $A_2$ of $S_3$ specifically (σ_1-ODD AND r-invariant); the unique $A_2$ generator is $T_{A_2}(b) = i \cdot b \cdot S$ where $S$ is real antisymmetric (Finding C-W21); corrected K3-amplitude matrix element is $M_{K_3}^{\text{corrected}} = -i \cdot b \cdot \sqrt{3}$ (imaginary phase, √3 in numerator not denominator), corrected empirical constraint is $b \cdot m_\perp = \phi^{-3}/(6\sqrt{3}) \approx 0.02272$ with leading hypothesis D2′ ($b = \chi/\sqrt{3}$, $m_\perp = 1/6$) (Finding C-W22); Q5 resolved as moot under corrected single-parameter framework, timeline accelerated to 6-9 sessions.
 
 ---
 
@@ -1072,5 +1072,133 @@ The Session 94 framework setup surfaces concrete open questions:
 **Revised total estimated timeline for sub-claim (c) v1.0 closure: 9-13 sessions from Session 94 baseline** (Sessions 95-103+, unchanged from Session 93's 9-13 estimate). The honest framing: Session 94 has not advanced the closure beyond Session 93's framework setup; the load-bearing work remains the substrate-vacuum-direction derivation (Sessions 95-96) and the explicit substrate-physics computation (Sessions 97-99).
 
 **Patch 0388 makes no theorem-level claims at programme level** — it (i) corrects axiom-labeling housekeeping in the parent Capotauro sketch (Finding C-W19), (ii) reframes substrate orientation field as emergent quantity, and (iii) enumerates the four candidate decompositions of the empirical constraint (Finding C-W20). Sessions 95+ deliver the substrate-physics work needed for closure.
+
+---
+
+## §15 Session 95 work: Q5 attempt surfaces structural correction to Session 93 parameterization
+
+### §15.1 Session 95 deliverable as scoped
+
+Per the §14.7 forward queue, Session 95's deliverable was: "Substrate vacuum direction $\hat{n}$ derivation. Open question Q5: derive the 4D orientation of $\hat{n}$ from CPP structure on the 600-cell, or establish that it is genuinely a frozen boundary condition coeval with CP existence (no preferred direction at the axiom level)."
+
+**Outcome**: While working through Q5, Session 95 surfaces a **substantive correction to the Session 93 framework**. The σ_1-ODD operator parameterization used in Session 93 (parameters $a, b$ giving $M_{K_3} = (b-2a)/\sqrt{3}$) was for **general σ_1-ODD Hermitian operators**, which include both $E$-irrep and $A_2$-irrep components of $S_3$. **For $\hat{C}_\chi$ in $B_2$ irrep of $D_6$ specifically, the K3-amplitude part must be in $A_2$ of $S_3$ (σ_1-ODD AND r-invariant), which is a unique 1-parameter family of imaginary-antisymmetric operators.** This corrects the Session 93 calculation, changes the empirical constraint structure, and re-frames the four-candidate Session 94 decomposition. Q5 itself remains open; the structural correction is the main Session 95 deliverable.
+
+### §15.2 Irrep decomposition of K3-amplitude Hermitian operator space
+
+The 9D real space of Hermitian operators on the 3D K3-vertex amplitude space decomposes under $S_3$ as (Session 95 numerical verification):
+
+$$\text{Herm}_{3 \times 3}(\mathbb{C})_{\mathbb{R}} = 2 \, A_1 \oplus 1 \, A_2 \oplus 3 \, E$$
+
+Total: $2 \cdot 1 + 1 \cdot 1 + 3 \cdot 2 = 9$ dimensions ✓.
+
+This was computed via standard character inner product:
+- Character of 9D Hermitian rep on classes $\{e, r, \sigma_1\}$: $\chi = (9, 0, 1)$ (numerically verified)
+- $A_1$ multiplicity: $(1 \cdot 9 \cdot 1 + 2 \cdot 0 \cdot 1 + 3 \cdot 1 \cdot 1)/6 = 12/6 = 2$
+- $A_2$ multiplicity: $(1 \cdot 9 \cdot 1 + 2 \cdot 0 \cdot 1 + 3 \cdot 1 \cdot (-1))/6 = 6/6 = 1$
+- $E$ multiplicity: $(1 \cdot 9 \cdot 2 + 2 \cdot 0 \cdot (-1) + 3 \cdot 1 \cdot 0)/6 = 18/6 = 3$
+
+**Key implication**: The $A_2$ irrep (sign of $S_3$) appears with multiplicity exactly $1$ in the K3-amplitude Hermitian operator space. The σ_1-ODD AND r-invariant subspace is **1-dimensional**, NOT the 2-dimensional subspace parameterized by $(a, b)$ in Session 93.
+
+### §15.3 The unique $A_2$ generator: $T_{A_2} = i \cdot b \cdot S$
+
+The unique 1-parameter family in $A_2$ of $S_3$ on K3-amplitudes is:
+
+$$T_{A_2}(b) = i \cdot b \cdot S \quad \text{where} \quad S = \begin{pmatrix} 0 & 1 & -1 \\ -1 & 0 & 1 \\ 1 & -1 & 0 \end{pmatrix}$$
+
+$S$ is a real antisymmetric 3×3 matrix; $T_{A_2}$ is purely imaginary in matrix form. **$T_{A_2}$ is Hermitian** ($T_{A_2}^\dagger = (-i)(-S^T) = iS = T_{A_2}$) despite being imaginary-valued, because $S$ is antisymmetric.
+
+Numerical verification (Session 95):
+- $T_{A_2}$ Hermitian: max$|T - T^\dagger| = 0$ ✓
+- σ_1-ODD: max$|\sigma_1 T \sigma_1^T + T| = 0$ ✓
+- r-invariant: max$|r T r^T - T| = 0$ ✓
+
+So $T_{A_2}$ uniquely satisfies the $A_2$ irrep constraints. The Session 93 parameterization $(a, b)$ with real symmetric σ_1-ODD operators is in the $E$ irrep components (the σ_1-ODD components of the 3 $E$-copies in 9D Hermitian), NOT in $A_2$.
+
+### §15.4 Corrected K3-amplitude matrix element
+
+The matrix element of $T_{A_2}$ on the TBM-aligned K3-doublet basis $\phi_-^{(1)} = (2,-1,-1)/\sqrt{6}$, $\phi_-^{(2)} = (0,-1,1)/\sqrt{2}$:
+
+$$T_{A_2} \cdot \phi_-^{(2)} = \frac{ib}{\sqrt{2}} \begin{pmatrix} 0 & 1 & -1 \\ -1 & 0 & 1 \\ 1 & -1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ -1 \\ 1 \end{pmatrix} = \frac{ib}{\sqrt{2}} \begin{pmatrix} -2 \\ 1 \\ 1 \end{pmatrix}$$
+
+$$M_{K_3} = \langle\phi_-^{(1)}|T_{A_2}|\phi_-^{(2)}\rangle = \frac{1}{\sqrt{6}}(2, -1, -1) \cdot \frac{ib}{\sqrt{2}}(-2, 1, 1) = \frac{ib}{\sqrt{12}}(-4 - 1 - 1) = -ib\sqrt{3}$$
+
+**Result**: $\boxed{M_{K_3}^{\text{corrected}} = -i \cdot b \cdot \sqrt{3}}$
+
+Numerical verification: $|M_{K_3}| = b \cdot \sqrt{3}$ with imaginary phase $-i$.
+
+Compare to Session 93's incorrect result $M_{K_3}^{\text{Session 93}} = (b - 2a)/\sqrt{3}$ for the wrong operator class. The corrected magnitude has $\sqrt{3}$ in the **numerator** (multiplying $b$), not in the **denominator**. The imaginary phase $-i$ is intrinsic — $T_{A_2}$ is purely imaginary in matrix form.
+
+### §15.5 Corrected empirical constraint
+
+For the full matrix element $M = \langle\Phi_-^{(1)}|\hat{C}_\chi|\Phi_-^{(2)}\rangle$ via the factorized structure $\hat{C}_\chi = T_{A_2} \otimes T_\perp$:
+
+$$M = M_{K_3} \cdot M_\perp = (-ib\sqrt{3}) \cdot M_\perp$$
+
+**For $M$ to be real-valued** (the physical observable $\Delta p_{LR}$ is real), $M_\perp$ must be **pure imaginary**: $M_\perp = i \cdot m_\perp$ with real $m_\perp$. Then:
+
+$$M = (-ib\sqrt{3}) \cdot (im_\perp) = b\sqrt{3} \cdot m_\perp$$
+
+For $M = \chi/6 = \phi^{-3}/6 \approx 0.0394$ (empirical target):
+
+$$\boxed{b \cdot m_\perp = \frac{\chi}{6\sqrt{3}} = \frac{\phi^{-3}}{6\sqrt{3}} \approx 0.02272}$$
+
+This is the **corrected empirical constraint** (replacing Session 93's $(b-2a) \cdot M_\perp \approx 0.0682$). Both $b$ and $m_\perp$ are substrate-dynamical, with one less parameter than Session 93's analysis (the parameter $a$ doesn't exist for the $A_2$ generator — only $b$ does).
+
+### §15.6 Implications for Session 94 four-candidate decompositions
+
+The Session 94 decompositions D1-D4 were predicated on Session 93's incorrect parameterization. Under the corrected Session 95 framework, the four candidates become:
+
+| Decomp. | $b$ form | $m_\perp$ form | Physical interpretation |
+|:---:|:---|:---|:---|
+| **D1′** | $b = \chi$ | $m_\perp = 1/(6\sqrt{3}) = \sqrt{3}/18 \approx 0.0962$ | Substrate orientation projects directly onto K3 plane; perpendicular factor extracts $1/(6\sqrt{3})$ from substrate-dynamical structure |
+| **D2′** | $b = \chi/\sqrt{3}$ | $m_\perp = 1/6 \approx 0.167$ | K3-amplitude factor carries WE normalization $1/\sqrt{3}$; perpendicular carries clean $1/6$ from cage averaging |
+| **D3′** | $b = \chi\sqrt{3}$ | $m_\perp = 1/18 \approx 0.0556$ | K3-amplitude factor enhanced by $\sqrt{3}$ geometric factor; perpendicular small $1/18$ |
+| **D4′** | $b = \chi/2$ | $m_\perp = \sqrt{3}/9 \approx 0.192$ | Random-direction projection on the K3-doublet 2-mode structure |
+
+**Numerical verification** (Session 95): all four decompositions give $b \cdot \sqrt{3} \cdot m_\perp = \chi/6 = 0.0394$ exactly, matching the empirical target.
+
+**Decomposition D2′ ($b = \chi/\sqrt{3}$, $m_\perp = 1/6$) is the cleanest in CPP-internal language**: it cleanly separates the K3-amplitude factor (with the $\sqrt{3}$ Wigner-Eckart normalization absorbed into $b$) from the perpendicular factor (with a clean $1/6 = d_E/|D_6|$ Schur-orthogonality factor from cage-shell averaging). This is the corrected analog of Session 92's Candidate C and is the **leading hypothesis** for Sessions 96+ substrate-physics derivation.
+
+### §15.7 Implications for Q5 (substrate vacuum direction)
+
+The Session 95 correction simplifies Q5 substantially. With the K3-amplitude part of $\hat{C}_\chi$ being a **uniquely determined** 1-parameter operator $T_{A_2}(b)$, the substrate vacuum direction $\hat{n}$ enters only through the **scalar magnitude** $b$ — not through a 4D directional projection.
+
+Specifically:
+- $b$ is the magnitude of the substrate orientation field's coupling to the unique $A_2$ generator on K3-amplitudes
+- $m_\perp$ is the magnitude of the substrate orientation field's perpendicular ($w$-direction) structure projected onto the $|\chi_\pm\rangle$ overlap
+
+Both quantities are **rotationally invariant scalars** under the $I_4$ residual symmetry of FI-C-9 broken vacuum. The four-decomposition ambiguity from Session 94 reduces to two structural questions:
+
+(Q9) **What is the substrate-dynamical value of $b$?** Likely related to $\chi = \phi^{-3}$ via some specific Wigner-Eckart normalization (e.g., $b = \chi/\sqrt{3}$ per D2′ working hypothesis).
+
+(Q10) **What is the substrate-dynamical value of $m_\perp$?** Likely related to cage-shell averaging via $1/V \cdot d_E = 2/12 = 1/6$ (per D2′ working hypothesis).
+
+Q5 (4D orientation of $\hat{n}$) is **moot under the corrected framework**: since both $b$ and $m_\perp$ are $I_4$-invariant scalars, the matrix element doesn't depend on the orientation of $\hat{n}$ — it depends only on the scalar magnitudes that $\hat{n}$ generates in the K3 environment.
+
+### §15.8 Findings registered Session 95
+
+- **Finding C-W21 (REGISTERED Session 95, correction)**. The Session 93 parameterization of σ_1-ODD operators on K3-amplitudes with two real parameters $(a, b)$ giving $M_{K_3} = (b-2a)/\sqrt{3}$ was **for general σ_1-ODD Hermitian operators**, which include both $E$-irrep and $A_2$-irrep components of $S_3$ (with mixed σ_1-ODD content). **For $\hat{C}_\chi$ in $B_2$ irrep of $D_6$ specifically, the K3-amplitude part must be in $A_2$ of $S_3$** (σ_1-ODD AND r-invariant), which is the unique 1-parameter family $T_{A_2}(b) = i \cdot b \cdot S$ where $S$ is the real antisymmetric matrix $[[0,1,-1],[-1,0,1],[1,-1,0]]$. The corrected K3-amplitude matrix element is $M_{K_3}^{\text{corrected}} = -i \cdot b \cdot \sqrt{3}$ (imaginary phase, magnitude $b\sqrt{3}$, with $\sqrt{3}$ in the **numerator** not the denominator).
+
+- **Finding C-W22 (REGISTERED Session 95)**. The empirical constraint $M = \chi/6$ corrected under Finding C-W21 gives $b \cdot m_\perp = \chi/(6\sqrt{3}) = \phi^{-3}/(6\sqrt{3}) \approx 0.02272$, where $m_\perp$ is the real part of the pure-imaginary perpendicular factor $M_\perp = i \cdot m_\perp$ (M_⊥ must be pure imaginary for M real, since K3-amplitude factor is pure imaginary). The four Session 94 decompositions D1-D4 update to D1′-D4′; the **leading hypothesis** is D2′ ($b = \chi/\sqrt{3}$, $m_\perp = 1/6$) which cleanly absorbs the $\sqrt{3}$ Wigner-Eckart normalization into the K3-amplitude factor and gives a clean $1/6 = d_E/|D_6|$ Schur factor in the perpendicular factor.
+
+### §15.9 Q5 resolution + forward queue update (Sessions 96+)
+
+**Q5 (substrate vacuum direction) is resolved as MOOT under the corrected framework**: the matrix element depends only on $I_4$-invariant scalars $b$ and $m_\perp$, not on the 4D orientation of $\hat{n}$.
+
+**Sessions 96+ forward queue**:
+
+1. **Sessions 96-97: Derive $b$ value from substrate-physics**. Question Q9: derive $b = \chi/\sqrt{3}$ (D2′ hypothesis) or alternative value from the substrate orientation field's projection onto the $A_2$ K3-amplitude generator. The $1/\sqrt{3}$ factor likely arises from the Wigner-Eckart normalization $\sqrt{d_E/|S_3|} = \sqrt{2/6} = \sqrt{1/3}$ that absorbs into $b$ when the substrate orientation field is identified directly with $\chi$.
+
+2. **Session 98: Derive $m_\perp$ value from cage-shell structure**. Question Q10: derive $m_\perp = 1/6$ (D2′ hypothesis) from cage-shell averaging over V=12 icosahedral cage vertices with K3-doublet 2-mode coherent contribution: $d_E/|D_6| = 2/12 = 1/6$.
+
+3. **Session 99: Validate D2′ as the correct decomposition**. Confirm via substrate-physics derivation that $b = \chi/\sqrt{3}$ and $m_\perp = 1/6$ are the structural-dynamical values, ruling out D1′, D3′, D4′.
+
+4. **Session 100: Composite Capotauro Wigner-Eckart Theorem formalization** (theorem statement + proof from Sessions 88-99 ingredients).
+
+5. **Sessions 101+: sin²θ₁₃ derivation from the full machinery.**
+
+**Revised total estimated timeline for sub-claim (c) v1.0 closure: 6-9 sessions from Session 95 baseline** (Sessions 96-100+, revised down from Session 93's 9-13 estimate because the Session 95 correction simplifies the closure path substantially — single-parameter $b$ instead of two-parameter $(a, b)$, and Q5 resolved as moot). The Session 95 framework correction is a **net acceleration** of the closure work despite being a re-do of the Session 93 calculation.
+
+**Patch 0389 makes one substantive correction at programme level** (Finding C-W21 corrects Session 93's parameterization), one corrected constraint (Finding C-W22 corrects Session 94's four-candidate analysis to D1′-D4′), and identifies D2′ as the leading hypothesis. Sessions 96+ deliver the substrate-physics derivations of $b$ and $m_\perp$.
 
 ---
