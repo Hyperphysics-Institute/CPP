@@ -4,7 +4,7 @@
 
 This document is the companion sub-derivation working sketch for sub-claim (c) of the Capotauro closure programme. It grows monotonically across Sessions 87+ as the Wigner-Eckart calculation develops. **The parent document is `Capotauro_chi_phi_closure.md`**, which defines the closure target, foundational inputs FI-C-1 through FI-C-9, and the four-Picture mechanism architecture. This sub-claim (c) sketch focuses on the **transmission factor T at theorem level**: deriving T = V/2 = 6 (the §9.6 numerical signpost target, registered as Finding C-7) from the bracelet $D_6 \to C_6$ orbit-reduction structure via standard Wigner-Eckart machinery, using Picture B as the calculational entry point per Finding C-8 Picture-by-role decomposition.
 
-**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+).
+**Maintainer:** Claude Opus 4.7 (computation + structural arguments), Thomas Lee Abshier ND (physical intuition + strategic frame + mechanism prioritization). Established Session 87 (Patch 0381, 15 May 2026). Extended Session 88 (Patch 0382, 15 May 2026) with §8 Theorem 8.1 closing sub-sub-claim (c.1a) at theorem level — the K3-doublet matrix of $\hat{C}_\chi$ is rigorously anti-diagonal in the TBM-aligned basis under FI-C-3 + FI-C-9 + Reading I; Corollary 8.2 establishes chirality eigenstates as 45° rotation of TBM-basis; Finding C-W4 registers TBM-mass-basis and chirality-basis as conjugate (non-commuting) observables in the K3-doublet space. Extended Session 89 (Patch 0383, 15 May 2026) with §9 Vγ-1 discharge (σ ∈ H₄ with det = −1 verified at full numerical rigor) + K3 stabilizer $D_6 = S_3 \times \mathbb{Z}_2$ structure (Findings C-W5, C-W6) + chirality-preserving subgroup $S_3'$ identification (Finding C-W7, corrigendum to §3.1 informal "D_6 → C_6" framing) + sub-sub-claim (c.4) framework setup with explicit derivation gap identification (Finding C-W8: $T = V/2 = 6$ remains numerical signpost not theorem; four explicit gaps c.4.G1–c.4.G4 to close in Sessions 90+). Extended Session 90 (Patch 0384, 15 May 2026) with §10 sub-sub-claim (c.4.G2) attempted closure via $D_6$ character theory — surfaces structural obstruction (Finding C-W9: K3-doublet basis requires ζ-parity assignment extension to FI-C-3 to permit non-zero matrix elements under combined σ_1 + σ_1ζ constraints) and reinterprets factor $1/2$ origin (Finding C-W10: $D_6 \to S_3'$ reduction not the structural origin; factor likely arises from K3-doublet 2-mode × cage-shell V-vertex coupling; Gaps c.4.G1 and c.4.G2 merge).
 
 ---
 
@@ -468,5 +468,125 @@ The Session 89 work tightens the sub-claim (c) closure architecture: Vγ-1 disch
 9. **Session 98+: sin²θ₁₃ derivation from the full Wigner-Eckart machinery.** Once sub-claim (c) is closed, the sin²θ₁₃ prediction follows from the $U_\text{PMNS} = U_\text{TBM} \cdot R(\epsilon(\chi))$ rotation structure (Finding C-W4 implication). v1.0+ work after sub-claim (c) closure.
 
 **Revised total estimated timeline for sub-claim (c) v1.0 closure: 6-9 sessions from Session 89 baseline.** After sub-claim (c) closure, sub-claims (a), (b), (d), (e), (f) of the parent Capotauro sketch open in parallel toward v1.0 paper drafting (an additional ~10-15 sessions per SF-4 precedent).
+
+---
+
+## §10 Session 90 work: Sub-sub-claim (c.4.G2) attempted closure — character-theoretic obstruction discovered, FI-C-3 extension required
+
+### §10.1 Session 90 deliverable as scoped
+
+Per the §9.5 forward queue, Session 90's deliverable was: "Sub-sub-claim (c.4.G2) — subgroup reduction factor structure. Compute the projection of the rank-1 axial tensor $\hat{C}_\chi$ onto the trivial irrep of the chirality-preserving subgroup $S_3'$ via $D_6$ character theory. Identify the projection coefficient at theorem level. Recommended: Pathway A (Wigner-Eckart with $D_6$ irreps)."
+
+**Outcome**: The character-theoretic analysis was performed cleanly, but the result is **not a clean closure of (c.4.G2)**. Instead, the analysis surfaces a structural obstruction that requires extending FI-C-3 with a new specification (ζ-parity assignment on K3-doublet basis states). Honest reporting below.
+
+### §10.2 $D_6$ character-theoretic analysis: $\hat{C}_\chi$ in $B_2$ irrep, restricts to $A_1$ of $S_3'$
+
+**Step 1: Identify $\hat{C}_\chi$'s $D_6$ irrep.** By Theorem 8.1 Step 1, $\hat{C}_\chi$ transforms with character $\chi(g) = \det(g)$ on each $D_6$ element. Reading off det-values on the 6 $D_6$ conjugacy classes (from Patch 0383 §9.2):
+
+| $D_6$ class | Elements | Size | det |
+|:---:|:---:|:---:|:---:|
+| $C_1$ | $\{e\}$ | 1 | $+1$ |
+| $C_2$ | $\{r, r^2\}$ | 2 | $+1$ |
+| $C_3$ | $\{\sigma_1, \sigma_2, \sigma_3\}$ | 3 | $-1$ |
+| $C_4$ | $\{\zeta\}$ | 1 | $-1$ |
+| $C_5$ | $\{r\zeta, r^2\zeta\}$ | 2 | $-1$ |
+| $C_6$ | $\{\sigma_1\zeta, \sigma_2\zeta, \sigma_3\zeta\}$ | 3 | $+1$ |
+
+$\hat{C}_\chi$ character vector: $(+1, +1, -1, -1, -1, +1)$. Numerical match against the 6 $D_6$ irreps yields the **$B_2 = $ sign$_{S_3}$ ⊗ sign$_{Z_2}$** irrep — both the $S_3$-sign component (flip under K3-plane reflections $\sigma_i$) and the $Z_2$-sign component (flip under cell-swap $\zeta$) are non-trivial.
+
+**Step 2: Restrict $B_2$ to $S_3' = \langle r, \sigma_1\zeta\rangle$.** $S_3'$ has 3 conjugacy classes (it is isomorphic to $S_3$): $\{e\}$, $\{r, r^2\}$, $\{\sigma_i\zeta\}$. Reading off $B_2$ on these (inherited from $D_6$ classes $C_1, C_2, C_6$): character $(+1, +1, +1)$ = trivial irrep $A_1$ of $S_3'$.
+
+So **$\hat{C}_\chi$ restricted to $S_3'$ transforms in the trivial irrep $A_1$** — $\hat{C}_\chi$ is $S_3'$-invariant. The projection coefficient onto the $S_3'$-trivial irrep is exactly $1$ (the entire $B_2$ irrep of $D_6$ projects onto the trivial $S_3'$ irrep when restricted), **not $1/2$ as the §3.1 informal framing assumed.**
+
+### §10.3 Constraint conflict discovery: σ_1 and σ_1ζ together force matrix to zero under uniform ζ-parity
+
+The σ_1ζ ∈ $S_3'$ element gives an additional matrix element selection rule on the K3-doublet. By unitarity:
+
+$$\langle\sigma_1\zeta\psi|\hat{C}_\chi|\sigma_1\zeta\chi\rangle = \langle\psi|(\sigma_1\zeta)^{-1}\hat{C}_\chi(\sigma_1\zeta)|\chi\rangle = +\langle\psi|\hat{C}_\chi|\chi\rangle$$
+
+(using $\sigma_1\zeta \hat{C}_\chi (\sigma_1\zeta)^{-1} = \det(\sigma_1\zeta)\hat{C}_\chi = +\hat{C}_\chi$ since $\det(\sigma_1\zeta) = (-1)(-1) = +1$).
+
+For σ_1ζ-eigenstates with parities $p_i^{\sigma_1\zeta}$, this requires $p_i^{\sigma_1\zeta} p_j^{\sigma_1\zeta} = +1$ for non-zero matrix element — the **opposite** of the Theorem 8.1 σ_1 selection rule ($p_i^{\sigma_1} p_j^{\sigma_1} = -1$).
+
+**Combining both rules** (both σ_1 and σ_1ζ are well-defined unitary operators in $H_4$, both must give simultaneous matrix element constraints):
+
+| Entry | σ_1 rule (need $-1$) | σ_1ζ rule (need $+1$) | Joint result |
+|:---:|:---:|:---:|:---:|
+| $(1,1)$ | $p_1 p_1 = +1$: **forbidden** | $+1$: allowed | **zero** |
+| $(1,2)$ | $p_1 p_2 = -1$: allowed | depends on ζ-parity | depends |
+| $(2,1)$ | $p_2 p_1 = -1$: allowed | depends on ζ-parity | depends |
+| $(2,2)$ | $p_2 p_2 = +1$: **forbidden** | $+1$: allowed | **zero** |
+
+**Case A — current FI-C-3 specification (K3-amplitudes only):** Since $\zeta = \text{diag}(1,1,1,-1)$ acts trivially on K3 vertices (all K3 vertices have $w = 0$), both basis states $|\phi_-^{(1)}\rangle, |\phi_-^{(2)}\rangle$ are **ζ-EVEN**. Then σ_1ζ-parities equal σ_1-parities: $(+1, -1)$. Off-diagonal $(1,2)$: $p_1^{\sigma_1\zeta} p_2^{\sigma_1\zeta} = -1$, **violates σ_1ζ rule**. ALL K3-doublet matrix elements are forced to zero by the combined σ_1 + σ_1ζ constraints — contradicting Theorem 8.1 (anti-diagonal with non-zero $M$) and contradicting empirical $\Delta p_{LR} \ne 0$.
+
+This is a **genuine structural obstruction**, not a calculation error. Numerical verification ran cleanly: Case A produces a 2×2 zero matrix; Case B (opposite ζ-parities) produces the anti-diagonal matrix consistent with Theorem 8.1.
+
+### §10.4 Resolution: FI-C-3 extension with ζ-parity assignment
+
+The obstruction resolves if the K3-doublet basis has **non-uniform ζ-parity** — one state ζ-EVEN, one state ζ-ODD. Specifically, the extended basis takes the form:
+
+$$|\Phi_-^{(1)}\rangle = |\phi_-^{(1)}\rangle \otimes |\chi_+\rangle, \qquad |\Phi_-^{(2)}\rangle = |\phi_-^{(2)}\rangle \otimes |\chi_-\rangle$$
+
+where $|\phi_-^{(i)}\rangle$ are the K3-amplitude TBM-aligned basis states (FI-C-3 as currently formulated) and $|\chi_\pm\rangle$ are **perpendicular-direction wavefunctions** with definite ζ-parity: $\zeta|\chi_+\rangle = +|\chi_+\rangle$ (even in $w$), $\zeta|\chi_-\rangle = -|\chi_-\rangle$ (odd in $w$).
+
+Under this extension:
+- σ_1-parities: $(+1, -1)$ (unchanged — σ_1 doesn't touch the perpendicular direction)
+- ζ-parities: $(+1, -1)$ (new — from the $|\chi_\pm\rangle$ assignment)
+- σ_1ζ-parities: $((+1)(+1), (-1)(-1)) = (+1, +1)$ — **both states σ_1ζ-EVEN**
+
+With σ_1ζ-parities both $+1$, the σ_1ζ rule ($p_i^{\sigma_1\zeta} p_j^{\sigma_1\zeta} = +1$) is trivially satisfied for ALL entries. The σ_1 rule (Theorem 8.1) still forbids diagonal entries. Combined: matrix is **anti-diagonal**, consistent with Theorem 8.1 and $\Delta p_{LR} \ne 0$.
+
+**Physical interpretation**: The K3-doublet has 2 modes with **opposite cell-swap symmetries**. One mode is symmetric across the K3 plane (the $w = 0$ hyperplane); the other is antisymmetric. The chirality observable couples these two modes (off-diagonal matrix element) precisely because they have opposite ζ-parities, and the chirality operator inserts a sign-flip under cell-swap (the σ_1ζ component).
+
+### §10.5 Implications for FI-C-3 extension and (c.4.G2) target
+
+**FI-C-3 needs extension.** The current SF-4 v4.0 Composite K3-Cage-Shell Coupling Theorem (origin of FI-C-3) specifies the K3-doublet basis only via K3-vertex amplitudes. This is sufficient for SF-4 (where neutrino masses don't probe ζ-parity), but **insufficient for the Capotauro derivation**, which requires ζ-parity assignment to permit non-zero K3-doublet chirality matrix elements.
+
+**Proposed FI-C-3 extension** (registered for Session 91+ formalization):
+
+> *FI-C-3 (extended).* In addition to the K3-amplitude TBM-aligned basis $|\phi_-^{(i)}\rangle$ inherited from SF-4 v4.0, the K3-doublet basis used for substrate-orientation-coupling calculations carries a definite ζ-parity assignment in the perpendicular ($w$) direction: $|\Phi_-^{(1)}\rangle$ is ζ-EVEN, $|\Phi_-^{(2)}\rangle$ is ζ-ODD. The perpendicular-direction wavefunctions $|\chi_\pm\rangle$ are determined by the substrate orientation field's broken-ℤ₂ structure at the K3 location.
+
+This extension is **consistent with** SF-4 v4.0 (it doesn't preclude any SF-4 result; it adds a structural specification that SF-4 didn't need to make). It is **required for** the Capotauro derivation to be self-consistent.
+
+**Implication for (c.4.G2) target**: The Patch 0383 framing assumed the factor of $1/2$ in $T = V/2$ comes from the $D_6 \to S_3'$ subgroup reduction. The Session 90 analysis shows this is **not the structural origin**:
+
+- The character theory says $\hat{C}_\chi$ restricts to the trivial $A_1$ irrep of $S_3'$ with projection coefficient $1$, not $1/2$
+- The $D_6 \to S_3'$ reduction is *consistent with* (after the ζ-parity extension) the K3-doublet matrix element being non-zero, but doesn't directly *determine* the factor $1/2$ at theorem level
+
+The factor $1/2$ likely arises from a different structural origin:
+
+- The K3-doublet has 2 modes (with opposite ζ-parities per Finding C-W9), and the chirality observable couples them as an off-diagonal element. The factor of 2 may be the **K3-doublet mode count**, not the bracelet $D_6 \to S_3'$ index
+- The icosahedral cage V=12 vertex coupling combines with the 2-mode structure to give $V/2$ averaging
+- This reinterpretation **merges Gaps (c.4.G1) and (c.4.G2)** into a single combined gap on K3-doublet 2-mode × cage-shell V-vertex coupling
+
+### §10.6 Findings registered Session 90
+
+- **Finding C-W9 (REGISTERED Session 90)**. The K3-doublet basis must be extended beyond pure K3-vertex amplitude structure to include perpendicular-direction wavefunction with **non-uniform ζ-parity assignment**: $|\Phi_-^{(1)}\rangle$ ζ-EVEN, $|\Phi_-^{(2)}\rangle$ ζ-ODD. Without this extension, the combined σ_1 + σ_1ζ symmetry constraints force all K3-doublet chirality matrix elements to zero. FI-C-3 (inherited from SF-4 v4.0) needs explicit extension; SF-4 v4.0 results remain unchanged (the extension is consistent with SF-4's derivation, since neutrino masses don't probe ζ-parity), but the Capotauro derivation depends on the extended specification. The physical interpretation: the K3-doublet has 2 modes with opposite cell-swap symmetries — one symmetric across the K3 plane ($w = 0$ hyperplane), the other antisymmetric.
+
+- **Finding C-W10 (REGISTERED Session 90)**. The structural origin of the factor of $1/2$ in $T = V/2$ is **not** the bracelet $D_6 \to S_3'$ subgroup reduction (as the §3.1 / Patch 0383 framing suggested). The character-theoretic analysis shows $\hat{C}_\chi$ restricts to the trivial $A_1$ irrep of $S_3'$ with projection coefficient $1$, not $1/2$. The $D_6 \to S_3'$ reduction doesn't directly suppress the K3-doublet matrix element. The factor $1/2$ likely arises from the **K3-doublet 2-mode structure** (with opposite ζ-parities per Finding C-W9), combined with V-vertex cage averaging from the icosahedral first-shell. This reinterpretation **merges Gap (c.4.G1) and Gap (c.4.G2)** into a single combined gap on K3-doublet 2-mode × cage-shell V-vertex coupling.
+
+### §10.7 Updated forward queue (Sessions 91+)
+
+Substantial restructuring of the forward queue based on Session 90 findings:
+
+1. **Session 91: FI-C-3 extension formalization.** Derive the perpendicular-direction wavefunctions $|\chi_\pm\rangle$ from CPP primitives (substrate orientation field structure at the K3 location). Verify consistency with SF-4 v4.0 Composite Theorem. Update FI-C-3 statement at programme level. **High priority — this is the load-bearing structural extension.**
+
+2. **Sessions 92-93: Combined Gap (c.4.G1+G2) closure** — K3-doublet 2-mode × icosahedral cage V=12 averaging factor derivation. Compute the off-diagonal matrix element $M$ from CPP primitives using extended FI-C-3 + FI-C-6 cage-shell coupling + FI-C-9 substrate vacuum. Target: $M = \phi^{-3}/6$ or equivalent closed form. Structural argument for $T = V/2 = 6$ from 2-mode × V-vertex structure, NOT from bracelet $D_6 \to S_3'$ reduction.
+
+3. **Session 94: Gap (c.4.G3) suppression-vs-amplification resolution.** Verify the cage averaging structure (extended FI-C-3 + FI-C-6) produces suppression rather than amplification. Should follow from Session 92-93 work.
+
+4. **Session 95: Gap (c.4.G4) closed-form identity for $T$.** Determine whether $T = V/2 = 6$ is exact or near-coincident; identify the closed-form structural identity.
+
+5. **Session 96: Sub-sub-claim (c.3) Wigner-Eckart Clebsch-Gordan factorization** (standard textbook given closed (c.4)).
+
+6. **Session 97: Sub-sub-claim (c.2) K3-doublet basis verification** (largely complete via Theorem 8.1 + Finding C-W9 extension).
+
+7. **Session 98: Composite Capotauro Wigner-Eckart Theorem formalization.**
+
+8. **Session 99+: sin²θ₁₃ derivation from full machinery via $U_{\text{PMNS}} = U_{\text{TBM}} \cdot R(\epsilon(\chi))$ rotation structure** (Finding C-W4 implication, refined by C-W9 extension).
+
+**Revised total estimated timeline for sub-claim (c) v1.0 closure: 8-12 sessions from Session 90 baseline** (Sessions 91-98+, revised upward from Session 89's 6-9 estimate due to FI-C-3 extension and Gap merger surfaced in Session 90). The honest framing: Session 90 has uncovered a substantive structural requirement (FI-C-3 extension) that increases the load-bearing work but ultimately strengthens the v1.0 closure architecture.
+
+**Patch 0384 makes no theorem-level claims at programme level** — it surfaces a structural extension requirement (Finding C-W9) and reinterprets the origin of the factor $1/2$ in $T = V/2$ (Finding C-W10). Sessions 91+ deliver the FI-C-3 extension and the actual structural derivation of $T$.
 
 ---
