@@ -75,7 +75,7 @@ All v4.x closures are conditional theorem closures within the current CPP theore
 ## What's open
 
 ### δ_CP derivation (route ii)
-**Status: deferred to SF-2 EW flagship.** The δ_CP CP-violating phase is the 8th of the 8 active-flavor neutrino-sector observable parameters. Per SF-4's route (ii) framing, δ_CP closure is the EW-sector responsibility, inherited as open from OP-SM-7d (Capotauro mechanism). Current SF-4 prediction count: 7/8 zero-parameter; closure to 8/8 depends on SF-2 closure of OP-SM-7d.
+**Status: deferred to SF-2 EW flagship.** The δ_CP CP-violating phase is the 8th of the 8 active-flavor neutrino-sector observable parameters. Per SF-4's route (ii) framing, δ_CP closure is the EW-sector responsibility, inherited as open from OPEN-SM-4 (Capotauro mechanism). Current SF-4 prediction count: 7/8 zero-parameter; closure to 8/8 depends on SF-2 closure of OPEN-SM-4.
 
 **Candidate cross-sector closure pair**: SF-2 ↔ SM-5 OP-SM-4 (Capotauro mechanism for δ_CP). Following Finding β-10 methodology, the next cross-sector closure in CPP would close δ_CP in SF-2 simultaneously with OP-SM-4 in SM-5.
 
@@ -103,7 +103,7 @@ This compiles the v4.3 PDF locally on ClearPC and commits it as a follow-up to p
 
 (B) **TATWD integration to CPP_the_theory.md at v4.3**. The cross-sector closure narrative + the conditional-closure framework + the SF-line's progression from v1.0 partial-closure flagship to v4.3 conditional-theorem-closure SHIP-ready state are all worth integrating into the master TATWD narrative. Estimated effort: 1-2 sessions.
 
-(C) **SF-2 EW flagship campaign launch**. The δ_CP derivation via OP-SM-7d Capotauro mechanism is the next major flagship-paper campaign, and the candidate for a second cross-sector closure in CPP (SF-2 ↔ SM-5 OP-SM-4). Estimated effort: 8-15 sessions for v1.0 SHIP, plus 3-4 ChatGPT review cycles per the SF-4 trajectory pattern.
+(C) **SF-2 EW flagship campaign launch**. The δ_CP derivation via OPEN-SM-4 Capotauro mechanism is the next major flagship-paper campaign, and the candidate for a second cross-sector closure in CPP (SF-2 ↔ SM-5 OP-SM-4). Estimated effort: 8-15 sessions for v1.0 SHIP, plus 3-4 ChatGPT review cycles per the SF-4 trajectory pattern.
 
 (D) **Public posting (Zenodo + arXiv) at Thomas's discretion**. v4.3 is SHIP-ready per ChatGPT verdict (a); the only remaining task is Thomas's decision on when to deposit. Recommend after SF-2 ships so the SF-line lands as a unified set rather than piecemeal.
 

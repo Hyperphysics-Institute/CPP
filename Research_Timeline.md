@@ -25,15 +25,15 @@
 
 *Papers approved to launch, in priority order. The top of this list is the next campaign that begins when Thomas authorizes.*
 
-### Priority 1 — Capotauro dedicated paper (δ_CP via OP-SM-7d; candidate second cross-sector closure)
+### Priority 1 — Capotauro dedicated paper (δ_CP via OPEN-SM-4; candidate second cross-sector closure)
 
-**Scope**: Theorem-level closure of OP-SM-7d (the Capotauro mechanism for the CP-violating phase δ_CP of the PMNS matrix). Methodologically templated on SF-4 v4.0's Composite K3-Cage-Shell Coupling Theorem (Finding β-10): a single derivation chain potentially closes OP-SM-7d *and* OPEN-FP-SF-2-CHIR (V-A chirality emergence in W bracelet) jointly, which would be the **second cross-sector closure in CPP**.
+**Scope**: Theorem-level closure of OPEN-SM-4 (the Capotauro mechanism for the CP-violating phase δ_CP of the PMNS matrix). Methodologically templated on SF-4 v4.0's Composite K3-Cage-Shell Coupling Theorem (Finding β-10): a single derivation chain potentially closes OPEN-SM-4 *and* OPEN-FP-SF-2-CHIR (V-A chirality emergence in W bracelet) jointly, which would be the **second cross-sector closure in CPP**.
 
-**Frontier refs**: OP-SM-7d (SM-5/SM-7 corpus) ↔ OPEN-FP-SF-2-CHIR (SF-2)
+**Frontier refs**: OPEN-SM-4 (SM-5/SM-7 corpus) ↔ OPEN-FP-SF-2-CHIR (SF-2)
 
 **PD-004 layer**: Layer 3 (discrete substrate phenomenology) with potential Layer 4 hooks
 
-**Dependencies**: SF-2 v1.0+ SHIPPED (✓), SF-4 v4.0 cross-sector closure template (✓), SM-5 antibonding-doublet OP-SM-7d registration (✓ in SM-5 corpus)
+**Dependencies**: SF-2 v1.0+ SHIPPED (✓), SF-4 v4.0 cross-sector closure template (✓), SM-5 antibonding-doublet OPEN-SM-4 registration (✓ in SM-5 corpus)
 
 **Inheritances**: SF-2 PROP-SF-2-5 V-A structural preference framework; SF-4 v4.0 Composite Theorem methodology pattern; SM-7d Capotauro mechanism registration
 

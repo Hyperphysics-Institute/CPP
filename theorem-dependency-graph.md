@@ -69,7 +69,7 @@ Sources: SF-4 (Neutrino Sector Unification from 600-Cell Geometry), v4.3 SHIP-re
 
 Sources: EW-1 through EW-5 (electroweak sector theorems on the W/Z boson cage-binding structure, the Weinberg angle from substrate geometry, parity-violation mechanism, gauge-boson masses from the icosahedral first shell).
 
-**THEO-EW-1 through THEO-EW-8**: Depend on AXIM-1, AXIM-2, AXIM-4, AXIM-7 + 600-cell first-shell (icosahedral) geometry. Downstream: provides cage-boson identification for W$^\pm$ (icosahedral shell, V=12) and Z (dodecahedral shell). Note that THEO-EW-1 through THEO-EW-8 are paper-level theorems within the EW-line; their specific dependencies and the OP-SM-7d open problem (Capotauro mechanism for $\delta_{CP}$ and TBM-angle corrections) are registered in `theorem-registry.md`. The OP-SM-7d closure is a candidate for the next cross-sector closure in CPP (SF-2 EW flagship ↔ SM-5 OP-SM-4).
+**THEO-EW-1 through THEO-EW-8**: Depend on AXIM-1, AXIM-2, AXIM-4, AXIM-7 + 600-cell first-shell (icosahedral) geometry. Downstream: provides cage-boson identification for W$^\pm$ (icosahedral shell, V=12) and Z (dodecahedral shell). Note that THEO-EW-1 through THEO-EW-8 are paper-level theorems within the EW-line; their specific dependencies and the OPEN-SM-4 open problem (Capotauro mechanism for $\delta_{CP}$ and TBM-angle corrections) are registered in `theorem-registry.md`. The OPEN-SM-4 closure is a candidate for the next cross-sector closure in CPP (SF-2 EW flagship ↔ SM-5 OPEN-SM-4).
 
 ## QM-line (Quantum Mechanics)
 

@@ -20,7 +20,7 @@ This document is paired with Patch 0367's W⁰ neutrino scattering centroid-deco
 
 ### §1.1 Programme-level labeling housekeeping note
 
-The recent SF-line documentation (Sessions 67–83 SF-4 v3.0/v4.0 and SF-2 v1.0 patches) consistently refers to the cross-sector closure target as "**OP-SM-7d** Capotauro mechanism." `Research_Frontier.md` registry however lists:
+The recent SF-line documentation (Sessions 67–83 SF-4 v3.0/v4.0 and SF-2 v1.0 patches) consistently refers to the cross-sector closure target as "**OPEN-SM-4** Capotauro mechanism." `Research_Frontier.md` registry however lists:
 
 - **OPEN-SM-4: Formalise the Capotauro Mechanism** (Status OPEN, Priority HIGH, last updated 23 March 2026) — "Derive the lattice chirality-activation event that establishes χ ≈ φ⁻¹ and produces CP violation." This is the Capotauro mechanism entry. Its `What a solution looks like` field specifies: "Symmetry breaking [600-cell] × ℤ₂ → [600-cell]; derive χ = φ⁻¹; reproduce δ_CP ≈ 195°, sin²θ₁₃ ≈ 0.022, and baryon asymmetry."
 - **OPEN-SM-7d: Derive the Koide Phase θ** — a different problem in the lepton-mass sector (charged-lepton Koide phase θ ≈ 132.73°), tied to OPEN-SM-7 (K=2/3) closure and the lepton series.

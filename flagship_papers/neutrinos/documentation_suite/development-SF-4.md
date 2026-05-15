@@ -90,7 +90,7 @@ Outline document established: `sf-4_outline.md`. 12-section structure:
 - §5 K3-Cage-Shell Consistency Theorem (OPEN-FP-SF-4-2)
 - §6 Predictions Summary
 - §7 $\delta_{CP}$ Posture (Route ii)
-- §8 Higher-Order Corrections (OP-SM-7d Inheritance)
+- §8 Higher-Order Corrections (OPEN-SM-4 Inheritance)
 - §9 Cumulative Falsifier
 - §10 Open Theorem-Level Work
 - §11 Discussion
@@ -301,7 +301,7 @@ ChatGPT v4.1 review verdict: (b) "v1.0 SHIP-ready after the following 4 specific
 
 ### Vignette 24 — Session 77: v4.3 ChatGPT v4.2 review incorporation (patch 0338); ChatGPT verdict (a) ACHIEVED
 
-ChatGPT v4.2 review verdict: (b) "v1.0 SHIP-ready after the following 3 specific fixes". Three residual stale-text spots in §1.3/§1.4/§1.5 that survived the v4.0/v4.1/v4.2 cleanup waves: (1) §1.3 "Inherits as open" bullet still listed SM-5's K3-eigenmode-identification ansatz — but that's now resolved cross-sector at v4.0; (2) §1.4 K3-Cage-Shell deliverable still said "at SM-5-inheritance level" with "SM-5-ansatzed TBM-direction selection" — pre-v4.0 language; (3) §1.5 "full RESOLUTION" wording for OPEN-FP-SF-4-1 (v3.0) and OPEN-FP-SF-4-2 (v4.0) conflicted with the new global conditional-closure remark. v4.3 incorporated all three: §1.3 bullet split into (a) op:nu_id conditionally resolved at v4.0 + (b) OP-SM-7d still legitimately inherits-as-open; §1.4 deliverable updated to "Composite Theorem at conditional theorem-closure level"; §1.5 "full RESOLUTION" → "conditional theorem-level resolution" with explicit cross-references to rem:conditional_closure. Specs: 2503 lines source (+61). **ChatGPT v4.3 review verdict: (a) "v1.0 SHIP-ready, no further substantive edits required."** SF-4 v4.3 is SHIP-ready as a conditional theorem closure paper.
+ChatGPT v4.2 review verdict: (b) "v1.0 SHIP-ready after the following 3 specific fixes". Three residual stale-text spots in §1.3/§1.4/§1.5 that survived the v4.0/v4.1/v4.2 cleanup waves: (1) §1.3 "Inherits as open" bullet still listed SM-5's K3-eigenmode-identification ansatz — but that's now resolved cross-sector at v4.0; (2) §1.4 K3-Cage-Shell deliverable still said "at SM-5-inheritance level" with "SM-5-ansatzed TBM-direction selection" — pre-v4.0 language; (3) §1.5 "full RESOLUTION" wording for OPEN-FP-SF-4-1 (v3.0) and OPEN-FP-SF-4-2 (v4.0) conflicted with the new global conditional-closure remark. v4.3 incorporated all three: §1.3 bullet split into (a) op:nu_id conditionally resolved at v4.0 + (b) OPEN-SM-4 still legitimately inherits-as-open; §1.4 deliverable updated to "Composite Theorem at conditional theorem-closure level"; §1.5 "full RESOLUTION" → "conditional theorem-level resolution" with explicit cross-references to rem:conditional_closure. Specs: 2503 lines source (+61). **ChatGPT v4.3 review verdict: (a) "v1.0 SHIP-ready, no further substantive edits required."** SF-4 v4.3 is SHIP-ready as a conditional theorem closure paper.
 
 ### Vignette 25 — Sessions 78-79: programme-level closeout (patches 0339-0340)
 

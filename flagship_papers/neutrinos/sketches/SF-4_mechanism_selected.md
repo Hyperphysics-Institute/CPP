@@ -112,13 +112,13 @@ The first two are the substantive Session 40+ work. The third is part of the int
 
 ## §3. $\delta_{CP}$ posture: route (ii) — register as open
 
-Selection: **route (ii)** per audit §7. SF-4 makes seven of the eight neutrino predictions; $\delta_{CP}$ is explicitly deferred to a later EW-sector derivation, following SM-5's existing posture of registering $\delta_{CP}$ as requiring the EW sector via OP-SM-7d.
+Selection: **route (ii)** per audit §7. SF-4 makes seven of the eight neutrino predictions; $\delta_{CP}$ is explicitly deferred to a later EW-sector derivation, following SM-5's existing posture of registering $\delta_{CP}$ as requiring the EW sector via OPEN-SM-4.
 
 Rationale: route (i) (derive $\delta_{CP}$ from CPP primitives) is high-value if it lands quickly, but the audit's speed test for route (i) is "1–2 sessions of investigation," and the four candidate handles (cage-orientation angle, Capotauro bias in current formalism, K3-eigenstate phase structure, substrate chirality) are each multi-session derivations of their own. Taking on a multi-session $\delta_{CP}$ campaign inside SF-4 amounts to running a second flagship-class derivation in parallel with the primary mass-mechanism work; the timeline math doesn't support that alongside the suppression-factor and K3-consistency sub-problems already opened.
 
 Route (ii) keeps SF-4 contained without losing rigor. A 7/8-zero-parameter derivation is still vastly stronger than any other framework can claim; SF-4's headline reads honestly. The eventual route-(i) work has its proper home in the EW sector or in SF-5 (the unification synthesis), where the EW-sector machinery for CP-violating phases lives by physics. Double-claiming the same physics as both open in SM-5 and derived in SF-4 would be bookkeeping confusion; route (ii) keeps the open-problem registration with its appropriate paper.
 
-The SF-4 paper text will explicitly state: $\delta_{CP}$ is consistent with current measurements ($\sim 195°$ central with $3\sigma$ range $108°$–$404°$) and is registered as requiring EW-sector derivation via OP-SM-7d.
+The SF-4 paper text will explicitly state: $\delta_{CP}$ is consistent with current measurements ($\sim 195°$ central with $3\sigma$ range $108°$–$404°$) and is registered as requiring EW-sector derivation via OPEN-SM-4.
 
 ---
 
@@ -132,7 +132,7 @@ The form of that derivation — call it the **K3-Cage-Shell Consistency Theorem*
 
 This theorem is registered as **OPEN-FP-SF-4-2** (see §8.2). It is the second-priority sub-problem for Sessions 40+, after the suppression-mechanism work (OPEN-FP-SF-4-1). Without it, SF-4 cannot claim to preserve SM-5's PMNS derivation rather than replace it.
 
-For the higher-order corrections (the $\sim 10\%$ deviations from TBM that produce the observed $\sin^2\theta_{12} = 0.304$, $\sin^2\theta_{23} = 0.570$, $\sin^2\theta_{13} = 0.0224$), the strategy is numerical verification within the Candidate C framework plus register-as-conditional in the paper, mirroring SM-5's existing handling. Higher-order full derivation is OP-SM-4 (Capotauro mechanism) and OP-SM-7d territory and not in SF-4 scope.
+For the higher-order corrections (the $\sim 10\%$ deviations from TBM that produce the observed $\sin^2\theta_{12} = 0.304$, $\sin^2\theta_{23} = 0.570$, $\sin^2\theta_{13} = 0.0224$), the strategy is numerical verification within the Candidate C framework plus register-as-conditional in the paper, mirroring SM-5's existing handling. Higher-order full derivation is OP-SM-4 (Capotauro mechanism) and OPEN-SM-4 territory and not in SF-4 scope.
 
 ---
 

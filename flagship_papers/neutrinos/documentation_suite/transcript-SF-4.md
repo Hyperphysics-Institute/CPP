@@ -337,7 +337,7 @@ This session lands the programme-level registration of v2.0 SHIP: Research_Front
 ### Session 80+: Forward queue (not yet executed)
 - **Patch 0341+** (Session 80): Four-tier documentation suite catch-up — handover-SF-4.md rewrite to Session 79 close + development-SF-4.md vignettes 18-25 + transcript-SF-4.md entries Sessions 55-79 + reasoning-SF-4.md pointer section. (THIS PATCH.)
 - TATWD integration to CPP_the_theory.md at v4.3.
-- SF-2 EW flagship campaign launch (δ_CP via OP-SM-7d Capotauro; candidate for second cross-sector closure in CPP).
+- SF-2 EW flagship campaign launch (δ_CP via OPEN-SM-4 Capotauro; candidate for second cross-sector closure in CPP).
 - Public posting v4.3 (Zenodo + arXiv) at Thomas's discretion.
 - ClearPC recompile of v4.3 PDF via cpp-recompile-pdf.sh (separate Thomas-side commit).
 

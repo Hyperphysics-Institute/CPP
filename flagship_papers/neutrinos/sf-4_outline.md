@@ -19,7 +19,7 @@ By Session 43 close, SF-4's two substantive sub-derivations are at PARTIAL CLOSU
 
 **Why this paper, why now:**
 - The neutrino sector is the most active and most cited area of beyond-Standard-Model physics. JUNO 2026+ resolution of mass ordering is a near-term named falsifier that any candidate flagship-class derivation should engage.
-- CPP via Sessions 37–43 has produced 7 of 8 zero-parameter neutrino predictions (3 masses + 3 mixing angles + hierarchy ordering); the 8th ($\delta_{CP}$) is registered-as-open via SM-5 OP-SM-7d inheritance.
+- CPP via Sessions 37–43 has produced 7 of 8 zero-parameter neutrino predictions (3 masses + 3 mixing angles + hierarchy ordering); the 8th ($\delta_{CP}$) is registered-as-open via SM-5 OPEN-SM-4 inheritance.
 - SF-4 is the SF-line's strongest single test of the 12-fermion-mass-from-1-calibration headline because it covers the most extreme corner of the mass spectrum (12 orders of magnitude below the top quark) using the same calibration.
 - A successful landing creates the precedent and template for SF-1, SF-3, SF-5, SF-6 — the SF-4 work has by far the most novel-derivation content; SF-1/SF-3 are reframings, SF-5/SF-6 are syntheses.
 
@@ -27,7 +27,7 @@ By Session 43 close, SF-4's two substantive sub-derivations are at PARTIAL CLOSU
 
 ## Headline claim (draft v0.1 — refine before §0 abstract drafting)
 
-> **CPP derives the neutrino sector's eight observable parameters** — three masses, three mixing angles, mass-squared ordering, and CP phase — **from a single calibration ($m_e$) plus 600-cell substrate geometry**, with seven of the eight parameters at zero free parameters. The neutrino mass formula $m_{\nu_i} = M_0 \cdot V_{\nu_i}^2 \cdot \sigma_\nu$ uses the same mass quantum $M_0 = m_e \cdot z/\phi$ that anchors the quark and charged-lepton sectors; the cage-shell vertex counts $V \in \{4, 12, 30\}$ are forced by 600-cell topology; the suppression factor $\sigma_\nu = z^{-10} \approx 1.62 \times 10^{-11}$ derives from substrate walk-dimension primitives and matches the empirical absolute scale to 2%. The mass-squared splitting predictions $m_2/m_1 = 9.00$ and $m_3/m_1 = 56.25$ match observation to 4% and 11% with no fitted parameters. The PMNS matrix at zeroth order is exactly U_TBM (inherited from SM-5's K3 Spectral Theorem); the cage-shell mechanism preserves K3-eigenstate alignment by construction once the mass-basis reading is adopted. Normal mass hierarchy is forced by the (tetrahedron, icosahedron, icosidodecahedron) cage-shell assignment; JUNO 2026+ resolution provides a near-term falsifier. CP phase $\delta_{CP}$ is registered as open per SM-5 OP-SM-7d, deferred to the EW-sector flagship.
+> **CPP derives the neutrino sector's eight observable parameters** — three masses, three mixing angles, mass-squared ordering, and CP phase — **from a single calibration ($m_e$) plus 600-cell substrate geometry**, with seven of the eight parameters at zero free parameters. The neutrino mass formula $m_{\nu_i} = M_0 \cdot V_{\nu_i}^2 \cdot \sigma_\nu$ uses the same mass quantum $M_0 = m_e \cdot z/\phi$ that anchors the quark and charged-lepton sectors; the cage-shell vertex counts $V \in \{4, 12, 30\}$ are forced by 600-cell topology; the suppression factor $\sigma_\nu = z^{-10} \approx 1.62 \times 10^{-11}$ derives from substrate walk-dimension primitives and matches the empirical absolute scale to 2%. The mass-squared splitting predictions $m_2/m_1 = 9.00$ and $m_3/m_1 = 56.25$ match observation to 4% and 11% with no fitted parameters. The PMNS matrix at zeroth order is exactly U_TBM (inherited from SM-5's K3 Spectral Theorem); the cage-shell mechanism preserves K3-eigenstate alignment by construction once the mass-basis reading is adopted. Normal mass hierarchy is forced by the (tetrahedron, icosahedron, icosidodecahedron) cage-shell assignment; JUNO 2026+ resolution provides a near-term falsifier. CP phase $\delta_{CP}$ is registered as open per SM-5 OPEN-SM-4, deferred to the EW-sector flagship.
 
 **Single most striking number for abstract:** the absolute neutrino mass scale at $m_{\nu_e} = 0.98$ meV from $\sigma = z^{-10}$ with zero free parameters, **eleven orders of magnitude below the bare $M_0 \cdot V_{\nu_e}^2 = 60.6$ MeV scale**. Or alternatively the matching summary: $\Sigma m_\nu = 64.9$ meV vs cosmological bound $\le 72$ meV (DESI/Planck combined).
 
@@ -43,7 +43,7 @@ The paper makes specific zero-parameter quantitative predictions; the framework 
 
 **3. Cosmological $\Sigma m_\nu$ above bound.** SF-4 predicts $\Sigma m_\nu \approx 64.9$ meV. Current DESI + Planck combined bound is $\Sigma m_\nu \le 72$ meV; tightening this to $\Sigma m_\nu \le 50$ meV would falsify SF-4's prediction.
 
-**4. PMNS deviation from TBM at zeroth order.** SF-4 inherits SM-5's TBM result at zeroth order. If precision PMNS measurement (DUNE, Hyper-K, JUNO) shows zeroth-order angles materially different from $\sin^2\theta_{12} = 1/3$, $\sin^2\theta_{23} = 1/2$, $\sin^2\theta_{13} = 0$ once SM-5's higher-order corrections (OP-SM-7d Capotauro mechanism) are accounted for, the K3-eigenmode-identification ansatz that SM-5 inherits and SF-4 carries forward is in tension.
+**4. PMNS deviation from TBM at zeroth order.** SF-4 inherits SM-5's TBM result at zeroth order. If precision PMNS measurement (DUNE, Hyper-K, JUNO) shows zeroth-order angles materially different from $\sin^2\theta_{12} = 1/3$, $\sin^2\theta_{23} = 1/2$, $\sin^2\theta_{13} = 0$ once SM-5's higher-order corrections (OPEN-SM-4 Capotauro mechanism) are accounted for, the K3-eigenmode-identification ansatz that SM-5 inherits and SF-4 carries forward is in tension.
 
 **5. Substrate-mechanism deviation.** SF-4 predicts the absolute mass scale at $\sigma = z^{-10}$ where $z = 12$ is the 600-cell coordination number. If precision data force $\sigma$ to a value not expressible as $z^{-2 d_{\text{eff}}}$ for any small integer $d_{\text{eff}}$, the substrate walk-dimension framework is in tension and the suppression mechanism would need re-derivation.
 
@@ -175,15 +175,15 @@ Master predictions table:
 | Mass ordering | Normal (forced) | Unresolved (JUNO 2026+) | falsifier | §3 cage-shell assignment |
 | $\delta_{CP}$ | Open | $\sim 195°$ ± 100° | deferred to SF-2 | §7 route (ii) |
 
-7 of 8 zero-parameter predictions; $\delta_{CP}$ deferred. Higher-order corrections to the mixing angles inherited from SM-5 OP-SM-7d Capotauro mechanism (see §8).
+7 of 8 zero-parameter predictions; $\delta_{CP}$ deferred. Higher-order corrections to the mixing angles inherited from SM-5 OPEN-SM-4 Capotauro mechanism (see §8).
 
 ### §7 $\delta_{CP}$ posture (route ii)
 
-Brief; defers to SM-5 OP-SM-7d existing registration. Justification per `SF-4_mechanism_selected.md` §3: route (i) deriving $\delta_{CP}$ from CPP primitives is multi-session second campaign; route (ii) keeps SF-4 contained at 7/8 zero-parameter predictions while preserving SM-5's existing open-problem registration. The eventual route-(i) work has its proper home in the EW-sector flagship (SF-2) or in SF-7 unification synthesis. Discussion of the four candidate handles (cage-orientation, Capotauro bias, K3 phase, substrate chirality) and why each is multi-session work.
+Brief; defers to SM-5 OPEN-SM-4 existing registration. Justification per `SF-4_mechanism_selected.md` §3: route (i) deriving $\delta_{CP}$ from CPP primitives is multi-session second campaign; route (ii) keeps SF-4 contained at 7/8 zero-parameter predictions while preserving SM-5's existing open-problem registration. The eventual route-(i) work has its proper home in the EW-sector flagship (SF-2) or in SF-7 unification synthesis. Discussion of the four candidate handles (cage-orientation, Capotauro bias, K3 phase, substrate chirality) and why each is multi-session work.
 
-### §8 Higher-order corrections (SM-5 OP-SM-7d inheritance)
+### §8 Higher-order corrections (SM-5 OPEN-SM-4 inheritance)
 
-The observed PMNS angles deviate from TBM by ~10% in $\theta_{12}$ and $\theta_{23}$, and $\sin^2\theta_{13} = 0.0224$ is non-zero against TBM's 0. SM-5's existing treatment via OP-SM-7d (Capotauro mechanism in EW sector) accounts for these. SF-4 inherits the same treatment: register higher-order corrections as conditional on EW-sector closure of OP-SM-7d, do not derive them in SF-4 scope. Brief restatement of the OP-SM-7d framing for the neutrino specialist reader who may not have read SM-5 directly.
+The observed PMNS angles deviate from TBM by ~10% in $\theta_{12}$ and $\theta_{23}$, and $\sin^2\theta_{13} = 0.0224$ is non-zero against TBM's 0. SM-5's existing treatment via OPEN-SM-4 (Capotauro mechanism in EW sector) accounts for these. SF-4 inherits the same treatment: register higher-order corrections as conditional on EW-sector closure of OPEN-SM-4, do not derive them in SF-4 scope. Brief restatement of the OPEN-SM-4 framing for the neutrino specialist reader who may not have read SM-5 directly.
 
 ### §9 Cumulative falsifier
 
@@ -192,7 +192,7 @@ Restates §1's strategic falsifiers in paper-context form:
 1. JUNO 2026+ inverted hierarchy → SF-4 dead (§3 forced)
 2. Direct $m_{\nu_e}$ measurement > 5 meV → SF-4 dead (§4 prediction)
 3. Cosmological tightening to $\Sigma m_\nu < 50$ meV → SF-4 in tension
-4. Precision PMNS deviation from TBM at zeroth order (after OP-SM-7d corrections) → SM-5 ansatz in tension, SF-4 carries with it
+4. Precision PMNS deviation from TBM at zeroth order (after OPEN-SM-4 corrections) → SM-5 ansatz in tension, SF-4 carries with it
 5. Substrate-mechanism deviation from $\sigma = z^{-10}$ form → walk-dimension framework in tension
 
 Discussion of the falsifier hierarchy: items 1–3 are direct SF-4 falsifiers; items 4–5 are framework-level falsifiers that propagate through SF-4 and other SF-line papers.
@@ -214,7 +214,7 @@ Honest catalog of what SF-4 v1.0 does not establish:
 Three flagship-class derivations across the SF-line corpus all show the same pattern: SS-7 (twelve N=Z nuclei to 1.5% RMS at zero parameters), SM-9 (top quark to 0.02% with $z=12$ as only counting input), SF-4 ($\sigma = z^{-10}$ at 2% empirical match). Precision agreement at zero parameters is the validation; precision at multi-decimal places is downstream and framework-idealization-limited. This methodological observation, registered in `SF-4_suppression_derivation.md` §9, is restated here for the SF-4 reader.
 
 #### §11.2 Cross-sector implications
-- SF-2 EW: $\delta_{CP}$ is tied to OP-SM-7d Capotauro mechanism; SF-2 closure could extend SF-4's prediction count from 7/8 to 8/8
+- SF-2 EW: $\delta_{CP}$ is tied to OPEN-SM-4 Capotauro mechanism; SF-2 closure could extend SF-4's prediction count from 7/8 to 8/8
 - SM-5: SF-4's structural closure of OPEN-FP-SF-4-2 at SM-5-inheritance level is mutually reinforcing with SM-5's K3 ansatz, but theorem-level closure on either side requires resolving SM-5's antibonding-doublet open problem
 - SR-1 / unbound-mode physics: the walk-dimension framework introduced in §4 may apply to other unbound-mode physics in CPP (free-particle propagators, light propagation); cross-sector implications of $z^{-2}$ per channel pending future investigation
 - SF-7 grand unification: SF-4's 7/8 result is one piece of the cumulative SF-line result; the master comparison table in SF-7 sums SF-1 through SF-6 contributions
@@ -234,8 +234,8 @@ Forward research directions: theorem-level closure of OPEN-FP-SF-4-1 Picture A; 
 | §4 | `SF-4_suppression_derivation.md` (full document) | PARTIAL CLOSURE (Sessions 40–41) |
 | §5 | `SF-4_k3_cage_shell_consistency.md` (full document) | PARTIAL CLOSURE (Sessions 42–43) |
 | §6 | derived from §3, §4, §5 | Trivial assembly from above |
-| §7 | `SF-4_mechanism_selected.md` §3, SM-5 OP-SM-7d | Established |
-| §8 | SM-5 OP-SM-7d, audit §6 K3 corrections | Inherited |
+| §7 | `SF-4_mechanism_selected.md` §3, SM-5 OPEN-SM-4 | Established |
+| §8 | SM-5 OPEN-SM-4, audit §6 K3 corrections | Inherited |
 | §9 | `SF-4_mechanism_selected.md` §6, audit §15 | Established |
 | §10 | OPEN-FP-SF-4-1, OPEN-FP-SF-4-2 in `Research_Frontier.md`; SM-5 open problem | Honest catalog |
 | §11 | `SF-4_suppression_derivation.md` §9, programme-level corpus | Cross-sector synthesis |
@@ -253,7 +253,7 @@ Inherits at theorem level (SF-4 does not re-derive these):
 
 Inherits at register-as-open level (SF-4 explicitly preserves these as open):
 - SM-5's antibonding-doublet-degeneracy lifting (the K3 TBM-direction selection)
-- OP-SM-7d Capotauro mechanism for higher-order PMNS corrections
+- OPEN-SM-4 Capotauro mechanism for higher-order PMNS corrections
 - $\delta_{CP}$ derivation (route ii deferral to EW sector)
 
 Opens (SF-4 introduces and registers):
@@ -265,7 +265,7 @@ Opens (SF-4 introduces and registers):
 ## Anticipated reviewer concerns and pre-emptive responses
 
 **"The 4%, 11% structural residuals are too large for a flagship-class precision claim."**
-Response: SF-4 is honest about the residuals — they are visible in the predictions table (§6) and discussed in §11.1 as the programme-level pattern. The framework's strength is at the *zero-parameter structural* level; if reviewers want sub-1% precision, the framework needs higher-order corrections (some of which are inherited from SM-5 OP-SM-7d). The paper explicitly distinguishes structural-derivation quality from precision-fit quality.
+Response: SF-4 is honest about the residuals — they are visible in the predictions table (§6) and discussed in §11.1 as the programme-level pattern. The framework's strength is at the *zero-parameter structural* level; if reviewers want sub-1% precision, the framework needs higher-order corrections (some of which are inherited from SM-5 OPEN-SM-4). The paper explicitly distinguishes structural-derivation quality from precision-fit quality.
 
 **"The K3-eigenmode-identification ansatz makes the derivation circular."**
 Response: §2 explicitly identifies what SF-4 inherits at theorem level vs ansatz level. The ansatz is SM-5's existing one, not SF-4's; SF-4 does not introduce new ansatz. SF-4's value-add is showing that the cage-shell mass formula is *consistent* with SM-5's identification, which by itself is a non-trivial structural-geometric result.

@@ -332,7 +332,7 @@ Quick reference map of which paper contributes which predictions.
 | SS-7 | PRED-C-42 to PRED-C-53: twelve concurrent zero-parameter binding-energy predictions for strict N=Z alpha-chain nuclei (¹²C through ⁵⁶Ni) at N_α ∈ [3,14]; RMS 0.80%; conditional on C1–C4 |
 | SS-8 | PRED-C-54 to PRED-C-65 (12 primary $\Delta_1$ at $N_\text{ex}=2$, $N_\alpha \in [3,14]$), PRED-C-66 (composite secondary $N_\alpha \times N_\text{ex}$ extension grid, 30 cells); all conditional on C1–C4 + D1–D3 |
 | SF-2 | PRED-O-21 (mass-degeneracy $m_{W^0} = m_{W^\pm}$ within ~1 MeV; W⁰ catalyst framework structural prediction; CONFIRMED at parametric-scaling level by Companion §5.7), PRED-O-22 (electroweak mass-gap, no new EW scalar below ~200 GeV), PRED-O-23 (W decay V-A structure at 75% from bracelet phase bias), PRED-O-24 (sensitivity-scan within-bounds geometric constraint band $\|r_{33} - r_{3Q}\| \lesssim 0.18$ with $r_{33} \geq 0.85$); zero-parameter inheritances: $\sin^2\theta_W = 3/(8\phi)$ from SM-6 (numerical correspondence; runs with scale), $m_Z/m_W = 1/\cos\theta_W = 1.140$ tree-level cross-check at 0.54% |
-| SF-4 | (See SF-4 v4.4 main paper for 7 of 8 zero-parameter neutrino-sector predictions; $\delta_{CP}$ deferred to SF-2 EW flagship via route ii — note: SF-2 v1.0 SHIP did not close $\delta_{CP}$ which remains registered as OP-SM-7d / OPEN-FP-SF-2-CHIR cross-sector closure pair) |
+| SF-4 | (See SF-4 v4.4 main paper for 7 of 8 zero-parameter neutrino-sector predictions; $\delta_{CP}$ deferred to SF-2 EW flagship via route ii — note: SF-2 v1.0 SHIP did not close $\delta_{CP}$ which remains registered as OPEN-SM-4 / OPEN-FP-SF-2-CHIR cross-sector closure pair) |
 | Propositions | PRED-O-3, PRED-O-4, PRED-O-11, PRED-O-12, PRED-Q-2 to PRED-Q-6 |
 
 ---

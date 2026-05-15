@@ -433,7 +433,7 @@ Programme state changes from v1.0 SHIP:
 Post-v1.0 work queue (priority order):
 - (A) HIGH PRIORITY: OPEN-FP-SF-4-1 Picture A formalization from CPP axioms A1–A11; estimated 5–10 sessions of focused derivation
 - (B) CROSS-SECTOR: SM-5 antibonding-doublet open problem closure cooperation; closure benefits both SM-5 and SF-4 OPEN-FP-SF-4-2 simultaneously
-- (C) NEXT FLAGSHIP: SF-2 EW-flagship drafting for $\delta_{CP}$ via OP-SM-7d Capotauro mechanism (route ii closure delivers 8/8 prediction count)
+- (C) NEXT FLAGSHIP: SF-2 EW-flagship drafting for $\delta_{CP}$ via OPEN-SM-4 Capotauro mechanism (route ii closure delivers 8/8 prediction count)
 - (D) ANTHOLOGY: chapter at Rovelli/SciAm register parallel to SS-9 "The Polyhedron's Conditions" (~5000 words, 1–2 sessions)
 - (E) TATWD: integration to CPP_the_theory.md parallel to SS-9 integration (1 session)
 - (F) HOUSEKEEPING: JUNO peer-reviewed publication bibliography update when arXiv:2511.14593 progresses

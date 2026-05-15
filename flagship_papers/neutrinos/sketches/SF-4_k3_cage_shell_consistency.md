@@ -57,7 +57,7 @@ $$
 U_{\text{PMNS}}^{(0)} = U_{\text{TBM}} = \begin{pmatrix} \sqrt{2/3} & 1/\sqrt{3} & 0 \\ -1/\sqrt{6} & 1/\sqrt{3} & -1/\sqrt{2} \\ -1/\sqrt{6} & 1/\sqrt{3} & 1/\sqrt{2} \end{pmatrix}
 $$
 
-This produces $\sin^2\theta_{12}^{(0)} = 1/3$, $\sin^2\theta_{23}^{(0)} = 1/2$, $\sin^2\theta_{13}^{(0)} = 0$, $\delta_{CP}^{(0)}$ undefined. Higher-order corrections from EW-sector machinery (OP-SM-7d, Capotauro bias) lift these to observed values; deferred to SF-2 / EW sector per SF-4_mechanism_selected.md §3.
+This produces $\sin^2\theta_{12}^{(0)} = 1/3$, $\sin^2\theta_{23}^{(0)} = 1/2$, $\sin^2\theta_{13}^{(0)} = 0$, $\delta_{CP}^{(0)}$ undefined. Higher-order corrections from EW-sector machinery (OPEN-SM-4, Capotauro bias) lift these to observed values; deferred to SF-2 / EW sector per SF-4_mechanism_selected.md §3.
 
 ---
 
@@ -328,7 +328,7 @@ The v0.1 paper can structure its derivation as follows:
 - §4 K3-Cage-Shell Consistency: bonded-shell topology + eigenmode coupling + inheritance of SM-5's TBM ansatz; numerical verification of zeroth-order TBM angles
 - §5 Predictions: three neutrino masses, three TBM mixing angles, normal hierarchy as forced consequence
 - §6 $\delta_{CP}$ posture: route (ii), register as open, defer to EW sector
-- §7 Higher-order corrections: register-as-conditional via SM-5's existing OP-SM-7d
+- §7 Higher-order corrections: register-as-conditional via SM-5's existing OPEN-SM-4
 - §8 Cumulative falsifier: JUNO 2026+ on hierarchy ordering; cosmological bounds; KATRIN
 - §9 Open theorem-level work: theorem-level closure of Picture A from A1-A11; theorem-level closure of K3-Cage-Shell Consistency at SM-5-inheritance level; lifting of SM-5 antibonding-doublet open problem
 - §10 Discussion: relation to SM-3, SM-5, SM-7/8/9 corpus; programme-level pattern (structural agreement at integer counts is the load-bearing signal); cross-sector implications

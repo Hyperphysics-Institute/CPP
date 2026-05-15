@@ -61,9 +61,9 @@ Distinguishing "current corpus" (post-600-cell consolidation, papers SM-3 onward
 | $\sin^2\theta_{12}$ | Derived at zeroth order: $\sin^2\theta_{12}^{(0)} = 1/3$ (TBM) | SM-5 Theorem on $U_\TBM$ from $K_3$ eigenstructure |
 | $\sin^2\theta_{23}$ | Derived at zeroth order: $\sin^2\theta_{23}^{(0)} = 1/2$ (TBM) | SM-5 same |
 | $\sin^2\theta_{13}$ | Derived at zeroth order: $\sin^2\theta_{13}^{(0)} = 0$ (TBM) | SM-5 same |
-| $\delta_{CP}$ | Open problem; explicitly registered as requiring EW sector; OP-SM-7d | SM-5 §discussion |
+| $\delta_{CP}$ | Open problem; explicitly registered as requiring EW sector; OPEN-SM-4 | SM-5 §discussion |
 | Mass hierarchy ordering | Not derived | — |
-| TBM corrections (~10% deviations from zeroth-order angles) | Open problem; OP-SM-4 (charged-lepton mixing contribution) and OP-SM-7d (Capotauro bias contribution) | SM-5 |
+| TBM corrections (~10% deviations from zeroth-order angles) | Open problem; OP-SM-4 (charged-lepton mixing contribution) and OPEN-SM-4 (Capotauro bias contribution) | SM-5 |
 
 **Summary of current-corpus state**: SM-5 establishes the K3 framework for the PMNS matrix and derives all three angles at zeroth (tribimaximal) order from K3 eigenstructure. Mass values, the CP phase, the hierarchy ordering, and the corrections to TBM angles are all explicitly registered as open problems. SM-5 deferred neutrino masses to a "planned SM-6" with a mechanism placeholder $\sigma = 120^{-d}$. The actual SM-6 that shipped became *The Charged Lepton Mass Spectrum from 600-Cell Lattice Geometry*, which does not address neutrino masses. Therefore: **the planned-SM-6 neutrino-mass derivation never materialized in current formalism**.
 
@@ -366,7 +366,7 @@ Independent of mechanism selection, a posture decision is required for $\delta_{
 
 **Route (i): Derive $\delta_{CP}$ from CPP primitives.** High value. Targets the "smoking gun" the viXra paper aimed at, but rigorously. Possible derivation handles:
 - Cage-orientation angle (the viXra paper's gesture, but with actual derivation rather than assertion)
-- Capotauro bias in current formalism (registered as OP-SM-7d in SM-5; the EW-sector handle that SM-5 deferred to)
+- Capotauro bias in current formalism (registered as OPEN-SM-4 in SM-5; the EW-sector handle that SM-5 deferred to)
 - K3-eigenstate phase structure (the K3 eigenmodes have a complex phase structure that may carry CP-violating content — this is unexplored in current corpus)
 - Substrate chirality (CPP has handedness in the $\phi$-related orientations; a CP phase from chirality is a candidate worth scoping)
 

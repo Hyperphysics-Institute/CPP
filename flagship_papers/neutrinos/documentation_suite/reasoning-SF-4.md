@@ -36,10 +36,10 @@ This gave OPEN-FP-SF-4-2: the K3-Cage-Shell Consistency Theorem. The structural-
 
 Fourth issue: $\delta_{CP}$. The K3 framework is real-valued in the canonical basis — the K3 eigenmodes can be chosen real, and the TBM matrix has zero CP phase at zeroth order. Where does $\delta_{CP} \approx 195°$ (NuFIT central value) come from? Three options:
 - (i) Derive from CPP primitives within SF-4 via four candidate handles (cage-orientation angle, Capotauro bias, K3-eigenstate phase structure, substrate chirality)
-- (ii) Defer to SF-2 EW-flagship via OP-SM-7d Capotauro mechanism inheritance
+- (ii) Defer to SF-2 EW-flagship via OPEN-SM-4 Capotauro mechanism inheritance
 - (iii) Register as falsifier (predict zero, test against future precision)
 
-Route (i) is multi-session work within SF-4's heavy-lift scope. Route (ii) keeps SF-4 contained at 7/8 zero-parameter predictions while preserving the OP-SM-7d open-problem registration with the appropriate paper. Route (iii) is too aggressive given current data uncertainty.
+Route (i) is multi-session work within SF-4's heavy-lift scope. Route (ii) keeps SF-4 contained at 7/8 zero-parameter predictions while preserving the OPEN-SM-4 open-problem registration with the appropriate paper. Route (iii) is too aggressive given current data uncertainty.
 
 Decision: route (ii). The four candidate handles for eventual route-(i) work are noted for SF-2 forward reference but not pursued in SF-4 scope.
 
