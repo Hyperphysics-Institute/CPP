@@ -128,7 +128,8 @@ Both sketches remain canonical Tier 4 reasoning sources; the .tex paper is the e
 | 0409 | 116 | — | Programme | Programme-infrastructure standardization of changelog-architecture convention (codifies Patch 0408 reference implementation as programme-wide rule across `operating_system.md` + `paper-formatting.md` + `documentation-suite.md` + `paper_production_workflow.md` + `paper_completion_checklist.md` + `bootup.md`; forward-only migration policy) |
 | 0410 | 117 | — | Review | ChatGPT v0.7 round-2 review archived at `reviews/chatgpt_v0.7_session_117.md` (overall strongly positive; four remaining issues mapped to v0.8 disposition table) |
 | 0411 | 118 | v0.8 | Paper | Substantive expositional polish — all five ChatGPT v0.7 items: NEW §1.7 derivation-flow TikZ figure + §1.2 cross-reference to §6.6 + §5.4 FI-C-6 precedent argument for FI-C-10 + §6.1.1 tightening + §10 methodological observations merged into single subsection |
+| 0412 | 119 | — | Review | Three v0.8 reviews archived in parallel: ChatGPT round-3 at `reviews/chatgpt_v0.8_session_119.md` (mature conditional-theorem flagship paper; 4 problems carry-over from v0.7, 5 v0.9 items, 2 are discoverability gaps), CoPilot round-1 at `reviews/copilot_v0.8_session_119.md` (extremely close to v1.0 ship-ready; 5 tightening items, includes `gandolfi_2025` citation veridicality verification flag), Grok round-1 at `reviews/grok_v0.8_session_119.md` (Ship as v1.0; 4 minor polish items, 2025 Grok co-authorship footnote concern, higher-n undershoot quantification); strong cross-reviewer convergence on ship-readiness with light v0.9 polish pass |
 
 ---
 
-*Last updated: Session 118, Patch 0411 (16 May 2026)*
+*Last updated: Session 119, Patch 0412 (16 May 2026)*
