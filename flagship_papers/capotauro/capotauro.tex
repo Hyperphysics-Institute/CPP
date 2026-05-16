@@ -4,6 +4,45 @@
 % A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)
 % Conscious Point Physics Flagship Paper Series (Capotauro line)
 %
+% Version 0.6 -- 16 May 2026 (Session 112, Patch 0404 —
+%   Integration polish + first PDF compile pass. v0.6 ships:
+%   (i) FATAL FIX: undefined control sequence \sigmanu at line
+%   727 in §10.1 fixed by adding \newcommand{\sigmanu}{\sigma_\nu}
+%   to preamble macro block (the macro is used in §10.1 when
+%   discussing SF-4's σ_ν = z^-10 neutrino suppression factor as
+%   part of the programme-level 1-2% pattern across SS-7/SM-9/SF-4/
+%   Capotauro corpus); (ii) two-pass pdflatex compile verified
+%   clean: zero fatal errors, all cross-references resolved
+%   (eq:dplr_predicted, eq:dplr_observed, planck_2018, abshier_
+%   grok_capotauro_2025 first-pass warnings all resolve on
+%   second pass), PDF output produced; (iii) known cosmetic
+%   remainder for v0.7: hyperref 'Token not allowed in PDF
+%   string' warnings for math-content section titles (19+ titles
+%   affected including §2.1 H_4 → I_4, §2.2 |χ| = φ^-3, §3.4
+%   chirality observable Ĉ_χ, §4 D_6 stabilizer, §4.5 σ_1-ODD
+%   correction, §6 Δp_LR = χ/6, §6.4 agreement within 2%, §7
+%   sin²θ_13 posture, §10.1 programme-level pattern 1-2%, etc.);
+%   warnings affect only PDF bookmark labels, not rendered PDF
+%   content; v0.7 polish wraps section-title math with
+%   \texorpdfstring{<latex>}{<plain-text>} for clean bookmarks;
+%   (iv) cross-reference audit confirmed clean: 68 section labels
+%   defined, 35 referenced (more labels than refs is fine — many
+%   labels provide anchor points for forward refs); 13 equation
+%   labels defined, 10 referenced (eq:candidate_gamma,
+%   eq:composite_product, eq:decomposition unused —
+%   informational); 27 bibitems, 19 cited, 0 missing (all \cite
+%   calls resolve); 8 unused bibitems tolerated per SF-4 pattern
+%   (foundational refs documenting source landscape); (v)
+%   stale-text audit confirmed clean: only stub-text reference is
+%   in CHANGELOG comments line 202 (doesn't render in PDF); body
+%   text contains zero 'v0.x stub' or 'development target'
+%   language; (vi) ALL ELEVEN SECTIONS REMAIN AT FULL v0.5 DRAFT
+%   QUALITY — v0.6 is integration polish without content change.
+%   v0.7 next (Session 113) AI review pass 1 incorporation; v0.8
+%   v0.9 reviews Sessions 114-115; v1.0 SHIP target Session 116.
+%   No theorem-registry / axiom-registry / Research_Frontier /
+%   working-sketch changes (v0.6 is .tex polish per outline plan).)
+%
 % Version 0.5 -- 16 May 2026 (Session 111, Patch 0403 — §9
 %   Open Theorem-Level Work + §10 Discussion + §11 Foundational
 %   Input Summary expanded from v0.4 stubs to full v0.5 draft
@@ -267,12 +306,13 @@
 \newcommand{\Sthree}{S_3}
 \newcommand{\Hfour}{H_4}
 \newcommand{\Ifour}{I_4}
+\newcommand{\sigmanu}{\sigma_\nu}
 
 \title{\textbf{The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics}\\[6pt]
 {\large A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 0.5 --- 16 May 2026}} \\[0.5em]
-{\normalsize v0.5 expands \S\ref{sec:open_work} (Open Theorem-Level Work), \S\ref{sec:discussion} (Discussion), and \S\ref{sec:fi_summary} (Foundational Input Summary) from v0.4 stubs to full v0.5 draft quality (Session 111 Patch 0403). All eleven sections now at full v0.5 draft quality; v0.6 next (Session 112) performs integration polish + first PDF compile. v0.4 shipped \S\ref{sec:dplr} + \S\ref{sec:sin2theta13} + \S\ref{sec:falsifier} (Session 110 Patch 0402, the empirical capstone + critical reviewer-honesty section). v0.3 shipped \S\ref{sec:d6_we} + \S\ref{sec:composite_we} (Sessions 108--109 Patch 0401, the rigor centerpiece). v0.2 shipped \S\ref{sec:substrate_vacuum} + \S\ref{sec:k3_doublet} (Session 107 Patch 0400). v0.1 shipped the paper structure (Sessions 104--105 Patches 0398--0399). Estimated v0.x drafting cycle of $\sim 10$ sessions toward v1.0 SHIP via multi-reviewer convergence pattern. Source-of-truth working sketches: \texttt{flagship\_papers/capotauro/sketches/Capotauro\_chi\_phi\_closure.md} (parent, 681 lines) and \texttt{flagship\_papers/capotauro/sketches/Capotauro\_subclaim\_c\_wigner\_eckart.md} (sub-claim (c) working sketch, 2146 lines). Theorem-registry anchor: THEO-CAP-1 registered Session 103 Patch 0397.}}
+{\Large \textbf{Version 0.6 --- 16 May 2026}} \\[0.5em]
+{\normalsize v0.6 is the integration polish + first PDF compile pass (Session 112 Patch 0404). Fixes: undefined macro $\sigmanu$ defined in preamble (was used in \S\ref{sec:programme_pattern} without definition). v0.6 verifies clean two-pass pdflatex compile with all cross-references resolved and zero fatal errors. Known cosmetic remainder: hyperref ``Token not allowed in PDF string'' warnings for math-content section titles affect only PDF bookmark labels (the rendered PDF is correct); deferred to v0.7 polish via global \texttt{texorpdfstring} wrapping. All eleven sections (\S\ref{sec:introduction} through \S\ref{sec:fi_summary}) at full v0.5 draft quality from prior patches. v0.5 expanded \S\ref{sec:open_work} + \S\ref{sec:discussion} + \S\ref{sec:fi_summary} (Session 111 Patch 0403). v0.4 shipped \S\ref{sec:dplr} + \S\ref{sec:sin2theta13} + \S\ref{sec:falsifier} (Session 110 Patch 0402). v0.3 shipped \S\ref{sec:d6_we} + \S\ref{sec:composite_we} (Sessions 108--109 Patch 0401). v0.2 shipped \S\ref{sec:substrate_vacuum} + \S\ref{sec:k3_doublet} (Session 107 Patch 0400). v0.1 shipped the paper structure (Sessions 104--105 Patches 0398--0399). Estimated v0.x cycle remaining: $\sim 4$ sessions toward v1.0 SHIP via multi-reviewer convergence (v0.7--v0.9 review passes Sessions 113--115; v1.0 SHIP Session 116). Source-of-truth working sketches: \texttt{flagship\_papers/capotauro/sketches/Capotauro\_chi\_phi\_closure.md} (parent, 681 lines) and \texttt{flagship\_papers/capotauro/sketches/Capotauro\_subclaim\_c\_wigner\_eckart.md} (sub-claim (c) working sketch, 2146 lines). Theorem-registry anchor: THEO-CAP-1 registered Session 103 Patch 0397.}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
