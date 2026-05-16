@@ -107,7 +107,9 @@ Both sketches remain canonical Tier 4 reasoning sources; the .tex paper is the e
 | 0406 | 113 | — | Programme | Programme-infrastructure Grok-suspension-warning cleanup (out-of-scope but timed in session) |
 | 0407 | 114 | v0.7 (Group A) | Paper | Substantive physics rework: §6.6 nontriviality + §2.3 forward argument + §5.4 motivation + §6.1.1 experimental + §9.5 experimental open work |
 | 0408 | 115 | v0.7 (Group B) | Paper | Writing/style + title-block cleanup + this changelog file creation + ships v0.7 PDF for ChatGPT round-2 |
+| 0409 | 116 | — | Programme | Programme-infrastructure standardization of changelog-architecture convention (codifies Patch 0408 reference implementation as programme-wide rule across `operating_system.md` + `paper-formatting.md` + `documentation-suite.md` + `paper_production_workflow.md` + `paper_completion_checklist.md` + `bootup.md`; forward-only migration policy) |
+| 0410 | 117 | — | Review | ChatGPT v0.7 round-2 review archived at `reviews/chatgpt_v0.7_session_117.md` (overall strongly positive; four remaining issues mapped to v0.8 disposition table) |
 
 ---
 
-*Last updated: Session 115, Patch 0408 (16 May 2026)*
+*Last updated: Session 117, Patch 0410 (16 May 2026)*
