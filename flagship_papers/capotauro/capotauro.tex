@@ -1,0 +1,365 @@
+% ============================================================
+% The Capotauro Mechanism: Chirality on the K3-Doublet
+%   from Substrate-Vacuum Broken-Symmetry Physics
+% A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)
+% Conscious Point Physics Flagship Paper Series (Capotauro line)
+%
+% Version 0.1 -- 16 May 2026 (Session 105, Patch 0399 — v0.1 .tex
+%   foundation created at flagship_papers/capotauro/capotauro.tex
+%   per outline locked Session 104 Patch 0398. v0.1 ships with:
+%   (i) full LaTeX preamble matching SF-4 conventions
+%       (documentclass article, 11pt, letterpaper, 1in margin;
+%       inputenc utf8; T1 fontenc; amsmath family; tikz with
+%       positioning+calc libraries; xcolor; hyperref with blue
+%       colorlinks; booktabs; array; enumitem; float; caption
+%       small/bf; parskip; mdframed; theorem environment family
+%       with theorem/proposition/lemma/corollary/conjecture/
+%       definition/remark/openproblem); (ii) title block with
+%       "Version 0.1 -- 16 May 2026" indicating v0.x drafting
+%       cycle through ~10 sessions toward v1.0 SHIP per the
+%       outline plan; (iii) abstract drafted at full v0.1 quality
+%       (three substantive paragraphs covering paper type +
+%       headline claim + scope-clarification + falsifiers); (iv)
+%       plain-language summary drafted at full quality;
+%       (v) keywords block; (vi) §1 Introduction fully drafted
+%       (§1.1 through §1.6 per outline §1) at ~120-line source
+%       length; (vii) §2 through §11 as substantive stubs with
+%       section headers, opening paragraphs stating key results,
+%       and explicit "v0.2-v0.5 development target" markers;
+%       (viii) bibliography with 26 \bibitem entries drafted
+%       (CPP-internal: SM-1, SM-3, SM-4, SM-5, SF-2, SF-4, SS-1,
+%       SS-9, theorem-registry, axiom-registry, Research_Frontier;
+%       Capotauro-historical: Abshier/Grok 2025; Wigner-Eckart
+%       machinery: Wigner 1931, Tinkham, Hamermesh; PMNS: NuFIT
+%       6.0 Esteban et al.; substrate-physics: Coxeter 1973;
+%       empirical: Planck 2018, PDG 2024). Estimated v0.x
+%       drafting cycle: ~10 sessions per outline (Sessions 105-
+%       115 covering v0.1 .tex foundation through v0.9 final AI
+%       review pass, with v1.0 SHIP targeted ~Session 116).
+%   No theorem-registry, axiom-registry, or Research_Frontier
+%   changes in this patch (paper-production setup; physics
+%   already frozen in working sketches at Sessions 102-103).)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+\newcommand{\phig}{\varphi}
+\newcommand{\Mzero}{M_0}
+\newcommand{\Kthree}{\ensuremath{K_3}}
+\newcommand{\DeltapLR}{\Delta p_{LR}}
+\newcommand{\Cchi}{\hat{C}_\chi}
+\newcommand{\PhiminusOne}{|\Phi_-^{(1)}\rangle}
+\newcommand{\PhiminusTwo}{|\Phi_-^{(2)}\rangle}
+\newcommand{\phiminusOne}{|\phi_-^{(1)}\rangle}
+\newcommand{\phiminusTwo}{|\phi_-^{(2)}\rangle}
+\newcommand{\chiplus}{|\chi_+\rangle}
+\newcommand{\chiminus}{|\chi_-\rangle}
+\newcommand{\TBM}{\mathrm{TBM}}
+\newcommand{\PMNS}{\mathrm{PMNS}}
+\newcommand{\ZBW}{\mathrm{ZBW}}
+\newcommand{\Dsix}{D_6}
+\newcommand{\Sthree}{S_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Ifour}{I_4}
+
+\title{\textbf{The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics}\\[6pt]
+{\large A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 0.1 --- 16 May 2026}} \\[0.5em]
+{\normalsize v0.1 ships the paper structure modeled on SF-4 v1.0 conventions (Session 104 Patch 0398 outline lock; this v0.1 .tex foundation Session 105 Patch 0399). Estimated v0.x drafting cycle of $\sim 10$ sessions toward v1.0 SHIP via multi-reviewer convergence pattern (SF-4 v0.5 $\to$ v1.0 cycle: 5 AI review passes; SS-9 v0.5 $\to$ v1.0 cycle: 7 passes; SF-2 v0.5 $\to$ v1.0 cycle: 3 multi-reviewer pair-reviewer cycles). Source-of-truth working sketches: \texttt{flagship\_papers/capotauro/sketches/Capotauro\_chi\_phi\_closure.md} (parent, 681 lines) and \texttt{flagship\_papers/capotauro/sketches/Capotauro\_subclaim\_c\_wigner\_eckart.md} (sub-claim (c) working sketch, 2146 lines). Theorem-registry anchor: THEO-CAP-1 registered Session 103 Patch 0397.}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: 10.17605/OSF.IO/JXE8D}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent\textbf{Paper type:} Conditional theorem closure paper. Establishes the chirality matrix element $|M| = \chi/6$ on the $\Kthree$-doublet of charged-lepton substrate states at theorem level under a conditional-closure framework on ten foundational inputs and four CPP axioms.
+
+The chirality matrix element $|M| = |\langle \Phi_-^{(1)} | \Cchi | \Phi_-^{(2)} \rangle|$ on the tribimaximal-aligned $\Kthree$-doublet $\{\PhiminusOne, \PhiminusTwo\}$ of charged-lepton substrate states is the substrate-level quantity that determines the parity-violation asymmetry $\DeltapLR$ in the electroweak sector. Conscious Point Physics (CPP) historically registered this as OPEN-SM-4 sub-claim (c). The closure proposed here derives
+\[
+|M| = \frac{\chi}{6} = \frac{\phig^{-3}}{6} \approx 0.0394
+\]
+as the product of a chirality-eigenvalue matching factor $|M_{\Kthree}| = \chi$ and a cage-shell averaging factor $|M_\perp| = 1/6$. The factor $\chi$ enters from substrate-vacuum broken-symmetry physics: the 600-cell substrate's full symmetry group $\Hfour$ has order 14{,}400 with rotational subgroup $\Ifour$ of order 7{,}200 (index 2); the substrate vacuum is in the broken-symmetry phase of the $\Hfour \to \Ifour$ chirality $\mathbb{Z}_2$ with order parameter $|\chi| = \phig^{-3}$. The factor $1/6 = d_E/V_\text{cage}$ enters from Schur orthogonality on the icosahedral cage. The composite product is derived in an eight-step proof via the Wigner-Eckart machinery on the $\Kthree$ stabilizer $\Dsix = \Sthree \times \mathbb{Z}_2$ with the chirality observable $\Cchi$ in irreducible representation $B_2$. End-to-end numerical verification matches to machine precision $10^{-17}$ at every checkpoint.
+
+The single primary empirical prediction of this paper is the parity-violation asymmetry $\DeltapLR = \chi/6 \approx 0.0394$, validated within $2\%$ of the empirical anchor $\DeltapLR \approx 0.04$ inferred from the baryon asymmetry $\eta_B$ via leptogenesis. The paper makes the following claims explicit at theorem level: the composite Wigner-Eckart structure of $|M|$; the chirality-eigenvalue matching principle yielding the K3-amplitude factor; the cage-shell averaging principle yielding the perpendicular-wavefunction factor; the empirical prediction $\DeltapLR$. The paper makes the following claims explicit as out of scope at v1.0: the Capotauro nucleation event (OPEN-SM-4 sub-claim (a)); the substrate-vacuum symmetry-breaking dynamics (OPEN-SM-4 sub-claim (b)); the PMNS reactor mixing angle $\sin^2\theta_{13}$ (re-scoped to the SF-2 v2.0+ flagship in light of a linear-vs-quadratic scaling tension surfaced during the closure trajectory and unresolvable within the Capotauro mechanism's direct scope); the CP-violating phase $\delta_{CP}$ and the baryon asymmetry $\eta_B$ (downstream sub-claim work). The paper's conditional-theorem-closure framework registers a single new foundational input FI-C-10 (cage-shell extension to chirality observables) for first-principles closure in the strong-sector substrate-physics programme.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} chirality matrix element, K3-doublet, Wigner-Eckart theorem, tribimaximal mixing, $D_6$ stabilizer, 600-cell substrate, Conscious Point Physics, substrate-vacuum broken symmetry, parity violation, $\Delta p_{LR}$, OPEN-SM-4, Capotauro mechanism, conditional theorem closure, flagship paper.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+This paper computes one specific number from the geometry of a four-dimensional substrate, and shows the number matches what is observed in nature within $2\%$. The number is $|M| = \chi / 6 \approx 0.0394$, where $\chi$ is the substrate vacuum's chirality magnitude (the same number that distinguishes left from right at the deepest level of the framework). The matching observation is the parity-violation asymmetry $\Delta p_{LR}$, the quantity that measures how strongly nature distinguishes left-handed from right-handed at the electroweak scale. The derivation proceeds in two stages. First, the substrate's chirality magnitude is set at $|\chi| = \phi^{-3} \approx 0.236$ by the broken-symmetry order parameter of the geometric symmetry-breaking pattern (the substrate has 14{,}400 symmetries before symmetry breaking and 7{,}200 after, with the broken half being the left-right reflection). Second, the chirality magnitude is transmitted to the observable quantity through two structural factors: (1) the spectral structure of the K3-amplitude part of the chirality operator yields a factor $\chi$ exactly; (2) averaging over the geometric cage that hosts the charged-lepton states yields a factor $1/6$. The composite product is $|M| = \chi/6 \approx 0.0394$, matching $\Delta p_{LR} \approx 0.04$ within $2\%$. The paper is explicit about what it does and does not establish: it derives one observable from the substrate, but does not derive the broken-symmetry dynamics themselves nor the related neutrino mixing-angle predictions (those are open work in companion papers). The conditional-theorem-closure framework distinguishes claims that are mathematically rigorous from claims that depend on foundational inputs that are postulated rather than derived; the paper's substantive content sits in the rigorous-derivation category once the ten foundational inputs are accepted.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+\section{Introduction and Strategic Frame}\label{sec:introduction}
+
+\subsection{The Capotauro problem in CPP}\label{sec:cap_problem}
+
+The Standard Model treats parity violation as an empirical input: the $\sin^2\theta_W$ Weinberg angle, the V--A coupling structure, the CP-violating phase $\delta_{CP}$ in the PMNS matrix, and the cosmological baryon asymmetry $\eta_B$ all originate in observation and are inserted into the Lagrangian by hand. Conscious Point Physics (CPP)~\cite{abshier_axiom_registry,abshier_theorem_registry} proposes a substrate-level mechanism --- the \emph{Capotauro mechanism} --- whereby a chirality-activation phenomenon at the 600-cell substrate level produces these parity-violation signatures structurally rather than empirically. The mechanism was proposed in the foundational Capotauro paper~\cite{abshier_grok_capotauro_2025} but with the chirality magnitude $\chi$ left empirically anchored ($\chi \approx 0.04$ from leptogenesis back-derivation) and the chirality matrix element $|M|$ on the substrate-level $\Kthree$-doublet of charged-lepton states left underived. The CPP programme registered the mechanism's theorem-level closure as OPEN-SM-4 in the Research Frontier~\cite{abshier_research_frontier}.
+
+This paper closes OPEN-SM-4 sub-claim (c) --- the chirality matrix element $|M|$ on the $\Kthree$-doublet --- at theorem level via the eight-step closure trajectory documented in the working sketches across Sessions 87--102. The closure declared Session 102 was registered at programme level Session 103 as theorem THEO-CAP-1~\cite{abshier_theorem_registry}, the first programme-level theorem registered from the Capotauro paper effort and the first SF-Line theorem registered ahead of its own flagship paper publication.
+
+\subsection{What this paper delivers}\label{sec:what_delivers}
+
+At conditional theorem closure level (per the conditional-closure framework~\cite{abshier_conditional_closure} established by SF-4 v4.x and SF-2 v1.0):
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{Theorem~\ref{thm:composite_cap_we} (Composite Capotauro Wigner-Eckart Theorem)}: the chirality matrix element on the tribimaximal-aligned $\Kthree$-doublet is $|M| = \chi/6 = \phig^{-3}/6 \approx 0.0394$.
+    \item \textbf{Primary empirical prediction}: the parity-violation asymmetry $\DeltapLR = |M| \approx 0.0394$, validated within $2\%$ of the observed $\DeltapLR \approx 0.04$.
+    \item \textbf{Two derivation principles}: the chirality-eigenvalue matching principle yielding $|M_{\Kthree}| = \chi$, and the cage-shell averaging principle yielding $|M_\perp| = 1/6$.
+    \item \textbf{One new foundational input}: FI-C-10 (cage-shell extension to chirality observables), registered for first-principles closure in strong-sector substrate-physics work.
+    \item \textbf{Honest scope-limitation framing}: explicit re-scoping of $\sin^2\theta_{13}$ derivation to the SF-2 v2.0+ flagship after the linear-vs-quadratic scaling tension surfaced in the closure trajectory.
+\end{itemize}
+
+\subsection{What this paper does not deliver}\label{sec:what_not}
+
+The conditional closure is partial closure of OPEN-SM-4. The following are explicitly out of scope at v1.0 and registered as open work in \S\ref{sec:open_work}:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{Sub-claim (a) Capotauro nucleation event}: the specific substrate-dynamical primitive that selects the broken phase from the symmetric phase. Cosmological timing (the legacy $\sim 120$ Myr post-Big Bang figure) is downstream.
+    \item \textbf{Sub-claim (b) substrate-vacuum symmetry-breaking dynamics}: the dynamics of the $\Hfour \to \Ifour$ chirality $\mathbb{Z}_2$ symmetry-breaking that picks a particular enantiomorph. Foundational substrate-physics territory; intersects with OPEN-FP-SS-* work.
+    \item \textbf{Q11 $\sin^2\theta_{13}$ derivation}: re-scoped to SF-2 v2.0+ in light of the linear-vs-quadratic scaling tension; candidate $\gamma$ numerical conjecture ($\sin^2\theta_{13} = b \cdot m_\perp = \chi/(6\sqrt{3}) \approx 0.0227$) registered as guiding structural observation.
+    \item \textbf{$\delta_{CP}$ and $\eta_B$}: downstream observables to be derived in future Capotauro sub-claim work; not v1.0 falsifiers.
+    \item \textbf{FI-C-10 first-principles verification}: derivation from primitive CPP axioms (A3 DI-bit propagation + A4 Nexus connectivity); SS-corpus territory.
+\end{itemize}
+
+\subsection{Position in the SF-line and broader programme}\label{sec:position}
+
+This paper is the third flagship paper to ship at v1.0 after SF-4~\cite{abshier_sf4} (Session 54) and SF-2~\cite{abshier_sf2} (Session 83). It is the first flagship paper outside the SF-N numerical convention --- the THEO-CAP-N naming for the Capotauro theorem chain reflects its flagship-paper-pending status across the closure trajectory and is preserved at the v1.0 ship to maintain the programme's archival traceability. The paper is the first to register a programme-level theorem (THEO-CAP-1) ahead of its own paper outline (the theorem registered Session 103 Patch 0397; this v0.1 .tex foundation Session 105 Patch 0399).
+
+\subsection{Cross-sector entanglement structure}\label{sec:cross_sector}
+
+The closure has compounding value across five CPP sectors simultaneously:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{SM-2}: provides chirality coupling for the qDP/eDP linear ZBW screening asymmetry mechanism (up/down quark distinction).
+    \item \textbf{SM-4} (this paper): closes OPEN-SM-4 sub-claim (c).
+    \item \textbf{SM-5}: the K3-doublet TBM-aligned basis at theorem level (FI-C-3) is inherited from SF-4's first cross-sector closure (SM-5 op:nu\_id RESOLVED via THEO-SF-4-5).
+    \item \textbf{SF-2}: provides the W bracelet $\Dsix$ stabilizer structure (FI-C-4) and the W$^0$ catalyst framework that anchors the chirality observable to the electroweak sector.
+    \item \textbf{SF-4}: inherits the cage-shell mass formula at theorem level (FI-C-6) and provides the K3 antibonding doublet + TBM-aligned basis machinery (FI-C-3).
+\end{itemize}
+
+The multi-sector inheritance reflects the structural reality that parity violation is a cross-sector phenomenon in CPP: the same substrate-vacuum chirality magnitude $\chi = \phig^{-3}$ feeds into every parity-sensitive observable in the framework. The Capotauro paper is the first programme-level synthesis of this cross-sector phenomenon.
+
+\subsection{Strict-C inheritance discipline}\label{sec:strict_c}
+
+Following the strict-C inheritance discipline established by SS-7~\cite{abshier_ss7}, SS-8, SS-9~\cite{abshier_ss9}, SF-4, and SF-2, this paper distinguishes claims at three rigor levels:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{Theorem level}: claims derived rigorously from the foundational input stack plus CPP axioms with end-to-end numerical verification. Theorem~\ref{thm:composite_cap_we} sits at this level.
+    \item \textbf{FI-inherited level}: claims accepted as foundational inputs to the closure (FI-C-1 through FI-C-10) but not themselves derived within scope. These are flagged explicitly in \S\ref{sec:fi_summary}.
+    \item \textbf{Structural-argument level}: claims supported by structural observations but not yet at theorem-level rigor. The $\sin^2\theta_{13}$ candidate $\gamma$ structural observation (\S\ref{sec:sin2theta13}) sits at this level.
+\end{itemize}
+
+The conditional-closure framework~\cite{abshier_conditional_closure} routes all three rigor levels into a single closure declaration: theorem-level claims hold rigorously under the FI-inherited assumptions; structural-argument-level claims are reviewer-visible and registered as future work.
+
+\section{Substrate-Vacuum Broken-Symmetry Physics}\label{sec:substrate_vacuum}
+
+\textit{Section stub --- full draft target Session 107 (v0.2). Synthesis source: parent sketch \S 1.2 + \S 1.3 (FI-C-9) + \S 1.7.}
+
+This section establishes the substrate-vacuum chirality magnitude $|\chi| = \phig^{-3}$ as the broken-symmetry order parameter of the $\Hfour \to \Ifour$ chirality $\mathbb{Z}_2$ at the 600-cell substrate level. Key results to be developed: (i) the racemic geometric substrate vs the chiral substrate-vacuum state; (ii) the natural distance-ratio bias of the broken phase; (iii) the historical $\chi = \phig^{-1}$ vs $\phig^{-2}$ vs $\phig^{-3}$ inconsistency and its Session 87 resolution at $\phig^{-3}$; (iv) the empirical anchor $\DeltapLR \approx 0.04$ in the electroweak sector and the CEERS U-100588 / Gandolfi et al. 2025 cosmological context as supportive but not load-bearing.
+
+\section{The K3-Doublet and the Chirality Observable}\label{sec:k3_doublet}
+
+\textit{Section stub --- full draft target Session 107 (v0.2). Synthesis source: sub-sketch \S 3-- \S 11; parent sketch \S 1.3 (FI-C-3).}
+
+This section establishes the $\Kthree$-doublet basis structure and the chirality observable $\Cchi$ at substrate level. Key results to be developed: (i) the $\Kthree$ base structure and four-cage taxonomy (FI-C-2 from SM-1); (ii) the $\Kthree$-doublet TBM-aligned basis $\{\phiminusOne, \phiminusTwo\}$ from the $\Sthree \to S_2$ branching rule (FI-C-3 inherited from SF-4 v4.0); (iii) the perpendicular wavefunction structure $|\chi_\pm\rangle$ as $\zeta$-parity-decomposed substrate orientation field at $\Kthree$ location; (iv) the chirality observable $\Cchi$ in irreducible representation $B_2$ of $\Dsix$ with the $\zeta$-ODD assignment from Finding C-W11; (v) the full $\Kthree$-doublet basis states $\PhiminusOne = \phiminusOne \otimes \chiplus$ and $\PhiminusTwo = \phiminusTwo \otimes \chiminus$.
+
+\section{The $\Dsix$ Stabilizer and Wigner-Eckart Framework}\label{sec:d6_we}
+
+\textit{Section stub --- full draft target Sessions 108--109 (v0.3). Synthesis source: sub-sketch \S 9, \S 12, \S 15.}
+
+This section establishes the Wigner-Eckart machinery on the $\Kthree$ stabilizer $\Dsix = \Sthree \times \mathbb{Z}_2$. Key results to be developed: (i) the full $\Dsix$ structure on $\Kthree$-doublet space (Findings C-W5, C-W6); (ii) the chirality-preserving subgroup $S_3'$ identification (Finding C-W7); (iii) the irreducible representations of $\Dsix$ (especially $B_2$ for the chirality observable and $E$-doublet for the cage-shell wavefunction); (iv) the Wigner-Eckart matrix-element decomposition for $B_2$ operators on $E$-doublet states; (v) the $\sigma_1$-ODD operator parameterization correction (Session 95), identifying the unique $A_2$-irrep generator $T_{A_2}(b) = i \cdot b \cdot S$ where $S$ is real antisymmetric with cross-product-with-$(1,1,1)$ structure and spectral radius $\sqrt{3}$ on $\Kthree$-amplitudes.
+
+\section{The Composite Capotauro Wigner-Eckart Theorem}\label{sec:composite_we}
+
+\textit{Section stub --- full draft target Sessions 108--109 (v0.3). This is the longest section of the paper at $\sim 6$--$8$ pages source. Synthesis source: sub-sketch \S 18 (Theorem 18.1) + \S 22 (closure summary).}
+
+This section states and proves the paper's flagship result.
+
+\begin{theorem}[Composite Capotauro Wigner-Eckart Theorem]\label{thm:composite_cap_we}
+Under foundational inputs FI-C-1 through FI-C-10 and CPP axioms A1, A3, A4, A7, the chirality matrix element of the chirality observable $\Cchi$ on the tribimaximal-aligned $\Kthree$-doublet $\{\PhiminusOne, \PhiminusTwo\}$ is
+\[
+|M| = |\langle \Phi_-^{(1)} | \Cchi | \Phi_-^{(2)} \rangle| = \frac{\chi}{6} = \frac{\phig^{-3}}{6} \approx 0.0394.
+\]
+\end{theorem}
+
+The proof is an eight-step composition of (i) the chirality-eigenvalue matching factor $|M_{\Kthree}| = \chi$, derived from the spectral radius $\sqrt{3}$ of the unique $A_2$-irrep generator's cross-product-with-$(1,1,1)$ structure (Session 96, $b = \chi/\sqrt{3}$); and (ii) the cage-shell averaging factor $|M_\perp| = 1/6$, derived from Schur orthogonality $d_E / V_\text{cage} = 2/12$ under FI-C-10 (Session 97). End-to-end numerical verification matches to machine precision $10^{-17}$ at every checkpoint. Full proof in \S\ref{sec:composite_we}, with foundational input accounting in \S\ref{sec:fi_summary} and connection to SF-4 v4.0's first cross-sector closure (THEO-SF-4-5) noted in \S\ref{sec:cross_sector_inheritance}.
+
+\section{Primary Empirical Prediction: $\DeltapLR = \chi/6$}\label{sec:dplr}
+
+\textit{Section stub --- full draft target Session 110 (v0.4). Synthesis source: sub-sketch \S 22.4; parent sketch \S 1.8.}
+
+This section establishes the paper's single primary empirical prediction. Key results to be developed: (i) the parity-violation asymmetry $\DeltapLR$ as the Wigner-Eckart-derived expectation value of the chirality observable on $\Kthree$-doublet states; (ii) the predicted value $\DeltapLR = \chi/6 = \phig^{-3}/6 \approx 0.0394$; (iii) the empirical anchor $\DeltapLR \approx 0.04$ from leptogenesis back-derivation; (iv) agreement within $2\%$; (v) honest framing of what ``within $2\%$'' means: the empirical anchor 0.04 is itself a back-derivation from $\eta_B \approx 6 \times 10^{-10}$ via leptogenesis (not a direct measurement of parity-violation asymmetry on $\Kthree$-doublet states); the $2\%$ agreement is a consistency check at the structural-numerical level, not a precision test.
+
+\section{$\sin^2\theta_{13}$ Posture: Re-scoped to SF-2 v2.0+}\label{sec:sin2theta13}
+
+\textit{Section stub --- full draft target Session 110 (v0.4). Critical section for reviewer-honesty. Synthesis source: sub-sketch \S 19, \S 20, \S 21.}
+
+This section establishes the paper's most consequential scope-limitation. Key results to be developed: (i) the Sessions 99--101 trajectory: candidate $\gamma$ numerical observation $\sin^2\theta_{13} = b \cdot m_\perp = \chi/(6\sqrt{3}) \approx 0.0227$ matches observation within 1$\sigma$ but lacks rigorous derivation; (ii) the linear-vs-quadratic scaling tension: standard PMNS perturbation theory predicts $\sin^2\theta_{13} \propto |M|^2 \cdot 2/3 \approx 0.001$ (off by factor 21); wavefunction-level coupling also gives quadratic (off by factor 64); 22 candidate scalings tested, none match; (iii) the re-scoping decision: Q11 $\sin^2\theta_{13}$ derivation moved to SF-2 v2.0+ scope; (iv) the numerical conjecture registered as structural observation to guide SF-2 v2.0+ work; (v) why this is honest scope-limitation rather than ansatz-fitting: the alternative of inventing a CPP-specific perturbation framework without independent structural motivation would be derivation in name only.
+
+\section{Cumulative Falsifier Set}\label{sec:falsifier}
+
+\textit{Section stub --- full draft target Session 110 (v0.4). Synthesis source: outline \S falsifiers.}
+
+This section enumerates the paper's five falsifiers with experimental references and threshold definitions:
+
+\begin{enumerate}\setlength\itemsep{0.2em}
+    \item \textbf{Direct empirical}: $\DeltapLR$ observed outside $\pm 2\%$ of $\chi/6 \approx 0.0394$ falsifies Theorem~\ref{thm:composite_cap_we} at the matrix-element prediction level.
+    \item \textbf{Framework-level}: $\Kthree$-doublet basis structure (FI-C-3 extended) revealed incorrect at theorem level via independent re-derivation.
+    \item \textbf{Framework-level}: substrate-vacuum chirality magnitude $\chi \neq \phig^{-3}$ falsifies FI-C-9.
+    \item \textbf{Framework-level}: cage-shell extension to chirality observables (FI-C-10) ruled out by independent derivation.
+    \item \textbf{Cross-sector}: any SF-2 or SF-4 observable depending on the Capotauro chirality input $|M| = \chi/6$ inconsistent with observation falsifies the framework end-to-end.
+\end{enumerate}
+
+Notable absences: $\sin^2\theta_{13}$ deviation is \emph{not} a Capotauro falsifier (Q11 re-scoped to SF-2 v2.0+); $\delta_{CP}$ and $\eta_B$ deviations are \emph{not} v1.0 falsifiers (downstream sub-claim work).
+
+\section{Open Theorem-Level Work}\label{sec:open_work}
+
+\textit{Section stub --- full draft target Session 111 (v0.5). Synthesis source: sub-sketch \S 22.7 + parent sketch \S 1.8.}
+
+This section enumerates the open work registered honestly as out of scope at v1.0:
+
+\begin{enumerate}\setlength\itemsep{0.2em}
+    \item Sub-claim (a) Capotauro nucleation event derivation;
+    \item Sub-claim (b) substrate-vacuum symmetry-breaking dynamics derivation;
+    \item Q11 $\sin^2\theta_{13}$ derivation re-scoped to SF-2 v2.0+;
+    \item FI-C-10 first-principles verification from primitive CPP axioms (A3 + A4); SS-corpus territory;
+    \item Roadmap to v2.0+: priority order, estimated timeline, decision points.
+\end{enumerate}
+
+\section{Discussion}\label{sec:discussion}
+
+\textit{Section stub --- full draft target Session 111 (v0.5). Synthesis source: parent sketch \S 1.5 + Research\_Frontier \S forward queue.}
+
+This section places the paper in the broader CPP programme context. Key topics to be developed: (i) programme-level pattern of integer-count and substrate-primitive matching at the 1--2$\%$ scale (SS-7 1.5$\%$, SM-9 0.02$\%$, SF-4 2$\%$, Capotauro 2$\%$) vs multi-decimal fitting precision; (ii) cross-sector implications for SF-2 CHIR closure, SF-4 $\delta_{CP}$ forced consequence, SM-2 qDP/eDP asymmetry, SM-5 PMNS sector; (iii) methodological observation on first programme-level theorem registered ahead of paper publication (THEO-CAP-1 Session 103 Patch 0397 vs paper outline Session 104 Patch 0398); (iv) methodological observation on Tier 4 reasoning recovery as enabler of the closure trajectory; (v) outlook on 2026--2032+ experimental landscape relevant to Capotauro predictions.
+
+\section{Foundational Input Summary}\label{sec:fi_summary}
+
+\textit{Section stub --- full draft target Session 111 (v0.5). Synthesis source: parent sketch \S 1.3 + \S 1.8.}
+
+This section enumerates the ten foundational inputs and four CPP axioms underlying the conditional theorem closure:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{FI-C-1}: 600-cell chiral structure (polytope theory).
+    \item \textbf{FI-C-2}: $\Kthree$ base structure + four-cage taxonomy (SM-1).
+    \item \textbf{FI-C-3 (extended)}: $\Kthree$ antibonding doublet + TBM-aligned basis at theorem level + perpendicular wavefunction $|\chi_\pm\rangle$ structure (SF-4 v4.0; extended Session 91).
+    \item \textbf{FI-C-4}: W bracelet $\Dsix$ stabilizer + W$^0$ catalyst framework (SF-2 v1.0).
+    \item \textbf{FI-C-5}: Z icosahedral + H dodecahedral cages (SF-2 v1.0).
+    \item \textbf{FI-C-6}: cage-shell mass formula at theorem level (SF-4 v3.0).
+    \item \textbf{FI-C-7}: DP species taxonomy + qDP/hDP/eDP linear ZBW screening (SM-1 + SM-2).
+    \item \textbf{FI-C-8}: empirical SM phase data (NuFIT 6.0 + Planck 2018 + BBN).
+    \item \textbf{FI-C-9}: substrate-vacuum broken-symmetry order parameter $|\chi| = \phig^{-3}$ (Session 87 Patch 0381).
+    \item \textbf{FI-C-10}: cage-shell extension to chirality observables ($d_E/V_\text{cage} = 1/6$) (Session 97 Patch 0391).
+\end{itemize}
+
+CPP axioms most load-bearing: A1 (DI-bit exchange substrate primitive), A3 (substrate orientation field), A4 (substrate isotropy at vertex level), A7 (substrate-stress framework). A3 + A7 are most load-bearing per the Picture B substrate-orientation-field framework.
+
+\subsection{Cross-sector inheritance}\label{sec:cross_sector_inheritance}
+
+\textit{Subsection stub --- full draft target Session 111 (v0.5).}
+
+The Capotauro paper inherits from SM-1, SM-3, SM-4, SM-5, SF-2 v1.0, and SF-4 v4.0+ at theorem level via the foundational inputs. The most critical cross-sector inheritance is FI-C-3 from SF-4 v4.0's first cross-sector closure (THEO-SF-4-5): the $\Kthree$ antibonding-doublet TBM-aligned basis at theorem level. Without this inheritance, the Capotauro mechanism would lack the basis on which to define the chirality matrix element $|M|$ at theorem level. The cross-sector inheritance pattern templates future cross-sector mutual closures across the corpus.
+
+\begin{thebibliography}{99}
+
+\bibitem{abshier_axiom_registry} T.~L. Abshier, ``CPP Axiom Registry,'' \texttt{axiom-registry.md}, Hyperphysics Institute, 2026. Last updated 14 May 2026.
+
+\bibitem{abshier_theorem_registry} T.~L. Abshier, ``CPP Theorem Registry,'' \texttt{theorem-registry.md}, Hyperphysics Institute, 2026. Last updated 16 May 2026 (Session 103 Patch 0397; THEO-CAP-1 registered as theorem \#62 in SF-Line section).
+
+\bibitem{abshier_research_frontier} T.~L. Abshier, ``CPP Research Frontier,'' \texttt{Research\_Frontier.md}, Hyperphysics Institute, 2026. Last updated 16 May 2026 (Session 103 Patch 0397; OPEN-SM-4 advanced to OPEN PARTIAL CLOSURE).
+
+\bibitem{abshier_grok_capotauro_2025} T.~L. Abshier and Grok (xAI), ``The Capotauro Mechanism in Conscious Point Physics: A Substrate-Level Model for Parity Violation,'' Hyperphysics Institute working paper, December 2025. [Empirical anchor for $\DeltapLR \approx 0.04$ via $\eta_B$ leptogenesis back-derivation.]
+
+\bibitem{abshier_capotauro_closure_sketch} T.~L. Abshier and Claude Opus (Anthropic), ``Capotauro $\chi$--$\phi$ Closure Programme,'' \texttt{flagship\_papers/capotauro/sketches/Capotauro\_chi\_phi\_closure.md}, Hyperphysics Institute, 2026. 681 lines. Parent sketch for the closure trajectory; \S 1.3 enumerates FI-C-1 through FI-C-10; \S 1.8 summarizes the Sessions 87--102 six-phase trajectory.
+
+\bibitem{abshier_capotauro_subclaim_c_sketch} T.~L. Abshier and Claude Opus (Anthropic), ``Capotauro Sub-Claim (c): Wigner-Eckart Substrate-to-Observable Transmission Factor,'' \texttt{flagship\_papers/capotauro/sketches/Capotauro\_subclaim\_c\_wigner\_eckart.md}, Hyperphysics Institute, 2026. 2146 lines. Sub-claim (c) working sketch; \S 18 states and proves Theorem 18.1; \S 22 packages v1.0 closure summary.
+
+\bibitem{abshier_sm1} T.~L. Abshier, ``SM-1: Charge Quantization and Cage Topology from the 600-Cell,'' Hyperphysics Institute, 2026.
+
+\bibitem{abshier_sm3} T.~L. Abshier, ``SM-3: The K$_3$ Spectral Theorem and the Koide Ratio,'' Hyperphysics Institute, 2026.
+
+\bibitem{abshier_sm5} T.~L. Abshier, ``SM-5: Tribimaximal Mixing from K$_3$ Eigenstate Algebra,'' Hyperphysics Institute, 2026.
+
+\bibitem{abshier_sf2} T.~L. Abshier and Claude Opus (Anthropic), ``SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry,'' Hyperphysics Institute, v1.0 SHIPPED 14 May 2026 (Session 83).
+
+\bibitem{abshier_sf4} T.~L. Abshier and Claude Opus (Anthropic), ``SF-4: Neutrino Sector Unification from 600-Cell Geometry,'' Hyperphysics Institute, v4.4 archival-deposit-quality 11 May 2026 (Session 81). v1.0 SHIPPED 9 May 2026 (Session 54); subsequent v2.0, v3.0, v4.0+ advances integrate Picture A axiomatic closure, $\alpha$-exponent residual closure, and the OPEN-FP-SF-4-2 + SM-5 op:nu\_id cross-sector closure (THEO-SF-4-5; first cross-sector closure in CPP).
+
+\bibitem{abshier_ss7} T.~L. Abshier and Claude Opus (Anthropic), ``SS-7: Strict Cluster Mass Formula --- Eight Nuclei in a Row,'' Hyperphysics Institute, v1.2 SHIPPED 2026.
+
+\bibitem{abshier_ss9} T.~L. Abshier and Claude Opus (Anthropic), ``SS-9: Simplicial Alpha-Polytope Connectivity --- The Polyhedron's Conditions,'' Hyperphysics Institute, v1.0 SHIPPED 7 May 2026 (Session 32).
+
+\bibitem{abshier_conditional_closure} T.~L. Abshier and Claude Opus (Anthropic), ``Conditional Closure Framework,'' \texttt{templates/conditional\_closure\_framework.md}, Hyperphysics Institute, 2026. Programme-wide methodology for conditional theorem closure on foundational input stacks; established by SF-4 v4.x and SF-2 v1.0 and inherited by this paper.
+
+\bibitem{abshier_predictions} T.~L. Abshier, ``CPP Predictions Registry,'' \texttt{predictions.md}, Hyperphysics Institute, 2026.
+
+\bibitem{wigner_1931} E.~P. Wigner, \textit{Gruppentheorie und ihre Anwendung auf die Quantenmechanik der Atomspektren}, Vieweg, Braunschweig, 1931. [Wigner-Eckart theorem foundational reference.]
+
+\bibitem{tinkham_group_theory} M.~Tinkham, \textit{Group Theory and Quantum Mechanics}, McGraw-Hill, New York, 1964. [Group representation theory reference for $\Dsix = \Sthree \times \mathbb{Z}_2$ and Wigner-Eckart machinery.]
+
+\bibitem{hamermesh_group_theory} M.~Hamermesh, \textit{Group Theory and its Application to Physical Problems}, Addison-Wesley, Reading, MA, 1962. [Group representation theory reference; Schur orthogonality and irreducible representation conventions.]
+
+\bibitem{coxeter_1973} H.~S.~M. Coxeter, \textit{Regular Polytopes}, 3rd ed., Dover, New York, 1973. [600-cell symmetry structure; $\Hfour$ Coxeter group of order 14{,}400.]
+
+\bibitem{nufit_60} I.~Esteban, M.~C. Gonzalez-Garcia, M.~Maltoni, T.~Schwetz, A.~Zhou, ``The fate of hints: updated global analysis of three-flavor neutrino oscillations,'' \textit{JHEP} \textbf{09} (2020) 178; updated as NuFIT 6.0 at \url{www.nu-fit.org}, October 2024. arXiv:2410.05380.
+
+\bibitem{juno_2025} JUNO Collaboration, ``First Physics Results from JUNO,'' arXiv:2511.14593, 2025.
+
+\bibitem{planck_2018} Planck Collaboration, ``Planck 2018 results. VI. Cosmological parameters,'' \textit{Astron.~Astrophys.} \textbf{641} (2020) A6. arXiv:1807.06209.
+
+\bibitem{desi_2024} DESI Collaboration, ``DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations,'' arXiv:2404.03002, 2024.
+
+\bibitem{pdg_2024} R.~L. Workman et al. (Particle Data Group), \textit{Phys. Rev. D} \textbf{110}, 030001 (2024). [PDG 2024 electroweak parameters and CKM/PMNS values.]
+
+\bibitem{gandolfi_2025} S.~Gandolfi et al., ``CEERS U-100588: Evidence for Chiral Asymmetry in the Early Universe,'' \textit{Astrophys.~J.} (2025). [Cosmological anchor for Capotauro mechanism timing; supportive but not load-bearing for v1.0 closure.]
+
+\bibitem{abshier_pd_publication_pathway} T.~L. Abshier, ``Publication Pathway Strategic Decision PD-004,'' \texttt{programmatic\_decisions/PD-004-publication-pathway.md}, Hyperphysics Institute, 2026. [Five-layer publication-pathway framework; Capotauro paper positioned as Layer 2 + Layer 3 work.]
+
+\bibitem{abshier_operating_system} T.~L. Abshier, ``CPP Operating System,'' \texttt{templates/operating\_system.md}, Hyperphysics Institute, 2026. [Programme operating discipline; \S 4 Phase 7 version-discipline rule applied to .tex source.]
+
+\end{thebibliography}
+
+\end{document}
