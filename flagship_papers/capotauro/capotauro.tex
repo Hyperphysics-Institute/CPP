@@ -13,7 +13,7 @@
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usetikzlibrary{positioning,calc}
+\usetikzlibrary{positioning,calc,arrows.meta,shapes.geometric}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{booktabs}
@@ -63,7 +63,7 @@
 \title{\textbf{The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics}\\[6pt]
 {\large A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 0.7 --- 16 May 2026}}}
+{\Large \textbf{Version 0.8 --- 16 May 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -121,6 +121,8 @@ At conditional theorem closure level (per the conditional-closure framework~\cit
     \item \textbf{Honest scope-limitation framing}: explicit re-scoping of $\sin^2\theta_{13}$ derivation to the SF-2 v2.0+ flagship after the linear-vs-quadratic scaling tension surfaced in the closure trajectory.
 \end{itemize}
 
+The $\chi/6 \approx 0.0394$ result is not the outcome of parameter selection to match the empirical anchor $\sim 0.04$. The framework's three structural inputs (the substrate-vacuum order parameter $\phig^{-3}$, the cage-shell averaging factor $1/6 = d_E/V_\text{cage}$, and the substrate-physics parameter $b = \chi/\sqrt{3}$) are independently fixed by foundational inputs and structural facts with zero free parameters. The structural-constraint argument is developed in \S\ref{sec:nontriviality}; the empirical match within $2\%$ then confirms the structural prediction rather than motivating parameter fitting.
+
 \subsection{What this paper does not deliver}\label{sec:what_not}
 
 The conditional closure is partial closure of OPEN-SM-4. The following are explicitly out of scope at v1.0 and registered as open work in \S\ref{sec:open_work}:
@@ -144,6 +146,53 @@ The closure has compounding value across five CPP sectors --- SM-2 (chirality co
 \subsection{Strict-C inheritance discipline}\label{sec:strict_c}
 
 This paper distinguishes claims at three rigor levels per the strict-C inheritance discipline established by SS-7~\cite{abshier_ss7}, SS-8, SS-9~\cite{abshier_ss9}, SF-4, and SF-2. \emph{Theorem level}: derived rigorously from the foundational input stack plus CPP axioms with end-to-end numerical verification (Theorem~\ref{thm:composite_cap_we}). \emph{FI-inherited level}: accepted as foundational inputs to the closure (FI-C-1 through FI-C-10), flagged explicitly in \S\ref{sec:fi_summary}. \emph{Structural-argument level}: supported by structural observations but not yet at theorem-level rigor (the $\sin^2\theta_{13}$ candidate $\gamma$ structural observation in \S\ref{sec:sin2theta13}). The conditional-closure framework~\cite{abshier_conditional_closure} routes all three into a single closure declaration: theorem-level claims hold rigorously under the FI-inherited assumptions; structural-argument-level claims are reviewer-visible and registered as future work.
+
+\subsection{Derivation roadmap}\label{sec:roadmap}
+
+Figure~\ref{fig:derivation_flow} summarizes the structural inputs and the eight-step composition that produces $|M| = \chi/6$ and the primary empirical prediction $\DeltapLR$. Each arrow represents a structurally fixed transition (foundational input, derivation principle, or composition step) with zero free parameters at any stage. The figure is the visual companion to the textual derivation in \S\ref{sec:substrate_vacuum} through \S\ref{sec:dplr}; readers tracing the proof at the level of structural ingredients can follow the figure top-to-bottom and match each transition to its corresponding section.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.7em and 1.5em,
+    box/.style={
+        rectangle, rounded corners=3pt,
+        draw=black!70, very thick,
+        minimum width=14em, minimum height=2.3em,
+        align=center, font=\small,
+        fill=blue!5
+    },
+    inputbox/.style={
+        box, fill=green!8, draw=green!50!black
+    },
+    outputbox/.style={
+        box, fill=orange!10, draw=orange!50!black, minimum width=16em
+    },
+    arr/.style={-{Latex[length=2.5mm,width=2mm]}, thick, draw=black!70},
+    label/.style={font=\footnotesize\itshape, midway, right=0.4em, align=left, text width=14em}
+]
+
+\node[inputbox] (h4i4) {$\Hfour \to \Ifour$ chirality breaking};
+\node[inputbox, below=of h4i4] (chi) {$|\chi| = \phig^{-3} \approx 0.2361$ \quad (FI-C-9)};
+\node[box, below=of chi] (tba2) {$T_{A_2}(b)$, \, $b = \chi/\sqrt{3}$};
+\node[box, below=of tba2] (mk3) {$|M_{\Kthree}| = \chi$ \quad (K3-amplitude factor)};
+\node[box, below=of mk3] (mperp) {$|M_\perp| = d_E/V_\text{cage} = 2/12 = 1/6$ \quad (FI-C-10)};
+\node[box, below=of mperp, minimum width=16em] (m) {$|M| = |M_{\Kthree}| \cdot |M_\perp| = \chi/6 \approx 0.0394$};
+\node[outputbox, below=of m] (dplr) {$\DeltapLR = |M|$ \quad (primary prediction)};
+
+\draw[arr] (h4i4) -- (chi) node[label]{symmetry breaking (\S\ref{sec:h4_i4})};
+\draw[arr] (chi) -- (tba2) node[label]{chirality-eigenvalue matching (\S\ref{sec:k3_amplitude_factor})};
+\draw[arr] (tba2) -- (mk3) node[label]{$\Sthree$ irrep selection (Lemma~\ref{lem:k3_factor})};
+\draw[arr] (mk3) -- (mperp) node[label]{cage-shell averaging (\S\ref{sec:cage_shell_factor_motivation})};
+\draw[arr] (mperp) -- (m) node[label]{composition (Theorem~\ref{thm:composite_cap_we})};
+\draw[arr] (m) -- (dplr) node[label]{parity-violation observable (\S\ref{sec:dplr})};
+
+\end{tikzpicture}
+\caption{Derivation flow from $\Hfour \to \Ifour$ chirality symmetry breaking at the 600-cell substrate to the primary empirical prediction $\DeltapLR$. Green boxes are substrate-physics foundational inputs; blue boxes are derivation-level structural composition steps; the orange box is the observable. The composition has zero free parameters: $\phig^{-3}$, $2/12$, and $\chi/\sqrt{3}$ are all structurally fixed (\S\ref{sec:nontriviality}).}
+\label{fig:derivation_flow}
+\end{figure}
+
+The figure also makes visible the load-bearing assumptions: the two green substrate-physics boxes (FI-C-9 and the $\Hfour \to \Ifour$ symmetry breaking that produces it) are postulates at v1.0 with first-principles closure deferred to sub-claim (a) + (b) work (\S\ref{sec:open_subclaim_a}, \S\ref{sec:open_subclaim_b}). The FI-C-10 box is similarly a foundational input with first-principles closure registered separately (\S\ref{sec:open_fi_c10}). The three remaining boxes are theorem-level derivations within the v1.0 scope. The conditional-closure framework~\cite{abshier_conditional_closure} declares the closure under these explicitly-marked assumptions.
 
 \section{Substrate-Vacuum Broken-Symmetry Physics}\label{sec:substrate_vacuum}
 
@@ -477,28 +526,39 @@ For the icosahedral cage hosting the K3-doublet states:
 
 The DI-bit propagation argument and the Schur-orthogonality argument produce the same answer ($1/6$) because they are expressing the same structural principle from different starting points. Both arguments rely on the cage symmetry $\Dsix$ having order 12 and the chirality-doublet representation having dimension 2.
 
+\textbf{Argument 3: Precedent from cage-shell mass-observable extension (FI-C-6).}
+
+The cage-shell averaging mechanism is not introduced for the first time at FI-C-10. SF-4 v4.0~\cite{abshier_sf4} establishes the cage-shell extension for the \emph{mass} observable on the K3-doublet (FI-C-6), with the same averaging factor $d_E/V_\text{cage} = 1/6$ on the same icosahedral cage. The mechanism is theorem-level in SF-4 via the Composite K3-Cage-Shell Coupling Theorem (THEO-SF-4-5), with end-to-end numerical verification across the charged-lepton mass hierarchy.
+
+FI-C-10 extends this same mechanism from the mass observable to the broader class of $\Dsix$-equivariant observables on K3-doublet states, in particular the chirality observable $\Cchi$ (which transforms in $B_2$ of $\Dsix$). The extension is the conjecture that the cage-shell coupling structure does not depend on the specific irrep content of the observable --- the averaging mechanism is observable-class-independent under substrate isotropy. This is the load-bearing claim of FI-C-10.
+
+The precedent argument strengthens the FI-C-10 plausibility on three grounds: (i) the mechanism is not a new construction invented for the chirality case but an established theorem-level result in the mass case extended by observable class; (ii) the same numerical factor $1/6$ emerges from the same cage geometry and irrep structure, providing a consistency check; (iii) the only step requiring justification at FI-C-10 is the observable-class-independence claim, which is narrower than ``Schur orthogonality on the cage produces a physical averaging factor'' in general.
+
+The observable-class-independence claim has registered first-principles closure as open work in \S\ref{sec:open_fi_c10}: a future derivation showing the cage-shell mechanism is genuinely observable-class-independent (e.g., via DI-bit propagation paths not coupling to the irrep content) closes the FI-C-10 gap at theorem level.
+
 \textbf{Why the numerical coincidence $V_\text{cage} = |\Dsix| = 12$ is not coincidence.}
 
 The structural identity $V_\text{cage} = |\Dsix| = 12$ has physical content: the icosahedral cage hosting the K3-doublet has exactly the order of the K3-doublet's stabilizer group. This is a consequence of the substrate's geometric structure --- the 600-cell's icosahedral first shell hosts the same symmetry group $\Sthree \times \mathbb{Z}_2$ that stabilizes the K3 base extended over the cage. The two ways of writing the averaging factor ($d_E/V_\text{cage}$ from vertex-count averaging or $d_E/|\Dsix|$ from group-order averaging) reflect the same underlying isotropy structure, not numerical coincidence.
 
 \textbf{What this motivation establishes (and does not establish).}
 
-The two arguments above establish \emph{physical plausibility} for FI-C-10's cage-shell averaging at $|M_\perp| = 1/6$. They show that:
+The three arguments above establish \emph{physical plausibility} for FI-C-10's cage-shell averaging at $|M_\perp| = 1/6$. They show that:
 
 \begin{enumerate}\setlength\itemsep{0.2em}
-    \item The averaging factor is consistent with two independent CPP axioms (A4 and A3).
+    \item The averaging factor is consistent with two independent CPP axioms (A4 substrate isotropy + A3 DI-bit propagation).
     \item The averaging factor is not arbitrary --- it is fixed by the cage geometry and irrep structure with no free parameter.
     \item The averaging factor agrees with the formal Schur-orthogonality result that Lemma~\ref{lem:cage_shell} derives below.
+    \item The averaging mechanism has theorem-level precedent in the mass observable (FI-C-6 via THEO-SF-4-5), with FI-C-10 extending the same mechanism to a broader observable class.
 \end{enumerate}
 
 What the arguments do \emph{not} establish:
 
 \begin{enumerate}\setlength\itemsep{0.2em}
-    \item A first-principles derivation of FI-C-10 from CPP axioms A1 through A11. The propagation-path counting and isotropy-averaging arguments are physically motivated but not formally derived from the axiom stack. Sub-claim work (\S\ref{sec:open_fi_c10}) is required to close this gap.
-    \item The uniqueness of FI-C-10 at theorem level. An alternative cage-shell extension mechanism could in principle produce a different averaging factor; ruling out alternatives requires the full substrate-dynamics derivation.
+    \item A first-principles derivation of FI-C-10 from CPP axioms A1 through A11. The propagation-path counting, isotropy-averaging, and SF-4 precedent arguments are physically motivated but the observable-class-independence claim that distinguishes FI-C-10 from FI-C-6 is not formally derived from the axiom stack. Sub-claim work (\S\ref{sec:open_fi_c10}) is required to close this gap.
+    \item The uniqueness of FI-C-10 at theorem level. An alternative cage-shell extension mechanism could in principle produce a different averaging factor for chirality observables; ruling out alternatives requires the full substrate-dynamics derivation.
 \end{enumerate}
 
-The motivation establishes that FI-C-10 is the natural reading of the cage-shell coupling under substrate isotropy + DI-bit propagation, not an ansatz. At v1.0, the formal proof of Lemma~\ref{lem:cage_shell} proceeds from FI-C-10 as foundational input; first-principles closure of FI-C-10 is registered as future work.
+The motivation establishes that FI-C-10 is the natural reading of the cage-shell coupling under substrate isotropy + DI-bit propagation + FI-C-6 precedent, not an ansatz. At v1.0, the formal proof of Lemma~\ref{lem:cage_shell} proceeds from FI-C-10 as foundational input; first-principles closure of FI-C-10 is registered as future work.
 
 \subsubsection{Formal statement and proof}\label{sec:cage_shell_factor_lemma}
 
@@ -585,17 +645,18 @@ The identification $\DeltapLR = |M|$ rests on three observations:
 
 \subsubsection{Candidate experimental signatures}\label{sec:experimental_signature}
 
-A skeptical reviewer will ask: what is the explicit experimental operator corresponding to $\DeltapLR$, and how would it be directly measured? The current empirical anchor for $\DeltapLR \approx 0.04$ is the leptogenesis back-derivation from $\eta_B$ (\S\ref{sec:dplr_observed}), which is an inferred value at one structural-numerical level removed from direct measurement. Direct measurement of $\DeltapLR$ at the K3-doublet level is not currently feasible with existing experimental equipment. This subsection identifies candidate experimental routes for direct or indirect $\DeltapLR$ measurement, registered as future work in \S\ref{sec:open_experimental_route}.
+\textbf{What would experimentalists measure?} The chirality matrix element $|M|$ is the K3-doublet-level parity-violation asymmetry transmitted from the substrate-vacuum chirality magnitude $|\chi| = \phig^{-3}$ through the cage-shell averaging factor $1/6$ to the substrate-physics observable scale $\DeltapLR$. At the substrate level it is the off-diagonal matrix element of the $B_2$-irrep chirality operator $\Cchi$ between the two K3-doublet basis states $\{\PhiminusOne, \PhiminusTwo\}$ on the icosahedral cage. At the phenomenological level it is the parity-violation asymmetry between left-handed and right-handed K3-doublet eigenstates of weak-interaction processes mediated by the doublet --- but \emph{the K3-doublet structure is not directly accessible in current flavor-basis observables}, because substrate-level chirality is averaged out in conventional weak-interaction measurements. The empirical anchor at $\DeltapLR \approx 0.04$ used in this paper is the leptogenesis back-derivation from the cosmological baryon asymmetry $\eta_B$ (\S\ref{sec:dplr_observed}); this is an inferred value one structural-numerical level removed from direct laboratory measurement.
 
-\textbf{Route 1: Parity-violating asymmetries in K3-doublet-mediated weak processes.} The most direct route. The substrate-level K3-doublet states $\{\PhiminusOne, \PhiminusTwo\}$ carry the chirality bias $\Cchi$; this bias would manifest as an asymmetry between left-handed and right-handed K3-doublet eigenstates in weak processes mediated by the K3-doublet. In conventional terms: precision measurements of parity-violation asymmetries in charged-lepton beta decays at sub-percent precision, with the K3-doublet structure resolved at the substrate level. The technical obstacle: the K3-doublet structure is not directly accessible in current weak-interaction experiments because the substrate-level chirality is averaged out in the conventional flavor-basis observables. Resolving the K3-doublet at the level of weak-process angular distributions would require a precision-electroweak experimental programme that has not yet been undertaken; the experimental signature at substrate level is presently a future-work item.
+\textbf{Four experimental access routes.} Direct K3-doublet-level measurement is not currently feasible. Four indirect access routes connect the substrate-level observable to measurable quantities, in order of inference-chain length from substrate to laboratory:
 
-\textbf{Route 2: Indirect inference from precision electroweak measurements.} The W boson decay angular distributions and Z pole asymmetries at sub-percent precision (HL-LHC Run 4--5; FCC-ee if built) probe the K3-doublet structure indirectly through the cage-shell coupling pattern that the Capotauro chirality matrix element inherits from SF-2's W bracelet $\Dsix$ stabilizer (FI-C-4 inheritance). The chirality matrix element $|M| = \chi/6$ feeds into the W$^\pm$ catalyst framework predictions; precision-electroweak measurements that constrain the catalyst framework's parameters can therefore indirectly constrain $\DeltapLR$. The constraint is loose at current precision (sub-percent) but tightens with HL-LHC precision-electroweak measurements. The exact inference protocol from precision-electroweak observables to $\DeltapLR$ is a future-work item for the SF-2 framework (\S\ref{sec:cross_sector_implications}).
+\begin{enumerate}\setlength\itemsep{0.3em}
+    \item \textbf{Direct K3-doublet parity-violation} (presently inaccessible): precision parity-violation asymmetries in charged-lepton beta decays with K3-doublet structure resolved at the substrate level. Requires a precision-electroweak experimental programme not yet undertaken; the experimental signature exists in principle but not in current practice.
+    \item \textbf{Indirect via precision electroweak} (HL-LHC Run 4--5, FCC-ee if built): W boson decay angular distributions and Z pole asymmetries at sub-percent precision probe the K3-doublet structure indirectly through the cage-shell coupling pattern inherited from SF-2's W bracelet $\Dsix$ stabilizer (FI-C-4). The chirality matrix element feeds into the W$^\pm$ catalyst framework; precision-electroweak constraints on the catalyst framework therefore indirectly constrain $\DeltapLR$. Loose at current precision; tightens with HL-LHC.
+    \item \textbf{Indirect via precision PMNS} (JUNO, DUNE, Hyper-K): future SF-2 v2.0+ Q11 work (\S\ref{sec:open_q11}) will deliver the explicit $|M| \to \sin^2\theta_{13}$ relation at theorem level. Once that relation is closed, per-mille-precision PMNS measurements translate to constraints on $\DeltapLR$. Longer inference chain than route 2, higher experimental precision.
+    \item \textbf{Cosmological back-derivation refinement} (Planck-class, CMB-S4): improved $\eta_B$ measurements tighten the leptogenesis back-derived anchor for $\DeltapLR$ below the current $\sim 10\%$ uncertainty (\S\ref{sec:dplr_what_2_percent_means}). Same inference framework as the current anchor, with reduced uncertainty.
+\end{enumerate}
 
-\textbf{Route 3: Cross-sector inference from precision PMNS measurements.} The Capotauro chirality matrix element feeds into PMNS perturbations at theorem level via the cross-sector inheritance pattern (\S\ref{sec:sf4_inheritance_section}); future SF-2 v2.0+ work on Q11 (\S\ref{sec:open_q11}) will deliver the explicit $|M| \to \sin^2\theta_{13}$ relation. Once that relation is closed at theorem level, precision PMNS measurements at JUNO, DUNE, and Hyper-K constrain $\sin^2\theta_{13}$ and hence (indirectly) the Capotauro chirality matrix element. The chain of inference is longer than Route 2 but the experimental precision is higher: JUNO's reactor measurements probe $\sin^2\theta_{13}$ to per-mille precision, and the cross-sector inference would translate that into a constraint on $\DeltapLR$ via $|M|$ at comparable precision (modulo the cross-sector inference uncertainty).
-
-\textbf{Route 4: Cosmological back-derivation refinement.} The current empirical anchor $\DeltapLR \approx 0.04$ is the inferred value from leptogenesis back-derivation of $\eta_B$. As cosmological measurements of $\eta_B$ improve (Planck-class future experiments; CMB-S4), the back-derived value tightens. Future $\eta_B$ measurements at sub-percent precision (improvements over Planck 2018's $\sim 0.7\%$ precision) would tighten the empirical anchor for $\DeltapLR$ below the current $\sim 10\%$ back-derivation uncertainty (\S\ref{sec:dplr_what_2_percent_means}). The improved anchor is itself an indirect measurement, but with reduced cross-derivation uncertainty.
-
-\textbf{Honest framing of the experimental landscape.} At the v1.0 ship date, no route delivers direct K3-doublet-level $\DeltapLR$ measurement at the precision the Capotauro prediction warrants ($\pm 2\%$ of $\chi/6$). Routes 1 through 4 outline plausible experimental programmes; whether any is fundable, technically feasible, or scientifically prioritized in the 2026--2032+ window is an experimental-programme question outside the Capotauro paper's scope. The paper's primary empirical content at v1.0 is the structural-numerical consistency between $\chi/6 \approx 0.0394$ and the leptogenesis back-derived $\sim 0.04$ at the $2\%$ level (\S\ref{sec:dplr_what_2_percent_means}); direct measurement awaits future experimental work.
+\textbf{Honest framing of the experimental landscape.} At the v1.0 ship, no route delivers direct K3-doublet-level $\DeltapLR$ measurement at the $\pm 2\%$ precision the Capotauro prediction warrants. The paper's primary empirical content is the structural-numerical consistency between $\chi/6 \approx 0.0394$ and the leptogenesis back-derived $\sim 0.04$ at the $2\%$ level (\S\ref{sec:dplr_what_2_percent_means}); direct K3-doublet measurement awaits future experimental work registered in \S\ref{sec:open_experimental_route}. Routes 2 and 3 are the most likely pathways to non-cosmological empirical engagement on the 2026--2035+ horizon, depending on which experimental programmes proceed.
 
 \subsection{Predicted value}\label{sec:dplr_predicted}
 
@@ -926,7 +987,7 @@ The post-v1.0 work plan for the Capotauro paper:
 
 \section{Discussion}\label{sec:discussion}
 
-This section places the Capotauro paper in the broader CPP programme context. Five topics: the programme-level empirical-matching pattern at $1$--$2\%$ at integer counts (\S\ref{sec:programme_pattern}); cross-sector implications across SM-2, SM-4, SM-5, SF-2, SF-4 sectors (\S\ref{sec:cross_sector_implications}); the methodological observation on first programme-level theorem registered ahead of paper publication (\S\ref{sec:method_theorem_ahead}); the methodological observation on Tier 4 reasoning recovery as enabler of the closure trajectory (\S\ref{sec:method_tier4}); and the outlook on the 2026--2032+ experimental landscape relevant to Capotauro predictions (\S\ref{sec:outlook}).
+This section places the Capotauro paper in the broader CPP programme context. Four topics: the programme-level empirical-matching pattern at $1$--$2\%$ at integer counts (\S\ref{sec:programme_pattern}); cross-sector implications across SM-2, SM-4, SM-5, SF-2, SF-4 sectors (\S\ref{sec:cross_sector_implications}); two methodological observations on the closure trajectory (\S\ref{sec:methodological_observations}); and the outlook on the 2026--2032+ experimental landscape relevant to Capotauro predictions (\S\ref{sec:outlook}).
 
 \subsection{Programme-level pattern: integer counts and substrate primitives at $1$--$2\%$}\label{sec:programme_pattern}
 
@@ -957,28 +1018,13 @@ The Capotauro paper closes OPEN-SM-4 sub-claim (c) and has compounding value acr
 
 The cross-sector entanglement pattern is the structural manifestation of CPP's unification thesis: parity violation is not a sector-local phenomenon but a substrate-wide phenomenon transmitted from substrate-vacuum chirality $\chi$ to multiple observable channels through cage-specific Wigner-Eckart factorizations. The Capotauro paper is the first programme-level synthesis of this cross-sector phenomenon.
 
-\subsection{Methodological observation: first programme-level theorem registered ahead of paper publication}\label{sec:method_theorem_ahead}
+\subsection{Methodological observations}\label{sec:methodological_observations}
 
-Theorem~\ref{thm:composite_cap_we} (THEO-CAP-1 in~\cite{abshier_theorem_registry}) was registered at programme level Session 103 Patch 0397, three patches before this paper's outline (Session 104 Patch 0398). This is the first programme-level theorem registered ahead of its own paper publication in the CPP corpus.
+Two programme-internal methodological observations relevant to readers tracking CPP's research process.
 
-The methodological pattern: sub-claim closures can reach programme-level theorem-registry registration via working sketches before the dedicated flagship paper is drafted, provided four conditions are met:
+\textbf{First programme-level theorem registered ahead of paper publication.} Theorem~\ref{thm:composite_cap_we} (THEO-CAP-1 in~\cite{abshier_theorem_registry}) was registered at programme level three patches before this paper's outline.\footnote{Theorem registered at Session 103 Patch 0397; paper outline at Session 104 Patch 0398.} This is the first programme-level theorem registered ahead of its own paper publication in the CPP corpus. The pattern decouples theorem-registry registration from paper-drafting timeline: sub-claim closures that pass rigorous proof + end-to-end numerical verification + empirical anchor consistency + honest scope-limitation framing can be programme-archived from working sketches before the dedicated flagship paper is drafted. The Capotauro paper at v1.0 is the publication-grade form of an already-registered programme-level theorem.
 
-\begin{enumerate}\setlength\itemsep{0.2em}
-    \item \textbf{Rigorous proof}: an eight-step (or comparable) derivation gathering structural ingredients across closure trajectory sessions.
-    \item \textbf{End-to-end numerical verification}: machine-precision verification at every intermediate checkpoint.
-    \item \textbf{Primary empirical prediction validated}: an empirical anchor available for $1$--$2\%$ structural-numerical consistency check.
-    \item \textbf{Honest scope-limitation framing}: re-scoped sub-problems explicitly registered as out of scope at v1.0 with cross-references to where they're closed.
-\end{enumerate}
-
-This pattern was established by the Capotauro closure trajectory (Sessions 87--103) and templates future theorem-registry registration from sub-claim closure trajectories across the corpus. The pattern is methodologically significant because it decouples theorem-registry registration from paper-drafting timeline: sub-claim closures that meet the four conditions can be programme-archived ahead of paper drafting, supporting incremental closure of larger open-problem registries.
-
-The Capotauro paper at v1.0 is then the publication-grade form of an already-registered programme-level theorem --- the .tex source is the external-audience packaging of the working-sketch closure trajectory, with multi-reviewer convergence as the v1.0 ship gate.
-
-\subsection{Methodological observation: Tier 4 reasoning recovery as enabler}\label{sec:method_tier4}
-
-The Sessions 87--102 Capotauro closure trajectory was made possible by Tier 4 reasoning recovery work across patches 0024--0028, which captured foundational SR-1, EW-1 through EW-5, SS-1, QM-1 through QM-6, and SM-1 through SM-5 reasoning into the four-tier documentation discipline. Without that recovery, FI-C-2 (K3 base structure + four-cage taxonomy from SM-1), FI-C-3 (TBM-aligned basis from SM-5), FI-C-7 (DP species taxonomy from SM-2), and the broader cross-sector inheritance pattern would have been operationally inaccessible during Sessions 87--102.
-
-The methodological observation generalizes: \emph{programme-level theorem closure across cross-sector inheritances depends on Tier 4 reasoning being accessible at the time of the closure attempt}. The four-tier documentation discipline is therefore not housekeeping --- it is the infrastructure that enables cross-sector closures. The Capotauro paper's closure trajectory is the first explicit demonstration of this dependency: the trajectory used FIs inherited from five sectors (SM-1, SM-2, SM-5, SF-2 v1.0, SF-4 v4.0), and the inheritance chain at theorem level required Tier 4 reasoning access to each source paper's derivation.
+\textbf{Tier 4 reasoning recovery as enabler.} The Capotauro closure trajectory was made possible by Tier 4 reasoning recovery work that captured foundational SR-1, EW-1 through EW-5, SS-1, QM-1 through QM-6, and SM-1 through SM-5 reasoning into the four-tier documentation discipline. Without that recovery, FI-C-2 (K3 base structure from SM-1), FI-C-3 (TBM-aligned basis from SM-5), FI-C-7 (DP species taxonomy from SM-2), and the broader cross-sector inheritance pattern would have been operationally inaccessible. The four-tier documentation discipline is infrastructure that enables cross-sector closures rather than housekeeping; this paper's trajectory used FIs inherited from five sectors and required Tier 4 reasoning access to each source paper's derivation.
 
 \subsection{Outlook on 2026--2032+ experimental landscape}\label{sec:outlook}
 

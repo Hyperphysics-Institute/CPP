@@ -12,6 +12,24 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
+## Version 0.8 — 16 May 2026 (Session 118, Patch 0411)
+
+**v0.8 substantive expositional polish from ChatGPT v0.7 round-2 review (Patch 0411, Session 118)**
+
+ChatGPT v0.7 round-2 review (archived at `reviews/chatgpt_v0.7_session_117.md` per Patch 0410) was overall strongly positive ("v0.7 is meaningfully better than v0.6. Not incrementally better — structurally better.") and identified five high-leverage v0.8 items. All five addressed in Patch 0411 in a single coherent expositional-polish pass with no new physics content (refinement of presentation of physics content already in the paper):
+
+- **Item #5 (highest-value v0.8 addition)** — NEW §1.7 "Derivation roadmap" with TikZ figure showing the structural composition flow from H₄ → I₄ chirality breaking through χ = φ⁻³ (FI-C-9) → T_{A_2}(b) chirality-eigenvalue matching → |M_{K_3}| = χ (K3-amplitude factor) → |M_⊥| = d_E/V_cage = 1/6 (FI-C-10 cage-shell averaging) → |M| = χ/6 ≈ 0.0394 (composition) → Δp_LR (primary prediction). Green boxes = substrate-physics foundational inputs; blue boxes = derivation-level structural composition steps; orange box = observable. Figure also makes load-bearing assumptions visible (two green boxes are postulates with first-principles closure deferred to sub-claim (a)+(b) v2.0+ work; FI-C-10 box is foundational input with first-principles closure registered separately). Required adding `arrows.meta` and `shapes.geometric` to TikZ libraries in preamble. Substantially improves new-reader accessibility per ChatGPT's specific request.
+- **Item #4** — Cross-reference paragraph added to §1.2 (What this paper delivers) explicitly noting that χ/6 ≈ 0.0394 is not parameter-selected to match empirical anchor 0.04 (three structural inputs independently fixed; zero free parameters) and cross-referencing §6.6 nontriviality argument. Makes the structural-constraint argument discoverable from the introduction for new readers who jump to §1 only. No new content (§6.6 unchanged from Patch 0407).
+- **Item #1 (bounded; full closure deferred to v2.0+)** — §5.4 FI-C-10 motivation strengthened with new Argument 3: SF-4 v4.0 precedent for cage-shell mass-observable extension via FI-C-6 (Composite K3-Cage-Shell Coupling Theorem THEO-SF-4-5). Same averaging factor d_E/V_cage = 1/6 emerges from same cage geometry and irrep structure for the mass observable at theorem level; FI-C-10 extends to chirality observable via observable-class-independence claim (narrower than "Schur orthogonality on cage produces physical averaging factor" in general). Strengthens FI-C-10 plausibility on three grounds: established mechanism not new construction; same numerical factor from same structural setup; only observable-class-independence claim requires first-principles closure work. What-establishes/what-does-not-establish caveats updated to include the FI-C-6 precedent in the establishes list.
+- **Item #2** — §6.1.1 rewritten with compact "what would experimentalists measure?" opening paragraph followed by enumerated-not-multi-paragraph four-route summary. New opening establishes the observable's substrate-level identity (off-diagonal matrix element of B₂-irrep chirality operator Ĉ_χ between K3-doublet basis states on icosahedral cage) and its phenomenological connection (parity-violation asymmetry between left-handed and right-handed K3-doublet eigenstates) along with the technical obstacle (K3-doublet structure averaged out in conventional flavor-basis observables). Four routes (direct K3-doublet inaccessible, indirect via precision electroweak HL-LHC/FCC-ee, indirect via precision PMNS JUNO/DUNE through Q11 closure in SF-2 v2.0+, cosmological back-derivation refinement Planck-class/CMB-S4) presented in compact enumerated form rather than four multi-paragraph route entries. Net more digestible while preserving all four route descriptions.
+- **Item #3** — §10 Discussion compressed: §10.3 and §10.4 methodological observations (first-programme-level-theorem-registered-ahead-of-paper-publication and Tier-4-reasoning-recovery-as-enabler) merged into single §10.3 with both observations presented as flowing-prose subparagraphs rather than separate subsections with enumerated lists. §10 intro paragraph updated from "Five topics" to "Four topics" to match the new structure. Substantive content preserved (both observations remain accessible to programme-internal readers); presentation tightened.
+
+Source grew 1112 → 1158 lines (+46 net). Theorem environments unchanged at 6. pdflatex two-pass clean: 44 pages, 566 KB.
+
+After v0.8 ship: paper routes to CoPilot + Grok for parallel review per restored programme practice (.tex source + framework specification); ChatGPT round-3 not required unless v0.8 introduces substantive new physics content (it does not under the disposition).
+
+---
+
 ## Version 0.7 — 16 May 2026 (Sessions 114–115, Patches 0407 + 0408)
 
 **v0.7 Group A — substantive physics incorporation from ChatGPT v0.6 review (Patch 0407, Session 114)**
@@ -109,7 +127,8 @@ Both sketches remain canonical Tier 4 reasoning sources; the .tex paper is the e
 | 0408 | 115 | v0.7 (Group B) | Paper | Writing/style + title-block cleanup + this changelog file creation + ships v0.7 PDF for ChatGPT round-2 |
 | 0409 | 116 | — | Programme | Programme-infrastructure standardization of changelog-architecture convention (codifies Patch 0408 reference implementation as programme-wide rule across `operating_system.md` + `paper-formatting.md` + `documentation-suite.md` + `paper_production_workflow.md` + `paper_completion_checklist.md` + `bootup.md`; forward-only migration policy) |
 | 0410 | 117 | — | Review | ChatGPT v0.7 round-2 review archived at `reviews/chatgpt_v0.7_session_117.md` (overall strongly positive; four remaining issues mapped to v0.8 disposition table) |
+| 0411 | 118 | v0.8 | Paper | Substantive expositional polish — all five ChatGPT v0.7 items: NEW §1.7 derivation-flow TikZ figure + §1.2 cross-reference to §6.6 + §5.4 FI-C-6 precedent argument for FI-C-10 + §6.1.1 tightening + §10 methodological observations merged into single subsection |
 
 ---
 
-*Last updated: Session 117, Patch 0410 (16 May 2026)*
+*Last updated: Session 118, Patch 0411 (16 May 2026)*
