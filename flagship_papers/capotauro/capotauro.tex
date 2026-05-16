@@ -4,6 +4,41 @@
 % A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)
 % Conscious Point Physics Flagship Paper Series (Capotauro line)
 %
+% Version 0.2 -- 16 May 2026 (Session 107, Patch 0400 — §2
+%   Substrate-Vacuum Broken-Symmetry Physics + §3 The K3-Doublet
+%   and the Chirality Observable expanded from v0.1 stubs to full
+%   v0.2 draft quality. v0.2 ships: (i) §2 fully drafted across
+%   four subsections — §2.1 The H_4 → I_4 chirality Z_2 (substrate
+%   geometric structure + symmetry groups + the racemic geometric
+%   vs the chiral substrate-vacuum state distinction); §2.2 FI-C-9
+%   substrate-vacuum order parameter (|χ| = φ^-3 from natural
+%   distance-ratio bias of the broken phase; sign of χ as frozen
+%   boundary condition; universality of empirical chirality across
+%   scales); §2.3 The χ = φ^-1 vs φ^-2 vs φ^-3 inconsistency
+%   resolution (historical mass-form attempts; Session 87 reframing
+%   decision; methodological note on SSB framing vs postulated-
+%   initial-bias framing); §2.4 The empirical anchor (Δp_LR ≈ 0.04
+%   in the electroweak sector + CEERS U-100588 / Gandolfi et al.
+%   2025 cosmological context as supportive but not load-bearing);
+%   (ii) §3 fully drafted across five subsections — §3.1 K3 base
+%   structure and four-cage taxonomy (FI-C-2); §3.2 K3-doublet
+%   TBM-aligned basis (FI-C-3 inherited from SF-4 v4.0); §3.3 The
+%   perpendicular wavefunction structure |χ_±⟩ (Session 91 FI-C-3
+%   extension formalization with ζ-parity-decomposed substrate
+%   orientation field at K3 location); §3.4 The chirality
+%   observable Ĉ_χ (irrep B_2 of D_6; ζ-ODD assignment from Finding
+%   C-W11); §3.5 Full K3-doublet basis states |Φ_-^(i)⟩ =
+%   |φ_-^(i)⟩ ⊗ |χ_i⟩; (iii) one new Definition (substrate-vacuum
+%   broken-symmetry order parameter) and one new Remark (the
+%   spontaneous-symmetry-breaking vs postulated-initial-bias
+%   framing equivalence at the level of v1.0 predictions);
+%   estimated v0.x drafting cycle continues: Sessions 108-109
+%   v0.3 develops §4 + §5 Theorem 5.1 with 8-step proof (the
+%   longest section of the paper); Session 110 v0.4 §6 + §7 + §8;
+%   Session 111 v0.5 §9 + §10 + §11; Session 112 v0.6 integration
+%   polish + first PDF compile; Sessions 113-115 v0.7-v0.9 AI
+%   review pass incorporation; Session 116 (est) v1.0 SHIP.)
+%
 % Version 0.1 -- 16 May 2026 (Session 105, Patch 0399 — v0.1 .tex
 %   foundation created at flagship_papers/capotauro/capotauro.tex
 %   per outline locked Session 104 Patch 0398. v0.1 ships with:
@@ -97,8 +132,8 @@
 \title{\textbf{The Capotauro Mechanism: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics}\\[6pt]
 {\large A Conditional Theorem Closure Paper for OPEN-SM-4 Sub-claim (c)}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 0.1 --- 16 May 2026}} \\[0.5em]
-{\normalsize v0.1 ships the paper structure modeled on SF-4 v1.0 conventions (Session 104 Patch 0398 outline lock; this v0.1 .tex foundation Session 105 Patch 0399). Estimated v0.x drafting cycle of $\sim 10$ sessions toward v1.0 SHIP via multi-reviewer convergence pattern (SF-4 v0.5 $\to$ v1.0 cycle: 5 AI review passes; SS-9 v0.5 $\to$ v1.0 cycle: 7 passes; SF-2 v0.5 $\to$ v1.0 cycle: 3 multi-reviewer pair-reviewer cycles). Source-of-truth working sketches: \texttt{flagship\_papers/capotauro/sketches/Capotauro\_chi\_phi\_closure.md} (parent, 681 lines) and \texttt{flagship\_papers/capotauro/sketches/Capotauro\_subclaim\_c\_wigner\_eckart.md} (sub-claim (c) working sketch, 2146 lines). Theorem-registry anchor: THEO-CAP-1 registered Session 103 Patch 0397.}}
+{\Large \textbf{Version 0.2 --- 16 May 2026}} \\[0.5em]
+{\normalsize v0.2 expands \S\ref{sec:substrate_vacuum} (Substrate-Vacuum Broken-Symmetry Physics) and \S\ref{sec:k3_doublet} (The $\Kthree$-Doublet and the Chirality Observable) from v0.1 stubs to full v0.2 draft quality (Session 107 Patch 0400). v0.1 ships the paper structure modeled on SF-4 v1.0 conventions (Session 104 Patch 0398 outline lock; Session 105 Patch 0399 v0.1 .tex foundation). Estimated v0.x drafting cycle of $\sim 10$ sessions toward v1.0 SHIP via multi-reviewer convergence pattern (SF-4 v0.5 $\to$ v1.0 cycle: 5 AI review passes; SS-9 v0.5 $\to$ v1.0 cycle: 7 passes; SF-2 v0.5 $\to$ v1.0 cycle: 3 multi-reviewer pair-reviewer cycles). Source-of-truth working sketches: \texttt{flagship\_papers/capotauro/sketches/Capotauro\_chi\_phi\_closure.md} (parent, 681 lines) and \texttt{flagship\_papers/capotauro/sketches/Capotauro\_subclaim\_c\_wigner\_eckart.md} (sub-claim (c) working sketch, 2146 lines). Theorem-registry anchor: THEO-CAP-1 registered Session 103 Patch 0397.}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -198,15 +233,109 @@ The conditional-closure framework~\cite{abshier_conditional_closure} routes all 
 
 \section{Substrate-Vacuum Broken-Symmetry Physics}\label{sec:substrate_vacuum}
 
-\textit{Section stub --- full draft target Session 107 (v0.2). Synthesis source: parent sketch \S 1.2 + \S 1.3 (FI-C-9) + \S 1.7.}
+This section establishes the substrate-vacuum chirality magnitude $|\chi| = \phig^{-3} \approx 0.236$ as the broken-symmetry order parameter of the $\Hfour \to \Ifour$ chirality $\mathbb{Z}_2$ at the 600-cell substrate level. The result is registered as foundational input FI-C-9 (Session 87 Patch 0381) and serves as the substrate-physics input to the Capotauro chirality matrix element derivation in \S\ref{sec:composite_we}. The closure derivation \emph{uses} FI-C-9 as input rather than deriving it; the symmetry-breaking dynamics themselves are out-of-scope at v1.0 and registered as sub-claim (b) work in \S\ref{sec:open_work}.
 
-This section establishes the substrate-vacuum chirality magnitude $|\chi| = \phig^{-3}$ as the broken-symmetry order parameter of the $\Hfour \to \Ifour$ chirality $\mathbb{Z}_2$ at the 600-cell substrate level. Key results to be developed: (i) the racemic geometric substrate vs the chiral substrate-vacuum state; (ii) the natural distance-ratio bias of the broken phase; (iii) the historical $\chi = \phig^{-1}$ vs $\phig^{-2}$ vs $\phig^{-3}$ inconsistency and its Session 87 resolution at $\phig^{-3}$; (iv) the empirical anchor $\DeltapLR \approx 0.04$ in the electroweak sector and the CEERS U-100588 / Gandolfi et al. 2025 cosmological context as supportive but not load-bearing.
+\subsection{The $\Hfour \to \Ifour$ chirality $\mathbb{Z}_2$}\label{sec:h4_i4}
+
+The 600-cell is the regular four-dimensional polytope with 120 vertices, 720 edges, 1200 faces, and 600 tetrahedral cells, with full symmetry group $\Hfour$ (the $H_4$ Coxeter group) of order 14{,}400. The rotational subgroup is the chiral icosahedral group $\Ifour = H_4^+$ of order 7{,}200, an index-2 normal subgroup with quotient $\Hfour / \Ifour = \mathbb{Z}_2$. The two enantiomorphic forms $[\text{600-cell}]_L$ and $[\text{600-cell}]_R$ are related by a reflection element of $\Hfour$ that is not contained in $\Ifour$~\cite{coxeter_1973}.
+
+The CPP substrate as a \emph{geometric structure} respects the full $\Hfour$: the polytope itself is racemic with no inherent left/right bias. This is verified at the level of the 600-cell's edge structure --- all 720 edges have a single length $1/\phig$ relative to the vertex-to-vertex unit distance, and the $\Hfour$ action is transitive on both vertices and edges. The substrate-as-structure carries no chirality.
+
+The substrate-vacuum \emph{state}, by contrast, is in one specific chirality. The broken-symmetry phase of the $\Hfour \to \Ifour$ symmetry breaking selects one of the two enantiomorphs; the broken-$\mathbb{Z}_2$ reflection element is no longer respected at the dynamical level. The distinction between substrate-as-structure (racemic, $\Hfour$-symmetric) and substrate-vacuum-state (chiral, $\Ifour$-symmetric) is critical: the geometric symmetry-respecting framework is preserved, while the vacuum state carries the broken-symmetry information.
+
+\subsection{The order parameter $|\chi| = \phig^{-3}$}\label{sec:order_parameter}
+
+\begin{definition}[Substrate-vacuum broken-symmetry order parameter]\label{def:chi_order_parameter}
+The substrate-vacuum chirality order parameter $\chi$ is the dimensionless quantity that characterizes the magnitude of the broken-symmetry bias in the $\Hfour \to \Ifour$ phase. Its magnitude is
+\[
+|\chi| = \phig^{-3} \approx 0.236,
+\]
+where $\phig = (1+\sqrt{5})/2$ is the golden ratio. The sign of $\chi$ (which enantiomorph is selected) is a frozen boundary condition coeval with the existence of Conscious Points (CPs) and Grid Points (GPs) themselves.
+\end{definition}
+
+The value $|\chi| = \phig^{-3}$ is the natural distance-ratio bias of the broken phase, registered as foundational input FI-C-9 (Patch 0381, Session 87)~\cite{abshier_capotauro_closure_sketch}. Several features motivate the registration:
+
+\begin{enumerate}\setlength\itemsep{0.2em}
+    \item \textbf{Distance-ratio appearance}. The 600-cell distance-shell structure features $\phig$-graded distances $d^2 \in \{1/\phig^2, 1, \phig^2, \ldots\}$. The $\phig^{-3}$ scale appears as the natural third-tier distance-ratio bias when the $\Hfour \to \Ifour$ symmetry-breaking selects between enantiomorphic distance-shell assignments.
+    \item \textbf{Cross-sector universality}. The empirical chirality manifests universally across CPP scales: the right-hand rule for $\vec{E} \times \vec{B}$ at every charge magnitude and DP-sea density; the V--A coupling in $W^\pm$-mediated weak interactions; the $\Kthree$ antibonding-doublet asymmetry in SM-5; the vacuum-chirality bias inferred from leptogenesis; the Capotauro nucleation-observable bias proposed in~\cite{abshier_grok_capotauro_2025}. This universality is consistent with a substrate-vacuum-level chirality bias rather than a mediator-specific chirality.
+    \item \textbf{Theorem 18.1 consistency}. The composite Capotauro Wigner-Eckart matrix element derived in \S\ref{sec:composite_we} requires the $\chi$ input at magnitude $\phig^{-3}$ to produce the empirical $\DeltapLR \approx 0.04$ within $2\%$.
+\end{enumerate}
+
+The sign of $\chi$ is not derived in this paper. The CPP framework treats sign-of-$\chi$ as a frozen boundary condition emerging at the same epoch as the existence of CPs and GPs --- the substrate-vacuum's chirality is a primitive property of the existence-state of the substrate, not a downstream consequence of any specific dynamical event.
+
+\begin{remark}[SSB framing vs postulated-initial-bias framing]\label{rem:ssb_vs_initial}
+The spontaneous-symmetry-breaking framing adopted here is mathematically equivalent to a postulated-initial-bias framing at the level of v1.0 predictions. The two readings produce identical $\chi$, $|M|$, $\DeltapLR$, $\delta_{CP}$, and $\eta_B$ predictions. They differ only in their treatment of the symmetry-breaking mechanism: the SSB framing situates the broken phase as the outcome of a substrate-thermodynamic transition (sub-claim (b) work for first-principles closure); the postulated-initial-bias framing treats the broken phase as a primitive existence-state of the substrate. The Capotauro paper at v1.0 makes empirical predictions independent of which framing is preferred; sub-claim (b) work in future versions will determine which framing is rigorously derivable from CPP axioms.
+\end{remark}
+
+\subsection{The $\chi$ inconsistency resolution at $\phig^{-3}$}\label{sec:chi_resolution}
+
+The CPP framework has historically engaged three candidate magnitudes for $|\chi|$: $\phig^{-1} \approx 0.618$ (the inverse golden ratio), $\phig^{-2} \approx 0.382$ (the second power), and $\phig^{-3} \approx 0.236$ (the third power)~\cite{abshier_capotauro_closure_sketch}. The historical Capotauro paper~\cite{abshier_grok_capotauro_2025} engaged $\phig^{-1}$ and $\phig^{-2}$ at different points without rigorous distance-ratio-bias argument. The empirical anchor $\DeltapLR \approx 0.04$ is too small to be consistent with $|\chi| = \phig^{-1}$ at the matrix-element level given the cage-shell averaging factor $1/6$, and too large to be consistent with $|\chi| = \phig^{-2}$ without additional suppression factors. The Session 87 reframing decision (Patch 0381) resolved the inconsistency at $|\chi| = \phig^{-3}$ via the natural distance-ratio bias of the broken $\Hfour \to \Ifour$ phase~\cite{abshier_capotauro_closure_sketch}. The resolution is the load-bearing input for the matrix-element calculation in \S\ref{sec:composite_we}.
+
+\subsection{The empirical anchor and cosmological context}\label{sec:empirical_anchor}
+
+The empirical anchor for the Capotauro v1.0 closure is the parity-violation asymmetry $\DeltapLR \approx 0.04$ inferred from the cosmological baryon asymmetry $\eta_B = (6.12 \pm 0.04) \times 10^{-10}$~\cite{planck_2018} via the standard leptogenesis back-derivation~\cite{abshier_grok_capotauro_2025}. The empirical value $\DeltapLR \approx 0.04$ is therefore not a direct measurement of any single laboratory observable; it is a parameter inferred from the cosmological baryon asymmetry under the leptogenesis framework. The Capotauro paper's $2\%$ agreement statement (\S\ref{sec:dplr}) compares the substrate-derived prediction $\chi/6 \approx 0.0394$ to this inferred value $0.04$ at the structural-numerical level, not as a precision laboratory test.
+
+The CEERS U-100588 cosmological anchor from~\cite{gandolfi_2025} provides supportive context for the Capotauro mechanism's cosmological timing but is not load-bearing for the v1.0 closure. The closure's empirical content rests on $\DeltapLR$ and the cross-sector inheritance from SM-2 (charge asymmetry mechanism), SF-2 (W bracelet $\Dsix$ stabilizer), and SF-4 (TBM-aligned $\Kthree$-doublet basis at theorem level). Independent of how the cosmological timing question resolves --- whether the Capotauro epoch is at the conventional electroweak symmetry-breaking $\sim 10^{-12}$~s post-Big-Bang, at the $\sim 120$~Myr post-Big-Bang figure proposed in~\cite{abshier_grok_capotauro_2025}, or at some intermediate epoch --- the v1.0 derivation of $|M| = \chi/6$ stands.
 
 \section{The K3-Doublet and the Chirality Observable}\label{sec:k3_doublet}
 
-\textit{Section stub --- full draft target Session 107 (v0.2). Synthesis source: sub-sketch \S 3-- \S 11; parent sketch \S 1.3 (FI-C-3).}
+This section establishes the $\Kthree$-doublet basis structure $\{\PhiminusOne, \PhiminusTwo\}$ and the substrate-level chirality observable $\Cchi$ in irreducible representation $B_2$ of the $\Kthree$ stabilizer $\Dsix = \Sthree \times \mathbb{Z}_2$. These are the operator and the states on which the Wigner-Eckart matrix element of \S\ref{sec:composite_we} is computed. The section assembles foundational inputs FI-C-2 (\S\ref{sec:k3_base}), FI-C-3 extended (\S\ref{sec:k3_tbm_basis} and \S\ref{sec:perpendicular_wavefunction}), and the $\zeta$-ODD assignment of $\Cchi$ (\S\ref{sec:chirality_observable}) into the substrate-physics object on which Theorem~\ref{thm:composite_cap_we} operates.
 
-This section establishes the $\Kthree$-doublet basis structure and the chirality observable $\Cchi$ at substrate level. Key results to be developed: (i) the $\Kthree$ base structure and four-cage taxonomy (FI-C-2 from SM-1); (ii) the $\Kthree$-doublet TBM-aligned basis $\{\phiminusOne, \phiminusTwo\}$ from the $\Sthree \to S_2$ branching rule (FI-C-3 inherited from SF-4 v4.0); (iii) the perpendicular wavefunction structure $|\chi_\pm\rangle$ as $\zeta$-parity-decomposed substrate orientation field at $\Kthree$ location; (iv) the chirality observable $\Cchi$ in irreducible representation $B_2$ of $\Dsix$ with the $\zeta$-ODD assignment from Finding C-W11; (v) the full $\Kthree$-doublet basis states $\PhiminusOne = \phiminusOne \otimes \chiplus$ and $\PhiminusTwo = \phiminusTwo \otimes \chiminus$.
+\subsection{The $\Kthree$ base structure and four-cage taxonomy (FI-C-2)}\label{sec:k3_base}
+
+The $\Kthree$ triangle is the equilateral 3-vertex graph $\Kthree = \{V_1, V_2, V_3\}$ with three colour-vertices and exact $C_3$ rotational symmetry. In CPP, $\Kthree$ realizes the K3 base of the charge-asymmetry framework (SM-1)~\cite{abshier_sm1}: each vertex $V_k$ carries a distinct colour assignment (red / green / blue or up / charm / top, depending on sector), and the three vertices are related by the cyclic $C_3$ symmetry of the triangle.
+
+The four-cage taxonomy from SM-1 assigns cage vertex counts $V \in \{4, 12, 20, 30\}$ to the four sub-particle types: tetrahedral $V=4$, icosahedral $V=12$, dodecahedral $V=20$, icosidodecahedral $V=30$. The cage taxonomy is foundational input FI-C-2 to the Capotauro closure --- the $V_\text{cage} = 12$ icosahedral first shell of the 600-cell, in particular, is the cage on which the cage-shell averaging factor $|M_\perp| = 1/6$ is computed in \S\ref{sec:composite_we}.
+
+\subsection{The $\Kthree$-doublet TBM-aligned basis (FI-C-3)}\label{sec:k3_tbm_basis}
+
+The K3 ZBW Hamiltonian on the $\Kthree$ base has spectrum $\lambda_+ = +2$ (bonding, once-degenerate) and $\lambda_- = -1$ (antibonding, doubly degenerate) by the K3 Spectral Theorem (THEO-SM-3)~\cite{abshier_sm3}. The antibonding doublet's two-dimensional space carries the relevant substrate structure for charged-lepton flavour identification.
+
+The TBM-aligned basis of the antibonding doublet is
+\[
+\phiminusOne = \frac{1}{\sqrt{6}}\,(2, -1, -1), \qquad
+\phiminusTwo = \frac{1}{\sqrt{2}}\,(0, -1, 1),
+\]
+selected at theorem level by the standard $\Sthree \to S_2$ representation-theory branching rule applied to the residual stabilizer of the charged-lepton $\Kthree$-vertex occupation~\cite{abshier_sf4}. Under the $\Sthree \to S_2$ branching, the $\mathbf{2}$-dimensional irreducible representation of $\Sthree$ on the antibonding doublet decomposes as $\mathbf{2}|_{S_2} = \mathbf{1}_+ \oplus \mathbf{1}_-$, uniquely (up to phase) selecting the TBM-aligned eigenstates. This is the Composite K3-Cage-Shell Coupling Theorem clause (ii) (THEO-SF-4-5) inherited cross-sector from SF-4 v4.0~\cite{abshier_sf4}.
+
+The TBM-aligned basis is the substrate-level reading of the tribimaximal mixing matrix $U_\TBM$ derived in SM-5~\cite{abshier_sm5}. The cross-sector inheritance from SF-4 is critical: without the theorem-level closure of the antibonding-doublet basis at SF-4 v4.0 (the first cross-sector closure in CPP), the Capotauro mechanism would lack the rigorous basis on which to define the chirality matrix element $|M|$ at theorem level.
+
+\subsection{The perpendicular wavefunction structure $\chiplus, \chiminus$}\label{sec:perpendicular_wavefunction}
+
+A substantive extension to FI-C-3 emerged at Session 91 (Patch 0385) during the closure trajectory~\cite{abshier_capotauro_subclaim_c_sketch}. The K3-amplitude part of the doublet $\{\phiminusOne, \phiminusTwo\}$ captures the colour-mode structure on the $\Kthree$ base, but the full substrate state at the K3 location also carries a perpendicular-direction wavefunction associated with the substrate orientation field at that location.
+
+We denote the perpendicular-direction wavefunctions by $\chiplus$ and $\chiminus$. These are the $\zeta$-EVEN and $\zeta$-ODD components of the substrate orientation field at the $\Kthree$ location, where $\zeta$ is the $\mathbb{Z}_2$ generator of the $\Dsix = \Sthree \times \mathbb{Z}_2$ structure on the $\Kthree$-doublet space. The full $\Kthree$-doublet basis states are then
+\[
+\PhiminusOne = \phiminusOne \otimes \chiplus, \qquad
+\PhiminusTwo = \phiminusTwo \otimes \chiminus,
+\]
+with the $\sigma_1\zeta$-EVEN pairing convention (Session 91 Finding C-W12)~\cite{abshier_capotauro_subclaim_c_sketch}. The pairing convention is required for the chirality matrix element $|M| = |\langle \Phi_-^{(1)} | \Cchi | \Phi_-^{(2)} \rangle|$ to be non-zero (Finding C-W11): the chirality observable $\Cchi$ is $\zeta$-ODD (\S\ref{sec:chirality_observable}), and a non-zero matrix element between $\Phi_-^{(1)}$ and $\Phi_-^{(2)}$ requires the perpendicular-wavefunction factors to be opposite-$\zeta$-parity.
+
+The perpendicular wavefunction structure is full consistency with the SF-4 v4.0 Composite K3-Cage-Shell Coupling Theorem (Finding C-W13)~\cite{abshier_capotauro_subclaim_c_sketch}; no SF-4 revision is required for the Capotauro inheritance. The extension is internal to the Capotauro paper's FI-C-3 reading and is captured as part of the foundational input enumeration in \S\ref{sec:fi_summary}.
+
+\subsection{The chirality observable $\Cchi$}\label{sec:chirality_observable}
+
+The chirality observable $\Cchi$ is the substrate-level operator that captures the $\Hfour \to \Ifour$ broken-symmetry chirality bias at the $\Kthree$ location. The operator transforms under the $\Kthree$ stabilizer $\Dsix = \Sthree \times \mathbb{Z}_2$ as follows:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item $\Sthree$-content: $\Cchi$ contains both $\mathbf{1}_-$ (sign representation, $\sigma_1$-ODD) and $\mathbf{2}$ ($E$-irrep) components in general; on the K3-amplitude subspace relevant to the matrix element, only the $\mathbf{1}_-$ component contributes (\S\ref{sec:d6_we}). The unique generator of the $A_2$-irrep ($\sigma_1$-ODD and $r$-invariant) component is $T_{A_2}(b) = i \cdot b \cdot S$, where $S$ is the real antisymmetric $3 \times 3$ matrix with cross-product-with-$(1,1,1)$ structure (Finding C-W21)~\cite{abshier_capotauro_subclaim_c_sketch}.
+    \item $\mathbb{Z}_2$-content: $\Cchi$ is $\zeta$-ODD (Finding C-W11)~\cite{abshier_capotauro_subclaim_c_sketch}. The $\zeta$-ODD assignment is the substrate-physics reading of the chirality observable: the chirality bias flips sign under the $\mathbb{Z}_2$ generator $\zeta$ of the K3-doublet stabilizer.
+\end{itemize}
+
+The composite irreducible representation of $\Cchi$ within $\Dsix = \Sthree \times \mathbb{Z}_2$ on the K3-amplitude $\times$ perpendicular-wavefunction tensor structure is $B_2$ (the irrep that is $\sigma_1$-ODD and $\zeta$-ODD). The Wigner-Eckart matrix element machinery in \S\ref{sec:d6_we} operates on $B_2$ operators acting on the $E$-doublet of $\Kthree$-amplitude states.
+
+\subsection{The full K3-doublet basis states for the matrix element}\label{sec:full_basis}
+
+Assembling the K3-amplitude basis (\S\ref{sec:k3_tbm_basis}) and the perpendicular-wavefunction extension (\S\ref{sec:perpendicular_wavefunction}), the full $\Kthree$-doublet basis states on which the Wigner-Eckart matrix element of Theorem~\ref{thm:composite_cap_we} is computed are
+\begin{equation}\label{eq:full_basis}
+\PhiminusOne = \frac{1}{\sqrt{6}}\,(2, -1, -1) \otimes \chiplus, \qquad
+\PhiminusTwo = \frac{1}{\sqrt{2}}\,(0, -1, 1) \otimes \chiminus.
+\end{equation}
+The matrix element to be computed in \S\ref{sec:composite_we} is then
+\[
+|M| = |\langle \Phi_-^{(1)} | \Cchi | \Phi_-^{(2)} \rangle|,
+\]
+where $\Cchi$ is the $B_2$-irrep operator described in \S\ref{sec:chirality_observable}. The Wigner-Eckart factorization separates this matrix element into K3-amplitude and cage-shell perpendicular-wavefunction factors (\S\ref{sec:composite_we}), each computable from the irreducible representation theory of $\Dsix$ together with FI-C-9 (substrate-vacuum order parameter, \S\ref{sec:substrate_vacuum}) and FI-C-10 (cage-shell extension to chirality observables, \S\ref{sec:composite_we}).
 
 \section{The $\Dsix$ Stabilizer and Wigner-Eckart Framework}\label{sec:d6_we}
 
