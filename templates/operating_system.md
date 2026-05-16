@@ -223,7 +223,7 @@ Standard structure:
 **Integration with version numbering:**
 - A round of review on v0.x feedback → integration produces v0.(x+1) or v1.0 depending on whether an external review has previously run.
 - Reviewer response documents are produced at the time of the review, with recommendations for the next version.
-- If multiple reviewer-response documents exist for the same version, the next version's CHANGELOG references each.
+- If multiple reviewer-response documents exist for the same version, the next version's entry in `documentation_suite/changelog-[S]-[N].md` references each.
 
 **What NOT to do:**
 - Do not produce a reviewer-response document after the paper has already been revised (produces hindsight bias).
@@ -255,22 +255,33 @@ Standard structure:
 
 **Exceptions — things that ARE maintained continuously during drafting:**
 - **Development transcript** (`[S]-[N]_development_transcript.md`) — updated session-by-session, documents evolution
-- **CHANGELOG block** in the `.tex` header — updated with each version
+- **Version history file** (`documentation_suite/changelog-[S]-[N].md`) — updated with each version; this is the canonical version archaeology for the paper. See ``Version-archaeology architecture rule'' below for the convention.
 - **Registry files** (`Research_Frontier.md`, `predictions.md`, `axiom-registry.md`) — updated when a paper introduces new entries
 - **Paper catalog** (`paper_catalog.md`) — paper row updated when version changes
 
-**Version-discipline rule (adopted Patch 0367, 14 May 2026).** Every patch that modifies a `.tex` source file beyond cosmetic whitespace MUST also increment the version marker rendered in the paper's `\title{}` block (typically the `{\Large \textbf{Version X.Y --- date}}` line on the title page). Failure to do this is a chronic source of reviewer confusion: when a reviewer requests the paper at "the current version" and the title-block string still shows an older version number, the reviewer's feedback is filed against the wrong version and integration becomes ambiguous.
+**Version-archaeology architecture rule (adopted Patch 0408, Session 115; codified Patch 0409, Session 116).** Each paper's version archaeology lives in a dedicated documentation-suite file `flagship_papers/<paper>/documentation_suite/changelog-<paper>.md` (or `series_<line>/papers/<paper>/documentation_suite/changelog-<paper>.md`). The `.tex` source carries only its current title block: title, sub-title, version line, author, date, institution. The `.tex` source MUST NOT carry either of the two version-archaeology patterns that were standard before 16 May 2026:
+
+1. **No CHANGELOG comment block at top of source**: the historical pattern of prepending `% Version 0.X -- ...` comment blocks (sometimes growing to 300+ lines of session-by-session development narrative) is retired. These blocks bloated source files and discouraged researcher entry into the paper source.
+2. **No visible version-history paragraph in the title block**: the historical pattern of including a `{\normalsize v0.X incorporates ... v0.(X-1) shipped ... }` paragraph rendered on the PDF title page below the version line is retired. These paragraphs ambushed first-time readers with programme archaeology before the abstract.
+
+The PDF title page renders only: title, sub-title (if any), Conscious Point Physics Flagship Paper Series identifier (if applicable), Version X.Y line + date, author, institution address block. New readers reach the abstract without programme-internal version archaeology in the way.
+
+Programme-internal version archaeology lives in `documentation_suite/changelog-<paper>.md` alongside development/transcript/reasoning/reviews files. The changelog file contains: paper meta-information (theorem-registry anchor if any, OPEN-problem status if any, maintainer); explicit purpose statement; version-by-version entries with substantive content summaries; working-sketches reference section; patch register table mapping patches to sessions and versions.
+
+**Migration policy**: forward-only at organic patch boundaries. Existing papers that still carry the old CHANGELOG-in-.tex-header + title-block-version-paragraph patterns (as of Patch 0409) keep them until the next substantive .tex patch touches the paper; that patch performs the migration as part of its scope. New papers create `documentation_suite/changelog-<paper>.md` at v0.1 ship-ready time.
+
+**Version-discipline rule (adopted Patch 0367, 14 May 2026; updated Patch 0409 to use changelog file).** Every patch that modifies a `.tex` source file beyond cosmetic whitespace MUST also increment the version marker rendered in the paper's `\title{}` block (typically the `{\Large \textbf{Version X.Y --- date}}` line on the title page). Failure to do this is a chronic source of reviewer confusion: when a reviewer requests the paper at "the current version" and the title-block string still shows an older version number, the reviewer's feedback is filed against the wrong version and integration becomes ambiguous.
 
 Operational protocol:
 1. **At patch-authoring time**: every `str_replace` / patch that touches `.tex` source content checks whether the title-block version string requires increment. If yes, the patch includes a line touching the version string (typically `vX.Y` → `vX.(Y+1)`) and the date if changed.
-2. **At pre-commit verification**: a quick grep for the version string against the patch description should confirm match. The CHANGELOG block in the `.tex` header should also receive a new entry describing the patch.
+2. **At pre-commit verification**: a quick grep for the version string against the patch description should confirm match. The paper's `documentation_suite/changelog-<paper>.md` should also receive a new entry describing the patch (per the version-archaeology architecture rule above).
 3. **At PDF compile time**: the title page is the most reliable place to verify the version is current; a mismatch between title-page version and recent patch history is a documentation defect to fix before the next reviewer round.
 
 This rule applies to all paper `.tex` files in `flagship_papers/`, `series_strong/papers/`, `series_standard_model/papers/`, etc. Companion `.tex` files (e.g., `sf-2_companion.tex`) carry their own version numbers and increment independently of the main paper version.
 
 Cosmetic-only patches (whitespace, comment-line edits, formatting) do not require version increment, but should be rare; the default assumption is that any patch substantively touching a `.tex` source crosses the increment threshold.
 
-**When a paper is at v0.x:** only the transcript, CHANGELOG, and registry entries are kept current. Do NOT start the 7-file suite.
+**When a paper is at v0.x:** only the transcript, `documentation_suite/changelog-<paper>.md`, and registry entries are kept current. Do NOT start the 7-file suite.
 
 **Create all 7 companion files per `documentation-suite.md` when the paper is stable.** Each file should note the paper version it documents (e.g., "Paper: SM-8 v1.0").
 
@@ -1039,7 +1050,7 @@ The `{scope}-README.md` prefix preserves the README convention's semantic (any t
 
 ### Version management
 - **ONE file per paper, overwritten with each revision.** Git history preserves all versions.
-- The `.tex` header contains a CHANGELOG block documenting each version.
+- The paper's `documentation_suite/changelog-<paper>.md` documents each version (per the version-archaeology architecture rule).
 - The development transcript documents WHY each version changed.
 - Do NOT create `SM-8_v1.tex`, `SM-8_v2.tex`, etc. — this creates clutter and confusion.
 - **Exception:** If a revision fundamentally changes scope, archive the old version in `archive/` with a note.
@@ -1090,7 +1101,7 @@ This rule supersedes the prior implicit convention that archival happened only a
 
 The v1.0 paper-completion checklist triggers the full 7-file documentation suite. Two *intermediate* registry-suite triggers exist beneath v1.0:
 
-1. **Substantial section-end with registry implications.** When a section-end commit (per commit-cadence rule) opens or partially resolves OPEN-SS problems, the following registry files must be checked for updates before the next session: `Research_Frontier.md` (new problems), `problem_histories/PH-*.md` (partial resolutions), paper's own `[paper].tex` CHANGELOG header (if the paper exists yet). If any are not updated, flag as "pending" in the section-end commit message.
+1. **Substantial section-end with registry implications.** When a section-end commit (per commit-cadence rule) opens or partially resolves OPEN-SS problems, the following registry files must be checked for updates before the next session: `Research_Frontier.md` (new problems), `problem_histories/PH-*.md` (partial resolutions), paper's own `documentation_suite/changelog-<paper>.md` entry (if the paper and its changelog file exist yet). If any are not updated, flag as "pending" in the section-end commit message.
 2. **Context-pressure crossing.** The §15 Session-close Handover Protocol four-item checklist (formerly in this section, see back-pointer above) includes registry updates as one of its four required items. This is an intermediate trigger independent of v1.0 milestone.
 
 These intermediate triggers prevent registry drift between the full v1.0 documentation-suite events, which can be weeks or months apart during exploratory development.
@@ -1414,7 +1425,7 @@ The protocol is also explicitly multi-repo from the start: CPP and RM are first-
 ### When to use each flow
 
 - **Git-Bash-Patch** — structural edits, multi-file changes, new files where commit-message structure and Claude's authorship should be recorded in git history, and any case where the patch needs to encode folder structure or file-move semantics. This is the default for substantive session work and for any commit touching 3+ files.
-- **Drag-drop + GitHub Desktop (for single-file drops)** — single new .tex paper files or single-file edits. Thomas downloads the file from Claude's outputs, renames to drop the `_v0.x` suffix (canonical filenames carry no version suffix; version history lives in the internal CHANGELOG), drops into the target folder via file explorer, and commits via GitHub Desktop with a sensible message. This is more ergonomic than Git-Bash-Patch for single-file cases and was adopted as the standard workflow for such cases on 24 April 2026 during the SS-8 v0.1 session. Claude still produces a format-patch as a fallback option in the same session in case Thomas prefers it, but the expectation for single-file drops is the drag-drop path.
+- **Drag-drop + GitHub Desktop (for single-file drops)** — single new .tex paper files or single-file edits. Thomas downloads the file from Claude's outputs, renames to drop the `_v0.x` suffix (canonical filenames carry no version suffix; version history lives in the paper's `documentation_suite/changelog-<paper>.md`), drops into the target folder via file explorer, and commits via GitHub Desktop with a sensible message. This is more ergonomic than Git-Bash-Patch for single-file cases and was adopted as the standard workflow for such cases on 24 April 2026 during the SS-8 v0.1 session. Claude still produces a format-patch as a fallback option in the same session in case Thomas prefers it, but the expectation for single-file drops is the drag-drop path.
 - **Direct-file-copy (legacy)** — single-file one-off edits Thomas makes himself, when Claude's authorship is not relevant. Thomas may still use this for his own edits.
 - **Claude Code (not yet in use for CPP)** — agentic-coding sessions where Claude has direct push access. Not currently configured for CPP; mentioned here for completeness.
 

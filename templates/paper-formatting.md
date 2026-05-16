@@ -96,15 +96,18 @@ Add paper-specific macros after these standard ones, with a comment block:
 
 ```latex
 \title{\textbf{[SERIES]-[NUMBER]: [Full Title]}\\[6pt]
-{\large 600-Cell Standard Model Emergence Series}\\[4pt]
-{\normalsize Version [N], [Date]}}
+{\large [Series identifier line, e.g. "Conscious Point Physics Flagship Paper Series"]}\\[4pt]
+{\Large \textbf{Version [X.Y] --- [Date]}}}
 
 \author{Thomas Lee Abshier, ND \and [AI authors]}
 
-\date{\normalsize Hyperphysics Institute\\
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
 \url{https://hyperphysics.com}\\
-\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: [DOI if registered]}
 ```
+
+**Clean title-page convention (adopted Patch 0408, Session 115; codified Patch 0409, Session 116).** The title block renders ONLY: title, sub-title or series identifier (if any), Version line + date, author, institution address block. The title block MUST NOT contain a visible version-history paragraph (e.g., `{\normalsize v0.X incorporates ... v0.(X-1) shipped ...}`). Such paragraphs were standard before 16 May 2026 but are retired because they ambush first-time readers with programme archaeology before the abstract. Programme-internal version archaeology lives in `documentation_suite/changelog-<paper>.md` (see `operating_system.md` ``Version-archaeology architecture rule'').
 
 ### 2.2 Version Numbering
 
@@ -133,27 +136,22 @@ Include only those AIs that made substantive contributions to the paper's conten
 
 ## 3. Comment Blocks
 
-### 3.1 Version History Block
+### 3.1 Source-file header block
 
 Place at the very top of the `.tex` file, before `\documentclass`:
 
 ```latex
 % ============================================================
 % [SERIES]-[NUMBER]: [Short Title]
-% Version [N] — [Date]
-%
-% CHANGELOG:
-%   v1   [Date] — Initial draft ([Author])
-%   v2   [Date] — Incorporated review feedback from [Reviewers]
-%   v2.1 [Date] — Added figures, keywords, acknowledgements
-%
-% CONTRIBUTORS:
-%   Thomas Lee Abshier ND — [specific contributions]
-%   Grok (xAI)           — [specific contributions]
-%   Claude Opus           — [specific contributions]
-%   Copilot (Microsoft)   — [specific contributions]
+% [Optional one-line descriptor — e.g. "A Conditional Theorem Closure Paper for OPEN-XX-N"]
+% Conscious Point Physics Flagship Paper Series (or appropriate series identifier)
+% Version history: flagship_papers/<paper>/documentation_suite/changelog-<paper>.md
 % ============================================================
 ```
+
+**No CHANGELOG comment block in source (adopted Patch 0408, Session 115; codified Patch 0409, Session 116).** The historical pattern of prepending `% Version 0.X -- ...` comment blocks at the top of `.tex` source files (sometimes growing to 300+ lines of session-by-session development narrative before the first non-comment line) is retired. These blocks bloated source files and discouraged researcher entry into the paper source. Source-file headers now carry only the minimal identification block above plus a pointer to the canonical changelog file.
+
+Contributor attribution that previously lived inside CHANGELOG blocks now lives in the paper's Acknowledgements section (when the 7-file documentation suite is produced post-v1.0) or in the `documentation_suite/changelog-<paper>.md` file's per-version entries (during v0.x drafting).
 
 ### 3.2 Section Markers
 
@@ -678,8 +676,9 @@ Use appendices for:
 Before declaring a paper "ready for OSF registration," verify:
 
 **Paper structure:**
-- [ ] Version number updated in title
-- [ ] Comment block at top of `.tex` with changelog and contributors
+- [ ] Version number updated in title block
+- [ ] Minimal source-file header block at top of `.tex` pointing to `documentation_suite/changelog-<paper>.md` (no inline CHANGELOG comment block; see §3.1)
+- [ ] `documentation_suite/changelog-<paper>.md` updated with current-version entry
 - [ ] Section marker comments (`% ===`) throughout `.tex`
 - [ ] Plain Language Summary after keywords
 - [ ] `\raggedright` applied after summary

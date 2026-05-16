@@ -444,7 +444,7 @@ The handover is a bounded state snapshot — a few hundred lines, not a full nar
 ### If no handover document exists yet for the named paper
 
 Some papers haven't reached the handover-document stage yet. If both paths above resolve to absent files in the local clone, fall back to:
-1. The paper's `.tex` file and its internal CHANGELOG header.
+1. The paper's `.tex` file and its `documentation_suite/changelog-<paper>.md` (per the version-archaeology architecture rule in `operating_system.md`).
 2. `Research_Frontier.md` for related open problems.
 3. Ask Thomas directly: "I don't see a handover or development document for this paper in the repo — can you point me to where the current state lives?"
 
@@ -512,7 +512,7 @@ Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
 
 **Paper IDs:** `[SERIES]-[NUMBER]` (SM-8, EW-3, QM-1, SR-1, SS-1, SD-5). Paper numbers are assigned sequentially within a series as new papers enter the repository.
 **Filenames:** `SM-8_quark_generation_600cell_shells.tex` — lowercase slug, no version number in filename
-**Versions:** `vX.Y` in the .tex header changelog. ONE file per paper, overwritten — Git history preserves all versions. Never create `_v1`, `_v2` copies.
+**Versions:** `vX.Y` shown in the .tex `\title{}` block (rendered on PDF title page); version archaeology lives in `documentation_suite/changelog-<paper>.md` (per version-archaeology architecture rule, `operating_system.md`). ONE .tex file per paper, overwritten — Git history preserves all versions. Never create `_v1`, `_v2` copies.
 **Codes:** AXIM (axiom), THEO (theorem), CORO (corollary), CONJ (conjecture), OPEN (open problem), FALS (falsified). See `nomenclature.md`.
 **LaTeX:** Follow `templates/paper-formatting.md`
 **Axiom numbering:** When two reviewers independently propose axiom entries (e.g., Grok proposes A9', Copilot proposes A8'), reconcile into one entry when updating `axiom-registry.md`. The registry is the single source of truth for axiom IDs.

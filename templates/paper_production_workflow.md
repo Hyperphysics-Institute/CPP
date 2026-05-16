@@ -47,7 +47,7 @@ Each CPP paper follows a production pipeline that has evolved through the SM-6 a
 **Immediately after discovery, while context is fresh.**
 
 1. Draft the `.tex` file following `templates/paper-formatting.md`:
-   - CHANGELOG comment block
+   - Minimal source-file header block pointing to `documentation_suite/changelog-<paper>.md` (no inline CHANGELOG comment block; see `paper-formatting.md` §3.1)
    - letterpaper, natbib authoryear, booktabs
    - Abstract, Keywords, Plain Language Summary
    - raggedright, Table of Contents
@@ -56,6 +56,7 @@ Each CPP paper follows a production pipeline that has evolved through the SM-6 a
    - **CPP-to-Conventional-Physics Mapping section** (see below)
    - Appendices (numerical verification, sensitivity analysis)
    - Acknowledgements with OSF DOI
+2. Create `documentation_suite/changelog-<paper>.md` with v0.1 entry (see `templates/documentation-suite.md` §9).
    - `.bib` bibliography: use the master file `bibliography/cpp_references.bib` via `\bibliography{../../bibliography/cpp_references}`. Alternatively, use an inline `thebibliography` block with `\bibitem{}` entries (no external .bib needed). **Do NOT create a new per-paper `[ID]_references.bib` file — those are deprecated.**
 2. Compile to PDF (pdflatex + bibtex, 3 passes).
 3. Run formatting audit (all template checks must pass).

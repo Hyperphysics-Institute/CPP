@@ -8,7 +8,7 @@
 
 ## Overview
 
-Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, plus optionally 2 lab-notebook-trio files (handover, transcript) that serve session-continuity purposes. The 8 doc-suite files serve different audiences and purposes:
+Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, plus the `changelog-[S]-[N].md` version-archaeology file (which is maintained continuously from v0.1), plus optionally 2 lab-notebook-trio files (handover, transcript) that serve session-continuity purposes. The 8 doc-suite files serve different audiences and purposes:
 
 | File | Audience | Purpose |
 |------|----------|---------|
@@ -21,9 +21,11 @@ Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, pl
 | `FAQ-[S]-[N].md` | General readers + web | Anticipated questions and clear answers (legacy-allowed; not required for papers adopted ≥ 22 April 2026) |
 | `keywords-[S]-[N].md` | SEO / web tooling / search | Keywords, PACS/MSC codes, elevator pitch |
 
+In addition, **every paper carries a `changelog-[S]-[N].md` file from v0.1 onward** (adopted Patch 0408 Session 115; codified Patch 0409 Session 116). This is the canonical version archaeology — replacing the historical pattern of putting CHANGELOG comment blocks in `.tex` headers and visible version-history paragraphs in `.tex` title blocks. The changelog file is maintained continuously during drafting (unlike the 7-file canonical doc-suite which is produced post-v1.0). See `operating_system.md` ``Version-archaeology architecture rule'' for the convention and `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` for the reference implementation.
+
 Some papers also carry a `lay-summary-[S]-[N].md` file (e.g., SS-7) for non-physicist accessibility; this is allowed but not required.
 
-Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD), `[N]` = paper number. Canonical filenames carry no version suffix; version history lives in the file's internal `**Last updated:**` header line, not in the filename.
+Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD, SF), `[N]` = paper number; for papers without an `[S]-[N]` identifier (e.g. the Capotauro flagship which is `capotauro`), the bare paper name substitutes (e.g. `changelog-capotauro.md`). Canonical filenames carry no version suffix; version history lives in the changelog file, not in the filename.
 
 ---
 
@@ -388,6 +390,70 @@ Structured keyword data for search, SEO, and web tooling. Designed to be machine
 
 ---
 
+## 9. changelog-[S]-[N].md
+
+### Purpose
+Canonical version archaeology for the paper. This is the single source of truth for "what changed at each version". Replaces the historical pattern of CHANGELOG comment blocks at the top of `.tex` files and visible version-history paragraphs in `.tex` title blocks (both retired Patch 0408 Session 115; codified Patch 0409 Session 116). See `operating_system.md` ``Version-archaeology architecture rule'' for the architectural justification.
+
+### Audience
+- Researchers tracing the closure trajectory
+- Future AI collaborators picking up the paper after a context-window switch
+- External reviewers wanting to know what changed between review rounds
+- The paper's own future authors when authoring later versions
+
+### Maintenance discipline
+Unlike the 7-file canonical doc-suite (which is produced post-v1.0), `changelog-[S]-[N].md` is **maintained continuously from v0.1 onward**. Every patch that touches the paper `.tex` source beyond cosmetic whitespace adds an entry to this file in the same patch.
+
+### Required sections
+
+```markdown
+# Changelog: [Paper title]
+
+**Paper**: [Full paper title]
+**Source**: `[full path to .tex]`
+**Programme registration**: [Theorem registry anchor if any]
+**OPEN-problem status**: [Open problem this paper closes / partially closes if any]
+**Maintainer**: Thomas Lee Abshier ND, Hyperphysics Institute
+
+[One-paragraph purpose statement: this file is canonical version archaeology going forward; the .tex source carries only its current title block.]
+
+---
+
+## Version X.Y — [Date] (Session [N], Patch [PPPP])
+
+[Per-version narrative: what changed, why, what review items it addresses, compile result, working-sketch refs if applicable.]
+
+---
+
+[Earlier versions in descending order.]
+
+---
+
+## Working sketches (source-of-truth Tier 4 reasoning)
+
+[List of working-sketch files this paper derives from, with brief description.]
+
+---
+
+## Patch register
+
+| Patch | Session | Version | Type | Summary |
+|:---:|:---:|:---:|:---|:---|
+| [PPPP] | [N] | vX.Y | [Paper/Programme/Review] | [One-line summary] |
+
+---
+
+*Last updated: Session [N], Patch [PPPP] ([Date])*
+```
+
+### Reference implementation
+`flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` is the v1.0 reference implementation (Patch 0408, Session 115).
+
+### Filename rule
+Filename matches `changelog-[S]-[N].md` for series papers (e.g., `changelog-SS-9.md`, `changelog-SF-4.md`) and `changelog-<paper>.md` for flagship papers without an `[S]-[N]` identifier (e.g., `changelog-capotauro.md`).
+
+---
+
 ## Quick Reference: What Goes Where
 
 | "I want to know..." | Read this file |
@@ -399,6 +465,7 @@ Structured keyword data for search, SEO, and web tooling. Designed to be machine
 | What external reviewers said | reviews |
 | Common questions and clear answers | FAQ |
 | How the paper was developed | development |
+| What changed at each version | changelog |
 | What to search for | keywords |
 
 ---

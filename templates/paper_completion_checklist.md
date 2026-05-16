@@ -55,7 +55,7 @@ verification pass.
 **Filename pattern:** `[S]-[N]` is the paper identifier (e.g., `SS-7`).
 `[S]` is the series prefix (`SS`, `SM`, `EW`, `QM`, `SD`). `[N]` is the
 paper number. Canonical filenames never include version suffixes (per
-`operating_system.md` §11); version lives in the internal CHANGELOG only.
+`operating_system.md` §11); version lives in the paper's `documentation_suite/changelog-<paper>.md` file only (per the version-archaeology architecture rule, `operating_system.md`).
 
 **Do NOT duplicate this content elsewhere.** The prior drift that caused
 `problem_histories/` to be missed in SS-7 v1.1 Phase 7 was produced by
@@ -309,11 +309,11 @@ Location: `series_[name]/development-transcripts/`.
   obtain a pending DOI, attach the final PDF.
 
 - [ ] **F2.** If the paper has an existing OSF DOI from an earlier
-  version: update the OSF project with the new PDF and a CHANGELOG
-  summary.
+  version: update the OSF project with the new PDF and a changelog
+  summary (drawn from `documentation_suite/changelog-<paper>.md`).
 
-- [ ] **F3.** Update the paper's `.tex` CHANGELOG to reference the OSF
-  DOI.
+- [ ] **F3.** Update the paper's `documentation_suite/changelog-<paper>.md`
+  to reference the OSF DOI.
 
 - [ ] **F4.** Update `paper_catalog.md` row with the current OSF DOI
   status (this partially overlaps C7; executing C7 after F4 captures it
