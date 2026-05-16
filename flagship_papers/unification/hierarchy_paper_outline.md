@@ -198,7 +198,7 @@ After Thomas's v0.1 draft is complete (Sessions 39-41), apply the SS-9-validated
 
 1. **ChatGPT review** — strongest reviewer, focus on technical precision and equation correctness
 2. **Copilot review** — focus on code/computational verification (any FEM tables or shell-position calculations from SM-10)
-3. **Grok review** — vocabulary contamination risk (per Sessions 30-32 record — Grok still drifts to older "SSS, QGE, RTT, EMTT" terminology); use only after final polish, with explicit framework specification at top of review prompt
+3. **Grok review** — independent verifier (per restored programme practice; earlier vocabulary-drift issue resolved by working in a fresh context window). Include explicit framework specification at the top of the review prompt to help maintain notational consistency, and submit `.tex` source rather than PDF (see item 5).
 4. **Programmatic invariant audit** (per SS-9 Lesson 6) — verify all numerical claims in tables and figures match the source SM papers. Don't trust AI-generated tables without per-row source-checking.
 5. **Grok PDF rasterization check** — Grok cannot read PDF inputs reliably; submit `.tex` source for review per current programme practice (post Sessions 31-32 lesson).
 
