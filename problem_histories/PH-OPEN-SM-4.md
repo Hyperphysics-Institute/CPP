@@ -1,8 +1,8 @@
 # Problem History: OPEN-SM-4 — Capotauro mechanism for chirality and parity violation
 
 **Created:** 16 May 2026 (registered at Capotauro v1.0 SHIP retroactive doc-suite catch-up, Session 123 Patch 0416A; problem itself active since March 2026)
-**Status:** OPEN (PARTIAL CLOSURE) — sub-claim (c) CLOSED at v1.0 SHIP Session 122 Patch 0415 via THEO-CAP-1; sub-claims (a) + (b) OPEN
-**Research_Frontier.md entry:** OPEN-SM-4
+**Status:** OPEN (PARTIAL CLOSURE) — sub-claim (c) CLOSED at v1.0 SHIP Session 122 Patch 0415 via THEO-CAP-1; sub-claim (b) Reading C closure trajectory advanced via three-patch arc Sessions 124-126 Patches 0417-0419 (Q1+Q2 closed at Layer 3 theorem level; Q1'+Q1'.A resolved at Layer 2 toward vertex-aligned; Findings C-W35/C-W36/C-W37 registered); sub-claim (a) remains open. Remaining open questions Q3-Q7 in Reading C trajectory; 7-17 sessions estimated to Layer 3 closure of full Reading C.
+**Research_Frontier.md entry:** OPEN-SM-4 (parent) + OPEN-FI-C-9-FP-MECHANISM (sub-claim (b) Reading C closure-trajectory pointer)
 **Target paper:** Capotauro v1.0 SHIPPED (sub-claim (c)); Capotauro v2.0+ (sub-claim (b) closure trigger via Reading C Q1+); future paper (sub-claim (a) Capotauro nucleation event downstream of sub-claim (b))
 **Parent paper:** Capotauro v1.0 SHIPPED 16 May 2026 (Session 122 close, Patch 0415) at `flagship_papers/capotauro/capotauro.tex`
 
@@ -78,4 +78,83 @@ Documentation drift fix at Session 123 Patch 0416A (this PH file's creation): th
 
 ---
 
-*Maintainer: Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 16 May 2026 (Session 123 Patch 0416A creation).*
+## Reading C closure trajectory progress: Sessions 124-126 three-patch arc (Patches 0417-0419)
+
+Sub-claim (b)'s Reading C closure trajectory advanced substantively across three consecutive substrate-physics patches in a single context window, completing the first sub-step (Q1 + Q2 closure) and resolving the first sub-question that surfaced (Q1' + Q1'.A) at Layer 2. Three findings registered (Findings C-W35, C-W36, C-W37); one verification script committed; sketch grew 296 → 665 lines across the three patches.
+
+### Patch 0417 — Q1 + Q2 closure at Layer 3 theorem level (Session 124)
+
+Q1 verification of the sketch §2.2 Claim that the $\Hfour$-stabilizer of $\hat{n}$ is isomorphic to $\Ifour = H_4^+$ (order 7,200) was **refuted at theorem level** by elementary orbit-stabilizer counting: no $\Hfour$-orbit on $\mathbb{R}^4$ has stabilizer of that order. The correct stabilizer identifications via Coxeter parabolic-subgroup theory on the $H_4$ Dynkin diagram are:
+
+- Vertex-direction $\hat{n}$: stabilizer $\Hthree \cong I_h$ (order 120; icosahedral)
+- Face-direction $\hat{n}$: stabilizer $\mathbb{Z}_2 \times S_3 \cong \Dsix$ (order 12)
+- Edge-direction $\hat{n}$: stabilizer $D_5 \times \mathbb{Z}_2$ (order 20)
+- Cell-direction $\hat{n}$: stabilizer $S_4$ (order 24)
+- Generic $\hat{n}$: trivial
+
+Q2 (consistency with the Capotauro paper's downstream $\Dsix$-based machinery) closed at Layer 3: only vertex-aligned ($\Hthree \supset \Dsix$ via $D_{3d}$ embedding at any 3-fold axis of the icosahedron) and face-aligned ($\Dsix$ itself) cases contain the K3-doublet stabilizer; cell-aligned ($S_4$) and edge-aligned ($D_5 \times \mathbb{Z}_2$) orientations are **excluded by group theory** for failure to contain $\Dsix$.
+
+The §2.2 falsifier (registered Session 122 Patch 0415 for the $\Ifour$ claim) was **activated and refuted**, but Reading C **survived** the refutation because the corrected stabilizer ($\Hthree$ or $\Dsix$) is consistent with the paper's machinery. The §9 closure exemplifies the methodological pattern: a falsifier hitting a specific instance of a framework does not by itself kill the framework if a rigorous correction is simultaneously available.
+
+**New sub-question Q1' registered**: vertex-aligned vs face-aligned $\hat{n}$, both consistent with the paper's $\Dsix$ machinery.
+
+**Finding C-W35 registered**: under face-aligned $\hat{n}$, the substrate's residual symmetry equals the K3-doublet stabilizer exactly. Originally registered as the leading structural-coincidence argument for face-aligned resolution of Q1'.
+
+Layer 3 closure trajectory estimate revised: 10-20 sessions → **8-18 sessions** following Q1+Q2 closure.
+
+### Patch 0418 — Q1' partial progress via cross-sector W bracelet analysis (Session 125)
+
+Cross-sector geometric verification with SF-2 v1.0 Theorem 4.2's W bracelet 1200-orbit. Computational verification script committed at `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (~290 lines, NumPy-only, runs in <30 seconds): reproduces SF-2 Theorem 4.2 numerically (4800 induced 6-cycles in 600-cell vertex graph; 3600 orbit-A + 1200 orbit-B = W bracelet; orbit-B centroid radius $\phi/2$ exactly).
+
+**Finding C-W36 registered**: the 1200 W bracelet centroid directions on $S^3$ reduce to exactly 120 distinct unit vectors which are precisely the 120 vertex directions of the 600-cell, with exactly 10 bracelets per vertex direction. Each bracelet is realized as a Petrie hexagon of the SM-1 first-shell icosahedron around its central vertex. The W bracelet orbit and the face orbit are different $\Hfour$-orbits on $S^3$ with disjoint direction sets (closest face-direction cosine $\sqrt{(1+\phi)/3} \approx 0.934$).
+
+Implication for Q1': under vertex-aligned Reading C, 10 W bracelets sit on-axis with $\hat{n}$ at radius $\phi/2$; under face-aligned Reading C, the W bracelet sits off-axis at cosine $\sqrt{(1+\phi)/3}$. The K3-doublet (face-centered under standard reading) and the W bracelet (vertex-centered per C-W36) **cannot both be on-axis** with the substrate primitive direction simultaneously. Q1' acquires complementary structural-coincidence arguments on both sides (C-W35 for face-aligned; C-W36 for vertex-aligned) and remains contested at this patch.
+
+**New sub-question Q1'.A registered**: K3-base geometric realization (face direction or first-shell 3-fold triangle?).
+
+Methodological observation: cross-sector unification is not always convergent. The casual heuristic "both substrate objects with $\Dsix$ stabilizers at 1200-orbits should unify under one Reading C alternative" was refuted by direct computation. The two Reading C alternatives split the cross-sector substrate objects rather than uniting them.
+
+Layer 3 closure trajectory estimate unchanged: 8-18 sessions (1 session of 1-3 budgeted for Q1' consumed).
+
+### Patch 0419 — Q1' + Q1'.A resolved at Layer 2 toward vertex-aligned Reading C (Session 126)
+
+Q1'.A resolved via re-examination of the Capotauro paper §6.1 (sec:k3_base) and §10 (cage-shell averaging derivation). The key passage at §10 line 541 reads:
+
+> *"The structural identity $V_\text{cage} = |\Dsix| = 12$ has physical content: the icosahedral cage hosting the K3-doublet has exactly the order of the K3-doublet's stabilizer group. This is a consequence of the substrate's geometric structure --- the 600-cell's icosahedral first shell hosts the same $\Sthree \times \mathbb{Z}_2$ that stabilizes the K3 base extended over the cage."*
+
+The K3-doublet is hosted by the $V_\text{cage} = 12$ icosahedral first shell of a unique 600-cell host vertex; the K3 base is "extended over the cage" as 3 of the 12 first-shell vertices forming a triangular face of the icosahedron, which IS a triangular face of the 600-cell.
+
+Computational verification (extension of the Patch 0418 script): all 20 first-shell triangles of any host vertex's icosahedron are 600-cell faces; **each 600-cell face has exactly 2 host vertices** (verified across all 1200 faces, common-neighbor distribution Counter({2: 1200}); both hosts are outside the face). The face-host bipartite graph has degrees 20 on hosts and 2 on faces, accounting for $120 \times 20 = 2400 = 1200 \times 2$ (host, face) pairs. The K3 face centroid lies at cosine $\sqrt{3}/2 \approx 0.866$ ($30°$) off-axis from the host vertex direction (closed-form identity via $\phi^2 = \phi + 1$).
+
+**Finding C-W37 registered**: Q1' resolves toward vertex-aligned Reading C at Layer 2 via three converging arguments:
+
+1. **Paper-internal hosting argument**: paper §10 "icosahedral cage hosting the K3-doublet" requires a unique host vertex. Vertex-aligned provides this with $\hat{n}$ identified as the host vertex direction; face-aligned has 2-host ambiguity ($\hat{n}$ alone cannot distinguish them).
+
+2. **Cross-sector unification with SF-2 W bracelet (Finding C-W36)**: vertex-aligned puts 10 W bracelets on-axis with $\hat{n}$ at radius $\phi/2$ as Petrie-polygon subgroups of substrate $\Hthree = I_h$.
+
+3. **SM-1 first-shell icosahedron preserved**: vertex-aligned retains the standard CPP first-shell icosahedral geometry as the substrate's local structure.
+
+**Reconciliation with Finding C-W35**: face-aligned algebraic-substrate-equality preserved as a SUB-result within vertex-aligned. The K3-doublet's location-specific $\Dsix$ stabilizer is one of 10 $D_{3d}$ subgroups of substrate $\Hthree$, corresponding to the K3 face's 3-fold axis. The Capotauro paper's Wigner-Eckart machinery on $\Dsix$ in §6-§10 operates at this sub-stabilizer level correctly; no modification to v1.0 paper downstream derivation needed.
+
+**Q1'.A resolved**: K3 base = triangular face of host vertex's first-shell icosahedron = 600-cell face.
+
+Methodological observation: "partial progress + paper re-examination" as efficient closure pattern. When cross-sector analysis produces complementary arguments on both sides, the next move is often to mine the existing flagship paper's framing for already-internal commitments that pin down the alternatives, before reaching for additional cross-sector or empirical input.
+
+Layer 3 closure trajectory estimate revised: 8-18 sessions → **7-17 sessions** following Q1' + Q1'.A resolution.
+
+**Capotauro paper v2.0+ §2 reframe path established**: $H_4 \to H_3 = I_h$ (vertex-aligned reading) with K3-doublet at one of 10 $D_{3d}$ sub-stabilizers; v1.0 §6-§10 Wigner-Eckart machinery on $\Dsix$ preserved unchanged at sub-stabilizer level.
+
+### Forward queue post-Patch 0419
+
+- **Q3** (precise $\epsilon$-$\chi$ relationship): open, estimated 1-3 sessions
+- **Q4** (higher-order $\epsilon$-expansion → fractional retention at theorem level): open, estimated 2-3 sessions
+- **Q5** (cross-sector consistency with SF-2 W bracelet at theorem level): partial progress via Findings C-W36 + C-W37, estimated 3-5 sessions for theorem-level formalization
+- **Q6** (SM-2 qDP/eDP cross-sector consistency): open at sketch level, estimated 3-5 sessions
+- **Q7** (cosmological-timing interaction with sub-claim (a) Capotauro nucleation event): open, estimated 3-5 sessions
+- **Layer 3 promotion of Q1' resolution** (derivation from CPP primitives forcing $\hat{n}$ alignment with host vertex, or empirical falsifier distinguishing vertex/face): deferred as future work
+
+Reading C closure-trajectory handover doc consolidating Sessions 124-126 at `flagship_papers/capotauro/sketches/Reading_C_closure_trajectory_handover.md` (Patch 0421).
+
+---
+
+*Maintainer: Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 127 Patch 0420 — Sessions 124-126 Reading C three-patch arc progress section added).*
