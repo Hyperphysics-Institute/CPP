@@ -482,3 +482,103 @@ The Q1 + Q2 closure has the following implications:
 
 **Epistemic status of the §9 closure.** Layer 3 (theorem-level) for Q1 and Q2. The Q1 result is elementary Coxeter-group theory (orbit-stabilizer + parabolic-subgroup identification), citable to Humphreys 1990 §1.10. The Q2 result is elementary finite-group theory (subgroup-embedding checks for $\Dsix$ in each candidate stabilizer). No appeals to physical intuition or unverified postulates; the closure is purely mathematical and rigorous.
 
+
+---
+
+## §10 Q1' partial progress via cross-sector geometric analysis with SF-2 W bracelet (Session 125, Patch 0418)
+
+The §9 closure left Q1' open: is the primitive direction $\hat{n}$ of Reading C aligned with a 600-cell **vertex** (substrate residual symmetry $\Hthree$) or with a 600-cell **face** (substrate residual symmetry $\Dsix$)? The §9.6 forward queue flagged the cross-sector check with SF-2 v1.0's W bracelet stabilizer ($\Dsix$, also at a 1200-orbit of $\Hfour$) as a candidate tie-breaker. This section reports the result of doing that check computationally.
+
+### §10.1 Setup
+
+SF-2 v1.0 Theorem 4.2 (cf. `flagship_papers/electroweak/sf-2_electroweak.tex` §sec:Wbracelet_thm) establishes: the 600-cell vertex graph contains exactly 4800 induced 6-cycles, partitioned into two $\Hfour$-orbits — $\mathcal{O}_\mathcal{A}$ (3600 cycles, stabilizer order 4) and $\mathcal{O}_\mathcal{B}$ (1200 cycles, stabilizer $\Dsix$ of order 12). $\mathcal{O}_\mathcal{B}$ is the W bracelet orbit; each $\mathcal{O}_\mathcal{B}$ cycle is a regular hexagon with all 6 vertices at radius $r_\mathcal{B} = 0.58779$ from a common centroid $\bar{v}$, and the centroid itself at $\|\bar{v}\| = \phi/2$ from origin.
+
+The W bracelet's 1200-orbit-with-$\Dsix$-stabilizer structure on **induced 6-cycles** abstractly matches the face orbit's 1200-orbit-with-$\Dsix$-stabilizer structure on **unit vectors at face centroids** (per §9.3 above). The question is whether these two abstract matches reflect a deeper structural identity (Route i: natural pairing), a generic coincidence (Route ii: independent orbits), or some intermediate incidence (Route iii: structured but partial).
+
+### §10.2 Computational verification
+
+A verification script committed at `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` enumerates the 600-cell directly from icosian / Hurwitz-quaternion coordinates and reproduces SF-2 Theorem 4.2 numerically as a prerequisite, then performs the cross-sector check. The script verifies:
+
+- **Vertex/edge/face counts**: $|V| = 120$, $|E| = 720$, $|F| = 1200$; all vertices at unit radius; all vertex degrees equal 12 (icosahedral first-shell coordination). Matches standard 600-cell facts and SF-2 §sec:600cell_setup.
+- **Induced 6-cycle enumeration**: 4800 cycles, classified by the $\Hfour$-invariant signature (sorted multiset of 15 pairwise squared distances) into exactly two orbits of sizes 3600 and 1200. Matches SF-2 Theorem 4.2 Steps 1–3.
+- **Orbit $\mathcal{B}$ centroid radius**: All 1200 bracelet centroids at exactly $\phi/2 \approx 0.809$ from origin. Matches SF-2 Theorem 4.2 Step 4.
+
+These prerequisites pass; the verification is reproducing what SF-2 already established as foundation for the cross-sector analysis.
+
+### §10.3 The new geometric result
+
+After computing the unit-vector projections of all 1200 W bracelet centroids (i.e., $\bar{v}_k / \|\bar{v}_k\|$ for each bracelet $k$), the script finds:
+
+- **The 1200 bracelet centroid directions on $S^3$ reduce to exactly 120 distinct unit vectors.** Many bracelet centroids point in the same direction (at the same radius $\phi/2$, hence are the same point in $\mathbb{R}^4$).
+- **Those 120 distinct directions are exactly the 120 vertex directions of the 600-cell.** The intersection of the bracelet-direction set and the vertex-direction set on $S^3$ has cardinality 120; the symmetric difference is empty.
+- **Each of the 120 vertex directions hosts exactly 10 bracelets.** $10 \times 120 = 1200$ ✓.
+- **For each bracelet at a given vertex direction $v_i$, the 6 hexagonal-cycle vertices are all edge-neighbors of $v_i$** in the 600-cell vertex graph (i.e., they lie in the icosahedral first shell around $v_i$). Verified on all 1200 bracelets.
+- **The closest face centroid direction to any bracelet centroid direction lies at cosine $\sqrt{(1+\phi)/3} \approx 0.934172$.** This is the cosine between any 600-cell vertex $v_i$ and the centroid direction of any triangular face containing $v_i$. Established by elementary identity: for $v_i$ with two edge-connected neighbors $v_j, v_k$ also at pairwise edge distance, the face centroid direction is $(v_i + v_j + v_k)/\|v_i + v_j + v_k\|$ with $v_i \cdot v_j = \phi/2$ (edge dot product) giving $v_i \cdot \hat{f} = (1+\phi)/\sqrt{3+3\phi} = \sqrt{(1+\phi)/3}$.
+
+The bracelet and face orbits are **disjoint on $S^3$** (zero direction-set overlap). The cross-sector cue from §9.6 ("perhaps the same orbit") is **refuted**: H$_4$'s W bracelet orbit and face orbit are different orbits with different geometric locations.
+
+### §10.4 Structural identification
+
+The structural identification is now precise: **each W bracelet is a Petrie hexagon of an SM-1 first-shell icosahedron** around one specific 600-cell vertex. The icosahedron's 12 vertices admit 10 distinct regular hexagonal cross-sections (one per pair of antipodal triangular faces of the icosahedron, of which there are 10); these 10 hexagons are the bracelets centered at that vertex direction. The structure echoes the standard combinatorial fact that the regular icosahedron admits 10 inscribed regular hexagons via its Petrie-polygon decomposition, here lifted into 4D ambient space at radius $\phi/2$ along each of the 120 vertex directions.
+
+This identification clarifies the W bracelet's substrate role: it is **a substructure of the SM-1 first-shell icosahedron**, not an independent 1200-element object floating at arbitrary positions in $\mathbb{R}^4$.
+
+### §10.5 Finding C-W36 (NEW)
+
+Registered this patch:
+
+> **Finding C-W36** — The 1200 W bracelet centroid directions on $S^3$ coincide exactly with the 120 vertex directions of the 600-cell (10 bracelets per vertex), with each bracelet realized as a Petrie hexagon in the icosahedral first shell of its central vertex. The W bracelet and the H$_4$ face orbit are different orbits on $S^3$. Under **vertex-aligned** Reading C ($\hat{n}$ = a 600-cell vertex direction), 10 W bracelets sit on-axis with $\hat{n}$ at radius $\phi/2$; their $\Dsix$ stabilizers are 10 Petrie-polygon subgroups of the substrate's $\Hthree$ residual symmetry. Under **face-aligned** Reading C, the W bracelet sits off-axis at cosine $\sqrt{(1+\phi)/3} \approx 0.934$ from the substrate primitive direction.
+
+Finding C-W36 is the structural counterpart of Finding C-W35 (Patch 0417): each finding identifies a substrate object whose stabilizer matches the residual symmetry of one specific Q1' reading.
+
+### §10.6 Updated Q1' analysis
+
+Q1' now has explicit structural arguments on both sides:
+
+**Vertex-aligned case** (Finding C-W36):
+- Substrate residual symmetry $\Hthree$ = icosahedral group $I_h$ contains both 10 K3-doublet-style $\Dsix$ subgroups (one per 3-fold axis of the icosahedron, each with its $\Sthree$ factor acting on a 3-vertex triangle of the first shell) and 10 W-bracelet-style $\Dsix$ subgroups (one per Petrie polygon).
+- W bracelet sits on-axis with the substrate primitive direction; the K3-doublet sits at a 3-fold axis of the first-shell icosahedron, off-axis from $\hat{n}$ by cosine $\sqrt{(1+\phi)/3}$.
+- The first-shell icosahedron is preserved as the substrate's local geometry — this is the SM-1 standard CPP first-shell structure.
+- Cross-sector unification with SF-2's W bracelet sector is natural; the W bracelet emerges as a sub-stabilizer of $\Hthree$ at its physical location.
+
+**Face-aligned case** (Finding C-W35, Patch 0417):
+- Substrate residual symmetry $\Dsix = \Sthree \times \mathbb{Z}_2$ exactly matches the K3-doublet stabilizer used in the Capotauro paper §6.4.
+- K3-doublet sits on-axis with the substrate primitive direction (assuming the K3 base is realized as a triangular cluster centered at a face direction of the 600-cell).
+- The W bracelet sits off-axis by cosine $\sqrt{(1+\phi)/3}$.
+- The match between substrate residual symmetry and the paper's $\Dsix$ machinery is exact at the group level — no proper-subgroup language needed.
+
+**Structural trade-off.** Under either reading, exactly one of the two substrate objects (W bracelet vs K3-doublet) is on-axis with the substrate primitive direction, and the other is off-axis at cosine $\sqrt{(1+\phi)/3}$. The two readings **cannot both** put both objects on-axis simultaneously — the W bracelet centroids and the face centroids are at different $\Hfour$-orbits on $S^3$.
+
+**Weights.** The Capotauro paper is *about* the K3-doublet — the chirality machinery in §6.4 operates on K3-doublet states with $\Dsix$ algebraic structure. Within the Capotauro paper's internal frame, the K3-doublet is the central object and Finding C-W35 (substrate residual symmetry = K3-doublet stabilizer exactly) is the natural alignment. From a cross-sector perspective, the W bracelet from SF-2 v1.0 is an independent sector's substrate object, and Finding C-W36 (W bracelet on-axis under vertex-aligned $\hat{n}$) is the natural alignment for that sector.
+
+The dichotomy persists. Q1' is **partially advanced** (the geometric structure clarified, two complementary structural-coincidence arguments registered) but **not closed** (the choice between Capotauro-internal weight and cross-sector weight is not decisively resolved by group theory alone).
+
+### §10.7 Sub-question registered: Q1'.A K3-base geometric realization
+
+The face-aligned case rests on an implicit assumption inherited from the Capotauro paper's §6.4: that the K3 base is physically realized as a triangular cluster of CPs whose centroid points in a face direction of the 600-cell substrate. The vertex-aligned case is compatible with the K3 base being realized at a 3-fold axis of the first-shell icosahedron around a vertex (where its $\Sthree$ stabilizer factor permutes 3 of the 12 first-shell vertices forming a triangle, and its $\mathbb{Z}_2$ factor is the antipodal map of the icosahedron).
+
+These two K3-base realizations correspond to two different geometric loci in the substrate. Which one is the physical K3 base of the Capotauro paper? The paper §6.4 specifies algebraic structure but does not pin down geometric position in the substrate; the implicit assumption can go either way without contradicting the paper's machinery.
+
+Registered as **Q1'.A** sub-question of Q1': *Is the K3 base of the Capotauro paper geometrically realized at a face centroid direction or at a 3-fold axis triangle of the first-shell icosahedron?* Resolution of Q1'.A would resolve Q1' immediately:
+- K3-base at face direction → face-aligned Reading C wins (K3-doublet on-axis at face direction)
+- K3-base at first-shell 3-fold triangle → vertex-aligned Reading C wins (K3-doublet on-axis at vertex direction with off-axis triangle as substrate sub-stabilizer)
+
+Q1'.A is single-session tractable; estimated 1 session to resolve via re-examination of the Capotauro paper's §6.4 K3-doublet construction in light of the §10 geometric analysis here.
+
+### §10.8 Status update
+
+- **Q1** (§2.2 Claim verification): CLOSED at Layer 3 (Patch 0417 §9).
+- **Q2** (residual-symmetry consistency with paper machinery): CLOSED at Layer 3 (Patch 0417 §9).
+- **Q1'** (vertex vs face): partial progress this patch. Two structural-coincidence arguments registered on opposite sides (Findings C-W35 face-aligned; C-W36 vertex-aligned). Resolution waits on Q1'.A.
+- **Q1'.A** (K3-base geometric realization): NEW sub-question. Single-session tractable.
+- **Q3** ($\epsilon$-$\chi$ relationship): unchanged, open.
+- **Q4** (higher-order $\epsilon$-expansion): unchanged, open.
+- **Q5, Q6** (cross-sector consistency): the W bracelet ↔ K3-doublet substrate-location dichotomy registered this patch is the substantive cross-sector observation for Q5; partial progress.
+- **Q7** (cosmological timing): unchanged, open.
+
+Reading C closure trajectory budget: 8–18 sessions revised at Patch 0417 (Q1+Q2 close) is unchanged at this patch (Q1' partial progress consumed 1 session from the 1–3 budgeted for Q1', leaving 0–2 sessions; Q1'.A absorbs the remaining budget).
+
+### §10.9 Epistemic status
+
+Layer 3 (theorem-level rigor) for the geometric facts established. The computational verification is reproducible at < 30 second runtime via `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`. The structural identification (bracelet = Petrie hexagon of first-shell icosahedron) is purely combinatorial; no appeals to physical intuition or unverified postulates. The cosine identity $\sqrt{(1+\phi)/3} = 0.934172$ for vertex-to-containing-face direction is elementary closed-form. What is **not** Layer 3 in this section: the *interpretation* of the result for Q1' resolution depends on Q1'.A, which is not yet closed; the cross-sector "structural-coincidence" arguments on both sides have equal logical weight without additional structural input.
+
