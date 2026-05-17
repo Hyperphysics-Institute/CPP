@@ -71,6 +71,8 @@ A primitive direction $\hat{n}$ in 4D space is preserved (up to overall sign) by
 
 **Claim (sketch-level, to be verified by group-theoretic computation).** The subgroup of $\Hfour$ that preserves the primitive direction $\hat{n}$ (with sign) is isomorphic to $\Ifour$, the rotational subgroup. The substrate's actual symmetry is therefore $\Ifour$, not $\Hfour$. The $\Hfour \to \Ifour$ reduction in the v0.9 paper is the structural consequence of $\hat{n}$ being primitive, not the outcome of a dynamical event.
 
+**Note (Session 124 Patch 0417, after §9 closure):** The Claim as stated here is incorrect. Q1 + Q2 closure in §9 establishes that the actual $\Hfour$-stabilizer of $\hat{n}$ is **not** $\Ifour = H_4^+$ (order 7,200) but rather a parabolic subgroup whose order depends on which $\Hfour$-orbit $\hat{n}$ lies in: $\Hthree$ (order 120) for vertex-aligned $\hat{n}$, $\Dsix$ (order 12) for face-aligned $\hat{n}$, $D_5 \times \mathbb{Z}_2$ (order 20) for edge-aligned, $S_4$ (order 24) for cell-aligned. Only the vertex-aligned and face-aligned cases are consistent with the Capotauro paper's downstream $\Dsix$-based machinery. The selection between vertex-aligned and face-aligned is registered as new sub-question **Q1'**. See §9 for the rigorous derivation, the refutation of this Claim, and the structural-coincidence observation that face-aligned $\hat{n}$ produces substrate residual symmetry exactly equal to the K3-doublet stabilizer.
+
 This is the key structural connection: under Reading C, the algebraic structure "$\Hfour \to \Ifour$ reduction" carries the same mathematical content as the SSB framing, but its physical interpretation is opposite. The idealized geometric description treats all 4D directions as equivalent (full $\Hfour$); the substrate's actual existence has $\hat{n}$ as a primitive feature, breaking the symmetry down to $\Ifour$ at the structural level. The breaking is "structural" in the sense that it requires no dynamics — it is simply that the substrate has $\hat{n}$ as a feature.
 
 ### §2.3 Edge-length variation from $\hat{n}$
@@ -294,3 +296,189 @@ The v1.0 ship is not gated on Reading C closure; v1.0 ships with the primitive-f
 This sketch embodies a methodological commitment registered in the Session 120 conversation between Thomas Abshier and Claude Opus: the CPP programme's core principle is that mathematical descriptions are not themselves physical mechanisms. The earlier "spontaneous symmetry breaking" framing of FI-C-9 in the Capotauro paper v0.4-v0.8 violated this principle: it named the structural reduction $\Hfour \to \Ifour$ as "SSB" without specifying what physical primitive produces the broken phase. The v0.9 paper retires the SSB framing in favour of the primitive-feature framing, and this sketch develops the candidate physical primitive (the preferred 4D direction $\hat{n}$).
 
 The methodological lesson: when a reviewer (ChatGPT across three rounds of v0.6 / v0.7 / v0.8 review) repeatedly flags a foundational input as "the most exposed technical link" or "most likely retrospective," the response is not better presentation. The response is identifying what physical mechanism is missing and either deriving it or honestly declaring it as primitive. The CPP discipline's reviewer-honesty protocol applied here means: name what is primitive (the $\hat{n}$ direction); declare what is derived ($|\chi| = \phi^{-3}$ from the perturbative-distance-ratio constraint applied to $\hat{n}$); register what remains open (the five questions of §5). The mechanism question is no longer hidden behind vocabulary; it is the deepest open work of the programme, and the work is now in progress.
+
+---
+
+## §9 Q1 + Q2 Closure: The Stabilizer of $\hat{n}$ Under the $\Hfour$ Action (Session 124, Patch 0417)
+
+This section closes Question 1 of §5.1 (group-theoretic verification of the $\Hfour \to \Ifour$ structural claim) and Question 2 (consistency with the Capotauro paper's downstream algebraic machinery) at theorem level. The closure delivers a result different from the one §2.2 of this sketch claimed: the correct identification of the substrate's residual symmetry under Reading C is **not** $\Ifour = H_4^+$ (the rotational subgroup of $\Hfour$, of order 7,200), but rather a much smaller parabolic subgroup whose specific structure depends on which $\Hfour$-orbit the primitive direction $\hat{n}$ lies in. The §2.2 Claim is refuted; in its place a sharper structural picture emerges, including a previously-unnoticed sub-question (Q1') that constrains $\hat{n}$ to one of two specific orientations.
+
+### §9.1 The verification target
+
+The §2.2 Claim asserts: "The subgroup of $\Hfour$ that preserves the primitive direction $\hat{n}$ (with sign) is isomorphic to $\Ifour$, the rotational subgroup."
+
+Two readings of this Claim are possible:
+
+**Reading-Claim-A.** The stabilizer of $\hat{n}$ in $\Hfour$ (elements of $\Hfour$ that fix $\hat{n}$ pointwise as a 4-vector) is $\Ifour = H_4^+$, the rotational subgroup of order 7,200.
+
+**Reading-Claim-B.** The action of $\Hfour$ on the substrate decomposes such that under the primitive-direction reduction, the $\Ifour$ subgroup is the maximum residual symmetry "available" — i.e., picking one enantiomorph collapses $|\Hfour| = 14{,}400$ down to $|\Ifour| = 7{,}200$ by index 2.
+
+Under Reading-Claim-A, the Claim is a statement about the H4-stabilizer of an oriented unit vector, which is the natural object of group-theoretic verification. Under Reading-Claim-B, the Claim is a statement about which enantiomorph survives, which is a different (and weaker) structural fact independent of any particular $\hat{n}$. The sketch §2.2 setup language ("rotations that fix $\hat{n}$ pointwise"; "reflections that fix $\hat{n}$") makes clear that Reading-Claim-A is the intended one. We verify Reading-Claim-A.
+
+### §9.2 The H_4 orbits on R^4
+
+$\Hfour$ acts on $\mathbb{R}^4$ as the symmetry group of the 600-cell. The unit sphere $S^3 \subset \mathbb{R}^4$ decomposes into orbits under this action. There are five orbit types:
+
+1. **Vertex orbit** — directions pointing to the 120 vertices of the 600-cell. Orbit size 120.
+2. **Edge-midpoint orbit** — directions pointing to the centers of the 720 edges. Orbit size 720.
+3. **Face-center orbit** — directions pointing to the centers of the 1,200 triangular faces. Orbit size 1,200.
+4. **Cell-center orbit** — directions pointing to the centers of the 600 tetrahedral cells. Orbit size 600.
+5. **Generic orbit** — directions not in any special position. Orbit size $|\Hfour| = 14{,}400$.
+
+By the orbit-stabilizer theorem, the stabilizer in $\Hfour$ of a unit vector in each orbit has order:
+
+$$|\mathrm{stab}_{\Hfour}(\hat{n})| = \frac{|\Hfour|}{|\mathrm{orbit}(\hat{n})|}$$
+
+giving:
+
+| Orbit | Size | $|\mathrm{stab}_{\Hfour}(\hat{n})|$ |
+|:---|:---:|:---:|
+| Vertex | 120 | 120 |
+| Edge | 720 | 20 |
+| Face | 1,200 | 12 |
+| Cell | 600 | 24 |
+| Generic | 14,400 | 1 |
+
+**None of these stabilizers has order 7,200 = $|\Ifour|$.** Reading-Claim-A of §2.2 is refuted by orbit counting alone.
+
+### §9.3 Stabilizer identification via Coxeter parabolic theory
+
+The $\Hfour$ Coxeter diagram is
+
+$$o_1 - 5 - o_2 - o_3 - o_4$$
+
+with the 5-labeled edge between the first two nodes and unlabeled (i.e., label-3) edges between the remaining adjacent pairs. The four nodes correspond to four simple reflections $s_1, s_2, s_3, s_4$ generating $\Hfour$.
+
+The standard result in Coxeter-group theory (Humphreys 1990, §1.10, "Parabolic subgroups and standard cosets"): the stabilizer in $\Hfour$ of the $k$-th fundamental weight $\omega_k$ is the parabolic subgroup $W_{J}$ where $J = \{1, 2, 3, 4\} \setminus \{k\}$ is the set of nodes obtained by removing $o_k$ from the diagram. The polytope whose vertices are the orbit of $\omega_k$ is one of the four Wythoffian polytopes generated from the $\Hfour$ system.
+
+For the 600-cell — whose vertex stabilizer has order 120 — the corresponding fundamental weight is $\omega_4$ (the node at the unlabeled-edge end of the diagram, opposite the 5-labeled end). Removing $o_4$ leaves the sub-diagram $o_1 - 5 - o_2 - o_3$, which is the $\Hthree$ Coxeter diagram. The vertex stabilizer is therefore:
+
+$$\mathrm{stab}_{\Hfour}(\hat{n}_{\mathrm{vertex}}) \cong \Hthree$$
+
+The $\Hthree$ Coxeter group is the full icosahedral group $I_h \cong A_5 \times \mathbb{Z}_2$, of order 120. It contains the rotational icosahedral group $I \cong A_5$ (order 60) as the index-2 chiral subgroup, plus 60 reflection-type elements; equivalently, $I_h = I \times \langle -\mathbb{1} \rangle$ where $-\mathbb{1}$ is the central inversion of the 3D hyperplane orthogonal to $\hat{n}$.
+
+The other three special-orbit stabilizers are identified by the same parabolic-removal procedure:
+
+- **Edge orbit** ($\omega_3$): remove $o_3$, leaving $o_1 - 5 - o_2$ and $o_4$ (disconnected). The diagram $o_1 - 5 - o_2$ is $I_2(5) \cong D_5$, the dihedral group of order 10. The disconnected $o_4$ is $A_1 \cong \mathbb{Z}_2$. The stabilizer is therefore $D_5 \times \mathbb{Z}_2$, of order 20.
+
+- **Face orbit** ($\omega_2$): remove $o_2$, leaving $o_1$ and $o_3 - o_4$ (disconnected). The $o_1$ is $A_1 \cong \mathbb{Z}_2$; the diagram $o_3 - o_4$ is $A_2 \cong S_3$ (the symmetric group on 3 elements, order 6). The stabilizer is therefore $\mathbb{Z}_2 \times S_3$, of order 12.
+
+- **Cell orbit** ($\omega_1$): remove $o_1$, leaving $o_2 - o_3 - o_4$. This is the $A_3$ Coxeter diagram, with $A_3 \cong S_4$ (the symmetric group on 4 elements, order 24). The stabilizer is therefore $S_4$, of order 24.
+
+Summary table:
+
+| Orbit | Removed node | Parabolic | Order | Isomorphism class |
+|:---|:---:|:---|:---:|:---|
+| Vertex | $o_4$ | $\Hthree$ | 120 | $I_h = A_5 \times \mathbb{Z}_2$ |
+| Edge | $o_3$ | $I_2(5) \times A_1$ | 20 | $D_5 \times \mathbb{Z}_2$ |
+| Face | $o_2$ | $A_1 \times A_2$ | 12 | $\mathbb{Z}_2 \times S_3$ |
+| Cell | $o_1$ | $A_3$ | 24 | $S_4$ |
+| Generic | — | trivial | 1 | $\{e\}$ |
+
+The vertex result $\Hthree \cong I_h$ is the most relevant to Reading C as originally described in §2 (which has the icosahedral first shell around a vertex as its picture). **The sketch §2.2 Claim that this stabilizer is $\Ifour$ (order 7,200) is refuted by a factor of 60** — the actual stabilizer is 60× smaller.
+
+### §9.4 Origin of the §2.2 error
+
+The §2.2 Claim conflated two distinct symmetry-reduction operations:
+
+**Operation A — chirality (enantiomorph) reduction.** $\Hfour \to H_4^+$ (= $\Ifour$ in the sketch and v1.0 paper notation). This is the index-2 reduction that picks one of the two enantiomorphs. It is independent of any primitive direction: it is simply the assertion that the substrate, being chiral, distinguishes the two mirror-image forms of the 600-cell, breaking the $\mathbb{Z}_2$ reflection quotient $\Hfour / H_4^+$. The Capotauro v1.0 paper uses this reduction (paper §2.2, line 211) and calls the resulting subgroup $\Ifour$.
+
+**Operation B — primitive-direction reduction.** $\Hfour \to \mathrm{stab}_{\Hfour}(\hat{n})$, where $\hat{n}$ is a specific 4D direction. This is the reduction Reading C is about: positing a primitive direction in 4D space and asking what symmetry survives. The stabilizer depends on the orbit of $\hat{n}$ and is at most $\Hthree$ (for vertex-aligned $\hat{n}$, the case of maximum residual symmetry); it is much smaller than $H_4^+$ in every case.
+
+The §2.2 Claim asserted that Operation B yields $\Ifour = H_4^+$ (the result of Operation A). This is wrong: Operation B is strictly stronger than Operation A. **Operation B implies Operation A**, but not conversely: any primitive direction picks one enantiomorph (since $\hat{n}$ and $-\hat{n}$ are not related by any element of the stabilizer), so the chirality reduction is automatic. But Operation A does not select any particular $\hat{n}$; it only says "one enantiomorph survives."
+
+Reading C — when correctly stated — is the stronger postulate. The sketch §2.2 description was correct in its setup language ("rotations that fix $\hat{n}$ pointwise"; "reflections that fix $\hat{n}$") but the Claim sentence at the end of §2.2 substituted the weaker Operation-A result. The error appears to have arisen from the desire to recover the v0.9 paper's $\Hfour \to \Ifour$ algebraic structure as a consequence of Reading C, which led to identifying the Reading-C stabilizer with the paper's $\Ifour$ even though they are not the same object.
+
+### §9.5 Q2 closure: consistency with the paper's downstream machinery
+
+Question 2 of §5.1 asks whether the residual symmetry under Reading C matches the algebraic structure used in the Capotauro paper's downstream derivation. The paper uses the K3-doublet stabilizer $\Dsix = \Sthree \times \mathbb{Z}_2$ (paper §6.4, lines 378–382) as the operating group on which the Wigner-Eckart machinery is built; $\Dsix$ has order 12.
+
+Under the corrected Reading C, the substrate's residual symmetry is one of:
+
+- $\Hthree \cong I_h$ (order 120) if $\hat{n}$ is vertex-aligned,
+- $\mathbb{Z}_2 \times S_3 \cong \Dsix$ (order 12) if $\hat{n}$ is face-aligned,
+- $D_5 \times \mathbb{Z}_2$ (order 20) if $\hat{n}$ is edge-aligned,
+- $S_4$ (order 24) if $\hat{n}$ is cell-aligned.
+
+The paper's downstream Wigner-Eckart machinery requires the residual symmetry to **contain $\Dsix$ as a subgroup**, so that operators in $\Dsix$-irreps and states in $\Dsix$-irreps are well-defined. We check each candidate stabilizer for a $\Dsix$ subgroup:
+
+**$\Hthree \cong I_h \supset \Dsix$ ✓**. The full icosahedral group contains $\Dsix$ as the $D_{3d}$ point group (in Schoenflies notation): a 3-fold rotation about an icosahedral $C_3$ axis combined with the central inversion gives an element of order 6, and the perpendicular $C_2$ rotation (one of the icosahedron's 15 such axes through opposite edge-midpoints) provides the $\Dsix$ dihedral involution. As abstract groups, $D_{3d}$ and $\Dsix$ are isomorphic (both are $\mathbb{Z}_3 \rtimes \mathbb{Z}_2 \times \mathbb{Z}_2 \cong S_3 \times \mathbb{Z}_2$).
+
+**$\mathbb{Z}_2 \times S_3 \cong \Dsix$ ✓**. This is the K3-doublet stabilizer itself. Trivially contains $\Dsix$ as the whole group.
+
+**$D_5 \times \mathbb{Z}_2$ ✗**. $D_5 \times \mathbb{Z}_2$ has element orders in $\mathrm{lcm}(\{1,2,5\}, \{1,2\}) = \{1, 2, 5, 10\}$; no element of order 3 or 6. $\Dsix$ has elements of order 6, so $\Dsix$ does not embed in $D_5 \times \mathbb{Z}_2$.
+
+**$S_4$ ✗**. $S_4$ has order 24 and subgroups of order 12: only $A_4$ (the unique subgroup of index 2). $A_4$ has element orders $\{1, 2, 3\}$ — no element of order 6 — so $A_4 \not\cong \Dsix$. Therefore $\Dsix$ does not embed in $S_4$.
+
+**Conclusion of Q2 closure.** Only the vertex-aligned and face-aligned orientations of $\hat{n}$ produce residual symmetry containing $\Dsix$. The cell-aligned and edge-aligned orientations are **excluded** by the requirement of consistency with the Capotauro paper's downstream machinery. This is a non-trivial constraint: Reading C is now narrowed from "any primitive 4D direction" to "a primitive 4D direction aligned with a vertex or a face of the 600-cell," with the alignment fixed by 600-cell geometry up to the $\Hfour$ orbit choice.
+
+The vertex and face cases lead to qualitatively different physical pictures, treated in §9.6 as the new sub-question Q1'.
+
+### §9.6 The new sub-question Q1': vertex-aligned vs face-aligned $\hat{n}$
+
+The Q1 closure surfaces a previously-unnoticed sub-question that the original §2.2 Claim had obscured:
+
+**Question 1' (NEW, registered Session 124 Patch 0417).** Is the primitive direction $\hat{n}$ of Reading C aligned with a 600-cell vertex (residual symmetry $\Hthree$, order 120) or with a 600-cell face (residual symmetry $\Dsix$, order 12)?
+
+The two cases are physically and structurally distinct:
+
+**Vertex-aligned reading.** $\hat{n}$ points to one of the 600-cell's 120 vertices. The substrate's residual symmetry is $\Hthree \cong I_h$ — the full icosahedral group acting on the 3D hyperplane orthogonal to $\hat{n}$. Geometrically, this is the symmetry that preserves the icosahedral first-shell of 12 nearest neighbors around the chosen vertex (the "vertex figure" of the 600-cell). The substrate retains the most residual symmetry consistent with a primitive direction (60× the cell case, 10× the face case, 6× the edge case). The K3-doublet stabilizer $\Dsix$ emerges as a sub-stabilizer at K3 triangle locations within the icosahedral structure.
+
+**Face-aligned reading.** $\hat{n}$ points to the centroid of one of the 600-cell's 1,200 triangular faces. The substrate's residual symmetry is $\mathbb{Z}_2 \times S_3 \cong \Dsix$ — exactly the K3-doublet stabilizer. The $S_3$ factor permutes the three vertices of the chosen face (i.e., acts on the K3 amplitudes), and the $\mathbb{Z}_2$ factor is the perpendicular reflection (which acts on the $\zeta$-parity of perpendicular wavefunctions — exactly the $\mathbb{Z}_2$ that the paper §6.4 identifies as the $\zeta$-parity factor of $\Dsix$). Geometrically, the substrate's symmetry under face-aligned $\hat{n}$ is *identical to* the K3-doublet stabilizer used in the paper's derivation.
+
+The face-aligned reading produces a striking structural coincidence:
+
+**Observation (registered as Finding C-W35).** Under face-aligned $\hat{n}$, the substrate's residual symmetry is exactly $\Dsix = \Sthree \times \mathbb{Z}_2$, with the $\Sthree$ factor naturally identified as the K3-amplitude permutation symmetry and the $\mathbb{Z}_2$ factor naturally identified as the perpendicular-wavefunction $\zeta$-parity symmetry. The K3-doublet stabilizer is not merely a sub-stabilizer at a special location within a larger substrate symmetry; it *is* the substrate symmetry. The Capotauro paper's Wigner-Eckart machinery on $\Dsix$ becomes "the natural algebraic operation on the substrate" rather than "a special-location calculation within a larger group."
+
+This is a non-trivial finding: it suggests the face-aligned reading may be the physically preferred orientation for $\hat{n}$ under Reading C, providing a structural argument for the otherwise-unmotivated alignment choice.
+
+**Arguments for each reading.**
+
+*For vertex-aligned.* (1) Maximum residual symmetry — minimum perturbation from idealized $\Hfour$ (order 120 vs. order 12 is a factor 10 less symmetry-breaking). (2) The icosahedral first shell around a vertex is the most "structurally rich" feature of the 600-cell, with the natural icosahedral cage being the K3 host in SM-1's four-cage taxonomy (FI-C-2). (3) The vertex-figure picture matches the original Reading C narrative in §2 (icosahedral first shell with $\hat{n}$-induced bias).
+
+*For face-aligned.* (1) Direct match of substrate symmetry to K3-doublet stabilizer — no "emergence at a special location" step required. (2) Provides a structural reason for the specific group $\Dsix$ to appear in the paper's derivation. (3) Aligns naturally with the perpendicular-wavefunction $\zeta$-parity structure that FI-C-3 (extended) introduces — the $\zeta$-parity is the perpendicular reflection that fixes a face but flips its orientation, which is exactly the $\mathbb{Z}_2$ factor of the face stabilizer.
+
+*Against face-aligned.* (1) The choice of one face out of 1,200 is more arbitrary than the choice of one vertex out of 120 (10× more arbitrary). (2) The remaining 1,199 face-centers are not preserved under the face stabilizer, leading to a substrate that is highly asymmetric at the face level.
+
+*Against vertex-aligned.* (1) The K3-doublet stabilizer $\Dsix$ must "emerge" at K3 triangle locations rather than being intrinsic — extra structural step. (2) The full $\Hthree$ symmetry includes elements (e.g., the central inversion through the 3D hyperplane orthogonal to $\hat{n}$) that may need additional physical interpretation as substrate symmetries.
+
+Resolution of Q1' requires further structural analysis or empirical input. The two readings are not currently distinguishable from the v1.0 paper's predictions, which factor through $\Dsix$ either way. Q1' is registered as the next forward-priority sub-question of OPEN-FI-C-9-FP-MECHANISM.
+
+### §9.7 Implications for Reading C and the Capotauro v1.0 paper §2
+
+The Q1 + Q2 closure has the following implications:
+
+**For Reading C as developed in §2 of this sketch.** The §2.2 Claim is wrong as stated; correction is registered in §9.4 above. The §2.2 setup language (rotations and reflections fixing $\hat{n}$) is correct; only the final Claim sentence requires substitution. The substrate's residual symmetry under Reading C is $\Hthree$ (vertex-aligned) or $\Dsix$ (face-aligned), not $\Ifour = H_4^+$. The remainder of §2 (edge-length variation, perturbative-distance-ratio constraint, the derivation of $|\chi| = \phi^{-3}$) is unaffected by the correction — those arguments operate on the edge structure of the 600-cell and do not depend on the specific identification of the residual symmetry group beyond "it's a subgroup of $\Hfour$."
+
+**For the Capotauro paper v1.0 §2.** The paper's $\Hfour \to \Ifour$ reduction (paper §2.2, line 211) describes Operation A (chirality / enantiomorph selection), not Operation B (primitive-direction reduction under Reading C). The paper's identification is correct as a description of "what symmetry is broken by chirality at the v1.0 framing." Under Reading C, the paper's reduction is a coarser-grained reading of a finer-grained Operation-B reduction: the chirality picks one enantiomorph (Operation A, v1.0 paper) because the primitive direction $\hat{n}$ orients the substrate within that enantiomorph (Operation B, Reading C). Operation B implies Operation A but contains additional structure (the specific $\hat{n}$-stabilizer) that the v1.0 paper's framing does not.
+
+**For Capotauro v2.0+.** If Reading C closes at theorem level (via Q3, Q4 in addition to the Q1+Q2 closure here), the v2.0+ paper's §2 framing reframe will be: retire the foundational input FI-C-9 (substrate primitive chirality magnitude $|\chi| = \phi^{-3}$) as a postulate and replace with a derivation chapter referencing this sketch + §9. The $\Hfour \to \Ifour$ language in §2 of the paper will be replaced by the more accurate $\Hfour \to \Hthree$ (vertex-aligned) or $\Hfour \to \Dsix$ (face-aligned) description, with the v1.0 $\Hfour \to \Ifour$ identified as the chirality-only coarsening. The K3-doublet $\Dsix$ stabilizer in the paper's §6 will either become "a sub-stabilizer at K3 locations within the substrate's $\Hthree$ symmetry" (vertex case) or "the substrate's symmetry itself" (face case), depending on Q1' resolution.
+
+**For cross-sector consistency (Q5, Q6, Q7).** Q5 (SF-2 W bracelet) and Q6 (SM-2 qDP/eDP screening asymmetry) need re-examination under the corrected substrate symmetry. The W bracelet's $\Dsix$ stabilizer (FI-C-4 from SF-2 v1.0) is consistent with both vertex-aligned and face-aligned readings; cross-sector consistency does not by itself distinguish Q1'. SM-2's qDP/eDP asymmetry requires a chirality bias correlated with the substrate's primitive direction; the chirality content survives both readings. Q7 (sub-claim (a) cosmological-timing) is the universe-wide selection of $\hat{n}$ vs $-\hat{n}$, which is decoupled from the orbit-orientation question (vertex vs face) addressed by Q1'.
+
+### §9.8 Status update
+
+**Closed at Layer 3 (theorem-level) this patch.**
+
+- **Q1** (group-theoretic verification of the substrate-stabilizer structural claim): CLOSED. The $\Hfour$-stabilizer of a unit vector $\hat{n} \in \mathbb{R}^4$ is one of $\Hthree$ (order 120, vertex orbit), $D_5 \times \mathbb{Z}_2$ (order 20, edge orbit), $\Dsix$ (order 12, face orbit), $S_4$ (order 24, cell orbit), or trivial (generic orbit). The §2.2 Claim of isomorphism with $\Ifour = H_4^+$ (order 7,200) is **refuted**.
+
+- **Q2** (residual-symmetry consistency with paper algebraic machinery): CLOSED. The Wigner-Eckart machinery on $\Dsix$ used in the Capotauro v1.0 paper requires the substrate's residual symmetry to contain $\Dsix$. Among the four non-trivial $\Hfour$-orbits, only the vertex-aligned ($\Hthree \supset \Dsix$) and face-aligned ($\Dsix$ itself) orientations satisfy this consistency requirement. Cell-aligned and edge-aligned orientations are **excluded** by group theory. The paper's downstream derivation is preserved under either of the surviving alignments.
+
+**Newly registered as open.**
+
+- **Q1'** (NEW sub-question of OPEN-FI-C-9-FP-MECHANISM): Is the primitive direction $\hat{n}$ of Reading C aligned with a 600-cell vertex (substrate residual symmetry $\Hthree$) or with a 600-cell face (substrate residual symmetry $\Dsix$)? Both are consistent with the paper's machinery; selection between them requires further structural analysis or empirical input. The face-aligned reading produces a striking structural coincidence (Finding C-W35 above: substrate residual symmetry = K3-doublet stabilizer exactly) that may be a physical argument for that choice. Estimated 1–3 sessions to closure depending on which structural argument resolves the question.
+
+**Unchanged.**
+
+- **Q3** (precise $\epsilon$–$\chi$ relationship): open. The §2.4 perturbative-distance-ratio argument needs sharpening to specify whether $\epsilon$ and $\chi$ are equal or related by a structural factor. The Q1 + Q2 closure does not bear on this question (the argument operates on edge-length structure, independent of the specific stabilizer identification).
+- **Q4** (higher-order $\epsilon$-expansion → fractional retention prediction at theorem level): open.
+- **Q5, Q6** (cross-sector consistency with SF-2 W bracelet and SM-2 qDP/eDP): open.
+- **Q7** (cosmological-timing interaction with sub-claim (a) Capotauro nucleation event): open.
+
+**Forward queue.**
+
+- *Next priority*: Q1' resolution (vertex-aligned vs face-aligned). The face-aligned reading's structural coincidence (Finding C-W35) is the leading argument; vertex-aligned is the alternative if maximum-residual-symmetry is taken as the operative principle.
+- *Cross-sector check*: SF-2 W bracelet stabilizer is $\Dsix$ (FI-C-4 from SF-2 v1.0); the W bracelet sits at an edge-like location of the 600-cell substrate. Under the face-aligned Reading C, the W bracelet $\Dsix$ stabilizer and the K3-doublet $\Dsix$ stabilizer would both be substrate-level — a cross-sector unification argument. Under vertex-aligned Reading C, both are sub-stabilizers at different locations within the $\Hthree$ substrate symmetry. This cross-sector observation may bear on Q1'.
+
+**Epistemic status of the §9 closure.** Layer 3 (theorem-level) for Q1 and Q2. The Q1 result is elementary Coxeter-group theory (orbit-stabilizer + parabolic-subgroup identification), citable to Humphreys 1990 §1.10. The Q2 result is elementary finite-group theory (subgroup-embedding checks for $\Dsix$ in each candidate stabilizer). No appeals to physical intuition or unverified postulates; the closure is purely mathematical and rigorous.
+
