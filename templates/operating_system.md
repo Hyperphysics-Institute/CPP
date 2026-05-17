@@ -378,7 +378,7 @@ If a new atomic task needs to be added to the Phase 7 pipeline, add it to `templ
 
 When a session is closing — context window approaching capacity, time running out, fresh-eyes-needed checkpoint — write enough that the next session can resume cleanly. This is the *session-window-bounded data-loss trigger*: the in-moment thinking, the decision rationale, the Thomas-verbatim physical insights, the unfinished thread that will be picked up next session. None of this survives the window close unless it is written down.
 
-**For per-paper work:** Update the paper's `handover-[S]-[N].md` (current state) and `transcript-[S]-[N].md` (transaction-indexed pointer-map) per §11. Append a development vignette to `development-[S]-[N].md` if substantive thinking happened in the session. These three files are the per-paper continuity discipline; §11 specifies them in detail.
+**For per-paper work:** Update the paper's handover file (now in `handovers/YYYY-MM-DD_session_NNN_<scope>.md` per the §15 Handover file location protocol; formerly per-paper at `documentation_suite/handover-[S]-[N].md` before the 17 May 2026 Patch 0422 migration) and `transcript-[S]-[N].md` (transaction-indexed pointer-map) per §11. Append a development vignette to `development-[S]-[N].md` if substantive thinking happened in the session. The transcript and development files remain in `documentation_suite/`; only the handover file has moved.
 
 **For cross-paper work:** Write or append to a cross-paper session log per the discipline below. Cross-paper work means anything that touches the programme outside any single paper's scope: registry audits, bootup-protocol failures, programme-policy decisions, methodological discipline introductions, multi-paper integration sessions.
 
@@ -483,11 +483,11 @@ The pre-existing `OPEN-SS-24_handover.md`-style explicit handover documents are 
 
 **Default rule.** Do not write an explicit handover document by default. The session log is the handover. If you find yourself wanting to write a separate handover document, first check whether the most recent session log already accomplishes that purpose; in most cases it does. Write the explicit document only when one of the four conditions above is genuinely met.
 
-When an explicit handover document IS written, it lives in `session_logs/` alongside the session log sequence it summarizes (e.g., `session_logs/OPEN-SS-24_handover.md` next to `session_logs/2026-04-26_session_log_2.md`, `session_logs/2026-04-27_session_log.md`, etc.). The handover document is short — typically 1–3 pages — and consists primarily of pointers into the session log sequence with brief annotations on each entry's contribution. It is not a re-narration of the work; the session logs already contain that.
+When an explicit handover document IS written, it lives in `handovers/` per the §15 Handover file location protocol (e.g., the OPEN-SS-24 trajectory handover is now at `handovers/2026-04-26_open-ss-24_trajectory.md`, formerly at `session_logs/OPEN-SS-24_handover.md` before the 17 May 2026 Patch 0422 migration). The handover document is short — typically 1–3 pages — and consists primarily of pointers into the session log sequence with brief annotations on each entry's contribution. It is not a re-narration of the work; the session logs already contain that.
 
 **Existing handover documents.** The `OPEN-SS-24_handover.md` document written 26 April 2026 (Session 1) is preserved as the historical bootstrap for OPEN-SS-24 work. Future sessions on OPEN-SS-24 should treat the session log sequence (starting with `2026-04-26_session_log_2.md`) as the primary handover, with the handover document as a one-time bootstrap reference.
 
-**Reconciliation with §15 four-item preservation checklist.** §4 modifies but does not replace the §15 protocol. For sessions where work-in-progress lives in `session_logs/`, §4 replaces item 1's `handover-[S]-[N].md` requirement; the session log IS the handover. §4 partially satisfies item 1's `development-[S]-[N].md` requirement via the Template-A five-element structure, but verbatim content (multi-AI exchanges, Thomas-verbatim physical insights) still requires a separate curated transcript file. Items 2 (registry updates), 3 (reviewer artifacts), and 4 (protocol/OS updates) of the §15 checklist are unchanged. For Trigger 2 paper-completion cycles, the legacy §15 form applies in full: papers that reach genuinely-final shipped status produce `development-SS-N.md` and `handover-SS-N.md` in their documentation suite directory, with the relevant session log entries from `session_logs/` serving as source material for the synthesized lab-notebook record. See §15 "Reconciliation with §4 Session-Log-as-Handover-Backbone Discipline" for full detail.
+**Reconciliation with §15 four-item preservation checklist.** §4 modifies but does not replace the §15 protocol. For sessions where work-in-progress lives in `session_logs/`, §4 replaces item 1's `handover-[S]-[N].md` requirement; the session log IS the handover. §4 partially satisfies item 1's `development-[S]-[N].md` requirement via the Template-A five-element structure, but verbatim content (multi-AI exchanges, Thomas-verbatim physical insights) still requires a separate curated transcript file. Items 2 (registry updates), 3 (reviewer artifacts), and 4 (protocol/OS updates) of the §15 checklist are unchanged. For Trigger 2 paper-completion cycles, the legacy §15 form applies in full: papers that reach genuinely-final shipped status produce a development vignette at `development-SS-N.md` in their documentation_suite directory and a handover document at `handovers/YYYY-MM-DD_session_NNN_<scope>.md` per the §15 Handover file location protocol (pre-17-May-2026, the handover was at `documentation_suite/handover-SS-N.md`; see `handovers/README.md` for the migration correspondence table). Relevant session log entries from `session_logs/` serve as source material for the synthesized lab-notebook record. See §15 "Reconciliation with §4 Session-Log-as-Handover-Backbone Discipline" for full detail.
 
 #### Four-Tier Documentation Discipline (codified 26 April 2026 Session 3)
 
@@ -1142,8 +1142,7 @@ series_[name]/papers/[PAPER-ID]/
 ├── sketches/                            ← derivation notes, findings, exploratory analyses
 ├── scripts/                             ← Python verification scripts
 ├── founders_voice/                      ← Thomas's recorded intuitions and organizational notes
-└── documentation_suite/                 ← the paper's companion documentation (three-file handover + the 7-file suite)
-    ├── handover-[PAPER-ID].md           ← session-continuity state (bounded snapshot)
+└── documentation_suite/                 ← the paper's companion documentation (transcript + development + the 7-file suite; handover migrated to /handovers/ per §15 Patch 0422)
     ├── development-[PAPER-ID].md        ← session-by-session vignettes (append-only, never retroactively edited)
     ├── transcript-[PAPER-ID].md         ← transaction-indexed pointer-map (optional)
     ├── mechanism-[PAPER-ID].md          ← 7-file suite files — added progressively from first to v1.0+
@@ -1155,7 +1154,9 @@ series_[name]/papers/[PAPER-ID]/
     └── FAQ-[PAPER-ID].md
 ```
 
-**Lazy folder creation.** Do not create subfolders that have no content yet. A brand-new paper with only a sketch has `sketches/` and nothing else. `documentation_suite/` is created as soon as the first suite file is written — typically `handover-[PAPER-ID].md` at the first session close.
+**Handover documents have moved.** Pre-17-May-2026 papers had `handover-[PAPER-ID].md` in `documentation_suite/`. Patch 0422 migrated all handover files to `handovers/` at the repo root with date-prefixed naming. See §15 for the location protocol and `handovers/README.md` for the migration correspondence table. The handover document's role (forward-looking state for the next session) is unchanged; only the location is different.
+
+**Lazy folder creation.** Do not create subfolders that have no content yet. A brand-new paper with only a sketch has `sketches/` and nothing else. `documentation_suite/` is created as soon as the first suite file is written — typically `development-[PAPER-ID].md` or `transcript-[PAPER-ID].md` at the first session close. The handover file for the paper is written to `handovers/` per §15, not to `documentation_suite/`.
 
 **What goes in `founders_voice/`.** Thomas's organizational vision for the paper, gedanken experiments, pattern-recognition intuitions, decisions about structure and presentation, recorded verbatim or as he provides them. This is analogous to `letters/` for Claude and `reviews/` for external reviewers: it captures the founder's voice as a first-class artefact class of the paper's development record. Contributions may be occasional — Thomas does not need to produce a founder's-voice entry for every session.
 
@@ -1173,12 +1174,12 @@ Within `documentation_suite/`, three files serve distinct session-continuity pur
 
 **`development-[PAPER-ID].md` — session-by-session vignettes.** A chronological sequence of session summaries, each written at the session's end, preserving the texture of what that session believed at that moment. Append-only. **Never retrospectively edited.** If a later session proves an earlier session's framing wrong, the later session's vignette records the correction; the earlier vignette stays as written. This preserves in-moment honesty — a decision that looked weird at the time and turned out to be right should be recorded as it was thought, not prettified in hindsight. A compact leading table tracks vignettes by date and one-liner.
 
-**`handover-[PAPER-ID].md` — bounded current-state snapshot.** The prospective operational document for the next Claude context window. Names the active paper, current state, queued open items with priority ordering, pending registry ratifications, and pointers to substantive artefacts. Ruthlessly short: a few hundred lines max. Replaced (not appended to) at each session close; old handover content moves into `development-[PAPER-ID].md` as a vignette.
+**The handover document — now at `handovers/YYYY-MM-DD_session_NNN_<scope>.md`.** The prospective operational document for the next Claude context window. Names the active paper or trajectory, current state, queued open items with priority ordering, pending registry ratifications, and pointers to substantive artefacts. Ruthlessly short: a few hundred lines max. Append-only at session/milestone close: new handover files are written for new milestones rather than editing old handover files. See §15 for the full location protocol; pre-17-May-2026 handovers at `documentation_suite/handover-[PAPER-ID].md` have been migrated to `handovers/` per Patch 0422.
 
-**Division of labor.** The test that tells the three files apart:
-- If the content is **verbatim and substantive**, it goes in a standalone artefact (`reviews/`, `letters/`, `sketches/`, `founders_voice/`, `scripts/`), and the three documentation-suite files point at it.
+**Division of labor.** The test that tells the documentation_suite files apart:
+- If the content is **verbatim and substantive**, it goes in a standalone artefact (`reviews/`, `letters/`, `sketches/`, `founders_voice/`, `scripts/`), and the documentation-suite files point at it.
 - If the content is **retrospective narrative about the paper's lineage written in-moment**, it goes in `development-[PAPER-ID].md`.
-- If the content is **forward-looking state for the next session**, it goes in `handover-[PAPER-ID].md`.
+- If the content is **forward-looking state for the next session**, it goes in `handovers/YYYY-MM-DD_session_NNN_<scope>.md` per §15 (not in `documentation_suite/`).
 - If the content is **a transaction identifier to be referenced later**, it goes in `transcript-[PAPER-ID].md`.
 
 **No crystallization point.** The documentation-suite files have no "completion" state. v1.0 is a milestone of external-readiness, not finality; post-v1.0 revisions (reviewer feedback, OSF reader feedback, public feedback, programme-level discoveries that affect the paper's framing) are expected and their treatment is identical to pre-v1.0 revisions. The documentation suite tracks these continuously. The seven narrative companion files (`mechanism-`, `glossary-`, `phenomena-`, `philosophy-`, `reviews-`, `keywords-`, `FAQ-`) are built progressively from the first section-end forward, not heroically at v1.0; incremental authorship keeps rationales fresher than retrospective writing does.
@@ -1587,6 +1588,28 @@ If, during future sessions, this §14 needs updating (new trigger types, refined
 ## 15. Session-close Handover Protocol (promoted to top level 24 April 2026)
 
 **Purpose.** Specifies the procedure that runs when a session is approaching its end — whether due to context-pressure crossing, planned session close, or substantive milestone completion — to ensure that no narrative, registry, reviewer, or protocol artifact is lost to compaction. This section was promoted from a buried subsection of §10 to top-level visibility per OPEN-ORG-008 resolution, after a 23–24 April 2026 SS-8 v0.2 session demonstrated the failure mode where the protocol existed on paper but did not fire because Claude could not reliably self-monitor and the procedure was not in Claude's active working set during substantive work.
+
+### Handover file location and naming convention (adopted 17 May 2026, Patch 0422)
+
+**Location.** All handover files live in `handovers/` at the repo root. There is no other handover location. Per-paper subfolders (formerly `flagship_papers/<paper>/documentation_suite/handover-<paper>.md` and `series_<x>/papers/<id>/documentation_suite/handover-<id>.md`), root-level legacy files (formerly `SESSION_36/54/81_HANDOVER_FOR_NEXT_CONTEXT.md`), per-trajectory files (formerly `flagship_papers/<paper>/sketches/<trajectory>_handover.md`), and per-problem files (formerly `session_logs/OPEN-<X>_handover.md`) have all been migrated to `handovers/` in a single chronologically-sorted folder.
+
+**Naming convention.** `YYYY-MM-DD_session_NNN_<scope>.md` where:
+- `YYYY-MM-DD` is the programme date of the session being handed off (not the file commit date if they differ; the programme date is the authoritative anchor)
+- `session_NNN` is the three-digit session number with leading zeros for chronological sort within a date; omit only for legacy pre-Session-numbering-codification handovers (pre-Session-32 work uses `YYYY-MM-DD_<scope>.md`)
+- `<scope>` is a short snake_case descriptor identifying the handover's scope (e.g., `programme`, `capotauro_v1.0_ship`, `reading_c_closure_trajectory`, `ss-9_v1.0_ship`). Use lowercase and hyphens for paper IDs (`ss-9`, not `SS-9`).
+
+**Discoverability rule.** At new-session bootup, the canonical "what's next" pointer is the most recent file in `handovers/`. Sort `handovers/` by filename (chronological by construction) and read the last entry. If the last entry is paper-scoped or trajectory-scoped and doesn't match the work to be done in the new session, look back at the previous most-recent file with matching scope.
+
+**Append-only discipline.** Handover files are not edited after the session they were written for (apart from same-session fix-ups for typos or formatting). If a handover's forward queue changes, write a new handover file at the next session close rather than editing the old one. The old file is preserved as the historical handover state at the moment it was written. This ensures the chronological-sort-by-filename property continues to work: the newest file in the folder is always the current canonical handover.
+
+**When to write a handover file.** Most sessions do NOT produce a separate handover file — the §4 session-log-as-handover-backbone discipline is the default. Write a separate handover file in `handovers/` only when:
+- A paper reaches v1.0 SHIP or major archival milestone (one handover per such milestone)
+- A multi-session closure trajectory makes substantive advance (e.g., a three-patch arc)
+- A programme-wide juncture warrants an explicit forward pointer (rare; the legacy `SESSION_36/54/81_HANDOVER` files were of this kind)
+- Thomas explicitly requests one ("execute handover protocol" canonical trigger or minor variant)
+- The Dual-trigger mechanism (below) fires under workflow-shape signals
+
+**Migration note (Patch 0422, 17 May 2026).** Eleven existing handover files were consolidated into `handovers/` via `git mv` with rename to the date-prefixed convention. Cross-references in historical documents (session logs, transcripts, development vignettes) still point to old paths; readers following them should consult `handovers/README.md` for the correspondence table. The migration was a pure mechanical refactor with the spec updates in §4 and §11 reflecting the new location; no content of any handover file was changed.
 
 ### Dual-trigger mechanism
 
