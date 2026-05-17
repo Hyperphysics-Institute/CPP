@@ -315,6 +315,7 @@ complete, so that the rename pass covers all files simultaneously.
 **Rename history:**
 - 30 March 2026: Legacy codes (P1–P6, SS-T1, P-CPP-1, OP-SS-1, CJ-SS-1) replaced with new scheme across all files.
 - 12 April 2026: Three-layer reorganization. `postulates_and_theorems.md` split into `axiom-registry.md` + `theorem-registry.md` + `Research_Frontier.md`. `propositions.md`, `solution_candidates.md`, and `open_problems/` archived — content absorbed into `Research_Frontier.md`. OPEN-P prefix simplified to OPEN.
+- 17 May 2026 (Patch 0422 sequence): Filesystem casing standardized — `Research_Frontier.md` → `research_frontier.md` (Patch e47f760 series), `Organizational_Frontier.md` → `organizational_frontier.md` (Patch e47f760). NEW programme-level folder `handovers/` introduced (Patch 0422 handover-consolidation) at `/CPP` root, containing session-handover continuity documents with filename pattern `handovers/YYYY-MM-DD_session_NNN_<scope>.md` (chronological-sort by filename; newest = canonical bootup pointer per `handovers/README.md`). The ID-code nomenclature scheme itself remains UNCHANGED — these are filesystem-layer changes, not ID-code changes. No legacy ID codes affected. The 17 May 2026 changes are pure filename rationalization plus one new continuity-file convention.
 
 ---
 

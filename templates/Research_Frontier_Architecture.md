@@ -346,6 +346,24 @@ And the two registries anchor the deductive structure:
 
 ---
 
+## Post-creation extensions (added 17 May 2026, Patch 0422F)
+
+The three-layer architecture above (Research_Frontier dashboard / problem_histories travelogue / papers formal synthesis) was decided 12 April 2026 and remains the core structure. Since then, several programme-level files have been added at the `/CPP` root that extend the registry layer without disturbing the core three-layer design:
+
+| File / folder | Added | Role | Relationship to three-layer architecture |
+|---|---|---|---|
+| `research_timeline.md` | 15 May 2026 (Patch 0377) | Medium-term scheduling: which papers and methodology campaigns are next in priority order, with dependencies, durations, cross-references to research_frontier OPEN-FP entries | Sits **between** the strategic-but-unscheduled `research_frontier.md` (Layer 1) and the tactical-days-weeks `todolist.md`. Distinct from per-paper handover documents (session-arc-local). |
+| `research_priorities.md` | Session 36 (~7 May 2026) | Strategic prioritization layer (quarterly cadence): which research tracks are #1 priority for the programme right now | Sits **above** `research_frontier.md` (Layer 1) as a strategic filter — frontier lists every problem, priorities select which to actually work on. |
+| `organizational_frontier.md` | Earlier filename `Organizational_Frontier.md` later lowercased at e47f760 | Tracks OPEN-ORG-* organizational/workflow items (parallel to the OPEN-* / CONJ-* / PROP- tracking in `research_frontier.md`) | Same Layer 1 dashboard role as `research_frontier.md`, but for organizational/process problems rather than theoretical/physics problems. |
+| `handovers/` (folder) | 17 May 2026 (Patch 0422) | Session-handover continuity documents (one file per session-handoff moment); filename pattern `YYYY-MM-DD_session_NNN_<scope>.md`; chronological-sort by filename; newest = canonical bootup pointer | **NEW layer** below the three-layer architecture, capturing session-window-bounded continuity context that does not fit at any of Layer 1 (too granular), Layer 2 (problem-specific not session-specific), or Layer 3 (not a paper). Documented in `handovers/README.md`. |
+
+**Filesystem casing standardization (17 May 2026 Patch 0422 sequence):** `Research_Frontier.md` → `research_frontier.md`; `Organizational_Frontier.md` → `organizational_frontier.md`. The current document still uses the capitalized forms in its body text and section headers (which were correct at 12 April creation); the standardization is filesystem-level and does not invalidate the architectural decisions documented here.
+
+These additions are extensions, not revisions. The 12 April three-layer architecture (Research_Frontier dashboard / problem_histories travelogue / papers formal synthesis) remains the decision; the post-creation extensions sit alongside the core three layers and serve continuity, scheduling, and organizational-process roles that the original three layers did not cover.
+
+---
+
 *Decision document prepared 12 April 2026.*
 *Implementation begins when Thomas schedules a dedicated session for Phase 1.*
 *This document is referenced by `bootup.md` and `operating_system.md`.*
+*Post-creation extensions note appended 17 May 2026 Patch 0422F.*
