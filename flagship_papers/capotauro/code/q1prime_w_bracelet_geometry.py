@@ -332,9 +332,77 @@ def main():
         assert abs(max_cos - cos_pred) < 1e-5
 
     print("\n" + "=" * 70)
-    print("ALL CHECKS PASSED")
+    print("ALL CHECKS PASSED (Patch 0418)")
     print("=" * 70)
-    print("\nSUMMARY OF NEW STRUCTURAL FACTS (Finding C-W36):")
+
+    # ----- Q1'.A verification (Session 126, Patch 0419) -----
+    print("\n" + "=" * 70)
+    print("Q1'.A verification: K3 base geometric realization (Patch 0419)")
+    print("=" * 70)
+
+    # Build face set + adjacency for combinatorial check
+    edges = find_edges(V)
+    adj_lists = [set() for _ in range(N)]
+    for (i, j) in edges:
+        adj_lists[i].add(j)
+        adj_lists[j].add(i)
+    faces_set = find_faces(adj_lists)
+    assert len(faces_set) == 1200
+
+    # For each 600-cell face, count its host vertices (common neighbors of all 3 face-vertices)
+    from collections import Counter as _Counter
+    host_counts = []
+    for face in faces_set:
+        a, b, c = face
+        common = adj_lists[a] & adj_lists[b] & adj_lists[c]
+        host_counts.append(len(common))
+    dist = _Counter(host_counts)
+    print(f"\n[Q1'.A Step 1] Face common-neighbor (host) distribution: {dict(dist)}")
+    print(f"               Expected: every face has exactly 2 hosts (degenerate distribution)")
+    assert dist == {2: 1200}, f"Face-host distribution not degenerate at 2: got {dist}"
+    print(f"               *** All 1200 faces have exactly 2 host vertices ***")
+
+    # Verify host vertices are outside the face
+    for face in list(faces_set)[:10]:  # Sample 10
+        a, b, c = face
+        common = adj_lists[a] & adj_lists[b] & adj_lists[c]
+        face_set = {a, b, c}
+        assert not (common & face_set), f"Face {face} has its own vertex as common neighbor"
+    print(f"               Sampled faces: host vertices are all outside the face (verified on 10)")
+
+    # Verify K3-face off-axis cosine sqrt(3)/2 from host vertex
+    print(f"\n[Q1'.A Step 2] K3-face cosine from host vertex direction:")
+    sample_face = list(faces_set)[0]
+    sample_face_centroid = np.mean([V[v] for v in sample_face], axis=0)
+    sample_face_dir = sample_face_centroid / np.linalg.norm(sample_face_centroid)
+    sample_hosts = adj_lists[sample_face[0]] & adj_lists[sample_face[1]] & adj_lists[sample_face[2]]
+    sample_host = next(iter(sample_hosts))
+    cos_val = float(np.dot(V[sample_host], sample_face_dir))
+    expected = np.sqrt(3) / 2
+    print(f"               Sample face {sample_face}, host vertex {sample_host}")
+    print(f"               Observed cosine: {cos_val:.6f}")
+    print(f"               Expected:        sqrt(3)/2 = {expected:.6f}")
+    assert abs(cos_val - expected) < 1e-5
+    print(f"               *** K3-face cosine identity verified: cos = sqrt(3)/2 ***")
+
+    # Verify (host, face) pair total = 120 * 20 = 2400 = 1200 * 2
+    total_pairs = sum(len(adj_lists[a] & adj_lists[b] & adj_lists[c]) for (a, b, c) in faces_set)
+    print(f"\n[Q1'.A Step 3] Total (host, face) pairs: {total_pairs}")
+    print(f"               Expected: 120 hosts x 20 first-shell triangles = 2400")
+    print(f"                       = 1200 faces x 2 hosts each = 2400")
+    assert total_pairs == 2400
+
+    print("\n" + "=" * 70)
+    print("Q1'.A VERIFICATION COMPLETE — Finding C-W37 supported")
+    print("=" * 70)
+    print("\nThe K3 base (extended over the V=12 icosahedral cage per Capotauro §10)")
+    print("IS a triangular face of the host vertex's first-shell icosahedron =")
+    print("a 600-cell face. Each face has exactly 2 host vertices; vertex-aligned")
+    print("Reading C uniquely picks one host via n_hat, face-aligned Reading C")
+    print("leaves the 2 hosts indistinguishable. The K3 face sits at cosine")
+    print("sqrt(3)/2 = 0.866 (30 degrees) from the host vertex direction.")
+    print()
+    print("SUMMARY OF NEW STRUCTURAL FACTS (Finding C-W36):")
     print(" - The 1200 W bracelets cluster as 10-per-vertex around the 120 vertex directions.")
     print(" - Each bracelet is a Petrie hexagon of the SM-1 first-shell icosahedron.")
     print(" - W bracelet centroid directions are the VERTEX orbit, not the face orbit.")

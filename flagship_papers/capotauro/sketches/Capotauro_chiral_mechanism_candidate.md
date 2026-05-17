@@ -582,3 +582,84 @@ Reading C closure trajectory budget: 8–18 sessions revised at Patch 0417 (Q1+Q
 
 Layer 3 (theorem-level rigor) for the geometric facts established. The computational verification is reproducible at < 30 second runtime via `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`. The structural identification (bracelet = Petrie hexagon of first-shell icosahedron) is purely combinatorial; no appeals to physical intuition or unverified postulates. The cosine identity $\sqrt{(1+\phi)/3} = 0.934172$ for vertex-to-containing-face direction is elementary closed-form. What is **not** Layer 3 in this section: the *interpretation* of the result for Q1' resolution depends on Q1'.A, which is not yet closed; the cross-sector "structural-coincidence" arguments on both sides have equal logical weight without additional structural input.
 
+
+---
+
+## §11 Q1'.A resolution and Q1' resolution: vertex-aligned Reading C (Session 126, Patch 0419)
+
+§10 left Q1' contested with complementary structural-coincidence arguments on both sides (Finding C-W35 face-aligned with K3-doublet on-axis; Finding C-W36 vertex-aligned with W bracelet on-axis), and registered Q1'.A as the deciding sub-question: where is the K3 base geometrically realized in the substrate? This section closes Q1'.A by reading the Capotauro paper's existing geometric framing, and consequently resolves Q1' toward vertex-aligned Reading C at Layer 2 (structural argument level) with Layer 3 geometric content.
+
+### §11.1 The paper's specification of K3-base placement
+
+The Capotauro paper v1.0 §6.1 (sec:k3_base) and §10 contain the geometric content needed. The key passage is at the end of §10 (the cage-shell averaging derivation):
+
+> *The structural identity $V_\text{cage} = |\Dsix| = 12$ has physical content: the icosahedral cage hosting the K3-doublet has exactly the order of the K3-doublet's stabilizer group. This is a consequence of the substrate's geometric structure --- the 600-cell's icosahedral first shell hosts the same $\Sthree \times \mathbb{Z}_2$ that stabilizes the K3 base extended over the cage.*
+
+The K3-doublet is hosted by **a specific icosahedral cage** — namely the $V_\text{cage} = 12$ first shell of a 600-cell vertex (per the SM-1 four-cage taxonomy at $V \in \{4, 12, 20, 30\}$, with the icosahedral $V=12$ being the cage type to which the K3-doublet belongs). Each icosahedral first shell consists of the 12 edge-neighbors of a unique central 600-cell vertex — the **host vertex** of that cage. The K3 base is **"extended over the cage"** — its three colour-vertices $\{V_1, V_2, V_3\}$ are 3 of these 12 first-shell vertices.
+
+### §11.2 The K3 face geometric identity
+
+The 12 first-shell vertices of any 600-cell vertex form a regular icosahedron in the 3D affine subspace at radius $1/\phi$ from the central vertex (the SM-1 first-shell icosahedron, $z = 12$ coordination). The icosahedron has 20 triangular faces. Each triangular face of the first-shell icosahedron is a 3-vertex set of mutually-edge-connected 600-cell first-shell vertices — and since edge-connection in the first shell means mutual edge distance $1/\phi$ in the 600-cell, each such triangle **IS a triangular face of the 600-cell** itself.
+
+Verified computationally (Session 126; extension of the Patch 0418 verification script): the 20 triangular faces of the first-shell icosahedron at any 600-cell vertex are all faces of the 600-cell. Summed across all 120 host vertices, the first-shell triangles enumerate to $120 \times 20 = 2400$ (host, face) pairs. Each 600-cell face has **exactly 2 host vertices** — i.e., exactly 2 common neighbors of its 3 face-vertices in the 600-cell edge graph (verified: 100\% of the 1200 faces have common-neighbor count 2; distribution is degenerate). The 2 hosts of any K3 face are **outside** the face (since a vertex is not in its own first-shell icosahedron — no self-loops in the 600-cell edge graph). The combinatorial accounting: $2400 / 2 = 1200$ distinct faces ✓.
+
+For Q1'.A purposes, the structural identity stands: **the K3 base, extended over the icosahedral cage of a unique host vertex, IS a triangular face of the 600-cell**. The host vertex is one of 2 candidate hosts for that face, and once the host is fixed, the K3 base is one of the 20 triangular faces of the host's first-shell icosahedron.
+
+### §11.3 Q1'.A resolution
+
+Under **vertex-aligned** Reading C with $\hat{n} = $ host vertex direction:
+- The host vertex is uniquely identified by $\hat{n}$ (= the 600-cell vertex direction $\hat{n}$ points to).
+- The K3 base is a triangular face of this host vertex's first-shell icosahedron (= a 600-cell face).
+- The K3 face centroid lies at cosine $\sqrt{3}/2 \approx 0.866$ from $\hat{n}$ — i.e., $30°$ off-axis. (Identity: with host vertex $v_0$ at unit radius, K3 face vertices $v_a, v_b, v_c$ at edge-distance $1/\phi$ from $v_0$ giving $v_0 \cdot v_i = \phi/2$, the centroid direction is $\hat{c} = (v_a + v_b + v_c)/\|v_a + v_b + v_c\|$ with $\|v_a + v_b + v_c\|^2 = 3 + 3\phi$ and $v_0 \cdot (v_a + v_b + v_c) = 3\phi/2$; therefore $v_0 \cdot \hat{c} = (3\phi/2)/\sqrt{3+3\phi} = \sqrt{3\phi^2 / (4(1+\phi))} = \sqrt{3/4} = \sqrt{3}/2$, using $\phi^2 = \phi + 1$.)
+- The K3 base's $S_3$ stabilizer factor permutes the 3 face-vertices in the plane perpendicular to the 3-fold axis through their centroid; this is one of 10 $D_{3d}$ subgroups of substrate $H_3 = I_h$, each corresponding to one of the icosahedron's 10 3-fold rotation axes.
+- W bracelet sits on-axis with $\hat{n}$ at radius $\phi/2$ (Finding C-W36, Patch 0418).
+
+Under **face-aligned** Reading C with $\hat{n} = $ K3 face centroid direction:
+- The K3 face is uniquely identified by $\hat{n}$.
+- The K3 face has **2 host vertex candidates** — namely the 2 common neighbors of its 3 face-vertices in the 600-cell edge graph (per §11.2 combinatorial check; both hosts are outside the face). Both candidates lie at cosine $\sqrt{3}/2 \approx 0.866$ from $\hat{n}$ (the same off-axis cosine as the vertex-aligned reading's K3-face-off-axis cosine, by the same closed-form identity). The "host vertex" identification is **not unique** under face-aligned — there are 2 candidate hosts for any given K3 face, and $\hat{n}$ alone does not distinguish between them.
+- The K3 face is on-axis with $\hat{n}$ at cosine 1; substrate stabilizer = $D_6 = S_3 \times \mathbb{Z}_2 = $ K3-doublet stabilizer exactly (Finding C-W35, Patch 0417).
+- W bracelet sits off-axis at cosine $\sqrt{(1+\phi)/3} \approx 0.934$ from $\hat{n}$.
+
+**Q1'.A resolution.** The Capotauro paper §10 framing requires a unique icosahedral cage hosting the K3-doublet. Under vertex-aligned, this is a unique host vertex direction (with $\hat{n}$ identified with it). Under face-aligned, there are 2 candidate host vertices per K3 face (with $\hat{n}$ identified with the face direction, distinct from any host vertex direction). The vertex-aligned reading **uniquely matches** the paper's "icosahedral cage hosting the K3-doublet" framing; face-aligned introduces a 2-fold host ambiguity that the paper's framing does not accommodate.
+
+### §11.4 Q1' resolution: vertex-aligned Reading C
+
+With Q1'.A resolved toward vertex-aligned host placement, Q1' resolves toward **vertex-aligned Reading C** by the following argument cluster:
+
+1. **Paper-internal hosting argument (Q1'.A resolution, §11.3 above).** The Capotauro paper §10's "icosahedral cage hosting the K3-doublet" framing requires a unique host vertex, naturally identified with the substrate primitive direction $\hat{n}$. Vertex-aligned provides this; face-aligned does not.
+
+2. **Cross-sector unification with SF-2 (Finding C-W36, Patch 0418).** Under vertex-aligned, 10 W bracelets sit on-axis with $\hat{n}$ at radius $\phi/2$. The W bracelet's $\Dsix$ stabilizer (SF-2 v1.0 Theorem 4.2) is one of 10 Petrie-polygon subgroups of substrate $H_3 = I_h$. This provides cross-sector substrate-level unification: both the K3-doublet (one of 10 $D_{3d}$ sub-stabilizers at icosahedral 3-fold axes) and the W bracelet (one of 10 Petrie-hexagon sub-stabilizers) emerge as substructures of the substrate's $H_3$ residual symmetry around the host vertex.
+
+3. **SM-1 first-shell icosahedron preserved.** Under vertex-aligned, the substrate's local geometry retains the SM-1 first-shell icosahedron as its fundamental structure ($H_3 = I_h$ residual symmetry around each 600-cell vertex direction). This is the standard CPP geometric framework; preserving it under Reading C is a consistency argument with the rest of the CPP corpus.
+
+**Reconciliation with Finding C-W35.** The face-aligned reading's structural-coincidence argument (substrate residual = K3-doublet stabilizer $D_6$ exactly) is preserved as a **sub-result** within vertex-aligned: the K3-doublet's location-specific $D_6$ stabilizer (corresponding to its 3-fold axis within the icosahedron) IS a subgroup of substrate $H_3$. The Wigner-Eckart machinery on $D_6$ in the Capotauro paper §6.5–§10 operates on this sub-stabilizer correctly — the paper's downstream derivation is preserved under vertex-aligned Reading C without modification. The "structural coincidence" of Finding C-W35 is the observation that $D_6$ is the *natural* operational stabilizer for the K3-doublet (since the K3 base picks out a specific 3-fold direction within $H_3$), not that the substrate's *full* residual symmetry equals the K3-doublet stabilizer.
+
+### §11.5 Finding C-W37 (NEW)
+
+Registered this patch:
+
+> **Finding C-W37** — Q1' resolves toward vertex-aligned Reading C at Layer 2 (structural argument level). The substrate primitive direction $\hat{n}$ aligns with a 600-cell vertex direction (the "host vertex" of the icosahedral cage hosting the K3-doublet, per paper §10 framing). Substrate residual symmetry is $H_3 = I_h$ (order 120). The K3 base is geometrically realized as a triangular face of the host vertex's first-shell icosahedron (= a 600-cell face), at cosine $\sqrt{3}/2$ ($30°$) off-axis from $\hat{n}$. The K3-doublet stabilizer $\Dsix$ is one of 10 $D_{3d}$ subgroups of substrate $H_3$, corresponding to the 10 3-fold rotation axes of the icosahedron. The W bracelet (SF-2 v1.0 substrate object) sits on-axis with $\hat{n}$ at radius $\phi/2$ (10 bracelets per host vertex; Finding C-W36, Patch 0418), with its $\Dsix$ stabilizer as one of 10 Petrie-polygon subgroups of substrate $H_3$. Cross-sector unification: both substrate objects (K3-doublet, W bracelet) emerge as sub-stabilizers of substrate $H_3$ at distinct geometric positions within the icosahedral first shell. Finding C-W35 (Patch 0417) is preserved as a sub-result describing the K3-doublet's location-specific stabilizer; Finding C-W36 (Patch 0418) is preserved as the cross-sector geometric fact placing the W bracelet on-axis under vertex-aligned.
+
+### §11.6 Combinatorial sub-note: each 600-cell face has exactly 2 hosts
+
+The §11.2 multiplicity calculation surfaced a clean combinatorial fact verified computationally: **each 600-cell face has exactly 2 host vertices**. Hosts are common neighbors (in the 600-cell edge graph) of the 3 face-vertices; the face's own 3 vertices are *not* hosts (no self-loops). Counting: 120 hosts × 20 first-shell triangles per host = 2400 (host, face) pairs; 2400 / 1200 distinct faces = 2.0 hosts per face. The full distribution is degenerate: all 1200 faces have common-neighbor count exactly 2 (verified). This is a structural fact about the 600-cell's vertex/face/host combinatorics that has direct bearing on Q1'.A: under face-aligned Reading C, the K3 face has 2 candidate hosts and $\hat{n}$ alone cannot distinguish them; under vertex-aligned Reading C, $\hat{n}$ picks one specific host and the K3 face is one of the 20 first-shell triangles within the host's icosahedral cage. The combinatorial picture is symmetric in a sense (each face has 2 hosts; each host has 20 faces, so the face-host bipartite graph has 2400 edges with vertex degrees 2 and 20), but the symmetry-breaking by $\hat{n}$ distinguishes the readings.
+
+### §11.7 Status update
+
+- **Q1** (§2.2 Claim verification): CLOSED at Layer 3 (Patch 0417 §9).
+- **Q2** (residual-symmetry consistency with paper machinery): CLOSED at Layer 3 (Patch 0417 §9).
+- **Q1'** (vertex vs face): **RESOLVED at Layer 2 toward vertex-aligned** (this patch §11.4 above).
+- **Q1'.A** (K3-base geometric realization): **RESOLVED** (this patch §11.3 above; K3 base = triangular face of host vertex's first-shell icosahedron).
+- **Q3** ($\epsilon$-$\chi$ relationship): unchanged, open.
+- **Q4** (higher-order $\epsilon$-expansion): unchanged, open.
+- **Q5, Q6** (cross-sector consistency with SF-2 W bracelet and SM-2 qDP/eDP): the cross-sector W bracelet unification under vertex-aligned (Finding C-W36 + Finding C-W37) is the Q5 contribution at structural level; Q5 partial progress.
+- **Q7** (cosmological timing): unchanged, open.
+
+Reading C closure trajectory budget revised: 8–18 sessions from Patch 0417 → **7–17 sessions** following Q1' + Q1'.A resolution this patch. Q3 + Q4 + Q5/Q6 + Q7 absorb the remaining budget.
+
+**Capotauro paper v2.0+ trigger**: Q1' minimum closure achieved. The v2.0 paper §2 reframe can now proceed from $H_4 \to I_4$ to $H_4 \to H_3 = I_h$ (vertex-aligned reading) as the substrate's residual symmetry under Reading C. The v0.9/v1.0 paper's $\Dsix$ machinery is preserved unchanged at the K3-doublet's location-specific sub-stabilizer level.
+
+### §11.8 Epistemic status
+
+Layer 2 (structural argument) for Q1' resolution. The geometric content (K3 base = first-shell triangle = 600-cell face; W bracelet on-axis under vertex-aligned per Finding C-W36; K3-base off-axis at cosine $\sqrt{3}/2$ under vertex-aligned) is Layer 3 computationally verified. The choice of vertex-aligned over face-aligned is Layer 2 based on three structural arguments (paper §10 hosting framing requires unique host vertex; cross-sector unification with SF-2 W bracelet; SM-1 first-shell icosahedron preserved). Face-aligned remains group-theoretically consistent at the algebraic level but is rejected at Layer 2 by the host-vertex ambiguity it introduces. A Layer 3 closure of Q1' would require either a direct physical derivation (forcing $\hat{n}$ to align with the host vertex via dynamical/causal/energetic argument from CPP primitives) or an observable falsifier distinguishing vertex-aligned and face-aligned predictions at empirical level — both deferred to future work.
+
