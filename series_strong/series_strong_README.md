@@ -1,7 +1,7 @@
 # Strong Sector Series (SS)
 
 **Location:** `CPP/series_strong/`
-**Last updated:** 26 April 2026 (SS-8 v1.0 added; backfilled SS-6 v0.2 and SS-7 v1.2 entries; series-spanning K₃-mode quantum recurrence pattern noted)
+**Last updated:** 17 May 2026 (Session 127 Patch 0422A: SS-9 v1.0 SHIPPED at Session 32 added — conditional theorem closure paper at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`, 32 pages, on seven-pass AI review convergence; OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship; OPEN-SS-37 registered for C8 first-principles closure with 4 candidate routes including distance-geometry/EDM/rigidity/realization-spaces; OPEN-SS-29/SS-30/SS-33 preserved as C5/C6/C7 first-principles closure targets; OPEN-SS-31 preserved as deltahedra-gap scope-extension target; THEO-SS-16 (Simplicial alpha-polytope connectivity, five-clause conditional theorem) added. Earlier 26 April 2026: SS-8 v1.0 added; backfilled SS-6 v0.2 and SS-7 v1.2 entries; series-spanning K₃-mode quantum recurrence pattern noted.)
 
 ---
 
@@ -23,6 +23,7 @@ The Strong Sector series derives QCD structure from the 600-cell tetrahedral geo
 | **SS-6** | Deuteron Observables Beyond Binding | v0.2 | Scoping: rigid-bipyramid intrinsic Q_d oblate (orbital-dominated); $a_{np} = 4.32$ fm | Scoping draft |
 | **SS-7** | Alpha-Cluster Regime and the 3N−6 Edge Formula | v1.2 | 12 zero-param N=Z alpha-chain bindings ¹²C through ⁵⁶Ni, RMS 0.80% | OSF pending (existing DOI from v0.1) |
 | **SS-8** | Interstitial-Neutron Binding and the 2E/V Scaling Law on the Alpha-Polytope | v1.0 | 42 conditional zero-param predictions; sub-1% at ²⁶Mg octahedron and ⁴²Ca gyroelongated square bipyramid; D1–D3 conditional theorems | OSF pending |
+| **SS-9** | Conditional Derivation of Simplicial Alpha-Polytope Connectivity from CPP Lattice Geometry | v1.0 | Five-clause conditional theorem (THEO-SS-16) closing OPEN-SS-24 conditional on hypothesis stack C1$'$ + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy; Steinitz 1922 + FvdW 1947 bridge; PRED-C-75/76/77 (⁸⁴Mo / ⁸⁸Ru / ⁹²Pd) verified at 0.05%/0.07%/0.13% | OSF pending (DOI 10.17605/OSF.IO/JXE8D registered) |
 
 ### Companion Papers (SS-1)
 
@@ -56,10 +57,10 @@ The light-nuclei (SS-5) → alpha-cluster (SS-7) → interstitial-neutron (SS-8)
 | **THEO-SS-10** | **SU(3) uniqueness** | **SS-3** |
 | PROP-SS-11 | Physical basis transformation | SS-3 |
 | **THEO-SS-12** | **Simplicial polytope edge count = 3N−6 (Euler's formula)** | **SS-7** |
-| **THEO-SS-13** | **D1: vertex localization (conditional, Level-1+2)** | **SS-8** |
-| **THEO-SS-14** | **D2: K₃-edge coupling at host vertex (conditional)** | **SS-8** |
-| **THEO-SS-15** | **D3: bulk-regime averaging (conditional)** | **SS-8** |
-| **THEO-SS-16** | **2E/V interstitial scaling law $\Delta_1(N_\alpha) = (6 - 12/N_\alpha) B_\text{pair}$** | **SS-8** |
+| **THEO-SS-13** | **Euler-degree theorem** | **SS-8** |
+| **THEO-SS-14** | **D1: vertex localization (conditional, Level-1+2)** | **SS-8** |
+| **THEO-SS-15** | **2E/V interstitial scaling law $\Delta_1(N_\alpha) = (6 - 12/N_\alpha) B_\text{pair}$ (conditional on C1–C4 + D1–D3)** | **SS-8** |
+| **THEO-SS-16** | **Simplicial alpha-polytope connectivity (five-clause conditional theorem; closes OPEN-SS-24 conditionally on C1$'$+C2+C3+C5+C6+C7+C8+rigid packing+3D-non-degeneracy via three lemmas A/B$'$/C + three sub-lemmas + Steinitz 1922 + FvdW 1947)** | **SS-9** |
 
 ---
 
@@ -73,20 +74,26 @@ The light-nuclei (SS-5) → alpha-cluster (SS-7) → interstitial-neutron (SS-8)
 - **SS-6:** documentation suite pending
 - **SS-7:** mechanism, glossary, phenomena, philosophy, keywords, development, reviews, lay-summary + transcript-SS-7 + handover-SS-7 + OSF-status (11 files at v1.2 currency)
 - **SS-8:** session-continuity files (handover, development, transcript) present; 7 companion documentation files pending
+- **SS-9:** four-tier documentation suite at v1.0 FREEZE (`documentation_suite/development-SS-9.md` Vignettes 1-39 across Sessions 3-32, `documentation_suite/transcript-SS-9.md` transactions 1-710, `documentation_suite/reasoning-SS-9.md` Tier 4 verbatim through Session 32). 7 standalone companion files (mechanism/glossary/phenomena/philosophy/reviews-summary/keywords/FAQ) NOT maintained per Session 33 decision (four-tier suite captures equivalent content; paper itself is primary scholarly artifact). 1 founders_voice note. 15 sketches covering OPEN-SS-24 + OPEN-SS-35 closure trajectories. 9 reproducible scripts. 1 letter (`SS-9_post_ship_OSF_arXiv_submission_guide.md`)
 
 ---
 
 ## Open Problems (Strong Sector)
 
-See `Research_Frontier.md` § Strong Sector for full list. Key items:
+See `research_frontier.md` § Strong Sector for full list. Key items:
 - OPEN-SS-5: String tension σ from dimensional analysis (partially addressed by SS-4 v0.1)
 - OPEN-SS-1: Quark mass formula from ZBW-frequency kernel (partially addressed by SM-8 v4.1)
 - OPEN-SS-8: Anomalous magnetic moments from SU(6)+ZBW
 - ~~OPEN-SS-11: SU(3) uniqueness~~ → **RESOLVED** (THEO-SS-10, SS-3)
 - ~~OPEN-SS-22: Icosahedral closure for nuclei beyond ⁴He~~ → **RETIRED** (SS-7 v1.2: empirical anchor was isotope-selection artifact)
 - OPEN-SS-23: Non-N=Z and odd-A extension of alpha-chain formula (PARTIALLY RESOLVED by SS-8 v1.0 for $N_\text{ex} \in [2, 8]$, $N_\alpha \in [3, 14]$)
-- OPEN-SS-24: First-principles derivation of C4 simplicial-contact structure (high-leverage: closing this would promote 54 conditional D-N predictions to unconditional)
+- ~~OPEN-SS-24: First-principles derivation of C4 simplicial-contact structure~~ → **CLOSED via SS-9 v1.0 ship** (conditional theorem at C1$'$ + C2 + C3 + C5 + C6 + C7 + C8 + rigid packing + 3D-non-degeneracy inheritance tier; promotion to unconditional pending C5/C6/C7/C8 first-principles closure)
 - OPEN-SS-25: DP-sea Coulomb screening in bound polytopes
 - **OPEN-SS-26**: D1 interstitial site localization from SSV minimization (Level-3 PARTIAL; SS-8 v1.0)
 - **OPEN-SS-27**: D2 K₃-edge coupling via A6′ extension (SS-8 v1.0)
 - **OPEN-SS-28**: D3 bulk-regime averaging derivation + residual decomposition (SS-8 v1.0)
+- **OPEN-SS-29**: C5 (ground-state energy minimization) first-principles closure from A1-A11 (SS-9 v1.0)
+- **OPEN-SS-30**: C6 (cluster surface-realization, no interior alphas) first-principles closure (SS-9 v1.0)
+- **OPEN-SS-31**: Structural realization at deltahedra-gap $N_\alpha \in \{11, 13, 14\}$ (SS-9 v1.0 scope-extension target)
+- **OPEN-SS-33**: C7 (contact-graph planarity) first-principles closure (SS-9 v1.0 ADVANCED via Sub-Lemma 2.1)
+- **OPEN-SS-37**: C8 (FvdW centroid-realizability) first-principles closure with 4 candidate routes including Route (d) distance-geometry/EDM theory/rigidity theory/realization-spaces (SS-9 v1.0)
