@@ -1798,3 +1798,77 @@ After (A) handover + (B) Q7 scoping (minimum), the OPEN-SD-CHIR-PRIMITIVE umbrel
 
 ---
 
+## §21 Q7 Scoping: cosmological-timing connection to OPEN-SM-4 sub-claim (a) Capotauro nucleation event (Session 133, Patch 0441)
+
+### §21.1 Q7 framing post-Q6 closure
+
+Q7 (cosmological-timing connection to OPEN-SM-4 sub-claim (a) Capotauro nucleation event) is the final open item on the Reading C closure trajectory after Q6's full Layer 3 closure achieved at Patch 0439 + Patch 0440. Per the OPEN-SM-4 entry in `research_frontier.md` (line 879), sub-claim (a) is the **universe-wide sign-selection event** — the cosmological moment when the substrate's specific chirality orientation (one of $\pm\hat{n}$ alternatives) was selected, producing the observed matter-antimatter asymmetry and downstream chirality phenomena. Sub-claim (a) is **downstream of sub-claim (b) magnitude mechanism** (now at Layer 3 via THEO-SD-CHIR-1 and THEO-SD-CHIR-2): the magnitude mechanism establishes $|\chi| = \phi^{-3}$ as the substrate-level chirality scale and $|M| = \chi/6$ as the cross-sector matrix element magnitude; the nucleation event establishes which sign of $\hat{n}$ (and hence which sign of $\chi$) is realized in our cosmological history.
+
+Q7 is a **different shape of work** from Q1-Q6's four-step cross-sector pattern. It is a connection-to-cosmology task: bridging Reading C's substrate-level theorems (now at theorem-registry rigor) to the SM-4 sub-claim (a) cosmological-history claim. The natural decomposition into sub-questions structures the multi-session work for future-window pickup.
+
+### §21.2 What Reading C now provides as input (post-Q6 closure)
+
+Reading C delivers to Q7 the following Layer-3-rigorous inputs:
+
+1. **Substrate-level chirality magnitude** $|\chi| = \phi^{-3}$ at Layer 3 (THEO-CAP-1, Patch 0397) via FI-C-9 + perturbative-distance-ratio constraint.
+2. **Cross-sector matrix element magnitude** $|M| = \chi/6$ across three observable manifestations at Layer 3 (THEO-SD-CHIR-1 Patch 0434 for K3-doublet ↔ W-bracelet; THEO-SD-CHIR-2 Patch 0440 for qDP/eDP).
+3. **Substrate primitive direction** $\hat{n}$ identified as vertex-aligned reading $\hat{n} = v_{\text{host}}$ at Layer 2 with Q1' resolution by three converging arguments (Finding C-W37, Patch 0419).
+4. **Three-step closure pattern** (substrate-locality + cage-shell factor + pairing-convention) templated for remaining umbrella manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry — including sector-specific $\zeta$ generators.
+
+What Reading C does NOT yet provide (and is largely outside Reading C scope):
+
+- **Mechanism for sign-selection** between the two $\pm\hat{n}$ alternatives (binary substrate degree of freedom of the chirality bias).
+- **Cosmological-timing** of the nucleation event (when in the substrate's cosmological history did the sign-selection occur).
+- **Connection to baryogenesis / matter-antimatter asymmetry** (the observed cosmological consequence of the sign-selection).
+
+### §21.3 Q7 decomposition into sub-questions
+
+**Q7.1 — Substrate-level sign-selection mechanism.** What CPP-axiom-level mechanism selects the sign of $\hat{n}$ from the two binary alternatives? Candidate framings: (a) symmetry-breaking dynamics analog (one of $\pm\hat{n}$ is energetically favored by some substrate-level mechanism — but this requires identifying the symmetry-breaking handle, currently unknown); (b) random selection at substrate-formation time (the binary degree of freedom is fixed by quantum-mechanical-like selection at substrate condensation; this would predict $|\hat{n}|$-magnitude is fixed by Reading C while sign is cosmologically contingent); (c) substrate-cosmological co-determined (sign-selection is part of the substrate's initial-condition specification, not a downstream consequence). Q7.1 closure requires identifying which framing is correct.
+
+**Q7.2 — Cosmological-timing of nucleation event.** When in the substrate's cosmological history did the sign-selection occur? Candidate framings: (a) at substrate condensation (substrate forms with sign already selected at $t = 0^+$); (b) at some later cosmological epoch (substrate forms with both signs possible; one is selected at a later phase transition); (c) continuous selection (sign is dynamically reinforced rather than nucleated at a discrete moment). Q7.2 closure requires identifying the cosmological epoch and the associated dynamics.
+
+**Q7.3 — Connection to observed baryogenesis / matter-antimatter asymmetry.** The observed $\eta = n_B/n_\gamma \sim 6 \times 10^{-10}$ matter-antimatter ratio is the empirical handle on cosmological chirality bias. Does Reading C's substrate-level $\chi/6 \approx 0.0394$ feed into this observable via a calculable Layer-4-level cosmological-evolution mechanism? Q7.3 closure requires identifying the substrate-handle-to-baryogenesis bridge — analog of OPEN-FP-SF-2-CHIR's Layer 4 EFT closure for V-A coupling.
+
+**Q7.4 — Falsifiers and predictions for the nucleation event.** Are there observable signatures that would specifically falsify or confirm the Capotauro nucleation event framework as distinct from alternative cosmological-chirality mechanisms (electroweak baryogenesis, leptogenesis, GUT-scale mechanisms)? Q7.4 closure requires identifying CPP-specific observable signatures.
+
+### §21.4 Immediate analytical handles available
+
+Three handles from Q1-Q6 closure work potentially useful for Q7:
+
+1. **Cross-sector unification at magnitude level** (§20.14 methodological observation): all five umbrella manifestations are predicted at identical $\chi/6$ magnitude. If Q7.3 (baryogenesis connection) can be formulated as a fifth cross-sector closure under the umbrella, the magnitude-level unification predicts $|\eta| \sim$ some function of $\chi/6$ via cosmological-evolution integration. Speculative; requires substantive cosmological-modeling work.
+2. **Three-step closure pattern** (substrate-locality + cage-shell factor + pairing-convention): if manifestations (iv) thermodynamic causal arrow or (v) cosmological-vacuum asymmetry are the natural homes for the nucleation event framework, Q7 closure may follow the three-step pattern with cosmological-asymmetry content in the $\zeta^{(v)}$ generator.
+3. **THEO-CAP-1's $\phi^{-3}$-scale primitive direction**: provides the substrate-physics anchor for any Q7 mechanism that involves $\hat{n}$. The substrate primitive direction is now established at Layer 3 across three manifestations; any Q7 mechanism that produces sign-selection or cosmological timing must reduce to operations on $\hat{n}$.
+
+### §21.5 Status and forward queue
+
+Q7 status: **OPEN at scoping level** (this patch). Sub-questions Q7.1-Q7.4 registered for future-window work. Estimated total Q7 closure: **3-5 sessions per sub-question** × 4 sub-questions = 12-20 sessions; partial Q7 progress (1-2 sub-questions at scoping or Layer 2) sufficient for Reading C closure trajectory completion at Layer 3 / cross-sector triangle level.
+
+Forward queue post-Patch 0441 (Q7 scoping):
+
+- **(A) Session 133 close handover** per `templates/operating_system.md` §15 Steps A-H using pointer-index handover at canonical location as paste-ready Step H content; **immediate next priority**; estimated 1 session.
+- **(B) Q7.1 substrate-level sign-selection mechanism** (next-window priority post-handover); estimated 3-5 sessions; closure framings (a/b/c) from §21.3 require systematic assessment against CPP axioms.
+- **(C) Q7.2 cosmological-timing** scoping conditional on Q7.1; estimated 3-5 sessions.
+- **(D) Q7.3 baryogenesis bridge** scoping conditional on Q7.1+Q7.2; estimated 3-5 sessions.
+- **(E) Capotauro v2.0+ paper §2 reframe** to $H_4 \to H_3 = I_h$ vertex-aligned per Patch 0419 Q1' resolution; substantively workable post-Q6-closure; multi-session.
+- **(F) Manifestations (iv)+(v) closures** as future-window work under the three-step pattern.
+
+### §21.6 Epistemic status
+
+Layer 0 / scoping level. Q7 sub-questions Q7.1-Q7.4 registered with candidate framings identified at structural-argument level. No substantive new physics derivation in this patch; the work is forward-planning and decomposition discipline. The §16.12 / Patch 0428 register-then-resolve discipline applied at the scoping level: register sub-questions explicitly when their content is identifiable, defer substantive closure work to dedicated patches across multiple sessions.
+
+### §21.7 Methodological observation: Reading C closure trajectory's natural end-state
+
+The Reading C closure trajectory began at Patch 0417 (Session 124) with the OPEN-FI-C-9-FP-MECHANISM Tier-4 sketch level and twenty-question Q-list scoping. Across Patches 0417-0441 (Sessions 124-133), the trajectory closed:
+- Q1+Q2 at Layer 3 (Patch 0417)
+- Q1'+Q1'.A at Layer 2 (Patches 0418-0419)
+- Q3 at Layer 3 + Q4 DISSOLVED (Patches 0423-0424)
+- Q5 at Layer 2 → full Layer 3 (Patches 0425-0429 → THEO-SD-CHIR-1 at Patch 0434)
+- Q6 at Layer 2 → full Layer 3 (Patches 0437-0439 → THEO-SD-CHIR-2 at Patch 0440)
+- Q7 scoped (this Patch 0441)
+
+The trajectory delivered two theorem-registry-level cross-sector unification theorems (THEO-SD-CHIR-1 + THEO-SD-CHIR-2) under the OPEN-SD-CHIR-PRIMITIVE umbrella, achieved three-way magnitude-level unification across observable manifestations (i)+(ii)+(iii), and identified the remaining umbrella manifestations (iv)+(v) as future-window work under the established three-step closure pattern. Q7 scoping at this patch completes the trajectory's natural end-state at Reading C scope: **substrate-level chirality magnitude established at Layer 3 across the three cross-sector triangle manifestations; sign-selection mechanism (cosmological / Capotauro nucleation event) decomposed into Q7.1-Q7.4 sub-questions for future-window work.** 
+
+The methodological lesson: closure trajectories of this size (17 patches across 10 sessions) reach a natural saturation point when the original scoping target's theorem-registry-level closures are achieved and the remaining open work shifts to a different shape (Q7's connection-to-cosmology vs Q1-Q6's cross-sector substrate-mechanism). The session-close handover (Step (A) in §21.5 forward queue) is the disciplined next move: capture the trajectory's achievements + open sub-questions + forward-priority queue for future-window pickup. The Reading C closure trajectory is effectively complete at this patch; Patches 0441+ shift to handover work, then to Q7.1+ substantive cosmological-physics work in dedicated future-window sessions.
+
+---
+
