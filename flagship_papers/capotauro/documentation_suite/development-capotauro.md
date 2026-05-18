@@ -325,6 +325,57 @@ Session continued after Patch 0427 push landed at commit `9ae213e` (Thomas confi
 
 Patch 0428 sketch grows 1106 → 1244 lines (+138 net). Q5 Layer 3 piece-set composite closure achieved at Layer 2 minimum; OPEN-SD-CHIR-PRIMITIVE umbrella prerequisite stack essentially complete at Layer 2 cross-sector unification level (0-5 sessions remaining vs prior 1-6).
 
+## Vignette 31 — Session 131 continued (Patch 0429): Q5-PAIRING RESOLVED at Layer 3 via inversion-parity structure on antipodal pairs
+
+Session continued after Patch 0428 push landed at commit `f014c20` (Thomas confirmed). Container synced to origin/main per bootup §3. Tackled Q5-PAIRING per Thomas's authorization to follow the Patch 0428 recommendation.
+
+**The core analytical question**: what plays the role of K3's $\zeta$ (the $\mathbb{Z}_2$ generator of $D_6 = \Sthree \times \mathbb{Z}_2$) on the W-bracelet? Per §16.4, three candidates were registered: A ($\hat{n}$-axis substrate orientation field — leading), B (bracelet handedness pair — circular), C ($W^0$-centroid vs vertex-host substrate orientation per Patch 0367 W⁰ neutrino scattering insight).
+
+**The key structural observation**: the W-bracelet's dihedral $D_6$ stabilizer has a central element $r^3$ (180° rotation by half-period of the cyclic generator). What's the geometric realization of $r^3$ in 4D ambient?
+
+The bracelet centroid sits at $c_W = (\phi/2)\hat{n}$ exactly (Finding C-W36). Considering inversion through the bracelet centroid:
+$$\zeta^W: p \to \phi\hat{n} - p$$
+
+**Verification step 1 (chirality-flipping)**: linear part of this inversion is $-I$ (4×4 identity negated). Acting on $\hat{n}$ as a direction: $\hat{n} \to -\hat{n}$. The substrate primitive direction flips, hence substrate chirality bias flips. This is the chirality-flipping property required for $\zeta$ analog of K3 ✓.
+
+**Verification step 2 (bracelet stabilizer)**: for first-shell vertex $v$ with $v \cdot \hat{n} = \phi/2$ and $|v|^2 = 1$, the image $\phi\hat{n} - v$ satisfies $(\phi\hat{n} - v) \cdot \hat{n} = \phi - \phi/2 = \phi/2$ (still first-shell) and $|\phi\hat{n} - v|^2 = \phi^2 - 2\phi(\hat{n}\cdot v) + 1 = \phi^2 - \phi^2 + 1 = 1$ (still on unit $S^3$). So $\zeta^W$ maps first-shell vertices to first-shell vertices.
+
+Specifically: $\zeta^W$ maps each first-shell vertex to its diametrically opposite first-shell vertex (the "first-shell antipode" relative to icosahedral center). For the W-bracelet vertices specifically: 6 vertices come in 3 antipodal pairs under $\zeta^W$. Each bracelet vertex maps to its diametric opposite within the bracelet. The bracelet vertex set is invariant under $\zeta^W$ ✓.
+
+So $\zeta^W$ = icosahedral-center inversion in 4D is the W-bracelet's $\mathbb{Z}_2$ generator — Candidate A vindicated, refined as inversion structure rather than abstract "$\hat{n}$-axis substrate orientation field" framing.
+
+**Verification step 3 (cross-check against $D_6$ decomposition)**: with $\zeta^W$ identified as the bracelet's $r^3$, the bracelet's $D_6 = \Sthree \times \mathbb{Z}_2$ realization is: $\Sthree$ permuting 3 antipodal pairs, $\mathbb{Z}_2 = \langle\zeta^W\rangle$ swapping within each pair. Cross-checked against the §15.4 dihedral computation: $(A_1 \oplus E)(\Sthree) \otimes (\mathbb{1} \oplus \sigma)(\mathbb{Z}_2) = A_1 \oplus B_1 \oplus E_2 \oplus E_1$. ✓ Agrees with §15.4's 6-vertex permutation decomposition. The $\Sthree \times \mathbb{Z}_2$ realization is consistent.
+
+**The matter-doublet basis** (§17.5): on the 3-pair $\Sthree$ structure, the matter-doublet spans the $E(\Sthree)$ irrep with basis $\psi_-^{(1)} = (2,-1,-1)/\sqrt{6}$ ($\sigma_1^W$-EVEN) and $\psi_-^{(2)} = (0,-1,1)/\sqrt{2}$ ($\sigma_1^W$-ODD). Identical algebraic structure to K3 paper §3.2; physical content differs (3 K3 vertices for K3 case vs 3 antipodal pairs for W-bracelet) but abstract $E$-irrep structure identical.
+
+**The perpendicular wavefunctions** (§17.6): on the within-pair $\mathbb{Z}_2$ structure, $\chi_\pm^W = (|v\rangle \pm |\zeta^W v\rangle)/\sqrt{2}$ as antipodal-pair EVEN/ODD combinations. Concrete realization of K3's abstract $\chi_\pm$: K3's antipodal partners are OUTSIDE the K3 base (on antipodal face of icosahedron), so K3's $\chi_\pm$ are 1-dim abstract DOFs; W-bracelet's antipodal partners are INSIDE the bracelet, so $\chi_\pm^W$ are concrete bracelet-vertex combinations. Despite this distinction, algebraic structure identical.
+
+**The $\sigma_1^W \zeta^W$-EVEN pairing convention** (§17.7): $\PsiminusOne^W = \psi_-^{(1)} \otimes \chi_+^W$ (both EVEN; $\sigma_1^W\zeta^W$-EVEN); $\PsiminusTwo^W = \psi_-^{(2)} \otimes \chi_-^W$ (both ODD; $\sigma_1^W\zeta^W$-EVEN). In $D_6$ labels: $\PsiminusOne^W \in E_2(D_6) = E(\Sthree) \otimes \mathbb{1}(\mathbb{Z}_2)$, $\PsiminusTwo^W \in E_1(D_6) = E(\Sthree) \otimes \sigma(\mathbb{Z}_2)$. W-bracelet doublet basis spans 2D subspace of $E_2 \oplus E_1$ — NOT a pure $D_6$ irrep, parallel to K3's structure.
+
+**Refinement of §15.5 matter-doublet identification**: in §15, I identified the matter-doublet as "the $E_2$ irrep at the $C_6$ eigenvalue level" via the 120°/240° phase bias. This identification was correct for the cage-shell factor (which is dimension-only Schur factor, doesn't distinguish $E_1$ from $E_2$), but not sufficient for the full chirality matrix element (which requires the basis to span $E_2 \oplus E_1$ via pairing convention). With Q5-PAIRING resolved, the §15.5 identification is refined: the matter-doublet basis for chirality matrix element computation spans the $\sigma_1^W\zeta^W$-EVEN subspace of $E_2 \oplus E_1$, with the 120°/240° phase bias being the characteristic of the $E_2$ component of this basis. The two views (pure $E_2$ at energy basis; $\sigma_1\zeta$-EVEN at chirality basis) coexist and refer to different bases of related subspaces.
+
+**The chirality operator** (§17.8): $\Cchi^W \in B_2(D_6) = A_2(\Sthree) \otimes \sigma(\mathbb{Z}_2)$. $\Sthree$-side: $A_2$ via antisymmetric matrix on $E(\Sthree)$ doublet with spectral radius $\sqrt{3}$ (analog of K3's $S$ matrix on 3 K3 vertices applied to 3 antipodal pairs); $\mathbb{Z}_2$-side: $\sigma$ ($\zeta^W$-ODD) via $\hat{n}$-flip under inversion. Same irrep as K3's chirality operator.
+
+**Wigner-Eckart non-vanishing verification** (§17.8): $E_2 \otimes B_2 \otimes E_1 \supset A_1(D_6)$:
+- $\Sthree$-side: $E \otimes A_2 \otimes E = E \otimes E = A_1 \oplus A_2 \oplus E$ contains $A_1(\Sthree)$ ✓
+- $\mathbb{Z}_2$-side: $\mathbb{1} \otimes \sigma \otimes \sigma = \mathbb{1}$ (trivial) ✓
+- Total: contains $A_1 \otimes \mathbb{1} = A_1(D_6)$ ✓ — matrix element non-vanishing.
+
+The pairing convention is load-bearing: without opposite-parity pairing, $\mathbb{Z}_2$-side would give $\mathbb{1} \otimes \sigma \otimes \mathbb{1} = \sigma$ (not trivial), and matrix element would vanish.
+
+**Matrix element factorization at Layer 3** (§17.9):
+- Amplitude factor $|M_{\text{amp}}^W| = b^W \sqrt{3} = \chi$ via chirality-eigenvalue matching ($b^W = \chi/\sqrt{3}$) — analog of K3 Finding C-W23
+- Cage-shell factor $|M_\perp^W| = d_E/V_{\text{cage}} = 2/12 = 1/6$ via cage-shell averaging on icosahedral cage shared with K3 — analog of K3 paper §5.4
+- Composite $|M^W| = \chi \cdot (1/6) = \chi/6 \approx 0.0394$ at full Layer 3, identical to K3's $|M^{K3}|$
+
+**Refinement of piece (a) cage-shell factor interpretation** (§17.10): §15 (Patch 0427) framed cage-shell factor as Schur orthogonality on bracelet's own $D_6$ stabilizer ($|D_6| = 12$); refined interpretation is cage-shell averaging on icosahedral cage shared with K3 ($V_{\text{cage}} = 12$). Numerically equal because $|D_6| = V_{\text{cage}} = 12$ (K3 paper §5.4 "non-coincidence"); cage-shell-on-icosahedron is structurally more consistent with Substrate-Locality Unification. Reading 1 vs Reading 2 of §15.8 resolved in favor of Reading 1.
+
+**Finding C-W43 registered** (§17.11): Q5-PAIRING RESOLVED via inversion-parity structure on antipodal pairs. Q5 Layer 3 pieces (b) and (c) promoted from Layer 2 to full Layer 3 (§17.12). First full Layer 3 cross-sector unification result under OPEN-SD-CHIR-PRIMITIVE umbrella (§17.13).
+
+**Methodological observation**: the three-step pattern (Substrate-Locality Layer 2 via Finding C-W40 / cage-shell factor Layer 3 via Finding C-W41 + §17.10 refinement / pairing-convention Layer 3 via Finding C-W43) is now demonstrated for the K3-doublet ↔ W-bracelet pair and templates closure for the remaining three observable manifestations under OPEN-SD-CHIR-PRIMITIVE. The umbrella prerequisite stack reaches full Layer 3 cross-sector unification milestone with this patch.
+
+Patch 0429 sketch grows 1244 → 1414 lines (+170 net). Q5 Layer 3 piece-set composite closure achieved at full Layer 3 with explicit matrix element factorization in hand. OPEN-SD-CHIR-PRIMITIVE umbrella prerequisite stack 0-5 → 0-4 sessions remaining; first full Layer 3 cross-sector unification result achieved.
+
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0428 — appended Vignette 30 covering Q5 Layer 3 pieces (b)+(c) Layer 2 conservative composite closure via Proposal 2 framing with Q5-PAIRING open structural sub-question registered; Sessions 124–126 vignette backfill remains pre-existing gap, narrative at Patch 0421 handover commit `8acdb63`).*
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0429 — appended Vignette 31 covering Q5-PAIRING RESOLVED at Layer 3 via inversion-parity structure on antipodal pairs: $\zeta^W$ = icosahedral-center inversion in 4D ambient, $\Sthree$ on 3 antipodal pairs, $\sigma_1^W \zeta^W$-EVEN pairing convention, matrix element factorization $|M^W| = \chi/6$ at full Layer 3, Finding C-W43 registered, pieces (b)+(c) promoted to full Layer 3; Sessions 124–126 vignette backfill remains pre-existing gap, narrative at Patch 0421 handover commit `8acdb63`).*

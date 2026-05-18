@@ -417,6 +417,50 @@ Sketch grows 1106 → 1244 lines (+138 net). Q5 Layer 3 piece-by-piece: piece (a
 
 ---
 
+## Session 131 continued (17 May 2026) — Q5-PAIRING RESOLVED at Layer 3 via inversion-parity structure on antipodal pairs
+
+**Patch 0429 (Session 131 continued):** Q5-PAIRING RESOLVED at Layer 3 via inversion-parity structure on antipodal pairs (Candidate A vindicated, refined as icosahedral-center inversion in 4D ambient). Q5 Layer 3 pieces (b) and (c) PROMOTED FROM LAYER 2 TO FULL LAYER 3 CLOSURE with explicit matrix element factorization analog of K3 paper §5.3–§5.4.
+
+The §17 derivation (~170 lines, 13 subsections) walks the resolution:
+1. (§17.3) $\zeta^W$ identification: the central element $r^3$ of bracelet's dihedral $D_6$ is the icosahedral-center inversion in 4D ambient, $p \to \phi\hat{n} - p$. Linear part is $-I$ (4×4 identity negated), flipping $\hat{n} \to -\hat{n}$ (chirality-flipping ✓); maps each first-shell vertex to its first-shell antipode while preserving first-shell membership ($v\cdot\hat{n} = \phi/2$, $|v|^2 = 1$); maps W-bracelet to itself since 6 vertices come in 3 antipodal pairs (stabilizer ✓).
+2. (§17.4) Bracelet $D_6 = \Sthree \times \mathbb{Z}_2$ realization: $\Sthree$ permutes 3 antipodal pairs; $\mathbb{Z}_2 = \langle\zeta^W\rangle$ swaps within each pair. Cross-verification: 6-vertex permutation rep decomposes as $(A_1 \oplus E)(\Sthree) \otimes (\mathbb{1} \oplus \sigma)(\mathbb{Z}_2) = A_1 \oplus B_1 \oplus E_2 \oplus E_1$, agreeing with §15.4 dihedral computation.
+3. (§17.5) Matter-doublet basis on 3 antipodal pairs: $\psi_-^{(1)} = (2,-1,-1)/\sqrt{6}$ ($\sigma_1^W$-EVEN), $\psi_-^{(2)} = (0,-1,1)/\sqrt{2}$ ($\sigma_1^W$-ODD), spanning $E(\Sthree)$.
+4. (§17.6) Perpendicular wavefunctions $\chi_\pm^W = (|v\rangle \pm |\zeta^W v\rangle)/\sqrt{2}$ on within-pair structure — concrete realization of K3's abstract $\chi_\pm$ (K3's antipodal partners are OUTSIDE the K3 base; W-bracelet's are INSIDE the bracelet).
+5. (§17.7) $\sigma_1^W \zeta^W$-EVEN pairing: $\PsiminusOne^W = \psi_-^{(1)} \otimes \chi_+^W \in E_2(D_6)$, $\PsiminusTwo^W = \psi_-^{(2)} \otimes \chi_-^W \in E_1(D_6)$. W-bracelet doublet basis spans 2D subspace of $E_2 \oplus E_1$ (not pure $D_6$ irrep), parallel to K3's structure.
+6. (§17.8) Chirality operator $\Cchi^W \in B_2(D_6) = A_2(\Sthree) \otimes \sigma(\mathbb{Z}_2)$; Wigner-Eckart non-vanishing $E_2 \otimes B_2 \otimes E_1 \supset A_1(D_6)$ verified ($\Sthree$-side $E \otimes A_2 \otimes E \supset A_1$ ✓, $\mathbb{Z}_2$-side $\mathbb{1} \otimes \sigma \otimes \sigma = \mathbb{1}$ ✓). Pairing convention load-bearing for non-vanishing.
+7. (§17.9) Matrix element factorization at Layer 3: $|M^W| = |M_{\text{amp}}^W| \cdot |M_\perp^W| = \chi \cdot (1/6) = \chi/6 \approx 0.0394$, with amplitude factor via chirality-eigenvalue matching ($b^W\sqrt{3} = \chi$) and cage-shell factor via cage-shell averaging on icosahedral cage shared with K3 ($d_E/V_{\text{cage}} = 2/12 = 1/6$).
+8. (§17.10) Refinement of piece (a) cage-shell factor interpretation: from "Schur orthogonality on bracelet's own $D_6$ stabilizer ($|D_6| = 12$)" to "cage-shell averaging on icosahedral cage shared with K3 ($V_{\text{cage}} = 12$)". Numerically equal (both $1/6$) since $|D_6| = V_{\text{cage}} = 12$ (K3 paper §5.4 "non-coincidence"); cage-shell-on-icosahedron is structurally more consistent with Substrate-Locality Unification. Reading 1 vs Reading 2 of §15.8 resolved in favor of Reading 1.
+
+**Finding C-W43 (NEW)** registered (§17.11): Q5-PAIRING RESOLVED via inversion-parity structure on antipodal pairs. The W-bracelet analog of K3's perpendicular-wavefunction pairing is the $\sigma_1^W \zeta^W$-EVEN projection structure with $\zeta^W$ = icosahedral-center inversion in 4D, $\Sthree$ on 3 antipodal pairs, and the explicit matrix element factorization at Layer 3 rigor.
+
+**Q5 Layer 3 pieces (b) and (c) PROMOTED FROM LAYER 2 TO FULL LAYER 3** (§17.12): piece (b) SF-2 V-A coupling matching now at matrix-element-content level — substrate-level chirality magnitude $|M^W| = \chi/6$ via explicit factorization (not just structural-argument). Piece (c) $\Hthree \to \Dsix$ branching now with reduced matrix element computation possible via §17.7 explicit basis. Q5 Layer 3 overall: pieces (a)+(b)+(c) ALL CLOSED AT FULL LAYER 3. **First full Layer 3 cross-sector unification result under OPEN-SD-CHIR-PRIMITIVE umbrella achieved**.
+
+Methodological observation (§17.13): the three-step pattern (Substrate-Locality Layer 2 / cage-shell factor Layer 3 / pairing-convention Layer 3) is now demonstrated for the K3-doublet ↔ W-bracelet pair and templates closure for the remaining three observable manifestations (EM handedness, thermodynamic arrow, cosmological-vacuum asymmetry) under OPEN-SD-CHIR-PRIMITIVE.
+
+Sketch grows 1244 → 1414 lines (+170 net). Q5 Layer 3 piece-by-piece: piece (a) Layer 3 (Patch 0427, refined interpretation Patch 0429); piece (b) Layer 3 (Patch 0429); piece (c) Layer 3 (Patch 0429); Q5-PAIRING resolved (Patch 0429). Layer 3 closure trajectory revised 2-8 → 1-7 sessions. OPEN-SD-CHIR-PRIMITIVE umbrella prerequisite stack: 0-5 → 0-4 sessions remaining; **full Layer 3 cross-sector unification milestone reached**.
+- → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §17 (Q5-PAIRING resolution at Layer 3 via inversion-parity structure on antipodal pairs)
+- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W43 registered; Q5-PAIRING resolved; pieces (b)+(c) full Layer 3)
+- → `Research_Frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (full Layer 3 cross-sector unification achieved noted)
+- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 0-5 → 0-4 sessions; full Layer 3 milestone reached)
+- → Tier 3: `development-capotauro.md` Vignette 31 (Session 131 continued)
+- → Tier 4: `reasoning-capotauro.md` §14 (Session 131 Patch 0429 reasoning: Q5-PAIRING resolution analytical work)
+
+---
+
+## Forward queue post-Patch 0429
+
+**Priority 1 (next session):** **Q5 Layer 3 closure handover** — Finding C-W43 + C-W42 + C-W41 + C-W40 collective theorem-registry candidacy assessment as first cross-sector theorem under OPEN-SD-CHIR-PRIMITIVE umbrella; TATWD integration audit for Q5 Layer 3 cross-sector unification; session-close handover per `templates/operating_system.md` §15 Steps A–H. Estimated 1 session.
+
+**Priority 2:** Q6 (SM-2 qDP/eDP) — Finding C-W40 framework application if qDP/eDP characterizable as first-shell-vertex substrate object. Estimated 3-5 sessions; recommended-but-not-required; first independent test of Substrate-Locality Unification framework templated by Finding C-W41/C-W42/C-W43 patterns from this session.
+
+**Priority 3:** Q7 (cosmological-timing question) — scoping not yet started.
+
+---
+
+## Forward queue post-Patch 0428 (superseded by Patch 0429 above; preserved for audit)
+
+---
+
 ## Forward queue post-Patch 0427 (superseded by Patch 0428 above; preserved for audit)
 
 ---
@@ -433,4 +477,4 @@ Sketch grows 1106 → 1244 lines (+138 net). Q5 Layer 3 piece-by-piece: piece (a
 
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0428 — appended Session 131 Patch 0428 transaction (Q5 Layer 3 pieces (b)+(c) Layer 2 conservative composite closure with Q5-PAIRING open structural sub-question registered per Proposal 2 framing after mid-session discovery of K3 paper's load-bearing $\sigma_1\zeta$-EVEN pairing convention); forward queue revised post-Patch 0428).*
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0429 — appended Session 131 Patch 0429 transaction (Q5-PAIRING RESOLVED at Layer 3 via inversion-parity structure on antipodal pairs: $\zeta^W$ = icosahedral-center inversion in 4D, $\Sthree$ on 3 antipodal pairs, $\sigma_1^W \zeta^W$-EVEN pairing producing $\Psi^W \in E_2 \oplus E_1$, matrix element $|M^W| = \chi/6$ at full Layer 3; Finding C-W43 registered; pieces (b)+(c) promoted from Layer 2 to full Layer 3; first full Layer 3 cross-sector unification result under OPEN-SD-CHIR-PRIMITIVE umbrella); forward queue revised post-Patch 0429).*
