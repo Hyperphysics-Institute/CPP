@@ -361,7 +361,33 @@
 
 ---
 
-## Forward queue post-Patch 0426
+## Session 131 (17 May 2026) — Q5 Layer 3 piece (a) closure
+
+**Patch 0427 (Session 131):** Q5 Layer 3 piece (a) CLOSED — explicit W-bracelet Schur-orthogonality cage-shell factor on $D_6$ stabilizer. Pure group-theory derivation: the bracelet's 6-vertex permutation representation of $D_6$ decomposes as $A_1 \oplus B_1 \oplus E_1 \oplus E_2$ (verified via Schur inner-product against the standard $D_6$ character table from permutation character $(6, 0, 0, 0, 2, 0)$); the V-A current is identified with $E_2$ at the $C_6$ eigenvalue level (the 120°/240° phase bias of SF-2 v1.0 PROP-SF-2-5 corresponds to $\chi^{E_2}(C_6) = -1$); the Schur-orthogonality cage-shell factor evaluates to $|M_\perp^W| = d_{E_2}/|D_6| = 2/12 = 1/6$, **identical to the K3-doublet's cage-shell factor**. **Finding C-W41 (NEW)** registered: explicit W-bracelet cage-shell factor; Substrate-Locality Unification (Finding C-W40) promoted Layer 2 → Layer 3 with explicit numerical cage-shell-factor content. Cross-sector numerical unification corollary: $|M^{W,V\text{-}A}| = \chi \cdot (1/6) = \chi/6 \equiv |M^{K3}|$, evaluating to $\phi^{-3}/6 \approx 0.0394$ in both sectors. **Reading 1 vs Reading 2 analytical decision documented (§15.8)**: the handover §14.7(a) anticipated denominator $V_{\text{bracelet}} = 6$ giving $2/6 = 1/3$; the explicit derivation reveals the K3 case's $V_{\text{cage}} = |\Dsix|$ coincidence does not carry over to the W-bracelet (vertex stabilizer $C_2$ of order 2 under $D_6$ acting transitively on the 6-vertex hexagon), so Reading 1 (Schur-fundamental $d_\Gamma/|G|$, K3 paper §5.4 Arguments 1+2 motivated) is adopted over Reading 2 (vertex-count literal). Methodological observation §15.12: cross-sector extension of a paper-internal formula can resolve ambiguities the original paper's scope didn't expose. Sketch grows 997 → 1106 lines (+109 net). Q5 Layer 3 piece-by-piece: piece (a) CLOSED; piece (b) (SF-2 V-A coupling matching at massless helicity limit) open conditional on (a); piece (c) (Wigner-Eckart $\Hthree \to \Dsix$ branching) open. Layer 3 closure trajectory revised 4-10 → 3-9 sessions.
+- → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §15 (Q5 Layer 3 piece (a) closure)
+- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W41 registered; Q5 Layer 3 piece (a) closed)
+- → `Research_Frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (W-bracelet Layer 3 piece (a) closure noted)
+- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 2-7 → 1-6 sessions remaining)
+- → Tier 3: `development-capotauro.md` (Session 131 vignette appended)
+- → Tier 4: `reasoning-capotauro.md` §12 (Session 131 reasoning appended)
+
+---
+
+## Forward queue post-Patch 0427
+
+**Priority 1 (next session):** Q5 Layer 3 piece (b) — SF-2 V-A coupling matching at the massless helicity limit. Verify $\chi \cdot (1/6) = \chi/6$ matches the SF-2 v1.0 §sec:Wbracelet_thm / PROP-SF-2-5 prediction structure for V-A coupling at 100% massless limit. Conditional on piece (a) which is now closed. Estimated 1 session.
+
+**Priority 2:** Q5 Layer 3 piece (c) — Wigner-Eckart bookkeeping for $\Hthree \to \Dsix$ branching consistency. May fold into composite patch with (b); estimated 1 session if separate, 0 sessions if composite.
+
+**Priority 3:** Q5 Layer 3 closure handover + Finding C-W42 candidacy. After pieces (b)+(c) close, Q5 Layer 3 full closure may register as a programme-level theorem in `theorem-registry.md` as the first cross-sector theorem under OPEN-SD-CHIR-PRIMITIVE umbrella. Estimated 1 session for handover + TATWD audit.
+
+**Priority 4:** Q6 (SM-2 qDP/eDP) — Finding C-W40 framework application if qDP/eDP characterizable as first-shell-vertex substrate object. Estimated 3–5 sessions; recommended-but-not-required.
+
+**Priority 5:** Q7 (cosmological-timing question) — scoping not yet started.
+
+---
+
+## Forward queue post-Patch 0426 (superseded by Patch 0427 above; preserved for audit)
 
 **Priority 1 (next session):** Q5 Layer 3 closure — W-bracelet Schur-orthogonality cage-shell factor on Petrie-polygon D_6 ⊂ H_3 sub-stabilizer + SF-2 V-A coupling matching at massless helicity limit + Wigner-Eckart H_3 → D_6 branching consistency. Estimated 2–4 sessions; piece (a) likely single-session.
 
@@ -373,4 +399,4 @@
 
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 130 Patch 0426 handover — appended Sessions 127–130 Reading C closure arc Patches 0422–0426 transaction entries).*
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0427 — appended Session 131 Patch 0427 transaction (Q5 Layer 3 piece (a) closure: Finding C-W41 explicit W-bracelet cage-shell factor $|M_\perp^W| = 1/6$ identical to K3-doublet via Schur orthogonality on $D_6$ stabilizer; cross-sector numerical unification $|M^{W,V\text{-}A}| = \chi/6 \equiv |M^{K3}|$); forward queue revised post-Patch 0427).*
