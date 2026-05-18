@@ -1521,3 +1521,118 @@ The §13.12 lesson on cross-sector extension as analytical resolution mechanism 
 
 ---
 
+## §19 Q6 Step 2: qDP cage-shell averaging factor at Layer 2 conservative with Q6-PAIRING open structural sub-question registered (Session 133, Patch 0438)
+
+### §19.1 Q6 Step 2 framing
+
+Q6 Step 2 of the Reading C trajectory (per §18.8 forward queue) targets the explicit qDP cage-shell averaging factor $|M_\perp^{qDP}|$ via Schur orthogonality, analogous to §15 (Patch 0427) which closed the W-bracelet cage-shell factor at Layer 3 piece (a). The target form per §17.10 refined interpretation: $|M_\perp^{qDP}| = d_\Gamma / V_{\text{cage}}$ where $V_{\text{cage}} = 12$ is the shared icosahedral cage at the host CP and $d_\Gamma$ is the dimension of the $C_{5v}$ (or $D_{5d}$ under antipodal-pair refinement) irrep carrying the chirality operator's branching under $I_h$ restriction. The §18 framing characterized the qDP substrate object as a 1-vertex first-shell subset $\{v_i\}$ with stabilizer $C_{5v} \subset I_h$. Q6 Step 2 work surfaces a structural ambiguity in this framing that requires registration before full Layer 3 promotion — analogous to the Q5-PAIRING question registered at Patch 0428 (§16) for the W-bracelet and resolved at Patch 0429 (§17).
+
+### §19.2 $C_{5v}$ character table recap and $A_u(I_h) \downarrow C_{5v}$ branching
+
+The point group $C_{5v}$ has order 10 with 4 conjugacy classes ($E, 2C_5, 2C_5^2, 5\sigma_v$) and 4 irreducible representations: $A_1$ (1D trivial), $A_2$ (1D sign-on-reflections), $E_1$ (2D, $C_5$ eigenvalues $e^{\pm 2\pi i/5}$), $E_2$ (2D, $C_5$ eigenvalues $e^{\pm 4\pi i/5}$). Character table:
+
+| | $E$ | $2C_5$ | $2C_5^2$ | $5\sigma_v$ |
+|--|---|---|---|---|
+| $A_1$ | 1 | 1 | 1 | 1 |
+| $A_2$ | 1 | 1 | 1 | $-1$ |
+| $E_1$ | 2 | $2\cos(2\pi/5)$ | $2\cos(4\pi/5)$ | 0 |
+| $E_2$ | 2 | $2\cos(4\pi/5)$ | $2\cos(8\pi/5)$ | 0 |
+
+**Branching of $A_u(I_h) \downarrow C_{5v}$.** The chirality operator's $I_h$ irrep is $A_u$ (pseudoscalar: trivial on proper rotations, sign on improper). Restricting to $C_{5v}$ embedded in $I_h$ as the stabilizer of one first-shell vertex $v_i$: the $C_{5v}$ elements $\{E, C_5, C_5^4\} \to \{E\} \cup 2C_5$, $\{C_5^2, C_5^3\} \to 2C_5^2$, the 5 vertical mirrors $\sigma_v \to 5\sigma_v$ (these embed into $I_h$'s 15 mirror planes via the 5 mirrors containing the $v_i$ axis). Character of $A_u(I_h)$ on these $C_{5v}$ elements: $(1, 1, 1, -1)$ — matching exactly the $A_2(C_{5v})$ character. Therefore:
+
+$$A_u(I_h) \downarrow C_{5v} = A_2(C_{5v}) \quad \text{(1-dimensional)}$$
+
+### §19.3 The vanishing-matrix-element analytical complication
+
+Applying the §15 / Patch 0427 pattern naively: the qDP matter-state under the §18 framing is the qDP wavefunction localized at $v_i$, which transforms as the trivial $A_1$ irrep of $C_{5v}$ (the wavefunction at the stabilizer's fixed vertex is invariant under all $C_{5v}$ elements by definition). The chirality matrix element:
+
+$$\langle A_1(C_{5v}) | A_2(C_{5v}) | A_1(C_{5v}) \rangle$$
+
+By Wigner-Eckart, this is non-vanishing iff $A_1 \otimes A_2 \otimes A_1 \supset A_1$ in $C_{5v}$. Compute: $A_1 \otimes A_2 = A_2$ (multiplying by trivial preserves the operand); $A_2 \otimes A_1 = A_2$. So $A_1 \otimes A_2 \otimes A_1 = A_2 \not\supset A_1$. **The matrix element VANISHES.** Under the naive §18 1-vertex framing, the qDP-sector substrate-level chirality matrix element is zero.
+
+This is a substantive analytical complication. The SM-2 §10 mechanism explicitly claims that "the 600-cell's intrinsic chirality (activated during the Capotauro symmetry-breaking event) preferentially stabilises linear ZBW extras on negative ($-$qCP) centres" — implying a non-zero substrate-level chirality coupling between qDP configurations on opposite-sign qCP hosts. A vanishing matrix element under the Q6 Step 2 analysis contradicts the SM-2 mechanism claim. Either the §18 1-vertex framing is incomplete (missing the qCP-sign coupling content that the SM-2 mechanism requires), or there is structural physics outside the Wigner-Eckart-on-$C_{5v}$ scope.
+
+This is structurally analogous to the Q5-PAIRING surfacing at Patch 0428 (§16): the W-bracelet cage-shell factor $|M_\perp^W| = 1/6$ stood independently at Layer 3 (Patch 0427 §15) via Schur orthogonality group-order normalization, but the composite matrix element $|M^W| = \chi \cdot (1/6)$ required identifying the perpendicular-wavefunction pairing convention (the analog of K3's $\sigma_1\zeta$-EVEN structure) before full Layer 3 promotion could be achieved. For qDP, the analogous question — what is the perpendicular structure (the qCP-sign × Linear-ZBW coupling under host-CP inversion or analog operation) that completes the matrix element factorization — is the **Q6-PAIRING** open structural sub-question.
+
+### §19.4 Three candidate resolutions
+
+**Candidate A (LEADING): extend to antipodal-pair characterization with $D_{5d}$ stabilizer.** The qDP substrate object refined from 1-vertex subset $\{v_i\}$ to 2-vertex antipodal pair $\{v_i, -v_i\}$ with stabilizer $D_{5d} \subset I_h$ (order 20). Under $D_{5d}$, the chirality operator branches as $A_u(I_h) \downarrow A_{1u}(D_{5d})$ (1D ungerade), and inversion $i \in D_{5d}$ flips both the vertex direction ($v_i \leftrightarrow -v_i$) and the qCP sign — coupling the Linear-ZBW direction to the qCP-sign in the substrate's natural inversion operation. The qDP matter-doublet on the antipodal pair has 4 component states $\{|+, v\rangle, |+, -v\rangle, |-, v\rangle, |-, -v\rangle\}$ (qCP sign × vertex orientation) decomposing under $D_{5d}$ into $2 A_{1g} \oplus 2 A_{2u}$ — two pairs (symmetric / antisymmetric under inversion), with the chirality operator $A_{2u}(D_{5d})$ coupling each pair via non-vanishing matrix element $\langle A_{1g} | A_{2u} | A_{2u} \rangle$ (since $A_{1g} \otimes A_{2u} \otimes A_{2u} = A_{1g} \supset A_{1g}$). However, the precise identification of the chirality operator's $D_{5d}$ irrep (whether $A_{1u}$ from naive $I_h$-branching or $A_{2u}$ from the Linear-ZBW × inversion physical structure) and the matter-doublet's effective irrep dimension (whether $d_\Gamma = 1$ from 1D matter-state irreps or $d_\Gamma = 2$ from the 2-state pair-counting analogous to K3/W's 2D matter-doublet $E$ irrep) require Q6 Step 3 pairing-convention identification to resolve at full Layer 3. Candidate A is **structurally the natural resolution** — paralleling exactly the §17 antipodal-pair structure for the W-bracelet, where $\zeta^W$ = icosahedral-center inversion swaps antipodal first-shell vertices and the matter-doublet basis spans the antipodal-pair structure.
+
+**Candidate B: matter-state reframing within $C_{5v}$ to non-trivial irrep.** Stay with the §18 1-vertex $\{v_i\}$ characterization but reframe the qDP matter-state from trivial $A_1(C_{5v})$ to a non-trivial irrep ($E_1$ or $E_2$ 2D irreps of $C_{5v}$). This would require the Linear-ZBW configuration to carry non-trivial angular structure around the $v_i$ axis (5-fold-rotation-charged $E_1$ or $E_2$ content), which is unmotivated by the SM-2 §5+§6 substrate characterization (Linear ZBW is "d=1 unbound dimension" — a single linear extension, not a 5-fold-symmetric angular structure). Candidate B is **disfavored** by physical structure but available as fallback if Candidate A's resolution proves analytically intractable.
+
+**Candidate C: alternative chirality-operator irrep beyond $A_u(I_h)$.** Re-examine whether the substrate-physics chirality operator coupling to the qDP/eDP sector has additional content beyond the pure $A_u(I_h)$ pseudoscalar — possibly including angular components ($T_{1u}$ or $H_u$ of $I_h$) that branch into $E_1$ or $E_2$ of $C_{5v}$, allowing non-vanishing matrix elements with the trivial $A_1$ matter-state. Candidate C requires invoking additional substrate-physics content (the chirality operator is more than the pseudoscalar at the qDP-sector scale), which is **unmotivated** by the Reading C framework where the chirality operator's irrep is determined by the substrate primitive direction $\hat{n}$'s pseudoscalar transformation properties. Available as fallback only if Candidates A and B fail.
+
+Candidate A is the leading candidate; Candidate B is fallback-but-disfavored; Candidate C is fallback-only.
+
+### §19.5 Conservative composite closure at Layer 2 with Q6-PAIRING registered
+
+Per the Proposal 2 framing established at Patch 0428 §16.5 for the Q5 W-bracelet analog (conservative composite closure at Layer 2 with explicit open sub-question registration), Q6 Step 2 closes at **Layer 2 conservative** with the cage-shell factor expressed in the form $|M_\perp^{qDP}| = d_\Gamma / V_{\text{cage}}$ where $d_\Gamma \in \{1, 2\}$ and $V_{\text{cage}} = 12$:
+
+- **If Q6-PAIRING resolves toward Candidate A with $d_\Gamma = 1$** (1D matter-state irreps coupled by 1D chirality operator): $|M_\perp^{qDP}| = 1/12$ — half the K3/W cage-shell factor; the composite chirality matrix element $|M^{qDP}| = \chi/12 \approx 0.0197$.
+- **If Q6-PAIRING resolves toward Candidate A with $d_\Gamma = 2$** (2-state matter-doublet pair, effective dimension 2 paralleling K3/W's 2D $E$-irrep): $|M_\perp^{qDP}| = 2/12 = 1/6$ — identical to K3/W; the composite chirality matrix element $|M^{qDP}| = \chi/6 \approx 0.0394$.
+
+Both readings give a well-defined cage-shell factor pending Q6-PAIRING resolution. The structurally-conservative framing: the cage-shell factor is $\chi/12$ if the qDP sector's effective matter-doublet dimension is 1; $\chi/6$ if it is 2. Full Layer 3 promotion requires Q6 Step 3 resolution of Q6-PAIRING with explicit identification of the matter-doublet basis and the chirality operator's matrix element under Wigner-Eckart factorization (analog of §17.5-§17.8 for the W-bracelet).
+
+### §19.6 Q6-PAIRING (NEW) open structural sub-question registered
+
+> **Q6-PAIRING (NEW; open structural sub-question of Q6)** — identification of the qDP-sector matter-doublet pairing convention analog of K3's $\sigma_1\zeta$-EVEN convention (Capotauro paper Finding C-W12) and the W-bracelet's $\sigma_1^W \zeta^W$-EVEN convention (Finding C-W43, §17). Candidate A (leading): antipodal-pair refinement with $D_{5d}$ stabilizer; matter-doublet basis $\{|+, v\rangle, |-, -v\rangle\}$ (qCP-sign × Linear-ZBW-direction states paired under host-CP inversion / antipodal-vertex flip); chirality operator $A_{2u}(D_{5d})$ with non-vanishing matrix element $\langle A_{1g} | A_{2u} | A_{2u} \rangle$; effective matter-doublet dimension $d_\Gamma \in \{1, 2\}$ depending on whether the matter-doublet's 1D irreps ($A_{1g}, A_{2u}$ each occurring with multiplicity 2 in the 4-state representation) act independently ($d_\Gamma = 1$, sector-specific factor $1/12$) or as a 2-state pair analogous to K3's $E$-irrep doublet ($d_\Gamma = 2$, sector-specific factor $1/6$). Resolution of Q6-PAIRING via explicit Wigner-Eckart factorization analog of §17.5-§17.8 promotes Q6 Step 2 from Layer 2 conservative to full Layer 3 with explicit matrix element computation, estimated 1-2 sessions.
+
+### §19.7 Finding C-W45 (NEW)
+
+> **Finding C-W45 (NEW)** — *Q6 Step 2 cage-shell factor conservative composite closure at Layer 2 with structural pairing question registered.* The qDP sector cage-shell averaging factor on the shared icosahedral cage at the host CP evaluates to $|M_\perp^{qDP}| = d_\Gamma / V_{\text{cage}} = d_\Gamma / 12$ at Layer 2 conservative level, with $d_\Gamma \in \{1, 2\}$ pending Q6-PAIRING resolution (analog of Q5-PAIRING registered Patch 0428 and resolved Patch 0429). Three converging lines support the conservative Layer 2 closure: (i) Substrate-Locality Unification (Finding C-W40) feeds the substrate-level $\chi \equiv \epsilon = \phi^{-3}$ to the qDP/eDP sector with the same mechanism that fed the K3-doublet and W-bracelet sectors; (ii) the chirality operator's $I_h$-irrep $A_u$ branches under $I_h \to C_{5v}$ restriction to $A_2(C_{5v})$ (1D, character $(1,1,1,-1)$), a structurally well-defined operator irrep; (iii) the conservative composite $|M^{qDP}| = \chi \cdot |M_\perp^{qDP}| = \chi \cdot d_\Gamma/12$ at Layer 2 structural-argument level via the same cage-shell-averaging-on-shared-icosahedral-cage interpretation that §17.10 established for the K3-doublet ↔ W-bracelet pair. The naive 1-vertex $\{v_i\}$ characterization (§18.3) produces a vanishing chirality matrix element $\langle A_1(C_{5v}) | A_2(C_{5v}) | A_1(C_{5v}) \rangle = 0$ via $A_1 \otimes A_2 \otimes A_1 = A_2 \not\supset A_1$, requiring antipodal-pair refinement to $D_{5d}$ stabilizer (Candidate A, leading) for non-vanishing matrix element via $\langle A_{1g}(D_{5d}) | A_{2u}(D_{5d}) | A_{2u}(D_{5d}) \rangle$ with the qCP-sign × Linear-ZBW-direction coupling under host-CP inversion. Promotion of pieces composite to full Layer 3 theorem-level closure requires resolution of Q6-PAIRING (identification of the matter-doublet pairing convention and effective dimension $d_\Gamma$ via explicit Wigner-Eckart factorization analog of K3 paper §5.3-§5.4 and §17.5-§17.8). The cage-shell averaging structurally normalizes on $V_{\text{cage}} = 12$ regardless of $|C_{5v}| = 10$ or $|D_{5d}| = 20$ — paralleling the §17.10 refinement that the cage IS the icosahedron, shared across all sectors under Substrate-Locality Unification.
+
+Finding C-W45 extends Finding C-W44 (Patch 0437 Q6 Step 1 substrate-locality identification at Layer 2) to the cage-shell-factor content at Layer 2 conservative level. The structural pattern is the same one §16 (Patch 0428) established for the W-bracelet: substrate-locality Layer 2 (Finding C-W40) + cage-shell factor Layer 2 conservative (Finding C-W42, then C-W45 for qDP) with pairing-convention identified as open sub-question (Q5-PAIRING resolved in Finding C-W43, Q6-PAIRING newly registered here).
+
+### §19.8 What full Layer 3 closure of Q6 requires
+
+Q6-PAIRING resolution is required to:
+
+**(a) Identify the matter-doublet basis structure on $D_{5d}$.** Specifically: which of the 4-state representation's 2 $A_{1g}$ copies and 2 $A_{2u}$ copies form the matter-doublet pair coupled by chirality, and what is the analog of K3's $\sigma_1\zeta$-EVEN convention and W's $\sigma_1^W\zeta^W$-EVEN convention. The candidate framing (paralleling §17.4-§17.5): the matter-doublet states $\{|+, v\rangle, |-, -v\rangle\}$ as the antipodal-pair coupling, with perpendicular-wavefunction-analog structure $\chi_\pm^{qDP} = (|+, v\rangle \pm |-, -v\rangle)/\sqrt{2}$ on the within-pair antisymmetric/symmetric combinations.
+
+**(b) Verify the chirality operator's irrep identification on $D_{5d}$.** The naive $I_h \to D_{5d}$ branching gives $A_u \to A_{1u}$ but the physically-correct chirality operator that has Linear-ZBW × inversion coupling structure is $A_{2u}$ (sign on perpendicular reflections + sign on inversion). Need to verify these are compatible: either (i) the chirality operator has multiple $I_h$-irrep components branching into both $A_{1u}$ and $A_{2u}$ of $D_{5d}$, or (ii) the structurally-correct $I_h$-irrep is not pure $A_u$ but includes other irreps (paralleling the K3/W analysis where the chirality operator's $D_6$-irrep was $B_2 = A_2(S_3) \otimes \mathbb{Z}_2$-ODD, a specific tensor-product structure).
+
+**(c) Composite matrix element factorization at full Layer 3.** Once (a) and (b) are in hand, the composite $|M^{qDP}| = |M_{\text{amp}}^{qDP}| \cdot |M_\perp^{qDP}| = \chi \cdot d_\Gamma/12$ closes at full Layer 3 numerical-content level. The amplitude factor $|M_{\text{amp}}^{qDP}| = \chi$ via chirality-eigenvalue matching (analog of K3 Finding C-W23 and W-bracelet §17.8 derivations). The cage-shell factor closes at $d_\Gamma/12$ with the specific $d_\Gamma$ determined by (a)+(b).
+
+Estimated Layer 3 promotion work for Q6 Step 2 → Q6 full Layer 3 closure: **1-2 sessions** (paralleling Q5-PAIRING resolution at Patch 0429, which resolved the structural sub-question and promoted pieces (b)+(c) from Layer 2 to full Layer 3 in one session via §17 ~170 lines).
+
+### §19.9 Status update
+
+- **Q6 Step 1** (substrate-level Layer 2 identification): CLOSED at Layer 2 by Substrate-Locality Unification (§18, Patch 0437, Finding C-W44).
+- **Q6 Step 2** (cage-shell averaging factor): **CLOSED at Layer 2 conservative** with Q6-PAIRING registered (this §19, Patch 0438, Finding C-W45). Cage-shell factor $|M_\perp^{qDP}| = d_\Gamma/12$ with $d_\Gamma \in \{1, 2\}$ pending Q6-PAIRING resolution.
+- **Q6-PAIRING** (NEW open structural sub-question): registered this patch; Candidate A leading (antipodal-pair refinement with $D_{5d}$ stabilizer); estimated 1-2 sessions resolution.
+- **Q6 Step 3** (pairing-convention identification): folded into Q6-PAIRING resolution.
+- **Q6 Step 4** (composite matrix element factorization at full Layer 3): conditional on Q6-PAIRING resolution; ~1 session if separate.
+- **Q7** (cosmological-timing connection): unchanged, open at sketch level.
+
+Reading C closure trajectory budget revised: 0-6 sessions (post-Patch 0437) → **0-5 sessions** (Q6 Step 2 conservative closure consumed ~1 session of 2-4 originally budgeted for Q6 Steps 2-4; Q6-PAIRING resolution + Step 4 composite absorb 1-2 of remaining budget; Q7 absorbs 0-3). **Q6-PAIRING resolution** is the natural immediate next priority, estimated 1-2 sessions; resolution promotes Q6 Step 2 from Layer 2 conservative to full Layer 3 with explicit matrix element factorization analog of §17.
+
+### §19.10 Epistemic status
+
+Layer 2 conservative (structural-argument level with explicit gap registered). The geometric content — qDP substrate-object characterization extending from 1-vertex $\{v_i\}$ with $C_{5v}$ stabilizer (§18) to 2-vertex antipodal-pair $\{v_i, -v_i\}$ with $D_{5d}$ stabilizer under Candidate A's structural refinement — is rigorous from the $I_h$ orbit-stabilizer structure ($|I_h|/6 = 20$ for the antipodal-pair orbit, with 6 antipodal pairs in the icosahedron). The Substrate-Locality Unification theorem (Finding C-W40) applies uniformly to the antipodal-pair substrate object (a 2-vertex first-shell subset built from the host vertex's first-shell icosahedron).
+
+What is at Layer 2 conservative (not Layer 3) is the **specific value of the cage-shell factor** $d_\Gamma/12$ — the choice between $d_\Gamma = 1$ (giving $1/12$) and $d_\Gamma = 2$ (giving $2/12 = 1/6$) requires Q6-PAIRING resolution. The conservative composite closure $|M^{qDP}| = \chi \cdot d_\Gamma/12$ is at Layer 2 structural-argument level via three converging lines (§19.7 Finding C-W45); full Layer 3 promotion with explicit matrix element factorization is the work that Q6-PAIRING resolution + Q6 Step 4 composite would deliver.
+
+The closure of Q6 Step 2 inherits Capotauro v1.0's 10 foundational inputs (FI-C-1 through FI-C-10) + 2 Reading C foundational inputs (FI-C-RC-1, FI-C-RC-2) + SM-2's substrate characterization of Linear vs Orbital ZBW configurations + the same 4 CPP axioms (A1, A2, A4, A7) used in THEO-SD-CHIR-1. No new axioms or foundational primitives are invoked. The Q6-PAIRING registration follows the §16.12 / Patch 0428 methodological discipline (`founders_voice/004_verbatim_substance_preservation_discipline.md`) of registering structural sub-questions explicitly rather than committing to candidate resolutions under analytical pressure.
+
+### §19.11 Methodological observation: cross-sector extension surfaces ambiguities — recurring pattern
+
+§15.12 (Patch 0427) registered the methodological observation that cross-sector extension of a paper-internal formula can resolve ambiguities the original paper's scope didn't expose. §17.10 (Patch 0429) refined this with the W-bracelet's $|D_6| = V_{\text{cage}} = 12$ "non-coincidence": the K3 paper §5.4 cage-stabilizer-order-equals-cage-vertex-count was a special-case identity within the paper's scope, surfaced as a structural observation by the cross-sector W-bracelet extension where the non-coincidence held with different geometric realization.
+
+Q6 Step 2's analytical complication (vanishing matrix element under naive $C_{5v}$ framing) extends the pattern: cross-sector extension to the qDP sector exposes that the matter-doublet pairing structure (made explicit in K3 paper §3.3 via $\sigma_1\zeta$-EVEN convention and in W-bracelet §17 via $\sigma_1^W \zeta^W$-EVEN convention) is a load-bearing structural element required for non-vanishing chirality matrix element in ANY observable manifestation under the OPEN-SD-CHIR-PRIMITIVE umbrella. The K3-doublet ↔ W-bracelet pair masked this requirement because both sectors' matter-doublets sat in 2D $E$-type irreps of their respective $D_6$ stabilizers (paper §3.3 + §17.4 explicit analysis); the qDP sector's structurally smaller matter-state ($A_1$ on 1-vertex $\{v_i\}$ under $C_{5v}$) makes the pairing-structure requirement visible because the matrix element vanishes without it.
+
+The methodological lesson: **the matter-doublet pairing convention is universal across all OPEN-SD-CHIR-PRIMITIVE manifestations**, not specific to K3 / W-bracelet. The three-step closure pattern templated by Q5 (substrate-locality + cage-shell factor + pairing-convention) was structurally complete; Q6's apparent simplification (smaller substrate object should give simpler closure) actually requires the same three-step machinery with the pairing convention's load-bearing role made structurally explicit. Future closures of manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry under the umbrella are expected to follow the same three-step pattern with their own sector-specific pairing conventions. The §16.12 / Patch 0428 register-then-resolve discipline (Proposal 2 over Proposal 1) continues to template the appropriate methodological response when cross-sector extension surfaces ambiguity: register the open sub-question explicitly, close at conservative Layer 2 with the structural gap visible, resolve in a separate patch.
+
+The Q6-PAIRING resolution will require careful analysis of:
+- The qCP-sign × Linear-ZBW-direction coupling under host-CP inversion (the analog of K3's $\zeta$-parity / W's $\zeta^W$ icosahedral-center inversion structure)
+- The effective matter-doublet dimension $d_\Gamma$ via Wigner-Eckart factorization on the antipodal-pair $D_{5d}$ stabilizer
+- The chirality operator's precise irrep content (possibly multi-irrep beyond pure $A_u(I_h)$) for matching with the matter-doublet's 1D-pair structure
+
+The patch-by-patch closure cadence anticipated for Q6 trajectory:
+- Patch 0437 (this window, done): Q6 Step 1 substrate-locality Layer 2 (Finding C-W44)
+- Patch 0438 (this window, this patch): Q6 Step 2 cage-shell factor Layer 2 conservative + Q6-PAIRING registered (Finding C-W45)
+- Patch 0439+ (future window): Q6-PAIRING resolution + Q6 Steps 2-4 promotion to full Layer 3 (Finding C-W46 candidate)
+
+Total Q6 Layer 3 closure remains within the 2-4 session estimate from Patch 0437 §18.8.
+
+---
+
