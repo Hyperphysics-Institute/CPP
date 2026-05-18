@@ -1,7 +1,7 @@
 # CPP Organizational Frontier
 
 **Location:** `/CPP/Organizational_Frontier.md`
-**Last updated:** 5 May 2026 (Session 13 close: OPEN-ORG-014 registered AND resolved in the same session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; demonstrated via inaugural `handover-SS-9.md`. Mirrors OPEN-ORG-013's same-session register-and-resolve pattern.)
+**Last updated:** 17 May 2026 (Session 130 handover, Patch 0426: OPEN-ORG-015 registered — terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence documented; workaround candidate `git commit -F message-file.txt`.) Earlier: 5 May 2026 (Session 13 close: OPEN-ORG-014 registered AND resolved in the same session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; demonstrated via inaugural `handover-SS-9.md`. Mirrors OPEN-ORG-013's same-session register-and-resolve pattern.)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Rationale:** See `programmatic_decisions/PD-003-organizational-frontier-registry.md`
 **Companion registry:** `Research_Frontier.md` (theoretical/physics problems)
@@ -636,6 +636,27 @@ All four were Claude-side execution failures, not protocol specification failure
 - 25 Apr 2026 — SS-6 migration completed (patch 0018, 3 files).
 - 25 Apr 2026 — SS-5 migration completed (patch 0019, 19 files including 8 archive moves).
 - 25 Apr 2026 — RESOLVED via patch 0020 with SS-7 migration (30 files including 5 archive moves; v1.1/v1.2 duplicate cleanup completed). All three papers in OPEN-ORG-004's scope are now under the per-paper subfolder convention; structural asymmetry between pre-22-April papers and SS-8/future papers eliminated.
+
+---
+
+## OPEN-ORG-015: Terminal paste truncation on long multi-paragraph commit `-m` messages
+
+**Status:** OPEN
+**Priority:** LOW (workaround available; recurrence rate so far ~25% on long commits)
+
+**Originating context:** Across Patches 0422–0424 squashed commit (16 May 2026 Session 126 close) and Patch 0425 standalone commit (17 May 2026 Session 130 close), the long multi-paragraph commit message body passed via `git commit -m "..."` underwent partial truncation/mangling during terminal paste on Dr. Abshier's Git Bash on Windows ClearPC. Visible artifacts: a multi-paragraph body collapses a section, the closing `" && git push origin main` becomes inline-mangled text like `main**revised 3-`. In both cases the terminal still parsed enough to produce a successful commit + push, and the files on GitHub are byte-identical to the patch source — but the commit message body on the remote is mangled mid-body.
+
+**Problem:** Commit messages are forensic. Future archeology (git log, blame, `git show <hash>`) reads what the remote has, not what the patch source had. Mangled commit bodies degrade the canonical record. The recurrence over two sessions on different commits indicates this is a reproducible interaction between (a) commit-message body length, (b) embedded newlines + special characters in the `-m` argument, (c) Git Bash on Windows clipboard/paste handling, and not a one-off.
+
+**Proposed fix:** Replace inline `-m "..."` for long commit messages with `git commit -F message-file.txt`, where the message body is written to a file (e.g., in the cumulative-drop-in folder alongside `APPLY_INSTRUCTIONS.md`) and `git commit -F` reads it without going through clipboard paste. The pattern fits cleanly into the existing drop-in workflow: the message file lives next to the apply instructions, gets discarded after commit. Trial at next long-commit cycle; if successful, codify in `templates/operating_system.md` and `bootup.md` as the canonical Git Bash long-commit pattern.
+
+**Trigger condition:** Opportunistic. Try `-F message-file.txt` at the next long-commit cycle. If it eliminates the truncation across 2–3 trials, codify the pattern and close this item. If truncation persists with `-F`, escalate (root-cause investigation: Git Bash buffer, Windows clipboard, or `git`-level escaping issue).
+
+**Blocking/blocked-by:** None.
+
+**History:**
+- 16 May 2026 — First observed during Patches 0422–0424 squashed commit; classified as one-off paste-glitch.
+- 17 May 2026 — Recurred at Patch 0425 standalone commit. Two-window recurrence elevates from one-off to systematic. Registered here per PD-003 reflexive-drop discipline at Session 130 handover (Patch 0426).
 
 ---
 

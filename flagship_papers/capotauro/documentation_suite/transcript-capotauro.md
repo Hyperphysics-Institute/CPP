@@ -327,4 +327,50 @@
 
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 16 May 2026 (Session 123 Patch 0416C creation).*
+## Sessions 127–130 (17 May 2026) — Reading C closure arc continuation
+
+**Note:** Patches 0417–0421 (Sessions 124–126, 16 May 2026) were the Reading C Layer 2/3 trajectory opening (Q1, Q2 closure + Q1' resolution toward vertex-aligned Reading C + closure-trajectory handover consolidation). Per-patch transcript entries for 0417–0421 are a pre-existing pointer-map gap to be filled at next opportunity; the consolidated narrative is at `Patch 0421` handover doc (commit `8acdb63`). The entries below cover Patches 0422–0426 (Sessions 127–130 + this handover).
+
+**Patch 0422 (Session 127):** Programme-level umbrella registration **OPEN-SD-CHIR-PRIMITIVE** in SD section above OPEN-FI-C-9-FP-MECHANISM and OPEN-FP-SF-2-CHIR; five-manifestation scope. NEW `founders_voice/005_chirality_is_primitive.md` (~180 lines) verbatim recovery of Session 120 founder's-confrontation reasoning. Research_Frontier.md problem counts updated (93 → 94 entries, 58 → 59 open). Commit `a4f8656`.
+- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE (NEW)
+- → `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (NEW, ~180 lines)
+- → Tier 4: `reasoning-capotauro.md` §8 (Session 127 reasoning at Patch 0426)
+
+**Patch 0423 (Session 128):** Q3 ε-χ relationship Layer 2 attempt. Sketch §12 added with f_geom · f_irrep two-factor structure; Finding C-W38 registered. **NOTE: §12 subsequently superseded by §13 in Patch 0424; C-W38 superseded by C-W39. The §12 content is preserved in the sketch for audit-trail per founders_voice/004 discipline.** Commit `ffe293c`.
+- → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §12 (preserved as superseded)
+- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W38, later superseded)
+- → Tier 4: `reasoning-capotauro.md` §9 (Session 128 reasoning + supersession note at Patch 0426)
+
+**Patch 0424 (Session 129):** Q3 §12 4D correction + Q4 dissolution. Under proper 4D analysis the K3-base edges are tangent to $\hat n$ identically — first-order edge-length perturbations vanish for the entire first shell under vertex-aligned Reading C. **Finding C-W39** (NEW; supersedes C-W38): local I_h preservation under vertex-aligned Reading C; χ ≡ ε at substrate level. Q3 CLOSED at Layer 3 by direct identification. Q4 DISSOLVED (the f_irrep Wigner-Eckart computation was an artifact of the §12 geometric error). Capotauro v1.0 paper §10's |M| = χ/6 prediction preserved exactly. Layer 3 closure trajectory revised 7–17 → 5–12 sessions. Commit `653637c`.
+- → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §13 (correction)
+- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W39 supersedes C-W38; Q3 closed; Q4 dissolved)
+- → Tier 4: `reasoning-capotauro.md` §10 (Session 129 reasoning at Patch 0426)
+
+**Patch 0425 (Session 130):** Q5 (cross-sector consistency with SF-2 W bracelet) CLOSED at Layer 2 via Substrate-Locality Unification theorem. Sketch §14 (~93 lines, v2 framing — v1 sign-coherence draft deleted in-session). The §13.3 local-I_h-preservation theorem applies uniformly to any subset of first-shell vertices, hence covers both K3-base (OPEN-FI-C-9) and W-bracelet (OPEN-FP-SF-2) substrate objects. **Finding C-W40** (NEW): Substrate-Locality Unification under vertex-aligned Reading C — first explicit cross-sector unification result under OPEN-SD-CHIR-PRIMITIVE umbrella. K3-doublet's d_E/V_cage = 2/12 = 1/6 cage-shell factor (paper §10) yielding χ/6; W-bracelet's analog factor on Petrie-polygon D_6 sub-stabilizer is Q5 Layer 3 target (2–4 sessions). Sketch grows 904 → 997 lines (+93 net). Commit `b1b17b5`.
+- → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §14 (Q5 Layer 2 closure)
+- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W40 registered; Q5 Layer 2 closed)
+- → Tier 4: `reasoning-capotauro.md` §11 (Session 130 reasoning + v1/v2 §14 cleanup decision at Patch 0426)
+
+**Patch 0426 (Session 130 close):** Session-close handover protocol — Sessions 127–130 Reading C closure arc handover per `templates/operating_system.md` §15. Step A (per-session logs), Step B (this transcript update), Step C (development vignettes), Step D (Tier 4 reasoning §8–§11), Step E (Organizational_Frontier OPEN-ORG-015 + future_projects Q5/Q6/Q7), Step G (paste-truncation workflow item registered as OPEN-ORG-015), Step H (this `handover-capotauro.md` overwrite). Steps F + several Step E sub-items marked N/A with audit rationale.
+- → `session_logs/2026-05-17_session_127_log.md` through `_130_log.md` (NEW, 4 files)
+- → `flagship_papers/capotauro/documentation_suite/development-capotauro.md` (Sessions 127–130 vignettes appended)
+- → `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` §8–§11 (appended)
+- → `flagship_papers/capotauro/documentation_suite/handover-capotauro.md` (overwrite with Session 130 close handover)
+- → `Organizational_Frontier.md` OPEN-ORG-015 (NEW, paste-truncation workflow)
+- → `future_projects.md` (Q5 Layer 3 + Q6 + Q7 entries appended)
+
+---
+
+## Forward queue post-Patch 0426
+
+**Priority 1 (next session):** Q5 Layer 3 closure — W-bracelet Schur-orthogonality cage-shell factor on Petrie-polygon D_6 ⊂ H_3 sub-stabilizer + SF-2 V-A coupling matching at massless helicity limit + Wigner-Eckart H_3 → D_6 branching consistency. Estimated 2–4 sessions; piece (a) likely single-session.
+
+**Priority 2:** Q6 (SM-2 qDP/eDP) — Finding C-W40 framework application if qDP/eDP characterizable as first-shell-vertex substrate object. Estimated 3–5 sessions.
+
+**Priority 3:** Q7 (cosmological-timing question) — scoping not yet started.
+
+**Pre-existing pointer-map gap:** Patches 0417–0421 (Sessions 124–126) per-patch transcript entries to be filled at next opportunity (consolidated narrative at Patch 0421 handover doc, commit `8acdb63`).
+
+---
+
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 130 Patch 0426 handover — appended Sessions 127–130 Reading C closure arc Patches 0422–0426 transaction entries).*
