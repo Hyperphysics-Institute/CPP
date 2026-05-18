@@ -1,6 +1,6 @@
 # CPP Programme To-Do List
 
-**Location**: `/CPP/todolist.md` (repo root, parallel to `Research_Frontier.md`, `future_projects.md`, `paper_catalog.md`).
+**Location**: `/CPP/todolist.md` (repo root, parallel to `research_frontier.md`, `future_projects.md`, `paper_catalog.md`).
 
 **Purpose**: Track small carried-over items, deferred protocol steps, and hygiene gaps that don't warrant full `future_projects.md` entries but must be cleared before the next paper begins. The "easy to lose" things — things that compound if not externalized.
 
@@ -9,7 +9,7 @@
 ## How this file relates to other tracking files
 
 - **`future_projects.md`** — registered active projects with full mechanism / falsifier / companion fields. Multi-session work with a clear deliverable. SS-9 anthology chapter (A.3) and TATWD integration (A.4) live there, not here.
-- **`Research_Frontier.md`** — last-updated session-by-session log of the programme's frontier state. Programme-level open problems and their status.
+- **`research_frontier.md`** — last-updated session-by-session log of the programme's frontier state. Programme-level open problems and their status.
 - **`session_logs/`** — per-session entries capturing what happened.
 - **`todolist.md`** (this file) — *small carried-over items, deferred protocol steps, hygiene gaps*. Kept short on purpose. If an entry here grows beyond a few patches of work, promote it to `future_projects.md`.
 
@@ -143,7 +143,7 @@ The Capotauro precedent makes credible a tightening of the v1.0 SHIP gate-langua
 
 ## Maintenance
 
-This file is maintained per session: any session that completes a TODO item moves it to "Cleared items (history)" with the completion date and patch number. Any session that identifies a new deferred item adds it here under the appropriate priority. Sessions that touch only this file (no other substantive work) follow the standard programme practice of session log + Research_Frontier.md last-updated entry — the documentation suite for a paper is updated only if the cleared item was paper-specific.
+This file is maintained per session: any session that completes a TODO item moves it to "Cleared items (history)" with the completion date and patch number. Any session that identifies a new deferred item adds it here under the appropriate priority. Sessions that touch only this file (no other substantive work) follow the standard programme practice of session log + research_frontier.md last-updated entry — the documentation suite for a paper is updated only if the cleared item was paper-specific.
 
 If this file's P1 section grows large (more than ~10 items), reconsider whether some items should be promoted to `future_projects.md` as registered multi-session projects rather than carried as to-dos.
 

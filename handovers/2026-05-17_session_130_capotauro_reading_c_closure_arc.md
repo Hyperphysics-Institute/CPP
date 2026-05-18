@@ -29,7 +29,7 @@ The Reading C closure trajectory (OPEN-FI-C-9-FP-MECHANISM Layer 3) advanced sub
 - **Prior arc handover (Sessions 124–126):** `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md` — the Reading C closure-trajectory consolidation handover, moved into the new `handovers/` folder by the Patch 0422 parallel-window refactor (was previously at `sketches/Reading_C_closure_trajectory_handover.md` at commit `8acdb63`).
 - **Active script:** `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (Q1' / W-bracelet geometry verification; Finding C-W36 anchor).
 - **Founder's voice:** `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (~180 lines; verbatim Session 120 confrontation).
-- **Live registry entries:** `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE (umbrella; NEW Patch 0422), §OPEN-FI-C-9-FP-MECHANISM (Layer 3 closure trajectory; Q1+Q2+Q3 closed, Q4 dissolved, Q5 Layer 2 closed, Q5 Layer 3 + Q6 + Q7 open), §OPEN-FP-SF-2-CHIR (W-bracelet sector under umbrella). Findings C-W35 through C-W40 registered.
+- **Live registry entries:** `research_frontier.md` §OPEN-SD-CHIR-PRIMITIVE (umbrella; NEW Patch 0422), §OPEN-FI-C-9-FP-MECHANISM (Layer 3 closure trajectory; Q1+Q2+Q3 closed, Q4 dissolved, Q5 Layer 2 closed, Q5 Layer 3 + Q6 + Q7 open), §OPEN-FP-SF-2-CHIR (W-bracelet sector under umbrella). Findings C-W35 through C-W40 registered.
 
 ## Step-by-step audit of this session's handover (Sessions 127–130 arc, Patch 0426)
 
@@ -38,8 +38,8 @@ The Reading C closure trajectory (OPEN-FI-C-9-FP-MECHANISM Layer 3) advanced sub
 - **Step C (Tier 3 vignette):** ✓ — Four vignettes appended to `development-capotauro.md` for Sessions 127, 128 (with supersession marker), 129, 130.
 - **Step D (Tier 4 reasoning):** ✓ — Four entries appended to `reasoning-capotauro.md`. Includes verbatim reasoning for: programme-level umbrella registration rationale (127); Q3 §12 derivation marked superseded with audit-trail rationale (128); Q3 §13 4D geometric correction reasoning and Q4 dissolution rationale (129); Q5 substrate-locality theorem proof and Finding C-W40 cross-sector unification reasoning (130). Also documents the in-session v1/v2 §14 cleanup decision (deleted v1 sign-coherence framing in favor of v2 substrate-locality framing).
 - **Step E (registries):**
-  - `Research_Frontier.md` — ✓ updated in-session across Patches 0422–0425 (umbrella registration; Findings C-W38/39/40 registered; Q3/Q4/Q5 status; problem count 93→94 entries, 58→59 open). Last-updated header current at b1b17b5.
-  - `Organizational_Frontier.md` — ✓ — OPEN-WORKFLOW-PASTE-TRUNCATION registered (two-window recurrence of terminal paste-truncation on long multi-paragraph commit messages; workaround `git commit -F message-file.txt`).
+  - `research_frontier.md` — ✓ updated in-session across Patches 0422–0425 (umbrella registration; Findings C-W38/39/40 registered; Q3/Q4/Q5 status; problem count 93→94 entries, 58→59 open). Last-updated header current at b1b17b5.
+  - `organizational_frontier.md` — ✓ — OPEN-WORKFLOW-PASTE-TRUNCATION registered (two-window recurrence of terminal paste-truncation on long multi-paragraph commit messages; workaround `git commit -F message-file.txt`).
   - `axiom-registry.md` — N/A. No new axioms; Findings C-W36 through C-W40 are derived results.
   - `theorem-registry.md` — N/A. Findings are at sketch-level conjecture/theorem status; no paper-level theorem registrations until Q5 Layer 3 closure produces a registerable cross-sector theorem (Q5 Layer 3 target).
   - `predictions.md` — N/A. No new quantitative predictions; |M| = χ/6 ≈ 0.0394 already registered post-Capotauro v1.0.
@@ -49,7 +49,7 @@ The Reading C closure trajectory (OPEN-FI-C-9-FP-MECHANISM Layer 3) advanced sub
   - `paper_catalog.md` — N/A. Capotauro row not stale (v1.0 SHIPPED, sub-claim (b) work tracked at OPEN-FI-C-9 entry, not in catalog row).
   - **TATWD integration audit:** N/A. `CPP_the_theory.md` Last-updated unchanged since Capotauro v1.0 SHIP; Reading C trajectory is sub-claim (b) work, not a TATWD-triggering v1.0 SHIP or architecture event. Re-audit at Q5 Layer 3 closure.
 - **Step F (reviewer artifacts):** N/A. No reviewer correspondence in this arc.
-- **Step G (protocol/OS updates):** ✓ — `OPEN-WORKFLOW-PASTE-TRUNCATION` registered in Organizational_Frontier.md (terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence; workaround candidate `git commit -F message-file.txt`).
+- **Step G (protocol/OS updates):** ✓ — `OPEN-WORKFLOW-PASTE-TRUNCATION` registered in organizational_frontier.md (terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence; workaround candidate `git commit -F message-file.txt`).
 - **Step H (this document):** ✓ — file at `handovers/2026-05-17_session_130_capotauro_reading_c_closure_arc.md` per the chronological handovers/ folder convention adopted in commit `784d542` (Session 127 parallel-window infrastructure refactor: "Patch 0422: Handover file consolidation - one folder, chronological naming"). NB: the original cumulative-drop-in for Patch 0426 placed this file at the pre-refactor path `flagship_papers/capotauro/documentation_suite/handover-capotauro.md`; reconciled in-session to the new path before commit. The pre-refactor path is no longer tracked.
 
 ## Recent session count

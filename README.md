@@ -15,7 +15,7 @@
 
 Conscious Point Physics proposes that physical reality consists of Conscious Points (CPs) — fundamental entities with polarity, position on a 600-cell lattice, and the capacity to perceive and respond to their local environment. All Standard Model particles emerge as stable geometric configurations of CPs within the lattice, and all fundamental forces arise from a single interaction: the Space Stress Vector (SSV) between CPs.
 
-The theory is built on nine axioms (see [`axiom-registry.md`](axiom-registry.md)) and derives its results from the geometry of the 600-cell — a regular 4-dimensional polytope with 120 vertices, 720 edges, and icosahedral H₄ symmetry. The 600-cell is the sole geometric input; all particle masses, coupling constants, and mixing angles are consequences of its structure. For proved results, see [`theorem-registry.md`](theorem-registry.md). For open problems and conjectures, see [`Research_Frontier.md`](Research_Frontier.md).
+The theory is built on nine axioms (see [`axiom-registry.md`](axiom-registry.md)) and derives its results from the geometry of the 600-cell — a regular 4-dimensional polytope with 120 vertices, 720 edges, and icosahedral H₄ symmetry. The 600-cell is the sole geometric input; all particle masses, coupling constants, and mixing angles are consequences of its structure. For proved results, see [`theorem-registry.md`](theorem-registry.md). For open problems and conjectures, see [`research_frontier.md`](research_frontier.md).
 
 ---
 
@@ -113,7 +113,7 @@ CPP/
 ├── README.md                    ← This file
 ├── INDEX.md                     ← Directory-by-directory map
 ├── paper_catalog.md             ← Master list of all papers with IDs and status
-├── Research_Frontier.md          ← ** THE DASHBOARD — all open problems, conjectures, propositions **
+├── research_frontier.md          ← ** THE DASHBOARD — all open problems, conjectures, propositions **
 ├── theorem-registry.md           ← All proved theorems by series with axiom dependencies
 ├── axiom-registry.md             ← Axiom tracking, prediction counts
 ├── predictions.md               ← Every quantitative prediction with status
@@ -175,7 +175,7 @@ The falsified claims register includes 7 entries. The open problems register con
 - **Want the headline result?** Read SM-6 ([PDF on OSF](https://osf.io/9dfya/)) — the lepton mass spectrum from one equation.
 - **Want to evaluate the theory?** Read [`predictions.md`](predictions.md) — every quantitative claim with status.
 - **Looking for a specific paper?** See [`paper_catalog.md`](paper_catalog.md).
-- **Want to contribute?** See [`Research_Frontier.md`](Research_Frontier.md) — the complete problem dashboard with recommended attack order.
+- **Want to contribute?** See [`research_frontier.md`](research_frontier.md) — the complete problem dashboard with recommended attack order.
 - **Writing a new paper?** See [`templates/paper-formatting.md`](templates/paper-formatting.md).
 
 ---

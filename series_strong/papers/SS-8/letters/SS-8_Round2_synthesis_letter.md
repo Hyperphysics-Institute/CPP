@@ -32,7 +32,7 @@ On review, ChatGPT is substantively right. The original analysis's §7 claimed "
 
 - "Conditional theorem under two independent sufficient premises" → "conditional theorem under two functionally distinct realizations of a shared proximity-binding premise."
 - "Genuinely independent derivation" → "functionally distinct realization of proximity-driven binding, sharing an ancestor principle with Model A but not reducible to it."
-- The OPEN-SS-26 content is split: functional-independence content consolidates into OPEN-SS-27 as originally proposed; physical-principle-independence content is promoted to a programme-level OPEN-FRONTIER question on `Research_Frontier.md` ("Can D1 be derived from a mechanism not based on proximity-aggregation?").
+- The OPEN-SS-26 content is split: functional-independence content consolidates into OPEN-SS-27 as originally proposed; physical-principle-independence content is promoted to a programme-level OPEN-FRONTIER question on `research_frontier.md` ("Can D1 be derived from a mechanism not based on proximity-aggregation?").
 
 This adopts ChatGPT's Levels 1–3 decomposition explicitly into §4.3 of the sketch and §8.1 of the Q2 analysis document. The conditional theorem tier stands; the claim about what "conditional" means is sharpened.
 

@@ -2,7 +2,7 @@
 
 **Created:** 9 April 2026
 **Status:** OPEN (Phase 1–2 CPU proof-of-concept complete; Phase 3 GPU pending)
-**Research_Frontier.md entry:** OPEN-SM-10-FEM
+**research_frontier.md entry:** OPEN-SM-10-FEM
 
 ---
 
@@ -52,7 +52,7 @@ DP count ratios match PDG mass ratios to <5% without calibration.
 
 ## Cross-References
 
-- **Research_Frontier.md entry:** OPEN-SM-10-FEM
+- **research_frontier.md entry:** OPEN-SM-10-FEM
 - **Related:** OPEN-SM-cage-1 (derive α), OPEN-SS-1 (quark mass formula)
 - **Development transcript:** `series_standard_model/development-transcripts/SM-10_FEM_computational_journey_transcript.md`
 

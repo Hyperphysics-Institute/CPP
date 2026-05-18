@@ -8,7 +8,7 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling.md` (Session 7 Phase 1 A-scaling — $\hbar\omega^*$ values)
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_scoping.md` (Session 7 Phase 2 sub-question (b) scoping)
 - `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3.py` (reproducible computation)
-- `Research_Frontier.md` OPEN-SS-35 entry
+- `research_frontier.md` OPEN-SS-35 entry
 
 **Net programme effect:** Layer 3 closes at **partial cross-paradigm consilience**. The cumulative shell-closure positions in the CPP-derived spectrum are exactly the empirical magic numbers $\{2, 8, 20, 28, 50, 82, 126\}$ — no positions are missed, none are added in error. However, the **gap magnitudes** at the spin-orbit-driven magic positions (28, 50, 82, 126) are smaller than empirical by factor 2–3, reflecting that CPP's layer-1 $V_{\rm SO}/\hbar\omega = 0.09$ is below the "strong magic-number" threshold of $\approx 0.20$–$0.25$ in the simple HO+L·S model. **Sub-question (b) status: "B-α layer 1 closed; magnitude Level-1 partial" → "layer 3 partial closure: SHELL STRUCTURE correct, GAP MAGNITUDES below empirical".** Pattern 6 K$_3$ scale-recurrence unchanged at 7 confirmed instances. The OPEN-SS-35 closure programme reaches its first qualitative cross-paradigm consilience claim — partial.
 

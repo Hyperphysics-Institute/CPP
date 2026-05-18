@@ -9,7 +9,7 @@
 - `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_VSO_refinement.py` (reproducible computation)
 - `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` (ZBW machinery)
 - `series_paper_sr.tex` (PSR_eff = l_P/(1 + k·ΔSSV) machinery)
-- `Research_Frontier.md` OPEN-SS-35 entry
+- `research_frontier.md` OPEN-SS-35 entry
 
 **Net programme effect:** Layer 3 gap-strength refinement bounded. **Route 1b ruled out** as a magic-strength enhancement route — the K$_3$ Gaussian-modulated mean field, expanded around the centroid, gives a quartic correction with the *wrong sign* for empirical centrifugal enhancement (lowers low-l states *more* than high-l, opposite of the Bohr-Mottelson $D \cdot l(l+1)$ phenomenology). Plus the perturbation theory breaks down spatially for high-N states where the spin-orbit-driven magics (28, 50, 82, 126) sit. Routes 1a (refined $v_F/c$ via surface-region emphasis) and 1c (higher-order SSV-PSR_eff relativistic corrections) give modest improvements: $V_{\rm SO}/\hbar\omega$ advances from 0.09 (Session 8 layer 1) to **0.113 (Session 10 refined)**, a 25% increase. The combined refinement reaches 56% of the empirical strong-magic threshold (0.20). Sub-question (b) Route B-α layer 3 status: "shell SEQUENCE reproduced; gap magnitudes at soft end of empirical" → "**bounded refinement: simple HO + L·S framework saturates at $V_{\rm SO}/\hbar\omega \approx 0.11$; closure of gap-strength match requires cluster-surface physics or numerical diagonalization beyond Taylor expansion**". Pattern 6 K$_3$ scale-recurrence unchanged at 7 confirmed instances. OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Session 10 refines but does not add new stage).
 

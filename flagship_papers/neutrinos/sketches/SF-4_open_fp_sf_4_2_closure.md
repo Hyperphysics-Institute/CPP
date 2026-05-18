@@ -741,7 +741,7 @@ Three pieces delivered:
 
 **Forward queue:**
 - **Session 72**: SF-4 v3.x paper integration — §5 K3-Cage-Shell Consistency Theorem rewrite incorporating joint closure with SM-5 op:nu_id RESOLVED; theorem registry candidates (3 sub-claim theorems + composite K3-Cage-Shell Coupling Theorem); CHANGELOG v3.1 or v4.0 entry; bibliography sf4_open_fp_sf_4_2_closure bibitem.
-- **Session 73**: SHIP mechanics + programme-level registration including SM-5 op:nu_id RESOLVED. Research_Frontier.md OPEN-FP-SF-4-2 entry to RESOLVED + SM-5 op:nu_id status update. paper_catalog.md SF-4 row v3.0 → v3.x or v4.0. INDEX.md SF-4 rows. flagship_papers/neutrinos/README.md status header. SM-5 paper companion update note (in series_standard_model/papers/development-SM-5.md or equivalent).
+- **Session 73**: SHIP mechanics + programme-level registration including SM-5 op:nu_id RESOLVED. research_frontier.md OPEN-FP-SF-4-2 entry to RESOLVED + SM-5 op:nu_id status update. paper_catalog.md SF-4 row v3.0 → v3.x or v4.0. INDEX.md SF-4 rows. flagship_papers/neutrinos/README.md status header. SM-5 paper companion update note (in series_standard_model/papers/development-SM-5.md or equivalent).
 
 **Document size at Session 71 close:** 12 sections + 10 findings + close, ~830 lines, growing monotonically across Sessions 68+.
 

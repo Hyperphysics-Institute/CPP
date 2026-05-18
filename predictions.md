@@ -1,6 +1,6 @@
 # CPP Predictions Registry
 
-**Repository location:** CPP root level (peer of `Research_Frontier.md`, `theorem-registry.md`)
+**Repository location:** CPP root level (peer of `research_frontier.md`, `theorem-registry.md`)
 **Last updated:** 16 May 2026 (Capotauro v1.0 SHIPPED Session 122 Patch 0415 / Session 123 Patch 0416A registry drift fix — NEW PRED-O-25 registered in Section 2: **parity-violation asymmetry $\Delta p_{LR} = \chi/6 = \phi^{-3}/6 \approx 0.0394$ on the K3-doublet** (Capotauro mechanism primary empirical prediction; CONFIRMED at structural-numerical level within 2% of empirical anchor $\sim 0.04$ from leptogenesis back-derivation; falsifier $\Delta p_{LR}$ outside $\pm 2\%$ of $\chi/6$ in direct measurement). Capotauro row added to Section 6 predictions-by-paper. Drift surfaced by §15 Step E per-registry audit at Patch 0416 retroactive handover construction: Patch 0415 v1.0 SHIP commit message's bundled "registers updated" framing missed predictions.md entry; fix scheduled at Patch 0416A before downstream Section A doc-suite production reads from drifty registry. Earlier 14 May 2026 (SF-2 v1.0 SHIPPED Session 83 close, Patch 0370 — four NEW SF-2 predictions registered in Section 2: PRED-O-21 mass-degeneracy $m_{W^0} = m_{W^\pm}$ within ~1 MeV (W⁰ catalyst framework structural prediction; CONFIRMED at parametric-scaling level by Companion §5.7 sensitivity scan), PRED-O-22 electroweak mass-gap (no new EW scalar below ~200 GeV; theorem-level from THEO-SF-2-4), PRED-O-23 W decay V-A structure at 75% from bracelet phase bias (structural preference, theorem-level closure registered as OPEN-FP-SF-2-CHIR), PRED-O-24 sensitivity-scan geometric constraint band $\|r_{33} - r_{3Q}\| \lesssim 0.18$ with $r_{33} \geq 0.85$ for Layer 4 continuum-EFT derivation. SF-2 row added to Section 6 predictions-by-paper. Earlier 26 April 2026 audit follow-up: PRED-C-21 reframed from "3 generations" accommodation to "Four bonded cage types" theorem (D-X); axiom-registry.md reconciled to mirror predictions.md classifications; swarm count 102→103, ratio 11.4×)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 
@@ -31,7 +31,7 @@ is the most honest measure of a theory's predictive power.
 
 ## Cumulative Swarm Tally
 
-**Cross-references:** PD-001 (`programmatic_decisions/PD-001-signature-thread-and-swarm-convention.md`) defines the required §4.1B "Swarm-Validation Contribution" subsection in every CPP paper. OPEN-ORG-003 (`Organizational_Frontier.md`) registered the requirement for this header. This section is the canonical running tally that §4.1B authors cite.
+**Cross-references:** PD-001 (`programmatic_decisions/PD-001-signature-thread-and-swarm-convention.md`) defines the required §4.1B "Swarm-Validation Contribution" subsection in every CPP paper. OPEN-ORG-003 (`organizational_frontier.md`) registered the requirement for this header. This section is the canonical running tally that §4.1B authors cite.
 
 **As of 2 May 2026 (post-Session 5 Phase 1: AME 2020 lookup completing PRED-O-19/PRED-O-20):**
 
@@ -214,7 +214,7 @@ either do not yet exist or are not yet sensitive enough to test them.
 **These are what CPP must get right to be taken seriously.**
 
 **Note (30 March 2026):** Predictions derived from Tier 3 propositions
-(see `Research_Frontier.md` §3) are marked [T3]. Predictions derived from Tier 4
+(see `research_frontier.md` §3) are marked [T3]. Predictions derived from Tier 4
 candidate mechanisms are marked [T4] and should be treated as
 directional predictions pending quantitative verification of the
 underlying proposition. The tier label reflects the maturity of the

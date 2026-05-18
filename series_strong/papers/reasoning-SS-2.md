@@ -368,7 +368,7 @@ The Sonnet items I declined with reasoning preserved in reviews-SS-2.md:
 ## Forward-looking pointers
 
 - **σ = M₀·zπ/(φ·l_edge) = 243 MeV/fm** is the derived string tension referenced by SS-4 (full string tension paper) and SS-5 (deuteron binding via base-to-base mechanism). Any future paper using σ as a parameter should cite SS-2 §8 (this session 8) as the derivation.
-- **l_unit = 0.589 fm** is the conversion constant for all subsequent CPP-to-SI conversions in the programme. Per Research_Frontier.md, this resolves OPEN-P-SD-lattice-scale.
+- **l_unit = 0.589 fm** is the conversion constant for all subsequent CPP-to-SI conversions in the programme. Per research_frontier.md, this resolves OPEN-P-SD-lattice-scale.
 - **ε = 1.94** (proton tetrahedral distortion) is the foundational distortion parameter that enters SS-4's z² face-mode multiplicity computation and SS-5's base-to-base contact geometry (where the K_3 face is quantitatively asymmetric — see `reasoning-SS-6.md` Session 4 for the Q_d body-frame/lab-frame consequences in the deuteron).
 - **The eCP linear-oscillator amplitude δ** (one fitted parameter for neutron r²_n) is registered as OPEN-SS-X (target paper deriving δ from Sea-DP coupled-oscillator dynamics; would close the last fitted parameter in nucleon structure).
 - **The eCP trading mechanism f_trade ≈ 0.04** is a heuristic in v1.0; promotion to a derived prediction would require time-domain simulation of −eCP capture/release dynamics in the up-quark vicinity. Likely target: SS-X with f_trade emerging from the same coupled-oscillator framework as δ.
@@ -387,7 +387,7 @@ The Sonnet items I declined with reasoning preserved in reviews-SS-2.md:
 - **`archive/SM-11 rename to SS-2 archive/`** — pre-rename artifacts preserving the SM-11-era versions of the paper, notebook, reviews, and v1.1 patch. Useful for tracking what the paper looked like immediately post-v1.0 production before the strong-sector rename.
 - **`archive/SM-11 rename to SS-2 archive/SM-11_development_transcript_opus.md`** — the SM-11-era development transcript, parallel to the current SS-2 transcript. The narrative arc is identical; only the paper-ID labels differ.
 - **`archive/SM-11 rename to SS-2 archive/SM-11_v1.1_patch.md`** — the 11-item v1.1 patch from the round-1 review cycle. Status of v1.1 application to the current SS-2 file should be verified before any further revisions; if not yet applied, this patch is the next-action artifact.
-- **`Research_Frontier.md`** — OPEN-P-SD-lattice-scale registered with l_unit = 0.589 fm as the resolved conversion. The σ formula is referenced from SS-4 and SS-5's strong-sector entries.
+- **`research_frontier.md`** — OPEN-P-SD-lattice-scale registered with l_unit = 0.589 fm as the resolved conversion. The σ formula is referenced from SS-4 and SS-5's strong-sector entries.
 - **`templates/operating_system.md` §11 "Version management"** and **§3 "Paper-type taxonomy"** — the version-nomenclature convention and paper-type-declaration protocol, both formalized during the SS-6 cycle (see `reasoning-SS-6.md`), apply retroactively to SS-2: SS-2 is a *derivation paper* (deriving lattice scale and nucleon structure from CPP primitives), the highest-confidence paper type.
 - **`founders_vision.md`** entries for the lattice-scale grounding (Session 1's framing as a programme-level epistemological commitment) and the σ derivation (Session 8's load-bearing chain).
 - **`CPP_the_theory.md`** — Kindle-book chapter prose for the lattice-scale grounding result.

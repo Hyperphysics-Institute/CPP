@@ -86,7 +86,7 @@ Both are exact. Both are derived from the same three-vertex equilateral base.
 
 ## Cross-References
 
-- **Research_Frontier.md entry:** THEO-SS-9 (§4 Recently Resolved, §5 Resolved Archive)
+- **research_frontier.md entry:** THEO-SS-9 (§4 Recently Resolved, §5 Resolved Archive)
 - **Related problems:** OPEN-SS-13 (ZBW mechanical confirmation of 1/3), OPEN-SM-7e (why N=3 vertices)
 - **Key connection:** THEO-SM-2 (K = 2/3 from same K₃)
 - **Development transcript:** `series_standard_model/development-transcripts/development_transcript_SM-1.md`

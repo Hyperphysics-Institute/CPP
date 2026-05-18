@@ -11,7 +11,7 @@
 
 ## §1. Context and target
 
-Per `SF-4_mechanism_selected.md` §4, the K3-Cage-Shell Consistency Theorem must establish that Candidate C with cage-shell assignment $V \in \{4, 12, 30\}$ produces neutrino mass eigenstates that align with the K3 graph eigenmodes at zeroth order, preserving SM-5's existing tribimaximal PMNS derivation rather than replacing it. The theorem is OPEN-FP-SF-4-2 in `Research_Frontier.md`, second-priority sub-problem under SF-4.
+Per `SF-4_mechanism_selected.md` §4, the K3-Cage-Shell Consistency Theorem must establish that Candidate C with cage-shell assignment $V \in \{4, 12, 30\}$ produces neutrino mass eigenstates that align with the K3 graph eigenmodes at zeroth order, preserving SM-5's existing tribimaximal PMNS derivation rather than replacing it. The theorem is OPEN-FP-SF-4-2 in `research_frontier.md`, second-priority sub-problem under SF-4.
 
 Without this theorem, the SF-4 paper cannot claim to extend SM-5's PMNS derivation; the existing tribimaximal result would have to be re-grounded from scratch, which is substantial additional cost and would weaken the SF-4 / SM-5 unified narrative.
 

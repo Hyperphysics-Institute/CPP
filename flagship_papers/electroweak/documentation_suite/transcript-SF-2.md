@@ -161,7 +161,7 @@
 - UPDATED: `theorem-registry.md` — SF-line section expanded 4 theorems + 1 prop + 1 lemma → 9 theorems + 7 propositions + 1 lemma; NEW THEO-SF-2-1 through THEO-SF-2-5 + PROP-SF-2-1 through PROP-SF-2-6; total theorem count 56 → 61
 - UPDATED: `master_glossary.md` — new "SF-2 v1.0 W⁰ catalyst framework terms" section with 10 entries
 - UPDATED: `predictions.md` — 4 new SF-2 predictions PRED-O-21 through PRED-O-24 in Section 2 + SF-2 row added to Section 6 predictions-by-paper
-- UPDATED: `Research_Frontier.md` — FP section advanced 2 → 8 problems with six new OPEN-FP-SF-2-* entries; last-updated header prepended with comprehensive Sessions 81-83 SF-2 v1.0 SHIPPED narrative
+- UPDATED: `research_frontier.md` — FP section advanced 2 → 8 problems with six new OPEN-FP-SF-2-* entries; last-updated header prepended with comprehensive Sessions 81-83 SF-2 v1.0 SHIPPED narrative
 - NEW: 6 PH-OPEN-FP-SF-2-*.md problem-history files (η, EWSB, loopfactor, shelldens, chaincomp, CHIR) ~97 lines each
 - CONJ-EW-W0 status advanced from "open conjecture" to "structurally derived and externally validated"
 - Problem inventory: 86 → 92 entries (6 new OPEN-FP-SF-2-*); 51 → 57 open

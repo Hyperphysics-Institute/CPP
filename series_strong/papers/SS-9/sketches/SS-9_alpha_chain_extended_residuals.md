@@ -160,7 +160,7 @@ If PRED-O-19 holds at $N_\alpha = 21$–$25$, the deltahedron-core / satellite-r
 
 **Methodologically parallel to OPEN-SS-32** (slip-plane mechanism for Regime B). Both are mechanism questions arising from clean residual-pattern observations in SS-7 Table 1; both ask how CPP primitives produce the observed empirical regime structure. May share Layer-3 ancestry under Pattern 6 (K$_3$ scale-recurrence) plus CPP lattice geometry under bound-state constraints.
 
-**Registration:** to be added to `Research_Frontier.md` as OPEN-SS-34 candidate (pending ratification). Companion to PRED-O-19 (the empirical pattern OPEN-SS-34 needs to derive).
+**Registration:** to be added to `research_frontier.md` as OPEN-SS-34 candidate (pending ratification). Companion to PRED-O-19 (the empirical pattern OPEN-SS-34 needs to derive).
 
 ---
 

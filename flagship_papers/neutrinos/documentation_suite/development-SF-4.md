@@ -40,7 +40,7 @@ The decision document covered:
 - The two open sub-derivations identified: OPEN-FP-SF-4-1 (suppression mechanism for absolute scale) and OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency at vertex-by-vertex level)
 - $\delta_{CP}$ posture: route (ii) selected (defer to SF-2 EW-sector flagship)
 
-Two open problems registered in `Research_Frontier.md`:
+Two open problems registered in `research_frontier.md`:
 - OPEN-FP-SF-4-1: Suppression mechanism Picture A formalization from CPP axioms A1–A11
 - OPEN-FP-SF-4-2: Vertex-by-vertex K3-coupling theorem; tied to SM-5 antibonding-doublet open problem
 
@@ -184,7 +184,7 @@ Five-pass review discipline complete (ChatGPT × 3 + Grok × 1 + Copilot × 1) w
 4. Four-tier documentation suite created (handover-SF-4.md, development-SF-4.md, transcript-SF-4.md, reasoning-SF-4.md)
 5. flagship_papers/SF-line_development_transcript.md §17 added covering Sessions 42–54
 6. INDEX.md and flagship_papers/neutrinos/README.md transitioned to v1.0 SHIPPED status
-7. Research_Frontier.md programme-state-changes captured
+7. research_frontier.md programme-state-changes captured
 
 Programme state changes from v1.0 SHIP:
 - Theorem registrations: THEO-SF-4-1, PROP-SF-4-2, THEO-SF-4-3 added (theorem count 52 → 54 + 1 proposition)
@@ -249,7 +249,7 @@ Session 60 lands the SF-4 v2.0 .tex source revision integrating the Sessions 55�
 
 ### Vignette 24: Session 61 — programme-level registration (in progress)
 
-Session 61 is the SHIP-mechanics session for SF-4 v2.0 at the programme level: (i) Research_Frontier.md OPEN-FP-SF-4-1 entry advanced from PARTIAL CLOSURE to ADVANCED; (ii) Research_Frontier.md last-updated header prepended with Sessions 55–60 entry; (iii) paper_catalog.md SF-4 row updated to v2.0 SHIPPED; (iv) handover-SF-4.md (this document's parent) updated to Session 60 v2.0 SHIP close; (v) development-SF-4.md (this file) Vignettes 18–24 added; (vi) transcript-SF-4.md per-session transactions Sessions 55–60 added; (vii) reasoning-SF-4.md Tier 4 reasoning capture pointer to working sketch document added; (viii) INDEX.md sf-4_neutrinos.tex/.pdf rows updated to v2.0 SHIPPED; (ix) flagship_papers/neutrinos/README.md v1.0 → v2.0 transition; (x) flagship_papers/SF-line_development_transcript.md §18 added covering Sessions 55–60. After Session 61, OPEN-FP-SF-4-1 Picture A axiomatic closure is fully RESOLVED at all levels (paper, sketch, documentation suite, programme registries).
+Session 61 is the SHIP-mechanics session for SF-4 v2.0 at the programme level: (i) research_frontier.md OPEN-FP-SF-4-1 entry advanced from PARTIAL CLOSURE to ADVANCED; (ii) research_frontier.md last-updated header prepended with Sessions 55–60 entry; (iii) paper_catalog.md SF-4 row updated to v2.0 SHIPPED; (iv) handover-SF-4.md (this document's parent) updated to Session 60 v2.0 SHIP close; (v) development-SF-4.md (this file) Vignettes 18–24 added; (vi) transcript-SF-4.md per-session transactions Sessions 55–60 added; (vii) reasoning-SF-4.md Tier 4 reasoning capture pointer to working sketch document added; (viii) INDEX.md sf-4_neutrinos.tex/.pdf rows updated to v2.0 SHIPPED; (ix) flagship_papers/neutrinos/README.md v1.0 → v2.0 transition; (x) flagship_papers/SF-line_development_transcript.md §18 added covering Sessions 55–60. After Session 61, OPEN-FP-SF-4-1 Picture A axiomatic closure is fully RESOLVED at all levels (paper, sketch, documentation suite, programme registries).
 
 ---
 
@@ -289,7 +289,7 @@ OPEN-FP-SF-4-2 (vertex-by-vertex K3-Cage-Shell Consistency at theorem level) had
 
 ### Vignette 21 — Sessions 73-74: programme-level registration + anthology chapter (patches 0334-0335)
 
-Session 73 (patch 0334) registered the v4.0 closure across programme-level documents: `theorem-registry.md` (3 new entries: THEO-SF-4-4, LEMMA-SF-4-1 anticipated, THEO-SF-4-5), `paper_catalog.md` (SF-4 row v3.0 → v4.0), `Research_Frontier.md` (OPEN-FP-SF-4-2 status PARTIAL CLOSURE → RESOLVED + SM-5 op:nu_id status OPEN → RESOLVED cross-sector). The registration was incomplete: theorem-registry.md did not yet receive the formal new entries (deferred to patch 0339). Session 74 (patch 0335) produced the SF-4 anthology chapter "Where Two Problems Met" at ~4630 words in Rovelli/SciAm register across 9 sections. The chapter narrates the cross-sector closure as the year's accumulating progress hitting an inflection point — two papers' open problems closing together via a single derivation chain. The Rovelli register handles the technical substance through accessible analogies (the K3 antibonding doublet as a degenerate pair lifted by external structure; the wavefunction-spread vs symmetry-character readings as two views of the same eigenstate content). Section 8 explicitly addresses what closed and what didn't: the conditional-closure framing is implicit through the FI enumeration ("six foundational inputs all elsewhere-derived").
+Session 73 (patch 0334) registered the v4.0 closure across programme-level documents: `theorem-registry.md` (3 new entries: THEO-SF-4-4, LEMMA-SF-4-1 anticipated, THEO-SF-4-5), `paper_catalog.md` (SF-4 row v3.0 → v4.0), `research_frontier.md` (OPEN-FP-SF-4-2 status PARTIAL CLOSURE → RESOLVED + SM-5 op:nu_id status OPEN → RESOLVED cross-sector). The registration was incomplete: theorem-registry.md did not yet receive the formal new entries (deferred to patch 0339). Session 74 (patch 0335) produced the SF-4 anthology chapter "Where Two Problems Met" at ~4630 words in Rovelli/SciAm register across 9 sections. The chapter narrates the cross-sector closure as the year's accumulating progress hitting an inflection point — two papers' open problems closing together via a single derivation chain. The Rovelli register handles the technical substance through accessible analogies (the K3 antibonding doublet as a degenerate pair lifted by external structure; the wavefunction-spread vs symmetry-character readings as two views of the same eigenstate content). Section 8 explicitly addresses what closed and what didn't: the conditional-closure framing is implicit through the FI enumeration ("six foundational inputs all elsewhere-derived").
 
 ### Vignette 22 — Session 75: v4.1 ChatGPT v4.0 review incorporation (patch 0336)
 

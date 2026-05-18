@@ -27,7 +27,7 @@ The parallel-window workflow rests on three observations:
 
 **(2) Patches naturally serialize into letter-suffix vs integer streams.** The documentation arc's patches are not numbered against the substantive physics work because they don't change scientific content — they are post-SHIP doc production. Letter-suffix patches (0416A, 0416B, ..., 0416M) are the natural namespace for the docs arc; integer-suffix patches (0417, 0418, ...) continue to serve the physics arc. The two namespaces compose without conflict so long as push-pull discipline on shared registry files holds.
 
-**(3) Shared-file conflict is rare and locally fixable.** The two workstreams touch mostly disjoint file sets — documentation files for the docs arc, working sketches and registry entries for the physics arc. The only realistic overlap is `changelog-capotauro.md` (and possibly `master_glossary.md`, `Research_Frontier.md`, or `theorem-registry.md`) if both arcs need register updates in the same window. The discipline that handles this is push-pull: whoever finishes a patch first pushes immediately; the other window pulls before its next patch.
+**(3) Shared-file conflict is rare and locally fixable.** The two workstreams touch mostly disjoint file sets — documentation files for the docs arc, working sketches and registry entries for the physics arc. The only realistic overlap is `changelog-capotauro.md` (and possibly `master_glossary.md`, `research_frontier.md`, or `theorem-registry.md`) if both arcs need register updates in the same window. The discipline that handles this is push-pull: whoever finishes a patch first pushes immediately; the other window pulls before its next patch.
 
 ## The push-pull discipline (developed across the Session 123 arc)
 
@@ -41,7 +41,7 @@ The parallel-window workflow with letter/integer namespacing and push-pull disci
 
 - Letter-suffix patches (N A, N B, N C, ... N Z, N AA, ...) for the documentation arc post-v1.0 SHIP
 - Integer-suffix patches (N+1, N+2, ...) for the substantive physics arc post-v1.0 SHIP
-- Push-pull discipline on shared registry files (`changelog-X.md`, `master_glossary.md`, `Research_Frontier.md`, `theorem-registry.md`)
+- Push-pull discipline on shared registry files (`changelog-X.md`, `master_glossary.md`, `research_frontier.md`, `theorem-registry.md`)
 - Each window's commit messages should restrict claims to what was true at the window's open, not what is currently true on origin
 - Apply-time `git log` inspection is the canonical signal for which patch is at HEAD when conflicts seem likely
 

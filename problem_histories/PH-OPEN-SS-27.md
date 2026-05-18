@@ -3,7 +3,7 @@
 **Problem:** OPEN-SS-27 — D2 (K₃-edge coupling at host vertex) derivation via A6′ extension
 **Status at time of this file:** OPEN (registered as paper-level conditional theorem in SS-8 v1.0; structural-derivation target deferred to a future paper, SS-9 candidate)
 **Sector:** SS (nuclear physics)
-**Location in registry:** `Research_Frontier.md` §1, Strong Sector (SS)
+**Location in registry:** `research_frontier.md` §1, Strong Sector (SS)
 **File created:** 26 April 2026
 **Purpose:** Record the extended narrative of OPEN-SS-27's registration during the SS-8 development cycle, the structural relationship to SS-7's per-edge $B_\text{pair}$ accounting, and the candidate derivation path via an A6′ extension framework.
 
@@ -25,9 +25,9 @@ This file records the registration narrative and the candidate derivation path. 
 |------|-------|----------|
 | 21 April 2026 | OPEN-SS-27 opened in H2′ derivation note §10 alongside OPEN-SS-26 and OPEN-SS-28 | `series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md` |
 | 22 April 2026 | Round 2 review of D1 sketch (Models A/B) implicitly invokes D2 — Model A's K₃-edge counting depends on D2 holding. ChatGPT and Copilot Round 2 reviews flag D2 as the next derivation target if Model A is the path forward for closing OPEN-SS-26 Level-3. | `series_strong/papers/SS-8/reviews/round2_chatgpt_on_D1_sketch.md`, `round2_copilot_on_review_request.md` |
-| 23 April 2026 | Formal `Research_Frontier.md` entry created for OPEN-SS-27 with priority MEDIUM-HIGH ("two-for-one — closure delivers D1 automatically via simplicial combinatorics under Model A") | `Research_Frontier.md` |
+| 23 April 2026 | Formal `research_frontier.md` entry created for OPEN-SS-27 with priority MEDIUM-HIGH ("two-for-one — closure delivers D1 automatically via simplicial combinatorics under Model A") | `research_frontier.md` |
 | 24 April 2026 | SS-8 v1.0 carries D2 as a paper-level structural hypothesis at proposition tier. Theorem `thm:h2prime` (the 2E/V scaling law, registered as THEO-SS-15 in `theorem-registry.md`) is conditional on D2 unchanged from this registration. | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` |
-| 26 April 2026 | OPEN-SS-27 paper reference cleaned to "SS-9 candidate (shares structural-polytope machinery with OPEN-SS-24)" per Session 1 high-priority registry update (patch 0027) | `Research_Frontier.md` |
+| 26 April 2026 | OPEN-SS-27 paper reference cleaned to "SS-9 candidate (shares structural-polytope machinery with OPEN-SS-24)" per Session 1 high-priority registry update (patch 0027) | `research_frontier.md` |
 
 ---
 
@@ -75,7 +75,7 @@ A paper closing OPEN-SS-27 would automatically also close most of OPEN-SS-26 (D1
 
 ## Cross-references
 
-- `Research_Frontier.md` § OPEN-SS-27 — the formal registry entry
+- `research_frontier.md` § OPEN-SS-27 — the formal registry entry
 - `axiom-registry.md` — A6′ definition; Pattern 6 scale recurrence observation
 - `theorem-registry.md` — THEO-SS-12 (Euler edges), THEO-SS-14 (D1 conditional), THEO-SS-15 (2E/V scaling) — all conditional on D2 in their current statements
 - `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` v1.0 §3 — D2 statement and discussion
@@ -85,4 +85,4 @@ A paper closing OPEN-SS-27 would automatically also close most of OPEN-SS-26 (D1
 
 ---
 
-*Problem history file maintained per `templates/Research_Frontier_Architecture.md` problem-history format. Append new dated entries to the timeline as the problem evolves; do not retroactively edit prior entries.*
+*Problem history file maintained per `templates/research_frontier_architecture.md` problem-history format. Append new dated entries to the timeline as the problem evolves; do not retroactively edit prior entries.*

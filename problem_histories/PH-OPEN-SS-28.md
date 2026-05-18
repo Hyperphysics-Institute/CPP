@@ -3,7 +3,7 @@
 **Problem:** OPEN-SS-28 — D3 (bulk-regime averaging) derivation + residual decomposition without hidden mechanisms
 **Status at time of this file:** OPEN (registered as paper-level conditional theorem in SS-8 v1.0; structural derivation + residual-decomposition target deferred to a future paper)
 **Sector:** SS (nuclear physics)
-**Location in registry:** `Research_Frontier.md` §1, Strong Sector (SS)
+**Location in registry:** `research_frontier.md` §1, Strong Sector (SS)
 **File created:** 26 April 2026
 **Purpose:** Record the extended narrative of OPEN-SS-28's registration during the SS-8 development cycle, the empirical signature of D3's degradation as $N_\text{ex}/V$ grows, and the candidate scope for a derivation that delivers explicit error bounds and a residual decomposition without hidden mechanisms absorbed into "pairing bonus" terminology.
 
@@ -26,9 +26,9 @@ This file records the registration narrative and the candidate scope.
 | 21 April 2026 | OPEN-SS-28 opened in H2′ derivation note §10 alongside OPEN-SS-26 and OPEN-SS-28 | `series_strong/papers/SS-8/sketches/SS-8_H2prime_derivation_note.md` |
 | 22 April 2026 | Round 2 review of D1 sketch flags D3 as the load-bearing quantitative approximation. Copilot's review specifically requests an explicit treatment of where D3 breaks down (adopted into v0.2's primary/secondary split). | `series_strong/papers/SS-8/reviews/round2_copilot_on_review_request.md` |
 | 22 April 2026 | Phase 1b empirical map (`ss8_empirical_map_extended.py` output) catalogues residuals across $N_\alpha \in \{6, 8, 10, 12, 14\}$ × $N_\text{ex} \in \{3, \ldots, 8\}$ — 26 of 30 cells with current data, 4 cells data-pending. Residuals 8–15%, systematically negative. | `series_strong/papers/SS-8/sketches/SS-8_Phase1_extended_map_findings.md` |
-| 23 April 2026 | Formal `Research_Frontier.md` entry created for OPEN-SS-28 with priority MEDIUM. Three identified residual mechanisms registered: H3′ opposite-polarity pair bonus, H4′ Pauli decrement at higher $N_\text{ex}$, H5′ small-polytope attenuation. | `Research_Frontier.md` |
+| 23 April 2026 | Formal `research_frontier.md` entry created for OPEN-SS-28 with priority MEDIUM. Three identified residual mechanisms registered: H3′ opposite-polarity pair bonus, H4′ Pauli decrement at higher $N_\text{ex}$, H5′ small-polytope attenuation. | `research_frontier.md` |
 | 24 April 2026 | SS-8 v1.0 §5 secondary content explicitly bounds the 8–15% precision band as OPEN-SS-28-attributable degradation. The §5 result stands independently of any §4 outcome. | `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` |
-| 26 April 2026 | OPEN-SS-28 paper reference cleaned to "Target paper: SS-9 candidate or later" per Session 1 high-priority registry update (patch 0027) | `Research_Frontier.md` |
+| 26 April 2026 | OPEN-SS-28 paper reference cleaned to "Target paper: SS-9 candidate or later" per Session 1 high-priority registry update (patch 0027) | `research_frontier.md` |
 
 ---
 
@@ -90,7 +90,7 @@ A paper would need to:
 
 ## Cross-references
 
-- `Research_Frontier.md` § OPEN-SS-28 — the formal registry entry
+- `research_frontier.md` § OPEN-SS-28 — the formal registry entry
 - `axiom-registry.md` — Pattern 6 scale recurrence observation; SS-5 same-polarity ratio source
 - `theorem-registry.md` — THEO-SS-15 (2E/V scaling) — current statement is "conditional on D3"
 - `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` v1.0 §5 — secondary 30-cell extension and OPEN-SS-28 attribution
@@ -101,4 +101,4 @@ A paper would need to:
 
 ---
 
-*Problem history file maintained per `templates/Research_Frontier_Architecture.md` problem-history format. Append new dated entries to the timeline as the problem evolves; do not retroactively edit prior entries.*
+*Problem history file maintained per `templates/research_frontier_architecture.md` problem-history format. Append new dated entries to the timeline as the problem evolves; do not retroactively edit prior entries.*

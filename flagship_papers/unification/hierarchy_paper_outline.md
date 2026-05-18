@@ -234,7 +234,7 @@ Estimated 5-8 sessions total; could go to 10 if Open Question 1 (Option C) chose
 ## Cross-references
 
 - Strategic frame: `/CPP/research_priorities.md`
-- Programme frontier: `/CPP/Research_Frontier.md`
+- Programme frontier: `/CPP/research_frontier.md`
 - Source papers: `series_standard_model/papers/SM-2_*.tex` through `SM-10_*.tex`
 - Anthology source: `book_project/CPP_the_theory.md` (axiom set, sector overview)
 - Reviewer methodology precedent: `series_strong/papers/SS-9/` (SS-9 SHIP package)

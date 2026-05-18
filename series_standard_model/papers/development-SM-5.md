@@ -40,7 +40,7 @@ Potential future applications of the cross-sector closure pattern:
 
 - Full derivation: `flagship_papers/neutrinos/sketches/SF-4_open_fp_sf_4_2_closure.md` (750 lines, 12 sections + 10 findings + close)
 - Paper integration: SF-4 v4.0 §5 (especially §5.7 NEW Composite K3-Cage-Shell Coupling Theorem; Theorem thm:k3_cage_shell_coupling)
-- Programme registries: `Research_Frontier.md` OPEN-FP-SF-4-2 entry RESOLVED at v4.0; `paper_catalog.md` SF-4 row at v4.0
+- Programme registries: `research_frontier.md` OPEN-FP-SF-4-2 entry RESOLVED at v4.0; `paper_catalog.md` SF-4 row at v4.0
 - Patches: 0329 (Session 68 launch) → 0330 (Session 69 sub-claim (a) closure) → 0331 (Session 70 sub-claims (b)(c) closure) → 0332 (Session 71 verification flag discharge + composite theorem) → 0333 (Session 72 SF-4 v4.0 paper integration) → 0334 (Session 73 programme-level registration this patch)
 
 ---

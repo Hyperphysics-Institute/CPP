@@ -1,16 +1,16 @@
 # CPP Organizational Frontier
 
-**Location:** `/CPP/Organizational_Frontier.md`
+**Location:** `/CPP/organizational_frontier.md`
 **Last updated:** 17 May 2026 (Session 130 handover, Patch 0426: OPEN-ORG-015 registered — terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence documented; workaround candidate `git commit -F message-file.txt`.) Earlier: 5 May 2026 (Session 13 close: OPEN-ORG-014 registered AND resolved in the same session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; demonstrated via inaugural `handover-SS-9.md`. Mirrors OPEN-ORG-013's same-session register-and-resolve pattern.)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Rationale:** See `programmatic_decisions/PD-003-organizational-frontier-registry.md`
-**Companion registry:** `Research_Frontier.md` (theoretical/physics problems)
+**Companion registry:** `research_frontier.md` (theoretical/physics problems)
 
 ---
 
 ## Purpose
 
-Single-source-of-truth registry for organizational, infrastructural, and governance-level improvement items that have been identified during CPP programme work but have not yet been acted on. Parallels `Research_Frontier.md` in structure, but scoped to organizational concerns rather than theoretical ones.
+Single-source-of-truth registry for organizational, infrastructural, and governance-level improvement items that have been identified during CPP programme work but have not yet been acted on. Parallels `research_frontier.md` in structure, but scoped to organizational concerns rather than theoretical ones.
 
 **Answers the questions:**
 - *What good ideas for programme improvement have been identified but not yet executed?*
@@ -43,7 +43,7 @@ The critical discipline is that entries are written with enough fidelity that a 
 
 ### Maintenance cadence
 
-- **Reviewed at each paper's v1.0 completion milestone** alongside `Research_Frontier.md`.
+- **Reviewed at each paper's v1.0 completion milestone** alongside `research_frontier.md`.
 - **Reviewed at each session close** as part of the "pending for next session" handover — but the handover becomes a short pointer to this file, not a content duplication. Session handover reads: "OPEN-ORG entries current; OPEN-ORG-NN and OPEN-ORG-MM became workable this session; deferred to next available gap."
 - **Closure protocol:** resolved entries stay in the file under §3 (Resolved) for historical reference rather than being deleted. Successful closures accumulate as evidence the registry works.
 
@@ -236,7 +236,7 @@ Investigation confirmed each of these IS documented somewhere, but the documenta
 - `bootup.md` does direct sessions to read `operating_system.md` (Step 1, priority 7), where the workflow-manual including §13 Git-Bash-Patch is found. So the command pattern is documented.
 - `bootup.md` §8.5 ("Active Work Pointer") correctly directs sessions to the per-paper-subfolder handover document (`papers/[PAPER-ID]/documentation_suite/handover-[PAPER-ID].md`).
 - However, `bootup.md`'s "Step 2: Check what happened last" block (in the top "How to Use This File" section, which a top-to-bottom reader hits first) still points at the *legacy-flat* URL (`papers/development-[ID].md`) rather than the current-convention handover URL. A new-session-Claude reading top-to-bottom hits the wrong URL first; §8.5 corrects course only if the reader gets that far.
-- `operating_system.md`'s priority-7 placement in `bootup.md` Step 1 means session-start Claude reads `CPP_the_theory.md` (15 min), `theory-overview.md` (5 min), `founders_vision.md` (10 min), `Research_Frontier.md` (10 min), and `theorem-registry.md` (5 min) — totalling 45 minutes — before reaching the workflow manual where the Git-Bash command pattern lives. For a session that opens with substantive work rather than physics orientation, this ordering may be inverted from what's optimal.
+- `operating_system.md`'s priority-7 placement in `bootup.md` Step 1 means session-start Claude reads `CPP_the_theory.md` (15 min), `theory-overview.md` (5 min), `founders_vision.md` (10 min), `research_frontier.md` (10 min), and `theorem-registry.md` (5 min) — totalling 45 minutes — before reaching the workflow manual where the Git-Bash command pattern lives. For a session that opens with substantive work rather than physics orientation, this ordering may be inverted from what's optimal.
 - The `templates/AI_team_expectations.md` (priority 8) is even later, but contains conventions around per-AI working patterns that future-Claude needs early.
 
 **Problem:** Same root-cause class as OPEN-ORG-008 (handover-protocol trigger failure): a protocol or instruction set exists on paper but does not reliably fire because of visibility/active-working-set issues. The specific failure-modes here:
@@ -474,7 +474,7 @@ Plus updates to:
 
 **Demonstration:** Patch 0169 also produces the actual `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` for Session 13 close as the inaugural Step H artifact, demonstrating the 8-step protocol end-to-end and providing the next-session paste-doc that is the visible benefit of the restructure.
 
-**Closing commit reference:** patch 0169 in this same session, immediately following the OPEN-ORG-014-precedent patch 0168 (Tier 2 + Tier 4 retrospective closure for Session 13). Single sandbox commit modifies `templates/operating_system.md` (§15 substantial restructure), `bootup.md` (Row 7 annotation extension), `Organizational_Frontier.md` (this entry's status block), and creates `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (inaugural Step H). Also updates `future_projects.md` (the long-stale file flagged in the same audit that surfaced OPEN-ORG-014).
+**Closing commit reference:** patch 0169 in this same session, immediately following the OPEN-ORG-014-precedent patch 0168 (Tier 2 + Tier 4 retrospective closure for Session 13). Single sandbox commit modifies `templates/operating_system.md` (§15 substantial restructure), `bootup.md` (Row 7 annotation extension), `organizational_frontier.md` (this entry's status block), and creates `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (inaugural Step H). Also updates `future_projects.md` (the long-stale file flagged in the same audit that surfaced OPEN-ORG-014).
 
 **Cycle time:** Surfaced at Session 13 close after the Tier 2/4 gap was discovered; resolved in the immediately following patch 0169 within the same conversation context window. Same-session register-and-resolve pattern, mirroring OPEN-ORG-013.
 
@@ -512,7 +512,7 @@ The two edits together convert "structural visibility failure" into "discoverabl
 
 **Estimated effort:** 30–60 minutes focused work. Single-session-tractable. Mechanical — no new content, only restructuring existing content with a section-title callout and one new annotation column. The renumbering cascade is the largest source of edit volume; cross-references inside `bootup.md` itself need sweeping (e.g., the existing back-pointer on line 75 mentioning "see the Step 0 block in the 'How to Use This File' section above" is unaffected, but any internal `§2.X` references to the old subsection numbering must update).
 
-**Cross-references requiring sweep after restructure:** None known outside `bootup.md` itself. The `templates/operating_system.md` and `Organizational_Frontier.md` reference `bootup.md` by name only, not by section number. A grep for `bootup.md.*§` across the repo before commit confirms zero external section-number dependencies.
+**Cross-references requiring sweep after restructure:** None known outside `bootup.md` itself. The `templates/operating_system.md` and `organizational_frontier.md` reference `bootup.md` by name only, not by section number. A grep for `bootup.md.*§` across the repo before commit confirms zero external section-number dependencies.
 
 **Trigger condition:** Any session with ~30–60 minutes of organizational capacity at session close (typical end-of-session housekeeping window). No physics-blocking dependency. **Anti-trigger:** Do not initiate at session-mid; this is a structural restructure of the file every session reads first, and a botched restructure during physics work would compound the failure mode it is meant to fix. Best executed as a dedicated end-of-session organizational deliverable or as the opening item of a low-physics-throughput session.
 
@@ -525,13 +525,13 @@ The two edits together convert "structural visibility failure" into "discoverabl
 
 2. **Step 1 priority table extended** with a "Don't skip" annotation column. Row 1 (`bootup.md` itself) carries the explicit annotation: "**§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`." Row 7 (`templates/operating_system.md`) gets an annotation pointing to its §4 (Four-Tier Documentation Discipline). Other rows marked "—" since their full content is the relevant material.
 
-3. **`Organizational_Frontier.md` Step-1 advisory added** below the priority table directing fresh sessions to scan `Organizational_Frontier.md` §1 for any open organizational items that may bear on the current session — surfaces deferred items like OPEN-ORG-012 at the entry point.
+3. **`organizational_frontier.md` Step-1 advisory added** below the priority table directing fresh sessions to scan `organizational_frontier.md` §1 for any open organizational items that may bear on the current session — surfaces deferred items like OPEN-ORG-012 at the entry point.
 
 4. **§2 forward-pointer added** at the end of §2 (Repository Location and Access) directing readers to §3 for patch-and-apply workflow: "**For Claude-generated patches and Thomas's apply workflow**, see §3 below..." — closes the structural-visibility gap from the inside as well.
 
-5. **Cascade renumbering completed** for all sections: §3.5 → §4.5, §4 → §5, §5 → §6, §6 → §7, §7 → §8, §8 → §9, §8.5 → §9.5, §9 → §10, §10 → §11, §11 → §12, §12 → §13, §13 → §14. All eight internal §-cross-references inside `bootup.md` updated to the new numbering. External cross-references to `templates/operating_system.md` §4, §10 and `Research_Frontier.md` §5 left unchanged (those refer to other files' section structures, unaffected by `bootup.md` renumber).
+5. **Cascade renumbering completed** for all sections: §3.5 → §4.5, §4 → §5, §5 → §6, §6 → §7, §7 → §8, §8 → §9, §8.5 → §9.5, §9 → §10, §10 → §11, §11 → §12, §12 → §13, §13 → §14. All eight internal §-cross-references inside `bootup.md` updated to the new numbering. External cross-references to `templates/operating_system.md` §4, §10 and `research_frontier.md` §5 left unchanged (those refer to other files' section structures, unaffected by `bootup.md` renumber).
 
-**Closing commit reference:** patch 0167 in this same session, immediately following the registration patch 0166. Single sandbox commit modifies `bootup.md` (~80 line additions, ~33 line deletions, plus 13 section-header renumbers and 8 internal cross-reference updates) and `Organizational_Frontier.md` (this entry's status change, resolution-as-adopted block addition, history event addition, header timestamp update).
+**Closing commit reference:** patch 0167 in this same session, immediately following the registration patch 0166. Single sandbox commit modifies `bootup.md` (~80 line additions, ~33 line deletions, plus 13 section-header renumbers and 8 internal cross-reference updates) and `organizational_frontier.md` (this entry's status change, resolution-as-adopted block addition, history event addition, header timestamp update).
 
 **Cycle time:** Registered at Session 13 close (patch 0166) and resolved in the immediately following commit (patch 0167) within the same conversation context window. The same-session register-then-resolve pattern is the strongest possible closure on a recurring failure mode — the bootup file the next fresh session reads is now restructured before that session begins.
 
@@ -567,7 +567,7 @@ All four were Claude-side execution failures, not protocol specification failure
 
 **Additional gap closed during resolution:** the four-item checklist was extended to name `handover-[S]-[N].md` alongside `development-[S]-[N].md` in item 1, with explicit distinction of their roles (backward-looking record vs. forward-looking orientation document). This addressed the actual failure-mode language Thomas used at the originating session close. The `handover-[S]-[N].md` artifact had been implicitly required by the session-close workflow (one was authored for SS-8 in patch 0011) but was not codified anywhere as a checklist item, leaving its production dependent on memory rather than protocol.
 
-**Closing commit reference:** patch 0013 in this session, immediately following SS-8 v1.0 patch 0012. Single sandbox commit modifies `templates/operating_system.md` (TOC + §1 cross-ref + §10 back-pointer + new §15 + footer update) and `Organizational_Frontier.md` (this entry's status change and relocation; §4 statistics update).
+**Closing commit reference:** patch 0013 in this session, immediately following SS-8 v1.0 patch 0012. Single sandbox commit modifies `templates/operating_system.md` (TOC + §1 cross-ref + §10 back-pointer + new §15 + footer update) and `organizational_frontier.md` (this entry's status change and relocation; §4 statistics update).
 
 **History:**
 - 24 Apr 2026 — Handover-protocol failure-mode diagnosed at session close; Thomas surfaced the gap after noticing development artifacts were not being generated; dual-trigger fix designed during session-close conversation. Registered as OPEN-ORG-008 during the handover-preservation patch itself (patch 0011).

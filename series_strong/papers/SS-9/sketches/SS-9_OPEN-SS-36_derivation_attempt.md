@@ -6,7 +6,7 @@
 **Companion files:**
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-34_derivation_attempt.md` (the third sub-arc with the constant-$\sqrt{3}$ claim that this work corrects)
 - `series_strong/papers/SS-9/sketches/SS-9_PRED-O-19_verification.md` (the empirical anchors)
-- `Research_Frontier.md` OPEN-SS-36 entry (the question)
+- `research_frontier.md` OPEN-SS-36 entry (the question)
 
 **Net programme effect:** The constant-$\sqrt{3}$ form is RETIRED as an over-claim; a refined decomposition $B_{\rm slip}(N_\alpha) = B_{\rm pair} + B_{\rm shell}(N_\alpha)$ replaces it. The $+B_{\rm pair}$ closure piece is fully derivable from SS-5's mechanism. The $B_{\rm shell}(N_\alpha)$ piece — which empirically grows from $0.51 \, B_{\rm pair}$ at ${}^{56}$Ni to $0.94 \, B_{\rm pair}$ at ${}^{88}$Ru — is now identified as the load-bearing dependency on **OPEN-SS-35** (shell-magic-number sequence from CPP). OPEN-SS-36 closure therefore *depends on* OPEN-SS-35 closure, not vice versa. This is a structural simplification of the open-problem dependency graph.
 

@@ -90,7 +90,7 @@ The facts go where they go. There is no strategy. Tell it as it was.
 - **Appendix A: Meeting the Papers** — A guided tour of the CPP paper series for readers who want to read the technical work after finishing TATWD. Ordered for pedagogical progression, not publication order.
 - **Appendix B: How to Check Us** — Instructions for a reader who wants to verify a specific prediction. Where to find the verification notebooks. What the numbers mean. How to spot a bad calibration dressed as a prediction.
 - **Appendix C: Glossary of Key Terms** — polytope, golden ratio, Conscious Point, Grid Point, dipole sea, SSV, Nexus, K₃ face, simplicial polytope, and others. Short definitions, concrete where possible.
-- **Appendix D: Open Problems** — The registered OPEN-* entries translated into natural language. A reader-friendly version of Research_Frontier.md.
+- **Appendix D: Open Problems** — The registered OPEN-* entries translated into natural language. A reader-friendly version of research_frontier.md.
 - **Appendix E: On Altered States and Scientific Work** — A brief, careful appendix addressing the question any thoughtful reader will ask after reading Chapter 4. Why the 1987 experience was generative despite its substrate. Why reproducing the experience is not recommended, and why the programme's output does not depend on anyone believing the experience was veridical in order to evaluate the physics. A place for Thomas to say in his own voice what he would want a young seeker to hear.
 
 ---
@@ -143,7 +143,7 @@ Each chapter pulls from specific technical sources:
 | 12 | hyperphysics.com falsifications table; CHANGELOG entries across papers; archive/ directory | — |
 | 13 | relationship_protocol.md; reviews-*.md files; development transcripts | — |
 | 14 | relationship_protocol.md; SS-7_v1.1_G3_discrepancy_note.md | — |
-| 15 | Research_Frontier.md (current OPEN-* state including OPEN-SS-29/30/33/37 from the SS-9 sub-conditions); future_projects.md; problem_histories/PH-OPEN-SS-22.md (retirement) and PH-OPEN-SS-24.md (conditional closure) | — |
+| 15 | research_frontier.md (current OPEN-* state including OPEN-SS-29/30/33/37 from the SS-9 sub-conditions); future_projects.md; problem_histories/PH-OPEN-SS-22.md (retirement) and PH-OPEN-SS-24.md (conditional closure) | — |
 | 16-18 | Synthesis; no specific source paper | All of the above |
 
 The PL-summaries are not chapters. They are *pre-digested source material* that makes writing each chapter faster and more consistent. A chapter like Chapter 9 might draw from lay-summary-SS-2, lay-summary-SS-5, and lay-summary-SS-7 — weaving the three into a single narrative — but it is its own text, not a concatenation.

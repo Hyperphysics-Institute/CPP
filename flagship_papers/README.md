@@ -60,9 +60,9 @@ SF-line papers collectively address all 17 SM particles plus several novel CPP p
 
 Quantitative-prediction count across the SF-line: 16 masses (12 fermion + 3 cage-boson + 1 W⁰), 9 masslessness predictions (1 photon + ~8 SM-equivalent gluon types from CPP gluon-counting), and the cross-sector mixing parameters (PMNS in SF-4, CKM in SF-3, EW phases in SF-2). The "12 fermion masses from one calibration" headline frames the SF-1/SF-3/SF-4 fermion-mass subset specifically; the full SF-line addresses ~33 quantitative predictions.
 
-**On the gluon counting:** the CPP claim is that there are not 8 distinct gluon types but rather different bonding relationships between the 4 tetrahedral vertices upon which a baryon forms; the SM SU(3) octet is a phenomenological dressing of this 4-vertex structure. This is registered as CONJ-SS-Gluon-4Vertex in `Research_Frontier.md` and is a substantive falsifiable claim addressed in SF-5.
+**On the gluon counting:** the CPP claim is that there are not 8 distinct gluon types but rather different bonding relationships between the 4 tetrahedral vertices upon which a baryon forms; the SM SU(3) octet is a phenomenological dressing of this 4-vertex structure. This is registered as CONJ-SS-Gluon-4Vertex in `research_frontier.md` and is a substantive falsifiable claim addressed in SF-5.
 
-**On the W⁰:** a novel CPP prediction. The W⁰ is a neutral massive boson with a bracelet-shaped/open-configuration cage structure, distinct from the icosahedral Z. It functions as a catalyst substrate for SM particle transformations: an electron or positron binds to the W⁰ to create the W± charged states. This is registered as CONJ-EW-W0 in `Research_Frontier.md`. Experimental signature is a derivation target in SF-2.
+**On the W⁰:** a novel CPP prediction. The W⁰ is a neutral massive boson with a bracelet-shaped/open-configuration cage structure, distinct from the icosahedral Z. It functions as a catalyst substrate for SM particle transformations: an electron or positron binds to the W⁰ to create the W± charged states. This is registered as CONJ-EW-W0 in `research_frontier.md`. Experimental signature is a derivation target in SF-2.
 
 ## Other flagship paper candidates (separate from the SF-line)
 

@@ -58,7 +58,7 @@ The argument turned on what category of paper the hierarchy paper actually is. T
 
 The same logic applies to Tracks 2–4 and reinforces the case. Track 3 (eight-experiment manifesto audit) and Track 4 (cross-cutting unification paper) are inherently cross-disciplinary; forcing them into a series taxonomy distorts what they are. Track 2 (whichever anomaly we land on — cosmological constant, muon g-2, $\Lambda_{QCD}$, etc.) is also cross-cutting in source material. The folder is the natural home for all four.
 
-On naming, three candidates were weighed: `flagship_papers/` (standard physics-publishing register; senior reviewers immediately understand "flagship"), `known_unknowns/` (honest and specific about what these papers target), `frontier_papers/` (connects to the existing `Research_Frontier.md` taxonomy). Thomas's response captured the trade-off precisely: "The most descriptive name is known-unknowns. The one that will attract attention is flagship_papers. Let's go with that, since unification papers may not be in the known_unknown category." The "apex artifacts" framing was preserved in the folder README opening line so the strategic role stays visible in documentation while the folder name reads as professional convention.
+On naming, three candidates were weighed: `flagship_papers/` (standard physics-publishing register; senior reviewers immediately understand "flagship"), `known_unknowns/` (honest and specific about what these papers target), `frontier_papers/` (connects to the existing `research_frontier.md` taxonomy). Thomas's response captured the trade-off precisely: "The most descriptive name is known-unknowns. The one that will attract attention is flagship_papers. Let's go with that, since unification papers may not be in the known_unknown category." The "apex artifacts" framing was preserved in the folder README opening line so the strategic role stays visible in documentation while the folder name reads as professional convention.
 
 Timing question: set up the structure now (during drafting) or wait until Track 1 v1.0 SHIP and promote then? Decision: now. Establishing the flagship category during drafting reinforces writing for the flagship audience rather than slipping into series-paper habits, and it makes the structural decision visible in the repo while it is fresh rather than executed under v1.0-ship time pressure.
 
@@ -194,7 +194,7 @@ I declined to wave the idea off — it had real merit, and the strategic insight
 
 1. **Serial bottleneck on strategic decisions.** Calibration architecture (single $m_e$ vs multiple), $\delta_{CP}$ posture, inclusion-criterion application across papers, conditional-theorem inheritance scope (Q2), headline number framing — these decisions must be coherent across all four SF papers. Four parallel windows cannot make these calls independently; they queue on Thomas. Amdahl's law applies: the serial portion caps the speedup regardless of how many windows are open. The parts that benefit from parallelism are the local-domain work (LaTeX writing, per-paper documentation suites, mechanism-specific derivation sub-steps); the parts that need Thomas serially are the same whether he has 1 window or 4.
 
-2. **Patch conflicts on shared infrastructure.** Each SF window primarily touches its own folder, which is good. But shared files — top-level README, INDEX.md, research_priorities.md, paper_catalog.md, theorem-registry.md, Research_Frontier.md — get touched whenever any SF makes progress. If Window A and Window B both produce patches against `research_priorities.md` based on different states, the second `git am` fails or produces conflicts. Manageable but adds operational overhead Thomas does not currently have.
+2. **Patch conflicts on shared infrastructure.** Each SF window primarily touches its own folder, which is good. But shared files — top-level README, INDEX.md, research_priorities.md, paper_catalog.md, theorem-registry.md, research_frontier.md — get touched whenever any SF makes progress. If Window A and Window B both produce patches against `research_priorities.md` based on different states, the second `git am` fails or produces conflicts. Manageable but adds operational overhead Thomas does not currently have.
 
 3. **Re-cloning transfers corpus state, not conversational state.** Re-cloning picks up other windows' completed patches — that's real cross-pollination of artifacts. But it doesn't transfer the *reasoning that produced those artifacts*. Window B reading Window A's patch sees what was decided, not why or what alternatives were considered. The fix is discipline: land conversational insights in shared corpus (sketches, documentation suites, audit-style appendices) so re-cloning *does* transfer them. This is exactly the SS-9 four-tier sketches → development → paper-text discipline applied to inter-window coordination.
 
@@ -317,7 +317,7 @@ Two substantive things in Thomas's message needed independent registration:
 
 **The no-8-gluons claim.** The CPP claim that the 8-fold SU(3) gluon octet is phenomenological dressing of a smaller underlying 4-tetrahedral-vertex bonding-relationship structure — registered as **CONJ-SS-Gluon-4Vertex** (sector SS + FP/SF-5; HIGH priority) with derivation targets: (a) substrate-level enumeration of distinct bonding relationships at the 4 baryon vertices, (b) mapping from CPP bonding-relationship structure to SM SU(3) octet phenomenology, (c) divergence predictions where the two pictures might be experimentally distinguishable.
 
-Both registrations live in `Research_Frontier.md` §2 (CONJ); these are the two CPP claims most directly at stake when SF-5 and SF-6 ship.
+Both registrations live in `research_frontier.md` §2 (CONJ); these are the two CPP claims most directly at stake when SF-5 and SF-6 ship.
 
 ### §16.5 Decision and choice (a) adoption
 
@@ -333,7 +333,7 @@ Thomas confirmed: "Please proceed with choice (a), full agreement with strategy.
 
 ### §16.6 Texture observations from §16
 
-**Thomas's CPP physical-content paragraphs are programme-level inputs.** The W⁰ description (bracelet/open-configuration cage, catalyst role) and the gluon description (4-tetrahedral-vertex bonding relationships, not 8 octet types) and the glueball description (neutral spherical mass of qDPs) and the photon description (polarized eDP volume) are all substantive physical claims that hadn't been fully systematized in the corpus before Session 41. They appeared in the conversation as Thomas-side physical-intuition input and got immediately registered as CONJ entries — that is the pattern to repeat going forward. When Thomas drops physical content in conversation, register it in `Research_Frontier.md` immediately rather than leaving it to memory or later patches.
+**Thomas's CPP physical-content paragraphs are programme-level inputs.** The W⁰ description (bracelet/open-configuration cage, catalyst role) and the gluon description (4-tetrahedral-vertex bonding relationships, not 8 octet types) and the glueball description (neutral spherical mass of qDPs) and the photon description (polarized eDP volume) are all substantive physical claims that hadn't been fully systematized in the corpus before Session 41. They appeared in the conversation as Thomas-side physical-intuition input and got immediately registered as CONJ entries — that is the pattern to repeat going forward. When Thomas drops physical content in conversation, register it in `research_frontier.md` immediately rather than leaving it to memory or later patches.
 
 **The structural-symmetry argument is a generalizable architectural test.** "If we separate X for being in category A, we should separate Y for the same reason" is the test that surfaced the photon/gluon distinction. Future architectural decisions in the SF-line and elsewhere should explicitly run this symmetry test — when one element is separated for a reason, all elements that share the reason should be separated for consistency.
 
@@ -421,7 +421,7 @@ Patch 0314 SHIP mechanics:
 7. flagship_papers/SF-line_development_transcript.md: §17 added (this section)
 8. INDEX.md: SF-4 .tex/.pdf rows updated from "v0.9" to "v1.0 SHIPPED Session 54 patch 0314"
 9. flagship_papers/neutrinos/README.md: transitioned from "v1.0-promotion-ready" to "v1.0 SHIPPED Session 54"
-10. Research_Frontier.md: programme-state-changes captured in Last-updated header
+10. research_frontier.md: programme-state-changes captured in Last-updated header
 
 Programme state changes from v1.0 SHIP:
 - Theorem registrations: THEO-SF-4-1, PROP-SF-4-2, THEO-SF-4-3 added; theorem count 52 → 54 (+ 1 proposition)

@@ -107,7 +107,7 @@ Plus programme-level registries updated (per the registers-freeze pattern; SS-9 
 - `theorem-registry.md` SF-line section updated
 - `master_glossary.md` per-paper terminology section appended
 - `predictions.md` Section 2 + Section 6 per-paper entries added
-- `Research_Frontier.md` per-paper OPEN-FP entries + last-updated header
+- `research_frontier.md` per-paper OPEN-FP entries + last-updated header
 - Per-OPEN-FP `problem_histories/PH-OPEN-FP-*.md` files created
 - `paper_catalog.md` per-paper row + Documentation paragraph
 - `INDEX.md` per-paper row

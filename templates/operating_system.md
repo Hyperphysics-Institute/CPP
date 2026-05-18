@@ -61,7 +61,7 @@
 | `axiom-registry.md` | All axioms, predictions, growth tracking | After each paper |
 | `master_glossary.md` | Every CPP term defined | Scan during Phase 7 |
 | `predictions.md` | Quantitative predictions with status | After each paper |
-| `Research_Frontier.md` | **The dashboard** — all open problems, conjectures, propositions | After each paper |
+| `research_frontier.md` | **The dashboard** — all open problems, conjectures, propositions | After each paper |
 | `theorem-registry.md` | All proved theorems by series with axiom dependencies | After each paper |
 
 ### Workflow
@@ -74,7 +74,7 @@
 | `paper-formatting.md` | LaTeX standards |
 | `future_projects.md` | Prioritised research targets |
 | `todolist.md` | **Carried-over deferred items + hygiene gaps** (introduced 7 May 2026 Session 33). The "easy to lose" things — small enough to skip a `future_projects.md` entry but compound if not externalized. **The next paper does NOT start until this file's P1 — Must clear before next paper section is empty.** Maintenance: any session that completes a TODO moves it to "Cleared items (history)" with date and patch number; any session that identifies a new deferral adds it here under the appropriate priority. If P1 grows beyond ~10 items, promote items to `future_projects.md` as registered multi-session projects. |
-| `Research_Timeline.md` | **Medium-term scheduling** (introduced 15 May 2026 Session 84, Patch 0377). The missing middle between `todolist.md` (tactical, days–weeks) and `Research_Frontier.md` (strategic open inventory, unscheduled, multi-year). Captures which papers and methodology campaigns are next in priority order, with dependencies, expected durations, and cross-references to relevant Frontier OPEN-FP entries and PD-004 publication-pathway layer occupation. Distinct from `Research_Frontier.md` (which lists problems without scheduling) and from per-paper handover documents (which are session-arc-local). Sections: Active Campaigns, Priority Queue (Next-Up), Backlog, Methodology Campaigns, Literature Integration, Public-Posting Queue, Cross-references. Updated whenever a paper campaign launches/completes/reorders, a methodology campaign is created/resolved, or a literature-integration item is added. Updates typically piggyback onto session-close handover patches. |
+| `research_timeline.md` | **Medium-term scheduling** (introduced 15 May 2026 Session 84, Patch 0377). The missing middle between `todolist.md` (tactical, days–weeks) and `research_frontier.md` (strategic open inventory, unscheduled, multi-year). Captures which papers and methodology campaigns are next in priority order, with dependencies, expected durations, and cross-references to relevant Frontier OPEN-FP entries and PD-004 publication-pathway layer occupation. Distinct from `research_frontier.md` (which lists problems without scheduling) and from per-paper handover documents (which are session-arc-local). Sections: Active Campaigns, Priority Queue (Next-Up), Backlog, Methodology Campaigns, Literature Integration, Public-Posting Queue, Cross-references. Updated whenever a paper campaign launches/completes/reorders, a methodology campaign is created/resolved, or a literature-integration item is added. Updates typically piggyback onto session-close handover patches. |
 
 ### Navigation
 | Document | Purpose |
@@ -107,7 +107,7 @@
 - [ ] Update `founders_vision.md` with any new physical insights
 - [ ] Create/update development transcript
 - [ ] Update `future_projects.md` if priorities changed
-- [ ] Note any new open problems in `Research_Frontier.md`; update `problem_histories/` if significant work done
+- [ ] Note any new open problems in `research_frontier.md`; update `problem_histories/` if significant work done
 - [ ] Push to GitHub
 
 **Key lesson from SM-8:** Papers can emerge unexpectedly from exploration sessions. SM-8 started as documentation work and became a 14-page paper with three theorems. Don't restrict exploration sessions to their stated goal.
@@ -256,7 +256,7 @@ Standard structure:
 **Exceptions — things that ARE maintained continuously during drafting:**
 - **Development transcript** (`[S]-[N]_development_transcript.md`) — updated session-by-session, documents evolution
 - **Version history file** (`documentation_suite/changelog-[S]-[N].md`) — updated with each version; this is the canonical version archaeology for the paper. See ``Version-archaeology architecture rule'' below for the convention.
-- **Registry files** (`Research_Frontier.md`, `predictions.md`, `axiom-registry.md`) — updated when a paper introduces new entries
+- **Registry files** (`research_frontier.md`, `predictions.md`, `axiom-registry.md`) — updated when a paper introduces new entries
 - **Paper catalog** (`paper_catalog.md`) — paper row updated when version changes
 
 **Version-archaeology architecture rule (adopted Patch 0408, Session 115; codified Patch 0409, Session 116).** Each paper's version archaeology lives in a dedicated documentation-suite file `flagship_papers/<paper>/documentation_suite/changelog-<paper>.md` (or `series_<line>/papers/<paper>/documentation_suite/changelog-<paper>.md`). The `.tex` source carries only its current title block: title, sub-title, version line, author, date, institution. The `.tex` source MUST NOT carry either of the two version-archaeology patterns that were standard before 16 May 2026:
@@ -870,7 +870,7 @@ VERIFICATION TIERS APPLIED IN THIS REVIEW:
 3. Update the total prediction count and zero-parameter prediction count
 
 #### postulates_and_theorems.md update procedure
-**[ARCHIVED — 12 April 2026]** This file has been split into `axiom-registry.md` (axioms), `theorem-registry.md` (theorems/corollaries), and `Research_Frontier.md` (conjectures, propositions, open problems, falsified items). Update those files directly. The archived copy is at `archive/pre_frontier_2026-04-12/postulates_and_theorems.md`.
+**[ARCHIVED — 12 April 2026]** This file has been split into `axiom-registry.md` (axioms), `theorem-registry.md` (theorems/corollaries), and `research_frontier.md` (conjectures, propositions, open problems, falsified items). Update those files directly. The archived copy is at `archive/pre_frontier_2026-04-12/postulates_and_theorems.md`.
 
 #### theorem-registry.md update procedure
 1. Add each new theorem with ID, name, result, axiom dependencies, and paper reference
@@ -878,7 +878,7 @@ VERIFICATION TIERS APPLIED IN THIS REVIEW:
 3. Update the theorem count and theorems-per-axiom ratio
 4. Update the "Open Problems Remaining" table if a theorem resolves one
 
-#### Research_Frontier.md update procedure
+#### research_frontier.md update procedure
 1. For each problem the paper addresses: update status, "Current best lead," and "Last updated"
 2. If a problem is resolved: move entry from §1 (OPEN) to §4 (Recently Resolved)
 3. If a conjecture is proved: move from §2 (CONJ) to §4 (Recently Resolved)
@@ -890,7 +890,7 @@ VERIFICATION TIERS APPLIED IN THIS REVIEW:
 #### problem_histories/ update procedure
 **TRIGGER:** After any session that touches an open problem — not just after papers.
 1. If a history file exists for the problem: add a dated journal entry recording what was tried, what was learned, and who contributed what
-2. If no history file exists and significant work was done: create one using the template in `templates/Research_Frontier_Architecture.md`
+2. If no history file exists and significant work was done: create one using the template in `templates/research_frontier_architecture.md`
 3. Capture Thomas's physical intuitions verbatim — these are the most valuable content
 4. Document negative results honestly — they narrow the solution space
 
@@ -921,7 +921,7 @@ VERIFICATION TIERS APPLIED IN THIS REVIEW:
 #### bibliography/cpp_references.bib update procedure
 **TRIGGER:** After any new paper is completed, or when a new external reference is cited.
 
-**Policy (15 April 2026):** `bibliography/cpp_references.bib` is the **single master bibliography** for the entire CPP programme. All new entries — CPP papers and external works — go here and nowhere else. Per-paper and per-series .bib files are **deprecated and frozen** (legacy compatibility only). Full consolidation of the 12 legacy .bib files into the master is tracked as OPEN-WORKFLOW-1 in Research_Frontier.md.
+**Policy (15 April 2026):** `bibliography/cpp_references.bib` is the **single master bibliography** for the entire CPP programme. All new entries — CPP papers and external works — go here and nowhere else. Per-paper and per-series .bib files are **deprecated and frozen** (legacy compatibility only). Full consolidation of the 12 legacy .bib files into the master is tracked as OPEN-WORKFLOW-1 in research_frontier.md.
 
 **For new papers:**
 1. Cite using `\bibliography{../../bibliography/cpp_references}` (path relative to paper's .tex location). Alternatively, embed citations inline via `\bibitem{}` inside a `thebibliography` environment — this avoids any .bib dependency.
@@ -942,7 +942,7 @@ VERIFICATION TIERS APPLIED IN THIS REVIEW:
 **For existing papers:** No action required. Registered papers continue to use whatever .bib they were registered with. Conversion to the master bib will be done as part of the OPEN-WORKFLOW-1 consolidation session.
 
 #### open_problems/ update procedure
-**[ARCHIVED — 12 April 2026]** The `open_problems/` directory has been replaced by `Research_Frontier.md` (dashboard) and `problem_histories/` (narratives). New problems go in `Research_Frontier.md` §1. Narrative updates go in `problem_histories/PH-[ID].md`. The archived copies are at `archive/pre_frontier_2026-04-12/open_problems/`.
+**[ARCHIVED — 12 April 2026]** The `open_problems/` directory has been replaced by `research_frontier.md` (dashboard) and `problem_histories/` (narratives). New problems go in `research_frontier.md` §1. Narrative updates go in `problem_histories/PH-[ID].md`. The archived copies are at `archive/pre_frontier_2026-04-12/open_problems/`.
 
 ### Navigation documents (update structure)
 
@@ -1101,7 +1101,7 @@ This rule supersedes the prior implicit convention that archival happened only a
 
 The v1.0 paper-completion checklist triggers the full 7-file documentation suite. Two *intermediate* registry-suite triggers exist beneath v1.0:
 
-1. **Substantial section-end with registry implications.** When a section-end commit (per commit-cadence rule) opens or partially resolves OPEN-SS problems, the following registry files must be checked for updates before the next session: `Research_Frontier.md` (new problems), `problem_histories/PH-*.md` (partial resolutions), paper's own `documentation_suite/changelog-<paper>.md` entry (if the paper and its changelog file exist yet). If any are not updated, flag as "pending" in the section-end commit message.
+1. **Substantial section-end with registry implications.** When a section-end commit (per commit-cadence rule) opens or partially resolves OPEN-SS problems, the following registry files must be checked for updates before the next session: `research_frontier.md` (new problems), `problem_histories/PH-*.md` (partial resolutions), paper's own `documentation_suite/changelog-<paper>.md` entry (if the paper and its changelog file exist yet). If any are not updated, flag as "pending" in the section-end commit message.
 2. **Context-pressure crossing.** The §15 Session-close Handover Protocol four-item checklist (formerly in this section, see back-pointer above) includes registry updates as one of its four required items. This is an intermediate trigger independent of v1.0 milestone.
 
 These intermediate triggers prevent registry drift between the full v1.0 documentation-suite events, which can be weeks or months apart during exploratory development.
@@ -1192,9 +1192,9 @@ CPP maintains three separate documentation hierarchies that drift if not updated
 
 **Hierarchy 1 — Per-paper documentation suite.** Files in `series_[name]/papers/[PAPER-ID]/documentation_suite/` for papers using the per-paper subfolder convention, or files at `series_[name]/papers/` for legacy-flat papers. These are updated at each session close (handover and development files specifically) and at section-ends (other suite files as relevant).
 
-**Hierarchy 2 — Programme-level registry.** Files at `/CPP` root: `axiom-registry.md`, `theorem-registry.md`, `research_frontier.md`, `predictions.md`, `master_glossary.md`, `founders_vision.md`, `theory-overview.md`, `paper_catalog.md`, `future_projects.md`, `CPP_the_theory.md`, `postulates_and_theorems.md`, `research_timeline.md`, `research_priorities.md`, `organizational_frontier.md`, `todolist.md`, `handovers/` (folder of session-handover continuity documents per `handovers/README.md`), `README.md`, `INDEX.md`. Updates are triggered by: new theorems or corollaries (theorem-registry), new axioms (axiom-registry), new or resolved open problems (research_frontier), new predictions (predictions), new terminology (master_glossary), new Thomas-voice intuitions (founders_vision), paper-campaign launches/completions/priority shifts (research_timeline, research_priorities), new OPEN-ORG-* registrations or closures (organizational_frontier), session-handover events (handovers/), session-level working TODO changes (todolist), etc. A substantive section-end commit should sweep these files — even if no update is needed, the check itself prevents drift. **Corrections adopted Patch 0422E (17 May 2026):** removed ghost-file references to `propositions.md` and `solution_candidates.md` (both archived 12 April 2026 per `templates/Research_Frontier_Architecture.md` history table — their content was absorbed into `research_frontier.md`); corrected casing `Research_Frontier.md` → `research_frontier.md` (per file rename at e47f760 series); added newer-than-original-list files `research_timeline.md` (Patch 0377), `research_priorities.md` (Session 36), `organizational_frontier.md` (renamed e47f760), `todolist.md` (long-standing programme-level working file), and the `handovers/` folder (Patch 0422). The remainder of OS continues to reference `Research_Frontier.md` with capitalized casing in 13 other locations and `Organizational_Frontier.md` in 1 location; the casing sweep is identified as separate-scope future work (does not block any current operation since markdown filesystem links are case-sensitive on Linux but case-insensitive on macOS/Windows; the current state is functional but cosmetically inconsistent).
+**Hierarchy 2 — Programme-level registry.** Files at `/CPP` root: `axiom-registry.md`, `theorem-registry.md`, `research_frontier.md`, `predictions.md`, `master_glossary.md`, `founders_vision.md`, `theory-overview.md`, `paper_catalog.md`, `future_projects.md`, `CPP_the_theory.md`, `postulates_and_theorems.md`, `research_timeline.md`, `research_priorities.md`, `organizational_frontier.md`, `todolist.md`, `handovers/` (folder of session-handover continuity documents per `handovers/README.md`), `README.md`, `INDEX.md`. Updates are triggered by: new theorems or corollaries (theorem-registry), new axioms (axiom-registry), new or resolved open problems (research_frontier), new predictions (predictions), new terminology (master_glossary), new Thomas-voice intuitions (founders_vision), paper-campaign launches/completions/priority shifts (research_timeline, research_priorities), new OPEN-ORG-* registrations or closures (organizational_frontier), session-handover events (handovers/), session-level working TODO changes (todolist), etc. A substantive section-end commit should sweep these files — even if no update is needed, the check itself prevents drift. **Corrections adopted Patch 0422E (17 May 2026):** removed ghost-file references to `propositions.md` and `solution_candidates.md` (both archived 12 April 2026 per `templates/research_frontier_architecture.md` history table — their content was absorbed into `research_frontier.md`); corrected casing `research_frontier.md` → `research_frontier.md` (per file rename at e47f760 series); added newer-than-original-list files `research_timeline.md` (Patch 0377), `research_priorities.md` (Session 36), `organizational_frontier.md` (renamed e47f760), `todolist.md` (long-standing programme-level working file), and the `handovers/` folder (Patch 0422). The remainder of OS continues to reference `research_frontier.md` with capitalized casing in 13 other locations and `organizational_frontier.md` in 1 location; the casing sweep is identified as separate-scope future work (does not block any current operation since markdown filesystem links are case-sensitive on Linux but case-insensitive on macOS/Windows; the current state is functional but cosmetically inconsistent).
 
-**Hierarchy 3 — Templates and conventions.** Files in `templates/`: `operating_system.md`, `relationship_protocol.md`, `AI_team_expectations.md`, `paper-formatting.md`, `documentation-suite.md`, `paper_production_workflow.md`, `paper_completion_checklist.md`, `nomenclature.md`, `Research_Frontier_Architecture.md`, `anthology_chapter_template.md` (added 26 April 2026; per-paper anthology chapter structure for SS-7/SS-8/SS-9/SF-4 Rovelli/SciAm-register chapters), `conditional_closure_framework.md` (added 11 May 2026 Patch 0340; programme-wide conditional-theorem closure framework codified during SF-4 v4.x). Updates are triggered when the session identifies a new workflow pattern, failure mode, or team convention. New rules that won't reach the next session unless committed belong here.
+**Hierarchy 3 — Templates and conventions.** Files in `templates/`: `operating_system.md`, `relationship_protocol.md`, `AI_team_expectations.md`, `paper-formatting.md`, `documentation-suite.md`, `paper_production_workflow.md`, `paper_completion_checklist.md`, `nomenclature.md`, `research_frontier_architecture.md`, `anthology_chapter_template.md` (added 26 April 2026; per-paper anthology chapter structure for SS-7/SS-8/SS-9/SF-4 Rovelli/SciAm-register chapters), `conditional_closure_framework.md` (added 11 May 2026 Patch 0340; programme-wide conditional-theorem closure framework codified during SF-4 v4.x). Updates are triggered when the session identifies a new workflow pattern, failure mode, or team convention. New rules that won't reach the next session unless committed belong here.
 
 **Update discipline.** The bootup, section-end, and handover moments all trigger the three-hierarchies sweep. If a session identified a registry-relevant result and failed to update Hierarchy 2, or identified a protocol pattern and failed to update Hierarchy 3, that's a failure mode for `AI_team_expectations.md` §2 (Claude Opus), not a neutral state. Per Thomas (22 April 2026): "There are no sacred cows; everyone depends on everyone, and we can't get better without knowing the results of our actions."
 
@@ -1521,9 +1521,9 @@ Both documents are updated at each flagship-paper SHIP or version increment that
 
 ## 14. Organizational Frontier Registry (adopted 24 April 2026)
 
-**Registry file:** `/CPP/Organizational_Frontier.md`
+**Registry file:** `/CPP/organizational_frontier.md`
 **Rationale file:** `/CPP/programmatic_decisions/PD-003-organizational-frontier-registry.md`
-**Parallel to:** `Research_Frontier.md` (theoretical/physics problems)
+**Parallel to:** `research_frontier.md` (theoretical/physics problems)
 
 ### Purpose
 
@@ -1534,7 +1534,7 @@ Captures organizational, infrastructural, and governance-level improvement items
 When an organizational improvement idea surfaces during active work (paper drafting, infrastructure building, review cycles), do **not** act on it immediately (scope disruption) and do **not** carry it in session memory (compaction loss). Instead:
 
 1. **Stop for 60–90 seconds.**
-2. **Open `Organizational_Frontier.md`.**
+2. **Open `organizational_frontier.md`.**
 3. **Add an `OPEN-ORG-NNN` entry** using the template in §2 of that file. Full fidelity: originating context, problem description, proposed fix, trigger condition, blocking dependencies, history.
 4. **Commit** (immediately, or stage for the next batched commit).
 5. **Return to current work.**
@@ -1557,7 +1557,7 @@ The "Pending for next session" list at each session close **no longer carries co
 
 > OPEN-ORG registry current as of this session. Newly registered this session: OPEN-ORG-{X}, OPEN-ORG-{Y}. Became workable this session but deferred to time constraints: OPEN-ORG-{Z}. Next session should scan registry against current state to identify workable items.
 
-The content lives in `Organizational_Frontier.md` (durable, version-controlled, searchable). The handover is a short pointer. This eliminates the paraphrase-drift failure mode where pending items get restated slightly differently each session until they detach from original intent.
+The content lives in `organizational_frontier.md` (durable, version-controlled, searchable). The handover is a short pointer. This eliminates the paraphrase-drift failure mode where pending items get restated slightly differently each session until they detach from original intent.
 
 ### Signals that reflexive-drop is warranted
 
@@ -1576,7 +1576,7 @@ Each of these uttered in a session is a reflexive-drop cue. Cost: 60–90 second
 ### Maintenance cadence
 
 - **Scanned at each session start** against current programme state. Items whose triggers have fired are candidates for the session slot (if any slot is available).
-- **Scanned at each paper's v1.0 completion milestone** alongside `Research_Frontier.md`. Workable items get queued; completed items get moved to §3 (Resolved) of the registry file with resolution-date and commit reference.
+- **Scanned at each paper's v1.0 completion milestone** alongside `research_frontier.md`. Workable items get queued; completed items get moved to §3 (Resolved) of the registry file with resolution-date and commit reference.
 - **Scanned when a new entry is added** to check for duplication or relationship with existing entries.
 
 ### Meta-discipline: this file is itself registry content
@@ -1686,8 +1686,8 @@ The Session 81 patch 0343 closeout that batched SF-4 v1.0 → v4.4 TATWD integra
 
 Walk each of the following registries; for each, either update with the session's findings or explicitly mark N/A:
 
-- **`Research_Frontier.md`** — update the relevant OPEN-SS-NN / CONJ-SS-NN entry with the session's paragraph; if the session resolved or falsified a problem, change status accordingly and move to the resolved/falsified section.
-- **`Organizational_Frontier.md`** — register any new OPEN-ORG-NNN items surfaced this session (using the §1 register-and-defer pattern); update status of any existing items moved this session; move resolved items to §3 per registry convention.
+- **`research_frontier.md`** — update the relevant OPEN-SS-NN / CONJ-SS-NN entry with the session's paragraph; if the session resolved or falsified a problem, change status accordingly and move to the resolved/falsified section.
+- **`organizational_frontier.md`** — register any new OPEN-ORG-NNN items surfaced this session (using the §1 register-and-defer pattern); update status of any existing items moved this session; move resolved items to §3 per registry convention.
 - **`axiom-registry.md`** — register any new axioms; update prediction counts if predictions were closed.
 - **`theorem-registry.md`** — register any new theorems with axiom dependencies; update theorem count.
 - **`predictions.md`** — register any new quantitative predictions with PDG comparison; update status of existing predictions if confirmed/falsified this session.
@@ -1740,7 +1740,7 @@ The handover document follows this structure:
 - **Latest Tier 4 reasoning:** `series_<name>/papers/<ID>/documentation_suite/reasoning-<ID>.md` §"[latest entry title]"
 - **Active sketches:** [paths]
 - **Active scripts:** [paths]
-- **Live registry entries:** `Research_Frontier.md` §[OPEN-SS-NN], `Organizational_Frontier.md` §[OPEN-ORG-NNN] [if any active]
+- **Live registry entries:** `research_frontier.md` §[OPEN-SS-NN], `organizational_frontier.md` §[OPEN-ORG-NNN] [if any active]
 
 ## Step-by-step audit of this session's handover
 

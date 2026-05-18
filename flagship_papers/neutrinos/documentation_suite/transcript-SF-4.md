@@ -181,7 +181,7 @@ SHIP mechanics:
 4. Four-tier documentation suite created (`handover-SF-4.md`, `development-SF-4.md`, `transcript-SF-4.md`, `reasoning-SF-4.md`)
 5. flagship_papers/SF-line_development_transcript.md §17 added covering Sessions 42–54
 6. INDEX.md and flagship_papers/neutrinos/README.md transitioned to v1.0 SHIPPED status
-7. Research_Frontier.md programme-state-changes captured
+7. research_frontier.md programme-state-changes captured
 
 PDF: 40 pages, 537 KB.
 
@@ -287,7 +287,7 @@ PDF: 40 pages, 537 KB.
 
 ### Session 61 (patch 0322) — programme-level registration
 
-This session lands the programme-level registration of v2.0 SHIP: Research_Frontier.md OPEN-FP-SF-4-1 entry update, Research_Frontier.md last-updated header prepend, paper_catalog.md SF-4 row update, four-tier documentation suite update (handover Session 60 close, this transcript update, development vignettes 18–24, reasoning Tier-4 pointer to working sketch). After Session 61, OPEN-FP-SF-4-1 Picture A axiomatic closure is fully RESOLVED at all levels.
+This session lands the programme-level registration of v2.0 SHIP: research_frontier.md OPEN-FP-SF-4-1 entry update, research_frontier.md last-updated header prepend, paper_catalog.md SF-4 row update, four-tier documentation suite update (handover Session 60 close, this transcript update, development vignettes 18–24, reasoning Tier-4 pointer to working sketch). After Session 61, OPEN-FP-SF-4-1 Picture A axiomatic closure is fully RESOLVED at all levels.
 
 ---
 

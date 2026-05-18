@@ -1,6 +1,6 @@
 # Research Frontier Architecture — Decision Document
 
-**Location:** `/CPP/templates/Research_Frontier_Architecture.md`
+**Location:** `/CPP/templates/research_frontier_architecture.md`
 **Created:** 12 April 2026
 **Status:** DECIDED — ready for implementation
 **Decision by:** Thomas Lee Abshier ND, with Claude Opus
@@ -12,7 +12,7 @@
 
 CPP adopts a **three-layer problem tracking architecture**:
 
-1. **Research_Frontier.md** — the dashboard (one flat file, fast retrieval)
+1. **research_frontier.md** — the dashboard (one flat file, fast retrieval)
 2. **Problem histories** — the travelogue (one file per problem, full narrative)
 3. **Papers** — the formal synthesis (theorems and proofs)
 
@@ -31,16 +31,16 @@ These two files highlight the mutual dependence of CPP's foundational pillars: t
 
 | File | Reason |
 |---|---|
-| `open_problems/*.md` (50+ individual files) | Absorbed into `Research_Frontier.md` + `problem_histories/` |
-| `propositions.md` | Absorbed into `Research_Frontier.md` (status: PROP) |
+| `open_problems/*.md` (50+ individual files) | Absorbed into `research_frontier.md` + `problem_histories/` |
+| `propositions.md` | Absorbed into `research_frontier.md` (status: PROP) |
 | `solution_candidates.md` | Absorbed into frontier entries' "Current best lead" field |
 | `postulates_and_theorems.md` | Split into `axiom-registry.md` (axioms) + `theorem-registry.md` (theorems) |
 
 ---
 
-## Layer 1: Research_Frontier.md (The Dashboard)
+## Layer 1: research_frontier.md (The Dashboard)
 
-**Location:** `/CPP/Research_Frontier.md` (root level, peer of `predictions.md`)
+**Location:** `/CPP/research_frontier.md` (root level, peer of `predictions.md`)
 **Audience:** A physicist scanning CPP for the first time; a collaborator triaging what to work on next; an AI starting a new session.
 **Purpose:** One flat file showing the complete landscape of every identified problem, conjecture, proposition, and frontier item — with status, sector, dependencies, and enough context to assess interconnections.
 **Answers the question:** *What is solved, what is open, and what connects to what?*
@@ -75,7 +75,7 @@ Each entry gets a compact block:
 
 ### Update trigger
 
-**After every paper.** The paper production pipeline (Phase 9 in `operating_system.md`) includes updating `Research_Frontier.md`. Every paper should explicitly confront one or more open problems. When a problem changes status, update its entry and move it to the appropriate section.
+**After every paper.** The paper production pipeline (Phase 9 in `operating_system.md`) includes updating `research_frontier.md`. Every paper should explicitly confront one or more open problems. When a problem changes status, update its entry and move it to the appropriate section.
 
 ---
 
@@ -150,7 +150,7 @@ What the reviews said.]
 
 ## Cross-References
 
-- **Research_Frontier.md entry:** [ID]
+- **research_frontier.md entry:** [ID]
 - **Related problems:** [list]
 - **Key founders_vision.md entries:** [dates]
 - **Development transcripts:** [files]
@@ -245,7 +245,7 @@ IDENTIFIED → OPEN → CONJ → PROP → THEO
 
 | Stage | Meaning | What triggers advancement |
 |-------|---------|--------------------------|
-| **OPEN** | Problem identified, no candidate solution | Registration in Research_Frontier.md |
+| **OPEN** | Problem identified, no candidate solution | Registration in research_frontier.md |
 | **CONJ** | A proposed answer exists but is not proved | Someone proposes a specific mechanism or formula |
 | **PROP** | Physically motivated, partially demonstrated | Computation or argument supports it but gaps remain |
 | **THEO** | Proved from axioms in a paper | Formal proof accepted through multi-AI review |
@@ -281,7 +281,7 @@ The two registries together tell the story of CPP's deductive structure: a small
 
 ## Implementation Plan
 
-### Phase 1: Build Research_Frontier.md (1 session)
+### Phase 1: Build research_frontier.md (1 session)
 1. Read all 50+ files in `open_problems/`
 2. Read conjectures from `postulates_and_theorems.md`
 3. Read `propositions.md`
@@ -311,15 +311,15 @@ Start with the problems that have the richest stories:
 Draw from: development transcripts, `founders_vision.md` catalogue entries, paper development logs, session histories.
 
 ### Phase 4: Update pipeline (quick)
-1. Add `Research_Frontier.md` update to `operating_system.md` Section 10 checklist
+1. Add `research_frontier.md` update to `operating_system.md` Section 10 checklist
 2. Add problem history update to Phase 7 documentation suite
 3. Add "Open Problems Addressed" and "Problem Status After This Paper" to `paper-formatting.md` template
 4. Update `bootup.md`:
-   - Add `Research_Frontier.md` to the session startup reading sequence
+   - Add `research_frontier.md` to the session startup reading sequence
    - Reference this architecture document as a module of `operating_system.md` to be reviewed in the bootup sequence for new Opus sessions
 
 ### Phase 5: Consolidation (1 session)
-1. Once `Research_Frontier.md` and `theorem-registry.md` are verified complete:
+1. Once `research_frontier.md` and `theorem-registry.md` are verified complete:
    - Archive `open_problems/` individual files
    - Archive `propositions.md`
    - Archive `solution_candidates.md`
@@ -336,7 +336,7 @@ CPP is unusual in that it has a 39-year development history, multiple AI collabo
 Thomas's vision: *"Every one of these problem-resolution passages will be its own chapter, its own saga. People will enjoy the drama of following the twists and turns of discovery. It will make it a lot easier to write the book. It will allow researchers to relive the excitement and journey we experienced as we saw it evolve from a problem to a theorem."*
 
 The three layers serve three timescales:
-- **Research_Frontier.md** — what matters *right now* (session planning, triage)
+- **research_frontier.md** — what matters *right now* (session planning, triage)
 - **Problem histories** — what happened *over weeks and months* (the research arc)
 - **Papers** — what stands *permanently* (the formal record)
 
@@ -354,10 +354,10 @@ The three-layer architecture above (Research_Frontier dashboard / problem_histor
 |---|---|---|---|
 | `research_timeline.md` | 15 May 2026 (Patch 0377) | Medium-term scheduling: which papers and methodology campaigns are next in priority order, with dependencies, durations, cross-references to research_frontier OPEN-FP entries | Sits **between** the strategic-but-unscheduled `research_frontier.md` (Layer 1) and the tactical-days-weeks `todolist.md`. Distinct from per-paper handover documents (session-arc-local). |
 | `research_priorities.md` | Session 36 (~7 May 2026) | Strategic prioritization layer (quarterly cadence): which research tracks are #1 priority for the programme right now | Sits **above** `research_frontier.md` (Layer 1) as a strategic filter — frontier lists every problem, priorities select which to actually work on. |
-| `organizational_frontier.md` | Earlier filename `Organizational_Frontier.md` later lowercased at e47f760 | Tracks OPEN-ORG-* organizational/workflow items (parallel to the OPEN-* / CONJ-* / PROP- tracking in `research_frontier.md`) | Same Layer 1 dashboard role as `research_frontier.md`, but for organizational/process problems rather than theoretical/physics problems. |
+| `organizational_frontier.md` | Earlier filename `organizational_frontier.md` later lowercased at e47f760 | Tracks OPEN-ORG-* organizational/workflow items (parallel to the OPEN-* / CONJ-* / PROP- tracking in `research_frontier.md`) | Same Layer 1 dashboard role as `research_frontier.md`, but for organizational/process problems rather than theoretical/physics problems. |
 | `handovers/` (folder) | 17 May 2026 (Patch 0422) | Session-handover continuity documents (one file per session-handoff moment); filename pattern `YYYY-MM-DD_session_NNN_<scope>.md`; chronological-sort by filename; newest = canonical bootup pointer | **NEW layer** below the three-layer architecture, capturing session-window-bounded continuity context that does not fit at any of Layer 1 (too granular), Layer 2 (problem-specific not session-specific), or Layer 3 (not a paper). Documented in `handovers/README.md`. |
 
-**Filesystem casing standardization (17 May 2026 Patch 0422 sequence):** `Research_Frontier.md` → `research_frontier.md`; `Organizational_Frontier.md` → `organizational_frontier.md`. The current document still uses the capitalized forms in its body text and section headers (which were correct at 12 April creation); the standardization is filesystem-level and does not invalidate the architectural decisions documented here.
+**Filesystem casing standardization (17 May 2026 Patch 0422 sequence):** `research_frontier.md` → `research_frontier.md`; `organizational_frontier.md` → `organizational_frontier.md`. The current document still uses the capitalized forms in its body text and section headers (which were correct at 12 April creation); the standardization is filesystem-level and does not invalidate the architectural decisions documented here.
 
 These additions are extensions, not revisions. The 12 April three-layer architecture (Research_Frontier dashboard / problem_histories travelogue / papers formal synthesis) remains the decision; the post-creation extensions sit alongside the core three layers and serve continuity, scheduling, and organizational-process roles that the original three layers did not cover.
 

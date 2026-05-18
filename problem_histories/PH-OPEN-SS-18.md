@@ -3,7 +3,7 @@
 **Created:** 17 April 2026 (problem registered)
 **Status:** ✓ PARTIALLY RESOLVED — 20 April 2026 (SS-7 v1.1)
 **Resolution paper:** SS-7 v1.1 at N_α ∈ [3, 10] for alpha-chain nuclei; remainder split into OPEN-SS-22 (heavy N_α ≥ 12) and OPEN-SS-23 (non-alpha-chain)
-**Research_Frontier.md entry:** OPEN-SS-18 (marked partially resolved)
+**research_frontier.md entry:** OPEN-SS-18 (marked partially resolved)
 
 ---
 
@@ -21,7 +21,7 @@ Derive the empirical binding curve for medium-mass nuclei (A ≥ 6) from coupled
 
 ### 17 April 2026 — Problem registered
 
-OPEN-SS-18 was registered in Research_Frontier.md alongside a preliminary observation from SS-5 v3 §9: the residual binding above cluster sum for small alpha-chain nuclei was approximately `n · M₀/φ` where n ≈ 3 for ¹²C and n ≈ 6 for ¹⁶O. The scaling broke down for heavier nuclei, suggesting the full analysis required its own paper. The slot was tentatively SS-7, following SS-6's then-planned bipyramid-scoping work.
+OPEN-SS-18 was registered in research_frontier.md alongside a preliminary observation from SS-5 v3 §9: the residual binding above cluster sum for small alpha-chain nuclei was approximately `n · M₀/φ` where n ≈ 3 for ¹²C and n ≈ 6 for ¹⁶O. The scaling broke down for heavier nuclei, suggesting the full analysis required its own paper. The slot was tentatively SS-7, following SS-6's then-planned bipyramid-scoping work.
 
 **Initial scope (17 April):** The problem as registered covered the full range A ≥ 6, including odd-A nuclei, neutron-rich isotopes, and heavy-mass nuclei up to the iron peak. This was ambitious — closer in scope to an entire research programme than a single paper.
 

@@ -8,7 +8,7 @@ SS-9 (working title: *Conditional Derivation of Simplicial Alpha-Polytope Connec
 
 - **No paper text yet.** The active scaffold is now `session_logs/OPEN-SS-24_phase1_v0.3_working_draft.md` (Session 4 restructuring: graph-theoretic Lemma B$'$ via C7 + Steinitz; v0.2 supporting-hyperplane gap dissolved; refined-C1 facet (b) made load-bearing for FvdW realization at $N_\alpha \geq 7$; new C7 hypothesis registered as OPEN-SS-33 candidate). The earlier `session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md` (Session 2 Steinitz pivot + Lemma A clean + Lemma B with two registered gaps + conditional Theorem statement + deltahedra-gap scope notes) is preserved as historical artifact recording the v0.2 framing that motivated Session 3's refined-C1 work and Session 4's Lemma-B restructuring. When SS-9 v0.1 is drafted, the paper .tex will land at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` (working title; final title TBD) and the working draft will move to `sketches/`.
 - **Foundation work landed.** SS-7 v1.3 patched (multi-faceted-rigidity refinement of C1) at `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex`. This is the foundation v0.3's Lemma B$'$ rests on; refined-C1 facet (b) is load-bearing in Theorem clause (iv).
-- **Registry entries pending ratification.** OPEN-SS-29 (programme-level closure of C5), OPEN-SS-30 (programme-level closure of C6), OPEN-SS-31 (deltahedra-gap structural realization), OPEN-SS-32 (cluster-level oblate-deformation slip-plane mode), **OPEN-SS-33 (programme-level closure of C7 contact-graph planarity, NEW Session 4)** all in `Research_Frontier.md`. Forward-looking predictions PRED-O-16/17/18 (slip-plane single-cluster extension, single-to-hierarchical transition, hierarchical additivity) in `predictions.md`.
+- **Registry entries pending ratification.** OPEN-SS-29 (programme-level closure of C5), OPEN-SS-30 (programme-level closure of C6), OPEN-SS-31 (deltahedra-gap structural realization), OPEN-SS-32 (cluster-level oblate-deformation slip-plane mode), **OPEN-SS-33 (programme-level closure of C7 contact-graph planarity, NEW Session 4)** all in `research_frontier.md`. Forward-looking predictions PRED-O-16/17/18 (slip-plane single-cluster extension, single-to-hierarchical transition, hierarchical additivity) in `predictions.md`.
 
 ## Layout
 
@@ -34,7 +34,7 @@ Three of six standard subfolders are empty (`reviews/`, `letters/`, `scripts/`) 
 
 ## Cross-references
 
-- **OPEN-SS-24** target: `Research_Frontier.md` MEDIUM-HIGH priority. Closure delivers C4 from CPP primitives; promotes 54 conditional D-N predictions to unconditional.
+- **OPEN-SS-24** target: `research_frontier.md` MEDIUM-HIGH priority. Closure delivers C4 from CPP primitives; promotes 54 conditional D-N predictions to unconditional.
 - **OPEN-SS-32** registered: cluster-level oblate-deformation slip-plane mode (provisional, pending derivation). Methodologically parallel to SS-8's OPEN-SS-28.
 - **PRED-O-16/17/18** registered: forward-looking predictions for higher-N_α alpha-chain nuclei; testable against AME 2020 once SS-7 Table 1 is extended.
 - **SS-7 v1.3**: refined C1 with multi-faceted rigidity (facets a/b/c). Foundation for SS-9 closure attempt.

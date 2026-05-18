@@ -7,7 +7,7 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-34_derivation_attempt.md` (where OPEN-SS-35 was registered as the deepest cross-paradigm consilience target)
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-36_derivation_attempt.md` (where OPEN-SS-36's dependence on OPEN-SS-35 was established)
 - `series_strong/papers/SS-9/sketches/SS-9_AME2020_lookup_92Pd_96Cd.md` (where the empirical $B_{\rm slip}$ acceleration toward ${}^{100}$Sn was confirmed, reinforcing the OPEN-SS-35 leverage)
-- `Research_Frontier.md` OPEN-SS-35 entry
+- `research_frontier.md` OPEN-SS-35 entry
 
 **Net programme effect:** OPEN-SS-35 status moves from "registered candidate" to "scoping work begun, Level-0 consistency check passed." The closure attempt is **promising** rather than open-ended: CPP's natural scales for harmonic-oscillator mean-field frequency and spin-orbit coupling strength are in the right range to produce the standard strong magic numbers without fitting. Three sub-questions are identified for sequential closure work in future sessions.
 

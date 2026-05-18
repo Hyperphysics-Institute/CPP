@@ -3,7 +3,7 @@
 **Created:** Pre-2026 (original proposal)
 **Status:** FALS (falsified)
 **Falsified:** March 2026 (PS-1 session)
-**Research_Frontier.md entry:** FALS-C-SM-2
+**research_frontier.md entry:** FALS-C-SM-2
 
 ---
 
@@ -79,7 +79,7 @@ The falsification of φ^{3(l-1)} directly motivated SM-8's approach: instead of 
 
 ## Cross-References
 
-- **Research_Frontier.md entry:** FALS-C-SM-2 (§6 Falsified)
+- **research_frontier.md entry:** FALS-C-SM-2 (§6 Falsified)
 - **Related problems:** OPEN-SS-1 (quark mass formula — still open), OPEN-SM-cage-1 (derive α = 2.38), CONJ-SM-4 (m_u/m_e = φ³)
 - **Solution candidate:** SC-1 (falsified; C_n factors confirmed as lasting contribution)
 - **Key development:** SM-8 development transcript, PS-1 session notes

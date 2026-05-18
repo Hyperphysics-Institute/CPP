@@ -35,7 +35,7 @@
 | 21 Apr 2026 PM | Verification notebook updated, PH-OPEN-SS-22.md drafted | First RETIRED entry in problem_histories/; paper body compiles clean at 25 pages |
 | 21 Apr 2026 PM | Paper body committed locally as `7ce5015` | Not pushed pending companion/registry completion |
 | 21 Apr 2026 PM | Companion documentation suite updates | All 7 companions updated for v1.2 sequentially across the session |
-| 21 Apr 2026 PM | Registry propagation begins (Research_Frontier.md, predictions.md) | Two of three primary registries complete; paper_catalog deferred |
+| 21 Apr 2026 PM | Registry propagation begins (research_frontier.md, predictions.md) | Two of three primary registries complete; paper_catalog deferred |
 | 21 Apr 2026 late PM | Pre-compaction session runs to context exhaustion | Handoff summary curated for continuation session |
 | 21 Apr 2026 late PM | Post-compaction session: registry cascade completion | All 12 Section C files staged; Pattern 6 (B_pair scale recurrence) crystallized; further latent drift identified and addressed |
 
@@ -272,11 +272,11 @@ Retirement applies when a problem's registered empirical anchor is subsequently 
 
 ## Session 9: Registry propagation (21 April 2026 late PM)
 
-**Scope per `paper_completion_checklist.md` Section C.** 10+ registry files potentially affected: Research_Frontier.md, predictions.md, paper_catalog.md, master_glossary.md, theory-overview.md, future_projects.md, CPP_the_theory.md, README.md, INDEX.md, series_strong/README.md.
+**Scope per `paper_completion_checklist.md` Section C.** 10+ registry files potentially affected: research_frontier.md, predictions.md, paper_catalog.md, master_glossary.md, theory-overview.md, future_projects.md, CPP_the_theory.md, README.md, INDEX.md, series_strong/README.md.
 
-**Research_Frontier.md — complete.** Substantial update: 1280 → ~1400 lines. Found and fixed a latent drift: OPEN-SS-22, OPEN-SS-23, OPEN-SS-24, CONJ-SS-12, PROP-SS-7-1 had NEVER been propagated to this file during v1.0/v1.1. The paper's Registry Impact section claimed these registrations, but `Research_Frontier.md` had never received them. v1.2 added all five entries at once, plus retired SS-22 (with full narrative block), plus registered new SS-25. Section header updated from "14 problems" to "18 problems (1 retired)".
+**research_frontier.md — complete.** Substantial update: 1280 → ~1400 lines. Found and fixed a latent drift: OPEN-SS-22, OPEN-SS-23, OPEN-SS-24, CONJ-SS-12, PROP-SS-7-1 had NEVER been propagated to this file during v1.0/v1.1. The paper's Registry Impact section claimed these registrations, but `research_frontier.md` had never received them. v1.2 added all five entries at once, plus retired SS-22 (with full narrative block), plus registered new SS-25. Section header updated from "14 problems" to "18 problems (1 retired)".
 
-This latent drift is important for programme memory. It means the drift pattern that motivated the 20 April template consolidation was larger than initially understood — it affected `Research_Frontier.md` not just `operating_system.md` §4.10. `paper_completion_checklist.md` Section C5 (Research_Frontier.md update procedure) should catch this category of drift in the future.
+This latent drift is important for programme memory. It means the drift pattern that motivated the 20 April template consolidation was larger than initially understood — it affected `research_frontier.md` not just `operating_system.md` §4.10. `paper_completion_checklist.md` Section C5 (research_frontier.md update procedure) should catch this category of drift in the future.
 
 **predictions.md — partial.** Added 12 new PRED-C-42 through PRED-C-53 entries for the alpha-chain predictions, values matching paper Table 1 to 0.001 MeV. Header date not yet updated. Section 6 "Predictions by Paper" table not yet updated with SS-7 v1.2 row. A pre-existing typo noted but not fixed in this cycle: PRED-C-28 and PRED-C-29 IDs each appear twice in the file (one pair SS-3 structural, one pair SS-2 Λ_QCD/μ_neutron). Not v1.2-introduced; flagged for H5 final verification.
 
@@ -290,7 +290,7 @@ This latent drift is important for programme memory. It means the drift pattern 
 
 ## Session 10: Registry cascade completion (21 April 2026 late PM, post-compaction)
 
-**Context at session open.** A fresh Claude Opus session resumed against the handoff summary from Session 9. Section C work was partially propagated (Research_Frontier.md complete, predictions.md with 12 PRED-C entries added but header not updated, paper_catalog and 8 others pending). Open items also carried: three reviewer-response files unsaved, OSF registration pending, git push deferred.
+**Context at session open.** A fresh Claude Opus session resumed against the handoff summary from Session 9. Section C work was partially propagated (research_frontier.md complete, predictions.md with 12 PRED-C entries added but header not updated, paper_catalog and 8 others pending). Open items also carried: three reviewer-response files unsaved, OSF registration pending, git push deferred.
 
 **Working discipline adopted.** Each file updated per the `paper_completion_checklist.md` Section C trigger criteria. Where pre-existing inconsistencies were encountered (stale headers, count miscorrelations, missing growth-table rows), the decision on each was recorded in the file itself — fix-with-note when the fix was small and inside the file's own ontology, flag-without-fix when the fix would expand scope or touch other files. The symmetric-honesty discipline from Session 1 (G3 registration over silent patching) was applied to these pre-existing inconsistencies as well.
 
@@ -310,7 +310,7 @@ While adding THEO-SS-12 (simplicial polytope edge count, SS-7 Theorem 2.1) to `t
 
 **Decision.** The SS row was updated from 9 → 11 (the correct count after both corrections: +1 for the pre-existing miscount, +1 for SS-7's THEO-SS-12). Both corrections were documented in the file's header and in an explicit note under the Summary Statistics. This was judged inside-the-file scope because the correction is to an count against the file's own table rather than against any external reference.
 
-This incident extends the latent-drift finding from Session 9: at least two separate registry files (`Research_Frontier.md` and `theorem-registry.md`) had drift that persisted through multiple paper-completion cycles without detection. The `paper_completion_checklist.md` Section C audit should include "count reconciliation between section headers and summary tables" as an explicit check.
+This incident extends the latent-drift finding from Session 9: at least two separate registry files (`research_frontier.md` and `theorem-registry.md`) had drift that persisted through multiple paper-completion cycles without detection. The `paper_completion_checklist.md` Section C audit should include "count reconciliation between section headers and summary tables" as an explicit check.
 
 ### Stale-header pattern
 
@@ -354,7 +354,7 @@ Beyond the mechanical update of the 12 Section C files, Session 10 registered th
 
 All 12 Section C files staged in `/mnt/user-data/outputs/`:
 - `theory-overview.md`, `axiom-registry.md`, `theorem-registry.md`, `master_glossary.md`, `predictions.md`, `paper_catalog.md`, `founders_vision.md`, `future_projects.md`, `CPP_the_theory.md`, `cpp_references.bib`, `PH-OPEN-SS-22.md` — registry cascade
-- `Research_Frontier.md` previously staged in Session 9
+- `research_frontier.md` previously staged in Session 9
 
 Ready for user application to the authenticated repo. v1.2 paper body, PDF, and `.tex` carried forward unchanged from Session 7 (`7ce5015` locally); Session 10 did not re-touch the paper.
 
@@ -368,7 +368,7 @@ Ready for user application to the authenticated repo. v1.2 paper body, PDF, and 
 
 **Companion suite:** all 7 files complete, staged to outputs, Thomas applying to local repo.
 
-**Registries:** All 12 Section C files staged (Research_Frontier.md in Session 9; the remaining 11 in Session 10). Ready for user application.
+**Registries:** All 12 Section C files staged (research_frontier.md in Session 9; the remaining 11 in Session 10). Ready for user application.
 
 **Reviewer response files:** The three v1.2 verification responses exist in this session's chat record but have not been saved to `series_strong/papers/` yet. Thomas needs to paste the three responses into files named `SS-7_v1.2_chatgpt_verification_response.md`, `_copilot_verification_response.md`, `_grok_verification_response.md` before v1.2 closes.
 
@@ -390,7 +390,7 @@ Ready for user application to the authenticated repo. v1.2 paper body, PDF, and 
 
 4. **Input-channel failures look like reviewer-level failures until diagnosed.** The $\varphi^{1/z}$ misreads had been attributed to vocabulary contamination at Grok. Thomas's input-channel diagnosis (PDF rasterization) offered a sufficient alternative. The `.tex`-only submission protocol is the fix; Grok's rehabilitation was a secondary benefit.
 
-5. **Latent drift is structural, not Research_Frontier-specific.** Five SS-7 registrations absent from `Research_Frontier.md` through v1.0/v1.1 was identified in Session 9 as a template-consolidation gap. Session 10 found additional drift across the registry layer: `theorem-registry.md` had a pre-existing +1 miscount in its Summary Statistics SS row (pre-dating SS-7), `founders_vision.md` and `cpp_references.bib` carried stale header dates through multiple paper cycles, and `axiom-registry.md`'s Axiom Trajectory growth table was missing SS-4, SS-5, and SS-6 rows despite those papers' predictions being in the prediction ledger. The 20 April template consolidation caught the drift surface; the drift penetrated deeper than the surface. The lesson for `paper_completion_checklist.md`: Section C must include explicit count-reconciliation and header-currency audits, and the audit must be treated as the work rather than as a step.
+5. **Latent drift is structural, not Research_Frontier-specific.** Five SS-7 registrations absent from `research_frontier.md` through v1.0/v1.1 was identified in Session 9 as a template-consolidation gap. Session 10 found additional drift across the registry layer: `theorem-registry.md` had a pre-existing +1 miscount in its Summary Statistics SS row (pre-dating SS-7), `founders_vision.md` and `cpp_references.bib` carried stale header dates through multiple paper cycles, and `axiom-registry.md`'s Axiom Trajectory growth table was missing SS-4, SS-5, and SS-6 rows despite those papers' predictions being in the prediction ledger. The 20 April template consolidation caught the drift surface; the drift penetrated deeper than the surface. The lesson for `paper_completion_checklist.md`: Section C must include explicit count-reconciliation and header-currency audits, and the audit must be treated as the work rather than as a step.
 
 6. **Checklists should be iterated as part of their first validation cycle.** Thomas had directed that the template extraction precede SS-8 physics work so SS-8 would validate the new checklist. The v1.2 cycle (which substituted for SS-8 in that sequencing) did validate it; Section H gained the isotope-label check as a discovered gap; Session 10 surfaced the header-currency gap. The checklist becomes more complete through use.
 

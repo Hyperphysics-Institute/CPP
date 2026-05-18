@@ -484,7 +484,7 @@ Total session estimate for strict-C neutrino sector completion: 6–10 sessions 
 The neutrino sector audit reveals that the corpus has a **planned-but-unmaterialized SM-6** (the $\sigma = 120^{-d}$ neutrino-mass paper that SM-5 deferred to). This is a programme-level observation worth registering: SM-5's deferral was made before the SM-6 slot was reused for the charged-lepton paper, and the neutrino-mass derivation has been in soft-deferred status since March 2026 with no explicit programme-level tracking. This audit closes that tracking gap by surfacing the work as Track 1 / Q1 / Strict-C / mechanism-selection-pending.
 
 **Suggested programme-level registration** (for separate patch by Thomas's choice, not for this patch):
-- Add to `Research_Frontier.md`: an entry under the SM sector (or as an OPEN-FP-* under flagship_papers), e.g. **OPEN-SM-NU**: "Neutrino sector first-principles derivation in current formalism — eight parameters; mechanism-pending; Track 1 / Q1 audit complete patch 0294; mechanism-selection Session 38."
+- Add to `research_frontier.md`: an entry under the SM sector (or as an OPEN-FP-* under flagship_papers), e.g. **OPEN-SM-NU**: "Neutrino sector first-principles derivation in current formalism — eight parameters; mechanism-pending; Track 1 / Q1 audit complete patch 0294; mechanism-selection Session 38."
 - Add to `theorem-registry.md` once mechanism is selected and one or more lemmas are proved.
 - Update `paper_catalog.md` once the architectural decision (one paper or two) lands.
 

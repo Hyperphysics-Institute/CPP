@@ -270,14 +270,14 @@
 - New structural prediction: fractional chirality retention across observable classes (mass $\approx 0.6\%$; chirality $\approx 4\%$)
 - Five Layer 3 closure-trajectory questions registered: Q1 group-theoretic verification of $H_4 \to I_4$ stabilizer + Q3/Q4 perturbative-distance-ratio sharpening + Q5/Q6 cross-sector consistency
 - Tier-4 Layer 1 / Layer 2 epistemic status (physical intuition + structural mathematical sketching)
-- Registered at `Research_Frontier.md` OPEN-FI-C-9-FP-MECHANISM (Layer 3 closure trajectory; estimated 10–20 sessions)
+- Registered at `research_frontier.md` OPEN-FI-C-9-FP-MECHANISM (Layer 3 closure trajectory; estimated 10–20 sessions)
 
 ## Session 122 — v1.0 SHIPPED via title-block bump (Patch 0415)
 
 **Patch 0415**: **Capotauro paper v1.0 SHIPPED**.
 - Title block: `Version 0.9 --- 16 May 2026` → `Version 1.0 (SHIPPED) --- 16 May 2026`
 - Substantive paper content unchanged from v0.9 (Patch 0413); version-bump-only SHIP
-- Programme-level changes: (1) `Research_Frontier.md` OPEN-SM-4 PARTIAL CLOSURE; (2) NEW OPEN-FI-C-9-FP-MECHANISM entry; (3) `theorem-registry.md` THEO-CAP-1 paper-level confirmation; (4) `paper_catalog.md` SF-Line Capotauro row + Documentation paragraph; (5) `INDEX.md` flagship_papers entries; (6) NEW `flagship_papers/capotauro/README.md`
+- Programme-level changes: (1) `research_frontier.md` OPEN-SM-4 PARTIAL CLOSURE; (2) NEW OPEN-FI-C-9-FP-MECHANISM entry; (3) `theorem-registry.md` THEO-CAP-1 paper-level confirmation; (4) `paper_catalog.md` SF-Line Capotauro row + Documentation paragraph; (5) `INDEX.md` flagship_papers entries; (6) NEW `flagship_papers/capotauro/README.md`
 - **Third flagship paper to ship at v1.0 in CPP corpus** (after SS-9, SF-4, SF-2)
 - **First flagship paper outside SF-N numerical convention**
 - Commit message's "All registers UNCHANGED at programme level" framing missed 3 drift items (predictions.md PRED-O entry + master_glossary.md Capotauro section + problem_histories/PH-OPEN-SM-4.md) — caught and fixed retroactively at Patch 0416A
@@ -331,24 +331,24 @@
 
 **Note:** Patches 0417–0421 (Sessions 124–126, 16 May 2026) were the Reading C Layer 2/3 trajectory opening (Q1, Q2 closure + Q1' resolution toward vertex-aligned Reading C + closure-trajectory handover consolidation). Per-patch transcript entries for 0417–0421 are a pre-existing pointer-map gap to be filled at next opportunity; the consolidated narrative is at `Patch 0421` handover doc (commit `8acdb63`). The entries below cover Patches 0422–0426 (Sessions 127–130 + this handover).
 
-**Patch 0422 (Session 127):** Programme-level umbrella registration **OPEN-SD-CHIR-PRIMITIVE** in SD section above OPEN-FI-C-9-FP-MECHANISM and OPEN-FP-SF-2-CHIR; five-manifestation scope. NEW `founders_voice/005_chirality_is_primitive.md` (~180 lines) verbatim recovery of Session 120 founder's-confrontation reasoning. Research_Frontier.md problem counts updated (93 → 94 entries, 58 → 59 open). Commit `a4f8656`.
-- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE (NEW)
+**Patch 0422 (Session 127):** Programme-level umbrella registration **OPEN-SD-CHIR-PRIMITIVE** in SD section above OPEN-FI-C-9-FP-MECHANISM and OPEN-FP-SF-2-CHIR; five-manifestation scope. NEW `founders_voice/005_chirality_is_primitive.md` (~180 lines) verbatim recovery of Session 120 founder's-confrontation reasoning. research_frontier.md problem counts updated (93 → 94 entries, 58 → 59 open). Commit `a4f8656`.
+- → `research_frontier.md` §OPEN-SD-CHIR-PRIMITIVE (NEW)
 - → `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (NEW, ~180 lines)
 - → Tier 4: `reasoning-capotauro.md` §8 (Session 127 reasoning at Patch 0426)
 
 **Patch 0423 (Session 128):** Q3 ε-χ relationship Layer 2 attempt. Sketch §12 added with f_geom · f_irrep two-factor structure; Finding C-W38 registered. **NOTE: §12 subsequently superseded by §13 in Patch 0424; C-W38 superseded by C-W39. The §12 content is preserved in the sketch for audit-trail per founders_voice/004 discipline.** Commit `ffe293c`.
 - → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §12 (preserved as superseded)
-- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W38, later superseded)
+- → `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W38, later superseded)
 - → Tier 4: `reasoning-capotauro.md` §9 (Session 128 reasoning + supersession note at Patch 0426)
 
 **Patch 0424 (Session 129):** Q3 §12 4D correction + Q4 dissolution. Under proper 4D analysis the K3-base edges are tangent to $\hat n$ identically — first-order edge-length perturbations vanish for the entire first shell under vertex-aligned Reading C. **Finding C-W39** (NEW; supersedes C-W38): local I_h preservation under vertex-aligned Reading C; χ ≡ ε at substrate level. Q3 CLOSED at Layer 3 by direct identification. Q4 DISSOLVED (the f_irrep Wigner-Eckart computation was an artifact of the §12 geometric error). Capotauro v1.0 paper §10's |M| = χ/6 prediction preserved exactly. Layer 3 closure trajectory revised 7–17 → 5–12 sessions. Commit `653637c`.
 - → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §13 (correction)
-- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W39 supersedes C-W38; Q3 closed; Q4 dissolved)
+- → `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W39 supersedes C-W38; Q3 closed; Q4 dissolved)
 - → Tier 4: `reasoning-capotauro.md` §10 (Session 129 reasoning at Patch 0426)
 
 **Patch 0425 (Session 130):** Q5 (cross-sector consistency with SF-2 W bracelet) CLOSED at Layer 2 via Substrate-Locality Unification theorem. Sketch §14 (~93 lines, v2 framing — v1 sign-coherence draft deleted in-session). The §13.3 local-I_h-preservation theorem applies uniformly to any subset of first-shell vertices, hence covers both K3-base (OPEN-FI-C-9) and W-bracelet (OPEN-FP-SF-2) substrate objects. **Finding C-W40** (NEW): Substrate-Locality Unification under vertex-aligned Reading C — first explicit cross-sector unification result under OPEN-SD-CHIR-PRIMITIVE umbrella. K3-doublet's d_E/V_cage = 2/12 = 1/6 cage-shell factor (paper §10) yielding χ/6; W-bracelet's analog factor on Petrie-polygon D_6 sub-stabilizer is Q5 Layer 3 target (2–4 sessions). Sketch grows 904 → 997 lines (+93 net). Commit `b1b17b5`.
 - → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §14 (Q5 Layer 2 closure)
-- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W40 registered; Q5 Layer 2 closed)
+- → `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W40 registered; Q5 Layer 2 closed)
 - → Tier 4: `reasoning-capotauro.md` §11 (Session 130 reasoning + v1/v2 §14 cleanup decision at Patch 0426)
 
 **Patch 0426 (Session 130 close):** Session-close handover protocol — Sessions 127–130 Reading C closure arc handover per `templates/operating_system.md` §15. Step A (per-session logs), Step B (this transcript update), Step C (development vignettes), Step D (Tier 4 reasoning §8–§11), Step E (Organizational_Frontier OPEN-ORG-015 + future_projects Q5/Q6/Q7), Step G (paste-truncation workflow item registered as OPEN-ORG-015), Step H (this `handover-capotauro.md` overwrite). Steps F + several Step E sub-items marked N/A with audit rationale.
@@ -356,7 +356,7 @@
 - → `flagship_papers/capotauro/documentation_suite/development-capotauro.md` (Sessions 127–130 vignettes appended)
 - → `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` §8–§11 (appended)
 - → `flagship_papers/capotauro/documentation_suite/handover-capotauro.md` (overwrite with Session 130 close handover)
-- → `Organizational_Frontier.md` OPEN-ORG-015 (NEW, paste-truncation workflow)
+- → `organizational_frontier.md` OPEN-ORG-015 (NEW, paste-truncation workflow)
 - → `future_projects.md` (Q5 Layer 3 + Q6 + Q7 entries appended)
 
 ---
@@ -365,9 +365,9 @@
 
 **Patch 0427 (Session 131):** Q5 Layer 3 piece (a) CLOSED — explicit W-bracelet Schur-orthogonality cage-shell factor on $D_6$ stabilizer. Pure group-theory derivation: the bracelet's 6-vertex permutation representation of $D_6$ decomposes as $A_1 \oplus B_1 \oplus E_1 \oplus E_2$ (verified via Schur inner-product against the standard $D_6$ character table from permutation character $(6, 0, 0, 0, 2, 0)$); the V-A current is identified with $E_2$ at the $C_6$ eigenvalue level (the 120°/240° phase bias of SF-2 v1.0 PROP-SF-2-5 corresponds to $\chi^{E_2}(C_6) = -1$); the Schur-orthogonality cage-shell factor evaluates to $|M_\perp^W| = d_{E_2}/|D_6| = 2/12 = 1/6$, **identical to the K3-doublet's cage-shell factor**. **Finding C-W41 (NEW)** registered: explicit W-bracelet cage-shell factor; Substrate-Locality Unification (Finding C-W40) promoted Layer 2 → Layer 3 with explicit numerical cage-shell-factor content. Cross-sector numerical unification corollary: $|M^{W,V\text{-}A}| = \chi \cdot (1/6) = \chi/6 \equiv |M^{K3}|$, evaluating to $\phi^{-3}/6 \approx 0.0394$ in both sectors. **Reading 1 vs Reading 2 analytical decision documented (§15.8)**: the handover §14.7(a) anticipated denominator $V_{\text{bracelet}} = 6$ giving $2/6 = 1/3$; the explicit derivation reveals the K3 case's $V_{\text{cage}} = |\Dsix|$ coincidence does not carry over to the W-bracelet (vertex stabilizer $C_2$ of order 2 under $D_6$ acting transitively on the 6-vertex hexagon), so Reading 1 (Schur-fundamental $d_\Gamma/|G|$, K3 paper §5.4 Arguments 1+2 motivated) is adopted over Reading 2 (vertex-count literal). Methodological observation §15.12: cross-sector extension of a paper-internal formula can resolve ambiguities the original paper's scope didn't expose. Sketch grows 997 → 1106 lines (+109 net). Q5 Layer 3 piece-by-piece: piece (a) CLOSED; piece (b) (SF-2 V-A coupling matching at massless helicity limit) open conditional on (a); piece (c) (Wigner-Eckart $\Hthree \to \Dsix$ branching) open. Layer 3 closure trajectory revised 4-10 → 3-9 sessions.
 - → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §15 (Q5 Layer 3 piece (a) closure)
-- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W41 registered; Q5 Layer 3 piece (a) closed)
-- → `Research_Frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (W-bracelet Layer 3 piece (a) closure noted)
-- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 2-7 → 1-6 sessions remaining)
+- → `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W41 registered; Q5 Layer 3 piece (a) closed)
+- → `research_frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (W-bracelet Layer 3 piece (a) closure noted)
+- → `research_frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 2-7 → 1-6 sessions remaining)
 - → Tier 3: `development-capotauro.md` (Session 131 vignette appended)
 - → Tier 4: `reasoning-capotauro.md` §12 (Session 131 reasoning appended)
 
@@ -397,9 +397,9 @@ Sketch §16 (~138 lines) appended covering: §16.1 piece (b)+(c) targets recap; 
 
 Sketch grows 1106 → 1244 lines (+138 net). Q5 Layer 3 piece-by-piece: piece (a) Layer 3 (Patch 0427); pieces (b)+(c) Layer 2 (this patch); Q5-PAIRING open. Layer 3 closure trajectory revised 3-9 → 2-8 sessions. OPEN-SD-CHIR-PRIMITIVE umbrella prerequisite stack: 1-6 → 0-5 sessions remaining; **essentially complete at Layer 2 cross-sector unification level** with Layer 3 full promotion conditional on Q5-PAIRING.
 - → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §16 (Q5 Layer 3 pieces (b)+(c) Layer 2 composite closure)
-- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W42 registered; pieces (b)+(c) Layer 2 closed; Q5-PAIRING registered)
-- → `Research_Frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (Layer 2 composite closure noted; Layer 4 EFT closure target framing)
-- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 1-6 → 0-5 sessions; umbrella essentially complete at Layer 2)
+- → `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W42 registered; pieces (b)+(c) Layer 2 closed; Q5-PAIRING registered)
+- → `research_frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (Layer 2 composite closure noted; Layer 4 EFT closure target framing)
+- → `research_frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 1-6 → 0-5 sessions; umbrella essentially complete at Layer 2)
 - → Tier 3: `development-capotauro.md` Vignette 30 (Session 131 continued)
 - → Tier 4: `reasoning-capotauro.md` §13 (Session 131 Patch 0428 reasoning: analytical complication discovery + Proposal 2 framing decision)
 
@@ -439,9 +439,9 @@ Methodological observation (§17.13): the three-step pattern (Substrate-Locality
 
 Sketch grows 1244 → 1414 lines (+170 net). Q5 Layer 3 piece-by-piece: piece (a) Layer 3 (Patch 0427, refined interpretation Patch 0429); piece (b) Layer 3 (Patch 0429); piece (c) Layer 3 (Patch 0429); Q5-PAIRING resolved (Patch 0429). Layer 3 closure trajectory revised 2-8 → 1-7 sessions. OPEN-SD-CHIR-PRIMITIVE umbrella prerequisite stack: 0-5 → 0-4 sessions remaining; **full Layer 3 cross-sector unification milestone reached**.
 - → `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §17 (Q5-PAIRING resolution at Layer 3 via inversion-parity structure on antipodal pairs)
-- → `Research_Frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W43 registered; Q5-PAIRING resolved; pieces (b)+(c) full Layer 3)
-- → `Research_Frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (full Layer 3 cross-sector unification achieved noted)
-- → `Research_Frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 0-5 → 0-4 sessions; full Layer 3 milestone reached)
+- → `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (Finding C-W43 registered; Q5-PAIRING resolved; pieces (b)+(c) full Layer 3)
+- → `research_frontier.md` §OPEN-FP-SF-2-CHIR Cross-sector connections (full Layer 3 cross-sector unification achieved noted)
+- → `research_frontier.md` §OPEN-SD-CHIR-PRIMITIVE Forward queue (revised 0-5 → 0-4 sessions; full Layer 3 milestone reached)
 - → Tier 3: `development-capotauro.md` Vignette 31 (Session 131 continued)
 - → Tier 4: `reasoning-capotauro.md` §14 (Session 131 Patch 0429 reasoning: Q5-PAIRING resolution analytical work)
 

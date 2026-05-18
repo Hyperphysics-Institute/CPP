@@ -70,6 +70,6 @@
 
 **HYPOTHESIS (paper-level structural):** A premise invoked within a single paper to enable a derivation; explicitly not promoted to programme-level axiom. C1–C4 (inherited from SS-7) and D1–D3 (introduced in SS-8) are paper-level structural hypotheses.
 
-**OPEN:** A registered problem in `Research_Frontier.md`. SS-8 opens OPEN-SS-26 (D1 Level-3 PARTIAL), OPEN-SS-27 (D2 derivation), OPEN-SS-28 (D3 derivation), and partially resolves OPEN-SS-23.
+**OPEN:** A registered problem in `research_frontier.md`. SS-8 opens OPEN-SS-26 (D1 Level-3 PARTIAL), OPEN-SS-27 (D2 derivation), OPEN-SS-28 (D3 derivation), and partially resolves OPEN-SS-23.
 
 **SIGNAL:** Empirical agreement at high precision but the underlying theorem is not yet rigorously proved. Used in CPP-wide registries for entries like PRED-C-13 (heavy-quark Koide K(c,b,t)). SS-8's predictions are not signal-tier — they are conditional theorems with explicit structural dependencies.

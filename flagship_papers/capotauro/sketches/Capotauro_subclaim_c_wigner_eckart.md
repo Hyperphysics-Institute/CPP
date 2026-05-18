@@ -2001,7 +2001,7 @@ The Capotauro mechanism's role in SF-2 is to provide the **chirality coupling in
 
 1. **Session 102 (next)**: **Sub-claim (c) v1.0 closure with Δp_LR scope**. Update parent Capotauro sketch §1.4 to reflect the Sessions 88-101 closure trajectory; finalize the closure narrative; prepare for theorem-registry registration of Theorem 18.1 as theorem #48.
 
-2. **Session 103: Theorem-registry registration**. Add Theorem 18.1 to `theorem-registry.md` as theorem #48 with full proof reference to `Capotauro_subclaim_c_wigner_eckart.md` §18. Update Research_Frontier.md to mark sub-claim (c.4.G1+G2) as closed at v1.0.
+2. **Session 103: Theorem-registry registration**. Add Theorem 18.1 to `theorem-registry.md` as theorem #48 with full proof reference to `Capotauro_subclaim_c_wigner_eckart.md` §18. Update research_frontier.md to mark sub-claim (c.4.G1+G2) as closed at v1.0.
 
 3. **Session 104+: SF-2 v2.0 planning**. Re-open SF-2 with Capotauro mechanism integration. Q11 (sin²θ₁₃ from $|M| = \chi/6$) becomes the central SF-2 v2.0 derivation challenge.
 
@@ -2135,7 +2135,7 @@ These open questions do NOT block sub-claim (c) v1.0 closure — they are proper
 
 ### §22.10 Forward queue update (Sessions 103+, post-v1.0)
 
-1. **Session 103 (next)**: **Theorem-registry registration**. Add Theorem 18.1 to `theorem-registry.md` as theorem #48 with full statement and proof reference to `Capotauro_subclaim_c_wigner_eckart.md` §18. Update `Research_Frontier.md` to mark sub-claim (c.4.G1+G2) as closed at v1.0. Update parent sketch `Capotauro_chi_phi_closure.md` §1.4 with Sessions 88-101 closure trajectory and Δp_LR validated empirical prediction.
+1. **Session 103 (next)**: **Theorem-registry registration**. Add Theorem 18.1 to `theorem-registry.md` as theorem #48 with full statement and proof reference to `Capotauro_subclaim_c_wigner_eckart.md` §18. Update `research_frontier.md` to mark sub-claim (c.4.G1+G2) as closed at v1.0. Update parent sketch `Capotauro_chi_phi_closure.md` §1.4 with Sessions 88-101 closure trajectory and Δp_LR validated empirical prediction.
 
 2. **Session 104+: SF-2 v2.0 planning**. Re-open SF-2 with Capotauro mechanism integration. Q11 (sin²θ_13 from $|M| = \chi/6$) becomes the central SF-2 v2.0 derivation challenge. Numerical conjecture candidate γ ($\sin^2\theta_{13} = b \cdot m_\perp$) registered as structural observation guiding the work.
 

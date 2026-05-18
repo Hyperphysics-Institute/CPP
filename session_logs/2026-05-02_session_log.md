@@ -123,7 +123,7 @@ The pivot from "close v0.2's Lemma B gaps" to "restructure Lemma B" reflects the
 
 **Continuation of:** Above session log (Session 4 v0.3 working draft restructuring).
 **Trigger:** Thomas's articulation of operative principle for next-arc selection: shoot the stars (swarm of zero-parameter predictions); accept what the data says; "sufficient breadth with convincing depth that proofs of axiom to theorem are not isolated or plausibly post-diction curve fitting." Three options analysed: (1A) v0.3 → v0.1 paper-text transition, (1B) OPEN-SS-33 first-principles closure, (γ) PRED-O-16/17/18 testing via alpha-chain extension. Option (γ) selected as the only path that adds new stars to the swarm.
-**Patches produced (continuation):** 0058 (sketch document `SS-9_alpha_chain_extended_residuals.md`), 0059 (Python computation script `SS-9_alpha_chain_extended.py`), 0060 (PRED-O-19 + PRED-O-16/17/18 status updates + FALS-C-8 in `predictions.md`), 0061 (OPEN-SS-34 in `Research_Frontier.md`), 0062 (transcript-SS-9 transactions 058-072), 0063 (development-SS-9 Vignette 6), 0064 (reasoning-SS-9 Session 4 follow-up verbatim append), 0065 (this session log continuation).
+**Patches produced (continuation):** 0058 (sketch document `SS-9_alpha_chain_extended_residuals.md`), 0059 (Python computation script `SS-9_alpha_chain_extended.py`), 0060 (PRED-O-19 + PRED-O-16/17/18 status updates + FALS-C-8 in `predictions.md`), 0061 (OPEN-SS-34 in `research_frontier.md`), 0062 (transcript-SS-9 transactions 058-072), 0063 (development-SS-9 Vignette 6), 0064 (reasoning-SS-9 Session 4 follow-up verbatim append), 0065 (this session log continuation).
 
 ### Substantive content
 
@@ -1462,11 +1462,11 @@ These three targets together turn Phase 3B into a sharp falsifier rather than a 
 ## Session 13 close — OPEN-ORG-013 registered (bootup.md commit-flow promotion); register-and-defer (5 May 2026)
 
 **Trigger:** End-of-session housekeeping pass after Phase 3A handoff (patches 0156–0165 pushed to `origin/main` at `233d87d`). Thomas requested the organizational items recommended during Phase 1 close be handled before the new context window.
-**Patch produced:** 0166 (this entry + OPEN-ORG-013 registration in `Organizational_Frontier.md`). Single-patch organizational deliverable.
+**Patch produced:** 0166 (this entry + OPEN-ORG-013 registration in `organizational_frontier.md`). Single-patch organizational deliverable.
 
 ### Action
 
-Registered OPEN-ORG-013 in `Organizational_Frontier.md` mirroring the OPEN-ORG-012 register-and-defer pattern. The substantive bootup.md restructure (promote commit-flow subsection to top-level §3 with "READ FIRST IF GENERATING PATCHES" callout, add Step-1 priority-table annotation column) is captured with full fidelity in the entry's Proposed Fix section but execution is deferred to a future session with ~30–60 minutes of organizational capacity. Anti-trigger: do not initiate mid-session; this is a structural restructure of the file every session reads first.
+Registered OPEN-ORG-013 in `organizational_frontier.md` mirroring the OPEN-ORG-012 register-and-defer pattern. The substantive bootup.md restructure (promote commit-flow subsection to top-level §3 with "READ FIRST IF GENERATING PATCHES" callout, add Step-1 priority-table annotation column) is captured with full fidelity in the entry's Proposed Fix section but execution is deferred to a future session with ~30–60 minutes of organizational capacity. Anti-trigger: do not initiate mid-session; this is a structural restructure of the file every session reads first.
 
 ### Rationale for register-and-defer rather than execute-now
 
@@ -1478,7 +1478,7 @@ The fix is mechanical (~30–60 minutes) and could in principle have been execut
 
 ### Verdict
 
-OPEN-ORG-013 registered. Execution deferred to a future session with appropriate capacity. No physics dependency; no programme blocker. The bootup-visibility failure mode itself is now captured in the registry; the next Opus session that reads `Organizational_Frontier.md` during its bootup pass will see OPEN-ORG-013 in §1 §"Open Organizational Problems" and have the option to act on it before reaching the patch-generation step where the failure historically occurs — which itself partially mitigates the failure mode even before the bootup.md restructure executes.
+OPEN-ORG-013 registered. Execution deferred to a future session with appropriate capacity. No physics dependency; no programme blocker. The bootup-visibility failure mode itself is now captured in the registry; the next Opus session that reads `organizational_frontier.md` during its bootup pass will see OPEN-ORG-013 in §1 §"Open Organizational Problems" and have the option to act on it before reaching the patch-generation step where the failure historically occurs — which itself partially mitigates the failure mode even before the bootup.md restructure executes.
 
 ### Cumulative Session 13 deliverable count
 
@@ -1502,7 +1502,7 @@ Three substantive physics deliverables (Phase 2 RULED OUT, Phase 3A RULED OUT + 
 ## Session 13 close addendum — OPEN-ORG-013 resolved same-session via bootup.md restructure (5 May 2026)
 
 **Trigger:** Thomas asked whether patch 0166 had handled the visibility failure. It had not — only registered it. Claude reconsidered the deferral on the merits and reversed the defer-to-future-session decision.
-**Patch produced:** 0167 (this entry + bootup.md restructure + OPEN-ORG-013 status change to RESOLVED + relocation from §1 to §3 of `Organizational_Frontier.md`). Single-patch organizational deliverable.
+**Patch produced:** 0167 (this entry + bootup.md restructure + OPEN-ORG-013 status change to RESOLVED + relocation from §1 to §3 of `organizational_frontier.md`). Single-patch organizational deliverable.
 
 ### What changed
 
@@ -1510,7 +1510,7 @@ Three substantive physics deliverables (Phase 2 RULED OUT, Phase 3A RULED OUT + 
 2. **bootup.md Step-1 priority table extended** with "Don't skip" annotation column. Row 1 (`bootup.md` itself) flags §3 as critical for any session that will generate patches; Row 7 (`templates/operating_system.md`) flags §4 as critical for documentation-discipline work.
 3. **bootup.md cascade renumber** of all sections from §3.5 → §4.5 and §4 → §5 through §13 → §14, with eight internal §-cross-references updated.
 4. **bootup.md §2 forward-pointer added** at end of §2 directing readers to §3 for patch-and-apply workflow.
-5. **bootup.md Step-1 advisory added** below the priority table directing fresh sessions to scan `Organizational_Frontier.md` §1 for any open organizational items that may bear on the current session — surfaces deferred items like OPEN-ORG-012 at the bootup entry point.
+5. **bootup.md Step-1 advisory added** below the priority table directing fresh sessions to scan `organizational_frontier.md` §1 for any open organizational items that may bear on the current session — surfaces deferred items like OPEN-ORG-012 at the bootup entry point.
 6. **OPEN-ORG-013 status changed** OPEN → RESOLVED with full Resolution-as-adopted block + Cycle-time annotation + History event noting the in-session reversal.
 7. **OPEN-ORG-013 relocated** from §1 (Active Open) to §3 (Resolved) per registry convention "resolved entries stay in the file under §3 (Resolved) for historical reference rather than being deleted."
 
@@ -1550,7 +1550,7 @@ Total: **17 patches landed on `origin/main`** across Session 13. Three substanti
 ## Session 13 final close — OPEN-ORG-014 registered AND resolved; canonical 8-step handover protocol adopted (5 May 2026)
 
 **Trigger:** Thomas asked at session close whether the transcript and other documentation-discipline artifacts had been produced; the resulting audit (patch 0168 retrospective Tier 2/4 closure) revealed that the §15 four-item checklist did not reliably fire because each item was independently auditable rather than mechanically sequenced, and the §4-vs-§15 reconciliation distributed the handover function across multiple files rather than concentrating it in a single paste-ready artifact. Thomas proposed the canonical handover protocol with paste-ready handover document as the structural fix.
-**Patch produced:** 0169 (this entry + `templates/operating_system.md` §15 8-step handover protocol restructure + `bootup.md` Step-1 Row 7 annotation extension + `Organizational_Frontier.md` OPEN-ORG-014 entry + `future_projects.md` update through Session 13 + `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` inaugural Step H artifact). Single-patch organizational+demonstration deliverable.
+**Patch produced:** 0169 (this entry + `templates/operating_system.md` §15 8-step handover protocol restructure + `bootup.md` Step-1 Row 7 annotation extension + `organizational_frontier.md` OPEN-ORG-014 entry + `future_projects.md` update through Session 13 + `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` inaugural Step H artifact). Single-patch organizational+demonstration deliverable.
 
 ### Action
 
@@ -3056,7 +3056,7 @@ Now that SS-9 is shipped at v1.0, the paper completion sequence proper begins:
 
 - **Anthology chapter** at Rovelli/Scientific American register, parallel to SS-7 and SS-8 chapters in the anthology
 - **TATWD integration**: SS-9 slots into the Standard Model emergence narrative as the C4 closure on the refined-C1 foundation from SS-7
-- **Registers freeze**: paper_catalog.md gets the SS-9 v1.0 entry; theorem-registry.md gets Theorem 6.1 + the three sub-lemmas; Research_Frontier.md final update marking SS-9 SHIPPED at v1.0
+- **Registers freeze**: paper_catalog.md gets the SS-9 v1.0 entry; theorem-registry.md gets Theorem 6.1 + the three sub-lemmas; research_frontier.md final update marking SS-9 SHIPPED at v1.0
 - **OSF deposit + arXiv submission** as the public-posting venue for sub-task (e) in its rescoped form
 
 In parallel: continued investigation of OPEN-SS-37 closure routes (Route (a) facet (b) sufficiency derivation; Route (d) literature review for EDM theory, rigidity theory, alpha complexes); SS-10 sub-shell-physics multi-paper development continues at programme level.
@@ -3135,7 +3135,7 @@ New file created at `series_strong/papers/SS-9/letters/SS-9_post_ship_OSF_arXiv_
 - **§1 Pre-submission checklist** — paper compiles cleanly, Figure 1 invariants verified per Lesson 6, bibliography correct, cross-references resolve, PDF is v1.0, license decision documented (CC BY 4.0), GitHub origin/main reflects v1.0 at `84ee07f` or later
 - **§2 OSF deposit procedure** — DOI 10.17605/OSF.IO/JXE8D registered; artifacts to deposit (.tex source, .pdf compiled, .bib bibliography, optional sketches/ and documentation_suite/); metadata fields (title, authors, affiliation, DOI, abstract, tags, license, date); project description suggested text; cross-references to GitHub repo and arXiv submission; expected timing immediate
 - **§3 arXiv submission procedure** — categories `nucl-th` (primary) + `math-ph` (secondary); endorsement requirement; LaTeX source upload format with `cpp_references.bib`; metadata fields including comments with seven-pass AI review history and rescope explanation; license CC BY 4.0; MSC and PACS classifications; expected timing 1-2 business days standard moderation
-- **§4 Post-submission tracking** — filing incoming external feedback at `series_strong/papers/SS-9/reviews/external/`; v1.x revision triggers on same polish-track cadence as v0.1→v1.0 with per-symmetric-honesty verification of each external point; programme-level tracking via Research_Frontier.md and future_projects.md updates; no-feedback case handling — sub-task (e) satisfied by act of public posting, not receipt of feedback
+- **§4 Post-submission tracking** — filing incoming external feedback at `series_strong/papers/SS-9/reviews/external/`; v1.x revision triggers on same polish-track cadence as v0.1→v1.0 with per-symmetric-honesty verification of each external point; programme-level tracking via research_frontier.md and future_projects.md updates; no-feedback case handling — sub-task (e) satisfied by act of public posting, not receipt of feedback
 - **§5 Symmetric-honesty notes** — preserving conditional-theorem framing (paper does not claim unconditional derivation; reader who interprets it that way is misreading) and AI-review-only basis transparency (v1.0 rests on seven AI review passes, not human domain-expert review; reader who interprets v1.0 as human-validated is misreading)
 - **§6 Coordination with other paper completion sequence tracks** — anthology chapter Session 34, TATWD integration Session 35, registers freeze this session
 - **§7 Decision authority and execution** — Thomas decides timing and metadata, Isak handles OSF execution per existing programme practice (paper_catalog.md "Publication Plan" section), Thomas or Isak handles arXiv with endorsement step
@@ -3313,7 +3313,7 @@ UNCHANGED in the technical sense (no new theorems, no new empirical predictions,
 - **0285** errata: handover-SS-9.md filename correction (3 places) + todolist.md TODO-002 scope correction
 - **0286** SS-8.tex `\Kthree` macro `\ensuremath` wrapper (line 248)
 - **0287** SS-8.tex `\usepackage{xcolor}` import (line 231, before mdframed)
-- **0288** (this patch) Session 36 close P1 hygiene: todolist.md cleanup (TODO-002 cleared; TODO-001/003/004/005/006 demoted to P2 with rationale; TODO-007 updated with OSF complication + fallback plan) + this session log entry + Research_Frontier.md last-updated header bump
+- **0288** (this patch) Session 36 close P1 hygiene: todolist.md cleanup (TODO-002 cleared; TODO-001/003/004/005/006 demoted to P2 with rationale; TODO-007 updated with OSF complication + fallback plan) + this session log entry + research_frontier.md last-updated header bump
 - Plus direct commit `55c5986` (SS-8 + SS-9 PDFs added to repo, no patch chain since binary build artifacts)
 - Plus revert commit `ccb6041` of damaged-PDF commit `6e86818`
 
@@ -3328,11 +3328,11 @@ UNCHANGED in technical sense (no new theorems, no new empirical predictions, no 
 - **arXiv submission for SS-9**: independent of OSF status. Categories nucl-th + math-ph. Can proceed at any time per Thomas's decision.
 - **TODO-006 promotion decision**: consider promoting to `future_projects.md` as OPEN-WORKFLOW-1 multi-session bibliography migration project.
 - **`todolist.md` P1 items**: empty as of Session 36 close. SS-10 may begin.
-- **Anti-priorities sustained** including programme-practice documentation discipline (Session 36 is bookkeeping session — not introducing new SS-9 artifacts, so the four-tier discipline does not apply; this session's effects are scoped to todolist.md + session log + Research_Frontier.md last-updated, plus the SS-8.tex hygiene patches 0286+0287 which are LaTeX-only, no paper-content changes) and `todolist.md` discipline (now cleared for SS-10 start).
+- **Anti-priorities sustained** including programme-practice documentation discipline (Session 36 is bookkeeping session — not introducing new SS-9 artifacts, so the four-tier discipline does not apply; this session's effects are scoped to todolist.md + session log + research_frontier.md last-updated, plus the SS-8.tex hygiene patches 0286+0287 which are LaTeX-only, no paper-content changes) and `todolist.md` discipline (now cleared for SS-10 start).
 
 ### Documentation discipline at Session 36 close
 
-This is a **bookkeeping session** — not introducing new SS-9 artifacts. Session 33 lesson learned that the four-tier documentation suite applies whenever new SS-9 artifacts ship is preserved; Session 36 does not introduce new SS-9 artifacts, so the suite is not retriggered. SS-9 documentation suite four-tier files (development-SS-9.md Vignettes 1-42, transcript-SS-9.md transactions 1-790, reasoning-SS-9.md through Session 35, handover-SS-9.md at Session 35 close + Session 36 patch 0285 filename errata) remain in their Session 35 close state plus the patch 0285 errata applied. Per the maintenance discipline of `todolist.md`: "Sessions that touch only this file (no other substantive work) follow the standard programme practice of session log + Research_Frontier.md last-updated entry — the documentation suite for a paper is updated only if the cleared item was paper-specific." Session 36 touches todolist.md (P1 cleanup) + session log (this entry) + Research_Frontier.md last-updated, and additionally the SS-8.tex source plus the handover-SS-9.md errata via patches 0285/0286/0287 plus the PDF commit `55c5986`. The SS-8.tex hygiene fixes are LaTeX-only with no paper-content changes; the handover-SS-9.md errata is a 3-place filename correction; the PDFs are build artifacts not source content. None of these triggers the four-tier discipline for SS-9.
+This is a **bookkeeping session** — not introducing new SS-9 artifacts. Session 33 lesson learned that the four-tier documentation suite applies whenever new SS-9 artifacts ship is preserved; Session 36 does not introduce new SS-9 artifacts, so the suite is not retriggered. SS-9 documentation suite four-tier files (development-SS-9.md Vignettes 1-42, transcript-SS-9.md transactions 1-790, reasoning-SS-9.md through Session 35, handover-SS-9.md at Session 35 close + Session 36 patch 0285 filename errata) remain in their Session 35 close state plus the patch 0285 errata applied. Per the maintenance discipline of `todolist.md`: "Sessions that touch only this file (no other substantive work) follow the standard programme practice of session log + research_frontier.md last-updated entry — the documentation suite for a paper is updated only if the cleared item was paper-specific." Session 36 touches todolist.md (P1 cleanup) + session log (this entry) + research_frontier.md last-updated, and additionally the SS-8.tex source plus the handover-SS-9.md errata via patches 0285/0286/0287 plus the PDF commit `55c5986`. The SS-8.tex hygiene fixes are LaTeX-only with no paper-content changes; the handover-SS-9.md errata is a 3-place filename correction; the PDFs are build artifacts not source content. None of these triggers the four-tier discipline for SS-9.
 
 ### Critical orientation for Session 37 (the next context window)
 
@@ -3341,7 +3341,7 @@ The next Opus context window should begin by reading:
 2. This Session 36 entry in the session log
 3. `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (SS-9-specific handover, last updated Session 35 + Session 36 patch 0285 errata)
 4. `todolist.md` (now P1-empty, SS-10 may begin)
-5. `Research_Frontier.md` (latest programme-state summary; bumped to Session 36)
+5. `research_frontier.md` (latest programme-state summary; bumped to Session 36)
 6. `paper_catalog.md` (SS-9 row at v1.0 SHIPPED with PDF now in repo)
 7. Then proceed to SS-10 framing conversation with Thomas — see handover document for prompts.
 

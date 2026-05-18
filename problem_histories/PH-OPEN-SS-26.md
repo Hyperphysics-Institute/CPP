@@ -3,7 +3,7 @@
 **Problem:** OPEN-SS-26 — D1 (Interstitial neutron localizes at alpha-vertex) derivation via SSV minimization
 **Status at time of this file:** OPEN (PARTIAL — Level-1 algebraic + Level-2 functional independence achieved under Models A and B; Level-3 physical-principle independence open)
 **Sector:** SS (nuclear physics)
-**Location in registry:** `Research_Frontier.md` §1, Strong Sector (SS)
+**Location in registry:** `research_frontier.md` §1, Strong Sector (SS)
 **File created:** 23 April 2026
 **Purpose:** Record the extended narrative of OPEN-SS-26's partial resolution, too long to fit in the registry entry's "Current best lead" field. Also captures the methodological lesson (Level-1/2/3 epistemic decomposition of independence claims) that emerged and is likely to generalize beyond D1.
 
@@ -43,7 +43,7 @@ This file records that history at a level of detail the registry entry cannot ho
 | 22 April 2026 | ChatGPT on Q2: agrees isomorphism killed but argues "independence" as stated in §10 overstates what §8 supports; proposes Level-1/2/3 decomposition | `series_strong/papers/SS-8/reviews/round2_chatgpt_on_Q2_analysis.md` |
 | 22 April 2026 | Level-1/2/3 refinement adopted across sketch, Q2 analysis, H2' note | Round 2 synthesis letter |
 | 22 April 2026 | Round 2 synthesis letter finalized | `series_strong/papers/SS-8/letters/SS-8_Round2_synthesis_letter.md` |
-| 23 April 2026 | OPEN-SS-26, -27, -28 formally registered in Research_Frontier.md (Hierarchy 2 sweep, patch 3) | registry |
+| 23 April 2026 | OPEN-SS-26, -27, -28 formally registered in research_frontier.md (Hierarchy 2 sweep, patch 3) | registry |
 
 ---
 
@@ -120,7 +120,7 @@ D1 currently stands as a conditional theorem under two functionally distinct rea
 
 The Level-1/2/3 decomposition is likely to apply to other CPP "independent-premises" claims. A spot audit of existing theorems would be prudent: any theorem stated as "proved from independent premises X and Y" should be checked for whether X and Y share a deeper unstated ancestor that could be falsified by the same programme-level evidence. This is a new audit-level review discipline, cheap to apply, and may surface unnoticed Level-3 dependencies.
 
-A new programme-level question for Research_Frontier.md:
+A new programme-level question for research_frontier.md:
 
 > **Candidate OPEN-G-N:** Does CPP implicitly assume proximity-binding as a meta-axiom across its geometric-aggregation claims? If so, is proximity-binding derivable from A1–A3, or is it an unstated axiom that should be elevated?
 

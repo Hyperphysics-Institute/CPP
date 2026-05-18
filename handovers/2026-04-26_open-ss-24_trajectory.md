@@ -31,7 +31,7 @@ Then specifically for OPEN-SS-24:
 
 6. `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` v1.2 — read §5 carefully (the section that registers the four candidate mechanisms for the apparent underbinding) and §3 (the simplicial-polytope assumption itself, hypothesis C4)
 7. `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` v1.0 — read §3 (D1, D2, D3 hypothesis statements), §4 (the central H2′ derivation), and §6 (Pattern 6 cascade discussion; this is where the structural-recurrence picture gets articulated)
-8. `Research_Frontier.md` — find the OPEN-SS-24 entry; note its current state and dependencies
+8. `research_frontier.md` — find the OPEN-SS-24 entry; note its current state and dependencies
 9. `series_strong/papers/SS-7/documentation_suite/philosophy-SS-7.md` — read this; it explains the conditional-vs-derived distinction in SS-7's framing and gives the right register for thinking about C4 as an assumption-versus-theorem
 10. `series_strong/papers/SS-8/documentation_suite/mechanism-SS-8.md` — read this; it explains how D1/D2/D3 plus C4 (inherited from SS-7) interact
 

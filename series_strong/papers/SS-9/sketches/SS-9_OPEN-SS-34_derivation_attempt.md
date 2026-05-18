@@ -6,7 +6,7 @@
 **Companion files:**
 - `series_strong/papers/SS-9/sketches/SS-9_alpha_chain_extended_residuals.md` (the empirical fingerprint)
 - `series_strong/papers/SS-9/sketches/SS-9_PRED-O-19_verification.md` (the verification)
-- `Research_Frontier.md` OPEN-SS-34 entry (the question)
+- `research_frontier.md` OPEN-SS-34 entry (the question)
 
 **Net programme effect:** OPEN-SS-34 promoted from "registered candidate" to "Level-1 derived under stated hypotheses." Two new candidate open problems registered (OPEN-SS-35: shell-magic-number derivation from CPP; OPEN-SS-36: $B_{\rm slip}$ exact-form derivation). One quantitative refinement: $B_{\rm slip} = \sqrt{3} \cdot B_{\rm pair} = 4.056$ MeV proposed as natural Pattern-6 form, agrees with $^{56}$Ni calibration to 1.4%. Numerical predictions tightened from $B_{\rm slip} = 4.0$ MeV (calibrated) to $B_{\rm slip} = \sqrt{3} \cdot B_{\rm pair} = 4.056$ MeV (zero-parameter, if accepted).
 

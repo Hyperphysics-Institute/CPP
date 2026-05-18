@@ -7,7 +7,7 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling.md` (Session 7 Phase 1 A-scaling extension; this work tests R1 from §3.3)
 - `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a_Ascaling_R1.py` (reproducible computation)
 - `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` Finding 7.1 (R$_{\alpha\alpha}$ inversion from $^8$Be), §11 (Coulomb screening discussion, OPEN-SS-25)
-- `Research_Frontier.md` OPEN-SS-35 entry; OPEN-SS-25 entry (DP-sea screening of alpha-alpha Coulomb)
+- `research_frontier.md` OPEN-SS-35 entry; OPEN-SS-25 entry (DP-sea screening of alpha-alpha Coulomb)
 
 **Net programme effect:** R1 (R$_\alpha$ scale-dependence as A-scaling closure) **RULED OUT**. Three findings, all robust:
 

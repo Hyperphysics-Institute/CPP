@@ -1,12 +1,12 @@
 # CPP Research Timeline
 
-**Location**: `/CPP/Research_Timeline.md` (repo root, parallel to `Research_Frontier.md`, `todolist.md`, `paper_catalog.md`).
-**Purpose**: The programme's *medium-term scheduling* artifact. Sits between `todolist.md` (tactical, days–weeks) and `Research_Frontier.md` (strategic open-problem inventory, unscheduled, multi-year horizon). Captures which papers and methodology campaigns are next in priority order, with dependencies, expected durations, and cross-references to the relevant Frontier OPEN-FP entries and PD-004 publication-pathway layer occupation.
+**Location**: `/CPP/research_timeline.md` (repo root, parallel to `research_frontier.md`, `todolist.md`, `paper_catalog.md`).
+**Purpose**: The programme's *medium-term scheduling* artifact. Sits between `todolist.md` (tactical, days–weeks) and `research_frontier.md` (strategic open-problem inventory, unscheduled, multi-year horizon). Captures which papers and methodology campaigns are next in priority order, with dependencies, expected durations, and cross-references to the relevant Frontier OPEN-FP entries and PD-004 publication-pathway layer occupation.
 **Created**: 15 May 2026 (Patch 0377; post-SF-2 v1.01 SHIP).
 **Maintained**: This file is updated whenever (i) a paper campaign launches, completes, or has its priority reordered; (ii) a methodology campaign is created or resolved; (iii) a literature-integration item is added or completed. Updates are typically piggybacked onto session-close handover patches.
 **Scope discipline**: This file is *content-oriented* — what the programme is doing next. It is NOT:
 - Methodology / procedural conventions (those live in `templates/operating_system.md` + `programmatic_decisions/`)
-- Programme-wide problem inventory (that lives in `Research_Frontier.md`)
+- Programme-wide problem inventory (that lives in `research_frontier.md`)
 - Per-paper version + status (that lives in `paper_catalog.md`)
 - Tactical day-to-day to-dos (those live in `todolist.md`)
 - Per-paper development history (that lives in `flagship_papers/*/documentation_suite/`)
@@ -103,7 +103,7 @@ The remaining SF-line flagship slots, in expected order of strategic priority. N
 
 *Items intentionally deferred but worth tracking.*
 
-- **SS-line continuation** beyond SS-9: any new structural-recurrence problem at higher nuclear scales (e.g., medium-mass nuclei beyond the alpha-cluster regime). Currently no active candidate; Research_Frontier.md OPEN-SS-23 is the most likely re-entry point if it activates.
+- **SS-line continuation** beyond SS-9: any new structural-recurrence problem at higher nuclear scales (e.g., medium-mass nuclei beyond the alpha-cluster regime). Currently no active candidate; research_frontier.md OPEN-SS-23 is the most likely re-entry point if it activates.
 - **SR-corpus advancement** to flagship-paper status: SR-1 special relativity recovery from substrate + SR-corpus equivalent of SS-line / SM-line consolidation papers. Required precursor for SF-6.
 - **QM-corpus advancement**: similar consolidation for the quantum mechanics emergence sector. Required precursor for SF-line continuation more broadly.
 - **SD-corpus** (substrate dynamics foundations): formal first-principles statement of the substrate-dynamics axioms with proof of consistency. Required for Layer 5 EFT bridge.
@@ -210,8 +210,8 @@ All four are compile-ready at v1.0+/v1.01. Public posting is Thomas-side per Bin
 
 This file is part of the programme-level scheduling trio:
 
-- **`Research_Frontier.md`** — Programme-wide problem inventory. Unscheduled OPEN-FP entries. *What problems exist.*
-- **`Research_Timeline.md`** (this file) — Medium-term scheduling. What's next in priority order. *When problems will be worked on.*
+- **`research_frontier.md`** — Programme-wide problem inventory. Unscheduled OPEN-FP entries. *What problems exist.*
+- **`research_timeline.md`** (this file) — Medium-term scheduling. What's next in priority order. *When problems will be worked on.*
 - **`todolist.md`** — Tactical day-to-day to-dos. Days-to-weeks horizon. *What needs doing right now.*
 
 Plus:

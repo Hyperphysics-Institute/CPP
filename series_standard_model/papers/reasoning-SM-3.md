@@ -136,7 +136,7 @@ The 17-file cascade that follows the SM-3 v6 fix:
 |------|-------|
 | Tier 1 (the paper) | `SM-3_*.tex`, `SM-3_*.pdf` |
 | Tier 2 (companions) | `reviews-SM-3.md`, `development-SM-3.md`, `FAQ-SM-3.md`, `philosophy-SM-3.md`, `mechanism-SM-3.md`, `phenomena-SM-3.md`, `glossary-SM-3.md` |
-| Tier 3 (root / programme) | `cpp_references.bib`, `paper_catalog.md`, `theory-overview.md`, `README.md`, `Research_Frontier.md` (+ OPEN-SS-15 registration), `future_projects.md` (+ "Project 0: highest leverage"), `founders_vision.md` (+ "The Layer B Gap" entry), `bootup.md` |
+| Tier 3 (root / programme) | `cpp_references.bib`, `paper_catalog.md`, `theory-overview.md`, `README.md`, `research_frontier.md` (+ OPEN-SS-15 registration), `future_projects.md` (+ "Project 0: highest leverage"), `founders_vision.md` (+ "The Layer B Gap" entry), `bootup.md` |
 
 The cascade is not boilerplate; it is the programme registering, at every level it tracks itself, that the Layer B gap is a real architectural feature requiring a dedicated closure paper.
 
@@ -151,8 +151,8 @@ The closure paper had been called "SS-4" throughout the v6 revision discussion. 
 Resolution:
 
 - The closure paper (operator formalism from CPP primitives) is renumbered from "SS-4" to "TBD (SD-6 or late SS number)." It is no longer a strong-sector-specific paper because the Layer B gap is programme-wide, not strong-sector-specific.
-- The open problem registration is renumbered from "OPEN-SS-15" to "OPEN-SS-16." (OPEN-SS-15 was already in use inside SS-4's .tex for the z² face-mode multiplicity question; that registration was also caught as not yet having been added to `Research_Frontier.md` and was added in the same cleanup pass.)
-- All 8 affected files were updated to use OPEN-SS-16 and "SD-6 (or late SS number)" instead of "SS-4": SM-3 v6 .tex, glossary-SM-3.md, mechanism-SM-3.md, founders_vision.md (×2 references), Research_Frontier.md, future_projects.md, bootup.md.
+- The open problem registration is renumbered from "OPEN-SS-15" to "OPEN-SS-16." (OPEN-SS-15 was already in use inside SS-4's .tex for the z² face-mode multiplicity question; that registration was also caught as not yet having been added to `research_frontier.md` and was added in the same cleanup pass.)
+- All 8 affected files were updated to use OPEN-SS-16 and "SD-6 (or late SS number)" instead of "SS-4": SM-3 v6 .tex, glossary-SM-3.md, mechanism-SM-3.md, founders_vision.md (×2 references), research_frontier.md, future_projects.md, bootup.md.
 - The SS-4 string-tension paper itself was registered in `paper_catalog.md`, `theory-overview.md`, and `README.md` (it had previously been missing from all three) so that the conflict would not recur.
 
 The SS-5 paper number is reserved for the deuteron-binding paper that becomes the next session's target. (See the Forward-looking pointers and "What is preserved elsewhere" sections.)
@@ -209,9 +209,9 @@ The metaphysical axiom point Thomas raised — that consciousness as a primitive
 - `templates/paper-formatting.md` §§4.1A and 4.1B: the required-subsection convention for every CPP paper.
 - `founders_vision.md` (16 April 2026 entry "The Swarm Validation Strategy: Celestial Navigation as Proof Architecture"): Thomas's celestial-navigation framing and Opus's formulation, preserved at full fidelity.
 - `Layer_B_triage_audit.md`: the programme-wide audit identifying Layer B exposure across all 28 papers.
-- `Organizational_Frontier.md` OPEN-ORG-003 (closed via the SS-8 audit, 25 April 2026): the cumulative swarm-tally header in `predictions.md`.
-- `Organizational_Frontier.md` OPEN-ORG-005 (open): retroactive §4.1A/§4.1B adoption in existing papers.
-- `Research_Frontier.md` OPEN-SS-16: the programme-level Layer B gap registered as the closure target.
+- `organizational_frontier.md` OPEN-ORG-003 (closed via the SS-8 audit, 25 April 2026): the cumulative swarm-tally header in `predictions.md`.
+- `organizational_frontier.md` OPEN-ORG-005 (open): retroactive §4.1A/§4.1B adoption in existing papers.
+- `research_frontier.md` OPEN-SS-16: the programme-level Layer B gap registered as the closure target.
 - `series_standard_model/papers/reviews-SM-3.md`: ChatGPT's full Round 1 and Round 2 referee reports verbatim.
 - `series_standard_model/papers/development-SM-3.md`: the Phase 6 narrative for the v5 → v6 revision cycle.
 - `series_standard_model/papers/SM-3_k3_spectral_theorem_koide_formula.tex/.pdf` v6: the paper itself, with the Layer A/B/C section, the corrected robustness Remark, the central-bibliography compliance, and the honest abstract framing ("$K = 2/3$ derived from CPP geometry conditional on Layer B").

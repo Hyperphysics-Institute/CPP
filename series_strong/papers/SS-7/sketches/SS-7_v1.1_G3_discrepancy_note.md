@@ -55,9 +55,9 @@ Option A honestly discloses the ${}^{20}$Ne-exclusion framing while keeping the 
 
 Integrity. The discrepancy was caught by the Phase 7 §G3 numerical cross-check (operating_system.md §4.10) — exactly the role that check exists to play. Documenting it here preserves the protocol's credibility: the verification step caught a real (if minor) mismatch; the mismatch is not being silently buffered.
 
-## Register in Research_Frontier.md
+## Register in research_frontier.md
 
-Added as a minor-revision-tracked item under CONJ-SS-12 in Research_Frontier.md (separate from the main CONJ-SS-12 entry; appended as v1.1 footnote).
+Added as a minor-revision-tracked item under CONJ-SS-12 in research_frontier.md (separate from the main CONJ-SS-12 entry; appended as v1.1 footnote).
 
 ---
 

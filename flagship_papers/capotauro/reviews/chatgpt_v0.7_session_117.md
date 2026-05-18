@@ -70,7 +70,7 @@ ChatGPT identifies that "the paper is better structurally, but the core scientif
 
 > "The derivation |M_⊥| = d_E / V_cage remains elegant but physically under-justified. The paper still needs stronger physical interpretation, not merely structural consistency. Right now it still risks looking like: 'representation-theoretic normalization elevated into physical law.' That will remain the main target for skeptical reviewers."
 
-Status assessment: the §5.4 substrate-isotropy + DI-bit propagation motivation added in Patch 0407 helps but does not close the gap. First-principles derivation is sub-claim (b) v2.0+ work (registered as OPEN-FI-C-10-FP in `Research_Frontier.md`).
+Status assessment: the §5.4 substrate-isotropy + DI-bit propagation motivation added in Patch 0407 helps but does not close the gap. First-principles derivation is sub-claim (b) v2.0+ work (registered as OPEN-FI-C-10-FP in `research_frontier.md`).
 
 ### Issue 2: φ⁻³ Still Risks Appearing Retrospective
 

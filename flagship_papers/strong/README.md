@@ -10,7 +10,7 @@
 
 SF-5 covers the **strong sector** of the Standard Model: gluons, glueballs, mesons, baryons, and the confinement mechanism. It is the apex synthesis of the SS series (SS-1 through SS-9+) plus the open glueball derivation (OPEN-SS-6) and the SS-9 conditional-theorem closure routes (OPEN-SS-37).
 
-The central claim that gives SF-5 its flagship-class force: **the 8-fold SU(3) gluon octet of the Standard Model is a phenomenological dressing of a smaller underlying structure — different bonding relationships between the 4 tetrahedral vertices upon which a baryon forms in CPP, not 8 distinct gluon types.** This is registered as CONJ-SS-Gluon-4Vertex in `Research_Frontier.md`. If the derivation closes, SF-5 makes a forced-choice falsifiable claim against the SM SU(3) octet structure as physically distinct gluon species.
+The central claim that gives SF-5 its flagship-class force: **the 8-fold SU(3) gluon octet of the Standard Model is a phenomenological dressing of a smaller underlying structure — different bonding relationships between the 4 tetrahedral vertices upon which a baryon forms in CPP, not 8 distinct gluon types.** This is registered as CONJ-SS-Gluon-4Vertex in `research_frontier.md`. If the derivation closes, SF-5 makes a forced-choice falsifiable claim against the SM SU(3) octet structure as physically distinct gluon species.
 
 Specifically, SF-5 covers:
 

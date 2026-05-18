@@ -23,7 +23,7 @@ Previous Opus in that same session prepared a bootup prompt `SS-5_session_bootup
 - Inputs from SS-2: $l_\text{unit} = 0.589$ fm, $l_\text{edge} = 0.364$ fm, $r_p = 0.883$ fm, $M_0 = 3.790$ MeV, $\sigma \approx 243$ MeV/fm (SS-2 heuristic)
 - Secondary predictions requested: deuteron radius (2.128 fm), magnetic moment (0.8574 $\mu_N$), p–n mass difference (1.293 MeV), pp/nn unbound qualitative argument
 
-The present Opus session opened with pulling the bootup, reading the prescribed chain (`CPP_the_theory.md`, `theory-overview.md`, `founders_vision.md`, `Research_Frontier.md`), and then SS-2 §5–7 and SS-4 for the string-tension and DP-chain framework.
+The present Opus session opened with pulling the bootup, reading the prescribed chain (`CPP_the_theory.md`, `theory-overview.md`, `founders_vision.md`, `research_frontier.md`), and then SS-2 §5–7 and SS-4 for the string-tension and DP-chain framework.
 
 ---
 
@@ -147,7 +147,7 @@ All times MDT.
 | +90 min | Survey of candidate B_d formulas; selected M₀/φ with physical rationale; began drafting |
 | +150 min | Completed draft (18-page .tex), compiled cleanly; copied artefacts to outputs |
 | +180 min | Began documentation suite: mechanism-SS-5.md, phenomena-SS-5.md, philosophy-SS-5.md, glossary-SS-5.md, keywords-SS-5.md |
-| +210 min | Registry updates: founders_vision.md new entry, Research_Frontier.md (OPEN-SS-10 status, CONJ-SS-10, OPEN-SS-17, PROP-SS-5-1), theory-overview.md, paper_catalog.md, predictions.md |
+| +210 min | Registry updates: founders_vision.md new entry, research_frontier.md (OPEN-SS-10 status, CONJ-SS-10, OPEN-SS-17, PROP-SS-5-1), theory-overview.md, paper_catalog.md, predictions.md |
 | +240 min | Continued registry: bibliography/cpp_references.bib, README.md, series_strong_README.md, axiom-registry.md (6 new predictions), master_glossary.md (9 new terms), INDEX.md, future_projects.md |
 | +270 min | development-SS-5.md (this file), reviews-SS-5.md stub |
 

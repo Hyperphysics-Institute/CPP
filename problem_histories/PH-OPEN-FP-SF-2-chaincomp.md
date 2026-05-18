@@ -2,7 +2,7 @@
 
 **Created:** 14 May 2026 (registered at SF-2 v1.0 SHIP, Session 83 close, Patch 0370)
 **Status:** OPEN — registered open frontier at SF-2 v1.0 SHIP; closure path identified
-**Research_Frontier.md entry:** OPEN-FP-SF-2-chaincomp
+**research_frontier.md entry:** OPEN-FP-SF-2-chaincomp
 **Target paper:** SF-2 v1.x revision (post-public-posting feedback) OR Layer 4 continuum-EFT dedicated paper per PD-004 publication-pathway
 **Parent paper:** SF-2 v1.0 SHIPPED 14 May 2026 (Session 83 close, Patch 0368)
 
@@ -56,7 +56,7 @@ Joint main paper + Companion v1.0 SHIP at Patch 0368 (Session 83 close) with thr
 
 ### Patch 0370 (14 May 2026) — programme-level registration
 
-This file created at Patch 0370 (Session 83 close registers freeze) per the Research_Frontier architecture; entry added to Research_Frontier.md Flagship Papers (FP) section.
+This file created at Patch 0370 (Session 83 close registers freeze) per the Research_Frontier architecture; entry added to research_frontier.md Flagship Papers (FP) section.
 
 ---
 
@@ -93,4 +93,4 @@ OPEN-FP-SF-2-CHIR potentially cross-sector-closeable with OPEN-SM-4 (Capotauro m
 
 ## Registered
 
-14 May 2026 Session 83 close Patch 0370 (this patch) registers OPEN-FP-SF-2-chaincomp in Research_Frontier.md Flagship Papers (FP) section + this problem-history file created.
+14 May 2026 Session 83 close Patch 0370 (this patch) registers OPEN-FP-SF-2-chaincomp in research_frontier.md Flagship Papers (FP) section + this problem-history file created.

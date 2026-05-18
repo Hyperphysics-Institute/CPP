@@ -7,8 +7,8 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling_R1_RULED_OUT.md` (Session 12: where the U-shape was discovered and §5.5 forward pointer was registered)
 - `series_strong/papers/SS-7/SS-7_alpha_cluster_edge_formula.tex` (the OPEN-SS-32 source: §2.1 facet (c), Discussion, hostile-geometry stress test)
 - `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` (the H3$'$ source: §3.5 residual decomposition)
-- `Research_Frontier.md` OPEN-SS-32 entry with Session 12 cross-link (patch 0149)
-- `Research_Frontier.md` OPEN-SS-25 entry with Session 12 cross-link (patch 0149)
+- `research_frontier.md` OPEN-SS-32 entry with Session 12 cross-link (patch 0149)
+- `research_frontier.md` OPEN-SS-25 entry with Session 12 cross-link (patch 0149)
 
 **Net programme effect:** Phase 1 deliverable. **No new physics; no new programme-level stage**. Establishes the substantive prior-art base for the OPEN-SS-32 ↔ U-shape unification hypothesis: the registered hypothesis is geometrically natural rather than speculative, but its quantitative content (whether the same attenuation factor that fits the SS-7 binding-energy excess of $+0.55\,B_{\rm pair}$ also fits the $\hbar\omega$ U-shape) is not yet computed and cannot be assessed without the Phase 2 radial-breathing-mode calculation. Sets up Phase 2 (single-session-tractable) and Phase 3 (multi-session, parameter calibration). Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. Six programme-level stages of OPEN-SS-35 closure programme preserved.
 

@@ -237,7 +237,7 @@ Forward research directions: theorem-level closure of OPEN-FP-SF-4-1 Picture A; 
 | §7 | `SF-4_mechanism_selected.md` §3, SM-5 OPEN-SM-4 | Established |
 | §8 | SM-5 OPEN-SM-4, audit §6 K3 corrections | Inherited |
 | §9 | `SF-4_mechanism_selected.md` §6, audit §15 | Established |
-| §10 | OPEN-FP-SF-4-1, OPEN-FP-SF-4-2 in `Research_Frontier.md`; SM-5 open problem | Honest catalog |
+| §10 | OPEN-FP-SF-4-1, OPEN-FP-SF-4-2 in `research_frontier.md`; SM-5 open problem | Honest catalog |
 | §11 | `SF-4_suppression_derivation.md` §9, programme-level corpus | Cross-sector synthesis |
 
 ---

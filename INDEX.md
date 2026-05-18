@@ -4,7 +4,7 @@ Directory-by-directory map of the entire repository.
 **Last updated:** 11 April 2026
 
 For paper IDs and status, see [`paper_catalog.md`](paper_catalog.md).
-For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (open problems) and [`theorem-registry.md`](theorem-registry.md) (proved results).
+For what is proved vs open, see [`research_frontier.md`](research_frontier.md) (open problems) and [`theorem-registry.md`](theorem-registry.md) (proved results).
 
 ---
 
@@ -15,7 +15,7 @@ For what is proved vs open, see [`Research_Frontier.md`](Research_Frontier.md) (
 | [`README.md`](README.md) | Repository overview, theory summary, 8 registered papers |
 | [`INDEX.md`](INDEX.md) | This file — directory map |
 | [`paper_catalog.md`](paper_catalog.md) | Master list of all papers with IDs, files, and status |
-| [`Research_Frontier.md`](Research_Frontier.md) | **The dashboard** — all open problems, conjectures, propositions with status |
+| [`research_frontier.md`](research_frontier.md) | **The dashboard** — all open problems, conjectures, propositions with status |
 | [`theorem-registry.md`](theorem-registry.md) | All proved theorems by series, with axiom dependencies |
 | [`axiom-registry.md`](axiom-registry.md) | All axioms with tiers, usage, and prediction tracking |
 | [`predictions.md`](predictions.md) | Every quantitative prediction with status labels |
@@ -238,7 +238,7 @@ The full journey of each major open problem — from identification through wron
 | `PH-OPEN-SM-cage-1.md` | Scaling exponent α = 2.38 |
 | `PH-OPEN-SM-10-FEM.md` | FEM chain network simulation |
 
-**Master dashboard:** See [`Research_Frontier.md`](Research_Frontier.md) for the complete register (84 entries across all sectors).
+**Master dashboard:** See [`research_frontier.md`](research_frontier.md) for the complete register (84 entries across all sectors).
 
 ---
 

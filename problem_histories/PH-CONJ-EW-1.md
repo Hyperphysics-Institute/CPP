@@ -2,7 +2,7 @@
 
 **Created:** 1 April 2026
 **Status:** CONJECTURE — mechanism identified and independently validated; formal proof not yet written
-**Research_Frontier.md entry:** CONJ-EW-1
+**research_frontier.md entry:** CONJ-EW-1
 
 ---
 
@@ -111,7 +111,7 @@ The bare ratio 3/8 is proved exactly. The φ correction has a physical mechanism
 
 ## Cross-References
 
-- **Research_Frontier.md entry:** CONJ-EW-1
+- **research_frontier.md entry:** CONJ-EW-1
 - **Related problems:** CONJ-SM-6 (conditional theorem), OPEN-EW-3 (loop density), OPEN-SM-7d (Koide phase)
 - **Development transcript:** `series_electroweak/development/development-EW-Weinberg-Koide-session-20260401.md`
 - **Key files:** `open_problems/OP-EW/CONJ-EW-1_weinberg_angle.md`, `open_problems/OP-SM/CONJ-SM-6_koide_phase.md`

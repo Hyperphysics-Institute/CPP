@@ -7,7 +7,7 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_scoping.md` (Phase 2 scoping that registered this sub-question; Level-0 consistency check at A=56 used a single-mode estimate giving $\hbar\omega = 11.07$ MeV)
 - `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a.py` (reproducible computation for this sketch)
 - `series_strong/papers/SS-8/SS-8_interstitial_neutron_2EV_scaling.tex` (the SS-8 vertex-binding result $-\deg(v) \cdot B_{\rm pair}$ that this work extends to general position)
-- `Research_Frontier.md` OPEN-SS-35 entry
+- `research_frontier.md` OPEN-SS-35 entry
 
 **Net programme effect (if accepted):** OPEN-SS-35 status moves from "scoping work begun, Level-0 consistency check passed" to "Level-1 partial closure of sub-question (a)." Pattern 6 K$_3$ scale-recurrence extends to a 7th confirmed instance (the nucleon-orbital-organization scale, where the K$_3$ quantum $B_{\rm pair}$ produces the harmonic-oscillator mean field that supports nuclear shell structure).
 

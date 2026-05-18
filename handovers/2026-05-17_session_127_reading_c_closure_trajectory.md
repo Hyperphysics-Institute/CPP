@@ -264,7 +264,7 @@ A Layer 3 closure of Q3 within 1-3 sessions would advance the trajectory estimat
 
 ### 6.4 Programme-level registries
 
-- `Research_Frontier.md` OPEN-FI-C-9-FP-MECHANISM entry (Status, Current best lead, Registered fields all updated through Patch 0420)
+- `research_frontier.md` OPEN-FI-C-9-FP-MECHANISM entry (Status, Current best lead, Registered fields all updated through Patch 0420)
 - `master_glossary.md` Capotauro section (15 entries, including Findings C-W35/C-W36/C-W37 via Patch 0420)
 - `predictions.md` PRED-O-25 entry (source field references Reading C trajectory via Patch 0420)
 - `problem_histories/PH-OPEN-SM-4.md` Reading C closure trajectory progress section (added Patch 0420)

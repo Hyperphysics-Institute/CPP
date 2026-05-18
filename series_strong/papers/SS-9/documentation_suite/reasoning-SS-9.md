@@ -121,9 +121,9 @@ Recovery is from the chat-window pasted 2 May 2026. **Tier 4 inclusion scope for
 
 *[Note: A bootup-protocol failure mode that is worth preserving in Tier 4 because it is the same failure mode the bootup.md Step 0 was written to prevent, and this session experienced it again. The fact that Step 0 is correct as written and the failure was in not following it is the methodological observation. Verbatim of the recovery below; the prior failure narrative — `web_fetch` against raw.githubusercontent URLs being rejected by the URL whitelist, leading to a partial-view analysis — is captured in session_log_2.md preface and not re-duplicated here.]*
 
-I owe you an apology. My earlier analysis was wrong — I was reading the GitHub web view, which apparently only showed me a partial top-level listing. The actual cloned repo has everything the handover references: Research_Frontier.md, theorem-registry.md, problem_histories/, book_project/, session_logs/, programmatic_decisions/, and a substantially developed series_strong/.
+I owe you an apology. My earlier analysis was wrong — I was reading the GitHub web view, which apparently only showed me a partial top-level listing. The actual cloned repo has everything the handover references: research_frontier.md, theorem-registry.md, problem_histories/, book_project/, session_logs/, programmatic_decisions/, and a substantially developed series_strong/.
 
-I owe you a direct retraction: the previous turn's analysis was wrong on every empirical point. SS-7 v1.2 and SS-8 v1.0 exist as .tex files in series_strong/papers/SS-7/ and series_strong/papers/SS-8/ with their full documentation suites. The OPEN-SS-22 retirement (April 21) is recorded in series_strong/PH-OPEN-SS-22.md and reflected in Research_Frontier.md. The OPEN-SS-24 entry I just pulled has exactly the framing the handover described — C4 derivation, SS-9 candidate, MEDIUM-HIGH priority, registered 20 April 2026. The 9-axiom set (with A11) and the swarm tally are presumably in the updated axiom-registry.md and predictions.md in the cloned tree, not in the GitHub web view I was reading earlier (which was apparently caching or rendering an older version).
+I owe you a direct retraction: the previous turn's analysis was wrong on every empirical point. SS-7 v1.2 and SS-8 v1.0 exist as .tex files in series_strong/papers/SS-7/ and series_strong/papers/SS-8/ with their full documentation suites. The OPEN-SS-22 retirement (April 21) is recorded in series_strong/PH-OPEN-SS-22.md and reflected in research_frontier.md. The OPEN-SS-24 entry I just pulled has exactly the framing the handover described — C4 derivation, SS-9 candidate, MEDIUM-HIGH priority, registered 20 April 2026. The 9-axiom set (with A11) and the swarm tally are presumably in the updated axiom-registry.md and predictions.md in the cloned tree, not in the GitHub web view I was reading earlier (which was apparently caching or rendering an older version).
 
 I'm continuing the bootup properly now from the cloned tree — reading templates/operating_system.md, then theorem-registry.md, then SS-7 §3 and §5, then SS-8 §3–§4–§6, then PH-OPEN-SS-22.md for the retirement methodology. I'll come back when I'm actually oriented and ready to take a position on Phase 1 of OPEN-SS-24, rather than improvising. Give me a few tool calls.
 
@@ -285,7 +285,7 @@ Recommendation: close clean now. The current state has Template A done well, Tem
 ### Forward-looking pointers
 
 - **The v0.2 working draft** at `session_logs/OPEN-SS-24_phase1_v0.2_working_draft.md` (patch 0036) is the technical artefact this session produced. The next session on OPEN-SS-24 should start at §5 Main Theorem and attempt the supporting-hyperplane argument for Lemma B forward direction; if that fails or surfaces a deeper structural problem, the OPEN-SS-22 retirement methodology applies (honest registration of the failure as a new open problem rather than continuing under unfounded assumptions). The graph-theoretic reformulation (drop centroid-hull identification, use Steinitz as a black box) is the alternative formal route flagged in this session.
-- **The C5 / C6 hypotheses** are surfaced but not yet derived from CPP primitives. Their Level-3 closure remains the OPEN-SS-29 (C5 ground-state energy minimization) and OPEN-SS-30 (C6 cluster surface-realization) targets registered as pending-ratification entries in Research_Frontier.md by patch 0039.
+- **The C5 / C6 hypotheses** are surfaced but not yet derived from CPP primitives. Their Level-3 closure remains the OPEN-SS-29 (C5 ground-state energy minimization) and OPEN-SS-30 (C6 cluster surface-realization) targets registered as pending-ratification entries in research_frontier.md by patch 0039.
 - **The deltahedra-gap question** at $N_\alpha \in \{11, 13, 14\}$ — registered as OPEN-SS-31 candidate (also pending ratification) — does not block the conditional-theorem closure but does affect whether the eventual SS-9 paper can claim "deltahedral realization" as part of C4 or only "graph-simplicial realization."
 - **Session 3** below extends this session's work by surfacing the strict-C1 / degree-5 inconsistency at $N_\alpha \geq 7$ — i.e., a third class of structural concern that this session's deltahedra-gap clarification did not catch. The Lemma B work and the strict-C1 question are not the same gap; Session 3 articulates this distinction and registers OPEN-SS-32 for the strict-C1 model question.
 
@@ -298,7 +298,7 @@ Programme-methodology reasoning that emerged in this session is preserved at can
 - **§4/§15 reconciliation**: the analysis of which §15 four-item preservation checklist requirements are subsumed, partially subsumed, or unchanged by §4 Session-Log-as-Handover-Backbone Discipline. Codified in `templates/operating_system.md` §15 with explicit cross-reference from §4 (patch 0040). The reasoning that produced the narrowed scope (§4 replaces handover-document-genre but does not replace lab-notebook for verbatim content, registry updates, reviewer artifacts, or completed-paper documentation suites) is preserved in the §4/§15 scope-question addendum of `session_log_2.md` (patch 0041).
 - **Capacity-management three operational rules** (Rule 1 reserve-budget-upfront, Rule 2 hard-checkpoint, Rule 3 no-second-Template-A-arc): proposed in this session but not yet codified into the OS. Future codification candidate. The reasoning is preserved verbatim above.
 - **Programme record event — Session-Log-as-Handover-Backbone-Discipline first-instance application**: this session was the first non-bootstrap application of the new discipline. The information_management_journey.md meta-record (patch 0043) treats this as a methodology-development arc datum.
-- **OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-31** registrations as pending-ratification entries: `Research_Frontier.md` (patch 0039).
+- **OPEN-SS-29 / OPEN-SS-30 / OPEN-SS-31** registrations as pending-ratification entries: `research_frontier.md` (patch 0039).
 
 *End of Session 2 reasoning (recovery patch 0021, 2 May 2026). Session 3 below was captured at original file creation.*
 
@@ -1189,7 +1189,7 @@ The transcript-SS-9.md (Tier 2) entries `058`–`072` index the follow-up arc tr
 
 The sketch artifact at `series_strong/papers/SS-9/sketches/SS-9_alpha_chain_extended_residuals.md` is the substantive product. The reproducible computation script at `series_strong/papers/SS-9/scripts/SS-9_alpha_chain_extended.py` lets the analysis be re-run by anyone (Thomas, Grok, Sonnet, future Opus).
 
-Updated registry: PRED-O-19 in `predictions.md` Section 2 (Open Predictions Quantitative); FALS-C-8 in `predictions.md` Section 5 (Falsified Predictions, for PRED-O-16); OPEN-SS-34 candidate in `Research_Frontier.md` (pending ratification).
+Updated registry: PRED-O-19 in `predictions.md` Section 2 (Open Predictions Quantitative); FALS-C-8 in `predictions.md` Section 5 (Falsified Predictions, for PRED-O-16); OPEN-SS-34 candidate in `research_frontier.md` (pending ratification).
 
 ---
 
@@ -1443,7 +1443,7 @@ The substantive sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-34_de
 
 The Python script extension at `SS-9_alpha_chain_extended.py` adds `B_SLIP_SQRT3` constant, `B_satellite_zero_param` function, and `zero_parameter_satellite_fit` function for reproducible verification.
 
-OPEN-SS-35 and OPEN-SS-36 entries in `Research_Frontier.md` register the two new candidate open problems with full one-liner / what-a-solution-looks-like / dependencies / current-best-lead / falsification / paper / registration sections.
+OPEN-SS-35 and OPEN-SS-36 entries in `research_frontier.md` register the two new candidate open problems with full one-liner / what-a-solution-looks-like / dependencies / current-best-lead / falsification / paper / registration sections.
 
 ---
 
@@ -1558,7 +1558,7 @@ The substantive sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-36_de
 
 The Python script extension at `SS-9_alpha_chain_extended.py` adds `B_CLOSURE`, `B_shell_linear`, `B_satellite_decomposed`, `refined_decomposition_satellite_fit` while marking `B_SLIP_SQRT3` and `B_satellite_zero_param` as RETIRED with comments preserving them for reproducibility of 3rd sub-arc results.
 
-The OPEN-SS-36 entry in `Research_Frontier.md` is updated with the self-correction note, retirement of the constant-$\sqrt{3}$ form, refined decomposition, and dependency on OPEN-SS-35.
+The OPEN-SS-36 entry in `research_frontier.md` is updated with the self-correction note, retirement of the constant-$\sqrt{3}$ form, refined decomposition, and dependency on OPEN-SS-35.
 
 The `future_projects.md` cross-session priority queue is established with OPEN-SS-35 attempt (priority A) and AME 2020 lookup (priority B) as next-session-ready items.
 
@@ -1686,7 +1686,7 @@ The substantive sketches at `series_strong/papers/SS-9/sketches/SS-9_AME2020_loo
 
 The Python scripts `SS-9_alpha_chain_extended.py` (Phase 1 update) and `SS-9_OPEN-SS-35_scoping.py` (Phase 2 new) provide reproducible computations.
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with the scoping work results, Route A adoption, Route D ruling, Level-0 consistency check, and three sub-questions.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with the scoping work results, Route A adoption, Route D ruling, Level-0 consistency check, and three sub-questions.
 
 The `predictions.md` swarm tally is updated to 107 entries (PRED-C-77 ${}^{92}$Pd, PRED-C-78 ${}^{96}$Cd added at extrapolation level).
 
@@ -1773,7 +1773,7 @@ The transcript-SS-9.md (Tier 2) entries `147`–`163` index Session 6 transactio
 
 The substantive sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a.md` and reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a.py` are the deliverables.
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 6 sub-question (a) Level-1 partial closure.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 6 sub-question (a) Level-1 partial closure.
 
 ---
 
@@ -1894,7 +1894,7 @@ Phase 1 deliverables: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS
 
 Phase 2 deliverable: scoping document at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_scoping.md`.
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 7 Phase 1 + Phase 2 paragraphs.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 7 Phase 1 + Phase 2 paragraphs.
 
 ---
 
@@ -2051,7 +2051,7 @@ Session 8 deliverables:
 - Sketch: `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer1.md`
 - Reproducible script: `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer1.py`
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 8 paragraph.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 8 paragraph.
 
 ---
 
@@ -2250,7 +2250,7 @@ Session 9 deliverables:
 - Sketch: `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3.md`
 - Reproducible script: `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3.py`
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 9 paragraph including terminology correction note.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 9 paragraph including terminology correction note.
 
 ---
 
@@ -2372,7 +2372,7 @@ Session 10 deliverables:
 - Sketch: `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_VSO_refinement.md`
 - Reproducible script: `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_VSO_refinement.py`
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 10 paragraph after Session 9 update.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 10 paragraph after Session 9 update.
 
 ---
 
@@ -2559,7 +2559,7 @@ Session 11 Phase 1 deliverables:
 - Sketch: `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_cluster_surface_phase1.md`
 - Reproducible script: `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer3_cluster_surface_phase1.py`
 
-The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 11 Phase 1 paragraph after Session 10 update.
+The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 11 Phase 1 paragraph after Session 10 update.
 
 ---
 
@@ -2714,7 +2714,7 @@ OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Session 12 re
 
 **Anti-priority:** Do not speculatively connect U-shape to OPEN-SS-32 in Session 12. Substantive diagnostic deserves clean R2-territory investigation with proper prior-art reading and fresh session.
 
-The deliverables for Session 12: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling_R1_RULED_OUT.md`; reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a_Ascaling_R1.py`. The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 12 paragraph after Session 11 Phase 1 update.
+The deliverables for Session 12: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling_R1_RULED_OUT.md`; reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a_Ascaling_R1.py`. The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 12 paragraph after Session 11 Phase 1 update.
 
 ---
 
@@ -2788,7 +2788,7 @@ Discriminating tests for Phase 2: pattern (U-shape vs monotonic), magnitude (fac
 
 ### State at Session 13 Phase 1 close
 
-Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. Six programme-level stages preserved. First qualitative cross-paradigm consilience claim (Session 9) intact. Phase 1 is reading deliverable; no new programme-level stage. The deliverable for Phase 1: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase1.md` (291 lines). The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 13 Phase 1 paragraph after Session 12 update; the cross-link claim refined from "coincides exactly" to "qualitative six-of-eight with octahedron discriminator."
+Pattern 6 K$_3$ scale-recurrence: 7 confirmed instances unchanged. Six programme-level stages preserved. First qualitative cross-paradigm consilience claim (Session 9) intact. Phase 1 is reading deliverable; no new programme-level stage. The deliverable for Phase 1: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase1.md` (291 lines). The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 13 Phase 1 paragraph after Session 12 update; the cross-link claim refined from "coincides exactly" to "qualitative six-of-eight with octahedron discriminator."
 
 **Forward-looking pointers for Phase 2 (continuation in same session per Thomas's "take territory" priority directive).**
 
@@ -3020,7 +3020,7 @@ OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Phase 3A refi
 
 **Anti-priority:** Do not initiate SS-9 v0.3 → v0.1 .tex conversion (OPEN-ORG-012) until Phase 3B returns a result. §7 has shifted three times in this single session.
 
-The deliverables for Phase 3A: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3a.md`; reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3a.py`. The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 13 Phase 3A paragraph after Phase 2 update.
+The deliverables for Phase 3A: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3a.md`; reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3a.py`. The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 13 Phase 3A paragraph after Phase 2 update.
 
 ---
 
@@ -3174,7 +3174,7 @@ OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Phase 3B-A re
 - No further fixed-dimension belt-subspace variants (1D, 2D, etc.) — pattern-shape anti-correlation rules these out collectively as a class.
 - No higher-$m$ harmonics (m=3, m=4) as incremental enhancement of current Phase 3B-A basis — cannot fix the N$_\alpha = 5$ overshoot and may worsen it.
 
-The deliverables for Phase 3B-A: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3b_a.md` (285 lines); reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3b_a.py` (662 lines). The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 14 Phase 3B-A paragraph after Session 13 Phase 3A update; `future_projects.md` Active queue updated.
+The deliverables for Phase 3B-A: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3b_a.md` (285 lines); reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3b_a.py` (662 lines). The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 14 Phase 3B-A paragraph after Session 13 Phase 3A update; `future_projects.md` Active queue updated.
 
 ---
 
@@ -3320,7 +3320,7 @@ OPEN-SS-35 closure trajectory: 6 programme-level stages preserved (Phase 3B-B re
 - No full point group D$_{nh}$/D$_{nd}$ extension with improper rotations — structural argument applies (group orders non-monotonic in $N$).
 - No energy-weighted IRREP filtering or higher-$m$ harmonics — structural argument applies.
 
-The deliverables for Phase 3B-B: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3b_b.md` (328 lines); reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3b_b.py` (710 lines). The OPEN-SS-35 entry in `Research_Frontier.md` is updated with Session 15 Phase 3B-B paragraph after Session 14 Phase 3B-A update; `future_projects.md` Active queue updated with Phase 3B-B completion and Priority 1 promotion of anharmonic K$_3$ $\xi^4$ corrections.
+The deliverables for Phase 3B-B: sketch at `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-32_Ushape_unification_phase3b_b.md` (328 lines); reproducible script at `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-32_Ushape_unification_phase3b_b.py` (710 lines). The OPEN-SS-35 entry in `research_frontier.md` is updated with Session 15 Phase 3B-B paragraph after Session 14 Phase 3B-A update; `future_projects.md` Active queue updated with Phase 3B-B completion and Priority 1 promotion of anharmonic K$_3$ $\xi^4$ corrections.
 
 ---
 
@@ -4838,7 +4838,7 @@ Lemma B$'$ uses 3D-non-degeneracy directly. v0.3 leaves Lemma B$'$ unchanged for
 
 ### Effect on programme-level OPEN-* registries
 
-NONE. 3D-non-degeneracy was an auxiliary assumption local to SS-9, not registered as a programme-level OPEN-SS-* problem. Closure at v0.3 is paper-internal. No changes to Research_Frontier.md OPEN-* status entries from this session. Only the "Last updated" header gets updated to reflect Session 26 polish work.
+NONE. 3D-non-degeneracy was an auxiliary assumption local to SS-9, not registered as a programme-level OPEN-SS-* problem. Closure at v0.3 is paper-internal. No changes to research_frontier.md OPEN-* status entries from this session. Only the "Last updated" header gets updated to reflect Session 26 polish work.
 
 This contrasts with Session 25's sub-task (a), which advanced OPEN-SS-33 (a programme-level open problem) from raw open to conditional closure.
 
@@ -5951,7 +5951,7 @@ In its rescoped form, (e) is: "external feedback from domain experts is invited 
 1. Title block (visible to first-time readers on PDF title page)
 2. §9 Roadmap to v1.0 subsection — new "Note on the v1.0 designation" paragraph
 3. CHANGELOG v1.0 entry (visible to anyone reading the source)
-4. Companion file Research_Frontier.md (last-updated header for Session 32)
+4. Companion file research_frontier.md (last-updated header for Session 32)
 5. Companion file future_projects.md (A.2) entry — sub-task (e) status RESCOPED
 
 **The honesty argument.** A paper that claimed v1.0 status on AI review alone, without making the basis of that status explicit, would mislead readers about the type of validation the paper has received. Three concrete failure modes of pretending:
@@ -6017,7 +6017,7 @@ That's a Rovelli-register story — the *limits of what was proven* are part of 
 **Track 3: registers freeze.** Multiple programme-level files need final updates marking SS-9 SHIPPED at v1.0:
 - `paper_catalog.md`: SS-9 v1.0 entry
 - `theorem-registry.md`: Theorem 6.1 (SS-9 main theorem) + Sub-Lemma 2.1 (C7 conditional derivation) + Sub-Lemma 2.2 (3D-non-degeneracy) + Sub-Lemma 2.3 (C5 well-definedness)
-- `Research_Frontier.md`: final update marking SS-9 SHIPPED at v1.0
+- `research_frontier.md`: final update marking SS-9 SHIPPED at v1.0
 - `master_glossary.md`: any new terms locked in (FvdW deltahedron, Schlegel diagram, alpha complex, EDM theory, Cayley-Menger determinant)
 - `future_projects.md`: (A.2) entry status FINAL — v1.0 SHIPPED Session 32; sub-task (e) RESCOPED Session 32
 
@@ -6122,7 +6122,7 @@ The guide needed to be operationally useful (Thomas/Isak can execute from it) wi
 
 **§3 arXiv submission procedure.** Categories: nucl-th primary (alpha-cluster physics) + math-ph secondary (conditional theorem framework, Steinitz application, FvdW classification, Route (d) connections). The combination signals appropriately to both audiences. Endorsement requirement noted (one-time per category). LaTeX source upload format strongly preferred over PDF-only (arXiv compiles on its own infrastructure). Metadata fields with comments field including seven-pass review history and rescope explanation. License CC BY 4.0. MSC and PACS classifications listed.
 
-**§4 Post-submission tracking.** Filing protocol for incoming external feedback at series_strong/papers/SS-9/reviews/external/ (parallel to existing AI-review filing convention). v1.x revision triggers on same polish-track cadence as v0.1→v1.0. Programme-level tracking via Research_Frontier.md and future_projects.md. No-feedback case: sub-task (e) is satisfied by act of public posting, not by receipt of feedback (the rescope's purpose).
+**§4 Post-submission tracking.** Filing protocol for incoming external feedback at series_strong/papers/SS-9/reviews/external/ (parallel to existing AI-review filing convention). v1.x revision triggers on same polish-track cadence as v0.1→v1.0. Programme-level tracking via research_frontier.md and future_projects.md. No-feedback case: sub-task (e) is satisfied by act of public posting, not by receipt of feedback (the rescope's purpose).
 
 **§5 Symmetric-honesty notes.** Two specific framings that must not be softened in the public-posting context: (a) the conditional-theorem framing (paper does not claim unconditional derivation); (b) the AI-review-only basis (v1.0 rests on seven AI review passes, not human domain-expert review). The §5 section preempts the temptation to soften these for marketing purposes; the symmetric-honesty discipline applied throughout the polish track must be preserved at public-posting time.
 
@@ -6134,7 +6134,7 @@ The 7-section structure is more explicit than minimum-needed (could have collaps
 
 ## VI. Sub-task (e) rescope reinforcement rationale (preserving conditional-theorem framing in public-posting context)
 
-The rescope of sub-task (e) at v1.0 ship (Session 32) was already well-documented in five places (title block, §9 Note, CHANGELOG v1.0, Research_Frontier.md, future_projects.md). The OSF/arXiv guide adds a sixth place: the public-posting context where the temptation to soften the rescope for marketing purposes is highest.
+The rescope of sub-task (e) at v1.0 ship (Session 32) was already well-documented in five places (title block, §9 Note, CHANGELOG v1.0, research_frontier.md, future_projects.md). The OSF/arXiv guide adds a sixth place: the public-posting context where the temptation to soften the rescope for marketing purposes is highest.
 
 The §5 symmetric-honesty notes section addresses this directly. Two specific framings:
 

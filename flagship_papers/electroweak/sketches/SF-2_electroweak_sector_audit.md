@@ -316,7 +316,7 @@ This is Phase 3 of the 8-phase SF-2 campaign per the SESSION_81 handover. The ha
 
 ## §8. Cross-sector closure candidate: SF-2 ↔ SM-5 OP-SM-4 Capotauro
 
-Per OPEN-SM-4 entry in `Research_Frontier.md` and the SESSION_81 handover, the Capotauro mechanism is registered as the candidate for the **second cross-sector closure in CPP** (after SF-4 v4.0's K3-Cage-Shell composite theorem).
+Per OPEN-SM-4 entry in `research_frontier.md` and the SESSION_81 handover, the Capotauro mechanism is registered as the candidate for the **second cross-sector closure in CPP** (after SF-4 v4.0's K3-Cage-Shell composite theorem).
 
 ### §8.1 What OPEN-SM-4 currently registers
 

@@ -320,7 +320,7 @@ Following the SF-4 (~10 sessions of v0.x drafting) and SS-9 (~14 sessions includ
 - The PMNS δ_CP and baryon asymmetry η_B (downstream Capotauro sub-claim work).
 - FI-C-10 first-principles closure from primitive CPP axioms (registered for SS-corpus territory).
 
-**HONEST FRAMING**: This is partial closure of OPEN-SM-4. Sub-claim (c) — the chirality matrix element on K3-doublet — is closed at theorem level with empirical validation. Sub-claims (a) and (b) — the nucleation event and substrate-vacuum dynamics — remain open. The OPEN-SM-4 entry in Research_Frontier.md advances from OPEN to OPEN (PARTIAL CLOSURE) per Session 103 Patch 0397; this paper packages the partial closure for publication.
+**HONEST FRAMING**: This is partial closure of OPEN-SM-4. Sub-claim (c) — the chirality matrix element on K3-doublet — is closed at theorem level with empirical validation. Sub-claims (a) and (b) — the nucleation event and substrate-vacuum dynamics — remain open. The OPEN-SM-4 entry in research_frontier.md advances from OPEN to OPEN (PARTIAL CLOSURE) per Session 103 Patch 0397; this paper packages the partial closure for publication.
 
 ---
 

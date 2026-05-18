@@ -267,7 +267,7 @@ The sketch's Theorem 3 (D1 as conditional theorem under either Premise A or Prem
 Deriving Premise A (D2's counting rule) from programme-level axioms still delivers D1 as a corollary via simplicial combinatorics. Deriving Premise B (SR-nn-pair physics) from programme-level axioms independently delivers D1. For SS-8's open-problem cascade, OPEN-SS-27 can pragmatically subsume OPEN-SS-26's functional-independence content. However, OPEN-SS-26's *physical-principle-independence* content — "is there a derivation of D1 that does not rest on proximity-aggregation?" — is distinct and does not fit under OPEN-SS-27's A6'-extension scope. The honest framing is:
 
 - OPEN-SS-26 (functional content): subsumed by OPEN-SS-27.
-- OPEN-SS-26 (physical-principle content): promoted to a separate programme-level OPEN-FRONTIER question, to be registered in `Research_Frontier.md` rather than the SS-8-specific OPEN-SS list.
+- OPEN-SS-26 (physical-principle content): promoted to a separate programme-level OPEN-FRONTIER question, to be registered in `research_frontier.md` rather than the SS-8-specific OPEN-SS list.
 
 This preserves the pragmatic consolidation at the SS-8 paper level while preserving the harder physical question at the programme level.
 
@@ -284,7 +284,7 @@ To the H2' note (`SS-8_H2prime_derivation_note.md`):
 - §6.2 D1 status — update the "conditional theorem" language to read "conditional theorem under two functionally distinct realizations of a shared proximity-binding premise."
 - §10 OPEN-SS-26 entry — note the functional/physical-principle split and the new programme-level OPEN-FRONTIER question on Level-3 independence.
 
-To the programme registry (`Research_Frontier.md`, when ratified):
+To the programme registry (`research_frontier.md`, when ratified):
 
 - New OPEN-FRONTIER entry: "Level-3 independence of D1 — can interstitial-neutron vertex localization be derived from a physical mechanism not based on proximity-aggregation (e.g., topological, entropic, geometric-phase)?"
 

@@ -3,7 +3,7 @@
 **Problem:** OPEN-SS-37 — Programme-Level Closure of C8 (FvdW Centroid-Realizability)
 **Status at time of this file:** OPEN — registered 6 May 2026 Session 28 v1.0 polish sub-task (d.1) ChatGPT review feedback incorporation. C8 introduced as new paper-level structural hypothesis at SS-9 v0.5 §2.4 to make explicit the previously implicit Steinitz-to-centroid realization gap.
 **Sector:** SS (nuclear physics)
-**Location in registry:** `Research_Frontier.md` §1, Strong Sector (SS)
+**Location in registry:** `research_frontier.md` §1, Strong Sector (SS)
 **File created:** 6 May 2026 (Session 28 v1.0 polish sub-task (d.1))
 **Purpose:** Record the registration narrative of OPEN-SS-37 — the programme-level closure target for C8 (FvdW centroid-realizability), introduced at SS-9 v0.5 in response to ChatGPT review of v0.4. Document the gap that C8 addresses (Steinitz-to-centroid realization), the four candidate closure routes (Route (d) added at v0.8 Session 31 per ChatGPT d.4 forward-looking suggestion), and the dependency structure linking OPEN-SS-37 to OPEN-SS-32 (slip-plane mechanism) via shared facet (b) Layer-3 ancestry.
 
@@ -41,7 +41,7 @@ This file records the registration narrative and the candidate closure scope.
 | 6 May 2026 (Session 28) | Sub-task (d) AI-team review per symmetric-honesty protocol: v0.4 .tex submitted to ChatGPT (identified strongest reviewer on team). | Raw GitHub URL submission |
 | 6 May 2026 (Session 28) | ChatGPT delivers 5-point review identifying substantive issues; Points 3, 4, 5 all surface the Steinitz-to-centroid realization gap from different angles (Lemma B$'$ Step 3 overclaim of equality; Theorem clause (iv) "after centroid-realization" undischarged; facet (b) language as existence-claim). | This file, "Why this file exists" section |
 | 6 May 2026 (Session 28) | Per symmetric-honesty verification: all 5 ChatGPT points verified against v0.4 source before incorporation; all 5 confirmed as real. Architectural decision: register C8 (FvdW centroid-realizability) as new paper-level structural hypothesis parallel to C5/C6/C7. | `session_logs/2026-05-02_session_log.md` Session 28 entry |
-| 6 May 2026 (Session 28) | OPEN-SS-37 REGISTERED in `Research_Frontier.md` §1 SS sector (note: OPEN-SS-34, 35, 36 already taken by deltahedron-core/satellite mechanism, shell-magic-number sequence, and $B_{\rm slip}$ exact form respectively; C8 takes next available number). SS sector problem count 18→19. | `Research_Frontier.md` OPEN-SS-37 entry |
+| 6 May 2026 (Session 28) | OPEN-SS-37 REGISTERED in `research_frontier.md` §1 SS sector (note: OPEN-SS-34, 35, 36 already taken by deltahedron-core/satellite mechanism, shell-magic-number sequence, and $B_{\rm slip}$ exact form respectively; C8 takes next available number). SS sector problem count 18→19. | `research_frontier.md` OPEN-SS-37 entry |
 | 6 May 2026 (Session 28) | SS-9 v0.5 ships with C8 registered + 5 ChatGPT corrections incorporated. §9 new entry "Steinitz-to-centroid realization gap" CLOSED via C8 registration. Hypothesis stack expanded: C1$'$+C2+C3+C5+C6+C7+**C8**+rigid packing+3D-non-degeneracy. | `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex` v0.5 §2.4 |
 
 ---

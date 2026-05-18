@@ -8,7 +8,7 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a.md` (Session 6 sub-question (a) Level-1 partial closure on regular polytopes)
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling.md` (Session 7 Phase 1 A-scaling extension to canonical deltahedra)
 - `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` (CPP nucleon structure with ZBW orbits and proton magnetic moment)
-- `Research_Frontier.md` OPEN-SS-35 entry; OPEN-SS-16 entry (Layer B gap)
+- `research_frontier.md` OPEN-SS-35 entry; OPEN-SS-16 entry (Layer B gap)
 
 **Net programme effect:** Sub-question (b) status moves from "registered" to "**scoping work begun, Level-0 consistency check passed; closure remains multi-session**." Three candidate routes evaluated; **Route B-α (ZBW phase mismatch at orbital boundary) adopted as primary** with Level-0 consistency at the right magnitude. Two sub-sub-questions registered for closure work. Nothing on the cumulative tally; status of Pattern 6 K$_3$ scale-recurrence unchanged at 7 confirmed instances.
 

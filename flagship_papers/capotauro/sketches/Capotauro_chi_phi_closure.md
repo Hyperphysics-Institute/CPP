@@ -2,7 +2,7 @@
 
 **Working sketch document — Tier-4 reasoning capture per CPP four-tier documentation discipline.**
 
-This document grows monotonically across Sessions 84+ as the Capotauro closure campaign progresses. It captures verbatim reasoning per Tier-4 discipline and is the canonical source for the closure derivation. The Capotauro mechanism is registered programme-side as **OPEN-SM-4** (Research_Frontier.md §1 SM sector, last updated 23 March 2026). It is *also* the candidate venue for cross-sector closure with **OPEN-FP-SF-2-CHIR** (V-A coupling at the massless helicity limit; registered at SF-2 v1.0 SHIP Patch 0370). This sketch targets joint theorem-level closure of both, on the methodological template established by SF-4 v4.0's Composite K3-Cage-Shell Coupling Theorem (Finding β-10, the first cross-sector closure in CPP).
+This document grows monotonically across Sessions 84+ as the Capotauro closure campaign progresses. It captures verbatim reasoning per Tier-4 discipline and is the canonical source for the closure derivation. The Capotauro mechanism is registered programme-side as **OPEN-SM-4** (research_frontier.md §1 SM sector, last updated 23 March 2026). It is *also* the candidate venue for cross-sector closure with **OPEN-FP-SF-2-CHIR** (V-A coupling at the massless helicity limit; registered at SF-2 v1.0 SHIP Patch 0370). This sketch targets joint theorem-level closure of both, on the methodological template established by SF-4 v4.0's Composite K3-Cage-Shell Coupling Theorem (Finding β-10, the first cross-sector closure in CPP).
 
 ---
 
@@ -20,16 +20,16 @@ This document is paired with Patch 0367's W⁰ neutrino scattering centroid-deco
 
 ### §1.1 Programme-level labeling housekeeping note
 
-The recent SF-line documentation (Sessions 67–83 SF-4 v3.0/v4.0 and SF-2 v1.0 patches) consistently refers to the cross-sector closure target as "**OPEN-SM-4** Capotauro mechanism." `Research_Frontier.md` registry however lists:
+The recent SF-line documentation (Sessions 67–83 SF-4 v3.0/v4.0 and SF-2 v1.0 patches) consistently refers to the cross-sector closure target as "**OPEN-SM-4** Capotauro mechanism." `research_frontier.md` registry however lists:
 
 - **OPEN-SM-4: Formalise the Capotauro Mechanism** (Status OPEN, Priority HIGH, last updated 23 March 2026) — "Derive the lattice chirality-activation event that establishes χ ≈ φ⁻¹ and produces CP violation." This is the Capotauro mechanism entry. Its `What a solution looks like` field specifies: "Symmetry breaking [600-cell] × ℤ₂ → [600-cell]; derive χ = φ⁻¹; reproduce δ_CP ≈ 195°, sin²θ₁₃ ≈ 0.022, and baryon asymmetry."
 - **OPEN-SM-7d: Derive the Koide Phase θ** — a different problem in the lepton-mass sector (charged-lepton Koide phase θ ≈ 132.73°), tied to OPEN-SM-7 (K=2/3) closure and the lepton series.
 
-These are distinct open problems. The recent SF-line shorthand "OP-SM-7d Capotauro" appears to be a propagated labeling error originating in SF-4 v0.4 §6.2 / §11.2 (Patch 0308, Session 48) where the Capotauro mechanism was referenced as the source of TBM corrections for the missing 8/8 prediction (δ_CP), but indexed under the wrong open-problem number. The error then propagated through Sessions 48–83 SF-line documents, including the Research_Frontier.md last-updated headers, the master_glossary.md "Cross-sector closure" entry, the SF-4 v4.0 paper §11.2 outlook, the SF-2 v1.0 paper §13, the development-SM-5.md cross-sector note, the SF-4 anthology chapter "Where Two Problems Met," and the SF-2 anthology chapter "The Bracelet's Catalyst."
+These are distinct open problems. The recent SF-line shorthand "OP-SM-7d Capotauro" appears to be a propagated labeling error originating in SF-4 v0.4 §6.2 / §11.2 (Patch 0308, Session 48) where the Capotauro mechanism was referenced as the source of TBM corrections for the missing 8/8 prediction (δ_CP), but indexed under the wrong open-problem number. The error then propagated through Sessions 48–83 SF-line documents, including the research_frontier.md last-updated headers, the master_glossary.md "Cross-sector closure" entry, the SF-4 v4.0 paper §11.2 outlook, the SF-2 v1.0 paper §13, the development-SM-5.md cross-sector note, the SF-4 anthology chapter "Where Two Problems Met," and the SF-2 anthology chapter "The Bracelet's Catalyst."
 
 **Resolution before paper drafting begins.** Before Capotauro paper drafting opens, the labeling should be cleaned up in one of two ways: (i) rename throughout the SF-line corpus to use OPEN-SM-4 consistently (the correct registry ID); or (ii) confirm an intent-decision that the two registry entries should be merged into a unified "OP-SM-Chiral-and-Koide-Phase" cross-sector target (which I doubt is what was intended, since the Koide phase θ and the CP phase δ_CP are different observable phases on different sectors), and reflect that merger explicitly in the registries. **Default recommendation: rename to OPEN-SM-4 throughout.** This is a 1-patch housekeeping fix that should be done at or before the start of the Capotauro paper drafting campaign, since the paper will name its closure target on every page.
 
-This sketch uses **OPEN-SM-4** throughout to refer to the Capotauro mechanism, in alignment with the canonical Research_Frontier.md registry entry.
+This sketch uses **OPEN-SM-4** throughout to refer to the Capotauro mechanism, in alignment with the canonical research_frontier.md registry entry.
 
 ### §1.2 The closure target
 
@@ -492,7 +492,7 @@ The following are questions where Thomas's physical intuition is the load-bearin
 
 *Status as of Session 85 close (Patch 0378). Sub-claim (b) χ-value resolution work is partially advanced: the OP-SM-4 archive arithmetic error is corrected (Finding C-3), the 600-cell distance structure is verified computationally (Finding C-4), and the candidate χ table is enumerated (§9). Sub-claim (b) is not yet closed at theorem level — the perturbation framework of sub-claim (c) needs to validate which candidate is the right $\chi$ for the closure.*
 
-1. **OPEN-SM-4 vs OPEN-SM-7d labeling housekeeping**: 1-patch fix renaming throughout the SF-4 + SF-2 + (newly) Research_Timeline.md corpus to use OPEN-SM-4 consistently. Should happen before paper drafting opens. *Updated note: Patch 0377 (Research_Timeline.md) propagated the "OP-SM-7d" labeling into the new medium-term scheduling artifact — Priority 1 entry. The housekeeping rename should cover this new file as well, plus the same six SF-line artifacts listed in §1.1.*
+1. **OPEN-SM-4 vs OPEN-SM-7d labeling housekeeping**: 1-patch fix renaming throughout the SF-4 + SF-2 + (newly) research_timeline.md corpus to use OPEN-SM-4 consistently. Should happen before paper drafting opens. *Updated note: Patch 0377 (research_timeline.md) propagated the "OP-SM-7d" labeling into the new medium-term scheduling artifact — Priority 1 entry. The housekeeping rename should cover this new file as well, plus the same six SF-line artifacts listed in §1.1.*
 
 2. **Sub-claim (c) Wigner-Eckart perturbation framework setup** (promoted from Session 86-87 priority to Session 86 priority following the Session 85 χ-candidate enumeration): construct the $\hat{V}_\chi$ perturbation operator on the TBM-aligned basis at theorem level, identify the Wigner-Eckart coefficients $v_{ij}$ from 600-cell geometry, and compute the leading TBM angle corrections. The sub-claim (c) calculation determines which of the candidate χ-values from §9 is consistent with the empirical data, replacing pattern-matching with derivation.
 

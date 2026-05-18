@@ -2,7 +2,7 @@
 
 **Created:** April 2026 (SM-8/SM-9 sessions)
 **Status:** OPEN
-**Research_Frontier.md entry:** OPEN-SM-cage-1
+**research_frontier.md entry:** OPEN-SM-cage-1
 
 ---
 
@@ -40,7 +40,7 @@ The FEM simulation (OPEN-SM-10-FEM) is the leading candidate approach. If DP cha
 
 ## Cross-References
 
-- **Research_Frontier.md entry:** OPEN-SM-cage-1
+- **research_frontier.md entry:** OPEN-SM-cage-1
 - **Related:** OPEN-SM-10-FEM (FEM approach), CONJ-SM9-1 (partial derivation), FALS (spectral dimension route)
 - **Development transcripts:** SM-8 transcript (Phase 8), SM-9/SM-10 transcript
 

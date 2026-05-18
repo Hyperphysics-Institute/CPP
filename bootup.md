@@ -14,7 +14,7 @@
 
 **Programme-state staleness audit (adopted 11 May 2026, patch 0344):** This file (`bootup.md`) is *infrastructure* — patterns, conventions, repository structure — not *current state*. Current results, predictions, theorem counts, paper versions, axiom counts, and open-problem status drift over time and are not maintained here. The authoritative current-state pointers are in §§4, 5, 8, 9, 13, and 9.5 below; follow them rather than reading any current-state-looking numbers in this file as authoritative. Hard-coded numbers in this file may be from older programme states (e.g., the patch-number reference in §3 is a deliberately occasional update).
 
-If you see a discrepancy between numbers / dates / status in this file and the live tracking documents, **trust the live tracking documents** (`paper_catalog.md`, `theorem-registry.md`, `predictions.md`, `Research_Frontier.md`, `master_glossary.md`, `axiom-registry.md`, `CPP_the_theory.md` Part VIII Predictions Scorecard) — they are updated per-paper and per-architecture event; this file is updated only when conventions, structure, or protocols change.
+If you see a discrepancy between numbers / dates / status in this file and the live tracking documents, **trust the live tracking documents** (`paper_catalog.md`, `theorem-registry.md`, `predictions.md`, `research_frontier.md`, `master_glossary.md`, `axiom-registry.md`, `CPP_the_theory.md` Part VIII Predictions Scorecard) — they are updated per-paper and per-architecture event; this file is updated only when conventions, structure, or protocols change.
 
 
 ### Step 0 — BEFORE READING ANYTHING ELSE: clone the repo locally
@@ -39,15 +39,15 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 | 2 | `CPP_the_theory.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
 | 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min | — |
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
-| 5 | `Research_Frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min | — |
+| 5 | `research_frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min | — |
 | 6 | `theorem-registry.md` | What we've proved — all theorems by series with axiom dependencies | 5 min | — |
 | 7 | `templates/operating_system.md` | Complete workflow manual — multi-AI review, transcripts, recovery | 10 min | §4 (Four-Tier Documentation Discipline) — required reading before producing reasoning/development/transcript artifacts. **§15 (Session-Close Handover Protocol)** — the canonical 8-step sequence Thomas invokes with "execute handover protocol" or equivalent. If Thomas asks for the handover at session-close, **execute Steps A–H exactly as specified**; do not improvise the sequence or substitute a chat summary for Step H's paste-ready handover document. |
 | 8 | `templates/AI_team_expectations.md` | Team-level conventions, per-AI expectations, identified failure modes | 5 min | — |
 
-**Also check `Organizational_Frontier.md` §1** for any open organizational items (`OPEN-ORG-NNN`) that may bear on the current session. Items registered there have been deferred awaiting their trigger condition; if you are at a natural pause point with capacity, scan whether any are workable.
+**Also check `organizational_frontier.md` §1** for any open organizational items (`OPEN-ORG-NNN`) that may bear on the current session. Items registered there have been deferred awaiting their trigger condition; if you are at a natural pause point with capacity, scan whether any are workable.
 
 **For sessions involving open problem work or repo restructuring**, also read:
-- `templates/Research_Frontier_Architecture.md` — the three-layer architecture (dashboard → problem histories → papers)
+- `templates/research_frontier_architecture.md` — the three-layer architecture (dashboard → problem histories → papers)
 
 ### Step 2: Check what happened last
 
@@ -102,7 +102,7 @@ Always `git pull` before starting work. Thomas pushes frequently.
 
 > **If you (Claude) are about to produce `.patch` files for Thomas to apply, read this section in full BEFORE writing the apply macro you hand him. Do not reconstruct the macro from `conversation_search` or chat history. The canonical form below is battle-tested across ~165+ patches; any reconstruction is a near-miss risk that creates downstream rebase work for Thomas.**
 >
-> **Failure mode this section addresses:** Multiple consecutive Opus sessions have, on first attempt, searched prior conversations for the apply macro instead of reading this section. The result is 2–5 wasted exchanges per session burned on rediscovering documented procedure, plus occasional format-drift risk. If you notice yourself reaching for `conversation_search` to find the macro, STOP and re-read this section instead. (Registered as OPEN-ORG-013 in `Organizational_Frontier.md`; this section is its resolution.)
+> **Failure mode this section addresses:** Multiple consecutive Opus sessions have, on first attempt, searched prior conversations for the apply macro instead of reading this section. The result is 2–5 wasted exchanges per session burned on rediscovering documented procedure, plus occasional format-drift risk. If you notice yourself reaching for `conversation_search` to find the macro, STOP and re-read this section instead. (Registered as OPEN-ORG-013 in `organizational_frontier.md`; this section is its resolution.)
 
 ### Where Thomas works locally
 
@@ -207,7 +207,7 @@ CPP/
 ├── axiom-registry.md                 ← Axiom tracking, prediction counts
 ├── master_glossary.md                ← All CPP terms, acronyms, particles, forces
 ├── predictions.md                    ← Every quantitative prediction with status
-├── Research_Frontier.md              ← ** THE DASHBOARD — all open problems, conjectures, propositions **
+├── research_frontier.md              ← ** THE DASHBOARD — all open problems, conjectures, propositions **
 ├── theorem-registry.md               ← All proved theorems by series with axiom dependencies
 ├── nomenclature.md                   ← ID code legend (AXIM, THEO, PROP, FALS...)
 ├── future_projects.md                ← Prioritised research targets with status
@@ -296,7 +296,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 | `axiom-registry.md` | All axioms, all predictions, growth tracking | After each paper |
 | `master_glossary.md` | Every CPP term, acronym, particle, force, process | Scan during Phase 7 of paper production |
 | `predictions.md` | Quantitative predictions with PDG comparison | After each paper |
-| `Research_Frontier.md` | **The dashboard** — all open problems, conjectures, propositions with status and dependencies | After each paper |
+| `research_frontier.md` | **The dashboard** — all open problems, conjectures, propositions with status and dependencies | After each paper |
 | `theorem-registry.md` | All proved theorems by series, with axiom dependencies | After each paper |
 | `future_projects.md` | 12+ prioritised research targets with status | After each session |
 | `nomenclature.md` | ID code legend | Rarely |
@@ -373,11 +373,11 @@ Do not rely on bootup for current result values. Results drift between papers; t
 
 For the live dashboard of open problems, conjectures, and propositions with status and dependencies:
 
-- **`Research_Frontier.md`** — the canonical dashboard for all open problems across series
+- **`research_frontier.md`** — the canonical dashboard for all open problems across series
 - **`future_projects.md`** — prioritised research targets
 - **`problem_histories/`** — narrative histories of major open problems
 
-Do not rely on bootup for the open-problem list. Active problems are created, resolved, and consolidated frequently; `Research_Frontier.md` is the single source of truth.
+Do not rely on bootup for the open-problem list. Active problems are created, resolved, and consolidated frequently; `research_frontier.md` is the single source of truth.
 
 ---
 
@@ -445,7 +445,7 @@ The handover is a bounded state snapshot — a few hundred lines, not a full nar
 
 Some papers haven't reached the handover-document stage yet. If both paths above resolve to absent files in the local clone, fall back to:
 1. The paper's `.tex` file and its `documentation_suite/changelog-<paper>.md` (per the version-archaeology architecture rule in `operating_system.md`).
-2. `Research_Frontier.md` for related open problems.
+2. `research_frontier.md` for related open problems.
 3. Ask Thomas directly: "I don't see a handover or development document for this paper in the repo — can you point me to where the current state lives?"
 
 **Do not improvise state from training data.** A paper named but without a handover document is a signal that either the paper is very early or the document hasn't been created yet — both cases warrant asking rather than guessing.
@@ -468,7 +468,7 @@ Update the transcript at each section-end commit and at every context-pressure c
 | `theory-overview.md` | Add results, update formula card |
 | `axiom-registry.md` | Check axioms, add predictions, update ratio |
 | `theorem-registry.md` | Add new theorems with axiom dependencies; update theorem count |
-| `Research_Frontier.md` | Update status of problems addressed; move resolved items to §5; add new problems |
+| `research_frontier.md` | Update status of problems addressed; move resolved items to §5; add new problems |
 | `master_glossary.md` | Scan paper for new terms, add in alphabetical order |
 | `founders_vision.md` | Add new physical intuitions from this session |
 | `predictions.md` | Add new predictions with PDG comparison |
@@ -485,7 +485,7 @@ Update the transcript at each section-end commit and at every context-pressure c
 - Update `founders_vision.md` with any new physical insights
 - Create/update development transcript
 - Update `future_projects.md` if priorities changed
-- Note any new open problems in `Research_Frontier.md`; update `problem_histories/` if significant work done
+- Note any new open problems in `research_frontier.md`; update `problem_histories/` if significant work done
 - Push to GitHub
 
 ---

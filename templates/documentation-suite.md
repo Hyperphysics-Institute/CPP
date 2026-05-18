@@ -127,7 +127,7 @@ The intellectual laboratory notebook. Records HOW the paper came to be — not w
 - Timestamps in Mountain Time (Thomas's local time; MDT = UTC-6 in summer, MST = UTC-7 in winter)
 
 ### Problem History Updates (Phase 7 addition)
-After completing the development file, also update any relevant **problem history files** in `problem_histories/`. If the paper advances, resolves, or falsifies an open problem listed in `Research_Frontier.md`, add a dated journal entry to the corresponding `PH-[ID].md` file recording what was tried, what was learned, and the status change. See `templates/Research_Frontier_Architecture.md` for the problem history format. If no history file exists yet and the paper produced significant progress on a problem, create one.
+After completing the development file, also update any relevant **problem history files** in `problem_histories/`. If the paper advances, resolves, or falsifies an open problem listed in `research_frontier.md`, add a dated journal entry to the corresponding `PH-[ID].md` file recording what was tried, what was learned, and the status change. See `templates/research_frontier_architecture.md` for the problem history format. If no history file exists yet and the paper produced significant progress on a problem, create one.
 
 ---
 

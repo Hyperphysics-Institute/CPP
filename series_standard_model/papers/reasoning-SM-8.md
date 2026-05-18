@@ -318,7 +318,7 @@ $$\boxed{\; M_q = m_e \cdot \frac{z}{\varphi} \cdot V^{7/3} \cdot \begin{cases} 
 - **`archive/.../angular_pair_model_transcript.md`** — curated narrative-form transcript covering Sessions 2-3 above (Symmetry Degeneracy Theorem and gap correction), produced contemporaneously and used as the seed for the development-SM-8.md companion.
 - **`series_standard_model/papers/{development,glossary,mechanism,phenomena,philosophy,reviews,FAQ,keywords}-SM-8.md`** — flat-layout 8-file documentation suite with paper-companion content.
 - **`bibliography/cpp_references.bib`** — central bibliography with SM-8 v4.1 entry plus the Casimir and Manton entries added during Session 6's compliance migration.
-- **`Research_Frontier.md`** — OPEN-P-SM-8-7-3 (rigorous derivation of the 7/3 exponent, OP-2) and CONJ-SM-9-2 (EW feedback ε) registered as ongoing programme-level open problems.
+- **`research_frontier.md`** — OPEN-P-SM-8-7-3 (rigorous derivation of the 7/3 exponent, OP-2) and CONJ-SM-9-2 (EW feedback ε) registered as ongoing programme-level open problems.
 - **`templates/operating_system.md` §11** — versioning protocol established in Session 5. **§10 axiom-numbering reconciliation** — codified from Session 8's Grok-Copilot axiom-naming collision.
 - **`templates/paper-formatting.md` §7.2** — bibliography compliance protocol from Session 6.
 - **`founders_vision.md`** — entries on the M₀ derivation, the Symmetry Degeneracy Theorem, and the gap × C_F mechanism (each archived from this chat-window's discoveries).

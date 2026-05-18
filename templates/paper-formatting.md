@@ -195,7 +195,7 @@ When figures are inserted, add a comment block explaining placement:
 \newpage
 
 \section{Introduction}
-\subsection{Open Problems Addressed}   % ← list which Research_Frontier.md entries this paper confronts
+\subsection{Open Problems Addressed}   % ← list which research_frontier.md entries this paper confronts
 \section{...}  (body sections — definitions, lemmas, theorems, proofs)
 \section{Physical Interpretation}       % ← CPP mechanism: what physical objects are involved and what are they doing?
 \subsection{CP/GP Signature at This Scale}    % ← REQUIRED (PD-001, 24 Apr 2026); see §4.1A below
@@ -208,7 +208,7 @@ When figures are inserted, add a comment block explaining placement:
 \appendix  (if needed)
 ```
 
-**Open Problems Addressed** (in Introduction): List each `Research_Frontier.md` entry the paper confronts, by ID and short title. Example:
+**Open Problems Addressed** (in Introduction): List each `research_frontier.md` entry the paper confronts, by ID and short title. Example:
 ```latex
 \subsection{Open Problems Addressed}
 This paper addresses OPEN-SS-11 (SU(3) operator uniqueness) and
@@ -402,7 +402,7 @@ Each paper's `.tex` file calls:
 
 **Alternative — inline bibliography.** Short papers may embed citations directly in the .tex via a `thebibliography` environment with `\bibitem{}` entries. SS-3 uses this pattern. This avoids any external .bib dependency.
 
-**Policy (15 April 2026):** The master file is the **single source of truth**. Per-paper `[ID]_references.bib` and per-series `cpp_[series]_series.bib` files are **deprecated and frozen** — no new entries. Legacy files are retained for compatibility with already-registered papers. Full consolidation is tracked as OPEN-WORKFLOW-1 in Research_Frontier.md.
+**Policy (15 April 2026):** The master file is the **single source of truth**. Per-paper `[ID]_references.bib` and per-series `cpp_[series]_series.bib` files are **deprecated and frozen** — no new entries. Legacy files are retained for compatibility with already-registered papers. Full consolidation is tracked as OPEN-WORKFLOW-1 in research_frontier.md.
 
 **Do NOT** write new papers with commands like:
 ```latex
@@ -754,7 +754,7 @@ Before declaring a paper "ready for OSF registration," verify:
 │   ├── FAQ-[SERIES]-[N].md
 │   └── keywords-[SERIES]-[N].md
 ├── problem_histories/
-├── Research_Frontier.md
+├── research_frontier.md
 ├── theorem-registry.md
 ├── predictions.md
 └── paper_catalog.md

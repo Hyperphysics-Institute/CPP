@@ -155,7 +155,7 @@ The conditional-closure framework applies to all future flagship papers in the S
 - The closure-level statement in §1.4 should match the framework's terminology.
 - The paper-level Remark setting the conditional-closure framing should appear in the closure section.
 - The FI accounting should be enumerated explicitly at the closure boundary.
-- If the paper enables a cross-sector closure (resolving an open problem in another paper jointly), the methodology of Finding $\beta$-10 should be invoked and the cross-sector closure narrative registered both in the paper and in the programme registries (`theorem-registry.md`, `paper_catalog.md`, `Research_Frontier.md`).
+- If the paper enables a cross-sector closure (resolving an open problem in another paper jointly), the methodology of Finding $\beta$-10 should be invoked and the cross-sector closure narrative registered both in the paper and in the programme registries (`theorem-registry.md`, `paper_catalog.md`, `research_frontier.md`).
 
 The framework is also retroactively applicable to existing closed flagship and series papers. Where a prior paper uses "RESOLVED" without the conditional sense made explicit, future revisions can add the conditional qualifier without changing mathematical content — the framework adds epistemic precision, not new theorems.
 

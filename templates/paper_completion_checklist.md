@@ -397,7 +397,7 @@ to reviewers their legitimacy.
   the paper.
 
 - [ ] **H4.** Confirm every OPEN-*, CONJ-*, PROP-* identifier used in
-  the paper appears in `Research_Frontier.md` with current status.
+  the paper appears in `research_frontier.md` with current status.
 
 - [ ] **H5.** Confirm no stale references in `README.md` or `INDEX.md`
   (old paper counts, broken links, retired filenames).

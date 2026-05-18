@@ -8,7 +8,7 @@
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a_Ascaling.md` (Session 7 Phase 1 A-scaling work; provides $\hbar\omega$ values used here)
 - `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_b_Balpha_layer1.py` (reproducible computation)
 - `series_strong/papers/SS-2_lattice_scale_nucleon_structure.tex` (CPP nucleon machinery, $R_\alpha$ context)
-- `Research_Frontier.md` OPEN-SS-35 entry
+- `research_frontier.md` OPEN-SS-35 entry
 
 **Net programme effect:** Sub-question (b) Route B-α: layer 1 closed at Level-1 partial. Two independent CPP-derived routes (cluster-density Fermi gas; HO virial theorem) plus a surface-region cross-check yield $v_F/c$ values that **bracket** the empirical $0.27$–$0.30$, with mean $\approx 0.27$ across alpha-chain regime. The Phase 2 scoping document's phenomenological "$v/c \approx 0.3$" input is now CPP-derived, and the Level-0 estimate $V_{\rm SO} \sim (v_F/c)^2 \cdot \hbar\omega \approx 1.4$ MeV at $A = 56$ is upgraded to a Level-1 partial closure for the $V_{\rm SO}$ magnitude. Pattern 6 K$_3$ scale-recurrence unchanged at 7 confirmed instances.
 

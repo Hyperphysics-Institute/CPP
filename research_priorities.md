@@ -10,7 +10,7 @@
 
 ## Purpose
 
-This file is the **strategic prioritization layer** above `Research_Frontier.md`. Where `Research_Frontier.md` catalogs 82+ open problems with fine-grained operational state, this file answers:
+This file is the **strategic prioritization layer** above `research_frontier.md`. Where `research_frontier.md` catalogs 82+ open problems with fine-grained operational state, this file answers:
 
 - Which of those problems are we working on right now?
 - In what order, and why this order?
@@ -24,7 +24,7 @@ It exists because re-deriving priorities from the 82-problem Frontier each sessi
 | File | Scope | Update cadence |
 |---|---|---|
 | **`research_priorities.md`** (this file) | Strategic prioritization, current tracks, reasoning capture | Per major strategic decision (rare) |
-| **`Research_Frontier.md`** | All 82+ problems with operational state, last-updated session-by-session | Every session |
+| **`research_frontier.md`** | All 82+ problems with operational state, last-updated session-by-session | Every session |
 | **`future_projects.md`** | Registered active projects with mechanism / falsifier / companion fields | When new projects register or status changes |
 | **`todolist.md`** | Small carried-over hygiene items, deferred protocol steps, gaps | Per session as items clear |
 | **`session_logs/`** | Per-session entries capturing what happened | Every session |
@@ -289,7 +289,7 @@ This file is updated only when:
 2. A track ships and needs status update (Track 1 completion → moves to "Cleared/Completed" section, Track 2 promotes to ACTIVE)
 3. New strategic constraints emerge (e.g., OSF resolves, arXiv endorsement obtained, time-budget shifts)
 
-Routine session work updates `Research_Frontier.md`, `todolist.md`, and `session_logs/` — not this file.
+Routine session work updates `research_frontier.md`, `todolist.md`, and `session_logs/` — not this file.
 
 If this file's "Active priorities" section grows beyond 5 tracks, that indicates strategic dilution; reconsider whether deferred tracks should remain deferred or whether some active tracks should be consolidated.
 
@@ -297,4 +297,4 @@ If "Deprioritized / deferred" section grows beyond 10 entries, that indicates th
 
 ---
 
-**Architecture pointer**: See `templates/Research_Frontier_Architecture.md` for the operational frontier system. This file is the strategic layer above that architecture, not a replacement for it.
+**Architecture pointer**: See `templates/research_frontier_architecture.md` for the operational frontier system. This file is the strategic layer above that architecture, not a replacement for it.

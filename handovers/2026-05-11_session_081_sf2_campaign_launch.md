@@ -16,7 +16,7 @@
 4. **`templates/conditional_closure_framework.md`** — programme-level methodology convention for conditional theorem closure, FI accounting, the "RESOLVED" terminology convention; SF-2 inherits this convention from day one
 5. **`templates/operating_system.md`** §13 Binary Artifact Workflow — programme-level PDF compile workflow; ClearPC is canonical compile machine; `cpp-recompile-pdf.sh` script for local PDF compilation
 6. **`theorem-dependency-graph.md`** — programme-level inheritance map for the 56 theorems + 1 prop + 1 lemma in the registry; SF-2 will add new entries here at SHIP
-7. **`Research_Frontier.md`** entries for **CONJ-EW-W0** (W⁰ as catalyst-substrate; novel particle prediction) and **OPEN-SM-4** (Capotauro mechanism, the candidate for the second cross-sector closure in CPP)
+7. **`research_frontier.md`** entries for **CONJ-EW-W0** (W⁰ as catalyst-substrate; novel particle prediction) and **OPEN-SM-4** (Capotauro mechanism, the candidate for the second cross-sector closure in CPP)
 8. **Source papers for SF-2 reframing**:
    - `series_standard_model/papers/SM-1` — four-cage taxonomy from 600-cell geometry (V=4 tetrahedron, V=12 icosahedron, V=20 dodecahedron; established)
    - `series_standard_model/papers/SM-6` — Weinberg angle $\\sin^2\\theta_W = 3/(8\\phi) = 0.2312$ (matches PDG to 0.24%; established)
@@ -86,7 +86,7 @@ In addition to cage-boson masses, SF-2 establishes:
 
 ### CPP-novel particle: CONJ-EW-W0
 
-The **W⁰** is the most distinctive prediction of SF-2. Registered as **CONJ-EW-W0** in `Research_Frontier.md` (Session 41 patch 0301 during the architectural revision). Distinguishing features:
+The **W⁰** is the most distinctive prediction of SF-2. Registered as **CONJ-EW-W0** in `research_frontier.md` (Session 41 patch 0301 during the architectural revision). Distinguishing features:
 
 - **Cage geometry**: 12-CP **bracelet** / **open-configuration** structure, distinct from Z's closed icosahedron at the same vertex count
 - **Mass scale**: from cage-stability of the bracelet (separate calculation from Z's icosahedron)
@@ -97,7 +97,7 @@ The W⁰ is the **forced-choice prediction** that satisfies SF-2's inclusion cri
 
 ### Cross-sector closure candidate: SF-2 ↔ SM-5 OP-SM-4 Capotauro
 
-**The candidate for the second cross-sector closure in CPP.** OPEN-SM-4 (the Capotauro mechanism in SM-5) is registered HIGH priority in `Research_Frontier.md`, sectors SM + SR. The Capotauro mechanism produces three classes of corrections that propagate into the neutrino sector: (i) PMNS angle corrections lifting TBM zeroth-order to observed values; (ii) mass-eigenvalue corrections tightening the V² structural residuals (4% and 11% in SF-4 mass ratios); (iii) $\\delta_{CP}$ derivation as output of the same mechanism.
+**The candidate for the second cross-sector closure in CPP.** OPEN-SM-4 (the Capotauro mechanism in SM-5) is registered HIGH priority in `research_frontier.md`, sectors SM + SR. The Capotauro mechanism produces three classes of corrections that propagate into the neutrino sector: (i) PMNS angle corrections lifting TBM zeroth-order to observed values; (ii) mass-eigenvalue corrections tightening the V² structural residuals (4% and 11% in SF-4 mass ratios); (iii) $\\delta_{CP}$ derivation as output of the same mechanism.
 
 **If SF-2's EW closure resolves OP-SM-4 jointly**, it would:
 - Deliver $\\delta_{CP}$ as the 8th zero-parameter neutrino-sector prediction (extending SF-4 from 7/8 to 8/8)
@@ -279,7 +279,7 @@ Total: ~45 sessions in the SF-4 dossier. SF-2 has a methodology advantage SF-4 d
 - **SF-4 in TATWD** (the precedent for SF-2 TATWD integration): `CPP_the_theory.md` Chapter 22d + Chapter 35.5 + Part VIII neutrino-sector predictions
 - **SF-line operational history**: `flagship_papers/SF-line_development_transcript.md` (Tier 4 reasoning capture for SF-line development sessions including SF-4 history)
 - **Programme-level methodology**: `templates/conditional_closure_framework.md`, `theorem-dependency-graph.md`, `templates/operating_system.md`
-- **CPP foundations**: `axiom-registry.md`, `theorem-registry.md`, `master_glossary.md`, `Research_Frontier.md`, `paper_catalog.md`, `predictions.md`
+- **CPP foundations**: `axiom-registry.md`, `theorem-registry.md`, `master_glossary.md`, `research_frontier.md`, `paper_catalog.md`, `predictions.md`
 
 ---
 

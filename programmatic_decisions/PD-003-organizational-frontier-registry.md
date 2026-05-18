@@ -2,10 +2,10 @@
 
 **Date:** 24 April 2026
 **Session:** SS-8 v0.2 closing phase (post-commit `d8e0b22`)
-**Status:** Adopted. Registry established at `/CPP/Organizational_Frontier.md` with 7 inaugural entries.
+**Status:** Adopted. Registry established at `/CPP/organizational_frontier.md` with 7 inaugural entries.
 **Scope:** Programme-wide — governs the capture, storage, retrieval, and execution of organizational/infrastructural improvement items across all CPP programme work.
 **Companion artifacts:**
-- `Organizational_Frontier.md` (the registry itself, structurally parallel to `Research_Frontier.md`)
+- `organizational_frontier.md` (the registry itself, structurally parallel to `research_frontier.md`)
 - `templates/operating_system.md` §12 "Organizational Frontier Registry" (the operational documentation)
 
 ---
@@ -28,12 +28,12 @@ The specific failure mode has three components:
 
 The programme has registries for two kinds of open items:
 
-- **Theoretical/physics problems:** `Research_Frontier.md` with `OPEN-SS-N`, `OPEN-SM-N`, etc. entries. Single file, persistent identifiers, reviewed at each paper's completion, individual problems assigned to papers as they become workable.
+- **Theoretical/physics problems:** `research_frontier.md` with `OPEN-SS-N`, `OPEN-SM-N`, etc. entries. Single file, persistent identifiers, reviewed at each paper's completion, individual problems assigned to papers as they become workable.
 - **Programmatic decisions once resolved:** `programmatic_decisions/PD-NN-*.md` records what was decided and why, after the fact.
 
 The programme has *no* registry for open *organizational improvements that have been identified but not yet acted on*. Those currently live in exactly one place: the closing "Pending for next session" list of each session's final message. This list has the three failure modes above.
 
-The diagnosis suggests the solution: parallel `Research_Frontier.md`'s approach at organizational scope. A single file, `OPEN-ORG-NNN` persistent identifiers, structured entries with enough context to act on without session-memory reconstruction, reviewed at programme milestones.
+The diagnosis suggests the solution: parallel `research_frontier.md`'s approach at organizational scope. A single file, `OPEN-ORG-NNN` persistent identifiers, structured entries with enough context to act on without session-memory reconstruction, reviewed at programme milestones.
 
 ## The critical design element: trigger conditions
 
@@ -58,7 +58,7 @@ The trigger condition is what distinguishes the registry from a generic "TODO li
 The operational discipline the registry supports: when an organizational improvement idea surfaces during active work, the correct action is not to act on it immediately (disrupting current scope) nor to carry it in session memory (losing it to compaction), but to:
 
 1. Stop for 60–90 seconds
-2. Open `Organizational_Frontier.md`
+2. Open `organizational_frontier.md`
 3. Add an entry using the template — with full fidelity reasoning, not a summary
 4. Commit (or stage for the next batched commit)
 5. Return to current work
@@ -69,7 +69,7 @@ This is structurally identical to how theoretical problems already work. When an
 
 ## Relationship to existing handover mechanism
 
-The "Pending for next session" list at the close of each session continues to exist, but its role changes. Previously: primary storage location for pending items, with all context inline. Now: short pointer list referencing entries in `Organizational_Frontier.md`, without content duplication. A session-close handover reads:
+The "Pending for next session" list at the close of each session continues to exist, but its role changes. Previously: primary storage location for pending items, with all context inline. Now: short pointer list referencing entries in `organizational_frontier.md`, without content duplication. A session-close handover reads:
 
 > OPEN-ORG registry current; OPEN-ORG-{N} became workable this session (deferred due to time); OPEN-ORG-{M} newly registered this session. Next session should scan registry against current state.
 
@@ -114,10 +114,10 @@ That said, the registry itself can grow unwieldy at sufficient scale. If OPEN-OR
 ## Implementation path
 
 1. **This decision record** (`programmatic_decisions/PD-003-organizational-frontier-registry.md`) — committed in the same patch that establishes the registry.
-2. **`Organizational_Frontier.md`** at programme root — created and populated with 7 inaugural entries at full fidelity.
+2. **`organizational_frontier.md`** at programme root — created and populated with 7 inaugural entries at full fidelity.
 3. **`templates/operating_system.md` §12 "Organizational Frontier Registry"** — operational documentation for reflexive-drop protocol, entry template, review cadence, and registry-maintenance protocol. Part of the same patch.
 4. **Future sessions** — use the reflexive-drop protocol when organizational ideas surface. Session-close handovers become pointer lists rather than content-duplication lists.
-5. **Future paper milestones** — registry reviewed at each v1.0 milestone alongside `Research_Frontier.md`. Entries whose triggers have fired get queued for execution; items accumulate resolutions in §3 of the registry file.
+5. **Future paper milestones** — registry reviewed at each v1.0 milestone alongside `research_frontier.md`. Entries whose triggers have fired get queued for execution; items accumulate resolutions in §3 of the registry file.
 
 ## Forward discipline for Claude (any future Opus)
 

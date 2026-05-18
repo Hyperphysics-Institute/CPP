@@ -2,7 +2,7 @@
 
 **Created:** 16 May 2026 (registered at Capotauro v1.0 SHIP retroactive doc-suite catch-up, Session 123 Patch 0416A; problem itself active since March 2026)
 **Status:** OPEN (PARTIAL CLOSURE) — sub-claim (c) CLOSED at v1.0 SHIP Session 122 Patch 0415 via THEO-CAP-1; sub-claim (b) Reading C closure trajectory advanced via three-patch arc Sessions 124-126 Patches 0417-0419 (Q1+Q2 closed at Layer 3 theorem level; Q1'+Q1'.A resolved at Layer 2 toward vertex-aligned; Findings C-W35/C-W36/C-W37 registered); sub-claim (a) remains open. Remaining open questions Q3-Q7 in Reading C trajectory; 7-17 sessions estimated to Layer 3 closure of full Reading C.
-**Research_Frontier.md entry:** OPEN-SM-4 (parent) + OPEN-FI-C-9-FP-MECHANISM (sub-claim (b) Reading C closure-trajectory pointer)
+**research_frontier.md entry:** OPEN-SM-4 (parent) + OPEN-FI-C-9-FP-MECHANISM (sub-claim (b) Reading C closure-trajectory pointer)
 **Target paper:** Capotauro v1.0 SHIPPED (sub-claim (c)); Capotauro v2.0+ (sub-claim (b) closure trigger via Reading C Q1+); future paper (sub-claim (a) Capotauro nucleation event downstream of sub-claim (b))
 **Parent paper:** Capotauro v1.0 SHIPPED 16 May 2026 (Session 122 close, Patch 0415) at `flagship_papers/capotauro/capotauro.tex`
 
@@ -18,7 +18,7 @@ The Capotauro mechanism decomposes the problem into three sub-claims, registered
 
 **Sub-claim (a)** — Capotauro nucleation event derivation. The universe-wide sign-selection event determining which of the two equivalent enantiomorphs of the substrate vacuum is realized in our universe. Distinct from the magnitude mechanism (sub-claim b); the magnitude can be derived independently of the sign-selection. Cosmological framing from Abshier & Grok December 2025 Capotauro nucleation paper (lattice nucleation at $z \simeq 32$). **OPEN.**
 
-**Sub-claim (b)** — substrate chirality mechanism candidate derivation. The first-principles derivation of the substrate's primitive chirality magnitude $\|\chi\| = \phi^{-3}$ from more primitive CPP axioms, rather than postulating $\phi^{-3}$ as a foundational input. Tracked separately at `Research_Frontier.md` OPEN-FI-C-9-FP-MECHANISM with Reading C geometric-chirality candidate registered Session 121 Patch 0414 at working sketch `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`. **OPEN.**
+**Sub-claim (b)** — substrate chirality mechanism candidate derivation. The first-principles derivation of the substrate's primitive chirality magnitude $\|\chi\| = \phi^{-3}$ from more primitive CPP axioms, rather than postulating $\phi^{-3}$ as a foundational input. Tracked separately at `research_frontier.md` OPEN-FI-C-9-FP-MECHANISM with Reading C geometric-chirality candidate registered Session 121 Patch 0414 at working sketch `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`. **OPEN.**
 
 **Sub-claim (c)** — substrate-to-K3-doublet matrix element derivation $\|M\| = \chi/6$ on the TBM-aligned K3-doublet of charged-lepton substrate states. Given the substrate chirality magnitude $\|\chi\|$ as foundational input (FI-C-9), derive the chirality matrix element on the K3-doublet at theorem level. **CLOSED at v1.0 SHIP Session 122 Patch 0415 via THEO-CAP-1 Composite Capotauro Wigner-Eckart Theorem.**
 
@@ -32,7 +32,7 @@ The Capotauro paper v1.0 closes sub-claim (c) at conditional theorem level via T
 
 ### Pre-v0.1 (Sessions 1-85)
 
-The OPEN-SM-4 entry was registered in `Research_Frontier.md` on 23 March 2026 as a conceptual placeholder: "Derive the lattice chirality-activation event that establishes $\chi \approx \phi^{-1}$ and produces CP violation." The original conjectured magnitude $\chi \approx \phi^{-1}$ from earlier substrate-physics intuition was carried through Sessions 1-85 without rigorous derivation. The Abshier & Grok December 2025 Capotauro nucleation paper supplied the cosmological framing ($z \simeq 32$ lattice nucleation epoch) and the etymology (*capo* + *tauro* = "head bull event"). Grok also coined the empirical chirality bias target $\Delta p_{LR} \approx 0.04$ back-derived from $\eta_B$ via leptogenesis.
+The OPEN-SM-4 entry was registered in `research_frontier.md` on 23 March 2026 as a conceptual placeholder: "Derive the lattice chirality-activation event that establishes $\chi \approx \phi^{-1}$ and produces CP violation." The original conjectured magnitude $\chi \approx \phi^{-1}$ from earlier substrate-physics intuition was carried through Sessions 1-85 without rigorous derivation. The Abshier & Grok December 2025 Capotauro nucleation paper supplied the cosmological framing ($z \simeq 32$ lattice nucleation epoch) and the etymology (*capo* + *tauro* = "head bull event"). Grok also coined the empirical chirality bias target $\Delta p_{LR} \approx 0.04$ back-derived from $\eta_B$ via leptogenesis.
 
 ### Session 86 (Patches 0376–0381): closure trajectory opening
 
@@ -60,7 +60,7 @@ Sessions 104–122 produced the v1.0 paper via the standard v0.1 → v1.0 trajec
 
 **Sub-claim (c) CLOSED** at conditional theorem level via THEO-CAP-1 (Composite Capotauro Wigner-Eckart Theorem); primary empirical prediction $\Delta p_{LR} \approx 0.0394$ validated within 2% of empirical anchor $\sim 0.04$ from leptogenesis back-derivation; the Capotauro paper is the third flagship paper to ship at v1.0 in the CPP corpus (after SS-9, SF-4, SF-2) and the first flagship outside the SF-N numerical convention. **Sub-claims (a) and (b) remain OPEN.** OPEN-SM-4 advances OPEN → OPEN (PARTIAL CLOSURE) but NOT OPEN → CLOSED.
 
-Programme-level changes at v1.0 SHIP: (1) `Research_Frontier.md` OPEN-SM-4 status updated to PARTIAL CLOSURE; (2) `Research_Frontier.md` NEW OPEN-FI-C-9-FP-MECHANISM entry registered (Reading C geometric-chirality candidate as Layer 3 closure trajectory); (3) `theorem-registry.md` THEO-CAP-1 paper-level confirmation; (4) `paper_catalog.md` SF-Line Capotauro row + Documentation paragraph; (5) `INDEX.md` flagship_papers entries; (6) `flagship_papers/capotauro/README.md` paper-level README created.
+Programme-level changes at v1.0 SHIP: (1) `research_frontier.md` OPEN-SM-4 status updated to PARTIAL CLOSURE; (2) `research_frontier.md` NEW OPEN-FI-C-9-FP-MECHANISM entry registered (Reading C geometric-chirality candidate as Layer 3 closure trajectory); (3) `theorem-registry.md` THEO-CAP-1 paper-level confirmation; (4) `paper_catalog.md` SF-Line Capotauro row + Documentation paragraph; (5) `INDEX.md` flagship_papers entries; (6) `flagship_papers/capotauro/README.md` paper-level README created.
 
 Documentation drift fix at Session 123 Patch 0416A (this PH file's creation): three drift items surfaced by §15 Step E per-registry audit at Patch 0416 retroactive handover construction — (a) `predictions.md` PRED-O-25 Capotauro $\Delta p_{LR}$ entry; (b) `master_glossary.md` Capotauro v1.0 substrate-vacuum chirality framework terms section (12 entries); (c) this `problem_histories/PH-OPEN-SM-4.md` file. All three drift items fixed in Patch 0416A before downstream Section A doc-suite production reads from the registries.
 

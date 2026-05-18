@@ -45,7 +45,7 @@ Extension of the K3-doublet with cage-shell perpendicular wavefunctions $\{\|\ch
 Five structural inputs covering the substrate-vacuum order parameter ansatz, the chirality observable's symmetry properties, the Wigner-Eckart factorization on $D_6$, and the substrate-orientation field. See paper §2 + §4.
 
 ### FI-C-9 — Substrate primitive chirality magnitude
-$\|\chi\| = \phi^{-3}$ treated as a foundational substrate feature at v1.0 SHIP. The primitive-feature framing (Session 120 Patch 0413 reframe) replaces the earlier SSB framing per CPP-core-principle methodological commitment. SSB framing preserved in Remark 2.2 as mathematically-equivalent alternative. First-principles derivation tracked at `Research_Frontier.md` OPEN-FI-C-9-FP-MECHANISM with Reading C as candidate physical mechanism (Session 121 working sketch). See paper §2 + Remark 2.2.
+$\|\chi\| = \phi^{-3}$ treated as a foundational substrate feature at v1.0 SHIP. The primitive-feature framing (Session 120 Patch 0413 reframe) replaces the earlier SSB framing per CPP-core-principle methodological commitment. SSB framing preserved in Remark 2.2 as mathematically-equivalent alternative. First-principles derivation tracked at `research_frontier.md` OPEN-FI-C-9-FP-MECHANISM with Reading C as candidate physical mechanism (Session 121 working sketch). See paper §2 + Remark 2.2.
 
 ### FI-C-10 — Cage-shell observable-class extension
 Extension of FI-C-6 (cage-shell coupling mass-formula mechanism from SF-4 v4.0 THEO-SF-4-5) from mass observables to chirality observables. Justified at v1.0 by three plausibility arguments: substrate-isotropy + DI-bit propagation + FI-C-6 precedent. Observable-class-independence claim physically motivated but not formally derived from CPP axioms A1–A11; first-principles closure registered as separate open work entry distinct from OPEN-FI-C-9-FP-MECHANISM. See paper §5.4.
@@ -128,7 +128,7 @@ Derivation principle: Schur orthogonality on the icosahedral first cage shell of
 The universe-wide sign-selection event determining which enantiomorph of the substrate vacuum is realized in our universe. Distinct from sub-claim (b) magnitude mechanism; the magnitude can be derived independently of the sign-selection. Cosmological framing from Abshier & Grok December 2025 Capotauro nucleation paper preserved. **OPEN.** See paper §9.1.
 
 ### Sub-claim (b) — substrate chirality mechanism candidate derivation
-First-principles derivation of $\|\chi\| = \phi^{-3}$ from more primitive CPP axioms rather than postulating it as foundational input FI-C-9. Tracked at `Research_Frontier.md` OPEN-FI-C-9-FP-MECHANISM. Reading C registered Session 121 Patch 0414 as candidate physical mechanism (primitive 4D direction $\hat{n}$ producing direction-correlated edge-length variation in 600-cell). Layer 3 closure trajectory estimated 10–20 sessions; Q1 group-theoretic verification of $H_4$ stabilizer of $\hat{n} \cong I_4$ is the first sub-step (1–3 sessions) triggering Capotauro v2.0+. **OPEN.** See paper §9.2.
+First-principles derivation of $\|\chi\| = \phi^{-3}$ from more primitive CPP axioms rather than postulating it as foundational input FI-C-9. Tracked at `research_frontier.md` OPEN-FI-C-9-FP-MECHANISM. Reading C registered Session 121 Patch 0414 as candidate physical mechanism (primitive 4D direction $\hat{n}$ producing direction-correlated edge-length variation in 600-cell). Layer 3 closure trajectory estimated 10–20 sessions; Q1 group-theoretic verification of $H_4$ stabilizer of $\hat{n} \cong I_4$ is the first sub-step (1–3 sessions) triggering Capotauro v2.0+. **OPEN.** See paper §9.2.
 
 ### Sub-claim (c) — substrate-to-K3-doublet matrix element
 $\|M\| = \chi/6$ on the TBM-aligned K3-doublet at theorem level. **CLOSED at v1.0 SHIP via THEO-CAP-1.** See paper §5 + Theorem 5.1.
@@ -151,7 +151,7 @@ Reading C's new structural prediction: chirality magnitude $\|\chi\| = \phi^{-3}
 ## Open work and re-scoped problems
 
 ### OPEN-FI-C-9-FP-MECHANISM
-`Research_Frontier.md` entry registering Reading C as the sub-claim (b) closure-trajectory at Layer 3 level. NEW at Session 122 Patch 0415; Layer 1 / Layer 2 epistemic status at v1.0 SHIP.
+`research_frontier.md` entry registering Reading C as the sub-claim (b) closure-trajectory at Layer 3 level. NEW at Session 122 Patch 0415; Layer 1 / Layer 2 epistemic status at v1.0 SHIP.
 
 ### Q11 — $\sin^2\theta_{13}$ derivation
 Re-scoped to SF-2 v2.0+ at Session 101 Patch 0395. Linear-vs-quadratic scaling tension: standard QFT-perturbation gives quadratic scaling off by factor 21 from candidate-γ linear-scaling target. Candidate γ $\sin^2\theta_{13} = b \cdot m_\perp = \chi/(6\sqrt{3}) \approx 0.0227$ matches NuFIT 6.0 empirical $0.0222 \pm 0.00069$ within 1σ but requires CPP-specific linear-scaling framework. See paper §7.

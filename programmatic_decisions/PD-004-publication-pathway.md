@@ -6,7 +6,7 @@
 **Scope:** Programme-wide — governs the sequencing and framing of CPP papers when presented to external audiences (arXiv, peer-reviewed venues, conference proceedings, anthology).
 **Origin:** ChatGPT external review of SF-2 main paper v0.7 + Companion v1.3 (14 May 2026), specifically the "Best publication path" recommendation.
 **Companion artifacts:**
-- `Research_Frontier.md` (programme-wide problem registry)
+- `research_frontier.md` (programme-wide problem registry)
 - `paper_catalog.md` (per-paper version + status tracking)
 - `flagship_papers/*/README.md` (per-flagship status headers)
 

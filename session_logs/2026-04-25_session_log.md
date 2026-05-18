@@ -16,7 +16,7 @@ The session opened with a Claude bootup-protocol stress-test. The bootup file wa
 
 **Patch 0022 (`b2753da`):** bootup.md gets new Step 0 "BEFORE READING ANYTHING ELSE: clone the repo locally"; §2 reframed; §8.5 demoted URL-fetch to reference-only. Addresses the OPEN-ORG-009 failure modes structurally.
 
-**Patch 0023 (`c0ca0a3`):** TENTATIVELY-SOLVED-PARTIAL history line on OPEN-ORG-009 in `Organizational_Frontier.md`. Entry stays OPEN per Thomas's instruction (the partial-solved tag captures that 0022 fixes the bootup-side failure mode but doesn't address the underlying fetcher whitelist limitation, which would require Anthropic-side action).
+**Patch 0023 (`c0ca0a3`):** TENTATIVELY-SOLVED-PARTIAL history line on OPEN-ORG-009 in `organizational_frontier.md`. Entry stays OPEN per Thomas's instruction (the partial-solved tag captures that 0022 fixes the bootup-side failure mode but doesn't address the underlying fetcher whitelist limitation, which would require Anthropic-side action).
 
 ---
 
@@ -64,7 +64,7 @@ After the audit work, the SS-8 paper-completion-checklist survey identified the 
 - `INDEX.md`: SS-8 paper + documentation entries.
 - `series_strong/series_strong_README.md`: comprehensive backfill (was 17-April stale, missing SS-6/7/8).
 - `future_projects.md`: Project 0e reclassified to v1.0 COMPLETE; new Project 0f SS-9 candidate slate (7 candidates ranked, OPEN-SS-24 recommended).
-- `Research_Frontier.md`: OPEN-SS-23 PARTIALLY RESOLVED; OPEN-SS-26/27/28 paper refs cleaned.
+- `research_frontier.md`: OPEN-SS-23 PARTIALLY RESOLVED; OPEN-SS-26/27/28 paper refs cleaned.
 - `theorem-registry.md`: THEO-SS-13 (Euler-degree), THEO-SS-14 (D1 Level-1+2), THEO-SS-15 (2E/V scaling); SS row 11→14, total 49→52.
 
 ---

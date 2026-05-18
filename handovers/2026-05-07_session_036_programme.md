@@ -21,7 +21,7 @@ This is a context-window-transition handover. The current Session 36 conversatio
 4. `series_strong/papers/SS-9/documentation_suite/handover-SS-9.md` (SS-9-specific permanent handover; covers SS-9 history through Session 35 close + Session 36 patch 0285 errata)
 5. The Session 36 entry + Session 36 close strategic appendix in `session_logs/2026-05-02_session_log.md` (technical details + durable strategic-conversation record)
 6. `todolist.md` (P1-empty; new work picks up from research_priorities.md, NOT from todolist)
-7. `Research_Frontier.md` last-updated header (latest programme-state summary; remember: this catalogs ALL 82+ open problems — most are now LOW priority per Session 36 strategic decision; only Track 1-4 problems are actively pursued)
+7. `research_frontier.md` last-updated header (latest programme-state summary; remember: this catalogs ALL 82+ open problems — most are now LOW priority per Session 36 strategic decision; only Track 1-4 problems are actively pursued)
 8. `paper_catalog.md` SS-9 row (now at v1.0 SHIPPED with .pdf in repo)
 
 ---
@@ -150,7 +150,7 @@ Thomas asked about SS-10 readiness. Audit of `todolist.md` P1 found:
 
 **Result**: P1 genuinely empty; SS-10 may begin.
 
-Patch 0288 (Session 36 close): `todolist.md` cleanup + Session 36 entry to `session_logs/2026-05-02_session_log.md` + `Research_Frontier.md` last-updated header bump.
+Patch 0288 (Session 36 close): `todolist.md` cleanup + Session 36 entry to `session_logs/2026-05-02_session_log.md` + `research_frontier.md` last-updated header bump.
 
 ---
 
@@ -163,9 +163,9 @@ Patch 0288 (Session 36 close): `todolist.md` cleanup + Session 36 entry to `sess
 | 3 | 0287 | SS-8.tex `\usepackage{xcolor}` import (line 231, before mdframed) | `e8031b3` |
 | - | (Direct) | SS-8 + SS-9 clean PDFs added to repo (binary build artifacts, no patch chain) | `55c5986` |
 | - | (Revert) | Damaged-PDF commit `6e86818` reverted | `ccb6041` |
-| 4 | 0288 | Session 36 close P1 hygiene cleanup: todolist.md + session log + Research_Frontier.md last-updated | `2004327` |
+| 4 | 0288 | Session 36 close P1 hygiene cleanup: todolist.md + session log + research_frontier.md last-updated | `2004327` |
 | 5 | 0289 | THIS handover document, initial version (Session 36 close) | `447dac9` |
-| 6 | 0290 | Strategic conversation deliverables: NEW research_priorities.md + NEW papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md + UPDATED handover (this file) + UPDATED session log + UPDATED Research_Frontier.md | `12646fe` |
+| 6 | 0290 | Strategic conversation deliverables: NEW research_priorities.md + NEW papers_in_progress/hierarchy_problem/hierarchy_paper_outline.md + UPDATED handover (this file) + UPDATED session log + UPDATED research_frontier.md | `12646fe` |
 | - | (Direct) | SS-8 + SS-9 LaTeX build artifacts (.aux/.bbl/.blg/.log/.out/.toc) inadvertently committed during Thomas's local rebuild — see "Build artifacts hygiene" note below | `9a5ed4f` |
 | 7 | 0291 | Session 36 close+ arXiv endorsement readiness criteria added to research_priorities.md (Thomas-articulated 3 preconditions + timing implication + strategic implications) | `ad54d95` |
 
@@ -297,7 +297,7 @@ When Session 37 starts, the next Opus context should:
   - Programme negative-result count: 12
   - SS sector problem count: 19
   - OPEN-SS-37 closure routes: 4 (a/b/c/d)
-  - Problem entries in Research_Frontier.md: 82 (49 open, 14 conjectures, 15 propositions, 6 resolved, 6 falsified)
+  - Problem entries in research_frontier.md: 82 (49 open, 14 conjectures, 15 propositions, 6 resolved, 6 falsified)
 
 ---
 

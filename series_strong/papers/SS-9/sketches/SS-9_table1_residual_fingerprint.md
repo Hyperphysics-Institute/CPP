@@ -2,7 +2,7 @@
 
 **Date:** 26 April 2026 (Session 3)
 **Purpose:** Standalone sketch artifact capturing the empirical fingerprint that motivates OPEN-SS-32 (cluster-level oblate-deformation slip-plane mode). Produced as part of the off-track investigation of alpha rigidity that delivered SS-7 v1.3 refined-C1 facet (c). Future Opus may extend or correct this; the values here are the foundation for the slip-plane mechanism reading.
-**Companion files:** `reasoning-SS-9.md` (Tier 4 reasoning), `development-SS-9.md` Vignette 3 (Tier 3 summary), `founders_voice/001_slip_plane_intuition.md` (the physical intuition that selected this reading from competing alternatives), `Research_Frontier.md` OPEN-SS-32 entry.
+**Companion files:** `reasoning-SS-9.md` (Tier 4 reasoning), `development-SS-9.md` Vignette 3 (Tier 3 summary), `founders_voice/001_slip_plane_intuition.md` (the physical intuition that selected this reading from competing alternatives), `research_frontier.md` OPEN-SS-32 entry.
 
 ---
 

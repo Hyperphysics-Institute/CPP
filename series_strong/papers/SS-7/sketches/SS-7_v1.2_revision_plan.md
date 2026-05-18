@@ -35,7 +35,7 @@
 - Rewrite "Why N_α = 12 is the natural threshold" (lines 787): the icosahedral-closure argument no longer has empirical anchor. Move this passage to §6 (Discussion) as speculative future work rather than as current active hypothesis.
 - Rewrite "Candidate mechanisms ranked by plausibility" (line 789): list is no longer ranked against an empirical pattern; reframe as motivation for possible future SS-9+ work, not as an open problem with data anchor.
 
-#### A.4 OPEN-SS-22 registration (Research_Frontier.md, predictions.md, paper_catalog.md, phenomena-SS-7.md)
+#### A.4 OPEN-SS-22 registration (research_frontier.md, predictions.md, paper_catalog.md, phenomena-SS-7.md)
 - **Retire** OPEN-SS-22 in its current form.
 - Registry slot OPEN-SS-22 can either:
   - **(a.i) Be recycled** for the correct empirical question: "neutron-excess contribution to binding energy in non-N=Z nuclei" (this is currently OPEN-SS-23 territory, so retiring one and splitting the other may be cleaner).
@@ -107,7 +107,7 @@ Following `paper_completion_checklist.md` (the new authoritative checklist — S
 - **Section B (verification notebooks):** update `SS-7_alpha_cluster_edge_formula.py` to regenerate the corrected Table 1 values.
 
 - **Section C (registry updates):** propagate OPEN-SS-22 status change to:
-  - `Research_Frontier.md`
+  - `research_frontier.md`
   - `predictions.md`
   - `paper_catalog.md` (v1.2 entry)
   - `problem_histories/PH-OPEN-SS-22.md` (new — retirement narrative under Branch A; update under Branch B)

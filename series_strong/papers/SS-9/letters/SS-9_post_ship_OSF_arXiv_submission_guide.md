@@ -140,7 +140,7 @@ series_strong/papers/SS-9/reviews/external/
 
 with one Markdown file per reviewer per round, named `<reviewer-name>_<date>_<round>.md` (parallel to the existing AI-review filing convention in `reviews/` for the d.1–d.7 review materials, except those live at the AI-review level not external).
 
-Each filed external review should be referenced in the next session log entry and in `Research_Frontier.md` (last-updated header note about external review activity).
+Each filed external review should be referenced in the next session log entry and in `research_frontier.md` (last-updated header note about external review activity).
 
 ### 4.2 v1.x revision triggers
 
@@ -154,7 +154,7 @@ The polish-track methodology applies: per-symmetric-honesty verification of each
 
 ### 4.3 Programme-level tracking
 
-The Research_Frontier.md and future_projects.md files should be updated with each external-review event:
+The research_frontier.md and future_projects.md files should be updated with each external-review event:
 
 - Last-updated header for the session that received the feedback
 - (A.2) entry status updated from "(A.2) COMPLETE" to "(A.2) v1.x revision in progress" when an external feedback round is being incorporated
@@ -207,4 +207,4 @@ If Thomas chooses to defer the public posting (e.g., to wait for the anthology c
 
 ---
 
-*This guide will be referenced from Research_Frontier.md last-updated header for Session 33 and from the (A.2) entry in future_projects.md. Updates after each public-posting event (OSF deposit live, arXiv submission accepted, first external feedback received) should be appended to Section 4 of this document with date and patch number.*
+*This guide will be referenced from research_frontier.md last-updated header for Session 33 and from the (A.2) entry in future_projects.md. Updates after each public-posting event (OSF deposit live, arXiv submission accepted, first external feedback received) should be appended to Section 4 of this document with date and patch number.*

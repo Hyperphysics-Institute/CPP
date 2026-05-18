@@ -198,7 +198,7 @@ These are listed for completeness; the priority order is dictated by the Q8 salv
 
 ## §8. Open sub-problems opened by this selection
 
-Two new programme-level OPEN entries are registered in `Research_Frontier.md` as part of patch 0298. Both are flagship-paper conditional inheritances under the new FP sector.
+Two new programme-level OPEN entries are registered in `research_frontier.md` as part of patch 0298. Both are flagship-paper conditional inheritances under the new FP sector.
 
 ### §8.1 OPEN-FP-SF-4-1: Unbound-Mode Suppression Mechanism
 
@@ -220,7 +220,7 @@ Two new programme-level OPEN entries are registered in `Research_Frontier.md` as
 
 ### §9.1 Session 39 close
 
-Patch 0298 lands this decision document plus the Research_Frontier.md OPEN-FP-SF-4-1 and OPEN-FP-SF-4-2 registrations. Session 39 is the second scaffolding session in the SF-4 development arc; substantive technical work begins in Session 40.
+Patch 0298 lands this decision document plus the research_frontier.md OPEN-FP-SF-4-1 and OPEN-FP-SF-4-2 registrations. Session 39 is the second scaffolding session in the SF-4 development arc; substantive technical work begins in Session 40.
 
 ### §9.2 Sessions 40–42 — OPEN-FP-SF-4-1 (suppression mechanism)
 
@@ -231,7 +231,7 @@ First substantive derivation work. The first attempt is the $\sigma = 120^{-d_{\
 - Verify that the derived $d_{\text{eff}}$ produces $\mathcal{T}_{\text{unbound}}$ at the right order of magnitude
 - If first attempt fails to land within factor $\sim 3$ of target, exhaust before falling back to alternative routes
 
-Outputs at session close: a sub-derivation document at `flagship_papers/neutrinos/sketches/SF-4_suppression_derivation.md` capturing the work with intermediate states; updates to OPEN-FP-SF-4-1 status in Research_Frontier.md.
+Outputs at session close: a sub-derivation document at `flagship_papers/neutrinos/sketches/SF-4_suppression_derivation.md` capturing the work with intermediate states; updates to OPEN-FP-SF-4-1 status in research_frontier.md.
 
 ### §9.3 Sessions 43–44 — OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency Theorem)
 

@@ -125,7 +125,7 @@ its applications to quantum phenomena, thermodynamics, and cosmology.
 Many of the most important physical insights of CPP currently live
 at the proposition level.
 
-**File:** `Research_Frontier.md` §3
+**File:** `research_frontier.md` §3
 
 ---
 
@@ -149,7 +149,7 @@ principle falsify it? If yes, it is a conjecture. If no, it is a
 philosophical claim, not a scientific one. CPP maintains an active
 conjectures register and documents both confirmations and falsifications.
 
-**File:** `Research_Frontier.md` §2
+**File:** `research_frontier.md` §2
 
 ---
 
@@ -186,7 +186,7 @@ reference between papers and problems is maintained in the
 `Paper(s):` field of each Research Frontier entry, not by ID
 collision.
 
-**File:** `Research_Frontier.md` §1
+**File:** `research_frontier.md` §1
 
 ---
 
@@ -307,15 +307,15 @@ complete, so that the rename pass covers all files simultaneously.
 |------|-------------|-----------|
 | `axiom-registry.md` | AXIM-1–AXIM-6, A1–A6' | AXIM, A1–A6' |
 | `theorem-registry.md` | THEO-SS-1, THEO-SM-1, CORL-SM-1 etc. | THEO, CORL |
-| `Research_Frontier.md` | OPEN-SS-1, CONJ-EW-1, PROP-1–15, FALS-C-SM-1 etc. | OPEN, CONJ, PROP, FALS |
+| `research_frontier.md` | OPEN-SS-1, CONJ-EW-1, PROP-1–15, FALS-C-SM-1 etc. | OPEN, CONJ, PROP, FALS |
 | `predictions.md` | CP-1, OP-1, QP-1, PD-1, FP-1 | PRED-C, PRED-O, PRED-Q, POST-D, FALS-C |
 | `phenomena-SM-1.md` | E1, AXIM-1, C1 | PHEN-E, PHEN-P, PHEN-V |
 | `phenomena-SM-2.md` | E1, AXIM-1, C1 | PHEN-E, PHEN-P, PHEN-V |
 
 **Rename history:**
 - 30 March 2026: Legacy codes (P1–P6, SS-T1, P-CPP-1, OP-SS-1, CJ-SS-1) replaced with new scheme across all files.
-- 12 April 2026: Three-layer reorganization. `postulates_and_theorems.md` split into `axiom-registry.md` + `theorem-registry.md` + `Research_Frontier.md`. `propositions.md`, `solution_candidates.md`, and `open_problems/` archived — content absorbed into `Research_Frontier.md`. OPEN-P prefix simplified to OPEN.
-- 17 May 2026 (Patch 0422 sequence): Filesystem casing standardized — `Research_Frontier.md` → `research_frontier.md` (Patch e47f760 series), `Organizational_Frontier.md` → `organizational_frontier.md` (Patch e47f760). NEW programme-level folder `handovers/` introduced (Patch 0422 handover-consolidation) at `/CPP` root, containing session-handover continuity documents with filename pattern `handovers/YYYY-MM-DD_session_NNN_<scope>.md` (chronological-sort by filename; newest = canonical bootup pointer per `handovers/README.md`). The ID-code nomenclature scheme itself remains UNCHANGED — these are filesystem-layer changes, not ID-code changes. No legacy ID codes affected. The 17 May 2026 changes are pure filename rationalization plus one new continuity-file convention.
+- 12 April 2026: Three-layer reorganization. `postulates_and_theorems.md` split into `axiom-registry.md` + `theorem-registry.md` + `research_frontier.md`. `propositions.md`, `solution_candidates.md`, and `open_problems/` archived — content absorbed into `research_frontier.md`. OPEN-P prefix simplified to OPEN.
+- 17 May 2026 (Patch 0422 sequence): Filesystem casing standardized — `research_frontier.md` → `research_frontier.md` (Patch e47f760 series), `organizational_frontier.md` → `organizational_frontier.md` (Patch e47f760). NEW programme-level folder `handovers/` introduced (Patch 0422 handover-consolidation) at `/CPP` root, containing session-handover continuity documents with filename pattern `handovers/YYYY-MM-DD_session_NNN_<scope>.md` (chronological-sort by filename; newest = canonical bootup pointer per `handovers/README.md`). The ID-code nomenclature scheme itself remains UNCHANGED — these are filesystem-layer changes, not ID-code changes. No legacy ID codes affected. The 17 May 2026 changes are pure filename rationalization plus one new continuity-file convention.
 
 ---
 

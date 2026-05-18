@@ -6,7 +6,7 @@
 **Companion files:**
 - `series_strong/papers/SS-9/sketches/SS-9_OPEN-SS-35_subquestion_a.md` (Session 6 Level-1 partial closure on regular polytopes; this work extends it)
 - `series_strong/papers/SS-9/scripts/SS-9_OPEN-SS-35_subquestion_a_Ascaling.py` (reproducible computation)
-- `Research_Frontier.md` OPEN-SS-35 entry
+- `research_frontier.md` OPEN-SS-35 entry
 
 **Net programme effect:** A-scaling sub-sub-question advanced from "registered" to "**substantive Level-0/Level-1 mixed result**." The harmonic-oscillator structure derived in Session 6 generalizes cleanly across all 8 canonical alpha-chain deltahedra (good news: the derivation is robust). However, the empirical $A^{-1/3}$ scaling does NOT emerge naturally — CPP's A-dependence is much weaker (slope $\sim -0.10$ vs empirical $-0.33$). This is a **real physical insight** that constrains future closure work, not a falsification: the harmonic *form* is correct, but the *A-scaling* of the frequency requires additional physics (likely cluster-radius scaling beyond the rigid-deltahedron picture).
 

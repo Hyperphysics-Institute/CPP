@@ -917,7 +917,7 @@ The $d_\text{eff} = 5$ first-principles derivation requires:
 4. **Confirmation that no additional channels arise** for the neutrino-specific case (e.g., flavor degree of freedom — does it enter the channel count or not?). For neutrinos with mass eigenstates, the flavor mixing is a property of the linear superposition of mass eigenstates, not of individual mass eigenstates' propagation. SF-4 Picture A treats single mass-eigenstate propagation, where flavor isn't a per-channel coherence variable.
 5. **Confirmation that no channels collapse** — e.g., orientation and spatial directions don't merge in any physical regime. Specifically, the orbital's angular momentum direction is independent of the orbital's center-of-mass spatial position, so they're separate degrees of freedom.
 
-Estimated 1–2 sessions. With $d_\text{eff} = 5$ closed at theorem level, full Picture A closure is achieved and SF-4 v2.0 integration (Sessions 60-61) can begin: rewrite §4.3.1 with rigorous structure, update reasoning-SF-4.md / development-SF-4.md / transcript-SF-4.md companion files, and register OPEN-FP-SF-4-1 as RESOLVED in `Research_Frontier.md` with the closure citation.
+Estimated 1–2 sessions. With $d_\text{eff} = 5$ closed at theorem level, full Picture A closure is achieved and SF-4 v2.0 integration (Sessions 60-61) can begin: rewrite §4.3.1 with rigorous structure, update reasoning-SF-4.md / development-SF-4.md / transcript-SF-4.md companion files, and register OPEN-FP-SF-4-1 as RESOLVED in `research_frontier.md` with the closure citation.
 
 ---
 
@@ -1081,7 +1081,7 @@ With Picture A axiomatic closure achieved, the remaining work is integration:
 
 2. **Documentation suite update** (~1 session): update reasoning-SF-4.md (capture Sessions 55–59 reasoning verbatim per Tier 4 discipline), development-SF-4.md (closure history), transcript-SF-4.md (strategic decisions), companion files. Re-version SF-4 from v1.0 SHIPPED to v2.0 with closure cited in CHANGELOG.
 
-3. **Programme-level registration** (~0.5 session): register the four sub-claim closures + $d_\text{eff} = 5$ closure as theorems in `Research_Frontier.md` + theorem registry; mark OPEN-FP-SF-4-1 as RESOLVED with resolution citation pointing to SF-4 v2.0 + this sketch document.
+3. **Programme-level registration** (~0.5 session): register the four sub-claim closures + $d_\text{eff} = 5$ closure as theorems in `research_frontier.md` + theorem registry; mark OPEN-FP-SF-4-1 as RESOLVED with resolution citation pointing to SF-4 v2.0 + this sketch document.
 
 4. **Optional cross-sector follow-up** (deferred to post-OPEN-FP-SF-4-1 work): the icosahedral-irrep interpretation (Finding 10) may apply to other unbound modes, giving cross-sector applications of the walk-dimension framework.
 

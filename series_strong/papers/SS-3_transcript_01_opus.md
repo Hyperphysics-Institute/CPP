@@ -265,7 +265,7 @@ Systematic integration across 12 metafiles:
 - `README.md` — paper table, prediction table, folder reference
 - `INDEX.md` — SS-3 files listed (paper, script, 8 doc suite files)
 - `theorem-registry.md` — **THEO-SS-10 (uniqueness) and PROP-SS-11 (basis transformation) added**; SS section now 10 theorems + 1 proposition
-- `Research_Frontier.md` — OPEN-SS-11 moved from OPEN to RESOLVED → THEO-SS-10; attack order updated (rank 1 slot freed)
+- `research_frontier.md` — OPEN-SS-11 moved from OPEN to RESOLVED → THEO-SS-10; attack order updated (rank 1 slot freed)
 - `bibliography/cpp_references.bib` — SS-3 entry + Humphreys (1972)
 - `master_glossary.md` — 6 new terms (change-of-basis M, junction mode, linear bond mode, physical mode basis, Killing–Cartan, SU(3) uniqueness)
 - `predictions.md` — PRED-C-28/29/30 (SU(3) unique, no exotic groups, exactly 3 colours)

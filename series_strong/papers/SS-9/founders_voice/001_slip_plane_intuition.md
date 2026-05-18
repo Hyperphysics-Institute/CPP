@@ -58,7 +58,7 @@ This is testable: comparing SS-7 single-cluster predictions to AME 2020 data at 
 
 ## Registered as
 
-- **OPEN-SS-32** (Research_Frontier.md): cluster-level collective oblate-deformation slip-plane mode; first-principles derivation of the +B_pair-attenuated quantum and the closure-shape-dependent quenching mechanism.
+- **OPEN-SS-32** (research_frontier.md): cluster-level collective oblate-deformation slip-plane mode; first-principles derivation of the +B_pair-attenuated quantum and the closure-shape-dependent quenching mechanism.
 - **PRED-O-16** (predictions.md): single-cluster slip-plane extension at N_α ∈ [15, N_α^crit].
 - **PRED-O-17** (predictions.md): single-to-hierarchical regime transition.
 - **PRED-O-18** (predictions.md): hierarchical slip-plane additivity.

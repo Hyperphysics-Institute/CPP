@@ -52,7 +52,7 @@
 - **Appendix A: Meeting the Papers** — a guided tour of the CPP paper series for readers who want to read the technical work after finishing TATWD. Ordered for pedagogical progression, not publication order.
 - **Appendix B: How to Check Us** — instructions for a reader who wants to verify a specific prediction. Where to find the verification notebooks. What the numbers mean. How to spot a bad calibration dressed as a prediction.
 - **Appendix C: Glossary of Key Terms** — polytope, golden ratio, conscious point, dipole sea, SSV, Nexus, K₃ face, etc. Short definitions, concrete where possible.
-- **Appendix D: Open Problems** — the registered OPEN-* entries translated into natural language. A reader-friendly version of Research_Frontier.md.
+- **Appendix D: Open Problems** — the registered OPEN-* entries translated into natural language. A reader-friendly version of research_frontier.md.
 
 ---
 
@@ -100,7 +100,7 @@ Each chapter pulls from specific technical sources:
 | 11 | hyperphysics.com falsifications table; CHANGELOG entries across papers | — |
 | 12 | relationship_protocol.md; reviews-*.md files; development transcripts | — |
 | 13 | relationship_protocol.md; SS-7_v1.1_G3_discrepancy_note.md | — |
-| 14 | Research_Frontier.md; future_projects.md | — |
+| 14 | research_frontier.md; future_projects.md | — |
 | 15-17 | Synthesis; no specific source paper | All of the above |
 
 The PL-summaries are not chapters. They are *pre-digested source material* that makes writing each chapter faster and more consistent. A chapter like Chapter 8 ("Tetrahedrons All the Way Down") might draw from lay-summary-SS-2, lay-summary-SS-5, and lay-summary-SS-7 — weaving the three into a single narrative — but it is its own text, not a concatenation.

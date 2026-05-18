@@ -89,7 +89,7 @@ The distance shells are a palindrome:
 
 ## Cross-References
 
-- **Research_Frontier.md entries:** THEO-SM8-3 (resolved), OPEN-SS-2 (related — unified generation proof), OPEN-G-1 (capstone)
+- **research_frontier.md entries:** THEO-SM8-3 (resolved), OPEN-SS-2 (related — unified generation proof), OPEN-G-1 (capstone)
 - **Related problems:** OPEN-SM-7e (lepton generations), OPEN-SS-2 (quark generations from cage depth)
 - **Key founders_vision.md entries:** Sections 2, 3, 5, 6, 7, 8, 10, 11, 12 (all from this session)
 - **Development transcript:** `series_standard_model/development-transcripts/SM-8_development_transcript_opus.md`

@@ -3,7 +3,7 @@
 **Created:** 20 April 2026 (problem registered as split from OPEN-SS-18 during SS-7 v1.1 completion)
 **Status:** ✗ RETIRED — 21 April 2026 (SS-7 v1.2). Empirical anchor found to be an isotope-selection artifact; not supported by the strict N=Z alpha-chain data.
 **Target paper at time of retirement:** SS-8 (never drafted)
-**Research_Frontier.md entry:** OPEN-SS-22 — marked RETIRED with pointer to this file
+**research_frontier.md entry:** OPEN-SS-22 — marked RETIRED with pointer to this file
 **Replacement open problems:**
 - OPEN-SS-23 (existing) — absorbs the actual empirical signal (neutron-excess extension)
 - OPEN-SS-25 (new) — DP-sea screening of alpha-alpha Coulomb in bound polytopes
@@ -30,7 +30,7 @@ The shape of the deviation — uniform across three nuclei at ~2%, rather than p
 
 ### 20 April 2026 (evening) — Problem registered in SS-7 v1.1
 
-Registered in Research_Frontier.md with the four candidate mechanisms; SS-7 v1.1 shipped with OPEN-SS-22 as a flagship open problem. Both reviewers committed to continued collaboration on SS-8.
+Registered in research_frontier.md with the four candidate mechanisms; SS-7 v1.1 shipped with OPEN-SS-22 as a flagship open problem. Both reviewers committed to continued collaboration on SS-8.
 
 ### 21 April 2026 (morning) — Template extraction completed
 
