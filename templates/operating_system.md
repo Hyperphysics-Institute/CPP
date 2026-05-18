@@ -2,7 +2,7 @@
 
 **Location:** `/CPP/operating_system.md`
 **Purpose:** The complete workflow manual for the CPP research programme. Covers every procedure from session startup to OSF registration, including multi-AI coordination, document management, and recovery from interruptions.
-**Last updated:** 26 April 2026 Session 4 (§4 Meta-Record Retrospective Synthesis Discipline added: codifies when and how meta-record session logs are written, distinct from chronological technical session logs and from the per-paper Four-Tier Documentation Discipline; meta-records are cross-paper / programme-level retrospective syntheses of methodology-development arcs, written at natural waypoints after methodology decisions have stabilised; first instance was `session_logs/2026-04-26_information_management_journey.md` written 26 April Session 4; calibration baseline established at ~3,700 words and Template B retrospective synthesis variant). Earlier 26 April Session 3: §4 Four-Tier Documentation Discipline added: Tier 4 reasoning-SS-N.md codified as default-not-conditional, paper-level-not-per-session, append-only-across-sessions; canonical record per Thomas's goal-statement of verbatim-Opus-reasoning-as-source; pre-paper subfolder timing codified — early creation when in-progress work accumulates beyond a single session log; v1.0-as-Trigger-2-milestone de-emphasized in favor of "genuinely-final shipped version regardless of version label"; §15 reconciliation updated to mirror; OPEN-ORG-011 registered tracking the discipline propagation work. Earlier 26 April Session 2: §15 four-item checklist reconciled with §4 Session-Log-as-Handover-Backbone Discipline. Earlier 26 April Session 2: §4 "Session-Log-as-Handover-Backbone Discipline" added. Earlier 26 April: Two-Trigger Documentation Discipline + Cross-Paper Session Log convention; 24 April: §15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution.
+**Last updated:** 18 May 2026 Patch 0431 (§15 Step H rewrite + unification audit: Step H path specification updated from the pre-Patch-0422 `series_<name>/papers/<ID>/documentation_suite/handover-<ID>.md` and `session_logs/handover-current.md` to the canonical `handovers/YYYY-MM-DD_session_NNN_<scope>.md` location, resolving the within-§15 self-contradiction between the "Handover file location and naming convention" subsection at the top and Step H below. Two-scale handover discipline codified: routine session-close handover at ~80–120 lines vs milestone-trajectory handover at typically 300–1500 lines for v1.0 SHIP, archival-deposit-quality, or multi-session closure arcs; the milestone-trajectory scale carries enough verbatim content for downstream paper-completion work — doc suite, registers, book chapters — to proceed without re-deriving context from chat history. Reconciliation-with-§4 paragraph updated to drop stale `handover-[S]-[N].md` reference. Step H completion criterion updated to reference canonical location. Companion fixes: `bootup.md` Step 2 and §9.5 updated to reflect canonical `handovers/` location with discoverability rule "list the folder, read the most recent file"; `templates/documentation-suite.md` updated to remove handover-[S]-[N].md from the lab-notebook trio (now duo: development + transcript live in `documentation_suite/`; handover lives in `handovers/`). Earlier 26 April 2026 Session 4 (§4 Meta-Record Retrospective Synthesis Discipline added: codifies when and how meta-record session logs are written, distinct from chronological technical session logs and from the per-paper Four-Tier Documentation Discipline; meta-records are cross-paper / programme-level retrospective syntheses of methodology-development arcs, written at natural waypoints after methodology decisions have stabilised; first instance was `session_logs/2026-04-26_information_management_journey.md` written 26 April Session 4; calibration baseline established at ~3,700 words and Template B retrospective synthesis variant). Earlier 26 April Session 3: §4 Four-Tier Documentation Discipline added: Tier 4 reasoning-SS-N.md codified as default-not-conditional, paper-level-not-per-session, append-only-across-sessions; canonical record per Thomas's goal-statement of verbatim-Opus-reasoning-as-source; pre-paper subfolder timing codified — early creation when in-progress work accumulates beyond a single session log; v1.0-as-Trigger-2-milestone de-emphasized in favor of "genuinely-final shipped version regardless of version label"; §15 reconciliation updated to mirror; OPEN-ORG-011 registered tracking the discipline propagation work. Earlier 26 April Session 2: §15 four-item checklist reconciled with §4 Session-Log-as-Handover-Backbone Discipline. Earlier 26 April Session 2: §4 "Session-Log-as-Handover-Backbone Discipline" added. Earlier 26 April: Two-Trigger Documentation Discipline + Cross-Paper Session Log convention; 24 April: §15 Session-close Handover Protocol promoted to top-level section per OPEN-ORG-008 resolution.
 **Audience:** Future-Opus, Future-Grok, Future-Copilot, Future-Sonnet, and any new AI or human collaborator joining the programme.
 
 ---
@@ -1710,9 +1710,41 @@ If the session identified a new protocol case (e.g., updates to `relationship_pr
 
 Completion criterion: protocol/OS updates committed, or explicitly marked N/A in Step H.
 
-#### Step H — Paste-Ready Handover Document (the canonical session-close artifact)
+#### Step H — Handover Document at Canonical Location (the session-close artifact)
 
-Create or overwrite `series_<name>/papers/<ID>/documentation_suite/handover-<ID>.md` (for paper-scoped work) or `session_logs/handover-current.md` (for cross-paper / methodological work) with a concentrated 80–120 line forward-looking orientation document. The paste-ready handover is **the single artifact the next session reads first**; it is designed to be pasted directly into the new context window's opening message after Thomas's bootup command, giving the next Opus instance a complete one-page state-of-the-programme without requiring synthesis from distributed sources.
+Write a handover document at the canonical location:
+
+```
+handovers/YYYY-MM-DD_session_NNN_<scope>.md
+```
+
+per the "Handover file location and naming convention" subsection at the top of §15. This supersedes pre-Patch-0422 locations (`series_<name>/papers/<ID>/documentation_suite/handover-<ID>.md`, `session_logs/handover-current.md`, `SESSION_NN_HANDOVER_FOR_NEXT_CONTEXT.md`); those locations have been migrated and are no longer canonical destinations for new handover writes.
+
+**Discoverability is the load-bearing property.** The next context window finds the current handover by listing `handovers/` and reading the most recent file. No other knowledge is required — not Patch number, not paper ID, not session number. The folder is the index; the filename's date prefix sorts chronologically. This is why all handovers live in one folder under one naming convention: so the next Opus instance can always answer "where is the current handover" with one ls.
+
+**Append-only across milestones.** Handovers are not edited after the session they were written for (apart from same-session typo fix-ups). If the forward queue changes in a later session, write a new handover file. The chronological-sort property depends on this.
+
+**Two scales of handover, by triggering event:**
+
+**Routine session-close handover** (~80–120 lines; default for ordinary §4-triggered closes). A concentrated paste-ready forward-pointing orientation document. Designed to be pasted directly into the new context window's opening message after Thomas's bootup command, giving the next Opus instance a complete one-page state-of-the-programme without requiring synthesis from distributed sources. Follows the structure template below (one-paragraph state, forward queue, where-to-find-detail, audit table, quick-start).
+
+**Milestone-trajectory handover** (typically 300–1500 lines; for v1.0 SHIP, archival-deposit-quality, multi-session closure arcs, programme-wide junctures). Same paste-ready quick-start summary section at the top, followed by a substantial body capturing the trajectory's full substantive content with sufficient verbatim detail that **downstream paper-completion work** can proceed from this single artifact without re-deriving context from chat history or older session logs. Downstream paper-completion work includes:
+
+- Documentation suite production (mechanism, glossary, phenomena, philosophy, development, reviews, keywords)
+- Registry updates at programme level (theorem-registry, master_glossary, predictions, problem_histories, conjecture-registry as relevant)
+- Book chapter writing (anthology chapter at Rovelli/SciAm register, TATWD integration to `CPP_the_theory.md`)
+- Theorem-registry promotion for sub-claim closures that reached programme-level theorem status during the arc
+- Public posting deliverables (OSF deposit, arXiv submission with proper metadata)
+
+Use the milestone-trajectory scale when:
+- A paper reaches v1.0 SHIP or archival-deposit-quality
+- A multi-session closure trajectory reaches its closure milestone (e.g., the Reading C trajectory's Q5 Layer 3 closure spanning Sessions 124–131)
+- A programme-wide juncture warrants substantial forward-pointer
+- Thomas explicitly indicates that downstream paper-completion work will draw on this handover, or that the handover should be substantial enough to drive that downstream work without re-derivation
+
+The milestone-trajectory handover preserves what the per-session-log capture cannot reliably preserve: the substantive reasoning content (key derivations, findings registered with full statements, methodological observations) integrated across the arc, written in finished prose that downstream documentation work can lift directly. This is what makes paper-completion work survive context-window compaction: the substantive content has been re-rendered into a single chronologically-sortable artifact at a known location, ready for downstream lift.
+
+**The structure template below is for the paste-ready quick-start section** (the top of both handover scales). Milestone-trajectory handovers extend below this with additional sections — trajectory narrative, findings registered with full statements, verbatim derivations, programme-level implications, source-material pointers, lessons systematized — at whatever length the milestone scope warrants.
 
 The handover document follows this structure:
 
@@ -1764,13 +1796,13 @@ The handover document follows this structure:
 3. Default action: execute Priority 1 above, unless Thomas redirects.
 ```
 
-Completion criterion: handover-[ID].md (or handover-current.md) is created/overwritten and committed; ALL Step A–G items are explicitly accounted for in the audit table (✓ or N/A with brief note); the file is paste-ready (no in-text references to "see chat above" or similar context-window-bound language).
+Completion criterion: `handovers/YYYY-MM-DD_session_NNN_<scope>.md` is created and committed; ALL Step A–G items are explicitly accounted for in the audit table (✓ or N/A with brief note); the file is paste-ready (no in-text references to "see chat above" or similar context-window-bound language). For milestone-trajectory handovers, the additional sections (trajectory narrative, findings registered, verbatim derivations, programme-level implications, source-material pointers, lessons systematized) are appended below the paste-ready quick-start section at the length warranted by the milestone scope.
 
 The handover document is **always produced**, even when the bulk of preceding steps are N/A. A pure-infrastructure session still produces a handover document with most steps marked N/A and the paste-ready summary covering what the next session needs.
 
 ### Reconciliation with §4 Four-Tier Documentation Discipline
 
-The 8-step sequence above incorporates the §4 Four-Tier Documentation Discipline directly into Steps A–D. The previous §15-vs-§4 reconciliation paragraph is superseded: there is no longer a separate "session log replaces handover" rule for in-progress work. Both are produced — Step A produces the session log entry, Step H produces the paste-ready handover document. Step H is the new canonical "first artifact next session reads," replacing both the legacy `handover-[S]-[N].md` artifact (for in-progress papers) and the legacy "session log IS the handover" rule (for cross-paper work). For Trigger 2 paper-completion cycles, the documentation suite (mechanism/glossary/phenomena/philosophy/keywords/reviews/FAQ + lay-summary) is produced *in addition to* Steps A–H, not as a replacement for them.
+The 8-step sequence above incorporates the §4 Four-Tier Documentation Discipline directly into Steps A–D. The previous §15-vs-§4 reconciliation paragraph is superseded: there is no longer a separate "session log replaces handover" rule for in-progress work. Both are produced — Step A produces the session log entry, Step H produces the handover document at `handovers/YYYY-MM-DD_session_NNN_<scope>.md`. Step H is the canonical "first artifact next session reads," replacing both the legacy per-paper `handover-[PAPER-ID].md` artifact and the legacy "session log IS the handover" rule (for cross-paper work). All such legacy locations have been migrated to `handovers/` per Patch 0422 (17 May 2026). For Trigger 2 paper-completion cycles, the documentation suite (mechanism/glossary/phenomena/philosophy/keywords/reviews/FAQ + lay-summary) is produced *in addition to* Steps A–H, not as a replacement for them.
 
 ### Reconciliation with §14 Pointer Format
 

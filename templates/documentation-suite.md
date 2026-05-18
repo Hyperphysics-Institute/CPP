@@ -2,17 +2,17 @@
 
 **Location:** `/CPP/templates/documentation-suite.md`
 **Purpose:** Defines the structure and content expectations for each documentation file that accompanies every CPP paper.
-**Last updated:** 24 April 2026 (folder-location section added; lab-notebook trio aligned with doc-suite folder per Thomas's decision during SS-5/6/7 migration scoping)
+**Last updated:** 18 May 2026 (Patch 0431 — handover file canonical-location update: handover-[S]-[N].md no longer lives in `documentation_suite/` per Patch 0422; migrated to `handovers/YYYY-MM-DD_session_NNN_<scope>.md` at repo root. Lab-notebook-trio description updated to reflect that the trio is now a duo within `documentation_suite/` (transcript + development), with the handover member relocated to `handovers/`. Earlier 24 April 2026 — folder-location section added; lab-notebook trio aligned with doc-suite folder per Thomas's decision during SS-5/6/7 migration scoping.)
 
 ---
 
 ## Overview
 
-Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, plus the `changelog-[S]-[N].md` version-archaeology file (which is maintained continuously from v0.1), plus optionally 2 lab-notebook-trio files (handover, transcript) that serve session-continuity purposes. The 8 doc-suite files serve different audiences and purposes:
+Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, plus the `changelog-[S]-[N].md` version-archaeology file (which is maintained continuously from v0.1), plus optionally the `transcript-[S]-[N].md` lab-notebook session-continuity file. The 8 doc-suite files serve different audiences and purposes:
 
 | File | Audience | Purpose |
 |------|----------|---------|
-| `development-[S]-[N].md` | Future collaborators (human + AI) | How the paper came to be — decisions, dead ends, timeline. Also serves as the lab-notebook vignette file (see "Relationship to lab-notebook trio" below). |
+| `development-[S]-[N].md` | Future collaborators (human + AI) | How the paper came to be — decisions, dead ends, timeline. Also serves as the lab-notebook vignette file (see "Relationship to lab-notebook record" below). |
 | `glossary-[S]-[N].md` | All readers | Define every technical term; status labels |
 | `mechanism-[S]-[N].md` | Physicists | Physical mechanisms with intuitive explanations |
 | `phenomena-[S]-[N].md` | Physicists + general | What the paper explains and predicts |
@@ -22,6 +22,8 @@ Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, pl
 | `keywords-[S]-[N].md` | SEO / web tooling / search | Keywords, PACS/MSC codes, elevator pitch |
 
 In addition, **every paper carries a `changelog-[S]-[N].md` file from v0.1 onward** (adopted Patch 0408 Session 115; codified Patch 0409 Session 116). This is the canonical version archaeology — replacing the historical pattern of putting CHANGELOG comment blocks in `.tex` headers and visible version-history paragraphs in `.tex` title blocks. The changelog file is maintained continuously during drafting (unlike the 7-file canonical doc-suite which is produced post-v1.0). See `operating_system.md` ``Version-archaeology architecture rule'' for the convention and `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` for the reference implementation.
+
+**Handover files no longer live in `documentation_suite/`** (changed 17 May 2026, Patch 0422). Per `operating_system.md` §15, handover files have migrated to `handovers/` at the repo root, with the naming convention `YYYY-MM-DD_session_NNN_<scope>.md`. The pre-Patch-0422 per-paper file `documentation_suite/handover-[S]-[N].md` is no longer canonical for new handover writes; the documentation_suite folder now houses session-continuity for the doc-suite proper plus the `transcript-[S]-[N].md` lab-notebook pointer-map.
 
 Some papers also carry a `lay-summary-[S]-[N].md` file (e.g., SS-7) for non-physicist accessibility; this is allowed but not required.
 
@@ -34,16 +36,28 @@ Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD, SF), `[N
 **All documentation suite files for a given paper live in `series_[name]/papers/[PAPER-ID]/documentation_suite/`** under the per-paper-subfolder convention adopted 22 April 2026 (`templates/operating_system.md` §11). This applies uniformly to:
 
 - The 8 canonical doc-suite files listed above (development, glossary, mechanism, phenomena, philosophy, reviews, FAQ, keywords)
-- The 2 lab-notebook-trio session-continuity files (`handover-[S]-[N].md`, `transcript-[S]-[N].md`) introduced for SS-8 and codified in `operating_system.md` §15
+- The `transcript-[S]-[N].md` lab-notebook session-continuity pointer-map file (introduced for SS-8 and codified in `operating_system.md` §15 Step B)
 - Any optional supplementary files such as `lay-summary-[S]-[N].md`
+
+**Handover files do NOT live in `documentation_suite/`.** Per Patch 0422 (17 May 2026), handover files have migrated to the repo-root `handovers/` folder with naming convention `YYYY-MM-DD_session_NNN_<scope>.md`. See `operating_system.md` §15 Step H for the canonical handover location protocol and `handovers/README.md` for the folder-level convention.
 
 For papers adopted before 22 April 2026 (SS-1 through SS-7, SM-N legacy papers), doc-suite files currently live flat in `series_[name]/papers/` and migrate to per-paper subfolders under OPEN-ORG-004's opportunistic trigger.
 
-### Relationship to lab-notebook trio
+### Relationship to lab-notebook record
 
-`operating_system.md` §15 specifies a session-continuity *lab-notebook trio*: `development-[S]-[N].md` (vignette-style narrative, append-only), `handover-[S]-[N].md` (current-state orientation document, replaced at each session close), and `transcript-[S]-[N].md` (transaction-indexed pointer-map). The `development-[S]-[N].md` member of the trio is the **same file** as the canonical doc-suite's `development-[S]-[N].md` listed above — a single file serving both purposes (intellectual laboratory record AND session-by-session vignette history). The `handover` and `transcript` files are additions specific to the per-paper-subfolder convention and do not exist in the older flat-files layout.
+`operating_system.md` §15 specifies the session-continuity discipline across §4 (Four-Tier Documentation Discipline) and Step H (handover document). Within the per-paper-subfolder convention, two of the four documentation tiers live in `documentation_suite/`:
 
-A paper at v1.0+ under the per-paper-subfolder convention may therefore have up to 10 file types in `documentation_suite/`: the 8 canonical doc-suite files plus `handover-[S]-[N].md` plus `transcript-[S]-[N].md`. A paper still under the legacy-flat layout has only the doc-suite files at `series_[name]/papers/` level.
+- **Tier 2 — `transcript-[S]-[N].md`** (transaction-indexed pointer-map; lives in `documentation_suite/`)
+- **Tier 3 — `development-[S]-[N].md`** (vignette-style narrative, append-only; lives in `documentation_suite/` and serves as both the canonical doc-suite development file AND the session vignette history — single file under both conventions)
+
+The other two tiers live elsewhere:
+
+- **Tier 1 — session log** (lives in `session_logs/[YYYY-MM-DD]_session_log.md`)
+- **Tier 4 — `reasoning-[S]-[N].md`** (verbatim Opus reasoning, the canonical record from which Tiers 1–3 derive; lives in `documentation_suite/` per the four-tier discipline)
+
+The Step H **handover document** lives at the repo-root `handovers/` folder per Patch 0422, not in `documentation_suite/`. Naming overlap on `development-[S]-[N].md` (which serves both the doc-suite and the session-vignette role) is not a collision because it is the same file under both conventions.
+
+A paper at v1.0+ under the per-paper-subfolder convention therefore has up to 10 file types in `documentation_suite/`: the 8 canonical doc-suite files + `transcript-[S]-[N].md` + `reasoning-[S]-[N].md`. (The handover file, formerly part of this list pre-Patch-0422, has moved out.) A paper still under the legacy-flat layout has only the doc-suite files at `series_[name]/papers/` level.
 
 ### Decision rationale
 

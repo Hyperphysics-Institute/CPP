@@ -51,13 +51,9 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 
 ### Step 2: Check what happened last
 
-- **If Thomas names a specific paper (e.g., "SS-8", "SS-2", "SM-10"), first read its session-handover document from your local clone.** Per-paper-subfolder pattern (current convention, papers adopted ≥ 22 Apr 2026):
-  `series_strong/papers/SS-8/documentation_suite/handover-SS-8.md`
-  Legacy-flat pattern (older papers):
-  `series_strong/papers/development-SS-8.md`
-  (replace `series_strong` with the appropriate series folder per §9.5 below, and `SS-8` with the paper ID.)
-  The handover (or its legacy-flat predecessor) is the **canonical session-continuity state record**, preserved verbatim at each session close per `templates/operating_system.md`'s context-pressure preservation checklist. It supersedes any summary from training data or prior-session compaction. See §9.5 below for the full rule.
-- Per-paper subfolders also contain `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map). The handover is the one to read first; the others are deeper context if needed.
+- **The canonical handover lives in `handovers/` at the repo root.** Open the folder and read the most recent file — that's the current "what's next" pointer for the programme. The folder is the single, sortable index for all handover documents per the migration that landed 17 May 2026, Patch 0422 (`templates/operating_system.md` §15 "Handover file location and naming convention"). Filename pattern: `YYYY-MM-DD_session_NNN_<scope>.md`; `ls handovers/` shows chronological order with the most recent file last. If the most recent file is paper-scoped or trajectory-scoped and doesn't match the work to be done in the new session, look back at the previous most-recent file with matching scope. See `handovers/README.md` for the folder-level convention and migration history.
+- **If Thomas names a specific paper (e.g., "SS-8", "SS-2", "SM-10")**, the most recent paper-scoped handover for that paper is found by `ls handovers/ | grep <paper-id-lowercase>` (e.g., `ls handovers/ | grep sf-2` returns the SF-2 campaign launch + SF-2 v1.0 SHIP handovers in chronological order). The handover is the **canonical session-continuity state record**, preserved verbatim at each session close per `templates/operating_system.md` §15. It supersedes any summary from training data or prior-session compaction. See §9.5 below for the full rule.
+- Per-paper subfolders also contain `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map). The handover in `handovers/` is the one to read first; `documentation_suite/` files are deeper context if needed.
 - **Also read `todolist.md` at repo root** (introduced 7 May 2026 Session 33). This is the carried-over deferred items list. The next paper does NOT start until P1 — Must clear before next paper is empty. New items get added there as they're identified; cleared items move to "Cleared items (history)" with date and patch number for audit. Check the P1 list at session start so any deferred items relevant to the work being done are visible.
 - If no paper is named, check `/mnt/transcripts/` for raw conversation logs.
 - Check if Thomas has Grok/Copilot exchanges to share.
@@ -385,68 +381,49 @@ Do not rely on bootup for the open-problem list. Active problems are created, re
 
 **When Thomas names a specific paper at session start (e.g., "SS-8", "SM-10", "EW-3"), read that paper's session-handover document from your local clone as the first concrete action, BEFORE attempting any substantive work. (Per Step 0 you should already have a local clone — if not, clone now.)**
 
-### Path patterns (repo-relative, read with view/bash from the local clone)
+### Path pattern (repo-relative, read with view/bash from the local clone)
 
-Two patterns are currently in use. Try the per-paper-subfolder pattern first (used for papers adopted 22 April 2026 forward); fall back to the legacy-flat pattern (used for earlier papers).
-
-**Per-paper-subfolder pattern (current convention):**
+Single canonical pattern, in effect since 17 May 2026 (Patch 0422):
 
 ```
-<series-folder>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md
+handovers/YYYY-MM-DD_session_NNN_<scope>.md
 ```
 
-**Legacy-flat pattern (pre-22-April papers):**
+All handover documents live in `handovers/` at the repo root, regardless of paper or scope. `<scope>` is a short snake_case descriptor such as `programme`, `capotauro_v1.0_ship`, `reading_c_closure_trajectory`, `sf2_v1.0_ship`. Paper IDs in scope use lowercase with hyphens (`ss-9`, not `SS-9`). The `YYYY-MM-DD` prefix sorts chronologically when listed; the most recent file is the current handover. See `handovers/README.md` for the folder-level convention and the migration correspondence table mapping pre-Patch-0422 locations to their new canonical paths.
 
-```
-<series-folder>/papers/development-<PAPER-ID>.md
-```
+**Discoverability rule.** At new-session bootup, list `handovers/` and read the most recent file. If the most recent file is paper-scoped or trajectory-scoped and doesn't match the work to be done, look back at the previous most-recent file with matching scope. To find a paper-scoped handover quickly: `ls handovers/ | grep <paper-id-lowercase>` returns all handovers for that paper in chronological order.
 
-where `<series-folder>` is one of:
-- `series_strong` (SS-N papers — strong sector)
-- `series_standard_model` (SM-N papers — Standard Model, including mass-sector work)
-- `series_quantum_mechanics` (QM-N papers)
-- `series_electroweak` (EW-N papers)
-- `series_relativity` (SR-N papers)
-- `series_foundations` (SD-N papers — superdeterminism)
-
-Example (SS-8, using current per-paper-subfolder pattern):
-```
-series_strong/papers/SS-8/documentation_suite/handover-SS-8.md
-```
-
-Example (SM-8, using legacy-flat pattern):
-```
-series_standard_model/papers/development-SM-8.md
-```
+**Pre-Patch-0422 legacy locations.** Before 17 May 2026, handovers were scattered across four patterns: per-paper `<series>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md`, root-level `SESSION_NN_HANDOVER_FOR_NEXT_CONTEXT.md`, per-trajectory `flagship_papers/<paper>/sketches/<trajectory>_handover.md`, per-problem `session_logs/OPEN-<X>_handover.md`. All migrated to `handovers/` with date-prefixed naming via `git mv` per Patch 0422; the migration was pure-mechanical, no content changed. Active sketches and session logs written before the migration may still contain references to the old paths — see `handovers/README.md` for the correspondence table.
 
 ### Equivalent raw URLs (reference only — for documentation, citation, and external readers)
 
 The same files served via raw GitHub. **Do not use these as the access path inside a Claude session; the fetcher whitelist will reject them after the bootup file itself.** Use the local clone.
 
 ```
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/<PAPER-ID>/documentation_suite/handover-<PAPER-ID>.md
-https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<series-folder>/papers/development-<PAPER-ID>.md
+https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/handovers/YYYY-MM-DD_session_NNN_<scope>.md
 ```
 
 ### Why this matters
 
-The handover document (or its legacy-flat predecessor `development-[ID].md`) is the **canonical session-continuity state record** — produced and committed at each session close per `operating_system.md`'s context-pressure preservation checklist. It names:
-- What paper is active and what state it is in
-- What section-end was most recently closed
+The handover document is the **canonical session-continuity state record** — produced and committed at each session close per `operating_system.md` §15 Step H. It names:
+- What paper or trajectory is active and what state it is in
+- What section-end or milestone was most recently closed
 - What open items are queued for next session (with priority ordering)
 - What registry updates are pending ratification
 - Pointers to verbatim artefacts (reviews, letters, sketches, scripts) that hold the substantive content
 
-The handover is a bounded state snapshot — a few hundred lines, not a full narrative. For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention provides the four-tier documentation discipline (see §4.5): `documentation_suite/development-[ID].md` (Tier 3 — curated paragraph-form vignettes), `documentation_suite/transcript-[ID].md` (Tier 2 — transaction-indexed pointer-map), and `documentation_suite/reasoning-[ID].md` (Tier 4 — verbatim Opus reasoning, the canonical record from which the other tiers derive). When ongoing work has produced substantive Opus reasoning beyond housekeeping, append to the Tier 4 reasoning file at session close. See `templates/operating_system.md` §4 for the full Four-Tier Documentation Discipline codification.
+There are two scales of handover by triggering event: routine session-close (~80–120 lines, the paste-ready concentrated form) and milestone-trajectory (typically 300–1500 lines for v1.0 SHIP, archival-deposit-quality, or multi-session closure arcs; carries enough verbatim content for downstream paper-completion work — doc suite, registers, book chapters — to proceed without re-deriving context). Both scales live at the same canonical `handovers/` location. See `templates/operating_system.md` §15 Step H for the full specification.
+
+For retrospective narrative of how the paper arrived at current state, the per-paper-subfolder convention provides the four-tier documentation discipline (see §4.5): `documentation_suite/development-[ID].md` (Tier 3 — curated paragraph-form vignettes), `documentation_suite/transcript-[ID].md` (Tier 2 — transaction-indexed pointer-map), and `documentation_suite/reasoning-[ID].md` (Tier 4 — verbatim Opus reasoning, the canonical record from which the other tiers derive). Handover files no longer live in `documentation_suite/`; they live in `handovers/` per Patch 0422.
 
 **Compaction summaries and training data do NOT preserve these specifics.** Numerical results get rounded, decision rationales get compressed, and registry statuses get flattened. If you start substantive work from a compaction summary without reading the handover, you will either (a) ask Thomas to re-explain state he already documented, or (b) guess wrong about the current conditional-theorem tiers, consolidated open problems, or reviewer positions.
 
 ### If no handover document exists yet for the named paper
 
-Some papers haven't reached the handover-document stage yet. If both paths above resolve to absent files in the local clone, fall back to:
+Some papers haven't reached the handover-document stage yet. If `ls handovers/ | grep <paper-id-lowercase>` returns nothing, fall back to:
 1. The paper's `.tex` file and its `documentation_suite/changelog-<paper>.md` (per the version-archaeology architecture rule in `operating_system.md`).
 2. `research_frontier.md` for related open problems.
-3. Ask Thomas directly: "I don't see a handover or development document for this paper in the repo — can you point me to where the current state lives?"
+3. Ask Thomas directly: "I don't see a handover document for this paper in `handovers/` — can you point me to where the current state lives?"
 
 **Do not improvise state from training data.** A paper named but without a handover document is a signal that either the paper is very early or the document hasn't been created yet — both cases warrant asking rather than guessing.
 
