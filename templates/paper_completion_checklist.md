@@ -175,7 +175,7 @@ Location: `series_[name]/notebooks/`.
 
 ---
 
-## C. Registry updates — repository-root content documents — **[Phase 7B paper-level for most items + Phase 7A for C11]**
+## C. Registry updates — repository-root content documents + book project infrastructure — **[Phase 7B paper-level for most items + Phase 7A for C11]**
 
 **Phase split (adopted Patch 0422D):** Items C1–C10 and C12 update **programme-wide state** documents and are **Phase 7B (program-level)** work. Item C11 updates the paper-specific BibTeX entry in `bibliography/cpp_references.bib` and is **Phase 7A (paper-level)** work. The split makes the program-level dropout risk visible — items C1–C10 are the most-skipped items across the programme's SHIP history and are the discipline-failure mode this restructure addresses.
 
@@ -283,6 +283,45 @@ whose trigger is not met.
   **Easy to miss: `problem_histories/` is a registry-adjacent directory,
   not in the repo root alongside the other content documents. This is
   the item that drove the 20 April 2026 consolidation. Do not skip C12.**
+
+- [ ] **C13.** **[7B]** `book_project/chapters/<paper-id>_<title>.md` —
+  **MANDATORY at every paper v1.0 SHIP.** Create a self-contained
+  4,000-5,000-word anthology chapter at Scientific American / Rovelli
+  register per `templates/anthology_chapter_template.md`. The chapter
+  tells the paper's intellectual journey from problem to result;
+  stands on its own; uses 6-8 equations concentrated at recognition
+  moments; introduces no more than 3-4 new concepts. The chapter is
+  Artifact 1 in the `book_project/five_artifact_taxonomy.md` taxonomy
+  and is distinct from the programme orientation document (C10
+  update) and the eventual TATWD popular-rigorous book (Artifact 2,
+  post-unification — see `book_project/TATWD_book_2_roadmap.md`).
+
+  **Sub-chapter ad-hoc trigger.** A paper may contain sub-stories that
+  warrant their own anthology sub-chapter; this is triggered
+  ad-hoc by the human collaborator, not automatically. The default
+  is one chapter per paper.
+
+  **Cadence and discipline.** Mandatory at v1.0 SHIP (not deferrable to
+  intra-paper revisions, not deferrable to post-SHIP catch-up batches).
+  The failure mode this discipline prevents: anthology chapters
+  produced reactively after retrospective audit catches the gap
+  (e.g., Capotauro v1.0 anthology chapter at Patch 0416K, ~1 session
+  after v1.0 SHIP; SF-2 v1.0 anthology chapter at Patch 0374 as
+  ad-hoc Session 83 close decision). Hard-coding the trigger removes
+  the dependency on human-collaborator memory.
+
+  **Backstop.** Session-close handover Step H audit table (per
+  `operating_system.md` §15) explicitly verifies C13 at v1.0 SHIP
+  before the session-close handover is committed; missing chapter
+  blocks session-close completion.
+
+  Procedure: `templates/anthology_chapter_template.md` (craft
+  documentation: voice, register, dramatic-centerpiece-finding,
+  structural arc, honesty discipline, calibration questions).
+  **(Phase 7B because the anthology is programme-level book
+  infrastructure even though each chapter is paper-specific in
+  content; parallels C10's classification of programme_orientation.md
+  updates.)**
 
 ---
 
@@ -496,3 +535,7 @@ Across SS-9 (7 May), SF-4 v4.4 (11 May), SF-2 v1.0 (14 May), and Capotauro v1.0 
 - **26 April 2026**: Two-Triggers discipline framing added (Trigger 1 per-session continuity + Trigger 2 paper SHIP); Phase 7 Completion Gate framing repealed same day.
 - **11 May 2026**: C10 (TATWD) cadence calibration added at Patch 0344 in response to SF-4 four-version TATWD accumulation across Sessions 54-81.
 - **17 May 2026 (Patch 0422D)**: Phase 7A/7B/7C structure adopted in response to discipline failure observed across SS-9/SF-4/SF-2/Capotauro SHIP sequence where Phase 7B program-level items C1 (theory-overview) and C2 (axiom-registry) silently drifted from 26 April through 17 May despite four paper SHIPs in the interim. Existing A-H section structure preserved with phase tags `[Phase 7A]`/`[Phase 7B]`/`[Phase 7C]` added inline; C and D sections receive header notes explaining the within-section split (C1-C10/C12 = 7B, C11 = 7A; D1 = 7B, D2/D3 = 7A); Phase 7 Synthesis section added with per-phase task tables and explicit dropout-symptom inventory for the 7B items.
+
+- **18 May 2026 (Patch 0434C)**: C10 path reference updated from `CPP_the_theory.md` to `programme_orientation.md` per the rename codified in `book_project/five_artifact_taxonomy.md` (Patch 0434A) that established the five-artifact taxonomy and removed the conflation between Artifact 5 (programme orientation document) and Artifact 2 (TATWD popular-rigorous book). C10 content semantics unchanged; only the path reference updated.
+
+- **18 May 2026 (Patch 0434D)**: **C13 added — anthology chapter as mandatory at v1.0 SHIP.** Previously anthology chapters were produced reactively (e.g., Capotauro chapter at Patch 0416K ~1 session after v1.0 SHIP; SF-2 chapter at Patch 0374 as ad-hoc Session 83 close decision) rather than triggered automatically by the checklist. Hard-coding C13 as [7B] paper-completion item removes the dependency on human-collaborator memory and parallels C10's discipline. Section C header updated to reflect that the section now includes book-project infrastructure (C13) in addition to repository-root content documents. Sub-chapter ad-hoc trigger preserved (one chapter per paper default, sub-chapter ad-hoc human-collaborator-triggered). Procedure: `templates/anthology_chapter_template.md` (craft documentation; established 26 April 2026).
