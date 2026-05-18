@@ -25,7 +25,7 @@ This file enforces that principle for the AI team members, who cannot remember b
 
 Read this file:
 
-1. **On session bootup.** Alongside `bootup.md`, `CPP_the_theory.md`, etc. The failure-mode section is specifically load-bearing; a new Claude unfamiliar with a known pattern will reproduce it.
+1. **On session bootup.** Alongside `bootup.md`, `programme_orientation.md`, etc. The failure-mode section is specifically load-bearing; a new Claude unfamiliar with a known pattern will reproduce it.
 2. **On handover at session close.** If the session identified a new failure mode or success pattern, append an entry before the session ends. Do not defer to "next session" — next session starts from a lossy summary.
 3. **When a failure mode is identified mid-session.** Pause the substantive work, record the pattern, then return to the work. The cost of the pause is small; the cost of not recording is compound.
 4. **On Thomas's periodic review.** Suggested weekly cadence. Revise rules that no longer reflect team behavior; mark superseded patterns as historical.

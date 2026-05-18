@@ -130,12 +130,12 @@ Each chapter pulls from specific technical sources:
 | Chapter | Primary CPP sources | PL-summary dependencies |
 |---------|---------------------|--------------------------|
 | 1 | hyperphysics.com "What is Force?" essay (Thomas's 2026 response to Solway); Solway's original PJ Media essay | — |
-| 2 | CPP_the_theory.md §1 (postulates); standard-physics literature on Koide, SM parameters, string theory status | — |
+| 2 | programme_orientation.md §1 (postulates); standard-physics literature on Koide, SM parameters, string theory status | — |
 | 3 | Thomas's own biographical memory; founders_vision.md §IV for background context | — |
 | 4 | founders_vision.md Part V (the 1987 vision); Thomas's own memories and theological interpretation | — |
 | 5 | SS-1 (lattice grounding), SM-8 (600-cell distance shells) | lay-summary-SS-1, lay-summary-SM-8 |
 | 6 | SS-1, SS-3 (SU(3) uniqueness), master_glossary.md; clear treatment of the GP/CP distinction | lay-summary-SS-1, lay-summary-SS-3 |
-| 7 | SR-1 (DP sea origin), CPP_the_theory.md §3-4 | lay-summary-SR-1 |
+| 7 | SR-1 (DP sea origin), programme_orientation.md §3-4 | lay-summary-SR-1 |
 | 8 | founders_vision.md §1-2, QM-series, philosophical literature on consciousness primitives | lay-summary-QM series |
 | 9 | SS-2 (nucleon), SS-5 (light nuclei), SS-7 (alpha clusters) | lay-summary-SS-2, lay-summary-SS-5, **lay-summary-SS-7** (first exemplar) |
 | 10 | SM-3, SM-4, SM-5 (Koide) | lay-summary-SM-3 |

@@ -14,7 +14,7 @@
 
 **Programme-state staleness audit (adopted 11 May 2026, patch 0344):** This file (`bootup.md`) is *infrastructure* — patterns, conventions, repository structure — not *current state*. Current results, predictions, theorem counts, paper versions, axiom counts, and open-problem status drift over time and are not maintained here. The authoritative current-state pointers are in §§4, 5, 8, 9, 13, and 9.5 below; follow them rather than reading any current-state-looking numbers in this file as authoritative. Hard-coded numbers in this file may be from older programme states (e.g., the patch-number reference in §3 is a deliberately occasional update).
 
-If you see a discrepancy between numbers / dates / status in this file and the live tracking documents, **trust the live tracking documents** (`paper_catalog.md`, `theorem-registry.md`, `predictions.md`, `research_frontier.md`, `master_glossary.md`, `axiom-registry.md`, `CPP_the_theory.md` Part VIII Predictions Scorecard) — they are updated per-paper and per-architecture event; this file is updated only when conventions, structure, or protocols change.
+If you see a discrepancy between numbers / dates / status in this file and the live tracking documents, **trust the live tracking documents** (`paper_catalog.md`, `theorem-registry.md`, `predictions.md`, `research_frontier.md`, `master_glossary.md`, `axiom-registry.md`, `programme_orientation.md` Part VIII Predictions Scorecard) — they are updated per-paper and per-architecture event; this file is updated only when conventions, structure, or protocols change.
 
 
 ### Step 0 — BEFORE READING ANYTHING ELSE: clone the repo locally
@@ -36,7 +36,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 | Priority | File | What it gives you | Time | Don't skip |
 |----------|------|-------------------|------|-----------|
 | 1 | `bootup.md` | THIS FILE — orientation, structure, conventions | 5 min | **§3** — patch generation and commit flow. If you generate `.patch` files this session, the canonical apply macro is in §3. Do NOT reconstruct from `conversation_search`. |
-| 2 | `CPP_the_theory.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
+| 2 | `programme_orientation.md` | **THE THEORY** — complete narrative from first principles through all results | 15 min | — |
 | 3 | `theory-overview.md` | Reference card — formulas, scorecard, key numbers | 5 min | — |
 | 4 | `founders_vision.md` | Thomas's physical intuition — the WHY behind every equation | 10 min | — |
 | 5 | `research_frontier.md` | **THE DASHBOARD** — every open problem, conjecture, and proposition with status and dependencies | 10 min | — |
@@ -199,7 +199,7 @@ CPP/
 ├── paper_catalog.md                  ← Paper list with IDs and status
 │
 ├── ── THE THEORY ──
-├── CPP_the_theory.md                 ← ** THE BOOK — complete theory narrative **
+├── programme_orientation.md                 ← ** THE BOOK — complete theory narrative **
 ├── theory-overview.md                ← Reference card — formulas, scorecard
 ├── founders_vision.md                ← Thomas's physical intuition (the WHY)
 ├── axiom-registry.md                 ← Axiom tracking, prediction counts
@@ -288,7 +288,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 
 | File | Purpose | Update when |
 |------|---------|-------------|
-| `CPP_the_theory.md` | The complete theory in connected prose — the "Kindle book" | Every session with new physics |
+| `programme_orientation.md` | The complete theory in connected prose — the "Kindle book" | Every session with new physics |
 | `theory-overview.md` | Reference card: formulas, prediction scorecard, key numbers | After each paper |
 | `founders_vision.md` | Thomas's physical intuition — 22+ catalogue entries | Every session with new physics |
 | `axiom-registry.md` | All axioms, all predictions, growth tracking | After each paper |
@@ -443,7 +443,7 @@ Update the transcript at each section-end commit and at every context-pressure c
 
 | Document | What to update |
 |----------|----------------|
-| `CPP_the_theory.md` | Add results to chapter, update scorecard |
+| `programme_orientation.md` | Add results to chapter, update scorecard |
 | `theory-overview.md` | Add results, update formula card |
 | `axiom-registry.md` | Check axioms, add predictions, update ratio |
 | `theorem-registry.md` | Add new theorems with axiom dependencies; update theorem count |
@@ -523,4 +523,4 @@ Do not rely on bootup for paper counts or versions; `paper_catalog.md` is the si
 
 ---
 
-*This file is self-sufficient. A new AI reading ONLY this file knows: what CPP is, where everything lives, what to read next, who the team is, what the results are, and what to do. For the full workflow manual, read `operating_system.md`. For the complete theory, read `CPP_the_theory.md`.*
+*This file is self-sufficient. A new AI reading ONLY this file knows: what CPP is, where everything lives, what to read next, who the team is, what the results are, and what to do. For the full workflow manual, read `operating_system.md`. For the complete theory, read `programme_orientation.md`.*

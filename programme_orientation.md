@@ -1,11 +1,20 @@
-# Conscious Point Physics: The Theory
+# Conscious Point Physics: Programme Orientation Document
 
+**Filename:** `programme_orientation.md` (renamed from `CPP_the_theory.md` on 18 May 2026 Patch 0434C; see "Identity and scope" subsection below)
 **Author:** Thomas Lee Abshier, ND
 **Institution:** Hyperphysics Institute, Kalispell, Montana
 **Web:** [hyperphysics.com](https://hyperphysics.com)
 **Repository:** [github.com/Hyperphysics-Institute/CPP](https://github.com/Hyperphysics-Institute/CPP)
 **OSF:** [doi.org/10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D)
-**Document type:** Living master narrative — the complete theory in connected prose
+**Document type:** Programme orientation document — Artifact 5 in the `book_project/five_artifact_taxonomy.md` taxonomy; continuously-maintained master technical narrative serving the programme's own orientation needs (NOT the eventual *Tetrahedrons All the Way Down* popular-rigorous book, which is Artifact 2 and post-unification).
+
+## Identity and scope
+
+This document is the CPP programme's **internal master orientation narrative**. It serves three audiences: (1) the next-session Opus context window opening to do programme work, (2) human collaborators engaging the full framework end-to-end at full technical register, (3) reviewers and external scientists wanting a single end-to-end overview at greater depth than per-paper abstracts. It is updated continuously at every v1.0 SHIP and programme-architecture event per `paper_completion_checklist.md` C10 + `templates/operating_system.md` §10 cadence + §15 audit step.
+
+It is explicitly **NOT** the eventual TATWD popular-rigorous book (Artifact 2), which is post-unification and not yet drafted. The TATWD book has its own roadmap at `book_project/TATWD_book_2_roadmap.md` and its own framing transcript at `book_project/development_transcript_TATWD_framing.md`. This document and that book share neither voice register, target audience, nor completion criteria; they were conflated under one filename (`CPP_the_theory.md`) prior to the five-artifact taxonomy establishment in Session 132. Patch 0434C renamed this document to remove the conflation. Historical references to `CPP_the_theory.md` in append-only files (handovers, session logs, founders_voice) point to this document at its prior name; the migration is documented programme-wide in `book_project/five_artifact_taxonomy.md`.
+
+Maintenance protocol: append at the appropriate Part section as papers SHIP; update the Predictions Scorecard (Part VIII) and the Open Problems inventory (Part VII) at each event; staleness-audit at session-close per §15 audit step. Length grows monotonically as the programme grows; the document is not pruned for length, since its function is comprehensive orientation. Last-updated header is the canonical version stamp.
 **Last updated:** 11 May 2026 (Session 81 patch 0343 — TATWD integration of SF-4 v4.4 archival-deposit-quality flagship paper: NEW Chapter 22d added to Part VI covering the conditional theorem closure of OPEN-FP-SF-4-1 (suppression mechanism + α-exponent reduction) at v3.0 + OPEN-FP-SF-4-2 (K3-Cage-Shell Consistency at theorem level) + SM-5 op:nu_id (foundational open problem of CPP neutrino sector) jointly resolved cross-sector at v4.0 — first cross-sector closure in CPP; conditional-closure framework and cross-sector closure methodology (Finding β-10) codified as programme convention; NEW Chapter 35.5 added to Part VII for programme-level methodology note; Part VIII Predictions Scorecard expanded with neutrino-sector predictions (7 of 8 zero-parameter parameters from SF-4 v4.4 at JUNO 2025 / NuFIT 6.0 / DESI-Planck comparison). Earlier 7 May 2026 (Session 35 paper completion sequence Track 2 — TATWD integration: SS-9 v1.0 conditional-theorem closure of OPEN-SS-24 integrated into Part VI as Chapter 22c; Chapter 21's C4 framing updated from "modeling hypothesis" to "conditional theorem under SS-9"; Chapter 22b's speculative SS-9 alpha-deuteron line corrected; Chapter 30 OPEN-SS-24 ADVANCED → CLOSED with sub-conditions C5/C6/C7/C8; new Chapters 32-35 added to Part VII for the four registered sub-condition closure questions OPEN-SS-29/30/33/37)
 
 ---

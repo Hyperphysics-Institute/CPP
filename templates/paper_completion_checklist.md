@@ -231,7 +231,7 @@ whose trigger is not met.
   `operating_system.md` §10 "future_projects.md update procedure." Check
   the "current #1 priority" line for staleness.
 
-- [ ] **C10.** **[7B]** `CPP_the_theory.md` (TATWD) — **MANDATORY at every
+- [ ] **C10.** **[7B]** `programme_orientation.md` (TATWD) — **MANDATORY at every
   paper v1.0 SHIP** and at every programme-architecture event
   (cross-sector closure, new methodology framework, sector synthesis).
   Add results in connected prose (not bullets). Add a new chapter if
@@ -240,7 +240,7 @@ whose trigger is not met.
   Predictions Scorecard in Part VIII with new zero-parameter
   correspondences. Move any resolved open problems from Part VII to
   the relevant chapter and add new ones to Part VII. Procedure:
-  `operating_system.md` §10 "CPP_the_theory.md update procedure."
+  `operating_system.md` §10 "programme_orientation.md update procedure."
   **Cadence calibration adopted 11 May 2026 (patch 0344):**
   - **Mandatory** at v1.0 SHIP of any new paper, at any version that
     adds new theorems / chapters / open problems to the programme,
@@ -469,7 +469,7 @@ Items that touch this paper's materials only. Default-fire on every SHIP.
 | **C7** | `paper_catalog.md` | Per-paper row with version/date/status/reviewer/open-problem registration | Paper-catalog row stale; previous version cited instead of current |
 | **C8** | `founders_vision.md` | Milestone notes for significant programme advances | Milestone for cross-sector closure or sector synthesis unrecorded |
 | **C9** | `future_projects.md` | Research priority tracking | Closed targets still flagged as #1 priority; new targets unregistered |
-| **C10** | `CPP_the_theory.md` (TATWD) | Master narrative across the framework | New chapter unwritten; Predictions Scorecard stale; resolved problems still in Part VII |
+| **C10** | `programme_orientation.md` (TATWD) | Master narrative across the framework | New chapter unwritten; Predictions Scorecard stale; resolved problems still in Part VII |
 | **C12** | `problem_histories/PH-*.md` | Narrative arc per OPEN-*/CONJ-*/PROP- entry | New PH-*.md file uncreated; existing PH file's status field stale |
 | **D1** | `README.md` (root) | Top-level programme overview | Paper count stale; headline results missing |
 

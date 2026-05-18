@@ -88,11 +88,11 @@ Each chapter pulls from specific technical sources:
 | Chapter | Primary CPP sources | PL-summary dependencies |
 |---------|---------------------|--------------------------|
 | 1 | hyperphysics.com "What is Force?" essay | — |
-| 2 | CPP_the_theory.md §1 (postulates); standard-physics literature on Koide, SM parameters | — |
+| 2 | programme_orientation.md §1 (postulates); standard-physics literature on Koide, SM parameters | — |
 | 3 | founders_vision.md Part V; Thomas's own memories | — |
 | 4 | SS-1 (lattice grounding), SM-8 (600-cell distance shells) | lay-summary-SS-1, lay-summary-SM-8 |
 | 5 | SS-1, SS-3 (SU(3) uniqueness), master_glossary.md | lay-summary-SS-1, lay-summary-SS-3 |
-| 6 | SR-1 (DP sea origin), CPP_the_theory.md §3-4 | lay-summary-SR-1 |
+| 6 | SR-1 (DP sea origin), programme_orientation.md §3-4 | lay-summary-SR-1 |
 | 7 | founders_vision.md §1-2, QM-series | lay-summary-QM series |
 | 8 | SS-2 (nucleon), SS-5 (light nuclei), SS-7 (alpha clusters) | **lay-summary-SS-7** (first exemplar) |
 | 9 | SM-3, SM-4, SM-5 (Koide) | lay-summary-SM-3 |

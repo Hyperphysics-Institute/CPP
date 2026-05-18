@@ -145,7 +145,7 @@ By this test:
 
 **Strategic case**: This is the paper a senior physicist could read in an evening that says: here is the axiom set, here are the seven sectors it generates, here is how they tie at the substrate, here are the eight-or-ten distinctive predictions distinguishing CPP from the Standard Model, here is one prediction that has not been measured yet that is willing to falsify the program. **This is the document that gets cited.** The 40+ detailed derivations are supporting evidence for it; this is the central artifact.
 
-**Source material**: `CPP_the_theory.md` (516 lines) and the anthology chapters already exist as substantive draft material. Conversion to publishable form aimed at hostile-but-fair reviewers is the work.
+**Source material**: `programme_orientation.md` (516 lines) and the anthology chapters already exist as substantive draft material. Conversion to publishable form aimed at hostile-but-fair reviewers is the work.
 
 ---
 
