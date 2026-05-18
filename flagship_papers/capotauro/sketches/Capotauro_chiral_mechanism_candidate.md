@@ -1104,3 +1104,141 @@ Registered for future paper-completion work: when promoting the Reading C trajec
 
 ---
 
+
+## §16 Q5 Layer 3 pieces (b) and (c): conservative composite closure at Layer 2 with structural pairing question registered (Session 131, Patch 0428)
+
+### §16.1 Piece (b) and (c) targets recap
+
+§14.7 enumerated three Layer 3 closure pieces for Q5: (a) the W-bracelet Schur-orthogonality cage-shell factor on $\Dsix$ (closed at Layer 3 in §15 / Patch 0427 / Finding C-W41 with $|M_\perp^W| = 1/6$); (b) SF-2 V-A coupling matching at the massless helicity limit, verifying the composite chirality matrix element $|M^W| = \chi/6$ matches the SF-2 v1.0 prediction structure; (c) Wigner-Eckart bookkeeping for $\Hthree \to \Dsix$ branching consistency. This section addresses pieces (b) and (c) as a composite, with an analytical complication identified mid-session that constrains the rigor level achievable in this patch.
+
+### §16.2 The K3-case matrix element structure: full template recap
+
+The K3 paper §3.3–§5.4 establishes the matrix element $|M^{K3}| = \chi/6$ via a factorization that depends on a load-bearing perpendicular-wavefunction structure not yet identified for the W-bracelet sector. The full K3-doublet basis states (paper §3.3) are tensor products of K3-amplitude states with opposite-$\zeta$-parity perpendicular wavefunctions:
+$$\PhiminusOne = \phiminusOne \otimes \chiplus, \qquad \PhiminusTwo = \phiminusTwo \otimes \chiminus$$
+
+where $\chiplus, \chiminus$ are the $\zeta$-EVEN and $\zeta$-ODD components of the substrate orientation field at the K3 location. The pairing convention ($\PhiminusOne \leftrightarrow \chiplus$; $\PhiminusTwo \leftrightarrow \chiminus$) is the "$\sigma_1\zeta$-EVEN pairing convention" (Finding C-W12 of the paper); it is **required** for the matrix element to be non-vanishing.
+
+The chirality operator $\Cchi$ is in $B_2 = A_2 \otimes (\zeta\text{-ODD})$ of $\Dsix = \Sthree \times \mathbb{Z}_2$ — both an $A_2$ irrep on the $\Sthree$ side and a $\zeta$-ODD irrep on the $\mathbb{Z}_2$ side. The matrix element factorizes:
+$$|M^{K3}| = \underbrace{|\langle \phiminusOne | T_{A_2}(b) | \phiminusTwo \rangle|}_{\text{K3-amplitude factor} = \chi \text{ (Lemma 5.1)}} \cdot \underbrace{|\langle \chiplus | T_\perp | \chiminus \rangle|}_{\text{cage-shell factor} = 1/6 \text{ (Lemma 5.2)}}$$
+
+Both factor matrix elements are non-zero. The $\mathbb{Z}_2$ part: $\langle \chiplus | T_\perp | \chiminus \rangle$ has the $\mathbb{Z}_2$ character even × odd × odd = even, containing the trivial of $\mathbb{Z}_2$ ✓. The $\Sthree$ part: $\langle E | T_{A_2} | E \rangle$ has $E \otimes A_2 \otimes E \supset A_1$ via the standard $\Sthree$ tensor product $E \otimes E = A_1 \oplus A_2 \oplus E$ combined with $A_2 \otimes E = E$.
+
+**Without the opposite-$\zeta$-parity perpendicular-wavefunction structure**, the matrix element would vanish: if both states were $\zeta$-EVEN or both $\zeta$-ODD, then $\zeta$-parity × ($\zeta$-ODD operator) × $\zeta$-parity = ODD of $\mathbb{Z}_2$, not trivial, so the $\mathbb{Z}_2$ factor would zero. The pairing convention's opposite-parity structure is load-bearing.
+
+### §16.3 The analytical complication for piece (b)
+
+§15 (Patch 0427) closed the W-bracelet cage-shell factor at Layer 3 via the $D_6$ Schur-orthogonality on the 6-vertex permutation representation, identifying the V-A current with the $E_2$ irrep at the $C_6$ eigenvalue level and computing $|M_\perp^W| = d_{E_2}/|D_6| = 2/12 = 1/6$. The cage-shell factor is established independently of any pairing-convention question — the Schur orthogonality factor is group-order normalized, not dependent on opposite-parity pairings.
+
+But for the **composite matrix element** $|M^W| = \chi/6$, the analog structure of K3's pairing convention is required. The naive identification "W-bracelet matter doublet = pure $E_2$ of $D_6$" with operator "pure $A_2$ of $D_6$" — which would suffice if we were computing a single-factor matrix element — does **not** in fact suffice for the composite matrix element when the analysis is carried out at the K3-paper rigor level. The K3 case factorizes the matrix element across $\Dsix = \Sthree \times \mathbb{Z}_2$, with both factors contributing structure that requires opposite-parity pairing.
+
+The W-bracelet analog needs:
+1. A $\mathbb{Z}_2$ structure on the bracelet's matter-doublet states (the analog of K3's $\zeta$-parity perpendicular wavefunction)
+2. Two physical bracelet states with opposite parity under this $\mathbb{Z}_2$ generator
+3. A pairing convention attaching the bracelet's $E_2$-amplitude states to the two perpendicular-parity components
+4. A chirality operator that is $B_2 = A_2 \otimes (\text{$\mathbb{Z}_2$-ODD})$ of full $D_6 = \Sthree \times \mathbb{Z}_2$ (rather than pure $A_2$)
+
+Without identifying these structures explicitly on the W-bracelet, the composite matrix element $|M^W| = \chi/6$ cannot be derived at the same Layer 3 rigor level as the K3 case. The §15 cage-shell factor $1/6$ stands; the amplitude factor $\chi$ requires identification of the analog pairing convention.
+
+### §16.4 The W-bracelet analog-perpendicular-wavefunction question
+
+The structural question is: what plays the role of K3's $\chiplus, \chiminus$ on the W-bracelet?
+
+Three candidate structures, registered for future investigation:
+
+**Candidate A — $\hat{n}$-axis substrate orientation field.** K3's $\chiplus, \chiminus$ are $\zeta$-EVEN and $\zeta$-ODD components of the substrate orientation field at the K3 location, with the $\zeta$ generator interpreted as the perpendicular-direction reflection. For the W-bracelet, the analog would be $\hat{n}$-EVEN and $\hat{n}$-ODD components of the substrate orientation field at the bracelet location. Since the bracelet centroid is on-axis with $\hat{n}$ (Finding C-W36) — at $c_W = (\phi/2)\hat{n}$ exactly — the perpendicular direction at the bracelet location is naturally identified with $\hat{n}$ itself. The K3-base centroid is at off-axis 30° from $\hat{n}$ (Finding C-W37), so K3's "perpendicular direction" is rotated from $\hat{n}$ by 30° while W-bracelet's "perpendicular direction" is $\hat{n}$ exactly. Despite the geometric distinction, the conceptual content (substrate orientation field component along the host vertex direction) is the same in both sectors. This is the cleanest structural analog of K3.
+
+**Candidate B — bracelet handedness state pair.** The W-bracelet has two helicity orientations (LH-twisted vs RH-twisted hexagonal alternation), which could correspond to opposite-$\hat{n}$-parity components. But this feels circular: the V-A coupling being derived in piece (b) is itself the LH/RH distinction, and using LH/RH-handed bracelet states as the perpendicular-wavefunction basis would smuggle the result into the premise.
+
+**Candidate C — $W^0$-centroid vs vertex-host substrate orientation.** Per the Patch 0367 W⁰ neutrino scattering insight (sketched in `flagship_papers/electroweak/sketches/W0_neutrino_scattering_centroid_decoupling.md`), the bracelet has a centroid-decoupling structure with distinct dynamics at the centroid and at the vertices. The two states $\chi_+^W, \chi_-^W$ could be substrate orientation components at the centroid vs vertices, with opposite parity under inversion through the bracelet plane.
+
+Candidate A is the structurally cleanest and most consistent with K3's mechanism (substrate orientation field at the substrate object's location is the universal physical content; what varies is the geometric realization). However, verifying Candidate A as the correct analog at theorem level requires:
+- Showing the SF-2 W-bracelet matter doublet has a $\hat{n}$-parity decomposition consistent with K3's $\zeta$-parity decomposition
+- Establishing the analog $\sigma_1 \zeta$-EVEN pairing convention on the W-bracelet
+- Verifying the chirality operator $\Cchi^W$ is in $B_2 = A_2 \otimes (\hat{n}\text{-ODD})$ of full $D_6 = \Sthree \times \mathbb{Z}_2$
+
+This investigation is outside the scope of the present patch and is registered as an explicit open sub-question (§16.6 below).
+
+### §16.5 The conservative cross-sector consistency argument
+
+Pending identification of the W-bracelet analog perpendicular-wavefunction structure, the cross-sector composite matrix element $|M^W| = \chi/6$ is supported at Layer 2 (structural-argument level) by three converging lines:
+
+(i) **Substrate-Locality Unification (Finding C-W40, Patch 0425):** the substrate-level chirality magnitude $\chi \equiv \epsilon = \phi^{-3}$ feeds both sectors through cage-shell averaging on respective $\Dsix$ sub-stabilizers of the same $\Hthree = I_h$ residual symmetry. The two sectors inherit the same substrate $\chi$ via the same Schur-orthogonality mechanism on isomorphic order-12 stabilizers; the cross-sector composite matrix element should be identical between the two sectors.
+
+(ii) **Cage-shell factor identity (Finding C-W41, Patch 0427):** the W-bracelet's Schur-orthogonality cage-shell factor on $D_6$ evaluates to $|M_\perp^W| = 2/12 = 1/6$, identical to the K3-doublet's $|M_\perp^{K3}| = 1/6$. This factor stands independently of any pairing-convention question.
+
+(iii) **Wigner-Eckart cross-sector analogy:** if the W-bracelet has a structural analog of K3's perpendicular-wavefunction pairing (Candidate A above), then the matrix element factorization $|M^W| = |M_{\text{amp}}^W| \cdot |M_\perp^W|$ with $|M_{\text{amp}}^W| = \chi$ via the analog of Finding C-W23 (chirality-eigenvalue matching) and $|M_\perp^W| = 1/6$ via piece (a) gives $|M^W| = \chi/6$ identical to K3.
+
+The three lines converge on the same numerical content $|M^W| = \chi/6$, but each is at Layer 2 structural-argument level pending the explicit Layer 3 promotion that would require identifying the bracelet's analog perpendicular-wavefunction pairing structure (Q5-PAIRING below).
+
+### §16.6 Open sub-question registration: Q5-PAIRING
+
+The following open structural sub-question is registered for future investigation:
+
+> **Q5-PAIRING (NEW; open structural sub-question of Q5 Layer 3 closure):** What plays the role of K3's perpendicular-wavefunction pairing convention $\{\chiplus, \chiminus\}$ on the W-bracelet? Specifically: (i) identify the $\mathbb{Z}_2$ generator of the bracelet's $D_6 = \Sthree \times \mathbb{Z}_2$ realization at the physical level (Candidate A: $\hat{n}$-axis substrate orientation field; Candidate B: bracelet handedness state pair; Candidate C: centroid-vs-vertex inversion parity); (ii) construct the explicit two-component perpendicular-wavefunction basis $\{\chi_+^W, \chi_-^W\}$; (iii) establish the analog $\sigma_1\zeta$-EVEN pairing convention attaching the bracelet's $E_2$-amplitude states to opposite-$\mathbb{Z}_2$-parity perpendicular components; (iv) verify the chirality operator $\Cchi^W$ transforms as $B_2 = A_2 \otimes (\text{$\mathbb{Z}_2$-ODD})$ of full $D_6 = \Sthree \times \mathbb{Z}_2$ rather than pure $A_2$ of $D_6$.
+>
+> Resolution of Q5-PAIRING would promote pieces (b) and (c) from their current Layer 2 structural-argument status to full Layer 3 theorem-level closure with explicit matrix element computation analog of K3 paper §5.3–§5.4. Estimated 1-2 sessions for investigation; Candidate A is the leading structural-coincidence argument.
+
+This is a sub-question of Q5 Layer 3 pieces (b) and (c), not a standalone question — its resolution closes the structural gap in the cross-sector cage-shell averaging framework but does not introduce new physics beyond the existing Reading C trajectory.
+
+### §16.7 SF-2 V-A coupling matching at finite mass and massless helicity limit
+
+Independent of the Q5-PAIRING question, the cross-sector chirality magnitude $|M^W| = \chi/6$ (supported at Layer 2 per §16.5) corresponds to the substrate-level V-A coupling magnitude for the W-bracelet. Connection to SF-2 v1.0's prediction structure:
+
+**At finite mass:** SF-2 v1.0 §sec:dm_muon line 921 states: "the bracelet's $D_6$ alternating-polarity structure produces a 75\% left-handed preference for the released centroid charge, becoming 100\% in the massless helicity limit, per OPEN-FP-SF-2-CHIR continuum-limit derivation." The 75\% Michel parameter $\rho = 3/4$ is the SM tree-level prediction for pure V-A coupling at finite mass, recovered structurally from the $D_6$ phase-bias structure in SF-2. The substrate-level $\chi/6 \approx 0.04$ chirality magnitude does not directly predict the 75\% structural result — rather, $\chi/6$ is the substrate-level magnitude that **enables** V-A coupling to exist (without substrate chirality, the $D_6$ alternating-polarity structure would be parity-symmetric and no V-A asymmetry would emerge); the 75\% kinematic distribution is the consequence of the bracelet's $D_6$ symmetry acting on V-A coupling at finite mass via standard SM kinematics (helicity projection of V-A on massive fermions).
+
+**At massless helicity limit:** the V-A coupling becomes pure LH (100\% V-A) in the standard SM result for massless charged-current fermions. SF-2's prediction matches this. The substrate-level $\chi/6$ contribution does not predict a deviation from 100\% at the massless limit — the substrate chirality is the underlying mechanism enabling V-A; the kinematic enhancement to 100\% at massless limit is structural.
+
+**Layer 4 closure target:** SF-2 OPEN-FP-SF-2-CHIR's full theorem-level closure requires deriving the kinematic transition (75\% at finite mass $\to$ 100\% at massless helicity limit) from CPP substrate dynamics via the continuum-limit Yang-Mills EFT (Theorem THEO-SF-2-5 proof outline in SF-2 v1.0). This is a Layer 4 closure target outside the scope of the present Reading C trajectory work; the substrate-level magnitude $|M^W| = \chi/6$ established at Layer 2 (and provisionally Layer 3 pending Q5-PAIRING resolution) is the substrate-physics handle that feeds into the Layer 4 EFT calculation.
+
+### §16.8 Piece (c) framing: $\Hthree \to \Dsix$ branching consistency at Layer 2
+
+The original §14.7 framing identified piece (c) as "Wigner-Eckart bookkeeping for $\Hthree \to \Dsix$ branching consistency claim: the cross-sector analog of the SF-4 v4.0 first-cross-sector-closure pattern." Specifically: when the K3-doublet's $\Dsix$ stabilizer (one of 10 $D_{3d}$ sub-stabilizers of $\Hthree = I_h$, associated with a 3-fold axis of the first-shell icosahedron) and the W-bracelet's $\Dsix$ stabilizer (the Petrie-polygon subgroup, conjugate to but in a different geometric realization from K3's) are both subgroups of $\Hthree$, the chirality content $\chi$ from the substrate primitive $\hat{n}$ should branch consistently to both.
+
+**The substrate chirality operator at $\Hthree$ level:** the chirality observable sourced from $\hat{n}$ transforms as the pseudoscalar (trivial on rotations, sign on inversion) representation $A_u$ of $\Hthree = I_h$. Branching to $\Dsix$ subgroups: $A_u(\Hthree)$ restricts to the $A_{2u}$ ($\equiv A_2$ in the $D_6 = \Sthree \times \mathbb{Z}_2$ realization, paired with the $\mathbb{Z}_2$-ODD perpendicular-wavefunction component for the full $B_2$ chirality irrep).
+
+For both K3-base $\Dsix$ and W-bracelet $\Dsix$ sub-stabilizers of $\Hthree$, the restriction $A_u(\Hthree) \to A_2(\Sthree) \otimes \mathbb{Z}_2\text{-ODD}$ gives the same irrep structure for the chirality operator. The substrate chirality content $\chi$ does not get diluted under the branching — it passes through identically to both sectors at the operator level.
+
+**Cross-sector branching consistency claim at Layer 2:** the structural argument above is at Layer 2 (representation-theoretic structural-argument). Full Layer 3 closure of piece (c) requires explicit Wigner-Eckart computation on both sub-stabilizers verifying that the reduced matrix elements $\langle \Gamma^{\text{matter}} || A_u(\Hthree) || \Gamma^{\text{matter}} \rangle$ agree between sectors at the appropriate normalization. This is conditional on the same Q5-PAIRING question as piece (b): without the explicit pairing-convention identification, the W-bracelet reduced matrix element cannot be computed at the Layer 3 rigor level.
+
+Piece (c) is therefore at the **same Layer 2 status as piece (b)**, with full Layer 3 promotion conditional on Q5-PAIRING resolution.
+
+### §16.9 Finding C-W42 (NEW)
+
+Registered this patch:
+
+> **Finding C-W42 (NEW)** — *Q5 Layer 3 conservative composite closure at Layer 2 with structural pairing question registered.* The Q5 Layer 3 cross-sector composite chirality matrix element on the W-bracelet inherits the same magnitude as the K3-doublet:
+>
+> $$|M^W| = |M^{K3}| = \frac{\chi}{6} = \frac{\phi^{-3}}{6} \approx 0.0394$$
+>
+> at Layer 2 structural-argument level via three converging arguments: (i) Substrate-Locality Unification (Finding C-W40); (ii) cage-shell factor identity from piece (a) Layer 3 closure (Finding C-W41); (iii) Wigner-Eckart cross-sector analogy assuming the W-bracelet's matter-doublet has an analog of K3's perpendicular-wavefunction pairing structure. Promotion to full Layer 3 theorem-level closure requires resolution of the open sub-question Q5-PAIRING (identification of the bracelet's $\mathbb{Z}_2$-perpendicular-wavefunction structure analog of K3's $\zeta$-EVEN/ODD pairing; Candidate A: $\hat{n}$-axis substrate orientation field is the leading candidate). The Layer 4 connection to SF-2 v1.0's "75\% V-A at finite mass becoming 100\% V-A at massless helicity limit" is registered as the remaining closure target for OPEN-FP-SF-2-CHIR at the continuum-EFT level (Theorem THEO-SF-2-5 proof outline in SF-2 v1.0); the substrate-level chirality magnitude $|M^W| = \chi/6$ is the substrate-physics handle that feeds into the Layer 4 kinematic projection.
+
+Finding C-W42 extends Finding C-W41 (Patch 0427 piece (a) Layer 3 closure of the cage-shell factor alone) to the composite cross-sector matrix element at Layer 2 conservative structural level, with the open Q5-PAIRING question registered explicitly per the §15.12 methodological discipline (cross-sector extension surfaces ambiguities that need separate resolution; here it surfaces the perpendicular-wavefunction pairing-convention analog as a non-trivial structural question).
+
+### §16.10 Q5 Layer 3 status update
+
+- **Q5 Layer 3 piece (a)** (W-bracelet Schur-orthogonality cage-shell factor on $\Dsix$): **CLOSED at Layer 3** by §15 / Patch 0427 / Finding C-W41.
+- **Q5 Layer 3 piece (b)** (SF-2 V-A coupling matching at massless helicity limit): **CLOSED at Layer 2** by this section / Patch 0428 / Finding C-W42; full Layer 3 closure conditional on Q5-PAIRING resolution.
+- **Q5 Layer 3 piece (c)** (Wigner-Eckart bookkeeping for $\Hthree \to \Dsix$ branching consistency): **CLOSED at Layer 2** by this section / Patch 0428 / Finding C-W42; full Layer 3 closure conditional on Q5-PAIRING resolution (same condition as piece (b)).
+- **Q5 Layer 3 overall**: pieces (a)+(b)+(c) all closed at Layer 2 minimum, with piece (a) at Layer 3 and pieces (b)+(c) at Layer 2 pending Q5-PAIRING.
+- **Q5-PAIRING (NEW)**: open structural sub-question requiring identification of the W-bracelet analog of K3's perpendicular-wavefunction pairing structure; estimated 1-2 sessions for investigation.
+
+Reading C closure trajectory budget revised: 3-9 sessions (post-Patch 0427) → **2-8 sessions** (pieces (b)+(c) Layer 2 closure consumed ~1 session of 1-2 budgeted for Q5 Layer 3; Q5-PAIRING absorbs 1-2 sessions for full Layer 3 promotion; Q6 + Q7 absorb 0-4).
+
+### §16.11 Epistemic status
+
+Layer 2 (structural-argument level) for pieces (b) and (c) composite matrix element $|M^W| = \chi/6$. The Substrate-Locality Unification theorem (Finding C-W40) is rigorous at Layer 3 from the §13.3 local-$I_h$-preservation analysis combined with the §15 cage-shell factor identity. The conservative cross-sector consistency argument (§16.5 three converging lines) is at Layer 2: each line provides structural support but full Layer 3 closure of the composite would require the explicit Wigner-Eckart factorization analog of K3 paper §5.3–§5.4, which depends on the Q5-PAIRING perpendicular-wavefunction structure not yet identified.
+
+What is rigorously closed at Layer 3: the W-bracelet cage-shell factor $|M_\perp^W| = 1/6$ via §15 / Finding C-W41. What is at Layer 2 structural argument: the W-bracelet amplitude factor $|M_{\text{amp}}^W| = \chi$ via cross-sector analogy with K3's chirality-eigenvalue matching principle. What is open: the explicit pairing-convention identification on the W-bracelet (Q5-PAIRING) that would close the amplitude factor at Layer 3 by explicit matrix element computation.
+
+The Layer 4 connection to SF-2 v1.0's V-A coupling kinematic predictions (75\%/100\% at finite/massless mass) is at SF-2's standing Layer 4 closure status for OPEN-FP-SF-2-CHIR; this work does not advance that closure but identifies the substrate-physics handle $\chi/6$ that the Layer 4 EFT calculation would need.
+
+### §16.12 Methodological observation: structural-argument cross-sector unification with explicit gap registration
+
+The choice of Proposal 2 (conservative piece (b) registering Q5-PAIRING explicitly) over Proposal 1 (attempt to identify Candidate A as the bracelet's perpendicular-wavefunction structure and proceed with full Layer 3 derivation) reflects the discipline of `founders_voice/004_verbatim_substance_preservation_discipline.md` and the §15.12 cross-sector-extension lesson: when cross-sector extension surfaces a structural question that the original sector's scope did not require resolving, the responsible move is to register the question explicitly rather than commit to a candidate resolution under analytical pressure.
+
+The conservative composite closure at Layer 2 with Q5-PAIRING registered preserves three valuable properties: (i) the cross-sector unification result $|M^W| = |M^{K3}| = \chi/6$ is supported at Layer 2 structural-argument level without overclaiming Layer 3 rigor; (ii) the open structural question is registered with explicit candidate resolutions (A, B, C) for future investigation, capturing the analytical state of the question rather than burying it; (iii) future patch work on Q5-PAIRING can promote pieces (b) and (c) from Layer 2 to Layer 3 with the explicit matrix element computation, paralleling the K3 paper §5.3–§5.4 derivation; the framework for this promotion is now in place.
+
+The pattern templates future cross-sector unification work under OPEN-SD-CHIR-PRIMITIVE: substrate-locality at Layer 2 is often achievable cleanly (Finding C-W40 pattern), Schur-orthogonality cage-shell factors at Layer 3 are often achievable cleanly when the sector's stabilizer structure is identified (Finding C-W41 pattern), but the explicit Wigner-Eckart matrix element computation at full Layer 3 requires identifying the sector's analog perpendicular-wavefunction pairing structure — which is non-trivial and worth registering as a separate open sub-question when the cross-sector pattern is first identified. The OPEN-SD-CHIR-PRIMITIVE umbrella's eventual closure pattern for each of its five observable manifestations is therefore: (1) substrate-locality Layer 2; (2) sector-specific cage-shell factor Layer 3 (cleanly); (3) sector-specific pairing-convention identification leading to full Layer 3 composite matrix element. The third step is the highest-cost work but is also the most structurally informative — it surfaces the physical content of the sector's substrate-physics framework beyond the generic substrate-locality and cage-shell averaging.
+
+---
+

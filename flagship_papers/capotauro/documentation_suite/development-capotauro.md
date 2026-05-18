@@ -300,6 +300,31 @@ $$|M_\perp^W| = \frac{d_{E_2}}{|D_6|} = \frac{2}{12} = \frac{1}{6}$$
 
 Patch 0427 sketch grows 997 → 1106 lines (+109 net).
 
+## Vignette 30 — Session 131 continued (Patch 0428): Q5 Layer 3 pieces (b)+(c) Layer 2 closure via Proposal 2 framing
+
+Session continued after Patch 0427 push landed at commit `9ae213e` (Thomas confirmed). Container synced to origin/main per bootup §3. Started piece (b) work — re-reading K3 paper §3.3–§5.4 to template the cross-sector V-A coupling matching derivation. This is where the analytical complication surfaced.
+
+**Mid-session discovery**: K3 paper §3.3 establishes the K3-doublet full basis states as $\PhiminusOne = \phiminusOne \otimes \chiplus$ and $\PhiminusTwo = \phiminusTwo \otimes \chiminus$ with opposite-$\zeta$-parity perpendicular wavefunctions. The $\sigma_1\zeta$-EVEN pairing convention (Finding C-W12 of paper) is **load-bearing**: the chirality operator is $B_2 = A_2 \otimes (\zeta\text{-ODD})$ of $\Dsix = \Sthree \times \mathbb{Z}_2$, and the matrix element $\langle \Phi_-^{(1)} | \Cchi | \Phi_-^{(2)} \rangle$ is non-vanishing only with opposite-$\zeta$-parity perpendicular wavefunctions (even × odd × odd = even, contains trivial of $\mathbb{Z}_2$). My piece (a) framing treated the W-bracelet's $D_6$ stabilizer in the dihedral-of-hexagon realization with operator pure $A_2$ — this suffices for the cage-shell factor alone (Schur orthogonality is group-order normalized regardless of pairing) but does not match the full $\Sthree \times \mathbb{Z}_2$ factorization structure for the composite matrix element.
+
+**The implication for piece (b)**: the W-bracelet analog of K3's perpendicular-wavefunction pairing convention is not yet identified. Three candidate structures considered (§16.4): Candidate A — $\hat{n}$-axis substrate orientation field with $\hat{n}$-EVEN and $\hat{n}$-ODD components (cleanest analog; bracelet centroid on-axis at $(\phi/2)\hat{n}$ per Finding C-W36); Candidate B — bracelet handedness state pair (circular; uses V-A LH/RH distinction as premise); Candidate C — $W^0$-centroid vs vertex-host substrate orientation per Patch 0367 W⁰ neutrino scattering insight. Candidate A is leading but verifying at theorem level requires substantial investigation outside this patch's scope.
+
+**Decision presented to Thomas**: three proposals — (1) Investigate Candidate A then write full piece (b) at Layer 3 rigor; (2) Conservative composite Layer 2 closure with Q5-PAIRING registered explicitly; (3) Stop piece (b) work and do session-close handover. Recommended Proposal 2 with rationale: (i) Patch 0427 already substantive; (ii) Substrate-Locality Unification gives strong Layer 2 cross-sector argument; (iii) Q5-PAIRING is worth dedicated investigation rather than rushed identification; (iv) Proposal 1 risks committing to Candidate A without sufficient verification (the very pattern §15.12 warns against). Thomas selected Proposal 2.
+
+**§16 derivation** then proceeded as conservative composite closure:
+1. Recap K3's matrix element factorization including load-bearing pairing convention (§16.2)
+2. Articulate the analytical complication explicitly (§16.3)
+3. Lay out three candidate structures with assessment (§16.4)
+4. State the cross-sector consistency argument at Layer 2 via three converging lines (§16.5): (i) Substrate-Locality Unification feeds same $\chi$ to both sectors; (ii) cage-shell factor identity from piece (a) stands; (iii) Wigner-Eckart cross-sector analogy gives $|M_{\text{amp}}^W| = \chi$ assuming bracelet has analog pairing
+5. Register Q5-PAIRING as explicit open sub-question (§16.6) with four-part resolution requirements
+6. Frame SF-2 V-A coupling matching at three layers (§16.7): substrate-level $\chi/6$, finite-mass kinematic 75% (Michel $\rho = 3/4$ from $D_6$ phase bias), massless 100% (kinematic enhancement); Layer 4 EFT closure target for OPEN-FP-SF-2-CHIR
+7. Frame piece (c) $\Hthree \to \Dsix$ branching consistency at Layer 2 (§16.8): $A_u(\Hthree) \to B_2(\Dsix)$ in both K3-base and W-bracelet sub-stabilizers; chirality content $\chi$ passes through identically at operator level
+8. Register **Finding C-W42 (NEW)** (§16.9): Q5 Layer 3 conservative composite closure at Layer 2 with structural pairing question registered
+9. Status update §16.10: piece (a) Layer 3, pieces (b)+(c) Layer 2, Q5-PAIRING open; trajectory revised 3-9 → 2-8 sessions
+
+**§16.12 methodological observation registered**: the Proposal 2 choice over Proposal 1 reflects `founders_voice/004` discipline and the §15.12 cross-sector-extension lesson. Pattern templates future cross-sector unification work under OPEN-SD-CHIR-PRIMITIVE: (1) substrate-locality Layer 2 (Finding C-W40 pattern, achievable cleanly); (2) sector-specific cage-shell factor Layer 3 (Finding C-W41 pattern, achievable when stabilizer structure is identified); (3) sector-specific pairing-convention identification for full Layer 3 composite matrix element — the highest-cost work, most structurally informative, often warranting separate open-sub-question registration when first surfaced.
+
+Patch 0428 sketch grows 1106 → 1244 lines (+138 net). Q5 Layer 3 piece-set composite closure achieved at Layer 2 minimum; OPEN-SD-CHIR-PRIMITIVE umbrella prerequisite stack essentially complete at Layer 2 cross-sector unification level (0-5 sessions remaining vs prior 1-6).
+
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0427 — appended Vignette 29 covering Q5 Layer 3 piece (a) closure via Finding C-W41; Sessions 124–126 vignette backfill remains pre-existing gap, narrative at Patch 0421 handover commit `8acdb63`).*
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. Last updated: 17 May 2026 (Session 131 Patch 0428 — appended Vignette 30 covering Q5 Layer 3 pieces (b)+(c) Layer 2 conservative composite closure via Proposal 2 framing with Q5-PAIRING open structural sub-question registered; Sessions 124–126 vignette backfill remains pre-existing gap, narrative at Patch 0421 handover commit `8acdb63`).*
