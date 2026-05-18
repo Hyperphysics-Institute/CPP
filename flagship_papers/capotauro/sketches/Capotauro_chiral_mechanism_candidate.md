@@ -902,3 +902,96 @@ Founder's voice file `004_verbatim_substance_preservation_discipline.md` line 52
 
 ---
 
+
+## §14 Q5 Layer 2 closure: cross-sector consistency with SF-2 W bracelet under vertex-aligned Reading C (Session 130, Patch 0425)
+
+### §14.1 Q5 framing
+
+Q5 asks (per §5.3): does Reading C's primitive direction $\hat{n}$ interact consistently with the SF-2 W bracelet? Specifically, the W bracelet hosts the chirality content of the electroweak V-A coupling (OPEN-FP-SF-2-CHIR); under the OPEN-SD-CHIR-PRIMITIVE umbrella registered Patch 0422, the W-bracelet V-A coupling and the K3-doublet chirality must inherit from the *same* primitive direction $\hat{n}$, with the *same* substrate-level chirality magnitude. This section closes Q5 at Layer 2 (structural-argument level), stating the cross-sector unification theorem and identifying the explicit cage-shell averaging factor Layer 3 closure requires.
+
+### §14.2 SF-2 W-bracelet structure recap (from §10, Finding C-W36)
+
+Per SF-2 v1.0 Theorem 4.2 and the §10 cross-sector verification: the W bracelet is the $\Hfour$-orbit $\mathcal{O}_\mathcal{B}$ of 1200 induced hexagonal 6-cycles in the 600-cell vertex graph, with stabilizer $\Dsix$. Per Finding C-W36, the 1200 bracelet centroid directions reduce to exactly the 120 600-cell vertex directions (10 bracelets per vertex), with each bracelet geometrically realized as a **Petrie hexagon of the SM-1 first-shell icosahedron** around its central vertex. Under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$ (Finding C-W37, Patch 0419), the 10 bracelets centered on the host vertex sit on-axis with $\hat{n}$ at radius $\phi/2$.
+
+The 6 vertices of any one of these bracelets are 6 of the 12 first-shell vertices of the icosahedron at $v_{\text{host}}$. Their pairwise inner products with $v_{\text{host}}$ are uniform: each $v_i \cdot v_{\text{host}} = \phi/2$ (the first-shell-coordination identity used throughout §13).
+
+### §14.3 Local-$I_h$-preservation applied to W-bracelet edges
+
+The §13.3 local-symmetry-preservation theorem (Finding C-W39) was proved for the full first-shell icosahedron at $v_{\text{host}}$: under vertex-aligned Reading C, the 12 first-shell vertices remain at identical distances from $v_{\text{host}}$ and identical pairwise distances among themselves at $\mathcal{O}(\epsilon)$, with only an isotropic radial scaling by $(1 - \epsilon/(2\phi))$. The proof in §13.3 was structural — it used only the inner product $v_i \cdot v_{\text{host}} = \phi/2$ (common to all 12 first-shell vertices) plus the substrate edge-perturbation formula $|v_i - v_j|_{\text{actual}} = |v_i - v_j|_{\text{ideal}}(1 + \epsilon \hat{e}_{ij} \cdot \hat{n})$. It applies uniformly to **any subset of first-shell vertices**.
+
+In particular, applying §13.3 to the 6 W-bracelet vertices:
+
+- **Host-to-bracelet edges (radial spokes)**: 6 edges from $v_{\text{host}}$ to bracelet vertices $v_a, \ldots, v_f$, all with $\hat{e}_{(\text{host},a)} \cdot \hat{n} = -1/(2\phi)$ identical (the §13.2 uniform host-to-first-shell perturbation). These edges acquire a uniform isotropic length scaling.
+
+- **Bracelet-perimeter edges (the 6 hexagonal sides)**: each is a first-shell-to-first-shell edge with $v_a \cdot v_{\text{host}} = v_b \cdot v_{\text{host}} = \phi/2$, so $\hat{e}_{ab} \cdot \hat{n} = (v_b \cdot v_{\text{host}} - v_a \cdot v_{\text{host}}) / |v_b - v_a| = 0$ identically.
+
+Therefore the W-bracelet's local edge structure is preserved at $\mathcal{O}(\epsilon)$ in 4D under vertex-aligned Reading C — exactly as the K3-base's edge structure was preserved (§13.3). **Zero direct edge-length perturbation at first order in $\epsilon$ for both substrate objects.**
+
+### §14.4 Centroid analysis: K3-base off-axis vs W-bracelet on-axis
+
+The substantive geometric distinction between the two substrate objects is in their centroid placement, not their edge structure.
+
+**K3-base centroid.** Three first-shell vertices $v_a, v_b, v_c$ forming a triangular face of the icosahedron. Centroid $c_K = (1/3)(v_a + v_b + v_c)$. Axial component along $\hat{n} = v_{\text{host}}$: $c_K \cdot v_{\text{host}} = (1/3)\sum v_i \cdot v_{\text{host}} = \phi/2$. Transverse component: nonzero, with $|c_K|^2 = \phi^2/4 + |c_K^\perp|^2$ producing the §11.3 closed-form cosine identity $\hat{c}_K \cdot v_{\text{host}} = \sqrt{3}/2$ (i.e., $c_K$ off-axis by $30°$). The K3-base is **transversely off-axis** from $\hat{n}$.
+
+**W-bracelet centroid.** Six first-shell vertices $v_a, \ldots, v_f$ forming a regular hexagonal Petrie polygon. Centroid $c_W = (1/6)\sum v_i$. Axial component: $c_W \cdot v_{\text{host}} = (1/6) \cdot 6 \cdot (\phi/2) = \phi/2$. Transverse component: **zero**, by the hexagonal symmetry — the 6 vertices come in 3 antipodal pairs whose transverse components cancel. Therefore $c_W = (\phi/2) \cdot \hat{n}$ exactly: the W-bracelet centroid lies **on the $\hat{n}$ axis** at radius $\phi/2$.
+
+This confirms the §10.3 and §10.4 result at a structural level: K3-base is the 3-fold off-axis object, W-bracelet is the 6-fold on-axis object. Both built from first-shell vertices of the same host, both protected from direct edge perturbation by the §13.3 local-$I_h$-preservation theorem, but distinguished by transverse symmetry of their respective vertex sets.
+
+### §14.5 Layer 2 cross-sector unification theorem
+
+**Theorem (Q5 Layer 2 cross-sector unification, structural-argument level).** Under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$ and the §13.3 local-$I_h$-preservation theorem (Finding C-W39):
+
+(i) Both the K3-base (a 3-vertex triangular face of the first-shell icosahedron at $v_{\text{host}}$) and the W-bracelet (a 6-vertex Petrie hexagon of the same first-shell icosahedron) inherit substrate-level chirality from the same identification $\chi \equiv \epsilon$ at substrate level (Patch 0424 §13.4). 
+
+(ii) Neither object carries chirality content via local edge-length perturbation at $\mathcal{O}(\epsilon)$ — all first-shell-to-first-shell edges are tangent to $\hat{n}$ in 4D by §13.2 / §14.3. Chirality content propagates from the global substrate structure via the cage-shell averaging mechanism (paper §10 for the K3-doublet; SF-2 v1.0 analog for the W-bracelet) on each object's $\Dsix$ stabilizer subgroup of the local $\Hthree = I_h$ around $v_{\text{host}}$.
+
+(iii) Sector-specific chirality coupling magnitudes are obtained by sector-specific Schur-orthogonality cage-shell factors on the respective $\Dsix$ stabilizers, but the underlying substrate chirality magnitude $\chi$ that feeds each calculation is the **same** substrate-level quantity, $\chi \equiv \epsilon = \phi^{-3}$.
+
+**Proof sketch.** Direct application of §13.3 to first-shell-vertex subsets gives (ii); the §13.4 substrate identification $\chi \equiv \epsilon$ is global at substrate level (it's the substrate edge-perturbation magnitude, not specific to any local cage), so any cage-shell averaging operation on first-shell substructures inherits $\chi$ as input. The K3-doublet matrix element $|M_{K_3}| = \chi$ (paper §7.4 Lemma spectral_S + §7.5 chirality-eigenvalue matching) and the K3-doublet cage-shell factor $|M_\perp| = 2/12 = 1/6$ (paper §10 Schur orthogonality on full $\Hthree$-cage with $\Dsix$ sub-stabilizer = K3 stabilizer) give the K3-amplitude $|M_{K_3}|/6 = \chi/6$ matching the empirical $\Delta p_{LR} \approx 0.04$ within 1.5%. The W-bracelet analog requires the W-bracelet's $\Dsix$ stabilizer (one of 10 Petrie-polygon subgroups of $\Hthree$ per Finding C-W36 + §11.4) with its own Schur-orthogonality cage-shell factor; that factor's explicit value is the Layer 3 closure target (§14.7). The structural unification claim of clause (iii) does not require knowing the W-bracelet's factor explicitly — it follows from the substrate-level $\chi \equiv \epsilon$ identification being independent of which substrate object's stabilizer is being averaged over. $\square$
+
+### §14.6 Finding C-W40 (NEW): Substrate-Locality Unification under Reading C
+
+Registered this patch:
+
+> **Finding C-W40 (NEW)** — *Substrate-Locality Unification under vertex-aligned Reading C.* Under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$, the §13.3 local-$I_h$-preservation theorem (Finding C-W39) applies uniformly to any substrate object constructed from a subset of first-shell vertices of $v_{\text{host}}$. Specifically: (a) all first-shell-to-first-shell edges have $\hat{e}_{ab} \cdot \hat{n} = 0$ identically; (b) all host-to-first-shell edges have $\hat{e}_{(\text{host},i)} \cdot \hat{n} = -1/(2\phi)$ identically; (c) any subset-internal pairwise distance is preserved at $\mathcal{O}(\epsilon)$ as isotropic radial scaling by $(1 - \epsilon/(2\phi))$. Therefore the chirality content of any such substrate object (K3-base, W-bracelet, or any other first-shell subset configuration) inherits from the global substrate $\chi \equiv \epsilon$ identification (Patch 0424 Finding C-W39) via cage-shell averaging on the object's $\Dsix$ (or other) stabilizer subgroup of $\Hthree = I_h$. Cross-sector unification of OPEN-FI-C-9-FP-MECHANISM (K3-doublet, mass-mixing sector) and OPEN-FP-SF-2-CHIR (W-bracelet, electroweak V-A sector) is achieved at Layer 2 under the OPEN-SD-CHIR-PRIMITIVE umbrella: both sectors' chirality coupling magnitudes are products of the substrate-level $\chi = \phi^{-3}$ and sector-specific Schur-orthogonality cage-shell factors.
+
+Finding C-W40 generalizes the §13 result (which addressed only the K3-base) to the full first-shell-vertex-subset class and explicitly bridges to SF-2's W-bracelet sector. This is the OPEN-SD-CHIR-PRIMITIVE umbrella's first structural payoff: chirality unification at the substrate level, with sector-specific coupling magnitudes via standard Wigner-Eckart machinery on appropriate sub-stabilizers.
+
+### §14.7 What Layer 3 closure of Q5 requires
+
+Layer 2 closes the structural-argument level: both sectors inherit the same substrate $\chi$, via the same mechanism, with sector-specific cage-shell factors. Layer 3 closure requires:
+
+**(a) Explicit W-bracelet cage-shell averaging factor.** The K3-doublet's cage-shell factor is $d_E/V_{\text{cage}} = 2/12 = 1/6$ (paper §10), where $d_E = 2$ is the dimension of the $E$-irrep of $\Sthree$ relevant to K3-amplitude states and $V_{\text{cage}} = 12$ is the icosahedral cage's vertex count. The W-bracelet's Schur-orthogonality factor on its $\Dsix$ stabilizer (the Petrie-polygon subgroup of $\Hthree$, not the K3-stabilizer $D_{3d}$ subgroup) requires computing the corresponding $d_{\text{irrep}}/V_{\text{bracelet}}$ structure where $V_{\text{bracelet}} = 6$ is the bracelet vertex count and the relevant irrep is the $\Dsix$ representation carrying the V-A current. This is single-session tractable group theory.
+
+**(b) Verification that SF-2 V-A coupling at massless helicity limit matches.** Once the W-bracelet cage-shell factor is in hand, the predicted V-A coupling amplitude is $\chi \cdot (\text{W-bracelet factor}) = \phi^{-3} \cdot (\text{W-bracelet factor})$. SF-2 v1.0 establishes the V-A structure at the helicity level via the $\Dsix$ bracelet stabilizer (cf. `flagship_papers/electroweak/sf-2_electroweak.tex` §sec:Wbracelet_thm); a Layer 3 closure shows the chirality magnitude at the massless helicity limit equals this product.
+
+**(c) Possible Wigner-Eckart bookkeeping for the consistency claim.** The strongest form of Layer 3 cross-sector closure would show the chirality content passes consistently through both sectors via explicit Wigner-Eckart matrix elements on the $\Hthree \to \Dsix$ branching for each sub-stabilizer. This is the cross-sector analog of the SF-4 v4.0 first-cross-sector-closure pattern (OPEN-FP-SF-4-2 + SM-5 op:nu_id).
+
+Estimated Layer 3 work: 2–4 sessions (with (a) tractable in 1 session, (b) tractable in 1 session conditional on (a), and (c) potentially folding into a single composite-theorem patch). Deferred to a future window — the §13 lesson stands: better to commit Layer 2 cleanly than rush Layer 3 with potential 4D-vs-3D or stabilizer-subgroup-identification errors that need correction patches.
+
+### §14.8 Status update
+
+- **Q1** (§2.2 Claim verification): CLOSED at Layer 3 (Patch 0417 §9).
+- **Q2** (residual-symmetry consistency): CLOSED at Layer 3 (Patch 0417 §9).
+- **Q1'** (vertex vs face): RESOLVED at Layer 2 toward vertex-aligned (Patch 0419 §11.4).
+- **Q1'.A** (K3-base geometric realization): RESOLVED (Patch 0419 §11.3).
+- **Q3** ($\epsilon$–$\chi$ relationship): CLOSED at Layer 3 by direct identification $\chi \equiv \epsilon$ (Patch 0424 §13).
+- **Q4** (Wigner-Eckart $f_{\text{irrep}}$ closure / fractional retention theorem): DISSOLVED (Patch 0424 §13).
+- **Q5** (cross-sector consistency with SF-2 W bracelet): **CLOSED at Layer 2 by Substrate-Locality Unification** (this §14). Layer 3 closure deferred pending W-bracelet Schur-orthogonality cage-shell factor computation and SF-2 V-A coupling matching at the massless helicity limit; estimated 2–4 sessions.
+- **Q6** (cross-sector SM-2 qDP/eDP): open at sketch level. The same Substrate-Locality Unification framework applies in principle: qDP-eDP screening asymmetry (OP-SM-2) operates on first-shell-vertex-correlated geometry; if the qDP/eDP distinction can be characterized as a substrate-object built from first-shell vertices of a host, Finding C-W40 covers it. Estimated 3–5 sessions; recommended-but-not-required for primitive-cause derivation work on OPEN-SD-CHIR-PRIMITIVE.
+- **Q7** (cosmological-timing): unchanged, open.
+
+Reading C closure trajectory budget revised: 5-12 sessions (post-Patch 0424) → **4-10 sessions** (Q5 Layer 2 closed; Q5 Layer 3 + Q6 + Q7 absorb remaining budget). Q5 Layer 3 is the natural immediate next priority, estimated 2–4 sessions.
+
+### §14.9 Epistemic status
+
+Layer 2 (structural-argument level). The geometric content — K3-base off-axis, W-bracelet on-axis, both built from first-shell vertices, both edges tangent to $\hat{n}$ — is rigorous from the 600-cell vertex-coordinate structure on $S^3$. The local-$I_h$-preservation theorem (Finding C-W39, §13.3) is a Layer 3 result; its generalization to arbitrary first-shell-vertex subsets in §14.3 / Finding C-W40 is also Layer 3 (the proof in §13.3 is structural and applies uniformly). What is at Layer 2 (not Layer 3) is the *cross-sector unification claim* — that both sectors inherit chirality from the same substrate $\chi$ via cage-shell averaging on appropriate sub-stabilizers. The Layer 3 promotion requires the explicit cage-shell factor for the W-bracelet (§14.7 (a)) and the SF-2 V-A coupling consistency check (§14.7 (b)).
+
+### §14.10 Methodological observation: cross-sector unification at the substrate level is the umbrella payoff
+
+The OPEN-SD-CHIR-PRIMITIVE umbrella was registered Patch 0422 with the structural claim that chirality is a programme-wide cross-sector phenomenon, not bounded to any single flagship paper's machinery. Q5 Layer 2 closure provides the first explicit demonstration of this structural claim: the same substrate-level $\chi \equiv \epsilon$ identification (a single substrate parameter) feeds two different sectors' chirality magnitudes via two different cage-shell averaging operations on two different $\Dsix$ sub-stabilizers of the same $\Hthree$ residual symmetry. This pattern templates the umbrella's eventual reach across all five observable manifestations: electromagnetic handedness, thermodynamic causal arrow, and cosmological vacuum asymmetry would each inherit $\chi$ via their own cage-shell averaging operations on their own sub-stabilizers, with the structural unification claim being that all five inherit the *same* substrate-level $\chi$ from the same primitive direction $\hat{n}$.
+
+The methodological lesson: cross-sector unification under a primitive-direction framework operates at *two distinct levels*. The first level — the substrate-level chirality magnitude — is universal across sectors (Layer 2 unification). The second level — the sector-specific cage-shell averaging factor — is geometry-dependent and varies with each substrate object's stabilizer structure (Layer 3 sector-specific closures). The OPEN-SD-CHIR-PRIMITIVE umbrella's eventual closure pattern is: substrate-level Layer 2 + N sector-specific Layer 3 closures for N observable manifestations.
+
+---
+
