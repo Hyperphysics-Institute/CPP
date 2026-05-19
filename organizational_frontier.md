@@ -679,3 +679,41 @@ All four were Claude-side execution failures, not protocol specification failure
 - Milestone-triggered: 1 (OPEN-ORG-003)
 - Opportunistic: 3 (OPEN-ORG-005, -006, -010)
 - Dedicated execution session: 1 (OPEN-ORG-009)
+
+## OPEN-ORG-016: methods_catalogue/ — back-fill from earlier closure arcs and ongoing maintenance
+
+**Status:** STUB-ESTABLISHED — initial seed catalog committed Session 133 Patch 0449 at `methods_catalogue/README.md` + `methods_catalogue/methods_catalogue.md` with 18 entries (6 per layer) from Reading C closure trajectory. Full catalog completion is multi-session future-window work.
+**Identified:** 18 May 2026 Session 133 close, after Thomas's question about whether a methods catalog file existed. Answer was no, and the catalog's value was apparent immediately given how many techniques the Reading C closure trajectory had implicitly drawn from without central listing.
+**Priority:** MEDIUM (improves discoverability of programme techniques for future contributors; not blocking on any active paper).
+
+**Originating context:** Thomas surfaced the methods-catalog idea during the meta-conversation following Reading C closure trajectory close (sketch §17-§21 + handover Patch 0443). The observation was that across closures the same techniques (Schur orthogonality, Wigner-Eckart, branching rules, register-then-resolve, etc.) get applied repeatedly to different sectors, but the techniques were scattered across `templates/operating_system.md`, `founders_voice/NNN`, individual sketch files, and Tier 4 reasoning documents with no central listing. A new contributor (human or AI) inheriting CPP could not quickly answer "what techniques does this programme use?"
+
+**Three-layer structure adopted at seed:**
+- Layer 1: Mathematical techniques (Schur orthogonality, Wigner-Eckart factorization, branching rule analysis, Coxeter parabolic-subgroup theory, antipodal-pair refinement, combined-symmetry generators, numerical verification at machine precision)
+- Layer 2: Methodological disciplines (Layer A/B/C decomposition, register-then-resolve, three converging arguments standard, symmetric-honesty, cross-sector unification audit, three-step closure pattern)
+- Layer 3: Heuristic strategies (vanishing matrix element → combined-symmetry generators; sector instance → audit sister sectors; suspicious foundational input → numerical verification; closure trajectory saturation → consolidate; recurring problem shape → name and register; meta-conversation surfacing → capture before window close)
+
+**Problem:** The Patch 0449 seed catalog only enumerates techniques from the Reading C closure trajectory (Sessions 124-133, Patches 0417-0443). Earlier closure arcs (SF-4 Sessions 37-54, SS-9 Sessions 12-32, the SM-line work) used additional techniques and disciplines that should be added. Specifically:
+
+1. **SF-4 neutrino-sector techniques**: PMNS matrix construction, JUNO experimental-prediction integration, anthology-chapter format conventions, the SF-4 v4.0 OPEN-FP-SF-4-2 + SM-5 cross-sector closure pattern.
+2. **SS-9 multi-faceted-rigidity techniques**: rigidity-tensor decomposition, residual-fingerprint analysis, the documentation-suite four-tier discipline development arc itself.
+3. **SM-line K3-Koide and quark-mass-hierarchy techniques**: K3 algebra construction (independent of Reading C), Koide formula derivation, quark-mass-ratio fixed-point analysis.
+4. **EW-line electroweak techniques**: V-A coupling continuum-EFT derivation, OPEN-FP-SF-2 Layer 4 closure pattern.
+5. **Cross-cutting techniques**: bibliography consolidation discipline, paper_catalog maintenance, programme orientation document update protocol.
+
+The seed catalog also does not include heuristic strategies from problem-solving outside the closure-trajectory context (e.g., responding to reviewer feedback, scoping new papers, identifying programme-state changes warranting handover protocol).
+
+**Proposed fix:** Two-phase work.
+
+Phase 1 (1-2 dedicated future-window sessions): Back-fill from earlier closure arcs. Read through SF-4 v1.0 paper + documentation suite, SS-9 v1.0 paper + documentation suite, SM-3 + SM-7 + SM-8 papers, EW-1 through EW-5 papers; extract additional Layer 1 techniques + Layer 2 disciplines + Layer 3 heuristics; append entries to `methods_catalogue.md` with canonical citations. Estimated effort: 4-8 hours per closure arc, depending on how systematically the arc's techniques are documented.
+
+Phase 2 (ongoing maintenance): At each future paper SHIP, append new technique/discipline/heuristic entries derived during that paper's development arc. Add this to the §15 Step E registry-update checklist as a per-paper-SHIP item.
+
+**Trigger condition:** Phase 1 workable in any session with 2-4 hours dedicated time for technique extraction work. Could be combined with TATWD book 2 roadmap updates if both target the same closure arc. Phase 2 is per-paper-SHIP and does not require dedicated trigger sessions.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing critical. Programme can function without the catalog completion; this is a discoverability improvement, not a blocker.
+
+**History:**
+- 18 May 2026 Session 133 Patch 0449 — Stub catalog established at `methods_catalogue/README.md` + `methods_catalogue/methods_catalogue.md` with 18 seed entries from Reading C closure trajectory. Entry registered for future-window back-fill from earlier closure arcs.
+
