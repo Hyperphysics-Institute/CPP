@@ -747,6 +747,181 @@ The single most critical cross-sector inheritance for Theorem~\ref{thm:composite
 
 The cross-sector inheritance pattern templates future CPP closures: the Capotauro paper provides the chirality matrix element $|M|$ as substrate-physics input to SF-2 v2.0+ (Q11 $\sin^2\theta_{13}$ derivation, \S\ref{sec:sin2theta13}); SF-2 v2.0+ in turn will provide PMNS observable inputs to downstream Capotauro sub-claim work on $\delta_{CP}$ and $\eta_B$. The closure web's increasing density is the structural manifestation of CPP's cross-sector unification thesis.
 
+\section{The W-Bracelet Sector: Cross-Sector Unification with the K3-Doublet}\label{sec:w_bracelet_sector}
+
+The K3-doublet derivation chain of \S\S\ref{sec:k3_doublet}--\ref{sec:composite_we} establishes the chirality matrix element $|M^{\Kthree}| = \chi/6$ on the mass-mixing sector. This section extends the same substrate-physics machinery to a second sector --- the SF-2 W-bracelet substrate object hosting the V--A coupling in $W^\pm$-mediated electroweak interactions --- and derives the chirality matrix element $|M^W| = \chi/6$ on that sector, identical in magnitude to the K3-doublet's. The result is registered programme-level as THEO-SD-CHIR-1 (Cross-Sector Substrate Chirality Unification Theorem; theorem \#63 in the CPP theorem-registry~\cite{abshier_theorem_registry}, registered Patch 0434 Session 132) and constitutes the first full Layer 3 cross-sector unification result under the \emph{OPEN-SD-CHIR-PRIMITIVE} umbrella~\cite{abshier_research_frontier} (umbrella registered Patch 0422). The four-step proof chain ((i) Local-$I_h$-Preservation; (ii) Substrate-Locality Unification; (iii) Cage-shell factor identity; (iv) Pairing-convention identification via icosahedral-center inversion) is developed in working sketch \S14--\S17~\cite{abshier_capotauro_chiral_mechanism_sketch}.
+
+The structural content of the unification is: the W-bracelet's substrate chirality content is sourced from the \emph{same} substrate parameter $\chi \equiv \epsilon = \phig^{-3}$ that feeds the K3-doublet's chirality matrix element. Both sectors inherit $\chi$ from the local-$I_h$-preservation theorem of \S\ref{sec:substrate_locality} via Substrate-Locality Unification (\S\ref{sec:w_substrate_locality_unification}), and both compute their respective composite matrix elements via the same algebraic structure --- amplitude factor $\chi$ (chirality-eigenvalue matching) times cage-shell factor $1/6$ (Schur orthogonality on a 2D matter-doublet irrep over a 12-element stabilizer) --- on isomorphic-but-distinct $\Dsix \subset H_3 = I_h$ sub-stabilizers.
+
+\subsection{The W-bracelet on the host vertex first-shell icosahedron}\label{sec:w_bracelet_setup}
+
+Per SF-2 v1.0 Theorem~4.2~\cite{abshier_sf2}, the W-bracelet is the $\Hfour$-orbit $\mathcal{O}_\mathcal{B}$ of 1{,}200 induced hexagonal 6-cycles in the 600-cell vertex graph, with stabilizer the dihedral group $\Dsix$ of order 12. Under the vertex-aligned Reading C of \S\ref{sec:h4_i4} (FI-C-RC-2), the geometric realization of the W-bracelet on the substrate is sharpened:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{Petrie-hexagon realization.} Each W-bracelet is geometrically a Petrie hexagon of the first-shell icosahedron centered at a 600-cell vertex (sketch \S10, Patch 0418, Finding C-W36)~\cite{abshier_capotauro_chiral_mechanism_sketch}. There are 10 Petrie-hexagon subgroups of the icosahedral $H_3 = I_h$, corresponding to the 10 distinct 3-fold rotation axes of the icosahedron in dual configuration; equivalently, the 1{,}200 W-bracelets in the substrate distribute as 10 bracelets per 600-cell host vertex $\times$ 120 host vertices.
+    \item \textbf{On-axis with $\hat{n}$ at radius $\phig/2$.} Under vertex-aligned Reading C ($\hat{n} = v_{\text{host}}$, FI-C-RC-2), the 10 W-bracelets centered on $v_{\text{host}}$ have centroid $c_W = (\phig/2)\hat{n}$ exactly --- on the $\hat{n}$ axis (Finding C-W36)~\cite{abshier_capotauro_chiral_mechanism_sketch}. By contrast, the K3-base (\S\ref{sec:k3_base}) sits transversely off-axis at $\hat{c}_K \cdot \hat{n} = \sqrt{3}/2$ ($30°$ off-axis). The two substrate objects are distinguished by transverse centroid placement: K3-base 3-fold off-axis, W-bracelet 6-fold on-axis.
+    \item \textbf{6 vertices among the 12 first-shell.} The W-bracelet's 6 hexagonal vertices are 6 of the 12 first-shell vertices of the icosahedron at $v_{\text{host}}$ (the other 6 first-shell vertices participate in the bracelet's antipodal partners; \S\ref{sec:w_zeta_inversion}). All 6 satisfy the first-shell-coordination identity $v_i \cdot v_{\text{host}} = \phig/2$.
+\end{itemize}
+
+\subsection{Substrate-Locality Unification (Finding C-W40)}\label{sec:w_substrate_locality_unification}
+
+Theorem~\ref{thm:local_ih_preservation} (\S\ref{sec:local_ih_preservation_theorem}) was proved as a structural statement about any subset of first-shell vertices at $v_{\text{host}}$: under vertex-aligned Reading C, the substrate edge perturbation pattern (Eq.~\eqref{eq:edge_perturbation}) preserves the local $I_h$ symmetry of the first-shell icosahedron at $\mathcal{O}(\epsilon)$, with isotropic radial scaling $(1 - \epsilon/(2\phig))$ on host-to-first-shell edges and zero perturbation on first-shell-to-first-shell edges (Eqs.~\eqref{eq:host_to_first_shell_inner_product}--\eqref{eq:first_shell_to_first_shell_inner_product}). The theorem applies uniformly to the W-bracelet's 6 first-shell vertices.
+
+\begin{corollary}[Substrate-Locality Unification on first-shell substrate objects]\label{cor:substrate_locality_unification}
+Under vertex-aligned Reading C (FI-C-RC-1 + FI-C-RC-2, \S\ref{sec:h4_i4}) with Theorem~\ref{thm:local_ih_preservation} in force, any substrate object built from first-shell vertices of the icosahedron at $v_{\text{host}}$ inherits the substrate-level chirality magnitude $\chi \equiv \epsilon = \phig^{-3}$ from the same identification of \S\ref{sec:chi_epsilon_identification} (Lemma~\ref{lem:chi_epsilon}). In particular:
+\begin{enumerate}\setlength\itemsep{0.2em}
+    \item The K3-base (3-vertex triangular face of the first-shell icosahedron; Finding C-W37, \S\ref{sec:h4_i4}) inherits $\chi$.
+    \item The W-bracelet (6-vertex Petrie hexagon of the first-shell icosahedron; Finding C-W36, \S\ref{sec:w_bracelet_setup}) inherits $\chi$.
+    \item Any other first-shell-vertex substrate object (e.g., qDP/eDP substrate objects at first-shell positions; \S\ref{sec:cross_sector_inheritance}, forthcoming v2.0 sections) inherits $\chi$.
+\end{enumerate}
+The chirality content at substrate level is sector-independent: a single substrate parameter $\chi$, sourced from FI-C-RC-1's primitive 4D direction $\hat{n}$, feeds each sector's chirality matrix element calculation via cage-shell averaging on the sector's stabilizer.
+\end{corollary}
+
+\begin{proof}
+Direct application of Theorem~\ref{thm:local_ih_preservation}. The substrate-level identification $\chi \equiv \epsilon$ from Lemma~\ref{lem:chi_epsilon} is global at substrate level --- it is the magnitude of the $\hat{n}$-induced edge-perturbation parameter --- and does not depend on which first-shell substrate object is being considered. Each sector's chirality matrix element calculation accesses the substrate parameter via its sector-specific cage-shell averaging on its sector-specific stabilizer subgroup of the substrate residual $H_3 = I_h$, but the substrate parameter feeding the calculation is the same $\chi$ across all sectors. $\square$
+\end{proof}
+
+This is Finding C-W40 of the working sketch (\S14, Patch 0425 Session 130)~\cite{abshier_capotauro_chiral_mechanism_sketch}, registered programme-level as the Substrate-Locality Unification structural foundation for the OPEN-SD-CHIR-PRIMITIVE umbrella's cross-sector unification claims.
+
+\subsection{The W-bracelet $\Dsix$ stabilizer and matter-doublet $E$-irrep}\label{sec:w_d6_stabilizer}
+
+The W-bracelet stabilizer is the dihedral group $\Dsix$ of order 12 (SF-2 v1.0 Theorem~4.2~\cite{abshier_sf2}). As an abstract group, $\Dsix \cong \Sthree \times \mathbb{Z}_2$ --- isomorphic to the K3-doublet's $\Dsix$ stabilizer (\S\ref{sec:k3_stabilizer}) but in a different conjugacy class within the substrate residual $H_3 = I_h$: the K3-doublet's $\Dsix$ is one of 10 $D_{3d}$ sub-stabilizers (at the icosahedron's 10 3-fold rotation axes), while the W-bracelet's $\Dsix$ is one of 10 Petrie-polygon sub-stabilizers (at the icosahedron's 10 hexagonal Petrie polygons in dual configuration).
+
+The W-bracelet's 6 hexagonal vertices form a single transitive $\Dsix$-orbit with vertex stabilizer $C_2$ of order 2:
+\begin{equation}\label{eq:w_orbit_stabilizer}
+V_{\text{bracelet}} \;=\; |\Dsix|/|C_2| \;=\; 12/2 \;=\; 6.
+\end{equation}
+The 6-vertex permutation representation of $\Dsix$, with permutation character $\chi^{\text{perm}} = (6, 0, 0, 0, 2, 0)$ on the six $\Dsix$ conjugacy classes $\{e, r^3, \{r, r^5\}, \{r^2, r^4\}, \sigma_v, \sigma_d\}$ (class sizes $\{1, 1, 2, 2, 3, 3\}$), decomposes as:
+\begin{equation}\label{eq:w_perm_decomposition}
+\chi^{\text{perm}}_{\text{bracelet}} \;=\; A_1 \;\oplus\; B_1 \;\oplus\; E_1 \;\oplus\; E_2,
+\end{equation}
+verified by Schur inner-product decomposition against the standard $\Dsix$ character table (dimension check: $1 + 1 + 2 + 2 = 6 \checkmark$)~\cite{abshier_capotauro_chiral_mechanism_sketch}.\footnote{Working sketch \S15.4 (Patch 0427 Session 131) gives the explicit Schur inner-product computation: $a_{A_1} = (6 + 6)/12 = 1$; $a_{A_2} = (6 - 6)/12 = 0$; $a_{B_1} = (6 + 6)/12 = 1$; $a_{B_2} = (6 - 6)/12 = 0$; $a_{E_1} = (12 + 0)/12 = 1$; $a_{E_2} = (12 + 0)/12 = 1$.}
+
+\textbf{V--A current irrep identification.} The W-bracelet's V--A coupling content arises from the bracelet's $120°/240°$ phase bias under $\Dsix$ symmetry (alternating-polarity placement of $3 \times (+eCP)$, $3 \times (-eCP)$, $3 \times (+qCP)$, $3 \times (-qCP)$; SF-2 v1.0 PROP-SF-2-5~\cite{abshier_sf2}). The $\Dsix$ irrep whose $C_6$ generator has eigenvalues $e^{\pm 2\pi i/3}$ (matching the $120°/240°$ phase bias) is $E_2$; both 2D irreps $E_1, E_2$ are present in the permutation decomposition Eq.~\eqref{eq:w_perm_decomposition} with multiplicity 1 each, and the phase-bias argument selects $E_2$ as the carrier of the W-bracelet's V--A chirality content. For the Schur-orthogonality cage-shell factor computation, the load-bearing input is the matter-doublet's dimension $d_\Gamma = 2$, which both $E_1$ and $E_2$ satisfy.
+
+\subsection{The icosahedral-center inversion $\zeta^W$ (Finding C-W43)}\label{sec:w_zeta_inversion}
+
+The W-bracelet's $\Dsix = \Sthree \times \mathbb{Z}_2$ realization on the substrate has a concrete geometric content: the $\mathbb{Z}_2$ generator $\zeta^W = r^3$ (the half-turn central element of dihedral $\Dsix$) is realized in 4D ambient as the \emph{icosahedral-center inversion}.
+
+\begin{definition}[Icosahedral-center inversion $\zeta^W$]\label{def:zeta_w}
+The W-bracelet's $\mathbb{Z}_2$ generator $\zeta^W$ is the affine inversion in $\mathbb{R}^4$ through the W-bracelet centroid $c_W = (\phig/2)\hat{n}$:
+\begin{equation}\label{eq:w_zeta_definition}
+\zeta^W : p \mapsto \phig\hat{n} - p.
+\end{equation}
+$\zeta^W$ has linear part $-I$ (which flips $\hat{n} \to -\hat{n}$, hence is chirality-flipping at substrate level) plus a translation by $\phig\hat{n}$ that returns the W-bracelet centroid to itself. The linear-part $-I$ realization establishes $\zeta^W$ as an inversion in the standard sense.
+\end{definition}
+
+\begin{lemma}[$\zeta^W$ stabilizes the W-bracelet via antipodal-pair structure]\label{lem:zeta_w_antipodal}
+For any first-shell vertex $v$ of the 600-cell satisfying $v \cdot \hat{n} = \phig/2$ and $|v|^2 = 1$, the image $\zeta^W v = \phig\hat{n} - v$ satisfies $(\zeta^W v) \cdot \hat{n} = \phig/2$ (still on the first shell of $v_{\text{host}}$) and $|\zeta^W v|^2 = 1$ (still on the unit 3-sphere $S^3$). The 6 W-bracelet vertices factor as 3 antipodal pairs $\{v_i, \zeta^W v_i\}_{i=1,2,3}$ under $\zeta^W$; the bracelet's $\Dsix = \Sthree \times \mathbb{Z}_2$ acts as $\Sthree$ permuting the 3 antipodal pairs and $\mathbb{Z}_2 = \langle \zeta^W \rangle$ swapping the 2 elements within each pair.
+\end{lemma}
+
+\begin{proof}
+For $v \in S^3$ with $v \cdot \hat{n} = \phig/2$: 
+\[
+(\phig\hat{n} - v) \cdot \hat{n} \;=\; \phig - v \cdot \hat{n} \;=\; \phig - \phig/2 \;=\; \phig/2,
+\]
+and 
+\[
+|\phig\hat{n} - v|^2 \;=\; \phig^2 - 2\phig(v \cdot \hat{n}) + |v|^2 \;=\; \phig^2 - \phig^2 + 1 \;=\; 1.
+\]
+So $\zeta^W v$ remains in the first-shell hyperplane $\{x \in S^3 : x \cdot \hat{n} = \phig/2\}$. Since the first-shell hyperplane intersects $S^3$ in a 2-sphere on which the icosahedron's 12 vertices sit, $\zeta^W$ maps each first-shell vertex to its antipodal partner within the first-shell icosahedron (the diametrically opposite first-shell vertex in the embedding 2-sphere). The W-bracelet's 6 vertices come in 3 such antipodal pairs by Petrie-hexagon symmetry. The $\Dsix = \Sthree \times \mathbb{Z}_2$ realization on 3 pairs $\times$ 2 within-pair follows from the standard dihedral structure decomposition. $\square$
+\end{proof}
+
+The antipodal-pair structure is the concrete geometric content of the W-bracelet's chirality-flipping $\mathbb{Z}_2$ generator. Verification via the 6-vertex permutation representation: under the $\Sthree \times \mathbb{Z}_2 \leftrightarrow \Dsix$ irrep identification ($A_1 \otimes \mathbb{1} = A_1$; $A_1 \otimes \sigma = B_1$; $E \otimes \mathbb{1} = E_2$; $E \otimes \sigma = E_1$), the permutation decomposition Eq.~\eqref{eq:w_perm_decomposition} reads $A_1 \oplus B_1 \oplus E_2 \oplus E_1 = (A_1 \otimes \mathbb{1}) \oplus (A_1 \otimes \sigma) \oplus (E \otimes \mathbb{1}) \oplus (E \otimes \sigma)$, consistent with the Lemma~\ref{lem:zeta_w_antipodal} factorization.
+
+\subsection{The W-bracelet doublet basis and $\sigma_1^W \zeta^W$-EVEN pairing}\label{sec:w_doublet_basis}
+
+The W-bracelet's matter-doublet basis is constructed by direct analog of the K3-doublet's pairing convention (\S\ref{sec:k3_tbm_basis}, Finding C-W12)~\cite{abshier_capotauro_subclaim_c_sketch}. The $\Sthree$-side amplitude factors live in the standard 2D $E$-irrep on the 3 antipodal pairs:
+\begin{equation}\label{eq:w_amplitude_basis}
+\psi_-^{(1)} \;=\; \frac{1}{\sqrt{6}}(2, -1, -1), \qquad \psi_-^{(2)} \;=\; \frac{1}{\sqrt{2}}(0, -1, 1),
+\end{equation}
+where the 3 components correspond to the 3 antipodal pairs of bracelet vertices. $\psi_-^{(1)}$ is $\sigma_1^W$-EVEN under the $\Sthree$ reflection $\sigma_1^W$ that fixes pair~1 and swaps pairs~2,~3 (components~2 and~3 equal); $\psi_-^{(2)}$ is $\sigma_1^W$-ODD (components~2 and~3 negate). This is identical algebraic structure to the K3-doublet's amplitude factors (\S\ref{sec:k3_amplitude_factor}); the physical content differs only in that $\Sthree$ acts on 3 antipodal pairs (W-bracelet) rather than 3 K3 vertices.
+
+The $\mathbb{Z}_2$-side perpendicular wavefunctions are the $\zeta^W$-EVEN/ODD combinations on the within-pair structure:
+\begin{equation}\label{eq:w_perpendicular_basis}
+\chi_+^W \;=\; \frac{1}{\sqrt{2}}(|v\rangle + |\zeta^W v\rangle), \qquad \chi_-^W \;=\; \frac{1}{\sqrt{2}}(|v\rangle - |\zeta^W v\rangle),
+\end{equation}
+with $\chi_+^W$ $\zeta^W$-EVEN (symmetric within-pair combination) and $\chi_-^W$ $\zeta^W$-ODD (antisymmetric). Parallel to K3's $\chi_\pm$ (\S\ref{sec:perpendicular_wavefunction}), the $\chi_\pm^W$ are EVEN/ODD components of the substrate orientation field at the W-bracelet location under the chirality-flipping operation $\zeta^W$. The structural distinction from K3 is concrete: K3's antipodal partners lie \emph{outside} the K3-base (on the antipodal face of the icosahedron), so K3's $\chi_\pm$ are 1-dim abstract degrees of freedom; W-bracelet's antipodal partners lie \emph{within} the bracelet (Lemma~\ref{lem:zeta_w_antipodal}), so $\chi_\pm^W$ are concrete linear combinations of bracelet vertex states. The abstract algebraic structure is identical~\cite{abshier_capotauro_chiral_mechanism_sketch}.\footnote{Working sketch \S17.6 (Patch 0429 Session 131) develops the concrete-vs-abstract realization distinction.}
+
+Applying the $\sigma_1^W \zeta^W$-EVEN pairing convention (the K3-analog Finding C-W12 pairing) to the W-bracelet:
+\begin{equation}\label{eq:w_doublet_basis}
+\PsiminusOne^W \;=\; \psi_-^{(1)} \otimes \chi_+^W \;\in\; E_2(\Dsix), \qquad
+\PsiminusTwo^W \;=\; \psi_-^{(2)} \otimes \chi_-^W \;\in\; E_1(\Dsix).
+\end{equation}
+Both basis states satisfy $\sigma_1^W \zeta^W$-EVEN: EVEN $\times$ EVEN $=$ EVEN for $\Psi_-^{(1)}$; ODD $\times$ ODD $=$ EVEN for $\Psi_-^{(2)}$. The W-bracelet doublet basis spans 1-dim in $E_2$ and 1-dim in $E_1$, exactly parallel to the K3-doublet's $E_2 \oplus E_1$ structure --- in neither sector is the doublet a pure $\Dsix$ irrep, but rather a specific 2D projection of $E_2 \oplus E_1$ under the EVEN-pairing convention.
+
+\subsection{The W-bracelet chirality matrix element $|M^W| = \chi/6$}\label{sec:w_matrix_element}
+
+The chirality operator at the W-bracelet, sourced from the substrate primitive direction $\hat{n}$, transforms under $\Dsix = \Sthree \times \mathbb{Z}_2$ as:
+\[
+\Cchi^W \;\in\; B_2(\Dsix) \;=\; A_2(\Sthree) \otimes \sigma(\mathbb{Z}_2),
+\]
+with $A_2$ on the $\Sthree$ side (the sign-of-permutation 1D irrep) and $\sigma$ on the $\mathbb{Z}_2$ side ($\zeta^W$-ODD, since $\zeta^W$ flips $\hat{n}$ and hence chirality). This is the same $B_2(\Dsix)$ assignment as the K3-doublet's chirality operator (\S\ref{sec:chirality_observable}), confirmed via Wigner-Eckart bookkeeping:
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{$\Sthree$ side.} $E \otimes A_2 \otimes E = E \otimes E = A_1 \oplus A_2 \oplus E$ contains $A_1(\Sthree) \checkmark$.
+    \item \textbf{$\mathbb{Z}_2$ side.} $\mathbb{1} \otimes \sigma \otimes \sigma = \mathbb{1}$ contains the trivial irrep $\checkmark$.
+    \item \textbf{Composite.} $A_1(\Sthree) \otimes \mathbb{1}(\mathbb{Z}_2) = A_1(\Dsix)$: matrix element $\langle E_2 | B_2 | E_1 \rangle$ is non-vanishing.
+\end{itemize}
+The $\sigma_1^W \zeta^W$-EVEN pairing convention of \S\ref{sec:w_doublet_basis} is \emph{load-bearing} for the non-vanishing: without the opposite-parity within-pair pairing (e.g., if both doublet states were in pure $E_2$), the $\mathbb{Z}_2$-side calculation would give $\mathbb{1} \otimes \sigma \otimes \mathbb{1} = \sigma$ (not trivial), and the matrix element would vanish.
+
+The matrix element factorizes across the $\Sthree$ and $\mathbb{Z}_2$ tensor factors:
+\begin{equation}\label{eq:w_matrix_element_factorization}
+|M^W| \;=\; \bigl|\langle \PsiminusOne^W \,|\, \Cchi^W \,|\, \PsiminusTwo^W \rangle\bigr| \;=\; \underbrace{\bigl|\langle \psi_-^{(1)} \,|\, T_{A_2}(b^W) \,|\, \psi_-^{(2)} \rangle\bigr|}_{|M_{\text{amp}}^W|} \cdot \underbrace{\bigl|\langle \chi_+^W \,|\, T_\perp \,|\, \chi_-^W \rangle\bigr|}_{|M_\perp^W|}.
+\end{equation}
+
+\textbf{Amplitude factor.} The $A_2$-irrep generator $T_{A_2}(b^W) = i b^W S^W$ on the 3-antipodal-pair $E(\Sthree)$ basis has the same spectral structure as K3's $T_{A_2}(b)$ (Lemma~\ref{lem:spectral_S}): eigenvalues $\{0, \pm b^W \sqrt{3}\}$ on the $E$-doublet by abstract $\Sthree$ representation theory. Applying the chirality-eigenvalue matching principle (FI-C-7, Finding C-W23~\cite{abshier_capotauro_subclaim_c_sketch}) --- the same principle that fixes $b = \chi/\sqrt{3}$ on the K3-doublet via identification of $T_{A_2}$ eigenvalues with substrate-level chirality eigenvalues $\pm\chi$ of $\Cchi$ --- gives $b^W = \chi/\sqrt{3}$, so
+\begin{equation}\label{eq:w_amplitude_factor}
+|M_{\text{amp}}^W| \;=\; b^W \sqrt{3} \;=\; \chi.
+\end{equation}
+
+\textbf{Cage-shell factor.} The cage-shell averaging on the W-bracelet is via the same icosahedral cage that hosts the K3-doublet --- per Corollary~\ref{cor:substrate_locality_unification}, both K3-doublet and W-bracelet sit in the first-shell icosahedron at $v_{\text{host}}$. The cage-shell factor is therefore $|M_\perp^W| = d_\Gamma / V_{\text{cage}} = 2/12 = 1/6$ where $d_\Gamma = 2$ is the dimension of the W-bracelet matter-doublet's $E(\Sthree)$ irrep and $V_{\text{cage}} = 12$ is the icosahedral cage vertex count shared with the K3-doublet~\cite{abshier_capotauro_chiral_mechanism_sketch}:\footnote{The cage-shell factor's mechanism is cage-shell averaging on the shared 12-vertex icosahedron (working sketch \S17.10 refinement, Patch 0429), not Schur orthogonality on the bracelet's intrinsic 6-vertex $\Dsix$ orbit. Numerically these agree because $|\Dsix| = V_{\text{cage}} = 12$ (the K3 paper's $V_{\text{cage}} = |\Dsix|$ ``non-coincidence'', \S\ref{sec:cage_shell_factor}), but the cage-shell interpretation is the structurally correct one consistent with Substrate-Locality Unification (both sectors share the icosahedral cage).}
+\begin{equation}\label{eq:w_cage_shell_factor}
+|M_\perp^W| \;=\; \frac{d_\Gamma}{V_{\text{cage}}} \;=\; \frac{2}{12} \;=\; \frac{1}{6}.
+\end{equation}
+
+\textbf{Composite.} Substituting Eqs.~\eqref{eq:w_amplitude_factor}--\eqref{eq:w_cage_shell_factor} into Eq.~\eqref{eq:w_matrix_element_factorization}:
+\begin{equation}\label{eq:w_composite_result}
+|M^W| \;=\; \chi \cdot \frac{1}{6} \;=\; \frac{\chi}{6} \;=\; \frac{\phig^{-3}}{6} \;\approx\; 0.0394.
+\end{equation}
+
+The W-bracelet's chirality matrix element is \emph{identical} to the K3-doublet's $|M^{\Kthree}| = \chi/6$ of Theorem~\ref{thm:composite_cap_we}. The cross-sector unification is achieved at full Layer 3 numerical-content level.
+
+\subsection{Cross-Sector Substrate Chirality Unification Theorem (THEO-SD-CHIR-1)}\label{sec:theo_sd_chir_1_statement}
+
+The four-step proof chain assembled in \S\S\ref{sec:w_substrate_locality_unification}--\ref{sec:w_matrix_element} establishes the K3-doublet $\leftrightarrow$ W-bracelet cross-sector unification theorem.
+
+\begin{theorem}[Cross-Sector Substrate Chirality Unification (THEO-SD-CHIR-1)]\label{thm:theo_sd_chir_1}
+Under vertex-aligned Reading C (FI-C-RC-1 + FI-C-RC-2, \S\ref{sec:h4_i4}) with the local-$I_h$-preservation theorem (Theorem~\ref{thm:local_ih_preservation}) and the substrate-level identification $\chi \equiv \epsilon = \phig^{-3}$ (Lemma~\ref{lem:chi_epsilon}) in force, the composite chirality matrix elements on the K3-doublet (mass-mixing sector) and the W-bracelet (electroweak V--A sector) are identical at full Layer 3 rigor:
+\begin{equation}\label{eq:theo_sd_chir_1}
+|M^{\Kthree}| \;=\; |M^W| \;=\; \frac{\chi}{6} \;=\; \frac{\phig^{-3}}{6} \;\approx\; 0.0394.
+\end{equation}
+The unification is mediated by the four-step proof chain: (i) local-$I_h$-preservation at $v_{\text{host}}$ (Theorem~\ref{thm:local_ih_preservation}); (ii) Substrate-Locality Unification on first-shell substrate objects (Corollary~\ref{cor:substrate_locality_unification}); (iii) cage-shell factor identity $|M_\perp| = 2/12 = 1/6$ on the icosahedral cage shared by both sectors (Eq.~\eqref{eq:w_cage_shell_factor}; identical to Lemma~\ref{lem:cage_shell}); (iv) pairing-convention identification via the icosahedral-center inversion $\zeta^W$ producing the $\sigma_1^W \zeta^W$-EVEN matter-doublet basis (Definition~\ref{def:zeta_w}; Lemma~\ref{lem:zeta_w_antipodal}; Eq.~\eqref{eq:w_doublet_basis}). The single substrate parameter $\chi$ feeds both sectors via two cage-shell averaging operations on the same 12-vertex icosahedral cage with the same effective 2D matter-doublet irrep dimension despite distinct sector-specific stabilizers ($D_{3d}$ at the K3-doublet's 3-fold axis; Petrie-polygon $\Dsix$ at the W-bracelet's Petrie hexagon).
+\end{theorem}
+
+\begin{proof}
+Step (i): Theorem~\ref{thm:local_ih_preservation} (\S\ref{sec:local_ih_preservation_theorem}). Step (ii): Corollary~\ref{cor:substrate_locality_unification} (\S\ref{sec:w_substrate_locality_unification}). Step (iii): The cage-shell factor on the shared icosahedral cage is $d_\Gamma/V_{\text{cage}} = 2/12 = 1/6$ for both sectors --- for the K3-doublet via Lemma~\ref{lem:cage_shell} (\S\ref{sec:cage_shell_factor}); for the W-bracelet via Eq.~\eqref{eq:w_cage_shell_factor} (\S\ref{sec:w_matrix_element}). Step (iv): The pairing-convention identification --- Definition~\ref{def:zeta_w} for $\zeta^W$ (\S\ref{sec:w_zeta_inversion}), Lemma~\ref{lem:zeta_w_antipodal} for the antipodal-pair stabilizer structure, Eq.~\eqref{eq:w_doublet_basis} for the W-bracelet matter-doublet basis (\S\ref{sec:w_doublet_basis}) --- produces the $\sigma_1^W \zeta^W$-EVEN doublet states $\PsiminusOne^W, \PsiminusTwo^W \in E_2 \oplus E_1$ on which the chirality operator $\Cchi^W \in B_2(\Dsix)$ has non-vanishing matrix element via Wigner-Eckart. The matrix element factorizes per Eq.~\eqref{eq:w_matrix_element_factorization} into amplitude factor $|M_{\text{amp}}^W| = \chi$ (Eq.~\eqref{eq:w_amplitude_factor}) and cage-shell factor $|M_\perp^W| = 1/6$ (Eq.~\eqref{eq:w_cage_shell_factor}), giving $|M^W| = \chi/6$ (Eq.~\eqref{eq:w_composite_result}). Combining with Theorem~\ref{thm:composite_cap_we} ($|M^{\Kthree}| = \chi/6$) gives Eq.~\eqref{eq:theo_sd_chir_1}. $\square$
+\end{proof}
+
+\begin{remark}[Programme-level registration of THEO-SD-CHIR-1]\label{rem:theo_sd_chir_1_registration}
+THEO-SD-CHIR-1 was registered programme-level as theorem \#63 in the CPP theorem-registry (Patch 0434 Session 132) under the four-condition test pattern established by THEO-CAP-1 (Patch 0397): rigorous proof chain, numerical verification, empirical prediction validated, honest scope-limitation framing~\cite{abshier_theorem_registry}. The theorem-registry entry inherits THEO-CAP-1's foundational input stack FI-C-1 through FI-C-10 plus the two Reading C foundational inputs FI-C-RC-1 + FI-C-RC-2; AXIM-1, AXIM-2, AXIM-4, AXIM-7 are most load-bearing per Picture~B substrate-orientation-field framework. Honest scope-limitation: a Q5-PAIRING register-then-resolve pattern (Patches 0428$\to$0429 in the working sketch~\cite{abshier_capotauro_chiral_mechanism_sketch}, sketch \S16$\to$\S17) preserved the analytical state of the pairing-convention question through Layer 2 conservative composite closure before Layer 3 resolution via the icosahedral-center inversion identification of \S\ref{sec:w_zeta_inversion}. Open verification at Layer 4: SF-2 V--A coupling continuum-EFT closure (OPEN-FP-SF-2-CHIR registered in \texttt{Research\_Frontier.md}~\cite{abshier_research_frontier}) delivers the 75\%-finite-mass to 100\%-massless-helicity kinematic projection from the substrate-physics handle $\chi/6$ of Eq.~\eqref{eq:theo_sd_chir_1}; the v2.0 paper presents the substrate handle, not the Layer 4 kinematic projection.
+\end{remark}
+
+\subsection{Cross-sector implications: three-way unification anticipated}\label{sec:cross_sector_w_implications}
+
+THEO-SD-CHIR-1 establishes that the K3-doublet and W-bracelet sectors share substrate chirality content at the matrix-element-content level: a single substrate parameter $\chi = \phig^{-3}$ feeds both manifestations through structurally identical algebraic content (amplitude $\chi$ + cage-shell $1/6$) on isomorphic-but-distinct $\Dsix$ sub-stabilizers of the substrate residual $H_3 = I_h$. The OPEN-SD-CHIR-PRIMITIVE umbrella~\cite{abshier_research_frontier} registers this as the first of five anticipated cross-sector unifications:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{(i) Mass-mixing chirality.} Capotauro K3-doublet sector; $|M^{\Kthree}| = \chi/6$ via Theorem~\ref{thm:composite_cap_we}. Unified with (ii) by THEO-SD-CHIR-1.
+    \item \textbf{(ii) Electroweak V--A.} SF-2 W-bracelet sector; $|M^W| = \chi/6$ via Theorem~\ref{thm:theo_sd_chir_1}. Unified with (i) by THEO-SD-CHIR-1.
+    \item \textbf{(iii) Electromagnetic handedness.} SM-2 qDP/eDP polarization patterns. Cross-sector closure registered programme-level as THEO-SD-CHIR-2 (theorem \#64, Patch 0440 Session 133)~\cite{abshier_theorem_registry}; flagship-paper-section presentation in the forthcoming \S6 v2.0 qDP/eDP sector. Predicted $|M^{qDP}| = \chi/6$ identical to (i) and (ii) at full Layer 3 rigor; three-way unification achieved at substrate level.
+    \item \textbf{(iv) Thermodynamic causal arrow.} Future-window work under the umbrella; sector-specific $\zeta$ generator and antipodal-pair structure to be identified.
+    \item \textbf{(v) Cosmological-vacuum asymmetry.} Future-window work under the umbrella; sector-specific $\zeta$ generator and antipodal-pair structure to be identified.
+\end{itemize}
+
+The three-step closure pattern --- substrate-locality at Layer 2 (Corollary~\ref{cor:substrate_locality_unification}); sector-specific cage-shell factor at Layer 3 via cage-shell averaging on the shared icosahedral cage; sector-specific pairing-convention identification at Layer 3 via analog perpendicular-wavefunction structure (Definition~\ref{def:zeta_w} pattern) --- is structurally complete across the first three manifestations (mass-mixing K3 / electroweak V--A W / electromagnetic qDP-eDP) with identical numerical content $\chi/6 \approx 0.0394$ at substrate level. The umbrella's \emph{unification-at-magnitude-level claim} (a single number $\chi/6$ across structurally distinct sector mechanisms with distinct $\zeta$ generators) is the substantive cross-sector unification result that v2.0 presents at flagship-paper rigor; the v1.0 paper's K3-only $|M| = \chi/6$ prediction is a sub-result within this larger claim.
+
+The primary empirical reading of $|M^W| = \chi/6$ at the V--A current level (Eq.~\eqref{eq:theo_sd_chir_1}) feeds the SF-2 V--A coupling continuum-EFT closure (OPEN-FP-SF-2-CHIR; the substrate handle $\chi/6$ being the substrate-physics input to SF-2's Layer 4 kinematic projection from finite-mass to massless-helicity limit) and constitutes a substrate-level prediction in its own right: the V--A current's intrinsic chirality magnitude at substrate level is the same $\chi/6 \approx 0.0394$ that the parity-violation asymmetry $\DeltapLR$ realizes on the K3-doublet sector (\S\ref{sec:dplr}). The v2.0 master predictions table (\S\ref{sec:dplr}, forthcoming rewrite) consolidates the cross-sector substrate-level predictions across all three manifestations into a unified prediction set.
+
 \section{Primary Empirical Prediction: $\DeltapLR = \chi/6$}\label{sec:dplr}
 
 This section establishes the paper's single primary empirical prediction at v1.0. The parity-violation asymmetry $\DeltapLR$ on the $\Kthree$-doublet of charged-lepton substrate states is the direct empirical reading of the Wigner-Eckart matrix element $|M|$ derived in Theorem~\ref{thm:composite_cap_we}. The predicted value $\chi/6 \approx 0.0394$ matches the empirical anchor $\sim 0.04$ within $2\%$. The match is a structural-numerical consistency check between the substrate-physics derivation and the leptogenesis back-derived value, and the section is explicit about what such a check does and does not establish.
