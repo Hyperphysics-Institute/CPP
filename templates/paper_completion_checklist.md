@@ -336,6 +336,108 @@ whose trigger is not met.
   content; parallels C10's classification of programme_orientation.md
   updates.)**
 
+- [ ] **C14.** **[7B]** `methods_catalogue/methods_catalogue.md` —
+  **MANDATORY at every paper v1.0 SHIP.** Audit the paper's full
+  Tier-4 reasoning corpus (`documentation_suite/reasoning-<paper>.md`
+  + relevant sections of working sketches at `sketches/*.md`) for any
+  new or adapted **physics derivation** methods that warrant catalog
+  entry per the three-category convention (NEW METHOD / ADAPTED
+  METHOD / STRAIGHT REUSE) and threshold rule (reusable across at
+  least one other physics-derivation context). The session-close
+  audit (§15 Step E methods_catalogue audit line) catches methods at
+  per-session granularity; this v1.0 SHIP audit catches methods
+  missed at session level and validates that the paper's
+  full method usage is reflected in the catalog.
+
+  **Workflow (catalog-first-then-cite, codified Patch 0463):**
+
+  1. **Read the canonical record.** Read the full `reasoning-<paper>.md`
+     and relevant `sketches/*.md` sections covering the closure
+     trajectory that produced the paper. The verbatim physics
+     reasoning is the source for identifying methods — *not* the
+     polished `.tex` paper, which preserves the result of method
+     application but may compress away the moment of method choice.
+
+  2. **Identify methods used.** For each substantive reasoning move
+     in the Tier-4 entries, classify the method: NEW METHOD (no
+     existing catalog entry), ADAPTED METHOD (existing entry
+     customized with sector-specific content), or STRAIGHT REUSE
+     (existing entry applied as-is). Apply the threshold rule before
+     classifying as NEW or ADAPTED — single-application techniques
+     do not warrant catalog entries; only methods reusable across
+     at least one other physics-derivation context do.
+
+  3. **Add catalog entries FIRST.** Before touching the `.tex` paper,
+     append any new NEW METHOD or ADAPTED METHOD entries to
+     `methods_catalogue.md` per the catalog's format (identifier +
+     name + description + canonical citation + example
+     applications). Update the status line at top + footer totals.
+     This step closes any gap left by the per-session audit at
+     §15 Step E.
+
+  4. **Then add inline citations.** Add `[METH-L{layer}-NNN
+     method-name]` inline citations to the `.tex` paper at each
+     point where the method is invoked, per the inline-citation
+     convention specified in `methods_catalogue/README-methods_catalogue.md`.
+     Example: "By Schur orthogonality [METH-L1-001 Schur
+     orthogonality for cage-shell averaging], the cage-shell factor
+     equals $d_E / |I_h| = 2/12 = 1/6$." Every cited method must
+     resolve to a registered catalog entry; if a citation is needed
+     for a method not yet in the catalog, register the catalog entry
+     first per step 3, then add the citation per this step.
+
+  5. **Audit-trail check.** Sweep the `.tex` paper for any remaining
+     uncited substantive method invocations. The teaching-tool
+     value of the inline-citation convention requires that the
+     paper's physics-derivation moves be traceable to named methods
+     at the catalog level; ungrouped or implicit method invocations
+     defeat the convention's discoverability purpose.
+
+  **Logical ordering note.** C14 should execute BEFORE C13 (anthology
+  chapter) because the anthology chapter's drafting may benefit from
+  catalog citations as discoverability anchors for the chapter's
+  technical asides — though anthology chapters at Rovelli/SciAm
+  register typically minimize technical machinery, so catalog
+  citations there are optional. C14 must also execute BEFORE F
+  (OSF registration) and G (Repository commit) so that the SHIPPED
+  paper version on origin/main has the inline citations integrated.
+
+  **Scope reminder (Patch 0461 scope clarification).** This audit is
+  for **physics derivation methods only**. Protocol patterns,
+  workflow heuristics, handover-discipline observations, and
+  operating-system disciplines are OUT OF SCOPE for
+  `methods_catalogue` — those belong in `templates/operating_system.md`
+  (protocols/workflow patterns), `relationship_protocol.md` (reviewer
+  interaction), `founders_voice/` (voice/methodological observations),
+  `opus_voice/` (meta-conversation), or `programmatic_decisions/`
+  (programmatic decisions). See `methods_catalogue/README-methods_catalogue.md`
+  "Scope: physics derivation methods only" section for the explicit
+  scope rule + scope test.
+
+  **Failure mode this discipline prevents.** Paper publishes with
+  uncited method invocations; future readers (human or AI) cannot
+  trace the paper's substantive reasoning moves to named techniques
+  in the catalog; the catalog grows incomplete because methods used
+  in published papers don't appear in it; the catalog's teaching-
+  tool value erodes because new readers can't use it to navigate
+  published work. The session-close audit (§15 Step E) catches some
+  of this risk in real-time; the v1.0 SHIP audit catches the rest
+  before the paper ships.
+
+  **Backstop.** Session-close handover Step H audit table (per
+  `operating_system.md` §15) explicitly verifies C14 at v1.0 SHIP
+  before the session-close handover is committed; missing
+  methods_catalogue audit blocks session-close completion when
+  the session contains a v1.0 SHIP. Procedure:
+  `methods_catalogue/README-methods_catalogue.md` (format
+  conventions + threshold rule + three-category convention +
+  inline-citation convention).
+
+  **(Phase 7B because the methods_catalogue is programme-level
+  registry infrastructure; the audit ensures both catalog
+  completeness and paper-level inline citation integration in a
+  single coordinated step.)**
+
 ---
 
 ## D. Navigation updates — **[Phase 7B for D1; Phase 7A for D2, D3]**
