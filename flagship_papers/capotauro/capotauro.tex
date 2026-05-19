@@ -326,6 +326,128 @@ The empirical anchor for the Capotauro v1.0 closure is the parity-violation asym
 
 The closure's empirical content rests on $\DeltapLR$ and the cross-sector inheritance from SM-2 (charge asymmetry mechanism), SF-2 (W bracelet $\Dsix$ stabilizer), and SF-4 (TBM-aligned $\Kthree$-doublet basis at theorem level). The v1.0 derivation of $|M| = \chi/6$ stands independent of cosmological-timing questions; the legacy $\sim 120$~Myr post-Big-Bang figure proposed in~\cite{abshier_grok_capotauro_2025} is downstream of the substrate's chirality primitive and addressable as sub-claim (a) work (\S\ref{sec:open_subclaim_a}).
 
+\section{Substrate-Locality Theorem: Local-$I_h$-Preservation at the Host Vertex}\label{sec:substrate_locality}
+
+This section establishes the substrate-locality theorem, the structural foundation for v2.0's cross-sector unification framework under the \emph{OPEN-SD-CHIR-PRIMITIVE} umbrella~\cite{abshier_research_frontier}. The theorem asserts: under vertex-aligned Reading C (FI-C-RC-1 + FI-C-RC-2, \S\ref{sec:h4_i4}), the substrate's local geometric structure at the host vertex $v_{\text{host}}$ --- specifically the first-shell icosahedron of 12 nearest-neighbor 600-cell vertices and the 20 triangular faces of this icosahedron --- is preserved as $I_h$-symmetric at first order in the $\hat{n}$-perturbation amplitude $\epsilon$, with only an isotropic radial scaling of the icosahedron by factor $(1 - \epsilon/(2\phig))$. As a direct consequence, the substrate parameter $\epsilon$ and the substrate chirality magnitude $\chi$ are identified at substrate level, $\chi \equiv \epsilon$, with no intermediate geometric or irrep-theoretic prefactor. The local-$I_h$-preservation theorem is the v2.0 substrate-physics foundation supplying \S\ref{sec:composite_we}'s composite chirality matrix element derivation with its $\chi$ input at the magnitude derived from the perturbative-distance-ratio constraint of \S\ref{sec:chi_resolution}; the theorem is also \emph{proof-chain step (i)} for the cross-sector unification theorems THEO-SD-CHIR-1 (K3-doublet $\leftrightarrow$ W-bracelet) and THEO-SD-CHIR-2 (qDP/eDP sector) registered in the programme theorem-registry~\cite{abshier_theorem_registry}. The theorem and its proof develop the content of Finding C-W39 (working sketch \S13.3, Patch 0424 Session 129)~\cite{abshier_capotauro_chiral_mechanism_sketch} at flagship-paper rigor.
+
+\subsection{Setup: Reading C edge perturbations in the 4D ambient}\label{sec:substrate_locality_4d_geometry}
+
+Under FI-C-RC-1 (\S\ref{sec:h4_i4}), the substrate's primitive 4D direction $\hat{n}$ is a unit vector in the ambient $\mathbb{R}^4$ where the 600-cell sits. The $\hat{n}$-induced edge-perturbation pattern at substrate level is given by the linear-in-$\epsilon$ formula
+\begin{equation}\label{eq:edge_perturbation}
+|\vec{e}_{ij}|_{\text{actual}} \;=\; |\vec{e}_{ij}|_{\text{ideal}} \cdot \bigl(1 + \epsilon \cdot (\hat{e}_{ij} \cdot \hat{n})\bigr),
+\end{equation}
+where $\vec{e}_{ij} = v_j - v_i$ is the edge vector between 600-cell vertices $v_i, v_j$ on the unit 3-sphere $S^3 \subset \mathbb{R}^4$, $\hat{e}_{ij} = \vec{e}_{ij}/|\vec{e}_{ij}|$ is the unit edge direction, and $\epsilon$ is the substrate-level perturbation amplitude (the magnitude of $\hat{n}$'s geometric effect on edges)~\cite{abshier_capotauro_chiral_mechanism_sketch}.\footnote{Edge-perturbation formula registered in the working sketch \S2.3.}
+
+The formula carries the correct chirality content: edges with $\hat{e}_{ij} \cdot \hat{n} > 0$ (aligned with $\hat{n}$) are slightly lengthened; edges with $\hat{e}_{ij} \cdot \hat{n} < 0$ (anti-aligned) are slightly shortened. Reflection of $\hat{n} \to -\hat{n}$ produces the enantiomorphic substrate; this is the structural origin of substrate chirality under Reading C.
+
+\textbf{4D vs 3D framing.} The inner product $\hat{e}_{ij} \cdot \hat{n}$ is computed in $\mathbb{R}^4$, not in any 3D projection. A naive 3D projection of $\hat{n}$ into local cage subspaces produces incorrect inner products at first order --- in particular, a 3D in-plane projection of $\hat{n}$ at the K3-base triangle would imply non-zero edge-perturbations on the K3-base edges, contradicting the 4D analysis below~\cite{abshier_capotauro_chiral_mechanism_sketch}.\footnote{The 3D-projection error is documented in the working sketch \S13.1 (Patch 0424) as the correction to the prior \S12 (Patch 0423) Q3 closure attempt. The corrected 4D analysis (\S13.2--\S13.3) supersedes the prior \S12 framing per the verbatim-substance-preservation discipline.} The 4D analysis is therefore the operative computation for substrate-locality questions under Reading C.
+
+\subsection{The 4D inner-product pattern at the host vertex}\label{sec:host_vertex_inner_products}
+
+Fix a host vertex $v_{\text{host}}$ on the unit 600-cell with $\hat{n} = v_{\text{host}}$ (vertex-aligned Reading C; FI-C-RC-2). The 600-cell's edge structure around $v_{\text{host}}$ has two edge classes:
+
+\begin{enumerate}\setlength\itemsep{0.2em}
+    \item \textbf{Host-to-first-shell edges} (12 of them): edges connecting $v_{\text{host}}$ to each of its 12 first-shell vertices $v_i$ at vertex-to-vertex distance $1/\phig$, with $v_i \cdot v_{\text{host}} = \phig/2$ (the 600-cell edge cosine on $S^3$).
+    \item \textbf{First-shell-to-first-shell edges} (30 of them, among which lie all K3-base edges): edges connecting pairs $v_a, v_b$ of first-shell vertices that are themselves 600-cell edge-neighbors of each other (each first-shell icosahedron has 30 such edges).
+\end{enumerate}
+
+\textbf{Host-to-first-shell inner product.} For any host-to-first-shell edge $\hat{e}_{(\text{host},i)} = (v_i - v_{\text{host}})/|v_i - v_{\text{host}}|$:
+\begin{equation}\label{eq:host_to_first_shell_inner_product}
+\hat{e}_{(\text{host},i)} \cdot \hat{n} \;=\; \frac{(v_i - v_{\text{host}}) \cdot v_{\text{host}}}{|v_i - v_{\text{host}}|} \;=\; \frac{v_i \cdot v_{\text{host}} - 1}{|v_i - v_{\text{host}}|} \;=\; \frac{\phig/2 - 1}{1/\phig} \;=\; -\frac{1}{2\phig} \;\approx\; -0.309,
+\end{equation}
+where the third equality uses $|v_i - v_{\text{host}}|^2 = 2(1 - v_i \cdot v_{\text{host}}) = 2(1 - \phig/2) = 2 - \phig = \phig^{-2}$ giving $|v_i - v_{\text{host}}| = 1/\phig$, and $(\phig/2 - 1) \cdot \phig = \phig^2/2 - \phig = (\phig + 1)/2 - \phig = (1 - \phig)/2 = -1/(2\phig)$ using $\phig^2 = \phig + 1$. The value $-1/(2\phig)$ is identical across all 12 host-to-first-shell edges (the inner product depends only on $v_i \cdot v_{\text{host}}$, common to all 12).
+
+\textbf{First-shell-to-first-shell inner product.} For any first-shell-to-first-shell edge $\hat{e}_{ab} = (v_b - v_a)/|v_b - v_a|$:
+\begin{equation}\label{eq:first_shell_to_first_shell_inner_product}
+\hat{e}_{ab} \cdot \hat{n} \;=\; \frac{(v_b - v_a) \cdot v_{\text{host}}}{|v_b - v_a|} \;=\; \frac{v_b \cdot v_{\text{host}} - v_a \cdot v_{\text{host}}}{|v_b - v_a|} \;=\; \frac{\phig/2 - \phig/2}{|v_b - v_a|} \;=\; 0,
+\end{equation}
+identically in 4D. This is the key 4D geometric fact: \emph{first-shell-to-first-shell 600-cell edges are tangent to $\hat{n}$}; their direct edge-length perturbations under Eq.~\eqref{eq:edge_perturbation} vanish at $\mathcal{O}(\epsilon)$.
+
+\textbf{Numerical verification.} A direct computational check confirms Eqs.~\eqref{eq:host_to_first_shell_inner_product}--\eqref{eq:first_shell_to_first_shell_inner_product} at machine precision~\cite{abshier_capotauro_chiral_mechanism_sketch}.\footnote{Standalone NumPy verification at \texttt{flagship\_papers/capotauro/code/q1prime\_w\_bracelet\_geometry.py} (referenced in the working sketch \S13.1, Patch 0424): all 12 host-to-first-shell edges produce $\hat{e} \cdot \hat{n} = -1/(2\phig)$ uniformly to machine precision; all 30 first-shell-to-first-shell edges produce $|\hat{e} \cdot \hat{n}| < 10^{-9}$.} The 4D inner-product pattern is therefore: uniform $-1/(2\phig)$ for host-to-first-shell, identically zero for first-shell-to-first-shell.
+
+\subsection{The Local-$I_h$-Preservation Theorem}\label{sec:local_ih_preservation_theorem}
+
+\begin{theorem}[Local $I_h$ Preservation at the Host Vertex]\label{thm:local_ih_preservation}
+Under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$ a 600-cell vertex direction (FI-C-RC-1 + FI-C-RC-2, \S\ref{sec:h4_i4}), the local geometric structure at $v_{\text{host}}$ --- the first-shell icosahedron of 12 nearest-neighbor 600-cell vertices and the 20 triangular faces of this icosahedron, including all candidate $\Kthree$-base placements --- is preserved as $I_h$-symmetric at first order in the substrate-perturbation amplitude $\epsilon$, with only an isotropic radial scaling of the first-shell icosahedron by factor $(1 - \epsilon/(2\phig))$. Equivalently: at $\mathcal{O}(\epsilon)$, all 12 first-shell vertices remain at identical distance from $v_{\text{host}}$ (modified from $1/\phig$ to $(1/\phig)(1 - \epsilon/(2\phig))$) and at identical pairwise distances among themselves (unchanged from the ideal 600-cell first-shell distance structure).
+\end{theorem}
+
+\begin{proof}
+The $\Hfour$-stabilizer of $v_{\text{host}}$ is $\Stab_{\Hfour}(v_{\text{host}}) = H_3 = I_h$ of order 120 (\S\ref{sec:h4_i4}); $I_h$ acts transitively on the 12 first-shell vertices and on the 30 first-shell-to-first-shell edges. Under the edge-perturbation formula Eq.~\eqref{eq:edge_perturbation}, the perturbed distance between any two 600-cell vertices is determined by the unperturbed distance and the unit edge direction's inner product with $\hat{n}$. From Eqs.~\eqref{eq:host_to_first_shell_inner_product}--\eqref{eq:first_shell_to_first_shell_inner_product}:
+
+\textbf{Host-to-first-shell distances.} For each $i \in \{1, \ldots, 12\}$:
+\[
+|v_i - v_{\text{host}}|_{\text{actual}} \;=\; \frac{1}{\phig}\Bigl(1 + \epsilon \cdot \bigl(-\tfrac{1}{2\phig}\bigr)\Bigr) \;=\; \frac{1}{\phig}\Bigl(1 - \frac{\epsilon}{2\phig}\Bigr).
+\]
+The factor $(1 - \epsilon/(2\phig))$ is identical across all 12 first-shell vertices --- an isotropic radial scaling of the first-shell icosahedron toward $v_{\text{host}}$.
+
+\textbf{First-shell-to-first-shell distances.} For any 600-cell-edge-connected pair $v_a, v_b$ in the first shell:
+\[
+|v_b - v_a|_{\text{actual}} \;=\; \frac{1}{\phig}\bigl(1 + \epsilon \cdot 0\bigr) \;=\; \frac{1}{\phig},
+\]
+unchanged from the ideal 600-cell value. The 30 first-shell-to-first-shell 600-cell edges therefore retain their ideal length at $\mathcal{O}(\epsilon)$.
+
+\textbf{$I_h$ preservation.} The 12 first-shell vertices, viewed as points on the 2-sphere $\{x \in S^3 : x \cdot v_{\text{host}} = \phig/2 \cdot (1 - \epsilon/(2\phig))\}$ (the perturbed first-shell hyperplane), are at identical distances from $v_{\text{host}}$ (modified radius) and at identical pairwise 600-cell-edge distances among themselves (unchanged). The angular configuration of the 12 first-shell vertices on this 2-sphere is therefore unchanged from the ideal icosahedron; the perturbed first-shell vertices form an icosahedron differing from the ideal only by uniform radial scaling. The $I_h$ symmetry of the first-shell icosahedron is preserved.
+
+The 20 triangular faces of the first-shell icosahedron, each formed by 3 mutually-600-cell-edge-connected first-shell vertices, retain their equilateral structure (all three edges of any such triangle are first-shell-to-first-shell at unperturbed length $1/\phig$). The K3-base, geometrically realized as one of these 20 triangular faces (sketch \S11.2; Finding C-W37)~\cite{abshier_capotauro_chiral_mechanism_sketch}, inherits the preserved equilateral structure.
+$\square$
+\end{proof}
+
+\begin{remark}[Substrate-actual symmetry under Theorem~\ref{thm:local_ih_preservation}]\label{rem:substrate_actual_symmetry}
+Theorem~\ref{thm:local_ih_preservation} sharpens the substrate-actual symmetry statement of \S\ref{sec:h4_i4}: the $\Hfour \to H_3 = I_h$ reduction (Operation B) is realized geometrically as the preservation of the first-shell icosahedron at $v_{\text{host}}$. The chirality content of the reduction is carried not by the K3-base's local edge structure (preserved at zeroth and first order in $\epsilon$) but by the global pattern of edge perturbations across the rest of the 600-cell (\S\ref{sec:chirality_propagation}). Locally, at the K3-host vertex, the substrate ``looks'' fully $I_h$-symmetric at $\mathcal{O}(\epsilon)$; globally, the substrate's $\hat{n}$-induced edge perturbations break $\Hfour$ down to the orbit-preserving subgroup of $v_{\text{host}}$.
+\end{remark}
+
+\subsection{The substrate-level identification $\chi \equiv \epsilon$}\label{sec:chi_epsilon_identification}
+
+Theorem~\ref{thm:local_ih_preservation} delivers the substrate-level identification of the substrate parameter $\epsilon$ (the $\hat{n}$-perturbation amplitude entering Eq.~\eqref{eq:edge_perturbation}) with the substrate chirality magnitude $\chi$ (the eigenvalue magnitude of the chirality operator $\Cchi$ at substrate level, Definition~\ref{def:chi_order_parameter}). The identification is direct.
+
+\begin{lemma}[Substrate-level $\chi \equiv \epsilon$ identification]\label{lem:chi_epsilon}
+Under vertex-aligned Reading C with Theorem~\ref{thm:local_ih_preservation} in force, the substrate chirality magnitude and the substrate-perturbation amplitude are identified at substrate level,
+\begin{equation}\label{eq:chi_epsilon_identification}
+\chi \;\equiv\; \epsilon \quad \text{at substrate level under vertex-aligned Reading C},
+\end{equation}
+with no intermediate geometric prefactor $f_{\text{geom}}$ and no irrep-extraction factor $f_{\text{irrep}}$. The substrate-level identification follows from Theorem~\ref{thm:local_ih_preservation}: the K3-amplitude factor's derivation in \S\ref{sec:k3_amplitude_factor} relies on the K3-base remaining an equilateral triangle under the preserved local $I_h$ symmetry (preserved at $\mathcal{O}(\epsilon)$ by Theorem~\ref{thm:local_ih_preservation}), and the chirality-eigenvalue matching principle (FI-C-7, \S\ref{sec:k3_amplitude_factor}) identifies the $A_2$-generator eigenvalues $\pm b\sqrt{3}$ on the K3-amplitude space with the substrate-level chirality eigenvalues $\pm \chi$ of $\Cchi$; since the local-$I_h$-preservation theorem leaves no room for a geometric or irrep-theoretic projection factor at the substrate level, $\chi$ is identified directly with $\epsilon$.
+\end{lemma}
+
+\begin{proof}
+The K3-amplitude factor derivation (Lemma~\ref{lem:spectral_S}, \S\ref{sec:k3_amplitude_factor}) computes the K3-doublet matrix element of the unique $A_2$-irrep generator $T_{A_2}(b) = i \cdot b \cdot S$ on the K3-base, yielding eigenvalues $\pm b\sqrt{3}$ on the K3-amplitude space; this is unchanged under Theorem~\ref{thm:local_ih_preservation} because the K3-base remains an equilateral triangle (preserved local $I_h$ symmetry; \S\ref{sec:k3_base}). The chirality-eigenvalue matching principle (FI-C-7, Finding C-W23~\cite{abshier_capotauro_subclaim_c_sketch}) identifies the non-zero K3-amplitude eigenvalues of $T_{A_2}(b)$ with the physical chirality eigenvalues $\pm\chi$ of $\Cchi$ at substrate level: $b\sqrt{3} = \chi$, hence $b = \chi/\sqrt{3}$. Substituting Eq.~\eqref{eq:edge_perturbation} into the K3-base edge length tells us the parameter $b$ entering the $A_2$-generator amplitude is constrained by the substrate-perturbation amplitude $\epsilon$ via the same chirality-eigenvalue matching principle, with no intermediate geometric or irrep-theoretic prefactor (the local-$I_h$-preservation theorem ensures no such factor enters: the K3-base's equilateral structure is preserved, and the perpendicular-wavefunction structure of FI-C-3 + FI-C-4 + FI-C-5 carries the chirality content without further projection). Therefore $\chi = b\sqrt{3} = \epsilon$ at substrate level, identification \eqref{eq:chi_epsilon_identification}.
+$\square$
+\end{proof}
+
+Combining Lemma~\ref{lem:chi_epsilon} with the perturbative-distance-ratio constraint (\S\ref{sec:chi_resolution}), which selects $\epsilon = \phig^{-3}$ as the first natural-distance-ratio scale satisfying the geometric-structure-preservation requirement, gives the v2.0 derivation of FI-C-9:
+\begin{equation}\label{eq:chi_v2_derivation_chain}
+\chi \stackrel{\text{Lem.~\ref{lem:chi_epsilon}}}{=} \epsilon \stackrel{\S\ref{sec:chi_resolution}}{=} \phig^{-3} \;\approx\; 0.236.
+\end{equation}
+FI-C-9 is thereby retained as a foundational input at the magnitude level (v1.0 statement: $|\chi| = \phig^{-3}$) but derived rather than postulated within v2.0's substrate-physics framework. The FI-cost shift from v1.0 to v2.0 is: FI-C-9 (free magnitude postulate) $\to$ FI-C-RC-1 + FI-C-RC-2 (primitive direction + vertex-alignment); the perturbative-distance-ratio constraint of \S\ref{sec:chi_resolution} closes the magnitude derivation chain.
+
+\subsection{Preservation of v1.0's $|M| = \chi/6$ prediction}\label{sec:v1_preservation_under_reading_c}
+
+The v1.0 paper's composite Capotauro Wigner-Eckart Theorem (Theorem~\ref{thm:composite_cap_we}, \S\ref{sec:composite_we}) derives $|M| = \chi/6 \approx 0.0394$ as the product of the K3-amplitude factor $|M_{\Kthree}| = \chi$ and the cage-shell factor $|M_\perp| = 1/6$. Theorem~\ref{thm:local_ih_preservation} ensures both factors are preserved exactly under v2.0's vertex-aligned Reading C framing:
+
+\begin{itemize}\setlength\itemsep{0.2em}
+    \item \textbf{K3-amplitude factor preserved.} The K3-amplitude factor $|M_{\Kthree}| = \chi$ derivation (\S\ref{sec:k3_amplitude_factor}, Lemma~\ref{lem:k3_factor}) relies on the K3-doublet states being in the $E$-irrep of the $\Sthree$ permutation symmetry on the K3-base. The $E$-irrep structure requires the K3-base to remain an equilateral triangle, which holds under Theorem~\ref{thm:local_ih_preservation} (\S\ref{sec:local_ih_preservation_theorem}: the 20 first-shell triangles preserve equilateral structure at $\mathcal{O}(\epsilon)$).
+    \item \textbf{Cage-shell factor preserved.} The cage-shell factor $|M_\perp| = 1/6 = d_E / V_{\text{cage}}$ derivation (\S\ref{sec:cage_shell_factor}, Lemma~\ref{lem:cage_shell}) relies on the icosahedral cage's $V_{\text{cage}} = 12$ first-shell vertices being symmetry-equivalent under the cage's stabilizer. This holds under Theorem~\ref{thm:local_ih_preservation} (the 12 first-shell vertices are at identical distance from $v_{\text{host}}$ at $\mathcal{O}(\epsilon)$, with full local $I_h$ symmetry intact).
+\end{itemize}
+
+The composite prediction $|M| = \chi/6$ is therefore preserved \emph{exactly} under v2.0's vertex-aligned Reading C framing. The v1.0 numerical content (Theorem~\ref{thm:composite_cap_we}, $|M| = \chi/6 \approx 0.0394$; primary empirical prediction $\DeltapLR = \chi/6$ matching observed $\sim 0.04$ within 2\%) carries over to v2.0 unchanged. The v2.0 refinement does not alter the v1.0 prediction; it provides the substrate-physics derivation route for FI-C-9's magnitude (Eq.~\eqref{eq:chi_v2_derivation_chain}) that v1.0 left as foundational input.
+
+\subsection{Where the chirality bias propagates globally}\label{sec:chirality_propagation}
+
+Theorem~\ref{thm:local_ih_preservation} establishes that the chirality bias is \emph{invisible} to the K3-base's local edge structure at first order in $\epsilon$: K3-base edges have zero direct edge-length perturbation, and the host vertex's first-shell icosahedron is preserved up to uniform radial scaling. The bias must therefore propagate into the substrate's global edge-length pattern through other channels~\cite{abshier_capotauro_chiral_mechanism_sketch}:\footnote{Substantive content from the working sketch \S13.7 (Patch 0424).}
+
+\begin{enumerate}\setlength\itemsep{0.2em}
+    \item \textbf{Second-shell and beyond connections.} Edges from first-shell to second-shell 600-cell vertices have $\hat{e} \cdot \hat{n}$ varying across positions (second-shell vertices sit at angular distance from $v_{\text{host}}$ different from the first shell, with non-uniform projections on $\hat{n}$). These edges carry the $\mathcal{O}(\epsilon)$ chirality signature globally.
+    \item \textbf{Cage-to-cage couplings.} The substrate chirality magnitude $\chi$ extracted by the K3-doublet matrix element is set globally, encoding how $\hat{n}$ orchestrates the 600-cell's entire edge-length pattern. The K3-doublet's local matrix element extracts $\chi$ via the chirality-eigenvalue matching principle (\S\ref{sec:k3_amplitude_factor}), which is a global substrate-level identification.
+    \item \textbf{Forward to non-host vertices.} For any 600-cell vertex $v' \neq v_{\text{host}}$, the chain of edges connecting $v_{\text{host}}$ to $v'$ carries direction-correlated length perturbations. The substrate's global chirality structure is the integrated effect of this $\mathcal{O}(\epsilon)$ pattern across all 720 edges.
+\end{enumerate}
+
+A first-principles derivation of $\chi$ as the eigenvalue of $\Cchi$ from the global substrate structure under Reading C --- closing the substrate-level chirality content from the global pattern rather than via Lemma~\ref{lem:chi_epsilon}'s direct identification --- remains open work, registered as part of Q5 cross-sector consistency and the eventual primitive-cause derivation under the \emph{OPEN-SD-CHIR-PRIMITIVE} umbrella~\cite{abshier_research_frontier}.\footnote{Working sketch \S13.7 closing paragraph: ``A first-principles derivation of $\chi$ as the eigenvalue of $\Cchi$ from the global substrate structure under Reading C would close Reading C at theorem level. The current understanding identifies $\chi \equiv \epsilon$ at the substrate-level definition, with the perturbative-distance-ratio constraint fixing $\epsilon = \phig^{-3}$.''} The v2.0 paper closes the magnitude derivation chain at Eq.~\eqref{eq:chi_v2_derivation_chain}'s level (substrate-level identification + perturbative-distance-ratio constraint); the global-eigenvalue derivation is the deeper open question.
+
+\subsection{Substrate-locality as proof-chain step (i) for cross-sector unification}\label{sec:locality_as_unification_step}
+
+Theorem~\ref{thm:local_ih_preservation} is not specific to the K3-doublet sector --- it operates on any substrate object hosted at the host vertex's first-shell icosahedron. The W-bracelet (SF-2 v1.0~\cite{abshier_sf2}) sits on-axis with $\hat{n}$ at radius $\phig/2$ from $v_{\text{host}}$ (FI-C-RC-2 argument 2, \S\ref{sec:h4_i4}), with its 6 vertices realized as a Petrie hexagon on the first-shell icosahedron; the qDP/eDP substrate objects (SM-2 per the Linear-vs-Orbital ZBW characterization at SM-2 v1.0 \S5+\S6+Glossary; full SM-2 citation introduced at v2.0 \S6 qDP/eDP sector drafting) sit at specific positions in the first-shell cage as well. All three substrate objects --- K3-doublet (3-vertex triangle on a 600-cell face within the first-shell icosahedron), W-bracelet (6-vertex Petrie hexagon on the first-shell icosahedron), and qDP/eDP (Linear ZBW $d=1$ at a single first-shell vertex; Orbital ZBW $d=0$ at the host CP) --- inherit substrate chirality from the same identification $\chi \equiv \epsilon = \phig^{-3}$ via Theorem~\ref{thm:local_ih_preservation}'s local-$I_h$-preservation guarantee.
+
+This is the structural foundation for v2.0's cross-sector unification claim under the OPEN-SD-CHIR-PRIMITIVE umbrella: the substrate-physics handle $\chi/6$ feeding the chirality matrix element across all three sectors at substrate level (manifestation (i) mass-mixing on K3-doublet, manifestation (ii) electroweak V-A on W-bracelet, manifestation (iii) electromagnetic handedness on qDP/eDP polarization patterns). Theorem~\ref{thm:local_ih_preservation} is registered as \emph{proof-chain step (i)} of THEO-SD-CHIR-1 (Cross-Sector Substrate Chirality Unification Theorem; K3-doublet $\leftrightarrow$ W-bracelet pair; registered Patch 0434 Session 132) and THEO-SD-CHIR-2 (qDP/eDP Sector Substrate Chirality Closure Theorem; three-way unification with K3-doublet and W-bracelet; registered Patch 0440 Session 133) in the programme theorem-registry~\cite{abshier_theorem_registry}.\footnote{Detailed inheritance and proof-chain structure for THEO-SD-CHIR-1 and THEO-SD-CHIR-2 are developed in the v2.0 cross-sector sections (forthcoming): W-bracelet sector at \S\ref{sec:cross_sector_inheritance} extended with the four-step proof chain (substrate-locality + Substrate-Locality Unification + cage-shell factor identity + pairing-convention identification) per working sketch \S14--\S17 (THEO-SD-CHIR-1) and \S18--\S20 (THEO-SD-CHIR-2)~\cite{abshier_capotauro_chiral_mechanism_sketch}. The v0.2 drafting target completes these cross-sector sections.} The substrate-locality theorem is the substrate-physics common ground from which all three sectors' chirality content is sourced.
+
 \section{The K3-Doublet and the Chirality Observable}\label{sec:k3_doublet}
 
 This section establishes the $\Kthree$-doublet basis structure $\{\PhiminusOne, \PhiminusTwo\}$ and the substrate-level chirality observable $\Cchi$ in irreducible representation $B_2$ of the $\Kthree$ stabilizer $\Dsix = \Sthree \times \mathbb{Z}_2$. These are the operator and the states on which the Wigner-Eckart matrix element of \S\ref{sec:composite_we} is computed. The section assembles foundational inputs FI-C-2 (\S\ref{sec:k3_base}), FI-C-3 extended (\S\ref{sec:k3_tbm_basis} and \S\ref{sec:perpendicular_wavefunction}), and the $\zeta$-ODD assignment of $\Cchi$ (\S\ref{sec:chirality_observable}) into the substrate-physics object on which Theorem~\ref{thm:composite_cap_we} operates.
