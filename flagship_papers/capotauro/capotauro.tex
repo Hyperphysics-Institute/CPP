@@ -153,6 +153,217 @@ v1.0 included a sidebar note on the closure's compounding value across five CPP 
 
 The structural mechanism for cross-sector unification is the Substrate-Locality Theorem (\S\ref{sec:substrate_locality}, Theorem~\ref{thm:local_ih_preservation}): under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$, the substrate's local $I_h$ symmetry at the first-shell icosahedron of the host vertex is preserved at $\mathcal{O}(\epsilon)$ in 4D ambient, with isotropic radial scaling on host-to-first-shell edges and zero perturbation on first-shell-to-first-shell edges. Any substrate object built from first-shell vertices of the host (the K3-base, the W-bracelet, the qDP 1-vertex subset, the eDP trivial subset, and substrate objects relevant to future-window manifestations (iv) and (v)) inherits the substrate-level chirality magnitude $\chi \equiv \epsilon = \phig^{-3}$ from the same identification (Corollary~\ref{cor:substrate_locality_unification}, Lemma~\ref{lem:chi_epsilon}). The three-way unification of Eq.~\eqref{eq:three_way_unification} is the first concrete demonstration that this structural unification at the substrate level translates to identical numerical magnitude at the matrix-element-content level across structurally distinct sector-specific mechanisms.
 
+Figure~\ref{fig:programme_architecture} summarizes the v2.0 programme architecture at a single glance: the substrate-primitive layer (Layer 2; $\hat{n}$, $\chi$), the structural-unification layer (Layer 3; Substrate-Locality Theorem + cage-shell averaging), the three sector-specific theorem closures with their stabilizers and $\zeta$-pairing generators, the three-way unification, the three observable handles feeding their respective routes of experimental validation, the open umbrella manifestations (iv) and (v), the open Layer 1 dynamical-engine work, and the 11-route falsifier structure stratified across the architecture's layers. The figure is the master programme-orientation companion to the K3-doublet-specific derivation flow of Figure~\ref{fig:derivation_flow} (\S\ref{sec:roadmap}).
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.7em and 1.0em,
+    primbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=green!50!black, very thick,
+        minimum width=30em, minimum height=2.5em,
+        align=center, font=\footnotesize,
+        fill=green!8
+    },
+    derivbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=blue!50!black, very thick,
+        minimum width=30em, minimum height=2.5em,
+        align=center, font=\footnotesize,
+        fill=blue!5
+    },
+    sectorbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=blue!50!black, thick,
+        minimum width=9.5em, minimum height=4em,
+        align=center, font=\scriptsize,
+        fill=blue!5
+    },
+    unifbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=blue!70!black, ultra thick,
+        minimum width=30em, minimum height=2.8em,
+        align=center, font=\footnotesize\bfseries,
+        fill=blue!12
+    },
+    handlebox/.style={
+        rectangle, rounded corners=3pt,
+        draw=orange!60!black, thick,
+        minimum width=9.5em, minimum height=4em,
+        align=center, font=\scriptsize,
+        fill=orange!10
+    },
+    valbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=orange!70!black, very thick,
+        minimum width=32em, minimum height=2.3em,
+        align=center, font=\scriptsize\itshape,
+        fill=orange!5,
+        text width=30em
+    },
+    layer1box/.style={
+        rectangle, rounded corners=3pt,
+        draw=red!60!black, thick, dashed,
+        minimum width=32em, minimum height=2.5em,
+        align=center, font=\scriptsize,
+        fill=red!4
+    },
+    openbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=gray!60!black, thick, dashed,
+        minimum width=14em, minimum height=3.5em,
+        align=center, font=\scriptsize,
+        fill=gray!5
+    },
+    falsbox/.style={
+        rectangle, rounded corners=3pt,
+        draw=violet!60!black, thick,
+        minimum width=32em, minimum height=3.5em,
+        align=left, font=\scriptsize,
+        fill=violet!4,
+        text width=30em
+    },
+    arr/.style={-{Latex[length=2mm,width=1.5mm]}, thick, draw=black!70},
+    dasharr/.style={-{Latex[length=2mm,width=1.5mm]}, thick, dashed, draw=red!60!black}
+]
+
+% Layer 2 substrate primitive
+\node[primbox] (l2) {%
+    \textbf{Layer 2 substrate primitive}\\
+    $\hat{n}$ primitive 4D direction (FI-C-RC-1) \quad $\hat{n} = v_{\text{host}}$ vertex-aligned reading (FI-C-RC-2)\\
+    $|\chi| = \phig^{-3}$ from perturbative-distance-ratio constraint \quad (\S\ref{sec:order_parameter}, \S\ref{sec:chi_resolution})
+};
+
+% Layer 3 substrate-locality unification
+\node[derivbox, below=of l2] (l3) {%
+    \textbf{Layer 3 Substrate-Locality Unification}\\
+    Theorem~\ref{thm:local_ih_preservation}: Local-$I_h$ preservation at $\mathcal{O}(\epsilon)$ \quad
+    Corollary~\ref{cor:substrate_locality_unification}: $\chi \equiv \epsilon$ on first-shell objects\\
+    Cage-shell averaging $d_\Gamma/V_{\text{cage}} = 2/12 = 1/6$
+};
+
+% Three sector boxes
+\node[sectorbox, below=2em of l3, xshift=-12em] (k3) {%
+    \textbf{K3-doublet}\\
+    stabilizer $D_{3d}$\\
+    $\zeta$: 3D inversion\\[2pt]
+    \textbf{THEO-CAP-1}\\
+    $|M^{\Kthree}| = \chi/6$\\
+    (\S\ref{sec:composite_we})
+};
+\node[sectorbox, below=2em of l3] (w) {%
+    \textbf{W-bracelet}\\
+    stabilizer Petrie $D_6$\\
+    $\zeta^W$: 4D icos.-ctr.\\[2pt]
+    \textbf{THEO-SD-CHIR-1}\\
+    $|M^W| = \chi/6$\\
+    (\S\ref{sec:w_bracelet_sector})
+};
+\node[sectorbox, below=2em of l3, xshift=12em] (qdp) {%
+    \textbf{qDP/eDP}\\
+    stabilizer $D_{5d}$\\
+    $\zeta^{qDP}$: combined $CP$\\[2pt]
+    \textbf{THEO-SD-CHIR-2}\\
+    $|M^{qDP}| = \chi/6$\\
+    (\S\ref{sec:qdp_edp_sector})
+};
+
+% Three-way unification
+\node[unifbox, below=2.2em of w] (unif) {%
+    THREE-WAY UNIFICATION: $|M^{\Kthree}| = |M^W| = |M^{qDP}| = \chi/6 \approx 0.0394$\\
+    \mdseries\scriptsize zero free parameters across three structurally distinct sectors (\S\ref{sec:three_way_unification})
+};
+
+% Three observable handles
+\node[handlebox, below=2em of unif, xshift=-12em] (dplr) {%
+    $\DeltapLR \approx 0.0394$\\
+    K3-doublet primary\\
+    empirical match\\
+    \textit{2\% of $\eta_B$-leptogenesis}\\
+    \textit{anchor}\\
+    (\S\ref{sec:dplr})
+};
+\node[handlebox, below=2em of unif] (sf2) {%
+    SF-2 v2.0+\\
+    V--A coupling\\
+    massless helicity limit\\
+    \textit{Layer-4 EFT}\\
+    \textit{continuum projection}\\
+    (\S\ref{sec:w_bracelet_prediction})
+};
+\node[handlebox, below=2em of unif, xshift=12em] (sm2) {%
+    SM-2 v2.0+\\
+    quark chiral-polarity-bias\\
+    on $u/d$ asymmetries\\
+    \textit{Layer-4 EFT}\\
+    \textit{continuum projection}\\
+    (\S\ref{sec:qdp_edp_prediction})
+};
+
+% Routes of experimental validation
+\node[valbox, below=2em of sf2] (val) {%
+    Routes of experimental validation: HL-LHC + FCC-ee precision electroweak \quad $\eta_B$ refinement from Planck-class experiments \quad direct $\DeltapLR$ measurement\\
+    (Falsifiers 1, 6, 7; \S\ref{sec:falsifier})
+};
+
+% Layer 1 open (below val, in open-work zone)
+\node[layer1box, below=2.5em of val] (l1) {%
+    \textbf{Layer 1 (OPEN; not derived in this paper)}\\
+    Primitive-conscious-point PCD dynamics underlying $\hat{n}$ existence, $|\chi| = \phig^{-3}$ magnitude selection, $\mathcal{O}(\epsilon)$ preservation order\\
+    Q1$'$ + Q1$'$.A Layer-3 promotion of $\hat{n}$ (\S\ref{sec:open_n_hat_layer3}) \quad active investigation; no preselected endpoint (\S\ref{sec:dynamical_engine})
+};
+
+% Open umbrella manifestations
+\node[openbox, below=1.6em of l1, xshift=-9em] (iv) {%
+    \textbf{(iv) Thermodynamic arrow}\\
+    PCD-cycle-ordering;\\
+    DI-bit propagation symmetry\\
+    $\zeta^{(iv)}$: OPEN\\
+    \textit{THEO-SD-CHIR-3 future}
+};
+\node[openbox, below=1.6em of l1, xshift=9em] (v) {%
+    \textbf{(v) Cosmological-vacuum asym.}\\
+    Capotauro-nucleation event;\\
+    substrate-cosmological coupling\\
+    $\zeta^{(v)}$: OPEN\\
+    \textit{THEO-SD-CHIR-4; Q7 linkage}
+};
+
+% Falsifier ledger
+\node[falsbox, below=2em of iv, xshift=9em] (fals) {%
+    \textbf{Falsifier structure (11 routes; \S\ref{sec:falsifier}):}\\
+    \textbf{1} primary: $\DeltapLR \neq \chi/6$ (K3-doublet) \quad
+    \textbf{2--4} framework-level (FI/theorem-validity) \quad
+    \textbf{5} cross-sector (SF-2/SF-4/SM-2 inheritance)\\
+    \textbf{6--7} sector-specific magnitudes (W-bracelet, qDP/eDP) \quad
+    \textbf{8} umbrella (three-way unification fails) \quad
+    \textbf{9--11} FI-C-RC-1/RC-2 + Substrate-Locality theorem
+};
+
+% Arrows: derivation flow (downward, solid)
+\draw[arr] (l2) -- (l3);
+\draw[arr] (l3.south -| k3.north) -- (k3.north);
+\draw[arr] (l3.south) -- (w.north);
+\draw[arr] (l3.south -| qdp.north) -- (qdp.north);
+\draw[arr] (k3.south) -- (k3.south |- unif.north);
+\draw[arr] (w.south) -- (unif.north);
+\draw[arr] (qdp.south) -- (qdp.south |- unif.north);
+\draw[arr] (unif.south -| dplr.north) -- (dplr.north);
+\draw[arr] (unif.south) -- (sf2.north);
+\draw[arr] (unif.south -| sm2.north) -- (sm2.north);
+\draw[arr] (dplr.south) -- (dplr.south |- val.north);
+\draw[arr] (sf2.south) -- (val.north);
+\draw[arr] (sm2.south) -- (sm2.south |- val.north);
+
+% Investigation-trajectory arrow: macroscopic-axiomatic side approaches Layer 1 from above
+\draw[dasharr] (val.south) -- node[font=\tiny\itshape, right=0.3em, align=left]{investigation\\trajectory} (l1.north);
+
+\end{tikzpicture}
+\caption{Capotauro v2.0 programme architecture: substrate primitive (Layer 2, green) to observable handles (Layer 3 derivation and below, blue/orange) with theorem layers, sector-specific stabilizers, $\zeta$-pairing generators, three-way unification, and routes of experimental validation. The dashed-red Layer 1 box registers the primitive-conscious-point dynamical content that this paper does not derive; the dashed downward arrow from the routes-of-validation callout registers the investigation trajectory --- the macroscopic-axiomatic layers (closed work, top of figure) approach the Layer 1 primitive (open work, below) from above, using convergence with experimental reality as the determinant of correct identification of substrate primitives (\S\ref{sec:dynamical_engine}). The OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) and (v) (dashed-gray) target structurally distinct mechanisms (PCD-cycle-ordering for (iv); Capotauro-nucleation-event scale for (v)) with sector-specific $\zeta$-generators yet to be identified; the umbrella's five-way closure prediction is $|M^{(iv)}| = |M^{(v)}| = \chi/6$ at substrate level (anticipatory; \S\ref{sec:future_window_predictions}, \S\ref{sec:open_umbrella_manifestations_iv_v}). The Falsifier structure panel (violet) registers the 11-route empirical-and-structural accountability stratified across the architecture's layers (\S\ref{sec:falsifier}). The figure is the master programme-orientation companion to Figure~\ref{fig:derivation_flow}, which gives the K3-doublet-specific derivation flow at finer resolution.}
+\label{fig:programme_architecture}
+\end{figure}
+
 \subsection{Strict-C inheritance discipline}\label{sec:strict_c}
 
 This paper distinguishes claims at three rigor levels per the strict-C inheritance discipline established by SS-7~\cite{abshier_ss7}, SS-8, SS-9~\cite{abshier_ss9}, SF-4, and SF-2. \emph{Theorem level}: derived rigorously from the foundational input stack plus CPP axioms with explicit Wigner-Eckart factorization (Theorem~\ref{thm:local_ih_preservation}; Theorem~\ref{thm:composite_cap_we}; Theorem~\ref{thm:theo_sd_chir_1}; Theorem~\ref{thm:theo_sd_chir_2}). \emph{FI-inherited level}: accepted as foundational inputs to the closure (FI-C-1 through FI-C-10 from v1.0; FI-C-RC-1 + FI-C-RC-2 added at v2.0), flagged explicitly in \S\ref{sec:fi_summary}. \emph{Structural-argument level}: supported by structural observations but not yet at theorem-level rigor (the $\sin^2\theta_{13}$ candidate $\gamma$ structural observation in \S\ref{sec:sin2theta13}). The conditional-closure framework~\cite{abshier_conditional_closure} routes all three into a single closure declaration: theorem-level claims hold rigorously under the FI-inherited assumptions; structural-argument-level claims are reviewer-visible and registered as future work.
@@ -204,7 +415,7 @@ Figure~\ref{fig:derivation_flow} summarizes the structural inputs and the eight-
 \label{fig:derivation_flow}
 \end{figure}
 
-The figure makes visible the load-bearing assumptions for the K3-doublet derivation chain: the two green substrate-physics boxes ($\Ifour$ substrate residual symmetry and the primitive chirality $|\chi| = \phig^{-3}$) are foundational inputs declared at v1.0 as primitive features of the substrate; at v2.0 these are partially derived (the residual symmetry $\Hthree = I_h$ replaces $\Ifour$ under vertex-aligned Reading C, and the magnitude $|\chi| = \phig^{-3}$ is derived from the perturbative-distance-ratio constraint on $\hat{n}$-induced edge perturbations, per FI-C-RC-1 + FI-C-RC-2 registered at v2.0; \S\ref{sec:order_parameter}). The FI-C-10 box is similarly a foundational input with first-principles closure registered separately (\S\ref{sec:open_fi_c10}); at v2.0 FI-C-10 is seen to apply uniformly across all three sectors (K3-doublet, W-bracelet, qDP/eDP) at the shared icosahedral cage. The three remaining boxes are theorem-level derivations within the v1.0 / v2.0 scope. The conditional-closure framework~\cite{abshier_conditional_closure} declares the closure under these explicitly-marked assumptions; v2.0 sharpens the closure by deriving the chirality magnitude from the primitive 4D direction $\hat{n}$ and extending the matrix element identity to two further sectors (W-bracelet and qDP/eDP) via the cross-sector unification theorems of \S\ref{sec:w_bracelet_sector} and \S\ref{sec:qdp_edp_sector}.
+The figure makes visible the load-bearing assumptions for the K3-doublet derivation chain: the two green substrate-physics boxes ($\Ifour$ substrate residual symmetry and the primitive chirality $|\chi| = \phig^{-3}$) are foundational inputs declared at v1.0 as primitive features of the substrate; at v2.0 these are partially derived (the residual symmetry $H_3 = I_h$ replaces $\Ifour$ under vertex-aligned Reading C, and the magnitude $|\chi| = \phig^{-3}$ is derived from the perturbative-distance-ratio constraint on $\hat{n}$-induced edge perturbations, per FI-C-RC-1 + FI-C-RC-2 registered at v2.0; \S\ref{sec:order_parameter}). The FI-C-10 box is similarly a foundational input with first-principles closure registered separately (\S\ref{sec:open_fi_c10}); at v2.0 FI-C-10 is seen to apply uniformly across all three sectors (K3-doublet, W-bracelet, qDP/eDP) at the shared icosahedral cage. The three remaining boxes are theorem-level derivations within the v1.0 / v2.0 scope. The conditional-closure framework~\cite{abshier_conditional_closure} declares the closure under these explicitly-marked assumptions; v2.0 sharpens the closure by deriving the chirality magnitude from the primitive 4D direction $\hat{n}$ and extending the matrix element identity to two further sectors (W-bracelet and qDP/eDP) via the cross-sector unification theorems of \S\ref{sec:w_bracelet_sector} and \S\ref{sec:qdp_edp_sector}.
 
 \section{Substrate-Vacuum Chirality as Primitive Feature}\label{sec:substrate_vacuum}
 
