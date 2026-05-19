@@ -1,6 +1,6 @@
 # Methods Catalogue
 
-**Status:** STUB seed at Session 133 Patch 0449. Initial entries from Reading C closure trajectory (Patches 0417-0443) plus references to earlier work; **19 entries (7 L1 + 6 L2 + 6 L3)** carrying METH-L{1,2,3}-NNN identifiers per naming convention adopted Patch 0449a. Full catalog completion is OPEN-ORG-016 (Phase 1 back-fill + Phase 2 per-paper-SHIP + Phase 3 per-session). The Patch 0460 additions (METH-L2-007 + METH-L2-008 + METH-L3-007) were reversed at Patch 0461 as out-of-scope per the explicit scope clarification in `README-methods_catalogue.md`: this catalog covers *physics derivation methods* only; protocol patterns and workflow heuristics live in `templates/operating_system.md` (or `relationship_protocol.md` / `founders_voice/` as appropriate).
+**Status:** STUB seed at Session 133 Patch 0449. Initial entries from Reading C closure trajectory (Patches 0417-0443) plus references to earlier work; **17 entries (7 L1 + 6 L2 + 4 L3)** carrying METH-L{1,2,3}-NNN identifiers per naming convention adopted Patch 0449a. Full catalog completion is OPEN-ORG-016 (Phase 1 back-fill + Phase 2 per-paper-SHIP + Phase 3 per-session). The Patch 0460 additions (METH-L2-007 + METH-L2-008 + METH-L3-007) were reversed at Patch 0461 as out-of-scope, and the pre-existing organizational entries METH-L3-004 (Closure trajectory saturation → consolidate via handover + outline) + METH-L3-006 (Meta-conversation surfacing → capture before window close) were removed at Patch 0462 per the explicit physics-derivation-only scope clarified at `README-methods_catalogue.md`: this catalog covers *physics derivation methods* only; protocol patterns and workflow heuristics live in `templates/operating_system.md` (or `relationship_protocol.md` / `founders_voice/` / `opus_voice/` as appropriate).
 
 **Format:** Each entry has *Name* / *Description* / *Canonical citation* / *Example applications*. Layered as Layer 1 (mathematical techniques) → Layer 2 (methodological disciplines) → Layer 3 (heuristic strategies). The three layers are independent inventories, not a strict hierarchy; cross-layer references appear inline.
 
@@ -144,14 +144,6 @@
 
 **Example deployment.** Local-$I_h$-preservation verification (Patch 0424), surfacing Finding C-W39 superseding C-W38.
 
-### METH-L3-004: Closure trajectory saturation → consolidate via handover + outline
-
-**Description.** When a multi-session closure trajectory has delivered its theorem-registry-level results and remaining open work shifts to a different shape, this is the right moment to consolidate via handover + outline-establishment patches, not to push for additional substantive work within the same window.
-
-**Citation.** sketch §21.7 (Patch 0441), Reading C closure trajectory natural-end-state recognition.
-
-**Example deployment.** Session 133 close — Patches 0442 (v2.0 outline) + 0443 (handover) before pivoting to v2.0 drafting in subsequent windows.
-
 ### METH-L3-005: Recurring problem shape → name it and register it
 
 **Description.** When the same analytical pattern surfaces in two or more independent contexts, give it a name (e.g., "PAIRING", "three-step closure pattern") and register it explicitly. Naming the pattern makes it reusable as a Layer 2 discipline.
@@ -160,14 +152,6 @@
 
 **Example deployment.** Both PAIRING registrations and the subsequent pattern naming.
 
-### METH-L3-006: Meta-conversation surfacing → capture before window close
-
-**Description.** When a conversation surfaces meta-level content (reflections on the work's texture, methodological observations, framing questions) outside the standard paper-scoped reasoning that goes into sketches, the §15 handover Steps B/C may incorrectly mark these N/A. The correct move is to capture meta-conversation in a dedicated file (typically `opus_voice/NNN_<topic>.md`) before window close.
-
-**Citation.** Patch 0449 (this patch) — `opus_voice/001`, `opus_voice/002` captured verbatim before Session 133 final close.
-
-**Example deployment.** This patch itself. Lesson surfaced from observing the gap between sketch §13-§21 (substantive physics captured) and meta-conversation (lantern + methods + problem-shapes; not captured by default §15 protocol).
-
 ---
 
-**End of seed catalog.** Total entries: 7 Layer 1 (METH-L1-001 through METH-L1-007) + 6 Layer 2 (METH-L2-001 through METH-L2-006) + 6 Layer 3 (METH-L3-001 through METH-L3-006) = **19 entries**. Full catalog completion (back-fill from earlier closure arcs: SF-4, SS-9, SM-line, EW-line) queued as OPEN-ORG-016.
+**End of seed catalog.** Total entries: 7 Layer 1 (METH-L1-001 through METH-L1-007) + 6 Layer 2 (METH-L2-001 through METH-L2-006) + 4 Layer 3 (METH-L3-001, METH-L3-002, METH-L3-003, METH-L3-005) = **17 entries**. Numbering slots METH-L3-004 and METH-L3-006 vacated at Patch 0462 (organizational entries removed per the explicit physics-derivation-only scope of `README-methods_catalogue.md`); slots remain reserved per the naming-convention rule that numbers are not reused once assigned — future METH-L3-004 and METH-L3-006 entries must be *physics-scoped*. Full catalog completion (back-fill from earlier closure arcs: SF-4, SS-9, SM-line, EW-line) queued as OPEN-ORG-016.
