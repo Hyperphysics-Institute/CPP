@@ -29,6 +29,32 @@ Some papers also carry a `lay-summary-[S]-[N].md` file (e.g., SS-7) for non-phys
 
 Naming convention: `[S]` = series abbreviation (SM, EW, SR, SS, QM, SD, SF), `[N]` = paper number; for papers without an `[S]-[N]` identifier (e.g. the Capotauro flagship which is `capotauro`), the bare paper name substitutes (e.g. `changelog-capotauro.md`). Canonical filenames carry no version suffix; version history lives in the changelog file, not in the filename.
 
+## Input sources at SHIP-time production (adopted Patch 0449b per OPEN-ORG-017)
+
+The 7-file documentation suite is produced at v1.0 SHIP — post-paper-completion, post-reviewer-cycles. At production time, the canonical input sources are the paper's real-time artifacts accumulated during development. Read these IN PRIORITY ORDER before writing any suite file:
+
+1. **`sketches/*.md`** — Tier 4 verbatim derivation reasoning (the moment-by-moment groping, false starts, PAIRING resolutions, recognition moments). The richest source of discovery-narrative texture. For some papers (e.g., Capotauro v2.0 per Patch 0421 anti-priority discipline), the sketch IS the canonical Tier 4 location and substitutes for `reasoning-<paper>.md`.
+
+2. **`documentation_suite/reasoning-<paper>.md`** — Tier 4 verbatim Opus reasoning where stored separately from sketches. Check both this and sketches; the location convention varies by paper (Reading C trajectory used the sketch directly; older papers like SS-9 use the documentation_suite location).
+
+3. **`documentation_suite/development-<paper>.md`** — Tier 3 session-by-session vignettes. In-moment lab-notebook texture preserved append-only across the paper's development arc. Records what each session believed at that moment, including framings later revised. Essential for the timeline + decisions + failed-approaches sections of `development-<paper>.md` (the final version) and feeds into the dramatic-arc structure of the anthology chapter.
+
+4. **`documentation_suite/transcript-<paper>.md`** — Tier 2 transaction pointer-map. Indexes every substantive transaction in the paper's development history (transaction ID + date + one-liner + pointer). Provides the audit trail and the canonical sequence of events. Used as the navigation index for items 1-3 above.
+
+5. **`founders_voice/NNN_*.md`** — Thomas's organizational vision, intuitions, recognition-moment framings, decisions about structure and presentation. Often carries the dramatic-centerpiece identification that the anthology chapter is built around (e.g., Margo's "Tetrahedrons All The Way Down" book title contribution, Patch 0422 chirality-is-primitive insight). Feeds into the philosophy file's framing-language section and the anthology chapter's voice register.
+
+6. **`scripts/*.py`** — verification scripts. Concrete numerical confirmations of derivation claims. Feed into the mechanism file's "this is verifiable" anchor points and the phenomena file's "this prediction is numerically grounded" cross-references.
+
+7. **`letters/<paper>/*.md`** — Claude's reviewer correspondence (correction letters, synthesis letters, reviewer-response letters). Feed into the reviews file's "what was contested and how it was resolved" sections.
+
+8. **`reviews/<paper>/external/*.md`** — external reviewer letters (ChatGPT, CoPilot, Grok rounds). Feed into the reviews file's "what reviewers cared about" sections + the philosophy file's "weakest link" identification (often surfaced by reviewer pressure).
+
+9. **`.tex` source** — the paper itself. Used for specific technical claims, theorem statements, equation numbers, citation targets. Not a primary narrative source; the paper is the structured-prose output, not the discovery-process record.
+
+**Priority rationale:** the 7-file suite serves multiple audiences (physicists, theorists, philosophers, general readers, SEO/web tooling, referees). Each suite file requires DIFFERENT content from these 9 input sources, but ALL suite files benefit from being grounded in the real-time artifacts (items 1-5) rather than synthesized solely from the `.tex` paper or each other. The failure mode this priority list prevents: suite files that re-describe the paper's conclusions in different registers without the discovery-narrative texture, producing a suite that is informationally redundant rather than informationally complementary. The real-time artifacts ARE the canonical record of how the paper came to be; the suite files are derivative summaries optimized for specific audiences.
+
+**Per-file source priority within this list:** `development-<paper>.md` final version uses items 1-5 heavily (it is itself a synthesized lab-notebook record); `philosophy-<paper>.md` uses items 1, 3, 5, 8 (the honest-scoping framing comes from in-moment reasoning + reviewer pressure); `mechanism-<paper>.md` uses items 1, 2, 6, 9 (physical mechanisms with intuitive explanations grounded in derivation + numerical verification); `phenomena-<paper>.md` uses items 6, 9 plus current registry state (predictions.md, paper_catalog.md); `glossary-<paper>.md` uses items 1, 2, 9 (technical terms as they were used in derivation); `reviews-<paper>.md` uses items 7, 8 (correspondence verbatim, summarized for navigation); `keywords-<paper>.md` uses item 9 plus high-level conceptual framing from items 3, 5.
+
 ---
 
 ## Folder Location (decision adopted 24 April 2026)

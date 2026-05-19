@@ -318,6 +318,19 @@ whose trigger is not met.
   Procedure: `templates/anthology_chapter_template.md` (craft
   documentation: voice, register, dramatic-centerpiece-finding,
   structural arc, honesty discipline, calibration questions).
+  **Source priority for chapter drafting** (updated Patch 0449b
+  per OPEN-ORG-017): the chapter is sourced from the paper's
+  real-time artifacts (`sketches/*.md` Tier 4 verbatim reasoning,
+  `documentation_suite/reasoning-<paper>.md` Tier 4 where separate,
+  `documentation_suite/development-<paper>.md` Tier 3 vignettes,
+  `founders_voice/NNN_*.md` Thomas's organizational vision) PLUS
+  the documentation-suite summary files (mechanism, philosophy,
+  reviews, lay-summary) PLUS the `.tex` source. Real-time artifacts
+  are READ FIRST because they carry the discovery-narrative
+  texture (false starts, recognition moments, PAIRING resolutions)
+  that the documentation suite summarizes away. See
+  anthology_chapter_template.md "How to use this template" item 3
+  for full priority order and rationale.
   **(Phase 7B because the anthology is programme-level book
   infrastructure even though each chapter is paper-specific in
   content; parallels C10's classification of programme_orientation.md

@@ -726,3 +726,52 @@ The three phases differ by trigger frequency and granularity. Phase 1 is one-sho
 - 18 May 2026 Session 133 Patch 0449 — Stub catalog established at `methods_catalogue/README.md` + `methods_catalogue/methods_catalogue.md` with 18 seed entries from Reading C closure trajectory. Entry registered for future-window back-fill from earlier closure arcs.
 - 18 May 2026 Session 133 Patch 0449a — Three refinements added: (1) METH-L{1,2,3}-NNN naming convention adopted; 19 seed entries (count corrected from earlier 18 miscount: 7 L1 + 6 L2 + 6 L3) retrofitted with identifiers; (2) Three-category classification adopted: NEW METHOD (genuinely new, gets fresh ID), ADAPTED METHOD (existing method customized for new content, gets variant ID like METH-L1-006a or parallel ID with back-pointer), STRAIGHT REUSE (existing method applied as-is, no new entry, just inline citation); (3) Phase structure expanded from 2 to 3 phases by adding Phase 3 per-session protocol codified in §15 Step E checklist as `methods_catalogue/methods_catalogue.md` line. Threshold rule documented (a method warrants entry only if reusable across at least one other context). Inline-citation convention `[METH-L{layer}-NNN method-name]` codified for derivations. README renamed `README.md` → `README-methods_catalogue.md` per folder-name convention.
 
+
+## OPEN-ORG-017: v1.0 SHIP closeout deliverables — comprehensive real-time-artifact source-coverage audit
+
+**Status:** PARTIALLY-RESOLVED at Patch 0449b for anthology chapter (C13) and 7-file documentation suite production; broader audit of remaining closeout deliverables (TATWD integration, methods catalog Phase 2 per OPEN-ORG-016, lay-summary production, paper_catalog row updates, programme-level registry refreshes) deferred to future-window dedicated session.
+**Identified:** 18 May 2026 Session 133 Patch 0449b, after Thomas's question about whether the v1.0 closeout pipeline triggers reading the sketch files to produce the anthology chapter. The audit found that `templates/anthology_chapter_template.md` line 187 source priority specified mechanism → philosophy → reviews → lay-summary → .tex without sketches, reasoning, development, or founders_voice — meaning anthology chapters were produced from documentation-suite summaries rather than from primary real-time-artifact sources. The broader finding: every closeout deliverable should be audited for whether its production process explicitly draws from the real-time artifacts (sketches, reasoning, development, transcript, founders_voice, scripts, letters, reviews) or shortcuts to derived summaries.
+**Priority:** HIGH (every paper SHIP affects this; without the fix, the programme produces thinner closeout deliverables than the underlying record supports).
+
+**Originating context:** Thomas's question surfaced the architectural gap: "Is there a trigger/OS step that causes the v1.0 paper closeout/handover/paper_production.md, etc., to look at the sketch files to produce the anthology chapter?" Audit found no such trigger. The Reading C closure trajectory's unusual sketch-as-canonical-Tier-4 arrangement (per Patch 0421 anti-priority discipline; sketch holds verbatim derivation reasoning that for older papers lives in `documentation_suite/reasoning-<paper>.md`) makes this gap especially load-bearing for Capotauro v2.0 — without the fix, the v2.0 anthology chapter would be produced without reading the sketch's verbatim discovery narrative (Q-PAIRING resolutions, §13 §12 correction, combined-CP recognition, three-way cross-sector unification recognition moment).
+
+**Problem (broader audit findings):** Real-time artifacts produced during paper development:
+
+1. `sketches/*.md` — Tier 4 verbatim derivation reasoning (primary for Reading C trajectory; per Patch 0421)
+2. `documentation_suite/reasoning-<paper>.md` — Tier 4 verbatim Opus reasoning (for papers using this location)
+3. `documentation_suite/development-<paper>.md` — Tier 3 session-by-session vignettes
+4. `documentation_suite/transcript-<paper>.md` — Tier 2 transaction pointer-map
+5. `founders_voice/NNN_*.md` — Thomas's organizational vision and intuitions
+6. `scripts/*.py` — verification scripts
+7. `letters/<paper>/*.md` — Claude's reviewer correspondence
+8. `reviews/<paper>/external/*.md` — external reviewer letters
+9. `documentation_suite/changelog-<paper>.md` — version archaeology (continuous, not at-SHIP)
+
+Closeout deliverables (produced at v1.0 SHIP):
+
+A. Final `.tex` paper file (cumulative; not new at SHIP)
+B. Anthology chapter `book_project/chapters/<paper>_<title>.md` — **ADDRESSED at Patch 0449b** (anthology_chapter_template.md line 187 + paper_completion_checklist.md C13)
+C. 7-file documentation suite (mechanism, philosophy, phenomena, glossary, keywords, reviews, FAQ) — **ADDRESSED at Patch 0449b** (documentation-suite.md "Input sources at SHIP-time production" section)
+D. TATWD integration (`programme_orientation.md` Part section update) — **NOT YET ADDRESSED**; needs explicit source-priority list paralleling B and C
+E. `paper_catalog.md` entry update — **NOT YET ADDRESSED**; row updates should reference real-time-artifact provenance for the "status text" field
+F. Programme-level registry refreshes (theorem-registry, predictions, master_glossary, research_frontier) — **NOT YET ADDRESSED**; these are updated per patch during development, so SHIP-time refresh is consolidation rather than discovery, but the consolidation should still draw from sketches/reasoning for new theorem and prediction registrations
+G. Methods catalog Phase 2 audit (per OPEN-ORG-016) — **NOT YET ADDRESSED**; Phase 2 spec says "per-paper-SHIP audit of full paper development arc" but doesn't enumerate the artifact priority list
+H. TATWD Book 2 roadmap update (`book_project/TATWD_book_2_roadmap.md`) — **NOT YET ADDRESSED**; status updates should draw from anthology chapter + paper-completion synthesis
+I. Anthology chapter arc file update (`book_project/chapter_arcs/<paper>.md` if used) — **NOT YET ADDRESSED**
+
+**Proposed fix:** Three-phase work.
+
+Phase 1 (this Patch 0449b): Anthology chapter + 7-file documentation suite source priorities updated in their respective templates. The two deliverables most affected by the gap (anthology because of its narrative-storytelling role; documentation suite because it's multi-file and audience-segmented) are addressed first. This is what landed at Patch 0449b.
+
+Phase 2 (dedicated future-window session, estimated 1-2 sessions): Audit remaining closeout deliverables D, E, F, G, H, I. For each: identify the canonical source priority across the 9 real-time-artifact categories; update the relevant template, checklist, or operating-system section with the priority list; add cross-references back to OPEN-ORG-017 for traceability.
+
+Phase 3 (operating-system amendment, deferred): Add a new §15 Step I (v1.0 SHIP only) "Canonical-sources audit for closeout deliverables" that explicitly checks each closeout deliverable against its source-priority list before SHIP is declared. This makes the audit a routine §15 checkpoint rather than a per-deliverable template-buried specification. The §15 Step I addition deserves dedicated OS-amendment session with other §15 refinements; deferring it until OPEN-ORG-016 Phase 3 has run for a few sessions and refinements have surfaced.
+
+**Trigger condition:** Phase 2 workable in any session with 1-2 hours dedicated audit time. Could be combined with OPEN-ORG-016 Phase 1 back-fill if both target the same earlier closure arcs. Phase 3 deferred until OS-amendment session is opportune.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing critical for current Capotauro v2.0 SHIP — Phase 1's anthology and documentation suite fixes are the load-bearing ones for the v2.0 timeline. Phase 2 deliverables are improvements to programme infrastructure, not blockers.
+
+**History:**
+- 18 May 2026 Session 133 Patch 0449b — Entry registered with Phase 1 landed: `templates/anthology_chapter_template.md` line 187 source priority expanded to include sketches (Tier 4 verbatim primary), `documentation_suite/reasoning-<paper>.md` (Tier 4 secondary), `documentation_suite/development-<paper>.md` (Tier 3 vignettes), and `founders_voice/NNN_*.md` (organizational vision) ahead of the existing mechanism → philosophy → reviews → lay-summary → .tex priority. `templates/paper_completion_checklist.md` C13 updated to reference expanded source set with rationale paragraph. `templates/documentation-suite.md` new "Input sources at SHIP-time production" section added covering 9-input-source priority list plus per-file source priority within that list. Phases 2 and 3 deferred to future-window dedicated session(s).
+
