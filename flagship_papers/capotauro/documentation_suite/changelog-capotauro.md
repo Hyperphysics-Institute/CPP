@@ -12,6 +12,48 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
+## Version 2.0 v0.8.1 (DRAFT) — 18 May 2026 (Session 134, Patch 0456)
+
+**Self-review polish pass: four consistency fixes flagged by paper-wide audit pre-reviewer-rounds.** Title block bumped from `Version 2.0 v0.8 (DRAFT)` to `Version 2.0 v0.8.1 (DRAFT) --- 18 May 2026`. The v0.8.1 deliverable is a polish sub-version capturing four small but reviewer-facing consistency fixes identified by a comprehensive paper-wide audit conducted between the v0.8 substantive content drafting completion (Patch 0455) and the v0.9 external reviewer rounds. No substantive content changes; the v0.9 version increment is reserved for reviewer-round work per programme convention.
+
+Follows the v0.8 deliverable (§14 FI Summary extension at Patch 0455) which completed the substantive content rewrite of the v2.0 paper trajectory. The audit identified four small inconsistencies that would otherwise consume reviewer attention on trivia: (1) §7 theorem statement said "ten foundational inputs" while §14 was titled "Twelve foundational inputs"; (2) §11.5 sin²θ_13 paragraph said "NOT a v1.0 Capotauro falsifier" while the η_B paragraph said "v1.0/v2.0"; (3) same inconsistency for §11.5 δ_CP paragraph; (4) §10 close said "empirical content at v1.0 is the single prediction" without v2.0 cross-sector substrate-handle context.
+
+**Polish edits in this patch**:
+
+- **§7 theorem statement (line 753)**: clarified the 10-FI v1.0 vs 12-FI v2.0 distinction. Previously: "rests on ten foundational inputs (FI-C-1 through FI-C-10, enumerated in §sec:fi_summary)..."; now: "rests on ten foundational inputs (FI-C-1 through FI-C-10, the v1.0 set underwriting the K3-doublet primary content of Theorem thm:composite_cap_we; the v2.0 paper additionally registers FI-C-RC-1 + FI-C-RC-2 underwriting the substrate-locality theorem and cross-sector unification theorems, bringing the total v2.0 FI inventory to twelve; full enumeration in §sec:fi_summary)". The K3-doublet theorem proper still rests on 10 v1.0 FIs; the v2.0 Reading-C-FIs underwrite the additional substrate-locality theorem and cross-sector unification work — this is now explicit at the theorem-statement level rather than only at §14.
+
+- **§11.5 sin²θ_13 paragraph (line 1434–1435)**: paragraph title and body updated from "NOT a v1.0 Capotauro falsifier" framing to "NOT a v1.0/v2.0 Capotauro falsifier" framing, matching the η_B paragraph treatment in Patch 0452. Body adjusted to "The Capotauro paper at v1.0 and v2.0 makes no prediction for $\\sin^2\\theta_{13}$" and "registered for SF-2 v2.0+ work, not as a Capotauro claim at either version".
+
+- **§11.5 δ_CP paragraph (line 1437–1438)**: title and body updated similarly; body extended with explicit cross-references to Q7 cosmological-nucleation scoping (§sec:open_q7_cosmological_nucleation) for sub-claim (a) reframing and to §sec:open_subclaim_b + §sec:open_n_hat_layer3 for the sub-claim (b) magnitude mechanism partial closure + Layer 3 promotion of $\\hat{n}$. The δ_CP absence is now explicitly framed against the v2.0 open-work inventory.
+
+- **§10 close (line 1361)**: extended the v1.0 single-prediction statement with a v2.0 empirical-footprint expansion paragraph noting that the substrate-physics handles from Theorems thm:theo_sd_chir_1 and thm:theo_sd_chir_2 extend the empirical content at v2.0, feed sector-specific Layer 4 projections in SF-2 v2.0+ and SM-2 v2.0+ flagship work, and become operative empirical falsifiers (Falsifiers 6, 7) once the Layer 4 closures are achieved. The v1.0 single-prediction statement is preserved as historical; the v2.0 empirical-content footprint is acknowledged explicitly. $\\sin^2\\theta_{13}$ remains re-scoped to SF-2 v2.0+ at both versions.
+
+**Programme-state changes**: NONE. v0.8.1 polish patch is paper-internal consistency fixes; no theorem registrations, no FI registrations, no programme-frontier-state changes.
+
+**Compile-readiness**: 0 missing labels, 0 missing bibitems verified by paper-wide audit. File length unchanged at 1870 lines (the edits were content reframings within existing paragraphs, not additions). LaTeX environment balance preserved.
+
+**Anti-priorities respected**: NO new theorem registrations; NO Q7.x substantive work; NO manifestations (iv)+(v) substantive work; NO Layer 4 EFT continuum-limit calculations; NO Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$; NO substantive content changes beyond consistency fixes. All edits preserve v1.0 historical framing where present; v2.0 framing extensions are additive only.
+
+**v0.8.1 state at Patch 0456**: §2 reframed (0445) + §3 NEW (0446) + §5 NEW (0447) + §6 NEW (0448) + abstract+§1 rewrite (0450) + §9 master predictions rewrite (0451) + §11 falsifier extensions (0452) + §12 open work rewrite (0453) + §13 Discussion rewrite (0454) + §14 FI Summary extension (0455) + Self-review polish pass (this patch). **The v2.0 paper is now SHIP-candidate-ready at v0.8.1 with reviewer-facing consistency fixes applied.** All substantive v2.0 content is reviewer-visible at flagship-paper rigor; cross-reference, citation, and version-framing consistency verified by paper-wide audit.
+
+**Polish audit findings (for transcript record)**:
+
+- **0 missing labels** across the entire paper (every `\\ref` and `\\eqref` target resolves to a `\\label`).
+- **0 missing bibitems** across the entire paper (every `\\cite` key resolves to a `\\bibitem`).
+- **62 orphaned labels** (defined but not referenced) — these are mostly subsection navigation anchors and equation labels reserved for future cross-references; NOT errors at this stage.
+- **All 11 Falsifier numbering references** verified consistent (Falsifier 1 through Falsifier 11; range references "Falsifiers 2--4", "Falsifiers 5--8", "Falsifiers 9--11" all in correct range).
+- **All FI-C-N references** verified consistent (FI-C-1 through FI-C-10 + FI-C-RC-1 + FI-C-RC-2 + FI-C-N as generic placeholder).
+- **Title-page chain** verified: title block / abstract / keywords / §1 introduction / theorem statement / FI Summary all consistent at v0.8.1 framing.
+
+**Forward queue post-Patch 0456 (v0.9+ trajectory)**:
+
+- **v0.9 / v0.10**: reviewer rounds (ChatGPT + CoPilot + Grok per programme convention). The polished v0.8.1 is the SHIP-candidate submitted for external review. Reviewer feedback consolidated into polish patches; SHIP-readiness convergence assessment determines when reviewer feedback is fully addressed.
+- **v1.0 SHIP**: title block bump to `Version 2.0 v1.0 (SHIPPED)`; programme-state changes register THEO-SD-CHIR-1 + THEO-SD-CHIR-2 as paper-publication-confirmed; `research_frontier.md` updates (OPEN-SM-4 status update; OPEN-SD-CHIR-PRIMITIVE umbrella status update); `paper_catalog.md` Capotauro row updated to v2.0 SHIPPED; OSF DOI re-registration with v2.0 content; binary artifact workflow (PDF generation + archival deposit).
+
+Estimated 2–5 sessions to v2.0 v1.0 SHIP from current v0.8.1 state. The v0.8.1 state is **SHIP-candidate-ready with self-review polish applied**, awaiting external reviewer rounds.
+
+---
+
 ## Version 2.0 v0.8 (DRAFT) — 18 May 2026 (Session 134, Patch 0455)
 
 **§14 Foundational Input Summary extension: 10 → 12 FIs (FI-C-RC-1 + FI-C-RC-2 added; FI-C-7 extended with SM-2 v1.0 §5+§6+§10+Glossary); axiom-accounting expansion with Picture B substrate-orientation-field framework realization at v2.0.** Title block bumped from `Version 2.0 v0.7 (DRAFT)` to `Version 2.0 v0.8 (DRAFT) --- 18 May 2026`. The v0.8 deliverable extends §14 from v1.0's 10-FI inventory (FI-C-1 through FI-C-10) to v2.0's 12-FI inventory (10 v1.0 FIs preserved + 2 NEW v2.0 Reading-C-foundational-input entries), extends FI-C-7 with the v2.0 SM-2 v1.0 §5+§6+§10+Glossary substrate-physics inheritance, and substantively extends §14.2 + §14.3 + §14.4 with v2.0 Picture B framework realization framing.
