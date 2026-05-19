@@ -12,6 +12,50 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
+## Version 2.0 v0.7 (DRAFT) — 18 May 2026 (Session 134, Patch 0454)
+
+**§13 Discussion rewrite with programme-pattern observations from v2.0 cross-sector unification work.** Title block bumped from `Version 2.0 v0.6 (DRAFT)` to `Version 2.0 v0.7 (DRAFT) --- 18 May 2026`. The v0.7 deliverable extends §13 from v1.0's 4-subsection structure (programme_pattern + cross_sector_implications + methodological_observations + outlook) to v2.0's 5-subsection structure by inserting a NEW v2.0 programme-pattern observations subsection between §13.3 methodological_observations and §13.4 outlook, and substantively extending §13.1 + §13.2 + §13.5 outlook with v2.0 content.
+
+Follows the v0.6 deliverable (§12 open work rewrite at Patch 0453) by completing the paper-back-matter alignment with v2.0 three-way cross-sector unification + Reading C closure trajectory saturation. After this patch, the v2.0 paper has structurally complete coverage through §13 Discussion; the only remaining substantive rewrite is §14 Foundational Input Summary (v0.8 target).
+
+**§13 edits in this patch**:
+
+- **§13 intro paragraph rewrite**: extends from "Four topics" to "Five topics" enumeration; flags v0.7 extensions to §13.1 (v2.0 three-way unification pattern instance), §13.2 (v2.0 internalized-vs-downstream distinction), and §13.5 outlook (v2.0 cross-sector experimental signatures); introduces NEW §13.4 sec:v2_programme_patterns.
+
+- **§13.1 sec:programme_pattern v2.0 extension paragraph**: adds "v2.0 strengthening: same substrate handle across three sectors" paragraph at end of subsection. Notes the integer-count pattern strength ($V_{\text{cage}} = 12$, $d_E = 2$) applies identically across three sectors via Substrate-Locality Unification (Corollary~\\ref{cor:substrate_locality_unification}); probability-of-coincidence argument scales accordingly from single-sector to three-sector structural constraint.
+
+- **§13.2 sec:cross_sector_implications rewrite**: restructures the cross-sector implications from v1.0's flat 5-sector enumeration to v2.0's two-layer structure:
+  - **Internalized at substrate level (v2.0 NEW)**: three internal layers — W-bracelet $\\leftrightarrow$ K3-doublet unification (THEO-SD-CHIR-1); qDP/eDP $\\leftrightarrow$ K3-doublet unification (THEO-SD-CHIR-2); OPEN-SD-CHIR-PRIMITIVE umbrella demonstrated.
+  - **Downstream-paper Layer 4 work (preserved from v1.0 with v2.0 framing)**: SM-2, SM-4, SM-5, SF-2, SF-4 sector entanglements reframed as Layer 4 work downstream of the substrate-level unification rather than the only cross-sector content. SM-4 advancement from v1.0 PARTIAL CLOSURE (sub-claim (c) only) to v2.0 EXTENDED PARTIAL CLOSURE (sub-claims (c) + (b)-magnitude) noted.
+  - **Closing paragraph rewrite**: distinguishes v1.0 implicit unification thesis (corpus-level FI inheritance pattern) from v2.0 explicit unification thesis (three sectors share substrate handle $\\chi/6$ via flagship-paper theorem).
+
+- **§13.4 NEW sec:v2_programme_patterns**: five paragraph observations:
+  - **(1) Three-step closure pattern**: structurally identical four-step proof chain across THEO-CAP-1 + THEO-SD-CHIR-1 + THEO-SD-CHIR-2 (substrate-locality theorem + Substrate-Locality Unification + cage-shell factor + pairing-convention identification); templated for future-window manifestations (iv)+(v); programme-pattern observation that once substrate-locality is established at Layer 2 and unification at Layer 3, sector-specific closures reduce to two-step work.
+  - **(2) Magnitude-level vs mechanism-level unification distinction**: v2.0 unification at magnitude level ($|M| = \\chi/6$ identical across sectors) but mechanism-level distinct ($\\zeta$ generators: 3D inversion / 4D icosahedral-center inversion / combined $CP$; stabilizers: $\\Dsix$ / Petrie $\\Dsix$ / $D_{5d}$; matter-doublet structures: $E(\\Sthree)$ / $E_2 \\oplus E_1$ / $A_{1g} \\oplus A_{2u}$). Magnitude-level unification is structurally weaker than mechanism-level but stronger than single-sector matching; distinction important for falsification framing.
+  - **(3) Register-then-resolve discipline**: methodological signature emerged at Patch 0428; preserves reviewer visibility into closure trajectory structure; examples enumerated (Q1$'$+Q1$'$.A; Q5-PAIRING; Q6-PAIRING; Q7).
+  - **(4) Theorem-naming convention (THEO-CAP-N + THEO-SD-CHIR-N umbrella registry)**: THEO-CAP-1 preserved as umbrella anchor; THEO-SD-CHIR-N organizes cross-sector unification theorems; THEO-SD-CHIR-3/4 reserved for future manifestation (iv)/(v) closures.
+  - **(5) Substrate-foundational vs substrate-derived FI distinction**: epistemic-level stratification within FI inventory introduced at v2.0; FI-C-RC-1 substrate-foundational (postulate status); FI-C-9 substrate-derived (derived from FI-C-RC-1 + FI-C-RC-2 via perturbative-distance-ratio constraint). Layer 3 promotion targets operate at substrate-foundational level.
+
+- **§13.5 sec:outlook v2.0 extension**: adds NEW bullet ("v2.0 cross-sector experimental signatures") covering W-bracelet V-A coupling at HL-LHC Run 4-5 / FCC-ee (SF-2 v2.0+ Layer 4 closure) and qDP/eDP chiral-polarity-bias measurements (SM-2 v2.0+ Layer 4 closure); closing paragraph rewrites to reflect v2.0 expanded empirical footprint (11 falsification routes vs v1.0's 5) and v3.0+ trajectory.
+
+**Programme-state changes**: NONE registered this patch. No new theorem registrations, no new FI registrations, no programme-frontier-state changes. The v0.7 patch is a §13 Discussion rewrite consolidating cross-sector content and programme-pattern observations emerging from the v2.0 work; no substantive new physics derivation.
+
+**Compile-readiness**: 4 `\\cite` keys in §13 (abshier_sf4, abshier_ss7, abshier_theorem_registry, juno_2025) verified resolving against existing inline `\\bibitem` entries (no new bibliography entries this patch); 27 `\\ref`/`\\eqref` targets verified resolving against existing `\\label` entries. LaTeX environment balance verified: 0 equation, 2 itemize, 2 enumerate, 0 tabular, 0 center — all begin/end paired. File length 1834 → 1861 lines (+27 lines net). §13 line range expanded from 53 lines to 80 lines.
+
+**Anti-priorities respected**: NO new theorem registrations; NO Q7.x substantive work (§13.5 v2.0 cross-sector experimental signatures references SF-2 v2.0+ + SM-2 v2.0+ Layer 4 closure work as future; the §13.4 NEW programme-pattern observations include the three-step closure pattern templating manifestations (iv)+(v) but no substantive sector-specific identification work attempted); NO Layer 4 EFT continuum-limit calculations (SF-2 v2.0+ + SM-2 v2.0+ Layer 4 work registered as v3.0/v4.0 priority items in §12 open work and §13 outlook); NO Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$ (registered as future-window deepest open work in §13.4 observation (5)); v1.0 §13.1 + §13.2 + §13.3 + §13.5 content preserved at content level with v2.0 framing extensions.
+
+**v0.7 state at Patch 0454**: §2 reframed (0445) + §3 NEW (0446) + §5 NEW (0447) + §6 NEW (0448) + abstract+§1 rewrite (0450) + §9 master predictions rewrite (0451) + §11 falsifier extensions (0452) + §12 open work rewrite (0453) + §13 Discussion rewrite (this patch). The paper's programme-pattern observations section is now structurally aligned with the v2.0 three-way cross-sector unification + Reading C closure trajectory saturation; the methodological signatures of the v2.0 work are documented for future cross-sector closure work in the CPP corpus.
+
+**Forward queue post-Patch 0454 (v0.8+ trajectory per outline §4.1)**:
+
+- **v0.8**: §14 (currently `sec:fi_summary`) extension with FI-C-RC-1 + FI-C-RC-2 + SM-2 v1.0 §5+§6+Glossary as paper-level foundational input; axiom-accounting expansion to 4 CPP axioms (A1, A2, A4, A7) per Picture B substrate-orientation-field framework.
+- **v0.9 / v0.10**: reviewer rounds (ChatGPT + CoPilot + Grok per programme convention); polish patches incorporating reviewer feedback; final SHIP-readiness convergence assessment.
+- **v1.0 SHIP**: title block bump to `Version 2.0 v1.0 (SHIPPED)`; programme-state changes register THEO-SD-CHIR-1 + THEO-SD-CHIR-2 as "registered with paper venue" status; `research_frontier.md` updates; `paper_catalog.md` Capotauro row updated to v2.0 SHIPPED; OSF DOI re-registration; binary artifact workflow.
+
+Estimated 2–6 sessions to v2.0 v1.0 SHIP from current v0.7 state (per outline §4.1 3–7 sessions estimate at v0.6 minus 1 session consumed for v0.7 = 2–6 remaining).
+
+---
+
 ## Version 2.0 v0.6 (DRAFT) — 18 May 2026 (Session 134, Patch 0453)
 
 **§12 open work rewrite as Q7 cosmological-nucleation scoping + manifestations (iv)+(v) + Q1$'$+Q1$'$.A Layer 3 promotion + Layer 4 EFT projections + Roadmap to v3.0+.** Title block bumped from `Version 2.0 v0.5 (DRAFT)` to `Version 2.0 v0.6 (DRAFT) --- 18 May 2026`. The v0.6 deliverable extends §12 from v1.0's 6-subsection open-work inventory (sub-claim (a), sub-claim (b), Q11, FI-C-10, experimental route, Roadmap to v2.0+) to v2.0's 10-subsection open-work inventory by reframing sub-claim (a) and sub-claim (b) under Reading C, preserving Q11/FI-C-10/experimental route at v1.0 content with v2.0 framing extensions, and adding five NEW subsections covering Q7 cosmological-nucleation scoping (sketch §21 substantive content), Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$ (deepest v2.0+ open work), OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv)+(v), Layer 4 EFT continuum-limit projections (SF-2 v2.0+ + SM-2 v2.0+), and Roadmap to v3.0+ and beyond.
