@@ -12,7 +12,64 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
-## Version 2.0 v0.3 (DRAFT) — 18 May 2026 (Session 134, Patch 0449)
+## Version 2.0 v0.4 (DRAFT) — 18 May 2026 (Session 134, Patch 0451)
+
+**§9 master predictions rewrite consolidating cross-sector predictions; remediation of Patch 0450 in-file Patch 0449 → 0450 renumbering bug.** Title block bumped from `Version 2.0 v0.3 (DRAFT)` to `Version 2.0 v0.4 (DRAFT) --- 18 May 2026`.
+
+This patch has two substantive contributions: **(A)** the v0.4 deliverable per outline §4.1 — §9 master predictions rewrite consolidating cross-sector Δp_LR (K3) + V-A coupling at massless helicity limit (W) + chiral-polarity-bias on -qCP centers (qDP/eDP) into a unified prediction set; **(B)** remediation of a Patch 0450 commit-time bug in which the in-file Patch 0449 → 0450 renumbering str_replace edits were applied to the working tree but never staged before `git commit -m "..."` was run (instead of `git commit -a -m "..."` or explicit `git add -u`), causing the renumbering to be omitted from the committed diff that landed on origin. The Patch 0450 COMMIT MESSAGE is correctly named "Patch 0450"; only the IN-FILE Patch 0449 references inside the .tex and changelog were left unfixed by the bug.
+
+### (A) v0.4 §9 master predictions rewrite
+
+The v0.4 deliverable reframes §9 from v1.0's K3-only "Primary Empirical Prediction: $\Delta p_{LR} = \chi/6$" framing to v2.0's three-sector "Master Predictions: Cross-Sector Substrate-Physics Handles" framing, preserving the K3-doublet content as the load-bearing primary empirical prediction and adding W-bracelet, qDP/eDP, cross-sector consolidation, and future-window subsections. Follows the v0.3 deliverable (abstract + §1 introduction rewrite at Patch 0450) by extending the predictions section to reflect the cross-sector body content established in §3 + §5 + §6 (Patches 0446–0448).
+
+§9 edits in this patch:
+
+- **§9 `\\section` title rename**: "Primary Empirical Prediction: $\\DeltapLR = \\chi/6$" → "Master Predictions: Cross-Sector Substrate-Physics Handles".
+- **§9 intro paragraph rewrite**: replaces v1.0's K3-only "single primary empirical prediction" framing with v2.0's three-sector consolidation framing; references all three programme-level theorems; distinguishes K3-doublet primary empirical prediction from W-bracelet + qDP/eDP substrate-physics-handle predictions feeding sector-specific Layer 4 work in sibling-flagship papers.
+- **§9.6.5 sec:nontriviality_caveats v2.0 extension paragraph**: appended one paragraph at the end of the existing §9.6.5 content addressing the v2.0 cross-sector unification's strengthening of the v1.0 single-sector probability-of-coincidence argument.
+- **§9.7 NEW sec:w_bracelet_prediction**: W-bracelet sector substrate handle prediction $|M^W|_{\\text{substrate}} = \\chi/6 \\approx 0.0394$ via Theorem~\\ref{thm:theo_sd_chir_1}; `eq:w_substrate_handle` registered; two subsubsections (`sec:w_layer4_distinction`; `sec:w_falsifiability` with three falsification routes).
+- **§9.8 NEW sec:qdp_edp_prediction**: qDP/eDP sector substrate handle prediction $|M^{qDP}|_{\\text{substrate}} = \\chi/6 \\approx 0.0394$ via Theorem~\\ref{thm:theo_sd_chir_2}; `eq:qdp_substrate_handle` registered; three subsubsections (`sec:qdp_layer4_distinction`; `sec:edp_neutral_reference` documenting eDP as chirality-neutral reference baseline; `sec:qdp_falsifiability` with two falsification routes).
+- **§9.9 NEW sec:cross_sector_predictions**: cross-sector predictions consolidation with manifestation comparison table (LaTeX `tabular` environment, 5 columns: Sector / Substrate handle / Theorem / Layer 4 route / Empirical anchor) listing all three sectors; joint-prediction interpretation discussion; strength-of-joint-prediction discussion (the v2.0 substantive content beyond v1.0 is the magnitude-level identity across three structurally distinct sector mechanisms); substrate-handle vs Layer 4 distinction summary applied across all three sectors.
+- **§9.10 NEW sec:future_window_predictions**: future-window predictions for OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry; five-way closure prediction $|M^{\\text{(iv)}}| = |M^{\\text{(v)}}| = \\chi/6$ at substrate level; anticipatory status flagging at v2.0 with sector-specific $\\zeta^{\\text{(iv)}}$ and $\\zeta^{\\text{(v)}}$ generators awaiting identification; falsification framing.
+
+### (B) Patch 0450 in-file renumbering remediation
+
+Five in-file Patch 0449 → 0450 references that were supposed to be applied as part of Patch 0450 but were lost in working-tree-vs-staging confusion at commit time:
+
+1. `capotauro.tex` line 69 (`\\author` footnote): "Patches 0444--0449" → "Patches 0444--0448 plus 0450 (the 0449 slot was assigned to a parallel organizational workstream)".
+2. `capotauro.tex` line 111 (§1.1 `sec:cap_problem` footnote): same renumbering pattern.
+3. `changelog-capotauro.md` line 15 (v0.3 entry header): "Patch 0449" → "Patch 0450" with renumbering-rationale paragraph documenting the conflict-resolution and this remediation.
+4. `changelog-capotauro.md` line 43 ("v0.3 state at Patch 0449"): renumbered to Patch 0450.
+5. `changelog-capotauro.md` line 45 ("Forward queue post-Patch 0449"): renumbered to Patch 0450.
+
+The Patch 0450 commit message is correct as committed; this remediation only fixes the in-file content that should have accompanied the rename.
+
+**Programme-state changes**: NONE registered this patch. No new theorem registrations, no new FI registrations, no programme-frontier-state changes. The v0.4 patch is a §9 master predictions rewrite consolidating the cross-sector content established in §3 + §5 + §6.
+
+**Compile-readiness**: 5 `\\cite` keys in §9 (abshier_grok_capotauro_2025, abshier_research_frontier, abshier_sf2, abshier_sm2, planck_2018) verified resolving against existing inline `\\bibitem` entries (no new bibliography entries this patch); 13 `\\ref`/`\\eqref` targets in v0.4 NEW subsections verified resolving against existing or new `\\label` entries. LaTeX environment balance verified: 2 equation, 1 itemize, 2 enumerate, 1 tabular, 1 center — all begin/end paired. File length 1630 → 1716 lines (+86 lines net). §9 line range 130 lines → 216 lines.
+
+**Anti-priorities respected**: NO new theorem registrations; NO Q7.x substantive work (Q7 cosmological-timing flagged as future-window in §9.10 manifestation (v)); NO manifestations (iv)+(v) substantive work; NO Layer 4 EFT continuum-limit calculations; NO Q1$'$+Q1$'$.A Layer 3 promotion of $\\hat{n}$; v1.0 §9.1–§9.6 K3-doublet content preserved at content level with one v2.0-strengthening addendum paragraph.
+
+**v0.4 state at Patch 0451**: §2 reframed (Patch 0445) + §3 NEW (Patch 0446) + §5 NEW (Patch 0447) + §6 NEW (Patch 0448) + abstract+§1 rewrite (Patch 0450) + §9 master predictions rewrite (this patch). The paper's empirical-content section is now structurally aligned with the v2.0 three-way cross-sector unification.
+
+**Lesson logged for future patches** (per the §15 close handover discipline): after str_replace edits in a cherry-pick or rebase workflow, always use `git commit -a -m "..."` rather than `git commit -m "..."` to ensure working-tree changes get staged. Alternatively, use explicit `git add -u` before commit. The default `git commit` (without `-a`) commits only staged changes, not working-tree modifications, which can silently drop edits if the workflow mixes cherry-pick staging with subsequent working-tree edits.
+
+**Forward queue post-Patch 0451 (v0.5+ trajectory per outline §4.1)**:
+
+- **v0.5**: §11 (currently `sec:falsifier`) extension with cross-sector falsifiers from THEO-SD-CHIR-1 + THEO-SD-CHIR-2 + umbrella three-way unification claim.
+- **v0.6**: §12 (currently `sec:open_work`) rewrite as Q7 cosmological-nucleation scoping (sketch §21 substantive content); manifestations (iv)+(v) registered as open-work items.
+- **v0.7**: §13 (currently `sec:discussion`) rewrite with programme-pattern observations.
+- **v0.8**: §14 (currently `sec:fi_summary`) extension with FI-C-RC-1 + FI-C-RC-2 + SM-2 v1.0 §5+§6+Glossary as paper-level foundational input.
+- **v0.9 / v0.10**: reviewer rounds; polish patches; SHIP-readiness convergence assessment.
+- **v1.0 SHIP**: title block bump to `Version 2.0 v1.0 (SHIPPED)`; programme-state changes; `research_frontier.md` updates; `paper_catalog.md` Capotauro row updated; OSF DOI re-registration.
+
+Estimated 5–9 sessions to v2.0 v1.0 SHIP from current v0.4 state.
+
+---
+
+## Version 2.0 v0.3 (DRAFT) — 18 May 2026 (Session 134, Patch 0450)
+
+**Abstract + §1 introduction rewrite for v2.0 three-way cross-sector unification headline.** This patch was originally drafted as Patch 0449 (commit `c593982` in the upstream working clone); on completion of drafting the workstream discovered that the 0449 slot had been claimed by a parallel organizational workstream (commit `3362094` on origin: opus_voice/ + methods_catalogue/ established; OPEN-ORG-016 registered for catalog completion). The Capotauro v0.3 work was renumbered to Patch 0450 to preserve patch-number uniqueness as a globally-unique commit-identity marker per CPP archival convention. Five in-content references to Patch 0449 (two in capotauro.tex footnotes; three in this changelog) were supposed to be renumbered as part of the Patch 0450 commit but were lost in the working-tree-vs-staging confusion at commit time; the renumbering was applied retroactively as part of Patch 0451 (this file's preceding entry) and is reflected in the current text above and below this paragraph.
 
 **Abstract + §1 introduction rewrite for v2.0 three-way cross-sector unification headline.** Title block bumped from `Version 2.0 v0.2 (DRAFT)` to `Version 2.0 v0.3 (DRAFT) --- 18 May 2026`. The v0.3 deliverable reframes the paper's most-read content (abstract, keywords, Plain Language Summary, §1 introduction subsections §1.1–§1.7) from the v1.0 K3-only `|M| = χ/6` headline to the v2.0 three-way cross-sector unification `|M^K3| = |M^W| = |M^qDP| = χ/6` headline.
 
@@ -40,9 +97,9 @@ This patch follows the v0.2 deliverable (§3 NEW Substrate-Locality Theorem at P
 
 **Anti-priorities respected** (per outline §4.4 + Session 133 close handover): NO new theorem registrations; NO Q7.x substantive work; NO manifestations (iv)+(v) substantive work (only enumerated in §1.3 + §1.5 closing as future-window with anticipated three-step closure pattern); NO Layer 4 EFT continuum-limit calculations (SF-2 + SM-2 v2.0+ Layer 4 work registered as out-of-scope items in §1.3 but not advanced); NO Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$ (registered as future-window in §1.3); v1.0 body content §2 reframed (Patch 0445), §3 NEW (Patch 0446), §4–§6 K3-doublet chain preserved at content level, §7 NEW W-bracelet (Patch 0447), §8 NEW qDP/eDP (Patch 0448), §9+ untouched.
 
-**v0.3 state at Patch 0449**: §2 reframed (Patch 0445) + §3 NEW substrate-locality (Patch 0446) + §5 NEW W-bracelet sector (Patch 0447) + §6 NEW qDP/eDP sector (Patch 0448) + abstract+§1 rewrite (this patch). The paper's most-read content (abstract, keywords, Plain Language Summary, §1 introduction) is now structurally aligned with the v2.0 three-way cross-sector unification headline; the paper's body delivers the unification across §3 (substrate-locality theorem), §4–§6 (K3-doublet derivation chain inherited from v1.0), §7 NEW (W-bracelet sector with THEO-SD-CHIR-1), and §8 NEW (qDP/eDP sector with THEO-SD-CHIR-2 + three-way unification corollary).
+**v0.3 state at Patch 0450**: §2 reframed (Patch 0445) + §3 NEW substrate-locality (Patch 0446) + §5 NEW W-bracelet sector (Patch 0447) + §6 NEW qDP/eDP sector (Patch 0448) + abstract+§1 rewrite (Patch 0450; the intervening 0449 slot was assigned to a parallel organizational workstream). The paper's most-read content (abstract, keywords, Plain Language Summary, §1 introduction) is now structurally aligned with the v2.0 three-way cross-sector unification headline; the paper's body delivers the unification across §3 (substrate-locality theorem), §4–§6 (K3-doublet derivation chain inherited from v1.0), §7 NEW (W-bracelet sector with THEO-SD-CHIR-1), and §8 NEW (qDP/eDP sector with THEO-SD-CHIR-2 + three-way unification corollary).
 
-**Forward queue post-Patch 0449 (v0.4+ trajectory per outline §4.1)**:
+**Forward queue post-Patch 0450 (v0.4+ trajectory per outline §4.1)**:
 
 - **v0.4**: §9 (currently `sec:dplr`) master predictions rewrite consolidating cross-sector $\Delta p_{LR}$ (K3) + V-A coupling at massless helicity limit (W) + chiral-polarity-bias on -qCP centers (qDP/eDP) into a unified prediction set; §10 (currently `sec:sin2theta13`) potentially absorbed into §9 or §13 discussion.
 - **v0.5**: §11 (currently `sec:falsifier`) extension with cross-sector falsifiers from THEO-SD-CHIR-1 + THEO-SD-CHIR-2 + umbrella three-way unification claim; cumulative falsifier set updated to v2.0 with FI-C-RC-1 + FI-C-RC-2 falsifiers added (e.g., $\hat{n}$ existence falsifier; vertex-aligned reading $\hat{n} = v_{\text{host}}$ kinematic-energetic-substrate-physics falsifier).
