@@ -12,6 +12,53 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
+## Version 2.0 v0.8 (DRAFT) — 18 May 2026 (Session 134, Patch 0455)
+
+**§14 Foundational Input Summary extension: 10 → 12 FIs (FI-C-RC-1 + FI-C-RC-2 added; FI-C-7 extended with SM-2 v1.0 §5+§6+§10+Glossary); axiom-accounting expansion with Picture B substrate-orientation-field framework realization at v2.0.** Title block bumped from `Version 2.0 v0.7 (DRAFT)` to `Version 2.0 v0.8 (DRAFT) --- 18 May 2026`. The v0.8 deliverable extends §14 from v1.0's 10-FI inventory (FI-C-1 through FI-C-10) to v2.0's 12-FI inventory (10 v1.0 FIs preserved + 2 NEW v2.0 Reading-C-foundational-input entries), extends FI-C-7 with the v2.0 SM-2 v1.0 §5+§6+§10+Glossary substrate-physics inheritance, and substantively extends §14.2 + §14.3 + §14.4 with v2.0 Picture B framework realization framing.
+
+Follows the v0.7 deliverable (§13 Discussion rewrite at Patch 0454). After this patch, the v2.0 paper has structurally complete coverage through §14 Foundational Input Summary — the final substantive content rewrite of the v2.0 paper trajectory. Remaining v0.9+ trajectory: reviewer rounds (ChatGPT + CoPilot + Grok) and SHIP-readiness convergence assessment.
+
+**§14 edits in this patch**:
+
+- **§14 intro paragraph rewrite**: extends from "FI-C-1 through FI-C-10" v1.0 framing to "FI-C-1 through FI-C-10 + FI-C-RC-1 + FI-C-RC-2" v2.0 framing; introduces the substrate-foundational vs substrate-derived FI epistemic-level distinction per §13.4 sec:v2_programme_patterns observation (5); references Lemma~\\ref{lem:chi_epsilon} for FI-C-9 substrate-derived status under FI-C-RC-1 + FI-C-RC-2.
+
+- **§14.1 sec:ten_fis (relabeled subsection title "Ten" → "Twelve foundational inputs")**: two NEW v2.0 FI items + extended FI-C-7 + FI-C-10 v2.0 cross-sector application:
+  - **FI-C-7 EXTENDED**: from v1.0's "DP species taxonomy + qDP/hDP/eDP linear ZBW screening" to v2.0's "DP species taxonomy + qDP/hDP/eDP linear ZBW screening + Linear ZBW vs Orbital ZBW substrate characterization + chiral-polarity-bias mechanism on $-$qCP centers"; source extended to SM-2 v1.0 §5+§6+Glossary + §10; rigor extended to theorem level for Linear/Orbital ZBW substrate characterization (SM-2 v1.0 SHIPPED).
+  - **FI-C-10 v2.0 cross-sector application note**: appended note that the cage-shell extension now applies uniformly across three sectors via Corollary~\\ref{cor:substrate_locality_unification}.
+  - **FI-C-RC-1 NEW**: primitive 4D direction $\\hat{n} \\in \\mathbb{R}^4$ as substrate-foundational input; on the same epistemic footing as the existence of the 600-cell substrate itself; magnitude fixed by perturbative-distance-ratio constraint via Lemma~\\ref{lem:chi_epsilon}; Layer 3 promotion via Q1$'$+Q1$'$.A registered as deepest v2.0+ open work; Falsifier 9.
+  - **FI-C-RC-2 NEW**: vertex-aligned reading $\\hat{n} = v_{\\text{host}}$; Layer 2 via three converging arguments (kinematic, energetic, substrate-physics); underwrites the substrate-locality theorem; structurally weaker than FI-C-RC-1; Falsifier 10.
+
+- **§14.2 sec:four_axioms v2.0 extension paragraph**: adds "v2.0 extension: A3 elevated to most load-bearing via FI-C-RC-1 substrate-foundational status" paragraph noting that the Picture B substrate-orientation-field framework is substantively realized at v2.0 via Reading C; A3 is now the single most load-bearing axiom (underwrites FI-C-RC-1's substrate-foundational status); A4 underwrites cage-shell averaging across three sectors; A7 underwrites substrate-stress framework; A1 remains foundational at DI-bit exchange primitive level; Layer 3 promotion target of Q1$'$+Q1$'$.A would derive FI-C-RC-1 from A3 at theorem level, completing axiom-to-FI derivation chain. Axiom inventory preserved at v1.0 set (A1, A3, A4, A7).
+
+- **§14.3 sec:cross_sector_inheritance v2.0 extension**: two NEW v2.0 paragraphs:
+  - **SM-2 v1.0 §5+§6+§10+Glossary inheritance**: extends v1.0 FI-C-7 inheritance from taxonomic + screening-mechanism content to full Linear/Orbital ZBW substrate-physics characterization + chiral-polarity-bias mechanism. Rigor-preserving: SM-2 v1.0 was SHIPPED with full theorem-level content.
+  - **Picture B substrate-orientation-field framework as primitive-level inheritance**: Picture B no longer working-sketch concept at v2.0; Reading C closure trajectory's Layer 2 establishment of FI-C-RC-1 + FI-C-RC-2 realizes Picture B substantively; new primitive-level inheritance layer: Picture B → FI-C-RC-1 + FI-C-RC-2 → Substrate-Locality Theorem → Substrate-Locality Unification → three sector-specific theorems. Internalized to v2.0 paper rather than external.
+
+- **§14.4 sec:templates_future v2.0 status updates**: four v1.0 templates updated with v2.0 status; one NEW v2.0 template added:
+  - **Capotauro → SF-2 v2.0+ for $\\sin^2\\theta_{13}$**: v2.0 status — substrate handle now derived to Layer 3 within Capotauro v2.0 itself (Theorem thm:theo_sd_chir_1); SF-2 v2.0+ Layer 4 V-A coupling becomes immediate next cross-sector closure path.
+  - **Capotauro → SF-4 v5.0+ for $\\delta_{CP}$**: v2.0 status — conditional on Q7 closure + manifestation (v) cosmological-vacuum asymmetry closure; sub-claim (a) reframed as Q7 work.
+  - **Capotauro → cosmology corpus for $\\eta_B$**: v2.0 status — conditional on Q7.3 baryogenesis bridge.
+  - **Capotauro → SS-corpus for FI-C-10**: v2.0 status — applies uniformly across three sectors; SS-corpus closure has higher leverage at v2.0 than at v1.0.
+  - **Capotauro → SM-2 v2.0+ for chiral-polarity-bias EFT continuum-limit (NEW v2.0)**: SM-2 v2.0+ Layer 4 EFT continuum-limit projects qDP/eDP substrate handle (Theorem thm:theo_sd_chir_2) to observable-scale Linear-ZBW-on-$-$qCP stabilization energy.
+  - **Closing paragraph rewrite**: Capotauro at v2.0 is "enhanced cross-sector hub" — inherits from 6 sectors (v1.0 5 + Picture B internalized) and provides input to 5 future cross-sector closures (v1.0 4 + SM-2 v2.0+ NEW). Hub structure as methodological signature of CPP unification thesis.
+
+**Programme-state changes**: NONE registered this patch at theorem-registry or research-frontier level. FI inventory expanded from 10 to 12 entries within the v2.0 paper's foundational input stack; this is a paper-level documentation expansion reflecting the cross-sector body content of Patches 0446-0448 + Reading C closure trajectory, not a new programme-frontier registration. FI-C-RC-1 + FI-C-RC-2 were established as Reading C closure trajectory inputs in Patches 0419-0420; their formal registration in the Capotauro paper's FI stack is a paper-level capture of established programme content.
+
+**Compile-readiness**: 11 `\\cite` keys in §14 (abshier_capotauro_chiral_mechanism_sketch, abshier_capotauro_closure_sketch, abshier_capotauro_subclaim_c_sketch, abshier_sf2, abshier_sf4, abshier_sm1, abshier_sm2, coxeter_1973, juno_2025, nufit_60, planck_2018) verified resolving against existing inline `\\bibitem` entries (no new bibliography entries this patch); 23 `\\ref`/`\\eqref` targets verified resolving against existing `\\label` entries. LaTeX environment balance verified in §14: 0 equation, 3 itemize, 1 enumerate, 0 tabular, 0 center — all begin/end paired. File length 1861 → 1870 lines (+9 lines net; the FI list size expansion is offset by the four v1.0 closure-trajectory paragraphs that were retained and extended rather than added wholesale). §14 line range expanded from 53 lines to 66 lines.
+
+**Anti-priorities respected**: NO new theorem registrations; NO Q7.x substantive work; NO manifestations (iv)+(v) substantive work; NO Layer 4 EFT continuum-limit calculations; NO Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$ (registered as deepest open work, no substantive derivation attempted); v1.0 §14 subsection content preserved at content level with v2.0 framing extensions.
+
+**v0.8 state at Patch 0455**: §2 reframed (0445) + §3 NEW (0446) + §5 NEW (0447) + §6 NEW (0448) + abstract+§1 rewrite (0450) + §9 master predictions rewrite (0451) + §11 falsifier extensions (0452) + §12 open work rewrite (0453) + §13 Discussion rewrite (0454) + §14 FI Summary extension (this patch). **The v2.0 paper now has structurally complete coverage through §14 Foundational Input Summary — the final substantive content rewrite of the v2.0 paper trajectory.** All v2.0 substantive content additions (§3 substrate-locality theorem; §5 W-bracelet sector; §6 qDP/eDP sector; cross-sector master predictions; cross-sector falsifiers; Q7 cosmological-nucleation scoping; manifestations (iv)+(v) anticipatory; Layer 4 EFT projections; programme-pattern observations; Reading C FI registry) are now reviewer-visible at flagship-paper rigor.
+
+**Forward queue post-Patch 0455 (v0.9+ trajectory per outline §4.1)**:
+
+- **v0.9 / v0.10**: reviewer rounds. Per programme convention, three reviewers (ChatGPT + CoPilot + Grok) review the v0.8 SHIP-candidate; reviewer feedback consolidated into polish patches; SHIP-readiness convergence assessment determines when reviewer feedback is fully addressed.
+- **v1.0 SHIP**: title block bump to `Version 2.0 v1.0 (SHIPPED)`; programme-state changes register THEO-SD-CHIR-1 + THEO-SD-CHIR-2 as "registered with paper venue" status (paper-publication-confirmed theorem-registry status); `research_frontier.md` updates (OPEN-SM-4 status update; OPEN-SD-CHIR-PRIMITIVE umbrella status update with three-way demonstrated + manifestations (iv)+(v) open); `paper_catalog.md` Capotauro row updated to v2.0 SHIPPED; OSF DOI re-registration with v2.0 content; binary artifact workflow (PDF generation + archival deposit).
+
+Estimated 2–5 sessions to v2.0 v1.0 SHIP from current v0.8 state. The v0.8 state is SHIP-candidate-ready pending reviewer rounds; the v0.9-v0.10-v1.0 trajectory is review-and-polish work rather than substantive content development.
+
+---
+
 ## Version 2.0 v0.7 (DRAFT) — 18 May 2026 (Session 134, Patch 0454)
 
 **§13 Discussion rewrite with programme-pattern observations from v2.0 cross-sector unification work.** Title block bumped from `Version 2.0 v0.6 (DRAFT)` to `Version 2.0 v0.7 (DRAFT) --- 18 May 2026`. The v0.7 deliverable extends §13 from v1.0's 4-subsection structure (programme_pattern + cross_sector_implications + methodological_observations + outlook) to v2.0's 5-subsection structure by inserting a NEW v2.0 programme-pattern observations subsection between §13.3 methodological_observations and §13.4 outlook, and substantively extending §13.1 + §13.2 + §13.5 outlook with v2.0 content.
