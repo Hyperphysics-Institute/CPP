@@ -703,11 +703,19 @@ All four were Claude-side execution failures, not protocol specification failure
 
 The seed catalog also does not include heuristic strategies from problem-solving outside the closure-trajectory context (e.g., responding to reviewer feedback, scoping new papers, identifying programme-state changes warranting handover protocol).
 
-**Proposed fix:** Two-phase work.
+**Proposed fix:** Three-phase work.
 
 Phase 1 (1-2 dedicated future-window sessions): Back-fill from earlier closure arcs. Read through SF-4 v1.0 paper + documentation suite, SS-9 v1.0 paper + documentation suite, SM-3 + SM-7 + SM-8 papers, EW-1 through EW-5 papers; extract additional Layer 1 techniques + Layer 2 disciplines + Layer 3 heuristics; append entries to `methods_catalogue.md` with canonical citations. Estimated effort: 4-8 hours per closure arc, depending on how systematically the arc's techniques are documented.
 
-Phase 2 (ongoing maintenance): At each future paper SHIP, append new technique/discipline/heuristic entries derived during that paper's development arc. Add this to the §15 Step E registry-update checklist as a per-paper-SHIP item.
+Phase 2 (per-paper-SHIP): At each future paper v1.0 SHIP, the §15 Step E registry-update sweep audits the full paper development arc for new or adapted methods and appends entries. Triggered at v1.0 SHIP events (a few times per year); produces a moderate batch of catalog entries per occurrence. Codified at Patch 0449a as a Step E checklist line.
+
+Phase 3 (per-session, adopted Patch 0449a): At each session close where new physics is advanced, the §15 Step E registry-update sweep includes a brief methods_catalogue audit asking "did this session use any new or adapted methods?" If yes, append METH-L{1,2,3}-NNN entry now with citation back to the patch where first applied; if no (most sessions), mark N/A explicitly in the audit. Triggered every working session; produces zero or one entry per occurrence. Codified at Patch 0449a as a Step E checklist line.
+
+The three phases differ by trigger frequency and granularity. Phase 1 is one-shot retrospective; Phase 2 is per-paper-SHIP; Phase 3 is per-session. Phase 3 is the load-bearing piece for ongoing accuracy — capture at the moment of invention before nuance fades. Phase 2 becomes consolidation rather than discovery if Phase 3 operates. Phase 1 is reduced to "audit arcs that predate Phase 3 adoption."
+
+**Threshold rule for Phase 3** (and Phase 2): A method warrants a named catalog entry only if it is reusable across at least one *other* context (different sector, paper, or problem shape). Single-application techniques do NOT get named entries; the derivation just cites the underlying named technique it specializes. Without this threshold, the catalog inflates into noise. Most sessions will mark Phase 3 as N/A — sessions that introduce novel analytical surprises produce zero or one entry; routine sessions applying existing methods produce zero. Reading C closure trajectory's rate (≈ 7 L1 + 6 L2 + 6 L3 = 19 entries across 17 patches) is the realistic ceiling for substantive multi-session closure arcs.
+
+**Inline-citation convention** (adopted Patch 0449a): derivations cite catalog entries inline as `[METH-L{layer}-NNN method-name]`. This makes derivations step-by-step legible — readers can follow each move with full knowledge of which technique licenses each step.
 
 **Trigger condition:** Phase 1 workable in any session with 2-4 hours dedicated time for technique extraction work. Could be combined with TATWD book 2 roadmap updates if both target the same closure arc. Phase 2 is per-paper-SHIP and does not require dedicated trigger sessions.
 
@@ -716,4 +724,5 @@ Phase 2 (ongoing maintenance): At each future paper SHIP, append new technique/d
 
 **History:**
 - 18 May 2026 Session 133 Patch 0449 — Stub catalog established at `methods_catalogue/README.md` + `methods_catalogue/methods_catalogue.md` with 18 seed entries from Reading C closure trajectory. Entry registered for future-window back-fill from earlier closure arcs.
+- 18 May 2026 Session 133 Patch 0449a — Three refinements added: (1) METH-L{1,2,3}-NNN naming convention adopted; 19 seed entries (count corrected from earlier 18 miscount: 7 L1 + 6 L2 + 6 L3) retrofitted with identifiers; (2) Three-category classification adopted: NEW METHOD (genuinely new, gets fresh ID), ADAPTED METHOD (existing method customized for new content, gets variant ID like METH-L1-006a or parallel ID with back-pointer), STRAIGHT REUSE (existing method applied as-is, no new entry, just inline citation); (3) Phase structure expanded from 2 to 3 phases by adding Phase 3 per-session protocol codified in §15 Step E checklist as `methods_catalogue/methods_catalogue.md` line. Threshold rule documented (a method warrants entry only if reusable across at least one other context). Inline-citation convention `[METH-L{layer}-NNN method-name]` codified for derivations. README renamed `README.md` → `README-methods_catalogue.md` per folder-name convention.
 
