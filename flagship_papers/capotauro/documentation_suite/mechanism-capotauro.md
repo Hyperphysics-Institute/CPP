@@ -149,6 +149,38 @@ The Capotauro mechanism is consistent with prior CPP papers in the corpus:
 
 The cross-sector consistency suggests the Capotauro mechanism's $\phi^{-3}$ chirality magnitude is not isolated but woven into multiple substrate-physics observables — a structural prediction worth tracking.
 
+## v2.0 cross-sector unification additions (Session 135 v2.0 v1.0 SHIPPED)
+
+The v2.0 paper extends the Capotauro mechanism's substrate-vacuum chirality from the single-sector K3-doublet matrix element to three structurally distinct sector mechanisms producing the same numerical magnitude $\chi/6 \approx 0.0394$ through three different cage-shell averaging operations on the same 12-vertex icosahedral cage shared at the host vertex.
+
+### The Substrate-Locality Theorem (paper §3 Theorem 3.1)
+
+Under vertex-aligned Reading C with the primitive 4D direction $\hat{n}$ aligned with a host 600-cell vertex, the substrate's local geometry at the host is preserved as $I_h$-symmetric at first order in the perturbation $\epsilon$, with only an isotropic radial scaling of the first-shell icosahedron by factor $(1 - \epsilon/(2\phi))$. The theorem applies uniformly to any substrate object built from first-shell vertices of the host: the K3-base (3 vertices forming a triangular face of the host's first-shell icosahedron), the W-bracelet (6 vertices forming a Petrie hexagon of the same icosahedron), and the qDP/eDP single-vertex and antipodal-pair configurations. All such substrate objects inherit substrate-level chirality from the same identification $\chi \equiv \epsilon = \phi^{-3}$, via sector-specific cage-shell averaging operations on the respective stabilizer subgroups within $H_3 = I_h$ residual symmetry around the host. This is **substrate-locality unification at Layer 2**.
+
+### W-bracelet sector mechanism (paper §11 Theorem THEO-SD-CHIR-1)
+
+The W-bracelet of SF-2 v1.0 is a 6-vertex Petrie hexagon of the first-shell icosahedron at the host vertex, with centroid on-axis at $(\phi/2)\hat{n}$ exactly. Its stabilizer in the substrate's residual $I_h$ symmetry is $D_6 = S_3 \times \mathbb{Z}_2$ — the same abstract group structure as the K3-doublet's stabilizer, with the $S_3$ factor acting on 3 antipodal pairs of bracelet vertices and the $\mathbb{Z}_2$ factor swapping the 2 elements within each pair. The $\mathbb{Z}_2$ generator $\zeta^W$ is the 4D icosahedral-center inversion ($p \mapsto \phi\hat{n} - p$) with linear part $-I$, flipping $\hat{n}$ and mapping each first-shell vertex to its first-shell antipode. The W-bracelet matter-doublet basis $\Psi_-^{W,(1)} = \psi_-^{(1)} \otimes \chi_+^W$ and $\Psi_-^{W,(2)} = \psi_-^{(2)} \otimes \chi_-^W$ spans a 2D subspace of $E_2 \oplus E_1$ of dihedral $D_6$, paralleling K3's $E$-irrep doublet structure. The cage-shell factor is $|M_\perp^W| = d_E/V_\text{cage} = 2/12 = 1/6$ via Schur orthogonality on the same icosahedral cage (the cage is the icosahedron, shared with K3, not the bracelet's intrinsic 6-vertex orbit). The composite chirality matrix element factorizes at full Layer 3: $|M^W| = |M_\text{amp}^W| \cdot |M_\perp^W| = \chi \cdot (1/6) = \chi/6 = \phi^{-3}/6 \approx 0.0394$, identical to $|M^{K3}|$ at the matrix-element-content level. **THEO-SD-CHIR-1** is theorem #63 in the SD section of `theorem-registry.md`.
+
+### qDP/eDP sector mechanism (paper §12 Theorem THEO-SD-CHIR-2)
+
+The Linear ZBW configuration of the qDP sector (the substrate-physics manifestation of CPP's down-type quark mechanism per SM-2 §10) is characterized as an antipodal-pair substrate object $\{v_i, -v_i\}$ with $D_{5d}$ stabilizer of order 20. The required $\mathbb{Z}_2$ generator $\zeta^{qDP}$ turns out to be neither pure spatial inversion (which would alone preserve qCP sign, giving a vanishing matrix element via $A_1 \otimes A_2 \otimes A_1 = A_2 \not\supset A_1$ in $C_{5v}$ on the single-vertex picture) nor pure charge conjugation; it is a **combined $C \times P$ operation**: host-CP-centered spatial inversion ($v \to -v$) combined with $\hat{n}$-flip ($\hat{n} \to -\hat{n}$) combined with qCP-sign flip ($\pm \to \mp$); three flips together preserve the substrate's overall chirality content. The qDP matter-doublet basis $|\Psi_-^{qDP,(1)}\rangle = (|+, v\rangle + |-, -v\rangle)/\sqrt{2}$ ($\zeta^{qDP}$-EVEN) and $|\Psi_-^{qDP,(2)}\rangle = (|+, v\rangle - |-, -v\rangle)/\sqrt{2}$ ($\zeta^{qDP}$-ODD) spans a 2D subspace of $A_{1g} \oplus A_{2u}$ in $D_{5d}$ — paralleling K3's 2D $E$-irrep doublet and W-bracelet's 2D $E_2 \oplus E_1$ subspace structure. The chirality operator $\hat{C}^{qDP} \in A_{2u}(D_{5d})$ has non-vanishing matrix element via $A_{1g} \otimes A_{2u} \otimes A_{2u} = A_{1g} \supset A_{1g}$. The composite matrix element factorizes at full Layer 3: $|M^{qDP}| = \chi \cdot d_\Gamma/V_\text{cage} = \chi \cdot 2/12 = \chi/6 = \phi^{-3}/6 \approx 0.0394$ — **identical to $|M^{K3}|$ and $|M^W|$**. **THEO-SD-CHIR-2** is theorem #64 in the SD section.
+
+### Three-way unification at substrate level
+
+Three sectors, three structurally distinct mechanisms, one number:
+
+| Sector | Substrate object | Stabilizer | $\zeta$ generator | $|M|$ |
+|---|---|---|---|---|
+| K3-doublet (mass-mixing; THEO-CAP-1) | 3-vertex triangular face | $D_{3d} \subset I_h$ | 3D spatial inversion | $\chi/6$ |
+| W-bracelet (electroweak V--A; THEO-SD-CHIR-1) | 6-vertex Petrie hexagon | Petrie $D_6 \subset I_h$ | 4D icos-ctr inversion | $\chi/6$ |
+| qDP/eDP (EM handedness; THEO-SD-CHIR-2) | 2-vertex antipodal pair | $D_{5d} \subset I_h$ | combined $C \times P$ | $\chi/6$ |
+
+The unification operates at two distinct levels per the umbrella's closure pattern: **Level 1 (substrate-level Layer 2)** is the universal substrate-level chirality magnitude $\chi$ shared across all sectors via Substrate-Locality Unification; **Level 2 (sector-specific Layer 3)** is the cage-shell averaging factor on each sector's stabilizer subgroup of $I_h$, with the factor structurally equal to $1/6$ in all three sectors via Schur orthogonality with effective matter-doublet dimension 2 on a 12-vertex icosahedral cage. The three-step closure pattern (substrate-locality + cage-shell factor + pairing-convention identification) is confirmed across three manifestations with structurally distinct $\zeta$-generators — making the **unification-at-magnitude-level claim** ($|M^{(i)}| = |M^{(ii)}| = |M^{(iii)}| = \chi/6$) distinct from and stronger than the unification-at-mechanism-level claim ($\hat{n}$ inheritance only). The OPEN-SD-CHIR-PRIMITIVE umbrella's anticipated full-five-manifestation closure prediction extends the same pattern to manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry, both registered for future-window work.
+
+### Foundational input stack extension (v1.0 → v2.0)
+
+Capotauro v1.0's 10 foundational inputs (FI-C-1 through FI-C-10) extend to v2.0's 12 with two new Reading C inputs: **FI-C-RC-1** registers the primitive 4D direction $\hat{n}$ in the substrate's ambient four-space; **FI-C-RC-2** registers the vertex-aligned reading $\hat{n} = v_\text{host}$ per Q1' resolution at Patch 0419 Session 126. The same 4 CPP axioms (A1, A2, A4, A7) ground all three sector closures; A1 + A7 are most load-bearing per the Picture B substrate-orientation-field framework (the substrate's orientation-field structure providing the physical content of $\hat{n}$ at Layer 2 substrate-physics).
+
 ---
 
 *Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. For the formal mathematical exposition, see `flagship_papers/capotauro/capotauro.tex`. For Tier-4 verbatim reasoning, see `flagship_papers/capotauro/sketches/` + `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md`.*
