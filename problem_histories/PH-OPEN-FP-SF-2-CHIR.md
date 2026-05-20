@@ -2624,3 +2624,127 @@ v0.6 (DRAFT) indicates round-1 integration in progress; v0.6 (SHIPPED) follows P
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT modify v0.1 outline file at this patch
 - Do NOT promote paper to v0.6 SHIPPED at this patch (Pass 1 of round-1 integration; Pass 2 at Patch 0506 completes the bump to v0.6 SHIPPED)
+
+---
+
+## Joint Paper v0.6 SHIPPED: Round-1 Integration Pass 2 — Chirality-as-Emergent Framing + Dynamical-Substrate-Law Gate Elevation + §9.4 Failure Modes (Session 137 Patch 0506)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0505 v0.6 round-1 integration Pass 1 Figure 1 addition)
+**Patch:** 0506
+**Status:** **JOINT PAPER v0.6 SHIPPED.** v0.6 round-1 integration Pass 2 complete: chirality-as-emergent-constraint framing added at §1.2 + dynamical-substrate-law gate elevated to dedicated §8.1 primary subsection + §9.4 Failure modes and falsifiability commitments added + title-block bumped from v0.6 (DRAFT) to v0.6 (SHIPPED). ChatGPT round-1 review fully integrated. Ready for v0.7 reviewer cycle (CoPilot round-1 submission).
+
+### What this update establishes
+
+Patch 0506 completes the v0.6 round-1 integration cycle by executing the remaining Priority 2 + 3 + optional items from the v0.6 action plan. Combined with Patch 0505 (Figure 1 master mechanism diagram), v0.6 SHIPPED state addresses all of ChatGPT round-1's actionable items at the v0.6 polish boundary.
+
+### Patch 0506 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — chirality-as-emergent framing paragraph added at §1.2 + dynamical-substrate-law gate elevated to §8.1 primary subsection + §8 sub-section renumbered §8.2-§8.6 + bullet in old §8.1 (now §8.2) trimmed + §9.4 Failure modes added + title-block bumped to v0.6 (SHIPPED); .tex now ~1261 lines total (was ~1226 at Patch 0505).
+- **UPDATE** `research_frontier.md` — Patch 0506 Last-updated header with v0.6 SHIPPED verdict.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0506 entry appended (this section).
+
+### Priority 2 ADDRESSED: chirality-as-emergent-constraint framing at §1.2
+
+Added paragraph "Chirality as emergent constraint, not primitive ontology" at end of §1.2 (before §1.3 transition):
+
+- Substrate primitive in framework = $\hat{n}$ (the 4D direction in ambient $\mathbb{R}^4$), NOT chirality itself
+- Substrate chirality magnitude $|\chi| = \varphi^{-3}$ DERIVED from $\hat{n}$ + 600-cell polytope edge-length ratios via perturbative-distance-ratio constraint (Capotauro v2.0 §sec:chi_resolution)
+- Chirality-like inheritance asymmetries (3-way cross-sector unification + sector-specific Layer 4 closures) emerge as stability-preserving consequences of substrate orientation continuity + closure inheritance
+- No commitment to "chirality is fundamental"; commitment is to "single substrate primitive $\hat{n}$ propagates through three-step machinery (substrate-locality + cage-shell averaging + sector-specific pairing) to produce chirality-like inheritance asymmetries at observable scales"
+- Structural identity claim §6.4 makes commitment fully visible: chirality magnitude propagates through four levels at exactly $\chi/6$ derived from single substrate primitive, zero free parameters
+
+Addresses ChatGPT's "most important philosophical shift" framing of v5's "chirality emerges as a stability-preserving consequence of orientation continuity and closure inheritance."
+
+### Priority 3 ADDRESSED: dynamical-substrate-law gate elevated to dedicated §8.1 primary subsection
+
+§8 subsections restructured (label-based cross-references preserved):
+
+| §8.N (new) | Title | §8.N (old) | Status |
+|---|---|---|---|
+| **§8.1** | **The dynamical-substrate-law gate** | — | NEW (this patch) |
+| §8.2 | Sub-claims under sectoral closures (post-v1.0 SHIP work) | §8.1 | RENUMBERED + bullet trimmed |
+| §8.3 | OPEN-SD-CHIR-PRIMITIVE umbrella future-window work | §8.2 | RENUMBERED |
+| §8.4 | Picture A alternative continuum-EFT framework | §8.3 | RENUMBERED |
+| §8.5 | Cross-validation candidates | §8.4 | RENUMBERED |
+| §8.6 | Future-collider precision targets | §8.5 | RENUMBERED |
+
+New §8.1 has four sub-paragraphs:
+1. **The shape of the gate** — closure theorems characterize what stable chirality-like inheritance structure should look like; dynamical law needed to explain why substrate must dynamically evolve into this end-state
+2. **Why this is the defining next gate** — natural next step in closure architecture (Layer 4 closed cleanly enough that Layer 1 substrate-dynamics becomes visible) + external reviewer confirmation (ChatGPT round-1: "the framework is now organized enough that the absence of a dynamical substrate law becomes the dominant visible gap")
+3. **Visual marking of the gate** — Figure 1 top-right dashed annotation adjacent to substrate primitive
+4. **Anticipated closure path** — Q1$'$+Q1$'$.A Layer 3 promotion programme; derive $\hat{n}$ as unique 4D direction picked out by CPP primitive axioms AXIM-1 through AXIM-9 at substrate-physics scale
+
+Old §8.1 bullet on OPEN-FP-SF-2-CHIR full closure trimmed to cross-reference §8.1 instead of restating gate detail; eliminates redundancy.
+
+### §9.4 Failure modes and falsifiability commitments ADDED
+
+Inserted before §10 References. Four-form falsifiability commitments framing:
+
+1. **Six falsifiers at $>3\sigma$ significance** (§7.2): catalogued; Threshold (C) of Capotauro Falsifier 6 sharpest direct test; currently no falsification at 2% match
+2. **Future-collider precision targets** (§8.6): $10^{-3}$ to $10^{-4}$ level by 2030–2035 to 2040+ approaching $\chi^2 \approx 0.056$ structural upper bound
+3. **Visual marking of future-window gates** (Figure 1): dashed annotation discipline makes scope-limitation framing legible at a glance
+4. **Dynamical-substrate-law gate as additional indirect falsifier**: should Q1$'$+Q1$'$.A closure path prove untenable, foundational input stack requires re-anchoring; slower-acting but real falsifier
+
+Closing observation: framework is structurally elegant but must remain experimentally vulnerable; structural identity claim §6.4 durable only if it passes multi-channel cross-validation over 15–20 years.
+
+Addresses ChatGPT's "retrospective closure danger" concern by explicitly structuring the paper's falsifiability commitments under "what would convince us we're wrong" framing.
+
+### LaTeX compilation verified clean
+
+- **3-pass `pdflatex` run**: 38 pages, 653 KB
+- **Zero undefined references or citations**
+- Cosmetic warnings only (same pre-existing pattern)
+
+### Title-block version bump
+
+```
+\date{Version 0.6 (DRAFT) --- 20 May 2026 ...}     % BEFORE (Patch 0505)
+\date{Version 0.6 (SHIPPED) --- 20 May 2026 ...}    % AFTER (this patch)
+```
+
+### v0.6 SHIP CANDIDACY VERDICT: SHIPPED
+
+ChatGPT round-1 review fully integrated. All Priority 2 + 3 + optional §9.4 actionable items addressed; Priority 1 (Figure 1) addressed at Patch 0505. Optional §3.7 RG-flow correspondence light-touch clarification DEFERRED (not high-value relative to higher-priority items completed; may revisit at later reviewer-cycle iterations if CoPilot/Grok flag it).
+
+### Programme state changes at Patch 0506
+
+- (1) Chirality-as-emergent-constraint framing paragraph added at end of §1.2
+- (2) Dynamical-substrate-law gate elevated to dedicated §8.1 primary subsection
+- (3) §8 sub-sections renumbered §8.2–§8.6 (label-based cross-references preserved)
+- (4) Bullet in old §8.1 (now §8.2) trimmed to cross-reference §8.1
+- (5) §9.4 Failure modes and falsifiability commitments added before §10 References
+- (6) Title-block bumped v0.6 (DRAFT) → v0.6 (SHIPPED)
+- (7) PDF grew from 38 pages 641KB at v0.6 (DRAFT) Patch 0505 to 38 pages 653KB at v0.6 (SHIPPED) this patch
+- (8) NO new methods catalogued
+- (9) NO theorems registered new
+- (10) NO predictions registered new
+- (11) NO falsifiers registered new
+- (12) NO conjecture registrations
+- (13) v06_action_plan.md Priorities 2 + 3 ADDRESSED; optional §9.4 ADDRESSED; optional §3.7 DEFERRED
+
+### Methodological observations at Patch 0506
+
+**(i) Chirality-as-emergent-constraint framing as preemption of metaphysical-declaration misreading**: ChatGPT identified the "most important philosophical shift" of v5 as treating chirality emergence as constraint rather than primitive. Adding explicit framing at §1.2 preempts the metaphysical-declaration misreading that ChatGPT noted as risk in earlier versions. The framing is consistent with what we already say (substrate primitive is $\hat{n}$ + magnitude is derived) but makes it explicit at section-opening level so it's the FIRST thing a reader internalizes about the framework's ontological commitments.
+
+**(ii) Dynamical-substrate-law gate elevation as structural communication of the defining next gate**: elevating the gate from a bullet to a dedicated §8.1 subsection makes the framework's principal open theorem-level item structurally visible at section level. The new §8.1 + Figure 1 top-right dashed annotation make the gate visible at two complementary levels (visual + prose). This addresses ChatGPT's "this is now the dominant issue" framing at the strongest possible communication level.
+
+**(iii) §9.4 four-form falsifiability commitments as direct retrospective-closure-danger preemption**: framing structures existing content (six falsifiers + future-collider targets + visual marking) under explicit "what would convince us we're wrong" rubric; adds the dynamical-substrate-law gate as additional indirect falsifier complementing empirical thresholds. The four-form structure ensures the paper has falsifiability commitments at multiple time scales (immediate empirical $> 3\sigma$ thresholds; medium-term future-collider precision improvements; long-term Q1$'$+Q1$'$.A closure feasibility).
+
+**(iv) v0.6 integration efficiency**: total v0.6 integration added ~136 lines of substantive content across two patches (Patch 0505 ~101 lines Figure 1 + Patch 0506 ~35 lines framing + structural reorganization). Round-1 integration efficiency confirms the v0.6 cycle's right scope (figure + framing + scope-elevation rather than substantive content rework); v0.7+ reviewer cycles can focus on substantive content review with high confidence in the paper's communication infrastructure.
+
+### Forward queue post-Patch 0506
+
+- **Priority 1 (Patch 0507)**: v0.7 reviewer cycle Session 1 — CoPilot round-1 review submission of chirality_continuum.tex v0.6 SHIPPED source; typical CoPilot scope = mathematical rigor checks + notation consistency + LaTeX formatting + possibly mathematical insight on RG-flow correspondence or Wigner-Eckart abstraction details; 1 session
+- **Priority 2 (Patches 0508+)**: v0.8 reviewer cycle — Grok round-1 review submission + integration → v0.8 SHIPPED; 1-2 sessions
+- **Priority 3 (Patch 0509+ candidate)**: v0.9 reviewer cycle iterations (any reviewer round-2 if needed) + v1.0 SHIP title-block bump + theorem-registry confirmation; 1-2 sessions
+
+### Anti-priorities preserved at Patch 0506
+
+- Do NOT modify substantive §3–§7 theorem content during v0.6 integration (changes confined to §1.2 framing + §8.1 elevation + §8.2 trim + §9.4 addition + title-block version bump)
+- Do NOT register new theorems or predictions at v0.6 integration
+- Do NOT add methods catalogue entries
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT modify v0.1 outline file at this patch
+- Do NOT proceed to v0.7 within Patch 0506 (v0.6 SHIPPED is end-state of ChatGPT round-1 integration; v0.7 cycle begins with CoPilot or Grok round-1 submission)
