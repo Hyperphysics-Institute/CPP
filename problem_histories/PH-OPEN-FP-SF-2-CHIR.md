@@ -1255,3 +1255,85 @@ Total sector-specific FIs across §B + §C: 6 (FI-CHIR-CONT-10/11/12 for §B + F
 - Do NOT introduce new FI-CHIR-CONT-N entries beyond FI-CHIR-CONT-13/14/15 at §C
 - Do NOT promote Theorem C.1 / THEO-CHIR-CONT-3 to programme-level registered-theorem status at §C Session 1 (registration at end of §C Session 4)
 - Do NOT exceed Sector B (SM-2) scope
+
+---
+
+## §C Sector B SM-2 Chiral-Polarity-Bias Derivation Session 2: Step 2 Substrate-Level Stabilization Energy Calculation CLOSED (Session 137 Patch 0493)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0492 §C Session 1 + Step 1 closure)
+**Patch:** 0493
+**Status:** Step 2 of Theorem C.1 closure ACHIEVED via THEO-CHIR-CONT-1.3 topological-projection argument applied to qDP/eDP sector + THEO-SD-CHIR-2 Finding C-W46 substrate-level inheritance. Sub-claim (g) CLOSED. Two of four §C sub-claims now closed (f)+(g).
+
+### What this update establishes
+
+Patch 0493 closes Step 2 of Theorem C.1 via three-track argument: (i) substrate-level magnitude inheritance from THEO-SD-CHIR-2; (ii) sector-agnostic topological-projection argument via THEO-CHIR-CONT-1.3 applied to qDP/eDP sector; (iii) sub-leading correction quantification at SM-2 thermodynamic scale. Sketch extended ~173 lines with §11–§13 (sketch now ~513 lines total).
+
+### Patch 0493 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §11–§13 (~173 lines added; sketch now ~513 lines total).
+- **UPDATE** `research_frontier.md` — Patch 0493 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0493 §C Session 2 entry appended (this section).
+
+### Step 2 — Substrate-level stabilization energy calculation (sketch §12)
+
+**Three-track argument**:
+
+1. **Substrate-level magnitude inheritance** (§12.1): from THEO-SD-CHIR-2 Finding C-W46 (theorem #64) composite matrix element factorization:
+   $$|M^{qDP}| = |M_{\text{amp}}^{qDP}| \cdot |M_\perp^{qDP}| = \chi \cdot (1/6) = \chi/6 = \phi^{-3}/6 \approx 0.0394$$
+   at full Layer 3 rigor. Amplitude factor $\chi$: chirality-eigenvalue matching on matter-doublet $\{|\Psi_-^{qDP,(1)}\rangle, |\Psi_-^{qDP,(2)}\rangle\}$ via $S_3$-like amplitude structure within $\zeta^{qDP}$-pairing convention producing spectral radius $\sqrt{3}$ identified with substrate primitive chirality eigenvalues $\pm\chi$. Cage-shell factor $d_\Gamma/V_{\text{cage}} = 2/12 = 1/6$ via Schur orthogonality on shared icosahedral cage.
+
+2. **Topological-projection argument** (§12.2): via THEO-CHIR-CONT-1.3 (Theorem 15.3.1; Magnitude Inheritance via Topological Projection) — sub-statement of THEO-CHIR-CONT-1 bridge theorem, sector-agnostic by construction at §A Step 4 closure (Patch 0487). Continuum-limit projection map $\Phi$ preserves substrate magnitude at leading order in $a/L = \ell_{\text{edge}} \mu_{\text{obs}}^{qDP}$.
+
+3. **Sector-agnostic claim verification at qDP/eDP sector** (§12.3 + §12.4):
+   - **Claim 15.1.2 verified at qDP/eDP**: $|\chi| = \phi^{-3}$ topological substrate quantity (substrate-geometric not substrate-dynamical; preserved under $\Phi$)
+   - **Claim 15.2.1 verified at qDP/eDP**: cage-shell factor $1/6 = d_\Gamma/V_{\text{cage}} = 2/12$ ratio of two integer-valued topological invariants ($d_\Gamma$ representation-theoretic, $V_{\text{cage}}$ polytope-topological); preserved under $\Phi$ via Lemma 4.1 (4) irrep-dimension preservation
+
+**Continuum-limit effective coupling magnitude**: $|M^{\text{eff,qDP}}| = \chi/6 \approx 0.0394$ at leading order in $a/L$ with no renormalization at any RG-flow scale between substrate cutoff and observable scale.
+
+**Dimensional analysis** (§12.5): substrate-level matrix element dimensionless; continuum-EFT operator $\Delta F^{qDP} = F[\text{LZBW},+] - F[\text{LZBW},-]$ is free energy with dimension of energy. Bridge-theorem-inherited prediction in dimensionless ratio form:
+$$\left|\frac{\Delta F^{qDP}}{F^{eDP}_{\text{ref}}}\right| = \chi/6 \approx 0.0394$$
+at leading order, where $F^{eDP}_{\text{ref}}$ is the chirality-neutral Orbital-ZBW reference free energy at continuum thermal-equilibrium scales (scaling as $\sim k_B T \cdot N_{\text{ZBW-config}}$ per SM-2 v1.0 §10).
+
+**Sub-leading corrections** (§12.6): structural upper bound $|\delta M^{\text{sub-leading}}| \lesssim \chi^2 \approx 0.056$ from substrate-handle natural scale; actual $(a/L)^n$ at $n \geq 1$ scaling as:
+- $\sim 10^{-19n}$ at low thermodynamic scale ($T \sim 100$ MeV)
+- $\sim 10^{-17n}$ at electroweak thermodynamic scale ($T \sim$ few TeV)
+- $\sim 10^{-7n}$ at leptogenesis era ($T \sim 10^{12}$ GeV)
+
+Sub-leading corrections vastly below both current observational precision ($\sigma_{\Delta p_{LR}} \sim 0.005$ from BAU back-derivation) and structural upper bound $\chi^2 \approx 0.056$.
+
+### Programme state changes at Patch 0493
+
+- (1) Step 2 of Theorem C.1 closure ACHIEVED (sub-claim (g) substrate-level stabilization energy)
+- (2) Sector-agnostic claim verification COMPLETE for Claims 15.1.2 + 15.2.1 at qDP/eDP sector
+- (3) Dimensional analysis articulated ($|\Delta F^{qDP}/F^{eDP}_{\text{ref}}| = \chi/6$ + $F^{eDP}_{\text{ref}}$ scale-setting from SM-2 v1.0 §10)
+- (4) Sub-leading corrections quantified (structural upper bound $\chi^2$; actual $(a/L)^n$ at $n \geq 1$)
+- (5) Theorem C.1 sub-claims (f)+(g) at theorem-statement-with-proof level; sub-claims (h)+(i) at sketch-architecture level
+- (6) NO theorems registered new at programme level (THEO-CHIR-CONT-3 candidate at end of §C Session 4)
+- (7) NO predictions registered new at programme level (PRED-O-25 inherited at substrate-handle level)
+- (8) NO falsifiers registered new (Capotauro Falsifier 6 already ACTIVATED at §B Patch 0491)
+- (9) NO conjecture registrations
+
+### Methodological observations
+
+**§C Step 2 closure structurally tight**: 1 session matches §C projection. Two load-bearing inputs (THEO-SD-CHIR-2 Finding C-W46 + THEO-CHIR-CONT-1.3 sector-agnostic) plus sector-agnostic claim verification. No sector-specific novel substrate-physics calculation beyond Layer 3 inheritance + Layer 4 sector-application.
+
+**§C Step 2 structurally simpler than §B Step 2**: §B Step 2 (Patch 0489 Michel parameter $\rho = 3/4$) required textbook V–A kinematics + SM radiative corrections + multi-experimental empirical anchor; §C Step 2 reduces to inheritance argument + sector-agnostic claim verification + dimensional analysis + sub-leading bound. Asymmetry reflects sector-physical-content: §B's V–A coupling has rich kinematic structure; §C's chiral-polarity-bias has thermodynamic free-energy structure scalar at thermal-equilibrium scales.
+
+### Forward queue post-Patch 0493
+
+- **Priority 1 (Patch 0494+)**: §C Session 3 Step 3 exclusion bound at observable thermodynamic scales; closes sub-claim (h); 1 session
+- **Priority 2 (Patch 0495+)**: §C Session 4 Step 4 SM cross-validation + Theorem C.1 → THEO-CHIR-CONT-3 (theorem #67); 1 session; **§C SUB-CLAIM (f)+(g)+(h)+(i) CLOSURE PATCH**
+- **Subsequent (Patches 0496+)**: §D polish; v0.5
+- **Subsequent (Patches 0498+)**: v0.6–v0.9 reviewer cycle
+- **Subsequent (Patch 0503+)**: v1.0 SHIP
+
+### Anti-priorities preserved at Patch 0493
+
+- Do NOT close Steps 3+4 at Session 2 (deferred to Sessions 3+4)
+- Do NOT re-derive substrate-level composite matrix element factorization (inherit THEO-SD-CHIR-2 Finding C-W46)
+- Do NOT re-prove THEO-CHIR-CONT-1.3 (established at sector-agnostic level via §A Step 4 Patch 0487)
+- Do NOT introduce new FI-CHIR-CONT-N entries at §C Session 2 (FI inventory capped)
+- Do NOT promote sub-claim (g) closure chain elements to standalone theorem entries
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify §A bridge work or §B Sector A work or §C Session 1 content during §C Session 2
