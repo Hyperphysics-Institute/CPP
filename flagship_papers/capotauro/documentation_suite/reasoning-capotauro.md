@@ -781,3 +781,155 @@ The polish pass is situated between substantive content completion (v0.8) and ex
 Sections §15 through §18 above complete the Tier-4 verbatim physics reasoning capture for Session 134 covering all 12 Capotauro v2.0 patches (Patches 0444 through 0456). The canonical record for the v2.0 substantive content is now preserved at Tier-4 fidelity in this file; commit messages, changelog entries, and the .tex source are *derivative* artifacts of this Tier-4 record, not substitutes for it. The v1.0 SHIP closeout deliverables protocol (anthology chapter, 7-file documentation suite, TATWD integration, OSF + arXiv submission) will derive from this canonical Tier-4 record per the Patch 0449b real-time-artifact source-priority protocol.
 
 **Methodological correction registered.** This backfill (Patch 0458) corrects the Patch 0457 handover protocol misapplication that deferred Steps B/C/D using the "N/A for sessions producing no substantive paper-scoped reasoning" escape valve. Session 134 produced extensive substantive paper-scoped reasoning (substrate-foundational layer registration, cross-sector unification theorem promotions, five programme-pattern observations, polish-pass methodology) — the escape valve does not apply. Patch 0459 amends `templates/operating_system.md` §15 to clarify the discipline and prevent recurrence of this confusion in future sessions.
+
+---
+
+## §19 — Session 135 Phase 1 (Patches 0466–0469): v0.8.1 round-1 reviewer letter handling
+
+### §19.1 Decision: cross-reviewer convergence as substantive-content signal
+
+Three reviewer rounds at v0.8.1 produced convergence on two items that none of the three reviewers had flagged in isolation as "must-fix" but that all three independently flagged: master programme-architecture figure (ChatGPT priority 1 + CoPilot §5.2 + Grok polish-item-3) and §12 bookkeeping reduction (ChatGPT priority 2 + Grok #2). The reasoning decision at Session 135: cross-reviewer convergence is the signal that elevates an item from "polish-cycle work" to "substantive content addition required before SHIP." Items flagged by one reviewer are polish; items flagged by three reviewers are programme-architectural gaps that the v0.8.1 paper failed to address.
+
+This decision shaped Phase 2: Patch 0470 added §13.6 dynamical engine framing as a substantive content addition (responding to ChatGPT remaining concern 1 + ChatGPT priority 4 + Grok register-Layer-1-explicitly + CoPilot framework-positioning); Patch 0471 added Figure 1 master architecture as a substantive content addition (responding to the three-way convergence); Patch 0472 landed the remaining polish items as a single bundle.
+
+The methodological observation: at the v0.N reviewer-cycle stage, polish items and substantive items are distinguished not by item character but by cross-reviewer count. Single-reviewer flags get polish-bundle treatment; multi-reviewer flags get substantive-content-addition treatment.
+
+### §19.2 Reasoning on CoPilot anomalous-first-pass at Patch 0468
+
+CoPilot's first response to the v0.8.1 submission was a synthesis-of-the-paper rather than a referee-grade critique. The reasoning at Session 135 on how to handle this: per relationship_protocol.md symmetric-honesty discipline, the response is identified explicitly as not what was requested (synthesis ≠ critique), the mismatch is registered as a fact (not silently worked around or fabricated-around), and a follow-up framing is prepared that respects the reviewer's epistemic autonomy.
+
+The follow-up framing principles applied: (1) does not accuse the reviewer of inattention (the reviewer may have interpreted the request differently or may have given a first-pass orienting summary before deeper critique); (2) does not reframe the request to make the original response retroactively acceptable; (3) asks explicitly for referee-grade critique with verdict; (4) provides minimal additional framing-context for the reviewer's reference.
+
+The pattern was successfully exercised at Patches 0468 → 0469. CoPilot's follow-up response was substantive referee-grade critique with four polish items at §3.2 / §5.1 / §5.2 / §5.3 + soft-positive verdict.
+
+The pattern is registered as candidate OPEN-ORG item for `templates/operating_system.md` reviewer-round subsection: "When a reviewer delivers a synthesis-level response where referee-grade critique was requested, the productive next move is diagnostic-framing follow-up via user-mediated re-submission requesting what was originally requested."
+
+## §20 — Session 135 Phase 2 (Patches 0470–0472): v0.8.1 → v0.9 substantive content reasoning
+
+### §20.1 §13.6 dynamical engine subsection design reasoning
+
+The §13.6 design challenge: how to register the Layer 1 dynamical-engine question as explicitly open while preserving the paper's claim of theorem-level rigor at Layer 3, without conceding ground to the v0.8.1 reviewer concerns that the paper was "architecturally organized rather than physically inevitable."
+
+The reasoning trajectory: the paper's strength is Layer 3 closure (theorem rigor) and the substrate-handle-at-zero-parameters track record (SS-7, SS-2, SS-5, SS-4, SM-8, SF-4 v1.0, Capotauro v2.0 itself). The paper's weakness is Layer 1 — the substrate-physics primitive-conscious-point dynamics that ground the substrate-locality theorem + cage-shell averaging + sector-specific pairing-convention identifications are not derived from CPP primitive axioms. The §13.6 reasoning approach: register Layer 1 explicitly as open work AND ground the open-work claim in the programme's epistemic methodology AND ground the methodology in the corpus track record.
+
+The four-paragraph structure that emerged:
+
+(a) **Structural physics vs dynamical physics** — paragraph 2 — distinguishes the structural content derived at Layer 3 (geometric primitive → edge perturbations → local-I_h preservation → cage-shell averaging → sector-specific pairing → matrix elements identical magnitude) from the dynamical content not derived (the primitive-conscious-point Polarize-Capture-Depolarize dynamics that select n̂ as preferred 4D direction in the first place; the dynamical mechanism that fixes |χ| = φ^-3 at this specific magnitude; the primitive-rule structure that grounds local I_h preservation at O(ε); the conscious-point-level process that grounds cage-shell averaging as substrate-physical operation rather than algebraic identity).
+
+(b) **The epistemic position on the Layer 1 investigation** — paragraph 3 — explicitly registers no claimed endpoint and no single trajectory. "The Layer 1 chirality investigation is genuine open inquiry with an outcome to be determined by which lines of investigation prove tractable against experimental reality and which dead-end. There is no pedagogical or scientific obligation to name an endpoint that is not yet determined."
+
+(c) **The methodology under which the investigation is conducted** — paragraph 4 — articulates the epistemic methodology: experimental reality as determinant of truth + convergence-of-derived-mathematical-structure-with-experimental-reality as marker of correct identification of substrate primitives + coherence with multi-layer programme architecture as consistency check + approached-from-above-working-inward toward the primitive-rule structure that grounds those layers.
+
+(d) **The methodology's programme track record** — paragraph 5 — grounds the methodology in the existing corpus closures (SS-7 twelve zero-parameter predictions through ⁵⁶Ni; SS-2 proton charge radius 0.851 fm at zero parameters; SS-5 deuteron binding energy −0.09% at zero parameters; SS-4 QCD string tension 926.5 MeV/fm at zero parameters; SM-8 cage-mass scale M₀ = m_e·z/φ at zero parameters; SF-4 v1.0 7/8 zero-parameter neutrino-sector predictions; Capotauro v2.0 three-way unification at 2% empirical anchor at zero parameters).
+
+The structural payoff at Patch 0474 ChatGPT round-2 revised: ChatGPT explicitly endorsed the §13.6 framing as "the manuscript's formal declaration of epistemic incompleteness" — the section that converted ChatGPT's assessment of the paper from "speculative substrate theory trying to become physics" to "constrained closure-and-inheritance research programme whose substrate dynamical completion remains openly unresolved."
+
+The methodological observation: explicit registration of open work in a flagship paper is not a concession of weakness; it is a posture of epistemic discipline that reviewers recognize and elevate. The Capotauro v0.8.1 had implicit open work (the dynamical engine was implicit in the substrate-locality theorem's reliance on local-I_h preservation as foundational); making it explicit at v0.9 elevated the paper's epistemic posture without weakening any theorem-level claim.
+
+### §20.2 Figure 1 master architecture design reasoning
+
+The figure design challenge: convey the v2.0 programme structure at a single glance such that a reader can navigate substrate-primitive → derivation → unification → observable handles → routes of validation → Layer 1 OPEN → manifestation (iv)/(v) → 11-route falsifier ledger in the time it takes to study one diagram.
+
+The reasoning trajectory: a master programme-architecture figure must show layers (epistemic stratification: Layer 1 / Layer 2 / Layer 3 / observable scales), connections (which derivations feed which results), boundaries (what is closed vs what is open), and trajectory (the investigation direction toward Layer 1 from above). The K3-doublet-specific derivation flow figure (which became Figure 2 after the renumber) shows the K3-doublet derivation chain at finer resolution; Figure 1 needed to be the higher-altitude orientation companion.
+
+The layout that emerged: substrate-primitive (Layer 2, green box at top) → derivation (Substrate-Locality Theorem + cage-shell averaging, central column) → three sector-specific theorem closures (left/center/right boxes with sector-specific stabilizers, ζ-generators, and matrix-element identities — THEO-CAP-1 K3-doublet D_3d 3D inversion |M|=χ/6; THEO-SD-CHIR-1 W-bracelet Petrie D_6 4D icos-ctr inversion |M|=χ/6; THEO-SD-CHIR-2 qDP/eDP D_5d combined CP |M|=χ/6) → three-way unification (single central node receiving all three sector arrows) → observable handles (the three substrate handles feeding the three observable contexts: K3-doublet Δp_LR, W-bracelet V-A coupling, qDP/eDP EM handedness) → routes of experimental validation (the three observable contexts feeding their respective experimental routes) → Layer 1 OPEN (dashed red box at bottom, with dashed downward investigation-trajectory arrow from routes-of-validation callout into the box) → manifestation (iv) thermodynamic causal arrow + manifestation (v) cosmological-vacuum asymmetry (dashed-gray boxes on right, registering OPEN-SD-CHIR-PRIMITIVE umbrella's anticipated additional closures) → 11-route falsifier ledger panel (violet, registering the 11 routes of empirical and structural accountability stratified across the architecture's layers).
+
+The investigation-trajectory arrow was the load-bearing visual decision: the arrow goes from the routes-of-validation callout (top of figure) DOWN toward the Layer 1 OPEN box (bottom of figure), encoding the methodological observation from §13.6 that the primitive is approached from above by working inward from the macroscopic-axiomatic layers whose convergence with experimental reality has been demonstrated. The directionality is the visual encoding of the §13.6 methodology paragraph.
+
+The structural payoff at Patch 0474 ChatGPT round-2 revised: ChatGPT explicitly described Figure 1 as "what finally makes that legible" — the visual that converted his round-2 original synthesis-level reading into the round-2 revised substantive endorsement. Figure 1 + §13.6 are mutually load-bearing: §13.6 articulates the methodology, Figure 1 visualizes it, neither alone produced the round-2 revised verdict shift.
+
+### §20.3 §12 bookkeeping reduction reasoning
+
+ChatGPT priority 2 + Grok #2 polish converged on the observation that §12 (Open Theorem-Level Work) carried 7 instances of "estimated N–M sessions" forward-pointing clauses (e.g., "estimated 1-2 sessions for Q5-PAIRING resolution"; "estimated 3-5 sessions for Q7 substantive progress"). The reviewer observation: these clauses are programme-internal forward-planning content, not flagship-paper open-work registration content; they belong in handover documents and patch-trajectory bookkeeping, not in a flagship paper's body.
+
+The reasoning trajectory: the v0.8.1 paper's §12 was written during the active Reading C closure trajectory (Sessions 124-133) when forward-budget tracking was load-bearing. At v0.9 substantive content stage, the trajectory has been retired (Reading C closure trajectory reached natural end-state at Patch 0441 Q7 scoping) and the forward-budget clauses no longer serve their original function. Stripping the 7 clauses tightens §12 without losing the open-work content (each open work item is preserved with its substantive statement; only the session-estimate clauses are removed).
+
+The decision rule applied: forward-budget clauses belong in handover documents (where they have continuing operational meaning) not in flagship papers (where they age out of relevance once the trajectory has been closed or pivoted). Patch 0472 applied this rule uniformly across all 7 §12 clauses.
+
+## §21 — Session 135 Phase 3 (Patches 0473–0476): v0.9 round-2 / sign-off reasoning
+
+### §21.1 Reasoning on ChatGPT v0.9 round-2 original (Patch 0473)
+
+ChatGPT's first round-2 response arrived with apparent synthesis-level acknowledgment that did not specifically address Figure 1 + §13.6 (the two largest v0.9 substantive additions per Patches 0470+0471). The reasoning decision at Session 135: per relationship_protocol.md symmetric-honesty discipline, the apparent gap is registered as a fact with line-cited evidence (Figure 1 TikZ source at lines 1850-2080 of capotauro.tex; §13.6 subsection at lines 1948-2002) rather than silently worked around.
+
+The hypothesis at Session 135 on the cause: ChatGPT may have processed the .tex source without TikZ compilation, missing Figure 1's visual content. The .tex source contains Figure 1 as TikZ code (not as a rendered image); a reader processing the source without rendering may miss the figure entirely. §13.6 is rendered as text content, so the synthesis-level miss on §13.6 cannot be explained by the same hypothesis — but the convergence of "Figure 1 missed + §13.6 underacknowledged" suggested a possible processing-context gap.
+
+The follow-up framing prepared: a diagnostic note registering the apparent gap with line-cited evidence + offer to attach the rendered Figure 1 .png if missing-figure-rendering was the cause + minimal additional framing. The principles per §19.2: does not accuse, does not reframe, asks explicitly.
+
+The structural payoff at Patch 0474: ChatGPT round-2 revised arrived after user-mediated re-submission with Figure 1 .png attached, delivering substantial upward revision with six explicit content-acknowledgments and a six-category revised assessment table. The diagnostic-framing → user-mediated re-submission with attached visual → revised-letter pattern is registered as a workable protocol pattern for handling LLM reviewer synthesis-level gaps.
+
+### §21.2 Reasoning on three-reviewer convergence threshold
+
+The decision at Session 135 on when to declare three-reviewer convergence sufficient for SHIP: when all three reviewers deliver explicit verdict-level SHIP-acceptable verdicts AND when the cumulative remaining polish items are all cosmetic / non-blocking / explicitly-labeled-as-optional.
+
+Patch 0475 (CoPilot v0.9): "SHIP-acceptable as v2.0 v1.0... v0.9 is ready to ship as the v2.0 v1.0 release. Required changes: NONE." Three optional polish items explicitly marked non-blocking.
+
+Patch 0476 (Grok v0.9): "Verdict: (A) v0.9 SHIP-acceptable as v2.0 v1.0 — proceed to SHIP closeout protocol." Three optional polish items explicitly marked non-blocking.
+
+Patch 0474 (ChatGPT v0.9 round-2 revised): Layer 1 dynamical-substrate-law work positioned as v3.0+ programme trajectory rather than v2.0 SHIP-blocking; six upward-revised assessment categories; reframing of manuscript identity as "constrained closure-and-inheritance research programme."
+
+The decision: three-reviewer convergence on SHIP-acceptable achieved at v0.9. Five distinct cosmetic polish items across CoPilot (3) + Grok (2) constitute candidate v0.9.1 micro-polish increment before SHIP closeout protocol. ChatGPT's optional items absorbed into the v3.0+ trajectory (no v0.9.1 ChatGPT items).
+
+## §22 — Session 135 Phase 4 (Patches 0477–0481): SHIP closeout reasoning
+
+### §22.1 C14 methods_catalogue audit approach decision (Patch 0478)
+
+The Patch 0463 codification specifies "C14 methods_catalogue audit per Patch 0463 (catalog-first-then-cite workflow adding inline [METH-L{layer}-NNN] citations to the .tex paper at each method invocation point)." The reasoning challenge at Session 135: how to interpret "at each method invocation point" — literal scatter of 19+ inline citations through the body prose, or single consolidated cross-reference section at audit-trail-level granularity.
+
+The two approaches considered:
+
+(A) **Scattered inline citations**: insert `[METH-L1-001]` parenthetically after each invocation of Schur orthogonality (at §10 K3-doublet, §11 W-bracelet, §12 qDP/eDP); similarly for Wigner-Eckart factorization (3 invocations); branching rule analysis (3 invocations); Coxeter parabolic-subgroup theory (1 invocation); etc. Total: ~25 inline citations scattered through the body.
+
+(B) **Single consolidated cross-reference section**: add a new §15 Methods Catalogue Cross-Reference section listing each of the 19 catalog entries with its primary invocation §-locations. Total: 19 cross-references in one section.
+
+The decision factors:
+
+- **Reader experience**: scattered inline cites in a 95-page flagship paper add visual noise to the body prose without adding reader value (the catalog cross-reference is programme-internal audit-trail content, not reader-facing content that aids derivation comprehension).
+- **Programme convention**: methods catalogue cross-references in other flagship papers (SS-9, SF-4, SF-2) — none of these papers carry scattered inline `[METH-LX-NNN]` citations through the body. The Patch 0463 codification is a new convention that has not yet been exercised in a flagship-paper SHIP.
+- **Catalog discovery**: a single consolidated §15 section allows a reader to find the methods catalog cross-reference in one place rather than hunting for it through 25 scattered inline cites.
+- **Patch 0463 codification language**: "at each method invocation point" can be read as "at the section level where each method is invoked" (single cross-reference) rather than "at every textual instance of each method invocation" (scattered citations).
+
+The decision: approach (B) — single consolidated §15 Methods Catalogue Cross-Reference section. The decision rationale is registered explicitly in the Patch 0478 commit message and in Patch 0481's handover document as a defensible-but-not-only interpretation; future SHIP closeouts may want to clarify the convention.
+
+The structural observation: the consolidated approach naturalizes well for v2.0 v1.0 SHIP because the methods catalog is itself a relatively new programme-internal infrastructure (STUB seed at Patch 0449 + Patch 0464 audit additions; 19 entries currently). A scattered-cite approach scales poorly as the catalog grows; a consolidated cross-reference section scales linearly with paper length (one entry per method per paper, regardless of how many times the method is invoked in the paper body).
+
+### §22.2 Title block bump v0.9.1 (DRAFT) → v1.0 SHIPPED reasoning (Patch 0479)
+
+The reasoning trajectory: title block bump signals the ship event. Once three-reviewer convergence is achieved AND v0.9.1 micro-polish is landed AND C14 methods catalogue audit is landed, the title block bump is the symbolic shift from DRAFT to SHIPPED state. The paper at v1.0 SHIPPED is the publication-venue artifact for the theorems registered at THEO-CAP-1 (Patch 0397) + THEO-SD-CHIR-1 (Patch 0434) + THEO-SD-CHIR-2 (Patch 0440); the title block bump confirms the paper-level publication venue.
+
+The author footnote extension reasoning: the v1.0 author footnote was already substantial (covering the original Capotauro nucleation paper Dec 2025, the v1.0 K3-doublet closure trajectory Sessions 87-122, and the v2.0 development trajectory Sessions 87-133). The Patch 0479 extension adds Session 135's v2.0 SHIP context: reviewer-round trajectory summary + SHIP-closeout-protocol patch number + three-reviewer convergence acknowledgment. The extension is forward-citation-style (records what happened) not reframing-style (does not modify the prior content).
+
+### §22.3 Theorem-registry "Last updated" entry vs full theorem-entry rewriting (Patch 0480)
+
+The decision at Session 135: the v1.0 SHIP at Patch 0479 advances paper-level publication status for three theorems already registered at full content rigor. The decision was whether to (A) prepend a new "Last updated" entry documenting the paper-level publication venue confirmation, or (B) rewrite each theorem's entry to update its source/venue field.
+
+The decision: approach (A) — prepend "Last updated" entry. Approach (B) would create churn in the theorem-registry without adding substantive content (each theorem's content rigor is unchanged at the v1.0 SHIP; only paper-level publication venue is advanced). The "Last updated" entry provides the canonical record of the paper-level publication venue advancement for all three theorems in a single chronological-record location.
+
+The Summary Statistics decision: unchanged at v1.0 SHIP. THEO-CAP-1 was already counted in the SF-Line row at Patch 0397 ahead of paper publication; THEO-SD-CHIR-1 was counted in the SD row at Patch 0434; THEO-SD-CHIR-2 was counted in the SD row at Patch 0440. The v1.0 SHIP advances paper-level publication venue status only, not theorem inventory. Total theorem count remains 64.
+
+## §23 — Session 135 Phase 5 (Patches 0481a–0481+): paper completion sequence reasoning
+
+### §23.1 Suffix-numbering convention reasoning
+
+Per Thomas's Session 135 close direction: number paper-completion-sequence patches in this window 0481a/0481b/0481c... to avoid collision with the next Opus window starting at 0482+ on SF-2 v2.0+ Option 3 work. The suffix-numbering convention has been used previously in CPP (Patch 0449a methods_catalogue stub-seed work; Patch 0416A retroactive drift fix for Capotauro v1.0 SHIP).
+
+The reasoning: the next Opus window is already engaged on substantive forward physics work (Option 3 — OPEN-FP-SF-2-CHIR Layer 4 EFT closure trajectory opening). Their patches will use 0482, 0483, 0484+ normally. Our paper-completion-sequence work in this window adds to the same repository on the same branch; we need to numerically slot in between 0481 (the canonical handover document) and 0482 (the next window's first patch) without collision.
+
+The suffix-numbering convention solves this: 0481a, 0481b, 0481c, ... all sort lexicographically between 0481 and 0482, allowing the paper-completion-sequence patches to land cleanly without affecting the next window's patch numbering.
+
+### §23.2 Collision-handling reasoning at Patch 0481a (research_frontier.md)
+
+When the apply-and-push of Patch 0481a failed with `error: patch failed: research_frontier.md:1 / error: research_frontier.md: patch does not apply`, the reasoning was: the next Opus window has already written its own "Last updated" entry at the top of research_frontier.md, colliding with where Patch 0481a inserts its entry.
+
+The recovery decision: drop Patch 0481a entirely rather than craft a replacement. The reasoning: the next Opus window's Patch 0482 entry has *already absorbed and superseded* Patch 0481a's substantive content. Patch 0482's anchor language references "Capotauro v2.0 v1.0 SHIPPED at Session 135 Patch 0479" + "THEO-SD-CHIR-1: |M^W| = χ/6 at full Layer 3 rigor" + advances OPEN-FP-SF-2-CHIR to "v3.0+ Layer 4 closure trajectory OPENED at scoping level" — which is one step beyond what 0481a was planning to record.
+
+The substantive content of Patch 0481a (SHIP event + substrate handle at Layer 3 + closure-route framing) is preserved in durable form at four locations: theorem-registry.md (Patch 0480 Last-updated entry); changelog-capotauro.md (Patch 0479 v1.0 SHIPPED entry); handovers/2026-05-19_session_135_capotauro_v2.0_v1.0_SHIPPED.md (Patch 0481); handovers/2026-05-19_session_135_sf2_v2.0_next_window_seed.md (Patch 0481c). Nothing is lost.
+
+The methodological observation: when two windows write to the same file at the same anchor concurrently, the later window's content supersedes the earlier window's planned content when (1) the later window's content references the earlier window's substantive milestones explicitly and (2) the earlier window's planned content is preserved in durable form at other locations. The collision is then recoverable as "drop the obsolete patch" rather than as "merge the patches."
+
+---
+
+## Session 135 close — Tier-4 reasoning capture complete
+
+§19 through §23 above complete the Tier-4 verbatim reasoning capture for Session 135 covering the v0.8.1 round-1 reviewer trajectory (§19), the v0.8.1 → v0.9 substantive content additions (§20), the v0.9 round-2 / sign-off reviewer convergence (§21), the SHIP closeout protocol execution (§22), and the paper completion sequence (§23). The canonical record for the v2.0 v1.0 SHIP substantive decisions is preserved at Tier-4 fidelity in this file; commit messages, changelog entries, and the .tex source are derivative artifacts of this Tier-4 record, not substitutes for it.
+
