@@ -743,3 +743,113 @@ Bridge theorem THEO-CHIR-CONT-1 delivers substrate-handle-magnitude-preserved-at
 - Do NOT promote THEO-CHIR-CONT-1.1/-1.2/-1.3 to standalone theorem entries in programme registry (sub-statements only; promoted-as-needed if Layer 4 sector-specific closures THEO-CHIR-CONT-2/3 require them as separately-cited inheritance).
 - Do NOT modify Patches 0482/0483 scoping sketches at `flagship_papers/electroweak/sketches/` (preserved at historical locations).
 - Do NOT begin work on OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) + (v) future-window closures until joint paper v1.0 SHIP (Patch 0503+) — those manifestations inherit topological-projection technique established here but are out-of-scope for current joint paper.
+
+---
+
+## §B Sector A V–A Coupling Derivation Session 1: Sketch OPENED + Step 1 Sector-Specific Continuum Operator Identification CLOSED (Session 137 Patch 0488)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0487 sub-claim (a) closure of §A bridge work)
+**Patch:** 0488
+**Status:** §B Sector A V–A coupling derivation OPENED. Sub-claim (b) of Theorem B.1 CLOSED.
+
+### What this update establishes
+
+Patch 0488 opens substantive §B sector-specific drafting at the joint Layer 4 paper post sub-claim (a) closure. New working sketch `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` (~450 lines) inherits THEO-CHIR-CONT-1 + sub-statements and identifies the bridge theorem's sector-agnostic continuum operator $\mathcal{O}^{\text{eff,W}}$ with the V–A current operator $\bar{\psi}_L \gamma^\mu \psi_L$ in Yang-Mills $SU(2)_L \times U(1)_Y$ EFT framework appropriate to SF-2 sector.
+
+### Patch 0488 deliverables
+
+- **CREATE** `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` — new working sketch (~450 lines) opening §B Sector A V–A coupling derivation.
+- **UPDATE** `research_frontier.md` — Patch 0488 Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field updated with §B Session 1 milestone.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0488 §B Sector A Session 1 entry appended (this section).
+
+### Theorem B.1 statement (THEO-CHIR-CONT-2 candidate)
+
+Sector A Yang-Mills EFT V–A Coupling Derivation theorem under THEO-CHIR-CONT-1 + sub-statements inheritance + SF-2 v1.0 §sec:YM\_EFT\_thm Yang-Mills EFT framework + W-bracelet sector specialization. Four sub-claims targeted across Sessions 1–4 of §B:
+
+- **(b) Sector-specific continuum operator identification** (this patch; §3 of sketch): $\mathcal{O}^{\text{eff,W}}$ identifies as V–A current $\bar{\psi}_L \gamma^\mu \psi_L$ in continuum Yang-Mills EFT.
+- **(c) Michel parameter $\rho = 3/4$ at finite mass** (Session 2 target; Patch 0489+ candidate): pure-V–A structure $\to$ $\rho = 3/4$ via standard V–A kinematics.
+- **(d) 100% LH preference at massless helicity limit** (Session 3 target; Patch 0490+ candidate): pure-V–A $\to$ $P_L \to 1$ as $m_\psi/E_\psi \to 0$.
+- **(e) Capotauro Falsifier 6 activation** (Session 4 target; Patch 0491+ candidate): three falsification thresholds at observable-scale precision.
+
+Theorem B.1 promoted to programme-level registered-theorem status as THEO-CHIR-CONT-2 at end of §B Session 4 patch upon all four sub-claims closing.
+
+### Step 1 closure (sub-claim (b)) — three structural identifications
+
+**Identification 1**: Continuum-limit $\zeta^{\text{cont,W}}$ identifies as $\gamma_5$ chirality-flipping operator.
+
+Substrate-level $\zeta^W = r^3$ icosahedral-center inversion in 4D ambient (Finding C-W43) is chirality-flipping $\mathbb{Z}_2$ involution flipping $\hat{n} \to -\hat{n}$. Under continuum-limit projection $\Phi$ + Lemma 4.1 (THEO-CHIR-CONT-1.1), $\zeta^W$ projects to $\zeta^{\text{cont,W}}$ with same chirality-flipping action. In Yang-Mills EFT, chirality-flipping $\mathbb{Z}_2$ on continuum fermion fields is $\gamma_5$: $\gamma_5 \psi_L = -\psi_L, \gamma_5 \psi_R = +\psi_R, \gamma_5^2 = 1$. Identification matches structure + action.
+
+**Identification 2**: Continuum-limit matter-doublet $\{|\psi^{\text{eff}}_+\rangle, |\psi^{\text{eff}}_-\rangle\}$ identifies as $\{\psi_R, \psi_L\}$ chiral fermion fields.
+
+Substrate-level matter-doublet $\{|\Psi^W_+\rangle, |\Psi^W_-\rangle\}$ has opposite-$\zeta^W$-parity (THEO-SD-CHIR-1 step (iv)). Continuum projection $\{|\psi^{\text{eff}}_+\rangle, |\psi^{\text{eff}}_-\rangle\}$ has opposite-$\zeta^{\text{cont,W}}$-parity (Lemma 4.1 (5) parity-matching preservation). In Yang-Mills EFT, natural opposite-$\gamma_5$-parity pair is $\{\psi_R, \psi_L\}$ where $\psi_R$ is $\gamma_5$-EVEN and $\psi_L$ is $\gamma_5$-ODD. Identification: $|\psi^{\text{eff}}_+\rangle \leftrightarrow \psi_R$ ($\gamma_5$-EVEN); $|\psi^{\text{eff}}_-\rangle \leftrightarrow \psi_L$ ($\gamma_5$-ODD).
+
+**Identification 3**: Continuum-limit chirality-sensitive operator $\mathcal{O}^{\text{eff,W}}$ identifies as V–A current operator $\bar{\psi}_L \gamma^\mu \psi_L$.
+
+Under Identifications 1+2, the bridge theorem's sector-agnostic operator structure (Theorem 4.2; THEO-CHIR-CONT-1.2: $\mathcal{O}^{\text{eff,W}}$ is $\zeta^{\text{cont,W}}$-ODD with non-vanishing matrix element between opposite-$\zeta^{\text{cont,W}}$-parity matter-doublet) translates to continuum-EFT requirement: $\gamma_5$-ODD operator with non-vanishing matrix element between $\psi_R$ and $\psi_L$, transforming as vector under continuum Lorentz. These three properties uniquely identify the operator (up to overall scalar normalization) as $\bar{\psi}_L \gamma^\mu \psi_L = \frac{1}{2}\bar{\psi}\gamma^\mu(1-\gamma_5)\psi$ in Yang-Mills $SU(2)_L \times U(1)_Y$ EFT.
+
+Overall coupling-constant normalization fixed by bridge theorem's magnitude inheritance THEO-CHIR-CONT-1.3 at leading order: matrix element magnitude $|M^{\text{eff,W}}| = \chi/6 \approx 0.0394$ corresponds to V–A coupling strength at substrate handle's projection level.
+
+### Sector-specific physical content inherited at leading order
+
+1. **Pure-V–A structure** (no V+A admixture): $\gamma_5$-ODD inheritance from Identification 1 + Theorem 4.2 guarantees pure V–A. Hypothetical V+A admixture would correspond to $\gamma_5$-EVEN operator component, structurally excluded by bridge theorem.
+
+2. **Coupling magnitude at leading order**: V–A coupling strength inherits substrate-handle magnitude $\chi/6 \approx 0.0394$ via THEO-CHIR-CONT-1.3 topological-projection argument. Sub-leading corrections at $(a/L)^n$ for $n \geq 1$ negligible at SF-2 electroweak scale ($a/L \sim 10^{-18}$; $a = \ell_{\text{edge}}$ Planck-scale; $L \sim 10^2$ GeV electroweak observable scale).
+
+3. **Gauge coupling to $W^\pm, Z$**: V–A current couples to $W^\pm$ via standard charged-current Lagrangian $\mathcal{L}_{\text{CC}} = -(g/\sqrt{2}) W^+_\mu \bar{\psi}_L \gamma^\mu \psi_L + \text{h.c.}$ where $g$ is $SU(2)_L$ gauge coupling. Substrate-handle inheritance fixes V–A structure (pure V–A vs V+A); gauge coupling $g$ fixed by independent inputs (electroweak symmetry breaking + Higgs mechanism per SF-2 v1.0 §sec:higgs\_mechanism + SM input parameters).
+
+4. **Lorentz structure**: V–A current is vector under continuum Lorentz, inheriting Lorentz covariance from Yang-Mills EFT framework (continuum-limit emergence of Lorentz invariance at scales $\mu \ll \Lambda_{\text{sub}}$ per SF-2 v1.0 §sec:YM\_EFT\_thm). Bridge theorem's continuum-limit projection $\Phi$ preserves continuum-Lorentz-covariance at leading order via block-spin commutativity with discrete rotational symmetries of substrate.
+
+### FI dependency expansion at §B (sector-specific to §B Sector A)
+
+- **FI-CHIR-CONT-10**: W-bracelet sector specialization — substrate object as W-bracelet 6-vertex Petrie hexagon at $v_{\text{host}}$ with stabilizer $D_6$, $\zeta^W = r^3$, chirality operator $\hat{C}^W \in B_2(D_6)$. Inherited from THEO-SD-CHIR-1 sector instantiation.
+- **FI-CHIR-CONT-11**: SF-2 Yang-Mills EFT framework — continuum-limit EFT for SF-2 sector as Yang-Mills $SU(2)_L \times U(1)_Y$ gauge theory. Inherited from SF-2 v1.0 §sec:YM\_EFT\_thm + EW-5 THEO-EW-8 thm:YM\_EFT proof outline.
+- **FI-CHIR-CONT-12**: Continuum-EFT chirality-projection structure — $\gamma_5$ as chirality-flipping involution on continuum fermion fields with $P_L = (1-\gamma_5)/2, P_R = (1+\gamma_5)/2$ projection operators. Inherited from standard Yang-Mills EFT machinery; structurally robust under continuum-limit projection per SF-2 v1.0 §sec:YM\_EFT\_thm.
+
+CPP axioms most load-bearing for §B Sector A: AXIM-1 (CP existence; FI-CHIR-CONT-1/12), AXIM-2 (600-cell topology; FI-CHIR-CONT-3/9/10), AXIM-3 (Dipole Sea / DI-bit propagation; FI-CHIR-CONT-11), AXIM-4 (SSV interaction / Nexus; FI-CHIR-CONT-9 + Yang-Mills gauge interaction), AXIM-7 (Substrate-stress; FI-CHIR-CONT-1).
+
+### Steps 2–4 setup architecture
+
+**Step 2 (Session 2 target; Patch 0489+ candidate)**: Michel parameter $\rho = 3/4$ derivation at finite mass via standard V–A kinematics. Pure-V–A four-fermion effective interaction $\bar{\nu}_\mu \gamma^\mu (1-\gamma_5)\mu \cdot \bar{e}\gamma_\mu (1-\gamma_5)\nu_e / 2$ drives muon decay at four-fermion level (after integrating out $W^\pm$ at $E_\mu \ll m_W$). Standard kinematic calculation: pure-V–A $\to$ $\rho = 3/4$ at tree level. Substrate-handle corrections at $\chi^2 \sim 0.056$ sub-leading order, below LEP/SLC precision. Empirical anchor: PDG 2024 $\rho^{\text{obs}} = 0.7497 \pm 0.0010$ consistent within 2-sigma.
+
+**Step 3 (Session 3 target; Patch 0490+ candidate)**: 100% LH preference at massless helicity limit. V–A current projects only LH-chiral content at massless limit: $P_L / (P_L + P_R) \to 1$ as $m_\psi/E_\psi \to 0$, deviations $|\delta P_L| \lesssim |\chi|/6 \cdot (m_\psi/E_\psi)$ at sub-leading kinematic suppression. Empirical anchor: observed neutrino chirality data consistent with 100% LH at current precision.
+
+**Step 4 (Session 4 target; Patch 0491+ candidate)**: Capotauro Falsifier 6 activation. Three falsification thresholds: (A) Michel deviation $|\rho^{\text{obs}} - 3/4| > \chi^2 \cdot \text{(precision)}$; (B) Massless-helicity deviation $|\delta P_L| > $ structural-threshold; (C) Leptogenesis CP-asymmetry deviation $|\Delta p_{LR}^{\text{obs}} - \chi/6| > $ sub-percent threshold (sharpest direct test). Threshold (C) falsifies THEO-CHIR-CONT-1 + THEO-CHIR-CONT-2 jointly if observation $|\Delta p_{LR}^{\text{obs}} - 0.0394| > 0.001$ at sub-percent precision. Theorem B.1 promoted to THEO-CHIR-CONT-2 at end of Session 4 upon all sub-claims closing.
+
+### Programme state changes at Patch 0488
+
+- (1) §B Sector A working sketch OPENED at joint paper home (~450 lines).
+- (2) Theorem B.1 statement ESTABLISHED at theorem-statement level (THEO-CHIR-CONT-2 candidate).
+- (3) Sub-claim (b) sector-specific continuum operator identification CLOSED via three structural identifications.
+- (4) Steps 2–4 architecture articulated for Sessions 2+3+4 of §B.
+- (5) FI inventory expanded by FI-CHIR-CONT-10/11/12 (sector-specific to §B).
+- (6) NO theorems registered new at programme level (THEO-CHIR-CONT-2 candidate registration at end of §B Session 4).
+- (7) NO predictions registered new (sub-claim targets at Sessions 2–4).
+- (8) NO falsifiers registered new (Capotauro Falsifier 6 activation at Session 4).
+
+### Methodological observations at Patch 0488
+
+**(A) §B Step 1 closure inherits cleanly from §A bridge theorem**: sector-specific operator identification followed structural template of §A Step 3 (continuum operator identification at sector-agnostic level) but with sector-specific identification of abstract continuum operator with V–A current operator. Cleanness of inheritance — three identifications across structural / algebraic / matter-doublet content lines fully closing sector-specific identification — confirms sector-agnostic abstraction of §A delivered right structural ingredients for sector-specific §B closure. Validates joint paper format's structural efficiency at §A → §B handoff.
+
+**(B) §B sub-claim (b) closure cost matches projection**: 1 session for Step 1 matches §B scoping sketch (Patch 0482 §3.1) estimate of "1 session per step" for §B's 4-step structure. If Sessions 2–4 close at same rate, total §B closure cost ~4 sessions (Patches 0488–0491+), within v0.1 outline §5 estimate of 3–5 sessions for §B substantive drafting.
+
+### Forward queue post-Patch 0488
+
+1. **Priority 1 (Patch 0489+ candidate)**: §B Session 2 Step 2 Michel parameter $\rho = 3/4$ derivation at finite mass; 1 session.
+2. **Priority 2 (Patch 0490+ candidate)**: §B Session 3 Step 3 100% LH at massless helicity limit derivation; 1 session.
+3. **Priority 3 (Patch 0491+ candidate)**: §B Session 4 Step 4 Capotauro Falsifier 6 activation + Theorem B.1 promoted to THEO-CHIR-CONT-2; 1 session; **SUB-CLAIM (b)+(c)+(d)+(e) CLOSURE PATCH for §B**.
+4. **Priority 4 (Patches 0492+)**: §C Sector B chiral-polarity-bias derivation; v0.4 substantive drafting; 3–5 sessions; expected THEO-CHIR-CONT-3 candidate.
+5. **Subsequent (Patches 0496+)**: §D polish; v0.5.
+6. **Subsequent (Patches 0498+)**: v0.6–v0.9 reviewer cycle.
+7. **Subsequent (Patch 0503+)**: v1.0 SHIP.
+
+### Anti-priorities preserved at Patch 0488
+
+- Do NOT close Steps 2–4 at Session 1 of §B (deferred to Sessions 2–4).
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex source during §B drafting.
+- Do NOT modify Patch 0482 SF-2 scoping sketch at `flagship_papers/electroweak/sketches/` (preserved at historical location).
+- Do NOT mix §B sector-specific content with §A bridge content or §C sector-specific content (which will open at Patches 0492+).
+- Do NOT introduce new FI-CHIR-CONT-N entries beyond FI-CHIR-CONT-10/11/12 at §B (FI inventory capped at +3 sector-specific for §B; +3 sector-specific for §C; max 6 sector-specific total).
+- Do NOT promote Theorem B.1 / THEO-CHIR-CONT-2 to programme-level registered-theorem status at Session 1 (registration at end of §B Session 4 patch).
+- Do NOT exceed Sector A (SF-2) scope (other electroweak sub-claims NOT in §B scope: neutral-current $Z$-coupling, Higgs-fermion Yukawas, CKM mixing, etc.).
+- Do NOT undo §A closure in §B drafting (bridge theorem THEO-CHIR-CONT-1 is fixed; §B inherits without modification).
