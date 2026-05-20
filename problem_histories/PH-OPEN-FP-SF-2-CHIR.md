@@ -2068,3 +2068,114 @@ Catalogue stable at 4 entries through three sector integrations. Cross-paper usa
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT modify v0.1 outline file at this patch
+
+---
+
+## Joint Paper v0.5 Polish Session 5: §6 Cross-Sector Unification Synthesis Substantive Content Integrated (Session 137 Patch 0501)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0500 §5 Sector B integration)
+**Patch:** 0501
+**Status:** §6 cross-sector unification synthesis substantive content integrated into chirality_continuum.tex from cross_sector_unification.md working sketch (~500+ lines source). Joint paper §3+§4+§5+§6 substantive content now complete at theorem-level rigor across all four substantive sections in .tex source. No new methods catalogued (synthesis inherits METH-CHIR-CONT-1/2/3/4 from §3).
+
+### What this update establishes
+
+Patch 0501 integrates the §6 cross-sector unification synthesis substantive content from the working sketch into the joint paper LaTeX source. §6 synthesizes the cross-sector unification themes that emerge through the joint paper's three substantive theorem registrations (THEO-CHIR-CONT-1+2+3) and articulates them as the structural identity claim of the paper.
+
+The §6 paper integration exercises editorial discretion: the §6.6 v0.5 SHIP readiness sub-section from the working sketch (sketch §7) was DROPPED as programme-internal session-management content not paper-appropriate; the §6.5 joint paper format structural-efficiency claim (sketch §6) was RETAINED but recast from process-oriented language to scientific content.
+
+### Patch 0501 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §6 cross-sector unification substantive content integrated (+~97 lines; .tex now ~1013 lines total). Bibliography expanded with 2 new references (ChiContSketchD + SF4v4).
+- **UPDATE** `research_frontier.md` — Patch 0501 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0501 entry appended (this section).
+
+### §6 Sub-sections drafted
+
+| §6.N | Content |
+|---|---|
+| 6.1 | Shared substrate handle: $\|M^{K_3}\| = \|M^W\| = \|M^{qDP}\| = \chi/6 \approx 0.0394$ via SAME 12-vertex icosahedral cage + SAME matter-doublet dimension 2 |
+| 6.2 | OPEN-SD-CHIR-PRIMITIVE umbrella perspective (Table 6.1; three of five manifestations at full Layer 4 rigor) |
+| 6.3 | Second cross-sector closure pattern in CPP after SF-4 v4.0 (three-theorem architecture vs SF-4 v4.0 single composite theorem) |
+| 6.4 | Structural identity claim of the paper (Box statement + Table 6.2 four-level identity) |
+| 6.5 | Cross-sector convergence as structural prediction (recast from sketch §6.5) |
+
+**§6.6 v0.5 SHIP readiness sub-section DROPPED** as programme-internal not paper-appropriate.
+
+### Five-level identity structure (§6.4 Table 6.2)
+
+| Level | Mechanism | Magnitude |
+|---|---|---|
+| Substrate (Layer 3) | Three-step machinery via THEO-CAP-1, THEO-SD-CHIR-1, THEO-SD-CHIR-2 | $\chi/6$ |
+| Continuum-EFT sector-agnostic (Layer 4) | Topological-projection via THEO-CHIR-CONT-1.3 | $\chi/6$ |
+| Continuum-EFT sector-specific (Layer 4) | W-bracelet → V–A current (THEO-CHIR-CONT-2); qDP/eDP → $\Delta F^{qDP}$ (THEO-CHIR-CONT-3) | $\chi/6$ |
+| Observable scale (joint channel) | Leptogenesis CP-asymmetry from both §4 + §5 sector closures | $\chi/6 \approx 0.0394$ |
+
+**Zero free parameters** in structural identity claim: $\chi = \varphi^{-3} \approx 0.2361$ + $1/6 = d_\Gamma/V_{\text{cage}} = 2/12$ integer ratio.
+
+### Cross-sector convergence as structural prediction (§6.5; central methodological contribution)
+
+The most substantively important §6 content: cross-sector convergence at observable level is a **structural prediction** of the joint paper format rather than an emergent empirical coincidence.
+
+- **Joint paper format** (this paper): convergence on $\Delta p_{LR} \approx 0.0394$ from both §4 and §5 is structural prediction of THEO-CHIR-CONT-1 applied to both sectors; visible as single substrate-handle inheritance pattern with two sector-specific realizations
+- **Separate single-sector papers** (counterfactual): convergence would have appeared as emergent empirical coincidence at observable level requiring post-hoc reconciliation between two separately-published Layer 4 closures
+
+This is the central methodological contribution of the joint paper format to CPP's cross-sector closure methodology.
+
+### Methods catalogue inheritance pattern at Patch 0501
+
+§6 contains 5 `\methref{...}` invocations:
+
+- §6.1: METH-CHIR-CONT-1 (three sector instantiations of sector-agnostic substrate Wigner-Eckart datum) + METH-CHIR-CONT-4 (Layer 4 elevation via topological-projection)
+- §6.4: METH-CHIR-CONT-4 (four-level identity table topological-projection mechanism)
+- §6.5: METH-CHIR-CONT-1 (sector-agnostic data abstraction at structural-efficiency mechanism)
+
+Total .tex `\methref{...}` invocations grew from 21 (post-Patch 0500) to 26 at this patch.
+
+### Editorial discretion at sketch-to-paper integration
+
+**§6.6 v0.5 SHIP readiness sub-section DROPPED** from paper integration: the §6.6 sub-section in the working sketch (sketch §7) covers programme-internal session-management content (paper-section readiness assessment, paper polish trajectory, reviewer cycle planning) that is not scientific paper content. Programme-state tracking belongs in research_frontier.md + problem_histories/PH-OPEN-FP-SF-2-CHIR.md, not in the paper .tex source.
+
+**§6.5 RECAST**: the sketch's §6.5 joint paper format structural-efficiency validation (covering session-count savings, structural payoff observations, etc.) was recast at paper integration as §6.5 "Cross-sector convergence as structural prediction" focused on the scientific content (cross-sector convergence is structural prediction of joint paper format rather than emergent empirical coincidence) rather than the process content (session-count comparisons, programme-management observations).
+
+**Sketch-to-paper integration discipline established at Patch 0501**: sketches are inclusive of programme-process content for working-session continuity; paper integration filters to scientific content only. This discipline applies to future paper integrations.
+
+### Programme state changes at Patch 0501
+
+- (1) §6 cross-sector unification synthesis substantive content integrated into chirality_continuum.tex (+~97 lines)
+- (2) Five §6 sub-sections drafted; §6.6 v0.5 SHIP readiness sub-section explicitly dropped
+- (3) Bibliography expanded with 2 new references (ChiContSketchD + SF4v4)
+- (4) NO new methods catalogued (synthesis section inheritance)
+- (5) NO theorems registered new (synthesis not new closure)
+- (6) NO predictions registered new
+- (7) NO falsifiers registered new
+- (8) NO conjecture registrations
+- (9) Joint paper §3+§4+§5+§6 substantively complete at theorem-level rigor across all four substantive sections
+
+### Catalogue inheritance pattern complete through full substantive section integration cycle
+
+| Section | New METH entries | Status |
+|---|---|---|
+| §3 Bridge (Patch 0498) | 4 (METH-CHIR-CONT-1/2/3/4) | Novel methodological content |
+| §4 Sector A (Patch 0499) | 0 | Sector-specific application |
+| §5 Sector B (Patch 0500) | 0 | Sector-specific application |
+| §6 Cross-sector synthesis (this patch) | 0 | Synthesis section |
+
+Catalogue stable at 4 entries through full substantive integration cycle. Cross-paper usage of METH-CHIR-CONT-N entries now spans §3 + §4 + §5 + §6 — comprehensive inheritance pattern validated.
+
+### Forward queue post-Patch 0501
+
+- **Priority 1 (Patch 0502)**: §7 Predictions and Falsifiers + §8 Open Theorem-Level Work + §9 Discussion substantive drafting from v0.1 outline + theorem-registry + sketch synthesis; possibly catalogue Cross-paper-usage batch update; 1 session
+- **Priority 2 (Patch 0503)**: bibliography finalization + LaTeX compilation check + v1.0 SHIP title-block version bump; 0–1 session
+- **Subsequent (Patches 0504+)**: v0.6–v0.9 reviewer cycle ChatGPT + CoPilot + Grok; 3–5 sessions
+
+### Anti-priorities preserved at Patch 0501
+
+- Do NOT modify §6 cross-sector working sketch content during paper integration
+- Do NOT register new theorems or predictions during v0.5 paper polish
+- Do NOT add methods catalogue entries speculatively (synthesis inherits catalogue entries)
+- Do NOT extend §6 scope beyond cross-sector unification synthesis
+- Do NOT include programme-internal session-management content in paper .tex source (e.g., v0.5 SHIP readiness assessment)
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT modify v0.1 outline file at this patch
