@@ -1648,3 +1648,106 @@ Identity holds at four levels: Layer 3 substrate (three sectors via three-step m
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT modify joint paper outline file at this patch (deferred to v0.5 paper polish)
 - Do NOT introduce new FI-CHIR-CONT-N entries at §D
+
+---
+
+## Joint Paper v0.5 Polish Session 1: `chirality_continuum.tex` Created at v0.5 DRAFT Status; §1 + §2 Substantively Drafted; §3–§6 Scaffolded with Sketch Cross-References (Session 137 Patch 0497)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0496 §D Session 1 OPENED)
+**Patch:** 0497
+**Status:** Joint paper LaTeX source created at v0.5 DRAFT status. §1 Introduction + §2 Inheritance from Capotauro v2.0 substantively drafted. §3–§6 scaffolded with sketch cross-references. §7–§9 scaffolded per v0.1 outline. §10 References bibliography skeleton with ~20 references identified.
+
+### What this update establishes
+
+Patch 0497 opens v0.5 paper polish phase by creating the joint paper LaTeX source `chirality_continuum.tex` at v0.5 (DRAFT) status. Document scaffold complete with LaTeX preamble inheriting Capotauro v2.0 conventions + title block + author block + version header. Abstract and plain-language summary substantively drafted per v0.1 outline §1.1 + §1.2 specifications. §1 Introduction (4 sub-sections) and §2 Inheritance from Capotauro v2.0 (6 sub-sections) substantively drafted. §3 + §4 + §5 + §6 scaffolded with v0.5 SKETCH SCAFFOLDING NOTE remarks identifying the comprehensive working sketches as substantive content sources for v0.5 paper polish integration at Patches 0498+.
+
+### Patch 0497 deliverables
+
+- **NEW** `flagship_papers/chirality_continuum/chirality_continuum.tex` — joint paper LaTeX source (~402 lines / ~55KB). LaTeX preamble + title + author + abstract + plain-language summary + §1 Introduction (4 sub-sections substantively drafted) + §2 Inheritance from Capotauro v2.0 (6 sub-sections substantively drafted) + §3–§6 scaffolded with sketch cross-references + §7–§9 scaffolded per v0.1 outline + §10 References bibliography skeleton (~20 references identified).
+- **UPDATE** `research_frontier.md` — Patch 0497 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0497 entry appended (this section).
+
+### v0.5 Paper opening substantive content
+
+**Abstract (single comprehensive paragraph)**: substrate handle inheritance from Capotauro v2.0 + joint Layer 4 closure of two sector projections + shared bridge step as load-bearing technical content + sector-specific kinematic projections via standard SM machinery + cross-sector unification identity claim under OPEN-SD-CHIR-PRIMITIVE umbrella + primary empirical content (leptogenesis CP-asymmetry $\Delta p_{LR} \approx 0.0394$ within 2% of BAU back-derivation $\sim 0.04$) + conditional-theorem-closure-paper framing.
+
+**Plain-language summary (two substantial paragraphs at Rovelli/SciAm register)**: substrate-level chirality as primitive feature of 600-cell substrate + one substrate-level number $\chi/6$ controlling two seemingly-unrelated phenomena at Standard Model scale + joint closure as cross-sector unification at Layer 4 of CPP architecture + empirical anchor at leptogenesis CP-asymmetry validating both Layer 4 closures simultaneously.
+
+**§1 Introduction (4 sub-sections)**:
+- §1.1: V–A coupling structure of $W^\pm$-mediated weak interactions + quark chiral-polarity-bias structure of charge asymmetry
+- §1.2: Shared substrate handle from Capotauro v2.0 three-way cross-sector unification; structural efficiency + structural payoff of joint paper format
+- §1.3: Theorem-level closure of OPEN-FP-SF-2-CHIR + SM-2 v2.0+ chiral-polarity-bias EFT continuum-limit via THEO-CHIR-CONT-1+2+3 trio
+- §1.4: Conditional-theorem-closure-paper framing + foundational input stack + open verification items + paper roadmap
+
+**§2 Inheritance from Capotauro v2.0 (6 sub-sections)**:
+- §2.1: THEO-SD-CHIR-1 inheritance (K3-doublet ↔ W-bracelet substrate-level cross-sector unification via four-step proof chain)
+- §2.2: THEO-SD-CHIR-2 inheritance (qDP/eDP sector closure via $D_{5d}$ stabilizer + combined-$CP$ pairing + $A_{2u}(D_{5d})$ chirality operator)
+- §2.3: Three-way cross-sector unification at substrate level (structural identity claim via SAME 12-vertex icosahedral cage + SAME matter-doublet dimension 2 across three structurally distinct sectors)
+- §2.4: Layer 3 vs Layer 4 dichotomy (substrate-handle at $\Lambda_{\text{sub}}$ vs continuum-EFT projection at $\mu_{\text{obs}}$)
+- §2.5: Capotauro v2.0 axiom set load-bearing (AXIM-1/2/3/4/7) + FI inheritance (FI-CHIR-CONT-1 through FI-CHIR-CONT-9 from Capotauro + FI-CHIR-CONT-10 through FI-CHIR-CONT-15 sector-specific)
+
+### v0.5 paper scaffold structure (§3–§6 sketch cross-references)
+
+Each scaffolded section opens with a v0.5 SKETCH SCAFFOLDING NOTE remark identifying the comprehensive working sketch source:
+
+| Section | Sketch source | Sketch lines |
+|---|---|---|
+| §3 Bridge | `sketches/substrate_to_continuum_bridge.md` | ~1156 |
+| §4 Sector A | `sketches/sector_a_va_coupling.md` | ~885 |
+| §5 Sector B | `sketches/sector_b_chiral_polarity_bias.md` | ~967 |
+| §6 Cross-Sector | `sketches/cross_sector_unification.md` | ~500+ |
+
+Each section then contains a v0.5 placeholder text summarizing the section's substantive content for integration at Patches 0498+ paper polish.
+
+**§7 + §8 + §9 scaffolded per v0.1 outline §1.9 + §1.10 + §1.11 specifications**:
+- §7 Predictions and Falsifiers: zero-parameter predictions table outline + six falsifiers list
+- §8 Open Theorem-Level Work: three sub-sections + Picture A alternative continuum-EFT framework
+- §9 Discussion: five sub-sections covering joint paper methodology + structural identity claim + forward trajectory
+
+**§10 References bibliography skeleton (~20 references identified)**: Capotauro v2.0 + research_frontier + theorem-registry + SF-2 v1.0 + SM-2 v1.0 + EW-5 + conditional-closure framework + axiom document + reviewer notes + Davidson Nardi Nir 2008 + Wu 1957 + Goldhaber 1958 + Commins Bucksbaum + Cheng Li + Peskin Schroeder + TWIST + Michel 1950 + Marciano Sirlin 1988 + LEP electroweak + ATLAS/CMS top-spin. Comment markers for additional references at v0.5 polish (PDG 2024 + SF-4 v4.0 + Adler-Bardeen + Wilson-Fisher + Atiyah-Singer + Coxeter polytope references).
+
+### Programme state changes at Patch 0497
+
+- (1) Joint paper LaTeX source `chirality_continuum.tex` created at v0.5 (DRAFT) status
+- (2) §1 Introduction substantively drafted (4 sub-sections)
+- (3) §2 Inheritance from Capotauro v2.0 substantively drafted (6 sub-sections)
+- (4) §3–§6 scaffolded with sketch cross-references for integration at Patches 0498+
+- (5) §7–§9 scaffolded per v0.1 outline
+- (6) §10 References bibliography skeleton with ~20 references identified
+- (7) NO theorems registered new (theorem registry already complete THEO-CHIR-CONT-1+2+3)
+- (8) NO predictions registered new (predictions catalog deferred to §7 substantive drafting)
+- (9) NO falsifiers registered new (falsifiers catalog deferred to §7 substantive drafting)
+- (10) NO conjecture registrations
+
+### Methodological observation — v0.5 paper opening structurally efficient via sketch inheritance
+
+The substantive theorem-level content of §3–§6 is closed at sketch-level rigor across Patches 0485–0496 (with ~3508 lines combined across the four sketches). v0.5 paper polish at Patches 0498+ reduces to integration work converting sketch markdown content into LaTeX paper sections. No new derivation work required at v0.5 paper polish; only structural integration + LaTeX formatting + cross-reference verification.
+
+**Estimated v0.5 paper polish remaining effort**:
+- §3 Bridge integration from `substrate_to_continuum_bridge.md`: ~1 session
+- §4 Sector A integration from `sector_a_va_coupling.md`: ~1 session
+- §5 Sector B integration from `sector_b_chiral_polarity_bias.md`: ~1 session
+- §6 Cross-sector unification integration from `cross_sector_unification.md`: ~1 session
+- §7 + §8 + §9 substantive drafting from outline + theorem-registry + synthesis: ~1 session
+- Bibliography finalization + LaTeX compilation check: ~0–1 session
+
+Total v0.5 paper polish remaining: 4–6 sessions (Patches 0498+ through Patch 0502+).
+
+**Alternative consolidation**: v0.5 paper polish could be consolidated into ~2–3 substantial patches (§3+§4 in one patch; §5+§6 in next; §7–§9 + bibliography finalization in third) rather than ~5–7 smaller patches. Trade-off: larger patches reduce overhead but may exceed comfortable patch granularity for sequential confirmation. Decision deferred to Thomas's session-management preference.
+
+### Forward queue post-Patch 0497
+
+- **Priority 1 (Patches 0498+)**: v0.5 paper polish Sessions 2+3+4+5 — substantive integration of §3 + §4 + §5 + §6 from sketches into paper LaTeX source; ~1–2 sessions for each section depending on sketch length; estimated 3–5 sessions for full §3–§6 integration
+- **Priority 2 (Patches 0501+)**: v0.5 paper polish §7 + §8 + §9 substantive drafting from outline + theorem-registry + sketch synthesis; 1 session estimated
+- **Priority 3 (Patches 0502+)**: v0.5 paper polish bibliography finalization + cross-reference verification + LaTeX compilation check; 0–1 sessions estimated
+- **Priority 4 (Patches 0498+ subsequent)**: v0.6–v0.9 reviewer cycle (ChatGPT + CoPilot + Grok); 3–5 sessions
+- **Priority 5 (Patch 0503+)**: v1.0 SHIP
+
+### Anti-priorities preserved at Patch 0497
+
+- Do NOT register new theorems or predictions at v0.5 paper polish (theorem registry already complete)
+- Do NOT modify §3–§6 sketch content during v0.5 paper polish (sketch content closed at theorem-level rigor)
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT introduce new FI-CHIR-CONT-N entries beyond FI-CHIR-CONT-1/2/3/9 + FI-CHIR-CONT-10/11/12 + FI-CHIR-CONT-13/14/15
