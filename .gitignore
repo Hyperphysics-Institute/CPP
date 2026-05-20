@@ -15,3 +15,17 @@ Thumbs.db
 desktop.ini
 *.swp
 *.swo
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb

@@ -39,6 +39,7 @@
 \newtheorem{conjecture}[theorem]{Conjecture}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{claim}[theorem]{Claim}
 \newtheorem{openproblem}{Open Problem}
 
 % Shared notation conventions inherited from Capotauro v2.0
@@ -81,7 +82,7 @@ Electroweak V--A Coupling and Quark Chiral-Polarity-Bias from $|M| = \chi/6$}
 \author{Thomas Lee Abshier, ND\thanks{Hyperphysics Institute / Renaissance Ministries. Email: drthomas@hyperphysics-institute.org} \and
 Claude Opus\thanks{Anthropic. Methodological collaborator and co-author. The first author conceived the framework and directed the closure trajectory; the second author contributed mathematical formalization, computation, and documentation under the first author's direction.}}
 
-\date{Version 0.5 (DRAFT) --- 20 May 2026\\
+\date{Version 0.5 (SHIPPED) --- 20 May 2026\\
 \small{Conscious Point Physics Flagship Paper Series (Chirality Continuum line)}}
 
 \begin{document}
@@ -246,12 +247,12 @@ The foundational input stack inherited from Capotauro v2.0 is FI-C-1 through FI-
 
 This section establishes the load-bearing technical content of the joint paper: the substrate-handle-to-effective-coupling bridge step at sector-agnostic level. The bridge theorem (Theorem 3.4; programme-level registration THEO-CHIR-CONT-1; \cite{ResearchFrontier} theorem \#65) projects the substrate-level chirality matrix element $|M^{\text{sector}}| = \chi/6$ at substrate cutoff $\Lambdasub = \elledge^{-1}$ to a continuum-limit effective coupling $|M^{\text{eff,sector}}| = \chi/6$ at observable kinematic scales $\muobs \ll \Lambdasub$, at sector-agnostic level. The bridge is sector-agnostic by construction: the projection machinery depends only on universal substrate-level data $(|\chi|, \dGamma/\Vcage) = (\varphi^{-3}, 1/6)$ and not on sector-specific data $(\Gamma, \zeta^{\text{sector}}, \hat{C}^{\text{sector}})$ beyond labels.
 
-Four methodological constructs introduced in this section are catalogued at the programme level in \texttt{methods\_catalogue.md} (initial population at Patch 0498): the sector-agnostic substrate Wigner-Eckart datum (\methref{METH-CHIR-CONT-1}); the continuum-limit projection map $\Phi$ via Wilson-Fisher block-spin renormalization at substrate cutoff (\methref{METH-CHIR-CONT-2}); the topological substrate quantity concept (\methref{METH-CHIR-CONT-3}); and the topological-projection argument (\methref{METH-CHIR-CONT-4}). Each construct is referenced at its first paper use via the corresponding \texttt{[METH-CHIR-CONT-N]} marker.
+Four methodological constructs introduced in this section are catalogued at the programme level in \texttt{methods\_catalogue.md} \cite{MethodsCatalogue} (initial population at Patch 0498): the sector-agnostic substrate Wigner-Eckart datum (\methref{METH-CHIR-CONT-1}); the continuum-limit projection map $\Phi$ via Wilson-Fisher block-spin renormalization at substrate cutoff (\methref{METH-CHIR-CONT-2}); the topological substrate quantity concept (\methref{METH-CHIR-CONT-3}); and the topological-projection argument (\methref{METH-CHIR-CONT-4}). Each construct is referenced at its first paper use via the corresponding \texttt{[METH-CHIR-CONT-N]} marker.
 
 \subsection{The sector-agnostic substrate Wigner-Eckart datum}
 \label{sec:sector_agnostic_datum}
 
-We begin by abstracting the substrate-level Wigner-Eckart structure across the three Capotauro v2.0 sectors \cite{Capotauro} into a single sector-agnostic framework. \methref{METH-CHIR-CONT-1}
+We begin by abstracting the substrate-level Wigner-Eckart structure \cite{WignerEckart} across the three Capotauro v2.0 sectors \cite{Capotauro} into a single sector-agnostic framework. \methref{METH-CHIR-CONT-1}
 
 \begin{definition}[Sector-Agnostic Substrate Wigner-Eckart Datum]
 \label{def:datum}
@@ -359,11 +360,11 @@ With the symmetry-content preservation lemma in hand, we can identify the contin
 
 \begin{theorem}[Continuum Operator Identification at Sector-Agnostic Level; sub-statement THEO-CHIR-CONT-1.2]
 \label{thm:continuum_operator_id}
-Under Lemma~\ref{lem:symmetry_preservation} and a valid sector-agnostic substrate Wigner-Eckart datum $\mathcal{D}^{\text{sub}}$ per Definition~\ref{def:datum}, the continuum-limit operator $\Oeff^{\text{sector}} = \Phicont\hat{C}^{\text{sector}}$ satisfies:
+Under Lemma~\ref{lem:symmetry_preservation} and a valid sector-agnostic substrate Wigner-Eckart datum $\mathcal{D}^{\text{sub}}$ per Definition~\ref{def:datum}, the continuum-limit operator $\mathcal{O}^{\text{eff,sector}} = \Phicont\hat{C}^{\text{sector}}$ satisfies:
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Irrep content preservation}: $\Oeff^{\text{sector}}$ lives in the continuum-limit projection of the $\zeta^{\text{sector}}$-ODD 1D irrep of $\Gamma$ --- equivalently, $\Oeff^{\text{sector}}$ is $\zeta^{\text{cont,sector}}$-ODD.
-\item \textbf{Non-vanishing matrix element}: $\langle\psi^{\text{eff}}_+|\Oeff^{\text{sector}}|\psi^{\text{eff}}_-\rangle \neq 0$ between continuum-limit matter-doublet states.
-\item \textbf{Uniqueness}: $\Oeff^{\text{sector}}$ is the unique (up to overall scalar multiple) continuum-limit operator with the parity content of (1) and the non-vanishing matrix-element condition of (2).
+\item \textbf{Irrep content preservation}: $\mathcal{O}^{\text{eff,sector}}$ lives in the continuum-limit projection of the $\zeta^{\text{sector}}$-ODD 1D irrep of $\Gamma$ --- equivalently, $\mathcal{O}^{\text{eff,sector}}$ is $\zeta^{\text{cont,sector}}$-ODD.
+\item \textbf{Non-vanishing matrix element}: $\langle\psi^{\text{eff}}_+|\mathcal{O}^{\text{eff,sector}}|\psi^{\text{eff}}_-\rangle \neq 0$ between continuum-limit matter-doublet states.
+\item \textbf{Uniqueness}: $\mathcal{O}^{\text{eff,sector}}$ is the unique (up to overall scalar multiple) continuum-limit operator with the parity content of (1) and the non-vanishing matrix-element condition of (2).
 \item \textbf{Sector-agnosticism}: the existence, parity content, non-vanishing matrix element, and uniqueness conditions depend only on the universal sector-agnostic substrate Wigner-Eckart datum structure (Definition~\ref{def:datum}), not on sector-specific data $(\Gamma, \zeta^{\text{sector}}, \hat{C}^{\text{sector}})$ beyond labels.
 \end{enumerate}
 \end{theorem}
@@ -372,7 +373,7 @@ Under Lemma~\ref{lem:symmetry_preservation} and a valid sector-agnostic substrat
 (1) follows from Lemma~\ref{lem:symmetry_preservation}(4) applied to the substrate $\zeta^{\text{sector}}$-ODD 1D irrep $\hat{C}^{\text{sector}}$ lives in. (2) follows from Lemma~\ref{lem:symmetry_preservation}(5): the continuum matter-doublet inherits opposite $\zeta^{\text{cont,sector}}$-parity, so the matrix element has $\zeta^{\text{cont,sector}}$-parity content EVEN $\otimes$ ODD $\otimes$ ODD = EVEN containing the trivial irrep, hence non-vanishing. (3) by Schur's lemma at continuum level: a $\zeta^{\text{cont,sector}}$-ODD 1D-irrep operator on a 2D $\Gamma^{\text{cont}}$-irrep is unique up to scalar multiple. (4) by inspection: the proofs of (1)--(3) used only the abstract sector-agnostic structure, not sector-specific labels beyond their role as group-theoretic identifiers. Full proof in working sketch \cite{ChiContSketch} §12.2 lines 464--474.
 \end{proof}
 
-The matrix-element \emph{magnitude} $|\langle\psi^{\text{eff}}_+|\Oeff^{\text{sector}}|\psi^{\text{eff}}_-\rangle|$ remains to be established. This is the substantive content of Step 4 (Theorem~\ref{thm:magnitude_inheritance} below).
+The matrix-element \emph{magnitude} $|\langle\psi^{\text{eff}}_+|\mathcal{O}^{\text{eff,sector}}|\psi^{\text{eff}}_-\rangle|$ remains to be established. This is the substantive content of Step 4 (Theorem~\ref{thm:magnitude_inheritance} below).
 
 \subsection{The topological substrate quantity concept}
 \label{sec:topological_substrate}
@@ -442,13 +443,13 @@ We can now state the bridge theorem at full theorem-level rigor.
 
 \begin{theorem}[Substrate-Handle-to-Effective-Coupling Bridge; programme-level registration THEO-CHIR-CONT-1]
 \label{thm:bridge}
-Under FI-CHIR-CONT-1 (substrate primitive 4D direction $\hat{n}$ at vertex-aligned Reading C) + FI-CHIR-CONT-2 (substrate chirality magnitude $|\chi| = \varphi^{-3}$) + FI-CHIR-CONT-3 (substrate residual symmetry $H_3 = I_h$ at host vertex) + FI-CHIR-CONT-9 (Substrate-Locality Theorem of Capotauro v2.0) + AXIM-1, 2, 3, 4, 7 (Capotauro v2.0 axiom stack \cite{AxiomDocument, Capotauro}), the substrate-level chirality matrix element $|M^{\text{sector}}| = \chi/6$ on a substrate object $\mathcal{S}^{\text{sector}}$ with sector-agnostic substrate Wigner-Eckart datum structure per Definition~\ref{def:datum} projects through the continuum-limit map $\Phi$ of Definition~\ref{def:projection_map} to a chirality-sensitive effective operator $\Oeff^{\text{sector}} = \Phicont\hat{C}^{\text{sector}}$ in the continuum EFT appropriate to the sector, with three conditions:
+Under FI-CHIR-CONT-1 (substrate primitive 4D direction $\hat{n}$ at vertex-aligned Reading C) + FI-CHIR-CONT-2 (substrate chirality magnitude $|\chi| = \varphi^{-3}$) + FI-CHIR-CONT-3 (substrate residual symmetry $H_3 = I_h$ at host vertex) + FI-CHIR-CONT-9 (Substrate-Locality Theorem of Capotauro v2.0) + AXIM-1, 2, 3, 4, 7 (Capotauro v2.0 axiom stack \cite{AxiomDocument, Capotauro}), the substrate-level chirality matrix element $|M^{\text{sector}}| = \chi/6$ on a substrate object $\mathcal{S}^{\text{sector}}$ with sector-agnostic substrate Wigner-Eckart datum structure per Definition~\ref{def:datum} projects through the continuum-limit map $\Phi$ of Definition~\ref{def:projection_map} to a chirality-sensitive effective operator $\mathcal{O}^{\text{eff,sector}} = \Phicont\hat{C}^{\text{sector}}$ in the continuum EFT appropriate to the sector, with three conditions:
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Magnitude inheritance (topological)} --- closed by Theorem~\ref{thm:magnitude_inheritance}: $|\langle\psi^{\text{eff}}_+|\Oeff^{\text{sector}}|\psi^{\text{eff}}_-\rangle| = \chi/6 = \varphi^{-3}/6 \approx 0.0394$ at leading order in $a/L$; no renormalization correction at any RG-flow scale between $\Lambdasub$ and $\muobs^{\text{sector}}$.
-\item \textbf{Chirality content preservation} --- closed by Theorem~\ref{thm:continuum_operator_id}: $\Oeff^{\text{sector}}$ is $\zeta^{\text{cont,sector}}$-ODD with respect to the continuum-limit projection of $\zeta^{\text{sector}}$.
+\item \textbf{Magnitude inheritance (topological)} --- closed by Theorem~\ref{thm:magnitude_inheritance}: $|\langle\psi^{\text{eff}}_+|\mathcal{O}^{\text{eff,sector}}|\psi^{\text{eff}}_-\rangle| = \chi/6 = \varphi^{-3}/6 \approx 0.0394$ at leading order in $a/L$; no renormalization correction at any RG-flow scale between $\Lambdasub$ and $\muobs^{\text{sector}}$.
+\item \textbf{Chirality content preservation} --- closed by Theorem~\ref{thm:continuum_operator_id}: $\mathcal{O}^{\text{eff,sector}}$ is $\zeta^{\text{cont,sector}}$-ODD with respect to the continuum-limit projection of $\zeta^{\text{sector}}$.
 \item \textbf{Sector-agnosticism} --- closed by Theorem~\ref{thm:continuum_operator_id}: the projection machinery depends only on universal substrate-level data $(|\chi|, \dGamma/\Vcage) = (\varphi^{-3}, 1/6)$.
 \end{enumerate}
-The continuum operator $\Oeff^{\text{sector}}$ is identified sector-specifically at §\ref{sec:sector_a} (Sector A; V--A current operator $\bar{\psi}_L\gamma^\mu\psi_L$) and §\ref{sec:sector_b} (Sector B; chirality-asymmetric stabilization-energy operator $\DeltaFqDP$); the bridge theorem establishes existence, magnitude inheritance, and chirality content preservation independent of the sector-specific identification.
+The continuum operator $\mathcal{O}^{\text{eff,sector}}$ is identified sector-specifically at §\ref{sec:sector_a} (Sector A; V--A current operator $\bar{\psi}_L\gamma^\mu\psi_L$) and §\ref{sec:sector_b} (Sector B; chirality-asymmetric stabilization-energy operator $\DeltaFqDP$); the bridge theorem establishes existence, magnitude inheritance, and chirality content preservation independent of the sector-specific identification.
 \end{theorem}
 
 The bridge theorem is registered at programme level as THEO-CHIR-CONT-1 (theorem \#65 \cite{ResearchFrontier}; Session 137 Patch 0487). Sub-statements Lemma~\ref{lem:symmetry_preservation} = THEO-CHIR-CONT-1.1, Theorem~\ref{thm:continuum_operator_id} = THEO-CHIR-CONT-1.2, and Theorem~\ref{thm:magnitude_inheritance} = THEO-CHIR-CONT-1.3 are registered as named sub-theorems for future inheritance citation in the sector-specific Layer 4 closures of §\ref{sec:sector_a} and §\ref{sec:sector_b}.
@@ -466,7 +467,7 @@ This section closes the joint paper's first sector-specific Layer 4 derivation: 
 \subsection{Sector instantiation — W-bracelet substrate object + Yang-Mills EFT framework}
 \label{sec:sector_a_instantiation}
 
-The Sector A instantiation of the bridge theorem's sector-agnostic substrate Wigner-Eckart datum (Definition~\ref{def:datum} \methref{METH-CHIR-CONT-1}) specializes the abstract data to the W-bracelet sector via three sector-specific foundational inputs introduced here:
+The Sector A instantiation of the bridge theorem's sector-agnostic substrate Wigner-Eckart datum (Definition~\ref{def:datum} \methref{METH-CHIR-CONT-1}) specializes the abstract data to the W-bracelet sector via three sector-specific foundational inputs introduced here (full proof-chain rigor in working sketch \cite{ChiContSketchA}):
 
 \begin{itemize}[leftmargin=*]
 \item \textbf{FI-CHIR-CONT-10} (W-bracelet sector specialization): the substrate object $\mathcal{S}^W$ is the 6-vertex Petrie hexagon on the first-shell icosahedron at $v_{\text{host}}$; stabilizer $\Gamma^W = \Dsix$ of order 12; pairing-convention generator $\zeta^W = r^3$ icosahedral-center inversion in 4D ambient; matter-doublet basis $\{|\Psi^W_+\rangle, |\Psi^W_-\rangle\}$ in the 2D subspace of $E_2 \oplus E_1$ in $\Dsix$ with opposite $\zeta^W$-parity; chirality operator $\hat{C}^W \in B_2(\Dsix)$ sourced from the substrate primitive direction $\hat{n}$. Inheritance: THEO-SD-CHIR-1 (theorem \#63) at Capotauro v2.0 v1.0 SHIPPED \cite{Capotauro}.
@@ -625,7 +626,7 @@ This section closes the joint paper's second sector-specific Layer 4 derivation:
 \subsection{Sector instantiation --- qDP/eDP substrate object + effective free-energy framework}
 \label{sec:sector_b_instantiation}
 
-The Sector B instantiation of the bridge theorem's sector-agnostic substrate Wigner-Eckart datum (Definition~\ref{def:datum} \methref{METH-CHIR-CONT-1}) specializes the abstract data to the qDP/eDP sector via three sector-specific foundational inputs:
+The Sector B instantiation of the bridge theorem's sector-agnostic substrate Wigner-Eckart datum (Definition~\ref{def:datum} \methref{METH-CHIR-CONT-1}) specializes the abstract data to the qDP/eDP sector via three sector-specific foundational inputs (full proof-chain rigor in working sketch \cite{ChiContSketchB}):
 
 \begin{itemize}[leftmargin=*]
 \item \textbf{FI-CHIR-CONT-13} (qDP/eDP sector specialization): the substrate object $\mathcal{S}^{qDP}$ is a Linear-ZBW configuration on a $\pm$qCP center at $v_{\text{host}}$'s first-shell icosahedron with antipodal-pair refinement; stabilizer $\Gamma^{qDP} = D_{5d}$ of order 20 (antipodal-pair $D_{5d}$ refinement of $C_{5v}$); pairing-convention generator $\zeta^{qDP} = $ combined $CP$ (host-CP-centered spatial inversion $v \to -v$ combined with $\hat{n}$-flip combined with qCP-sign flip $\pm \to \mp$); matter-doublet basis $\{|\Psi_-^{qDP,(1)}\rangle, |\Psi_-^{qDP,(2)}\rangle\}$ in the 2D subspace of $A_{1g} \oplus A_{2u}$ in $D_{5d}$ with opposite $\zeta^{qDP}$-parity; chirality operator $\hat{C}^{qDP} \in A_{2u}(D_{5d})$ sourced from the substrate primitive direction $\hat{n}$'s pseudoscalar structure. Inheritance: THEO-SD-CHIR-2 Finding C-W46 (theorem \#64) at Capotauro v2.0 v1.0 SHIPPED \cite{Capotauro}.
@@ -760,7 +761,7 @@ Theorem~\ref{thm:sector_b} is registered at programme level as THEO-CHIR-CONT-3 
 \section{Cross-Sector Unification: The Structural Identity Claim}
 \label{sec:cross_sector_unification}
 
-This section synthesizes the cross-sector unification themes that emerge through the joint paper's three substantive theorem registrations (Theorem~\ref{thm:bridge} = THEO-CHIR-CONT-1; Theorem~\ref{thm:sector_a} = THEO-CHIR-CONT-2; Theorem~\ref{thm:sector_b} = THEO-CHIR-CONT-3) and articulates them as the structural identity claim that motivates the joint paper format. The synthesis inherits METH-CHIR-CONT-1 through METH-CHIR-CONT-4 from §\ref{sec:bridge} without introducing new catalogued methods.
+This section synthesizes the cross-sector unification themes that emerge through the joint paper's three substantive theorem registrations (Theorem~\ref{thm:bridge} = THEO-CHIR-CONT-1; Theorem~\ref{thm:sector_a} = THEO-CHIR-CONT-2; Theorem~\ref{thm:sector_b} = THEO-CHIR-CONT-3) and articulates them as the structural identity claim that motivates the joint paper format (full synthesis content in working sketch \cite{ChiContSketchD}). The synthesis inherits METH-CHIR-CONT-1 through METH-CHIR-CONT-4 from §\ref{sec:bridge} without introducing new catalogued methods.
 
 \subsection{The shared substrate handle}
 \label{sec:shared_substrate_handle}
@@ -1076,11 +1077,6 @@ ATLAS Collaboration, ``Measurements of top-quark pair spin correlation observabl
 
 \bibitem{CMSTopSpin}
 CMS Collaboration, ``Measurement of the top-quark polarization at $\sqrt{s} = 13$ TeV,'' \emph{Physical Review D} \textbf{100}, 072002 (2019).
-
-% Additional references to be added at v0.5 paper polish:
-% - PDG 2024 (Review of Particle Physics, Workman et al. 2024)
-% - SF-4 v4.0 SHIP paper (THEO-SF-4-5 first-cross-sector-closure precedent)
-% - Polytope geometry / 600-cell references (Coxeter)
 
 \bibitem{MethodsCatalogue}
 Conscious Point Physics Programme, ``Methods Catalogue,'' continuously updated. \texttt{methods\_catalogue.md} (Hyperphysics-Institute/CPP GitHub repository). Initial population at Session 137 Patch 0498 from chirality continuum joint paper §3 bridge work covering METH-CHIR-CONT-1 through METH-CHIR-CONT-4.
