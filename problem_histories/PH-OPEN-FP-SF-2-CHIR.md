@@ -466,3 +466,111 @@ This validates the v0.1 outline §10 viability decision gate's PROCEED verdict a
 - Do NOT promote sub-claim (a) to theorem-level rigor at Session 1 (promotion at Session 3 upon Step 4 closure).
 - Do NOT mix Tier-4 reasoning capture with paper main-text drafting (sketch is Tier-4; main-text drafting opens at v0.3 Patches 0488+).
 - Do NOT trigger Venue (b) fallback absent substantively unmistakable structural obstructions.
+
+---
+
+## §A Shared Bridge Work Session 2: Step 2 Continuum-Limit Projection + Step 3 Continuum Operator Identification CLOSED at Sector-Agnostic Level (Session 137 Patch 0486)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0485 Step 1 closure)
+**Patch:** 0486
+
+### What this update establishes
+
+Patch 0486 closes Steps 2 + 3 of the Theorem 3.1 proof architecture at sector-agnostic level. The continuum-limit projection map $\Phi$ is constructed; Symmetry-Content Preservation Lemma 4.1 is established with full proof; Continuum Operator Identification Theorem 4.2 is established with full proof at sector-agnostic level. Three of the four bridge step proof steps are now CLOSED; only Step 4 magnitude inheritance remains for Session 3 (Patch 0487 candidate; sub-claim (a) closure patch).
+
+### Patch 0486 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/sketches/substrate_to_continuum_bridge.md` — extended with Sections §10--§14 (~450 lines added; sketch now ~786 lines total). Session 1 content at §0--§9 preserved as historical record; Session 2 content at §10--§14.
+- **UPDATE** `research_frontier.md` Last-updated header prepended with Patch 0486 Step 2+3 closure milestone; OPEN-FP-SF-2-CHIR Status field updated.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0486 §A bridge work Session 2 entry appended (this section).
+
+### Definition 11.2.1 — Continuum-Limit Projection Map $\Phi$
+
+$\Phi: \mathcal{H}^{\text{sub}} \to \mathcal{H}^{\text{cont}}$ obtained as standard Wilson-Fisher block-spin renormalization limit with substrate cutoff $\Lambda_{\text{sub}} = \ell_{\text{edge}}^{-1}$ subject to:
+
+- **Block-spin commutativity**: $\Phi$ commutes with discrete symmetry actions by construction (block-spin preserves block symmetries).
+- **Continuum-limit existence**: well-defined in $a \to 0$ limit at any continuum scale $\mu < \Lambda_{\text{sub}}$.
+- **Equivariance**: $\Phi(g \cdot |\Psi^{\text{sub}}\rangle) = g^{\text{cont}} \cdot \Phi(|\Psi^{\text{sub}}\rangle)$ for any $g \in I_h$.
+
+Induced operator map $\Phi_*: \text{Op}(\mathcal{H}^{\text{sub}}) \to \text{Op}(\mathcal{H}^{\text{cont}})$, $\Phi_*\hat{O}^{\text{sub}} = \Phi \hat{O}^{\text{sub}} \Phi^{-1}$.
+
+The construction is the standard lattice-to-continuum projection framework specialized to substrate Wigner-Eckart datum context. Substrate cutoff $\Lambda_{\text{sub}} = \ell_{\text{edge}}^{-1}$ at 600-cell edge length sets natural ultraviolet scale; observable kinematic scales $\mu_{\text{obs}}^{\text{sector}}$ sit far below, putting both sector closures in deep-infrared regime where continuum-limit framework is well-defined.
+
+### Lemma 4.1 — Symmetry-Content Preservation under $\Phi$
+
+Let $G$ be a discrete substrate symmetry group acting on $\mathcal{H}^{\text{sub}}$. Then $\Phi$ preserves:
+
+1. **Group projection**: $G \to G^{\text{cont}} \cong G$ (group homomorphism is injective + surjective via equivariance).
+2. **Subgroup preservation**: $\Gamma \subset G \to \Gamma^{\text{cont}} \subset G^{\text{cont}}$ with $\Gamma^{\text{cont}} \cong \Gamma$.
+3. **$\mathbb{Z}_2$ generator inheritance**: $\zeta \in \Gamma \to \zeta^{\text{cont}} \in \Gamma^{\text{cont}}$ generating isomorphic $\mathbb{Z}_2$.
+4. **Irrep inheritance**: $\rho$-irreducible substrate states $\to \rho^{\text{cont}}$-irreducible continuum states; same dimension, same $\zeta$-parity content (proof via Schur's lemma + pullback contradiction).
+5. **Parity-matching preservation**: matter-doublet opposite-$\zeta$-parity at substrate $\to$ opposite-$\zeta^{\text{cont}}$-parity at continuum.
+
+All five conditions ESTABLISHED with full proof in sketch §11.4. Lemma 4.1 sits at THEO-CHIR-CONT-1.1 candidate status (sub-lemma of Theorem 3.1).
+
+### Corollary 4.1.1 — Continuum-Limit Wigner-Eckart Datum
+
+$\mathcal{D}^{\text{cont}} = (\mathcal{S}^{\text{cont}}, \Gamma^{\text{cont}}, \zeta^{\text{cont}}, \mathcal{O}^{\text{eff}}, \{|\psi_+\rangle, |\psi_-\rangle\}, M^{\text{eff}})$ derived from substrate $\mathcal{D}^{\text{sub}}$ via Lemma 4.1; group-theoretic structure identical (modulo continuum-limit substitutions). Magnitude $M^{\text{eff}}$ remains pending Step 4 topological-projection argument.
+
+### Theorem 4.2 — Continuum Operator Identification at Sector-Agnostic Level
+
+$\mathcal{O}^{\text{eff,sector}} = \Phi_*\hat{C}^{\text{sector}}$ satisfies:
+
+1. **Irrep content preservation**: $\mathcal{O}^{\text{eff,sector}}$ is $\zeta^{\text{cont,sector}}$-ODD (via Lemma 4.1 (4)).
+2. **Non-vanishing matrix element**: $\langle\psi^{\text{eff}}_+|\mathcal{O}^{\text{eff,sector}}|\psi^{\text{eff}}_-\rangle \neq 0$ via parity calculus $\text{EVEN} \otimes \text{ODD} \otimes \text{ODD} = \text{EVEN}$ contains trivial irrep.
+3. **Uniqueness**: unique up to scalar multiple via Schur's lemma at continuum level.
+4. **Sector-agnosticism**: proofs use only sector-agnostic substrate Wigner-Eckart datum structure (Definition 3.2.1); sector-specific data enters only as labels.
+
+ESTABLISHED with full proof in sketch §12.2. Theorem 4.2 sits at THEO-CHIR-CONT-1.2 candidate status (sub-theorem of Theorem 3.1).
+
+### Step 3 closure — what is in hand at end of Session 2
+
+Continuum operator $\mathcal{O}^{\text{eff,sector}} = \Phi_*\hat{C}^{\text{sector}}$ fully characterized at sector-agnostic level by group-theoretic structure under Lemma 4.1 + Theorem 4.2:
+
+- $\zeta^{\text{cont,sector}}$-ODD 1D-irrep operator on continuum-limit 2D $\Gamma^{\text{cont}}$-irrep matter-doublet subspace.
+- Non-vanishing matrix element between opposite-$\zeta^{\text{cont,sector}}$-parity continuum matter-doublet states.
+- Unique up to overall scalar multiple (the scalar = matrix element magnitude, pending Step 4).
+- Sector-agnostic: identification depends only on universal Wigner-Eckart datum structure not on sector-specific labels.
+
+Sector-specific physical-operator identification (V--A current $\bar{\psi}_L\gamma^\mu\psi_L$ for SF-2 Yang-Mills EFT continuum; chirality-asymmetric stabilization-energy operator $\Delta F^{qDP}$ for SM-2 effective free-energy framework) deferred to §B + §C of joint paper main text at Patches 0488+/0492+.
+
+### Substantive observations at Session 2
+
+- **Lemma 4.1's proof is structurally clean**: each of five conditions follows directly from equivariance condition + Schur's lemma + pullback argument. No sector-specific input needed. Validates sector-agnostic abstraction approach at Step 2.
+- **Theorem 4.2's proof is structurally tight**: Schur's lemma + parity-matching + equivariance suffice to characterize $\mathcal{O}^{\text{eff,sector}}$ uniquely up to scalar at sector-agnostic level. Only the scalar (magnitude) remains for Step 4.
+- **Step 2 + Step 3 closure costs less than projected**: sector-agnostic approach makes proofs structurally compact. Sessions 1+2 (Patches 0485+0486) have closed three of four proof steps; Session 3 needs to close only Step 4 magnitude inheritance.
+- **Joint-paper structural efficiency remains validated through substantive derivation work**: bridge step's universality across sectors (Lemma 4.1's sector-agnostic logic; Theorem 4.2's sector-agnostic uniqueness) is the structural feature that motivated Venue (c) joint paper, and it's holding through actual derivation.
+
+### Programme state changes at Patch 0486
+
+- (1) Step 2 substrate-to-continuum projection map CLOSED at sector-agnostic level (Definition 11.2.1 + Lemma 4.1).
+- (2) Step 3 continuum operator identification CLOSED at sector-agnostic level (Theorem 4.2).
+- (3) Lemma 4.1 + Corollary 4.1.1 + Theorem 4.2 all at theorem-statement-with-full-proof level (not yet registered at programme theorem-registry pending Session 3 main theorem promotion).
+- (4) Continuum-limit Wigner-Eckart datum $\mathcal{D}^{\text{cont}}$ available as derived object with magnitude pending.
+- (5) Sector-agnostic abstraction CONFIRMED VALID through Step 2 + Step 3 closure.
+- (6) NO theorems registered new at programme level (THEO-CHIR-CONT-1 candidate pending Session 3 closure; Lemma 4.1 / Theorem 4.2 at sub-statement level).
+- (7) NO predictions registered new (magnitude $M^{\text{eff}} = \chi/6$ at conditional-statement level pending Step 4).
+- (8) NO falsifiers registered new.
+
+### Step 4 (Session 3, Patch 0487 candidate) substantive content articulated
+
+1. **Topological character of $|\chi| = \phi^{-3}$**: establish rigorously that $\chi$ is derived from substrate primitive 4D direction $\hat{n}$ via perturbative-distance-ratio constraint (Capotauro v2.0 §sec:chi\_resolution + Finding C-W39); $\chi$ determined by substrate geometry + primitive feature identification alone with no substrate-field-theoretic dynamical content.
+2. **Topological character of cage-shell factor $1/6$**: establish rigorously that $d_\Gamma/V_{\text{cage}} = 2/12 = 1/6$ is Schur-orthogonality-derived (not RG-flow-renormalization-subject); Schur orthogonality on discrete icosahedral cage projects to Schur orthogonality on continuum-limit Lie-group representation theory of $I_h^{\text{cont}}$ acting on continuum matter-doublet 2D irrep.
+3. **No-renormalization-at-leading-order argument**: establish rigorously that topological substrate quantities project through $\Phi$ to continuum-limit effective coupling magnitudes without renormalization at any RG-flow scale between $\Lambda_{\text{sub}}$ and $\mu_{\text{obs}}^{\text{sector}}$; argument follows standard protection-of-topological-quantities principle in continuum QFT (anomaly coefficients $1/(16\pi^2)$ exact at all loop orders; topological charges; Atiyah-Singer index contributions).
+4. **Theorem 3.1 promotion to programme-level registered-theorem status (THEO-CHIR-CONT-1)**: three conditions (magnitude inheritance, chirality content preservation, sector-agnosticism) all rigorously established; Theorem 3.1 + Lemma 4.1 + Theorem 4.2 registered at programme theorem-registry.
+5. **Sub-claim (a) closure announcement**: load-bearing technical step closed; joint paper §A content ready for v0.3 §B drafting at Patches 0488+ (SF-2 Yang-Mills EFT projection + Michel parameter + massless-helicity-limit) and Patches 0492+ (SM-2 effective free-energy projection + stabilization energy + exclusion bound).
+
+### Forward queue post-Patch 0486
+
+1. **Priority 1 (Patch 0487 candidate)**: §A bridge work Session 3 — Step 4 magnitude inheritance verification + Theorem 3.1 promotion to programme-level registered-theorem status + sub-claim (a) closure announcement. 1 session estimated. **SUB-CLAIM (a) CLOSURE PATCH**.
+2. **Priority 2 (Patches 0488+)**: §B Sector A V--A coupling derivation; v0.3 substantive drafting; 3--5 sessions.
+
+### Anti-priorities preserved at Patch 0486
+
+- Do NOT close Step 4 at Session 2 (deferred to Session 3 Patch 0487).
+- Do NOT promote Theorem 3.1 / THEO-CHIR-CONT-1 to programme-level registered-theorem status at Session 2 (registration at Session 3 patch upon Step 4 closure).
+- Do NOT specify continuum-EFT framework sector-specifically at Session 2 (sector-specific work at §B/§C of joint paper main text at Patches 0488+/0492+).
+- Do NOT introduce new FI-CHIR-CONT-N entries at Session 2 (FI inventory finalized at Patch 0484 v0.1 outline).
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex source during bridge work.
+- Do NOT mix Tier-4 reasoning capture with paper main-text drafting (sketch is Tier-4; main-text drafting opens at v0.3 Patches 0488+).
