@@ -7,7 +7,25 @@
 **Repository:** [github.com/Hyperphysics-Institute/CPP](https://github.com/Hyperphysics-Institute/CPP)
 **OSF Registration:** [doi.org/10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D)
 **License:** CC BY 4.0
-**Last updated:** 11 April 2026
+**Last updated:** 19 May 2026 (Session 135 Patch 0481L — Capotauro v2.0 v1.0 SHIPPED reflection; README body content predominantly dated 11 April 2026; current paper-status authoritative source is [`paper_catalog.md`](paper_catalog.md))
+
+---
+
+## Programme Status Update (May 2026)
+
+The body of this README is dated to 11 April 2026 and provides a high-level CPP introduction. For current paper-status and the live programme view, see [`paper_catalog.md`](paper_catalog.md) (authoritative current state), [`research_frontier.md`](research_frontier.md) (open problems dashboard), and [`theorem-registry.md`](theorem-registry.md) (proved results).
+
+**Major programme advancements between 11 April and 19 May 2026:**
+
+- **SS-9 v1.0 SHIPPED** (7 May 2026, Session 32 Patch 0274) — *The Polyhedron's Conditions*: conditional theorem closure of OPEN-SS-24 via THEO-SS-16 five-clause main theorem; first-principles derivation of SS-7's $|E| = 3N_\alpha - 6$ formula via Steinitz (1922) + Freudenthal-van der Waerden (1947) classification bridge; PRED-C-75/76/77 forward-predicted ⁸⁴Mo/⁸⁸Ru/⁹²Pd verified at 0.05%/0.07%/0.13%.
+- **SF-4 v4.4 archival-deposit-quality SHIPPED** (11 May 2026, Session 81 Patch 0342) — *Neutrino Sector Unification from 600-Cell Geometry*: eight neutrino-sector parameters from $m_e$ calibration; first cross-sector closure in CPP via SM-5 op:nu_id RESOLVED at v4.0; three-reviewer convergence (ChatGPT + CoPilot + Grok) on SHIP-ready verdict.
+- **SF-2 v1.01 SHIPPED** (15 May 2026, Session 84 Patch 0376) — *Electroweak Cage-Boson Unification*: four cage-shape uniqueness theorems at theorem-level rigor (W bracelet $D_6$, Z icosahedron $I_h$, H dodecahedron $I_h$ via Platonic duality, mass-gap $V \in \{13, \ldots, 19\}$); W⁰ catalyst framework via six propositions; $m_Z/m_W = 1/\cos\theta_W = 1.140$ at 0.54%; mass-degeneracy $m_{W^0} = m_{W^\pm}$ within ~1 MeV confirmed parametrically.
+- **Capotauro v1.0 SHIPPED** (16 May 2026, Session 122 Patch 0415) — *Substrate-Vacuum Chirality on the K3-Doublet*: THEO-CAP-1 (Composite Capotauro Wigner-Eckart Theorem) closes OPEN-SM-4 sub-claim (c); chirality matrix element $\|M\| = \chi/6 = \phi^{-3}/6 \approx 0.0394$ on K3-doublet; $\Delta p_{LR} \approx 0.0394$ validated within 2% of leptogenesis back-derived $\sim 0.04$. **Third flagship paper to ship at v1.0** after SS-9 / SF-4 / SF-2; first flagship outside the SF-N numerical convention.
+- **Capotauro v2.0 v1.0 SHIPPED** (19 May 2026, Session 135 Patch 0479) — *Three-Way Cross-Sector Unification Extension*: substantive v2.0 extension grounding existing FI-C-9 at a sharper epistemic position via FI-C-RC-1 + FI-C-RC-2 (primitive 4D direction $\hat{n}$ + vertex-aligned reading) and extending the v1.0 single-sector closure to a three-way cross-sector unification $\|M^{K3}\| = \|M^W\| = \|M^{qDP}\| = \chi/6 \approx 0.0394$ across the K3-doublet (mass-mixing), W-bracelet (electroweak V−A), and qDP/eDP (electromagnetic handedness) sectors under the OPEN-SD-CHIR-PRIMITIVE umbrella; three programme-level theorems at full Layer 3 rigor (THEO-CAP-1 + THEO-SD-CHIR-1 + THEO-SD-CHIR-2). **First flagship paper in the CPP corpus to undergo a substantive v2.0 extension** (vs polish or reviewer-feedback revision); three-reviewer convergence on SHIP-acceptable at v0.9 / v0.9.1.
+
+**Axiom set UNCHANGED at 9 axioms** across all flagship SHIPs in this window — every new theorem and prediction reduces to the existing A1–A11 stack with no new postulates. Cumulative swarm count advanced from 103 (26 April 2026) to 108 (per [`predictions.md`](predictions.md) Cumulative Swarm Tally as of 19 May 2026); axiom-to-prediction ratio improved from 1:11.4 to 1:12.0.
+
+**Forward queue:** SF-2 v2.0+ Layer 4 EFT closure of OPEN-FP-SF-2-CHIR consuming the W-bracelet substrate handle from Capotauro v2.0; SM-2 v2.0+ chiral-polarity-bias closure consuming the qDP/eDP substrate handle; manifestations (iv) thermodynamic causal arrow + (v) cosmological-vacuum asymmetry under OPEN-SD-CHIR-PRIMITIVE umbrella; Q7 cosmological-nucleation sub-questions Q7.1–Q7.4 from Capotauro v2.0 §13.6 future-window work.
 
 ---
 
@@ -41,16 +59,18 @@ The Standard-Model fermion-mass programme is structured as **four family-paper f
 - **SF-1** — Charged Lepton Mass Spectrum from K3 + 600-Cell Geometry. [`flagship_papers/charged_leptons/`](flagship_papers/charged_leptons/)
 - **SF-2** — Electroweak Sector Unification from 600-Cell Geometry. [`flagship_papers/electroweak/`](flagship_papers/electroweak/)
 - **SF-3** — Quark Sector Unification from 600-Cell Distance Shells. [`flagship_papers/quarks/`](flagship_papers/quarks/)
-- **SF-4 [ACTIVE]** — Neutrino Sector Unification from 600-Cell Geometry. Audit phase complete (Session 37); mechanism-selection pending. [`flagship_papers/neutrinos/`](flagship_papers/neutrinos/)
+- **SF-4 [v4.4 SHIPPED]** — Neutrino Sector Unification from 600-Cell Geometry. v4.4 archival-deposit-quality SHIPPED 11 May 2026 (Session 81); first cross-sector closure in CPP via SM-5 op:nu_id RESOLVED at v4.0; three-reviewer convergence on SHIP-ready verdict. [`flagship_papers/neutrinos/`](flagship_papers/neutrinos/)
 - **SF-5** — Standard Model Unification — *Hierarchy Without Hierarchy*. The synthesis paper on top of SF-1 through SF-4. [`flagship_papers/unification/`](flagship_papers/unification/)
 
 The strategic frame governing flagship-paper selection and the SF-line architecture is in [`research_priorities.md`](research_priorities.md) and [`flagship_papers/README.md`](flagship_papers/README.md).
 
 ---
 
-## Registered Papers (19)
+## Registered Papers (20+ series + 3 flagships SHIPPED at v1.0; see [`paper_catalog.md`](paper_catalog.md) for current status)
 
 All papers are registered on OSF with DOI [10.17605/OSF.IO/JXE8D](https://doi.org/10.17605/OSF.IO/JXE8D). PDFs are available on the [OSF project page](https://osf.io/9dfya/). Source files and documentation are in this repository.
+
+The table below shows the 11 April 2026 paper-set. **Additions since 11 April 2026 (see [`paper_catalog.md`](paper_catalog.md) for current state):** SS-9 v1.0 SHIPPED 7 May 2026 (*The Polyhedron's Conditions*; conditional theorem closure of OPEN-SS-24 via THEO-SS-16); SF-Line flagship SHIPs: SF-4 v4.4 archival-deposit-quality SHIPPED 11 May 2026, SF-2 v1.01 SHIPPED 15 May 2026, Capotauro v1.0 SHIPPED 16 May 2026 + v2.0 v1.0 SHIPPED 19 May 2026.
 
 | ID | Title | Key Result |
 |----|-------|------------|
