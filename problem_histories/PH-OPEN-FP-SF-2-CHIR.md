@@ -1563,3 +1563,88 @@ Manifestations (iv) thermodynamic causal arrow + (v) cosmological-vacuum asymmet
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT introduce new FI-CHIR-CONT-N entries at §C Session 4 (FI inventory capped)
+
+---
+
+## §D Cross-Sector Unification Framing Session 1: OPENED + Paper §6 Substantive Synthesis Content Drafted (Session 137 Patch 0496)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0495 §C CLOSURE PATCH)
+**Patch:** 0496
+**Status:** §D cross-sector unification working sketch OPENED at joint paper home; paper §6 substantive synthesis content drafted across six sub-sections (four from outline + two NEW post-§C-closure); v0.5 SHIP readiness verdict READY.
+
+### What this update establishes
+
+Patch 0496 opens §D cross-sector unification framing post-§C-CLOSURE-PATCH state (joint paper §A+§B+§C all closed at theorem-level rigor). §D is the synthesis section pulling together themes that emerged through §A+§B+§C closures. Drafts paper §6 substantive content across §6.1 shared substrate handle + §6.2 OPEN-SD-CHIR-PRIMITIVE umbrella perspective + §6.3 second cross-sector closure pattern in CPP after SF-4 v4.0 + §6.4 structural identity claim + §6.5 joint paper format structural efficiency validation (NEW) + §6.6 v0.5 SHIP readiness assessment (NEW).
+
+### Patch 0496 deliverables
+
+- **NEW** `flagship_papers/chirality_continuum/sketches/cross_sector_unification.md` — §D working sketch (~500+ lines). §0 Session 1 firewall + scope; §1 §D paper-section-6 scope and content map; §2 shared substrate handle (paper §6.1); §3 OPEN-SD-CHIR-PRIMITIVE umbrella perspective (paper §6.2); §4 second cross-sector closure pattern in CPP after SF-4 v4.0 (paper §6.3); §5 structural identity claim (paper §6.4); §6 joint paper format structural efficiency validation (paper §6.5 NEW); §7 v0.5 SHIP readiness assessment (paper §6.6 NEW); §8 status update + forward queue.
+- **UPDATE** `research_frontier.md` — Patch 0496 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0496 §D Session 1 entry appended (this section).
+
+### §D content structure
+
+| §D section | Paper section | Content |
+|---|---|---|
+| §2 | §6.1 | Shared substrate handle: $\|M^{K3}\| = \|M^W\| = \|M^{qDP}\| = \chi/6 \approx 0.0394$ across three sectors via SAME 12-vertex icosahedral cage + SAME matter-doublet dimension 2 |
+| §3 | §6.2 | OPEN-SD-CHIR-PRIMITIVE umbrella: 3 of 5 manifestations at full Layer 4 rigor under THEO-CHIR-CONT-N convention; (iv)+(v) at substrate-level only |
+| §4 | §6.3 | Second cross-sector closure pattern after SF-4 v4.0; methodological pattern strengthened; templates future cross-sector work |
+| §5 | §6.4 | Structural identity claim: single substrate primitive $\hat{n}$ + $|\chi| = \phi^{-3}$ controls every parity-sensitive observable via three-step machinery; zero free parameters |
+| §6 | §6.5 (NEW) | Joint paper format structural efficiency validation: 11 sessions vs 15-22 fallback; savings 4-11 sessions; cross-sector convergence as structural prediction |
+| §7 | §6.6 (NEW) | v0.5 SHIP readiness assessment: READY for paper polish + reviewer cycle |
+
+### Key content highlights
+
+**The structural identity claim** (paper §6.4; sketch §5):
+
+> A single substrate primitive — the 4D direction $\hat{n}$ in ambient $\mathbb{R}^4$ (FI-C-RC-1) with derived magnitude $|\chi| = \phi^{-3}$ (FI-C-RC-2 + Capotauro v2.0 §sec:chi_resolution) — controls every parity-sensitive observable in the CPP framework via shared three-step machinery (substrate-locality + cage-shell averaging + sector-specific pairing convention) with sector-specific stabilizer subgroups and $\zeta$ generators.
+
+Identity holds at four levels: Layer 3 substrate (three sectors via three-step machinery); Layer 4 sector-agnostic bridge (THEO-CHIR-CONT-1.3 topological-projection); Layer 4 sector-specific closures (THEO-CHIR-CONT-2 V–A + THEO-CHIR-CONT-3 $\Delta F^{qDP}$); observable scale (both §B+§C converge on leptogenesis CP-asymmetry).
+
+**Joint paper format structural efficiency validation** (paper §6.5 NEW; sketch §6):
+
+| Metric | Joint paper format (actual) | Venue (b) fallback (estimate) |
+|---|---|---|
+| §A bridge work | Done once (sector-agnostic) | Re-derived in each single-sector paper |
+| §A+§B+§C session cost | 11 sessions (3+4+4) | 15–22 sessions |
+| Cross-sector convergence at observable level | Structural prediction of THEO-CHIR-CONT-1 | Emergent empirical coincidence |
+
+**Savings**: 4–11 sessions vs Venue (b); cross-sector convergence as structural prediction rather than empirical coincidence.
+
+**v0.5 SHIP readiness verdict**: **READY** for paper polish + reviewer cycle. Substantive content complete at theorem-level rigor across §3+§4+§5+§6. Remaining work = paper polish (§1+§2+§7+§8+§9 drafting into v0.5 .tex source). Estimated 5–9 additional sessions to v1.0 SHIP from current state.
+
+### Programme state changes at Patch 0496
+
+- (1) §D cross-sector unification working sketch OPENED at joint paper home
+- (2) Paper §6 substantive synthesis content drafted across all six sub-sections
+- (3) §6.5+§6.6 NEW content surfacing post-§C-closure additions
+- (4) v0.1 outline §10 PROCEED verdict empirically validated through 11-session closure trajectory
+- (5) v0.5 SHIP readiness verdict: READY for paper polish + reviewer cycle
+- (6) NO theorems registered new (§D is synthesis)
+- (7) NO predictions registered new (PRED-O-25 inherited; zero-parameter predictions table articulated)
+- (8) NO falsifiers registered new (Capotauro Falsifier 6 already ACTIVATED at §B Patch 0491)
+- (9) NO conjecture registrations
+
+### Methodological observations
+
+**§D Session 1 closure structurally tight via synthesis-not-derivation**: §D Session 1 delivers paper §6 substantive content via synthesis of themes that emerged through §A+§B+§C completion. No new derivation; content is articulating connections + drawing tables + stating structural identity claim. §D Session 1 closure cost 1 session matches §D scoping projection.
+
+**Joint paper architecture validated through §D content drafting**: v0.1 outline §1.8 four-sub-section structure (§6.1+§6.2+§6.3+§6.4) maps cleanly onto §2+§3+§4+§5 of sketch. Two NEW additions §6.5+§6.6 are emergent content surfacing post-§C-closure. Outline structure robust at four-sub-section level; two additions can be folded into outline file at v0.5 paper polish.
+
+### Forward queue post-Patch 0496
+
+- **Priority 1 (Patch 0497+)**: §D Session 2 (if needed) for §6.5+§6.6 polish + outline file update; alternative: skip and proceed to paper polish; 0–1 sessions
+- **Priority 2 (Patches 0498+)**: v0.5 paper polish — substantive drafting of §1+§2+§7+§8+§9 + theorem-registry integration + bibliography; 1–2 sessions
+- **Priority 3 (Patches 0498+)**: v0.6–v0.9 reviewer cycle ChatGPT + CoPilot + Grok; 3–5 sessions
+- **Priority 4 (Patch 0503+)**: v1.0 SHIP title-block version bump + theorem-registry confirmation; 1–2 sessions
+- **Subsequent (post-v1.0)**: future-window work per Patch 0495 enumeration
+
+### Anti-priorities preserved at Patch 0496
+
+- Do NOT register new theorems or predictions at §D drafting (§D is synthesis)
+- Do NOT modify §A bridge work or §B Sector A work or §C Sector B work
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT modify joint paper outline file at this patch (deferred to v0.5 paper polish)
+- Do NOT introduce new FI-CHIR-CONT-N entries at §D
