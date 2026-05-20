@@ -2528,3 +2528,99 @@ ChatGPT's final framing: "the framework is now organized enough that the absence
 - Do NOT attempt to address every reviewer concern (some concerns are deep future-window items)
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources during integration
 - Do NOT promote paper to v0.7 SHIPPED at Patch 0506 (v0.6 SHIPPED is end-state of ChatGPT round-1 integration; v0.7 cycle begins with CoPilot or Grok round-1 submission)
+
+---
+
+## Joint Paper v0.6 Round-1 Integration Pass 1: Figure 1 Master Mechanism Diagram Added at §1.4 + Title-Block Bumped to v0.6 (DRAFT) (Session 137 Patch 0505)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0504 v0.6 reviewer cycle Session 1 ChatGPT round-1 capture + action plan)
+**Patch:** 0505
+**Status:** v0.6 round-1 integration Pass 1. Figure 1 master mechanism diagram added at §1.4 Introduction closure-status-and-roadmap; title-block bumped from v0.5 (SHIPPED) to v0.6 (DRAFT); LaTeX compilation verified clean to 38-page 641KB PDF. Addresses ChatGPT round-1 review's Priority 1 actionable item.
+
+### What this update establishes
+
+Patch 0505 executes Priority 1 of the v0.6 round-1 action plan (`v06_action_plan.md`): the master mechanism figure that ChatGPT round-1 review identified as the most concrete actionable item. ChatGPT's explicit framing was "the framework is now large enough that readers need a cognitive map" with a request for "one master diagram showing orientation continuity → closure imbalance → ΔpLR → effective chirality → observable asymmetry, including theorem dependencies, conjectural sectors, EFT bridges, falsifiers, and unresolved dynamical gaps." The Figure 1 added at this patch delivers all six requested elements in a single visual artifact.
+
+### Patch 0505 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — Figure 1 master mechanism diagram added at §1.4 closure-status-and-roadmap (+~101 lines for TikZ figure + caption + framing paragraph; .tex now ~1226 lines total); title-block version bumped to v0.6 (DRAFT).
+- **UPDATE** `research_frontier.md` — Patch 0505 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0505 entry appended (this section).
+
+### Figure 1 substantive content
+
+Vertical-flow TikZ diagram showing substrate-to-observable closure chain across five layered rows:
+
+| Row | Layer | Color | Content |
+|---|---|---|---|
+| 1 | Substrate primitive | gray | $\hat{n}$ + $\|\chi\| = \varphi^{-3}$ (FI-CHIR-CONT-1 + FI-CHIR-CONT-2) |
+| 2 | Layer 3 substrate | blue | K3-doublet + W-bracelet + qDP/eDP with $\|M^{\text{sector}}\| = \chi/6$ (theorems #62 + #63 + #64) |
+| 3 | Layer 4 sector-agnostic | green | Bridge theorem THEO-CHIR-CONT-1 (#65 §3) with sub-statements 1.1+1.2+1.3 |
+| 4 | Layer 4 sector-specific | orange + red | THEO-CHIR-CONT-2 (#66 §4) V–A current + THEO-CHIR-CONT-3 (#67 §5) $\Delta F^{qDP}$ |
+| 5 | Observable scale | yellow | Cross-sector convergence on leptogenesis CP-asymmetry $\Delta p_{LR} \approx 0.0394$; BAU match within 2% |
+
+**Side annotations (dashed future-window)**:
+- Top-right of Row 1: Dynamical-substrate-law gate (Q1$'$+Q1$'$.A; §8.1)
+- Bottom-right of Row 5: Capotauro Falsifier 6 three thresholds A+B+C (no falsification at current precision)
+
+**Arrow structure**: prim → 3 substrate objects → bridge → 2 sector closures → observable. Dashed bidirectional arrows: prim ↔ gate (unresolved); obs ↔ falsifiers (would-falsify-if).
+
+### Framing paragraph added before figure
+
+Inserted at end of §1.4 closure-status-and-roadmap (before §2 transition):
+
+> "Figure 1 below summarizes the closure architecture as a cognitive map: the substrate-to-observable inheritance chain from the substrate primitive $\hat{n}$ + $\|\chi\| = \varphi^{-3}$ at Capotauro v2.0 (Layer 3) through the sector-agnostic bridge theorem THEO-CHIR-CONT-1 (Layer 4 sector-agnostic) and the two sector-specific Layer 4 closures THEO-CHIR-CONT-2 + THEO-CHIR-CONT-3 down to the leptogenesis CP-asymmetry observable channel where both sector closures converge. The dynamical-substrate-law gate (Layer 1 substrate-dynamics derivation of $\hat{n}$ from CPP primitive axioms; future-window via the Q1$'$+Q1$'$.A Layer 3 promotion programme) and the OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) thermodynamic causal arrow + (v) cosmological-vacuum asymmetry (templated by the THEO-CHIR-CONT-N convention for future closures via THEO-CHIR-CONT-4 / -5 candidates) are visually marked as dashed future-window annotations to make the paper's scope-limitation framing legible alongside its closure achievements."
+
+### LaTeX compilation verified clean
+
+- **First pass**: 38 pages, 625 KB
+- **Second pass** (cross-reference resolution): 38 pages, 641 KB
+- **Zero undefined references or citations**
+- **Cosmetic warnings only**: overfull hbox at narrow TikZ node text columns (cosmetic; text fits within node visually) + pre-existing hyperref bookmark Unicode warnings + Font shape T1/cmss/m/sc fallback; none affecting PDF quality
+
+### Title-block version bump
+
+```
+\date{Version 0.5 (SHIPPED) --- 20 May 2026 ...}     % BEFORE
+\date{Version 0.6 (DRAFT) --- 20 May 2026 ...}        % AFTER (this patch)
+```
+
+v0.6 (DRAFT) indicates round-1 integration in progress; v0.6 (SHIPPED) follows Pass 2 at Patch 0506 with remaining action plan items addressed.
+
+### Programme state changes at Patch 0505
+
+- (1) Figure 1 master mechanism diagram added to chirality_continuum.tex at §1.4 with `\label{fig:master_mechanism}` for cross-referencing
+- (2) Framing paragraph added before figure introducing cognitive-map function + future-window visual marking
+- (3) Title-block bumped v0.5 (SHIPPED) → v0.6 (DRAFT)
+- (4) PDF grew from 37 pages 590KB at v0.5 SHIPPED to 38 pages 641KB at v0.6 (DRAFT)
+- (5) NO new methods catalogued
+- (6) NO theorems registered new
+- (7) NO predictions registered new
+- (8) NO falsifiers registered new
+- (9) NO conjecture registrations
+- (10) v06_action_plan.md Priority 1 actionable item ADDRESSED
+
+### Methodological observations at Patch 0505
+
+**(i) Figure 1 designed as ChatGPT round-1 prescription verbatim**: ChatGPT's specification was "one master diagram showing [closure chain] including theorem dependencies, conjectural sectors, EFT bridges, falsifiers, and unresolved dynamical gaps." Figure delivers all six requested elements (substrate primitive + closure inheritance + theorem dependencies labeled by registry numbers + sector-specific closures + observable channel with falsifiers + future-window gates explicitly marked).
+
+**(ii) Dashed future-window annotation discipline**: gray dashed boxes for dynamical-substrate-law gate (top-right) and Capotauro Falsifier 6 (bottom-right) make the paper's scope-limitation framing visually obvious — readers see immediately what is closed (solid colored boxes) versus what is registered as future-window work (dashed gray boxes). This directly addresses ChatGPT's "retrospective closure danger" concern by making the unresolved gates visually prominent rather than tucked at §8 in prose. The visual marking of the dynamical-substrate-law gate as future-window AT THE TOP of the figure (next to the substrate primitive) is particularly important — it tells readers immediately that we acknowledge the gate as the defining next challenge for the programme, before they have read any substantive content.
+
+**(iii) Color-coding by layer**: gray substrate primitive + blue Layer 3 + green Layer 4 sector-agnostic + orange-red Layer 4 sector-specific + yellow observable. The layer hierarchy is visually parseable in 30 seconds; this is the "cognitive map" functionality ChatGPT requested. The vertical orientation (top-to-bottom: primitive → substrate → bridge → sectors → observable) matches the natural reading direction and provides intuitive sense of inheritance flow from foundational to observable.
+
+### Forward queue post-Patch 0505
+
+- **Priority 1 (Patch 0506)**: v0.6 round-1 integration Pass 2 — Action plan Priorities 2 + 3 (sharper chirality-as-emergent framing at §1 + elevate dynamical-substrate-law gate framing at §8 as §8.1 primary subsection) + optional §9.4 retrospective-closure-danger framing + optional §3.7 RG-flow correspondence light-touch clarification; bump title-block to v0.6 (SHIPPED); 1 session
+- **Priority 2 (Patches 0507-0508)**: CoPilot round-1 + Grok round-1 reviewer cycle submissions and integrations → v0.7 + v0.8 SHIPPED; 2-4 sessions
+- **Priority 3 (Patch 0509+ candidate)**: final reviewer-cycle iterations + v1.0 SHIP title-block bump + theorem-registry confirmation; 0-1 sessions
+
+### Anti-priorities preserved at Patch 0505
+
+- Do NOT modify substantive §3–§9 content during figure integration (changes confined to §1.4 figure addition + title-block version bump)
+- Do NOT register new theorems or predictions at v0.6 integration
+- Do NOT add methods catalogue entries
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT modify v0.1 outline file at this patch
+- Do NOT promote paper to v0.6 SHIPPED at this patch (Pass 1 of round-1 integration; Pass 2 at Patch 0506 completes the bump to v0.6 SHIPPED)

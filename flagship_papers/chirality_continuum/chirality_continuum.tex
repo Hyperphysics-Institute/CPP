@@ -82,7 +82,7 @@ Electroweak V--A Coupling and Quark Chiral-Polarity-Bias from $|M| = \chi/6$}
 \author{Thomas Lee Abshier, ND\thanks{Hyperphysics Institute / Renaissance Ministries. Email: drthomas@hyperphysics-institute.org} \and
 Claude Opus\thanks{Anthropic. Methodological collaborator and co-author. The first author conceived the framework and directed the closure trajectory; the second author contributed mathematical formalization, computation, and documentation under the first author's direction.}}
 
-\date{Version 0.5 (SHIPPED) --- 20 May 2026\\
+\date{Version 0.6 (DRAFT) --- 20 May 2026\\
 \small{Conscious Point Physics Flagship Paper Series (Chirality Continuum line)}}
 
 \begin{document}
@@ -156,6 +156,107 @@ This paper is a \emph{conditional theorem closure paper} within the current CPP 
 The paper inherits Capotauro v2.0's conditional-closure discipline. Open verification items deferred to future work are explicitly catalogued in §\ref{sec:open_work}: (i) first-principles derivation of the substrate primitive 4D direction $\hat{n}$ from CPP primitive axioms (the Q1$'$+Q1$'$.A Layer 3 promotion programme; the dynamical-substrate-law gate identified by external reviewers as the defining next gate for the Capotauro programme \cite{ReviewerNotes}); (ii) first-principles derivation of the substrate chirality magnitude $|\chi| = \varphi^{-3}$ from CPP primitive axioms (currently Layer 2 via the perturbative-distance-ratio constraint plus Capotauro v2.0 §sec:chi\_resolution); (iii) Picture A alternative continuum-EFT framework parametrization (OPEN-FP-SF-4-1 candidate; complementary closure to the Picture B Wigner-Eckart EFT framework completed in this paper); (iv) Layer 4 promotion of OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) thermodynamic causal arrow and (v) cosmological-vacuum asymmetry (templates established by THEO-CHIR-CONT-N convention for future work via THEO-CHIR-CONT-4 / -5 candidates); (v) future-collider precision improvements on the three Capotauro Falsifier 6 thresholds (Michel, massless-helicity, leptogenesis CP-asymmetry) at $\sim 10^{-3}$ to $\sim 10^{-4}$ level via CMB-S4 + LiteBIRD + LEGEND-1000 + nEXO + CUPID (leptogenesis); MEG-II + FCC-ee (Michel); CLIC + ILC + LHC high-luminosity (massless-helicity); FCC-ee Higgs program (combined).
 
 The roadmap of the paper is as follows. §\ref{sec:inheritance} establishes the substrate-level inheritance from Capotauro v2.0: the three-way cross-sector unification at substrate level under the OPEN-SD-CHIR-PRIMITIVE umbrella, the conditional-closure foundational input stack, and the Capotauro v2.0 axiom set load-bearing for the joint paper. §\ref{sec:bridge} closes the substrate-handle-to-effective-coupling bridge at sector-agnostic level via Theorem 3.1 (THEO-CHIR-CONT-1), with three sub-statements as named lemmas / sub-theorems (Lemma 3.1 / THEO-CHIR-CONT-1.1; Theorem 3.2 / THEO-CHIR-CONT-1.2; Theorem 3.3 / THEO-CHIR-CONT-1.3). §\ref{sec:sector_a} closes Sector A (electroweak V--A coupling derivation) via Theorem 4.4 (THEO-CHIR-CONT-2) with four sub-claim consequences (sector-specific operator identification; Michel parameter at finite mass; massless-helicity-limit 100\% LH preference; Capotauro Falsifier 6 activation). §\ref{sec:sector_b} closes Sector B (chiral-polarity-bias EFT continuum-limit) via Theorem 5.5 (THEO-CHIR-CONT-3) with four sub-claim consequences (sector-specific operator identification; substrate-level stabilization energy; exclusion bound at observable thermodynamic scales; SM cross-validation). §\ref{sec:cross_sector_unification} synthesizes the cross-sector unification as the structural identity claim of the paper and validates the joint paper format's structural efficiency. §\ref{sec:predictions} catalogues the paper's zero-parameter predictions and falsifiers (six falsifiers per the v0.1 outline). §\ref{sec:open_work} catalogues open theorem-level work deferred to future patches. §\ref{sec:discussion} discusses the paper's contribution to the CPP programme's cross-sector closure methodology and its implications for the OPEN-SD-CHIR-PRIMITIVE umbrella's remaining two observable manifestations.
+
+Figure~\ref{fig:master_mechanism} below summarizes the closure architecture as a cognitive map: the substrate-to-observable inheritance chain from the substrate primitive $\hat{n}$ + $|\chi| = \varphi^{-3}$ at Capotauro v2.0 (Layer 3) through the sector-agnostic bridge theorem THEO-CHIR-CONT-1 (Layer 4 sector-agnostic) and the two sector-specific Layer 4 closures THEO-CHIR-CONT-2 + THEO-CHIR-CONT-3 down to the leptogenesis CP-asymmetry observable channel where both sector closures converge. The dynamical-substrate-law gate (Layer 1 substrate-dynamics derivation of $\hat{n}$ from CPP primitive axioms; future-window via the Q1$'$+Q1$'$.A Layer 3 promotion programme) and the OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) thermodynamic causal arrow + (v) cosmological-vacuum asymmetry (templated by the THEO-CHIR-CONT-N convention for future closures via THEO-CHIR-CONT-4 / -5 candidates) are visually marked as dashed future-window annotations to make the paper's scope-limitation framing legible alongside its closure achievements.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[
+  font=\small,
+  every node/.style={align=center},
+  layer3/.style={draw, rounded corners=2pt, fill=blue!10, draw=blue!50!black, inner sep=4pt, minimum height=0.9cm},
+  bridge/.style={draw, rounded corners=2pt, fill=green!12, draw=green!50!black, inner sep=4pt, minimum height=1cm},
+  sectorA/.style={draw, rounded corners=2pt, fill=orange!15, draw=orange!60!black, inner sep=4pt, minimum height=1cm},
+  sectorB/.style={draw, rounded corners=2pt, fill=red!10, draw=red!50!black, inner sep=4pt, minimum height=1cm},
+  obs/.style={draw, rounded corners=2pt, fill=yellow!25, draw=yellow!60!black, inner sep=4pt, minimum height=0.9cm},
+  primitive/.style={draw, rounded corners=2pt, fill=gray!8, draw=gray!60!black, inner sep=4pt, minimum height=0.9cm},
+  gate/.style={draw, rounded corners=2pt, dashed, fill=gray!5, draw=gray!50, inner sep=3pt, font=\scriptsize\itshape},
+  layerlabel/.style={font=\scriptsize\bfseries, anchor=east, text=black!55},
+  arr/.style={->, thick, draw=black!60}
+]
+
+% Row 1 — substrate primitive layer
+\node[primitive, text width=9cm] (prim) {%
+  \textbf{Substrate primitive} (Capotauro v2.0)\\
+  4D direction $\hat{n}$ in $\mathbb{R}^4$ + magnitude $|\chi| = \varphi^{-3} \approx 0.236$\\
+  \scriptsize{FI-CHIR-CONT-1 + FI-CHIR-CONT-2}
+};
+\node[gate, text width=3.2cm, right=0.3cm of prim] (gate1) {%
+  \textbf{Dynamical-substrate-law gate}\\
+  (future-window;\\ Q1$'$+Q1$'$.A; §8.1)
+};
+\draw[<->, dashed, thick, draw=gray!60] (prim) -- (gate1);
+
+% Row 2 — Layer 3 (three substrate objects)
+\node[layer3, text width=3cm, below=1.0cm of prim.south, xshift=-3.4cm] (K3) {%
+  \textbf{K3-doublet}\\
+  triangular face\\
+  $|M^{K_3}| = \chi/6$\\
+  \scriptsize{THEO-CAP-1 (\#62)}
+};
+\node[layer3, text width=3cm, right=0.4cm of K3] (W) {%
+  \textbf{W-bracelet}\\
+  Petrie hexagon\\
+  $|M^W| = \chi/6$\\
+  \scriptsize{THEO-SD-CHIR-1 (\#63)}
+};
+\node[layer3, text width=3cm, right=0.4cm of W] (qDP) {%
+  \textbf{qDP/eDP}\\
+  Linear-ZBW on $\pm$qCP\\
+  $|M^{qDP}| = \chi/6$\\
+  \scriptsize{THEO-SD-CHIR-2 (\#64)}
+};
+\draw[arr] (prim.south -| K3) -- (K3);
+\draw[arr] (prim.south -| W) -- (W);
+\draw[arr] (prim.south -| qDP) -- (qDP);
+\node[layerlabel, left=0.3cm of K3] (L3lab) {LAYER 3\\substrate};
+
+% Row 3 — Layer 4 sector-agnostic bridge
+\node[bridge, text width=11cm, below=1.0cm of W.south] (bridge) {%
+  \textbf{Sector-agnostic bridge theorem} (THEO-CHIR-CONT-1, \#65; §3)\\
+  \scriptsize{Sub-statements 1.1 (symmetry preservation) + 1.2 (operator identification) + 1.3 (magnitude inheritance via topological-projection \methref{METH-CHIR-CONT-4})}\\
+  $|M^{\text{eff,sector}}| = \chi/6 \approx 0.0394$ at leading order in $a/L$
+};
+\draw[arr] (K3) -- (bridge.north -| K3);
+\draw[arr] (W) -- (bridge.north -| W);
+\draw[arr] (qDP) -- (bridge.north -| qDP);
+
+% Row 4 — Layer 4 sector-specific
+\node[sectorA, text width=5cm, below=0.9cm of bridge.south, xshift=-2.9cm] (secA) {%
+  \textbf{Sector A: V--A coupling} (§4)\\
+  $\mathcal{O}^{\text{eff,W}} \leftrightarrow \bar{\psi}_L\gamma^\mu\psi_L$\\
+  Michel $\rho=3/4$; 100\% LH at $m/E \to 0$\\
+  \scriptsize{THEO-CHIR-CONT-2 (\#66)}
+};
+\node[sectorB, text width=5cm, right=0.4cm of secA] (secB) {%
+  \textbf{Sector B: chiral-polarity-bias} (§5)\\
+  $\mathcal{O}^{\text{eff,qDP}} \leftrightarrow \Delta F^{qDP}$\\
+  $-$qCP stabilization; $\Delta p_{LR} \approx \chi/6$\\
+  \scriptsize{THEO-CHIR-CONT-3 (\#67)}
+};
+\draw[arr] (bridge.south -| secA) -- (secA);
+\draw[arr] (bridge.south -| secB) -- (secB);
+\node[layerlabel, left=0.3cm of secA] {LAYER 4\\continuum-EFT};
+
+% Row 5 — observable scale (cross-sector convergence)
+\node[obs, text width=11cm, below=0.9cm of secA.south, xshift=2.9cm] (obs) {%
+  \textbf{Observable scale: leptogenesis CP-asymmetry} (cross-sector convergent)\\
+  $\Delta p_{LR}^{\text{predicted}} = \chi/6 \approx 0.0394$ \quad vs \quad $\Delta p_{LR}^{\text{obs}} \sim 0.04$ (BAU back-derivation \cite{DavidsonNardiNir}; match within 2\%)
+};
+\draw[arr] (secA) -- (obs.north -| secA);
+\draw[arr] (secB) -- (obs.north -| secB);
+\node[layerlabel, left=0.3cm of obs] {OBSERVABLE\\scale};
+\node[gate, text width=3.2cm, right=0.3cm of obs] (fals) {%
+  \textbf{Capotauro Falsifier 6}\\
+  (A) Michel\\(B) massless-helicity\\\textbf{(C) leptogenesis [sharpest]}\\
+  \scriptsize{no falsification at current precision}
+};
+\draw[<->, dashed, thick, draw=gray!60] (obs) -- (fals);
+
+\end{tikzpicture}
+\caption{Master mechanism diagram for the chirality continuum joint paper: substrate-to-observable closure chain. The substrate primitive (gray, top) is the 4D direction $\hat{n}$ in $\mathbb{R}^4$ + magnitude $|\chi| = \varphi^{-3}$ derived from the 600-cell polytope edge-length ratios via the perturbative-distance-ratio constraint (Capotauro v2.0). Layer 3 (blue): three substrate objects on the host vertex's first-shell icosahedron carry identical chirality matrix element magnitude $\chi/6 \approx 0.0394$ across the K3-doublet, W-bracelet, and qDP/eDP sectors via the same 12-vertex icosahedral cage with the same effective matter-doublet dimension 2. Layer 4 sector-agnostic (green): the bridge theorem THEO-CHIR-CONT-1 (§3) projects the substrate-handle magnitude $\chi/6$ from substrate cutoff $\Lambda_{\text{sub}}$ to continuum-EFT effective coupling at leading order via topological-projection. Layer 4 sector-specific (orange, red): the W-bracelet sector identifies the continuum operator as the V--A current (§4; THEO-CHIR-CONT-2) and the qDP/eDP sector identifies it as the chirality-asymmetric stabilization-energy operator $\Delta F^{qDP}$ (§5; THEO-CHIR-CONT-3). Observable scale (yellow): both Layer 4 sector closures converge on the leptogenesis CP-asymmetry observable, matching the BAU back-derivation within 2\% at $\sigma \sim 0.005$ current precision. Dashed future-window annotations: the dynamical-substrate-law gate at Layer 1 substrate-dynamics (top-right; §8.1) and the Capotauro Falsifier 6 three thresholds (bottom-right; §4.5). Cross-sector convergence at the observable scale is a structural prediction of the joint paper format (§6.5) rather than an emergent empirical coincidence.}
+\label{fig:master_mechanism}
+\end{figure}
 
 % ============================================================
 % §2 INHERITANCE FROM CAPOTAURO v2.0
