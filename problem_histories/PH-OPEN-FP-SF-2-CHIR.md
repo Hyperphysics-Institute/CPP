@@ -2423,3 +2423,108 @@ Joint paper substantively complete across all paper sections + bibliography fina
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT modify v0.1 outline file at this patch
 - Do NOT promote paper to v1.0 SHIP at Patch 0503 (v0.5 SHIPPED is substantively complete first-draft state; v1.0 SHIP follows reviewer cycle)
+
+---
+
+## Joint Paper v0.6 Reviewer Cycle Session 1: ChatGPT Round-1 Review Captured + Action Plan Drafted (Session 137 Patch 0504)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0503 v0.5 SHIPPED)
+**Patch:** 0504
+**Status:** v0.6 reviewer cycle Session 1. ChatGPT round-1 review of chirality continuum v0.5 SHIPPED captured verbatim at `flagship_papers/chirality_continuum/reviewer_reviews/chatgpt_round1.md`; categorization + integration sequence + anti-priorities drafted at companion `v06_action_plan.md`. No .tex modifications at this patch. Title-block status unchanged at v0.5 (SHIPPED).
+
+### What this update establishes
+
+Patch 0504 opens the v0.6 reviewer cycle for the chirality continuum joint paper by capturing ChatGPT's round-1 review (Thomas's first reviewer engagement post-v0.5 SHIP) and producing a categorized action plan for v0.6 integration.
+
+The review is substantively positive. ChatGPT identifies the programme's trajectory of explanatory-scope-control + emergent-vs-primitive chirality framing + cleaner orientation hierarchy + improved open-problem identification as strong v0.5 advances. The reviewer's central concerns (dynamical-substrate-law gate + mathematical inevitability + EFT mapping precision + retrospective-closure danger + mechanism figure) substantially align with our own §8 Open Theorem-Level Work + §9 Discussion scope-limitation framing.
+
+### Patch 0504 deliverables
+
+- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/` directory (new programme infrastructure for joint paper reviewer cycle).
+- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/chatgpt_round1.md` — ChatGPT round-1 review captured verbatim with reviewer metadata.
+- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/v06_action_plan.md` — categorization + integration sequence + anti-priorities.
+- **UPDATE** `research_frontier.md` — Patch 0504 Last-updated header with v0.6 reviewer cycle Session 1 status.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0504 entry appended (this section).
+
+### ChatGPT round-1 review verdict
+
+Substantively positive. ChatGPT's executive assessment: "Chiral Continuum v2.0 v5 is a substantially more disciplined and technically coherent framework than earlier versions. The manuscript now reads less like 'a broad ontological reinterpretation of chirality' and more like 'a constrained substrate–orientation programme attempting to derive chirality emergence from continuity and closure structure.'"
+
+ChatGPT's overall evaluation table:
+
+| Area | Assessment |
+|---|---|
+| conceptual coherence | strong |
+| topology/orientation structure | very strong |
+| chirality emergence logic | improved significantly |
+| EFT transition discipline | moderate-to-strong |
+| phenomenological restraint | much improved |
+| falsifiability structure | improving |
+| mathematical inevitability | still incomplete |
+| dynamical foundation | still weak |
+
+ChatGPT's final framing: "the framework is now organized enough that the absence of a dynamical substrate law becomes the dominant visible gap. Ironically, that is evidence of progress." This matches the programme's own internal characterization of the dynamical-substrate-law gate as the defining next gate (registered at §8.1 + §9.3; tied to Q1$'$+Q1$'$.A Layer 3 promotion programme). External reviewer confirmation that this is the right next gate is valuable programme-state information independent of v0.6 paper integration.
+
+### Categorization of ChatGPT feedback
+
+**A. Strengths acknowledged (no action needed; record for posterity)** — six strongest features identified by ChatGPT: chirality treated as emergent constraint rather than primitive ontology; orientation-closure hierarchy cleaner; weak-sector routing plausible; ontological inflation controlled; closure logic as real core; better at identifying open problems. All six consistent with our own framing.
+
+**B. Actionable for v0.6 integration (Patch 0505+)**:
+
+| Priority | Item | Estimated patch |
+|---|---|---|
+| 1 | Master mechanism figure (Figure 1) at §1 Introduction | Patch 0505 |
+| 2 | Sharper chirality-as-emergent-constraint framing at §1 | Patch 0506 |
+| 3 | Elevate dynamical-substrate-law gate framing at §8 (reorganize §8.1 as primary subsection) | Patch 0506 |
+
+**C. Deferred to future-window (aligned with §8 Open Theorem-Level Work)** — ChatGPT's deepest concerns are already acknowledged as future-window work:
+- Dynamical law / action principle / substrate evolution equation → §8.1 + §9.3 future-window via Q1$'$+Q1$'$.A
+- Mathematical inevitability / uniqueness → §6.4 zero-parameters + §8.1 FI-CHIR-CONT-2 first-principles closure future-window
+- EFT mapping precision: gauge emergence + chirality protection → §8.3 Picture A alternative
+- EFT mapping precision: mass-sector projection → SF-line follow-up work
+- Retrospective closure danger → §7.2 six falsifiers; possible §9.4 strengthening at Patch 0506
+
+**D. Cosmetic/framing improvements (light-touch v0.6 polish)** — §3.7 topological-projection RG-flow correspondence tightening + optional §9.4 "Failure modes and falsifiability commitments" subsection.
+
+### Integration sequence
+
+| Patch | Scope | Title-block |
+|---|---|---|
+| 0504 (this patch) | ChatGPT round-1 capture + action plan | unchanged: v0.5 (SHIPPED) |
+| 0505 | Figure 1 master mechanism diagram | bump to v0.6 (DRAFT) |
+| 0506 | §1 framing sharpening + §8 gate elevation + light-touch polish | bump to v0.6 (SHIPPED) |
+| 0507+ | CoPilot round-1 reviewer cycle | v0.7 cycle |
+| 0508+ | Grok round-1 reviewer cycle | v0.8 cycle |
+| 0509+ | Final reviewer-cycle iterations + v1.0 SHIP | v0.9 → v1.0 SHIPPED |
+
+### Programme state changes at Patch 0504
+
+- (1) `flagship_papers/chirality_continuum/reviewer_reviews/` directory created (new programme infrastructure)
+- (2) `chatgpt_round1.md` captures ChatGPT round-1 review verbatim
+- (3) `v06_action_plan.md` categorizes feedback + integration sequence + anti-priorities
+- (4) Title-block status unchanged at v0.5 (SHIPPED) — Patch 0504 captures and plans rather than integrates
+- (5) NO .tex modifications
+- (6) NO new methods catalogued
+- (7) NO theorems registered new
+- (8) NO predictions registered new
+- (9) NO falsifiers registered new
+- (10) NO conjecture registrations
+
+### Methodological observations at Patch 0504
+
+**(i) Reviewer-reviews directory as new programme infrastructure**: `flagship_papers/chirality_continuum/reviewer_reviews/` creates explicit programme infrastructure for joint paper reviewer cycle that didn't exist for Capotauro v2.0 (which tracked reviewer engagement in PH entries directly). The directory-level capture provides cleaner separation between substantive paper content (.tex source) and reviewer engagement metadata (reviewer review files + action plans); pattern available for future flagship paper reviewer cycles.
+
+**(ii) Categorization discipline**: strengths-acknowledged vs actionable vs deferred-future-window vs cosmetic-framing is the right granularity for v0.6 integration planning — coarse enough to scope patches but fine enough to track which feedback items are deferred vs addressed.
+
+**(iii) External validation of programme gate identification**: ChatGPT's "next critical step" framing as the dynamical-substrate-law gate is external validation of programme-level gate identification at §8.1 + §9.3; strengthens the programme's commitment to the Q1$'$+Q1$'$.A Layer 3 promotion programme as the post-v1.0-SHIP priority.
+
+### Anti-priorities preserved at Patch 0504
+
+- Do NOT modify .tex substantive content during round-1 review capture (this patch is capture + plan only)
+- Do NOT attempt to close dynamical-substrate-law gate at v0.6 integration (genuine future-window work tied to Q1$'$+Q1$'$.A Layer 3 promotion programme)
+- Do NOT add new theorems or predictions at v0.6 integration (theorem-level content frozen at v0.5 SHIP)
+- Do NOT modify §3 substantive proof content during EFT-mapping clarifications (clarifications stay at exposition level)
+- Do NOT attempt to address every reviewer concern (some concerns are deep future-window items)
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources during integration
+- Do NOT promote paper to v0.7 SHIPPED at Patch 0506 (v0.6 SHIPPED is end-state of ChatGPT round-1 integration; v0.7 cycle begins with CoPilot or Grok round-1 submission)
