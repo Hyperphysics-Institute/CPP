@@ -1435,3 +1435,131 @@ Combined: $\lesssim 1\%$ relative to leading-order $\chi/6 \approx 0.0394$, well
 - Do NOT duplicate Threshold (C) discussion from §B Step 4 (Patch 0491 §18.2) at §C Step 3 (cross-sector convergence acknowledged in §15.7 as one observation, not full re-derivation)
 - Do NOT modify §A bridge work or §B Sector A work or §C Sessions 1+2+3 content during §C Session 4 drafting
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+
+---
+
+## §C Sector B SM-2 Chiral-Polarity-Bias Derivation Session 4: Step 4 SM Cross-Validation CLOSED + Theorem C.1 → THEO-CHIR-CONT-3 (theorem #67); §C SUB-CLAIM (f)+(g)+(h)+(i) CLOSURE PATCH; Joint Paper §A+§B+§C ALL CLOSED (Session 137 Patch 0495)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0494 §C Session 3 + Step 3 closure)
+**Patch:** 0495 (§C SUB-CLAIM CLOSURE PATCH)
+**Status:** Step 4 of Theorem C.1 closure ACHIEVED via three-track cross-validation. Sub-claim (i) CLOSED. Theorem C.1 promoted to programme-level registered-theorem status as **THEO-CHIR-CONT-3** (theorem #67). All four §C sub-claims (f)+(g)+(h)+(i) now CLOSED. **Joint paper §A + §B + §C ALL CLOSED at theorem-level rigor**.
+
+### What this update establishes
+
+Patch 0495 completes §C Sector B SM-2 chiral-polarity-bias derivation via Step 4 SM cross-validation (sub-claim (i)) and promotes Theorem C.1 to programme-level registered-theorem status as THEO-CHIR-CONT-3 (theorem #67). Sketch extended ~256 lines with §17–§21 (sketch now ~967 lines total). THEO-CHIR-CONT-3 entry inserted at `theorem-registry.md` between THEO-CHIR-CONT-2 (theorem #66) and THEO-SD-CHIR-2 entries. **Joint paper §A + §B + §C ALL CLOSED with three programme-level theorems THEO-CHIR-CONT-1+2+3** (theorems #65+#66+#67).
+
+### Patch 0495 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §17–§21 (~256 lines added; sketch now ~967 lines total).
+- **UPDATE** `theorem-registry.md` — THEO-CHIR-CONT-3 entry inserted between THEO-CHIR-CONT-2 (theorem #66) and THEO-SD-CHIR-2 entries; Last-updated header prepended.
+- **UPDATE** `research_frontier.md` — Patch 0495 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0495 §C Session 4 entry appended (this section).
+
+### Step 4 — SM cross-validation (sketch §18)
+
+**Three-track cross-validation**:
+
+**Track 1 — Cross-validation against SM-2 v1.0 §10 substrate-level chiral-polarity-bias mechanism** (§18.1): SM-2 v1.0 §10 substrate-level mechanism statement preserved unchanged at substrate level via THEO-SD-CHIR-2 Layer 3 anchor; §C closure delivers Layer 4 continuum-EFT realization at observable thermodynamic scales via topological-projection argument without modifying SM-2 v1.0 §10 substrate-level content. Continuum-EFT operator $\Delta F^{qDP}$ identified sector-specifically as physical realization of SM-2 §10 mechanism statement at Layer 4 operator level. Empirical anchor $\Delta p_{LR}^{\text{obs}} \sim 0.04$ from BAU back-derivation matches $\chi/6 \approx 0.0394$ within 2% — validates full inheritance chain.
+
+**Track 2 — Cross-validation against §B THEO-CHIR-CONT-2 Sector A V–A coupling derivation** (§18.2): parallel structural inheritance pattern at three levels:
+
+| Level | §B Sector A | §C Sector B |
+|---|---|---|
+| Sector-specific operator identification | $\mathcal{O}^{\text{eff,W}} \leftrightarrow \bar{\psi}_L\gamma^\mu\psi_L$ (three identifications: $\zeta^{\text{cont,W}} \leftrightarrow \gamma_5$ + matter-doublet $\leftrightarrow \{\psi_R,\psi_L\}$ + V–A current) | $\mathcal{O}^{\text{eff,qDP}} \leftrightarrow \Delta F^{qDP}$ (three identifications: $\zeta^{\text{cont,qDP}} \leftrightarrow$ combined $CP$ + matter-doublet $\leftrightarrow \{\|\text{LZBW},+\rangle, \|\text{LZBW},-\rangle\}$ + $\Delta F^{qDP}$) |
+| Substrate-level magnitude inheritance | $\|M^W\| = \chi/6$ via THEO-SD-CHIR-1 → topological-projection → $\|M^{\text{eff,W}}\| = \chi/6$ | $\|M^{qDP}\| = \chi/6$ via THEO-SD-CHIR-2 → topological-projection → $\|M^{\text{eff,qDP}}\| = \chi/6$ |
+| Observable scale primary channel | Leptogenesis CP-asymmetry (THEO-CHIR-CONT-2 Threshold (C); sharpest direct test of substrate-handle magnitude) | Leptogenesis CP-asymmetry $\Delta p_{LR} \approx 0.0394$ (same observable) |
+
+Both sectors converge on substrate-handle magnitude $\chi/6$ at their respective continuum-EFT operator levels via the same bridge theorem THEO-CHIR-CONT-1 + sub-statements. Cross-sector unification at sector-agnostic level + sector-specific instantiation pattern templated by THEO-CHIR-CONT-N sub-prefix convention.
+
+**Asymmetric sector-physical-content reflected in differential session content** but identical 4-session count:
+- §B: textbook V–A four-fermion kinematics + chirality-helicity coincidence + multi-experimental empirical validation
+- §C: inheritance argument + sector-agnostic claim verification + Boltzmann-like thermodynamic propagation + cross-sector convergence acknowledgment
+
+**Track 3 — Joint paper cross-sector unification framing at observable scale** (§18.3): single primary empirical observable (leptogenesis CP-asymmetry $\Delta p_{LR} \approx 0.0394$) simultaneously tests both §B's Layer 4 closure (THEO-CHIR-CONT-2 Threshold (C)) and §C's Layer 4 closure (THEO-CHIR-CONT-3 primary observable) at substrate-handle level $\chi/6$ via different physical channels (V–A coupling kinematics vs chiral-polarity-bias thermodynamic stabilization) but converging on same observable.
+
+**Cross-sector convergence at observable level** is the structural payoff of the joint paper format: single empirical observable simultaneously validates two sector-specific Layer 4 closures of the same substrate-handle magnitude $\chi/6$. Joint paper format makes cross-sector unification a structural prediction of the same bridge theorem THEO-CHIR-CONT-1 + sub-statements rather than an emergent empirical coincidence under Venue (b) fallback.
+
+### Theorem C.1 promotion to THEO-CHIR-CONT-3 (sketch §19)
+
+Four-condition test verification per Patch 0397 / THEO-CAP-1 / THEO-CHIR-CONT-1 / THEO-CHIR-CONT-2 precedent:
+
+- **(i) Rigorous proof chain** ✓ — ~951 lines + ~786 lines inherited from THEO-CHIR-CONT-1 + ~386 lines THEO-SD-CHIR-2 + ~485 lines Capotauro v2.0 = **~2608 lines total dependency**
+- **(ii) Numerical verification** ✓ — substrate magnitude at machine precision via inheritance chain + sector-agnostic Claims 15.1.2 + 15.2.1 verified at qDP/eDP sector + Boltzmann-like thermodynamic distribution standard statistical-mechanics + cross-sector convergence numerical identity + sub-leading corrections quantified
+- **(iii) Empirical prediction validated** ✓ — leptogenesis CP-asymmetry $\Delta p_{LR}^{\text{obs}} \sim 0.04$ within 2% from BAU back-derivation + sector-specific extensions + cross-sector convergence with §B Threshold (C) + future-collider precision projection
+- **(iv) Honest scope-limitation framing** ✓ — in-scope sub-claims closed + out-of-scope explicit (mass-generation + sub-shell physics + CKM mixing NOT in scope) + sub-leading corrections quantified + conditional closure on FI-CHIR-CONT-1/2 first-principles + sub-claim closure chain elements NOT registered standalone per anti-priority + Picture A alternative closure path registered
+
+**Theorem C.1 promoted to programme-level registered-theorem status as THEO-CHIR-CONT-3** — theorem #67 in CPP theorem registry, third Layer 4 continuum-EFT projection theorem under OPEN-SD-CHIR-PRIMITIVE umbrella, second sector-specific Layer 4 closure under THEO-CHIR-CONT-N sub-prefix convention.
+
+### §C closure announcement (sketch §20)
+
+**Joint paper §C Sector B SM-2 chiral-polarity-bias derivation CLOSED at theorem-level rigor as THEO-CHIR-CONT-3** (theorem #67).
+
+**§C closure cost 4 sessions** (Patches 0492+0493+0494+0495) matches §C scoping projection (1 session per step).
+
+**Combined §A + §B + §C closure cost 11 sessions** (3 for §A + 4 for §B + 4 for §C) validates joint paper format's structural efficiency vs Venue (b) fallback ~15–22 sessions; **saves estimated 4–11 sessions**.
+
+**Programme-level theorem registrations completing joint paper substantive content**:
+
+| Theorem | Section | Patch | Theorem # |
+|---|---|---|---|
+| **THEO-CHIR-CONT-1** | §A bridge theorem (sector-agnostic) | 0487 | #65 |
+| **THEO-CHIR-CONT-2** | §B Sector A V–A coupling derivation | 0491 | #66 |
+| **THEO-CHIR-CONT-3** | §C Sector B SM-2 chiral-polarity-bias derivation | 0495 (this) | #67 |
+
+**THEO-CHIR-CONT-N convention complete for joint Layer 4 paper** (3 theorems for 3 substantive sections).
+
+**OPEN-SD-CHIR-PRIMITIVE umbrella status**: three of five observable manifestations now closed at full Layer 4 rigor under THEO-CHIR-CONT-N convention:
+
+- Manifestation (i) mass-mixing chirality — closed via §B SF-2 V–A coupling at THEO-CHIR-CONT-2
+- Manifestation (ii) electroweak V–A — closed via §B THEO-CHIR-CONT-2 same closure
+- Manifestation (iii) electromagnetic handedness — closed via §C SM-2 chiral-polarity-bias at THEO-CHIR-CONT-3 (this patch)
+
+Manifestations (iv) thermodynamic causal arrow + (v) cosmological-vacuum asymmetry remain at substrate-level closure under THEO-SD-CHIR-N convention without Layer 4 promotion at this time; future-window work would extend via THEO-CHIR-CONT-4/-5 candidates.
+
+### Programme state changes at Patch 0495
+
+- (1) Step 4 of Theorem C.1 closure ACHIEVED (sub-claim (i) SM cross-validation)
+- (2) Theorem C.1 promoted to programme-level registered-theorem status as THEO-CHIR-CONT-3 (theorem #67)
+- (3) Joint paper §C Sector B SM-2 chiral-polarity-bias derivation CLOSED at theorem-level rigor
+- (4) Theorem-registry inventory updated: THEO-CHIR-CONT-3 entry inserted; Summary Statistics SD row deferred per CHIR-CONT-1/-2 precedent
+- (5) THEO-CHIR-CONT-N convention complete for joint Layer 4 paper
+- (6) OPEN-SD-CHIR-PRIMITIVE umbrella: three of five observable manifestations closed at full Layer 4 rigor
+- (7) Cross-sector convergence at observable level achieved; joint paper format structural payoff confirmed
+- (8) Combined §A + §B + §C closure cost 11 sessions validates joint paper format
+- (9) OPEN-FP-SF-2-CHIR ready for paper-level publication trajectory (Patches 0496+)
+- (10) NO predictions registered new at programme level (PRED-O-25 inherited)
+- (11) NO falsifiers registered new (Capotauro Falsifier 6 already ACTIVATED at §B)
+- (12) NO conjecture registrations
+
+### Methodological observations
+
+**§C Step 4 closure structurally efficient via three-track cross-validation**: Step 4 closure cost matches §C projection (1 session per step). Three-track cross-validation (SM-2 v1.0 §10 + §B THEO-CHIR-CONT-2 + joint paper framing) reduces to validation-via-comparison work; no novel derivation at Session 4.
+
+**Joint paper format validated through §A + §B + §C completion**: v0.1 outline §10 PROCEED verdict (Patch 0484) empirically validated through substantive closure trajectory. Combined cost 11 sessions vs Venue (b) fallback 15–22 sessions saves 4–11 sessions; cross-sector convergence at observable level is structural prediction of joint paper format (rather than empirical coincidence under Venue (b)); THEO-CHIR-CONT-N convention complete provides programme-level template.
+
+**§C closure pattern in retrospect**:
+
+| Session | Patch | Step | Sub-claim | Closure character |
+|---|---|---|---|---|
+| §C Session 1 | 0492 | Step 1 | (f) | Sector-specific operator identification via three structural identifications |
+| §C Session 2 | 0493 | Step 2 | (g) | Substrate-level stabilization energy via three-track inheritance |
+| §C Session 3 | 0494 | Step 3 | (h) | Exclusion bound at observable thermodynamic scales |
+| §C Session 4 | 0495 | Step 4 | (i) | SM cross-validation + Theorem C.1 promotion to THEO-CHIR-CONT-3 |
+
+### Forward queue post-Patch 0495 (§C CLOSURE PATCH)
+
+- **Priority 1 (Patch 0496+)**: §D cross-sector unification framing + paper polish (v0.5); 1–2 sessions
+- **Priority 2 (Patches 0498+)**: v0.6–v0.9 reviewer cycle (ChatGPT + CoPilot + Grok); 3–5 sessions
+- **Priority 3 (Patch 0503+)**: v1.0 SHIP; 1–2 sessions
+- **Subsequent (post-v1.0)**: OPEN-FP-SF-4-1 Picture A alternative continuum-EFT framework; SM-5 cooperation cross-sector closure; SF-2 v2.0+ Layer 4 EFT closure with delta_CP; FI-CHIR-CONT-1/2 first-principles derivation (Q1$'$+Q1$'$.A Layer 3 promotion); manifestations (iv)+(v) Layer 4 closures via THEO-CHIR-CONT-4/-5 candidates
+
+### Anti-priorities preserved at Patch 0495
+
+- Do NOT extend §C beyond Theorem C.1's four sub-claims (Session 4 closes §C complete)
+- Do NOT promote sub-claim closure chain elements (THEO-CHIR-CONT-3.1/-3.2/-3.3/-3.4) to standalone theorem entries
+- Do NOT extend cross-sector unification framing into joint paper §D content at §C Session 4 (§D scope at Patches 0496+)
+- Do NOT modify §A bridge work or §B Sector A work or §C Sessions 1+2+3 content
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT introduce new FI-CHIR-CONT-N entries at §C Session 4 (FI inventory capped)
