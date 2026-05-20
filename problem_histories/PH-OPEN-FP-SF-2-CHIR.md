@@ -362,3 +362,107 @@ If during v0.2+ substantive drafting unanticipated structural obstructions surfa
 - Do NOT exceed joint-paper scope (bounded to OPEN-FP-SF-2-CHIR + SM-2 v2.0+ chiral-polarity-bias closure specifically).
 - Do NOT modify Patches 0482 + 0483 scoping sketches at this patch (preserved at historical locations per anti-priority discipline).
 - Do NOT trigger Venue (b) fallback absent substantively unmistakable structural obstructions during v0.2+ substantive drafting.
+
+---
+
+## §A Shared Bridge Work Session 1: Theorem 3.1 Statement + Step 1 Substrate Operator Identification (Session 137 Patch 0485)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post-Patch 0484 v0.1 outline + viability decision gate PROCEED verdict)
+**Patch:** 0485
+
+### What this update establishes
+
+Patch 0485 opens substantive Layer 4 derivation work at the joint paper's §A shared bridge step — the load-bearing technical step closing sub-claim (a) jointly for both sector legs. Session 1 deliverable: Theorem 3.1 statement at theorem-statement level + Step 1 substrate operator identification closed at sector-agnostic abstraction level + Step 2 setup architecture for Session 2.
+
+### Patch 0485 deliverables
+
+- **NEW** `flagship_papers/chirality_continuum/sketches/substrate_to_continuum_bridge.md` (~480 lines) — Tier-4 working sketch capturing §A bridge work Session 1.
+- **UPDATE** `research_frontier.md` Last-updated header prepended with Patch 0485 milestone + OPEN-FP-SF-2-CHIR Status field updated to v0.2 substantive drafting OPENED.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0485 §A bridge work Session 1 entry appended (this section).
+
+### Theorem 3.1 statement (THEO-CHIR-CONT-1 candidate)
+
+**Theorem 3.1** (*Substrate-Handle-to-Effective-Coupling Bridge*). Under FI-CHIR-CONT-1/2/3 + FI-CHIR-CONT-9 substrate-level inheritance + AXIM-1/3/4/7 Capotauro v2.0 axiom stack, the substrate-level chirality matrix element $|M^{\text{sector}}| = \chi/6$ on a substrate object $\mathcal{S}^{\text{sector}}$ with stabilizer subgroup $\Gamma \subset H_3 = I_h$, pairing-convention generator $\zeta^{\text{sector}} \in \Gamma$, matter-doublet basis $\{|\Psi^{\text{sub}}_+\rangle, |\Psi^{\text{sub}}_-\rangle\}$ in 2D subspace of $\Gamma$-irreps with opposite $\zeta^{\text{sector}}$-parity, and chirality operator $\hat{C}^{\text{sector}}$ in $\zeta^{\text{sector}}$-ODD 1D irrep, projects through continuum-limit lattice-to-continuum embedding to a chirality-sensitive effective operator $\mathcal{O}^{\text{eff}}$ in the continuum EFT appropriate to the sector, with:
+
+1. **Magnitude inheritance (topological)**: $M^{\text{eff}} = \chi/6$ at leading order; no renormalization correction at any RG-flow scale between $\Lambda_{\text{sub}}$ and $\mu_{\text{obs}}^{\text{sector}}$.
+2. **Chirality content preservation**: $\mathcal{O}^{\text{eff}}$ is $\zeta^{\text{eff,sector}}$-ODD with respect to continuum-limit projection of $\zeta^{\text{sector}}$.
+3. **Sector-agnosticism**: projection depends only on universal substrate data $(|\chi|, d_\Gamma/V_{\text{cage}})$ not on sector-specific $(\Gamma, \zeta^{\text{sector}}, \hat{C}^{\text{sector}})$.
+
+Promotion from theorem-statement level to full theorem-level rigor at Session 3 (Patch 0487 candidate) upon Step 4 topological-projection argument closure.
+
+### Proof architecture (4 steps)
+
+- **Step 1** (this session; CLOSED): substrate operator identification + sector-agnostic abstraction.
+- **Step 2** (Session 2, Patch 0486 candidate): continuum-limit projection setup.
+- **Step 3** (Session 2 closure target): continuum operator identification at sector-agnostic level.
+- **Step 4** (Session 3, Patch 0487 candidate): magnitude inheritance verification via topological argument. **SUB-CLAIM (a) CLOSURE PATCH.**
+
+### Step 1 substantive closure: sector-agnostic abstraction
+
+**Definition 3.2.1** (Sector-Agnostic Substrate Wigner-Eckart Datum): tuple $\mathcal{D}^{\text{sub}} = (\mathcal{S}, \Gamma, \zeta, \hat{C}, \{|\Psi_+\rangle, |\Psi_-\rangle\}, M)$ with validity condition $M = \pm\chi \cdot d_\Gamma/V_{\text{cage}} = \pm\chi/6$ via universal data $(|\chi| = \phi^{-3}, d_\Gamma = 2, V_{\text{cage}} = 12)$.
+
+Three Capotauro-v2.0 sector instantiations verified VALID under Definition 3.2.1:
+
+- **Sector K3** (K3-doublet; THEO-CAP-1): $\Gamma^{K3} = D_{3d} \cong D_6$; $\zeta^{K3}$ = host-CP-related inversion; $\hat{C}_\chi \in B_2(D_6)$; matter-doublet $\{\Phi_-^{(1)}, \Phi_-^{(2)}\}$ in 2D $E$-irrep with opposite $\zeta^{K3}$-parity via $\sigma_1\zeta$-EVEN pairing convention. ✓ PASS.
+- **Sector W** (W-bracelet; THEO-SD-CHIR-1): $\Gamma^W = D_6$ as Petrie-hexagon sub-stabilizer of $H_3 = I_h$; $\zeta^W$ = icosahedral-center inversion in 4D; $\hat{C}^W$ in $\zeta^W$-ODD 1D irrep matching V--A current 120°/240° phase bias; matter-doublet $\{|\Psi^W_+\rangle, |\Psi^W_-\rangle\}$ in 2D $E_2$-irrep. ✓ PASS.
+- **Sector qDP** (qDP/eDP; THEO-SD-CHIR-2): $\Gamma^{qDP} = D_{5d}$ of order 20; $\zeta^{qDP}$ = combined $CP$ operation; $\hat{C}^{qDP} \in A_{2u}(D_{5d})$; matter-doublet $\{|\Psi^{qDP,(1)}_-\rangle, |\Psi^{qDP,(2)}_-\rangle\}$ in 2D subspace of $A_{1g} \oplus A_{2u}$. ✓ PASS.
+
+All three sectors produce $|M| = \chi/6$ via universal data only; sector-specific data $(\Gamma, \zeta^{\text{sector}}, \hat{C}^{\text{sector}})$ enters only as labels not as load-bearing parameters. **Step 1 result**: sector-agnostic abstraction valid across all three Capotauro-v2.0 sectors.
+
+### $\zeta$-parity matching as load-bearing structural condition
+
+Non-vanishing substrate matrix element requires: chirality operator $\hat{C}^{\text{sector}}$ in $\zeta$-ODD 1D irrep + matter-doublet $\{|\Psi_+\rangle, |\Psi_-\rangle\}$ with opposite $\zeta$-parity (one $\zeta$-EVEN, one $\zeta$-ODD). Parity matching $\text{EVEN} \otimes \text{ODD} \otimes \text{ODD} = \text{EVEN}$ contains trivial irrep; matrix element non-vanishing. If both matter-doublet states were $\zeta$-EVEN or both $\zeta$-ODD, matrix element vanishes by Schur orthogonality on $\zeta$ alone. Inherited at bridge step as the chirality content preservation condition of Theorem 3.1.
+
+### Step 2 setup: topological-vs-dynamical distinction (key physical insight)
+
+The substrate magnitude $|\chi| = \phi^{-3}$ is derived from the perturbative-distance-ratio constraint on $\hat{n}$-induced edge perturbations (Capotauro v2.0 §sec:chi\_resolution + Finding C-W39). Crucially, $\hat{n}$ is a **substrate primitive feature** (FI-C-RC-1), not a dynamical degree of freedom: per framing-choice discussion at Capotauro v2.0 §sec:order\_parameter, the chirality magnitude is the substrate's perturbation amplitude — a **structural** quantity derived from substrate geometry, not a **dynamical** quantity derived from substrate field-theoretic action.
+
+**Critical consequence for the bridge step**: topological / structural quantities of the substrate are preserved across continuum limits without renormalization, by the same principle that protects anomaly coefficients ($1/(16\pi^2)$ exact at all loop orders), topological charges (winding numbers, Chern-Simons levels), Atiyah-Singer index theorem contributions, and discrete symmetry generators' parity content in continuum QFT. By contrast, dynamical quantities (couplings, masses, field amplitudes) require renormalization. The bridge step's claim is that $\chi/6$ is topological in this sense and projects to continuum without renormalization at leading order.
+
+Session 2 substantive closure target: topological-projection argument at sector-agnostic level.
+
+### FI dependency mapping (complete)
+
+- **Substrate-level inheritance**: FI-CHIR-CONT-1 (substrate primitive 4D direction $\hat{n}$ at vertex-aligned Reading C); FI-CHIR-CONT-2 (substrate chirality magnitude $|\chi| = \phi^{-3}$ from perturbative-distance-ratio constraint); FI-CHIR-CONT-3 (substrate residual symmetry $H_3 = I_h$ at host vertex).
+- **Cross-sector unification inheritance**: FI-CHIR-CONT-9 (Substrate-Locality Theorem of Capotauro v2.0 §sec:substrate\_locality + Corollary cor:substrate\_locality\_unification).
+- **Joint-paper-specific inheritances**: FI-CHIR-CONT-10 (OPEN-SD-CHIR-PRIMITIVE umbrella context); FI-CHIR-CONT-11 (PD-004 layer architecture mapping); FI-CHIR-CONT-12 (SF-4 v4.0 cross-sector-closure-pattern precedent).
+- **Axiom inheritances**: AXIM-1, AXIM-3 (axiom of 600-cell substrate structure; load-bearing), AXIM-4, AXIM-7 (axiom of substrate primitives; load-bearing for FI-CHIR-CONT-1).
+
+Bridge step is inheritance-heavy by design; substantive content concentrated in Step 4 topological-projection argument.
+
+### Programme state changes at Patch 0485
+
+- (1) §A shared bridge work OPENED at substantive Layer 4 derivation level; joint paper v0.2 substantive drafting begins.
+- (2) Theorem 3.1 statement ESTABLISHED at theorem-statement level (THEO-CHIR-CONT-1 candidate; not yet at registered-theorem status pending Step 4 closure).
+- (3) Step 1 substrate operator identification CLOSED at sector-agnostic abstraction level; Definition 3.2.1 valid across all three Capotauro-v2.0 sectors.
+- (4) $\zeta$-parity matching identified as load-bearing structural condition; inherited at bridge step as chirality content preservation condition of Theorem 3.1.
+- (5) Step 2 continuum-limit projection architecture ESTABLISHED; topological-vs-dynamical distinction identified as key physical insight.
+- (6) FI dependency mapping COMPLETE for bridge step.
+- (7) NO theorems registered new (Theorem 3.1 at theorem-statement level pending Step 4 closure).
+- (8) NO predictions registered new (substrate-level $|M| = \chi/6$ inherited from THEO-SD-CHIR-1 + THEO-SD-CHIR-2).
+- (9) NO falsifiers registered new.
+
+### Methodological observation — structural efficiency validated
+
+At end of Session 1, bridge step is on track to close sub-claim (a) for both sector legs jointly in 3 sessions total (Patches 0485--0487). Compare to two separate single-sector bridge closures under Venue (b) fallback: each ~2--3 sessions per sector; total ~4--6 sessions for two separate bridges. **Joint paper format saves estimated ~1--3 sessions on bridge step alone**, savings concentrated in:
+
+- Sector-agnostic abstraction (Step 1; done once instead of twice across both sectors)
+- Topological-projection argument (Step 4; universal argument applies to both sectors)
+
+This validates the v0.1 outline §10 viability decision gate's PROCEED verdict at the first session of substantive derivation. Joint paper format is delivering the expected structural efficiency.
+
+### Forward queue post-Patch 0485
+
+1. **Priority 1 (Patch 0486 candidate)**: §A bridge work Session 2 — Step 2 continuum-limit projection closure + Step 3 continuum operator identification at sector-agnostic level. 1 session estimated.
+2. **Priority 2 (Patch 0487 candidate)**: §A bridge work Session 3 — Step 4 magnitude inheritance verification via topological argument + sub-claim (a) closure announcement + Theorem 3.1 promoted to theorem-level rigor. 1 session estimated. **SUB-CLAIM (a) CLOSURE PATCH** — completes load-bearing technical step.
+3. **Priority 3 (Patches 0488+)**: §B Sector A V--A coupling derivation; v0.3 substantive drafting; 3--5 sessions.
+
+### Anti-priorities preserved at Patch 0485
+
+- Do NOT modify Capotauro v2.0 or SF-2 v1.0 or SM-2 v1.0 .tex source during bridge work.
+- Do NOT commit to sector-specific kinematic projection content during bridge step (sector-specific work enters at §B and §C of joint paper at Patches 0488+/0492+).
+- Do NOT exceed joint-paper scope (other OPEN-FP-SF-2-* entries + SM-series open problems NOT in scope).
+- Do NOT promote sub-claim (a) to theorem-level rigor at Session 1 (promotion at Session 3 upon Step 4 closure).
+- Do NOT mix Tier-4 reasoning capture with paper main-text drafting (sketch is Tier-4; main-text drafting opens at v0.3 Patches 0488+).
+- Do NOT trigger Venue (b) fallback absent substantively unmistakable structural obstructions.
