@@ -12,6 +12,73 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
+## Version 2.0 v1.0 SHIPPED — 19 May 2026 (Session 135, Patch 0479)
+
+**Capotauro v2.0 SHIPPED as v1.0 release after three-reviewer convergence on SHIP-acceptable verdict.** Title block bumped from `Version 2.0 v0.9.1 (DRAFT) --- 19 May 2026` to `Version 2.0 v1.0 SHIPPED --- 19 May 2026`. Author footnote extended with the v2.0 v1.0 SHIP context (reviewer-round trajectory; SHIP-closeout-protocol patch number).
+
+**Three-reviewer convergence at v0.9 / v0.9.1**:
+
+- **Grok v0.9 sign-off** (Patch 0476): explicit "Verdict: (A) v0.9 SHIP-acceptable as v2.0 v1.0 — proceed to SHIP closeout protocol." Six decisive-improvement content-acknowledgments; three optional polish items (non-blocking).
+- **CoPilot v0.9 sign-off** (Patch 0475, referee-grade critique format): explicit "SHIP-acceptable as v2.0 v1.0... v0.9 is ready to ship as the v2.0 v1.0 release." Required changes: NONE. Three optional polish items (cosmetic, non-blocking).
+- **ChatGPT v0.9 round-2 revised** (Patch 0474, after diagnostic-framing follow-up + Figure 1 .png attachment): substantively positive with Layer 1 dynamical-substrate-law work framed as v3.0+ programme trajectory rather than v2.0 SHIP-blocking. Six-category revised assessment with risk-of-self-sealed-architecture moderate-high → moderate; epistemic honesty strong → very strong; physics-vs-architecture balance uncertain → substantially improved; dynamical acknowledgement underdeveloped → explicitly scaffolded; falsifier maturity strong → unusually strong; ontology control improved → highly disciplined. ChatGPT's reframing: "The manuscript is no longer best interpreted as 'a speculative substrate theory trying to become physics.' It is increasingly better interpreted as 'a constrained closure-and-inheritance research programme whose substrate dynamical completion remains openly unresolved.'"
+
+**SHIP closeout protocol patches**:
+
+- Patch 0477 (Step 1/6): v0.9 → v0.9.1 cosmetic polish — five items across CoPilot (3) + Grok (2) sign-off polish recommendations. Figure 1 caption enhanced (Layer-1 OPEN clarification + TikZ-source confirmation note); §13.6 paragraph 2 long-sentence break + paragraph 4 forward-reference to Figure 1 added; Plain Language Summary phrase tightened. Title bump v0.9 → v0.9.1.
+- Patch 0478 (Step 2/6): C14 methods_catalogue audit per Patch 0463 codification — new §15 Methods Catalogue Cross-Reference section + `abshier_methods_catalogue` bibitem added. 19 entries (7 Layer 1 + 8 Layer 2 + 4 Layer 3) cross-referenced at §-location granularity.
+- Patch 0479 (this patch, Steps 3+4/6): title bump v0.9.1 (DRAFT) → v1.0 SHIPPED + author footnote v2.0 SHIP context + this CHANGELOG entry.
+- Patch 0480 (Step 5/6, pending): theorem-registry v1.0 SHIPPED updates for THEO-CAP-1, THEO-SD-CHIR-1, THEO-SD-CHIR-2.
+- Patch 0481 (Step 6/6, pending): post-SHIP handover document at canonical `handovers/` location.
+
+**v2.0 v1.0 SHIP-state content summary**:
+
+- **Three-way cross-sector substrate-chirality unification**: $|M^{K_3}| = |M^W| = |M^{qDP}| = \chi/6 = \phi^{-3}/6 \approx 0.0394$ at zero free parameters across three structurally distinct sector mechanisms.
+- **Three programme-level theorems**: THEO-CAP-1 (K3-doublet, registered Patch 0397), THEO-SD-CHIR-1 (K3-doublet ↔ W-bracelet, registered Patch 0434), THEO-SD-CHIR-2 (qDP/eDP closure, registered Patch 0440). All three at full Layer 3 rigor; THEO-CAP-1 verified to $10^{-17}$ machine precision at every K3-doublet derivation chain checkpoint.
+- **Two new Reading C foundational inputs at v2.0**: FI-C-RC-1 (primitive 4D direction $\hat{n}$, substrate-foundational); FI-C-RC-2 (vertex-aligned reading $\hat{n} = v_{\text{host}}$, Layer 2 via three converging arguments). Total FI inventory: 12.
+- **One primary empirical prediction**: $\Delta p_{LR} = \chi/6 \approx 0.0394$, validated within 2% of leptogenesis-back-derived empirical anchor.
+- **Two cross-sector substrate-handle predictions**: SF-2 v2.0+ V--A coupling at massless helicity limit; SM-2 v2.0+ chiral-polarity-bias EFT continuum-limit.
+- **11-route falsifier set** (expanded from v1.0's 5 routes).
+- **OPEN-SD-CHIR-PRIMITIVE umbrella**: three manifestations closed at v2.0 v1.0 (mass-mixing / electroweak V--A / EM handedness); two registered for future work (thermodynamic causal arrow / cosmological-vacuum asymmetry).
+- **Layer 1 dynamical engine**: explicitly registered as open work in §13.6.
+- **Master architecture Figure 1** at §3.5 (Patch 0471).
+- **OPEN-SM-4 status at v2.0 v1.0 SHIP**: sub-claim (c) closed via three-sector unification at full Layer 3 rigor; sub-claims (a) Capotauro nucleation event and (b) chirality magnitude first-principles derivation remain open; Q7 cosmological-timing remains open; Q1′+Q1′.A Layer 3 promotion of $\hat{n}$ remains the deepest v3.0+ open work.
+
+**v3.0+ post-SHIP trajectory** (per ChatGPT round-2 revised "next gate" framing): (1) Q7.1 substrate-level sign-selection mechanism; (2) manifestation (iv) thermodynamic causal arrow umbrella closure; (3) SF-2 v2.0+ Layer 4 EFT closure; (4) Q1′+Q1′.A Layer 3 promotion of $\hat{n}$ — the dynamical-substrate-law gate ChatGPT identifies as "the defining next gate for Capotauro."
+
+**Total v2.0 development span**: Sessions 87 (v1.0 trajectory start) → Session 135 (v2.0 SHIP, this patch). 49 sessions; six Q-questions resolved at Layer 2 or Layer 3 across the Reading C closure trajectory; three programme-level theorem registrations.
+
+**Authored by Opus, Session 135, Patch 0479, 19 May 2026.**
+
+---
+
+## Version 2.0 v0.9.1 (DRAFT) — 19 May 2026 (Session 135, Patch 0477)
+
+**v0.9 → v0.9.1 cosmetic polish increment closing the v0.9-cycle Grok + CoPilot sign-off-round polish recommendations before SHIP closeout.** Five non-blocking polish items landed:
+
+(1+2) Figure 1 caption enhancement (Grok polish-item-1 + CoPilot polish-item-2 converging theme): added "compiled from TikZ source in the paper" clause for archival clarity (Grok) + "it is open work, not a derived component of the v2.0 closure" clarifying clause for the dashed-red Layer-1 box (CoPilot).
+
+(3) §13.6 paragraph 2 long-sentence break (CoPilot polish-item-1): the four-clause semicolon-separated "What this paper does not derive is the dynamical layer underneath" sentence broken into introductory sentence + four short itemized sentences for readability.
+
+(4) §13.6 paragraph 4 forward-reference to Figure 1 (Grok polish-item-2): added "(visualized in Figure 1's dashed downward investigation-trajectory arrow from the routes-of-validation callout to the Layer 1 OPEN box)" clause.
+
+(5) Plain Language Summary phrase tightened (CoPilot polish-item-3): "the number χ is then transmitted from the substrate level to three different observable contexts through a common four-step machinery" → "From the substrate level, χ propagates to three observable contexts through a shared four-step machinery."
+
+Title block bumped from `Version 2.0 v0.9 (DRAFT) --- 19 May 2026` to `Version 2.0 v0.9.1 (DRAFT) --- 19 May 2026`. The v0.9.1 state was the immediate-pre-SHIP intermediate before the C14 methods_catalogue audit (Patch 0478) and v1.0 SHIPPED transition (Patch 0479).
+
+---
+
+## Version 2.0 v0.9 (DRAFT) — 19 May 2026 (Sessions 134--135, Patches 0470--0472)
+
+**v0.8.1 → v0.9 polish-patch increment closing the v0.8.1-cycle reviewer-round polish items (ChatGPT round-1 priorities 1+2+4 + remaining-concerns 1+4 / Grok round-1 polish items 1+3+4 / CoPilot round-1 §3.2 a/b/c + §5.1 + §5.2 + §5.3 polish items).** Three substantive content patches:
+
+**Patch 0470**: new §13.6 "On the dynamical engine beneath the structural claim" six-paragraph subsection registering the Layer 1 dynamical-engine question as explicitly open with the programme's epistemic methodology grounded in the corpus track record (SS-7 12 zero-parameter predictions / SS-2 proton radius 0.851 fm / SS-5 deuteron binding −0.09% / SS-4 string tension 926.5 MeV/fm / SM-8 M₀ = m_e·z/φ / SF-4 v1.0 7/8 zero-parameter predictions / Capotauro v2.0 three-way unification). Plus §11.6 manifestation-(iv)/(v) justifying clause + four new bibitems (abshier_sm8, abshier_ss2, abshier_ss4, abshier_ss5).
+
+**Patch 0471**: new Figure 1 master architecture TikZ at §3.5 — substrate-primitive → derivation → unification → observable handles → routes of experimental validation → Layer 1 OPEN with investigation-trajectory arrow → manifestation (iv)/(v) → 11-route falsifier ledger. The K3-doublet derivation flow figure that was previously Figure 1 became Figure 2 (auto-renumbered). Plus pre-existing `\Hthree` → `H_3` clean-up.
+
+**Patch 0472**: v0.9 polish bundle (8 items): `\PsiminusOne` / `\PsiminusTwo` macros added to preamble (pre-existing undefined-macro fix); OSF DOI 10.17605/OSF.IO/JXE8D added to 2025 Grok-collaboration bibitem; executive intuition paragraph added between Keywords and Plain Language Summary; ζ-acting-space column added to manifestation comparison table; 11-row falsifier-to-theorem mapping table added; editorial tightening (three long-paragraph breaks + phrase variation across two repeated phrases); §12 bookkeeping reduction (7 session-estimate clauses stripped); title block bumped v0.8.1 → v0.9 (DRAFT).
+
+---
+
 ## Version 2.0 v0.8.1 (DRAFT) — 18 May 2026 (Session 134, Patch 0456)
 
 **Self-review polish pass: four consistency fixes flagged by paper-wide audit pre-reviewer-rounds.** Title block bumped from `Version 2.0 v0.8 (DRAFT)` to `Version 2.0 v0.8.1 (DRAFT) --- 18 May 2026`. The v0.8.1 deliverable is a polish sub-version capturing four small but reviewer-facing consistency fixes identified by a comprehensive paper-wide audit conducted between the v0.8 substantive content drafting completion (Patch 0455) and the v0.9 external reviewer rounds. No substantive content changes; the v0.9 version increment is reserved for reviewer-round work per programme convention.
