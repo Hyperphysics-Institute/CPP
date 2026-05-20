@@ -24,6 +24,7 @@
 13. The Git-Bash-Patch Workflow
 14. Organizational Frontier Registry
 15. Session-close Handover Protocol
+16. SHIP Trigger Protocol
 
 ---
 
@@ -1876,6 +1877,94 @@ The following are signs that the protocol is being mistakenly skipped or that it
 
 ---
 
+## 16. SHIP Trigger Protocol (adopted 20 May 2026)
+
+### Purpose
+
+This section codifies the **trigger detection and execution-timing discipline** for paper-completion (Phase 7) work. The `templates/paper_completion_checklist.md` file is the comprehensive atomic-task checklist (32 items across Phases 7A / 7B / 7C); this OS section is the trigger-detection and mandatory-execution-timing layer on top of it.
+
+The discipline addresses the failure mode observed at Session 135 Capotauro v2.0 v1.0 SHIP, where Phase 7 work fired reactively from user audit ("are the registries updated?") rather than automatically on SHIP detection, producing 12 sequential paper-completion-sequence patches with audit-driven gap-finding. The Phase 7A/7B/7C partition (Patch 0422D) addressed *which items drop*; §16 addresses *when execution fires*.
+
+### SHIP detection rule (grep-able)
+
+A patch is a **SHIP patch** iff it modifies a paper's `.tex` source title-block version line to land at any of the following terminal states:
+
+- `Version N.0 v1.0 SHIPPED`
+- `Version N.0 (SHIPPED)`
+- Equivalent author-customised forms matching the regex `Version [0-9]+\.[0-9]+( v[0-9]+\.[0-9]+)? \(?SHIPPED\)?` in the title block
+
+Version bumps that land at `(DRAFT)`, `(REVIEW)`, `(SHIP-CANDIDATE)`, `(POLISH)`, `(RC)`, or any non-SHIPPED state are NOT SHIP patches; they are reviewer-cycle or polish patches and §16 does not fire.
+
+A SHIP patch may be a version-bump-only patch (the canonical form used at Capotauro v1.0 Patch 0415 and at Capotauro v2.0 v1.0 Patch 0479) or may bundle with substantive last-mile content edits.
+
+**Operational rule:** before committing any patch that touches a paper's title-block version line, the assistant must grep the diff for the SHIP regex. If it matches, the patch IS a SHIP patch and the mandatory-immediate-execution rule below fires for the same session.
+
+### Mandatory immediate-execution rule
+
+Once a SHIP patch is detected (whether being authored by the assistant or applied to the local repo by the user), the **next patch in the same session must begin Phase 7 execution per `templates/paper_completion_checklist.md`**. The discipline is:
+
+1. **Phase 7B (program-level) is the highest-priority next work after SHIP.** The 12-item Phase 7B inventory (theorem-registry + research_frontier + paper_catalog + INDEX + master_glossary + predictions + axiom-registry + README + programme_orientation + anthology chapter + problem_histories + methods_catalogue) MUST land in the same session as the SHIP patch unless context-pressure forces deferral.
+
+2. **Phase 7A (paper-level) 10-file documentation suite work has flexible timing within the SHIP session.** The 10-file documentation suite (mechanism + glossary + phenomena + philosophy + development + reviews + keywords + changelog + reasoning + transcript per the Four-Tier Documentation Suite Reconciliation in `paper_completion_checklist.md`), verification notebooks, and curated transcripts may fire in the SHIP session or be batched immediately after.
+
+3. **Phase 7C (execution) closes the SHIP session.** Step H of §15 (session-close handover) verifies Phase 7B completion before the session can close cleanly.
+
+4. **Deferred items go onto an explicit deferral list** in the §15 Step H handover audit table, named individually with the SHIP patch number and the rationale for deferral. The deferral list is inherited into the next-session bootup as priority work.
+
+### Session-close audit question (extends §15 Step H)
+
+At every session close that includes a SHIP patch, the §15 Step H handover audit table MUST include the following explicit question, answered with full per-phase status:
+
+> **"Is the post-SHIP protocol complete for the most recent SHIP in this session? Walk Phases 7A, 7B, 7C item-by-item per `templates/paper_completion_checklist.md`. List any deferred items explicitly with the patch number that introduced the SHIP and the rationale for deferral."**
+
+The session is NOT considered cleanly closed until this question is answered. The auditable form is what allows verification from outside the executing context (i.e., from a fresh session starting from the handover, or from a programme audit).
+
+### Anti-collision strategy with concurrent next-window work
+
+Phase 7B program-level work touches programme-wide registries that other Opus windows may concurrently modify. The collision risk concentrates on `"Last updated:"` header tops. Discipline:
+
+1. **At SHIP time, identify which programme-level files have active concurrent next-window activity** (from the cross-window handover seed or session-open audit).
+
+2. **For files with active concurrent work:** anchor on stable inline content (a specific paper row, a specific entry, a specific ledger row), not on `"Last updated:"` header tops.
+
+3. **For files without active concurrent work:** prepend at the `"Last updated:"` header top as standard.
+
+4. **Surgical inline updates beat whole-file rewrites.** Update the inline row, entry, or ledger item that the SHIP affects; do not rewrite tables or restructure files.
+
+5. **Bundle related programme-level updates into single patches** where the anchor pattern permits; this reduces patch count without compromising anti-collision safety.
+
+6. **If a content collision occurs at apply time:** drop the colliding patch and re-author the surgical update against the post-collision state; preserve durable content at alternative anchors (theorem-registry, changelog, handovers) so no information is lost.
+
+7. **Patch number collision recovery via alpha-suffix continuation.** When the next forward-integer patch number is claimed by a concurrent window, continue the current logical campaign's alpha-suffix sequence (e.g., Patches 0481M and 0481N codifying this very §16 — alpha-suffix continuation of Session 135's 0481a–L sequence because Patches 0483/0484 were claimed by the next Opus window's SF-2 v3.0+ Layer 4 closure work). The alpha-suffix preserves the "all this work belongs to the same logical campaign" provenance signal that pure integer renumbering would obscure.
+
+Full anchor-safety hierarchy and worked example: see `templates/paper_completion_checklist.md` "Anti-Collision Strategy for Concurrent Next-Window Work" section.
+
+### Relationship to other OS sections
+
+- **§4 Phase 7** introduces the 9-phase paper-production pipeline; Phase 7 (Documentation Suite) is one of the phases. §4 Phase 7 already points to `paper_completion_checklist.md`. §16 adds the SHIP-trigger-detection and mandatory-execution-timing layer on top of §4's existence statement.
+- **§4 Documentation Discipline — Two Triggers** (26 April 2026) establishes Trigger 1 (per-session continuity) and Trigger 2 (paper-completion). §16's SHIP trigger detection IS the operational form of Trigger 2: it specifies how Trigger 2 is detected (grep-able rule) and when it fires (mandatory immediate execution).
+- **§15 Session-close Handover Protocol** (24 April 2026, restructured 5 May Session 13) governs the 8-step session-close sequence. §16 extends Step H with the SHIP-protocol-completeness audit question; otherwise §15 is unchanged.
+- **`templates/paper_completion_checklist.md`** is the comprehensive atomic-task list. §16 provides the trigger detection + execution-timing layer; the checklist provides the per-item execution detail.
+
+### Failure mode this protocol prevents
+
+The Session 135 reactive pattern (Phase 7B fires only when user asks "are the registries updated?") becomes the standard pattern if not actively prevented. Reactive pattern symptoms:
+
+- Phase 7B program-level files drift behind paper SHIPs across multiple paper sessions (the 17 May Patch 0422 audit caught 4 papers' worth of accumulated 7B drift).
+- Paper-completion-sequence patches multiply because each gap is discovered separately rather than executed in one planned pass.
+- Cross-window collisions become more likely because reactive paper-completion patches fire later in the session when next-window work has already begun.
+- Handovers miss explicit Phase 7B status enumeration because the executing context doesn't know what's still pending.
+
+§16's grep-able SHIP trigger + mandatory immediate-execution rule + auditable session-close question converts reactive paper-completion-sequence work into proactive single-pass execution. The Session 135 worked example documented in `paper_completion_checklist.md` is the canonical reference for how Phase 7 work *should* look when executed under §16 discipline (~20–24 patches under §16 vs the 28 patches Session 135 produced under reactive discipline).
+
+### Maintenance cadence
+
+- §16 is §14-registered content per the meta-discipline rule in §14; refinement may be registered as an OPEN-ORG item rather than edited inline.
+- The SHIP detection regex may be extended if author-customised SHIPPED markers fall outside the current pattern; extensions preserve backwards compatibility with the existing pattern.
+- The mandatory immediate-execution rule may be relaxed for specific deferral cases (e.g., context-pressure exhaustion mid-SHIP-session); the relaxation always requires explicit deferral list entry per the auditable session-close question.
+
+---
+
 *This document supersedes `bootup.md` as the complete reference.*
 *`bootup.md` remains the quick-start guide for sessions.*
 *Created 8 April 2026 by Claude Opus at Thomas's request.*
@@ -1883,3 +1972,4 @@ The following are signs that the protocol is being mistakenly skipped or that it
 *Reconciled 11 April 2026 — merged operating_system.md and operating_system2.md; restored Phase 7b (Verification Notebooks) and transcript include/exclude guidance from v1.*
 *Updated 24 April 2026 — added §14 Organizational Frontier Registry (adopted per PD-003).*
 *Updated 24 April 2026 — added §15 Session-close Handover Protocol promoted from §10 buried subsection per OPEN-ORG-008 resolution; canonical command vocabulary "execute handover protocol" codified; dual-trigger mechanism (user-initiated + Claude-initiated workflow-shape prompt) documented; four-item checklist extended to name handover-[S]-[N].md alongside development-[S]-[N].md.*
+*Updated 20 May 2026 (Patch 0481N) — added §16 SHIP Trigger Protocol codifying grep-able SHIP detection rule + mandatory immediate-execution rule + auditable session-close question + anti-collision strategy with concurrent next-window work (including patch-number collision recovery via alpha-suffix continuation, now codified as standard discipline). Adopted in response to Session 135 Capotauro v2.0 v1.0 SHIP reactive paper-completion-sequence pattern (12 sequential patches driven by user audit "are the registries updated?" rather than single-pass protocol execution). Companion update to `templates/paper_completion_checklist.md` Patch 0481M extends the checklist with SHIP Trigger Detection + Four-Tier Documentation Suite Reconciliation + Anti-Collision Strategy + Session 135 Worked Example sections; §16 is the OS-level trigger-detection layer above the checklist's per-item execution detail. Patch numbering rationale: 0481M and 0481N are alpha-suffix continuations of Session 135's 0481a–L sequence rather than 0483/0484 because the next forward-integer patch numbers were claimed by the next Opus window's SF-2 v3.0+ Layer 4 closure trajectory; the alpha-suffix recovery is itself codified in §16's anti-collision strategy as standard discipline (point 7) and is a worked example of the discipline applied to its own patch series.*
