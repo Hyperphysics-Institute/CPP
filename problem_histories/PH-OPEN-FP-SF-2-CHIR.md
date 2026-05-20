@@ -2179,3 +2179,130 @@ Catalogue stable at 4 entries through full substantive integration cycle. Cross-
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT modify v0.1 outline file at this patch
+
+---
+
+## Joint Paper v0.5 Polish Session 6: §7 Predictions and Falsifiers + §8 Open Theorem-Level Work + §9 Discussion Substantively Drafted; Methods Catalogue Cross-Paper-Usage Batch Update (Session 137 Patch 0502)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0501 §6 cross-sector unification integration)
+**Patch:** 0502
+**Status:** Joint paper substantively COMPLETE across all paper sections. §7+§8+§9 substantively drafted from v0.1 outline + theorem-registry + sketch synthesis content. Methods catalogue Cross-paper-usage fields batch-updated across all four METH-CHIR-CONT-N entries.
+
+### What this update establishes
+
+Patch 0502 drafts substantive content for §7 Predictions and Falsifiers + §8 Open Theorem-Level Work + §9 Discussion — the joint paper's three closing sections. This completes the joint paper's substantive content across all paper sections at v0.5 DRAFT status. Concurrently, the methods catalogue's Cross-paper-usage fields are batch-updated to consolidate four full integration cycles (§3 + §4 + §5 + §6) into comprehensive inheritance tracking per catalogue entry.
+
+### Patch 0502 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §7+§8+§9 substantive content drafted (+~116 lines; .tex now ~1129 lines total). NO new bibliography entries (all references inherited from prior patches).
+- **UPDATE** `methods_catalogue.md` — Cross-paper-usage fields batch-updated across all four METH-CHIR-CONT-1/2/3/4 entries with comprehensive §3+§4+§5+§6 inheritance tracking + anticipated future use for manifestations (iv)+(v) Layer 4 closures.
+- **UPDATE** `research_frontier.md` — Patch 0502 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0502 entry appended (this section).
+
+### §7 Predictions and Falsifiers substantively drafted
+
+**§7.1 Zero-parameter predictions table** (6 predictions catalogued):
+
+| Prediction | Sector | Value | Empirical Match |
+|---|---|---|---|
+| Substrate-level chirality magnitude | Both | $\chi/6 \approx 0.0394$ | Capotauro v2.0 theorem-level |
+| V–A coupling structure | A | 75% LH finite mass / 100% LH massless | This paper §4 + multi-sector validation |
+| Michel parameter | A | $\rho = 3/4 = 0.7500$ tree level | PDG 2024 $0.7497 \pm 0.0010$ within $0.3\sigma$ |
+| Linear-ZBW-on-$-$qCP stabilization | B | $\|\DeltaFqDP/\FeDPref\| = \chi/6$ → $\Delta p_{LR} \approx \chi/6$ | Exclusion bound; absence of $+$down-type quarks |
+| Leptogenesis CP-asymmetry | Joint | $\Delta p_{LR}^{\text{predicted}} = \chi/6$ | BAU back-derivation $\sim 0.04$ within 2% |
+| Cross-sector unification identity | Both | $\|M^W\| = \|M^{qDP}\| = \chi/6$ | Theorem-level + structural prediction |
+
+**§7.2 Six falsifiers** at $>3\sigma$ significance:
+1. Layer 4 EFT projection failure (Capotauro Falsifier 6 three thresholds A+B+C)
+2. Michel parameter deviation beyond SM one-loop
+3. Right-handed neutrino observation coupling to $W^\pm$
+4. Positive down-type quark observation at SM-accessible scales
+5. Cosmological constraint from BBN/CMB
+6. Cross-sector unification breakdown via differential scaling
+
+### §8 Open Theorem-Level Work substantively drafted
+
+- **§8.1**: OPEN-FP-SF-2-CHIR full closure at v1.0 SHIP + deeper Layer 1 substrate-dynamics derivation of $\hat{n}$ as future-window via Q1$'$+Q1$'$.A; SM-2 v2.0+ chiral-polarity-bias full closure at v1.0 SHIP + deeper Layer 1 derivation from AXIM-3 + AXIM-7 as future-window; FI-CHIR-CONT-2 first-principles closure of $|\chi| = \varphi^{-3}$ as future-window
+- **§8.2**: OPEN-SD-CHIR-PRIMITIVE umbrella future-window — manifestation (iv) thermodynamic causal arrow as THEO-SD-CHIR-3 + THEO-CHIR-CONT-4 candidate; manifestation (v) cosmological-vacuum asymmetry as THEO-SD-CHIR-4 + THEO-CHIR-CONT-5 candidate
+- **§8.3**: Picture A alternative continuum-EFT framework (OPEN-FP-SF-4-1 candidate); complementary methodological route
+- **§8.4**: Cross-validation candidates (Route (ii) substrate-mechanism via Patch 0367 $W^0$ neutrino scattering centroid-decoupling sketch)
+- **§8.5**: Future-collider precision targets (Michel + massless-helicity + leptogenesis CP-asymmetry; $10^{-3}$ to $10^{-4}$ regime by 2030–2035 to 2040+)
+
+### §9 Discussion substantively drafted
+
+- **§9.1 Programme-level methodological pattern**: paired-scoping-sketches-enable-venue-resolution pattern + joint-Layer-4-closure-saves-load-bearing-bridge-work pattern as durable CPP methodology templates
+- **§9.2 Cross-sector implications**: completes OPEN-SD-CHIR-PRIMITIVE umbrella electroweak + EM-handedness legs at Layer 4; templates manifestations (iv)+(v); positions CPP for broader Layer 4 maturity programme per PD-004
+- **§9.3 Outlook 2026–2032+**: experimental constraints (precision improvements over 5–10 years to $10^{-3}$–$10^{-4}$ regime) + theoretical extensions ((i) manifestations (iv)+(v) closures + (ii) Picture A alternative + (iii) Layer 1 dynamical-engine work) + structural identity claim as durable CPP commitment
+
+### Methods catalogue Cross-paper-usage batch update
+
+All four METH-CHIR-CONT-1/2/3/4 entries' Cross-paper-usage fields updated with comprehensive inheritance tracking:
+
+- **METH-CHIR-CONT-1** (Sector-Agnostic Substrate Wigner-Eckart Datum): tracked across §3 (introduction + validation), §4 (sector A instantiation), §5 (sector B instantiation), §6 (synthesis)
+- **METH-CHIR-CONT-2** (Continuum-Limit Projection Map $\Phi$): tracked across §3 (definition + sub-statements), §4 (sector A Identification 1), §5 (sector B Identification 1), §6 (synthesis)
+- **METH-CHIR-CONT-3** (Topological Substrate Quantity Concept): tracked across §3 (definition + claims), §4 (sector A magnitude inheritance), §5 (sector B topological character + magnitude), §6 (synthesis); anticipated future use for manifestations (iv)+(v)
+- **METH-CHIR-CONT-4** (Topological-Projection Argument): tracked across §3 (theorem + proof), §4 (sector A magnitude + Threshold C bypass), §5 (sector B magnitude), §6 (Layer 4 elevation framework + four-level identity); anticipated future use for any Layer 4 closure requiring substrate-handle magnitude propagation argument
+
+### Programme state changes at Patch 0502
+
+- (1) §7 Predictions and Falsifiers substantively drafted (~25 lines)
+- (2) §8 Open Theorem-Level Work substantively drafted (~50 lines)
+- (3) §9 Discussion substantively drafted (~40 lines)
+- (4) Methods catalogue Cross-paper-usage batch update across all four METH-CHIR-CONT-N entries
+- (5) NO new methods catalogued (catalog + open-work + discussion sections without novel methodological constructs)
+- (6) NO theorems registered new (paper substantively complete across all sections)
+- (7) NO predictions registered new (predictions cataloged but not new programme-level entries beyond PRED-O-25)
+- (8) NO falsifiers registered new (six falsifiers articulated; inherit Capotauro Falsifier 6 structure)
+- (9) NO conjecture registrations
+- (10) **Joint paper substantively complete across all paper sections**
+
+### Joint paper status post-Patch 0502
+
+| Paper section | Status | Substantive content |
+|---|---|---|
+| Abstract + Plain-language summary | ✓ Patch 0497 | Drafted |
+| §1 Introduction (4 sub-sections) | ✓ Patch 0497 | Drafted |
+| §2 Inheritance from Capotauro v2.0 (6 sub-sections) | ✓ Patch 0497 | Drafted |
+| §3 Bridge | ✓ Patch 0498 | Theorem 3.4 = THEO-CHIR-CONT-1 |
+| §4 Sector A | ✓ Patch 0499 | Theorem 4.4 = THEO-CHIR-CONT-2 |
+| §5 Sector B | ✓ Patch 0500 | Theorem 5.6 = THEO-CHIR-CONT-3 |
+| §6 Cross-Sector Unification | ✓ Patch 0501 | Structural identity claim |
+| §7 Predictions and Falsifiers | ✓ This patch | 6 predictions + 6 falsifiers |
+| §8 Open Theorem-Level Work | ✓ This patch | 5 sub-sections |
+| §9 Discussion | ✓ This patch | 3 sub-sections |
+| §10 References | ✓ ~27 entries | Through Patches 0497–0501 |
+
+**.tex line count**: 1129 lines at v0.5 DRAFT status.
+
+### Methodological observations
+
+**§7+§8+§9 drafting confirms joint paper's three-section closing structure operating as designed**: §7 catalogs theorem-level consequences (predictions + falsifiers); §8 catalogs honest scope-limitation deferred items (open theorem-level work); §9 contextualizes within broader CPP programme architecture (methodology + cross-sector implications + outlook).
+
+**Methods catalogue Cross-paper-usage batch update confirms maintenance protocol practical**: consolidates four full integration cycles into single inheritance tracking record per catalogue entry; post-hoc bookkeeping not blocking substantive work.
+
+### v0.5 SHIP candidacy verdict
+
+The joint paper is **substantively COMPLETE across all paper sections** at v0.5 DRAFT status. The remaining work for v0.5 SHIP candidacy:
+
+- Patch 0503: bibliography finalization + LaTeX compilation check + v0.5 SHIP title-block version bump
+- Patches 0504+: v0.6–v0.9 reviewer cycle
+- Patch 0509+ candidate: v1.0 SHIP
+
+**Important clarification**: v0.5 SHIP designates the substantively complete first-draft state. v1.0 SHIP follows reviewer cycle (v0.6–v0.9). Patch 0503 bumps to v0.5 SHIP, not v1.0 SHIP.
+
+### Forward queue post-Patch 0502
+
+- **Priority 1 (Patch 0503)**: bibliography finalization + LaTeX compilation check + v0.5 SHIP title-block version bump; 0–1 session
+- **Priority 2 (Patches 0504+)**: v0.6–v0.9 reviewer cycle (ChatGPT + CoPilot + Grok); 3–5 sessions
+- **Priority 3 (Patch 0509+)**: v1.0 SHIP; 0–1 session
+
+### Anti-priorities preserved at Patch 0502
+
+- Do NOT register new theorems or predictions during v0.5 paper polish
+- Do NOT modify §3–§6 substantive content during §7–§9 drafting
+- Do NOT add methods catalogue entries (§7–§9 without novel methodological constructs)
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT modify v0.1 outline file at this patch
+- Do NOT promote paper to v1.0 SHIP at Patch 0503 (v0.5 SHIP is substantively complete first draft; v1.0 SHIP follows reviewer cycle)
