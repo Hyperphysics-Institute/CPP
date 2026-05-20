@@ -1843,3 +1843,108 @@ Patch 0498 creates `methods_catalogue.md` as new programme-level infrastructure 
 - Do NOT add methods catalogue entries speculatively (each entry backed by substantive derivation work)
 - Do NOT retroactively catalogue methods from earlier CPP work at this patch
 - Do NOT modify v0.1 outline file at this patch
+
+---
+
+## Joint Paper v0.5 Polish Session 3: §4 Sector A V–A Coupling Derivation Substantive Content Integrated (Session 137 Patch 0499)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0498 §3 Bridge integration + methods catalogue creation)
+**Patch:** 0499
+**Status:** §4 Sector A substantive content integrated into chirality_continuum.tex from sector_a_va_coupling.md working sketch (~885 lines source). No new methods catalogued (sector-specific application of bridge theorem inherits METH-CHIR-CONT-1/2/3/4 from §3).
+
+### What this update establishes
+
+Patch 0499 integrates the §4 Sector A V–A coupling derivation substantive content from the comprehensive working sketch into the joint paper LaTeX source. §4 covers full Theorem 4.4 = THEO-CHIR-CONT-2 (Sector A Yang-Mills EFT V–A Coupling Derivation; theorem #66) with four sub-claim consequences (b)+(c)+(d)+(e) at theorem-statement-with-proof-sketch level.
+
+### Patch 0499 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §4 Sector A substantive content integrated (+~153 lines; .tex now ~785 lines total). Bibliography expanded with 2 new references (ChiContSketchA + PDG2024).
+- **UPDATE** `research_frontier.md` — Patch 0499 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0499 entry appended (this section).
+
+### §4 Sub-sections drafted
+
+| §4.N | Content | Sub-claim |
+|---|---|---|
+| 4.1 | Sector instantiation (W-bracelet substrate object + FI-CHIR-CONT-10/11/12 sector-specific FIs) | Setup |
+| 4.2 | Operator identification (three structural identifications → V–A current; coupling pinned to $g^V_{LL}=1$) | (b) |
+| 4.3 | Michel parameter $\rho = 3/4$ at finite mass (Theorem 4.2 with PDG 2024 validation at $0.3\sigma$) | (c) |
+| 4.4 | 100% LH at massless helicity limit (Theorem 4.3 with multi-sector empirical validation) | (d) |
+| 4.5 | Capotauro Falsifier 6 ACTIVATION at three quantitative thresholds | (e) |
+| 4.6 | Theorem 4.4 statement = THEO-CHIR-CONT-2 (programme-level registration) | All |
+
+### Three sector-specific FIs introduced
+
+- **FI-CHIR-CONT-10**: W-bracelet sector specialization (substrate object 6-vertex Petrie hexagon at $v_{\text{host}}$, $\Gamma^W = D_6$, $\zeta^W = r^3$ icosahedral-center inversion, $\hat{C}^W \in B_2(D_6)$); inheritance: THEO-SD-CHIR-1
+- **FI-CHIR-CONT-11**: SF-2 Yang-Mills $SU(2)_L \times U(1)_Y$ EFT framework; inheritance: SF-2 v1.0 §sec:YM_EFT_thm + EW-5 THEO-EW-8
+- **FI-CHIR-CONT-12**: Continuum-EFT chirality-projection structure ($\gamma_5$, $P_L$, $P_R$); inheritance: standard SM formalism
+
+### Three structural identifications (sub-claim b)
+
+1. $\zeta^{\text{cont,W}} \leftrightarrow \gamma_5$ (chirality-flipping $\mathbb{Z}_2$ involution)
+2. Matter-doublet $\{|\Psi^W_+\rangle, |\Psi^W_-\rangle\} \leftrightarrow \{\psi_R, \psi_L\}$ (opposite-parity continuum chiral pair)
+3. $\OeffW \leftrightarrow \bar{\psi}_L\gamma^\mu\psi_L$ (V–A current; unique $\gamma_5$-ODD Lorentz-vector with non-vanishing $\psi_R\leftrightarrow\psi_L$ matrix element)
+
+Coupling structure pinned to $g^V_{LL} = 1$ with all other $g^\gamma_{\epsilon\mu} = 0$ at leading order.
+
+### Empirical validations
+
+- **Michel parameter**: PDG 2024 $\rho^{\text{obs}} = 0.7497 \pm 0.0010$ within $0.3\sigma$ of $\rho_{\text{V-A}}^{\text{tree}} = 3/4$
+- **Massless-helicity limit**: multi-sector validation across Goldhaber 1958 + Wu 1957 + modern neutrino constraints + LEP/SLC $\mathcal{P}_\tau = -0.1471 \pm 0.0045$ + LHC top-quark $|a_{\text{V+A}}|^2 \lesssim 10^{-2}$
+- **Leptogenesis CP-asymmetry (sharpest direct test)**: BAU back-derivation $\Delta p_{LR}^{\text{obs}} \sim 0.04$ within 2% of $\chi/6 \approx 0.0394$ at $\sigma_{\Delta p_{LR}} \sim 0.005$ from Davidson Nardi Nir 2008
+
+### Capotauro Falsifier 6 three thresholds quantified
+
+- **Threshold (A)** Michel: $|\rho^{\text{obs}} - 3/4| > 3 \times 10^{-3}$ at $3\sigma$ at PDG precision — currently no falsification at $0.3\sigma$
+- **Threshold (B)** massless-helicity: $|a_{\text{V+A}}|^2 > 3 \times 10^{-2}$ at LEP + LHC combined — currently no falsification at $\lesssim 10^{-2}$
+- **Threshold (C)** leptogenesis CP-asymmetry: $|\Delta p_{LR}^{\text{obs}} - \chi/6| > 0.015$ at $3\sigma$ at BAU back-derivation precision — currently no falsification at 2% match. SHARPEST DIRECT TEST bypassing kinematic intermediaries.
+
+### Methods catalogue inheritance pattern at Patch 0499
+
+§4 inherits METH-CHIR-CONT-1 through METH-CHIR-CONT-4 from §3 without introducing new methodological constructs. Methods catalogue references in §4 prose:
+
+- §4.2 Identification 1: METH-CHIR-CONT-2 (continuum-limit projection map) for projecting $\zeta^W \to \zeta^{\text{cont,W}} \leftrightarrow \gamma_5$
+- §4.2 Identification 3: METH-CHIR-CONT-3 (topological substrate quantity) for magnitude inheritance $\chi/6$
+- §4.5 Threshold (C): METH-CHIR-CONT-4 (topological-projection argument) for bypass-kinematic-intermediaries framing
+- §4.6 Theorem 4.4 statement: METH-CHIR-CONT-4 for magnitude inheritance via topological-projection
+
+Total .tex `\methref{...}` invocations grew from 7 (post-Patch 0498) to 14 at this patch.
+
+### Methodological observation — sector-specific applications inherit catalogued methods without adding new ones
+
+The methods catalogue's growth pattern is now empirically validated through §3 → §4 transition:
+- §3 bridge work: 4 new catalogue entries (METH-CHIR-CONT-1/2/3/4) where novel methodological content was concentrated
+- §4 sector-specific application: 0 new catalogue entries; all four methods inherited
+
+This confirms Thomas's observation from the Patch 0498 dialog: sector-specific applications of the bridge theorem inherit catalogued methods rather than introducing new ones. §5 + §6 are projected to follow the same pattern.
+
+### Programme state changes at Patch 0499
+
+- (1) §4 Sector A substantive content integrated into chirality_continuum.tex (+~153 lines)
+- (2) §4 covers full Theorem 4.4 = THEO-CHIR-CONT-2 + four sub-claim sub-theorems
+- (3) Three sector-specific FIs introduced (FI-CHIR-CONT-10/11/12)
+- (4) Bibliography expanded with 2 new references (ChiContSketchA + PDG2024)
+- (5) NO new methods catalogued
+- (6) NO theorems registered new (THEO-CHIR-CONT-2 already registered at Patch 0491)
+- (7) NO predictions registered new (PRED-O-25 inherited)
+- (8) NO falsifiers registered new (Capotauro Falsifier 6 already activated at Patch 0491)
+- (9) NO conjecture registrations
+
+### Forward queue post-Patch 0499
+
+- **Priority 1 (Patch 0500)**: §5 Sector B SM-2 chiral-polarity-bias integration from `sector_b_chiral_polarity_bias.md` (~967 lines); inherits same methods + introduces FI-CHIR-CONT-13/14/15; 1 session
+- **Priority 2 (Patch 0501)**: §6 cross-sector unification integration from `cross_sector_unification.md` (~500+ lines); inherits same methods + synthesizes themes; 1 session
+- **Priority 3 (Patch 0502)**: §7+§8+§9 substantive drafting from outline + theorem-registry + synthesis; 1 session
+- **Priority 4 (Patch 0503)**: bibliography finalization + LaTeX compilation check + v1.0 SHIP title-block version bump; 0–1 session
+- **Subsequent (Patches 0504+)**: v0.6–v0.9 reviewer cycle ChatGPT + CoPilot + Grok; 3–5 sessions
+
+### Anti-priorities preserved at Patch 0499
+
+- Do NOT modify §4 sector A working sketch content during paper integration
+- Do NOT register new theorems or predictions during v0.5 paper polish
+- Do NOT add methods catalogue entries speculatively (sector-specific applications inherit catalogue entries)
+- Do NOT extend §4 scope beyond V–A coupling derivation with three observable predictions (NC Z, Higgs-fermion Yukawas, CKM out of scope)
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT modify Patches 0482+0483 scoping sketches
+- Do NOT modify v0.1 outline file at this patch
