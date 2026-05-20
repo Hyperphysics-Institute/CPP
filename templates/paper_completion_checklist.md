@@ -654,3 +654,162 @@ Across SS-9 (7 May), SF-4 v4.4 (11 May), SF-2 v1.0 (14 May), and Capotauro v1.0 
 - **18 May 2026 (Patch 0434C)**: C10 path reference updated from `CPP_the_theory.md` to `programme_orientation.md` per the rename codified in `book_project/five_artifact_taxonomy.md` (Patch 0434A) that established the five-artifact taxonomy and removed the conflation between Artifact 5 (programme orientation document) and Artifact 2 (TATWD popular-rigorous book). C10 content semantics unchanged; only the path reference updated.
 
 - **18 May 2026 (Patch 0434D)**: **C13 added — anthology chapter as mandatory at v1.0 SHIP.** Previously anthology chapters were produced reactively (e.g., Capotauro chapter at Patch 0416K ~1 session after v1.0 SHIP; SF-2 chapter at Patch 0374 as ad-hoc Session 83 close decision) rather than triggered automatically by the checklist. Hard-coding C13 as [7B] paper-completion item removes the dependency on human-collaborator memory and parallels C10's discipline. Section C header updated to reflect that the section now includes book-project infrastructure (C13) in addition to repository-root content documents. Sub-chapter ad-hoc trigger preserved (one chapter per paper default, sub-chapter ad-hoc human-collaborator-triggered). Procedure: `templates/anthology_chapter_template.md` (craft documentation; established 26 April 2026).
+
+---
+
+## SHIP Trigger Detection and Mandatory Immediate Execution (added 20 May 2026, Patch 0481M)
+
+The 17 May Patch 0422D Phase 7A/7B/7C partition addressed the *dropout symptoms* (which items silently drift). This section addresses the *trigger detection and execution-timing failure* observed at Session 135's Capotauro v2.0 v1.0 SHIP — where Phase 7 work fired reactively when Thomas asked "are the registries updated?" rather than automatically on SHIP detection, producing 12 sequential paper-completion-sequence patches (0481a through 0481L) with audit-driven gap-finding.
+
+### SHIP detection rule (grep-able, no judgment call)
+
+A patch is a **SHIP patch** iff it modifies the paper's `.tex` source title-block version line to land at any of the following terminal states:
+
+- `Version N.0 v1.0 SHIPPED` (e.g., `Version 1.0 SHIPPED`, `Version 2.0 v1.0 SHIPPED`, `Version 4.0 SHIPPED`)
+- `Version N.0 (SHIPPED)` (parenthetical SHIPPED marker)
+- Equivalent author-customised forms that match the regex `Version [0-9]+\.[0-9]+( v[0-9]+\.[0-9]+)? \(?SHIPPED\)?` in the title block
+
+A version bump that lands at `(DRAFT)`, `(REVIEW)`, `(SHIP-CANDIDATE)`, `(POLISH)`, `(RC)`, or any non-SHIPPED state is **NOT** a SHIP patch — those are reviewer-cycle or polish patches and Phase 7 does not fire.
+
+A patch may be a SHIP patch even if it does no other substantive work (the version-bump-only pattern used at Capotauro v1.0 Patch 0415 and at Capotauro v2.0 v1.0 Patch 0479 is the canonical SHIP-patch form). It may also be a SHIP patch alongside substantive last-mile content edits, provided the title-block change lands at SHIPPED state.
+
+**Operational rule:** before committing any patch that touches a paper's title-block version line, grep the diff for the regex above. If it matches, the patch IS a SHIP patch and the mandatory-immediate-execution rule (below) fires.
+
+### Mandatory immediate-execution rule
+
+Once a SHIP patch is detected (whether being applied to the local repo by the user, or being authored by the assistant), the **very next patch in the same session** must begin Phase 7 execution. Specifically:
+
+1. **Phase 7B is the highest-priority next patch.** The Phase 7B program-level work (theorem-registry / research_frontier / paper_catalog / INDEX / master_glossary / predictions / axiom-registry / README / programme_orientation) MUST land in the same session as the SHIP patch unless context-pressure forces deferral — in which case the deferred items go onto an explicit deferral list in the session-close handover (per the §15 backstop).
+2. **Phase 7A paper-level work has flexible timing within the SHIP session.** The 10-file documentation suite (see "Four-Tier Documentation Suite Reconciliation" below), verification notebooks, and curated transcripts may fire in the SHIP session or be batched immediately after — but must not silently drop. If deferred, the deferral list in the session-close handover names each deferred file explicitly.
+3. **Phase 7C execution (commit + final verification) closes the SHIP session.** Step H of `operating_system.md` §15 (session-close handover) explicitly verifies Phase 7B completion before the session can close cleanly; the auditable session-close question (below) is the canonical check.
+
+The reactive pattern Session 135 demonstrated (Phase 7B work landing only after user asks "are the registries updated?") is **NOT** acceptable as standard discipline. The mandatory-immediate-execution rule converts "Phase 7B is sometimes done after SHIP" into "Phase 7B is part of every SHIP session, modulo explicit deferral list."
+
+### Auditable session-close question
+
+At every session close that includes a SHIP patch, the §15 Step H handover audit table MUST include the following explicit question, answered with full per-phase status:
+
+> **"Is the post-SHIP protocol complete for the most recent SHIP in this session? Walk Phases 7A, 7B, 7C item-by-item. List any deferred items explicitly with the patch number that introduced the SHIP and the rationale for deferral."**
+
+The session is **NOT** considered cleanly closed until this question is answered. A "yes, all complete" answer requires verification that:
+
+- Phase 7A: 10-file documentation suite written; verification notebooks for new numerical claims; curated transcripts; bibliography entry; INDEX.md paper-artifact entries; series-README row; OSF deposit (or explicit deferral with rationale)
+- Phase 7B: theorem-registry + research_frontier + paper_catalog + INDEX + master_glossary + predictions + axiom-registry + README + programme_orientation + anthology chapter (with handovers/ entry) + problem_histories + methods_catalogue (or explicit deferral list)
+- Phase 7C: repository commit + push + final verification per H1–H5
+
+A "no, items deferred" answer requires the deferral list to be explicit, machine-readable (item identifier per checklist + reason + estimated patch budget), and inherited into the next-session bootup as priority work.
+
+---
+
+## Four-Tier Documentation Suite Reconciliation (added 20 May 2026, Patch 0481M)
+
+The A1–A7 enumeration in Section A covers the **seven companion documentation files** (mechanism, glossary, phenomena, philosophy, development, reviews, keywords). At the time the checklist was written (20 April 2026), this was the operative documentation suite.
+
+Subsequent corpus evolution (the Four-Tier Documentation Discipline added 26 April Session 3 per `operating_system.md` §4) extended the operative suite to **ten companion documentation files** by adding three Tier-1 / Tier-3 / Tier-4 files:
+
+| File | Tier | Purpose | Section A item | OS reference |
+|---|---|---|---|---|
+| `mechanism-[S]-[N].md` | (synthesis) | Step-by-step mechanism narrative | A1 | §4 Phase 7 |
+| `glossary-[S]-[N].md` | (synthesis) | Paper-specific terms by category | A2 | §4 Phase 7 |
+| `phenomena-[S]-[N].md` | (synthesis) | PHEN-E + PHEN-P + PHEN-V inventory | A3 | §4 Phase 7 |
+| `philosophy-[S]-[N].md` | (synthesis) | Epistemological framing | A4 | §4 Phase 7 |
+| `development-[S]-[N].md` | Tier 3 | Vignettes per development arc; intellectual history | A5 | §4 Four-Tier + §15 |
+| `reviews-[S]-[N].md` | (synthesis) | Reviews + FAQ; consolidated review summary | A6 | §4 Phase 7 |
+| `keywords-[S]-[N].md` | (metadata) | Keywords + PACS/MSC codes + cross-refs | A7 | §4 Phase 7 |
+| **`changelog-[S]-[N].md`** | (chronological) | **Per-version diff narrative; version-archaeology source** | **A8 (NEW)** | **§11 version-archaeology architecture** |
+| **`reasoning-[S]-[N].md`** | Tier 4 | **Verbatim Opus reasoning capture (substantive physics decisions)** | **A9 (NEW)** | **§4 Four-Tier Documentation Discipline** |
+| **`transcript-[S]-[N].md`** | Tier 1 (pointer-map) | **Per-patch transactions / per-session pointer index into raw transcripts** | **A10 (NEW)** | **§4 Four-Tier + §11** |
+
+**A8, A9, A10 are now part of the mandatory Phase 7A suite.** The seven-file framing in A1–A7 predates the Four-Tier Discipline and is no longer the complete picture. Treat the suite as ten files; the additional three are equally mandatory at SHIP unless explicit deferral applies.
+
+**Where each file lives.** All ten files live in `flagship_papers/<paper>/documentation_suite/` for flagship papers (per the per-paper subfolder structure adopted with SS-9 at Patch 0274) or in `series_<name>/companions/` for series papers (legacy location preserved for SS-1 through SS-8 and SM-1 through SM-10).
+
+**Why this reconciliation matters.** Session 135's paper-completion-sequence patches included substantive content additions across all ten files: 0481b (SHIP markers across 9 files), 0481d (development), 0481e (reasoning), 0481f (transcript), 0481g (reviews), 0481j (5 synthesis files mechanism + glossary + philosophy + phenomena + keywords), with the changelog updated as part of the v2.0 v1.0 SHIP itself at Patch 0479. The actual work fired against the ten-file pattern even though the checklist enumerates seven; codifying the ten-file pattern here removes the ambiguity.
+
+**Trigger 1 vs Trigger 2 reconciliation.** The Tier-3 development file and Tier-4 reasoning file accumulate across sessions per the Trigger 1 per-session discipline (`operating_system.md` §4); they do NOT need to be re-written at SHIP, only audited for completeness through the SHIP session and frozen at the SHIPPED state. The Tier-1 transcript file (per-patch transactions / per-session pointer index) similarly accumulates and audits at SHIP. The other seven files (mechanism, glossary, phenomena, philosophy, reviews, keywords, changelog) are SHIP-time deliverables that may be drafted iteratively but reach their authoritative published state at SHIP.
+
+---
+
+## Anti-Collision Strategy for Concurrent Next-Window Work (added 20 May 2026, Patch 0481M)
+
+The Phase 7B program-level work touches files (theorem-registry.md / research_frontier.md / paper_catalog.md / INDEX.md / master_glossary.md / predictions.md / axiom-registry.md / README.md / programme_orientation.md) that are programme-wide registries. Other Opus windows working on parallel work may concurrently modify the same files. The collision risk concentrates on **"Last updated:" header tops** where every patch prepends a new entry.
+
+**Discipline (codified from Session 135 Patches 0481b–L pattern):**
+
+1. **Identify which programme-level files have concurrent next-window activity.** At SHIP time, the assistant should know (from the cross-window handover seed or from the session-open audit) which programme-level files the next Opus window is actively writing to. As of Session 135 close: the next window (Session 136 Patch 0482) was actively writing to `research_frontier.md` (advancing OPEN-FP-SF-2-CHIR to v3.0+ Layer 4 closure scoping).
+
+2. **For files with active concurrent work: anchor on stable inline content, not "Last updated:" header tops.** The "Last updated:" header at the top of each programme-level file is the high-frequency contested anchor — both Opus windows want to prepend new entries there. Anchoring on the inline content the SHIP patch is actually updating (a specific paper row in `paper_catalog.md`, a specific entry in `INDEX.md`, a specific ledger row in `axiom-registry.md`, a specific PRED-O entry in `predictions.md`) avoids the collision entirely. The cost is a stale "Last updated:" header at the top of the file; this is acceptable because the substantive content IS current and the inline content is the auditable record.
+
+3. **For files without active concurrent work: prepend at the "Last updated:" header top as standard.** README.md, axiom-registry.md, predictions.md, theorem-registry.md, master_glossary.md typically don't have concurrent next-window activity unless the next window is also doing SHIP-adjacent work. For these, the standard header-top prepend pattern applies.
+
+4. **Surgical inline updates beat whole-file rewrites.** A SHIP at v2.0 v1.0 should update the inline Capotauro row in `paper_catalog.md` rather than rewriting the whole table; should update the Capotauro entry in `INDEX.md` rather than restructuring the directory map; should add new ledger entries in `axiom-registry.md` rather than reorganising the per-paper attribution table. The surgical pattern preserves provenance and minimises collision surface.
+
+5. **Bundle related programme-level updates into one patch where the anchor pattern permits.** Patch 0481k bundled `master_glossary.md` + `paper_catalog.md` + `INDEX.md` into a single patch because each used a distinct stable anchor (end-of-file H2 append + inline row + 3 of 5 inline entries respectively); they didn't share anchors with each other or with the next-window patch. Patch 0481L bundled `README.md` + `predictions.md` + `axiom-registry.md` similarly. The bundling reduced patch count while preserving anti-collision safety; the alternative (one patch per file) would have added 5 more patches to Session 135's count without any safety benefit.
+
+6. **If a collision occurs at apply time:** the recovery is to drop the colliding patch and re-author the surgical update against the post-collision state of the file. Session 135's Patch 0481a (research_frontier.md update) was dropped after collision with next-window Patch 0482; the durable content was preserved at the theorem-registry (Patch 0480) + changelog (Patch 0479) + handover (Patches 0481, 0481c) anchors instead.
+
+7. **Patch number collision is a real category.** Programme-level patches (this protocol-update patch series; future cross-window infrastructure work) authored by one Opus window may use patch numbers the other window has already claimed. The convention: when the next forward-integer patch number is taken by a concurrent window, continue the current sequence with alpha-suffix continuation (e.g., 0481M, 0481N when 0482 is taken; 0482a, 0482b when 0483 is taken). The alpha-suffix sequence preserves the "all this work belongs to the same logical campaign" provenance signal that pure integer renumbering would obscure. Session 135's 0481a–L sequence is the established precedent for this discipline.
+
+**Anchor-safety hierarchy (most to least safe):**
+
+| Anchor type | Safety | Example |
+|---|---|---|
+| End-of-file H2 section append | HIGHEST | master_glossary.md new "## Capotauro v2.0 cross-sector unification terms" section at Patch 0481k |
+| Inline content update on unique substring | HIGH | paper_catalog.md Capotauro row version-field update at Patch 0481k |
+| Surgical inline entry update | HIGH | INDEX.md entry at line 61 update at Patch 0481k |
+| Append after maintainer footer | MEDIUM | axiom-registry.md ledger entries #61, #62 after #60 |
+| Prepend at "Last updated:" header top of programme-level file with concurrent next-window activity | LOW | research_frontier.md prepend during concurrent SF-2 v3.0+ scoping work |
+| Whole-file rewrite | DO NOT USE for programme-level files unless explicitly authorised |
+
+---
+
+## Session 135 Worked Example (added 20 May 2026, Patch 0481M)
+
+Session 135 produced the largest single-session patch count in the Capotauro paper line and is the canonical worked example for the SHIP protocol's two-phase structure (reviewer/SHIP-closeout phase + paper-completion-sequence phase).
+
+### Phase 1: Reviewer rounds and SHIP closeout (Patches 0466–0481)
+
+16 normal-numbered patches across the v0.9 reviewer cycle and SHIP closeout:
+
+| Patch | Scope | Phase |
+|---|---|---|
+| 0466–0469 | v0.8.1 round-1 reviewer letters (Grok + CoPilot + ChatGPT) | reviewer cycle |
+| 0470–0472 | v0.9 polish incorporating round-1 feedback | reviewer cycle |
+| 0473–0476 | v0.9 round-2 reviewer letters + ChatGPT round-2 revised | reviewer cycle |
+| 0477–0478 | SHIP closeout protocol setup (Steps 1–2) | SHIP closeout |
+| 0479 | **SHIP PATCH** — title block bump to `Version 2.0 v1.0 SHIPPED` | SHIP |
+| 0480 | theorem-registry.md Last-updated header advance for paper-publication venue confirmation | Phase 7B |
+| 0481 | session-close handover at `handovers/2026-05-19_session_135_capotauro_v2.0_v1.0_SHIPPED.md` | Phase 7C |
+
+### Phase 2: Paper-completion sequence (Patches 0481a–L)
+
+12 paper-completion-sequence patches (alpha-suffix continuation because Patch 0482 was opened by the next Opus window for SF-2 v3.0+ scoping):
+
+| Patch | Scope | Phase | File(s) |
+|---|---|---|---|
+| 0481a | research_frontier.md (DROPPED due to collision with Patch 0482) | Phase 7B | research_frontier.md |
+| 0481b | doc-suite SHIP markers across 9 files | Phase 7A | 9 of 10 documentation_suite files |
+| 0481c | cross-window handover seed | Phase 7C | handovers/2026-05-19_session_135_sf2_v2.0_next_window_seed.md |
+| 0481d | Tier-3 vignettes 36–40 | Phase 7A | development-capotauro.md |
+| 0481e | Tier-4 reasoning §19–§23 | Phase 7A | reasoning-capotauro.md |
+| 0481f | per-patch transcript transactions 0466–0481e | Phase 7A | transcript-capotauro.md |
+| 0481g | consolidated review summary Part 3 | Phase 7A | reviews-capotauro.md |
+| 0481h | anthology chapter v2.0 substantive refresh | Phase 7B | book_project/chapters/capotauro_what_was_always_there.md |
+| 0481i | programme_orientation.md Chapter 22f Capotauro v2.0 extension | Phase 7B | programme_orientation.md |
+| 0481j | bundled substantive doc-suite refresh (5 files) | Phase 7A | mechanism + glossary + philosophy + phenomena + keywords |
+| 0481k | programme-level catalog updates (3 files) | Phase 7B | master_glossary + paper_catalog + INDEX |
+| 0481L | stale-registry catch-up (3 files) | Phase 7B | README + predictions + axiom-registry |
+
+**Session 135 total: 28 patches** (16 normal + 12 paper-completion-sequence). All applied cleanly to origin/main except 0481a which was dropped on collision with concurrent next-window Patch 0482.
+
+### What this worked example demonstrates
+
+- The two-phase structure (SHIP + paper-completion-sequence) is the canonical SHIP-session shape.
+- The paper-completion sequence took 12 patches because it fired reactively from user audit ("are the registries updated?") rather than as a single planned protocol execution. **Under the mandatory-immediate-execution rule (above), the same content would land in fewer patches** — most of Phase 7B can bundle into 3–4 patches per the anti-collision strategy if planned at SHIP time rather than discovered at audit time.
+- Patches 0481a's collision and recovery demonstrate the anti-collision discipline's value: the durable content from the dropped patch was preserved at alternative anchors (theorem-registry + changelog + handovers), so no information was lost; only the routing was adjusted.
+- The 28-patch count is **not** a target for future SHIPs. Future SHIP sessions running the mandatory-immediate-execution rule from the SHIP patch itself should target ~20–24 patches total (16 reviewer/SHIP-closeout + 4–8 paper-completion-sequence, depending on whether next-window collision avoidance forces additional bundling).
+- **Patch number collision discipline (Patch 0481M precedent).** When this very protocol-update patch was authored, the next forward-integer patch numbers 0482 and 0483 were already claimed by the next Opus window (SF-2 v3.0+ Layer 4 closure trajectory opened at Patch 0482; downstream patches taking 0483 and possibly 0484). The patches that codify the SHIP Trigger Protocol therefore continue the Session 135 alpha-suffix sequence as 0481M and 0481N rather than using 0483/0484. This is the canonical recovery for patch-number collisions with concurrent windows: continue the current logical campaign's alpha-suffix sequence; the suffix preserves the "all this work belongs to the same logical campaign" provenance.
+
+---
+
+- **20 May 2026 (Patch 0481M)**: SHIP Trigger Detection and Mandatory Immediate Execution + Four-Tier Documentation Suite Reconciliation + Anti-Collision Strategy for Concurrent Next-Window Work + Session 135 Worked Example sections added in response to Session 135's reactive paper-completion-sequence pattern (12 sequential patches driven by user audit "are the registries updated?" rather than single-pass protocol execution). The Phase 7A/7B/7C partition from Patch 0422D addressed *which items drop*; this addition addresses *when execution fires* (grep-able SHIP trigger detection + mandatory next-patch Phase 7B fire) and *how the 10-file documentation suite reconciles* with the original A1–A7 enumeration (A8 changelog + A9 reasoning + A10 transcript added). Anti-collision strategy codifies the Patches 0481b–L pattern (anchor-safety hierarchy: end-of-file H2 append > inline content update > surgical entry update > "Last updated:" header prepend with active concurrent work) as standard discipline. Auditable session-close question added to make Phase 7B completeness verifiable from outside the executing context. Patch number 0481M (alpha-suffix continuation of Session 135 sequence) rather than 0483 because Patches 0482+ were claimed by the next Opus window (SF-2 v3.0+ Layer 4 closure trajectory); the alpha-suffix recovery is itself codified as standard discipline in the Anti-Collision Strategy section.
