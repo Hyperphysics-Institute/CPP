@@ -252,3 +252,113 @@ The scoping work (Patch 0482 sketch + Patch 0483 sketch) is **venue-portable** �
 - Do NOT modify SF-2 v1.0 or SM-2 v1.0 paper text during Layer 4 closure work under Venue (c) joint paper.
 - Do NOT mix joint paper scope with other unrelated OPEN-FP-SF-2-* entries (η, EWSB, loopfactor, shelldens, chaincomp) or other SM-series open problems.
 - Do NOT modify Patch 0482 sketch (`SF-2_chir_layer4_closure.md`) at this patch; venue recommendation update is registered in Patch 0483 sketch §5 + research_frontier.md + this problem-history file only (per anti-priority discipline preserving Patch 0482 sketch as historical record of venue analysis state at scoping-sketch-pair opening).
+
+---
+
+## Joint Paper v0.1 Outline + Viability Decision Gate PROCEED Verdict (Session 137 Patch 0484)
+
+**Date:** 20 May 2026
+**Session:** 137 opening (post Patch 0483 cross-sector parallel analysis + Thomas's Session 136 Venue (c) confirmation)
+**Patch:** 0484
+
+### What this update establishes
+
+Patch 0484 creates the joint Layer 4 paper home directory `flagship_papers/chirality_continuum/` under the Venue (c) confirmation established at Session 136 close (post-Patch 0483). The v0.1 outline serves as the joint-paper viability decision gate before substantive Layer 4 derivation begins.
+
+### Patch 0484 deliverables
+
+- **NEW directory** `flagship_papers/chirality_continuum/` created as joint paper home (sector-neutral name; follows Capotauro precedent of named-flagship-without-SF-N-number papers).
+- **NEW** `flagship_papers/chirality_continuum/README.md` (~150 lines) — flagship-paper home-directory README with paper-type framing (joint Layer 4 continuum-EFT closure paper; second cross-sector closure paper in CPP after SF-4 v4.0), status (v0.1 outline OPENED), foundational inheritance (substrate handle $|M^W| = |M^{qDP}| = \chi/6$ from THEO-SD-CHIR-1 + THEO-SD-CHIR-2 at full Layer 3 rigor), source-material map, OPEN-FP problems closed at v1.0 SHIP, OPEN problems explicitly NOT-in-scope, viability decision gate framing.
+- **NEW** `flagship_papers/chirality_continuum/chirality_continuum_outline.md` (~448 lines) — v0.1 outline document.
+- **NEW** `flagship_papers/chirality_continuum/sketches/README.md` — placeholder for future joint-paper-specific sketches (paired scoping sketches at Patches 0482 + 0483 remain at historical locations under `flagship_papers/electroweak/sketches/`).
+- **UPDATE** `research_frontier.md` Last-updated header prepended with Patch 0484 milestone + OPEN-FP-SF-2-CHIR Status field updated to v0.1 outline ACTIVE.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0484 v0.1 outline entry appended (this section).
+
+### Joint paper provisional identity
+
+- **Working title (v0.1):** *Cross-Sector Layer 4 Closure of the Substrate Chirality Handle: Electroweak V--A Coupling and Quark Chiral-Polarity-Bias from $|M| = \chi/6$*
+- **Bibliography key (provisional; locked at v1.0 SHIP):** `abshier_chirality_continuum`
+- **Authors (anticipated):** Thomas Lee Abshier ND + Claude Opus (Anthropic)
+- **Target venues:** Zenodo (DOI primary) + arXiv hep-ph (if endorsement obtainable) at v1.0 SHIP; OSF deposit (DOI 10.17605/OSF.IO/JXE8D umbrella) at v1.0 SHIP per established programme practice.
+- **Paper type:** Joint Layer 4 continuum-EFT closure paper; second cross-sector closure paper in CPP after SF-4 v4.0 (Session 72 Patch 0333 OPEN-FP-SF-4-2 + SM-5 op:nu\_id joint closure).
+- **OPEN-FP problems closed at v1.0 SHIP (anticipated):** OPEN-FP-SF-2-CHIR (this trajectory) + SM-2 v2.0+ chiral-polarity-bias EFT continuum-limit (Linear-ZBW-on-$-$qCP stabilization energy at observable scales).
+
+### v0.1 outline 10-section paper structure
+
+- Abstract (§1.1)
+- Plain-language summary (§1.2)
+- §1 Introduction (positioning + problem statement + scope-limitation upfront)
+- §2 Inheritance and foundational input enumeration (FI-CHIR-CONT-1 through FI-CHIR-CONT-14)
+- §3 The shared substrate-handle-to-effective-coupling bridge (paper's §A; load-bearing shared content; sub-claim (a) closure for both sectors jointly)
+- §4 W-bracelet sector closure: V--A coupling at observable scales (paper's §B; sub-claims (b)+(c)+(d) for SF-2; Yang-Mills EFT projection + Michel parameter $\rho = 3/4$ + massless-helicity-limit 100\% LH preference)
+- §5 qDP/eDP sector closure: chiral-polarity-bias exclusion at observable scales (paper's §C; sub-claims (b)+(c)+(d) for SM-2; effective free-energy projection + stabilization energy calculation + exclusion bound + SM cross-validation)
+- §6 Cross-sector unification under OPEN-SD-CHIR-PRIMITIVE umbrella (paper's §D; structural identity claim)
+- §7 Predictions and falsifiers (5-row predictions table; 6 falsifiers including Capotauro Falsifier 6 + positive-down-type-quark-observation)
+- §8 Open Theorem-Level Work (post-v1.0-SHIP sub-claims + OPEN-SD-CHIR-PRIMITIVE umbrella (iv)+(v) future-window + Route (ii) substrate-mechanism cross-validation candidate)
+- §9 Discussion (programme-level methodological pattern + cross-sector implications + outlook 2026-2032+)
+- §10 References (~25 bibliography entries combining CPP-corpus inheritance + external references)
+
+### Foundational input merger from scoping sketches
+
+The 14 FI-CHIR-CONT-N entries merge the scoping sketches' FI inventories:
+
+- **Shared substrate-level FIs (FI-CHIR-CONT-1/2/3)**: merged from Patch 0482 sketch FI-CHIR-1/2/3 = Patch 0483 sketch FI-CPB-1/2/3 (substrate primitive 4D direction $\hat{n}$; substrate chirality magnitude $|\chi| = \phi^{-3}$; substrate residual symmetry $H_3 = I_h$).
+- **Sector A specific FIs (FI-CHIR-CONT-4A through -8A)**: W-bracelet substrate-object characterization with $D_6$ stabilizer; $\zeta^W$ generator (icosahedral-center inversion in 4D); Yang-Mills EFT framework inherited from EW-5 THEO-EW-8 thm:YM\_EFT at proof-outline level; standard SM kinematic-projection machinery for muon decay.
+- **Sector B specific FIs (FI-CHIR-CONT-4B through -8B)**: Linear-ZBW substrate-object characterization with antipodal-pair $D_{5d}$ stabilizer; $\zeta^{qDP}$ generator (combined $CP$ operation); SM-2 v1.0 chiral-polarity-bias mechanism statement; effective free-energy / partition-function framework for substrate configurations; standard SM fractional-charge structure + empirical absence of positive down-type quarks.
+- **Cross-sector unification FIs (FI-CHIR-CONT-9/10/11/12)**: OPEN-SD-CHIR-PRIMITIVE umbrella context; substrate-locality theorem inheritance from Capotauro v2.0; PD-004 layer architecture mapping; SF-4 v4.0 cross-sector-closure-pattern precedent.
+
+The merged FI inventory at 14 entries is at the upper end of the conditional-theorem-closure paper range (compare Capotauro v2.0 12 FIs + SF-4 v4.0 ~10 FIs) but within reasonable bounds for a flagship paper.
+
+### §10 v0.1 outline viability decision gate result
+
+The v0.1 outline is the load-bearing content of Patch 0484. Assessed against 5 viability criteria:
+
+1. **Section structure coherence** — 10-section structure workable; shared content vs sector-specific content separation clean; cross-sector unification framing in §6 ties the two sector closures together substantively. **VERDICT: ✓ PASS**.
+2. **FI inventory manageability** — 14 FIs at upper end but within bounds; sector-specific FIs clearly labeled (-A vs -B suffix). **VERDICT: ✓ PASS**.
+3. **Cross-sector framing structural compellingness** — Capotauro v2.0 substrate-level three-way unification gives joint paper genuine structural identity; joint paper extends this unification to Layer 4 closure of two of three sector projections (third — mass-mixing K3-doublet — at substrate-level only without observable-scale projection in this paper's scope). **VERDICT: ✓ PASS**.
+4. **Sector-specific complication risk** — both sectors technically tractable; SF-2's Yang-Mills EFT projection is the more demanding technical content but well-scaffolded by SF-2 v1.0 §sec:YM\_EFT\_thm proof outline; SM-2's effective stat-mech projection is standard machinery. **VERDICT: ✓ PASS**.
+5. **Reviewer-audience coherence** — joint paper's reviewer audience is mathematical-physicists / Layer-4-bridge-specialists; audience coherent across both sector closures. **VERDICT: ✓ PASS**.
+
+**Net assessment: all 5 viability criteria PASS. Joint paper viability HIGH. Recommendation: PROCEED TO v0.2 SUBSTANTIVE DRAFTING at Venue (c) joint Layer 4 paper.**
+
+### Drafting plan and timeline
+
+- v0.1 outline (this patch, Patch 0484): paper architecture established + joint-paper viability decision gate. 1 session.
+- v0.2 §A shared bridge work (Patches 0485+): substrate-handle-to-effective-coupling bridge sub-claim closure. 2--3 sessions; load-bearing technical step.
+- v0.3 §B SF-2 sector closure (Patches 0488+): Yang-Mills EFT projection + Michel parameter $\rho = 3/4$ + massless-helicity-limit 100\% LH preference. 3--5 sessions.
+- v0.4 §C SM-2 sector closure (Patches 0492+): effective free-energy projection + stabilization energy calculation + exclusion bound + SM cross-validation. 3--5 sessions.
+- v0.5 §D cross-sector framing + paper polish (Patches 0496+): §6 + §7 + §8 + §9 + abstract + plain-language summary + bibliography. 1--2 sessions.
+- v0.6--v0.9 reviewer cycle (Patches 0498+): multi-reviewer convergence per Capotauro v2.0 + SF-2 v1.0 + SF-4 v1.0 precedent. 3--5 sessions.
+- v1.0 SHIP (Patch 0503+): final polish + title block + CHANGELOG + four-tier documentation suite + programme-level registry updates. 1--2 sessions.
+
+**Total estimated: 15--22 sessions** from this v0.1 outline lock to v1.0 SHIP. Within SF-line per-paper estimate (5--14 sessions) extended by joint-paper cross-sector content (additional 5--8 sessions vs. single-sector closure).
+
+### Venue (b) fallback preserved
+
+If during v0.2+ substantive drafting unanticipated structural obstructions surface (cross-sector framing surfaces as contrived during §6 drafting; reviewer-audience splits irreconcilably during v0.6+ reviewer cycle; one sector's continuum-EFT framework requires substantively more infrastructure than scoped at outline level), the fallback to Venue (b) two separate dedicated Layer 4 papers remains a structurally clean option per Patch 0483 sketch §5.2 framing. The v0.1 outline content is venue-portable — sub-claim decomposition, FI enumeration, theorem-statement structures all preserve under Venue (b) fallback. Venue (b) fallback triggered ONLY if structural obstructions are substantively unmistakable.
+
+### Programme state changes at Patch 0484
+
+- (1) Joint Layer 4 paper home directory `flagship_papers/chirality_continuum/` CREATED under Venue (c) confirmation.
+- (2) v0.1 outline ESTABLISHED with 10-section architecture + 14-FI inventory + 5-criterion viability decision gate.
+- (3) Joint-paper viability decision gate result: ALL 5 CRITERIA PASS → PROCEED TO v0.2 SUBSTANTIVE DRAFTING.
+- (4) Next-substantive-work item registered: Patch 0485 candidate opens §A shared substrate-handle-to-effective-coupling bridge work.
+- (5) Patches 0482 + 0483 scoping sketches PRESERVED at historical locations per anti-priority discipline.
+- (6) NO theorems registered (outline establishes structure, not theorem-level content).
+- (7) NO predictions registered new (substrate-level $|M^W| = |M^{qDP}| = \chi/6$ inherited from THEO-SD-CHIR-1 + THEO-SD-CHIR-2).
+- (8) Capotauro Falsifier 6 registered as anticipated-activation-at-v1.0-SHIP for the SF-2 leg; positive-down-type-quark-observation analog registered as anticipated-activation for SM-2 leg.
+
+### Forward queue post-Patch 0484
+
+1. **Priority 1 (immediate next substantive)**: Patch 0485 candidate — §A shared substrate-handle-to-effective-coupling bridge work (sub-claim (a) closure for both sectors jointly); the load-bearing technical step; v0.2 substantive drafting opening; 2--3 sessions.
+2. **Priority 2**: Patches 0488+ — §B Sector A V--A coupling derivation; v0.3 substantive drafting; 3--5 sessions.
+3. **Priority 3**: Patches 0492+ — §C Sector B chiral-polarity-bias derivation; v0.4 substantive drafting; 3--5 sessions.
+4. **Subsequent priorities**: Patches 0496+ (§D cross-sector + polish; v0.5); Patches 0498+ (v0.6--v0.9 reviewer cycle); Patch 0503+ (v1.0 SHIP).
+
+### Anti-priorities sustained at Patch 0484
+
+- Do NOT modify SF-2 v1.0 or SM-2 v1.0 or Capotauro v2.0 paper text during this joint paper's drafting.
+- Do NOT mix joint paper scope with other unrelated OPEN-FP-SF-2-* entries or other SM-series open problems.
+- Do NOT exceed joint-paper scope (bounded to OPEN-FP-SF-2-CHIR + SM-2 v2.0+ chiral-polarity-bias closure specifically).
+- Do NOT modify Patches 0482 + 0483 scoping sketches at this patch (preserved at historical locations per anti-priority discipline).
+- Do NOT trigger Venue (b) fallback absent substantively unmistakable structural obstructions during v0.2+ substantive drafting.
