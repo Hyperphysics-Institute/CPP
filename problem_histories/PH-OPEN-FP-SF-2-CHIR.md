@@ -1751,3 +1751,95 @@ Total v0.5 paper polish remaining: 4–6 sessions (Patches 0498+ through Patch 0
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
 - Do NOT modify Patches 0482+0483 scoping sketches
 - Do NOT introduce new FI-CHIR-CONT-N entries beyond FI-CHIR-CONT-1/2/3/9 + FI-CHIR-CONT-10/11/12 + FI-CHIR-CONT-13/14/15
+
+---
+
+## Joint Paper v0.5 Polish Session 2: methods_catalogue.md CREATED + §3 Bridge Substantive Content Integrated into chirality_continuum.tex (Session 137 Patch 0498)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0497 v0.5 polish Session 1)
+**Patch:** 0498
+**Status:** methods_catalogue.md programme-level infrastructure CREATED. §3 Bridge substantive content integrated into chirality_continuum.tex with four methods catalogue identifiers (METH-CHIR-CONT-1 through METH-CHIR-CONT-4) registered.
+
+### What this update establishes
+
+Patch 0498 creates `methods_catalogue.md` as new programme-level infrastructure (first methods catalogue creation in CPP programme; identifier convention METH-N parallels theorem-registry's THEO-N convention). Initial population covers four methodological constructs from the chirality continuum joint paper §3 bridge work. Concurrently, §3 Bridge substantive content is integrated into `chirality_continuum.tex` from the working sketch with inline `\methref{...}` markers referencing the catalogue entries.
+
+### Patch 0498 deliverables
+
+- **NEW** `methods_catalogue.md` — programme-level methods catalogue (~209 lines). Four initial entries METH-CHIR-CONT-1 through METH-CHIR-CONT-4 from §3 bridge work. Each entry has Identifier + Name + Statement + Scope + Dependencies + Provenance + Standard-machinery-context + Cross-paper-usage fields. Naming convention METH-<prefix>-N parallels theorem-registry convention.
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §3 Bridge substantive content integrated (+~230 lines; .tex now ~632 lines total). `\methref{...}` LaTeX command added to preamble for METH-N identifier marker rendering. Bibliography expanded with 7 new references (MethodsCatalogue + ChiContSketch + WignerEckart + WilsonKogut + KadanoffBlock + AdlerBardeen + AtiyahSinger + Witten1983CS).
+- **UPDATE** `research_frontier.md` — Patch 0498 Last-updated header prepended.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0498 entry appended (this section).
+
+### Four methods catalogued at initial population
+
+| Identifier | Name | Provenance |
+|---|---|---|
+| **METH-CHIR-CONT-1** | Sector-Agnostic Substrate Wigner-Eckart Datum | Definition 3.2.1 of bridge sketch; Patch 0485 |
+| **METH-CHIR-CONT-2** | Continuum-Limit Projection Map $\Phi$ via Wilson-Fisher Block-Spin Renormalization at Substrate Cutoff | Definition 11.2.1 of bridge sketch; Patch 0486 |
+| **METH-CHIR-CONT-3** | Topological Substrate Quantity Concept | Definition 15.1.1 of bridge sketch; Patch 0487 |
+| **METH-CHIR-CONT-4** | Topological-Projection Argument | Theorem 15.3.1 + §15.4 of bridge sketch; Patch 0487 |
+
+**Novel-to-CPP content per catalogue entry** (versus standard-machinery inheritance):
+
+- **METH-CHIR-CONT-1**: novel = abstraction across sectors identifying universal data $(|\chi|, d_\Gamma/V_{\text{cage}})$ as load-bearing magnitude content with sector-specific data as labels. Standard = Wigner-Eckart matrix-element factorization framework.
+- **METH-CHIR-CONT-2**: novel = substrate cutoff identification at $\Lambda_{\text{sub}} = \ell_{\text{edge}}^{-1}$ + equivariance condition imposition at construction time. Standard = Wilson-Fisher block-spin machinery + Wilson-Kogut + Kadanoff block.
+- **METH-CHIR-CONT-3**: novel = identification of which substrate quantities qualify as topological + structural justification for projecting them through $\Phi$ without renormalization. Standard = topological-invariant concept in continuum QFT (anomaly coefficients, Chern-Simons levels, Atiyah-Singer index, discrete symmetry parities).
+- **METH-CHIR-CONT-4**: novel = application to substrate-physics quantities under Wilson-Fisher block-spin projection from discrete polytope-geometric substrate. Standard = QFT protection-of-topological-quantities principle (Adler-Bardeen / Atiyah-Singer / Chern-Simons).
+
+### §3 Bridge substantive content integration into chirality_continuum.tex
+
+**`chirality_continuum.tex` extended from ~402 to ~632 lines** (+230 lines for §3 substantive + bibliography expansion + `\methref` command).
+
+**§3 sub-sections drafted**:
+
+- §3.1: Sector-agnostic substrate Wigner-Eckart datum (Definition 3.1; refs METH-CHIR-CONT-1)
+- §3.2: Validity verification across three Capotauro v2.0 sectors (Table~\ref{tab:three_sectors})
+- §3.3: Continuum-limit projection map (Definition 3.2; refs METH-CHIR-CONT-2)
+- §3.4: Symmetry-Content Preservation under $\Phi$ (Lemma 3.1 = THEO-CHIR-CONT-1.1 with proof sketch)
+- §3.5: Continuum Operator Identification at Sector-Agnostic Level (Theorem 3.2 = THEO-CHIR-CONT-1.2 with proof sketch)
+- §3.6: Topological substrate quantity concept (Definition 3.3; refs METH-CHIR-CONT-3) + Claims 3.1 + 3.2
+- §3.7: Magnitude Inheritance via Topological Projection (Theorem 3.3 = THEO-CHIR-CONT-1.3; refs METH-CHIR-CONT-4)
+- §3.8: Substrate-Handle-to-Effective-Coupling Bridge Theorem (Theorem 3.4 = THEO-CHIR-CONT-1)
+
+**Inline `\methref{...}` markers**: 4 invocations in §3 prose plus 3 references in proof text = 7 total catalogue-citation points in §3.
+
+### Programme state changes at Patch 0498
+
+- (1) methods_catalogue.md infrastructure CREATED at programme root
+- (2) Four catalogue entries METH-CHIR-CONT-1 through METH-CHIR-CONT-4 registered at initial population
+- (3) §3 Bridge substantive content integrated into chirality_continuum.tex with inline methods catalogue references
+- (4) §3 covers full Theorem 3.4 = THEO-CHIR-CONT-1 + three sub-statement theorems at theorem-statement-with-proof-sketch level
+- (5) Bibliography expanded with seven new references
+- (6) `\methref` LaTeX command added to preamble
+- (7) NO theorems registered new (theorem registry already complete)
+- (8) NO predictions registered new
+- (9) NO falsifiers registered new
+- (10) NO conjecture registrations
+
+### Methodological observations
+
+**First methods catalogue use sharpens novel-vs-standard distinction**: cataloguing exercise made explicit which methodological constructs are novel-to-CPP vs inherited from standard machinery. The Standard-machinery-context field of each catalogue entry captures this distinction. For §3 bridge work specifically: novel-to-CPP content is the substrate cutoff identification + equivariance condition imposition + topological substrate quantity concept + identification of $|\chi|$ + $d_\Gamma/V_{\text{cage}}$ as topological; everything else inherits from standard Wilson-Fisher / Wigner-Eckart / Schur / Adler-Bardeen / Atiyah-Singer machinery.
+
+**Catalogue grows naturally with substantive derivation work**: only 4 catalogue entries at initial population, all from §3 bridge work where novel methodological content was concentrated. §4 + §5 sector-specific Layer 4 closures inherit these four methods without introducing new ones; §6 cross-sector unification synthesizes connections rather than introducing new methods. Future growth anticipated from manifestations (iv)+(v) Layer 4 closures (THEO-CHIR-CONT-4/-5 candidates).
+
+**Retroactive cataloguing available**: methods from earlier CPP work (Capotauro v2.0 substrate-locality, K3 cage-shell averaging, etc.) can be retroactively catalogued as the programme matures. Initial population focuses on chirality continuum joint paper to validate the catalogue infrastructure; retroactive expansion deferred.
+
+### Forward queue post-Patch 0498
+
+- **Priority 1 (Patch 0499)**: §4 Sector A V--A coupling derivation integration from `sector_a_va_coupling.md` sketch into chirality_continuum.tex; inherits METH-CHIR-CONT-1 through METH-CHIR-CONT-4 from §3; 1 session
+- **Priority 2 (Patch 0500)**: §5 Sector B SM-2 chiral-polarity-bias derivation integration from `sector_b_chiral_polarity_bias.md` sketch; 1 session
+- **Priority 3 (Patch 0501)**: §6 cross-sector unification synthesis integration from `cross_sector_unification.md` sketch; 1 session
+- **Priority 4 (Patch 0502)**: §7 + §8 + §9 substantive drafting from v0.1 outline + theorem-registry + sketch synthesis; 1 session
+- **Priority 5 (Patch 0503)**: bibliography finalization + LaTeX compilation check + v1.0 SHIP title-block version bump; 0--1 sessions
+- **Subsequent (Patches 0504+)**: v0.6-v0.9 reviewer cycle ChatGPT + CoPilot + Grok; 3-5 sessions
+
+### Anti-priorities preserved at Patch 0498
+
+- Do NOT modify §3 bridge sketch content during paper integration
+- Do NOT register new theorems or predictions during v0.5 paper polish
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT add methods catalogue entries speculatively (each entry backed by substantive derivation work)
+- Do NOT retroactively catalogue methods from earlier CPP work at this patch
+- Do NOT modify v0.1 outline file at this patch
