@@ -1158,3 +1158,100 @@ Four-condition test ✓ on all four:
 - Do NOT promote THEO-CHIR-CONT-2 sub-claim closure chain elements (THEO-CHIR-CONT-2.1/-2.2/-2.3/-2.4) to standalone theorem entries.
 - Do NOT introduce new FI-CHIR-CONT-N entries at §B Session 4 (FI inventory capped at FI-CHIR-CONT-1/2/3/9 + FI-CHIR-CONT-10/11/12).
 - Do NOT mix §B sector-specific content with §C sector-specific content (which will open in new sketch at `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` at Patches 0492+).
+
+---
+
+## §C Sector B SM-2 Chiral-Polarity-Bias Derivation Session 1: Sketch OPENED + Step 1 Sector-Specific Continuum Operator Identification CLOSED (Session 137 Patch 0492)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0491 §B CLOSURE)
+**Patch:** 0492
+**Status:** §C Sector B working sketch OPENED at `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` (~430 lines). Theorem C.1 statement ESTABLISHED (THEO-CHIR-CONT-3 candidate). Sub-claim (f) sector-specific continuum operator identification CLOSED via three structural identifications.
+
+### What this update establishes
+
+Patch 0492 opens §C Sector B SM-2 chiral-polarity-bias derivation at the joint Layer 4 paper, post §B CLOSURE (Patch 0491; THEO-CHIR-CONT-2 registered as theorem #66). §C inherits THEO-CHIR-CONT-1 + sub-statements + THEO-SD-CHIR-2 qDP/eDP sector instantiation and applies sector-specific effective-free-energy / partition-function framework identification appropriate to the SM-2 sector to derive the chirality-asymmetric stabilization-energy operator $\Delta F^{qDP}$.
+
+### Patch 0492 deliverables
+
+- **NEW** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — §C Sector B working sketch (~430 lines). §0 Session 1 firewall + scope; §1 Theorem C.1 statement (THEO-CHIR-CONT-3 candidate); §2 4-step proof architecture; §3 Step 1 sub-claim (f) sector-specific continuum operator identification CLOSED; §4 + §5 + §6 Steps 2–4 setup architecture for Sessions 2+3+4 of §C; §7 sector-agnostic vs sector-specific content map; §8 FI dependency mapping; §9 anti-priorities; §10 status update at §C Session 1 end.
+- **UPDATE** `research_frontier.md` — Patch 0492 Last-updated header prepended capturing §C Session 1 opening + Step 1 closure + Steps 2–4 architecture + FI inventory expansion + programme state changes + forward queue + anti-priorities.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0492 §C Session 1 entry appended (this section).
+
+### Theorem C.1 statement (THEO-CHIR-CONT-3 candidate; §1 of sketch)
+
+Under THEO-CHIR-CONT-1 + sub-statements THEO-CHIR-CONT-1.1/-1.2/-1.3 (joint Layer 4 paper §A bridge theorem) + qDP/eDP sector specialization ($D_{5d}$ stabilizer, $\zeta^{qDP} = \text{combined } CP$, chirality operator $\hat{C}^{qDP} \in A_{2u}(D_{5d})$ per THEO-SD-CHIR-2 Finding C-W46) + SM-2 v1.0 §10 chiral-polarity-bias framework (effective free-energy / partition-function continuum framework), the bridge theorem's sector-agnostic continuum operator $\mathcal{O}^{\text{eff,qDP}} = \Phi_*\hat{C}^{qDP}$ has four sector-specific consequences:
+
+- **(f) Sector-specific operator identification**: $\mathcal{O}^{\text{eff,qDP}} \leftrightarrow \Delta F^{qDP}$ chirality-asymmetric stabilization-energy operator (Step 1 target; this patch)
+- **(g) Substrate-level stabilization energy calculation**: $|M^{\text{eff,qDP}}| = \chi/6 \approx 0.0394$ at leading order via THEO-CHIR-CONT-1.3 (Step 2; Session 2 target)
+- **(h) Exclusion bound at observable thermodynamic scales**: $\Delta p_{LR} \approx \chi/6 \approx 0.0394$ (Step 3; Session 3 target)
+- **(i) SM cross-validation**: against SM-2 v1.0 §10 + §B Sector A cross-sector unification (Step 4; Session 4 target)
+
+### Step 1 sub-claim (f) closure (sketch §3)
+
+**Sub-claim (f) of Theorem C.1 CLOSED** via three structural identifications:
+
+**Identification 1**: $\zeta^{\text{cont,qDP}} \leftrightarrow$ combined $CP$ at continuum level. The substrate-level $\zeta^{qDP}$ = combined $CP$ (host-CP-centered spatial inversion + $\hat{n}$-flip + qCP-sign flip; THEO-SD-CHIR-2 Finding C-W46) is a chirality-flipping $\mathbb{Z}_2$ involution combining three flips. Under continuum-limit projection $\Phi$ + Lemma 4.1 (THEO-CHIR-CONT-1.1), $\zeta^{qDP}$ projects to $\zeta^{\text{cont,qDP}}$ with same combined-$CP$ structure on continuum-limit Linear-ZBW configuration pair.
+
+**Identification 2**: matter-doublet $\{|\Psi_-^{qDP,(1)}\rangle, |\Psi_-^{qDP,(2)}\rangle\} \leftrightarrow \{|\text{LZBW},+\rangle, |\text{LZBW},-\rangle\}$ Linear-ZBW chirality-eigenstate pair. The substrate matter-doublet has opposite-$\zeta^{qDP}$-parity (THEO-SD-CHIR-2 Finding C-W46). Under continuum projection, identifies as opposite-$\zeta^{\text{cont,qDP}}$-parity Linear-ZBW configurations on $+$qCP vs $-$qCP centers (combined-$CP$-EVEN positive-chirality + combined-$CP$-ODD negative-chirality).
+
+**Identification 3**: $\mathcal{O}^{\text{eff,qDP}} \leftrightarrow \Delta F^{qDP} = F[\text{LZBW},+] - F[\text{LZBW},-]$ chirality-asymmetric stabilization-energy operator. Under Identifications 1+2, bridge theorem's sector-agnostic continuum operator structure (Theorem 4.2; THEO-CHIR-CONT-1.2: $\zeta^{\text{cont,qDP}}$-ODD with non-vanishing matrix element between opposite-parity matter-doublet states) translates to combined-$CP$-ODD scalar operator with non-vanishing matrix element between Linear-ZBW chirality-eigenstates — uniquely identifies as $\Delta F^{qDP}$ in effective free-energy framework.
+
+### Sector-specific physical content inherited at leading order
+
+- **Combined-$CP$-ODD parity structure**: combined-$CP$-EVEN component structurally excluded
+- **Magnitude inheritance**: $|\Delta F^{qDP}/F^{eDP}_{\text{ref}}| = \chi/6 \approx 0.0394$ at leading order via THEO-CHIR-CONT-1.3
+- **Effective free-energy / partition-function thermodynamic context**: Linear-ZBW configurations on $\pm$qCP centers preferentially stabilized at thermal-equilibrium scales per SM-2 v1.0 §10
+- **Scalar structure** at continuum thermal-equilibrium scales
+- **Sub-leading corrections** suppressed by deep-infrared regime at SM-2 thermodynamic scale
+
+### Steps 2–4 architecture articulated (sketch §4 + §5 + §6)
+
+- **Step 2 (Session 2 target; Patch 0493+)**: substrate-level stabilization energy calculation via THEO-CHIR-CONT-1.3 topological-projection argument + THEO-SD-CHIR-2 Finding C-W46 composite matrix element factorization $|M^{qDP}| = \chi \cdot (1/6) = \chi/6$
+- **Step 3 (Session 3 target; Patch 0494+)**: exclusion bound at observable thermodynamic scales — substrate-handle $\chi/6$ to observable Linear-ZBW polarization asymmetry $\Delta p_{LR} \approx 0.0394$ via PRED-O-25 inheritance + sector-specific extensions to electromagnetic-handedness polarization-asymmetry observables. Note: Threshold (C) of §B Step 4 (leptogenesis CP-asymmetry; Patch 0491 §18.2) = primary observable of §C Step 3 — both sectors converge on same direct test
+- **Step 4 (Session 4 target; Patch 0495+)**: SM cross-validation against SM-2 v1.0 §10 + §B Sector A cross-sector unification; promotes Theorem C.1 to programme-level registered-theorem status as THEO-CHIR-CONT-3 (theorem #67)
+
+### FI dependency inventory expanded by 3 sector-specific FIs (sketch §8)
+
+- **FI-CHIR-CONT-13** (qDP/eDP sector specialization): substrate object as Linear-ZBW configuration with $D_{5d}$ stabilizer, $\zeta^{qDP} = \text{combined } CP$, $\hat{C}^{qDP} \in A_{2u}(D_{5d})$ — inherited from THEO-SD-CHIR-2 sector instantiation
+- **FI-CHIR-CONT-14** (SM-2 effective free-energy / partition-function framework): continuum-limit effective framework as thermodynamic/statistical-mechanical free-energy formalism — inherited from SM-2 v1.0 §10 chiral-polarity-bias + §5+§6+Glossary ZBW characterization
+- **FI-CHIR-CONT-15** (continuum-EFT combined-$CP$-parity structure): combined $CP$ at continuum level as chirality-flipping involution on continuum Linear-ZBW configurations — inherited from standard effective-free-energy framework + Capotauro mechanism's three-way coupling structure per SM-2 v1.0 §10
+
+Total sector-specific FIs across §B + §C: 6 (FI-CHIR-CONT-10/11/12 for §B + FI-CHIR-CONT-13/14/15 for §C).
+
+### Programme state changes at Patch 0492
+
+- (1) §C Sector B working sketch OPENED at joint paper home
+- (2) Theorem C.1 statement ESTABLISHED (THEO-CHIR-CONT-3 candidate at theorem-statement-with-Step-1-closed level)
+- (3) Sub-claim (f) sector-specific continuum operator identification CLOSED via three structural identifications
+- (4) Steps 2–4 architecture articulated for Sessions 2–4 of §C
+- (5) FI inventory expanded by FI-CHIR-CONT-13/14/15 (sector-specific to §C; total now 6 sector-specific FIs across §B + §C)
+- (6) NO theorems registered new at programme level (THEO-CHIR-CONT-3 candidate registration deferred to end of §C Session 4)
+- (7) NO predictions registered new (sub-claim targets at Sessions 2–4; PRED-O-25 inherited at substrate-handle level)
+- (8) NO falsifiers registered new (Capotauro Falsifier 6 already ACTIVATED at §B Patch 0491)
+
+### Methodological observations
+
+**§C Step 1 closure inherits cleanly from §A bridge theorem + §B precedent**: sector-specific operator identification followed structural template established at §B Step 1 (Patch 0488) — three identifications across structural / algebraic / matter-doublet content lines fully closing sector-specific identification. Applied at SM-2 sector with different EFT framework (effective free-energy vs Yang-Mills V–A) but identical structural pattern — confirms joint paper format's two-layer architecture works as designed across both sector closures.
+
+**§C sub-claim (f) closure cost matches projection**: 1 session for Step 1 matches §C scoping sketch (Patch 0483 §3.1) estimate of "1 session per step" for §C's 4-step structure. If Sessions 2–4 close at same rate, total §C closure cost ~4 sessions (Patches 0492–0495+), within v0.1 outline §5 estimate of 3–5 sessions for §C substantive drafting.
+
+### Forward queue post-Patch 0492
+
+- **Priority 1 (Patch 0493+)**: §C Session 2 Step 2 substrate-level stabilization energy calculation via THEO-CHIR-CONT-1.3 + THEO-SD-CHIR-2 Finding C-W46 inheritance; 1 session
+- **Priority 2 (Patch 0494+)**: §C Session 3 Step 3 exclusion bound at observable thermodynamic scales; 1 session
+- **Priority 3 (Patch 0495+)**: §C Session 4 Step 4 SM cross-validation + Theorem C.1 promoted to THEO-CHIR-CONT-3 (theorem #67); 1 session; **§C SUB-CLAIM (f)+(g)+(h)+(i) CLOSURE PATCH**
+- **Subsequent (Patches 0496+)**: §D cross-sector unification framing + paper polish; v0.5
+- **Subsequent (Patches 0498+)**: v0.6–v0.9 reviewer cycle
+- **Subsequent (Patch 0503+)**: v1.0 SHIP
+
+### Anti-priorities preserved at Patch 0492
+
+- Do NOT close Steps 2–4 at §C Session 1 (deferred to Sessions 2–4 of §C)
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex source during §C drafting
+- Do NOT modify Patch 0483 SM-2 scoping sketch at `flagship_papers/electroweak/sketches/SM-2_chiral_polarity_bias_layer4_closure.md`
+- Do NOT modify §A bridge work or §B Sector A work during §C drafting
+- Do NOT mix §C sector-specific content with §B sector-specific content
+- Do NOT introduce new FI-CHIR-CONT-N entries beyond FI-CHIR-CONT-13/14/15 at §C
+- Do NOT promote Theorem C.1 / THEO-CHIR-CONT-3 to programme-level registered-theorem status at §C Session 1 (registration at end of §C Session 4)
+- Do NOT exceed Sector B (SM-2) scope
