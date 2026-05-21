@@ -446,6 +446,26 @@ This structural distinction is the architectural feature that the F.2/F.3 viabil
 
 *This §11 closes Phase 1 of the F.1 sub-question Mechanism A Layer 3 closure trajectory. Phase 2 (PCD-coupling rule derivation) is the immediate next priority per §11.9 forward queue. The substantive content here advances F.1's overall trajectory from "scoping" (§1–§10 of this sketch) to "Layer 3 substantive closure work in progress" (§11 begins; Phases 2–4 to follow).*
 
+### §11.11 Phase 1 calibration (Patch 0528) — cycle-mediated informational bias current
+
+*This subsection added Session 138 Patch 0528 — language calibration following ChatGPT review of Patches 0524–0527 reviewer package. ChatGPT's Phase 1 assessment: the mathematics is sound under the stated assumptions, but the framework should explicitly clarify the physical interpretation of the non-reciprocal propagation rule to avoid reviewers asking whether Mechanism A violates substrate conservation.*
+
+**Calibration claim.** The Phase 1 result $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0 \delta/\phi^2)\hat{n}$ is **not a conserved transport current in the ordinary sense**. It is a *cycle-mediated informational bias current* coupled to the PCD update structure at each Conscious Point.
+
+**Physical reading.** Under Mechanism A's non-reciprocal propagation rule $r(\hat{e}_{ab}) \neq r(\hat{e}_{ba})$ at first order in $\delta$, the per-cycle bit-imbalance at the host CP is $\sum_i (r_-^i - r_+^i) = 12 r_0 \delta/\phi$ — incoming bits during P-phase exceed outgoing bits during D-phase by this amount per Absolute Moment (for $\delta > 0$). This imbalance does NOT propagate as a transport current toward a global sink; instead, it is **absorbed by the CP's internal SSV-state update during the Capture phase**.
+
+The Capture phase processes the polarized incoming-bit content into the host's internal SSV-state representation. Under Mechanism A, this processing carries the per-cycle directional bias from the substrate primitive $\hat{n}$ into the CP's internal state record. The cycle's "temporal-asymmetry signature" is the per-cycle informational bias magnitude $12 r_0 \delta/\phi$, encoding the substrate primitive's chirality content into each CP's local state via the Capture-phase SSV-update.
+
+**What this means for the falsifier check.** Phase 1's falsifier check (whether local $I_h$-preservation forces the current to vanish) remains correctly PASSED — the $\hat{n}$-aligned component accumulates uniformly across 12 host-to-first-shell edges. The calibration concerns *interpretation*, not the calculation: the current is a cycle-mediated bias signal, not transport flow.
+
+**Substrate conservation status.** The substrate as a whole is not conservation-violating in the dynamic sense — the bit-imbalance per cycle is absorbed by internal SSV-state evolution at each CP, with the substrate's collective state carrying the integrated information. Mechanism A is a non-equilibrium cycle structure at the per-CP level, not a violation of substrate-level conservation principles. The calibration recommends future presentations of Phase 1 explicitly state this to head off the natural reviewer question.
+
+*This calibration does NOT change the Phase 1 mathematical content (Finding DSL-1 remains as registered at §11.6 with Layer 3 status). It clarifies the physical interpretation of the result to address ChatGPT's reviewer concern about substrate conservation.*
+
+---
+
+*This §11 closes Phase 1 at Layer 3 mathematical content with Patch 0528 calibration clarifying physical interpretation. Phase 2 follows at §12.*
+
 ---
 
 ## §12 Phase 2 — Mechanism A sub-step (ii) closure: PCD-coupling rule derivation
@@ -642,6 +662,74 @@ This is the temporal-sector analog of the spatial-sector findings registered at 
 ---
 
 *This §12 closes Phase 2 of the F.1 sub-question Mechanism A Layer 3 closure trajectory at Layer 2.5 (structural-consistency closure). Phase 3 (magnitude derivation; Case A.1 vs A.2) is the immediate next priority per §12.11 forward queue. The F.1 sub-question Mechanism A trajectory has now closed two of four targeted sub-steps (Phases 1 + 2); Phases 3 + 4 remain pending. The Phase 2 closure establishes the structural compatibility between Mechanism A's Phase 1 spatial-flow result and the manifestation (iv) Wigner-Eckart datum framing's TI-odd substrate-object requirement, with the cycle's intrinsic TI-odd handedness $\sigma_{cycle}$ (axiom A5 primitive) as the load-bearing structural content.*
+
+### §12.13 Phase 2 calibration (Patch 0528) — parity-repair framing + local algebraic representation ansatz
+
+*This subsection added Session 138 Patch 0528 — language calibration following ChatGPT review of Patches 0524–0527 reviewer package. ChatGPT's Phase 2 assessment identified Phase 2 as the **critical weak point** of the trajectory. Three calibrations applied here; this is the most substantive calibration of the patch.*
+
+**Calibration 1: Phase 2 derivation framing.** The original §12 framing presented the coupling rule derivation as a "structural-consistency argument" (Layer 2.5). ChatGPT's more accurate description: **parity-repair via cycle-orientation algebraization**. The operational structure of the Phase 2 derivation is:
+1. Derive a TI-even substrate current (Phase 1).
+2. Observe that the manifestation (iv) Wigner-Eckart datum requires a TI-odd substrate object.
+3. Introduce a TI-odd pseudoscalar carrier ($\sigma_{cycle}$, from cycle direction).
+4. Multiply (1) and (3) to obtain a TI-odd substrate object.
+5. Declare the result canonical.
+
+This is parity repair — a structurally motivated completion move — rather than a uniqueness theorem derived from first principles. The original "structural-consistency argument" framing was defensive language. "Parity-repair via cycle-orientation algebraization" is descriptive.
+
+**Calibration 2: $\sigma_{cycle}$ as algebraization of latent A5 structure.** The original §12.3 framing claimed $\sigma_{cycle}$ as "CPP framework primitive at axiom A5" with the strong reading that no new framework structure was introduced. ChatGPT's more accurate description:
+
+Axiom A5 commits the framework to:
+- Ordered cyclicity (P → C → D as oriented temporal sequence).
+- T-asymmetry of the cycle (cycle direction has meaning).
+- Notion of cycle handedness (cycle has a definite forward direction).
+
+Phase 2 additionally assumes:
+- The cycle's orientation is representable as a **multiplicative TI-odd pseudoscalar** with **algebraic tensor-construction properties** (multiplying with TI-even vector contents to produce TI-odd substrate objects).
+
+The latter is stronger than A5 explicitly contains. The correct framing is:
+
+> **$\sigma_{cycle}$ is an explicitation and algebraization of latent A5 structure — not a wholly new substrate-physics primitive, but not "completely covered by A5" either.**
+
+This is *weaker* than "no new structure introduced" but *stronger* than "ad hoc primitive." The framework is making an algebraic move beyond A5's explicit content, but the move is well-motivated by A5's commitment to oriented cyclicity. The honest characterization should be used in all future references to Finding DSL-2.
+
+**Calibration 3: minimal canonical lowest-order construction, not unique.** The original §12.5 claimed the product structure $\vec{\omega}_{PCD} = \sigma_{cycle} \cdot \hat{j}_{DI}^{net}$ as **the unique** TI-odd substrate object constructible at the host vertex from CPP axioms A1, A5, Reading C, and Mechanism A. ChatGPT's more accurate description:
+
+The product $\sigma_{cycle} \cdot \hat{j}_{DI}^{net}$ is the **minimal canonical lowest-order TI-odd construction**. The framework has not proven uniqueness — possible alternative TI-odd constructions include:
+- Higher-order cycle-correlation objects (involving multiple cycle phases).
+- Local circulation tensors (bivector constructions on the first-shell graph).
+- Oriented phase-lag operators.
+- Pseudoscalar contractions involving temporal update ordering.
+
+Most such alternatives would likely reduce to the same effective direction at lowest order in $\delta$, but this reduction has not been proven. The honest framing is:
+
+> **Phase 2 establishes the *minimal canonical lowest-order* TI-odd substrate object; uniqueness is not proven and remains an open structural question.**
+
+**Calibration 4: local algebraic representation ansatz.** This is the largest open question ChatGPT identified — one I had missed entirely.
+
+The Phase 2 derivation assumes the thermodynamic chirality observable is **representable as a local algebraic object at the host vertex**. This is an unflagged ansatz. The observable could instead emerge from:
+- **Cycle-history accumulation** (the temporal chirality content builds up over many Absolute Moments, not at a single cycle).
+- **Nonlocal transport asymmetry** (the chirality content distributes across the substrate's connectivity graph rather than localizing at one vertex).
+- **Coarse-grained update statistics** (the chirality content emerges only at scales above individual CP cycles).
+
+The Phase 2 product $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle} \cdot \hat{n}$ is a *local algebraic representation choice*. The framework has not demonstrated that this is the structurally forced representation. Future work must either:
+(a) Justify the local representation ansatz from CPP framework principles, or
+(b) Re-derive Phase 2 under a nonlocal/coarse-grained representation and show consistency with the Wigner-Eckart datum.
+
+This ansatz should be **explicitly flagged in all future references to Finding DSL-2** and should be the FIRST priority of Phase 2 foundations work in the post-F.1 closure trajectory.
+
+**Updated Phase 2 verdict.** With these four calibrations, Phase 2's verdict should be reframed:
+
+> **Phase 2 establishes Mechanism A's parity-repair via cycle-orientation algebraization at minimal canonical lowest-order construction, under the local algebraic representation ansatz. Layer 2.5 status confirmed; uniqueness and local-representation justification remain open structural questions.**
+
+This is *weaker* than "Phase 2 CLOSED positively" as originally framed but is the structurally honest characterization. **Phase 2 is the real structural bottleneck of the F.1 trajectory** — future programme work should prioritize hardening these four calibration points.
+
+**What this means for Finding DSL-2.** Finding DSL-2 (Layer 2.5) remains registered but with updated qualifications: parity-repair construction + algebraization of latent A5 + minimal canonical lowest-order (not unique) + local algebraic representation ansatz. The substrate-Wigner-Eckart datum at decision gate §2 remains compatible with this calibrated Phase 2 result; matrix element computation in Phase 3 inherits the calibrated framing.
+
+*This calibration does NOT change the Phase 2 mathematical content — the TI-parity analysis, the cycle's TI-odd handedness identification, the coupling rule formula — all remain as derived. It re-characterizes the rigor status and explicit ansatz commitments of the derivation.*
+
+---
+
+*This §12 closes Phase 2 at Layer 2.5 parity-repair construction with Patch 0528 calibration acknowledging algebraization of latent A5 + minimal canonical (not unique) + local algebraic representation ansatz. Phase 3 follows at §13.*
 
 ---
 
@@ -872,9 +960,66 @@ The Phase 3 closure under Case A.1 unification surfaces a programme-level findin
 
 *This §13 closes Phase 3 of the F.1 sub-question Mechanism A Layer 3 closure trajectory at full Layer 3 rigor (explicit numerical verification + empirical agreement at 1.64%). The F.1 sub-question Mechanism A trajectory has now closed three of four targeted sub-steps (Phases 1+2+3 across Patches 0524+0525+0526); Phase 4 (detailed empirical validation) remains the final sub-step before full F.1 sub-question closure. The Phase 3 closure delivers the first zero-parameter empirical prediction from Mechanism A — substrate primitive's chirality magnitude $|\chi| = \varphi^{-3}$ + universal Schur factor $1/6$ gives $|M^{thermo}| = \chi/6 \approx 0.0394$ matching $\Delta p_{LR}^{obs} \sim 0.04$ at 1.64% level. This is the structural-physics-to-empirical bridge that the F.1 dynamical-substrate-law gate trajectory targets.*
 
+### §13.16 Phase 3 calibration (Patch 0528) — Case A.1 as minimal unified realization + 1.64% as phenomenological consistency signal
+
+*This subsection added Session 138 Patch 0528 — language calibration following ChatGPT review of Patches 0524–0527 reviewer package. ChatGPT's Phase 3 assessment: the structural pattern is persuasive but the uniqueness claims and the "derivation" language for Case A.1 are overstated. Three calibrations applied here.*
+
+**Calibration 1: Unit-vector normalization — structurally canonical, not uniquely forced.** The original §13.3 framed the choice $|\hat{j}_{DI}^{net}|_0 = |\vec{j}_{DI}^{net}(v_{\text{host}})|$ (unit-vector substrate object) as the **unique structurally consistent normalization** by Capotauro v2.0 §20 precedent. ChatGPT's more accurate description:
+
+The unit-vector normalization is **structurally canonical** — it is aesthetically and structurally clean, preserves directional substrate content in the state while keeping chirality magnitude in the operator, mirrors standard representation-theoretic separations, and is consistent with prior sector organization. These are strong reasons to prefer it.
+
+The normalization is **not uniquely forced** by the framework. Options β ($|\hat{j}_{DI}^{net}|_0 = 6r_0/\phi^2$) and γ ($|\hat{j}_{DI}^{net}|_0 = r_0$) are not nonsense — they correspond to different allocations of magnitude information between state geometry and operator strength. The arguments favoring Option α are:
+1. Representation-theoretic cleanliness.
+2. Consistency with prior sector organization (qDP/eDP, K3-doublet, W-bracelet).
+3. Parameter minimality.
+4. Avoidance of double-counting chirality magnitude.
+
+These are strong arguments. They constitute a **canonical-choice justification**, not a **uniqueness theorem**. The honest framing is:
+
+> **Unit-vector normalization is the minimal canonical choice consistent with the Capotauro substrate-object precedent. Alternative normalizations (Options β, γ) are not formally ruled out; the canonical choice is justified by representation-theoretic cleanliness, prior sector consistency, and avoidance of double-counting.**
+
+**Calibration 2: Case A.1 unification — minimal unified realization, not derived.** The original §13.7–§13.9 framed Case A.1 ($\delta = \chi$) as the **structurally consistent + empirically validated choice** favored by three criteria. ChatGPT's more accurate description:
+
+Case A.1 is currently a **unification hypothesis strongly motivated by minimality**. The framework shows:
+- $\chi$ governs spatial-sector chirality (Capotauro v2.0 edge-length perturbation).
+- $\delta$ governs temporal-sector chirality (Mechanism A propagation-rate perturbation).
+- The two are *numerically compatible* under Case A.1.
+
+The framework does NOT show that they **must** be identical. Case A.1 is the **minimal unified realization** under the framework's commitment to single-primitive parameter structure (minimal-primitives principle). It is not a derivational consequence of CPP axioms.
+
+The proper wording is:
+
+> **Case A.1 is the minimal unified realization of substrate primitive chirality bias across spatial and temporal sectors. Derivational identification of $\delta = \chi$ from CPP axioms is not established; Case A.1's selection is motivated by minimal-primitives principle + empirical phenomenological consistency, not by derivation.**
+
+This distinction matters substantially. The trajectory's empirical prediction $|M^{thermo}| = \chi/6$ relies on the Case A.1 hypothesis. If $\delta$ were genuinely independent of $\chi$, the prediction would be $|M^{thermo}| = \delta/6$ with $\delta$ as a free parameter. Case A.1 reduces to zero-parameter under the unification hypothesis; without that hypothesis, the framework has one fitted parameter (numerically very close to $\chi$ but not derived from it).
+
+**Calibration 3: 1.64% match — nontrivial phenomenological consistency signal, not empirical confirmation.** The original §13.11 and §14.4 language framed the 1.64% deviation as "empirical agreement at 1.64% level" with strong validation overtones. ChatGPT's more accurate description:
+
+The strongest point in favor of the match is **not the raw numerical match** but the **constrained structural pathway**. The framework is not freely curve-fitting; the icosahedral geometry, the Schur factor, and the chirality scale all heavily constrain the outcome. The cross-check ruling out four alternative structural candidates ($\chi/(6\phi)$, $\chi\phi/6$, $1/(6\phi^2)$, $1/(6\phi)$) demonstrates that the framework's parameter space genuinely points to $\chi/6$ rather than just happening to land on a number near 0.04.
+
+But the observable chain is **indirect** (substrate-level $|M^{thermo}|$ → substrate-level $\Delta p_{LR}$ → flavor-sector $\delta_{CP}$ → leptogenesis $\varepsilon_1$ → cosmological $\eta_B$). The empirical target $\Delta p_{LR}^{obs} \sim 0.04$ is model-dependent at each level of the chain. The uncertainty budget has not been rigorously propagated.
+
+The correct framing is:
+
+> **The 1.64% deviation is a nontrivial phenomenological consistency signal supporting Case A.1's minimal unified realization hypothesis. It is not high-confidence empirical confirmation — the observable chain involves model-dependent assumptions at each level, and rigorous uncertainty propagation has not been performed. Future Phase 4 refinement under JUNO update + tightened empirical sourcing will provide the stronger test.**
+
+**Updated Phase 3 verdict.** With these three calibrations, Phase 3's verdict should be reframed:
+
+> **Phase 3 establishes the substrate-Wigner-Eckart matrix element $|M^{thermo}| = |\delta|/6$ via Wigner-Eckart chain (canonical unit-vector normalization + reduced matrix element $|\delta|$ + universal Schur factor $1/6$). Under Case A.1's minimal unified realization hypothesis ($\delta = \chi = \varphi^{-3}$), this gives the prediction $\chi/6 \approx 0.0394$, agreeing with empirical $\Delta p_{LR}^{obs} \sim 0.04$ as a nontrivial phenomenological consistency signal at 1.64% deviation. Case A.1's derivational support remains open; the unit-vector normalization is canonical (not uniquely forced); the empirical signal is suggestive (not confirmatory).**
+
+**What this means for Finding DSL-3.** Finding DSL-3 (Layer 3) remains registered with updated qualifications: minimal canonical normalization + Case A.1 minimal unified realization + nontrivial phenomenological consistency signal at 1.64%. The matrix element value $\chi/6 \approx 0.0394$ remains as the structural prediction under the calibrated hypothesis stack.
+
+*This calibration does NOT change the Phase 3 mathematical content — the matrix element chain, the cross-check against alternatives, the numerical verification — all remain as derived. It re-characterizes the rigor status and the empirical-claim strength of the derivation.*
+
 ---
 
-## §14 Phase 4 — Detailed empirical validation: F.1 sub-question FULL CLOSURE under Scenario A
+*This §13 closes Phase 3 at Layer 3 mathematical content with Patch 0528 calibration acknowledging unit-vector normalization as canonical (not uniquely forced) + Case A.1 as minimal unified realization (not derived) + 1.64% as nontrivial phenomenological consistency signal (not empirical confirmation). Phase 4 follows at §14.*
+
+---
+
+## §14 Phase 4 — Detailed empirical consistency-and-falsifiability check: F.1 sub-question PROVISIONAL CLOSURE at viability level
+
+*Note: §14 header originally read "F.1 sub-question FULL CLOSURE under Scenario A" at Patch 0527 issuance. Patch 0528 calibration revises this to "F.1 sub-question PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" per ChatGPT review verdict. See §14.16 for full calibration context.*
 
 *Section added Session 138 Patch 0527 — substantive empirical methodology work executing Phase 4 of the §7 closure trajectory authorized by Thomas at Session 138 continuation. The Phase 4 target identified at §7: "compare $|M^{thermo}| = \chi/6 \approx 0.0394$ against more precise observational data — leptogenesis CP-asymmetry measurements with error analysis, JUNO neutrino-sector update, sensitivity to model-dependent assumptions in the CP-asymmetry extraction." The Phase 4 falsifier registered at §7: if more precise observational data falsifies the $\chi/6$ prediction at $\sim 5\sigma$ level, Phase 4 fails and the trajectory pivots to Mechanism B or A+B hybrid. This §14 closes Phase 4 at CONDITIONAL PASS verdict (current observational state confirms prediction at 0.14σ-equivalent; JUNO peer-review update is the future stress test). With Phase 4 closure, the F.1 sub-question Mechanism A trajectory is FULLY CLOSED at 4-of-4 sub-steps under Scenario A (substrate-mechanism derived).*
 
@@ -1105,6 +1250,102 @@ This is a significant structural finding at the programme architecture level —
 
 *This §14 closes Phase 4 of the F.1 sub-question Mechanism A Layer 3 closure trajectory at CONDITIONAL PASS verdict, completing the FULL CLOSURE of the F.1 sub-question at 4-of-4 sub-steps under Scenario A (substrate-mechanism derived). The F.1 sub-question Mechanism A trajectory is now FULLY CLOSED with Findings DSL-1 (Phase 1, Layer 3), DSL-2 (Phase 2, Layer 2.5), DSL-3 (Phase 3, Layer 3), DSL-4 (Phase 4, Layer 2.5/3). The substrate-level link $\hat{n} \mapsto \vec{\omega}_{PCD}$ is established + empirically validated at 1.64% agreement with leptogenesis CP-asymmetry observation. The chirality continuum architectural template's scope extends from static-spatial-object closure to dynamical-object closure via F.1-level substrate-mechanism derivation. The decision-gate re-engagement to confirm Scenario A verdict + F.2 + F.3 trajectory unlock + F.1 flagship-paper assembly are the immediate forward queue items.*
 
+### §14.16 Phase 4 calibration (Patch 0528) — consistency-and-falsifiability check at viability level
+
+*This subsection added Session 138 Patch 0528 — language calibration following ChatGPT review of Patches 0524–0527 reviewer package. ChatGPT's Phase 4 assessment: methodologically reasonable as a phenomenological consistency section, but not yet strong enough to support "validation" language. Two calibrations applied here.*
+
+**Calibration 1: Phase 4 framing — consistency-and-falsifiability check, not validation.** The original §14.8 framed Phase 4's verdict as "CONDITIONAL PASS" with language suggesting empirical validation at standard precision. ChatGPT's more accurate description:
+
+Phase 4 is acceptable as a **consistency-and-falsifiability section**. It is NOT yet a strong empirical validation layer. The substrate observable $\Delta p_{LR}^{obs}$ is **not directly measured**; it is inferred through a long interpretive chain ($|M^{thermo}|$ → $\delta_{CP}$ → $\varepsilon_1$ → $\eta_B$), with model-dependence at each step. Central-value comparisons are suggestive but not high-confidence confirmations.
+
+The honest framing of Phase 4 is:
+
+> **Phase 4 establishes that the Phase 3 prediction $\chi/6 \approx 0.0394$ passes a consistency-and-falsifiability check against current observational state: prediction is not falsified at 5σ given current ~12% observational precision; prediction is consistent with cross-observable measurements ($\eta_B$, $\delta_{CP}$, $m_{\beta\beta}$); prediction is robust against model-dependent assumption variations in the empirical extraction chain. The 1.64% deviation is a phenomenological consistency signal, not an empirical validation. JUNO-era constraints will provide the next stress test.**
+
+**Calibration 2: JUNO discrimination claim — softened to depend on observable mapping stability.** The original §14.5 claimed JUNO precision (~5–8%) would be **sufficient to discriminate** Phase 3 prediction from alternatives. ChatGPT's more accurate description:
+
+The JUNO discrimination argument is plausible in principle, but the precision propagation from JUNO's direct measurements ($\theta_{12}$, $\Delta m^2$, mass ordering) through the SF-4 empirical-observable chain to substrate-level $\Delta p_{LR}^{obs}$ precision is non-trivial and involves significant model-dependent assumptions. The current Phase 4 framing assumes the SF-4 mapping translates JUNO precision cleanly to substrate-level precision; this assumption has not been rigorously tested.
+
+The honest framing of the JUNO claim is:
+
+> **JUNO-era constraints may become sufficient to discriminate Phase 3 prediction from alternative structural candidates, depending on the stability of the observable mapping from JUNO's direct measurements through the SF-4 empirical chain to substrate-level $\Delta p_{LR}^{obs}$. The discrimination capability depends on both (a) JUNO's direct-measurement precision (well-established expected design goals) AND (b) the rigor with which SF-4's mapping propagates that precision (less well-established at current trajectory state).**
+
+**Updated Phase 4 verdict.** With these two calibrations, Phase 4's verdict is reframed:
+
+> **Phase 4 PASSES a consistency-and-falsifiability check at viability level: Phase 3 prediction $\chi/6 \approx 0.0394$ is not falsified at 5σ given current observational state; phenomenological consistency signal with empirical $\Delta p_{LR}^{obs} \sim 0.04$ at 1.64%; cross-observable consistency confirmed; JUNO-era constraints may provide future discrimination depending on SF-4 mapping stability. Verdict: viability-level consistency confirmed; "empirical validation" reserved for post-JUNO + post-SF-4-mapping-stress-test refinement.**
+
+**What this means for Finding DSL-4.** Finding DSL-4 (Layer 2.5/3 hybrid) remains registered with updated qualifications: consistency-and-falsifiability check at viability level + phenomenological consistency signal (not empirical confirmation) + JUNO discrimination conditional on observable mapping stability. The Conditional Pass verdict is reaffirmed but reframed as **viability-level consistency** rather than empirical validation.
+
+*This calibration does NOT change the Phase 4 sensitivity analysis content — the 0.14σ-equivalent computation, the model-dependent expanded range, the falsifiability conditions — all remain as analyzed. It re-characterizes the empirical-claim strength of the Phase 4 conclusions.*
+
 ---
 
-*This sketch is the opening of the F.1 sub-question scoping trajectory at the new flagship-paper home `flagship_papers/dynamical_substrate_law/`. It is the analog of Patch 0414's Capotauro_chiral_mechanism_candidate.md for the F.1 dynamical-substrate-law gate trajectory. **F.1 sub-question FULL CLOSURE achieved Patch 0527 under Scenario A**: Phase 1 CLOSED at Patch 0524 §11 (Layer 3, Finding DSL-1), Phase 2 CLOSED at Patch 0525 §12 (Layer 2.5, Finding DSL-2), Phase 3 CLOSED at Patch 0526 §13 (Layer 3 with empirical comparison at 1.64%, Finding DSL-3), Phase 4 CLOSED at Patch 0527 §14 (CONDITIONAL PASS with detailed empirical validation, Finding DSL-4). All four sub-steps positively verdicted; substrate-locality unification extended to 4-sector closure; chirality continuum architectural template scope extended from static-spatial-object to dynamical-object closure via F.1-level substrate-mechanism derivation. Forward queue: decision-gate re-engagement (Scenario A confirmation), F.2 + F.3 substantive content trajectories, F.1 flagship-paper assembly, JUNO peer-review update integration.*
+### §14.17 F.1 sub-question PROVISIONAL CLOSURE at viability level (Patch 0528 revised framing)
+
+The original §14.11 framed the F.1 sub-question closure as "FULL CLOSURE under Scenario A" with Scenario A verdict CONFIRMED. Per ChatGPT review verdict (§14.16 calibration context), this framing overclaims the trajectory's actual achievement. The honest revised framing:
+
+**Updated F.1 sub-question status: PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work.**
+
+The F.1 trajectory has established:
+1. **Phase 1**: Mechanism A produces a non-vanishing cycle-mediated informational bias current at the host vertex aligned with $\hat{n}$ (Layer 3, mathematically sound; calibrated to clarify non-conservation interpretation).
+2. **Phase 2**: Mechanism A's parity-repair via cycle-orientation algebraization produces a TI-odd substrate object $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle} \cdot \hat{n}$ at minimal canonical lowest-order construction under the local algebraic representation ansatz (Layer 2.5, structurally motivated but uniqueness and ansatz remain open).
+3. **Phase 3**: The substrate-Wigner-Eckart matrix element $|M^{thermo}| = |\delta|/6$ under canonical normalization, with Case A.1's minimal unified realization hypothesis giving $\chi/6 \approx 0.0394$ (Layer 3 mathematical, with Case A.1 derivational support open).
+4. **Phase 4**: Phenomenological consistency signal at 1.64% deviation with leptogenesis CP-asymmetry observational target, robust against model-dependent variations, not falsified at 5σ (Layer 2.5/3 viability-level check, not high-confidence empirical validation).
+
+**Scenario A status: structurally VIABLE + phenomenologically CONSISTENT, derivationally PROVISIONAL.** The substrate-mechanism (Mechanism A) supplies a plausible derivational pathway for the $\hat{n} \mapsto \vec{\omega}_{PCD}$ link, but the trajectory contains three structural commitments that are not yet derivationally established:
+
+| Open structural commitment | Phase | Calibration |
+|---|---|---|
+| **Local algebraic representation ansatz** for thermodynamic chirality observable at host vertex | Phase 2 | Largest open question; could instead emerge from cycle-history accumulation, nonlocal transport, coarse-grained statistics |
+| **$\sigma_{cycle}$ algebraization** of latent A5 cycle-orientation structure | Phase 2 | Explicitation move beyond A5's explicit content; not wholly new primitive but stronger than "covered by A5" |
+| **Case A.1 derivational support** ($\delta = \chi$ unification) | Phase 3 | Minimal unified realization hypothesis; not derived from CPP axioms |
+
+These three commitments are the **real structural bottleneck** of the F.1 trajectory. Phase 2 foundations work targeting hardening of these commitments is the immediate post-F.1-closure priority — BEFORE F.1 flagship paper assembly, BEFORE F.2/F.3 substantive content, BEFORE decision-gate re-engagement registers Scenario A's final verdict.
+
+**Long-term programme target identified by ChatGPT review.** The deepest extension of the F.1 trajectory — beyond Phase 2 foundations hardening — is the goal of **deriving the chirality scale $|\chi| = \varphi^{-3}$ itself from pure 600-cell polytope geometry and locality constraints**, with no chirality input. This would be substantially deeper than the F.1 closure (which still inserts $\hat{n}$ and $|\chi|$ axiomatically) and represents a major future programme ambition.
+
+The Phase 1 spatial-protection / temporal-coupling complementarity (sketch §11.10) is identified as an early hint that chirality magnitude might emerge from geometric imbalance counting rather than being postulated. This avenue should be registered as a long-term programme target but is **deferred until F.1 / F.2 / F.3 are structurally stable**.
+
+**Calibrated forward queue post-Patch 0528:**
+
+(A) **Decision-gate re-engagement** with calibrated language. Register Scenario A as "structurally viable + phenomenologically consistent at viability level pending Phase 2 foundations work." Short formal memo. Estimated 1 patch.
+
+(B) **Phase 2 foundations work** (the real structural bottleneck). Three sub-targets per the open structural commitments table above:
+- (B.1) Local algebraic representation ansatz justification (largest open question).
+- (B.2) $\sigma_{cycle}$ algebraization rigor + uniqueness of TI-odd construction.
+- (B.3) Case A.1 derivational support from CPP axioms.
+Estimated 5–15 sessions of structural exploration; output is sketch-level rather than flagship-paper-level until ansatz is examined.
+
+(C) **F.1 flagship paper assembly DEFERRED** until Phase 2 foundations stabilize per (B). Premature paper finalization would propagate the calibrated overclaim language and require subsequent retraction.
+
+(D) **F.2/F.3 substantive content DEFERRED** until decision-gate re-engagement (A) registers Scenario A's provisional status with appropriate qualifiers.
+
+(E) **Long-term programme target** (chirality scale from polytope geometry) registered but deferred behind Phase 2 foundations work + F.1/F.2/F.3 stabilization.
+
+(F) **JUNO peer-review update** integration when published; will provide refinement of Phase 4 phenomenological consistency signal toward potential empirical validation status.
+
+(G) **Cross-window handover** if Session 138 closes before substantial forward work on (A) or (B).
+
+*This calibration does NOT retract Findings DSL-1 through DSL-4. The findings remain registered as structural+empirical results at the layer status each was assigned. The calibration recharacterizes the epistemic claims attached to those findings — from "FULL CLOSURE / Scenario A CONFIRMED" to "PROVISIONAL CLOSURE at viability level / Scenario A VIABLE pending Phase 2 foundations work."*
+
+---
+
+*This §14 closes Phase 4 at viability-level consistency-and-falsifiability check with Patch 0528 calibration acknowledging phenomenological consistency signal (not empirical validation) + JUNO discrimination conditional on observable mapping stability. §14.17 reframes the overall F.1 sub-question status from "FULL CLOSURE under Scenario A" (overstated at Patch 0527) to "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" (calibrated at Patch 0528 per ChatGPT review).*
+
+---
+
+*This sketch is the opening of the F.1 sub-question scoping trajectory at the new flagship-paper home `flagship_papers/dynamical_substrate_law/`. It is the analog of Patch 0414's Capotauro_chiral_mechanism_candidate.md for the F.1 dynamical-substrate-law gate trajectory.*
+
+**F.1 sub-question status (Patch 0528 calibrated):** **PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work.**
+- Phase 1 CLOSED at Patch 0524 §11 (Layer 3 mathematical, Finding DSL-1; Patch 0528 calibrated to clarify cycle-mediated informational bias current vs conserved transport).
+- Phase 2 CLOSED at Patch 0525 §12 (Layer 2.5 parity-repair construction, Finding DSL-2; Patch 0528 calibrated to acknowledge algebraization of latent A5 + minimal canonical lowest-order (not unique) + local algebraic representation ansatz).
+- Phase 3 CLOSED at Patch 0526 §13 (Layer 3 mathematical, Finding DSL-3; Patch 0528 calibrated to acknowledge canonical normalization (not uniquely forced) + Case A.1 minimal unified realization (not derived) + 1.64% phenomenological consistency signal (not empirical confirmation)).
+- Phase 4 CLOSED at Patch 0527 §14 (Layer 2.5/3 viability-level consistency-and-falsifiability check, Finding DSL-4; Patch 0528 calibrated to reframe as phenomenological consistency signal vs validation + JUNO claim softening).
+
+**Substrate-locality unification 4-sector closure** (extending Capotauro 3-sector to include manifestation iv) remains the strongest architectural motif of the trajectory.
+
+**Scenario A status (Patch 0528 calibrated):** structurally VIABLE + phenomenologically CONSISTENT at viability level, derivationally PROVISIONAL.
+
+**Real structural bottleneck:** Phase 2 foundations work targeting three open structural commitments (local algebraic representation ansatz + $\sigma_{cycle}$ algebraization rigor + Case A.1 derivational support).
+
+**Forward queue:** decision-gate re-engagement with calibrated language → Phase 2 foundations work (5–15 sessions) → F.1 flagship-paper assembly (deferred) → F.2/F.3 substantive content (deferred) → long-term programme target (chirality scale from polytope geometry) (deferred).
