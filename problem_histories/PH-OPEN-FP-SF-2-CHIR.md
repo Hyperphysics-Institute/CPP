@@ -2868,3 +2868,73 @@ Three of five ChatGPT R2 concerns require no action beyond what §8 already comm
 - Do NOT attempt deeper substantive changes during minor polish integration (framing tightening only)
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources during integration
 - Do NOT promote paper to v1.0 SHIP at Patch 0508 (v0.9 SHIPPED is end-state of reviewer integration; v1.0 SHIP at Patch 0509)
+
+---
+
+## Joint Paper v0.9 SHIPPED: v0.7 Integration Complete — Seven Minor Polish Items from Three Reviewers Integrated (Session 137 Patch 0508)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0507 v0.7 reviewer cycle Session 1 capture)
+**Patch:** 0508
+**Status:** **JOINT PAPER v0.9 SHIPPED.** v0.7 integration complete: all seven minor polish items from three reviewers integrated; title-block bumped v0.6 (SHIPPED) → v0.9 (SHIPPED); LaTeX compilation clean to 38-page 659 KB PDF; **one patch away from v1.0 SHIP**.
+
+### Patch 0508 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — seven minor polish items integrated; title-block bumped; .tex now ~1265 lines.
+- **UPDATE** `research_frontier.md` — Patch 0508 Last-updated header with v0.9 SHIPPED verdict.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0508 entry appended (this section).
+
+### Seven minor polish items integrated
+
+| ID | Source | Location | Status |
+|---|---|---|---|
+| **CP-R1-1** | CoPilot R1 | §1.2 after three-way identity equation | Γ = 2 reminder parenthetical added |
+| **CP-R1-2** | CoPilot R1 | Plain-language summary | "$+\frac{1}{3}$ rather than the observed $-\frac{1}{3}$" replaces "wrong sign" |
+| **CP-R1-3** | CoPilot R1 | §1.4 (iii) + §8.4 | Picture-A as orthogonal complement to Picture-B Wigner-Eckart |
+| **C-R2-1** | ChatGPT R2 | §4.3 after empirical verification | Michel-ρ consistency-preservation framing paragraph |
+| **C-R2-2** | ChatGPT R2 | §6.4 after zero-parameters sentence | χ/6 recurrence topology-over-numerology framing paragraph |
+| **G-R1-1** | Grok R1 | Bibliography \bibitem{Capotauro} | Programme registration metadata (THEO-CAP-1 + THEO-SD-CHIR-1+2 + FI-CHIR-CONT-1+2) |
+| **G-R1-2** | Grok R1 | Figure 1 caption | `\ref{}` + `\hyperref[]{...}` upgrade; auto-update + PDF navigation |
+
+### Substantive observations on the two framing paragraphs
+
+**C-R2-1 (Michel-ρ framing)** is the most substantively important addition. It corrects an implicit overclaim that ChatGPT round-2 flagged as remaining vulnerability. The paper previously read as implicitly claiming the framework uniquely explains Michel ρ = 3/4 — postdictive-absorption of a well-established Standard Model result. The new framing paragraph clarifies:
+- Framework's claim is consistency-preservation under inheritance projection (substrate-handle inheritance → pure-V–A by THEO-CHIR-CONT-2 sub-claim b → ρ = 3/4 by standard four-fermion kinematics)
+- Framework's explanatory advantage manifests at cross-sector convergence (leptogenesis CP-asymmetry §5.4 + §6.5) where Sector A and Sector B converge on the same observable at χ/6
+- The Michel-ρ result is a consistency check, not an independent explanation
+
+This is the correct epistemic positioning.
+
+**C-R2-2 (χ/6 recurrence framing)** preempts numerology-alarm misreadings. The recurrence of χ/6 across four levels of the framework (Layer 3 + Layer 4 sector-agnostic + Layer 4 sector-specific + Observable) is a topological inheritance consequence, not arithmetic coincidence. Both factors |χ| = φ⁻³ and 1/6 = d_Γ/V_cage are topological substrate quantities per Definition 3.3 [METH-CHIR-CONT-3] and preserved exactly under continuum-limit projection Φ at leading order via [METH-CHIR-CONT-4]. Recurrence is prediction of topological projection, not numerical pattern requiring after-the-fact explanation.
+
+### Title-block version bump
+
+```
+\date{Version 0.6 (SHIPPED) --- 20 May 2026 ...}     % BEFORE
+\date{Version 0.9 (SHIPPED) --- 20 May 2026 ...}      % AFTER (this patch)
+```
+
+**Rationale for v0.6 → v0.9 jump**: per Capotauro v2.0 precedent, v0.9 designates "all reviewer feedback integrated; ready for v1.0 SHIP." Since all three reviewers' input integrates in single patch (items orthogonal and integrable simultaneously), bumping directly to v0.9 SHIPPED at Patch 0508 reflects converged-reviewer-input status accurately. Patch 0509 handles v1.0 SHIP formal bump.
+
+### LaTeX compilation verified clean
+
+- **3-pass pdflatex run**: 38 pages, 659 KB (was 653 KB at v0.6 SHIPPED; +6 KB for seven polish items)
+- **Zero undefined references or citations**
+- Cosmetic warnings only (same pre-existing pattern)
+
+### v0.9 SHIP CANDIDACY VERDICT: SHIPPED
+
+All seven minor polish items from three reviewers integrated. Ready for v1.0 SHIP at Patch 0509.
+
+### Forward queue post-Patch 0508
+
+- **Patch 0509 — v1.0 SHIP**: title-block bump v0.9 (SHIPPED) → v1.0 (SHIPPED); theorem-registry confirmation that THEO-CHIR-CONT-1+2+3 all have paper-level publication venue; OPEN-FP-SF-2-CHIR closure status update at programme level (close-pending-archival); methods catalogue Cross-paper-usage final consolidation; final archival prep; research_frontier programme state update; 1 session
+- **Post-Patch 0509**: Thomas's local archival workflow — fresh v1.0 SHIPPED PDF + Figure 1 PNG regeneration + OSF DOI deposition per Grok recommendation
+
+### Anti-priorities preserved at Patch 0508
+
+- Do NOT attempt to close dynamical-substrate-law gate
+- Do NOT attempt deeper substantive changes during polish integration
+- Do NOT add new theorems or predictions
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
+- Do NOT promote to v1.0 SHIP at Patch 0508 (v0.9 SHIPPED is reviewer-integration end-state)
