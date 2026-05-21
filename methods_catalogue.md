@@ -4,6 +4,8 @@
 
 **Established:** 20 May 2026 (Session 137 Patch 0498; first programme-level methods catalogue creation; initial population from the chirality continuum joint paper §3 bridge work).
 
+**Last updated:** 20 May 2026 (Session 137 Patch 0509 — **Chirality continuum joint paper v1.0 SHIPPED; METH-CHIR-CONT-1 through -4 paper-of-origin venue final consolidation**). All four METH-CHIR-CONT entries (METH-CHIR-CONT-1 sector-agnostic substrate Wigner-Eckart datum + METH-CHIR-CONT-2 continuum-limit projection map $\Phi$ via Wilson-Fisher block-spin renormalization + METH-CHIR-CONT-3 topological substrate quantity + METH-CHIR-CONT-4 topological-projection argument) have their paper-of-origin venue confirmed at `flagship_papers/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED §3. METH-CHIR-CONT-3 (topological substrate quantity) and METH-CHIR-CONT-4 (topological-projection argument) carry **programme-level concept** status per theorem-registry entries — available for future cross-sector Layer 4 closures under OPEN-SD-CHIR-PRIMITIVE umbrella manifestations (iv) thermodynamic causal arrow + (v) cosmological-vacuum asymmetry via THEO-CHIR-CONT-4/-5 candidates and applicable to other substrate-handle inheritance closures programme-wide.
+
 **Maintained by:** Programme-level documentation. Updated as new methodological constructs are introduced through flagship paper substantive derivation work.
 
 ---

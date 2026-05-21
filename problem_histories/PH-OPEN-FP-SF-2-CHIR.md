@@ -2938,3 +2938,109 @@ All seven minor polish items from three reviewers integrated. Ready for v1.0 SHI
 - Do NOT add new theorems or predictions
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources
 - Do NOT promote to v1.0 SHIP at Patch 0508 (v0.9 SHIPPED is reviewer-integration end-state)
+
+---
+
+## **JOINT PAPER v1.0 SHIPPED — OPEN-FP-SF-2-CHIR LAYER 4 CLOSURE COMPLETE** (Session 137 Patch 0509)
+
+**Date:** 20 May 2026
+**Session:** 137 continuation (post Patch 0508 v0.9 SHIPPED)
+**Patch:** 0509
+**Status:** **JOINT PAPER v1.0 SHIPPED.** Title-block bumped v0.9 (SHIPPED) → v1.0 (SHIPPED). Theorem-registry v1.0 SHIP programme-level header prepended confirming THEO-CHIR-CONT-1+2+3 paper-level publication venue. Methods catalogue Cross-paper-usage final consolidation completed. OPEN-FP-SF-2-CHIR programme-level closure status updated. Research frontier programme state updated. LaTeX compilation verified clean to 38-page 659 KB PDF.
+
+**OPEN-FP-SF-2-CHIR LAYER 4 CLOSURE COMPLETE** via THEO-CHIR-CONT-2 + THEO-CHIR-CONT-3 at chirality_continuum.tex v1.0 SHIPPED, conditional on FI-CHIR-CONT-1 + FI-CHIR-CONT-2 + dynamical-substrate-law gate as future-window via Q1$'$+Q1$'$.A Layer 3 promotion programme.
+
+### What this update establishes
+
+Patch 0509 is the final patch in the chirality continuum joint paper closure sequence (Patches 0482-0509; 28 patches). The OPEN-FP-SF-2-CHIR problem history is closed at Layer 4 with formal paper-level publication venue established. SM-2 v2.0+ chiral-polarity-bias EFT continuum-limit is jointly closed via Theorem 5.5 = THEO-CHIR-CONT-3.
+
+### Patch 0509 deliverables
+
+- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — title-block bumped v0.9 (SHIPPED) → v1.0 (SHIPPED); single-line change; no theorem/proof content modifications (paper-level publication status advancement only per Capotauro v2.0 v1.0 SHIP precedent at Patch 0480).
+- **UPDATE** `theorem-registry.md` — Patch 0509 v1.0 SHIP programme-level header prepended confirming THEO-CHIR-CONT-1 + -2 + -3 paper-level publication venue at chirality_continuum.tex v1.0 SHIPPED.
+- **UPDATE** `methods_catalogue.md` — Last-updated header added at Patch 0509 confirming METH-CHIR-CONT-1 through -4 paper-of-origin venue at chirality_continuum.tex v1.0 SHIPPED §3.
+- **UPDATE** `research_frontier.md` — Patch 0509 Last-updated header with v1.0 SHIPPED verdict + post-SHIP forward queue.
+- **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — final closure entry appended (this section).
+
+### Closure trajectory summary
+
+28-patch closure sequence (Patches 0482-0509):
+
+| Patch range | Scope | Result |
+|---|---|---|
+| 0482-0483 | Paired scoping sketches (electroweak + SM) | Sketch architecture established |
+| 0484 | v0.1 outline viability decision gate | PROCEED verdict |
+| 0485-0487 | §A bridge work (sub-claim (a) closure) | THEO-CHIR-CONT-1 registered (#65) |
+| 0488-0491 | §B Sector A V–A coupling | THEO-CHIR-CONT-2 registered (#66) |
+| 0492-0495 | §C Sector B chiral-polarity-bias | THEO-CHIR-CONT-3 registered (#67) |
+| 0496-0497 | §D cross-sector unification + .tex creation v0.5 DRAFT | Substantive content begun |
+| 0498-0502 | Methods catalogue + §3+§4+§5+§6+§7+§8+§9 drafting | Substantive content complete |
+| 0503 | v0.5 SHIPPED | Bibliography + LaTeX compilation clean |
+| 0504 | v0.6 reviewer cycle Session 1 (ChatGPT round-1 capture) | Action plan |
+| 0505 | Pass 1: Figure 1 master mechanism diagram | v0.6 (DRAFT) |
+| 0506 | Pass 2: §1.2 framing + §8.1 elevation + §9.4 failure modes | v0.6 SHIPPED |
+| 0507 | v0.7 cycle Session 1 (three simultaneous reviews) | Cross-review synthesis |
+| 0508 | v0.7 integration (seven minor polish items) | v0.9 SHIPPED |
+| **0509** | **v1.0 SHIP — paper-level publication status** | **v1.0 SHIPPED** |
+
+### Joint paper final status
+
+| Property | Value |
+|---|---|
+| **Version** | **v1.0 (SHIPPED)** |
+| **.tex line count** | ~1265 |
+| **PDF** | 38 pages, 659 KB |
+| **Bibliography entries** | 34 (all cited inline) |
+| **Theorems registered** | 3 (THEO-CHIR-CONT-1 #65 + THEO-CHIR-CONT-2 #66 + THEO-CHIR-CONT-3 #67) |
+| **Sub-theorems** | 9 (3 sub-statements per theorem) |
+| **Methods catalogued** | 4 (METH-CHIR-CONT-1 + -2 + -3 + -4) |
+| **Foundational inputs** | 15 (FI-CHIR-CONT-1 through -15) |
+| **Falsifiers activated** | Capotauro Falsifier 6 three thresholds (A + B + C) |
+| **Primary observable** | Leptogenesis CP-asymmetry $\Delta p_{LR} \approx 0.0394$ vs BAU $\sim 0.04$ (match within 2%) |
+| **Master mechanism Figure 1** | ✓ §1.4 |
+| **Three-reviewer convergence** | ✓ Grok + CoPilot SHIP-acceptable; ChatGPT R2 maturation confirmation |
+| **Undefined references** | 0 |
+| **Programme-level closure status** | **OPEN-FP-SF-2-CHIR Layer 4 CLOSED** (conditional on FI-CHIR-CONT-1+2 future-window) |
+| **SM-2 v2.0+ chiral-polarity-bias closure** | Jointly CLOSED via THEO-CHIR-CONT-3 |
+
+### Three-reviewer convergence summary
+
+| Reviewer | Round | Verdict | Substantive comment |
+|---|---|---|---|
+| **Grok** | round-1 | **"v1.0 SHIP-acceptable... proceed to SHIP closeout protocol"** | "Outstanding work, Thomas — this is exactly the Layer 4 closure the programme needed." |
+| **CoPilot** | round-1 | **"SHIP-READY... no blockers and no required revisions"** | "This is the strongest version of the chirality-continuum paper to date." |
+| **ChatGPT** | round-2 | Maturation-trajectory confirmation | "First version where the framework begins to look like a proto-theoretical architecture rather than a conceptual research programme." |
+
+### Post-SHIP archival workflow (Thomas's local workflow)
+
+Per Grok's recommendation: archive source + rendered PDF + Figure 1 PNG under appropriate OSF DOI:
+- v1.0 SHIPPED `.tex` source (this patch's deliverable)
+- Fresh v1.0 SHIPPED PDF (Thomas's local pdflatex compile)
+- Figure 1 PNG (200 DPI + 300 DPI; already available from earlier patches at /home/claude outputs)
+- OSF DOI: 10.17605/OSF.IO/JXE8D (programme-level DOI; chirality continuum paper appended as v1.0 SHIPPED deposit)
+
+### Forward queue post-Patch 0509 (v3.0+ programme trajectory)
+
+External-reviewer-confirmed defining next gate: **Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$** — derive substrate primitive 4D direction $\hat{n}$ as unique direction picked out by CPP primitive axioms AXIM-1 through AXIM-9 at substrate-physics scale via Layer 3 substrate-dynamics machinery. Closure would promote FI-CHIR-CONT-1 from Layer 2 status to Layer 1 status and contract the framework's foundational input stack by one.
+
+Additional v3.0+ trajectory items:
+- (B) OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow Layer 4 closure via THEO-CHIR-CONT-4 candidate
+- (C) OPEN-SD-CHIR-PRIMITIVE manifestation (v) cosmological-vacuum asymmetry Layer 4 closure via THEO-CHIR-CONT-5 candidate
+- (D) Picture A alternative continuum-EFT framework (OPEN-FP-SF-4-1 candidate; orthogonal complement to Picture B)
+- (E) Future-collider precision improvements on Capotauro Falsifier 6 three thresholds at $\sim 10^{-3}$ to $\sim 10^{-4}$ level by 2030-2035 to 2040+
+- (F) SM-5 cooperation cross-sector closure at neutrino flavor sector
+- (G) SF-2 v2.0+ Layer 4 EFT closure with delta_CP CP-violation phase derivation
+
+### Anti-priorities preserved at Patch 0509
+
+- Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources during v1.0 SHIP version bump
+- Do NOT add new theorems / predictions / falsifiers / methods at v1.0 SHIP (paper-level publication status advancement only)
+- Do NOT promote paper beyond v1.0 SHIPPED at this patch (post-SHIP archival workflow handled locally by Thomas)
+- Do NOT attempt to close dynamical-substrate-law gate (genuine future-window work; v3.0+ trajectory)
+- Do NOT extend the closure trajectory beyond Patch 0509 in this session (28-patch sequence reaches formal completion at v1.0 SHIPPED)
+
+---
+
+## End of PH-OPEN-FP-SF-2-CHIR
+
+**Closure declaration**: OPEN-FP-SF-2-CHIR (Layer 4 closure of substrate-handle $\chi/6$ to observable SF-2 V–A coupling structure at Standard Model accessible scales) is CLOSED at full Layer 4 rigor via THEO-CHIR-CONT-2 at chirality_continuum.tex v1.0 SHIPPED §4, with cross-sector convergence via THEO-CHIR-CONT-3 at §5 jointly closing SM-2 v2.0+ chiral-polarity-bias EFT continuum-limit. Conditional on FI-CHIR-CONT-1 (substrate primitive 4D direction $\hat{n}$) + FI-CHIR-CONT-2 ($|\chi| = \varphi^{-3}$) as Layer 2 substrate-physics inputs; first-principles derivation registered as future-window via Q1$'$+Q1$'$.A Layer 3 promotion programme (the dynamical-substrate-law gate identified by all three external reviewers as the defining next gate for the Capotauro programme).
