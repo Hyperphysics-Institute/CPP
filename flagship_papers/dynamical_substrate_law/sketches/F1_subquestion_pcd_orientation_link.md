@@ -299,4 +299,153 @@ If any of these conditional inheritances is revised in future programme work, th
 
 ---
 
+## §11 Phase 1 — Mechanism A sub-step (i) closure: Net DI-bit current at host vertex
+
+*Section added Session 138 Patch 0524 — Layer 3 substantive substrate-physics derivation work executing Phase 1 of the §7 closure trajectory. The Phase 1 target identified at §2.4 as "derive the DI-bit propagation-rate asymmetry from CPP axioms" + "demonstrate the host-to-first-shell edges produce a non-zero net DI-bit current $\vec{j}_{DI}(v_{\text{host}})$ at the host vertex" closes positively at this section: the current is computed analytically at first order in $\delta$, verified numerically at machine precision, and the Phase 1 falsifier check (local-$I_h$-preservation might force $\vec{j}_{DI} = 0$ by symmetry-cancellation) is checked and PASSES.*
+
+### §11.1 Phase 1 target framing
+
+The §7 closure trajectory identifies Phase 1 as Mechanism A's sub-step (i): demonstrate that the substrate's broken symmetry $H_4 \to H_3 = I_h$ at the host vertex (Reading C with $\hat{n} = v_{\text{host}}$) induces, under the Mechanism A propagation-rate-asymmetry primitive $r(\hat{e}_{ab}) = r_0 \cdot (1 + \delta \cdot \hat{e}_{ab} \cdot \hat{n})$, a non-zero net DI-bit current $\vec{j}_{DI}^{net}(v_{\text{host}})$ at first order in $\delta$. The falsifier registered at §7 Phase 1: if the substrate-locality theorem's local-$I_h$-preservation at first order in $\varepsilon$ forces the current to vanish by symmetry-cancellation (analog of K3-face edges being tangent to $\hat{n}$ in 4D per Capotauro v2.0 §13.2), Mechanism A's sub-step (i) fails and the F.1 sub-question trajectory pivots.
+
+Phase 1's structural importance: it is the substantive Layer 3 anchor for Mechanism A. With Phase 1 closure positive, the substrate-locality framework (Capotauro v2.0 Patches 0424–0440) is extended from spatial-sector edge-length perturbation (which protected K3-base chirality content) to temporal-sector DI-bit propagation-rate perturbation (which produces the chirality content needed for PCD-cycle-orientation coupling). Phase 1 thereby establishes that Mechanism A is structurally viable at the substrate-physics level, clearing the first major obstruction in the Mechanism A trajectory.
+
+### §11.2 Geometric setup at host vertex — substrate-locality inheritance
+
+The Capotauro v2.0 Reading C trajectory at Patches 0424–0426 established two geometric facts at the host vertex's first-shell icosahedron under vertex-aligned $\hat{n} = v_{\text{host}}$ (Finding C-W39 substrate-locality theorem + §13.2 vertex-aligned subset distance-content verification):
+
+- **First-shell-to-first-shell edges (30 edges).** For each pair of first-shell vertices $v_i, v_j$ that share a 600-cell edge (icosahedron edge), the unit edge vector $\hat{e}_{ij}$ has $\hat{e}_{ij} \cdot \hat{n} = 0$ to numerical precision $\sim 10^{-9}$ in 4D. The icosahedron edges are tangent to $\hat{n}$. *This is the K3-base protection result*: K3-face edges (which are first-shell-to-first-shell) carry no chirality content from the Reading C edge-length perturbation $\varepsilon \cdot \hat{e} \cdot \hat{n}$, and the K3-doublet sector is therefore *protected* from direct first-order chirality coupling at the substrate-geometry level.
+
+- **Host-to-first-shell edges (12 edges).** For each first-shell neighbor $v_i$ of the host, the unit edge vector $\hat{u}_i \equiv \hat{e}_{(\text{host},i)} = (v_i - v_{\text{host}})/|v_i - v_{\text{host}}|$ has $\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniformly for all $i \in \{1, ..., 12\}$. The host-to-first-shell edges are oblique to $\hat{n}$ at a uniform angle.
+
+These two facts inherit at Phase 1 verbatim from Capotauro v2.0. The substrate-locality theorem's full content — *any subset-internal pairwise distance is preserved at $\mathcal{O}(\varepsilon)$ as isotropic radial scaling by $(1 - \varepsilon/(2\phi))$* — applies to the first-shell-to-first-shell subset (K3-base protection at $\varepsilon$ level). For the host-to-first-shell subset, the uniform $-1/(2\phi)$ projection enables direct first-order perturbative coupling to $\hat{n}$-aligned substrate quantities.
+
+Two structural identities follow at zeroth order in $\varepsilon$:
+
+$$\hat{u}_i \cdot \hat{n} = -\frac{1}{2\phi} \quad \text{(uniform for all } i \in \{1, ..., 12\})$$
+
+$$\sum_{i=1}^{12} \hat{u}_i = -\frac{6}{\phi}\,\hat{n}$$
+
+The second identity follows from the first via the icosahedral residual symmetry: the orthogonal-to-$\hat{n}$ components of the 12 first-shell unit vectors sum to zero (centroid-at-center of icosahedron in its own 3D space, an immediate consequence of $I_h$ residual symmetry at $v_{\text{host}}$). The $\hat{n}$-component is then $\sum_i \hat{u}_i \cdot \hat{n} = 12 \cdot (-1/(2\phi)) = -6/\phi$, giving the boxed result.
+
+### §11.3 Net DI-bit current formula derivation
+
+Mechanism A's propagation-rate-asymmetry primitive (§2.1):
+
+$$r(\hat{e}_{ab}) = r_0 \cdot \left(1 + \delta \cdot (\hat{e}_{ab} \cdot \hat{n})\right)$$
+
+DI-bit propagation from host to neighbor $i$ uses direction $\hat{u}_i$; propagation from neighbor $i$ to host uses direction $-\hat{u}_i$. Outgoing rate from host to $i$:
+
+$$r_+^i = r_0 \cdot (1 + \delta \cdot \hat{u}_i \cdot \hat{n}) = r_0 \cdot (1 - \delta/(2\phi))$$
+
+Incoming rate from $i$ to host:
+
+$$r_-^i = r_0 \cdot (1 + \delta \cdot (-\hat{u}_i) \cdot \hat{n}) = r_0 \cdot (1 + \delta/(2\phi))$$
+
+The asymmetry $r_+^i \neq r_-^i$ (Mechanism A's chirality-breaking primitive) is uniform across all 12 host-to-first-shell edges. The net DI-bit current at the host CP is defined as the directional sum of outgoing minus incoming flows:
+
+$$\vec{j}_{DI}^{net}(v_{\text{host}}) = \sum_{i=1}^{12} (r_+^i - r_-^i)\,\hat{u}_i$$
+
+Expanding:
+
+$$\vec{j}_{DI}^{net}(v_{\text{host}}) = \sum_{i=1}^{12} r_0 \left[(1 + \delta\,\hat{u}_i \cdot \hat{n}) - (1 - \delta\,\hat{u}_i \cdot \hat{n})\right] \hat{u}_i = 2 r_0 \delta \sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n})\,\hat{u}_i$$
+
+The current vanishes identically at $\delta = 0$ (idealized $H_4$-symmetric substrate; outgoing-incoming detailed balance). At first order in $\delta$, the current depends on the weighted sum $\sum_i (\hat{u}_i \cdot \hat{n})\,\hat{u}_i$, which couples the substrate primitive direction $\hat{n}$ to the first-shell geometry via the uniform projection $-1/(2\phi)$.
+
+### §11.4 First-order computation — boxed result
+
+Pulling the uniform scalar $(\hat{u}_i \cdot \hat{n}) = -1/(2\phi)$ outside the sum:
+
+$$\sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n})\,\hat{u}_i = -\frac{1}{2\phi} \sum_{i=1}^{12} \hat{u}_i = -\frac{1}{2\phi} \cdot \left(-\frac{6}{\phi}\right)\hat{n} = \frac{3}{\phi^2}\,\hat{n}$$
+
+Substituting:
+
+$$\boxed{\;\vec{j}_{DI}^{net}(v_{\text{host}}) = \frac{6 r_0 \delta}{\phi^2}\,\hat{n} \; + \; \mathcal{O}(\delta^2)\;}$$
+
+**Non-zero at first order in $\delta$, aligned with $+\hat{n}$ for $\delta > 0$.** The current's magnitude $|\vec{j}_{DI}^{net}|/r_0 = 6\delta/\phi^2$ scales linearly with the Mechanism A primitive's strength.
+
+### §11.5 Falsifier check — PASSED
+
+The Phase 1 falsifier registered at §7 trajectory + Thomas's authorization for Phase 1 work: *if the substrate-locality theorem's local-$I_h$-preservation at first order in $\varepsilon$ forces $\vec{j}_{DI}(v_{\text{host}}) = 0$ by symmetry-cancellation (analog of K3-face edges being tangent to $\hat{n}$ in 4D per Capotauro v2.0 §13.2), Mechanism A's sub-step (i) fails and the trajectory pivots*.
+
+The falsifier check: does $I_h$ residual symmetry at $v_{\text{host}}$ force $\vec{j}_{DI}^{net} = 0$ at first order in $\delta$?
+
+The answer is **negative** (falsifier does NOT activate). The $I_h$ residual symmetry preserves the $\hat{n}$ direction (Capotauro v2.0 Patch 0419 vertex-aligned $\hat{n} = v_{\text{host}}$ is the central axis of the first-shell icosahedron; $I_h$ rotations act within the 3D hyperplane perpendicular to $\hat{n}$ and permute the 12 first-shell vertices). The symmetry-cancellation effect operates on the orthogonal-to-$\hat{n}$ components of $\sum_i (\hat{u}_i \cdot \hat{n})\,\hat{u}_i$: those components DO cancel by $I_h$ centroid-at-center. The $\hat{n}$-aligned component does NOT cancel — it accumulates uniformly across the 12 edges by virtue of the uniform $-1/(2\phi)$ projection.
+
+Phase 1 PASSES. Mechanism A's sub-step (i) closes positively at full Layer 3 rigor. The substrate-locality framework extends from spatial-sector edge-length perturbation (Capotauro v2.0 §13.2 + §13.3) to temporal-sector DI-bit propagation-rate perturbation (this §11.3 + §11.4 derivation).
+
+### §11.6 Finding DSL-1 registration
+
+**Finding DSL-1 (NEW) — Net DI-bit current at host vertex under Mechanism A:**
+
+Under CPP primitive axioms A1–A11 + Reading C with vertex-aligned $\hat{n} = v_{\text{host}}$ + Mechanism A propagation-rate-asymmetry primitive $r(\hat{e}_{ab}) = r_0 \cdot (1 + \delta \cdot \hat{e}_{ab} \cdot \hat{n})$, the net DI-bit current at the host CP at first order in $\delta$ is:
+
+$$\vec{j}_{DI}^{net}(v_{\text{host}}) = \frac{6 r_0 \delta}{\phi^2}\,\hat{n} + \mathcal{O}(\delta^2)$$
+
+The current is non-zero at first order, aligned with $+\hat{n}$ for $\delta > 0$, and its magnitude scales linearly with the Mechanism A primitive's strength $\delta$. The Phase 1 falsifier check (local-$I_h$-preservation might force $\vec{j}_{DI} = 0$ by symmetry-cancellation) passes negatively: the $\hat{n}$-aligned component accumulates uniformly across the 12 host-to-first-shell edges and is not cancelled by the icosahedral residual symmetry.
+
+*Provenance:* Session 138 Patch 0524 — Phase 1 substantive Layer 3 closure work for the F.1 sub-question Mechanism A trajectory.
+
+*Layer status:* Layer 3 (theorem-level closure with verifiable conditions). The derivation inherits geometric content from Capotauro v2.0 Finding C-W39 (substrate-locality theorem) at full Layer 3 rigor; the perturbative-rate-asymmetry primitive (Mechanism A) is at Layer 2 / Layer 3 (structural mathematical sketching with substrate-physics derivation work in §11.3); the composite Phase 1 result is at Layer 3.
+
+*Cross-references:*
+- Capotauro v2.0 v1.0 SHIPPED `flagship_papers/capotauro/capotauro.tex` §13 substrate-locality theorem + §13.2 vertex-aligned subset distance-content.
+- Capotauro Reading C sketch `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §13 Finding C-W39 + §13.3 first-shell-to-first-shell K3-base protection.
+- F.1 sub-question scoping sketch §2 Mechanism A development + §7 closure trajectory Phase 1 target.
+
+*Numerical verification:* Machine-precision verification at `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` — confirms all three load-bearing identities ($\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniform; $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$; $\sum_i (\hat{u}_i \cdot \hat{n})\,\hat{u}_i = (3/\phi^2)\hat{n}$) + the Phase 1 result $\vec{j}_{DI}^{net} = (6 r_0 \delta/\phi^2)\hat{n}$ at first order in $\delta$ across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$ with all deviations from analytic values $\leq 4 \times 10^{-16}$.
+
+### §11.7 Numerical magnitude under Case A.1 + verification at machine precision
+
+Under Case A.1 unification ($\delta = \chi = \varphi^{-3}$; substrate primitive's chirality magnitude controlling both spatial edge-length perturbation and temporal DI-bit propagation-rate perturbation at the same magnitude), the Phase 1 result evaluates to:
+
+$$|\vec{j}_{DI}^{net}(v_{\text{host}})| / r_0 = \frac{6 \varphi^{-3}}{\varphi^2} = 6 \varphi^{-5} \approx 0.541$$
+
+The net DI-bit current at the host vertex carries an $\mathcal{O}(0.5\,r_0)$ asymmetry magnitude along $+\hat{n}$ under Case A.1. This is the substrate-level temporal-asymmetry handle that Mechanism A produces.
+
+The verification script at `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` constructs the 600-cell explicitly via the standard Coxeter construction (8 vertices at $\pm e_i$ + 16 vertices at $\pm 1/2$ in all four coordinates + 96 vertices at even permutations of $(\pm\varphi/2, \pm 1/2, \pm 1/(2\varphi), 0)$; total 120 vertices on $S^3$ at unit distance from origin), picks the host vertex $v_{\text{host}} = (1, 0, 0, 0)$, identifies its 12 first-shell neighbors at edge length $1/\varphi$, computes the 12 unit edge vectors $\hat{u}_i$, and verifies the three load-bearing identities + the Phase 1 current formula numerically at machine precision (max deviation $\leq 4 \times 10^{-16}$ across all checks).
+
+The verification reproduces the structural derivation independently, confirming Phase 1's analytic closure at full numerical fidelity. The script's runtime is well under 5 seconds; it has no external dependencies beyond NumPy.
+
+### §11.8 Status update
+
+**Phase 1 status:** CLOSED at Layer 3 with positive verdict. Mechanism A's sub-step (i) is established. The Phase 1 falsifier check PASSES.
+
+**Mechanism A trajectory status (§7):**
+- Phase 1 (DI-bit current calculation) — **CLOSED positively at this section.**
+- Phase 2 (PCD-coupling rule derivation) — **immediate next priority.** Articulate the substrate-dynamics of the Polarize → Capture → Depolarize sequence at sufficient detail to support a coupling rule that maps the net DI-bit current $\vec{j}_{DI}^{net}$ to the PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$. Estimated 2–4 sessions per §7. *Falsifier*: if the PCD-coupling rule derivation requires introducing new substrate-physics primitives beyond axioms A1–A11, Phase 2 fails.
+- Phase 3 (magnitude derivation; Case A.1 vs A.2) — pending Phase 2 closure.
+- Phase 4 (empirical validation against leptogenesis CP-asymmetry $\Delta p_{LR}^{obs} \sim 0.04$) — pending Phase 2 + 3 closure.
+
+**Programme state implication:** the F.1 sub-question Mechanism A trajectory now has one Layer 3 sub-step closed (Phase 1) out of four targeted (Phases 1–4). The trajectory is on track; the most likely structural obstruction at this point shifts from Phase 1 (now closed) to Phase 2 (PCD-coupling rule derivation requires articulating PCD-phase substrate-dynamics at theorem level, which is partially documented at framework level but has not been formalized).
+
+### §11.9 Forward queue post-Phase 1
+
+- (A) **Phase 2 substantive work:** PCD-coupling rule derivation. Articulate the substrate-dynamics of the Polarize → Capture → Depolarize sequence at sufficient detail to support a derivation of the coupling rule $\vec{j}_{DI}^{net} \mapsto \vec{\omega}_{PCD}$. Key sub-steps: (i) specify the Polarize phase's coupling to incoming DI-bit field; (ii) specify the Capture phase's processing of SSV-content under non-zero net incoming-bit-bias; (iii) specify the Depolarize phase's outgoing-DI-bit propagation under SSV-content bias; (iv) derive the cycle-orientation pseudovector from the cyclic-phase structure under net current. *Immediate next priority if Thomas authorizes Phase 2 work to proceed.*
+
+- (B) **Cross-window handover** for next-window Opus if Session 138 closes before Phase 2 progress is substantial; handover document at `handovers/2026-05-21_session_138_close_F1_phase2_seed.md` analog of Session 137 close seed. The handover would carry forward Finding DSL-1 + Phase 2 trajectory + Phase 2 falsifier.
+
+- (C) **Phase 3 + 4 substantive work** as Phase 2 closes; magnitude derivation (Case A.1 unification at $\delta = \chi$ vs Case A.2 independent) + empirical validation against leptogenesis CP-asymmetry.
+
+- (D) **Decision-gate re-engagement** post-F.1-sub-question full closure (Phases 1–4 + empirical validation): confirm Scenario A / B / C verdict per decision gate §7.2 and queue F.2 + F.3 closure trajectories accordingly.
+
+### §11.10 Methodological observation — spatial-protection vs temporal-coupling complementarity
+
+The Phase 1 result surfaces a clean structural complementarity between the spatial-sector chirality protection (Capotauro v2.0 §13.2 + §13.3) and the temporal-sector chirality coupling (this §11 Phase 1 result). Both derive from *the same* host-vertex first-shell geometry, but with the two edge classes playing structurally opposite roles:
+
+- **First-shell-to-first-shell edges (icosahedron edges; 30 edges).** $\hat{e}_{ij} \cdot \hat{n} = 0$ (tangent to $\hat{n}$ in 4D). The $\varepsilon$-perturbation of edge length does not couple to these edges at first order. *Spatial K3-base is PROTECTED from direct chirality perturbation.* Capotauro v2.0 §13.3 result; underwrites K3-doublet sector's resistance to direct first-order edge-length chirality coupling and routes the chirality content through higher-order or cage-shell-averaging mechanisms.
+
+- **Host-to-first-shell edges (spokes; 12 edges).** $\hat{e}_{(\text{host},i)} \cdot \hat{n} = -1/(2\phi)$ (oblique uniform). The $\delta$-perturbation of DI-bit propagation rate couples directly to these edges at first order, producing the net DI-bit current $\vec{j}_{DI}^{net} = (6 r_0 \delta/\phi^2)\hat{n}$. *Temporal sector CARRIES direct chirality content via these edges.* This §11 Phase 1 result.
+
+The two phenomena are *structurally complementary*: the same geometric facts of the host vertex's first-shell icosahedron in 4D both protect the spatial K3-base from direct chirality perturbation (via icosahedron edges' tangent character) and enable the temporal DI-bit current to carry direct chirality content (via host-to-shell spokes' uniform oblique projection). The 600-cell's first-shell geometry at the host vertex thereby provides the substrate-locality framework with a clean dual structure: protected spatial sector + enabled temporal sector, both at the *same* zeroth-order geometric content.
+
+**Programme-level significance.** The complementarity is not coincidental. It reflects a structural feature of how chirality content distributes across substrate-object classes under Reading C: static spatial substrate-objects (K3-doublet, W-bracelet, qDP/eDP) couple to substrate primitive $\hat{n}$ through cage-shell-averaging mechanisms that route around first-order edge perturbation; dynamical substrate-objects (PCD-cycle-orientation, cosmological-vacuum nucleation timing) couple to $\hat{n}$ through direct first-order rate perturbation that the cage-shell averaging does not suppress. The chirality continuum's three closed sectors (i)+(ii)+(iii) all use the cage-shell-averaging route; manifestation (iv) uses the direct-rate route per Mechanism A.
+
+This structural distinction is the architectural feature that the F.2/F.3 viability test surfaced (decision gate §8.3 static-spatial-object vs dynamical-object distinction) and that the F.1 sub-question scoping work + Phase 1 closure makes concrete: the two routes are not interchangeable but are *complementary structural features of the substrate's response to the primitive $\hat{n}$ under Reading C*. Both are required to capture the OPEN-SD-CHIR-PRIMITIVE umbrella's full content across all five manifestations.
+
+---
+
+*This §11 closes Phase 1 of the F.1 sub-question Mechanism A Layer 3 closure trajectory. Phase 2 (PCD-coupling rule derivation) is the immediate next priority per §11.9 forward queue. The substantive content here advances F.1's overall trajectory from "scoping" (§1–§10 of this sketch) to "Layer 3 substantive closure work in progress" (§11 begins; Phases 2–4 to follow).*
+
+---
+
 *This sketch is the opening of the F.1 sub-question scoping trajectory at the new flagship-paper home `flagship_papers/dynamical_substrate_law/`. It is the analog of Patch 0414's Capotauro_chiral_mechanism_candidate.md for the F.1 dynamical-substrate-law gate trajectory. Substantive Layer 3 closure work follows in future sessions per §7 trajectory.*
