@@ -431,4 +431,110 @@ The two decision gates together establish the viability-decision-gate as **progr
 
 ---
 
-*This document is a viability decision gate at the F.2 / F.3 fork under the OPEN-SD-CHIR-PRIMITIVE umbrella. It is the Session 138 opening's substantive deliverable post Session 137 close cross-window handover seed. Companion deliverable on Thomas's acceptance of the pivot recommendation: programme registry updates per §9.1 + F.1 sub-question scoping sketch opening per §10 (A). Decision-gate methodological precedent registered for future cross-sector closure work per §12.*
+## §14 Decision-gate re-engagement memo (Session 138 Patch 0529)
+
+*Section added Session 138 Patch 0529 — short formal memo re-engaging this decision gate following the F.1 sub-question closure trajectory across Patches 0523–0528. Memo purpose: register the F.1 sub-question's PROVISIONAL CLOSURE status at the decision-gate level, update the §7.2 verdict structure with calibrated language, document the three open structural commitments at decision-gate level, articulate F.2/F.3 trajectory implications, and register the calibrated forward queue at decision-gate level.*
+
+### §14.1 Memo purpose and scope
+
+Patches 0523–0528 executed the F.1 sub-question closure trajectory identified at §7.1 of this decision gate. The trajectory produced four Findings (DSL-1 through DSL-4) across four phases, followed by language calibration per ChatGPT review at Patch 0528. This §14 re-engages the decision gate with the calibrated F.1 sub-question status and updates §7.2's verdict structure accordingly.
+
+**Memo is short by design** — substantive content lives at the F.1 sub-question scoping sketch (`flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11–§14, including §14.16–§14.17 Patch 0528 calibration). This §14 references that content and updates the decision-gate-level state.
+
+### §14.2 F.1 sub-question closure trajectory summary
+
+Four phases were executed across Patches 0524–0527 with calibration at Patch 0528:
+
+| Patch | Phase | Layer | Finding | Key result |
+|---|---|---|---|---|
+| 0524 | 1 — DI-bit current calculation | 3 | DSL-1 | $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0 \delta/\varphi^2)\hat{n}$; cycle-mediated informational bias current (Patch 0528 §11.11 calibration) |
+| 0525 | 2 — PCD-coupling rule derivation | 2.5 | DSL-2 | $\vec{\omega}_{PCD} = \sigma_{cycle} \cdot \hat{j}_{DI}^{net}/\|\hat{j}_{DI}^{net}\|_0$; parity-repair via cycle-orientation algebraization at minimal canonical lowest-order under local algebraic representation ansatz (Patch 0528 §12.13 calibration) |
+| 0526 | 3 — Magnitude derivation | 3 | DSL-3 | $\|M^{thermo}\| = \|\delta\|/6$ via Wigner-Eckart chain; under Case A.1 minimal unified realization gives $\chi/6 \approx 0.0394$ (Patch 0528 §13.16 calibration) |
+| 0527 | 4 — Empirical consistency check | 2.5/3 | DSL-4 | 1.64% deviation, 0.14σ-equivalent vs $\Delta p_{LR}^{obs} \sim 0.04$; phenomenological consistency signal at viability level (Patch 0528 §14.16 calibration) |
+
+### §14.3 ChatGPT review + Patch 0528 calibration
+
+Patches 0524–0527 went from sketch to "F.1 SUB-QUESTION FULL CLOSURE UNDER SCENARIO A" in one continuation session with no reviewer pushback between phases. ChatGPT review (delivered prior to Patch 0528) identified overclaimed closure language and one unflagged ansatz. Eight language calibrations applied at Patch 0528 across F.1 scoping sketch §11–§14; full calibration record at `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11.11, §12.13, §13.16, §14.16, §14.17. F.1 sub-question status reframed from "FULL CLOSURE under Scenario A" to "**PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work**."
+
+### §14.4 Updated §7.2 verdict structure
+
+The original §7.2 framed three scenarios (A: substrate-mechanism derived, B: independent primitive, C: partial). The F.1 sub-question closure trajectory addresses Scenario A. With Patch 0528 calibration applied:
+
+**Scenario A (substrate-mechanism derived) — STATUS: PROVISIONAL ACTIVE.**
+- *Original framing (Patch 0522):* "F.1 closes positive (link $\hat{n} \mapsto \vec{\omega}_{PCD}$ derived)."
+- *Updated framing (Patch 0529):* "F.1 closes provisionally at viability level: substrate-mechanism (Mechanism A) supplies a plausible derivational pathway for the $\hat{n} \mapsto \vec{\omega}_{PCD}$ link, structurally VIABLE + phenomenologically CONSISTENT at 1.64% agreement with $\Delta p_{LR}^{obs} \sim 0.04$, but **derivationally PROVISIONAL** with three open structural commitments registered at §14.5 below."
+- *Consequences for F.2 + F.3 under PROVISIONAL ACTIVE status:* the §2 substrate-Wigner-Eckart datum construction is structurally compatible with the Phase 2 coupling rule (§12.8 verification at F.1 sub-question sketch); THEO-CHIR-CONT-1 carries verbatim **subject to Phase 2 foundations work hardening the three open structural commitments**; F.2 and F.3 substantive content trajectories are **DEFERRED** at decision-gate level until those commitments are addressed.
+
+**Scenario B (independent primitive) — STATUS: NOT CURRENTLY ACTIVE.**
+- Mechanism A's viability trajectory has not failed; no falsifier across Phases 1–4 has activated. Pivot to Scenario B is not warranted at current trajectory state.
+- Scenario B remains available as a fallback if Phase 2 foundations work falsifies the local algebraic representation ansatz (commitment B.1) or demonstrates that no Mechanism A variant can produce the required TI-odd construction.
+
+**Scenario C (partial derivation) — STATUS: NOT CURRENTLY ACTIVE.**
+- The F.1 sub-question scoping focused on manifestation (iv) under Mechanism A; manifestation (v) has not been substantively engaged. Scenario C's partial-derivation framing is not currently motivated by the data.
+- Scenario C remains available if Phase 2 foundations work succeeds for manifestation (iv) but fails to extend to manifestation (v), or vice versa.
+
+### §14.5 Three open structural commitments at decision-gate level
+
+The F.1 sub-question's PROVISIONAL status rests on three commitments that have not been derivationally established and that Phase 2 foundations work must address before Scenario A's verdict becomes definitive:
+
+| # | Phase origin | Open commitment | Status at decision-gate level |
+|---|---|---|---|
+| B.1 | 2 (Patch 0525, calibrated 0528) | **Local algebraic representation ansatz** for thermodynamic chirality observable at host vertex | **Largest open question.** Could instead emerge from cycle-history accumulation, nonlocal transport asymmetry, or coarse-grained update statistics. Unflagged in Patches 0524–0527; flagged at Patch 0528 §12.13 calibration. |
+| B.2 | 2 (Patch 0525, calibrated 0528) | **$\sigma_{cycle}$ algebraization rigor + uniqueness of TI-odd construction** | Explicitation of latent A5 cycle-orientation structure into multiplicative TI-odd pseudoscalar with tensor-construction algebraic properties — stronger than A5 explicitly contains. Possible alternative TI-odd constructions (higher-order cycle-correlation objects, local circulation tensors, bivector constructions, pseudoscalar contractions involving temporal update ordering) not formally ruled out. |
+| B.3 | 3 (Patch 0526, calibrated 0528) | **Case A.1 derivational support** from CPP axioms | Identification of Mechanism A magnitude $\|\delta\|$ with Capotauro spatial-sector magnitude $\|\chi\|$ is currently a minimal unified realization hypothesis motivated by minimal-primitives principle + empirical phenomenological consistency, not by derivation from CPP axioms. |
+
+These three commitments together constitute the **real structural bottleneck** of the F.1 trajectory. The decision gate's pre-F.1 framing assumed F.1 closure would be definitive; the calibrated post-F.1 framing acknowledges that closure is provisional pending these commitments' hardening.
+
+### §14.6 F.2 / F.3 trajectory implications
+
+The pre-F.1 framing (§7.2 original) assumed:
+- Scenario A confirmed → F.2 + F.3 unlock at full Layer 4 closure machinery.
+- Joint F.2+F.3 closure trajectory: 6–14 sessions.
+
+The post-F.1 calibrated framing (§14.4) modifies this:
+- **F.2 single-sector trajectory DEFERRED** at decision-gate level. Substantive content trajectory awaits Phase 2 foundations work hardening commitments B.1–B.3. Were F.2 substantive content to proceed at current trajectory state, its closure language would inherit Scenario A's provisional status (since F.2's Layer 4 closure machinery depends on the §2 substrate-Wigner-Eckart datum, which depends on $\vec{\omega}_{PCD}$ as substrate object, which depends on Phase 2's coupling rule, which depends on commitments B.1–B.3). The closure-language inheritance would propagate the calibrated overclaim warnings into F.2.
+- **F.3 trajectory DEFERRED** for the same reason.
+- **Joint F.2+F.3 framing DEFERRED.** With Scenario A provisional, the joint closure trajectory's structural-prediction signature (cross-sector convergence at $\Delta p_{LR} \approx 0.0394$) is itself provisional.
+
+The **alternative paths** identified in §7.2 (Scenario B, Scenario C) remain available but are NOT currently active. Mechanism A's viability trajectory has not failed; pivot to alternatives is not warranted unless Phase 2 foundations work surfaces a structural obstacle.
+
+### §14.7 Calibrated forward queue at decision-gate level
+
+Aligned with Patch 0528 calibrated forward queue at F.1 scoping sketch §14.17:
+
+| # | Item | Status | Estimate |
+|---|---|---|---|
+| A | Decision-gate re-engagement memo (this §14) | **EXECUTING at Patch 0529** | 1 patch (complete) |
+| B | **Phase 2 foundations work** addressing commitments B.1–B.3 | **REAL STRUCTURAL BOTTLENECK** — the immediate next substantive priority | 5–15 sessions of structural exploration; output sketch-level rather than flagship-paper-level until local algebraic representation ansatz examined |
+| C | F.1 flagship paper assembly | **DEFERRED** until (B) substantively progresses | Premature assembly would propagate calibrated overclaim language requiring subsequent retraction |
+| D | F.2 substantive content trajectory | **DEFERRED** until decision-gate re-engagement (this §14) registers Scenario A's provisional status — now complete; further deferral pending (B) | Was 4–8 sessions; post-(B) estimate depends on Phase 2 foundations outcomes |
+| E | F.3 substantive content trajectory | **DEFERRED** until (D) substantively progresses | Was 4–8 sessions; depends on Scenario A's post-(B) verdict |
+| F | Long-term programme target — derive chirality scale $\|\chi\| = \varphi^{-3}$ from pure 600-cell polytope geometry | **REGISTERED, DEFERRED** behind (B) + F.1/F.2/F.3 stabilization | Substantially deeper ambition than F.1 closure; programme-level ambition beyond current trajectory |
+| G | JUNO peer-review update integration when published | Pending external timeline | Will provide refinement of Phase 4 consistency signal toward potential empirical validation status |
+| H | Cross-window handover if Session 138 closes before (B) substantively progresses | Pending session state | Standard handover document protocol |
+
+### §14.8 Methodological reflection — reviewer-pause checkpoint precedent established
+
+Patches 0524–0528 establish a **reviewer-pause checkpoint precedent** for the programme. The trajectory's structure was:
+
+1. *Substantive multi-phase work* (Patches 0524–0527, four phases in one continuation session) — produced four Findings + claimed "FULL CLOSURE under Scenario A."
+2. *Reviewer-pause checkpoint* (between Patch 0527 and 0528) — assembled reviewer package; engaged ChatGPT for stress-testing; identified eight calibration targets + one unflagged ansatz.
+3. *Calibration patch* (Patch 0528) — applied calibrations; downgraded "FULL CLOSURE" to "PROVISIONAL CLOSURE at viability level"; registered Phase 2 foundations work as real structural bottleneck.
+4. *Decision-gate re-engagement* (this §14, Patch 0529) — updated decision-gate-level verdict structure with calibrated language.
+
+The reviewer-pause checkpoint between Patches 0527 and 0528 prevented overclaim cascade into downstream F.2/F.3 work. Without it, F.2 substantive content drafting would have inherited "Scenario A verdict CONFIRMED" language from the F.1 trajectory, requiring subsequent retraction once Phase 2 foundations issues surfaced.
+
+**Methodological precedent for future programme work:**
+- Substantive multi-phase closure trajectories should incorporate reviewer-pause checkpoints between phases or at trajectory completion, *before* downstream work begins inheriting closure-claim language.
+- Reviewer-pause checkpoints have low cost (1 reviewer-package assembly + 1 calibration patch) and high value (prevent overclaim cascade into downstream sectors).
+- The precedent applies particularly to trajectories where closure language would propagate into multiple downstream sectors (here: F.2, F.3, flagship paper assembly, decision gate re-engagement all inherit F.1 closure language).
+
+This methodological precedent is registered for future Layer 4 closure trajectories.
+
+---
+
+*§14 closes the decision-gate re-engagement memo at Patch 0529. The decision gate is now updated with the F.1 sub-question's calibrated PROVISIONAL CLOSURE status. The forward queue's immediate substantive priority is Phase 2 foundations work (B) addressing commitments B.1–B.3. Downstream trajectories (F.2, F.3, F.1 flagship paper assembly) are DEFERRED pending Phase 2 foundations progress.*
+
+---
+
+*This document is a viability decision gate at the F.2 / F.3 fork under the OPEN-SD-CHIR-PRIMITIVE umbrella. It is the Session 138 opening's substantive deliverable post Session 137 close cross-window handover seed. Companion deliverable on Thomas's acceptance of the pivot recommendation: programme registry updates per §9.1 + F.1 sub-question scoping sketch opening per §10 (A). Decision-gate methodological precedent registered for future cross-sector closure work per §12. **§14 added at Patch 0529 re-engages this decision gate with the calibrated F.1 sub-question status post Patches 0524–0528.** F.2 / F.3 trajectories remain DEFERRED at decision-gate level pending Phase 2 foundations work; Scenario A status: structurally VIABLE + phenomenologically CONSISTENT at viability level, derivationally PROVISIONAL.*
