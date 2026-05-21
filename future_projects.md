@@ -250,4 +250,57 @@
 
 ---
 
+## Programme-level priority update — Chirality Continuum v1.0 SHIPPED (20 May 2026, Session 137 Patch 0509)
+
+Following Capotauro v2.0 v1.0 SHIPPED (19 May 2026 Patch 0479) + Chirality Continuum v1.0 SHIPPED (20 May 2026 Patch 0509), the programme reaches a sixth flagship paper at v1.0 in seven weeks and crosses a structural inflection point: three of five observable manifestations under the OPEN-SD-CHIR-PRIMITIVE umbrella are now closed at full Layer 4 rigor (THEO-CHIR-CONT-2 + -3 covering manifestations (ii) electroweak V–A + (iii) electromagnetic handedness; manifestation (i) mass-mixing chirality at Layer 3 via THEO-CAP-1 + Layer 4 via cross-sector convergence at observable scale). The remaining structural bottleneck is now Layer 1 substrate-dynamics derivation — the **dynamical-substrate-law gate**.
+
+### **(F.1) Q1$'$+Q1$'$.A Layer 3 promotion of $\hat{n}$ + $\|\chi\| = \varphi^{-3}$ — dynamical-substrate-law gate — DEFINING NEXT PROGRAMME GATE**
+
+*Priority:* HIGHEST (defining next programme gate, externally confirmed by all three reviewers at chirality continuum v1.0 SHIP).
+*Scope:* Multi-paper; estimated 5–15 sessions (high uncertainty). Could move overall programme area estimate by 5–15 percentage points per `project_timeline_estimate.md`.
+*Trigger:* All three external reviewers (ChatGPT round-2 + Grok round-1 + CoPilot round-1) at chirality continuum v0.6 → v0.9 reviewer cycle independently identified Q1$'$+Q1$'$.A Layer 3 promotion as the defining next programme gate for the Capotauro programme. Strongest external validation pattern in CPP programme history.
+*Mechanism:* Derive substrate primitive 4D direction $\hat{n}$ as the unique direction picked out by CPP primitive axioms AXIM-1 through AXIM-9 at substrate-physics scale via Layer 3 substrate-dynamics machinery. Derive substrate chirality magnitude $\|\chi\| = \varphi^{-3}$ as the unique value compatible with $\hat{n}$ and the 600-cell perturbative-distance-ratio constraint. Layer 3 promotion would convert FI-CHIR-CONT-1 (substrate primitive 4D direction) + FI-CHIR-CONT-2 (substrate chirality magnitude) from Layer 2 foundational inputs to Layer 1 theorem-level consequences of CPP primitive axioms.
+*Falsifier:* If no Layer 1 derivation of $\hat{n}$ converges from primitive axioms after 30+ sessions of dedicated effort, the dynamical-substrate-law gate is either out of reach via current programme methodology or requires alternative substrate-dynamics architecture not yet conceived.
+*Registered:* 20 May 2026 Session 137 Patch 0513 (this entry).
+*Companion:* `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (Reading C closure trajectory through Patch 0441 saturated at theorem-registry level; Q7 cosmological-nucleation sub-questions Q7.1–Q7.4 scoped for future-window work).
+
+### **(F.2) OPEN-SD-CHIR-PRIMITIVE manifestation (iv) — thermodynamic causal arrow Layer 4 closure**
+
+*Priority:* HIGH (Layer 4 closure via THEO-CHIR-CONT-4 candidate; templates established at chirality continuum v1.0 SHIP).
+*Scope:* Single paper; estimated 4–8 sessions.
+*Mechanism:* Extend the topological-projection argument established in chirality continuum §3 to manifestation (iv): show that the substrate-handle magnitude $\chi/6$ propagates to observable thermodynamic causal-arrow scales via PCD-cycle-ordering mechanism (substrate temporal-asymmetry mechanism in CPP). Templates the joint-paper format used at chirality continuum (this time potentially solo, since the manifestation is single-channel).
+*Falsifier:* If the topological-projection argument does not generalize to manifestation (iv) — e.g., if the thermodynamic causal-arrow observable has additional RG-flow scale dependence not captured by the topological-substrate-quantity protection principle — the manifestation closes at substrate level (Layer 3) only without Layer 4 promotion.
+*Registered:* 20 May 2026 Session 137 Patch 0513 (this entry).
+
+### **(F.3) OPEN-SD-CHIR-PRIMITIVE manifestation (v) — cosmological-vacuum asymmetry Layer 4 closure**
+
+*Priority:* HIGH (Layer 4 closure via THEO-CHIR-CONT-5 candidate; connects to cosmology sub-domain).
+*Scope:* Single paper or potentially joint with manifestation (iv); estimated 5–10 sessions. Connects to OPEN-SM-4 Capotauro nucleation event via cosmological-timing link.
+*Mechanism:* Extend topological-projection argument to manifestation (v): show that substrate-handle magnitude $\chi/6$ propagates to observable cosmological-vacuum asymmetry scales via Capotauro nucleation event (cosmological-timing closure trajectory; connects to OPEN-SM-4 sub-claim (a) universe-wide sign-selection event). Would open the cosmology sub-domain of `project_timeline_estimate.md` (currently at ~5–15% closure).
+*Falsifier:* Same as (F.2) plus the cosmological-timing scale (Capotauro nucleation event temperature) may require substrate-dynamics machinery not yet derived — manifestation (v) closure may depend on (F.1) dynamical-substrate-law gate closure.
+*Registered:* 20 May 2026 Session 137 Patch 0513 (this entry).
+
+### **(F.4) Picture A alternative continuum-EFT framework**
+
+*Priority:* MEDIUM (OPEN-FP-SF-4-1 closure candidate as orthogonal complement to Picture B Wigner-Eckart framework completed at chirality continuum v1.0 SHIP).
+*Scope:* Single paper; estimated 4–8 sessions.
+*Mechanism:* Develop Picture A non-Wigner-Eckart EFT framework as alternative proof architecture for chirality continuum Layer 4 closures. Would provide independent methodological validation of THEO-CHIR-CONT-1 + -2 + -3 via different proof technique.
+*Registered:* 20 May 2026 Session 137 Patch 0513 (this entry).
+
+### **(F.5) SM-5 cooperation cross-sector closure for neutrino flavor sector**
+
+*Priority:* MEDIUM (continuing cross-sector Layer 4 work).
+*Scope:* Single paper or joint; estimated 3–6 sessions.
+*Mechanism:* Apply chirality continuum's joint-paper format template + topological-projection argument to neutrino flavor sector Layer 4 closure via SM-5 cooperation.
+*Registered:* 20 May 2026 Session 137 Patch 0513 (this entry).
+
+### **(F.6) SF-2 v2.0+ Layer 4 EFT closure with $\delta_{CP}$ derivation**
+
+*Priority:* MEDIUM (CP-violation phase derivation; inherits from chirality continuum V–A coupling work).
+*Scope:* Single paper; estimated 5–10 sessions.
+*Mechanism:* Build on THEO-CHIR-CONT-2 V–A coupling derivation to derive $\delta_{CP}$ at electroweak sector via PMNS perturbation machinery.
+*Registered:* 20 May 2026 Session 137 Patch 0513 (this entry).
+
+---
+
 *This document is updated as projects are completed or new ones are identified.*
