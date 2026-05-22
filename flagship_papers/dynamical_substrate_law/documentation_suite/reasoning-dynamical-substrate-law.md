@@ -1291,3 +1291,108 @@ The overall Phase 2 foundations work trajectory is approaching completion of its
 
 *Patch 0536 Tier 4 reasoning appended. B.2.q1 minimal algebraic realization formalization closed at sketch Layer 2 via representation theory of $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$. The minimality is FORCED by abelian-group rep theory + $\sigma_{cycle}^2 = 1$; no alternative realizations exist at finite-dimensional rep-theoretic level. The $\gamma^5$ analogy is made precise: both Dirac chirality and CPP A5-cyclicity have the same rep-theoretic structure as rank-0 multiplicative scalars in 1D irreps of abelian parity groups. B.1.q1 remains the single open load-bearing structural question for B.1 substantive closure.*
 
+
+---
+
+## §22 Patch 0537 — B.1.q1 matrix-element-layer $I_h$-covariance Tier 4 reasoning
+
+*Session 139 Patch 0537 — substantive structural work executing the revised §5.3 priority (6) item B.1.q1, addressing the B.1.a ansatz from §2.4.1. This Patch closes the LAST remaining genuinely-open B.1 ansatz; the B.1 substantive trajectory completes its load-bearing arc at sketch Layer 2.*
+
+### §22.1 Decision to execute B.1.q1 at this Patch and the layer-distinction insight
+
+Following Patch 0536's closure of B.2.q1 (which left only B.1.q1 as the single load-bearing structural question for B.1 substantive closure), the §5.3 priority ordering pointed unambiguously to B.1.q1 as the next item. Estimated effort 1–2 sessions per §2.6.
+
+The substantive insight that emerged early in the §13 work was the LAYER DISTINCTION between B.1.a (matrix-element layer) and B.1.d (substrate-physics layer). Patch 0534 §10 had already established the B.1.d substrate-locality temporal extension theorem — substrate-physics quantities at $v_{\text{host}}$ at $\mathcal{O}(\delta)$ inherit $I_h$-symmetry from the first-shell geometric structure. B.1.a asks a DIFFERENT question: does this $I_h$-symmetry at the substrate-physics layer propagate THROUGH the Wigner-Eckart machinery to the matrix-element layer where $|M^{\text{thermo}}|$ is computed?
+
+This is the standard pattern in CPP's Wigner-Eckart matrix-element computations: substrate physics is governed by one structural layer (the residual symmetry); matrix elements are computed by adding matter-state irrep structure on top. The B.1.a question is whether the matter-state irrep structure is consistent with the substrate-physics symmetry — and the answer is yes, by Reading C + framework homogeneity arguments.
+
+### §22.2 The structural framework — six-step sketch proof
+
+§13.7's sketch proof has a clean six-step structure:
+
+1. **Substrate physics is $I_h$-symmetric at $v_{\text{host}}$ at $\mathcal{O}(\delta)$**: established by Patch 0534 §10 (B.1.d substrate-locality temporal extension theorem).
+2. **Matter-state Hilbert space at $v_{\text{host}}$ is $I_h$-covariant**: established by Reading C + framework matter-content construction homogeneity (sketch level).
+3. **Substrate operator is in well-defined $I_h$-irrep**: per §13.4, $\vec{\omega}_{PCD}(v_{\text{host}})$ is in trivial $I_h$-irrep $A_g$ along $\hat{n}$.
+4. **Wigner-Eckart factorization holds**: standard machinery with matter states (Step 2) + operator (Step 3) in well-defined $I_h$-irreps.
+5. **Reduced matrix element is $I_h$-invariant substrate-primitive content** ($\propto \sigma_{cycle}\cdot\delta$).
+6. **Matrix element inherits $I_h$-covariance**: factorization preserves group-theoretic transformation properties.
+
+The proof is conceptually direct once the structural layer distinction is articulated. The substantive content is in Steps 1–3 (which combine results from Patches 0534, 0536, 0535 + Reading C framework commitment); Steps 4–6 are standard Wigner-Eckart machinery.
+
+### §22.3 What §13 establishes — and what it does not
+
+**§13 establishes:**
+
+- B.1.q1 closed at sketch Layer 2 with the matrix-element-layer $I_h$-covariance theorem (§13.6 statement, §13.7 proof).
+- B.1.a ansatz demonstrated structurally; the matrix-element-layer $I_h$-covariance inherits from substrate-physics $I_h$-symmetry via Wigner-Eckart machinery.
+- Connection to Capotauro K3-doublet and W-bracelet matrix-element computations (§13.8) — temporal sector uses the full $I_h$ residual symmetry at $v_{\text{host}}$ rather than a sub-stabilizer ($D_6$ for K3 / W-bracelet), but the Wigner-Eckart framework applies uniformly.
+- Layer 2 / Layer 3 split articulated (§13.9): structural framework at Layer 2; explicit cage-shell averaging factor at Layer 3 deferred.
+- **B.1 substantive trajectory load-bearing arc COMPLETE at sketch Layer 2**: all five B.1.a–B.1.e ansatzes now at sketch-level status.
+- **F.1 sub-question status upgrade question NOW IMMEDIATELY LIVE.**
+- §6.2 external reviewer-pause checkpoint registered as the BINDING GATE before any F.1 status propagation.
+
+**§13 does NOT establish:**
+
+- Layer 3 promotion. The explicit matter-state $I_h$-irrep enumeration + Schur-orthogonality CG factor computation for the temporal sector is deferred to flagship paper development.
+- F.1 sub-question status upgrade. The status remains "PROVISIONAL CLOSURE at viability level" — the upgrade question is now LIVE but pending reviewer-pause completion.
+- Resolution of higher-order $\mathcal{O}(\delta^2)$ extensions (B.1.q6).
+- B.2/B.3 supplementary work (B.2.q2-q4 derivative-order considerations, B.3.q2-q4 derivational support).
+
+### §22.4 The five-dimensional structural justification of the Phase 2 ansatz
+
+A programme-state observation worth registering explicitly: as of Patch 0537, the Phase 2 ansatz $\vec{\omega}_{PCD}(v) = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}(v)/|\hat{j}|_0$ is substantively justified at $\mathcal{O}(\delta)$ across FIVE distinct structural dimensions, each addressed by a specific Patch in the foundations work series:
+
+1. **Algebraic-realization dimension** (Patch 0536 §12, B.2.q1): the multiplicative TI-odd pseudoscalar form $\sigma_{cycle}\cdot(\cdot)$ is the unique minimal algebraic realization of A5's $\mathbb{Z}_2$ content via representation theory of $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$.
+
+2. **Derivative-order dimension** (Patch 0535 §11, B.1.q2): no curl-mediated derivative-order-1 alternative exists at $v_{\text{host}}$ — the full 4D curl 2-form vanishes at first order in $\delta$ by $I_h$ residual symmetry.
+
+3. **Substrate-locality dimension** (Patch 0534 §10, B.1.q3 + B.3.q1): the substrate's chirality content at $v_{\text{host}}$ at $\mathcal{O}(\delta)$ is bounded to first-shell content via the substrate-locality temporal extension theorem (direct temporal-sector analog of Capotauro C-W39).
+
+4. **First-shell-current-sum dimension** (Patch 0533 §9, B.1.q4): the first-shell current sum identity $\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n}$ at first order in $\delta$ establishes that the nonlocal-averaging-reduction coefficient renormalization is first-shell-bounded.
+
+5. **Matrix-element-layer $I_h$-covariance dimension** (this Patch §13, B.1.q1): the substrate matrix element $|M^{\text{thermo}}|$ at $v_{\text{host}}$ factorizes via Wigner-Eckart on $I_h$ with the reduced matrix element $\propto \sigma_{cycle}\cdot\delta$.
+
+Each dimension was independently load-bearing for the Phase 2 ansatz substantive justification. The cumulative result is a five-dimensional structural argument — the ansatz is uniquely determined (up to renormalization) by the framework's combination of A5-cyclicity content + Reading C residual symmetry + Mechanism A primitive + Wigner-Eckart machinery.
+
+The K3-base protection identity $\hat{e}_{ij}\cdot\hat{n} = 0$ is the load-bearing geometric source across dimensions 2, 3, and 4 (and indirectly 5 via the substrate-physics symmetry it underwrites). This identity's structural-economy status was registered at Patch 0535 §11.8 / Tier 4 §20.3.
+
+### §22.5 Why the reviewer-pause checkpoint is the binding gate
+
+§13.11 registered the §6.2 external reviewer-pause checkpoint as the BINDING GATE before any F.1 sub-question status propagation. This is a discipline question worth articulating clearly.
+
+The Phase 2 foundations work program from Patch 0531 onward has been an internal CPP-programme effort with multiple sub-questions closed at sketch Layer 2 across seven Patches. Each closure has been at the same rigor level (sketch-level structural arguments matching Capotauro v2.0's C-W39 / C-W40 status), with anti-priorities sustained throughout (no promotion to flagship paper, no v1.0 SHIPPED edits, no premature F.1 status upgrade).
+
+The F.1 sub-question status upgrade question — should "PROVISIONAL CLOSURE at viability level" upgrade to a stronger framing — is THE substantive programme-state question pending. Upgrading this status without external review would risk:
+- **Confirmation bias**: the internal closures have all been "positive" (no negative results in the B.1.a-B.1.e + B.2.q1 + B.3.q1 trajectory). An internal "this looks good" assessment could be insufficient.
+- **Layer-confusion risk**: sketch Layer 2 closures are NOT the same as Layer 3 (theorem-level) closures. External review would help distinguish what's robust at Layer 2 from what requires Layer 3 promotion.
+- **Discipline-erosion risk**: if internal closures alone could trigger F.1 status upgrade, the foundations work would become a self-sealing system. External engagement is the corrective.
+
+The §6.2 reviewer-pause checkpoint is therefore not optional — it is the structural mechanism preventing self-sealing closure. Anti-priority: do NOT trigger F.1 status upgrade until external reviewer-pause completes positively. Anti-priority: do NOT prepare F.1 status upgrade documents in advance.
+
+### §22.6 What is deliberately NOT in Patch 0537
+
+- No promotion of B.1.q1 result to registered finding (sketch Layer 2 only).
+- No Layer 3 promotion (specific matter-state irrep enumeration + Schur-orthogonality CG factor deferred to flagship paper development).
+- No F.1 sub-question status change (upgrade question is now LIVE but not resolved — pending reviewer-pause).
+- No v1.0 SHIPPED .tex source modification.
+- No Phase 1 §11 or Phase 2 §12 polished content modification.
+- No higher-order extension (B.1.q6 territory).
+- No external reviewer engagement DONE in this Patch — only registered as required next action.
+- No claim of F.1 substantive closure (only B.1 substantive trajectory load-bearing arc complete; B.2.q2-q4 + B.3.q2-q4 supplementary work remains; reviewer-pause pending).
+
+### §22.7 Forward-looking pointer — natural session-close
+
+Following Patch 0537, the recommended next action is **TRIGGER THE §6.2 EXTERNAL REVIEWER-PAUSE CHECKPOINT** — not another B.X.qY closure. This is a fundamental programme-state shift: the foundations work load-bearing arc has completed; the next move is review, not closure.
+
+The reviewer-pause workflow (per CPP standard practice with ChatGPT, Copilot, Grok):
+1. Prepare a calibration-style document summarizing the Patches 0531–0537 cumulative work at appropriate rigor level.
+2. Submit to reviewers with explicit asks: identify any structural gaps, premature closures, or layer-confusion risks; positive verdict required before F.1 status propagation.
+3. Receive reviewer feedback and integrate into a subsequent Patch (likely 0538 or later, after Thomas's authorization).
+4. If reviewer verdict positive: F.1 sub-question status upgrade Patch becomes implementable. If reviewer verdict negative: identify the structural gap and address in additional foundations work.
+
+**Patch 0537 is a natural session-close for Session 139.** The foundations work load-bearing trajectory has completed; the next session would begin with reviewer-pause preparation (which Thomas authorizes before substantive content). The session-close handover would record the load-bearing arc completion + reviewer-pause as the binding gate forward.
+
+---
+
+*Patch 0537 Tier 4 reasoning appended. B.1.q1 matrix-element-layer $I_h$-covariance closed at sketch Layer 2 via the layer-distinction insight (substrate-physics $I_h$-symmetry from B.1.d + matter-state Hilbert space $I_h$-covariance + Wigner-Eckart machinery). LAST remaining genuinely-open B.1 ansatz now at sketch-level status; B.1 substantive trajectory load-bearing arc COMPLETE at sketch Layer 2. Phase 2 ansatz substantively justified across five structural dimensions. F.1 sub-question status upgrade question NOW IMMEDIATELY LIVE; §6.2 external reviewer-pause checkpoint is the BINDING GATE before any F.1 status propagation. Patch 0537 is a programme-state milestone and natural Session 139 close point.*
+
