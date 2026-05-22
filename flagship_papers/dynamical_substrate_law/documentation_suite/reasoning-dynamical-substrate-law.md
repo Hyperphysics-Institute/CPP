@@ -1693,3 +1693,57 @@ Other methods examined in the audit: Wigner-Eckart factorization at $I_h$ matter
 
 The audit cycle surfaces a small methodological observation for future handover Patches: **the methods catalogue audit per §15 Step E is part of session-close handover discipline, not separate from it**. Future handover Patches should include a §2.5-equivalent audit-result section by default. Most sessions mark N/A; sessions with method-introduction (NEW or ADAPTED) register entries before shipping the handover. The Patch 0540h amendment process is itself a methodological observation: §15 Step E must be performed AT handover authoring, not as a post-hoc cleanup Patch (and the post-hoc cleanup itself must be incremental, not a full Patch re-statement — a learning from the 0540h2 → 0540i transition).
 
+---
+
+## §27 — Session 139 Patch 0540j: Handover audit-section codification reasoning
+
+*Brief Tier 4 reasoning for the OS §15.11 codification Patch closing Session 139. The substantive amendment lives in `templates/operating_system.md` §15.11 (~95 lines, added between §15.10 and §16); §27 records the meta-reasoning behind the codification choices.*
+
+### §27.1 The codification trigger
+
+Patch 0540j is triggered by the Patch 0540h handover failure mode: the audit table was mandated per existing §15 Step H paste-ready template (lines 1801-1810) but was omitted from the actual handover document at `handovers/2026-05-22_session_139_close_layer3_promotion_opened.md`. The omission caused Step E methods catalogue audit to be skipped, requiring follow-on Patches 0540i (audit completion) and 0540j (codification).
+
+The pattern matches the Patches 0531–0537 → 0538 → 0539a → 0539 reviewer-pause cycle precedent at §17.10: substantive failure surfaces calibration item; calibration response addresses the specific instance; OS codification operationalizes the calibration as standing programme practice; status upgrade closes the trajectory. For the handover audit gap, the analog is: Patch 0540h failure surfaces audit-omission; Patch 0540i addresses the specific Step E methods catalogue gap; Patch 0540j codifies the audit-section requirement at §15.11; Session 139 closes at codification (no separate status upgrade Patch since handover discipline is workflow rather than physics status).
+
+### §27.2 Why §15.11 rather than §15 Step H amendment in place
+
+Two options were considered: (a) amend §15 Step H paste-ready template (lines 1801-1810) inline to strengthen the audit table requirement; (b) add a new §15.11 subsection codifying the audit-section structural visibility requirement as separate codification.
+
+Option (b) was chosen because the failure mode is **structural visibility**, not template content. The existing §15 Step H template format is correct — it specifies the right audit table content. The failure was that the audit table was buried in the template format (lines 1801-1810 are mid-section in §15), easy to miss when authoring a long milestone-trajectory handover with dominant trajectory-narrative content. Amending the existing buried template inline does not address the visibility problem; adding a top-level §15.11 codifying "audit section MUST be a top-level visible final section in every handover document" does.
+
+The §15.11 codification supersedes the lines 1801-1810 format for the audit-table format (expanded per-registry Step E breakout) while preserving the lines 1801-1810 template as the routine-handover starting point. This is the standard codification pattern: new subsection strengthens existing requirement without invalidating it.
+
+### §27.3 Step E per-registry breakout as the load-bearing change
+
+The biggest content change at §15.11 is the Step E breakout from a single ✓ bullet to 11 per-registry sub-bullets. The existing §15 line 1707 already states "Each registry must be audited independently — bundling them as 'registry updates done' without per-registry verification is the failure mode that registry drift accumulates from" — but the audit *output format* at lines 1801-1810 still bundles Step E as a single line. The §15.11 fix is to make the per-registry breakout structurally visible in the audit table itself, forcing the author to walk each registry rather than mentally bundling them.
+
+The 11 registries are: research_frontier.md, future_projects.md, theorem-registry.md, axiom-registry.md, paper_catalog.md, predictions.md, master_glossary.md, methods_catalogue (sub-directory), methods_catalogue.md (programme-level), organizational_frontier.md, INDEX.md. The breakout matches the canonical 9-registry list at OS line 1707 (which I read at Patch 0540j preparation) plus the two methods_catalogue files (per OPEN-ORG-016 Phase 3 codification at Patch 0449a). The 11-registry list could grow in future as new programme registries are added; §15.11 framing accommodates this by stating "per-registry audit" rather than locking the list at 11.
+
+### §27.4 End-placement vs start-placement of audit section
+
+The §15.11 specification places the audit section at the END of the handover document, not the start. Two reasons:
+
+(i) The audit is a *completion check* on the handover. Placing it at the end forces the author to walk through it last, when all other handover sections are complete and the author has full visibility into what was and wasn't done.
+
+(ii) Start-placement would either require pre-authoring the audit before completing the work it audits (impossible) or risk the audit drifting out of sync with the actual handover content as later sections are added (defeats the purpose). End-placement avoids both failure modes.
+
+### §27.5 Why the template file creation is deferred
+
+The template file `templates/handover_document_template.md` is registered as OPEN-ORG-018 for Session 140 execution rather than being created at Patch 0540j. Reasoning:
+
+(i) Scope-bounded Patch discipline: Patch 0540j is OS amendment + registry update only; template file creation is operationalization work warranting its own Patch.
+
+(ii) §15.11 codification at the spec level is sufficient guidance for next-session-author. The template improves reliability but is not strictly required for §15.11 to fire — a next-window Opus reading §15.11 can produce the audit section without a template file by following the spec.
+
+(iii) Parallel to the Patch 0539a precedent: §17 Reviewer-Pause Cycle Protocol was codified in OS at Patch 0539a, with the corresponding `templates/reviewer_pause_template.md` file ALSO created at Patch 0539a. The Patch 0540j choice differs from this precedent (deferring template to Session 140) because Session 139 context budget is approaching close — minimizing Patch 0540j scope is preferable to bundling template creation at the cost of additional context burn.
+
+(iv) Template creation at Session 140 open also gives next-window Opus the opportunity to test §15.11 by authoring a Session 140-close handover with §15.11 audit section AS DESIGNED, then refining the template based on the authoring experience. Template-from-experience is more accurate than template-from-spec.
+
+### §27.6 Self-checkpoint — three places §27 could overstate
+
+(i) **The "structural visibility" framing at §27.2** may suggest §15.11 fully solves the audit-omission problem. It does not — §15.11 mandates the audit section format but cannot mandate that next-window Opus actually performs the audit honestly per Step E per-registry. The discipline depends on author honesty. §15.11 makes silent omission impossible (the section is structurally visible) but does not prevent false-✓ marking. §17.5 cross-reviewer convergence weighting discipline at the §17 reviewer-pause cycle level is the deeper check; §15.11 is the surface-level forcing function.
+
+(ii) **The "load-bearing change" framing for Step E per-registry breakout at §27.3** may suggest the breakout is sufficient. It is the most important change but not the only one. The end-placement requirement (§27.4) is equally load-bearing for structural visibility; the mandatory ✓/N/A-with-brief-note format prevents bare "N/A" silent omissions. Each is one of three discipline pillars; all three together produce the audit reliability.
+
+(iii) **The "scope-bounded Patch discipline" framing for template deferral at §27.5** may suggest the deferral is purely tactical. It is mostly tactical (context budget) but also has a methodological rationale (Patch 0540j is codification-Patch, template creation is operationalization-Patch, the two warrant separate Patches for traceability). The Patch 0539a precedent shows codification+template can be bundled; the Patch 0540j choice diverges based on Session 139 close timing.
+

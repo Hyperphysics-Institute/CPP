@@ -1,7 +1,7 @@
 # CPP Organizational Frontier
 
 **Location:** `/CPP/organizational_frontier.md`
-**Last updated:** 17 May 2026 (Session 130 handover, Patch 0426: OPEN-ORG-015 registered — terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence documented; workaround candidate `git commit -F message-file.txt`.) Earlier: 5 May 2026 (Session 13 close: OPEN-ORG-014 registered AND resolved in the same session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; demonstrated via inaugural `handover-SS-9.md`. Mirrors OPEN-ORG-013's same-session register-and-resolve pattern.)
+**Last updated:** 22 May 2026 (Session 139 close, Patch 0540j: OPEN-ORG-018 registered — create `templates/handover_document_template.md` as fill-in-the-blanks template for §15.11 audit section; scheduled for Session 140 execution; parallel to `templates/reviewer_pause_template.md` pattern from Patch 0539a). Earlier: 17 May 2026 (Session 130 handover, Patch 0426: OPEN-ORG-015 registered — terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence documented; workaround candidate `git commit -F message-file.txt`.) Earlier: 5 May 2026 (Session 13 close: OPEN-ORG-014 registered AND resolved in the same session — `templates/operating_system.md` §15 four-item checklist replaced by sequenced 8-step handover protocol with Step H paste-ready handover document; §4-vs-§15 reconciliation tension resolved by integration; demonstrated via inaugural `handover-SS-9.md`. Mirrors OPEN-ORG-013's same-session register-and-resolve pattern.)
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Rationale:** See `programmatic_decisions/PD-003-organizational-frontier-registry.md`
 **Companion registry:** `research_frontier.md` (theoretical/physics problems)
@@ -774,4 +774,33 @@ Phase 3 (operating-system amendment, deferred): Add a new §15 Step I (v1.0 SHIP
 
 **History:**
 - 18 May 2026 Session 133 Patch 0449b — Entry registered with Phase 1 landed: `templates/anthology_chapter_template.md` line 187 source priority expanded to include sketches (Tier 4 verbatim primary), `documentation_suite/reasoning-<paper>.md` (Tier 4 secondary), `documentation_suite/development-<paper>.md` (Tier 3 vignettes), and `founders_voice/NNN_*.md` (organizational vision) ahead of the existing mechanism → philosophy → reviews → lay-summary → .tex priority. `templates/paper_completion_checklist.md` C13 updated to reference expanded source set with rationale paragraph. `templates/documentation-suite.md` new "Input sources at SHIP-time production" section added covering 9-input-source priority list plus per-file source priority within that list. Phases 2 and 3 deferred to future-window dedicated session(s).
+
+## OPEN-ORG-018: Create `templates/handover_document_template.md` as fill-in-the-blanks template for §15.11 audit section
+
+**Status:** OPEN — registered Patch 0540j, scheduled for Session 140 execution.
+**Identified:** 22 May 2026 Session 139 Patch 0540j, after the Patch 0540h handover failure mode (audit table omitted because buried in §15 Step H paste-ready template format rather than structurally visible as a top-level section) was codified at §15.11. The codification at §15.11 is sufficient for next-session-author guidance; the template file operationalizes the codification by giving authors a fill-in-the-blanks starting point.
+**Priority:** MEDIUM (improves handover authoring reliability across all future sessions; not blocking Patch 0541 or any in-flight work).
+
+**Originating context:** Patch 0540h (Session 139 close handover) omitted the §15 Step H audit table despite the audit being mandated per the existing OS paste-ready template at lines 1801–1810. Root cause: the audit table format was buried mid-section in a long template, easy to miss when authoring a milestone-trajectory handover where the dominant content is trajectory-narrative sections. Patch 0540j codified §15.11 mandating audit section as top-level visible final section with explicit per-registry Step E breakout (11 sub-bullets). The corresponding template file is the operationalization step.
+
+**Problem:** Without a template file, every handover author must reconstruct the audit section format from §15.11 specification. The specification is explicit but the cognitive cost of translating spec → boilerplate adds friction at handover authoring time. A fill-in-the-blanks template eliminates the translation step: the author copies the template, replaces [brief note] placeholders with session-specific content, marks each Step ✓ or N/A. Parallel to `templates/reviewer_pause_template.md` (Patch 0539a) which provides the same fill-in-the-blanks abstraction for reviewer-pause checkpoint documents.
+
+**Proposed fix:** Create `templates/handover_document_template.md` (~150-250 lines) containing:
+
+1. Front matter template (Date, Authoring window, Target window, Author, Reader, Priority designation, Scope) — copy-paste with bracketed [PLACEHOLDER] fields.
+2. §1 "Who you are and how to read this" — boilerplate paragraph with [SESSION/PATCHES] bracket for session-specific replacement.
+3. §2 "Paste-ready quick-start" — table with [PATCH/DATE/DESCRIPTION] columns, [IMMEDIATE NEXT PRIORITY] block, [ANTI-PRIORITIES] block, [FILES TO READ AT BOOTUP] block.
+4. §3–§N "Programme state snapshot / Trajectory summary / Cross-window discipline carry-forward" — optional sections with placeholders, marked as "Include for milestone-trajectory handovers; omit for routine session-close handovers."
+5. **§N+1 "Step A–H Completion Audit" — MANDATORY section with full per-registry Step E breakout** per §15.11 format. Eleven registry sub-bullets pre-populated as `✓ / N/A — [note]` placeholders.
+6. Final "End of handover" closing line.
+
+The template MUST include §15.11's per-registry Step E breakout (11 sub-bullets) as fixed content (the registries don't change session-to-session), so the author only fills in ✓/N/A and brief notes per registry. This is the load-bearing template feature — it makes Step E omission impossible without explicit silent deletion of pre-populated bullets.
+
+**Trigger condition:** Session 140 open, before any Patch 0541 substantive work. Estimated 30-60 minutes (template authoring + cross-reference verification against §15 paste-ready format + commit). Could be combined with Patch 0541 candidacy authorization if Thomas prefers — template creation is independent of G.a (Target 2) vs G.b (Target 1) Layer 3 promotion decision and could be the first Patch of Session 140 regardless of substantive direction.
+
+**Blocking dependencies:** None.
+**Blocks:** Nothing critical for Patch 0541 — §15.11 codification is sufficient guidance without the template file; the template improves reliability but is not strictly required.
+
+**History:**
+- 22 May 2026 Session 139 Patch 0540j — Entry registered. OS §15.11 codified (handover document audit-section structural visibility requirement). Template file creation deferred to Session 140 per scope-bounded Patch discipline (Patch 0540j is OS amendment + registry update only; template file is operationalization work that warrants its own Patch). Anticipated resolution at Patch 0541-prep (first Patch of Session 140) or as a Session 140 opening interpolation Patch parallel to Patch 0539a's reviewer-pause-template creation pattern.
 
