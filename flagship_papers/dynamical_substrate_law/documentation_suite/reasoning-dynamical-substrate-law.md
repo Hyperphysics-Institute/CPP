@@ -765,3 +765,109 @@ The recommended order — disambiguation review → tractable computations (B.1.
 
 *Patch 0531 Tier 4 reasoning appended at Session 139 open. Foundations work substantively underway; no closures claimed; fourteen sub-questions queued. The trajectory remains in foundations-exploration state.*
 
+---
+
+## §17 Patch 0532 — B.1.q5 review-pause checkpoint Tier 4 reasoning
+
+*Session 139 Patch 0532 — substantive review-pause work on §2.2 three-layer disambiguation against ChatGPT's original Patch 0528 verbatim verdict.*
+
+### §17.1 Decision to execute B.1.q5 at this Patch
+
+The §5.3 priority ordering at Patch 0531 recommended B.1.q5 as the immediate next sub-question post-Patch 0531 — explicitly because review-pause sub-questions are the cheapest validation moves and should be front-loaded before deeper structural commitments. Patch 0531's §6.1 self-checkpoint specifically flagged two §2.2 framings that could overstate; B.1.q5 is the operationalization of testing whether the §2.2 placement itself overstates.
+
+The Patch 0531 §6.1 self-checkpoint noted "provisional structural claim reads as closer to closure than actual" — that is a §2.5 concern. But the §2.2 disambiguation was registered with all three of ChatGPT's listed alternatives placed at observable cosmological layer; this placement was made on grounds of *charitable reading* of ChatGPT's alternatives — not on verbatim correspondence. Whether the charitable reading is accurate was the explicit B.1.q5 target.
+
+### §17.2 Verbatim recovery from Patch 0528 §12.13 Calibration 4
+
+The Patch 0528 §12.13 Calibration 4 text was preserved in `F1_subquestion_pcd_orientation_link.md` and provides the registered version of ChatGPT's concern. The verbatim text identifies three alternatives with parenthetical qualifications:
+
+(1) "**Cycle-history accumulation** (the temporal chirality content builds up over many Absolute Moments, **not at a single cycle**)"
+
+(2) "**Nonlocal transport asymmetry** (the chirality content distributes across the substrate's connectivity graph rather than **localizing at one vertex**)"
+
+(3) "**Coarse-grained update statistics** (the chirality content emerges only at scales **above individual CP cycles**)"
+
+The parentheticals are load-bearing. Reading them as decisive disambiguators — which is how technical writing parentheticals function — gives:
+
+- (1): "not at a single cycle" → multi-AM = cosmological
+- (2): "rather than localizing at one vertex" → substrate-spatial distribution = substrate-matrix-element layer
+- (3): "above individual CP cycles" → multi-cycle = cosmological
+
+This is the key substantive recovery: alternative (2) has a substrate-spatial parenthetical, NOT a cosmological-scale parenthetical. Alternatives (1) and (3) have cosmological parentheticals.
+
+### §17.3 The surprise that drove the verdict
+
+The Patch 0531 §2.2 was written from memory of Patch 0528's calibration content — placing all three alternatives at observable cosmological layer felt cleanly defensible at the framing level. The §2.2 disambiguation table looked structurally clean.
+
+Working through the verbatim text at Patch 0532 surfaced a substantive mismatch: alternative (2) "Nonlocal transport asymmetry" with its parenthetical "distributes across the substrate's connectivity graph rather than localizing at one vertex" is precisely the language used in CPP substrate-physics to describe substrate-spatial structure at one vertex versus distributed across the substrate's connectivity. That language was registered in Capotauro v2.0's substrate-locality theorem framework (Finding C-W39 / C-W40) for the spatial sector.
+
+ChatGPT was, in alternative (2), invoking the same conceptual framework — asking whether the Phase 2 ansatz's chirality content legitimately localizes at the host vertex or actually distributes across the host + first-shell connectivity graph. That is a substrate-matrix-element / substrate-object layer concern, not an observable cosmological concern.
+
+The Patch 0531 §2.2 placement collapsed this distinction. The §2.2 was charitably-reading-aligned but not verbatim-faithful for alternative (2).
+
+### §17.4 What the §8 verdict establishes — and what it does not
+
+**The §8 verdict establishes:**
+
+- §2.2's three-layer framework is structurally coherent and analytically valuable (no walk-back of the layered disambiguation framework itself).
+- §2.2's placement of (1) and (3) at observable cosmological layer is verbatim-correct.
+- §2.2's placement of (2) at observable cosmological layer is verbatim-incorrect; the correct placement is at substrate-matrix-element / substrate-object layer.
+- The corrected placement of (2) connects directly to $\hat{j}_{DI}^{net}(v_{\text{host}})$'s first-shell-aggregated structure (Phase 1 result) — Phase 2's ansatz treats this as a host-vertex quantity (per standard CPP substrate-physics convention), but ChatGPT was specifically asking whether that treatment is structurally justified.
+- B.1.d substrate-locality temporal extension (ansatz §2.4.3) is THE load-bearing structural framework for B.1's response to alternative (2). B.1.q3 (the sub-question hardening B.1.d) is therefore elevated in priority.
+- Via B.1.d ↔ B.3.Move-1 cross-commitment dependency, B.3.q1 advances in priority simultaneously.
+
+**The §8 verdict does NOT establish:**
+
+- That alternative (2) is "resolved" — B.1.d is still an ansatz at Patch 0532. Resolution awaits B.1.q3 substantive closure (estimated 1–3 sessions per §2.6 table).
+- That the priority elevation in §8.8 is binding programme commitment — it is sketch-level recommendation pending Thomas's authorization.
+- That §2.2 should be modified inline at Patch 0531 — the immutable-Patch discipline means Patch 0531's §2.2 stands as registered; the refined placement is registered in §8.6 of Patch 0532 and supersedes for downstream work.
+- That ChatGPT's verbatim review text is fully recovered — only the Patch 0528 calibrated registration is recovered. Full verbatim recovery (if Thomas can supply ChatGPT's raw review text) might surface additional refinements.
+
+### §17.5 Methodological structure of the review-pause itself
+
+The B.1.q5 review-pause has a specific methodological structure worth registering as a programme pattern:
+
+1. **Identify a substantive structural move made in a prior patch.** (Here: §2.2 three-layer disambiguation at Patch 0531.)
+2. **Identify the prior reviewer concern the structural move purports to address.** (Here: ChatGPT's Patch 0528 verbatim alternative-mechanism listing.)
+3. **Recover the verbatim source material.** (Here: Patch 0528 §12.13 Calibration 4 verbatim text preserved at `F1_subquestion_pcd_orientation_link.md` §12.13.)
+4. **Check the structural move's faithfulness to the verbatim source.** (Here: per-alternative placement check against parenthetical qualifications.)
+5. **Issue a sketch-level verdict.** Possible verdicts: full match, partial match, full mismatch. (Here: partial match — framework correct, one placement incorrect.)
+6. **Translate the verdict into forward-queue implications.** (Here: B.1.q3 / B.3.q1 priority elevation.)
+7. **Apply self-checkpoint discipline.** (Here: §8.10 noted two places §8 itself could overstate and one place it could under-claim.)
+
+The cost is approximately half a session of analytical work; the value is preventing downstream propagation of a structural misplacement. The pattern is cheap and high-value — recommended for any future structural-disambiguation work in CPP.
+
+### §17.6 Connection to Patch 0531's §6 reviewer-pause self-checkpoint
+
+The Patch 0531 §6 reviewer-pause self-checkpoint operated at session close on the entire Patch 0531 work. It caught two §2.2 / §3.4 places where the sketch could overstate.
+
+The Patch 0532 B.1.q5 review-pause operates at sub-question scale on a specific §2.2 placement. It caught one alternative-placement that the §6 self-checkpoint did not flag.
+
+The two review-pause disciplines are complementary, not redundant:
+- §6 reviewer-pause at session close catches over-claim language that survives the writing process.
+- B.1.q5-style review-pauses catch placement / mapping errors against verbatim source material from prior reviewer concerns.
+
+Both are cheap (half-session each) and high-value (prevent downstream propagation). Programme-level lesson: deploy both at appropriate scales — session close + immediate-next sub-question — for substantive structural patches.
+
+### §17.7 What is deliberately NOT in Patch 0532
+
+- No modification of Patch 0531's §2.2 inline (immutable-Patch discipline).
+- No promotion of any B.1.a–B.1.e ansatz to closure (B.1.q5 is sketch-level analytical work, not B.1 substantive closure).
+- No finding registered (B.1.q5 verdict is at sketch level; findings live at theorem-level / sub-claim-closure level).
+- No F.1 sub-question status change (remains at "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work").
+- No v1.0 SHIPPED .tex source modification.
+- No §5.3 priority revision applied as binding (the §8.8 revision is sketch-level recommendation; Thomas's authorization required for binding revision).
+- No external reviewer engagement (sub-task (e) external review remains future-work item).
+
+### §17.8 Forward-looking pointer
+
+Following Patch 0532, the recommended (sketch-level) next priority is B.1.q4 (first-shell current sum identity) — tractable single-session computational sub-question. Closing B.1.q4 produces the explicit identity $\sum_i \hat{j}_{DI}^{net}(v_i) \parallel \hat{n}$ at first order, which is a structural input both to B.1.q3 (substrate-locality temporal extension) and to B.1.q2 (curl content explicit computation).
+
+After B.1.q4, the recommended priority is the **B.1.q3 + B.3.q1 substrate-locality temporal extension** structural work — the load-bearing response to ChatGPT's alternative (2) per the Patch 0532 verdict. This is estimated at 1–3 sessions (B.1.q3) plus shared work with B.3.q1.
+
+The overall Phase 2 foundations work (Phase 2.5) trajectory estimate remains at ~5–9 sessions for load-bearing sub-question progress, with a programme-level reviewer-pause checkpoint anticipated after substantive progress on B.1.q1–q3 + B.2.q1–q2 + B.3.q1 before any F.1 sub-question status upgrade.
+
+---
+
+*Patch 0532 Tier 4 reasoning appended. B.1.q5 review-pause delivered substantive refinement of §2.2 placement of ChatGPT's alternative (2). No closures claimed; no findings registered. The trajectory remains in foundations-exploration state with sharpened priority ordering recommended.*
+

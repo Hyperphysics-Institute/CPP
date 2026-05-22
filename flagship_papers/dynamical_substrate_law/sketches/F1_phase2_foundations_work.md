@@ -426,6 +426,133 @@ The Phase 2.5 work is exploratory by nature; closure of Phase 2.5 sub-questions 
 
 ---
 
+## §8 B.1.q5 review-pause checkpoint on §2.2 layered disambiguation
+
+*Section added Session 139 Patch 0532 — substantive work executing the §5.3 priority (1) item B.1.q5 review-pause checkpoint on the §2.2 layered disambiguation against ChatGPT's original Patch 0528 review verdict.*
+
+### §8.1 Sub-question framing per §2.6
+
+B.1.q5 as registered in the §2.6 sub-question queue table:
+
+> Re-examine the §2.2 layered disambiguation against ChatGPT's original review verdict to verify that the substrate-matrix-element layer is what ChatGPT's concern was directed at. If ChatGPT meant the per-cycle substrate layer instead, the framing of §2.3–§2.5 needs revision.
+
+The §2.2 disambiguation made a substantive structural move: it placed all three of ChatGPT's listed alternatives (cycle-history accumulation, nonlocal transport asymmetry, coarse-grained update statistics) at the observable cosmological layer. B.1.q5 asks whether that placement is faithful to ChatGPT's actual concern as registered.
+
+### §8.2 Method and source material
+
+Working from the Patch 0528 §12.13 Calibration 4 verbatim text preserved at `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §12.13. This is the explicitly registered version of ChatGPT's concern; ChatGPT's raw review text is preserved at user-side per Patch 0528 handover record. The review-pause checks §2.2's placement against this registered text — verbatim recovery of ChatGPT's review (if available) would enable an even sharper review-pause, but the registered text is the operative reference for current programme state.
+
+### §8.3 ChatGPT's three alternatives — verbatim from Patch 0528 §12.13
+
+The exact text registered at Patch 0528 §12.13 Calibration 4, with the parenthetical qualifications that disambiguate each alternative's intended layer:
+
+> The Phase 2 derivation assumes the thermodynamic chirality observable is **representable as a local algebraic object at the host vertex**. This is an unflagged ansatz. The observable could instead emerge from:
+> - **Cycle-history accumulation** (the temporal chirality content builds up over many Absolute Moments, not at a single cycle).
+> - **Nonlocal transport asymmetry** (the chirality content distributes across the substrate's connectivity graph rather than localizing at one vertex).
+> - **Coarse-grained update statistics** (the chirality content emerges only at scales above individual CP cycles).
+
+The parentheticals are load-bearing — they explicitly identify the scale/locus at which each alternative operates.
+
+### §8.4 Per-alternative placement analysis
+
+**(1) Cycle-history accumulation.** Parenthetical: "the temporal chirality content builds up over many Absolute Moments, not at a single cycle." The phrase "over many Absolute Moments, not at a single cycle" is explicit: this alternative is about multi-AM accumulation. The natural layer is observable cosmological (Phase 4's $|M^{thermo}| \to \Delta p_{LR}^{obs}$ chain accumulates per-event matrix elements over cosmological time). **§2.2 placement at observable cosmological layer is CORRECT.**
+
+**(2) Nonlocal transport asymmetry.** Parenthetical: "the chirality content distributes across the substrate's connectivity graph rather than localizing at one vertex." The phrase "distributes across the substrate's connectivity graph rather than localizing at one vertex" is explicit: this alternative is about substrate-spatial distribution, NOT cosmological accumulation. The natural layer is substrate-matrix-element / substrate-object layer — where the Phase 2 ansatz $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle} \cdot \hat{j}_{DI}^{net}(v_{\text{host}})$ claims localization at host vertex. **§2.2 placement at observable cosmological layer is INCORRECT.** The corrected placement is at substrate-matrix-element layer (Reading b of §8.6 below).
+
+**(3) Coarse-grained update statistics.** Parenthetical: "the chirality content emerges only at scales above individual CP cycles." The phrase "at scales above individual CP cycles" is explicit: this alternative is about above-cycle scales = multi-cycle = cosmological. The natural layer is observable cosmological. **§2.2 placement at observable cosmological layer is CORRECT.**
+
+### §8.5 Verdict — disambiguation structurally coherent; one placement needs revision
+
+The §2.2 three-layer framework (substrate per-cycle / substrate matrix element / observable cosmological) is structurally coherent. The three layers ARE distinct in CPP substrate-physics; the framework correctly identifies that ChatGPT's-class concerns can be cleanly partitioned across them.
+
+What the §2.2 placement got right (two of three): alternatives (1) and (3) are clearly cosmological per their parentheticals; §2.2 places them correctly.
+
+What the §2.2 placement got wrong (one of three): alternative (2) "Nonlocal transport asymmetry" was placed at observable cosmological layer, but the parenthetical "distributes across the substrate's connectivity graph rather than localizing at one vertex" makes clear ChatGPT was raising a substrate-spatial concern about chirality content distribution at the substrate-object level — not a cosmological-scale concern.
+
+The §2.2 disambiguation captured the right STRUCTURE (three layers) but applied an over-aggressive placement (all alternatives at one layer). The B.1.q5 review-pause has surfaced this misplacement.
+
+### §8.6 Refined placement of ChatGPT's alternatives
+
+| Alternative | §2.2 placement (Patch 0531) | Refined placement (this Patch) | Reason for refinement |
+|---|---|---|---|
+| (1) Cycle-history accumulation | Observable cosmological | Observable cosmological (UNCHANGED) | Parenthetical "over many Absolute Moments" confirms cosmological. |
+| (2) Nonlocal transport asymmetry | Observable cosmological | **Substrate-matrix-element / substrate-object** | Parenthetical "distributes across the substrate's connectivity graph rather than localizing at one vertex" identifies substrate-spatial concern, not cosmological. |
+| (3) Coarse-grained update statistics | Observable cosmological | Observable cosmological (UNCHANGED) | Parenthetical "at scales above individual CP cycles" confirms cosmological. |
+
+### §8.7 Connection of refined placement to $\hat{j}_{DI}^{net}$'s first-shell-aggregated structure
+
+The Phase 1 derivation result (sketch §11 / Finding DSL-1) computed the substrate's net DI-bit current at the host vertex:
+$$\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0 \delta / \varphi^2)\,\hat{n} + \mathcal{O}(\delta^2)$$
+This is a quantity computed AT the host vertex, with its value determined by aggregation over the 12 first-shell neighbors via Mechanism A's DI-bit propagation-rate asymmetry.
+
+Read strictly, the chirality information that produces $\vec{j}_{DI}^{net}$ at the host "lives in" the first-shell connectivity — the 12 host-to-first-shell edges + their direction-correlated rate biases. The Phase 2 ansatz $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle} \cdot \hat{j}_{DI}^{net}(v_{\text{host}})$ treats $\hat{j}_{DI}^{net}$ as a host-vertex quantity (standard CPP substrate-physics convention — currents at points are first-shell-determined like derivatives in continuum field theory).
+
+ChatGPT's alternative (2) "Nonlocal transport asymmetry" precisely asks: is this treatment justified, or does the chirality content actually distribute across the host + first-shell connectivity graph in a way that makes the host-vertex localization claim premature?
+
+This is structurally addressed (not yet resolved) by the Capotauro substrate-locality theorem (Finding C-W39) — which establishes spatial-sector chirality content localizes at the first-shell icosahedron — and its proposed temporal-sector extension via ansatz B.1.d (sketch §2.4.3). Under B.1.d, the substrate's per-cycle DI-bit-flux content localizes at the first-shell icosahedron of the host vertex, providing the structural framework for treating $\vec{j}_{DI}^{net}(v_{\text{host}})$ as a legitimate host-vertex quantity.
+
+**B.1.d is itself an ansatz** at this Patch — it is flagged in the §2.4.3 reduction argument. Hardening B.1.d (via sub-question B.1.q3) is the load-bearing structural work that responds to ChatGPT's alternative (2).
+
+### §8.8 Forward queue implications — priority elevation of B.1.q3 / B.3.q1
+
+The B.1.q5 verdict has substantive consequences for the §5.3 priority ordering:
+
+- **B.1.q3** (substrate-locality extension to the temporal sector via B.1.d) addresses ChatGPT's alternative (2) concern at the load-bearing structural level.
+- **B.3.q1** (Move-1: articulate Substrate-Locality Unification temporal extension parallel to Finding C-W40) shares structural work with B.1.q3 via the B.1.d ↔ B.3.Move-1 cross-commitment dependency registered at §5.
+
+**Recommended §5.3 priority revision** (sketch-level recommendation; requires Thomas's authorization before becoming binding):
+
+| Order | Sub-question | Rationale |
+|---|---|---|
+| (1) | B.1.q5 [CLOSED at sketch level this Patch] | Review-pause delivered substantive refinement of §2.2 placement. |
+| (2) | B.1.q4 first-shell current sum identity | Tractable computational sub-question; informs both B.1.q3 and B.1.q2. |
+| (3) | **B.1.q3 + B.3.q1** substrate-locality temporal extension | **PROMOTED from §5.3 priority (4) to (3).** Load-bearing for B.1's response to ChatGPT's alternative (2) per §8.5 verdict. |
+| (4) | B.1.q2 curl content explicit computation | Preserved priority; informs B.1.b ansatz. |
+| (5) | B.2.q1 minimal algebraic realization formalization | Preserved priority. |
+| (6) | B.1.q1 + B.1.q3 substantive substrate-locality extension at full theorem level | Preserved priority. |
+
+The promotion of B.1.q3 / B.3.q1 reflects that the substrate-locality temporal extension is no longer just a "framework-level cleanup" item but specifically THE load-bearing structural work for B.1's response to a verbatim ChatGPT concern.
+
+### §8.9 Methodological observation — review-pause discipline pattern
+
+The §2.2 three-layer disambiguation registered the right structural framework but applied it with an overly aggressive placement (all three of ChatGPT's alternatives at one layer). The B.1.q5 review-pause caught the misplacement before it propagated downstream into B.1's substantive closure work.
+
+The cost of the B.1.q5 review-pause: approximately half a session of structural analysis (this §8). The value: identified a misplacement that would have caused B.1's later substantive work (e.g., B.1.q1, B.1.q2 substantive closure attempts) to operate under the false assumption that ChatGPT's alternative (2) was a cosmological-layer concern not requiring substrate-physics resolution. Avoiding that misdirection is high-value relative to the cost.
+
+**Programme-level lesson registered:** when introducing a structural disambiguation, the immediate-next sub-question should explicitly check whether the disambiguation faithfully maps prior reviewer concerns to the new framework — not just whether the framework itself is internally coherent. The pattern templates future structural-disambiguation work in CPP: (a) propose framework; (b) re-examine framework against prior reviewer concerns at the immediate-next sub-question; (c) refine framework as needed before downstream substantive work proceeds.
+
+This is a variant of the §6.2 reviewer-pause checkpoint discipline applied at sub-question scale rather than session-close scale. Both serve the same epistemic function: catch overclaim before downstream propagation.
+
+### §8.10 Self-checkpoint at session close
+
+Two places where §8 itself could overstate:
+
+(i) The verdict "INCORRECT placement" for alternative (2) reads as sharp negative assessment of §2.2. The substantive content is more nuanced: §2.2 captured the right STRUCTURE (three layers) but applied an over-aggressive placement (all alternatives at one layer). §2.2 is not refuted; it is REFINED. The structural framework of §2.2 is preserved; only the per-alternative placement is corrected.
+
+(ii) The §8.8 recommended priority revision is a sketch-level recommendation. Binding §5.3 priority adjustment requires Thomas's authorization. The §5.3 ordering as registered at Patch 0531 remains operative until explicitly revised.
+
+One place where §8 could overstate by under-claim:
+
+(iii) §8 may read as if ChatGPT's alternative (2) is straightforwardly resolved by invoking B.1.d. In fact, B.1.d is itself an ansatz at this Patch — it is flagged in §2.4.3 reduction argument and registered as a future-hardening target via sub-question B.1.q3. Alternative (2) is not "resolved" by this Patch; it is "structurally located where the resolution framework lives." Resolution awaits B.1.q3 substantive closure.
+
+### §8.11 Status update
+
+- B.1.q5 CLOSED at sketch level with the verdict that §2.2's disambiguation framework is structurally correct but its placement of ChatGPT's alternative (2) requires refinement from observable cosmological layer to substrate-matrix-element / substrate-object layer.
+- §2.2 placement of alternatives (1) and (3) is CONFIRMED CORRECT.
+- §2.2 placement of alternative (2) is REFINED to substrate-matrix-element / substrate-object layer; the relevant structural framework for resolution is B.1.d substrate-locality temporal extension, addressed via sub-question B.1.q3 (and via cross-commitment dependency, B.3.q1).
+- B.1.q1, B.1.q2, B.1.q3, B.1.q4, B.1.q6 sub-question framings UNCHANGED.
+- B.2.q1, B.2.q2, B.2.q3, B.2.q4 sub-question framings UNCHANGED.
+- B.3.q1, B.3.q2, B.3.q3, B.3.q4 sub-question framings UNCHANGED.
+- F.1 sub-question status UNCHANGED at "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" per Patch 0528 §14.17.
+- No findings registered (B.1.q5 is review-pause sub-question; verdict is at sketch level structural analysis, not theorem-level claim).
+- No new ansatzes flagged (B.1.a–B.1.e from §2.4 unchanged).
+- §2.2 disambiguation table is NOT modified inline at Patch 0531's §2.2 (per immutable-Patch discipline); the refined placement is registered in §8.6 of this Patch and supersedes §2.2's placement for downstream work.
+- §5.3 priority ordering recommendation revised in §8.8; binding revision pending Thomas's authorization.
+
+---
+
 *This sketch opens Phase 2 foundations work (Phase 2.5 of F.1 trajectory) at Session 139 Patch 0531. Three commitments registered at Patch 0528 §14.17 (B.1 local algebraic representation ansatz, B.2 $\sigma_{cycle}$ algebraization + uniqueness, B.3 Case A.1 derivational support) are addressed at sketch-level structural exploration. B.1 receives the bulk of substantive work as the largest open question; B.2 and B.3 receive forward sketches. Fourteen sub-questions queued for future sessions. No closures claimed; no findings registered; no anti-priorities violated. Reviewer-pause checkpoint discipline applied at session close.*
 
-*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q5 (review-pause on layered disambiguation) and B.1.q4 (first-shell current sum identity) is the recommended next priority per §5.3.*
+*Patch 0532 (Session 139) closes B.1.q5 review-pause at sketch level — refined placement of ChatGPT's alternative (2) from observable cosmological to substrate-matrix-element layer; recommended priority elevation of B.1.q3 / B.3.q1 substrate-locality temporal extension as load-bearing for B.1's response to alternative (2).*
+
+*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q4 (first-shell current sum identity, tractable computational sub-question) and B.1.q3 + B.3.q1 (substrate-locality temporal extension, load-bearing for B.1) is the recommended next priority per §8.8 revised ordering.*

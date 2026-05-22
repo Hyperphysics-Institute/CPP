@@ -60,4 +60,36 @@ The session's deliverable: a substantive opening of Phase 2 foundations work wit
 
 ---
 
+## Vignette 3 — Session 139 Patch 0532: B.1.q5 review-pause surfaces a misplacement (May 2026)
+
+The recommended next priority post-Patch 0531 was B.1.q5 — the review-pause sub-question on the §2.2 three-layer disambiguation against ChatGPT's original Patch 0528 verdict. The framing of B.1.q5 was specific: check whether the substrate-matrix-element layer is what ChatGPT's concern was directed at, and revise the §2.3–§2.5 framing if not.
+
+The work began by recovering Patch 0528's §12.13 Calibration 4 verbatim text from `F1_subquestion_pcd_orientation_link.md`. The verbatim recovery surfaced something the Patch 0531 §2.2 had not been written against — the explicit parentheticals that ChatGPT had attached to each of the three alternatives:
+
+- **(1) Cycle-history accumulation** — parenthetical: "over many Absolute Moments, not at a single cycle"
+- **(2) Nonlocal transport asymmetry** — parenthetical: "distributes across the substrate's connectivity graph rather than localizing at one vertex"
+- **(3) Coarse-grained update statistics** — parenthetical: "emerges only at scales above individual CP cycles"
+
+The parentheticals are load-bearing. Read as decisive disambiguators (which is what technical-writing parentheticals are), they give:
+
+- (1): "not at a single cycle" → multi-AM → cosmological. §2.2 placement at observable cosmological is CORRECT.
+- (2): "rather than localizing at one vertex" → substrate-spatial distribution → substrate-matrix-element layer. §2.2 placement at observable cosmological is INCORRECT.
+- (3): "above individual CP cycles" → multi-cycle → cosmological. §2.2 placement at observable cosmological is CORRECT.
+
+The surprise of the session was alternative (2). Its parenthetical "distributes across the substrate's connectivity graph rather than localizing at one vertex" is precisely the language Capotauro v2.0's substrate-locality framework uses for the spatial sector (Findings C-W39 / C-W40). ChatGPT was, in alternative (2), raising a substrate-spatial concern about the chirality content's localization at the host vertex versus distribution across the host + first-shell connectivity. That is a substrate-matrix-element / substrate-object layer concern — not a cosmological-scale concern.
+
+The Patch 0531 §2.2 had collapsed this distinction by placing all three alternatives at observable cosmological layer. The placement of (1) and (3) was correct by parenthetical; the placement of (2) was incorrect. The §2.2 disambiguation FRAMEWORK (three distinct layers) is structurally coherent and analytically valuable; the §2.2 PLACEMENT applied the framework with one over-aggressive assignment.
+
+Two important framings landed in the verdict. First: the corrected placement of alternative (2) connects directly to $\hat{j}_{DI}^{net}$'s first-shell-aggregated structure from the Phase 1 derivation. The Phase 1 result computed $\hat{j}_{DI}^{net}$ at the host vertex with value determined by aggregation over the 12 first-shell neighbors. ChatGPT's alternative (2) is precisely the question: when the Phase 2 ansatz then writes $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle} \cdot \hat{j}_{DI}^{net}(v_{\text{host}})$, is the chirality content legitimately at the host vertex, or is it distributed across the substrate's connectivity graph in a way that makes the host-vertex localization claim premature?
+
+Second: the structural framework that addresses ChatGPT's alternative (2) is the substrate-locality temporal extension ansatz B.1.d (from §2.4.3 R3 reduction). B.1.d is itself an ansatz — flagged in the Patch 0531 §2.4.3 reduction, with hardening trajectory via sub-question B.1.q3. The verdict therefore translates into a priority elevation: B.1.q3 (and via the B.1.d ↔ B.3.Move-1 cross-commitment dependency, B.3.q1) becomes the load-bearing sub-question for B.1's response to alternative (2). The §5.3 priority ordering recommendation accordingly promoted B.1.q3 / B.3.q1 from §5.3-priority-(4) to §5.3-priority-(3).
+
+The methodological lesson of the session was about the value of explicit review-pause sub-questions at sub-question scale. The Patch 0531 §6 reviewer-pause self-checkpoint at session-close had operated on the entire Patch 0531 work and caught two §2.2 / §3.4 places where the sketch could overstate; it had NOT caught the alternative-(2) misplacement. The B.1.q5 review-pause at sub-question scale, operating with verbatim recovery of the prior reviewer's text, caught what the session-close self-checkpoint had missed. The two disciplines are complementary, not redundant — different scales, different methods, different failure modes caught.
+
+The session's deliverable was concentrated: ~127 lines of new sketch content in §8 of `F1_phase2_foundations_work.md` with eleven subsections covering verbatim recovery, per-alternative placement analysis, verdict, refined placement table, connection to Phase 1's first-shell-aggregated structure, forward queue implications, methodological observation, self-checkpoint, and status update. Programme state UNCHANGED — no findings registered, no theorems, no predictions, no anti-priority violations.
+
+**Forward queue post-Patch 0532:** B.1.q4 (first-shell current sum identity) is the recommended immediate next priority — tractable single-session computational sub-question producing $\sum_i \hat{j}_{DI}^{net}(v_i) \parallel \hat{n}$ at first order, which informs both B.1.q3 (substrate-locality temporal extension) and B.1.q2 (curl content). After B.1.q4, B.1.q3 + B.3.q1 substrate-locality temporal extension is the load-bearing structural work for B.1's response to alternative (2). The Phase 2 foundations work trajectory remains in foundations-exploration state; F.1 sub-question status remains "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work."
+
+---
+
 *Tier 3 development narrative for the dynamical-substrate-law paper. Append-only across sessions; future F.1 work (Phase 2 foundations work on B.1, B.2, B.3) will add new vignettes below this initial baseline. Distilled from the canonical Tier 4 record at `reasoning-dynamical-substrate-law.md`.*
