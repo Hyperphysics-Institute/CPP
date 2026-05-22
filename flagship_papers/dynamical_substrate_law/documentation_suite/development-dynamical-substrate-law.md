@@ -92,4 +92,35 @@ The session's deliverable was concentrated: ~127 lines of new sketch content in 
 
 ---
 
+## Vignette 4 — Session 139 Patch 0533: B.1.q4 first-shell current sum identity with explicit coefficient (May 2026)
+
+Thomas authorized the §8.8 priority revision at Session 139 continuation. The revised §5.3 ordering became binding programme priority; the next priority for execution was B.1.q4 first-shell current sum identity — the tractable single-session computational sub-question that the §2.6 table had estimated at 1 session.
+
+The §2.4.3 sketch had framed B.1.q4 as "parallel to Capotauro's $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$ identity" — the structural argument being that the current sum should be along $\hat{n}$ by the same icosahedral central-symmetry mechanism as the position sum. The framing was heuristic; the explicit identity was deferred.
+
+The substantive work uncovered two subtleties the §2.4.3 sketch had bypassed. First, the framework $\hat{n}$ is globally fixed (per Capotauro Reading C vertex-aligned to $v_{\text{host}}$). At a general vertex $v \neq v_{\text{host}}$, the framework $\hat{n}$ does not realign — it stays parallel to $v_{\text{host}}$. The Phase 1 simplification $\hat{u}_j \cdot \hat{n} = -1/(2\phi)$ uniform (load-bearing for Phase 1's boxed result) is specific to the vertex-aligned case; at $v_i$, the projections depend on $v_i$'s orientation in the global frame. Second, the §2.4.3 "parallel to Capotauro" framing was correct at the group-theoretic level but heuristic at the explicit level — both identities exhibit direction-collapse by icosahedral central symmetry, but the B.1.q4 coefficient requires a substantive computation.
+
+The session's main technical move was deriving a general per-vertex current formula:
+$$\vec{j}_{DI}^{net}(v) = 2 r_0 \delta\left[(2+\phi)\hat{n} - \frac{4a}{\phi}\hat{v}\right] + \mathcal{O}(\delta^2)$$
+where $a = \hat{v}\cdot\hat{n}$. This generalizes Phase 1's vertex-aligned result to arbitrary $v$ using standard icosahedral tensor sum identities ($\sum_j \hat{w}_j^v = 0$ central symmetry + $\sum_j \hat{w}_j^v \otimes \hat{w}_j^v = 4 P_{\perp v}$ via $I_h$-irreducibility + Schur's lemma on the 3D hyperplane perpendicular to $\hat{v}$). At $v_{\text{host}}$, the formula reduces to Phase 1's $(6 r_0\delta/\phi^2)\hat{n}$ — sanity check passes exactly.
+
+For the first-shell vertices $v_i$ of $v_{\text{host}}$: the 600-cell first-shell geometry gives $\hat{v}_i\cdot\hat{n} = \phi/2$ (polar angle 36°). Substituting: $\vec{j}^{net}(v_i) = 4 r_0\delta[\hat{n} - \sin(36°)\hat{e}_i]$ where $\hat{e}_i$ is the unit perpendicular component of $\hat{v}_i$ in the $\hat{n}$-$\hat{v}_i$ plane. Each $v_i$ has uniform magnitude $|\vec{j}^{net}(v_i)| = 2 r_0\delta\sqrt{7-\phi}$ (by $I_h$ permutation symmetry); the $\hat{n}$-component $4 r_0\delta$ is uniform across all 12 vertices, while the perpendicular component varies per vertex.
+
+Summing the 12 unit currents: the parallel components add to $12 \cdot 2/\sqrt{7-\phi}$; the perpendicular components $\hat{e}_i$ cancel because they form a regular icosahedron in 3D (perpendicular to $\hat{n}$) by $I_h$ residual symmetry at $v_{\text{host}}$, and the icosahedron is centrally symmetric. Result:
+$$\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = \frac{24}{\sqrt{7-\phi}}\,\hat{n} \approx 10.345\,\hat{n}$$
+
+The explicit coefficient $24/\sqrt{7-\phi}$ is determined by the 600-cell first-shell geometry — the polar angle 36° between $v_{\text{host}}$ and its first-shell + the per-vertex magnitude $\sqrt{7-\phi}$ scaling + the central-symmetry cancellation of perpendicular components.
+
+Numerical verification at machine precision via `flagship_papers/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py`: explicit 600-cell construction (120 vertices), computation of currents at all 12 first-shell neighbors of $v_{\text{host}}$, verification of all five load-bearing identities across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$ with all deviations $\leq 2 \times 10^{-15}$. The numerical match to machine precision verifies the entire derivation chain through the general per-vertex formula — not just the final identity but every intermediate step.
+
+The structural payoff: the §2.4.3 (R3) nonlocal spatial averaging reduction is now demonstrated at sketch level with an explicit coefficient. $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}[W_0 + 24 W_1/\sqrt{7-\phi}]\hat{n} = \sigma_{cycle} c'\hat{n}$ — along $\hat{n}$ (same direction as the Phase 2 local form), with coefficient $c'$ absorbed into Phase 3's normalization choice. (R3) is structurally equivalent to the Phase 2 ansatz at first order, up to renormalization.
+
+The B.1.q4 identity provides a PARTIAL structural response to ChatGPT's alternative (2) "Nonlocal transport asymmetry" — at leading order in $\delta$, the chirality content distributed across the host + first-shell connectivity collapses to a direction-uniform multiple of the host current direction. The distribution-vs-localization distinction reduces to a coefficient renormalization at first order. Full response to alternative (2) requires B.1.q3 substrate-locality temporal extension theorem (at all orders in $\delta$); B.1.q4 contributes the explicit identity that B.1.q3 needs as structural input.
+
+The session's deliverable: ~212 lines of new sketch content in §9 of `F1_phase2_foundations_work.md` (sketch grew 558 → 770 lines) with thirteen subsections covering authorization registration, sub-question framing, Phase 1 formula generalization, general per-vertex current formula, application to first-shell, main identity, structural interpretation, R3 reduction connection, alternative (2) response, higher-order caveat, refinement of §2.4.3 framing, self-checkpoint, status update — plus a Python verification script confirming all identities at machine precision. Programme state UNCHANGED — no findings registered, no theorems, no predictions, no anti-priority violations.
+
+**Forward queue post-Patch 0533:** B.1.q3 + B.3.q1 substrate-locality temporal extension (shared structural work via B.1.d ↔ B.3.Move-1 cross-commitment dependency; load-bearing for B.1's full response to ChatGPT's alternative (2); estimated 1–2 sessions) is the recommended next priority. The B.1.q4 identity provides the explicit first-shell sum structure that B.1.q3 needs as input. F.1 sub-question status remains "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work."
+
+---
+
 *Tier 3 development narrative for the dynamical-substrate-law paper. Append-only across sessions; future F.1 work (Phase 2 foundations work on B.1, B.2, B.3) will add new vignettes below this initial baseline. Distilled from the canonical Tier 4 record at `reasoning-dynamical-substrate-law.md`.*

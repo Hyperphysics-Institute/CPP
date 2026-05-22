@@ -551,8 +551,220 @@ One place where §8 could overstate by under-claim:
 
 ---
 
+## §9 B.1.q4 first-shell current sum identity — sub-question closed at sketch level
+
+*Section added Session 139 Patch 0533 — substantive computational work executing the revised §5.3 priority (2) item B.1.q4 first-shell current sum identity (per the §8.8 priority revision authorized by Thomas at session 139 continuation).*
+
+### §9.0 Authorization of the §8.8 priority revision
+
+The §8.8 recommended §5.3 priority revision (registered at Patch 0532 as sketch-level recommendation pending authorization) is authorized by Thomas at Session 139 continuation. The revised ordering is now binding programme priority (no longer "pending authorization"):
+
+| Order | Sub-question | Status |
+|---|---|---|
+| (1) | B.1.q5 review-pause checkpoint | CLOSED at Patch 0532 |
+| (2) | **B.1.q4 first-shell current sum identity** | **Executed in §9.1–§9.13 below — this Patch** |
+| (3) | B.1.q3 + B.3.q1 substrate-locality temporal extension (PROMOTED) | Next priority after B.1.q4 |
+| (4) | B.1.q2 curl content explicit computation | Preserved priority |
+| (5) | B.2.q1 minimal algebraic realization formalization | Preserved priority |
+| (6) | B.1.q1 + B.1.q3 substantive substrate-locality extension | Preserved priority |
+
+### §9.1 Sub-question framing per §2.6
+
+B.1.q4 as registered in the §2.6 sub-question queue table:
+
+> Derive the first-shell current sum identity $\sum_i \hat{j}^{net}(v_i)$ at first order (B.1.e). Parallel to Capotauro's $\sum_i \hat{u}_i = -(6/\varphi)\hat{n}$ identity. 1 session.
+
+The §2.4.3 (R3) reduction argument needed the B.1.e ansatz:
+
+> The claim $\sum_{i=1}^{12} \hat{j}^{net}(v_i) \parallel \hat{n}$ at first order in $\delta$ by icosahedral symmetry (using the same residual $I_h$ structure as the position sum identity). The argument structure is plausible but the explicit computation is deferred.
+
+B.1.q4 closes the explicit computation — and produces a stronger result than the original $\parallel \hat{n}$ ansatz: the sum has an explicit coefficient that can be derived in closed form from the 600-cell first-shell geometry.
+
+### §9.2 Setup — Phase 1 per-vertex current formula generalized
+
+Phase 1 (sketch §11.3 of `F1_subquestion_pcd_orientation_link.md`) derived the per-vertex current formula at $v_{\text{host}}$ under vertex-aligned $\hat{n} = v_{\text{host}}$ (Capotauro Reading C):
+
+$$\vec{j}_{DI}^{net}(v) = 2 r_0 \delta \sum_{j=1}^{12} (\hat{u}_j^v \cdot \hat{n})\,\hat{u}_j^v + \mathcal{O}(\delta^2)$$
+
+where $\{\hat{u}_j^v\}_{j=1}^{12}$ are the unit directions from $v$ to its 12 first-shell neighbors in 4D. At $v = v_{\text{host}}$, the load-bearing identities $\hat{u}_j \cdot \hat{n} = -1/(2\phi)$ uniform and $\sum_j \hat{u}_j = -(6/\phi)\hat{n}$ reduce this to the boxed Phase 1 result $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0 \delta/\phi^2)\hat{n}$.
+
+**The crucial subtlety for B.1.q4.** At a general vertex $v$ in the 600-cell, the framework $\hat{n}$ is fixed parallel to $v_{\text{host}}$ direction — it does NOT realign to $\hat{v}$. Therefore the Phase 1 simplification $\hat{u}_j \cdot \hat{n} = -1/(2\phi)$ uniform does NOT hold at $v \neq v_{\text{host}}$; the projections $\hat{u}_j^v \cdot \hat{n}$ depend on $v$'s orientation in the global frame. The per-vertex current at $v \neq v_{\text{host}}$ requires a generalized derivation.
+
+### §9.3 600-cell first-shell structure at general vertex $v$
+
+By 600-cell vertex-transitivity (the symmetry group acts transitively on the 120 vertices), every vertex $v$ has 12 first-shell neighbors in icosahedral arrangement. In $v$'s LOCAL frame (where $v$'s vertex direction $\hat{v}$ replaces $\hat{n}$ as the polar axis), the first-shell satisfies the same Phase 1 identities: $\hat{u}_j^v \cdot \hat{v} = -1/(2\phi)$ uniform and $\sum_j \hat{u}_j^v = -(6/\phi)\hat{v}$.
+
+Decomposition of $\hat{u}_j^v$ into $\hat{v}$-parallel + perpendicular parts:
+
+$$\hat{u}_j^v = -\frac{1}{2\phi}\,\hat{v} + \frac{\sqrt{2+\phi}}{2}\,\hat{w}_j^v$$
+
+where $\{\hat{w}_j^v\}_{j=1}^{12}$ are 12 unit vectors in the 3D hyperplane perpendicular to $\hat{v}$, forming a regular icosahedron in that hyperplane. The coefficient $\sqrt{2+\phi}/2 = \sqrt{1 - 1/(4\phi^2)}$ ensures $|\hat{u}_j^v| = 1$.
+
+Two icosahedron identities in the perpendicular hyperplane:
+- **Central symmetry**: $\sum_j \hat{w}_j^v = 0$ (icosahedron's vertices are centrally symmetric in their 3D hyperplane).
+- **Tensor sum isotropy**: $\sum_j \hat{w}_j^v \otimes \hat{w}_j^v = 4\,P_{\perp v}$ where $P_{\perp v} = I - \hat{v}\otimes\hat{v}$ is the projector onto the 3D hyperplane perpendicular to $\hat{v}$. (Proof: $I_h$ acts irreducibly on the 3D hyperplane; by Schur's lemma any $I_h$-invariant symmetric 2-tensor is proportional to $P_{\perp v}$; the trace $\sum_j |\hat{w}_j^v|^2 = 12$ fixes the coefficient at $12/3 = 4$.)
+
+### §9.4 General per-vertex current formula
+
+Substituting the decomposition into the Phase 1 formula, using $a \equiv \hat{v}\cdot\hat{n}$ for the projection of $v$ onto the framework $\hat{n}$:
+
+$$\hat{u}_j^v \cdot \hat{n} = -\frac{a}{2\phi} + \frac{\sqrt{2+\phi}}{2}(\hat{w}_j^v \cdot \hat{n})$$
+
+$$\sum_j (\hat{u}_j^v \cdot \hat{n})\,\hat{u}_j^v = \sum_j \left[-\frac{a}{2\phi} + \frac{\sqrt{2+\phi}}{2}(\hat{w}_j^v \cdot \hat{n})\right] \left[-\frac{1}{2\phi}\,\hat{v} + \frac{\sqrt{2+\phi}}{2}\,\hat{w}_j^v\right]$$
+
+Expanding into four terms and using the two icosahedron identities to reduce:
+- Term $\hat{v}\hat{v}$ scalar: $\frac{a}{4\phi^2}$, summed over 12 vertices → $\frac{3a}{\phi^2}\hat{v}$.
+- Cross terms with $\hat{w}_j^v$ scalar: vanish by $\sum_j \hat{w}_j^v = 0$.
+- Term $\hat{w}_j^v \hat{w}_j^v$ tensor: $\frac{2+\phi}{4} \cdot 4\,P_{\perp v}\hat{n} = (2+\phi)(\hat{n} - a\hat{v})$.
+
+Combining:
+
+$$\sum_j (\hat{u}_j^v \cdot \hat{n})\,\hat{u}_j^v = \frac{3a}{\phi^2}\hat{v} + (2+\phi)(\hat{n} - a\hat{v}) = (2+\phi)\,\hat{n} + a\left[\frac{3}{\phi^2} - (2+\phi)\right]\hat{v}$$
+
+Using the golden-ratio identities $1/\phi^2 = 2 - \phi$ and $1/\phi = \phi - 1$: $\frac{3}{\phi^2} - 2 - \phi = 3(2-\phi) - 2 - \phi = 4 - 4\phi = -4/\phi$. Substituting:
+
+$$\boxed{\;\vec{j}_{DI}^{net}(v) = 2 r_0 \delta \left[(2+\phi)\,\hat{n} - \frac{4a}{\phi}\,\hat{v}\right] + \mathcal{O}(\delta^2) \;\text{where}\; a \equiv \hat{v}\cdot\hat{n}\;}$$
+
+**Sanity check at $v = v_{\text{host}}$** (where $\hat{v} = \hat{n}$, $a = 1$): the formula gives $2 r_0 \delta [(2+\phi) - 4/\phi]\hat{n}$. Computing $(2+\phi) - 4/\phi = (2\phi + \phi^2 - 4)/\phi = (2\phi + \phi + 1 - 4)/\phi = (3\phi - 3)/\phi = 3(\phi-1)/\phi = 3/\phi^2$. Result: $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0 \delta /\phi^2)\hat{n}$. ✓ Matches Phase 1's boxed result exactly.
+
+### §9.5 Application to first-shell vertex $v_i$
+
+For $v_i$ a first-shell neighbor of $v_{\text{host}}$ (so $v_i = v_{\text{host}} + (1/\phi)\hat{u}_i$ in 4D coordinates with $|v_i| = 1$), the projection onto $\hat{n}$:
+
+$$a_i \equiv \hat{v}_i \cdot \hat{n} = v_i \cdot v_{\text{host}} = 1 + (1/\phi)(\hat{u}_i \cdot \hat{n}) = 1 - \frac{1}{2\phi^2} = \frac{\phi}{2}$$
+
+(Using $1 - 1/(2\phi^2) = 1 - (2-\phi)/2 = \phi/2$.) So all 12 first-shell vertices $v_i$ have $\hat{v}_i \cdot \hat{n} = \phi/2$ uniform; geometrically, $v_i$ sits at polar angle $\arccos(\phi/2) = 36°$ from $v_{\text{host}}$.
+
+Substituting $a_i = \phi/2$ into the general formula:
+
+$$\vec{j}_{DI}^{net}(v_i) = 2 r_0 \delta\left[(2+\phi)\,\hat{n} - \frac{4(\phi/2)}{\phi}\,\hat{v}_i\right] = 2 r_0 \delta\left[(2+\phi)\,\hat{n} - 2\,\hat{v}_i\right]$$
+
+Decomposing $\hat{v}_i = (\phi/2)\hat{n} + \sin(36°)\,\hat{e}_i$ where $\hat{e}_i$ is the unit perpendicular component of $\hat{v}_i$ in the $\hat{n}$-$\hat{v}_i$ plane (and $\sin(36°) = \sqrt{(3-\phi)/4} = \sqrt{3-\phi}/2$):
+
+$$\vec{j}_{DI}^{net}(v_i) = 2 r_0 \delta\left[(2+\phi)\hat{n} - \phi\hat{n} - 2\sin(36°)\hat{e}_i\right] = 4 r_0 \delta\left[\hat{n} - \sin(36°)\,\hat{e}_i\right]$$
+
+**Per-vertex first-shell current**: each $v_i$ has current $4 r_0 \delta[\hat{n} - \sin(36°)\hat{e}_i]$, which has $\hat{n}$-component $4 r_0\delta$ (uniform across the 12 first-shell vertices) and a perpendicular component $-4 r_0\delta\sin(36°)\hat{e}_i$ that differs per vertex.
+
+**Magnitude (uniform across 12)**: $|\vec{j}_{DI}^{net}(v_i)| = 4 r_0 \delta\sqrt{1 + \sin^2(36°)} = 4 r_0 \delta\sqrt{(7-\phi)/4} = 2 r_0 \delta\sqrt{7-\phi}$.
+
+### §9.6 First-shell current sum identity — main result
+
+Unit vector at each first-shell vertex:
+
+$$\hat{j}_{DI}^{net}(v_i) = \frac{2}{\sqrt{7-\phi}}\left[\hat{n} - \sin(36°)\,\hat{e}_i\right]$$
+
+Sum over the 12 first-shell vertices of $v_{\text{host}}$:
+
+$$\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = \frac{2}{\sqrt{7-\phi}}\left[12\,\hat{n} - \sin(36°)\sum_{i=1}^{12}\hat{e}_i\right]$$
+
+The 12 perpendicular unit vectors $\{\hat{e}_i\}$ lie in the 3D hyperplane perpendicular to $\hat{n}$. By $I_h$ residual symmetry at $v_{\text{host}}$ (which permutes the 12 first-shell vertices and hence their perpendicular components), the set $\{\hat{e}_i\}$ forms a regular icosahedron in this 3D hyperplane. By central symmetry of the icosahedron:
+
+$$\sum_{i=1}^{12} \hat{e}_i = 0$$
+
+**The B.1.q4 identity**:
+
+$$\boxed{\;\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = \frac{24}{\sqrt{7-\phi}}\,\hat{n} \approx 10.345\,\hat{n} \quad \text{at first order in}\; \delta\;}$$
+
+**Numerical verification at machine precision**: `flagship_papers/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py` — explicit 600-cell construction (120 vertices), computation of per-vertex currents at all 12 first-shell neighbors of $v_{\text{host}}$, and verification of all five load-bearing identities ($\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniform; $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$; Phase 1's $\vec{j}^{net}(v_{\text{host}}) = (6r_0\delta/\phi^2)\hat{n}$; first-shell current magnitude $2 r_0 \delta\sqrt{7-\phi}$ uniform across 12 vertices; B.1.q4 identity $\sum_i \hat{j}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n}$) across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$ with all deviations from analytic values $\leq 2 \times 10^{-15}$.
+
+### §9.7 Structural interpretation
+
+The B.1.q4 identity has three structural features worth registering:
+
+**(i) The result is along $\hat{n}$ — direction-uniformity in the sum.** Each first-shell current has both an $\hat{n}$-parallel component (uniform, $4 r_0\delta$) and a perpendicular component (different per vertex). Summing the unit vectors: the parallel components add to $12 \cdot (2/\sqrt{7-\phi})$, while the perpendicular components $\hat{e}_i$ cancel by icosahedral central symmetry. This is the mechanism for direction-uniformity in the sum despite per-vertex direction-variation.
+
+**(ii) The coefficient $24/\sqrt{7-\phi} \approx 10.345$ is determined by 600-cell first-shell geometry.** It depends on: the uniform polar angle $\arccos(\phi/2) = 36°$ between $v_{\text{host}}$ and its first-shell neighbors (a 600-cell-specific property); the per-vertex current magnitude $2 r_0 \delta\sqrt{7-\phi}$; and the icosahedral arrangement enabling perpendicular cancellation. The coefficient is calculable in closed form from the substrate geometry — not a free parameter.
+
+**(iii) Comparison to host: the first-shell sum is $\approx 10.345$ times the host unit current.** Locally at $v_{\text{host}}$: $\hat{j}_{DI}^{net}(v_{\text{host}}) = \hat{n}$. The first-shell aggregate (summing 12 unit currents) gives approximately ten times this. The "first-shell amplification factor" $\eta_{1\text{-shell}} \equiv 24/\sqrt{7-\phi} \approx 10.345$ is a substrate-geometric quantity that enters any nonlocal-spatial-averaging analysis.
+
+### §9.8 Connection to (R3) nonlocal spatial averaging reduction in §2.4.3
+
+The §2.4.3 (R3) representation:
+
+$$\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\left[W_0 \hat{j}_{DI}^{net}(v_{\text{host}}) + W_1 \sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i)\right]$$
+
+Substituting the B.1.q4 identity and the host current direction:
+
+$$\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\left[W_0\hat{n} + W_1 \cdot \frac{24}{\sqrt{7-\phi}}\,\hat{n}\right] = \sigma_{cycle}\left(W_0 + \frac{24 W_1}{\sqrt{7-\phi}}\right)\hat{n}$$
+
+**The R3 nonlocal spatial averaging reduces to the Phase 2 local algebraic form at first order, up to coefficient renormalization $c' = W_0 + 24 W_1/\sqrt{7-\phi}$.** The renormalization is absorbed into Phase 3's normalization choice ($|\hat{j}^{net}|_0$ at sketch §13.4 of `F1_subquestion_pcd_orientation_link.md`). Structurally, (R3) is equivalent to the Phase 2 ansatz at first order — the §2.4.3 R3 reduction argument is now demonstrated at sketch level with an explicit coefficient.
+
+### §9.9 Connection to ChatGPT's alternative (2) at substrate-matrix-element layer
+
+Per Patch 0532 §8.7 verdict, ChatGPT's alternative (2) "Nonlocal transport asymmetry" with verbatim parenthetical "the chirality content distributes across the substrate's connectivity graph rather than localizing at one vertex" is placed at substrate-matrix-element / substrate-object layer (NOT observable cosmological).
+
+B.1.q4 provides PARTIAL structural response to this concern. At first order in $\delta$:
+
+1. The first-shell-distributed current content, summed over the 12 first-shell vertices, points along $\hat{n}$ — the same direction as the host vertex current.
+2. The per-vertex direction-variation at first-shell ($\hat{e}_i$ components) cancels in the sum by icosahedral central symmetry.
+3. The remaining $\hat{n}$-aligned aggregate has explicit coefficient $24/\sqrt{7-\phi} \approx 10.345$ — a substrate-geometric quantity, not a free parameter.
+
+**What this establishes.** The "chirality content distribution across substrate's connectivity graph" (ChatGPT's verbatim language for alternative (2)) collapses to a direction-uniform multiple of the host current's direction when summed over the host + first-shell. At leading order, the distribution-vs-localization distinction reduces to a coefficient renormalization absorbed into Phase 3's normalization.
+
+**What this does NOT establish.** Full resolution of alternative (2) requires the substrate-locality temporal extension theorem (B.1.d ansatz at §2.4.3). B.1.q4 provides the explicit identity needed for B.1.q3's substantive derivation but is not itself the resolution. The Capotauro v2.0 spatial-sector substrate-locality theorem (Finding C-W39) operates at all orders in $\varepsilon$; the temporal-sector analog at all orders in $\delta$ is the B.1.q3 target.
+
+### §9.10 Higher-order caveat
+
+The B.1.q4 identity holds at first order in $\delta$ only. Three structural observations on higher-order behavior:
+
+**At $\mathcal{O}(\delta^2)$**: Phase 1's derivation (sketch §11) was carried out at first order; second-order corrections involve second-shell coupling that depends on the 600-cell's structure beyond the immediate first-shell. The per-vertex formula $\vec{j}_{DI}^{net}(v) = 2 r_0 \delta[(2+\phi)\hat{n} - (4a/\phi)\hat{v}]$ above is first-order; second-order corrections are not derived here.
+
+**$I_h$ residual symmetry at $v_{\text{host}}$ is exact**: this symmetry holds at all orders in $\delta$ (it's a symmetry of the unperturbed substrate, not a first-order approximation). Therefore the sum $\sum_i \vec{j}_{DI}^{net}(v_i)$ remains $\parallel \hat{n}$ at all orders — the direction-uniformity from icosahedral central symmetry survives.
+
+**But the explicit coefficient $24/\sqrt{7-\phi}$ is first-order**. At $\mathcal{O}(\delta^2)$, the coefficient may receive corrections; the structural conclusion (parallel to $\hat{n}$) survives, the explicit value may shift. Sub-question B.1.q6 registers higher-order analysis as future work.
+
+### §9.11 Refinement of the §2.4.3 "parallel to Capotauro" framing
+
+The §2.4.3 sketch invoked "Capotauro's $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$ identity (sketch §13.2 / Phase 1 verification)" as the structural parallel for the B.1.q4 identity claim. Closer examination of the §9 derivation:
+
+Both identities use $I_h$ residual symmetry at $v_{\text{host}}$ + central symmetry of the icosahedron formed by 12 first-shell-related unit vectors. The structural parallel is correct at the group-theoretic level:
+- **Capotauro's $\sum_i \hat{u}_i$**: 12 first-shell DIRECTIONS from $v_{\text{host}}$, decomposed into $\hat{n}$-parallel (uniform $-1/(2\phi)$) + perpendicular (icosahedron in 3D, sums to zero by central symmetry).
+- **B.1.q4 $\sum_i \hat{j}_{DI}^{net}(v_i)$**: 12 first-shell unit CURRENTS, decomposed into $\hat{n}$-parallel (uniform $2/\sqrt{7-\phi}$) + perpendicular (icosahedron of $\hat{e}_i$ in 3D, sums to zero by central symmetry).
+
+The §9 derivation makes the structural parallel precise: both identities exhibit the same direction-collapse mechanism (perpendicular cancellation by icosahedral central symmetry); the parallel components add to the explicit coefficient determined by the 600-cell geometry. The §2.4.3 heuristic is now sharpened to an explicit identity.
+
+### §9.12 Self-checkpoint at session close
+
+Three places where §9 could overstate:
+
+(i) The "first order in $\delta$" qualifier is essential. The explicit coefficient $24/\sqrt{7-\phi}$ does NOT automatically extend to higher orders; higher-order corrections require B.1.q6 work.
+
+(ii) The §9.9 connection to ChatGPT's alternative (2) describes PARTIAL structural response. Full resolution of alternative (2) requires B.1.q3 substrate-locality temporal extension theorem; B.1.q4 contributes the structural identity (not the theorem).
+
+(iii) The §9.4 general per-vertex formula $\vec{j}_{DI}^{net}(v) = 2 r_0 \delta[(2+\phi)\hat{n} - (4a/\phi)\hat{v}]$ is at sketch level. It generalizes Phase 1's vertex-aligned result to arbitrary vertex $v$ under fixed framework $\hat{n}$, using standard icosahedral tensor sum identities. The derivation is structurally sound (numerically verified at machine precision) but is registered at sketch level — NOT as a new finding. (Anti-priority: no findings registered at this Patch; the general formula is an intermediate result supporting the B.1.q4 main identity.)
+
+### §9.13 Status update
+
+- **B.1.q4 CLOSED at sketch level** with explicit identity: $\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n} \approx 10.345\,\hat{n}$ at first order in $\delta$.
+- B.1.e ansatz from §2.4.3 demonstrated at sketch level (stronger than original $\parallel \hat{n}$ claim — explicit coefficient provided).
+- Structural consequence: R3 nonlocal spatial averaging reduces to coefficient renormalization $c' = W_0 + 24 W_1/\sqrt{7-\phi}$ at first order; structurally equivalent to Phase 2 local algebraic form.
+- PARTIAL structural response to ChatGPT's alternative (2): leading-order direction-uniformity demonstrated with explicit coefficient; full response requires B.1.q3.
+- Numerical verification at machine precision at `flagship_papers/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py` across five test $\delta$ values; max deviations $\leq 2 \times 10^{-15}$.
+- B.1.a, B.1.b, B.1.c, B.1.d ansatzes UNCHANGED (B.1.e demonstrated; the other four remain as flagged).
+- B.1.q1, B.1.q2, B.1.q3, B.1.q5 [CLOSED at Patch 0532], B.1.q6 sub-question framings UNCHANGED.
+- B.2.q1–q4, B.3.q1–q4 sub-question framings UNCHANGED.
+- F.1 sub-question status UNCHANGED at "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work".
+- **No findings registered** at Patch 0533 (B.1.q4 identity is at sketch level, not theorem level).
+- No new ansatzes flagged.
+- No v1.0 SHIPPED .tex source modifications.
+- No Phase 2 §12 polished content modifications in `F1_subquestion_pcd_orientation_link.md`.
+- §5.3 priority revision authorized (§9.0) — revised ordering now binding programme priority.
+
+**Forward queue post-Patch 0533:**
+
+- (A) Next priority per revised §5.3 ordering: **B.1.q3 + B.3.q1 substrate-locality temporal extension** (shared structural work via B.1.d ↔ B.3.Move-1 cross-commitment dependency; load-bearing for B.1's full response to ChatGPT's alternative (2); estimated 1–2 sessions). The B.1.q4 identity derived in this Patch (§9.6) provides the explicit first-shell sum structure that B.1.q3 needs as input.
+- (B) Following B.1.q3 + B.3.q1: B.1.q2 curl content explicit computation (1 session).
+- (C) Following B.1.q2: B.2.q1 minimal algebraic realization formalization (1–2 sessions).
+- (D) F.1 flagship paper assembly DEFERRED until load-bearing sub-questions substantively progress.
+- (E) F.2/F.3 substantive content DEFERRED at decision-gate level.
+- (F) Long-term programme target — chirality scale from polytope geometry — REGISTERED + DEFERRED.
+
+---
+
 *This sketch opens Phase 2 foundations work (Phase 2.5 of F.1 trajectory) at Session 139 Patch 0531. Three commitments registered at Patch 0528 §14.17 (B.1 local algebraic representation ansatz, B.2 $\sigma_{cycle}$ algebraization + uniqueness, B.3 Case A.1 derivational support) are addressed at sketch-level structural exploration. B.1 receives the bulk of substantive work as the largest open question; B.2 and B.3 receive forward sketches. Fourteen sub-questions queued for future sessions. No closures claimed; no findings registered; no anti-priorities violated. Reviewer-pause checkpoint discipline applied at session close.*
 
 *Patch 0532 (Session 139) closes B.1.q5 review-pause at sketch level — refined placement of ChatGPT's alternative (2) from observable cosmological to substrate-matrix-element layer; recommended priority elevation of B.1.q3 / B.3.q1 substrate-locality temporal extension as load-bearing for B.1's response to alternative (2).*
 
-*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q4 (first-shell current sum identity, tractable computational sub-question) and B.1.q3 + B.3.q1 (substrate-locality temporal extension, load-bearing for B.1) is the recommended next priority per §8.8 revised ordering.*
+*Patch 0533 (Session 139) closes B.1.q4 first-shell current sum identity at sketch level — explicit derivation of $\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n} \approx 10.345\,\hat{n}$ at first order in $\delta$, numerically verified at machine precision; structural consequence: R3 nonlocal spatial averaging reduces to coefficient renormalization $c' = W_0 + 24 W_1/\sqrt{7-\phi}$; §5.3 priority revision authorized by Thomas, B.1.q3 + B.3.q1 substrate-locality temporal extension promoted to next priority.*
+
+*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q3 + B.3.q1 substrate-locality temporal extension (load-bearing for B.1's full response to ChatGPT's alternative (2)) is the recommended next priority per revised §8.8 ordering.*

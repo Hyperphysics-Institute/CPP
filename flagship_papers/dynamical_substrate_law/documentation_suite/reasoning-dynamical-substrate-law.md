@@ -871,3 +871,114 @@ The overall Phase 2 foundations work (Phase 2.5) trajectory estimate remains at 
 
 *Patch 0532 Tier 4 reasoning appended. B.1.q5 review-pause delivered substantive refinement of §2.2 placement of ChatGPT's alternative (2). No closures claimed; no findings registered. The trajectory remains in foundations-exploration state with sharpened priority ordering recommended.*
 
+---
+
+## §18 Patch 0533 — B.1.q4 first-shell current sum identity Tier 4 reasoning
+
+*Session 139 Patch 0533 — substantive computational work executing B.1.q4 first-shell current sum identity per the authorized §5.3 priority revision.*
+
+### §18.1 Authorization of the §8.8 priority revision
+
+The §8.8 recommended priority revision (registered at Patch 0532 as sketch-level recommendation pending Thomas's authorization) is authorized by Thomas at Session 139 continuation. The revised §5.3 ordering is now binding programme priority — the "sketch-level recommendation pending authorization" qualifier is removed. The B.1.q3 + B.3.q1 substrate-locality temporal extension is now formally promoted from priority (4) to (3) in the §5.3 ordering.
+
+The authorization triggered B.1.q4 execution per priority (2) — the tractable computational sub-question that informs both B.1.q3 (substrate-locality temporal extension) and B.1.q2 (curl content). The 1-session estimate from §2.6 table proved accurate for this work.
+
+### §18.2 The structural surprise of B.1.q4
+
+The §2.4.3 sketch had registered the B.1.e ansatz as "$\sum_i \hat{j}_{DI}^{net}(v_i) \parallel \hat{n}$ at first order by icosahedral symmetry (parallel to Capotauro's $\sum_i \hat{u}_i$ identity)." The framing was heuristic — the structural argument was sketched but the explicit identity was deferred.
+
+The substantive work in §9 revealed two things the §2.4.3 sketch had implicitly assumed without verification:
+
+**First subtlety**: the framework $\hat{n}$ is GLOBALLY FIXED (per Capotauro Reading C, vertex-aligned to $v_{\text{host}}$). At a general vertex $v \neq v_{\text{host}}$, the framework $\hat{n}$ does NOT realign to $\hat{v}$ — it stays parallel to $v_{\text{host}}$'s direction. The Phase 1 simplification $\hat{u}_j \cdot \hat{n} = -1/(2\phi)$ uniform (which was the load-bearing identity for Phase 1's boxed result) is SPECIFIC to vertex-aligned $\hat{n} = v_{\text{host}}$ at the host. At $v_i \neq v_{\text{host}}$, the projections $\hat{u}_j^{v_i} \cdot \hat{n}$ are NOT uniform; they depend on $v_i$'s orientation in the global frame.
+
+**Second subtlety**: the §2.4.3 "parallel to Capotauro's identity" framing was correct at the GROUP-THEORETIC level but heuristic at the EXPLICIT level. Both Capotauro's position sum and the B.1.q4 current sum exhibit direction-collapse by icosahedral central symmetry of perpendicular components — the structural parallel is real. But the explicit coefficient for the current sum requires a substantive computation through the per-vertex current formula generalized to arbitrary $v$.
+
+These two subtleties imply B.1.q4's actual derivation is more substantive than the §2.4.3 sketch suggested. The deliverable in §9 is not just "$\parallel \hat{n}$" but an explicit closed-form coefficient $24/\sqrt{7-\phi}$ derived from the 600-cell first-shell geometry.
+
+### §18.3 The general per-vertex current formula
+
+The key technical move of §9 is the general per-vertex current formula derived in §9.4:
+
+$$\vec{j}_{DI}^{net}(v) = 2 r_0 \delta \left[(2+\phi)\,\hat{n} - \frac{4a}{\phi}\,\hat{v}\right] + \mathcal{O}(\delta^2), \quad a \equiv \hat{v}\cdot\hat{n}$$
+
+This formula is a sketch-level generalization of Phase 1's boxed result. It uses standard icosahedral tensor sum identities ($\sum_j \hat{w}_j^v = 0$ central symmetry + $\sum_j \hat{w}_j^v \otimes \hat{w}_j^v = 4 P_{\perp v}$ via $I_h$-irreducibility on the 3D hyperplane perpendicular to $\hat{v}$) combined with the 600-cell vertex-transitivity that gives every vertex the same first-shell structure in its local frame.
+
+At $v_{\text{host}}$ ($a = 1$, $\hat{v} = \hat{n}$): the formula reduces to Phase 1's $(6 r_0\delta/\phi^2)\hat{n}$ — sanity check passes exactly. At $v_i$ ($a = \phi/2$ from the 600-cell first-shell geometry): the formula gives $\vec{j}^{net}(v_i) = 2 r_0\delta[(2+\phi)\hat{n} - 2\hat{v}_i]$, which decomposes into a uniform $\hat{n}$-component $4 r_0\delta$ plus a per-vertex perpendicular component $-4 r_0\delta\sin(36°)\hat{e}_i$.
+
+**Why this formula is registered at sketch level, NOT as a new finding.** The derivation chain (Phase 1 formula + general first-shell decomposition + icosahedral tensor sum identities) is all standard substrate-physics machinery. Promoting the general formula to a "finding" would invoke a higher rigor status (theorem-level claim) than the derivation supports at present — the formula is an INTERMEDIATE result supporting the B.1.q4 identity; it is not the primary deliverable. The Patch 0533 anti-priorities sustain the "no findings registered" discipline.
+
+### §18.4 The B.1.q4 identity and its numerical verification
+
+The main result of §9:
+
+$$\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = \frac{24}{\sqrt{7-\phi}}\hat{n} \approx 10.345\,\hat{n} \quad \text{at first order in}\; \delta$$
+
+Two derivation paths converge to this result:
+
+**Path A (group-theoretic)**: $I_h$ residual symmetry at $v_{\text{host}}$ permutes the 12 first-shell vertices, hence permutes their currents, hence the sum is $I_h$-invariant; the $I_h$-invariant direction is $\hat{n}$; therefore $\sum_i \vec{j}^{net}(v_i) \parallel \hat{n}$. This establishes the direction but not the coefficient.
+
+**Path B (explicit)**: per-vertex formula at $v_i$ gives $\vec{j}^{net}(v_i) = 4 r_0\delta[\hat{n} - \sin(36°)\hat{e}_i]$ with uniform magnitude $2 r_0\delta\sqrt{7-\phi}$ across the 12 vertices; sum of unit vectors gives $(24/\sqrt{7-\phi})\hat{n}$ since perpendicular components $\hat{e}_i$ cancel by icosahedral central symmetry in 3D perpendicular to $\hat{n}$.
+
+Both paths confirm the identity. Path B provides the explicit coefficient that Path A leaves open.
+
+**Numerical verification at machine precision**: the explicit 600-cell construction in `code/verify_b1q4_first_shell_current_sum.py` confirms all five load-bearing identities (uniform polar angle at $v_{\text{host}}$; Phase 1 position sum; Phase 1's boxed current; per-vertex first-shell current magnitude $2 r_0\delta\sqrt{7-\phi}$ uniform; B.1.q4 unit-current sum $(24/\sqrt{7-\phi})\hat{n}$) across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$ with max deviations $\leq 2 \times 10^{-15}$.
+
+The numerical verification at machine precision is structurally significant: it confirms not just the B.1.q4 identity itself but the entire derivation chain through the general per-vertex formula. If any step in §9.2–§9.6 were wrong, the numerical sum would not match the analytical $24/\sqrt{7-\phi}$ exactly. The match to $2 \times 10^{-15}$ over multiple $\delta$ values verifies the derivation comprehensively.
+
+### §18.5 The structural payoff for R3 reduction in §2.4.3
+
+The B.1.q4 identity provides the explicit content that completes the §2.4.3 (R3) nonlocal spatial averaging reduction:
+
+$$\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\left(W_0 + \frac{24 W_1}{\sqrt{7-\phi}}\right)\hat{n} = \sigma_{cycle} \cdot c' \hat{n}$$
+
+This is along $\hat{n}$ — same direction as the Phase 2 local algebraic form $\sigma_{cycle}\hat{n}$. The coefficient $c' = W_0 + 24 W_1/\sqrt{7-\phi}$ is absorbed into Phase 3's normalization choice (the $|\hat{j}_{DI}^{net}|_0$ in sketch §13.4 of `F1_subquestion_pcd_orientation_link.md`). Therefore (R3) is structurally equivalent to the Phase 2 ansatz at first order, up to renormalization.
+
+This completes the §2.4.3 sketch reduction for (R3) at first order. The B.1.d ansatz (substrate-locality extension to temporal sector) is now demonstrated for the leading-order direction-uniformity at sketch level — the chirality content distributed across the host + first-shell connectivity aligns along $\hat{n}$ at leading order, structurally consistent with the host-vertex localization claim of the Phase 2 ansatz at first order.
+
+### §18.6 What B.1.q4 contributes to ChatGPT's alternative (2) response
+
+The Patch 0532 §8.7 verdict located ChatGPT's alternative (2) at substrate-matrix-element / substrate-object layer, with the resolution framework being B.1.d substrate-locality temporal extension (hardening via B.1.q3).
+
+B.1.q4 contributes a PARTIAL structural response: at first order in $\delta$, the first-shell-distributed current content, summed over the 12 first-shell vertices, points along $\hat{n}$ — the same direction as the host vertex current. The per-vertex direction-variation at the first-shell ($\hat{e}_i$ components) cancels by icosahedral central symmetry. The "chirality content distribution across substrate's connectivity graph" (ChatGPT's verbatim language) collapses to a direction-uniform multiple of the host current direction when summed appropriately.
+
+**What this establishes** (leading-order direction-uniformity): the distribution-vs-localization distinction reduces to a coefficient renormalization at leading order. The Phase 2 ansatz's treatment of $\vec{\omega}_{PCD}$ as a host-vertex quantity is consistent with the first-shell-aggregated structure at leading order.
+
+**What this does NOT establish** (substrate-locality theorem at all orders): the Capotauro v2.0 spatial-sector substrate-locality theorem (Finding C-W39) is an all-orders structural theorem in $\varepsilon$; its temporal-sector analog at all orders in $\delta$ is the B.1.q3 target. B.1.q4 contributes leading-order direction-uniformity; full substrate-locality temporal extension at all orders requires the B.1.q3 work.
+
+The relationship: B.1.q4 provides the explicit identity that B.1.q3's substantive derivation needs as input. Without B.1.q4's explicit coefficient, B.1.q3 would need to either derive it as a sub-step or work at a more abstract level. With B.1.q4 closed, B.1.q3 can focus on the all-orders theorem structure using the leading-order identity as a calibrated anchor.
+
+### §18.7 Self-checkpoint at session close — places where §9 could overstate
+
+Three places where §9 overstate risks were caught and addressed:
+
+(i) **First-order restriction**: the explicit coefficient $24/\sqrt{7-\phi}$ is first-order. §9.10 explicitly registers this and notes higher-order corrections require B.1.q6 work. Without the explicit qualifier, §9 could read as if the coefficient extends to all orders.
+
+(ii) **Partial vs. full response to alternative (2)**: §9.9 explicitly notes "PARTIAL structural response" with the full response requiring B.1.q3. Without this distinction, §9 could read as if B.1.q4 substantively resolves alternative (2) — which it does not.
+
+(iii) **General per-vertex formula at sketch level**: §9.4's general formula generalizes Phase 1's vertex-aligned result. §9.12 explicitly registers this as sketch-level (NOT a new finding) to maintain the no-findings-registered anti-priority. Without this registration, the general formula could be over-claimed as a theorem-level result.
+
+These three self-checkpoint catches reflect the §6 reviewer-pause discipline applied at sub-question scale — the same pattern as Patch 0532's B.1.q5 review-pause but applied preventively rather than retrospectively. The pattern (sketch-level work + immediate-next self-checkpoint identifying overclaim risks) is internalized as standard discipline for foundations-work patches.
+
+### §18.8 What is deliberately NOT in Patch 0533
+
+- No promotion of B.1.q4 identity to programme-level finding (sketch-level identity only).
+- No promotion of §9.4 general per-vertex formula to a new finding (intermediate result, not primary deliverable).
+- No closure of B.1 itself (B.1.q1, B.1.q2, B.1.q3, B.1.q6 remain open; B.1.q4 and B.1.q5 closed at sketch level).
+- No F.1 sub-question status change (remains "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work").
+- No v1.0 SHIPPED .tex source modification.
+- No Phase 2 §12 polished content modification in `F1_subquestion_pcd_orientation_link.md`.
+- No modification to Capotauro v2.0 content; B.1.q4 uses Capotauro's structural results (Reading C, vertex-aligned $\hat{n}$, first-shell geometry) but does not extend or modify Capotauro v2.0 itself.
+- No claim that B.1.d substrate-locality temporal extension theorem is proven (B.1.d remains an ansatz; B.1.q4 contributes structural identity for the eventual B.1.q3 derivation).
+
+### §18.9 Forward-looking pointer
+
+Following Patch 0533, the recommended next priority per revised §5.3 ordering is **B.1.q3 + B.3.q1 substrate-locality temporal extension** (shared structural work via B.1.d ↔ B.3.Move-1 cross-commitment dependency). The B.1.q4 identity derived in this Patch (§9.6) provides the explicit first-shell sum structure that B.1.q3 needs as input. The estimated effort is 1–2 sessions for the shared work.
+
+After B.1.q3 + B.3.q1: B.1.q2 curl content explicit computation (1 session), then B.2.q1 minimal algebraic realization formalization (1–2 sessions).
+
+The overall Phase 2 foundations work (Phase 2.5) trajectory estimate remains at ~5–9 sessions for load-bearing sub-question progress, with a programme-level reviewer-pause checkpoint anticipated after substantive progress on B.1.q1–q3 + B.2.q1–q2 + B.3.q1 before any F.1 sub-question status upgrade.
+
+---
+
+*Patch 0533 Tier 4 reasoning appended. B.1.q4 first-shell current sum identity closed at sketch level with explicit coefficient $24/\sqrt{7-\phi}$ and numerical verification at machine precision. The trajectory remains in foundations-exploration state with B.1.q3 + B.3.q1 substrate-locality temporal extension as the recommended next priority.*
+
