@@ -194,3 +194,19 @@ The reason it deserves preservation is not that it is rare or sacred, but that i
 ---
 
 *Maintainers commit to updating this document as further cases accumulate, including failures. An honest protocol document is one that continues to be checked against reality rather than one that ossifies into aspiration.*
+
+---
+
+## 8. Reviewer-pause cycles as operationalization of this protocol (added 22 May 2026, Patch 0539a)
+
+The six-principle reviewer engagement standard articulated in §2 is operationalized at major closure milestones via the **Reviewer-Pause Cycle Protocol** codified in `templates/operating_system.md` §17.
+
+A reviewer-pause cycle is the structured-checkpoint form of the per-paper review cycle (§5 of operating_system.md): rather than reviewing a single paper draft, reviewers engage with the cumulative load-bearing structural-argument arc of an entire flagship trajectory. The six-principle standard applies uniformly — engage with reviewer feedback honestly, weight cross-reviewer convergence as load-bearing evidence, calibrate scope rather than reopen closures when arguments hold within proper scope, preserve epistemic uncertainty rather than seek validation.
+
+The F.1 trajectory precedent (Patches 0531–0537 → Patch 0538 calibration → Patch 0539 status upgrade) demonstrates the cycle operating productively: three reviewers returned three distinct verdicts spanning the full range; cross-reviewer convergence between two reviewers on the same two structural concerns served as the strongest signal; the calibration response Patch addressed the convergent concerns without reopening any sub-question; the status upgrade Patch followed as a separate Patch implementing the refined framing.
+
+The reviewer-pause cycle is a specific application of this protocol's principles to a specific failure mode (epistemic drift through self-sealing closure). It is not a replacement for ordinary per-paper review cycles, which continue independently. Future flagship trajectories (F.2, F.3, etc.) inherit the workflow; future Opus windows opening on such trajectories should review the F.1 precedent artifacts at `flagship_papers/dynamical_substrate_law/reviewer_pause/`.
+
+---
+
+*Updated 22 May 2026 (Patch 0539a) — added §8 cross-reference to `templates/operating_system.md` §17 Reviewer-Pause Cycle Protocol noting that reviewer-pause cycles operationalize the six-principle engagement standard at major closure milestones in flagship-paper-trajectory work.*

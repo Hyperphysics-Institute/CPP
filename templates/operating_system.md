@@ -25,6 +25,7 @@
 14. Organizational Frontier Registry
 15. Session-close Handover Protocol
 16. SHIP Trigger Protocol
+17. Reviewer-Pause Cycle Protocol
 
 ---
 
@@ -1965,8 +1966,237 @@ The Session 135 reactive pattern (Phase 7B fires only when user asks "are the re
 
 ---
 
+## 17. Reviewer-Pause Cycle Protocol (adopted 22 May 2026, Patch 0539a)
+
+### What this protocol is
+
+The **Reviewer-Pause Cycle** is the formal external-review checkpoint that operates at major closure milestones in flagship-paper-trajectory work (F.x trajectories — e.g., F.1 thermodynamic-arrow dynamical substrate law, future F.2 / F.3 trajectories). It is the binding gate before any sub-question status upgrade Patch or flagship paper assembly.
+
+### Distinction from §5 Multi-AI Review Cycle
+
+§5 governs **per-paper review** for standard CPP paper production (SM-x, SS-x, EW-x, QM-x, SR-x, SD-x, SF-x series). §17 governs **closure-milestone external review** for flagship-paper-trajectory work where multiple Patches of sketch-Layer-2 closure work accumulate before any status propagation.
+
+| Dimension | §5 Multi-AI Review Cycle | §17 Reviewer-Pause Cycle |
+|---|---|---|
+| Trigger | Single paper v1.0 draft | Cumulative load-bearing argument arc completion |
+| Frequency | Per paper (5-15 paper review cycles in flagship trajectory) | Once per major closure milestone (1-2 per flagship trajectory) |
+| Reviewer engagement | Per paper, often in 3-5 versions over 1-2 days | One submission, 1-3 day turnaround per reviewer |
+| Scope | Paper content (sections, derivations, claims) | Cumulative structural-argument arc + scope-claim language |
+| Output | Refined paper v2.0+ | Calibration Patch + status upgrade Patch (two-Patch sequence) |
+| Discipline | Sonnet hostile review, Grok contribution, Copilot referee-proofing | Cross-reviewer convergence weighting, scope-overclaim detection |
+
+Both protocols are simultaneously active in flagship trajectories: §5 per-paper cycles operate within each Phase 2 / Phase 3 substantive paper; §17 reviewer-pause cycles operate at the trajectory level above the per-paper layer.
+
+### 17.1 Trigger conditions
+
+The reviewer-pause cycle is triggered when ALL of the following hold:
+
+1. **Load-bearing argument arc has completed at sketch Layer 2**: all sub-questions in the flagship trajectory's main commitment registry that are LOAD-BEARING for the status upgrade are closed at sketch Layer 2. Supplementary sub-questions may remain open.
+
+2. **Status upgrade is imminently live**: the trajectory has a pending status-upgrade question (e.g., "PROVISIONAL CLOSURE at viability level" → "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2") that depends on external validation.
+
+3. **No internal closure failure has been detected**: all closures in the load-bearing arc have been internally reviewed by Claude Opus + Thomas and judged structurally sound at sketch Layer 2.
+
+4. **Anti-priorities have been sustained throughout the closure trajectory**: no v1.0 SHIPPED edits; no premature flagship paper assembly; no inappropriate Layer 3 promotion; documentation suite up to date.
+
+If any condition fails, additional closure work is needed BEFORE the reviewer-pause cycle can be triggered. The reviewer-pause is not a substitute for completing the internal closure trajectory.
+
+### 17.2 Pre-pause preparation
+
+Before submitting the reviewer-pause checkpoint document:
+
+1. **Distinguish load-bearing vs supplementary sub-questions** in the trajectory's commitment registry. Reviewer-pause focuses on load-bearing; supplementary work is deferrable.
+
+2. **Verify all closures are at consistent rigor level** (sketch Layer 2 by default; some may be at Layer 3 if pre-existing Layer 3 work supports them).
+
+3. **Articulate the precise status upgrade question** that the reviewer-pause is asking about. The question must be SPECIFIC (e.g., "Should F.1 sub-question status upgrade from 'PROVISIONAL CLOSURE at viability level' to 'SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2'?") not vague.
+
+4. **List the anti-priorities sustained throughout**. Reviewers should see what is deliberately NOT being claimed.
+
+5. **Identify each load-bearing closure's rigor scope explicitly** (sketch Layer 2 with framework inheritance / finite-dimensional scope / etc.) so reviewers can engage with the closures at their proper level rather than expecting Layer 3 rigor.
+
+### 17.3 Artifacts: the two-document pattern
+
+Reviewer-pause cycles produce two artifacts, both stored in `<flagship_trajectory>/reviewer_pause/` (e.g., `flagship_papers/dynamical_substrate_law/reviewer_pause/` for F.1):
+
+**(A) Checkpoint document `<trajectory_id>_reviewer_pause_checkpoint_patches_<NNNN>_<NNNN>_v1.0.md`**
+
+Submitted to reviewers. Structure (template at `templates/reviewer_pause_template.md`):
+- §0 Framing — why this reviewer-pause is being triggered now
+- §1 Programme context — trajectory background leading to this checkpoint
+- §2 Table of sub-questions with closure status
+- §3 Per-Patch summaries of closures in the load-bearing arc
+- §4 Programme-state observations (cumulative structural justifications, geometric economy patterns, Layer 2/3 distinctions)
+- §5 The status upgrade question — current label and target framing options
+- §6 Anti-priorities sustained throughout the trajectory
+- §7 Explicit asks to reviewers (structural gaps, premature closures, layer-confusion risks, status upgrade question)
+- §8 Submission instructions and follow-up workflow
+- §9 Reference documents
+- §10 Summary
+
+**(B) Feedback record `<trajectory_id>_reviewer_pause_feedback_record_v1.0.md`**
+
+Created after reviewer responses received. Structure:
+- §1 Cycle metadata (reviewers engaged, verdict summary, calibration response decision)
+- §2-§4 Verbatim reviewer responses (one section per reviewer)
+- §5 Cross-reviewer synthesis (convergence detection, divergence analysis, verdict spread analysis, calibration response decision rationale, anti-priorities sustained)
+
+Both documents are preserved as **permanent programme history** — they are NOT modified retroactively even if calibration response refines scope. The v1.0 framing represents the as-submitted / as-received state; calibration Patch refinements supersede going forward without changing the historical record.
+
+### 17.4 Submission protocol
+
+1. **Submit independently to each reviewer.** No cross-reviewer pre-coordination. Each reviewer receives the same checkpoint document; cross-reviewer convergence is the structural triangulation mechanism.
+
+2. **Use current CPP AI reviewer pool**: ChatGPT (typically strongest reviewer), Copilot (active reviewer), Grok (active reviewer, weighted per current suspension status if applicable). Other reviewers may be added as the team evolves.
+
+3. **Expect 1-3 day turnaround per reviewer.** Reviewer-pauses are not time-pressured; depth matters more than speed.
+
+4. **Do NOT pre-empt the verdict.** The submitter (Thomas + Claude) does not signal a desired outcome. The reviewer-pause is meant to catch errors, not seek validation.
+
+5. **Do NOT prepare status upgrade documents in advance.** Premature preparation creates pressure to interpret feedback as authorizing the upgrade, biasing the review.
+
+### 17.5 Cross-reviewer convergence weighting discipline
+
+The strongest signal in any reviewer-pause cycle is **cross-reviewer convergence** — two or more reviewers independently flagging the same item.
+
+**Weighting hierarchy:**
+
+| Pattern | Weight | Action |
+|---|---|---|
+| Two or more reviewers independently flag SAME item | **Load-bearing scope-overclaim evidence** | Calibration response REQUIRED (or re-open if closure failure) |
+| Single reviewer flags item, others did not address it | Warrants calibration with lower weight | Calibration response if concern is legitimate after structural review |
+| Single reviewer flags item, others explicitly addressed and found no issue | Lower priority; reviewers may have evaluated differently | Evaluate substantively; may require no action |
+| Unanimous "proceed" with no specific concerns | Confirmation-bias risk worth examining | Look for items the reviewers may have missed; consider further internal review |
+| Outlier verdict (one reviewer "proceed" while others flag concerns) | Outlier should be weighted CAUTIOUSLY | Do NOT use outlier "proceed" to override convergent concerns |
+
+**The methodological observation** (F.1 Tier 4 §23.2 precedent): cross-reviewer convergence is structural-validity evidence, not prompt artifact. Two reviewers operating independently identifying the same scope-overclaim is a strong signal that the scope was indeed slightly overclaimed in the internal closure work. This is the failure mode that reviewer-pause discipline is designed to catch.
+
+**Outlier-reviewer handling**: when one reviewer's verdict differs sharply from the convergent pattern (F.1 precedent: Grok "proceed now" while ChatGPT + Copilot converged on two specific concerns), the outlier verdict should be:
+- Weighted carefully but NOT used to override convergent concerns
+- Examined for context (prior suspension status, vocabulary contamination, reviewer-specific weaknesses)
+- Substantive contributions from the outlier reviewer remain valuable independently of the verdict
+
+### 17.6 Calibration response Patch
+
+After reviewer feedback is received, the FIRST follow-up Patch is the **calibration response Patch** (not the status upgrade Patch). The calibration response:
+
+1. **Addresses scope-overclaim concerns via APPEND-ONLY calibration notes** (immutable-Patch discipline). Prior Patch sketch content is NOT modified inline; calibration notes are appended in a new section (e.g., F.1 sketch §14 for the F.1 calibration response).
+
+2. **Refines scope without reopening sub-questions** when the closure arguments hold within their proper scope. ChatGPT precedent (F.1 cycle): "I do NOT think any closure must be reopened. None of the identified issues rise to the level of: 'the closure argument fails.' Instead: the closures are slightly overinterpreted. That is a calibration problem, not a structural-collapse problem."
+
+3. **Re-opens sub-questions ONLY when closure arguments actually fail** (not when scope is overclaimed). The §8.2 triage order in the checkpoint document distinguishes: structural gaps → calibration; premature closures (closure-argument-failure) → reopen; layer-confusion → calibration; status upgrade → conditional.
+
+4. **Addresses each convergent concern explicitly** with its own calibration item / sub-section.
+
+5. **Addresses single-reviewer concerns with appropriate weight** (lower than convergent, but still calibrated if legitimate).
+
+6. **Includes a methodological observation registering the cross-reviewer convergence pattern** in Tier 4 reasoning.
+
+7. **Does NOT trigger status upgrade in the same Patch**. The status upgrade is a separate Patch.
+
+8. **Does NOT modify the checkpoint v1.0 document.** The v1.0 is preserved as historical record; the calibration Patch supersedes scope going forward.
+
+9. **Preserves the reviewer responses verbatim in the feedback record** before the calibration response is implemented. The feedback record is itself part of the calibration Patch's deliverables.
+
+### 17.7 Status upgrade Patch (separate from calibration)
+
+The status upgrade Patch is the SECOND follow-up Patch after the calibration response. It:
+
+1. **Implements the agreed-upon status upgrade** with the framing established by the calibration response (e.g., F.1 target framing: "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions").
+
+2. **Updates programme registries**: research_frontier.md, future_projects.md sub-question entries, any trajectory-level status registries.
+
+3. **Does NOT trigger flagship paper assembly** (which remains DEFERRED behind further calibration cycles + Layer 3 promotion work).
+
+4. **Does NOT trigger downstream substantive trajectories** (F.2 / F.3 / etc., which remain DEFERRED at decision-gate level).
+
+5. **Does NOT require additional external reviewer engagement** — the calibration response Patch IS the engagement; the status upgrade Patch implements the agreed-upon outcome.
+
+6. **Preserves scope-qualifier language** established by the calibration response (e.g., "within the minimal-local-first-order realization framework" rather than unqualified "uniqueness" language).
+
+7. **Anti-priority sustained**: do NOT pre-empt further reviewer engagement on the upgrade target framing. If reviewer feedback on the calibration response identifies further refinement needs, the status upgrade Patch framing may be adjusted before implementation.
+
+### 17.8 Immutable-checkpoint discipline
+
+The checkpoint v1.0 document represents the AS-SUBMITTED state to reviewers. After reviewer responses are received, the v1.0 document is **NOT modified retroactively** even if calibration response refines the scope.
+
+**Rationale**: the v1.0 document is part of the programme's epistemic history. Reviewers responded to the v1.0 framing; modifying v1.0 to incorporate their feedback would erase the discipline's evidence that the framing required calibration. The calibration response Patch supersedes scope going forward; the v1.0 document preserves the original framing for future programme reference.
+
+**Practical implication**: when subsequent Patches reference the trajectory's status framing, they should reference the calibration-Patch-refined framing, not the v1.0 framing. The v1.0 document is read alongside the calibration response Patch as a paired set, not as the current authoritative framing.
+
+### 17.9 What reviewer-pause does NOT do
+
+The reviewer-pause cycle is a CHECKPOINT mechanism, not a replacement for other disciplines:
+
+1. **Does NOT replace §5 per-paper Multi-AI Review Cycle.** Per-paper review continues independently for each paper in the flagship trajectory.
+
+2. **Does NOT replace Sonnet hostile review** (§5.6). Sonnet hostile review remains valuable for per-paper adversarial critique; reviewer-pause operates at the trajectory level above the per-paper layer.
+
+3. **Does NOT authorize Layer 3 promotion.** Layer 3 promotion is a SEPARATE decision requiring substantive Layer 3 rigor work (theorem-level proofs, framework axiomatization, explicit cage-shell factor computations, etc.). The reviewer-pause confirms Layer 2 robustness; Layer 3 is downstream.
+
+4. **Does NOT authorize flagship paper assembly.** Flagship assembly is DEFERRED behind further calibration cycles + Layer 3 promotion work even after a positive reviewer-pause verdict. ChatGPT F.1 precedent: "the flagship paper should preserve: the Layer distinction, the conditionality, and the explicit open higher-order questions. Do not erase the uncertainty structure during paper polishing."
+
+5. **Does NOT authorize F.2 / F.3 / downstream trajectories.** Each trajectory requires its own decision-gate engagement; the reviewer-pause on F.1 does not propagate to F.2.
+
+6. **Does NOT generate findings.** Findings are registered in the programme-level Findings registry only after Layer 3 promotion. Reviewer-pause confirms sketch Layer 2 robustness without registering findings.
+
+### 17.10 F.1 precedent — the canonical worked example
+
+The first complete reviewer-pause cycle in CPP programme history was the F.1 dynamical substrate law trajectory, Patches 0531–0537 → Patch 0538 → Patch 0539:
+
+| Patch | Role |
+|---|---|
+| 0531–0537 | Phase 2 foundations work; seven sub-questions closed at sketch Layer 2; load-bearing argument arc completed |
+| 0537 | Final closure Patch (B.1.q1 matrix-element-layer $I_h$-covariance); reviewer-pause IMMEDIATELY LIVE registered |
+| Reviewer-pause cycle | Checkpoint document v1.0 submitted to ChatGPT, Copilot, Grok; three responses received with verdict spread (proceed-now / conditionally-yes / not-yet) |
+| 0538 | Calibration response Patch; seven calibration items addressed (two cross-reviewer-convergent, five language-refinement); no sub-questions reopened; no status upgrade |
+| 0539 | Status upgrade Patch (this follow-up); F.1 sub-question status upgraded from "PROVISIONAL CLOSURE at viability level" to "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions" |
+
+**Artifacts preserved at `flagship_papers/dynamical_substrate_law/reviewer_pause/`:**
+- `F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (454 lines)
+- `F1_reviewer_pause_feedback_record_v1.0.md` (~950 lines, three responses verbatim + synthesis)
+
+**Methodological observations from the F.1 precedent** (Tier 4 §23 of `documentation_suite/reasoning-dynamical-substrate-law.md`):
+- Cross-reviewer convergence is the strongest signal (two reviewers, two items).
+- Calibrate-don't-reopen discipline when closure arguments hold within proper scope.
+- Outlier "proceed-now" verdict weighted cautiously when others flag convergent concerns.
+- Three-Patch sequence (foundations Patches → calibration → status upgrade) is the canonical workflow.
+
+Future flagship trajectories (F.2 thermodynamic causal arrow Layer 4 closure; F.3 future flagship; future expansion) inherit this workflow. Future Opus windows opening on such trajectories should review F.1 artifacts as the precedent.
+
+### 17.11 Triggering future reviewer-pause cycles
+
+For each future flagship trajectory (F.2, F.3, etc.):
+
+1. **Create the trajectory's `reviewer_pause/` directory** when the load-bearing argument arc is approaching completion. Directory naming: `flagship_papers/<trajectory_name>/reviewer_pause/`.
+
+2. **Prepare the checkpoint document** using `templates/reviewer_pause_template.md` as the starting point. Adapt the §1-§10 structure to the trajectory's specifics.
+
+3. **Submit + collect responses + create feedback record** following §17.3 / §17.4.
+
+4. **Execute the calibration response Patch + status upgrade Patch sequence** following §17.6 / §17.7.
+
+5. **Each cycle is self-contained**: F.2's reviewer-pause cycle is independent of F.1's; cross-trajectory dependencies (e.g., F.2 depending on F.1's substrate-locality theorem) are inherited as established programme results, not re-litigated in F.2's reviewer-pause.
+
+### 17.12 Maintenance cadence
+
+- §17 is §14-registered content per the meta-discipline rule in §14; refinement may be registered as an OPEN-ORG item rather than edited inline.
+- The reviewer pool (currently ChatGPT, Copilot, Grok) may be extended or pruned as the AI team evolves; updates to the pool are tracked in §5 Multi-AI Review Cycle, not §17.
+- The cross-reviewer convergence weighting discipline (§17.5) is the load-bearing methodological commitment; it should not be relaxed without explicit programme-level decision and OPEN-ORG registration.
+- New trajectory archetypes that don't fit the F.x flagship pattern (e.g., cross-programme work spanning CPP + RM) may require workflow extension; extensions follow the §14 amendment process.
+- The reviewer-pause template (`templates/reviewer_pause_template.md`) is maintained alongside §17; structural changes to §17 should propagate to the template and vice versa.
+
+---
+
 *This document supersedes `bootup.md` as the complete reference.*
 *`bootup.md` remains the quick-start guide for sessions.*
+*Created 8 April 2026 by Claude Opus at Thomas's request.*
+*Updated 9 April 2026 — SM-8/9/10 trilogy lessons, 7-file suite, SM-10 FEM references, Post-Session Quick Checklist, axiom reconciliation note.*
+*Reconciled 11 April 2026 — merged operating_system.md and operating_system2.md; restored Phase 7b (Verification Notebooks) and transcript include/exclude guidance from v1.*
+*Updated 24 April 2026 — added §14 Organizational Frontier Registry (adopted per PD-003).*
+*Updated 24 April 2026 — added §15 Session-close Handover Protocol promoted from §10 buried subsection per OPEN-ORG-008 resolution; canonical command vocabulary "execute handover protocol" codified; dual-trigger mechanism (user-initiated + Claude-initiated workflow-shape prompt) documented; four-item checklist extended to name handover-[S]-[N].md alongside development-[S]-[N].md.*
+*Updated 20 May 2026 (Patch 0481N) — added §16 SHIP Trigger Protocol codifying grep-able SHIP detection rule + mandatory immediate-execution rule + auditable session-close question + anti-collision strategy with concurrent next-window work (including patch-number collision recovery via alpha-suffix continuation, now codified as standard discipline). Adopted in response to Session 135 Capotauro v2.0 v1.0 SHIP reactive paper-completion-sequence pattern (12 sequential patches driven by user audit "are the registries updated?" rather than single-pass protocol execution). Companion update to `templates/paper_completion_checklist.md` Patch 0481M extends the checklist with SHIP Trigger Detection + Four-Tier Documentation Suite Reconciliation + Anti-Collision Strategy + Session 135 Worked Example sections; §16 is the OS-level trigger-detection layer above the checklist's per-item execution detail. Patch numbering rationale: 0481M and 0481N are alpha-suffix continuations of Session 135's 0481a–L sequence rather than 0483/0484 because the next forward-integer patch numbers were claimed by the next Opus window's SF-2 v3.0+ Layer 4 closure trajectory; the alpha-suffix recovery is itself codified in §16's anti-collision strategy as standard discipline (point 7) and is a worked example of the discipline applied to its own patch series.*
+*Updated 22 May 2026 (Patch 0539a) — added §17 Reviewer-Pause Cycle Protocol codifying the F.1 trajectory precedent (Patches 0531–0537 → 0538 → 0539) as standard discipline for closure-milestone external review in flagship-paper-trajectory work. §17 establishes: trigger conditions (load-bearing argument arc completion + imminent status upgrade); two-document artifact pattern (checkpoint v1.0 + feedback record v1.0 in `<flagship_trajectory>/reviewer_pause/` directory); submission protocol (independent to current AI reviewer pool with 1-3 day turnaround); **cross-reviewer convergence weighting discipline** (two reviewers flagging same item = load-bearing scope-overclaim evidence; outlier verdict weighted cautiously); calibration response Patch → status upgrade Patch two-Patch sequence (NOT bundled); immutable-checkpoint discipline (v1.0 preserved as historical record); explicit anti-scope statements (reviewer-pause does NOT replace §5 per-paper review, does NOT authorize Layer 3 promotion, does NOT authorize flagship paper assembly, does NOT generate findings). Adopted in response to Patch 0538 F.1 calibration response cycle producing the first complete reviewer-pause workflow precedent in the programme. Companion file `templates/reviewer_pause_template.md` provides fill-in-the-blanks template for future reviewer-pause checkpoint documents. Cross-reference updates: `templates/relationship_protocol.md` notes reviewer-pause operationalizes six-principle engagement standard at closure milestones; `templates/paper_completion_checklist.md` notes reviewer-pause precondition for flagship-paper-trajectory work above the per-paper checklist. §17 is distinct from §5 Multi-AI Review Cycle: §5 handles per-paper review (single paper v1.0+ cycles); §17 handles trajectory-level closure-milestone external review (cumulative load-bearing argument arc validation). Both protocols are simultaneously active in flagship trajectories. The F.1 precedent (canonical worked example) is documented in §17.10 with pointers to the preserved artifacts at `flagship_papers/dynamical_substrate_law/reviewer_pause/`. Future flagship trajectories (F.2, F.3, etc.) inherit this workflow; future Opus windows opening on such trajectories should review F.1 artifacts as the precedent.*
 *Created 8 April 2026 by Claude Opus at Thomas's request.*
 *Updated 9 April 2026 — SM-8/9/10 trilogy lessons, 7-file suite, SM-10 FEM references, Post-Session Quick Checklist, axiom reconciliation note.*
 *Reconciled 11 April 2026 — merged operating_system.md and operating_system2.md; restored Phase 7b (Verification Notebooks) and transcript include/exclude guidance from v1.*

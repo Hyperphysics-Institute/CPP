@@ -813,3 +813,51 @@ Session 135 produced the largest single-session patch count in the Capotauro pap
 ---
 
 - **20 May 2026 (Patch 0481M)**: SHIP Trigger Detection and Mandatory Immediate Execution + Four-Tier Documentation Suite Reconciliation + Anti-Collision Strategy for Concurrent Next-Window Work + Session 135 Worked Example sections added in response to Session 135's reactive paper-completion-sequence pattern (12 sequential patches driven by user audit "are the registries updated?" rather than single-pass protocol execution). The Phase 7A/7B/7C partition from Patch 0422D addressed *which items drop*; this addition addresses *when execution fires* (grep-able SHIP trigger detection + mandatory next-patch Phase 7B fire) and *how the 10-file documentation suite reconciles* with the original A1–A7 enumeration (A8 changelog + A9 reasoning + A10 transcript added). Anti-collision strategy codifies the Patches 0481b–L pattern (anchor-safety hierarchy: end-of-file H2 append > inline content update > surgical entry update > "Last updated:" header prepend with active concurrent work) as standard discipline. Auditable session-close question added to make Phase 7B completeness verifiable from outside the executing context. Patch number 0481M (alpha-suffix continuation of Session 135 sequence) rather than 0483 because Patches 0482+ were claimed by the next Opus window (SF-2 v3.0+ Layer 4 closure trajectory); the alpha-suffix recovery is itself codified as standard discipline in the Anti-Collision Strategy section.
+
+---
+
+## Reviewer-Pause Cycle Precondition for Flagship-Paper-Trajectory Work (added 22 May 2026, Patch 0539a)
+
+This checklist (Phases 7A / 7B / 7C + A1–H sections) governs **per-paper completion** for standard CPP paper production (SM-x, SS-x, EW-x, QM-x, SR-x, SD-x, SF-x series). For **flagship-paper-trajectory work** (F.x trajectories — e.g., F.1 thermodynamic-arrow dynamical substrate law), an additional precondition applies before the per-paper checklist begins.
+
+### The flagship-paper-trajectory precondition
+
+Flagship-paper-trajectory work involves cumulative sketch-Layer-2 closure work across multiple Patches before any flagship paper assembly is appropriate. The **Reviewer-Pause Cycle Protocol** (`templates/operating_system.md` §17) codifies the closure-milestone external review that gates flagship paper assembly.
+
+**Sequence for flagship-paper-trajectory work:**
+
+1. **Phase 2 foundations work** (multiple Patches): close load-bearing sub-questions at sketch Layer 2; maintain anti-priorities throughout.
+2. **Reviewer-pause cycle** (one Patch for checkpoint submission, then external reviewer engagement, then calibration response Patch, then status upgrade Patch — three-Patch sequence): per `templates/operating_system.md` §17.
+3. **Status upgrade authorized** (Patch following calibration response): trajectory status upgraded from provisional to substantive Layer 2 closure.
+4. **Further calibration cycles + Layer 3 promotion work** (additional Patches): only after status upgrade authorized.
+5. **Per-paper checklist begins** (this checklist's Phase 7A / 7B / 7C structure): only after Layer 3 promotion work is sufficient to support flagship paper assembly.
+
+**Anti-priority sustained**: this checklist does NOT apply to flagship-paper-trajectory work until the reviewer-pause cycle has completed positively + Layer 3 promotion work supports paper assembly. Premature application of the per-paper checklist to flagship work risks erasing the Layer distinction during paper polishing (per ChatGPT F.1 reviewer feedback: "the flagship paper should preserve: the Layer distinction, the conditionality, and the explicit open higher-order questions. Do not erase the uncertainty structure during paper polishing. That would be a mistake.").
+
+**For standard CPP paper production** (non-flagship trajectories): this precondition does not apply. The per-paper checklist applies directly; the §5 Multi-AI Review Cycle handles per-paper review without requiring a closure-milestone reviewer-pause.
+
+### F.1 precedent reference
+
+The first complete reviewer-pause cycle in CPP programme history was the F.1 dynamical substrate law trajectory:
+- Patches 0531–0537 closed seven sub-questions at sketch Layer 2 (the foundations work load-bearing arc).
+- Patch 0538 was the calibration response addressing reviewer-pause feedback.
+- Patch 0539 was the status upgrade implementing the refined framing.
+- F.1 flagship paper assembly REMAINS DEFERRED behind further calibration cycles + Layer 3 promotion work.
+
+Artifacts at `flagship_papers/dynamical_substrate_law/reviewer_pause/`:
+- `F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md`
+- `F1_reviewer_pause_feedback_record_v1.0.md`
+
+Future Opus windows opening on F.1 paper assembly should review these artifacts + the F.1 sketch §14 calibration response before initiating any per-paper checklist work.
+
+### Adaptation for future flagship trajectories
+
+For future flagship trajectories (F.2, F.3, etc.), the same precondition applies:
+- Each trajectory's foundations work continues independently across its own sequence of Patches.
+- Each trajectory creates its own `reviewer_pause/` directory with checkpoint + feedback record.
+- Each trajectory's status upgrade follows the calibration → upgrade two-Patch sequence.
+- The per-paper checklist applies only after the trajectory's status upgrade + Layer 3 promotion work.
+
+---
+
+*Updated 22 May 2026 (Patch 0539a) — added Reviewer-Pause Cycle Precondition section codifying the workflow gate above the per-paper checklist for flagship-paper-trajectory work. Reference to `templates/operating_system.md` §17 Reviewer-Pause Cycle Protocol for the full workflow specification. F.1 precedent (Patches 0531-0537 → 0538 → 0539) identified as the canonical worked example for future flagship trajectories.*
