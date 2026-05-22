@@ -982,3 +982,97 @@ The overall Phase 2 foundations work (Phase 2.5) trajectory estimate remains at 
 
 *Patch 0533 Tier 4 reasoning appended. B.1.q4 first-shell current sum identity closed at sketch level with explicit coefficient $24/\sqrt{7-\phi}$ and numerical verification at machine precision. The trajectory remains in foundations-exploration state with B.1.q3 + B.3.q1 substrate-locality temporal extension as the recommended next priority.*
 
+
+---
+
+## §19 Patch 0534 — B.1.q3 + B.3.q1 substrate-locality temporal extension Tier 4 reasoning
+
+*Session 139 Patch 0534 — substantive structural work executing the now-binding §5.3 priority (3) item, closing both B.1.q3 (substrate-locality extension to temporal sector) and B.3.q1 (Move-1: articulate Substrate-Locality Unification's temporal extension parallel to Finding C-W40) at sketch level via the cross-commitment dependency B.1.d ↔ B.3.Move-1.*
+
+### §19.1 Decision to close B.1.q3 and B.3.q1 together at this Patch
+
+The Patch 0531 §5 cross-commitment dependency identification was that B.1.d and B.3.Move-1 are the same underlying substrate-locality claim approached from two angles: B.1.d (B.1.q3 target) frames it as a substrate-locality theorem supporting the R3 nonlocal averaging reduction; B.3.Move-1 (B.3.q1 target) frames it as the Substrate-Locality Unification corollary parallel to C-W40 (uniformity across first-shell-built substrate objects).
+
+The decision to close both in one Patch was natural given (i) the cross-commitment dependency, (ii) the load-bearing structural content is the same theorem, and (iii) the priority ordering at §8.8 (now binding) lists them as paired. Bundling concern: closing two sub-questions together risks the "bundled-closure anti-pattern" warned against at Patch 0528. But B.1.q3 + B.3.q1 are explicitly identified as cross-commitment-coupled at Patch 0531 §5; closing them together is the natural consequence of that coupling, not an arbitrary bundle.
+
+### §19.2 The structural insight that drove the proof — K3-base protection inherits
+
+The substantive insight: the temporal-sector parallel to Capotauro's spatial-sector K3-base protection is precisely the first-shell-to-first-shell zero-perturbation identity $\hat{e}_{ab}\cdot\hat{n} = 0$ for all icosahedron edges. This SAME geometric identity that Capotauro uses to establish K3-base protection in the spatial sector (first-shell-to-first-shell edges have zero edge-length perturbation at $\mathcal{O}(\varepsilon)$ because $\hat{e}_{ab}\cdot\hat{n} = 0$ via 600-cell geometry) gives the analogous temporal-sector result (zero Mechanism A rate perturbation at $\mathcal{O}(\delta)$ on the same edges).
+
+This was not initially obvious from §2.4.3's sketch. The §2.4.3 framing of B.1.d as "substrate-locality extension" presented it as a parallel claim requiring its own structural work. Working through the proof in §10.4, the parallel turned out to be more than structural — it's INHERITED directly from the same geometric identity used in Capotauro's spatial-sector substrate-locality. The substrate-locality temporal extension is in some sense a "consequence" of Capotauro C-W39's geometric setup applied to a different perturbation parameter.
+
+This is a methodologically interesting result: extending Capotauro's structural framework from spatial to temporal sector doesn't require new geometry — it reuses the existing 600-cell first-shell identities with the temporal-sector perturbation primitive substituted for the spatial-sector one.
+
+### §19.3 What §10 establishes — and what it does not
+
+**§10 establishes:**
+
+- B.1.d Substrate-Locality Temporal Extension Theorem at $\mathcal{O}(\delta)$, sketch Layer 2, with three explicit content parts (a) first-shell-to-first-shell zero perturbation, (b) host-to-first-shell uniform perturbation, (c) $\mathcal{O}(\delta)$ perturbative locality of substrate-physics content at $v_{\text{host}}$.
+- Direct parallel to Capotauro C-W39 at matching rigor level ($\mathcal{O}(\varepsilon)$ vs $\mathcal{O}(\delta)$ first-order substrate-locality theorems).
+- B.3.Move-1 Substrate-Locality Unification corollary at sketch level, parallel to Capotauro C-W40 — substrate-locality applies uniformly to any first-shell-built substrate object in the temporal sector.
+- Connection of B.1.d to the Case A.1 unification ($\delta = \chi = \varphi^{-3}$): both spatial and temporal sectors governed by substrate-locality theorems operating on the same first-shell geometric structure; $\chi = \delta$ identification is the natural consequence of unified-substrate-primitive structure.
+- Combined with Patch 0533's B.1.q4 identity, the R3 nonlocal spatial averaging reduction completes at $\mathcal{O}(\delta)$ with explicit coefficient renormalization $c' = W_0 + 24 W_1/\sqrt{7-\phi}$, structurally equivalent to Phase 2 ansatz at first order.
+- Full structural response to ChatGPT's alternative (2) at $\mathcal{O}(\delta)$: substrate-spatial chirality content is bounded to first-shell with explicit coefficient; alternative (2) substrate-distribution concern resolved at leading order.
+
+**§10 does NOT establish:**
+
+- B.1.d at higher orders in $\delta$. The $\mathcal{O}(\delta^2)$ extension is open under sub-question B.1.q6 — symmetric with Capotauro's spatial-sector state where C-W39's $\mathcal{O}(\varepsilon^2)$ extension is also open.
+- Layer 3 promotion of B.1.d. The Capotauro side has Layer 3 status for C-W39 in the spatial sector; B.1.d Layer 3 promotion would require additional rigor work matching that spatial-sector standard, deferred to future work.
+- Explicit cage-shell-factor computations for temporal-sector substrate objects parallel to Capotauro Finding C-W41 (which gives the W-bracelet $1/6$ cage-shell factor). The B.3.Move-1 corollary is at Layer 2 structural-argument level only; Layer 3 with explicit cage-shell factors deferred.
+- F.1 sub-question status change. The status remains "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" — but the foundations work is substantially progressing, and the F.1 status upgrade question becomes live after B.1.q1 + B.1.q2 substantively progress.
+
+### §19.4 Methodological structure of cross-commitment-coupled sub-question closure
+
+The B.1.q3 + B.3.q1 closure pattern is a programme-methodological lesson worth registering: when two sub-questions are identified as cross-commitment-coupled (sharing the same underlying structural work), closing them together in a single Patch is the natural execution pattern — provided the coupling is genuine and the Patch's content addresses both sub-questions explicitly.
+
+This is distinct from the "bundled-closure anti-pattern" warned against at Patch 0528, which referred to bundling MULTIPLE INDEPENDENT closure claims into a single Patch to over-claim aggregate progress. Cross-commitment coupling is different: the multiple sub-questions are not independent claims but two angles on the same structural work, and closing them together reflects that coupling, not aggregation.
+
+The pattern: (i) identify the cross-commitment coupling explicitly at an earlier Patch (here: Patch 0531 §5); (ii) state the shared structural content (here: B.1.d substrate-locality theorem); (iii) execute the substantive closure addressing both angles in a single Patch (here: §10.3 theorem statement + §10.7 corollary articulation); (iv) register both sub-questions' closure status at the same level of rigor (here: both at sketch Layer 2 matching Capotauro C-W39/C-W40 spatial-sector status).
+
+### §19.5 Status of B.1 ansatz framework — three of five demonstrated
+
+After Patch 0534, the five B.1 ansatzes from §2.4 stand at:
+
+- B.1.a (icosahedral-symmetry preservation at matrix-element layer): ansatz, B.1.q1 target. Open.
+- B.1.b (curl content non-perpendicular to $\hat{n}$): ansatz, B.1.q2 target. Open.
+- B.1.c (steady-state substrate dynamics): framework-level ansatz via Reading C global $\hat{n}$ fix. Demonstrated at framework level.
+- B.1.d (substrate-locality temporal extension): demonstrated at sketch Layer 2 at $\mathcal{O}(\delta)$, this Patch 0534.
+- B.1.e (first-shell current sum identity): demonstrated at sketch Layer 2 at $\mathcal{O}(\delta)$, Patch 0533.
+
+Three of five at sketch-level status (B.1.c framework, B.1.d and B.1.e demonstrated). Two genuinely open (B.1.a, B.1.b). The §2.5 provisional structural claim from Patch 0531 ("conditional on B.1.a-B.1.e the alternatives reduce to Phase 2 local algebraic form") is now conditional only on B.1.a + B.1.b — the load-bearing ansatzes have narrowed from five to two.
+
+This narrowing is substantive: B.1 substantive closure becomes a question of two specific structural sub-questions (icosahedral-symmetry preservation at matrix-element layer + curl content perpendicular content at first order). Both are tractable computational sub-questions estimated 1-2 sessions each per §2.6. After their closure, the B.1 substantive closure question becomes ripe for full evaluation.
+
+### §19.6 Connection to broader programme arc
+
+The Patch 0534 closure of B.1.q3 + B.3.q1 has implications beyond B.1's local trajectory:
+
+**For the F.1 sub-question status**: with three of five B.1 ansatzes at sketch-level status, the F.1 "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" status is becoming progressively less burdened. After B.1.q1 + B.1.q2 substantively progress (estimated 2-3 sessions cumulative), the F.1 status upgrade question becomes live. The §6.2 external reviewer-pause checkpoint should be triggered AT THAT POINT before any status propagation — not at this Patch, but anticipated as the next checkpoint.
+
+**For the OPEN-SD-CHIR-PRIMITIVE umbrella**: the Substrate-Locality Unification corollary (B.3.Move-1) at sketch level provides the structural framework supporting Case A.1 unification ($\delta = \chi$). With Capotauro's C-W40 spatial-sector unification + this Patch's temporal-sector unification corollary, the cross-sector unification at substrate-primitive level is structurally articulated. Patch 0526 §13.11's four-candidate cross-check identified Case A.1 phenomenologically; this Patch articulates the structural foundation.
+
+**For long-term programme target**: the chirality scale from polytope geometry (long-term target registered at Patch 0528 §14.17) is now closer to a tractable question. The substrate-locality theorems (C-W39 + B.1.d) establish that chirality content is first-shell-determined at first order in both sectors; the long-term derivation would extend this to determining the chirality scale magnitude $\chi = \varphi^{-3}$ from polytope geometric structure. Patch 0534's contribution is the substrate-locality framework, not the chirality scale derivation itself — which remains deferred behind F.1/F.2/F.3 stabilization.
+
+### §19.7 What is deliberately NOT in Patch 0534
+
+- No promotion of B.1.d to a registered finding (sketch Layer 2 only; promotion to programme-level Finding registry would require Layer 3 rigor work).
+- No promotion of B.3.Move-1 corollary to Capotauro paper (lives in foundations work sketch only; Capotauro paper modifications would need separate review-pause + author-coordination work).
+- No claim of B.1 substantive closure (three of five ansatzes at sketch level; B.1.a + B.1.b remain genuinely open).
+- No F.1 sub-question status change.
+- No v1.0 SHIPPED .tex source modification.
+- No Phase 1 §11 or Phase 2 §12 polished content modification.
+- No higher-order extension of B.1.d (B.1.q6 territory).
+- No external reviewer engagement (deferred until B.1.q1 + B.1.q2 substantively progress).
+
+### §19.8 Forward-looking pointer
+
+Following Patch 0534, the recommended next priority per revised §5.3 ordering is **B.1.q2 curl content explicit computation** — explicit derivation of $\nabla\times\vec{j}_{DI}^{net}|_{v_{\text{host}}}$ at first order in $\delta$, addressing the B.1.b ansatz. Estimated 1 session. The computation uses the per-vertex current formula $\vec{j}_{DI}^{net}(v) = 2 r_0\delta[(2+\phi)\hat{n} - (4a/\phi)\hat{v}]$ from Patch 0533 §9.4, evaluated at neighbors of $v_{\text{host}}$ and differenced to extract the curl content.
+
+After B.1.q2: B.2.q1 minimal algebraic realization formalization (1-2 sessions), then B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer (1-2 sessions, B.1.a ansatz target). The §6.2 external reviewer-pause checkpoint should be triggered after B.1.q1 + B.1.q2 substantively progress, BEFORE any F.1 sub-question status upgrade.
+
+The overall Phase 2 foundations work trajectory remains in foundations-exploration state; the load-bearing sub-questions are progressively narrowing.
+
+---
+
+*Patch 0534 Tier 4 reasoning appended. B.1.q3 + B.3.q1 substrate-locality temporal extension closed at sketch Layer 2 via the cross-commitment-coupled-closure pattern. The K3-base protection inherits directly from spatial to temporal sector via the same first-shell geometric identity. Three of five B.1 ansatzes now at sketch-level status; B.1.a + B.1.b remain the load-bearing open questions. F.1 sub-question status upgrade question anticipated to become live after B.1.q1 + B.1.q2 substantively progress.*
+

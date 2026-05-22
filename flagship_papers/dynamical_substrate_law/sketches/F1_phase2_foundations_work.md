@@ -761,10 +761,166 @@ Three places where §9 could overstate:
 
 ---
 
-*This sketch opens Phase 2 foundations work (Phase 2.5 of F.1 trajectory) at Session 139 Patch 0531. Three commitments registered at Patch 0528 §14.17 (B.1 local algebraic representation ansatz, B.2 $\sigma_{cycle}$ algebraization + uniqueness, B.3 Case A.1 derivational support) are addressed at sketch-level structural exploration. B.1 receives the bulk of substantive work as the largest open question; B.2 and B.3 receive forward sketches. Fourteen sub-questions queued for future sessions. No closures claimed; no findings registered; no anti-priorities violated. Reviewer-pause checkpoint discipline applied at session close.*
+## §10 B.1.q3 + B.3.q1 substrate-locality temporal extension — sub-questions closed at sketch level (Layer 2)
+
+*Section added Session 139 Patch 0534 — substantive structural work executing the now-binding §5.3 priority (3) item, closing both B.1.q3 (substrate-locality extension to temporal sector) and B.3.q1 (Move-1: articulate Substrate-Locality Unification's temporal extension parallel to Finding C-W40) at sketch level via the cross-commitment dependency B.1.d ↔ B.3.Move-1 identified at Patch 0531 §5.*
+
+### §10.1 Sub-questions framing
+
+**B.1.q3 as registered in §2.6:**
+
+> Prove or falsify B.1.d (substrate-locality extension to the temporal sector). Likely requires direct analog of Capotauro Theorem 5.X for the temporal sector. 1–3 sessions.
+
+**B.3.q1 as registered in §4.4:**
+
+> Move-1 execution shares structural work with B.1.d (substrate-locality temporal extension). 1–2 sessions.
+
+The shared structural content is the substrate-locality temporal extension claim (the §2.4.3 B.1.d ansatz). B.1.q3 closes B.1.d as a theorem at sketch level; B.3.q1 articulates the corollary Substrate-Locality Unification (uniformly across first-shell-built substrate objects in the temporal sector), parallel to Capotauro's spatial-sector Finding C-W40.
+
+### §10.2 Capotauro spatial-sector substrate-locality recap
+
+**Finding C-W39** (Capotauro v2.0 §13.6, sketch `Capotauro_chiral_mechanism_candidate.md` §13.6). Under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$ (a 600-cell vertex direction), the local geometric structure at $v_{\text{host}}$ is preserved as $I_h$-symmetric at $\mathcal{O}(\varepsilon)$ in the spatial-sector edge-length perturbation $|v_i - v_j|_{\text{actual}} = |v_i - v_j|_{\text{ideal}}(1 + \varepsilon\,\hat{e}_{ij}\cdot\hat{n})$, with only an isotropic radial scaling of the first-shell icosahedron by factor $(1 - \varepsilon/(2\phi))$ and zero perturbation of first-shell-to-first-shell edges.
+
+The proof in Capotauro §13.3 was structural: it used only the inner product $v_i \cdot v_{\text{host}} = \phi/2$ (common to all 12 first-shell vertices) plus the substrate edge-perturbation formula. It applies uniformly to any subset of first-shell vertices.
+
+**Finding C-W40** (Capotauro v2.0 §14.6 — Substrate-Locality Unification under vertex-aligned Reading C). The §13.3 local-$I_h$-preservation theorem applies uniformly to any substrate object constructed from a subset of first-shell vertices of $v_{\text{host}}$:
+- (a) All first-shell-to-first-shell edges have $\hat{e}_{ab}\cdot\hat{n} = 0$ identically;
+- (b) All host-to-first-shell edges have $\hat{e}_{(\text{host},i)}\cdot\hat{n} = -1/(2\phi)$ identically;
+- (c) Any subset-internal pairwise distance is preserved at $\mathcal{O}(\varepsilon)$ as isotropic radial scaling by $(1 - \varepsilon/(2\phi))$.
+
+Therefore the chirality content of any such substrate object (K3-base, W-bracelet, or other first-shell subset configuration) inherits from the substrate primitive $\chi \equiv \varepsilon$ via cage-shell averaging on the object's stabilizer subgroup.
+
+### §10.3 Temporal-sector substrate-locality — precise theorem statement (B.1.d)
+
+The temporal-sector perturbation is Mechanism A's propagation-rate asymmetry primitive:
+$$r(\hat{e}_{ab}) = r_0\left(1 + \delta\,\hat{e}_{ab}\cdot\hat{n}\right)$$
+
+By direct structural analog of Capotauro C-W39 applied to this temporal-sector primitive:
+
+> **B.1.d (Substrate-Locality Temporal Extension Theorem, sketch level / Layer 2).** Under CPP primitive axioms A1–A11 + vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$ + Mechanism A propagation-rate-asymmetry primitive $r(\hat{e}_{ab}) = r_0(1 + \delta\,\hat{e}_{ab}\cdot\hat{n})$, the substrate's net DI-bit current at $v_{\text{host}}$, $\vec{j}_{DI}^{net}(v_{\text{host}})$, at $\mathcal{O}(\delta)$ depends only on first-shell content (the 12 host-to-first-shell edges). Specifically:
+>
+> - **(a) First-shell-to-first-shell edges have zero first-order rate perturbation.** For each first-shell-to-first-shell edge $(v_i, v_j)$, $\hat{e}_{ij}\cdot\hat{n} = 0$ identically (Capotauro §13.3 / Phase 1 §11.2), hence the Mechanism A rate perturbation $\delta r = r_0 \delta \cdot (\hat{e}_{ij}\cdot\hat{n}) = 0$ at $\mathcal{O}(\delta)$. **K3-base protection from spatial sector inherits to the temporal sector.**
+> - **(b) Host-to-first-shell edges have uniform first-order rate perturbation.** For each host-to-first-shell edge $(v_{\text{host}}, v_i)$, $\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniform (Phase 1 §11.2), hence the Mechanism A rate perturbation is uniform $\delta r = -r_0\delta/(2\phi)$ across all 12 host-to-first-shell edges (directionally asymmetric: outgoing vs. incoming).
+> - **(c) The substrate's net DI-bit current at $v_{\text{host}}$ at $\mathcal{O}(\delta)$ depends only on first-shell content.** Second-shell and beyond edges are not connected directly to $v_{\text{host}}$; their contributions to $\vec{j}_{DI}^{net}(v_{\text{host}})$ enter only at $\mathcal{O}(\delta^2)$ and higher, via two-step or longer perturbative paths.
+
+This is the temporal-sector analog of Capotauro C-W39's spatial-sector substrate-locality theorem, at the same rigor level ($\mathcal{O}(\delta)$ vs $\mathcal{O}(\varepsilon)$).
+
+### §10.4 Sketch proof of B.1.d at $\mathcal{O}(\delta)$
+
+**Step 1: First-shell-to-first-shell zero perturbation (part (a)).** The 600-cell geometric identity $\hat{e}_{ij}\cdot\hat{n} = 0$ for all first-shell-to-first-shell edges $(v_i, v_j)$ is established at numerical precision $\sim 10^{-9}$ in Capotauro v2.0 §13.3 and Phase 1 §11.2 (`F1_subquestion_pcd_orientation_link.md`). It follows from: the first-shell vertices of $v_{\text{host}}$ in the 600-cell form an icosahedron in the 3D hyperplane perpendicular to $v_{\text{host}}$; the icosahedron edges lie within this hyperplane and are therefore perpendicular to $v_{\text{host}} = \hat{n}$.
+
+Substituting into Mechanism A: $r(\hat{e}_{ij}) = r_0(1 + \delta \cdot 0) = r_0$ at $\mathcal{O}(\delta)$ for all first-shell-to-first-shell edges. **No first-order temporal-sector chirality content propagates along these edges.** This is the direct structural parallel to Capotauro's K3-base protection.
+
+**Step 2: Host-to-first-shell uniform perturbation (part (b)).** The 600-cell geometric identity $\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniform across all 12 host-to-first-shell edges is established at numerical precision $\sim 10^{-9}$ in Capotauro v2.0 §13.2 / Phase 1 §11.2. It follows from: $v_i = v_{\text{host}} + (1/\phi)\hat{u}_i$ and $|v_i| = 1$, giving $\hat{u}_i\cdot v_{\text{host}} = -1/(2\phi)$.
+
+Substituting into Mechanism A: $r(\hat{u}_i) = r_0(1 - \delta/(2\phi))$ uniform across all 12 outgoing host-to-first-shell directions. The reverse direction $r(-\hat{u}_i) = r_0(1 + \delta/(2\phi))$ uniform across the 12 incoming directions. The asymmetry $r(\hat{u}_i) - r(-\hat{u}_i) = -r_0\delta/\phi$ uniform.
+
+**Step 3: $\mathcal{O}(\delta)$ perturbative locality (part (c)).** The net DI-bit current at $v_{\text{host}}$ is the directional sum of net outgoing-minus-incoming flow over all edges connected to $v_{\text{host}}$. At $\mathcal{O}(\delta)$, the perturbation enters exactly once; therefore the current at $v_{\text{host}}$ at first order is a sum over edges that are *directly connected* to $v_{\text{host}}$ — the 12 host-to-first-shell edges. Second-shell edges (first-shell-to-second-shell) are not connected to $v_{\text{host}}$ directly; they enter only at $\mathcal{O}(\delta^2)$ via two-step paths $v_{\text{host}} \to v_i \to v_k$ where $v_k$ is a second-shell vertex.
+
+Therefore $\vec{j}_{DI}^{net}(v_{\text{host}})$ at $\mathcal{O}(\delta)$ is a sum over the 12 host-to-first-shell edges only — exactly the first-shell-only computation in Phase 1 §11.3 producing $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0\delta/\phi^2)\hat{n}$. **The substrate-locality temporal extension at $\mathcal{O}(\delta)$ is established.** $\square$
+
+### §10.5 Connection to Phase 1's first-shell-only computation
+
+The Phase 1 derivation (`F1_subquestion_pcd_orientation_link.md` §11.3) implicitly used substrate-locality at $\mathcal{O}(\delta)$: the computation summed over the 12 host-to-first-shell edges and did not consider second-shell or beyond. The Phase 1 boxed result $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0\delta/\phi^2)\hat{n}$ is the explicit numerical evaluation of the substrate-locality theorem's first-shell-only content.
+
+**§10's contribution beyond Phase 1**: theorem-statement form articulating B.1.d as a Capotauro-mold substrate-locality result, with three explicit content parts (a/b/c) mirroring C-W39's structural format; identification of the perturbative-locality propagation rule ($\mathcal{O}(\delta^n)$ → up to $n$-th shell); explicit recognition of the K3-base protection analog in the temporal sector (first-shell-to-first-shell zero perturbation at $\mathcal{O}(\delta)$).
+
+### §10.6 Connection to B.1.q4 first-shell current sum identity
+
+Patch 0533 §9 established the first-shell current sum identity $\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n} \approx 10.345\,\hat{n}$ at $\mathcal{O}(\delta)$. Combined with §10's B.1.d substrate-locality theorem at $\mathcal{O}(\delta)$:
+
+The B.1.d theorem establishes that at $\mathcal{O}(\delta)$, the substrate-physics content at $v_{\text{host}}$ is first-shell-determined. The B.1.q4 identity establishes the explicit aggregate structure of the first-shell currents themselves. Together, they close the §2.4.3 (R3) nonlocal spatial averaging reduction at $\mathcal{O}(\delta)$:
+
+$$\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\left[W_0 + \frac{24 W_1}{\sqrt{7-\phi}}\right]\hat{n} \quad \text{at } \mathcal{O}(\delta), \text{ first-shell-determined by B.1.d}$$
+
+The R3 nonlocal spatial averaging at first order reduces to the Phase 2 local algebraic form up to coefficient renormalization, AND the renormalization itself is first-shell-determined (not second-shell-or-beyond). This is the full structural sense in which "R3 is structurally equivalent to Phase 2 ansatz at $\mathcal{O}(\delta)$."
+
+### §10.7 B.3.Move-1: Substrate-Locality Unification temporal-extension corollary
+
+Parallel to Capotauro's Finding C-W40 (Substrate-Locality Unification in the spatial sector), the temporal-sector Substrate-Locality Unification corollary follows from B.1.d:
+
+> **B.3.Move-1 corollary (Substrate-Locality Unification, Temporal Sector, sketch level).** Under vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$ + Mechanism A propagation-rate-asymmetry primitive, the B.1.d substrate-locality temporal-extension theorem applies uniformly to any substrate object constructed from first-shell content at $v_{\text{host}}$ at $\mathcal{O}(\delta)$:
+> - The first-shell-to-first-shell zero-perturbation identity (part (a) of B.1.d) holds identically for any first-shell-to-first-shell edge — independent of which substrate object that edge belongs to.
+> - The host-to-first-shell uniform-perturbation identity (part (b) of B.1.d) holds identically for any host-to-first-shell edge.
+> - Therefore the temporal-sector chirality content of any substrate object built from first-shell vertices of $v_{\text{host}}$ (including the DI-bit current $\vec{j}_{DI}^{net}$, the PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$, and any other first-shell-built object) inherits from the substrate primitive $\delta$ via the same uniform mechanism — cage-shell averaging on the object's stabilizer subgroup in the temporal-sector framework parallel to C-W40's spatial-sector framework.
+
+**Connection to Capotauro Finding C-W40 / Patch 0526 §13.11 cross-check.** Patch 0526 §13.11's four-candidate cross-check identified Case A.1 ($\delta = \chi = \varphi^{-3}$) as the minimal unified realization where the spatial-sector chirality magnitude $\chi$ equals the temporal-sector primitive $\delta$. The Substrate-Locality Unification corollary (this §10.7) provides the structural foundation: both spatial and temporal sectors are governed by substrate-locality theorems (C-W39 for spatial; B.1.d for temporal) operating on the same first-shell geometric structure; the $\chi = \delta$ identification at Case A.1 is the natural consequence of unified-substrate-primitive structure.
+
+The B.3.q1 Move-1 articulation is complete at sketch level: the temporal-sector Substrate-Locality Unification is precisely the corollary of B.1.d applied uniformly to first-shell-built substrate objects, matching the spatial-sector C-W40 framework.
+
+### §10.8 Higher-order extension question — open at sketch level
+
+B.1.d at $\mathcal{O}(\delta)$ matches Capotauro C-W39's rigor at $\mathcal{O}(\varepsilon)$ — both are first-order-perturbation substrate-locality theorems. The higher-order extension question applies symmetrically:
+
+**At $\mathcal{O}(\delta^2)$.** Second-shell content enters via two-step perturbative paths $v_{\text{host}} \to v_i \to v_k$ where $v_k$ is a second-shell vertex. The relevant geometric identities (e.g., $\hat{e}_{ik}\cdot\hat{n}$ for first-shell-to-second-shell edges) are not the simple $\hat{u}_i\cdot\hat{n} = -1/(2\phi)$ uniform pattern; they depend on which second-shell vertex $v_k$ is reached. The substrate-locality at $\mathcal{O}(\delta^2)$ would require a structural argument about the second-shell perturbative contributions — analogous to extending C-W39 to $\mathcal{O}(\varepsilon^2)$ on the spatial side, which Capotauro v2.0 has not explicitly done either.
+
+**Sub-question B.1.q6 registers this**: $\mathcal{O}(\delta^2)$ contributions remain open; the substantive question is whether the perturbative-locality propagation rule (order $n$ → up to $n$-th shell) extends naturally or whether structural obstacles arise.
+
+**Asymmetry with Capotauro state.** Capotauro C-W39's $\mathcal{O}(\varepsilon)$ statement is the operative spatial-sector substrate-locality; higher-order extensions are not part of the current Capotauro framework. By parity of rigor, B.1.d at $\mathcal{O}(\delta)$ is the operative temporal-sector substrate-locality; matching state on both sides.
+
+### §10.9 Full structural response to ChatGPT's alternative (2) at $\mathcal{O}(\delta)$
+
+Per Patch 0532 §8.6 refined placement, ChatGPT's alternative (2) "Nonlocal transport asymmetry — the chirality content distributes across the substrate's connectivity graph rather than localizing at one vertex" sits at substrate-matrix-element / substrate-object layer. Patch 0533 §9.9 provided partial structural response via the first-shell current sum identity. **§10's B.1.d theorem provides the full structural response at $\mathcal{O}(\delta)$:**
+
+The substrate-locality temporal-extension theorem establishes that the chirality content at $v_{\text{host}}$ at first order in $\delta$ is *intrinsically first-shell-localized* — the perturbative effects of Mechanism A propagate at most one shell per order, so at first order, the chirality content does not extend beyond the first-shell connectivity. The Phase 2 ansatz $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}(v_{\text{host}})$ — which treats $\vec{\omega}_{PCD}$ as a host-vertex quantity depending on first-shell-determined $\hat{j}_{DI}^{net}$ — is structurally justified by the substrate-locality theorem.
+
+ChatGPT's "distributes across the substrate's connectivity graph rather than localizing at one vertex" concern, read strictly at substrate-matrix-element layer, is resolved at $\mathcal{O}(\delta)$ by the substrate-locality theorem: the chirality content IS distributed across the first-shell connectivity, but the distribution is bounded to the first-shell (no farther), and the resulting aggregate at $v_{\text{host}}$ is fully determined by first-shell content via the explicit B.1.q4 identity. **At first order in $\delta$, the alternative-(2) substrate-spatial distribution concern reduces to the explicit first-shell-bounded structure with coefficient $24/\sqrt{7-\phi}$.**
+
+**What remains open beyond $\mathcal{O}(\delta)$**: alternative (2)'s concern at $\mathcal{O}(\delta^2)$ and higher (B.1.q6 territory) — whether second-shell + beyond contributions could introduce structural distribution patterns that the first-order locality theorem doesn't capture.
+
+### §10.10 Self-checkpoint at session close
+
+Three places where §10 could overstate:
+
+**(i)** "Substrate-Locality Temporal Extension Theorem" language reads as strong claim. The §10.4 proof is at $\mathcal{O}(\delta)$ only and matches Capotauro C-W39's first-order rigor — not a stronger all-orders claim. The "theorem" language is appropriate at sketch level (Layer 2) given Capotauro's matching language for C-W39 at the same rigor level; promotion to Layer 3 / full theorem would require additional rigor work.
+
+**(ii)** "Full structural response to ChatGPT's alternative (2)" in §10.9 reads as final resolution. In fact §10 provides the full structural response *at $\mathcal{O}(\delta)$*. The higher-order extension to $\mathcal{O}(\delta^2)$ remains open under B.1.q6. Alternative (2)'s concern is fully addressed at the leading-order level — but not at all orders.
+
+**(iii)** B.3.q1 Move-1 articulation in §10.7 reads as complete corollary. In fact §10.7 articulates the corollary at sketch level (Layer 2), parallel to C-W40's Layer 2/3 status. Promotion to full Layer 3 would require explicit cage-shell-factor computations parallel to Capotauro Finding C-W41 — work that depends on identifying the specific substrate objects (W-bracelet analog, K3-base analog) in the temporal sector. This is deferred to future work.
+
+### §10.11 Status update
+
+- **B.1.q3 CLOSED at sketch level (Layer 2)** with the Substrate-Locality Temporal Extension Theorem (B.1.d) at $\mathcal{O}(\delta)$, matching Capotauro C-W39's rigor level.
+- **B.3.q1 CLOSED at sketch level (Layer 2)** with the Substrate-Locality Unification temporal-extension corollary (B.3.Move-1), parallel to Capotauro C-W40.
+- **B.1.d ansatz from §2.4.3 demonstrated at sketch level at $\mathcal{O}(\delta)$**; remains ansatz at $\mathcal{O}(\delta^2)$ and beyond (B.1.q6 target).
+- **Phase 1's first-shell-only computation reframed**: the Phase 1 derivation IS the explicit numerical content of B.1.d at $\mathcal{O}(\delta)$; §10's contribution is the theorem-statement form + identification of K3-base-protection analog + B.3.Move-1 corollary articulation.
+- **§9 (R3) nonlocal spatial averaging reduction completes structurally**: B.1.d theorem + B.1.q4 identity together establish that the first-shell sum form $\sigma_{cycle}[W_0 + 24 W_1/\sqrt{7-\phi}]\hat{n}$ at $\mathcal{O}(\delta)$ is the operative reduction, structurally equivalent to Phase 2 ansatz up to first-shell-bounded renormalization.
+- **Full structural response to ChatGPT's alternative (2) at $\mathcal{O}(\delta)$**: the substrate-spatial chirality-content distribution is bounded to first-shell with explicit coefficient $24/\sqrt{7-\phi}$; alternative (2) resolved at leading order, higher-order question remains open under B.1.q6.
+- **Programme state at B.1 ansatz level**:
+  - B.1.a (icosahedral-symmetry preservation at matrix-element layer): ansatz, B.1.q1 target.
+  - B.1.b (curl content non-perpendicular to $\hat{n}$): ansatz, B.1.q2 target.
+  - B.1.c (steady-state substrate dynamics): ansatz, framework-level (Reading C).
+  - **B.1.d (substrate-locality temporal extension): DEMONSTRATED at $\mathcal{O}(\delta)$ this Patch (Layer 2 sketch level).** Higher-order remains B.1.q6.
+  - **B.1.e (first-shell current sum identity): DEMONSTRATED at $\mathcal{O}(\delta)$ at Patch 0533 (Layer 2 sketch level).** Higher-order remains B.1.q6.
+- **Three of five B.1 ansatzes** at sketch-level status: B.1.d (this Patch), B.1.e (Patch 0533), B.1.c (framework-level via Reading C). Two remain genuinely open: B.1.a, B.1.b.
+- B.1.q1, B.1.q2, B.1.q6 sub-question framings UNCHANGED.
+- B.1.q5 [CLOSED at Patch 0532], B.1.q4 [CLOSED at Patch 0533], B.1.q3 + B.3.q1 [CLOSED at this Patch 0534 at sketch level].
+- B.2.q1–q4 + B.3.q2–q4 sub-question framings UNCHANGED.
+- F.1 sub-question status UNCHANGED at "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" — but the foundations work is substantially progressing.
+- **No findings registered** at Patch 0534 (B.1.d theorem at sketch Layer 2, not theorem-level findings registry; B.3.Move-1 corollary at sketch Layer 2 not promoted to Capotauro paper).
+- No v1.0 SHIPPED .tex source modifications.
+- No Phase 1 §11 or Phase 2 §12 polished content modifications.
+- No Capotauro paper modifications (B.1.d theorem statement lives in foundations work sketch; Capotauro paper's spatial-sector C-W39 is the parallel, not modified by this Patch).
+
+**Forward queue post-Patch 0534:**
+
+- (A) Next priority per revised §5.3 ordering: **B.1.q2 curl content explicit computation** (preserved priority (4); 1 session; explicit derivation of $\nabla\times \vec{j}_{DI}^{net}|_{v_{\text{host}}}$ at first order in $\delta$). B.1.b ansatz target.
+- (B) Following B.1.q2: B.2.q1 minimal algebraic realization formalization (preserved priority (5); 1–2 sessions).
+- (C) Following B.2.q1: **B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer** (priority (6); B.1.a ansatz target; 1–2 sessions).
+- (D) F.1 flagship paper assembly DEFERRED — but the deferral basis is shifting: with B.1.d and B.1.e demonstrated at sketch level, the load-bearing ansatzes for B.1's substantive closure are progressively narrowing to B.1.a and B.1.b. Once B.1.q1 + B.1.q2 substantively progress (estimated 2–3 sessions cumulative), F.1 status upgrade from "PROVISIONAL CLOSURE at viability level" becomes a live programme question, requiring external reviewer-pause checkpoint per §6.2.
+- (E) F.2/F.3 substantive content DEFERRED at decision-gate level.
+- (F) Long-term programme target — chirality scale from polytope geometry — REGISTERED + DEFERRED.
+- (G) JUNO peer-review update integration when published.
+- (H) B.3.q2 (extended cross-checks beyond Patch 0526 §13.11 four-candidate), B.3.q3 (framework symmetry identification), B.3.q4 (long-term arc connection) remain open in the B.3 trajectory but are deferred behind B.1.q1 + B.1.q2 progress.
+
+---
+
+
 
 *Patch 0532 (Session 139) closes B.1.q5 review-pause at sketch level — refined placement of ChatGPT's alternative (2) from observable cosmological to substrate-matrix-element layer; recommended priority elevation of B.1.q3 / B.3.q1 substrate-locality temporal extension as load-bearing for B.1's response to alternative (2).*
 
 *Patch 0533 (Session 139) closes B.1.q4 first-shell current sum identity at sketch level — explicit derivation of $\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n} \approx 10.345\,\hat{n}$ at first order in $\delta$, numerically verified at machine precision; structural consequence: R3 nonlocal spatial averaging reduces to coefficient renormalization $c' = W_0 + 24 W_1/\sqrt{7-\phi}$; §5.3 priority revision authorized by Thomas, B.1.q3 + B.3.q1 substrate-locality temporal extension promoted to next priority.*
 
-*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q3 + B.3.q1 substrate-locality temporal extension (load-bearing for B.1's full response to ChatGPT's alternative (2)) is the recommended next priority per revised §8.8 ordering.*
+*Patch 0534 (Session 139) closes B.1.q3 + B.3.q1 substrate-locality temporal extension at sketch level (Layer 2) — B.1.d theorem statement at $\mathcal{O}(\delta)$ matching Capotauro C-W39 rigor; B.3.Move-1 Substrate-Locality Unification temporal-extension corollary parallel to C-W40; first-shell-to-first-shell zero-perturbation at $\hat{e}_{ab}\cdot\hat{n}=0$ identified as direct temporal-sector analog of K3-base protection; full structural response to ChatGPT's alternative (2) at $\mathcal{O}(\delta)$ established; three of five B.1 ansatzes (B.1.c via Reading C, B.1.d this Patch, B.1.e Patch 0533) now at sketch-level status; B.1.a + B.1.b remain genuinely open under B.1.q1 + B.1.q2.*
+
+*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q2 (curl content explicit computation, B.1.b ansatz target) is the recommended next priority per revised §5.3 ordering. The F.1 sub-question status upgrade question becomes live after B.1.q1 + B.1.q2 substantively progress, requiring external reviewer-pause checkpoint per §6.2 before propagation.*
