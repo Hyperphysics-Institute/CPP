@@ -1610,3 +1610,76 @@ Three places §25 could overstate:
 
 (iii) The "Patch 0541 candidates" framing at §25.4 may suggest the scoping document fully determines Patch 0541. It does not — Patch 0541's substantive opening requires Thomas's authorization. The scoping document provides recommendations; the actual sequence is determined by authorization at each Patch boundary.
 
+
+---
+
+## §26 — Session 139 Patch 0540h: Handover protocol reasoning
+
+*Tier 4 verbatim Opus reasoning for the Session 139 close handover protocol Patch. The handover document itself lives at `handovers/2026-05-22_session_139_close_layer3_promotion_opened.md` (443 lines). §26 records the meta-reasoning behind the handover authoring decisions — what was preserved, what was deliberately set aside, and why the framing was chosen.*
+
+### §26.1 The trigger condition
+
+The Session 139 close handover was triggered by an Opus meta-note delivered to Thomas indicating the conversation context was approaching the threshold where window-close would be beneficial. Per `templates/operating_system.md` §15 (cross-window handover protocol), session-close handover is appropriate at trajectory milestones with stable boundaries — not at mid-derivation interruption points.
+
+Patch 0540 (Layer 3 promotion trajectory opening via scoping sketch) was assessed as a natural milestone for three reasons: (i) the scoping Patch closes a coherent unit of work (trajectory opening) parallel to Patch 0531 Phase 2 foundations work opening; (ii) Patch 0541 candidacy decision (G.a vs G.b) is a clean binary authorization gate with both options well-framed; (iii) no half-completed Patch, no mid-derivation algebra, no pending reviewer feedback to integrate.
+
+The trigger decision matches §15.1 of the OS handover discipline: handover at stable trajectory milestones, not mid-Patch.
+
+### §26.2 The structural framing decision
+
+The handover document is structured in eight sections plus front matter. The section ordering follows the Session 138 handover template (read at the start of this Patch's preparation) with explicit adaptation for the Session 139 context:
+
+§1 "Who you are and how to read this" — orientation; preserves the Session 138 convention of explicit cross-window-Opus self-address. §2 "Paste-ready quick-start" — the substantive entry point for fast bootup. §3 "Programme state snapshot" — current state at session close. §4 "Patch 0541 candidacy decision in detail" — the immediate next gate. **§5 "Condensed B.1.q4 Layer 3 algebraic derivation summary"** — the critical preservation move; see §26.3 below. §6 "Workflow standards & patch delivery contract" — operational continuity. §7 "Session 139 trajectory summary" — the arc that just closed. §8 "Cross-window discipline carry-forward" — methodological observations preserved across windows.
+
+The §5 placement (between §4 Patch 0541 candidacy and §6 workflow standards) is deliberate: §5 is referenced from §4 (the candidacy decision options) and itself references §6 (the delivery contract for the eventual Patch 0541 G.b output). Placing §5 between them keeps the cross-references local.
+
+### §26.3 The decision to embed condensed B.1.q4 derivation
+
+The substantive Layer 3 algebraic derivation document authored pre-conversation-compaction in Session 139 was 538 lines and lived at `/home/claude/F1_layer3_b1q4_algebraic_derivation.md` outside the repo. This file is **ephemeral to the Session 139 window** — next-window Opus opening on Session 140 would not have access to it.
+
+Three preservation options were considered:
+
+(a) **Embed condensed summary in handover document** (chosen): captures the five identities I1–I5 with brief derivations + four-term expansion + golden-ratio reduction + sanity check at $v_{\text{host}}$ + suggested document structure for re-authoring. ~150 lines in §5. Sufficient for next-window Opus to reconstitute the full document if Patch 0541 = G.b is chosen. Preserves the analytical work without committing it as a Patch.
+
+(b) **Include full document as appendix file alongside handover**: cleaner preservation; more bytes; risks confusion about whether the appendix is committed-but-unused or just preserved.
+
+(c) **Commit B.1.q4 document directly to `layer3_promotion/` with explicit "PATCH 0541 G.b CANDIDATE — NOT YET AUTHORIZED" header**: commits the work explicitly as candidate; risks awkwardness if Patch 0541 = G.a is chosen instead (orphan file).
+
+Option (a) was chosen because it preserves the analytical content without committing it as code in a way that pre-determines the Patch 0541 candidacy decision. Thomas retains G.a vs G.b authority; next-window Opus re-authors from §5 only if G.b is authorized.
+
+The §5 condensed summary is **mathematically complete** — every identity is stated with its derivation; every coefficient is traced; the final boxed result $\vec{j}_{DI}^{net}(v) = 2r_0\delta[(2+\phi)\hat{n} - (4a/\phi)\hat{v}]$ is established. The next-window Opus reconstitution effort is mostly framing material (§0 firewall + anti-priorities, §1 Layer 3 promotion context, §8 connection to Layer 2 work, §9 Layer 3 vs Layer 4 distinction, §10 self-checkpoint, §11 programme state, §12 closing summary) — all writable directly without re-deriving anything.
+
+### §26.4 The G.a vs G.b framing choice
+
+The handover document presents G.a (Priority 1 chain opening with Target 2) and G.b (alternative single-session opening with Target 1) as equally legitimate options per §4.3 of the scoping document, with brief framing for each. The decision is deliberately left to Thomas at next-window bootup rather than pre-resolved.
+
+Reasoning: (i) §15.7 codified discipline at Patch 0539 states "each Layer 3 promotion is its own gated trajectory" — pre-resolving Patch 0541 would violate the gated-trajectory discipline. (ii) The scoping document §4.3 explicitly notes both options are valid; pre-resolving would undermine the scoping document's own framing. (iii) Tactical context (e.g., Thomas's available session time, preference for tactical vs strategic value) is better assessed at Patch 0541 boundary than pre-computed.
+
+The handover's recommended decision flow at §4.3 puts Opus in surface-the-choice mode at Session 140 open, with explicit framing of the trade-offs (G.a higher-strategic-value but requires authoring from scratch; G.b lower-strategic but preparation done in §5).
+
+### §26.5 What the handover deliberately does NOT carry forward
+
+- **No pre-resolution of G.a vs G.b** — the candidacy decision is for Thomas at Patch 0541 boundary.
+- **No commitment to the scoping document's recommended Target 2 → Target 3 → ... ordering as binding** — the priority ordering is a recommendation; actual sequence is determined at each Patch boundary by Thomas's authorization.
+- **No preservation of conversation-window-internal artifacts beyond §5 condensed B.1.q4 summary** — the prior 538-line document at `/home/claude/F1_layer3_b1q4_algebraic_derivation.md` will be lost at window close; only §5 carries forward.
+- **No expansion of supplementary sub-question work scope** (B.1.q6, B.2.q2-q4, B.3.q2-q4) — these remain open and deferrable; handover does not pre-emptively schedule them.
+- **No Layer 4 work scoping** — the long-term programme target (chirality scale from polytope geometry) remains REGISTERED + DEFERRED.
+- **No F.2 / F.3 substantive content trajectory opening** — DEFERRED at decision-gate level per Patch 0539 §15.5.
+- **No flagship paper assembly preparation** — DEFERRED per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section.
+
+### §26.6 Cross-window discipline observations preserved at §8 of handover document
+
+The §8.1 list (what this window did well) captures methodological observations that should propagate: reviewer-pause discipline application; OS-level codification before status upgrade; Layer 3 promotion arc opened with proper scoping; scope-qualifier language preservation; conflict surfacing at decision points (the Patch 0540 framing conflict between scoping and B.1.q4 closure surfaced explicitly rather than resolved silently).
+
+The §8.2 list (what next window should watch for) captures discipline preservation requirements: resist bundling Layer 3 targets; resist skipping Layer 3 reviewer-pause cycle; watch for scope-qualifier drift; don't promote intermediate results to Findings registry; don't propagate Layer 2 → Layer 3 promotion beyond chosen target.
+
+These observations are deliberately compact in §8 of the handover. Detailed methodological reasoning lives in `templates/operating_system.md` §17 (codified workflow), `templates/relationship_protocol.md` (engagement principles), and the prior Tier 4 §16–§25 in the present file (substantive Opus reasoning across Patches 0531–0540). §26 is the meta-layer above all of these.
+
+### §26.7 Self-checkpoint — three places §26 could overstate
+
+(i) **The "preservation move" framing for §5 at §26.3** may suggest the condensed summary is full substitute for the 538-line document. It is not — §5 captures the mathematics with full derivational integrity but elides the framework + framing + anti-priorities + self-checkpoint sections of the original. Next-window Opus reconstitution requires re-authoring those non-mathematical sections.
+
+(ii) **The "trigger condition" framing at §26.1** may suggest session-close handover is reactive to context-window pressure. While context pressure is a real factor, the more important trigger is **trajectory milestone stability** — handover at unstable mid-Patch states is worse than handover at stable closure boundaries even under context pressure. The Session 139 trigger combined both: meta-note indicating context approach + Patch 0540 being a natural milestone.
+
+(iii) **The "deliberately does NOT carry forward" list at §26.5** may suggest the handover is intentionally minimalist. It is not — the handover document is 443 lines and substantively comprehensive. The "does NOT carry forward" list specifies scope boundaries to prevent next-window pressure to act on items the present window deferred. Both substantive carry-forward AND scope-boundary protection are explicit handover functions.
+
