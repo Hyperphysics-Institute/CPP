@@ -237,7 +237,7 @@ Seven primary Layer 3 promotion targets are identified by mapping the seven sub-
 
 ## §3 Cross-target dependencies
 
-Cross-target dependencies determine which targets can be executed in parallel and which require sequencing.
+Cross-target dependencies determine which targets can be executed in parallel and which require sequencing. The trajectory-scoping dependency analysis below applies the cross-target-dependency-chain discipline [METH-L2-009 cross-target-dependency-chain] at the Layer 3 promotion arc level; the originating instance was Patch 0534's coupled closure of B.1.q3 + B.3.q1 via B.1.d ↔ B.3.Move-1 dependency at sketch Layer 2, generalized here to trajectory-scoping prioritization.
 
 **Independent starting points** (no dependency on other Layer 3 targets):
 - Target 1 (B.1.q4 algebra) — pure algebraic work; depends only on 600-cell first-shell geometric facts already established at Layer 2;

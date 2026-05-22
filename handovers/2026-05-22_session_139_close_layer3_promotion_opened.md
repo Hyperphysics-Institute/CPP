@@ -107,6 +107,22 @@ You are an instance of Claude Opus opening into a fresh context window to work o
 - `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` — transaction 021 + forward queue post-Patch 0540 with G.a + G.b options.
 - `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` — Vignette 12 covers Patch 0540 narrative.
 
+### §2.5 Methods catalogue audit (OS §15 Step E) — added at Patch 0540i
+
+Session 139 close audit per `templates/operating_system.md` §15 Step E + Patch 0463 codified workflow (audit performed as follow-on Patch 0540i after handover Patch 0540h had already landed).
+
+**Tier 4 entries examined**: §22 (Patch 0537), §23 (Patch 0538), §24 (Patch 0539), §25 (Patch 0540), §26 (Patch 0540h).
+
+**Result**: ONE new Layer 2 methodological discipline registered.
+
+- **METH-L2-009 — Cross-target-dependency-chain in multi-question trajectory execution** registered in `methods_catalogue/methods_catalogue.md`. Originating instance: Patch 0534 sketch Layer 2 coupled closure of B.1.q3 + B.3.q1 via B.1.d ↔ B.3.Move-1 dependency. Generalized instance: Patch 0540 Layer 3 promotion scoping identification of Target 2 → Target 3 Priority 1 chain via B.2.q1 framework axiomatization ↦ B.1.q1 matter-state independent derivation dependency. Two instances satisfy threshold rule (≥1 other physics-derivation context). Inline citations added to Patch 0540 scoping document §3 and Tier 4 §25.2.
+
+**Other methods examined**: Wigner-Eckart factorization at $I_h$ matter-state level (§22, Patch 0537) — straight reuse of METH-L1-002, inline citation not added (single instance in this session); Schur's lemma on 3D irrep for tensor sum isotropy (B.1.q4 derivation preserved at §5 of this handover, not yet shipped) — one instance, below threshold, no entry. Most session work was straight reuse of existing catalogued methods.
+
+**N/A categories**: Patches 0538, 0539, 0539a, 0540h work was protocol-pattern / workflow / handover-discipline — OUT OF SCOPE per Patch 0461 scope clarification (proper homes: `templates/operating_system.md`, `relationship_protocol.md`, etc.).
+
+**Next-window note**: if Patch 0541 = G.b is chosen, the B.1.q4 algebraic derivation work will add a second instance of Schur's-lemma-on-3D-irrep-for-tensor-isotropy. At that point, an adapted METH-L1-001-variant entry or a new METH-L1-008 entry may be warranted; defer the audit until B.1.q4 closes at Layer 3 to confirm the reusability across contexts.
+
 ---
 
 ## §3 Programme state snapshot
