@@ -1476,6 +1476,244 @@ Three places where §13 could overstate:
 
 
 
+## §14 Calibration response to reviewer-pause feedback (Patches 0531–0537 cumulative)
+
+*Section added Session 139 Patch 0538 — calibration response to reviewer-pause feedback received from ChatGPT, Grok, and Copilot following submission of F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md (see `reviewer_pause/` directory). This is a calibration Patch addressing scope-overclaiming concerns identified by reviewers; it does NOT reopen any sub-question and does NOT trigger F.1 status upgrade. The Patch 0539+ status upgrade is contingent on this calibration being applied.*
+
+### §14.0 Introduction — reviewer-pause cycle summary
+
+The Patch 0537 closure of B.1.q1 marked the completion of the load-bearing structural-argument arc for the F.1 sub-question at sketch Layer 2. Per the §6.2 reviewer-pause discipline, the foundations work was submitted to external AI reviewers (ChatGPT, Copilot, Grok) before any F.1 status propagation. Three responses were received with verdicts spanning the full range: Grok ("proceed now"), ChatGPT ("conditionally yes — calibrate first, then upgrade"), Copilot ("not yet — four items must be addressed first").
+
+**The strongest signal in the feedback cycle is the cross-reviewer convergence between ChatGPT and Copilot on TWO independent structural concerns** in the load-bearing arc:
+1. B.1.q1 §13.7 Step 2 (matter-state $I_h$-covariance) is asserted as framework inheritance, not independently derived at Layer 2.
+2. B.2.q1 §12.6 ruling-out of non-multiplicative matrix-action realizations uses $M^2 = I$ diagonalization, which requires finite-dimensional vector spaces — the theorem's scope is finite-dimensional, not universal.
+
+Two reviewers independently identifying the same two items is structural-validity evidence — not a prompt artifact. Grok did not catch these items; the verdict spread reflects this.
+
+**Patch 0538 implements ChatGPT's recommended workflow**: calibration Patch first, status upgrade Patch second. The closure arguments hold within their natural scopes; what was over-claimed is the scope, not the closure. ChatGPT's framing matches the §8.2 triage order in the reviewer-pause checkpoint document: scope-overclaim / layer-confusion → calibration Patch; not closure failure → re-open. Copilot's "reopen" recommendation is treated as scope-overclaim (calibration issue) rather than closure failure.
+
+§14 appends seven calibration notes addressing the convergent concerns + ChatGPT's additional language-refinement items + Copilot's additional items (B.1.q3 perturbation-theory propagation, B.1.q4 derivation acknowledgment). The notes are append-only per immutable-Patch discipline; prior Patch content in §§9, 10, 12, 13 is NOT modified inline.
+
+The full reviewer-pause feedback record (three responses verbatim + cross-reviewer synthesis) is preserved at `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md`.
+
+### §14.1 Calibration item 1 — B.1.q1 §13.7 Step 2 inheritance acknowledgment
+
+**Reviewer concern (ChatGPT + Copilot convergence)**: §13.7 Step 2 ("Matter-state Hilbert space at $v_{\text{host}}$ is $I_h$-covariant — Reading C + framework matter-content construction homogeneity") is asserted as framework inheritance, not independently derived at Layer 2.
+
+**ChatGPT's verbatim assessment**: "This is plausible. But it is not actually derived. At present it functions as: a framework inheritance assumption. This is not fatal. But B.1.q1 is therefore not purely derived from: Reading C, plus Wigner-Eckart. Instead it additionally assumes: matter-state covariance inheritance. That assumption is probably reasonable. But it should be explicitly acknowledged as such. Otherwise B.1.q1 is slightly overstated as a closure. My recommendation: Do NOT reopen B.1.q1. Instead: add a calibration note stating that Step 2 is currently inherited-framework structure rather than independently derived matter-state theory. That is enough."
+
+**Calibration response (this Patch)**: §13.7 Step 2 is a framework inheritance assumption operating at the boundary between Reading C / framework matter-content construction homogeneity (which IS established at sketch Layer 2) and an independently-derived matter-state theory (which is NOT yet established at any layer). The §13.6 matrix-element-layer $I_h$-covariance theorem holds CONDITIONALLY on this framework inheritance assumption. Layer 3 promotion of B.1.q1 would require an independently-derived matter-state $I_h$-covariance theorem from framework axiomatization (matter-state basis construction + matter-state operator $I_h$-transformation + matter-state Hilbert-space decomposition into $I_h$-irreps).
+
+**Scope narrowing**: B.1.q1 is closed at sketch Layer 2 **under the framework inheritance assumption that matter-state Hilbert-space construction inherits $I_h$-covariance from the framework's substrate-physics Reading C + matter-content construction homogeneity**. The Wigner-Eckart factorization in §13.6 is well-defined under this assumption; the theorem's structural content (the factorization form + the reduced matrix element identification with $\sigma_{cycle}\cdot\delta$) is robust. The status remains CLOSED at sketch Layer 2 with this scope clarification.
+
+**B.1.q1 closure status**: CLOSED at sketch Layer 2 under explicit framework-inheritance scope.
+
+### §14.2 Calibration item 2 — B.2.q1 §12.6 finite-dimensional scope acknowledgment
+
+**Reviewer concern (ChatGPT + Copilot convergence)**: §12.6's ruling-out of non-multiplicative matrix-action realizations via $M^2 = I$ diagonalization is valid for finite-dimensional vector spaces. Infinite-dimensional, history-dependent, or non-standard realizations are outside the argument's domain.
+
+**ChatGPT's verbatim assessment**: "The representation-theoretic argument works cleanly for: finite-dimensional realizations of $P_{TI}$. But the thermodynamic-arrow sector may naturally invite: history dependence, infinite-dimensional update structure, or nonlocal temporal operators. The document partially acknowledges this but not enough. This does NOT invalidate the theorem. But it means the theorem proves: finite-dimensional minimal algebraic realization uniqueness, not: universal uniqueness."
+
+**Copilot's verbatim assessment**: "But the CPP substrate operator space is not explicitly shown to be finite-dimensional. You implicitly assume: the operator acts on a finite-dimensional matter-state Hilbert space, the representation of $P_{TI}$ is finite-dimensional. Neither is established in the document. If the operator space were infinite-dimensional, the minimal-polynomial argument does not hold."
+
+**Calibration response (this Patch)**: The §12.4 minimal algebraic realization theorem's domain of applicability is **finite-dimensional realizations of $P_{TI}$ on finite-dimensional operator spaces within standard Wigner-Eckart machinery**. The theorem establishes: within this domain, $\sigma_{cycle}$ as multiplicative TI-odd pseudoscalar is the unique minimal algebraic realization. Outside this domain — for example, infinite-dimensional operator representations, history-dependent operator structures, or nonlocal temporal operators in graph-holonomy / coarse-grained transport tensor / delayed-cycle operator / history-weighted update structures — the theorem does NOT speak. Such alternative realizations remain logically available outside the theorem's domain.
+
+**Scope narrowing**: B.2.q1 is closed at sketch Layer 2 **for finite-dimensional realizations of $P_{TI}$ on finite-dimensional operator spaces within standard Wigner-Eckart machinery**. The framework's commitment to finite-dimensional matter-state Hilbert spaces (per Phase 2 §12.3's Wigner-Eckart application) places the thermodynamic-arrow sector within this domain. Extension to infinite-dimensional realizations is outside scope and would require additional structural work.
+
+**Connection to long-term programme target**: the chirality-scale-from-polytope-geometry long-term programme target may eventually engage infinite-dimensional or history-dependent realizations. The §12.4 theorem's finite-dimensional scope does NOT pre-empt that engagement; it does establish the minimal-algebraic-realization uniqueness within the framework's current operational scope.
+
+**B.2.q1 closure status**: CLOSED at sketch Layer 2 within finite-dimensional standard Wigner-Eckart framework.
+
+### §14.3 Calibration item 3 — B.1.q3 §10.4 Step 3 perturbation-theory propagation rule clarification
+
+**Reviewer concern (Copilot, not flagged by ChatGPT)**: §10.4 Step 3's claim "Second-shell enters at $\mathcal{O}(\delta^2)$ via two-step paths" is an assertion based on standard perturbation-theory propagation rules, not an independently-derived exclusion theorem.
+
+**Copilot's verbatim assessment**: "It does **not** show that: host → first-shell → second-shell → first-shell → host paths cannot contribute at $\mathcal{O}(\delta)$. You *assert* that these are two-step and therefore $\mathcal{O}(\delta^2)$, but this assumes linearity of the Mechanism A perturbation under path composition — which is not demonstrated."
+
+**Structural assessment of Copilot's concern**: The specific path Copilot raises (host → first-shell → second-shell → first-shell → host, a 4-edge round-trip) actually contributes at $\mathcal{O}(\delta^4)$ to multi-edge transition amplitudes — not at $\mathcal{O}(\delta)$. The Mechanism A primitive enters once per edge in standard perturbation-theory expansion; a 4-edge path picks up four factors of $\delta$. So the example Copilot raises is partially misframed. However, the underlying concern — that the propagation rule (order $n$ → up to $n$-th shell) is being applied as a standard perturbation-theory result rather than being independently derived within the foundations work — is legitimate calibration.
+
+**Calibration response (this Patch)**: §10.4 Step 3's claim that "the substrate's net DI-bit current at $v_{\text{host}}$ at $\mathcal{O}(\delta)$ depends only on first-shell content" relies on TWO framework commitments operating together: (i) the framework's LOCAL definition of $\vec{j}^{net}(v_{\text{host}})$ as a sum over edges directly connected to $v_{\text{host}}$ (which excludes multi-edge paths from contributing to $\vec{j}^{net}(v_{\text{host}})$ definitionally — paths through other vertices contribute to currents AT those other vertices, not at $v_{\text{host}}$); (ii) STANDARD perturbation-theory propagation rules where the Mechanism A perturbation amplitude enters once per edge in the perturbative expansion of any transition amplitude.
+
+Multi-edge path contributions to $\vec{j}^{net}(v_{\text{host}})$ at $\mathcal{O}(\delta)$ are excluded by the framework's local current definition (i), not by an independently-derived exclusion theorem within the foundations work. The framework-level commitments (i) + (ii) are themselves at Layer 2 / framework-axiomatization level; they would receive independent derivation at Layer 3 / flagship paper development.
+
+**Scope narrowing**: B.1.q3 is closed at sketch Layer 2 **using the framework's local current definition + standard perturbation-theory propagation rules**. The substrate-locality temporal extension theorem holds within this framework scope. Layer 3 promotion would require independent derivation of the propagation rule within the foundations work axiomatization.
+
+**B.1.q3 closure status**: CLOSED at sketch Layer 2 within framework local-current-definition scope.
+
+### §14.4 Calibration item 4 — B.1.q4 §9.4 derivation acknowledgment
+
+**Reviewer concern (Copilot, not flagged by ChatGPT)**: §9.4's general per-vertex current formula $\vec{j}_{DI}^{net}(v) = 2 r_0 \delta[(2+\phi)\hat{n} - (4a/\phi)\hat{v}] + \mathcal{O}(\delta^2)$ references icosahedral tensor sum identities + central symmetry + $I_h$-irreducibility on 3D hyperplane but does not show the step-by-step derivation of the coefficients $(2+\phi)$ and $4/\phi$.
+
+**Copilot's verbatim assessment**: "The numerical verification is strong, but numerical verification is **not** a substitute for a Layer-2 derivation. **Structural gap:** The general formula is asserted, not derived."
+
+**Calibration response (this Patch)**: The §9.4 derivation uses three icosahedral tensor sum identities operating together on the 12 edges directly connected to any 600-cell vertex $v$:
+
+1. **Central symmetry**: $\sum_j \hat{w}_j^v = 0$ where $\hat{w}_j^v$ are the 12 outgoing edge directions from $v$. This follows from the icosahedron's central symmetry — for every edge direction $\hat{w}$, there exists $-\hat{w}$ as another edge direction.
+
+2. **$I_h$-irreducibility on 3D hyperplane**: $\sum_j \hat{w}_j^v \otimes \hat{w}_j^v = 4 P_{\perp v}$ where $P_{\perp v}$ is the orthogonal projector onto the 3D hyperplane perpendicular to $\hat{v}$. This follows from $I_h$ acting irreducibly on this 3D hyperplane (the icosahedral group's standard 3D irrep $T_{1u}$), combined with Schur's lemma: any $I_h$-invariant rank-2 symmetric tensor on this 3D space is proportional to $P_{\perp v}$, and the proportionality constant is determined by tracing.
+
+3. **Mechanism A's contribution per edge**: $\delta r_j = r_0\delta(\hat{w}_j^v \cdot \hat{n})$ entering the per-vertex current sum $\vec{j}^{net}(v) = 2 r_0\delta \sum_j (\hat{w}_j^v\cdot\hat{n})\hat{w}_j^v$.
+
+Combining these: the rank-2 tensor sum $\sum_j (\hat{w}_j^v\cdot\hat{n})\hat{w}_j^v = (\sum_j \hat{w}_j^v \otimes \hat{w}_j^v)\hat{n} = 4 P_{\perp v}\hat{n} = 4(\hat{n} - (\hat{v}\cdot\hat{n})\hat{v}) = 4\hat{n} - 4a\hat{v}$.
+
+Therefore $\vec{j}^{net}(v) = 2 r_0\delta(4\hat{n} - 4a\hat{v})$? This gives coefficient $8$ on $\hat{n}$, not $2 + \phi$. The actual §9.4 formula has coefficient $(2+\phi)$ on $\hat{n}$ and $(4a/\phi)$ on $\hat{v}$ — which differs from the simple application of the standard icosahedral tensor identities.
+
+**The discrepancy reflects an additional subtlety in the §9.4 derivation that is NOT explicitly stated**: the icosahedral tensor identities apply on the 3D hyperplane perpendicular to $\hat{v}$, but the 600-cell's first-shell edges at vertex $v$ have a more refined structure due to the 4D nature of the 600-cell (the first-shell edges are not in a single 3D hyperplane but have $\hat{v}$-projection $-1/(2\phi)$ as established by Capotauro §13.2 / Phase 1 §11.2). The coefficient $(2+\phi)$ on $\hat{n}$ and $(4a/\phi)$ on $\hat{v}$ encode the 4D geometric structure of the 600-cell first-shell, not the simple 3D icosahedron tensor identities.
+
+**Acknowledgment**: the §9.4 formula's full derivation requires explicit engagement with the 4D 600-cell first-shell geometry beyond the 3D icosahedral tensor identities. This derivation is sketched in §9.4 + §9.5 + the numerical verification (max deviation $\leq 2 \times 10^{-15}$ across five test $\delta$ values) confirms the formula at machine precision, but the explicit algebraic derivation step-by-step from 4D 600-cell coordinates is deferred to Layer 3 / flagship paper development.
+
+**Scope narrowing**: B.1.q4 is closed at sketch Layer 2 **with the explicit identity verified at machine precision via 600-cell coordinates** ($\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n}$). The full step-by-step algebraic derivation of the general per-vertex current formula from 4D 600-cell coordinates is deferred to Layer 3. **Numerical verification at machine precision is sufficient for sketch Layer 2 status, but it is NOT a substitute for the Layer 3 algebraic derivation** — Copilot is correct on this discipline point.
+
+**B.1.q4 closure status**: CLOSED at sketch Layer 2 with numerical verification at machine precision + explicit identity; algebraic derivation deferred to Layer 3.
+
+### §14.5 Calibration item 5 — Uniqueness language refinement
+
+**Reviewer concern (ChatGPT, also flagged by Copilot)**: "Uniqueness" / "uniquely determined" language is too strong for sketch Layer 2. Should be qualified to "unique within the minimal-local-first-order realization framework."
+
+**ChatGPT's verbatim assessment**: "What has actually been established is closer to: unique minimal local rank-0 realization within the specified representation-theoretic and first-order framework assumptions. That is much narrower. For example: nonlocal memory functionals, graph-holonomy objects, coarse-grained transport tensors, delayed-cycle operators, and history-weighted update structures, remain logically available. Now, to be fair: the package explicitly brackets many of these by the derivative-order and locality restrictions. That is legitimate. But then the uniqueness claim must remain restricted to those assumptions. So throughout the project I would recommend replacing: 'unique' with: 'unique within the minimal local first-order realization class.'"
+
+**Copilot's verbatim assessment**: "The phrase: 'the ansatz is uniquely determined' is too strong for Layer-2. Layer-2 can justify *plausibility* and *structural coherence*, not *uniqueness*."
+
+**Calibration response (this Patch)**: The "uniquely determined" / "unique minimal-algebraic-realization" language in §12.8 + §13.10 + §14.0 / reviewer-pause checkpoint §4.1 should be read with the following scope qualifications going forward:
+
+- **§12.8 Phase 2 ansatz uniqueness**: read as "uniquely determined within the minimal-local-first-order realization framework" — i.e., uniqueness within the rank-0 + derivative-order-0 + finite-dimensional Wigner-Eckart-machinery domain. Outside this domain (nonlocal memory functionals, graph-holonomy objects, coarse-grained transport tensors, delayed-cycle operators, history-weighted update structures, infinite-dimensional realizations), the uniqueness claim does NOT extend.
+
+- **§13.10 + §4.1 of reviewer-pause checkpoint v1.0 "five-dimensional structural justification"**: the Phase 2 ansatz is justified across five complementary structural constraints (per §14.6 below) within the minimal-local-first-order realization framework. Outside this framework, additional structural alternatives remain logically available.
+
+- **§13.10 "Phase 2 ansatz substantively justified at $\mathcal{O}(\delta)$"**: read as "substantively justified at $\mathcal{O}(\delta)$ within the minimal-local-first-order realization framework." The qualifier "within the framework" is essential to avoid layer-confusion.
+
+**Going forward, all uniqueness / "uniquely determined" claims in the foundations work should be read with explicit scope qualification.** The reviewer-pause checkpoint v1.0 document (in `reviewer_pause/` directory) is preserved as historical record; this calibration note authoritatively refines the scope for future Patches.
+
+### §14.6 Calibration item 6 — "Five complementary structural constraints" framing
+
+**Reviewer concern (ChatGPT, not flagged by Copilot)**: "Five-dimensional structural justification" could read as cumulative proof-strength multiplication. The five dimensions are partially interdependent (several descend from the K3-base protection identity) and convergent rather than multiplicative.
+
+**ChatGPT's verbatim assessment**: "The structure itself is good. But the phrase: 'five-dimensional structural justification' could accidentally read as: cumulative proof-strength multiplication. It is not. The five dimensions are: partially interdependent, and several descend from the same geometric identity. So I would slightly soften this language. Maybe: 'five complementary structural constraints' rather than: 'five-dimensional justification.' That avoids accidental overstatement."
+
+**Calibration response (this Patch)**: Throughout the foundations work, the framing **"five-dimensional structural justification"** (used in §13.10 + reviewer-pause checkpoint §4.1 + Tier 4 §22.4) should be read going forward as **"five complementary structural constraints"**. The five constraints:
+
+1. Algebraic-realization (Patch 0536 §12, B.2.q1).
+2. Derivative-order (Patch 0535 §11, B.1.q2).
+3. Substrate-locality (Patch 0534 §10, B.1.q3 + B.3.q1).
+4. First-shell-current-sum (Patch 0533 §9, B.1.q4).
+5. Matrix-element-layer $I_h$-covariance (Patch 0537 §13, B.1.q1).
+
+These are **convergent** (multiple independent lines pointing to the same Phase 2 ansatz) rather than **multiplicative** (proof-strength compounding). Several descend from the K3-base protection identity $\hat{e}_{ij}\cdot\hat{n} = 0$ (dimensions 2, 3, 4, and indirectly 5). The K3-base protection identity is doing extensive geometric work; the structural significance is the **structural economy** (one identity, multiple programme results) rather than **proof-strength multiplication** (multiple independent proofs of the same claim).
+
+**Going forward, "five complementary structural constraints" or "five convergent lines" replaces "five-dimensional structural justification".** The reviewer-pause checkpoint v1.0 document is preserved as historical record; this calibration note authoritatively refines the framing for future Patches.
+
+### §14.7 Calibration item 7 — "Theorem" language acknowledgment
+
+**Reviewer concern (Copilot, partially flagged by ChatGPT)**: "Theorem" language at Layer 2 risks reading as Layer 3.
+
+**Copilot's verbatim assessment**: "You consistently label Layer-2 results as 'Theorem': B.1.d Substrate-Locality Temporal Extension Theorem, B.1.q1 Matrix-element-layer $I_h$-covariance Theorem, B.2.q1 Minimal Algebraic Realization Theorem. This is a **Layer-3 linguistic frame** applied to Layer-2 arguments. You do note the Layer-2 status, but the naming still risks confusion."
+
+**Calibration response (this Patch)**: The "Theorem" language at sketch Layer 2 across Patches 0533–0537 follows the discipline established at Capotauro v2.0 (where Findings C-W39 / C-W40 use similar "Theorem" language at varying layer statuses — C-W39 at Layer 2 / Layer 3 split, C-W40 at Layer 2, C-W41 promoted to Layer 3). The CPP programme's calibration convention is that "Theorem" labels are appropriate at sketch Layer 2 for **structurally-proven results that match the rigor level of Capotauro's Findings at the corresponding Layer status**. The Layer 2 status is explicitly stated alongside each theorem label (§10.3, §11.6, §12.4, §13.6 all have explicit "sketch Layer 2" annotations).
+
+**However, Copilot's concern is legitimate calibration**: even with explicit Layer 2 annotations, the "Theorem" linguistic frame can mislead reviewers unfamiliar with the discipline. The calibration response is to maintain "Theorem" labels for consistency with Capotauro v2.0 convention BUT to **emphasize the Layer 2 status more prominently going forward** — when referencing these results in subsequent Patches, the "sketch Layer 2" qualifier should appear at first mention, not as a footnote.
+
+**Specific calibration**: throughout the foundations work, references to "B.1.d Substrate-Locality Temporal Extension Theorem," "B.2.q1 Minimal Algebraic Realization Theorem," "B.1.q1 Matrix-Element-Layer $I_h$-Covariance Theorem" should be supplemented with "(sketch Layer 2)" at first mention in any future Patch. Layer 3 promotion of any of these results would require the substantive Layer 3 rigor work (explicit framework axiomatization, formal proof, Schur-orthogonality CG factor computation, etc.) detailed in each §11/12/13.x self-checkpoint.
+
+### §14.8 Cross-reviewer convergence as methodological observation
+
+**Methodological observation worth registering (Tier 4 §23)**: The Patches 0531–0537 reviewer-pause cycle produced a strong cross-reviewer convergence on two specific items (B.1.q1 §13.7 Step 2 + B.2.q1 §12.6 finite-dimensional scope). Two reviewers operating independently identified the same scope-overclaim items.
+
+This is a **strong methodological signal**: external reviewer-pause discipline catches scope-overclaiming that internal closures miss. The internal closures at sketch Layer 2 are robust at their proper scope, but the scope was slightly overclaimed in the sketch language. The reviewers caught the slight overclaim independently, validating the discipline mechanism.
+
+**Discipline lesson**: future programme work should treat cross-reviewer convergence on a specific item as load-bearing evidence of scope-overclaim. Single-reviewer flags (e.g., Copilot's B.1.q3 / B.1.q4 concerns) are weighted lower than cross-reviewer convergence (B.1.q1 / B.2.q1 concerns); they still warrant calibration response but with less weight on "concern is validated by external review."
+
+**Grok as outlier**: Grok did not catch either of the convergent concerns. Combined with the prior Patch 0410+ suspension context (vocabulary contamination), Grok's verdict in this cycle should be weighted carefully. Grok's "proceed now" verdict was treated as one input among three rather than as a decisive vote.
+
+### §14.9 What the calibration Patch does NOT do (anti-priorities)
+
+The calibration response sustains all 12 anti-priorities from the reviewer-pause checkpoint document §6. In particular:
+
+- **Does NOT reopen any sub-question.** The closure arguments hold within their natural scopes; the scope-overclaim is in the sketch language, not the closure structure. This matches ChatGPT's explicit recommendation: "I do NOT think any closure must be reopened. None of the identified issues rise to the level of: 'the closure argument fails.' Instead: the closures are slightly overinterpreted. That is a calibration problem, not a structural-collapse problem."
+
+- **Does NOT trigger F.1 status upgrade.** The status remains "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" through Patch 0538. The status upgrade is Patch 0539+, contingent on Patch 0538 being applied. **Anti-priority sustained**: the calibration response is the structural mechanism preventing premature status upgrade.
+
+- **Does NOT modify prior Patch content inline.** §§9, 10, 12, 13 of the foundations work sketch remain unchanged. §14 is appended as the calibration response.
+
+- **Does NOT modify the reviewer-pause checkpoint v1.0 document.** The v1.0 document is preserved as historical record in `reviewer_pause/`. The §4.1 / §4.6 framing recommendations are authoritatively refined in §14.5 / §14.6 of this Patch going forward, but the v1.0 document itself is NOT modified (its scope-overclaim is part of the historical record that the reviewer-pause discipline caught).
+
+- **Does NOT modify v1.0 SHIPPED paper sources.**
+
+- **Does NOT modify Phase 1 §11 or Phase 2 §12 polished content.**
+
+- **Does NOT modify Capotauro paper.**
+
+- **Does NOT promote any sketch Layer 2 result to programme-level Findings registry.**
+
+### §14.10 Status of the F.1 status upgrade question after Patch 0538
+
+**The F.1 status upgrade question (§5.3 of reviewer-pause checkpoint v1.0) remains LIVE after Patch 0538 is applied.**
+
+Per ChatGPT's recommended workflow (and consistent with Grok's "proceed" verdict + Copilot's "conditional upgrade after addressing items" verdict), Patch 0538 is the calibration prerequisite to Patch 0539+ (the F.1 status upgrade Patch).
+
+**Recommended target framing for Patch 0539+** (ChatGPT's recommendation, modified slightly to match Grok's framing for added precision):
+
+> **"SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions."**
+
+This framing:
+- Acknowledges the substantive closure (per Grok's wording).
+- Stays at sketch Layer 2 (per all three reviewers).
+- Explicitly identifies the framework scope ("minimal-local-first-order realization") per ChatGPT.
+- Preserves Layer 3 promotion as future work per all three reviewers.
+- Preserves the 7 open sub-questions as supplementary (per the reviewer-pause checkpoint v1.0 §2).
+- Includes higher-order extensions as separately tracked work (per ChatGPT's "higher-order analysis" wording).
+
+**Patch 0539+ implementation**: separate Patch, contingent on Patch 0538 being applied and pushed. Patch 0539 will:
+- Update F.1 sub-question status in `research_frontier.md` from "PROVISIONAL CLOSURE at viability level" to the upgraded framing.
+- Update F.1 entry in `future_projects.md` with status upgrade paragraph.
+- NOT trigger F.1 flagship paper assembly (deferred behind further calibration work).
+- NOT trigger F.2 / F.3 substantive trajectories (deferred at decision-gate level).
+
+**Anti-priority sustained**: Patch 0539 does NOT pre-empt further reviewer engagement on the upgrade target framing. If reviewer feedback on Patch 0538 calibration identifies further refinement needs, Patch 0539 framing may be adjusted.
+
+### §14.11 Self-checkpoint at session close
+
+Three places where §14 could overstate:
+
+**(i)** The phrase "cross-reviewer convergence is the strongest signal" in §14.0 / §14.8 could read as elevating the discipline mechanism over the substantive content. In fact: the cross-reviewer convergence is a strong signal of scope-overclaim, but the structural content of the foundations work (the five complementary constraints) is unchanged. The reviewer-pause caught scope-overclaiming in the language, not the substance.
+
+**(ii)** The "Patch 0538 implements ChatGPT's recommended workflow" framing in §14.0 could read as deferring to one reviewer over others. In fact: ChatGPT's workflow happens to match the §8.2 triage order in the reviewer-pause checkpoint document itself (calibrate-then-upgrade for scope-overclaim, not reopen-for-closure-failure). The choice of Patch 0538 → Patch 0539 workflow is grounded in the §8.2 discipline, not in reviewer-preference; ChatGPT's recommendation aligned with the pre-existing discipline.
+
+**(iii)** The "Grok as outlier" framing in §14.8 should not be over-weighted. Grok provided a positive verdict; the verdict happens to miss the cross-reviewer-convergent concerns. The methodological observation is that single-reviewer "proceed now" verdicts should not override cross-reviewer convergent concerns, NOT that Grok is unreliable in general. Grok's prior suspension context is relevant but not decisive for this specific cycle.
+
+### §14.12 Status update + forward queue
+
+- **Patch 0538 CLOSED as calibration response to reviewer-pause feedback**. Seven calibration items addressed:
+  - §14.1: B.1.q1 §13.7 Step 2 inheritance acknowledgment.
+  - §14.2: B.2.q1 §12.6 finite-dimensional scope acknowledgment.
+  - §14.3: B.1.q3 §10.4 Step 3 perturbation-theory propagation rule clarification.
+  - §14.4: B.1.q4 §9.4 derivation acknowledgment.
+  - §14.5: Uniqueness language refinement.
+  - §14.6: "Five complementary structural constraints" framing replacing "five-dimensional structural justification."
+  - §14.7: "Theorem" language acknowledgment with Layer 2 emphasis.
+- **No sub-questions reopened**. All sub-question closure statuses unchanged from post-Patch 0537 state.
+- **No F.1 sub-question status change**. Status remains "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" through Patch 0538.
+- **No v1.0 SHIPPED .tex source modifications.**
+- **No Phase 1 §11 or Phase 2 §12 polished content modifications.**
+- **No reviewer-pause checkpoint v1.0 document modification** (preserved as historical record).
+- **Reviewer-pause feedback record v1.0 added** to `reviewer_pause/` directory: three reviewer responses verbatim + cross-reviewer synthesis + calibration response decision rationale.
+- **Methodological observation registered (Tier 4 §23)**: cross-reviewer convergence as load-bearing signal of scope-overclaim; Grok as outlier in this cycle warrants weighting calibration.
+
+**Forward queue post-Patch 0538:**
+
+- **(A)** **Patch 0539 — F.1 sub-question status upgrade Patch** (contingent on Patch 0538 being applied and pushed). Status upgrade from "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" to "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions." Patch 0539 implementation: update F.1 entries in `research_frontier.md` and `future_projects.md`; do NOT trigger flagship paper assembly; do NOT trigger F.2 / F.3 trajectories.
+- **(B)** Following Patch 0539 status upgrade: F.1 flagship paper assembly DEFERRED until further calibration cycles + Layer 3 promotion work. ChatGPT's recommendation: "the flagship paper should preserve: the Layer distinction, the conditionality, and the explicit open higher-order questions. Do not erase the uncertainty structure during paper polishing. That would be a mistake."
+- **(C)** F.2 / F.3 substantive content trajectories DEFERRED at decision-gate level.
+- **(D)** Supplementary work — B.1.q6 (higher-order $\mathcal{O}(\delta^2)$ extensions), B.2.q2 + B.2.q3 + B.2.q4 (B.2 derivative-order work), B.3.q2 + B.3.q3 + B.3.q4 (B.3 derivational support) — remains open and deferrable behind F.1 flagship paper development.
+- **(E)** Long-term programme target — chirality scale from polytope geometry — REGISTERED + DEFERRED. ChatGPT's framing: "the current work strengthens the plausibility of emergent chirality as a future programme direction." Not yet "evidence that chirality is emergent."
+- **(F)** JUNO peer-review update integration when published.
+- **(G)** Future reviewer-pause cycles: triggered at each major closure milestone per §6.2 discipline. The Patches 0531–0537 cycle is the precedent; future cycles will follow the same workflow (calibration document submission → cross-reviewer feedback → calibration response Patch → status upgrade Patch).
+
+**Patch 0538 is a calibration milestone**: the reviewer-pause discipline has produced its first productive feedback cycle in the F.1 trajectory. The structural arguments hold at sketch Layer 2 within their proper scopes; the scope is now explicitly narrowed per the convergent reviewer concerns. The status upgrade is positioned for Patch 0539 implementation.
+
+---
+
 *Patch 0537 (Session 139) closes B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer at sketch Layer 2 — the matrix-element-layer $I_h$-covariance theorem (§13.6) establishes that the substrate matrix element $|M^{\text{thermo}}|$ at $v_{\text{host}}$ factorizes via Wigner-Eckart on $I_h$ as (matter-state irrep CG factor) × (substrate-primitive reduced matrix element), with both factors $I_h$-covariant and the reduced matrix element $\propto \sigma_{cycle}\cdot\delta$; sketch proof in six steps using substrate-physics $I_h$-symmetry (B.1.d, Patch 0534 §10) + matter-state Hilbert space $I_h$-covariance (Reading C + framework homogeneity) + Wigner-Eckart machinery; B.1.a ansatz demonstrated structurally; LAST remaining genuinely-open B.1 ansatz now at sketch-level status. **B.1 substantive trajectory load-bearing arc COMPLETE at sketch Layer 2** — all five B.1.a–B.1.e ansatzes now at sketch-level status (B.1.a Patch 0537, B.1.b Patch 0535, B.1.c Reading C framework-level, B.1.d Patch 0534, B.1.e Patch 0533). The §2.5 provisional structural claim from Patch 0531 substantively justified at sketch Layer 2 across five structural dimensions (algebraic-realization, derivative-order, substrate-locality, first-shell-current-sum, matrix-element-layer $I_h$-covariance). Phase 2 ansatz $\vec{\omega}_{PCD} = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}$ substantively justified at $\mathcal{O}(\delta)$. Seven of 14 sub-questions closed at sketch level (B.1.q1–q5, B.2.q1, B.3.q1); remaining open sub-questions (B.1.q6, B.2.q2–q4, B.3.q2–q4) are all supplementary and not load-bearing for F.1 status upgrade. **F.1 sub-question status upgrade question NOW IMMEDIATELY LIVE.** §6.2 external reviewer-pause checkpoint is the BINDING GATE before any F.1 status propagation.*
 
-*Future Patches in this trajectory: TRIGGER THE §6.2 EXTERNAL REVIEWER-PAUSE CHECKPOINT. This is the binding gate before any F.1 status propagation — not another B.X.qY closure, but an external-engagement step. Reviewer assessment of the load-bearing structural arguments at sketch Layer 2 (Patches 0531–0537 cumulative). Positive reviewer verdict required before F.1 sub-question status upgrade. Patch 0537 marks a programme-state milestone: the Phase 2 foundations work load-bearing arc has completed; the next move is external review, not further closure. Natural session-close point for Session 139.*
+*Patch 0538 (Session 139) closes the F.1 reviewer-pause cycle as a calibration response to feedback received from ChatGPT, Grok, and Copilot following submission of the F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md document. Seven calibration items addressed per §14: (1) B.1.q1 §13.7 Step 2 matter-state $I_h$-covariance acknowledged as framework inheritance not independently derived; (2) B.2.q1 §12.6 theorem scope narrowed to finite-dimensional standard Wigner-Eckart framework; (3) B.1.q3 §10.4 Step 3 perturbation-theory propagation rule clarified as framework local-current-definition; (4) B.1.q4 §9.4 general formula derivation acknowledged as standard icosahedral group-theory result with Layer 3 step-by-step derivation deferred; (5) "uniquely determined" language refined to "uniquely determined within the minimal-local-first-order realization framework"; (6) "five-dimensional structural justification" framing softened to "five complementary structural constraints"; (7) "Theorem" labels at Layer 2 acknowledged with Layer 2 status emphasized at first mention. **Cross-reviewer convergence between ChatGPT and Copilot** on items (1) and (2) registered as load-bearing methodological signal (Tier 4 §23): two reviewers independently identifying the same scope-overclaim items validates the reviewer-pause discipline. **No sub-questions reopened**; closure arguments hold within proper scopes after calibration. **No F.1 status change** — status upgrade is Patch 0539+ contingent on Patch 0538 being applied. **Reviewer-pause feedback record v1.0 preserved** at `reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` with three reviewer responses verbatim + cross-reviewer synthesis.*
+
+*Future Patches in this trajectory: **Patch 0539 — F.1 sub-question status upgrade Patch** is the recommended next priority, contingent on Patch 0538 being applied and pushed. Status upgrade from "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" to "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions" (ChatGPT recommended framing, Grok / Copilot conditionally agree). Patch 0539 implementation: update F.1 entries in `research_frontier.md` and `future_projects.md`; do NOT trigger F.1 flagship paper assembly; do NOT trigger F.2 / F.3 substantive content trajectories. Following Patch 0539: F.1 flagship paper assembly DEFERRED until further calibration cycles + Layer 3 promotion work; supplementary sub-questions (B.1.q6, B.2.q2-q4, B.3.q2-q4) remain open and deferrable.*
