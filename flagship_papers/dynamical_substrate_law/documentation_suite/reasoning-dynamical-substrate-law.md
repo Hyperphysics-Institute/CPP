@@ -653,3 +653,115 @@ The Patches 0524–0528 trajectory establishes a methodological precedent for fu
 *This Tier 4 reasoning narrative records the substantive Opus physics reasoning across the F.1 sub-question closure trajectory at Session 138 continuation (Patches 0522–0529, plus this Patch 0530 handover). The trajectory's mathematics is preserved in the sketch §11–§14 polished content; this file preserves the reasoning behind that content — the alternatives considered, the framings revised, the moments of uncertainty, the engagement with reviewer pushback. Append-only across future sessions per Four-Tier Documentation Discipline; future F.1 work (Phase 2 foundations work on B.1, B.2, B.3) will append new Tier 4 reasoning entries below this initial baseline.*
 
 *The canonical record of the F.1 closure trajectory's substantive physics lives here. Tier 3 development vignettes (curated narrative summaries), Tier 2 transcript pointer-maps (transaction-indexed roadmap), and Tier 1 session-log entries derive from this Tier 4 source.*
+
+---
+
+## §16 Session 139 / Patch 0531 — Phase 2 foundations work opening reasoning
+
+*This section captures the substantive physics reasoning behind the Patch 0531 sketch `F1_phase2_foundations_work.md`. The session opened Phase 2 foundations work registered at Patch 0528 §14.17 as the real structural bottleneck of the F.1 sub-question closure trajectory.*
+
+### §16.1 The framing decision — which commitment first
+
+The Patch 0528 §14.17 + handover §13 register three open structural commitments: B.1 (local algebraic representation ansatz), B.2 ($\sigma_{cycle}$ algebraization + uniqueness), B.3 (Case A.1 derivational support). Per the handover §13.1, B.1 is the LARGEST OPEN QUESTION; per §13.2, B.2 is mid-tier; per §13.3, B.3 is most tractable in the short term but option (iii) connects to the long-term programme target.
+
+The reasoning to focus the bulk of substantive work on B.1: if B.1 fails (the local algebraic representation cannot be justified), then Phase 2's coupling rule needs to be re-derived under nonlocal/coarse-grained representation, which would propagate to B.2 (the uniqueness question would shift to whichever new representation) and B.3 (the Case A.1 hypothesis is interpreted within whichever representation). So B.1 is structurally load-bearing for the other two. Working it first concentrates the foundation-laying effort.
+
+Within B.1, the further decision was to focus on substantive structural exploration (not closure attempts). The handover §10.4 lesson ("fast multi-phase closure on uninspected foundations") explicitly warned against the Patches 0524–0527 pattern; an opening session producing closures would repeat that anti-pattern. The deliberate scope was: explore B.1 deeply enough to identify what would close it without claiming to close it.
+
+### §16.2 The three-layer disambiguation — the surprise of this session
+
+The most substantive structural move in this session was the §2.2 three-layer disambiguation (substrate per-cycle / substrate matrix element / observable cosmological). This emerged from working through what specifically ChatGPT's "cycle-history accumulation," "nonlocal transport asymmetry," and "coarse-grained update statistics" alternatives WOULD MEAN at the substrate-matrix-element layer.
+
+**Initial reading.** My first pass on the alternatives was to take them at face value: $\vec{\omega}_{PCD}$ at vertex $v$ might depend on history, nonlocal transport, or statistics, each making the local algebraic form $\vec{\omega}_{PCD}(v) = f(\hat{j}^{net}(v), \sigma_{cycle})$ inadequate.
+
+**Tension surfaced.** When I tried to write down what cycle-history accumulation would mean for the SUBSTRATE-MATRIX-ELEMENT computation, I noticed it didn't fit. The Wigner-Eckart matrix element is per-event, per-AM. Accumulation over time is exactly what Phase 4's chain ($|M^{thermo}| \to \Delta p_{LR}^{obs} \to \delta_{CP} \to \varepsilon_1 \to \eta_B$) handles. So "cycle-history accumulation at the substrate-matrix-element layer" felt like a category error.
+
+**Resolution.** ChatGPT's alternatives could be read either as:
+- Concerns at the substrate-matrix-element layer (where the local algebraic representation question genuinely lives), OR
+- Concerns at the observable-cosmological layer (where accumulation/statistics naturally enter via Phase 4's chain).
+
+The disambiguation in §2.2 is my best attempt to clarify what B.1 actually asks. It locates the meaningful B.1 question at the substrate-matrix-element layer and explains why the listed alternatives, taken at face value, don't naturally sit there.
+
+**Caveat I added at §2.2.** The disambiguation itself is sketch-level — I might be drawing a line where ChatGPT didn't draw one, or I might be missing a way to interpret ChatGPT's concerns that actually does locate them at the substrate-matrix-element layer. The B.1.q5 sub-question (review-pause checkpoint on the disambiguation) explicitly flags this; the §6.1 self-assessment notes it as a high-rigor structural clarification with the caveat that "future review of the disambiguation against ChatGPT's original verdict is itself a sub-question."
+
+**Why this matters structurally.** If the disambiguation holds up, B.1 becomes substantially narrower than ChatGPT's framing suggested — it becomes a question of whether spatial derivatives at the host vertex contribute to the matrix element at first order in $\delta$. That's a tractable computational question (B.1.q2). If the disambiguation doesn't hold up, B.1 is broader and harder, and the §2.4 reduction arguments don't apply as written.
+
+### §16.3 The reduction argument structure for B.1 alternatives
+
+The §2.4 reduction arguments (R1, R2, R3 alternatives reducing to local algebraic form at $\mathcal{O}(\delta)$) all share a common structural pattern:
+1. Identify the alternative's form.
+2. Apply icosahedral residual symmetry at the host vertex.
+3. Reduce the alternative to a scalar multiple of $\hat{n}$ × the Phase 2 ansatz.
+
+This pattern depends on:
+- **B.1.a** Icosahedral-symmetry preservation at the substrate-matrix-element layer (Capotauro's spatial-sector preservation extended to temporal).
+- **B.1.b** Derivative content at the host vertex reducing to scalar-multiple-of-$\hat{n}$ (no perpendicular components at first order).
+- **B.1.c** Steady-state substrate dynamics (no cosmological time dependence of $\hat{n}$).
+- **B.1.d** Substrate-locality extension to temporal sector (Capotauro Finding C-W39/C-W40 extending).
+- **B.1.e** First-shell current sum identity (parallel to Capotauro's $\sum_i \hat{u}_i = -(6/\varphi)\hat{n}$).
+
+I deliberately flagged all five as ansatzes rather than treating them as established. The reduction argument is therefore CONDITIONAL on these ansatzes; if any of them fails, the reduction fails or needs to be redone. This is the operational discipline learned from Patch 0528 (every assumption beyond CPP axioms gets flagged).
+
+**Why I did not try to prove B.1.a–B.1.e in this session.** Each is a substantial structural claim that deserves its own treatment. Bundling them into a single closure attempt would replay the Patches 0524–0527 anti-pattern. The session's deliverable is to flag them, queue them as sub-questions (B.1.q1–q6), and leave their substantive examination to future sessions.
+
+### §16.4 The minimal-derivative-order characterization for B.2
+
+The §3.4 reframing of "uniqueness" as "minimal-derivative-order canonical" emerged as a way to sharpen the Patch 0528 §12.13 Calibration 3 framing without overclaiming.
+
+**Patch 0528's framing.** "Phase 2 establishes the *minimal canonical lowest-order* TI-odd substrate object; uniqueness is not proven and remains an open structural question." This is honest but the "lowest-order" qualifier is ambiguous (lowest order in what?).
+
+**The clarification at §3.4.** The candidate TI-odd constructions divide by derivative order in the substrate's local content:
+- Order 0: $\sigma_{cycle} \cdot \hat{j}^{net}(v)$
+- Order 1: $\nabla \times \vec{j}^{net}(v)$ and similar first-derivative constructions
+- Order 2+: higher-derivative + cycle-correlation constructions
+
+The Phase 2 ansatz is uniquely the minimal-derivative-order TI-odd substrate object constructible from $\sigma_{cycle}$ + $\hat{j}^{net}$. Higher-derivative alternatives may exist but they are at higher derivative order, structurally distinct from the order-0 content.
+
+**Why this is cleaner.** The previous "unique" claim required ruling out alternatives that ARE structurally distinct. The "minimal-derivative-order" claim acknowledges those alternatives exist and characterizes the Phase 2 ansatz precisely in terms of its derivative-order content. The claim "the Phase 2 ansatz is the unique TI-odd substrate object at derivative-order 0" is potentially provable, while the broader uniqueness claim is not.
+
+**Status.** The §3.4 minimal-derivative-order characterization is itself a sketch claim. B.2.q2 queues its formalization as a future sub-question. The §7.2 methodological note registers this reframing pattern as potentially generalizable to other CPP uniqueness claims.
+
+### §16.5 The B.1–B.3 dependency structure I noticed
+
+Working through B.1 (§2), B.2 (§3), B.3 (§4) sequentially surfaced that B.1 and B.3 share structural work. Specifically:
+- B.1.d (substrate-locality extension to temporal sector) is the same structural claim as B.3.Move-1 (Substrate-Locality Unification's temporal-sector extension).
+- A future session that closes the substrate-locality temporal extension would advance BOTH B.1 and B.3 simultaneously.
+
+I flagged this dependency in §4.3's Move-1 ("parallels the §2.4.3 B.1.d ansatz") and in the §5.3 forward queue (B.1.q3 and B.3.q1 share structural work).
+
+**Methodological observation.** When commitments share underlying structural claims, the foundations work programme should be sequenced to pick up shared structural work efficiently. This is the kind of cross-commitment dependency that wouldn't have been visible without working through all three substantively in one session — even though no commitment was closed.
+
+### §16.6 The reviewer-pause checkpoint applied to THIS patch
+
+Per the Patches 0524–0528 methodological precedent (handover §10.1, §15), I applied a self-reviewer-pause checkpoint at §6 of the Patch 0531 sketch before propagating.
+
+**Trigger criterion check.** The §10.1 trigger is "substantive multi-phase closure work where the closure language would propagate into multiple downstream sectors." This Patch is a foundations-work OPENING — it doesn't claim closures, doesn't propagate into downstream sectors. So the formal trigger doesn't activate.
+
+**Why I still applied self-checkpoint at §6.** Even without formal trigger, the lesson from Patches 0527 → 0528 is that self-assessment at session close — explicit identification of where rigor is high vs lower, where claims could be overstated — is a cheap discipline that protects against drift. The §6.1 self-assessment caught two places where the sketch could overstate ("provisional structural claim" reading as closer to closure than actual; "minimal-derivative-order characterization" as established rather than candidate); the preventive flagging at §6.1 makes those framings explicit for future readers.
+
+**The discipline pattern.** Even foundations-work patches should incorporate brief self-checkpoint sections. This is registered (implicitly) as a methodological extension of the §15 reviewer-pause checkpoint precedent.
+
+### §16.7 What I deliberately did NOT do
+
+To avoid replaying the Patch 0527 anti-pattern, I deliberately did NOT:
+- Claim B.1.a–B.1.e as proven (each remains a flagged ansatz).
+- Register the §2.4 reduction argument as a finding (it's a sketch structural argument, not formal closure).
+- Update Phase 2 §12 polished content in `F1_subquestion_pcd_orientation_link.md` (the calibrated framing at §12.13 remains the binding state).
+- Promote the F.1 sub-question status from "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work."
+- Modify v1.0 SHIPPED paper sources.
+- Bundle B.1 + B.2 + B.3 into a single "Phase 2 foundations work closure" claim.
+
+These restraints are the operational discipline learned from Patch 0528. Without them, this session's substantive work would propagate as if it were closure-grade, which would require future retraction once external review caught the overclaim.
+
+### §16.8 Forward-looking pointer
+
+The §5.3 forward queue prioritizes B.1.q5 (review-pause on §2.2 layered disambiguation) as the immediate next priority. This is itself a methodological choice: before deeper substantive work on B.1.q1–q4, verify that the disambiguation framing actually addresses ChatGPT's original concern. If it does, the substantive work proceeds in the §2.4 direction; if not, the framing of B.1 needs revision.
+
+The recommended order — disambiguation review → tractable computations (B.1.q2, B.1.q4) → substantive substrate-locality extensions (B.1.q3, B.3.q1) — front-loads the cheapest validation moves before committing to the multi-session structural extensions.
+
+**Estimated trajectory.** Following the §5.3 priority order, Phase 2 foundations work could substantively progress on the load-bearing sub-questions (B.1.q1–q3 + B.2.q1–q2 + B.3.q1) in 5–9 sessions. After that progress, a reviewer-pause checkpoint should be triggered before any upgrade of the F.1 sub-question status or propagation to downstream documents.
+
+---
+
+*Patch 0531 Tier 4 reasoning appended at Session 139 open. Foundations work substantively underway; no closures claimed; fourteen sub-questions queued. The trajectory remains in foundations-exploration state.*
+
