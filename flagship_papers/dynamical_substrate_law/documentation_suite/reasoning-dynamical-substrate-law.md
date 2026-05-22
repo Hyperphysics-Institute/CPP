@@ -1186,3 +1186,108 @@ The overall Phase 2 foundations work trajectory is approaching completion of its
 ---
 
 *Patch 0535 Tier 4 reasoning appended. B.1.q2 curl content explicit computation closed at sketch Layer 2 with stronger result than B.1.b ansatz claimed. K3-base protection identity registered as structural source of three programme results across two perturbation sectors. Four of five B.1 ansatzes at sketch-level status; B.1.a remains the single open load-bearing structural question. F.1 sub-question status upgrade question becoming imminently live; reviewer-pause checkpoint is the binding gate.*
+
+---
+
+## §21 Patch 0536 — B.2.q1 minimal algebraic realization formalization Tier 4 reasoning
+
+*Session 139 Patch 0536 — representation-theoretic work executing the revised §5.3 priority (5) item B.2.q1, formalizing the §3.3 minimal algebraic realization argument for $\sigma_{cycle}$.*
+
+### §21.1 Decision to execute B.2.q1 at this Patch
+
+Following Patch 0535's closure of B.1.q2 curl content (narrowing B.1 ansatzes to ONE open: B.1.a), the §5.3 priority ordering pointed to B.2.q1 as the next item (preserved priority (5)). The estimated effort was 1–2 sessions per §3.5. Tractable: representation theory of small abelian group ($P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$, order 4).
+
+The §3.3 sketch claim — "the multiplicative TI-odd pseudoscalar is the canonical minimal algebraic realization of A5's content" — had been stated at sketch level without formal proof. The §12 task was to make the proof precise.
+
+### §21.2 The substantive insight — rep-theory of abelian parity group forces minimality
+
+The §3.3 sketch claim's three structural arguments (1D irrep is lowest-dimensional non-trivial; multiplicative is simplest tensor operation; alternative realizations contain pseudoscalar as factor) coalesce when viewed through the rep-theory lens:
+
+- **$P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$ is abelian** → all irreps are 1-dimensional (Schur's lemma / finite abelian group character theory). There are exactly 4 irreps, parameterized by characters $(\rho(T), \rho(I)) \in \{+1, -1\}^2$.
+- **$\sigma_{cycle}^2 = 1$ (A5's framework commitment)** → any polynomial dependence of an operator on $\sigma_{cycle}$ reduces modulo $\sigma_{cycle}^2 - 1$ to affine form $a + b\sigma_{cycle}$.
+- **$P_{TI}$-irrep decomposition** → the $a$ term is in the trivial irrep (TI-even), the $b\sigma_{cycle}$ term is in the TI-odd irrep.
+
+Together: TI-odd operators reduce uniquely to multiplicative $\sigma_{cycle}\cdot\tilde{\mathcal{O}}$ form with $\tilde{\mathcal{O}}$ TI-even. The minimal algebraic realization is FORCED by representation theory; no alternative exists at the rep-theoretic level.
+
+### §21.3 The matrix-action vs scalar-action question
+
+A potential challenge: could $\sigma_{cycle}$ enter operators as a non-multiplicative matrix action rather than as a scalar multiplier? Per §12.6, the answer is no: any matrix $M$ on a finite-dimensional vector space satisfying $M^2 = I$ is diagonalizable with eigenvalues $\pm 1$ (since the minimal polynomial divides $x^2 - 1 = (x-1)(x+1)$, both roots simple → diagonalizable). The matrix action then reduces to scalar $\pm 1$ multiplication on the eigenspace decomposition — exactly the multiplicative pseudoscalar realization.
+
+This was an important sub-step in the formalization. The §3.3 sketch's "multiplicative is simplest" argument was a structural observation; §12.6 strengthens this to "multiplicative is essential — no genuinely distinct non-multiplicative alternatives exist at finite-dimensional rep-theoretic level."
+
+### §21.4 The $\gamma^5$ analogy made precise — both same rep-theoretic structure but different irreps
+
+The §3.3 sketch invoked the $\gamma^5$ analogy informally. §12.7 makes it precise.
+
+Both Dirac $\gamma^5$ and CPP $\sigma_{cycle}$ are rank-0 multiplicative scalars realizing $\mathbb{Z}_2$ chirality content in 1D irreps of abelian parity groups. The choice of irrep is physics-dependent:
+- Dirac $\gamma^5$: I-odd, T-even (under standard conventions). Same irrep as Capotauro chirality $\chi$ (in the CPP framework).
+- CPP $\sigma_{cycle}$: T-odd, I-even (per A5.2 + A5.3). Different irrep — the dual under T ↔ I exchange.
+
+The "minimal algebraic realization" structure is universal across both: $\mathbb{Z}_2$ chirality → 1D irrep → rank-0 multiplicative scalar. The rep-theoretic argument doesn't care which specific 1D irrep is selected; it just requires that one IS selected (the physics determines which).
+
+This sharpens an earlier framework observation: Capotauro chirality $\chi$ (I-odd, T-even, the conventional $\gamma^5$ analog) and CPP A5-cyclicity $\sigma_{cycle}$ (T-odd, I-even) are in DIFFERENT $P_{TI}$-irreps but obey the SAME minimal algebraic realization structure. They are independent $\mathbb{Z}_2$ primitives at different positions in the $P_{TI}$-irrep classification, with the same rep-theoretic form.
+
+The cross-sector unification at Case A.1 ($\delta = \chi$) is therefore an identification between two structurally-similar but distinct rep-theoretic objects. The Substrate-Locality Unification (B.3.Move-1 corollary, Patch 0534 §10.7) provides the geometric foundation; §12 here provides the rep-theoretic foundation.
+
+### §21.5 Connection to Phase 2 ansatz — uniqueness of minimal-algebraic-realization spatial vector
+
+§12.8 establishes a substantive consequence: the Phase 2 ansatz $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}(v_{\text{host}})$ is the UNIQUE minimal-algebraic-realization TI-odd spatial vector at $v_{\text{host}}$.
+
+The argument: by §12.5 theorem, any TI-odd spatial vector at $v_{\text{host}}$ decomposes as $\sigma_{cycle}\cdot\tilde{\mathcal{V}}$ where $\tilde{\mathcal{V}}$ is a TI-even spatial vector. The TI-even spatial vectors at $v_{\text{host}}$ are constructed from substrate primitives (positions, dipole orientations, currents). At rank-0 derivative order: only $\hat{j}_{DI}^{net}(v_{\text{host}})$ is available as a generic TI-even spatial vector (other primitives like positions are zero at $v_{\text{host}}$ or reduce to $\hat{n}$ by Reading C). Therefore $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\cdot c\,\hat{j}_{DI}^{net}(v_{\text{host}})$ for some scalar $c$ — exactly the Phase 2 ansatz form (with $c = 1/|\hat{j}|_0$ from normalization).
+
+Combined with Patch 0535 §11 zero-curl result removing the derivative-order-1 curl alternative, the Phase 2 ansatz is the UNIQUE TI-odd spatial vector at $v_{\text{host}}$ at derivative-order-0, and the derivative-order-1 alternative (curl) vanishes by $I_h$-symmetry. The Phase 2 ansatz is substantively justified at sketch Layer 2 across both the algebraic-realization and derivative-order dimensions.
+
+### §21.6 What §12 establishes — and what it does not
+
+**§12 establishes:**
+
+- B.2.q1 closed at sketch Layer 2 with the minimal algebraic realization theorem (§12.4 statement, §12.5 proof).
+- $\sigma_{cycle}$ as the unique minimal algebraic realization of A5's $\mathbb{Z}_2$ TI-odd content in any CPP framework using Wigner-Eckart machinery on $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$.
+- Non-multiplicative matrix-action realizations ruled out (§12.6) via diagonalization of $M^2 = I$ matrices.
+- $\gamma^5$ analogy made precise (§12.7): both Dirac chirality and CPP A5-cyclicity have the same rep-theoretic structure (rank-0 multiplicative scalar in 1D irrep of abelian parity group), differing only in which specific 1D irrep is selected.
+- Phase 2 ansatz uniqueness as minimal-algebraic-realization TI-odd spatial vector (§12.8), substantively justifying the Phase 2 construction at rank-0 algebraic level.
+
+**§12 does NOT establish:**
+
+- B.2 substantive closure. B.2.q2 (minimal-derivative-order formalization) + B.2.q3 (derivative-order-1 alternatives enumeration via Wigner-Eckart) + B.2.q4 (§3.4 alternatives re-examination) remain open.
+- Higher-derivative-order minimality. §12 is at the algebraic level; derivative-order considerations are B.2.q2 + B.2.q3 territory.
+- Layer 3 promotion of B.2.q1. The proof is rep-theoretic and elementary, but Layer 3 promotion would require careful framework axiomatization (precise statement of "substrate-physics operator," precise framework Hilbert space, etc.) deferred to future flagship paper development.
+- Resolution of B.1.a ansatz (icosahedral-symmetry preservation at matrix-element layer). B.1.q1 remains the single open load-bearing structural question for B.1 substantive closure.
+
+### §21.7 Programme state — load-bearing structural questions
+
+After Patch 0536, the load-bearing structural question status is:
+
+- **B.1 substantive closure**: depends on B.1.q1 closure (B.1.a ansatz target). SINGLE remaining load-bearing structural question.
+- **B.2 substantive closure**: depends on B.2.q2 + B.2.q3 + B.2.q4 closure. Three remaining sub-questions, but B.2.q1 (the most fundamental of the four — the algebraic realization theorem) is now closed at sketch level.
+- **B.3 substantive closure**: depends on B.3.q2 + B.3.q3 + B.3.q4 closure (B.3.q1 closed at Patch 0534).
+
+The B.1 trajectory is the binding gate. After B.1.q1 closes, the F.1 sub-question status upgrade question becomes IMMEDIATELY live; the §6.2 external reviewer-pause checkpoint becomes the binding gate before any F.1 status propagation.
+
+B.2.q2 + B.2.q3 + B.2.q4 + B.3.q2-q4 are useful supplementary work but not load-bearing for the F.1 status upgrade question — those are needed for B.2 / B.3 substantive closure, which is more distant.
+
+### §21.8 What is deliberately NOT in Patch 0536
+
+- No promotion of B.2.q1 result to registered finding (sketch Layer 2 only).
+- No Layer 3 promotion (deferred to flagship paper development).
+- No F.1 sub-question status change (status remains "PROVISIONAL CLOSURE at viability level"; B.1.q1 still pending).
+- No v1.0 SHIPPED .tex source modification.
+- No Phase 1 §11 or Phase 2 §12 polished content modification.
+- No external reviewer engagement (deferred until B.1.q1 closes).
+- No claim of B.2 substantive closure (B.2.q2 + B.2.q3 + B.2.q4 remain open).
+- No claim that the §12 theorem rules out ALL alternative TI-odd substrate-physics constructions (only the rank-0 algebraic realization is uniquely determined; higher-derivative-order alternatives at B.2.q3 territory).
+
+### §21.9 Forward-looking pointer
+
+Following Patch 0536, the recommended next priority per revised §5.3 ordering is **B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer** (preserved priority (6); 1-2 sessions; B.1.a ansatz target; the LAST remaining genuinely-open B.1 ansatz). This becomes the SINGLE remaining load-bearing structural question for B.1 substantive closure.
+
+The B.1.q1 task: prove or falsify that the substrate matrix element $|M^{\text{thermo}}|$ at $v_{\text{host}}$ inherits icosahedral $I_h$ symmetry from the residual first-shell structure. The §11.6 $I_h$-symmetry argument for the curl-vanishing result provides a template: any tensor quantity at $v_{\text{host}}$ that is constructed from $I_h$-permuted first-shell contributions is $I_h$-invariant. The matrix-element-layer claim is whether this $I_h$-invariance is preserved through the Wigner-Eckart machinery.
+
+After B.1.q1 closure: F.1 sub-question status upgrade question becomes IMMEDIATELY live; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation. The reviewer-pause is the binding gate.
+
+The overall Phase 2 foundations work trajectory is approaching completion of its load-bearing arc. After B.1.q1, the F.1 status upgrade is the most significant programme-state question pending.
+
+---
+
+*Patch 0536 Tier 4 reasoning appended. B.2.q1 minimal algebraic realization formalization closed at sketch Layer 2 via representation theory of $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$. The minimality is FORCED by abelian-group rep theory + $\sigma_{cycle}^2 = 1$; no alternative realizations exist at finite-dimensional rep-theoretic level. The $\gamma^5$ analogy is made precise: both Dirac chirality and CPP A5-cyclicity have the same rep-theoretic structure as rank-0 multiplicative scalars in 1D irreps of abelian parity groups. B.1.q1 remains the single open load-bearing structural question for B.1 substantive closure.*
+

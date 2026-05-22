@@ -1102,6 +1102,178 @@ Three places where §11 could overstate:
 
 
 
-*Patch 0535 (Session 139) closes B.1.q2 curl content explicit computation at sketch Layer 2 — discrete curl at $v_{\text{host}}$ at $\mathcal{O}(\delta)$ identically vanishes via trapezoidal-circulation calculation around all 30 host-first-shell side-face triangles (algebraically proven + numerically verified at machine precision via `verify_b1q2_curl_content.py`); result stronger than B.1.b ansatz claimed (full 4D curl 2-form vanishes, not just perpendicular-to-$\hat{n}$ components); K3-base protection identity $\hat{e}_{ij}\cdot\hat{n} = 0$ identified as the structural source — same geometric identity governing Capotauro v2.0 spatial-sector K3-base protection AND Patch 0534 B.1.d temporal-sector zero first-shell-to-first-shell perturbation AND now Patch 0535 B.1.b zero curl; four of five B.1 ansatzes now at sketch-level status (B.1.b this Patch, plus B.1.c Reading C, B.1.d Patch 0534, B.1.e Patch 0533); load-bearing ansatzes narrowed from five to ONE — B.1.a (icosahedral-symmetry preservation at matrix-element layer) is now the SINGLE remaining open ansatz; B.1.q1 closure becomes the load-bearing structural question for B.1 substantive trajectory.*
+## §12 B.2.q1 minimal algebraic realization formalization — sub-question closed at sketch level (Layer 2)
 
-*Future Patches in this trajectory: B.2.q1 minimal algebraic realization formalization is the recommended next priority per revised §5.3 ordering; following B.2.q1, B.1.q1 closure (B.1.a ansatz target — icosahedral-symmetry preservation at matrix-element layer) becomes the SINGLE remaining load-bearing structural question for B.1 substantive closure. After B.1.q1 closure, the F.1 sub-question status upgrade question becomes IMMEDIATELY live; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation.*
+*Section added Session 139 Patch 0536 — substantive representation-theoretic work executing the revised §5.3 priority (5) item B.2.q1, formalizing the §3.3 "minimal algebraic realization" argument for $\sigma_{cycle}$.*
+
+### §12.1 Sub-question framing per §3.5 and §3.3 argument structure
+
+**B.2.q1 as registered in §3.5:**
+
+> Formalize the "minimal algebraic realization" argument for $\sigma_{cycle}$ (§3.3): identify the formal statement of "framework that needs tensor-construction operations on A5-cyclicity content" + prove minimality of the pseudoscalar realization. 1–2 sessions.
+
+**§3.3 argument structure (recap):** Any framework that needs to combine cycle-direction content with other tensor objects requires SOME algebraic realization of A5's TI-odd content. The multiplicative TI-odd pseudoscalar is the MINIMAL such realization because (i) a pseudoscalar is the lowest-dimensional non-trivial irrep of the framework's parity group (1D), (ii) multiplicative combination is the simplest tensor operation (rank-0 × rank-1 → rank-1), and (iii) any non-trivial realization combining with other tensor objects must contain the 1D pseudoscalar as a factor.
+
+§12 formalizes this via the representation theory of the framework's parity group $P_{TI}$, identifying the formal statement of "minimal algebraic realization" and proving the minimality claim.
+
+### §12.2 Formal setup: framework parity group, A5-cyclicity content, framework operators
+
+**The framework parity group $P_{TI}$.** Per §3.2, A5 commits to: (A5.2) T-asymmetry of cycle direction ($T: \sigma_{cycle} \to -\sigma_{cycle}$) + (A5.3) I-evenness of cycle direction ($I: \sigma_{cycle} \to +\sigma_{cycle}$). The framework's parity group is $P_{TI} = \langle T, I\rangle$ where $T$ and $I$ are framework-symmetry generators commuting with each other and each satisfying $T^2 = I^2 = 1$.
+
+Therefore $P_{TI} \cong \mathbb{Z}_2 \times \mathbb{Z}_2$ — an abelian group of order 4 with elements $\{1, T, I, TI\}$.
+
+**A5-cyclicity content as $P_{TI}$-representation.** The cycle-direction quantity $\sigma_{cycle}$ is a framework primitive transforming under $P_{TI}$ as the 1D irrep characterized by $\rho(T) = -1, \rho(I) = +1$ — i.e., the "TI-odd" irrep in this framework's terminology (T flips sign, I preserves sign).
+
+**Framework operators.** Substrate-physics observables at $v_{\text{host}}$ (e.g., the substrate matrix element $|M^{\text{thermo}}|$, the PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$, etc.) are constructed as $P_{TI}$-covariant operators on the framework's matter-state Hilbert space.
+
+**The framework requirement.** A substrate-physics observable $\mathcal{O}$ that depends on A5-cyclicity content must be constructed from $\sigma_{cycle}$ combined with other framework primitives (positions, momenta, dipole orientations, etc.). The operator $\mathcal{O}$ transforms in some $P_{TI}$-irrep determined by its construction and its physical interpretation (e.g., a chirality matrix element transforms as TI-odd).
+
+### §12.3 Representation theory of $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$
+
+Since $P_{TI}$ is abelian, all its irreducible representations are 1-dimensional (Schur's lemma / character theory of finite abelian groups). There are exactly 4 such irreps, in one-to-one correspondence with the 4 characters $(\rho(T), \rho(I)) \in \{+1, -1\}^2$:
+
+| Irrep label | $\rho(T)$ | $\rho(I)$ | $\rho(TI)$ | Convention name |
+|---|---|---|---|---|
+| $\mathbf{1}$ (trivial) | $+1$ | $+1$ | $+1$ | TI-even, T-even, I-even |
+| $\mathbf{T}$-odd | $-1$ | $+1$ | $-1$ | **TI-odd** (this framework's $\sigma_{cycle}$) |
+| $\mathbf{I}$-odd | $+1$ | $-1$ | $-1$ | I-odd, T-even (Capotauro chirality $\chi$) |
+| $\mathbf{TI}$-even-T+I-odd | $-1$ | $-1$ | $+1$ | conventional "pseudoscalar" |
+
+The framework's primitives transform in these irreps as:
+- Geometric quantities (positions, dipole orientations, $\vec{j}_{DI}^{net}$ direction): trivial irrep $\mathbf{1}$ for scalars; vector quantities transform as 3D irreps of the spatial residual symmetry $I_h$ but as $\mathbf{T}$-odd or $\mathbf{I}$-odd 1D irreps under $P_{TI}$ depending on type.
+- $\sigma_{cycle}$: $\mathbf{T}$-odd 1D irrep (this framework's "TI-odd" terminology).
+- Capotauro chirality $\chi$: $\mathbf{I}$-odd 1D irrep.
+
+**Key rep-theoretic fact:** the tensor product of two 1D irreps of $\mathbb{Z}_2 \times \mathbb{Z}_2$ is itself a 1D irrep, computed via character multiplication: $\chi_{\mathbf{T}\text{-odd}} \otimes \chi_{\mathbf{I}\text{-odd}} = \chi_{\mathbf{T}\text{-odd}\otimes\mathbf{I}\text{-odd}}$ where $\chi(T) = (-1)(+1) = -1, \chi(I) = (+1)(-1) = -1$. So $\sigma_{cycle} \cdot \chi$ transforms in the "conventional pseudoscalar" irrep (T-odd AND I-odd, TI-even).
+
+### §12.4 The minimal-algebraic-realization theorem (statement)
+
+> **Theorem (B.2.q1, Minimal Algebraic Realization, sketch Layer 2).** Let $\mathcal{F}$ be a CPP framework with parity group $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$ and A5-primitive $\sigma_{cycle}$ generating the 1D TI-odd irrep ($\rho(T)=-1, \rho(I)=+1$). Let $\mathcal{O}$ be a substrate-physics operator at $v_{\text{host}}$ depending on A5-cyclicity content. Then $\mathcal{O}$ admits a unique decomposition
+>
+> $$\mathcal{O} = f(\sigma_{cycle}) \cdot \tilde{\mathcal{O}}$$
+>
+> where $f(\sigma_{cycle}) = a + b\,\sigma_{cycle}$ is a polynomial in $\sigma_{cycle}$ (with $\sigma_{cycle}^2 = 1$, so polynomial degree $\leq 1$) and $\tilde{\mathcal{O}}$ is independent of $\sigma_{cycle}$.
+>
+> If $\mathcal{O}$ is required to transform in the TI-odd irrep of $P_{TI}$ (T-odd, I-even), then necessarily $a = 0$ — i.e., $\mathcal{O} = b\,\sigma_{cycle}\cdot\tilde{\mathcal{O}}$ where $\tilde{\mathcal{O}}$ is TI-even (transforms trivially under $P_{TI}$). The multiplicative TI-odd pseudoscalar realization is unique and is the minimal algebraic realization of A5-cyclicity in the framework.
+
+The theorem has three substantive content parts:
+- **(a) $\sigma_{cycle}^2 = 1$ forces polynomial-of-degree-$\leq 1$ dependence.** A5's framework commitment that $\sigma_{cycle} \in \{+1, -1\}$ (cycle direction is binary) implies $\sigma_{cycle}^2 = 1$ identically; any operator's $\sigma_{cycle}$-dependence is at most affine.
+- **(b) $P_{TI}$-irrep decomposition forces multiplicative form.** The operator $\mathcal{O}$ has well-defined $P_{TI}$-transformation; decomposing into $P_{TI}$-irreducible components separates the affine $\sigma_{cycle}$-content cleanly: constant term is TI-even, $\sigma_{cycle}$-linear term is TI-odd.
+- **(c) Minimality.** The 1D pseudoscalar irrep is the lowest-dimensional non-trivial irrep of $P_{TI}$ (no 2D irreps exist since $P_{TI}$ is abelian). The rank-0 multiplicative action $\sigma_{cycle} \cdot \tilde{\mathcal{O}}$ is the lowest-rank tensor operation that realizes the TI-odd irrep.
+
+### §12.5 Proof of the theorem
+
+**Step 1: $\sigma_{cycle}$-polynomial-of-degree-$\leq 1$.** By A5's framework commitment, $\sigma_{cycle}^2 = 1$ identically (the cycle is binary). Any polynomial $p(\sigma_{cycle})$ reduces modulo $\sigma_{cycle}^2 - 1$ to an affine form $a + b\sigma_{cycle}$ (long division: $p(x) = q(x)(x^2 - 1) + r(x)$ with $\deg r \leq 1$, and substituting $\sigma_{cycle}^2 = 1$ makes the quotient term vanish identically).
+
+**Step 2: $P_{TI}$-decomposition.** Under $P_{TI}$ action, $a$ is in the trivial irrep $\mathbf{1}$ (TI-even, constant) and $b\sigma_{cycle}$ is in the TI-odd irrep ($\rho(T) = -1, \rho(I) = +1$). These two irreps are linearly independent (different characters). Therefore any operator $\mathcal{O}$ with affine $\sigma_{cycle}$-dependence decomposes uniquely as
+$$\mathcal{O} = a\tilde{\mathcal{O}}_a + b\sigma_{cycle}\tilde{\mathcal{O}}_b$$
+where $\tilde{\mathcal{O}}_a$ and $\tilde{\mathcal{O}}_b$ are independent of $\sigma_{cycle}$ and transform in $P_{TI}$-irreps such that $\tilde{\mathcal{O}}_a$ matches $\mathcal{O}$'s $P_{TI}$-type for the TI-even part and $\sigma_{cycle}\tilde{\mathcal{O}}_b$ matches for the TI-odd part.
+
+**Step 3: For TI-odd $\mathcal{O}$.** If $\mathcal{O}$ is required to be TI-odd ($\rho(T) = -1, \rho(I) = +1$), then the TI-even component vanishes: $a\tilde{\mathcal{O}}_a = 0$ → $a = 0$ (assuming $\tilde{\mathcal{O}}_a$ is generic). Hence $\mathcal{O} = b\sigma_{cycle}\tilde{\mathcal{O}}_b$ with $\tilde{\mathcal{O}}_b$ TI-even.
+
+**Step 4: Minimality.** The TI-odd irrep is 1-dimensional (since $P_{TI}$ is abelian → all irreps 1D). $\sigma_{cycle}$ is the framework's chosen generator of this 1D irrep; any other TI-odd quantity in the framework is a scalar multiple of $\sigma_{cycle}$ (by the 1-dimensionality of the irrep). The multiplicative action $\sigma_{cycle}\cdot\tilde{\mathcal{O}}$ is a rank-0 × rank-(whatever-$\tilde{\mathcal{O}}$-is) tensor product — the lowest-rank realization possible.
+
+Any alternative realization (e.g., higher-rank tensor object transforming TI-oddly) must contain $\sigma_{cycle}$ as a factor, since by Schur's lemma on $P_{TI}$-irreducible components, the TI-odd sub-representation of any larger tensor object is a multiple of $\sigma_{cycle}$. $\square$
+
+### §12.6 Ruling out non-multiplicative realizations (matrix-action vs scalar-multiplicative)
+
+A potential alternative realization: $\sigma_{cycle}$ enters $\mathcal{O}$ as a non-multiplicative matrix-action on a higher-dimensional internal representation, rather than as a scalar multiplier on a tensor.
+
+**Argument that this reduces to the multiplicative realization.** Any matrix-action realization of $\sigma_{cycle}$ on a finite-dimensional vector space $V$ has $\sigma_{cycle}$ acting as a matrix $M$ with $M^2 = I_V$ (since $\sigma_{cycle}^2 = 1$). Such an $M$ is diagonalizable with eigenvalues $\pm 1$, giving a decomposition $V = V_+ \oplus V_-$ where $M|_{V_+} = +I$ and $M|_{V_-} = -I$.
+
+Under this decomposition, the matrix action $\sigma_{cycle}\cdot v$ for $v \in V$ becomes scalar multiplication by $\pm 1$ on each component — exactly the multiplicative pseudoscalar action. The "non-multiplicative" framing was illusory: any consistent matrix action reduces to multiplicative actions on the eigenspace decomposition.
+
+**Conclusion**: the multiplicative pseudoscalar is the ONLY consistent algebraic realization of $\sigma_{cycle}$'s $\mathbb{Z}_2$ structure on finite-dimensional representations. The "minimality" claim sharpens to: the multiplicative pseudoscalar is the ESSENTIAL realization (not just minimal among alternatives — there are no genuinely-distinct alternatives at the rep-theoretic level).
+
+### §12.7 The $\gamma^5$ analogy made precise
+
+The §3.3 sketch invoked the $\gamma^5$ analogy from Dirac field theory. §12 makes this precise.
+
+**Dirac field theory $\mathbb{Z}_2$ chirality structure**: fermion fields $\psi$ transform under Lorentz + parity. The chirality structure is a $\mathbb{Z}_2$ symmetry with generator $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ satisfying $(\gamma^5)^2 = +1$. Under spatial parity $P$: $P\gamma^5 P^{-1} = -\gamma^5$ (since $\gamma^0$ is P-even, $\gamma^i$ are P-odd, and $\gamma^5$ involves odd number of P-odd factors). So $\gamma^5$ is I-odd. Under time-reversal $T$: $T\gamma^5 T^{-1} = +\gamma^5$ (different convention, but conventionally $\gamma^5$ is T-even). So conventional $\gamma^5$ transforms in the I-odd, T-even 1D irrep of the Lorentz parity group — Capotauro's $\chi$ analog, not CPP's $\sigma_{cycle}$.
+
+The CPP analog of $\gamma^5$ would be: a rank-0 multiplicative matrix-like object generating the framework's $\mathbb{Z}_2$ T-asymmetry (A5). This is $\sigma_{cycle}$ itself, with the same rank-0 multiplicative structure as $\gamma^5$, but transforming in the T-odd-I-even irrep rather than the I-odd-T-even irrep.
+
+**The precise content of the analogy**: in both frameworks (Dirac and CPP), the $\mathbb{Z}_2$ chirality content is realized as a rank-0 multiplicative scalar generator transforming in a 1D parity irrep, and this realization is forced by representation theory (abelian parity group → only 1D irreps; $\mathbb{Z}_2$ generator squared to identity → diagonalizable with eigenvalues $\pm 1$ → scalar action on eigenspaces). The choice of which 1D irrep depends on the physics (Dirac: I-odd, T-even; CPP A5: T-odd, I-even), but the rank-0 multiplicative form is universal.
+
+**Difference from Capotauro's $\chi$**: Capotauro chirality $\chi$ is in the I-odd, T-even irrep — the conventional pseudoscalar irrep, the same as Dirac $\gamma^5$. So Capotauro $\chi$ is the more direct $\gamma^5$ analog. CPP A5's $\sigma_{cycle}$ is in the T-odd, I-even irrep — a different irrep, but still 1D and still rank-0-multiplicative. The "minimal algebraic realization" theorem applies uniformly to both: $\chi$ realizes Capotauro's I-odd $\mathbb{Z}_2$ content minimally; $\sigma_{cycle}$ realizes A5's T-odd $\mathbb{Z}_2$ content minimally.
+
+### §12.8 Connection to Phase 2 ansatz and $\vec{\omega}_{PCD}$ construction
+
+The Phase 2 ansatz $\vec{\omega}_{PCD}(v) = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}(v)/|\hat{j}|_0$ is now substantively justified by the minimal algebraic realization theorem.
+
+**Required transformation properties of $\vec{\omega}_{PCD}$:**
+- TI-odd (as a chirality-like cycle-orientation pseudovector): $\rho(T) = -1, \rho(I) = +1$.
+- 3D vector under residual $I_h$ symmetry at $v_{\text{host}}$: transforms in 3D irrep of $I_h$ (after Reading C $\hat{n}$-fixing, restricted to the trivial $I_h$-irrep — i.e., $\vec{\omega}_{PCD}$ is $\hat{n}$-aligned at $v_{\text{host}}$ by $I_h$-invariance, per §11.6 argument).
+
+**Required transformation properties of factors:**
+- $\sigma_{cycle}$: TI-odd 1D irrep ($\rho(T) = -1, \rho(I) = +1$). ✓ Matches the TI-odd content needed.
+- $\hat{j}_{DI}^{net}(v_{\text{host}})$: TI-even spatial vector (DI-bit current direction is geometric, T-even, I-even at substrate level). ✓ Carries the spatial-vector content.
+
+**Tensor product**: $\sigma_{cycle}\cdot\hat{j}_{DI}^{net}$ has TI-odd 1D × TI-even 3D = TI-odd 3D content. By the §12.5 minimality theorem, this is the unique minimal algebraic construction at $v_{\text{host}}$ producing a TI-odd spatial vector at rank-0 multiplicative level.
+
+**Conclusion**: the Phase 2 ansatz $\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}(v_{\text{host}})/|\hat{j}|_0$ is the unique minimal-algebraic-realization TI-odd spatial vector at $v_{\text{host}}$ constructible from A5-cyclicity content + substrate currents. Any alternative TI-odd construction containing A5-cyclicity content must (i) be at higher derivative order in the substrate's local content (per §3.4), or (ii) reduce to a scalar multiple of the Phase 2 ansatz by the §12.5 minimality theorem.
+
+### §12.9 Connection to §3.4 "minimal-derivative-order" characterization (B.2.q2)
+
+The §3.4 sketch claim — "the Phase 2 ansatz is the minimal-derivative-order TI-odd substrate object constructible at $v_{\text{host}}$ from $\sigma_{cycle}$ + $\hat{j}^{net}$" — has TWO components:
+
+**(a) Minimal algebraic realization** (B.2.q1, this Patch): the $\sigma_{cycle}$-content is realized as the rank-0 multiplicative pseudoscalar factor. ✓ Established in §12.
+
+**(b) Minimal derivative order** (B.2.q2, future work): the construction uses $\hat{j}^{net}(v_{\text{host}})$ at zero derivative order (no $\nabla\times\hat{j}^{net}$, $\nabla\cdot\hat{j}^{net}$, etc.). The B.1.q2 result (Patch 0535 §11) supports this: at first order in $\delta$, the curl content vanishes at $v_{\text{host}}$, removing one alternative derivative-order-1 construction.
+
+§12 closes the (a) component. B.2.q2 will formalize (b).
+
+### §12.10 Higher-order considerations (B.2.q3 territory)
+
+The §12 theorem is at the algebraic / rep-theoretic level — it constrains how $\sigma_{cycle}$ enters operators at a given derivative order. It does NOT directly enumerate which derivative-order-$\geq 1$ alternatives could enter via different combinations of $\sigma_{cycle}$ with other primitives.
+
+Per §3.5, B.2.q3 will:
+- Enumerate the derivative-order-1 TI-odd alternatives (curl, divergence-times-$\hat{n}$, etc.) explicitly.
+- Compute whether each contributes to $|M^{\text{thermo}}|$ via Wigner-Eckart, or whether Wigner-Eckart is insensitive to derivative-order-1 contributions.
+
+For B.2.q3 work: the minimal algebraic realization theorem (§12) provides the structural foundation — derivative-order-$n$ TI-odd objects all decompose as $\sigma_{cycle}\cdot\tilde{\mathcal{O}}_n$ where $\tilde{\mathcal{O}}_n$ is a TI-even derivative-order-$n$ construction. The remaining work is enumerating the $\tilde{\mathcal{O}}_n$'s and computing their Wigner-Eckart contributions.
+
+### §12.11 Self-checkpoint at session close
+
+Three places where §12 could overstate:
+
+**(i)** "Theorem (B.2.q1, Minimal Algebraic Realization)" reads as strong claim. The proof in §12.5 is at sketch Layer 2 (representation-theoretic argument on small abelian group $\mathbb{Z}_2 \times \mathbb{Z}_2$). The result is elementary rep theory; the "theorem" framing is appropriate at sketch level given the clarity of the argument. Promotion to Layer 3 would require more careful framework axiomatization (precise statement of "substrate-physics operator," precise framework Hilbert space, etc.) — deferred.
+
+**(ii)** The claim "any consistent matrix action reduces to multiplicative actions" in §12.6 relies on the matrix-action being on a finite-dimensional vector space with $M^2 = I$. Infinite-dimensional realizations or non-vector-space realizations could in principle exist but would be outside the framework's standard Wigner-Eckart machinery. The §12 result applies within the standard finite-dimensional framework; alternative non-standard realizations are not ruled out (but neither are they needed for the CPP programme).
+
+**(iii)** The connection to the Phase 2 ansatz in §12.8 establishes the uniqueness of $\sigma_{cycle}\cdot\hat{j}^{net}$ as the minimal-algebraic-realization TI-odd spatial vector. This does NOT establish that the Phase 2 ansatz is the unique TI-odd spatial vector at ALL derivative orders — only at derivative-order-0 (B.2.q2's content) given the §12.8 setup. Higher-derivative TI-odd alternatives may exist (B.2.q3 territory).
+
+### §12.12 Status update
+
+- **B.2.q1 CLOSED at sketch level (Layer 2)** with the minimal algebraic realization theorem formalizing the §3.3 argument structure.
+- The multiplicative TI-odd pseudoscalar $\sigma_{cycle}$ is established as the unique minimal algebraic realization of A5's $\mathbb{Z}_2$ TI-odd content in any CPP framework using Wigner-Eckart machinery on parity group $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$.
+- Three structural content parts of the theorem (§12.4): $\sigma_{cycle}^2 = 1$ forces affine $\sigma_{cycle}$-dependence; $P_{TI}$-irrep decomposition forces multiplicative form; abelian-group structure forces 1D irreps (minimality).
+- Non-multiplicative matrix-action realizations ruled out via §12.6: any $M^2 = I$ matrix action on finite-dimensional vector space reduces to multiplicative ±1 action on eigenspaces.
+- $\gamma^5$ analogy made precise in §12.7: both Dirac $\gamma^5$ and CPP $\sigma_{cycle}$ realize $\mathbb{Z}_2$ chirality content as rank-0 multiplicative scalars in 1D irreps of abelian parity groups; the choice of irrep depends on physics (I-odd-T-even for Dirac chirality and Capotauro $\chi$; T-odd-I-even for CPP A5 $\sigma_{cycle}$), but the rank-0 multiplicative form is universal.
+- Phase 2 ansatz $\vec{\omega}_{PCD} = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}$ established as the unique minimal-algebraic-realization TI-odd spatial vector at $v_{\text{host}}$ (combined with §11 zero-curl result removing the derivative-order-1 curl alternative).
+- **B.2.q1 + B.1.q2 + B.1.q3 + B.1.q4 + B.1.q5 + B.3.q1 all closed at sketch level.** B.1.q1, B.1.q6, B.2.q2, B.2.q3, B.2.q4, B.3.q2, B.3.q3, B.3.q4 remain open.
+- **Programme state at load-bearing structural level**: only B.1.q1 (B.1.a icosahedral-symmetry preservation at matrix-element layer) remains as the single load-bearing structural question for B.1 substantive closure. With B.2.q1 closed this Patch, B.2 sub-question trajectory is substantively progressing (B.2.q1 done; B.2.q2 + B.2.q3 + B.2.q4 remain).
+- **F.1 sub-question status upgrade question becoming IMMINENTLY live**: the remaining load-bearing work is B.1.q1 closure. After that, the §6.2 external reviewer-pause checkpoint becomes the binding gate.
+- No findings registered at Patch 0536 (B.2.q1 theorem at sketch Layer 2, not theorem-level findings registry).
+- No v1.0 SHIPPED .tex source modifications.
+- No Phase 1 §11 or Phase 2 §12 polished content modifications.
+- No higher-derivative-order extension (B.2.q3 territory).
+- No B.2 substantive closure claim (B.2.q2 + B.2.q3 + B.2.q4 remain open).
+
+**Forward queue post-Patch 0536:**
+
+- (A) Next priority per revised §5.3 ordering: **B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer** (priority (6); 1–2 sessions; B.1.a ansatz target; the LAST remaining genuinely-open B.1 ansatz). This becomes the SINGLE remaining load-bearing structural question for B.1 substantive closure.
+- (B) After B.1.q1 closure: **F.1 sub-question status upgrade question becomes IMMEDIATELY live**; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation. The reviewer-pause is the binding gate.
+- (C) F.1 flagship paper assembly remains DEFERRED until external reviewer-pause completes positively + status upgrade authorized.
+- (D) F.2/F.3 substantive content DEFERRED at decision-gate level.
+- (E) Long-term programme target — chirality scale from polytope geometry — REGISTERED + DEFERRED.
+- (F) JUNO peer-review update integration when published.
+- (G) Following B.1.q1: B.2.q2 minimal-derivative-order formalization (1 session) + B.2.q3 derivative-order-1 alternatives enumeration (1–2 sessions) + B.2.q4 §3.4 alternatives re-examination (0.5–1 session) + B.3.q2 (extended cross-checks beyond Patch 0526 §13.11 four-candidate), B.3.q3 (framework symmetry identification), B.3.q4 (long-term arc connection) remain open in the B.2/B.3 trajectory; deferred behind B.1.q1.
+
+---
+
+
+
+*Patch 0536 (Session 139) closes B.2.q1 minimal algebraic realization formalization at sketch Layer 2 — representation-theoretic argument on the framework's parity group $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$ establishes that the multiplicative TI-odd pseudoscalar $\sigma_{cycle}$ is the unique minimal algebraic realization of A5's $\mathbb{Z}_2$ TI-odd content; theorem statement at §12.4 with three substantive content parts (affine $\sigma_{cycle}$-dependence forced by $\sigma_{cycle}^2 = 1$, multiplicative form forced by $P_{TI}$-irrep decomposition, minimality forced by $P_{TI}$ abelian structure → only 1D irreps); §12.6 rules out non-multiplicative matrix-action realizations (any $M^2 = I$ on finite-dimensional vector space reduces to multiplicative ±1 on eigenspaces); §12.7 makes the $\gamma^5$ analogy precise — both Dirac chirality and CPP A5-cyclicity realize $\mathbb{Z}_2$ content as rank-0 multiplicative scalars in 1D irreps of abelian parity groups; §12.8 establishes the Phase 2 ansatz $\vec{\omega}_{PCD} = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}$ as the unique minimal-algebraic-realization TI-odd spatial vector at $v_{\text{host}}$ (combined with Patch 0535 §11 zero-curl result removing the derivative-order-1 curl alternative); B.2.q1 + B.1.q2 + B.1.q3 + B.1.q4 + B.1.q5 + B.3.q1 all closed at sketch level; **only B.1.q1 remains as the single load-bearing structural question** for B.1 substantive closure.*
+
+*Future Patches in this trajectory: B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer (B.1.a ansatz target — the LAST remaining genuinely-open B.1 ansatz) is the recommended next priority per revised §5.3 ordering. After B.1.q1 closure, F.1 sub-question status upgrade question becomes IMMEDIATELY live; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation. The reviewer-pause is the binding gate.*
