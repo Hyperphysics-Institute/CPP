@@ -921,6 +921,187 @@ Three places where §10 could overstate:
 
 *Patch 0533 (Session 139) closes B.1.q4 first-shell current sum identity at sketch level — explicit derivation of $\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n} \approx 10.345\,\hat{n}$ at first order in $\delta$, numerically verified at machine precision; structural consequence: R3 nonlocal spatial averaging reduces to coefficient renormalization $c' = W_0 + 24 W_1/\sqrt{7-\phi}$; §5.3 priority revision authorized by Thomas, B.1.q3 + B.3.q1 substrate-locality temporal extension promoted to next priority.*
 
-*Patch 0534 (Session 139) closes B.1.q3 + B.3.q1 substrate-locality temporal extension at sketch level (Layer 2) — B.1.d theorem statement at $\mathcal{O}(\delta)$ matching Capotauro C-W39 rigor; B.3.Move-1 Substrate-Locality Unification temporal-extension corollary parallel to C-W40; first-shell-to-first-shell zero-perturbation at $\hat{e}_{ab}\cdot\hat{n}=0$ identified as direct temporal-sector analog of K3-base protection; full structural response to ChatGPT's alternative (2) at $\mathcal{O}(\delta)$ established; three of five B.1 ansatzes (B.1.c via Reading C, B.1.d this Patch, B.1.e Patch 0533) now at sketch-level status; B.1.a + B.1.b remain genuinely open under B.1.q1 + B.1.q2.*
+## §11 B.1.q2 curl content explicit computation — sub-question closed at sketch level (Layer 2) with stronger result than B.1.b ansatz
 
-*Future Patches in this trajectory: Phase 2 foundations work progress on B.1.q2 (curl content explicit computation, B.1.b ansatz target) is the recommended next priority per revised §5.3 ordering. The F.1 sub-question status upgrade question becomes live after B.1.q1 + B.1.q2 substantively progress, requiring external reviewer-pause checkpoint per §6.2 before propagation.*
+*Section added Session 139 Patch 0535 — substantive computational work executing the revised §5.3 priority (4) item B.1.q2 curl content explicit computation, addressing the B.1.b ansatz.*
+
+### §11.1 Sub-question framing per §2.6 and the B.1.b ansatz
+
+**B.1.q2 as registered in §2.6:**
+
+> Prove or falsify B.1.b (curl content non-perpendicular to $\hat{n}$ at first order). Explicit computation of $\nabla \times \vec{j}^{net}|_{v_{\text{host}}}$ at first order in $\delta$ using 600-cell second-shell geometry. 1 session.
+
+**B.1.b ansatz from §2.4.1:**
+
+> *Curl content non-perpendicular to $\hat{n}$.* The argument that $\nabla \times \vec{j}^{net}|_{v_{\text{host}}}$ has no component perpendicular to $\hat{n}$ at first order requires explicit computation; the icosahedral symmetry argument suggests this but does not prove it in 4D.
+
+The B.1.b ansatz allows the curl to have an $\hat{n}$-aligned component (a "twist" around the $\hat{n}$ axis) but forbids perpendicular-to-$\hat{n}$ content (which would indicate non-symmetric "swirl" structure in the 3D physical hyperplane). The §11 computation establishes a stronger result: **the curl vanishes entirely at first order**, including the $\hat{n}$-aligned component.
+
+### §11.2 Setup — per-vertex current formula from Patch 0533 §9.4
+
+The Patch 0533 §9.4 general per-vertex current formula at any vertex $v$ in the 600-cell:
+
+$$\vec{j}_{DI}^{net}(v) = 2 r_0 \delta\left[(2+\phi)\hat{n} - \frac{4 a}{\phi}\hat{v}\right] + \mathcal{O}(\delta^2) \quad \text{where } a \equiv \hat{v}\cdot\hat{n}$$
+
+Specific values needed for the curl computation at $v_{\text{host}}$:
+
+- At $v_{\text{host}}$ ($\hat{v} = \hat{n}$, $a = 1$): $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0\delta/\phi^2)\hat{n}$ (Phase 1 result).
+- At first-shell vertex $v_i$ ($\hat{v}_i\cdot\hat{n} = \phi/2$): $\vec{j}_{DI}^{net}(v_i) = 4 r_0\delta[\hat{n} - \sin(36°)\hat{e}_i]$ (Patch 0533 §9.5).
+
+The discrete curl at $v_{\text{host}}$ requires the current values at $v_{\text{host}}$ and at its 12 first-shell neighbors — both provided by the per-vertex formula.
+
+### §11.3 Discrete curl via trapezoidal circulation around triangle faces
+
+The standard discrete curl operator on a lattice uses Stokes' theorem applied to small triangle faces: for a triangle face $f$ with vertices $(v_a, v_b, v_c)$ and outward-oriented normal $\hat{n}_f$,
+
+$$(\nabla \times \vec{j}) \cdot \hat{n}_f \cdot A_f \approx \oint_{\partial f} \vec{j}\cdot d\vec{l}$$
+
+The trapezoidal rule for the line integral along each edge $(v_a, v_b)$:
+
+$$\int_{v_a}^{v_b} \vec{j}\cdot d\vec{l} \approx \frac{1}{2}(\vec{j}(v_a) + \vec{j}(v_b))\cdot(v_b - v_a)$$
+
+Summing the three edges of triangle $(v_a, v_b, v_c)$ and simplifying (each $\vec{j}(\cdot)$ appears in exactly two consecutive edge terms):
+
+$$\oint_{\partial f} \vec{j}\cdot d\vec{l} = \frac{1}{2}\left[\vec{j}(v_a)\cdot(v_b - v_c) + \vec{j}(v_b)\cdot(v_c - v_a) + \vec{j}(v_c)\cdot(v_a - v_b)\right]$$
+
+### §11.4 The 30 host-first-shell side-face triangles
+
+The 600-cell at $v_{\text{host}}$ has 20 tetrahedra meeting at $v_{\text{host}}$, each with $v_{\text{host}}$ as the apex and three first-shell vertices as the base. The triangular side faces of these tetrahedra include $(v_{\text{host}}, v_i, v_j)$ where $(v_i, v_j)$ is a first-shell-to-first-shell edge (icosahedron edge). There are 30 icosahedron edges (regular icosahedron has 30 edges), hence **30 host-first-shell side-face triangles**.
+
+These 30 triangles provide 30 independent circulation probes for the curl at $v_{\text{host}}$. By $I_h$ residual symmetry at $v_{\text{host}}$, the 30 face 2-forms transform under $I_h$ and span the full 6D 2-form space at $v_{\text{host}}$ — so zero circulation on all 30 implies the 4D curl 2-form vanishes at $v_{\text{host}}$.
+
+### §11.5 Algebraic computation — circulation on host-first-shell triangle reduces to zero
+
+For triangle $(v_{\text{host}}, v_i, v_j)$, evaluate the trapezoidal-rule circulation using the per-vertex current values from §11.2.
+
+**$\hat{n}$-content contributions.** The $\hat{n}$-aligned part of each current:
+- $\vec{j}(v_{\text{host}})_{\|\hat{n}} = (6 r_0\delta/\phi^2)\hat{n}$
+- $\vec{j}(v_i)_{\|\hat{n}} = 4 r_0\delta\,\hat{n}$ (uniform across all 12 first-shell vertices)
+- $\vec{j}(v_j)_{\|\hat{n}} = 4 r_0\delta\,\hat{n}$ (uniform)
+
+Contributions to circulation:
+- $\vec{j}(v_{\text{host}})\cdot(v_i - v_j)_{\|\hat{n}} = (6 r_0\delta/\phi^2)((\hat{n}\cdot v_i) - (\hat{n}\cdot v_j)) = (6 r_0\delta/\phi^2)(\phi/2 - \phi/2) = 0$
+- $\vec{j}(v_i)_{\|\hat{n}}\cdot(v_j - v_{\text{host}}) = 4 r_0\delta\,(\hat{n}\cdot v_j - 1) = 4 r_0\delta\,(\phi/2 - 1) = 2 r_0\delta\,(\phi - 2)$
+- $\vec{j}(v_j)_{\|\hat{n}}\cdot(v_{\text{host}} - v_i) = 4 r_0\delta\,(1 - \phi/2) = 2 r_0\delta\,(2 - \phi)$
+
+**$\hat{n}$-content sum: $0 + 2 r_0\delta(\phi - 2) + 2 r_0\delta(2 - \phi) = 0$.** ✓
+
+The $\hat{n}$-content contribution to the circulation vanishes because the three first-shell vertices have **uniform $\hat{n}$-projection** ($\hat{n}\cdot v_i = \phi/2$ for all $i$) — a direct consequence of the 600-cell first-shell geometry.
+
+**Perpendicular-content contributions** (from $-4 r_0\delta\sin(36°)\hat{e}_i$ and $-4 r_0\delta\sin(36°)\hat{e}_j$):
+
+Using $\hat{e}_i\cdot v_{\text{host}} = 0$ ($\hat{e}_i$ lies in the perpendicular hyperplane), $\hat{e}_i\cdot v_j = \sin(36°)(\hat{e}_i\cdot\hat{e}_j)$ (using $v_j = (\phi/2)\hat{n} + \sin(36°)\hat{e}_j$), and similarly for $\hat{e}_j\cdot v_i$:
+
+- $\vec{j}(v_{\text{host}})$ has no perpendicular content → contributes zero.
+- $\vec{j}(v_i)_{\perp}\cdot(v_j - v_{\text{host}}) = -4 r_0\delta\sin(36°)\sin(36°)(\hat{e}_i\cdot\hat{e}_j) = -4 r_0\delta\sin^2(36°)(\hat{e}_i\cdot\hat{e}_j)$
+- $\vec{j}(v_j)_{\perp}\cdot(v_{\text{host}} - v_i) = -4 r_0\delta\sin(36°)\cdot(-\sin(36°)(\hat{e}_j\cdot\hat{e}_i)) = +4 r_0\delta\sin^2(36°)(\hat{e}_i\cdot\hat{e}_j)$
+
+**Perpendicular-content sum: $0 - 4 r_0\delta\sin^2(36°)(\hat{e}_i\cdot\hat{e}_j) + 4 r_0\delta\sin^2(36°)(\hat{e}_i\cdot\hat{e}_j) = 0$.** ✓
+
+The perpendicular-content cancellation between $\vec{j}(v_i)\cdot(v_j - v_{\text{host}})$ and $\vec{j}(v_j)\cdot(v_{\text{host}} - v_i)$ is structurally tight: each contributes $\sin^2(36°)(\hat{e}_i\cdot\hat{e}_j)$ with opposite signs.
+
+**Total trapezoidal circulation on triangle $(v_{\text{host}}, v_i, v_j)$ at $\mathcal{O}(\delta)$:**
+
+$$\boxed{\;\oint_{\partial f}\vec{j}_{DI}^{net}\cdot d\vec{l} = 0 \quad \text{for all 30 host-first-shell side-face triangles}\;}$$
+
+### §11.6 $I_h$ residual symmetry argument — full 4D curl vanishes
+
+The 30 host-first-shell side-face triangles transform under $I_h$ residual symmetry at $v_{\text{host}}$ (which permutes the 12 first-shell vertices and hence the 30 first-shell-to-first-shell edges). The associated 30 face 2-forms span the full 6D 2-form space at $v_{\text{host}}$ — this can be seen by decomposing the 2-form space under $I_h$ into two 3D irreps (the $F_{0i}$ and $F_{ij}$ components), and observing that the 30 face 2-forms project nontrivially onto both irreps.
+
+Zero circulation on all 30 face 2-forms thus implies the curl 2-form is orthogonal to a spanning set — hence **the 4D curl 2-form vanishes at $v_{\text{host}}$ at $\mathcal{O}(\delta)$**.
+
+Equivalently, by direct $I_h$-invariance: the curl at $v_{\text{host}}$ at first order is $I_h$-invariant (the contributions from each first-shell vertex are permuted by $I_h$, so the sum is invariant). In the 4D 2-form space at $v_{\text{host}}$, both $I_h$-irreducible components ($F_{0i}$ vector-like and $F_{ij}$ dual-vector-like) are 3D irreps with no trivial sub-representation; therefore any $I_h$-invariant 4D 2-form is zero.
+
+### §11.7 Numerical verification at machine precision
+
+Verification at `flagship_papers/dynamical_substrate_law/code/verify_b1q2_curl_content.py` — explicit 600-cell construction (120 vertices), computation of per-vertex currents at $v_{\text{host}}$ and all 12 first-shell neighbors, identification of all 30 first-shell-to-first-shell edges, trapezoidal-circulation computation around all 30 side-face triangles $(v_{\text{host}}, v_i, v_j)$. Across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$: maximum $|circulation|$ over all 30 side-face triangles $\leq 2.8 \times 10^{-17}$ (machine precision). **All 30 circulations vanish identically at machine precision.**
+
+### §11.8 Connection to K3-base protection identity — THE structural source
+
+The curl-vanishing result has a striking structural origin: it is **another consequence of the K3-base protection identity** $\hat{e}_{ij}\cdot\hat{n} = 0$ that Capotauro v2.0 §13.3 / Phase 1 §11.2 established for first-shell-to-first-shell edges.
+
+**Mechanism**: the $\hat{n}$-content cancellation in §11.5 uses $\hat{n}\cdot(v_i - v_j) = 0$ — i.e., $v_i$ and $v_j$ have identical $\hat{n}$-projection. This follows directly from $(v_i - v_j) = \text{first-shell-to-first-shell edge vector} = \hat{e}_{ij}\cdot|v_i - v_j|$ which is perpendicular to $\hat{n}$ via the K3-base protection identity. The perpendicular-content cancellation similarly uses the structure that $v_i$ and $v_j$ differ only in their perpendicular-plane components.
+
+**Three consequences of the same identity now registered across the programme**:
+- **Capotauro v2.0**: K3-base protection from spatial-sector edge-length perturbation at $\mathcal{O}(\varepsilon)$.
+- **Patch 0534 §10.3 (B.1.d)**: Zero first-shell-to-first-shell temporal-sector Mechanism A rate perturbation at $\mathcal{O}(\delta)$.
+- **Patch 0535 §11 (B.1.b, this Patch)**: Zero curl at $v_{\text{host}}$ at $\mathcal{O}(\delta)$.
+
+The K3-base protection identity is doing remarkable structural work — a single 600-cell first-shell geometric fact ($\hat{e}_{ij}\cdot\hat{n} = 0$) yields three distinct programme results across both perturbation sectors. This is a methodological observation worth registering: when a load-bearing geometric identity is found to govern one sub-question, it is worth probing whether it governs related sub-questions in adjacent sectors.
+
+### §11.9 Result stronger than B.1.b ansatz
+
+The B.1.b ansatz claimed: "$\nabla \times \vec{j}^{net}|_{v_{\text{host}}}$ has no component perpendicular to $\hat{n}$ at first order." This corresponds to the 3 perpendicular components $F_{ij}$ of the 4D curl 2-form vanishing.
+
+The §11 result establishes: **the full 4D curl 2-form vanishes at $v_{\text{host}}$ at first order in $\delta$** — all 6 components, including both the 3 "perpendicular" components $F_{ij}$ AND the 3 "$\hat{n}$-aligned" components $F_{0i}$.
+
+Specifically: the trapezoidal-circulation calculation around the 30 host-first-shell side-face triangles probes circulations in directions that combine both perpendicular-plane (via the first-shell-to-first-shell edge contribution) and $\hat{n}$-direction (via the host-to-first-shell edge contributions). Zero circulation on all 30 implies vanishing in the full 6D 2-form space.
+
+The B.1.b ansatz is demonstrated with room to spare — the actual result is the strict stronger claim.
+
+### §11.10 Consequences for Phase 2 ansatz — no curl-mediated derivative content
+
+The Phase 2 ansatz at §2.1 claims $\vec{\omega}_{PCD}(v) = \sigma_{cycle}\cdot\hat{j}_{DI}^{net}(v)/|\hat{j}|_0$ is local algebraic — no derivative content. One natural way derivative content could have entered is through curl-mediated objects like $\nabla\times\vec{j}^{net}$ (which is a vector quantity at each vertex, derivative-of-current).
+
+The §11 result establishes: **the curl-mediated derivative content vanishes at $v_{\text{host}}$ at first order**. There is no curl content to add to the local algebraic form — the ansatz is structurally protected from curl-mediated corrections at leading order.
+
+Combined with:
+- §9 (Patch 0533) showing nonlocal-spatial-averaging reduces to coefficient renormalization at $\mathcal{O}(\delta)$
+- §10 (Patch 0534) showing substrate-locality temporal extension confines $\mathcal{O}(\delta)$ effects to first-shell
+
+the Phase 2 ansatz is now substantively justified at $\mathcal{O}(\delta)$: no curl content, no nonlocal-distribution beyond first-shell, no higher-order derivative content. The remaining open question is the icosahedral-symmetry-preservation-at-matrix-element-layer ansatz (B.1.a, B.1.q1 target).
+
+### §11.11 Higher-order caveat
+
+The §11 curl-vanishing result holds at first order in $\delta$. At $\mathcal{O}(\delta^2)$:
+- The per-vertex current formula receives second-shell corrections (per Patch 0534 §10.8).
+- The trapezoidal-circulation calculation involves second-order perturbative content from both $\vec{j}(v_i)$ and $\vec{j}(v_j)$ values.
+- The cancellation pattern from §11.5 may break down — second-shell-mediated contributions could introduce non-uniform $\hat{n}$-projections or non-cancelling perpendicular-content terms.
+
+$I_h$ residual symmetry at $v_{\text{host}}$ is exact at all orders, so the curl 2-form remains $I_h$-invariant at all orders → still zero at all orders by the §11.6 symmetry argument. **The structural conclusion (zero curl) survives at all orders**; what may receive higher-order corrections is the specific cancellation mechanism at the trapezoidal-circulation level (which would need to be reproduced via a different mechanism that respects $I_h$-invariance).
+
+Sub-question B.1.q6 (higher-order contributions) registers this for future work.
+
+### §11.12 Self-checkpoint at session close
+
+Three places where §11 could overstate:
+
+**(i)** The "discrete curl via trapezoidal circulation" interpretation chosen in §11.3 is one of several possible discrete-curl operator definitions. Alternative discretizations (e.g., circulation around different loop families, or differential-form-based dual lattice constructions) would give consistent zero-curl results by the §11.6 $I_h$-symmetry argument, but the explicit numerical verification in §11.7 only tests the trapezoidal definition. Other discretizations are robust under $I_h$ but not numerically tested.
+
+**(ii)** "The full 4D curl 2-form vanishes" in §11.6 relies on the spanning argument that the 30 face 2-forms span the 6D 2-form space at $v_{\text{host}}$. This spanning is established via $I_h$-decomposition into two 3D irreps, but the explicit numerical verification confirms only the 3 perpendicular components $F_{ij}$ (which are directly probed by the side-face circulations). The 3 $\hat{n}$-aligned components $F_{0i}$ vanish by the §11.6 $I_h$-symmetry argument but are not separately probed numerically.
+
+**(iii)** The B.1.q2 closure is at sketch Layer 2, matching the Capotauro C-W39 / B.1.d (Patch 0534) rigor level. Promotion to Layer 3 (full theorem-level rigor with explicit cage-shell-factor-style computations) is deferred.
+
+### §11.13 Status update
+
+- **B.1.q2 CLOSED at sketch level (Layer 2)** with the curl-vanishing result $(\nabla\times\vec{j}_{DI}^{net})|_{v_{\text{host}}} = 0$ at $\mathcal{O}(\delta)$, **stronger than B.1.b ansatz claimed**.
+- B.1.b ansatz from §2.4.1 demonstrated with room to spare.
+- **Programme state at B.1 ansatz level after Patch 0535**: four of five B.1 ansatzes now at sketch-level status — B.1.c (steady-state via Reading C), B.1.b (zero-curl this Patch), B.1.d (substrate-locality temporal extension Patch 0534), B.1.e (first-shell current sum identity Patch 0533); ONE remains genuinely open — B.1.a (icosahedral-symmetry preservation at matrix-element layer; B.1.q1 target).
+- The §2.5 provisional structural claim from Patch 0531 ("conditional on B.1.a-B.1.e the alternatives reduce to Phase 2 local algebraic form") is now conditional only on B.1.a — **load-bearing ansatzes narrowed from five to one**.
+- B.1.q1 closure becomes the single load-bearing structural question for B.1 substantive closure.
+- F.1 sub-question status UNCHANGED at "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" — but the **upgrade question is becoming live within imminent reach**: only B.1.q1 closure remains for the B.1 substantive trajectory + B.2.q1–q2 + B.3.q1 (already done in Patch 0534) for the broader load-bearing set.
+- Methodological observation registered (§11.8): the K3-base protection identity $\hat{e}_{ij}\cdot\hat{n} = 0$ is the structural source of three programme results (Capotauro v2.0 K3-base protection, Patch 0534 B.1.d zero first-shell-to-first-shell temporal perturbation, Patch 0535 B.1.b zero curl). Single geometric identity governing three sub-questions across both perturbation sectors.
+- **No findings registered** at Patch 0535 (B.1.q2 result at sketch Layer 2, not theorem-level findings registry).
+- No v1.0 SHIPPED .tex source modifications.
+- No Phase 1 §11 or Phase 2 §12 polished content modifications.
+- B.1.q1, B.1.q6 sub-question framings UNCHANGED.
+- B.1.q3, B.1.q4, B.1.q5 + B.3.q1, B.1.q2 all closed at sketch level (q2 this Patch); B.1.q1 + B.1.q6 remain open.
+- B.2.q1–q4 + B.3.q2–q4 sub-question framings UNCHANGED.
+
+**Forward queue post-Patch 0535:**
+
+- (A) Next priority per revised §5.3 ordering: **B.2.q1 minimal algebraic realization formalization** (preserved priority (5); 1–2 sessions; formalize the argument that $\sigma_{cycle}$ is the canonical multiplicative TI-odd realization of A5's $\mathbb{Z}_2$ content analogous to $\gamma^5$ in Dirac field theory; per §3.3).
+- (B) Following B.2.q1: **B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer** (priority (6); 1–2 sessions; B.1.a ansatz target; the last genuinely-open B.1 ansatz). This becomes the SINGLE load-bearing structural question for B.1 substantive closure.
+- (C) After B.1.q1 closure: **F.1 sub-question status upgrade question becomes IMMEDIATELY live**; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation. The reviewer-pause is now the binding gate.
+- (D) F.1 flagship paper assembly remains DEFERRED until external reviewer-pause completed + status upgrade authorized.
+- (E) F.2/F.3 substantive content DEFERRED at decision-gate level.
+- (F) Long-term programme target — chirality scale from polytope geometry — REGISTERED + DEFERRED.
+- (G) JUNO peer-review update integration when published.
+
+---
+
+
+
+*Patch 0535 (Session 139) closes B.1.q2 curl content explicit computation at sketch Layer 2 — discrete curl at $v_{\text{host}}$ at $\mathcal{O}(\delta)$ identically vanishes via trapezoidal-circulation calculation around all 30 host-first-shell side-face triangles (algebraically proven + numerically verified at machine precision via `verify_b1q2_curl_content.py`); result stronger than B.1.b ansatz claimed (full 4D curl 2-form vanishes, not just perpendicular-to-$\hat{n}$ components); K3-base protection identity $\hat{e}_{ij}\cdot\hat{n} = 0$ identified as the structural source — same geometric identity governing Capotauro v2.0 spatial-sector K3-base protection AND Patch 0534 B.1.d temporal-sector zero first-shell-to-first-shell perturbation AND now Patch 0535 B.1.b zero curl; four of five B.1 ansatzes now at sketch-level status (B.1.b this Patch, plus B.1.c Reading C, B.1.d Patch 0534, B.1.e Patch 0533); load-bearing ansatzes narrowed from five to ONE — B.1.a (icosahedral-symmetry preservation at matrix-element layer) is now the SINGLE remaining open ansatz; B.1.q1 closure becomes the load-bearing structural question for B.1 substantive trajectory.*
+
+*Future Patches in this trajectory: B.2.q1 minimal algebraic realization formalization is the recommended next priority per revised §5.3 ordering; following B.2.q1, B.1.q1 closure (B.1.a ansatz target — icosahedral-symmetry preservation at matrix-element layer) becomes the SINGLE remaining load-bearing structural question for B.1 substantive closure. After B.1.q1 closure, the F.1 sub-question status upgrade question becomes IMMEDIATELY live; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation.*

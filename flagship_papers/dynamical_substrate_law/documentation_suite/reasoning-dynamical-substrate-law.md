@@ -1076,3 +1076,113 @@ The overall Phase 2 foundations work trajectory remains in foundations-explorati
 
 *Patch 0534 Tier 4 reasoning appended. B.1.q3 + B.3.q1 substrate-locality temporal extension closed at sketch Layer 2 via the cross-commitment-coupled-closure pattern. The K3-base protection inherits directly from spatial to temporal sector via the same first-shell geometric identity. Three of five B.1 ansatzes now at sketch-level status; B.1.a + B.1.b remain the load-bearing open questions. F.1 sub-question status upgrade question anticipated to become live after B.1.q1 + B.1.q2 substantively progress.*
 
+
+---
+
+## §20 Patch 0535 — B.1.q2 curl content explicit computation Tier 4 reasoning
+
+*Session 139 Patch 0535 — substantive computational work executing the revised §5.3 priority (4) item B.1.q2 curl content explicit computation, addressing the B.1.b ansatz from §2.4.1.*
+
+### §20.1 Decision to execute B.1.q2 at this Patch
+
+Following Patch 0534's closure of B.1.q3 + B.3.q1 substrate-locality temporal extension, the §5.3 priority ordering pointed to B.1.q2 as the next item (preserved priority (4)). The estimated effort was 1 session — tractable computational sub-question using the general per-vertex current formula from Patch 0533 §9.4 as input.
+
+The §2.4.1 B.1.b ansatz framing was specific: "the argument that $\nabla \times \vec{j}^{net}|_{v_{\text{host}}}$ has no component perpendicular to $\hat{n}$ at first order requires explicit computation; the icosahedral symmetry argument suggests this but does not prove it in 4D." The §11 task was to make the explicit computation precise.
+
+### §20.2 The substantive insight — stronger result than the ansatz claimed
+
+The B.1.b ansatz claimed only "no perpendicular-to-$\hat{n}$ component" — leaving room for an $\hat{n}$-aligned curl component (e.g., a "twist" around the $\hat{n}$ axis). The §11 computation establishes a stronger result: the FULL 4D curl 2-form vanishes at $v_{\text{host}}$ at first order, including all six components.
+
+The substantive insight that drove the stronger result: the $I_h$ residual symmetry at $v_{\text{host}}$ acts on the 4D 2-form space at $v_{\text{host}}$. This 6D space decomposes under $I_h$ into TWO 3D irreducible representations — the $F_{0i}$ vector-like components (involving the $\hat{n}$ direction) and the $F_{ij}$ dual-vector-like components (purely perpendicular). Both 3D irreps are non-trivial — neither contains a trivial sub-representation. Therefore the $I_h$-invariant subspace of the 4D 2-form space is zero-dimensional — any $I_h$-invariant 4D 2-form at $v_{\text{host}}$ vanishes identically.
+
+The curl at $v_{\text{host}}$ at first order is constructed from contributions of the 12 first-shell vertices that are permuted by $I_h$, so the sum is $I_h$-invariant. Therefore the curl vanishes identically — not just the $F_{ij}$ components.
+
+The B.1.b ansatz was structurally too conservative. The actual content is full curl-vanishing.
+
+### §20.3 The K3-base protection identity as the load-bearing structural source
+
+Working through the algebraic computation in §11.5 surfaced a methodologically interesting result: the curl-vanishing is **another consequence of the K3-base protection identity** $\hat{e}_{ij}\cdot\hat{n} = 0$ for first-shell-to-first-shell edges.
+
+Specifically: the $\hat{n}$-content cancellation in the trapezoidal-circulation calculation uses $\hat{n}\cdot(v_i - v_j) = 0$ — i.e., $v_i$ and $v_j$ have identical $\hat{n}$-projection. This follows directly from $(v_i - v_j) \propto \hat{e}_{ij}$ being a first-shell-to-first-shell edge vector, which is perpendicular to $\hat{n}$ via the K3-base protection identity.
+
+This identity is now governing three distinct programme results across both perturbation sectors:
+
+1. **Capotauro v2.0 §13.6 (Finding C-W39 / K3-base protection)**: K3-base edges have zero spatial-sector edge-length perturbation at $\mathcal{O}(\varepsilon)$ because $\hat{e}_{ij}\cdot\hat{n} = 0$ → no Reading C $\varepsilon\,\hat{e}\cdot\hat{n}$ coupling.
+
+2. **Patch 0534 §10.3 (B.1.d substrate-locality temporal extension)**: First-shell-to-first-shell edges have zero temporal-sector Mechanism A rate perturbation at $\mathcal{O}(\delta)$ because $\hat{e}_{ab}\cdot\hat{n} = 0$ → no $\delta\hat{e}\cdot\hat{n}$ coupling. This is the direct temporal-sector analog of K3-base protection.
+
+3. **Patch 0535 §11 (B.1.b curl vanishing, this Patch)**: Discrete curl at $v_{\text{host}}$ vanishes at $\mathcal{O}(\delta)$ because the trapezoidal-circulation contributions cancel via the $\hat{n}$-uniform-projection structure of first-shell vertices, which itself derives from $\hat{e}_{ij}\cdot\hat{n} = 0$.
+
+One geometric identity, three programme results across two perturbation sectors. The K3-base protection identity is doing remarkable structural work.
+
+**Methodological observation registered**: when a load-bearing geometric identity is found to govern one sub-question, it is worth probing whether it governs related sub-questions in adjacent sectors. The cross-sector unification through a single identity is a structural-economy signal that the underlying geometry is doing more than initially apparent.
+
+### §20.4 What §11 establishes — and what it does not
+
+**§11 establishes:**
+
+- B.1.q2 closed at sketch Layer 2 with the curl-vanishing result $(\nabla\times\vec{j}_{DI}^{net})|_{v_{\text{host}}} = 0$ at $\mathcal{O}(\delta)$.
+- B.1.b ansatz from §2.4.1 demonstrated with room to spare — actual result is stronger than ansatz claimed.
+- Explicit algebraic derivation in §11.5 showing trapezoidal-circulation cancellation on all 30 host-first-shell side-face triangles.
+- $I_h$ residual symmetry argument in §11.6 showing the spanning argument: 30 face 2-forms span the full 6D 2-form space, so zero circulation on all 30 implies vanishing curl.
+- Numerical verification at machine precision via `code/verify_b1q2_curl_content.py` — all 30 side-face circulations vanish at machine precision across five test $\delta$ values, max deviation $\leq 2.8 \times 10^{-17}$.
+- K3-base protection identity registered as the structural source (§11.8) — three programme results across both perturbation sectors derive from the same 600-cell first-shell geometric fact.
+- Phase 2 ansatz strengthened: no curl-mediated derivative content at $v_{\text{host}}$ at $\mathcal{O}(\delta)$; the local algebraic form is structurally protected from curl-mediated corrections at leading order.
+
+**§11 does NOT establish:**
+
+- Curl-vanishing at $\mathcal{O}(\delta^2)$ and higher. By $I_h$ residual symmetry, the curl remains $I_h$-invariant at all orders → vanishes at all orders by the §11.6 symmetry argument. But the specific trapezoidal-circulation cancellation mechanism from §11.5 may not extend directly; higher-order verification remains B.1.q6 territory.
+- Layer 3 promotion of B.1.q2. The result is at sketch Layer 2, matching Capotauro C-W39 / Patch 0534 B.1.d rigor level.
+- Resolution of the remaining B.1.a ansatz (icosahedral-symmetry preservation at matrix-element layer). B.1.q1 remains the single open load-bearing structural question for B.1 substantive closure.
+
+### §20.5 Programme state — load-bearing ansatzes narrowed to one
+
+After Patch 0535, the five B.1 ansatzes from §2.4 stand at:
+
+- B.1.a (icosahedral-symmetry preservation at matrix-element layer): ansatz, **B.1.q1 target. ONE remaining open.**
+- B.1.b (curl content non-perpendicular to $\hat{n}$): **demonstrated at sketch Layer 2 at $\mathcal{O}(\delta)$ this Patch (with stronger result than ansatz claimed)**.
+- B.1.c (steady-state substrate dynamics): framework-level ansatz via Reading C global $\hat{n}$ fix.
+- B.1.d (substrate-locality temporal extension): demonstrated at sketch Layer 2 at $\mathcal{O}(\delta)$ at Patch 0534.
+- B.1.e (first-shell current sum identity): demonstrated at sketch Layer 2 at $\mathcal{O}(\delta)$ at Patch 0533.
+
+**Four of five at sketch-level status; ONE remains genuinely open.** The §2.5 provisional structural claim from Patch 0531 ("conditional on B.1.a-B.1.e the alternatives reduce to Phase 2 local algebraic form") is now conditional only on B.1.a — load-bearing ansatzes narrowed from five to one.
+
+B.1.q1 closure becomes the SINGLE load-bearing structural question for B.1 substantive trajectory. The narrowing trajectory: Patch 0531 (five ansatzes flagged) → Patch 0533 (B.1.e demonstrated, four open) → Patch 0534 (B.1.d demonstrated, three open: B.1.a, B.1.b, plus B.1.c framework) → Patch 0535 (B.1.b demonstrated, ONE open: B.1.a). The trajectory has been remarkably efficient — averaging one ansatz closure per session across Patches 0533, 0534, 0535.
+
+### §20.6 Connection to broader programme — F.1 status upgrade question becoming imminently live
+
+The narrowing of B.1's load-bearing ansatzes from five to one substantially changes the F.1 sub-question status trajectory.
+
+Before Patch 0535: F.1 status upgrade question was anticipated to become live "after B.1.q1 + B.1.q2 substantively progress" (estimated 2-3 sessions cumulative per Patch 0534 §10.11). With B.1.q2 closed this Patch, the upgrade question is now anticipated to become live **after B.1.q1 substantively progresses** (estimated 1-2 sessions). The timeline has compressed.
+
+The §6.2 external reviewer-pause checkpoint becomes the binding gate before any F.1 status propagation. The checkpoint should be triggered after:
+- B.1.q1 closes (B.1.a ansatz demonstrated or definitively falsified, completing B.1's substantive trajectory)
+- B.2.q1 substantively progresses ($\sigma_{cycle}$ algebraization rigor)
+- B.3.q1 closed at Patch 0534 (substrate-locality temporal extension corollary)
+
+After the external reviewer-pause completes positively, F.1 sub-question status upgrade from "PROVISIONAL CLOSURE at viability level" to a stronger framing becomes a live programme question.
+
+**Anti-priority sustained**: do NOT trigger F.1 status upgrade until external reviewer-pause completes positively. The reviewer-pause is the binding gate, not optional.
+
+### §20.7 What is deliberately NOT in Patch 0535
+
+- No promotion of B.1.q2 result to registered finding (sketch Layer 2 only; Findings registry promotion would require Layer 3 rigor work).
+- No higher-order extension (B.1.q6 territory; the $I_h$-symmetry argument extends to all orders but explicit verification beyond first order is deferred).
+- No F.1 sub-question status change.
+- No v1.0 SHIPPED .tex source modification.
+- No Phase 1 §11 or Phase 2 §12 polished content modification.
+- No external reviewer engagement (deferred until B.1.q1 closes).
+- No claim of B.1 substantive closure (B.1.a remains genuinely open under B.1.q1).
+- No premature F.1 status upgrade preparation (the reviewer-pause is the binding gate, not the closure of B.1.q1 + B.2.q1 alone).
+
+### §20.8 Forward-looking pointer
+
+Following Patch 0535, the recommended next priority per revised §5.3 ordering is **B.2.q1 minimal algebraic realization formalization** (preserved priority (5); 1-2 sessions; formalize the argument that $\sigma_{cycle}$ is the canonical multiplicative TI-odd realization of A5's $\mathbb{Z}_2$ content analogous to $\gamma^5$ in Dirac field theory; per §3.3).
+
+Following B.2.q1: **B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer** (priority (6); 1-2 sessions; B.1.a ansatz target; the LAST remaining genuinely-open B.1 ansatz). This becomes the SINGLE load-bearing structural question for B.1 substantive closure. After B.1.q1 closure, the F.1 sub-question status upgrade question becomes IMMEDIATELY live; §6.2 external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation.
+
+The overall Phase 2 foundations work trajectory is approaching completion of its substantive load-bearing trajectory; the F.1 sub-question status upgrade question moving from "anticipated future" to "imminent live programme question" is the most significant programme-state shift since Patch 0531's opening of foundations work.
+
+---
+
+*Patch 0535 Tier 4 reasoning appended. B.1.q2 curl content explicit computation closed at sketch Layer 2 with stronger result than B.1.b ansatz claimed. K3-base protection identity registered as structural source of three programme results across two perturbation sectors. Four of five B.1 ansatzes at sketch-level status; B.1.a remains the single open load-bearing structural question. F.1 sub-question status upgrade question becoming imminently live; reviewer-pause checkpoint is the binding gate.*

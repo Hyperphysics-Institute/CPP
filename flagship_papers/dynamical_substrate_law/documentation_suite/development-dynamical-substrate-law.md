@@ -149,3 +149,34 @@ The methodological pattern of cross-commitment-coupled sub-question closure is r
 
 **Forward queue post-Patch 0534**: B.1.q2 curl content explicit computation (1 session, B.1.b ansatz target) is the recommended immediate next priority. Following B.1.q2: B.2.q1 minimal algebraic realization formalization (1-2 sessions), then B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer (B.1.a ansatz target). The §6.2 external reviewer-pause checkpoint should be triggered after B.1.q1 + B.1.q2 substantively progress, BEFORE any F.1 sub-question status upgrade. The foundations work trajectory remains in foundations-exploration state; the F.1 sub-question status upgrade question is becoming live within reach.
 
+
+---
+
+## Vignette 6 — Session 139 Patch 0535: B.1.q2 curl content vanishes; load-bearing ansatzes narrow to one (May 2026)
+
+Patch 0535 closed B.1.q2 curl content explicit computation at sketch Layer 2 with a stronger result than the B.1.b ansatz claimed: the discrete curl at $v_{\text{host}}$ at first order in $\delta$ vanishes identically — not just the perpendicular-to-$\hat{n}$ components, but the full 4D curl 2-form, including all six components.
+
+The substantive insight that drove the stronger result was the $I_h$ residual symmetry argument at $v_{\text{host}}$. The 4D 2-form space at $v_{\text{host}}$ decomposes under $I_h$ into two 3D irreducible representations — the $F_{0i}$ vector-like components and the $F_{ij}$ dual-vector-like components. Both 3D irreps are non-trivial, so the $I_h$-invariant subspace is zero-dimensional. Since the curl at first order is constructed from contributions of the 12 first-shell vertices that $I_h$ permutes, the resulting 4D 2-form is $I_h$-invariant — hence identically zero.
+
+The B.1.b ansatz from §2.4.1 had been structurally too conservative. Its framing "no perpendicular-to-$\hat{n}$ component at first order" allowed an $\hat{n}$-aligned curl component (e.g., a "twist" around the $\hat{n}$ axis). The actual content turned out to be full curl-vanishing — the icosahedral symmetry kills both 3D-vector irreps simultaneously.
+
+The methodologically interesting finding of the §11 work was the identification of the K3-base protection identity $\hat{e}_{ij}\cdot\hat{n} = 0$ as the structural source. The trapezoidal-circulation calculation around any of the 30 host-first-shell side-face triangles $(v_{\text{host}}, v_i, v_j)$ requires two cancellations: the $\hat{n}$-content contribution cancels because $v_i$ and $v_j$ have identical $\hat{n}$-projection (a direct consequence of $\hat{e}_{ij}\cdot\hat{n} = 0$), and the perpendicular-content contribution cancels via the tight $\sin^2(36°)(\hat{e}_i\cdot\hat{e}_j)$ structure that emerges from the per-vertex current formula.
+
+The same K3-base protection identity that:
+- Capotauro v2.0 §13.6 used for K3-base protection from spatial-sector edge-length perturbation (Finding C-W39)
+- Patch 0534 §10.3 used for zero first-shell-to-first-shell temporal-sector Mechanism A rate perturbation (B.1.d substrate-locality theorem)
+
+now also gives the Patch 0535 §11 curl-vanishing result. **One geometric identity, three programme results across both perturbation sectors.** The cross-sector unification through a single identity is a structural-economy signal that the underlying 600-cell first-shell geometry is doing more programme work than initially apparent. Methodological observation registered: when a load-bearing geometric identity is found to govern one sub-question, it is worth probing whether it governs related sub-questions in adjacent sectors.
+
+The explicit algebraic derivation in §11.5 was direct: substituting the per-vertex current values from Patch 0533 §9.4 into the trapezoidal-circulation formula yields explicit zero — the $\hat{n}$-content terms sum to zero by the uniform first-shell $\hat{n}$-projection, the perpendicular-content terms cancel via the antisymmetric $\hat{e}_i\cdot\hat{e}_j$ structure in the $\vec{j}(v_i)\cdot(v_j - v_{\text{host}})$ and $\vec{j}(v_j)\cdot(v_{\text{host}} - v_i)$ contributions. Total circulation: zero on all 30 side-face triangles at $\mathcal{O}(\delta)$.
+
+Numerical verification at machine precision via `code/verify_b1q2_curl_content.py` confirmed: max $|circulation|$ across the 30 side-face triangles $\leq 2.8 \times 10^{-17}$ across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$. The result holds at machine precision; the algebraic derivation is rigorously corroborated.
+
+The programme-state implications of Patch 0535 are substantial. The five B.1 ansatzes from §2.4 stand at: four at sketch-level status (B.1.b this Patch, B.1.c framework via Reading C, B.1.d Patch 0534, B.1.e Patch 0533), ONE genuinely open (B.1.a icosahedral-symmetry preservation at matrix-element layer; B.1.q1 target). **Load-bearing ansatzes narrowed from five to one.** The §2.5 provisional structural claim from Patch 0531 is now conditional only on B.1.a.
+
+The narrowing trajectory has been remarkably efficient — averaging one ansatz closure per session across Patches 0533, 0534, 0535. The K3-base protection identity has been doing extensive work; the icosahedral-symmetry-residual structure at $v_{\text{host}}$ has been the load-bearing tool throughout.
+
+This compresses the F.1 sub-question status upgrade timeline: anticipated to become live "after B.1.q1 substantively progresses" (estimated 1-2 sessions) rather than the prior "after B.1.q1 + B.1.q2 substantively progress" (estimated 2-3 sessions cumulative per Patch 0534 §10.11). The §6.2 external reviewer-pause checkpoint remains the binding gate before any F.1 status propagation.
+
+**Forward queue post-Patch 0535**: B.2.q1 minimal algebraic realization formalization (preserved priority (5); 1-2 sessions; per §3.3) is the recommended immediate next priority. Following B.2.q1: B.1.q1 substantive icosahedral-symmetry preservation at matrix-element layer (priority (6); 1-2 sessions; B.1.a ansatz target; the LAST remaining genuinely-open B.1 ansatz). After B.1.q1 closure, the F.1 sub-question status upgrade question becomes IMMEDIATELY live; the external reviewer-pause checkpoint must be triggered BEFORE any F.1 status propagation. The foundations work trajectory is approaching completion of its substantive load-bearing arc.
+
