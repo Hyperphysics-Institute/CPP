@@ -1505,3 +1505,51 @@ Patch 0539 implementation:
 
 *Patch 0538 Tier 4 reasoning appended. F.1 reviewer-pause cycle (Patches 0531–0537) closed at calibration response level. Cross-reviewer convergence between ChatGPT and Copilot on two structural concerns registered as load-bearing methodological signal. Seven calibration items addressed in §14 of the sketch; no sub-questions reopened; no F.1 status change. Patch 0539+ status upgrade contingent on Patch 0538 being applied. Reviewer-pause discipline has produced its first productive feedback cycle in F.1 trajectory; the workflow is now precedent for future programme reviewer-pause cycles.*
 
+
+---
+
+## §24 — Session 139 Patch 0539: F.1 sub-question status upgrade reasoning
+
+*This is brief Tier 4 reasoning specifically for the status upgrade decision. The substantive methodological reasoning underlying the upgrade lives in §23 (calibration response reasoning) + §17 (OS-codified workflow at `templates/operating_system.md`). The §24 records what made the upgrade decision proceed at this Patch and what was deliberately preserved as scope-qualifier going forward.*
+
+### §24.1 The upgrade decision rationale
+
+The upgrade was authorized because the §17.1 trigger conditions codified in Patch 0539a were all satisfied: load-bearing argument arc completed at sketch Layer 2 (seven sub-questions closed across Patches 0532–0537); status upgrade imminently live (registered at Patch 0537 §13.11); no internal closure failure detected (Patch 0538 §14 calibration addressed seven items without reopening any sub-question); anti-priorities sustained throughout (no v1.0 SHIPPED edits; no flagship paper assembly; no inappropriate Layer 3 promotion; documentation suite up to date).
+
+The decision was NOT authorized by any single reviewer's verdict — Grok's "proceed now" alone would have been insufficient (single-reviewer flag at §17.5 weighting hierarchy is lower-priority signal). The decision was authorized by:
+
+1. The structural soundness of the closures at sketch Layer 2 within their proper scopes (Patches 0531–0537).
+2. The calibration response addressing the cross-reviewer convergent scope-overclaim items (Patch 0538 §14.1 + §14.2).
+3. The OS-level codification placing the upgrade within standing programme discipline (Patch 0539a §17).
+4. Cross-reviewer convergence on the language: ChatGPT's precision ("within the minimal-local-first-order realization framework") + Grok's inclusivity ("pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions").
+
+### §24.2 What was deliberately preserved
+
+Scope-qualifier language is the load-bearing methodological commitment that the calibration response identified and the status upgrade preserves. The §15.3 vocabulary table makes the qualifiers explicit; future-Patch work referencing the F.1 sub-question status should use them.
+
+The discipline-preservation goal: prevent the status-upgrade language from being read as authorizing Layer 3 promotion, flagship paper assembly, F.2 / F.3 substantive content, or findings registry promotion. Each of these requires its own gated trajectory; the upgrade does not propagate to them. §15.6 anti-priorities list 14 items not triggered by the upgrade.
+
+### §24.3 What was deliberately NOT done
+
+- No promotion of any sub-question to Layer 3 status — Layer 3 promotion is a separate decision requiring substantive Layer 3 rigor work (theorem-level proofs, framework axiomatization, explicit CG factor computations, etc.).
+- No promotion of any sketch Layer 2 result to programme-level Findings registry — Findings registry promotion requires Layer 3 work.
+- No modification of §14 (Patch 0538 calibration response) inline — §14 preserved as the calibration milestone per §17.8 immutable-checkpoint discipline.
+- No modification of the reviewer-pause checkpoint v1.0 document — preserved as historical record per §17.8.
+- No external reviewer engagement on the status upgrade — per §17.7 (5), the calibration response Patch IS the engagement; the status upgrade Patch implements the agreed-upon outcome.
+
+### §24.4 Programme-level closure milestone significance
+
+The Patches 0531–0537 → 0538 → 0539a → 0539 sequence establishes the **first complete reviewer-pause cycle in CPP programme history** and the **first concrete instance of "calibration → upgrade" sequencing** following the §17 codified discipline. The sequence is the canonical worked example for future flagship trajectories per §17.10.
+
+The F.1 sub-question's status upgrade is a milestone within the F.1 trajectory, not the end. F.1 Layer 3 promotion + supplementary sub-questions + flagship paper assembly + F.2 / F.3 trajectories all continue as separate gated trajectories. The upgrade represents the F.1 trajectory's stable Layer 2 closure milestone, positioning the subsequent work without pre-empting it.
+
+### §24.5 Self-checkpoint
+
+Three places §24 could overstate:
+
+(i) The "deliberately preserved" framing at §24.2 may suggest the scope qualifiers are temporary — they are not; the qualifiers are load-bearing for downstream work and should not be dropped at Layer 3 promotion (a different rigor level may extend the framework, but the present framework's qualifiers remain).
+
+(ii) The "first complete reviewer-pause cycle in CPP programme history" framing at §24.4 should not be read as the first reviewer cycle of any kind — per `templates/operating_system.md` §5, per-paper Multi-AI Review Cycles have been productive across many CPP papers (SM-7/SM-8/SM-9/SM-10 series, Capotauro v2.0, etc.). The Patches 0531–0537 → 0538 → 0539 sequence is the first **trajectory-level closure-milestone reviewer-pause cycle** per §17 codified discipline; §5 per-paper cycles operate at a different layer.
+
+(iii) The "canonical worked example for future flagship trajectories" framing at §24.4 should not be read as pre-authorizing automatic application of the same three-Patch sequence to F.2 / F.3 / etc. — each future trajectory's reviewer-pause cycle requires its own checkpoint document, its own reviewer engagement, its own calibration response Patch (if needed), and its own status upgrade Patch (if authorized). The §17 codified workflow is the discipline; the F.1 sequence is the precedent applying it.
+

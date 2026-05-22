@@ -537,4 +537,100 @@ This methodological precedent is registered for future Layer 4 closure trajector
 
 ---
 
-*This document is a viability decision gate at the F.2 / F.3 fork under the OPEN-SD-CHIR-PRIMITIVE umbrella. It is the Session 138 opening's substantive deliverable post Session 137 close cross-window handover seed. Companion deliverable on Thomas's acceptance of the pivot recommendation: programme registry updates per §9.1 + F.1 sub-question scoping sketch opening per §10 (A). Decision-gate methodological precedent registered for future cross-sector closure work per §12. **§14 added at Patch 0529 re-engages this decision gate with the calibrated F.1 sub-question status post Patches 0524–0528.** F.2 / F.3 trajectories remain DEFERRED at decision-gate level pending Phase 2 foundations work; Scenario A status: structurally VIABLE + phenomenologically CONSISTENT at viability level, derivationally PROVISIONAL.*
+## §15 F.1 sub-question status upgrade memo at decision-gate level (Patch 0539)
+
+### §15.1 Memo purpose
+
+Short formal memo registering the F.1 sub-question's status upgrade at the decision-gate level following Phase 2 foundations work completion (Patches 0531–0537) + reviewer-pause cycle (Patch 0538 calibration response) + OS-level codification (Patch 0539a). Parallels the §14 Patch 0529 memo pattern but applies the upgraded status framing rather than the calibrated provisional status framing.
+
+The substantive justification for the upgrade lives at:
+- `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` §15 (status upgrade implementation Patch).
+- `templates/operating_system.md` §17 (codified reviewer-pause cycle protocol; Patch 0539a).
+- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (checkpoint document; preserved as historical record).
+- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (three reviewer responses + cross-reviewer synthesis; preserved as historical record).
+
+This §15 memo is the decision-gate-level summary of the upgrade outcome.
+
+### §15.2 F.1 sub-question status (Patch 0539 upgraded)
+
+> **SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions.**
+
+This supersedes the §14 (Patch 0529) framing "PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work" for the decision-gate verdict structure going forward. §14 remains preserved as historical record per `templates/operating_system.md` §17.8 immutable-checkpoint discipline.
+
+### §15.3 Updated §7.2 verdict structure with upgraded Scenario A status
+
+**Scenario A status (Patch 0539 upgraded): SUBSTANTIVE SKETCH-LEVEL VIABLE at Layer 2 under the minimal-local-first-order realization framework**
+
+The substrate-mechanism (Mechanism A DI-bit propagation-rate asymmetry) supplies a structurally justified derivational pathway for the $\hat{n} \mapsto \vec{\omega}_{PCD}$ link with five complementary structural constraints at sketch Layer 2 (algebraic-realization, derivative-order, substrate-locality, first-shell-current-sum, matrix-element-layer $I_h$-covariance). Phenomenological consistency at 1.64% agreement with $\Delta p_{LR}^{obs} \sim 0.04$ from Phase 3 (Patch 0526 Finding DSL-3) is preserved. The trajectory is **derivationally substantive at sketch Layer 2** (upgrade from "derivationally PROVISIONAL" per §14), with the scope qualifier "within the minimal-local-first-order realization framework" load-bearing and preserved going forward.
+
+**Scenario B status (Patch 0539): NOT CURRENTLY ACTIVE** — preserved from §14. Mechanism A viability trajectory has not failed; the upgrade strengthens this conclusion. Scenario B remains available as fallback if Layer 3 promotion work falsifies the minimal-local-first-order realization framework or demonstrates no Mechanism A variant can produce the required TI-odd construction at Layer 3 rigor.
+
+**Scenario C status (Patch 0539): NOT CURRENTLY ACTIVE** — preserved from §14. Partial-derivation framing not motivated by current state. Remains available if Layer 3 promotion work succeeds for manifestation (iv) but fails to extend to manifestation (v) or vice versa.
+
+### §15.4 Three open structural commitments status update at decision-gate level
+
+The three open structural commitments registered at §14.5 (Patch 0529) receive Patch 0539 status updates:
+
+| Commitment | Patch 0529 status | Patch 0539 status |
+|---|---|---|
+| **B.1** Local algebraic representation ansatz | Open, largest open question | **CLOSED at sketch Layer 2** via Patches 0531–0537 cumulative work + Patch 0538 calibration (scope: framework local-current-definition + matter-state inheritance from Reading C + homogeneity) |
+| **B.2** $\sigma_{cycle}$ algebraization rigor + TI-odd construction uniqueness | Open | **B.2.q1 minimal algebraic realization theorem CLOSED at sketch Layer 2** within finite-dimensional standard Wigner-Eckart framework (Patch 0536 §12 + Patch 0538 §14.2 calibration); B.2.q2, B.2.q3, B.2.q4 supplementary work open and deferrable |
+| **B.3** Case A.1 derivational support from CPP axioms | Open | **B.3.q1 Substrate-Locality Unification temporal-extension corollary CLOSED at sketch Layer 2** via Patch 0534 §10.7; B.3.q2, B.3.q3, B.3.q4 supplementary work open and deferrable |
+
+The three commitments together provided the real structural bottleneck per §14.5 framing; the structural-bottleneck framing is now SUPERSEDED — the bottleneck has been substantively cleared at sketch Layer 2 with scope qualifiers preserved. The new bottleneck (deferred): Layer 3 promotion work + supplementary sub-question closures + flagship paper assembly + F.2 / F.3 substantive content trajectories.
+
+### §15.5 F.2 / F.3 trajectory implications at decision-gate level after upgrade
+
+**F.2 / F.3 substantive content trajectories remain DEFERRED at decision-gate level** — the status upgrade strengthens the F.1 trajectory but does NOT trigger F.2 / F.3 substantive content per `templates/operating_system.md` §17.9 (5) (reviewer-pause does NOT authorize downstream trajectories).
+
+**Rationale**: F.2 / F.3 Layer 4 closure machinery depends on the §2 substrate-Wigner-Eckart datum, which depends on $\vec{\omega}_{PCD}$ as substrate object, which depends on Phase 2 coupling rule, which is now substantively justified at sketch Layer 2 under the minimal-local-first-order realization framework. The dependency chain is structurally sound at Layer 2; however, propagating this to F.2 / F.3 substantive content would require additional Layer 3 promotion work to ensure scope-qualifier language is preserved when F.2 / F.3 inherit the framework. Per ChatGPT's recommendation: "the flagship paper should preserve: the Layer distinction, the conditionality, and the explicit open higher-order questions. Do not erase the uncertainty structure during paper polishing. That would be a mistake."
+
+F.2 / F.3 substantive content opens when:
+1. Layer 3 promotion work substantively progresses on the load-bearing F.1 sub-question commitments (B.1, B.2, B.3 collectively); AND
+2. F.1 flagship paper assembly substantively progresses with scope-qualifier language preserved; AND
+3. F.2 / F.3 own decision-gate re-engagement registers Scenario A's upgraded status as authorization for downstream trajectory opening (per `templates/operating_system.md` §17.9 (5)).
+
+The decision-gate re-engagement for F.2 / F.3 substantive content is itself a future Patch; the present §15 memo is the trigger condition for that future re-engagement.
+
+### §15.6 Calibrated forward queue at decision-gate level post-Patch 0539
+
+| # | Item | Status |
+|---|---|---|
+| (A) | F.1 sub-question status upgrade at decision-gate level | **EXECUTING / COMPLETE at this §15** |
+| (B) | F.1 sub-question Layer 3 promotion work — explicit matter-state irrep enumeration, framework axiomatization, Schur-orthogonality CG factor, full algebraic derivations for B.1.q4 / B.2.q1 / B.1.q1 | **OPEN — next substantive priority for F.1 trajectory continuation; estimated 5–15 sessions** |
+| (C) | F.1 supplementary sub-question work — B.1.q6 ($\mathcal{O}(\delta^2)$ extensions), B.2.q2 (minimal-derivative-order formalization), B.2.q3 (derivative-order-1 alternatives enumeration), B.2.q4 (§3.4 alternatives re-examination), B.3.q2-q4 (B.3 derivational support) | **OPEN — deferrable behind (B); not load-bearing for present upgrade** |
+| (D) | F.1 flagship paper assembly via `flagship_papers/dynamical_substrate_law/` paper home | **DEFERRED behind (B) + (C); per `paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section** |
+| (E) | F.2 substantive content trajectory — closure of manifestation (iv) via chirality continuum architectural template under refined dynamical-object scope | **DEFERRED at decision-gate level pending (B), (C), (D), + own decision-gate re-engagement** |
+| (F) | F.3 substantive content trajectory — closure of remaining chirality continuum manifestations | **DEFERRED for same reason as (E)** |
+| (G) | Long-term programme target — derive chirality scale $\|\chi\| = \varphi^{-3}$ from pure 600-cell polytope geometry | **REGISTERED + DEFERRED behind (B), (C), (D), (E), (F)** |
+| (H) | JUNO peer-review update integration when published | **DEFERRED pending publication** |
+| (I) | Future reviewer-pause cycles — triggered at each major closure milestone per `templates/operating_system.md` §17 discipline | **AVAILABLE / on-demand at future closure milestones** |
+| (J) | Cross-window handover if Session 139 closes | **STANDARD per `templates/operating_system.md` §15** |
+
+The forward queue is intentionally bounded by the upgrade scope; downstream Patches engaging (B) and beyond will refine the queue per their own analysis.
+
+### §15.7 Methodological reflection — three-Patch reviewer-pause precedent established
+
+The Patches 0531–0537 → 0538 → 0539a → 0539 sequence establishes the **first complete reviewer-pause cycle in CPP programme history** per `templates/operating_system.md` §17.10. The trajectory structure was:
+
+- **Foundations Patches 0531–0537**: substantive multi-Patch closure work producing seven sub-question closures at sketch Layer 2 across B.1, B.2, B.3 commitments.
+- **Reviewer-pause checkpoint**: three reviewers (ChatGPT, Copilot, Grok) returned three distinct verdicts; cross-reviewer convergence between ChatGPT and Copilot on two scope-overclaim items identified as the strongest signal.
+- **Calibration response Patch 0538**: seven calibration items addressed via append-only §14 notes; no sub-questions reopened; scope-qualifier language refined; no F.1 status change in this Patch.
+- **OS codification Patch 0539a**: §17 Reviewer-Pause Cycle Protocol added to `templates/operating_system.md`; reviewer-pause template + cross-references to relationship_protocol.md and paper_completion_checklist.md added; the workflow established as standing CPP programme infrastructure.
+- **Status upgrade Patch 0539** (this Patch): F.1 sub-question status upgraded with scope qualifiers preserved; this §15 memo registers the upgrade at decision-gate level.
+
+**Methodological precedent for future programme work**: substantive multi-Patch closure trajectories at flagship-paper-trajectory level (F.x trajectories) should follow the three-Patch sequence (calibration response Patch → OS codification if first cycle → status upgrade Patch) at closure milestones BEFORE downstream work (flagship paper assembly, downstream trajectory unlock) inheriting closure-claim language. The reviewer-pause discipline operates at the trajectory level above the §5 per-paper review cycle, as comparison table at §17.0 of operating_system.md makes explicit. Future flagship trajectories (F.2, F.3, etc.) inherit this workflow.
+
+### §15.8 Decision-gate-level closing summary
+
+**The F.1 sub-question status upgrade is now implemented at decision-gate level** per the §15 memo above. The decision gate's §7.2 verdict structure is updated with Scenario A at substantive sketch Layer 2 viability; Scenarios B / C preserved as not currently active. The three open structural commitments are now substantively closed at sketch Layer 2 with scope qualifiers preserved. F.2 / F.3 trajectories remain DEFERRED pending Layer 3 promotion + own decision-gate re-engagement. The forward queue's immediate substantive priority is F.1 Layer 3 promotion work (item B).
+
+The full F.1 sub-question status upgrade trajectory: 17 Patches across Session 138 continuation + Session 139 (0522 → 0523 → 0524 → 0525 → 0526 → 0527 → 0528 → 0529 → 0531 → 0532 → 0533 → 0534 → 0535 → 0536 → 0537 → 0538 → 0539a → 0539). Programme state advances from "F.1 sub-question identified as load-bearing for decision gate" (Patch 0522) to "F.1 sub-question SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, with reviewer-pause discipline codified as standing programme infrastructure, with three open structural commitments substantively closed at sketch Layer 2 with scope qualifiers preserved, and with F.2 / F.3 trajectories remaining DEFERRED pending Layer 3 promotion + own decision-gate re-engagement" (this Patch 0539).
+
+---
+
+*§15 closes the F.1 sub-question status upgrade memo at Patch 0539. The decision gate is now updated with the F.1 sub-question's upgraded SUBSTANTIVE SKETCH-LEVEL CLOSURE status. The forward queue's immediate substantive priority is F.1 Layer 3 promotion work (B). Downstream trajectories (F.2, F.3, F.1 flagship paper assembly) remain DEFERRED. The F.1 reviewer-pause cycle is closed; further F.1 work continues as separate gated trajectories per `templates/operating_system.md` §17 codified discipline.*
+
+---
+
+*This document is a viability decision gate at the F.2 / F.3 fork under the OPEN-SD-CHIR-PRIMITIVE umbrella. It is the Session 138 opening's substantive deliverable post Session 137 close cross-window handover seed. Companion deliverable on Thomas's acceptance of the pivot recommendation: programme registry updates per §9.1 + F.1 sub-question scoping sketch opening per §10 (A). Decision-gate methodological precedent registered for future cross-sector closure work per §12. **§14 added at Patch 0529** re-engages this decision gate with the calibrated F.1 sub-question status post Patches 0524–0528. **§15 added at Patch 0539** registers the F.1 sub-question status upgrade at decision-gate level following Phase 2 foundations work completion (Patches 0531–0537) + reviewer-pause cycle (Patch 0538) + OS-level codification (Patch 0539a). F.2 / F.3 trajectories remain DEFERRED at decision-gate level pending F.1 Layer 3 promotion + own decision-gate re-engagement; Scenario A status (Patch 0539 upgraded): SUBSTANTIVE SKETCH-LEVEL VIABLE at Layer 2 under the minimal-local-first-order realization framework.*
