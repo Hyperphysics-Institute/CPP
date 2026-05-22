@@ -1553,3 +1553,60 @@ Three places §24 could overstate:
 
 (iii) The "canonical worked example for future flagship trajectories" framing at §24.4 should not be read as pre-authorizing automatic application of the same three-Patch sequence to F.2 / F.3 / etc. — each future trajectory's reviewer-pause cycle requires its own checkpoint document, its own reviewer engagement, its own calibration response Patch (if needed), and its own status upgrade Patch (if authorized). The §17 codified workflow is the discipline; the F.1 sequence is the precedent applying it.
 
+
+---
+
+## §25 — Session 139 Patch 0540: F.1 Layer 3 promotion trajectory opening reasoning
+
+*Brief Tier 4 reasoning for the F.1 Layer 3 promotion trajectory opening Patch. The substantive scoping content lives in `sketches/F1_layer3_promotion_scoping.md` §1–§9; §25 records what made this a scoping Patch rather than a closure Patch and what was deliberately preserved as scope.*
+
+### §25.1 Why open with a scoping Patch parallel to Patch 0531
+
+The Patch 0531 Phase 2 foundations work opening established the codified pattern for opening a major substantive trajectory: comprehensive scoping sketch enumerating targets, identifying dependencies, establishing priority ordering, registering anti-priorities. Patches 0532–0537 then closed sub-questions one per Patch following the scoping.
+
+The Layer 3 promotion trajectory after Patch 0539 status upgrade is the next major substantive trajectory in F.1. The Patch 0531 precedent suggests opening with a scoping Patch that establishes the trajectory structure rather than jumping directly to first-target closure. Patch 0540 follows this precedent: opening Patch = scoping; first-target closure = Patch 0541 candidate.
+
+The scoping document enumerates seven Layer 3 promotion targets corresponding to the seven sketch Layer 2 closures from Patches 0532–0537. For each target, it analyzes tractability (1–4 sessions per target), risk (low / medium), value (highest / high / medium), and cross-target dependencies. The dependency analysis surfaces a key structural insight: Target 2 (B.2.q1 framework axiomatization of $P_{TI}$) and Target 3 (B.1.q1 matter-state independent derivation) form a Priority 1 chain because B.1.q1's matter-state $I_h$-covariance Layer 3 derivation benefits from B.2.q1's framework axiomatization of $P_{TI}$ rep theory done first. Target 1 (B.1.q4 full algebraic derivation) is Priority 2 as an independent well-bounded target. Targets 4–7 follow per §4 priority ordering.
+
+### §25.2 Cross-target dependency analysis as the scoping document's load-bearing contribution
+
+The cross-target dependency insight is the scoping document's load-bearing methodological contribution. Without it, a naive opening might pick Target 1 (B.1.q4) first because it's the most tractable Layer 3 target. With it, the Priority 1 chain (Target 2 → Target 3) is identified as more strategically valuable because it resolves the highest-weight cross-reviewer-convergent calibration item from Patch 0538 §14.1 (matter-state $I_h$-covariance currently inherited from Reading C + framework matter-content homogeneity) and the second-highest cross-reviewer-convergent calibration item from Patch 0538 §14.2 (finite-dimensional scope of B.2.q1 theorem). Closing the chain Target 2 → Target 3 resolves the two strongest calibration signals in coupled fashion.
+
+This is analogous to the Patch 0534 cross-commitment-coupled-closure pattern (B.1.q3 + B.3.q1 closed together because they share underlying structural work via B.1.d ↔ B.3.Move-1 cross-commitment dependency). The scoping document surfaces an analogous coupling at the Layer 3 promotion level: Target 2 → Target 3 form a structural chain because B.1.q1 inherits framework axiomatization from B.2.q1.
+
+### §25.3 What this scoping Patch does NOT do
+
+- No Layer 3 closure work — scoping is sketch-level analytical work establishing the trajectory structure, not theorem-level closure.
+- No F.1 sub-question status change — Patch 0539 framing remains operative; Layer 3 status upgrade (if and when) is a future Patch after the Layer 3 arc closes.
+- No modification of v1.0 SHIPPED .tex paper sources.
+- No modification of Phase 1 §11 / Phase 2 §12 polished content or any Patches 0531–0539 immutable content.
+- No modification of reviewer-pause checkpoint v1.0 document.
+- No promotion of any sketch Layer 2 closure to Layer 3 status in this Patch.
+- No findings registered at programme level.
+- No F.1 flagship paper assembly trigger.
+- No F.2 / F.3 substantive content trajectory opening.
+- No long-term programme target work.
+- No external reviewer engagement on this scoping Patch — scoping Patches do not require external review.
+- No bundling of multiple Layer 3 promotion targets into single closure Patch — each target is its own gated trajectory.
+- No dropping of scope-qualifier language established by Patch 0538 §14.5 + preserved in Patch 0539 §15.3.
+
+### §25.4 What Patch 0541 candidates look like
+
+Per the scoping document §4.3, Patch 0541 has two natural candidates:
+
+**(a) Priority 1 path — Target 2 (B.2.q1 framework axiomatization)**: opens the recommended Target 2 → Target 3 chain. Closing Target 2 resolves Patch 0538 §14.2 calibration item (finite-dimensional scope) and establishes framework axiomatization foundation needed for Target 3 (B.1.q1 matter-state independent derivation). Estimated 2–4 sessions. Higher-strategic-value option.
+
+**(b) Priority 2 path — Target 1 (B.1.q4 full algebraic derivation)**: opens with the most tractable independent target. Closing Target 1 resolves Patch 0538 §14.4 calibration item (numerical verification at machine precision but NOT substitute for Layer 3 algebraic derivation). Estimated 1–3 sessions, well-bounded. Lower-risk, single-session-tractable option. The B.1.q4 derivation work is already substantively prepared (538-line algebraic derivation document preserved at `/home/claude/F1_layer3_b1q4_algebraic_derivation.md` outside the working tree) and can become Patch 0541 directly if authorized.
+
+The choice between (a) and (b) at Patch 0541 is Thomas's decision per §15.7 codified discipline that each Layer 3 promotion is its own gated trajectory.
+
+### §25.5 Self-checkpoint
+
+Three places §25 could overstate:
+
+(i) The "Priority 1 chain" framing at §25.1 + §25.2 may suggest Target 2 → Target 3 is the only justifiable Patch 0541 path. It is not — Target 1 (B.1.q4) is equally valid as an independent single-session-tractable opening per the scoping document §4.3. The Priority 1 framing reflects strategic value of the chain; tactical considerations (session-window scope, single-Patch tractability) may favor Target 1.
+
+(ii) The "cross-target dependency analysis as load-bearing contribution" framing at §25.2 may overstate the scoping document's importance. The dependency analysis is one of several contributions; the priority ordering, target tractability assessment, and anti-priorities specification are also load-bearing. The dependency analysis is methodologically interesting because it parallels the Patch 0534 cross-commitment-coupled-closure pattern at a different layer.
+
+(iii) The "Patch 0541 candidates" framing at §25.4 may suggest the scoping document fully determines Patch 0541. It does not — Patch 0541's substantive opening requires Thomas's authorization. The scoping document provides recommendations; the actual sequence is determined by authorization at each Patch boundary.
+
