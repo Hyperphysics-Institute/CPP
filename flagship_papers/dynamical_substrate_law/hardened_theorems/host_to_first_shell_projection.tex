@@ -1,0 +1,265 @@
+% ============================================================
+% Host-to-First-Shell Uniform Projection Identity
+%   for the 600-Cell Edge Graph at Vertex-Aligned Reading C
+% Publication-Grade Hardening of Patch 0544 §4.2 Theorem 4.2.1
+%   (equivalent to Patch 0541 §3.1 Identity I1)
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    THIRD AND FINAL of the three F.1 Layer 3 building-block hardenings —
+%    completes the publication-grade trio with Patches 0550 + 0551 + this Patch)
+% Patch 0552 (Session 142, 23 May 2026)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\uhat}{\hat{u}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+
+\title{Host-to-First-Shell Uniform Projection Identity \\
+in the 600-Cell at Vertex-Aligned Reading C \\
+\large Publication-Grade Hardening of Patch~0544~\S4.2 Theorem~4.2.1\\(equivalent to Patch~0541~\S3.1 Identity~I1)}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7\\Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{23 May 2026 (Session 142, CPP Patch 0552)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade hardening of the host-to-first-shell unit-direction uniform projection identity for the 600-cell edge graph at vertex-aligned Reading~C, registered in the CPP F.1 sub-question trajectory at Patch~0544 \S4.2 as Theorem~4.2.1 (equivalently at Patch~0541 \S3.1 as Identity~I1) at sketch-document Layer~3 rigor. The hardened statement asserts that, under (i)~vertex-aligned Reading~C with $\nhat = \vhost$, (ii)~the 600-cell unit-vertex normalisation $|v|=1$, and (iii)~the first-shell inner-product primitive G1 ($v_i\cdot\vhost = \phi/2$ uniformly across the 12 first-shell neighbours of $\vhost$), every host-to-first-shell unit direction $\uhat_i = (v_i - \vhost)/|v_i - \vhost|$ satisfies $\uhat_i\cdot\nhat = -1/(2\phi)$ exactly, uniformly across all 12 first-shell neighbours of $\vhost$, where $\phi = (1+\sqrt{5})/2$. Publication-grade rigorisation consists of: explicit hypothesis tracking, isolation of the chord-length computation as Lemma~\ref{lem:chord_length}, explicit enumeration of the golden-ratio identities used (Lemma~\ref{lem:golden_ratio_identities}), and a five-class exclusion enumeration. This artifact is the third and final of the three Layer~3 building-block hardenings needed for full publication-grade closure of the F.1 sub-question Layer~3 stack; with Patch~0550 (perturbation-theory propagation, Theorem~3.3.3 + Corollary~3.3.4) and Patch~0551 (first-shell-to-first-shell perpendicularity, Theorem~4.1.1) the trio is now complete, and Patch~0550's exclusion class~E5 is closed for both outstanding dependencies. The F.1 flagship paper assembly evaluation gate (LIVE since Patch~0549) becomes substantively engageable post-publication of this artifact.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the host-to-first-shell uniform projection identity for the 600-cell edge graph at vertex-aligned Reading~C from sketch-document Layer~3 rigor (the algebraic computation given at Patch~0544 \S4.2 and equivalently at Patch~0541 \S3.1) to publication-grade rigor with explicit hypothesis tracking, isolation of supporting computations as named lemmas, and a five-class exclusion enumeration. The substantive theorem content is unchanged from Patch~0544 \S4.2 / Patch~0541 \S3.1; the contribution of this artifact is the rigorisation of the proof structure, the explicit factoring of the chord-length and golden-ratio dependencies, and the formalisation of the uniformity claim.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+Patch~0550 hardened the perturbation-theory propagation rule (Patch~0544 \S3.3 Theorem~3.3.3 + Corollary~3.3.4) at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}, citing the present theorem (then at Patch~0544 \S4.2 sketch-document Layer~3 rigor) as one of two outstanding dependencies in exclusion class~E5. Patch~0551 hardened the first-shell-to-first-shell perpendicularity identity (Patch~0544 \S4.1 Theorem~4.1.1) at \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex}, closing the first of those two dependencies. The present paper closes the second, completing the F.1 Layer 3 stack publication-grade hardening trio.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (\cite{coxeter1973}) with vertex set the 120 vertices of the 600-cell normalised to $|v|=1$ on $S^3 \subset \Reals^4$. Fix a host vertex $\vhost \in V(\Gsixcell)$ and write the 12 first-shell neighbours of $\vhost$ as $v_1, \ldots, v_{12}$.
+
+\begin{theorem}[Host-to-first-shell uniform projection, hardened]\label{thm:host_to_first_shell_projection}
+Under the following hypotheses:
+\begin{enumerate}[label=(H\arabic*)]
+\item \textbf{Vertex-aligned Reading~C with framework chirality direction $\nhat = \vhost$}, as registered in Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2;
+\item \textbf{600-cell unit-vertex normalisation}: every vertex $v \in V(\Gsixcell)$ satisfies $|v| = 1$ in the ambient $\Reals^4$;
+\item \textbf{First-shell inner-product primitive (G1)}: for every first-shell vertex $v_i$ of $\vhost$, $v_i \cdot \vhost = \phi/2$, where $\phi = (1+\sqrt{5})/2$ is the golden ratio (G1 imported from Patch~0541 \S3.1 at sketch-document Layer~3 rigor);
+\end{enumerate}
+the host-to-first-shell unit-direction vectors
+\begin{equation}\label{eq:host_unit_direction_definition}
+\uhat_i \;=\; \frac{v_i - \vhost}{|v_i - \vhost|}, \qquad i \in \{1, \ldots, 12\}
+\end{equation}
+satisfy
+\begin{equation}\label{eq:host_uniform_projection}
+\uhat_i \cdot \nhat \;=\; -\frac{1}{2\phi}
+\end{equation}
+exactly, uniformly across all 12 first-shell neighbours of $\vhost$.
+\end{theorem}
+
+The proof is organised as two supporting lemmas (\S\ref{sec:golden_ratio_identities_lemma}--\S\ref{sec:chord_length_lemma}) followed by the main computation (\S\ref{sec:projection_proof}). Corollaries~\ref{cor:uniform_first_order_perturbation}--\ref{cor:lemma_3_3_2_closure} below record the substrate-physics applications.
+
+\begin{remark}[Equivalence with Patch 0541 §3.1 Identity I1]\label{rem:equivalence_with_I1}
+Theorem~\ref{thm:host_to_first_shell_projection} is equivalent in content to Patch~0541 \S3.1 Identity~I1, modulo the variable renaming $\hat{v} \to \nhat$ (the latter is Reading-C's identification $\nhat = \vhost$). The Patch~0541 derivation operates in a generic-vertex frame where $v$ ranges over 600-cell vertices and $\hat{v} = v/|v|$ is its unit direction; the present formulation specialises to the host vertex $\vhost$ with vertex-aligned Reading~C giving $\nhat = \vhost$. The mathematical content of the two formulations is identical; the present statement is the form used in the substrate-locality temporal-extension context (Patch~0544 \S4.2) where Reading~C is operative.
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{The 600-cell edge graph}\label{sec:six_hundred_cell}
+
+The 600-cell is the regular 4-dimensional polytope with Schl{\"a}fli symbol $\{3,3,5\}$ \cite{coxeter1973}; we adopt the unit-radius normalisation $|v|=1$ for all 120 vertices on $S^3 \subset \Reals^4$ (Patch~0550 \S2.1). The 12 first-shell vertices of any host vertex $\vhost$ form a regular icosahedron in the 3D affine hyperplane $H_{\vhost} = \{w \in \Reals^4 : w \cdot \nhat = \phi/2\}$ (Patch~0551 Lemma~3.1.1).
+
+\subsection{Vertex-aligned Reading C}\label{sec:vertex_aligned_reading_c}
+
+Under vertex-aligned Reading~C (Capotauro v2.0 FI-C-RC-1 + FI-C-RC-2), the framework chirality direction $\nhat$ is identified with the host vertex direction: $\nhat = \vhost$. Combined with the unit-vertex normalisation (H2), this gives $|\nhat| = 1$ and $\nhat$ is itself a 600-cell vertex.
+
+\subsection{The G1 primitive (imported)}\label{sec:g1_primitive}
+
+\begin{lemma}[G1, first-shell inner-product primitive; imported from Patch~0541 \S3.1]\label{lem:G1}
+Under (H2) and the 600-cell geometric structure, for every first-shell vertex $v_i$ of $\vhost$ in the 600-cell,
+\begin{equation}\label{eq:G1_identity}
+v_i \cdot \vhost \;=\; \frac{\phi}{2}
+\end{equation}
+uniformly across $i \in \{1, \ldots, 12\}$.
+\end{lemma}
+
+\noindent\textbf{Source of Lemma~\ref{lem:G1}.} As in Patch~0551 \S2.3.1, G1 is derived at Patch~0541 \S3.1 from the 600-cell first-shell-edge dihedral angle $\cos(36^\circ) = \phi/2$ + the unit-vertex normalisation, at sketch-document Layer~3 rigor. G1's promotion to publication-grade rigor remains a candidate for a separate hardening Patch (\S\ref{sec:scope_and_exclusions} exclusion class~E1).
+
+\subsection{Golden-ratio identities}\label{sec:golden_ratio_identities_lemma}
+
+The proof of Theorem~\ref{thm:host_to_first_shell_projection} uses four standard identities of the golden ratio. We collect them here for explicit reference; all follow from the defining quadratic relation $\phi^2 = \phi + 1$.
+
+\begin{lemma}[Golden-ratio identities]\label{lem:golden_ratio_identities}
+For $\phi = (1+\sqrt{5})/2$:
+\begin{align}
+\phi^2 \;&=\; \phi + 1, \label{eq:gr1}\\
+\frac{1}{\phi} \;&=\; \phi - 1, \label{eq:gr2}\\
+1 - \phi \;&=\; -\frac{1}{\phi}, \label{eq:gr3}\\
+\frac{1}{\phi^2} \;&=\; 2 - \phi. \label{eq:gr4}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Identity~\eqref{eq:gr1} is the defining quadratic relation $\phi^2 - \phi - 1 = 0$ applied to the positive root $\phi = (1+\sqrt{5})/2$. From~\eqref{eq:gr1}, divide both sides by $\phi$: $\phi = 1 + 1/\phi$, i.e.\ $1/\phi = \phi - 1$, giving~\eqref{eq:gr2}. Identity~\eqref{eq:gr3} is immediate from~\eqref{eq:gr2}: $1 - \phi = -(\phi - 1) = -1/\phi$. For~\eqref{eq:gr4}: from~\eqref{eq:gr2}, $1/\phi^2 = (1/\phi)^2 = (\phi-1)^2 = \phi^2 - 2\phi + 1 = (\phi+1) - 2\phi + 1 = 2 - \phi$, using~\eqref{eq:gr1} in the penultimate step. $\square$
+\end{proof}
+
+\section{Proof of the projection identity}\label{sec:proof}
+
+\subsection{Chord-length lemma}\label{sec:chord_length_lemma}
+
+\begin{lemma}[Host-to-first-shell chord length]\label{lem:chord_length}
+Under (H1)--(H3) of Theorem~\ref{thm:host_to_first_shell_projection}, for every first-shell vertex $v_i$ of $\vhost$,
+\begin{equation}\label{eq:chord_length}
+|v_i - \vhost| \;=\; \frac{1}{\phi},
+\end{equation}
+uniformly across $i \in \{1, \ldots, 12\}$. In particular, the host-to-first-shell chord length matches the 600-cell first-shell edge length (Patch~0541 \S2.2 G2).
+\end{lemma}
+
+\begin{proof}
+Compute the squared chord length using the inner-product expansion in $\Reals^4$:
+\[
+|v_i - \vhost|^2 \;=\; |v_i|^2 - 2\,(v_i \cdot \vhost) + |\vhost|^2.
+\]
+By (H2), $|v_i|^2 = |\vhost|^2 = 1$. By (H3) (Lemma~\ref{lem:G1}, G1), $v_i \cdot \vhost = \phi/2$. Substituting:
+\[
+|v_i - \vhost|^2 \;=\; 1 - 2\cdot\frac{\phi}{2} + 1 \;=\; 2 - \phi.
+\]
+By Lemma~\ref{lem:golden_ratio_identities}, identity~\eqref{eq:gr4}, $2 - \phi = 1/\phi^2$. Therefore $|v_i - \vhost|^2 = 1/\phi^2$, and taking the positive square root gives $|v_i - \vhost| = 1/\phi$. The argument is uniform in $i$ because G1 is uniform. $\square$
+\end{proof}
+
+\subsection{Projection computation}\label{sec:projection_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:host_to_first_shell_projection}]
+Let $v_i$ be a first-shell vertex of $\vhost$. Compute the projection of $\uhat_i$ onto $\nhat$ using~\eqref{eq:host_unit_direction_definition} and the linearity of the inner product:
+\[
+\uhat_i \cdot \nhat \;=\; \frac{(v_i - \vhost) \cdot \nhat}{|v_i - \vhost|} \;=\; \frac{v_i \cdot \nhat - \vhost \cdot \nhat}{|v_i - \vhost|}.
+\]
+By hypothesis (H1), $\nhat = \vhost$. Therefore:
+\begin{itemize}[leftmargin=2em]
+\item $v_i \cdot \nhat = v_i \cdot \vhost = \phi/2$ by Lemma~\ref{lem:G1} (G1).
+\item $\vhost \cdot \nhat = \vhost \cdot \vhost = |\vhost|^2 = 1$ by (H2).
+\end{itemize}
+Therefore the numerator becomes $\phi/2 - 1$. By Lemma~\ref{lem:chord_length}, the denominator equals $1/\phi$. Substituting:
+\[
+\uhat_i \cdot \nhat \;=\; \frac{\phi/2 - 1}{1/\phi} \;=\; \phi\left(\frac{\phi}{2} - 1\right) \;=\; \frac{\phi^2}{2} - \phi.
+\]
+Apply Lemma~\ref{lem:golden_ratio_identities} identity~\eqref{eq:gr1} ($\phi^2 = \phi + 1$):
+\[
+\frac{\phi^2}{2} - \phi \;=\; \frac{\phi + 1}{2} - \phi \;=\; \frac{\phi + 1 - 2\phi}{2} \;=\; \frac{1 - \phi}{2}.
+\]
+Apply identity~\eqref{eq:gr3} ($1 - \phi = -1/\phi$):
+\[
+\frac{1 - \phi}{2} \;=\; -\frac{1}{2\phi}.
+\]
+Therefore $\uhat_i \cdot \nhat = -1/(2\phi)$. The argument is uniform in $i$ because G1 (which entered through $v_i \cdot \vhost = \phi/2$) is uniform; no $i$-dependence enters the computation. $\square$
+\end{proof}
+
+\begin{remark}[Geometric interpretation of the sign and magnitude]\label{rem:geometric_interpretation}
+The negative sign in $\uhat_i \cdot \nhat = -1/(2\phi) \approx -0.309$ reflects the geometric fact that the host-to-first-shell unit-direction vectors $\uhat_i$ point ``away from'' the host vertex $\vhost$ but at an angle to $\nhat = \vhost$ such that their $\nhat$-projection is in the antipodal direction. Equivalently: the 12 first-shell vertices, sitting in the affine hyperplane $H_{\vhost} = \{w : w\cdot\nhat = \phi/2\}$ (Patch~0551 Lemma~3.1.1), lie on the ``host side'' of the origin in the 600-cell embedding ($\phi/2 > 0$), but the unit-direction vectors $\uhat_i = (v_i - \vhost)/|v_i - \vhost|$ point from the host into the icosahedral first shell, an angular direction whose $\nhat$-component is negative. The uniform magnitude $1/(2\phi)$ reflects the rigid $36^\circ$ polar angle of the first-shell vertices about $\nhat$ in the 600-cell's $I_h$-symmetric first-shell structure.
+\end{remark}
+
+\subsection{Substrate-physics consequences}\label{sec:substrate_physics_consequences}
+
+\begin{corollary}[Uniform host-to-first-shell first-order substrate-rate perturbation]\label{cor:uniform_first_order_perturbation}
+Applying Mechanism~A (Patch~0550 Definition~2.2.1) with Theorem~\ref{thm:host_to_first_shell_projection}: for each first-shell vertex $v_i$ of $\vhost$, the outgoing DI-bit propagation rate on the host-to-first-shell edge $(\vhost, v_i)$ is
+\begin{equation}\label{eq:outgoing_rate}
+r(\uhat_i) \;=\; r_0\bigl(1 + \delta \cdot \uhat_i\cdot\nhat\bigr) \;=\; r_0\Bigl(1 - \frac{\delta}{2\phi}\Bigr),
+\end{equation}
+uniform across all 12 outgoing directions. The incoming DI-bit propagation rate on the reversed edge $(v_i, \vhost)$ is
+\begin{equation}\label{eq:incoming_rate}
+r(-\uhat_i) \;=\; r_0\Bigl(1 + \frac{\delta}{2\phi}\Bigr),
+\end{equation}
+also uniform across all 12 incoming directions.
+\end{corollary}
+
+\begin{proof}
+Direct substitution of $\uhat_i\cdot\nhat = -1/(2\phi)$ (Theorem~\ref{thm:host_to_first_shell_projection}) and $(-\uhat_i)\cdot\nhat = +1/(2\phi)$ (negation) into Mechanism~A's parametric form $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$ (Patch~0550 Definition~2.2.1; Patch~0544 Definition~3.1.1). Uniformity in $i$ follows from the uniformity of Theorem~\ref{thm:host_to_first_shell_projection}. $\square$
+\end{proof}
+
+\begin{corollary}[Closure of Patch 0550 Remark 3.3.2's Theorem 4.2.1 dependency]\label{cor:lemma_3_3_2_closure}
+Patch~0550 Remark~3.3.2 cited Patch~0544 \S4.2 Theorem~4.2.1 as a sketch-document Layer~3 dependency in the context of perturbed-step zero-contribution analysis. The present Theorem~\ref{thm:host_to_first_shell_projection} closes that dependency at publication-grade rigor: future content citing Patch~0550 Remark~3.3.2 may now cite the present Theorem~\ref{thm:host_to_first_shell_projection} in place of the unhardened Patch~0544 \S4.2 statement. Together with Patch~0551 Theorem~3.1.1 (perpendicularity hardening), the two outstanding dependencies in Patch~0550 exclusion class~E5 are both closed.
+\end{corollary}
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+The hypotheses (H1)--(H3) collectively encode the framework commitments under which Theorem~\ref{thm:host_to_first_shell_projection} holds. Five classes of generalisations lie explicitly outside the theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Lemma~\ref{lem:G1} (G1) is imported at sketch-document Layer~3 rigor.} The first-shell inner-product primitive $v_i \cdot \vhost = \phi/2$ is derived at Patch~0541 \S3.1 from the 600-cell first-shell-edge dihedral angle $\cos(36^\circ) = \phi/2$ + unit-vertex normalisation. Promotion of Lemma~\ref{lem:G1} to publication-grade rigor remains a candidate for a separate hardening Patch (same exclusion class~E1 as in Patch~0551 \S5; the dependency is shared across both hardenings).
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP axioms $A1$--$A11$.} The 600-cell polytope structure is taken as given. Layer~4 derivation is the long-term programme target carried forward through Patches~0528 \S14.17, 0539 \S15.5, 0549.
+\item \textbf{Non-vertex-aligned Reading~C variants are NOT covered.} Hypothesis~(H1) requires $\nhat = \vhost$. Centre-aligned, face-aligned, or edge-aligned Reading~C would change the $\vhost$-direction identification and would in general invalidate~\eqref{eq:host_uniform_projection}; the uniformity claim depends on the vertex-alignment specifically.
+\item \textbf{Second-shell and higher-shell projection identities are NOT addressed.} Theorem~\ref{thm:host_to_first_shell_projection} treats host-to-first-shell unit directions only. Analogues for second-shell or higher-shell vertices would require separate derivations using the respective shell's inner-product primitives (none of which is at G1's level of established programme-input status).
+\item \textbf{Higher-order perturbations (beyond $\mathcal{O}(\delta)$) of Corollary~\ref{cor:uniform_first_order_perturbation} are NOT addressed here.} The substrate-rate perturbations~\eqref{eq:outgoing_rate} and~\eqref{eq:incoming_rate} are exact in $\delta$ at the single-edge level (since Mechanism~A's $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$ is itself first-order-exact in $\delta$ on each edge). Multi-edge or multi-step substrate-physics consequences (e.g.\ the propagation rule at $\mathcal{O}(\delta^n)$ for $n \geq 1$) are addressed at Patch~0550; extensions to $\mathcal{O}(\delta^2)$ in the broader F.1 trajectory remain open at B.1.q6 (DEFERRED).
+\end{enumerate}
+
+\section{Cross-references and consequences}\label{sec:cross_references}
+
+\subsection{Use in Patch 0550's perturbation-theory propagation rule}\label{sec:use_in_0550}
+
+Patch~0550 Remark~3.3.2 cited Patch~0544 \S4.2 Theorem~4.2.1 in the context of perturbed-step zero-contribution analysis: the host-to-first-shell uniform projection identity ensures that the host-to-first-shell edge contributions to $\mathcal{O}(\delta)$ substrate-rate perturbations are uniform (Corollary~\ref{cor:uniform_first_order_perturbation}), which combined with Patch~0551 Theorem~3.1.1 (first-shell-to-first-shell perpendicularity giving zero contributions on first-shell-to-first-shell edges) completes the $\mathcal{O}(\delta^1)$ first-shell-locality result at Patch~0550 Corollary~3.2.1. With both dependencies now hardened at publication-grade (Patch~0551 + this Patch), Patch~0550 Remark~3.3.2 is closed at publication-grade rigor.
+
+\subsection{Equivalence to Patch 0541 §3.1 Identity I1}\label{sec:equivalence_with_I1}
+
+As noted at Remark~\ref{rem:equivalence_with_I1}, Theorem~\ref{thm:host_to_first_shell_projection} is equivalent in content to Patch~0541 \S3.1 Identity~I1. The present hardening therefore also serves as a publication-grade form of Identity~I1; future content citing Identity~I1 (e.g.\ in the F.1 algebraic-derivation chain at Patch~0541) may now cite the present theorem.
+
+\subsection{Capotauro v2.0 §3 structural parallel}\label{sec:capotauro_parallel}
+
+The Capotauro v2.0 \S3 (Patch~0446) Local-$I_h$-Preservation Theorem proof uses the identity $\uhat_i\cdot\nhat = -1/(2\phi)$ (in spatial-sector notation: $\hat{u}_i\cdot\nhat$ as the host-to-first-shell direction's projection onto the spatial chirality direction $\nhat$) to compute the perturbed host-to-first-shell distance under edge perturbations of amplitude $\epsilon$. The Capotauro derivation operates in the spatial sector and the present derivation operates in the temporal sector, but the underlying $-1/(2\phi)$ projection identity is the same and is now hardened at publication-grade in both sectors. The factor $-1/(2\phi)$ is therefore a cross-sector structural constant of the F.1 / Capotauro joint trajectory.
+
+\section{Conclusion --- the F.1 Layer 3 publication-grade trio is complete}\label{sec:conclusion}
+
+Theorem~\ref{thm:host_to_first_shell_projection}, with hypotheses (H1)--(H3) and supporting Lemmas~\ref{lem:G1} (G1, imported), \ref{lem:golden_ratio_identities} (golden-ratio identities), and~\ref{lem:chord_length} (chord length), gives the publication-grade hardening of Patch~0544 \S4.2 Theorem~4.2.1 (equivalent to Patch~0541 \S3.1 Identity~I1). The five exclusion classes (E1)--(E5) make explicit what is NOT covered.
+
+With this Patch, the F.1 sub-question Layer~3 stack publication-grade hardening trio is complete:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Patch~0550} hardened Theorem~3.3.3 + Corollary~3.3.4 (perturbation-theory propagation rule + shell-locality), at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}.
+\item \textbf{Patch~0551} hardened Theorem~4.1.1 (first-shell-to-first-shell edge-direction perpendicularity), at \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex}.
+\item \textbf{Patch~0552 (this paper)} hardens Theorem~4.2.1 (host-to-first-shell uniform projection), at \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex}.
+\end{itemize}
+The ``publication-grade hardening'' pending item from the Patch~0549 F.1 sub-question status framing is now fully closed for these three Layer~3 building-block theorems; the F.1 flagship paper assembly evaluation gate (LIVE since Patch~0549) is now substantively engageable with three publication-grade theorem artifacts as building blocks. The remaining pending items from the Patch~0549 status framing --- $\mathcal{O}(\delta^2)$ extension (B.1.q6 territory) and Layer~4 axiomatic derivation --- remain DEFERRED.
+
+The G1 import as exclusion class~E1 is shared across both Patch~0551 and the present Patch; a future ``G1 publication-grade hardening'' Patch (potentially Patch~0553 or bundled with G2 hardening) would close this remaining dependency at publication-grade rigor.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+Dover Publications, New York, 1973.
+
+\bibitem{abshier_capotauro_chiral_mechanism_sketch}
+T.~L.~Abshier,
+``The Capotauro Mechanism v2.0: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics,''
+CPP Flagship Paper Series, May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}

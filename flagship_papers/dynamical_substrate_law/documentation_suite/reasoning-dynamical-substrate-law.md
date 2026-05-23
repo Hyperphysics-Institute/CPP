@@ -2561,3 +2561,57 @@ The proof of Lemma 3.1.1 uses only Lemma 2.3.1 (G1, imported) + hypothesis (H1) 
 
 3. **The §40.4 E1 framing of G1 as a candidate for future hardening is honest but does not commit to a specific Patch.** G1's publication-grade hardening might be a standalone Patch (Patch 0553?), might be bundled with G2 (which Patch 0552 will similarly cite as a dependency), or might be addressed implicitly within a future flagship paper assembly Patch. The exclusion class records the dependency; it does not schedule the resolution.
 
+
+---
+
+## §41 Patch 0552 — Publication-grade hardening of Theorem 4.2.1 (THIRD AND FINAL of three F.1 Layer 3 building-block hardenings; trio complete)
+
+**Context.** Patches 0550 + 0551 hardened the first two of three theorems needed for full F.1 Layer 3 publication-grade stack closure: Theorem 3.3.3 + Corollary 3.3.4 (perturbation-theory propagation rule) at Patch 0550, and Theorem 4.1.1 (first-shell-to-first-shell perpendicularity, formerly Identity G3) at Patch 0551. Patch 0552 closes the trio with publication-grade hardening of Patch 0544 §4.2 Theorem 4.2.1 (host-to-first-shell uniform projection $\hat{u}_i\cdot\hat{n} = -1/(2\phi)$, formerly Identity I1 at Patch 0541 §3.1).
+
+### §41.1 What this Patch does, structurally
+
+Creates a NEW publication-grade .tex artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/host_to_first_shell_projection.tex` (265 lines of LaTeX, compiles to 7-page PDF, 274 KB, no undefined references after standard 2nd pdflatex pass). The artifact hardens Patch 0544 §4.2 Theorem 4.2.1 from sketch-document Layer 3 rigor to publication-grade rigor with explicit hypothesis tracking, explicit factoring of two supporting lemmas (golden-ratio identities + chord-length computation), substrate-physics consequence corollaries, and a five-class exclusion enumeration.
+
+**Why the .tex sits between Patches 0550 and 0551 in size** (265 vs 269 vs 207 lines): Theorem 4.2.1's proof uses four distinct golden-ratio identities (Lemma 2.4.1: $\phi^2 = \phi + 1$, $1/\phi = \phi - 1$, $1 - \phi = -1/\phi$, $1/\phi^2 = 2 - \phi$) plus a chord-length sublemma. Patch 0550's three-lemma structural argument was more architecturally involved; Patch 0551's two-step proof was the most compact. Patch 0552's algebraic computation needs the most explicit identity-factoring of the three.
+
+**Structure** (7 sections + bibliography): §1 Introduction with position in F.1 Layer 3 hardening sequence + main theorem statement + equivalence-with-Identity-I1 remark; §2 Preliminaries (600-cell setup + vertex-aligned Reading C + Lemma 2.3.1 G1 imported from Patch 0541 §3.1 + Lemma 2.4.1 golden-ratio identities with proof of all four from $\phi^2 = \phi + 1$); §3 Proof in two steps — Lemma 3.1.1 (host-to-first-shell chord length $|v_i - v_{\text{host}}| = 1/\phi$) + projection computation via golden-ratio chain; §4 Two substrate-physics corollaries (Corollary 3.4.1 uniform host-to-first-shell first-order substrate-rate perturbation; Corollary 3.4.2 closure of Patch 0550 Remark 3.3.2's Theorem 4.2.1 dependency); §5 Five exclusion classes E1–E5; §6 Cross-references (use in Patch 0550 + equivalence to Patch 0541 §3.1 Identity I1 + Capotauro v2.0 §3 spatial-sector parallel); §7 Conclusion explicitly noting the F.1 Layer 3 publication-grade trio is complete with this Patch.
+
+### §41.2 The chord-length and golden-ratio identity lemma factoring discipline
+
+Patch 0544 §4.2 stated and proved Theorem 4.2.1 in compact form: chord length computed inline, golden-ratio identities applied inline ("using $\phi^2 = \phi + 1$ and $1 - \phi = -1/\phi$"). Publication-grade hardening factored these into two explicit lemmas:
+
+- **Lemma 2.4.1 (Golden-ratio identities)**: states and proves all four identities used in the theorem proof, with each derived from $\phi^2 = \phi + 1$ as the single foundational input. The proof block is four short derivations, making each identity's algebraic provenance auditable.
+- **Lemma 3.1.1 (Host-to-first-shell chord length)**: states and proves $|v_i - v_{\text{host}}| = 1/\phi$ from G1 + (H2) + Lemma 2.4.1 identity (eq:gr4). Uniformity across $i \in \{1, ..., 12\}$ stated and justified.
+
+This is structurally parallel to Patch 0550's three-lemma reorganisation and Patch 0551's tangent-hyperplane lemma promotion: in all three Patches, computational steps that Patch 0544 stated inline are promoted to named, formally-stated lemmas. The discipline serves three purposes: (i) **auditability** — a reader can verify each step against its lemma; (ii) **modularity** — future content citing the chord-length result, the perpendicularity result, or the projection result can cite the respective lemma rather than re-deriving inline; (iii) **honesty about dependencies** — Lemma 2.4.1's explicit dependence on $\phi^2 = \phi + 1$ + four standard golden-ratio identities makes clear that the proof reduces to elementary algebraic manipulations of the golden-ratio defining quadratic.
+
+### §41.3 Closure of Patch 0550 exclusion class E5 (both outstanding dependencies)
+
+Patch 0550 §6 E5 ("underlying graph-theoretic claims about $\Gamma_{600}$ taken as given") cited Patch 0544 Theorems 4.1.1 + 4.2.1 as the two outstanding sketch-document Layer 3 dependencies. Patch 0551 closed E5 for Theorem 4.1.1. **This Patch closes E5 for Theorem 4.2.1**, completing the publication-grade closure for both dependencies. Corollary 3.4.2 of the Patch 0552 .tex artifact records the closure explicitly: "Together with Patch 0551 Theorem 3.1.1, the two outstanding dependencies in Patch 0550 exclusion class E5 are both closed."
+
+**Consequence for cross-paper citations:** Future content citing Patch 0550 may now use Patch 0551 + Patch 0552 in place of the unhardened Patch 0544 §4.1 + §4.2 sources. Patch 0550's exclusion class E5 still exists in its .tex (per §17.6 (8) immutability), but its content has been substantively addressed forward-facing.
+
+### §41.4 F.1 Layer 3 publication-grade trio complete; flagship paper assembly substantively engageable
+
+With Patch 0552 landing, the F.1 sub-question Layer 3 stack publication-grade hardening trio is complete:
+
+| Patch | Hardens | Artifact |
+|---|---|---|
+| 0550 | Theorem 3.3.3 + Corollary 3.3.4 (perturbation-theory propagation rule + shell-locality) | `hardened_theorems/perturbation_locality_propagation.tex` (269 lines, 8-page PDF) |
+| 0551 | Theorem 4.1.1 (first-shell-to-first-shell perpendicularity / Identity G3) | `hardened_theorems/first_shell_perpendicularity.tex` (207 lines, 6-page PDF) |
+| 0552 (this Patch) | Theorem 4.2.1 (host-to-first-shell uniform projection / Identity I1) | `hardened_theorems/host_to_first_shell_projection.tex` (265 lines, 7-page PDF) |
+
+**Trio totals:** 741 lines of LaTeX across three .tex artifacts, 21 PDF pages combined, three publication-grade theorems forming a self-contained substrate-locality argument chain for the F.1 sub-question at Layer 3.
+
+**Operative consequence for the F.1 trajectory.** The "publication-grade hardening" pending item from the Patch 0549 F.1 sub-question status framing is now FULLY CLOSED for these three Layer 3 building-block theorems. The remaining two pending items from the Patch 0549 status framing — $\mathcal{O}(\delta^2)$ extension (B.1.q6 territory) and Layer 4 axiomatic derivation — remain DEFERRED.
+
+**F.1 flagship paper assembly evaluation gate.** LIVE since Patch 0549; previously the gate was engageable but lacking three concrete publication-grade theorem artifacts as building blocks. With this Patch's landing, the gate is now SUBSTANTIVELY engageable: three publication-grade .tex artifacts in `hardened_theorems/` are available as direct section/subsection inputs to an eventual F.1 flagship paper. Engagement remains Thomas's explicit decision-call per `templates/paper_completion_checklist.md`; the substantive readiness threshold is now met.
+
+### §41.5 Self-checkpoint — three places §41.1–§41.4 could overstate
+
+1. **The §41.4 "trio complete" framing is honest within the scope of "publication-grade hardening of three specific F.1 Layer 3 theorems" but should not be conflated with "F.1 Layer 3 is fully publication-grade closed."** The three theorems hardened here are the load-bearing identities for the substrate-locality content; other F.1 Layer 3 content (algebraic-derivation chain at Patch 0541, framework axiomatisation at Patch 0542, matter-state-independent derivation at Patch 0543, full 4D curl Schur decomposition at Patch 0546, etc.) remains at sketch-document Layer 3 rigor. The trio complete here represents the substrate-locality-argument-chain three-theorem subset; a fully publication-grade F.1 Layer 3 paper assembly would also require hardening of those other Layer 3 promotion targets, or at least their integration into the F.1 flagship paper at a consistent rigor level.
+
+2. **The §41.2 "lemma factoring discipline" framing is honest as a pattern observation across three Patches but should not be cited as established programme-methodology until the methods-catalogue audit Patch evaluates it.** With this Patch, the hypothesis-tracking + lemma-factoring + scope-bounded-exclusion-enumeration pattern is now exercised three times in the F.1 trajectory (Patches 0550 + 0551 + 0552). This is the first instance where the pattern's threshold for METH-G governance catalogue entry per §28.7 (multiple instances in same trajectory + explicit programme-pattern significance) has plausibly been crossed. The forthcoming methods-catalogue audit Patch is the appropriate venue for evaluating and potentially registering the pattern; the §41.2 framing pre-stages this evaluation without pre-empting it.
+
+3. **The §41.4 "F.1 flagship paper assembly substantively engageable" framing is honest at the readiness-threshold level but engagement remains gated.** Substantive engageability means the building blocks are available; it does not mean assembly is anticipated within any particular timeline, and it does not lift the decision-call requirement per `templates/paper_completion_checklist.md`. Three engageable options post-this-Patch — (A) immediate F.1 flagship paper assembly engagement, (B) programme-documentation-audit Patch to clean up accumulated drift, (C) other trajectory openings — are all Thomas's decision-call.
+
