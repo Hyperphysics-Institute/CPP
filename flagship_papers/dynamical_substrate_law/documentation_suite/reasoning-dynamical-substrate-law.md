@@ -1925,3 +1925,77 @@ Audit performed AT this Patch's authoring per §29.4 codified discipline. No def
 
 (iii) "Methods catalogue audit at this Patch" framing in §30.7: the audit performed here confirms no new entries at this Patch under same-derivation-different-layer criterion. The methodological observations registered at Patch 0541a §29.5 (C1 stale-base discipline + C2 apply-script vs git am tradeoff) remain candidates for METH-L2-010, deferred to a dedicated catalogue audit Patch. The §30.7 audit is bounded to methods used IN THIS PATCH's physics work, not to the broader methodological observations from the Patch 0541 → Patch 0541a recovery cycle.
 
+
+
+## §31 — Session 140 Patch 0543: B.1.q1 matter-state independent derivation — third Layer 3 promotion, Priority 1 chain Target 2 → Target 3 CLOSED
+
+### §31.1 The decision to authorize Target 3 as Patch 0543
+
+Patch 0543 closes Target 3 (B.1.q1 matter-state independent derivation at Layer 3) — the second item in the Priority 1 chain Target 2 → Target 3 per Patch 0540 scoping document §4.1. Thomas's authorization at Session 140 continuation following Patch 0542's apply ("Please proceed: Patches 0540 → 0541+ → reviewer-pause → status upgrade arc continues") confirmed Target 3 as the recommended next gate per §15.7's gated-trajectory discipline.
+
+Target 3 is the natural Patch 0543 selection because Patch 0542 just established the prerequisite framework axiomatization (Target 2): AC-1, $P_{TI}$ rep theory with explicit projector formulas, Theorem 4.0 (Minimal Algebraic Realization). With these in hand, Target 3 builds the matter-state $I_h$-covariance derivation on top — closing the Priority 1 chain.
+
+### §31.2 What this Patch substantively does
+
+Patch 0543 derives matter-state $I_h$-covariance INDEPENDENTLY of Reading C framework homogeneity — replacing the Patch 0537 §13.7 Step 2 framework-inheritance argument that Patch 0538 §14.1 flagged as cross-reviewer-convergent calibration concern.
+
+The independent derivation chain (§4 of the Layer 3 document):
+- **AC-1** (Patch 0542 §2.4) gives finite-dim matter-state Hilbert space at $v_{\text{host}}$.
+- **Induced $I_h$-action $\Pi$ on $\mathcal{H}_{\text{matter}}^{v_{\text{host}}}$** is constructed structurally from the matter-state construction (states as products/sums of primitive contents) + how $I_h$ permutes primitive contents (first-shell vertices, host-to-first-shell edges). $\Pi$'s well-definedness does NOT require framework homogeneity as a separate axiom — it is a structural consequence of the construction.
+- **Maschke's theorem** (Patch 0542 §3.2) applied to $\Pi$ gives the $I_h$-isotypic decomposition of $\mathcal{H}_{\text{matter}}^{v_{\text{host}}}$.
+
+§3 of the Layer 3 document develops the explicit 12-vertex permutation rep decomposition under $I_h$: $\pi_{12} = A_g \oplus T_{1u} \oplus T_{2u} \oplus H_g$ (1+3+3+5 = 12), via character orthogonality. The character $\chi_{12}$ on each conjugacy class is computed geometrically (e.g., $\chi_{12}(\sigma) = 4$ verified via standard icosahedron coordinates $(0,\pm 1,\pm\phi)$, where the $xy$-plane reflection fixes the 4 vertices $(\pm 1, \pm\phi, 0)$).
+
+The substrate chirality operator $\hat{C}^{\text{thermo}} = \sigma_{cycle}\cdot\hat{C}_{\text{geom}}$ is classified under joint $I_h \times P_{TI}$ as $A_g \otimes \mathbf{T}$ (§6.2). The Wigner-Eckart factorization yields the Matrix-Element-Layer $I_h$-Covariance Theorem at Layer 3 (§7.1) — improved from Patch 0537 §13.6 by Step 2 independent derivation.
+
+§8.3 computes the Schur-orthogonality CG factor explicitly: $d_\Gamma/V_{\text{cage}} = 2/12 = 1/6$ — completing Patch 0537 §13.9's deferred Layer 3 task. Boxed result: $|M^{\text{thermo}}| = (1/6)\cdot|\sigma_{cycle}\cdot\delta|$, matching Patch 0526 §13.10 result with explicit Layer 3 derivation.
+
+### §31.3 The independent-derivation framing decision
+
+Three alternative framings for Layer 3 matter-state $I_h$-covariance derivation were considered:
+
+(a) Derive matter-state $I_h$-covariance from full Layer 4 axiomatic foundation — rejected as Layer 4 territory.
+
+(b) Retain Patch 0537 §13.7 Step 2's framework-inheritance argument and add explicit Schur factor as the only Layer 3 work — rejected because Patch 0538 §14.1 specifically flagged the framework-inheritance argument.
+
+(c) Replace Reading C entirely with non-Reading-C matter-state construction — rejected because Reading C is a load-bearing framework commitment programme-wide.
+
+Framing chosen: Reading C remains used at the CONSTRUCTION level (matter states built from first-shell content); the Layer 3 promotion removes its use at the COVARIANCE level (matter states transforming covariantly under $I_h$), replacing with Maschke + AC-1 + induced action.
+
+### §31.4 What this Patch does NOT do
+
+(i) Does NOT promote $1/6$ Schur factor to Findings registry (intermediate Layer 3 result).
+(ii) Does NOT close Target 4-7 (each its own gated trajectory).
+(iii) Does NOT derive AC-1 from CPP axioms A1-A11 alone (Layer 4 territory).
+(iv) Does NOT axiomatize $\hat{n}$ as unique 4D chirality direction (Layer 4 / long-term programme target).
+(v) Does NOT modify Patches 0531-0542 immutable content.
+(vi) Does NOT trigger F.1 sub-question status change.
+(vii) Does NOT trigger flagship paper assembly trigger.
+
+### §31.5 Priority 1 chain CLOSED — METH-L2-009 empirically validated
+
+Both cross-reviewer-convergent calibration items from Patch 0538 (§14.1 + §14.2 — both flagged by ChatGPT AND Copilot per §17.5 load-bearing scope-overclaim signal) are now substantively Layer-3-resolved:
+
+- **§14.2** resolved at Patch 0542 (Target 2): finite-dim scope qualifier promoted to load-bearing AC-1.
+- **§14.1** resolved at this Patch 0543 (Target 3): framework-inheritance scope removed by Maschke + AC-1 + induced action.
+
+The coupled resolution is the predicted behavior of METH-L2-009 (cross-target-dependency-chain in multi-question trajectory execution) — originally registered at Patch 0540i, originating instance Patch 0534 B.1.q3 + B.3.q1 coupled closure at sketch Layer 2, generalized instance Patch 0540 Layer 3 promotion scoping. This Patch is the **third concrete instance** of METH-L2-009 application, AND the **first CLOSED-CHAIN instance** — empirically validating the methodology.
+
+### §31.6 The four-artifact handover convention sustained
+
+The Patch 0541/0542 four-artifact convention is sustained at Patch 0543: substantive Layer 3 document (631 lines, 15 sections) + Tier 4 §31 (this) + Tier 3 Vignette 18 + Tier 2 transaction 028 + registry updates.
+
+### §31.7 Methods catalogue audit at Patch 0543 — no new entries
+
+Per §29.5 candidate C1 (codified at Patch 0541a), Step E audit performed AT this Patch's authoring.
+
+Methods used: (i) Maschke's theorem on $I_h$ (§4.3) — same physics derivation context as Patches 0536/0542. (ii) Character orthogonality on $I_h$ to compute $\pi_{12}$ decomposition (§3.3) — standard rep theory; structurally parallel to Patch 0542 §3.1 application to $P_{TI}$ but on different finite group ($I_h$ vs $P_{TI}$). Same trajectory, different target. (iii) Wigner-Eckart factorization on $I_h \times P_{TI}$ (§7.2) — standard, already used at Patch 0526 §13 + Patch 0537 §13. (iv) Schur-orthogonality formula $d_\Gamma/V_{\text{cage}}$ (§8.3) — standard, parallel to Capotauro v2.0 §20.7 / Finding C-W40.
+
+**Verdict: no new METH entries at this Patch.** While character orthogonality on $I_h$ at §3.3 is potentially distinct context from Patch 0542's $P_{TI}$ application, both are at sketch-document Layer 3; both within F.1 trajectory's same load-bearing argument arc. The METH catalogue threshold "≥1 other physics-derivation context" applies more naturally to applications spanning different flagship trajectories or different layers; same-trajectory-different-target evidence does not yet satisfy the threshold. Deferred pending future application in different flagship trajectory.
+
+### §31.8 Self-checkpoint — three places §31 could overstate
+
+(i) "Independent derivation" framing: at COVARIANCE level only; Reading C still used at CONSTRUCTION level.
+(ii) "Substantively resolves Patch 0538 §14.1" framing: at sketch-document Layer 3; full Layer 4 resolution deferred.
+(iii) "Priority 1 chain CLOSED" framing: only Priority 1 closed; Targets 4-7 remain across Priority 2/3 + dependent positions.
+
