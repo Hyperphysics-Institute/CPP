@@ -2356,3 +2356,43 @@ Three places this Tier 4 section could overstate:
 
 3. **The §36.6 Observation 3 "scope-boxing is the load-bearing principle" could read as elevating governance over mathematics.** It does not — Patch 0544 §6 Theorem 6.1 remains the substantive theorem source. Scope-boxing is the **calibration-cycle-specific** load-bearing principle, not a general epistemic principle. In a different cycle (e.g., one where substantive theorems were challenged on derivation steps rather than scope claims) the calibration cycle would have different load-bearing content. The Observation should not later be summarized as "scope-boxing > theorem-proving."
 
+
+---
+
+## §37 Patch 0548a — Target 7 standalone closure artifact (closure-governance normalization)
+
+**Context.** Patch 0548 §3.1 committed to this Patch as the second of the three-Patch closure sequence (0547 checkpoint → 0548 calibration response → 0548a Target 7 closure → 0549 status upgrade). The C1 cross-reviewer-convergent concern from Copilot and ChatGPT (recorded at Patch 0548 §3.1) required a standalone closure artifact for Target 7 to restore artifact symmetry across the seven Layer 3 promotion targets and to repair the closure-governance asymmetry created by Patch 0546 §8's retroactive recognition.
+
+### §37.1 What this Patch does, structurally
+
+Creates a NEW Layer 3 promotion document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~210 lines). Five-section structure: §0 firewall + 12 anti-priorities; §1 Layer 3 promotion context citing the four immutable source materials (Patch 0540 §2.7 + Patch 0544 §6 + Patch 0546 §8 + Patch 0548 §3.1); §2 criteria-to-clause mapping table verifying that Patch 0544 §6 Theorem 6.1 satisfies all three Target 7 promotion criteria from Patch 0540 §2.7; §3 scope-boundary statement (the primary section per ChatGPT) with verbatim ChatGPT phrasing plus a five-item exclusion list; §4 "Why retroactive recognition alone was judged insufficient" subsection (verbatim ChatGPT-requested title); §5 self-checkpoint and closure summary.
+
+**What the Patch deliberately does NOT do.** It does not re-derive Theorem 6.1 — Patch 0544 §6 remains the substantive theorem source. It does not modify Patch 0544's content, Patch 0546 §8's retroactive-recognition paragraph, the Patch 0547 checkpoint document, or the Patch 0548 calibration response feedback record. It does not introduce new mathematics — no new identities, theorems, lemmas, or proof steps. The Patch is **additive closure-governance normalization**, not a mathematical Patch.
+
+### §37.2 Why the scope-boundary statement is the load-bearing content
+
+The §3 scope-boundary statement is the primary content of the Patch per ChatGPT's explicit Q2 instruction: "the most important section is not the theorem itself, but the scope-boundary statement. I would make that explicit and unavoidable." This is the operationally important observation worth recording at Tier 4 depth.
+
+The substantive Layer 3 work for Target 7 was already done at Patch 0544 §6. What was missing — and what made the closure feel governance-weak per Copilot + ChatGPT — was honest scope demarcation. Target 7's closure status implies coverage of "perturbation-theory propagation" as an abstract category; without scope demarcation that implication is over-broad. ChatGPT's verbatim phrasing "perturbative locality under Mechanism A and the framework-local current construction" bounds the implication to exactly what was demonstrated: locality of $\vec{j}_{DI}^{net}(v_*)$ at $\mathcal{O}(\delta^n)$ under the framework's parametric form of Mechanism A and its current construction.
+
+The exclusion list ($\mathcal{O}(\delta^2)$ / nonlinear-Mechanism-A / alternative-current-constructions / Layer 4 / publication-grade hardening) makes explicit what is NOT inside Target 7's closure. This is what makes the closure honest: a future reader (or future Opus instance) audit-checking the F.1 trajectory will find Target 7 closed at sketch-document Layer 3 with a scope-boundary statement that prevents over-claim about what that closure implies.
+
+ChatGPT's framing of this principle was direct: "**That scope-boxing is the real governance repair.**" Patch 0548a's substance is therefore scope-boxing, not theorem-proving. This is the Patch's identity at Tier 4.
+
+### §37.3 What this Patch does NOT do (and why those non-actions matter)
+
+1. **Does NOT re-derive Theorem 6.1.** Re-derivation would create avoidable duplication (ChatGPT: "Option (3) would overshoot the issue and create avoidable duplication"). Patch 0544 §6 is canonical; this Patch references it.
+2. **Does NOT modify any prior artifact.** Per §17.6 (8) immutability codified at Patch 0539a. All upstream artifacts preserve their original content. The §2 criteria-to-clause mapping is an additive verification, not a retroactive edit.
+3. **Does NOT change F.1 sub-question status.** Patch 0549 is the status-change Patch. This Patch is the second-of-three midpoint between calibration response and status upgrade.
+4. **Does NOT promote Theorem 6.1 to the Findings registry or theorem registry.** Such promotion requires a dedicated registry-entry Patch per `templates/relationship_protocol.md`. Theorem 6.1 remains at Layer 3 promotion document status, identical to the other six Layer 3 promotion documents' featured identities and theorems.
+5. **Does NOT trigger F.1 flagship paper assembly evaluation.** That gate becomes live only after Patch 0549 closes the Layer 3 reviewer-pause cycle officially.
+6. **Does NOT update `future_projects.md` F.1 entry tail — DEFERRED with discrepancy noted (same as Patch 0548).** Patch 0547 §4 specification's deliverable list item (f) carries forward to this Patch's deliverable list, but the underlying `future_projects.md` file state (last-updated 16 April 2026; no F.1 entry present) makes the deliverable infeasible without inventing file content for an absent section. Discrepancy cross-referenced to Patch 0548 §36.5 documentation; same future-window programme-documentation-audit task. Five-of-six deliverables shipped (NEW Target 7 closure document + Tier 4 §37 + Vignette 24 + Transaction 034 + `research_frontier.md` prepend); deliverable (f) DEFERRED.
+
+### §37.4 Self-checkpoint — three places §37.1–§37.3 could overstate
+
+1. **The §37.2 "scope-boxing is the load-bearing content" claim could be over-cited as a general epistemic principle.** Patch 0548 §36.6 Observation 3 already flagged this risk at the Patch 0548 calibration cycle level. The principle is cycle-specific (the calibration response cycle's concerns were about scope claims, not derivation steps); in a different cycle where reviewers flagged derivation errors, the load-bearing content would be different. The §37.2 framing is honest about this Patch but should not be summarized later as "scope-boxing > theorem-proving" as a programme principle.
+
+2. **The §37.3 (6) deferral-with-discrepancy framing carries forward the Patch 0548 §36.5 honest-deferral pattern, but the discrepancy itself is not getting closer to resolution at this Patch.** Both Patch 0548 and this Patch defer the `future_projects.md` F.1 entry deliverable with cross-reference. A dedicated programme-documentation-audit Patch is the appropriate venue to resolve the discrepancy; this Patch and Patch 0548 mark the discrepancy clearly for that future Patch but do not themselves resolve it. The §37.3 (6) wording should not be read as making programmatic progress on the discrepancy.
+
+3. **The §37.1 "five-section structure" enumeration could imply the Patch's content is exhaustive at Layer 3.** It is not — Theorem 6.1's substantive content (the four-step proof at Patch 0544 §6) is upstream and not duplicated here. A reader looking at this Patch alone for Target 7's substantive content would find only the criteria-to-clause mapping at §2; the actual theorem statement and proof are at Patch 0544 §6. The §37.1 enumeration is about THIS Patch's content (closure-governance normalization), not Target 7's total substantive content.
+

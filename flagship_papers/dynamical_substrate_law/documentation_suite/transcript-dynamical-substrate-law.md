@@ -135,3 +135,41 @@
 
 **Self-checkpoint at this transaction:** This transaction's reviewer mapping (A = Copilot, B = Grok, C = ChatGPT) reflects Thomas's confirmation at Session 140 close; future-window readers should verify against the original feedback record §1 if any ambiguity arises. The convergent-item identification (C1–C5) reflects strict A+C concurrence per relationship_protocol.md; the "Grok's positive verdict is non-overriding" framing is correct per discipline but should not be summarized later as "Grok was dismissed" — Grok's signal is recorded at §4 of the feedback record as a non-binding data point and informs the polish-items DEFERRAL.
 
+
+---
+
+## Transaction 034 — Patch 0548a (standalone Target 7 closure artifact; closure-governance normalization)
+
+**Date:** 23 May 2026 (Session 141 continuation)
+**Commit (anticipated):** assigned at push (this Patch lands via single .sh apply script with `EXPECTED_BASE=a9b24f5` = Patch 0548; substantive base remains Patch 0544 / `0788296` for Theorem 6.1)
+**Branch:** main
+**Patch type:** Closure-governance normalization — standalone Target 7 closure artifact creation + four-artifact deliverables (Tier 4 §37 + Vignette 24 + Transaction 034 + research_frontier.md prepend). NOT new mathematics; NO re-derivation of Theorem 6.1. Anti-pattern explicitly avoided per ChatGPT Q2 follow-up.
+
+**Trigger:** Patch 0548 §3.1 cross-reviewer-convergent C1 calibration response committed to this Patch as the second of the three-Patch closure sequence (0547 checkpoint → 0548 calibration response → 0548a Target 7 closure → 0549 status upgrade).
+
+**Substantive theorem source:** Patch 0544 §6 Theorem 6.1 — Perturbative-Locality Propagation Rule: $\vec{j}_{DI}^{net}(v_*)$ at $\mathcal{O}(\delta^n)$ depends only on edges within graph-distance $n$ of $v_*$ in the 600-cell edge graph. Patch 0544 content preserved as-is per §17.6 (8) immutability; this Patch is additive.
+
+**Files modified by this Patch (5 file deltas applied + 1 deferred):**
+1. CREATE — `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~210 lines, 5 sections + §0 firewall with 12 anti-priorities).
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §37, 4 subsections — smaller scale than §36's 8 subsections, matching the smaller scope of governance-normalization Patches).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 24).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 034, this entry).
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0548a entry; Patch 0548 entry demoted to `Earlier **Last updated:**`).
+6. DEFERRED — `future_projects.md` F.1 entry tail append. Same discrepancy as Patch 0548; cross-referenced to Patch 0548 §36.5 + Tier 4 §37.3 (6); future-window programme-documentation-audit task carries forward.
+
+**New Layer 3 promotion document structure (5 sections + §0 firewall):**
+- §0: Firewall + 12 anti-priorities (NO re-derivation of Theorem 6.1; NO modification of Patches 0544/0546/0547/0548; NO new mathematics; NO F.1 status change; NO Findings/theorem registry promotion; NO flagship paper assembly; NO F.2/F.3 trajectory opening; NO Layer 4 work; NO $\mathcal{O}(\delta^2)$ extension)
+- §1: Layer 3 promotion context (Patch 0540 §2.7 + Patch 0544 §6 + Patch 0546 §8 + Patch 0548 §3.1)
+- §2: Criteria-to-clause mapping table — three Target 7 criteria from Patch 0540 §2.7 mapped one-to-one to Patch 0544 §6 Theorem 6.1 clauses
+- §3 (primary section): Scope-boundary statement with verbatim ChatGPT phrasing "perturbative locality under Mechanism A and the framework-local current construction at first order in δ" + five-item exclusion list
+- §4: "Why retroactive recognition alone was judged insufficient" (verbatim ChatGPT-requested title; "closure provenance and auditability" framing per ChatGPT wording caution)
+- §5: Self-checkpoint (three overstate-risks) + closure summary
+
+**Methods catalogue audit verdict (§29.4 codified discipline):** NO NEW METH entries at this Patch. Patch 0548a is closure-governance normalization; no new computational methods, audit procedures, or workflow patterns are introduced that warrant catalogue entries. The "retroactive-recognition-followed-by-dedicated-closure-Patch" governance pattern established at §4 of the new document is a single-instance observation and does not yet satisfy the threshold for METH-G registry per §28.7 precedent. C1+C2 candidate entries from Patch 0541a remain DEFERRED. The §5.3 anti-bundling-extension-to-calibration-responses observation from Patch 0548 §36.7 also remains DEFERRED.
+
+**Forward queue post-Patch 0548a:**
+- Priority 1: **Patch 0549 — F.1 trajectory Layer 3 status upgrade Patch.** No new file; status framing per convergent A+C verbatim recommendation: "STRUCTURALLY-GROUNDED SKETCH-DOCUMENT LAYER 3 CLOSURE under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\mathcal{O}(\delta^2)$ extension (B.1.q6), and publication-grade hardening." Parallel to Patch 0539 sketch Layer 2 status upgrade structure. Layer 3 reviewer-pause cycle officially closes at this Patch.
+- Post-Patch 0549: F.1 flagship paper assembly evaluation gate becomes live; F.2/F.3 trajectory opening considerations; Layer 4 deferral status review; JUNO peer-review update integration when published; future_projects.md F.1 entry discrepancy resolution as background programme-documentation-audit task.
+
+**Self-checkpoint at this transaction:** Patch 0548a is the first concrete instance of the "retroactive-recognition-followed-by-dedicated-closure-Patch" governance pattern. The pattern is recorded forward-facing in §4 of the new document and at Tier 4 §37 but should not be cited as established discipline until at least one additional instance demonstrates the pattern in a different trajectory. The discrepancy reference at deliverable (6) carries forward from Patch 0548 §36.5 without resolution at this Patch; both Patches now show the discrepancy in their deliverable lists, accumulating evidence for the future programme-documentation-audit Patch but not progressing toward fix.
+
