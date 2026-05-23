@@ -1999,3 +1999,66 @@ Methods used: (i) Maschke's theorem on $I_h$ (§4.3) — same physics derivation
 (ii) "Substantively resolves Patch 0538 §14.1" framing: at sketch-document Layer 3; full Layer 4 resolution deferred.
 (iii) "Priority 1 chain CLOSED" framing: only Priority 1 closed; Targets 4-7 remain across Priority 2/3 + dependent positions.
 
+
+
+## §32 — Session 140 Patch 0544: B.1.d substrate-locality temporal extension at Layer 3 — fourth Layer 3 promotion, Capotauro C-W39-style rigorous proof
+
+### §32.1 The decision to authorize Target 4 as Patch 0544
+
+Patch 0544 closes Target 4 (B.1.d substrate-locality temporal extension at Layer 3) — the Priority 3 independent target per Patch 0540 §4.1. Thomas's authorization at Session 140 continuation following Patch 0543's apply confirmed Target 4 as the recommended next gate per §15.7's gated-trajectory discipline.
+
+Target 4 is the second-largest-value remaining Layer 3 target after the Priority 1 chain, and a load-bearing prerequisite for Target 5 (B.3.q1 Substrate-Locality Unification corollary at Layer 3), which piggybacks on Target 4 per Patch 0540 §2.5.
+
+### §32.2 What this Patch substantively does
+
+Patch 0544 promotes Patch 0534 §10's sketch Layer 2 Substrate-Locality Temporal Extension Theorem to sketch-document Layer 3 by providing the "additional rigor work" that Patch 0534 §10.10 self-checkpoint (i) explicitly flagged.
+
+Three load-bearing components:
+
+(i) **Algebraic derivation of Identity G3** ($\hat{e}_{ij}\cdot\hat{n} = 0$) from 600-cell primitives + Patch 0541 Identity I1 + Reading C, five steps: first-shell vertex parameterization $v_k = v_{\text{host}} + \phi^{-1}\hat{u}_k$; difference vector $v_j - v_i = \phi^{-1}(\hat{u}_j - \hat{u}_i)$; uniformity-cancellation $(\hat{u}_j - \hat{u}_i)\cdot\hat{v}_{\text{host}} = 0$; $(v_j - v_i)\cdot\hat{n} = 0$; normalize to $\hat{e}_{ij}\cdot\hat{n} = 0$. Replaces Patch 0534 §10.4 Step 1's $\sim 10^{-9}$ numerical verification.
+
+(ii) **Citation of Patch 0541 Identity I1** for $\hat{u}_j\cdot\hat{n} = -1/(2\phi)$ uniform. Substitution into Mechanism A gives uniform rate perturbation $\delta r = -r_0\delta/(2\phi)$ outgoing.
+
+(iii) **Formal Perturbative-Locality Propagation Rule** (Theorem 6.1): $\vec{j}_{DI}^{net}(v_*)$ at $\mathcal{O}(\delta^n)$ depends only on edges within graph-distance $n$ of $v_*$. Four-step proof. Specialized to $\mathcal{O}(\delta^1)$ at $v_*=v_{\text{host}}$: only 12 host-to-first-shell edges contribute. Replaces Patch 0534 §10.4 Step 3's structural argument.
+
+### §32.3 The "Capotauro C-W39-style proof" framing decision
+
+Three alternative framings considered:
+
+(a) **Promote to Layer 4 directly** — rejected as Layer 4 territory (would require deriving G1, G2, 600-cell structure, Reading C from CPP axioms A1-A11 alone).
+
+(b) **Algebraicize numerical verifications but leave perturbative-locality as structural argument** — rejected because Patch 0534 §10.10(i) explicitly identified the perturbative-locality argument as load-bearing.
+
+(c) **Replicate Capotauro v2.0 §3's flagship-paper-grade proof exactly** — rejected because §3 is publication-grade Layer 3; this Patch's promotion is sketch-document Layer 3.
+
+Framing chosen: full Capotauro C-W39 proof methodology at sketch-document Layer 3 rigor — matching Patches 0541/0542/0543 standard.
+
+### §32.4 What this Patch does NOT do
+
+(i) Does NOT promote substrate-locality theorem to Findings registry.
+(ii) Does NOT close Target 5-7.
+(iii) Does NOT extend to $\mathcal{O}(\delta^2)$ (B.1.q6 territory).
+(iv) Does NOT modify Patches 0531-0543 immutable content.
+(v) Does NOT trigger F.1 sub-question status change.
+(vi) Does NOT trigger flagship paper assembly trigger.
+
+### §32.5 Programme-level milestone — half the Layer 3 promotion arc complete
+
+Four of seven Layer 3 promotion targets closed: Target 1 (Patch 0541), Target 2 (Patch 0542), Target 3 (Patch 0543), Target 4 (this Patch). Three targets remain: 5, 6, 7. Aggregate remaining 4-12 sessions per Patch 0540 §4.1 estimate.
+
+### §32.6 The four-artifact handover convention sustained
+
+Layer 3 document (517 lines, 15 sections) + Tier 4 §32 (this) + Tier 3 Vignette 19 + Tier 2 transaction 029 + registry updates.
+
+### §32.7 Methods catalogue audit at Patch 0544 — no new entries
+
+Methods used: (i) algebraic identity derivation from 600-cell primitives — parallel to Patch 0541 I1 derivation, same physics context. (ii) Perturbation-theory power-series expansion at §6 Theorem 6.1 — potentially new perturbation-order-bound method. (iii) Cross-reference to Capotauro v2.0 §3 — methodology inheritance.
+
+Verdict: no new METH entries. The §6 perturbation-theory propagation rule is potentially distinct but same-trajectory evidence does not yet satisfy threshold per §28.7. Deferred pending future application in different flagship trajectory.
+
+### §32.8 Self-checkpoint — three places §32 could overstate
+
+(i) "Capotauro C-W39-style proof at Layer 3" framing: methodological parallel; not publication-grade.
+(ii) "Substantively resolves Patch 0534 §10.10(i)" framing: at sketch-document Layer 3; full Layer 4 deferred.
+(iii) "Fourth Layer 3 promotion" framing: count = target-closing Patches (0541, 0542, 0543, 0544); 0540 + 0541a not counted.
+
