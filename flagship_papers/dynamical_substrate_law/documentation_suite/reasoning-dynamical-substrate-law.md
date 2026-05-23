@@ -2684,3 +2684,62 @@ The §4 sequence breaks paper assembly into ~17 bounded Patches (0554 through 05
 
 3. **The §42.2 "load-bearing ChatGPT principle" framing is honest as scoping discipline but the principle's enforcement is a perpetual risk throughout assembly.** Anti-erasure checks at each assembly Patch's Tier 4 §N reasoning depend on careful self-audit; subtle erasure (rounding qualifiers, smoothing repetition) is the natural failure mode. The scoping document records the discipline + the self-checkpoint risk; actual preservation across 13+ assembly Patches requires sustained discipline that the scoping document cannot guarantee.
 
+
+---
+
+## §43 Patch 0554 — F.1 flagship paper skeleton creation (first .tex artifact of assembly arc)
+
+**Context.** Patch 0553 opened the F.1 flagship paper assembly multi-Patch arc via scoping document at `sketches/F1_flagship_paper_assembly_scoping.md`. Patch 0554 executes §4.1 of the scoping document: paper skeleton creation. The skeleton is the first `.tex` artifact for the flagship paper itself (separate from the three publication-grade theorem `.tex` artifacts in `hardened_theorems/` which are integration inputs, not the paper). After preflight scoping decision between (A) paper skeleton and (B) programme-documentation-audit Patch — with the audit Patch found to be substantial (600-800 lines of content across three deferred items) — Claude judged (A) the cleaner option for this Patch under Thomas's "your call" authorization, with the audit becoming a later Patch (anticipated 0555 or later, certainly before Patch 0560 where Patch 0550 content integrates with citation references).
+
+### §43.1 What this Patch does, structurally
+
+Creates a NEW file `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (338 lines LaTeX) at the **root** of the paper folder per the corpus convention (Thomas's Session 142 clarification: `.tex` files at root, with `hardened_theorems/` subfolder as the first exception). The skeleton contains:
+
+- Full preamble matching chirality_continuum + SF-4 convention: documentclass + packages (amsmath, tikz, hyperref, etc.) + theorem environments (theorem/proposition/lemma/corollary/conjecture/definition/remark/claim/openproblem)
+- Notation conventions inherited from Capotauro v2.0 + SF-4 + the F.1 hardened theorem artifacts (e.g., $\phig$, $\nhat$, $\vhost$, $\jDInet$, $\omegaPCD$, $\sigcycle$, $\Mthermo$, $\Ih$, $\PTI$)
+- Title: "The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading C in the 600-Cell"
+- Author block: Dr. Thomas Lee Abshier, ND (Hyperphysics Institute) with AI co-authorship attribution (Claude Opus as primary mathematical co-author; ChatGPT, Copilot, Grok for review and calibration)
+- Abstract draft (~250 words; from scoping doc §2.4) with forward-references to four theorems (host-first-shell-projection, first-shell-perpendicularity, perturbation-locality, substrate-locality) and three open problems (delta-squared, layer4-mechanism-a, g1-hardening)
+- Table of contents
+- Ten section headers (\section{...}\label{sec:...}) with no body content — each section has a multi-line LaTeX comment placeholder noting which Patch will add the body and the anticipated sub-structure
+- Empty theorem environments at §5 (host-first-shell projection + first-shell perpendicularity), §6 (perturbation-locality + shell-locality corollary), §7 (substrate-locality umbrella) with `[Statement to be added at Patch NNNN]` placeholders preserving the cross-reference labels
+- Five empty openproblem environments at §9 with explicit OPEN-FP-F1-N identifiers (OPEN-FP-F1-1 through OPEN-FP-F1-5)
+- Empty bibliography environment (to be populated at Patch 0565)
+
+The skeleton compiles cleanly to a 3-page PDF (title + abstract + ToC + section headers). The page count will grow to the target 30-35 pages as body content is added across Patches 0555-0566 per scoping doc §4.2-§4.5.
+
+### §43.2 The PDF-in-repo policy decision made explicit
+
+Thomas's Session 142 clarification: ".tex files at root, PDFs in chat (he enjoys seeing them), but **PDFs NOT in repo except for the final paper** which is needed for OSF posting. Convention restored."
+
+Operationalisation at this Patch:
+- The skeleton `.tex` is committed to the repo at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex`.
+- The compiled skeleton PDF is **NOT** committed to the repo. It is attached to chat via `present_files` for Thomas's preview.
+- This rule applies to all subsequent assembly Patches (0555-0566): `.tex` modifications committed; PDF previewed in chat but not committed.
+- Exception: the v1.0 SHIPPED PDF at Patch 0569 IS committed to the repo (per Thomas's "needed for OSF posting" framing; following SF-4 v4.4 precedent which committed both `.tex` and `.pdf` at SHIP).
+
+This supersedes the Patch 0553 scoping doc's earlier framing (which suggested SF-4 precedent default of including PDF alongside `.tex` for in-progress paper Patches). The clarified rule is cleaner: in-progress `.tex` only; final SHIP PDF with `.tex`.
+
+### §43.3 The skeleton's role in the assembly arc
+
+The skeleton serves three structural roles:
+1. **File-structure anchor**: establishes the paper file at its canonical location (`dynamical_substrate_law.tex` at folder root) before any body content is added, so subsequent assembly Patches modify a single growing file rather than each creating their own files.
+2. **Cross-reference scaffold**: section labels (`sec:introduction`, `sec:subquestion`, ..., `sec:conclusion`), theorem labels (`thm:host-first-shell-projection`, `thm:first-shell-perpendicularity`, `thm:perturbation-locality`, `thm:substrate-locality`), corollary label (`cor:shell-locality`), and open-problem labels (`op:delta-squared`, `op:layer4-mechanism-a`, `op:g1-hardening`, `op:sector5-schema`, `op:non-vertex-aligned-c`) are in place. The abstract already cites Theorems 5.1, 5.2, 6.1 + Corollary 6.2 and Open Problems 1-3 via these labels. As body content is added at subsequent Patches, cross-references resolve cleanly without label collisions or restructuring.
+3. **Layer-distinction discipline scaffold**: the skeleton's theorem statement placeholders include explicit Layer labels: "Theorem (...; sketch-document Layer 3)". This pre-commits to Layer-distinction-preserving language at each theorem statement before any body content is added, operationalising ChatGPT's load-bearing principle (preserve Layer distinction + conditionality + open higher-order questions) at the file-structure level.
+
+### §43.4 Self-checkpoint — three places §43.1–§43.3 could overstate
+
+1. **The abstract is a draft, not the final version.** The scoping doc §2.4 noted "the working abstract is refined at the substantive-completion step (Patch 056x)." The skeleton's abstract follows the working draft but will be revised at Patch 0566 (cross-checking + final polish) after body content is in place.
+
+2. **The "Layer-distinction discipline scaffold" framing relies on subsequent Patches preserving Layer labels.** Anti-erasure depends on every assembly Patch's Tier 4 §N reasoning explicitly checking that Layer labels haven't been removed during body-content addition. The scaffold is necessary but not sufficient; reviewer engagement at Patches 0567 + 0568 is the external check.
+
+3. **The 3-page skeleton PDF size is uninformative about final paper size.** Body content addition across 10 Patches will grow the file substantially; the 30-35 page target at v1.0 may shift to 25-40 depending on integration density and table-of-contents settling. The skeleton compile is a sanity check (preamble works, no LaTeX errors); it is not predictive of final size.
+
+### §43.5 Three deferred items continue accumulating
+
+The programme-documentation-audit Patch deferral count increments:
+- future_projects.md F.1 entry: **8th consecutive deferral** (Patches 0548 + 0548a + 0549 + 0550 + 0551 + 0552 + 0553 + 0554)
+- F1_phase2_foundations_work.md §16 cross-reference: **6th consecutive deferral** (Patches 0549 + 0550 + 0551 + 0552 + 0553 + 0554)
+- Citation correction across ~11 files: **5th consecutive deferral** (Patches 0550 + 0551 + 0552 + 0553 + 0554)
+
+Audit becomes increasingly unavoidable. Citation correction in particular needs to land before Patch 0560 (Patch 0550 content integration), which gives 5 Patches of buffer. Recommended sequencing: programme-documentation-audit Patch at 0555 or 0555a, then resume body section assembly at 0556+. Final call is Thomas's.

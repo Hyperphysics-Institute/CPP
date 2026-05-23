@@ -485,3 +485,64 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 
 **Self-checkpoint at this transaction:** Patch 0553 opens a multi-Patch arc (anticipated ~17 Patches through v1.0 SHIP) without committing to specific Patch counts or timings. The scoping document is the canonical reference for the arc; each subsequent assembly Patch is bounded-scope with its own four-artifact deliverables. The load-bearing ChatGPT principle (preserve Layer distinction + conditionality + open higher-order questions) governs every assembly Patch and requires sustained discipline that the scoping document records but cannot guarantee. Reviewer engagement at Patches 0567 + 0568 is the external check on whether the discipline held in practice.
 
+
+---
+
+## Transaction 040 — Patch 0554 (F.1 flagship paper skeleton creation)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=0b2989a` = Patch 0553).
+**Branch:** main.
+**Patch type:** Substantive content (first `.tex` artifact for F.1 flagship paper). Executes §4.1 of `sketches/F1_flagship_paper_assembly_scoping.md` (Patch 0553 scoping document). First Patch of the body of the multi-Patch assembly arc anticipated through v1.0 SHIP at Patch 0569.
+
+**Trigger:** Thomas's "Please proceed" with "your call" framing following Patch 0553 ship + push at commit `0b2989a`. Two options on table — (A) paper skeleton; (B) programme-documentation-audit Patch — with audit found to be substantial (600-800 lines content across three deferred items). Claude judged (A) the cleaner option for this Patch, with audit becoming Patch 0555 or later (no later than 0560 where Patch 0550 content integrates with citation references).
+
+**Files modified (5 file deltas applied + 3 DEFERRED):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (338 lines LaTeX). Structure: preamble (documentclass + packages + theorem environments + notation conventions); title + author + date; abstract draft (~250 words from scoping doc §2.4); table of contents; 10 section headers with comment-block placeholders for body content; empty theorem environments at §5, §6, §7 with Layer-distinction labels preserved at placeholder level; five empty openproblem environments at §9 with OPEN-FP-F1-N identifiers; empty bibliography environment placeholder for Patch 0565. Compiles cleanly to 3-page PDF (title + abstract + ToC + section headers).
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §43, 5 subsections: §43.1 what this Patch does structurally + §43.2 PDF-in-repo policy decision made explicit + §43.3 skeleton's role in the assembly arc + §43.4 self-checkpoint + §43.5 deferred items accumulating).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 30).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 040, this entry).
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0554 entry; Patch 0553 demoted to `Earlier **Last updated:**`).
+6. DEFERRED — `future_projects.md` F.1 entry tail append. **8th consecutive deferral** (0548 + 0548a + 0549 + 0550 + 0551 + 0552 + 0553 + 0554).
+7. DEFERRED — `F1_phase2_foundations_work.md` §16 cross-reference. **6th consecutive deferral** (0549 + 0550 + 0551 + 0552 + 0553 + 0554).
+8. DEFERRED — Citation correction across ~11 files. **5th consecutive deferral** (0550 + 0551 + 0552 + 0553 + 0554) — audit-Patch sub-item per Option 1 resolution; needs to land before Patch 0560 (Patch 0550 content integration).
+
+**Methods catalogue Step E audit verdict (§29.4 codified discipline):** no new METH entry at this Patch. Paper-skeleton-creation pattern is standard publication-paper opening and does not introduce structurally novel methodology. The methods catalogue audit Patch (item C in Patch 0552 forward queue) still has at least SIX substantive candidates pending evaluation (C1+C2 from Patch 0541a + §5.3 anti-bundling extension from Patch 0548 + retroactive-recognition-pattern from Patch 0548a + reviewer-pause-envelope from Patch 0549 + hypothesis-tracking pattern from Patches 0550/0551/0552 + arc-scoping pattern from Patches 0540/0553).
+
+**Programme state changes at Patch 0554:**
+
+1. F.1 flagship paper skeleton CREATED at canonical location `dynamical_substrate_law.tex` (folder root).
+2. Cross-reference scaffold IN PLACE: 10 section labels + 4 theorem labels + 1 corollary label + 5 open-problem labels.
+3. Abstract draft (forward-references the four theorems and three open problems via labels) IN PLACE.
+4. **PDF-in-repo policy clarified at codification level**: in-progress assembly Patches commit `.tex` only; final v1.0 SHIPPED PDF (Patch 0569) commits both `.tex` and `.pdf`. Per Thomas's Session 142 clarification. Supersedes Patch 0553 scoping doc's earlier SF-4-precedent default framing.
+5. Layer-distinction discipline scaffolding IN PLACE at theorem-statement-placeholder level: every theorem placeholder includes "sketch-document Layer 3" label. ChatGPT principle (Patch 0538 §10.7) operationalised at file-structure level.
+6. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+7. NO Findings registry promotions.
+8. NO sub-question reopenings.
+9. NO v1.0 SHIPPED edits.
+10. NO Patches 0531-0553 immutable content modifications.
+11. NO modification of `hardened_theorems/*.tex` artifacts at this Patch.
+12. NO body content added (one section per future Patch per scoping doc §4.2-§4.5).
+13. NO F.2 / F.3 substantive content trajectory opening.
+14. NO long-term programme target (Layer 4) work.
+15. NO $\mathcal{O}(\delta^2)$ extension.
+16. NO G1 publication-grade hardening.
+17. NO reviewer engagement at this Patch.
+18. NO modification of templates/ files.
+19. NO methods-catalogue audit work at this Patch.
+20. NO programme-documentation-audit work at this Patch.
+
+**Forward queue post-Patch 0554:**
+
+- **(A) Patch 0555 candidacy split**: (A.1) **§1 Introduction body** per scoping doc §4.2 — natural arc continuation; one section per Patch maintains bounded-scope discipline; OR (A.2) **programme-documentation-audit Patch** — clears three deferred items in a single coordinated pass; bounded session-scale work; **landing before Patch 0560 (Patch 0550 content integration with citation references) is the binding constraint**; with 5 Patches of buffer, audit could land at 0555, 0555a, 0556a, 0557a, 0558a, or 0559a as long as it lands before 0560 substantive body content.
+- **(B) Patches 0556-0566 — remaining body section assembly** per scoping doc §4.2-§4.5: §2 sub-question + §3 framework primitives + §4 Mechanism A + §5 first-shell identities (integrates Patches 0551 + 0552) + §6 perturbation-locality (integrates Patch 0550) + §7 substrate-locality umbrella + §8 Layer 3 stack + §9 open questions + §10 conclusion + bibliography + final polish.
+- **(C) Patches 0567-0568+0568a — reviewer engagement cycle** per scoping doc §4.6.
+- **(D) Patch 0569 — F.1 flagship paper v1.0 SHIP** per `templates/paper_completion_checklist.md` Phase 7A/7B/7C; multi-deliverable SHIP-scale Patch; **PDF committed to repo at this Patch** (per Session 142 policy clarification + SF-4 precedent).
+- **(E) Methods catalogue audit Patch** — at least 6 candidate items.
+- **(F) G1 publication-grade hardening Patch** — closes shared E1 from Patches 0551 + 0552.
+- **(G) F.2 / F.3 substantive content trajectory openings.**
+- **(H) Long-term programme target (Layer 4 axiomatic derivation)** REGISTERED + DEFERRED.
+- **(I) JUNO peer-review update integration when published.**
+
+**Self-checkpoint at this transaction:** Patch 0554 establishes the file-structure scaffold for the flagship paper. The 338-line skeleton compiles cleanly to a 3-page PDF and is ready to receive body content. Layer-distinction discipline operates at the placeholder level (each theorem has explicit "sketch-document Layer 3" label). Anti-erasure scaffolding starts before substance. The PDF-in-repo policy is clarified at Tier 4 §43.2 codification level: in-progress assembly Patches commit `.tex` only; v1.0 SHIPPED PDF (Patch 0569) commits both `.tex` and `.pdf` per Session 142 Thomas clarification + SF-4 precedent.

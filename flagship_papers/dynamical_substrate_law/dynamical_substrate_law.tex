@@ -1,0 +1,338 @@
+% ============================================================
+% The Dynamical Substrate Law:
+%   Substrate-Locality of DI-Bit Currents at Vertex-Aligned
+%   Reading C in the 600-Cell
+% Conscious Point Physics Flagship Paper Series (F-line)
+%
+% Version 0.1 -- 23 May 2026 (Session 142, Patch 0554 — Paper skeleton
+%   creation. First .tex artifact for the F.1 flagship paper assembly
+%   multi-Patch arc opened at Patch 0553. Preamble + section headers
+%   + title + abstract draft only; no body content at this Patch.
+%   Body sections to be added one-per-Patch across Patches 0555-0564
+%   per F1_flagship_paper_assembly_scoping.md §4.2-§4.5. Three
+%   publication-grade hardened theorem artifacts at
+%   `flagship_papers/dynamical_substrate_law/hardened_theorems/`
+%   (Patches 0550 + 0551 + 0552, 741 lines LaTeX combined) supply
+%   §5 and §6 body content as direct integration inputs. ChatGPT
+%   load-bearing principle codified at scoping doc anti-priority #8:
+%   preserve Layer distinction + conditionality + open higher-order
+%   questions; do not erase uncertainty structure during paper
+%   polishing.)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc,arrows.meta,shapes.geometric}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{openproblem}{Open Problem}
+
+% Notation conventions inherited from Capotauro v2.0 + SF-4 +
+% the F.1 hardened theorem artifacts (Patches 0550 + 0551 + 0552)
+\newcommand{\phig}{\varphi}
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\jDInet}{\vec{j}_{DI}^{\,\text{net}}}
+\newcommand{\omegaPCD}{\vec{\omega}_{PCD}}
+\newcommand{\sigcycle}{\sigma_{\text{cycle}}}
+\newcommand{\Mthermo}{|M^{\text{thermo}}|}
+\newcommand{\DeltapLR}{\Delta p_{LR}}
+\newcommand{\Ih}{I_h}
+\newcommand{\PTI}{P_{TI}}
+\newcommand{\Zbw}{\mathrm{ZBW}}
+\newcommand{\bigO}[1]{\mathcal{O}(#1)}
+\newcommand{\Findd}{\mathrm{DSL}}
+
+\title{The Dynamical Substrate Law:\\
+Substrate-Locality of DI-Bit Currents at\\
+Vertex-Aligned Reading~C in the 600-Cell}
+
+\author{Dr.~Thomas Lee Abshier, ND\\
+\small Hyperphysics Institute\\
+\small \texttt{drthomas@renaissanceministries.org}\\
+\\
+\small with AI co-authorship:\\
+\small Claude Opus (Anthropic) --- primary mathematical co-author\\
+\small ChatGPT (OpenAI), Copilot (Microsoft), Grok (xAI) --- review and calibration
+}
+
+\date{Version 0.1 (skeleton), 23 May 2026}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+% Abstract --- draft v0.1, refined at later assembly Patches
+% ============================================================
+\begin{abstract}
+We establish the substrate-locality property for DI-bit currents on the 600-cell substrate at vertex-aligned Reading~C: under Mechanism~A (the propagation-rate-asymmetry primitive $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$) and the framework-local current construction at first order in $\delta$, the substrate net DI-bit current at any host vertex $\vhost$ depends only on first-shell content. The result is proved at sketch-document Layer~3 in three steps: (i)~the host-to-first-shell unit-direction projection $\hat{u}_i \cdot \nhat = -1/(2\phig)$ is uniform across all twelve first-shell neighbours (Theorem~\ref{thm:host-first-shell-projection}); (ii)~the first-shell-to-first-shell edge-direction projection $\hat{e}_{ij} \cdot \nhat = 0$ vanishes for any pair of first-shell vertices (Theorem~\ref{thm:first-shell-perpendicularity}); (iii)~the perturbation-theory propagation rule confines the $\bigO{\delta^n}$ coefficient of the substrate current to graph-distance-$n$ edges in the 600-cell edge graph (Theorem~\ref{thm:perturbation-locality}, with shell-locality Corollary~\ref{cor:shell-locality}).
+The three load-bearing identities are hardened at publication-grade rigor with explicit hypothesis tracking and five-class exclusion enumeration each.
+We make the scope qualifier --- perturbative locality under Mechanism~A and the framework-local current construction at $\bigO{\delta^1}$ --- structurally inseparable from the theorem statements.
+Three explicit open higher-order questions are flagged: extension to $\bigO{\delta^2}$ (Open~Problem~\ref{op:delta-squared}); Layer~4 axiomatic derivation of Mechanism~A from the eleven CPP primitive axioms~A1--A11 (Open~Problem~\ref{op:layer4-mechanism-a}); and publication-grade hardening of the first-shell inner-product primitive G1 (Open~Problem~\ref{op:g1-hardening}).
+The paper integrates the F.1 sub-question of the OPEN-SD-CHIR-PRIMITIVE manifestation~(iv) trajectory and is the temporal-sector analog to the Capotauro~v2.0 spatial-sector substrate-locality theorem, with which it shares the structural constant $-1/(2\phig)$.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+% §1 Introduction and motivation
+%   Body to be added at Patch 0555.
+%   Primary source: F1_subquestion_pcd_orientation_link.md §1
+%   (with framing for outer audience).
+%   Approximate target: 3-4 pages.
+% ============================================================
+\section{Introduction and motivation}
+\label{sec:introduction}
+
+% [Body content to be added at Patch 0555 per scoping doc §3.2.
+%  Sub-structure anticipated:
+%   §1.1 Position in the CPP corpus and the chirality continuum
+%   §1.2 The F.1 sub-question as a programme gate
+%   §1.3 Sketch Layer 2 → Layer 3 trajectory recap
+%   §1.4 Paper roadmap and Layer-distinction discipline]
+
+% ============================================================
+% §2 The F.1 sub-question (formal statement)
+%   Body to be added at Patch 0556.
+%   Primary source: F1_subquestion_pcd_orientation_link.md §2-§3
+%   + F1_phase2_foundations_work.md §1-§3.
+%   Approximate target: 2-3 pages.
+% ============================================================
+\section{The F.1 sub-question: substrate-mechanism derivation of the link
+$\hat{n} \mapsto \omegaPCD$}
+\label{sec:subquestion}
+
+% [Body content to be added at Patch 0556. Sub-structure anticipated:
+%   §2.1 Manifestation (iv) of OPEN-SD-CHIR-PRIMITIVE
+%   §2.2 Three closure scenarios (A positive / B negative / C partial)
+%   §2.3 Scenario A: Mechanism A propagation-rate asymmetry
+%   §2.4 The minimal-local-first-order realization framework]
+
+% ============================================================
+% §3 Framework primitives
+%   Body to be added at Patch 0557.
+%   Primary source: F1_subquestion_pcd_orientation_link.md §4-§5
+%   + axiom-registry A1/A6'/A11 + the 600-cell geometric structure
+%   + Reading C from Capotauro v2.0.
+%   Approximate target: 3-4 pages.
+% ============================================================
+\section{Framework primitives}
+\label{sec:framework-primitives}
+
+% [Body content to be added at Patch 0557. Sub-structure anticipated:
+%   §3.1 CPP primitive axioms A1-A11 (recap)
+%   §3.2 The 600-cell substrate at vertex-aligned Reading C
+%   §3.3 First-shell geometric primitives G1 + G2
+%   §3.4 The DI-bit current and Mechanism A framework]
+
+% ============================================================
+% §4 Mechanism A as framework axiom
+%   Body to be added at Patch 0558.
+%   Primary source: Patch 0544 §3 + Patch 0550 §2.2.
+%   Approximate target: 2 pages.
+% ============================================================
+\section{Mechanism A as framework axiom}
+\label{sec:mechanism-a}
+
+% [Body content to be added at Patch 0558. Sub-structure anticipated:
+%   §4.1 The propagation-rate asymmetry r(e) = r_0 (1 + delta * e.n)
+%   §4.2 Framework local-current construction at first order in delta
+%   §4.3 Mechanism A as framework axiom (Layer 3); Layer 4 derivation deferred]
+
+% ============================================================
+% §5 The first-shell geometric identities
+%   Body to be added at Patch 0559.
+%   INCORPORATES: hardened_theorems/first_shell_perpendicularity.tex
+%   (Patch 0551, 207 lines) + host_to_first_shell_projection.tex
+%   (Patch 0552, 265 lines). Integrated treatment of Theorems
+%   4.1.1 + 4.2.1 as a single chapter with shared G1 dependency
+%   (exclusion class E1).
+%   Approximate target: 5-6 pages.
+% ============================================================
+\section{The first-shell geometric identities}
+\label{sec:first-shell-identities}
+
+% [Body content to be added at Patch 0559. Sub-structure anticipated:
+%   §5.1 The G1 first-shell inner-product primitive (inherited Layer 3)
+%   §5.2 Lemma 3.1.1: tangent-hyperplane chord length (1/phi)
+%   §5.3 Theorem 5.1 (host-to-first-shell uniform projection;
+%        from Patch 0552 .tex content)
+%   §5.4 Theorem 5.2 (first-shell-to-first-shell perpendicularity;
+%        from Patch 0551 .tex content)
+%   §5.5 Exclusion class E1 (shared G1 dependency)
+%   §5.6 Cross-reference: Capotauro v2.0 §3 spatial-sector parallel]
+\begin{theorem}[Host-to-first-shell uniform projection; sketch-document Layer 3]
+\label{thm:host-first-shell-projection}
+[Statement to be added at Patch 0559; integrates Patch 0552 Theorem 4.2.1.]
+\end{theorem}
+
+\begin{theorem}[First-shell-to-first-shell perpendicularity; sketch-document Layer 3]
+\label{thm:first-shell-perpendicularity}
+[Statement to be added at Patch 0559; integrates Patch 0551 Theorem 4.1.1.]
+\end{theorem}
+
+% ============================================================
+% §6 The perturbation-theory propagation rule
+%   Body to be added at Patch 0560.
+%   INCORPORATES: hardened_theorems/perturbation_locality_propagation.tex
+%   (Patch 0550, 269 lines). Three lemmas (path-amplitude expansion +
+%   perturbed-step counting + connected-subgraph confinement) +
+%   shell-locality corollary + delta^1 specialisation.
+%   Approximate target: 5-6 pages.
+% ============================================================
+\section{The perturbation-theory propagation rule}
+\label{sec:perturbation-locality}
+
+% [Body content to be added at Patch 0560. Sub-structure anticipated:
+%   §6.1 Lemma: path-amplitude expansion
+%   §6.2 Lemma: perturbed-step counting
+%   §6.3 Lemma: connected-subgraph confinement
+%   §6.4 Theorem 6.1: O(delta^n) coefficient confined to graph-distance-n edges
+%   §6.5 Corollary 6.2: shell-locality at O(delta^1)
+%   §6.6 Five-class exclusion enumeration]
+\begin{theorem}[Perturbation-theory propagation rule; sketch-document Layer 3]
+\label{thm:perturbation-locality}
+[Statement to be added at Patch 0560; integrates Patch 0550 Theorem 3.3.3.]
+\end{theorem}
+
+\begin{corollary}[Shell-locality at $\bigO{\delta^1}$; sketch-document Layer 3]
+\label{cor:shell-locality}
+[Statement to be added at Patch 0560; integrates Patch 0550 Corollary 3.3.4.]
+\end{corollary}
+
+% ============================================================
+% §7 The substrate-locality theorem (umbrella result)
+%   Body to be added at Patch 0561.
+%   Primary source: Patch 0544 §5 Theorem 5.1.1
+%   (sketch-document Layer 3; uses Theorems 5.1, 5.2, 6.1 from §5+§6 as inputs).
+%   Approximate target: 4-5 pages.
+% ============================================================
+\section{The substrate-locality theorem (umbrella result)}
+\label{sec:substrate-locality-theorem}
+
+% [Body content to be added at Patch 0561. Sub-structure anticipated:
+%   §7.1 Theorem 7.1: substrate net DI-bit current at v_host depends
+%        only on first-shell content at O(delta)
+%   §7.2 Proof part (a): host-to-first-shell uniform contribution
+%        (via Theorem 5.1)
+%   §7.3 Proof part (b): first-shell-to-first-shell zero contribution
+%        (via Theorem 5.2)
+%   §7.4 Proof part (c): higher-shell zero contribution at O(delta)
+%        (via Theorem 6.1 + Corollary 6.2)
+%   §7.5 Connection to Phase 1 Finding DSL-1]
+\begin{theorem}[Substrate-locality of DI-bit currents at vertex-aligned Reading C;
+sketch-document Layer 3]
+\label{thm:substrate-locality}
+[Statement to be added at Patch 0561; integrates Patch 0544 §5 Theorem 5.1.1.]
+\end{theorem}
+
+% ============================================================
+% §8 Layer 3 stack: status, scope, and exclusions
+%   Body to be added at Patch 0562.
+%   Primary source: Patch 0549 status framing + Patches 0550/0551/0552 §6
+%   exclusion classes + per-claim Layer distinction labelling.
+%   Approximate target: 3-4 pages.
+% ============================================================
+\section{Layer 3 stack: status, scope, and exclusions}
+\label{sec:layer3-stack}
+
+% [Body content to be added at Patch 0562. Sub-structure anticipated:
+%   §8.1 The minimal-local-first-order realization framework
+%   §8.2 Layer distinction labels: per-theorem rigor classification
+%   §8.3 The five-class exclusion enumeration synthesis
+%   §8.4 The Patch 0549 sub-question status framing recap
+%   §8.5 Anti-erasure discipline (per ChatGPT Patch 0538 §10.7)]
+
+% ============================================================
+% §9 Open higher-order questions
+%   Body to be added at Patch 0563.
+%   Primary source: Patch 0549 §38.3 + the three .tex artifacts'
+%   E-class lists.
+%   Approximate target: 2-3 pages.
+% ============================================================
+\section{Open higher-order questions}
+\label{sec:open-questions}
+
+% [Body content to be added at Patch 0563. Sub-structure anticipated:
+%   Five explicit open problems: OPEN-FP-F1-1 through OPEN-FP-F1-5.]
+\begin{openproblem}[Extension to $\bigO{\delta^2}$; OPEN-FP-F1-1]
+\label{op:delta-squared}
+[Statement to be added at Patch 0563.]
+\end{openproblem}
+
+\begin{openproblem}[Layer 4 axiomatic derivation of Mechanism A; OPEN-FP-F1-2]
+\label{op:layer4-mechanism-a}
+[Statement to be added at Patch 0563.]
+\end{openproblem}
+
+\begin{openproblem}[Publication-grade hardening of identity G1; OPEN-FP-F1-3]
+\label{op:g1-hardening}
+[Statement to be added at Patch 0563.]
+\end{openproblem}
+
+\begin{openproblem}[Sector-5 schema instantiation; OPEN-FP-F1-4]
+\label{op:sector5-schema}
+[Statement to be added at Patch 0563.]
+\end{openproblem}
+
+\begin{openproblem}[Non-vertex-aligned Reading C variants; OPEN-FP-F1-5]
+\label{op:non-vertex-aligned-c}
+[Statement to be added at Patch 0563.]
+\end{openproblem}
+
+% ============================================================
+% §10 Conclusion
+%   Body to be added at Patch 0564.
+%   Ties Layer 3 closure to CPP chirality-from-polytope-geometry
+%   long-term programme target (Patch 0528 §14.17 + Patch 0539 §15.5).
+%   Approximate target: 1-2 pages.
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+% [Body content to be added at Patch 0564.]
+
+% ============================================================
+% Bibliography
+%   Body to be added at Patch 0565.
+%   Imports from bibliography/cpp_references.bib + adds F.1-specific
+%   entries.
+% ============================================================
+\bibliographystyle{plain}
+% \bibliography{../../bibliography/cpp_references}  % uncomment at Patch 0565
+\begin{thebibliography}{99}
+
+% [Bibliography entries to be added at Patch 0565.]
+
+\end{thebibliography}
+
+\end{document}
