@@ -234,3 +234,61 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 
 **Self-checkpoint at this transaction:** Patch 0549 is the natural session-close marker for Session 141. Engagement of post-0549 gates is a Thomas decision-call for next-session opening. The three-Patch closure sequence ran 0547 → 0548 → 0548a → 0549 across two days (22–23 May 2026) — efficient closure given the substantive Patch 0540–0546 work it followed. The transition from "Layer 3 work in progress" to "Layer 3 reviewer-pause cycle closed at sketch-document level" is now formally codified across the registries and sketch hierarchy.
 
+
+---
+
+## Transaction 036 — Patch 0550 (publication-grade hardening of Theorem 3.3.3 + Corollary 3.3.4; first substantive physics post-Layer-3-reviewer-pause-cycle-closure)
+
+**Date:** 23 May 2026 (Session 142 opening)
+**Commit (anticipated):** assigned at push (this Patch lands via single .sh apply script with `EXPECTED_BASE=557773d` = Patch 0549)
+**Branch:** main
+**Patch type:** Substantive physics — publication-grade hardening of one specific Layer 3 theorem (Patch 0544 §3.3 Theorem 3.3.3 + Corollary 3.3.4). Produces standalone .tex artifact + four-artifact deliverables.
+
+**Trigger:** Post-Patch-0549 forward queue option chosen — Thomas's request for the "most ergonomic / most likely to lead to closure on this paper/theorem/derivation." Claude's recommendation: publication-grade hardening of Theorem 3.3.3 (one bounded theorem; addresses one of three explicit "pending" items in the Patch 0549 status framing; sets up F.1 flagship paper assembly building block without committing to full paper structure).
+
+**Substantive theorem source:** Patch 0544 §3.3 Theorem 3.3.3 (Perturbation-theory propagation rule) + Corollary 3.3.4 (Shell-locality of $\mathcal{O}(\delta^n)$ contributions). Patch 0544 content preserved per §17.6 (8); this Patch is publication-grade elevation NOT modification.
+
+**Citation discrepancy discovery and resolution per Option 1:** Prior Patch records (Patches 0544/0548/0548a/0549 + research_frontier.md entries + 7 other files) cite the theorem as "Patch 0544 §6 Theorem 6.1." The actual location is Patch 0544 §3.3 Theorem 3.3.3 (with Corollary 3.3.4 supplying the shell-locality content). §6 of the Patch 0544 doc is a proof part of Theorem 5.1.1 (the umbrella Substrate-Locality Temporal Extension Theorem), not a theorem statement. The "§6 Theorem 6.1" identifier originated in the Patch 0544 commit message and propagated through research_frontier.md into ~11 files. Per Option 1: Patch 0550 uses the correct identifier (§3.3 Theorem 3.3.3 + Corollary 3.3.4) throughout; prior Patches preserved per §17.6 (8) immutability; citation correction added to programme-documentation-audit Patch task (item D) as third sub-item alongside future_projects.md F.1 entry + F1_phase2_foundations_work.md §16 cross-reference.
+
+**Files modified by this Patch (5 file deltas applied + 3 DEFERRED):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex` (269 lines of LaTeX in new `hardened_theorems/` subdirectory; compiles to 8-page PDF, 330 KB, no undefined references after standard second pdflatex pass). Structure: 8 sections + bibliography; §1 Introduction with provenance note on citation discrepancy + main theorem statement; §2 Preliminaries (600-cell, Mechanism A as framework axiom, framework-local current construction); §3 Proof reorganised into three lemmas (path-amplitude expansion, perturbed-step counting, connected-subgraph confinement); §4 Shell-locality corollary; §5 Specialisation to $\mathcal{O}(\delta^1)$ recovering Patch 0534 §10; §6 Five exclusion classes E1–E5; §7 Cross-reference to Capotauro v2.0 §3 spatial-sector analog; §8 Conclusion identifying natural successor hardening Patches (Patch 0544 Theorems 4.1.1 + 4.2.1); bibliography. Scope qualifier built into hypotheses (H1)–(H3) per Patch 0548 §3.2 C2 calibration making it structurally inseparable from the theorem.
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §39, 5 subsections).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 26).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 036, this entry).
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0550 entry; Patch 0549 entry demoted to `Earlier **Last updated:**`).
+6. DEFERRED — `future_projects.md` F.1 entry tail append. **Fourth consecutive deferral** (Patches 0548 + 0548a + 0549 + 0550); same discrepancy; future-window programme-documentation-audit Patch carries forward.
+7. DEFERRED — `F1_phase2_foundations_work.md` §16 cross-reference. **Second consecutive deferral** (Patches 0549 + 0550); modification requires file-state audit; flagged for the same future programme-documentation-audit Patch.
+8. DEFERRED — Citation correction (Theorem 6.1 → Theorem 3.3.3 + Corollary 3.3.4) across ~11 files. **New deferral**; added to programme-documentation-audit Patch task as item D's third sub-item.
+
+**Methods catalogue Step E audit verdict (§29.4 codified discipline):** NO NEW METH entries at this Patch. Publication-grade hardening via three-lemma proof reorganisation is established methodology (Capotauro v2.0 §3 substrate-locality theorem proof is the established analog); first instance of this methodology in F.1 trajectory does not satisfy threshold per §28.7 absent additional trajectories exercising the pattern. The "scope qualifier built into hypotheses" structural commitment at this Patch is potentially METH-G (governance) territory but single-instance evidence is below threshold. C1+C2 candidate entries from Patch 0541a + governance-pattern observations from Patches 0548 / 0548a / 0549 all remain DEFERRED pending dedicated methods-catalogue audit Patch.
+
+**Programme state changes at Patch 0550:**
+
+1. Publication-grade .tex artifact landed for Theorem 3.3.3 + Corollary 3.3.4 — one of three explicit "pending" items in Patch 0549 status framing partially addressed (for one theorem; F.1 Layer 3 stack has two more theorems requiring publication-grade hardening: Patch 0544 Theorem 4.1.1 / formerly Identity G3, and Theorem 4.2.1 / formerly Identity I1).
+2. New subdirectory `hardened_theorems/` established in `flagship_papers/dynamical_substrate_law/` to house publication-grade artifacts (sibling to `layer3_promotion/`, `reviewer_pause/`, `sketches/`, `documentation_suite/`, `code/`).
+3. Citation discrepancy ("§6 Theorem 6.1" → §3.3 Theorem 3.3.3 + Corollary 3.3.4) discovered + resolved per Option 1 (forward-facing correction; historical record preserved; audit-Patch task augmented).
+4. Three documentation drift items now accumulate for programme-documentation-audit Patch: future_projects.md F.1 entry (4 consecutive Patches); F1_phase2_foundations_work.md §16 cross-reference (2 consecutive Patches); citation correction across ~11 files (new at this Patch).
+5. F.1 sub-question status UNCHANGED at Patch 0549 framing through this Patch — the "publication-grade hardening" pending item is partially addressed but not fully closed (remains DEFERRED for Theorems 4.1.1 + 4.2.1 hardening Patches).
+6. NO Findings registered (publication-grade hardening of existing Layer 3 theorem; not new content).
+7. NO sub-question reopenings.
+8. NO v1.0 SHIPPED edits.
+9. NO Patches 0531–0549 immutable content modifications.
+10. NO modification of Patch 0544 §3.3 Theorem 3.3.3 / Corollary 3.3.4 content — preserved as substantive source.
+11. NO F.1 flagship paper assembly trigger (gate remains LIVE from Patch 0549 onward but not engaged at this Patch).
+12. NO F.2 / F.3 substantive content trajectory opening.
+13. NO long-term programme target (Layer 4) work.
+14. NO $\mathcal{O}(\delta^2)$ extension (B.1.q6 territory; explicitly excluded at .tex §6 E1).
+
+**Forward queue post-Patch 0550:**
+
+- **(A) Patch 0551 — publication-grade hardening of Patch 0544 Theorem 4.1.1 (formerly Identity G3, first-shell-to-first-shell perpendicularity).** Natural successor hardening Patch identified at .tex §7 Conclusion. Establishes the second of three publication-grade theorems for the F.1 Layer 3 stack closure.
+- **(B) Patch 0552 — publication-grade hardening of Patch 0544 Theorem 4.2.1 (formerly Identity I1, host-to-first-shell uniform perturbation).** Completes the publication-grade closure of the three theorems jointly underpinning the F.1 Layer 3 stack.
+- **(C) After Patches 0551 + 0552: F.1 flagship paper assembly evaluation becomes substantively engageable** with three publication-grade theorems as building blocks (gate LIVE since Patch 0549 + three publication-grade .tex artifacts available for inclusion as F.1 paper sections).
+- **(D) Programme-documentation-audit Patch** carries forward three deferred items: future_projects.md F.1 entry (4 Patches); F1_phase2_foundations_work.md §16 cross-reference (2 Patches); citation correction across ~11 files (new at this Patch).
+- **(E) Methods catalogue audit Patch** carries forward C1+C2 + three governance-pattern observations.
+- **(F) F.2 / F.3 substantive content trajectory openings** engageable at decision-gate level (per Patch 0549 status).
+- **(G) Long-term programme target (Layer 4 axiomatic derivation)** REGISTERED + DEFERRED.
+
+**Self-checkpoint at this transaction:** Patch 0550 is the first substantive physics Patch after the Layer 3 reviewer-pause cycle closure at Patch 0549. The physics content is publication-grade rigorisation of one theorem (Theorem 3.3.3 + Corollary 3.3.4); the artifact compiles cleanly to PDF; the scope qualifier is structurally embedded in the theorem hypotheses. The natural successor Patches (0551, 0552) for Theorems 4.1.1 + 4.2.1 hardening are identified at the .tex Conclusion; engaging them is Thomas's decision-call. The citation discrepancy discovery and Option 1 resolution adds visible accumulated programme documentation drift to the programme-documentation-audit Patch task (now three sub-items).
+

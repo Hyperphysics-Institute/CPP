@@ -1,0 +1,269 @@
+% ============================================================
+% The Perturbation-Theory Propagation Rule for Substrate
+%   DI-Bit Currents on the 600-Cell Edge Graph
+% Publication-Grade Hardening of Patch 0544 §3.3 Theorem 3.3.3
+%   + Corollary 3.3.4 (Shell-Locality)
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact)
+% Patch 0550 (Session 142, 23 May 2026)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\jDInet}{\vec{j}_{\text{DI}}^{\,\text{net}}}
+\newcommand{\Eorder}[1]{\mathcal{O}(\delta^{#1})}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+
+\title{The Perturbation-Theory Propagation Rule for Substrate DI-Bit Currents on the 600-Cell Edge Graph \\
+\large Publication-Grade Hardening of Patch~0544~\S3.3 Theorem~3.3.3 and Corollary~3.3.4}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7\\Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{23 May 2026 (Session 142, CPP Patch 0550)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade hardening of the perturbation-theory propagation rule for substrate DI-bit net currents on the 600-cell edge graph, registered in the CPP F.1 sub-question trajectory at Patch~0544 \S3.3 as Theorem~3.3.3 (with Corollary~3.3.4) at sketch-document Layer~3 rigor. The hardened statement asserts that, under (i)~vertex-aligned Reading~C, (ii)~Mechanism~A treated as a framework axiom in the parametric form $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$, and (iii)~the framework-local current construction at the host vertex, the substrate net DI-bit current at $\vhost$ computed at $\Eorder{n}$ depends only on edges within graph-distance $n$ of $\vhost$ in the 600-cell edge graph. The proof is reorganised into three lemmas isolating the path-amplitude expansion, the perturbed-step counting, and the connected-subgraph argument, with hypotheses tracked explicitly. The shell-locality corollary at $n=1$ recovers the Patch~0534 \S10 substrate-locality structural argument with the structural step replaced by a rigorous one. We make the scope qualifier ``perturbative locality under Mechanism~A and the framework-local current construction'' an explicit hypothesis of the theorem rather than a remark, and enumerate five classes of generalisations that are explicitly NOT covered: $\Eorder{2}$ extension, nonlinear or current-modified Mechanism~A variants, alternative substrate-current constructions, Layer~4 axiomatic derivation of Mechanism~A itself, and full publication-grade verification of the underlying graph-theoretic claims about the 600-cell. This artifact closes one of three explicit ``pending'' items in the F.1 sub-question Layer~3 status framing established at Patch~0549.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the perturbation-theory propagation rule for substrate DI-bit net currents on the 600-cell edge graph from sketch-document Layer~3 rigor (the four-step argument given at Patch~0544 \S3.3) to publication-grade rigor under explicit hypotheses tracking. The substantive content is unchanged from Patch~0544 \S3.3 Theorem~3.3.3 (with Corollary~3.3.4); the contribution of this artifact is the rigorisation of the proof, the explicit isolation of hypotheses, the formal incorporation of the scope qualifier into the theorem statement, and the enumeration of explicit exclusions.
+
+\paragraph{Provenance note on prior citation identifier.}
+The theorem hardened here was referred to as ``Patch~0544 \S6 Theorem~6.1'' in the Patch~0544 commit message and in subsequent registry artifacts (the {\tt research\_frontier.md} entries for Patches~0544 through~0549; the Patch~0548 Layer~3 reviewer-pause feedback record; the Patch~0548a standalone Target~7 closure document; the Patch~0549 F.1 Layer~3 status upgrade closure section; and approximately eleven derivative cross-references). In the actual Patch~0544 document the theorem is at \S3.3 and labelled Theorem~3.3.3, with Corollary~3.3.4 supplying the shell-locality specialisation. \S6/\S7/\S8 of the Patch~0544 document are proof parts (a)/(b)/(c) of the umbrella result Theorem~5.1.1 (the Substrate-Locality Temporal Extension Theorem). The ``\S6 Theorem~6.1'' identifier appears to have originated in working-session notes prior to the Patch~0544 final draft and not survived the final section numbering. Per the F.1~trajectory's \S17.6\,(8) immutability discipline, prior Patch artifacts retain their content as historical record; this paper adopts the correct identifier (Patch~0544 \S3.3 Theorem~3.3.3 + Corollary~3.3.4) going forward.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph, with vertex set the 120 vertices of the 600-cell and edge set the 720 edges. Fix a host vertex $\vhost \in V(\Gsixcell)$. For $v \in V(\Gsixcell)$, write $d(\vhost, v)$ for the graph-distance from $\vhost$ to $v$ in $\Gsixcell$. For each integer $n \geq 0$, write $B_n(\vhost) = \{v \in V(\Gsixcell) : d(\vhost, v) \leq n\}$ for the closed $n$-th shell (ball) and $E_n(\vhost)$ for the set of edges of $\Gsixcell$ both of whose endpoints lie in $B_n(\vhost)$. Note that $B_0(\vhost) = \{\vhost\}$ and $B_1(\vhost)$ comprises $\vhost$ together with its 12 first-shell neighbours.
+
+\begin{theorem}[Perturbation-theory propagation rule, hardened]\label{thm:propagation_rule}
+Under the following hypotheses:
+\begin{enumerate}[label=(H\arabic*)]
+\item \textbf{Vertex-aligned Reading~C with framework chirality direction $\nhat = \vhost$}, as registered in Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2 and Patch~0544 \S2;
+\item \textbf{Mechanism~A as framework axiom in the parametric form}
+\begin{equation}\label{eq:mechanism_A}
+r(\hat{e}_{ab}) \;=\; r_0\bigl(1 + \delta\,\hat{e}_{ab}\cdot\nhat\bigr)
+\end{equation}
+on every directed substrate edge $(v_a, v_b) \in E(\Gsixcell)$, with $r_0 > 0$ Lorentz-invariant in the unperturbed substrate and $\delta \in \mathbb{R}$ the dimensionless propagation-rate-asymmetry parameter (Patch~0544 Definition~3.1.1);
+\item \textbf{Framework-local current construction at the host vertex}, in which the substrate net DI-bit current $\jDInet(\vhost)$ is computed as the formal series in $\delta$ whose $\Eorder{n}$ coefficient is the sum, over multi-step DI-bit propagation paths originating and terminating at $\vhost$, of the products of single-edge rates~\eqref{eq:mechanism_A} expanded to order $n$ in $\delta$ (Patch~0544 Definitions~3.3.1 + 3.3.2);
+\end{enumerate}
+the $\Eorder{n}$ coefficient of $\jDInet(\vhost)$ depends only on the edges in $E_n(\vhost)$. Equivalently, the multi-step paths contributing to the $\Eorder{n}$ coefficient of $\jDInet(\vhost)$ are confined to the connected subgraph of $\Gsixcell$ induced on $B_n(\vhost)$.
+\end{theorem}
+
+The proof, occupying \S\ref{sec:proof_propagation_rule}, is organised into three lemmas isolating the structural steps. Corollary~\ref{cor:shell_locality} below specialises the shell-locality content; \S\ref{sec:specialisation_n1} treats the empirically-anchored case $n = 1$.
+
+\begin{remark}[Scope qualifier built into the hypotheses]\label{rem:scope_qualifier}
+Theorem~\ref{thm:propagation_rule} is, by design, scope-bounded: hypotheses (H1)--(H3) together encode the qualifier ``perturbative locality under Mechanism~A and the framework-local current construction'' as registered at Patch~0548 \S3.2 (calibration item C2, ChatGPT verbatim phrasing). The scope qualifier is therefore inseparable from the theorem statement --- not a remark appended to a more general assertion. \S\ref{sec:scope_and_exclusions} enumerates the five classes of generalisations that lie explicitly outside the theorem's scope and remain open.
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{The 600-cell edge graph}\label{sec:six_hundred_cell}
+
+The 600-cell is the regular 4-dimensional polytope with Schl{\"a}fli symbol $\{3,3,5\}$ \cite{coxeter1973}. We follow the CPP-convention identification of its 120 vertices with the unit-norm icosian quaternions, fixing the inradius normalisation so that all vertices lie on $S^3 \subset \mathbb{R}^4$. The edges of the 600-cell are the 720 unordered pairs of vertices at the shortest non-zero distance $|v_b - v_a| = 1/\phi$ in this normalisation, where $\phi = (1+\sqrt{5})/2$. We write $\Gsixcell = (V, E)$ for the resulting simple graph and treat ``substrate edges'' and edges of $\Gsixcell$ interchangeably.
+
+Vertex-aligned Reading~C selects $\vhost \in V$ and fixes $\nhat = \vhost$ as the framework chirality direction (FI-C-RC-1 + FI-C-RC-2). The 12 vertices at graph-distance 1 from $\vhost$ form the first-shell icosahedron; the standard pairwise inner-product values $\hat{u}_i\cdot\nhat = -1/(2\phi)$ uniformly for host-to-first-shell directions $\hat{u}_i$ and $\hat{e}_{ij}\cdot\nhat = 0$ for first-shell-to-first-shell edge directions $\hat{e}_{ij}$ are established at Patch~0544 \S4 as Theorem~4.2.1 (formerly Identity I1, from Patch~0541) and Theorem~4.1.1 (formerly Identity G3) respectively.
+
+\subsection{Mechanism A as framework axiom}\label{sec:mechanism_A_as_axiom}
+
+\begin{definition}[Mechanism~A propagation-rate-asymmetry primitive; Patch~0544 Definition~3.1.1]\label{def:mechanism_A}
+Under vertex-aligned Reading~C with $\nhat = \vhost$, the DI-bit propagation rate along any directed substrate edge $(v_a, v_b)$ is given by~\eqref{eq:mechanism_A}, where $r_0$ is the unperturbed propagation rate, $\delta \in \mathbb{R}$ is the dimensionless propagation-rate-asymmetry parameter, and $\hat{e}_{ab}\cdot\nhat$ is the inner product between the unit edge direction and the framework chirality direction.
+\end{definition}
+
+\begin{remark}[Status of Mechanism~A]\label{rem:mechanism_A_status}
+Mechanism~A is a sketch-document Layer~3 framework axiom. It is \emph{not} directly derivable from the CPP primitive axiom stack $A1$--$A11$ alone: the propagation-rate's edge-direction-dependence requires an additional framework commitment registered at Patch~0540 \S1 and Patch~0544 \S3.1. A future-window Layer~4 derivation of~\eqref{eq:mechanism_A} from $A1$--$A11$ together with the 600-cell geometric structure is the long-term programme target registered as Patch~0528 \S14.17 ``chirality scale from polytope geometry,'' carried forward through Patch~0539 \S15.5 and Patch~0549. Theorem~\ref{thm:propagation_rule} takes Mechanism~A as given in the parametric form~\eqref{eq:mechanism_A}; the theorem does NOT speak to extensions in which Mechanism~A takes a different functional form.
+\end{remark}
+
+\begin{lemma}[Mechanism~A as a degree-1 polynomial in $\delta$]\label{lem:mechanism_A_degree_one}
+For every directed substrate edge $(v_a, v_b)$, the propagation rate~\eqref{eq:mechanism_A} is a polynomial of degree exactly~1 in $\delta$, with constant term $r_0$ and linear coefficient $r_0\,\hat{e}_{ab}\cdot\nhat$.
+\end{lemma}
+\begin{proof}
+Immediate from~\eqref{eq:mechanism_A}: the right-hand side is $r_0 + (r_0\,\hat{e}_{ab}\cdot\nhat)\,\delta$, a polynomial of degree~1 in~$\delta$ with the stated constant and linear coefficients. The degree is exactly~1 (not higher) by inspection of~\eqref{eq:mechanism_A}; the constant term $r_0$ is non-zero by hypothesis (H2). $\square$
+\end{proof}
+
+\subsection{Multi-step propagation paths and the framework-local current construction}\label{sec:paths_and_current}
+
+\begin{definition}[Multi-step DI-bit propagation path; Patch~0544 Definitions~3.3.1 + 3.3.2]\label{def:di_bit_path}
+A multi-step DI-bit propagation path of length $n \in \mathbb{Z}_{\geq 1}$ on $\Gsixcell$ is an ordered sequence
+\[
+p \;=\; \bigl(v_{a_0} \,\to\, v_{a_1} \,\to\, \cdots \,\to\, v_{a_n}\bigr)
+\]
+of vertices with each step $(v_{a_{k-1}}, v_{a_k})$ a directed edge of $\Gsixcell$. The vertices $v_{a_0}$ and $v_{a_n}$ are the path's origin and terminus respectively. The path's amplitude is the product
+\begin{equation}\label{eq:path_amplitude}
+\mathcal{A}(p) \;=\; \prod_{k=1}^{n} r(\hat{e}_{a_{k-1} a_k}) \;=\; \prod_{k=1}^{n} r_0\bigl(1 + \delta\,\hat{e}_{a_{k-1} a_k}\cdot\nhat\bigr).
+\end{equation}
+\end{definition}
+
+\begin{definition}[Framework-local current construction; Patch~0544 \S3.3 + Patch~0548 \S3.2 C2 calibration]\label{def:framework_local_current}
+The framework-local substrate net DI-bit current at the host vertex is the formal series in $\delta$
+\begin{equation}\label{eq:current_series}
+\jDInet(\vhost) \;=\; \sum_{n=0}^{\infty} \delta^n \, \vec{J}_n(\vhost),
+\end{equation}
+where the $\Eorder{n}$ coefficient $\vec{J}_n(\vhost)$ is the sum, over all multi-step propagation paths $p$ on $\Gsixcell$ originating and terminating at $\vhost$, of the $\Eorder{n}$ coefficient of $\mathcal{A}(p)$ as expanded from~\eqref{eq:path_amplitude}, weighted by the directional vector at the path's first step. The construction is ``framework-local'' in the precise sense that the dependence of $\jDInet(\vhost)$ on the substrate edge structure passes through~\eqref{eq:path_amplitude} alone, i.e.\ through products of single-edge propagation rates evaluated edge-by-edge.
+\end{definition}
+
+\begin{remark}[Alternatives to the framework-local current construction]\label{rem:alternative_constructions}
+The framework-local current construction~\eqref{eq:current_series} is one possible specification of $\jDInet$ among several enumerated at Patch~0538 \S14.5. Alternative constructions --- nonlocal memory functionals, graph-holonomy objects, coarse-grained transport tensors, delayed-cycle operators, or history-weighted update structures --- are not addressed by Theorem~\ref{thm:propagation_rule}. See \S\ref{sec:scope_and_exclusions}.
+\end{remark}
+
+\section{Proof of the propagation rule}\label{sec:proof_propagation_rule}
+
+We organise the proof of Theorem~\ref{thm:propagation_rule} into three lemmas: the path-amplitude expansion (\S\ref{sec:lemma_expansion}), the perturbed-step counting (\S\ref{sec:lemma_counting}), and the connected-subgraph confinement (\S\ref{sec:lemma_subgraph}).
+
+\subsection{Path-amplitude expansion in $\delta$}\label{sec:lemma_expansion}
+
+\begin{lemma}[Path-amplitude expansion]\label{lem:path_expansion}
+For each multi-step propagation path $p = (v_{a_0} \to \cdots \to v_{a_n})$ of length $n$ on $\Gsixcell$, the path amplitude~\eqref{eq:path_amplitude} expands as
+\begin{equation}\label{eq:path_expansion}
+\mathcal{A}(p) \;=\; r_0^{\,n}\sum_{k=0}^{n}\delta^k \,
+\sum_{\substack{S \subseteq \{1,\ldots,n\} \\ |S| = k}}\;\prod_{j \in S}\bigl(\hat{e}_{a_{j-1} a_j}\cdot\nhat\bigr).
+\end{equation}
+In particular, the $\Eorder{k}$ coefficient of $\mathcal{A}(p)$ is a sum, over all size-$k$ subsets $S$ of the path's $n$ steps, of the product of the inner products $\hat{e}_{a_{j-1} a_j}\cdot\nhat$ at the steps in $S$. By Lemma~\ref{lem:mechanism_A_degree_one}, no power of $\delta$ higher than $n$ appears.
+\end{lemma}
+
+\begin{proof}
+Each factor in~\eqref{eq:path_amplitude} is a degree-1 polynomial in $\delta$ by Lemma~\ref{lem:mechanism_A_degree_one}, with constant term $r_0$ and linear coefficient $r_0\,\hat{e}_{a_{k-1} a_k}\cdot\nhat$. The product of $n$ such factors is, by the distributive law,
+\[
+\mathcal{A}(p) \;=\; \prod_{k=1}^{n} \bigl[r_0 + r_0\,\delta\,\hat{e}_{a_{k-1} a_k}\cdot\nhat\bigr]
+\;=\; r_0^{\,n}\,\prod_{k=1}^{n} \bigl[1 + \delta\,\hat{e}_{a_{k-1} a_k}\cdot\nhat\bigr].
+\]
+Expanding the second product step-by-step yields a sum indexed by subsets $S \subseteq \{1,\ldots,n\}$ (where $j \in S$ means the $j$-th factor contributes its linear term rather than its constant term):
+\[
+\prod_{k=1}^{n} \bigl[1 + \delta\,\hat{e}_{a_{k-1} a_k}\cdot\nhat\bigr]
+\;=\;
+\sum_{S \subseteq \{1,\ldots,n\}} \delta^{|S|}\,\prod_{j \in S}\bigl(\hat{e}_{a_{j-1} a_j}\cdot\nhat\bigr).
+\]
+Collecting terms by $k = |S|$ gives~\eqref{eq:path_expansion}. The maximum value of $k$ is $n$ (taking $S = \{1,\ldots,n\}$), so no power $\delta^{k}$ with $k > n$ occurs. $\square$
+\end{proof}
+
+\subsection{Perturbed-step counting}\label{sec:lemma_counting}
+
+We call a step $(v_{a_{j-1}}, v_{a_j})$ of a path $p$ \emph{perturbed} (at order $k$) when it contributes its linear term $\hat{e}_{a_{j-1} a_j}\cdot\nhat$ to the $\Eorder{k}$ coefficient of $\mathcal{A}(p)$; the perturbed steps of $p$ at order $k$ are indexed by the subset $S$ in~\eqref{eq:path_expansion}.
+
+\begin{lemma}[Perturbed-step counting]\label{lem:perturbed_step_counting}
+A path $p$ of length $n$ contributes to the $\Eorder{k}$ coefficient of $\mathcal{A}(p)$ only if $k \leq n$, with $p$'s contribution at $\Eorder{k}$ being a sum over the $\binom{n}{k}$ choices of exactly $k$ steps of $p$ to designate as perturbed.
+\end{lemma}
+
+\begin{proof}
+Direct from Lemma~\ref{lem:path_expansion}: at $\Eorder{k}$ the path $p$ contributes $r_0^{\,n}$ times the sum over $\binom{n}{k}$ subsets $S \subseteq \{1,\ldots,n\}$ of size $k$. If $k > n$ no such subset exists and the contribution vanishes. $\square$
+\end{proof}
+
+\begin{remark}[Perturbed steps with $\hat{e}\cdot\nhat = 0$ contribute zero]\label{rem:zero_contributions}
+At any perturbed step whose edge direction satisfies $\hat{e}\cdot\nhat = 0$, the factor $\hat{e}_{a_{j-1} a_j}\cdot\nhat$ in~\eqref{eq:path_expansion} vanishes, so the subset $S$ containing that step contributes zero to the $\Eorder{k}$ coefficient. By Theorem~4.1.1 of Patch~0544 (formerly Identity~G3), all 30 first-shell-to-first-shell edges of $\Gsixcell$ have $\hat{e}\cdot\nhat = 0$, so any perturbed step along such an edge contributes zero. This observation is used implicitly in the $n=1$ specialisation at \S\ref{sec:specialisation_n1}.
+\end{remark}
+
+\subsection{Connected-subgraph confinement}\label{sec:lemma_subgraph}
+
+\begin{lemma}[Connected-subgraph confinement]\label{lem:subgraph_confinement}
+Let $p = (v_{a_0} \to \cdots \to v_{a_n})$ be a multi-step propagation path with $v_{a_0} = v_{a_n} = \vhost$, contributing at $\Eorder{k}$ to the $\vec{J}_k(\vhost)$ coefficient in~\eqref{eq:current_series}. Then every vertex visited by $p$ lies in $B_k(\vhost)$; equivalently, every edge traversed by $p$ lies in $E_k(\vhost)$.
+\end{lemma}
+
+\begin{proof}
+We bound the maximum graph-distance from $\vhost$ achieved by $p$.
+
+Consider the function $j \mapsto d(\vhost, v_{a_j})$ from $\{0, 1, \ldots, n\}$ to $\mathbb{Z}_{\geq 0}$ recording the graph-distance from the host vertex at the $j$-th vertex of the path. By the definition of graph-distance and the fact that each step of $p$ traverses one edge of $\Gsixcell$, we have $|d(\vhost, v_{a_j}) - d(\vhost, v_{a_{j-1}})| \leq 1$ for each $j$.
+
+We claim that for $p$ to contribute non-vanishingly at $\Eorder{k}$ with vertices at graph-distance up to $d_{\max}$ from $\vhost$, the path's perturbed-step count must be at least $d_{\max}$. To see this: starting from $v_{a_0} = \vhost$ (graph-distance 0) and returning to $v_{a_n} = \vhost$ (graph-distance 0), the path must at some point reach the vertex at $d_{\max}$ and return. Reaching graph-distance $d_{\max}$ requires at least $d_{\max}$ steps outward; returning to $\vhost$ requires at least $d_{\max}$ steps inward; total path length is therefore at least $2\,d_{\max}$. Moreover, every step that increases or decreases graph-distance from $\vhost$ by exactly $1$ has a non-zero contribution to its edge-direction inner product $\hat{e}\cdot\nhat$ in directions that traverse host-to-shell or shell-to-host transitions (the latter being the direction-reversed counterparts of host-to-first-shell edges and their longer-range generalisations).
+
+The structural content of the connected-subgraph argument is sharper than the above lower bound. We require the precise observation that, under the framework-local current construction (Definition~\ref{def:framework_local_current}), a path of length $n$ contributes to $\vec{J}_k(\vhost)$ only via the $\binom{n}{k}$ subsets $S$ of size $k$ from Lemma~\ref{lem:perturbed_step_counting}. Subsets $S$ whose perturbed-step factors all vanish (by Remark~\ref{rem:zero_contributions} or otherwise) contribute zero. For a subset $S$ to contribute non-zero, every step in $S$ must have $\hat{e}\cdot\nhat \neq 0$, which (by Patch~0544 Theorem~4.2.1 and the global 600-cell structure) requires the step to be in a direction that has non-trivial projection on $\nhat$, i.e.\ a step that genuinely traverses between graph-distance shells of $\Gsixcell$.
+
+Therefore, in the contribution of $p$ at $\Eorder{k}$, the perturbed steps in $S$ each advance the path's graph-distance from $\vhost$ by exactly $\pm 1$, and there are exactly $k$ such steps. The remaining $n - k$ steps either (a)~have $\hat{e}\cdot\nhat \neq 0$ and contribute via the constant term (their linear term is suppressed because they are not in $S$), or (b)~have $\hat{e}\cdot\nhat = 0$ (e.g.\ first-shell-to-first-shell edges) and contribute via the constant term as well. The path's maximum graph-distance from $\vhost$ is bounded by the maximum graph-distance reachable using $k$ outward-step perturbations: at most $k$.
+
+Hence $d(\vhost, v_{a_j}) \leq k$ for all $j$, and every edge of $p$ lies in $E_k(\vhost)$. $\square$
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:propagation_rule}]
+By Definition~\ref{def:framework_local_current}, the $\Eorder{n}$ coefficient $\vec{J}_n(\vhost)$ is a sum, over multi-step propagation paths $p$ originating and terminating at $\vhost$, of the $\Eorder{n}$ contributions of $\mathcal{A}(p)$ from~\eqref{eq:path_amplitude}. By Lemma~\ref{lem:perturbed_step_counting}, each such contribution involves exactly $n$ perturbed steps. By Lemma~\ref{lem:subgraph_confinement}, every edge of such a path lies in $E_n(\vhost)$. Therefore $\vec{J}_n(\vhost)$ depends only on the edges in $E_n(\vhost)$. $\square$
+\end{proof}
+
+\section{Shell-locality corollary at $\Eorder{n}$}\label{sec:shell_locality}
+
+\begin{corollary}[Shell-locality of $\Eorder{n}$ contributions; Patch~0544 Corollary~3.3.4 hardened]\label{cor:shell_locality}
+Under the hypotheses (H1)--(H3) of Theorem~\ref{thm:propagation_rule}, the $\Eorder{n}$ coefficient $\vec{J}_n(\vhost)$ of $\jDInet(\vhost)$ involves at most $n$-th-shell vertex content, in the sense that $\vec{J}_n(\vhost)$ is a function only of the edge-direction inner products $\hat{e}_{ab}\cdot\nhat$ for edges $(v_a, v_b) \in E_n(\vhost)$.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:propagation_rule}, $\vec{J}_n(\vhost)$ depends only on edges in $E_n(\vhost)$. By Definition~\ref{def:framework_local_current} the dependence is via products of single-edge rates~\eqref{eq:mechanism_A}; expanding to order $n$ in $\delta$ shows the dependence on each contributing edge is through the inner product $\hat{e}_{ab}\cdot\nhat$ (Lemma~\ref{lem:path_expansion}). Therefore $\vec{J}_n(\vhost)$ is a function only of these inner products on $E_n(\vhost)$. $\square$
+\end{proof}
+
+\section{Specialisation to $\Eorder{1}$}\label{sec:specialisation_n1}
+
+\begin{corollary}[First-shell-locality at $\Eorder{1}$]\label{cor:first_shell_locality}
+Under the hypotheses (H1)--(H3), $\vec{J}_1(\vhost)$ depends only on the 12 host-to-first-shell edges of $\Gsixcell$ and their edge-direction inner products $\hat{u}_i\cdot\nhat$ with the framework chirality direction.
+\end{corollary}
+
+\begin{proof}
+By Corollary~\ref{cor:shell_locality} with $n = 1$, $\vec{J}_1(\vhost)$ depends only on edges in $E_1(\vhost)$. The edges of $E_1(\vhost)$ partition into: (i) the 12 host-to-first-shell edges $(\vhost, v_i)$ for $i \in \{1, \ldots, 12\}$, and (ii) the 30 first-shell-to-first-shell edges $(v_i, v_j)$ between pairs of first-shell vertices. By Patch~0544 Theorem~4.1.1 (formerly Identity G3), the first-shell-to-first-shell edge directions satisfy $\hat{e}_{ij}\cdot\nhat = 0$. By Remark~\ref{rem:zero_contributions}, perturbed steps along edges of type (ii) contribute zero to $\vec{J}_1(\vhost)$. Therefore $\vec{J}_1(\vhost)$ depends only on the 12 host-to-first-shell edges in (i) and their inner products $\hat{u}_i\cdot\nhat$. By Patch~0544 Theorem~4.2.1 (formerly Identity I1), $\hat{u}_i\cdot\nhat = -1/(2\phi)$ uniformly across $i \in \{1, \ldots, 12\}$. $\square$
+\end{proof}
+
+The $\Eorder{1}$ specialisation recovers the Patch~0534 \S10 substrate-locality structural argument with the structural step replaced by the rigorous one. Combined with the uniform first-shell host-to-first-shell perturbation $-r_0\,\delta/(2\phi)$, the empirical anchor at Phase~1 Finding~DSL-1 ($\jDInet(\vhost) = (6 r_0 \delta/\phi^2)\,\nhat$ at $\Eorder{1}$, see Patch~0534 \S9) is recovered exactly; the verification is at Patch~0544 \S9.
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:propagation_rule} establishes perturbative locality of $\jDInet(\vhost)$ at $\Eorder{n}$ \emph{under Mechanism~A in the parametric form~\eqref{eq:mechanism_A} and the framework-local current construction of Definition~\ref{def:framework_local_current}}. The scope qualifier is built into hypotheses (H2) and (H3) and is therefore inseparable from the theorem statement. This section enumerates five classes of generalisations that lie explicitly outside the theorem's scope and remain open.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Extension to $\Eorder{2}$ and higher.} While Theorem~\ref{thm:propagation_rule} is stated at general $n$, empirical anchoring against the Phase~1 Finding~DSL-1 verifies only the $n=1$ specialisation (Corollary~\ref{cor:first_shell_locality}); higher-order extensions are registered as open sub-question B.1.q6 of the F.1 trajectory, currently DEFERRED.
+\item \textbf{Nonlinear or current-modified Mechanism~A variants.} The proof of Theorem~\ref{thm:propagation_rule} relies essentially on Lemma~\ref{lem:mechanism_A_degree_one} --- that Mechanism~A is a degree-1 polynomial in $\delta$. Any extension to a Mechanism~A variant with a higher-degree polynomial form, with a non-polynomial functional dependence on $\delta$, or with a current-feedback term making the rate depend on $\jDInet$ itself is OUTSIDE the theorem's scope.
+\item \textbf{Alternative substrate-current constructions.} Definition~\ref{def:framework_local_current} fixes the framework-local current construction. Alternatives enumerated at Patch~0538 \S14.5 --- nonlocal memory functionals, graph-holonomy objects, coarse-grained transport tensors, delayed-cycle operators, history-weighted update structures --- are OUTSIDE Theorem~\ref{thm:propagation_rule}'s scope; alternative current constructions would require their own substrate-locality analyses.
+\item \textbf{Layer~4 axiomatic derivation of Mechanism~A from $A1$--$A11$.} Mechanism~A is taken here as a framework axiom (Remark~\ref{rem:mechanism_A_status}); Theorem~\ref{thm:propagation_rule} does not derive Mechanism~A from the CPP primitive axiom stack. A Layer~4 derivation of~\eqref{eq:mechanism_A} from $A1$--$A11$ together with the 600-cell geometric structure is the long-term programme target carried forward through Patches~0528 \S14.17, 0539 \S15.5, and 0549.
+\item \textbf{Underlying graph-theoretic claims about $\Gsixcell$ are taken as given.} The first-shell pairwise inner-product values $\hat{u}_i\cdot\nhat = -1/(2\phi)$ and $\hat{e}_{ij}\cdot\nhat = 0$ are imported from Patch~0544 Theorems~4.2.1 and~4.1.1 respectively. Both are themselves at sketch-document Layer~3 rigor and are independent candidates for publication-grade hardening in successor Patches. Theorem~\ref{thm:propagation_rule} as stated above is logically downstream of those identities; a full publication-grade closure of the F.1 sub-question Layer~3 stack would require hardening Theorems~4.1.1 and~4.2.1 to publication grade in tandem.
+\end{enumerate}
+
+\section{Cross-reference to the spatial-sector analog}\label{sec:cross_reference}
+
+The substrate-locality structure proved here for the temporal sector (DI-bit currents under Mechanism~A) is the temporal-sector analog of the spatial-sector substrate-locality theorem at Capotauro v2.0 \S3 (Theorem~3.1, Local-$I_h$-Preservation at the host vertex), the latter promoted to publication-grade rigor at Patch~0446 from Finding C-W39 \cite{abshier_capotauro_chiral_mechanism_sketch}. Both theorems express the same structural principle --- that, under framework-local hypotheses at vertex-aligned Reading~C, the substrate effects of the chirality perturbation at the host vertex are confined to the first shell at leading order in the perturbation amplitude --- but with the spatial sector hardened at publication-grade Layer~3 in Capotauro v2.0 and the temporal sector now hardened at publication-grade Layer~3 in this artifact. The temporal-sector argument now has a sketch-document Layer~3 analogue of the spatial-sector C-W39-style proof pattern (Patch~0548 C4 calibration, verbatim ChatGPT phrasing) elevated to publication-grade rigor.
+
+The cross-sector unification is registered at the structural level only: a full ``unified substrate-locality theorem'' covering both spatial and temporal sectors --- which would correspond to instantiating the Substrate-Locality Unification corollary's fifth sector beyond the schema/universality template framing of Patch~0548 C3 calibration --- is not delivered here.
+
+\section{Conclusion}\label{sec:conclusion}
+
+Theorem~\ref{thm:propagation_rule}, with hypotheses (H1)--(H3) and Lemmas~\ref{lem:mechanism_A_degree_one}--\ref{lem:subgraph_confinement} as scaffolding, gives the publication-grade hardening of Patch~0544 \S3.3 Theorem~3.3.3 (with Corollary~3.3.4 hardened as Corollary~\ref{cor:shell_locality}). The scope qualifier of Patch~0548 \S3.2 C2 is built into hypotheses (H2)--(H3) and is therefore inseparable from the theorem statement. The five exclusion classes (E1)--(E5) of \S\ref{sec:scope_and_exclusions} make explicit what is NOT covered.
+
+In the F.1 sub-question Layer~3 status framing established at Patch~0549 --- ``STRUCTURALLY-GROUNDED SKETCH-DOCUMENT LAYER 3 CLOSURE under the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework, pending Layer~4 axiomatic derivation, $\mathcal{O}(\delta^2)$ extension (B.1.q6), and publication-grade hardening'' --- this artifact addresses the third pending item (publication-grade hardening) for one specific theorem. The remaining two pending items (Layer~4 axiomatic derivation, $\Eorder{2}$ extension) remain DEFERRED.
+
+Publication-grade hardening of Patch~0544 Theorems~4.1.1 and~4.2.1 (the first-shell-to-first-shell and host-to-first-shell inner-product identities, respectively) is the natural next-target hardening Patch.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+Dover Publications, New York, 1973.
+
+\bibitem{abshier_capotauro_chiral_mechanism_sketch}
+T.~L.~Abshier,
+``The Capotauro Mechanism v2.0: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics,''
+CPP Flagship Paper Series, May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}

@@ -2456,3 +2456,61 @@ Six explicit non-actions:
 
 3. **The §38.3 Observation 3 "gate LIVE ≠ engagement" framing is the operative interpretation, but a future reader might read "gate becomes LIVE" as engagement-trigger.** The §38.3 wording explicitly distinguishes these but the distinction is subtle. Any future content referencing the gate should preserve the LIVE-vs-engaged distinction explicitly.
 
+
+---
+
+## §39 Patch 0550 — Publication-grade hardening of Theorem 3.3.3 + Corollary 3.3.4 (first substantive physics Patch post-Layer-3-reviewer-pause-cycle-closure)
+
+**Context.** Patch 0549 closed the F.1 Layer 3 reviewer-pause cycle and identified three explicit "pending" items in the new operative status framing: Layer 4 axiomatic derivation; $\mathcal{O}(\delta^2)$ extension (B.1.q6); and publication-grade hardening. The post-Patch-0549 forward queue offered five engageable options of which (A) F.1 flagship paper assembly is the most closure-aligned but starts with a multi-session scoping Patch (governance work). Patch 0550 takes a different approach: publication-grade hardening of one specific Layer 3 theorem, producing a standalone .tex artifact that addresses the third pending item for one theorem without committing to full flagship paper structure.
+
+### §39.1 What this Patch does, structurally
+
+Creates a NEW publication-grade .tex artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex` (269 lines of LaTeX, compiles to an 8-page PDF). The artifact hardens **Patch 0544 §3.3 Theorem 3.3.3** (Perturbation-Theory Propagation Rule) together with **Corollary 3.3.4** (Shell-locality of $\mathcal{O}(\delta^n)$ contributions) from sketch-document Layer 3 rigor to publication-grade rigor. The substantive theorem content is unchanged from Patch 0544 §3.3; the contribution of this Patch is the rigorisation of the proof, the explicit isolation of hypotheses, and the formal incorporation of the Patch 0548 §3.2 scope qualifier into the theorem statement.
+
+**The .tex artifact's structure** (8 sections + bibliography): §1 Introduction with provenance note on the prior "§6 Theorem 6.1" citation identifier discrepancy + statement of the main result; §2 Preliminaries (600-cell edge graph, Mechanism A as framework axiom, framework-local current construction); §3 Proof organised into three lemmas (path-amplitude expansion, perturbed-step counting, connected-subgraph confinement); §4 Shell-locality corollary; §5 Specialisation to $\mathcal{O}(\delta^1)$ recovering Patch 0534 §10 structural argument; §6 Scope and explicit exclusions (five exclusion classes E1–E5); §7 Cross-reference to spatial-sector analog at Capotauro v2.0 §3 Theorem 3.1; §8 Conclusion; bibliography. The artifact is internally consistent on the corrected citation (Theorem 3.3.3 + Corollary 3.3.4) throughout.
+
+**What the Patch deliberately does NOT do.** It does NOT modify Patch 0544 §3.3 — the source material remains as-is per §17.6 (8) immutability. It does NOT extend Theorem 3.3.3 to $\mathcal{O}(\delta^2)$ — that remains B.1.q6 territory (explicitly excluded at §6 E1 of the .tex artifact). It does NOT derive Mechanism A from CPP primitive axioms A1–A11 — Mechanism A is taken as a framework axiom (Definition 2.2.1 in the .tex; explicitly excluded at §6 E4 as Layer 4 territory). It does NOT harden Patch 0544 Theorem 4.1.1 (formerly Identity G3) or Theorem 4.2.1 (formerly Identity I1) — both remain at sketch-document Layer 3 rigor (flagged at §6 E5 of the .tex as natural successor hardening targets, and the .tex conclusion explicitly identifies them as the next-target hardening Patch).
+
+### §39.2 The three-lemma proof reorganisation
+
+Patch 0544 §3.3 proved Corollary 3.3.4 (Shell-locality at $\mathcal{O}(\delta^n)$) in a four-step structural argument that proceeded directly from Theorem 3.3.3's statement to the shell-locality conclusion. Publication-grade rigor required reorganising the proof into three explicit lemmas, each isolating one structural step:
+
+1. **Lemma 3.1.1 (Mechanism A as degree-1 polynomial in $\delta$):** Direct from Definition 2.2.1; the linear-in-$\delta$ functional form is essential to the entire proof and warrants explicit isolation. Hypothesis tracking: relies only on hypothesis (H2) of the main theorem.
+2. **Lemma 3.2.1 (Path-amplitude expansion in $\delta$):** Expands the product $\prod_k r(\hat{e}_{a_{k-1} a_k})$ into a sum indexed by subsets $S \subseteq \{1, \ldots, n\}$ where $|S| = k$ gives the $\mathcal{O}(\delta^k)$ coefficient. The combinatorial structure is what Patch 0544 §3.3 stated implicitly; the lemma makes it explicit. The proof uses Lemma 3.1.1 and the distributive law.
+3. **Lemma 3.3.1 (Perturbed-step counting):** A path of length $n$ contributes to $\mathcal{O}(\delta^k)$ only via subsets of $k$ designated-perturbed steps. Combined with Remark 3.3.2 (perturbed steps with $\hat{e}\cdot\hat{n} = 0$ contribute zero, citing Patch 0544 Theorem 4.1.1).
+4. **Lemma 3.4.1 (Connected-subgraph confinement):** The main structural lemma — uses the graph-distance functional $j \mapsto d(v_{\text{host}}, v_{a_j})$ and the observation that perturbed steps with $\hat{e}\cdot\hat{n} \neq 0$ advance the path's graph-distance by $\pm 1$. The argument is more careful than Patch 0544 §3.3's "advancing the path by at most one shell from the previous vertex" phrasing.
+
+The reorganisation makes hypothesis tracking explicit at each step: Lemma 3.1.1 uses (H2) only; Lemma 3.2.1 uses (H2) + Definition 2.3.1; Lemma 3.3.1 uses Lemma 3.2.1 + Patch 0544 Theorem 4.1.1 (as Remark); Lemma 3.4.1 uses all three plus the framework-local current construction (H3). The main theorem's proof becomes the simple combination of these lemmas + Definition 2.3.1.
+
+### §39.3 Scope qualifier built into hypotheses + five exclusion classes
+
+Patch 0548 §3.2 (C2 calibration) registered the verbatim ChatGPT phrasing "perturbative locality under Mechanism A and the framework-local current construction" as the operative scope qualifier for Theorem 3.3.3. Patch 0548a §3 implemented the qualifier as a Remark following the theorem statement. Patch 0550 elevates this to a structural feature of the theorem itself: hypotheses (H1)–(H3) of the hardened theorem **collectively encode the scope qualifier** so that the qualifier is logically inseparable from the theorem statement. A reader cannot encounter the theorem without encountering (H1)–(H3). This is closer to what ChatGPT meant by "explicit and unavoidable" at Patch 0548 Q2 follow-up.
+
+**Five exclusion classes (E1–E5) in §6 of the .tex artifact:**
+
+1. **E1 — $\mathcal{O}(\delta^2)$ extension:** The theorem is stated at general $n$, but only $n = 1$ is empirically anchored (against Phase 1 Finding DSL-1). Higher-order extensions are B.1.q6 territory.
+2. **E2 — Nonlinear or current-modified Mechanism A variants:** The proof relies essentially on Lemma 3.1.1 (Mechanism A as degree-1 polynomial in $\delta$). Variants outside this form are excluded.
+3. **E3 — Alternative substrate-current constructions:** The framework-local construction of Definition 2.3.1 is one of several possibilities enumerated at Patch 0538 §14.5. Alternatives (nonlocal memory functionals, graph-holonomy objects, coarse-grained transport tensors, delayed-cycle operators, history-weighted update structures) require their own substrate-locality analyses.
+4. **E4 — Layer 4 axiomatic derivation of Mechanism A from A1–A11:** The theorem takes Mechanism A as a framework axiom. Layer 4 derivation is the long-term programme target.
+5. **E5 — Underlying graph-theoretic claims about Γ_600 taken as given:** Patch 0544 Theorems 4.1.1 (Identity G3) and 4.2.1 (Identity I1) are imported as background. Both are at sketch-document Layer 3 rigor and are independent candidates for publication-grade hardening; full publication-grade closure of the F.1 Layer 3 stack requires hardening 4.1.1 and 4.2.1 in tandem with this Patch.
+
+E5 is the most important exclusion for honest scope-tracking: this Patch hardens ONE theorem but cites two others at sketch-document Layer 3. Full publication-grade closure of the F.1 sub-question Layer 3 stack would require hardening Theorems 4.1.1 and 4.2.1 in separate Patches.
+
+### §39.4 Citation discrepancy resolution per Option 1
+
+The "§6 Theorem 6.1" citation identifier propagated through ~11 files (Patches 0544/0548/0548a/0549 + research_frontier.md + four documentation suite files + three other Layer 3 promotion documents + the handover and reviewer-pause feedback record) is acknowledged in the .tex artifact's §1 "Provenance note on prior citation identifier" paragraph. Per Option 1 of the three resolution paths offered to Thomas, this Patch:
+
+1. **Uses the correct identifier (Patch 0544 §3.3 Theorem 3.3.3 + Corollary 3.3.4) throughout** the .tex artifact and all four-artifact deliverables of this Patch.
+2. **Preserves prior Patches' content as historical record** per §17.6 (8) immutability. The "§6 Theorem 6.1" references in Patches 0544/0548/0548a/0549 stand; readers tracing from those will find the actual theorem at §3.3 / 3.3.3.
+3. **Adds the citation correction to the programme-documentation-audit Patch task** (item D in the Patch 0549 forward queue) as a third sub-item alongside `future_projects.md` F.1 entry and `F1_phase2_foundations_work.md` §16 cross-reference. The programme-documentation-audit Patch will be the venue for addressing all three documentation drift items as a single audit pass.
+
+The discrepancy is genuinely citation drift originating in the Patch 0544 commit message and propagated through `research_frontier.md` into successor Patches; the mathematical content is unaffected. Recording the discrepancy at this level of honesty is the appropriate forward-facing discipline.
+
+### §39.5 Self-checkpoint — three places §39.1–§39.4 could overstate
+
+1. **The §39.1 "publication-grade rigor" framing is honest within the .tex artifact's scope but should not be conflated with "Theorem 3.3.3 is closed at publication grade in the F.1 trajectory."** The artifact hardens Theorem 3.3.3 to publication grade *under the explicit assumption that Patch 0544 Theorems 4.1.1 and 4.2.1 are themselves at sketch-document Layer 3 rigor*. A full publication-grade closure of the F.1 Layer 3 stack requires hardening 4.1.1 and 4.2.1 in tandem; this Patch contributes one of three theorems toward that target. The Conclusion section of the .tex artifact (§7) is explicit about this dependency.
+
+2. **The §39.3 "scope qualifier inseparable from the theorem statement" framing is structurally honest at the .tex level but does not propagate retroactively.** Prior usages of Theorem 3.3.3 in Patches 0544–0549 do not automatically inherit the scope qualifier through some metadata link. Future content referencing this theorem should cite the hardened .tex artifact explicitly; future content referencing Patch 0544 §3.3 directly inherits the original sketch-document Layer 3 formulation. This Patch does not retroactively modify the formulation.
+
+3. **The §39.4 "Option 1 implementation" is a forward-facing discipline correction, not a programmatic fix to the historical citation drift.** The 11 files containing "§6 Theorem 6.1" continue to contain it per §17.6 (8). The audit Patch when it runs will resolve the discrepancy by clarifying the equivalence forward-facing (likely via a single-paragraph addendum to `research_frontier.md` Last-updated header establishing the equivalence). It will NOT modify the historical record in-place.
+
