@@ -1853,3 +1853,75 @@ Two observations registered as candidates for future methods catalogue entries (
 (ii) "Mechanically tractable" framing in §29.4 sub-observation: this is true for THIS collision (one intervening commit, mostly append-only files, transcript-row restoration recoverable from git history at the missed commit). Larger base-mismatch (multiple intervening commits, content-modifying changes rather than appends, registry conflicts) would be substantially less tractable; the apply-script-forgiveness-vs-rebuild tradeoff is genuinely a tradeoff, not a free win.
 
 (iii) "Catalogue audit deferred" framing in §29.5: deferring catalogue audit decisions to dedicated audit Patches (per 0540i discipline) is sound, but should not become a way to indefinitely postpone the audit — at the next handover or session close, the audit Patch should be done on schedule, not deferred again.
+
+
+## §30 — Session 140 Patch 0542: B.2.q1 framework axiomatization — second Layer 3 promotion in F.1 trajectory, Priority 1 chain Target 2 opening
+
+### §30.1 The decision to authorize Target 2 as Patch 0542
+
+Patch 0542 opens Target 2 (B.2.q1 framework axiomatization of $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$ representation theory at Layer 3) per Patch 0540 scoping document §4.3 recommended candidacy. Thomas's authorization at Session 140 continuation following Patch 0541a's successful collision recovery ("Please proceed with the suggested next development steps in new physics") delegated the next-target choice to Opus's judgment within the scoping document's recommended ordering. The scoping document explicitly recommended Target 2 first (§4.3, "Recommended next Patch"); proceeding with Target 2 implements that recommendation.
+
+Target 2 is the **first Patch in the Priority 1 chain** Target 2 → Target 3, per Patch 0540 scoping document §3 + §4.1. Closing the chain resolves the two strongest cross-reviewer-convergent calibration items from Patch 0538 (§14.1 + §14.2) in coupled fashion: Target 2 (this Patch) substantively addresses §14.2 (B.2.q1 finite-dimensional scope acknowledgment); Target 3 (next Patch in chain) will substantively address §14.1 (B.1.q1 matter-state $I_h$-covariance framework-inheritance acknowledgment). Each is its own gated trajectory per §15.7; Target 3 will require Thomas's authorization at the Patch 0543+ boundary.
+
+### §30.2 What this Patch substantively does
+
+Patch 0542 makes the finite-dimensional scope qualifier (registered at Patch 0538 §14.2 as "finite-dimensional realizations of $P_{TI}$ on finite-dimensional operator spaces within standard Wigner-Eckart machinery") into a **load-bearing axiomatic commitment AC-1** within the Layer 3 document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md`. AC-1 is stated as a derived consequence of Reading C + first-shell-content matter-state construction (§2.4 of the Layer 3 document). The proof of the Minimal Algebraic Realization Theorem (Theorem 4.0 of the Layer 3 document) is given in four formalized steps (§5.1–§5.4), with explicit identification of where AC-1 is used at each step (§8.1).
+
+The Layer 3 document additionally develops the rigorous representation theory of $P_{TI}$ in §3: explicit character table with orthogonality relations verified (§3.1), Maschke's theorem with explicit projector formulas (§3.2), tensor product structure with multiplication table (§3.3), and Frobenius-Schur indicator $+1$ giving real-irrep structure (§3.4). The non-multiplicative-matrix-action ruling-out from Patch 0536 §12.6 is restated rigorously in §6 via minimal-polynomial diagonalization of $M^2 = \mathbb{1}$ on finite-dimensional $V$ under AC-1.
+
+### §30.3 Why AC-1 framing rather than alternative scope-qualifier approaches
+
+Three alternative framings were considered for the Layer 3 axiomatization scope and rejected in favor of AC-1:
+
+(a) **Derive finite-dimensionality from CPP axioms A1–A11 alone**: tempting because it would remove the framework-construction commitment entirely. Rejected because this is Layer 4 territory — A1 (Conscious Points finite per CP) gives finiteness at primitive level, but the framework's matter-state construction (Reading C + first-shell-content) is an additional framework commitment that is not derived from A1 alone. Premature attempt would conflate Layer 3 framework-axiomatization with Layer 4 framework-derivation.
+
+(b) **Drop the finite-dimensional scope entirely and prove for general Hilbert spaces**: rejected because the diagonalizability of $M^2 = \mathbb{1}$ (Theorem 6.1) requires either finite-dimensionality or the spectral theorem on Hilbert spaces. Spectral-theorem extension would require additional machinery (bounded operators, spectral measures, direct integrals) that is Layer 4 territory. The current Layer 3 finite-dim anchor is the appropriate scope.
+
+(c) **Retain Patch 0538 §14.2's qualifier without making it load-bearing**: rejected because this is what Patch 0538 already did at calibration level. The Layer 3 task is to PROMOTE the qualifier to axiomatic commitment with derivational traceability, not to repeat the qualifier at the same calibration level.
+
+AC-1 framing chosen: derived framework commitment with traceability (§2.4 traces AC-1 to Reading C + first-shell-content); load-bearing in the proof (§8.1 identifies the three load-bearing points); explicit Layer 4 extension path (§8.3 spells out the machinery required for non-AC-1 extensions); cross-reference to long-term programme target (§8.4).
+
+### §30.4 What this Layer 3 promotion does NOT do
+
+Patch 0542 deliberately does NOT:
+
+(i) **Open Target 3** (B.1.q1 matter-state independent derivation Layer 3). Target 3 is the next Patch in the Priority 1 chain (Patch 0543+ candidacy) and depends on this Patch's $P_{TI}$ framework axiomatization for the algebraic foundation. Bundling Target 2 + Target 3 into a single Patch would violate §15.7 "each Layer 3 promotion is its own gated trajectory" anti-priority sustained from Patch 0540 scoping document §0.
+
+(ii) **Close B.2.q2, B.2.q3, B.2.q4**. These are B.2 sub-questions that are deferrable behind the Priority 1 chain; B.2.q2 (minimal-derivative-order formalization), B.2.q3 (derivative-order-1 alternatives enumeration), and B.2.q4 (§3.4 alternatives re-examination) remain open per Patch 0539 status framing.
+
+(iii) **Derive AC-1 from CPP axioms A1–A11 alone**. AC-1 is derived from Reading C + first-shell-content matter-state construction (a framework commitment); deriving from axioms alone is Layer 4 territory.
+
+(iv) **Extend the theorem to non-AC-1 settings**. Infinite-dimensional / history-dependent / nonlocal-temporal realization theorems are Layer 4 / long-term programme target territory. The Layer 3 document §8.3 spells out the machinery required but does not engage it.
+
+(v) **Promote $\sigma_{cycle}$'s rank-0 multiplicative form to Findings registry**. The intermediate rep-theoretic result remains an intermediate computational result; Findings registry promotion requires explicit Findings registry entry Patch, not Layer 3 promotion.
+
+(vi) **Modify Patches 0531–0541a immutable content**. Patch 0536 §12 (the Layer 2 sketch) is preserved as historical record; this Layer 3 document is additive in `layer3_promotion/`, not an inline edit.
+
+### §30.5 Cross-target dependency — Priority 1 chain opening
+
+Per Patch 0540 scoping document §3 + §4.1, Target 2 → Target 3 forms the Priority 1 chain because Target 3 (B.1.q1 matter-state independent derivation) benefits from Target 2's framework axiomatization done first. The dependency operates at the rep-theory level: Target 3 will use AC-1 + this Patch's $P_{TI}$ rep-theoretic machinery (§3) + the Minimal Algebraic Realization Theorem (§4) as the algebraic foundation for matter-state $I_h$-covariance independent derivation. Without Target 2's framework axiomatization done first, Target 3 would face the same scope-qualifier issue at the $P_{TI}$-rep-theoretic level that Patch 0538 §14.2 flagged.
+
+This Patch enables Target 3 to proceed cleanly. The chain closure substantively addresses §14.1 + §14.2 calibration items in coupled fashion — the methodological pattern is **METH-L2-009 cross-target-dependency-chain in multi-question trajectory execution** (registered at Patch 0540i, originating instance Patch 0534 B.1.q3 + B.3.q1 coupled closure, generalized instance Patch 0540 Target 2 → Target 3 Priority 1 chain). This Patch is the **second concrete instance** of METH-L2-009 application in a coupled-chain closure execution — first being Patch 0534's B.1.q3 + B.3.q1 coupled closure.
+
+### §30.6 The four-artifact handover convention sustained
+
+The Patch 0541 four-artifact convention (substantive document + Tier 4 reasoning + Tier 3 vignette + Tier 2 transcript transaction + registry updates) is sustained at Patch 0542: substantive document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (586 lines, 14 sections + §0 firewall with 11 anti-priorities) + Tier 4 reasoning (this §30) + Tier 3 vignette (Vignette 17 in `development-dynamical-substrate-law.md`) + Tier 2 transcript transaction (transaction 027 in `transcript-dynamical-substrate-law.md`) + registry updates (`research_frontier.md` Last-updated header Patch 0542 entry + `future_projects.md` F.1 entry Patch 0542 paragraph). All shipped together in single Patch per standing closure-Patch convention.
+
+### §30.7 Methods catalogue audit at Patch 0542 — standard rep-theory methods, no new entries
+
+Per §29.5 candidate C1 (codified at Patch 0541a, applying the discipline going forward), methods catalogue Step E audit performed AT this Patch's authoring (not as post-hoc cleanup).
+
+**Methods used at this Patch:** (i) Maschke's theorem for finite-group rep theory (§3.2 of Layer 3 doc) — standard rep theory textbook material; already implicitly used at Patch 0536 §12 Layer 2; Layer 3 promotion makes the projector formulas explicit. Same physics derivation context (B.2.q1 / framework axiomatization), not structurally distinct from Patch 0536's Layer 2 use. (ii) Character orthogonality + projector formulas (§3.1–§3.2) — same as Maschke, same context. (iii) Tensor product structure of 1D irreps (§3.3) — standard. (iv) Frobenius-Schur indicator argument (§3.4) — standard. (v) Schur's lemma on 1D irrep (§5.4 Step 4 part c) — already in catalogue as METH-L1-001 (standard Schur application). (vi) Minimal-polynomial diagonalization of $M^2 = \mathbb{1}$ (§6 Theorem 6.1) — already implicitly used at Patch 0536 §12.6 Layer 2; Layer 3 promotion makes the argument rigorous. Same physics derivation context, not structurally distinct.
+
+**Verdict: no new METH entries.** All methods used are either (a) already catalogued at METH-L1-001 (Schur's lemma) or (b) standard rep-theory textbook material at Layer 2 → Layer 3 promotion within the same physics derivation context (Maschke / character orthogonality / minimal polynomial — same context as Patch 0536 §12, just made rigorous at Layer 3). Per §28.7 (former §27.7 of Patch 0541, renamed at Patch 0541a) precedent, same-derivation-different-layer evidence does not satisfy the ">=1 other physics-derivation context" threshold for new catalogue entries. Deferred again pending structurally distinct future application of Maschke / character orthogonality / minimal-polynomial diagonalization in a non-B.2.q1 context.
+
+Audit performed AT this Patch's authoring per §29.4 codified discipline. No deferred audit on Patch 0542; the Step E audit is part of this Patch.
+
+### §30.8 Self-checkpoint — three places §30 could overstate
+
+(i) "Substantively resolves Patch 0538 §14.2" framing: this Patch makes AC-1 load-bearing at the framework-commitment level. Full resolution at Layer 4 would require either deriving AC-1 from CPP axioms alone OR extending the theorem to non-AC-1 settings. The §10.2 + §12.2 self-checkpoints of the Layer 3 document flag this explicitly; the §30 reasoning should not be read as "calibration concern fully resolved at all layers".
+
+(ii) "Priority 1 chain opening" framing: this Patch is Target 2 (the FIRST of the chain), not the chain itself. Target 3 closure at Patch 0543+ is what closes the chain. The chain is OPENED here; CLOSED at Target 3.
+
+(iii) "Methods catalogue audit at this Patch" framing in §30.7: the audit performed here confirms no new entries at this Patch under same-derivation-different-layer criterion. The methodological observations registered at Patch 0541a §29.5 (C1 stale-base discipline + C2 apply-script vs git am tradeoff) remain candidates for METH-L2-010, deferred to a dedicated catalogue audit Patch. The §30.7 audit is bounded to methods used IN THIS PATCH's physics work, not to the broader methodological observations from the Patch 0541 → Patch 0541a recovery cycle.
+
