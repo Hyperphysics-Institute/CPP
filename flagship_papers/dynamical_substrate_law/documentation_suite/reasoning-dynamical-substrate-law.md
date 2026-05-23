@@ -2062,3 +2062,69 @@ Verdict: no new METH entries. The §6 perturbation-theory propagation rule is po
 (ii) "Substantively resolves Patch 0534 §10.10(i)" framing: at sketch-document Layer 3; full Layer 4 deferred.
 (iii) "Fourth Layer 3 promotion" framing: count = target-closing Patches (0541, 0542, 0543, 0544); 0540 + 0541a not counted.
 
+
+
+## §33 — Session 140 Patch 0545: B.3.q1 Substrate-Locality Unification corollary at Layer 3 — fifth Layer 3 promotion, piggyback on Target 4
+
+### §33.1 The decision to authorize Target 5 as Patch 0545
+
+Patch 0545 closes Target 5 (B.3.q1 Substrate-Locality Unification corollary at Layer 3) — the natural piggyback target on Target 4 per Patch 0540 §2.5. Thomas's authorization at Session 140 continuation following Patch 0544 apply ("Please proceed: ... next gate at Patch 0545+ for Target 5") confirmed Target 5 as the recommended next gate per §15.7 gated-trajectory discipline.
+
+Target 5's piggyback structure on Target 4 means substantially less standalone work: with Patch 0544 Theorem 5.1.1 (Layer 3 substrate-locality temporal extension) in hand + Patch 0543 §8.3's explicit $1/6 = d_\Gamma/V_{\text{cage}}$ Schur factor for the thermodynamic-arrow matter doublet, the Substrate-Locality Unification corollary follows as a derived consequence. Patch 0540 §2.5's prediction of "1-2 sessions" is empirically validated — single-Patch closure here.
+
+### §33.2 What this Patch substantively does
+
+Patch 0545 promotes Patch 0534 §10.7's sketch Layer 2 corollary to sketch-document Layer 3 by deriving it directly from Patch 0544 Theorem 5.1.1 + Patch 0543 §8.3 + Patch 0541 I1 + Patch 0544 Identity G3.
+
+Three load-bearing components:
+
+(i) **Substrate-Locality Unification Corollary statement at Layer 3 (Theorem 3.1.1)** with three explicit parts: (I) substrate-locality inheritance from Patch 0544 Theorem 5.1.1 applies uniformly to any first-shell-built substrate object; (II) universal Schur factor structure $d_\Gamma/V_{\text{cage}}$ across temporal-sector first-shell-built substrate objects; (III) universal substrate-primitive identification $\sigma_{cycle}\cdot\delta$ across all such objects.
+
+(ii) **Direct corollary proof** (§4): part (I) by edge-by-edge application of Patch 0544 Identities G3 + I1 + Theorem 6.1; part (II) by Patch 0543 §3.3 isotypic decomposition + §8.3 Schur formula $d/N$ applied to general first-shell-built object cage size; part (III) by universal A11 + universal $\sigma_{cycle}$ from A5.
+
+(iii) **5-sector closure at substrate-locality-unification layer** (§7): K3-doublet on $D_6$ + W-bracelet on $D_6$ + qDP/eDP on $D_6$ + thermodynamic-arrow on full $I_h$ + general temporal-sector first-shell-built objects (this Patch's corollary) all share universal $d_\Gamma/V_{\text{cage}}$ Schur structure. Extension from Patch 0543 §9's 4-sector closure.
+
+### §33.3 The "piggyback target" framing decision
+
+Three alternative framings considered:
+
+(a) **Comprehensive specific-substrate-object identification at Layer 3**: identify "W-bracelet temporal analog" and "K3-base temporal analog" specific substrate objects from CPP primitives + compute their cage-shell factors explicitly. Rejected as outside sketch-document Layer 3 scope — this is flagship-paper development territory per Patch 0534 §10.10(iii)(B).
+
+(b) **Theorem-registry promotion of $1/6$ universal Schur factor at this Patch**: rejected because Findings-registry promotion requires explicit Findings registry entry Patch with relationship_protocol.md review; this is intermediate Layer 3 work.
+
+(c) **Recognize Patch 0543 §8.3 as already containing the cage-shell factor computation and extend structurally**: chosen. Patch 0543's $1/6$ result IS the cage-shell factor for the one specific temporal-sector substrate object analyzed (thermodynamic-arrow matter doublet). The Substrate-Locality Unification corollary at Layer 3 recognizes this as universal $d_\Gamma/V_{\text{cage}}$ across all first-shell-built substrate objects.
+
+Framing (c) matches the piggyback structure cleanly: Target 5 builds on Targets 3 + 4 results, doesn't require new substantive computations.
+
+### §33.4 What this Patch does NOT do
+
+(i) Does NOT promote universal Schur factor or unification corollary to Findings registry.
+(ii) Does NOT identify specific W-bracelet / K3-base temporal analog substrate objects (deferred to flagship paper development per Patch 0534 §10.10(iii)(B)).
+(iii) Does NOT close Target 6-7 (each its own gated trajectory).
+(iv) Does NOT extend to $\mathcal{O}(\delta^2)$ (B.1.q6 territory).
+(v) Does NOT modify Patches 0531-0544 immutable content.
+(vi) Does NOT trigger F.1 sub-question status change.
+(vii) Does NOT trigger flagship paper assembly trigger.
+
+### §33.5 Programme-level milestone — five-sevenths of the Layer 3 promotion arc complete
+
+Five of seven Layer 3 promotion targets closed at Patch 0545: Target 1 (Patch 0541), Target 2 (Patch 0542), Target 3 (Patch 0543), Target 4 (Patch 0544), Target 5 (this Patch). Two Layer 3 targets remain: Target 6 (B.1.q3 PT propagation), Target 7 (B.1.q2 zero curl framework axiomatization).
+
+Aggregate tracking: Patches 0541-0545 consumed 5 Patches across Session 140 (+ 0540 scoping + 0541a collision recovery). Targets 6 + 7 estimated 4-6 sessions remaining.
+
+### §33.6 Methods catalogue audit at Patch 0545 — no new entries
+
+Per §29.5 candidate C1 (codified at Patch 0541a), Step E audit AT this Patch.
+
+Methods used: (i) Direct corollary derivation from prior Patch results — methodologically a piggyback / integration pattern, parallel to Capotauro v2.0 §3 (substrate-locality theorem) → §13 (substrate-locality unification corollary) flow. (ii) Recognition that universal $d_\Gamma/V_{\text{cage}}$ structure across stabilizer subgroups derives from finite-group rep-theory uniformly — not a new method beyond what Patch 0543 used.
+
+**Verdict: no new METH entries.** The piggyback/integration methodology has multi-occurrence precedent already (Capotauro v2.0 internal structure C-W39 → C-W40 → C-W41 + this Patch 0544 → 0545); could potentially warrant METH-L2-N+1 entry as "piggyback-target derivation pattern" but threshold "≥1 other physics-derivation context" applies; same trajectory (F.1) + same flagship-paper line (Capotauro/CPP-Dynamical-Substrate-Law) does not yet satisfy independent-context threshold per §28.7. Deferred pending future application in different flagship trajectory.
+
+### §33.7 Self-checkpoint — three places §33 could overstate
+
+(i) **"5-sector closure" framing**: 4 sectors at explicit Layer 3 with numerical $1/6$; 5th sector at STRUCTURAL universality level only. Not 5 explicit numerical computations.
+
+(ii) **"Substantively addresses Patch 0534 §10.10(iii)" framing**: addresses §10.10(iii)(A) (cage-shell factor universality) at sketch-document Layer 3; §10.10(iii)(B) (specific substrate object identification) deferred to flagship paper development.
+
+(iii) **"Piggyback target" framing**: substantially less standalone work than Targets 1-4, but Theorem 3.1.1's three-part statement + proof + 5-sector closure articulation is genuine Layer 3 work, not trivial inheritance.
+
