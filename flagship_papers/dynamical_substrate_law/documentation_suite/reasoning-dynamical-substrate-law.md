@@ -2615,3 +2615,72 @@ With Patch 0552 landing, the F.1 sub-question Layer 3 stack publication-grade ha
 
 3. **The §41.4 "F.1 flagship paper assembly substantively engageable" framing is honest at the readiness-threshold level but engagement remains gated.** Substantive engageability means the building blocks are available; it does not mean assembly is anticipated within any particular timeline, and it does not lift the decision-call requirement per `templates/paper_completion_checklist.md`. Three engageable options post-this-Patch — (A) immediate F.1 flagship paper assembly engagement, (B) programme-documentation-audit Patch to clean up accumulated drift, (C) other trajectory openings — are all Thomas's decision-call.
 
+
+---
+
+## §42 Patch 0553 — F.1 flagship paper assembly scoping (first Patch of the paper-assembly arc)
+
+**Context.** Patch 0552 closed the F.1 Layer 3 publication-grade hardening trio (Theorems 3.3.3 + 4.1.1 + 4.2.1 hardened across Patches 0550 + 0551 + 0552; 741 lines LaTeX + 21 PDF pages combined). The F.1 flagship paper assembly evaluation gate, LIVE since Patch 0549 and substantively engageable since Patch 0552, was authorized at this Patch via Thomas's decision-call ("Please pursue Option A"). This Patch is the entry point into the per-paper checklist Phase 7A / 7B / 7C structure per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section — specifically, the scoping document for the multi-Patch assembly arc that will produce the F.1 flagship paper v1.0.
+
+### §42.1 What this Patch does, structurally
+
+Creates a NEW scoping document at `flagship_papers/dynamical_substrate_law/sketches/F1_flagship_paper_assembly_scoping.md` (351 lines of markdown; structurally parallel to Patch 0540's `F1_layer3_promotion_scoping.md` which scoped the Layer 3 promotion arc). The scoping document has nine sections + §0 firewall with 16 specific anti-priorities. It does NOT create any paper content; the first `.tex` content for the flagship paper itself is anticipated at Patch 0554 (paper skeleton).
+
+**Document structure:**
+- §0 Firewall + 16 anti-priorities (including the load-bearing anti-priority #8: "NO erasure of Layer distinction" per ChatGPT principle)
+- §1 Engagement context (Reviewer-Pause Cycle Precondition gate cleared + Thomas decision-call authorized + the load-bearing ChatGPT principle restated)
+- §2 Paper structure proposal (target audience, 10-section outline, 30-35 page target, working title and abstract)
+- §3 Content inventory (existing artifacts available + new content to be written)
+- §4 Assembly order and Patch sequence (~17 Patches across paper-skeleton, foundational sections, main results, scope-tracking, closing, reviewer engagement, v1.0 SHIP)
+- §5 Reviewer engagement plan (timing, roster, submission format)
+- §6 Layer distinction discipline (four explicit discipline practices: Layer labels inline, scope qualifiers inline, open-questions explicit, anti-erasure checks per assembly Patch)
+- §7 Anti-priorities cumulative (12 items for the assembly arc as a whole, extending the §0.1 list)
+- §8 Self-checkpoint
+- §9 Concluding scope statement
+
+### §42.2 The load-bearing ChatGPT principle
+
+ChatGPT's F.1 reviewer feedback at Patch 0538 §10.7 included the verbatim instruction:
+
+> "the flagship paper should preserve: the Layer distinction, the conditionality, and the explicit open higher-order questions. Do not erase the uncertainty structure during paper polishing. That would be a mistake."
+
+This is the load-bearing discipline for the entire assembly arc. The scoping document operationalises it three ways:
+
+1. **As an anti-priority** (§0.1 anti-priority #8) at the firewall level, governing this scoping Patch.
+2. **As four explicit discipline practices** (§6) governing every assembly Patch in the sequence: Layer labels inline at every theorem statement; scope qualifiers inline at every claim; open questions explicit and numbered (OPEN-FP-F1-1 through OPEN-FP-F1-5); anti-erasure checks performed at each assembly Patch's Tier 4 §N reasoning section.
+3. **As a self-checkpoint risk** (§8 item 3): the discipline is necessary but not sufficient; reviewer engagement at Patches 0567 + 0568 is the external check.
+
+The principle has substantive bite because the most natural "polish" temptations during assembly — smoothing prose, removing seemingly-pedantic qualifiers, reducing repetition — are precisely the temptations that erode the uncertainty structure. A sentence that says "the substrate net DI-bit current depends only on first-shell content" reads more cleanly than "the substrate net DI-bit current depends only on first-shell content under Mechanism A and the framework-local current construction at first order in $\delta$," but the cleaner version erases conditionality. The scoping document's discipline anticipates this erosion vector and pre-commits to preserving the longer form throughout.
+
+### §42.3 The paper structure decision — integration of the hardened trio
+
+The 10-section paper outline at §2.2 integrates the three publication-grade hardened theorems (Patches 0550/0551/0552) into the paper body across three sections:
+
+- **§5 First-shell geometric identities** integrates Patches 0551 + 0552 (Theorems 4.1.1 + 4.2.1) as a single chapter. This is a structural choice: the two theorems share the G1 dependency (exclusion class E1), share the Capotauro v2.0 §3 spatial-sector parallel, share the vertex-aligned Reading C hypothesis structure, and are both consumed together in Theorem 6.1 / Corollary 3.3.4's perturbed-step zero-contribution analysis. Treating them as a single integrated chapter rather than two separate sections is more natural for the reader and avoids the awkwardness of two near-parallel sections with shared dependencies. Trade-off noted at §8 self-checkpoint item 1: this could shift to separate subsections if integration proves awkward at Patch 0559 execution.
+
+- **§6 Perturbation-theory propagation rule** integrates Patch 0550 (Theorem 3.3.3 + Corollary 3.3.4). The three lemmas (path-amplitude expansion, perturbed-step counting, connected-subgraph confinement) become §6.1-§6.3; the shell-locality corollary becomes §6.4; the $\mathcal{O}(\delta^1)$ specialisation becomes §6.5.
+
+- **§7 Substrate-locality theorem (umbrella)** adds Patch 0544 §5 Theorem 5.1.1 (the substrate-locality temporal extension theorem at sketch-document Layer 3 rigor) with its proof parts (a)/(b)/(c) at Patch 0544 §6/§7/§8 using the trio of hardened theorems as inputs. §7 is the umbrella result that the trio supports; its rigor level is sketch-document Layer 3 (since Theorem 5.1.1 was not hardened at the trio's scope). This is honestly labelled at §6 of the scoping doc (Layer distinction discipline) — the paper preserves that §5 + §6 theorems are publication-grade hardened while §7 (umbrella) is sketch-document Layer 3.
+
+### §42.4 The multi-Patch sequence and bounded-scope discipline
+
+The §4 sequence breaks paper assembly into ~17 bounded Patches (0554 through 0569). Each Patch is single-step and follows the same infrastructure pattern validated through Patches 0548-0552 (preflight + dry-run + 5 apply steps + commit + four-artifact deliverables + Step E audit). Specific design choices:
+
+- **Patch 0554 = paper skeleton only** (no body content). Establishes file structure + section headers + title + abstract drafts. Compiles cleanly to a mostly-empty PDF. This separates "what the paper IS" (skeleton) from "what the paper SAYS" (body content), so structural decisions are made before body-content commitment.
+
+- **One section per assembly Patch** (Patches 0555-0564). Even though some sections are small (§2 sub-question statement, §10 conclusion), keeping one section per Patch maintains the bounded-Patch discipline that proved productive across Patches 0548-0552. The trade-off: more total Patches, but each is small and shippable independently with its own anti-erasure check.
+
+- **Patch 0567 reviewer-pause checkpoint is its own Patch** (not bundled with §4.5 closing Patches). This honors the §5.3 anti-bundling extension established at Patch 0548 §36.7. Reviewer engagement is procedurally distinct from substantive content; bundling them would erode the cleanliness of reviewer feedback.
+
+- **Patches 0568 + (possible) 0568a structure mirrors the Layer 3 cycle precedent.** Patch 0568 = calibration response feedback record; Patch 0568a (if convergent items require split-out per anti-bundling) = standalone closure for the split-out item. Same shape as Patches 0548 + 0548a for the Layer 3 cycle.
+
+- **Patch 0569 = v1.0 SHIP.** Per `templates/paper_completion_checklist.md` Phase 7A / 7B / 7C: companion documentation suite (7 files) + verification notebooks + registry updates + navigation updates + development transcripts + OSF registration + repository commit + final verification. Multi-deliverable Patch at SHIP scale.
+
+### §42.5 Self-checkpoint — three places §42.1–§42.4 could overstate
+
+1. **The §42.4 Patch count (~17 Patches) is a planning estimate, not a commitment.** Actual count depends on how sections split or consolidate at each authorization. The estimate is based on Capotauro v2.0's analogous post-hardening-completion arc (~14-16 Patches per `templates/paper_completion_checklist.md` §Session 135 Worked Example) adjusted upward for F.1's slightly different scope. Could be 12-15 or 18-22.
+
+2. **The §42.3 §5 integration decision (Theorems 4.1.1 + 4.2.1 as a single integrated chapter) might prove awkward at Patch 0559 execution.** The decision is structurally motivated (shared dependencies + parallel content) but could yield a chapter that's structurally heterogeneous (two theorems with separate proofs sharing only a setup). Patch 0559 should make a final integration-vs-separation decision based on draft readability; the scoping document records the proposed integration but does not bind Patch 0559 to it.
+
+3. **The §42.2 "load-bearing ChatGPT principle" framing is honest as scoping discipline but the principle's enforcement is a perpetual risk throughout assembly.** Anti-erasure checks at each assembly Patch's Tier 4 §N reasoning depend on careful self-audit; subtle erasure (rounding qualifiers, smoothing repetition) is the natural failure mode. The scoping document records the discipline + the self-checkpoint risk; actual preservation across 13+ assembly Patches requires sustained discipline that the scoping document cannot guarantee.
+

@@ -415,3 +415,73 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 
 **Self-checkpoint at this transaction:** Patch 0552 is the third and final of the F.1 Layer 3 publication-grade hardening trio. The substantive milestone — three load-bearing theorems hardened with consistent architectural pattern — is met. Thomas's earlier framing ("most ergonomic / most likely to lead to closure on this paper/theorem/derivation") proved correct: three small bounded Patches over half a session each cumulatively delivered a programme-level milestone (F.1 flagship paper assembly substantive engageability) without overrunning any individual Patch's scope. The natural pace from here is Thomas's choice among the seven engageable options in the forward queue; the most ergonomic next step within the same session would be the programme-documentation-audit Patch (B) to clean up the accumulating deferred items, but the substantive-physics next step is F.1 flagship paper assembly evaluation (A) which is multi-session work.
 
+
+---
+
+## Transaction 039 — Patch 0553 (F.1 flagship paper assembly scoping; first Patch of paper-assembly arc)
+
+**Date:** 23 May 2026 (Session 142 continuation)
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=85fdf49` = Patch 0552)
+**Branch:** main
+**Patch type:** Governance / scoping — entry point into F.1 flagship paper assembly multi-Patch arc. First Patch of the per-paper checklist Phase 7A engagement per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section. Parallel to Patch 0540's Layer 3 promotion scoping in structure and discipline.
+
+**Trigger:** Thomas's "Please pursue Option A" decision-call following Patch 0552 ship + push at commit `85fdf49`. Option A from the Patch 0552 forward queue ("F.1 flagship paper assembly evaluation gate SUBSTANTIVELY ENGAGEABLE — three publication-grade .tex artifacts available as building blocks; engagement requires explicit decision-call per `templates/paper_completion_checklist.md`; multi-session work") authorised.
+
+**Gate condition cleared:** Per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section (codified at Patch 0539a):
+1. Phase 2 foundations work ✓ (Patches 0531-0537 sketch Layer 2 closure)
+2. Sketch Layer 2 reviewer-pause cycle ✓ (Patches 0538 + 0539a + 0539)
+3. Status upgrade ✓ (Patch 0539)
+4. Further calibration cycles + Layer 3 promotion work ✓ (Patches 0540-0546 + 0548a + reviewer-pause cycle 0547-0549 + publication-grade hardening trio 0550-0552)
+5. Per-paper checklist engagement ENGAGED (this Patch begins Phase 7A scoping)
+
+**Files modified by this Patch (5 file deltas applied + 3 DEFERRED):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/sketches/F1_flagship_paper_assembly_scoping.md` (351 lines markdown). Structure: 9 sections + §0 firewall with 16 anti-priorities. §0 Firewall (16 anti-priorities including load-bearing anti-priority #8 NO erasure of Layer distinction per ChatGPT principle); §1 Engagement context with gate-clearance table + ChatGPT principle restated; §2 Paper structure proposal (target audience, 10-section outline, 30-35 page target, working title and abstract draft); §3 Content inventory (existing F.1 artifacts available + new content to be written, per-Patch assignment); §4 Assembly order and Patch sequence (~17 Patches across paper-skeleton + foundational sections + main results + scope-tracking + closing + reviewer engagement + v1.0 SHIP stages); §5 Reviewer engagement plan (timing post-Patch 0566 + roster A=Copilot/B=Grok/C=ChatGPT + submission format .tex source per Grok PDF-rasterization-failure history); §6 Layer distinction discipline (four explicit practices for every assembly Patch: Layer labels inline at every theorem; scope qualifiers inline at every claim; open questions explicit and numbered OPEN-FP-F1-1 through OPEN-FP-F1-5; anti-erasure checks per assembly Patch Tier 4 reasoning); §7 Anti-priorities cumulative (12 items extending §0.1 across the assembly arc); §8 Self-checkpoint (three risks: outline-as-proposal-not-commitment + Patch-count-estimate-only + Layer-distinction-discipline-is-necessary-not-sufficient); §9 Concluding scope statement.
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §42, 5 subsections: §42.1 what this Patch does structurally + §42.2 load-bearing ChatGPT principle + §42.3 paper structure decision on hardened trio integration + §42.4 multi-Patch sequence + bounded-scope discipline + §42.5 self-checkpoint).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 29).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 039, this entry).
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0553 entry; Patch 0552 entry demoted to `Earlier **Last updated:**`).
+6. DEFERRED — `future_projects.md` F.1 entry tail append. **Seventh consecutive deferral** (0548 + 0548a + 0549 + 0550 + 0551 + 0552 + 0553).
+7. DEFERRED — `F1_phase2_foundations_work.md` §16 cross-reference. **Fifth consecutive deferral** (0549 + 0550 + 0551 + 0552 + 0553).
+8. DEFERRED — Citation correction across ~11 files. **Fourth consecutive deferral** (0550 + 0551 + 0552 + 0553).
+
+**Methods catalogue Step E audit verdict (§29.4 codified discipline):** This Patch demonstrates a structural pattern (paper-assembly-arc scoping document parallel to Layer-3-promotion-arc scoping document at Patch 0540) that is the second instance of the "arc-scoping-document" pattern in the F.1 trajectory. With three+ instances of the hypothesis-tracking pattern from Patches 0550/0551/0552 and now two instances of the arc-scoping pattern, the methods catalogue audit Patch (item C in Patch 0552 forward queue) has at least SIX substantive candidates to evaluate: C1+C2 from Patch 0541a + §5.3 anti-bundling extension from Patch 0548 + retroactive-recognition-pattern from Patch 0548a + reviewer-pause-envelope from Patch 0549 + hypothesis-tracking pattern from Patches 0550/0551/0552 + arc-scoping pattern from Patches 0540 and 0553. VERDICT at this Patch: still no new METH entry created here (catalogue audit Patch is the proper venue). DEFERRED items unchanged.
+
+**Programme state changes at Patch 0553:**
+
+1. F.1 flagship paper assembly arc OPENED. Patch 0553 is the entry point into the multi-Patch arc (anticipated ~17 Patches through v1.0 SHIP at Patch 0569).
+2. F.1 sub-question status now upgrades to (or remains in) implicit "Layer 3 closure + flagship paper assembly engaged" framing. The operative status string at Patch 0549 included "pending publication-grade hardening" (closed for trio via Patches 0550-0552) and "pending Layer 4 axiomatic derivation" + "$\mathcal{O}(\delta^2)$ extension (B.1.q6)" (still DEFERRED).
+3. NEW canonical scoping document at `sketches/F1_flagship_paper_assembly_scoping.md` is the reference for the entire assembly arc; subsequent Patches 0554+ cite this document.
+4. Load-bearing ChatGPT principle (preserve Layer distinction + conditionality + open higher-order questions; do not erase uncertainty structure during paper polishing) codified as anti-priority #8 in the scoping document + operationalised as §6 four-practice discipline + §7 cumulative anti-priorities.
+5. Methods catalogue audit Patch trigger conditions further reinforced: arc-scoping pattern now exercised twice (Patches 0540 + this Patch); hypothesis-tracking pattern from Patches 0550/0551/0552 still pending evaluation. Patch threshold criteria from §28.7 reinforced.
+6. NO Findings registry promotions.
+7. NO sub-question reopenings.
+8. NO v1.0 SHIPPED edits.
+9. NO Patches 0531-0552 immutable content modifications.
+10. NO modification of `hardened_theorems/*.tex` artifacts at this Patch (would compromise their status as section/subsection building blocks for the flagship paper; errata trigger their own future v1.1 Patches if needed).
+11. NO `.tex` content creation for the flagship paper at this Patch (paper skeleton at Patch 0554).
+12. NO F.2 / F.3 substantive content trajectory opening.
+13. NO long-term programme target (Layer 4) work.
+14. NO $\mathcal{O}(\delta^2)$ extension.
+15. NO G1 publication-grade hardening.
+16. NO reviewer engagement at this Patch.
+17. NO modification of templates/ files.
+18. NO methods-catalogue audit work at this Patch.
+19. NO programme-documentation-audit work at this Patch.
+20. PDF-in-repo policy decision flagged: default for upcoming assembly Patches (0554+) is to include PDF alongside `.tex` per SF-4 precedent; subject to Thomas's preference confirmation.
+
+**Forward queue post-Patch 0553:**
+
+- **(A1) Patch 0554 — F.1 flagship paper skeleton creation.** Natural next step in the assembly arc per §4.1 of the scoping document. Creates `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` with full preamble + section headers + title + abstract draft; no body content; compiles to multi-page PDF.
+- **(A2-A13) Patches 0555-0566 — body section assembly.** Per §4.2-§4.5 of the scoping document. One section per Patch maintains bounded-scope discipline.
+- **(A14-A16) Patches 0567-0568a — reviewer engagement cycle.** Per §4.6 of the scoping document. Patch 0567 checkpoint; reviewer engagement window; Patch 0568 calibration response (possibly Patch 0568a split-out per anti-bundling discipline).
+- **(A17) Patch 0569 — F.1 flagship paper v1.0 SHIP.** Per `templates/paper_completion_checklist.md` Phase 7A/7B/7C structure. Multi-deliverable SHIP-scale Patch.
+- **(B) Programme-documentation-audit Patch** — could be triggered between any assembly Patches; landing before Patches 0560+ (where Patch 0550 content integrates with citation references) would be cleaner than after.
+- **(C) Methods catalogue audit Patch** — at least six candidate items; can be triggered at any point.
+- **(D) G1 publication-grade hardening Patch** — closes shared exclusion class E1 from Patches 0551 + 0552; can be triggered independently of paper assembly.
+- **(E) F.2 / F.3 substantive content trajectory openings** — distinct trajectory openings per their own scoping Patches.
+- **(F) Long-term programme target (Layer 4 axiomatic derivation)** REGISTERED + DEFERRED.
+- **(G) JUNO peer-review update integration when published.**
+
+**Self-checkpoint at this transaction:** Patch 0553 opens a multi-Patch arc (anticipated ~17 Patches through v1.0 SHIP) without committing to specific Patch counts or timings. The scoping document is the canonical reference for the arc; each subsequent assembly Patch is bounded-scope with its own four-artifact deliverables. The load-bearing ChatGPT principle (preserve Layer distinction + conditionality + open higher-order questions) governs every assembly Patch and requires sustained discipline that the scoping document records but cannot guarantee. Reviewer engagement at Patches 0567 + 0568 is the external check on whether the discipline held in practice.
+
