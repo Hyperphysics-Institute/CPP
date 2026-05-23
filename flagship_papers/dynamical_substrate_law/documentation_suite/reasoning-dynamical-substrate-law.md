@@ -2743,3 +2743,57 @@ The programme-documentation-audit Patch deferral count increments:
 - Citation correction across ~11 files: **5th consecutive deferral** (Patches 0550 + 0551 + 0552 + 0553 + 0554)
 
 Audit becomes increasingly unavoidable. Citation correction in particular needs to land before Patch 0560 (Patch 0550 content integration), which gives 5 Patches of buffer. Recommended sequencing: programme-documentation-audit Patch at 0555 or 0555a, then resume body section assembly at 0556+. Final call is Thomas's.
+
+---
+
+## §44 Patch 0555 — Programme-documentation-audit Patch (single large coordinated pass; audit renumbered from 0554 after skeleton landed first)
+
+**Context.** Patches 0550-0554 cumulatively accumulated three deferred items by the end of Patch 0554: (i) `future_projects.md` F.1 entry catch-up — 7th consecutive deferral (Patches 0548 + 0548a + 0549 + 0550 + 0551 + 0552 + 0553 + 0554); (ii) `F1_phase2_foundations_work.md` §16 cross-reference — 5th consecutive deferral; (iii) citation correction across ~11 files — 5th consecutive deferral. Thomas's explicit decision-call at Session 142 via the candidacy picker selected "Single large audit Patch 0554 covering all three items"; the answer arrived after Claude had already built and Thomas had applied a paper-skeleton Patch as 0554 at commit `9ab6b36`. The audit was therefore renumbered to Patch 0555 and applied at the next gate against `EXPECTED_BASE=9ab6b36`. This Patch executes that audit.
+
+### §44.1 What this Patch does, structurally
+
+Programme-documentation-audit Patch executing in a single coordinated pass:
+
+1. **`future_projects.md` F.1 entry catch-up**: appends 8 paragraph entries (Patches 0548 + 0548a + 0549 + 0550 + 0551 + 0552 + 0553 + 0554) to the F.1 section, inserted between the existing Patch 0547 entry and the F.2 section header. Each entry is a focused summary (250-400 words) drawing from the corresponding Patch's Tier 4 reasoning + frontier entry + transaction. The entries follow the existing convention: italic `*Patch NNNN — title.* Session NNN Patch NNNN:*` opener, then paragraph content covering substantive work + deliverables + programme state changes + forward queue. **Note**: the count is 8 entries, not the 7 the audit would have had if applied as Patch 0554 — Patch 0554 itself (the skeleton) now needs its own catch-up entry.
+
+2. **`F1_phase2_foundations_work.md` NEW §16**: appends a new §16 section as a cross-reference chronology of F.1 trajectory work post-Patch-0539 (i.e., Patches 0540-0554). §16 is structured as: §16.1 trajectory overview (five chronologically-distinct phases) + §16.2 Layer 3 promotion arc + §16.3 Layer 3 reviewer-pause cycle + §16.4 publication-grade hardening trio + §16.5 flagship paper assembly arc opening + skeleton creation (covers both Patches 0553 and 0554 as a paired phase) + §16.6 cumulative state + §16.7 forward queue + §16.8 self-checkpoint. The section ends the file at canonical chronological coverage through Patch 0554 (this Patch's predecessor).
+
+3. **Citation correction**: per Option 1 resolution from Patch 0550 §1, citation correction is **forward-facing-only**. Prior Patches' content stays as historical record per §17.6 (8) immutable-content discipline. The audit Patch's own additions — the 8 future_projects.md entries and the new §16 section — use the correct identifier "Patch 0544 §3.3 Theorem 3.3.3 + Corollary 3.3.4" rather than the incorrect "Patch 0544 §6 Theorem 6.1" that appeared in some earlier Patch content. No file modifications for citation correction beyond the audit's own additions.
+
+The Patch lands as 6 file deltas + standard four-artifact convention deliverables: (a) `future_projects.md` modification; (b) `F1_phase2_foundations_work.md` modification (§16 append); (c) Tier 4 §44 (this section); (d) Vignette 32; (e) Transaction 042; (f) `research_frontier.md` Last-updated header Patch 0555 entry prepended.
+
+### §44.2 The Patch 0554-vs-0555 sequencing record (full chronology)
+
+A factual record for future Opus windows opening on the F.1 trajectory: the audit Patch was originally numbered 0554 in Claude's first build, then renumbered to 0555 after the skeleton landed first as Patch 0554. The full timing:
+
+1. Session 142 opened after Patch 0553 ship + push at commit `0b2989a`. Two options were on the table per Patch 0553's forward queue: (A) paper skeleton creation; (B) programme-documentation-audit Patch. Claude attempted to elicit Thomas's preference via the candidacy picker with four options.
+2. Before the picker answer arrived, Thomas sent "Please proceed... your call" framing. Claude flip-decided (A) paper skeleton at 0554, built it, and presented the apply script.
+3. Thomas applied the skeleton Patch and pushed it at commit `9ab6b36`.
+4. The picker answer "Single large audit Patch 0554 covering all three items" then arrived. The picker had been answered with option (1) the single large audit Patch.
+5. Claude honored the explicit preference, discarded the earlier work as 0554, and rebuilt as Patch 0554 audit (`EXPECTED_BASE=0b2989a`). The audit apply script was generated and presented to Thomas.
+6. Thomas attempted the audit-as-0554 apply: preflight failed with "HEAD is at 9ab6b36; Patch 0554 requires base 0b2989a". Thomas asked Claude to proceed.
+7. Claude renumbered the audit to Patch 0555 with `EXPECTED_BASE=9ab6b36`, updated all internal numbering (Tier 4 §43 → §44; Vignette 31 → 32; Transaction 041 → 042; deferral counts incremented to account for the skeleton's having added one more deferral cycle to each item), and added a new 8th future_projects.md entry for Patch 0554 itself (since the skeleton now needs catch-up coverage in this audit).
+
+**Discipline lesson registered**: when a user's "your call" framing is the latest signal AND an earlier picker is still unanswered, Claude should bias toward the smaller/cleaner option only when reversal cost is low — and explicitly flag the timing-ambiguity in the message. In this case, Claude built the skeleton thinking the picker had been bypassed; in fact the picker answer was simply slow to arrive. The reversal cost was non-zero (Patch 0554 commit log now records the skeleton, not the audit) but operationally manageable (audit renumbered cleanly to 0555).
+
+### §44.3 The three deferred items now CLOSED at this Patch
+
+After landing, the three deferral counts go to zero:
+
+- `future_projects.md` F.1 entry: **CLOSED at Patch 0555** (was 7th consecutive deferral after Patch 0554; now 8 entries added covering Patches 0548-0554).
+- `F1_phase2_foundations_work.md` §16: **CLOSED at Patch 0555** (was 5th consecutive deferral after Patch 0554; new §16 covering Patches 0540-0554 chronology now in place).
+- Citation correction across ~11 files: **CLOSED at Patch 0555** (was 5th consecutive deferral after Patch 0554; forward-facing-only resolution per Option 1; this Patch's additions use correct identifier; prior Patches preserved per §17.6 (8)).
+
+This is the first Patch in F.1 trajectory history that closes all three documentation drift items simultaneously. Future Patches in the flagship paper assembly arc (0556 onwards) start with zero documentation drift inherited and can focus on substantive paper content.
+
+### §44.4 Self-checkpoint — three places §44.1-§44.3 could overstate
+
+1. **The "single large coordinated pass" framing** describes the file-delta structure (3 documentation drift items + 4-artifact convention deliverables in one Patch). It does NOT imply that the audit's content equals the cumulative content the three items would have contributed had they been addressed incrementally across Patches 0548-0554. The future_projects.md entries are focused 250-400-word summaries — substantively shorter than the full Tier 4 reasoning + transaction content each Patch produced at its time. The §16 chronology is a cross-reference + summary — substantively shorter than the per-Patch Tier 4 + frontier content. The audit captures the canonical reference for the trajectory; the per-Patch detail lives at the Patch's own Tier 4 §N and research_frontier.md entry, which are preserved as immutable historical record.
+
+2. **The Patch 0554-vs-0555 renumbering** at §44.2 is operationally clean (no commits collide; both Patches will land cleanly in sequence), but it documents a flip-decision-vs-explicit-preference timing issue that should not repeat. The discipline lesson is registered but does not have a specific catalogue entry at this Patch (deferred for methods catalogue audit Patch consideration with the other 7 candidates).
+
+3. **The "first Patch in F.1 trajectory history that closes all three documentation drift items"** framing is accurate at the moment of this Patch, but the trajectory is long-running and future Patches may again accumulate documentation drift items requiring future audit Patches. The methodology — accumulate during substantive work + clear in dedicated audit Patches — is the discipline pattern; this Patch is one instance, not a unique event.
+
+### §44.5 Methods catalogue Step E audit verdict
+
+Per §29.4 codified discipline: this Patch is a programme-documentation-audit Patch executing established programme-governance methodology (file-by-file documentation drift cleanup + cross-reference chronology + four-artifact convention). No new METH entry at this Patch. The methods catalogue audit Patch (item C in Patch 0552 forward queue) still has at least EIGHT substantive candidates pending evaluation: C1+C2 from Patch 0541a + §5.3 anti-bundling extension from Patch 0548 + retroactive-recognition pattern from Patch 0548a + reviewer-pause-envelope from Patch 0549 + hypothesis-tracking pattern from Patches 0550/0551/0552 + arc-scoping pattern from Patches 0540/0553 + programme-documentation-audit pattern (recognized at this Patch as a recurring discipline) + **NEW at this Patch: flip-decision-vs-explicit-preference discipline lesson from the Patch 0554/0555 timing event**.

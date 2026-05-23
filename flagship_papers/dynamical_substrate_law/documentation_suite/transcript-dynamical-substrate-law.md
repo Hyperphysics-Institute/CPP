@@ -546,3 +546,61 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(I) JUNO peer-review update integration when published.**
 
 **Self-checkpoint at this transaction:** Patch 0554 establishes the file-structure scaffold for the flagship paper. The 338-line skeleton compiles cleanly to a 3-page PDF and is ready to receive body content. Layer-distinction discipline operates at the placeholder level (each theorem has explicit "sketch-document Layer 3" label). Anti-erasure scaffolding starts before substance. The PDF-in-repo policy is clarified at Tier 4 §43.2 codification level: in-progress assembly Patches commit `.tex` only; v1.0 SHIPPED PDF (Patch 0569) commits both `.tex` and `.pdf` per Session 142 Thomas clarification + SF-4 precedent.
+
+---
+
+## Transaction 042 — Patch 0555 (programme-documentation-audit; renumbered from 0554 after skeleton landed first)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=9ab6b36` = Patch 0554 skeleton).
+**Branch:** main.
+**Patch type:** Programme-documentation-audit (governance) — single large coordinated pass closing three accumulated deferred items. Authorised via Thomas's explicit decision-call: "Single large audit Patch 0554 covering all three items" via the candidacy picker selecting option (1); audit renumbered from 0554 to 0555 because the skeleton Patch (Claude's flip-decision built before the picker answer arrived) landed first at commit `9ab6b36`.
+
+**Trigger:** Thomas's preflight failure of the audit-as-0554 attempt against `EXPECTED_BASE=0b2989a` (skeleton already at HEAD = `9ab6b36`), followed by Thomas's "please proceed" directing Claude to renumber and proceed.
+
+**Files modified (6 file deltas applied + 0 DEFERRED — all three items closed):**
+
+1. APPEND — `future_projects.md` F.1 entry. 8 paragraph entries (Patches 0548 + 0548a + 0549 + 0550 + 0551 + 0552 + 0553 + **0554**) inserted between existing Patch 0547 entry and F.2 section header. Each entry 250-400 words following the established convention. Closes 7th consecutive future_projects.md F.1 entry deferral.
+2. APPEND — `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (NEW §16 cross-reference chronology, ~120 lines, 8 subsections covering Patches 0540-0554; §16.5 covers paired Patches 0553+0554 phase). Closes 5th consecutive §16 cross-reference deferral.
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §44, 5 subsections: §44.1 what this Patch does structurally + §44.2 Patch 0554-vs-0555 sequencing record full chronology + §44.3 three deferred items now CLOSED + §44.4 self-checkpoint + §44.5 methods catalogue Step E audit verdict).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 32).
+5. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 042, this entry).
+6. PREPEND — `research_frontier.md` Last-updated header (Patch 0555 entry; Patch 0554 demoted to `Earlier **Last updated:**`).
+
+**Citation correction**: forward-facing-only per Option 1 resolution from Patch 0550 §1. This Patch's own additions (the 8 future_projects.md entries + the new §16 + Tier 4 §44 + Vignette 32 + Transaction 042 + research_frontier.md entry) use the correct identifier "Patch 0544 §3.3 Theorem 3.3.3 + Corollary 3.3.4" rather than the incorrect "Patch 0544 §6 Theorem 6.1" that appeared in some earlier Patch content. No file modifications for citation correction beyond the audit's own additions per §17.6 (8) immutable-content discipline; prior Patches preserved as historical record.
+
+**Methods catalogue Step E audit verdict (§29.4 codified discipline):** no new METH entry at this Patch. Programme-documentation-audit Patch is established programme-governance methodology. TWO new pattern recognitions: (a) programme-documentation-audit pattern as a recurring discipline; (b) flip-decision-vs-explicit-preference discipline lesson from Patch 0554/0555 timing event. Methods catalogue audit Patch (item C in Patch 0552 forward queue) now has at least EIGHT substantive candidates pending evaluation.
+
+**Programme state changes at Patch 0555:**
+
+1. **All three deferred items CLOSED**: future_projects.md F.1 entry (7 deferral count → 0); F1_phase2_foundations_work.md §16 (5 deferral count → 0); citation correction (5 deferral count → 0; resolved via forward-facing-only Option 1).
+2. **F.1 trajectory documentation now canonical-current through Patch 0554**: future_projects.md F.1 entry covers Patches 0531-0554 inclusive; F1_phase2_foundations_work.md §1-§16 covers full trajectory through Patch 0554 (Phase 2 foundations work §1-§14 + Patch 0539 status upgrade §15 + Patches 0540-0554 chronology §16).
+3. **Patch 0556+ starts with zero documentation drift inherited**: subsequent flagship paper assembly arc Patches focus on substantive paper content without housekeeping accumulation.
+4. **F.1 sub-question status UNCHANGED** at Patch 0549 framing.
+5. NO new Findings.
+6. NO sub-question reopenings.
+7. NO v1.0 SHIPPED edits.
+8. NO Patches 0531-0554 immutable content modifications (only APPEND operations).
+9. NO modification of `hardened_theorems/*.tex` artifacts.
+10. NO modification of the skeleton `.tex` (Patch 0554 content immutable).
+11. NO body content added to flagship paper (each body section is its own future Patch).
+12. NO F.2 / F.3 substantive content trajectory opening.
+13. NO long-term programme target (Layer 4) work.
+14. NO reviewer engagement at this Patch.
+15. NO modification of templates/ files.
+16. NO methods-catalogue audit work at this Patch (separate future Patch with 8 candidates).
+17. Step E audit at Patch authoring per §29.4.
+
+**Forward queue post-Patch 0555:**
+
+- **(A) Patch 0556 = §1 Introduction body** per scoping document §4.2 — natural arc continuation; one section per Patch maintains bounded-scope discipline.
+- **(B) Patches 0557-0567 — body section assembly** per scoping document §4.2-§4.5: §2 sub-question at Patch 0557, §3 framework primitives at Patch 0558, etc. Anticipated ~11 Patches.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle** per scoping document §4.6.
+- **(D) Patch 0570 (or thereabouts) — F.1 flagship paper v1.0 SHIP** per `templates/paper_completion_checklist.md` Phase 7A/7B/7C; multi-deliverable SHIP-scale Patch; PDF committed to repo at this Patch per Session 142 PDF-in-repo policy clarification + SF-4 precedent. The SHIP Patch number shifted from the originally-anticipated 0569 by one due to the 0554-skeleton + 0555-audit pair landing inside the originally-anticipated arc count.
+- **(E) Methods catalogue audit Patch** — at least 8 candidate items.
+- **(F) G1 publication-grade hardening Patch** — closes shared E1 from Patches 0551 + 0552.
+- **(G) F.2 / F.3 substantive content trajectory openings.**
+- **(H) Long-term programme target (Layer 4 axiomatic derivation)** REGISTERED + DEFERRED.
+- **(I) JUNO peer-review update integration when published.**
+
+**Self-checkpoint at this transaction:** Patch 0555 closes three accumulated deferred items in a single coordinated pass per Thomas's explicit decision (renumbered from 0554 due to skeleton landing first). The audit captures the canonical reference for the F.1 trajectory through Patch 0554; per-Patch detail lives at each Patch's own Tier 4 §N + transaction + frontier entry which remain immutable historical record. Patch 0556+ flagship paper assembly arc resumes with zero documentation drift inherited.
