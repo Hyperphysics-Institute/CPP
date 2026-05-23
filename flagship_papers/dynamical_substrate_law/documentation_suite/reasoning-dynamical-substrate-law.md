@@ -2261,3 +2261,98 @@ Methods used: (i) Template-based checkpoint document creation per `templates/rev
 
 (iii) **"Submitted to reviewers" framing**: this Patch creates the checkpoint document; actual submission to reviewers (ChatGPT/Copilot/Grok) is a separate workflow step by Thomas per `templates/relationship_protocol.md`. The document is READY for submission upon this Patch's apply.
 
+
+---
+
+## §36 Patch 0548 — Layer 3 reviewer-pause feedback record (calibration response Patch)
+
+**Context.** Patch 0547 (`6274997`) submitted the Layer 3 reviewer-pause checkpoint document to the three-reviewer pool per `templates/relationship_protocol.md` §5 engagement standard. All three verdicts arrived at end of Session 140 with a follow-up Q2 query to ChatGPT clarifying the Target 7 standalone-closure scope. Session 141 opens with this Patch — the calibration response artifact recording verbatim reviewer feedback, identifying cross-reviewer convergent items, and committing to two successor Patches (0548a standalone Target 7 closure; 0549 F.1 trajectory status upgrade).
+
+### §36.1 Decision to author Patch 0548 as calibration-response-only (anti-bundling discipline extended)
+
+The reviewer feedback presented an immediate authoring-scope decision: should the calibration response and the standalone Target 7 closure be a single combined Patch (large, comprehensive) or two adjacent Patches (smaller, more separable)? ChatGPT's Q2 follow-up resolved this explicitly: "Preferred structure: Patch 0548 = calibration response / feedback record only. Patch 0548a (or equivalent adjacent patch) = standalone Target 7 closure artifact. I do think your anti-bundling concern is real."
+
+The decision was to extend the §5.3 anti-bundling discipline (originally codified for reviewer-pause checkpoints to prevent bundling checkpoint submission with substantive content additions) from reviewer-pause checkpoints to calibration responses. The discipline rationale carries cleanly: a calibration response artifact's primary audit function is to record what was raised and how it was answered; bundling a separate substantive closure artifact dilutes that audit function and re-creates the governance asymmetry the calibration response is supposed to repair.
+
+ChatGPT's wording — "separating reviewer calibration from substantive Layer 3 closure artifacts preserves cleaner governance boundaries" — is the operative principle. This Patch is therefore narrow: it records, identifies, calibrates, commits forward. It does not deliver the Target 7 closure artifact itself; that is Patch 0548a's specific deliverable.
+
+### §36.2 What this Patch does
+
+Five concrete actions:
+
+1. **Verbatim recording.** §1 of the new feedback record file paste-blocks all three reviewer verdicts (§1.1 Copilot, §1.2 Grok, §1.3 ChatGPT) plus the ChatGPT Q2 follow-up (§1.4) without paraphrase, smoothing, or condensation. This is the audit-foundation of the calibration response — future-window Opus instances reading this artifact can verify what was actually said versus what was identified as convergent.
+
+2. **Convergent-item identification.** §2 identifies five cross-reviewer convergent items (C1 Target 7 closure governance; C2 Theorem 6.1 scope qualifier; C3 sector-5 schema/template framing; C4 softer "Layer 3 analogue" wording; C5 status framing). The convergent-item identification follows `templates/relationship_protocol.md` discipline of ≥2 reviewer concurrence; Grok's single-reviewer positive verdict is honored as a data point but does not override the convergent A+C concerns.
+
+3. **Calibration responses adopting ChatGPT's verbatim phrasing.** §3 of the feedback record records calibration responses for each convergent item using ChatGPT's exact wording per Thomas's "no preference, use default" instruction. The phrasings — "perturbative locality under Mechanism A and the framework-local current construction" for C2; "schema / universality template, not as a fully instantiated sector closure" for C3; "The temporal-sector argument now has a sketch-document Layer 3 analogue of the spatial-sector C-W39-style proof pattern" for C4; and the full STRUCTURALLY-GROUNDED SKETCH-DOCUMENT status framing for C5 — are adopted forward-facing only. Per §17.6 (8) immutability no prior artifact is modified.
+
+4. **Patch 0548a commitment.** §3.1 commits to Patch 0548a as a standalone Target 7 closure artifact in `layer3_promotion/`. The Patch 0548a specification is previewed in §6.1 of the feedback record + §3.1 of this Tier 4 section. Critical anti-pattern: Patch 0548a is closure-governance normalization, NOT new mathematics. Patch 0544 §6 Theorem 6.1 remains the substantive theorem source.
+
+5. **Patch 0549 commitment.** §6.2 commits to Patch 0549 as the F.1 trajectory Layer 3 status upgrade Patch with the convergent A+C verbatim framing. Patch 0549 officially closes the Layer 3 reviewer-pause cycle (mirroring the Patch 0539 sketch Layer 2 cycle closure).
+
+### §36.3 Calibration-vs-substantive-content framing decision
+
+Within Patch 0548 the calibration responses are recorded as **forward-facing language updates**, not as retroactive corrections of prior artifacts. The distinction is load-bearing for §17.6 (8) immutability and warrants explicit reasoning:
+
+A calibration response can be implemented in three ways: (a) edit prior artifacts to use the new phrasing (retroactive correction); (b) record the new phrasing as forward-facing only with prior artifacts preserved as historical record (additive update); (c) issue a v1.1 of prior artifacts with explicit changelog (semi-retroactive update with audit trail).
+
+Mode (a) violates §17.6 (8) and destroys the historical record of what was authored versus what was calibrated — both of which are programme-level audit assets. Mode (c) is appropriate when the prior artifact's error is structural (e.g., a numerical mistake, an incorrect derivation step) where preserving the wrong content is misleading. Mode (b) is appropriate when the prior artifact's content is structurally correct but its framing language can be tightened — which is exactly the C2 / C3 / C4 / C5 situation. The structural content of Theorem 6.1 (Patch 0544 §6), the sector-5 universality argument (Patch 0545 §5.2), the rigor-comparison analogy (Patch 0544 §5 self-checkpoint), and the Patch 0539 status framing are all structurally correct; only the framing language can be tightened.
+
+Mode (b) is therefore adopted. Prior artifacts are NOT modified. The new phrasings apply forward-facing to Patch 0548a, Patch 0549, and any future F.1 flagship paper assembly content. The historical record of what was originally authored remains intact; the calibration record of what was tightened is recorded in §3 of the feedback record + this Tier 4 section.
+
+### §36.4 Per-convergent-item calibration rationale
+
+Each convergent item has its own calibration logic worth recording at Tier 4 depth:
+
+**C2 — Theorem 6.1 scope qualifier.** Copilot's concern read literally would require demonstrating that Theorem 6.1's proof does not assume locality in the current's definition. This is structurally already the case — Mechanism A is parametrically defined (Patch 0544 §2 / A11) without graph-distance bounds, and the connected-subgraph argument derives locality from the $\delta$-power expansion of the parametric form, not from any prior locality assumption on currents. The §3.2 calibration response of the feedback record records this as a defense of structural non-circularity. However, ChatGPT's parallel concern reads the issue more honestly: the proof's coverage is narrower than the "perturbation theory" label might suggest, because Mechanism A's parametric form and the framework-local current construction are framework-specific assumptions that bound the result. ChatGPT's verbatim phrasing "perturbative locality under Mechanism A and the framework-local current construction" captures this scope honestly without claiming non-circularity is in question. Adoption of ChatGPT's phrasing is therefore the correct calibration: structural non-circularity is preserved at the proof level; scope-honesty is established at the status-language level.
+
+**C3 — Sector-5 schema/template reframing.** The Layer 3 promotion arc (specifically Patch 0545 §5.2) explicitly flagged the W-bracelet and K₃-base temporal analogs as "hypothetical entries" — a scope qualification at the sector instance level. ChatGPT's concern extends this scope qualification to the **5-sector closure framing itself**: even with four sectors explicitly instantiated, calling the structural universality argument a "5-sector closure" reads as if all five are demonstrated instances. ChatGPT's verbatim phrasing — "schema / universality template, not as a fully instantiated sector closure" — preserves the structural universality argument's content while preventing instantiation over-claim. The calibration is honest about what is and isn't demonstrated: four instances + one schema, not five instances.
+
+**C4 — "Rigor-level asymmetry equalized" softened wording.** This calibration is the most directly framing-level. The Patch 0544 §5 self-checkpoint's "equalized" framing was an inference about the methodological parallel achieved by the substrate-locality temporal extension argument. ChatGPT correctly observed that "equalized" implies parity with publication-grade hardening — which the spatial-sector results have (Capotauro v2.0 series) but which a sketch-document Layer 3 result cannot claim. ChatGPT's verbatim alternative — "the temporal-sector argument now has a sketch-document Layer 3 analogue of the spatial-sector C-W39-style proof pattern" — preserves the substantive achievement (methodological analogue established) while avoiding the parity-with-publication-grade implication. This is straightforwardly correct calibration.
+
+**C5 — Status-upgrade framing.** Copilot and ChatGPT converged on "STRUCTURALLY-GROUNDED LAYER 3 CLOSURE" framing at the surface level; the convergence does not extend to the qualifier tail. ChatGPT's additions — "SKETCH-DOCUMENT," "minimal-local-first-order," and the "pending Layer 4 / $\mathcal{O}(\delta^2)$ / publication-grade hardening" tail — are strictly tighter than Copilot's framing. Both qualifications are honest given the actual Layer 3 work: sketch-document level (artifact-type qualifier), minimal-local-first-order framework (scope qualifier), and pending tail (deferral qualifier). Adoption of ChatGPT's strictly tighter framing is calibration-correct and does not lose any Copilot-side content. The §9 self-checkpoint of the feedback record notes that this should not later be characterized as "verbatim Copilot phrasing" — it is verbatim ChatGPT phrasing that is also consistent with Copilot's concern.
+
+### §36.5 What this Patch does NOT do
+
+Per `templates/operating_system.md` §15.11 audit discipline, what an artifact does NOT do is as important as what it does. Six explicit non-actions:
+
+1. **Does NOT bundle the Target 7 standalone closure.** Patch 0548a is the next adjacent Patch; this Patch does not deliver Target 7 closure content.
+
+2. **Does NOT modify any prior artifact.** Patches 0531–0547 immutable content preserved per §17.6 (8). The new phrasings apply forward-facing only.
+
+3. **Does NOT change the F.1 sub-question status.** Patch 0539 status framing is preserved through this Patch. Patch 0549 is the status-change Patch.
+
+4. **Does NOT promote any intermediate result to the Findings registry or theorem registry.** Theorem 6.1, the Schur decomposition result, the I1 and G3 identities, the Substrate-Locality Unification corollary — all remain at intermediate Layer 3 promotion document status. Registry promotion requires dedicated registry-entry Patches.
+
+5. **Does NOT trigger F.1 flagship paper assembly evaluation.** The gate becomes live only after Patch 0549; this Patch is the calibration midpoint of the three-Patch closure sequence.
+
+6. **Does NOT update `future_projects.md` F.1 entry tail — DEFERRED with discrepancy flagged.** The Patch 0547 §4 specification's deliverable list item (f) requires `future_projects.md` F.1 entry tail to receive a Patch 0548 paragraph, parallel to the deliverable lists of Patches 0531–0547 which all consistently claim `(f) future_projects.md F.1 entry Patch <NNNN> paragraph appended`. However, the actual current state of `future_projects.md` (file header: `**Last updated:** 16 April 2026`) contains NO F.1 entry — the file is structured as a Future Projects registry listing Project 0 through Project 12 covering flagship paper plans and infrastructure work, with no F.1 sub-question section anywhere in the document. This is a programme-level documentation-audit discrepancy between Patch-record deliverable claims and file-state reality, spanning Patches 0531–0547 inclusive. Patch 0548 deviates from the §4 specification on this one deliverable rather than inventing file content for an absent section. The discrepancy is flagged here for future-window resolution as a dedicated programme-documentation-audit task. Five-of-six deliverables shipped (NEW feedback record + Tier 4 §36 + Vignette 23 + Transaction 033 + `research_frontier.md` prepend); deliverable (f) DEFERRED.
+
+### §36.6 Programme-level significance
+
+Three programme-level observations are worth recording:
+
+**Observation 1: governance discipline scales sublinearly with content.** The Layer 3 reviewer-pause cycle is structurally identical to the sketch Layer 2 cycle (checkpoint → feedback record → status upgrade) but the substantive content reviewed and calibrated is materially larger (six Layer 3 promotion documents + a 297-line checkpoint vs. the sketch Layer 2 work). The cycle's three-Patch governance overhead is approximately constant (0547 + 0548 + 0549 = 3 Patches, mirroring 0538 + 0539a + 0539 = 3 Patches). This sublinear scaling of governance discipline with content is a programme-level efficiency observation worth preserving.
+
+**Observation 2: convergent-item discipline reliably surfaces real calibration items even with split feedback.** Three reviewers produced a 1-positive / 2-conditional-negative split, with the conditional-negatives convergent on five items. The relationship_protocol.md discipline of requiring ≥2 reviewer concurrence does NOT collapse into "majority rules" — Grok's positive verdict is recorded as a data point and considered seriously, but the convergent A+C concerns drive the calibration work. This is the correct epistemic posture: positive single-reviewer signals are informative but do not preempt convergent concerns about scope, framing, or governance.
+
+**Observation 3: ChatGPT's "scope-boxing is the real governance repair" framing is the load-bearing principle.** The C1 standalone closure artifact's primary content is the §3 scope-boundary statement (exclusion list of $\mathcal{O}(\delta^2)$, nonlinear variants, alternative current constructions, Layer 4 derivation, publication-grade hardening). The §4 "Why retroactive recognition alone was judged insufficient" subsection is a closing audit-trail addition. The Patch 0548a substance is NOT new mathematics — it is the formal recognition that Target 7's closure operates within an explicit framework-local scope, with everything outside that scope explicitly excluded. This shifts the governance burden from "did we prove Theorem 6.1?" (yes, at Patch 0544 §6) to "did we honestly bound what Theorem 6.1's closure status implies?" (yes, at Patch 0548a §3). The latter is what makes the Layer 3 result honest.
+
+### §36.7 Methods catalogue audit verdict (§29.4 codified discipline)
+
+Per §29.4 codified discipline this Patch's Step E methods-catalogue check is performed:
+
+**Verdict: NO NEW METH entries at this Patch.** Patch 0548 is documentation-and-governance Patch (calibration response artifact + four-artifact deliverables); no new computational methods, audit procedures, or workflow patterns are introduced that warrant catalogue entries. The C1 / C2 candidate entries registered at Patch 0541a remain DEFERRED pending dedicated catalogue-audit Patch (not authorized at this Patch).
+
+One observation worth noting for future catalogue audit: the §5.3 anti-bundling discipline's extension from reviewer-pause checkpoints to calibration responses (per ChatGPT's Q2 follow-up) is a governance pattern that may warrant a future METH entry as "anti-bundling discipline scope" — but this is METH-G (governance) territory, not METH-L2 (Layer 2 audit) territory, and requires a dedicated catalogue Patch to register cleanly. Recorded here as observation only.
+
+### §36.8 Self-checkpoint — three places §36.1–§36.7 could overstate
+
+Three places this Tier 4 section could overstate:
+
+1. **The §36.6 Observation 1 "sublinear scaling" claim is on a sample size of two cycles.** The sketch Layer 2 cycle (Patches 0538 + 0539a + 0539) and the Layer 3 cycle (Patches 0547 + 0548 + 0549) both used three Patches but they are the only data points. Generalizing this to "sublinear scaling of governance discipline with content" needs more cycles before it can be claimed as a programme-level pattern. The observation is honest at sample size 2 but should not be cited as established discipline.
+
+2. **The §36.4 C2 "structural non-circularity defense" could be over-cited later.** The defense at §3.2 of the feedback record is honest at Layer 3 — the parametric definition of Mechanism A is independent of graph-distance bounds. But this defense should not be cited at Layer 4 axiomatic-derivation work without further independent proof. Layer 4 will likely require demonstrating non-circularity from axioms upward, not from Mechanism A's parametric form downward.
+
+3. **The §36.6 Observation 3 "scope-boxing is the load-bearing principle" could read as elevating governance over mathematics.** It does not — Patch 0544 §6 Theorem 6.1 remains the substantive theorem source. Scope-boxing is the **calibration-cycle-specific** load-bearing principle, not a general epistemic principle. In a different cycle (e.g., one where substantive theorems were challenged on derivation steps rather than scope claims) the calibration cycle would have different load-bearing content. The Observation should not later be summarized as "scope-boxing > theorem-proving."
+
