@@ -292,3 +292,64 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 
 **Self-checkpoint at this transaction:** Patch 0550 is the first substantive physics Patch after the Layer 3 reviewer-pause cycle closure at Patch 0549. The physics content is publication-grade rigorisation of one theorem (Theorem 3.3.3 + Corollary 3.3.4); the artifact compiles cleanly to PDF; the scope qualifier is structurally embedded in the theorem hypotheses. The natural successor Patches (0551, 0552) for Theorems 4.1.1 + 4.2.1 hardening are identified at the .tex Conclusion; engaging them is Thomas's decision-call. The citation discrepancy discovery and Option 1 resolution adds visible accumulated programme documentation drift to the programme-documentation-audit Patch task (now three sub-items).
 
+
+---
+
+## Transaction 037 — Patch 0551 (publication-grade hardening of Theorem 4.1.1; second of three F.1 Layer 3 building-block hardenings)
+
+**Date:** 23 May 2026 (Session 142 continuation)
+**Commit (anticipated):** assigned at push (this Patch lands via single .sh apply script with `EXPECTED_BASE=4ef1a70` = Patch 0550)
+**Branch:** main
+**Patch type:** Substantive physics — publication-grade hardening of one specific Layer 3 theorem (Patch 0544 §4.1 Theorem 4.1.1, formerly Identity G3, first-shell-to-first-shell edge-direction perpendicularity). Second of three building-block hardenings needed for full F.1 Layer 3 stack publication-grade closure.
+
+**Trigger:** Natural successor to Patch 0550 identified at Patch 0550 §7 Conclusion + §6 exclusion class E5. Thomas's authorization to "proceed to 551" following Patch 0550's clean apply + push at commit 4ef1a70.
+
+**Substantive theorem source:** Patch 0544 §4.1 Theorem 4.1.1 (For any pair of distinct first-shell vertices $v_i \neq v_j$ of $v_{\text{host}}$ in the 600-cell at vertex-aligned Reading C, the unit edge-direction $\hat{e}_{ij} = (v_j - v_i)/|v_j - v_i|$ satisfies $\hat{e}_{ij}\cdot\hat{n} = 0$). Patch 0544 §4.1 content preserved per §17.6 (8); this Patch is publication-grade elevation NOT modification.
+
+**Files modified by this Patch (5 file deltas applied + 3 DEFERRED):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex` (207 lines of LaTeX in existing `hardened_theorems/` subdirectory established at Patch 0550; compiles to 6-page PDF, 261 KB, no undefined references after standard 2nd pdflatex pass). Structure: 7 sections + bibliography. §1 Introduction with position in F.1 Layer 3 hardening sequence + main theorem statement with hypotheses (H1) vertex-aligned Reading C + (H2) 600-cell unit-vertex normalisation + (H3) first-shell inner-product primitive G1 imported from Patch 0541 §3.1; §2 Preliminaries; §3 Proof in two steps — Lemma 3.1.1 (First-shell tangent hyperplane) + perpendicularity computation; §4 Corollary 3.1.2 (Icosahedral first shell in tangent hyperplane); §5 Five exclusion classes E1–E5 with E1 explicitly recording G1's sketch-document Layer 3 import as candidate for separate hardening; §6 Cross-references (use in Patch 0550 Remark 3.3.2 + substrate-rate perturbation application at Patch 0544 §4.3 + Capotauro v2.0 §13.3 spatial-sector structural parallel); §7 Conclusion identifying Patch 0552 (Theorem 4.2.1 hardening) as natural successor closing the F.1 Layer 3 stack publication-grade hardening trio.
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §40, 5 subsections).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 27).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 037, this entry).
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0551 entry; Patch 0550 entry demoted to `Earlier **Last updated:**`).
+6. DEFERRED — `future_projects.md` F.1 entry tail append. **Fifth consecutive deferral** (Patches 0548 + 0548a + 0549 + 0550 + 0551); same discrepancy; future-window programme-documentation-audit Patch carries forward.
+7. DEFERRED — `F1_phase2_foundations_work.md` §16 cross-reference. **Third consecutive deferral** (Patches 0549 + 0550 + 0551); modification requires file-state audit.
+8. DEFERRED — Citation correction across ~11 files. **Second consecutive deferral** (Patches 0550 + 0551); audit-Patch sub-item.
+
+**Methods catalogue Step E audit verdict (§29.4 codified discipline):** NO NEW METH entries at this Patch. Hypothesis-tracking + tangent-hyperplane-lemma promotion + scope-bounded exclusion enumeration is now exercised in TWO consecutive Patches (0550, 0551) in the F.1 trajectory. The pattern is approaching METH-G governance threshold (multiple instances in same trajectory) but not yet over: §28.7 threshold requires either (a) cross-trajectory exercise or (b) explicit programme-pattern significance. Either is plausible after Patch 0552 lands and the pattern is exercised a third time within the same hardening trio. Catalogue audit Patch (item E in forward queue) is the appropriate evaluation venue. DEFERRED candidates unchanged from Patch 0550 transaction.
+
+**Programme state changes at Patch 0551:**
+
+1. Publication-grade .tex artifact landed for Theorem 4.1.1 — second of three building-block hardenings for F.1 Layer 3 stack publication-grade closure. After Patches 0550 + 0551, **⅔ of the trio is hardened** (Theorem 3.3.3 + Corollary 3.3.4 from Patch 0550; Theorem 4.1.1 from this Patch); Theorem 4.2.1 remains at sketch-document Layer 3 rigor pending anticipated Patch 0552.
+2. Patch 0550's exclusion class E5 ("underlying graph-theoretic claims about $\Gamma_{600}$ taken as given") closed for ONE of the two identities (4.1.1); the other (4.2.1) remains as the open dependency.
+3. Hypothesis-tracking pattern from Patch 0550 (scope qualifier built into hypotheses (H1)–(H3) + five-class exclusion enumeration + tangent-hyperplane / proof-restructuring discipline) exercised a second time. Pattern accumulating evidence for potential METH-G catalogue entry pending third instance + audit.
+4. New documentation-suite hardening dependency registered: G1 (Patch 0541 §3.1 primitive, at sketch-document Layer 3 rigor) is recorded as exclusion class E1 of Patch 0551 .tex artifact, making it a candidate for future "G1 publication-grade hardening" Patch (potentially Patch 0553 or bundled with G2 hardening alongside Patch 0552's anticipated work).
+5. F.1 sub-question status UNCHANGED at Patch 0549 framing — publication-grade hardening pending item is now ⅔ addressed but not fully closed.
+6. F.1 flagship paper assembly gate remains LIVE — engageable post-Patch 0552 with three publication-grade theorem artifacts available as building blocks.
+7. NO new Findings registered.
+8. NO sub-question reopenings.
+9. NO v1.0 SHIPPED edits.
+10. NO Patches 0531–0550 immutable content modifications per §17.6 (8).
+11. NO modification of Patch 0544 §4.1 Theorem 4.1.1 content — preserved as substantive source.
+12. NO F.1 flagship paper assembly trigger.
+13. NO F.2 / F.3 substantive content trajectory opening.
+14. NO long-term programme target (Layer 4) work.
+15. NO $\mathcal{O}(\delta^2)$ extension (B.1.q6 territory remains open).
+16. NO hardening of G1 (Patch 0541 §3.1) at this Patch — recorded as exclusion class E1.
+17. NO hardening of Theorem 4.2.1 at this Patch — that's Patch 0552 territory.
+18. NO promotion of Theorem 4.1.1 to THEO-* registry identifier (would require dedicated registry-entry Patch).
+
+**Forward queue post-Patch 0551:**
+
+- **(A) Patch 0552 — publication-grade hardening of Patch 0544 §4.2 Theorem 4.2.1 (formerly Identity I1, host-to-first-shell uniform projection $\hat{u}_i\cdot\hat{n} = -1/(2\phi)$).** Completes the trio of F.1 Layer 3 building-block hardenings; closes the last dependency from Patch 0550's exclusion class E5.
+- **(B) After Patch 0552: F.1 flagship paper assembly evaluation gate substantively engageable** with three publication-grade theorem artifacts as building blocks (Patch 0550 + 0551 + 0552). Engagement requires Thomas's explicit decision-call per `templates/paper_completion_checklist.md`.
+- **(C) Programme-documentation-audit Patch** carrying forward three deferred items now visible across multiple Patches: future_projects.md F.1 entry (5 Patches); F1_phase2_foundations_work.md §16 cross-reference (3 Patches); citation correction across ~11 files (2 Patches).
+- **(D) Methods catalogue audit Patch** carrying forward C1+C2 candidates + four governance-pattern observations + the hypothesis-tracking-pattern accumulating from Patches 0550 + 0551 (potentially METH-G threshold after Patch 0552 lands).
+- **(E) Future G1 publication-grade hardening Patch** (potentially Patch 0553 or bundled with G2 hardening) — closes Patch 0551 .tex exclusion class E1.
+- **(F) F.2 / F.3 substantive content trajectory openings** engageable at decision-gate level (per Patch 0549 status).
+- **(G) Long-term programme target (Layer 4 axiomatic derivation)** REGISTERED + DEFERRED.
+- **(H) JUNO peer-review update integration when published.**
+
+**Self-checkpoint at this transaction:** Patch 0551 is the second of three building-block hardenings; ⅔ of the F.1 Layer 3 stack publication-grade closure is now landed. The remaining ⅓ (Theorem 4.2.1 hardening at Patch 0552) is structurally identical in form to Patch 0551 — same shape of theorem, same kind of two-step algebraic proof (using G1 + golden-ratio identities), same scope qualifier framework, same exclusion class structure. Anticipating that Patch 0552 will share Patch 0551's architectural pattern is reasonable; the actual hardening Patch will confirm or refine that anticipation.
+

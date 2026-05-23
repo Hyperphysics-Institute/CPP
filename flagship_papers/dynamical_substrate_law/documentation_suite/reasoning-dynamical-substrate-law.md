@@ -2514,3 +2514,50 @@ The discrepancy is genuinely citation drift originating in the Patch 0544 commit
 
 3. **The §39.4 "Option 1 implementation" is a forward-facing discipline correction, not a programmatic fix to the historical citation drift.** The 11 files containing "§6 Theorem 6.1" continue to contain it per §17.6 (8). The audit Patch when it runs will resolve the discrepancy by clarifying the equivalence forward-facing (likely via a single-paragraph addendum to `research_frontier.md` Last-updated header establishing the equivalence). It will NOT modify the historical record in-place.
 
+
+---
+
+## §40 Patch 0551 — Publication-grade hardening of Theorem 4.1.1 (second of three F.1 Layer 3 building-block hardenings)
+
+**Context.** Patch 0550 hardened Theorem 3.3.3 + Corollary 3.3.4 (perturbation-theory propagation rule) at publication-grade and identified Theorems 4.1.1 + 4.2.1 as natural successor hardening targets (Patch 0550 §7 Conclusion + §6 exclusion class E5). Patch 0551 takes the first of those two successors: publication-grade hardening of Patch 0544 §4.1 Theorem 4.1.1 (formerly Identity G3, first-shell-to-first-shell edge-direction perpendicularity).
+
+### §40.1 What this Patch does, structurally
+
+Creates a NEW publication-grade .tex artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex` (207 lines of LaTeX, compiles to 6-page PDF, 261 KB, no undefined references after standard 2nd pdflatex pass). The artifact hardens Patch 0544 §4.1 Theorem 4.1.1 from sketch-document Layer 3 rigor (a two-line algebraic computation) to publication-grade rigor with explicit hypothesis tracking, isolation of the tangent-hyperplane geometric content as Lemma 3.1.1, and a five-class exclusion enumeration.
+
+**Why the .tex is smaller than Patch 0550's** (207 vs 269 lines): Theorem 4.1.1's underlying proof is structurally more compact than Theorem 3.3.3's. The proof of perpendicularity is two-line algebra (subtraction of equal projections gives zero); the proof of perturbation-theory propagation required three lemmas of structural argument (path-amplitude expansion + perturbed-step counting + connected-subgraph confinement). Publication-grade hardening preserves the relative complexity ratio.
+
+**Structure** (7 sections + bibliography): §1 Introduction with position in F.1 Layer 3 hardening sequence + main theorem statement with hypotheses (H1)–(H3); §2 Preliminaries (600-cell setup, vertex-aligned Reading C, G1 imported as Lemma 2.3.1); §3 Proof organised in two steps — Lemma 3.1.1 (tangent hyperplane) + perpendicularity computation; §4 Corollary 3.1.2 (icosahedral first shell in tangent hyperplane); §5 Five exclusion classes E1–E5; §6 Cross-references (use in Patch 0550 + substrate-rate perturbation + Capotauro v2.0 §13.3 spatial-sector structural parallel); §7 Conclusion identifying Patch 0552 as the natural completion of the trio; bibliography.
+
+### §40.2 The hypothesis-tracking discipline
+
+Patch 0544 §4.1 stated Theorem 4.1.1 in a single sentence: "For any pair of first-shell vertices $v_i, v_j$ of $v_{\text{host}}$ in the 600-cell, the edge unit-vector $\hat{e}_{ij}$ satisfies $\hat{e}_{ij}\cdot\hat{n} = 0$." The hypotheses were left implicit (vertex-aligned Reading C; unit-vertex normalisation; G1). Publication-grade hardening makes all three explicit as (H1)–(H3) in the theorem statement so a reader can audit precisely what assumptions enter.
+
+The hypothesis-tracking discipline is structurally identical to Patch 0550's: scope qualifier built into hypotheses, exclusions enumerated explicitly, dependencies imported from sketch-document Layer 3 sources clearly marked. Continuity with Patch 0550's discipline ensures the eventual F.1 flagship paper can compose Patch 0550 + Patch 0551 + future Patch 0552 sections with consistent rigour.
+
+**The G1 import as hypothesis (H3) is the structural honesty marker.** G1 itself is at sketch-document Layer 3 rigor (Patch 0541 §3.1); the present hardening of Theorem 4.1.1 cannot exceed G1's rigor level for the dependency. Recording G1 as (H3) — and as exclusion class E1 in §5 — makes the dependency unavoidable for any reader. A future "G1 publication-grade hardening" Patch (perhaps Patch 0553 or later) would close the dependency by elevating G1 to its own publication-grade artifact.
+
+### §40.3 The tangent-hyperplane lemma as proof restructuring
+
+Patch 0544 §4.1 stated the perpendicularity directly and noted "Geometric interpretation. All 12 first-shell vertices lie in the 3D hyperplane $H_{v_{\text{host}}}$" as a follow-up paragraph. Publication-grade hardening promotes this geometric content from interpretive remark to **Lemma 3.1.1 (First-shell tangent hyperplane)**: under (H1)–(H3), every first-shell vertex lies in the 3D affine hyperplane $H_{v_{\text{host}}} = \{w \in \mathbb{R}^4 : w \cdot \hat{n} = \phi/2\}$.
+
+The promotion has two benefits. **First**, the geometric content becomes part of the formal logical structure rather than expository commentary — a reader can audit the geometric step independently of the algebraic step. **Second**, the geometric lemma supports **Corollary 3.1.2 (Icosahedral first shell in tangent hyperplane)** which records the convex-hull content: the 12 first-shell vertices form a regular icosahedron contained in $H_{v_{\text{host}}}$, with the 30 first-shell-to-first-shell substrate edges (= edges of this icosahedron) all lying within $H_{v_{\text{host}}}$ and their unit edge-directions in the linear subspace $\hat{n}^\perp$. The Corollary is geometrically informative even apart from its role in the main theorem.
+
+The proof of Lemma 3.1.1 uses only Lemma 2.3.1 (G1, imported) + hypothesis (H1) — a clean one-step derivation. The proof of Theorem 4.1.1 then uses Lemma 3.1.1 + linearity of the inner product + (H2)'s unit-vertex normalisation contribution to the denominator nondegeneracy.
+
+### §40.4 Five exclusion classes E1–E5
+
+1. **E1 — Lemma 2.3.1 (G1) is imported at sketch-document Layer 3 rigor.** The first-shell inner-product primitive $v_i \cdot \vhost = \phi/2$ is derived at Patch 0541 §3.1 from the 600-cell first-shell-edge dihedral angle $\cos(36°) = \phi/2$ + unit-vertex normalisation. Promotion of G1 to publication-grade rigor is a candidate for a separate hardening Patch.
+2. **E2 — Layer 4 derivation of the 600-cell substrate from CPP axioms A1–A11.** The 600-cell polytope structure is taken as given; Layer 4 derivation is the long-term programme target.
+3. **E3 — Non-vertex-aligned Reading C variants are NOT covered.** Hypothesis (H1) requires $\hat{n} = v_{\text{host}}$; centre-aligned, face-aligned, or edge-aligned Reading C would invalidate Lemma 3.1.1.
+4. **E4 — Higher-shell perpendicularity claims are NOT addressed.** The theorem treats first-shell-to-first-shell edges only; analogous results for second-shell or higher-shell edges would require separate proofs.
+5. **E5 — Restricted to distinct first-shell vertex pairs.** The degenerate case $v_i = v_j$ is excluded by convention; the theorem applies to all $\binom{12}{2} = 66$ distinct first-shell pairs, of which the 30 600-cell-edge-connected pairs (the icosahedron edges) are load-bearing for substrate-physics.
+
+### §40.5 Self-checkpoint — three places §40.1–§40.4 could overstate
+
+1. **The §40.1 "publication-grade rigor" claim is honest at the .tex level but the F.1 Layer 3 stack is not yet fully publication-grade closed.** Patch 0550 + Patch 0551 together harden two of three needed theorems; Theorem 4.2.1 (Patch 0544 §4.2 host-to-first-shell uniform projection) remains at sketch-document Layer 3 rigor. The .tex Conclusion (§7) is explicit about this — Patch 0552 closes the trio.
+
+2. **The §40.3 "lemma promotion benefits" framing is honest but should not be over-cited as a programme-level methods principle.** Promoting geometric interpretation to a formal Lemma is appropriate hardening practice for THIS theorem given its structure (a two-line algebraic computation supported by tangent-hyperplane content). The pattern may or may not apply to other theorems; for example, Patch 0550's three-lemma reorganisation was driven by the perturbation-theory structure, not by a generic "promote interpretation to lemma" rule. The METH catalogue audit Patch (item E in forward queue) is the appropriate venue for evaluating whether these patterns satisfy METH-G governance threshold.
+
+3. **The §40.4 E1 framing of G1 as a candidate for future hardening is honest but does not commit to a specific Patch.** G1's publication-grade hardening might be a standalone Patch (Patch 0553?), might be bundled with G2 (which Patch 0552 will similarly cite as a dependency), or might be addressed implicitly within a future flagship paper assembly Patch. The exclusion class records the dependency; it does not schedule the resolution.
+

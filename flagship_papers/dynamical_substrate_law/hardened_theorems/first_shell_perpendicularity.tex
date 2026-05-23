@@ -1,0 +1,207 @@
+% ============================================================
+% First-Shell-to-First-Shell Edge-Direction Perpendicularity
+%   on the 600-Cell Edge Graph at Vertex-Aligned Reading C
+% Publication-Grade Hardening of Patch 0544 §4.1 Theorem 4.1.1
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    second of three Layer 3 building-block hardenings)
+% Patch 0551 (Session 142, 23 May 2026)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hperp}{H_{\vhost}}
+
+\title{First-Shell-to-First-Shell Edge-Direction Perpendicularity \\
+in the 600-Cell at Vertex-Aligned Reading C \\
+\large Publication-Grade Hardening of Patch~0544~\S4.1 Theorem~4.1.1 (formerly Identity G3)}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7\\Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{23 May 2026 (Session 142, CPP Patch 0551)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade hardening of the first-shell-to-first-shell edge-direction perpendicularity identity for the 600-cell edge graph at vertex-aligned Reading~C, registered in the CPP F.1 sub-question trajectory at Patch~0544 \S4.1 as Theorem~4.1.1 (formerly named Identity~G3) at sketch-document Layer~3 rigor. The hardened statement asserts that, under (i)~vertex-aligned Reading~C with $\nhat = \vhost$, (ii)~the 600-cell unit-vertex normalisation $|v|=1$, and (iii)~the first-shell inner-product primitive G1 ($v_i\cdot\vhost = \phi/2$ uniformly across the 12 first-shell neighbours of $\vhost$) inherited from Patch~0541 \S3, every unit edge-direction $\hat{e}_{ij}$ between distinct first-shell vertices $v_i \neq v_j$ of $\vhost$ satisfies $\hat{e}_{ij}\cdot\nhat = 0$ exactly. The proof is a two-line algebraic computation supported by a tangent-hyperplane geometric lemma; publication-grade rigorisation consists in explicit hypothesis tracking, isolation of the geometric content as Lemma~\ref{lem:tangent_hyperplane}, and a five-class exclusion enumeration that registers G1's own sketch-document Layer~3 status (Patch~0541 \S3.1) as a separate publication-grade hardening candidate. This artifact is the second of three Layer~3 building-block hardenings needed for full publication-grade closure of the F.1 sub-question Layer~3 stack; the first (Patch~0550) hardened the perturbation-theory propagation rule (Patch~0544 \S3.3 Theorem~3.3.3 + Corollary~3.3.4), which cites the present theorem as a dependency.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the first-shell-to-first-shell edge-direction perpendicularity identity for the 600-cell edge graph at vertex-aligned Reading~C from sketch-document Layer~3 rigor (the two-line algebraic computation at Patch~0544 \S4.1) to publication-grade rigor with explicit hypothesis tracking and isolation of the underlying geometric content. The substantive theorem content is unchanged from Patch~0544 \S4.1; the contribution of this artifact is the rigorisation of the proof structure, the isolation of the tangent-hyperplane geometric content as Lemma~\ref{lem:tangent_hyperplane}, the formalisation of the genericity hypothesis (distinct first-shell vertex pairs), and an explicit exclusion enumeration.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+Patch~0550 hardened the perturbation-theory propagation rule (Patch~0544 \S3.3 Theorem~3.3.3 + Corollary~3.3.4) at \texttt{flagship\_papers/dynamical\_substrate\_law/hardened\_theorems/perturbation\_locality\_propagation.tex}; that hardening cites the present theorem (then at Patch~0544 \S4.1 sketch-document Layer~3 rigor) as exclusion class~E5 ``underlying graph-theoretic claims about $\Gsixcell$ taken as given.'' The present paper closes that hardening dependency for one of the two identities. The remaining dependency, Patch~0544 \S4.2 Theorem~4.2.1 (host-to-first-shell uniform projection, formerly Identity~I1), is the natural target of an anticipated Patch~0552.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (Patch~0550 \S2.1; \cite{coxeter1973}) with vertex set the 120 vertices of the 600-cell normalised to $|v|=1$ on $S^3 \subset \Reals^4$. Fix a host vertex $\vhost \in V(\Gsixcell)$ and write the 12 first-shell neighbours of $\vhost$ as $v_1, \ldots, v_{12}$.
+
+\begin{theorem}[First-shell-to-first-shell perpendicularity, hardened]\label{thm:first_shell_perpendicularity}
+Under the following hypotheses:
+\begin{enumerate}[label=(H\arabic*)]
+\item \textbf{Vertex-aligned Reading~C with framework chirality direction $\nhat = \vhost$}, as registered in Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2;
+\item \textbf{600-cell unit-vertex normalisation}: every vertex $v \in V(\Gsixcell)$ satisfies $|v| = 1$ in the ambient $\Reals^4$;
+\item \textbf{First-shell inner-product primitive (G1)}: for every first-shell vertex $v_i$ of $\vhost$ (each of the 12 nearest neighbours), $v_i \cdot \vhost = \phi/2$, where $\phi = (1+\sqrt{5})/2$ is the golden ratio. (G1 is derived at Patch~0541 \S3.1 at sketch-document Layer~3 rigor from 600-cell coordinate primitives + the icosahedral first-shell inner-product structure $\cos(36^\circ) = \phi/2$; the derivation is imported here.)
+\end{enumerate}
+For any pair of distinct first-shell vertices $v_i \neq v_j$ of $\vhost$, the unit edge-direction vector
+\begin{equation}\label{eq:edge_direction_definition}
+\hat{e}_{ij} \;=\; \frac{v_j - v_i}{|v_j - v_i|}
+\end{equation}
+satisfies
+\begin{equation}\label{eq:first_shell_perpendicularity}
+\hat{e}_{ij} \cdot \nhat \;=\; 0
+\end{equation}
+exactly.
+\end{theorem}
+
+The proof is organised in two steps: a geometric lemma isolating the tangent-hyperplane content (\S\ref{sec:tangent_hyperplane_lemma}), and the algebraic computation completing the proof (\S\ref{sec:perpendicularity_proof}). Corollary~\ref{cor:icosahedron_in_tangent} below records the tangent-hyperplane geometric content as a stand-alone consequence.
+
+\begin{remark}[Distinctness hypothesis $v_i \neq v_j$]\label{rem:distinctness}
+The hypothesis $v_i \neq v_j$ excludes the degenerate case in which~\eqref{eq:edge_direction_definition} would have a zero denominator. The 600-cell first-shell vertices are 12 geometrically distinct points; the hypothesis is a technical convention, not a structural restriction. Note also that Theorem~\ref{thm:first_shell_perpendicularity} as stated does NOT require the pair $(v_i, v_j)$ to be adjacent in $\Gsixcell$ (i.e.\ connected by a 600-cell edge); the result holds for all $\binom{12}{2} = 66$ distinct first-shell pairs, of which exactly 30 are 600-cell edges (forming the 30 edges of the first-shell icosahedron). The substrate-physics application at Patch~0544 \S4.3 concerns specifically the 30 first-shell-to-first-shell substrate edges.
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{The 600-cell edge graph and the first-shell icosahedron}\label{sec:first_shell_setup}
+
+The 600-cell is the regular 4-dimensional polytope with Schl{\"a}fli symbol $\{3,3,5\}$ \cite{coxeter1973}; we adopt the unit-radius normalisation $|v|=1$ for all 120 vertices on $S^3 \subset \Reals^4$, with edge length $|v_a - v_b| = 1/\phi$ for adjacent vertex pairs (Patch~0541 \S3.1 derivation). The 12 first-shell vertices of any host vertex $\vhost$ form a regular icosahedron in the 3D tangent hyperplane to the $S^3$ at $\vhost$ (Patch~0541 \S2.2 G2 primitive), with first-shell-to-first-shell adjacencies giving the 30 edges of that icosahedron.
+
+\subsection{Vertex-aligned Reading C and the chirality direction}\label{sec:vertex_aligned_reading_c}
+
+Under vertex-aligned Reading~C (Capotauro v2.0 FI-C-RC-1 + FI-C-RC-2), the framework chirality direction $\nhat$ is identified with the host vertex direction: $\nhat = \vhost$. Together with the unit-vertex normalisation (H2), this means $|\nhat| = 1$ and $\nhat$ is itself a vertex of the 600-cell.
+
+\subsection{The primitive G1 inner-product identity}\label{sec:g1_primitive}
+
+\begin{lemma}[G1, first-shell inner-product primitive; imported from Patch~0541 \S3.1]\label{lem:G1}
+Under (H2) and the 600-cell geometric structure, for every first-shell vertex $v_i$ of $\vhost$ in the 600-cell,
+\begin{equation}\label{eq:G1_identity}
+v_i \cdot \vhost \;=\; \frac{\phi}{2}
+\end{equation}
+uniformly across $i \in \{1, \ldots, 12\}$.
+\end{lemma}
+
+\noindent\textbf{Source of Lemma~\ref{lem:G1}.} The identity~\eqref{eq:G1_identity} follows from the 600-cell first-shell-edge inner product equalling $\cos(36^\circ) = \phi/2$, where $36^\circ$ is the dihedral angle between adjacent vertex-directions at any 600-cell vertex; the derivation is given at Patch~0541 \S3.1 at sketch-document Layer~3 rigor from the 600-cell coordinate structure + the golden-ratio identity $\cos(36^\circ) = \phi/2$. The present paper imports Lemma~\ref{lem:G1} as a sketch-document Layer~3 result; promoting G1 to publication-grade rigor is registered as exclusion class~E1 of \S\ref{sec:scope_and_exclusions} and remains a candidate for a separate publication-grade hardening Patch.
+
+\section{Proof of the perpendicularity theorem}\label{sec:proof}
+
+\subsection{Tangent-hyperplane lemma}\label{sec:tangent_hyperplane_lemma}
+
+\begin{lemma}[First-shell tangent hyperplane]\label{lem:tangent_hyperplane}
+Under (H1)--(H3) of Theorem~\ref{thm:first_shell_perpendicularity}, every first-shell vertex $v_i$ of $\vhost$ ($i \in \{1, \ldots, 12\}$) lies in the 3-dimensional affine hyperplane
+\begin{equation}\label{eq:tangent_hyperplane}
+\Hperp \;=\; \bigl\{\, w \in \Reals^4 \,\big|\, w \cdot \nhat = \tfrac{\phi}{2}\,\bigr\} \;\subset\; \Reals^4.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:G1} (G1), $v_i \cdot \vhost = \phi/2$ for each $i \in \{1, \ldots, 12\}$. Under hypothesis~(H1), $\nhat = \vhost$. Substituting gives $v_i \cdot \nhat = \phi/2$, so $v_i \in \Hperp$ by~\eqref{eq:tangent_hyperplane}. The argument is uniform in $i$. $\square$
+\end{proof}
+
+\begin{remark}[Geometric content of Lemma~\ref{lem:tangent_hyperplane}]\label{rem:tangent_hyperplane_geometric}
+The affine hyperplane $\Hperp$ defined by~\eqref{eq:tangent_hyperplane} is the 3D affine subspace of $\Reals^4$ obtained from the 3D linear subspace $\nhat^\perp$ (orthogonal complement of $\nhat$) by translation along $\nhat$ by amount $\phi/2$. Equivalently, $\Hperp$ is the affine 3D tangent hyperplane to the sphere $S^3$ at the polar-cap height $\phi/2$ above the antipodal direction $-\nhat$. The 12 first-shell vertices, as a regular icosahedron centred on the $\nhat$-axis, lie on the 2-sphere $S^2 = S^3 \cap \Hperp$ of polar-cap radius $\sqrt{1 - (\phi/2)^2}$.
+\end{remark}
+
+\subsection{Perpendicularity computation}\label{sec:perpendicularity_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:first_shell_perpendicularity}]
+Let $v_i, v_j$ be distinct first-shell vertices of $\vhost$. By Lemma~\ref{lem:tangent_hyperplane}, both $v_i$ and $v_j$ lie in $\Hperp$, so $v_i \cdot \nhat = v_j \cdot \nhat = \phi/2$.
+
+Compute, using the linearity of the inner product:
+\begin{align*}
+\hat{e}_{ij} \cdot \nhat
+\;=\;& \frac{(v_j - v_i) \cdot \nhat}{|v_j - v_i|} \\
+\;=\;& \frac{(v_j \cdot \nhat) - (v_i \cdot \nhat)}{|v_j - v_i|} \\
+\;=\;& \frac{(\phi/2) - (\phi/2)}{|v_j - v_i|} \\
+\;=\;& \frac{0}{|v_j - v_i|}.
+\end{align*}
+By Remark~\ref{rem:distinctness}, $v_i \neq v_j$ gives $|v_j - v_i| > 0$, so the quotient is well-defined and equals $0$. Therefore $\hat{e}_{ij}\cdot\nhat = 0$, as required. $\square$
+\end{proof}
+
+\begin{corollary}[Icosahedral first shell lies in the tangent hyperplane]\label{cor:icosahedron_in_tangent}
+The 12 first-shell vertices of $\vhost$ form a regular icosahedron contained in the 3D affine hyperplane $\Hperp$. Consequently the 30 first-shell-to-first-shell 600-cell edges (the edges of this icosahedron) all lie within $\Hperp$, and their unit edge-direction vectors lie in the 3D linear subspace $\nhat^\perp = \{w \in \Reals^4 : w\cdot\nhat = 0\}$.
+\end{corollary}
+
+\begin{proof}
+The first-shell-icosahedron content follows from Patch~0541 \S2.2 primitive G2; Lemma~\ref{lem:tangent_hyperplane} places the icosahedron in $\Hperp$. For any pair of icosahedron vertices $v_i, v_j$, the edge $v_i v_j$ lies in $\Hperp$ because $\Hperp$ is affine (closed under convex combinations). The unit edge-direction $\hat{e}_{ij}$ is parallel to the difference $v_j - v_i$, which lies in the linear subspace $\nhat^\perp$ (the translation of $\Hperp$ by $-\phi\nhat/2$). By Theorem~\ref{thm:first_shell_perpendicularity}, $\hat{e}_{ij} \cdot \nhat = 0$, confirming $\hat{e}_{ij} \in \nhat^\perp$. $\square$
+\end{proof}
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:first_shell_perpendicularity} is, by design, scope-bounded: hypotheses~(H1)--(H3) collectively encode the framework commitments under which the perpendicularity identity holds. This section enumerates five classes of generalisations that lie explicitly outside the theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Lemma~\ref{lem:G1} (G1) itself is imported at sketch-document Layer~3 rigor.} The first-shell inner-product primitive $v_i \cdot \vhost = \phi/2$ is derived at Patch~0541 \S3.1 from the 600-cell first-shell-edge dihedral angle $\cos(36^\circ) = \phi/2$ together with the unit-vertex normalisation. Promotion of Lemma~\ref{lem:G1} to publication-grade rigor is a candidate for a separate hardening Patch (the natural target being a publication-grade derivation of the 600-cell first-shell inner-product structure from the polytope's coordinate description).
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP axioms $A1$--$A11$.} The 600-cell polytope structure itself is taken here as given (H2 + Patch~0541 \S2.2 G1 + G2 primitives). A Layer~4 derivation of the 600-cell substrate from CPP axioms together with first-principles emergence considerations is the long-term programme target registered at Patch~0528 \S14.17 and carried forward through Patches~0539, 0549.
+\item \textbf{Non-vertex-aligned Reading~C variants are NOT covered.} The theorem requires $\nhat = \vhost$ (hypothesis~(H1)). Alternative Reading~C placements --- centre-aligned Reading~C, face-aligned Reading~C, edge-aligned Reading~C --- would change which directions in $\Reals^4$ are identified as $\nhat$ and would generally invalidate Lemma~\ref{lem:tangent_hyperplane}. The Capotauro v2.0 FI-C-RC-2 specifies vertex-alignment; the present theorem is tied to that specification.
+\item \textbf{Higher-shell perpendicularity claims are NOT addressed.} Theorem~\ref{thm:first_shell_perpendicularity} addresses only first-shell-to-first-shell edge directions. Second-shell and higher-shell perpendicularity properties are not covered; in fact, second-shell vertices lie in distinct affine hyperplanes parallel to $\Hperp$ at different polar-cap heights, so analogues of Theorem~\ref{thm:first_shell_perpendicularity} for second-shell-to-second-shell edges hold but with different normal vectors and would require separate proofs.
+\item \textbf{The theorem is restricted to distinct first-shell vertex pairs.} The degenerate case $v_i = v_j$ is excluded by Remark~\ref{rem:distinctness}; while $\hat{e}_{ii}$ is undefined geometrically (there is no edge from a vertex to itself), this is a notational convention, not a structural restriction. The theorem applies to all $\binom{12}{2} = 66$ distinct first-shell pairs, irrespective of whether the pair is connected by a 600-cell edge. The 30 pairs that ARE 600-cell-edge-connected (forming the first-shell icosahedron) are the load-bearing case for the substrate-physics application at Patch~0544 \S4.3 and Patch~0550 Remark~3.3.2.
+\end{enumerate}
+
+\section{Cross-references and consequences}\label{sec:cross_references}
+
+\subsection{Use in Patch 0550's perturbation-theory propagation rule}\label{sec:use_in_0550}
+
+Patch~0550 \S3.3 Remark~3.3.2 (\texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}) cited Patch~0544 \S4.1 Theorem~4.1.1 to justify the observation that perturbed steps along first-shell-to-first-shell edges in the 600-cell contribute zero to the $\mathcal{O}(\delta^n)$ coefficient of the substrate net DI-bit current. The present hardening closes that cross-reference dependency at publication-grade rigor: future content citing Patch~0550 Remark~3.3.2 may now cite the present Theorem~\ref{thm:first_shell_perpendicularity} in place of the unhardened Patch~0544 \S4.1 statement.
+
+\subsection{Use in substrate-rate perturbation analysis}\label{sec:use_in_substrate_rate}
+
+Applying Mechanism~A (Patch~0550 Definition~2.2.1) with Theorem~\ref{thm:first_shell_perpendicularity}: for any first-shell-to-first-shell edge $(v_i, v_j)$, the propagation rate
+\begin{equation*}
+r(\hat{e}_{ij}) \;=\; r_0\bigl(1 + \delta\,\hat{e}_{ij}\cdot\nhat\bigr) \;=\; r_0\bigl(1 + \delta\cdot 0\bigr) \;=\; r_0
+\end{equation*}
+is exactly $r_0$, independent of $\delta$ and uniform across all 30 first-shell-to-first-shell substrate edges. This is the ``zero first-order perturbation on first-shell-to-first-shell edges'' content of Patch~0544 \S4.3.
+
+\subsection{Capotauro v2.0 §13.3 structural parallel}\label{sec:capotauro_parallel}
+
+The geometric content of Theorem~\ref{thm:first_shell_perpendicularity} is identical to the Capotauro v2.0 \S13.3 spatial-sector ``structural proof'' parallel: under vertex-aligned Reading~C, the first-shell icosahedron lies in the 3D tangent hyperplane $\Hperp$ orthogonal to $\nhat$ (modulo the $\phi/2$ translation), and the edge-vectors within the icosahedron are tangent to this hyperplane and thus orthogonal to $\nhat$. The Capotauro v2.0 derivation operates in the spatial sector (perturbation amplitude $\epsilon$) and the present derivation operates in the temporal sector (perturbation amplitude $\delta$), but the underlying geometric content is identical and now hardened at publication-grade rigor in both sectors.
+
+\section{Conclusion}\label{sec:conclusion}
+
+Theorem~\ref{thm:first_shell_perpendicularity}, with hypotheses (H1)--(H3) and supporting Lemmas~\ref{lem:G1} (G1, imported) and~\ref{lem:tangent_hyperplane} (tangent hyperplane), gives the publication-grade hardening of Patch~0544 \S4.1 Theorem~4.1.1 (formerly Identity~G3). The scope qualifier of vertex-aligned Reading~C is built into hypothesis~(H1), the 600-cell unit-vertex normalisation into hypothesis~(H2), and the load-bearing G1 dependency into hypothesis~(H3). The five exclusion classes (E1)--(E5) make explicit what is NOT covered.
+
+This artifact is the second of three Layer~3 building-block hardenings needed for full publication-grade closure of the F.1 sub-question Layer~3 stack. The remaining building-block hardening (Patch~0544 \S4.2 Theorem~4.2.1, host-to-first-shell uniform projection / Identity~I1) is the natural target of an anticipated Patch~0552; after Patch~0552 lands, the F.1 flagship paper assembly evaluation gate (LIVE since Patch~0549) becomes substantively engageable with three publication-grade theorems as building blocks: Patch~0550 (perturbation-theory propagation), the present Patch~0551 (first-shell-to-first-shell perpendicularity), and the anticipated Patch~0552 (host-to-first-shell uniform projection).
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+Dover Publications, New York, 1973.
+
+\bibitem{abshier_capotauro_chiral_mechanism_sketch}
+T.~L.~Abshier,
+``The Capotauro Mechanism v2.0: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics,''
+CPP Flagship Paper Series, May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}
