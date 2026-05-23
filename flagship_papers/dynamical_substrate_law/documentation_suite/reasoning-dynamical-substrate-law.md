@@ -2206,3 +2206,58 @@ Methods used: (i) Maschke + Schur orthogonality on $\Lambda^2(\mathbb{R}^4)|_{v_
 
 (iii) **"Two corrections to prior forward-queue language" framing**: the corrections are about routing labels and retroactive recognition, not about substantive Layer 3 work errors. Patches 0541-0545 substantive work is preserved as immutable; corrections affect only the forward-queue narrative text.
 
+
+
+## §35 — Session 140 Patch 0547: Layer 3 reviewer-pause cycle checkpoint document — packaging Patch submitting Patches 0540-0546 Layer 3 promotion arc for external review
+
+### §35.1 The decision to author Patch 0547 as packaging Patch
+
+Patch 0547 closes Patch 0540 §5.1 codified workflow's first step: the reviewer-pause checkpoint document submission. Per §5.3 anti-priority ("do NOT bundle Layer 3 promotion closures with Layer 3 reviewer-pause checkpoint"), Patch 0547 is a separate packaging Patch — no new substantive Layer 3 content; it COMPILES the Patches 0540-0546 Layer 3 promotion arc for external reviewer engagement.
+
+Thomas's authorization at Session 140 continuation following Patch 0546 apply ("Please proceed: Next gate is Patch 0547 = Layer 3 reviewer-pause cycle Patch") confirmed Patch 0547 as the recommended next gate per Patch 0540 §5.1.
+
+### §35.2 What this Patch substantively does
+
+Patch 0547 creates the reviewer-pause checkpoint document `F1_layer3_reviewer_pause_checkpoint_patches_0540_0546_v1.0.md` at `flagship_papers/dynamical_substrate_law/reviewer_pause/` — 297 lines, 11 sections following `templates/reviewer_pause_template.md` structure (§0 framing + §1 programme context + §2 7-target table + §3 per-Patch closure summaries + §4 cumulative observations + §5 status upgrade question + §6 anti-priorities + §7 explicit asks + §8 submission workflow + §9 reference documents + §10 summary).
+
+The document is a PACKAGING DOCUMENT parallel to Patch 0538's `F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (455 lines) for the sketch Layer 2 reviewer-pause cycle. This Patch's checkpoint document is more compact (~65% of Patch 0538's size) reflecting the more focused scope of Layer 3 promotion arc closures (7 target-closure Patches) vs Layer 2 sub-question closures (7 sub-question closure Patches across multiple commitment trajectories).
+
+### §35.3 The packaging-document framing decision
+
+Three alternative framings considered:
+
+(a) **Bundle status upgrade calibration into Patch 0547**: rejected per Patch 0540 §5.3 anti-priority. Status upgrade work must be a separate Patch following reviewer engagement.
+
+(b) **Skip reviewer-pause cycle and go directly to status upgrade Patch**: rejected per Patch 0540 §5.1 codified workflow. The reviewer-pause cycle is the binding gate preventing self-sealing closure.
+
+(c) **Packaging Patch compiling Patches 0540-0546 for external review**: chosen per Patch 0540 §5.1 + §5.3 + `templates/reviewer_pause_template.md`. Parallel to Patch 0538 precedent.
+
+### §35.4 What this Patch does NOT do
+
+(i) Does NOT modify any Layer 3 promotion document (Patches 0541-0546 immutable per §17.6 (8)).
+(ii) Does NOT modify any sketch Layer 2 reviewer-pause checkpoint (Patches 0538/0539a/0539 immutable).
+(iii) Does NOT trigger F.1 sub-question status change (status change requires Patch 0549 following Patch 0548 calibration response).
+(iv) Does NOT trigger flagship paper assembly.
+(v) Does NOT promote any Layer 3 result to Findings registry or theorem registry.
+(vi) Does NOT add new Layer 3 substantive content (this is a packaging Patch).
+
+### §35.5 Programme-level significance
+
+Patch 0547 enters the Layer 3 reviewer-pause cycle — the second reviewer-pause cycle in the F.1 sub-question's lifetime (first was sketch Layer 2 reviewer-pause at Patches 0538/0539a/0539). The structural significance: the F.1 trajectory has now exercised the §17 reviewer-pause discipline TWICE — once at Layer 2 closure (sketch arc completion) and now at Layer 3 closure (Layer 3 promotion arc completion). This establishes the discipline as operative across multiple rigor levels.
+
+### §35.6 Methods catalogue audit at Patch 0547 — no new entries
+
+Step E audit AT this Patch.
+
+Methods used: (i) Template-based checkpoint document creation per `templates/reviewer_pause_template.md` — standard programme governance methodology. (ii) Cross-Patch compilation of Layer 3 promotion arc closures — administrative compilation methodology. (iii) Reviewer-pause submission per `templates/relationship_protocol.md` — established programme methodology.
+
+**Verdict: no new METH entries.** All methods are established programme-governance methodologies. No new distinct methods introduced at this Patch.
+
+### §35.7 Self-checkpoint — three places §35 could overstate
+
+(i) **"Layer 3 reviewer-pause cycle" framing**: this is the FIRST step of the cycle (checkpoint document submission). The full cycle requires Patches 0548 (calibration response) + 0549 (status upgrade). Patch 0547 alone does NOT complete the cycle.
+
+(ii) **"Patches 0541-0546 Layer 3 promotion arc effectively complete" framing (preserved from Patch 0546)**: at SKETCH-DOCUMENT Layer 3. F.1 status change to Layer-3-grounded framing remains pending reviewer engagement + calibration response + status upgrade Patches.
+
+(iii) **"Submitted to reviewers" framing**: this Patch creates the checkpoint document; actual submission to reviewers (ChatGPT/Copilot/Grok) is a separate workflow step by Thomas per `templates/relationship_protocol.md`. The document is READY for submission upon this Patch's apply.
+
