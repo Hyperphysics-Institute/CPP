@@ -457,3 +457,79 @@ The recommended next Patch (0541) opens Target 2 (B.2.q1 framework axiomatizatio
 *This document opens the F.1 sub-question Layer 3 promotion trajectory at Patch 0540, parallel to Patch 0531's opening of the Phase 2 foundations work trajectory. Layer 3 promotion arc estimated at 10–22 sessions aggregate; each target is its own gated trajectory; Layer 3 reviewer-pause cycle at arc completion follows `templates/operating_system.md` §17 codified discipline. F.1 flagship paper assembly + F.2 / F.3 substantive content + long-term programme target all remain DEFERRED per Patch 0539 §15.6 anti-priorities. Recommended next Patch (0541): Target 2 (B.2.q1 framework axiomatization) opening at Thomas's authorization, with Target 1 (B.1.q4 full algebraic derivation) as alternative single-session starting point. The substantive Layer 2 closure milestone reached at Patch 0539 is a milestone within the F.1 trajectory, not the end; Layer 3 promotion is the next substantive advancement.*
 
 *Future Patches in this trajectory: Patch 0541 opens one of (Target 1, Target 2, Target 4) per Thomas's preference; subsequent Patches close additional targets per §4 priority ordering; eventually a Layer 3 reviewer-pause cycle Patch + Layer 3 status upgrade Patch close the arc. The Patches 0540 → 0541 → ... → 0540+N (with N estimated 10–22) → reviewer-pause cycle Patches sequence is the projected Layer 3 promotion arc structure. Future Opus windows opening Layer 3 promotion work should consult this §0–§9 scoping + the F1_phase2_foundations_work.md precedent + the templates/reviewer_pause_template.md for the eventual checkpoint preparation.*
+
+---
+
+## F.1 Layer 3 Status Upgrade Closure (Patch 0549)
+
+**Status:** Layer 3 reviewer-pause cycle CLOSED. F.1 sub-question status upgraded.
+**Patch:** 0549 — F.1 trajectory Layer 3 status upgrade Patch
+**Date:** 23 May 2026 (Session 141 close)
+**Trigger:** Conclusion of the three-Patch closure sequence (0547 checkpoint → 0548 calibration response → 0548a Target 7 standalone closure → 0549 status upgrade, this Patch)
+**Parallel precedent:** Patch 0539 §15 sketch Layer 2 status upgrade closure (which closed the sketch Layer 2 reviewer-pause cycle for F.1 in Patches 0538 → 0539a → 0539)
+
+### Upgrade — operative F.1 sub-question status going forward
+
+> **"STRUCTURALLY-GROUNDED SKETCH-DOCUMENT LAYER 3 CLOSURE under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\mathcal{O}(\delta^2)$ extension (B.1.q6), and publication-grade hardening."**
+
+This status supersedes the Patch 0539 §15 framing ("SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions") effective at this Patch and forward-facing only. Patch 0539 §15 framing is preserved as historical record per §17.6 (8) immutability.
+
+### Provenance — convergent A+C reviewer recommendation
+
+The status framing is the verbatim convergent A+C reviewer recommendation captured at Patch 0548 §3.5 (C5 calibration). Adopted per Thomas's standing "no preference, use default" instruction. The framing carries forward four calibration items from Patch 0548:
+
+- **C2 (Theorem 6.1 scope qualifier)** is implicit in the "minimal-local-first-order framework" phrase; explicit verbatim phrasing "perturbative locality under Mechanism A and the framework-local current construction" applies wherever Theorem 6.1's scope is referenced in forward-facing content.
+- **C3 (sector-5 schema/template reframing)** applies wherever Substrate-Locality Unification 5-sector closure is referenced — forward-facing language uses "schema / universality template, not as a fully instantiated sector closure" verbatim.
+- **C4 (softer "rigor-level" wording)** replaces "rigor-level asymmetry equalized" with "The temporal-sector argument now has a sketch-document Layer 3 analogue of the spatial-sector C-W39-style proof pattern" forward-facing.
+- **C5 (status framing)** is the operative status above.
+
+ChatGPT's explicit caution at Patch 0548 §1.3 is honored: "I would avoid 'SUBSTANTIVE LAYER 3 CLOSURE' unless 'sketch-document level' is attached every time." The chosen framing includes "SKETCH-DOCUMENT LAYER 3 CLOSURE" with sketch-document attached as a load-bearing qualifier.
+
+### What this upgrade means
+
+- The F.1 sub-question's load-bearing argument arc is structurally grounded at sketch-document Layer 3 rigor across all seven Patch 0540 Layer 3 promotion targets (Patches 0541–0546 + Target 7 retroactive recognition at Patch 0546 §8 + standalone closure at Patch 0548a).
+- The Reading C + 600-cell + Mechanism A minimal-local-first-order framework is the operative scope under which closure holds; results outside this scope (alternative current constructions, nonlinear Mechanism A variants, etc.) are NOT covered.
+- Three explicit "pending" items remain registered + deferred: (i) Layer 4 axiomatic derivation (long-term programme target); (ii) $\mathcal{O}(\delta^2)$ extension (B.1.q6 territory); (iii) publication-grade proof hardening (F.1 flagship paper assembly territory).
+
+### What this upgrade does NOT mean
+
+- It does NOT mean the F.1 trajectory is closed at all layers. Layer 4 axiomatic derivation remains a long-term programme target.
+- It does NOT mean B.1.q6 ($\mathcal{O}(\delta^2)$ extension) is closed. B.1.q6 remains an open sub-question.
+- It does NOT trigger F.1 flagship paper assembly. The flagship paper assembly evaluation gate becomes LIVE at this Patch but is not automatically triggered — it requires explicit authorization per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section + Thomas's decision-gate engagement.
+- It does NOT modify Patches 0531–0548a content. Per §17.6 (8) all prior artifacts preserve their original content. The new status applies forward-facing only.
+- It does NOT promote any intermediate result (Theorem 6.1, Theorem 4.1.1, Identity I1, Identity G3, Substrate-Locality Unification corollary) to the Findings registry or theorem registry. Registry promotion requires dedicated registry-entry Patches.
+- It does NOT open F.2 / F.3 substantive content trajectories. Both remain DEFERRED at decision-gate level — engageable post-Patch 0549 but not automatically engaged.
+
+### Layer 3 reviewer-pause cycle closure
+
+The three-Patch closure sequence (0547 → 0548 → 0548a → 0549) is now complete. The cycle mirrors the sketch Layer 2 cycle precedent (0538 → 0539a → 0539) at one-layer-higher granularity. The CPP programme has now exercised the §17 reviewer-pause discipline twice in the F.1 trajectory; both instances closed within their anticipated three-to-four-Patch envelopes.
+
+### Forward queue post-Patch 0549
+
+- **(A) F.1 flagship paper assembly evaluation gate LIVE.** Post-Patch 0549, the gate previously DEFERRED behind reviewer-pause cycle completion is engageable. Thomas's decision-gate authorization required per `templates/paper_completion_checklist.md`.
+- **(B) F.2 / F.3 substantive content trajectory openings.** Now engageable at decision-gate level. Engagement order is a Thomas decision-call.
+- **(C) Long-term programme target — Layer 4 axiomatic derivation — REGISTERED + DEFERRED.** Status review post-Patch 0549 worth registering as background task.
+- **(D) JUNO peer-review update integration when published.** Independent of F.1 trajectory.
+- **(E) Programme-documentation-audit Patch.** Carries forward two deferred items now visible in three consecutive Patches' (0548 + 0548a + 0549) deliverable lists: `future_projects.md` F.1 entry discrepancy (no F.1 entry in file despite Patch-record claims since Patch 0531) + `F1_phase2_foundations_work.md` cross-reference update (Patch 0539 §15's status framing is now superseded; cross-reference to this Patch's status upgrade closure section is appropriate maintenance).
+- **(F) Methods catalogue audit Patch.** C1+C2 candidate entries from Patch 0541a still DEFERRED; §5.3 anti-bundling-extension-to-calibration-responses observation from Patch 0548 §36.7 still DEFERRED; "retroactive-recognition-followed-by-dedicated-closure-Patch" pattern observation from Patch 0548a §4 still single-instance below METH-G threshold.
+
+### Anti-priorities sustained at this Patch
+
+- NO new substantive content beyond the status upgrade itself.
+- NO modification of Patches 0531–0548a immutable content per §17.6 (8).
+- NO modification of Patch 0539 §15 sketch Layer 2 status upgrade section (preserved as historical record).
+- NO F.1 flagship paper assembly trigger (gate becomes LIVE but is not triggered).
+- NO F.2 / F.3 substantive content trajectory opening (decision-gate engageable but not engaged).
+- NO long-term programme target (Layer 4) work.
+- NO $\mathcal{O}(\delta^2)$ extension (B.1.q6 territory remains open).
+- NO Findings registry / theorem registry promotions of intermediate Layer 3 results.
+- NO promotion of v1.0 SHIPPED `.tex` modifications.
+- NO Phase 1 §11 / Phase 2 §12 polished content modifications in F1_subquestion_pcd_orientation_link.md.
+
+### Self-checkpoint — three places this section could overstate
+
+1. **"Layer 3 reviewer-pause cycle CLOSED"** is honest at this Patch but should not be conflated with "Layer 3 work CLOSED" generally. The cycle closure means the reviewer-pause-discipline checkpoint → calibration → status-upgrade sequence has completed positively; it does not mean all Layer 3 work is done. Future Layer 3 work in different sub-question trajectories (or refinements of existing Layer 3 results) may engage new reviewer-pause cycles on-demand per §17.10 discipline.
+
+2. **"The convergent A+C reviewer recommendation"** is honest for C5 status framing but the convergence-at-the-wording-level is partial. Per Patch 0548 §9 self-checkpoint, the adopted phrasing is ChatGPT's strict superset of Copilot's framing; Copilot's bare phrasing "STRUCTURALLY-GROUNDED LAYER 3 CLOSURE under the Reading C + 600-cell + Mechanism A framework specification" lacks "SKETCH-DOCUMENT," "minimal-local-first-order," and the "pending" tail. The adopted framing is consistent with both reviewer concerns but is closer to ChatGPT's literal wording. Should not be summarized later as "verbatim Copilot phrasing."
+
+3. **"F.1 flagship paper assembly evaluation gate LIVE"** is honest at this Patch but the gate being LIVE does not equal automatic flagship paper assembly authorization. Engaging the gate requires Thomas's explicit decision-call. The gate's LIVE status means the engagement is possible; it does not mean engagement is anticipated within any specific timeline.

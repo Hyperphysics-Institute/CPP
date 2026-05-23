@@ -2396,3 +2396,63 @@ ChatGPT's framing of this principle was direct: "**That scope-boxing is the real
 
 3. **The §37.1 "five-section structure" enumeration could imply the Patch's content is exhaustive at Layer 3.** It is not — Theorem 6.1's substantive content (the four-step proof at Patch 0544 §6) is upstream and not duplicated here. A reader looking at this Patch alone for Target 7's substantive content would find only the criteria-to-clause mapping at §2; the actual theorem statement and proof are at Patch 0544 §6. The §37.1 enumeration is about THIS Patch's content (closure-governance normalization), not Target 7's total substantive content.
 
+
+---
+
+## §38 Patch 0549 — F.1 sub-question Layer 3 status upgrade (Layer 3 reviewer-pause cycle officially closes)
+
+**Context.** Patches 0547 (checkpoint) → 0548 (calibration response) → 0548a (standalone Target 7 closure) staged the F.1 sub-question Layer 3 reviewer-pause cycle to its closure point. Patch 0549 is the cycle-closing Patch — it implements the F.1 status upgrade using the convergent A+C reviewer recommendation captured at Patch 0548 §3.5 (C5 calibration). The cycle mirrors the sketch Layer 2 precedent 0538 → 0539a → 0539 at one-layer-higher granularity.
+
+### §38.1 What this Patch does, structurally
+
+Patch 0549 has no substantive content of its own — the substantive work was done at Patches 0540–0548a. Patch 0549 is the status-upgrade implementation Patch that makes the convergent A+C reviewer recommendation operative forward-facing across the programme registries. Mechanics:
+
+1. **Prepend a new `**Last updated:**` entry to `research_frontier.md`** carrying the new status framing as the canonical authoritative registry. This is the load-bearing edit — `research_frontier.md` is the canonical source for F.1 trajectory status going forward.
+2. **Append a "F.1 Layer 3 Status Upgrade Closure" section to `F1_layer3_promotion_scoping.md`** (Patch 0540's scoping doc) — parallel to Patch 0539's §15 append to F1_phase2_foundations_work.md. This documents the status upgrade in the sketch hierarchy at the venue where the Layer 3 arc opened.
+3. **Defer `future_projects.md` F.1 entry update** (same discrepancy as Patches 0548 + 0548a; now three consecutive Patches deferring the same item; future-window programme-documentation-audit Patch will resolve).
+4. **Defer `F1_phase2_foundations_work.md` §16 cross-reference** (which would point forward from Patch 0539's §15 sketch Layer 2 status upgrade to this Patch's Layer 3 status upgrade closure). This deferral is registered for the same future programme-documentation-audit Patch since modifying the file requires knowing its current state.
+
+### §38.2 The upgrade itself — verbatim framing with calibration carry-forward
+
+The new operative F.1 sub-question status (verbatim, with the convergent A+C reviewer wording from Patch 0548 §3.5):
+
+> **"STRUCTURALLY-GROUNDED SKETCH-DOCUMENT LAYER 3 CLOSURE under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\mathcal{O}(\delta^2)$ extension (B.1.q6), and publication-grade hardening."**
+
+This framing supersedes the Patch 0539 §15 status: *"SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework, pending Layer 3 promotion + supplementary work on the 7 open sub-questions and higher-order extensions."* Patch 0539 §15's text is preserved as historical record per §17.6 (8) immutability.
+
+The four Patch 0548 calibration items are encoded in or alongside the framing:
+
+- **C2 (Theorem 6.1 scope qualifier)** — implicit in "minimal-local-first-order framework"; the explicit verbatim phrasing "perturbative locality under Mechanism A and the framework-local current construction" applies forward-facing wherever Theorem 6.1's scope is referenced (e.g., in any future F.1 flagship paper content).
+- **C3 (sector-5 schema/template reframing)** — operative forward-facing whenever the Substrate-Locality Unification 5-sector closure is discussed: "schema / universality template, not as a fully instantiated sector closure" per ChatGPT verbatim phrasing.
+- **C4 (softer "rigor-level" wording)** — operative forward-facing: "The temporal-sector argument now has a sketch-document Layer 3 analogue of the spatial-sector C-W39-style proof pattern" replaces "rigor-level asymmetry equalized."
+- **C5 (status framing itself)** — the operative status string above.
+
+All four calibrations apply **forward-facing only**. Patch 0544 §5 self-checkpoint's "equalized" framing, Patch 0547 checkpoint document's "rigor-level equalized" framing, Tier 4 §§32–35 prior usages, and any other historical references to the prior framing remain unchanged per §17.6 (8).
+
+### §38.3 Layer 3 reviewer-pause cycle officially closes — observations worth recording at Tier 4
+
+**Observation 1: Three-Patch closure sequences are now the established reviewer-pause cycle envelope.** Both reviewer-pause cycles exercised in the F.1 trajectory have closed within a three-Patch envelope: sketch Layer 2 cycle 0538 (checkpoint) + 0539a (OS-codification) + 0539 (status upgrade); Layer 3 cycle 0547 (checkpoint) + 0548 (calibration response) + 0548a (Target 7 standalone closure) + 0549 (status upgrade, this Patch). The Layer 3 cycle used four Patches because the Target 7 standalone closure was split out per ChatGPT Q2 follow-up anti-bundling discipline; without that split it would have closed at three Patches like the sketch Layer 2 cycle. The three-to-four-Patch envelope is sample-size-of-two but observable as a programme pattern. Should not be cited as established discipline until at least one cycle outside the F.1 trajectory exercises the pattern.
+
+**Observation 2: The convergent A+C verbatim framing is operative; Grok's single-reviewer positive verdict's framing was correctly non-adopted.** Per Patch 0548 §3.5 + this Patch's §38.2, the status uses ChatGPT's strict-superset framing (which contains all of Copilot's framing plus the SKETCH-DOCUMENT + minimal-local-first-order + pending-tail qualifications). Grok's "SUBSTANTIVE LAYER 3 CLOSURE at sketch-document level under the Reading C + 600-cell + Mechanism A + P_TI framework" was non-adopted per ChatGPT's explicit caution against "SUBSTANTIVE LAYER 3 CLOSURE" without "sketch-document level" attached every time. The `templates/relationship_protocol.md` ≥2-reviewer concurrence discipline correctly drove the outcome. Worth recording at Tier 4 as a concrete instance of "convergent A+C overrides single-reviewer-B-positive" applied to status framing.
+
+**Observation 3: The F.1 flagship paper assembly evaluation gate becomes LIVE at this Patch, but gate-LIVE ≠ engagement.** Per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section, the flagship paper assembly was DEFERRED behind reviewer-pause cycle completion. With the cycle now complete, the gate is engageable. But engagement requires Thomas's decision-call. The gate's LIVE status should not be summarized as "F.1 flagship paper is now anticipated" — it is anticipatable but not anticipated.
+
+### §38.4 What this Patch does NOT do
+
+Six explicit non-actions:
+
+1. **Does NOT trigger F.1 flagship paper assembly.** The gate becomes LIVE but engagement requires explicit decision-call.
+2. **Does NOT open F.2 / F.3 substantive content trajectories.** Both remain DEFERRED at decision-gate level; engageable post-Patch 0549 but not engaged.
+3. **Does NOT promote intermediate results to the Findings registry or theorem registry.** Theorem 6.1, Theorem 4.1.1, Identity I1, Identity G3, Substrate-Locality Unification corollary, etc. remain at Layer 3 promotion document status. Registry promotion requires dedicated registry-entry Patches.
+4. **Does NOT modify any prior artifact.** Patches 0531–0548a immutable content preserved per §17.6 (8). The new status applies forward-facing only.
+5. **Does NOT update `future_projects.md` F.1 entry — DEFERRED (third consecutive Patch).** Same discrepancy as Patches 0548 + 0548a; file's current state has no F.1 entry. Now visible in three consecutive Patches' deliverable lists; future-window programme-documentation-audit Patch carries forward.
+6. **Does NOT update `F1_phase2_foundations_work.md` §16 cross-reference — DEFERRED.** Modification would require knowing the file's current state (where §15 ends + what's after it). Flagged for the same future programme-documentation-audit Patch alongside future_projects.md.
+
+### §38.5 Self-checkpoint — three places §38.1–§38.4 could overstate
+
+1. **The "cycle officially closes at this Patch" framing is honest at the discipline level but should not be conflated with "Layer 3 work is closed."** Future Layer 3 refinements (e.g., responses to JUNO peer-review when published, F.1 flagship paper assembly polish discoveries, individual Layer 3 promotion document v1.1 calibrations if needed) can trigger new reviewer-pause cycles on-demand per §17.10. The closure is of the SPECIFIC three-Patch cycle 0547 → 0548 → 0548a → 0549, not of Layer 3 work in general.
+
+2. **The §38.3 Observation 1 "three-to-four-Patch envelope" generalization is at sample size of two.** Both F.1 reviewer-pause cycles closed within this envelope, but generalizing to "programme pattern" requires more cycles outside the F.1 trajectory. The observation is honest at this Patch but should not be cited as established discipline.
+
+3. **The §38.3 Observation 3 "gate LIVE ≠ engagement" framing is the operative interpretation, but a future reader might read "gate becomes LIVE" as engagement-trigger.** The §38.3 wording explicitly distinguishes these but the distinction is subtle. Any future content referencing the gate should preserve the LIVE-vs-engaged distinction explicitly.
+

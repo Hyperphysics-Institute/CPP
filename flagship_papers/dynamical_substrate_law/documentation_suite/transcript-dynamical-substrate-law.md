@@ -173,3 +173,64 @@
 
 **Self-checkpoint at this transaction:** Patch 0548a is the first concrete instance of the "retroactive-recognition-followed-by-dedicated-closure-Patch" governance pattern. The pattern is recorded forward-facing in §4 of the new document and at Tier 4 §37 but should not be cited as established discipline until at least one additional instance demonstrates the pattern in a different trajectory. The discrepancy reference at deliverable (6) carries forward from Patch 0548 §36.5 without resolution at this Patch; both Patches now show the discrepancy in their deliverable lists, accumulating evidence for the future programme-documentation-audit Patch but not progressing toward fix.
 
+
+---
+
+## Transaction 035 — Patch 0549 (F.1 trajectory Layer 3 status upgrade; Layer 3 reviewer-pause cycle officially closes)
+
+**Date:** 23 May 2026 (Session 141 close)
+**Commit (anticipated):** assigned at push (this Patch lands via single .sh apply script with `EXPECTED_BASE=43bf0d5` = Patch 0548a)
+**Branch:** main
+**Patch type:** Status upgrade implementation Patch — no substantive content of its own; codifies the convergent A+C reviewer recommendation captured at Patch 0548 §3.5 as the operative F.1 sub-question status forward-facing across programme registries.
+
+**Trigger:** Conclusion of the three-Patch closure sequence (0547 checkpoint → 0548 calibration response → 0548a Target 7 standalone closure → 0549 status upgrade, this Patch). Parallel to Patch 0539 sketch Layer 2 status upgrade Patch which closed the sketch Layer 2 reviewer-pause cycle.
+
+**New operative F.1 sub-question status (verbatim convergent A+C reviewer recommendation):**
+
+> "STRUCTURALLY-GROUNDED SKETCH-DOCUMENT LAYER 3 CLOSURE under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\mathcal{O}(\delta^2)$ extension (B.1.q6), and publication-grade hardening."
+
+Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 preserved as historical record per §17.6 (8) immutability.
+
+**Calibration carry-forward (Patch 0548 §3.2/§3.3/§3.4/§3.5):**
+- C2: "perturbative locality under Mechanism A and the framework-local current construction" applies wherever Theorem 6.1 scope is referenced forward-facing.
+- C3: "schema / universality template, not as a fully instantiated sector closure" applies wherever Substrate-Locality Unification 5-sector closure is referenced.
+- C4: "The temporal-sector argument now has a sketch-document Layer 3 analogue of the spatial-sector C-W39-style proof pattern" replaces "rigor-level asymmetry equalized" forward-facing.
+- C5: status string above is the operative C5 calibration.
+
+**Files modified by this Patch (5 file deltas applied + 2 deferred):**
+1. PREPEND — `research_frontier.md` Last-updated header (Patch 0549 entry; Patch 0548a entry demoted to `Earlier **Last updated:**`). The canonical authoritative source for F.1 trajectory status.
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §38, 5 subsections — slightly more than §37's 4 to accommodate the cycle-closure reasoning depth).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 25).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 035, this entry).
+5. APPEND — `flagship_papers/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` ("F.1 Layer 3 Status Upgrade Closure" section, descriptive title — parallel to Patch 0539's §15 append to F1_phase2_foundations_work.md).
+6. DEFERRED — `future_projects.md` F.1 entry tail append. Same discrepancy as Patches 0548 + 0548a (third consecutive deferral); file's current state has no F.1 entry. Future-window programme-documentation-audit Patch carries forward.
+7. DEFERRED — `F1_phase2_foundations_work.md` §16 cross-reference (pointing forward from Patch 0539 §15's sketch Layer 2 status upgrade to this Patch's Layer 3 status upgrade). Modification requires knowing the file's current state; flagged for the same future programme-documentation-audit Patch.
+
+**Methods catalogue audit verdict (§29.4 codified discipline):** NO NEW METH entries at this Patch. Status-upgrade implementation Patches reuse established Patch 0539 / §17 OS-codified workflow. The "convergent A+C overrides single-reviewer-B-positive applied to status framing" pattern at Patch 0548 §3.5 + this Patch is a concrete instance of `templates/relationship_protocol.md` ≥2-reviewer concurrence discipline; not a new method. The "three-to-four-Patch reviewer-pause cycle envelope" observation at Tier 4 §38.3 Observation 1 is sample-size-of-two and below threshold for METH-G registry per §28.7 precedent. DEFERRED: C1+C2 candidate entries from Patch 0541a; §5.3 anti-bundling-extension-to-calibration-responses observation from Patch 0548 §36.7; "retroactive-recognition-followed-by-dedicated-closure-Patch" pattern from Patch 0548a §4. All await dedicated catalogue-audit Patches.
+
+**Programme state changes at Patch 0549:**
+1. F.1 sub-question status UPGRADED from Patch 0539 framing to new convergent A+C framing.
+2. Layer 3 reviewer-pause cycle officially CLOSED (three-Patch sequence 0547 → 0548 → 0548a → 0549 complete).
+3. F.1 trajectory has now exercised §17 reviewer-pause discipline TWICE; both within three-to-four-Patch envelopes (sample-size-of-two observation).
+4. F.1 flagship paper assembly evaluation gate becomes LIVE (engageable; not engaged).
+5. F.2 / F.3 substantive content trajectories engageable at decision-gate level (not engaged).
+6. Long-term programme target (Layer 4 axiomatic derivation) REGISTERED + DEFERRED — status review post-Patch 0549 worth registering as background task.
+7. NO new Findings registered.
+8. NO sub-question reopenings.
+9. NO v1.0 SHIPPED edits.
+10. NO modification of Patches 0531–0548a immutable content per §17.6 (8).
+11. NO promotion of intermediate Layer 3 results to Findings/theorem registry.
+12. NO bundling of cycle-closure with any substantive Layer 3 content additions.
+13. Three deferred items now visible across consecutive Patches: future_projects.md F.1 entry (3 Patches: 0548 + 0548a + 0549); F1_phase2_foundations_work.md §16 cross-reference (1 Patch: this one); methods catalogue audit items (multiple Patches).
+
+**Forward queue post-Patch 0549:**
+- (A) F.1 flagship paper assembly evaluation gate LIVE — engagement requires Thomas's explicit decision-call per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section.
+- (B) F.2 / F.3 substantive content trajectory openings engageable at decision-gate level.
+- (C) Long-term programme target (Layer 4) REGISTERED + DEFERRED.
+- (D) JUNO peer-review update integration when published.
+- (E) Programme-documentation-audit Patch (resolving future_projects.md F.1 entry discrepancy + F1_phase2_foundations_work.md §16 cross-reference + any other accumulated documentation drift).
+- (F) Methods catalogue audit Patch (resolving deferred C1+C2 candidates + anti-bundling-extension observation + retroactive-recognition-pattern observation).
+- (G) Future reviewer-pause cycles on-demand at future closure milestones per §17 discipline.
+
+**Self-checkpoint at this transaction:** Patch 0549 is the natural session-close marker for Session 141. Engagement of post-0549 gates is a Thomas decision-call for next-session opening. The three-Patch closure sequence ran 0547 → 0548 → 0548a → 0549 across two days (22–23 May 2026) — efficient closure given the substantive Patch 0540–0546 work it followed. The transition from "Layer 3 work in progress" to "Layer 3 reviewer-pause cycle closed at sketch-document level" is now formally codified across the registries and sketch hierarchy.
+
