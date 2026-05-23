@@ -1747,3 +1747,65 @@ The template file `templates/handover_document_template.md` is registered as OPE
 
 (iii) **The "scope-bounded Patch discipline" framing for template deferral at §27.5** may suggest the deferral is purely tactical. It is mostly tactical (context budget) but also has a methodological rationale (Patch 0540j is codification-Patch, template creation is operationalization-Patch, the two warrant separate Patches for traceability). The Patch 0539a precedent shows codification+template can be bundled; the Patch 0540j choice diverges based on Session 139 close timing.
 
+---
+
+## §27 — Session 140 Patch 0541: B.1.q4 Layer 3 promotion — first Layer 3 closure in F.1 trajectory
+
+### §27.1 The decision to authorize G.b over G.a
+
+Patch 0540 scoping document §4.3 explicitly recommended G.a (Target 2 B.2.q1 framework axiomatization, Priority 1 chain opening) as the next Patch. Thomas at Session 140 open delegated the candidacy decision to Opus's judgment ("Use your best judgment, Please proceed"). Opus selected G.b (Target 1 B.1.q4 full algebraic derivation) rather than G.a.
+
+The reasoning chain registered explicitly: (i) The §5 condensed B.1.q4 derivation preserved in the Session 139 close handover is substantively prepared work; promoting it to a permanent Layer 3 document recovers the ephemeral value before fidelity loss accumulates across handover-cycle iterations. (ii) Single-Patch closure cleanness aligns with the §15.7 codified discipline "each Layer 3 promotion is its own gated trajectory" — making the first Layer 3 promotion in F.1 history a clean before/after demonstration with well-defined scope. (iii) G.a's framework axiomatization is bigger from-scratch work that warrants its own dedicated preparation trajectory rather than a cold first-Patch open. (iv) Both targets are independent per §3 of the scoping document, so choosing G.b first does not foreclose G.a — it remains a clean future gate.
+
+The scoping document's recommendation for G.a was made on **strategic-value** grounds (closing the Priority 1 chain resolves two strongest cross-reviewer-convergent calibration items in coupled fashion). The selection of G.b at this Patch is made on **tactical-closure-cleanness + preparation-already-done** grounds, with the understanding that G.a's strategic value remains available at the next gate. This is not a rejection of the scoping recommendation; it is a sequencing choice consistent with §3 of the scoping document.
+
+### §27.2 What was preserved from the §5 condensed handover derivation
+
+The Session 139 close handover §5 captured the five identities I1–I5 with brief derivations + four-term expansion + golden-ratio reduction + sanity check + suggested 13-section structure. The 538-line original document at `/home/claude/F1_layer3_b1q4_algebraic_derivation.md` in the Session 139 window was ephemeral; only the §5 condensation survived to Session 140 open.
+
+Patch 0541's re-authoring at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` preserves the load-bearing structural content from §5: the five identities with their derivations; the four-term expansion of $\sum_j(\hat{u}_j^v\cdot\hat{n})\hat{u}_j^v$ with Terms A, B, C, D; the boxed final result; the sanity check at $v_{\text{host}}$ recovering Phase 1 Finding DSL-1.
+
+The Patch 0541 document elaborates each step with full derivational discipline that the §5 condensation compressed. The five identities are presented as self-contained sub-results with explicit derivations (I1 from G1 + chord-length computation + $\phi^2 = \phi+1$ identities; I2 from $\alpha^2+\beta^2=1$ unitarity + verification via $(2+\phi)(\phi+1) = 4\phi+3$ cross-check; I3 from antipodal-pair cancellation, elementary, with explicit remark that Schur is NOT required here; I4 via three-step Schur application — group-invariance, real-irreducibility on $H_\perp^v$, trace computation $12 = 3c \Rightarrow c=4$; I5 from $\phi^2 = \phi+1$ in numerator + denominator, with alternative derivation via $1/\phi^2 = 2-\phi$ for cross-check). The main derivation traces Terms A, B, C, D individually with the I3 vanishing of B and C and the I4 + projection contribution of D both made explicit.
+
+### §27.3 The Schur's-lemma application — what makes Identity I4 load-bearing for Layer 3
+
+Identity I4 ($\sum_j \hat{w}_j^v\otimes\hat{w}_j^v = 4P_{\perp v}$) is the load-bearing identity that distinguishes Layer 3 sketch-document rigor from Layer 2 sketch rigor. Layer 2 at Patch 0533 §9.4 used the result as inherited ("Tensor $\hat{w}_j^v\hat{w}_j^v$: $(2+\phi)/4 \cdot 4P_{\perp v}\hat{n}$") without tracing the Schur application. Layer 3 at §5 of Patch 0541 traces three explicit steps: (1) $T$ is $I_h$-invariant via the symmetric-tensor commutation with the group action; (2) Schur's lemma applied to the real 3D irreducible representation of $I_h$ on $H_\perp^v$ forces $T = c\cdot P_{\perp v}$; (3) trace computation $\text{tr}(T) = 12 = \text{tr}(cP_{\perp v}) = 3c \Rightarrow c=4$.
+
+The §27 remark on real-vs-complex Schur is registered explicitly: $I_h$ has Frobenius-Schur indicator $+1$ on its 3D vector representation, so the real form of Schur applies without quaternionic-type modification. This is a small but load-bearing rep-theoretic discipline point.
+
+### §27.4 What the Layer 3 promotion does NOT do
+
+Per §0.1 anti-priorities of the Patch 0541 document (eleven items): no Layer 4 work (G1, G2, $I_h$-symmetry remain inherited substrate-geometric facts); no other sub-question Layer 3 promotion (Targets 2–7 unchanged at sketch Layer 2); no F.1 sub-question status change (still "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework"); no v1.0 SHIPPED edits; no Phase 1 §11 / Phase 2 §12 polished content modifications; no Patches 0531–0540 immutable content modifications; no reviewer-pause checkpoint modifications; no F.1 flagship paper assembly trigger; no Findings registry promotion of the general per-vertex formula (intermediate result, Patch 0533 §9.12 anti-priority sustained); no F.2/F.3 trajectory opening; no long-term programme target (chirality scale from polytope geometry) work.
+
+The scope-qualifier language is sustained: the result is registered as "Layer 3 under the minimal-local-first-order realization framework + Mechanism A primitive + 600-cell first-shell geometric structure G1+G2 + Schur's-lemma rep-theory of $I_h$ on 3D". Not "Layer 3 derived"; not "from primitives" without qualifier.
+
+### §27.5 Cross-target dependency: what Patch 0541 enables and what it does NOT enable
+
+Per Patch 0540 §3 cross-target dependency analysis, B.1.q4 (Target 1) is **independent** of Targets 2, 3, 4. Closing Target 1 at Layer 3 does NOT advance Targets 2 (B.2.q1 framework axiomatization) or 3 (B.1.q1 matter-state independent derivation); the Priority 1 chain (Target 2 → Target 3) remains open and is the natural next gate per §13.3 (A) of the Patch 0541 document.
+
+The general per-vertex current formula at Layer 3 IS useful as input to other Layer 3 promotions where it provides the explicit form of the substrate's first-order DI-bit current at arbitrary vertex. In particular: Target 4 (B.1.d substrate-locality temporal extension Layer 3) would invoke the present formula at the first-shell-to-first-shell edge level; Target 6 (B.1.q2 zero curl Layer 3) would use the formula at first-shell vertices in the trapezoidal circulation computation. But these are downstream applications, not coupled dependencies — each Target is its own gated trajectory.
+
+### §27.6 The four-artifact handover convention sustained
+
+The Patch 0540h amendment cycle (initial Patch shipped only handover document; amended at commit `168d76d` with three doc-suite artifacts; methods catalogue audit performed as separate Patch 0540i incremental) registered the methodological observation: handover Patches require four artifacts simultaneously (handover document + Tier 4 reasoning + Tier 3 vignette + Tier 2 transcript). Patch 0541 is NOT a handover Patch but is the first Layer 3 closure Patch; the four-artifact convention extended to closure Patches per standing practice — substantive document + Tier 4 reasoning (this §27) + Tier 3 vignette (Vignette 14 in `development-dynamical-substrate-law.md`) + Tier 2 transcript transaction (transaction 024 in `transcript-dynamical-substrate-law.md`) + registry updates (`research_frontier.md` + `future_projects.md`). All shipped together in single Patch.
+
+### §27.7 Methods catalogue audit at Patch 0541 — Schur's-lemma-on-3D-irrep is now two instances
+
+Per Patch 0540i §26.8 audit deferred note: "if Patch 0541 = G.b closes B.1.q4 at Layer 3, the B.1.q4 algebraic derivation work will add a second instance of Schur's-lemma-on-3D-irrep-for-tensor-isotropy. At that point, an adapted METH-L1-001-variant entry or a new METH-L1-008 entry may be warranted; defer the audit until B.1.q4 closes at Layer 3 to confirm the reusability across contexts."
+
+With Patch 0541 closing B.1.q4 at Layer 3, the Schur's-lemma-on-3D-irrep-for-tensor-isotropy application is now load-bearing at §5 of the Layer 3 document. Two instances now exist: (i) Patch 0533 §9 sketch Layer 2 application of the result (using the identity as inherited); (ii) Patch 0541 §5 sketch-document Layer 3 derivation of the identity itself via three-step Schur application.
+
+These two instances are at **different layers of the same physics work** — they are not two independent physics-derivation contexts. The threshold rule for methods catalogue inline citation per `templates/operating_system.md` §15 Step E + Patch 0463 codified workflow is "≥1 other physics-derivation context", which means independent application in a structurally different setting, not two layers of the same derivation. The Patch 0541 audit verdict: **insufficient cross-context evidence to warrant a new METH-L1-008 entry**. The audit is deferred again, awaiting a structurally distinct second context (e.g., a hypothetical future Layer 3 promotion of B.1.q2 zero curl involving a tensor sum on the icosahedral link with different operator structure, or extension to a different polytope's link representation).
+
+Other methods examined at Patch 0541: golden-ratio algebraic identities used in I1, I2, I5 (single-instance application within this Patch, no new entry); the four-term expansion + I3-vanishing pattern (structurally specific to this derivation, no new entry).
+
+**Step E audit verdict**: no new methods catalogue entries at Patch 0541. The audit is performed AT this Patch's authoring (not as post-hoc cleanup), satisfying the discipline learned at the 0540h2 → 0540i transition.
+
+### §27.8 Self-checkpoint — three places §27 could overstate
+
+(i) "First Layer 3 promotion in F.1 history" — accurate as registered, but the framing should not be read as "first Layer 3 promotion in CPP programme history" since Capotauro v2.0 contains Layer 3 results (Findings C-W39, C-W40, etc.) at flagship-paper level. The Patch 0541 result is at sketch-document Layer 3 in `layer3_promotion/`, not flagship-paper Layer 3 — a distinction preserved at §12.1 of the Patch 0541 document.
+
+(ii) "Schur's-lemma-on-3D-irrep" application — the load-bearing rep-theoretic content rests on $I_h$ acting irreducibly on the 3D link, which is itself a substrate-geometric inheritance not derived from CPP axioms at this Patch (Layer 4 territory). The §12.2 self-checkpoint of the Patch 0541 document flags this explicitly; the §27 reasoning should not be read as "Schur's lemma applied from CPP first principles".
+
+(iii) "Single-Patch closure cleanness aligns with §15.7 discipline" — accurate, but the §15.7 discipline applies to Layer 3 promotion at sketch-document level. Flagship-paper Layer 3 promotion (publication-grade) is a separate, larger trajectory that would itself be multi-Patch. Patch 0541's "clean first Layer 3 promotion" framing applies at sketch-document scope only.
+
