@@ -2128,3 +2128,81 @@ Methods used: (i) Direct corollary derivation from prior Patch results — metho
 
 (iii) **"Piggyback target" framing**: substantially less standalone work than Targets 1-4, but Theorem 3.1.1's three-part statement + proof + 5-sector closure articulation is genuine Layer 3 work, not trivial inheritance.
 
+
+
+## §34 — Session 140 Patch 0546: B.1.q2 full 4D curl Schur-decomposition at Layer 3 — sixth Layer 3 promotion + retroactive recognition of Target 7 closure at Patch 0544; Layer 3 promotion arc effectively complete
+
+### §34.1 The decision to authorize Target 6 as Patch 0546, plus two corrections to prior forward-queue language
+
+Patch 0546 closes Target 6 (B.1.q2 full 4D curl Schur-decomposition discretization-independent proof at Layer 3) per Patch 0540 scoping document §2.6 and §4.1. Two corrections to the forward-queue language used across Patches 0541-0545:
+
+(a) **Target label swap.** Prior forward queue described "Target 6 = B.1.q3 PT propagation, Target 7 = B.1.q2 zero curl framework axiomatization". Per Patch 0540 §2.6 + §2.7 actual enumeration: **Target 6 = B.1.q2 full 4D curl** (this Patch); **Target 7 = B.1.q3 perturbation-theory propagation**. Underlying Layer 3 work was correct; only routing labels were swapped.
+
+(b) **Target 7 already substantively closed at Patch 0544 §6 Theorem 6.1.** Theorem 6.1 (Perturbative-Locality Propagation Rule) meets all three Target 7 promotion criteria per Patch 0540 §2.7: independent theorem statement at $\mathcal{O}(\delta^n)$ for graph-distance-$n$ edges (equivalent to first-$n$-shells of vertices); removal of "within framework local-current-definition scope" qualifier from Patch 0538 §14.3 via independent derivation from Mechanism A + $\delta$-expansion + connected-subgraph argument; explicit propagation rule at arbitrary order in $\delta$. Patch 0544 framed Theorem 6.1 as supporting Target 4 part (c), but its scope was naturally broader and retroactively closes Target 7. §8 of Patch 0546's Layer 3 document records this recognition.
+
+Net effect: Layer 3 promotion arc launched at Patch 0540 is effectively complete at Patch 0546 — all seven targets closed at sketch-document Layer 3.
+
+### §34.2 What this Patch substantively does
+
+Patch 0546 promotes Patch 0535 §11's sketch Layer 2 zero-curl result to sketch-document Layer 3 via explicit Schur-decomposition of the 4D 2-form space at $v_{\text{host}}$ under residual $I_h$ symmetry.
+
+Three load-bearing components:
+
+(i) **Explicit Schur-decomposition** $\Lambda^2(\mathbb{R}^4)|_{v_*} = T_{1u} \oplus T_{1g}$ derived via tensor-product decomposition: $\mathbb{R}^4 = A_g \oplus T_{1u}$ under $I_h$ residual at $v_*$ (radial $\hat{n}$ in $A_g$, tangent 3D in $T_{1u}$); $\Lambda^2(\mathbb{R}^4) = (A_g \otimes T_{1u}) \oplus \Lambda^2(T_{1u}) = T_{1u} \oplus T_{1g}$. The $F_{0i}$ components carry $T_{1u}$ (polar-vector-like); the $F_{ij}$ components carry $T_{1g}$ (pseudovector-like / axial-vector-like). Neither contains the trivial $A_g$ irrep.
+
+(ii) **Full 4D Curl Vanishing Theorem at Layer 3 (Theorem 4.1.1)** with discretization-independent proof: $F = d\vec{j}_{DI}^{net}|_{v_*}$ is $I_h$-invariant by CPP primitive + Reading C construction; the $I_h$-invariant subspace of $\Lambda^2(\mathbb{R}^4)|_{v_*}$ is zero-dimensional (no $A_g$ component in $T_{1u} \oplus T_{1g}$); therefore $F = 0$. Generalizes from $v_{\text{host}}$-only (Patch 0535 §11.6 framing) to any 600-cell vertex with residual $I_h$ (by 600-cell vertex-transitivity).
+
+(iii) **Removal of Patch 0535 §11.12(i) trapezoidal-discretization caveat** at sketch-document Layer 3 — the Schur-decomposition argument depends only on continuum 2-form rep theory + $I_h$-covariance of the current, NOT on a specific discrete-curl operator. Patch 0535 §11.12(iii) Layer 3 deferral substantively addressed.
+
+### §34.3 The Schur-decomposition framing decision
+
+Three alternative framings considered:
+
+(a) **Promote to Layer 4 axiomatic derivation**: rejected as Layer 4 territory (would require deriving CPP A1-A11 → 600-cell → Reading C → residual $I_h$ from primitive axioms alone).
+
+(b) **Strengthen the trapezoidal-discretization argument numerically across multiple discrete-curl operators**: rejected because the §11.12(i) caveat is structural (discretization-dependence of the verification), not computational; multi-discretization numerical verification would not substantively address Layer 3 promotion criteria.
+
+(c) **Schur-decomposition discretization-independent proof at continuum 2-form level**: chosen per Patch 0540 §2.6 specification. Operates at continuum + $I_h$ rep theory; discretization-independent; subsumes Patch 0535 §11.6's informal Schur argument with explicit irrep labels + rigorous proof.
+
+### §34.4 What this Patch does NOT do
+
+(i) Does NOT promote theorem to Findings registry or theorem registry.
+(ii) Does NOT trigger F.1 sub-question status change (sustained at Patch 0539 framing).
+(iii) Does NOT trigger flagship paper assembly trigger (requires Layer 3 reviewer-pause + status upgrade).
+(iv) Does NOT extend to $\mathcal{O}(\delta^2)$ (B.1.q6 territory).
+(v) Does NOT modify Patches 0531-0545 immutable content.
+(vi) Does NOT serve as Layer 3 reviewer-pause cycle Patch (that is the next gate at Patch 0547).
+(vii) Does NOT re-do Target 7 fresh closure work (Patch 0544 §6 already substantive; this Patch only records retroactive recognition in §8).
+
+### §34.5 Programme-level milestone — Layer 3 promotion arc effectively complete
+
+With Patch 0546 closing Target 6 + §8 recording Target 7 retroactive closure at Patch 0544 §6, all seven Patch 0540 Layer 3 promotion targets are closed at sketch-document Layer 3:
+
+| Target | Sub-question | Layer 3 Patch | Status |
+|---|---|---|---|
+| 1 | B.1.q4 algebraic derivation | Patch 0541 | CLOSED |
+| 2 | B.2.q1 framework axiomatization | Patch 0542 | CLOSED |
+| 3 | B.1.q1 matter-state independent derivation | Patch 0543 | CLOSED |
+| 4 | B.1.d substrate-locality temporal extension | Patch 0544 | CLOSED |
+| 5 | B.3.q1 Substrate-Locality Unification corollary | Patch 0545 | CLOSED |
+| 6 | B.1.q2 full 4D curl Schur-decomposition | Patch 0546 (this Patch) | CLOSED |
+| 7 | B.1.q3 perturbation-theory propagation | Patch 0544 §6 Theorem 6.1 (retroactive) | CLOSED |
+
+Aggregate Layer 3 promotion arc consumed Patches 0540 (scoping) + 0541-0546 (target closures) + 0541a (collision recovery) = 7 substantive Patches across Session 140 — well below Patch 0540 §4.2 estimate of 10-22 sessions. The efficiency comes from: (a) Priority 1 chain Target 2 → Target 3 coupled closure (Patches 0542 + 0543); (b) Target 5 piggyback on Target 4 closing in single Patch (Patch 0545); (c) Target 7 retroactively closing at Patch 0544 §6 via naturally-broader Theorem 6.1 scope.
+
+### §34.6 Methods catalogue audit at Patch 0546 — no new entries
+
+Per §29.5 candidate C1 (codified at Patch 0541a), Step E audit AT this Patch.
+
+Methods used: (i) Maschke + Schur orthogonality on $\Lambda^2(\mathbb{R}^4)|_{v_*}$ under $I_h$ — direct application of Patch 0542 §3.2 + Patch 0543 §3 machinery to a different carrier space (2-forms vs matter states). (ii) Tensor product / antisymmetric square computations for irreps of $I_h$ — standard rep theory. (iii) Retroactive recognition of Patch 0544 §6 Theorem 6.1's broader scope — meta-methodological observation, not a new physics method.
+
+**Verdict: no new METH entries.** Maschke / Schur orthogonality applied at F.1 trajectory's same load-bearing argument arc. Tensor product / antisymmetric square computations are textbook rep theory. Retroactive-recognition observation is meta-methodological; potentially warrants METH-L2-N+1 entry as "broader-scope-substantive-overlap recognition" but threshold "≥1 other physics-derivation context" applies — single occurrence does not yet satisfy threshold. Deferred pending future application in different flagship trajectory.
+
+### §34.7 Self-checkpoint — three places §34 could overstate
+
+(i) **"Layer 3 promotion arc effectively complete" framing**: at SKETCH-DOCUMENT Layer 3 (parallel to Capotauro v2.0 §3 publication-grade Layer 3 internally but not yet published or reviewer-pause-cycled). F.1 status change requires Layer 3 reviewer-pause + status upgrade Patches.
+
+(ii) **"Target 7 retroactively closed at Patch 0544 §6" framing (§34.1 (b) + §8 of Layer 3 doc)**: the recognition is supported by Theorem 6.1's three-criteria match per §8.1 of the Layer 3 doc. However, Thomas may want to gate-check this recognition (e.g., via reviewer-pause cycle confirmation) before accepting it as final. This Patch states the recognition + supporting evidence; final ratification belongs to the reviewer-pause cycle at Patch 0547+.
+
+(iii) **"Two corrections to prior forward-queue language" framing**: the corrections are about routing labels and retroactive recognition, not about substantive Layer 3 work errors. Patches 0541-0545 substantive work is preserved as immutable; corrections affect only the forward-queue narrative text.
+
