@@ -1749,9 +1749,9 @@ The template file `templates/handover_document_template.md` is registered as OPE
 
 ---
 
-## §27 — Session 140 Patch 0541: B.1.q4 Layer 3 promotion — first Layer 3 closure in F.1 trajectory
+## §28 — Session 140 Patch 0541: B.1.q4 Layer 3 promotion — first Layer 3 closure in F.1 trajectory
 
-### §27.1 The decision to authorize G.b over G.a
+### §28.1 The decision to authorize G.b over G.a
 
 Patch 0540 scoping document §4.3 explicitly recommended G.a (Target 2 B.2.q1 framework axiomatization, Priority 1 chain opening) as the next Patch. Thomas at Session 140 open delegated the candidacy decision to Opus's judgment ("Use your best judgment, Please proceed"). Opus selected G.b (Target 1 B.1.q4 full algebraic derivation) rather than G.a.
 
@@ -1759,7 +1759,7 @@ The reasoning chain registered explicitly: (i) The §5 condensed B.1.q4 derivati
 
 The scoping document's recommendation for G.a was made on **strategic-value** grounds (closing the Priority 1 chain resolves two strongest cross-reviewer-convergent calibration items in coupled fashion). The selection of G.b at this Patch is made on **tactical-closure-cleanness + preparation-already-done** grounds, with the understanding that G.a's strategic value remains available at the next gate. This is not a rejection of the scoping recommendation; it is a sequencing choice consistent with §3 of the scoping document.
 
-### §27.2 What was preserved from the §5 condensed handover derivation
+### §28.2 What was preserved from the §5 condensed handover derivation
 
 The Session 139 close handover §5 captured the five identities I1–I5 with brief derivations + four-term expansion + golden-ratio reduction + sanity check + suggested 13-section structure. The 538-line original document at `/home/claude/F1_layer3_b1q4_algebraic_derivation.md` in the Session 139 window was ephemeral; only the §5 condensation survived to Session 140 open.
 
@@ -1767,29 +1767,29 @@ Patch 0541's re-authoring at `flagship_papers/dynamical_substrate_law/layer3_pro
 
 The Patch 0541 document elaborates each step with full derivational discipline that the §5 condensation compressed. The five identities are presented as self-contained sub-results with explicit derivations (I1 from G1 + chord-length computation + $\phi^2 = \phi+1$ identities; I2 from $\alpha^2+\beta^2=1$ unitarity + verification via $(2+\phi)(\phi+1) = 4\phi+3$ cross-check; I3 from antipodal-pair cancellation, elementary, with explicit remark that Schur is NOT required here; I4 via three-step Schur application — group-invariance, real-irreducibility on $H_\perp^v$, trace computation $12 = 3c \Rightarrow c=4$; I5 from $\phi^2 = \phi+1$ in numerator + denominator, with alternative derivation via $1/\phi^2 = 2-\phi$ for cross-check). The main derivation traces Terms A, B, C, D individually with the I3 vanishing of B and C and the I4 + projection contribution of D both made explicit.
 
-### §27.3 The Schur's-lemma application — what makes Identity I4 load-bearing for Layer 3
+### §28.3 The Schur's-lemma application — what makes Identity I4 load-bearing for Layer 3
 
 Identity I4 ($\sum_j \hat{w}_j^v\otimes\hat{w}_j^v = 4P_{\perp v}$) is the load-bearing identity that distinguishes Layer 3 sketch-document rigor from Layer 2 sketch rigor. Layer 2 at Patch 0533 §9.4 used the result as inherited ("Tensor $\hat{w}_j^v\hat{w}_j^v$: $(2+\phi)/4 \cdot 4P_{\perp v}\hat{n}$") without tracing the Schur application. Layer 3 at §5 of Patch 0541 traces three explicit steps: (1) $T$ is $I_h$-invariant via the symmetric-tensor commutation with the group action; (2) Schur's lemma applied to the real 3D irreducible representation of $I_h$ on $H_\perp^v$ forces $T = c\cdot P_{\perp v}$; (3) trace computation $\text{tr}(T) = 12 = \text{tr}(cP_{\perp v}) = 3c \Rightarrow c=4$.
 
-The §27 remark on real-vs-complex Schur is registered explicitly: $I_h$ has Frobenius-Schur indicator $+1$ on its 3D vector representation, so the real form of Schur applies without quaternionic-type modification. This is a small but load-bearing rep-theoretic discipline point.
+The §28.3 remark on real-vs-complex Schur is registered explicitly: $I_h$ has Frobenius-Schur indicator $+1$ on its 3D vector representation, so the real form of Schur applies without quaternionic-type modification. This is a small but load-bearing rep-theoretic discipline point.
 
-### §27.4 What the Layer 3 promotion does NOT do
+### §28.4 What the Layer 3 promotion does NOT do
 
 Per §0.1 anti-priorities of the Patch 0541 document (eleven items): no Layer 4 work (G1, G2, $I_h$-symmetry remain inherited substrate-geometric facts); no other sub-question Layer 3 promotion (Targets 2–7 unchanged at sketch Layer 2); no F.1 sub-question status change (still "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2 under the minimal-local-first-order realization framework"); no v1.0 SHIPPED edits; no Phase 1 §11 / Phase 2 §12 polished content modifications; no Patches 0531–0540 immutable content modifications; no reviewer-pause checkpoint modifications; no F.1 flagship paper assembly trigger; no Findings registry promotion of the general per-vertex formula (intermediate result, Patch 0533 §9.12 anti-priority sustained); no F.2/F.3 trajectory opening; no long-term programme target (chirality scale from polytope geometry) work.
 
 The scope-qualifier language is sustained: the result is registered as "Layer 3 under the minimal-local-first-order realization framework + Mechanism A primitive + 600-cell first-shell geometric structure G1+G2 + Schur's-lemma rep-theory of $I_h$ on 3D". Not "Layer 3 derived"; not "from primitives" without qualifier.
 
-### §27.5 Cross-target dependency: what Patch 0541 enables and what it does NOT enable
+### §28.5 Cross-target dependency: what Patch 0541 enables and what it does NOT enable
 
 Per Patch 0540 §3 cross-target dependency analysis, B.1.q4 (Target 1) is **independent** of Targets 2, 3, 4. Closing Target 1 at Layer 3 does NOT advance Targets 2 (B.2.q1 framework axiomatization) or 3 (B.1.q1 matter-state independent derivation); the Priority 1 chain (Target 2 → Target 3) remains open and is the natural next gate per §13.3 (A) of the Patch 0541 document.
 
 The general per-vertex current formula at Layer 3 IS useful as input to other Layer 3 promotions where it provides the explicit form of the substrate's first-order DI-bit current at arbitrary vertex. In particular: Target 4 (B.1.d substrate-locality temporal extension Layer 3) would invoke the present formula at the first-shell-to-first-shell edge level; Target 6 (B.1.q2 zero curl Layer 3) would use the formula at first-shell vertices in the trapezoidal circulation computation. But these are downstream applications, not coupled dependencies — each Target is its own gated trajectory.
 
-### §27.6 The four-artifact handover convention sustained
+### §28.6 The four-artifact handover convention sustained
 
-The Patch 0540h amendment cycle (initial Patch shipped only handover document; amended at commit `168d76d` with three doc-suite artifacts; methods catalogue audit performed as separate Patch 0540i incremental) registered the methodological observation: handover Patches require four artifacts simultaneously (handover document + Tier 4 reasoning + Tier 3 vignette + Tier 2 transcript). Patch 0541 is NOT a handover Patch but is the first Layer 3 closure Patch; the four-artifact convention extended to closure Patches per standing practice — substantive document + Tier 4 reasoning (this §27) + Tier 3 vignette (Vignette 14 in `development-dynamical-substrate-law.md`) + Tier 2 transcript transaction (transaction 024 in `transcript-dynamical-substrate-law.md`) + registry updates (`research_frontier.md` + `future_projects.md`). All shipped together in single Patch.
+The Patch 0540h amendment cycle (initial Patch shipped only handover document; amended at commit `168d76d` with three doc-suite artifacts; methods catalogue audit performed as separate Patch 0540i incremental) registered the methodological observation: handover Patches require four artifacts simultaneously (handover document + Tier 4 reasoning + Tier 3 vignette + Tier 2 transcript). Patch 0541 is NOT a handover Patch but is the first Layer 3 closure Patch; the four-artifact convention extended to closure Patches per standing practice — substantive document + Tier 4 reasoning (this §28) + Tier 3 vignette (Vignette 15 in `development-dynamical-substrate-law.md`) + Tier 2 transcript transaction (transaction 025 in `transcript-dynamical-substrate-law.md`) + registry updates (`research_frontier.md` + `future_projects.md`). All shipped together in single Patch.
 
-### §27.7 Methods catalogue audit at Patch 0541 — Schur's-lemma-on-3D-irrep is now two instances
+### §28.7 Methods catalogue audit at Patch 0541 — Schur's-lemma-on-3D-irrep is now two instances
 
 Per Patch 0540i §26.8 audit deferred note: "if Patch 0541 = G.b closes B.1.q4 at Layer 3, the B.1.q4 algebraic derivation work will add a second instance of Schur's-lemma-on-3D-irrep-for-tensor-isotropy. At that point, an adapted METH-L1-001-variant entry or a new METH-L1-008 entry may be warranted; defer the audit until B.1.q4 closes at Layer 3 to confirm the reusability across contexts."
 
@@ -1801,11 +1801,55 @@ Other methods examined at Patch 0541: golden-ratio algebraic identities used in 
 
 **Step E audit verdict**: no new methods catalogue entries at Patch 0541. The audit is performed AT this Patch's authoring (not as post-hoc cleanup), satisfying the discipline learned at the 0540h2 → 0540i transition.
 
-### §27.8 Self-checkpoint — three places §27 could overstate
+### §28.8 Self-checkpoint — three places §28 could overstate
 
 (i) "First Layer 3 promotion in F.1 history" — accurate as registered, but the framing should not be read as "first Layer 3 promotion in CPP programme history" since Capotauro v2.0 contains Layer 3 results (Findings C-W39, C-W40, etc.) at flagship-paper level. The Patch 0541 result is at sketch-document Layer 3 in `layer3_promotion/`, not flagship-paper Layer 3 — a distinction preserved at §12.1 of the Patch 0541 document.
 
-(ii) "Schur's-lemma-on-3D-irrep" application — the load-bearing rep-theoretic content rests on $I_h$ acting irreducibly on the 3D link, which is itself a substrate-geometric inheritance not derived from CPP axioms at this Patch (Layer 4 territory). The §12.2 self-checkpoint of the Patch 0541 document flags this explicitly; the §27 reasoning should not be read as "Schur's lemma applied from CPP first principles".
+(ii) "Schur's-lemma-on-3D-irrep" application — the load-bearing rep-theoretic content rests on $I_h$ acting irreducibly on the 3D link, which is itself a substrate-geometric inheritance not derived from CPP axioms at this Patch (Layer 4 territory). The §12.2 self-checkpoint of the Patch 0541 document flags this explicitly; the §28 reasoning should not be read as "Schur's lemma applied from CPP first principles".
 
 (iii) "Single-Patch closure cleanness aligns with §15.7 discipline" — accurate, but the §15.7 discipline applies to Layer 3 promotion at sketch-document level. Flagship-paper Layer 3 promotion (publication-grade) is a separate, larger trajectory that would itself be multi-Patch. Patch 0541's "clean first Layer 3 promotion" framing applies at sketch-document scope only.
 
+
+
+## §29 — Session 140 Patch 0541a: Collision-recovery interpolation Patch reasoning
+
+Patch 0541a is an incremental letter-suffix interpolation Patch on Patch 0541, parallel to the 0540h → 0540i → 0540j follow-on pattern codified at §15.7 of `templates/operating_system.md` and at the methodological observation registered in §26.8 Tier 4 reasoning ("post-hoc audit-completion Patches must be INCREMENTAL letter-suffix interpolations, not RE-STATEMENT Patches"). The 0540h2 → 0540i recovery was the originating instance; Patch 0541a is the second concrete instance of the pattern in the programme's history.
+
+### §29.1 What 0541a corrects
+
+Patch 0541 (commit `416f85e`) introduced three numbering collisions on origin/main because the apply script was constructed from a sandbox base at `ebfab15` (Patch 0540i) without re-fetching origin/main before patch generation, and origin/main had advanced to `acba7b3` (Patch 0540j, OS §15.11 codification) in the interval. The collisions are: (1) Tier 4 §27 — two distinct top-level sections both labeled §27 in `reasoning-dynamical-substrate-law.md` (0540j's audit-codification reasoning at line 1698 and Patch 0541's B.1.q4 Layer 3 reasoning at line 1752); (2) Vignette 14 — two distinct vignettes both labeled "Vignette 14" in `development-dynamical-substrate-law.md` (0540j's at line 380 and Patch 0541's at line 403); (3) transcript transaction 024 — Patch 0540j's row (the OS codification transcript record) was OVERWRITTEN by Patch 0541's full-file `cp` replacement of `transcript-dynamical-substrate-law.md`, leaving transaction 024 occupied by Patch 0541 with no record of Patch 0540j in the transcript file at all (though git history at `acba7b3` preserves the substantive record).
+
+### §29.2 What 0541a does to fix
+
+Three surgical operations on the doc-suite files: rename Patch 0541's §27 → §28 (and §27.1-§27.8 → §28.1-§28.8, plus internal cross-references) in `reasoning-dynamical-substrate-law.md`; rename Patch 0541's Vignette 14 → Vignette 15 (plus the one body cross-reference) in `development-dynamical-substrate-law.md`; in `transcript-dynamical-substrate-law.md` restore Patch 0540j's transaction-024 row to its position after transaction 023 in the Session 139 table and renumber Patch 0541's transaction 024 → 025 in the Session 140 table. Plus the four-artifact convention deliverables for 0541a itself: this §29 in reasoning, Vignette 16 in development, transaction 026 in transcript.
+
+### §29.3 What 0541a explicitly does NOT do
+
+- No modification of Patch 0540j's §27 (in reasoning) or its Vignette 14 (in development) — preserved as historical record per §17.8 immutable-checkpoint discipline.
+- No modification of the substantive Patch 0541 Layer 3 promotion document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` — the Layer 3 derivation work is unaffected; the collision-correction is purely on cross-references and section numbering.
+- No modification of Patch 0541's commit message at `416f85e` (immutable git history). The commit message references "§27.1 reasoning" and "transaction 024" which were correct at the time of authoring; the §28.1 / transaction 025 renaming reflects the post-0540j programme state.
+- No modification of `research_frontier.md` or `future_projects.md` (no cross-references in those files to the renumbered sections).
+- No new Findings registered. No F.1 sub-question status change. No v1.0 SHIPPED edits. No Patches 0531-0540j immutable content modifications beyond the doc-suite collision-fix renames in Patch 0541's content. No reviewer-pause checkpoint modifications.
+- No methods catalogue entry registered at this Patch (the methodological observations registered below are candidates for METH-L2-010 or similar but the threshold-and-registry decision is deferred to a dedicated catalogue audit Patch per the catalog-first-then-cite workflow learned at 0540i).
+
+### §29.4 Root-cause methodological observation — stale-base patch generation
+
+The root cause of the Patch 0541 collisions was the apply script's preflight check warning about base-divergence ("local main at acba7b3, expected ebfab15") but defaulting to "Continuing anyway" rather than aborting. The base-mismatch warning identified the exact problem but was non-blocking. Both Opus and Thomas saw the warning and proceeded; both should have stopped and rebuilt the patch from current origin/main. The fix at workflow level: stale-base preflight checks should ABORT by default with explicit override flag, not warn-and-continue.
+
+Sub-observation: even though the apply script ran with the stale base, the actual base-mismatch was small enough (one intervening commit, 0540j) that the resulting collisions were mechanically tractable — three numbering renames and one transcript-row restoration. The patch-as-data approach via base64-encoded file payloads (vs `git am --3way` 3-way merge) is what allowed the partial fix to land cleanly even with a stale base; a stricter 3-way merge would have rejected the apply entirely on the modified files, requiring a full rebuild rather than allowing the partial-apply-then-fix recovery path. This is a load-bearing point about apply-script vs `git am` tradeoffs: apply-scripts are more forgiving but the same forgiveness enables silent base-mismatch consequences that `git am` would have caught.
+
+### §29.5 Methodological observations registered as candidates (deferred for catalogue audit)
+
+Two observations registered as candidates for future methods catalogue entries (METH-L2-010 and onward), per the catalog-first-then-cite workflow learned at Patch 0540i (catalogue entry decision deferred until threshold criteria evaluated at dedicated audit Patch, not at incidental observation registration):
+
+(C1) **Stale-base patch-generation discipline**: in any patch-generation workflow that runs across long conversation windows or involves intermediate user-side commits, the patch-generating side must `git fetch origin <branch> && git reset --hard origin/<branch>` (or equivalent) IMMEDIATELY before `git format-patch` / apply-script construction, not just at conversation start. Otherwise stale base produces collisions on append-only files (with apply-scripts) or merge failures (with `git am`). Sub-rule: preflight checks comparing local base to expected base should abort by default with explicit override flag rather than warn-and-continue.
+
+(C2) **Apply-script vs `git am` tradeoff registered**: apply-scripts (direct file operations with base64 content payloads + manual commit) succeed across CRLF/autocrlf differences and other working-tree-vs-blob divergence issues that defeat `git am --3way` 3-way merge, but the same forgiveness allows silent base-mismatch consequences. `git am --3way` rejects stale-base apply (visible failure → forces rebuild); apply-scripts complete the apply (silent failure → requires post-hoc collision-fix). Both have legitimate workflow roles; the discipline is to recognize which mode is active and apply the matching preflight strictness.
+
+### §29.6 Self-checkpoint — three places §29 could overstate
+
+(i) "Root cause" framing in §29.4: the WARN-vs-ABORT design decision was one contributing factor; the deeper contributing factor was Opus not noticing or weighting the warning sufficiently when it appeared in the apply output. Both Opus reading discipline and script preflight design contribute; §29.4 should not be read as "fix the script and the problem is solved" — Opus's discipline of reading and responding to preflight warnings is the load-bearing element.
+
+(ii) "Mechanically tractable" framing in §29.4 sub-observation: this is true for THIS collision (one intervening commit, mostly append-only files, transcript-row restoration recoverable from git history at the missed commit). Larger base-mismatch (multiple intervening commits, content-modifying changes rather than appends, registry conflicts) would be substantially less tractable; the apply-script-forgiveness-vs-rebuild tradeoff is genuinely a tradeoff, not a free win.
+
+(iii) "Catalogue audit deferred" framing in §29.5: deferring catalogue audit decisions to dedicated audit Patches (per 0540i discipline) is sound, but should not become a way to indefinitely postpone the audit — at the next handover or session close, the audit Patch should be done on schedule, not deferred again.
