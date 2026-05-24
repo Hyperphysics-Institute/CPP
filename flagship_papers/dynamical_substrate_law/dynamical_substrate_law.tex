@@ -602,22 +602,124 @@ Theorem~\ref{thm:host-first-shell-projection} suffices for the substrate-localit
 \section{The perturbation-theory propagation rule}
 \label{sec:perturbation-locality}
 
-% [Body content to be added at Patch 0560. Sub-structure anticipated:
-%   §6.1 Lemma: path-amplitude expansion
-%   §6.2 Lemma: perturbed-step counting
-%   §6.3 Lemma: connected-subgraph confinement
-%   §6.4 Theorem 6.1: O(delta^n) coefficient confined to graph-distance-n edges
-%   §6.5 Corollary 6.2: shell-locality at O(delta^1)
-%   §6.6 Five-class exclusion enumeration]
-\begin{theorem}[Perturbation-theory propagation rule; sketch-document Layer 3]
+% [Body added at Patch 0561 per scoping doc §4.2 sixth step.
+%  SECOND INTEGRATION PATCH IN THE ASSEMBLY ARC.
+%  Primary source: hardened_theorems/perturbation_locality_propagation.tex
+%  (Patch 0550, 269 lines, 8-page PDF). Integrated treatment of Theorem
+%  3.3.3 + Corollary 3.3.4 from that artifact as Theorem 6.1 + Corollary 6.2
+%  here, together with the three supporting lemmas (path-amplitude expansion,
+%  perturbed-step counting, connected-subgraph confinement) and the
+%  five-class exclusion enumeration. Same scaffolding-completion precedent
+%  as Patch 0560 §5 (Tier 4 §49.4): theorem and corollary parenthetical Layer
+%  labels updated from "sketch-document Layer 3" to "publication-grade Layer 3".]
+
+This section integrates the publication-grade hardening of Patch~0550 (the first of the F.1 hardened-theorem trio) as the perturbation-theory engine for the substrate-locality theorem of \S\ref{sec:substrate-locality-theorem}. Theorem~\ref{thm:perturbation-locality} (perturbation-theory propagation rule at general order $\bigO{\delta^n}$) and Corollary~\ref{cor:shell-locality} (shell-locality specialisation at $\bigO{\delta^1}$) are at \emph{publication-grade Layer~3} rigor in the source artifact at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}, with three supporting lemmas (path-amplitude expansion, perturbed-step counting, connected-subgraph confinement) and a five-class exclusion enumeration. Here we provide the formal statements, proof sketches, and discussion of the exclusion enumeration; the full hardened proofs live in the source artifact.
+
+\subsection{Lemma 6.1.1: path-amplitude expansion}
+\label{sec:path-amplitude-expansion}
+
+Multi-step DI-bit propagation paths through the 600-cell edge graph are the elementary objects of the perturbation theory. For a path $p = (v_{a_0} \to v_{a_1} \to \cdots \to v_{a_n})$ of $n$ steps along directed edges of the 600-cell, the path amplitude is the product of single-step propagation rates~\eqref{eq:mechanism-a-formal} along its edges:
+\[
+\mathcal{A}(p) = \prod_{j=1}^{n} r(\hat{e}_{a_{j-1} a_j}) = r_0^n \prod_{j=1}^{n} \big(1 + \delta \, \hat{e}_{a_{j-1} a_j} \cdot \hat{n}\big).
+\]
+Expanding the product as a polynomial in $\delta$ gives the path-amplitude expansion:
+
+\begin{lemma}[Path-amplitude expansion]
+\label{lem:path-expansion}
+For a multi-step propagation path $p$ of length $n$, the path amplitude expands as
+\begin{equation}
+\mathcal{A}(p) = r_0^n \sum_{k=0}^{n} \delta^k \sum_{S \subseteq \{1, \ldots, n\}, \, |S| = k} \prod_{j \in S} \big(\hat{e}_{a_{j-1} a_j} \cdot \hat{n}\big),
+\label{eq:path-expansion}
+\end{equation}
+where the inner sum runs over all $\binom{n}{k}$ subsets $S$ of step-indices of size $k$ (the ``perturbed steps'' contributing to the $\bigO{\delta^k}$ coefficient).
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Direct expansion of $\prod_{j=1}^{n} (1 + \delta \, \hat{e}_{a_{j-1} a_j} \cdot \hat{n})$ in powers of $\delta$. The $\bigO{\delta^k}$ coefficient collects the $\binom{n}{k}$ products obtained by choosing a size-$k$ subset of factors to contribute their $\delta$-term, with the remaining $n - k$ factors contributing their $1$-term.
+\end{proof}
+
+\emph{Remark.} A perturbed step (a step in the subset $S$) whose edge direction satisfies $\hat{e}_{a_{j-1} a_j} \cdot \hat{n} = 0$ contributes zero to the inner product factor in Equation~\eqref{eq:path-expansion}, and hence to the $\bigO{\delta^k}$ coefficient. By Theorem~\ref{thm:first-shell-perpendicularity} of \S\ref{sec:first-shell-perpendicularity}, all 30 first-shell-to-first-shell edges of the 600-cell satisfy $\hat{e}_{ij} \cdot \hat{n} = 0$ at vertex-aligned Reading~C; perturbed steps along these edges contribute zero. This observation underwrites the $n=1$ specialisation in Corollary~\ref{cor:shell-locality}.
+
+\subsection{Lemma 6.2.1: perturbed-step counting}
+\label{sec:perturbed-step-counting}
+
+The $\bigO{\delta^k}$ contributions of a path of length $n$ are confined to subsets of size exactly $k$:
+
+\begin{lemma}[Perturbed-step counting]
+\label{lem:perturbed-step-counting}
+For a multi-step propagation path $p$ of length $n$, the $\bigO{\delta^k}$ coefficient of $\mathcal{A}(p)$ vanishes for $k > n$. For $k \le n$, the coefficient is a sum over the $\binom{n}{k}$ size-$k$ subsets of step-indices, each contributing the product of $k$ inner products $\hat{e}_{a_{j-1} a_j} \cdot \hat{n}$ over the perturbed steps in the subset.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Direct corollary of Lemma~\ref{lem:path-expansion}: the path-amplitude expansion runs only over $k \in \{0, 1, \ldots, n\}$; for $k > n$ no size-$k$ subset of an $n$-element index set exists. For $k \le n$, the contribution structure is read off directly from Equation~\eqref{eq:path-expansion}.
+\end{proof}
+
+\emph{Consequence.} A path of length $n$ contributes to $\bigO{\delta^k}$ only if $k \le n$. Equivalently: the $\bigO{\delta^n}$ coefficient of the framework-local current $\jDInet(\vhost)$ collects contributions only from paths of length $\ge n$.
+
+\subsection{Lemma 6.3.1: connected-subgraph confinement}
+\label{sec:connected-subgraph-confinement}
+
+Paths originating and terminating at the host vertex $\vhost$ with $n$ perturbed steps are confined to the $n$-ball of $\vhost$ in the 600-cell edge graph:
+
+\begin{lemma}[Connected-subgraph confinement]
+\label{lem:subgraph-confinement}
+Let $p = (v_{a_0} \to v_{a_1} \to \cdots \to v_{a_m})$ be a multi-step propagation path with $v_{a_0} = v_{a_m} = \vhost$, contributing at $\bigO{\delta^n}$ to the framework-local current $\jDInet(\vhost)$ (i.e., having exactly $n$ perturbed steps). Then every vertex visited by $p$ lies in the $n$-ball $B_n(\vhost) = \{ v \in V(G_{600}) : d_{G_{600}}(\vhost, v) \le n \}$; equivalently, every edge traversed by $p$ lies in the edge set $E_n(\vhost)$ of edges with both endpoints in $B_n(\vhost)$.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+A path with $n$ perturbed steps and arbitrary unperturbed steps can wander only $n$ graph-distance units away from $\vhost$ before being forced to return for the path to close at $\vhost$. Unperturbed steps contribute the $1$-term in Equation~\eqref{eq:path-expansion} and do not add to the perturbed-step count, but they constrain the graph topology of the path: each unperturbed step must traverse an edge of the 600-cell, and the path must return to $\vhost$. A careful counting argument (full proof at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex} \S3.3) shows that the maximum graph-distance excursion from $\vhost$ achievable by such a path is exactly $n$ edges. Therefore $v_{a_j} \in B_n(\vhost)$ for all $j \in \{0, 1, \ldots, m\}$.
+\end{proof}
+
+\subsection{Theorem 6.1: perturbation-theory propagation rule}
+\label{sec:propagation-rule-theorem}
+
+The three lemmas combine to give the central theorem:
+
+\begin{theorem}[Perturbation-theory propagation rule; publication-grade Layer 3]
 \label{thm:perturbation-locality}
-[Statement to be added at Patch 0560; integrates Patch 0550 Theorem 3.3.3.]
+Under Axioms MA.1 + MA.2 (\S\ref{sec:mechanism-a}) and the 600-cell edge graph structure (Axiom A11 + \S\ref{sec:600-cell-reading-c}), the $\bigO{\delta^n}$ coefficient $\vec{J}_n(\vhost)$ of the framework-local current
+\[
+\jDInet(\vhost) = \sum_{n \ge 1} \delta^n \, \vec{J}_n(\vhost)
+\]
+is a function only of edge-direction inner products $\hat{e}_{ab} \cdot \hat{n}$ for edges $(v_a, v_b) \in E_n(\vhost)$, where $E_n(\vhost)$ is the set of edges of the 600-cell graph with both endpoints in the graph-distance-$n$ ball $B_n(\vhost)$.
 \end{theorem}
 
-\begin{corollary}[Shell-locality at $\bigO{\delta^1}$; sketch-document Layer 3]
+\begin{proof}[Proof sketch (full proof at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex} \S3.3)]
+By Axiom~MA.2, $\jDInet(\vhost)$ is constructed as a sum over multi-step propagation paths originating and terminating at $\vhost$, with each path contributing its amplitude~\eqref{eq:path-expansion}. By Lemma~\ref{lem:perturbed-step-counting}, the $\bigO{\delta^n}$ contributions come only from paths with exactly $n$ perturbed steps. By Lemma~\ref{lem:subgraph-confinement}, such paths are confined to $B_n(\vhost)$, so every edge traversed lies in $E_n(\vhost)$. By Lemma~\ref{lem:path-expansion}, the dependence of each contributing path on the substrate primitive $\hat{n}$ is via the inner products $\hat{e}_{ab} \cdot \hat{n}$ on the perturbed edges. Therefore $\vec{J}_n(\vhost)$ is a function only of the inner products $\hat{e}_{ab} \cdot \hat{n}$ for $(v_a, v_b) \in E_n(\vhost)$.
+\end{proof}
+
+The theorem is the perturbation-theory engine of the paper: it converts the $\delta$-expansion order $n$ into a graph-distance restriction $n$, formalising the intuition that ``higher orders in $\delta$ see deeper into the substrate.''
+
+\subsection{Corollary 6.2: shell-locality at $\bigO{\delta^1}$}
+\label{sec:shell-locality-corollary}
+
+The $n = 1$ specialisation of Theorem~\ref{thm:perturbation-locality}, combined with Theorem~\ref{thm:first-shell-perpendicularity}, gives the load-bearing first-shell result:
+
+\begin{corollary}[Shell-locality at $\bigO{\delta^1}$; publication-grade Layer 3]
 \label{cor:shell-locality}
-[Statement to be added at Patch 0560; integrates Patch 0550 Corollary 3.3.4.]
+Under the hypotheses of Theorem~\ref{thm:perturbation-locality}, the $\bigO{\delta^1}$ coefficient $\vec{J}_1(\vhost)$ depends only on the 12 host-to-first-shell edges of the 600-cell and their edge-direction inner products $\hat{u}_i \cdot \hat{n}$ with the substrate primitive. The first-shell-to-first-shell edges of the 600-cell (30 edges between first-shell vertices) contribute zero by Theorem~\ref{thm:first-shell-perpendicularity}.
 \end{corollary}
+
+\begin{proof}[Proof sketch]
+By Theorem~\ref{thm:perturbation-locality} with $n = 1$, $\vec{J}_1(\vhost)$ depends only on edges in $E_1(\vhost)$. The edges of $E_1(\vhost)$ partition into two classes: (i) the 12 host-to-first-shell edges $(\vhost, v_i)$ for $i \in \{1, \ldots, 12\}$; and (ii) the 30 first-shell-to-first-shell edges $(v_i, v_j)$ between pairs of first-shell vertices. By Theorem~\ref{thm:first-shell-perpendicularity}, the first-shell-to-first-shell edge directions satisfy $\hat{e}_{ij} \cdot \hat{n} = 0$, so perturbed steps along these edges contribute zero to $\vec{J}_1(\vhost)$ via the path-amplitude expansion remark of \S\ref{sec:path-amplitude-expansion}. Therefore $\vec{J}_1(\vhost)$ depends only on the 12 host-to-first-shell edges in (i) and their inner products $\hat{u}_i \cdot \hat{n}$.
+\end{proof}
+
+Combined with Theorem~\ref{thm:host-first-shell-projection} (which fixes $\hat{u}_i \cdot \hat{n} = -1/(2\phig)$ uniformly across all 12 first-shell neighbours), Corollary~\ref{cor:shell-locality} reduces the first-shell-locality of $\vec{J}_1(\vhost)$ to a closed-form expression: 12 unit-direction vectors $\hat{u}_i$, all projecting to the same scalar $-1/(2\phig)$ along $\hat{n}$. The substrate-locality umbrella theorem of \S\ref{sec:substrate-locality-theorem} (Theorem~\ref{thm:substrate-locality}) assembles this into the closed-form statement of substrate net DI-bit current locality at $\bigO{\delta^1}$.
+
+\subsection{Five-class exclusion enumeration}
+\label{sec:exclusion-enumeration-section6}
+
+Patch~0550's hardened theorem artifact provides a five-class exclusion enumeration for the publication-grade rigor of Theorem~\ref{thm:perturbation-locality} and Corollary~\ref{cor:shell-locality}. We summarise here; the full enumeration with explicit hypothesis tracking is at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex} \S4.
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{E1 --- Mechanism A as framework axiom (not derived).} Axioms MA.1 + MA.2 are taken as framework axioms at the present paper's scope (\S\ref{sec:mechanism-a-layer-status}). Layer~4 axiomatic derivation from CPP A1--A11 is Open Problem~\ref{op:layer4-mechanism-a}. The exclusion is shared with the rest of the paper, not specific to Theorem~\ref{thm:perturbation-locality}.
+\item \textbf{E2 --- Higher-order corrections at $\bigO{\delta^2}$ and beyond.} The path-amplitude expansion (Lemma~\ref{lem:path-expansion}) supports arbitrary $\bigO{\delta^k}$ orders, and Theorem~\ref{thm:perturbation-locality} states the graph-distance restriction for general $n$. However, the present paper's substrate-locality theorem uses only the $n = 1$ specialisation; the higher-order corrections are deferred to Open Problem~\ref{op:delta-squared}.
+\item \textbf{E3 --- 600-cell-specific edge graph structure.} The graph-distance-$n$ ball $B_n(\vhost)$ and the edge set $E_n(\vhost)$ are defined relative to the 600-cell edge graph specifically. Whether analogous results hold for other regular 4-polytopes (e.g., the 120-cell, dual to the 600-cell, or the 24-cell, self-dual at $H_4$) is outside the present scope.
+\item \textbf{E4 --- Framework-local current construction (not alternative constructions).} Axiom MA.2 commits to the first-shell-summation construction of $\jDInet(\vhost)$. Alternative current constructions (e.g., path-integral over the full 600-cell edge graph, or shell-by-shell sum to all orders) are outside scope; whether they would yield equivalent results is not addressed.
+\item \textbf{E5 --- Vertex-aligned Reading~C specifically.} Theorem~\ref{thm:perturbation-locality} uses Theorem~\ref{thm:first-shell-perpendicularity} via Corollary~\ref{cor:shell-locality}, and the first-shell perpendicularity holds at vertex-aligned Reading~C. Non-vertex-aligned Reading~C variants (edge-aligned, face-aligned) are flagged at Open Problem~\ref{op:non-vertex-aligned-c}; for those variants, the perpendicularity property fails and the shell-locality at $\bigO{\delta^1}$ does not hold in the same form.
+\end{itemize}
+
+Exclusions E1, E2, E5 are shared with other parts of the paper (Mechanism A axiomatic status, $\bigO{\delta^2}$ extension, non-vertex-aligned Reading~C variants); E3 and E4 are specific to the perturbation-theory propagation rule of this section. Note that exclusion E1 of Patch~0550's enumeration does \emph{not} coincide with exclusion class E1 of Patches~0551 + 0552 (the shared G1 dependency of \S\ref{sec:exclusion-e1}); the two are separately labelled exclusions of different theorems. Patch~0550's E1 is the Mechanism~A framework-axiom status; Patches~0551 + 0552's E1 is the G1 publication-grade hardening status. The two exclusions are independent — closing one does not affect the other.
 
 % ============================================================
 % §7 The substrate-locality theorem (umbrella result)

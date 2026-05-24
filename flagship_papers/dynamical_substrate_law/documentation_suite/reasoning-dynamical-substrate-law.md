@@ -3053,3 +3053,56 @@ These three judgments establish precedent for the §6 integration Patch (Patch 0
 ### §49.6 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. The integration-Patch pattern (importing publication-grade hardened theorem content into a flagship paper via theorem-statement replacement + proof-sketch summary + reference to source artifact for full rigor) is at the first instance at this Patch; if a similar pattern appears at Patch 0561 (§6 integration of Patch 0550 hardened theorem) and at future flagship papers' integration Patches, the pattern becomes a candidate for methods catalogue audit. **NEW candidate added to methods catalogue audit Patch queue: integration-Patch pattern for publication-grade hardened theorem import into flagship paper body.** Methods catalogue audit Patch now has 9 candidate items (was 8 at Patch 0559).
+
+---
+
+## §50 Patch 0561 — §6 perturbation-locality body insertion (SECOND INTEGRATION PATCH)
+
+**Context.** Patch 0560 was the first integration Patch (§5 first-shell geometric identities, importing Patches 0551 + 0552). Patch 0561 is the **second integration Patch**: it imports publication-grade content from Patch 0550 hardened theorem (`hardened_theorems/perturbation_locality_propagation.tex`, 269 lines, 8-page PDF) into the §6 body via multi-block substitution. Authorised via Thomas's "Please proceed" directive following Patch 0560 ship + push at commit `2059198`.
+
+### §50.1 What this Patch does, structurally
+
+Multi-block substitution covering the §6 inner-placeholder comment + Theorem 6.1 environment placeholder + Corollary 6.2 environment placeholder. Same structural pattern as Patch 0560 §5 substitution; same scaffolding-completion precedent (theorem and corollary parenthetical Layer labels updated from "sketch-document Layer 3" to "publication-grade Layer 3" per Tier 4 §49.4).
+
+**Substitution scope** (one large block, 18 lines skeleton → 118 lines body content):
+1. Inner placeholder comment replaced with §6 body content.
+2. Theorem 6.1 environment placeholder content replaced with actual perturbation-theory propagation rule statement; parenthetical Layer label updated from "sketch-document Layer 3" to "publication-grade Layer 3".
+3. Corollary 6.2 environment placeholder content replaced with actual shell-locality-at-$\bigO{\delta^1}$ statement; parenthetical Layer label updated.
+
+**Net addition**: ~100 lines body content (~2400 words, ~3 PDF pages).
+
+A small notation cleanup at the body draft stage: the hardened theorem source uses the custom command `\Gsixcell` (defined in its local preamble) for the 600-cell edge graph. The paper's preamble does not define this command. The §6 body uses the plain notation $G_{600}$ instead (e.g., $V(G_{600})$ for the vertex set, $d_{G_{600}}$ for the graph distance). This is a notation choice at the body-content level; it does not modify the paper's preamble. If $\Gsixcell$ becomes useful at downstream sections (§7+), it can be added to the preamble in a future Patch.
+
+### §50.2 §6 body content structure
+
+The §6 body adds an opening paragraph + six subsections per the skeleton's anticipated outline:
+
+- **Opening paragraph**: integrates Patch 0550 publication-grade hardening as perturbation-theory engine for §7 substrate-locality theorem; explicit reference to source artifact.
+- **§6.1 Lemma 6.1.1 (path-amplitude expansion)**: Lemma `lem:path-expansion` codifies the polynomial expansion of $\mathcal{A}(p) = \prod_{j=1}^{n} r(\hat{e}_{a_{j-1} a_j})$ in powers of $\delta$ via Equation~\eqref{eq:path-expansion}. Subset sum over $\binom{n}{k}$ size-$k$ subsets of step-indices. Remark on first-shell-to-first-shell perpendicularity (Theorem~\ref{thm:first-shell-perpendicularity}) implying zero contribution from those edges.
+- **§6.2 Lemma 6.2.1 (perturbed-step counting)**: Lemma `lem:perturbed-step-counting` gives the order-of-vanishing structure ($\bigO{\delta^k}$ vanishes for $k > n$ along a length-$n$ path). Consequence: $\bigO{\delta^n}$ contributions to $\jDInet(\vhost)$ come only from paths of length $\ge n$.
+- **§6.3 Lemma 6.3.1 (connected-subgraph confinement)**: Lemma `lem:subgraph-confinement` confines length-$m$ paths with $n$ perturbed steps to the graph-distance-$n$ ball $B_n(\vhost)$. Proof references the full counting argument at the source artifact's §3.3.
+- **§6.4 Theorem 6.1 (perturbation-theory propagation rule)**: Theorem `thm:perturbation-locality` codifies the central result — $\bigO{\delta^n}$ coefficient of $\jDInet(\vhost)$ depends only on edges $(v_a, v_b) \in E_n(\vhost)$. Proof sketch combines the three preceding lemmas. Paper-facing framing: "the perturbation-theory engine of the paper: it converts the $\delta$-expansion order $n$ into a graph-distance restriction $n$, formalising the intuition that 'higher orders in $\delta$ see deeper into the substrate.'"
+- **§6.5 Corollary 6.2 (shell-locality at $\bigO{\delta^1}$)**: Corollary `cor:shell-locality` specialises to $n = 1$ using Theorem~\ref{thm:first-shell-perpendicularity} (which sends the 30 first-shell-to-first-shell edges' contributions to zero). Combined with Theorem~\ref{thm:host-first-shell-projection}, reduces $\vec{J}_1(\vhost)$ to a closed-form expression: 12 unit-direction vectors all projecting to $-1/(2\phig)$ along $\hat{n}$.
+- **§6.6 Five-class exclusion enumeration**: five exclusions enumerated — E1 (Mechanism A as framework axiom), E2 ($\bigO{\delta^2}$+ deferred), E3 (600-cell-specific edge graph), E4 (framework-local current construction, not alternative), E5 (vertex-aligned Reading C only). Note clarifying that Patch 0550's exclusion E1 (Mechanism A status) does NOT coincide with Patches 0551 + 0552's exclusion E1 (G1 status) — the two are independently labelled exclusions of different theorems.
+
+One labeled equation introduced at §6: `eq:path-expansion`. Two labeled lemmas + previously-placeholder theorem + previously-placeholder corollary now have substantive content: `lem:path-expansion`, `lem:perturbed-step-counting`, `lem:subgraph-confinement`, `thm:perturbation-locality`, `cor:shell-locality`.
+
+### §50.3 Layer-distinction discipline at §6
+
+Two operational points where Layer-distinction discipline manifests at §6:
+
+1. **Theorem and Corollary parenthetical Layer labels**: both `thm:perturbation-locality` and `cor:shell-locality` carry "publication-grade Layer 3" in their parenthetical labels (per scaffolding-completion precedent set at Tier 4 §49.4 of Patch 0560). Unlike the §5 theorems (which carry "publication-grade Layer 3, conditional on G1"), the §6 theorem+corollary carry "publication-grade Layer 3" unconditionally — there is no shared geometric primitive conditioning their rigor at sketch-document Layer 3. Mechanism A (Axioms MA.1 + MA.2) is the framework-axiom input, but that is uniformly true across the paper (the conditionality is paper-level, not §6-specific).
+
+2. **§6.6 five-class exclusion enumeration**: the exclusion enumeration is explicit at §6.6, not deferred to §8 Layer 3 stack discussion. The reader knows the scope and limitations of Theorem~\ref{thm:perturbation-locality} from §6 forward. The exclusion-E1-naming-collision note (Patch 0550 E1 ≠ Patches 0551/0552 E1) is a small but important clarification — both are labelled "E1" in their respective source artifacts, but they target independent exclusions.
+
+### §50.4 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The integration-Patch pattern (first instance at Patch 0560) now has its second instance at this Patch. The structural similarity confirms — both Patches 0560 and 0561 use multi-block substitution covering inner placeholder + theorem environment placeholders, both update parenthetical Layer labels per §49.4 scaffolding-completion precedent, both provide proof sketches with reference to source artifacts for full publication-grade rigor. **The pattern crosses the §28.7 multiple-instances-in-same-trajectory threshold at this Patch**, making it a strong candidate for METH-G catalogue addition at the methods catalogue audit Patch. Methods catalogue audit Patch candidate count remains at 9 (the integration-Patch pattern was already flagged at Patch 0560 Vignette 37).
+
+### §50.5 Self-checkpoint — three places §50.1-§50.4 could overstate
+
+1. **The "second integration Patch" framing** at §50.1 names §5 and §6 as the two integration Patches in the arc, but it does not foreclose the possibility of additional integration Patches at downstream sections. §7 (substrate-locality umbrella theorem) is not an integration Patch — it constructs a new theorem from §5 + §6 inputs, not from a hardened source artifact. §10 (conclusion) and similar Patches may reference but not "integrate" hardened theorem artifacts. The integration Patches in the F.1 trajectory are §5 and §6 specifically (covering the trio Patches 0550 + 0551 + 0552).
+
+2. **The "publication-grade Layer 3 unconditional"** framing for §6 vs the "publication-grade Layer 3, conditional on G1" framing for §5 reflects the geometric primitive dependency structure. §5 depends on G1 (load-bearing geometric primitive at sketch-document Layer 3). §6 depends on Mechanism A (paper-level framework axiom) and the 600-cell edge graph (Axiom A11, primitive level). The Mechanism A dependency is uniformly framework-level across the paper; the G1 dependency is specifically at sketch-document Layer 3 and shared between §5's two theorems. The Layer label difference at §6 vs §5 reflects this structural distinction; it is not an upgrade or downgrade of any specific theorem.
+
+3. **The "exclusion E1 naming collision" note** is operational at the present paper's scope. If future hardening Patches (e.g., a G1 publication-grade hardening Patch closing Patches 0551 + 0552's exclusion E1, or a Mechanism-A-derived-from-A1-A11 Patch closing Patch 0550's exclusion E1) land, the collision becomes less consequential (the closed-out exclusion ceases to be a paper-scope issue). The note is a navigation aid for current-paper readers, not a permanent feature.

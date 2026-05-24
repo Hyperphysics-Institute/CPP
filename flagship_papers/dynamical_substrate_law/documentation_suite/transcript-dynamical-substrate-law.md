@@ -842,3 +842,47 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch — would unlock unconditional publication-grade Layer 3 for Theorems 5.1 + 5.2 by closing exclusion class E1. **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(I)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0560 is the first integration Patch in the F.1 flagship paper assembly arc — importing publication-grade content from Patches 0551 + 0552 hardened theorem `.tex` artifacts into the §5 body via multi-block substitution (inner placeholder + both theorem environment placeholders). Theorems 5.1 + 5.2 now have full statements + proof sketches + parenthetical Layer label updates. Paper compiles cleanly to 18 pages. Approximately 55% through body-content sequence. Zero documentation drift. Methods catalogue audit Patch candidate items now total 9. Next Patch (0561) is the second integration Patch (§6, importing Patch 0550 content); same Layer label update precedent applies.
+
+---
+
+## Transaction 048 — Patch 0561 (§6 perturbation-locality body insertion; second integration Patch)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=2059198` = Patch 0560 §5 first-shell geometric identities body).
+**Branch:** main.
+**Patch type:** Substantive content / integration (sixth body-content Patch of the F.1 flagship paper assembly arc; SECOND INTEGRATION PATCH; executes scoping document §4.2 sixth step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0560 ship + push at commit `2059198`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§6 multi-block substitution: inner placeholder + Theorem 6.1 environment + Corollary 6.2 environment placeholders replaced with 118 lines of body content; outer comment header preserved per §17.6 (8); theorem + corollary parenthetical Layer labels updated from "sketch-document Layer 3" to "publication-grade Layer 3"; six subsections added §6.1–§6.6 + opening paragraph; one labeled equation added: eq:path-expansion; three labeled lemmas added: lem:path-expansion, lem:perturbed-step-counting, lem:subgraph-confinement). Paper compiles cleanly to 21 pages.
+2. APPEND — Tier 4 §50 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (5 subsections: §50.1 what this Patch does structurally + §50.2 §6 body content structure + §50.3 Layer-distinction discipline at §6 + §50.4 methods catalogue Step E audit verdict + §50.5 self-checkpoint).
+3. APPEND — Vignette 38 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 048 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0561 entry; Patch 0560 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Integration-Patch pattern crosses §28.7 multiple-instances threshold at this Patch but candidate count stays at 9 (pattern flagged at Patch 0560).
+
+**Programme state changes at Patch 0561:**
+
+1. **Second integration Patch of F.1 flagship paper assembly arc COMPLETE**: §6 body in place importing Patch 0550 publication-grade hardening.
+2. **Theorem 6.1 (perturbation-theory propagation rule) and Corollary 6.2 (shell-locality at $\bigO{\delta^1}$)** now have substantive content (previously placeholders); parenthetical Layer labels updated to "publication-grade Layer 3" (unconditional — no shared geometric primitive dependency, contrasting with §5's "conditional on G1").
+3. **Three labeled lemmas + one labeled equation** added at §6; cross-reference scaffold extended.
+4. **Paper now compiles to 21 pages** (was 18 after Patch 0560 §5); approximately 60% through body-content sequence (§1-§6 of §1-§10); on track for 30-35 page final target.
+5. **Layer-distinction discipline operationalised at §6** at two concrete points (theorem+corollary parenthetical labels carry unconditional rigor + §6.6 five-class exclusion enumeration with E1-naming-collision clarification).
+6. **Integration-Patch pattern second instance** confirmed; pattern crosses §28.7 multiple-instances-in-same-trajectory threshold for methods catalogue audit.
+7. **Notation choice**: $G_{600}$ used at body-content level for 600-cell edge graph (paper preamble unchanged; `\Gsixcell` from hardened source not imported).
+8. **Zero documentation drift** inherited or introduced.
+9. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+10–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0561:**
+
+- **(A) Patch 0562 = §7 substrate-locality umbrella theorem body** per scoping document §4.2 seventh step. **NOT an integration Patch** — constructs new theorem from already-integrated §5 + §6 inputs. Primary source: Patch 0544 §5 sketch-document Layer 3 statement of substrate-locality umbrella theorem. Anticipated sub-structure: §7.1 Statement assembly + §7.2 Theorem 7.1 substrate-locality umbrella + §7.3 Proof from §5 + §6 inputs + §7.4 Layer-distinction status (sketch-document Layer 3 at present paper's scope; publication-grade hardening as future Open Problem; same Layer label update precedent as §5+§6 — Theorem 7.1 parenthetical label updated from "sketch-document Layer 3" to maintained as "sketch-document Layer 3" since Theorem 7.1 IS at sketch-document Layer 3 unlike the trio). Target: 3-4 pages.
+- **(B) Patches 0563-0567 — remaining body section assembly** per scoping document §4.2-§4.5: §8 Layer 3 stack at Patch 0563; §9 open questions at Patch 0564; §10 conclusion at Patch 0565; bibliography at Patch 0566; final polish at Patch 0567.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(D) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.**
+- **(E)** Methods catalogue audit (9 candidates; integration-Patch pattern crosses threshold at this Patch). **(F)** G1 publication-grade hardening Patch. **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(I)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0561 is the second integration Patch in the F.1 flagship paper assembly arc — importing publication-grade content from Patch 0550 hardened theorem `.tex` artifact into the §6 body via multi-block substitution. Theorem 6.1 + Corollary 6.2 now have full statements + proof sketches + parenthetical Layer label updates ("publication-grade Layer 3" unconditional, contrasting with §5's "conditional on G1" framing). Paper compiles cleanly to 21 pages. Approximately 60% through body-content sequence. Zero documentation drift. Integration-Patch pattern crosses §28.7 multiple-instances threshold at this Patch. Next Patch (0562) is §7 substrate-locality umbrella theorem — assembles §5 + §6 inputs into the closed-form result; not an integration Patch.
