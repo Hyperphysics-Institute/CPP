@@ -1135,3 +1135,48 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(C)** Methods catalogue audit Patch (9 candidates). **(D)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable). **(E)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(F)** F.2/F.3 trajectory openings. **(G)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(H)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0567 applies 3 polish edits to make the paper v1.0-ready: date metadata updated to Version 0.9 (pre-v1.0); top-of-file CHANGELOG comment expanded from skeleton-state to full build history; abstract Open Problem count corrected from 3 to 5. Bibliography style refinement candidates declined / deferred per Tier 4 §56.3. Multi-edit Patch pattern at first instance at F.1 trajectory documented. Paper compiles cleanly to 31 pages. Zero documentation drift. Next: Patches 0568-0569+0569a reviewer engagement cycle.
+
+---
+
+## Transaction 055 — Patch 0568 (v0.9 → v1.0 SHIP-cycle reviewer feedback archival + cross-reviewer synthesis)
+
+**Date:** 24 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=7f8458a` = Patch 0567 final polish).
+**Branch:** main.
+**Patch type:** Documentation / reviewer-archival (creates new `reviews/` folder; 4 new files + 3 documentation appends + 1 frontier prepend; no content changes to `dynamical_substrate_law.tex`).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0567 ship + push at commit `7f8458a`, with three reviewer letters supplied inline.
+
+**Files modified (8 file deltas applied + 0 DEFERRED):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/reviews/copilot_v0.9_session_142.md` (verbatim Copilot review + metadata header per capotauro precedent).
+2. CREATE — `flagship_papers/dynamical_substrate_law/reviews/chatgpt_v0.9_session_142.md` (verbatim ChatGPT review + metadata header).
+3. CREATE — `flagship_papers/dynamical_substrate_law/reviews/grok_v0.9_session_142.md` (verbatim Grok review + metadata header).
+4. CREATE — `flagship_papers/dynamical_substrate_law/reviews/synthesis_v0.9_to_v1.0_session_142.md` (cross-reviewer synthesis + classification + Patch 0569 response plan; 6 sections).
+5. APPEND — Tier 4 §57 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (7 subsections: §57.1 what this Patch does structurally + §57.2 reviewer-letter file structure + §57.3 cross-reviewer convergence + §57.4 classification of findings + §57.5 Patch 0569 anticipated edit set + §57.6 programme-level reviewer-engagement notes + §57.7 methods catalogue Step E audit verdict).
+6. APPEND — Vignette 45 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+7. APPEND — Transaction 055 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+8. PREPEND — `research_frontier.md` Last-updated header (Patch 0568 entry; Patch 0567 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Reviewer-feedback-archival Patch pattern matches capotauro precedent (`flagship_papers/capotauro/reviews/` with 11 files across 4 review rounds). Pattern is established at corpus level. Candidate count remains at 9.
+
+**Programme state changes at Patch 0568:**
+
+1. **`reviews/` folder created for F.1 paper** (first instance; follows capotauro precedent).
+2. **Three v0.9 reviewer letters archived verbatim**: Copilot + ChatGPT + Grok with standardised metadata headers.
+3. **Cross-reviewer synthesis document in place**: classification of findings into MUST-ADDRESS (1 item) + SHOULD-ADDRESS (4 items) + CAN-DEFER (5 items) + DECLINED (2 items); Patch 0569 response plan with 7 anticipated edits.
+4. **ChatGPT-unique substantive finding identified**: Concern #3 thermodynamic-arrow framing gap — the single MUST-ADDRESS item for v1.0 SHIP. Single-reviewer finding from strongest-reviewer position; taken seriously per established protocol.
+5. **Grok vocabulary-contamination resolution noted**: Grok's letter shows no evidence of vocabulary contamination; re-engagement successful.
+6. **No content changes to `dynamical_substrate_law.tex`**: paper unchanged at 31 pages; v0.9 state preserved for Patch 0569 edit set.
+7. **Zero documentation drift** inherited or introduced.
+8. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+9–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0568:**
+
+- **(A) Patch 0569 = address 5 MUST-ADDRESS + SHOULD-ADDRESS items** via multi-edit Patch pattern (matching Patch 0567 structure). 7 anticipated edits (some items split across multiple edit locations). Net addition ~150-250 words across abstract + §1 + §7.3 + §8.2 caption + §10 opening; paper page count anticipated to remain ~31-32 pages.
+- **(B) Patch 0569a = optional reviewer-driven adjustments** — only if reviewer convergence reveals new issues after Patch 0569.
+- **(C) Patch 0570 = v1.0 SHIP** with PDF committed per Session 142 PDF-in-repo policy + SF-4 precedent. Update `\date{}` to `Version 1.0, [SHIP date]`. OSF deposit pending.
+- **(D)** Methods catalogue audit Patch (9 candidates). **(E)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable; cross-reviewer-flagged as Tier 1). **(F)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up; cross-reviewer-flagged as Tier 1). **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(I)** JUNO peer-review update integration.
+
+**Self-checkpoint at this transaction:** Patch 0568 archives the three v0.9 reviewer letters in the new `reviews/` folder + cross-reviewer synthesis. The single substantive MUST-ADDRESS item for v1.0 SHIP is ChatGPT's Concern #3 (thermodynamic-arrow framing gap) — a scope-qualifier sharpening, not a derivation question. Four SHOULD-ADDRESS items (symmetry argument hardening + executive summary + Table 8.2 caption + abstract theorem-names) round out the Patch 0569 anticipated edit set. Zero documentation drift. Next Patch (0569) is the multi-edit response Patch.

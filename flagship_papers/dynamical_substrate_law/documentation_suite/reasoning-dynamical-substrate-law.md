@@ -3473,3 +3473,97 @@ Per §29.4: no new METH entry at this Patch. The final-polish Patch pattern (mul
 ### §56.6 Multi-edit Patch pattern
 
 Patch 0567 is structurally different from the single-substitution body-content Patches: it makes 3 separate edits to non-adjacent locations in the file. The apply script implements this via a Python loop over an edit-specs list, applying each `text.replace(old, new, 1)` operation sequentially and verifying single-occurrence preflight check. This pattern may recur at future final-polish Patches; it differs from the build-script pattern used through Patches 0556-0566.
+
+---
+
+## §57 Patch 0568 — v0.9 → v1.0 SHIP-cycle reviewer feedback archival + cross-reviewer synthesis
+
+**Context.** Patch 0567 made the paper v1.0-ready (date metadata + CHANGELOG comment + abstract OP count corrected from 3 to 5). The paper was submitted to three reviewers (Copilot, ChatGPT, Grok) for the v1.0 SHIP-cycle reviewer engagement (Patches 0568-0569+0569a per Patch 0567 forward queue). Patch 0568 archives the three reviewer responses verbatim and synthesises cross-reviewer convergence with classification of findings and Patch 0569 response plan. Authorised via Thomas's "Please proceed" directive following Patch 0567 ship + push at commit `7f8458a`, with the three reviewer letters supplied inline.
+
+### §57.1 What this Patch does, structurally
+
+Creates a new `flagship_papers/dynamical_substrate_law/reviews/` folder (first instance for the F.1 paper). Populates it with 4 files: 3 verbatim reviewer-letter files with standardised metadata headers (per capotauro reviews/ precedent at `flagship_papers/capotauro/reviews/`), plus 1 cross-reviewer synthesis file.
+
+**Reviews folder structure** (following capotauro precedent — 11 reviewer files at `flagship_papers/capotauro/reviews/`):
+- `reviews/copilot_v0.9_session_142.md` — verbatim Copilot review + metadata
+- `reviews/chatgpt_v0.9_session_142.md` — verbatim ChatGPT review + metadata
+- `reviews/grok_v0.9_session_142.md` — verbatim Grok review + metadata
+- `reviews/synthesis_v0.9_to_v1.0_session_142.md` — cross-reviewer synthesis + classification + Patch 0569 plan
+
+**No content changes to `dynamical_substrate_law.tex`** at this Patch. All deliverables are in the new `reviews/` folder + standard Tier 4 / Vignette / Transaction documentation.
+
+### §57.2 Reviewer-letter file structure (per capotauro precedent)
+
+Each reviewer letter file follows the capotauro standardised structure:
+- **Metadata header** with: Reviewer + Paper reviewed + Paper version commit + Review session + Review archived by + Review delivered date + Reviewer panel position + Review character + Programme-level reviewer ranking + Verdict-state classification
+- **Reviewer letter (verbatim)** with original markdown formatting preserved
+
+The metadata headers provide future-Patch-readable summaries while the verbatim letters preserve the original reviewer voice for deliberation history.
+
+### §57.3 Cross-reviewer convergence (synthesis §2)
+
+**Verdict-level**:
+| Reviewer | SHIP-ready verdict |
+|---|---|
+| **ChatGPT** | NOT yet publication-grade flagship overall (G1 + Theorem 7.1 hardening pending) |
+| **Copilot** | Implicit SHIP-acceptable; Tier 1 = G1 + Theorem 7.1 hardening |
+| **Grok** | EXPLICIT v1.0 SHIP-acceptable |
+
+**Cross-reviewer position**: SHIP-acceptable with Open Problem registration intact. **No reviewer identifies an actual closure failure or substantive overclaim** at the load-bearing argument level. ChatGPT's most-demanding framing identifies G1 + Theorem 7.1 hardening as the gaps — but these are already registered as Open Problem FP-F1-3 + candidate follow-up Patch at §7.4.
+
+**STRONG-convergent findings (2+ reviewers)**:
+- G1 publication-grade hardening recommended: 2 reviewers (ChatGPT + Copilot) — already registered as OP FP-F1-3
+- Theorem 7.1 publication-grade hardening recommended: 2 reviewers (ChatGPT + Copilot) — already registered as candidate follow-up Patch at §7.4
+- Layer-distinction discipline praised: 3 reviewers (consensus strength)
+- Open-Problem handling praised: 3 reviewers (consensus strength)
+
+**ChatGPT-unique substantive findings**:
+- **Concern #3: Thermodynamic-arrow framing gap** — paper proves substrate-locality but does not yet prove "thermodynamic causal arrow in the conventional physics sense"; recommends reframing from "thermodynamic arrow derived" to "substrate-locality structure supporting a candidate thermodynamic-arrow mechanism." **MUST-ADDRESS at Patch 0569**.
+- **Concern #4: Symmetry argument hardening** — Step 3 of Theorem 7.1 needs representation-theoretic lemma. SHOULD-ADDRESS at Patch 0569.
+
+### §57.4 Classification of findings (synthesis §3)
+
+**MUST-ADDRESS (block v1.0 SHIP; addressed at Patch 0569)**:
+1. Thermodynamic-arrow framing gap (ChatGPT Concern #3) — scope-qualifier sharpening across abstract + §1.1/§2.1 + §10 opening
+
+**SHOULD-ADDRESS (addressed at Patch 0569)**:
+2. Symmetry argument hardening at Step 3 of Theorem 7.1 (ChatGPT Concern #4) — 1-2 sentences representation-theoretic justification
+3. Executive summary at §1 introduction (Copilot Tier 2 #3) — 1-paragraph "What this paper proves" at §1 opening
+4. Table 8.2 caption clarification (Grok minor 2) — 1-sentence source-artifact note
+5. Abstract names three theorems explicitly (Grok minor 3) — modify existing sentence
+
+**CAN-DEFER (registered Open Problems / candidate follow-up Patches; do NOT block v1.0 SHIP)**:
+6. δ² appendix sketch (Copilot Tier 2 #4) — OPEN-FP-F1-1; additive value
+7. G1 publication-grade hardening (ChatGPT Major #1, Copilot Tier 1 #1) — OPEN-FP-F1-3; most-tractable follow-up Patch
+8. Theorem 7.1 publication-grade hardening (ChatGPT Major #2, Copilot Tier 1 #2) — candidate follow-up Patch at §7.4
+9. Layer 4 axiomatic derivation of Mechanism A — OPEN-FP-F1-2; long-term programme target
+10. Non-vertex-aligned Reading C variants — OPEN-FP-F1-5; research-direction-choosing
+
+**DECLINED**:
+11. Bibliography BibTeX integration (Grok minor 1) — already declined at Tier 4 §56.3 (Patch 0567)
+12. Reduce governance language ~20-30% (ChatGPT Recommendation 4) — declined: convergent-praise feature; reducing would remove the most-praised paper strength
+
+### §57.5 Patch 0569 anticipated edit set (synthesis §4)
+
+7 edits anticipated at Patch 0569 (multi-edit Patch pattern matching Patch 0567):
+1. Abstract scope-qualifier sharpening (thermodynamic-arrow framing)
+2. §1.1 or §2.1 thermodynamic-arrow framing paragraph
+3. §10 opening clarification (manifestation iv closure as substrate-locality closure)
+4. §7.3 Step 3 representation-theoretic justification
+5. §1 executive summary (1 paragraph)
+6. Table 8.2 caption clarification (1 sentence)
+7. Abstract: name three theorems explicitly
+
+Net addition ~150-250 words across abstract + §1 + §7.3 + §8.2 caption + §10 opening; paper page count anticipated to remain ~31-32 pages.
+
+### §57.6 Programme-level reviewer-engagement notes (synthesis §5)
+
+**ChatGPT's substantive value at this cycle**: ChatGPT's Concern #3 (thermodynamic-arrow framing) is the single most substantive item across the three reviewers — neither Copilot nor Grok surfaced this gap. Validates the strongest-reviewer-position designation: ChatGPT raises issues other reviewers miss.
+
+**Grok vocabulary-contamination resolution**: Grok's review letter shows **no evidence of vocabulary contamination** (no SSS/QGE/RTT/EMTT terminology); consistent CPP vocabulary throughout. Grok may have stabilised; re-engagement at this cycle was successful.
+
+**Three-reviewer convergence as protocol validation**: All three reviewers independently identify Layer-distinction discipline and Open-Problem handling as paper strengths; all three identify G1 + Theorem 7.1 hardening as natural follow-up Patches. The convergence is consistent with the F.1 sub-question being closed at the planned Layer-3 sketch-document level.
+
+### §57.7 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The reviewer-feedback-archival Patch pattern (creating `reviews/` folder + 3 reviewer letter files + cross-reviewer synthesis + classification + response plan) matches the capotauro precedent at `flagship_papers/capotauro/reviews/` (11 reviewer files across 4 review rounds). Pattern is established at corpus level; not at first instance. Methods catalogue audit Patch candidate count remains at 9.

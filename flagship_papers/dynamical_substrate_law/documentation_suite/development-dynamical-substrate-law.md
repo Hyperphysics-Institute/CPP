@@ -1059,3 +1059,36 @@ Methods catalogue Step E audit per §29.4: no new METH entry. Final-polish Patch
 Patch 0567 introduces no new deferred items. The 3 bibliography style refinement candidates from §55.4 remain registered for future deliberation (post-reviewer-engagement).
 
 Forward queue post-Patch 0567: paper is **v1.0-ready**. Patches 0568-0569+0569a reviewer engagement cycle. Patch 0570 v1.0 SHIP with PDF committed and possible date update to v1.0.
+
+---
+
+## Vignette 45 — Patch 0568: v0.9 → v1.0 SHIP-cycle reviewer feedback archival (3 reviewer letters + synthesis)
+
+Patch 0568 archives the three v0.9 → v1.0 SHIP-cycle reviewer letters and synthesises cross-reviewer convergence. This is a documentation Patch — no content changes to `dynamical_substrate_law.tex`. All deliverables are in the new `reviews/` folder (first instance for the F.1 paper, following the capotauro precedent at `flagship_papers/capotauro/reviews/`).
+
+The three reviewer letters arrive with structurally distinct verdicts:
+- **ChatGPT** (strongest-reviewer position): NOT yet publication-grade flagship overall; two decisive hardening steps pending (G1 + Theorem 7.1); 4 major concerns identified including one substantive ChatGPT-unique finding (thermodynamic-arrow framing gap)
+- **Copilot** (tertiary position): Implicit SHIP-acceptable; 6-section structured review with tier-ranked improvements; technical accuracy check verifies three algebraic claims
+- **Grok** (secondary position): EXPLICIT v1.0 SHIP-acceptable; "Structural gaps: None in the load-bearing arc"; four minor optional polish items
+
+The cross-reviewer convergence is **strong on praise** (Layer-distinction discipline + Open-Problem handling identified as paper strengths by all 3 reviewers) and **strong on gaps** (G1 + Theorem 7.1 hardening identified by 2 of 3 reviewers, both already registered as Open Problems / candidate follow-up Patches).
+
+The single most substantive finding is **ChatGPT's Concern #3** (thermodynamic-arrow framing gap): the paper proves substrate-locality of DI-bit currents but does not yet prove "emergence of a thermodynamic causal arrow in the conventional physics sense." ChatGPT recommends reframing from "thermodynamic arrow derived" to "substrate-locality structure supporting a candidate thermodynamic-arrow mechanism." This finding does NOT require new theorem work — it requires scope-qualifier sharpening within existing sections. **It is the single MUST-ADDRESS item for Patch 0569**.
+
+The cross-reviewer convergence interpretation follows established CPP protocol per the Patch 0538 reviewer-pause-cycle precedent: convergent gaps (2+ reviewers) carry structural validity; convergent praise validates the paper's strongest features; single-reviewer findings from ChatGPT (strongest-reviewer position) are taken seriously even without convergence.
+
+**Classification of findings**:
+- 1 MUST-ADDRESS item (thermodynamic-arrow framing gap) at Patch 0569
+- 4 SHOULD-ADDRESS items (symmetry argument hardening + executive summary + Table 8.2 caption + abstract theorem names) at Patch 0569
+- 5 CAN-DEFER items (δ² appendix + G1 hardening + Theorem 7.1 hardening + Layer 4 + Reading C variants) — all already registered as Open Problems or candidate follow-up Patches
+- 2 DECLINED items (bibliography BibTeX integration + reduce governance language) — first already declined at Tier 4 §56.3; second declined because the governance discipline is the convergently-praised strongest feature
+
+**Patch 0569 anticipated edit set**: 7 edits matching the multi-edit Patch pattern from Patch 0567. Anticipated structure: scope-qualifier sharpening in abstract + §1 + §10 opening (thermodynamic-arrow framing); §7.3 Step 3 representation-theoretic justification (1-2 sentences); §1 executive summary (1 paragraph); Table 8.2 caption clarification (1 sentence); abstract theorem-naming. Net addition ~150-250 words; paper page count anticipated to remain ~31-32 pages.
+
+**Grok vocabulary-contamination resolution**: Grok's letter shows no evidence of vocabulary contamination — consistent CPP terminology throughout. Re-engagement at this cycle was successful; Grok may be considered stabilised for future reviewer cycles.
+
+**Programme-level cycle validation**: ChatGPT raises issues other reviewers miss (Concern #3 thermodynamic-arrow framing); Grok provides SHIP-readiness verdict ("ready when you are"); Copilot provides structured tier-ranked recommendations with technical accuracy verification. The three-reviewer protocol is functioning as designed.
+
+Patch 0568 introduces no new deferred items. Patch 0569+ starts with clean state plus the 5 MUST/SHOULD-ADDRESS items registered for action.
+
+Forward queue post-Patch 0568: Patch 0569 = address 5 MUST/SHOULD-ADDRESS items via multi-edit Patch (matching Patch 0567 structure). Then Patch 0569a optional reviewer-driven adjustments if needed. Then Patch 0570 = v1.0 SHIP with PDF committed.
