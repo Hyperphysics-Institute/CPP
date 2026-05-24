@@ -1217,3 +1217,21 @@ Methods catalogue Step E audit per §29.4: no new METH entry. Diagnostic-framing
 Patch 0569c introduces no new deferred items. The paper is v1.0-SHIP-ready under multi-round cross-reviewer convergent verdict. The verdict-stabilisation threshold (Round 4 "genuinely stable in identity") confirms reviewer-engagement closure.
 
 Forward queue post-Patch 0569c: paper is v1.0-SHIP-ready. Patch 0570 = v1.0 SHIP with two possible variants (a) G1 hardening Patch first per ChatGPT R4 reinforcement, or (b) v1.0 SHIP current state with G1 hardening as post-SHIP follow-up. Programme-direction decision for Thomas.
+
+---
+
+## Vignette 50 — Patch 0569d: ChatGPT Round 5 archival + recurring-pattern documentation (NO content edits; third identical R3/R4/R5 recommendation set; verdict-stabilisation trajectory continues)
+
+Patch 0569d archives ChatGPT's Round 5 review of the F.1 paper with explicit recurring-pattern documentation. The Round 5 verdict continues the strongest-positive trajectory: "This is the first version that feels intellectually stable enough to support a long-term foundational programme" — the third independent strongly-positive verdict from ChatGPT (after R3 verdict matrix YES + R4 "genuinely stable in identity").
+
+**The recurring-pattern observation is now definitive**: ChatGPT Rounds 3, 4, and 5 have all issued substantively identical reviewer-driven recommendations (A Scenario A closure softening + B explicit negative statement + C dependency-graph figure + D math/interpretation separation), and all four sets are already implemented at Patch 0569b per the Patch 0569c §61.2 cross-recommendation-vs-current-state analysis. The Round 5 letter introduces a minor wording variant on Rec A ("substrate-locality closure" / "first-order locality closure" / "framework-level closure" — dropping "Scenario A" entirely vs. R4's keeping it with a qualifier), but both forms are substantively equivalent to the qualifier-clause form already at 4 anchors in the paper.
+
+**No `.tex` edits at this Patch** per the same reasoning as Patch 0569c: all R5 recommendations already implemented; implementing additional changes would risk duplicating or regressing the Patch 0569a/0569b content. Paper byte-identical to Patch 0569c state.
+
+**Strongly recommended escalated follow-up action**: the recurring pattern across R3 + R4 + R5 makes the diagnostic question time-critical. Continuing to iterate with ChatGPT without resolving the diagnostic ambiguity is unlikely to be productive. Direct follow-up exchange recommended (verify Figure 8.1 + bold declarative + Scenario A qualifier are visible in the version ChatGPT is reviewing).
+
+**Recommendation for Patch 0570**: v1.0 SHIP under Variant (b) (current state with scope-framing `\date{}` line) per the multi-round cross-reviewer convergent SHIP-acceptable verdict. The reviewer-engagement cycle has converged at the R3+R4+R5 verdict-stabilisation threshold; further iteration before SHIP is not productive. Variant (a) (G1 hardening Patch first) remains an option per ChatGPT R1+R2+R3+R4+R5 convergent G1-priority, but the recurring-pattern observation suggests it should be a post-SHIP follow-up trajectory.
+
+Calibration discipline sustained; zero `.tex` changes. Methods catalogue Step E audit: no new METH entry (light-touch archival Patch pattern at second instance after Patch 0569c). Paper unchanged at 33 pages.
+
+Forward queue post-Patch 0569d: paper is v1.0-SHIP-ready under multi-round cross-reviewer convergent verdict (R1 + R2 + R3 + R4 + R5 SHIP-acceptable; ChatGPT R3+R4+R5 verdict-stabilisation reinforced three independent times). Patch 0570 v1.0 SHIP under Variant (b) recommended; Variant (a) G1-hardening-first option remains available pending Thomas's programme-direction decision.
