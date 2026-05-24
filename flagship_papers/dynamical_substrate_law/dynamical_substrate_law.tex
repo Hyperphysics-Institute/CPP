@@ -401,10 +401,61 @@ The substrate-locality theorem of \S\ref{sec:substrate-locality-theorem} (Theore
 \section{Mechanism A as framework axiom}
 \label{sec:mechanism-a}
 
-% [Body content to be added at Patch 0558. Sub-structure anticipated:
-%   §4.1 The propagation-rate asymmetry r(e) = r_0 (1 + delta * e.n)
-%   §4.2 Framework local-current construction at first order in delta
-%   §4.3 Mechanism A as framework axiom (Layer 3); Layer 4 derivation deferred]
+% [Body added at Patch 0559 per scoping doc §4.2 fourth step.
+%  Primary sources: Patch 0544 §3 (Mechanism A formalization at sketch Layer 3)
+%  + Patch 0550 §2.2 (Mechanism A as framework axiom for hardened
+%  perturbation-locality theorem). This section elevates the informally-
+%  stated Mechanism A of §2.3 + §3.4 to formal framework-axiom status;
+%  Layer-rigor escalation, not new mathematical content.]
+
+This section codifies Mechanism~A as a framework axiom at the present paper's scope. The propagation-rate asymmetry and the framework-local current construction were introduced informally at \S\ref{sec:scenario-a-mechanism-a} and \S\ref{sec:di-bit-current-and-framework} respectively; here they are stated as axioms with explicit hypothesis labels, suitable for direct citation by the hardened theorems of \S\ref{sec:first-shell-identities} and \S\ref{sec:perturbation-locality}. No new mathematical content is introduced; the elevation is one of Layer rigor, not content scope.
+
+\subsection{The propagation-rate asymmetry}
+\label{sec:propagation-rate-asymmetry}
+
+We codify the Mechanism~A primitive as a framework axiom:
+
+\begin{quote}
+\textbf{Axiom MA.1 (Propagation-rate asymmetry under the substrate primitive)}. Under vertex-aligned Reading~C with $\hat{n} = \vhost$ and unit-vertex normalisation, the DI-bit propagation rate along unit-direction $\hat{e}$ from any substrate vertex $v$ is
+\[
+r(\hat{e}; v) = r_0 \left(1 + \delta \, \hat{e} \cdot \hat{n}\right),
+\]
+where $r_0 > 0$ is the $H_4$-idealized substrate rate (the rate in the absence of the substrate primitive), and $\delta \in \mathbb{R}$ is the propagation-rate perturbation parameter with $|\delta| \ll 1$. The rate $r(\hat{e}; v)$ is independent of the vertex $v$ at which the DI-bit originates (\emph{vertex-uniformity}).
+\end{quote}
+
+The axiom statement makes three commitments explicit. First, the linear dependence in $\hat{e} \cdot \hat{n}$ is exact at the framework level: there are no $\bigO{\delta^0}$ tangent-direction corrections beyond the idealized $r_0$. Second, the rate is uniform across the substrate (independent of $v$): the perturbation is global to the substrate primitive $\hat{n}$, not a local function of position. Third, the parameter $\delta$ is a single scalar (not a tensor field), reflecting the substrate-direction-primitive's status as a single 4D direction rather than a richer structure. Higher-order corrections beyond $\bigO{\delta^1}$ are not specified by MA.1; their treatment is the subject of Open Problem~\ref{op:delta-squared}.
+
+\subsection{Framework local-current construction at first order in $\delta$}
+\label{sec:framework-local-current-axiom}
+
+We codify the framework-local current construction (Equation~\eqref{eq:di-bit-current-construction}) as a companion axiom:
+
+\begin{quote}
+\textbf{Axiom MA.2 (Framework-local current construction at $\bigO{\delta^1}$)}. Under MA.1, the net DI-bit current at any substrate vertex $v$ at first order in $\delta$ is
+\[
+\jDInet(v) = \sum_{\hat{e} \in \mathcal{E}_1(v)} \big[ r(\hat{e}; v) - r(-\hat{e}; v) \big] \hat{e} + \bigO{\delta^2},
+\]
+where $\mathcal{E}_1(v)$ is the set of first-shell unit-direction edges at $v$ (i.e., the 12 unit-direction edges from $v$ to its first-shell neighbours in the 600-cell), and $\bigO{\delta^2}$ collects contributions from higher shells per the perturbation-locality propagation rule (Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality}). At $v = \vhost$ specifically, $\mathcal{E}_1(\vhost) = \{\hat{u}_i : i = 1, \ldots, 12\}$ and the construction reduces to Equation~\eqref{eq:di-bit-current-construction}.
+\end{quote}
+
+Axiom MA.2 makes the framework-local construction explicit for any host vertex, not just the chosen $\vhost$ of vertex-aligned Reading~C. The vertex-independence is operationally important for the substrate-locality theorem of \S\ref{sec:substrate-locality-theorem}, which applies the construction at any vertex of the 600-cell substrate that satisfies the Reading~C alignment.
+
+The $\bigO{\delta^2}$ collection in Axiom MA.2 separates the construction's first-order content (the explicit first-shell summation) from the higher-order contributions (which require the perturbation-locality propagation rule of \S\ref{sec:perturbation-locality} to characterise). This separation is the structural reason why the substrate-locality theorem decomposes cleanly into a first-shell geometric part (Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}) and a perturbation-theory part (Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality}): the geometric part is a consequence of the first-shell summation in MA.2, and the perturbation-theory part controls what is collected into the $\bigO{\delta^2}$ remainder.
+
+\subsection{Mechanism~A as framework axiom: Layer rigor and Layer 4 deferral}
+\label{sec:mechanism-a-layer-status}
+
+Axioms MA.1 and MA.2 together constitute the Mechanism~A framework axiom at the present paper's scope. Their status in the Layer hierarchy of \S\ref{sec:roadmap-and-layer-discipline} is the following:
+
+\begin{itemize}[leftmargin=2em]
+\item At the \emph{present paper's scope}, MA.1 + MA.2 are taken as framework axioms (Layer~3 framework input). They are derived from neither the CPP primitive axioms A1--A11 alone nor from the 600-cell geometric structure alone; they are independent framework commitments at the sketch-document Layer~3 trajectory through the F.1 sub-question (Patch 0544 \S3).
+\item At \emph{publication-grade Layer~3} (the rigor of the trio of hardened theorems at \texttt{hardened\_theorems/}), MA.1 and MA.2 appear as hypotheses (H1) and (H2) respectively in the hardened theorems' five-class exclusion enumeration. They are not promoted to derived statements at publication-grade Layer~3; the trio's hardening is conditional on MA.1 + MA.2 being taken as inputs.
+\item At \emph{Layer~4 axiomatic derivation} (the long-term programme target), Mechanism~A's derivation from CPP A1--A11 alone is open. The derivation would require deriving the propagation-rate asymmetry (Equation~\eqref{eq:mechanism-a-formal}) from the CP + DI-bit + PCD-cycle primitives of A1 + A6$^{\prime}$, plus deriving the vertex-uniformity from the substrate's discrete geometric structure A11. The derivation is registered as Open Problem~\ref{op:layer4-mechanism-a}.
+\end{itemize}
+
+The conditionality structure --- ``Scenario A closure under MA.1 + MA.2, pending Layer~4 axiomatic derivation of MA.1 + MA.2 from A1--A11'' --- is sustained throughout the rest of the paper. Every theorem statement in \S\ref{sec:first-shell-identities}--\S\ref{sec:substrate-locality-theorem} carries MA.1 or MA.2 (or both) as an explicit hypothesis, in keeping with the Layer-distinction discipline of \S\ref{sec:roadmap-and-layer-discipline}.
+
+A note on terminology: we use ``framework axiom'' rather than ``axiom'' simpliciter to maintain the distinction from CPP primitive axioms A1--A11. The CPP primitive axioms are framework-level commitments of the broader CPP corpus; the framework axioms MA.1 + MA.2 are paper-level commitments specific to the F.1 sub-question's Scenario~A closure path. The two-tier axiom structure --- primitive axioms below, framework axioms above --- reflects the staged-derivation discipline of CPP: each tier closes under its own conditions, with the framework-axiom tier's discharge to the primitive-axiom tier being the long-term programme target.
 
 % ============================================================
 % §5 The first-shell geometric identities

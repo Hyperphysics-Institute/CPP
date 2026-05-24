@@ -758,3 +758,44 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit Patch (8 candidates). **(F)** G1 publication-grade hardening Patch. **(G)** F.2/F.3 trajectory openings. **(H)** Long-term programme target (Layer~4). **(I)** JUNO peer-review update integration when published.
 
 **Self-checkpoint at this transaction:** Patch 0558 inserts the §3 Framework primitives body providing the CPP axioms recap + 600-cell + Reading C + G1+G2 + DI-bit current framework-local construction. The paper now compiles cleanly to 13 pages with §1+§2+§3 body in place. Layer-distinction discipline operationalised at two concrete points (G1 Layer label preserved inline; framework qualifier audit trail continued). Zero documentation drift. Approximately one-third through body-content sequence.
+
+---
+
+## Transaction 046 — Patch 0559 (§4 Mechanism A axiom body insertion)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=764a5e6` = Patch 0558 §3 Framework primitives body).
+**Branch:** main.
+**Patch type:** Substantive content / Layer-rigor escalation (fourth body-content Patch of the F.1 flagship paper assembly arc; executes scoping document §4.2 fourth step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0558 ship + push at commit `764a5e6`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§4 inner placeholder substituted with 55 lines of body content; outer comment header preserved per §17.6 (8); three subsections added §4.1–§4.3; two named axiom statements MA.1 + MA.2 introduced). Paper compiles cleanly to 15 pages.
+2. APPEND — Tier 4 §48 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (5 subsections: §48.1 what this Patch does structurally + §48.2 Layer-distinction discipline at §4 + §48.3 the hypothesis labels H1/H2 across the paper + §48.4 self-checkpoint + §48.5 methods catalogue Step E audit verdict).
+3. APPEND — Vignette 36 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 046 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0559 entry; Patch 0558 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. 8 candidate items unchanged.
+
+**Programme state changes at Patch 0559:**
+
+1. **Fourth body-content Patch of F.1 flagship paper assembly arc COMPLETE**: §4 body in place (Mechanism A elevated to Axioms MA.1 + MA.2; Layer hierarchy made explicit; framework/primitive axiom distinction codified).
+2. **Paper now compiles to 15 pages** (was 13 after Patch 0558 §3); approximately 45% through body-content sequence (§1-§4 of §1-§10 anticipated); on track for 30-35 page final target.
+3. **Two named framework axioms** introduced (MA.1 propagation-rate asymmetry + MA.2 framework-local current construction at $\bigO{\delta^1}$); will be referenced by hypothesis labels (H1) + (H2) in §5 + §6 integration Patches.
+4. **Layer-distinction discipline operationalised at §4** at three concrete points (opening paragraph Layer-rigor-not-content escalation pre-commit + §4.3 three-bullet Layer hierarchy statement + terminology note distinguishing framework axiom from primitive axiom).
+5. **Zero documentation drift inherited or introduced.**
+6. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+7–18. Standard anti-priorities: NO new Findings; NO sub-question reopenings; NO v1.0 SHIPPED edits; NO Patches 0531-0558 immutable content modifications (only §4 inner-placeholder substitution); NO modification of hardened theorem .tex (will be referenced not modified at §5 + §6 integration Patches); NO body content added §5-§10; NO F.2/F.3 work; NO Layer 4 work (deferred); NO reviewer engagement; NO modification of templates/; NO methods-catalogue audit work; Step E audit per §29.4.
+
+**Forward queue post-Patch 0559:**
+
+- **(A) Patch 0560 = §5 first-shell geometric identities body** per scoping document §4.2 fifth step. **First integration Patch in the assembly arc** — imports content from Patches 0551 + 0552 hardened theorem `.tex` artifacts. Primary source: `hardened_theorems/first_shell_perpendicularity.tex` (Patch 0551) + `hardened_theorems/host_to_first_shell_projection.tex` (Patch 0552) + their shared Lemma 3.1.1 (tangent-hyperplane chord length) + exclusion class E1 (G1 publication-grade hardening pending). Anticipated sub-structure: §5.1 G1 primitive (inherited Layer 3) + §5.2 Lemma 3.1.1 + §5.3 Theorem 5.1 (host-to-first-shell uniform projection from Patch 0552) + §5.4 Theorem 5.2 (first-shell-to-first-shell perpendicularity from Patch 0551) + §5.5 Exclusion class E1 (shared G1 dependency) + §5.6 Cross-reference to Capotauro v2.0 §3 spatial-sector parallel. Target: 5-6 pages — longest single-section Patch in the arc.
+- **(B) Patches 0561-0567 — remaining body section assembly** per scoping document §4.2-§4.5: §6 perturbation-locality at Patch 0561 (integrates Patch 0550 hardened theorem); §7 substrate-locality umbrella at Patch 0562; §8 Layer 3 stack at Patch 0563; §9 open questions at Patch 0564; §10 conclusion at Patch 0565; bibliography at Patch 0566; final polish at Patch 0567.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(D) Patch 0570 (or thereabouts) — F.1 flagship paper v1.0 SHIP** with PDF committed.
+- **(E)** Methods catalogue audit (8 candidates). **(F)** G1 publication-grade hardening. **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(I)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0559 inserts the §4 Mechanism A axiom body — Layer-rigor escalation elevating the previously-introduced equations to formal framework-axiom status (MA.1 + MA.2). No new mathematical content; the elevation is rhetorical/categorical. Paper now compiles to 15 pages. Approximately 45% through body-content sequence. Zero documentation drift. Next Patch (0560) is the FIRST integration Patch in the arc — body section §5 imports content from the Patches 0551 + 0552 hardened theorem artifacts, the largest single-section Patch in the arc.

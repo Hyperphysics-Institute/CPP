@@ -2935,3 +2935,53 @@ Two operational points where Layer-distinction discipline manifests at §3:
 ### §47.4 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. Body-content substitution is standard paper-assembly methodology (fourth instance after Patches 0554 + 0556 + 0557). The methods catalogue audit Patch carries 8 candidate items unchanged from Patch 0557.
+
+---
+
+## §48 Patch 0559 — §4 Mechanism A axiom body insertion (Layer-rigor escalation, no new content)
+
+**Context.** Patch 0558 inserted the §3 Framework primitives body. Patch 0559 continues the body-content sequence per scoping document §4.2 fourth step, substituting the inner placeholder at §4 (`\section{Mechanism A as framework axiom}`) with 55 lines of LaTeX body content (~1200 words, ~2 PDF pages). Authorised via Thomas's "Please proceed" directive following Patch 0558 ship + push at commit `764a5e6`.
+
+### §48.1 What this Patch does, structurally
+
+The §4 body is short by design (target 2 pages — the shortest body section in the paper). Its substantive purpose is **Layer-rigor escalation, not new mathematical content**: the propagation-rate asymmetry (Equation~\eqref{eq:mechanism-a-formal} from §2.3) and the framework-local current construction (Equation~\eqref{eq:di-bit-current-construction} from §3.4) are elevated to formal framework-axiom status as Axioms MA.1 and MA.2 respectively. The opening paragraph makes this commitment explicit: "the elevation is one of Layer rigor, not content scope."
+
+The §4 body adds three subsections per the skeleton's anticipated outline:
+
+1. **§4.1 The propagation-rate asymmetry** — Axiom MA.1 codifies Equation~\eqref{eq:mechanism-a-formal} with three commitments made explicit: (a) linear dependence in $\hat{e} \cdot \hat{n}$ exact at framework level (no $\bigO{\delta^0}$ tangent corrections); (b) vertex-uniformity (rate independent of originating vertex $v$); (c) $\delta$ is a single scalar (not a tensor field). Higher-order $\bigO{\delta^2}$ corrections deferred to Open Problem~\ref{op:delta-squared}.
+
+2. **§4.2 Framework local-current construction at first order in $\delta$** — Axiom MA.2 codifies the framework-local current construction at any substrate vertex $v$ (generalising Equation~\eqref{eq:di-bit-current-construction} which applies specifically at $\vhost$). $\mathcal{E}_1(v)$ notation introduced for the first-shell unit-direction edges at $v$. $\bigO{\delta^2}$ collection separates first-order content (explicit summation) from higher-order content (controlled by perturbation-locality propagation rule). The structural separation enables the substrate-locality theorem's decomposition into a first-shell geometric part (Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}) and a perturbation-theory part (Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality}).
+
+3. **§4.3 Mechanism A as framework axiom: Layer rigor and Layer 4 deferral** — three-bullet enumeration of MA.1 + MA.2's status in the Layer hierarchy: (a) at present paper's scope, MA.1 + MA.2 are framework axioms (Layer 3 framework input) derived from neither CPP A1-A11 alone nor 600-cell structure alone; (b) at publication-grade Layer 3 of the hardened theorem trio, MA.1 and MA.2 appear as hypotheses (H1) and (H2) — not promoted to derived statements; (c) at Layer 4 axiomatic derivation, Mechanism A's derivation from A1-A11 alone is open (Open Problem~\ref{op:layer4-mechanism-a}). Closes with a terminology note distinguishing "framework axiom" (paper-level commitment) from "primitive axiom" (CPP-corpus-level commitment A1-A11) — the two-tier axiom structure reflecting CPP's staged-derivation discipline.
+
+No new labeled equations introduced at §4 (consistent with the no-new-content design — equations are referenced via earlier labels eq:mechanism-a-formal and eq:di-bit-current-construction). Axiom MA.1 and MA.2 are statement environments (quote blocks) rather than `\begin{equation}`+label form; their citation in downstream sections is by axiom name, not by equation number.
+
+### §48.2 Layer-distinction discipline at §4
+
+§4 is itself a Layer-distinction discipline statement: it makes the framework/primitive distinction explicit and durable. Three concrete operationalisations at §4:
+
+1. **The opening paragraph** explicitly frames the section's purpose as "Layer-rigor escalation, not new mathematical content." This pre-commits to reading §4 as codification, not as derivation. A reader who expects §4 to derive Mechanism A from prior principles will recognise from the opening that this is not what §4 does.
+
+2. **§4.3 three-bullet Layer hierarchy statement** locates MA.1 + MA.2 at three layers simultaneously: framework axiom (present paper), hypothesis input (publication-grade hardened theorems), open derivation (Layer 4). This makes the framework's standing visible at all three layers in a single section, not deferred across the rest of the paper.
+
+3. **The terminology note** at §4.3's end distinguishes "framework axiom" from "primitive axiom" explicitly. Without this distinction, downstream references to "axiom MA.1" could be confused with CPP primitive axioms A1-A11. The distinction is preserved going forward by consistent use of MA.1/MA.2 (framework axiom) vs A1/A6$^{\prime}$/A11 (primitive axiom) labelling.
+
+### §48.3 The hypothesis labels H1/H2 across the paper
+
+A note on coordination: the publication-grade hardened theorems at `flagship_papers/dynamical_substrate_law/hardened_theorems/` use hypothesis labels (H1), (H2), (H3) for each theorem's local hypotheses. Patch 0550 uses (H1) Mechanism A + (H2) framework local-current construction + (H3) first order in $\delta$. Patches 0551 and 0552 use (H1) vertex-aligned Reading C + (H2) 600-cell unit-vertex normalisation + (H3) G1 first-shell inner-product primitive. The hypothesis labels are local to each hardened theorem; the same label number (e.g., "H1") refers to different content in different theorems.
+
+Axioms MA.1 and MA.2 in §4 of the present paper are NOT renumberings of the hardened theorems' (H1)/(H2). The relationship is: at the present paper's scope, Patch 0550's hardened theorem's (H1) and (H2) hypotheses ARE Axioms MA.1 and MA.2 respectively. At Patches 0551 + 0552's hardened theorems, the (H1)-(H3) hypotheses are about Reading C + 600-cell + G1, not about Mechanism A — these depend on §3 framework primitives, not §4 Mechanism A axioms.
+
+The cross-walk between the hardened theorems' local (H1)-(H3) labels and the paper's MA.1 + MA.2 framework axioms will be made explicit at §5 (Patch 0560 integrating Patches 0551 + 0552) and §6 (Patch 0561 integrating Patch 0550). The §4 body does not pre-empt that cross-walk.
+
+### §48.4 Self-checkpoint — three places §48.1-§48.3 could overstate
+
+1. **The "Layer-rigor escalation, not new mathematical content" framing** is editorial discipline, not mathematical fact. §4 does add new statements (Axioms MA.1 and MA.2 as explicit named axioms with bracketed paragraph statements), and those statements have implications for downstream proofs (the vertex-uniformity claim in MA.1, the $\mathcal{E}_1(v)$ generalisation in MA.2). What is preserved as "not new" is the mathematical content of the equations they enshrine; the rhetorical elevation to axiom status is new.
+
+2. **The "framework axiom vs primitive axiom" distinction** at §4.3 is a CPP-corpus convention that is being made explicit in this paper for the first time. Other CPP papers may use the term "axiom" without disambiguation; this paper's introduction of the distinction is a clarification, not a corpus-wide change. The distinction is not framework-level; it is paper-level scope-setting.
+
+3. **The H1/H2 cross-walk note** at §48.3 anticipates work that is not done at this Patch. The actual cross-walk between MA.1/MA.2 and the hardened theorems' (H1)/(H2) labels happens at Patches 0560 + 0561, where the hardened theorem content is integrated into §5 + §6 body sections. §4 does not establish the cross-walk; it sets up the language for it.
+
+### §48.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. Body-content substitution as Layer-rigor escalation is standard paper-assembly methodology (fifth instance after Patches 0554 + 0556 + 0557 + 0558; first instance specifically targeting Layer-rigor escalation rather than new content). 8 candidate items pending evaluation at the methods catalogue audit Patch carry forward unchanged.
