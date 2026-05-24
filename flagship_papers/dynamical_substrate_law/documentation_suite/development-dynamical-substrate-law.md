@@ -957,3 +957,31 @@ Methods catalogue Step E audit per §29.4: no new METH entry. The collation Patc
 Patch 0563 introduces no new deferred items. Patch 0564+ starts with clean state.
 
 Forward queue post-Patch 0563: Patch 0564 = §9 open questions body. Substitutes the 5 placeholder Open Problem statements (OPEN-FP-F1-1 through OPEN-FP-F1-5 at labels op:delta-squared, op:layer4-mechanism-a, op:g1-hardening, op:sector5-schema, op:non-vertex-aligned-c) with actual statement content. Target: 2-3 pages. Same multi-block substitution pattern as §7 + §8 (multiple placeholders in one substitution). Like §7's preservation of Theorem 7.1 Layer label, each Open Problem's parenthetical title is preserved unchanged from the skeleton.
+
+---
+
+## Vignette 41 — Patch 0564: §9 open questions body insertion (5 Open Problem statements)
+
+Patch 0564 inserts the §9 open questions body — substitutes 5 placeholder Open Problem statements (OPEN-FP-F1-1 through OPEN-FP-F1-5) with actual statement content via multi-block substitution. The substitution follows the multi-block pattern of Patches 0560 + 0561 + 0562 (inner placeholder + multiple environment placeholders in one operation). Each Open Problem parenthetical title and label is preserved unchanged from the Patch 0554 skeleton — analogous to Patch 0562's preservation of Theorem 7.1's "sketch-document Layer 3" parenthetical label.
+
+The substitution adds approximately 1500 words of dense Open Problem statements + opening/closing paragraphs but compresses to about 1 PDF page because openproblem environments are block-form. The paper now compiles to 28 pages (was 27 after Patch 0563 §8); approximately 90% through body-content sequence (§1-§9 of §1-§10).
+
+The five Open Problems span structurally distinct closure trajectories:
+
+- **OPEN-FP-F1-1 ($\bigO{\delta^2}$ extension)** is the natural extension of the present paper's central result. Closure would require working out the second-shell geometric structure (20-vertex dodecahedron at distance $\sqrt{2 - 2\cos(72^\circ)}$ from $\vhost$) and the second-shell inner-product + edge-projection identities analogous to G1 + G2 + Theorem 5.1.
+- **OPEN-FP-F1-2 (Layer 4 axiomatic derivation of Mechanism A)** is the long-term programme target. Closure would discharge Mechanism A's framework-axiom status to the CPP primitive-axiom level (A1 + A6′ + A11).
+- **OPEN-FP-F1-3 (publication-grade hardening of G1)** is the most immediately tractable. Closure produces a `hardened_theorems/first_shell_inner_product_primitive.tex` artifact parallel to the existing trio (Patches 0550-0552). Closes the shared exclusion class E1 of Theorems 5.1 + 5.2, upgrading them to unconditional publication-grade Layer 3.
+- **OPEN-FP-F1-4 (Sector-5 schema instantiation)** is research-direction-choosing rather than derivation. The chirality continuum architecture anticipates manifestation (v) beyond the spatial sector (Capotauro v2.0 manifestations (i)-(iii)) and temporal sector (the present paper's manifestation (iv)), but (v) is not yet specified.
+- **OPEN-FP-F1-5 (non-vertex-aligned Reading C variants)** extends the present paper's vertex-aligned Reading C to edge-aligned ($D_3$ residual) and face-aligned ($D_2$ residual) variants. The first-shell geometric primitives G1 + G2 are vertex-specific; under alternative variants, different residual symmetries apply and the substrate-locality structure may differ.
+
+The closing paragraph of §9 names the independence structure: OPEN-FP-F1-3 (G1 hardening) interacts with §5+§6 conditionality clauses; the other four are mutually orthogonal. The forward trajectory prioritises OPEN-FP-F1-3 (most tractable) + OPEN-FP-F1-1 (natural extension); OPEN-FP-F1-2 is long-term; OPEN-FP-F1-4 and OPEN-FP-F1-5 are research-direction-choosing for the broader chirality continuum and Reading C-variant trajectories.
+
+The most consequential editorial discipline at this Patch is **preserving the 5-Open-Problem commitment**. The Patch 0554 skeleton placed 5 openproblem environments; at Patch 0562 §7 a 6th Open Problem (op:substrate-locality-hardening) was nearly introduced and was deliberately dropped to preserve the 5-count. At Patch 0564, the 5 Open Problems receive substantive content; no 6th is added. The skeleton's commitment is honored end-to-end across the body-content sequence.
+
+Forward references in earlier sections (§3.4, §4.3, §5.5, §6.6, §7.4, §8.3) to these Open Problem labels now have substantive backing. The cross-reference scaffold across the paper is fully resolved at §9; readers following the forward references will find substantive content, not placeholders.
+
+Methods catalogue Step E audit per §29.4: no new METH entry. The Open Problem statement substitution pattern is a special case of the multi-block substitution pattern already flagged as integration-Patch candidate.
+
+Patch 0564 introduces no new deferred items. Patch 0565+ starts with clean state.
+
+Forward queue post-Patch 0564: Patch 0565 = §10 conclusion body. Substitutes the §10 inner placeholder with conclusion content tying the F.1 sub-question closure to the CPP chirality-from-polytope-geometry long-term programme target (per Patch 0528 §14.17 + Patch 0539 §15.5 as referenced in skeleton). Target 1-2 pages.

@@ -3216,3 +3216,58 @@ No new labeled equations, lemmas, or theorems introduced at §8. One labeled tab
 ### §52.5 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. The collation Patch pattern (consolidating per-theorem rigor classifications into an explicit reference table) is at first instance at this Patch; if a similar pattern appears at downstream Patches or future flagship papers, it becomes a candidate for methods catalogue audit. Methods catalogue audit Patch candidate count remains at 9.
+
+---
+
+## §53 Patch 0564 — §9 open questions body insertion (5 Open Problem statements)
+
+**Context.** Patch 0563 inserted the §8 Layer 3 stack body. Patch 0564 inserts §9 open questions body — substitutes the 5 placeholder Open Problem statements (OPEN-FP-F1-1 through OPEN-FP-F1-5) with actual statement content. Authorised via Thomas's "Please proceed" directive following Patch 0563 ship + push at commit `a93162a`.
+
+### §53.1 What this Patch does, structurally
+
+Multi-block substitution covering §9 inner-placeholder comment + 5 openproblem environment placeholders in a single substitution operation. Same structural pattern as Patch 0560 §5 + Patch 0561 §6 + Patch 0562 §7 multi-block substitutions; each Open Problem **parenthetical title and label preserved unchanged** from skeleton per Patch 0563 forward queue instruction (analogous to §7's Theorem 7.1 Layer label preservation).
+
+**Substitution scope** (one large block, 22 lines skeleton → 35 lines body content, but with much denser content per line):
+1. Inner placeholder comment replaced with §9 opening paragraph.
+2. OPEN-FP-F1-1 placeholder statement (`[Statement to be added at Patch 0563.]`) → actual statement on $\bigO{\delta^2}$ extension.
+3. OPEN-FP-F1-2 placeholder → Layer 4 axiomatic derivation of Mechanism A statement.
+4. OPEN-FP-F1-3 placeholder → publication-grade hardening of identity G1 statement.
+5. OPEN-FP-F1-4 placeholder → Sector-5 schema instantiation statement.
+6. OPEN-FP-F1-5 placeholder → non-vertex-aligned Reading C variants statement.
+7. Closing paragraph on independence structure of the 5 Open Problems.
+
+Each Open Problem parenthetical title preserved verbatim from skeleton (e.g., `[Extension to $\bigO{\delta^2}$; OPEN-FP-F1-1]`). The skeleton's anti-priority of "5-Open-Problem commitment" sustained — no 6th Open Problem introduced.
+
+**Net addition**: ~1500 words of dense Open Problem statements + opening/closing paragraphs (~1 PDF page). Page-count addition is below the 2-3 page target because openproblem environments compress block-form statements; the substantive content is in place at appropriate density.
+
+### §53.2 §9 body content structure
+
+The §9 body comprises:
+
+- **Opening paragraph**: frames the five Open Problems as spanning conditionality structure (G1 hardening, Theorem~7.1 unconditional status), higher-order extension ($\bigO{\delta^2}$ corrections), long-term axiomatic derivation (Layer 4), broader manifestation domain (sector-5 schema), and Reading C scope restriction (non-vertex-aligned variants). Notes that all five are referenced in earlier sections.
+
+- **OPEN-FP-F1-1 ($\bigO{\delta^2}$ extension; op:delta-squared)**: closure would derive second-shell inner-product + edge-projection identities; extend Theorem~7.1 to closed-form at $\bigO{\delta^2}$; examine whether parallel-to-$\hat{n}$ structure survives at second order. Methodologically analogous to the present paper but at higher order.
+
+- **OPEN-FP-F1-2 (Layer 4 axiomatic derivation of Mechanism A; op:layer4-mechanism-a)**: closure would derive Axioms MA.1+MA.2 from CPP primitive axioms A1-A11; specifically derive propagation-rate asymmetry from A1+A6′ and vertex-uniformity from A11. Long-term programme target spanning multiple Patches in dedicated trajectory.
+
+- **OPEN-FP-F1-3 (publication-grade hardening of identity G1; op:g1-hardening)**: closure proceeds by dedicated G1 hardening Patch producing `hardened_theorems/first_shell_inner_product_primitive.tex` parallel to existing trio. Would close exclusion class E1 of Theorems 5.1 + 5.2, upgrading them to unconditional publication-grade Layer 3. Independent of OPEN-FP-F1-1 and OPEN-FP-F1-2.
+
+- **OPEN-FP-F1-4 (Sector-5 schema instantiation; op:sector5-schema)**: closure would identify manifestation (v) of substrate primitive — currently anticipated but not specified. Candidate domains (thermal-equilibrium gauge fixing; symmetry-restoration dynamics at EW crossover; cosmological-arrow alignment) referenced from Patch 0549 §38.3 but not committed. Research-direction-choosing question, not derivation question.
+
+- **OPEN-FP-F1-5 (non-vertex-aligned Reading C variants; op:non-vertex-aligned-c)**: closure would extend Theorems~5.1+5.2+7.1 under edge-aligned ($D_3$ residual) and face-aligned ($D_2$ residual) Reading C variants. Whether substrate-locality structure survives, fails, or takes modified form is open question. Methodologically proceeds by replaying §3-§7 with alternative residual-symmetry structures.
+
+- **Closing paragraph**: notes Open Problems are independent at first order (OPEN-FP-F1-3 G1 hardening interacts with §5+§6 conditionality clauses; other four mutually orthogonal). Forward trajectory prioritises OPEN-FP-F1-3 (most tractable) + OPEN-FP-F1-1 (natural extension of present paper); OPEN-FP-F1-2 long-term; OPEN-FP-F1-4/F1-5 research-direction-choosing.
+
+### §53.3 Layer-distinction discipline at §9
+
+§9 is where the Open Problem labels referenced throughout the paper (op:g1-hardening, op:layer4-mechanism-a, op:delta-squared, op:sector5-schema, op:non-vertex-aligned-c) receive their substantive statement content. Three operational points:
+
+1. **Cross-references made meaningful**: prior sections (§3, §4, §5, §6, §7, §8) reference Open Problem labels as forward-references; at §9 those labels receive substantive content. Forward-reference structure now has substantive backing.
+
+2. **5-Open-Problem commitment preserved**: the skeleton's commitment to exactly 5 Open Problems (not 6, not 4) was honored at §7 (Patch 0562 dropped `op:substrate-locality-hardening` to preserve the 5-count) and is sustained here (no 6th OP introduced).
+
+3. **Open Problem statements explicitly enumerate closure approaches**: each OP statement describes what closure would entail (e.g., OPEN-FP-F1-3 would produce a `hardened_theorems/first_shell_inner_product_primitive.tex` artifact parallel to existing trio). This makes the Open Problems actionable, not just placeholder statements.
+
+### §53.4 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The Open Problem statement substitution pattern (replacing multiple placeholder OP statements with actual content via multi-block substitution) is a special case of the multi-block substitution pattern already in the integration-Patch candidate. Methods catalogue audit Patch candidate count remains at 9.

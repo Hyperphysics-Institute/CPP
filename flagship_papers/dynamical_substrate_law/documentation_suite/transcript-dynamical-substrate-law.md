@@ -971,3 +971,45 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch. **(G)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(H)** F.2/F.3 trajectory openings. **(I)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(J)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0563 inserts the §8 Layer 3 stack body — a collation Patch consolidating per-theorem rigor classifications into Table~\ref{tab:layer-hierarchy}. Three subsections following Patch 0562 forward queue (5 skeleton subsections folded into 3). Anti-erasure discipline named explicitly at §8.3 closing paragraph. Paper compiles cleanly to 27 pages. Approximately 80% through body-content sequence. Zero documentation drift. Next Patch (0564) is §9 open questions body — substitutes 5 Open Problem placeholder statements with actual statement content.
+
+---
+
+## Transaction 051 — Patch 0564 (§9 open questions body insertion; 5 Open Problem statements)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=a93162a` = Patch 0563 §8 Layer 3 stack body).
+**Branch:** main.
+**Patch type:** Substantive content / multi-block substitution (ninth body-content Patch of the F.1 flagship paper assembly arc; executes scoping document §4.2 ninth step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0563 ship + push at commit `a93162a`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§9 multi-block substitution: inner placeholder + 5 openproblem environment placeholders replaced with 35 lines of body content; outer comment header preserved per §17.6 (8); each Open Problem parenthetical title + label preserved unchanged; opening paragraph + 5 Open Problem statements + closing paragraph). Paper compiles cleanly to 28 pages.
+2. APPEND — Tier 4 §53 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (4 subsections: §53.1 what this Patch does structurally + §53.2 §9 body content structure + §53.3 Layer-distinction discipline at §9 + §53.4 methods catalogue Step E audit verdict).
+3. APPEND — Vignette 41 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 051 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0564 entry; Patch 0563 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Open Problem statement substitution is special case of multi-block pattern already flagged. Candidate count remains at 9.
+
+**Programme state changes at Patch 0564:**
+
+1. **§9 open questions body in place**: 5 Open Problem placeholder statements replaced with substantive content; cross-references throughout the paper now have substantive backing.
+2. **5-Open-Problem commitment preserved end-to-end**: no 6th Open Problem introduced; skeleton's commitment honored across the body-content sequence.
+3. **Paper now compiles to 28 pages** (was 27 after Patch 0563 §8); approximately 90% through body-content sequence (§1-§9 of §1-§10); on track for 30-35 page final target.
+4. **Layer-distinction discipline operationalised at §9** at three concrete points (cross-references made meaningful + 5-Open-Problem commitment preserved + Open Problem statements explicitly enumerate closure approaches).
+5. **Zero documentation drift** inherited or introduced.
+6. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+7–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0564:**
+
+- **(A) Patch 0565 = §10 conclusion body** per scoping document §4.2 tenth step. Substitutes §10 inner placeholder with conclusion content tying F.1 sub-question closure to the CPP chirality-from-polytope-geometry long-term programme target (per Patch 0528 §14.17 + Patch 0539 §15.5 as referenced in skeleton). Not an integration Patch. Target 1-2 pages.
+- **(B) Patch 0566 = bibliography** — populates `\thebibliography` with citations to corpus references (Capotauro v2.0, Patch 0541 G1 derivation, Patches 0550-0552 hardened theorems, etc.).
+- **(C) Patch 0567 = final polish** — pass over the paper for typos, cross-reference verification, format consistency, abstract finalisation, author/affiliation block.
+- **(D) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(E) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.**
+- **(F)** Methods catalogue audit (9 candidates). **(G)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable). **(H)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(I)** F.2/F.3 trajectory openings. **(J)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(K)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0564 inserts the §9 open questions body — substitutes 5 placeholder Open Problem statements with substantive content via multi-block substitution. Each parenthetical title + label preserved unchanged per skeleton. 5-Open-Problem commitment preserved end-to-end. Paper compiles cleanly to 28 pages. Approximately 90% through body-content sequence. Zero documentation drift. Next Patch (0565) is §10 conclusion body — the final body section of the paper assembly arc.
