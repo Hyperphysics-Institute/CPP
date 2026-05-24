@@ -3106,3 +3106,65 @@ Per §29.4: no new METH entry at this Patch. The integration-Patch pattern (firs
 2. **The "publication-grade Layer 3 unconditional"** framing for §6 vs the "publication-grade Layer 3, conditional on G1" framing for §5 reflects the geometric primitive dependency structure. §5 depends on G1 (load-bearing geometric primitive at sketch-document Layer 3). §6 depends on Mechanism A (paper-level framework axiom) and the 600-cell edge graph (Axiom A11, primitive level). The Mechanism A dependency is uniformly framework-level across the paper; the G1 dependency is specifically at sketch-document Layer 3 and shared between §5's two theorems. The Layer label difference at §6 vs §5 reflects this structural distinction; it is not an upgrade or downgrade of any specific theorem.
 
 3. **The "exclusion E1 naming collision" note** is operational at the present paper's scope. If future hardening Patches (e.g., a G1 publication-grade hardening Patch closing Patches 0551 + 0552's exclusion E1, or a Mechanism-A-derived-from-A1-A11 Patch closing Patch 0550's exclusion E1) land, the collision becomes less consequential (the closed-out exclusion ceases to be a paper-scope issue). The note is a navigation aid for current-paper readers, not a permanent feature.
+
+---
+
+## §51 Patch 0562 — §7 substrate-locality umbrella theorem body insertion (assembles §5+§6 inputs; NOT an integration Patch)
+
+**Context.** Patches 0560 + 0561 were the two integration Patches (§5 + §6, importing the F.1 hardened-theorem trio). Patch 0562 is structurally different: it does **NOT** import a hardened theorem `.tex` artifact. Instead, it constructs Theorem 7.1 (the substrate-locality umbrella) from the already-integrated §5 + §6 inputs. Authorised via Thomas's "Please proceed" directive following Patch 0561 ship + push at commit `131584a`.
+
+### §51.1 What this Patch does, structurally
+
+Multi-block substitution covering the §7 inner-placeholder comment + Theorem 7.1 environment placeholder. Same structural pattern as Patches 0560 + 0561, but with a **key Layer label asymmetry**: the Theorem 7.1 parenthetical label STAYS at "sketch-document Layer 3" — unlike Theorems 5.1, 5.2 (publication-grade Layer 3, conditional on G1) and Theorem 6.1, Corollary 6.2 (publication-grade Layer 3, unconditional). The umbrella has not been independently hardened to publication-grade rigor; its hardening is a follow-up Patch beyond the present paper's scope.
+
+**Substitution scope** (one large block, 17 lines skeleton → 107 lines body content):
+1. Inner placeholder comment replaced with §7 body content.
+2. Theorem 7.1 environment placeholder content replaced with actual substrate-locality umbrella statement; **parenthetical Layer label preserved unchanged** at "sketch-document Layer 3" per Patch 0561 forward queue instruction.
+
+**Net addition**: ~90 lines body content (~2000 words, ~3 PDF pages).
+
+A small departure from skeleton intent: the Patch 0554 skeleton anticipated §7's sub-structure as 5 subsections (Theorem 7.1 + 3 proof parts + Connection to Phase 1 Finding DSL-1). The Patch 0561 forward queue updated this to 4 subsections (Statement assembly + Theorem 7.1 + Proof from §5+§6 inputs + Layer-distinction status). The §7 body follows the updated 4-subsection structure; this is documented at Tier 4 §51.4.
+
+### §51.2 §7 body content structure
+
+The §7 body adds an opening paragraph + four subsections per the Patch 0561 forward queue:
+
+- **Opening paragraph**: assembles §5 + §6 inputs into the umbrella theorem; explicit notice that Theorem 7.1 is at sketch-document Layer 3 (publication-grade hardening as candidate follow-up Patch beyond paper scope; not registered as formal Open Problem in §9 to preserve the skeleton's 5-Open-Problem design).
+- **§7.1 Statement assembly**: numbered enumeration of the five framework qualifiers — (1) vertex-aligned Reading C, (2) 600-cell substrate geometry, (3) first-shell geometric primitives G1+G2, (4) Mechanism A framework axioms MA.1+MA.2, (5) first-order in $\delta$ restriction. Sets up the umbrella result.
+- **§7.2 Theorem 7.1 (substrate-locality umbrella)**: full theorem statement with Equation~\eqref{eq:substrate-locality}: $\jDInet(\vhost) = (6\delta/\phig^2) \hat{n} + \bigO{\delta^2}$. Three features paragraph: parallel-to-$\hat{n}$ at first order (no tangent component, from icosahedral symmetry); magnitude $6\delta/\phig^2$ determined entirely by first-shell content; linear in $\delta$ (perturbative regime).
+- **§7.3 Proof from §5 + §6 inputs**: four-step proof — Step 1 first-shell confinement via Corollary~6.2 + Theorem~5.2; Step 2 closed-form host-to-first-shell expression via Theorem~5.1; Step 3 icosahedral-sum identity ($\sum_{i=1}^{12} \hat{u}_i = -(6/\phig)\hat{n}$ from G2 + Theorem~5.1); combining Steps 1-3 gives the closed-form Equation~\eqref{eq:substrate-locality}. The icosahedral-sum identity is named inline for proof clarity but not registered as a separate lemma (it is a derived consequence of G2 + Theorem~5.1, not an independent input).
+- **§7.4 Layer-distinction status of Theorem 7.1**: three-bullet enumeration locating Theorem 7.1 at sketch-document Layer 3 at the present paper's scope; publication-grade hardening as candidate follow-up Patch; conditionality structure summary (Theorem 7.1 depends on §5's two theorems publication-grade Layer 3 conditional on G1 + §6's theorem+corollary publication-grade Layer 3 unconditional). Closing paragraph connects to the F.1 sub-question framing: "structurally-grounded sketch-document Layer 3 closure under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\bigO{\delta^2}$ extension, and publication-grade hardening of identity G1".
+
+One labeled equation introduced at §7: `eq:substrate-locality`. Previously-placeholder Theorem `thm:substrate-locality` now has substantive content.
+
+### §51.3 Layer-distinction discipline at §7 — the asymmetry deliberately preserved
+
+§7's Layer label is unique in the paper so far: it is the only theorem at the paper-level scope that is **explicitly NOT publication-grade Layer 3**. Three concrete operationalisations of the Layer-distinction discipline at §7:
+
+1. **Theorem 7.1 parenthetical label STAYS at "sketch-document Layer 3"** — preserved unchanged from the Patch 0554 skeleton. The reader sees the asymmetry at theorem-statement level: §5's two theorems and §6's theorem+corollary are at publication-grade Layer 3 (in dedicated `hardened_theorems/` artifacts); §7's umbrella is at sketch-document Layer 3 (in the paper body only, no separate hardened artifact).
+
+2. **§7.4 conditionality structure**: bullet 3 explicitly summarises the dependency tree. Theorem 7.1 → Theorems 5.1, 5.2 (publication-grade Layer 3, conditional on G1) + Theorem 6.1 + Corollary 6.2 (publication-grade Layer 3, unconditional). The conditionality structure of the umbrella is the conjunction of the constituent rigor levels.
+
+3. **The closing paragraph of §7.4** explicitly frames the F.1 sub-question's status as "structurally-grounded sketch-document Layer 3 closure" — making the umbrella's Layer-3 status the substantive closure result, with publication-grade hardening of the umbrella as a candidate follow-up (not a formal Open Problem). The substantive contribution of the present paper is the **trio's publication-grade hardening + the umbrella's sketch-document-Layer-3 assembly**; full publication-grade hardening of the umbrella would be a separate follow-up Patch.
+
+### §51.4 Sub-structure departure from skeleton: 5 subsections → 4 subsections
+
+The Patch 0554 skeleton anticipated §7's sub-structure as 5 subsections (Theorem 7.1 + 3 proof parts + Connection to Phase 1 Finding DSL-1). The Patch 0561 forward queue updated this to 4 subsections (Statement assembly + Theorem 7.1 + Proof + Layer-distinction status). The §7 body follows the updated structure for three reasons:
+
+1. The Patch 0561 forward queue post-dates the skeleton's anticipated outline; it reflects the now-current understanding after §5 + §6 are in place.
+2. The 4-subsection structure cleanly separates "what is the theorem" (§7.2) from "how is it proven" (§7.3) from "where does it sit in the Layer hierarchy" (§7.4). The skeleton's 5-subsection structure had the theorem AND proof parts AND connection-to-Finding-DSL-1 mixed; the updated structure is cleaner.
+3. The "Connection to Phase 1 Finding DSL-1" element from the skeleton's anticipated 5th subsection can be covered at §10 (conclusion, Patch 0565) or at the closing paragraph of §7.4 (which already does cover the structurally-grounded-closure framing). It does not need its own subsection at §7.
+
+The departure is documented here for transparency; the skeleton's anticipated outline is a placeholder, and the Patch 0561 forward queue's updated outline is the operational direction.
+
+### §51.5 The `op:substrate-locality-hardening` reference that was NOT introduced
+
+During §7 body drafting, an initial reference to `op:substrate-locality-hardening` was added (for the umbrella theorem's publication-grade hardening as a future Open Problem). The skeleton's §9 placeholder commits to exactly 5 Open Problems (OPEN-FP-F1-1 through OPEN-FP-F1-5 with labels op:delta-squared, op:layer4-mechanism-a, op:g1-hardening, op:sector5-schema, op:non-vertex-aligned-c). Introducing a 6th Open Problem via the umbrella hardening reference would expand the paper's scope; the local-compile flagged undefined references during draft.
+
+Three options were considered: (a) drop the reference and describe the umbrella hardening as a follow-up Patch (not a formal Open Problem); (b) add OPEN-FP-F1-6 with label op:substrate-locality-hardening in the §9 skeleton placeholder; (c) map the umbrella hardening to an existing Open Problem.
+
+Option (a) was chosen at this Patch: the references are dropped and replaced with descriptive text "publication-grade hardening of Theorem~7.1 is a candidate follow-up Patch beyond the present paper's scope". The 5-Open-Problem skeleton design is preserved; the umbrella hardening remains a candidate follow-up registered in the Tier 4 forward queue, not in the paper's §9. This is consistent with the §7.4 closing paragraph framing: the substantive contribution of the present paper is the trio's publication-grade hardening + the umbrella's sketch-document-Layer-3 assembly.
+
+### §51.6 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The non-integration body Patch (assembling already-integrated inputs into a new theorem) is at the first instance at this Patch; if a similar pattern appears at downstream Patches (e.g., a §10 conclusion synthesising prior results), the pattern becomes a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.

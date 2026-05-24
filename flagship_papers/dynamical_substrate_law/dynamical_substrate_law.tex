@@ -731,21 +731,113 @@ Exclusions E1, E2, E5 are shared with other parts of the paper (Mechanism A axio
 \section{The substrate-locality theorem (umbrella result)}
 \label{sec:substrate-locality-theorem}
 
-% [Body content to be added at Patch 0561. Sub-structure anticipated:
-%   §7.1 Theorem 7.1: substrate net DI-bit current at v_host depends
-%        only on first-shell content at O(delta)
-%   §7.2 Proof part (a): host-to-first-shell uniform contribution
-%        (via Theorem 5.1)
-%   §7.3 Proof part (b): first-shell-to-first-shell zero contribution
-%        (via Theorem 5.2)
-%   §7.4 Proof part (c): higher-shell zero contribution at O(delta)
-%        (via Theorem 6.1 + Corollary 6.2)
-%   §7.5 Connection to Phase 1 Finding DSL-1]
+% [Body added at Patch 0562 per scoping doc §4.2 seventh step.
+%  NOT an integration Patch — constructs Theorem 7.1 from already-integrated
+%  §5 + §6 inputs (no new hardened theorem .tex import).
+%  Primary source: Patch 0544 §5 Theorem 5.1.1 (sketch-document Layer 3
+%  umbrella statement). Sub-structure follows Patch 0561 forward queue:
+%  §7.1 Statement assembly + §7.2 Theorem 7.1 + §7.3 Proof from §5 + §6
+%  inputs + §7.4 Layer-distinction status. Theorem 7.1 parenthetical Layer
+%  label STAYS at "sketch-document Layer 3" — the umbrella has not been
+%  independently hardened to publication-grade; its publication-grade
+%  hardening is a candidate follow-up Patch beyond the present paper's scope.]
+
+This section assembles the inputs developed in \S\ref{sec:first-shell-identities} (Theorems~\ref{thm:host-first-shell-projection} + \ref{thm:first-shell-perpendicularity}) and \S\ref{sec:perturbation-locality} (Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality}) into the central umbrella result of the paper: the substrate-locality theorem. The result reduces the framework-local net DI-bit current $\jDInet(\vhost)$ at $\bigO{\delta^1}$ to a single closed-form expression depending only on first-shell content and the substrate primitive $\hat{n}$. Unlike the integrated Theorems~5.1, 5.2, 6.1 and Corollary~6.2, the umbrella theorem of this section has not been independently hardened to publication-grade rigor; it is stated at \emph{sketch-document Layer~3} at the present paper's scope, with publication-grade hardening flagged as a follow-up Patch beyond the present paper's scope (not registered as a formal Open Problem in \S\ref{sec:open-questions}, since the present paper's substantive closure depends on the integrated trio of Patches~0550--0552 plus the umbrella assembly at sketch-document Layer~3, not on the umbrella's own publication-grade hardening).
+
+\subsection{Statement assembly}
+\label{sec:statement-assembly}
+
+The framework qualifiers for the umbrella theorem are the cumulative scope-setting commitments of \S\S\ref{sec:framework-primitives}--\ref{sec:perturbation-locality}:
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Vertex-aligned Reading~C} (Equation~\eqref{eq:reading-c-alignment}): $\hat{n} = \vhost / |\vhost| = \vhost$, with the substrate primitive aligned to a chosen host vertex of the 600-cell.
+\item \textbf{600-cell substrate geometry} (Axiom A11 + \S\ref{sec:600-cell-reading-c}): the substrate has the regular 4-polytope structure with $H_4$ symmetry, unit-vertex normalisation, and short-edge length $1/\phig$.
+\item \textbf{First-shell geometric primitives G1 + G2} (\S\ref{sec:first-shell-primitives}): the 12 first-shell vertices form a regular icosahedron centered at $\vhost$ with uniform inner product $v_i \cdot \vhost = \phig/2$.
+\item \textbf{Mechanism~A framework axioms MA.1 + MA.2} (\S\ref{sec:mechanism-a}): the propagation-rate asymmetry $r(\hat{e}) = r_0(1 + \delta \, \hat{e} \cdot \hat{n})$ + the framework-local current construction at $\bigO{\delta^1}$.
+\item \textbf{First-order in $\delta$ restriction}: the umbrella theorem's claim is at $\bigO{\delta^1}$; higher-order corrections are at Open Problem~\ref{op:delta-squared}.
+\end{enumerate}
+
+Under these qualifiers, the framework-local current construction of Equation~\eqref{eq:di-bit-current-construction} can be evaluated explicitly using the §5 first-shell geometric identities, and the perturbation-locality theorem of §6 confines all higher-shell contributions to higher orders in $\delta$. The substrate-locality theorem is the closed-form statement of $\jDInet(\vhost)$ at $\bigO{\delta^1}$ that results.
+
+\subsection{Theorem 7.1: substrate-locality umbrella}
+\label{sec:substrate-locality-theorem-body}
+
 \begin{theorem}[Substrate-locality of DI-bit currents at vertex-aligned Reading C;
 sketch-document Layer 3]
 \label{thm:substrate-locality}
-[Statement to be added at Patch 0561; integrates Patch 0544 §5 Theorem 5.1.1.]
+Under framework qualifiers (1)--(5) of \S\ref{sec:statement-assembly}, the net DI-bit current at the host vertex $\vhost$ is, at first order in $\delta$,
+\begin{equation}
+\jDInet(\vhost) = \frac{6 \delta}{\phig^2} \, \hat{n} + \bigO{\delta^2},
+\label{eq:substrate-locality}
+\end{equation}
+where $\phig = (1 + \sqrt{5})/2$. The result depends only on first-shell content: the 12 host-to-first-shell unit-direction vectors $\hat{u}_i$ and their projections onto $\hat{n}$ via Theorem~\ref{thm:host-first-shell-projection}.
 \end{theorem}
+
+The closed-form coefficient $6/\phig^2 \approx 2.2918$ is the structural constant of the substrate-locality manifestation. Its derivation is the content of \S\ref{sec:proof-from-5-6}.
+
+Three features of the theorem deserve emphasis. First, the current $\jDInet(\vhost)$ is \emph{parallel to $\hat{n}$} at $\bigO{\delta^1}$: there is no tangent-direction component. The icosahedral residual symmetry $H_3 = I_h$ of vertex-aligned Reading~C (\S\ref{sec:600-cell-reading-c}) acts transitively on the 12 first-shell directions and averages all tangent components to zero. Second, the magnitude $6\delta/\phig^2$ is determined entirely by first-shell content; no higher-shell input enters at this order. Third, the current is \emph{linear} in $\delta$ at $\bigO{\delta^1}$: doubling $\delta$ doubles the current, reflecting the perturbative regime in which Mechanism~A operates.
+
+\subsection{Proof of Theorem 7.1 from §5 + §6 inputs}
+\label{sec:proof-from-5-6}
+
+\begin{proof}[Proof of Theorem~\ref{thm:substrate-locality}]
+By Axiom MA.2 (\S\ref{sec:framework-local-current-axiom}) and the expansion of the framework-local current in powers of $\delta$,
+\begin{equation}
+\jDInet(\vhost) = \sum_{n \ge 1} \delta^n \, \vec{J}_n(\vhost),
+\label{eq:current-expansion}
+\end{equation}
+where $\vec{J}_n(\vhost)$ is the $\bigO{\delta^n}$ coefficient. We compute $\vec{J}_1(\vhost)$ in three steps using the inputs from \S\S\ref{sec:first-shell-identities}--\ref{sec:perturbation-locality}.
+
+\paragraph{Step 1: First-shell confinement (via Corollary~\ref{cor:shell-locality}).}
+By Corollary~\ref{cor:shell-locality}, $\vec{J}_1(\vhost)$ depends only on the 12 host-to-first-shell edges $(\vhost, v_i)$ for $i = 1, \ldots, 12$, and their edge-direction inner products $\hat{u}_i \cdot \hat{n}$. The 30 first-shell-to-first-shell edges $(v_i, v_j)$ contribute zero by Theorem~\ref{thm:first-shell-perpendicularity} (the perpendicularity $\hat{e}_{ij} \cdot \hat{n} = 0$ sends the corresponding perturbed-step contributions in the path-amplitude expansion to zero). Higher shells ($n \ge 2$) contribute only at $\bigO{\delta^2}$ and above by Theorem~\ref{thm:perturbation-locality}.
+
+\paragraph{Step 2: Closed-form host-to-first-shell expression (via Theorem~\ref{thm:host-first-shell-projection}).}
+The framework-local current construction at $\vhost$ (Equation~\eqref{eq:di-bit-current-construction}) gives
+\[
+\vec{J}_1(\vhost) = 2 \sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n}) \, \hat{u}_i.
+\]
+By Theorem~\ref{thm:host-first-shell-projection}, $\hat{u}_i \cdot \hat{n} = -1/(2\phig)$ uniformly across all 12 first-shell neighbours. Substituting,
+\[
+\vec{J}_1(\vhost) = 2 \cdot \left(-\frac{1}{2\phig}\right) \sum_{i=1}^{12} \hat{u}_i = -\frac{1}{\phig} \sum_{i=1}^{12} \hat{u}_i.
+\]
+
+\paragraph{Step 3: Icosahedral-sum identity (via G2 + Theorem~\ref{thm:host-first-shell-projection}).}
+By the icosahedral residual symmetry $H_3 = I_h$ of vertex-aligned Reading~C (identity G2 + Equation~\eqref{eq:reading-c-alignment}), the 12 host-to-first-shell unit-direction vectors $\hat{u}_i$ are symmetrically distributed about the axis $\hat{n}$. Their sum $\sum_{i=1}^{12} \hat{u}_i$ must therefore be a scalar multiple of $\hat{n}$ (the only direction preserved by the $H_3$ action at $\vhost$). The scalar is obtained by projecting onto $\hat{n}$:
+\[
+\hat{n} \cdot \sum_{i=1}^{12} \hat{u}_i = \sum_{i=1}^{12} \hat{u}_i \cdot \hat{n} = 12 \cdot \left(-\frac{1}{2\phig}\right) = -\frac{6}{\phig},
+\]
+where the second equality uses Theorem~\ref{thm:host-first-shell-projection}. Therefore
+\[
+\sum_{i=1}^{12} \hat{u}_i = -\frac{6}{\phig} \, \hat{n}.
+\]
+
+\paragraph{Combining Steps 1--3.}
+Substituting the icosahedral-sum identity into the Step~2 expression,
+\[
+\vec{J}_1(\vhost) = -\frac{1}{\phig} \cdot \left(-\frac{6}{\phig}\right) \hat{n} = \frac{6}{\phig^2} \, \hat{n}.
+\]
+Combined with the $\bigO{\delta^2}$ remainder from Step~1, this gives Equation~\eqref{eq:substrate-locality}:
+\[
+\jDInet(\vhost) = \delta \cdot \frac{6}{\phig^2} \, \hat{n} + \bigO{\delta^2} = \frac{6\delta}{\phig^2} \, \hat{n} + \bigO{\delta^2}. \qedhere
+\]
+\end{proof}
+
+The proof exhibits the assembly structure that makes the umbrella theorem clean: each input enters at exactly one step (Corollary~\ref{cor:shell-locality} at Step~1 for shell confinement; Theorem~\ref{thm:host-first-shell-projection} at Steps~2 + 3 for projection + icosahedral sum; Theorem~\ref{thm:first-shell-perpendicularity} at Step~1 for first-shell-to-first-shell zero contribution). The icosahedral-sum identity (Step~3) is a derived consequence of G2 + Theorem~\ref{thm:host-first-shell-projection}, not an independent input; we name it inline for proof clarity but do not register it as a separate lemma.
+
+\subsection{Layer-distinction status of Theorem 7.1}
+\label{sec:layer-distinction-status}
+
+The umbrella theorem's Layer-rigor status is the following:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Theorem~\ref{thm:substrate-locality} is at sketch-document Layer~3} at the present paper's scope. Its parenthetical label reads ``sketch-document Layer~3'' (not ``publication-grade Layer~3'' or ``publication-grade Layer~3, conditional on G1'') because the umbrella theorem has not been independently hardened to publication-grade rigor in a separate `.tex` artifact. The proof of \S\ref{sec:proof-from-5-6} assembles publication-grade inputs (Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}, \ref{thm:perturbation-locality}, Corollary~\ref{cor:shell-locality}) but the assembly itself is at sketch-document rigor.
+\item \textbf{Publication-grade hardening of Theorem~\ref{thm:substrate-locality}} is a candidate follow-up Patch beyond the present paper's scope. It would entail a separate `hardened\_theorems/' artifact with explicit hypothesis tracking, an isolated treatment of the icosahedral-sum identity as a publication-grade lemma, and a five-class exclusion enumeration covering Mechanism~A status, $\bigO{\delta^2}$+ deferral, 600-cell-specific structure, framework-local current construction, and vertex-aligned Reading~C.
+\item \textbf{Conditionality structure}: Theorem~\ref{thm:substrate-locality} depends on Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity} (publication-grade Layer~3, conditional on G1) and Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality} (publication-grade Layer~3, unconditional). Closing exclusion class E1 (G1 publication-grade hardening; Open Problem~\ref{op:g1-hardening}) would upgrade Theorems~5.1 + 5.2 to unconditional publication-grade Layer~3; publication-grade hardening of Theorem~7.1 itself (a candidate follow-up Patch) would upgrade the umbrella to unconditional publication-grade Layer~3 (assuming G1 is hardened in parallel or first).
+\end{itemize}
+
+The asymmetry between §5 + §6 theorems (publication-grade Layer~3, in hardened artifacts) and §7's umbrella theorem (sketch-document Layer~3, no hardened artifact) is deliberate: the trio of building-block theorems were prioritised for publication-grade hardening at Patches~0550--0552 because they are the load-bearing geometric and perturbation-theory results; the umbrella theorem is the assembly of those results into the F.1 sub-question's substantive closure, and its publication-grade hardening was deferred as a future Patch. The present paper's substantive contribution is the trio's hardening + the umbrella's assembly; full hardening of the umbrella would be a follow-up.
+
+This conditionality is the source of the F.1 sub-question's framing as ``\emph{structurally-grounded sketch-document Layer~3 closure under the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework, pending Layer~4 axiomatic derivation, $\bigO{\delta^2}$ extension, and publication-grade hardening of identity G1}'' (\S\ref{sec:position-in-cpp} and the F.1 trajectory at Patch~0549). The umbrella theorem is the structurally-grounded closure; the pending items are the Layer~4 work, the $\bigO{\delta^2}$ extension, and the G1 hardening — none of which is required for the umbrella theorem to hold at sketch-document Layer~3 at the present paper's scope.
 
 % ============================================================
 % §8 Layer 3 stack: status, scope, and exclusions

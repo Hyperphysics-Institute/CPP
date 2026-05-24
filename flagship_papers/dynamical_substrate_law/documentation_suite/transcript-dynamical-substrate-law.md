@@ -886,3 +886,46 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit (9 candidates; integration-Patch pattern crosses threshold at this Patch). **(F)** G1 publication-grade hardening Patch. **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(I)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0561 is the second integration Patch in the F.1 flagship paper assembly arc — importing publication-grade content from Patch 0550 hardened theorem `.tex` artifact into the §6 body via multi-block substitution. Theorem 6.1 + Corollary 6.2 now have full statements + proof sketches + parenthetical Layer label updates ("publication-grade Layer 3" unconditional, contrasting with §5's "conditional on G1" framing). Paper compiles cleanly to 21 pages. Approximately 60% through body-content sequence. Zero documentation drift. Integration-Patch pattern crosses §28.7 multiple-instances threshold at this Patch. Next Patch (0562) is §7 substrate-locality umbrella theorem — assembles §5 + §6 inputs into the closed-form result; not an integration Patch.
+
+---
+
+## Transaction 049 — Patch 0562 (§7 substrate-locality umbrella theorem body insertion; non-integration Patch)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=131584a` = Patch 0561 §6 perturbation-locality body).
+**Branch:** main.
+**Patch type:** Substantive content / non-integration body (seventh body-content Patch of the F.1 flagship paper assembly arc; NOT an integration Patch; executes scoping document §4.2 seventh step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0561 ship + push at commit `131584a`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§7 multi-block substitution: inner placeholder + Theorem 7.1 environment placeholder replaced with 107 lines of body content; outer comment header preserved per §17.6 (8); Theorem 7.1 parenthetical Layer label preserved unchanged at "sketch-document Layer 3"; four subsections added §7.1–§7.4 + opening paragraph; one labeled equation added: eq:substrate-locality). Paper compiles cleanly to 24 pages.
+2. APPEND — Tier 4 §51 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (6 subsections: §51.1 what this Patch does structurally + §51.2 §7 body content structure + §51.3 Layer-distinction discipline at §7 — the asymmetry deliberately preserved + §51.4 sub-structure departure from skeleton + §51.5 the `op:substrate-locality-hardening` reference that was NOT introduced + §51.6 methods catalogue Step E audit verdict).
+3. APPEND — Vignette 39 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 049 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0562 entry; Patch 0561 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Non-integration body Patch pattern at first instance at this Patch; candidate count remains at 9.
+
+**Programme state changes at Patch 0562:**
+
+1. **F.1 substrate-locality umbrella theorem in place at §7**: Theorem 7.1 now has substantive content with closed-form Equation~\eqref{eq:substrate-locality}: $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$.
+2. **Theorem 7.1 parenthetical Layer label preserved at "sketch-document Layer 3"** — deliberate asymmetry with §5 + §6 publication-grade theorems; umbrella has not been independently hardened.
+3. **Paper now compiles to 24 pages** (was 21 after Patch 0561 §6); approximately 70% through body-content sequence (§1-§7 of §1-§10); on track for 30-35 page final target.
+4. **Layer-distinction discipline operationalised at §7** at three concrete points (theorem parenthetical label preserved at sketch-document Layer 3 + §7.4 conditionality structure summary + §7.4 closing paragraph framing F.1 status as "structurally-grounded sketch-document Layer 3 closure").
+5. **5-Open-Problem skeleton design preserved**: `op:substrate-locality-hardening` reference dropped from §7 draft; umbrella publication-grade hardening flagged as candidate follow-up Patch beyond paper scope (not formal Open Problem in §9).
+6. **Sub-structure departure from skeleton documented**: Patch 0554 skeleton anticipated 5 subsections; Patch 0561 forward queue updated to 4 subsections; §7 body follows updated outline.
+7. **Zero documentation drift** inherited or introduced.
+8. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+9–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0562:**
+
+- **(A) Patch 0563 = §8 Layer 3 stack body** per scoping document §4.2 eighth step. Not an integration Patch; collates Layer-rigor distinctions across §3-§7 into a single explicit table. Anticipated sub-structure: §8.1 Layer 3 stack overview (umbrella + trio architecture) + §8.2 Layer hierarchy explicit table + §8.3 Implications for Layer 4 trajectory. Target: 2-3 pages.
+- **(B) Patches 0564-0567 — remaining body section assembly**: §9 open questions at Patch 0564 (5 OPEN-FP-F1-1 through OPEN-FP-F1-5 statements); §10 conclusion at Patch 0565; bibliography at Patch 0566; final polish at Patch 0567.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(D) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.**
+- **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch. **(G)** Substrate-locality umbrella (Theorem 7.1) publication-grade hardening Patch (NEW — candidate follow-up Patch flagged at §7.4; not a formal Open Problem). **(H)** F.2/F.3 trajectory openings. **(I)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(J)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0562 inserts the §7 substrate-locality umbrella theorem body — the substantive closure of the F.1 sub-question at sketch-document Layer 3. Theorem 7.1 reduces $\jDInet(\vhost)$ at first order in $\delta$ to the closed-form $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$ — depending only on first-shell content. Paper compiles cleanly to 24 pages. Approximately 70% through body-content sequence. Zero documentation drift. The Layer label asymmetry (§5+§6 publication-grade + §7 sketch-document) is deliberately preserved. The 5-Open-Problem skeleton design is preserved (umbrella hardening flagged as follow-up Patch, not OPEN-FP-F1-6). Next Patch (0563) is §8 Layer 3 stack body — collates Layer-rigor distinctions into a single explicit table.
