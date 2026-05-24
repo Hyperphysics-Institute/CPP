@@ -1054,3 +1054,44 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch (OPEN-FP-F1-3). **(G)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(H)** F.2/F.3 trajectory openings. **(I)** Layer 4 axiomatic derivation trajectory (OPEN-FP-F1-2). **(J)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0565 inserts the §10 conclusion body — the final body-section Patch of the F.1 flagship paper assembly arc. Substantive closure result restated; two-part contribution decomposition preserved; F.1 closure tied to CPP chirality-from-polytope-geometry long-term programme target. Paper compiles cleanly to 30 pages. All body sections §1-§10 now in place. Zero documentation drift. The 10-Patch body-content assembly arc spans Patches 0556-0565 with consistent discipline (multi-block substitution where appropriate; Layer labels updated where required, preserved where required; 5-Open-Problem commitment end-to-end; anti-erasure discipline sustained). Next Patch (0566) is bibliography population — not body content.
+
+---
+
+## Transaction 053 — Patch 0566 (Bibliography body insertion; 13 corpus-reference \bibitem entries)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=df6c042` = Patch 0565 §10 conclusion body).
+**Branch:** main.
+**Patch type:** Substantive content / single-block substitution (bibliography population; not body content).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0565 ship + push at commit `df6c042`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (bibliography placeholder substituted with 82 lines of LaTeX bibliography content: 13 `\bibitem{}` entries + opening note comment; outer scaffolding preserved). Paper compiles cleanly to 31 pages; empty-bibliography warning eliminated.
+2. APPEND — Tier 4 §55 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (5 subsections: §55.1 what this Patch does structurally + §55.2 bibliography design decision: bibitem vs cite-based BibTeX + §55.3 bibliography content structure 13 entries + §55.4 Patch 0567 candidate work for bibliography style refinement + §55.5 methods catalogue Step E audit verdict).
+3. APPEND — Vignette 43 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 053 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0566 entry; Patch 0565 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Bibliography-population Patch pattern at first instance. Candidate count remains at 9.
+
+**Programme state changes at Patch 0566:**
+
+1. **Bibliography body in place**: 13 corpus-reference `\bibitem{}` entries; empty-bibliography compile warning eliminated.
+2. **Paper now compiles to 31 pages** (was 30 after Patch 0565 §10 conclusion); within 30-35 page final target.
+3. **Bibliography style decision**: Option B (explicit `\bibitem{}` entries with body unchanged) chosen; `\cite{}` integration registered as Patch 0567 candidate refinement.
+4. **Three Patch 0567 candidate refinements registered** (Tier 4 §55.4): `\cite{}` integration; BibTeX file integration (uncomment `\bibliography{...}`); bibliography expansion (additional external references).
+5. **Layer-rigor labels preserved at bibliography entry level**: hardened trio entries note publication-grade Layer 3; Patch 0541 G1 entry notes sketch-document Layer 3; Patch 0544 Mechanism A entry similarly.
+6. **Zero documentation drift** inherited or introduced.
+7. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+8–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0566:**
+
+- **(A) Patch 0567 = final polish** — typos + cross-reference verification + format consistency + abstract finalisation + author/affiliation block. Plus the three bibliography style refinement candidates from Tier 4 §55.4 (decision required at Patch 0567): (1) `\cite{}` integration; (2) BibTeX file integration; (3) bibliography expansion. Target: 1-2 Patches depending on bibliography style decision.
+- **(B) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(C) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.**
+- **(D)** Methods catalogue audit (9 candidates). **(E)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable). **(F)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(I)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0566 populates the empty `\thebibliography{99}` environment with 13 corpus-reference `\bibitem{}` entries — 9 CPP corpus + 1 external + 3 supporting (operating-system template + book project + Coxeter polytopes book). Body unchanged; inline parenthetical references throughout §1-§10 remain the in-text citation style; the bibliography serves as a formal references list. Three Patch 0567 candidate refinements registered for deliberation (`\cite{}` integration; BibTeX file integration; bibliography expansion). Paper compiles cleanly to 31 pages within 30-35 page final target. Zero documentation drift. Next Patch (0567) is final polish.

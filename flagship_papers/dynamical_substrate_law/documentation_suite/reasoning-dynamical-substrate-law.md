@@ -3337,3 +3337,64 @@ The 10-Patch assembly arc (Patches 0556-0565) executes the F.1 flagship paper as
 5. **Anti-erasure discipline** named explicitly at §8.3 closing paragraph (Patch 0563); operationalised silently across §3-§7; sustained at §8 (table form) and §9 (cross-reference resolution) and §10 (conclusion-level Layer asymmetry preservation).
 
 6. **Bug caught + fixed** at Patch 0561 ($G_{600}$ vs `set -u` collision in commit message); anti-regression check added to subsequent Patches; passed at Patches 0562, 0563, 0564, 0565.
+
+---
+
+## §55 Patch 0566 — Bibliography body insertion (13 corpus-reference \bibitem entries)
+
+**Context.** Patch 0565 completed the body-content assembly arc with §10 conclusion. Patch 0566 populates the `\thebibliography{99}` environment with corpus-reference `\bibitem{}` entries. Authorised via Thomas's "Please proceed" directive following Patch 0565 ship + push at commit `df6c042`.
+
+### §55.1 What this Patch does, structurally
+
+Substitutes the empty-bibliography placeholder `% [Bibliography entries to be added at Patch 0565.]` (1 line) with 82 lines of LaTeX bibliography content: 13 `\bibitem{}` entries + opening note comment + descriptive text per entry. Outer scaffolding preserved per §17.6 (8) precedent.
+
+The substitution is structurally simple (single-block substitution; no theorem environment; no anticipated sub-structure). The empty-bibliography warning from previous Patches' compile logs is now eliminated. Paper grows from 30 → 31 pages (bibliography contributes 1 PDF page).
+
+### §55.2 Bibliography design decision: \bibitem vs \cite-based BibTeX
+
+The skeleton's bibliography area provides two structural alternatives via comment hints: (a) commented `\bibliography{../../bibliography/cpp_references}` with skeleton comment "% uncomment at Patch 0565" suggesting BibTeX integration; (b) `\thebibliography{99}` environment with `% [Bibliography entries to be added at Patch 0565.]` placeholder suggesting explicit `\bibitem{}` entries.
+
+A consequential editorial decision at this Patch: **the paper body (§1-§10) has NO `\cite{}` commands**. All corpus references throughout the body are inline parenthetical text (e.g., "Capotauro v2.0", "Patch 0541 §3.1", "Patches 0550-0552"). Switching to BibTeX integration would require adding `\cite{}` commands to body content alongside or replacing the existing inline references — substantive modifications to §1-§10.
+
+Three options considered:
+- **Option A**: Uncomment `\bibliography{...}`, add `\cite{}` commands to body, delete `\thebibliography{99}` environment — full BibTeX integration; requires modifying §1-§10.
+- **Option B**: Populate `\bibitem{}` entries in `\thebibliography{99}` for corpus references mentioned inline; body unchanged; bibliography serves as formal references list without `\cite{}` cross-references.
+- **Option C**: Hybrid — keep inline references AND add `\cite{}` commands alongside them; body modified but redundantly.
+
+**Option B chosen** at this Patch as the least invasive path that preserves the body content unchanged. The bibliography serves as a numbered references list; the inline parenthetical references in the body serve as informal in-text citations. The opening note comment at the bibliography flags Patch 0567 (final polish) as the candidate Patch for `\cite{}` style integration if the editor / reviewer prefers conventional citation style.
+
+### §55.3 Bibliography content structure (13 entries)
+
+The 13 `\bibitem{}` entries cover corpus references mentioned inline in §1-§10 of the paper:
+
+1. **`chirality-continuum-v2`** (Capotauro v2.0) — the CPP chirality continuum paper that registers the spatial-sector manifestations (i)-(iii) and frames the chirality continuum architecture; uses BibTeX key from corpus `.bib` file (Patch 0509 v1.0 shipped 20 May 2026).
+2. **`patch-0419-reading-c`** — Reading C variants registration (Finding C-W37).
+3. **`patch-0528-programme-target`** — CPP chirality-from-polytope-geometry long-term programme target §14.17.
+4. **`patch-0539-programme-target`** — Chirality-from-polytope-geometry programme structure update §15.5.
+5. **`patch-0541-primitives`** — Foundational geometric primitives including G1 derivation at sketch-document Layer 3.
+6. **`patch-0544-mechanism-a`** — Mechanism A formalisation at sketch-document Layer 3.
+7. **`patch-0549-status-framing`** — F.1 sub-question status framing source (the "structurally-grounded sketch-document Layer 3 closure" framing quoted verbatim at §1.2, §7.4, §8.3, §10).
+8. **`patch-0550-perturbation-locality`** — Perturbation-theory propagation rule hardened theorem (publication-grade Layer 3); source artifact noted: `hardened_theorems/perturbation_locality_propagation.tex`.
+9. **`patch-0551-first-shell-perpendicularity`** — First-shell-to-first-shell perpendicularity hardened theorem (publication-grade Layer 3 conditional on G1); source artifact: `hardened_theorems/first_shell_perpendicularity.tex`.
+10. **`patch-0552-host-first-shell-projection`** — Host-to-first-shell uniform projection hardened theorem (publication-grade Layer 3 conditional on G1); source artifact: `hardened_theorems/host_to_first_shell_projection.tex`.
+11. **`tatwd-book`** — Tetrahedrons All the Way Down book project; Chapter 3 provides full CPP primitive axioms A1-A11.
+12. **`coxeter-regular-polytopes`** — Coxeter (1973) "Regular Polytopes", Dover Publications, 3rd edition; standard reference for the 600-cell, $H_4$ symmetry, and $H_3 = I_h$ residual symmetry.
+13. **`cpp-operating-system`** — `templates/operating_system.md`: the authoritative source for CPP primitive axioms A1-A11 (recap in §3.1) and Layer-distinction discipline.
+
+Coverage: 9 CPP corpus references (Patches + Capotauro v2.0 + operating-system template + book project) + 1 standard external reference (Coxeter polytopes book). The corpus references are working-paper records identified by Patch numbers; the external reference is a standard mathematics text. The hardened-theorem trio (Patches 0550-0552) entries explicitly note the source `.tex` artifact paths.
+
+### §55.4 Patch 0567 candidate work for bibliography style refinement
+
+Three candidate refinements registered for Patch 0567 (final polish) consideration:
+
+1. **`\cite{}` integration**: add `\cite{<key>}` commands to body content where inline references occur, optionally replacing some or all inline parenthetical text with `\cite{}` references. Would standardize citation style at conventional flagship-paper level.
+
+2. **BibTeX file integration**: uncomment `\bibliography{../../bibliography/cpp_references}` and remove `\thebibliography{99}` environment in favor of corpus-wide BibTeX. Requires `\cite{}` integration as prerequisite (otherwise `bibtex` would produce empty bibliography). Would integrate the paper into the corpus-wide reference management.
+
+3. **Bibliography expansion**: additional external references for context (e.g., golden ratio identities; icosahedral group theory; perturbation theory in discrete geometric structures). The current 13 entries cover corpus material + one external; flagship paper review may prefer more external context.
+
+The current Patch (0566) commits to Option B (explicit `\bibitem{}` entries in `\thebibliography{99}`; body unchanged) and registers the three refinement candidates for Patch 0567 deliberation.
+
+### §55.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The bibliography-population Patch pattern (populating empty bibliography environment with corpus-reference `\bibitem{}` entries while preserving body inline-reference style) is at first instance at this Patch. If a similar pattern appears at downstream flagship papers, it becomes a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.

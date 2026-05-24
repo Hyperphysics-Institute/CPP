@@ -1011,3 +1011,25 @@ Methods catalogue Step E audit per §29.4: no new METH entry. The conclusion-Pat
 Patch 0565 introduces no new deferred items. Patch 0566+ starts with clean state.
 
 Forward queue post-Patch 0565: Patch 0566 = bibliography body. Populates the `\thebibliography{99}` environment with citations to corpus references (Capotauro v2.0, Patch 0541 G1 derivation, Patches 0550-0552 hardened theorems, Patch 0528 + Patch 0539 long-term programme target references, etc.). Target: variable (depends on citation count); not a content-page Patch but a reference-population Patch. The `\bibliography{...}` line currently commented in the skeleton may be uncommented at this Patch to use the BibTeX file directly, or the explicit `\bibitem{...}` entries can be populated inline.
+
+---
+
+## Vignette 43 — Patch 0566: Bibliography body insertion (13 corpus-reference \bibitem entries)
+
+Patch 0566 populates the `\thebibliography{99}` environment with 13 corpus-reference `\bibitem{}` entries. The substitution is structurally simple (single-block; 1 line placeholder → 82 lines body content); paper grows from 30 → 31 pages. The empty-bibliography compile warning from previous Patches is now eliminated.
+
+The most consequential editorial decision at this Patch is **bibliography style: explicit `\bibitem{}` entries vs `\cite{}`-based BibTeX integration**. The paper body (§1-§10) has NO `\cite{}` commands — all corpus references are inline parenthetical text. The skeleton's bibliography area provides structural support for both alternatives (commented `\bibliography{...}` line for BibTeX; populated `\thebibliography{99}` environment for explicit entries). Option B (explicit `\bibitem{}` entries, body unchanged) chosen as the least invasive path; switching to `\cite{}` style is a candidate Patch 0567 (final polish) decision flagged in opening note comment.
+
+The 13 `\bibitem{}` entries are corpus-weighted: 9 CPP corpus references (Patches 0419, 0509 Capotauro v2.0, 0528, 0539, 0541, 0544, 0549, 0550-0552, plus the operating-system template + the Tetrahedrons book project) + 1 standard external reference (Coxeter polytopes book). The hardened-theorem trio (Patches 0550-0552) entries explicitly note the source `.tex` artifact paths in `hardened_theorems/`. The Patch 0549 entry references the "structurally-grounded sketch-document Layer 3 closure" framing — the source for the F.1 sub-question's verbatim status preserved at §1.2, §7.4, §8.3, §10.
+
+The 13-entry bibliography is on the lighter side of flagship-paper standards but is appropriate for the F.1 paper's nature as the second sector closure of the CPP chirality continuum programme: most references are working-paper records identified by Patch numbers, reflecting the active programme development context. A broader external reference set (golden ratio identities, icosahedral group theory, perturbation theory in discrete geometric structures) is registered as a candidate Patch 0567 refinement.
+
+The bibliography opening note comment makes the design choice and Patch 0567 candidate options explicit, providing transparency for the editor / reviewer about the citation style. Three candidate refinements at Patch 0567 (Tier 4 §55.4): `\cite{}` integration (adds citation commands to body text); BibTeX file integration (uncomments `\bibliography{...}` line); bibliography expansion (additional external references for context).
+
+Layer-distinction discipline at Patch 0566 is operational at the bibliography meta-level: the hardened-theorem trio entries (Patches 0550-0552) explicitly note their publication-grade Layer 3 status; the Patch 0541 G1 entry explicitly notes its sketch-document Layer 3 status; the Patch 0544 Mechanism A entry similarly. The Layer-rigor distinctions established throughout the body are preserved at the bibliography entry level.
+
+Methods catalogue Step E audit per §29.4: no new METH entry. The bibliography-population Patch pattern is at first instance.
+
+Patch 0566 introduces no new deferred items. Patch 0567 starts with clean state plus the three bibliography style refinement candidates registered for deliberation.
+
+Forward queue post-Patch 0566: Patch 0567 = final polish. Anticipated tasks per scoping doc + standard flagship paper completion: typos + cross-reference verification + format consistency + abstract finalisation + author/affiliation block. Plus the three bibliography style refinement candidates from Tier 4 §55.4 (decision required at Patch 0567): (1) `\cite{}` integration; (2) BibTeX file integration; (3) bibliography expansion. Target: 1-2 Patches depending on bibliography style decision.
