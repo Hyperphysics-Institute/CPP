@@ -4108,3 +4108,71 @@ Programme-direction decision remains with Thomas.
 **Methods catalogue Step E audit per §29.4**: no new METH entry. Light-touch archival Patch pattern at second instance (first was Patch 0569c); pattern is now corpus-established. Methods catalogue audit Patch candidate count remains at 9.
 
 **Paper status post-Patch 0569d**: v1.0-SHIP-ready under multi-round cross-reviewer convergent verdict (Round 1 SHIP-acceptable across Copilot+Grok+ChatGPT-Round-2-onward + Round 3+4+5 verdict-stabilisation reinforcement). The reviewer-engagement cycle has converged. Forward queue: Patch 0570 v1.0 SHIP under Variant (b) recommended; Variant (a) G1-hardening-first option remains available.
+
+---
+
+## §63 Patch 0569e — v0.9 v5 → v1.0 SHIP-cycle ChatGPT Round 6 archival + diagnostic resolution + two new post-SHIP follow-up items (no content edits)
+
+**Context.** Patch 0569d archived ChatGPT Round 5 documenting the recurring R3+R4+R5 reviewer-driven-recommendations pattern (all four identical recommendations already implemented at Patch 0569b) and recommended escalated diagnostic-question resolution via upload-format check. Thomas observed at this juncture that he had been uploading the `.tex` source (not the rendered PDF) to ChatGPT across Rounds 3-5. Fresh PDF compiled from current HEAD (commit `48ba487` = Patch 0569b) and uploaded to ChatGPT. ChatGPT delivered Round 6 review with **substantively new content** confirming the Patch 0569c §61.3 candidate hypothesis (a) "TikZ-rendering processing artifact" as correct. Patch 0569e archives Round 6 + documents diagnostic resolution + registers two new post-SHIP follow-up items. **No content edits to `dynamical_substrate_law.tex`**; paper unchanged at 33 pages. Authorised via Thomas's "Please proceed" directive following Patch 0569d ship + push at commit `f76514c`.
+
+### §63.1 What this Patch does, structurally
+
+Light-touch archival Patch (third instance of pattern after Patches 0569c + 0569d). Brief Tier 4 §63 with diagnostic-resolution documentation + two new post-SHIP follow-up items + Vignette 51 + Transaction 061. **No content changes to `dynamical_substrate_law.tex`**.
+
+**Files modified (5 file deltas)**:
+1. CREATE — `reviews/chatgpt_v0.9v5_session_142_round6.md` (verbatim Round 6 letter + diagnostic-resolution metadata header)
+2. APPEND — Tier 4 §63 to reasoning doc (5 subsections)
+3. APPEND — Vignette 51 to development doc
+4. APPEND — Transaction 061 to transcript doc
+5. PREPEND — research_frontier.md Last-updated header (Patch 0569e)
+
+### §63.2 Diagnostic resolution: TikZ-rendering processing artifact confirmed
+
+**The Patch 0569c §61.3 candidate hypothesis (a) is confirmed at Round 6**. The recurring R3+R4+R5 pattern was caused by `.tex` source uploads where TikZ figure code does not render as a visualized figure. Round 6 received the freshly-compiled PDF and ChatGPT now explicitly acknowledges all four previously-recurring recommendations as implemented:
+
+- **Rec A (Scenario A closure softening)**: implicitly accepted via R6's "Strongest conceptual success" section: "The manuscript now correctly reframes the F.1 result as: substrate-locality closure under a constrained framework, NOT: derivation of the thermodynamic arrow itself. That distinction stabilizes the entire paper."
+- **Rec B (explicit negative statement)**: explicitly quoted verbatim and praised: "This sentence was absolutely necessary: 'The present paper does not derive entropy production, coarse-graining, or macroscopic irreversibility...' That single addition removes the largest epistemic vulnerability in earlier drafts."
+- **Rec C (dependency-graph figure)**: explicitly praised: "Figure 1 is especially important. The 'supported by, not derived from' dashed-arrow structure is exactly the right move. This solves a longstanding interpretive ambiguity."
+- **Rec D (math/interpretation separation)**: no longer flagged in remaining-weaknesses or recommended-next-actions list.
+
+**Going-forward protocol established**: ChatGPT reviewer engagement defaults to PDF upload, not `.tex` source upload, especially for papers containing TikZ figures, bibliography environments, or LaTeX content requiring compilation to render. This is now a corpus-level operating-protocol clarification (extends the Patch 0518 reviewer-submission protocol established in `relationship_protocol.md`).
+
+### §63.3 Round 6 verdict: strongest-positive in the F.1 paper's reviewer-engagement history
+
+R6 final verdict: "**v5 is substantially more credible, rigorous, and publishable than all earlier versions**"; "first version that feels: architecturally stable, epistemically disciplined, mathematically centered, structurally self-aware."
+
+Verdict trajectory across R1 → R6:
+- R1 (Patch 0568): "NOT yet publication-grade flagship overall"
+- R2 (Patch 0569a): "substantially improved; reviewer-ready as disciplined pre-v1.0 framework paper"
+- R3 (Patch 0569b): verdict matrix YES for "reviewer-ready as flagship framework preprint"
+- R4 (Patch 0569c): "genuinely stable in identity; credible flagship framework theorem paper"
+- R5 (Patch 0569d): "first version that feels intellectually stable enough to support a long-term foundational programme"
+- **R6 (this Patch)**: "substantially more credible, rigorous, and publishable than all earlier versions"
+
+Cross-reviewer cumulative Round 1+2+3+4+5+6 position: **v1.0 SHIP-acceptable across all reviewers with strongest-positive ChatGPT verdict at Round 6**. The reviewer-engagement cycle is **definitively closed**.
+
+### §63.4 Two new R6 post-SHIP follow-up items registered
+
+**Round 6 introduces two genuinely new substantive items** (not present in Rounds 1-5) that are documented as **post-SHIP follow-up Patches**, not v1.0 SHIP blockers:
+
+**New follow-up item (1): prose-density tightening** (Patch 0571 or later candidate). R6 observation: "Some prose remains overly dense. The manuscript occasionally over-repeats framework qualifiers, Layer qualifiers, anti-erasure phrasing. … But there are sections where the prose becomes recursively self-referential. Example: repeated 'conditional on publication-grade Layer 3 under framework X' phrases. … The paper sometimes spends more words defending scope than advancing derivation." This is the cumulative cost of the Patches 0569a + 0569b qualifier-extension discipline. A post-SHIP prose-density tightening Patch could compress repetitive framework-qualifier phrasings without losing rigor. Open Problem registration: OPEN-FP-F1-6 (prose-density tightening) for post-SHIP v1.1+ trajectory.
+
+**New follow-up item (2): condensed "core theorem" companion paper** (Patch 0571+ candidate). R6 strategic suggestion: "Produce a shorter 'core theorem' version. A condensed paper focused on: Theorem 6.4, Corollary 6.5, Theorem 7.1, minimal CPP interpretation, might actually be more publishable than the full manifesto-scale framing. … A shorter geometry/locality paper could travel further academically." This is a separate F-line companion paper (F.1-condensed?) alongside the F.1 flagship, focused on the publication-anchor perturbation-locality theorem + corollary + umbrella, with minimal CPP interpretation. Companion paper registration: F.1-condensed companion as candidate for v2.0+ trajectory parallel to the F.1 flagship. Note: this is **not** a replacement for the F.1 flagship — it is a companion publication-strategic artifact. F.1 flagship retains its programme-defining role; F.1-condensed serves the journal-submission trajectory.
+
+### §63.5 Calibration discipline + methods catalogue Step E audit + paper status
+
+**Calibration discipline sustained**: zero `.tex` changes; zero theorem/proof/OP/hardened-theorem modifications. Paper byte-identical to Patches 0569c + 0569d state.
+
+**Methods catalogue Step E audit per §29.4**: no new METH entry. Light-touch archival Patch pattern at third instance after Patches 0569c + 0569d. Pattern is now corpus-established as a standard reviewer-engagement archival mode. Methods catalogue audit Patch candidate count remains at 9.
+
+**Paper status post-Patch 0569e**:
+- v1.0-SHIP-ready under unambiguous strongest-positive ChatGPT verdict at Round 6 + multi-round cross-reviewer convergent SHIP-acceptable verdict
+- Reviewer-engagement cycle definitively closed
+- Author email at drthomas@protonmail.com (Patch 0569a)
+- Paper at 33 pages with cumulative Patches 0569 + 0569a + 0569b content
+- Two new post-SHIP follow-up items registered (OPEN-FP-F1-6 prose-density + F.1-condensed companion)
+
+Forward queue:
+- **Patch 0570 = v1.0 SHIP under Variant (b)** RECOMMENDED with explicit scope-framing `\date{}` line per multi-round cross-reviewer convergent verdict
+- Post-SHIP: Patch 0571 = G1 publication-grade hardening (OPEN-FP-F1-3) as v2.0+ first step
+- Post-SHIP candidates: OPEN-FP-F1-6 (prose-density tightening) + F.1-condensed companion paper
