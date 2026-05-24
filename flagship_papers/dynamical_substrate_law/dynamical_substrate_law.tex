@@ -222,11 +222,82 @@ The conditionality structure --- ``closure under framework X, pending Layer~4 ax
 $\hat{n} \mapsto \omegaPCD$}
 \label{sec:subquestion}
 
-% [Body content to be added at Patch 0556. Sub-structure anticipated:
-%   §2.1 Manifestation (iv) of OPEN-SD-CHIR-PRIMITIVE
-%   §2.2 Three closure scenarios (A positive / B negative / C partial)
-%   §2.3 Scenario A: Mechanism A propagation-rate asymmetry
-%   §2.4 The minimal-local-first-order realization framework]
+% [Body added at Patch 0557 per scoping doc §4.2 second step.
+%  Primary sources: F1_subquestion_pcd_orientation_link.md §1-§2 + §6
+%  (with framing for outer audience).]
+
+\subsection{Manifestation (iv) of OPEN-SD-CHIR-PRIMITIVE}
+\label{sec:manifestation-iv}
+
+The substrate-direction primitive $\hat{n}$ is established at Layer 3 rigor via the Capotauro v2.0 Reading C trajectory: under vertex-aligned $\hat{n} = \vhost / |\vhost|$, the substrate's $H_4$ symmetry breaks to $H_3 = I_h$ residual symmetry at the host vertex, with the substrate primitive's magnitude $|\chi| = \phig^{-3}$ derived from the 600-cell's perturbative-distance-ratio constraint (Capotauro v2.0 \S2 + Patch 0419 Finding C-W37; Patch 0424 Finding C-W39). The substrate primitive's content includes a specific 4D direction in the substrate's ambient $\mathbb{R}^4$, aligned with one of the 120 vertex directions of the 600-cell; a magnitude $|\chi| = \phig^{-3} \approx 0.236$ controlling the substrate's edge-length perturbation $\varepsilon$; and a residual symmetry structure $H_3 = I_h$ at the host vertex, with the K3-doublet's $D_{3d}$ stabilizer, the W-bracelet's Petrie-polygon $D_6$, and the qDP/eDP sector's $D_{5d}$ all sitting as sub-stabilizers of $H_3$.
+
+What is \emph{not} established at the framework's current state is the relationship between $\hat{n}$ (a spatial directional primitive in the substrate's ambient 4D space) and $\omegaPCD$ (the PCD-cycle-orientation pseudovector --- the temporal-direction pseudovector representing which way the Polarize $\to$ Capture $\to$ Depolarize cycle progresses at each CP at each Absolute Moment). The F.1 sub-question asks whether, under the CPP primitive axioms A1--A11 plus Reading~C ($\hat{n}$ as substrate primitive), the constraint
+\begin{equation}
+\omegaPCD(\vhost) = \sigma \cdot \hat{n}, \qquad \sigma \in \{+1, -1\}
+\label{eq:link-constraint}
+\end{equation}
+(PCD-cycle-orientation pseudovector at the host vertex aligned with the substrate primitive direction, with sign $\sigma$ a global convention) is \emph{derived} from a substrate-mechanism, or is registered as an \emph{independent primitive} parallel to $\hat{n}$. The status of this link determines whether the chirality continuum's manifestation (iv) (thermodynamic causal arrow) and manifestation (v) (cosmological-vacuum asymmetry) proceed via the qDP/eDP precedent template (Capotauro v2.0 \S20) or require alternative architecture (\S\ref{sec:position-in-cpp} of the present paper).
+
+\subsection{Three closure scenarios}
+\label{sec:three-scenarios}
+
+A scan of the closure space at scoping identified three structurally distinct scenarios for the link $\hat{n} \mapsto \omegaPCD$:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Scenario A (positive closure)}: The link is derived via substrate-mechanism. Equation~\eqref{eq:link-constraint} holds with $\sigma$ fixed by a global sign convention; the alignment is derived from the mechanism rather than posited as a separate primitive. A specific substrate-mechanism (e.g., Mechanism~A below) supplies the derivation, with coupling to the PCD cycle's Polarize $\to$ Capture $\to$ Depolarize sequence and a locality argument extending the derivation from the host vertex to spatially-displaced vertices.
+\item \textbf{Scenario B (negative closure)}: $\omegaPCD$ is an independent primitive, not derivable from substrate-mechanism. The chirality continuum umbrella refines from a two-way (spatial + temporal) structure to a three-way (spatial-direction primitive, temporal-direction primitive, and their alignment as a separate convention) structure. The F.2 and F.3 trajectories require alternative architecture not based on the qDP/eDP precedent.
+\item \textbf{Scenario C (partial closure)}: Partial derivation; requires additional framework input beyond the existing CPP axiom set A1--A11. The specific form of partial closure is not pre-specified at scoping; it would emerge from the derivation attempt itself.
+\end{itemize}
+
+The present paper establishes \textbf{Scenario A} closure under the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework at \emph{sketch-document Layer 3} rigor (per the \S\ref{sec:trajectory-recap} status framing). Scenarios B and C are not ruled out at Layer 4 axiomatization tier; Mechanism A is taken as a framework axiom at the present paper's scope, and the question whether Mechanism A can be derived from A1--A11 alone is registered as Open Problem~\ref{op:layer4-mechanism-a}.
+
+\subsection{Scenario A: Mechanism A propagation-rate asymmetry}
+\label{sec:scenario-a-mechanism-a}
+
+The leading candidate mechanism for Scenario~A closure is \textbf{Mechanism~A}: the DI-bit propagation-rate asymmetry under the substrate primitive $\hat{n}$.
+
+\subsubsection*{The primitive}
+
+Mechanism~A posits that under the substrate primitive $\hat{n}$, the DI-bit (Dimensional Increment bit, per CPP axiom A1: the discrete unit of information propagation between CPs) acquires a small direction-correlated propagation-rate asymmetry. The rate of DI-bit propagation along unit-direction $\hat{e}$ is
+\begin{equation}
+r(\hat{e}) = r_0 \left(1 + \delta \, \hat{e} \cdot \hat{n}\right),
+\label{eq:mechanism-a-formal}
+\end{equation}
+where $r_0$ is the $H_4$-idealized substrate rate (the rate in the absence of the substrate primitive), and $\delta$ is the perturbation parameter ($|\delta| \ll 1$). DI-bits propagating along $\hat{e} = +\hat{n}$ acquire rate $r_0(1 + \delta)$; along $\hat{e} = -\hat{n}$, rate $r_0(1 - \delta)$; along any tangent direction ($\hat{e} \cdot \hat{n} = 0$), the idealized rate $r_0$. The first-order linear dependence in $\hat{e} \cdot \hat{n}$ is the defining feature; higher-order corrections at $\bigO{\delta^2}$ are the subject of Open Problem~\ref{op:delta-squared}.
+
+\subsubsection*{Coupling to PCD cycle}
+
+The Polarize $\to$ Capture $\to$ Depolarize cycle at each CP is the elementary discrete-time temporal process per CPP axiom A6$^{\prime}$. The cycle's three phases progress at rates determined by DI-bit propagation: the Polarize phase establishes a charge-separation excitation; the Capture phase exchanges DI-bits with neighbouring CPs; the Depolarize phase relaxes back to the neutral state.
+
+Mechanism~A's coupling to the PCD cycle operates at the Capture phase. Under~\eqref{eq:mechanism-a-formal}, DI-bits captured from the $+\hat{n}$ side of the host CP arrive faster than those from the $-\hat{n}$ side. The asymmetric DI-bit arrival induces a definite preference for one cycle progression direction over the other: the "forward" direction (Polarize $\to$ Capture $\to$ Depolarize) is the one in which the asymmetric DI-bit flow is consistent with energy minimization. The cycle-orientation pseudovector $\omegaPCD$ at the host vertex thereby acquires a definite alignment with $\hat{n}$, satisfying~\eqref{eq:link-constraint}.
+
+\subsubsection*{Sign convention}
+
+The global sign $\sigma \in \{+1, -1\}$ in equation~\eqref{eq:link-constraint} --- whether $\omegaPCD$ aligns with $+\hat{n}$ or $-\hat{n}$ --- is a convention fixed at the framework level. The two sign choices correspond to time-reversal-symmetric framings of the same physics and are not distinguishable at Layer~3 rigor. The convention is consequential only when combined with the F.2 trajectory's substrate-Wigner-Eckart datum construction (Capotauro v2.0 \S20), where the sign couples to the thermodynamic-causal-arrow direction via the cage-shell factor $1/6$.
+
+\subsubsection*{Structural connection to Reading~C edge-length perturbation}
+
+Mechanism~A is the leading candidate by structural analogy to the Reading~C edge-length perturbation (Capotauro v2.0 \S2.3). Reading~C posits that under the substrate primitive $\hat{n}$, edges of the 600-cell substrate acquire effective lengths
+\begin{equation}
+\ell(\hat{e}) = \ell_0 \left(1 + \varepsilon \, \hat{e} \cdot \hat{n}\right),
+\label{eq:edge-length-perturbation}
+\end{equation}
+where $\ell_0$ is the $H_4$-idealized edge length and $\varepsilon$ is the edge-length perturbation parameter. Equations~\eqref{eq:mechanism-a-formal} and~\eqref{eq:edge-length-perturbation} share the same first-order linear structure: a substrate quantity (rate, length) acquires a direction-correlated perturbation linear in $\hat{e} \cdot \hat{n}$ with a single small parameter ($\delta$ or $\varepsilon$). The structural parallel motivates the choice of Mechanism~A as the leading candidate over the alternative mechanisms B (substrate-orientation field with gauge-like coupling) and C (position-dependent clock-skew), both of which would introduce additional structure beyond the Reading~C perturbation pattern. Whether $\delta$ and $\varepsilon$ are independent parameters or are related at Layer~4 axiomatization is an open question not addressed in the present paper.
+
+\subsection{The minimal-local-first-order realization framework}
+\label{sec:minimal-local-first-order}
+
+Scenario A closure under Mechanism~A is established at the \emph{minimal-local-first-order realization framework}, with three operational restrictions:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{First-order}: All substrate quantities are expanded in powers of $\delta$ and retained at order $\bigO{\delta^1}$. Higher-order corrections at $\bigO{\delta^2}$ are deferred to Open Problem~\ref{op:delta-squared} (also catalogued as \texttt{OPEN-SS-B1q6} per the Patch 0540 Layer 3 promotion scoping document).
+\item \textbf{Local}: Substrate quantities are evaluated at the lattice vertices and edges of the 600-cell substrate. The first shell of any host vertex $\vhost$ comprises the 12 neighbouring vertices connected by the 12 short edges of length $1/\phig$ (Capotauro v2.0 \S2 + Theorem~\ref{thm:host-first-shell-projection} hardened first-shell geometry). \emph{Substrate-locality at first order} is the property that substrate quantities at $\vhost$ depend only on first-shell content at $\bigO{\delta^1}$ --- the central result of \S\ref{sec:substrate-locality-theorem}.
+\item \textbf{Realization}: The framework is operationally realized at \emph{vertex-aligned Reading~C}: the substrate primitive $\hat{n}$ is aligned with the host vertex's unit vector, $\hat{n} = \vhost / |\vhost|$, selecting one of the 120 vertex directions of the 600-cell polytope (Capotauro v2.0 \S2.3; Patch 0419 Finding C-W37 vertex-aligned resolution). Non-vertex-aligned Reading~C variants (e.g., edge-aligned, face-aligned) are flagged as Open Problem~\ref{op:non-vertex-aligned-c}.
+\end{itemize}
+
+Within the minimal-local-first-order realization framework, the umbrella substrate-locality theorem (\S\ref{sec:substrate-locality-theorem}, Theorem~\ref{thm:substrate-locality}) establishes that the substrate net DI-bit current at any host vertex $\vhost$ depends only on first-shell content at $\bigO{\delta^1}$. The proof decomposes into three contributions: the host-to-first-shell uniform projection (Theorem~\ref{thm:host-first-shell-projection}, hardened at Patch~0552); the first-shell-to-first-shell perpendicularity (Theorem~\ref{thm:first-shell-perpendicularity}, hardened at Patch~0551); and the perturbation-theory propagation rule (Theorem~\ref{thm:perturbation-locality} with shell-locality Corollary~\ref{cor:shell-locality}, hardened at Patch~0550). All three input theorems are at publication-grade Layer~3; the umbrella theorem itself is at sketch-document Layer~3 (Patch~0544 \S5).
+
+The framework qualifiers --- Mechanism~A axiom, Reading~C primitive, 600-cell selection, vertex-aligned configuration, minimal-local first-order restriction --- are operationally taken as input at the present paper's scope. Layer 4 axiomatic derivation from CPP A1--A11 alone is the long-term programme target, addressed in part by Open Problems~\ref{op:layer4-mechanism-a} (Mechanism A derivation), \ref{op:g1-hardening} (G1 publication-grade hardening), and \ref{op:non-vertex-aligned-c} (non-vertex-aligned Reading C variants). The conditionality structure ``Scenario A closure under framework $X$, pending Layer 4 axiomatization of $X$'' is sustained throughout the paper per the Layer-distinction discipline of \S\ref{sec:roadmap-and-layer-discipline}.
 
 % ============================================================
 % §3 Framework primitives

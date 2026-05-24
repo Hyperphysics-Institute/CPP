@@ -2842,3 +2842,51 @@ The §1 body operationalises the Layer-distinction discipline (anti-priority #8 
 ### §45.4 Methods catalogue Step E audit verdict
 
 Per §29.4 codified discipline: this Patch executes standard paper-assembly methodology (body content substitution into prepared scaffold). No new METH entry at this Patch. The methods catalogue audit Patch (item C in Patch 0552 forward queue + extended at Patches 0555 + 0556) still has 8 substantive candidates pending evaluation: C1+C2 from Patch 0541a + §5.3 anti-bundling extension from Patch 0548 + retroactive-recognition pattern from Patch 0548a + reviewer-pause-envelope from Patch 0549 + hypothesis-tracking pattern from Patches 0550/0551/0552 + arc-scoping pattern from Patches 0540/0553 + programme-documentation-audit pattern from Patch 0555 + flip-decision-vs-explicit-preference discipline lesson from the Patch 0554/0555 timing event.
+
+---
+
+## §46 Patch 0557 — §2 sub-question body insertion (formal statement of the link $\hat{n} \mapsto \omegaPCD$ question)
+
+**Context.** Patch 0556 inserted the §1 Introduction body. Patch 0557 continues the body-content sequence per scoping document §4.2, substituting the inner placeholder at §2 (`\section{The F.1 sub-question: substrate-mechanism derivation of the link $\hat{n} \mapsto \omegaPCD$}`) with 76 lines of LaTeX body content (~1700 words, ~3 PDF pages). Authorised via Thomas's "Please proceed" directive following Patch 0556 ship + push at commit `92c8bbc`.
+
+### §46.1 What this Patch does, structurally
+
+Modifies the F.1 flagship paper's working `dynamical_substrate_law.tex` by substituting the inner placeholder comment at §2 with the formal statement of the F.1 sub-question and Scenario A closure framework. The substitution:
+- Replaces only the inner placeholder `% [Body content to be added at Patch 0556. Sub-structure anticipated: ...]` (5 lines).
+- Preserves the outer comment header (`% Body to be added at Patch 0556. Primary source: ... Approximate target: 2-3 pages.`) per §17.6 (8) immutable-content discipline — outer headers across all section placeholders are preserved consistently with the Patch 0556 §1 precedent.
+- Adds a small note comment at body start documenting source materials ("Body added at Patch 0557 per scoping doc §4.2 second step. Primary sources: F1_subquestion_pcd_orientation_link.md §1-§2 + §6 (with framing for outer audience).")
+
+The §2 body adds four subsections per the skeleton's anticipated outline:
+1. **§2.1 Manifestation (iv) of OPEN-SD-CHIR-PRIMITIVE**: substrate-direction primitive $\hat{n}$ context from Capotauro v2.0 + the formal sub-question statement via Equation~\eqref{eq:link-constraint}: $\omegaPCD(\vhost) = \sigma \cdot \hat{n}$ with $\sigma \in \{+1, -1\}$ a global sign convention. Status of this link determines whether manifestation (iv) thermodynamic causal arrow proceeds via qDP/eDP precedent template.
+2. **§2.2 Three closure scenarios**: Scenario A (positive closure — derived via substrate-mechanism), Scenario B (negative closure — independent primitive), Scenario C (partial closure — requires additional framework input). Present paper establishes Scenario A under Reading C + 600-cell + Mechanism A minimal-local-first-order framework at sketch-document Layer 3 rigor.
+3. **§2.3 Scenario A: Mechanism A propagation-rate asymmetry**: four sub-blocks — (a) the primitive (Equation~\eqref{eq:mechanism-a-formal}: $r(\hat{e}) = r_0(1 + \delta \hat{e} \cdot \hat{n})$); (b) coupling to PCD cycle (Capture phase mechanism with asymmetric DI-bit arrival); (c) sign convention (global $\sigma$ time-reversal-symmetric framings); (d) structural connection to Reading C edge-length perturbation (Equation~\eqref{eq:edge-length-perturbation}: $\ell(\hat{e}) = \ell_0(1 + \varepsilon \hat{e} \cdot \hat{n})$ — same first-order linear structure as Mechanism A).
+4. **§2.4 The minimal-local-first-order realization framework**: three operational restrictions — first-order (truncation at $\bigO{\delta^1}$, $\bigO{\delta^2}$ extension is Open Problem~\ref{op:delta-squared}); local (substrate quantities evaluated at vertices/edges of 600-cell; first-shell comprises 12 neighbouring vertices); realization (vertex-aligned Reading C with $\hat{n} = \vhost/|\vhost|$). Closes with cross-references to Theorems~\ref{thm:substrate-locality}, \ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}, \ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality} as the proof chain.
+
+### §46.2 Layer-distinction discipline at §2
+
+Two operational points where Layer-distinction discipline manifests at §2:
+
+1. **§2.2 explicit scope framing**: "The present paper establishes Scenario A closure under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework at sketch-document Layer 3 rigor." Full scope qualifier preserved, not abbreviated. The next sentence flags that "Scenarios B and C are not ruled out at Layer 4 axiomatization tier; Mechanism A is taken as a framework axiom at the present paper's scope, and the question whether Mechanism A can be derived from A1--A11 alone is registered as Open Problem~\ref{op:layer4-mechanism-a}." The Scenario A closure is not falsely upgraded to "ruling out" B and C; the conditionality is explicit.
+
+2. **§2.3 + §2.4 framework qualifier audit trail**: Mechanism A as framework axiom is stated explicitly at §2.3 ("Mechanism~A posits..."). The minimal-local-first-order realization framework at §2.4 enumerates three operational restrictions (first-order + local + realization) with each restriction tied to its open-problem reference. The framework qualifiers --- "Mechanism~A axiom, Reading~C primitive, 600-cell selection, vertex-aligned configuration, minimal-local first-order restriction" --- are explicitly named and operationally taken as input.
+
+### §46.3 Equation labelling and forward-references
+
+Three equations introduced at §2 with labels:
+- `eq:link-constraint`: $\omegaPCD(\vhost) = \sigma \cdot \hat{n}$ (the sub-question's central constraint; referenced from §2.3 coupling discussion).
+- `eq:mechanism-a-formal`: $r(\hat{e}) = r_0(1 + \delta \hat{e} \cdot \hat{n})$ (Mechanism A's formal statement; refines Equation~\eqref{eq:mechanism-a} from §1.2 introduction; will be referenced at §4 Mechanism A axiom Patch 0559).
+- `eq:edge-length-perturbation`: $\ell(\hat{e}) = \ell_0(1 + \varepsilon \hat{e} \cdot \hat{n})$ (Reading C edge-length perturbation analog; comparison anchor for structural connection argument).
+
+Forward-references via `\ref` commands to subsequent sections and theorems are in place at §2.4 (\S\ref{sec:substrate-locality-theorem}, Theorem~\ref{thm:substrate-locality}, Theorem~\ref{thm:host-first-shell-projection}, Theorem~\ref{thm:first-shell-perpendicularity}, Theorem~\ref{thm:perturbation-locality}, Corollary~\ref{cor:shell-locality}); cross-resolution will be clean as body content is added at Patches 0560+. Backward-references via `\ref` to §1 are in place at §2.1 (\S\ref{sec:position-in-cpp}), §2.2 (\S\ref{sec:trajectory-recap}), §2.4 (\S\ref{sec:roadmap-and-layer-discipline}).
+
+### §46.4 Self-checkpoint — three places §46.1-§46.3 could overstate
+
+1. **The "formal statement" framing**: §2 gives the formal statement at sketch-document Layer 3 level. Publication-grade hardening (with explicit hypothesis tracking + five-class exclusion enumeration in dedicated `.tex` artifact) for the F.1 sub-question itself is not done at this paper's scope — what is hardened at publication-grade is the trio of input theorems (Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}, \ref{thm:perturbation-locality}) and Corollary~\ref{cor:shell-locality} at Patches 0550-0552. The sub-question's Scenario A closure is at sketch-document Layer 3 via Patch 0544 §5 Theorem 5.1.1.
+
+2. **The "structural connection to Reading C" argument** at §2.3 establishes Mechanism A as the leading candidate by parallel structure (both $r(\hat{e})$ and $\ell(\hat{e})$ have the same first-order linear form $\hat{e} \cdot \hat{n}$). This is a structural motivation, not a derivation: it explains why Mechanism A was selected over Mechanisms B and C, but it does not prove Mechanism A is the unique mechanism. Whether $\delta$ and $\varepsilon$ are independent parameters or are related at Layer 4 axiomatization is an open question not addressed.
+
+3. **The "three closure scenarios" enumeration** at §2.2 is exhaustive of the categories considered at scoping, but the categorisation itself (positive / negative / partial) is a framework-level taxonomy. Whether a fourth category exists (e.g., "framework-dependent closure" distinct from partial closure) is not addressed; the three-category enumeration is operational at this paper's scope.
+
+### §46.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. Body-content substitution into prepared scaffold is standard paper-assembly methodology (third instance after Patches 0554 + 0556). The methods catalogue audit Patch carries 8 candidate items unchanged from Patches 0555 + 0556.
