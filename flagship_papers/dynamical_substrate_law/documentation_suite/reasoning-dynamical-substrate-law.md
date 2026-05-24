@@ -3271,3 +3271,69 @@ The §9 body comprises:
 ### §53.4 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. The Open Problem statement substitution pattern (replacing multiple placeholder OP statements with actual content via multi-block substitution) is a special case of the multi-block substitution pattern already in the integration-Patch candidate. Methods catalogue audit Patch candidate count remains at 9.
+
+---
+
+## §54 Patch 0565 — §10 conclusion body insertion (FINAL BODY-SECTION PATCH OF ASSEMBLY ARC)
+
+**Context.** Patch 0564 inserted the §9 open questions body. Patch 0565 inserts §10 conclusion body — the **final body-section Patch of the F.1 flagship paper assembly arc**. The §10 conclusion synthesises the paper's substantive contribution and ties the F.1 sub-question closure to the CPP chirality-from-polytope-geometry long-term programme target (per skeleton outer comment header reference to Patch 0528 §14.17 + Patch 0539 §15.5). Authorised via Thomas's "Please proceed" directive following Patch 0564 ship + push at commit `f56c13f`.
+
+### §54.1 What this Patch does, structurally
+
+Simplest substitution of the body-content sequence: §10 placeholder has no theorem environment, no anticipated sub-structure (the skeleton's §10 placeholder is just one line: `% [Body content to be added at Patch 0564.]`). The substitution replaces that single line with 30 lines of body content (~1700 words, ~2 PDF pages). Outer comment header preserved per §17.6 (8) precedent.
+
+The §10 structure is designed (not skeleton-anticipated): four paragraphs + two paragraph-form subsections via `\paragraph{...}` not `\subsection{...}`. The lighter formatting reflects §10's conclusion role — synthesis rather than new content.
+
+### §54.2 §10 body content structure
+
+The §10 body comprises four content blocks:
+
+- **Opening paragraph**: states the closure result with Equation~\eqref{eq:substrate-locality} restated; structural constant $6/\phig^2 \approx 2.2918$ noted; connection to Capotauro v2.0's spatial-sector structural constants noted.
+
+- **Second paragraph**: substantive contribution decomposed into two parts — publication-grade trio (Patches 0550-0552 hardened theorems at §5+§6) and sketch-document umbrella (Theorem 7.1 at §7); together they form the Layer 3 stack of §8 (Table~\ref{tab:layer-hierarchy}).
+
+- **Third paragraph**: conditionality structure summarised — three pending Open Problems (OPEN-FP-F1-3 G1 hardening; OPEN-FP-F1-1 $\bigO{\delta^2}$ extension; OPEN-FP-F1-2 Layer 4 derivation); two research-direction-choosing OPs (OPEN-FP-F1-4 Sector-5 schema; OPEN-FP-F1-5 non-vertex-aligned Reading C). Three pending + two research-direction = the 5 Open Problems of §9.
+
+- **\paragraph{Position in the CPP chirality-from-polytope-geometry long-term programme}**: ties F.1 sub-question closure to the long-term programme target (Patch 0528 §14.17 + Patch 0539 §15.5). Names the target: "the chirality structure of physical law arises from the discrete geometric primitives of the 600-cell substrate at Reading C, with the substrate primitive $\hat{n}$ as the unifying direction across multiple sectors of physical manifestation." Notes the structural constant $-1/(2\phig)$ shared between Capotauro v2.0 spatial sector and present paper temporal sector as the imprint of shared first-shell geometric content.
+
+- **\paragraph{Forward trajectory}**: four trajectories in approximate order of tractability — (i) G1 publication-grade hardening; (ii) substrate-locality umbrella publication-grade hardening (candidate follow-up); (iii) $\bigO{\delta^2}$ extension; (iv) Layer 4 axiomatic derivation. Notes F.2/F.3 sub-questions of broader F-series as further trajectories. Chirality continuum's broader sectoral programme + Reading C-variant programme operate at higher scope levels.
+
+- **Closing paragraph**: substantive result is temporal-sector substrate-locality theorem; broader contribution is demonstration that 600-cell polytope geometry produces closed-form physical-content claim at first order; publication-grade trio + sketch-document umbrella together represent the level of substantive contribution targeted by F.1 trajectory at Patch 0549; broader programme target one sector closer to long-term completion.
+
+No new labeled environments, equations, lemmas, or theorems introduced at §10. The conclusion is synthesis only.
+
+### §54.3 Layer-distinction discipline at §10
+
+§10 sustains the Layer-distinction discipline at the conclusion level. Three operational points:
+
+1. **"Structurally-grounded sketch-document Layer 3 closure" framing preserved**: the opening sentence uses the exact phrasing from Patch 0549 (preserved verbatim across §1.2, §7.4 closing paragraph, §8.3 Implication 3, and now §10 opening). The Layer-3 status of the closure is explicit at the conclusion level.
+
+2. **Two-part contribution decomposition**: §10 second paragraph explicitly names "publication-grade trio" + "sketch-document umbrella" as the two parts of the substantive contribution. The Layer asymmetry between §5+§6 (publication-grade) and §7 (sketch-document) is preserved at the conclusion.
+
+3. **Open Problem cross-references sustained**: §10 third paragraph references all 5 Open Problems by label (`op:g1-hardening`, `op:delta-squared`, `op:layer4-mechanism-a`, `op:sector5-schema`, `op:non-vertex-aligned-c`), each with brief description of trajectory. The cross-reference scaffolding from §3-§9 is sustained at the conclusion level.
+
+### §54.4 Body-content assembly arc COMPLETE at this Patch
+
+Patch 0565 completes the body-content assembly arc that began at Patch 0556 (§1 introduction). The arc spans 10 body-content Patches (0556-0565), with two integration Patches (0560 + 0561), one non-integration construction Patch (0562 §7), one collation Patch (0563 §8), one Open Problem statements Patch (0564 §9), one Layer-rigor escalation Patch (0559 §4), and five standard body-content Patches (0556-0558 + 0565). The paper's body now compiles cleanly to 30 pages — at the lower end of the 30-35 page final target.
+
+The remaining trajectory comprises three non-body Patches (0566 bibliography + 0567 final polish; plus 0568-0569+0569a reviewer engagement) and the v1.0 SHIP at Patch 0570 (or thereabouts).
+
+### §54.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The conclusion-Patch pattern (synthesis + long-term programme connection + forward trajectory) is at first instance at this Patch. If a similar pattern appears at downstream flagship papers, it becomes a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.
+
+### §54.6 Body-content sequence assembly arc retrospective
+
+The 10-Patch assembly arc (Patches 0556-0565) executes the F.1 flagship paper assembly per scoping document §4.2. Key retrospective observations:
+
+1. **Multi-block substitution pattern** validated across §5/§6/§7/§9 (4 instances) and rejected at §1/§2/§3/§4/§8/§10 (6 instances of single-block inner placeholder substitution). The pattern correlates with theorem-environment-present-in-skeleton vs. theorem-environment-absent.
+
+2. **Layer label decisions** were the most consequential editorial choices: §5+§6 updated from "sketch-document Layer 3" to "publication-grade Layer 3" (the latter conditional on G1 for §5); §7 preserved at "sketch-document Layer 3"; §9 Open Problem parenthetical titles preserved unchanged.
+
+3. **Skeleton sub-structure departures** at §7 (5→4) and §8 (5→3) reflect forward-queue updates post-skeleton-design; documented at Tier 4 §51.4 (§7) and §52.2 (§8).
+
+4. **5-Open-Problem commitment** maintained end-to-end: set at Patch 0554 skeleton; preserved at Patch 0562 §7 (dropped `op:substrate-locality-hardening` reference); confirmed at Patch 0564 §9 (no 6th OP introduced).
+
+5. **Anti-erasure discipline** named explicitly at §8.3 closing paragraph (Patch 0563); operationalised silently across §3-§7; sustained at §8 (table form) and §9 (cross-reference resolution) and §10 (conclusion-level Layer asymmetry preservation).
+
+6. **Bug caught + fixed** at Patch 0561 ($G_{600}$ vs `set -u` collision in commit message); anti-regression check added to subsequent Patches; passed at Patches 0562, 0563, 0564, 0565.
