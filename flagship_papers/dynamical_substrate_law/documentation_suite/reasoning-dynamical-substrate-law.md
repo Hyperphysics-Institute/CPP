@@ -2797,3 +2797,48 @@ This is the first Patch in F.1 trajectory history that closes all three document
 ### §44.5 Methods catalogue Step E audit verdict
 
 Per §29.4 codified discipline: this Patch is a programme-documentation-audit Patch executing established programme-governance methodology (file-by-file documentation drift cleanup + cross-reference chronology + four-artifact convention). No new METH entry at this Patch. The methods catalogue audit Patch (item C in Patch 0552 forward queue) still has at least EIGHT substantive candidates pending evaluation: C1+C2 from Patch 0541a + §5.3 anti-bundling extension from Patch 0548 + retroactive-recognition pattern from Patch 0548a + reviewer-pause-envelope from Patch 0549 + hypothesis-tracking pattern from Patches 0550/0551/0552 + arc-scoping pattern from Patches 0540/0553 + programme-documentation-audit pattern (recognized at this Patch as a recurring discipline) + **NEW at this Patch: flip-decision-vs-explicit-preference discipline lesson from the Patch 0554/0555 timing event**.
+
+---
+
+## §45 Patch 0556 — §1 Introduction body insertion (first body-content Patch of the assembly arc)
+
+**Context.** Patch 0555 closed all three documentation drift items at programme-documentation-audit. Patch 0556 opens the body-content sequence of the F.1 flagship paper assembly arc: substitution of the inner placeholder at §1 Introduction (`flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex`) with body content. First Patch executing scoping document §4.2 ("body section assembly: one section per Patch"). Authorised via Thomas's "Please proceed" directive following Patch 0555 ship + push at commit `612a80b`.
+
+### §45.1 What this Patch does, structurally
+
+Modifies the F.1 flagship paper's skeleton (`dynamical_substrate_law.tex`, NEW at Patch 0554) by substituting the inner placeholder comment at §1 Introduction with 97 lines of LaTeX body content (~2500 words, ~4 PDF pages). The substitution:
+- Replaces only the inner placeholder `% [Body content to be added at Patch 0555 per scoping doc §3.2. Sub-structure anticipated: ...]` (6 lines).
+- Preserves the outer comment header (`% Body to be added at Patch 0555. Primary source: ... Approximate target: 3-4 pages.`) as historical scaffolding per §17.6 (8) immutable-content discipline — the outer header is part of the Patch 0554 skeleton's committed content; preserving it captures the Patch 0554/0555 sequencing event in-file.
+- Adds a small note comment at the body start documenting the Patch number mismatch ("Body added at Patch 0556. Outer comment header above anticipated Patch 0555 for this body; the audit took that slot, so body landed at Patch 0556 per the Patch 0554-vs-0555 sequencing record").
+
+The §1 body adds four subsections (matching the skeleton's anticipated sub-structure):
+1. **§1.1 Position in the CPP corpus and the chirality continuum**: briefs CPP framework (CPs, DPs, PCD cycles, axioms A1-A11) + chirality continuum architecture (five manifestations of OPEN-SD-CHIR-PRIMITIVE) + manifestation (iv) as the present paper's target + structural constant $-1/(2\phig)$ shared with Capotauro v2.0 spatial-sector substrate-locality theorem.
+2. **§1.2 The F.1 sub-question as a programme gate**: formal sub-question (link $\hat{n} \mapsto \omegaPCD$ derivation question) + three closure scenarios (A positive / B negative / C partial) + present paper establishes Scenario A under Reading C + 600-cell + Mechanism A minimal-local-first-order framework + Mechanism A in brief subsection (the propagation-rate asymmetry $r(\hat{e}) = r_0(1 + \delta \hat{e} \cdot \hat{n})$).
+3. **§1.3 Sketch Layer 2 to Layer 3 trajectory recap**: high-level six-phase trajectory recap (Phase 1 scoping → Phase 2 foundations → first reviewer-pause cycle (sketch Layer 2 closure) → Layer 3 promotion arc → second reviewer-pause cycle (Layer 3 closure) → publication-grade hardening trio) with status as of this paper at "structurally-grounded sketch-document Layer 3 closure under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\bigO{\delta^2}$ extension, and publication-grade hardening of identity G1".
+4. **§1.4 Paper roadmap and Layer-distinction discipline**: section-by-section roadmap (§2 through §10) + Layer hierarchy enumeration (sketch-document Layer 1/2/3 vs publication-grade Layer 3 vs Layer 4 axiomatic) + anti-erasure discipline statement (per Patch 0538 §10.7 ChatGPT principle / anti-priority #8 of Patch 0553 scoping doc) + conditionality structure as central methodological pattern.
+
+### §45.2 Layer-distinction discipline operationalised at §1
+
+The §1 body operationalises the Layer-distinction discipline (anti-priority #8 of the flagship paper assembly scoping doc) in five concrete ways:
+
+1. **Explicit Layer hierarchy enumeration at §1.4**: the paper enumerates the five-layer hierarchy (sketch Layer 1 / 2 / 3, publication-grade Layer 3, Layer 4 axiomatic) before any theorem statement appears. Readers can place each subsequent theorem at the correct Layer.
+
+2. **Scope qualifiers preserved at every reference**: the status string is given in full ("structurally-grounded sketch-document Layer 3 closure under the Reading C + 600-cell + Mechanism A minimal-local-first-order framework, pending Layer 4 axiomatic derivation, $\bigO{\delta^2}$ extension, and publication-grade hardening of identity G1") rather than abbreviated. The framework qualifiers ("Reading C + 600-cell + Mechanism A") accompany every claim of closure.
+
+3. **Per-theorem Layer labels at §1.4 roadmap**: each theorem's Layer is identified explicitly in the roadmap. Theorems 5.1, 5.2, 6.1 + Corollary 6.2 are at "publication-grade Layer 3" (per Patches 0550-0552 hardened theorem artifacts); the umbrella Theorem 7.1 is at "sketch-document Layer 3" (per Patch 0544 §5 Theorem 5.1.1). The reader knows the rigor level before encountering each theorem.
+
+4. **Open higher-order questions referenced via labels in the abstract and §1**: five OPEN-FP-F1-N identifiers with `\ref{op:...}` commands link the abstract's and introduction's references to §9's open problems. Open questions are not deferred to §9 alone — they are visible at §1 and the abstract.
+
+5. **Conditionality structure stated as methodological pattern**: §1.4 closes by stating that "closure under framework X, pending Layer 4 axiomatization of X" is the central methodological pattern of the paper. The conditionality is not framework noise; it is the discipline.
+
+### §45.3 Self-checkpoint — three places §45.1-§45.2 could overstate
+
+1. **The "97 lines of LaTeX body" framing** is line-count; the substantive measure is ~2500 words and ~4 PDF pages of body content. The 97 lines include subsection headers, `\label{}` commands, `itemize` markup, and equation labels — not all 97 lines are running prose. The PDF page count grew from 3 (skeleton-only) to 7 (skeleton + §1 body), which is consistent with the skeleton's §1 target of 3-4 pages.
+
+2. **The "outer scaffolding preserved per immutability" framing**: §17.6 (8) discipline does not strictly require preservation of LaTeX comment scaffolding — the discipline targets substantive content (theorem statements, conclusions, derivations). The choice to preserve the outer comment header at §1 was made for historical-record value (captures the Patch 0554/0555 sequencing event in-file) rather than as a discipline necessity. Future paper-assembly Patches MAY update outer comment scaffolding when adding body content; the precedent at this Patch is one option, not a binding rule.
+
+3. **The "anti-erasure discipline operationalised" framing** at §45.2 claims operational success in five concrete ways at §1, but the actual test of anti-erasure discipline is downstream: do subsequent body sections (§2-§10) preserve the scope qualifiers and Layer labels established at §1? Patch 0556's discipline at its own §1 is necessary but not sufficient. Reviewer engagement at Patches 0568-0569+0569a is the external check that anti-erasure held across the full body assembly.
+
+### §45.4 Methods catalogue Step E audit verdict
+
+Per §29.4 codified discipline: this Patch executes standard paper-assembly methodology (body content substitution into prepared scaffold). No new METH entry at this Patch. The methods catalogue audit Patch (item C in Patch 0552 forward queue + extended at Patches 0555 + 0556) still has 8 substantive candidates pending evaluation: C1+C2 from Patch 0541a + §5.3 anti-bundling extension from Patch 0548 + retroactive-recognition pattern from Patch 0548a + reviewer-pause-envelope from Patch 0549 + hypothesis-tracking pattern from Patches 0550/0551/0552 + arc-scoping pattern from Patches 0540/0553 + programme-documentation-audit pattern from Patch 0555 + flip-decision-vs-explicit-preference discipline lesson from the Patch 0554/0555 timing event.

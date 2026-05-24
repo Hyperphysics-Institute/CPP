@@ -113,12 +113,103 @@ The paper integrates the F.1 sub-question of the OPEN-SD-CHIR-PRIMITIVE manifest
 \section{Introduction and motivation}
 \label{sec:introduction}
 
-% [Body content to be added at Patch 0555 per scoping doc §3.2.
-%  Sub-structure anticipated:
-%   §1.1 Position in the CPP corpus and the chirality continuum
-%   §1.2 The F.1 sub-question as a programme gate
-%   §1.3 Sketch Layer 2 → Layer 3 trajectory recap
-%   §1.4 Paper roadmap and Layer-distinction discipline]
+% [Body added at Patch 0556. Outer comment header above anticipated
+%  Patch 0555 for this body; the audit took that slot, so body landed
+%  at Patch 0556 per the Patch 0554-vs-0555 sequencing record (§16.5
+%  of F1_phase2_foundations_work.md).]
+
+\subsection{Position in the CPP corpus and the chirality continuum}
+\label{sec:position-in-cpp}
+
+The Conscious Point Physics (CPP) programme aims to derive Standard Model physics from the discrete geometry of the 600-cell polytope, with zero free parameters. The framework posits a substrate of Conscious Points (CPs) executing Polarize $\to$ Capture $\to$ Depolarize (PCD) cycles, with Dipole Points (DPs) as composite intermediate objects, governed by eleven primitive axioms A1--A11 (\textit{Tetrahedrons All the Way Down}, Abshier 2026; central bibliography at \texttt{bibliography/cpp\_references.bib}, to be cited via \texttt{\textbackslash cite} at Patch 0566+).
+
+A central long-term programme target of CPP is the \emph{chirality continuum}: relating handedness in the spatial sector (parity violation, neutrino chirality structure, weak isospin assignment) to handedness in the temporal sector (irreversibility, thermodynamic causal arrow, cosmological-vacuum asymmetry). The chirality continuum architecture, established in the Capotauro v2.0 paper (\texttt{chirality\_continuum.tex}), identifies five manifestations of an open substrate-direction primitive (\texttt{OPEN-SD-CHIR-PRIMITIVE}):
+\begin{itemize}[leftmargin=2em]
+\item[(i)] parity violation (closed at Capotauro v2.0);
+\item[(ii)] neutrino chirality structure (closed at Capotauro v2.0 + SF-4 v1.0);
+\item[(iii)] weak isospin assignment (closed at Capotauro v2.0);
+\item[(iv)] thermodynamic causal arrow --- \emph{the present paper's target};
+\item[(v)] cosmological-vacuum asymmetry (future work; F.3 trajectory).
+\end{itemize}
+
+The Capotauro v2.0 paper closed the substrate-locality theorem for manifestations (i)--(iii) (spatial-sector). The present paper extends the substrate-locality property to manifestation (iv) (temporal-sector) via the \emph{dynamical substrate law}: the substrate net DI-bit current at any host vertex of the 600-cell depends only on first-shell content at vertex-aligned Reading~C, under Mechanism~A (defined below) and the framework-local current construction at first order in the perturbation parameter $\delta$.
+
+Both papers share the structural constant $-1/(2\phig)$, where $\phig = (1 + \sqrt{5})/2$ is the golden ratio. At vertex-aligned Reading~C in the 600-cell, the inner product between a host vertex's unit vector and any first-shell neighbour's unit vector equals $-1/(2\phig)$ uniformly across all twelve first-shell directions (Theorem~\ref{thm:host-first-shell-projection} of the present paper, hardened at publication-grade Layer~3 per the Patch 0552 hardened theorem artifact). The same constant governs the Capotauro v2.0 spatial-sector substrate-locality theorem (Capotauro v2.0 \S3). The structural parallel is not coincidental: it reflects the same first-shell first-order geometric constraint operating in both the spatial and temporal sectors of the chirality continuum.
+
+\subsection{The F.1 sub-question as a programme gate}
+\label{sec:f1-as-programme-gate}
+
+The \texttt{OPEN-SD-CHIR-PRIMITIVE} substrate-direction primitive carries a specific load-bearing question for the temporal-sector manifestation (iv): does the link $\hat{n} \mapsto \omegaPCD$ have substrate-mechanism support, or is the PCD-cycle-orientation pseudovector $\omegaPCD$ an independent primitive parallel to $\hat{n}$? Three closure scenarios were identified at scoping:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Scenario A (positive)}: the link $\hat{n} \mapsto \omegaPCD$ is derived via substrate-mechanism. The PCD-cycle-orientation pseudovector at the host vertex satisfies $\omegaPCD(\vhost) = \sigma \cdot \hat{n}$ with $\sigma \in \{+1, -1\}$ a global sign convention, with the alignment derived rather than posited.
+\item \textbf{Scenario B (negative)}: the PCD-cycle-orientation is an independent primitive, not derivable from substrate-mechanism. The chirality continuum umbrella refines to a three-way structure (spatial-direction primitive, temporal-direction primitive, and their alignment as a separate convention).
+\item \textbf{Scenario C (partial)}: partial derivation closure; requires additional framework input beyond the existing CPP axiom set.
+\end{itemize}
+
+The F.1 sub-question is the load-bearing prerequisite gate for the F.2 + F.3 trajectories (manifestations (iv) substantive content and (v) cosmological-vacuum asymmetry). Only with Scenario~A closure can the chirality continuum architecture proceed via the qDP/eDP precedent template established at Capotauro v2.0 \S20. Scenario~B closure would require alternative architecture; Scenario~C closure would require an additional framework input.
+
+This paper establishes Scenario~A closure under a specific framework: the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework, at \emph{sketch-document Layer~3} rigor. The Layer-distinction discipline is operationally important and is sustained throughout the paper (see \S\ref{sec:layer3-stack}). Layer~4 axiomatic derivation of Mechanism~A from the eleven CPP primitive axioms A1--A11 remains open as a long-term programme target (Open Problem~\ref{op:layer4-mechanism-a}).
+
+\subsubsection*{Mechanism A in brief}
+
+Mechanism~A is the propagation-rate asymmetry primitive: the DI-bit (Dimensional Increment bit, the discrete unit of information propagation between CPs per CPP axiom A1) acquires a small direction-correlated propagation-rate asymmetry under the substrate primitive $\hat{n}$. Formally,
+\begin{equation}
+r(\hat{e}) = r_0 \left(1 + \delta \cdot \hat{e} \cdot \hat{n}\right),
+\label{eq:mechanism-a}
+\end{equation}
+where $r(\hat{e})$ is the DI-bit propagation rate along unit-direction $\hat{e}$, $r_0$ is the $H_4$-idealized substrate rate, $\delta$ is the perturbation parameter (small, $|\delta| \ll 1$), and $\hat{n}$ is the substrate primitive 4D direction. DI-bits propagating in the $+\hat{n}$ direction propagate at rate $r_0(1 + \delta)$; in the $-\hat{n}$ direction at $r_0(1 - \delta)$; in any tangent direction ($\hat{e} \cdot \hat{n} = 0$) at the idealized rate $r_0$. The PCD cycle's Polarize $\to$ Capture $\to$ Depolarize sequence at each CP couples to this asymmetric flow, inducing a definite cycle-orientation $\omegaPCD$ aligned with $\hat{n}$. Mechanism~A is the leading candidate by structural analogy to Reading~C edge-length perturbation (Capotauro v2.0 \S2.3): both involve a direction-correlated propagation-asymmetry of substrate quantities controlled by a single small parameter ($\varepsilon$ in Capotauro, $\delta$ in the present paper).
+
+\subsection{Sketch Layer 2 to Layer 3 trajectory recap}
+\label{sec:trajectory-recap}
+
+The substrate-locality theorem at Reading~C was developed across a multi-phase sketch trajectory spanning Sessions 137--142 (calendar months April--May 2026). The trajectory's high-level structure was:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Phase 1: initial substrate-mechanism scoping} (Patches 0510--0522, approximately). Three candidate mechanisms identified: Mechanism~A (propagation-rate asymmetry), Mechanism~B (substrate-orientation field with gauge-like PCD coupling), and Mechanism~C (position-dependent clock-skew). Mechanism~A established as the leading candidate by structural analogy to Reading~C edge-length perturbation.
+\item \textbf{Phase 2: foundations work} (Patches 0523--0537). Consolidation of Mechanism~A as the leading candidate, with sketch-document Layer~2 derivation of seven foundational sub-results (first-shell net DI-bit current vanishing at $H_3 = I_h$ symmetric configurations; isolated-host vs.\ embedded-host scoping; matter-state independence; substrate-locality temporal extension; and others) culminating in a sketch-level closure conclusion for Mechanism~A under the minimal-local-first-order realization framework.
+\item \textbf{First reviewer-pause cycle (sketch Layer~2 closure)}: Patches 0538 (reviewer-pause checkpoint document submission) $\to$ 0539a (calibration response Patch processing verbatim reviewer feedback from ChatGPT, Copilot, Grok) $\to$ 0539 (F.1 sub-question status upgrade to ``substantive sketch-level closure at Layer~2 under the minimal-local-first-order realization framework''). The first reviewer-pause cycle established the cycle-discipline workflow per \texttt{templates/reviewer\_pause\_template.md}.
+\item \textbf{Layer~3 promotion arc} (Patches 0540--0546 + 0548a). Seven structural targets identified at the Patch 0540 scoping document and closed across Patches 0541--0546 at sketch-document Layer~3, with the seventh target retroactively recognized at Patch 0546 and consolidated as a standalone artifact at Patch 0548a per the \S5.3 anti-bundling discipline. Three load-bearing identities/theorems emerged: Identity~I1 (host-to-first-shell uniform projection $-1/(2\phig)$), Identity~G3 (first-shell-to-first-shell perpendicularity $\hat{e}_{ij} \cdot \hat{n} = 0$), and Theorem 3.3.3 (perturbative-locality propagation rule at order $\bigO{\delta^n}$ confined to graph-distance-$n$ edges, with shell-locality Corollary 3.3.4 specialising to $\bigO{\delta^1}$).
+\item \textbf{Second reviewer-pause cycle (Layer~3 closure)}: Patches 0547--0549. The second reviewer-pause cycle (parallel structure to the first) upgraded the F.1 sub-question status to \emph{``structurally-grounded sketch-document Layer~3 closure under the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework, pending Layer~4 axiomatic derivation, $\bigO{\delta^2}$ extension, and publication-grade hardening''} per cross-reviewer-convergent feedback weighting (ChatGPT precision on framework scope + Copilot inclusivity on pending items).
+\item \textbf{Publication-grade hardening trio} (Patches 0550--0552). Three publication-grade Layer~3 hardenings landed in dedicated \texttt{.tex} artifacts at \texttt{flagship\_papers/dynamical\_substrate\_law/\linebreak hardened\_theorems/}: perturbation-locality propagation rule (Patch 0550, Theorem 3.3.3 + Corollary 3.3.4), first-shell-to-first-shell perpendicularity (Patch 0551, Theorem 4.1.1 / Identity G3), and host-to-first-shell uniform projection (Patch 0552, Theorem 4.2.1 / Identity I1). Each carries explicit hypothesis tracking and a five-class exclusion enumeration; the trio's combined output is 741 lines of LaTeX across 21 PDF pages.
+\end{itemize}
+
+\textbf{Status as of the present paper}: \emph{structurally-grounded sketch-document Layer~3 closure under the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework, pending Layer~4 axiomatic derivation, $\bigO{\delta^2}$ extension (cross-reference: \texttt{OPEN-SS-B1q6} in the open-problems registry), and publication-grade hardening of identity G1} (the 600-cell first-shell uniform inner-product primitive, which is a shared dependency of Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}; tracked as Open Problem~\ref{op:g1-hardening}).
+
+The trajectory recap above is high-level; per-Patch documentation lives in the \texttt{documentation\_suite/} files (Tier~4 reasoning, Tier~3 vignettes, Tier~2 transactions) and in the \texttt{sketches/F1\_phase2\_foundations\_work.md} \S16 cross-reference chronology (consolidated at Patch 0555).
+
+\subsection{Paper roadmap and Layer-distinction discipline}
+\label{sec:roadmap-and-layer-discipline}
+
+\subsubsection*{Section-by-section roadmap}
+
+\begin{itemize}[leftmargin=2em]
+\item[\S\ref{sec:subquestion}] formalizes the F.1 sub-question: precise statement of the link $\hat{n} \mapsto \omegaPCD$ derivation question, the three closure scenarios, and the minimal-local-first-order realization framework that makes Scenario~A derivable.
+\item[\S\ref{sec:framework-primitives}] defines the framework primitives: CPP primitive axioms A1--A11 (recap); the 600-cell substrate at vertex-aligned Reading~C; first-shell geometric primitives G1 (uniform inner product) and G2 (icosahedral first-shell structure); the DI-bit and Mechanism~A coupling.
+\item[\S\ref{sec:mechanism-a}] codifies Mechanism~A as framework axiom and the framework-local current construction at first order in $\delta$. (Layer~4 axiomatic derivation of Mechanism~A from CPP A1--A11 is deferred to Open Problem~\ref{op:layer4-mechanism-a}.)
+\item[\S\ref{sec:first-shell-identities}] hardens the first-shell geometric identities: Theorem~\ref{thm:host-first-shell-projection} (host-to-first-shell uniform projection, $\hat{u}_i \cdot \hat{n} = -1/(2\phig)$ across all twelve first-shell directions) and Theorem~\ref{thm:first-shell-perpendicularity} (first-shell-to-first-shell perpendicularity, $\hat{e}_{ij} \cdot \hat{n} = 0$). Both at publication-grade Layer~3 with shared exclusion class E1 (G1 publication-grade hardening pending).
+\item[\S\ref{sec:perturbation-locality}] hardens the perturbation-theory propagation rule: Theorem~\ref{thm:perturbation-locality} ($\bigO{\delta^n}$ coefficient confined to graph-distance-$n$ edges in the 600-cell edge graph) and Corollary~\ref{cor:shell-locality} (shell-locality at $\bigO{\delta^1}$). At publication-grade Layer~3.
+\item[\S\ref{sec:substrate-locality-theorem}] states the umbrella substrate-locality theorem: Theorem~\ref{thm:substrate-locality} (substrate net DI-bit current at $\vhost$ depends only on first-shell content at $\bigO{\delta^1}$). At \emph{sketch-document Layer~3}; uses Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}, \ref{thm:perturbation-locality} and Corollary~\ref{cor:shell-locality} as proof inputs.
+\item[\S\ref{sec:layer3-stack}] enumerates the Layer~3 stack with explicit Layer labels per-claim and the five-class exclusion enumeration synthesis. The minimal-local-first-order realization framework, the Patch 0549 status framing, and the anti-erasure discipline are stated here.
+\item[\S\ref{sec:open-questions}] flags five open higher-order questions: $\bigO{\delta^2}$ extension (Open Problem~\ref{op:delta-squared}); Layer~4 axiomatic derivation of Mechanism~A (Open Problem~\ref{op:layer4-mechanism-a}); publication-grade hardening of identity G1 (Open Problem~\ref{op:g1-hardening}); sector-5 schema instantiation (Open Problem~\ref{op:sector5-schema}); non-vertex-aligned Reading~C variants (Open Problem~\ref{op:non-vertex-aligned-c}).
+\item[\S\ref{sec:conclusion}] concludes by tying the present paper's Layer~3 closure to the CPP long-term programme target (Layer~4 axiomatic derivation of $|\chi| = \phig^{-3}$ from pure 600-cell polytope geometry).
+\end{itemize}
+
+\subsubsection*{Layer-distinction discipline}
+
+This paper sustains the Layer-distinction discipline throughout. The relevant Layer hierarchy in the CPP corpus, applied to the present work, is:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Sketch document Layer~1}: identification of candidate structures and informal motivation.
+\item \textbf{Sketch document Layer~2}: substantive sketch-level derivations with explicit framework dependencies but without formal hypothesis tracking or exclusion enumeration.
+\item \textbf{Sketch document Layer~3}: formal derivations with explicit hypothesis tracking, scope qualifiers, and Layer labels. Reviewer-pause cycles establish closure at this layer.
+\item \textbf{Publication-grade Layer~3}: dedicated \texttt{.tex} artifacts with full hypothesis tracking, five-class exclusion enumeration, and standalone publication readiness. Theorems 5.1, 5.2, 6.1 (and Corollary 6.2) of this paper are at this layer.
+\item \textbf{Layer~4 (axiomatic derivation)}: derivation from CPP primitive axioms A1--A11 alone, without framework axioms beyond A1--A11. The umbrella substrate-locality theorem of \S\ref{sec:substrate-locality-theorem}, and the framework axiom Mechanism~A, remain open at this layer (Open Problems~\ref{op:layer4-mechanism-a} and \ref{op:g1-hardening}).
+\end{itemize}
+
+The umbrella substrate-locality theorem of \S\ref{sec:substrate-locality-theorem} is at \emph{sketch-document Layer~3} (not yet publication-grade). Its three load-bearing input theorems (Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}, \ref{thm:perturbation-locality}) are at \emph{publication-grade Layer~3}. The framework (Mechanism~A axiom + Reading~C primitives + G1 geometric primitive) is taken as input at this paper's scope.
+
+Per Patch 0538 \S10.7 reviewer feedback (ChatGPT), the Layer-distinction-preserving language is operationally important and is sustained throughout: scope qualifiers (``sketch-document Layer~3'', ``Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework'', etc.) are preserved at every theorem statement and conclusion. Abbreviation of ``sketch-document Layer~3'' to ``Layer~3'' without scope, or omission of the framework qualifier, is treated as a Layer-distinction erasure (anti-priority \#8 of the flagship paper assembly scoping document at Patch 0553 \S0). Open higher-order questions are not absorbed into the closure framing; they are flagged explicitly at \S\ref{sec:open-questions}.
+
+The conditionality structure --- ``closure under framework X, pending Layer~4 axiomatization of $X$'' --- is the central methodological pattern of the present paper. It reflects the CPP corpus discipline of staged derivation: each layer is closed before the next is opened, and the layer hierarchy is visible in the paper's structure rather than collapsed into a uniform ``proved'' / ``not proved'' binary.
 
 % ============================================================
 % §2 The F.1 sub-question (formal statement)
