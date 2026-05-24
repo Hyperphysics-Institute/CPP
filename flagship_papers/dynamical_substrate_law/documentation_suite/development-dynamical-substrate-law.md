@@ -1150,3 +1150,42 @@ Methods catalogue Step E audit per §29.4: no new METH entry. Reviewer-driven-ad
 Patch 0569a introduces no new deferred items. The 4 Round 2 CAN-DEFER items + the programme-direction decisions for Patch 0570 remain on the forward queue.
 
 Forward queue post-Patch 0569a: **paper is v1.0-SHIP-ready under ChatGPT-Round-2-recommended scope framing**. Patch 0570 = v1.0 SHIP with two possible variants: (a) G1 hardening Patch precedes v1.0 SHIP per ChatGPT Round 2 Recommendation 4; (b) v1.0 SHIP with G1 as registered Open Problem (current state) per cross-reviewer Round 1 + 2 SHIP-acceptable position. Thomas's programme-direction decision-call.
+
+---
+
+## Vignette 48 — Patch 0569b: ChatGPT Round 3 reviewer-driven adjustments (5 atomic edits including TikZ dependency-graph figure; ChatGPT verdict matrix stabilised at "reviewer-ready as flagship framework preprint YES")
+
+Patch 0569b is the response to ChatGPT's Round 3 review of the post-Patch-0569a manuscript (v0.9 v3). The Round 3 letter introduces a **verdict matrix structure** (rather than verdict-shift narrative) confirming the paper has stabilised at "reviewer-ready as flagship framework preprint" level. The Round 1 → Round 2 → Round 3 trajectory is: substantive concerns → substantial upgrade with 3 minor adjustments → verdict stabilisation with 3 new concrete adjustments + 1 framing recommendation.
+
+The five-dimension verdict matrix (Round 3):
+- Structurally coherent: YES
+- Internally disciplined: substantially YES
+- Publication-grade mathematics throughout: NOT YET
+- **Reviewer-ready as a flagship framework preprint: YES**
+- Ready to present as completed derivation of thermodynamic arrow: NO
+
+This matrix is informative: it explicitly separates "reviewer-ready preprint" (YES) from "publication-grade flagship theorem paper" (NOT YET) and from "thermodynamic-arrow theorem" (NO). The paper SHIPS at the first of these levels per v1.0 SHIP cycle convention; the second is a v2.0+ trajectory (G1 hardening + umbrella hardening); the third is the long-term trajectory (Layer 4 axiomatic derivation + statistical-mechanics-emergence work).
+
+What ChatGPT Round 3 explicitly approves: scope discipline (Patches 0569+0569a edits) "the single biggest improvement"; theorem stack "architecturally clean"; anti-erasure discipline "one of the strongest scholarly aspects of the whole framework"; abstract "substantially stronger" and theorem-centered.
+
+The 5 atomic edits at Patch 0569b implement ChatGPT Round 3 Recommendations A, B, C:
+
+**Recommendation A — Scenario A closure language extension** (Edits 1-3): Patch 0569a Edit B addressed the §1.2 headline anchor; Patch 0569b extends the "at the substrate-locality-support level" qualifier to three additional anchors where the paper claims to establish closure: §2.4 main paper-establishes claim (Edit 1); §2.4 conditionality structure quoted phrase (Edit 2); §4 conditionality structure quoted phrase (Edit 3). After Patch 0569b, every substantive paper-establishes-closure claim carries the qualifier consistently.
+
+**Recommendation B — Explicit declarative sentence** (Edit 4): Adds bold-formatted declarative sentence at end of §1 executive summary: "**The present paper does not derive entropy production, coarse-graining, or macroscopic irreversibility**; those derivations are future work beyond the present paper's framework qualifiers." Maximally salient via bold formatting.
+
+**Recommendation C — Dependency graph figure** (Edit 5): TikZ figure inserted in §8.2 (between Table 8.2 and the table-encoding paragraph). Visual complement to the table showing G1 (sketch-document Layer 3; dashed yellow) → Theorems 5.1+5.2 (publication-grade L3 conditional on G1; blue) and Theorem 6.1+Cor. 6.2 (publication-grade L3 unconditional; blue) → Theorem 7.1 umbrella (sketch-document Layer 3; dashed yellow with closed-form expression) → substrate-locality structure (proven; green) → candidate thermodynamic-arrow mechanism (supported but not derived; dotted orange). Solid arrows for mathematical dependency; dashed arrow at bottom for supported-but-not-derived. Colour-coded Layer rigor at a glance.
+
+**Recommendation D — Separate geometry theorem from physics interpretation** (NOT implemented as restructure): Acknowledged as substantially met by existing structure. §§5-7 ARE pure mathematics; physics interpretation appears in abstract + §1 + §10 only (not interwoven). Scope-qualifier triple-coverage discipline at Patches 0569 + 0569a + 0569b explicitly separates "what is proven" from "what is supported-but-not-derived" at every reader-facing location. No restructure needed.
+
+**Remaining serious weaknesses** (ChatGPT Round 3 lists 5): items 1, 2, 4 are pre-existing CAN-DEFER (umbrella hardening + G1 hardening + Mechanism A Layer 4 derivation); item 3 (thermodynamic-arrow language) fully addressed at this Patch via Edits 1-3; item 5 (DI-bit current → macroscopic arrow chain remains schematic) addressed as fully as scope-qualifier discipline allows.
+
+Calibration discipline sustained: no theorem statements modified; no proofs modified; no Open Problems modified; no hardened_theorems source artifacts modified; no bibliography body modified; author block unchanged. Paper page count unchanged at 33 (figure absorbs into existing slack at §8.2).
+
+**v1.0 SHIP scope-framing question stabilised**: ChatGPT Round 3 verdict matrix explicitly confirms "reviewer-ready as flagship framework preprint: YES"; remaining barriers (G1 + umbrella hardening + Mechanism A + locality-vs-interpretation separation) are barriers to "publication-grade flagship theorem paper", a v2.0+ trajectory level. Patch 0570 v1.0 SHIP can proceed under variant (b) scope framing per ChatGPT Round 3 explicit YES verdict; variant (a) would require Patches 0569c+0569d before SHIP.
+
+Methods catalogue Step E audit per §29.4: no new METH entry. Combined reviewer-driven-adjustments Patch pattern at second instance.
+
+Patch 0569b introduces no new deferred items. Cumulative Round 1 + Round 2 + Round 3 cycle has produced 17 atomic edits across 3 substantive Patches (0569 + 0569a + 0569b) plus 1 documentation-only archival Patch (0568). Paper is now v1.0-SHIP-ready under explicit ChatGPT Round 3-confirmed scope framing.
+
+Forward queue post-Patch 0569b: **paper is v1.0-SHIP-ready under ChatGPT Round 3 verdict-matrix "reviewer-ready as flagship framework preprint YES" framing**. Patch 0570 = v1.0 SHIP with two possible variants (a) G1 hardening Patch (0569c) before SHIP, or (b) SHIP current state with scope-framing `\date{}` line.

@@ -1276,3 +1276,54 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(F) F.2/F.3 trajectory openings**. **(G) Layer 4 axiomatic derivation Patch trajectory** (OPEN-FP-F1-2). **(H) JUNO peer-review update integration**.
 
 **Self-checkpoint at this transaction:** Patch 0569a implements ChatGPT's Round 2 reviewer-driven adjustments (3 substantive items) + Thomas's author email directive (1 administrative item) = 4 atomic LaTeX edits. ChatGPT Round 2 verdict substantial upgrade from "NOT yet publication-grade flagship overall" to "reviewer-ready as a disciplined pre-v1.0 framework paper". Paper compiles to 33 pages. Calibration discipline sustained. **Paper is v1.0-SHIP-ready under ChatGPT-Round-2-recommended scope framing.** Next: Thomas's programme-direction decision for Patch 0570 variant (a) vs (b).
+
+---
+
+## Transaction 058 — Patch 0569b (ChatGPT Round 3 reviewer-driven adjustments; 5 atomic edits)
+
+**Date:** 24 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=f8650d6` = Patch 0569a).
+**Branch:** main.
+**Patch type:** Combined reviewer-archival (1 new file in `reviews/`) + multi-edit response (5 atomic edits including 1 TikZ figure). Second instance of combined Patch pattern at F.1 trajectory (first was Patch 0569a).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0569a ship + push at commit `f8650d6`, with ChatGPT Round 3 review letter supplied inline.
+
+**Files modified (6 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/reviews/chatgpt_v0.9v3_session_142.md` (verbatim ChatGPT Round 3 letter + standardised metadata header per capotauro precedent; verdict matrix YES/NO across five dimensions; "reviewer-ready as flagship framework preprint YES").
+2. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (5 atomic edits: Edits 1-3 Scenario A closure language extension to 3 additional anchors; Edit 4 explicit declarative sentence at executive summary; Edit 5 TikZ dependency-graph figure in §8.2). Paper compiles cleanly to 33 pages.
+3. APPEND — Tier 4 §60 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (9 subsections: §60.1 what this Patch does structurally + §60.2 ChatGPT Round 3 verdict matrix analysis + §60.3 the 5 atomic edits + §60.4 Recommendation D acknowledgement + §60.5 remaining weaknesses CAN-DEFER classification + §60.6 calibration discipline sustained + §60.7 v1.0 SHIP scope-framing programme-direction decision + §60.8 methods catalogue Step E audit verdict + §60.9 paper status post-Patch 0569b).
+4. APPEND — Vignette 48 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+5. APPEND — Transaction 058 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+6. PREPEND — `research_frontier.md` Last-updated header (Patch 0569b entry; Patch 0569a demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Combined reviewer-driven-adjustments Patch pattern at second instance at F.1 trajectory. Methods catalogue audit Patch candidate count remains at 9.
+
+**Programme state changes at Patch 0569b:**
+
+1. **ChatGPT Round 3 verdict matrix stabilised** at "reviewer-ready as flagship framework preprint YES" + four other matrix dimensions.
+2. **3 reviewer-driven Round 3 adjustments implemented**: Scenario A closure language extension (3 anchors) + explicit declarative sentence + TikZ dependency-graph figure.
+3. **ChatGPT Round 3 letter archived** in reviews/ folder following capotauro precedent.
+4. **Recommendation D acknowledged as substantially met** by existing structure (no restructure needed).
+5. **Cross-reviewer cumulative Round 1 + 2 + 3 position**: v1.0 SHIP-acceptable across all 3 reviewers with ChatGPT R3 verdict-matrix YES for reviewer-ready preprint.
+6. **Paper at 33 pages** (unchanged from Patch 0569a; figure absorbs into existing slack).
+7. **Paper is v1.0-SHIP-ready** under ChatGPT R3-confirmed scope framing.
+8. **Calibration discipline sustained**: no theorem/proof/OP/hardened-theorem modifications.
+9. **CAN-DEFER items unchanged** (G1 hardening + Theorem 7.1 hardening + δ² appendix + Layer 4 derivation + Reading C variants).
+10. **DECLINED items unchanged** (bibliography BibTeX integration + reduce governance language).
+11. **Zero documentation drift** inherited or introduced.
+12. F.1 sub-question status framing converged across the 3-Patch reviewer-cycle work: "substrate-locality component required for Scenario A closure at the substrate-locality-support level" (now consistent at §1.2 + §2.4 + §4 + abstract + §10).
+13–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0569b:**
+
+- **(A) Paper is v1.0-SHIP-ready** under ChatGPT R3 verdict-matrix "reviewer-ready as flagship framework preprint YES" framing.
+- **(B) Patch 0570 = v1.0 SHIP** with two possible variants for Thomas's programme-direction decision (unchanged from Patch 0569a forward queue):
+  - **Variant (a)**: G1 hardening Patch (Patch 0569c) precedes v1.0 SHIP per ChatGPT R2 Rec 4 + R3 item 2.
+  - **Variant (b)**: v1.0 SHIP with current state per ChatGPT R3 verdict-matrix YES. v1.0 SHIP `\date{}` framing explicitly carries the scope qualifier per ChatGPT R3 framing.
+- **(C)** Methods catalogue audit Patch (9 candidates).
+- **(D) G1 publication-grade hardening Patch** (OPEN-FP-F1-3 — ChatGPT R2 Rec 4 + R3 item 2 priority).
+- **(E) Substrate-locality umbrella publication-grade hardening Patch** (ChatGPT R3 item 1; §7.4 framing strengthened at Patch 0569a Edit D).
+- **(F) F.2/F.3 trajectory openings**. **(G) Layer 4 axiomatic derivation Patch trajectory** (OPEN-FP-F1-2; ChatGPT R3 item 4). **(H) JUNO peer-review update integration**.
+
+**Self-checkpoint at this transaction:** Patch 0569b implements ChatGPT Round 3's three concrete reviewer-driven adjustments (Recommendations A, B, C) via 5 atomic edits. ChatGPT R3 verdict matrix stabilises the paper at "reviewer-ready as flagship framework preprint YES" + acknowledges remaining barriers to publication-grade are CAN-DEFER items already registered. TikZ dependency-graph figure addresses the cumulative dependency-clarity concern from Rounds 1+2+3. Paper compiles to 33 pages. Calibration discipline sustained. **Paper is v1.0-SHIP-ready under ChatGPT R3-confirmed scope framing.** Next: Thomas's programme-direction decision for Patch 0570 variant (a) vs (b).

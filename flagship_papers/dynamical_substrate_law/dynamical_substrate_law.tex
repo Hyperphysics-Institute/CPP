@@ -148,7 +148,7 @@ The paper integrates the F.1 sub-question of the OPEN-SD-CHIR-PRIMITIVE manifest
 %  of F1_phase2_foundations_work.md).]
 
 \paragraph{Executive summary.}
-This paper establishes the substrate-locality property of DI-bit currents at vertex-aligned Reading~C in the 600-cell substrate. The principal result is Theorem~\ref{thm:substrate-locality}: the net DI-bit current at any host vertex $\vhost$ at first order in the propagation-rate-asymmetry parameter $\delta$ is given in closed form by $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$, depending only on first-shell content. The result is proved at sketch-document Layer~3 (\S\ref{sec:substrate-locality-theorem}) by assembling three publication-grade building-block theorems hardened in separate `.tex' artifacts (\S\S\ref{sec:first-shell-identities}--\ref{sec:perturbation-locality}): the host-to-first-shell uniform projection (Theorem~\ref{thm:host-first-shell-projection}), the first-shell-to-first-shell perpendicularity (Theorem~\ref{thm:first-shell-perpendicularity}), and the perturbation-locality propagation rule (Theorem~\ref{thm:perturbation-locality}, with shell-locality Corollary~\ref{cor:shell-locality}). The substrate-locality structure supports a candidate thermodynamic-arrow mechanism (manifestation~(iv) of the chirality continuum's substrate-direction primitive); the full emergence layer is registered as future work. Five open higher-order questions are registered (\S\ref{sec:open-questions}).
+This paper establishes the substrate-locality property of DI-bit currents at vertex-aligned Reading~C in the 600-cell substrate. The principal result is Theorem~\ref{thm:substrate-locality}: the net DI-bit current at any host vertex $\vhost$ at first order in the propagation-rate-asymmetry parameter $\delta$ is given in closed form by $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$, depending only on first-shell content. The result is proved at sketch-document Layer~3 (\S\ref{sec:substrate-locality-theorem}) by assembling three publication-grade building-block theorems hardened in separate `.tex' artifacts (\S\S\ref{sec:first-shell-identities}--\ref{sec:perturbation-locality}): the host-to-first-shell uniform projection (Theorem~\ref{thm:host-first-shell-projection}), the first-shell-to-first-shell perpendicularity (Theorem~\ref{thm:first-shell-perpendicularity}), and the perturbation-locality propagation rule (Theorem~\ref{thm:perturbation-locality}, with shell-locality Corollary~\ref{cor:shell-locality}). The substrate-locality structure supports a candidate thermodynamic-arrow mechanism (manifestation~(iv) of the chirality continuum's substrate-direction primitive); the full emergence layer is registered as future work. \textbf{The present paper does not derive entropy production, coarse-graining, or macroscopic irreversibility}; those derivations are future work beyond the present paper's framework qualifiers. Five open higher-order questions are registered (\S\ref{sec:open-questions}).
 
 \subsection{Position in the CPP corpus and the chirality continuum}
 \label{sec:position-in-cpp}
@@ -321,7 +321,7 @@ where $\ell_0$ is the $H_4$-idealized edge length and $\varepsilon$ is the edge-
 \subsection{The minimal-local-first-order realization framework}
 \label{sec:minimal-local-first-order}
 
-Scenario A closure under Mechanism~A is established at the \emph{minimal-local-first-order realization framework}, with three operational restrictions:
+Scenario A closure at the substrate-locality-support level under Mechanism~A is established at the \emph{minimal-local-first-order realization framework}, with three operational restrictions:
 
 \begin{itemize}[leftmargin=2em]
 \item \textbf{First-order}: All substrate quantities are expanded in powers of $\delta$ and retained at order $\bigO{\delta^1}$. Higher-order corrections at $\bigO{\delta^2}$ are deferred to Open Problem~\ref{op:delta-squared} (also catalogued as \texttt{OPEN-SS-B1q6} per the Patch 0540 Layer 3 promotion scoping document).
@@ -331,7 +331,7 @@ Scenario A closure under Mechanism~A is established at the \emph{minimal-local-f
 
 Within the minimal-local-first-order realization framework, the umbrella substrate-locality theorem (\S\ref{sec:substrate-locality-theorem}, Theorem~\ref{thm:substrate-locality}) establishes that the substrate net DI-bit current at any host vertex $\vhost$ depends only on first-shell content at $\bigO{\delta^1}$. The proof decomposes into three contributions: the host-to-first-shell uniform projection (Theorem~\ref{thm:host-first-shell-projection}, hardened at Patch~0552); the first-shell-to-first-shell perpendicularity (Theorem~\ref{thm:first-shell-perpendicularity}, hardened at Patch~0551); and the perturbation-theory propagation rule (Theorem~\ref{thm:perturbation-locality} with shell-locality Corollary~\ref{cor:shell-locality}, hardened at Patch~0550). All three input theorems are at publication-grade Layer~3; the umbrella theorem itself is at sketch-document Layer~3 (Patch~0544 \S5).
 
-The framework qualifiers --- Mechanism~A axiom, Reading~C primitive, 600-cell selection, vertex-aligned configuration, minimal-local first-order restriction --- are operationally taken as input at the present paper's scope. Layer 4 axiomatic derivation from CPP A1--A11 alone is the long-term programme target, addressed in part by Open Problems~\ref{op:layer4-mechanism-a} (Mechanism A derivation), \ref{op:g1-hardening} (G1 publication-grade hardening), and \ref{op:non-vertex-aligned-c} (non-vertex-aligned Reading C variants). The conditionality structure ``Scenario A closure under framework $X$, pending Layer 4 axiomatization of $X$'' is sustained throughout the paper per the Layer-distinction discipline of \S\ref{sec:roadmap-and-layer-discipline}.
+The framework qualifiers --- Mechanism~A axiom, Reading~C primitive, 600-cell selection, vertex-aligned configuration, minimal-local first-order restriction --- are operationally taken as input at the present paper's scope. Layer 4 axiomatic derivation from CPP A1--A11 alone is the long-term programme target, addressed in part by Open Problems~\ref{op:layer4-mechanism-a} (Mechanism A derivation), \ref{op:g1-hardening} (G1 publication-grade hardening), and \ref{op:non-vertex-aligned-c} (non-vertex-aligned Reading C variants). The conditionality structure ``Scenario A closure at the substrate-locality-support level under framework $X$, pending Layer 4 axiomatization of $X$'' is sustained throughout the paper per the Layer-distinction discipline of \S\ref{sec:roadmap-and-layer-discipline}.
 
 % ============================================================
 % §3 Framework primitives
@@ -487,7 +487,7 @@ Axioms MA.1 and MA.2 together constitute the Mechanism~A framework axiom at the 
 \item At \emph{Layer~4 axiomatic derivation} (the long-term programme target), Mechanism~A's derivation from CPP A1--A11 alone is open. The derivation would require deriving the propagation-rate asymmetry (Equation~\eqref{eq:mechanism-a-formal}) from the CP + DI-bit + PCD-cycle primitives of A1 + A6$^{\prime}$, plus deriving the vertex-uniformity from the substrate's discrete geometric structure A11. The derivation is registered as Open Problem~\ref{op:layer4-mechanism-a}.
 \end{itemize}
 
-The conditionality structure --- ``Scenario A closure under MA.1 + MA.2, pending Layer~4 axiomatic derivation of MA.1 + MA.2 from A1--A11'' --- is sustained throughout the rest of the paper. Every theorem statement in \S\ref{sec:first-shell-identities}--\S\ref{sec:substrate-locality-theorem} carries MA.1 or MA.2 (or both) as an explicit hypothesis, in keeping with the Layer-distinction discipline of \S\ref{sec:roadmap-and-layer-discipline}.
+The conditionality structure --- ``Scenario A closure at the substrate-locality-support level under MA.1 + MA.2, pending Layer~4 axiomatic derivation of MA.1 + MA.2 from A1--A11'' --- is sustained throughout the rest of the paper. Every theorem statement in \S\ref{sec:first-shell-identities}--\S\ref{sec:substrate-locality-theorem} carries MA.1 or MA.2 (or both) as an explicit hypothesis, in keeping with the Layer-distinction discipline of \S\ref{sec:roadmap-and-layer-discipline}.
 
 A note on terminology: we use ``framework axiom'' rather than ``axiom'' simpliciter to maintain the distinction from CPP primitive axioms A1--A11. The CPP primitive axioms are framework-level commitments of the broader CPP corpus; the framework axioms MA.1 + MA.2 are paper-level commitments specific to the F.1 sub-question's Scenario~A closure path. The two-tier axiom structure --- primitive axioms below, framework axioms above --- reflects the staged-derivation discipline of CPP: each tier closes under its own conditions, with the framework-axiom tier's discharge to the primitive-axiom tier being the long-term programme target.
 
@@ -952,7 +952,44 @@ Lemma~\ref{lem:chord-length} (chord length) & publication-grade Layer 3 & G1 (E1
 \label{tab:layer-hierarchy}
 \end{table}
 
-Table~\ref{tab:layer-hierarchy} encodes the per-theorem rigor classification operationalised at \S\S\ref{sec:framework-primitives}--\ref{sec:substrate-locality-theorem}. Three structural readings:
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  every node/.style={align=center, font=\small},
+  pub/.style={rectangle, draw, fill=blue!8, minimum height=0.7cm, minimum width=5.6cm, rounded corners},
+  sketch/.style={rectangle, draw, fill=yellow!18, minimum height=0.7cm, minimum width=5.6cm, rounded corners, dashed},
+  umbrella/.style={rectangle, draw, fill=yellow!18, minimum height=1.0cm, minimum width=7.2cm, rounded corners, dashed},
+  proven/.style={rectangle, draw, fill=green!12, minimum height=0.7cm, minimum width=7.2cm, rounded corners},
+  cand/.style={rectangle, draw, fill=orange!15, minimum height=1.0cm, minimum width=8.8cm, rounded corners, dotted, very thick},
+  arr/.style={-Latex, thick},
+  arrcand/.style={-Latex, thick, dashed}
+]
+% Top: G1
+\node[sketch] (g1) {Identity G1 (first-shell inner-product primitive) \\ \emph{sketch-document Layer 3} (Open Problem~\ref{op:g1-hardening})};
+% Row 2: Theorems 5.1, 5.2 (left, right) and 6.1 (below)
+\node[pub, below left=1.0cm and -1.6cm of g1] (t51) {Theorem~\ref{thm:host-first-shell-projection} (Patch 0551) \\ host-to-first-shell projection \\ \emph{publication-grade L3, conditional on G1}};
+\node[pub, below right=1.0cm and -1.6cm of g1] (t52) {Theorem~\ref{thm:first-shell-perpendicularity} (Patch 0552) \\ first-shell perpendicularity \\ \emph{publication-grade L3, conditional on G1}};
+\node[pub, below=2.6cm of g1] (t61) {Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality} (Patch 0550) \\ perturbation-locality propagation rule \\ \emph{publication-grade L3, unconditional}};
+% Row 3: Theorem 7.1 umbrella
+\node[umbrella, below=0.9cm of t61] (t71) {Theorem~\ref{thm:substrate-locality} (umbrella; this paper \S\ref{sec:substrate-locality-theorem}) \\ $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$ \\ \emph{sketch-document Layer 3}};
+% Row 4: Substrate-locality structure (proven)
+\node[proven, below=0.7cm of t71] (sl) {Substrate-locality structure \textbf{(proven at this paper's scope)}};
+% Row 5: Candidate mechanism
+\node[cand, below=0.6cm of sl] (cand) {Candidate thermodynamic-arrow mechanism: \\ entropy production, coarse-graining, statistical-mechanics emergence \\ \emph{supported by, not derived from} this paper's result (future work)};
+% Arrows
+\draw[arr] (g1) -- (t51);
+\draw[arr] (g1) -- (t52);
+\draw[arr] (t51) -- (t71);
+\draw[arr] (t52) -- (t71);
+\draw[arr] (t61) -- (t71);
+\draw[arr] (t71) -- (sl);
+\draw[arrcand] (sl) -- (cand);
+\end{tikzpicture}
+\caption{Dependency graph of the F.1 flagship paper's theorem stack. \emph{Solid arrows} indicate mathematical dependency (proven inference); the \emph{dashed arrow} at the bottom indicates supported-but-not-derived (the candidate mechanism narrative). Identity G1 supports Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}; together with the unconditional Theorem~\ref{thm:perturbation-locality}~+~Corollary~\ref{cor:shell-locality}, the trio is assembled into the umbrella Theorem~\ref{thm:substrate-locality} (sketch-document Layer 3) and the substrate-locality structure it proves. The further step from substrate-locality structure to thermodynamic-arrow emergence (entropy production, coarse-graining, statistical-mechanics) is the candidate mechanism narrative, \emph{supported by but not derived from} the present paper's result; it is registered as future work beyond the present paper's framework qualifiers. The figure complements Table~\ref{tab:layer-hierarchy} with the visual dependency structure.}
+\label{fig:dependency-graph}
+\end{figure}
+
+Table~\ref{tab:layer-hierarchy} encodes the per-theorem rigor classification operationalised at \S\S\ref{sec:framework-primitives}--\ref{sec:substrate-locality-theorem}; Figure~\ref{fig:dependency-graph} renders the same information as a dependency graph. Three structural readings:
 
 First, the publication-grade trio at Patches~0550--0552 anchors the paper's load-bearing geometric and perturbation-theory content. Closing exclusion class~E1 (Open Problem~\ref{op:g1-hardening}; G1 publication-grade hardening) would upgrade Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity} (and consequently Lemma~\ref{lem:chord-length}) to unconditional publication-grade Layer~3. Theorem~\ref{thm:perturbation-locality} and Corollary~\ref{cor:shell-locality} are already at unconditional publication-grade Layer~3.
 
