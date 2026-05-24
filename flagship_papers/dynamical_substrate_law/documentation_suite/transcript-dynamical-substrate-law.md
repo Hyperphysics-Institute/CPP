@@ -799,3 +799,46 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit (8 candidates). **(F)** G1 publication-grade hardening. **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(I)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0559 inserts the §4 Mechanism A axiom body — Layer-rigor escalation elevating the previously-introduced equations to formal framework-axiom status (MA.1 + MA.2). No new mathematical content; the elevation is rhetorical/categorical. Paper now compiles to 15 pages. Approximately 45% through body-content sequence. Zero documentation drift. Next Patch (0560) is the FIRST integration Patch in the arc — body section §5 imports content from the Patches 0551 + 0552 hardened theorem artifacts, the largest single-section Patch in the arc.
+
+---
+
+## Transaction 047 — Patch 0560 (§5 first-shell geometric identities body insertion; first integration Patch)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=060d10f` = Patch 0559 §4 Mechanism A axiom body).
+**Branch:** main.
+**Patch type:** Substantive content / integration (fifth body-content Patch of the F.1 flagship paper assembly arc; FIRST INTEGRATION PATCH; executes scoping document §4.2 fifth step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0559 ship + push at commit `060d10f`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§5 multi-block substitution: inner placeholder + both theorem environment placeholders replaced with 119 lines of body content; outer comment header preserved per §17.6 (8); theorem parenthetical Layer labels updated from "sketch-document Layer 3" to "publication-grade Layer 3, conditional on G1"; six subsections added §5.1–§5.6 + opening paragraph; three labeled equations added: eq:chord-length, eq:host-first-shell-projection, eq:first-shell-perpendicularity; two labeled lemmas added: lem:g1-imported, lem:chord-length). Paper compiles cleanly to 18 pages.
+2. APPEND — Tier 4 §49 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (6 subsections: §49.1 what this Patch does structurally + §49.2 §5 body content structure + §49.3 Layer-distinction discipline at §5 + §49.4 skeleton placeholder completion vs §17.6 (8) immutability discipline + §49.5 self-checkpoint + §49.6 methods catalogue Step E audit verdict).
+3. APPEND — Vignette 37 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 047 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0560 entry; Patch 0559 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** **NEW candidate** added to queue — integration-Patch pattern for publication-grade hardened theorem import. Methods catalogue audit Patch now has 9 candidate items.
+
+**Programme state changes at Patch 0560:**
+
+1. **First integration Patch of F.1 flagship paper assembly arc COMPLETE**: §5 body in place importing Patches 0551 + 0552 publication-grade hardenings.
+2. **Theorems 5.1 (host-to-first-shell uniform projection) and 5.2 (first-shell-to-first-shell perpendicularity)** now have substantive content (previously placeholder); parenthetical Layer labels updated to "publication-grade Layer 3, conditional on G1".
+3. **Two labeled lemmas + three labeled equations** added at §5; cross-reference scaffold extended.
+4. **Paper now compiles to 18 pages** (was 15 after Patch 0559 §4); approximately 55% through body-content sequence (§1-§5 of §1-§10); on track for 30-35 page final target.
+5. **Layer-distinction discipline operationalised at §5** at three concrete points (theorem parenthetical labels carry conditionality + §5.1 Layer-rigor mismatch paragraph + §5.5 exclusion class E1 subsection).
+6. **Skeleton placeholder completion vs §17.6 (8) immutability discipline judged at §49.4**: placeholder content + parenthetical Layer label updates are permissible scaffolding completion; precedent set for Patch 0561 §6 integration.
+7. **Zero documentation drift** inherited or introduced.
+8. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+9–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0560:**
+
+- **(A) Patch 0561 = §6 perturbation-locality body — SECOND INTEGRATION PATCH** per scoping document §4.2 sixth step. Primary source: `hardened_theorems/perturbation_locality_propagation.tex` (Patch 0550, 269 lines, 8-page PDF). Anticipated sub-structure: §6.1 Lemma path-amplitude expansion + §6.2 Lemma perturbed-step counting + §6.3 Lemma connected-subgraph confinement + §6.4 Theorem 6.1 perturbation-theory propagation rule + §6.5 Corollary 6.2 shell-locality at $\bigO{\delta^1}$ + §6.6 Five-class exclusion enumeration. Same parenthetical Layer label update precedent as §5. Target: 5-6 pages.
+- **(B) Patches 0562-0567 — remaining body section assembly**.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(D) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.**
+- **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch — would unlock unconditional publication-grade Layer 3 for Theorems 5.1 + 5.2 by closing exclusion class E1. **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(I)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0560 is the first integration Patch in the F.1 flagship paper assembly arc — importing publication-grade content from Patches 0551 + 0552 hardened theorem `.tex` artifacts into the §5 body via multi-block substitution (inner placeholder + both theorem environment placeholders). Theorems 5.1 + 5.2 now have full statements + proof sketches + parenthetical Layer label updates. Paper compiles cleanly to 18 pages. Approximately 55% through body-content sequence. Zero documentation drift. Methods catalogue audit Patch candidate items now total 9. Next Patch (0561) is the second integration Patch (§6, importing Patch 0550 content); same Layer label update precedent applies.

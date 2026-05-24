@@ -2985,3 +2985,71 @@ The cross-walk between the hardened theorems' local (H1)-(H3) labels and the pap
 ### §48.5 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. Body-content substitution as Layer-rigor escalation is standard paper-assembly methodology (fifth instance after Patches 0554 + 0556 + 0557 + 0558; first instance specifically targeting Layer-rigor escalation rather than new content). 8 candidate items pending evaluation at the methods catalogue audit Patch carry forward unchanged.
+
+---
+
+## §49 Patch 0560 — §5 first-shell geometric identities body insertion (FIRST INTEGRATION PATCH)
+
+**Context.** Patch 0559 inserted the §4 Mechanism A axiom body (Layer-rigor escalation). Patch 0560 is the **first integration Patch** in the assembly arc: it imports publication-grade content from Patches 0551 + 0552 hardened theorem `.tex` artifacts into the §5 body of the flagship paper. Authorised via Thomas's "Please proceed" directive following Patch 0559 ship + push at commit `060d10f`.
+
+### §49.1 What this Patch does, structurally
+
+Modifies the F.1 flagship paper's working `dynamical_substrate_law.tex` via a **multi-block substitution** covering the §5 inner-placeholder comment AND both pre-existing theorem environment placeholders. The substitution is structurally different from Patches 0556-0559 (which only substituted inner placeholder comments): Patch 0560 also replaces the two `\begin{theorem}...\end{theorem}` blocks that the Patch 0554 skeleton had placed in advance as cross-reference scaffolding.
+
+**Substitution scope** (one large block, from the §5 inner placeholder opener through the second `\end{theorem}`):
+
+1. Inner placeholder comment (lines 1-9 of the block, 9 lines): replaced with §5 body content (§5.1 + §5.2 + §5.3 setup + Theorem 5.1 environment + §5.4 setup + Theorem 5.2 environment + §5.5 + §5.6).
+2. Theorem 5.1 environment (lines 10-13 of the block): placeholder statement "[Statement to be added at Patch 0559; integrates Patch 0552 Theorem 4.2.1.]" replaced with the actual host-to-first-shell uniform projection theorem statement (Equation~\eqref{eq:host-first-shell-projection}); parenthetical Layer label updated from "sketch-document Layer 3" to "publication-grade Layer 3, conditional on G1".
+3. Theorem 5.2 environment (lines 15-18 of the block): placeholder statement replaced with the actual first-shell-to-first-shell perpendicularity theorem statement (Equation~\eqref{eq:first-shell-perpendicularity}); parenthetical Layer label updated.
+
+**Total replacement**: 18-line skeleton block → 119-line body content. Net addition: ~101 lines (~2200 words, ~3 PDF pages).
+
+Note on the Layer label update: the skeleton's placeholder parentheticals said "sketch-document Layer 3" as a generic default at Patch 0554. The hardened theorems at Patches 0551 + 0552 are at **publication-grade Layer 3** (conditional on G1). The label update from "sketch-document Layer 3" to "publication-grade Layer 3, conditional on G1" corrects the placeholder framing to match the actual rigor level of the integrated content. This is part of "completing the placeholder" — the placeholder text explicitly invited replacement, and the parenthetical Layer label was part of the placeholder framing. The §17.6 (8) immutability discipline targets substantive Patch content, not skeleton-scaffolding placeholders; the label update is permissible scaffolding completion.
+
+### §49.2 §5 body content structure
+
+The §5 body adds an opening paragraph + six subsections per the skeleton's anticipated outline:
+
+- **Opening paragraph**: integrates Patches 0551 + 0552 publication-grade hardenings as the geometric foundation for the substrate-locality theorem of §7; explicit reference to `hardened_theorems/*.tex` for full publication-grade detail.
+- **§5.1 The G1 first-shell inner-product primitive (inherited Layer 3)**: G1 restated as Lemma~\ref{lem:g1-imported} for direct citation by Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}; G1's sketch-document Layer~3 status flagged inline; Layer-rigor mismatch with publication-grade Theorems explicitly discussed (the central reason the theorems are "publication-grade Layer 3 conditional on G1").
+- **§5.2 Lemma 5.2.1 tangent-hyperplane chord length**: $|v_i - \vhost| = 1/\phig$ derived from G1 + unit-vertex normalisation via $|v_i - \vhost|^2 = 2 - \phig = \phig^{-2}$; publication-grade-hardened as Lemma 3.1.1 in both Patches 0551 + 0552 (independent re-derivations of the same algebraic identity unified here).
+- **§5.3 Theorem 5.1 (host-to-first-shell uniform projection)**: full theorem statement + proof sketch (integrating Patch 0552 §3-§4); the structural constant $-1/(2\phig)$ paragraph noting shared with Capotauro v2.0 spatial-sector substrate-locality theorem.
+- **§5.4 Theorem 5.2 (first-shell-to-first-shell perpendicularity)**: full theorem statement + proof sketch (integrating Patch 0551 §3-§4); geometric interpretation paragraph (first-shell vertices on a 2-sphere level surface of the inner-product-with-$\vhost$ function).
+- **§5.5 Exclusion class E1 (shared G1 dependency)**: both theorems take G1 as hypothesis; G1 publication-grade hardening pending (Open Problem~\ref{op:g1-hardening}); E1 is shared exclusion class in both source artifacts' five-class enumerations; a single G1 hardening Patch would close E1 for both theorems simultaneously.
+- **§5.6 Cross-reference: Capotauro v2.0 §3 spatial-sector parallel**: structural constant $-1/(2\phig)$ shared between spatial-sector (Capotauro v2.0) and temporal-sector (present paper) substrate-locality theorems; chirality continuum's two-sector umbrella structure requires the parallel; equivalence question between Theorem~\ref{thm:host-first-shell-projection} and Capotauro v2.0's Theorem 3.1.1 acknowledged but not resolved at this paper's scope.
+
+Three labeled equations introduced at §5: `eq:chord-length`, `eq:host-first-shell-projection`, `eq:first-shell-perpendicularity`. Two labeled lemmas introduced: `lem:g1-imported`, `lem:chord-length`. Theorems `thm:host-first-shell-projection`, `thm:first-shell-perpendicularity` now have substantive content (previously placeholders).
+
+### §49.3 Layer-distinction discipline at §5
+
+§5 is the first body section where the Layer hierarchy operates non-trivially: two theorems at publication-grade Layer 3 conditional on a sketch-document-Layer-3 inherited primitive (G1). The discipline operationalises at three concrete points:
+
+1. **Layer label on theorem statement parentheticals**: both Theorems 5.1 and 5.2 carry "publication-grade Layer 3, conditional on G1" in their parenthetical labels. The conditionality is visible at theorem-statement level, not deferred to §8 (Layer 3 stack discussion).
+
+2. **§5.1's Layer-rigor mismatch paragraph**: the inherited G1's sketch-document Layer 3 status is flagged immediately as the reason Theorems 5.1 + 5.2 are conditional rather than unconditional at publication-grade Layer 3. The reader knows from §5.1 forward that G1 hardening is the unlock for the trio's full unconditional rigor.
+
+3. **§5.5 exclusion class E1 discussion**: the shared G1 dependency is given its own subsection. The conditionality structure ("publication-grade Layer 3 conditional on G1, unlocked by future G1 hardening Patch") is operationalised at the integration level, not buried in the theorem statements.
+
+The discipline is sustained without erosion. The §5.6 Capotauro cross-reference also explicitly preserves the equivalence question as a corpus-level open question, not resolving it at this paper's scope.
+
+### §49.4 Skeleton placeholder completion vs §17.6 (8) immutability discipline
+
+The Patch 0560 substitution touches both inner-placeholder comments AND theorem environment placeholders that were pre-placed in the Patch 0554 skeleton. The §17.6 (8) discipline targets substantive Patch content modifications (e.g., changing a derived theorem statement after publication, modifying a proof after reviewer engagement). It does not target scaffolding completion — the skeleton's placeholders explicitly invited replacement at Patch 0559 (now Patch 0560). Three judgments at this Patch:
+
+1. **Inner placeholder substitution**: standard; per Patches 0556-0559 precedent.
+2. **Theorem environment content replacement**: standard placeholder completion. The placeholder text "[Statement to be added at Patch 0559; integrates Patch 0552 Theorem 4.2.1.]" is explicitly an invitation to replacement.
+3. **Parenthetical Layer label update** ("sketch-document Layer 3" → "publication-grade Layer 3, conditional on G1"): the label was part of the placeholder framing at Patch 0554 (when the integration approach was not yet finalised). The update reflects the actual rigor level of the integrated content. This is scaffolding completion, not Patch-0554-content modification.
+
+These three judgments establish precedent for the §6 integration Patch (Patch 0561), which will similarly need to update the Theorem 6.1 + Corollary 6.2 parenthetical Layer labels from "sketch-document Layer 3" to "publication-grade Layer 3" (Patch 0550 hardened theorem). The §17.6 (8) discipline is preserved: no Patch 0554-content modifications beyond skeleton-placeholder completion.
+
+### §49.5 Self-checkpoint — three places §49.1-§49.4 could overstate
+
+1. **The "first integration Patch" framing**: §5 imports content from Patches 0551 + 0552. §6 (Patch 0561) will similarly import Patch 0550 content. There are two integration Patches in the arc, not one. The "first" framing at §49.1 is chronological, not unique.
+
+2. **The "publication-grade Layer 3, conditional on G1" framing for Theorems 5.1 + 5.2**: this is a paper-level claim. The source artifacts (Patches 0551 + 0552) state the rigor level as "publication-grade Layer 3 conditional on G1 + (other hypotheses)" using the (H1)-(H3) hypothesis labels of each artifact's five-class enumeration. The paper's framing ("conditional on G1") foregrounds G1 specifically because G1 is the SHARED dependency between the two theorems and is the load-bearing item flagged at Open Problem~\ref{op:g1-hardening}. Other hypotheses (Reading C, unit-vertex normalisation) are also conditions but are not flagged because they are taken as definitional at the present paper's scope. The paper's framing is consistent with but more focused than the source artifacts' framing.
+
+3. **The "skeleton placeholder completion vs immutability" judgments at §49.4**: these are precedent-setting judgments at this Patch. If a future Patch (e.g., Patch 0561) makes different choices about which parts of the Patch 0554 skeleton are or are not immutable, the precedent at §49.4 could be revised. The judgments are operational at the present integration step, not absolute.
+
+### §49.6 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The integration-Patch pattern (importing publication-grade hardened theorem content into a flagship paper via theorem-statement replacement + proof-sketch summary + reference to source artifact for full rigor) is at the first instance at this Patch; if a similar pattern appears at Patch 0561 (§6 integration of Patch 0550 hardened theorem) and at future flagship papers' integration Patches, the pattern becomes a candidate for methods catalogue audit. **NEW candidate added to methods catalogue audit Patch queue: integration-Patch pattern for publication-grade hardened theorem import into flagship paper body.** Methods catalogue audit Patch now has 9 candidate items (was 8 at Patch 0559).

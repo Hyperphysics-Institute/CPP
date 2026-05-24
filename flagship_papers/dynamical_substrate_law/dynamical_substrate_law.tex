@@ -470,24 +470,125 @@ A note on terminology: we use ``framework axiom'' rather than ``axiom'' simplici
 \section{The first-shell geometric identities}
 \label{sec:first-shell-identities}
 
-% [Body content to be added at Patch 0559. Sub-structure anticipated:
-%   §5.1 The G1 first-shell inner-product primitive (inherited Layer 3)
-%   §5.2 Lemma 3.1.1: tangent-hyperplane chord length (1/phi)
-%   §5.3 Theorem 5.1 (host-to-first-shell uniform projection;
-%        from Patch 0552 .tex content)
-%   §5.4 Theorem 5.2 (first-shell-to-first-shell perpendicularity;
-%        from Patch 0551 .tex content)
-%   §5.5 Exclusion class E1 (shared G1 dependency)
-%   §5.6 Cross-reference: Capotauro v2.0 §3 spatial-sector parallel]
-\begin{theorem}[Host-to-first-shell uniform projection; sketch-document Layer 3]
+% [Body added at Patch 0560 per scoping doc §4.2 fifth step.
+%  FIRST INTEGRATION PATCH IN THE ASSEMBLY ARC.
+%  Primary sources: hardened_theorems/host_to_first_shell_projection.tex
+%  (Patch 0552, 265 lines, 7-page PDF) +
+%  hardened_theorems/first_shell_perpendicularity.tex
+%  (Patch 0551, 207 lines, 6-page PDF). Integrated treatment of Theorems
+%  4.1.1 + 4.2.1 from those artifacts as Theorems 5.1 + 5.2 here, with
+%  shared G1 dependency (exclusion class E1) and Capotauro v2.0 §3
+%  spatial-sector cross-reference.]
+
+This section integrates the publication-grade hardenings of Patches~0551 and~0552 (the second and third of the F.1 hardened-theorem trio) as the geometric foundation for the substrate-locality theorem of \S\ref{sec:substrate-locality-theorem}. Both theorems are at \emph{publication-grade Layer~3} rigor in the source artifacts at \texttt{hardened\_theorems/}, with explicit hypothesis tracking and five-class exclusion enumeration. Here we provide formal statements (Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}), proof sketches drawing on the geometric primitives of \S\ref{sec:first-shell-primitives}, and discussion of the shared exclusion class~E1 (G1 publication-grade hardening pending; Open Problem~\ref{op:g1-hardening}). For full publication-grade detail (including the complete five-class exclusion enumerations and explicit hypothesis-tracking proofs), we refer to the source artifacts directly.
+
+\subsection{The G1 first-shell inner-product primitive (inherited Layer 3)}
+\label{sec:g1-primitive-recap}
+
+We restate the first-shell inner-product primitive G1 of \S\ref{sec:first-shell-primitives} as a labelled lemma for direct citation by Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}:
+
+\begin{lemma}[G1, first-shell inner-product primitive; imported from Patch~0541 \S3.1 at sketch-document Layer~3]
+\label{lem:g1-imported}
+Under vertex-aligned Reading~C (Equation~\eqref{eq:reading-c-alignment}) and unit-vertex normalisation, for every first-shell vertex $v_i$ of $\vhost$ in the 600-cell,
+\begin{equation}
+v_i \cdot \vhost = \phig / 2, \qquad i = 1, 2, \ldots, 12,
+\end{equation}
+where $\phig = (1 + \sqrt{5})/2$ is the golden ratio.
+\end{lemma}
+
+G1 is derived in Patch~0541 \S3.1 from the 600-cell first-shell-edge dihedral angle $\cos(36^{\circ}) = \phig/2$ together with the unit-vertex normalisation, at \emph{sketch-document} Layer~3 rigor. Its publication-grade hardening is registered as Open Problem~\ref{op:g1-hardening} and is the \emph{shared exclusion class E1} of Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity} (\S\ref{sec:exclusion-e1} below). This Layer-rigor mismatch --- two publication-grade-hardened theorems with a sketch-document-Layer-3 inherited primitive as load-bearing input --- is the central reason Theorems~5.1 and~5.2 are at publication-grade Layer~3 \emph{conditional on G1}, rather than publication-grade Layer~3 unconditionally.
+
+\subsection{Lemma 5.2.1: tangent-hyperplane chord length}
+\label{sec:tangent-hyperplane-chord-length}
+
+The short-edge chord length between $\vhost$ and any first-shell neighbour is fixed at $1/\phig$ by G1 and the unit-vertex normalisation:
+
+\begin{lemma}[Tangent-hyperplane chord length]
+\label{lem:chord-length}
+Under Lemma~\ref{lem:g1-imported} (G1) and unit-vertex normalisation, for every first-shell vertex $v_i$ of $\vhost$,
+\begin{equation}
+|v_i - \vhost| = 1 / \phig.
+\label{eq:chord-length}
+\end{equation}
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+By unit-vertex normalisation, $|v_i| = |\vhost| = 1$. By Lemma~\ref{lem:g1-imported} (G1), $v_i \cdot \vhost = \phig/2$. Expanding,
+\[
+|v_i - \vhost|^2 = |v_i|^2 + |\vhost|^2 - 2 v_i \cdot \vhost = 2 - \phig = \phig^{-2},
+\]
+where the last equality uses the golden-ratio identity $\phig^2 = \phig + 1$ (equivalently, $2 - \phig = 1/\phig^2$). Taking square roots gives Equation~\eqref{eq:chord-length}.
+\end{proof}
+
+Lemma~\ref{lem:chord-length} is the chord-length input used in the host-to-first-shell unit-direction vectors of Equation~\eqref{eq:host-to-shell-unit-direction}. It is publication-grade-hardened as Lemma~3.1.1 in both Patch~0551 and Patch~0552 source artifacts (the two hardenings are independent re-derivations of the same algebraic identity; we adopt the unified statement here).
+
+\subsection{Theorem 5.1: host-to-first-shell uniform projection}
+\label{sec:host-first-shell-projection}
+
+\begin{theorem}[Host-to-first-shell uniform projection; publication-grade Layer 3, conditional on G1]
 \label{thm:host-first-shell-projection}
-[Statement to be added at Patch 0559; integrates Patch 0552 Theorem 4.2.1.]
+Under vertex-aligned Reading~C (Equation~\eqref{eq:reading-c-alignment}), 600-cell unit-vertex normalisation, and the first-shell inner-product primitive G1 (Lemma~\ref{lem:g1-imported}), every host-to-first-shell unit direction $\hat{u}_i = (v_i - \vhost) / |v_i - \vhost|$ satisfies
+\begin{equation}
+\hat{u}_i \cdot \hat{n} = -\frac{1}{2 \phig}, \qquad i = 1, 2, \ldots, 12,
+\label{eq:host-first-shell-projection}
+\end{equation}
+exactly and uniformly across all 12 first-shell neighbours of $\vhost$, where $\phig = (1 + \sqrt{5})/2$.
 \end{theorem}
 
-\begin{theorem}[First-shell-to-first-shell perpendicularity; sketch-document Layer 3]
+\begin{proof}[Proof sketch (full proof at \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex})]
+By Lemma~\ref{lem:chord-length}, $|v_i - \vhost| = 1/\phig$. Under vertex-aligned Reading~C, $\hat{n} = \vhost$. Then
+\[
+\hat{u}_i \cdot \hat{n} = \frac{(v_i - \vhost) \cdot \vhost}{|v_i - \vhost|} = \frac{v_i \cdot \vhost - |\vhost|^2}{1/\phig} = \phig \left( \frac{\phig}{2} - 1 \right) = \phig \cdot \frac{\phig - 2}{2}.
+\]
+Using $\phig^2 = \phig + 1$ (equivalently $\phig - 2 = -\phig^{-2}$), this simplifies to
+\[
+\hat{u}_i \cdot \hat{n} = \phig \cdot \frac{-\phig^{-2}}{2} = -\frac{1}{2\phig}.
+\]
+The result is independent of $i$: every first-shell neighbour gives the same projection. Uniformity across $i$ follows from the uniformity of G1 (Lemma~\ref{lem:g1-imported}, which holds for every $i$) and the icosahedral residual symmetry $H_3 = I_h$ at $\vhost$ acting transitively on the 12 first-shell vertices.
+\end{proof}
+
+The structural constant $-1/(2\phig)$ is shared with the Capotauro~v2.0 spatial-sector substrate-locality theorem (Capotauro~v2.0 \S3) and is the geometric origin of the cage-shell factor $1/6$ appearing in the F.2 + F.3 trajectories' substrate-Wigner-Eckart datum construction (cf.\ \S\ref{sec:capotauro-cross-reference}). The constant's appearance is not coincidental: it reflects the same first-shell first-order geometric constraint operating in both the spatial sector (Capotauro v2.0 manifestations (i)--(iii)) and the temporal sector (the present paper's manifestation (iv)) of the chirality continuum.
+
+\subsection{Theorem 5.2: first-shell-to-first-shell perpendicularity}
+\label{sec:first-shell-perpendicularity}
+
+\begin{theorem}[First-shell-to-first-shell perpendicularity; publication-grade Layer 3, conditional on G1]
 \label{thm:first-shell-perpendicularity}
-[Statement to be added at Patch 0559; integrates Patch 0551 Theorem 4.1.1.]
+Under vertex-aligned Reading~C (Equation~\eqref{eq:reading-c-alignment}), 600-cell unit-vertex normalisation, and the first-shell inner-product primitive G1 (Lemma~\ref{lem:g1-imported}), every first-shell-to-first-shell unit-direction vector $\hat{e}_{ij} = (v_j - v_i) / |v_j - v_i|$ between adjacent first-shell vertices $v_i$ and $v_j$ of $\vhost$ satisfies
+\begin{equation}
+\hat{e}_{ij} \cdot \hat{n} = 0,
+\label{eq:first-shell-perpendicularity}
+\end{equation}
+exactly, for every adjacent pair of first-shell vertices.
 \end{theorem}
+
+\begin{proof}[Proof sketch (full proof at \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex})]
+Under vertex-aligned Reading~C, $\hat{n} = \vhost$. For any pair of first-shell vertices $v_i, v_j$,
+\[
+(v_j - v_i) \cdot \vhost = v_j \cdot \vhost - v_i \cdot \vhost = \frac{\phig}{2} - \frac{\phig}{2} = 0,
+\]
+where the second equality uses Lemma~\ref{lem:g1-imported} (G1) applied twice. Therefore $\hat{e}_{ij} \cdot \hat{n} = 0$ exactly, regardless of whether $v_i, v_j$ are adjacent on the first-shell icosahedron or not. Equivalently: the first-shell vertices all lie in the tangent hyperplane at $\vhost$ orthogonal to $\hat{n}$, so any displacement vector between two first-shell vertices is itself tangent to that hyperplane and perpendicular to $\hat{n}$.
+\end{proof}
+
+The geometric interpretation is direct: the 12 first-shell vertices lie on a 2-sphere in $\mathbb{R}^4$ (the icosahedral configuration of identity G2 in \S\ref{sec:first-shell-primitives}), with all 12 at the same inner-product distance $\phig/2$ from $\vhost$. The 2-sphere is therefore a level surface of the inner-product-with-$\vhost$ function, and any vector between two points on a level surface is tangent to it.
+
+\subsection{Exclusion class E1 (shared G1 dependency)}
+\label{sec:exclusion-e1}
+
+Both Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity} take G1 (Lemma~\ref{lem:g1-imported}) as a hypothesis. At the present paper's scope, G1 is at \emph{sketch-document} Layer~3 rigor (Patch~0541 \S3.1). The full publication-grade hardening of G1 --- deriving $v_i \cdot \vhost = \phig/2$ uniformly across all 12 first-shell vertices from 600-cell coordinate primitives plus the icosahedral residual symmetry $H_3 = I_h$, with explicit hypothesis tracking and exclusion enumeration in a dedicated `.tex` artifact --- is registered as exclusion class \emph{E1} in both Patch~0551 and Patch~0552 hardened-theorem artifacts (where the five-class exclusion enumerations agree on E1 = ``G1 publication-grade hardening pending'').
+
+Consequence: Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity} are at publication-grade Layer~3 rigor \emph{conditional on} G1; their full unconditional publication-grade rigor is unlocked by closing exclusion class E1 in a future G1 publication-grade hardening Patch. The hardening can proceed independently of the present flagship paper's assembly (a separate forward-queue item per the scoping document; cf.\ also \S\ref{sec:open-questions} Open Problem~\ref{op:g1-hardening}).
+
+The structural reason exclusion class E1 is shared between Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity} is that both depend on the same inner-product structure $v_i \cdot \vhost = \phig/2$: Theorem~\ref{thm:host-first-shell-projection} uses G1 for the algebraic derivation of the projection $\hat{u}_i \cdot \hat{n} = -1/(2\phig)$, and Theorem~\ref{thm:first-shell-perpendicularity} uses G1 (applied twice, once at $v_i$ and once at $v_j$) for the perpendicularity $\hat{e}_{ij} \cdot \hat{n} = 0$. A single hardening of G1 would close E1 for both theorems simultaneously.
+
+\subsection{Cross-reference: Capotauro v2.0 §3 spatial-sector parallel}
+\label{sec:capotauro-cross-reference}
+
+The structural constant $-1/(2\phig)$ appearing in Theorem~\ref{thm:host-first-shell-projection} is shared with the Capotauro~v2.0 paper's spatial-sector substrate-locality theorem (Capotauro v2.0 \S3, Theorem 3.1.1 of that paper). The Capotauro v2.0 result governs the spatial-sector manifestations (i)--(iii) of \texttt{OPEN-SD-CHIR-PRIMITIVE} (parity violation, neutrino chirality structure, weak isospin assignment); the present paper's Theorem~\ref{thm:host-first-shell-projection} governs the temporal-sector manifestation~(iv) (thermodynamic causal arrow). Both arise from the same first-shell first-order geometric constraint at vertex-aligned Reading~C in the 600-cell.
+
+The chirality continuum architecture (Capotauro v2.0 \S20 + chirality continuum sketch document) anticipates this structural parallel: spatial and temporal sectors share a substrate-direction primitive $\hat{n}$ with the same first-shell geometric content (G1 + G2), and the same projection constant $-1/(2\phig)$ governs both. The structural parallel is therefore not coincidental --- it is required by the chirality continuum's two-sector umbrella structure. Whether Theorem~\ref{thm:host-first-shell-projection} of the present paper is logically equivalent to Capotauro v2.0's Theorem 3.1.1, or merely derives the same constant through a parallel construction, is a corpus-level question outside the present paper's scope; the chirality continuum sketch document (\S3.2 of that artifact) discusses the equivalence question without resolving it.
+
+Theorem~\ref{thm:host-first-shell-projection} suffices for the substrate-locality theorem of \S\ref{sec:substrate-locality-theorem} regardless of which side of the equivalence question one takes: the structural constant $-1/(2\phig)$ is the same constant, derived under the same hypotheses (Reading~C + G1 + 600-cell unit-vertex normalisation), with the same proof structure. The temporal-sector specialisation enters through Mechanism~A (\S\ref{sec:mechanism-a}) and the framework-local current construction (Axiom MA.2), not through Theorem~\ref{thm:host-first-shell-projection} itself.
 
 % ============================================================
 % §6 The perturbation-theory propagation rule
