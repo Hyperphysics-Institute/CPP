@@ -3398,3 +3398,78 @@ The current Patch (0566) commits to Option B (explicit `\bibitem{}` entries in `
 ### §55.5 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. The bibliography-population Patch pattern (populating empty bibliography environment with corpus-reference `\bibitem{}` entries while preserving body inline-reference style) is at first instance at this Patch. If a similar pattern appears at downstream flagship papers, it becomes a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.
+
+---
+
+## §56 Patch 0567 — Final polish: date metadata + CHANGELOG comment + abstract OP count
+
+**Context.** Patch 0566 populated the bibliography (13 `\bibitem{}` entries; body unchanged; Option B chosen). Patch 0567 is final polish before reviewer engagement (Patches 0568-0569+0569a) and v1.0 SHIP (Patch 0570). The forward queue at Patch 0566 specified: "typos + cross-reference verification + format consistency + abstract finalisation + author/affiliation block. Plus the three bibliography style refinement candidates from Tier 4 §55.4." Authorised via Thomas's "Please proceed" directive following Patch 0566 ship + push at commit `79f0538`.
+
+### §56.1 Polish targets identified during survey
+
+A survey of the paper at Patch 0566 state identified the following polish targets, sorted by priority:
+
+**HIGH (substantive)**:
+1. `\date{}` line — stale: still reads "Version 0.1 (skeleton), 23 May 2026" from Patch 0554 paper-skeleton state.
+2. Top-of-file CHANGELOG comment block — stale: describes Patch 0554 paper-skeleton state with body sections to be added at Patches 0555-0564 (pre-execution); paper is now feature-complete.
+3. Abstract Open Problem count — wrong: says "Three explicit open higher-order questions are flagged" but the paper has 5 Open Problems in §9.
+
+**LOW (declined for this Patch)**:
+4. 37 overfull/underfull hbox warnings — typesetting concerns (worst ~107pt too wide). Working-paper / preprint norms accept this; aesthetic refinement not critical for v1.0.
+5. Hyperref "Token not allowed in PDF string" warnings — benign; LaTeX math/special chars in section names getting into PDF metadata. Could suppress with `\texorpdfstring` but not blocking.
+6. Bibliography style refinement candidates (Tier 4 §55.4: `\cite{}` integration, BibTeX file integration, bibliography expansion) — deferred. Rationale at §56.3.
+
+**ABSENT (clean)**:
+7. No double-word typos detected.
+8. No trailing whitespace.
+9. No undefined references in compile log.
+10. No multiply-defined labels.
+
+### §56.2 The 3 polish edits
+
+**Edit 1: `\date{}` line update**
+- From: `\date{Version 0.1 (skeleton), 23 May 2026}`
+- To: `\date{Version 0.9 (pre-v1.0; awaiting reviewer engagement), 23 May 2026}`
+
+Rationale: paper is feature-complete (body + bibliography) but not yet SHIPPED at v1.0. Convention used in CPP corpus: vN.M where N is major version (0 = pre-SHIP; 1 = SHIPPED). Version 0.9 signals "feature-complete pending reviewer engagement"; will become Version 1.0 at Patch 0570 SHIP.
+
+**Edit 2: Top-of-file CHANGELOG comment block update**
+- From: 17-line block describing Patch 0554 skeleton state with body sections to be added at Patches 0555-0564 (pre-execution).
+- To: 41-line block describing current state including: Patch 0567 final polish; feature-complete state (§1-§10 + bibliography; 31 pages); full build history from Patch 0554 skeleton through Patch 0567; forward queue from this Patch (reviewer engagement at 0568-0569+0569a; v1.0 SHIP at 0570); anti-priorities sustained.
+
+The new CHANGELOG comment block explicitly notes:
+- Body-content assembly arc completed at Patch 0565 (§10 conclusion);
+- Bibliography populated at Patch 0566 (Option B: explicit `\bibitem{}` entries; body unchanged);
+- Final polish at Patch 0567 (this Patch);
+- Anti-erasure discipline named at §8.3 closing paragraph (Patch 0563);
+- 5-Open-Problem commitment preserved end-to-end.
+
+**Edit 3: Abstract Open Problem count correction**
+- From: "Three explicit open higher-order questions are flagged: [...3 entries listed...]."
+- To: "Five open higher-order questions are registered (Section~\ref{sec:open-questions}); the three core extension/derivation questions are: [...3 entries listed identically...]. Two additional research-direction-choosing questions register the broader chirality continuum (Open~Problem~\ref{op:sector5-schema}, Sector-5 schema instantiation) and Reading~C-variant programmes (Open~Problem~\ref{op:non-vertex-aligned-c}, non-vertex-aligned Reading~C variants)."
+
+Rationale: paper has 5 Open Problems in §9, not 3 as the abstract stated. The original 3 in the abstract were the core extension/derivation questions; OPEN-FP-F1-4 (Sector-5) and OPEN-FP-F1-5 (Reading C variants) are research-direction-choosing rather than derivation extensions. Both categorisations are retained in the updated text. The cross-reference to §9 is now explicit.
+
+### §56.3 Bibliography style refinement candidates: decision
+
+Three candidates from Tier 4 §55.4 considered at this Patch:
+
+1. **`\cite{}` integration** — DECLINED at this Patch. Substantively modifies §1-§10 body content; the body has been built up consistently with inline parenthetical references across 10 body-content Patches. Changing to `\cite{}` style would invalidate that editorial consistency. Decision deferred to post-reviewer-engagement, with the inline-reference style preserved as the paper's working-paper / preprint convention.
+
+2. **BibTeX file integration** — DECLINED at this Patch. Depends on `\cite{}` integration as prerequisite. Same decision as (1).
+
+3. **Bibliography expansion (external references)** — DEFERRED to Patch 0568 reviewer engagement cycle (or later). Rationale: external reference additions are best driven by reviewer feedback identifying specific gaps; preemptive additions at this Patch could introduce material that reviewers find inappropriate.
+
+All three candidates remain registered for future deliberation post-reviewer-engagement; none are executed at this Patch.
+
+### §56.4 Layer-distinction discipline at §10 footer + bibliography note: preserved
+
+§10's existing Layer-distinction operationalisations (Patch 0549 framing preserved verbatim; two-part contribution decomposition; Open Problem cross-references) are unchanged at Patch 0567. The §10 closing paragraph remains the authoritative location for the F.1 sub-question's status framing. The bibliography opening note comment from Patch 0566 (flagging Patch 0567 candidate refinements) is unchanged. The polish edits preserve the substantive Layer-rigor structure throughout.
+
+### §56.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The final-polish Patch pattern (multi-edit Patch with date metadata + CHANGELOG comment + abstract polish + bibliography style decision) is at first instance at this Patch for the F.1 flagship paper. If a similar pattern appears at downstream flagship papers, it becomes a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.
+
+### §56.6 Multi-edit Patch pattern
+
+Patch 0567 is structurally different from the single-substitution body-content Patches: it makes 3 separate edits to non-adjacent locations in the file. The apply script implements this via a Python loop over an edit-specs list, applying each `text.replace(old, new, 1)` operation sequentially and verifying single-occurrence preflight check. This pattern may recur at future final-polish Patches; it differs from the build-script pattern used through Patches 0556-0566.

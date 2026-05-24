@@ -1095,3 +1095,43 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(D)** Methods catalogue audit (9 candidates). **(E)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable). **(F)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(I)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0566 populates the empty `\thebibliography{99}` environment with 13 corpus-reference `\bibitem{}` entries — 9 CPP corpus + 1 external + 3 supporting (operating-system template + book project + Coxeter polytopes book). Body unchanged; inline parenthetical references throughout §1-§10 remain the in-text citation style; the bibliography serves as a formal references list. Three Patch 0567 candidate refinements registered for deliberation (`\cite{}` integration; BibTeX file integration; bibliography expansion). Paper compiles cleanly to 31 pages within 30-35 page final target. Zero documentation drift. Next Patch (0567) is final polish.
+
+---
+
+## Transaction 054 — Patch 0567 (Final polish; 3 edits + bibliography style decision)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=79f0538` = Patch 0566 bibliography body).
+**Branch:** main.
+**Patch type:** Substantive content / multi-edit (3 separate edits to non-adjacent locations; first instance of multi-edit pattern at F.1 trajectory).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0566 ship + push at commit `79f0538`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (3 separate edits: Edit 1 `\date{}` line; Edit 2 top-of-file CHANGELOG comment block; Edit 3 abstract Open Problem count correction). Paper compiles cleanly to 31 pages.
+2. APPEND — Tier 4 §56 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (6 subsections: §56.1 polish targets identified during survey + §56.2 the 3 polish edits + §56.3 bibliography style refinement candidates decision + §56.4 Layer-distinction discipline at §10 footer preserved + §56.5 methods catalogue Step E audit verdict + §56.6 multi-edit Patch pattern).
+3. APPEND — Vignette 44 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 054 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0567 entry; Patch 0566 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Final-polish Patch pattern at first instance. Candidate count remains at 9.
+
+**Programme state changes at Patch 0567:**
+
+1. **Paper is v1.0-ready**: feature-complete (§1-§10 + bibliography); final polish applied (date metadata + CHANGELOG + abstract OP count); compiles cleanly to 31 pages.
+2. **3 polish edits applied**: Edit 1 `\date{}` line → "Version 0.9 (pre-v1.0; awaiting reviewer engagement)"; Edit 2 top-of-file CHANGELOG comment block → 41-line block describing build history Patch 0554-0567 + forward queue; Edit 3 abstract Open Problem count → "Five" with 3 core + 2 research-direction-choosing categorised.
+3. **Bibliography style decision (Tier 4 §56.3)**: all 3 candidates declined/deferred at this Patch: `\cite{}` integration declined (would invalidate 10-Patch editorial consistency of inline references); BibTeX integration declined (depends on (1)); bibliography expansion deferred to reviewer-engagement-driven additions.
+4. **Layer-distinction discipline at §10 unchanged**: Patch 0549 framing preserved verbatim; two-part contribution decomposition; Open Problem cross-references all sustained.
+5. **First instance of multi-edit Patch pattern** at F.1 trajectory documented at Tier 4 §56.6.
+6. **Zero documentation drift** inherited or introduced.
+7. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+8–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0567:**
+
+- **(A) Patches 0568-0569+0569a — reviewer engagement cycle.** ChatGPT primary reviewer per `relationship_protocol.md` six-principle standard; Copilot + Grok backup; Patch 0569a optional reviewer-feedback-driven adjustments.
+- **(B) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.** Update `\date{}` to "Version 1.0, [SHIP date]"; commit PDF to repo per session 142 PDF-in-repo policy + SF-4 precedent; OSF deposit pending.
+- **(C)** Methods catalogue audit Patch (9 candidates). **(D)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable). **(E)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(F)** F.2/F.3 trajectory openings. **(G)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(H)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0567 applies 3 polish edits to make the paper v1.0-ready: date metadata updated to Version 0.9 (pre-v1.0); top-of-file CHANGELOG comment expanded from skeleton-state to full build history; abstract Open Problem count corrected from 3 to 5. Bibliography style refinement candidates declined / deferred per Tier 4 §56.3. Multi-edit Patch pattern at first instance at F.1 trajectory documented. Paper compiles cleanly to 31 pages. Zero documentation drift. Next: Patches 0568-0569+0569a reviewer engagement cycle.

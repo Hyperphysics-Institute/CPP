@@ -1033,3 +1033,29 @@ Methods catalogue Step E audit per §29.4: no new METH entry. The bibliography-p
 Patch 0566 introduces no new deferred items. Patch 0567 starts with clean state plus the three bibliography style refinement candidates registered for deliberation.
 
 Forward queue post-Patch 0566: Patch 0567 = final polish. Anticipated tasks per scoping doc + standard flagship paper completion: typos + cross-reference verification + format consistency + abstract finalisation + author/affiliation block. Plus the three bibliography style refinement candidates from Tier 4 §55.4 (decision required at Patch 0567): (1) `\cite{}` integration; (2) BibTeX file integration; (3) bibliography expansion. Target: 1-2 Patches depending on bibliography style decision.
+
+---
+
+## Vignette 44 — Patch 0567: Final polish (date metadata + CHANGELOG comment + abstract OP count)
+
+Patch 0567 is the final polish Patch before reviewer engagement and v1.0 SHIP. It makes 3 substantive edits to non-adjacent locations in the paper: `\date{}` line update from skeleton-version to pre-v1.0 state; top-of-file CHANGELOG comment block update from Patch 0554 skeleton-state to feature-complete state; abstract Open Problem count corrected from "Three" to "Five" while preserving the listed three core questions and adding the two research-direction-choosing questions.
+
+The multi-edit Patch pattern is structurally different from the single-substitution body-content Patches (0556-0566): instead of one large substitution block, the apply script applies 3 separate edits via Python `text.replace(old, new, 1)` operations with single-occurrence preflight verification for each. This is the first instance of this pattern at the F.1 flagship paper trajectory.
+
+The most consequential editorial decision at this Patch is **what to defer to later Patches**. Three categories of polish work were considered: (a) substantive edits that should land before v1.0 — date metadata, CHANGELOG comment, abstract accuracy; (b) editorial refinements that could wait — overfull hbox warnings (typesetting); hyperref PDF-string warnings (cosmetic); (c) bibliography style refinement candidates from Tier 4 §55.4 — `\cite{}` integration, BibTeX integration, bibliography expansion.
+
+Category (a) is executed at this Patch (3 edits). Category (b) is declined: aesthetic refinements not critical for v1.0; working-paper / preprint conventions accept current state. Category (c) is declined / deferred: `\cite{}` and BibTeX integration would substantively modify §1-§10 body content (which has been built consistently with inline parenthetical references across 10 body-content Patches); bibliography expansion is best driven by reviewer feedback identifying specific gaps.
+
+The 3 edits preserve the substantive paper content unchanged. §1-§10 body content is untouched. The bibliography 13 `\bibitem{}` entries are untouched. The polish edits affect only: (i) the date line in the preamble; (ii) the top-of-file comment block (a meta-comment that does not affect rendered output); (iii) one paragraph in the abstract correcting an OP count.
+
+Cross-reference verification: the compile log at Patch 0566 state showed no undefined references, no multiply-defined labels, only benign hyperref warnings and overfull hbox warnings. The Patch 0567 build maintains this clean state. The 31-page compile result is preserved exactly.
+
+Layer-distinction discipline at §10 (Patch 0549 framing preserved verbatim; two-part contribution decomposition; Open Problem cross-references sustained) is unchanged at this Patch. The abstract update (Edit 3) actually strengthens the Layer-distinction discipline by accurately representing the paper's 5-Open-Problem structure rather than the 3-OP undercounting in the skeleton-drafted abstract.
+
+Bibliography style decision documented at Tier 4 §56.3: all three Patch 0567 candidate refinements (Tier 4 §55.4) declined / deferred for this Patch. `\cite{}` integration and BibTeX integration are substantive editorial changes that should follow reviewer engagement, not precede it. Bibliography expansion is best driven by reviewer-identified gaps. The paper ships v1.0 at Patch 0570 with the inline-reference style + 13-entry `\bibitem{}` bibliography in place.
+
+Methods catalogue Step E audit per §29.4: no new METH entry. Final-polish Patch pattern at first instance.
+
+Patch 0567 introduces no new deferred items. The 3 bibliography style refinement candidates from §55.4 remain registered for future deliberation (post-reviewer-engagement).
+
+Forward queue post-Patch 0567: paper is **v1.0-ready**. Patches 0568-0569+0569a reviewer engagement cycle. Patch 0570 v1.0 SHIP with PDF committed and possible date update to v1.0.

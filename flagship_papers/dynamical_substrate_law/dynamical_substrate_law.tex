@@ -4,20 +4,48 @@
 %   Reading C in the 600-Cell
 % Conscious Point Physics Flagship Paper Series (F-line)
 %
-% Version 0.1 -- 23 May 2026 (Session 142, Patch 0554 — Paper skeleton
-%   creation. First .tex artifact for the F.1 flagship paper assembly
-%   multi-Patch arc opened at Patch 0553. Preamble + section headers
-%   + title + abstract draft only; no body content at this Patch.
-%   Body sections to be added one-per-Patch across Patches 0555-0564
-%   per F1_flagship_paper_assembly_scoping.md §4.2-§4.5. Three
-%   publication-grade hardened theorem artifacts at
+% Version 0.9 -- 23 May 2026 (Session 142, Patch 0567 — final polish
+%   pre-v1.0 SHIP. Paper is feature-complete: §1-§10 body content,
+%   bibliography with 13 \bibitem{} entries, and full cross-reference
+%   resolution all in place. Compiles cleanly to 31 pages.
+%
+%   Build history:
+%     Patch 0554 — paper skeleton created (preamble + section headers
+%       + title + abstract draft + 5 Open Problem placeholders)
+%     Patches 0556-0565 — 10-Patch body-content assembly arc:
+%       Patch 0556 §1 introduction; Patch 0557 §2 F.1 sub-question;
+%       Patch 0558 §3 framework primitives; Patch 0559 §4 Mechanism A;
+%       Patch 0560 §5 first-shell identities (FIRST integration Patch,
+%         importing Patches 0551+0552 hardened theorems);
+%       Patch 0561 §6 perturbation-locality (SECOND integration Patch,
+%         importing Patch 0550 hardened theorem);
+%       Patch 0562 §7 substrate-locality umbrella theorem
+%         (constructed from §5+§6 inputs at sketch-document Layer 3);
+%       Patch 0563 §8 Layer 3 stack (collation with explicit Layer
+%         hierarchy table);
+%       Patch 0564 §9 open questions body (5 Open Problem statements);
+%       Patch 0565 §10 conclusion (final body-section Patch);
+%     Patch 0566 — bibliography body (13 \bibitem entries; Option B:
+%       explicit entries with body unchanged)
+%     Patch 0567 — final polish: date metadata + CHANGELOG comment
+%       + abstract Open Problem count corrected from 3 to 5
+%
+%   The three publication-grade hardened theorem artifacts at
 %   `flagship_papers/dynamical_substrate_law/hardened_theorems/`
-%   (Patches 0550 + 0551 + 0552, 741 lines LaTeX combined) supply
-%   §5 and §6 body content as direct integration inputs. ChatGPT
-%   load-bearing principle codified at scoping doc anti-priority #8:
-%   preserve Layer distinction + conditionality + open higher-order
-%   questions; do not erase uncertainty structure during paper
-%   polishing.)
+%   (Patches 0550 + 0551 + 0552, 741 lines LaTeX combined) supplied
+%   §5 and §6 body content as direct integration inputs.
+%
+%   Forward queue from this Patch: Patches 0568-0569+0569a reviewer
+%   engagement cycle; Patch 0570 v1.0 SHIP with PDF committed.
+%
+%   Anti-priorities sustained throughout assembly per scoping doc:
+%     preserve Layer distinction + conditionality + open higher-order
+%     questions; do not erase uncertainty structure during paper
+%     polishing. Discipline named explicitly at §8.3 closing paragraph
+%     as "anti-erasure discipline"; operationalised at three concrete
+%     points in §10 (Patch 0549 framing preserved verbatim; two-part
+%     contribution decomposition; Open Problem cross-references
+%     sustained). 5-Open-Problem commitment preserved end-to-end.)
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -84,7 +112,7 @@ Vertex-Aligned Reading~C in the 600-Cell}
 \small ChatGPT (OpenAI), Copilot (Microsoft), Grok (xAI) --- review and calibration
 }
 
-\date{Version 0.1 (skeleton), 23 May 2026}
+\date{Version 0.9 (pre-v1.0; awaiting reviewer engagement), 23 May 2026}
 
 \begin{document}
 
@@ -97,7 +125,7 @@ Vertex-Aligned Reading~C in the 600-Cell}
 We establish the substrate-locality property for DI-bit currents on the 600-cell substrate at vertex-aligned Reading~C: under Mechanism~A (the propagation-rate-asymmetry primitive $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$) and the framework-local current construction at first order in $\delta$, the substrate net DI-bit current at any host vertex $\vhost$ depends only on first-shell content. The result is proved at sketch-document Layer~3 in three steps: (i)~the host-to-first-shell unit-direction projection $\hat{u}_i \cdot \nhat = -1/(2\phig)$ is uniform across all twelve first-shell neighbours (Theorem~\ref{thm:host-first-shell-projection}); (ii)~the first-shell-to-first-shell edge-direction projection $\hat{e}_{ij} \cdot \nhat = 0$ vanishes for any pair of first-shell vertices (Theorem~\ref{thm:first-shell-perpendicularity}); (iii)~the perturbation-theory propagation rule confines the $\bigO{\delta^n}$ coefficient of the substrate current to graph-distance-$n$ edges in the 600-cell edge graph (Theorem~\ref{thm:perturbation-locality}, with shell-locality Corollary~\ref{cor:shell-locality}).
 The three load-bearing identities are hardened at publication-grade rigor with explicit hypothesis tracking and five-class exclusion enumeration each.
 We make the scope qualifier --- perturbative locality under Mechanism~A and the framework-local current construction at $\bigO{\delta^1}$ --- structurally inseparable from the theorem statements.
-Three explicit open higher-order questions are flagged: extension to $\bigO{\delta^2}$ (Open~Problem~\ref{op:delta-squared}); Layer~4 axiomatic derivation of Mechanism~A from the eleven CPP primitive axioms~A1--A11 (Open~Problem~\ref{op:layer4-mechanism-a}); and publication-grade hardening of the first-shell inner-product primitive G1 (Open~Problem~\ref{op:g1-hardening}).
+Five open higher-order questions are registered (Section~\ref{sec:open-questions}); the three core extension/derivation questions are: extension to $\bigO{\delta^2}$ (Open~Problem~\ref{op:delta-squared}); Layer~4 axiomatic derivation of Mechanism~A from the eleven CPP primitive axioms~A1--A11 (Open~Problem~\ref{op:layer4-mechanism-a}); and publication-grade hardening of the first-shell inner-product primitive G1 (Open~Problem~\ref{op:g1-hardening}). Two additional research-direction-choosing questions register the broader chirality continuum (Open~Problem~\ref{op:sector5-schema}, Sector-5 schema instantiation) and Reading~C-variant programmes (Open~Problem~\ref{op:non-vertex-aligned-c}, non-vertex-aligned Reading~C variants).
 The paper integrates the F.1 sub-question of the OPEN-SD-CHIR-PRIMITIVE manifestation~(iv) trajectory and is the temporal-sector analog to the Capotauro~v2.0 spatial-sector substrate-locality theorem, with which it shares the structural constant $-1/(2\phig)$.
 \end{abstract}
 
