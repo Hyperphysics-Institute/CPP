@@ -3567,3 +3567,103 @@ Net addition ~150-250 words across abstract + §1 + §7.3 + §8.2 caption + §10
 ### §57.7 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. The reviewer-feedback-archival Patch pattern (creating `reviews/` folder + 3 reviewer letter files + cross-reviewer synthesis + classification + response plan) matches the capotauro precedent at `flagship_papers/capotauro/reviews/` (11 reviewer files across 4 review rounds). Pattern is established at corpus level; not at first instance. Methods catalogue audit Patch candidate count remains at 9.
+
+---
+
+## §58 Patch 0569 — v0.9 → v1.0 SHIP-cycle reviewer-response Patch (8 edits addressing 5 reviewer items)
+
+**Context.** Patch 0568 archived three reviewer letters (Copilot + ChatGPT + Grok) and produced the cross-reviewer synthesis with classification (1 MUST-ADDRESS + 4 SHOULD-ADDRESS + 5 CAN-DEFER + 2 DECLINED). Patch 0569 implements the response: 5 reviewer-flagged items addressed via 8 atomic LaTeX edits (some items naturally split across multiple anchor locations). Authorised via Thomas's "Please proceed" directive following Patch 0568 ship + push at commit `497f9d7`.
+
+### §58.1 What this Patch does, structurally
+
+Multi-edit Patch (second instance at F.1 trajectory; first was Patch 0567 final polish). 8 separate `text.replace(old, new, 1)` operations to non-adjacent locations in `dynamical_substrate_law.tex`, each with single-occurrence preflight verification. Edit specs embedded in apply script as base64-encoded JSON (matching Patch 0567 pattern).
+
+**Net addition**: ~250 words across abstract (3 edits) + §1 (1 edit + 1 paragraph insert) + §7.3 (1 edit) + §8.2 caption (1 edit) + §10 (1 edit). Paper grows from 31 → 32 pages. Substantive content of §1-§10 preserved; the edits sharpen scope qualifiers and add a representation-theoretic justification.
+
+### §58.2 The 8 atomic edits (mapping to 5 reviewer items)
+
+**Edit 1: Abstract scope-qualifier sharpening (MUST-ADDRESS; ChatGPT Concern #3)**
+
+Inserts a "Scope of the closure" sentence in the abstract before the closing paragraph:
+
+> \textbf{Scope of the closure}: the present paper establishes \emph{substrate-locality structure} (the closed-form first-order DI-bit current at the host vertex) supporting the candidate thermodynamic-arrow mechanism for manifestation~(iv) of OPEN-SD-CHIR-PRIMITIVE. The full thermodynamic-arrow emergence in the conventional physics sense --- entropy production, irreversible coarse-graining, statistical-mechanics emergence --- is the candidate mechanism narrative supported by, but not derived from, the present paper's result; the emergence layer is registered as future work beyond the present paper's framework qualifiers.
+
+Reframes the abstract's epistemic posture: what the paper proves (substrate-locality structure) vs what it supports as candidate mechanism (thermodynamic-arrow emergence).
+
+**Edit 2: §1.1 bullet (iv) clarification (MUST-ADDRESS; ChatGPT Concern #3 companion)**
+
+Modifies the manifestation (iv) bullet in §1.1 from "the present paper's target" to "the present paper's target at the substrate-locality level". Single-bullet edit; small but consequential.
+
+**Edit 2b: §1.1 scope-clarification paragraph (MUST-ADDRESS; ChatGPT Concern #3 companion)**
+
+Inserts a new paragraph after the existing "Capotauro v2.0 paper closed..." paragraph:
+
+> What this paper establishes at manifestation~(iv) is the \emph{substrate-locality structure} --- the closed-form expression for the net DI-bit current at the host vertex, depending only on first-shell content at first order in $\delta$. This substrate-locality structure \emph{supports} the candidate thermodynamic-arrow mechanism (asymmetric DI-bit arrival at the host vertex $\to$ capture-phase bias in the PCD cycle $\to$ preferred PCD orientation $\to$ macroscopic arrow asymmetry). The full mechanism narrative --- from substrate-locality structure to thermodynamic-arrow emergence in the conventional physics sense (entropy production, irreversible coarse-graining, statistical-mechanics emergence) --- requires additional derivation steps that are not the present paper's scope and are registered as future work. The present paper's closure is at the \emph{substrate-locality level}; the thermodynamic-arrow emergence layer is conjectured (via the mechanism narrative) but not derived.
+
+This is the substantive scope-clarification paragraph that explicitly names what is proven, what is conjectured, and what is future work.
+
+**Edit 3: §10 opening scope clarifier (MUST-ADDRESS; ChatGPT Concern #3 companion)**
+
+Inserts a clarifying continuation in the §10 opening paragraph after "(parity violation, neutrino chirality, weak isospin assignment).":
+
+> The closure is at the \emph{substrate-locality level} --- the closed-form structure of the DI-bit current at first order in $\delta$. The further step from substrate-locality structure to thermodynamic-arrow emergence in the conventional physics sense (entropy production, irreversible coarse-graining, statistical-mechanics arrow) is the candidate mechanism narrative supported by, but not derived from, the present paper's result; the emergence layer is registered as future work beyond the present paper's framework qualifiers.
+
+Triple coverage of the scope distinction: abstract (Edit 1) + §1.1 (Edits 2 + 2b) + §10 (Edit 3). The reader encounters the framing at every entry point.
+
+**Edit 4: §7.3 Step 3 representation-theoretic justification (SHOULD-ADDRESS; ChatGPT Concern #4)**
+
+Inserts a representation-theoretic justification of the "must be a scalar multiple of $\hat{n}$" step in the Step 3 of the umbrella theorem proof:
+
+> More precisely: the natural three-dimensional representation of the icosahedral group $I_h = H_3$ on the tangent space at $\vhost$ decomposes into the one-dimensional trivial (radial) representation spanned by $\hat{n}$ plus the two-dimensional standard representation acting on the plane orthogonal to $\hat{n}$; the two-dimensional standard representation carries no $I_h$-invariant vectors (it is irreducible over the reals for $I_h$). Any $I_h$-invariant sum of vectors in three-space therefore lies in the one-dimensional trivial component, i.e., is proportional to $\hat{n}$ (the only direction preserved by the $H_3$ action at $\vhost$).
+
+Concise (~80 words) but rigorous representation-theoretic justification. Addresses ChatGPT's concern that "must therefore be proportional to $\hat{n}$" arguments were "physicist-clean rather than formally airtight". The representation-theoretic argument is now in the proof.
+
+**Edit 5: §1 executive summary (SHOULD-ADDRESS; Copilot Tier 2 #3)**
+
+Inserts a 1-paragraph "Executive summary" at §1 opening (before §1.1):
+
+> \paragraph{Executive summary.} This paper establishes the substrate-locality property of DI-bit currents at vertex-aligned Reading~C in the 600-cell substrate. The principal result is Theorem~\ref{thm:substrate-locality}: the net DI-bit current at any host vertex $\vhost$ at first order in the propagation-rate-asymmetry parameter $\delta$ is given in closed form by $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$, depending only on first-shell content. The result is proved at sketch-document Layer~3 (\S\ref{sec:substrate-locality-theorem}) by assembling three publication-grade building-block theorems hardened in separate `.tex' artifacts (\S\S\ref{sec:first-shell-identities}--\ref{sec:perturbation-locality}): the host-to-first-shell uniform projection (Theorem~\ref{thm:host-first-shell-projection}), the first-shell-to-first-shell perpendicularity (Theorem~\ref{thm:first-shell-perpendicularity}), and the perturbation-locality propagation rule (Theorem~\ref{thm:perturbation-locality}, with shell-locality Corollary~\ref{cor:shell-locality}). The substrate-locality structure supports a candidate thermodynamic-arrow mechanism (manifestation~(iv) of the chirality continuum's substrate-direction primitive); the full emergence layer is registered as future work. Five open higher-order questions are registered (\S\ref{sec:open-questions}).
+
+~165 words; provides "What this paper proves" navigation at §1 opening for readers who don't read the abstract.
+
+**Edit 6: Table 8.2 caption clarification (SHOULD-ADDRESS; Grok minor 2)**
+
+Adds a sentence to Table 8.2 caption: "Full five-class exclusion enumerations for the trio are documented in the source `.tex' artifacts (Source artifact column); the present table provides the summary view." Cross-references the table's existing Source-artifact column.
+
+**Edit 7: Abstract names three theorems explicitly (SHOULD-ADDRESS; Grok minor 3)**
+
+Modifies the abstract's rigor-status sentence to name the three theorems by name: "The three load-bearing identities --- host-to-first-shell uniform projection, first-shell-to-first-shell perpendicularity, and the perturbation-theory propagation rule (with shell-locality corollary) --- are hardened at publication-grade rigor..."
+
+### §58.3 Reviewer-honesty discipline at this Patch
+
+The 4 thermodynamic-arrow-framing edits (Edit 1 + Edit 2 + Edit 2b + Edit 3) collectively address ChatGPT's Concern #3. The discipline is operationalised at three locations in the paper (abstract + §1.1 + §10) plus the bullet line in §1.1's manifestation list — providing **convergent reader-facing signal** that the closure is at the substrate-locality level, not at the thermodynamic-arrow-emergence level. Each location uses parallel language: "substrate-locality structure" vs "thermodynamic-arrow emergence", "the present paper's result" vs "candidate mechanism narrative", "framework qualifiers" vs "future work". The convergent framing language minimises any chance of reviewer confusion about scope.
+
+This is the **calibration discipline** that ChatGPT's reviewer-pause-cycle precedent (Patch 0538) operationalised: when a reviewer flags a scope-overclaim concern, the calibration response sharpens language and scope without modifying the substantive proofs. The 8 edits at Patch 0569 preserve all substantive content of §1-§10; the edits add scope qualifiers, expand cross-references, add a representation-theoretic justification, add an executive summary, and add a table-caption clarification. No theorem statements are modified; no proofs are modified; no Open Problems are modified.
+
+### §58.4 What this Patch does NOT do
+
+Per the synthesis §3.3 + §3.4:
+
+**CAN-DEFER items NOT addressed at this Patch** (registered as Open Problems or candidate follow-up Patches):
+- G1 publication-grade hardening (OPEN-FP-F1-3) — most-tractable follow-up Patch after v1.0 SHIP
+- Theorem 7.1 publication-grade hardening — candidate follow-up Patch at §7.4 (not formal Open Problem)
+- δ² appendix sketch — additive value; OPEN-FP-F1-1 registered
+- Layer 4 axiomatic derivation of Mechanism A — OPEN-FP-F1-2; long-term programme target
+- Non-vertex-aligned Reading C variants — OPEN-FP-F1-5; research-direction-choosing
+
+**DECLINED items NOT addressed at this Patch**:
+- Bibliography BibTeX integration — already declined at Tier 4 §56.3 (Patch 0567 deliberation)
+- Reduce governance language ~20-30% — declined as convergently-praised feature
+
+### §58.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The reviewer-response multi-edit Patch pattern (8 atomic edits addressing 5 reviewer items; base64-encoded JSON edit specs; single-occurrence preflight verification per edit) matches the Patch 0567 final-polish multi-edit pattern. The pattern is at second instance at F.1 trajectory; remains a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.
+
+### §58.6 Paper status post-Patch 0569
+
+The paper is now **v1.0-SHIP-ready** with all reviewer-cycle MUST-ADDRESS + SHOULD-ADDRESS items addressed. The remaining trajectory:
+
+- Patch 0569a (optional) — only if reviewer convergence reveals new issues after Patch 0569
+- Patch 0570 — v1.0 SHIP with PDF committed; update `\date{}` to "Version 1.0, [SHIP date]"
+
+The cross-reviewer-flagged CAN-DEFER items (G1 hardening; Theorem 7.1 hardening; etc.) remain registered as Open Problems / candidate follow-up Patches for post-SHIP work.

@@ -1180,3 +1180,48 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(D)** Methods catalogue audit Patch (9 candidates). **(E)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable; cross-reviewer-flagged as Tier 1). **(F)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up; cross-reviewer-flagged as Tier 1). **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(I)** JUNO peer-review update integration.
 
 **Self-checkpoint at this transaction:** Patch 0568 archives the three v0.9 reviewer letters in the new `reviews/` folder + cross-reviewer synthesis. The single substantive MUST-ADDRESS item for v1.0 SHIP is ChatGPT's Concern #3 (thermodynamic-arrow framing gap) — a scope-qualifier sharpening, not a derivation question. Four SHOULD-ADDRESS items (symmetry argument hardening + executive summary + Table 8.2 caption + abstract theorem-names) round out the Patch 0569 anticipated edit set. Zero documentation drift. Next Patch (0569) is the multi-edit response Patch.
+
+---
+
+## Transaction 056 — Patch 0569 (v0.9 → v1.0 SHIP-cycle reviewer-response Patch; 8 atomic edits addressing 5 reviewer items)
+
+**Date:** 24 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=497f9d7` = Patch 0568 reviewer feedback archival).
+**Branch:** main.
+**Patch type:** Substantive content / multi-edit (second instance of multi-edit Patch pattern at F.1 trajectory; 8 atomic LaTeX edits to non-adjacent locations in `dynamical_substrate_law.tex`).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0568 ship + push at commit `497f9d7`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (8 atomic edits: Edit 1 abstract scope clarifier + Edit 2 §1.1 bullet (iv) modification + Edit 2b §1.1 scope paragraph insertion + Edit 3 §10 opening scope clarifier + Edit 4 §7.3 Step 3 representation-theoretic justification + Edit 5 §1 executive summary + Edit 6 Table 8.2 caption clarification + Edit 7 abstract names three theorems). Paper compiles cleanly to 32 pages.
+2. APPEND — Tier 4 §58 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (6 subsections: §58.1 what this Patch does structurally + §58.2 the 8 atomic edits + §58.3 reviewer-honesty discipline at this Patch + §58.4 what this Patch does NOT do + §58.5 methods catalogue Step E audit verdict + §58.6 paper status post-Patch 0569).
+3. APPEND — Vignette 46 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 056 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0569 entry; Patch 0568 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Multi-edit Patch pattern at second instance at F.1 trajectory; remains a methods catalogue audit candidate. Candidate count remains at 9.
+
+**Programme state changes at Patch 0569:**
+
+1. **All MUST-ADDRESS + SHOULD-ADDRESS items addressed**: 5 reviewer-cycle items implemented via 8 atomic LaTeX edits.
+2. **ChatGPT Concern #3 (thermodynamic-arrow framing gap) addressed**: triple-coverage via abstract + §1.1 + §10 with parallel scope-qualifier language.
+3. **ChatGPT Concern #4 (symmetry argument hardening) addressed**: representation-theoretic justification added at §7.3 Step 3.
+4. **Copilot Tier 2 #3 (executive summary) addressed**: 1-paragraph "Executive summary" at §1 opening.
+5. **Grok minor items addressed**: Table 8.2 caption clarification + abstract names three theorems.
+6. **Paper now compiles to 32 pages** (was 31 after Patch 0568 unchanged); within 30-35 page final target.
+7. **Calibration discipline sustained**: no theorem statements modified; no proofs modified; no Open Problems modified. Substantive content of §1-§10 preserved.
+8. **Reviewer-honesty discipline strengthened**: scope-qualifier sharpening at three reader-facing locations provides convergent signal about what the closure is at (substrate-locality) and what it is not at (thermodynamic-arrow emergence).
+9. **CAN-DEFER + DECLINED items unchanged**: G1 hardening + Theorem 7.1 hardening + δ² appendix + Layer 4 derivation + Reading C variants remain registered for future Patches; bibliography BibTeX integration + reduce governance language remain declined.
+10. **Zero documentation drift** inherited or introduced.
+11. F.1 sub-question status: now framed more precisely as "structurally-grounded sketch-document Layer 3 closure at the substrate-locality level"; the original Patch 0549 framing language is preserved verbatim in §10 + §8.3 + §1.2.
+12–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0569:**
+
+- **(A) Paper is v1.0-SHIP-ready.** All cross-reviewer MUST-ADDRESS + SHOULD-ADDRESS items implemented.
+- **(B) Patch 0569a = optional reviewer-driven adjustments** — only if reviewer convergence reveals new issues after Patch 0569. If reviewers respond positively to Patch 0569 changes (or do not respond at all), no Patch 0569a needed.
+- **(C) Patch 0570 = v1.0 SHIP** with PDF committed per Session 142 PDF-in-repo policy + SF-4 precedent. Update `\date{}` to `Version 1.0, [SHIP date]`. OSF deposit pending.
+- **(D)** Methods catalogue audit Patch (9 candidates). **(E)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable; cross-reviewer-flagged as Tier 1). **(F)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up; cross-reviewer-flagged as Tier 1). **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(I)** JUNO peer-review update integration.
+
+**Self-checkpoint at this transaction:** Patch 0569 is the substantive response to the v0.9 → v1.0 SHIP-cycle reviewer engagement. 8 atomic LaTeX edits implement the 5 reviewer-cycle items: 4 edits for ChatGPT Concern #3 (thermodynamic-arrow framing across abstract + §1.1 + §10); 1 edit for ChatGPT Concern #4 (representation-theoretic justification at §7.3); 1 edit for Copilot Tier 2 #3 (executive summary at §1); 2 edits for Grok minor items (Table 8.2 caption + abstract names theorems). Calibration discipline sustained: substantive content preserved; scope qualifiers sharpened. Paper compiles to 32 pages. **Paper is v1.0-SHIP-ready.** Next: Patch 0569a (optional) or Patch 0570 v1.0 SHIP.
