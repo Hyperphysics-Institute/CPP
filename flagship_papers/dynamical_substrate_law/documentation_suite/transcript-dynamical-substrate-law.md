@@ -717,3 +717,44 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(I) JUNO peer-review update integration when published.**
 
 **Self-checkpoint at this transaction:** Patch 0557 inserts the §2 sub-question body content into the F.1 flagship paper, providing the formal statement of the link $\hat{n} \mapsto \omegaPCD$ question and the Scenario A closure framework. The paper now compiles cleanly to 10 pages with §1 + §2 body in place. Layer-distinction discipline operationalised at two concrete points. Zero documentation drift. The body-content sequence proceeds.
+
+---
+
+## Transaction 045 — Patch 0558 (§3 Framework primitives body insertion)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=ef1ff81` = Patch 0557 §2 sub-question body).
+**Branch:** main.
+**Patch type:** Substantive content (third body-content Patch of the F.1 flagship paper assembly arc; executes scoping document §4.2 third step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0557 ship + push at commit `ef1ff81`, with the forward queue identifying Patch 0558 = §3 Framework primitives body as natural arc continuation per scoping document §4.2.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§3 inner placeholder substituted with 81 lines of body content; outer comment header preserved per §17.6 (8); four subsections added §3.1--§3.4; four labeled equations added: eq:reading-c-alignment, eq:g1-primitive, eq:host-to-shell-unit-direction, eq:di-bit-current-construction). Paper compiles cleanly to 13 pages.
+2. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (Tier 4 §47, 4 subsections: §47.1 what this Patch does structurally + §47.2 Layer-distinction discipline at §3 + §47.3 self-checkpoint + §47.4 methods catalogue Step E audit verdict).
+3. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` (Vignette 35).
+4. APPEND — `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` (Transaction 045, this entry).
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0558 entry; Patch 0557 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. 8 candidate items pending evaluation unchanged.
+
+**Programme state changes at Patch 0558:**
+
+1. **Third body-content Patch of F.1 flagship paper assembly arc COMPLETE**: §3 body in place at `dynamical_substrate_law.tex` (CPP axioms A1/A6$^{\prime}$/A11 recap + 600-cell at vertex-aligned Reading C + first-shell geometric primitives G1+G2 + DI-bit current framework-local construction).
+2. **Paper now compiles to 13 pages** (was 10 after Patch 0557 §2; was 7 after Patch 0556 §1; was 3 at Patch 0554 skeleton-only); on track for 30-35 page final target.
+3. **Four labeled equations** introduced at §3 (eq:reading-c-alignment, eq:g1-primitive, eq:host-to-shell-unit-direction, eq:di-bit-current-construction); cross-reference scaffold extended.
+4. **Layer-distinction discipline operationalised at §3** at two concrete points (G1 Layer label preserved at primitive statement + framework qualifier audit trail continued with G1 added).
+5. **Zero documentation drift inherited or introduced.**
+6. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+7--18. NO new Findings; NO sub-question reopenings; NO v1.0 SHIPPED edits; NO Patches 0531-0557 immutable content modifications (only §3 inner-placeholder substitution); NO modification of hardened theorem .tex; NO body content added §4-§10; NO F.2/F.3 work; NO Layer~4 work; NO reviewer engagement; NO modification of templates/; NO methods-catalogue audit work; Step E audit per §29.4.
+
+**Forward queue post-Patch 0558:**
+
+- **(A) Patch 0559 = §4 Mechanism A axiom body** per scoping document §4.2 fourth step. Primary source: Patch 0544 §3 + Patch 0550 §2.2. Anticipated sub-structure: §4.1 The propagation-rate asymmetry + §4.2 Framework local-current construction at first order in $\delta$ + §4.3 Mechanism A as framework axiom (Layer~3); Layer~4 derivation deferred. Target: 2 pages.
+- **(B) Patches 0560-0567 — remaining body section assembly** per scoping document §4.2-§4.5: §5 first-shell identities at Patch 0560 (integrates Patches 0551 + 0552 hardened theorems); §6 perturbation-locality at Patch 0561 (integrates Patch 0550 hardened theorem); §7 substrate-locality umbrella at Patch 0562; §8 Layer 3 stack at Patch 0563; §9 open questions at Patch 0564; §10 conclusion at Patch 0565; bibliography at Patch 0566; final polish at Patch 0567.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle** per scoping document §4.6.
+- **(D) Patch 0570 (or thereabouts) — F.1 flagship paper v1.0 SHIP** with PDF committed per Session 142 PDF-in-repo policy + SF-4 precedent.
+- **(E)** Methods catalogue audit Patch (8 candidates). **(F)** G1 publication-grade hardening Patch. **(G)** F.2/F.3 trajectory openings. **(H)** Long-term programme target (Layer~4). **(I)** JUNO peer-review update integration when published.
+
+**Self-checkpoint at this transaction:** Patch 0558 inserts the §3 Framework primitives body providing the CPP axioms recap + 600-cell + Reading C + G1+G2 + DI-bit current framework-local construction. The paper now compiles cleanly to 13 pages with §1+§2+§3 body in place. Layer-distinction discipline operationalised at two concrete points (G1 Layer label preserved inline; framework qualifier audit trail continued). Zero documentation drift. Approximately one-third through body-content sequence.

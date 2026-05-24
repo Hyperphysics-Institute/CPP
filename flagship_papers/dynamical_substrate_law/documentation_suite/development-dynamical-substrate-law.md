@@ -821,3 +821,25 @@ Methods catalogue Step E audit per §29.4: no new METH entry at this Patch. Body
 Patch 0557 introduces no new deferred items. Patch 0558+ starts with clean state.
 
 Forward queue post-Patch 0557: Patch 0558 = §3 Framework primitives body per scoping document §4.2 third step. Primary source: `F1_subquestion_pcd_orientation_link.md` §4-§5 + the axiom-registry A1/A6'/A11 + the 600-cell geometric structure recap + Reading C primitives from Capotauro v2.0. Anticipated sub-structure: §3.1 CPP primitive axioms A1-A11 recap + §3.2 The 600-cell substrate at vertex-aligned Reading C + §3.3 First-shell geometric primitives G1 + G2 + §3.4 The DI-bit current and Mechanism A framework. Target: 3-4 pages.
+
+---
+
+## Vignette 35 — Patch 0558: §3 Framework primitives body insertion
+
+Patch 0558 inserts the §3 body content into the F.1 flagship paper, the third body-content Patch of the assembly arc. The substitution replaces 4 lines of inner-placeholder comment with 81 lines of LaTeX body content (~1900 words, ~3 PDF pages). The paper now compiles cleanly to 13 pages (was 10 after Patch 0557 §2; was 7 after Patch 0556 §1; was 3 at Patch 0554 skeleton-only). The trajectory is approximately one-third through the body-content sequence (§1-§3 added of §1-§10 anticipated); on track for 30-35 page final target.
+
+The §3 body provides the four framework primitives needed by all subsequent body sections. The §3.1 axiom recap is deliberately narrow — only A1, A6$^{\prime}$, A11 of the eleven primitive axioms receive explicit recap, because only those four are load-bearing for the substrate-locality theorem. Readers wanting the full registry are referred to *Tetrahedrons All the Way Down* Chapter 3 + `templates/operating_system.md`. This narrow-recap choice is deliberate against the temptation to make §3.1 a full CPP framework introduction; that work belongs in the book, not in a flagship paper section.
+
+The §3.2 600-cell + Reading~C subsection codifies the substrate's geometric structure and the vertex-aligned configuration that defines the present paper's scope. Equation~\eqref{eq:reading-c-alignment} ($\hat{n} = \vhost / |\vhost| = \vhost$) is the operational statement of vertex-aligned Reading~C — the unit-vertex normalisation makes $\hat{n}$ identical to the host vertex itself. The non-vertex-aligned variants are flagged at Open Problem~\ref{op:non-vertex-aligned-c}; they are mentioned at §3.2 rather than deferred only to §9, which keeps the open question visible to the reader at the point where the framework restriction is introduced.
+
+The §3.3 G1 + G2 subsection is the structural anchor of the paper. G1 is the load-bearing first-shell primitive; its Layer label is given inline ("sketch-document Layer~3 rigor; publication-grade hardening is Open Problem~\ref{op:g1-hardening}"). This is the Layer-distinction discipline operationalised at the point of primitive statement, not deferred to §8. G2 is structurally less load-bearing but is given equal subsection-level treatment to maintain visibility of both primitives. The short-edge chord length derivation ($|v_i - \vhost| = 1/\phig$) is given via the simple inner-product calculation $|v - v'|^2 = 2(1 - v \cdot v')$ applied to G1; this serves as a worked example of how G1 propagates downstream calculations.
+
+The §3.4 DI-bit current framework-local construction (Equation~\eqref{eq:di-bit-current-construction}) is the central equation that the rest of the paper analyzes. The three-feature enumeration (direct first-shell summation, antisymmetric difference, substrate-mechanism source of $\omegaPCD$) names the analytic structure that makes the substrate-locality theorem possible. The substrate-mechanism source of $\omegaPCD$ alignment closes the loop with §2.3's sub-question framing: the current $\jDInet(\vhost)$ provides what was promised in §2 — a substrate-mechanism that derives the link $\hat{n} \mapsto \omegaPCD$.
+
+Layer-distinction discipline at §3 operates at two concrete points: (i) G1 Layer label preserved at primitive statement in §3.3 (the framework's weakest Layer-rigor point is visible to the reader from §3.3 forward); (ii) §3.4 framework qualifier audit trail continued (five framework qualifiers list maintained from §2.4 with G1 added explicitly; conditionality structure restated). The discipline is sustained from §1 + §2 without erosion.
+
+Methods catalogue Step E audit per §29.4: no new METH entry at this Patch. Body-content substitution is standard paper-assembly methodology (fourth instance after Patches 0554 + 0556 + 0557). The 8 candidate items pending evaluation at the methods catalogue audit Patch carry forward unchanged.
+
+Patch 0558 introduces no new deferred items. Patch 0559+ starts with clean state.
+
+Forward queue post-Patch 0558: Patch 0559 = §4 Mechanism~A axiom body per scoping document §4.2 fourth step. Primary source: Patch 0544 §3 + Patch 0550 §2.2. Anticipated sub-structure: §4.1 The propagation-rate asymmetry + §4.2 Framework local-current construction at first order in $\delta$ + §4.3 Mechanism~A as framework axiom (Layer~3); Layer~4 derivation deferred. Target: 2 pages.

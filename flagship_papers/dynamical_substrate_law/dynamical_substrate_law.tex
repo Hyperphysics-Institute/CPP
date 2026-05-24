@@ -310,11 +310,87 @@ The framework qualifiers --- Mechanism~A axiom, Reading~C primitive, 600-cell se
 \section{Framework primitives}
 \label{sec:framework-primitives}
 
-% [Body content to be added at Patch 0557. Sub-structure anticipated:
-%   §3.1 CPP primitive axioms A1-A11 (recap)
-%   §3.2 The 600-cell substrate at vertex-aligned Reading C
-%   §3.3 First-shell geometric primitives G1 + G2
-%   §3.4 The DI-bit current and Mechanism A framework]
+% [Body added at Patch 0558 per scoping doc §4.2 third step.
+%  Primary sources: F1_subquestion_pcd_orientation_link.md §1.1 +
+%  axiom-registry recap + 600-cell geometric structure +
+%  Reading C from Capotauro v2.0 + G1 from Patch 0541 §3.1 (imported
+%  via Patches 0551 + 0552 hardened theorems).]
+
+\subsection{CPP primitive axioms A1--A11 (recap)}
+\label{sec:cpp-axioms-recap}
+
+The Conscious Point Physics framework rests on eleven primitive axioms A1--A11 (full statements in \emph{Tetrahedrons All the Way Down}, Abshier 2026, Chapter~3; cf.\ \texttt{templates/operating\_system.md} for the registry). For the present paper, four axioms are load-bearing and recapped briefly:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{A1 (Conscious Points + DI-bits)}: the substrate consists of Conscious Points (CPs) interconnected by Dimensional Increment bits (DI-bits), the discrete units of information propagation. DI-bits carry directional content (the unit-direction $\hat{e}$ of propagation between CPs) and a rate $r(\hat{e})$.
+\item \textbf{A6$^{\prime}$ (Walk-Dimension Gauge Principle)}: the Polarize $\to$ Capture $\to$ Depolarize (PCD) cycle is the elementary discrete-time temporal process at each CP at each Absolute Moment. A6$^{\prime}$ consolidates earlier axioms A6--A9 into a single walk-dimension gauge primitive; the PCD-cycle-orientation pseudovector $\omegaPCD$ is the axial-vector associated with the cycle's progression direction.
+\item \textbf{A11 (Substrate Geometry)}: the substrate has a discrete geometric structure with an underlying polytope lattice; for the present paper the relevant polytope is the 600-cell (\S\ref{sec:600-cell-reading-c}).
+\end{itemize}
+
+The remaining axioms (A2--A5, A7--A10) operate at this paper's scope but are not load-bearing for the substrate-locality theorem; their statements are imported from the corpus reference without explicit recap here.
+
+\subsection{The 600-cell substrate at vertex-aligned Reading~C}
+\label{sec:600-cell-reading-c}
+
+The 600-cell is the regular four-dimensional polytope with $H_4$ symmetry, comprising 120 vertices, 720 edges, 1200 triangular faces, and 600 tetrahedral cells. Under the unit-vertex normalisation, every vertex $v$ of the 600-cell satisfies $|v| = 1$; the 120 vertex directions are the unit vectors of the polytope's vertex set in $\mathbb{R}^4$. The short edges (between nearest-neighbour vertices) have length $1/\phig$, where $\phig = (1+\sqrt{5})/2$.
+
+\emph{Reading~C} (Capotauro v2.0 \S2.3; Patch 0419 Finding C-W37) is the configuration of the substrate in which the substrate primitive $\hat{n}$ is aligned with the 4D direction of a chosen host vertex:
+\begin{equation}
+\hat{n} = \vhost / |\vhost| = \vhost \qquad (\text{vertex-aligned Reading~C}).
+\label{eq:reading-c-alignment}
+\end{equation}
+The configuration breaks the substrate's $H_4$ symmetry to a residual $H_3 = I_h$ (icosahedral) symmetry at the host vertex $\vhost$. The K3-doublet's $D_{3d}$ stabilizer, the W-bracelet's Petrie-polygon $D_6$, and the qDP/eDP sector's $D_{5d}$ all sit as sub-stabilizers of $H_3$ (chirality continuum architecture; \S\ref{sec:position-in-cpp}). Non-vertex-aligned Reading~C variants (edge-aligned, face-aligned) are flagged as Open Problem~\ref{op:non-vertex-aligned-c} and are not pursued in the present paper.
+
+The substrate primitive's magnitude $|\chi| = \phig^{-3} \approx 0.236$ controls the Reading~C edge-length perturbation parameter $\varepsilon$ in Equation~\eqref{eq:edge-length-perturbation}. The relationship between $\varepsilon$ and the Mechanism~A propagation-rate parameter $\delta$ in Equation~\eqref{eq:mechanism-a-formal} is not pinned at this paper's scope; both are taken as independent framework inputs (per the discussion in \S\ref{sec:scenario-a-mechanism-a}).
+
+\subsection{First-shell geometric primitives G1 and G2}
+\label{sec:first-shell-primitives}
+
+Two geometric primitives of the 600-cell first shell are load-bearing for the substrate-locality theorem.
+
+\subsubsection*{Identity G1 --- first-shell inner-product primitive}
+
+For every first-shell vertex $v_i$ of $\vhost$ (i.e., every vertex connected to $\vhost$ by a short edge of length $1/\phig$), the inner product with the host vertex is uniformly
+\begin{equation}
+v_i \cdot \vhost = \phig / 2, \qquad i = 1, 2, \ldots, 12.
+\label{eq:g1-primitive}
+\end{equation}
+The constant $\phig/2$ is the cosine of the 600-cell first-shell-edge dihedral angle $\cos(36^{\circ}) = \phig/2$; the uniformity across all 12 first-shell neighbours follows from the icosahedral residual symmetry $H_3 = I_h$ established by Equation~\eqref{eq:reading-c-alignment}. G1 is imported from Patch 0541 \S3.1 at \emph{sketch-document Layer~3 rigor}; publication-grade hardening of G1 is registered as Open Problem~\ref{op:g1-hardening} and is the shared exclusion class E1 of the publication-grade-hardened Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}.
+
+\subsubsection*{Identity G2 --- icosahedral first-shell structure}
+
+The 12 first-shell vertices of any host vertex $\vhost$ in the 600-cell form the vertices of a regular icosahedron centered at $\vhost$, with icosahedral symmetry group $H_3 = I_h$ acting transitively on the 12 vertices. G2 is an immediate corollary of the 600-cell's geometric structure plus the $H_4 \to H_3$ symmetry breaking under Reading~C; we state it as a separate identity because it is the geometric source of the host-to-first-shell uniformity in Theorem~\ref{thm:host-first-shell-projection} and the first-shell-to-first-shell perpendicularity in Theorem~\ref{thm:first-shell-perpendicularity}. G2 is also at sketch-document Layer~3 rigor; its publication-grade hardening is not currently flagged as a separate Open Problem (it is structurally less load-bearing than G1, depending only on the well-established 600-cell geometry).
+
+The host-to-first-shell unit-direction vectors $\hat{u}_i$ are defined from G1 + G2 + unit-vertex normalisation as
+\begin{equation}
+\hat{u}_i = \frac{v_i - \vhost}{|v_i - \vhost|} = \frac{v_i - \vhost}{1/\phig}, \qquad i = 1, 2, \ldots, 12,
+\label{eq:host-to-shell-unit-direction}
+\end{equation}
+where the second equality uses the short-edge chord length $|v_i - \vhost| = 1/\phig$ (Lemma~3.1.1 of Patches 0551 + 0552 hardened theorem artifacts). The chord length is itself derivable from G1: $|v_i - \vhost|^2 = 2(1 - v_i \cdot \vhost) = 2(1 - \phig/2) = 2 - \phig = \phig^{-2}$, so $|v_i - \vhost| = 1/\phig$.
+
+\subsection{The DI-bit current and Mechanism A framework}
+\label{sec:di-bit-current-and-framework}
+
+The DI-bit current $\vec{j}_{DI}(v)$ at substrate vertex $v$ is the vector quantity representing the net flow of DI-bits at $v$ per unit Absolute Moment. At the $H_4$-idealized substrate level (i.e., in the absence of the substrate primitive $\hat{n}$), the DI-bit current vanishes identically at every vertex: $\vec{j}_{DI}^{(0)}(v) = 0$ for all $v$. Under Reading~C with Mechanism~A, the DI-bit propagation-rate asymmetry of Equation~\eqref{eq:mechanism-a-formal} induces a non-zero current.
+
+The \emph{net DI-bit current at the host vertex} $\vhost$ is constructed framework-locally as
+\begin{equation}
+\jDInet(\vhost) = \sum_{i=1}^{12} \big[ r(\hat{u}_i) - r(-\hat{u}_i) \big] \hat{u}_i = \sum_{i=1}^{12} 2 \delta (\hat{u}_i \cdot \hat{n}) \hat{u}_i,
+\label{eq:di-bit-current-construction}
+\end{equation}
+where the second equality uses Equation~\eqref{eq:mechanism-a-formal} and cancellation of the $r_0$ terms between $\hat{e} = +\hat{u}_i$ and $\hat{e} = -\hat{u}_i$. The construction is \emph{local} (the sum is over the 12 first-shell unit directions only) and \emph{first-order in} $\delta$ (the $\bigO{\delta^2}$ corrections from higher-order shell contributions are addressed in \S\ref{sec:perturbation-locality} and Open Problem~\ref{op:delta-squared}).
+
+\subsubsection*{The framework-local current construction at first order in $\delta$}
+
+Equation~\eqref{eq:di-bit-current-construction} is the \emph{framework-local current construction at first order in $\delta$}. Three features of the construction:
+
+\begin{enumerate}[leftmargin=2em]
+\item \emph{Direct first-shell summation}. The sum is over the 12 first-shell unit directions $\hat{u}_i$ only. Higher shells (the 20-cell second shell, the 12-cell third shell, etc.) do not appear at this order; their contributions enter at $\bigO{\delta^2}$ and higher per the perturbation-locality propagation rule (Theorem~\ref{thm:perturbation-locality} + Corollary~\ref{cor:shell-locality}, hardened at Patch 0550).
+\item \emph{Antisymmetric difference}. The asymmetric DI-bit propagation between $+\hat{u}_i$ and $-\hat{u}_i$ directions gives the factor $r(\hat{u}_i) - r(-\hat{u}_i) = 2\delta (\hat{u}_i \cdot \hat{n}) r_0$; the $r_0$ overall scale is absorbed into the definition of $\jDInet$ for notational simplicity.
+\item \emph{Substrate-mechanism source of $\omegaPCD$ alignment}. The current $\jDInet(\vhost)$ provides the substrate-mechanism source for the PCD-cycle-orientation alignment $\omegaPCD(\vhost) = \sigma \cdot \hat{n}$ of Equation~\eqref{eq:link-constraint}: the cycle-orientation pseudovector aligns with the direction of the net asymmetric DI-bit flow at the Capture phase, which in turn aligns with $\hat{n}$ via the geometric projections of \S\ref{sec:first-shell-identities} (Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity}).
+\end{enumerate}
+
+The substrate-locality theorem of \S\ref{sec:substrate-locality-theorem} (Theorem~\ref{thm:substrate-locality}) establishes that Equation~\eqref{eq:di-bit-current-construction}, evaluated at $\vhost$ via the geometric primitives G1 + G2 of \S\ref{sec:first-shell-primitives}, depends only on first-shell content at $\bigO{\delta^1}$. The framework qualifiers (Mechanism~A axiom, Reading~C primitive, 600-cell geometric primitive G1, minimal-local first-order restriction) are operationally taken as input at this paper's scope; Layer~4 axiomatic derivation of these qualifiers from CPP A1--A11 alone is registered as Open Problems~\ref{op:layer4-mechanism-a} and \ref{op:g1-hardening}.
 
 % ============================================================
 % §4 Mechanism A as framework axiom

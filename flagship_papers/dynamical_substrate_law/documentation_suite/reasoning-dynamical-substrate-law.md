@@ -2890,3 +2890,48 @@ Forward-references via `\ref` commands to subsequent sections and theorems are i
 ### §46.5 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. Body-content substitution into prepared scaffold is standard paper-assembly methodology (third instance after Patches 0554 + 0556). The methods catalogue audit Patch carries 8 candidate items unchanged from Patches 0555 + 0556.
+
+---
+
+## §47 Patch 0558 — §3 Framework primitives body insertion
+
+**Context.** Patch 0557 inserted the §2 sub-question body. Patch 0558 continues the body-content sequence per scoping document §4.2 third step, substituting the inner placeholder at §3 (`\section{Framework primitives}`) with 81 lines of LaTeX body content (~1900 words, ~3 PDF pages). Authorised via Thomas's "Please proceed" directive following Patch 0557 ship + push at commit `ef1ff81`.
+
+### §47.1 What this Patch does, structurally
+
+Modifies the F.1 flagship paper's working `dynamical_substrate_law.tex` by substituting the inner placeholder comment at §3 with the framework primitives content needed by the rest of the paper. The substitution:
+- Replaces only the inner placeholder `% [Body content to be added at Patch 0557. Sub-structure anticipated: ...]` (4 lines).
+- Preserves the outer comment header (`% Body to be added at Patch 0557. Primary source: ... Approximate target: 3-4 pages.`) per §17.6 (8) immutable-content discipline (per Patches 0556 + 0557 precedent for outer-scaffolding preservation).
+- Adds a small note comment at body start documenting source materials.
+
+The §3 body adds four subsections per the skeleton's anticipated outline:
+
+1. **§3.1 CPP primitive axioms A1--A11 (recap)**: brief recap focusing on the four load-bearing axioms — A1 (CPs + DI-bits), A6$^{\prime}$ (Walk-Dimension Gauge Principle consolidating A6--A9; defines PCD cycle and $\omegaPCD$), A11 (Substrate Geometry). Remaining axioms A2--A5, A7--A10 imported from corpus reference without explicit recap. References *Tetrahedrons All the Way Down* Chapter 3 + `templates/operating_system.md` for full registry.
+
+2. **§3.2 The 600-cell substrate at vertex-aligned Reading C**: the 600-cell as the regular 4D polytope (120 vertices + 720 edges + 1200 faces + 600 cells; $H_4$ symmetry; unit-vertex normalisation; short-edge length $1/\phig$). Vertex-aligned Reading~C codified via Equation~\eqref{eq:reading-c-alignment}: $\hat{n} = \vhost / |\vhost| = \vhost$. $H_4 \to H_3 = I_h$ symmetry breaking at host vertex. Sub-stabilizers ($D_{3d}$ K3-doublet + $D_6$ Petrie-polygon + $D_{5d}$ qDP/eDP) inheriting from chirality continuum architecture. Substrate primitive magnitude $|\chi| = \phig^{-3} \approx 0.236$ controlling $\varepsilon$; relationship between $\varepsilon$ and $\delta$ left as open question per \S\ref{sec:scenario-a-mechanism-a}. Non-vertex-aligned Reading~C variants flagged as Open Problem~\ref{op:non-vertex-aligned-c}.
+
+3. **§3.3 First-shell geometric primitives G1 and G2**: two geometric primitives load-bearing for the substrate-locality theorem. **G1 (first-shell inner-product primitive)** via Equation~\eqref{eq:g1-primitive}: $v_i \cdot \vhost = \phig/2$ uniformly across 12 first-shell neighbours; constant is $\cos(36^{\circ}) = \phig/2$; uniformity follows from $H_3 = I_h$ residual symmetry; imported from Patch 0541 \S3.1 at sketch-document Layer~3 rigor; publication-grade hardening is shared exclusion class E1 of hardened Theorems~\ref{thm:host-first-shell-projection}, \ref{thm:first-shell-perpendicularity}; flagged as Open Problem~\ref{op:g1-hardening}. **G2 (icosahedral first-shell structure)**: the 12 first-shell vertices form a regular icosahedron centered at $\vhost$ with $H_3 = I_h$ acting transitively; corollary of 600-cell structure + Reading~C symmetry breaking; geometric source of host-to-first-shell uniformity and first-shell-to-first-shell perpendicularity. Host-to-first-shell unit-direction vectors $\hat{u}_i$ defined via Equation~\eqref{eq:host-to-shell-unit-direction}; short-edge chord length derivable from G1: $|v_i - \vhost|^2 = 2(1 - \phig/2) = \phig^{-2}$.
+
+4. **§3.4 The DI-bit current and Mechanism~A framework**: DI-bit current $\vec{j}_{DI}(v)$ at substrate vertex $v$ defined as the vector quantity representing net flow per unit Absolute Moment. At $H_4$-idealized substrate level: $\vec{j}_{DI}^{(0)}(v) = 0$. Under Reading~C + Mechanism~A: non-zero current induced. **Framework-local current construction at first order in $\delta$** via Equation~\eqref{eq:di-bit-current-construction}: $\jDInet(\vhost) = \sum_{i=1}^{12} [r(\hat{u}_i) - r(-\hat{u}_i)] \hat{u}_i = \sum_{i=1}^{12} 2\delta (\hat{u}_i \cdot \hat{n}) \hat{u}_i$. Three features of the construction enumerated: direct first-shell summation (higher shells enter at $\bigO{\delta^2}$+ per Theorem~\ref{thm:perturbation-locality}); antisymmetric difference; substrate-mechanism source of $\omegaPCD$ alignment.
+
+Three labeled equations introduced at §3: `eq:reading-c-alignment`, `eq:g1-primitive`, `eq:host-to-shell-unit-direction`, `eq:di-bit-current-construction` (four total). Plus cross-references to §1 (`sec:position-in-cpp`, `sec:scenario-a-mechanism-a`), §2 (`sec:scenario-a-mechanism-a`), §5 (`sec:first-shell-identities`, theorems thm:host-first-shell-projection, thm:first-shell-perpendicularity), §6 (`sec:perturbation-locality`, theorem thm:perturbation-locality + corollary cor:shell-locality), §7 (`sec:substrate-locality-theorem`, theorem thm:substrate-locality), open problems op:non-vertex-aligned-c, op:g1-hardening, op:delta-squared, op:layer4-mechanism-a.
+
+### §47.2 Layer-distinction discipline at §3
+
+Two operational points where Layer-distinction discipline manifests at §3:
+
+1. **§3.3 G1 Layer label preserved at primitive statement**: "G1 is imported from Patch 0541 \S3.1 at \emph{sketch-document Layer~3 rigor}; publication-grade hardening of G1 is registered as Open Problem~\ref{op:g1-hardening}." The Layer label is given at the point of statement, not deferred to a separate exclusion section. The reader knows from §3.3 forward that G1 is the framework's weakest link from a Layer-rigor perspective.
+
+2. **§3.4 framework qualifier audit trail continued**: "The framework qualifiers (Mechanism~A axiom, Reading~C primitive, 600-cell geometric primitive G1, minimal-local first-order restriction) are operationally taken as input at this paper's scope; Layer~4 axiomatic derivation of these qualifiers from CPP A1--A11 alone is registered as Open Problems~\ref{op:layer4-mechanism-a} and \ref{op:g1-hardening}." The five framework qualifiers list from §2.4 is preserved with G1 added explicitly; the conditionality structure is restated.
+
+### §47.3 Self-checkpoint — three places §47.1-§47.2 could overstate
+
+1. **The "CPP primitive axioms A1--A11 recap" framing**: §3.1 gives a focused recap of four load-bearing axioms only; the full registry is imported from corpus reference. A reader unfamiliar with CPP will not learn all eleven axioms from §3.1 alone — the brief is honest about being a recap, not a complete framework introduction. The full framework introduction lives at \emph{Tetrahedrons All the Way Down} Chapter 3.
+
+2. **The "G2 publication-grade hardening not flagged as separate Open Problem"** framing at §3.3 is operational at this paper's scope but is not a final-word judgment. G2 depends on the well-established 600-cell geometry; if a downstream reviewer flags G2 as needing publication-grade hardening, it could be promoted to a separate Open Problem in a future Patch. The current categorisation (G1 at Open Problem~\ref{op:g1-hardening}, G2 not flagged) reflects the current Layer-rigor distribution; it is not immutable.
+
+3. **The "framework-local current construction at first order in $\delta$"** Equation~\eqref{eq:di-bit-current-construction} is presented as the canonical construction at this paper's scope. Whether alternative constructions exist (e.g., a current defined over higher shells, or a path-integral construction over the 600-cell edge graph) that yield the same $\bigO{\delta^1}$ result is not addressed here; the local first-shell construction is operationally taken as the canonical first-order representation.
+
+### §47.4 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. Body-content substitution is standard paper-assembly methodology (fourth instance after Patches 0554 + 0556 + 0557). The methods catalogue audit Patch carries 8 candidate items unchanged from Patch 0557.
