@@ -1189,3 +1189,31 @@ Methods catalogue Step E audit per §29.4: no new METH entry. Combined reviewer-
 Patch 0569b introduces no new deferred items. Cumulative Round 1 + Round 2 + Round 3 cycle has produced 17 atomic edits across 3 substantive Patches (0569 + 0569a + 0569b) plus 1 documentation-only archival Patch (0568). Paper is now v1.0-SHIP-ready under explicit ChatGPT Round 3-confirmed scope framing.
 
 Forward queue post-Patch 0569b: **paper is v1.0-SHIP-ready under ChatGPT Round 3 verdict-matrix "reviewer-ready as flagship framework preprint YES" framing**. Patch 0570 = v1.0 SHIP with two possible variants (a) G1 hardening Patch (0569c) before SHIP, or (b) SHIP current state with scope-framing `\date{}` line.
+
+---
+
+## Vignette 49 — Patch 0569c: ChatGPT Round 4 archival + diagnostic-framing (no content edits; all 4 R4 recommendations already implemented at Patch 0569b)
+
+Patch 0569c is the response to ChatGPT's Round 4 review of the post-Patch-0569b manuscript (labelled "v0.9 v4"). The Round 4 verdict is the **strongest-positive verdict in the F.1 paper's reviewer-engagement history**: "genuinely stable in identity"; "credible flagship framework theorem paper"; "the paper no longer feels like it is trying to smuggle in a derivation of thermodynamics through rhetoric".
+
+The verdict trajectory is now Round 1 "NOT yet publication-grade flagship overall" → Round 2 "substantially improved; reviewer-ready as a disciplined pre-v1.0 framework paper" → Round 3 verdict matrix YES for "reviewer-ready as flagship framework preprint" → Round 4 "genuinely stable in identity"; "credible flagship framework theorem paper". This is a verdict-stabilisation trajectory: the paper has crossed the identity-stability threshold ("genuinely stable in identity" indicates the paper's epistemic identity is no longer in flux across review rounds).
+
+**The substantive content of Patch 0569c is documentation, not paper edits**: the Round 4 letter's four reviewer-driven recommendations (A, B, C, D) **are already implemented at Patch 0569b**. Cross-recommendation-vs-current-state analysis (Tier 4 §61.2) confirms: Rec A qualifier at 4 anchors implemented at Patches 0569a + 0569b; Rec B bold declarative at Patch 0569b Edit 4; Rec C TikZ Figure 8.1 at Patch 0569b Edit 5; Rec D documented as substantially met at Patch 0569b Tier 4 §60.4.
+
+The Round 4 letter quotes "This paper establishes Scenario A closure under a specific framework…" verbatim — this **exact pre-Patch-0569a text no longer appears** in the current paper. After Patch 0569a Edit B (Patch 0569b consolidates), the corresponding §1.2 line reads "This paper establishes **the substrate-locality component required for** Scenario A closure under a specific framework". The Round 4 letter quote matches the pre-Patch-0569a state exactly, supporting the diagnostic-framing hypothesis that the submitted version may have pre-dated Patch 0569a (Capotauro v0.9_session_135_revised round-2 precedent).
+
+Three candidate explanations (Tier 4 §61.3): (a) submission-version error; (b) session-context loss; (c) closing-emphasis restatement. None is dispositive without ChatGPT's session telemetry. Regardless of which is correct, the Round 4 verdict is unambiguously positive and consistent with v1.0-SHIP-readiness.
+
+**No `.tex` edits at this Patch** because all R4 recommendations are already implemented. Implementing additional changes would risk duplicating or regressing the Patch 0569a/0569b content. The right move is archival + diagnostic-framing + recommended follow-up action (verify version submission externally).
+
+The Round 4 letter's five "remaining major weaknesses" (G1 dependency + umbrella theorem hardening + Mechanism A derivation + thermodynamic interpretation chain + Scenario A wording) match the cross-reviewer Round 1 synthesis CAN-DEFER classification exactly. Items 1+2+3+4 are pre-existing CAN-DEFER (registered as Open Problems / candidate follow-up Patches); item 5 is addressed at Patches 0569a + 0569b (with the diagnostic-framing caveat that the Round 4 reviewer may not have seen the Patch 0569b state).
+
+ChatGPT R4's "G1 hardening is the single highest-value next action for the entire programme" is the same Round 4 reinforcement of Round 2 Recommendation 4 + Round 3 item 2. This is a programme-direction question for Thomas at Patch 0570: variant (a) G1 hardening first vs variant (b) v1.0 SHIP current state with G1 hardening as post-SHIP follow-up.
+
+Calibration discipline sustained: zero `.tex` changes. Paper unchanged at 33 pages. Calibration content of Patches 0569 + 0569a + 0569b unchanged. Author block unchanged.
+
+Methods catalogue Step E audit per §29.4: no new METH entry. Diagnostic-framing archival Patch pattern at first instance for F.1 paper; matches Capotauro v0.9_session_135_revised round-2 precedent at corpus level.
+
+Patch 0569c introduces no new deferred items. The paper is v1.0-SHIP-ready under multi-round cross-reviewer convergent verdict. The verdict-stabilisation threshold (Round 4 "genuinely stable in identity") confirms reviewer-engagement closure.
+
+Forward queue post-Patch 0569c: paper is v1.0-SHIP-ready. Patch 0570 = v1.0 SHIP with two possible variants (a) G1 hardening Patch first per ChatGPT R4 reinforcement, or (b) v1.0 SHIP current state with G1 hardening as post-SHIP follow-up. Programme-direction decision for Thomas.

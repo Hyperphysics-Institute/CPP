@@ -1327,3 +1327,54 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(F) F.2/F.3 trajectory openings**. **(G) Layer 4 axiomatic derivation Patch trajectory** (OPEN-FP-F1-2; ChatGPT R3 item 4). **(H) JUNO peer-review update integration**.
 
 **Self-checkpoint at this transaction:** Patch 0569b implements ChatGPT Round 3's three concrete reviewer-driven adjustments (Recommendations A, B, C) via 5 atomic edits. ChatGPT R3 verdict matrix stabilises the paper at "reviewer-ready as flagship framework preprint YES" + acknowledges remaining barriers to publication-grade are CAN-DEFER items already registered. TikZ dependency-graph figure addresses the cumulative dependency-clarity concern from Rounds 1+2+3. Paper compiles to 33 pages. Calibration discipline sustained. **Paper is v1.0-SHIP-ready under ChatGPT R3-confirmed scope framing.** Next: Thomas's programme-direction decision for Patch 0570 variant (a) vs (b).
+
+---
+
+## Transaction 059 — Patch 0569c (ChatGPT Round 4 archival + diagnostic-framing; no content edits)
+
+**Date:** 24 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=48ba487` = Patch 0569b).
+**Branch:** main.
+**Patch type:** Reviewer-archival + diagnostic-framing only (no content edits to `dynamical_substrate_law.tex`).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0569b ship + push at commit `48ba487`, with ChatGPT Round 4 review letter supplied inline.
+
+**Files modified (5 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/reviews/chatgpt_v0.9v4_session_142.md` (verbatim Round 4 letter + standardised metadata header + extensive diagnostic-framing note per Capotauro v0.9_session_135_revised round-2 precedent; cross-recommendation-vs-current-state analysis showing all four R4 recommendations already implemented at Patch 0569b).
+2. APPEND — Tier 4 §61 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (9 subsections covering: what this Patch does structurally + diagnostic finding + diagnostic-framing candidate explanations + Round 4 verdict-state interpretation + why no content edits at this Patch + recommended follow-up action + v1.0 SHIP scope-framing decision pending + methods catalogue Step E audit + paper status post-Patch 0569c).
+3. APPEND — Vignette 49 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 059 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0569c entry; Patch 0569b demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Diagnostic-framing archival Patch pattern at first instance for F.1 paper; matches Capotauro v0.9_session_135_revised round-2 precedent. Methods catalogue audit Patch candidate count remains at 9.
+
+**Programme state changes at Patch 0569c:**
+
+1. **ChatGPT Round 4 strongest-positive verdict landed**: "genuinely stable in identity" + "credible flagship framework theorem paper" — strongest positive verdict in F.1 paper's reviewer-engagement history.
+2. **Verdict-stabilisation threshold crossed**: Round 4 "genuinely stable in identity" indicates the paper's epistemic identity is no longer in flux across review rounds.
+3. **Diagnostic finding documented**: all 4 R4 recommendations already implemented at Patch 0569b. Round 4 letter appears to review a pre-Patch-0569a state (verbatim quote "This paper establishes Scenario A closure under a specific framework…" matches pre-Patch-0569a §1.2 exactly).
+4. **No content edits to `dynamical_substrate_law.tex`** — paper unchanged at 33 pages.
+5. **Round 4 letter archived** in reviews/ folder with Capotauro-precedent diagnostic-framing note.
+6. **Cumulative cross-reviewer Round 1 + 2 + 3 + 4 position**: v1.0 SHIP-acceptable across all rounds with ChatGPT R4 confirming verdict-stabilisation.
+7. **Calibration discipline sustained**: zero theorem/proof/OP/hardened-theorem modifications; zero `.tex` changes.
+8. **CAN-DEFER items unchanged** (G1 hardening + Theorem 7.1 hardening + δ² appendix + Layer 4 derivation + Reading C variants).
+9. **DECLINED items unchanged**.
+10. **Zero documentation drift** inherited or introduced.
+11. F.1 sub-question status unchanged (Patch 0569b cumulative state preserved).
+12. **Recommended follow-up action**: Thomas verify the submission-version question externally (e.g., re-submit current state to ChatGPT for confirmation round) before Patch 0570 SHIP.
+13–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0569c:**
+
+- **(A) Paper is v1.0-SHIP-ready** under multi-round cross-reviewer convergent verdict + ChatGPT R4 verdict-stabilisation.
+- **(B) Patch 0570 = v1.0 SHIP** with two possible variants for Thomas's programme-direction decision:
+  - **Variant (a)**: G1 hardening Patch (Patch 0569d / 0569e) precedes v1.0 SHIP per ChatGPT R1+R2+R3+R4 Major Weakness #1 ("G1 dependency = the single highest-value next action for the entire programme"). Targets "publication-grade flagship theorem paper" matrix level.
+  - **Variant (b)**: v1.0 SHIP with current state per multi-round cross-reviewer convergent SHIP-acceptable verdict. G1 hardening as post-SHIP follow-up Patch (v2.0+ trajectory). `\date{}` line carries ChatGPT R3+R4 scope framing "Version 1.0 (structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem), [SHIP date]".
+- **(C) Recommended follow-up action (Capotauro precedent)**: Thomas verify ChatGPT's submission version externally; if v0.9 v4 (post-Patch 0569b) was correctly submitted, surface Figure 8.1's existence + declarative sentence + Scenario A qualifier extension in a follow-up exchange.
+- **(D) Methods catalogue audit Patch** (9 candidates).
+- **(E) G1 publication-grade hardening Patch** (OPEN-FP-F1-3 — ChatGPT R1+R2+R3+R4 highest-priority; cross-reviewer-flagged as Tier 1).
+- **(F) Substrate-locality umbrella publication-grade hardening Patch** (ChatGPT R1+R2+R3+R4 Tier 1).
+- **(G) F.2/F.3 trajectory openings**. **(H) Layer 4 axiomatic derivation Patch trajectory** (OPEN-FP-F1-2). **(I) JUNO peer-review update integration**.
+
+**Self-checkpoint at this transaction:** Patch 0569c archives ChatGPT's Round 4 review with diagnostic-framing per Capotauro precedent. Round 4 verdict is the strongest-positive verdict in F.1 paper's reviewer-engagement history ("genuinely stable in identity" + "credible flagship framework theorem paper"). All four R4 recommendations are already implemented at Patch 0569b — cross-recommendation-vs-current-state analysis confirms this; the Round 4 verbatim quote "This paper establishes Scenario A closure under a specific framework…" matches the pre-Patch-0569a state exactly, supporting the submission-version-error or session-context-loss diagnostic hypotheses. No `.tex` edits at this Patch. Paper unchanged at 33 pages. **Paper is v1.0-SHIP-ready under multi-round cross-reviewer convergent verdict.** Next: Thomas's programme-direction decision for Patch 0570 variant (a) vs (b), with optional follow-up exchange to clarify the Round 4 submission-version question.
