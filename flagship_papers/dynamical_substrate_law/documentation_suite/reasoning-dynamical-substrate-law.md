@@ -4176,3 +4176,165 @@ Forward queue:
 - **Patch 0570 = v1.0 SHIP under Variant (b)** RECOMMENDED with explicit scope-framing `\date{}` line per multi-round cross-reviewer convergent verdict
 - Post-SHIP: Patch 0571 = G1 publication-grade hardening (OPEN-FP-F1-3) as v2.0+ first step
 - Post-SHIP candidates: OPEN-FP-F1-6 (prose-density tightening) + F.1-condensed companion paper
+
+---
+
+## §64 Patch 0570 — v1.0 SHIP of the Dynamical Substrate Law flagship paper (Variant b; current state with scope-framing date line; v1.0 PDF committed as frozen reference)
+
+**Context.** Patch 0569e archived ChatGPT Round 6 with diagnostic resolution (TikZ-rendering processing artifact confirmed; resolved via PDF upload protocol). All four previously-recurring R3+R4+R5 reviewer-driven recommendations explicitly acknowledged as implemented at Round 6. Cross-reviewer Round 1 + 2 + 3 + 4 + 5 + 6 cumulative position: v1.0 SHIP-acceptable across all reviewers with ChatGPT R6 strongest-positive verdict ("substantially more credible, rigorous, and publishable than all earlier versions"). The reviewer-engagement cycle is definitively closed. Patch 0570 is the **v1.0 SHIP milestone Patch** — the first v1.0 ship of an F-line flagship paper in the CPP corpus. Authorised via Thomas's "Please proceed" directive following Patch 0569e ship + push, with Variant (b) explicitly selected for v1.0 SHIP under the multi-round cross-reviewer convergent verdict + ChatGPT R3+R4+R5+R6 scope framing.
+
+### §64.1 What this Patch does — the v1.0 SHIP milestone
+
+Patch 0570 ships the F.1 flagship paper at v1.0 with:
+
+1. **`\date{}` update at line 115** to v1.0 SHIP version + scope-framing subtitle:
+   ```
+   \date{Version 1.0 --- 24 May 2026\\[3pt]{\small\itshape Structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem.}}
+   ```
+   The italicized subtitle on the title page makes the paper's scope-framing explicit at first reader contact — every reader who opens the PDF sees the precise v1.0 SHIP scope claim before reading the abstract.
+
+2. **CHANGELOG comment block update** (preamble lines 7-50) to v1.0 SHIP comprehensive entry covering:
+   - Version 1.0 SHIP date stamp (Patch 0570; 24 May 2026)
+   - Scope-framing claim (matches the title page `\date{}` subtitle)
+   - Cumulative build history from Patch 0554 (skeleton creation) through Patch 0570 (v1.0 SHIP) with all reviewer-cycle Patches 0568-0569e documented
+   - v1.0 SHIP cross-reviewer position summary (Grok R1 + Copilot R1 + ChatGPT R1→R6 trajectory)
+   - Post-v1.0 trajectory (OPEN-FP-F1-3 G1 hardening + OPEN-FP-F1-2 Mechanism A derivation + OPEN-FP-F1-6 prose-density tightening + F.1-condensed companion paper)
+   - Anti-priorities and calibration discipline statement
+
+3. **v1.0 PDF committed to repo** at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` as the frozen reference for the v1.0 milestone. This is precedent-setting for the F-line flagship trajectory: subsequent v1.x and v2.0 patches will produce updated PDFs at their own milestones; the v1.0 PDF remains a fixed retrievable artifact at this commit. Matches the pattern observed for archived papers in `archive/SS-5_versioned_drafts/` and `archive/SM-11 rename to SS-2 archive/`.
+
+**Files modified (6 file deltas)**:
+1. EDIT — `dynamical_substrate_law.tex` (2 atomic edits: Edit 1 `\date{}` + Edit 2 CHANGELOG)
+2. CREATE — `dynamical_substrate_law.pdf` (v1.0 SHIP frozen reference PDF; 33 pages, 489 KB)
+3. APPEND — Tier 4 §64 to reasoning doc (this section; 8 subsections)
+4. APPEND — Vignette 52 to development doc (v1.0 SHIP narrative)
+5. APPEND — Transaction 062 to transcript doc
+6. PREPEND — research_frontier.md Last-updated header (Patch 0570 v1.0 SHIP)
+
+### §64.2 Variant (b) rationale and the scope-framing language
+
+Patches 0569a § 59.4 + 0569b § 60.7 + 0569c § 61.7 + 0569d § 62.4 + 0569e § 63.5 surfaced the v1.0 SHIP scope-framing programme-direction question. Two variants were registered:
+
+- **Variant (a)**: G1 hardening Patch precedes v1.0 SHIP per ChatGPT R1+R2+R3+R4+R5+R6 convergent priority. Targets "publication-grade flagship theorem paper" matrix level.
+- **Variant (b)**: v1.0 SHIP with current state. G1 hardening as post-SHIP follow-up Patch in v2.0+ trajectory. `\date{}` line carries explicit scope framing.
+
+**Variant (b) was selected** per:
+- ChatGPT R3 + R4 + R5 + R6 explicit acknowledgment that the paper is "reviewer-ready as flagship framework preprint" / "credible flagship framework theorem paper" / "intellectually stable for a long-term foundational programme" / "substantially more credible, rigorous, and publishable than all earlier versions"
+- Cross-reviewer Round 1 SHIP-acceptable convergence (Grok explicit + Copilot implicit)
+- CPP corpus convention (Hyperphysics Institute deposit; preprint trajectory, not journal-submission gate)
+- Recurring-pattern resolution at Round 6 — the diagnostic question that hung over R3+R4+R5 is fully resolved as TikZ-rendering processing artifact, eliminating residual ambiguity about v1.0-SHIP-readiness
+
+The scope-framing language at `\date{}` ("Structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem") preserves the four key v1.0 SHIP claims explicitly on the title page:
+
+1. **Structurally-grounded**: the theorem stack has explicit dependency architecture (Figure 8.1)
+2. **Sketch-document Layer 3 flagship framework preprint**: registers the rigor level + paper-class (preprint, not journal submission)
+3. **Publication-grade hardened components**: the three trio theorems at hardened_theorems/ are publication-grade Layer 3
+4. **Non-publication-grade umbrella theorem**: explicit honesty that the assembly theorem (7.1) is sketch-document Layer 3, awaiting OPEN-FP-F1-3 G1 hardening + future umbrella hardening
+
+This four-claim structure addresses ChatGPT R4 final recommendation directly: "if v1.0 is explicitly scoped as: structurally-grounded sketch-document Layer 3 flagship preprint, with publication-grade hardened components but a non-publication-grade umbrella theorem — the manuscript is now much less overclaimed and much more structurally honest."
+
+### §64.3 The two atomic edits
+
+**Edit 1: `\date{}` line update** (line 115)
+
+- Old: `\date{Version 0.9 (pre-v1.0; awaiting reviewer engagement), 23 May 2026}`
+- New: `\date{Version 1.0 --- 24 May 2026\\[3pt]{\small\itshape Structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem.}}`
+
+The new `\date{}` renders on the title page as:
+- Line 1: "Version 1.0 — 24 May 2026" (em-dash separator)
+- Line 2 (3pt gap, small italic): "Structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem."
+
+The italic subtitle wraps across 2-3 lines on the title page (depending on rendering), creating an unmistakable scope-framing statement at first reader contact.
+
+**Edit 2: CHANGELOG comment block update** (preamble lines 7-50)
+
+The pre-v1.0 CHANGELOG block at Patch 0567 documented only the Patches 0554 → 0567 paper-assembly arc. The v1.0 SHIP CHANGELOG block extends documentation across:
+
+- Patches 0554 + 0556-0565 (paper skeleton + 10-Patch body-content assembly arc) — preserved verbatim
+- Patch 0566 (bibliography body) — preserved verbatim
+- Patch 0567 (pre-v1.0 final polish) — preserved with "pre-v1.0" qualifier added
+- **Patches 0568 → 0569e (v0.9 → v1.0 SHIP-cycle reviewer engagement)** — newly documented; covers Round 1 archival + Round 1 response + Round 2 + Round 3 (Figure 8.1 + bold declarative) + Rounds 4-6 archival with diagnostic-framing
+- **Patch 0570 (v1.0 SHIP)** — newly documented (this Patch)
+- **v1.0 SHIP cross-reviewer position summary** — newly added; documents all six reviewer rounds + cross-reviewer convergent verdict
+- **Post-v1.0 trajectory** — newly added; registers OPEN-FP-F1-3 + OPEN-FP-F1-2 + OPEN-FP-F1-6 + F.1-condensed companion as v2.0+ candidate Patches
+
+The CHANGELOG block grows from ~44 lines (pre-v1.0) to ~85 lines (v1.0 SHIP) but provides complete archival documentation of the F.1 paper's full development trajectory.
+
+### §64.4 v1.0 PDF committed as frozen reference
+
+Per the CPP corpus precedent observed at `archive/SS-5_versioned_drafts/*.pdf` and `archive/SM-11 rename to SS-2 archive/SM-11_lattice_scale_nucleon_structure.pdf`, **a frozen v1.0 PDF is committed at this Patch** as the retrievable canonical reference for the v1.0 milestone.
+
+The committed PDF:
+- 33 pages, 489 KB
+- Compiled from the post-Edit-1/Edit-2 `.tex` (with Version 1.0 title page + updated CHANGELOG)
+- MD5: `49e56be92a3ccc126ce09210b5898794`
+- Title page reads "Version 1.0 — 24 May 2026" with italicized scope-framing subtitle
+
+This is **precedent-setting** for the F-line flagship trajectory:
+- Future v1.x patches (e.g., post-SHIP prose-density tightening Patch OPEN-FP-F1-6) will not overwrite the v1.0 PDF; they will produce v1.1, v1.2, etc. at their own milestone Patches
+- v2.0 will be the next major version (e.g., after G1 publication-grade hardening); v2.0 will commit a new PDF alongside the v1.0
+- All historical PDFs remain in git history; the most recent version's PDF is the working reference
+
+The committed PDF is the **canonical citation target** for v1.0 references in CPP corpus internal documents. External citations (if any) should reference the GitHub commit hash of the Patch 0570 commit.
+
+### §64.5 Cross-reviewer cumulative v1.0 SHIP position
+
+The v1.0 SHIP commits at Patch 0570 under unambiguous multi-round cross-reviewer convergent verdict:
+
+| Reviewer | Round | Position |
+|---|---|---|
+| Grok | 1 | EXPLICIT v1.0 SHIP-acceptable |
+| Copilot | 1 | Implicit SHIP-acceptable with tier-ranked recommendations |
+| ChatGPT | 1 | "NOT yet publication-grade flagship overall — two decisive hardening steps pending" |
+| ChatGPT | 2 | "substantially improved; reviewer-ready as a disciplined pre-v1.0 framework paper" |
+| ChatGPT | 3 | verdict matrix YES for "reviewer-ready as flagship framework preprint" |
+| ChatGPT | 4 | "genuinely stable in identity; credible flagship framework theorem paper" |
+| ChatGPT | 5 | "first version that feels intellectually stable enough to support a long-term foundational programme" |
+| **ChatGPT** | **6** | **"substantially more credible, rigorous, and publishable than all earlier versions"** |
+
+ChatGPT R6 verdict is the strongest-positive verdict in the F.1 paper's reviewer-engagement history. The R1 → R6 monotonic verdict-improvement trajectory through six rounds is the cleanest possible v1.0 SHIP-readiness signal.
+
+### §64.6 Post-v1.0 trajectory and OPEN problem registration
+
+Patch 0570 v1.0 SHIP opens the **post-v1.0 trajectory** with four candidate Patches registered:
+
+1. **Patch 0571 (recommended first post-SHIP) — G1 publication-grade hardening** (OPEN-FP-F1-3). ChatGPT R1+R2+R3+R4+R5+R6 convergent "single highest-value next action for the entire programme". Would produce a new artifact at `hardened_theorems/first_shell_inner_product_primitive.tex` parallel to the Patches 0550/0551/0552 trio structure (741 lines combined). Unlocks unconditional publication-grade status for Theorems 5.1 + 5.2 and strengthens umbrella Theorem 7.1's footing.
+
+2. **OPEN-FP-F1-2 — Layer 4 axiomatic derivation of Mechanism A**. ChatGPT R1-R6 reaffirms; long-term programme target. Would derive the propagation-rate-asymmetry primitive $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\hat{n})$ from CPP axioms A1-A11 alone. Substantial Layer 4 work, possibly spanning multiple Patches.
+
+3. **OPEN-FP-F1-6 — Prose-density tightening** (newly registered at Patch 0569e from ChatGPT R6). Compress repetitive framework-qualifier phrasings without losing rigor. Post-SHIP polish Patch in the v1.1+ trajectory.
+
+4. **F.1-condensed companion paper** (newly registered at Patch 0569e from ChatGPT R6). Separate shorter geometry/locality paper focused on Theorem 6.1 (perturbation-locality) + Corollary 6.2 (shell-locality) + Theorem 7.1, with minimal CPP interpretation. Companion publication-strategic artifact, not replacement for F.1 flagship. v2.0+ trajectory parallel to F.1 flagship.
+
+Other forward-queue candidates: methods catalogue audit Patch (9 candidates accumulated across Sessions 138-142); F.2/F.3 sub-question trajectory openings; JUNO peer-review update integration.
+
+### §64.7 Calibration discipline at the v1.0 SHIP milestone
+
+**Discipline sustained at v1.0 SHIP** despite the milestone-character of the Patch:
+
+- No theorem statements modified
+- No proofs modified
+- No Open Problems modified
+- No `hardened_theorems/*.tex` source artifacts modified
+- No bibliography body modified
+- No abstract modified
+- No body content modified
+- Only metadata edits: `\date{}` line + CHANGELOG comment block
+
+The two edits are administrative/structural (date stamping + cumulative documentation), not substantive content edits. The PDF generated reflects the same paper content as Patches 0569b through 0569e — the only differences are the title page version date and the preamble comment block. This preserves the **content-integrity guarantee** that v1.0 SHIP is the SAME PAPER that received the cross-reviewer convergent verdict, not a divergent reviewer-cycle-end-game artifact.
+
+### §64.8 Methods catalogue Step E audit verdict + paper status
+
+**Methods catalogue Step E audit per §29.4**: no new METH entry at this Patch. The v1.0 SHIP milestone Patch pattern (`\date{}` update + CHANGELOG update + frozen PDF commit) is at first instance for an F-line flagship paper in the CPP corpus. Pattern is corpus-establishing; observable as candidate METH entry if v2.0+ SHIP milestone Patches recur with the same structure. Methods catalogue audit Patch candidate count increments to 10.
+
+**Paper status post-Patch 0570**:
+- **v1.0 SHIPPED** at commit assigned at push (HEAD will advance from Patch 0569e at `27ca24a` to the v1.0 SHIP commit)
+- Reviewer-engagement cycle definitively closed
+- Frozen PDF committed at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf`
+- Author email at drthomas@protonmail.com (Patch 0569a)
+- Title page Version 1.0 with scope-framing subtitle
+- CHANGELOG block fully documents Patches 0554 → 0570 build trajectory
+- 17 cumulative atomic LaTeX edits from v0.9 SHIP-cycle (Patches 0569 + 0569a + 0569b) preserved; 2 additional atomic edits at Patch 0570 (date + CHANGELOG)
+- Post-v1.0 trajectory opens: Patch 0571 G1 hardening (recommended first post-SHIP Patch)
+
+The F.1 flagship paper is now **v1.0 SHIPPED**. The first F-line flagship paper of the CPP corpus has crossed the v1.0 milestone threshold.

@@ -4,10 +4,11 @@
 %   Reading C in the 600-Cell
 % Conscious Point Physics Flagship Paper Series (F-line)
 %
-% Version 0.9 -- 23 May 2026 (Session 142, Patch 0567 — final polish
-%   pre-v1.0 SHIP. Paper is feature-complete: §1-§10 body content,
-%   bibliography with 13 \bibitem{} entries, and full cross-reference
-%   resolution all in place. Compiles cleanly to 31 pages.
+% Version 1.0 -- 24 May 2026 (Session 142, Patch 0570 — v1.0 SHIP)
+%   v1.0 SHIP: structurally-grounded sketch-document Layer 3 flagship
+%   framework preprint with publication-grade hardened components but
+%   non-publication-grade umbrella theorem. Paper compiles to 33 pages.
+%   Author email: drthomas@protonmail.com (updated at Patch 0569a).
 %
 %   Build history:
 %     Patch 0554 — paper skeleton created (preamble + section headers
@@ -27,25 +28,65 @@
 %       Patch 0565 §10 conclusion (final body-section Patch);
 %     Patch 0566 — bibliography body (13 \bibitem entries; Option B:
 %       explicit entries with body unchanged)
-%     Patch 0567 — final polish: date metadata + CHANGELOG comment
-%       + abstract Open Problem count corrected from 3 to 5
+%     Patch 0567 — pre-v1.0 final polish: date metadata + CHANGELOG
+%       comment + abstract Open Problem count corrected from 3 to 5
+%     Patches 0568-0569e — v0.9 → v1.0 SHIP-cycle reviewer engagement:
+%       Patch 0568 Round 1 archival + synthesis (Copilot + ChatGPT
+%         + Grok letters; 1 MUST-ADDRESS + 4 SHOULD-ADDRESS + 5
+%         CAN-DEFER + 2 DECLINED items classified)
+%       Patch 0569 Round 1 multi-edit response (8 atomic LaTeX edits
+%         implementing 5 reviewer-cycle items: thermodynamic-arrow
+%         framing triple-coverage at abstract + §1.1 + §10 +
+%         executive summary; §7.3 Step 3 representation-theoretic
+%         justification)
+%       Patch 0569a Round 2 reviewer-driven adjustments + author
+%         email update (4 atomic edits)
+%       Patch 0569b Round 3 reviewer-driven adjustments (5 atomic
+%         edits inc. Figure 8.1 TikZ dependency-graph in §8.2 +
+%         bold declarative in §1 executive summary)
+%       Patches 0569c-0569e Rounds 4-6 archival + diagnostic-framing
+%         + recurring-pattern documentation + diagnostic resolution
+%         (TikZ-rendering processing artifact identified at R4,
+%         confirmed at R6 via PDF upload protocol change; no `.tex`
+%         edits at these Patches)
+%     Patch 0570 — v1.0 SHIP: \date{} update + CHANGELOG update +
+%       compiled PDF committed as frozen reference for v1.0 milestone
 %
 %   The three publication-grade hardened theorem artifacts at
 %   `flagship_papers/dynamical_substrate_law/hardened_theorems/`
 %   (Patches 0550 + 0551 + 0552, 741 lines LaTeX combined) supplied
 %   §5 and §6 body content as direct integration inputs.
 %
-%   Forward queue from this Patch: Patches 0568-0569+0569a reviewer
-%   engagement cycle; Patch 0570 v1.0 SHIP with PDF committed.
+%   v1.0 SHIP cross-reviewer position (multi-round convergent verdict):
+%     Grok Round 1: EXPLICIT v1.0 SHIP-acceptable
+%     Copilot Round 1: implicit SHIP-acceptable with tier-ranked
+%       recommendations
+%     ChatGPT Round 1 → 2 → 3 → 4 → 5 → 6: monotonic verdict
+%       improvement from "NOT yet publication-grade flagship overall"
+%       to "substantially more credible, rigorous, and publishable
+%       than all earlier versions" (R6 strongest-positive)
 %
-%   Anti-priorities sustained throughout assembly per scoping doc:
+%   Post-v1.0 trajectory (v2.0+ candidate follow-up Patches):
+%     OPEN-FP-F1-3 — G1 publication-grade hardening (ChatGPT R1-R6
+%       convergent "single highest-value next action")
+%     OPEN-FP-F1-2 — Layer 4 axiomatic derivation of Mechanism A
+%     OPEN-FP-F1-6 — Prose-density tightening (registered at
+%       Patch 0569e from ChatGPT R6)
+%     F.1-condensed companion paper — Theorem 6.1 + Corollary 6.2 +
+%       Theorem 7.1 focused with minimal CPP interpretation
+%       (registered at Patch 0569e from ChatGPT R6)
+%
+%   Anti-priorities sustained throughout assembly + reviewer cycle:
 %     preserve Layer distinction + conditionality + open higher-order
 %     questions; do not erase uncertainty structure during paper
 %     polishing. Discipline named explicitly at §8.3 closing paragraph
 %     as "anti-erasure discipline"; operationalised at three concrete
-%     points in §10 (Patch 0549 framing preserved verbatim; two-part
-%     contribution decomposition; Open Problem cross-references
-%     sustained). 5-Open-Problem commitment preserved end-to-end.)
+%     points in §10. 5-Open-Problem commitment preserved end-to-end.
+%     Calibration discipline at Patches 0569 → 0569e: no theorem
+%     statements modified, no proofs modified (Patch 0569a Edit C
+%     added clarification AFTER existing Lemma 6.3.1 proof), no Open
+%     Problems modified, no hardened_theorems/*.tex source artifacts
+%     modified, no bibliography body modified.
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -112,7 +153,7 @@ Vertex-Aligned Reading~C in the 600-Cell}
 \small ChatGPT (OpenAI), Copilot (Microsoft), Grok (xAI) --- review and calibration
 }
 
-\date{Version 0.9 (pre-v1.0; awaiting reviewer engagement), 23 May 2026}
+\date{Version 1.0 --- 24 May 2026\\[3pt]{\small\itshape Structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem.}}
 
 \begin{document}
 
