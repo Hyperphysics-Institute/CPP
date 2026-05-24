@@ -1225,3 +1225,54 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(D)** Methods catalogue audit Patch (9 candidates). **(E)** G1 publication-grade hardening Patch (OPEN-FP-F1-3 — most immediately tractable; cross-reviewer-flagged as Tier 1). **(F)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up; cross-reviewer-flagged as Tier 1). **(G)** F.2/F.3 trajectory openings. **(H)** Layer 4 axiomatic derivation Patch trajectory (OPEN-FP-F1-2). **(I)** JUNO peer-review update integration.
 
 **Self-checkpoint at this transaction:** Patch 0569 is the substantive response to the v0.9 → v1.0 SHIP-cycle reviewer engagement. 8 atomic LaTeX edits implement the 5 reviewer-cycle items: 4 edits for ChatGPT Concern #3 (thermodynamic-arrow framing across abstract + §1.1 + §10); 1 edit for ChatGPT Concern #4 (representation-theoretic justification at §7.3); 1 edit for Copilot Tier 2 #3 (executive summary at §1); 2 edits for Grok minor items (Table 8.2 caption + abstract names theorems). Calibration discipline sustained: substantive content preserved; scope qualifiers sharpened. Paper compiles to 32 pages. **Paper is v1.0-SHIP-ready.** Next: Patch 0569a (optional) or Patch 0570 v1.0 SHIP.
+
+---
+
+## Transaction 057 — Patch 0569a (ChatGPT Round 2 reviewer-driven adjustments + author email update; 4 atomic edits)
+
+**Date:** 24 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=3d754da` = Patch 0569 reviewer-response).
+**Branch:** main.
+**Patch type:** Combined reviewer-archival (1 new file in `reviews/`) + multi-edit response (4 atomic edits) + administrative (author email update).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0569 ship + push at commit `3d754da`, with ChatGPT Round 2 review letter and author email update directive supplied inline.
+
+**Files modified (6 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/reviews/chatgpt_v0.9v2_session_142.md` (verbatim ChatGPT Round 2 review letter + standardised metadata header per capotauro precedent; verdict-state classification: reviewer-ready as a disciplined pre-v1.0 framework paper; substantial upgrade from Round 1's "NOT yet publication-grade flagship overall").
+2. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (4 atomic edits: Edit A author email update from drthomas@renaissanceministries.org to drthomas@protonmail.com + Edit B §1.2 Scenario A closure language softening + Edit C §6.3 Lemma 6.3.1 unperturbed-step clarification paragraph + Edit D §7.4 structural-not-editorial framing sentence). Paper compiles cleanly to 33 pages.
+3. APPEND — Tier 4 §59 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (8 subsections: §59.1 what this Patch does structurally + §59.2 ChatGPT Round 2 verdict shift analysis + §59.3 the 4 atomic edits + §59.4 ChatGPT Round 2 items NOT addressed and why + §59.5 calibration discipline sustained + §59.6 reviewer-cycle protocol observations + §59.7 methods catalogue Step E audit verdict + §59.8 paper status post-Patch 0569a).
+4. APPEND — Vignette 47 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+5. APPEND — Transaction 057 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+6. PREPEND — `research_frontier.md` Last-updated header (Patch 0569a entry; Patch 0569 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Reviewer-driven-adjustments Patch pattern at first instance for F.1 paper; combines reviewer-archival (Patch 0568 pattern) + multi-edit response (Patch 0569 pattern) in one combined Patch. Methods catalogue audit Patch candidate count remains at 9.
+
+**Programme state changes at Patch 0569a:**
+
+1. **ChatGPT Round 2 verdict upgrade landed**: from Round 1's "NOT yet publication-grade flagship overall" to Round 2's "substantially improved; reviewer-ready as a disciplined pre-v1.0 framework paper".
+2. **3 reviewer-driven adjustments implemented**: Edit B Scenario A softening + Edit C Lemma 6.3.1 clarification + Edit D §7.4 structural-not-editorial framing.
+3. **Author email updated** to drthomas@protonmail.com (Thomas's directive at this Patch).
+4. **Paper now compiles to 33 pages** (up 1 from 32 after Patch 0569); within 30-35 page final target.
+5. **ChatGPT Round 2 letter archived** in reviews/ folder following capotauro precedent.
+6. **Cross-reviewer cumulative Round 1 + 2 position**: v1.0 SHIP-acceptable across all three reviewers (Grok explicit Round 1; Copilot implicit Round 1; ChatGPT explicit Round 2 with minor adjustments implemented).
+7. **Paper is v1.0-SHIP-ready** under explicit "structurally-grounded sketch-document Layer 3 flagship preprint with publication-grade hardened components but non-publication-grade umbrella theorem" scope framing.
+8. **Calibration discipline sustained**: no theorem statements modified; no proofs modified; no Open Problems modified.
+9. **CAN-DEFER items unchanged** (G1 hardening + Theorem 7.1 hardening + δ² appendix + Layer 4 derivation + Reading C variants).
+10. **DECLINED items unchanged** (bibliography BibTeX integration + reduce governance language).
+11. **Zero documentation drift** inherited or introduced.
+12. F.1 sub-question status sharpened with Edit B (substrate-locality component required for Scenario A closure framing; explicit acknowledgement that $\hat{n} \mapsto \omegaPCD$ link's full derivation is supported-but-not-derived).
+13–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0569a:**
+
+- **(A) Paper is v1.0-SHIP-ready** under ChatGPT-Round-2-recommended scope framing.
+- **(B) Patch 0570 = v1.0 SHIP** with two possible variants for Thomas's programme-direction decision:
+  - **Variant (a)**: G1 hardening Patch precedes v1.0 SHIP per ChatGPT Round 2 Recommendation 4. Patch 0569b (or similar) = G1 publication-grade hardening artifact at `hardened_theorems/first_shell_inner_product_primitive.tex` (parallel to Patches 0550-0552 trio structure); then Patch 0570 = v1.0 SHIP with G1-hardened paper.
+  - **Variant (b)**: v1.0 SHIP with current state per cross-reviewer Round 1 + 2 SHIP-acceptable position. G1 hardening as post-SHIP follow-up Patch. v1.0 SHIP `\date{}` framing explicitly "Version 1.0 (structurally-grounded sketch-document Layer 3 flagship preprint with publication-grade hardened components but non-publication-grade umbrella theorem), [SHIP date]" per ChatGPT Round 2 final-recommendation scope framing.
+- **(C) Methods catalogue audit Patch** (9 candidates).
+- **(D) G1 publication-grade hardening Patch** (OPEN-FP-F1-3 — most immediately tractable; ChatGPT Round 2 Recommendation 4 priority; cross-reviewer-flagged as Tier 1).
+- **(E) Substrate-locality umbrella publication-grade hardening Patch** (candidate follow-up; ChatGPT Round 2 Major Concern #1; cross-reviewer-flagged as Tier 1; §7.4 framing strengthened at Patch 0569a Edit D).
+- **(F) F.2/F.3 trajectory openings**. **(G) Layer 4 axiomatic derivation Patch trajectory** (OPEN-FP-F1-2). **(H) JUNO peer-review update integration**.
+
+**Self-checkpoint at this transaction:** Patch 0569a implements ChatGPT's Round 2 reviewer-driven adjustments (3 substantive items) + Thomas's author email directive (1 administrative item) = 4 atomic LaTeX edits. ChatGPT Round 2 verdict substantial upgrade from "NOT yet publication-grade flagship overall" to "reviewer-ready as a disciplined pre-v1.0 framework paper". Paper compiles to 33 pages. Calibration discipline sustained. **Paper is v1.0-SHIP-ready under ChatGPT-Round-2-recommended scope framing.** Next: Thomas's programme-direction decision for Patch 0570 variant (a) vs (b).

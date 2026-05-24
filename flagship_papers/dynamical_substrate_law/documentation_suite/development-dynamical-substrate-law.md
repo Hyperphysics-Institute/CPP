@@ -1120,3 +1120,33 @@ Methods catalogue Step E audit per §29.4: no new METH entry. Multi-edit Patch p
 Patch 0569 introduces no new deferred items. Patch 0569a (optional) only if reviewer convergence reveals new issues; otherwise proceed directly to Patch 0570 v1.0 SHIP.
 
 Forward queue post-Patch 0569: **paper is v1.0-SHIP-ready**. Patch 0569a optional. Patch 0570 = v1.0 SHIP with PDF committed; update `\date{}` to "Version 1.0, [SHIP date]"; OSF deposit pending.
+
+---
+
+## Vignette 47 — Patch 0569a: ChatGPT Round 2 reviewer-driven adjustments + author email update (4 atomic edits; ChatGPT Round 2 verdict upgrade from "NOT yet publication-grade" to "reviewer-ready as disciplined pre-v1.0 framework paper")
+
+Patch 0569a is the response to ChatGPT's Round 2 review of the post-Patch 0569 manuscript (v0.9 v2). The Round 1 → Round 2 verdict shift is the most consequential outcome: ChatGPT's verdict upgraded from "NOT yet publication-grade flagship overall" (Round 1 at Patch 0568) to "**substantially improved; reviewer-ready as a disciplined pre-v1.0 framework paper**" (Round 2 at this Patch).
+
+What ChatGPT explicitly approves at Round 2: the Patch 0569 thermodynamic-arrow framing fixes ("directly fixes the main overclaim I flagged before"); the §1 executive summary ("tells the reader what the main theorem is before the programme history begins"); the §7.3 representation-theoretic justification ("strengthens the proof architecture"). These are the three Patch 0569 edits that ChatGPT identified as substantive improvements.
+
+Three new substantive reviewer-driven adjustments from ChatGPT Round 2 are implemented at this Patch via multi-edit Patch pattern:
+
+**Edit B (§1.2 Scenario A closure softening)**: ChatGPT identified that "establishes Scenario A closure" was still too strong even after Patch 0569's thermodynamic-arrow framing fixes. The new phrasing is "establishes the substrate-locality component required for Scenario A closure" — ChatGPT's second suggested phrasing — with explicit clarification that the $\hat{n} \mapsto \omegaPCD$ link's full derivation (including coupling from current to PCD orientation and the thermodynamic-arrow mechanism narrative) is supported-but-not-derived by the present paper's result.
+
+**Edit C (§6.3 Lemma 6.3.1 unperturbed-step clarification)**: ChatGPT identified Lemma 6.3.1's "arbitrary unperturbed steps don't violate graph-distance bound" as the least transparent mathematical step. The new clarification paragraph names the subtlety explicitly, points to the structural reason (closed-loop topology of paths terminating at $\vhost$ + unperturbed-propagator factorisation at each perturbed-edge vertex), and explains that unperturbed-step segments contribute closed sub-walks at each perturbed-edge vertex that don't increase the path's net reach. The hardened artifact §3.3 is cited for the rigorous treatment.
+
+**Edit D (§7.4 structural-not-editorial framing)**: ChatGPT identified that §7.4's mention of publication-grade hardening of Theorem 7.1 didn't make explicit that this is structural work, not editorial polish. The new sentence explicitly names the hardening as "structural rather than editorial" and lists the specific structural components (representation-theoretic treatment of icosahedral-sum identity + dependency graph + exclusion-class enumeration parallel to Patches 0550-0552 hardened-theorem trio at 741 lines combined).
+
+**Edit A (author email update)**: Thomas's directive to update the author block email from `drthomas@renaissanceministries.org` to `drthomas@protonmail.com`. Administrative change pairing naturally with the reviewer-driven adjustments.
+
+**ChatGPT Round 2 items NOT addressed at this Patch**: Major Concern #1 (Theorem 7.1 hardening; same as Round 1; CAN-DEFER); Major Concern #2 (G1 hardening; same as Round 1; CAN-DEFER); Recommendation 4 ("G1 hardening before final v1.0"; programme-direction question for Thomas at Patch 0570); final-recommendation v1.0 SHIP framing (programme-direction question for Patch 0570). All four items consistent with cross-reviewer synthesis Round 1 + 2 CAN-DEFER classification; not blocking v1.0 SHIP under the ChatGPT-Round-2-recommended "structurally-grounded sketch-document Layer 3 flagship preprint" scope framing.
+
+Calibration discipline sustained: no theorem statements modified; no proofs modified (Edit C adds a clarification paragraph AFTER the existing proof); no Open Problems modified; no hardened_theorems source artifacts modified; no bibliography body modified. Net addition ~250 words; paper grows from 32 → 33 pages. Within 30-35 page final target.
+
+**Cross-reviewer convergence at Round 1 + 2 cumulative**: ChatGPT (Round 1 substantive concerns; Round 2 substantial upgrade with 3 minor adjustments) + Grok (Round 1 explicit v1.0 SHIP-acceptable) + Copilot (Round 1 implicit SHIP-acceptable). Combined position: **v1.0 SHIP-acceptable across all three reviewers** with ChatGPT's Round 2 minor adjustments implemented at Patch 0569a. Paper is now v1.0-SHIP-ready under the explicit scope framing "structurally-grounded sketch-document Layer 3 flagship preprint, with publication-grade hardened components but a non-publication-grade umbrella theorem".
+
+Methods catalogue Step E audit per §29.4: no new METH entry. Reviewer-driven-adjustments Patch pattern at first instance for F.1 paper (combining reviewer-archival + multi-edit response in one Patch); pattern observable as candidate if recurring.
+
+Patch 0569a introduces no new deferred items. The 4 Round 2 CAN-DEFER items + the programme-direction decisions for Patch 0570 remain on the forward queue.
+
+Forward queue post-Patch 0569a: **paper is v1.0-SHIP-ready under ChatGPT-Round-2-recommended scope framing**. Patch 0570 = v1.0 SHIP with two possible variants: (a) G1 hardening Patch precedes v1.0 SHIP per ChatGPT Round 2 Recommendation 4; (b) v1.0 SHIP with G1 as registered Open Problem (current state) per cross-reviewer Round 1 + 2 SHIP-acceptable position. Thomas's programme-direction decision-call.
