@@ -933,3 +933,27 @@ Methods catalogue Step E audit per §29.4: no new METH entry. The non-integratio
 Patch 0562 introduces no new deferred items. Patch 0563+ starts with clean state.
 
 Forward queue post-Patch 0562: Patch 0563 = §8 Layer 3 stack body. Anticipated sub-structure per scoping doc §4.2 eighth step: §8.1 Layer 3 stack overview (the umbrella + trio architecture) + §8.2 Layer hierarchy explicit table + §8.3 Implications for Layer 4 trajectory. Target: 2-3 pages. Not an integration Patch; collates the Layer-rigor distinctions already operationalised across §3-§7 into a single explicit table.
+
+---
+
+## Vignette 40 — Patch 0563: §8 Layer 3 stack body insertion (collation Patch with explicit Layer hierarchy table)
+
+Patch 0563 inserts the §8 Layer 3 stack body — a collation Patch that consolidates the Layer-rigor distinctions already operationalised across §3-§7 into a single explicit reference table. The substitution is structurally simpler than the body Patches at §5-§7: no theorem environment to update, no Layer label decisions, no integration of hardened theorem content. Just the inner placeholder comment substituted with 91 lines of body content. The result is the cleanest substitution of the body-content sequence so far. The paper now compiles to 27 pages (was 24 after Patch 0562 §7); approximately 80% through body-content sequence (§1-§8 of §1-§10).
+
+The central artifact at §8 is Table~\ref{tab:layer-hierarchy}, an 8-row × 4-column LaTeX table summarising every Layer-3 result of the paper: rigor level, conditionality, source artifact reference. The table is the place where a reviewer can verify in one read that every result's rigor and dependency structure is explicit and consistent. The discipline this enforces — anti-erasure — has guided the paper from §3 forward; §8.3 names it explicitly at the closing paragraph.
+
+The most consequential editorial decision at this Patch is **how to handle the sub-structure departure from skeleton**. The Patch 0554 skeleton anticipated 5 subsections for §8 (minimal-local-first-order framework + per-theorem rigor classification + exclusion enumeration synthesis + Patch 0549 status framing recap + anti-erasure discipline). The Patch 0562 forward queue updated this to 3 subsections (overview + table + Layer 4 implications). The §8 body follows the 3-subsection updated outline; the skeleton's 5 anticipated elements are folded into the 3 subsections as documented at Tier 4 §52.2.
+
+This is the second sub-structure departure from the Patch 0554 skeleton (first was §7 5→4 subsections at Patch 0562). Both reflect the updated forward-queue direction post-skeleton-design. The pattern suggests that the skeleton's anticipated outlines were probably more granular than needed; the integration of §5+§6 inputs into §7's umbrella + §8's table consolidates content that the skeleton designer separated. This is documented as anti-priorities sustained: skeleton anticipated outlines are placeholders, not authoritative directives.
+
+The §8.3 Layer 4 implications subsection is the longest content paragraph block in §8. Three explicit implications: (1) closing op:g1-hardening unlocks Theorem 7.1 conditionality; (2) Layer 4 axiomatic derivation (op:layer4-mechanism-a) is independent of G1 hardening; (3) F.1 sub-question status is at "structurally-grounded sketch-document Layer 3 closure" — the Patch 0549 framing verbatim. The verbatim framing is deliberate: §8.3 is where the long-term programme position of the paper is anchored, not in editorial paraphrase but in the original Patch 0549 wording.
+
+The closing paragraph of §8.3 names the discipline that has guided the paper: **anti-erasure discipline**. The term was not introduced earlier in the body — it's been operationalised silently through Layer parenthetical labels, conditionality clauses, scope qualifiers, and exclusion class references. §8.3 names it explicitly, providing the reader (and a future programme-historian) with the term for what they've been seeing.
+
+Layer-distinction discipline at §8 operates at three concrete points (Tier 4 §52.4): Table~\ref{tab:layer-hierarchy} provides single-glance verification; §8.3 closing paragraph names "anti-erasure discipline"; §8.3 Implication 3 quotes Patch 0549 framing verbatim. The discipline is sustained without erosion.
+
+Methods catalogue Step E audit per §29.4: no new METH entry. The collation Patch pattern is at first instance at this Patch; if a similar pattern appears at downstream Patches or future flagship papers, it becomes a methods catalogue audit candidate.
+
+Patch 0563 introduces no new deferred items. Patch 0564+ starts with clean state.
+
+Forward queue post-Patch 0563: Patch 0564 = §9 open questions body. Substitutes the 5 placeholder Open Problem statements (OPEN-FP-F1-1 through OPEN-FP-F1-5 at labels op:delta-squared, op:layer4-mechanism-a, op:g1-hardening, op:sector5-schema, op:non-vertex-aligned-c) with actual statement content. Target: 2-3 pages. Same multi-block substitution pattern as §7 + §8 (multiple placeholders in one substitution). Like §7's preservation of Theorem 7.1 Layer label, each Open Problem's parenthetical title is preserved unchanged from the skeleton.

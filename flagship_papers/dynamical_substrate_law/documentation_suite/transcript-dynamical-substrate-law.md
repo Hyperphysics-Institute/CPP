@@ -929,3 +929,45 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch. **(G)** Substrate-locality umbrella (Theorem 7.1) publication-grade hardening Patch (NEW — candidate follow-up Patch flagged at §7.4; not a formal Open Problem). **(H)** F.2/F.3 trajectory openings. **(I)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(J)** JUNO peer-review update.
 
 **Self-checkpoint at this transaction:** Patch 0562 inserts the §7 substrate-locality umbrella theorem body — the substantive closure of the F.1 sub-question at sketch-document Layer 3. Theorem 7.1 reduces $\jDInet(\vhost)$ at first order in $\delta$ to the closed-form $\jDInet(\vhost) = (6\delta/\phig^2)\hat{n} + \bigO{\delta^2}$ — depending only on first-shell content. Paper compiles cleanly to 24 pages. Approximately 70% through body-content sequence. Zero documentation drift. The Layer label asymmetry (§5+§6 publication-grade + §7 sketch-document) is deliberately preserved. The 5-Open-Problem skeleton design is preserved (umbrella hardening flagged as follow-up Patch, not OPEN-FP-F1-6). Next Patch (0563) is §8 Layer 3 stack body — collates Layer-rigor distinctions into a single explicit table.
+
+---
+
+## Transaction 050 — Patch 0563 (§8 Layer 3 stack body insertion; collation Patch)
+
+**Date:** 23 May 2026 (Session 142 continuation).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=1f98c69` = Patch 0562 §7 substrate-locality umbrella body).
+**Branch:** main.
+**Patch type:** Substantive content / collation (eighth body-content Patch of the F.1 flagship paper assembly arc; not an integration Patch; executes scoping document §4.2 eighth step).
+
+**Trigger:** Thomas's "Please proceed" directive following Patch 0562 ship + push at commit `1f98c69`.
+
+**Files modified (5 file deltas applied + 0 DEFERRED):**
+
+1. EDIT — `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (§8 inner placeholder substituted with 91 lines of body content; outer comment header preserved per §17.6 (8); three subsections added §8.1-§8.3 + opening paragraph; one labeled table added: tab:layer-hierarchy with 8 rows × 4 columns). Paper compiles cleanly to 27 pages.
+2. APPEND — Tier 4 §52 to `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (5 subsections: §52.1 what this Patch does structurally + §52.2 sub-structure departure 5→3 subsections + §52.3 §8 body content structure + §52.4 Layer-distinction discipline at §8 + §52.5 methods catalogue Step E audit verdict).
+3. APPEND — Vignette 40 to `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 050 to `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0563 entry; Patch 0562 demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§29.4):** no new METH entry. Collation Patch pattern at first instance at this Patch; candidate count remains at 9.
+
+**Programme state changes at Patch 0563:**
+
+1. **§8 Layer 3 stack body in place**: per-theorem rigor classification consolidated into Table~\ref{tab:layer-hierarchy}; anti-erasure discipline named explicitly at §8.3 closing paragraph.
+2. **Paper now compiles to 27 pages** (was 24 after Patch 0562 §7); approximately 80% through body-content sequence (§1-§8 of §1-§10); on track for 30-35 page final target.
+3. **One labeled table added** (tab:layer-hierarchy); first table in the paper body.
+4. **Layer-distinction discipline operationalised at §8** at three concrete points (Table single-glance verification + anti-erasure discipline named + Patch 0549 framing verbatim).
+5. **Sub-structure departure from skeleton documented**: 5 → 3 subsections per Patch 0562 forward queue (second sub-structure departure after §7).
+6. **Zero documentation drift** inherited or introduced.
+7. F.1 sub-question status UNCHANGED at Patch 0549 framing.
+8–18. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0563:**
+
+- **(A) Patch 0564 = §9 open questions body** per scoping document §4.2 ninth step. Substitutes 5 placeholder Open Problem statements with actual statement content: OPEN-FP-F1-1 (extension to $\bigO{\delta^2}$; op:delta-squared); OPEN-FP-F1-2 (Layer 4 axiomatic derivation of Mechanism A; op:layer4-mechanism-a); OPEN-FP-F1-3 (publication-grade hardening of G1; op:g1-hardening); OPEN-FP-F1-4 (sector-5 schema instantiation; op:sector5-schema); OPEN-FP-F1-5 (non-vertex-aligned Reading C variants; op:non-vertex-aligned-c). Same multi-block substitution pattern as §5/§6/§7 (multiple environment placeholders in one substitution); each parenthetical title preserved unchanged from skeleton. Target: 2-3 pages.
+- **(B) Patches 0565-0567 — remaining body section assembly**: §10 conclusion at Patch 0565; bibliography at Patch 0566; final polish at Patch 0567.
+- **(C) Patches 0568-0569+0569a — reviewer engagement cycle.**
+- **(D) Patch 0570 (or thereabouts) — v1.0 SHIP with PDF committed.**
+- **(E)** Methods catalogue audit (9 candidates). **(F)** G1 publication-grade hardening Patch. **(G)** Substrate-locality umbrella publication-grade hardening Patch (candidate follow-up). **(H)** F.2/F.3 trajectory openings. **(I)** Layer 4 axiomatic derivation REGISTERED + DEFERRED. **(J)** JUNO peer-review update.
+
+**Self-checkpoint at this transaction:** Patch 0563 inserts the §8 Layer 3 stack body — a collation Patch consolidating per-theorem rigor classifications into Table~\ref{tab:layer-hierarchy}. Three subsections following Patch 0562 forward queue (5 skeleton subsections folded into 3). Anti-erasure discipline named explicitly at §8.3 closing paragraph. Paper compiles cleanly to 27 pages. Approximately 80% through body-content sequence. Zero documentation drift. Next Patch (0564) is §9 open questions body — substitutes 5 Open Problem placeholder statements with actual statement content.

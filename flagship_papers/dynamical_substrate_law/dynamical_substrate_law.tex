@@ -849,12 +849,97 @@ This conditionality is the source of the F.1 sub-question's framing as ``\emph{s
 \section{Layer 3 stack: status, scope, and exclusions}
 \label{sec:layer3-stack}
 
-% [Body content to be added at Patch 0562. Sub-structure anticipated:
-%   §8.1 The minimal-local-first-order realization framework
-%   §8.2 Layer distinction labels: per-theorem rigor classification
-%   §8.3 The five-class exclusion enumeration synthesis
-%   §8.4 The Patch 0549 sub-question status framing recap
-%   §8.5 Anti-erasure discipline (per ChatGPT Patch 0538 §10.7)]
+% [Body added at Patch 0563 per scoping doc §4.2 eighth step.
+%  Not an integration Patch — collates Layer-rigor distinctions already
+%  operationalised across §3-§7 into a single explicit table. Sub-structure
+%  follows Patch 0562 forward queue: §8.1 overview + §8.2 explicit table
+%  + §8.3 implications for Layer 4 trajectory. The skeleton anticipated 5
+%  subsections; the updated 3-subsection outline absorbs the skeleton's
+%  per-theorem rigor classification and exclusion enumeration synthesis
+%  into §8.2 (table form), and absorbs the Patch 0549 status framing recap
+%  and anti-erasure discipline into §8.3 (implications and discipline notes).]
+
+This section collates the Layer-rigor distinctions already operationalised across \S\S\ref{sec:framework-primitives}--\ref{sec:substrate-locality-theorem} into a single explicit reference table. The collation is editorial rather than substantive: no new theorems, primitives, or exclusions are introduced; the Layer-distinction structure of the paper is presented in unified form for the reader. The discipline this section enforces is \emph{anti-erasure}: every result's Layer status, conditionality structure, and source artifact reference is preserved at the table level, sustaining the per-theorem rigor classifications that \S\S\ref{sec:first-shell-identities}--\ref{sec:substrate-locality-theorem} operationalised at theorem-statement level.
+
+\subsection{The Layer 3 stack: umbrella plus trio architecture}
+\label{sec:layer3-stack-overview}
+
+The substantive results of the present paper organise into a two-level architecture at Layer~3:
+
+\paragraph{The publication-grade trio (\S\ref{sec:first-shell-identities}--\S\ref{sec:perturbation-locality}).}
+Three theorems plus one corollary, hardened to publication-grade Layer~3 rigor in dedicated `.tex' artifacts:
+\begin{itemize}[leftmargin=2em]
+\item Theorem~\ref{thm:host-first-shell-projection} (host-to-first-shell uniform projection; \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex}; Patch~0552)
+\item Theorem~\ref{thm:first-shell-perpendicularity} (first-shell-to-first-shell perpendicularity; \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex}; Patch~0551)
+\item Theorem~\ref{thm:perturbation-locality} (perturbation-theory propagation rule; \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}; Patch~0550)
+\item Corollary~\ref{cor:shell-locality} (shell-locality at $\bigO{\delta^1}$; corollary of Theorem~\ref{thm:perturbation-locality} + Theorem~\ref{thm:first-shell-perpendicularity}; same Patch~0550 artifact).
+\end{itemize}
+Each carries an explicit hypothesis-tracked statement, a five-class exclusion enumeration, and (for the trio's two §5 members) the shared exclusion class~E1 dependency on identity~G1.
+
+\paragraph{The sketch-document umbrella (\S\ref{sec:substrate-locality-theorem}).}
+One theorem, at sketch-document Layer~3 in the paper body only (no separate `.tex' artifact):
+\begin{itemize}[leftmargin=2em]
+\item Theorem~\ref{thm:substrate-locality} (substrate-locality umbrella; closed-form Equation~\eqref{eq:substrate-locality}: $\jDInet(\vhost) = (6\delta/\phig^2) \hat{n} + \bigO{\delta^2}$).
+\end{itemize}
+The umbrella's proof (\S\ref{sec:proof-from-5-6}) assembles the publication-grade trio into the closed-form substrate-locality result. The assembly proof is at sketch-document rigor; publication-grade hardening of Theorem~\ref{thm:substrate-locality} is a candidate follow-up Patch beyond the present paper's scope.
+
+The two-level architecture --- publication-grade trio plus sketch-document umbrella --- is the paper's principal Layer-3 contribution. The trio is the load-bearing geometric and perturbation-theory infrastructure; the umbrella is the substantive closure of the F.1 sub-question that the trio enables.
+
+\subsection{Per-theorem Layer hierarchy: explicit table}
+\label{sec:layer-hierarchy-table}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|l|l|p{3.5cm}|}
+\hline
+\textbf{Result} & \textbf{Rigor level} & \textbf{Conditional on} & \textbf{Source artifact} \\
+\hline
+Theorem~\ref{thm:host-first-shell-projection} & publication-grade Layer 3 & G1 (E1) & \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex} \\
+\hline
+Theorem~\ref{thm:first-shell-perpendicularity} & publication-grade Layer 3 & G1 (E1) & \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex} \\
+\hline
+Theorem~\ref{thm:perturbation-locality} & publication-grade Layer 3 & --- (unconditional) & \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex} \\
+\hline
+Corollary~\ref{cor:shell-locality} & publication-grade Layer 3 & --- (unconditional) & same artifact (Patch~0550 \S3.3.4) \\
+\hline
+Theorem~\ref{thm:substrate-locality} & sketch-document Layer 3 & G1 + trio & paper body only (no separate artifact) \\
+\hline
+Lemma~\ref{lem:g1-imported} (G1) & sketch-document Layer 3 & --- (Open Problem~\ref{op:g1-hardening}) & Patch~0541 \S3.1 (derivation only) \\
+\hline
+Axioms MA.1 + MA.2 & Layer 3 framework input & Layer 4 axiomatic derivation (Open Problem~\ref{op:layer4-mechanism-a}) & paper \S\ref{sec:mechanism-a} \\
+\hline
+Lemma~\ref{lem:chord-length} (chord length) & publication-grade Layer 3 & G1 (E1) & both \S5 hardened artifacts \\
+\hline
+\end{tabular}
+\caption{Per-theorem Layer hierarchy of the F.1 flagship paper. Five-class exclusion enumerations of the three hardened artifacts share exclusion classes E1 (G1 dependency for Patches~0551 + 0552) and have independent exclusion classes (Mechanism~A framework-axiom status for Patch~0550); see \S\ref{sec:exclusion-e1} + \S\ref{sec:exclusion-enumeration-section6}.}
+\label{tab:layer-hierarchy}
+\end{table}
+
+Table~\ref{tab:layer-hierarchy} encodes the per-theorem rigor classification operationalised at \S\S\ref{sec:framework-primitives}--\ref{sec:substrate-locality-theorem}. Three structural readings:
+
+First, the publication-grade trio at Patches~0550--0552 anchors the paper's load-bearing geometric and perturbation-theory content. Closing exclusion class~E1 (Open Problem~\ref{op:g1-hardening}; G1 publication-grade hardening) would upgrade Theorems~\ref{thm:host-first-shell-projection} and~\ref{thm:first-shell-perpendicularity} (and consequently Lemma~\ref{lem:chord-length}) to unconditional publication-grade Layer~3. Theorem~\ref{thm:perturbation-locality} and Corollary~\ref{cor:shell-locality} are already at unconditional publication-grade Layer~3.
+
+Second, the sketch-document umbrella Theorem~\ref{thm:substrate-locality} sits one Layer level below the trio. Its dependencies on G1 and on the trio mean that closing op:g1-hardening alone is insufficient to upgrade the umbrella; a separate publication-grade hardening of Theorem~\ref{thm:substrate-locality} (a candidate follow-up Patch beyond the paper's scope) would be needed.
+
+Third, the framework-axiom Axioms MA.1 + MA.2 sit at a distinct Layer position --- not a derived statement at any Layer, but a framework-axiom input. Their derivation from CPP primitive axioms A1--A11 is at Layer~4 (Open Problem~\ref{op:layer4-mechanism-a}); this is the long-term programme target, not a paper-level closure item.
+
+\subsection{Implications for the Layer 4 trajectory and the F.1 sub-question status}
+\label{sec:layer4-implications}
+
+The Layer-3 stack of Table~\ref{tab:layer-hierarchy} has three implications for the Layer-4 trajectory:
+
+\paragraph{Implication 1: G1 hardening unlocks Theorem~7.1 conditionality.}
+Closing Open Problem~\ref{op:g1-hardening} (G1 publication-grade hardening) would upgrade the trio to unconditional publication-grade Layer~3, removing the G1 dependency from the umbrella theorem's conditionality clause. Theorem~\ref{thm:substrate-locality} would then be at sketch-document Layer~3 \emph{conditional only on the trio} (which would itself be unconditional). A subsequent publication-grade hardening Patch of Theorem~\ref{thm:substrate-locality} would then upgrade the umbrella to unconditional publication-grade Layer~3 outright.
+
+\paragraph{Implication 2: Layer~4 axiomatic derivation is independent of G1 hardening.}
+The Layer~4 derivation of Mechanism~A (Open Problem~\ref{op:layer4-mechanism-a}; derivation of Axioms MA.1 + MA.2 from CPP primitive axioms A1--A11) is a separate trajectory from G1 publication-grade hardening (Open Problem~\ref{op:g1-hardening}). Closing one does not affect the other; the two Open Problems can be pursued in parallel or in either order without dependency conflict.
+
+\paragraph{Implication 3: The F.1 sub-question is at "structurally-grounded sketch-document Layer~3 closure".}
+The Patch~0549 framing of the F.1 sub-question's status --- ``\emph{structurally-grounded sketch-document Layer~3 closure under the Reading~C + 600-cell + Mechanism~A minimal-local-first-order framework, pending Layer~4 axiomatic derivation, $\bigO{\delta^2}$ extension, and publication-grade hardening of identity G1}'' --- is exactly the closure level achieved by Theorem~\ref{thm:substrate-locality} (\S\ref{sec:substrate-locality-theorem}) under the framework qualifiers of \S\ref{sec:statement-assembly}. The three pending items are: (i) Layer~4 axiomatic derivation (Open Problem~\ref{op:layer4-mechanism-a}); (ii) $\bigO{\delta^2}$ extension (Open Problem~\ref{op:delta-squared}); (iii) G1 publication-grade hardening (Open Problem~\ref{op:g1-hardening}). None is required for the substrate-locality umbrella to hold at sketch-document Layer~3 at the present paper's scope; all three are registered as open problems for the F.1 sub-question's broader closure to higher Layer or extended scope.
+
+\paragraph{Anti-erasure discipline.}
+Table~\ref{tab:layer-hierarchy} sustains the anti-erasure discipline that has guided the paper from \S\ref{sec:framework-primitives} forward: every per-theorem Layer label, every conditionality clause, every exclusion class reference, and every source-artifact reference is preserved in the unified table. The table is the place a reviewer can verify in one read that every result's rigor and dependency structure is explicit. The discipline is operational at the theorem-statement level (parenthetical Layer labels) and at the table level (Table~\ref{tab:layer-hierarchy}); both layers of representation are sustained without erasure.
 
 % ============================================================
 % §9 Open higher-order questions

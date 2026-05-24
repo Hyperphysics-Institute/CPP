@@ -3168,3 +3168,51 @@ Option (a) was chosen at this Patch: the references are dropped and replaced wit
 ### §51.6 Methods catalogue Step E audit verdict
 
 Per §29.4: no new METH entry at this Patch. The non-integration body Patch (assembling already-integrated inputs into a new theorem) is at the first instance at this Patch; if a similar pattern appears at downstream Patches (e.g., a §10 conclusion synthesising prior results), the pattern becomes a methods catalogue audit candidate. Methods catalogue audit Patch candidate count remains at 9.
+
+---
+
+## §52 Patch 0563 — §8 Layer 3 stack body insertion (collation Patch, explicit Layer hierarchy table)
+
+**Context.** Patches 0556-0562 inserted §1-§7 body content (introduction through substrate-locality umbrella). Patch 0563 inserts §8 Layer 3 stack body — a **collation Patch** that consolidates Layer-rigor distinctions already operationalised across §3-§7 into a single explicit reference table. No new theorems, primitives, or exclusions introduced. Authorised via Thomas's "Please proceed" directive following Patch 0562 ship + push at commit `1f98c69`.
+
+### §52.1 What this Patch does, structurally
+
+Substitutes the §8 inner-placeholder comment with 91 lines of LaTeX body content (~1500 words, ~3 PDF pages). Unlike Patches 0560-0562, §8 has no theorem environment in the skeleton — only an inner placeholder comment. This makes the substitution structurally simpler: single placeholder → body content. Outer comment header preserved per §17.6 (8) precedent.
+
+The substitution is **editorial rather than substantive**: the Layer-distinction structure of the paper is presented in unified form for the reader, but no new mathematical content is introduced. The §8 opening paragraph makes this explicit: "no new theorems, primitives, or exclusions are introduced; the Layer-distinction structure of the paper is presented in unified form for the reader."
+
+### §52.2 Sub-structure departure: 5 skeleton subsections → 3 forward-queue subsections
+
+The Patch 0554 skeleton anticipated §8's sub-structure as 5 subsections (minimal-local-first-order framework + per-theorem rigor classification + exclusion enumeration synthesis + Patch 0549 status framing recap + anti-erasure discipline). The Patch 0562 forward queue updated this to 3 subsections (overview + table + Layer 4 implications).
+
+The §8 body follows the 3-subsection structure, with the skeleton's 5 anticipated elements folded into the 3 subsections:
+- **§8.1 The Layer 3 stack: umbrella plus trio architecture** absorbs the skeleton's minimal-local-first-order framework element + the trio/umbrella architectural overview.
+- **§8.2 Per-theorem Layer hierarchy: explicit table** absorbs the skeleton's per-theorem rigor classification AND exclusion enumeration synthesis elements via Table~\ref{tab:layer-hierarchy} (8 rows + 4 columns: Result, Rigor level, Conditional on, Source artifact).
+- **§8.3 Implications for the Layer 4 trajectory and the F.1 sub-question status** absorbs the skeleton's Patch 0549 status framing recap (Implication 3) + anti-erasure discipline (closing paragraph).
+
+This is the second departure from the Patch 0554 skeleton's anticipated outlines (first was §7 5→4 subsections at Patch 0562); both departures reflect the updated forward-queue direction post-skeleton-design.
+
+### §52.3 §8 body content structure
+
+The §8 body adds an opening paragraph + three subsections per the Patch 0562 forward queue:
+
+- **Opening paragraph**: collation editorial-not-substantive framing; anti-erasure discipline preview.
+- **§8.1 The Layer 3 stack: umbrella plus trio architecture** — two-paragraph structure summarising publication-grade trio (Theorems 5.1, 5.2, 6.1 + Corollary 6.2) + sketch-document umbrella (Theorem 7.1). Articulates the architecture: trio is load-bearing geometric and perturbation-theory infrastructure; umbrella is substantive closure that the trio enables.
+- **§8.2 Per-theorem Layer hierarchy: explicit table** — Table~\ref{tab:layer-hierarchy} with 8 rows: Theorem 5.1, Theorem 5.2, Theorem 6.1, Corollary 6.2, Theorem 7.1, Lemma G1 imported, Axioms MA.1+MA.2, Lemma chord-length. Four columns: Result, Rigor level, Conditional on, Source artifact. Three structural readings following table: trio anchor + sketch-document umbrella one Layer below + framework-axiom distinct Layer position.
+- **§8.3 Implications for the Layer 4 trajectory and the F.1 sub-question status** — three numbered implications: (1) G1 hardening unlocks Theorem 7.1 conditionality; (2) Layer 4 axiomatic derivation is independent of G1 hardening; (3) F.1 sub-question is at "structurally-grounded sketch-document Layer 3 closure" (Patch 0549 framing verbatim). Closing paragraph: anti-erasure discipline sustained at theorem-statement level + table level.
+
+No new labeled equations, lemmas, or theorems introduced at §8. One labeled table introduced: `tab:layer-hierarchy`.
+
+### §52.4 Layer-distinction discipline at §8
+
+§8 is the section where Layer-distinction discipline is operationalised in its most explicit form — the table. Three concrete operationalisations:
+
+1. **Table~\ref{tab:layer-hierarchy} provides single-glance verification**: every per-theorem Layer label, every conditionality clause, every exclusion class reference, and every source-artifact reference is in the table. A reviewer can verify in one read that the paper's rigor and dependency structure is explicit and consistent across §3-§7.
+
+2. **§8.3 closing paragraph names the discipline**: "anti-erasure discipline" is the explicit term for what has guided the paper. The discipline is operational at the theorem-statement level (parenthetical Layer labels) AND at the table level (Table~\ref{tab:layer-hierarchy}); both layers of representation are sustained without erasure.
+
+3. **§8.3 Implication 3 quotes the Patch 0549 status framing verbatim**: the F.1 sub-question's status as "structurally-grounded sketch-document Layer 3 closure" is preserved word-for-word from Patch 0549. The conditionality clauses (Layer 4 derivation, $\bigO{\delta^2}$ extension, G1 hardening) are preserved.
+
+### §52.5 Methods catalogue Step E audit verdict
+
+Per §29.4: no new METH entry at this Patch. The collation Patch pattern (consolidating per-theorem rigor classifications into an explicit reference table) is at first instance at this Patch; if a similar pattern appears at downstream Patches or future flagship papers, it becomes a candidate for methods catalogue audit. Methods catalogue audit Patch candidate count remains at 9.
