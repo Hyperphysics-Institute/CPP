@@ -154,7 +154,7 @@ The blocks below are organized in the recommended Phase 7B execution order (smal
 ### §5.0 organizational_frontier.md audit — Patch 0574 candidate
 
 **Target:** `organizational_frontier.md`
-**Landing status:** PENDING
+**Landing status:** LANDED at Patch 0574 (Session 143, 25 May 2026). Two new OPEN-ORG entries registered: **OPEN-ORG-019** (PDF-upload-default reviewer engagement protocol + recurring-pattern diagnostic resolution methodology codification in `templates/operating_system.md` §17; status OPEN, trigger opportunistic next reviewer-round cycle, per handover §6 Step G explicit flag) + **OPEN-ORG-020** (Phase 7B context-overflow → lightweight-bootup-mode codification; status RESOLVED via Patch 0573 in same session; third same-session register-and-resolve pattern in CPP corpus history mirroring OPEN-ORG-013/014/008).
 **Audit hypothesis:** likely N/A — handover §6 Step E says *"OPEN-ORG-018 status unchanged (template creation still deferred; no new OPEN-ORG registered or closed at Session 142)."* Patch 0574 should be either:
 - (a) **No-op confirmation patch** documenting that organizational_frontier.md was audited at Phase 7B opening and required no changes from F.1 v1.0 SHIP, OR
 - (b) **Small registration patch** if any of the post-SHIP follow-up items at handover §2 turn out to constitute a new OPEN-ORG candidate — e.g., the diagnostic-framing recurring-pattern at Patch 0569e + Round 6 resolution could codify a `templates/operating_system.md` §17 reviewer-protocol update as OPEN-ORG-NNN; this is registered as "deferred follow-up Patch" candidate in the handover.
