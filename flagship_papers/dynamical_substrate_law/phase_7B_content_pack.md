@@ -211,7 +211,7 @@ Add new paragraph after Capotauro Documentation paragraph, summarizing F.1's doc
 ### §5.3 INDEX.md — Patch 0577 candidate
 
 **Target:** `INDEX.md`
-**Landing status:** PENDING
+**Landing status:** LANDED at Patch 0577 (Session 143, 25 May 2026). Audit found INDEX was already substantially populated at Patch 0572h (Phase 7A) with 9 F.1 entries (umbrella dynamical_substrate_law/ + .tex + .pdf + documentation_suite/ + code/ + hardened_theorems/ + reviews/ + reviewer_pause/ + sketches/) — exceeding the content pack's pre-staged single-entry expectation. Patch 0577 is therefore a **gap-fill audit**, not a major addition. Three post-Patch-0572h artifacts identified as missing from INDEX and added: (1) `layer3_promotion/` directory (5 Layer 3 promotion sub-question files preserving Tier-4 reasoning for B.1.d/q1/q2/q3/q4 closure trajectory; pre-existing but uncited at Patch 0572h); (2) `phase_7B_content_pack.md` (Patch 0573 execution scaffolding); (3) `development-transcripts/` directory (Patch 0572i curated transcripts directory + F1_transcript_session_143_phase_7a_opus.md). Plus Last-updated header prepend for Patch 0577 audit context. Note: existing Patch 0572h F.1 entries are NOT modified — the audit preserves prior entry content verbatim and adds gap-fill rows only.
 **Insertion location:** Flagship papers section (`flagship_papers/` subsection). Add F.1 entry between Capotauro and any subsequent F-line papers (currently only F.1 exists at F-line).
 
 **Pre-staged content block:**
