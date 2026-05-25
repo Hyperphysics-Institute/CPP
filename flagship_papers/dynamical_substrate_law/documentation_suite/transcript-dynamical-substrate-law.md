@@ -1690,3 +1690,47 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(K)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572a lands the second SHIP-time companion documentation file (`keywords-dynamical-substrate-law.md`) at the light risk-ordering position in the Phase 7A doc-suite production sub-arc. Per-patch Tier-file discipline established at this Patch: transcript-only audit trail per sub-patch + end-of-sub-arc Vignette + §-entry rollup at Patch 0572g (combined with verification notebooks audit). Phase 7A doc-suite production is 2 of 7 complete; remaining 5 docs (reviews + 4 substantive) queued for Patches 0572b–f.
+
+---
+
+## Transaction 066 — Patch 0572b (Phase 7A doc-suite production: third SHIP-time companion documentation file `reviews-dynamical-substrate-law.md`)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572a SHA `37f625d`).
+**Branch:** main.
+**Patch type:** Phase 7A doc-suite production Patch. Single-file CREATE + light-touch audit-trail append per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE (Patch 0572a). NO `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (B) — third risk-ordered SHIP-time companion documentation file per docsuite.md §32 input-source priority list (compilation-substantive: synthesizes 9 reviewer letters at `reviews/`). Patch 0572a landed at commit `37f625d`; Session 143 continues with Phase 7A doc-suite production at the reviews position.
+
+**Files modified (2 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/documentation_suite/reviews-dynamical-substrate-law.md` (~330 lines; per `templates/documentation-suite.md` §6 + checklist §A A6 consolidated reviews + FAQ format + Capotauro reference implementation `reviews-capotauro.md`). Sections: v1.0 SHIPPED status note + paper/source-letters/last-updated metadata + Review status (reviewer-engagement cycle structure + cross-reviewer convergent verdict) + **Part 1 Formal reviews** (Round 1 Copilot + Round 1 Grok + Round 1 ChatGPT + Round 1 Synthesis classification + Round 2 ChatGPT v2 + Round 3 ChatGPT v3 + Round 4 ChatGPT v4 + Round 5 ChatGPT v4-r5 + Round 6 ChatGPT v5-r6 + Cross-reviewer convergence analysis) + **Part 2 FAQ** (Methodology 3 entries + Scope 3 entries + Falsifiability 2 entries + Relationship to Standard Model 2 entries + Future work 3 entries) + Summary.
+2. APPEND — Transaction 066 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Patch 0572b continues the METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE established at Patch 0572a — small + focused + transcript-only Tier-file audit trail. Vignette + §-entry rollup deferred to Patch 0572g end-of-sub-arc bundle.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch. Three METH candidates surfaced in the reviews file content (METH-VARIANT-B-SCOPE-SUBTITLE + METH-PDF-UPLOAD-DEFAULT-REVIEWER + METH-GITIGNORE-FLAGSHIP-PDF-EXCEPTION) were already surfaced at Patch 0572a Tier-file content and at Patch 0571 handover; not duplicated as new candidates here.
+
+**Programme state changes at Patch 0572b:**
+
+1. **Third SHIP-time companion documentation file landed**: `reviews-dynamical-substrate-law.md` per docsuite.md §6 + checklist §A A6. Phase 7A doc-suite production now 3 of 7 complete (changelog ✓ + keywords ✓ + reviews ✓; remaining: mechanism + glossary + phenomena + philosophy).
+2. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+3. **Reviewer-engagement cycle definitively recorded**: the v0.9 → v1.0 SHIP cycle's 9 reviewer letters + synthesis are now consolidated into a single per-paper canonical reviews-companion file with cross-reviewer convergence analysis + diagnostic-resolution archival (TikZ-rendering processing artifact at R6 PDF-upload).
+4. **FAQ legacy-allowed format consolidated into reviews file** per checklist §A A6 (FAQ not required as separate file for papers adopted ≥ 22 April 2026). F.1 does not have a separate `FAQ-dynamical-substrate-law.md` file; Part 2 FAQ lives within reviews file per consolidated format.
+
+**Forward queue post-Patch 0572b (unchanged from Patch 0572 §66.5 forward queue; one item advanced):**
+
+- ✓ Patch 0572 — Tier-file audit + `changelog-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572a — `keywords-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572b — `reviews-dynamical-substrate-law.md` (THIS PATCH)
+- **(C) Patch 0572c** = `mechanism-dynamical-substrate-law.md` (next; substantive — physical mechanism narrative with mathematical-correspondence table per docsuite.md §3)
+- **(D) Patch 0572d** = `glossary-dynamical-substrate-law.md` (substantive)
+- **(E) Patch 0572e** = `phenomena-dynamical-substrate-law.md` (substantive)
+- **(F) Patch 0572f** = `philosophy-dynamical-substrate-law.md` (substantive; heaviest)
+- **(G) Patch 0572g** = verification notebooks audit (B1–B5) + Phase 7A sub-arc Vignette 55 + §67 Tier-file rollup
+- **(H) Patch 0572h** = C11 bibliography entry + D2 INDEX.md row + D3 paper README audit
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates (clean integer sequence)
+- **(K)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572b lands the third SHIP-time companion documentation file (`reviews-dynamical-substrate-law.md`) at the compilation-substantive risk-ordering position. The reviews file is the comprehensive historical record of the v0.9 → v1.0 SHIP-cycle reviewer engagement (9 letters across 6 rounds + cross-reviewer convergence analysis + Part 2 FAQ with 13 entries across 5 categories). Doc-suite production transitions from light (changelog + keywords + reviews — Patches 0572 + 0572a + 0572b) to substantive (mechanism + glossary + phenomena + philosophy — Patches 0572c–f). Phase 7A doc-suite production is 3 of 7 complete; the four remaining substantive docs are queued for Patches 0572c–f per risk-ordered sequence.
