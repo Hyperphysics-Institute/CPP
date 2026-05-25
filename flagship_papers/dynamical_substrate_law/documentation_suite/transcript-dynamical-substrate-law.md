@@ -1941,3 +1941,43 @@ Methods catalogue audit Patch candidate count: 14 entries queued for Phase 7B Pa
 - **(K)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572g closes the Phase 7A doc-suite production sub-arc with the four-file end-of-arc bundle (INDEX.md CREATE + §67 reasoning APPEND + Vignette 55 development APPEND + Transaction 071 transcript APPEND — this entry). The 8-Patch sub-arc delivered 7 SHIP-time companion documentation files + B1–B5 verification notebooks audit + scripts INDEX + end-of-arc Tier-file rollup. The full F-line flagship trajectory methodology pattern is now documented end-to-end across the companion files + verification scripts + audit document + Tier-file lab-notebook record. Phase 7A continues at Patch 0572h with the paper-specific catalog/index/README updates outside the documentation_suite/code folders.
+
+---
+
+## Transaction 072 — Patch 0572h (Phase 7A paper-specific registry updates: C11 bibliography entry + D2 INDEX.md row + D3 paper README v1.0 SHIPPED rewrite)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572g SHA, post-`bf24ba4`).
+**Branch:** main.
+**Patch type:** Phase 7A paper-specific registry updates Patch. Three programme-level paper-specific file modifications + transcript audit-trail append. NO `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / abstract / body / author block modifications.
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (H) — paper-specific catalog/index/README updates outside the documentation_suite/code folders per `paper_completion_checklist.md` §C C11 + §D D2 + §D D3 (Phase 7A paper-level subset of Section C + Section D).
+
+**Files modified (4 file deltas):**
+
+1. EDIT — `bibliography/cpp_references.bib` (**C11 bibliography entry**): added new `@unpublished{abshier2026_dynamical_substrate_law, ...}` BibTeX entry directly after `abshier2026_chirality_continuum` (keeps flagship-paper self-references grouped together). Cite-key convention: `abshier2026_<paper_id>` per the chirality_continuum precedent (the most recent flagship entry; both use `@unpublished` type rather than `@misc` consistent with v1.0 SHIPPED + OSF-deposit-pending status). Entry content: F.1 v1.0 SHIPPED metadata + first-F-line-flagship distinction + substrate-locality structure closed-form + 5+1 OPEN-FP-F1 entries + OSF DOI link. Last-updated header advanced from "26 April 2026 (added SS-8 v1.0 BibTeX entry)" to "24 May 2026 (Patch 0572h Session 143; added F.1 BibTeX entry...)" with Earlier-last-updated preservation per Patch 0481M anti-collision discipline.
+2. EDIT — `INDEX.md` (**D2 paper-specific INDEX rows**): added 9 new rows in the flagship_papers section after `chirality_continuum/chirality_continuum_outline.md` row and before `strong/` row (alphabetical + chronological position; F.1 is the third non-SF-N flagship after Capotauro and Chirality Continuum). The 9 rows cover: `dynamical_substrate_law/` (main folder) + `.tex` source + `.pdf` compiled + `documentation_suite/` (10-file suite enumeration) + `code/` (5 scripts + INDEX.md) + `hardened_theorems/` (Patches 0550 + 0551 + 0552 trio) + `reviews/` (9 letters + synthesis) + `reviewer_pause/` (4 artifacts) + `sketches/` (4 sketches). Last-updated header advanced from "11 April 2026" to "24 May 2026 (Patch 0572h Session 143; added F.1 dynamical_substrate_law/ entry to flagship_papers section)" with Earlier-last-updated preservation.
+3. EDIT — `flagship_papers/dynamical_substrate_law/README.md` (**D3 paper README full rewrite to v1.0 SHIPPED state**): the prior README was at "Active development — F.1 sub-question scoping sketch OPENED Session 138 Patch TBD" pre-v1.0 state. Full rewrite to mirror the Capotauro v1.0 README pattern, with v1.0 SHIPPED status header + nine-word paper-type declaration + closed-form result + cross-reviewer convergent verdict + three programme-level conventions + contents table + theorem inventory + 5+1 Open Problems + v2.0+ post-SHIP trajectory + cross-paper consistency + reviewer-pause cycle convention precedent. ~103 lines new content replacing ~45 lines prior pre-v1.0 content.
+4. APPEND — Transaction 072 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Continues METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE for Patch-level discipline (transcript-only audit trail per sub-patch); Vignette + §-entry rollup deferred to a future end-of-Phase-7A bundle if warranted.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch.
+
+**Programme state changes at Patch 0572h:**
+
+1. **C11 bibliography entry landed**: F.1 paper now citable via `\cite{abshier2026_dynamical_substrate_law}` from other CPP papers. The cite-key follows the established `abshier2026_<paper_id>` convention for v1.0 SHIPPED unpublished CPP flagship papers (chirality_continuum precedent).
+2. **D2 INDEX.md paper-specific rows landed**: 9 rows added covering the full F.1 paper directory tree. INDEX.md is now F.1-aware for the first time (previously stale relative to 11 April 2026 last-update).
+3. **D3 paper README at v1.0 SHIPPED state**: full rewrite reflects v1.0 SHIPPED status accurately; mirrors Capotauro v1.0 README structure; ~58 lines of new content (103 - 45 = +58 net delta).
+4. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / abstract / body / author block modifications.
+
+**Forward queue post-Patch 0572h (Phase 7A continues):**
+
+- ✓ Patches 0572, 0572a–h (LANDED — Phase 7A doc-suite production sub-arc + paper-specific registry updates COMPLETE)
+- **(I) Patch 0572i** = next; E curated transcripts per OS §15 Step F (chat-window export curation for Patches 0554–0570 closure trajectory). **Final Phase 7A item.** Location to be determined at scoping; candidate `flagship_papers/dynamical_substrate_law/development-transcripts/` parallel to `series_standard_model/development-transcripts/` convention if such exists, or a flagship-specific location.
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates (11 registries; clean integer sequence per Thomas's confirmed no-concurrent-windows condition). 14 METH candidates queued for Phase 7B methods catalogue audit Patch (Patch 0575-ish).
+- **(K) Patch 058N+1** = Phase 7C (OSF registration + anthology chapter + final H1–H5 verification).
+- **(L) Patch 0581-ish** = G1 publication-grade hardening (OPEN-FP-F1-3) — RECOMMENDED first post-Phase-7 substantive physics Patch.
+- **(M)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572h lands the three Phase 7A paper-specific registry updates (C11 bibliography + D2 INDEX.md + D3 paper README) outside the documentation_suite/code folders. The four file deltas complete Phase 7A item C11 + D2 + D3 per `paper_completion_checklist.md`. **Phase 7A is now 95%+ complete** (Patch 0572i closing E curated transcripts is the last remaining Phase 7A item); Phase 7B starts at Patch 0573 with programme-level registry updates. F.1 paper is now fully integrated into the corpus catalog + index + bibliography at v1.0 SHIPPED state.
