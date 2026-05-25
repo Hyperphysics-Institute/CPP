@@ -190,6 +190,62 @@ This ensures the in-container clone reflects the canonical state on GitHub.
 
 ---
 
+## 3.5. Lightweight-Bootup Modes — for surgical registry-update sessions
+
+> **MOTIVATION (registered 25 May 2026 Session 143 Patch 0573, after Thomas reported ~6 context restarts + 3 new windows during Phase 7B execution of F.1 v1.0 SHIP):** the full Step-1 priority read list (§Step 1 of this file) is the right protocol for physics work, paper development, and discovery sessions — but is **overkill for surgical registry-update sessions** (Phase 7B work after a flagship paper v1.0 SHIP). Quantified diagnostic: full priority read = ~7,000 lines bootup; plus the relevant paper's `.tex` + doc suite = another ~4,500 lines; plus all Phase 7B target registries = another ~6,000 lines; total ~17,500+ lines of context input before any substantive patch work begins, which exhausts the working budget for the substantive work itself. The mode below replaces the full priority read with a curated minimum (~1,000–2,500 lines) for sessions whose entire scope is one surgical registry edit. It does NOT replace the full priority read for physics, derivation, theorem-development, paper-drafting, or open-problem-exploration sessions — those still need the full Step 1 read.
+
+### Phase-7B mode (post-SHIP programme-level registry updates)
+
+**Use when:** the session's entire scope is updating ONE programme-level registry to reflect a recently-shipped flagship paper's v1.0 SHIP state, AND a Phase 7B content pack exists at `flagship_papers/<paper>/phase_7B_content_pack.md` for that paper.
+
+**Minimal read list (replaces Step 1 for this session only):**
+
+1. `bootup.md` §3 (patch contract) + this §3.5 (Phase-7B-mode directive) — ~100 lines
+2. The most recent handover at `handovers/` for the relevant paper — typically 100–200 lines for routine handovers, longer for milestone-trajectory handovers
+3. The paper's Phase 7B content pack: `flagship_papers/<paper>/phase_7B_content_pack.md` — typically 400–800 lines; contains pre-staged registry insertion blocks + anti-collision anchors + per-registry sanity checks
+4. The ONE target registry being updated — varies 200–2000 lines
+5. (Optional, only if anti-collision diagnostic needed) `templates/operating_system.md` §15 Step E + §16 anti-collision — grep-extract only, ~200 lines
+
+**Total: ~1,000–2,500 lines.** Leaves comfortable headroom for substantive patch production.
+
+**What to SKIP in Phase-7B mode (vs full Step 1):**
+
+- `programme_orientation.md` — full read NOT needed; the content pack carries the F.1-specific orientation summary at its §0. Only re-read if writing the programme_orientation patch itself (Patch 0583 in F.1's case), and even then read only the sections being edited.
+- `theory-overview.md` — NOT needed; surgical registry edits do not require theory-scorecard refresh in working memory.
+- `founders_vision.md` — NOT needed for registry updates.
+- `research_frontier.md` (1850 lines for F.1's case) — NOT a Step-1 read; only read when its update is the patch's target (Patch 0584 in F.1's case), and even then read only the anchor section being edited.
+- `theorem-registry.md` (289 lines, with massive "Last updated" header) — same logic; read only when its update is the patch's target.
+- `templates/AI_team_expectations.md` — NOT needed; reviewer protocol is implicit in the handover.
+- The paper's `.tex` source — NOT needed; the content pack has pre-extracted all paper content. If a sanity check requires verifying a claim against the `.tex`, grep for the specific claim, do NOT read the full paper.
+- The paper's documentation suite (mechanism/glossary/phenomena/philosophy/reviews/keywords companion files) — NOT needed; their content is pre-extracted into the content pack.
+
+### Phase-7B mode session protocol (Steps 1–4)
+
+1. **Bootup** — read the minimal list above (~5–10 minutes).
+2. **Anti-collision audit** — read the content pack's "Anti-collision note" section for the target registry. Verify no concurrent session is editing the same target. If any other Opus window is active on the same registry, route around to a different target or coordinate at the user level.
+3. **Patch production** — make ONE surgical `str_replace` on the target registry per the content pack's pre-staged block. Use the anti-collision anchors (grep-stable inline content) rather than line numbers. Commit. `git format-patch`.
+4. **Session close** — flip the content pack's `Landing status: PENDING` to `Landing status: LANDED at Patch 05NN` in a small follow-up `str_replace` to the content pack itself, optionally bundled in the same patch or as a sub-patch (e.g., 05NNa). Update the next-session pointer in the handover or carry it forward.
+
+### When NOT to use Phase-7B mode
+
+- Physics work, derivation, theorem development → full Step 1 priority read.
+- Open problem exploration, conjecture work → full Step 1 priority read.
+- Paper drafting, reviewer-cycle response work → full Step 1 priority read.
+- Repo housekeeping or restructuring → full Step 1 priority read + `templates/research_frontier_architecture.md`.
+- Recovery / context-overflow recovery → full Step 1 priority read.
+
+### Future variants (placeholder)
+
+The lightweight-bootup-mode pattern templates similar modes for other recurring narrow-scope session types. Candidates registered as future work (not implemented at this patch):
+
+- **Phase-7C mode** (OSF deposit + anthology chapter + H1–H5 verification): minimal read list anchored on the same content pack + `templates/anthology_chapter_template.md`.
+- **Handover-only mode** (session-close handover production after a non-substantive session): minimal read list anchored on `templates/operating_system.md` §15 only + recent session log.
+- **Single-companion-file mode** (one SHIP-time companion file production in Phase 7A): minimal read list anchored on `templates/documentation-suite.md` + relevant reference-implementation file.
+
+These variants are not formally registered as open organizational items at this patch; they emerge if the corresponding session-type recurs with overflow symptoms.
+
+---
+
 ## 4. Complete Repository Structure
 
 ```
