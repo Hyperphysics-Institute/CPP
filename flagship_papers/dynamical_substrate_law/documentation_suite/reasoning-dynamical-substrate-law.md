@@ -4404,3 +4404,128 @@ Forward queue post-Patch 0571 (Phase 7 paper completion at Session 143):
 3. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (post-Patch-0570 source)
 4. `templates/paper_completion_checklist.md` Section A (Phase 7A items list)
 5. `templates/documentation-suite.md` (per-file template structure for 7 SHIP-time files)
+
+---
+
+## §66 Patch 0572 — Session 143 Phase 7A initiation: Tier-file audit at SHIPPED state + first SHIP-time companion documentation file `changelog-dynamical-substrate-law.md` bundled
+
+**Context.** Patch 0571 closed Session 142 with the session-close handover artifact + four-artifact convention at F.1 v1.0 SHIP. Patch 0572 is the **Session 143 first substantive Patch**, opening Phase 7A paper completion work for F.1 per `templates/paper_completion_checklist.md` Section A + handover §5 anchor read order completion. Authorised via Thomas's "Please generate Patch 0572 bundled (audit + changelog), and fold the changelog draft in" directive at Session 143 open; bundled-bundle Option selected over narrow-audit-only Option A.
+
+### §66.1 What this Patch does
+
+Patch 0572 is the **Phase 7A initiation Patch** bundling two distinct work elements in a single Patch:
+
+**Work element 1 — Tier-file audit at Patch 0571 SHIPPED state.** Verify that all three accumulating Tier files in `flagship_papers/dynamical_substrate_law/documentation_suite/` are at the SHIPPED state claimed by handover §6 Steps B/C/D, with no drift between the handover's audit claims and the observed file-tail state. The audit also enumerates the supporting infrastructure inventory (verification scripts at `code/`, reviewer letters at `reviews/`, sketches at `sketches/`, reviewer-pause artifacts at `reviewer_pause/`, hardened-theorem artifacts at `hardened_theorems/`) to confirm Phase 7A source material is complete and indexed for upcoming Patches 0572a–i.
+
+**Work element 2 — First SHIP-time companion documentation file creation.** Create `changelog-dynamical-substrate-law.md` per `templates/documentation-suite.md` §11 reference implementation (`flagship_papers/capotauro/documentation_suite/changelog-capotauro.md`). The file is the canonical version archaeology for the F.1 paper, mirroring Capotauro's structure with six reverse-chronological version sections + pre-paper-assembly narrative reference block.
+
+The four file deltas at Patch 0572:
+
+1. CREATE `flagship_papers/dynamical_substrate_law/documentation_suite/changelog-dynamical-substrate-law.md` (~440 lines new file)
+2. APPEND Tier 4 §66 to `reasoning-dynamical-substrate-law.md` (this section)
+3. APPEND Vignette 54 to `development-dynamical-substrate-law.md`
+4. APPEND Transaction 064 to `transcript-dynamical-substrate-law.md`
+
+NO `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications. Calibration discipline sustained at first substantive Patch of Session 143.
+
+### §66.2 Audit verdict + supporting-infrastructure inventory
+
+**Tier-file audit verdict (Phase 7A item 1):**
+
+| File | Pre-Patch-0572 lines | Tail entry | Patch 0571 SHIPPED state confirmed |
+|---|---|---|---|
+| `transcript-dynamical-substrate-law.md` | 1576 | Transaction 063 — Patch 0571 | ✓ |
+| `development-dynamical-substrate-law.md` | 1297 | Vignette 53 — Patch 0571 | ✓ |
+| `reasoning-dynamical-substrate-law.md` | 4406 | §65 — Patch 0571 | ✓ |
+| Tier 1 session log | N/A (no cross-paper session log fired for F.1) | per handover §6 Step A | ✓ |
+
+No drift between handover §6 Steps B/C/D claims and observed file-tail state. The audit verdict is unambiguous: **3 of 4 Tier categories at SHIPPED state confirmed; Tier 1 is N/A for paper-scoped trajectory work.**
+
+**Verification scripts inventory (Phase 7A item 3 inventory; per-script B1–B5 audit DEFERRED to Patch 0572g):**
+
+5 Python scripts confirmed present at `flagship_papers/dynamical_substrate_law/code/`:
+
+- `verify_phase1.py` — Phase 1 verification (foundations work numerical confirmation)
+- `verify_phase3.py` — Phase 3 verification
+- `verify_phase4.py` — Phase 4 verification
+- `verify_b1q2_curl_content.py` — sub-question B1Q2 curl-content verification
+- `verify_b1q4_first_shell_current_sum.py` — sub-question B1Q4 first-shell current-sum verification
+
+The B1–B5 audit pass (enumerate `.tex` numerical claims; map each claim to its verification script with header per `paper_completion_checklist.md` §B B2 standard header; identify coverage gaps and create gap-filling notebooks) is DEFERRED to Patch 0572g.
+
+**Curated transcripts (Phase 7A item 4):** DEFERRED to Patch 0572i. Raw chat-window transcripts for Patches 0554–0570 closure trajectory will be curated and archived at standard repo location to be determined at 0572i scoping. Candidate location: `flagship_papers/dynamical_substrate_law/development-transcripts/` parallel to the convention used at `series_standard_model/development-transcripts/`. Decision deferred to 0572i.
+
+**Supporting-infrastructure inventory:**
+
+- ✓ 9 reviewer letters at `reviews/` (1 Copilot + 1 Grok + 6 ChatGPT rounds + 1 synthesis) — source corpus for `reviews-dynamical-substrate-law.md` (Patch 0572b).
+- ✓ 4 foundations-work sketches at `sketches/` — source for `philosophy-` (Patch 0572f) + cross-reference target for other docs.
+- ✓ 4 reviewer-pause cycle artifacts at `reviewer_pause/` (Phase 2 + Layer 3 promotion checkpoints + feedback records) — source for `philosophy-` (Patch 0572f) anti-erasure-discipline + Layer-distinction-philosophy framing.
+- ✓ 3 hardened-theorem artifacts at `hardened_theorems/` (Patches 0550 + 0551 + 0552 trio) — source for `mechanism-` (Patch 0572c) and `phenomena-` (Patch 0572e).
+
+The inventory establishes that **all source material required for Phase 7A doc-suite production is in place at Patch 0572.** No source-gap risk for subsequent Patches 0572a–f.
+
+### §66.3 The bundled-Patch convention (METH-PHASE-7A-BUNDLED-AUDIT-CHANGELOG candidate)
+
+Patch 0572 codifies a new Phase 7A initiation methodology candidate: **bundle the Tier-file audit + lowest-risk SHIP-time companion documentation file in a single Patch.** The bundled-bundle convention is methodologically distinct from the standard narrow-audit-only Phase 7A initiation Patch (e.g., the Capotauro Patch 0481b "doc-suite SHIP markers across 9 files" was a registry-update Patch, not a doc-suite content-creation Patch; the Capotauro Patch 0481j "bundled substantive doc-suite refresh (5 files)" was a refresh of already-existing files, not first-drafting from scratch). Two conditions justify the bundle at Patch 0572:
+
+**Condition 1 — Source verbatimness.** The changelog file's content is sourced verbatim from the `.tex` header CHANGELOG comment block at Patch 0570 SHIP (lines 13–90 of `dynamical_substrate_law.tex`). The Capotauro reference implementation (`changelog-capotauro.md`) provides the structural template (reverse-chronological version sections + bold opening summary sentences + "Authored by Opus, Session NNN, Patch NNNN, DD Month YYYY" sign-off). The F.1 changelog's content production therefore reduces to: (a) translating the `.tex` CHANGELOG comment block prose into Markdown structure; (b) adding a pre-paper-assembly narrative reference block linking to `sketches/` + `reviewer_pause/` + `hardened_theorems/` artifacts; (c) appending v1.0 SHIPPED metadata block at the top per Capotauro convention. The transformation is mechanical with low novel-content risk.
+
+**Condition 2 — Audit-content sizing.** The Tier-file audit verdict + supporting-infrastructure inventory content for Patch 0572 is naturally compact (the audit is verification-not-creation; the inventory is enumeration-not-narrative). Bundling the audit content with a low-risk file creation produces a Patch whose total file-delta size is comparable to a substantive content Patch (e.g., a §6 derivation Patch in the body-assembly arc) but with strictly lower content-creation risk because the new file's source is verbatim.
+
+The bundled convention surfaces as **METH-PHASE-7A-BUNDLED-AUDIT-CHANGELOG candidate** for the Phase 7B methods catalogue audit Patch (Patch 0575-ish). Methods catalogue audit Patch candidate count increments from 11 (per Patch 0571 handover §6 Step E) to 12.
+
+**Anti-pattern guardrail.** The bundled convention does NOT generalise to bundling the audit with any of the substantive companion docs (mechanism, glossary, phenomena, philosophy, reviews). Those docs require substantial source-reading across multiple input categories per `documentation-suite.md` §32 input-source priority list; bundling them with the audit would inflate the Patch beyond manageable review size and would mix audit-verification risk with content-creation risk. The bundle is bounded to: **audit + ONE companion doc, where that doc's source is verbatim or near-verbatim from existing artifacts.** For the F.1 paper at Patch 0572, the changelog file is the unique companion doc satisfying this constraint; for other flagship papers at their Phase 7A initiation, the constraint may or may not hold depending on whether their `.tex` header CHANGELOG block is comparably comprehensive at v1.0 SHIP.
+
+### §66.4 Doc-suite risk-ordering rationale + per-doc source-priority preview
+
+The risk-ordered doc-suite sequence selected for Patches 0572a–f is: **keywords → reviews → mechanism → glossary → phenomena → philosophy.** The ordering reflects the `documentation-suite.md` §32 input-source priority list combined with the production-effort + novel-content-risk profile per doc.
+
+**Patch 0572a — `keywords-dynamical-substrate-law.md`** (light).
+
+Source priority per docsuite.md §32: item 9 (`.tex` source) + items 3 + 5 (Tier 3 development vignettes + founders_voice high-level framing). Production effort: extract keywords (5–10 primary + 10–20 secondary) directly from `.tex` title + abstract + section headers + theorem statements; cross-reference to other CPP papers via existing `\cite` keys in `.tex` bibliography; identify axiom/theorem/conjecture entries registered or resolved (5 OPEN-FP-F1 entries). Required sections per `documentation-suite.md` §8: Primary keywords + Secondary keywords + Cross-references to other CPP papers + Registry cross-refs.
+
+**Patch 0572b — `reviews-dynamical-substrate-law.md`** (compilation; light-substantive).
+
+Source priority per docsuite.md §32: items 7 + 8 (correspondence verbatim, summarized for navigation; external reviewer letters). Production effort: structured compilation of the 9 reviewer letters at `reviews/` into Part 1 (formal reviews by reviewer and round, with quoted verdict + strengths + critiques-accepted-vs-declined + integration outcomes) + Part 2 (FAQ by category, 5–15 entries). Required sections per `documentation-suite.md` §6–§7.
+
+**Patch 0572c — `mechanism-dynamical-substrate-law.md`** (substantive).
+
+Source priority per docsuite.md §32: items 1 + 2 + 6 + 9 (sketches + reasoning + scripts + `.tex` source). Production effort: physical mechanism narrative with mathematical-correspondence table (physics claim ↔ equation number ↔ paper section). Required sections per `documentation-suite.md` §3: Overview + Inputs and constants + Step-by-step derivation + Mathematical correspondence table + Failure modes (with OPEN-FP-F1-* references). The mechanism file is the physicist-audience equivalent of the paper's §3 + §4 + §5 + §6 body content, with intuitive explanations + cross-references to verification scripts at `code/`.
+
+**Patch 0572d — `glossary-dynamical-substrate-law.md`** (substantive).
+
+Source priority per docsuite.md §32: items 1 + 2 + 9 (sketches + reasoning + `.tex` source). Production effort: paper-specific term definitions organized by category. Required categories per `documentation-suite.md` §2: Constants + Structural terms + Mechanism terms + Methodology terms. Each entry: term + definition + first-use location + related terms. The glossary file captures the F.1-specific vocabulary (Mechanism A + DI-bit current + first-shell geometric primitives G1+G2 + vertex-aligned Reading C + substrate-locality + minimal-local-first-order realization framework + Layer 3 stack architecture + anti-erasure discipline + scope-framing subtitle convention + etc.).
+
+**Patch 0572e — `phenomena-dynamical-substrate-law.md`** (substantive).
+
+Source priority per docsuite.md §32: items 6 + 9 + current registry state (predictions.md, paper_catalog.md). Production effort: what the paper explains and predicts. Required subsections per `documentation-suite.md` §4: PHEN-E (empirical facts) + PHEN-P (zero-parameter predictions with experimental comparison) + PHEN-V (consilience with other CPP results). For F.1, the empirical-facts subsection covers OPEN-SD-CHIR-PRIMITIVE manifestation (iv) closure; the predictions subsection covers Theorem 7.1 substrate-locality + Theorem 5.1/5.2 first-shell identities + Theorem 6.1 perturbation-theory propagation + Corollary 6.2 shell-locality; the consilience subsection covers Capotauro v2.0 §3 spatial-sector parallel + SF-4 v1.0 neutrino sector cross-reference + SS-7 + SM-8 + corpus-track-record framing.
+
+**Patch 0572f — `philosophy-dynamical-substrate-law.md`** (substantive; heaviest).
+
+Source priority per docsuite.md §32: items 1 + 3 + 5 + 8 (sketches + Tier 3 development + founders_voice + external reviewer letters). Production effort: epistemological framing with honest-scoping + Layer-distinction-philosophy + anti-erasure-discipline framing. Required subsections per `documentation-suite.md` §5: Certainty level (theorem / empirically supported hypothesis / conjecture / scoping) + Relationship to Standard Model (extends / replaces / reproduces / disagrees) + Falsifiability inventory (with threshold values) + Paper-type declaration + Limits of scope. For F.1, the philosophy file is heaviest because: (a) the Layer distinction itself (publication-grade L3 trio vs. sketch-document L3 umbrella) is novel and must be framed for theorist + philosopher audiences; (b) the anti-erasure discipline is a methodologically novel framing element introduced at this paper (preserve Layer distinction + conditionality + open higher-order questions during paper polishing); (c) the reviewer-pressure-driven anti-erasure discipline emerged from the ChatGPT R1–R6 trajectory and must be documented as a programme-level methodological contribution; (d) the paper-type declaration ("structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem") is itself a novel paper-type and must be explained in epistemological context.
+
+The risk-ordering rationale is: **front-load the doc-suite production with light + compilation Patches (0572a + 0572b) to establish navigation anchors that the substantive Patches (0572c–f) can cross-reference cleanly.** Front-loading also reduces the bandwidth-pressure on the heaviest doc (philosophy at 0572f) because the lighter docs will have already established the keyword + reviewer-feedback context that the philosophy doc weaves into its epistemological framing.
+
+### §66.5 Forward queue + Session 143 Phase 7A trajectory
+
+**Forward queue post-Patch 0572 (Phase 7A continuation per risk-ordered doc-suite sequence + handover §2):**
+
+- **(A) Patch 0572a** = `keywords-dynamical-substrate-law.md`.
+- **(B) Patch 0572b** = `reviews-dynamical-substrate-law.md`.
+- **(C) Patch 0572c** = `mechanism-dynamical-substrate-law.md`.
+- **(D) Patch 0572d** = `glossary-dynamical-substrate-law.md`.
+- **(E) Patch 0572e** = `phenomena-dynamical-substrate-law.md`.
+- **(F) Patch 0572f** = `philosophy-dynamical-substrate-law.md`.
+- **(G) Patch 0572g** = verification notebooks audit (B1–B5).
+- **(H) Patch 0572h** = C11 bibliography entry + D2 INDEX.md row + D3 paper README audit.
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F.
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates (11 registries; clean integer sequence; no anti-collision required per Thomas confirmation no concurrent windows).
+- **(K) Patch 058N+1** = Phase 7C (OSF registration + anthology chapter at `book_project/chapters/F1_dynamical_substrate_law.md` per C13 mandatory at v1.0 SHIP + final H1–H5 verification).
+- **(L) Patch 0581-ish** = G1 publication-grade hardening (OPEN-FP-F1-3) RECOMMENDED first post-Phase-7 substantive physics Patch.
+- **(M)–(R)** = long-term items unchanged from Patch 0571 forward queue: methods catalogue audit Patch (12 candidates now, including METH-PHASE-7A-BUNDLED-AUDIT-CHANGELOG from this Patch); substrate-locality umbrella publication-grade hardening Patch; F.2/F.3 sub-question trajectory openings; OPEN-FP-F1-2 Layer 4 axiomatic derivation; OPEN-FP-F1-6 prose-density tightening + F.1-condensed companion paper trajectory; JUNO peer-review update integration.
+
+**Session 143 Phase 7A trajectory estimate**: 9 Patches (0572 + 0572a–i) cover Phase 7A complete. Phase 7B at 11 registry-update Patches (0573–058N where N ≈ 583) covers programme-level state-document re-sync. Phase 7C at ~2 Patches covers OSF + anthology chapter + final verification. Total Phase 7 estimate: ~22 Patches across Session 143 (consistent with Capotauro precedent: 12 paper-completion sequence Patches + reactive registry audit pattern; F.1 should land in fewer Patches because the mandatory-immediate-execution rule + risk-ordered doc-suite sequence are planned rather than reactive). Realistic budget: Session 143 closes with Phase 7 substantially complete or fully complete + post-Phase-7 G1 hardening trajectory opening at Session 144.
+
+**Calibration discipline sustained at Patch 0572**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications. The four file deltas are exclusively additive: 1 new file + 3 append-only Tier-file extensions. No anti-priority violations.
+
+**Patch 0572 is the opening Patch of Session 143**, initiating Phase 7A paper completion work for F.1 with the bundled Tier-file-audit + first-SHIP-time-companion-doc convention. Session 143 forward queue is in place for sequential execution at Patches 0572a–i + 0573 onwards. The session-boundary inheritance from Patch 0571 is implemented as authorized.
