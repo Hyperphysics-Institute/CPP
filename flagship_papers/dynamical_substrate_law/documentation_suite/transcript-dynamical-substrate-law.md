@@ -1897,3 +1897,47 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(K)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572f lands the seventh and final SHIP-time companion documentation file (`philosophy-dynamical-substrate-law.md`) — the fourth and heaviest substantive Patch in the Phase 7A doc-suite production sub-arc. **Phase 7A doc-suite production is now 7 of 7 complete** (full SHIP-time companion documentation suite delivered). The philosophy file establishes the paper-type declaration analysis + Layer classification table + falsifiability threshold table + honest-assessment IS/IS-NOT/Weakest-link triad + methodological observations consolidating the anti-erasure discipline + calibration discipline + diagnostic resolution + reviewer-pause cycle + five programme-level convention candidates (three from SHIP cycle + two from Phase 7A doc-suite production sub-arc). Phase 7A pivot point: doc-suite production complete; Patch 0572g shifts to verification-notebooks audit + end-of-sub-arc Tier-file rollup content.
+
+---
+
+## Transaction 071 — Patch 0572g (Phase 7A doc-suite production sub-arc CLOSURE: B1–B5 verification notebooks audit + end-of-sub-arc Tier-file rollup)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572f SHA).
+**Branch:** main.
+**Patch type:** Phase 7A doc-suite production sub-arc CLOSURE Patch — bundles B1–B5 verification notebooks audit (Phase 7A item 3) + scripts INDEX establishment (B5 + checklist §A) + end-of-sub-arc Vignette + §-entry Tier-file rollup per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE (Patch 0572a). Four-file-delta closure Patch (the largest Tier-file impact of the sub-arc, as expected for end-of-arc rollup).
+
+**Trigger:** Sub-arc end-of-arc closure per Patch 0572 §66.5 forward queue item (G) — verification notebooks audit + Phase 7A sub-arc Vignette 55 + §67 Tier-file rollup combined.
+
+**Files modified (4 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/code/INDEX.md` (~150 lines; scripts INDEX + B1–B5 audit document dual-purpose). Sections: v1.0 SHIPPED status note + paper/last-updated/audit-reference metadata + B1 numerical-quantity enumeration (6 paper-body predicted values + 6 structural identities + 5 foundations-work identities + B4 excluded items) + B2 scripts inventory (5 scripts; each with computes/identities-verified/header-format/runtime/B3-status) + B3 runnability verification (direct verify_phase1.py execution PASS verbatim output preserved) + B4 excluded items + B5 INDEX (this file) + Audit verdict + Programme-state contributions registered.
+2. APPEND — Tier 4 §67 to `reasoning-dynamical-substrate-law.md` (§67.1 What this Patch does + §67.2 B1–B5 audit verdict in detail + §67.3 Phase 7A doc-suite production sub-arc end-of-arc reflection + §67.4 Anti-erasure discipline at end-of-sub-arc + §67.5 Forward queue + Phase 7A continuation post-sub-arc).
+3. APPEND — Vignette 55 to `development-dynamical-substrate-law.md` (8-Patch sub-arc narrative covering Patches 0572 + 0572a–g + full programme-state delta inventory).
+4. APPEND — Transaction 071 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline**: Patch 0572g IS the end-of-sub-arc Tier-file rollup Patch — METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE fully closes here. Vignette 55 + §67 land at this Patch as planned at sub-arc opening. Discipline establishment-and-execution worked-example complete.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** **2 new METH candidates surfaced at this Patch (in addition to METH-PHASE-7A-BUNDLED-AUDIT-CHANGELOG from Patch 0572 + METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE from Patch 0572a):**
+
+- **METH-PHASE-7A-B-AUDIT-INDEX-AS-AUDIT-DOC candidate**: The `code/INDEX.md` file at `flagship_papers/<paper>/code/INDEX.md` doubles as the scripts INDEX (B5) + B1–B5 verification notebooks audit document. Dual-purpose pattern; the audit document need not be a separate file from the INDEX. Corpus-establishing for flagship papers; series-paper extension would adapt to `series_[name]/notebooks/INDEX.md` with B5 + audit dual-purpose.
+- **METH-B2-HEADER-FORMAT-DOCSTRING-VS-BLOCK candidate**: Python docstring format (`"""..."""`) for verification scripts is functionally equivalent to the checklist B2 `# === [S]-[N]: [Description] ===` block format. The compliance assessment "B2-compliant in spirit" allows flexibility on header format provided the equivalent information content is present (computation description + identities verified + execution instructions + dependencies). Header-format polish to convert to the checklist standard is a low-priority candidate Patch, not blocking v1.0 SHIP.
+
+Methods catalogue audit Patch candidate count: 14 entries queued for Phase 7B Patch 0575-ish.
+
+**Programme state changes at Patch 0572g:**
+
+1. **Phase 7A doc-suite production sub-arc CLOSED**: 7 of 7 SHIP-time companion documentation files delivered + B1–B5 verification notebooks audit verdict landed + scripts INDEX established + end-of-sub-arc Tier-file rollup landed. The 8-Patch sub-arc (Patches 0572 + 0572a–g) closes Phase 7A items 1, 2, 3 per `paper_completion_checklist.md` Section A.
+2. **B1–B5 audit verdict**: ✓ ALL FIVE SCRIPTS COMPLIANT (with one minor low-priority B2 header-format polish opportunity). Direct B3 runnability test on verify_phase1.py confirmed PASS. The substrate-locality umbrella result is directly B3-confirmed at audit time.
+3. **Calibration discipline sustained across the entire 8-Patch Phase 7A sub-arc**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications across Patches 0572 through 0572g. The discipline that produced the v0.9 → v1.0 SHIP cycle has now extended through the full 7-file SHIP-time companion documentation suite production + verification notebooks audit.
+4. **F-line flagship trajectory methodology pattern documented end-to-end**: future F-line flagship papers (F.2, F.3, …) inherit the documented pattern.
+
+**Forward queue post-Patch 0572g (Phase 7A continues post-sub-arc):**
+
+- ✓ Patches 0572, 0572a–g (LANDED — Phase 7A doc-suite production sub-arc CLOSED)
+- **(H) Patch 0572h** = next; C11 bibliography entry (verify F.1 cite-key in `bibliography/cpp_references.bib`; check whether F.1 entry exists; add if missing) + D2 INDEX.md row (add F.1 entries to the top-level INDEX.md for the 7+1 new files at `documentation_suite/` + `code/INDEX.md`) + D3 `flagship_papers/dynamical_substrate_law/README.md` audit (paper-root README; check if exists; update v1.0 SHIPPED status + content delta from the Phase 7A sub-arc).
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F (chat-window export curation; location to be determined at scoping).
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates (11 registries; clean integer sequence).
+- **(K)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572g closes the Phase 7A doc-suite production sub-arc with the four-file end-of-arc bundle (INDEX.md CREATE + §67 reasoning APPEND + Vignette 55 development APPEND + Transaction 071 transcript APPEND — this entry). The 8-Patch sub-arc delivered 7 SHIP-time companion documentation files + B1–B5 verification notebooks audit + scripts INDEX + end-of-arc Tier-file rollup. The full F-line flagship trajectory methodology pattern is now documented end-to-end across the companion files + verification scripts + audit document + Tier-file lab-notebook record. Phase 7A continues at Patch 0572h with the paper-specific catalog/index/README updates outside the documentation_suite/code folders.
