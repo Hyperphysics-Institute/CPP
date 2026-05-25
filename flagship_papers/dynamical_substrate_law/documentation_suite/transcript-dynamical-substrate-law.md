@@ -1859,3 +1859,41 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(K)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572e lands the sixth SHIP-time companion documentation file (`phenomena-dynamical-substrate-law.md`) — the third substantive Patch in the Phase 7A doc-suite production sub-arc. The phenomena file establishes the structural-consistency swarm-validation contribution + cross-sector consistency checks with Capotauro v2.0 + 10-falsifier inventory + out-of-scope inventory. Phase 7A doc-suite production is 6 of 7 complete; one remaining substantive doc — the heaviest (philosophy) — queued for Patch 0572f.
+
+---
+
+## Transaction 070 — Patch 0572f (Phase 7A doc-suite production: seventh and final SHIP-time companion documentation file `philosophy-dynamical-substrate-law.md`)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572e SHA).
+**Branch:** main.
+**Patch type:** Phase 7A doc-suite production Patch — **fourth and final substantive content Patch in the doc-suite sub-arc; closes the 7-file SHIP-time companion documentation production**. Single-file CREATE + transcript-only audit-trail append per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE.
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (F) — seventh (final) risk-ordered SHIP-time companion documentation file per docsuite.md §32 input-source priority list (substantive; heaviest: honest-scope + Layer-distinction + anti-erasure-discipline framing for theorist + philosopher audiences; sources items 1 + 3 + 5 + 8 = sketches + Tier 3 development + founders_voice + external reviewer letters).
+
+**Files modified (2 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/documentation_suite/philosophy-dynamical-substrate-law.md` (~330 lines; per docsuite.md §5 + checklist §A A4 + Capotauro reference implementation extended structure). Sections: v1.0 SHIPPED status note + paper/last-updated metadata + **What kind of result is this?** (paper-type declaration analysis: nine-word "structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem" with each clause analyzed; alternative framings considered and rejected) + **Layer classification** (table with 11 elements + Layer + status; programme-level methodological pattern statement) + **Certainty levels per element** (HIGH theorem-level + algorithmically verifiable / MEDIUM-HIGH publication-grade Layer 3 hardened / MEDIUM sketch-document Layer 3 / MEDIUM framework axiom / LOW candidate mechanism narrative) + **Falsifiability inventory** (table with threshold values for 10 falsifiers) + **Relationship to Standard Model** (chirality continuum mediation; 4 of 5 manifestations closed) + **Limits of scope** (8 "does not" disclaimers explicitly enumerated) + **Honest assessment** (What F.1 IS doing 6 bullets / What F.1 is NOT doing 10 bullets / Weakest link analysis 3-tier: G1 hardening / umbrella sketch-doc / Mechanism A Layer 4) + **Methodological observations** (anti-erasure discipline as reviewer-pressure-driven pattern + calibration discipline across SHIP cycle + diagnostic resolution TikZ-rendering at R6 PDF-upload + reviewer-pause cycle as flagship-trajectory precondition + three programme-level conventions + two Phase 7A conventions) + **Closing philosophical position**.
+2. APPEND — Transaction 070 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Continues METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE — transcript-only audit trail. **End-of-sub-arc Vignette + §-entry rollup queued for Patch 0572g** (combined with verification notebooks audit B1–B5 per forward queue).
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch.
+
+**Programme state changes at Patch 0572f:**
+
+1. **Seventh (final) SHIP-time companion documentation file landed**: `philosophy-dynamical-substrate-law.md`. **Phase 7A doc-suite production is 7 of 7 complete (full SHIP-time companion documentation suite delivered)**: changelog ✓ + keywords ✓ + reviews ✓ + mechanism ✓ + glossary ✓ + phenomena ✓ + philosophy ✓.
+2. **F-line flagship trajectory methodology pattern fully documented**: the philosophy file's "Methodological observations" section consolidates the anti-erasure discipline + calibration discipline + diagnostic resolution + reviewer-pause cycle + three programme-level conventions (METH-VARIANT-B-SCOPE-SUBTITLE + METH-PDF-UPLOAD-DEFAULT-REVIEWER + METH-GITIGNORE-FLAGSHIP-PDF-EXCEPTION) + two Phase 7A conventions (METH-PHASE-7A-BUNDLED-AUDIT-CHANGELOG + METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE). Future F-line flagship trajectories (F.2, F.3, …) inherit this fully-documented methodology pattern.
+3. **Paper-type declaration analysis archived**: the nine-word "structurally-grounded sketch-document Layer 3 flagship framework preprint with publication-grade hardened components but non-publication-grade umbrella theorem" is now decomposed clause-by-clause in the philosophy file. Future flagship trajectories can reference this analysis when scoping their own paper-type declarations.
+4. **Calibration discipline sustained at the heaviest doc-suite production Patch**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications. The discipline that produced the v0.9 → v1.0 SHIP cycle now extends through the full 7-file SHIP-time companion documentation suite production.
+
+**Forward queue post-Patch 0572f:**
+
+- ✓ Patches 0572, 0572a–f (LANDED — full 7-file SHIP-time companion documentation suite complete)
+- **(G) Patch 0572g** = **verification notebooks audit (B1–B5) + Phase 7A sub-arc end-of-arc Vignette 55 + §67 Tier-file rollup** (combined Patch: substantive verification + Tier-file roll-up content). The mathematical-correspondence table from `mechanism-dynamical-substrate-law.md` (12 entries) serves as the explicit claim-by-claim coverage map for the B1–B5 audit pass.
+- **(H) Patch 0572h** = C11 bibliography entry + D2 INDEX.md row + D3 paper README audit
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates (clean integer sequence per Thomas confirmation no concurrent windows)
+- **(K)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572f lands the seventh and final SHIP-time companion documentation file (`philosophy-dynamical-substrate-law.md`) — the fourth and heaviest substantive Patch in the Phase 7A doc-suite production sub-arc. **Phase 7A doc-suite production is now 7 of 7 complete** (full SHIP-time companion documentation suite delivered). The philosophy file establishes the paper-type declaration analysis + Layer classification table + falsifiability threshold table + honest-assessment IS/IS-NOT/Weakest-link triad + methodological observations consolidating the anti-erasure discipline + calibration discipline + diagnostic resolution + reviewer-pause cycle + five programme-level convention candidates (three from SHIP cycle + two from Phase 7A doc-suite production sub-arc). Phase 7A pivot point: doc-suite production complete; Patch 0572g shifts to verification-notebooks audit + end-of-sub-arc Tier-file rollup content.
