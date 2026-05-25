@@ -183,7 +183,7 @@ The blocks below are organized in the recommended Phase 7B execution order (smal
 ### §5.2 paper_catalog.md — Patch 0576 candidate
 
 **Target:** `paper_catalog.md`
-**Landing status:** PENDING
+**Landing status:** LANDED at Patch 0576 (Session 143, 25 May 2026). Three surgical edits applied: (1) Last-updated header prepend for F.1 v1.0 SHIP catalog registration; (2) F.1 row inserted in SF-Line Flagship Papers table after Chirality Continuum row (table now contains 5 flagship paper rows: SF-2, SF-4, Capotauro, Chirality Continuum, F.1; SF-Line section header now contains four non-SF-N papers — Capotauro, Chirality Continuum, F.1, and Capotauro v2.0 v1.0 implicit in Capotauro row — rename to "Flagship Papers" is a candidate beautification deferred to handover); (3) F.1 Documentation paragraph inserted after Capotauro Documentation paragraph. **Ordinal correction in own prepend**: F.1 is the SEVENTH flagship v1.0 SHIP in CPP corpus (after SS-9, SF-4, SF-2, Capotauro v1.0, Capotauro v2.0 v1.0, Chirality Continuum), not sixth — Capotauro v1.0 and Capotauro v2.0 v1.0 counted as separate flagship ships per Chirality Continuum row precedent. **README.md flagship count drift**: at Patch 0575 the count advanced "5 flagships SHIPPED" → "6 flagships SHIPPED" reflecting F.1 only, but Chirality Continuum (sixth) was already missing from the pre-Patch-0575 count — README count should be 7 not 6; small bookkeeping correction deferred (NOT registered as formal organizational item; surfaced for handover consideration).
 **Insertion location:** (1) `Last updated:` header (prepend new paragraph for F.1 v1.0 SHIP); (2) F-Line table (add new row for F.1 below Capotauro row).
 
 **Last-updated frontier prepend (model after Patch 0457 Capotauro entry):**
