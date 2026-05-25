@@ -1524,3 +1524,53 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(F) JUNO peer-review update integration**.
 
 **Self-checkpoint at this transaction:** Patch 0570 ships the F.1 Dynamical Substrate Law flagship paper at v1.0 — the first F-line flagship v1.0 SHIP in the CPP corpus. Two atomic `.tex` edits (`\date{}` + CHANGELOG) implement Variant (b) scope-framing per ChatGPT R3+R4+R5+R6 convergence + cross-reviewer Round 1 SHIP-acceptable verdict. Frozen v1.0 PDF (33 pages, 489 KB) committed as canonical reference. Reviewer-engagement cycle definitively closed at ChatGPT R6 strongest-positive verdict. Post-v1.0 trajectory opens with four candidate Patches. Next: Patch 0571 G1 publication-grade hardening (recommended first post-SHIP Patch) per ChatGPT R1-R6 convergent priority.
+
+---
+
+## Transaction 063 — Patch 0571 (Session 142 close handover at F.1 v1.0 SHIP; four-artifact convention)
+
+**Date:** 24 May 2026 (Session 142 close).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE=6c09813` = Patch 0570 v1.0 SHIP).
+**Branch:** main.
+**Patch type:** Session-close handover artifact + four-artifact convention. Light-touch administrative Patch (no `.tex` edits; no PDF modification; no theorem/proof/OP/hardened-theorem/bibliography/abstract/body modifications).
+
+**Trigger:** Thomas's "Please proceed" directive at Session 142 close authorizing the session-boundary execution plan: Patch 0571 = handover this session, Phase 7 paper completion next session.
+
+**Files modified (5 file deltas):**
+
+1. CREATE — `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` (handover document; §1 What happened this session + §2 Next-window priorities — Phase 7 paper completion sequence + §3 Programme state snapshot + §4 Recent session count + §5 Quick-start for next session + §6 Step A-H Completion Audit per OS §15.11 with per-registry breakout + §7 Cross-window handover).
+2. APPEND — Tier 4 §65 to `reasoning-dynamical-substrate-law.md` (5 subsections covering what this Patch does + Phase 7 deferral rationale + three programme-level conventions extended at F.1 v1.0 SHIP + calibration discipline + forward queue with Session 143 bootup anchors).
+3. APPEND — Vignette 53 to `development-dynamical-substrate-law.md`.
+4. APPEND — Transaction 063 to `transcript-dynamical-substrate-law.md`.
+5. PREPEND — `research_frontier.md` Last-updated header (Patch 0571 handover entry; Patch 0570 v1.0 SHIP entry demoted to `Earlier **Last updated:**`).
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch. Three convention candidates identified at Tier 4 §65.3 (Variant (b) `\date{}` line scope-framing pattern; PDF-upload-default reviewer engagement protocol; `.gitignore` exception pattern for flagship paper SHIP PDFs) surfaced for Phase 7B methods catalogue audit Patch (Patch 0575-ish). Methods catalogue audit Patch candidate count increments to 11.
+
+**Programme state changes at Patch 0571:**
+
+1. **Session 142 closed cleanly** with F.1 paper v1.0 SHIPPED at Patch 0570.
+2. **Handover artifact produced** at canonical path `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` per §15 Step H + §15.11 audit-section structural visibility requirement.
+3. **§16 SHIP-Trigger-Protocol post-SHIP-protocol-completion question explicitly answered**: NO — Phase 7 deferred to Session 143 with named rationale.
+4. **Phase 7A + 7B + 7C deferral inventory** documented at handover §6 with per-registry breakout (11 sub-bullets in Step E audit).
+5. **Session 143 bootup anchor read order** specified (5 documents) at Tier 4 §65.5.
+6. **Three programme-level conventions** surfaced as Phase 7B methods catalogue audit candidates.
+7. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / OP / hardened-theorem / bibliography / abstract / body / author block modifications.
+8. **F.1 sub-question status SHIPPED at v1.0** — preserved from Patch 0570; no change at Patch 0571.
+9. **CAN-DEFER items unchanged**.
+10. **DECLINED items unchanged**.
+11–15. Standard anti-priorities sustained.
+
+**Forward queue post-Patch 0571 (full Session 143 work scope per Phase 7 paper completion sequence):**
+
+- **(A) Patch 0572 = Phase 7A initiation** — audit Tier 1/3/4 files + 7 SHIP-time companion documentation files + verification notebooks + curated transcripts. Per `templates/paper_completion_checklist.md` Section A.
+- **(B) Patches 0573-058N = Phase 7B sequential registry updates** — one Patch per registry following Capotauro 0481b-L + Patch 0481M anti-collision discipline. 11 registries to audit/update: `theorem-registry.md` + `research_frontier.md` + `future_projects.md` + `axiom-registry.md` + `paper_catalog.md` + `predictions.md` + `master_glossary.md` + `methods_catalogue/methods_catalogue.md` + `programme-level methods_catalogue.md` + `organizational_frontier.md` + `INDEX.md` + `programme_orientation.md` + `README.md`.
+- **(C) Patch 058N+1 = Phase 7C** — OSF registration under JXE8D DOI + anthology chapter at `book_project/chapters/F1_dynamical_substrate_law.md` (per C13 mandatory at v1.0 SHIP per Patch 0434D) + final H1-H5 verification.
+- **(D) Patch 0581-ish = G1 publication-grade hardening** (OPEN-FP-F1-3) RECOMMENDED first post-Phase-7 substantive physics Patch per ChatGPT R1-R6 convergent priority.
+- **(E) Methods catalogue audit Patch** (11 candidates including 3 F.1-v1.0-SHIP-derived candidates).
+- **(F) Substrate-locality umbrella publication-grade hardening Patch** (ChatGPT R6 §Remaining-Weaknesses #2 names specific structural lemmas).
+- **(G) F.2/F.3 sub-question trajectory openings**.
+- **(H) OPEN-FP-F1-2 Layer 4 axiomatic derivation of Mechanism A**.
+- **(I) OPEN-FP-F1-6 prose-density tightening Patch + F.1-condensed companion paper trajectory**.
+- **(J) JUNO peer-review update integration**.
+
+**Self-checkpoint at this transaction:** Patch 0571 closes Session 142 with the standard four-artifact handover convention at F.1 v1.0 SHIP — the first F-line flagship v1.0 SHIP in CPP corpus. Handover document at `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` captures full Patches 0554-0570 closure trajectory + cross-reviewer cumulative position + three programme-level conventions + Phase 7 deferral inventory with §15.11 audit-section per-registry breakout. **Session 143 opens** with F.1 paper v1.0 SHIPPED + Phase 7 paper completion as full next-window scope, anchored by 5-document bootup read order + forward queue specification. Calibration discipline sustained at session close: no `.tex` / PDF / substantive content modifications at Patch 0571. **The session-boundary execution plan is implemented as authorized.**

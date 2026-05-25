@@ -4338,3 +4338,69 @@ The two edits are administrative/structural (date stamping + cumulative document
 - Post-v1.0 trajectory opens: Patch 0571 G1 hardening (recommended first post-SHIP Patch)
 
 The F.1 flagship paper is now **v1.0 SHIPPED**. The first F-line flagship paper of the CPP corpus has crossed the v1.0 milestone threshold.
+
+---
+
+## §65 Patch 0571 — Session 142 close handover at F.1 v1.0 SHIP (handover artifact + four-artifact convention + Phase 7 deferral explicitly documented)
+
+**Context.** Patch 0570 shipped the F.1 Dynamical Substrate Law flagship paper at v1.0 — the first F-line flagship v1.0 SHIP in CPP corpus. Patch 0571 is the **session-close handover** at v1.0 SHIP milestone per OS §15 8-step protocol + §15.11 audit-section structural visibility requirement + §16 SHIP Trigger Protocol mandatory-immediate-execution-with-explicit-deferral rule. Authorised via Thomas's session-boundary execution plan: handover this session, Phase 7 paper completion next session.
+
+### §65.1 What this Patch does
+
+Patch 0571 is the **session-close handover Patch** at F.1 v1.0 SHIP. Light-touch administrative Patch producing the standard four-artifact convention (per Patch 0540h precedent):
+
+1. CREATE `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` (handover document with §1-§7 sections including the mandatory §6 Step A-H Completion Audit per §15.11)
+2. APPEND Tier 4 §65 to `reasoning-dynamical-substrate-law.md` (this section)
+3. APPEND Vignette 53 to `development-dynamical-substrate-law.md`
+4. APPEND Transaction 063 to `transcript-dynamical-substrate-law.md`
+5. PREPEND `research_frontier.md` Last-updated header (Patch 0571 handover entry)
+
+### §65.2 Phase 7 deferral rationale + explicit documentation
+
+The OS §16 SHIP Trigger Protocol (adopted 20 May 2026 Patch 0481M after Session 135 Capotauro failure mode) codifies that Phase 7 paper completion work must fire immediately on SHIP detection unless context-pressure forces deferral. The deferral exception allows for explicit cross-session-boundary execution under the discipline that (a) the deferral is named in the §15 Step H handover audit table, and (b) the deferred items are inherited into the next-session bootup as priority work.
+
+**At F.1 v1.0 SHIP at Patch 0570, Phase 7 is explicitly deferred to Session 143** per Thomas's session-boundary execution plan. The deferral rationale:
+
+1. **v0.9 → v1.0 SHIP-cycle reviewer engagement at Session 142 consumed substantial bandwidth** — Patches 0568 (Round 1 archival + synthesis) + 0569 (Round 1 response; 8 atomic edits) + 0569a (Round 2; 4 edits) + 0569b (Round 3; 5 edits inc. TikZ figure) + 0569c-0569e (Rounds 4-6 archival + diagnostic-framing + diagnostic resolution) + 0570 (v1.0 SHIP milestone) consumed the full session 142 bandwidth for substantive reviewer-cycle + SHIP work.
+
+2. **Phase 7 work needs fresh-context bandwidth** — 8-12 Patches per Capotauro 0481a-L precedent; multiple programme-level registry files; each Patch requires careful audit-driven discipline; total scope is full-session work.
+
+3. **Session-boundary execution plan preserves clean handover state** — capturing v1.0 SHIP context in the handover artifact (this Patch) before potential context loss is the strongest discipline; Phase 7 receives full fresh-context bandwidth at Session 143 open.
+
+The deferral is explicitly documented at §6 Step A-H Completion Audit in the handover document with per-registry breakout marking Phase 7B items as "DEFERRED to Phase 7B Patch 057N-ish" and the post-SHIP protocol completion question (per §16) explicitly answered with NO + deferral rationale.
+
+### §65.3 Three programme-level conventions extended at F.1 v1.0 SHIP
+
+The handover document §1 closing subsection documents three programme-level conventions that the F.1 v1.0 SHIP trajectory extended into the corpus:
+
+1. **Variant (b) v1.0 SHIP framing with `\date{}` line scope subtitle** — title-page scope-framing carries four claims at first reader contact. Corpus-establishing pattern for future F-line + framework-preprint SHIPs that ship Layer 3 + sketch-document content with explicit honesty-of-scope. The pattern's claim-structure language is reusable across future framework-preprint SHIPs.
+
+2. **PDF-upload-default reviewer engagement protocol** — going-forward protocol for ChatGPT reviewer engagement: upload the freshly-compiled PDF (not `.tex` source). Empirical motivation from the F.1 reviewer-cycle diagnostic resolution at Round 6.
+
+3. **`.gitignore` exception pattern `!flagship_papers/*/*.pdf` for v1.0+ SHIP PDFs** — preserves default-don't-commit-PDFs discipline for working drafts while exempting flagship-paper-root PDFs committed deliberately at v1.0+ SHIP milestones.
+
+These three conventions are candidates for methods catalogue audit at Phase 7B Patch 0575-ish (the methods catalogue audit Patch in the Phase 7B sequence) per §15 Step E methods catalogue audit discipline.
+
+### §65.4 Calibration discipline sustained + methods catalogue Step E audit verdict
+
+**Calibration discipline sustained at session close**: no theorem statements / proofs / Open Problems / hardened theorems / bibliography / abstract / body / author block modifications at Patch 0571 (light-touch administrative Patch only). The handover artifact is documentation, not paper content.
+
+**Methods catalogue Step E audit per §29.4 + §15 Step E**: no new METH entry at this Patch. The three conventions identified at §65.3 (Variant (b) `\date{}` scope-framing; PDF-upload-default reviewer protocol; `.gitignore` exception pattern) are programme-level methodological discoveries that are candidates for codification at Phase 7B methods catalogue audit Patch (Patch 0575-ish). At Patch 0571 (handover-only), these candidates are surfaced for Phase 7B audit but not yet codified — Patch 0571 is the handover artifact, not the methods catalogue audit Patch.
+
+Methods catalogue audit Patch candidate count increments to 11.
+
+### §65.5 Forward queue + Session 143 bootup anchors
+
+Forward queue post-Patch 0571 (Phase 7 paper completion at Session 143):
+
+- **Patch 0572 = Phase 7A initiation** — audit accumulating Tier 1/3/4 files + 7 SHIP-time companion documentation files + verification notebooks + curated transcripts.
+- **Patches 0573-058N = Phase 7B sequential registry updates** — one Patch per registry (small, audit-driven, surgical, frontier prepend) following Capotauro 0481b-L pattern + Patch 0481M anti-collision discipline.
+- **Patch 058N+1 = Phase 7C OSF registration + anthology chapter + final H1-H5 verification**.
+- **Post-Phase-7 = Patch 0581-ish = G1 publication-grade hardening** (OPEN-FP-F1-3) — RECOMMENDED first post-Phase-7 substantive physics Patch per ChatGPT R1-R6 convergent "single highest-value next action" priority.
+
+**Session 143 bootup anchor read order** (5 documents):
+1. `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` (this handover)
+2. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (v1.0 SHIPPED PDF)
+3. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (post-Patch-0570 source)
+4. `templates/paper_completion_checklist.md` Section A (Phase 7A items list)
+5. `templates/documentation-suite.md` (per-file template structure for 7 SHIP-time files)
