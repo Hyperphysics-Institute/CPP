@@ -1350,3 +1350,14 @@ The full programme-state delta inventory from Patch 0572 → 0572g across the Ph
 - **0 modifications**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications across the entire 8-Patch sub-arc. Calibration discipline sustained end-to-end.
 
 The Phase 7A sub-arc pivots to: Patch 0572h (C11 bibliography entry + D2 INDEX.md row + D3 paper README audit — programme-level paper-specific updates) → Patch 0572i (E curated transcripts per OS §15 Step F) → Phase 7B at Patches 0573–058N (programme-level registry updates; clean integer sequence per Thomas's confirmed no-concurrent-windows condition).
+
+---
+
+## Curated transcripts cross-reference (item E4 per `paper_completion_checklist.md` §E)
+
+The F.1 development arc's curated verbatim transcripts live at `flagship_papers/dynamical_substrate_law/development-transcripts/`, established at Patch 0572i (24 May 2026 Session 143) as the final Phase 7A item. The directory's `README.md` documents the curation protocol per OS §6 + the F.1 development arc scope (Sessions 138 through 143) + the explicit deferral discipline for Sessions 138–142 (raw transcripts not in `/mnt/transcripts/` at the current container) with TODO + rationale + source-materials-for-reconstruction + acknowledgment of lossy reconstruction.
+
+Currently available curated transcript:
+- `F1_transcript_session_143_phase_7a_opus.md` — Session 143 Phase 7A SHIP-time companion documentation production sub-arc (Patches 0572 + 0572a–i). Source: raw transcript at `/mnt/transcripts/2026-05-25-07-02-48-cpp-f1-session-143-phase-7a.txt` (5203 lines pre-curation). Curated by Claude Opus 4.7 per OS §6 INCLUDE/EXCLUDE rules. Coverage: F-line flagship trajectory methodology pattern establishment + per-patch Tier-file discipline + bundled-Patch convention + substantive doc-suite production + B1–B5 verification notebooks audit + paper-specific registry updates + curated transcripts deliverable.
+
+The curated transcripts complement (do not duplicate) the four-tier lab-notebook record at `documentation_suite/`. Per OS §4: *"Tier 4 reasoning is Opus-reasoning-only; verbatim multi-AI exchanges + Thomas-verbatim physical insights require a separate curated transcript file."* The Vignette 55 entry at Patch 0572g + this E4 cross-reference at Patch 0572i operationalise the checklist §E E4 requirement.

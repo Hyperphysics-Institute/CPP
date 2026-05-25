@@ -1981,3 +1981,42 @@ Methods catalogue audit Patch candidate count: 14 entries queued for Phase 7B Pa
 - **(M)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572h lands the three Phase 7A paper-specific registry updates (C11 bibliography + D2 INDEX.md + D3 paper README) outside the documentation_suite/code folders. The four file deltas complete Phase 7A item C11 + D2 + D3 per `paper_completion_checklist.md`. **Phase 7A is now 95%+ complete** (Patch 0572i closing E curated transcripts is the last remaining Phase 7A item); Phase 7B starts at Patch 0573 with programme-level registry updates. F.1 paper is now fully integrated into the corpus catalog + index + bibliography at v1.0 SHIPPED state.
+
+---
+
+## Transaction 073 — Patch 0572i (Phase 7A FINAL item: curated transcripts directory establishment + Session 143 curated transcript + E4 cross-reference)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572h SHA, post-`ea4759b`).
+**Branch:** main.
+**Patch type:** Phase 7A FINAL item Patch — curated transcripts deliverable per `paper_completion_checklist.md` §E E1–E4 + `templates/operating_system.md` §15 Step F + §6 curation protocol. **This Patch CLOSES Phase 7A.**
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (I) — E curated transcripts per OS §15 Step F. Final Phase 7A item before transition to Phase 7B at Patch 0573.
+
+**Files modified (4 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/development-transcripts/README.md` (~120 lines; curation protocol per OS §6 + F.1 development arc scope spanning Sessions 138–143 + available/missing transcripts inventory + explicit deferral discipline per OS §15 with TODO + rationale + source-materials-for-reconstruction + acknowledgment of lossy reconstruction + closure path for the deferral + cross-reference per checklist E4).
+2. CREATE — `flagship_papers/dynamical_substrate_law/development-transcripts/F1_transcript_session_143_phase_7a_opus.md` (~200 lines; curated record of Session 143 Phase 7A doc-suite production sub-arc; source raw transcript at `/mnt/transcripts/2026-05-25-07-02-48-cpp-f1-session-143-phase-7a.txt` 5203 lines pre-curation). Sections: Session Overview + Phase 1 session opening + Patch 0572 scoping (Thomas's two-question scoping prompt + Opus's three methodology decisions: bundled Patch 0572 + risk-ordered doc-suite sequence + per-patch Tier-file discipline) + Phase 2 doc-suite production sub-arc execution + Phase 3 verification notebooks audit + sub-arc closure + Phase 4 paper-specific registry updates + Phase 5 curated transcripts directory establishment + Session 143 closing state + Key scholarly-record contributions of Session 143 (5 contributions).
+3. APPEND — Curated transcripts cross-reference section to `development-dynamical-substrate-law.md` (item E4 per checklist §E E4: *"Ensure each transcript is referenced in `development-[S]-[N].md` (item A5)"*). Section documents the curated-transcripts directory location + the deferral discipline + the available transcript file + the four-tier-record-complement relationship.
+4. APPEND — Transaction 073 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Continues METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE — transcript-only audit trail per Patch 0572a established convention. The Vignette + §-entry rollups for the doc-suite production sub-arc were bundled at Patch 0572g; the curated transcripts deliverable is paper-specific deliverable closure, not sub-arc closure.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch. The baseline-extension workflow pattern noted in the Patch 0572i curated transcript file (Phase 4 section) is a candidate workflow observation but not yet formalised as a METH entry; deferred to Phase 7B methods catalogue audit Patch decision.
+
+**Programme state changes at Patch 0572i:**
+
+1. **PHASE 7A COMPLETE.** Patch 0572i closes the final Phase 7A item per `paper_completion_checklist.md` Section A (10-file documentation suite + verification notebooks audit + bibliography entry + INDEX.md row + paper README + curated transcripts). All items A1–A7 + B1–B5 + C11 + D2 + D3 + E1–E4 delivered or explicitly deferred-with-discipline.
+2. **F.1 curated transcripts directory established** with explicit deferral discipline for Sessions 138–142 raw transcripts. The deferral is acknowledged as a real loss in the scholarly record (rather than minimized or reconstructed-from-lossy-sources), preserving the anti-erasure discipline at the meta-level.
+3. **Session 143 curated transcript captures the F-line flagship trajectory methodology pattern emergence** — bundled-Patch convention + per-patch Tier-file discipline + risk-ordered doc-suite sequence + anti-erasure discipline operationalisation across the 7 SHIP-time companion files + 5 programme-level convention candidates surfaced + first direct B3 execution-time verification of F.1 substrate-locality umbrella Theorem 7.1 at v1.0 SHIPPED state.
+4. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / abstract / body / author block modifications.
+
+**Forward queue post-Patch 0572i (Phase 7A COMPLETE; Phase 7B begins):**
+
+- ✓ Patches 0572 through 0572i (LANDED — **Phase 7A COMPLETE**)
+- **(J) Patches 0573–058N** = next; Phase 7B sequential registry updates (11 registries; clean integer sequence per Thomas's confirmed no-concurrent-windows condition). Order TBD at Patch 0573 scoping; standard sequence per checklist §C C1–C10: research_frontier.md → future_projects.md → theorem-registry.md → axiom-registry.md → paper_catalog.md → predictions.md → master_glossary.md → methods_catalogue/methods_catalogue.md → organizational_frontier.md → programme_orientation.md → top-level README.md. Methods catalogue audit at Patch 0575-ish with 14 METH candidates queued.
+- **(K) Patch 058N+1** = Phase 7C (OSF registration + anthology chapter at `book_project/chapters/F1_dynamical_substrate_law.md` per C13 mandatory + final H1–H5 verification).
+- **(L) Patch 0581-ish** = G1 publication-grade hardening (OPEN-FP-F1-3) — **RECOMMENDED first post-Phase-7 substantive physics Patch** per ChatGPT R1–R6 convergent "single highest-value next action" priority. Produces `hardened_theorems/first_shell_inner_product_primitive.tex`.
+- **(M)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572i closes Phase 7A with the four-file curated transcripts deliverable bundle. The 10-Patch Session 143 sub-arc (Patches 0572 + 0572a–i) delivered the full F.1 SHIP-time documentation infrastructure: 7 SHIP-time companion documentation files + verification notebooks audit + scripts INDEX + paper-specific registry updates + curated transcripts directory. The F-line flagship trajectory Phase 7A methodology pattern is now corpus-established for future F-line flagship trajectories (F.2, F.3, …). Programme transitions to Phase 7B at Patch 0573.
