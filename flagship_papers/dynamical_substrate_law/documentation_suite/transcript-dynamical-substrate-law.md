@@ -1646,3 +1646,47 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(M)–(R)** = long-term items unchanged from Patch 0571 forward queue: methods catalogue audit Patch (12 candidates now); substrate-locality umbrella publication-grade hardening Patch; F.2/F.3 sub-question trajectory openings; OPEN-FP-F1-2 Layer 4 axiomatic derivation; OPEN-FP-F1-6 prose-density tightening + F.1-condensed companion paper trajectory; JUNO peer-review update integration.
 
 **Self-checkpoint at this transaction:** Patch 0572 opens Session 143 with the bundled Phase 7A initiation pattern — Tier-file audit verdict + first SHIP-time companion documentation file (`changelog-dynamical-substrate-law.md`) in a single Patch. The bundled convention is justified by the changelog file's source being verbatim from the `.tex` header CHANGELOG comment block (Patch 0570 SHIP state); risk is comparable to a narrow audit-only Patch. Doc-suite ordering for subsequent Patches 0572a–f follows risk-ordering: keywords → reviews → mechanism → glossary → phenomena → philosophy. Calibration discipline sustained: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body modifications. **Session 143 Phase 7A is in progress** with 1 of 7 SHIP-time companion documentation files landed at this Patch.
+
+---
+
+## Transaction 065 — Patch 0572a (Phase 7A doc-suite production: second SHIP-time companion documentation file `keywords-dynamical-substrate-law.md`)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572 SHA `5443199`).
+**Branch:** main.
+**Patch type:** Phase 7A doc-suite production Patch. Single-file CREATE + light-touch audit-trail append. NO `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (A) — second risk-ordered SHIP-time companion documentation file per docsuite.md §32 input-source priority list (light: extract from `.tex` + framing). Patch 0572 landed at commit `5443199`; Session 143 continues with Phase 7A doc-suite production.
+
+**Files modified (2 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/documentation_suite/keywords-dynamical-substrate-law.md` (~240 lines; per `templates/documentation-suite.md` §8 + checklist §A A7 + Capotauro reference implementation `keywords-capotauro.md`). Sections: v1.0 SHIPPED status note + paper/PDF/last-updated metadata + Primary Keywords + Secondary Keywords + Paper Keywords from `.tex` `\keywords{}` (with note that F.1 lacks one + recommended content for future polish Patch) + Cross-paper-reference Keywords + Discovery-aid Keywords (synonyms and alternate phrasings) + PACS Codes + MSC Codes + arXiv Categories + Subject classification + Elevator Pitch + SEO Notes (long-tail queries + alternative formulations + spelling variants + HTML title suggestion + categorical tags) + Registry Entries Registered or Resolved (5+1 OPEN-FP-F1 entries + OPEN-SD-CHIR-PRIMITIVE manifestation (iv) closure + 3 THEO-DSL candidate entries + 4 METH candidates) + Related Concepts (semantic-search aid).
+2. APPEND — Transaction 065 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Patch 0572a follows the Capotauro 0481b–L precedent for paper-completion-sequence sub-patches — small + focused + transcript-only Tier-file audit trail. Vignette + §-entry rollups for the Phase 7A doc-suite production sub-arc (0572a–f) will be bundled at a single end-of-sub-arc Patch (~0572g or 0572i scope-extension) rather than per-sub-patch updates. This keeps Tier-file growth proportional to substantive reasoning events rather than per-Patch micro-events.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch. The Phase 7A doc-suite production discipline (transcript-only Tier-file audit trail with end-of-sub-arc Vignette + §-entry rollup) is itself a methodology candidate — surface as METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE candidate at Phase 7B methods catalogue audit Patch (Patch 0575-ish). Methods catalogue audit Patch candidate count increments to 13.
+
+**Programme state changes at Patch 0572a:**
+
+1. **Second SHIP-time companion documentation file landed**: `keywords-dynamical-substrate-law.md` per docsuite.md §8 + checklist §A A7. Phase 7A doc-suite production now 2 of 7 complete (changelog ✓ + keywords ✓; remaining: reviews + mechanism + glossary + phenomena + philosophy).
+2. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+3. **Polish-Patch candidate surfaced**: F.1 `.tex` source lacks `\keywords{}` block. Recommended `\keywords{}` content drafted at keywords file Paper Keywords section for future v2.0+ Patch (low-priority; not on critical path).
+4. **Phase 7A doc-suite production discipline registered**: transcript-only Tier-file audit trail per sub-patch + end-of-sub-arc Vignette + §-entry rollup. METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE candidate.
+
+**Forward queue post-Patch 0572a (unchanged from Patch 0572 §66.5 forward queue; one item advanced):**
+
+- ✓ Patch 0572 — Tier-file audit + `changelog-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572a — `keywords-dynamical-substrate-law.md` (THIS PATCH)
+- **(B) Patch 0572b** = `reviews-dynamical-substrate-law.md` (next; synthesizes 9 reviewer letters at `reviews/` per docsuite.md §6–§7)
+- **(C) Patch 0572c** = `mechanism-dynamical-substrate-law.md` (substantive)
+- **(D) Patch 0572d** = `glossary-dynamical-substrate-law.md` (substantive)
+- **(E) Patch 0572e** = `phenomena-dynamical-substrate-law.md` (substantive)
+- **(F) Patch 0572f** = `philosophy-dynamical-substrate-law.md` (substantive; heaviest)
+- **(G) Patch 0572g** = verification notebooks audit (B1–B5) + Phase 7A sub-arc Vignette 55 + §67 Tier-file rollup
+- **(H) Patch 0572h** = C11 bibliography entry + D2 INDEX.md row + D3 paper README audit
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates (clean integer sequence)
+- **(K)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572a lands the second SHIP-time companion documentation file (`keywords-dynamical-substrate-law.md`) at the light risk-ordering position in the Phase 7A doc-suite production sub-arc. Per-patch Tier-file discipline established at this Patch: transcript-only audit trail per sub-patch + end-of-sub-arc Vignette + §-entry rollup at Patch 0572g (combined with verification notebooks audit). Phase 7A doc-suite production is 2 of 7 complete; remaining 5 docs (reviews + 4 substantive) queued for Patches 0572b–f.
