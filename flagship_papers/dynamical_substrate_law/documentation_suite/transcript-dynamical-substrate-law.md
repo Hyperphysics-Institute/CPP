@@ -1778,3 +1778,46 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(K)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572c lands the fourth SHIP-time companion documentation file (`mechanism-dynamical-substrate-law.md`) — the first substantive content Patch in the Phase 7A doc-suite production sub-arc. The mechanism file establishes the 8-step physical mechanism narrative (propagation-rate asymmetry primitive → vertex-aligned Reading C → first-shell uniform projection → first-shell perpendicularity → perturbation-theory propagation rule → shell-locality corollary → five-class exclusion enumeration → substrate-locality umbrella assembly with closed-form result $\vec{j}_{DI}^{\text{net}} = (6\delta/\phi^2)\hat{n}$) with mathematical-correspondence table cross-referencing 12 physics claims to paper sections and verification scripts. Phase 7A doc-suite production is 4 of 7 complete; the three remaining substantive docs (glossary + phenomena + philosophy) are queued for Patches 0572d–f.
+
+---
+
+## Transaction 068 — Patch 0572d (Phase 7A doc-suite production: fifth SHIP-time companion documentation file `glossary-dynamical-substrate-law.md`)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572c SHA `fe08e61`).
+**Branch:** main.
+**Patch type:** Phase 7A doc-suite production Patch — second substantive content Patch in the doc-suite sub-arc. Single-file CREATE + light-touch audit-trail append per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE (Patch 0572a). NO `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (D) — fifth risk-ordered SHIP-time companion documentation file per docsuite.md §32 input-source priority list (substantive: paper-specific term definitions organized by category; sources items 1 + 2 + 9 = sketches + reasoning + `.tex` source).
+
+**Files modified (2 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/documentation_suite/glossary-dynamical-substrate-law.md` (~290 lines; per `templates/documentation-suite.md` §2 + checklist §A A2 + Capotauro reference implementation `glossary-capotauro.md` category structure). Sections: v1.0 SHIPPED status note + paper/last-updated metadata + **Constants** (7 entries: $\phi$, $-1/(2\phi)$, $6/\phi^2$, $\delta$, $r_0$, $z = 12$, $\sqrt{7-\phi}$) + **Structural terms** (12 entries: 600-cell, $H_4$, $H_3 = I_h$, host vertex $\vhost$, first-shell, second-shell, edge graph, $n$-ball $E_n(\vhost)$, vertex-aligned/edge-aligned/face-aligned Reading C, regular icosahedron, first-shell unit vector $\hat{u}_i$, first-shell-to-first-shell edge $\hat{e}_{ij}$, G1, G2) + **Mechanism terms** (10 entries: DI-bit, DI-bit current, Mechanism A, propagation rate, substrate-direction primitive $\hat{n}$, substrate-locality structure, OPEN-SD-CHIR-PRIMITIVE, manifestation (iv) thermodynamic causal arrow, chirality continuum, minimal-local-first-order realization framework, CP/DI-bit/PCD cycle primitives) + **Methodology terms** (11 entries: sketch Layer 1/2/3/4 hierarchy, sketch-document Layer 3, publication-grade Layer 3, hardened-theorem artifact, five-class exclusion enumeration, exclusion class E1, framework axiom, anti-erasure discipline, calibration discipline, Layer-distinction discipline, paper-type declaration scope-framing subtitle, anti-priorities, reviewer-pause cycle, foundational input FI) + **Status labels** (6 entries: PROVED at Layer N, CONDITIONAL on X, FRAMEWORK AXIOM, OPEN-FP-F1-N, CLOSED at Layer N, REGISTERED theorem-registry candidate).
+2. APPEND — Transaction 068 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Continues METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE — transcript-only audit trail per Patch 0572a established convention. Vignette + §-entry rollup at Patch 0572g end-of-sub-arc bundle.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch.
+
+**Programme state changes at Patch 0572d:**
+
+1. **Fifth SHIP-time companion documentation file landed**: `glossary-dynamical-substrate-law.md` per docsuite.md §2 + checklist §A A2. Phase 7A doc-suite production now 5 of 7 complete (changelog ✓ + keywords ✓ + reviews ✓ + mechanism ✓ + glossary ✓; remaining: phenomena + philosophy).
+2. **Comprehensive paper-vocabulary coverage achieved**: the glossary captures all F.1-specific terms across five categories (Constants + Structural + Mechanism + Methodology + Status labels), with ~46 entries total. Cross-references to paper sections + related entries enable navigation between definitions.
+3. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+
+**Forward queue post-Patch 0572d:**
+
+- ✓ Patch 0572 — Tier-file audit + `changelog-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572a — `keywords-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572b — `reviews-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572c — `mechanism-dynamical-substrate-law.md` (LANDED)
+- ✓ Patch 0572d — `glossary-dynamical-substrate-law.md` (THIS PATCH)
+- **(E) Patch 0572e** = `phenomena-dynamical-substrate-law.md` (next; substantive — PHEN-E empirical facts + PHEN-P zero-parameter predictions + PHEN-V consilience per docsuite.md §4)
+- **(F) Patch 0572f** = `philosophy-dynamical-substrate-law.md` (substantive; heaviest)
+- **(G) Patch 0572g** = verification notebooks audit (B1–B5) + Phase 7A sub-arc Vignette 55 + §67 Tier-file rollup
+- **(H) Patch 0572h** = C11 bibliography + D2 INDEX.md + D3 paper README audit
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates
+- **(K)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572d lands the fifth SHIP-time companion documentation file (`glossary-dynamical-substrate-law.md`) — the second substantive Patch in the Phase 7A doc-suite production sub-arc. ~46 entries across five categories establish comprehensive paper-vocabulary coverage. Phase 7A doc-suite production is 5 of 7 complete; remaining two substantive docs are phenomena (next) and philosophy (heaviest, last).
