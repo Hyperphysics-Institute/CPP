@@ -1821,3 +1821,41 @@ Supersedes Patch 0539 §15 status framing forward-facing only. Patch 0539 §15 p
 - **(K)** through **(R)** = unchanged long-term items.
 
 **Self-checkpoint at this transaction:** Patch 0572d lands the fifth SHIP-time companion documentation file (`glossary-dynamical-substrate-law.md`) — the second substantive Patch in the Phase 7A doc-suite production sub-arc. ~46 entries across five categories establish comprehensive paper-vocabulary coverage. Phase 7A doc-suite production is 5 of 7 complete; remaining two substantive docs are phenomena (next) and philosophy (heaviest, last).
+
+---
+
+## Transaction 069 — Patch 0572e (Phase 7A doc-suite production: sixth SHIP-time companion documentation file `phenomena-dynamical-substrate-law.md`)
+
+**Date:** 24 May 2026 (Session 143).
+**Commit (anticipated):** assigned at push (`EXPECTED_BASE` = Patch 0572d SHA, post-`fe08e61`).
+**Branch:** main.
+**Patch type:** Phase 7A doc-suite production Patch — third substantive content Patch in the doc-suite sub-arc. Single-file CREATE + transcript-only audit-trail append per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE.
+
+**Trigger:** Sequential execution of Patch 0572 §66.5 forward queue item (E) — sixth risk-ordered SHIP-time companion documentation file per docsuite.md §32 input-source priority list (substantive: PHEN-E + PHEN-P + PHEN-V; sources items 6 + 9 + current registry state).
+
+**Files modified (2 file deltas):**
+
+1. CREATE — `flagship_papers/dynamical_substrate_law/documentation_suite/phenomena-dynamical-substrate-law.md` (~260 lines; per docsuite.md §4 + checklist §A A3 + Capotauro reference implementation extended structure). Sections: v1.0 SHIPPED status note + paper/scripts/last-updated metadata + **PHEN-E** (2 entries: OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow + F.1 sub-question closure) + **PHEN-P** (8 zero-parameter structural predictions: items 3–10 covering host-to-first-shell uniform projection $-1/(2\phi)$ + first-shell unit-vector sum $-6\hat{n}/\phi$ + icosahedral rank-1 sum $(3/\phi^2)\hat{n}$ + substrate-locality umbrella coefficient $6/\phi^2$ + first-shell-to-first-shell edge perpendicularity + first-shell-vertex current magnitude $2 r_0 \delta \sqrt{7-\phi}$ + first-shell-vertex sum $24/\sqrt{7-\phi}$ + discrete curl vanishing) + **PHEN-V** (4 entries: shared structural constant $-1/(2\phi)$ with Capotauro v2.0 + chirality continuum closure pattern 4 of 5 + CPP corpus track record grounding + hardened-theorems trio convention establishment) + **PHEN-F falsifiers** (10 entries across theorem-level F1.1–F1.5 + framework-level F1.6–F1.7 + programme-level F1.8–F1.10) + **PHEN-O out of scope** at v1.0 SHIP (substrate-physics emergence layer + hardening trajectory + extension trajectory + Reading C variant trajectory + chirality continuum trajectory + companion-paper trajectory + cross-flagship-paper trajectory) + **PHEN-X cross-sector consistency** (Capotauro v2.0 + chirality continuum manifestation closure pattern + reviewer-pause cycle convention precedent) + **Swarm-validation contribution at v1.0 SHIP** (structural-consistency-driven mode appropriate for sketch-document Layer 3 flagship framework paper).
+2. APPEND — Transaction 069 to `transcript-dynamical-substrate-law.md` (this entry).
+
+**Per-patch Tier-file discipline note:** Continues METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE — transcript-only audit trail. Vignette + §-entry rollup at Patch 0572g end-of-sub-arc bundle.
+
+**Methods catalogue Step E audit verdict (§15 Step E):** no new METH entry at this Patch.
+
+**Programme state changes at Patch 0572e:**
+
+1. **Sixth SHIP-time companion documentation file landed**: `phenomena-dynamical-substrate-law.md`. Phase 7A doc-suite production now 6 of 7 complete (changelog ✓ + keywords ✓ + reviews ✓ + mechanism ✓ + glossary ✓ + phenomena ✓; remaining: philosophy).
+2. **Swarm-validation contribution captured at appropriate mode**: F.1's contribution is **structural-consistency-driven** (two structural constants + cross-sector consistency with Capotauro v2.0 + first F-line flagship v1.0 SHIP methodology pattern + closes chirality continuum manifestation (iv)) rather than empirical-prediction-driven (which would be the SS-7 / SF-4 / Capotauro v2.0 mode). The mode distinction is noted explicitly as appropriate for a sketch-document Layer 3 flagship framework paper.
+3. **Calibration discipline sustained**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block modifications.
+
+**Forward queue post-Patch 0572e:**
+
+- ✓ Patches 0572, 0572a–e (LANDED)
+- **(F) Patch 0572f** = `philosophy-dynamical-substrate-law.md` (next; substantive — **heaviest** — honest-scope + Layer-distinction + anti-erasure-discipline framing for theorist + philosopher audiences per docsuite.md §5)
+- **(G) Patch 0572g** = verification notebooks audit (B1–B5) + Phase 7A sub-arc Vignette 55 + §67 Tier-file rollup
+- **(H) Patch 0572h** = C11 bibliography + D2 INDEX.md + D3 paper README audit
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F
+- **(J) Patches 0573–058N** = Phase 7B sequential registry updates
+- **(K)** through **(R)** = unchanged long-term items.
+
+**Self-checkpoint at this transaction:** Patch 0572e lands the sixth SHIP-time companion documentation file (`phenomena-dynamical-substrate-law.md`) — the third substantive Patch in the Phase 7A doc-suite production sub-arc. The phenomena file establishes the structural-consistency swarm-validation contribution + cross-sector consistency checks with Capotauro v2.0 + 10-falsifier inventory + out-of-scope inventory. Phase 7A doc-suite production is 6 of 7 complete; one remaining substantive doc — the heaviest (philosophy) — queued for Patch 0572f.
