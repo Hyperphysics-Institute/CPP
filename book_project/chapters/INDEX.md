@@ -1,0 +1,60 @@
+# Anthology Chapters — Index
+
+**Location:** `/CPP/book_project/chapters/INDEX.md`
+**Purpose:** Records the two orderings that the filesystem's alphabetical sort does not encode: the **discovery chronology** (the order in which each paper's v1.0 SHIP happened — the "story" sense of order) and the **book-outline integration** (which Part / Chapter of the main TATWD book each anthology piece principally feeds).
+**Established:** 25 May 2026 (after F.1's anthology chapter completed the third F-line paper's anthology coverage, at which point the alphabetical filesystem sort had become actively misleading about reading order).
+**Maintained at every v1.0 SHIP** that produces a new anthology chapter; see `templates/operating_system.md` §15.12 for the discipline.
+
+---
+
+## Reading order options
+
+The anthology is structured as a set of self-contained chapters. Each is a 4000–5000-word stand-alone short story on a specific CPP paper, at Rovelli/*Scientific American* register, written for an educated layperson. The chapters can be read in any order — none requires another as prerequisite — but **two coherent orderings exist** and a reader who wants either should find it without having to reconstruct it.
+
+### Option 1: Discovery chronology — reading the programme's actual arc
+
+This is the order in which the underlying papers reached v1.0 SHIP. A reader who follows this order traces the framework's own development sequence: phenomenology of nuclei first, polytope-theoretic grounding second, particle-sector flagships third, substrate-vacuum ontology fourth, cross-sector unification fifth, substrate dynamics sixth. It is *not* the order an educated layperson should encounter the framework's content if they are new to the physics (that is what the main TATWD book's Part structure is for). It is the order a reader following the programme as it actually unfolded would have lived it.
+
+1. **`SS-7_eight_nuclei_in_a_row.md`** — SS-7 v1.0 SHIPPED April 2026. Eight medium-mass nuclei binding energies to better than 1.5%, zero free parameters. Euler's formula $E = 3V - 6$ appearing in twenty-first-century nuclear physics. Dramatic centerpiece: the OPEN-SS-22 registration-then-retirement methodology event the day after registration.
+2. **`SS-8_octahedron_in_magnesium.md`** — SS-8 v1.0 SHIPPED late April 2026. Third-scale K₃ recurrence at the alpha-interstitial-neutron contact. Dramatic centerpiece: the magnesium-26 result at 9.37 MeV predicted vs 9.39 MeV measured, with the polytope being the octahedron.
+3. **`SS-9_the_polyhedrons_conditions.md`** — SS-9 v1.0 SHIPPED early May 2026. Conditional first-principles derivation of SS-7's empirical formula from CPP primitives plus four named structural conditions. Steinitz's 1922 theorem and the Freudenthal-van der Waerden 1947 deltahedral classification as bridge elements. Dramatic centerpiece: the conditional-theorem framing as programme methodology pattern.
+4. **`SF-4_where_two_problems_met.md`** — SF-4 v4.0 SHIPPED early May 2026 (first cross-sector closure in CPP). Neutrino-sector flagship; 7/8 observable parameters at zero free parameters at v1.0; both open problems then resolved at v4.0 through a single derivation chain that simultaneously closed OPEN-FP-SF-4-2 and op:nu_id in SM-5. Dramatic centerpiece: the cross-sector closure event itself.
+5. **`SF-2_the_bracelets_catalyst.md`** — SF-2 v1.0 SHIPPED mid-May 2026. Electroweak cage-boson flagship; W⁰ catalyst framework predicting a Standard-Model-unknown particle mass-degenerate with W± to ~1 part in 80,000. Dramatic centerpiece: the falsifiable structural prediction.
+6. **`capotauro_what_was_always_there.md`** — Capotauro v1.0 SHIPPED mid-May 2026; v2.0 SHIPPED late May 2026 (second cross-sector closure in CPP at substrate level). Substrate-vacuum primitive chirality $\chi/6 \approx 0.0394$ derived at v1.0; cross-sector substrate unification via THEO-SD-CHIR-1 at v2.0. Dramatic centerpiece: the recognition that the magnitude had always been there, framework-carried, before the symmetry-breaking event interpretation was retired.
+7. **`chirality_continuum_what_held_across_the_scales.md`** — Chirality Continuum v1.0 SHIPPED late May 2026. K3-doublet ↔ W-bracelet substrate-level unification (the Reading C closure trajectory). Dramatic centerpiece: the cross-scale magnitude identity $|M^{K3}| = |M^W|$ at the same substrate primitive.
+8. **`F-1_what_the_first_shell_carries.md`** — F.1 v1.0 SHIPPED 24 May 2026; G1 publication-grade hardening at Patch 0571 the following day. First F-line flagship v1.0 SHIP in CPP corpus history; substrate-locality of DI-bit currents at first order in $\delta$, closing manifestation (iv) of OPEN-SD-CHIR-PRIMITIVE at sketch-document Layer 3 with the building-block trio + G1 at publication-grade Layer 3. Dramatic centerpiece: the scope-honest umbrella-at-sketch-document-Layer-3-while-building-blocks-are-publication-grade methodology event.
+
+A reader picking up the anthology and following this discovery order will encounter the framework's mature methodology arc — the registration-then-retirement pattern (SS-7), the conditional-theorem framing pattern (SS-9), the cross-sector closure pattern (SF-4 first, Chirality Continuum second), the umbrella-entry pattern (Capotauro v2.0), and the scope-honest sketch-document-with-publication-grade-building-blocks pattern (F.1) — in the same order the programme itself developed them. The anthology becomes, read this way, a record of how scope-honest physics gets done in practice.
+
+### Option 2: Book-outline integration — reading by topic
+
+The main TATWD book (outline at `book_project/TATWD_outline_revised.md`) has its own narrative arc across five Parts. Each anthology chapter principally feeds one Part / Chapter of the main book; some chapters feed multiple chapters as secondary sources. This mapping is what an editor uses when integrating the anthology pieces into the main book's narrative structure. The mapping below identifies the *primary* outline chapter each piece feeds, with *secondary* feeds listed in italics.
+
+| Anthology chapter | Primary outline chapter | Secondary feeds |
+|---|---|---|
+| `SS-7_eight_nuclei_in_a_row.md` | **Chapter 11: Eight Nuclei in a Row** (Part Three) | *Chapter 12: What We Got Wrong* (OPEN-SS-22 retirement); *Chapter 14: Honesty as a Procedure* (registration-then-retirement methodology) |
+| `SS-8_octahedron_in_magnesium.md` | **Chapter 11: Eight Nuclei in a Row** (Part Three) | *Chapter 15: What Is Still Open* (third-scale K₃ recurrence cascade pattern) |
+| `SS-9_the_polyhedrons_conditions.md` | **Chapter 11: Eight Nuclei in a Row** (Part Three) | *Chapter 15: What Is Still Open* (conditional-theorem framing pattern); *Chapter 14: Honesty as a Procedure* (scope-bounded methodology) |
+| `SF-4_where_two_problems_met.md` | **Chapter 15: What Is Still Open** (Part Four, flagship-line inventory) | *Chapter 14: Honesty as a Procedure* (cross-sector closure as methodology event) |
+| `SF-2_the_bracelets_catalyst.md` | **Chapter 15: What Is Still Open** (Part Four, flagship-line inventory) | *Chapter 17: If This Is Wrong* (W⁰ catalyst falsifiable prediction) |
+| `capotauro_what_was_always_there.md` | **Chapter 15: What Is Still Open** (Part Four, flagship-line inventory) | *Chapter 6: The 600-Cell* (substrate-vacuum primitive); *Chapter 14: Honesty as a Procedure* (the symmetry-breaking-event-to-framework-carried-primitive methodology correction) |
+| `chirality_continuum_what_held_across_the_scales.md` | **Chapter 15: What Is Still Open** (Part Four, flagship-line inventory) | *Chapter 14: Honesty as a Procedure* (cross-sector substrate unification pattern); *Chapter 7: The Dipole Sea* (substrate primitives at electroweak scale) |
+| `F-1_what_the_first_shell_carries.md` | **Chapter 15: What Is Still Open** (Part Four, flagship-line inventory; OPEN-SD-CHIR-PRIMITIVE manifestation (iv) closed) | *Chapter 14: Honesty as a Procedure* (the umbrella-at-sketch-document-with-publication-grade-building-blocks methodology event); *Chapter 6: The 600-Cell* (icosahedral structure + first-shell geometry); *Chapter 13: Working With Minds Made of Words* (the six-round ChatGPT + Grok + Copilot convergence on scope-honesty correction) |
+
+The pattern visible in this table is informative: every F-line and SF-line flagship chapter principally feeds Chapter 15 of the main book (the "What Is Still Open" / programme-inventory chapter), and most also feed Chapter 14 (the "Honesty as a Procedure" / methodology chapter). The SS-line series papers feed Chapter 11 (the "Eight Nuclei in a Row" / nuclear-physics-results chapter). This reflects the main book's structure: the SS-line work appears as concrete results in Part Three, while the flagship work appears in Part Four as the framework's mature methodology in action. The F.1 chapter is the first anthology piece to feed Chapter 13 (the AI-collaboration chapter), via its account of how the six-round ChatGPT cycle + Grok + Copilot converged on the scope-honesty correction that produced the v1.0 SHIP framing.
+
+---
+
+## Maintenance discipline
+
+At every flagship paper v1.0 SHIP that produces a new anthology chapter:
+
+1. Add a new row to **Option 1: Discovery chronology** above, in chronological order by v1.0 SHIP date, with one-sentence summary of the paper's content + one-sentence identification of the dramatic centerpiece.
+2. Add a new row to **Option 2: Book-outline integration** table, identifying the primary outline chapter the new piece feeds plus any secondary feeds.
+3. Update the **Established** date in this file's header if the structure of either ordering changes (e.g., a new Part is added to the main book outline).
+4. If a previously-shipped paper's v2.0 or later SHIP produces an *expanded* anthology chapter rather than a new chapter file, the existing row in both orderings gets a brief addendum noting the v2.0 expansion — not a new row.
+5. The filesystem's alphabetical sort of `book_project/chapters/*.md` is preserved as-is; it is not the canonical reading order. This INDEX.md is.
+
+The INDEX.md file is itself a programme-level navigation artifact, parallel in spirit to `INDEX.md` at the repo root and the per-series `README.md` files. It records what the filesystem cannot encode without renaming the files, and it stays up to date because every v1.0 SHIP touches it.
+
+— Codified at Patch 0571c (25 May 2026, the F.1 anthology chapter + INDEX establishment Patch); discipline reference `templates/operating_system.md` §15.12.
