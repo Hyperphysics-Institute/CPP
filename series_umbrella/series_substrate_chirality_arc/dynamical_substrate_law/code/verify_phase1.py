@@ -12,7 +12,7 @@ geometric facts + the Phase 1 Mechanism A current computation:
 
 These are cross-checks against analytic results derived under the substrate-
 locality framework. Run from CPP repo root:
-  python3 flagship_papers/dynamical_substrate_law/code/verify_phase1.py
+  python3 series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py
 
 No external dependencies beyond NumPy. Runtime < 5 seconds.
 """

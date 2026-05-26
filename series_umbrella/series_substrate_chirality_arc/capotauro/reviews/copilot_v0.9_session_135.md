@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: CoPilot (Microsoft)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT) (~2145 lines `.tex` source) + Figure 1 master architecture `.png` rendering as attached visual reference
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT) (~2145 lines `.tex` source) + Figure 1 master architecture `.png` rendering as attached visual reference
 - **Paper version commit**: Patch 0472 (`640a4d2`) on origin/main at submission time
 - **Review round**: 4 cumulative on the Capotauro paper line / **2 of v2.0 cycle (sign-off round)** (rounds 1+2 covered v0.8 of v1.0-SHIP cycle archived at `copilot_v0.8_session_119.md`; v0.8.1 round-1 of v2.0 cycle had two-phase delivery: initial summary-not-critique at `copilot_v0.8.1_session_135.md` Patch 0468 + follow-up referee-grade critique at `copilot_v0.8.1_session_135_critique.md` Patch 0469; this round is the v0.9-cycle sign-off in referee-grade critique format)
 - **Review session**: Session 135

@@ -6,13 +6,13 @@
 
 **Paper:** Capotauro v1.0 (SHIPPED 16 May 2026, Session 122 Patch 0415)
 **Last updated:** 16 May 2026 (Session 123 Patch 0416I)
-**Scope:** Consolidated reviews summary + paper-level FAQ. Verbatim review archives at `flagship_papers/capotauro/reviews/`.
+**Scope:** Consolidated reviews summary + paper-level FAQ. Verbatim review archives at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/`.
 
 ---
 
 ## Review status
 
-Five independent AI reviews delivered across v0.6 → v0.8 of the Capotauro paper, with **cross-reviewer convergence on SHIP-readiness achieved at v0.8 Session 119 Patch 0412**. ChatGPT delivered three rounds (v0.6 / v0.7 / v0.8); CoPilot and Grok delivered one round each at v0.8 in parallel multi-reviewer convergence. All five reviews are archived verbatim at `flagship_papers/capotauro/reviews/`.
+Five independent AI reviews delivered across v0.6 → v0.8 of the Capotauro paper, with **cross-reviewer convergence on SHIP-readiness achieved at v0.8 Session 119 Patch 0412**. ChatGPT delivered three rounds (v0.6 / v0.7 / v0.8); CoPilot and Grok delivered one round each at v0.8 in parallel multi-reviewer convergence. All five reviews are archived verbatim at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/`.
 
 | Round | Version | Reviewer | Session | Archive | Verdict summary |
 |---|---|---|---|---|---|
@@ -180,4 +180,4 @@ Capotauro v1.0 SHIP adds **1 zero-parameter empirical correspondence** (PRED-O-2
 
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. For verbatim review archives see `flagship_papers/capotauro/reviews/`; for paper-level Tier-4 reasoning on the Session 120 framing reframe (triggered by ChatGPT methodological flag) see `reasoning-capotauro.md` §4.*
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. For verbatim review archives see `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/`; for paper-level Tier-4 reasoning on the Session 120 framing reframe (triggered by ChatGPT methodological flag) see `reasoning-capotauro.md` §4.*

@@ -1,7 +1,7 @@
 # Capotauro v2.0 Outline
 
 **Status**: outline v0.1, established Session 133 Patch 0442 at end of Reading C closure trajectory.
-**Source paper**: `flagship_papers/capotauro/capotauro.tex` v1.0 SHIPPED Session 122 Patch 0415 (46 pages).
+**Source paper**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v1.0 SHIPPED Session 122 Patch 0415 (46 pages).
 **v2.0 target ship**: 7-13 sessions post-Session-133 (estimated 4-6 sessions rewrite + 3-5 sessions reviewer cycles + 0-2 sessions buffer for analytical complications during integration).
 
 ---

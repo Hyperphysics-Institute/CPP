@@ -1,6 +1,6 @@
 # F.1 Flagship Paper Assembly — Scoping Document
 
-**Document:** `flagship_papers/dynamical_substrate_law/sketches/F1_flagship_paper_assembly_scoping.md`
+**Document:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_flagship_paper_assembly_scoping.md`
 **Patch:** 0553 — F.1 flagship paper assembly scoping (this Patch creates this document; will be referenced by subsequent assembly Patches)
 **Version:** v1.0
 **Date authored:** 23 May 2026 (Session 142 continuation)
@@ -202,7 +202,7 @@ The multi-Patch assembly sequence below is the **proposed plan**; actual Patch n
 
 ### §4.1 Paper-skeleton stage
 
-- **Patch 0554** — Paper skeleton creation. Creates `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` with full preamble (matching Capotauro v2.0 / chirality_continuum convention) + all section headers (\section{} commands with \label{}s) + title + author + abstract draft. No body content. Compiles to a multi-page PDF that's mostly section headers + empty body. **Estimated scale**: ~150 lines of LaTeX; ~10 pages PDF.
+- **Patch 0554** — Paper skeleton creation. Creates `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` with full preamble (matching Capotauro v2.0 / chirality_continuum convention) + all section headers (\section{} commands with \label{}s) + title + author + abstract draft. No body content. Compiles to a multi-page PDF that's mostly section headers + empty body. **Estimated scale**: ~150 lines of LaTeX; ~10 pages PDF.
 
 ### §4.2 Foundational sections stage
 
@@ -230,7 +230,7 @@ The multi-Patch assembly sequence below is the **proposed plan**; actual Patch n
 
 ### §4.6 Reviewer engagement stage
 
-- **Patch 0567** — Reviewer-pause checkpoint document for F.1 flagship paper v1.0-draft. Creates `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_flagship_paper_reviewer_pause_checkpoint_v1.0.md`. Submits the substantively-complete paper draft to reviewers (Copilot, Grok, ChatGPT) per `templates/relationship_protocol.md` + paper_completion_checklist.md §5 Multi-AI Review Cycle.
+- **Patch 0567** — Reviewer-pause checkpoint document for F.1 flagship paper v1.0-draft. Creates `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_flagship_paper_reviewer_pause_checkpoint_v1.0.md`. Submits the substantively-complete paper draft to reviewers (Copilot, Grok, ChatGPT) per `templates/relationship_protocol.md` + paper_completion_checklist.md §5 Multi-AI Review Cycle.
 - **Reviewer engagement window** (between Patches 0567 and 0568): Thomas runs external reviewer engagement. Feedback received.
 - **Patch 0568** — Reviewer-pause feedback record + calibration response Patch. Records verbatim reviewer feedback (three verdicts: A=Copilot, B=Grok, C=ChatGPT); identifies cross-reviewer convergent items per `templates/relationship_protocol.md` ≥2-reviewer concurrence discipline; calibrates response items.
 - **Patch 0568a** (if convergent items require split-out per anti-bundling discipline, per Patch 0548a precedent): standalone Patch closing individual calibration items.

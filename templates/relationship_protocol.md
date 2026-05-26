@@ -205,7 +205,7 @@ A reviewer-pause cycle is the structured-checkpoint form of the per-paper review
 
 The F.1 trajectory precedent (Patches 0531–0537 → Patch 0538 calibration → Patch 0539 status upgrade) demonstrates the cycle operating productively: three reviewers returned three distinct verdicts spanning the full range; cross-reviewer convergence between two reviewers on the same two structural concerns served as the strongest signal; the calibration response Patch addressed the convergent concerns without reopening any sub-question; the status upgrade Patch followed as a separate Patch implementing the refined framing.
 
-The reviewer-pause cycle is a specific application of this protocol's principles to a specific failure mode (epistemic drift through self-sealing closure). It is not a replacement for ordinary per-paper review cycles, which continue independently. Future flagship trajectories (F.2, F.3, etc.) inherit the workflow; future Opus windows opening on such trajectories should review the F.1 precedent artifacts at `flagship_papers/dynamical_substrate_law/reviewer_pause/`.
+The reviewer-pause cycle is a specific application of this protocol's principles to a specific failure mode (epistemic drift through self-sealing closure). It is not a replacement for ordinary per-paper review cycles, which continue independently. Future flagship trajectories (F.2, F.3, etc.) inherit the workflow; future Opus windows opening on such trajectories should review the F.1 precedent artifacts at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/`.
 
 ---
 

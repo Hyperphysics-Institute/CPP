@@ -63,12 +63,12 @@ conscious-point-physics, 600-cell, substrate-chirality, K3-doublet, parity-viola
 
 | File | Source path | Role |
 |------|-------------|------|
-| `capotauro_v1.0.pdf` | (compiled from `flagship_papers/capotauro/capotauro.tex` at v1.0 commit) | Primary deposit artifact |
-| `capotauro_v1.0.tex` | `flagship_papers/capotauro/capotauro.tex` at v1.0 commit (Patch 0415) | LaTeX source |
+| `capotauro_v1.0.pdf` | (compiled from `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` at v1.0 commit) | Primary deposit artifact |
+| `capotauro_v1.0.tex` | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` at v1.0 commit (Patch 0415) | LaTeX source |
 | `cpp_references.bib` | `bibliography/cpp_references.bib` at v1.0 commit | Bibliography |
-| `mechanism-capotauro.md` | `flagship_papers/capotauro/documentation_suite/mechanism-capotauro.md` | Companion: substrate mechanism narrative |
-| `phenomena-capotauro.md` | `flagship_papers/capotauro/documentation_suite/phenomena-capotauro.md` | Companion: empirical anchors |
-| `philosophy-capotauro.md` | `flagship_papers/capotauro/documentation_suite/philosophy-capotauro.md` | Companion: epistemology |
+| `mechanism-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/mechanism-capotauro.md` | Companion: substrate mechanism narrative |
+| `phenomena-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/phenomena-capotauro.md` | Companion: empirical anchors |
+| `philosophy-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/philosophy-capotauro.md` | Companion: epistemology |
 
 **Compile note**: PDF must be compiled fresh on ClearPC per Binary Artifact Workflow before deposit. Use two-pass pdflatex (cross-references resolve on pass 2). Verify 46 pages compiled / 601 KB output before upload.
 
@@ -144,13 +144,13 @@ conscious-point-physics, 600-cell, substrate-chirality, K3-doublet, W-bracelet, 
 
 | File | Source path | Role |
 |------|-------------|------|
-| `capotauro_v2.0_v1.0.pdf` | (compiled from `flagship_papers/capotauro/capotauro.tex` at v2.0 v1.0 commit Patch 0479) | Primary deposit artifact |
-| `capotauro_v2.0_v1.0.tex` | `flagship_papers/capotauro/capotauro.tex` at v2.0 v1.0 commit | LaTeX source |
+| `capotauro_v2.0_v1.0.pdf` | (compiled from `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` at v2.0 v1.0 commit Patch 0479) | Primary deposit artifact |
+| `capotauro_v2.0_v1.0.tex` | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` at v2.0 v1.0 commit | LaTeX source |
 | `cpp_references.bib` | `bibliography/cpp_references.bib` at v2.0 v1.0 commit | Bibliography |
-| `changelog-capotauro.md` | `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` | Version archaeology v1.0 → v2.0 v1.0 |
-| `mechanism-capotauro.md` | `flagship_papers/capotauro/documentation_suite/mechanism-capotauro.md` | Companion: substrate mechanism (extended for v2.0) |
-| `phenomena-capotauro.md` | `flagship_papers/capotauro/documentation_suite/phenomena-capotauro.md` | Companion: 11-route falsifier inventory |
-| `philosophy-capotauro.md` | `flagship_papers/capotauro/documentation_suite/philosophy-capotauro.md` | Companion: epistemology of v2.0 extension |
+| `changelog-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md` | Version archaeology v1.0 → v2.0 v1.0 |
+| `mechanism-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/mechanism-capotauro.md` | Companion: substrate mechanism (extended for v2.0) |
+| `phenomena-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/phenomena-capotauro.md` | Companion: 11-route falsifier inventory |
+| `philosophy-capotauro.md` | `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/philosophy-capotauro.md` | Companion: epistemology of v2.0 extension |
 | `capotauro_what_was_always_there.md` | `book_project/chapters/capotauro_what_was_always_there.md` | Anthology chapter at Rovelli register |
 
 **Compile note**: PDF must be compiled fresh on ClearPC per Binary Artifact Workflow.
@@ -231,21 +231,21 @@ conscious-point-physics, 600-cell, chirality-continuum, substrate-handle, Layer-
 
 | File | Source path | Role |
 |------|-------------|------|
-| `chirality_continuum_v1.0.pdf` | (compiled from `flagship_papers/chirality_continuum/chirality_continuum.tex` at v1.0 commit Patch 0509) | Primary deposit artifact |
-| `chirality_continuum_v1.0.tex` | `flagship_papers/chirality_continuum/chirality_continuum.tex` at v1.0 commit | LaTeX source |
+| `chirality_continuum_v1.0.pdf` | (compiled from `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` at v1.0 commit Patch 0509) | Primary deposit artifact |
+| `chirality_continuum_v1.0.tex` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` at v1.0 commit | LaTeX source |
 | `cpp_references.bib` | `bibliography/cpp_references.bib` at deposit-time commit | Bibliography (includes 13 new bibitems added at Patch 0516) |
-| `changelog-chirality_continuum.md` | `flagship_papers/chirality_continuum/documentation_suite/changelog-chirality_continuum.md` | Full version archaeology Patches 0482–0509 |
-| `mechanism-chirality_continuum.md` | `flagship_papers/chirality_continuum/documentation_suite/mechanism-chirality_continuum.md` | Companion: substrate-handle-to-effective-coupling bridge mechanism |
-| `phenomena-chirality_continuum.md` | `flagship_papers/chirality_continuum/documentation_suite/phenomena-chirality_continuum.md` | Companion: Capotauro Falsifier 6 three operative thresholds |
-| `philosophy-chirality_continuum.md` | `flagship_papers/chirality_continuum/documentation_suite/philosophy-chirality_continuum.md` | Companion: topological-projection argument + joint-paper format |
-| `glossary-chirality_continuum.md` | `flagship_papers/chirality_continuum/documentation_suite/glossary-chirality_continuum.md` | Companion: 13 chirality continuum terms |
-| `reviews-chirality_continuum.md` | `flagship_papers/chirality_continuum/documentation_suite/reviews-chirality_continuum.md` | Companion: three-reviewer convergence at first reviewer round each |
-| `B1_verify_chi6_substrate_handle.py` | `flagship_papers/chirality_continuum/code/B1_verify_chi6_substrate_handle.py` | Verification notebook 1/5 |
-| `B2_verify_michel_rho_va.py` | `flagship_papers/chirality_continuum/code/B2_verify_michel_rho_va.py` | Verification notebook 2/5 |
-| `B3_verify_chirality_helicity_coincidence.py` | `flagship_papers/chirality_continuum/code/B3_verify_chirality_helicity_coincidence.py` | Verification notebook 3/5 |
-| `B4_verify_cross_sector_convergence.py` | `flagship_papers/chirality_continuum/code/B4_verify_cross_sector_convergence.py` | Verification notebook 4/5 |
-| `B5_verify_capotauro_falsifier_6.py` | `flagship_papers/chirality_continuum/code/B5_verify_capotauro_falsifier_6.py` | Verification notebook 5/5 |
-| `code/README.md` | `flagship_papers/chirality_continuum/code/README.md` | Verification suite index |
+| `changelog-chirality_continuum.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/changelog-chirality_continuum.md` | Full version archaeology Patches 0482–0509 |
+| `mechanism-chirality_continuum.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/mechanism-chirality_continuum.md` | Companion: substrate-handle-to-effective-coupling bridge mechanism |
+| `phenomena-chirality_continuum.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/phenomena-chirality_continuum.md` | Companion: Capotauro Falsifier 6 three operative thresholds |
+| `philosophy-chirality_continuum.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/philosophy-chirality_continuum.md` | Companion: topological-projection argument + joint-paper format |
+| `glossary-chirality_continuum.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/glossary-chirality_continuum.md` | Companion: 13 chirality continuum terms |
+| `reviews-chirality_continuum.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/reviews-chirality_continuum.md` | Companion: three-reviewer convergence at first reviewer round each |
+| `B1_verify_chi6_substrate_handle.py` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/B1_verify_chi6_substrate_handle.py` | Verification notebook 1/5 |
+| `B2_verify_michel_rho_va.py` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/B2_verify_michel_rho_va.py` | Verification notebook 2/5 |
+| `B3_verify_chirality_helicity_coincidence.py` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/B3_verify_chirality_helicity_coincidence.py` | Verification notebook 3/5 |
+| `B4_verify_cross_sector_convergence.py` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/B4_verify_cross_sector_convergence.py` | Verification notebook 4/5 |
+| `B5_verify_capotauro_falsifier_6.py` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/B5_verify_capotauro_falsifier_6.py` | Verification notebook 5/5 |
+| `code/README.md` | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/README.md` | Verification suite index |
 | `chirality_continuum_what_held_across_the_scales.md` | `book_project/chapters/chirality_continuum_what_held_across_the_scales.md` | Anthology chapter at Rovelli register (4323 words) |
 
 **Compile note**: PDF must be compiled fresh on ClearPC. The verification notebooks are stand-alone Python (stdlib only — no external dependencies); they can be uploaded as-is for reviewer reproducibility.

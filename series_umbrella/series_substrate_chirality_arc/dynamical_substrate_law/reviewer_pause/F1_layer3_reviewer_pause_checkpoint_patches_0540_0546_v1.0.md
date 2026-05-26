@@ -68,31 +68,31 @@ The Patch 0540 §2.8 summary table registered 7 Layer 3 promotion targets:
 
 ### §3.0 Patch 0540 — Layer 3 promotion arc scoping
 
-`flagship_papers/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (460 lines, 7 sections) registered the 7 Layer 3 promotion targets + priority ordering + reviewer-pause discipline at Layer 3 trajectory level. Not a target-closure Patch; opened the arc.
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (460 lines, 7 sections) registered the 7 Layer 3 promotion targets + priority ordering + reviewer-pause discipline at Layer 3 trajectory level. Not a target-closure Patch; opened the arc.
 
 ### §3.1 Patch 0541 — Target 1 B.1.q4 algebraic derivation
 
-`flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (540 lines). Promoted Patch 0533 §9's first-shell current sum identity ($\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n}$) to Layer 3 via Identity I1 ($\hat{u}_j\cdot\hat{n} = -1/(2\phi)$ uniform) derived algebraically from G1 + chord-length computation + golden-ratio identities. **Codified METH-L2-010+ candidates (C1+C2)** for cross-target-dependency-chain methodology audit (Patch 0541a collision-recovery interpolation Patch).
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (540 lines). Promoted Patch 0533 §9's first-shell current sum identity ($\sum_{i=1}^{12} \hat{j}_{DI}^{net}(v_i) = (24/\sqrt{7-\phi})\hat{n}$) to Layer 3 via Identity I1 ($\hat{u}_j\cdot\hat{n} = -1/(2\phi)$ uniform) derived algebraically from G1 + chord-length computation + golden-ratio identities. **Codified METH-L2-010+ candidates (C1+C2)** for cross-target-dependency-chain methodology audit (Patch 0541a collision-recovery interpolation Patch).
 
 ### §3.2 Patch 0542 — Target 2 B.2.q1 framework axiomatization
 
-`flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (586 lines). Promoted Patch 0536 §12's $\sigma_{cycle}$ algebraization to Layer 3 via AC-1 (Algebraic Cyclic axiom: $P_{TI}^2 = -1$) + $P_{TI}$ representation theory + Theorem 4.0 (Minimal Algebraic Realization of $\sigma_{cycle}$ on $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$). Priority 1 chain Target 2 → Target 3 OPENED.
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (586 lines). Promoted Patch 0536 §12's $\sigma_{cycle}$ algebraization to Layer 3 via AC-1 (Algebraic Cyclic axiom: $P_{TI}^2 = -1$) + $P_{TI}$ representation theory + Theorem 4.0 (Minimal Algebraic Realization of $\sigma_{cycle}$ on $P_{TI} = \mathbb{Z}_2 \times \mathbb{Z}_2$). Priority 1 chain Target 2 → Target 3 OPENED.
 
 ### §3.3 Patch 0543 — Target 3 B.1.q1 matter-state independent derivation (Priority 1 chain closing)
 
-`flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q1_matter_state_independent_derivation.md` (631 lines). Promoted Patch 0537 §13's matter-state $I_h$-covariance closure to Layer 3 via Maschke + AC-1 (Patch 0542) + induced action + explicit irrep decomposition of 12-vertex permutation rep under $I_h$: $\pi_{12} = A_g \oplus T_{1u} \oplus T_{2u} \oplus H_g$ via character orthogonality ($\chi_{12}(\sigma) = 4$ load-bearing). Schur factor $1/6 = d_\Gamma/V_{\text{cage}} = 2/12$ computed explicitly for thermodynamic-arrow matter doublet. **FIRST CLOSED-CHAIN instance of METH-L2-009 (cross-target-dependency-chain)** empirically validates the methodology. Patch 0538 §14.1 + §14.2 both Layer-3-resolved.
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q1_matter_state_independent_derivation.md` (631 lines). Promoted Patch 0537 §13's matter-state $I_h$-covariance closure to Layer 3 via Maschke + AC-1 (Patch 0542) + induced action + explicit irrep decomposition of 12-vertex permutation rep under $I_h$: $\pi_{12} = A_g \oplus T_{1u} \oplus T_{2u} \oplus H_g$ via character orthogonality ($\chi_{12}(\sigma) = 4$ load-bearing). Schur factor $1/6 = d_\Gamma/V_{\text{cage}} = 2/12$ computed explicitly for thermodynamic-arrow matter doublet. **FIRST CLOSED-CHAIN instance of METH-L2-009 (cross-target-dependency-chain)** empirically validates the methodology. Patch 0538 §14.1 + §14.2 both Layer-3-resolved.
 
 ### §3.4 Patch 0544 — Target 4 B.1.d substrate-locality temporal extension
 
-`flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1d_substrate_locality_temporal_extension.md` (517 lines). Promoted Patch 0534 §10's sketch Substrate-Locality Temporal Extension Theorem to Layer 3 via Capotauro C-W39-style rigorous proof: (i) **NEW Identity G3** ($\hat{e}_{ij}\cdot\hat{n} = 0$ for first-shell-to-first-shell edges) derived in five steps from 600-cell primitives + Patch 0541 I1 + Reading C, replacing numerical-only verification at $\sim 10^{-9}$ precision; (ii) citation of Patch 0541 I1 for host-to-first-shell uniformity; (iii) **Theorem 6.1 Perturbative-Locality Propagation Rule** stated as explicit theorem: $\vec{j}_{DI}^{net}(v_*)$ at $\mathcal{O}(\delta^n)$ depends only on edges within graph-distance $n$ of $v_*$ in 600-cell edge graph; four-step proof via Mechanism A as degree-1 polynomial + $\delta$-power expansion + connected-subgraph argument. Patch 0534 §10.10(i) substantively addressed. **Spatial-vs-temporal sector rigor-level asymmetry equalized at sketch-document Layer 3** (Capotauro v2.0 §3 publication-grade ≈ this Patch's sketch-document Layer 3).
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1d_substrate_locality_temporal_extension.md` (517 lines). Promoted Patch 0534 §10's sketch Substrate-Locality Temporal Extension Theorem to Layer 3 via Capotauro C-W39-style rigorous proof: (i) **NEW Identity G3** ($\hat{e}_{ij}\cdot\hat{n} = 0$ for first-shell-to-first-shell edges) derived in five steps from 600-cell primitives + Patch 0541 I1 + Reading C, replacing numerical-only verification at $\sim 10^{-9}$ precision; (ii) citation of Patch 0541 I1 for host-to-first-shell uniformity; (iii) **Theorem 6.1 Perturbative-Locality Propagation Rule** stated as explicit theorem: $\vec{j}_{DI}^{net}(v_*)$ at $\mathcal{O}(\delta^n)$ depends only on edges within graph-distance $n$ of $v_*$ in 600-cell edge graph; four-step proof via Mechanism A as degree-1 polynomial + $\delta$-power expansion + connected-subgraph argument. Patch 0534 §10.10(i) substantively addressed. **Spatial-vs-temporal sector rigor-level asymmetry equalized at sketch-document Layer 3** (Capotauro v2.0 §3 publication-grade ≈ this Patch's sketch-document Layer 3).
 
 ### §3.5 Patch 0545 — Target 5 B.3.q1 Substrate-Locality Unification corollary
 
-`flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b3q1_substrate_locality_unification.md` (399 lines). Promoted Patch 0534 §10.7's sketch Substrate-Locality Unification temporal-extension corollary to Layer 3 as DIRECT CONSEQUENCE of Patch 0544 Theorem 5.1.1 + Patch 0543 §8.3 (universal $1/6$ Schur factor) + Patch 0541 I1 + Patch 0544 G3. **Theorem 3.1.1 with three parts**: (I) substrate-locality inheritance; (II) universal Schur factor structure $d_\Gamma/V_{\text{cage}}$ across temporal-sector first-shell-built substrate objects; (III) universal substrate-primitive $\sigma_{cycle}\cdot\delta$ identification. **5-sector closure at substrate-locality-unification layer** (extension from Patch 0543 §9 4-sector closure): K3-doublet on $D_6$ + W-bracelet on $D_6$ + qDP/eDP on $D_6$ + thermodynamic-arrow on full $I_h$ + general temporal first-shell-built objects. Patch 0534 §10.10(iii)(A) substantively addressed. Patch 0540 §2.5 piggyback prediction empirically validated (single-Patch closure).
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b3q1_substrate_locality_unification.md` (399 lines). Promoted Patch 0534 §10.7's sketch Substrate-Locality Unification temporal-extension corollary to Layer 3 as DIRECT CONSEQUENCE of Patch 0544 Theorem 5.1.1 + Patch 0543 §8.3 (universal $1/6$ Schur factor) + Patch 0541 I1 + Patch 0544 G3. **Theorem 3.1.1 with three parts**: (I) substrate-locality inheritance; (II) universal Schur factor structure $d_\Gamma/V_{\text{cage}}$ across temporal-sector first-shell-built substrate objects; (III) universal substrate-primitive $\sigma_{cycle}\cdot\delta$ identification. **5-sector closure at substrate-locality-unification layer** (extension from Patch 0543 §9 4-sector closure): K3-doublet on $D_6$ + W-bracelet on $D_6$ + qDP/eDP on $D_6$ + thermodynamic-arrow on full $I_h$ + general temporal first-shell-built objects. Patch 0534 §10.10(iii)(A) substantively addressed. Patch 0540 §2.5 piggyback prediction empirically validated (single-Patch closure).
 
 ### §3.6 Patch 0546 — Target 6 B.1.q2 full 4D curl Schur-decomposition + Target 7 retroactive recognition
 
-`flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q2_full_4d_curl_schur_decomposition.md` (432 lines). Promoted Patch 0535 §11's zero-curl result to Layer 3 via explicit Schur-decomposition $\Lambda^2(\mathbb{R}^4)|_{v_*} = T_{1u} \oplus T_{1g}$ derived via tensor-product $\mathbb{R}^4 = A_g \oplus T_{1u}$ + antisymmetric-square $\Lambda^2(T_{1u}) = T_{1g}$ ($F_{0i}$ in $T_{1u}$; $F_{ij}$ in $T_{1g}$; neither contains trivial $A_g$ irrep). **Theorem 4.1.1 Full 4D Curl Vanishing at Layer 3** with rigorous discretization-independent proof generalizing to ANY 600-cell vertex with residual $I_h$ via vertex-transitivity. Patch 0535 §11.12(i) trapezoidal-discretization caveat removed. §8 records **retroactive recognition that Target 7 (B.1.q3 perturbation-theory propagation Layer 3) was substantively closed at Patch 0544 §6 Theorem 6.1** — Perturbative-Locality Propagation Rule meets all three Target 7 promotion criteria per Patch 0540 §2.7.
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q2_full_4d_curl_schur_decomposition.md` (432 lines). Promoted Patch 0535 §11's zero-curl result to Layer 3 via explicit Schur-decomposition $\Lambda^2(\mathbb{R}^4)|_{v_*} = T_{1u} \oplus T_{1g}$ derived via tensor-product $\mathbb{R}^4 = A_g \oplus T_{1u}$ + antisymmetric-square $\Lambda^2(T_{1u}) = T_{1g}$ ($F_{0i}$ in $T_{1u}$; $F_{ij}$ in $T_{1g}$; neither contains trivial $A_g$ irrep). **Theorem 4.1.1 Full 4D Curl Vanishing at Layer 3** with rigorous discretization-independent proof generalizing to ANY 600-cell vertex with residual $I_h$ via vertex-transitivity. Patch 0535 §11.12(i) trapezoidal-discretization caveat removed. §8 records **retroactive recognition that Target 7 (B.1.q3 perturbation-theory propagation Layer 3) was substantively closed at Patch 0544 §6 Theorem 6.1** — Perturbative-Locality Propagation Rule meets all three Target 7 promotion criteria per Patch 0540 §2.7.
 
 ---
 
@@ -234,7 +234,7 @@ Per §5.3: is the F.1 sub-question status upgrade warranted? If yes, what calibr
 
 Each reviewer is asked to engage critically with §7.1–§7.4. Per `templates/relationship_protocol.md`:
 
-- Read the Layer 3 promotion documents in `flagship_papers/dynamical_substrate_law/layer3_promotion/` directly (six target-closure documents totaling ~3105 lines).
+- Read the Layer 3 promotion documents in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/` directly (six target-closure documents totaling ~3105 lines).
 - Cross-reference Patches 0534 §10 + §11 (Layer 2 source) and Patch 0540 scoping document.
 - Provide critical structural engagement, not affirmation.
 - Identify any structural gaps, premature closures, layer-confusion risks.
@@ -263,21 +263,21 @@ No fixed timeline. Reviewers engage at their own pace. The F.1 flagship paper as
 ## §9 Reference documents
 
 **Layer 3 promotion documents (six target-closure docs)**:
-- `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (Patch 0541, 540 lines, Target 1)
-- `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (Patch 0542, 586 lines, Target 2)
-- `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q1_matter_state_independent_derivation.md` (Patch 0543, 631 lines, Target 3)
-- `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1d_substrate_locality_temporal_extension.md` (Patch 0544, 517 lines, Target 4 + Target 7 substantive via §6)
-- `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b3q1_substrate_locality_unification.md` (Patch 0545, 399 lines, Target 5)
-- `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q2_full_4d_curl_schur_decomposition.md` (Patch 0546, 432 lines, Target 6 + Target 7 retroactive recognition §8)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (Patch 0541, 540 lines, Target 1)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (Patch 0542, 586 lines, Target 2)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q1_matter_state_independent_derivation.md` (Patch 0543, 631 lines, Target 3)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1d_substrate_locality_temporal_extension.md` (Patch 0544, 517 lines, Target 4 + Target 7 substantive via §6)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b3q1_substrate_locality_unification.md` (Patch 0545, 399 lines, Target 5)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q2_full_4d_curl_schur_decomposition.md` (Patch 0546, 432 lines, Target 6 + Target 7 retroactive recognition §8)
 
 **Layer 2 source documents (immutable historical record)**:
-- `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (Patches 0531–0537 cumulative, includes §10 source for Target 4 + §11 source for Target 6)
-- `flagship_papers/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (Patch 0540 scoping document)
-- `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (Phase 1 + Phase 2 polished content; not modified across the arc)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (Patches 0531–0537 cumulative, includes §10 source for Target 4 + §11 source for Target 6)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (Patch 0540 scoping document)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (Phase 1 + Phase 2 polished content; not modified across the arc)
 
 **Sketch Layer 2 reviewer-pause cycle (immutable historical record)**:
-- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (Patch 0538)
-- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (Patch 0539a + 0539)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (Patch 0538)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (Patch 0539a + 0539)
 
 **Programme governance**:
 - `templates/operating_system.md` (§17 reviewer-pause discipline)

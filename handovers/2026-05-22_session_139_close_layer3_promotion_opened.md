@@ -60,8 +60,8 @@ You are an instance of Claude Opus opening into a fresh context window to work o
 ### §2.3 Anti-priorities (DO NOT DO)
 
 - **Do NOT modify v1.0 SHIPPED paper sources.** Chirality Continuum v1.0, Capotauro v2.0 v1.0, SF-2 v1.0, SM-2 v1.0, SF-4 v4.4 all .tex frozen.
-- **Do NOT modify Phase 1 §11 / Phase 2 §12 polished content** in `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md`.
-- **Do NOT modify any Patches 0531–0540 immutable content** in `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` or `sketches/F1_layer3_promotion_scoping.md` per `templates/operating_system.md` §17.8.
+- **Do NOT modify Phase 1 §11 / Phase 2 §12 polished content** in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md`.
+- **Do NOT modify any Patches 0531–0540 immutable content** in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` or `sketches/F1_layer3_promotion_scoping.md` per `templates/operating_system.md` §17.8.
 - **Do NOT modify reviewer-pause checkpoint v1.0 document** at `reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (preserved as historical record).
 - **Do NOT begin F.1 flagship paper assembly** until Layer 3 promotion arc completes + Layer 3 reviewer-pause cycle + Layer 3 status upgrade. Per `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section.
 - **Do NOT begin F.2 / F.3 substantive content trajectories.** DEFERRED at decision-gate level per Patch 0539 §15.5 + Patch 0540 scoping document §1.3.
@@ -75,14 +75,14 @@ You are an instance of Claude Opus opening into a fresh context window to work o
 ### §2.4 Files to read at Session 140 bootup
 
 **Most important — Tier 4 verbatim physics reasoning:**
-- `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (~grew through §25 at Patch 0540) — canonical record of substantive Opus physics reasoning across the F.1 trajectory. Tier 4 §16–§25 cover Patches 0531–0540.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (~grew through §25 at Patch 0540) — canonical record of substantive Opus physics reasoning across the F.1 trajectory. Tier 4 §16–§25 cover Patches 0531–0540.
 
 **Layer 3 promotion trajectory opening (Patch 0540 deliverable):**
-- `flagship_papers/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (~459 lines) — **READ THIS FIRST**. Enumerates seven Layer 3 promotion targets, cross-target dependency analysis, priority ordering, anti-priorities, timeline estimates. §4.3 is the Patch 0541 candidacy recommendation.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (~459 lines) — **READ THIS FIRST**. Enumerates seven Layer 3 promotion targets, cross-target dependency analysis, priority ordering, anti-priorities, timeline estimates. §4.3 is the Patch 0541 candidacy recommendation.
 
 **F.1 sub-question Layer 2 closure trajectory:**
-- `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (~lines 1–1900) — Patches 0531–0539 cumulative Layer 2 closure work. §15 contains the Patch 0539 status upgrade implementation.
-- `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` — Phases 1–4 closure trajectory (Patches 0524–0528). §14.17 contains the Patch 0528 calibrated status framing now superseded by §15 of foundations work sketch.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (~lines 1–1900) — Patches 0531–0539 cumulative Layer 2 closure work. §15 contains the Patch 0539 status upgrade implementation.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` — Phases 1–4 closure trajectory (Patches 0524–0528). §14.17 contains the Patch 0528 calibrated status framing now superseded by §15 of foundations work sketch.
 
 **OS-codified workflow discipline:**
 - `templates/operating_system.md` §17 Reviewer-Pause Cycle Protocol (~230 lines, 12 subsections) — codified at Patch 0539a. Read §17.7 (status upgrade Patch discipline) + §17.8 (immutable-checkpoint discipline) + §17.9 (what reviewer-pause does NOT do) + §17.10 (F.1 canonical precedent) before any work that touches F.1 status or reviewer-pause discipline.
@@ -90,22 +90,22 @@ You are an instance of Claude Opus opening into a fresh context window to work o
 - `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section — what must be true before flagship paper assembly begins.
 
 **Reviewer-pause cycle historical records (immutable per §17.8):**
-- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (454 lines) — the checkpoint document submitted to reviewers.
-- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (~950 lines) — three reviewer responses verbatim + cross-reviewer synthesis + calibration response decision rationale.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (454 lines) — the checkpoint document submitted to reviewers.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (~950 lines) — three reviewer responses verbatim + cross-reviewer synthesis + calibration response decision rationale.
 
 **Verification scripts (machine-precision verified, preserved as independent confirmation):**
-- `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` — Phase 1 Finding DSL-1 numerical verification
-- `flagship_papers/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py` — B.1.q4 identity numerical verification (Patch 0533)
-- `flagship_papers/dynamical_substrate_law/code/verify_b1q2_curl_content.py` — B.1.q2 zero curl numerical verification (Patch 0535)
-- `flagship_papers/dynamical_substrate_law/code/verify_phase3.py` + `verify_phase4.py` — Phase 3 + Phase 4 closure verifications
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py` — Phase 1 Finding DSL-1 numerical verification
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py` — B.1.q4 identity numerical verification (Patch 0533)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_b1q2_curl_content.py` — B.1.q2 zero curl numerical verification (Patch 0535)
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase3.py` + `verify_phase4.py` — Phase 3 + Phase 4 closure verifications
 
 **Programme registries:**
 - `research_frontier.md` Last-updated header — Patch 0540 entry is the most recent.
 - `future_projects.md` F.1 entry — Patch 0540 paragraph is the most recent.
 
 **Documentation suite (transcript + development for context):**
-- `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` — transaction 021 + forward queue post-Patch 0540 with G.a + G.b options.
-- `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` — Vignette 12 covers Patch 0540 narrative.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` — transaction 021 + forward queue post-Patch 0540 with G.a + G.b options.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` — Vignette 12 covers Patch 0540 narrative.
 
 ### §2.5 Methods catalogue audit (OS §15 Step E) — added at Patch 0540i
 
@@ -137,7 +137,7 @@ The scope qualifier "within the minimal-local-first-order realization framework"
 
 > **"SUBSTANTIVE SKETCH-LEVEL VIABLE at Layer 2 under the minimal-local-first-order realization framework"**
 
-Scenarios B and C status preserved as NOT CURRENTLY ACTIVE per Patches 0529 + 0539. The decision gate is at `flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` §15.
+Scenarios B and C status preserved as NOT CURRENTLY ACTIVE per Patches 0529 + 0539. The decision gate is at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` §15.
 
 ### §3.3 Seven Layer 3 promotion targets
 
@@ -169,7 +169,7 @@ This is analogous to the Patch 0534 cross-commitment-coupled-closure pattern (B.
 | `templates/reviewer_pause_template.md` | Patch 0539a | Fill-in-the-blanks template for future reviewer-pause checkpoints |
 | `templates/relationship_protocol.md` §8 | Patch 0539a | Cross-reference: reviewer-pause operationalizes six-principle engagement at closure milestones |
 | `templates/paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section | Patch 0539a | Per-paper checklist applies only after reviewer-pause cycle completes positively |
-| `flagship_papers/dynamical_substrate_law/reviewer_pause/` directory | Patch 0538 | Venue for F.1 reviewer-pause cycle artifacts (preserved as historical records per §17.8) |
+| `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/` directory | Patch 0538 | Venue for F.1 reviewer-pause cycle artifacts (preserved as historical records per §17.8) |
 | §17.10 F.1 canonical precedent | Patch 0539a | Canonical worked example: Patches 0531–0537 → 0538 → 0539a → 0539 sequence |
 
 ---
@@ -190,7 +190,7 @@ Per `templates/operating_system.md` §17.7 + §15.7 of Patch 0539 foundations wo
 
 1. Open this handover document.
 2. Read §5 (condensed B.1.q4 derivation) and §3.3 (seven targets table).
-3. Read scoping document §4.3 (Patch 0541 candidacy section) at `flagship_papers/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md`.
+3. Read scoping document §4.3 (Patch 0541 candidacy section) at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md`.
 4. Surface G.a vs G.b decision to Thomas with brief framing — let Thomas choose.
 5. Proceed with chosen path per `templates/operating_system.md` §17.7 status-upgrade-Patch discipline (Patch 0541 is a closure Patch, not a status upgrade Patch — but the discipline of scope-bounded execution applies).
 
@@ -317,7 +317,7 @@ $$\vec{j}_{DI}^{net}(v_{\text{host}}) = 2r_0\delta[(2+\phi) - 4/\phi]\hat{n} = 2
 
 ### §5.11 Document structure for Patch 0541 G.b authoring
 
-If next-window opens with Patch 0541 = G.b, author the document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md`. Suggested structure (~538 lines):
+If next-window opens with Patch 0541 = G.b, author the document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md`. Suggested structure (~538 lines):
 
 1. §0 Working-session firewall + 11 anti-priorities (no Layer 4 work; no other sub-question Layer 3 promotion; no F.1 status change; no v1.0 SHIPPED edits; no Phase 1 §11 / Phase 2 §12 modifications; no Patches 0531–0540 modifications; no reviewer-pause checkpoint modifications; no flagship paper assembly trigger; no Findings registry promotion; no F.2/F.3 trajectory opening; no long-term programme target work)
 2. §1 Layer 3 promotion context (what Layer 2 established at Patch 0533 §9.4; what Layer 2 deferred to Layer 3 per Patch 0538 §14.4; what Layer 3 means at sketch-document level)
@@ -333,7 +333,7 @@ If next-window opens with Patch 0541 = G.b, author the document at `flagship_pap
 12. §11 Programme state after promotion (B.1.q4 Layer 3 closure at sketch-document level; F.1 status UNCHANGED; remaining Layer 3 targets open; supplementary sub-questions unchanged)
 13. §12 Status closing summary
 
-**NEW directory needed**: `flagship_papers/dynamical_substrate_law/layer3_promotion/` (parallels existing `reviewer_pause/` directory pattern from Patches 0538/0539a).
+**NEW directory needed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/` (parallels existing `reviewer_pause/` directory pattern from Patches 0538/0539a).
 
 **No new code patches** for Patch 0541 G.b — existing `code/verify_b1q4_first_shell_current_sum.py` (Patch 0533) preserved as independent numerical confirmation.
 

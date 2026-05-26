@@ -2,8 +2,8 @@
 
 > **v1.0 SHIPPED STATUS NOTE (Patch 0572e, 24 May 2026, Session 143)**: This file is written at F.1 v1.0 SHIPPED state (Patch 0570, Session 142, 24 May 2026). The phenomenon F.1 addresses is **OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow** — closed at sketch-document Layer 3 via Theorem 7.1 substrate-locality umbrella. **Important scope clarification preserved end-to-end:** F.1 closes manifestation (iv) at the *substrate-locality structure* level only; the candidate thermodynamic-arrow emergence narrative (entropy production / coarse-graining / macroscopic irreversibility) is *supported by* but *not derived from* the closure. The emergence layer is registered as future work beyond the present paper's framework qualifiers (§10 explicit disclaimer). Predictions are structural mathematical constants (not empirical-comparison predictions in the SS-7 / SF-4 / SM-2 sense); the swarm-validation contribution is at the structural-constant + cross-sector-consistency level.
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
-**Verification scripts:** `flagship_papers/dynamical_substrate_law/code/` (5 Python scripts; all 12 mathematical-correspondence-table claims numerically verified)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Verification scripts:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/` (5 Python scripts; all 12 mathematical-correspondence-table claims numerically verified)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572e)
 
 ---

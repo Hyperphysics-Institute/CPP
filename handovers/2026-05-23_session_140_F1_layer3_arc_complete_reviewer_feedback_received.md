@@ -20,9 +20,9 @@
 
 ## Forward queue
 
-**Priority 1: Patch 0548 — calibration response Patch (feedback record only, NO bundled Target 7 closure per §5.3 anti-bundling discipline extension).** Creates `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md` (parallel to existing `F1_reviewer_pause_feedback_record_v1.0.md` for sketch Layer 2 cycle). Contains: verbatim three-reviewer feedback paste-blocks (Copilot, Grok, ChatGPT); cross-reviewer convergent-item identification (C1–C5 per §4 below); per-convergent-item append-only calibration notes; commitment to Patch 0548a as separate governance-repair artifact; commitment to Patch 0549 with ChatGPT-recommended framing.
+**Priority 1: Patch 0548 — calibration response Patch (feedback record only, NO bundled Target 7 closure per §5.3 anti-bundling discipline extension).** Creates `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md` (parallel to existing `F1_reviewer_pause_feedback_record_v1.0.md` for sketch Layer 2 cycle). Contains: verbatim three-reviewer feedback paste-blocks (Copilot, Grok, ChatGPT); cross-reviewer convergent-item identification (C1–C5 per §4 below); per-convergent-item append-only calibration notes; commitment to Patch 0548a as separate governance-repair artifact; commitment to Patch 0549 with ChatGPT-recommended framing.
 
-**Priority 2: Patch 0548a — standalone Target 7 closure artifact in `layer3_promotion/`.** Per ChatGPT's "scope-boxing is the real governance repair" framing. NEW file `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~150–250 lines, compact since substantive theorem already exists at Patch 0544 §6). Six-section structure per §3 below. CRITICAL: NO re-derivation of Theorem 6.1; treat as closure-governance normalization Patch, not new mathematics.
+**Priority 2: Patch 0548a — standalone Target 7 closure artifact in `layer3_promotion/`.** Per ChatGPT's "scope-boxing is the real governance repair" framing. NEW file `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~150–250 lines, compact since substantive theorem already exists at Patch 0544 §6). Six-section structure per §3 below. CRITICAL: NO re-derivation of Theorem 6.1; treat as closure-governance normalization Patch, not new mathematics.
 
 **Priority 3: Patch 0549 — F.1 trajectory Layer 3 status upgrade Patch.** Status framing per cross-reviewer A+C convergent recommendation (Grok's "SUBSTANTIVE LAYER 3 CLOSURE" framing was single-reviewer and rejected per §5.3 convergent-discipline). Parallel to Patch 0539 (sketch Layer 2 status upgrade Patch).
 
@@ -109,7 +109,7 @@ Per `templates/relationship_protocol.md` discipline, items raised by ≥2 review
 - **ChatGPT:** "Short standalone Target 7 closure note... distinct closure artifact... this need not be a full new derivation."
 - **ChatGPT Q2 follow-up:** "**Option (2)** standalone Layer 3 doc in `layer3_promotion/` with the explicit subsection 'Why retroactive recognition alone was judged insufficient'."
 
-**Implementation:** Patch 0548a creates `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~150–250 lines). Six-section structure:
+**Implementation:** Patch 0548a creates `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~150–250 lines). Six-section structure:
 
 1. **§0 firewall + anti-priorities** including: NO re-derivation of Theorem 6.1; NO modification of Patch 0544; NO new mathematics — this is closure-governance normalization only.
 2. **§1 Layer 3 promotion context** — refers to Patch 0540 §2.7 (Target 7 specification) + Patch 0544 §6 (Theorem 6.1 substantive content) + Patch 0546 §8 (initial retroactive recognition).
@@ -171,7 +171,7 @@ Per Grok's own framing these are "cosmetic; the document is SHIP-ready." Per §1
 
 ## §4 Patch 0548 specification (calibration response Patch — Priority 1)
 
-**Filename:** `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md` (parallel to existing sketch Layer 2 cycle's `F1_reviewer_pause_feedback_record_v1.0.md` — note: different file paths since the existing file is at the same directory; the new file uses naming `F1_layer3_reviewer_pause_feedback_record_v1.0.md` to distinguish the Layer 3 cycle's feedback record from the sketch Layer 2 cycle's; verify naming convention against precedent).
+**Filename:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md` (parallel to existing sketch Layer 2 cycle's `F1_reviewer_pause_feedback_record_v1.0.md` — note: different file paths since the existing file is at the same directory; the new file uses naming `F1_layer3_reviewer_pause_feedback_record_v1.0.md` to distinguish the Layer 3 cycle's feedback record from the sketch Layer 2 cycle's; verify naming convention against precedent).
 
 **Structure (anticipated 10–11 sections, ~400–600 lines):**
 
@@ -209,7 +209,7 @@ Per Grok's own framing these are "cosmetic; the document is SHIP-ready." Per §1
 
 ## §5 Patch 0548a specification (standalone Target 7 closure — Priority 2)
 
-**Filename:** `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`
+**Filename:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`
 
 **Structure (per §3.1 above + ChatGPT's verbatim instruction, ~150–250 lines, six sections):**
 
@@ -277,24 +277,24 @@ Per Grok's own framing these are "cosmetic; the document is SHIP-ready." Per §1
 ## §7 Where to find detail
 
 - **Last session log entry:** N/A (this work was paper-scoped, not cross-paper; per §4 reconciliation Step A is N/A for paper-scoped work captured fully in Steps B/C/D).
-- **Latest Tier 4 reasoning:** `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` §35 (Patch 0547 reviewer-pause checkpoint packaging Patch; 7 subsections). Earlier §§31, 32, 33, 34 cover Patches 0543, 0544, 0545, 0546 respectively.
+- **Latest Tier 4 reasoning:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` §35 (Patch 0547 reviewer-pause checkpoint packaging Patch; 7 subsections). Earlier §§31, 32, 33, 34 cover Patches 0543, 0544, 0545, 0546 respectively.
 - **Active sketches:**
-    - `flagship_papers/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (Patch 0540 scoping document — defines Targets 1–7 + priority ordering + reviewer-pause discipline at Layer 3 trajectory level)
-    - `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (sketch Layer 2 source — Patches 0531–0537; §10 sources Target 4 + §11 sources Target 6)
-    - `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (Phase 1 + Phase 2 polished content; not modified across the arc)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_layer3_promotion_scoping.md` (Patch 0540 scoping document — defines Targets 1–7 + priority ordering + reviewer-pause discipline at Layer 3 trajectory level)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` (sketch Layer 2 source — Patches 0531–0537; §10 sources Target 4 + §11 sources Target 6)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (Phase 1 + Phase 2 polished content; not modified across the arc)
 - **Layer 3 promotion documents** (six closure docs, all immutable per §17.6 (8)):
-    - `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (Patch 0541, 540 lines, Target 1)
-    - `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (Patch 0542, 586 lines, Target 2)
-    - `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q1_matter_state_independent_derivation.md` (Patch 0543, 631 lines, Target 3)
-    - `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1d_substrate_locality_temporal_extension.md` (Patch 0544, 517 lines, Target 4 + Target 7 substantive via §6 Theorem 6.1)
-    - `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b3q1_substrate_locality_unification.md` (Patch 0545, 399 lines, Target 5)
-    - `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q2_full_4d_curl_schur_decomposition.md` (Patch 0546, 432 lines, Target 6 + Target 7 retroactive recognition §8)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (Patch 0541, 540 lines, Target 1)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (Patch 0542, 586 lines, Target 2)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q1_matter_state_independent_derivation.md` (Patch 0543, 631 lines, Target 3)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1d_substrate_locality_temporal_extension.md` (Patch 0544, 517 lines, Target 4 + Target 7 substantive via §6 Theorem 6.1)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b3q1_substrate_locality_unification.md` (Patch 0545, 399 lines, Target 5)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q2_full_4d_curl_schur_decomposition.md` (Patch 0546, 432 lines, Target 6 + Target 7 retroactive recognition §8)
 - **Reviewer-pause artifacts:**
-    - `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_checkpoint_patches_0540_0546_v1.0.md` (Patch 0547, 297 lines — submitted to ChatGPT/Copilot/Grok; immutable per §17.6 (8))
-    - **(To be created in Patch 0548)** `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md`
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_checkpoint_patches_0540_0546_v1.0.md` (Patch 0547, 297 lines — submitted to ChatGPT/Copilot/Grok; immutable per §17.6 (8))
+    - **(To be created in Patch 0548)** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md`
 - **Sketch Layer 2 reviewer-pause precedent artifacts (immutable historical record):**
-    - `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (Patch 0538, 455 lines)
-    - `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (Patch 0539a + 0539, 952 lines)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (Patch 0538, 455 lines)
+    - `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (Patch 0539a + 0539, 952 lines)
 - **Active scripts:** None added this session (no code Patches).
 - **Live registry entries:**
     - `research_frontier.md` Last-updated header — Patch 0547 entry at top (will be replaced by Patch 0548 entry).
@@ -348,9 +348,9 @@ Cumulative Patches landed in Session 140: 7 substantive Patches (0541, 0541a, 05
 ## §11 Step-by-step audit of this session's handover (per §15.11 audit-section requirement)
 
 - **Step A (Tier 1 session log):** N/A — this session's work was paper-scoped (F.1 sub-question Layer 3 promotion + reviewer-pause cycle), not cross-paper / programme-level. Per §4 Session-Log-as-Handover-Backbone Discipline reconciliation, paper-scoped work captured fully through Steps B/C/D into the paper's documentation suite + Step H handover document does not require a separate session log entry. The Step H handover document IS the canonical "first artifact next session reads" per §15.
-- **Step B (Tier 2 transcript):** ✓ — transactions 027 (Patch 0541), 027a (Patch 0541a), 028 (Patch 0542), 028 (Patch 0543, note: prior session 028 numbering preserved from precedent — verify against existing transcript), 029 (Patch 0544), 030 (Patch 0545), 031 (Patch 0546), 032 (Patch 0547) appended in-Patch per four-artifact deliverable convention. Transcript at `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
-- **Step C (Tier 3 vignettes):** ✓ — Vignettes 16 (Patch 0541), 17 (Patch 0541a if appended), 18 (Patch 0543), 19 (Patch 0544), 20 (Patch 0545), 21 (Patch 0546), 22 (Patch 0547) appended in-Patch per four-artifact deliverable convention. Development file at `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
-- **Step D (Tier 4 reasoning):** ✓ — §§29 (Patch 0541), 30 (Patch 0541a if added), 31 (Patch 0543), 32 (Patch 0544), 33 (Patch 0545), 34 (Patch 0546), 35 (Patch 0547) appended in-Patch per four-artifact deliverable convention. Reasoning file at `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md`. NOTE: section numbering may differ from this audit depending on prior session's §29 baseline; the count is 5–7 new Tier 4 sections appended.
+- **Step B (Tier 2 transcript):** ✓ — transactions 027 (Patch 0541), 027a (Patch 0541a), 028 (Patch 0542), 028 (Patch 0543, note: prior session 028 numbering preserved from precedent — verify against existing transcript), 029 (Patch 0544), 030 (Patch 0545), 031 (Patch 0546), 032 (Patch 0547) appended in-Patch per four-artifact deliverable convention. Transcript at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md`.
+- **Step C (Tier 3 vignettes):** ✓ — Vignettes 16 (Patch 0541), 17 (Patch 0541a if appended), 18 (Patch 0543), 19 (Patch 0544), 20 (Patch 0545), 21 (Patch 0546), 22 (Patch 0547) appended in-Patch per four-artifact deliverable convention. Development file at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`.
+- **Step D (Tier 4 reasoning):** ✓ — §§29 (Patch 0541), 30 (Patch 0541a if added), 31 (Patch 0543), 32 (Patch 0544), 33 (Patch 0545), 34 (Patch 0546), 35 (Patch 0547) appended in-Patch per four-artifact deliverable convention. Reasoning file at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md`. NOTE: section numbering may differ from this audit depending on prior session's §29 baseline; the count is 5–7 new Tier 4 sections appended.
 - **Step E (registries):**
     - `research_frontier.md` Last-updated header: ✓ — Patch entry prepended at every Patch (0541, 0541a, 0542, 0543, 0544, 0545, 0546, 0547). Current top entry: Patch 0547.
     - `future_projects.md` F.1 entry: ✓ — paragraph appended at every Patch.

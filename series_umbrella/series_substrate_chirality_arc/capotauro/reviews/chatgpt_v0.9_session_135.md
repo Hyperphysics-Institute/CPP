@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT) (~2145 lines `.tex` source; submitted as `.tex` per programme practice)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT) (~2145 lines `.tex` source; submitted as `.tex` per programme practice)
 - **Paper version commit**: Patch 0472 (`640a4d2`) on origin/main at submission time; head includes Patch 0470 (§13.6 dynamical-engine subsection), Patch 0471 (Figure 1 master architecture + `\Hthree` fix), and Patch 0472 (v0.9 polish bundle: `\PsiminusOne`/`\PsiminusTwo` definitions, OSF DOI, executive intuition paragraph, $\zeta$-dimensionality column, falsifier-to-theorem mapping table, editorial tightening, bookkeeping reduction, title bump)
 - **Review round**: 5 cumulative on the Capotauro paper line / **2 of v2.0 cycle** (rounds 1–4 covered v0.6, v0.7, v0.8 of v1.0-SHIP cycle and v0.8.1 of v2.0 cycle; this round is the first v2.0-cycle iteration following v0.9 polish-patch increment Patches 0470–0472)
 - **Review session**: Session 135

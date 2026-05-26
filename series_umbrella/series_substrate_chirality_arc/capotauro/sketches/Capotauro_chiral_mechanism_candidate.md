@@ -12,7 +12,7 @@ This sketch is **the deepest open work of the CPP programme** (Capotauro paper v
 
 Subject to revision. The mechanism candidate is at exploratory-sketch level, not theorem-closure level. Concepts may be relabeled. The relationship between the preferred 4D direction $\hat{n}$, the $\Hfour \to \Ifour$ algebraic structure, and the $\phi^{-3}$ magnitude scale is being developed sketchwise across this session and future sessions. The final closure structure is not pre-committed. Alternative readings (Reading A substrate-level deviation, Reading B two competing scales) remain on the table if Reading C fails at sketch level.
 
-This sketch is paired with the Capotauro v0.9 paper (`flagship_papers/capotauro/capotauro.tex`) and the parent closure sketch (`flagship_papers/capotauro/sketches/Capotauro_chi_phi_closure.md`); the v0.9 paper references this sketch via the bibliography entry `abshier_capotauro_chiral_mechanism_sketch`.
+This sketch is paired with the Capotauro v0.9 paper (`series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex`) and the parent closure sketch (`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chi_phi_closure.md`); the v0.9 paper references this sketch via the bibliography entry `abshier_capotauro_chiral_mechanism_sketch`.
 
 ---
 
@@ -497,7 +497,7 @@ The W bracelet's 1200-orbit-with-$\Dsix$-stabilizer structure on **induced 6-cyc
 
 ### §10.2 Computational verification
 
-A verification script committed at `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` enumerates the 600-cell directly from icosian / Hurwitz-quaternion coordinates and reproduces SF-2 Theorem 4.2 numerically as a prerequisite, then performs the cross-sector check. The script verifies:
+A verification script committed at `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` enumerates the 600-cell directly from icosian / Hurwitz-quaternion coordinates and reproduces SF-2 Theorem 4.2 numerically as a prerequisite, then performs the cross-sector check. The script verifies:
 
 - **Vertex/edge/face counts**: $|V| = 120$, $|E| = 720$, $|F| = 1200$; all vertices at unit radius; all vertex degrees equal 12 (icosahedral first-shell coordination). Matches standard 600-cell facts and SF-2 §sec:600cell_setup.
 - **Induced 6-cycle enumeration**: 4800 cycles, classified by the $\Hfour$-invariant signature (sorted multiset of 15 pairwise squared distances) into exactly two orbits of sizes 3600 and 1200. Matches SF-2 Theorem 4.2 Steps 1–3.
@@ -580,7 +580,7 @@ Reading C closure trajectory budget: 8–18 sessions revised at Patch 0417 (Q1+Q
 
 ### §10.9 Epistemic status
 
-Layer 3 (theorem-level rigor) for the geometric facts established. The computational verification is reproducible at < 30 second runtime via `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`. The structural identification (bracelet = Petrie hexagon of first-shell icosahedron) is purely combinatorial; no appeals to physical intuition or unverified postulates. The cosine identity $\sqrt{(1+\phi)/3} = 0.934172$ for vertex-to-containing-face direction is elementary closed-form. What is **not** Layer 3 in this section: the *interpretation* of the result for Q1' resolution depends on Q1'.A, which is not yet closed; the cross-sector "structural-coincidence" arguments on both sides have equal logical weight without additional structural input.
+Layer 3 (theorem-level rigor) for the geometric facts established. The computational verification is reproducible at < 30 second runtime via `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py`. The structural identification (bracelet = Petrie hexagon of first-shell icosahedron) is purely combinatorial; no appeals to physical intuition or unverified postulates. The cosine identity $\sqrt{(1+\phi)/3} = 0.934172$ for vertex-to-containing-face direction is elementary closed-form. What is **not** Layer 3 in this section: the *interpretation* of the result for Q1' resolution depends on Q1'.A, which is not yet closed; the cross-sector "structural-coincidence" arguments on both sides have equal logical weight without additional structural input.
 
 
 ---

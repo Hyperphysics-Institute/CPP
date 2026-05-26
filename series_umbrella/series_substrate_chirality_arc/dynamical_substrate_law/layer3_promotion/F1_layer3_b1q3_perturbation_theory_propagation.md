@@ -1,6 +1,6 @@
 # F.1 Layer 3 Promotion — B.1.q3 Perturbation-Theory Propagation (Target 7 Standalone Closure)
 
-**Document:** `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`
+**Document:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`
 **Patch:** 0548a (this Patch creates this document; no anticipated subsequent modifications)
 **Version:** v1.0
 **Date authored:** 23 May 2026 (Session 141)

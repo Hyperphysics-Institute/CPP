@@ -9,7 +9,7 @@ This file documents all formal external reviews received during the chirality co
 
 ## Part 1: Formal reviews
 
-The chirality continuum joint paper went through three reviewer rounds across one extended session window (Patches 0504–0508). Three reviewers (ChatGPT, Grok, CoPilot) per programme convention; ChatGPT engaged twice (rounds 1 and 2). All verbatim reviewer letters archived at `flagship_papers/chirality_continuum/reviewer_reviews/`.
+The chirality continuum joint paper went through three reviewer rounds across one extended session window (Patches 0504–0508). Three reviewers (ChatGPT, Grok, CoPilot) per programme convention; ChatGPT engaged twice (rounds 1 and 2). All verbatim reviewer letters archived at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/`.
 
 ### ChatGPT — Round 1 (Patch 0504, v0.5 SHIPPED state)
 
@@ -79,7 +79,7 @@ The chirality continuum joint paper went through three reviewer rounds across on
 
 **Critiques accepted** (integrated at Patch 0508):
 
-1. **G-R1-1**: Capotauro v2.0 bibitem programme metadata strengthening — Grok flagged that the Capotauro v2.0 bibitem should explicitly carry programme registration metadata (OSF DOI 10.17605/OSF.IO/JXE8D + flagship paper venue at `flagship_papers/capotauro/capotauro.tex` v1.0 SHIPPED). Integrated as bibitem update.
+1. **G-R1-1**: Capotauro v2.0 bibitem programme metadata strengthening — Grok flagged that the Capotauro v2.0 bibitem should explicitly carry programme registration metadata (OSF DOI 10.17605/OSF.IO/JXE8D + flagship paper venue at `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v1.0 SHIPPED). Integrated as bibitem update.
 
 2. **G-R1-2**: Figure 1 caption hyperref upgrade — Grok flagged that the Figure 1 caption should use hyperref-formatted cross-references to §1.4 + §8.1 + §9.4 for navigation. Integrated as caption update.
 
@@ -232,7 +232,7 @@ The single-session compression (28 patches in one extended session) was enabled 
 
 ## Cross-references
 
-- **Reviewer letters (verbatim)**: `flagship_papers/chirality_continuum/reviewer_reviews/`
+- **Reviewer letters (verbatim)**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/`
 - **Action plans**: `reviewer_reviews/v06_action_plan.md` + `reviewer_reviews/v07_action_plan.md`
 - **Patch sequence**: Patches 0504–0508 (reviewer cycle); Patch 0509 (v1.0 SHIP)
 - **Paper version history**: `documentation_suite/changelog-chirality_continuum.md`

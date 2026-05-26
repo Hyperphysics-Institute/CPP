@@ -11,7 +11,7 @@ CP-asymmetry target Delta-p_LR^obs ~ 0.04 under:
   (6) 5-sigma falsifiability conditions
 
 Run from CPP repo root:
-  python3 flagship_papers/dynamical_substrate_law/code/verify_phase4.py
+  python3 series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase4.py
 """
 import numpy as np
 

@@ -1,7 +1,7 @@
 # Capotauro v2.0 v0.1 — Cross-References Inventory
 
 **Status**: scoping document, Patch 0444 (Session 134 / first v0.1 drafting session).
-**Companion to**: `flagship_papers/capotauro/capotauro_v2_outline.md` (Patch 0442, the scoping anchor) and the eventual v2.0 v0.1 `capotauro.tex`.
+**Companion to**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro_v2_outline.md` (Patch 0442, the scoping anchor) and the eventual v2.0 v0.1 `capotauro.tex`.
 **Purpose**: enumerate every cross-reference touched by the v1.0 → v2.0 rewrite, so subsequent drafting patches (§2 reframe, §3 substrate-locality, §5 W-bracelet, §6 qDP/eDP, §7 predictions, §9 Q7 scoping, §10 discussion) can be composed without label collisions, dangling `\ref{}`s, or omitted back-references from preserved v1.0 content into new cross-sector content.
 
 The inventory is intentionally exhaustive rather than terse — it is the working surface a future-window session loads alongside `capotauro_v2_outline.md` when picking up the §3-§10 drafting arc. The outline tells *what to write*; this file tells *what each new section must cite and what every preserved section must back-reference*.

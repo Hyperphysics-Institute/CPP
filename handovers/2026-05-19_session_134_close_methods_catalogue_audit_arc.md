@@ -2,7 +2,7 @@
 
 **Repository state:** origin/main at commit `a9186c9` (Patch 0464). Highest patch landed: 0464. Eight-patch arc this session: 0457 (Session 134 close handover) → 0458 (Tier-4 backfill correction) → 0459 (§15 amendment) → 0460 (methods_catalogue scope error) → 0461 (scope correction) → 0462 (scope-purity cleanup) → 0463 (dual-trigger codification) → 0464 (gap closure from first audit run). Next free patch number: 0465.
 
-**Active paper:** Capotauro v2.0 at `flagship_papers/capotauro/capotauro.tex` — **v0.8.1 (DRAFT) SHIP-candidate-polished pending reviewer rounds**. 1870 lines source. Three programme-level theorems integrated at flagship-paper rigor (THEO-CAP-1 §4 K3-doublet + THEO-SD-CHIR-1 §5 W-Bracelet + THEO-SD-CHIR-2 §6 qDP/eDP), three-way cross-sector unification at substrate level $|M^{K3}| = |M^W| = |M^{qDP}| = \chi/6 \approx 0.0394$. 12-FI v2.0 inventory. 11-falsifier set. Five programme-pattern observations in §13 Discussion. Paper-wide audit clean: 0 missing labels, 0 missing bibitems.
+**Active paper:** Capotauro v2.0 at `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` — **v0.8.1 (DRAFT) SHIP-candidate-polished pending reviewer rounds**. 1870 lines source. Three programme-level theorems integrated at flagship-paper rigor (THEO-CAP-1 §4 K3-doublet + THEO-SD-CHIR-1 §5 W-Bracelet + THEO-SD-CHIR-2 §6 qDP/eDP), three-way cross-sector unification at substrate level $|M^{K3}| = |M^W| = |M^{qDP}| = \chi/6 \approx 0.0394$. 12-FI v2.0 inventory. 11-falsifier set. Five programme-pattern observations in §13 Discussion. Paper-wide audit clean: 0 missing labels, 0 missing bibitems.
 
 **v1.0 SHIPPED status preserved** through the v2.0 cycle as historical archival state (Session 122 Patch 0415). v2.0 is the first substantive v2.0 extension in the CPP corpus.
 
@@ -12,7 +12,7 @@ Session 134 produced the Capotauro v2.0 paper through 12 substantive content pat
 
 ## Forward queue
 
-**Priority 1 — v0.9 external reviewer rounds.** Submit `flagship_papers/capotauro/capotauro.tex` (v0.8.1 source — NOT compiled PDF per the Patch 0314 SF-4 v1.0 SHIP lesson on PDF-rasterization input-channel failures with Grok in particular) to ChatGPT, CoPilot, and Grok. One round per reviewer initially. Each reviewer's letter filed verbatim at `flagship_papers/capotauro/reviews/<reviewer>_v0.8.1_session_NNN.md`. Standard reviewer protocol per `templates/reviewer_protocol.md` + `relationship_protocol.md` six principles (line-cited evidence; diagnostic framing; acceptance before correction; declining to overreach; dignity preservation; symmetric application).
+**Priority 1 — v0.9 external reviewer rounds.** Submit `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` (v0.8.1 source — NOT compiled PDF per the Patch 0314 SF-4 v1.0 SHIP lesson on PDF-rasterization input-channel failures with Grok in particular) to ChatGPT, CoPilot, and Grok. One round per reviewer initially. Each reviewer's letter filed verbatim at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/<reviewer>_v0.8.1_session_NNN.md`. Standard reviewer protocol per `templates/reviewer_protocol.md` + `relationship_protocol.md` six principles (line-cited evidence; diagnostic framing; acceptance before correction; declining to overreach; dignity preservation; symmetric application).
 
 **Priority 2 — Consolidate reviewer feedback into v0.9 polish patches.** Per-letter assessment per symmetric-honesty protocol (every reviewer point verified against v0.8.1 source independently before incorporation); dispositions PURE ACCEPT (fix landed) / ACCEPT WITH MODIFICATION (fix landed with reviewer-noted modification rationale) / PUSH BACK (substantive reviewer disagreement with explicit rationale + diagnostic framing); cross-reviewer convergence assessment. Iterate to v0.10 if reviewer rounds non-convergent on first pass.
 
@@ -66,13 +66,13 @@ This handover covers the Patch 0457–0464 continuation arc of Session 134 (the 
 
 For the v0.9 reviewer-round work specifically:
 
-**Submission format.** Send `flagship_papers/capotauro/capotauro.tex` source — NOT compiled PDF. Programme convention per Patch 0314 SF-4 v1.0 SHIP lesson: Grok in particular has shown PDF-rasterization input-channel failures (text extraction errors when reviewing PDF input); `.tex` source avoids this. ChatGPT and CoPilot also accept `.tex` source cleanly.
+**Submission format.** Send `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` source — NOT compiled PDF. Programme convention per Patch 0314 SF-4 v1.0 SHIP lesson: Grok in particular has shown PDF-rasterization input-channel failures (text extraction errors when reviewing PDF input); `.tex` source avoids this. ChatGPT and CoPilot also accept `.tex` source cleanly.
 
-**Reviewer set.** ChatGPT (typically strongest reviewer; round-3+ convergence expected by precedent) + CoPilot (round-1 typically substantive) + Grok (round-1 typically substantive; Grok was previously suspended for vocabulary contamination — confirm vocabulary compliance with v2.0 vocabulary set: see `flagship_papers/capotauro/glossary-capotauro.md` for canonical terminology). One round per reviewer initially.
+**Reviewer set.** ChatGPT (typically strongest reviewer; round-3+ convergence expected by precedent) + CoPilot (round-1 typically substantive) + Grok (round-1 typically substantive; Grok was previously suspended for vocabulary contamination — confirm vocabulary compliance with v2.0 vocabulary set: see `series_umbrella/series_substrate_chirality_arc/capotauro/glossary-capotauro.md` for canonical terminology). One round per reviewer initially.
 
-**Filing format.** Each reviewer's letter received verbatim at `flagship_papers/capotauro/reviews/<reviewer>_v0.8.1_session_<NNN>.md` (preserves the canonical reviewer record; counter to letter date). For each reviewer round, also produce a corresponding internal response file at `flagship_papers/capotauro/reviews/<reviewer>_v0.8.1_response_session_<NNN>.md` with the per-point disposition decisions (PURE ACCEPT / ACCEPT WITH MODIFICATION / PUSH BACK + rationale).
+**Filing format.** Each reviewer's letter received verbatim at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/<reviewer>_v0.8.1_session_<NNN>.md` (preserves the canonical reviewer record; counter to letter date). For each reviewer round, also produce a corresponding internal response file at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/<reviewer>_v0.8.1_response_session_<NNN>.md` with the per-point disposition decisions (PURE ACCEPT / ACCEPT WITH MODIFICATION / PUSH BACK + rationale).
 
-**Cross-reviewer synthesis.** After all three round-1 letters in hand, produce `flagship_papers/capotauro/reviews/cross_reviewer_synthesis_v0.8.1_round1.md` enumerating: (a) convergent points across reviewers (high-priority fixes); (b) divergent points (per-reviewer weighting needed); (c) SHIP-readiness convergence assessment. Programme convention: three-reviewer convergence on "ship as v1.0" verdict is the strongest SHIP-readiness signal (per SS-9 v1.0, SF-4 v1.0, SF-2 v1.0, Capotauro v1.0 SHIP precedents).
+**Cross-reviewer synthesis.** After all three round-1 letters in hand, produce `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/cross_reviewer_synthesis_v0.8.1_round1.md` enumerating: (a) convergent points across reviewers (high-priority fixes); (b) divergent points (per-reviewer weighting needed); (c) SHIP-readiness convergence assessment. Programme convention: three-reviewer convergence on "ship as v1.0" verdict is the strongest SHIP-readiness signal (per SS-9 v1.0, SF-4 v1.0, SF-2 v1.0, Capotauro v1.0 SHIP precedents).
 
 **v0.9 → v0.9.1 → ... cadence.** Each polish-patch increment that addresses reviewer feedback bumps the sub-version (v0.9 base; v0.9.1 first round of feedback consolidated; v0.9.2 if a second pass needed; etc.). v0.10 designates a second full reviewer round if first-round convergence is non-convergent on SHIP-readiness. When convergent SHIP-ready verdicts achieved → v2.0 v1.0 SHIP triggers per Priority 3.
 
@@ -84,16 +84,16 @@ For the v0.9 reviewer-round work specifically:
 
 ### Capotauro paper artifacts
 
-- `flagship_papers/capotauro/capotauro.tex` — v0.8.1 (DRAFT) SHIP-candidate-polished, 1870 lines, on origin/main. **The submission-ready source for v0.9 reviewer rounds.**
-- `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` — Tier-4 verbatim reasoning, 779 lines including §15–§18 Session 134 entries (Phase 1–4). The canonical Tier-4 record for v1.0 SHIP C14 audit when v2.0 v1.0 ships.
-- `flagship_papers/capotauro/documentation_suite/development-capotauro.md` — Tier-3 development vignettes, 429 lines including Vignettes 32–35 covering Session 134.
-- `flagship_papers/capotauro/documentation_suite/transcript-capotauro.md` — Tier-2 per-patch pointer-map, 560 lines.
-- `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` — per-patch substantive-content summaries (Patches 0444 through 0456 entries for v0.0 → v0.8.1).
-- `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — Reading C closure trajectory sketch, 1874 lines through §21 (Q7 SCOPED). The substantive physics development underlying the v2.0 paper.
-- `flagship_papers/capotauro/sketches/capotauro_v2_outline.md` + `capotauro_v2_cross_references_inventory.md` — v2.0 outline + cross-references inventory.
-- `flagship_papers/capotauro/founders_voice/001` through `005` — founder's voice content (verbatim substance preservation discipline; primitive-feature framing; etc.).
-- `flagship_papers/capotauro/reviews/` — five existing reviewer letters preserved at v1.0 SHIP state (ChatGPT v0.6/v0.7/v0.8 + CoPilot v0.8 + Grok v0.8). v0.9 reviewer letters will land here.
-- `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` — geometric verification script from Patch 0419 (substrate-locality theorem numerical verification).
+- `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` — v0.8.1 (DRAFT) SHIP-candidate-polished, 1870 lines, on origin/main. **The submission-ready source for v0.9 reviewer rounds.**
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reasoning-capotauro.md` — Tier-4 verbatim reasoning, 779 lines including §15–§18 Session 134 entries (Phase 1–4). The canonical Tier-4 record for v1.0 SHIP C14 audit when v2.0 v1.0 ships.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/development-capotauro.md` — Tier-3 development vignettes, 429 lines including Vignettes 32–35 covering Session 134.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/transcript-capotauro.md` — Tier-2 per-patch pointer-map, 560 lines.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md` — per-patch substantive-content summaries (Patches 0444 through 0456 entries for v0.0 → v0.8.1).
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — Reading C closure trajectory sketch, 1874 lines through §21 (Q7 SCOPED). The substantive physics development underlying the v2.0 paper.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/capotauro_v2_outline.md` + `capotauro_v2_cross_references_inventory.md` — v2.0 outline + cross-references inventory.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/001` through `005` — founder's voice content (verbatim substance preservation discipline; primitive-feature framing; etc.).
+- `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/` — five existing reviewer letters preserved at v1.0 SHIP state (ChatGPT v0.6/v0.7/v0.8 + CoPilot v0.8 + Grok v0.8). v0.9 reviewer letters will land here.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` — geometric verification script from Patch 0419 (substrate-locality theorem numerical verification).
 
 ### Operating-system / protocol artifacts (Patch 0457–0464 arc)
 

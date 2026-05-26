@@ -2,8 +2,8 @@
 
 > **v1.0 SHIPPED STATUS NOTE (Patch 0572b, 24 May 2026, Session 143)**: This file is written at F.1 v1.0 SHIPPED state (Patch 0570, Session 142, 24 May 2026). The reviewer-engagement cycle is **definitively closed** with strongest-positive ChatGPT verdict at Round 6 + explicit Grok Round 1 v1.0 SHIP-acceptable + implicit Copilot Round 1 SHIP-acceptable with tier-ranked recommendations. Round 6 PDF-upload protocol identified and resolved the TikZ-rendering processing artifact that produced recurring-pattern recommendations at Rounds 3–5; the diagnostic resolution is now codified as a programme-level reviewer-engagement convention candidate (METH-PDF-UPLOAD-DEFAULT-REVIEWER). Full review-cycle details in `changelog-dynamical-substrate-law.md` v1.0 SHIPPED entry. This file is a historical record of the v0.9 → v1.0 SHIP-cycle reviewer engagement; future paper-version increments (v1.1 minor revisions, v2.0 substantive extensions) trigger new review cycles archived in additional Part 1 round sections below.
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
-**Source letters:** `flagship_papers/dynamical_substrate_law/reviews/` (9 archived reviewer letters + 1 synthesis document)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Source letters:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviews/` (9 archived reviewer letters + 1 synthesis document)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572b)
 
 ---
@@ -289,4 +289,4 @@ Three programme-level reviewer-engagement conventions surfaced at this cycle (ca
 
 ---
 
-*Reviews file created Session 143 Patch 0572b (24 May 2026) as the third SHIP-time companion documentation file in Phase 7A. Per `templates/documentation-suite.md` §6 + checklist §A A6 (consolidated reviews + FAQ format; FAQ legacy-allowed but not required for papers adopted ≥ 22 April 2026, so consolidated here per checklist). Reference implementation: `flagship_papers/capotauro/documentation_suite/reviews-capotauro.md`. This file is a historical record of the v0.9 → v1.0 SHIP-cycle reviewer engagement; future paper-version increments trigger additional Part 1 round sections appended below the existing v0.9 → v1.0 SHIP-cycle content; Part 2 FAQ is updated continuously as new questions come in from any source.*
+*Reviews file created Session 143 Patch 0572b (24 May 2026) as the third SHIP-time companion documentation file in Phase 7A. Per `templates/documentation-suite.md` §6 + checklist §A A6 (consolidated reviews + FAQ format; FAQ legacy-allowed but not required for papers adopted ≥ 22 April 2026, so consolidated here per checklist). Reference implementation: `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reviews-capotauro.md`. This file is a historical record of the v0.9 → v1.0 SHIP-cycle reviewer engagement; future paper-version increments trigger additional Part 1 round sections appended below the existing v0.9 → v1.0 SHIP-cycle content; Part 2 FAQ is updated continuously as new questions come in from any source.*

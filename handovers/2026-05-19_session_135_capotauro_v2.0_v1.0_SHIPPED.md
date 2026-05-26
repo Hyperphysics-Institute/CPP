@@ -48,7 +48,7 @@ Per Patch 0463 SHIP closeout protocol codification:
 
 ### v2.0 v1.0 SHIPPED state at session close
 
-**Paper**: `flagship_papers/capotauro/capotauro.tex` v2.0 v1.0 SHIPPED — 19 May 2026 (~2190 lines `.tex` source; 97-page compiled PDF; 4 minor overfull-hbox warnings all known and acceptable).
+**Paper**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v1.0 SHIPPED — 19 May 2026 (~2190 lines `.tex` source; 97-page compiled PDF; 4 minor overfull-hbox warnings all known and acceptable).
 
 **Theorem closures (three at full Layer 3 rigor with zero free parameters)**:
 

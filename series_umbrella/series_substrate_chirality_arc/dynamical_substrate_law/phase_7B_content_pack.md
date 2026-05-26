@@ -1,6 +1,6 @@
 # Phase 7B Content Pack — F.1 Dynamical Substrate Law v1.0 SHIPPED
 
-**Location:** `flagship_papers/dynamical_substrate_law/phase_7B_content_pack.md`
+**Location:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/phase_7B_content_pack.md`
 **Purpose:** Pre-stage all programme-level registry content needed for Phase 7B (Patches 0574–058N) of the F.1 paper completion sequence. Created at Phase 7B initiation (Session 143 Patch 0573) so subsequent sessions can ship ONE registry per session WITHOUT re-reading the F.1 `.tex` source or the SHIP-time companion files. Each subsequent session reads: (1) `bootup.md` §3 and §3.5 (lightweight mode), (2) latest handover, (3) THIS FILE, (4) the ONE target registry — and emits ONE surgical patch.
 **Created:** Session 143 Patch 0573 (25 May 2026).
 **Lifecycle:** This file is RETIRED after Phase 7B closes (Patch 058N close) and Phase 7C ships the OSF deposit. Either delete it at Phase 7C close or move to `archive/` for historical reference.
@@ -10,7 +10,7 @@
 
 ## §0. Context recap (read first)
 
-**F.1 SHIPPED state.** The paper `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` shipped v1.0 at Session 142 Patch 0570 (24 May 2026) as the first F-line flagship v1.0 SHIP in CPP corpus history. Three reviewers converged on SHIP-ready; ChatGPT R6 verdict was the strongest-positive of the cycle. Frozen PDF lives at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, MD5 `49e56be92a3ccc126ce09210b5898794`).
+**F.1 SHIPPED state.** The paper `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` shipped v1.0 at Session 142 Patch 0570 (24 May 2026) as the first F-line flagship v1.0 SHIP in CPP corpus history. Three reviewers converged on SHIP-ready; ChatGPT R6 verdict was the strongest-positive of the cycle. Frozen PDF lives at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, MD5 `49e56be92a3ccc126ce09210b5898794`).
 
 **Phase 7A closed.** Patches 0572 → 0572a–0572i produced the full SHIP-time companion suite: 7 companion files (`mechanism-`, `glossary-`, `phenomena-`, `philosophy-`, `reviews-`, `keywords-`, `changelog-dynamical-substrate-law.md`) + verification notebooks B1–B5 + paper-specific registries (bibliography, INDEX, paper README) + curated transcripts. Patch 0572i commit message: *"Phase 7A FINAL item; CLOSES Phase 7A."*
 
@@ -47,14 +47,14 @@ Three programme-level theorem candidates emerge from F.1 v1.0:
 
 ## §2. Predictions — PRED-O-NN candidates
 
-F.1's predictions are **structural mathematical constants** (not empirical-comparison predictions in the SS-7 / SF-4 / SM-2 sense). The swarm-validation contribution is at the structural-constant + cross-sector-consistency level. Five paper-body predictions + three foundations-work predictions (the foundations-work three are documented in `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md`, verified by code, but not in the paper body — registry inclusion is optional, recommend a single grouped entry referencing the sketch).
+F.1's predictions are **structural mathematical constants** (not empirical-comparison predictions in the SS-7 / SF-4 / SM-2 sense). The swarm-validation contribution is at the structural-constant + cross-sector-consistency level. Five paper-body predictions + three foundations-work predictions (the foundations-work three are documented in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md`, verified by code, but not in the paper body — registry inclusion is optional, recommend a single grouped entry referencing the sketch).
 
 The next available PRED-O-NN number must be looked up at registry-edit time by scanning `predictions.md` for the highest existing `PRED-O-NN` ID. As of the last full audit (Session 141), the F.1 predictions slot into the post-PRED-O-25 range; verify the exact next number when editing.
 
 ### PRED-O-N1 — Host-to-first-shell uniform projection constant
 - **Prediction:** $\hat{u}_i \cdot \hat{n} = -1/(2\phi) = -(\sqrt{5}-1)/2 \approx -0.309017$ uniformly across all 12 first-shell neighbours at vertex-aligned Reading C in the 600-cell.
 - **Status:** Zero-parameter structural prediction; analytically derived from G1 + icosahedral residual symmetry $H_3 = I_h$.
-- **Numerical verification:** `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` identity (1); machine-precision pass.
+- **Numerical verification:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py` identity (1); machine-precision pass.
 - **Cross-sector consistency:** Identical structural constant appears in Capotauro v2.0 §3 spatial-sector theorem.
 - **Theorem source:** Theorem 5.1 of `dynamical_substrate_law.tex`.
 
@@ -170,7 +170,7 @@ The blocks below are organized in the recommended Phase 7B execution order (smal
 
 **Pre-staged content block:**
 
-| F.1 Dynamical Substrate Law | `flagship_papers/dynamical_substrate_law/` | v1.0 SHIPPED 2026-05-24 | First F-line flagship v1.0 SHIP in CPP corpus; substrate-locality of DI-bit currents at vertex-aligned Reading C; closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) at sketch-document Layer 3 |
+| F.1 Dynamical Substrate Law | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/` | v1.0 SHIPPED 2026-05-24 | First F-line flagship v1.0 SHIP in CPP corpus; substrate-locality of DI-bit currents at vertex-aligned Reading C; closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) at sketch-document Layer 3 |
 
 (Adjust column count and exact column headers to match the in-place README table at edit time.)
 
@@ -189,13 +189,13 @@ The blocks below are organized in the recommended Phase 7B execution order (smal
 **Last-updated frontier prepend (model after Patch 0457 Capotauro entry):**
 
 ```
-**Last updated:** 25 May 2026 (Session 143 Patch 0576 — **F.1 Dynamical Substrate Law v1.0 SHIPPED post-SHIP catalog registration**: F.1 row added to F-Line table reflecting Session 142 Patch 0570 v1.0 SHIP. First F-line flagship v1.0 SHIP in CPP corpus; closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) at sketch-document Layer 3 via Theorem 7.1 substrate-locality umbrella with three publication-grade Layer 3 inputs (Theorems 5.1 + 5.2 + 6.1 + Corollary 6.2). Three reviewers converged on SHIP-ready; ChatGPT R6 verdict strongest-positive of cycle. Frozen PDF at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, 489 KB, MD5 49e56be92a3ccc126ce09210b5898794). 1240 lines `.tex` source. Three new theorem candidates (THEO-DSL-1/2/3) for theorem-registry.md per Patch 058N. Three hardened-theorem artifacts at `hardened_theorems/` (Patches 0550 + 0551 + 0552; 741 lines LaTeX combined). Five Open Problems in body §9 (OPEN-FP-F1-1 through OPEN-FP-F1-5) + OPEN-FP-F1-6 registered separately at Patch 0569e. Phase 7A SHIP-time companion suite landed at Patches 0572 → 0572a–0572i. Phase 7B programme-level registry updates underway at Patches 0573+; Phase 7C OSF deposit + anthology chapter at Patch 058N+1+.
+**Last updated:** 25 May 2026 (Session 143 Patch 0576 — **F.1 Dynamical Substrate Law v1.0 SHIPPED post-SHIP catalog registration**: F.1 row added to F-Line table reflecting Session 142 Patch 0570 v1.0 SHIP. First F-line flagship v1.0 SHIP in CPP corpus; closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) at sketch-document Layer 3 via Theorem 7.1 substrate-locality umbrella with three publication-grade Layer 3 inputs (Theorems 5.1 + 5.2 + 6.1 + Corollary 6.2). Three reviewers converged on SHIP-ready; ChatGPT R6 verdict strongest-positive of cycle. Frozen PDF at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, 489 KB, MD5 49e56be92a3ccc126ce09210b5898794). 1240 lines `.tex` source. Three new theorem candidates (THEO-DSL-1/2/3) for theorem-registry.md per Patch 058N. Three hardened-theorem artifacts at `hardened_theorems/` (Patches 0550 + 0551 + 0552; 741 lines LaTeX combined). Five Open Problems in body §9 (OPEN-FP-F1-1 through OPEN-FP-F1-5) + OPEN-FP-F1-6 registered separately at Patch 0569e. Phase 7A SHIP-time companion suite landed at Patches 0572 → 0572a–0572i. Phase 7B programme-level registry updates underway at Patches 0573+; Phase 7C OSF deposit + anthology chapter at Patch 058N+1+.
 ```
 
 **F-Line table row insertion (after Capotauro row):**
 
 ```
-| F.1 | F.1 Dynamical Substrate Law | v1.0 SHIPPED | 2026-05-24 | OPEN-SD-CHIR-PRIMITIVE manifestation (iv) substrate-locality of DI-bit currents at vertex-aligned Reading C | Sketch-document Layer 3 (umbrella Theorem 7.1) + publication-grade Layer 3 trio (Theorems 5.1, 5.2, 6.1 + Corollary 6.2) | `flagship_papers/dynamical_substrate_law/` |
+| F.1 | F.1 Dynamical Substrate Law | v1.0 SHIPPED | 2026-05-24 | OPEN-SD-CHIR-PRIMITIVE manifestation (iv) substrate-locality of DI-bit currents at vertex-aligned Reading C | Sketch-document Layer 3 (umbrella Theorem 7.1) + publication-grade Layer 3 trio (Theorems 5.1, 5.2, 6.1 + Corollary 6.2) | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/` |
 ```
 
 (Adjust column count and order to match in-place table at edit time.)
@@ -217,7 +217,7 @@ Add new paragraph after Capotauro Documentation paragraph, summarizing F.1's doc
 **Pre-staged content block:**
 
 ```
-- `flagship_papers/dynamical_substrate_law/` — F.1 Dynamical Substrate Law (v1.0 SHIPPED 2026-05-24, Session 142 Patch 0570). First F-line flagship v1.0 SHIP. Substrate-locality of DI-bit currents at vertex-aligned Reading C in the 600-cell. Closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) at sketch-document Layer 3.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/` — F.1 Dynamical Substrate Law (v1.0 SHIPPED 2026-05-24, Session 142 Patch 0570). First F-line flagship v1.0 SHIP. Substrate-locality of DI-bit currents at vertex-aligned Reading C in the 600-cell. Closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv) at sketch-document Layer 3.
   - `dynamical_substrate_law.tex` — Paper source (1240 lines)
   - `dynamical_substrate_law.pdf` — Frozen v1.0 SHIP PDF (33 pages, 489 KB, MD5 49e56be92a3ccc126ce09210b5898794)
   - `documentation_suite/` — 10 companion files (4 Tier 3/4 + 7 SHIP-time + 1 changelog)
@@ -262,7 +262,7 @@ Add new paragraph after Capotauro Documentation paragraph, summarizing F.1's doc
 ### F.1 Dynamical Substrate Law
 
 **Status:** v1.0 SHIPPED at Session 142 Patch 0570 (24 May 2026). First F-line flagship v1.0 SHIP in CPP corpus.
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` + frozen PDF at `dynamical_substrate_law.pdf`
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` + frozen PDF at `dynamical_substrate_law.pdf`
 **Closes:** OPEN-SD-CHIR-PRIMITIVE manifestation (iv) thermodynamic causal arrow — at **sketch-document Layer 3 only** (Theorem 7.1 umbrella; not independently hardened).
 **Post-v1.0 trajectory queue (recommended priority order):**
 1. **G1 publication-grade hardening (OPEN-FP-F1-3)** — RECOMMENDED first post-Phase-7 substantive physics Patch per ChatGPT R1–R6 convergent priority. Would produce `hardened_theorems/first_shell_inner_product_primitive.tex` parallel to Patches 0550/0551/0552 trio structure. Unlocks unconditional publication-grade Layer 3 status for Theorems 5.1 + 5.2 + strengthens Theorem 7.1 umbrella footing. Estimated 1–2 sessions.
@@ -289,7 +289,7 @@ Add new paragraph after Capotauro Documentation paragraph, summarizing F.1's doc
 **Frontier-prepend paragraph (model after recent prepends):**
 
 ```
-**Last updated:** 25 May 2026 (Session 143 Patch 0580 — **F.1 Dynamical Substrate Law v1.0 SHIPPED predictions registration**: 5 paper-body + 1 grouped foundations-work predictions registered as PRED-O-N1 through PRED-O-N5(+N6). F.1 predictions are structural mathematical constants (host-to-first-shell uniform projection -1/(2φ); first-shell unit-vector sum identity; icosahedral rank-1 sum identity; substrate-locality umbrella coefficient 6/φ²; first-shell-to-first-shell edge perpendicularity), not empirical-comparison predictions in the SS-7 / SF-4 sense. Cross-sector consistency check: -1/(2φ) is shared identically with Capotauro v2.0 §3 spatial-sector substrate-locality theorem; ê_{ij}·n̂=0 perpendicularity is the same identity as Capotauro v2.0 §5.6 K3-base protection. All paper-body predictions numerically verified in `flagship_papers/dynamical_substrate_law/code/`.
+**Last updated:** 25 May 2026 (Session 143 Patch 0580 — **F.1 Dynamical Substrate Law v1.0 SHIPPED predictions registration**: 5 paper-body + 1 grouped foundations-work predictions registered as PRED-O-N1 through PRED-O-N5(+N6). F.1 predictions are structural mathematical constants (host-to-first-shell uniform projection -1/(2φ); first-shell unit-vector sum identity; icosahedral rank-1 sum identity; substrate-locality umbrella coefficient 6/φ²; first-shell-to-first-shell edge perpendicularity), not empirical-comparison predictions in the SS-7 / SF-4 sense. Cross-sector consistency check: -1/(2φ) is shared identically with Capotauro v2.0 §3 spatial-sector substrate-locality theorem; ê_{ij}·n̂=0 perpendicularity is the same identity as Capotauro v2.0 §5.6 K3-base protection. All paper-body predictions numerically verified in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/`.
 ```
 
 **Entry blocks for PRED-O-N1 through N5 (and optional N6):** see §2 of this pack for the per-prediction content. Each entry should follow the in-place format style of existing PRED-O-NN entries.
@@ -307,7 +307,7 @@ Add new paragraph after Capotauro Documentation paragraph, summarizing F.1's doc
 **Theorem candidate full statements:**
 
 **THEO-DSL-1 (Perturbation-Theory Propagation Rule + Shell-Locality at $\mathcal{O}(\delta^1)$):**
-Under the framework axioms MA.1 + MA.2 (Mechanism A propagation-rate asymmetry + framework-local current construction) on the 600-cell substrate's edge graph, the DI-bit current at any vertex $v$ at first order in the asymmetry parameter $\delta$ depends only on edges incident to $v$ or to vertices within graph-distance 1 of $v$. Equivalently: the substrate current at any vertex beyond the first shell of the host vertex receives no $\mathcal{O}(\delta^1)$ contribution from Mechanism A. **Hardened-theorem artifact:** `hardened_theorems/perturbation_locality_propagation.tex` (Patch 0550). **Falsifier:** demonstration of a first-order-in-$\delta$ contribution at any vertex beyond first-shell range. **Layer rigor:** publication-grade Layer 3, unconditional. **CPP axiom dependencies:** A1, A2, A3, A4, A7 + framework axioms MA.1 + MA.2. **Source:** Theorem 6.1 + Corollary 6.2 of `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` v1.0.
+Under the framework axioms MA.1 + MA.2 (Mechanism A propagation-rate asymmetry + framework-local current construction) on the 600-cell substrate's edge graph, the DI-bit current at any vertex $v$ at first order in the asymmetry parameter $\delta$ depends only on edges incident to $v$ or to vertices within graph-distance 1 of $v$. Equivalently: the substrate current at any vertex beyond the first shell of the host vertex receives no $\mathcal{O}(\delta^1)$ contribution from Mechanism A. **Hardened-theorem artifact:** `hardened_theorems/perturbation_locality_propagation.tex` (Patch 0550). **Falsifier:** demonstration of a first-order-in-$\delta$ contribution at any vertex beyond first-shell range. **Layer rigor:** publication-grade Layer 3, unconditional. **CPP axiom dependencies:** A1, A2, A3, A4, A7 + framework axioms MA.1 + MA.2. **Source:** Theorem 6.1 + Corollary 6.2 of `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` v1.0.
 
 **THEO-DSL-2 (First-Shell Geometric Identities at Vertex-Aligned Reading C, conditional on G1):**
 At vertex-aligned Reading C in the 600-cell with substrate-direction primitive $\hat{n} = \vhost / |\vhost|$, the 12 first-shell unit vectors $\hat{u}_i$ satisfy: (a) **uniform projection** $\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ identically across all 12 first-shell neighbours (Theorem 5.1); (b) **first-shell-to-first-shell edge perpendicularity** $\hat{e}_{ij} \cdot \hat{n} = 0$ for all 30 first-shell-to-first-shell edges (Theorem 5.2). **Hardened-theorem artifacts:** `hardened_theorems/host_first_shell_uniform_projection.tex` (Patch 0552) + `hardened_theorems/first_shell_perpendicularity.tex` (Patch 0551). **Falsifier set:** see §1 of this pack. **Layer rigor:** publication-grade Layer 3, **conditional on G1** (first-shell inner-product primitive; G1 publication-grade hardening is OPEN-FP-F1-3 RECOMMENDED first post-Phase-7 substantive physics Patch). **CPP axiom dependencies:** A1, A2, A4, A7 + framework axiom G1 (inherited from Capotauro Patch 0541 §3.1 at sketch-document Layer 3). **Cross-sector consistency:** $-1/(2\phi)$ identical to Capotauro v2.0 §3 spatial-sector substrate-locality theorem. **Source:** Theorems 5.1 + 5.2 of F.1 v1.0.
@@ -414,7 +414,7 @@ Per Patch 0573, `bootup.md` §3.5 adds a "Phase-7B-mode lightweight bootup" subs
 Lightweight bootup checklist for Patches 0574–0584:
 1. `bootup.md` §3 + §3.5 (patch contract + Phase-7B-mode directive) — ~100 lines combined
 2. Latest handover at `handovers/` — ~150 lines
-3. THIS FILE (`flagship_papers/dynamical_substrate_law/phase_7B_content_pack.md`) — ~600 lines
+3. THIS FILE (`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/phase_7B_content_pack.md`) — ~600 lines
 4. The ONE target registry — varies 200–1850 lines
 5. (Optional) `templates/operating_system.md` §15 Step E + §16 anti-collision — grep-extracted, ~200 lines
 
@@ -425,9 +425,9 @@ Lightweight bootup checklist for Patches 0574–0584:
 ## §8. Sanity-check anti-rebuttal (for reviewer-facing claims)
 
 If a reviewer (especially ChatGPT) flags an inconsistency between this pack's claims and the paper's actual content, the canonical authority order is:
-1. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED frozen at Patch 0570; the source of truth for the paper's claims)
-2. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (the frozen v1.0 PDF; visual rendering)
-3. The companion files in `flagship_papers/dynamical_substrate_law/documentation_suite/` (Phase 7A SHIP-time curation)
+1. `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED frozen at Patch 0570; the source of truth for the paper's claims)
+2. `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` (the frozen v1.0 PDF; visual rendering)
+3. The companion files in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/` (Phase 7A SHIP-time curation)
 4. This content pack (Phase 7B execution scaffolding; derived from above)
 5. The Phase 7B registry entries (downstream from this pack)
 

@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` post-Patch 0569b state, uploaded to ChatGPT as the freshly-compiled 33-page PDF (rather than `.tex` source as in Rounds 3-5). ChatGPT labels this "v0.9 v5" reflecting its perception of substantive improvement over what it had been reading at R3-R5.
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` post-Patch 0569b state, uploaded to ChatGPT as the freshly-compiled 33-page PDF (rather than `.tex` source as in Rounds 3-5). ChatGPT labels this "v0.9 v5" reflecting its perception of substantive improvement over what it had been reading at R3-R5.
 - **Paper version commit at submission**: `48ba487` (Patch 0569b) — same `.tex` state as Rounds 3-5 submissions; the difference at R6 is the upload format (PDF vs `.tex` source).
 - **Review session**: Session 142
 - **Review archived by**: Patch 0569e (this file)

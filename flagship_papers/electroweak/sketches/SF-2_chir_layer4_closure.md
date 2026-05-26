@@ -11,8 +11,8 @@ Closure activates **Capotauro v2.0 Falsifier 6** as a sharp empirical falsifier 
 This sketch is Tier-4 exploratory reasoning at scoping level — Layer 1 / Layer 2 epistemic status (route choice + sub-claim decomposition + foundational input enumeration), not Layer 3 (formal theorem-level closure). The sketch is paired with:
 
 - the SF-2 v1.0 paper ([`flagship_papers/electroweak/sf-2_electroweak.tex`](../sf-2_electroweak.tex), §sec:dm\_muon and §sec:YM\_EFT\_thm),
-- the Capotauro v2.0 paper ([`flagship_papers/capotauro/capotauro.tex`](../../capotauro/capotauro.tex), §17 THEO-SD-CHIR-1 W-bracelet derivation),
-- the Capotauro Reading C sketch ([`flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`](../../capotauro/sketches/Capotauro_chiral_mechanism_candidate.md), §15--§17 substrate-handle derivation chain),
+- the Capotauro v2.0 paper ([`series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex`](../../capotauro/capotauro.tex), §17 THEO-SD-CHIR-1 W-bracelet derivation),
+- the Capotauro Reading C sketch ([`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`](../../capotauro/sketches/Capotauro_chiral_mechanism_candidate.md), §15--§17 substrate-handle derivation chain),
 - the Patch 0367 captured insight ([`flagship_papers/electroweak/sketches/W0_neutrino_scattering_centroid_decoupling.md`](W0_neutrino_scattering_centroid_decoupling.md), centroid-decoupling substrate-mechanism alternative),
 - the PD-004 publication-pathway document ([`programmatic_decisions/PD-004-publication-pathway.md`](../../../programmatic_decisions/PD-004-publication-pathway.md), Layer 4 venue guidance).
 

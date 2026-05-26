@@ -7,8 +7,8 @@
 **Repository:** Hyperphysics-Institute/CPP
 **Parent open problem:** OPEN-FI-C-9-FP-MECHANISM (sub-claim (b) of OPEN-SM-4)
 **Parent paper:** Capotauro v1.0 SHIPPED Session 122 Patch 0415
-**Working sketch:** `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (665 lines after Patch 0419)
-**Verification script:** `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (~340 lines, runs <30 seconds with all checks passing)
+**Working sketch:** `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (665 lines after Patch 0419)
+**Verification script:** `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` (~340 lines, runs <30 seconds with all checks passing)
 
 ---
 
@@ -90,7 +90,7 @@ Only vertex-aligned and face-aligned cases are consistent with the paper.
 
 The casual orbit-cardinality matching heuristic doesn't apply directly; geometric analysis required.
 
-**Computational verification.** Built standalone Python script (~290 lines, NumPy-only) at `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`. The script:
+**Computational verification.** Built standalone Python script (~290 lines, NumPy-only) at `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py`. The script:
 
 1. Generates 120 vertices of 600-cell from icosian / Hurwitz-quaternion coordinates.
 2. Identifies 720 edges at distance $1/\phi$.
@@ -211,7 +211,7 @@ Before doing Q3 work, read in order:
 2. **`Capotauro_chiral_mechanism_candidate.md` §2.3-§2.4** — the perturbative-distance-ratio argument that Q3 sharpens.
 3. **`Capotauro_chiral_mechanism_candidate.md` §11** — the most recent Q1'+Q1'.A resolution at Patch 0419, establishing the vertex-aligned context Q3 operates within.
 4. **`capotauro.tex` §2 (sec:substrate_vacuum)** — the paper's substrate-vacuum chirality framing, especially §2.3 (sec:order_parameter) and §2.4 (sec:chi_resolution) — the $\phi^{-3}$ uniqueness argument that Q3 builds on.
-5. **`flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`** — the verification script (skim if needed; script already establishes Findings C-W36 + C-W37 at <30 second runtime).
+5. **`series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py`** — the verification script (skim if needed; script already establishes Findings C-W36 + C-W37 at <30 second runtime).
 
 ### 5.2 Framing question for Q3
 
@@ -249,7 +249,7 @@ A Layer 3 closure of Q3 within 1-3 sessions would advance the trajectory estimat
 | §10 | Q1' partial progress via SF-2 W bracelet | added | 0418 |
 | §11 | Q1'+Q1'.A resolution toward vertex-aligned | added | 0419 |
 
-### 6.2 Verification script (`flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`)
+### 6.2 Verification script (`series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py`)
 
 | Block | Content | Patch |
 |---|---|---|

@@ -13,7 +13,7 @@ Under Case A.1: delta = chi = phi^-3, giving |M^thermo| = chi/6.
 
 Inputs are pure framework constants (phi, chi). No empirical fitting parameters.
 Run from CPP repo root:
-  python3 flagship_papers/dynamical_substrate_law/code/verify_phase3.py
+  python3 series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase3.py
 """
 import numpy as np
 

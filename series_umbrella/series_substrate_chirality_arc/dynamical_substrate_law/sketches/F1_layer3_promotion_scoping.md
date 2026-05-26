@@ -339,7 +339,7 @@ Per `templates/operating_system.md` §17.10 + §17.11, the reviewer-pause cycle 
 
 When the Layer 3 promotion arc approaches its load-bearing argument arc completion (e.g., after Priorities 1–5 close, leaving only supplementary Priority 6), the §17 reviewer-pause cycle triggers:
 
-1. **Reviewer-pause checkpoint document** prepared at `flagship_papers/dynamical_substrate_law/reviewer_pause/` (e.g., `F1_layer3_reviewer_pause_checkpoint_patches_XXXX_YYYY_v1.0.md`), submitted to current AI reviewer pool (ChatGPT, Copilot, Grok per current §5 pool);
+1. **Reviewer-pause checkpoint document** prepared at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/` (e.g., `F1_layer3_reviewer_pause_checkpoint_patches_XXXX_YYYY_v1.0.md`), submitted to current AI reviewer pool (ChatGPT, Copilot, Grok per current §5 pool);
 2. **Calibration response Patch** addresses any cross-reviewer-convergent scope-overclaim items via append-only notes;
 3. **Status upgrade Patch** implements the upgrade from "SUBSTANTIVE SKETCH-LEVEL CLOSURE at Layer 2" to "SUBSTANTIVE LAYER 3 CLOSURE under the [framework specification]" or whatever the calibrated upgrade framing identifies.
 

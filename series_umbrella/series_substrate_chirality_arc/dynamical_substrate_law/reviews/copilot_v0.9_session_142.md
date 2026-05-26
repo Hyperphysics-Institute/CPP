@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: Copilot (Microsoft)
-- **Paper reviewed**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 (pre-v1.0; 31-page PDF)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 (pre-v1.0; 31-page PDF)
 - **Paper version commit**: `7f8458a` (Patch 0567, Session 142) — feature-complete pre-v1.0 state with body §1-§10 + bibliography + final polish (date metadata + CHANGELOG comment + abstract OP count corrected from 3 to 5)
 - **Review session**: Session 142
 - **Review archived by**: Patch 0568 (this file)

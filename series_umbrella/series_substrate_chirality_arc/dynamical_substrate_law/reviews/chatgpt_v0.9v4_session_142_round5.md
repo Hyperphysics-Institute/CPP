@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` labelled "v0.9 v4" — **see recurring-pattern diagnostic-framing note below**
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` labelled "v0.9 v4" — **see recurring-pattern diagnostic-framing note below**
 - **Paper version commit at submission**: `48ba487` (Patch 0569b) was the cumulative paper state at this Round 5 submission; per Patch 0569c §61 diagnostic-framing analysis, ChatGPT's reviews from Round 4 onward may be processing a pre-Patch-0569a state due to (a) submission-version error, (b) session-context loss, or (c) closing-emphasis restatement.
 - **Review session**: Session 142
 - **Review archived by**: Patch 0569d (this file)

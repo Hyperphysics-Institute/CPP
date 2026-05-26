@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v2.0 v0.8.1 (1870 lines `.tex` source; submitted as `.tex` per programme practice — Patch 0314 SF-4 v1.0 SHIP lesson on PDF-rasterization input-channel failures)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v0.8.1 (1870 lines `.tex` source; submitted as `.tex` per programme practice — Patch 0314 SF-4 v1.0 SHIP lesson on PDF-rasterization input-channel failures)
 - **Paper version commit**: `8a25010` (Patch 0465, on origin/main at submission time; Capotauro paper content head at `00f9176` Patch 0456)
 - **Review round**: 4 cumulative on the Capotauro paper line / **1 of v2.0 cycle** (rounds 1–3 covered v0.6 / v0.7 / v0.8 of the v1.0-SHIP cycle, archived at `chatgpt_v0.6_session_113.md`, `chatgpt_v0.7_session_117.md`, `chatgpt_v0.8_session_119.md`)
 - **Review session**: Session 135

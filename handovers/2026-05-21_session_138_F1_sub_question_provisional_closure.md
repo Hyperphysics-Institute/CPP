@@ -32,7 +32,7 @@ The lesson from the Session 138 trajectory: even careful four-phase closure work
 | Patch | Date | Description |
 |---|---|---|
 | 0522 | 21 May | F.2/F.3 viability decision gate opened; F.1 sub-question identified as load-bearing |
-| 0523 | 21 May | F.1 sub-question scoping sketch + new flagship-paper home `flagship_papers/dynamical_substrate_law/` |
+| 0523 | 21 May | F.1 sub-question scoping sketch + new flagship-paper home `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/` |
 | 0524 | 21 May | Phase 1 closure (Layer 3, Finding DSL-1: $\vec{j}_{DI}^{net} = (6 r_0 \delta/\varphi^2)\hat{n}$) |
 | 0525 | 21 May | Phase 2 closure (Layer 2.5, Finding DSL-2: $\vec{\omega}_{PCD} = \sigma_{cycle} \cdot \hat{j}_{DI}^{net}/\|\hat{j}_{DI}^{net}\|_0$) |
 | 0526 | 21 May | Phase 3 closure (Layer 3, Finding DSL-3: $\|M^{thermo}\| = \chi/6 \approx 0.0394$ under Case A.1) |
@@ -66,24 +66,24 @@ The lesson from the Session 138 trajectory: even careful four-phase closure work
 ### §2.4 Files to read at Session 139 bootup
 
 **Most important — Tier 4 verbatim physics reasoning:**
-- `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (~700 lines) — the canonical record of substantive Opus physics reasoning across the F.1 closure trajectory.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` (~700 lines) — the canonical record of substantive Opus physics reasoning across the F.1 closure trajectory.
 
 **Substantive content (polished):**
-- `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11–§14 — four-phase derivation work with Patch 0528 calibration subsections + Patch 0529 PROVISIONAL CLOSURE reframing.
-- `flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` §14 — decision-gate re-engagement memo.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11–§14 — four-phase derivation work with Patch 0528 calibration subsections + Patch 0529 PROVISIONAL CLOSURE reframing.
+- `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` §14 — decision-gate re-engagement memo.
 
 **Verification scripts (machine-precision verified):**
-- `flagship_papers/dynamical_substrate_law/code/verify_phase1.py`
-- `flagship_papers/dynamical_substrate_law/code/verify_phase3.py`
-- `flagship_papers/dynamical_substrate_law/code/verify_phase4.py`
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py`
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase3.py`
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase4.py`
 
 **Programme registries:**
 - `research_frontier.md` (Patch 0528 + Patch 0529 entries)
 - `future_projects.md` F.1 entry
 
 **Documentation suite:**
-- `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` — Tier 3 curated narrative.
-- `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` — Tier 2 transaction-indexed pointer-map.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` — Tier 3 curated narrative.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` — Tier 2 transaction-indexed pointer-map.
 
 ---
 
@@ -179,11 +179,11 @@ ChatGPT also validated Thomas's "emergent chirality" intuition (long-term progra
 
 | Asset | Path | Role |
 |---|---|---|
-| F.1 sub-question scoping sketch | `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` | Canonical source for substantive derivation work; §1–§10 scoping + §11 Phase 1 + §12 Phase 2 + §13 Phase 3 + §14 Phase 4 + §14.16–§14.17 Patch 0528 calibration + §14.17 PROVISIONAL CLOSURE reframing |
-| F.2/F.3 viability decision gate | `flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` | §1–§13 original decision gate + §14 Patch 0529 re-engagement memo (8 subsections) |
-| Phase 1 verification script | `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` | Machine-precision verification of Phase 1 result + geometric identities |
-| Phase 3 verification script | `flagship_papers/dynamical_substrate_law/code/verify_phase3.py` | Matrix element computation + cross-check against alternative structural candidates |
-| Phase 4 verification script | `flagship_papers/dynamical_substrate_law/code/verify_phase4.py` | Sensitivity analysis + JUNO context + falsifiability conditions |
+| F.1 sub-question scoping sketch | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` | Canonical source for substantive derivation work; §1–§10 scoping + §11 Phase 1 + §12 Phase 2 + §13 Phase 3 + §14 Phase 4 + §14.16–§14.17 Patch 0528 calibration + §14.17 PROVISIONAL CLOSURE reframing |
+| F.2/F.3 viability decision gate | `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` | §1–§13 original decision gate + §14 Patch 0529 re-engagement memo (8 subsections) |
+| Phase 1 verification script | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py` | Machine-precision verification of Phase 1 result + geometric identities |
+| Phase 3 verification script | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase3.py` | Matrix element computation + cross-check against alternative structural candidates |
+| Phase 4 verification script | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase4.py` | Sensitivity analysis + JUNO context + falsifiability conditions |
 | Reviewer package for ChatGPT | `/mnt/user-data/outputs/F1_closure_reviewer_package_for_ChatGPT.md` | 515-line stress-test package; assembled between Patches 0527 and 0528 |
 | ChatGPT review verdict | (Preserved at user-side; key observations integrated into Patch 0528 calibration + reasoning §7) | Three substantive corrections + one unflagged ansatz |
 
@@ -191,9 +191,9 @@ ChatGPT also validated Thomas's "emergent chirality" intuition (long-term progra
 
 | Asset | Path | Role |
 |---|---|---|
-| Tier 4 reasoning narrative | `flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` | **Canonical Tier 4 record** of substantive Opus physics reasoning across F.1 trajectory; §0–§15 covering all phases + reviewer-pause checkpoint + calibration + decision-gate re-engagement |
-| Tier 3 development vignette | `flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` | Curated narrative summary of Session 138 continuation arc |
-| Tier 2 transcript pointer-map | `flagship_papers/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` | Transaction-indexed roadmap (10 transactions, Patches 0522–0530) |
+| Tier 4 reasoning narrative | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md` | **Canonical Tier 4 record** of substantive Opus physics reasoning across F.1 trajectory; §0–§15 covering all phases + reviewer-pause checkpoint + calibration + decision-gate re-engagement |
+| Tier 3 development vignette | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md` | Curated narrative summary of Session 138 continuation arc |
+| Tier 2 transcript pointer-map | `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/transcript-dynamical-substrate-law.md` | Transaction-indexed roadmap (10 transactions, Patches 0522–0530) |
 | Step H handover document | `handovers/2026-05-21_session_138_F1_sub_question_provisional_closure.md` | This file — paste-ready next-window pointer |
 
 ### §6.3 Registry updates (already applied at Patches 0528–0529)

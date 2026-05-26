@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: CoPilot (Microsoft)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v0.8 (44-page PDF, 566 KB)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v0.8 (44-page PDF, 566 KB)
 - **Paper version commit**: `677b5dd` (Patch 0411, Session 118)
 - **Review round**: 1 (CoPilot's first review of the Capotauro paper; v0.6 and v0.7 rounds were ChatGPT-only)
 - **Review session**: Session 119

@@ -1,8 +1,8 @@
 # Verification scripts — F.1 Dynamical Substrate Law
 
-> **v1.0 SHIPPED STATUS NOTE (Patch 0572g, 24 May 2026, Session 143)**: This file is the canonical INDEX of verification scripts at `flagship_papers/dynamical_substrate_law/code/` + the **B1–B5 verification notebooks audit document** per `templates/paper_completion_checklist.md` §B. Five verification scripts present at v1.0 SHIP; all paper-body numerical claims (12 entries in the mechanism file's mathematical-correspondence table) confirmed covered by the script inventory; B3 runnability confirmed for the substrate-locality umbrella result via `verify_phase1.py` execution (PASS).
+> **v1.0 SHIPPED STATUS NOTE (Patch 0572g, 24 May 2026, Session 143)**: This file is the canonical INDEX of verification scripts at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/` + the **B1–B5 verification notebooks audit document** per `templates/paper_completion_checklist.md` §B. Five verification scripts present at v1.0 SHIP; all paper-body numerical claims (12 entries in the mechanism file's mathematical-correspondence table) confirmed covered by the script inventory; B3 runnability confirmed for the substrate-locality umbrella result via `verify_phase1.py` execution (PASS).
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572g)
 **Audit reference:** `templates/paper_completion_checklist.md` §B (Verification notebooks B1–B5)
 
@@ -54,7 +54,7 @@ Every numerical quantity cited in the paper body, enumerated per `paper_completi
 
 ## B2 — Verification scripts inventory + header compliance assessment
 
-Five Python scripts at `flagship_papers/dynamical_substrate_law/code/`. All use Python standard library + NumPy only (B3 dependency compliance ✓).
+Five Python scripts at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/`. All use Python standard library + NumPy only (B3 dependency compliance ✓).
 
 ### `verify_phase1.py` — Phase 1: Net DI-bit current at host vertex
 
@@ -111,7 +111,7 @@ Five Python scripts at `flagship_papers/dynamical_substrate_law/code/`. All use 
 
 ## B3 — Runnability verification
 
-All five scripts use Python standard library + NumPy only; no external dependencies beyond NumPy. Each script runs from scratch via `python3 flagship_papers/dynamical_substrate_law/code/<script>.py` from the CPP repo root.
+All five scripts use Python standard library + NumPy only; no external dependencies beyond NumPy. Each script runs from scratch via `python3 series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/<script>.py` from the CPP repo root.
 
 **Direct B3 verification at this Patch:** `verify_phase1.py` executed at audit time with output:
 

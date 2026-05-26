@@ -2,7 +2,7 @@
 
 > **v1.0 SHIPPED STATUS NOTE (Patch 0572d, 24 May 2026, Session 143)**: This file is written at F.1 v1.0 SHIPPED state (Patch 0570, Session 142, 24 May 2026). All entries are at v1.0 SHIPPED definition state; status-label entries (publication-grade Layer 3, sketch-document Layer 3, framework axiom, etc.) reflect the v1.0 SHIP Layer status of each item per the explicit Layer hierarchy table at §8.2 of the paper. Future paper-version increments may extend entries (e.g., G1 hardening at OPEN-FP-F1-3 closure would promote G1 from sketch-document Layer 3 to publication-grade Layer 3) but will not modify existing entries' v1.0 SHIP definitions.
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572d)
 
 ---

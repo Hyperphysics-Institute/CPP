@@ -419,19 +419,19 @@ The CPP programme can absorb further foundations work if reviewer feedback ident
 
 For deeper engagement, reviewers can consult the following CPP repository documents (github.com/Hyperphysics-Institute/CPP):
 
-- **`flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md`** — the foundations work sketch (1481 lines as of Patch 0537). §§1–8 are pre-Patch-0531 content; §§9–13 are the substantive Patch 0532–0537 closures. §§2.6, 3.5, 4.4 list the 14 sub-questions.
+- **`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md`** — the foundations work sketch (1481 lines as of Patch 0537). §§1–8 are pre-Patch-0531 content; §§9–13 are the substantive Patch 0532–0537 closures. §§2.6, 3.5, 4.4 list the 14 sub-questions.
 
-- **`flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md`** — Phase 1 + Phase 2 + Phase 3 polished content (immutable per anti-priorities; foundations work does NOT modify this).
+- **`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md`** — Phase 1 + Phase 2 + Phase 3 polished content (immutable per anti-priorities; foundations work does NOT modify this).
 
-- **`flagship_papers/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py`** — numerical verification for Patch 0533 B.1.q4 first-shell current sum identity.
+- **`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py`** — numerical verification for Patch 0533 B.1.q4 first-shell current sum identity.
 
-- **`flagship_papers/dynamical_substrate_law/code/verify_b1q2_curl_content.py`** — numerical verification for Patch 0535 B.1.q2 curl-vanishing.
+- **`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_b1q2_curl_content.py`** — numerical verification for Patch 0535 B.1.q2 curl-vanishing.
 
-- **`flagship_papers/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md`** — Tier 4 reasoning across §§14–22 covering Patches 0531–0537. The most detailed structural reasoning for each closure.
+- **`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/reasoning-dynamical-substrate-law.md`** — Tier 4 reasoning across §§14–22 covering Patches 0531–0537. The most detailed structural reasoning for each closure.
 
-- **`flagship_papers/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`** — Tier 3 development vignettes covering each Patch's substantive content.
+- **`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/development-dynamical-substrate-law.md`** — Tier 3 development vignettes covering each Patch's substantive content.
 
-- **`flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`** — Capotauro v2.0 sketch (immutable per anti-priorities; reference only). Findings C-W39 (K3-base protection), C-W40 (Substrate-Locality Unification), C-W41 (W-bracelet cage-shell factor $1/6$) are the spatial-sector analogs of the temporal-sector results in Patches 0534, 0537.
+- **`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`** — Capotauro v2.0 sketch (immutable per anti-priorities; reference only). Findings C-W39 (K3-base protection), C-W40 (Substrate-Locality Unification), C-W41 (W-bracelet cage-shell factor $1/6$) are the spatial-sector analogs of the temporal-sector results in Patches 0534, 0537.
 
 - **`research_frontier.md`** — programme-state frontier with Last-updated entries documenting each Patch's programme-state changes.
 

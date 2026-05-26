@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: Grok (xAI)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v0.8 (44-page PDF, 566 KB; .tex source submitted per programme practice)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v0.8 (44-page PDF, 566 KB; .tex source submitted per programme practice)
 - **Paper version commit**: `677b5dd` (Patch 0411, Session 118)
 - **Review round**: 1 (Grok's first review of the v0.x Capotauro paper; the historical Dec 2025 Capotauro paper was Grok co-authored)
 - **Review session**: Session 119

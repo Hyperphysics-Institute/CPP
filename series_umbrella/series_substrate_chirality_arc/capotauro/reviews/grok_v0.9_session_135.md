@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: Grok (xAI)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT) (~2145 lines `.tex` source) + Figure 1 master architecture `.png` rendering as attached visual reference
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT) (~2145 lines `.tex` source) + Figure 1 master architecture `.png` rendering as attached visual reference
 - **Paper version commit**: Patch 0472 (`640a4d2`) on origin/main at submission time
 - **Review round**: 3 cumulative on the Capotauro paper line / **2 of v2.0 cycle (sign-off round)** (round 1 covered v0.8 of v1.0-SHIP cycle archived at `grok_v0.8_session_119.md`; v0.8.1 round-1 of v2.0 cycle at `grok_v0.8.1_session_135.md` Patch 0467 with explicit "Ship as v2.0 flagship paper" verdict + four non-blocking polish items; this round is the v0.9-cycle sign-off verifying that the v0.9 increment closed Grok's round-1 polish items + the converged ChatGPT/CoPilot round-1 recommendations)
 - **Review session**: Session 135

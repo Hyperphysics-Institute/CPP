@@ -266,7 +266,7 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 - [ ] Complete Capotauro 7-file companion documentation suite (mechanism, glossary, phenomena, philosophy, reviews, keywords, FAQ); estimated 7-15 sessions
 - [ ] Complete SF-2 7-file companion documentation suite (mechanism, glossary, phenomena, philosophy, reviews, keywords, FAQ)
 - [ ] Layer-4 continuum-EFT dedicated paper per PD-004 publication-pathway (OPEN-FP-SF-2-loopfactor + CHIR closure target)
-- [ ] Capotauro Reading C closure trajectory continues at Q3 (precise $\epsilon$-$\chi$ relationship sharpening, 1-3 sessions); see `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` and `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md`
+- [ ] Capotauro Reading C closure trajectory continues at Q3 (precise $\epsilon$-$\chi$ relationship sharpening, 1-3 sessions); see `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` and `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md`
 - [x] SS-8 Phase 1: empirical map of neutron-excess extension (OPEN-SS-23) — **DONE 25 April 2026 via SS-8 v1.0**
 - [x] SS-9 v1.0 SHIP closing OPEN-SS-24 conditionally — **DONE 7 May 2026 Session 32**
 - [x] SF-4 v1.0 → v4.4 cross-sector closure with SM-5 op:nu_id — **DONE 11 May 2026 Session 81 Patch 0342**

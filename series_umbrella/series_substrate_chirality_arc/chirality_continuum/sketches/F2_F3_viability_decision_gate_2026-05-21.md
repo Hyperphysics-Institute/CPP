@@ -5,7 +5,7 @@
 **Authoring window:** Session 138 (Opus).
 **Track:** F.2 (manifestation (iv) thermodynamic causal arrow) + F.3 (manifestation (v) cosmological-vacuum asymmetry) Layer 4 closure framing under the OPEN-SD-CHIR-PRIMITIVE umbrella.
 **Working title (provisional):** *Q1 substrate-Wigner-Eckart datum construction attempt for PCD-cycle-orientation; substrate-dynamics-dependency identified; pivot-to-F.1 recommendation*
-**Foundation:** Chirality Continuum v1.0 SHIPPED Session 137 Patch 0509 + Capotauro v2.0 v1.0 SHIPPED Session 135 Patch 0479 + Session 137 close seed `handovers/2026-05-20_session_137_close_manifestation_iv_next_window_seed.md` + `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (Thomas's verbatim chirality-as-primitive statement).
+**Foundation:** Chirality Continuum v1.0 SHIPPED Session 137 Patch 0509 + Capotauro v2.0 v1.0 SHIPPED Session 135 Patch 0479 + Session 137 close seed `handovers/2026-05-20_session_137_close_manifestation_iv_next_window_seed.md` + `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` (Thomas's verbatim chirality-as-primitive statement).
 **Decision-gate analog:** Patch 0484 v0.1 outline + viability decision gate (`chirality_continuum_outline.md` §10) which produced the PROCEED verdict for the chirality continuum joint paper. This document plays the analog role at the F.2/F.3 fork.
 **Target audience:** Thomas (decision authority); next-window Opus (if Thomas confers); programme-level reviewer cycle (ChatGPT, Grok, CoPilot) for verdict assessment.
 
@@ -162,7 +162,7 @@ The answer determines the viability verdict.
 
 ### §4.1 Thomas's verbatim founders_voice/005 — chirality is primitive
 
-From `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (Session 127 Patch 0422, Thomas's verbatim chirality-as-primitive statement, distilled point 1):
+From `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` (Session 127 Patch 0422, Thomas's verbatim chirality-as-primitive statement, distilled point 1):
 
 > "The framework's primitives are CPs, GPs, the rules of their interaction (**PCD cycle**, DI-bit exchange, Nexus connectivity), and — under this claim — **the substrate's chirality bias**."
 
@@ -237,7 +237,7 @@ The viability test produces an unambiguous verdict: **pivot to F.1 (dynamical-su
 
 2. **Pressing joint F.2+F.3 without F.1 in hand** would compound the structural weakness across two sectors instead of one. The same substrate-mechanism gap appears in both manifestations; joint format does not resolve it, only doubles its scope.
 
-3. **F.1 is registered as the deepest open question and the defining next programme gate** per all three reviewers at chirality continuum v1.0 review cycle (ChatGPT round-1 / Grok round-1 / CoPilot round-1, captured at `flagship_papers/chirality_continuum/reviewer_reviews/`). F.1 closure is on the programme's critical path regardless; the viability test confirms it is also on F.2 and F.3's critical paths.
+3. **F.1 is registered as the deepest open question and the defining next programme gate** per all three reviewers at chirality continuum v1.0 review cycle (ChatGPT round-1 / Grok round-1 / CoPilot round-1, captured at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/`). F.1 closure is on the programme's critical path regardless; the viability test confirms it is also on F.2 and F.3's critical paths.
 
 4. **The chirality continuum v1.0 ship explicitly registered F.1 as the next gate** (chirality_continuum.tex §8.1 dynamical-substrate-law gate as primary subsection, elevated from bullet to dedicated subsection per ChatGPT round-1 review feedback at Patch 0506).
 
@@ -353,7 +353,7 @@ If Thomas confirms the pivot-to-F.1 recommendation, the following programme-leve
 
 **If Thomas accepts the pivot:** next-substantive-work item shifts from F.2/F.3 to F.1 sub-question scoping (analog of Patch 0414 Capotauro_chiral_mechanism_candidate.md sketch opening for Reading C trajectory). F.1 sub-question scoping is single-session tractable; substantive F.1 work is multi-session and may benefit from cross-window handover.
 
-**If Thomas requests pre-pivot reviewer assessment:** this document is submittable to ChatGPT/Grok/CoPilot for verdict review using the chirality continuum reviewer cycle precedent (`flagship_papers/chirality_continuum/reviewer_reviews/`). Reviewer convergence on the pivot verdict would strengthen the case; reviewer disagreement would surface structural considerations this document missed.
+**If Thomas requests pre-pivot reviewer assessment:** this document is submittable to ChatGPT/Grok/CoPilot for verdict review using the chirality continuum reviewer cycle precedent (`series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/`). Reviewer convergence on the pivot verdict would strengthen the case; reviewer disagreement would surface structural considerations this document missed.
 
 **If Thomas requests an alternative path:** options include (a) press F.2 single-sector at conditional-theorem level with substrate-mechanism gap registered explicitly (analog of Capotauro v2.0 conditional-theorem closure paper framing for FI-C-1 through FI-C-10); (b) press joint F.2+F.3 with same explicit-conditional-theorem framing; (c) defer F.2/F.3 entirely and pivot to a different programme priority (e.g., F.4 Picture A, F.5 SM-5 cooperation, F.6 SF-2 v2.0+ $\delta_{CP}$); (d) further substantive work on this decision gate before resolving (e.g., literature review on substrate-mechanism candidates for $\hat{n} \mapsto \vec{\omega}_{PCD}$; sketch-level scoping of F.1 sub-question to refine estimate). All four options are structurally available; this document's recommendation is option-not-listed (pivot to F.1) on the basis that it most cleanly resolves the substrate-mechanism gap.
 
@@ -365,7 +365,7 @@ Conditional on Thomas's decision:
 
 **If pivot-to-F.1 accepted (recommendation):**
 
-- (A) F.1 sub-question scoping sketch opened at new working sketch (analog of `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` Patch 0414); estimated 1–2 sessions for sub-question scoping; new flagship-paper home at `flagship_papers/dynamical_substrate_law/` or similar (naming decision deferred to scoping work).
+- (A) F.1 sub-question scoping sketch opened at new working sketch (analog of `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` Patch 0414); estimated 1–2 sessions for sub-question scoping; new flagship-paper home at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/` or similar (naming decision deferred to scoping work).
 - (B) Programme registry updates per §9.1 at follow-on patch; estimated <1 session.
 - (C) Cross-window handover for next-window Opus if Session 138 closes before F.1 scoping completes; handover document at `handovers/2026-05-21_session_138_close_F2_F3_pivot_to_F1_seed.md` analog of Session 137 close seed.
 - (D) F.1 substantive work continues across multiple sessions toward F.1 sub-question closure (Scenario A / B / C resolution per §7.2); estimated 6–15 sessions for sub-question alone; cross-window handover at each session boundary.
@@ -378,7 +378,7 @@ Conditional on Thomas's decision:
 **If reviewer assessment requested:**
 
 - (A) Submit this document to ChatGPT, Grok, CoPilot via established programme reviewer-cycle protocol; estimated 1 session per reviewer.
-- (B) Reviewer responses captured at `flagship_papers/chirality_continuum/reviewer_reviews/F2_F3_decision_gate_<reviewer>_<date>.md`.
+- (B) Reviewer responses captured at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/F2_F3_decision_gate_<reviewer>_<date>.md`.
 - (C) Cross-review synthesis + action plan at follow-on patch; resolve pivot decision post-reviewer-convergence.
 
 ---
@@ -439,7 +439,7 @@ The two decision gates together establish the viability-decision-gate as **progr
 
 Patches 0523–0528 executed the F.1 sub-question closure trajectory identified at §7.1 of this decision gate. The trajectory produced four Findings (DSL-1 through DSL-4) across four phases, followed by language calibration per ChatGPT review at Patch 0528. This §14 re-engages the decision gate with the calibrated F.1 sub-question status and updates §7.2's verdict structure accordingly.
 
-**Memo is short by design** — substantive content lives at the F.1 sub-question scoping sketch (`flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11–§14, including §14.16–§14.17 Patch 0528 calibration). This §14 references that content and updates the decision-gate-level state.
+**Memo is short by design** — substantive content lives at the F.1 sub-question scoping sketch (`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11–§14, including §14.16–§14.17 Patch 0528 calibration). This §14 references that content and updates the decision-gate-level state.
 
 ### §14.2 F.1 sub-question closure trajectory summary
 
@@ -454,7 +454,7 @@ Four phases were executed across Patches 0524–0527 with calibration at Patch 0
 
 ### §14.3 ChatGPT review + Patch 0528 calibration
 
-Patches 0524–0527 went from sketch to "F.1 SUB-QUESTION FULL CLOSURE UNDER SCENARIO A" in one continuation session with no reviewer pushback between phases. ChatGPT review (delivered prior to Patch 0528) identified overclaimed closure language and one unflagged ansatz. Eight language calibrations applied at Patch 0528 across F.1 scoping sketch §11–§14; full calibration record at `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11.11, §12.13, §13.16, §14.16, §14.17. F.1 sub-question status reframed from "FULL CLOSURE under Scenario A" to "**PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work**."
+Patches 0524–0527 went from sketch to "F.1 SUB-QUESTION FULL CLOSURE UNDER SCENARIO A" in one continuation session with no reviewer pushback between phases. ChatGPT review (delivered prior to Patch 0528) identified overclaimed closure language and one unflagged ansatz. Eight language calibrations applied at Patch 0528 across F.1 scoping sketch §11–§14; full calibration record at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11.11, §12.13, §13.16, §14.16, §14.17. F.1 sub-question status reframed from "FULL CLOSURE under Scenario A" to "**PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work**."
 
 ### §14.4 Updated §7.2 verdict structure
 
@@ -544,10 +544,10 @@ This methodological precedent is registered for future Layer 4 closure trajector
 Short formal memo registering the F.1 sub-question's status upgrade at the decision-gate level following Phase 2 foundations work completion (Patches 0531–0537) + reviewer-pause cycle (Patch 0538 calibration response) + OS-level codification (Patch 0539a). Parallels the §14 Patch 0529 memo pattern but applies the upgraded status framing rather than the calibrated provisional status framing.
 
 The substantive justification for the upgrade lives at:
-- `flagship_papers/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` §15 (status upgrade implementation Patch).
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_phase2_foundations_work.md` §15 (status upgrade implementation Patch).
 - `templates/operating_system.md` §17 (codified reviewer-pause cycle protocol; Patch 0539a).
-- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (checkpoint document; preserved as historical record).
-- `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (three reviewer responses + cross-reviewer synthesis; preserved as historical record).
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (checkpoint document; preserved as historical record).
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_feedback_record_v1.0.md` (three reviewer responses + cross-reviewer synthesis; preserved as historical record).
 
 This §15 memo is the decision-gate-level summary of the upgrade outcome.
 
@@ -599,7 +599,7 @@ The decision-gate re-engagement for F.2 / F.3 substantive content is itself a fu
 | (A) | F.1 sub-question status upgrade at decision-gate level | **EXECUTING / COMPLETE at this §15** |
 | (B) | F.1 sub-question Layer 3 promotion work — explicit matter-state irrep enumeration, framework axiomatization, Schur-orthogonality CG factor, full algebraic derivations for B.1.q4 / B.2.q1 / B.1.q1 | **OPEN — next substantive priority for F.1 trajectory continuation; estimated 5–15 sessions** |
 | (C) | F.1 supplementary sub-question work — B.1.q6 ($\mathcal{O}(\delta^2)$ extensions), B.2.q2 (minimal-derivative-order formalization), B.2.q3 (derivative-order-1 alternatives enumeration), B.2.q4 (§3.4 alternatives re-examination), B.3.q2-q4 (B.3 derivational support) | **OPEN — deferrable behind (B); not load-bearing for present upgrade** |
-| (D) | F.1 flagship paper assembly via `flagship_papers/dynamical_substrate_law/` paper home | **DEFERRED behind (B) + (C); per `paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section** |
+| (D) | F.1 flagship paper assembly via `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/` paper home | **DEFERRED behind (B) + (C); per `paper_completion_checklist.md` Reviewer-Pause Cycle Precondition section** |
 | (E) | F.2 substantive content trajectory — closure of manifestation (iv) via chirality continuum architectural template under refined dynamical-object scope | **DEFERRED at decision-gate level pending (B), (C), (D), + own decision-gate re-engagement** |
 | (F) | F.3 substantive content trajectory — closure of remaining chirality continuum manifestations | **DEFERRED for same reason as (E)** |
 | (G) | Long-term programme target — derive chirality scale $\|\chi\| = \varphi^{-3}$ from pure 600-cell polytope geometry | **REGISTERED + DEFERRED behind (B), (C), (D), (E), (F)** |

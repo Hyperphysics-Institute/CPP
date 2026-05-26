@@ -263,14 +263,14 @@ The scoping work (Patch 0482 sketch + Patch 0483 sketch) is **venue-portable** �
 
 ### What this update establishes
 
-Patch 0484 creates the joint Layer 4 paper home directory `flagship_papers/chirality_continuum/` under the Venue (c) confirmation established at Session 136 close (post-Patch 0483). The v0.1 outline serves as the joint-paper viability decision gate before substantive Layer 4 derivation begins.
+Patch 0484 creates the joint Layer 4 paper home directory `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` under the Venue (c) confirmation established at Session 136 close (post-Patch 0483). The v0.1 outline serves as the joint-paper viability decision gate before substantive Layer 4 derivation begins.
 
 ### Patch 0484 deliverables
 
-- **NEW directory** `flagship_papers/chirality_continuum/` created as joint paper home (sector-neutral name; follows Capotauro precedent of named-flagship-without-SF-N-number papers).
-- **NEW** `flagship_papers/chirality_continuum/README.md` (~150 lines) — flagship-paper home-directory README with paper-type framing (joint Layer 4 continuum-EFT closure paper; second cross-sector closure paper in CPP after SF-4 v4.0), status (v0.1 outline OPENED), foundational inheritance (substrate handle $|M^W| = |M^{qDP}| = \chi/6$ from THEO-SD-CHIR-1 + THEO-SD-CHIR-2 at full Layer 3 rigor), source-material map, OPEN-FP problems closed at v1.0 SHIP, OPEN problems explicitly NOT-in-scope, viability decision gate framing.
-- **NEW** `flagship_papers/chirality_continuum/chirality_continuum_outline.md` (~448 lines) — v0.1 outline document.
-- **NEW** `flagship_papers/chirality_continuum/sketches/README.md` — placeholder for future joint-paper-specific sketches (paired scoping sketches at Patches 0482 + 0483 remain at historical locations under `flagship_papers/electroweak/sketches/`).
+- **NEW directory** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` created as joint paper home (sector-neutral name; follows Capotauro precedent of named-flagship-without-SF-N-number papers).
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/README.md` (~150 lines) — flagship-paper home-directory README with paper-type framing (joint Layer 4 continuum-EFT closure paper; second cross-sector closure paper in CPP after SF-4 v4.0), status (v0.1 outline OPENED), foundational inheritance (substrate handle $|M^W| = |M^{qDP}| = \chi/6$ from THEO-SD-CHIR-1 + THEO-SD-CHIR-2 at full Layer 3 rigor), source-material map, OPEN-FP problems closed at v1.0 SHIP, OPEN problems explicitly NOT-in-scope, viability decision gate framing.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum_outline.md` (~448 lines) — v0.1 outline document.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/README.md` — placeholder for future joint-paper-specific sketches (paired scoping sketches at Patches 0482 + 0483 remain at historical locations under `flagship_papers/electroweak/sketches/`).
 - **UPDATE** `research_frontier.md` Last-updated header prepended with Patch 0484 milestone + OPEN-FP-SF-2-CHIR Status field updated to v0.1 outline ACTIVE.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0484 v0.1 outline entry appended (this section).
 
@@ -339,7 +339,7 @@ If during v0.2+ substantive drafting unanticipated structural obstructions surfa
 
 ### Programme state changes at Patch 0484
 
-- (1) Joint Layer 4 paper home directory `flagship_papers/chirality_continuum/` CREATED under Venue (c) confirmation.
+- (1) Joint Layer 4 paper home directory `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` CREATED under Venue (c) confirmation.
 - (2) v0.1 outline ESTABLISHED with 10-section architecture + 14-FI inventory + 5-criterion viability decision gate.
 - (3) Joint-paper viability decision gate result: ALL 5 CRITERIA PASS → PROCEED TO v0.2 SUBSTANTIVE DRAFTING.
 - (4) Next-substantive-work item registered: Patch 0485 candidate opens §A shared substrate-handle-to-effective-coupling bridge work.
@@ -377,7 +377,7 @@ Patch 0485 opens substantive Layer 4 derivation work at the joint paper's §A sh
 
 ### Patch 0485 deliverables
 
-- **NEW** `flagship_papers/chirality_continuum/sketches/substrate_to_continuum_bridge.md` (~480 lines) — Tier-4 working sketch capturing §A bridge work Session 1.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/substrate_to_continuum_bridge.md` (~480 lines) — Tier-4 working sketch capturing §A bridge work Session 1.
 - **UPDATE** `research_frontier.md` Last-updated header prepended with Patch 0485 milestone + OPEN-FP-SF-2-CHIR Status field updated to v0.2 substantive drafting OPENED.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0485 §A bridge work Session 1 entry appended (this section).
 
@@ -481,7 +481,7 @@ Patch 0486 closes Steps 2 + 3 of the Theorem 3.1 proof architecture at sector-ag
 
 ### Patch 0486 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/substrate_to_continuum_bridge.md` — extended with Sections §10--§14 (~450 lines added; sketch now ~786 lines total). Session 1 content at §0--§9 preserved as historical record; Session 2 content at §10--§14.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/substrate_to_continuum_bridge.md` — extended with Sections §10--§14 (~450 lines added; sketch now ~786 lines total). Session 1 content at §0--§9 preserved as historical record; Session 2 content at §10--§14.
 - **UPDATE** `research_frontier.md` Last-updated header prepended with Patch 0486 Step 2+3 closure milestone; OPEN-FP-SF-2-CHIR Status field updated.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0486 §A bridge work Session 2 entry appended (this section).
 
@@ -590,7 +590,7 @@ Patch 0487 closes Step 4 of the Theorem 3.1 proof architecture: the magnitude in
 
 ### Patch 0487 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/substrate_to_continuum_bridge.md` — extended with Sections §15-§17 (~370 lines added; sketch now ~1156 lines total). Session 1+2 content at §0-§14 preserved as historical record; Session 3 content at §15-§17.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/substrate_to_continuum_bridge.md` — extended with Sections §15-§17 (~370 lines added; sketch now ~1156 lines total). Session 1+2 content at §0-§14 preserved as historical record; Session 3 content at §15-§17.
 - **UPDATE** `theorem-registry.md` — Patch 0487 Last-updated header prepended; THEO-CHIR-CONT-1 entry registered as theorem #65 after THEO-SD-CHIR-2 (line 209+ area).
 - **UPDATE** `research_frontier.md` — Patch 0487 Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field updated with sub-claim (a) closure milestone.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0487 §A bridge work Session 3 entry appended (this section).
@@ -755,11 +755,11 @@ Bridge theorem THEO-CHIR-CONT-1 delivers substrate-handle-magnitude-preserved-at
 
 ### What this update establishes
 
-Patch 0488 opens substantive §B sector-specific drafting at the joint Layer 4 paper post sub-claim (a) closure. New working sketch `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` (~450 lines) inherits THEO-CHIR-CONT-1 + sub-statements and identifies the bridge theorem's sector-agnostic continuum operator $\mathcal{O}^{\text{eff,W}}$ with the V–A current operator $\bar{\psi}_L \gamma^\mu \psi_L$ in Yang-Mills $SU(2)_L \times U(1)_Y$ EFT framework appropriate to SF-2 sector.
+Patch 0488 opens substantive §B sector-specific drafting at the joint Layer 4 paper post sub-claim (a) closure. New working sketch `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md` (~450 lines) inherits THEO-CHIR-CONT-1 + sub-statements and identifies the bridge theorem's sector-agnostic continuum operator $\mathcal{O}^{\text{eff,W}}$ with the V–A current operator $\bar{\psi}_L \gamma^\mu \psi_L$ in Yang-Mills $SU(2)_L \times U(1)_Y$ EFT framework appropriate to SF-2 sector.
 
 ### Patch 0488 deliverables
 
-- **CREATE** `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` — new working sketch (~450 lines) opening §B Sector A V–A coupling derivation.
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md` — new working sketch (~450 lines) opening §B Sector A V–A coupling derivation.
 - **UPDATE** `research_frontier.md` — Patch 0488 Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field updated with §B Session 1 milestone.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0488 §B Sector A Session 1 entry appended (this section).
 
@@ -869,7 +869,7 @@ Patch 0489 closes Step 2 of Theorem B.1: derive Michel parameter $\rho = 3/4$ fr
 
 ### Patch 0489 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` — extended with §11–§13 (~280 lines added). Session 1 content at §0–§10 preserved as historical record; Session 2 content at §11–§13.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md` — extended with §11–§13 (~280 lines added). Session 1 content at §0–§10 preserved as historical record; Session 2 content at §11–§13.
 - **UPDATE** `research_frontier.md` — Patch 0489 Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field updated with §B Session 2 milestone.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0489 §B Session 2 entry appended (this section).
 
@@ -985,7 +985,7 @@ Patch 0490 closes Step 3 of Theorem B.1: derive 100% LH preference at the massle
 
 ### Patch 0490 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` — extended with §14–§16 (~280 lines added; sketch now ~840 lines total). Sessions 1+2 content at §0–§13 preserved as historical record; Session 3 content at §14–§16.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md` — extended with §14–§16 (~280 lines added; sketch now ~840 lines total). Sessions 1+2 content at §0–§13 preserved as historical record; Session 3 content at §14–§16.
 - **UPDATE** `research_frontier.md` — Patch 0490 Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field updated with §B Session 3 milestone.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0490 §B Session 3 entry appended (this section).
 
@@ -1090,7 +1090,7 @@ Patch 0491 closes Step 4 of Theorem B.1 (Capotauro Falsifier 6 activation), prom
 
 ### Patch 0491 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` — extended with §17–§21 (~280 lines added; sketch now ~885 lines total). Sessions 1+2+3 content at §0–§16 preserved as historical record; Session 4 content at §17–§21.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md` — extended with §17–§21 (~280 lines added; sketch now ~885 lines total). Sessions 1+2+3 content at §0–§16 preserved as historical record; Session 4 content at §17–§21.
 - **UPDATE** `theorem-registry.md` — Patch 0491 Last-updated header prepended documenting THEO-CHIR-CONT-2 registration as theorem #66; THEO-CHIR-CONT-2 entry inserted as new row between THEO-CHIR-CONT-1 and THEO-SD-CHIR-2 (entry mirrors THEO-CHIR-CONT-1 structure but for sector-specific Layer 4 closure).
 - **UPDATE** `research_frontier.md` — Patch 0491 Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field updated with §B CLOSURE milestone.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0491 §B Session 4 entry appended (this section).
@@ -1157,7 +1157,7 @@ Four-condition test ✓ on all four:
 - Do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources during §C drafting.
 - Do NOT promote THEO-CHIR-CONT-2 sub-claim closure chain elements (THEO-CHIR-CONT-2.1/-2.2/-2.3/-2.4) to standalone theorem entries.
 - Do NOT introduce new FI-CHIR-CONT-N entries at §B Session 4 (FI inventory capped at FI-CHIR-CONT-1/2/3/9 + FI-CHIR-CONT-10/11/12).
-- Do NOT mix §B sector-specific content with §C sector-specific content (which will open in new sketch at `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` at Patches 0492+).
+- Do NOT mix §B sector-specific content with §C sector-specific content (which will open in new sketch at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` at Patches 0492+).
 
 ---
 
@@ -1166,7 +1166,7 @@ Four-condition test ✓ on all four:
 **Date:** 20 May 2026
 **Session:** 137 continuation (post Patch 0491 §B CLOSURE)
 **Patch:** 0492
-**Status:** §C Sector B working sketch OPENED at `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` (~430 lines). Theorem C.1 statement ESTABLISHED (THEO-CHIR-CONT-3 candidate). Sub-claim (f) sector-specific continuum operator identification CLOSED via three structural identifications.
+**Status:** §C Sector B working sketch OPENED at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` (~430 lines). Theorem C.1 statement ESTABLISHED (THEO-CHIR-CONT-3 candidate). Sub-claim (f) sector-specific continuum operator identification CLOSED via three structural identifications.
 
 ### What this update establishes
 
@@ -1174,7 +1174,7 @@ Patch 0492 opens §C Sector B SM-2 chiral-polarity-bias derivation at the joint 
 
 ### Patch 0492 deliverables
 
-- **NEW** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — §C Sector B working sketch (~430 lines). §0 Session 1 firewall + scope; §1 Theorem C.1 statement (THEO-CHIR-CONT-3 candidate); §2 4-step proof architecture; §3 Step 1 sub-claim (f) sector-specific continuum operator identification CLOSED; §4 + §5 + §6 Steps 2–4 setup architecture for Sessions 2+3+4 of §C; §7 sector-agnostic vs sector-specific content map; §8 FI dependency mapping; §9 anti-priorities; §10 status update at §C Session 1 end.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — §C Sector B working sketch (~430 lines). §0 Session 1 firewall + scope; §1 Theorem C.1 statement (THEO-CHIR-CONT-3 candidate); §2 4-step proof architecture; §3 Step 1 sub-claim (f) sector-specific continuum operator identification CLOSED; §4 + §5 + §6 Steps 2–4 setup architecture for Sessions 2+3+4 of §C; §7 sector-agnostic vs sector-specific content map; §8 FI dependency mapping; §9 anti-priorities; §10 status update at §C Session 1 end.
 - **UPDATE** `research_frontier.md` — Patch 0492 Last-updated header prepended capturing §C Session 1 opening + Step 1 closure + Steps 2–4 architecture + FI inventory expansion + programme state changes + forward queue + anti-priorities.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0492 §C Session 1 entry appended (this section).
 
@@ -1271,7 +1271,7 @@ Patch 0493 closes Step 2 of Theorem C.1 via three-track argument: (i) substrate-
 
 ### Patch 0493 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §11–§13 (~173 lines added; sketch now ~513 lines total).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §11–§13 (~173 lines added; sketch now ~513 lines total).
 - **UPDATE** `research_frontier.md` — Patch 0493 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0493 §C Session 2 entry appended (this section).
 
@@ -1353,7 +1353,7 @@ Patch 0494 closes Step 3 of Theorem C.1 — the substrate-handle stabilization-e
 
 ### Patch 0494 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §14–§16 (~198 lines added; sketch now ~711 lines total).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §14–§16 (~198 lines added; sketch now ~711 lines total).
 - **UPDATE** `research_frontier.md` — Patch 0494 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0494 §C Session 3 entry appended (this section).
 
@@ -1451,7 +1451,7 @@ Patch 0495 completes §C Sector B SM-2 chiral-polarity-bias derivation via Step 
 
 ### Patch 0495 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §17–§21 (~256 lines added; sketch now ~967 lines total).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` — extended with §17–§21 (~256 lines added; sketch now ~967 lines total).
 - **UPDATE** `theorem-registry.md` — THEO-CHIR-CONT-3 entry inserted between THEO-CHIR-CONT-2 (theorem #66) and THEO-SD-CHIR-2 entries; Last-updated header prepended.
 - **UPDATE** `research_frontier.md` — Patch 0495 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0495 §C Session 4 entry appended (this section).
@@ -1579,7 +1579,7 @@ Patch 0496 opens §D cross-sector unification framing post-§C-CLOSURE-PATCH sta
 
 ### Patch 0496 deliverables
 
-- **NEW** `flagship_papers/chirality_continuum/sketches/cross_sector_unification.md` — §D working sketch (~500+ lines). §0 Session 1 firewall + scope; §1 §D paper-section-6 scope and content map; §2 shared substrate handle (paper §6.1); §3 OPEN-SD-CHIR-PRIMITIVE umbrella perspective (paper §6.2); §4 second cross-sector closure pattern in CPP after SF-4 v4.0 (paper §6.3); §5 structural identity claim (paper §6.4); §6 joint paper format structural efficiency validation (paper §6.5 NEW); §7 v0.5 SHIP readiness assessment (paper §6.6 NEW); §8 status update + forward queue.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/cross_sector_unification.md` — §D working sketch (~500+ lines). §0 Session 1 firewall + scope; §1 §D paper-section-6 scope and content map; §2 shared substrate handle (paper §6.1); §3 OPEN-SD-CHIR-PRIMITIVE umbrella perspective (paper §6.2); §4 second cross-sector closure pattern in CPP after SF-4 v4.0 (paper §6.3); §5 structural identity claim (paper §6.4); §6 joint paper format structural efficiency validation (paper §6.5 NEW); §7 v0.5 SHIP readiness assessment (paper §6.6 NEW); §8 status update + forward queue.
 - **UPDATE** `research_frontier.md` — Patch 0496 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0496 §D Session 1 entry appended (this section).
 
@@ -1664,7 +1664,7 @@ Patch 0497 opens v0.5 paper polish phase by creating the joint paper LaTeX sourc
 
 ### Patch 0497 deliverables
 
-- **NEW** `flagship_papers/chirality_continuum/chirality_continuum.tex` — joint paper LaTeX source (~402 lines / ~55KB). LaTeX preamble + title + author + abstract + plain-language summary + §1 Introduction (4 sub-sections substantively drafted) + §2 Inheritance from Capotauro v2.0 (6 sub-sections substantively drafted) + §3–§6 scaffolded with sketch cross-references + §7–§9 scaffolded per v0.1 outline + §10 References bibliography skeleton (~20 references identified).
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — joint paper LaTeX source (~402 lines / ~55KB). LaTeX preamble + title + author + abstract + plain-language summary + §1 Introduction (4 sub-sections substantively drafted) + §2 Inheritance from Capotauro v2.0 (6 sub-sections substantively drafted) + §3–§6 scaffolded with sketch cross-references + §7–§9 scaffolded per v0.1 outline + §10 References bibliography skeleton (~20 references identified).
 - **UPDATE** `research_frontier.md` — Patch 0497 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0497 entry appended (this section).
 
@@ -1768,7 +1768,7 @@ Patch 0498 creates `methods_catalogue.md` as new programme-level infrastructure 
 ### Patch 0498 deliverables
 
 - **NEW** `methods_catalogue.md` — programme-level methods catalogue (~209 lines). Four initial entries METH-CHIR-CONT-1 through METH-CHIR-CONT-4 from §3 bridge work. Each entry has Identifier + Name + Statement + Scope + Dependencies + Provenance + Standard-machinery-context + Cross-paper-usage fields. Naming convention METH-<prefix>-N parallels theorem-registry convention.
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §3 Bridge substantive content integrated (+~230 lines; .tex now ~632 lines total). `\methref{...}` LaTeX command added to preamble for METH-N identifier marker rendering. Bibliography expanded with 7 new references (MethodsCatalogue + ChiContSketch + WignerEckart + WilsonKogut + KadanoffBlock + AdlerBardeen + AtiyahSinger + Witten1983CS).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — §3 Bridge substantive content integrated (+~230 lines; .tex now ~632 lines total). `\methref{...}` LaTeX command added to preamble for METH-N identifier marker rendering. Bibliography expanded with 7 new references (MethodsCatalogue + ChiContSketch + WignerEckart + WilsonKogut + KadanoffBlock + AdlerBardeen + AtiyahSinger + Witten1983CS).
 - **UPDATE** `research_frontier.md` — Patch 0498 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0498 entry appended (this section).
 
@@ -1859,7 +1859,7 @@ Patch 0499 integrates the §4 Sector A V–A coupling derivation substantive con
 
 ### Patch 0499 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §4 Sector A substantive content integrated (+~153 lines; .tex now ~785 lines total). Bibliography expanded with 2 new references (ChiContSketchA + PDG2024).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — §4 Sector A substantive content integrated (+~153 lines; .tex now ~785 lines total). Bibliography expanded with 2 new references (ChiContSketchA + PDG2024).
 - **UPDATE** `research_frontier.md` — Patch 0499 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0499 entry appended (this section).
 
@@ -1964,7 +1964,7 @@ Patch 0500 integrates the §5 Sector B SM-2 chiral-polarity-bias derivation subs
 
 ### Patch 0500 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §5 Sector B substantive content integrated (+~131 lines; .tex now ~916 lines total). Bibliography expanded with 1 new reference (ChiContSketchB).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — §5 Sector B substantive content integrated (+~131 lines; .tex now ~916 lines total). Bibliography expanded with 1 new reference (ChiContSketchB).
 - **UPDATE** `research_frontier.md` — Patch 0500 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0500 entry appended (this section).
 
@@ -2086,7 +2086,7 @@ The §6 paper integration exercises editorial discretion: the §6.6 v0.5 SHIP re
 
 ### Patch 0501 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §6 cross-sector unification substantive content integrated (+~97 lines; .tex now ~1013 lines total). Bibliography expanded with 2 new references (ChiContSketchD + SF4v4).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — §6 cross-sector unification substantive content integrated (+~97 lines; .tex now ~1013 lines total). Bibliography expanded with 2 new references (ChiContSketchD + SF4v4).
 - **UPDATE** `research_frontier.md` — Patch 0501 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0501 entry appended (this section).
 
@@ -2195,7 +2195,7 @@ Patch 0502 drafts substantive content for §7 Predictions and Falsifiers + §8 O
 
 ### Patch 0502 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — §7+§8+§9 substantive content drafted (+~116 lines; .tex now ~1129 lines total). NO new bibliography entries (all references inherited from prior patches).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — §7+§8+§9 substantive content drafted (+~116 lines; .tex now ~1129 lines total). NO new bibliography entries (all references inherited from prior patches).
 - **UPDATE** `methods_catalogue.md` — Cross-paper-usage fields batch-updated across all four METH-CHIR-CONT-1/2/3/4 entries with comprehensive §3+§4+§5+§6 inheritance tracking + anticipated future use for manifestations (iv)+(v) Layer 4 closures.
 - **UPDATE** `research_frontier.md` — Patch 0502 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0502 entry appended (this section).
@@ -2322,7 +2322,7 @@ Patch 0503 promotes the joint paper from v0.5 (DRAFT) state to v0.5 (SHIPPED) st
 
 ### Patch 0503 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — 3-line bibliography comment marker deleted + 5 orphan bibitem inline citations added + 6 `\Oeff^{\text{sector}}` double-superscript instances fixed + `\newtheorem{claim}` declaration added to preamble + title-block version bumped to v0.5 (SHIPPED); final at 1125 lines.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — 3-line bibliography comment marker deleted + 5 orphan bibitem inline citations added + 6 `\Oeff^{\text{sector}}` double-superscript instances fixed + `\newtheorem{claim}` declaration added to preamble + title-block version bumped to v0.5 (SHIPPED); final at 1125 lines.
 - **UPDATE** `.gitignore` — LaTeX build artifact patterns added (`*.aux *.log *.toc *.out *.synctex.gz *.fls *.fdb_latexmk *.bbl *.blg *.nav *.snm *.vrb`).
 - **UPDATE** `research_frontier.md` — Patch 0503 Last-updated header prepended with v0.5 SHIPPED verdict.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0503 entry appended (this section).
@@ -2431,7 +2431,7 @@ Joint paper substantively complete across all paper sections + bibliography fina
 **Date:** 20 May 2026
 **Session:** 137 continuation (post Patch 0503 v0.5 SHIPPED)
 **Patch:** 0504
-**Status:** v0.6 reviewer cycle Session 1. ChatGPT round-1 review of chirality continuum v0.5 SHIPPED captured verbatim at `flagship_papers/chirality_continuum/reviewer_reviews/chatgpt_round1.md`; categorization + integration sequence + anti-priorities drafted at companion `v06_action_plan.md`. No .tex modifications at this patch. Title-block status unchanged at v0.5 (SHIPPED).
+**Status:** v0.6 reviewer cycle Session 1. ChatGPT round-1 review of chirality continuum v0.5 SHIPPED captured verbatim at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/chatgpt_round1.md`; categorization + integration sequence + anti-priorities drafted at companion `v06_action_plan.md`. No .tex modifications at this patch. Title-block status unchanged at v0.5 (SHIPPED).
 
 ### What this update establishes
 
@@ -2441,9 +2441,9 @@ The review is substantively positive. ChatGPT identifies the programme's traject
 
 ### Patch 0504 deliverables
 
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/` directory (new programme infrastructure for joint paper reviewer cycle).
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/chatgpt_round1.md` — ChatGPT round-1 review captured verbatim with reviewer metadata.
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/v06_action_plan.md` — categorization + integration sequence + anti-priorities.
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/` directory (new programme infrastructure for joint paper reviewer cycle).
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/chatgpt_round1.md` — ChatGPT round-1 review captured verbatim with reviewer metadata.
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/v06_action_plan.md` — categorization + integration sequence + anti-priorities.
 - **UPDATE** `research_frontier.md` — Patch 0504 Last-updated header with v0.6 reviewer cycle Session 1 status.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0504 entry appended (this section).
 
@@ -2500,7 +2500,7 @@ ChatGPT's final framing: "the framework is now organized enough that the absence
 
 ### Programme state changes at Patch 0504
 
-- (1) `flagship_papers/chirality_continuum/reviewer_reviews/` directory created (new programme infrastructure)
+- (1) `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/` directory created (new programme infrastructure)
 - (2) `chatgpt_round1.md` captures ChatGPT round-1 review verbatim
 - (3) `v06_action_plan.md` categorizes feedback + integration sequence + anti-priorities
 - (4) Title-block status unchanged at v0.5 (SHIPPED) — Patch 0504 captures and plans rather than integrates
@@ -2513,7 +2513,7 @@ ChatGPT's final framing: "the framework is now organized enough that the absence
 
 ### Methodological observations at Patch 0504
 
-**(i) Reviewer-reviews directory as new programme infrastructure**: `flagship_papers/chirality_continuum/reviewer_reviews/` creates explicit programme infrastructure for joint paper reviewer cycle that didn't exist for Capotauro v2.0 (which tracked reviewer engagement in PH entries directly). The directory-level capture provides cleaner separation between substantive paper content (.tex source) and reviewer engagement metadata (reviewer review files + action plans); pattern available for future flagship paper reviewer cycles.
+**(i) Reviewer-reviews directory as new programme infrastructure**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/` creates explicit programme infrastructure for joint paper reviewer cycle that didn't exist for Capotauro v2.0 (which tracked reviewer engagement in PH entries directly). The directory-level capture provides cleaner separation between substantive paper content (.tex source) and reviewer engagement metadata (reviewer review files + action plans); pattern available for future flagship paper reviewer cycles.
 
 **(ii) Categorization discipline**: strengths-acknowledged vs actionable vs deferred-future-window vs cosmetic-framing is the right granularity for v0.6 integration planning — coarse enough to scope patches but fine enough to track which feedback items are deferred vs addressed.
 
@@ -2544,7 +2544,7 @@ Patch 0505 executes Priority 1 of the v0.6 round-1 action plan (`v06_action_plan
 
 ### Patch 0505 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — Figure 1 master mechanism diagram added at §1.4 closure-status-and-roadmap (+~101 lines for TikZ figure + caption + framing paragraph; .tex now ~1226 lines total); title-block version bumped to v0.6 (DRAFT).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — Figure 1 master mechanism diagram added at §1.4 closure-status-and-roadmap (+~101 lines for TikZ figure + caption + framing paragraph; .tex now ~1226 lines total); title-block version bumped to v0.6 (DRAFT).
 - **UPDATE** `research_frontier.md` — Patch 0505 Last-updated header prepended.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0505 entry appended (this section).
 
@@ -2640,7 +2640,7 @@ Patch 0506 completes the v0.6 round-1 integration cycle by executing the remaini
 
 ### Patch 0506 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — chirality-as-emergent framing paragraph added at §1.2 + dynamical-substrate-law gate elevated to §8.1 primary subsection + §8 sub-section renumbered §8.2-§8.6 + bullet in old §8.1 (now §8.2) trimmed + §9.4 Failure modes added + title-block bumped to v0.6 (SHIPPED); .tex now ~1261 lines total (was ~1226 at Patch 0505).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — chirality-as-emergent framing paragraph added at §1.2 + dynamical-substrate-law gate elevated to §8.1 primary subsection + §8 sub-section renumbered §8.2-§8.6 + bullet in old §8.1 (now §8.2) trimmed + §9.4 Failure modes added + title-block bumped to v0.6 (SHIPPED); .tex now ~1261 lines total (was ~1226 at Patch 0505).
 - **UPDATE** `research_frontier.md` — Patch 0506 Last-updated header with v0.6 SHIPPED verdict.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0506 entry appended (this section).
 
@@ -2764,10 +2764,10 @@ Patch 0507 captures three simultaneous reviewer responses to v0.6 SHIPPED and pr
 
 ### Patch 0507 deliverables
 
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/chatgpt_round2.md` — ChatGPT round-2 review captured verbatim with reviewer metadata
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/grok_round1.md` — Grok round-1 review captured verbatim
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/copilot_round1.md` — CoPilot round-1 review captured verbatim
-- **CREATE** `flagship_papers/chirality_continuum/reviewer_reviews/v07_action_plan.md` — cross-review synthesis + integration sequence + anti-priorities + v1.0 SHIP archival checklist
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/chatgpt_round2.md` — ChatGPT round-2 review captured verbatim with reviewer metadata
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/grok_round1.md` — Grok round-1 review captured verbatim
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/copilot_round1.md` — CoPilot round-1 review captured verbatim
+- **CREATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/v07_action_plan.md` — cross-review synthesis + integration sequence + anti-priorities + v1.0 SHIP archival checklist
 - **UPDATE** `research_frontier.md` — Patch 0507 Last-updated header with cross-review convergence verdict
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0507 entry appended (this section)
 
@@ -2880,7 +2880,7 @@ Three of five ChatGPT R2 concerns require no action beyond what §8 already comm
 
 ### Patch 0508 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — seven minor polish items integrated; title-block bumped; .tex now ~1265 lines.
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — seven minor polish items integrated; title-block bumped; .tex now ~1265 lines.
 - **UPDATE** `research_frontier.md` — Patch 0508 Last-updated header with v0.9 SHIPPED verdict.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — Patch 0508 entry appended (this section).
 
@@ -2956,7 +2956,7 @@ Patch 0509 is the final patch in the chirality continuum joint paper closure seq
 
 ### Patch 0509 deliverables
 
-- **UPDATE** `flagship_papers/chirality_continuum/chirality_continuum.tex` — title-block bumped v0.9 (SHIPPED) → v1.0 (SHIPPED); single-line change; no theorem/proof content modifications (paper-level publication status advancement only per Capotauro v2.0 v1.0 SHIP precedent at Patch 0480).
+- **UPDATE** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — title-block bumped v0.9 (SHIPPED) → v1.0 (SHIPPED); single-line change; no theorem/proof content modifications (paper-level publication status advancement only per Capotauro v2.0 v1.0 SHIP precedent at Patch 0480).
 - **UPDATE** `theorem-registry.md` — Patch 0509 v1.0 SHIP programme-level header prepended confirming THEO-CHIR-CONT-1 + -2 + -3 paper-level publication venue at chirality_continuum.tex v1.0 SHIPPED.
 - **UPDATE** `methods_catalogue.md` — Last-updated header added at Patch 0509 confirming METH-CHIR-CONT-1 through -4 paper-of-origin venue at chirality_continuum.tex v1.0 SHIPPED §3.
 - **UPDATE** `research_frontier.md` — Patch 0509 Last-updated header with v1.0 SHIPPED verdict + post-SHIP forward queue.

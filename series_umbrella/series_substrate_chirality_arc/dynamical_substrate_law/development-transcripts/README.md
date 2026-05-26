@@ -72,9 +72,9 @@ Per OS §15: *"Deferring Tier-3/Tier-4 capture to a future session is acceptable
   - Session logs in `handovers/` directory (specifically `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` covers Session 142 v1.0 SHIP; analogous handovers for earlier sessions if they exist)
   - The four-tier lab-notebook record at `documentation_suite/`: transcript-dynamical-substrate-law.md Transactions 001–063 (pre-Session-143 transactions cover Sessions 138–142) + development-dynamical-substrate-law.md Vignettes 01–54 + reasoning-dynamical-substrate-law.md §§01–65
   - Commit messages on `main` branch from Patches 0522 through 0570 (Git log provides commit-by-commit narrative)
-  - Reviewer letter archive at `flagship_papers/dynamical_substrate_law/reviews/` (9 reviewer letters + Round 1 synthesis preserve the most substantive multi-AI exchanges)
-  - The reviewer-pause cycle artifacts at `flagship_papers/dynamical_substrate_law/reviewer_pause/`
-  - Sketches at `flagship_papers/dynamical_substrate_law/sketches/`
+  - Reviewer letter archive at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviews/` (9 reviewer letters + Round 1 synthesis preserve the most substantive multi-AI exchanges)
+  - The reviewer-pause cycle artifacts at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/`
+  - Sketches at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/`
 - **(c) Acknowledgment of lossy reconstruction:** Reconstruction from the source materials above is **substantively lossier than capture-while-fresh**, particularly for:
   - Thomas's verbatim physical-insight phrasings (the Tier 4 reasoning file preserves Opus reasoning, not Thomas verbatim)
   - Decision-moment dialogue (the Tier 3 vignettes summarize but do not preserve the back-and-forth)

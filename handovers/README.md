@@ -64,8 +64,8 @@ Existing cross-references in historical documents (session logs, transcripts, de
 | `SESSION_36_HANDOVER_FOR_NEXT_CONTEXT.md` | `handovers/2026-05-07_session_036_programme.md` |
 | `SESSION_54_HANDOVER_FOR_NEXT_CONTEXT.md` | `handovers/2026-05-09_session_054_sf4_v1.0_ship.md` |
 | `SESSION_81_HANDOVER_FOR_NEXT_CONTEXT.md` | `handovers/2026-05-11_session_081_sf2_campaign_launch.md` |
-| `flagship_papers/capotauro/documentation_suite/handover-capotauro.md` | `handovers/2026-05-16_session_122_capotauro_v1.0_ship.md` |
-| `flagship_papers/capotauro/sketches/Reading_C_closure_trajectory_handover.md` | `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md` |
+| `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/handover-capotauro.md` | `handovers/2026-05-16_session_122_capotauro_v1.0_ship.md` |
+| `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Reading_C_closure_trajectory_handover.md` | `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md` |
 | `flagship_papers/electroweak/documentation_suite/handover-SF-2.md` | `handovers/2026-05-14_session_083_sf2_v1.0_ship.md` |
 | `flagship_papers/neutrinos/documentation_suite/handover-SF-4.md` | `handovers/2026-05-11_session_081_sf4_v4.4_archival.md` |
 | `series_strong/papers/SS-7/documentation_suite/handover-SS-7.md` | `handovers/2026-04-21_ss-7_v1.2.md` |

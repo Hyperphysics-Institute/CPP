@@ -837,7 +837,7 @@ The template MUST include §15.11's per-registry Step E breakout (11 sub-bullets
 
 ## OPEN-ORG-020: Phase 7B context-overflow at flagship paper v1.0 SHIP post-SHIP work — lightweight-bootup-mode codification
 
-**Status:** RESOLVED — 25 May 2026 Session 143 Patch 0573 (lightweight-bootup-mode codification in `bootup.md` §3.5 + F.1 Phase 7B content pack creation at `flagship_papers/dynamical_substrate_law/phase_7B_content_pack.md`). Same-session register-and-resolve pattern, third in CPP corpus history (mirroring OPEN-ORG-013 + OPEN-ORG-014 Session 13 close + OPEN-ORG-008 Session 0 inception).
+**Status:** RESOLVED — 25 May 2026 Session 143 Patch 0573 (lightweight-bootup-mode codification in `bootup.md` §3.5 + F.1 Phase 7B content pack creation at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/phase_7B_content_pack.md`). Same-session register-and-resolve pattern, third in CPP corpus history (mirroring OPEN-ORG-013 + OPEN-ORG-014 Session 13 close + OPEN-ORG-008 Session 0 inception).
 **Identified:** 25 May 2026 Session 143 mid-flight, after Thomas reported ~6 context restarts + 3 new context windows during initial Phase 7B attempts at Patches 0573 candidacy.
 **Priority:** HIGH (recurring failure mode at every flagship paper v1.0 SHIP transition; affected real session execution; resolution unblocks Phase 7B Patches 0574-0584 from overflow risk; protects future flagship paper v1.0 SHIP transitions).
 
@@ -863,7 +863,7 @@ The two deliverables together cap Phase-7B-mode bootup at ~1,000–2,500 lines a
 - 25 May 2026 Session 143 Patch 0573 — RESOLVED via two coupled deliverables: F.1 Phase 7B content pack creation + `bootup.md` §3.5 lightweight-bootup-mode codification. Third same-session register-and-resolve pattern in CPP corpus history.
 - 25 May 2026 Session 143 Patch 0574 — Retroactively registered as OPEN-ORG-020 during F.1 Phase 7B organizational_frontier.md audit; closes the formal-registration loop.
 
-**Closing commit reference:** Patch 0573 (Session 143). Single sandbox commit modifies `bootup.md` (§3.5 insertion, +56 lines) and creates `flagship_papers/dynamical_substrate_law/phase_7B_content_pack.md` (461 lines). The corresponding `templates/operating_system.md` updates (if any are needed to cross-reference §3.5 from §15.11 or §16) are deferred to a future Patch if and when the cross-reference is determined to be load-bearing; the §3.5 subsection is self-sufficient at present.
+**Closing commit reference:** Patch 0573 (Session 143). Single sandbox commit modifies `bootup.md` (§3.5 insertion, +56 lines) and creates `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/phase_7B_content_pack.md` (461 lines). The corresponding `templates/operating_system.md` updates (if any are needed to cross-reference §3.5 from §15.11 or §16) are deferred to a future Patch if and when the cross-reference is determined to be load-bearing; the §3.5 subsection is self-sufficient at present.
 
 **Cycle time:** Surfaced mid-Session 143 after Thomas reported the context restarts; resolved at Patch 0573 within the same conversation context window; retroactive registration at Patch 0574 in the immediately following Patch. Same-session register-and-resolve pattern.
 

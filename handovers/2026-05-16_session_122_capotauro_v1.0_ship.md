@@ -25,11 +25,11 @@ The Capotauro paper closed sub-claim (c) of OPEN-SM-4 at conditional theorem lev
 
 ## Where to find detail
 
-- **Latest paper source:** `flagship_papers/capotauro/capotauro.tex` (v1.0 SHIPPED, 1149 lines; 46-page PDF when compiled on ClearPC per Binary Artifact Workflow).
-- **Latest changelog (canonical version archaeology):** `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md`.
-- **Paper README:** `flagship_papers/capotauro/README.md` (created at v1.0 SHIP with full status summary).
+- **Latest paper source:** `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` (v1.0 SHIPPED, 1149 lines; 46-page PDF when compiled on ClearPC per Binary Artifact Workflow).
+- **Latest changelog (canonical version archaeology):** `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md`.
+- **Paper README:** `series_umbrella/series_substrate_chirality_arc/capotauro/README.md` (created at v1.0 SHIP with full status summary).
 - **Active sketches:** `sketches/Capotauro_chi_phi_closure.md` (parent sketch, FI-C-9 closure trajectory Sessions 87–102, 681 lines); `sketches/Capotauro_subclaim_c_wigner_eckart.md` (sub-claim c detailed closure with Theorem 18.1 + §22 v1.0 closure narrative, 2146 lines); `sketches/Capotauro_chiral_mechanism_candidate.md` (Reading C geometric-chirality candidate for sub-claim b, Session 121 Patch 0414, 296 lines).
-- **Reviews:** `flagship_papers/capotauro/reviews/` (5 files: ChatGPT v0.6/v0.7/v0.8, CoPilot v0.8, Grok v0.8; cross-reviewer convergence on SHIP-readiness achieved at v0.8 Session 119 Patch 0412).
+- **Reviews:** `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/` (5 files: ChatGPT v0.6/v0.7/v0.8, CoPilot v0.8, Grok v0.8; cross-reviewer convergence on SHIP-readiness achieved at v0.8 Session 119 Patch 0412).
 - **Live registry entries:** `research_frontier.md` §OPEN-SM-4 (status PARTIAL CLOSURE post-Session 122 — sub-claim c closed via THEO-CAP-1; sub-claims a + b open); `research_frontier.md` §OPEN-FI-C-9-FP-MECHANISM (NEW at Patch 0415; Reading C mechanism candidate trajectory; Layer 3 closure estimated 10–20 sessions); `theorem-registry.md` THEO-CAP-1 (theorem #62, SF-Line section, registered Session 103 Patch 0397 ahead of paper publication, paper-level confirmation Session 122 Patch 0415); `paper_catalog.md` SF-Line Flagship Papers section Capotauro row.
 
 ## Step-by-step audit of this session's handover
@@ -48,9 +48,9 @@ The Capotauro paper closed sub-claim (c) of OPEN-SM-4 at conditional theorem lev
   - `problem_histories/PH-*.md` — **DRIFT SURFACED**: no `PH-OPEN-SM-4.md` file exists; OPEN-SM-4 has been the canonical Capotauro tracking entry across the closure trajectory and warrants a problem-history narrative. Fix scheduled at Patch 0417 (Priority 1).
   - `master_glossary.md` — **DRIFT SURFACED**: no Capotauro terms section (FI-C-9, FI-C-10, primitive 4D direction $\hat n$, chirality-eigenvalue matching principle, cage-shell averaging factor 1/6, K3-doublet TBM-aligned basis, etc.); last update was Patch 0370 for SF-2 v1.0 SHIP on 14 May 2026. Fix scheduled at Patch 0417 (Priority 1).
   - `paper_catalog.md` — ✓ updated at Patch 0415 (new SF-Line Capotauro row + Documentation paragraph + Last-updated header). N/A this patch.
-- **Step F (reviewer artifacts):** N/A this patch — all five v0.6/v0.7/v0.8 reviews already archived verbatim at Patches 0405 / 0410 / 0412 in `flagship_papers/capotauro/reviews/`. Cross-reviewer convergence on SHIP-readiness at v0.8 Session 119 Patch 0412.
+- **Step F (reviewer artifacts):** N/A this patch — all five v0.6/v0.7/v0.8 reviews already archived verbatim at Patches 0405 / 0410 / 0412 in `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/`. Cross-reviewer convergence on SHIP-readiness at v0.8 Session 119 Patch 0412.
 - **Step G (protocol / operating-system updates):** N/A this patch — the discipline-tightening conversation (OPEN-WORKFLOW-DOCS-CATCHUP registration; Section A as v1.0 SHIP closure gate; `paper_completion_checklist.md` + `operating_system.md` gate-language tightening) is explicitly deferred to post-Section A completion per Dr. Abshier's Session 123 direction. Will be registered in `todolist.md` after Section A is complete, with operating-system updates landing as a separate codification patch downstream.
-- **Step H (this document):** ✓ — file at `flagship_papers/capotauro/documentation_suite/handover-capotauro.md`.
+- **Step H (this document):** ✓ — file at `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/handover-capotauro.md`.
 
 ## Recent session count
 
@@ -58,6 +58,6 @@ The Capotauro paper closed sub-claim (c) of OPEN-SM-4 at conditional theorem lev
 
 ## Quick-start for next session
 
-1. Paste this handover into the opening message of the new context window, or attach as the opening human message. The file lives at `flagship_papers/capotauro/documentation_suite/handover-capotauro.md`.
+1. Paste this handover into the opening message of the new context window, or attach as the opening human message. The file lives at `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/handover-capotauro.md`.
 2. Bootup as usual: `git clone https://github.com/Hyperphysics-Institute/CPP.git && cd CPP` then read `bootup.md` per Step 1 instructions.
 3. **Default action:** execute Priority 1 — Patch 0417 registry drift fix (predictions.md PRED-O Δp_LR entry; master_glossary.md Capotauro terms section; problem_histories/PH-OPEN-SM-4.md creation). After Patch 0417 lands, proceed to Priority 2 Section E doc-suite production beginning with `development-capotauro.md` vignettes Sessions 87–122 at Patch 0418. The patch-by-patch trajectory in `changelog-capotauro.md` is the source material for vignette synthesis.

@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT); same paper-version commit as the original round-2 letter (Patch 0472, `640a4d2`), with the addition of Figure 1 master architecture `.png` rendering supplied as attached image
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v0.9 (DRAFT); same paper-version commit as the original round-2 letter (Patch 0472, `640a4d2`), with the addition of Figure 1 master architecture `.png` rendering supplied as attached image
 - **Review round**: 5 cumulative on the Capotauro paper line / **2 of v2.0 cycle (revised addendum)** (the original synthesis-level round-2 letter is preserved at `chatgpt_v0.9_session_135.md` Patch 0473; this addendum supersedes the round-2 verdict-state classification while preserving the original synthesis letter as the audit-trail record)
 - **Review session**: Session 135
 - **Review archived by**: Patch 0474 (this file)

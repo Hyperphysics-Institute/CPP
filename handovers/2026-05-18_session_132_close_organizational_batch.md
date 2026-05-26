@@ -11,7 +11,7 @@
 
 Session 132 began as a request for "a handover so we can continue physics" and drifted into methodology work. The drift was real and produced these organizational outputs (which were needed) but consumed the session's bandwidth. **Session 133 is for Q6 physics, not organizational continuation.**
 
-The Q6 trajectory is the second observable manifestation under OPEN-SD-CHIR-PRIMITIVE umbrella (cross-sector unification SM-2 qDP/eDP, paralleling the K3-doublet ↔ W-bracelet pair just closed in Q5). The four-step closure pattern is templated by Q5 and well-documented. **Session 133's job: open `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §14, read the Substrate-Locality Unification theorem, then identify how qDP/eDP feeds from the same χ ≡ ε substrate identification.**
+The Q6 trajectory is the second observable manifestation under OPEN-SD-CHIR-PRIMITIVE umbrella (cross-sector unification SM-2 qDP/eDP, paralleling the K3-doublet ↔ W-bracelet pair just closed in Q5). The four-step closure pattern is templated by Q5 and well-documented. **Session 133's job: open `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §14, read the Substrate-Locality Unification theorem, then identify how qDP/eDP feeds from the same χ ≡ ε substrate identification.**
 
 Anti-priorities for Session 133:
 - Do NOT continue organizational work (taxonomy, templates, OS edits)
@@ -74,7 +74,7 @@ The Session 133 Opus reads §3 of this handover for Session 132 context, then na
 
 ### Methodology source (Q5 closure template Session 133 replicates)
 
-- `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`
   - §14 (~93 lines) — **Substrate-Locality Unification theorem; Finding C-W40. Q6 Step 1 starting point.**
   - §15 (~109 lines) — Schur-orthogonality cage-shell factor on D_6; Finding C-W41. Template for Q6 Step 2.
   - §17 (~170 lines) — σ·ζ-EVEN pairing convention; Finding C-W43. Template for Q6 Step 3.
@@ -116,7 +116,7 @@ The Session 133 Opus reads §3 of this handover for Session 132 context, then na
 ## 6. Quick-start for Session 133
 
 1. `cd ~/Documents/GitHub/CPP && git pull origin main` — confirm HEAD at Patch 0434F or later
-2. Read `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §14 (Substrate-Locality Unification theorem) — this is your methodology template
+2. Read `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §14 (Substrate-Locality Unification theorem) — this is your methodology template
 3. Locate SM-2 paper at `series_standard_model/papers/SM-2/`; read its §3-§5 for qDP/eDP characterization
 4. Identify whether qDP/eDP is a first-shell-vertex subset; identify its stabilizer subgroup
 5. Draft Step 1 substrate-level Layer 2 claim with finding registration (C-W44 or next available)

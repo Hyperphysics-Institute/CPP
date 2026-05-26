@@ -44,7 +44,7 @@
 ## What this folder contains (at v0.1 outline opening)
 
 ```
-flagship_papers/chirality_continuum/
+series_umbrella/series_substrate_chirality_arc/chirality_continuum/
 ├── README.md                                   (THIS FILE)
 ├── chirality_continuum_outline.md              (v0.1 outline document; ~480 lines; this patch)
 └── sketches/                                   (placeholder for future pre-paper sketches)

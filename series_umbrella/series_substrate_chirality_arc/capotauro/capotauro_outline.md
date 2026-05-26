@@ -1,6 +1,6 @@
 # Capotauro Mechanism — Paper Outline (v0.1 draft target)
 
-**Location:** `flagship_papers/capotauro/capotauro_outline.md`
+**Location:** `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro_outline.md`
 **Status:** OUTLINE v0.1 — Session 104 (Patch 0398, 16 May 2026)
 **Purpose:** Section-by-section structure for the Capotauro flagship paper packaging the Sessions 87-102 sub-claim (c) v1.0 closure trajectory into publication-grade form.
 **Companion sketches:** `sketches/Capotauro_chi_phi_closure.md` (parent, 681 lines) and `sketches/Capotauro_subclaim_c_wigner_eckart.md` (sub-claim (c) working sketch, 2146 lines).

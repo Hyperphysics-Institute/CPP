@@ -2,9 +2,9 @@
 
 > **v1.0 SHIPPED STATUS NOTE (Patch 0572c, 24 May 2026, Session 143)**: This file is written at F.1 v1.0 SHIPPED state (Patch 0570, Session 142, 24 May 2026). The substrate-locality theorem (Theorem 7.1) is at sketch-document Layer 3 with three publication-grade Layer 3 inputs (Theorem 5.1 + Theorem 5.2 + Theorem 6.1 + Corollary 6.2); identity G1 is at sketch-document Layer 3 with G1 publication-grade hardening registered as OPEN-FP-F1-3 (RECOMMENDED first post-Phase-7 substantive physics Patch per ChatGPT R1–R6 convergent priority). Mechanism A is taken as framework axiom (MA.1 + MA.2) with Layer 4 axiomatic derivation registered as OPEN-FP-F1-2. The 5-Open-Problem body §9 commitment is preserved end-to-end; OPEN-FP-F1-6 prose-density tightening registered separately at Patch 0569e from R6 follow-up.
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
-**Hardened theorem artifacts:** `flagship_papers/dynamical_substrate_law/hardened_theorems/` (Patches 0550 + 0551 + 0552 trio; 741 lines LaTeX combined)
-**Verification scripts:** `flagship_papers/dynamical_substrate_law/code/` (5 Python scripts; standard library + NumPy only)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Hardened theorem artifacts:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/` (Patches 0550 + 0551 + 0552 trio; 741 lines LaTeX combined)
+**Verification scripts:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/` (5 Python scripts; standard library + NumPy only)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572c)
 
 ---

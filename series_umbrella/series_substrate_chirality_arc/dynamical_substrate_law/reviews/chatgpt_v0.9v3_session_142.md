@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 v3 (post-Patch 0569a; 33-page PDF)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 v3 (post-Patch 0569a; 33-page PDF)
 - **Paper version commit**: `f8650d6` (Patch 0569a, Session 142) — Patch 0569a Round 2 reviewer-driven adjustments (4 atomic edits: author email + Scenario A softening at §1.2 headline + Lemma 6.3.1 unperturbed-step clarification + §7.4 structural-not-editorial framing).
 - **Review session**: Session 142
 - **Review archived by**: Patch 0569b (this file)

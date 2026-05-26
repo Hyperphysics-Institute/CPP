@@ -3,7 +3,7 @@
 **Joint Layer 4 paper §B (Sector A = SF-2 electroweak V–A coupling)**
 **Opened**: 20 May 2026 (Session 137 continuation, Patch 0488 — §B Session 1)
 **Status at open**: §A bridge work CLOSED at theorem-level rigor via THEO-CHIR-CONT-1 (Patch 0487); §A content ready for §B substantive drafting per joint paper outline v0.1 §5
-**Sketch home**: `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md`
+**Sketch home**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md`
 
 This sketch opens substantive Tier-4 reasoning work for the joint paper's §B Sector A (SF-2 electroweak V–A coupling derivation). §B inherits THEO-CHIR-CONT-1's sector-agnostic continuum operator structure and applies sector-specific Yang-Mills $SU(2)_L \times U(1)_Y$ EFT identification to derive the V–A current operator + downstream kinematic predictions (Michel parameter $\rho = 3/4$ at finite mass; 100% LH at massless helicity limit; Capotauro Falsifier 6 activation).
 
@@ -26,7 +26,7 @@ This section opens Session 1 of §B Sector A work (Patch 0488). The bridge step 
 **Anti-priorities at Session 1 of §B** (in addition to programme-level anti-priorities preserved from §A bridge work):
 
 - Do NOT close Steps 2–4 of §B at Session 1 (Michel parameter derivation, 100% LH derivation, Capotauro Falsifier 6 activation — all deferred to Sessions 2–4).
-- Do NOT modify SF-2 v1.0 .tex source during §B drafting — SF-2 v1.0 SHIPPED at Session 83 Patch 0370 with .tex source frozen; §B content lives at `flagship_papers/chirality_continuum/` not at SF-2 paper home.
+- Do NOT modify SF-2 v1.0 .tex source during §B drafting — SF-2 v1.0 SHIPPED at Session 83 Patch 0370 with .tex source frozen; §B content lives at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` not at SF-2 paper home.
 - Do NOT modify Patch 0482 SF-2 scoping sketch at `flagship_papers/electroweak/sketches/SF-2_chir_layer4_closure.md` — preserved at historical location; §B working sketch is THIS file at the joint paper home.
 - Do NOT mix sector-specific §B content (this sketch) with sector-agnostic §A content (`substrate_to_continuum_bridge.md`). §A is CLOSED; §B builds on top via inheritance.
 - Do NOT introduce new FI-CHIR-CONT-N entries at §B Session 1 (FI inventory finalized at Patch 0484 v0.1 outline; §B operates under existing FI stack + sector-specific inheritances from SF-2 v1.0 and EW-5 thm:YM\_EFT proof outline).
@@ -300,7 +300,7 @@ In addition to Session-1-specific anti-priorities in §0 above:
 
 - **Do NOT introduce new FI-CHIR-CONT-N entries beyond FI-CHIR-CONT-10/11/12 at §B**: the FI inventory is at v0.1 outline +3 sector-specific (§B; this patch) +3 sector-specific (§C; future Patches 0492+) for a maximum 6 sector-specific FIs. Additional FIs would expand the foundational input stack beyond joint paper scope.
 
-- **Do NOT mix §B sector-specific content with §C sector-specific content**: §B (this sketch) is SF-2 V–A coupling derivation; §C (future sketch at `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` to be opened at Patches 0492+) is SM-2 chiral-polarity-bias exclusion derivation. The two sector closures use parallel structure (bridge inheritance + sector-specific identification + kinematic projection) but with different EFT frameworks (Yang-Mills for §B; effective free-energy / partition-function for §C). Mixing risks losing the structural-parallelism benefit.
+- **Do NOT mix §B sector-specific content with §C sector-specific content**: §B (this sketch) is SF-2 V–A coupling derivation; §C (future sketch at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` to be opened at Patches 0492+) is SM-2 chiral-polarity-bias exclusion derivation. The two sector closures use parallel structure (bridge inheritance + sector-specific identification + kinematic projection) but with different EFT frameworks (Yang-Mills for §B; effective free-energy / partition-function for §C). Mixing risks losing the structural-parallelism benefit.
 
 - **Do NOT undo §A closure in §B drafting**: the bridge theorem THEO-CHIR-CONT-1 is fixed and §B inherits from it without modification. If §B sector-specific work surfaces structural tension with the bridge theorem, the resolution path is to update §A bridge work (which would be unusual after sub-claim (a) closure) — but only if the structural tension is unmistakable, not for ordinary sector-specific scope adjustments.
 
@@ -314,7 +314,7 @@ In addition to Session-1-specific anti-priorities in §0 above:
 
 **Programme state changes**:
 
-1. **§B Sector A working sketch OPENED** at `flagship_papers/chirality_continuum/sketches/sector_a_va_coupling.md` (this file, ~450 lines).
+1. **§B Sector A working sketch OPENED** at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_a_va_coupling.md` (this file, ~450 lines).
 2. **Theorem B.1 statement ESTABLISHED** at theorem-statement level (THEO-CHIR-CONT-2 candidate): Sector A Yang-Mills EFT V–A Coupling Derivation theorem with four sub-claims (b)+(c)+(d)+(e). Sub-claim (b) sector-specific continuum operator identification CLOSED at this patch via §3 Step 1 closure.
 3. **Step 1 of Theorem B.1 closure ACHIEVED**: sector-specific continuum operator identification — $\mathcal{O}^{\text{eff,W}} \leftrightarrow \bar{\psi}_L \gamma^\mu \psi_L$ in Yang-Mills $SU(2)_L \times U(1)_Y$ EFT framework via three structural identifications (Identification 1: $\zeta^{\text{cont,W}} \leftrightarrow \gamma_5$; Identification 2: matter-doublet $\leftrightarrow \{\psi_R, \psi_L\}$; Identification 3: $\mathcal{O}^{\text{eff,W}} \leftrightarrow$ V–A current).
 4. **Sector-specific physical content inherited at leading order**: pure-V–A structure; coupling magnitude $\chi/6$; gauge coupling to $W^\pm$; Lorentz covariance from Yang-Mills EFT framework.

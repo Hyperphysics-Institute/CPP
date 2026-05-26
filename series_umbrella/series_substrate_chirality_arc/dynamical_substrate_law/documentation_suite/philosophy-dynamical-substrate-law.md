@@ -2,7 +2,7 @@
 
 > **v1.0 SHIPPED STATUS NOTE (Patch 0572f, 24 May 2026, Session 143)**: This file is written at F.1 v1.0 SHIPPED state (Patch 0570, Session 142, 24 May 2026). The philosophical position is the **structurally-grounded sketch-document Layer 3 flagship framework preprint** stance: F.1 proves what it can prove (the substrate-locality structure) at the rigor it can prove it (publication-grade Layer 3 trio + sketch-document Layer 3 umbrella), and *explicitly preserves* the Layer distinction + conditionality + open-problem inventory rather than collapsing them into a unified flagship narrative. The position emerged from a six-round ChatGPT reviewer cycle (Patches 0568–0569e) where the recurring reviewer pressure to harden the umbrella beyond its current rigor was answered with the **anti-erasure discipline**: do not erase the uncertainty structure during paper polishing.
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572f)
 
 ---

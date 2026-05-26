@@ -57,7 +57,7 @@ The chirality continuum joint paper closes two Layer 4 EFT problems jointly: how
 
 | Cross-reference | Paper | Status | Inheritance role |
 |---|---|---|---|
-| **Capotauro v2.0** | `flagship_papers/capotauro/capotauro.tex` v1.0 SHIPPED | 19 May 2026 | Substrate-level Layer 3 closures inherited at bridge theorem (THEO-CAP-1 + THEO-SD-CHIR-1 + -2 + $\chi/6$ substrate-handle magnitude) |
+| **Capotauro v2.0** | `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v1.0 SHIPPED | 19 May 2026 | Substrate-level Layer 3 closures inherited at bridge theorem (THEO-CAP-1 + THEO-SD-CHIR-1 + -2 + $\chi/6$ substrate-handle magnitude) |
 | **SF-2 v1.0** | `flagship_papers/electroweak/sf-2.tex` v1.0 SHIPPED | 14 May 2026 | Yang-Mills $SU(2)_L \times U(1)_Y$ EFT continuum framework inherited at §4 |
 | **SM-2 v1.0** | `series_standard_model/papers/sm-2.tex` v1.0 SHIPPED | (earlier) | Chiral-polarity-bias mechanism inherited at §5 (jointly closed at this paper for Layer 4 EFT continuum-limit) |
 | **SF-4 v4.4** | `flagship_papers/neutrinos/sf-4_neutrinos.tex` v4.4 archival-quality | 11 May 2026 | First cross-sector closure in CPP precedent — methodological scaffolding for joint-paper format |
@@ -165,10 +165,10 @@ The chirality continuum joint paper closes two Layer 4 EFT problems jointly: how
 
 ## Cross-references (summary)
 
-- **Paper**: `flagship_papers/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED
-- **Companion suite**: `flagship_papers/chirality_continuum/documentation_suite/`
-- **Reviewer letters**: `flagship_papers/chirality_continuum/reviewer_reviews/`
-- **Sketches**: `flagship_papers/chirality_continuum/sketches/`
+- **Paper**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED
+- **Companion suite**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/`
+- **Reviewer letters**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/`
+- **Sketches**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/`
 - **Programme registries**: `theorem-registry.md`, `methods_catalogue.md`, `research_frontier.md`, `predictions.md`, `paper_catalog.md`
 - **Problem history**: `problem_histories/PH-OPEN-FP-SF-2-CHIR.md`
 - **OSF DOI**: 10.17605/OSF.IO/JXE8D (programme-level deposit)

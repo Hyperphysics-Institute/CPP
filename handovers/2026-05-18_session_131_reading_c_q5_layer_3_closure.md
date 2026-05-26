@@ -30,10 +30,10 @@ Estimated: 1 session if Tracks A + B + C execute cleanly; possibly 2 sessions if
 
 ### Where to find detail
 
-- **Working sketch (canonical):** `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — 1414 lines after Patch 0429 §17 append. Sections §1-§14 are pre-Session-131 work (Q1+Q2 closure through Q5 Layer 2); §15 is Q5 piece (a) Layer 3 (Patch 0427); §16 is Q5 pieces (b)+(c) Layer 2 + Q5-PAIRING registration (Patch 0428); §17 is Q5-PAIRING resolution Layer 3 (Patch 0429).
-- **Verification scripts:** `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (~340 lines) — computational verification of Findings C-W36 (W-bracelet centroid = vertex direction) and C-W37 (K3-base = first-shell icosahedron face).
-- **Founder's voice:** `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (~180 lines) — Session 120 founder's confrontation that triggered the §2 reframe from spontaneous-symmetry-breaking framing to primitive-feature framing; recovered Patch 0422.
-- **Capotauro paper v1.0:** `flagship_papers/capotauro/capotauro.tex` — frozen at v1.0 SHIP per Patch 0415 (Session 122); §6.1 K3-base placement, §10 cage-shell averaging derivation, all preserved unchanged through the Reading C trajectory.
+- **Working sketch (canonical):** `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — 1414 lines after Patch 0429 §17 append. Sections §1-§14 are pre-Session-131 work (Q1+Q2 closure through Q5 Layer 2); §15 is Q5 piece (a) Layer 3 (Patch 0427); §16 is Q5 pieces (b)+(c) Layer 2 + Q5-PAIRING registration (Patch 0428); §17 is Q5-PAIRING resolution Layer 3 (Patch 0429).
+- **Verification scripts:** `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` (~340 lines) — computational verification of Findings C-W36 (W-bracelet centroid = vertex direction) and C-W37 (K3-base = first-shell icosahedron face).
+- **Founder's voice:** `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` (~180 lines) — Session 120 founder's confrontation that triggered the §2 reframe from spontaneous-symmetry-breaking framing to primitive-feature framing; recovered Patch 0422.
+- **Capotauro paper v1.0:** `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` — frozen at v1.0 SHIP per Patch 0415 (Session 122); §6.1 K3-base placement, §10 cage-shell averaging derivation, all preserved unchanged through the Reading C trajectory.
 - **SF-2 paper v1.0:** `flagship_papers/electroweak/sf-2_electroweak.tex` — frozen at v1.0 SHIP per Patches 0345-0368 (Sessions 81-83); Theorem 4.2 W-bracelet orbit, PROP-SF-2-5 V-A 75% structural preference, THEO-SF-2-5 Yang-Mills EFT proof outline, all preserved.
 - **Programme registries:**
   - `research_frontier.md` — OPEN-FI-C-9-FP-MECHANISM Status and Updated paragraphs span Patches 0417-0429; OPEN-SD-CHIR-PRIMITIVE umbrella entry registered Patch 0422; OPEN-FP-SF-2-CHIR Cross-sector connections field updated Patches 0425+0427+0428+0429.
@@ -48,9 +48,9 @@ Estimated: 1 session if Tracks A + B + C execute cleanly; possibly 2 sessions if
 ### Step-by-step audit of this session's handover
 
 - **Step A (Tier 1 session log):** ✓ — appended `session_logs/2026-05-18_session_log.md` Sessions 131 close + Patch 0431 unification audit + this milestone-trajectory handover
-- **Step B (Tier 2 transcript):** ✓ — `flagship_papers/capotauro/documentation_suite/transcript-capotauro.md` receives transactions for Patches 0427/0428/0429/0430/0431
-- **Step C (Tier 3 vignette):** ✓ — `flagship_papers/capotauro/documentation_suite/development-capotauro.md` receives vignettes 30-32 covering Patch 0429 §17 Q5-PAIRING resolution, Patch 0430 lowercase audit (out-of-scope-but-noted), and Patch 0431 handover protocol unification
-- **Step D (Tier 4 reasoning):** ✓ — `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` receives §17-corresponding verbatim Opus reasoning entry covering the inversion-parity identification of ζ^W, the antipodal-pair structure on the bracelet, the σ₁^W ζ^W-EVEN pairing convention construction, and the matrix element factorization at full Layer 3
+- **Step B (Tier 2 transcript):** ✓ — `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/transcript-capotauro.md` receives transactions for Patches 0427/0428/0429/0430/0431
+- **Step C (Tier 3 vignette):** ✓ — `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/development-capotauro.md` receives vignettes 30-32 covering Patch 0429 §17 Q5-PAIRING resolution, Patch 0430 lowercase audit (out-of-scope-but-noted), and Patch 0431 handover protocol unification
+- **Step D (Tier 4 reasoning):** ✓ — `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reasoning-capotauro.md` receives §17-corresponding verbatim Opus reasoning entry covering the inversion-parity identification of ζ^W, the antipodal-pair structure on the bracelet, the σ₁^W ζ^W-EVEN pairing convention construction, and the matrix element factorization at full Layer 3
 - **Step E (registries):**
   - `research_frontier.md`: ✓ — OPEN-FI-C-9-FP-MECHANISM and OPEN-FP-SF-2-CHIR Updated paragraphs appended via Patch 0429
   - `organizational_frontier.md`: N/A — no OPEN-ORG items surfaced this session beyond Patch 0431 handover protocol unification (which is captured in the §15 update itself, not as a registry entry)
@@ -111,7 +111,7 @@ Estimated: 1 session if Tracks A + B + C execute cleanly; possibly 2 sessions if
 
 **Patch 0421 — Reading C closure-trajectory handover doc:** `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md` written as bootstrap for future-context-window pickup.
 
-**Patch 0422 — OPEN-SD-CHIR-PRIMITIVE umbrella registered (programme-level architectural advance):** NEW OPEN entry registered in SD section, scoping the chirality-bias derivation work as a programme-wide cross-sector unification target across **five observable manifestations**: (i) K3-doublet chirality / mass-mixing sector (Capotauro $\Delta p_{LR}$); (ii) W-bracelet V-A coupling / electroweak sector; (iii) electromagnetic handedness / E×B / Maxwell right-hand rule / qDP-eDP polarization patterns; (iv) thermodynamic causal arrow / DI-bit propagation direction / PCD cycle ordering; (v) cosmological vacuum asymmetry / matter-antimatter / Capotauro nucleation sign-selection. First programme-level umbrella entry in CPP. SD section problem count 5 → 6. NEW `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` written, recovering the Session 120 founder's confrontation that triggered v0.9 §2 reframe from SSB to primitive-feature framing.
+**Patch 0422 — OPEN-SD-CHIR-PRIMITIVE umbrella registered (programme-level architectural advance):** NEW OPEN entry registered in SD section, scoping the chirality-bias derivation work as a programme-wide cross-sector unification target across **five observable manifestations**: (i) K3-doublet chirality / mass-mixing sector (Capotauro $\Delta p_{LR}$); (ii) W-bracelet V-A coupling / electroweak sector; (iii) electromagnetic handedness / E×B / Maxwell right-hand rule / qDP-eDP polarization patterns; (iv) thermodynamic causal arrow / DI-bit propagation direction / PCD cycle ordering; (v) cosmological vacuum asymmetry / matter-antimatter / Capotauro nucleation sign-selection. First programme-level umbrella entry in CPP. SD section problem count 5 → 6. NEW `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` written, recovering the Session 120 founder's confrontation that triggered v0.9 §2 reframe from SSB to primitive-feature framing.
 
 Also Patch 0422: **handovers/ folder migration** — eleven scattered handover files consolidated into `handovers/YYYY-MM-DD_session_NNN_<scope>.md` convention. (This is the migration that Patch 0431 cleans up the §15 Step H stale reference to.)
 
@@ -169,7 +169,7 @@ The Reading C trajectory registered nine findings across Sessions 124-131. C-W38
 
 **Statement:** The 1200 W-bracelet centroid directions on $S^3$ (SF-2 v1.0 Theorem 4.2; $H_4$-orbit of induced hexagonal 6-cycles in 600-cell vertex graph with $D_6$ stabilizer and centroid radius $\phi/2$) reduce to exactly **120 distinct unit vectors** which are **precisely the 120 vertex directions of the 600-cell**, with exactly 10 bracelets per vertex direction. Each bracelet is realized as a **Petrie hexagon of the SM-1 first-shell icosahedron** around its central vertex. The 1200 W-bracelet orbit and the 1200 face orbit of $H_4$ on $S^3$ are different orbits with disjoint direction sets.
 
-**Computational verification:** `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py`.
+**Computational verification:** `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py`.
 
 ### Finding C-W37 (Patch 0419, Session 126)
 
@@ -315,22 +315,22 @@ Path now established: $H_4 \to H_3 = I_h$ (vertex-aligned reading) with K3-doubl
 ## 6. Source material pointers
 
 ### Working sketches and derivations
-- `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (1414 lines, canonical Tier-4 source for Reading C trajectory) — §1-§14 pre-Session-131 work; §15 piece (a) Layer 3; §16 pieces (b)+(c) Layer 2 + Q5-PAIRING; §17 Q5-PAIRING resolution Layer 3.
-- `flagship_papers/capotauro/sketches/Capotauro_chi_phi_closure.md` — Sessions 87-102 closure trajectory predating Reading C (substrate-vacuum chirality framework for FI-C-10).
-- `flagship_papers/capotauro/sketches/Capotauro_subclaim_c_wigner_eckart.md` — sub-claim (c) closure work that became THEO-CAP-1.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (1414 lines, canonical Tier-4 source for Reading C trajectory) — §1-§14 pre-Session-131 work; §15 piece (a) Layer 3; §16 pieces (b)+(c) Layer 2 + Q5-PAIRING; §17 Q5-PAIRING resolution Layer 3.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chi_phi_closure.md` — Sessions 87-102 closure trajectory predating Reading C (substrate-vacuum chirality framework for FI-C-10).
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_subclaim_c_wigner_eckart.md` — sub-claim (c) closure work that became THEO-CAP-1.
 
 ### Verification scripts
-- `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` — establishes Findings C-W36 + C-W37 computationally; numpy only, ~340 lines.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` — establishes Findings C-W36 + C-W37 computationally; numpy only, ~340 lines.
 
 ### Founder's voice and methodology
-- `flagship_papers/capotauro/founders_voice/004_verbatim_substance_preservation_discipline.md` — operates as canonical reference for preservation of wrong-turns and corrections.
-- `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` — recovered Session 120 founder's confrontation triggering v0.9 §2 reframe; load-bearing for OPEN-SD-CHIR-PRIMITIVE umbrella scoping.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/004_verbatim_substance_preservation_discipline.md` — operates as canonical reference for preservation of wrong-turns and corrections.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` — recovered Session 120 founder's confrontation triggering v0.9 §2 reframe; load-bearing for OPEN-SD-CHIR-PRIMITIVE umbrella scoping.
 
 ### Capotauro paper v1.0
-- `flagship_papers/capotauro/capotauro.tex` (1149 lines) — frozen at v1.0 SHIP per Patch 0415.
-- `flagship_papers/capotauro/capotauro.pdf` — 46 pages, 601 KB.
-- `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` — version archaeology from v0.1 onward.
-- `flagship_papers/capotauro/documentation_suite/{development,transcript,reasoning}-capotauro.md` — Tier 3 / Tier 2 / Tier 4 documentation suite.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` (1149 lines) — frozen at v1.0 SHIP per Patch 0415.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.pdf` — 46 pages, 601 KB.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md` — version archaeology from v0.1 onward.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/{development,transcript,reasoning}-capotauro.md` — Tier 3 / Tier 2 / Tier 4 documentation suite.
 
 ### SF-2 paper v1.0
 - `flagship_papers/electroweak/sf-2_electroweak.tex` (1821 lines) — frozen at v1.0 SHIP per Patches 0345-0368.
@@ -438,7 +438,7 @@ After Q6 + Q7 (minimum), the OPEN-SD-CHIR-PRIMITIVE umbrella's prerequisite stac
 
 ## 9. One thing to read first in the next session
 
-If the next-context-window Opus reads only one file before starting Track A work, it should be **`flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`** sections §13 (lines 1-113), §14 (lines 1-93), §15 (lines 1-109), and §17 (lines 1-170) — totaling ~485 lines of canonical proof content. These four sections constitute the THEO-SD-CHIR-1 proof chain: local-$I_h$-preservation theorem → Substrate-Locality Unification theorem → Schur-orthogonality cage-shell factor → inversion-parity pairing convention with matrix element factorization at Layer 3.
+If the next-context-window Opus reads only one file before starting Track A work, it should be **`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`** sections §13 (lines 1-113), §14 (lines 1-93), §15 (lines 1-109), and §17 (lines 1-170) — totaling ~485 lines of canonical proof content. These four sections constitute the THEO-SD-CHIR-1 proof chain: local-$I_h$-preservation theorem → Substrate-Locality Unification theorem → Schur-orthogonality cage-shell factor → inversion-parity pairing convention with matrix element factorization at Layer 3.
 
 A second priority read is **this handover** (Sections 3, 5, 7) to internalize the findings registry, programme-level implications, and forward queue context before drafting Track A's theorem-registry entry text.
 

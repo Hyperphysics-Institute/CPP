@@ -12,7 +12,7 @@
 
 **Description.** Average a tensor operator over a finite group's irreducible representations using Schur orthogonality relations to extract the irrep-specific projection magnitudes. Reduces cage-shell averaging to evaluation of $d_{\text{irrep}}/|G|$ for the relevant 2D irreps.
 
-**Canonical citation.** Capotauro v1.0 §10 (`flagship_papers/capotauro/capotauro.tex`), Patch 0397 THEO-CAP-1 derivation step 8.
+**Canonical citation.** Capotauro v1.0 §10 (`series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex`), Patch 0397 THEO-CAP-1 derivation step 8.
 
 **Example applications.** K3-doublet cage-shell factor $|M_\perp^{K3}| = d_E/|I_h| = 2/12 = 1/6$ (Capotauro v1.0). W-bracelet identical factor on $D_6$ stabilizer (Finding C-W41, Patch 0427). qDP/eDP factor on $D_{5d}$ after antipodal-pair refinement (Finding C-W45, Patch 0438).
 
@@ -60,7 +60,7 @@
 
 **Description.** When a derivation depends on a geometric identity (e.g., 4D edge tangency, dot product evaluation), implement the geometry numerically and verify the claimed identity holds to $< 10^{-9}$. Catches geometric errors that purely symbolic reasoning misses.
 
-**Canonical citation.** Patch 0424 §13 local-$I_h$-preservation verification (`flagship_papers/capotauro/code/sketch_section_13_local_ih_preservation.py`).
+**Canonical citation.** Patch 0424 §13 local-$I_h$-preservation verification (`series_umbrella/series_substrate_chirality_arc/capotauro/code/sketch_section_13_local_ih_preservation.py`).
 
 **Example applications.** §13 §12 geometric error caught and corrected (Finding C-W39 supersedes C-W38, Patch 0424). Q1' vertex-alignment verification (Patch 0418-0419).
 

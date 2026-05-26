@@ -3,7 +3,7 @@
 **Joint Layer 4 paper §C (Sector B = SM-2 chiral-polarity-bias / electromagnetic-handedness)**
 **Opened**: 20 May 2026 (Session 137 continuation, Patch 0492 — §C Session 1)
 **Status at open**: §A bridge work CLOSED at theorem-level rigor via THEO-CHIR-CONT-1 (Patch 0487); §B Sector A V–A coupling derivation CLOSED at theorem-level rigor via THEO-CHIR-CONT-2 (Patch 0491); §C substantive drafting opens with this patch under inheritance from §A bridge theorem
-**Sketch home**: `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md`
+**Sketch home**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md`
 
 This sketch opens substantive Tier-4 reasoning work for the joint paper's §C Sector B (SM-2 chiral-polarity-bias derivation). §C inherits THEO-CHIR-CONT-1's sector-agnostic continuum operator structure and applies sector-specific effective-free-energy / partition-function framework identification appropriate to the SM-2 sector to derive the chirality-asymmetric stabilization-energy operator $\Delta F^{qDP}$ + downstream observable predictions (Linear-ZBW-on-$\pm$qCP stabilization-energy asymmetry; thermodynamic-scale exclusion bound; SM cross-validation).
 
@@ -26,7 +26,7 @@ This section opens Session 1 of §C Sector B work (Patch 0492). §A bridge step 
 **Anti-priorities at Session 1 of §C** (in addition to programme-level + §A + §B anti-priorities):
 
 - Do NOT close Steps 2–4 of §C at Session 1 (substrate-level stabilization energy + exclusion bound + SM cross-validation — all deferred to Sessions 2–4).
-- Do NOT modify SM-2 v1.0 .tex source during §C drafting — SM-2 v1.0 SHIPPED with .tex source frozen; §C content lives at `flagship_papers/chirality_continuum/` not at SM-2 paper home.
+- Do NOT modify SM-2 v1.0 .tex source during §C drafting — SM-2 v1.0 SHIPPED with .tex source frozen; §C content lives at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` not at SM-2 paper home.
 - Do NOT modify Patch 0483 SM-2 scoping sketch at `flagship_papers/electroweak/sketches/SM-2_chiral_polarity_bias_layer4_closure.md` — preserved at historical location; §C working sketch is THIS file.
 - Do NOT modify §A bridge work (`substrate_to_continuum_bridge.md`) or §B Sector A work (`sector_a_va_coupling.md`) during §C drafting. §A and §B are CLOSED.
 - Do NOT mix §C sector-specific content with §B sector-specific content. §B is CLOSED; §C is a parallel derivation at the SM-2 sector inheriting §A.
@@ -312,7 +312,7 @@ In addition to Session-1-specific anti-priorities in §0 above:
 
 **Programme state changes**:
 
-1. **§C Sector B working sketch OPENED** at `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` (this file, ~430 lines).
+1. **§C Sector B working sketch OPENED** at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md` (this file, ~430 lines).
 2. **Theorem C.1 statement ESTABLISHED** at theorem-statement level (THEO-CHIR-CONT-3 candidate): Sector B Effective Free-Energy Framework Chiral-Polarity-Bias Derivation theorem with four sub-claims (f)+(g)+(h)+(i). Sub-claim (f) sector-specific continuum operator identification CLOSED at this patch via §3 Step 1 closure.
 3. **Step 1 of Theorem C.1 closure ACHIEVED**: sector-specific continuum operator identification — $\mathcal{O}^{\text{eff,qDP}} \leftrightarrow \Delta F^{qDP}$ in effective free-energy / partition-function framework via three structural identifications (Identification 1: $\zeta^{\text{cont,qDP}} \leftrightarrow$ combined $CP$ at continuum level; Identification 2: matter-doublet $\leftrightarrow \{|\text{LZBW},+\rangle, |\text{LZBW},-\rangle\}$ Linear-ZBW chirality-eigenstate pair; Identification 3: $\mathcal{O}^{\text{eff,qDP}} \leftrightarrow \Delta F^{qDP}$ chirality-asymmetric stabilization-energy operator).
 4. **Sector-specific physical content inherited at leading order**: combined-$CP$-ODD parity structure; magnitude inheritance $\chi/6$; effective-free-energy thermodynamic context; scalar structure at thermal-equilibrium scales.
@@ -838,7 +838,7 @@ Per Patch 0397 / THEO-CAP-1 / THEO-CHIR-CONT-1 / THEO-CHIR-CONT-2 precedent, the
 
 **Condition (i): rigorous proof chain** ✓
 
-Theorem C.1 proof chain spans 4 sessions across §C Sector B working sketch `flagship_papers/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md`:
+Theorem C.1 proof chain spans 4 sessions across §C Sector B working sketch `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/sector_b_chiral_polarity_bias.md`:
 
 - §3 (Step 1; Patch 0492) — sub-claim (f) sector-specific operator identification (~430 lines through Session 1)
 - §12 (Step 2; Patch 0493) — sub-claim (g) substrate-level stabilization energy (+173 lines through Session 2 to ~513 total)
@@ -957,7 +957,7 @@ Pattern strengthens programme-level theorem-registry methodology: closure trajec
 
 - **Priority 1 (Patch 0496+ candidate)**: §D cross-sector unification framing + paper polish (v0.5 substantive drafting). §D scope extends Session 4 §18.3 acknowledgment to full §D content covering cross-sector convergence at observable level + THEO-CHIR-CONT-N convention completeness + OPEN-SD-CHIR-PRIMITIVE umbrella three-of-five manifestation closure status + joint paper format structural efficiency validation. 1–2 sessions estimated.
 - **Priority 2 (Patches 0498+)**: v0.6–v0.9 reviewer cycle. Standard reviewer round protocol (ChatGPT + CoPilot + Grok per programme-level reviewer ranking) on full v0.5 joint paper draft. 3–5 sessions estimated.
-- **Priority 3 (Patch 0503+)**: v1.0 SHIP. Title-block version bump + theorem-registry confirmation that THEO-CHIR-CONT-1+2+3 all have paper-level publication venue at flagship_papers/chirality_continuum/ v1.0 SHIPPED status. 1–2 sessions estimated.
+- **Priority 3 (Patch 0503+)**: v1.0 SHIP. Title-block version bump + theorem-registry confirmation that THEO-CHIR-CONT-1+2+3 all have paper-level publication venue at series_umbrella/series_substrate_chirality_arc/chirality_continuum/ v1.0 SHIPPED status. 1–2 sessions estimated.
 - **Subsequent (post-v1.0)**: OPEN-FP-SF-4-1 Picture A alternative continuum-EFT framework parametrization (complementary closure to Picture B Wigner-Eckart EFT framework completed at THEO-CHIR-CONT-1+2+3); SM-5 cooperation cross-sector closure at neutrino flavor sector; SF-2 v2.0+ Layer 4 EFT closure with delta_CP CP-violation phase derivation; FI-CHIR-CONT-1/2 first-principles derivation from CPP primitive axioms (Q1$'$+Q1$'$.A Layer 3 promotion).
 
 **Anti-priorities preserved**: as enumerated in §0 + §9 + §11 + §14 + §17 above. Most critical for Patch 0495 → Patch 0496 transition: do NOT extend §C beyond Theorem C.1's four sub-claims (Session 4 closes §C complete; no further §C content); do NOT extend cross-sector unification framing into joint paper §D content at §C Session 4 (§D scope at Patches 0496+); do NOT modify §A bridge work or §B Sector A work or §C Sessions 1+2+3 content; do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources.

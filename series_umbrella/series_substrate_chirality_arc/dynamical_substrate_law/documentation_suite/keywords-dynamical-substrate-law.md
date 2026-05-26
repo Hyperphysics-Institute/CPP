@@ -2,8 +2,8 @@
 
 > **v1.0 SHIPPED STATUS NOTE (Patch 0572a, 24 May 2026, Session 143)**: This file is written at F.1 v1.0 SHIPPED state (Patch 0570, Session 142, 24 May 2026) — the first F-line flagship v1.0 SHIP in CPP corpus. Paper compiles to 33 pages with three publication-grade Layer 3 theorems (Theorems 5.1 + 5.2 + 6.1 + Corollary 6.2) supplying §5 + §6, one sketch-document Layer 3 umbrella theorem (Theorem 7.1 substrate-locality of DI-bit currents at vertex-aligned Reading C), and five Open Problems registered (OPEN-FP-F1-1 through OPEN-FP-F1-5; OPEN-FP-F1-6 registered separately at Patch 0569e from ChatGPT R6 follow-up). Three-reviewer convergence at v1.0 SHIP: Grok R1 explicit + Copilot R1 implicit + ChatGPT R1→R6 monotonic improvement to strongest-positive verdict at R6. Three programme-level conventions extended at this SHIP: Variant (b) `\date{}` line scope-subtitle pattern; PDF-upload-default reviewer engagement protocol; `.gitignore` exception pattern for flagship paper SHIP PDFs. Full v1.0 SHIP details in `changelog-dynamical-substrate-law.md`. Forward post-Phase-7 trajectory (v2.0+): G1 publication-grade hardening (OPEN-FP-F1-3) RECOMMENDED first post-Phase-7 substantive physics Patch per ChatGPT R1–R6 convergent priority.
 
-**Paper:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
-**Source PDF:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, 489 KB, MD5 `49e56be92a3ccc126ce09210b5898794`)
+**Paper:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (v1.0 SHIPPED 24 May 2026, Session 142 Patch 0570)
+**Source PDF:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, 489 KB, MD5 `49e56be92a3ccc126ce09210b5898794`)
 **Last updated:** 24 May 2026 (Session 143 Patch 0572a)
 **Audience:** Search, SEO, web tooling, Claude Code agent integration with hyperphysics.com
 
@@ -58,7 +58,7 @@ sketch-document Layer 3, publication-grade Layer 3, anti-erasure discipline
 
 ## Cross-paper-reference Keywords
 
-Capotauro v2.0 flagship paper (`flagship_papers/capotauro/capotauro.tex`),
+Capotauro v2.0 flagship paper (`series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex`),
 three-way cross-sector substrate-chirality unification,
 THEO-CAP-1 K3-doublet structural constant $\chi/6 = \phi^{-3}/6 \approx 0.0394$,
 spatial-sector parallel to F.1 temporal-sector closure,
@@ -240,4 +240,4 @@ At vertex-aligned Reading C in the 600-cell substrate, the net DI-bit current at
 
 ---
 
-*Keywords file created Session 143 Patch 0572a (24 May 2026) as the second SHIP-time companion documentation file in Phase 7A. Reference implementation: `flagship_papers/capotauro/documentation_suite/keywords-capotauro.md`. Template: `templates/documentation-suite.md` §8 + checklist §A A7. This file is maintained continuously from this Patch forward; future paper-version increments (v1.1 minor revisions, v2.0 substantive extensions) trigger Last-updated header revision + paper-version-specific keyword block appended at end of file per Capotauro v2.0-era keywords precedent.*
+*Keywords file created Session 143 Patch 0572a (24 May 2026) as the second SHIP-time companion documentation file in Phase 7A. Reference implementation: `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/keywords-capotauro.md`. Template: `templates/documentation-suite.md` §8 + checklist §A A7. This file is maintained continuously from this Patch forward; future paper-version increments (v1.1 minor revisions, v2.0 substantive extensions) trigger Last-updated header revision + paper-version-specific keyword block appended at end of file per Capotauro v2.0-era keywords precedent.*

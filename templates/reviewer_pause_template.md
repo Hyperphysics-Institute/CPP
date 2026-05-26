@@ -4,7 +4,7 @@
 
 *Place the filled-in document at: `flagship_papers/<flagship_trajectory>/reviewer_pause/<trajectory_id>_reviewer_pause_checkpoint_patches_<NNNN>_<NNNN>_v1.0.md`*
 
-*Examples: `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (F.1 precedent).*
+*Examples: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (F.1 precedent).*
 
 *See `templates/operating_system.md` §17 Reviewer-Pause Cycle Protocol for the full workflow context.*
 

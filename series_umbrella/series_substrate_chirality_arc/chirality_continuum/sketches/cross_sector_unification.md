@@ -64,7 +64,7 @@ This sketch opens §D cross-sector unification framing at the joint paper post �
 
 The v0.1 outline §1.8 four-sub-section structure (§6.1+§6.2+§6.3+§6.4) is preserved; the two new sub-sections §6.5+§6.6 are additions surfacing post-§C-closure content that belongs at paper-section-6 level.
 
-**Anti-priority on outline modification**: NOT modifying outline file `flagship_papers/chirality_continuum/chirality_continuum_outline.md` at this patch; v0.5 paper drafting may update outline at later patch if §6.5+§6.6 additions warrant structural revision. At this patch, §6.5+§6.6 surface in the working sketch only.
+**Anti-priority on outline modification**: NOT modifying outline file `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum_outline.md` at this patch; v0.5 paper drafting may update outline at later patch if §6.5+§6.6 additions warrant structural revision. At this patch, §6.5+§6.6 surface in the working sketch only.
 
 ---
 
@@ -82,7 +82,7 @@ at full Layer 3 rigor across three structurally distinct sectors:
 - Pairing-convention generator: $\zeta^{K3}$ = 3D-inversion through K3-base centroid
 - Matter-doublet basis: 2D subspace of $E$-irrep of $S_3$ (per K3 paper §4)
 - Chirality operator: $\hat{C}_\chi^{K3} \in A_2(D_{3d})$
-- Theorem closure: **THEO-CAP-1** (Composite Capotauro Wigner-Eckart Theorem; theorem #62; Session 103 Patch 0397); paper-level publication venue at `flagship_papers/capotauro/capotauro.tex` v2.0 v1.0 SHIPPED Session 135 Patch 0479
+- Theorem closure: **THEO-CAP-1** (Composite Capotauro Wigner-Eckart Theorem; theorem #62; Session 103 Patch 0397); paper-level publication venue at `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v1.0 SHIPPED Session 135 Patch 0479
 
 **W-bracelet sector** (electroweak V–A; manifestation (ii) of OPEN-SD-CHIR-PRIMITIVE umbrella):
 - Substrate object: W-bracelet 6-vertex Petrie hexagon at $v_{\text{host}}$
@@ -278,7 +278,7 @@ The joint paper is substantively complete at theorem-level rigor across all four
 
 **Programme state changes**:
 
-1. **§D cross-sector unification working sketch OPENED** at `flagship_papers/chirality_continuum/sketches/cross_sector_unification.md` (~500+ lines through Session 1).
+1. **§D cross-sector unification working sketch OPENED** at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/cross_sector_unification.md` (~500+ lines through Session 1).
 2. **Paper §6 substantive synthesis content drafted** across §2 shared substrate handle + §3 OPEN-SD-CHIR-PRIMITIVE umbrella perspective + §4 second cross-sector closure pattern + §5 structural identity claim + §6 joint paper format structural efficiency validation + §7 v0.5 SHIP readiness assessment.
 3. **§6.5 (joint paper format structural efficiency validation) and §6.6 (v0.5 SHIP readiness assessment) NEW content** surfacing post-§C-closure additions to v0.1 outline §1.8 four-sub-section structure; outline file revision deferred to later patch.
 4. **v0.1 outline §10 PROCEED verdict empirically validated**: combined §A+§B+§C closure cost 11 sessions vs Venue (b) fallback 15–22 sessions; savings 4–11 sessions; cross-sector convergence at observable level is structural prediction of joint paper format (rather than emergent empirical coincidence under Venue (b)).
@@ -297,7 +297,7 @@ The joint paper is substantively complete at theorem-level rigor across all four
 - **Priority 1 (Patch 0497+ candidate)**: §D Session 2 (if needed) for §6.5+§6.6 polish + outline file update for §1.8 §6 section structure + §1.8 sub-sections clean-up. Alternative: skip §D Session 2 and proceed directly to paper polish (v0.5 .tex source drafting). 0–1 sessions estimated.
 - **Priority 2 (Patches 0498+ candidate)**: v0.5 paper polish — substantive drafting of §1 Introduction + §2 Inheritance + §7 Predictions and Falsifiers + §8 Open Theorem-Level Work + §9 Discussion + §10 References into v0.5 .tex source. 1–2 sessions estimated.
 - **Priority 3 (Patches 0498+ candidate)**: v0.6–v0.9 reviewer cycle. ChatGPT + CoPilot + Grok per programme-level reviewer ranking (ChatGPT strongest + Grok second + CoPilot third) on full v0.5 joint paper draft. 3–5 sessions estimated.
-- **Priority 4 (Patch 0503+ candidate)**: v1.0 SHIP. Title-block version bump + theorem-registry confirmation that THEO-CHIR-CONT-1+2+3 all have paper-level publication venue at `flagship_papers/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED status. 1–2 sessions estimated.
+- **Priority 4 (Patch 0503+ candidate)**: v1.0 SHIP. Title-block version bump + theorem-registry confirmation that THEO-CHIR-CONT-1+2+3 all have paper-level publication venue at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED status. 1–2 sessions estimated.
 - **Subsequent (post-v1.0)**: OPEN-FP-SF-4-1 Picture A alternative continuum-EFT framework + SM-5 cooperation cross-sector closure + SF-2 v2.0+ delta_CP + FI-CHIR-CONT-1/2 first-principles + manifestations (iv)+(v) Layer 4 closures via THEO-CHIR-CONT-4/-5 candidates.
 
 **Anti-priorities preserved**: as enumerated in §0 above. Most critical for Patch 0496 → Patch 0497 transition: do NOT register new theorems or predictions at §D drafting (§D is synthesis); do NOT modify §A bridge work or §B Sector A work or §C Sector B work during §D drafting; do NOT modify Capotauro v2.0 / SF-2 v1.0 / SM-2 v1.0 .tex sources; do NOT modify Patches 0482+0483 scoping sketches; do NOT modify joint paper outline file `chirality_continuum_outline.md` at this patch (outline structure revision deferred to v0.5 paper polish if §6.5+§6.6 additions warrant it).

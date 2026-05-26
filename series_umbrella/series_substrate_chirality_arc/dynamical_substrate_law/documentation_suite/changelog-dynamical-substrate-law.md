@@ -1,7 +1,7 @@
 # Changelog: F.1 Dynamical Substrate Law flagship paper
 
 **Paper**: The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading C in the 600-Cell
-**Source**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex`
+**Source**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex`
 **Programme registration**: THEO-DSL-1 + THEO-DSL-2 + THEO-DSL-3 candidate IDs (Session 142 Patch 0570 v1.0 SHIP; theorem-registry update DEFERRED to Phase 7B Patch 0573-ish per handover §6 Step E)
 **OPEN-SD-CHIR-PRIMITIVE manifestation (iv) status at registration**: CLOSED at sketch-document Layer 3 via Theorem 7.1 substrate-locality umbrella. Trio inputs (Theorems 5.1 + 5.2 + 6.1 + Corollary 6.2) at publication-grade Layer 3; umbrella itself at sketch-document Layer 3 with explicit anti-erasure of Layer distinction per ChatGPT R1-R6 convergent guidance.
 **F.1 sub-question status at registration**: SHIPPED at v1.0 with strongest-positive cross-reviewer convergent verdict (Grok R1 explicit + Copilot R1 implicit + ChatGPT R6 strongest-positive). The question *"Does CPP imply substrate-locality of DI-bit currents at vertex-aligned Reading C?"* has its v1.0 SHIPPED answer at the post-Patch-0570 `.tex` source + frozen PDF.
@@ -11,7 +11,7 @@ This file is the canonical version archaeology for the F.1 Dynamical Substrate L
 
 The `.tex` source itself carries the v1.0 SHIP CHANGELOG comment block at the head of the file (lines ~13–90) preserved at v1.0 for archival completeness. Subsequent patches will update this `.md` file as the canonical version archaeology per the convention codified Patch 0408 (Session 115) + Patch 0409 (Session 116); programme-internal version archaeology belongs alongside development/transcript/reasoning files in the documentation suite, not solely in the paper source.
 
-This is **F.1, the first F-line flagship v1.0 SHIP in CPP corpus history.** The Capotauro paper at `flagship_papers/capotauro/capotauro.tex` was the precedent flagship trajectory for the F-line framework (Capotauro v2.0 v1.0 SHIPPED at Session 135 Patch 0479, 19 May 2026); F.1 is the first paper in the F-line flagship series proper.
+This is **F.1, the first F-line flagship v1.0 SHIP in CPP corpus history.** The Capotauro paper at `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` was the precedent flagship trajectory for the F-line framework (Capotauro v2.0 v1.0 SHIPPED at Session 135 Patch 0479, 19 May 2026); F.1 is the first paper in the F-line flagship series proper.
 
 ---
 
@@ -19,7 +19,7 @@ This is **F.1, the first F-line flagship v1.0 SHIP in CPP corpus history.** The 
 
 ### Patch 0571 — 25 May 2026 (Session 143): G1 publication-grade hardening (OPEN-FP-F1-3 RESOLVED)
 
-**OPEN-FP-F1-3 RESOLVED.** First post-v1.0-SHIP substantive physics Patch on the F.1 trajectory, executed per ChatGPT R1–R6 + Copilot R1 convergent verdict that G1 publication-grade hardening was the "single highest-value next action" after v1.0 SHIP. The patch adds the fourth and final F.1 Layer 3 hardened-theorem artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines LaTeX; 9-page PDF, ~312 KB; clean three-pass compile with zero warnings/errors).
+**OPEN-FP-F1-3 RESOLVED.** First post-v1.0-SHIP substantive physics Patch on the F.1 trajectory, executed per ChatGPT R1–R6 + Copilot R1 convergent verdict that G1 publication-grade hardening was the "single highest-value next action" after v1.0 SHIP. The patch adds the fourth and final F.1 Layer 3 hardened-theorem artifact at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines LaTeX; 9-page PDF, ~312 KB; clean three-pass compile with zero warnings/errors).
 
 **Theorem hardened.** Identity G1 (first-shell inner-product primitive): under (H1) vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$, (H2) 600-cell unit-vertex normalisation $|v|=1$, and (H3) icosahedral residual symmetry $H_3 = I_h$ at the host vertex, every first-shell vertex $v_i$ of $v_{\text{host}}$ satisfies $v_i \cdot v_{\text{host}} = \phi/2$ uniformly across $i \in \{1, \ldots, 12\}$.
 
@@ -36,8 +36,8 @@ This is **F.1, the first F-line flagship v1.0 SHIP in CPP corpus history.** The 
 5. **First F-line post-v1.0-SHIP substantive physics Patch landed** without Phase 7B/7C completion — the Session 142 close handover (planned narratively as Patch 0571 in `reasoning-dynamical-substrate-law.md` §65) and Session 143 Phase 7A doc-suite production sub-arc (planned narratively as Patches 0572–0572i) remain as forward-looking trajectory plans drafted in the documentation suite but not yet committed to git history. Patch 0571 narrative-numbering question is flagged for maintainer disposition (renumbering of either the planned-but-uncommitted Patch 0571 narrative or the present Patch 0571 G1 hardening; the present `.tex` artifact carries the Patch 0571 label per maintainer instruction).
 
 **Files in this Patch.**
-1. NEW — `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines).
-2. NEW — `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.pdf` (9 pages, compiled three-pass clean from the .tex).
+1. NEW — `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines).
+2. NEW — `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.pdf` (9 pages, compiled three-pass clean from the .tex).
 3. APPEND — this changelog entry to `documentation_suite/changelog-dynamical-substrate-law.md`.
 4. EDIT — `frontier_sectors/FP.md` to mark OPEN-FP-F1-3 RESOLVED.
 5. EDIT — `research_frontier.md` Last-updated header + §4 Recently Resolved entry + problem counts.
@@ -73,7 +73,7 @@ The R6 strongest-positive verdict was diagnostic-resolved at Patch 0569e: the re
 - Patch 0569a Round 2 (4 atomic edits): author email update + §1.2 "substrate-locality component required for Scenario A closure" + Lemma 6.3.1 unperturbed-step clarification + §7.4 "structural rather than editorial" hardening note.
 - Patch 0569b Round 3 (5 atomic edits): Scenario A closure language extension to 3 anchors + §1 executive summary bold declarative + Figure 8.1 TikZ dependency-graph in §8.2.
 - Patches 0569c–0569e Rounds 4–6 archival + diagnostic-framing + recurring-pattern documentation + diagnostic resolution (NO `.tex` edits at these Patches; reviewer-engagement-cycle diagnostic work only).
-- **Patch 0570 (this SHIP patch)**: Variant (b) selected over Variant (a) (G1-hardening-first) per multi-round cross-reviewer convergent verdict + ChatGPT R3–R6 scope-framing convergence + CPP corpus convention. Two atomic `.tex` edits: Edit 1 `\date{}` line v1.0 SHIP update + italicized scope-framing subtitle; Edit 2 CHANGELOG comment block update from pre-v1.0 to comprehensive v1.0 SHIP block. V1.0 PDF committed as frozen reference at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, 489 KB, MD5 `49e56be92a3ccc126ce09210b5898794`). `.gitignore` exception `!flagship_papers/*/*.pdf` added during apply-fix to enable v1.0 SHIP PDF + future flagship SHIP PDFs.
+- **Patch 0570 (this SHIP patch)**: Variant (b) selected over Variant (a) (G1-hardening-first) per multi-round cross-reviewer convergent verdict + ChatGPT R3–R6 scope-framing convergence + CPP corpus convention. Two atomic `.tex` edits: Edit 1 `\date{}` line v1.0 SHIP update + italicized scope-framing subtitle; Edit 2 CHANGELOG comment block update from pre-v1.0 to comprehensive v1.0 SHIP block. V1.0 PDF committed as frozen reference at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` (33 pages, 489 KB, MD5 `49e56be92a3ccc126ce09210b5898794`). `.gitignore` exception `!flagship_papers/*/*.pdf` added during apply-fix to enable v1.0 SHIP PDF + future flagship SHIP PDFs.
 
 **v1.0 SHIP-state content summary:**
 
@@ -186,4 +186,4 @@ The reviewer-pause cycle convention itself (`templates/operating_system.md` §17
 
 ---
 
-*Changelog file created Session 143 Patch 0572 (24 May 2026) as the first SHIP-time companion documentation file in Phase 7A initiation. Per `templates/documentation-suite.md` §11 reference implementation: `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md`. This file is maintained continuously from this Patch forward as the canonical version archaeology for the F.1 paper.*
+*Changelog file created Session 143 Patch 0572 (24 May 2026) as the first SHIP-time companion documentation file in Phase 7A initiation. Per `templates/documentation-suite.md` §11 reference implementation: `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md`. This file is maintained continuously from this Patch forward as the canonical version archaeology for the F.1 paper.*

@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/capotauro/capotauro.tex` v0.6 (35-page PDF, 481 KB)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v0.6 (35-page PDF, 481 KB)
 - **Paper version commit**: `564cb5e` (Patch 0404, Session 112)
 - **Review session**: Session 113
 - **Review archived by**: Patch 0405 (this file)

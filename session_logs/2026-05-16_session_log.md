@@ -3,7 +3,7 @@
 **Location:** `/CPP/session_logs/2026-05-16_session_log.md`
 **Title:** Retroactive Session 122 close handover for Capotauro v1.0 SHIPPED; three registry-drift items surfaced via §15 Step E audit (predictions.md, master_glossary.md, problem_histories/PH-OPEN-SM-4.md); registry drift fix scheduled at Patch 0417; Section E + Section A doc-suite production sequence locked in for Patches 0418–0427; OPEN-WORKFLOW-DOCS-CATCHUP registration deferred to `todolist.md` post-Section A completion per discipline-tightening-after-precedent principle.
 **Template:** B (Retrospective synthesis variant)
-**Patches produced:** 0416 (this session log + retroactive handover document at `flagship_papers/capotauro/documentation_suite/handover-capotauro.md` + register row in `changelog-capotauro.md`).
+**Patches produced:** 0416 (this session log + retroactive handover document at `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/handover-capotauro.md` + register row in `changelog-capotauro.md`).
 **Continued from:** Session 122 close (Patch 0415 Capotauro v1.0 SHIPPED). Session 122 ended mid-conversation without producing a §15 Step H handover artifact.
 **Continuation:** Patch 0417 registry drift fix is the default next-session action per the handover's Priority 1. Section E doc-suite production begins at Patch 0418 with `development-capotauro.md` vignettes.
 

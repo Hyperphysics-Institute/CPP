@@ -77,7 +77,7 @@ Layer 3 promotion at sketch-document level (per Patch 0540 §1.2):
 
 This is distinct from Layer 4 (deriving the geometric primitives themselves from CPP axioms A1–A11) and from flagship-paper Layer 3 (publication-grade prose + theorem-environment formatting + literature citations + reviewer-grade rigor on every cross-reference).
 
-The sketch-document Layer 3 artifact lives in `flagship_papers/dynamical_substrate_law/layer3_promotion/` parallel to the `reviewer_pause/` directory pattern from Patches 0538 / 0539a. Future Layer 3 promotions for other sub-questions create sibling documents in this directory.
+The sketch-document Layer 3 artifact lives in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/` parallel to the `reviewer_pause/` directory pattern from Patches 0538 / 0539a. Future Layer 3 promotions for other sub-questions create sibling documents in this directory.
 
 ---
 
@@ -441,7 +441,7 @@ This Layer 3 promotion document is a separate, additive artifact in `layer3_prom
 
 ### §10.2 Numerical verification preserved as independent confirmation
 
-The verification script at `flagship_papers/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py` (Patch 0533) is preserved unchanged. It verifies the five load-bearing identities ($\hat{u}_i \cdot \hat{n} = -1/(2\phi)$, $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$, Phase 1 result, first-shell current magnitude uniformity, B.1.q4 sum identity) at machine precision across five test $\delta$ values.
+The verification script at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_b1q4_first_shell_current_sum.py` (Patch 0533) is preserved unchanged. It verifies the five load-bearing identities ($\hat{u}_i \cdot \hat{n} = -1/(2\phi)$, $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$, Phase 1 result, first-shell current magnitude uniformity, B.1.q4 sum identity) at machine precision across five test $\delta$ values.
 
 At Layer 3, the numerical verification is no longer load-bearing for the closure (the algebra is now self-sufficient), but it remains valuable as **independent confirmation** that the algebraic derivation has not made a sign error, units error, or missed-term error. The numerics passed at machine precision $\leq 2 \times 10^{-15}$; the algebra now matches this.
 
@@ -517,10 +517,10 @@ Layer 3 correctness rests on: (i) the algebraic chain in §3–§7 being free of
 
 ### §13.1 What changed at programme level
 
-- B.1.q4 is now at **sketch-document Layer 3 closure** within `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (this document).
+- B.1.q4 is now at **sketch-document Layer 3 closure** within `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` (this document).
 - Patch 0538 §14.4 calibration item ("Layer 3 algebraic derivation deferred") substantively resolved at sketch-document level.
 - **First Layer 3 promotion in the F.1 trajectory.** The Patch 0540 scoping document's seven Layer 3 targets table now shows Target 1 (B.1.q4) at Layer 3 closure; Targets 2–7 unchanged at sketch Layer 2.
-- New directory `flagship_papers/dynamical_substrate_law/layer3_promotion/` established as venue for F.1 Layer 3 promotion work, parallel to the `reviewer_pause/` directory pattern.
+- New directory `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/` established as venue for F.1 Layer 3 promotion work, parallel to the `reviewer_pause/` directory pattern.
 
 ### §13.2 What did NOT change
 

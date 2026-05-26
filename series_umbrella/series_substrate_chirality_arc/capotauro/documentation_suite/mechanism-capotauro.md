@@ -183,4 +183,4 @@ Capotauro v1.0's 10 foundational inputs (FI-C-1 through FI-C-10) extend to v2.0'
 
 ---
 
-*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. For the formal mathematical exposition, see `flagship_papers/capotauro/capotauro.tex`. For Tier-4 verbatim reasoning, see `flagship_papers/capotauro/sketches/` + `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md`.*
+*Maintainer: Dr. Thomas Lee Abshier ND, Hyperphysics Institute. For the formal mathematical exposition, see `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex`. For Tier-4 verbatim reasoning, see `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/` + `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reasoning-capotauro.md`.*

@@ -22,13 +22,13 @@ The Reading C closure trajectory (OPEN-FI-C-9-FP-MECHANISM Layer 3) advanced sub
 ## Where to find detail
 
 - **Latest session logs:** `session_logs/2026-05-17_session_127_log.md` through `session_logs/2026-05-17_session_130_log.md` (per-session Template-B retrospective synthesis entries).
-- **Latest Tier 4 reasoning:** `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` §"Session 130 — Q5 Layer 2 closure via Substrate-Locality Unification" (latest entry; prior Session-127/128/129 entries above).
-- **Transcript pointer-map:** `flagship_papers/capotauro/documentation_suite/transcript-capotauro.md` transactions 088–095 (Sessions 127–130).
-- **Development vignettes:** `flagship_papers/capotauro/documentation_suite/development-capotauro.md` Sessions-127–130 vignettes appended (Reading C closure arc).
-- **Active sketch:** `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (997 lines; §11 Q1'.A closure, §12 superseded Q3 attempt preserved per founders_voice/004 discipline, §13 corrected Q3 + Q4 dissolution, §14 Q5 Layer 2 closure with Substrate-Locality Unification theorem and Finding C-W40 statement).
+- **Latest Tier 4 reasoning:** `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reasoning-capotauro.md` §"Session 130 — Q5 Layer 2 closure via Substrate-Locality Unification" (latest entry; prior Session-127/128/129 entries above).
+- **Transcript pointer-map:** `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/transcript-capotauro.md` transactions 088–095 (Sessions 127–130).
+- **Development vignettes:** `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/development-capotauro.md` Sessions-127–130 vignettes appended (Reading C closure arc).
+- **Active sketch:** `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (997 lines; §11 Q1'.A closure, §12 superseded Q3 attempt preserved per founders_voice/004 discipline, §13 corrected Q3 + Q4 dissolution, §14 Q5 Layer 2 closure with Substrate-Locality Unification theorem and Finding C-W40 statement).
 - **Prior arc handover (Sessions 124–126):** `handovers/2026-05-17_session_127_reading_c_closure_trajectory.md` — the Reading C closure-trajectory consolidation handover, moved into the new `handovers/` folder by the Patch 0422 parallel-window refactor (was previously at `sketches/Reading_C_closure_trajectory_handover.md` at commit `8acdb63`).
-- **Active script:** `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (Q1' / W-bracelet geometry verification; Finding C-W36 anchor).
-- **Founder's voice:** `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (~180 lines; verbatim Session 120 confrontation).
+- **Active script:** `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` (Q1' / W-bracelet geometry verification; Finding C-W36 anchor).
+- **Founder's voice:** `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` (~180 lines; verbatim Session 120 confrontation).
 - **Live registry entries:** `research_frontier.md` §OPEN-SD-CHIR-PRIMITIVE (umbrella; NEW Patch 0422), §OPEN-FI-C-9-FP-MECHANISM (Layer 3 closure trajectory; Q1+Q2+Q3 closed, Q4 dissolved, Q5 Layer 2 closed, Q5 Layer 3 + Q6 + Q7 open), §OPEN-FP-SF-2-CHIR (W-bracelet sector under umbrella). Findings C-W35 through C-W40 registered.
 
 ## Step-by-step audit of this session's handover (Sessions 127–130 arc, Patch 0426)
@@ -50,7 +50,7 @@ The Reading C closure trajectory (OPEN-FI-C-9-FP-MECHANISM Layer 3) advanced sub
   - **TATWD integration audit:** N/A. `CPP_the_theory.md` Last-updated unchanged since Capotauro v1.0 SHIP; Reading C trajectory is sub-claim (b) work, not a TATWD-triggering v1.0 SHIP or architecture event. Re-audit at Q5 Layer 3 closure.
 - **Step F (reviewer artifacts):** N/A. No reviewer correspondence in this arc.
 - **Step G (protocol/OS updates):** ✓ — `OPEN-WORKFLOW-PASTE-TRUNCATION` registered in organizational_frontier.md (terminal paste truncation on long multi-paragraph commit `-m` messages; two-session recurrence; workaround candidate `git commit -F message-file.txt`).
-- **Step H (this document):** ✓ — file at `handovers/2026-05-17_session_130_capotauro_reading_c_closure_arc.md` per the chronological handovers/ folder convention adopted in commit `784d542` (Session 127 parallel-window infrastructure refactor: "Patch 0422: Handover file consolidation - one folder, chronological naming"). NB: the original cumulative-drop-in for Patch 0426 placed this file at the pre-refactor path `flagship_papers/capotauro/documentation_suite/handover-capotauro.md`; reconciled in-session to the new path before commit. The pre-refactor path is no longer tracked.
+- **Step H (this document):** ✓ — file at `handovers/2026-05-17_session_130_capotauro_reading_c_closure_arc.md` per the chronological handovers/ folder convention adopted in commit `784d542` (Session 127 parallel-window infrastructure refactor: "Patch 0422: Handover file consolidation - one folder, chronological naming"). NB: the original cumulative-drop-in for Patch 0426 placed this file at the pre-refactor path `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/handover-capotauro.md`; reconciled in-session to the new path before commit. The pre-refactor path is no longer tracked.
 
 ## Recent session count
 

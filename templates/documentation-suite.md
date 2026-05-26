@@ -21,7 +21,7 @@ Every CPP paper has up to 8 companion `.md` files in the canonical doc-suite, pl
 | `FAQ-[S]-[N].md` | General readers + web | Anticipated questions and clear answers (legacy-allowed; not required for papers adopted ≥ 22 April 2026) |
 | `keywords-[S]-[N].md` | SEO / web tooling / search | Keywords, PACS/MSC codes, elevator pitch |
 
-In addition, **every paper carries a `changelog-[S]-[N].md` file from v0.1 onward** (adopted Patch 0408 Session 115; codified Patch 0409 Session 116). This is the canonical version archaeology — replacing the historical pattern of putting CHANGELOG comment blocks in `.tex` headers and visible version-history paragraphs in `.tex` title blocks. The changelog file is maintained continuously during drafting (unlike the 7-file canonical doc-suite which is produced post-v1.0). See `operating_system.md` ``Version-archaeology architecture rule'' for the convention and `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` for the reference implementation.
+In addition, **every paper carries a `changelog-[S]-[N].md` file from v0.1 onward** (adopted Patch 0408 Session 115; codified Patch 0409 Session 116). This is the canonical version archaeology — replacing the historical pattern of putting CHANGELOG comment blocks in `.tex` headers and visible version-history paragraphs in `.tex` title blocks. The changelog file is maintained continuously during drafting (unlike the 7-file canonical doc-suite which is produced post-v1.0). See `operating_system.md` ``Version-archaeology architecture rule'' for the convention and `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md` for the reference implementation.
 
 **Handover files no longer live in `documentation_suite/`** (changed 17 May 2026, Patch 0422). Per `operating_system.md` §15, handover files have migrated to `handovers/` at the repo root, with the naming convention `YYYY-MM-DD_session_NNN_<scope>.md`. The pre-Patch-0422 per-paper file `documentation_suite/handover-[S]-[N].md` is no longer canonical for new handover writes; the documentation_suite folder now houses session-continuity for the doc-suite proper plus the `transcript-[S]-[N].md` lab-notebook pointer-map.
 
@@ -487,7 +487,7 @@ Unlike the 7-file canonical doc-suite (which is produced post-v1.0), `changelog-
 ```
 
 ### Reference implementation
-`flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` is the v1.0 reference implementation (Patch 0408, Session 115).
+`series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md` is the v1.0 reference implementation (Patch 0408, Session 115).
 
 ### Filename rule
 Filename matches `changelog-[S]-[N].md` for series papers (e.g., `changelog-SS-9.md`, `changelog-SF-4.md`) and `changelog-<paper>.md` for flagship papers without an `[S]-[N]` identifier (e.g., `changelog-capotauro.md`).

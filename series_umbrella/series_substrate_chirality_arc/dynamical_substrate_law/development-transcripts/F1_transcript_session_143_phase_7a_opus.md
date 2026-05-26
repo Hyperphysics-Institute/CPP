@@ -128,7 +128,7 @@ Patch 0572h delivered the three paper-specific registry updates (C11 bibliograph
 
 ### Workflow finding: baseline-extension pattern for editing files outside the sandbox
 
-The patchbuild sandbox at `/tmp/s143/patchbuild/CPP/` had been accumulating doc-suite + code files but did not contain the three target files (`bibliography/cpp_references.bib`, `INDEX.md`, `flagship_papers/dynamical_substrate_law/README.md`) at their origin/main state. Opus introduced a **baseline-extension commit** convention: copy the three target files at their origin/main state into the patchbuild repo as a "baseline-extension" commit, then make Patch 0572h modifications on top, then format-patch only the Patch 0572h commit. The verify repo received the same baseline-extension treatment so `git am --3way` could apply Patch 0572h cleanly.
+The patchbuild sandbox at `/tmp/s143/patchbuild/CPP/` had been accumulating doc-suite + code files but did not contain the three target files (`bibliography/cpp_references.bib`, `INDEX.md`, `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/README.md`) at their origin/main state. Opus introduced a **baseline-extension commit** convention: copy the three target files at their origin/main state into the patchbuild repo as a "baseline-extension" commit, then make Patch 0572h modifications on top, then format-patch only the Patch 0572h commit. The verify repo received the same baseline-extension treatment so `git am --3way` could apply Patch 0572h cleanly.
 
 The pattern surfaced as a **workflow methodology observation** (not yet a formal METH candidate; the pattern is sandbox-mechanical rather than CPP-scientific).
 
@@ -144,7 +144,7 @@ Both target registry files (`bibliography/cpp_references.bib` last updated 26 Ap
 
 ## Phase 5: Curated transcripts directory establishment (Patch 0572i; this Patch)
 
-Patch 0572i is the final Phase 7A item. The deliverable is the curated transcripts directory `flagship_papers/dynamical_substrate_law/development-transcripts/` + this README documenting the curation protocol + the deferral discipline for Sessions 138–142 (raw transcripts not in `/mnt/transcripts/`) + this curated transcript file for Session 143 itself.
+Patch 0572i is the final Phase 7A item. The deliverable is the curated transcripts directory `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/development-transcripts/` + this README documenting the curation protocol + the deferral discipline for Sessions 138–142 (raw transcripts not in `/mnt/transcripts/`) + this curated transcript file for Session 143 itself.
 
 ### The deferral discipline as scholarly-record honesty
 

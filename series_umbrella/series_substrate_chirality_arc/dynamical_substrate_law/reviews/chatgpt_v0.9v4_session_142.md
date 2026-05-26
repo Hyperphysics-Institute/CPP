@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 v4 (post-Patch 0569b; 33-page PDF) — **see diagnostic-framing note below regarding submission-version uncertainty**
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 v4 (post-Patch 0569b; 33-page PDF) — **see diagnostic-framing note below regarding submission-version uncertainty**
 - **Paper version commit**: `48ba487` (Patch 0569b, Session 142) — Patch 0569b Round 3 reviewer-driven adjustments (5 atomic edits: 3 Scenario A closure language extensions + 1 explicit declarative sentence + 1 TikZ dependency-graph figure).
 - **Review session**: Session 142
 - **Review archived by**: Patch 0569c (this file)

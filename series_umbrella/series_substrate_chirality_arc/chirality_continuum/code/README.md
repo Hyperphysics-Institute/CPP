@@ -23,7 +23,7 @@ All five scripts are standalone Python — no external dependencies beyond
 the Python standard library (`math`).  Tested with Python 3.10+.
 
 ```bash
-cd flagship_papers/chirality_continuum/code/
+cd series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/
 python B1_verify_chi6_substrate_handle.py
 python B2_verify_michel_rho_va.py
 python B3_verify_chirality_helicity_coincidence.py
@@ -77,15 +77,15 @@ Future-collider improvements (2030–2040+) could tighten:
 
 ## Cross-references
 
-- Paper: `flagship_papers/chirality_continuum/chirality_continuum.tex`
-- Companion suite: `flagship_papers/chirality_continuum/documentation_suite/`
+- Paper: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex`
+- Companion suite: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/`
 - Programme registers:
   - `theorem-registry.md` SD section theorems #65 (THEO-CHIR-CONT-1) + #66 (THEO-CHIR-CONT-2) + #67 (THEO-CHIR-CONT-3)
   - `methods_catalogue.md` METH-CHIR-CONT-1+2+3+4
   - `predictions.md` Section 6 chirality continuum row
   - `master_glossary.md` "Chirality continuum terms" section
 - TATWD chapter: `programme_orientation.md` Chapter 22h
-- Capotauro v2.0 substrate-level prerequisites: `flagship_papers/capotauro/capotauro.tex` v2.0 v1.0 SHIPPED §§ 3, 5, 6
+- Capotauro v2.0 substrate-level prerequisites: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v2.0 v1.0 SHIPPED §§ 3, 5, 6
 - Falsifier 6 inventory: Capotauro v2.0 §13.4
 
 ## Author

@@ -34,7 +34,7 @@ The Reading C closure trajectory has reached **full Layer 3 closure on the Q5 pi
 
 ### 3.1 Canonical proof source
 
-`flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (1414 lines, single source of truth for Reading C work)
+`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (1414 lines, single source of truth for Reading C work)
 - §9 (Patch 0417, Session 124): Q1+Q2 group-theoretic verification via Coxeter parabolic-subgroup theory; Finding **C-W35** registered (face-aligned algebraic-substrate-equality, sub-result; later superseded contextually by C-W37)
 - §10 (Patch 0418, Session 125): W-bracelet centroid directions = 600-cell vertex directions; 10 bracelets per vertex as Petrie hexagons of first-shell icosahedron; Finding **C-W36**
 - §11 (Patch 0419, Session 126): K3-base = triangular face of host-vertex's first-shell icosahedron = 600-cell face; cosine identity √3/2; Finding **C-W37**; Q1' resolved at Layer 2 vertex-aligned
@@ -47,17 +47,17 @@ The Reading C closure trajectory has reached **full Layer 3 closure on the Q5 pi
 
 ### 3.2 Tier 4 reasoning narrative
 
-`flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` (~95 KB) — Sessions 124–131 entries integrated; Tier 4 verbatim Opus reasoning per §4 Four-Tier Documentation Discipline
+`series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reasoning-capotauro.md` (~95 KB) — Sessions 124–131 entries integrated; Tier 4 verbatim Opus reasoning per §4 Four-Tier Documentation Discipline
 
 ### 3.3 Founder's voice
 
-`flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (Patch 0422, Session 127) — verbatim Session 120 founder-confrontation that triggered the v0.9 §2 reframe from spontaneous-symmetry-breaking to primitive-feature framing; seven-claim structural distillation grounds the chirality-is-primitive methodology
+`series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` (Patch 0422, Session 127) — verbatim Session 120 founder-confrontation that triggered the v0.9 §2 reframe from spontaneous-symmetry-breaking to primitive-feature framing; seven-claim structural distillation grounds the chirality-is-primitive methodology
 
-Plus prior founders_voice files at `flagship_papers/capotauro/founders_voice/` (001–004) for Session 123 docs-arc discipline material; relevant to programme-level discussion of Tier-1 verbatim capture and parallel-window workflow.
+Plus prior founders_voice files at `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/` (001–004) for Session 123 docs-arc discipline material; relevant to programme-level discussion of Tier-1 verbatim capture and parallel-window workflow.
 
 ### 3.4 Code verification
 
-`flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (Patches 0418–0419) — standalone NumPy verification of Finding C-W36 (1200 W-bracelet centroids reduce to 120 vertex directions × 10 bracelets each via Petrie-hexagon decomposition) and Finding C-W37's face-host bipartite structure (Counter({2: 1200}) on 1200 600-cell faces)
+`series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` (Patches 0418–0419) — standalone NumPy verification of Finding C-W36 (1200 W-bracelet centroids reduce to 120 vertex directions × 10 bracelets each via Petrie-hexagon decomposition) and Finding C-W37's face-host bipartite structure (Counter({2: 1200}) on 1200 600-cell faces)
 
 ### 3.5 Programme-level registry updates
 
@@ -75,10 +75,10 @@ Plus prior founders_voice files at `flagship_papers/capotauro/founders_voice/` (
 
 ### 3.7 Capotauro documentation suite (active post-v1.0)
 
-- `flagship_papers/capotauro/documentation_suite/development-capotauro.md` — Tier 3 session vignettes Sessions 124–131 appended
-- `flagship_papers/capotauro/documentation_suite/transcript-capotauro.md` — Tier 2 transaction pointer-map Sessions 124–131
-- `flagship_papers/capotauro/documentation_suite/changelog-capotauro.md` — version archaeology Patches 0417–0432
-- `flagship_papers/capotauro/documentation_suite/{mechanism,glossary,phenomena,philosophy,reviews,keywords}-capotauro.md` — Section A standalone companions (relevant for downstream anthology + TATWD writing)
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/development-capotauro.md` — Tier 3 session vignettes Sessions 124–131 appended
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/transcript-capotauro.md` — Tier 2 transaction pointer-map Sessions 124–131
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md` — version archaeology Patches 0417–0432
+- `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/{mechanism,glossary,phenomena,philosophy,reviews,keywords}-capotauro.md` — Section A standalone companions (relevant for downstream anthology + TATWD writing)
 
 ### 3.8 Predecessor handovers (chronological chain)
 

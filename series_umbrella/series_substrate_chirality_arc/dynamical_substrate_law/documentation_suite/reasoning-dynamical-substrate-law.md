@@ -1,6 +1,10 @@
+> **Path-migration notice (Patch 0571e, 26 May 2026):** The path references in this file have been bulk-updated to reflect the Patch 0571d structural migration of this paper from `flagship_papers/dynamical_substrate_law/` to `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/`. The substantive narrative content (Tier 4 reasoning / Tier 3 vignettes / Tier 2 transactions) is unchanged from its commit-time form per §17.8 immutable-checkpoint discipline; only the path-pointer references within the narrative have been updated so that they resolve to the current file locations. Readers should treat the historical narrative entries as authored at the time when the paper lived at the old path; the new paths are retroactively-correct pointers, not retroactively-correct history. See `series_umbrella/README-SU.md` for the migration rationale.
+
+---
+
 # Tier 4 — Verbatim Opus Reasoning Narrative: Dynamical Substrate Law
 
-**Paper:** F.1 = Dynamical-Substrate-Law gate (flagship paper home: `flagship_papers/dynamical_substrate_law/`, paper not yet assembled — closure trajectory at sketch level pending Phase 2 foundations work).
+**Paper:** F.1 = Dynamical-Substrate-Law gate (flagship paper home: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/`, paper not yet assembled — closure trajectory at sketch level pending Phase 2 foundations work).
 
 **File started:** 21 May 2026 (Session 138 close, Patch 0530 — handover protocol execution per §15 Step D, Thomas's directive "record all substantive physics verbatim").
 
@@ -30,9 +34,9 @@ The F.1 sub-question closure trajectory at Session 138 (Patches 0522–0529) att
 - Verbatim quotations from existing repository files (recoverable from source pointers below)
 
 **Source pointers for excluded verbatim content:**
-- Polished sketch sections preserving the derivation work: `flagship_papers/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11 (Phase 1), §12 (Phase 2), §13 (Phase 3), §14 (Phase 4), §14.16–§14.17 (Patch 0528 calibration), §14.16 forward (decision-gate re-engagement)
-- Numerical verification scripts (machine-precision verified): `flagship_papers/dynamical_substrate_law/code/verify_phase1.py`, `verify_phase3.py`, `verify_phase4.py`
-- Decision gate verdict structure: `flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` §7 (original), §14 (Patch 0529 re-engagement)
+- Polished sketch sections preserving the derivation work: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` §11 (Phase 1), §12 (Phase 2), §13 (Phase 3), §14 (Phase 4), §14.16–§14.17 (Patch 0528 calibration), §14.16 forward (decision-gate re-engagement)
+- Numerical verification scripts (machine-precision verified): `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py`, `verify_phase3.py`, `verify_phase4.py`
+- Decision gate verdict structure: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` §7 (original), §14 (Patch 0529 re-engagement)
 - Reviewer package for ChatGPT: `/mnt/user-data/outputs/F1_closure_reviewer_package_for_ChatGPT.md` (assembled between Patches 0527 and 0528)
 - ChatGPT review verdict: integrated into Patch 0528 calibration; full reviewer text preserved at user-side
 - Programme-state registries: `research_frontier.md`, `future_projects.md` (F.1 entry across Patches 0524–0529)
@@ -561,7 +565,7 @@ The reviewer-pause checkpoint between Patches 0527 and 0528 prevented overclaim 
 **No modifications to v1.0 SHIPPED paper sources:** Chirality Continuum v1.0, Capotauro v2.0 v1.0, SF-2 v1.0, SM-2 v1.0, SF-4 v4.4 all .tex frozen.
 
 **Documentation suite assets created at Patch 0530 (this handover):**
-- `flagship_papers/dynamical_substrate_law/documentation_suite/` directory created.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/` directory created.
 - `reasoning-dynamical-substrate-law.md` (this file) — Tier 4 verbatim Opus reasoning narrative.
 - `handovers/2026-05-21_session_138_F1_sub_question_provisional_closure.md` — Step H paste-ready handover document at canonical location.
 
@@ -1763,7 +1767,7 @@ The scoping document's recommendation for G.a was made on **strategic-value** gr
 
 The Session 139 close handover §5 captured the five identities I1–I5 with brief derivations + four-term expansion + golden-ratio reduction + sanity check + suggested 13-section structure. The 538-line original document at `/home/claude/F1_layer3_b1q4_algebraic_derivation.md` in the Session 139 window was ephemeral; only the §5 condensation survived to Session 140 open.
 
-Patch 0541's re-authoring at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` preserves the load-bearing structural content from §5: the five identities with their derivations; the four-term expansion of $\sum_j(\hat{u}_j^v\cdot\hat{n})\hat{u}_j^v$ with Terms A, B, C, D; the boxed final result; the sanity check at $v_{\text{host}}$ recovering Phase 1 Finding DSL-1.
+Patch 0541's re-authoring at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` preserves the load-bearing structural content from §5: the five identities with their derivations; the four-term expansion of $\sum_j(\hat{u}_j^v\cdot\hat{n})\hat{u}_j^v$ with Terms A, B, C, D; the boxed final result; the sanity check at $v_{\text{host}}$ recovering Phase 1 Finding DSL-1.
 
 The Patch 0541 document elaborates each step with full derivational discipline that the §5 condensation compressed. The five identities are presented as self-contained sub-results with explicit derivations (I1 from G1 + chord-length computation + $\phi^2 = \phi+1$ identities; I2 from $\alpha^2+\beta^2=1$ unitarity + verification via $(2+\phi)(\phi+1) = 4\phi+3$ cross-check; I3 from antipodal-pair cancellation, elementary, with explicit remark that Schur is NOT required here; I4 via three-step Schur application — group-invariance, real-irreducibility on $H_\perp^v$, trace computation $12 = 3c \Rightarrow c=4$; I5 from $\phi^2 = \phi+1$ in numerator + denominator, with alternative derivation via $1/\phi^2 = 2-\phi$ for cross-check). The main derivation traces Terms A, B, C, D individually with the I3 vanishing of B and C and the I4 + projection contribution of D both made explicit.
 
@@ -1826,7 +1830,7 @@ Three surgical operations on the doc-suite files: rename Patch 0541's §27 → �
 ### §29.3 What 0541a explicitly does NOT do
 
 - No modification of Patch 0540j's §27 (in reasoning) or its Vignette 14 (in development) — preserved as historical record per §17.8 immutable-checkpoint discipline.
-- No modification of the substantive Patch 0541 Layer 3 promotion document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` — the Layer 3 derivation work is unaffected; the collision-correction is purely on cross-references and section numbering.
+- No modification of the substantive Patch 0541 Layer 3 promotion document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md` — the Layer 3 derivation work is unaffected; the collision-correction is purely on cross-references and section numbering.
 - No modification of Patch 0541's commit message at `416f85e` (immutable git history). The commit message references "§27.1 reasoning" and "transaction 024" which were correct at the time of authoring; the §28.1 / transaction 025 renaming reflects the post-0540j programme state.
 - No modification of `research_frontier.md` or `future_projects.md` (no cross-references in those files to the renumbered sections).
 - No new Findings registered. No F.1 sub-question status change. No v1.0 SHIPPED edits. No Patches 0531-0540j immutable content modifications beyond the doc-suite collision-fix renames in Patch 0541's content. No reviewer-pause checkpoint modifications.
@@ -1865,7 +1869,7 @@ Target 2 is the **first Patch in the Priority 1 chain** Target 2 → Target 3, p
 
 ### §30.2 What this Patch substantively does
 
-Patch 0542 makes the finite-dimensional scope qualifier (registered at Patch 0538 §14.2 as "finite-dimensional realizations of $P_{TI}$ on finite-dimensional operator spaces within standard Wigner-Eckart machinery") into a **load-bearing axiomatic commitment AC-1** within the Layer 3 document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md`. AC-1 is stated as a derived consequence of Reading C + first-shell-content matter-state construction (§2.4 of the Layer 3 document). The proof of the Minimal Algebraic Realization Theorem (Theorem 4.0 of the Layer 3 document) is given in four formalized steps (§5.1–§5.4), with explicit identification of where AC-1 is used at each step (§8.1).
+Patch 0542 makes the finite-dimensional scope qualifier (registered at Patch 0538 §14.2 as "finite-dimensional realizations of $P_{TI}$ on finite-dimensional operator spaces within standard Wigner-Eckart machinery") into a **load-bearing axiomatic commitment AC-1** within the Layer 3 document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md`. AC-1 is stated as a derived consequence of Reading C + first-shell-content matter-state construction (§2.4 of the Layer 3 document). The proof of the Minimal Algebraic Realization Theorem (Theorem 4.0 of the Layer 3 document) is given in four formalized steps (§5.1–§5.4), with explicit identification of where AC-1 is used at each step (§8.1).
 
 The Layer 3 document additionally develops the rigorous representation theory of $P_{TI}$ in §3: explicit character table with orthogonality relations verified (§3.1), Maschke's theorem with explicit projector formulas (§3.2), tensor product structure with multiplication table (§3.3), and Frobenius-Schur indicator $+1$ giving real-irrep structure (§3.4). The non-multiplicative-matrix-action ruling-out from Patch 0536 §12.6 is restated rigorously in §6 via minimal-polynomial diagonalization of $M^2 = \mathbb{1}$ on finite-dimensional $V$ under AC-1.
 
@@ -1905,7 +1909,7 @@ This Patch enables Target 3 to proceed cleanly. The chain closure substantively 
 
 ### §30.6 The four-artifact handover convention sustained
 
-The Patch 0541 four-artifact convention (substantive document + Tier 4 reasoning + Tier 3 vignette + Tier 2 transcript transaction + registry updates) is sustained at Patch 0542: substantive document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (586 lines, 14 sections + §0 firewall with 11 anti-priorities) + Tier 4 reasoning (this §30) + Tier 3 vignette (Vignette 17 in `development-dynamical-substrate-law.md`) + Tier 2 transcript transaction (transaction 027 in `transcript-dynamical-substrate-law.md`) + registry updates (`research_frontier.md` Last-updated header Patch 0542 entry + `future_projects.md` F.1 entry Patch 0542 paragraph). All shipped together in single Patch per standing closure-Patch convention.
+The Patch 0541 four-artifact convention (substantive document + Tier 4 reasoning + Tier 3 vignette + Tier 2 transcript transaction + registry updates) is sustained at Patch 0542: substantive document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b2q1_framework_axiomatization.md` (586 lines, 14 sections + §0 firewall with 11 anti-priorities) + Tier 4 reasoning (this §30) + Tier 3 vignette (Vignette 17 in `development-dynamical-substrate-law.md`) + Tier 2 transcript transaction (transaction 027 in `transcript-dynamical-substrate-law.md`) + registry updates (`research_frontier.md` Last-updated header Patch 0542 entry + `future_projects.md` F.1 entry Patch 0542 paragraph). All shipped together in single Patch per standing closure-Patch convention.
 
 ### §30.7 Methods catalogue audit at Patch 0542 — standard rep-theory methods, no new entries
 
@@ -2218,7 +2222,7 @@ Thomas's authorization at Session 140 continuation following Patch 0546 apply ("
 
 ### §35.2 What this Patch substantively does
 
-Patch 0547 creates the reviewer-pause checkpoint document `F1_layer3_reviewer_pause_checkpoint_patches_0540_0546_v1.0.md` at `flagship_papers/dynamical_substrate_law/reviewer_pause/` — 297 lines, 11 sections following `templates/reviewer_pause_template.md` structure (§0 framing + §1 programme context + §2 7-target table + §3 per-Patch closure summaries + §4 cumulative observations + §5 status upgrade question + §6 anti-priorities + §7 explicit asks + §8 submission workflow + §9 reference documents + §10 summary).
+Patch 0547 creates the reviewer-pause checkpoint document `F1_layer3_reviewer_pause_checkpoint_patches_0540_0546_v1.0.md` at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/` — 297 lines, 11 sections following `templates/reviewer_pause_template.md` structure (§0 framing + §1 programme context + §2 7-target table + §3 per-Patch closure summaries + §4 cumulative observations + §5 status upgrade question + §6 anti-priorities + §7 explicit asks + §8 submission workflow + §9 reference documents + §10 summary).
 
 The document is a PACKAGING DOCUMENT parallel to Patch 0538's `F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md` (455 lines) for the sketch Layer 2 reviewer-pause cycle. This Patch's checkpoint document is more compact (~65% of Patch 0538's size) reflecting the more focused scope of Layer 3 promotion arc closures (7 target-closure Patches) vs Layer 2 sub-question closures (7 sub-question closure Patches across multiple commitment trajectories).
 
@@ -2365,7 +2369,7 @@ Three places this Tier 4 section could overstate:
 
 ### §37.1 What this Patch does, structurally
 
-Creates a NEW Layer 3 promotion document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~210 lines). Five-section structure: §0 firewall + 12 anti-priorities; §1 Layer 3 promotion context citing the four immutable source materials (Patch 0540 §2.7 + Patch 0544 §6 + Patch 0546 §8 + Patch 0548 §3.1); §2 criteria-to-clause mapping table verifying that Patch 0544 §6 Theorem 6.1 satisfies all three Target 7 promotion criteria from Patch 0540 §2.7; §3 scope-boundary statement (the primary section per ChatGPT) with verbatim ChatGPT phrasing plus a five-item exclusion list; §4 "Why retroactive recognition alone was judged insufficient" subsection (verbatim ChatGPT-requested title); §5 self-checkpoint and closure summary.
+Creates a NEW Layer 3 promotion document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md` (~210 lines). Five-section structure: §0 firewall + 12 anti-priorities; §1 Layer 3 promotion context citing the four immutable source materials (Patch 0540 §2.7 + Patch 0544 §6 + Patch 0546 §8 + Patch 0548 §3.1); §2 criteria-to-clause mapping table verifying that Patch 0544 §6 Theorem 6.1 satisfies all three Target 7 promotion criteria from Patch 0540 §2.7; §3 scope-boundary statement (the primary section per ChatGPT) with verbatim ChatGPT phrasing plus a five-item exclusion list; §4 "Why retroactive recognition alone was judged insufficient" subsection (verbatim ChatGPT-requested title); §5 self-checkpoint and closure summary.
 
 **What the Patch deliberately does NOT do.** It does not re-derive Theorem 6.1 — Patch 0544 §6 remains the substantive theorem source. It does not modify Patch 0544's content, Patch 0546 §8's retroactive-recognition paragraph, the Patch 0547 checkpoint document, or the Patch 0548 calibration response feedback record. It does not introduce new mathematics — no new identities, theorems, lemmas, or proof steps. The Patch is **additive closure-governance normalization**, not a mathematical Patch.
 
@@ -2465,7 +2469,7 @@ Six explicit non-actions:
 
 ### §39.1 What this Patch does, structurally
 
-Creates a NEW publication-grade .tex artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex` (269 lines of LaTeX, compiles to an 8-page PDF). The artifact hardens **Patch 0544 §3.3 Theorem 3.3.3** (Perturbation-Theory Propagation Rule) together with **Corollary 3.3.4** (Shell-locality of $\mathcal{O}(\delta^n)$ contributions) from sketch-document Layer 3 rigor to publication-grade rigor. The substantive theorem content is unchanged from Patch 0544 §3.3; the contribution of this Patch is the rigorisation of the proof, the explicit isolation of hypotheses, and the formal incorporation of the Patch 0548 §3.2 scope qualifier into the theorem statement.
+Creates a NEW publication-grade .tex artifact at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/perturbation_locality_propagation.tex` (269 lines of LaTeX, compiles to an 8-page PDF). The artifact hardens **Patch 0544 §3.3 Theorem 3.3.3** (Perturbation-Theory Propagation Rule) together with **Corollary 3.3.4** (Shell-locality of $\mathcal{O}(\delta^n)$ contributions) from sketch-document Layer 3 rigor to publication-grade rigor. The substantive theorem content is unchanged from Patch 0544 §3.3; the contribution of this Patch is the rigorisation of the proof, the explicit isolation of hypotheses, and the formal incorporation of the Patch 0548 §3.2 scope qualifier into the theorem statement.
 
 **The .tex artifact's structure** (8 sections + bibliography): §1 Introduction with provenance note on the prior "§6 Theorem 6.1" citation identifier discrepancy + statement of the main result; §2 Preliminaries (600-cell edge graph, Mechanism A as framework axiom, framework-local current construction); §3 Proof organised into three lemmas (path-amplitude expansion, perturbed-step counting, connected-subgraph confinement); §4 Shell-locality corollary; §5 Specialisation to $\mathcal{O}(\delta^1)$ recovering Patch 0534 §10 structural argument; §6 Scope and explicit exclusions (five exclusion classes E1–E5); §7 Cross-reference to spatial-sector analog at Capotauro v2.0 §3 Theorem 3.1; §8 Conclusion; bibliography. The artifact is internally consistent on the corrected citation (Theorem 3.3.3 + Corollary 3.3.4) throughout.
 
@@ -2523,7 +2527,7 @@ The discrepancy is genuinely citation drift originating in the Patch 0544 commit
 
 ### §40.1 What this Patch does, structurally
 
-Creates a NEW publication-grade .tex artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex` (207 lines of LaTeX, compiles to 6-page PDF, 261 KB, no undefined references after standard 2nd pdflatex pass). The artifact hardens Patch 0544 §4.1 Theorem 4.1.1 from sketch-document Layer 3 rigor (a two-line algebraic computation) to publication-grade rigor with explicit hypothesis tracking, isolation of the tangent-hyperplane geometric content as Lemma 3.1.1, and a five-class exclusion enumeration.
+Creates a NEW publication-grade .tex artifact at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_perpendicularity.tex` (207 lines of LaTeX, compiles to 6-page PDF, 261 KB, no undefined references after standard 2nd pdflatex pass). The artifact hardens Patch 0544 §4.1 Theorem 4.1.1 from sketch-document Layer 3 rigor (a two-line algebraic computation) to publication-grade rigor with explicit hypothesis tracking, isolation of the tangent-hyperplane geometric content as Lemma 3.1.1, and a five-class exclusion enumeration.
 
 **Why the .tex is smaller than Patch 0550's** (207 vs 269 lines): Theorem 4.1.1's underlying proof is structurally more compact than Theorem 3.3.3's. The proof of perpendicularity is two-line algebra (subtraction of equal projections gives zero); the proof of perturbation-theory propagation required three lemmas of structural argument (path-amplitude expansion + perturbed-step counting + connected-subgraph confinement). Publication-grade hardening preserves the relative complexity ratio.
 
@@ -2570,7 +2574,7 @@ The proof of Lemma 3.1.1 uses only Lemma 2.3.1 (G1, imported) + hypothesis (H1) 
 
 ### §41.1 What this Patch does, structurally
 
-Creates a NEW publication-grade .tex artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/host_to_first_shell_projection.tex` (265 lines of LaTeX, compiles to 7-page PDF, 274 KB, no undefined references after standard 2nd pdflatex pass). The artifact hardens Patch 0544 §4.2 Theorem 4.2.1 from sketch-document Layer 3 rigor to publication-grade rigor with explicit hypothesis tracking, explicit factoring of two supporting lemmas (golden-ratio identities + chord-length computation), substrate-physics consequence corollaries, and a five-class exclusion enumeration.
+Creates a NEW publication-grade .tex artifact at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/host_to_first_shell_projection.tex` (265 lines of LaTeX, compiles to 7-page PDF, 274 KB, no undefined references after standard 2nd pdflatex pass). The artifact hardens Patch 0544 §4.2 Theorem 4.2.1 from sketch-document Layer 3 rigor to publication-grade rigor with explicit hypothesis tracking, explicit factoring of two supporting lemmas (golden-ratio identities + chord-length computation), substrate-physics consequence corollaries, and a five-class exclusion enumeration.
 
 **Why the .tex sits between Patches 0550 and 0551 in size** (265 vs 269 vs 207 lines): Theorem 4.2.1's proof uses four distinct golden-ratio identities (Lemma 2.4.1: $\phi^2 = \phi + 1$, $1/\phi = \phi - 1$, $1 - \phi = -1/\phi$, $1/\phi^2 = 2 - \phi$) plus a chord-length sublemma. Patch 0550's three-lemma structural argument was more architecturally involved; Patch 0551's two-step proof was the most compact. Patch 0552's algebraic computation needs the most explicit identity-factoring of the three.
 
@@ -2624,7 +2628,7 @@ With Patch 0552 landing, the F.1 sub-question Layer 3 stack publication-grade ha
 
 ### §42.1 What this Patch does, structurally
 
-Creates a NEW scoping document at `flagship_papers/dynamical_substrate_law/sketches/F1_flagship_paper_assembly_scoping.md` (351 lines of markdown; structurally parallel to Patch 0540's `F1_layer3_promotion_scoping.md` which scoped the Layer 3 promotion arc). The scoping document has nine sections + §0 firewall with 16 specific anti-priorities. It does NOT create any paper content; the first `.tex` content for the flagship paper itself is anticipated at Patch 0554 (paper skeleton).
+Creates a NEW scoping document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_flagship_paper_assembly_scoping.md` (351 lines of markdown; structurally parallel to Patch 0540's `F1_layer3_promotion_scoping.md` which scoped the Layer 3 promotion arc). The scoping document has nine sections + §0 firewall with 16 specific anti-priorities. It does NOT create any paper content; the first `.tex` content for the flagship paper itself is anticipated at Patch 0554 (paper skeleton).
 
 **Document structure:**
 - §0 Firewall + 16 anti-priorities (including the load-bearing anti-priority #8: "NO erasure of Layer distinction" per ChatGPT principle)
@@ -2693,7 +2697,7 @@ The §4 sequence breaks paper assembly into ~17 bounded Patches (0554 through 05
 
 ### §43.1 What this Patch does, structurally
 
-Creates a NEW file `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (338 lines LaTeX) at the **root** of the paper folder per the corpus convention (Thomas's Session 142 clarification: `.tex` files at root, with `hardened_theorems/` subfolder as the first exception). The skeleton contains:
+Creates a NEW file `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (338 lines LaTeX) at the **root** of the paper folder per the corpus convention (Thomas's Session 142 clarification: `.tex` files at root, with `hardened_theorems/` subfolder as the first exception). The skeleton contains:
 
 - Full preamble matching chirality_continuum + SF-4 convention: documentclass + packages (amsmath, tikz, hyperref, etc.) + theorem environments (theorem/proposition/lemma/corollary/conjecture/definition/remark/claim/openproblem)
 - Notation conventions inherited from Capotauro v2.0 + SF-4 + the F.1 hardened theorem artifacts (e.g., $\phig$, $\nhat$, $\vhost$, $\jDInet$, $\omegaPCD$, $\sigcycle$, $\Mthermo$, $\Ih$, $\PTI$)
@@ -2713,7 +2717,7 @@ The skeleton compiles cleanly to a 3-page PDF (title + abstract + ToC + section 
 Thomas's Session 142 clarification: ".tex files at root, PDFs in chat (he enjoys seeing them), but **PDFs NOT in repo except for the final paper** which is needed for OSF posting. Convention restored."
 
 Operationalisation at this Patch:
-- The skeleton `.tex` is committed to the repo at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex`.
+- The skeleton `.tex` is committed to the repo at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex`.
 - The compiled skeleton PDF is **NOT** committed to the repo. It is attached to chat via `present_files` for Thomas's preview.
 - This rule applies to all subsequent assembly Patches (0555-0566): `.tex` modifications committed; PDF previewed in chat but not committed.
 - Exception: the v1.0 SHIPPED PDF at Patch 0569 IS committed to the repo (per Thomas's "needed for OSF posting" framing; following SF-4 v4.4 precedent which committed both `.tex` and `.pdf` at SHIP).
@@ -2802,7 +2806,7 @@ Per §29.4 codified discipline: this Patch is a programme-documentation-audit Pa
 
 ## §45 Patch 0556 — §1 Introduction body insertion (first body-content Patch of the assembly arc)
 
-**Context.** Patch 0555 closed all three documentation drift items at programme-documentation-audit. Patch 0556 opens the body-content sequence of the F.1 flagship paper assembly arc: substitution of the inner placeholder at §1 Introduction (`flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex`) with body content. First Patch executing scoping document §4.2 ("body section assembly: one section per Patch"). Authorised via Thomas's "Please proceed" directive following Patch 0555 ship + push at commit `612a80b`.
+**Context.** Patch 0555 closed all three documentation drift items at programme-documentation-audit. Patch 0556 opens the body-content sequence of the F.1 flagship paper assembly arc: substitution of the inner placeholder at §1 Introduction (`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex`) with body content. First Patch executing scoping document §4.2 ("body section assembly: one section per Patch"). Authorised via Thomas's "Please proceed" directive following Patch 0555 ship + push at commit `612a80b`.
 
 ### §45.1 What this Patch does, structurally
 
@@ -2968,7 +2972,7 @@ No new labeled equations introduced at §4 (consistent with the no-new-content d
 
 ### §48.3 The hypothesis labels H1/H2 across the paper
 
-A note on coordination: the publication-grade hardened theorems at `flagship_papers/dynamical_substrate_law/hardened_theorems/` use hypothesis labels (H1), (H2), (H3) for each theorem's local hypotheses. Patch 0550 uses (H1) Mechanism A + (H2) framework local-current construction + (H3) first order in $\delta$. Patches 0551 and 0552 use (H1) vertex-aligned Reading C + (H2) 600-cell unit-vertex normalisation + (H3) G1 first-shell inner-product primitive. The hypothesis labels are local to each hardened theorem; the same label number (e.g., "H1") refers to different content in different theorems.
+A note on coordination: the publication-grade hardened theorems at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/` use hypothesis labels (H1), (H2), (H3) for each theorem's local hypotheses. Patch 0550 uses (H1) Mechanism A + (H2) framework local-current construction + (H3) first order in $\delta$. Patches 0551 and 0552 use (H1) vertex-aligned Reading C + (H2) 600-cell unit-vertex normalisation + (H3) G1 first-shell inner-product primitive. The hypothesis labels are local to each hardened theorem; the same label number (e.g., "H1") refers to different content in different theorems.
 
 Axioms MA.1 and MA.2 in §4 of the present paper are NOT renumberings of the hardened theorems' (H1)/(H2). The relationship is: at the present paper's scope, Patch 0550's hardened theorem's (H1) and (H2) hypotheses ARE Axioms MA.1 and MA.2 respectively. At Patches 0551 + 0552's hardened theorems, the (H1)-(H3) hypotheses are about Reading C + 600-cell + G1, not about Mechanism A — these depend on §3 framework primitives, not §4 Mechanism A axioms.
 
@@ -3482,9 +3486,9 @@ Patch 0567 is structurally different from the single-substitution body-content P
 
 ### §57.1 What this Patch does, structurally
 
-Creates a new `flagship_papers/dynamical_substrate_law/reviews/` folder (first instance for the F.1 paper). Populates it with 4 files: 3 verbatim reviewer-letter files with standardised metadata headers (per capotauro reviews/ precedent at `flagship_papers/capotauro/reviews/`), plus 1 cross-reviewer synthesis file.
+Creates a new `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviews/` folder (first instance for the F.1 paper). Populates it with 4 files: 3 verbatim reviewer-letter files with standardised metadata headers (per capotauro reviews/ precedent at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/`), plus 1 cross-reviewer synthesis file.
 
-**Reviews folder structure** (following capotauro precedent — 11 reviewer files at `flagship_papers/capotauro/reviews/`):
+**Reviews folder structure** (following capotauro precedent — 11 reviewer files at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/`):
 - `reviews/copilot_v0.9_session_142.md` — verbatim Copilot review + metadata
 - `reviews/chatgpt_v0.9_session_142.md` — verbatim ChatGPT review + metadata
 - `reviews/grok_v0.9_session_142.md` — verbatim Grok review + metadata
@@ -3566,7 +3570,7 @@ Net addition ~150-250 words across abstract + §1 + §7.3 + §8.2 caption + §10
 
 ### §57.7 Methods catalogue Step E audit verdict
 
-Per §29.4: no new METH entry at this Patch. The reviewer-feedback-archival Patch pattern (creating `reviews/` folder + 3 reviewer letter files + cross-reviewer synthesis + classification + response plan) matches the capotauro precedent at `flagship_papers/capotauro/reviews/` (11 reviewer files across 4 review rounds). Pattern is established at corpus level; not at first instance. Methods catalogue audit Patch candidate count remains at 9.
+Per §29.4: no new METH entry at this Patch. The reviewer-feedback-archival Patch pattern (creating `reviews/` folder + 3 reviewer letter files + cross-reviewer synthesis + classification + response plan) matches the capotauro precedent at `series_umbrella/series_substrate_chirality_arc/capotauro/reviews/` (11 reviewer files across 4 review rounds). Pattern is established at corpus level; not at first instance. Methods catalogue audit Patch candidate count remains at 9.
 
 ---
 
@@ -4201,7 +4205,7 @@ Patch 0570 ships the F.1 flagship paper at v1.0 with:
    - Post-v1.0 trajectory (OPEN-FP-F1-3 G1 hardening + OPEN-FP-F1-2 Mechanism A derivation + OPEN-FP-F1-6 prose-density tightening + F.1-condensed companion paper)
    - Anti-priorities and calibration discipline statement
 
-3. **v1.0 PDF committed to repo** at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` as the frozen reference for the v1.0 milestone. This is precedent-setting for the F-line flagship trajectory: subsequent v1.x and v2.0 patches will produce updated PDFs at their own milestones; the v1.0 PDF remains a fixed retrievable artifact at this commit. Matches the pattern observed for archived papers in `archive/SS-5_versioned_drafts/` and `archive/SM-11 rename to SS-2 archive/`.
+3. **v1.0 PDF committed to repo** at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` as the frozen reference for the v1.0 milestone. This is precedent-setting for the F-line flagship trajectory: subsequent v1.x and v2.0 patches will produce updated PDFs at their own milestones; the v1.0 PDF remains a fixed retrievable artifact at this commit. Matches the pattern observed for archived papers in `archive/SS-5_versioned_drafts/` and `archive/SM-11 rename to SS-2 archive/`.
 
 **Files modified (6 file deltas)**:
 1. EDIT — `dynamical_substrate_law.tex` (2 atomic edits: Edit 1 `\date{}` + Edit 2 CHANGELOG)
@@ -4330,7 +4334,7 @@ The two edits are administrative/structural (date stamping + cumulative document
 **Paper status post-Patch 0570**:
 - **v1.0 SHIPPED** at commit assigned at push (HEAD will advance from Patch 0569e at `27ca24a` to the v1.0 SHIP commit)
 - Reviewer-engagement cycle definitively closed
-- Frozen PDF committed at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf`
+- Frozen PDF committed at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf`
 - Author email at drthomas@protonmail.com (Patch 0569a)
 - Title page Version 1.0 with scope-framing subtitle
 - CHANGELOG block fully documents Patches 0554 → 0570 build trajectory
@@ -4400,8 +4404,8 @@ Forward queue post-Patch 0571 (Phase 7 paper completion at Session 143):
 
 **Session 143 bootup anchor read order** (5 documents):
 1. `handovers/2026-05-24_session_142_F1_v1.0_SHIPPED.md` (this handover)
-2. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.pdf` (v1.0 SHIPPED PDF)
-3. `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` (post-Patch-0570 source)
+2. `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.pdf` (v1.0 SHIPPED PDF)
+3. `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` (post-Patch-0570 source)
 4. `templates/paper_completion_checklist.md` Section A (Phase 7A items list)
 5. `templates/documentation-suite.md` (per-file template structure for 7 SHIP-time files)
 
@@ -4415,13 +4419,13 @@ Forward queue post-Patch 0571 (Phase 7 paper completion at Session 143):
 
 Patch 0572 is the **Phase 7A initiation Patch** bundling two distinct work elements in a single Patch:
 
-**Work element 1 — Tier-file audit at Patch 0571 SHIPPED state.** Verify that all three accumulating Tier files in `flagship_papers/dynamical_substrate_law/documentation_suite/` are at the SHIPPED state claimed by handover §6 Steps B/C/D, with no drift between the handover's audit claims and the observed file-tail state. The audit also enumerates the supporting infrastructure inventory (verification scripts at `code/`, reviewer letters at `reviews/`, sketches at `sketches/`, reviewer-pause artifacts at `reviewer_pause/`, hardened-theorem artifacts at `hardened_theorems/`) to confirm Phase 7A source material is complete and indexed for upcoming Patches 0572a–i.
+**Work element 1 — Tier-file audit at Patch 0571 SHIPPED state.** Verify that all three accumulating Tier files in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/` are at the SHIPPED state claimed by handover §6 Steps B/C/D, with no drift between the handover's audit claims and the observed file-tail state. The audit also enumerates the supporting infrastructure inventory (verification scripts at `code/`, reviewer letters at `reviews/`, sketches at `sketches/`, reviewer-pause artifacts at `reviewer_pause/`, hardened-theorem artifacts at `hardened_theorems/`) to confirm Phase 7A source material is complete and indexed for upcoming Patches 0572a–i.
 
-**Work element 2 — First SHIP-time companion documentation file creation.** Create `changelog-dynamical-substrate-law.md` per `templates/documentation-suite.md` §11 reference implementation (`flagship_papers/capotauro/documentation_suite/changelog-capotauro.md`). The file is the canonical version archaeology for the F.1 paper, mirroring Capotauro's structure with six reverse-chronological version sections + pre-paper-assembly narrative reference block.
+**Work element 2 — First SHIP-time companion documentation file creation.** Create `changelog-dynamical-substrate-law.md` per `templates/documentation-suite.md` §11 reference implementation (`series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/changelog-capotauro.md`). The file is the canonical version archaeology for the F.1 paper, mirroring Capotauro's structure with six reverse-chronological version sections + pre-paper-assembly narrative reference block.
 
 The four file deltas at Patch 0572:
 
-1. CREATE `flagship_papers/dynamical_substrate_law/documentation_suite/changelog-dynamical-substrate-law.md` (~440 lines new file)
+1. CREATE `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/changelog-dynamical-substrate-law.md` (~440 lines new file)
 2. APPEND Tier 4 §66 to `reasoning-dynamical-substrate-law.md` (this section)
 3. APPEND Vignette 54 to `development-dynamical-substrate-law.md`
 4. APPEND Transaction 064 to `transcript-dynamical-substrate-law.md`
@@ -4443,7 +4447,7 @@ No drift between handover §6 Steps B/C/D claims and observed file-tail state. T
 
 **Verification scripts inventory (Phase 7A item 3 inventory; per-script B1–B5 audit DEFERRED to Patch 0572g):**
 
-5 Python scripts confirmed present at `flagship_papers/dynamical_substrate_law/code/`:
+5 Python scripts confirmed present at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/`:
 
 - `verify_phase1.py` — Phase 1 verification (foundations work numerical confirmation)
 - `verify_phase3.py` — Phase 3 verification
@@ -4453,7 +4457,7 @@ No drift between handover §6 Steps B/C/D claims and observed file-tail state. T
 
 The B1–B5 audit pass (enumerate `.tex` numerical claims; map each claim to its verification script with header per `paper_completion_checklist.md` §B B2 standard header; identify coverage gaps and create gap-filling notebooks) is DEFERRED to Patch 0572g.
 
-**Curated transcripts (Phase 7A item 4):** DEFERRED to Patch 0572i. Raw chat-window transcripts for Patches 0554–0570 closure trajectory will be curated and archived at standard repo location to be determined at 0572i scoping. Candidate location: `flagship_papers/dynamical_substrate_law/development-transcripts/` parallel to the convention used at `series_standard_model/development-transcripts/`. Decision deferred to 0572i.
+**Curated transcripts (Phase 7A item 4):** DEFERRED to Patch 0572i. Raw chat-window transcripts for Patches 0554–0570 closure trajectory will be curated and archived at standard repo location to be determined at 0572i scoping. Candidate location: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/development-transcripts/` parallel to the convention used at `series_standard_model/development-transcripts/`. Decision deferred to 0572i.
 
 **Supporting-infrastructure inventory:**
 
@@ -4534,13 +4538,13 @@ The risk-ordering rationale is: **front-load the doc-suite production with light
 
 ## §67 Patch 0572g — B1–B5 verification notebooks audit + Phase 7A doc-suite production sub-arc end-of-arc Tier-file rollup
 
-**Context.** Patches 0572 through 0572f delivered the 7-file SHIP-time companion documentation suite at `flagship_papers/dynamical_substrate_law/documentation_suite/`. Patch 0572g closes the Phase 7A doc-suite production sub-arc with the B1–B5 verification notebooks audit per `templates/paper_completion_checklist.md` §B + the end-of-sub-arc Vignette + §-entry Tier-file rollup per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE established at Patch 0572a.
+**Context.** Patches 0572 through 0572f delivered the 7-file SHIP-time companion documentation suite at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/`. Patch 0572g closes the Phase 7A doc-suite production sub-arc with the B1–B5 verification notebooks audit per `templates/paper_completion_checklist.md` §B + the end-of-sub-arc Vignette + §-entry Tier-file rollup per METH-PHASE-7A-DOCSUITE-PROD-DISCIPLINE established at Patch 0572a.
 
 ### §67.1 What this Patch does
 
 Patch 0572g is the **Phase 7A sub-arc end-of-arc closure Patch** combining four work elements:
 
-**Work element 1 — B1–B5 verification notebooks audit.** Per `paper_completion_checklist.md` §B, the audit enumerates all numerical quantities in the paper body (B1), inventories the verification scripts (B2 with header-format-compliance assessment), tests runnability (B3, with `verify_phase1.py` directly executed at audit time), documents excluded items (B4), and establishes the canonical INDEX (B5). The audit verdict landed in the new file `flagship_papers/dynamical_substrate_law/code/INDEX.md`.
+**Work element 1 — B1–B5 verification notebooks audit.** Per `paper_completion_checklist.md` §B, the audit enumerates all numerical quantities in the paper body (B1), inventories the verification scripts (B2 with header-format-compliance assessment), tests runnability (B3, with `verify_phase1.py` directly executed at audit time), documents excluded items (B4), and establishes the canonical INDEX (B5). The audit verdict landed in the new file `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/INDEX.md`.
 
 **Work element 2 — Scripts INDEX establishment.** Per checklist §B B5, the INDEX file is added at `code/INDEX.md` (adapted from `series_[name]/notebooks/INDEX.md` to flagship-paper structure `flagship_papers/<paper>/code/INDEX.md`). The INDEX doubles as the audit document; the dual-purpose pattern surfaces as METH-PHASE-7A-B-AUDIT-INDEX-AS-AUDIT-DOC candidate.
 
@@ -4550,7 +4554,7 @@ Patch 0572g is the **Phase 7A sub-arc end-of-arc closure Patch** combining four 
 
 The four file deltas at Patch 0572g:
 
-1. CREATE `flagship_papers/dynamical_substrate_law/code/INDEX.md` (~150 lines new file; B1–B5 audit + scripts INDEX)
+1. CREATE `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/INDEX.md` (~150 lines new file; B1–B5 audit + scripts INDEX)
 2. APPEND §67 to `reasoning-dynamical-substrate-law.md` (this section)
 3. APPEND Vignette 55 to `development-dynamical-substrate-law.md`
 4. APPEND Transaction 071 to `transcript-dynamical-substrate-law.md`
@@ -4563,7 +4567,7 @@ NO `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliograp
 
 **B2 — Scripts inventory:** 5 Python scripts at `code/` (`verify_phase1.py`, `verify_b1q2_curl_content.py`, `verify_b1q4_first_shell_current_sum.py`, `verify_phase3.py`, `verify_phase4.py`). All scripts use Python standard library + NumPy only. **Header format:** existing scripts use Python docstring format (`"""..."""`) rather than the checklist B2 `# === [S]-[N]: [Description] ===` block format. **Assessment: B2-compliant in spirit** — the docstring contains equivalent information (computation description + identities verified + execution instructions + dependencies). The format gap is a **low-priority candidate Patch** (B2 header-format compliance sweep) registered at audit but NOT blocking on v1.0 SHIP. Decision rationale: the v1.0 SHIPPED paper is the canonical scope-boundary; verification-script header polish is intra-implementation work that does not require v1.0 re-SHIP.
 
-**B3 — Runnability verification:** `verify_phase1.py` directly executed at audit time with command `python3 flagship_papers/dynamical_substrate_law/code/verify_phase1.py`. Output: "ALL VERIFICATIONS PASSED. Phase 1 falsifier check: local-I_h-preservation does NOT force j_DI = 0. Mechanism A's sub-step (i) closes positively." PASS at $\delta \in \{0, 0.1, 0.236068, 0.5, -0.2\}$ + Case A.1 verification at $\delta = \phi^{-3}$. The substrate-locality umbrella result (Theorem 7.1) at the paper-body level is **directly B3-confirmed**. The other four scripts share the same dependency profile + structure; runnability is expected by construction; re-execution sweep is a low-priority candidate Patch.
+**B3 — Runnability verification:** `verify_phase1.py` directly executed at audit time with command `python3 series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py`. Output: "ALL VERIFICATIONS PASSED. Phase 1 falsifier check: local-I_h-preservation does NOT force j_DI = 0. Mechanism A's sub-step (i) closes positively." PASS at $\delta \in \{0, 0.1, 0.236068, 0.5, -0.2\}$ + Case A.1 verification at $\delta = \phi^{-3}$. The substrate-locality umbrella result (Theorem 7.1) at the paper-body level is **directly B3-confirmed**. The other four scripts share the same dependency profile + structure; runnability is expected by construction; re-execution sweep is a low-priority candidate Patch.
 
 **B4 — Items excluded:** LaTeX compilation (covered by v1.0 SHIPPED PDF commit) + file management + trivial arithmetic + LaTeX equation rendering. All exclusions per §B4 guidance.
 
@@ -4602,8 +4606,8 @@ The end-of-sub-arc rollup (this §67) is itself an anti-erasure-discipline appli
 **Forward queue post-Patch 0572g (Phase 7A continues beyond the doc-suite production sub-arc):**
 
 - ✓ Patches 0572, 0572a–g (LANDED — Phase 7A doc-suite production sub-arc CLOSED)
-- **(H) Patch 0572h** = next; C11 bibliography entry + D2 INDEX.md row + D3 `flagship_papers/dynamical_substrate_law/README.md` audit (paper-specific updates outside the documentation_suite/code folders).
-- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F (location to be determined; candidate `flagship_papers/dynamical_substrate_law/development-transcripts/`).
+- **(H) Patch 0572h** = next; C11 bibliography entry + D2 INDEX.md row + D3 `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/README.md` audit (paper-specific updates outside the documentation_suite/code folders).
+- **(I) Patch 0572i** = E curated transcripts per OS §15 Step F (location to be determined; candidate `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/development-transcripts/`).
 - **(J) Patches 0573–058N** = Phase 7B sequential registry updates (11 registries; clean integer sequence per Thomas's confirmed no-concurrent-windows condition). 14 METH candidates queued for Phase 7B methods catalogue audit Patch (Patch 0575-ish).
 - **(K) Patch 058N+1** = Phase 7C (OSF registration + anthology chapter at `book_project/chapters/F1_dynamical_substrate_law.md` + final H1–H5 verification).
 - **(L) Patch 0581-ish** = G1 publication-grade hardening (OPEN-FP-F1-3) — RECOMMENDED first post-Phase-7 substantive physics Patch per ChatGPT R1–R6 convergent priority.
@@ -4623,7 +4627,7 @@ The end-of-sub-arc rollup (this §67) is itself an anti-erasure-discipline appli
 
 ### §68.1 What this Patch does
 
-Patch 0571 produces the **fourth and final F.1 Layer 3 hardened-theorem artifact** at `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines LaTeX; 9-page PDF, ~312 KB; clean three-pass compile with zero warnings/errors after replacement of one initial undefined `\Dsix` control-sequence with inline `$D_6$`). The artifact hardens identity G1 (first-shell inner-product primitive: $v_i \cdot v_{\text{host}} = \phi/2$ uniformly across the 12 first-shell vertices of $v_{\text{host}}$ in the 600-cell at vertex-aligned Reading C) from sketch-document Layer 3 (Patch 0541 §3.1 derivation) to publication-grade Layer 3 under three explicit hypotheses (H1)–(H3) with hypothesis tracking discipline matching the three existing hardened artifacts (Patches 0550 + 0551 + 0552).
+Patch 0571 produces the **fourth and final F.1 Layer 3 hardened-theorem artifact** at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines LaTeX; 9-page PDF, ~312 KB; clean three-pass compile with zero warnings/errors after replacement of one initial undefined `\Dsix` control-sequence with inline `$D_6$`). The artifact hardens identity G1 (first-shell inner-product primitive: $v_i \cdot v_{\text{host}} = \phi/2$ uniformly across the 12 first-shell vertices of $v_{\text{host}}$ in the 600-cell at vertex-aligned Reading C) from sketch-document Layer 3 (Patch 0541 §3.1 derivation) to publication-grade Layer 3 under three explicit hypotheses (H1)–(H3) with hypothesis tracking discipline matching the three existing hardened artifacts (Patches 0550 + 0551 + 0552).
 
 **Hypothesis tracking (H1)–(H3).**
 
@@ -4696,7 +4700,7 @@ Patch 0571 also propagates the resolution through the frontier registry layer:
 
 - `research_frontier.md` — Last-updated header refreshed for Patch 0571 G1 hardening (prior Patch 0570f entry demoted to "Earlier"); §1 sector index FP row "15" → "14 active, 1 resolved"; §4 Recently Resolved THEO-FP-F1-3 entry added at section head above the existing F.1 v1.0 SHIP entry; purpose-section Problem count updated open 57 → 56, resolved 6 → 7 (total 92 entries unchanged).
 
-- `flagship_papers/dynamical_substrate_law/documentation_suite/changelog-dynamical-substrate-law.md` — new "Post-v1.0 SHIP — Hardened-theorem artifact additions" top-level section with Patch 0571 entry recording the OPEN-FP-F1-3 RESOLUTION, the three structural advances, files in patch, calibration discipline, and post-Patch-0571 trajectory.
+- `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/changelog-dynamical-substrate-law.md` — new "Post-v1.0 SHIP — Hardened-theorem artifact additions" top-level section with Patch 0571 entry recording the OPEN-FP-F1-3 RESOLUTION, the three structural advances, files in patch, calibration discipline, and post-Patch-0571 trajectory.
 
 ### §68.6 Patch numbering: the dual-"Patch 0571" git history label collision
 

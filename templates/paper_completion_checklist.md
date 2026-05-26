@@ -844,7 +844,7 @@ The first complete reviewer-pause cycle in CPP programme history was the F.1 dyn
 - Patch 0539 was the status upgrade implementing the refined framing.
 - F.1 flagship paper assembly REMAINS DEFERRED behind further calibration cycles + Layer 3 promotion work.
 
-Artifacts at `flagship_papers/dynamical_substrate_law/reviewer_pause/`:
+Artifacts at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/`:
 - `F1_reviewer_pause_checkpoint_patches_0531_0537_v1.0.md`
 - `F1_reviewer_pause_feedback_record_v1.0.md`
 

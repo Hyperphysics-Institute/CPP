@@ -12,7 +12,7 @@
 **Title-block version**: v0.9 (SHIPPED) → **v1.0 (SHIPPED)**.
 
 **Programme registration changes (Patch 0509)**:
-- `theorem-registry.md` programme-level header updated to confirm THEO-CHIR-CONT-1+2+3 paper-level publication venue at `flagship_papers/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED
+- `theorem-registry.md` programme-level header updated to confirm THEO-CHIR-CONT-1+2+3 paper-level publication venue at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` v1.0 SHIPPED
 - `methods_catalogue/methods_catalogue.md` Last-updated header confirming METH-CHIR-CONT-1 through -4 paper-of-origin venue at v1.0 SHIPPED
 - `research_frontier.md` v1.0 SHIPPED header + post-SHIP forward queue + OPEN-FP-SF-2-CHIR closure status update
 - `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` final closure entry + closure declaration
@@ -154,7 +154,7 @@
 
 **Viability decision gate**:
 - Paired scoping sketches at Patches 0482–0483: one at `flagship_papers/electroweak/sketches/` for SF-2 V–A Layer 4 work; one at `flagship_papers/standard_model/sketches/` for SM-2 chiral-polarity-bias Layer 4 work
-- Patch 0484: v0.1 joint-paper outline at `flagship_papers/chirality_continuum/chirality_continuum_outline.md`
+- Patch 0484: v0.1 joint-paper outline at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum_outline.md`
 - **Viability decision gate**: PROCEED with joint paper format
 - **Estimated savings**: 3–9 sessions across §A + §B + §C trajectory vs. Venue (b) fallback of two separate single-sector papers
 - **Methodology precedent**: SF-4 v4.0 first cross-sector closure validates joint-closure approach
@@ -223,9 +223,9 @@ Per `research_frontier.md` post-SHIP forward queue updated at Patch 0509:
 
 ## Cross-references
 
-- **Paper venue**: `flagship_papers/chirality_continuum/chirality_continuum.tex`
-- **Companion suite**: `flagship_papers/chirality_continuum/documentation_suite/`
-- **Reviewer letters**: `flagship_papers/chirality_continuum/reviewer_reviews/`
+- **Paper venue**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex`
+- **Companion suite**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/`
+- **Reviewer letters**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/reviewer_reviews/`
 - **Programme registries**: `theorem-registry.md`, `methods_catalogue.md`, `research_frontier.md`, `predictions.md`
 - **Problem history**: `problem_histories/PH-OPEN-FP-SF-2-CHIR.md`
 - **Project timeline**: `project_timeline_estimate.md` (programme scoreboard reflecting chirality continuum SHIP)

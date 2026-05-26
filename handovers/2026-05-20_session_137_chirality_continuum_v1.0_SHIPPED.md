@@ -63,11 +63,11 @@ Previous flagship papers required multi-round reviewer cycles for three-reviewer
 Per `templates/paper_completion_checklist.md` Phases 7A + 7B + B-track + H-track:
 
 - **Patch 0510**: `project_timeline_estimate.md` programme-level scoreboard (NEW file at repo root). Three-endpoint framing; sub-domain breakdown; ~20–30% blended programme area estimate (15–40% calibrated CI).
-- **Patch 0511 (Phase 7A)**: Companion documentation suite at `flagship_papers/chirality_continuum/documentation_suite/` (8 files, 1599 lines): development + glossary + mechanism + phenomena + philosophy + reviews + keywords + changelog.
+- **Patch 0511 (Phase 7A)**: Companion documentation suite at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/documentation_suite/` (8 files, 1599 lines): development + glossary + mechanism + phenomena + philosophy + reviews + keywords + changelog.
 - **Patch 0512 (Phase 7B Part 1)**: Surgical drift catch-up — `theorem-registry.md` line 15 ratio fix 54:6 → 67:9; `README.md` flagship count 3 → 5 + axiom summary line with theorem progression 47→67 + Theorems:Axioms ratio 1:7.4; `paper_catalog.md` new chirality continuum row in SF-Line table.
 - **Patch 0513 (Phase 7B Part 2)**: `predictions.md` Section 6 chirality continuum row (PRED-O-25/-26/-27/-23 all ELEVATED to operative Layer 4); `master_glossary.md` 13 chirality continuum terms; `theory-overview.md` body prose updates (One-Paragraph + Net scorecard + papers-in-active-corpus); `future_projects.md` (F.1)–(F.6) programme-level priority section with F.1 = dynamical-substrate-law gate as HIGHEST.
 - **Patch 0514**: `programme_orientation.md` TATWD Chapter 22h NEW + Part VI Note scope update + Updated 20 May 2026 entry; `axiom-registry.md` growth ledger row; `founders_vision.md` milestone entry.
-- **Patch 0515 (B-track)**: Verification notebook suite B1–B5 + README at `flagship_papers/chirality_continuum/code/` (Python stdlib only; all five PASS under current data).
+- **Patch 0515 (B-track)**: Verification notebook suite B1–B5 + README at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/code/` (Python stdlib only; all five PASS under current data).
 - **Patch 0516 (C11 + D2 + D3 + F1–F4)**: 13 bibliography bibitems appended; INDEX.md 6 new rows; `flagship_papers/README.md` new "Flagship papers outside the SF-N numerical convention" section + architecture history extended.
 - **Patch 0517 (H-track + session-close handover)**: H1–H5 final verification checklist + THIS handover document.
 

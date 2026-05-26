@@ -1,6 +1,6 @@
 # F.1 Layer 3 Reviewer-Pause Feedback Record (Patches 0540–0546 Layer 3 Promotion Arc)
 
-**Document:** `flagship_papers/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md`
+**Document:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/reviewer_pause/F1_layer3_reviewer_pause_feedback_record_v1.0.md`
 **Patch:** 0548 (this Patch creates this document; no subsequent modifications anticipated at this version)
 **Version:** v1.0
 **Date authored:** 23 May 2026 (Session 141 open)
@@ -99,7 +99,7 @@ Each subsection records: (a) the convergent concern statement; (b) the calibrati
 
 **Convergent concern.** Copilot: "Target 7 should have its own explicit closure Patch." ChatGPT: "Short standalone Target 7 closure note ... distinct closure artifact ... need not be a full new derivation." ChatGPT Q2 follow-up: "Option (2) — standalone Layer 3 document in `layer3_promotion/` with the explicit subsection 'Why retroactive recognition alone was judged insufficient'."
 
-**Calibration response (commitment).** Patch 0548a (this Patch's immediate successor) creates a NEW Layer 3 promotion document at `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`. Anticipated ~150–250 lines, intentionally compact since the substantive theorem already exists at Patch 0544 §6 (Theorem 6.1 — Perturbative-Locality Propagation Rule); Patch 0548a is a **closure-governance normalization Patch, not new mathematics**, per ChatGPT's verbatim instruction.
+**Calibration response (commitment).** Patch 0548a (this Patch's immediate successor) creates a NEW Layer 3 promotion document at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`. Anticipated ~150–250 lines, intentionally compact since the substantive theorem already exists at Patch 0544 §6 (Theorem 6.1 — Perturbative-Locality Propagation Rule); Patch 0548a is a **closure-governance normalization Patch, not new mathematics**, per ChatGPT's verbatim instruction.
 
 **Patch 0548a six-section structure (preview only; full specification at §6 below):**
 1. §0 firewall + anti-priorities (≥10 anti-priorities including: NO re-derivation of Theorem 6.1; NO modification of Patch 0544; NO new mathematics; NO Findings-registry promotion; NO flagship paper assembly; NO F.1 status change pre-Patch 0549).
@@ -219,7 +219,7 @@ These anti-priorities held across the entire Session 140 Layer 3 promotion arc a
 
 ### §6.1 Patch 0548a (Priority 2 — standalone Target 7 closure artifact)
 
-**Filename:** `flagship_papers/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`
+**Filename:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q3_perturbation_theory_propagation.md`
 
 **Anticipated scale:** ~150–250 lines (intentionally compact; closure-governance normalization, not new mathematics).
 

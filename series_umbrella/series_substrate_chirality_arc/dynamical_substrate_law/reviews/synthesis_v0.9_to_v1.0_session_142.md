@@ -1,7 +1,7 @@
 # F.1 v0.9 → v1.0 SHIP-Cycle Reviewer Synthesis
 
 **Cycle:** v0.9 → v1.0 SHIP cycle, three-reviewer round 1
-**Submission:** `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 at Patch 0567 head (`7f8458a`); 31-page PDF; feature-complete (§1-§10 + bibliography + final polish)
+**Submission:** `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 at Patch 0567 head (`7f8458a`); 31-page PDF; feature-complete (§1-§10 + bibliography + final polish)
 **Submission cycle:** Session 142 / Patch 0567 → reviewer-engagement cycle → Patch 0569 calibration + polish response
 **Synthesis Patch:** 0568 (this document)
 **Response Patch:** 0569 (anticipated)

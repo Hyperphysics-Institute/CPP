@@ -13,7 +13,7 @@ The Reading C closure trajectory reached its natural end-state at theorem-regist
 
 **Priority 1 (next-window physics):** **Q7.1 substrate-level sign-selection mechanism** — three candidate framings assessed at scoping level (Patch 0441 §21.3): (a) symmetry-breaking dynamics analog where one of $\pm\hat{n}$ is energetically favored by substrate-level mechanism; (b) random selection at substrate-formation time with binary degree of freedom fixed by quantum-mechanical-like selection at substrate condensation; (c) substrate-cosmological co-determined where sign-selection is part of substrate's initial-condition specification. Q7.1 closure requires systematic assessment against CPP axioms A1+A2+A4+A7. Estimated 3-5 sessions.
 
-**Priority 2 (paper-completion-track):** **Capotauro v2.0 v0.1 drafting** per outline `flagship_papers/capotauro/capotauro_v2_outline.md` Patch 0442. Sessions 1-2 outline lock + §2 reframe drafting; Sessions 3-4 v0.2 with §3+§5+§6 drafted; Sessions 5-6 v0.3 with §7-§10 + bibliography; Session 7 v0.4 integration polish + first PDF compile; Sessions 8-12 AI review passes; Session 13 v1.0 SHIP. Estimated 7-13 sessions total.
+**Priority 2 (paper-completion-track):** **Capotauro v2.0 v0.1 drafting** per outline `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro_v2_outline.md` Patch 0442. Sessions 1-2 outline lock + §2 reframe drafting; Sessions 3-4 v0.2 with §3+§5+§6 drafted; Sessions 5-6 v0.3 with §7-§10 + bibliography; Session 7 v0.4 integration polish + first PDF compile; Sessions 8-12 AI review passes; Session 13 v1.0 SHIP. Estimated 7-13 sessions total.
 
 **Priority 3 (parallel future-window):** **Q7.2 cosmological-timing** scoping conditional on Q7.1; **Q7.3 baryogenesis bridge** scoping conditional on Q7.1+Q7.2; **Q7.4 falsifiers and predictions distinguishing Capotauro nucleation framework from alternatives**. Estimated 3-5 sessions per sub-question; partial Q7 progress sufficient for Reading C closure trajectory completion at Layer 3 / cross-sector triangle level.
 
@@ -29,7 +29,7 @@ The Reading C closure trajectory reached its natural end-state at theorem-regist
 ## Where to find detail
 
 **Reading C working sketch (canonical Tier 4 substantive content):**
-- `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (1874 lines; §1-§21 complete arc)
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` (1874 lines; §1-§21 complete arc)
   - §1-§13: foundational Q1-Q4 work Sessions 124-129
   - §14-§16: Q5 Layer 2 → Layer 3 work Sessions 130-131 (Patches 0425-0428)
   - §17: Q5-PAIRING resolved Patch 0429
@@ -37,10 +37,10 @@ The Reading C closure trajectory reached its natural end-state at theorem-regist
   - §21: Q7 scoping Patch 0441
 
 **Capotauro v2.0 outline (scoping anchor for v0.1 drafting):**
-- `flagship_papers/capotauro/capotauro_v2_outline.md` (200 lines, Patch 0442)
+- `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro_v2_outline.md` (200 lines, Patch 0442)
 
 **Capotauro v1.0 paper source:**
-- `flagship_papers/capotauro/capotauro.tex` v1.0 SHIPPED Session 122 Patch 0415 (46 pages)
+- `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v1.0 SHIPPED Session 122 Patch 0415 (46 pages)
 
 **Theorem registry (canonical theorem statements):**
 - `theorem-registry.md` SD section: THEO-SD-CHIR-1 (theorem #63 at Patch 0434), THEO-SD-CHIR-2 (theorem #64 at Patch 0440)
@@ -67,7 +67,7 @@ The Reading C closure trajectory reached its natural end-state at theorem-regist
 ## Step-by-step audit of this session's handover
 
 - **Step A (Tier 1 session log):** N/A this session — substantive content captured directly in (a) `research_frontier.md` Last-updated header entries per patch (canonical chronological record), (b) sketch §17-§21 verbatim Tier 4 reasoning. Per §4 Session-Log-as-Handover-Backbone Discipline reconciliation: when work-in-progress's substantive trace lives in canonical files updated per patch, separate session log entry would be redundant duplication. This handover (Step H) is the consolidating forward-pointer document.
-- **Step B (Tier 2 transcript):** N/A this session — `flagship_papers/capotauro/documentation_suite/transcript-capotauro.md` updates batched to v2.0 v0.1 drafting session per anti-priority "NO v2.0-related artifact updates outside v2.0 drafting work track." Patch transactions 0434-0442 fully recorded in git log with one-line annotation per commit.
+- **Step B (Tier 2 transcript):** N/A this session — `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/transcript-capotauro.md` updates batched to v2.0 v0.1 drafting session per anti-priority "NO v2.0-related artifact updates outside v2.0 drafting work track." Patch transactions 0434-0442 fully recorded in git log with one-line annotation per commit.
 - **Step C (Tier 3 vignette):** N/A this session — vignette content overlaps substantially with sketch §17-§21 (Tier 4 verbatim). Per §4 reconciliation principle (sketch IS the canonical substantive record), separate development vignette would duplicate. Batched to v2.0 v0.1 drafting session.
 - **Step D (Tier 4 reasoning):** ✓ in-place — Tier 4 verbatim reasoning IS sketch §13-§21 content itself (sketch is canonical Tier 4 location for Reading C closure trajectory per anti-priority discipline established Patch 0421). Sessions 133 sketch updates: §18 (~109 lines Patch 0437), §19 (~115 lines Patch 0438), §20 (~162 lines Patch 0439), §21 (~74 lines Patch 0441). Total sketch growth this session: 1414 → 1874 lines (+460 lines verbatim Tier 4 reasoning).
 - **Step E (registries):**
@@ -104,19 +104,19 @@ Patches landed this session: 8 substantive (0434 THEO-SD-CHIR-1 registration, 04
 
 ### Tier 4 reasoning entries (canonical substantive record for Reading C work)
 
-- `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — sketch with full §1-§21 arc; the canonical Tier 4 location for Reading C trajectory per anti-priority discipline established Patch 0421. **This session appended §18-§21 (~460 lines total) preserving §1-§17 unchanged.** Replaces the conventional `documentation_suite/reasoning-capotauro.md` for Reading C trajectory content; the standard reasoning-capotauro.md file at `flagship_papers/capotauro/documentation_suite/reasoning-capotauro.md` covers v1.0 paper Tier 4 reasoning through Session 122.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — sketch with full §1-§21 arc; the canonical Tier 4 location for Reading C trajectory per anti-priority discipline established Patch 0421. **This session appended §18-§21 (~460 lines total) preserving §1-§17 unchanged.** Replaces the conventional `documentation_suite/reasoning-capotauro.md` for Reading C trajectory content; the standard reasoning-capotauro.md file at `series_umbrella/series_substrate_chirality_arc/capotauro/documentation_suite/reasoning-capotauro.md` covers v1.0 paper Tier 4 reasoning through Session 122.
 
 ### Working sketches (modified this session)
 
-- `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — §18 Q6 Step 1 substrate-locality Layer 2 with Finding C-W44 (Patch 0437, ~109 lines); §19 Q6 Step 2 conservative Layer 2 with Q6-PAIRING + Finding C-W45 (Patch 0438, ~115 lines); §20 Q6-PAIRING RESOLVED + Q6 full Layer 3 with Finding C-W46 (Patch 0439, ~162 lines); §21 Q7 SCOPED with sub-questions Q7.1-Q7.4 (Patch 0441, ~74 lines). Total this session: 1414 → 1874 lines (+460 lines).
+- `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — §18 Q6 Step 1 substrate-locality Layer 2 with Finding C-W44 (Patch 0437, ~109 lines); §19 Q6 Step 2 conservative Layer 2 with Q6-PAIRING + Finding C-W45 (Patch 0438, ~115 lines); §20 Q6-PAIRING RESOLVED + Q6 full Layer 3 with Finding C-W46 (Patch 0439, ~162 lines); §21 Q7 SCOPED with sub-questions Q7.1-Q7.4 (Patch 0441, ~74 lines). Total this session: 1414 → 1874 lines (+460 lines).
 
 ### New flagship-paper outline files this session
 
-- `flagship_papers/capotauro/capotauro_v2_outline.md` — NEW file Patch 0442 (200 lines). Section-by-section structure for Capotauro v2.0 incorporating Reading C closure trajectory. Scoping anchor for v0.1 drafting session.
+- `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro_v2_outline.md` — NEW file Patch 0442 (200 lines). Section-by-section structure for Capotauro v2.0 incorporating Reading C closure trajectory. Scoping anchor for v0.1 drafting session.
 
 ### Founders_voice entries
 
-- N/A this session — no new founders_voice entries. `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` (Patch 0422 Session 127) remains canonical for primitive-chirality methodological framing; `flagship_papers/capotauro/founders_voice/004_verbatim_substance_preservation_discipline.md` continues to govern §13 §12 correction work preservation discipline applied throughout this session's Q-trajectory work.
+- N/A this session — no new founders_voice entries. `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` (Patch 0422 Session 127) remains canonical for primitive-chirality methodological framing; `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/004_verbatim_substance_preservation_discipline.md` continues to govern §13 §12 correction work preservation discipline applied throughout this session's Q-trajectory work.
 
 ### Reviewer letters
 
@@ -133,7 +133,7 @@ Patches landed this session: 8 substantive (0434 THEO-SD-CHIR-1 registration, 04
 
 ### Code / verification scripts
 
-- N/A this session — no new code files. Existing verification scripts at `flagship_papers/capotauro/code/q1prime_w_bracelet_geometry.py` (Patch 0418-0419 Q1' resolution verification) and `flagship_papers/capotauro/code/sketch_section_13_local_ih_preservation.py` (Patch 0424 §13 local-$I_h$-preservation numerical verification at machine precision) preserved unchanged.
+- N/A this session — no new code files. Existing verification scripts at `series_umbrella/series_substrate_chirality_arc/capotauro/code/q1prime_w_bracelet_geometry.py` (Patch 0418-0419 Q1' resolution verification) and `series_umbrella/series_substrate_chirality_arc/capotauro/code/sketch_section_13_local_ih_preservation.py` (Patch 0424 §13 local-$I_h$-preservation numerical verification at machine precision) preserved unchanged.
 
 ### Anthology chapter
 

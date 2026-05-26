@@ -1,3 +1,7 @@
+> **Path-migration notice (Patch 0571e, 26 May 2026):** The path references in this file have been bulk-updated to reflect the Patch 0571d structural migration of this paper from `flagship_papers/chirality_continuum/` to `series_umbrella/series_substrate_chirality_arc/chirality_continuum/`. The substantive narrative content (Tier 4 reasoning / Tier 3 vignettes / Tier 2 transactions) is unchanged from its commit-time form per §17.8 immutable-checkpoint discipline; only the path-pointer references within the narrative have been updated so that they resolve to the current file locations. Readers should treat the historical narrative entries as authored at the time when the paper lived at the old path; the new paths are retroactively-correct pointers, not retroactively-correct history. See `series_umbrella/README-SU.md` for the migration rationale.
+
+---
+
 # Development History: Chirality Continuum — Joint Layer 4 Closure of OPEN-FP-SF-2-CHIR and SM-2 v2.0+ Chiral-Polarity-Bias
 
 **Series:** Flagship paper (Chirality Continuum line within SD section under OPEN-SD-CHIR-PRIMITIVE umbrella)
@@ -31,7 +35,7 @@ The framing question Thomas raised at Patch 0482 (Session 137 start): could thes
 
 ### Discovery 1: Sector-agnostic bridge viability (Patches 0482–0484)
 
-Two paired scoping sketches were produced at Patches 0482 and 0483: one at `flagship_papers/electroweak/sketches/` for SF-2 V–A coupling Layer 4 work, one at `flagship_papers/standard_model/sketches/` for SM-2 chiral-polarity-bias Layer 4 work. Patch 0484 produced the v0.1 joint-paper outline at `flagship_papers/chirality_continuum/chirality_continuum_outline.md` with the viability decision gate.
+Two paired scoping sketches were produced at Patches 0482 and 0483: one at `flagship_papers/electroweak/sketches/` for SF-2 V–A coupling Layer 4 work, one at `flagship_papers/standard_model/sketches/` for SM-2 chiral-polarity-bias Layer 4 work. Patch 0484 produced the v0.1 joint-paper outline at `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum_outline.md` with the viability decision gate.
 
 The gate's argument: the substrate-handle data $(|\chi|, d_\Gamma/V_{\text{cage}}) = (\varphi^{-3}, 1/6)$ is universal across the three Capotauro v2.0 sector instantiations (K3 + W + qDP), differing only in $(\Gamma, \zeta^{\text{sector}}, \hat{C}^{\text{sector}})$. If the continuum-limit projection map $\Phi$ depends only on the universal data, then a single sector-agnostic bridge theorem closes the substrate-to-effective-coupling step for all sectors simultaneously, and the sector-specific kinematic projections (Yang-Mills V–A for SF-2 + chiral-asymmetric stabilization for SM-2) become applications of the same bridge.
 
@@ -267,7 +271,7 @@ All three THEO-CHIR-CONT theorems pass the four-condition test pattern: (i) rigo
 - **Methods catalogue**: `methods_catalogue.md` — METH-CHIR-CONT-1 (sector-agnostic substrate Wigner-Eckart datum) + METH-CHIR-CONT-2 (continuum-limit projection map $\Phi$) + METH-CHIR-CONT-3 (topological substrate quantity) + METH-CHIR-CONT-4 (topological-projection argument) registered at Patch 0498; paper-of-origin venue confirmed at Patch 0509 v1.0 SHIP
 - **Research frontier**: `research_frontier.md` — OPEN-FP-SF-2-CHIR programme-level closure status updated at Patch 0509
 - **Problem history**: `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` — final closure entry + closure declaration at Patch 0509
-- **Capotauro v2.0**: `flagship_papers/capotauro/capotauro.tex` v1.0 SHIPPED — substrate-level Layer 3 closures inherited at chirality continuum bridge theorem
+- **Capotauro v2.0**: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` v1.0 SHIPPED — substrate-level Layer 3 closures inherited at chirality continuum bridge theorem
 - **SF-2 v1.0**: `flagship_papers/electroweak/sf-2.tex` v1.0 SHIPPED — Yang-Mills EFT continuum framework inherited at §B
 - **SM-2 v1.0**: `series_standard_model/papers/sm-2.tex` v1.0 SHIPPED — chiral-polarity-bias mechanism inherited at §C
 

@@ -2,9 +2,9 @@
 
 **Working sketch document — Tier-4 reasoning capture per CPP four-tier documentation discipline.**
 
-This sketch opens the F.1 sub-question scoping trajectory at the new flagship-paper home `flagship_papers/dynamical_substrate_law/`. It is the analog of Patch 0414's `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` for the Capotauro sub-claim (b) substrate chirality mechanism candidate trajectory; this sketch occupies the same structural role for the F.1 dynamical-substrate-law gate trajectory.
+This sketch opens the F.1 sub-question scoping trajectory at the new flagship-paper home `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/`. It is the analog of Patch 0414's `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` for the Capotauro sub-claim (b) substrate chirality mechanism candidate trajectory; this sketch occupies the same structural role for the F.1 dynamical-substrate-law gate trajectory.
 
-The F.1 sub-question — identified at decision gate §7.1 (`flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md`) as load-bearing for F.2 + F.3 unblocking — is:
+The F.1 sub-question — identified at decision gate §7.1 (`series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md`) as load-bearing for F.2 + F.3 unblocking — is:
 
 > **Does the substrate primitive 4D direction $\hat{n}$ induce PCD-cycle-orientation $\vec{\omega}_{PCD}$ through a substrate-mechanism derivable from CPP primitive axioms A1–A11, or is PCD-cycle-orientation an independent primitive parallel to $\hat{n}$?**
 
@@ -19,10 +19,10 @@ This sketch is at Tier-4 exploratory reasoning, Layer 1 / Layer 2 epistemic stat
 Subject to revision. The mechanism candidates are at exploratory-sketch level, not theorem-closure level. Concepts may be relabeled. The relationship between the substrate primitive 4D direction $\hat{n}$ (established at full Layer 3 in Capotauro v2.0 Reading C trajectory via vertex-aligned $\hat{n} = v_{\text{host}}$ resolution at Patch 0419, Finding C-W37) and the PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$ (a temporal-orientation content of the substrate's dynamical-degree-of-freedom-evolving-in-time per `master_glossary.md` Absolute Moment + PCD entries) is being developed sketchwise across this opening session and future sessions. The final closure structure is not pre-committed. Three candidate mechanism categories (Mechanism A, B, C below) are surveyed; Mechanism A is identified as the leading candidate by structural analogy to Reading C's edge-length perturbation, but A is not pre-committed as the closure path.
 
 This sketch is paired with:
-- The F.2/F.3 viability decision gate (`flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md`) which identified this sub-question as load-bearing.
-- The Capotauro Reading C sketch (`flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`) which established the substrate primitive $\hat{n}$ at Layer 3 rigor for the spatial-sector case.
-- The Capotauro founders' voice file (`flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md`) which establishes the framework's commitment to the primitive-feature-with-mechanism-derivation-attached posture.
-- The chirality continuum joint paper v1.0 SHIPPED (`flagship_papers/chirality_continuum/chirality_continuum.tex`) §8.1 dynamical-substrate-law gate subsection which elevates this trajectory as the defining next programme gate.
+- The F.2/F.3 viability decision gate (`series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md`) which identified this sub-question as load-bearing.
+- The Capotauro Reading C sketch (`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`) which established the substrate primitive $\hat{n}$ at Layer 3 rigor for the spatial-sector case.
+- The Capotauro founders' voice file (`series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md`) which establishes the framework's commitment to the primitive-feature-with-mechanism-derivation-attached posture.
+- The chirality continuum joint paper v1.0 SHIPPED (`series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex`) §8.1 dynamical-substrate-law gate subsection which elevates this trajectory as the defining next programme gate.
 
 ---
 
@@ -250,11 +250,11 @@ These estimates align with the F.1 registered estimate in `future_projects.md` o
 
 **Cross-references to programme corpus:**
 
-- Decision gate document `flagship_papers/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` — identifies this sub-question at §7.1 as load-bearing.
-- Capotauro Reading C sketch `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — establishes $\hat{n}$ at Layer 3 rigor for the spatial-sector case; §13 substrate-locality theorem is the structural anchor for Mechanism A Phase 1.
-- Capotauro paper v2.0 v1.0 SHIPPED `flagship_papers/capotauro/capotauro.tex` — §6–§10 K3-doublet machinery + §13.4 substrate identification $\chi \equiv \varepsilon$.
-- Chirality continuum v1.0 SHIPPED `flagship_papers/chirality_continuum/chirality_continuum.tex` — §3 substrate-handle bridge work; §6.2 OPEN-SD-CHIR-PRIMITIVE umbrella status; §7.2 Threshold (C) leptogenesis CP-asymmetry empirical anchor; §8.1 dynamical-substrate-law gate primary subsection.
-- Founders' voice `flagship_papers/capotauro/founders_voice/005_chirality_is_primitive.md` — framework's commitment to primitive-feature-with-mechanism-derivation posture; the seven distilled points (especially point 1 framework primitives list + point 5 candidate mechanism = modified-Golden-Ratio observation + point 7 challenge acknowledged as program-wide).
+- Decision gate document `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/F2_F3_viability_decision_gate_2026-05-21.md` — identifies this sub-question at §7.1 as load-bearing.
+- Capotauro Reading C sketch `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` — establishes $\hat{n}$ at Layer 3 rigor for the spatial-sector case; §13 substrate-locality theorem is the structural anchor for Mechanism A Phase 1.
+- Capotauro paper v2.0 v1.0 SHIPPED `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` — §6–§10 K3-doublet machinery + §13.4 substrate identification $\chi \equiv \varepsilon$.
+- Chirality continuum v1.0 SHIPPED `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum.tex` — §3 substrate-handle bridge work; §6.2 OPEN-SD-CHIR-PRIMITIVE umbrella status; §7.2 Threshold (C) leptogenesis CP-asymmetry empirical anchor; §8.1 dynamical-substrate-law gate primary subsection.
+- Founders' voice `series_umbrella/series_substrate_chirality_arc/capotauro/founders_voice/005_chirality_is_primitive.md` — framework's commitment to primitive-feature-with-mechanism-derivation posture; the seven distilled points (especially point 1 framework primitives list + point 5 candidate mechanism = modified-Golden-Ratio observation + point 7 challenge acknowledged as program-wide).
 - Methods catalogue `methods_catalogue.md` METH-CHIR-CONT-4 (topological-projection argument) — applies to static-spatial-object manifestations only per decision gate §8.3; this scoping work targets the substrate-mechanism gap that would extend METH-CHIR-CONT-4 to dynamical-object manifestations.
 - Future projects `future_projects.md` F.1 + F.2 + F.3 entries — registered as defining next programme gate + downstream Layer 4 closure trajectories.
 
@@ -388,11 +388,11 @@ The current is non-zero at first order, aligned with $+\hat{n}$ for $\delta > 0$
 *Layer status:* Layer 3 (theorem-level closure with verifiable conditions). The derivation inherits geometric content from Capotauro v2.0 Finding C-W39 (substrate-locality theorem) at full Layer 3 rigor; the perturbative-rate-asymmetry primitive (Mechanism A) is at Layer 2 / Layer 3 (structural mathematical sketching with substrate-physics derivation work in §11.3); the composite Phase 1 result is at Layer 3.
 
 *Cross-references:*
-- Capotauro v2.0 v1.0 SHIPPED `flagship_papers/capotauro/capotauro.tex` §13 substrate-locality theorem + §13.2 vertex-aligned subset distance-content.
-- Capotauro Reading C sketch `flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §13 Finding C-W39 + §13.3 first-shell-to-first-shell K3-base protection.
+- Capotauro v2.0 v1.0 SHIPPED `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` §13 substrate-locality theorem + §13.2 vertex-aligned subset distance-content.
+- Capotauro Reading C sketch `series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md` §13 Finding C-W39 + §13.3 first-shell-to-first-shell K3-base protection.
 - F.1 sub-question scoping sketch §2 Mechanism A development + §7 closure trajectory Phase 1 target.
 
-*Numerical verification:* Machine-precision verification at `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` — confirms all three load-bearing identities ($\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniform; $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$; $\sum_i (\hat{u}_i \cdot \hat{n})\,\hat{u}_i = (3/\phi^2)\hat{n}$) + the Phase 1 result $\vec{j}_{DI}^{net} = (6 r_0 \delta/\phi^2)\hat{n}$ at first order in $\delta$ across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$ with all deviations from analytic values $\leq 4 \times 10^{-16}$.
+*Numerical verification:* Machine-precision verification at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py` — confirms all three load-bearing identities ($\hat{u}_i \cdot \hat{n} = -1/(2\phi)$ uniform; $\sum_i \hat{u}_i = -(6/\phi)\hat{n}$; $\sum_i (\hat{u}_i \cdot \hat{n})\,\hat{u}_i = (3/\phi^2)\hat{n}$) + the Phase 1 result $\vec{j}_{DI}^{net} = (6 r_0 \delta/\phi^2)\hat{n}$ at first order in $\delta$ across five test $\delta$ values $\{0, 0.1, \phi^{-3}, 0.5, -0.2\}$ with all deviations from analytic values $\leq 4 \times 10^{-16}$.
 
 ### §11.7 Numerical magnitude under Case A.1 + verification at machine precision
 
@@ -402,7 +402,7 @@ $$|\vec{j}_{DI}^{net}(v_{\text{host}})| / r_0 = \frac{6 \varphi^{-3}}{\varphi^2}
 
 The net DI-bit current at the host vertex carries an $\mathcal{O}(0.5\,r_0)$ asymmetry magnitude along $+\hat{n}$ under Case A.1. This is the substrate-level temporal-asymmetry handle that Mechanism A produces.
 
-The verification script at `flagship_papers/dynamical_substrate_law/code/verify_phase1.py` constructs the 600-cell explicitly via the standard Coxeter construction (8 vertices at $\pm e_i$ + 16 vertices at $\pm 1/2$ in all four coordinates + 96 vertices at even permutations of $(\pm\varphi/2, \pm 1/2, \pm 1/(2\varphi), 0)$; total 120 vertices on $S^3$ at unit distance from origin), picks the host vertex $v_{\text{host}} = (1, 0, 0, 0)$, identifies its 12 first-shell neighbors at edge length $1/\varphi$, computes the 12 unit edge vectors $\hat{u}_i$, and verifies the three load-bearing identities + the Phase 1 current formula numerically at machine precision (max deviation $\leq 4 \times 10^{-16}$ across all checks).
+The verification script at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase1.py` constructs the 600-cell explicitly via the standard Coxeter construction (8 vertices at $\pm e_i$ + 16 vertices at $\pm 1/2$ in all four coordinates + 96 vertices at even permutations of $(\pm\varphi/2, \pm 1/2, \pm 1/(2\varphi), 0)$; total 120 vertices on $S^3$ at unit distance from origin), picks the host vertex $v_{\text{host}} = (1, 0, 0, 0)$, identifies its 12 first-shell neighbors at edge length $1/\varphi$, computes the 12 unit edge vectors $\hat{u}_i$, and verifies the three load-bearing identities + the Phase 1 current formula numerically at machine precision (max deviation $\leq 4 \times 10^{-16}$ across all checks).
 
 The verification reproduces the structural derivation independently, confirming Phase 1's analytic closure at full numerical fidelity. The script's runtime is well under 5 seconds; it has no external dependencies beyond NumPy.
 
@@ -626,7 +626,7 @@ The TI-parity verification (§12.6): $\sigma_{cycle}$ (TI-odd) × $\hat{j}_{DI}^
 *Cross-references:*
 - F.1 sub-question scoping sketch §11 Phase 1 result (Finding DSL-1) supplying TI-even directional content.
 - Decision gate (Patch 0522) §2.1–§2.7 Wigner-Eckart datum framing for manifestation (iv) — verified compatible §12.8.
-- Capotauro v2.0 v1.0 SHIPPED `flagship_papers/capotauro/capotauro.tex` §13 substrate-locality theorem supplying Phase 1's geometric inputs.
+- Capotauro v2.0 v1.0 SHIPPED `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` §13 substrate-locality theorem supplying Phase 1's geometric inputs.
 - CPP axiom A5 (PCD cycle) — supplies $\sigma_{cycle}$ as cycle's intrinsic TI-odd handedness.
 
 ### §12.11 Status update + forward queue (Phase 3 next)
@@ -865,7 +865,7 @@ Numerical values:
 - $\chi/6 = 0.039344662916632$
 - Equivalently: $|M^{thermo}| \approx 0.0393$
 
-**Verification at machine precision** via `flagship_papers/dynamical_substrate_law/code/verify_phase3.py` — confirms:
+**Verification at machine precision** via `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase3.py` — confirms:
 - $\chi/6$ matches the empirical target $\Delta p_{LR}^{obs} \sim 0.04$ within the conservative range $[0.035, 0.045]$.
 - Deviation from central empirical value: 1.64%.
 - Among five structural-value candidates tested ($\chi/6$, $\chi/(6\varphi)$, $\chi\varphi/6$, $1/(6\varphi^2)$, $1/(6\varphi)$), only $\chi/6$ matches the empirical target. The other candidates give $0.024$, $0.064$, $0.064$, $0.103$ respectively — all ruled out by empirical comparison.
@@ -923,10 +923,10 @@ where:
 - F.1 sub-question scoping sketch §11 Phase 1 result (Finding DSL-1) supplying directional content.
 - F.1 sub-question scoping sketch §12 Phase 2 coupling rule (Finding DSL-2) supplying TI-odd substrate object.
 - Decision gate (Patch 0522) §2.7 prediction $|M^{thermo}| = \chi/6$ — confirmed by Phase 3 derivation.
-- Capotauro v2.0 v1.0 SHIPPED `flagship_papers/capotauro/capotauro.tex` §20.7 substrate-locality unification (Finding C-W40) supplying universal Schur factor $1/6$.
+- Capotauro v2.0 v1.0 SHIPPED `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` §20.7 substrate-locality unification (Finding C-W40) supplying universal Schur factor $1/6$.
 - Empirical leptogenesis CP-asymmetry observational target $\Delta p_{LR}^{obs} \sim 0.04$.
 
-*Numerical verification:* Machine-precision verification at `flagship_papers/dynamical_substrate_law/code/verify_phase3.py` — confirms $\chi/6 = 0.039345$ matches empirical $\Delta p_{LR}^{obs} \sim 0.04$ to 1.64%; cross-checks against four alternative structural-value candidates (all ruled out by empirical comparison).
+*Numerical verification:* Machine-precision verification at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase3.py` — confirms $\chi/6 = 0.039345$ matches empirical $\Delta p_{LR}^{obs} \sim 0.04$ to 1.64%; cross-checks against four alternative structural-value candidates (all ruled out by empirical comparison).
 
 ### §13.14 Status update + forward queue (Phase 4 + decision gate re-engagement)
 
@@ -1167,7 +1167,7 @@ The JUNO peer-review update (~5–8% expected precision) is the next stress test
 - Decision gate (Patch 0522) §7.2 Scenario A verdict structure — confirmed by Phase 4 empirical validation.
 - JUNO peer-review update (priority item (F) in CPP programme priorities) as future refinement source.
 
-*Numerical sensitivity verification:* Machine-precision verification at `flagship_papers/dynamical_substrate_law/code/verify_phase4.py` — confirms 0.14σ-equivalent agreement + robustness against model-dependent expansion + JUNO discrimination capability + 5σ falsifiability conditions.
+*Numerical sensitivity verification:* Machine-precision verification at `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/code/verify_phase4.py` — confirms 0.14σ-equivalent agreement + robustness against model-dependent expansion + JUNO discrimination capability + 5σ falsifiability conditions.
 
 ### §14.10 Mechanism A trajectory FULL CLOSURE — 4-of-4 sub-steps closed
 
@@ -1206,7 +1206,7 @@ With F.1 sub-question fully closed under Scenario A, the forward queue is:
 
 **(C) F.3 substantive content trajectory** — closure of remaining chirality continuum manifestation (manifestation v if added, or other dynamical-object trajectories) following the F.2 closure pattern. Estimated 3–8 sessions per manifestation.
 
-**(D) F.1 dynamical-substrate-law flagship paper assembly** — convert this scoping sketch + §11–§14 closure trajectory + Findings DSL-1 through DSL-4 into structured `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` source file (analog of Capotauro v2.0 paper structure). The paper would consolidate:
+**(D) F.1 dynamical-substrate-law flagship paper assembly** — convert this scoping sketch + §11–§14 closure trajectory + Findings DSL-1 through DSL-4 into structured `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` source file (analog of Capotauro v2.0 paper structure). The paper would consolidate:
 - Mechanism A primitive specification + structural foundation.
 - Phase 1: DI-bit current derivation (full Layer 3 with numerical verification).
 - Phase 2: PCD-coupling rule derivation (Layer 2.5 structural-consistency).
@@ -1334,7 +1334,7 @@ Estimated 5–15 sessions of structural exploration; output is sketch-level rath
 
 ---
 
-*This sketch is the opening of the F.1 sub-question scoping trajectory at the new flagship-paper home `flagship_papers/dynamical_substrate_law/`. It is the analog of Patch 0414's Capotauro_chiral_mechanism_candidate.md for the F.1 dynamical-substrate-law gate trajectory.*
+*This sketch is the opening of the F.1 sub-question scoping trajectory at the new flagship-paper home `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/`. It is the analog of Patch 0414's Capotauro_chiral_mechanism_candidate.md for the F.1 dynamical-substrate-law gate trajectory.*
 
 **F.1 sub-question status (Patch 0528 calibrated):** **PROVISIONAL CLOSURE at viability level pending Phase 2 foundations work.**
 - Phase 1 CLOSED at Patch 0524 §11 (Layer 3 mathematical, Finding DSL-1; Patch 0528 calibrated to clarify cycle-mediated informational bias current vs conserved transport).

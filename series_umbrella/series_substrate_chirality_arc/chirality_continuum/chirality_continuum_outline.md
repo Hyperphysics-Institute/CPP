@@ -350,10 +350,10 @@ The two sketches together constitute the **paired scoping foundation** for this 
 
 ## §9 Patch 0484 deliverables
 
-- **NEW** `flagship_papers/chirality_continuum/` directory created.
-- **NEW** `flagship_papers/chirality_continuum/README.md` (flagship-paper home-directory README).
-- **NEW** `flagship_papers/chirality_continuum/chirality_continuum_outline.md` (this file; ~480 lines; the v0.1 outline document).
-- **NEW** `flagship_papers/chirality_continuum/sketches/` placeholder directory for future joint-paper-specific sketches.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` directory created.
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/README.md` (flagship-paper home-directory README).
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum_outline.md` (this file; ~480 lines; the v0.1 outline document).
+- **NEW** `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/` placeholder directory for future joint-paper-specific sketches.
 - **UPDATE** `research_frontier.md` Last-updated header prepended + OPEN-FP-SF-2-CHIR Status field updated with Patch 0484 v0.1 outline milestone + Venue (c) confirmation.
 - **UPDATE** `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` Patch 0484 v0.1 outline entry appended.
 
@@ -411,7 +411,7 @@ The Venue (b) fallback should be triggered ONLY if structural obstructions are s
 
 **Programme state changes**:
 
-1. **Joint Layer 4 paper "Chirality Continuum" OPENED at v0.1 outline level**: paper home directory `flagship_papers/chirality_continuum/` created; README + v0.1 outline + sketches placeholder established.
+1. **Joint Layer 4 paper "Chirality Continuum" OPENED at v0.1 outline level**: paper home directory `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` created; README + v0.1 outline + sketches placeholder established.
 2. **v0.1 outline viability decision gate operative**: five viability criteria assessed; all five PASS; recommendation is PROCEED TO v0.2 SUBSTANTIVE DRAFTING at Venue (c) joint paper.
 3. **OPEN-FP-SF-2-CHIR Status field updated** in `research_frontier.md` with Patch 0484 v0.1 outline + Venue (c) confirmation milestone.
 4. **PH-OPEN-FP-SF-2-CHIR.md updated** with Patch 0484 v0.1 outline entry.
@@ -423,9 +423,9 @@ The Venue (b) fallback should be triggered ONLY if structural obstructions are s
 
 **Files modified at Patch 0484**:
 
-- `flagship_papers/chirality_continuum/README.md` (NEW; ~80 lines).
-- `flagship_papers/chirality_continuum/chirality_continuum_outline.md` (NEW; this file; ~480 lines).
-- `flagship_papers/chirality_continuum/sketches/.gitkeep` (NEW empty placeholder).
+- `series_umbrella/series_substrate_chirality_arc/chirality_continuum/README.md` (NEW; ~80 lines).
+- `series_umbrella/series_substrate_chirality_arc/chirality_continuum/chirality_continuum_outline.md` (NEW; this file; ~480 lines).
+- `series_umbrella/series_substrate_chirality_arc/chirality_continuum/sketches/.gitkeep` (NEW empty placeholder).
 - `research_frontier.md` (Last-updated header prepended; OPEN-FP-SF-2-CHIR Status field appended with Patch 0484 milestone).
 - `problem_histories/PH-OPEN-FP-SF-2-CHIR.md` (Patch 0484 v0.1 outline entry appended).
 
@@ -438,7 +438,7 @@ The Venue (b) fallback should be triggered ONLY if structural obstructions are s
 1. **Viability assessment confirmation**: all five viability criteria assessed at PASS; recommendation is PROCEED TO v0.2 SUBSTANTIVE DRAFTING. Confirm or surface viability concerns.
 2. **§A shared bridge work authorization**: authorize Patch 0485 candidate to open the substantive §A shared substrate-handle-to-effective-coupling bridge work — sub-claim (a) closure for both sectors jointly. Estimated 2--3 sessions; produces the load-bearing technical step in shared form.
 3. **Working title acceptance or revision**: "Cross-Sector Layer 4 Closure of the Substrate Chirality Handle: Electroweak V--A Coupling and Quark Chiral-Polarity-Bias from $|M| = \chi/6$" — accept or refine.
-4. **Home directory acceptance or revision**: `flagship_papers/chirality_continuum/` paired with `flagship_papers/capotauro/` — accept or rename.
+4. **Home directory acceptance or revision**: `series_umbrella/series_substrate_chirality_arc/chirality_continuum/` paired with `series_umbrella/series_substrate_chirality_arc/capotauro/` — accept or rename.
 5. **Anti-priority confirmation**: no modifications to SF-2 v1.0 or SM-2 v1.0 paper text; joint paper scope strictly bounded to OPEN-FP-SF-2-CHIR + SM-2 v2.0+ chiral-polarity-bias closure; venue fallback to Venue (b) preserved as structural option.
 
 Upon confirmation, Patch 0485 candidate opens §A shared substrate-handle-to-effective-coupling bridge work as the load-bearing technical step of the joint Layer 4 closure trajectory.

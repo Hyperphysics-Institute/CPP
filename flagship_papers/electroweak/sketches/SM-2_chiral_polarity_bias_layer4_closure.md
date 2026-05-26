@@ -13,8 +13,8 @@ This sketch's load-bearing conclusion (§5 below) is that **Venue (c) joint Laye
 This sketch is Tier-4 exploratory reasoning at scoping level — Layer 1 / Layer 2 epistemic status (cross-sector parallel analysis + sub-claim decomposition + foundational input enumeration), not Layer 3 (formal theorem-level closure). The sketch is paired with:
 
 - the SM-2 v1.0 paper ([`series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex`](../../../series_standard_model/papers/SM-2_mass_generation_geometric_hierarchies.tex), §10 chiral-polarity-bias mechanism statement and §5+§6+Glossary Linear/Orbital ZBW characterization),
-- the Capotauro v2.0 paper ([`flagship_papers/capotauro/capotauro.tex`](../capotauro.tex), §sec:qdp\_edp\_sector THEO-SD-CHIR-2 derivation chain plus §intro\_status\_at\_v2.0 line 156 explicit closure-target naming),
-- the Capotauro Reading C sketch ([`flagship_papers/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`](Capotauro_chiral_mechanism_candidate.md), §18--§20 Q6 closure work establishing THEO-SD-CHIR-2 at full Layer 3 rigor),
+- the Capotauro v2.0 paper ([`series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex`](../capotauro.tex), §sec:qdp\_edp\_sector THEO-SD-CHIR-2 derivation chain plus §intro\_status\_at\_v2.0 line 156 explicit closure-target naming),
+- the Capotauro Reading C sketch ([`series_umbrella/series_substrate_chirality_arc/capotauro/sketches/Capotauro_chiral_mechanism_candidate.md`](Capotauro_chiral_mechanism_candidate.md), §18--§20 Q6 closure work establishing THEO-SD-CHIR-2 at full Layer 3 rigor),
 - the SF-2 v2.0+ companion sketch ([`flagship_papers/electroweak/sketches/SF-2_chir_layer4_closure.md`](../../../flagship_papers/electroweak/sketches/SF-2_chir_layer4_closure.md), the parallel sketch this one cross-references for joint-paper venue analysis),
 - the PD-004 publication-pathway document ([`programmatic_decisions/PD-004-publication-pathway.md`](../../../programmatic_decisions/PD-004-publication-pathway.md), Layer 4 venue guidance).
 

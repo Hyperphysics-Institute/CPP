@@ -144,7 +144,7 @@ Three of five observable manifestations under the OPEN-SD-CHIR-PRIMITIVE umbrell
 ## Cross-references
 
 - **Predictions registry**: `predictions.md` — PRED-O-25 (chirality continuum primary observable) + PRED-O-26 (W-bracelet substrate-handle) + PRED-O-27 (qDP/eDP substrate-handle)
-- **Falsifier registry**: Capotauro Falsifier 6 three thresholds at `flagship_papers/capotauro/capotauro.tex` §sec:falsifiers + chirality_continuum.tex §9.4
+- **Falsifier registry**: Capotauro Falsifier 6 three thresholds at `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` §sec:falsifiers + chirality_continuum.tex §9.4
 - **Theorem registry**: `theorem-registry.md` — THEO-CHIR-CONT-1 (#65) + -2 (#66) + -3 (#67)
 - **Companion glossary**: `glossary-chirality_continuum.md` — definitions of all phenomena-specific terms
 - **Companion mechanism**: `mechanism-chirality_continuum.md` — step-by-step physical mechanism producing the predictions

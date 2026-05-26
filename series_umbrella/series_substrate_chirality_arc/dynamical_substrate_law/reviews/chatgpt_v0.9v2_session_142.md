@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Reviewer**: ChatGPT (OpenAI)
-- **Paper reviewed**: `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 v2 (post-Patch 0569; 32-page PDF)
+- **Paper reviewed**: `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex` v0.9 v2 (post-Patch 0569; 32-page PDF)
 - **Paper version commit**: `3d754da` (Patch 0569, Session 142) — Patch 0569 multi-edit response with 8 atomic edits implementing the 5 reviewer-cycle items from Round 1 (1 MUST-ADDRESS + 4 SHOULD-ADDRESS); ChatGPT Round 1 Concern #3 (thermodynamic-arrow framing gap) addressed via triple-coverage at abstract + §1.1 + §10; ChatGPT Round 1 Concern #4 (symmetry argument hardening) addressed via §7.3 Step 3 representation-theoretic justification.
 - **Review session**: Session 142
 - **Review archived by**: Patch 0569a (this file)
