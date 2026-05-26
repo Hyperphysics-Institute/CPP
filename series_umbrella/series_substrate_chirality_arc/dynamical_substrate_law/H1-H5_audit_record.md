@@ -15,7 +15,7 @@
 | H1 — PDF references each companion at least once | **PASS via implicit reference** | 0 literal filename references; passes via shared-terminology criterion |
 | H2 — Placeholders / TODO / version markers in companions | **PASS** | All SHIP-time companions marked v1.0 SHIPPED; TODOs found are OS §15 deferral markers, not placeholder text |
 | H3 — Numerical-value consistency across paper + predictions.md + phenomena | **PASS** | Paper uses exact symbolic forms (`-\frac{1}{2\phi}`, `(6\delta/\phi^2)`); companions add decimal expansions matching exactly |
-| H4 — OPEN-/CONJ-/PROP- identifier coverage in research_frontier.md | **ONE FINDING — registered, not silently fixed** | `OPEN-SS-B1q6` cross-reference in paper §1.5 + §3.1 is a legacy identifier not registered in current research_frontier.md; substantive content registered as OPEN-FP-F1-1 |
+| H4 — OPEN-/CONJ-/PROP- identifier coverage in research_frontier.md | **ONE FINDING — REMEDIATED at Patch 0571h** | `OPEN-SS-B1q6` registered as legacy-alias entry pointing to OPEN-FP-F1-1 at `frontier_sectors/FP.md` |
 | H5 — Stale references in README.md / INDEX.md | **PASS** | Post-Patch-0571e SSCA migration sweep cleared all stale `flagship_papers/<SSCA paper>/` references; INDEX.md correctly references F.1 at new SSCA path |
 
 **Overall:** Phase 7C H1–H5 audit complete with one openly-registered finding (H4). The finding is non-blocking for paper-state stability — the substantive open problem is registered in current naming under OPEN-FP-F1-1; only the legacy cross-reference identifier `OPEN-SS-B1q6` is stale. Remediation options enumerated below; deferred to a substantive-physics Patch (not Phase 7C scope) per separation-of-concerns discipline.
@@ -125,6 +125,8 @@ Paper uses LaTeX-formatted exact symbolic forms; companion files use the same sy
 The audit registers the finding openly per the symmetric-honesty discipline. Selection among remediation options is a separate decision; no remediation is applied in this Patch.
 
 **Verdict:** ONE FINDING — registered, not silently fixed.
+
+**Remediation update (Patch 0571h, 26 May 2026):** Option 1 selected and applied. A `Legacy alias:` entry was added to the OPEN-FP-F1-1 section in `frontier_sectors/FP.md` recording `OPEN-SS-B1q6` as a pre-SHIP registry identifier pointing to OPEN-FP-F1-1, with the cross-reference to paper.tex §1.5 + §3.1 explicit. Registry lookups against `OPEN-SS-B1q6` now resolve to OPEN-FP-F1-1. The legacy-alias convention is recorded openly in the registry entry; future audits will find both identifiers in the registry without ambiguity. Options 2 (paper.tex edit + PDF recompile) and 3 (OS codification of legacy-identifier convention as a corpus-wide pattern) remain available for future Patches but are not required for H4 closure.
 
 ---
 
