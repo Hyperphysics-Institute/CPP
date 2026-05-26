@@ -1,0 +1,8 @@
+# Session 25 (6 May 2026) — extracted from research_frontier.md line 6
+
+<!-- Extracted on 25 May 2026 from line 6 of research_frontier.md during
+     changelog decomposition. Line 6 was a 496KB unbroken line holding 21
+     sessions of running update log. This segment is an Earlier-marked block
+     (1,385 chars). -->
+
+Earlier 6 May 2026 Session 25 v1.0 polish sub-task (a): SS-9 v0.1 → v0.2 with Sub-Lemma 2.1 (\S 2.5) added, formalizing the C7 motivation paragraph as a conditional derivation: C1$'$ + C2 + C6 + (H4) cluster contractibility + (H5) alpha-surface adjacency $\Rightarrow$ C7. **OPEN-SS-33 ADVANCED** from "raw open" (Session 24 ratification) to "conditionally closed modulo (H4) cluster contractibility and (H5) alpha-surface adjacency from A1--A11 + C5." Remark 2.1 sketches viable closure paths for both residual sub-targets: (H4) from C5 isoperimetrics (internal voids and toroidal handles both excluded under ground-state energy minimization); (H5) from C5 + LO-geometry edge-shared multi-alpha enumeration (small-cardinality combinatorial set, face-shared K$_3$-bonded ground states dominate edge-shared alternatives). Both residual sub-targets are smaller in scope than C7 itself. Three pdflatex passes zero warnings/errors after pass 3; output 23 pages (was 21 in v0.1, +2 from sub-lemma + remark). Programme negative-result count UNCHANGED at 12 (v1.0 polish work is paper-internal, not programme-level). Polish track status: sub-task (a) C7 sub-lemma DONE; sub-tasks (b) 3D-non-degeneracy / (c) C5 well-definedness / (d) AI-team review / (e) external review pending. SS-9 at v0.2. Forward priority Session 26: sub-task (b) 3D-non-degeneracy via maximum-edge selection sub-lemma.
