@@ -1,9 +1,11 @@
 # CPP Research Frontier
 
 **Location:** `/CPP/research_frontier.md`
-**Last updated:** 24 May 2026 (Session 142, F.1 / SS-9 / Capotauro thread). Prior session-by-session running-update log extracted to [`session_logs/2026-05-24_session_142_extracted_from_frontier.md`](session_logs/2026-05-24_session_142_extracted_from_frontier.md) on 25 May 2026 (changelog decomposition).
+**Last updated:** 25 May 2026 (Session 142 / Patch 0570 propagation — **F.1 DYNAMICAL SUBSTRATE LAW v1.0 SHIP propagated through `frontier_sectors/` decomposition**: six new OPEN-FP-F1-1 through OPEN-FP-F1-6 entries registered in `frontier_sectors/FP.md`; OPEN-SD-CHIR-PRIMITIVE umbrella manifestation (iv) thermodynamic causal-arrow CLOSED at sketch-document Layer 3; §1 FP sector count refreshed 9 → 15; §9 Problem Count Summary FP row updated; §4 Recently Resolved entry added for the F.1 v1.0 SHIP. First F-line flagship v1.0 SHIP propagation to research frontier in CPP corpus history.)
 
-**Last updated:** 20 May 2026 (Session 137, OPEN-SS-35 / SS-9 closure-programme thread). Prior session-by-session running-update log (21 sessions, head Session 137 plus 20 Earlier-marked blocks) extracted to dated `session_logs/2026-05-*_session_*_extracted_from_frontier.md` files on 25 May 2026.
+Earlier **Last updated:** 24 May 2026 (Session 142, F.1 / SS-9 / Capotauro thread). Prior session-by-session running-update log extracted to [`session_logs/2026-05-24_session_142_extracted_from_frontier.md`](session_logs/2026-05-24_session_142_extracted_from_frontier.md) on 25 May 2026 (changelog decomposition).
+
+Earlier **Last updated:** 20 May 2026 (Session 137, OPEN-SS-35 / SS-9 closure-programme thread). Prior session-by-session running-update log (21 sessions, head Session 137 plus 20 Earlier-marked blocks) extracted to dated `session_logs/2026-05-*_session_*_extracted_from_frontier.md` files on 25 May 2026.
 **Maintainer:** Thomas Lee Abshier ND, Hyperphysics Institute
 **Architecture:** See `templates/research_frontier_architecture.md`
 **Nomenclature:** See `nomenclature.md`
@@ -16,7 +18,7 @@ One flat file showing the complete landscape of every identified problem, conjec
 
 **Answers the question:** *What is solved, what is open, and what connects to what?*
 
-**Problem count:** 86 entries (51 open, 16 conjectures, 15 propositions, 6 resolved, 6 falsified). *(Counts exclude sub-problems.)*
+**Problem count:** 92 entries (57 open, 16 conjectures, 15 propositions, 6 resolved, 6 falsified). *(Counts exclude sub-problems. The 57-open figure incorporates the 6 new OPEN-FP-F1-1 through OPEN-FP-F1-6 entries registered at F.1 v1.0 SHIP on 24 May 2026, Session 142, Patch 0570.)*
 
 ---
 
@@ -44,7 +46,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 
 | Sector | File | Scope | Problems |
 |--------|------|-------|----------|
-| FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (SF-line) | 9 |
+| FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (F-line + SF-line) | 15 |
 | SS | [`frontier_sectors/SS.md`](frontier_sectors/SS.md) | Strong Sector (includes SS-specific propositions and conjectures from SS-5, SS-6, SS-7) | 18 active, 1 retired |
 | SM | [`frontier_sectors/SM.md`](frontier_sectors/SM.md) | Standard Model Emergence | 11 |
 | EW | [`frontier_sectors/EW.md`](frontier_sectors/EW.md) | Electroweak Sector | 6 |
@@ -80,6 +82,12 @@ The active open problems, conjectures, and propositions are organized by sector 
 Kept here for one cycle, then moved to §5.
 
 ---
+
+### F.1 (Dynamical Substrate Law) v1.0 SHIPPED — Substrate-Locality Umbrella Theorem & OPEN-SD-CHIR-PRIMITIVE Manifestation (iv) Closed at Sketch-Document Layer 3
+**Shipped:** 24 May 2026 (Session 142, Patch 0570 — **first F-line flagship v1.0 SHIP in CPP corpus history**)
+**Resolving paper:** F.1 *The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading C in the 600-Cell*, v1.0, 33 pages, at `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex` + `.pdf` (frozen v1.0 reference PDF committed at Patch 0570; MD5 49e56be92a3ccc126ce09210b5898794).
+**Resolved by:** Thomas Lee Abshier ND with Claude (primary collaborator); ChatGPT (six-round reviewer cycle R1→R6 with monotonic verdict improvement to strongest-positive), Grok (R1 explicit SHIP-acceptable), Copilot (R1 implicit SHIP-acceptable with tier-ranked recommendations).
+**Summary:** First-order ($\mathcal{O}(\delta^1)$) substrate-locality umbrella theorem (F.1 Theorem 7.1) closes the F.1 sub-question — *"Does CPP imply substrate-locality of DI-bit currents at vertex-aligned Reading C?"* — affirmatively at sketch-document Layer 3. Net DI-bit current at any host vertex $\vec{J}_{\text{DI-net}}(v_{\text{host}})$ depends only on first-shell content at first order in the propagation-rate-asymmetry parameter $\delta$, with closed-form expression $\vec{J}_{\text{DI-net}}(v_{\text{host}}) = (6\delta r_0/\phi^2)\,\hat{n}$ — parallel to substrate direction $\hat{n}$ with structural constant $6/\phi^2$ from 600-cell vertex-aligned Reading C geometry. The three publication-grade hardened theorem artifacts at Patches 0550 + 0551 + 0552 underwrite the §5 trio (Theorems 5.1 host-first-shell-projection, 5.2 first-shell-perpendicularity, host-first-shell-projection) conditional on G1 (first-shell inner-product primitive Lemma 5.1). **Closes OPEN-SD-CHIR-PRIMITIVE manifestation (iv)** (thermodynamic causal-arrow emergence candidate via substrate-locality of DI-bit currents) at sketch-document Layer 3 — the second sector explicitly closed under the umbrella after Capotauro v2.0 (manifestations i–iii via mass-mixing + electroweak + electromagnetic-handedness three-way unification at full Layer 3 per Findings C-W40 + C-W41 + C-W42 + C-W43 → THEO-SD-CHIR-1 and Findings C-W44 + C-W45 + C-W46 → THEO-SD-CHIR-2). Six post-SHIP Open Problems registered as F.1 trajectory continuations: OPEN-FP-F1-1 through OPEN-FP-F1-6 (see [`frontier_sectors/FP.md`](frontier_sectors/FP.md)).
 
 ### THEO-SS-9 → OPEN-SS-9: δ = 1/3 Proved (C₃ + Cage Completeness)
 **Resolved:** 29 March 2026
@@ -236,7 +244,7 @@ CROSS-SERIES:
 
 | Sector | Total | Open | Conj | Prop | Resolved | Falsified |
 |--------|-------|------|------|------|----------|-----------|
-| FP (Flagship Papers) | 2 | 2 | 0 | 0 | 0 | 0 |
+| FP (Flagship Papers) | 15 | 15 | 0 | 0 | 0 | 0 |
 | SS (Strong) | 26 | 16 | 5 | 1 | 1 | 1 |
 | SM (Standard Model) | 23 | 11 | 6 | 1 | 3 | 5 |
 | EW (Electroweak) | 10 | 6 | 3 | 0 | 0 | 0 |
@@ -244,9 +252,9 @@ CROSS-SERIES:
 | SR (Relativity) | 8 | 8 | 0 | 0 | 0 | 0 |
 | SD (Foundations) | 7 | 6 | 1 | 0 | 0 | 0 |
 | GLOBAL | 2 | 2 | 0 | 0 | 0 | 0 |
-| **Total** | **91** | **56** | **15** | **6** | **7** | **6** |
+| **Total** | **104** | **69** | **15** | **6** | **7** | **6** |
 
-*(Note: Propositions counted only at Tier 2–3 level in this summary. Tier 4 items (10) grouped under PROP-6–15.)*
+*(Note: Propositions counted only at Tier 2–3 level in this summary. Tier 4 items (10) grouped under PROP-6–15. FP count updated 25 May 2026 from 2 → 15 to reflect: (a) 9 prior SF-line OPs registered through SF-2 and SF-4 v1.0 SHIPs and prior Capotauro work (already present in `frontier_sectors/FP.md` at decomposition); (b) 6 new OPEN-FP-F1-1 through OPEN-FP-F1-6 registered at F.1 v1.0 SHIP on 24 May 2026, Session 142, Patches 0569e + 0570.)*
 
 ---
 

@@ -5,9 +5,9 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Flagship Papers (FP) — apex layer — 9 problems
+## Flagship Papers (FP) — apex layer — 15 problems
 
-The Flagship Papers (SF-line) sit at the apex of the CPP programme, taking completed derivations from the series sectors (SS, SM, EW, QM, SR, SD) and presenting them as solutions to named known-unknowns in mainstream physics. SF-line problems are conditional inheritances opened by mechanism-selection decisions; their closure is the gate to flagship-paper v1.0 ship. See [`flagship_papers/README.md`](flagship_papers/README.md) for SF-line architecture.
+The Flagship Papers sit at the apex of the CPP programme, taking completed derivations from the series sectors (SS, SM, EW, QM, SR, SD) and presenting them as solutions to named known-unknowns in mainstream physics. Two flagship lines are now active: the **SF-line** (SF-2, SF-4, …; phenomenology-focused flagships) and the **F-line** (F.1, …; foundational-physics flagships at sketch-document Layer 3 framework-preprint scope). FP problems are conditional inheritances opened by mechanism-selection decisions registered at the parent paper's v1.0 SHIP; their closure is the gate to flagship-paper v2.0 ship or, for sketch-document Layer 3 framework-preprints, to publication-grade Layer 3 promotion. See [`flagship_papers/README.md`](flagship_papers/README.md) for SF-line architecture; F-line papers live under `flagship_papers/<paper_name>/` parallel to SF-line. The F.1 Dynamical Substrate Law SHIPPED at v1.0 on 24 May 2026 (Session 142, Patch 0570) — **first F-line flagship v1.0 SHIP in the CPP corpus** — registering six Open Problems (OPEN-FP-F1-1 through OPEN-FP-F1-6) and closing manifestation (iv) of OPEN-SD-CHIR-PRIMITIVE (substrate-locality of DI-bit currents → thermodynamic causal-arrow emergence candidate) at sketch-document Layer 3.
 
 ### OPEN-FP-SF-2-η: Substrate-derivation of cage-stability dilution factor η
 **Status:** **OPEN** — registered at SF-2 v1.0 SHIP (Session 83 close, Patch 0370)
@@ -158,3 +158,92 @@ The Flagship Papers (SF-line) sit at the apex of the CPP programme, taking compl
 
 ---
 
+### OPEN-FP-F1-1: Extension of substrate-locality theorem to $\mathcal{O}(\delta^2)$
+**Status:** **OPEN** — registered as in-body §9 Open Problem at F.1 v1.0 SHIP (Session 142 close, Patch 0570)
+**Sector(s):** FP / F.1 (foundations; substrate dynamics)
+**Priority:** MEDIUM (substantive geometric + perturbation-theory project; methodologically analogous to F.1 v1.0 main result at higher order; closes the higher-order conditionality clause of Theorem 7.1)
+**One-line statement:** Extend the F.1 substrate-locality umbrella theorem (Theorem 7.1) to $\mathcal{O}(\delta^2)$ by deriving the second-shell inner-product and edge-projection identities for the 600-cell, and determine whether the parallel-to-$\hat{n}$ structure of $\vec{J}_{\text{DI-net}}(v_{\text{host}})$ survives at second order.
+**What a solution looks like:** First-principles derivation of (i) second-shell inner-product and edge-projection identities analogous to G1 + G2 + the host-first-shell-projection theorem of F.1 §5; (ii) closed-form expression for $\vec{J}_{\text{DI-net}}(v_{\text{host}})$ at $\mathcal{O}(\delta^2)$; (iii) determination of whether second-shell content introduces tangent-direction components to the net DI-bit current. By F.1 Theorem 6.1 (perturbation-locality), the $\mathcal{O}(\delta^2)$ coefficient depends only on edges in the 2-ball $E_2(v_{\text{host}})$ of the 600-cell edge graph (12 host-to-first-shell + 30 first-shell-to-first-shell + 60 first-shell-to-second-shell + various second-shell-to-second-shell).
+**Dependencies:** F.1 v1.0 Theorem 6.1 (perturbation-locality), Theorem 7.1 (substrate-locality umbrella), Lemma 5.1 (G1 first-shell inner-product primitive); 600-cell second-shell geometry (20 vertices forming a regular dodecahedron at distance $\sqrt{2 - 2\cos 72^\circ} = \phi^{-1}\sqrt{3 - \phi}$ from $v_{\text{host}}$, well-characterised; inner-product structure not yet worked out).
+**Cross-sector connections:** Independent of OPEN-FP-F1-2 (Layer 4 derivation) and OPEN-FP-F1-3 (G1 hardening) — three OPs mutually orthogonal at first order. Closure completes the higher-order conditionality clause of Theorem 7.1.
+**Current best result:** First-order substrate-locality theorem (F.1 v1.0 Theorem 7.1) at sketch-document Layer 3; second-shell geometric structure characterised but inner-product/edge-projection identities not yet established.
+**Falsification route:** Computational counter-example showing the parallel-to-$\hat{n}$ structure does not survive at $\mathcal{O}(\delta^2)$; or analytical proof that second-shell content forces tangent components into $\vec{J}_{\text{DI-net}}(v_{\text{host}})$.
+**Paper(s):** F.1 Dynamical Substrate Law v1.0 SHIPPED at Patch 0570 (24 May 2026, Session 142); registered as in-body §9 Open Problem in `flagship_papers/dynamical_substrate_law/dynamical_substrate_law.tex`.
+**Registered:** 24 May 2026 Session 142 close, Patch 0570.
+
+---
+
+### OPEN-FP-F1-2: Layer 4 axiomatic derivation of Mechanism A from CPP primitives A1–A11
+**Status:** **OPEN** — registered as in-body §9 Open Problem at F.1 v1.0 SHIP (Session 142 close, Patch 0570)
+**Sector(s):** FP / F.1 (foundations; substrate dynamics)
+**Priority:** HIGH (deepest programme commitment opened by F.1 v1.0 SHIP; closure discharges framework-axiom conditionality of Theorem 7.1 to the primitive-axiom level and unlocks unconditional Layer 4 axiomatic status for the F.1 sub-question's closure; anticipated to be substantial — spanning multiple Patches in a dedicated trajectory)
+**One-line statement:** Derive Mechanism A (F.1 framework axioms MA.1 + MA.2: propagation-rate asymmetry $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\hat{n})$ and framework-local current construction at $\mathcal{O}(\delta^1)$) from CPP primitive axioms A1–A11 alone.
+**What a solution looks like:** Specifically: (i) derive the propagation-rate asymmetry from the CP + DI-bit + PCD-cycle primitives of A1 + A6$'$ (CPs interconnected by DI-bits as elementary information units; PCD cycle as elementary discrete-time temporal process); (ii) derive the vertex-uniformity of the rate (its independence of the originating vertex $v$) from the substrate's discrete geometric structure A11 (600-cell substrate). Closure would unlock unconditional Layer 4 axiomatic status for Theorem 7.1 (and hence for the F.1 sub-question's closure).
+**Dependencies:** F.1 v1.0 Mechanism A (Axioms MA.1 + MA.2 of §4); CPP primitive axioms A1 through A11 (in particular A1 CP primitive, A6$'$ DI-bit and PCD-cycle primitives, A11 600-cell substrate).
+**Cross-sector connections:** Independent of OPEN-FP-F1-1 ($\mathcal{O}(\delta^2)$ extension) and OPEN-FP-F1-3 (G1 hardening). Long-term programme target; closure pattern would template Layer 4 axiomatic derivation for other CPP framework-axiom inputs (e.g., Mechanism A analogs in OPEN-FP-SF-2-η, OPEN-FP-SF-2-EWSB substrate-thermodynamics work).
+**Current best result:** Mechanism A taken as framework axiom (Axioms MA.1 + MA.2 of F.1 §4) at sketch-document Layer 3 in F.1 v1.0. The propagation-rate asymmetry and the framework-local current construction at $\mathcal{O}(\delta^1)$ are independent commitments at Layer 3 framework input.
+**Falsification route:** Standard — derivation attempt reveals primitives A1–A11 are insufficient to constrain the propagation-rate asymmetry to the postulated form; or proof that vertex-uniformity of the rate fails under A11 (600-cell substrate) given the substrate's PCD-cycle dynamics under A6$'$.
+**Paper(s):** F.1 Dynamical Substrate Law v1.0 SHIPPED at Patch 0570 (24 May 2026, Session 142); registered as in-body §9 Open Problem. Eventual closure would generate a dedicated Layer 4 derivation paper or extended F.1 v2.0 §11 Mechanism A derivation chapter.
+**Registered:** 24 May 2026 Session 142 close, Patch 0570.
+
+---
+
+### OPEN-FP-F1-3: Publication-grade hardening of identity G1 (first-shell inner-product primitive)
+**Status:** **OPEN** — registered as in-body §9 Open Problem at F.1 v1.0 SHIP (Session 142 close, Patch 0570)
+**Sector(s):** FP / F.1 (foundations; substrate dynamics)
+**Priority:** **HIGH — RECOMMENDED first post-SHIP substantive physics Patch** per ChatGPT R1–R6 + Copilot R1 convergent verdict ("single highest-value next action"); estimated 1–2 sessions; closure upgrades F.1 §5 trio to publication-grade Layer 3 unconditional and consequently strengthens Theorem 7.1's conditionality clause to depend only on the (then-unconditional) trio
+**One-line statement:** Promote identity G1 (F.1 Lemma 5.1: first-shell inner-product primitive $v_i \cdot v_j = \phi/2$ for adjacent first-shell vertices $v_i, v_j$ of $v_{\text{host}}$) from sketch-document Layer 3 to publication-grade Layer 3 via dedicated hardening Patch, producing `hardened_theorems/first_shell_inner_product_primitive.tex` parallel in structure to the three existing hardened artifacts at Patches 0550 + 0551 + 0552.
+**What a solution looks like:** Standalone hardened-theorem artifact with (i) explicit hypothesis tracking; (ii) isolation of the dihedral-angle calculation $\cos(36^\circ) = \phi/2$ as a standalone lemma; (iii) the icosahedral residual symmetry $H_3 = I_h$ as a separately-derived structural input; (iv) a five-class exclusion enumeration (shared exclusion class E1 of F.1 Theorems 5.1 and 5.2 per Patches 0551 + 0552 hardened-theorem artifacts). Closure upgrades F.1 Theorems 5.1 (host-first-shell-projection) and 5.2 (first-shell-perpendicularity) from publication-grade Layer 3 *conditional on G1* to publication-grade Layer 3 *unconditional*.
+**Dependencies:** F.1 v1.0 Lemma 5.1 (G1 imported from Patch 0541 §3.1 with derivation from first-shell-edge dihedral angle $\cos(36^\circ) = \phi/2$ + unit-vertex normalisation); template structure from `hardened_theorems/` artifacts produced at Patches 0550 + 0551 + 0552.
+**Cross-sector connections:** Closure interacts with the conditionality clauses of Theorems 5.1, 5.2, and (via the trio) Theorem 7.1. Independent of OPEN-FP-F1-1 ($\mathcal{O}(\delta^2)$) and OPEN-FP-F1-2 (Layer 4 derivation) — the three OPs mutually orthogonal. Closure pattern continues the Patch 0550/0551/0552 hardened-artifact methodology established at F.1's Theorem 5 trio.
+**Current best result:** G1 at sketch-document Layer 3 in F.1 v1.0 §5 (Lemma 5.1, imported from Patch 0541 §3.1). Numerical verification consistent with the polytope-theoretic value $\cos(36^\circ) = \phi/2$ for 600-cell first-shell-edge dihedral angle.
+**Falsification route:** Hardening attempt reveals a hypothesis-tracking gap or exclusion-class incompleteness inherited from the Patch 0541 derivation chain; or identification of an alternative first-shell inner-product value at vertex-aligned Reading C (would invalidate the Patch 0541 §3.1 derivation and require reconstruction).
+**Paper(s):** F.1 Dynamical Substrate Law v1.0 SHIPPED at Patch 0570 (24 May 2026, Session 142); registered as in-body §9 Open Problem. Hardened-theorem artifact targeted: `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex`.
+**Registered:** 24 May 2026 Session 142 close, Patch 0570.
+
+---
+
+### OPEN-FP-F1-4: Sector-5 schema instantiation (identification of OPEN-SD-CHIR-PRIMITIVE manifestation (v))
+**Status:** **OPEN** — registered as in-body §9 Open Problem at F.1 v1.0 SHIP (Session 142 close, Patch 0570)
+**Sector(s):** FP / F.1 (foundations; substrate dynamics) × SD (cross-sector — OPEN-SD-CHIR-PRIMITIVE umbrella)
+**Priority:** MEDIUM (research-direction-choosing question contingent on identifying the structural manifestation; closure directly enables F.3 substantive content trajectory by providing the fifth-sector schema instance)
+**One-line statement:** Identify the fifth observable manifestation of the substrate-direction primitive $\hat{n}$ — the conjectured "Sector 5" — joining manifestations (i) K3-doublet chirality (Capotauro mass-mixing), (ii) W-bracelet V-A (electroweak), (iii) qDP/eDP polarization (electromagnetic handedness), and (iv) thermodynamic causal arrow (F.1 substrate-locality); provide sketch-document-Layer 3 realisation analogous to F.1 Theorem 7.1.
+**What a solution looks like:** Identification of the structural domain for Sector 5 followed by sketch-document Layer 3 closure analogous to F.1's substrate-locality theorem. Candidate domains discussed at Patch 0549 §38.3: (a) thermal-equilibrium gauge fixing in finite-temperature field theory; (b) symmetry-restoration dynamics at the electroweak crossover; (c) cosmological-arrow alignment in the CPP-cosmology trajectory. None committed; structural identification is itself a research-direction-choosing question, not a derivation question.
+**Dependencies:** OPEN-SD-CHIR-PRIMITIVE umbrella (currently 4 of 5 manifestations identified: (i)+(ii)+(iii)+(iv); only (v) outstanding); F.1 v1.0 closure pattern as template (three-step pattern: substrate-locality + cage-shell factor + pairing-convention); Capotauro v2.0 chirality continuum sketch document for the broader manifestation domain.
+**Cross-sector connections:** Direct child entry of OPEN-SD-CHIR-PRIMITIVE (SD.md). Closure brings umbrella to all-five-manifestation-identified state, completing the structural commitment of the umbrella registration at Patch 0422. Directly enables F.3 substantive content trajectory.
+**Current best result:** Three candidate domains identified at Patch 0549 §38.3; none committed; the question is open and substantive.
+**Falsification route:** The conjectured fifth manifestation does not structurally exist (i.e., the substrate-direction primitive has exactly four observable manifestations and the umbrella's five-manifestation commitment is over-specified); or a candidate domain is shown to be a sub-case of an existing manifestation rather than an independent fifth.
+**Paper(s):** F.1 Dynamical Substrate Law v1.0 SHIPPED at Patch 0570 (24 May 2026, Session 142); registered as in-body §9 Open Problem. Eventual closure anticipated to feed into F.3 trajectory or into an extended SF-6 EM-unified flagship.
+**Registered:** 24 May 2026 Session 142 close, Patch 0570.
+
+---
+
+### OPEN-FP-F1-5: Non-vertex-aligned Reading C variants (edge-aligned $D_3$ + face-aligned $D_2$ stabilizers)
+**Status:** **OPEN** — registered as in-body §9 Open Problem at F.1 v1.0 SHIP (Session 142 close, Patch 0570)
+**Sector(s):** FP / F.1 (foundations; substrate dynamics)
+**Priority:** MEDIUM (methodologically tractable but not yet attempted; computational effort moderate; conceptual novelty in identifying which 600-cell geometric identities are reading-C-specific vs reading-C-independent)
+**One-line statement:** Extend or reformulate F.1 Theorems 5.1 (host-first-shell projection), 5.2 (first-shell perpendicularity), and 7.1 (substrate-locality umbrella) under edge-aligned Reading C ($\hat{n}$ along a 600-cell short-edge direction; residual $D_3$ symmetry at edge midpoint) and face-aligned Reading C ($\hat{n}$ perpendicular to a triangular face; residual $D_2$ symmetry at face centroid).
+**What a solution looks like:** Replay of F.1 §3–§7 with the alternative residual-symmetry structures: (i) identification of analogous first-shell geometric primitives under $D_3$ and $D_2$ stabilizers; (ii) redetermination of the structural constant $6/\phi^2$ (replaced or rederived); (iii) determination of whether the substrate-locality structure survives, fails, or takes a modified form (e.g., with non-parallel-to-$\hat{n}$ components, or with a different structural constant). Capotauro v2.0 §2.3 + Patch 0419 Finding C-W37 frame these as three sub-cases of a single Reading C primitive class, with vertex-aligned being the most symmetric.
+**Dependencies:** F.1 v1.0 Theorems 5.1, 5.2, 7.1; Capotauro v2.0 §2.3 Reading C three-variant framing; Patch 0419 Finding C-W37 vertex-aligned selection.
+**Cross-sector connections:** Closure establishes the substrate-direction primitive's manifestation structure across all three Reading C variants. Relates to OPEN-FI-C-9-FP-MECHANISM (Capotauro) Reading C trajectory; the vertex-aligned selection at Q1$'$+Q1$'$.A resolution (Patch 0419) is consistent with F.1's vertex-aligned scope, but the edge-aligned and face-aligned variants remain open structural questions for both papers.
+**Current best result:** F.1 v1.0 covers vertex-aligned Reading C exclusively. G1 + G2 are specific to vertex-aligned: the dihedral angle $36^\circ$ + icosahedral residual symmetry $H_3 = I_h$ at the host vertex are vertex-specific structural facts. For edge-aligned or face-aligned Reading C, different residual symmetries ($D_3$ or $D_2$) and different first-shell geometric structures apply.
+**Falsification route:** Substrate-locality structure does not survive under edge-aligned or face-aligned Reading C — e.g., non-parallel-to-$\hat{n}$ components appear at first order; or the structural constant $6/\phi^2$ fails to have a clean analog under $D_3$ or $D_2$ residual symmetry.
+**Paper(s):** F.1 Dynamical Substrate Law v1.0 SHIPPED at Patch 0570 (24 May 2026, Session 142); registered as in-body §9 Open Problem.
+**Registered:** 24 May 2026 Session 142 close, Patch 0570.
+
+---
+
+### OPEN-FP-F1-6: Prose-density tightening — F.1-condensed companion paper trajectory
+**Status:** **OPEN** — registered separately at Patch 0569e from ChatGPT R6 follow-up (preserves in-body 5-OP commitment registered at F.1 §9)
+**Sector(s):** FP / F.1 (foundations; substrate dynamics) — venue/strategy axis
+**Priority:** LOW–MEDIUM (addressable via F.1-condensed companion paper at Theorem 6.1 + Corollary 6.2 + Theorem 7.1 scope with minimal CPP interpretation; long-term; companion-paper drafting depends on OPEN-FP-F1-3 G1 hardening closure as recommended prerequisite for unconditional condensed-venue statements)
+**One-line statement:** Address prose-density concerns surfaced in the ChatGPT R6 reviewer round by producing an F.1-condensed companion paper focused on perturbation-locality (F.1 Theorem 6.1), shell-locality (F.1 Corollary 6.2), and substrate-locality (F.1 Theorem 7.1), with minimal CPP interpretation, suitable for academic-journal submission. R6 verbatim: *"a shorter geometry/locality paper could travel further academically"* than the manifesto-scale F.1 flagship framing.
+**What a solution looks like:** Companion paper draft scoped to the three named results, with CPP interpretation reduced to footnoted cross-references to the F.1 flagship and minimal motivation in the introduction; otherwise mathematics-only presentation. Suitable for submission to a mathematical-physics or pure-mathematics geometry/locality venue rather than the foundational-physics framework-preprint venue that F.1 v1.0 occupies. Approximate target length: 8–14 pages (vs F.1's 33 pages).
+**Dependencies:** F.1 v1.0 §5–§7 content (Theorems 5.1, 5.2, host-first-shell-projection, perturbation-locality 6.1, shell-locality 6.2, substrate-locality umbrella 7.1); OPEN-FP-F1-3 closure (G1 hardening) recommended as prerequisite so that condensed-venue statements are unconditional rather than carrying conditional-on-G1 clauses.
+**Cross-sector connections:** Condensed companion does not duplicate F.1's chirality-continuum framing or OPEN-SD-CHIR-PRIMITIVE umbrella narrative; focused purely on geometric-locality content. Closure pattern would template "framework-preprint flagship + condensed academic-submission companion" pairs as a CPP corpus convention for future F-line ships.
+**Current best result:** F.1 v1.0 at 33 pages with manifesto-scale framing per ChatGPT R6 convergent strongest-positive verdict (*"substantially more credible, rigorous, and publishable than all earlier versions"*). Condensed framing registered at Patch 0569e from R6 follow-up as separate Open Problem to preserve the in-body 5-OP commitment.
+**Falsification route:** Not applicable in the standard physics sense; the question is venue/communication strategy. Strategic falsification would be an editorial rejection on grounds that the condensed scope fails to communicate the result, or a determination that the F.1 v1.0 framing already serves the academic-submission purpose adequately.
+**Paper(s):** F.1 Dynamical Substrate Law v1.0 SHIPPED at Patch 0570 (24 May 2026, Session 142). Companion paper to be drafted under a separate `flagship_papers/dynamical_substrate_law_condensed/` (or analogous) subfolder per future Patch.
+**Registered:** 24 May 2026 Session 142, Patch 0569e (registered separately from the in-body 5-OP commitment per Patch 0569e log; in-body OPs are F1-1 through F1-5 at F.1 §9).
+
+---
