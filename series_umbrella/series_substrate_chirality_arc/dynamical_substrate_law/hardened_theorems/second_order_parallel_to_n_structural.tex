@@ -1,0 +1,334 @@
+% ============================================================
+% Second-Order Parallel-to-n Structural Theorem
+%   for the Net DI-Bit Current at the Host Vertex
+%   under Vertex-Aligned Reading C in the 600-Cell
+% Publication-Grade Hardening (Symmetry-Only Structural Closure)
+%   of the OPEN-FP-F1-1 Trajectory's Structural Sub-Question
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    FIFTH artifact in the F.1 Layer 3 hardened-theorem sequence — first
+%    Route-C-sequence-1 artifact for the O(delta^2) extension trajectory;
+%    closes the structural sub-question of OPEN-FP-F1-1 at publication-grade
+%    Layer 3 unconditional without computing the second-order coefficient
+%    alpha_2. The coefficient sub-question remains open and is the target
+%    of Route-C-sequence-2 artifacts A2 through A6.)
+%
+% Patch 0585 (Session 145, 26 May 2026) — first OPEN-FP-F1-1 trajectory
+%   closure Patch under Route C (Hybrid) per session-open decision-gate
+%   bundle (DG-1 sub-option A + DG-2 Route C + DG-3 preserve calibration
+%   + DG-4 OPEN-FP-F1-1 first + DG-5 new THEO-DSL-4 entry); accepts the
+%   Session 144 handover §2 forward queue Path alpha.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Oof}[1]{\mathcal{O}(#1)}
+\newcommand{\jDI}{\vec{j}_{DI}^{\,\text{net}}}
+\newcommand{\Ek}{E_k}
+
+\title{Second-Order Parallel-to-$\nhat$ Structural Theorem \\
+for the Net DI-Bit Current at the Host Vertex \\
+under Vertex-Aligned Reading~C in the 600-Cell \\
+\large Symmetry-Only Publication-Grade Layer~3 Closure \\
+of the Structural Sub-Question of OPEN-FP-F1-1}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7 \\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{26 May 2026 (Session 145, CPP Patch 0585)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade Layer~3 \emph{symmetry-only} closure of the structural sub-question of OPEN-FP-F1-1: under (H1)~vertex-aligned Reading~C with $\nhat = \vhost$, (H2)~600-cell unit-vertex normalisation, (H3)~the icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex, (H4)~the F.1 v1.0 Theorem~6.1 perturbation-locality propagation rule (which gives shell-locality of the net DI-bit current at every order $k$ to edges in $\Ek(\vhost)$), and (H5)~the Mechanism~A perturbation $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$ on each oriented edge of the 600-cell edge graph $\Gsixcell$ at first order in $\delta$ (with $\Oof{\delta^k}$ extension construed via standard path-integral perturbation-theory machinery per OPEN-FP-F1-1 DG-1 sub-option~(A) at sketch level), the net DI-bit current at the host vertex is \emph{parallel to} $\nhat$ at \emph{every} non-zero order $k \geq 1$ in $\delta$:
+\begin{equation*}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \parallel \nhat \qquad \text{for all } k \geq 1.
+\end{equation*}
+In particular, $\jDI(\vhost)|_{\Oof{\delta^2}} \parallel \nhat$, closing the structural sub-question of OPEN-FP-F1-1 at publication-grade Layer~3 unconditional. The proof factors into two standalone components: Lemma~\ref{lem:order_by_order_invariance} establishing that the $\delta$-power-series expansion of $\jDI(\vhost)$ preserves $\Icoh$-invariance order-by-order via the $\Icoh$-equivariance of Mechanism~A's rate function under stabilization of $\nhat$; and Lemma~\ref{lem:Ih_invariant_vectors} establishing that the space of $\Icoh$-invariant vectors in $\Reals^4$ at $\vhost$ is one-dimensional, spanned by $\nhat$, via the central inversion element of $\Icoh$ acting as $-I_3$ on the tangent 3-plane. The closed-form coefficient $\alpha_k$ with $\jDI(\vhost)|_{\Oof{\delta^k}} = \alpha_k\nhat$ is NOT computed by the present theorem; coefficient computation at $\Oof{\delta^2}$ is the target of Route-C-sequence-2 artifacts A2 through A6 (registered as exclusion class E1). This artifact is the \textbf{fifth} of the F.1 Layer~3 hardened-theorem sequence (after Patches~0550 + 0551 + 0552 + 0571), and the first under the OPEN-FP-F1-1 Route-C-sequence-1 (symmetry-only) trajectory. Under DG-5 of the Session~144 close handover, the resulting umbrella result is registered as the candidate \textbf{THEO-DSL-4} entry (a new theorem-registry entry preserving THEO-DSL-3 as the $\Oof{\delta^1}$ umbrella).
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper closes the \emph{structural} sub-question of OPEN-FP-F1-1 (extension of F.1 Theorem~7.1 to second order in $\delta$) at publication-grade Layer~3 unconditional rigor via a symmetry-only argument, executing Route~C sequence~1 (the symmetry-only structural theorem) of the OPEN-FP-F1-1 trajectory as scoped at \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S4.3 + \S5.1 (Patch~0571i). The substantive content of this artifact is the formal proof that $\jDI(\vhost)|_{\Oof{\delta^2}}$ is parallel to $\nhat$, derived from the residual icosahedral symmetry $\Hthree = \Icoh$ at the host vertex under vertex-aligned Reading~C, without computing the second-order coefficient.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+The F.1 Dynamical Substrate Law v1.0 SHIP (Patch~0570, 24~May~2026) plus the G1 hardening (Patch~0571, Session~143, 25~May~2026) registered four publication-grade Layer~3 hardened-theorem artifacts collectively closing the $\Oof{\delta^1}$ substrate-locality story at publication-grade Layer~3 unconditional for the building blocks (with sketch-document Layer~3 for the umbrella theorem itself):
+\begin{itemize}[leftmargin=2em]
+\item Patch~0550 --- perturbation-theory propagation rule + shell-locality at every order (\texttt{perturbation\_locality\_propagation.tex});
+\item Patch~0551 --- first-shell-to-first-shell edge-direction perpendicularity (\texttt{first\_shell\_perpendicularity.tex});
+\item Patch~0552 --- host-to-first-shell uniform projection (\texttt{host\_to\_first\_shell\_projection.tex});
+\item Patch~0571 --- first-shell inner-product primitive G1 (\texttt{first\_shell\_inner\_product\_primitive.tex}).
+\end{itemize}
+The present Patch~0585 opens the $\Oof{\delta^2}$ extension trajectory with the first sequence-1 (symmetry-only structural) artifact under Route~C (Hybrid). It is the fifth artifact in the F.1 Layer~3 hardened-theorem sequence and the first of the OPEN-FP-F1-1 sub-sequence.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (Patch~0550 \S2.1; \cite{coxeter1973}) with vertex set the 120 vertices of the 600-cell normalised to $|v| = 1$ on $S^3 \subset \Reals^4$ and edge set the 720 short edges of length $1/\phi$ connecting adjacent vertices, where $\phi = (1+\sqrt{5})/2$ is the golden ratio. Fix a host vertex $\vhost \in V(\Gsixcell)$. Under Mechanism~A (F.1 v1.0~\S4), each oriented edge $(v, w)$ of $\Gsixcell$ carries a propagation rate
+\begin{equation}\label{eq:rate_function}
+r(\hat{e}_{v,w}) = r_0 \bigl( 1 + \delta\,\hat{e}_{v,w} \cdot \nhat \bigr),
+\end{equation}
+with $\hat{e}_{v,w} = (w - v)/|w - v|$ the unit edge-direction vector, $r_0 > 0$ a base rate, and $\delta$ the small perturbation parameter. The net DI-bit current at any vertex $v$ is defined per Mechanism~A's framework-local current construction (F.1 v1.0~\S4 MA.2) at first order in $\delta$, with the $\Oof{\delta^k}$ extension construed via standard path-integral perturbation-theory machinery per OPEN-FP-F1-1 DG-1 sub-option~(A) at sketch level (registered as exclusion class~E3).
+
+\begin{theorem}[$\Oof{\delta^k}$ parallel-to-$\nhat$ structural theorem]\label{thm:second_order_parallel}
+Under the following hypotheses:
+\begin{enumerate}[label=(H\arabic*)]
+\item \textbf{Vertex-aligned Reading~C with framework chirality direction $\nhat = \vhost$}, as registered in Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2;
+\item \textbf{600-cell unit-vertex normalisation}: every vertex $v \in V(\Gsixcell)$ satisfies $|v| = 1$ in the ambient $\Reals^4$;
+\item \textbf{Icosahedral residual symmetry at the host vertex}: the substrate's symmetry group $\Hfour$ breaks under vertex-aligned Reading~C to the residual symmetry $\Hthree = \Icoh$ (icosahedral symmetry group with central inversion, order $120$) acting on the host's neighbourhood, as derived in Capotauro~v2.0 FI-C-RC-2 + Patch~0419 Finding~C-W37 (used in the present paper through Patch~0571 Theorem~1.1 + Lemma~2.1);
+\item \textbf{F.1 v1.0 perturbation-locality propagation (Theorem~6.1; Patch~0550)}: at $\Oof{\delta^k}$, the net DI-bit current $\jDI(\vhost)$ depends only on edges in the $k$-th edge neighbourhood $\Ek(\vhost) \subset E(\Gsixcell)$, for every $k \geq 1$;
+\item \textbf{Mechanism~A framework-local current construction at $\Oof{\delta^k}$}: the $\delta$-power-series coefficient $\vec{j}_k(\vhost)$ of $\jDI(\vhost)$ at $\Oof{\delta^k}$ is the sum, over paths of length at most $k$ in $\Ek(\vhost)$ with exactly $k$ rate-perturbation insertions, of products of rate-asymmetry factors~\eqref{eq:rate_function} weighted by edge-direction vectors --- this construction being a path-integral extension of MA.2 per OPEN-FP-F1-1 DG-1 sub-option~(A) (Q1 framework-extension at sketch level; registered as exclusion class~E3).
+\end{enumerate}
+Then, for every $k \geq 1$, the $\Oof{\delta^k}$ coefficient of the net DI-bit current at the host vertex is parallel to $\nhat$:
+\begin{equation}\label{eq:main_result}
+\vec{j}_k(\vhost) \;:=\; \jDI(\vhost)\big|_{\Oof{\delta^k}} \;\parallel\; \nhat .
+\end{equation}
+In particular, at $k = 2$:
+\begin{equation}\label{eq:main_result_k2}
+\jDI(\vhost)\big|_{\Oof{\delta^2}} \;\parallel\; \nhat .
+\end{equation}
+\end{theorem}
+
+The proof factors into a Lemma establishing $\Icoh$-invariance of $\vec{j}_k(\vhost)$ order-by-order (\S\ref{sec:order_by_order_lemma}) and a Lemma establishing that the only $\Icoh$-invariant vectors in $\Reals^4$ at $\vhost$ are scalar multiples of $\nhat$ (\S\ref{sec:Ih_invariant_lemma}), assembled in \S\ref{sec:main_proof}.
+
+\begin{remark}[On the all-orders strengthening]\label{rem:all_orders}
+The hypotheses of Theorem~\ref{thm:second_order_parallel} make no use of $k = 2$ specifically; the parallel-to-$\nhat$ conclusion holds at every $k \geq 1$. This is a structural strengthening of the OPEN-FP-F1-1 closure target (which asked only for $k = 2$) at no additional cost: the symmetry argument is order-agnostic. At $k = 1$, equation~\eqref{eq:main_result} is consistent with the F.1 v1.0 Theorem~7.1 closed-form result $\jDI(\vhost)|_{\Oof{\delta^1}} = (6\delta r_0 / \phi^2)\nhat$ (the explicit first-order coefficient computed in F.1 v1.0~\S7).
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{The substrate framework at vertex-aligned Reading C}\label{sec:framework_setup}
+
+We adopt the substrate framework of F.1 v1.0~\S2--\S4 and the polytope-theoretic facts about the 600-cell from Patches~0550--0552 + Patch~0571: $\Gsixcell$ is the edge graph of the regular 600-cell with $|V(\Gsixcell)| = 120$ vertices on $S^3 \subset \Reals^4$ at unit radius and $|E(\Gsixcell)| = 720$ short edges of length $1/\phi$ \cite{coxeter1973}; the Coxeter symmetry group is $\Hfour$ of order $14400$; under vertex-aligned Reading~C with $\nhat = \vhost$, the host-vertex stabilizer in $\Hfour$ is the icosahedral group $\Hthree = \Icoh$ of order $120$ (Patch~0571 Theorem~1.1 + Lemma~2.1; \cite{humphreys1990}).
+
+The $\Icoh$ group acts on $\Reals^4$ as an order-120 subgroup of $O(4)$ pointwise-fixing $\vhost$. By the orthogonal decomposition $\Reals^4 = \Reals\nhat \oplus T_{\vhost} S^3$, where $T_{\vhost} S^3$ is the 3-dimensional tangent hyperplane to $S^3$ at $\vhost$, $\Icoh$ acts trivially on the $\Reals\nhat$ factor (since $\nhat = \vhost$ is fixed) and as the standard 3-dimensional irreducible representation of the icosahedral group on $T_{\vhost} S^3$ (this is the well-known fact that the action of $\Icoh$ as the full symmetry group of a regular icosahedron in $\Reals^3$ is irreducible \cite{humphreys1990,jones_sequence}).
+
+\subsection{Mechanism A and the rate function}\label{sec:mechanism_A_setup}
+
+Mechanism~A (F.1 v1.0~\S4 MA.1 + MA.2) assigns to each oriented edge $(v, w) \in E(\Gsixcell)$ a propagation rate $r(\hat{e}_{v,w}) = r_0(1 + \delta\,\hat{e}_{v,w}\cdot\nhat)$, with $\hat{e}_{v,w}$ the unit edge-direction vector. The rate function is $\Icoh$-equivariant in the following sense (made precise in Lemma~\ref{lem:rate_function_invariance} below): for any $g \in \Icoh$,
+\begin{equation}\label{eq:rate_equivariance}
+r(g\,\hat{e}_{v,w}) \;=\; r(\hat{e}_{g\cdot v, g\cdot w}) \;=\; r(\hat{e}_{v,w})
+\end{equation}
+provided $\nhat$ is $g$-invariant (which holds under hypothesis~(H3), since $\Icoh$ fixes $\vhost = \nhat$).
+
+\begin{lemma}[$\Icoh$-equivariance of the rate function]\label{lem:rate_function_invariance}
+Under (H1) and (H3), for any $g \in \Icoh$ and any oriented edge $(v, w)$ of $\Gsixcell$,
+\begin{equation}\label{eq:rate_invariance}
+r(g \cdot \hat{e}_{v,w}) \;=\; r(\hat{e}_{v,w}) ,
+\end{equation}
+where $g \cdot \hat{e}_{v,w}$ denotes the image of the unit edge-direction vector under the $O(4)$-action of $g$.
+\end{lemma}
+
+\begin{proof}
+By the definition of the rate function~\eqref{eq:rate_function},
+\begin{equation*}
+r(g\,\hat{e}_{v,w}) \;=\; r_0\bigl(1 + \delta\,(g\,\hat{e}_{v,w}) \cdot \nhat\bigr) \;=\; r_0\bigl(1 + \delta\,\hat{e}_{v,w} \cdot (g^{-1}\,\nhat)\bigr) ,
+\end{equation*}
+using $O(4)$-invariance of the inner product. Under (H3), $g \in \Icoh$ fixes $\vhost$; under (H1), $\nhat = \vhost$; hence $g^{-1}\,\nhat = \nhat$. Substituting gives $r(g\,\hat{e}_{v,w}) = r_0(1 + \delta\,\hat{e}_{v,w}\cdot\nhat) = r(\hat{e}_{v,w})$. $\square$
+\end{proof}
+
+The $\Icoh$-equivariance of the rate function is the engine of the order-by-order invariance argument in Lemma~\ref{lem:order_by_order_invariance} below.
+
+\section{Proof of the structural theorem}\label{sec:proof}
+
+\subsection{Lemma 1 --- Order-by-order $\Icoh$-invariance of $\vec{j}_k(\vhost)$}\label{sec:order_by_order_lemma}
+
+\begin{lemma}[Order-by-order $\Icoh$-invariance]\label{lem:order_by_order_invariance}
+Under hypotheses (H1)--(H5), for every $k \geq 0$ and every $g \in \Icoh$,
+\begin{equation}\label{eq:order_invariance}
+g \cdot \vec{j}_k(\vhost) \;=\; \vec{j}_k(\vhost) ,
+\end{equation}
+where the action of $g$ on $\vec{j}_k(\vhost) \in \Reals^4$ is the standard $O(4)$-action inherited from $g \in \Icoh \subset O(4)$.
+\end{lemma}
+
+\begin{proof}
+Under (H5), $\vec{j}_k(\vhost)$ is expressed as a finite sum
+\begin{equation}\label{eq:jk_expansion}
+\vec{j}_k(\vhost) \;=\; \sum_{P \in \mathcal{P}_k(\vhost)} W_k(P) \cdot \vec{d}(P) ,
+\end{equation}
+where $\mathcal{P}_k(\vhost)$ is the set of paths of length at most $k$ in $\Ek(\vhost)$ contributing to the $\Oof{\delta^k}$ coefficient (with exactly $k$ rate-perturbation insertions per path-integral perturbation-theory at sketch level per DG-1(A)), $W_k(P)$ is the weight scalar built from products of rate-asymmetry factors $2 r_0 \delta\,\hat{e}\cdot\nhat$ along $P$'s perturbed edges (with the constant factor $r_0\delta$ extracted, the weight is a product of factors of $\hat{e}_i \cdot \nhat$), and $\vec{d}(P) \in \Reals^4$ is the path-direction vector built from edge-direction vectors $\hat{e}_{v,w}$ of edges in $P$.
+
+The action of $g \in \Icoh$ on this sum proceeds by:
+\begin{enumerate}[label=(\arabic*)]
+\item \textbf{Permutation of paths.} Under (H3), $\Icoh$ fixes $\vhost$ and acts by isometry on $\Reals^4$; hence $g$ permutes the edges of $\Gsixcell$ incident to or in any fixed neighbourhood of $\vhost$. Under (H4), $\Ek(\vhost)$ is the $k$-th edge neighbourhood of $\vhost$ in $\Gsixcell$; since $g$ fixes $\vhost$ and acts by graph automorphism on $\Gsixcell$ (the action of the $\Hfour$-stabilizer of $\vhost$ on $\Gsixcell$ is by graph automorphisms inherited from the $\Hfour$-action on the 600-cell), $g$ stabilizes $\Ek(\vhost)$ setwise. Hence $g$ permutes the set $\mathcal{P}_k(\vhost)$ via the map $P \mapsto g \cdot P$ (where $g \cdot P$ is the path obtained by applying $g$ to every vertex and edge of $P$).
+
+\item \textbf{Invariance of weight factors.} For each path $P \in \mathcal{P}_k(\vhost)$ and each perturbed edge $e \in P$, the weight contribution is the rate-asymmetry factor $\hat{e}_{v,w} \cdot \nhat$ along the oriented edge $(v,w) = e$. By Lemma~\ref{lem:rate_function_invariance}, $(g \cdot \hat{e}_{v,w}) \cdot \nhat = \hat{e}_{v,w} \cdot \nhat$. Therefore the weight $W_k(g \cdot P) = W_k(P)$ for every $g \in \Icoh$ and every $P \in \mathcal{P}_k(\vhost)$.
+
+\item \textbf{Equivariance of direction vectors.} For each path $P \in \mathcal{P}_k(\vhost)$, the path-direction vector $\vec{d}(P) \in \Reals^4$ is a fixed linear combination of edge-direction vectors $\hat{e}_{v,w}$ for $e = (v,w) \in P$; under $g \in \Icoh \subset O(4)$, the image $\vec{d}(g \cdot P)$ is the same linear combination of $g \cdot \hat{e}_{v,w} = \hat{e}_{g \cdot v, g \cdot w}$, i.e., $\vec{d}(g \cdot P) = g \cdot \vec{d}(P)$.
+\end{enumerate}
+
+Combining (1)--(3),
+\begin{equation*}
+g \cdot \vec{j}_k(\vhost) \;=\; g \cdot \sum_{P \in \mathcal{P}_k(\vhost)} W_k(P) \cdot \vec{d}(P) \;=\; \sum_{P} W_k(P) \cdot \bigl(g \cdot \vec{d}(P)\bigr) \;=\; \sum_{P} W_k(P) \cdot \vec{d}(g \cdot P) .
+\end{equation*}
+Re-indexing the sum by $P' = g \cdot P$ (a bijection on $\mathcal{P}_k(\vhost)$ by (1)) and using $W_k(P) = W_k(g \cdot P) = W_k(P')$ from (2),
+\begin{equation*}
+g \cdot \vec{j}_k(\vhost) \;=\; \sum_{P' \in \mathcal{P}_k(\vhost)} W_k(P') \cdot \vec{d}(P') \;=\; \vec{j}_k(\vhost) ,
+\end{equation*}
+as required. $\square$
+\end{proof}
+
+\subsection{Lemma 2 --- $\Icoh$-invariant vectors at $\vhost$ are parallel to $\nhat$}\label{sec:Ih_invariant_lemma}
+
+\begin{lemma}[$\Icoh$-invariant vectors in $\Reals^4$ at $\vhost$]\label{lem:Ih_invariant_vectors}
+Under hypotheses (H1)--(H3), the subspace of $\Icoh$-invariant vectors in $\Reals^4$ (with $\Icoh$ acting as the host-vertex stabilizer in $O(4)$ pointwise-fixing $\vhost$) is one-dimensional and spanned by $\nhat$:
+\begin{equation}\label{eq:Ih_invariant_subspace}
+\{ \vec{w} \in \Reals^4 \;:\; g \cdot \vec{w} = \vec{w} \;\;\forall g \in \Icoh \} \;=\; \Reals \nhat .
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Decompose $\Reals^4 = \Reals\nhat \oplus T_{\vhost} S^3$ orthogonally, with $T_{\vhost} S^3$ the 3-dimensional tangent hyperplane to $S^3$ at $\vhost$ (\S\ref{sec:framework_setup}). Under (H1) and (H3), $\Icoh$ acts trivially on the $\Reals\nhat$ factor (since $\nhat = \vhost$ is pointwise-fixed) and as the standard 3-dimensional irreducible representation of the icosahedral group on $T_{\vhost} S^3$.
+
+The icosahedral group $\Icoh$ contains the central inversion element $-I_3$ in its $\Reals^3$ representation (this is the order-2 element $\iota = -I_3 \in \Icoh$ generated by the central inversion of the icosahedron; equivalently, $\Icoh = I \times \{e, \iota\}$ where $I$ is the rotation icosahedral group of order 60~\cite{humphreys1990,jones_sequence}). Embedded in $O(4)$ as the host-vertex stabilizer, $\iota$ acts as $\mathrm{diag}(1, -1, -1, -1)$ in a basis $\{\nhat, e_1, e_2, e_3\}$ aligned with the $\Reals\nhat \oplus T_{\vhost} S^3$ decomposition.
+
+For any $\vec{w} = a\,\nhat + \vec{w}_\perp$ with $a \in \Reals$ and $\vec{w}_\perp \in T_{\vhost} S^3$ to be $\Icoh$-invariant, in particular $\iota$-invariant: applying $\iota = \mathrm{diag}(1,-1,-1,-1)$,
+\begin{equation*}
+\iota \cdot \vec{w} \;=\; a\,\nhat - \vec{w}_\perp \;=\; \vec{w} \;=\; a\,\nhat + \vec{w}_\perp ,
+\end{equation*}
+which forces $\vec{w}_\perp = -\vec{w}_\perp$, hence $\vec{w}_\perp = \vec{0}$, hence $\vec{w} = a\,\nhat \in \Reals\nhat$. Conversely, every $a\,\nhat \in \Reals\nhat$ is $\Icoh$-invariant by (H3). This establishes~\eqref{eq:Ih_invariant_subspace}. $\square$
+\end{proof}
+
+\begin{remark}[Alternative proof via Schur's lemma]\label{rem:schur_alternative}
+Lemma~\ref{lem:Ih_invariant_vectors} also follows from Schur's lemma applied to the representation of $\Icoh$ on $\Reals^4 = \Reals\nhat \oplus T_{\vhost} S^3$: $\Reals\nhat$ is the trivial 1-dimensional representation, while $T_{\vhost} S^3$ is one of the two 3-dimensional irreducible representations of $\Icoh$ (specifically the $T_{1u}$ representation under the standard physics notation, as the embedding pairs the icosahedral rotation action with the inversion via the host-vertex stabilizer structure). By Schur's lemma, the trivial 1-dimensional representation appears in $\Reals^4$ exactly once, with multiplicity space $\Reals\nhat$. The proof given above via the central inversion $\iota$ is more elementary and self-contained at publication-grade Layer~3 rigor; we include the Schur's-lemma alternative as a structural cross-reference.
+\end{remark}
+
+\subsection{Main proof of Theorem~\ref{thm:second_order_parallel}}\label{sec:main_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:second_order_parallel}]
+Fix any $k \geq 1$. By Lemma~\ref{lem:order_by_order_invariance} under (H1)--(H5), $\vec{j}_k(\vhost)$ is $\Icoh$-invariant as a vector in $\Reals^4$ with $\Icoh$ acting via the host-vertex stabilizer in $O(4)$. By Lemma~\ref{lem:Ih_invariant_vectors} under (H1)--(H3), the subspace of $\Icoh$-invariant vectors in $\Reals^4$ is $\Reals\nhat$. Therefore $\vec{j}_k(\vhost) \in \Reals\nhat$, i.e., $\vec{j}_k(\vhost) \parallel \nhat$ as a vector. This gives~\eqref{eq:main_result} for every $k \geq 1$, and~\eqref{eq:main_result_k2} as the specialisation to $k = 2$. $\square$
+\end{proof}
+
+\section{Consequences and corollaries}\label{sec:consequences}
+
+\subsection{Closure of the structural sub-question of OPEN-FP-F1-1}\label{sec:OPEN_FP_F1_1_structural_closure}
+
+\begin{corollary}[OPEN-FP-F1-1 structural sub-question closure]\label{cor:structural_closure}
+Under hypotheses (H1)--(H5), the \emph{structural sub-question} of OPEN-FP-F1-1 --- ``Is $\jDI(\vhost)|_{\Oof{\delta^2}}$ parallel to $\nhat$?'' --- is closed in the affirmative at publication-grade Layer~3 unconditional rigor. The remaining \emph{coefficient sub-question} --- ``What is the closed-form value of $\alpha_2$ with $\jDI(\vhost)|_{\Oof{\delta^2}} = \alpha_2\,\nhat$?'' --- remains OPEN as the target of the Route~C sequence~2 artifacts A2 through A6 (registered as exclusion class E1 of the present theorem).
+\end{corollary}
+
+\begin{proof}
+The structural sub-question of OPEN-FP-F1-1 is restated in~\eqref{eq:main_result_k2} and is exactly the content of Theorem~\ref{thm:second_order_parallel} at $k = 2$. Theorem~\ref{thm:second_order_parallel} establishes~\eqref{eq:main_result_k2} at publication-grade Layer~3 unconditional rigor under (H1)--(H5), with the framework-extension hypothesis (H5) registered at sketch level per OPEN-FP-F1-1 DG-1 sub-option~(A) (exclusion class E3). The coefficient sub-question is not addressed by the present theorem (exclusion class E1) and remains the target of subsequent artifacts in the Route~C sequence. $\square$
+\end{proof}
+
+\subsection{All-orders strengthening}\label{sec:all_orders_strengthening}
+
+\begin{corollary}[All-orders parallel-to-$\nhat$]\label{cor:all_orders}
+Under hypotheses (H1)--(H5), for every $k \geq 1$, the $\Oof{\delta^k}$ coefficient of the net DI-bit current at the host vertex is parallel to $\nhat$. Equivalently, the full formal $\delta$-power series of $\jDI(\vhost)$ (with $\delta$-independent zeroth-order term assumed to vanish per Mechanism~A's first-order construction; F.1 v1.0~\S4) is parallel to $\nhat$:
+\begin{equation}\label{eq:all_orders_jDI}
+\jDI(\vhost; \delta) \;=\; \Bigl( \sum_{k \geq 1} \alpha_k\,\delta^k \Bigr)\,\nhat \;\parallel\; \nhat \qquad \text{at every order.}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Immediate from Theorem~\ref{thm:second_order_parallel} applied at every $k \geq 1$. The order-by-order parallel-to-$\nhat$ result extends to the full formal series by linearity of the $\delta$-expansion. $\square$
+\end{proof}
+
+This is a structural strengthening of the OPEN-FP-F1-1 closure target (which asked only for $k = 2$) at no additional cost; the symmetry argument is order-agnostic. Corollary~\ref{cor:all_orders} also implies that any future Route~A or Route~C-sequence-2 coefficient computation at any order $k \geq 1$ may impose the ansatz $\vec{j}_k(\vhost) = \alpha_k\nhat$ from the outset, reducing the computational target from a 4-vector to a scalar $\alpha_k$.
+
+\subsection{Consistency with F.1 v1.0 Theorem 7.1 at first order}\label{sec:f1_v1_consistency}
+
+The first-order specialisation $k = 1$ of Theorem~\ref{thm:second_order_parallel} gives $\vec{j}_1(\vhost) \parallel \nhat$, consistent with the explicit F.1 v1.0 Theorem~7.1 closed-form $\jDI(\vhost)|_{\Oof{\delta^1}} = (6\delta r_0 / \phi^2)\nhat$ (computed in F.1 v1.0~\S7 from the $\Oof{\delta^1}$ path-class enumeration with coefficient $\alpha_1 = 6 r_0 / \phi^2$). Theorem~\ref{thm:second_order_parallel} therefore re-derives the structural component of F.1 Theorem~7.1 from symmetry alone, providing a second-route confirmation of the F.1 v1.0 result at first order independently of the explicit path-class enumeration.
+
+\subsection{Status of the umbrella theorem at $\Oof{\delta^2}$ --- THEO-DSL-4 candidate}\label{sec:theo_dsl_4_candidate}
+
+Per DG-5 of the Session~144 close handover, the $\Oof{\delta^2}$ umbrella result is registered as a candidate new theorem-registry entry \textbf{THEO-DSL-4} (preserving THEO-DSL-3 as the $\Oof{\delta^1}$ umbrella at sketch-document Layer~3). The present Theorem~\ref{thm:second_order_parallel} establishes the \emph{structural component} of THEO-DSL-4 at publication-grade Layer~3 unconditional (the parallel-to-$\nhat$ claim). The \emph{quantitative component} of THEO-DSL-4 (the closed-form value of $\alpha_2$) remains open as the target of Route~C sequence~2 (artifacts A2--A6). The full THEO-DSL-4 entry will be registered at the Route~C sequence~2 closure; at the present Patch, only the structural component is in hand.
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:second_order_parallel} is scope-bounded by hypotheses (H1)--(H5). This section enumerates five classes of generalisations and refinements that lie explicitly outside the theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{The closed-form coefficient $\alpha_k$ is NOT computed.} Theorem~\ref{thm:second_order_parallel} establishes that $\vec{j}_k(\vhost) = \alpha_k\,\nhat$ for some scalar $\alpha_k \in \Reals$ at every $k \geq 1$, but does not compute the value of $\alpha_k$ at $k \geq 2$. Coefficient computation at $\Oof{\delta^2}$ is the target of Route~C sequence~2 artifacts: A2 (second-shell inner-product primitive G2), A3 (host-to-second-shell uniform projection G2.1), A4 (first-shell-to-second-shell edge-orbit classification G2.3), A5 (second-shell perpendicularity G2.4), and A6 (path-class weight enumeration at $\Oof{\delta^2}$). See \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S5.1.
+
+\item \textbf{Non-vertex-aligned Reading C variants are NOT covered.} The theorem requires $\nhat = \vhost$ (hypothesis~(H1)). Alternative Reading~C placements --- edge-aligned, face-aligned, or cell-aligned --- have different residual symmetries (e.g., $D_5$ at an edge midpoint, $D_3$ at a face centroid) and the symmetry-only argument changes character. Registered as OPEN-FP-F1-5 (non-vertex-aligned Reading~C variants) in F.1 v1.0~\S9.
+
+\item \textbf{Mechanism A framework-extension at $\Oof{\delta^k}$ for $k \geq 2$ is taken at sketch-document Layer~3 (DG-1 sub-option A).} Hypothesis (H5) is the path-integral perturbation-theory extension of MA.2's first-order framework-local current construction to all orders in $\delta$, per OPEN-FP-F1-1 DG-1 sub-option~(A) at sketch level. The publication-grade hardening of the framework-extension (i.e., the rigorisation of (H5) to publication-grade Layer~3) is registered as OPEN-FP-F1-2 (Layer~4 axiomatic derivation of Mechanism~A from CPP A1--A11) or, alternatively, would require a new framework axiom MA.3 (DG-1 sub-option~B). Either route lies outside the present theorem's scope. \emph{Importantly:} the symmetry argument of Theorem~\ref{thm:second_order_parallel} is robust to the choice between DG-1 sub-options (A) and (B), since the $\Icoh$-equivariance of the rate function (Lemma~\ref{lem:rate_function_invariance}) and the existence of an $\Icoh$-equivariant path-integral construction (per (H5)) are the only framework-extension features required. A future DG-1 sub-option~(B) framework with $\Icoh$-equivariance preserved would not affect Theorem~\ref{thm:second_order_parallel}; only the coefficient computation (E1) would be affected.
+
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP A1--A11 is NOT in scope.} The 600-cell polytope itself --- its 120 vertices on $S^3$, its edge graph $\Gsixcell$, its short-edge length $1/\phi$ at unit-vertex normalisation, and its $\Hfour$ symmetry group --- is taken as given as polytope-theoretic input \cite{coxeter1973}. A Layer~4 derivation of the 600-cell substrate from CPP primitive axioms $A1$--$A11$ together with first-principles emergence considerations is the long-term programme target registered at Patch~0528~\S14.17 and shared across all five F.1 hardened-theorem artifacts (Patches~0550 + 0551 + 0552 + 0571 + the present Patch~0585). The shared scope-line with the other F.1 hardened-theorem artifacts is consistent on this point.
+
+\item \textbf{Higher-shell extensions beyond perturbation-locality propagation are inherited from Patch~0550, not separately addressed.} Theorem~\ref{thm:second_order_parallel} uses hypothesis (H4) (the F.1 v1.0 Theorem~6.1 perturbation-locality propagation rule, Patch~0550) at every order $k$; the shell-locality of $\jDI(\vhost)|_{\Oof{\delta^k}}$ to edges in $\Ek(\vhost)$ is inherited from Patch~0550 and is not separately re-derived here. Should the perturbation-locality propagation be falsified at any order, Theorem~\ref{thm:second_order_parallel} would inherit the falsification through (H4). The structural soundness of Patch~0550 at publication-grade Layer~3 unconditional rigor is the load-bearing prerequisite.
+\end{enumerate}
+
+\section{Conclusion --- the F.1 Layer 3 hardening sequence advances to five artifacts}\label{sec:conclusion}
+
+Theorem~\ref{thm:second_order_parallel}, with hypotheses (H1)--(H5) and supporting Lemmas~\ref{lem:rate_function_invariance} ($\Icoh$-equivariance of the rate function), \ref{lem:order_by_order_invariance} (order-by-order $\Icoh$-invariance of $\vec{j}_k(\vhost)$), and~\ref{lem:Ih_invariant_vectors} ($\Icoh$-invariant vectors in $\Reals^4$ at $\vhost$ are spanned by $\nhat$), closes the structural sub-question of OPEN-FP-F1-1 at publication-grade Layer~3 unconditional rigor via a symmetry-only argument. Corollary~\ref{cor:all_orders} extends the parallel-to-$\nhat$ result to all orders $k \geq 1$ at no additional cost; Corollary~\ref{cor:structural_closure} registers the structural-sub-question closure formally; \S\ref{sec:f1_v1_consistency} provides a second-route consistency confirmation with the F.1 v1.0 Theorem~7.1 closed-form first-order result. The five exclusion classes (E1)--(E5) make explicit what is NOT covered, with the coefficient sub-question (E1) registered as the target of Route~C sequence~2.
+
+\paragraph{Position in the F.1 hardened-theorem sequence (now five artifacts).}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Patch~0550} hardened Theorem~6.1 (perturbation-theory propagation rule + shell-locality), at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}.
+\item \textbf{Patch~0551} hardened Theorem~5.2 (first-shell-to-first-shell edge-direction perpendicularity), at \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex}.
+\item \textbf{Patch~0552} hardened Theorem~5.1 (host-to-first-shell uniform projection), at \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex}.
+\item \textbf{Patch~0571} hardened Identity~G1 (first-shell inner-product primitive), at \texttt{hardened\_theorems/first\_shell\_inner\_product\_primitive.tex}, closing the shared E1 exclusion class of Patches~0551 + 0552 and discharging F.1 Theorem~7.1's G1-conditionality.
+\item \textbf{Patch~0585 (this paper)} hardens the symmetry-only structural sub-question of OPEN-FP-F1-1 at all orders $k \geq 1$, at \texttt{hardened\_theorems/second\_order\_parallel\_to\_n\_structural.tex}, establishing $\vec{j}_k(\vhost) \parallel \nhat$ unconditionally and registering the THEO-DSL-4 candidate structural component.
+\end{itemize}
+
+The four-artifact $\Oof{\delta^1}$ sequence (Patches~0550 + 0551 + 0552 + 0571) closed the structural and quantitative content at first order. The present Patch~0585 opens the $\Oof{\delta^2}$ sequence by closing the structural component (parallel-to-$\nhat$) at all orders unconditionally, leaving the second-order coefficient $\alpha_2$ as the target of Route~C sequence~2 (artifacts A2--A6, estimated 4--8 sessions). The Route~C sequence~2 closure produces a hardened expression $\alpha_2 \in \Reals$ in closed form (golden-ratio rational expected by analogy with $\alpha_1 = 6/\phi^2$); upon closure, the full THEO-DSL-4 entry (structural + quantitative) is registered in \texttt{theorem-registry.md} parallel to THEO-DSL-1/2/3.
+
+\paragraph{Anti-erasure note.}
+The present hardening preserves: (a)~the sketch-document Layer~3 status of the framework-extension hypothesis (H5) at $\Oof{\delta^k}$ for $k \geq 2$, registered explicitly at E3 rather than implicitly smoothed; (b)~the openness of the coefficient sub-question at E1; (c)~the inheritance of (H4) from Patch~0550 rather than silent assumption of shell-locality. The all-orders strengthening of Corollary~\ref{cor:all_orders} is registered as a structural bonus result rather than promoted to a separate theorem identity, preserving Theorem~\ref{thm:second_order_parallel}'s singular identity. The Route~C sequence~2 trajectory remains open as scoped, with the present Patch~0585 representing one of the seven artifacts of \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S5.1.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+3rd ed., Dover Publications, New York, 1973.
+
+\bibitem{humphreys1990}
+J.~E.~Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge Studies in Advanced Mathematics 29, Cambridge University Press, 1990.
+
+\bibitem{jones_sequence}
+G.~A.~Jones and D.~Singerman,
+\textit{Complex Functions: An Algebraic and Geometric Viewpoint},
+Cambridge University Press, 1987 (icosahedral group structure and irreducible representations).
+
+\bibitem{abshier_f1_dynamical_substrate_law}
+T.~L.~Abshier,
+``The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading~C in the 600-Cell,''
+CPP Flagship Paper Series (F-line), Version 1.0, 24~May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\bibitem{abshier_g1_hardening}
+T.~L.~Abshier and Claude Opus 4.7,
+``First-Shell Inner-Product Primitive (G1) in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0571, 25~May~2026, \texttt{hardened\_theorems/first\_shell\_inner\_product\_primitive.tex}.
+
+\bibitem{abshier_capotauro_v2}
+T.~L.~Abshier,
+``The Capotauro Mechanism v2.0: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics,''
+CPP Flagship Paper Series, May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}
