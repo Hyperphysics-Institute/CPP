@@ -1,0 +1,320 @@
+% ============================================================
+% First-Shell Inner-Product Primitive Identity (G1)
+%   for the 600-Cell Edge Graph at Vertex-Aligned Reading C
+% Publication-Grade Hardening of Patch 0541 §3.1 (Identity G1)
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    FOURTH and final F.1 Layer 3 building-block hardening — closes the
+%    shared exclusion class E1 of Patches 0551 + 0552 hardened theorems;
+%    upgrades F.1 Theorems 5.1 + 5.2 from "publication-grade Layer 3
+%    conditional on G1" to "publication-grade Layer 3 unconditional",
+%    and consequently strengthens F.1 Theorem 7.1's conditionality clause
+%    to depend only on the (then-unconditional) §5 trio.)
+%
+% Patch 0571 (Session 143, 25 May 2026) — first post-v1.0 SHIP
+%   substantive physics Patch per ChatGPT R1-R6 + Copilot R1 convergent
+%   "single highest-value next action" verdict on F.1 v1.0 SHIP cycle;
+%   resolves OPEN-FP-F1-3 (registered as in-body §9 Open Problem of
+%   F.1 v1.0 at Patch 0570).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+
+\title{First-Shell Inner-Product Primitive (G1) \\
+in the 600-Cell at Vertex-Aligned Reading C \\
+\large Publication-Grade Hardening of Patch~0541~\S3.1 (Identity~G1)\\
+Closing the Shared E1 Exclusion of Patches~0551 \&~0552}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7\\Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{25 May 2026 (Session 143, CPP Patch 0571)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade hardening of the first-shell inner-product primitive G1 for the 600-cell at vertex-aligned Reading~C, registered in the CPP F.1 sub-question trajectory at Patch~0541 \S3.1 at sketch-document Layer~3 rigor. The hardened statement asserts that, under (i)~vertex-aligned Reading~C with $\nhat = \vhost$, (ii)~the 600-cell unit-vertex normalisation $|v|=1$, and (iii)~the icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex (separately-derived structural input from the $\Hfour \to \Hthree$ symmetry breaking under vertex-aligned Reading~C), every first-shell vertex $v_i$ of $\vhost$ satisfies $v_i \cdot \vhost = \phi/2$ uniformly, where $\phi = (1+\sqrt{5})/2$ is the golden ratio. The proof factors into two standalone components: (a)~the dihedral-angle calculation Lemma~\ref{lem:dihedral_angle} establishing that the central angle between adjacent 600-cell vertices is $36^\circ$ with $\cos(36^\circ) = \phi/2$, derived from the minimal polynomial of $\cos(\pi/5)$; and (b)~the icosahedral-transitivity Lemma~\ref{lem:icosahedral_transitivity} establishing that $\Hthree = \Icoh$ acts transitively on the 12 first-shell vertices, which lifts the per-pair inner product to a uniform value across $i \in \{1,\ldots,12\}$. Publication-grade rigorisation consists in explicit hypothesis tracking (including the previously implicit $\Hthree$-symmetry input), isolation of the dihedral-angle calculation as a standalone lemma proved via Chebyshev polynomial identities, formalisation of the icosahedral residual symmetry as a separately-derived structural input, and a five-class exclusion enumeration. This artifact is the \textbf{fourth and final} of the F.1 Layer~3 building-block hardenings. With Patch~0571 in hand, the shared exclusion class~E1 of Patches~0551 and~0552 is \textbf{closed}; F.1 Theorems~5.1 (host-to-first-shell uniform projection) and~5.2 (first-shell-to-first-shell perpendicularity) are upgraded from \emph{publication-grade Layer~3 conditional on G1} to \emph{publication-grade Layer~3 unconditional}; and F.1 Theorem~7.1's (substrate-locality umbrella) conditionality clause is consequently strengthened to depend only on the (now-unconditional) §5 trio plus Patch~0550 (perturbation-locality propagation), at sketch-document Layer~3 for the umbrella itself.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the first-shell inner-product primitive G1 for the 600-cell at vertex-aligned Reading~C from sketch-document Layer~3 rigor (the two-line algebraic computation at Patch~0541 \S3.1) to publication-grade rigor. The substantive theorem content is unchanged from Patch~0541 \S3.1; the contribution of this artifact is the rigorisation of the proof structure with three concrete advances: (a)~explicit isolation of the dihedral-angle calculation $\cos(36^\circ) = \phi/2$ as a standalone lemma proved from the Chebyshev minimal polynomial of $\cos(\pi/5)$; (b)~explicit isolation of the icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex as a separately-derived structural input giving rise to uniformity across the 12 first-shell vertices (a hypothesis that was implicit at Patch~0541 \S3.1 and at F.1 v1.0 §4.2 Identity~G1); and (c)~a five-class exclusion enumeration that registers the polytope-theoretic primitives taken as given.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+The F.1 Dynamical Substrate Law v1.0 SHIP (Patch~0570, 24~May~2026) registered three publication-grade Layer~3 hardened-theorem artifacts as building blocks of the substrate-locality umbrella theorem (F.1 Theorem~7.1):
+\begin{itemize}[leftmargin=2em]
+\item Patch~0550 — perturbation-theory propagation rule + shell-locality (\texttt{perturbation\_locality\_propagation.tex});
+\item Patch~0551 — first-shell-to-first-shell edge-direction perpendicularity (\texttt{first\_shell\_perpendicularity.tex});
+\item Patch~0552 — host-to-first-shell uniform projection (\texttt{host\_to\_first\_shell\_projection.tex}).
+\end{itemize}
+Patches~0551 and~0552 import G1 (Lemma~5.1 of each artifact) at sketch-document Layer~3 rigor as the load-bearing first-shell inner-product hypothesis, registered as their \emph{shared exclusion class E1} (Patch~0551 \S5; Patch~0552 \S5). The present hardening closes that E1 exclusion: Patches~0551 and~0552 may now cite Theorem~\ref{thm:G1_hardened} of the present paper in place of their imported Lemma~5.1, and their statements upgrade from publication-grade Layer~3 \emph{conditional on G1} to publication-grade Layer~3 \emph{unconditional}.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (Patch~0550 \S2.1; \cite{coxeter1973}) with vertex set the 120 vertices of the 600-cell normalised to $|v| = 1$ on $S^3 \subset \Reals^4$ and edge set the 720 short edges of length $1/\phi$ connecting adjacent vertices, where $\phi = (1+\sqrt{5})/2$ is the golden ratio. Fix a host vertex $\vhost \in V(\Gsixcell)$ and write the 12 first-shell neighbours of $\vhost$ (i.e., vertices $v$ adjacent to $\vhost$ in $\Gsixcell$) as $v_1, \ldots, v_{12}$.
+
+\begin{theorem}[G1, first-shell inner-product primitive, hardened]\label{thm:G1_hardened}
+Under the following hypotheses:
+\begin{enumerate}[label=(H\arabic*)]
+\item \textbf{Vertex-aligned Reading~C with framework chirality direction $\nhat = \vhost$}, as registered in Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2;
+\item \textbf{600-cell unit-vertex normalisation}: every vertex $v \in V(\Gsixcell)$ satisfies $|v| = 1$ in the ambient $\Reals^4$;
+\item \textbf{Icosahedral residual symmetry at the host vertex}: the substrate's symmetry group $\Hfour$ (Coxeter group of the 600-cell, order $14400$) breaks under vertex-aligned Reading~C to the residual symmetry $\Hthree = \Icoh$ (icosahedral symmetry group, order $120$) acting on the host's first shell, as derived in Capotauro~v2.0 FI-C-RC-2 + Patch~0419 Finding~C-W37 via Coxeter parabolic-subgroup theory.
+\end{enumerate}
+Then for every first-shell vertex $v_i$ of $\vhost$ (each of the 12 nearest neighbours),
+\begin{equation}\label{eq:G1_main}
+v_i \cdot \vhost \;=\; \frac{\phi}{2}
+\end{equation}
+uniformly across $i \in \{1, \ldots, 12\}$.
+\end{theorem}
+
+The proof factors into a dihedral-angle calculation (\S\ref{sec:dihedral_angle_lemma}) and an icosahedral-transitivity argument (\S\ref{sec:icosahedral_transitivity_lemma}), assembled in \S\ref{sec:main_proof}. Corollary~\ref{cor:chord_length} below records the short-edge chord length $|v_i - \vhost| = 1/\phi$ as a stand-alone consequence (the form in which G1 enters Patch~0552's chord-length lemma).
+
+\begin{remark}[On the previously implicit role of $\Hthree$ symmetry]\label{rem:H3_implicit}
+At Patch~0541 \S3.1 and at F.1 v1.0 §4.2 Identity~G1, the uniformity of $v_i \cdot \vhost$ across the 12 first-shell vertices was stated as immediate from the icosahedral symmetry without explicit hypothesis tracking. The present hardening makes the $\Hthree = \Icoh$ residual symmetry hypothesis (H3) explicit, both for hypothesis-tracking discipline and to register the dependency on the Capotauro~v2.0 + Patch~0419 derivation of the $\Hfour \to \Hthree$ symmetry breaking under vertex-aligned Reading~C. Without (H3), the per-pair inner product $v_1 \cdot \vhost = \phi/2$ still holds (Lemma~\ref{lem:dihedral_angle}), but the uniformity claim across all 12 first-shell vertices does not follow; this is the load-bearing role of (H3) in the present theorem.
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{The 600-cell and its first shell}\label{sec:six_hundred_cell_setup}
+
+The 600-cell is the regular 4-dimensional polytope with Schl{\"a}fli symbol $\{3,3,5\}$ and Coxeter symmetry group $\Hfour$ of order $14400$ \cite{coxeter1973}. We adopt the unit-radius normalisation $|v|=1$ for all 120 vertices on $S^3 \subset \Reals^4$ and the standard 600-cell short-edge length $|v_a - v_b| = 1/\phi$ for adjacent vertex pairs in $\Gsixcell$. Each vertex of the 600-cell has exactly 12 first-shell neighbours (so $\Gsixcell$ is 12-regular with 120 vertices and 720 edges), and the 12 first-shell neighbours of any vertex $\vhost$ form a regular icosahedron whose 30 edges are themselves edges of $\Gsixcell$ (Patch~0541 \S2.2 G2 primitive; equivalently, the vertex figure of the 600-cell is a regular icosahedron \cite{coxeter1973}).
+
+\subsection{Vertex-aligned Reading C and the $\Hfour \to \Hthree$ symmetry breaking}\label{sec:reading_c_setup}
+
+Under vertex-aligned Reading~C (Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2), the framework chirality direction $\nhat$ is identified with the host vertex direction: $\nhat = \vhost$. Combined with the unit-vertex normalisation (H2), this gives $|\nhat| = 1$ and $\nhat$ itself is a 600-cell vertex.
+
+The $\Hfour$-stabilizer of the vertex $\vhost$ in the 600-cell --- equivalently, the subgroup of $\Hfour$ that fixes $\nhat = \vhost$ pointwise --- is the icosahedral symmetry group $\Hthree = \Icoh$ of order $120$, by Coxeter parabolic-subgroup theory applied to the $\Hfour$ Coxeter diagram \cite{humphreys1990,coxeter1973}. This is the structural content of (H3): vertex-aligned Reading~C breaks the substrate's $\Hfour$ symmetry to $\Hthree$ acting on the host's first shell. The breaking is registered at Capotauro~v2.0 FI-C-RC-2 + Patch~0419 Finding~C-W37 as a Layer~2 closure of the Reading~C orientation-selection sub-question (vertex-aligned vs face-aligned vs edge-aligned vs cell-aligned: only vertex-aligned and face-aligned have $\Hfour$-stabilizers containing a $D_6$ analog of the K3-doublet stabilizer, and the additional structural input of Capotauro~v2.0 \S13 selects vertex-aligned).
+
+\begin{lemma}[$\Hthree$ acts transitively on the 12 first-shell vertices]\label{lem:icosahedral_transitivity}
+Under (H1)--(H3), the icosahedral group $\Hthree = \Icoh$ acts transitively on the 12 first-shell vertices $\{v_1, \ldots, v_{12}\}$ of $\vhost$.
+\end{lemma}
+
+\begin{proof}
+By (H3), $\Hthree = \Icoh$ is the $\Hfour$-stabilizer of $\vhost$, hence acts on the substrate's 600-cell while fixing $\vhost$. Since $\Hfour$ acts edge-transitively on the 600-cell (a defining property of the regular polytope \cite{coxeter1973}), every short edge incident to $\vhost$ is in the same $\Hfour$-orbit; the subgroup $\Hthree$ fixing $\vhost$ acts on these 12 incident edges and, by the orbit--stabilizer theorem combined with the well-known action of $\Icoh$ on the regular icosahedron's 12 vertices \cite{humphreys1990}, this action is transitive. Equivalently: the 12 first-shell vertices of $\vhost$ are the 12 vertices of the first-shell icosahedron (Patch~0541 \S2.2 G2), and $\Icoh$ acts transitively on the vertices of a regular icosahedron. The action of $\Hthree$ on the 12 first-shell vertices of $\vhost$ is therefore transitive. $\square$
+\end{proof}
+
+\subsection{Golden-ratio identity}\label{sec:golden_ratio_identity}
+
+The proof of Lemma~\ref{lem:dihedral_angle} uses the defining quadratic relation $\phi^2 = \phi + 1$, equivalently $\phi^2 - \phi - 1 = 0$, satisfied by $\phi = (1+\sqrt{5})/2$. From this it follows that $\phi$ is the positive real root of $x^2 - x - 1 = 0$, and that $\cos(\pi/5)$ admits the closed-form $(1+\sqrt{5})/4 = \phi/2$ derived in Lemma~\ref{lem:dihedral_angle} below.
+
+\section{Proof of identity G1}\label{sec:proof}
+
+\subsection{Dihedral-angle lemma}\label{sec:dihedral_angle_lemma}
+
+\begin{lemma}[600-cell first-shell central angle]\label{lem:dihedral_angle}
+Under (H2), for any first-shell vertex $v_i$ of $\vhost$ in the 600-cell,
+\begin{equation}\label{eq:dihedral_angle}
+v_i \cdot \vhost \;=\; \cos(36^\circ) \;=\; \cos(\pi/5) \;=\; \frac{1+\sqrt{5}}{4} \;=\; \frac{\phi}{2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+We proceed in two steps: (i) reduce the inner product to the cosine of the central angle subtended by an adjacent vertex pair, then (ii) evaluate $\cos(\pi/5)$ from the Chebyshev minimal polynomial.
+
+\textbf{Step 1 (geometric reduction).} Under (H2), both $v_i$ and $\vhost$ are unit vectors in $\Reals^4$. By the standard inner-product identity for unit vectors,
+\begin{equation*}
+v_i \cdot \vhost \;=\; |v_i|\,|\vhost|\,\cos\theta \;=\; \cos\theta,
+\end{equation*}
+where $\theta$ is the angle between the position vectors of $v_i$ and $\vhost$ at the centre of the 600-cell (the origin). The chord length between adjacent vertices on the unit $S^3$ is related to this central angle by the chord-angle relation $|v_i - \vhost| = 2 \sin(\theta/2)$. Substituting the 600-cell short-edge length $|v_i - \vhost| = 1/\phi$:
+\begin{equation*}
+\frac{1}{\phi} \;=\; 2\sin(\theta/2), \qquad \sin(\theta/2) \;=\; \frac{1}{2\phi}.
+\end{equation*}
+
+\textbf{Step 2 (evaluation of $\cos(\pi/5)$).} The angle $\theta/2$ satisfies $\sin(\theta/2) = 1/(2\phi)$. We show that this is $\sin(\pi/10) = \sin(18^\circ)$ and therefore $\theta = \pi/5 = 36^\circ$.
+
+By the Chebyshev polynomial identity for $\cos(5\alpha)$ \cite{abramowitz_stegun},
+\begin{equation*}
+\cos(5\alpha) \;=\; 16\cos^5\alpha - 20\cos^3\alpha + 5\cos\alpha.
+\end{equation*}
+Setting $\alpha = \pi/5$ gives $\cos(5\alpha) = \cos(\pi) = -1$. Let $x = \cos(\pi/5)$. Then
+\begin{equation*}
+16x^5 - 20x^3 + 5x + 1 \;=\; 0.
+\end{equation*}
+The polynomial $16x^5 - 20x^3 + 5x + 1$ factors as $(x+1)(4x^2 - 2x - 1)^2$, which can be verified by direct expansion. Since $x = \cos(\pi/5) \neq -1$, $x$ satisfies the quadratic factor:
+\begin{equation*}
+4x^2 - 2x - 1 \;=\; 0, \qquad x \;=\; \frac{2 \pm \sqrt{4 + 16}}{8} \;=\; \frac{1 \pm \sqrt{5}}{4}.
+\end{equation*}
+Since $\cos(\pi/5) \in (0,1)$, the positive root applies:
+\begin{equation*}
+\cos(\pi/5) \;=\; \frac{1+\sqrt{5}}{4} \;=\; \frac{\phi}{2}.
+\end{equation*}
+
+\textbf{Closing Step 1.} To confirm $\theta = \pi/5$: with $x = \cos(\pi/5) = \phi/2$, the half-angle identity gives
+\begin{equation*}
+\sin^2(\pi/10) \;=\; \frac{1 - \cos(\pi/5)}{2} \;=\; \frac{1 - \phi/2}{2} \;=\; \frac{2 - \phi}{4} \;=\; \frac{1}{4\phi^2},
+\end{equation*}
+using the golden-ratio identity $2 - \phi = 1/\phi^2$ (which follows from $\phi^2 = \phi + 1$: $1/\phi^2 = 1/(\phi+1)$, and $(2-\phi)(\phi+1) = 2\phi + 2 - \phi^2 - \phi = 2\phi + 2 - (\phi+1) - \phi = 1$, so $2 - \phi = 1/(\phi+1) = 1/\phi^2$). Therefore $\sin(\pi/10) = 1/(2\phi)$, matching the chord-angle equation $\sin(\theta/2) = 1/(2\phi)$ of Step~1 with $\theta = \pi/5 = 36^\circ$.
+
+Combining: $v_i \cdot \vhost = \cos\theta = \cos(\pi/5) = \phi/2$. The identity holds for any first-shell vertex $v_i$ adjacent to $\vhost$. $\square$
+\end{proof}
+
+\begin{remark}[Polytope-theoretic primitive content]\label{rem:polytope_primitive}
+Lemma~\ref{lem:dihedral_angle} packages the dihedral-angle / central-angle content of the 600-cell into a standalone result derived from two structural primitives: (a) the unit-vertex normalisation $|v|=1$ (H2), and (b) the 600-cell short-edge length $|v_a - v_b| = 1/\phi$ between adjacent vertices. The short-edge length is itself a standard polytope-theoretic fact about the 600-cell at unit-vertex normalisation \cite{coxeter1973}; it could in principle be derived from the explicit coordinate description of the 600-cell (\S\ref{sec:scope_and_exclusions} exclusion class E1), but is taken as input here.
+\end{remark}
+
+\subsection{Icosahedral transitivity lifts uniformity}\label{sec:icosahedral_transitivity_lemma}
+
+Lemma~\ref{lem:dihedral_angle} establishes the inner-product identity for a single adjacent vertex pair $(v_i, \vhost)$. Lemma~\ref{lem:icosahedral_transitivity} (already proved in \S\ref{sec:reading_c_setup}) lifts this to uniformity across all 12 first-shell vertices: since $\Hthree = \Icoh$ acts transitively on $\{v_1, \ldots, v_{12}\}$ while fixing $\vhost$, and the inner product $v \cdot \vhost$ is invariant under elements of $\Hthree$ (as a scalar built from a fixed vector $\vhost$ and an arbitrary vector $v$ transformed by an element of $\Hthree \subset O(4)$ fixing $\vhost$), every first-shell vertex has the same inner product with $\vhost$ as does $v_1$.
+
+\subsection{Main proof of Theorem~\ref{thm:G1_hardened}}\label{sec:main_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:G1_hardened}]
+Fix any first-shell vertex $v_1$ of $\vhost$. By Lemma~\ref{lem:dihedral_angle} applied with $v_i = v_1$ under hypothesis (H2),
+\begin{equation*}
+v_1 \cdot \vhost \;=\; \frac{\phi}{2}.
+\end{equation*}
+By Lemma~\ref{lem:icosahedral_transitivity} under hypotheses (H1) + (H3), the group $\Hthree = \Icoh$ acts transitively on the set $\{v_1, \ldots, v_{12}\}$ while fixing $\vhost$. For any $j \in \{2, \ldots, 12\}$, choose $g \in \Hthree$ with $g \cdot v_1 = v_j$. Since $g$ acts as a linear isometry of $\Reals^4$ fixing $\vhost$,
+\begin{equation*}
+v_j \cdot \vhost \;=\; (g \cdot v_1) \cdot \vhost \;=\; (g \cdot v_1) \cdot (g \cdot \vhost) \;=\; v_1 \cdot \vhost \;=\; \frac{\phi}{2},
+\end{equation*}
+where the second equality uses $g \cdot \vhost = \vhost$ (since $\Hthree$ fixes the host) and the third uses that the inner product on $\Reals^4$ is $O(4)$-invariant. Therefore $v_j \cdot \vhost = \phi/2$ for every $j \in \{1, \ldots, 12\}$, completing the proof. $\square$
+\end{proof}
+
+\section{Consequences and corollaries}\label{sec:consequences}
+
+\subsection{Short-edge chord length}\label{sec:chord_length_corollary}
+
+\begin{corollary}[Host-to-first-shell chord length]\label{cor:chord_length}
+Under (H1)--(H3), for every first-shell vertex $v_i$ of $\vhost$,
+\begin{equation}\label{eq:chord_length}
+|v_i - \vhost| \;=\; \frac{1}{\phi},
+\end{equation}
+uniformly across $i \in \{1, \ldots, 12\}$.
+\end{corollary}
+
+\begin{proof}
+By the standard inner-product expansion in $\Reals^4$,
+\begin{equation*}
+|v_i - \vhost|^2 \;=\; |v_i|^2 - 2(v_i \cdot \vhost) + |\vhost|^2 \;=\; 1 - 2\cdot\frac{\phi}{2} + 1 \;=\; 2 - \phi \;=\; \frac{1}{\phi^2},
+\end{equation*}
+using (H2) for $|v_i| = |\vhost| = 1$, Theorem~\ref{thm:G1_hardened} for the inner product, and the golden-ratio identity $2 - \phi = 1/\phi^2$ (Lemma~\ref{lem:dihedral_angle} closing step). Taking the positive square root gives $|v_i - \vhost| = 1/\phi$, uniform in $i$. $\square$
+\end{proof}
+
+Corollary~\ref{cor:chord_length} is the form in which G1 enters Patch~0552 \S3.1 Lemma~3.1.1 (host-to-first-shell chord length). Under the present hardening, Patch~0552's chord-length lemma may cite Theorem~\ref{thm:G1_hardened} + Corollary~\ref{cor:chord_length} in place of its imported Lemma~5.1 (G1 at sketch-document Layer~3), and the Patch~0552 chord-length lemma itself upgrades to publication-grade Layer~3 unconditional.
+
+\subsection{Closure of the E1 exclusion of Patches 0551 and 0552}\label{sec:e1_closure}
+
+\begin{corollary}[E1 closure for Patches 0551 + 0552]\label{cor:e1_closure}
+With Theorem~\ref{thm:G1_hardened} in hand, the shared exclusion class E1 of Patch~0551 \S5 and Patch~0552 \S5 (``Lemma~5.1 (G1) is imported at sketch-document Layer~3 rigor; promotion of Lemma~5.1 to publication-grade rigor remains a candidate for a separate hardening Patch'') is \textbf{closed}. Patch~0551 Theorem~4.1 (first-shell-to-first-shell perpendicularity) and Patch~0552 Theorem~3.1 (host-to-first-shell uniform projection) are consequently upgraded from publication-grade Layer~3 \emph{conditional on G1} to publication-grade Layer~3 \emph{unconditional}.
+\end{corollary}
+
+\begin{proof}
+Patches~0551 and~0552 each import G1 as Lemma~5.1 at sketch-document Layer~3 rigor (Patch~0541 \S3.1 derivation imported); the only Layer-rigor gap registered by their respective exclusion classes E1 is the publication-grade hardening of G1. The present Theorem~\ref{thm:G1_hardened} provides that hardening: G1 is now derived from (H1)--(H3) at publication-grade Layer~3 rigor with explicit hypothesis tracking, isolated dihedral-angle and icosahedral-transitivity lemmas, and a five-class exclusion enumeration (\S\ref{sec:scope_and_exclusions} below). Patches~0551 and~0552 may therefore cite Theorem~\ref{thm:G1_hardened} in place of their imported Lemma~5.1, closing the E1 exclusion. The remaining four exclusion classes (E2)--(E5) of Patches~0551 and~0552 are unchanged by the present hardening. $\square$
+\end{proof}
+
+\subsection{Consequence for F.1 Theorem 7.1's conditionality clause}\label{sec:f1_theorem_7_1_consequence}
+
+\begin{corollary}[F.1 Theorem 7.1 conditionality strengthening]\label{cor:f1_theorem_7_1}
+With Corollary~\ref{cor:e1_closure} in hand, F.1 v1.0 Theorem~7.1 (substrate-locality umbrella) is at sketch-document Layer~3 rigor, with its three load-bearing input theorems (F.1 Theorems~5.1 host-to-first-shell uniform projection, 5.2 first-shell-to-first-shell perpendicularity, and~6.1 perturbation-locality propagation per Patch~0550) all at publication-grade Layer~3 \emph{unconditional}. The conditionality clause of F.1 Theorem~7.1 (``conditional on G1 publication-grade hardening'') is consequently \textbf{discharged}, and F.1 Theorem~7.1's conditionality reduces to: (a)~the sketch-document Layer~3 status of the umbrella itself (assembled from the trio + the framework-local current construction); (b)~the framework-axiom status of Mechanism~A (registered as OPEN-FP-F1-2); and (c)~the first-order restriction to $\mathcal{O}(\delta^1)$ (registered as OPEN-FP-F1-1).
+\end{corollary}
+
+\begin{proof}
+Immediate from Corollary~\ref{cor:e1_closure} (closing the only G1-related exclusion of the §5 trio) + the unchanged Layer~3 status of Patch~0550 + the discharge of the F.1 Theorem~7.1 conditionality clause that referenced G1 explicitly (F.1 v1.0 §7.4--§7.5). $\square$
+\end{proof}
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:G1_hardened} is scope-bounded by hypotheses (H1)--(H3). This section enumerates five classes of generalisations that lie explicitly outside the theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP axioms $A1$--$A11$.} The 600-cell polytope itself is taken as given in the framework input: its 120 vertices on $S^3$, its edge graph $\Gsixcell$, its short-edge length $1/\phi$ at unit-vertex normalisation, and its $\Hfour$ symmetry group are inherited from polytope theory \cite{coxeter1973}. A Layer~4 derivation of the 600-cell substrate from CPP primitive axioms $A1$--$A11$ together with first-principles emergence considerations is the long-term programme target registered at Patch~0528 \S14.17, Patch~0539 \S15.5, Patch~0549 \S38.2, and shared across all four F.1 hardened-theorem artifacts (Patches~0550--0552 + the present Patch~0571). The shared scope-line is consistent across the F.1 hardened-theorem trio.
+
+\item \textbf{Non-vertex-aligned Reading C variants are NOT covered.} The theorem requires $\nhat = \vhost$ (hypothesis (H1)). Alternative Reading~C placements --- edge-aligned Reading~C with $\nhat$ along a 600-cell short-edge direction (residual $D_3$ symmetry at the edge midpoint), or face-aligned Reading~C with $\nhat$ perpendicular to a triangular face (residual $D_2$ symmetry at the face centroid) --- have different residual symmetries and different first-shell structural primitives. Under edge-aligned or face-aligned Reading~C, the host-vertex framework underlying Theorem~\ref{thm:G1_hardened} does not apply directly; a separate analysis would be required, with the inner-product identity replaced by edge-midpoint-to-incident-vertex or face-centroid-to-incident-vertex inner products of distinct geometric content. Registered as OPEN-FP-F1-5 (non-vertex-aligned Reading~C variants) in F.1 v1.0 §9.
+
+\item \textbf{Identity G2 (icosahedral first-shell structure) is imported at sketch-document Layer~3 rigor.} G2 (Patch~0541 \S2.2) states that the 12 first-shell vertices of any host vertex $\vhost$ in the 600-cell form the vertices of a regular icosahedron centered at $\vhost$. G2 is invoked implicitly in Lemma~\ref{lem:icosahedral_transitivity} via the action of $\Hthree = \Icoh$ on the 12 first-shell vertices (which are the 12 vertices of a regular icosahedron). G2's publication-grade hardening is not in scope of the present paper; per F.1 v1.0 §4.2, G2 is structurally less load-bearing than G1 and depends only on the well-established 600-cell vertex-figure structure (the vertex figure of the 600-cell is a regular icosahedron \cite{coxeter1973}). G2 hardening is not currently flagged as a separate Open Problem; the dependency through Lemma~\ref{lem:icosahedral_transitivity} is registered here as exclusion class~E3.
+
+\item \textbf{Higher-shell inner-product primitives are NOT addressed.} Theorem~\ref{thm:G1_hardened} treats only the first-shell inner-product primitive $v_i \cdot \vhost$ with $v_i$ adjacent to $\vhost$ in $\Gsixcell$. Analogues for second-shell vertices (the 20 vertices of the dodecahedron at distance $\phi^{-1}\sqrt{3-\phi}$ from $\vhost$), third-shell vertices, etc., are not in scope. The $\mathcal{O}(\delta^2)$ extension of the F.1 substrate-locality theorem (OPEN-FP-F1-1) will require analogous second-shell inner-product primitives, but the present hardening does not anticipate them.
+
+\item \textbf{The 600-cell short-edge chord length $1/\phi$ at unit-vertex normalisation is taken as a polytope-theoretic input.} Lemma~\ref{lem:dihedral_angle} Step~1 uses $|v_i - \vhost| = 1/\phi$ as the chord-length input to the chord-angle relation. The short-edge chord length is a standard polytope-theoretic fact for the 600-cell at unit-vertex normalisation \cite{coxeter1973}; it could in principle be derived from the explicit Cayley-Menger or coordinate description of the 600-cell (e.g., the 120 vertices given in terms of the $\Hfour$ root system), but is taken as input here in the same spirit as the unit-vertex normalisation (H2). The shared scope-line with the other F.1 hardened-theorem artifacts (Patches~0550--0552) is consistent on this point.
+\end{enumerate}
+
+\section{Cross-references and consequences}\label{sec:cross_references}
+
+\subsection{Use in Patches 0551 and 0552}\label{sec:use_in_0551_0552}
+
+Patches~0551 (\texttt{first\_shell\_perpendicularity.tex}) \S2.3 Lemma~5.1 and Patch~0552 (\texttt{host\_to\_first\_shell\_projection.tex}) \S2.3 Lemma~5.1 each import G1 at sketch-document Layer~3 rigor as the load-bearing first-shell inner-product primitive. Under Corollary~\ref{cor:e1_closure}, both citations are now backed by Theorem~\ref{thm:G1_hardened} at publication-grade Layer~3 rigor; the inherited statements in Patches~0551 and~0552 upgrade automatically from publication-grade Layer~3 conditional to unconditional. The E1 exclusion clauses of Patch~0551 \S5 and Patch~0552 \S5 may now be revised to ``CLOSED via Patch~0571'' in any revised versions of those artifacts.
+
+\subsection{Use in F.1 Theorem 7.1 (substrate-locality umbrella)}\label{sec:use_in_f1_7_1}
+
+F.1 v1.0 §7.4--§7.5 derives Theorem~7.1 (substrate-locality of the net DI-bit current at the host vertex at first order in $\delta$) from the §5 trio (host-to-first-shell uniform projection + first-shell-to-first-shell perpendicularity + G1 inner-product primitive) plus §6 perturbation-locality. Under Corollary~\ref{cor:f1_theorem_7_1}, F.1 Theorem~7.1's conditionality clause is strengthened: the G1-conditional clause is discharged, and the remaining conditionality reduces to the umbrella's own sketch-document Layer~3 status + the framework-axiom status of Mechanism~A (OPEN-FP-F1-2) + the $\mathcal{O}(\delta^1)$ restriction (OPEN-FP-F1-1). The Layer~4 axiomatic derivation of Mechanism~A from CPP A1--A11 (OPEN-FP-F1-2) and the higher-order extension to $\mathcal{O}(\delta^2)$ (OPEN-FP-F1-1) remain the two highest-priority post-Patch-0571 trajectory targets for the F.1 substrate-locality umbrella.
+
+\subsection{Capotauro v2.0 §13 structural parallel}\label{sec:capotauro_parallel}
+
+The geometric content of Theorem~\ref{thm:G1_hardened} parallels the Capotauro~v2.0 §13.3 spatial-sector ``structural proof'': under vertex-aligned Reading~C, the first-shell icosahedron lies on the 3D tangent hyperplane to $S^3$ at $\vhost$ at signed distance $\phi/2$ from the origin, which is the spatial-sector content of the present temporal-sector identity. The Capotauro~v2.0 derivation operates in the spatial sector (perturbation amplitude $\epsilon$) and the present hardening operates jointly with the temporal sector (perturbation amplitude $\delta$, via F.1 Mechanism~A), but the underlying first-shell-inner-product content is identical; the present hardening completes the publication-grade rigorisation of the inner-product content shared across both sectors.
+
+\section{Conclusion --- the F.1 Layer 3 publication-grade hardening sequence is complete}\label{sec:conclusion}
+
+Theorem~\ref{thm:G1_hardened}, with hypotheses (H1)--(H3) and supporting Lemmas~\ref{lem:dihedral_angle} (dihedral angle from Chebyshev minimal polynomial) and~\ref{lem:icosahedral_transitivity} (icosahedral transitivity lifting per-pair to uniform), gives the publication-grade hardening of Patch~0541 \S3.1 Identity~G1. The scope qualifiers of vertex-aligned Reading~C, 600-cell unit-vertex normalisation, and icosahedral residual symmetry are built into hypotheses (H1)--(H3) respectively. The five exclusion classes (E1)--(E5) make explicit what is NOT covered.
+
+\paragraph{Position in the F.1 hardened-theorem sequence (complete).}
+With Patch~0571, the F.1 Dynamical Substrate Law Layer~3 hardened-theorem sequence is complete at four artifacts:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Patch~0550} hardened Theorems~3.3.3 + 3.3.4 (perturbation-theory propagation rule + shell-locality), at \texttt{hardened\_theorems/perturbation\_locality\_propagation.tex}.
+\item \textbf{Patch~0551} hardened Theorem~4.1.1 (first-shell-to-first-shell edge-direction perpendicularity), at \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex}.
+\item \textbf{Patch~0552} hardened Theorem~4.2.1 (host-to-first-shell uniform projection), at \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex}.
+\item \textbf{Patch~0571 (this paper)} hardens Identity~G1 (first-shell inner-product primitive), at \texttt{hardened\_theorems/first\_shell\_inner\_product\_primitive.tex}, closing the shared E1 exclusion class of Patches~0551 + 0552 and consequently strengthening F.1 Theorem~7.1's conditionality clause (Corollary~\ref{cor:f1_theorem_7_1}).
+\end{itemize}
+
+With the four-artifact hardened-theorem trio-plus-foundation now complete, the F.1 v1.0 substrate-locality umbrella (Theorem~7.1) is supported by three unconditional publication-grade Layer~3 input theorems plus a publication-grade Layer~3 perturbation-theory propagation rule. The umbrella itself remains at sketch-document Layer~3 (the assembly of the §5 trio with the framework-local current construction at first order in $\delta$ is not in itself publication-grade-hardened; this is the umbrella's residual sketch-document status). The two highest-priority post-Patch-0571 trajectory targets for the F.1 substrate-locality programme are: \textbf{OPEN-FP-F1-1} (extension to $\mathcal{O}(\delta^2)$ via second-shell inner-product primitives), and \textbf{OPEN-FP-F1-2} (Layer~4 axiomatic derivation of Mechanism~A from CPP primitive axioms $A1$--$A11$).
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+3rd ed., Dover Publications, New York, 1973.
+
+\bibitem{humphreys1990}
+J.~E.~Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge Studies in Advanced Mathematics 29, Cambridge University Press, 1990.
+
+\bibitem{abramowitz_stegun}
+M.~Abramowitz and I.~A.~Stegun, eds.,
+\textit{Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables},
+Dover Publications, New York, 1972 (Chebyshev polynomial identities, \S22.3.15--22.3.16).
+
+\bibitem{abshier_capotauro_chiral_mechanism_sketch}
+T.~L.~Abshier,
+``The Capotauro Mechanism v2.0: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics,''
+CPP Flagship Paper Series, May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\bibitem{abshier_f1_dynamical_substrate_law}
+T.~L.~Abshier,
+``The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading~C in the 600-Cell,''
+CPP Flagship Paper Series (F-line), Version 1.0, 24~May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}

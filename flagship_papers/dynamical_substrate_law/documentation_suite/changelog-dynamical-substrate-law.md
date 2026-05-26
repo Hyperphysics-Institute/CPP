@@ -15,6 +15,39 @@ This is **F.1, the first F-line flagship v1.0 SHIP in CPP corpus history.** The 
 
 ---
 
+## Post-v1.0 SHIP — Hardened-theorem artifact additions
+
+### Patch 0571 — 25 May 2026 (Session 143): G1 publication-grade hardening (OPEN-FP-F1-3 RESOLVED)
+
+**OPEN-FP-F1-3 RESOLVED.** First post-v1.0-SHIP substantive physics Patch on the F.1 trajectory, executed per ChatGPT R1–R6 + Copilot R1 convergent verdict that G1 publication-grade hardening was the "single highest-value next action" after v1.0 SHIP. The patch adds the fourth and final F.1 Layer 3 hardened-theorem artifact at `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines LaTeX; 9-page PDF, ~312 KB; clean three-pass compile with zero warnings/errors).
+
+**Theorem hardened.** Identity G1 (first-shell inner-product primitive): under (H1) vertex-aligned Reading C with $\hat{n} = v_{\text{host}}$, (H2) 600-cell unit-vertex normalisation $|v|=1$, and (H3) icosahedral residual symmetry $H_3 = I_h$ at the host vertex, every first-shell vertex $v_i$ of $v_{\text{host}}$ satisfies $v_i \cdot v_{\text{host}} = \phi/2$ uniformly across $i \in \{1, \ldots, 12\}$.
+
+**Three structural advances over the Patch 0541 §3.1 sketch-document Layer 3 derivation:**
+1. **Dihedral-angle calculation as standalone lemma** (Lemma 3.1): the central angle 36° between adjacent 600-cell vertices, with $\cos(\pi/5) = \phi/2$, is now derived rigorously from the Chebyshev minimal polynomial of $\cos(\pi/5)$ — specifically, $16x^5 - 20x^3 + 5x + 1 = (x+1)(4x^2 - 2x - 1)^2 = 0$ with $x = \cos(\pi/5) \neq -1$ giving $x = (1+\sqrt{5})/4 = \phi/2$.
+2. **Icosahedral residual symmetry $H_3 = I_h$ as separately-derived structural input (H3)**: the previously implicit symmetry hypothesis is now made explicit, with the derivation chain Capotauro v2.0 FI-C-RC-2 + Patch 0419 Finding C-W37 cited as the structural-input source. Lemma 2.4 (icosahedral transitivity) lifts the per-pair inner product to uniformity across all 12 first-shell vertices via the orbit–stabilizer theorem applied to $\Hthree$ acting on the first-shell icosahedron.
+3. **Five-class exclusion enumeration (E1–E5)** registering the polytope-theoretic primitives taken as given: (E1) Layer 4 derivation of the 600-cell substrate from CPP A1–A11; (E2) non-vertex-aligned Reading C variants; (E3) Identity G2 (icosahedral first-shell structure) imported at sketch-document Layer 3; (E4) higher-shell inner-product primitives; (E5) the 600-cell short-edge chord length $1/\phi$ taken as polytope-theoretic input.
+
+**Programme-state changes at Patch 0571.**
+1. **OPEN-FP-F1-3 RESOLVED.** First of the six post-v1.0-SHIP F.1 Open Problems closed; closure recorded in `research_frontier.md` §4 Recently Resolved and in `frontier_sectors/FP.md` status field.
+2. **Shared exclusion class E1 of Patches 0551 + 0552 CLOSED** (Corollary 3.2 of the new artifact). F.1 Theorems 5.1 (host-to-first-shell uniform projection) and 5.2 (first-shell-to-first-shell perpendicularity) upgrade from publication-grade Layer 3 *conditional on G1* to publication-grade Layer 3 *unconditional*.
+3. **F.1 Theorem 7.1 (substrate-locality umbrella) conditionality strengthened** (Corollary 3.3). The G1-conditional clause is discharged; remaining conditionality reduces to (a) the umbrella's own sketch-document Layer 3 status; (b) framework-axiom status of Mechanism A (registered as OPEN-FP-F1-2); (c) the $\mathcal{O}(\delta^1)$ restriction (OPEN-FP-F1-1).
+4. **F.1 Layer 3 hardened-theorem sequence complete at four artifacts** (Patches 0550 + 0551 + 0552 + 0571): perturbation-theory propagation rule + shell-locality (0550); first-shell-to-first-shell perpendicularity (0551); host-to-first-shell uniform projection (0552); G1 first-shell inner-product primitive (this Patch). Combined LaTeX: ~1060 lines; combined PDFs: ~30 pages across four artifacts.
+5. **First F-line post-v1.0-SHIP substantive physics Patch landed** without Phase 7B/7C completion — the Session 142 close handover (planned narratively as Patch 0571 in `reasoning-dynamical-substrate-law.md` §65) and Session 143 Phase 7A doc-suite production sub-arc (planned narratively as Patches 0572–0572i) remain as forward-looking trajectory plans drafted in the documentation suite but not yet committed to git history. Patch 0571 narrative-numbering question is flagged for maintainer disposition (renumbering of either the planned-but-uncommitted Patch 0571 narrative or the present Patch 0571 G1 hardening; the present `.tex` artifact carries the Patch 0571 label per maintainer instruction).
+
+**Files in this Patch.**
+1. NEW — `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines).
+2. NEW — `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.pdf` (9 pages, compiled three-pass clean from the .tex).
+3. APPEND — this changelog entry to `documentation_suite/changelog-dynamical-substrate-law.md`.
+4. EDIT — `frontier_sectors/FP.md` to mark OPEN-FP-F1-3 RESOLVED.
+5. EDIT — `research_frontier.md` Last-updated header + §4 Recently Resolved entry + problem counts.
+
+**Post-Patch-0571 trajectory.** Two highest-priority remaining F.1 substrate-locality programme targets: **OPEN-FP-F1-1** (extension to $\mathcal{O}(\delta^2)$ via second-shell inner-product primitives) and **OPEN-FP-F1-2** (Layer 4 axiomatic derivation of Mechanism A from CPP primitive axioms A1–A11). Both are independent of OPEN-FP-F1-3 and may be pursued in either order. Other open F.1-trajectory items: OPEN-FP-F1-4 (Sector-5 schema instantiation), OPEN-FP-F1-5 (non-vertex-aligned Reading C variants), OPEN-FP-F1-6 (prose-density tightening / F.1-condensed companion paper).
+
+**Calibration discipline at Patch 0571.** No theorem statements of F.1 v1.0 paper source modified; no proofs of F.1 v1.0 paper source modified; no Open Problems of F.1 v1.0 paper source modified; no existing `hardened_theorems/*.tex` source artifacts modified (Patches 0550 + 0551 + 0552 unchanged on disk); no bibliography body of F.1 v1.0 paper source modified; no abstract / §1–§10 substantive content rewrites. The hardened-theorem artifact is purely additive within `hardened_theorems/`. The five-Open-Problem in-body commitment of F.1 v1.0 §9 is preserved end-to-end; OPEN-FP-F1-3's status transition (OPEN → RESOLVED) is recorded in the frontier registry layer only, not in the F.1 v1.0 paper source.
+
+---
+
 ## Version 1.0 SHIPPED — 24 May 2026 (Session 142, Patch 0570)
 
 **F.1 Dynamical Substrate Law SHIPPED as v1.0 release after six-round ChatGPT reviewer cycle converged on strongest-positive verdict, with explicit Grok and Copilot Round 1 SHIP-acceptable sign-offs.** Title block `\date{}` line bumped from `Version 0.9 (pre-v1.0; awaiting reviewer engagement), 23 May 2026` to `Version 1.0 --- 24 May 2026` + italicized scope-framing subtitle. Author email updated to `drthomas@protonmail.com` at Patch 0569a. The v1.0 SHIP is **the first F-line flagship v1.0 ship in CPP corpus history.**

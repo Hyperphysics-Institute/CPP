@@ -1,7 +1,9 @@
 # CPP Research Frontier
 
 **Location:** `/CPP/research_frontier.md`
-**Last updated:** 25 May 2026 (Session 142 / Patch 0570 propagation — **F.1 DYNAMICAL SUBSTRATE LAW v1.0 SHIP propagated through `frontier_sectors/` decomposition**: six new OPEN-FP-F1-1 through OPEN-FP-F1-6 entries registered in `frontier_sectors/FP.md`; OPEN-SD-CHIR-PRIMITIVE umbrella manifestation (iv) thermodynamic causal-arrow CLOSED at sketch-document Layer 3; §1 FP sector count refreshed 9 → 15; §9 Problem Count Summary FP row updated; §4 Recently Resolved entry added for the F.1 v1.0 SHIP. First F-line flagship v1.0 SHIP propagation to research frontier in CPP corpus history.)
+**Last updated:** 25 May 2026 (Session 143, **Patch 0571 — G1 PUBLICATION-GRADE HARDENING; OPEN-FP-F1-3 RESOLVED; first F-line post-v1.0-SHIP substantive physics Patch landed**: hardened-theorem artifact `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` produced at publication-grade Layer 3 with three structural advances over Patch 0541 §3.1 sketch-document derivation (Chebyshev-polynomial dihedral-angle calculation as standalone lemma; icosahedral residual symmetry $H_3 = I_h$ as separately-derived structural input; five-class exclusion enumeration). Closes shared exclusion class E1 of Patches 0551 + 0552; upgrades F.1 Theorems 5.1 + 5.2 from publication-grade Layer 3 conditional-on-G1 to unconditional; discharges F.1 Theorem 7.1's G1-conditional clause. F.1 Layer 3 hardened-theorem sequence COMPLETE at four artifacts: Patches 0550 + 0551 + 0552 + 0571.)
+
+Earlier **Last updated:** 25 May 2026 (Session 142 / Patch 0570 propagation — F.1 DYNAMICAL SUBSTRATE LAW v1.0 SHIP propagated through `frontier_sectors/` decomposition: six new OPEN-FP-F1-1 through OPEN-FP-F1-6 entries registered in `frontier_sectors/FP.md`; OPEN-SD-CHIR-PRIMITIVE umbrella manifestation (iv) thermodynamic causal-arrow CLOSED at sketch-document Layer 3; §1 FP sector count refreshed 9 → 15; §9 Problem Count Summary FP row updated; §4 Recently Resolved entry added for the F.1 v1.0 SHIP. First F-line flagship v1.0 SHIP propagation to research frontier in CPP corpus history.)
 
 Earlier **Last updated:** 24 May 2026 (Session 142, F.1 / SS-9 / Capotauro thread). Prior session-by-session running-update log extracted to [`session_logs/2026-05-24_session_142_extracted_from_frontier.md`](session_logs/2026-05-24_session_142_extracted_from_frontier.md) on 25 May 2026 (changelog decomposition).
 
@@ -18,7 +20,7 @@ One flat file showing the complete landscape of every identified problem, conjec
 
 **Answers the question:** *What is solved, what is open, and what connects to what?*
 
-**Problem count:** 92 entries (57 open, 16 conjectures, 15 propositions, 6 resolved, 6 falsified). *(Counts exclude sub-problems. The 57-open figure incorporates the 6 new OPEN-FP-F1-1 through OPEN-FP-F1-6 entries registered at F.1 v1.0 SHIP on 24 May 2026, Session 142, Patch 0570.)*
+**Problem count:** 92 entries (56 open, 16 conjectures, 15 propositions, 7 resolved, 6 falsified). *(Counts exclude sub-problems. Updated 25 May 2026 at Patch 0571: OPEN-FP-F1-3 (G1 publication-grade hardening) RESOLVED → THEO-FP-F1-3; one entry transitions from the open column to the resolved column. The 56-open figure incorporates the 6 OPEN-FP-F1-1 through OPEN-FP-F1-6 entries registered at F.1 v1.0 SHIP on 24 May 2026 minus the OPEN-FP-F1-3 resolution at Patch 0571.)*
 
 ---
 
@@ -46,7 +48,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 
 | Sector | File | Scope | Problems |
 |--------|------|-------|----------|
-| FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (F-line + SF-line) | 15 |
+| FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (F-line + SF-line) | 14 active, 1 resolved |
 | SS | [`frontier_sectors/SS.md`](frontier_sectors/SS.md) | Strong Sector (includes SS-specific propositions and conjectures from SS-5, SS-6, SS-7) | 18 active, 1 retired |
 | SM | [`frontier_sectors/SM.md`](frontier_sectors/SM.md) | Standard Model Emergence | 11 |
 | EW | [`frontier_sectors/EW.md`](frontier_sectors/EW.md) | Electroweak Sector | 6 |
@@ -82,6 +84,12 @@ The active open problems, conjectures, and propositions are organized by sector 
 Kept here for one cycle, then moved to §5.
 
 ---
+
+### THEO-FP-F1-3 → OPEN-FP-F1-3 RESOLVED: G1 publication-grade hardening (first-shell inner-product primitive)
+**Resolved:** 25 May 2026 (Session 143, Patch 0571 — **first F-line post-v1.0-SHIP substantive physics Patch in CPP corpus history**)
+**Resolving artifact:** `flagship_papers/dynamical_substrate_law/hardened_theorems/first_shell_inner_product_primitive.tex` (320 lines LaTeX; 9-page PDF, ~312 KB; clean three-pass compile with zero warnings/errors).
+**Resolved by:** Thomas Lee Abshier ND with Claude Opus 4.7 (primary collaborator).
+**Summary:** Identity G1 (first-shell inner-product primitive: $v_i \cdot v_{\text{host}} = \phi/2$ uniformly across all 12 first-shell vertices of $v_{\text{host}}$ in the 600-cell at vertex-aligned Reading C) hardened from sketch-document Layer 3 (Patch 0541 §3.1) to publication-grade Layer 3 via three structural advances: (1) **dihedral-angle calculation as standalone lemma** with $\cos(\pi/5) = \phi/2$ derived rigorously from the Chebyshev minimal polynomial $16x^5 - 20x^3 + 5x + 1 = (x+1)(4x^2 - 2x - 1)^2 = 0$, positive root $\phi/2$ — verified to machine precision; (2) **icosahedral residual symmetry $H_3 = I_h$ at the host vertex as separately-derived structural input** (H3) via Capotauro v2.0 FI-C-RC-2 + Patch 0419 Finding C-W37, with orbit–stabilizer transitivity lifting per-pair to uniform across the 12 first-shell vertices; (3) **five-class exclusion enumeration** registering the polytope-theoretic primitives taken as given. **Downstream upgrades**: shared exclusion class E1 of Patches 0551 + 0552 CLOSED; F.1 Theorems 5.1 (host-to-first-shell uniform projection) and 5.2 (first-shell-to-first-shell perpendicularity) upgrade from publication-grade Layer 3 *conditional on G1* to *unconditional*; F.1 Theorem 7.1 (substrate-locality umbrella) conditionality clause discharged of its G1 dependency, with remaining conditionality reducing to (a) the umbrella's own sketch-document Layer 3 status, (b) framework-axiom status of Mechanism A (OPEN-FP-F1-2), (c) the $\mathcal{O}(\delta^1)$ restriction (OPEN-FP-F1-1). **F.1 Layer 3 hardened-theorem sequence complete at four artifacts**: Patches 0550 + 0551 + 0552 + 0571. Two highest-priority remaining F.1 substrate-locality programme targets: OPEN-FP-F1-1 (extension to $\mathcal{O}(\delta^2)$) and OPEN-FP-F1-2 (Layer 4 axiomatic derivation of Mechanism A from CPP A1–A11).
 
 ### F.1 (Dynamical Substrate Law) v1.0 SHIPPED — Substrate-Locality Umbrella Theorem & OPEN-SD-CHIR-PRIMITIVE Manifestation (iv) Closed at Sketch-Document Layer 3
 **Shipped:** 24 May 2026 (Session 142, Patch 0570 — **first F-line flagship v1.0 SHIP in CPP corpus history**)
