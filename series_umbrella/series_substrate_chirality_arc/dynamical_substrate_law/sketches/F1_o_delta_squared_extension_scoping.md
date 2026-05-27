@@ -433,13 +433,13 @@ The F.1 v1.0 SHIP cycle's anti-erasure discipline (codified at `programme_orient
 
 ### §9.3 Forward queue
 
-**Next action:** Thomas review of decision-gate items DG-1 through DG-5. Substantive closure work (the first hardened-theorem artifact under the selected route) starts at the next session after Thomas decisions are recorded.
+**Next action (post-Patch-0585):** Substantive closure work continues at Route C sequence 2 artifact A2 (`second_shell_inner_product_primitive.tex` — G2 publication-grade Layer 3 hardening). Per the §5.1 critical-path order, A2 is independent and unlocks A3 + A5 in parallel (both conditional on A2), with A4 conditional on both A2 + A3; A6 (path-class weight enumeration) depends on the framework-extension hypothesis (H5) at sketch-document Layer 3 per DG-1 sub-option (A) plus A1 through A5. The final umbrella result A7 ($\mathcal{O}(\delta^2)$ substrate-locality umbrella) depends on all preceding artifacts and registers as the THEO-DSL-5 candidate (the closed-form $\alpha_2$). Estimated 4–8 sessions for Route C sequence 2.
 
-**If Route C (recommended) selected at DG-2 + DG-1 sub-option (A) selected:** the first closure Patch is artifact A1 (`second_order_parallel_to_n_structural.tex`) — the symmetry-only structural theorem at $\mathcal{O}(\delta^2)$. Estimated 1–2 sessions.
+**Original next action (now superseded by §9.5 Patch 0585 landing):** Thomas review of decision-gate items DG-1 through DG-5. *Bundle accepted as-is at Session 145 open; substantive closure executed at Patch 0585.*
 
-**If Route B selected at DG-2:** the trajectory closes after artifact A1; coefficient work re-opens as a new Open Problem.
+**If Route B selected at DG-2 (alternative path; NOT taken):** the trajectory would have closed after artifact A1; coefficient work would re-open as a new Open Problem. (DG-2 Route C selected at Session 145 open; Route C sequence 2 trajectory remains active.)
 
-**If Route A selected at DG-2:** the trajectory skips A1 and proceeds to A2 directly. The first closure Patch is artifact A2 (`second_shell_inner_product_primitive.tex`). Estimated 1–2 sessions.
+**If Route A selected at DG-2 (alternative path; NOT taken):** the trajectory would have skipped A1 and proceeded to A2 directly. (DG-2 Route C selected; A1 landed at Patch 0585; A2 is the natural next sequence-2 artifact under Route C.)
 
 ### §9.4 Cross-references for downstream Patches
 
@@ -449,6 +449,16 @@ The F.1 v1.0 SHIP cycle's anti-erasure discipline (codified at `programme_orient
 - $\mathcal{O}(\delta^1)$ hardened artifacts: `hardened_theorems/{perturbation_locality_propagation,first_shell_perpendicularity,host_first_shell_uniform_projection,first_shell_inner_product_primitive}.tex`.
 - Capotauro v2.0 cross-references: `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` §3 spatial-sector substrate-locality + §5.6 K3-base protection.
 - Decision-gate discipline reference: `templates/operating_system.md` §17 reviewer-pause cycle + §15 SHIP-trigger protocol (for the eventual OPEN-FP-F1-1 closure if it triggers a v1.1 / v2.0 micro-revision of F.1).
+
+### §9.5 Patch landings
+
+- **Patch 0585** (Session 145, 26 May 2026): **artifact A1 LANDED**. `hardened_theorems/second_order_parallel_to_n_structural.tex` (334 lines LaTeX; 9-page PDF; zero substantive warnings clean three-pass compile). Closes the **structural sub-question** of OPEN-FP-F1-1 at publication-grade Layer 3 unconditional via the symmetry-only Route C sequence 1 argument articulated in §4.2: Lemma 1 (order-by-order $I_h$-invariance of $\vec{j}_k(v_{\text{host}})$ via $I_h$-equivariance of Mechanism A's rate function under stabilization of $\hat{n}$) + Lemma 2 ($I_h$-invariant vectors in $\mathbb{R}^4$ at $v_{\text{host}}$ are spanned by $\hat{n}$, via the central inversion $\iota \in I_h$ acting as $\text{diag}(1,-1,-1,-1)$). All-orders strengthening obtained as a structural bonus: $\vec{j}_k(v_{\text{host}}) \parallel \hat{n}$ holds at every $k \geq 1$, not only at $k = 2$. Decision-gate bundle accepted as-is at Session 145 open: DG-1 sub-option (A) path-integral structure extension + DG-2 Route C Hybrid + DG-3 preserve F.1 v1.0 SHIP calibration + DG-4 OPEN-FP-F1-1 first + DG-5 new THEO-DSL-4 entry. The hardened artifact's five exclusion classes E1–E5 register what is NOT closed; E1 (the coefficient $\alpha_2$ at $\mathcal{O}(\delta^2)$) is the load-bearing remaining open question and the target of Route C sequence 2 artifacts A2–A6.
+
+- **Patch 0585a** (Session 145, 26 May 2026): registry propagation for Patch 0585. `frontier_sectors/FP.md` OPEN-FP-F1-1 entry updated to register partial closure (structural sub-question CLOSED; coefficient sub-question OPEN); header bold tail extended with Patch 0585 announcement. `theorem-registry.md` updated with new THEO-DSL-4 row in SD section ($\mathcal{O}(\delta^k)$ substrate-current parallel-to-$\hat{n}$ structural theorem at all orders $k \geq 1$; publication-grade Layer 3 unconditional; no G1 dependency); SD section header advanced 18 → 19; Summary Statistics SD row 18 → 19, Total 70 → 71. This scoping document updated with §9.5 patch landings record and §9.3 forward-queue revision reflecting the Route C sequence 2 trajectory continuation.
+
+**Route C sequence 1 status:** **CLOSED at Patch 0585**. The sequence-1 trajectory (the symmetry-only structural theorem) was a 1-Patch closure, matching the §4.4 + §5.1 estimate of 1–2 sessions. Sequence-1 artifact count = 1 (artifact A1 only).
+
+**Route C sequence 2 status:** **OPEN; 5 artifacts to land** (A2 through A6). Sequence-2 closure produces a future THEO-DSL-5 candidate (closed-form $\alpha_2$ at $\mathcal{O}(\delta^2)$) at artifact A7 ($\mathcal{O}(\delta^2)$ substrate-locality umbrella). Estimated 4–8 sessions for sequence-2 closure.
 
 ---
 
