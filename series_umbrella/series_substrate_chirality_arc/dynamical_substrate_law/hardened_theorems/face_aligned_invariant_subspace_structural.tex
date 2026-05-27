@@ -1,0 +1,331 @@
+% ============================================================
+% Face-Aligned Reading-C Invariant-Subspace Structural Theorem
+%   for the Net DI-Bit Current at the Host Vertex
+%   under (H1_F) Face-Aligned Reading C in the 600-Cell
+% Publication-Grade Hardening (Symmetry-Only Structural Closure)
+%   of the OPEN-FP-F1-5 Trajectory's Sequence-1B Sub-Question
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    THIRTEENTH artifact in the F.1 Layer 3 hardened-theorem sequence —
+%    second Sequence-1 artifact under the OPEN-FP-F1-5 non-vertex-aligned
+%    Reading-C variant trajectory; closes the structural sub-question of
+%    OPEN-FP-F1-5 Sequence-1B at publication-grade Layer 3 unconditional.
+%    The result is a 3-dimensional invariant-subspace conclusion —
+%    substantively the WEAKEST of the three Reading-C variants and
+%    substantively distinct from both the vertex-aligned 1D result
+%    (THEO-DSL-4 / Patch 0585) and the edge-aligned 2D result
+%    (THEO-DSL-6 / Patch 0596).)
+%
+% Patch 0597 (Session 146, 27 May 2026) -- second OPEN-FP-F1-5 trajectory
+%   closure Patch under the session-open decision-gate bundle DG-F15-1
+%   through DG-F15-5 accepted as-is by Thomas at Session 146; completes
+%   DG-F15-1 default-(C) priority of front-loading both Sequence-1
+%   structural findings before either Sequence-2 coefficient enumeration.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\nhatperp}{\hat{n}_{\text{F}\perp}}
+\newcommand{\nhatmid}{\hat{n}_{\text{ax}}}
+\newcommand{\nhatrho}{\hat{n}_{\rho}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\ui}{u_i}
+\newcommand{\uj}{u_j}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Cs}{C_s}
+\newcommand{\Dfive}{D_5}
+\newcommand{\Aone}{A_1}
+\newcommand{\Aprime}{A'}
+\newcommand{\Aprpr}{A''}
+\newcommand{\Oof}[1]{\mathcal{O}(#1)}
+\newcommand{\jDI}{\vec{j}_{DI}^{\,\text{net}}}
+\newcommand{\Ek}{E_k}
+
+\title{Face-Aligned Reading-C Invariant-Subspace Structural Theorem \\
+for the Net DI-Bit Current at the Host Vertex \\
+in the 600-Cell \\
+\large Symmetry-Only Publication-Grade Layer~3 Closure \\
+of the Sequence-1B Structural Sub-Question of OPEN-FP-F1-5}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7 \\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{27 May 2026 (Session 146, CPP Patch 0597)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade Layer~3 \emph{symmetry-only} closure of the structural sub-question of OPEN-FP-F1-5 Sequence~1B: under (H1$_F$)~face-aligned Reading~C with $\nhat = \nhatperp$ chosen perpendicular to a triangular face $\{\vhost, \ui, \uj\}$ incident to the host vertex $\vhost$, (H2)~600-cell unit-vertex normalisation, (H3$_F$)~the residual symmetry $\Cs$ at $\vhost$ fixing the chosen face and $\nhatperp$ direction, (H4)~the F.1 v1.0 Theorem~6.1 perturbation-locality propagation rule, and (H5$_F$)~the Mechanism~A perturbation $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhatperp)$ on each oriented edge of the 600-cell edge graph at first order in $\delta$ with path-integral extension at $\Oof{\delta^k}$ at sketch level per DG-F15-4 default~(A), the net DI-bit current at the host vertex at every non-zero order $k \geq 1$ in $\delta$ lies in the \emph{three-dimensional} $\Cs$-invariant subspace of $\Reals^4$ at $\vhost$:
+\begin{equation*}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \in \operatorname{span}\bigl\{\nhatrho,\,\nhatmid,\,\nhatperp\bigr\} \qquad \text{for all } k \geq 1,
+\end{equation*}
+where $\nhatrho := \vhost/|\vhost|$ is the radial direction at $\vhost$, $\nhatmid$ is the in-face axis from $\vhost$ to the midpoint of the chosen face edge $\{\ui, \uj\}$, and $\nhatperp$ is the face-perpendicular Reading-C direction. Equivalently, $\jDI(\vhost)|_{\Oof{\delta^k}}$ is constrained only to be perpendicular to the single $\Cs$-antisymmetric direction $\ui - \uj$.
+
+This is the \emph{weakest of the three Reading-C variants}: the structural constraint reduces from 4-vector to 3-vector (loss of one degree of freedom), compared to the edge-aligned 2-vector (loss of two; Patch~0596 / THEO-DSL-6) and the vertex-aligned 1-vector (loss of three; Patch~0585 / THEO-DSL-4). The dimensional-growth pattern $1 \to 2 \to 3$ as the stabiliser shrinks $\Icoh \to \Dfive \to \Cs$ is the central physical insight of OPEN-FP-F1-5: \textbf{the strong parallel-to-$\nhat$ substrate-locality of F.1 Theorem~7.1 is a vertex-aligned-Reading-C-specific consequence of the maximal residual symmetry $\Icoh$, with monotonic structural weakening as the residual symmetry decreases}.
+
+The proof factors into Lemma~\ref{lem:cs_invariance} ($\Cs$-invariance of $\jDI(\vhost)$ order-by-order via $\Cs$-equivariance of Mechanism~A's rate function under stabilisation of $\nhatperp$) and Lemma~\ref{lem:cs_invariant_subspace} (the $\Cs$-invariant subspace of $\Reals^4$ at $\vhost$ is the 3-dimensional hyperplane perpendicular to $\ui - \uj$, via the direct decomposition $\Reals^4 = \Aprime^{\oplus 3} \oplus \Aprpr^{\oplus 1}$ under $\Cs$). This artifact is the \textbf{thirteenth} of the F.1 Layer~3 hardened-theorem sequence (after Patches 0550 + 0551 + 0552 + 0571 + 0585 + 0587 + 0588 + 0589 + 0590 + 0591 + 0592 + 0596), and the \textbf{second} under the OPEN-FP-F1-5 trajectory (closing Sequence~1B after Sequence~1A's edge-aligned closure at Patch~0596). Per DG-F15-5 default~(A) the result is registered as candidate \textbf{THEO-DSL-8} entry (THEO-DSL-7 is reserved for the Sequence-2A candidate-coefficient closure under (H5$_E$)). An \textbf{anti-erasure remark} (\S\ref{sec:antierasure}) registers a stabiliser-identification discrepancy with \texttt{frontier\_sectors/FP.md} line~230 (which states ``residual $D_2$ symmetry at face centroid'') -- the correct stabiliser under the vertex-host convention (preserved from Sequence-1A precedent) is $\Cs$ of order~2, not $D_2$ of order~4; under the alternative face-centroid-host convention the stabiliser would be $D_3$ of order~6.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+\subsection{Background and continuity with Sequence~1A}\label{subsec:background}
+
+The OPEN-FP-F1-5 trajectory opened at Patch~0595 with a scoping document identifying three Reading-C variants (vertex-aligned, edge-aligned, face-aligned) and proposing a Sequence-1 (symmetry-only structural) + Sequence-2 (closed-form coefficient) trajectory structure for each non-vertex-aligned variant. The Session~146 open decision-gate bundle DG-F15-1 default~(C) accepted by Thomas requires front-loading both Sequence-1 structural findings before either Sequence-2 coefficient enumeration. Sequence-1A (edge-aligned) closed at Patch~0596 with a 2-dimensional invariant subspace finding under $\Dfive$ stabiliser. The present Patch~0597 closes Sequence-1B (face-aligned), completing DG-F15-1 (C)'s priority of having both Sequence-1 structural findings in hand before proceeding to Sequence-2 coefficient work.
+
+The face-aligned variant is the most aggressive symmetry-breaking step from vertex-aligned among the three Reading-C variants, and the structural finding is correspondingly the weakest constraint on $\jDI(\vhost)$. Whether this conclusively establishes vertex-aligned Reading C as the uniquely structurally-strong variant is the substantive question addressed by Theorem~\ref{thm:main} below.
+
+\subsection{Setup and host-convention selection}\label{subsec:setup}
+
+Per Sequence-1A precedent (Patch~0596 \S{}1.2), we preserve the vertex-host convention: $\vhost$ remains a 600-cell vertex (not a face-centroid). The Reading-C primitive $\nhat$ varies among the three Reading-C choices only in its \emph{direction} at $\vhost$, while the host point itself remains a 600-cell vertex throughout the F.1 substrate-locality framework. This is consistent with F.1 v1.0's vertex-host scope and avoids cross-host complications from the moved-host alternative.
+
+\textbf{Choice of face.} Choose a triangular face $F = \{\vhost, \ui, \uj\}$ of the 600-cell incident to $\vhost$, where $\ui$ and $\uj$ are two adjacent first-shell neighbours of $\vhost$ that are themselves adjacent to each other (forming the face). The 600-cell has $1200/120 \cdot 3 / 1 = 30$ triangular faces incident to each vertex, by orbit-stabiliser; the choice of face is arbitrary and the structural conclusion is face-independent by transitivity of $\Icoh$ on faces incident to $\vhost$.
+
+\textbf{Face-perpendicular direction.} The face-aligned Reading-C primitive is
+\begin{equation}\label{eq:nperp}
+\nhatperp \;:=\; \frac{F_\perp}{|F_\perp|}, \qquad F_\perp \text{ a unit vector in } \Reals^4 \text{ perpendicular to the 2D affine face plane through } F.
+\end{equation}
+The 2D affine face plane is determined by $\{\vhost, \ui, \uj\}$; its perpendicular complement in $\Reals^4$ is 2D. By the 600-cell's symmetry, the natural choice of $\nhatperp$ is the direction from the polytope centre to the face centroid; equivalently, $\nhatperp \propto (\vhost + \ui + \uj)/3$ normalised. Under this convention $\nhatperp$ is orthogonal to the in-face direction $\ui - \uj$ and to the in-face axis $\nhatmid$ defined below.
+
+\textbf{Radial direction at host.} As in Sequence-1A:
+\begin{equation}\label{eq:nrho}
+\nhatrho \;:=\; \vhost/|\vhost| \;=\; \vhost \quad \text{(under (H2) unit-vertex normalisation)}.
+\end{equation}
+
+\textbf{In-face axis at host.} The third distinguished direction at $\vhost$ relevant to the face-aligned setup is the in-face direction from $\vhost$ toward the midpoint $(\ui + \uj)/2$ of the face's non-host edge:
+\begin{equation}\label{eq:nmid}
+\nhatmid \;:=\; \frac{(\ui + \uj) - 2\vhost}{|(\ui + \uj) - 2\vhost|}.
+\end{equation}
+This is a unit vector tangent to $S^3$ at $\vhost$, in the face plane, and perpendicular to $\ui - \uj$ (the within-face edge connecting the two non-host face vertices).
+
+\subsection{Stabiliser identification}\label{subsec:stabiliser}
+
+\textbf{Stabiliser of $\vhost$ + chosen face.} The stabiliser in $\Icoh$ of the unordered face $F = \{\vhost, \ui, \uj\}$ (i.e., the subgroup of $\Icoh = \text{stab}_{\Hfour}(\vhost)$ that maps $F$ to itself as a set) is computed via orbit-stabiliser. With $|\Icoh| = 120$ and 30~faces incident to $\vhost$, the unordered-face stabiliser has order $120/30 = 4$. This is a $V_4$ (Klein four-group) structure: identity, $C_2$ rotation around the in-face axis from $\vhost$ to edge-midpoint, reflection in the plane containing $\vhost$ and the radial direction perpendicular to $\ui - \uj$, and reflection in the face plane itself.
+
+\textbf{Subgroup preserving oriented $\nhatperp$.} Among the four $V_4$ elements, two flip $\nhatperp \to -\nhatperp$ (those whose action on the face's 2D orthogonal complement includes a flip) and two preserve $\nhatperp$ direction. The two $\nhatperp$-preserving elements are:
+\begin{itemize}[leftmargin=*]
+    \item Identity $e$;
+    \item The reflection $\sigma_E$ in the 3-hyperplane perpendicular to $\ui - \uj$ through the midpoint of $\{\ui, \uj\}$. This reflection swaps $\ui \leftrightarrow \uj$, fixes $\vhost$ (because $\vhost$ is equidistant from $\ui$ and $\uj$), and preserves $\nhatperp$ direction (because the reflection's fixed 3-hyperplane contains $\nhatperp$).
+\end{itemize}
+The stabiliser of $\vhost + \nhatperp$ is therefore
+\begin{equation}\label{eq:Cs_def}
+\Cs \;=\; \{e,\,\sigma_E\}, \qquad |\Cs| \;=\; 2.
+\end{equation}
+This is the elementary mirror group $\Cs$ in Schoenflies notation, the smallest non-trivial point group.
+
+\textbf{Decomposition of $\Reals^4$ at $\vhost$ under $\Cs$.} The reflection $\sigma_E$ acts on $\Reals^4|_{\vhost}$ as the linear hyperplane reflection in the 3-dimensional hyperplane $H^{(3)} = (\ui - \uj)^\perp$. Equivalently, $\sigma_E$ is the identity on $H^{(3)}$ and the sign-flip $-1$ on the 1-dimensional line $\Reals(\ui - \uj)$. The four-dimensional representation of $\Cs$ on $\Reals^4|_{\vhost}$ decomposes as
+\begin{equation}\label{eq:Cs_decomp}
+\Reals^4 \big|_{\vhost} \;=\; \underbrace{H^{(3)}}_{\Aprime^{\oplus 3}} \;\oplus\; \underbrace{\Reals(\ui - \uj)}_{\Aprpr^{\oplus 1}},
+\end{equation}
+where $\Aprime$ is the trivial 1-dimensional representation (fixed by $\sigma_E$) and $\Aprpr$ is the non-trivial 1-dimensional representation (flipped by $\sigma_E$). The trivial representation $\Aprime$ has multiplicity~3 in $\Reals^4|_{\vhost}$ under $\Cs$.
+
+\textbf{Three-vector basis for the invariant subspace.} A natural orthogonal basis for the 3-dimensional $\Cs$-invariant subspace $H^{(3)} = (\ui - \uj)^\perp$ at $\vhost$ is $\{\nhatrho,\,\nhatmid,\,\nhatperp\}$:
+\begin{itemize}[leftmargin=*]
+    \item \emph{$\nhatrho \in H^{(3)}$}: $\nhatrho \cdot (\ui - \uj) = \vhost \cdot \ui - \vhost \cdot \uj$. Since $\ui$ and $\uj$ are both first-shell neighbours of $\vhost$ at the same distance $1/\phi$, $\vhost \cdot \ui = \vhost \cdot \uj$ by symmetry, hence $\nhatrho \perp (\ui - \uj)$. ✓
+    \item \emph{$\nhatmid \in H^{(3)}$}: $\nhatmid \propto (\ui + \uj - 2\vhost)$, and $(\ui + \uj) \cdot (\ui - \uj) = |\ui|^2 - |\uj|^2 = 1 - 1 = 0$, plus $\vhost \cdot (\ui - \uj) = 0$ as above. ✓
+    \item \emph{$\nhatperp \in H^{(3)}$}: $\nhatperp$ is by construction perpendicular to the face plane, which contains $\ui - \uj$. ✓
+    \item \emph{Linear independence}: $\nhatrho$ along $\vhost$ (one specific vertex direction); $\nhatmid$ tangent to $S^3$ at $\vhost$, in the face plane; $\nhatperp$ perpendicular to the face plane. These span three mutually orthogonal directions in $\Reals^4$. ✓
+\end{itemize}
+
+\textbf{Conclusion of setup.} The space of $\Cs$-invariant vectors in $\Reals^4$ at $\vhost$ is the 3-dimensional hyperplane
+\begin{equation}\label{eq:Sigma_def}
+\Sigma_{\Cs} \;:=\; (\ui - \uj)^\perp \;=\; \operatorname{span}\bigl\{\nhatrho,\,\nhatmid,\,\nhatperp\bigr\}.
+\end{equation}
+
+\subsection{Main theorem}\label{subsec:main_theorem}
+
+\begin{theorem}[Face-Aligned Invariant-Subspace Structural Theorem]\label{thm:main}
+Under hypotheses \emph{(H1$_F$)--(H5$_F$)} as stated in \S\ref{sec:hypotheses}, the net DI-bit current at the host vertex $\vhost$ at every non-zero order $k \geq 1$ in the Mechanism~A perturbation parameter $\delta$ lies in the 3-dimensional $\Cs$-invariant subspace of $\Reals^4$ at $\vhost$:
+\begin{equation}\label{eq:main_result}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \;\in\; \Sigma_{\Cs} \;=\; \operatorname{span}\bigl\{\nhatrho,\,\nhatmid,\,\nhatperp\bigr\} \qquad \text{for all } k \geq 1.
+\end{equation}
+Equivalently, there exist real coefficients $\alpha_k^{(\rho)}$, $\alpha_k^{(\text{ax})}$, $\alpha_k^{(\perp)}$ such that
+\begin{equation}\label{eq:three_coeffs}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \;=\; \alpha_k^{(\rho)}\,\nhatrho \;+\; \alpha_k^{(\text{ax})}\,\nhatmid \;+\; \alpha_k^{(\perp)}\,\nhatperp.
+\end{equation}
+The only symmetry-forced constraint is that the $\ui - \uj$ component of $\jDI(\vhost)|_{\Oof{\delta^k}}$ vanishes identically.
+\end{theorem}
+
+This is the weakest of the three Reading-C variants' structural constraints. The symmetry-only argument constrains $\jDI(\vhost)$ to a 3D hyperplane out of $\Reals^4$, leaving 3 of 4 degrees of freedom. Whether the radial coefficient $\alpha_k^{(\rho)}$, the in-face axis coefficient $\alpha_k^{(\text{ax})}$, and/or the face-perpendicular coefficient $\alpha_k^{(\perp)}$ are further forced to vanish (or take specific relations) by Mechanism~A framework-axiom-level constraints is the substantive open question for any future Sequence-2B coefficient enumeration. This is registered as exclusion class~E5 in \S\ref{sec:exclusion}.
+
+\section{Hypotheses}\label{sec:hypotheses}
+
+\begin{description}
+\item[(H1$_F$) Face-aligned Reading C:] The substrate-direction primitive $\nhat$ is identified with $\nhatperp$ of \eqref{eq:nperp}, the unit vector at $\vhost$ perpendicular to the chosen triangular face $F = \{\vhost, \ui, \uj\}$, oriented from polytope centre to face centroid.
+\item[(H2) 600-cell unit-vertex normalisation:] $|\vhost| = 1$; first-shell neighbours $\ui, \uj$ at distance $1/\phi$ from $\vhost$; standard 600-cell short-edge normalisation.
+\item[(H3$_F$) Face-aligned residual symmetry:] The residual symmetry group at $\vhost$ for the face-aligned reading is $\Cs = \{e, \sigma_E\}$ as identified in \S\ref{subsec:stabiliser}. The single non-trivial element $\sigma_E$ is the hyperplane reflection in the 3-hyperplane $(\ui - \uj)^\perp$ through the midpoint of $\{\ui, \uj\}$.
+\item[(H4) F.1 v1.0 Theorem~6.1 perturbation-locality:] As in Sequence-1A (Patch~0596 / THEO-DSL-1 / Patch~0550), inherited without modification.
+\item[(H5$_F$) Mechanism~A perturbation at face-aligned $\nhat$:] Each oriented edge $\hat{e}$ of the 600-cell edge graph carries the Mechanism~A rate
+\begin{equation}\label{eq:H5F}
+r(\hat{e}) \;=\; r_0\bigl(1 + \delta\,\hat{e}\cdot\nhatperp\bigr)
+\end{equation}
+at first order in $\delta$, with $\Oof{\delta^k}$ extension construed via the standard path-integral perturbation-theory machinery per DG-F15-4 default~(A) at sketch level.
+\end{description}
+
+The hypothesis structure is parallel to Sequence-1A (Patch~0596 \S{}2), with $\nhatperp$ substituted for $\nhatedge$, $\Cs$ substituted for $\Dfive$, and (H1$_F$, H3$_F$, H5$_F$) substituted for the edge-aligned variants. (H2) and (H4) are unchanged.
+
+\section{Lemma~1: $\Cs$-equivariance of the substrate current at $\vhost$}\label{sec:lemma1}
+
+\begin{lemma}[Order-by-order $\Cs$-invariance]\label{lem:cs_invariance}
+Under (H1$_F$)--(H5$_F$), for every $k \geq 0$,
+\begin{equation}\label{eq:cs_inv}
+\sigma_E \cdot \jDI(\vhost)\big|_{\Oof{\delta^k}} \;=\; \jDI(\vhost)\big|_{\Oof{\delta^k}}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The argument follows the three-step pattern of Patch~0596 Lemma~1 (which used $\Dfive$-equivariance) with $\Cs$ substituted for $\Dfive$. The proof is shorter because $\Cs$ has only one non-trivial element $\sigma_E$ to verify.
+
+\textbf{Step 1 ($\sigma_E$-equivariance of the rate function).} Mechanism~A's rate function on each oriented edge $\hat{e}$ is $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhatperp)$ per (H5$_F$) / \eqref{eq:H5F}. The reflection $\sigma_E$ preserves $\nhatperp$ direction by construction (\S\ref{subsec:stabiliser}). For any oriented edge $\hat{e}$ of the 600-cell edge graph, $\sigma_E\hat{e}\cdot\nhatperp = \hat{e}\cdot\sigma_E^{-1}\nhatperp = \hat{e}\cdot\nhatperp$ (using $O(4)$-invariance of the inner product and $\sigma_E^{-1}\nhatperp = \nhatperp$). Therefore
+\begin{equation}\label{eq:rate_eq}
+r(\sigma_E\hat{e}) \;=\; r_0\bigl(1 + \delta\,\sigma_E\hat{e}\cdot\nhatperp\bigr) \;=\; r_0\bigl(1 + \delta\,\hat{e}\cdot\nhatperp\bigr) \;=\; r(\hat{e}).
+\end{equation}
+
+\textbf{Step 2 ($\sigma_E$-permutation of the path set).} $\sigma_E \in \Cs \subset \Icoh = \text{stab}_{\Hfour}(\vhost)$, so $\sigma_E$ acts on the 600-cell edge graph $\Gsixcell$ as a graph automorphism fixing $\vhost$. By (H4) shell-locality, $\sigma_E \cdot \Ek(\vhost) = \Ek(\vhost)$ as edge sets, hence $\sigma_E$ permutes the path set $\mathcal{P}_k(\vhost)$ as a finite set:
+\begin{equation}\label{eq:path_perm}
+\sigma_E: \mathcal{P}_k(\vhost) \to \mathcal{P}_k(\vhost), \qquad P \mapsto \sigma_E P.
+\end{equation}
+
+\textbf{Step 3 ($O(4)$-equivariance of edge-direction vectors).} For each path $P \in \mathcal{P}_k(\vhost)$, the directed edge-displacement contribution $\vec{d}(P) \in \Reals^4$ satisfies $\vec{d}(\sigma_E P) = \sigma_E \cdot \vec{d}(P)$ by the orthogonal action of $\sigma_E \subset O(4)$ on $\Reals^4$ at $\vhost$.
+
+\textbf{Combining the three steps.} As in Patch~0596 Lemma~1, the substrate current $\Oof{\delta^k}$ sum over paths is re-indexed by the $\sigma_E$ action, giving $\sigma_E \cdot \jDI(\vhost)|_{\Oof{\delta^k}} = \jDI(\vhost)|_{\Oof{\delta^k}}$, which is \eqref{eq:cs_inv}.
+\end{proof}
+
+\textbf{Remark on robustness.} The proof uses only $\Cs$-equivariance of Mechanism~A's rate function and $\Cs$-permutation of the path set. As with Patch~0596, the argument is robust across DG-F15-4 sub-options~A (default path-integral), B (alternative framework-axiom MA.3), and C (Layer~4 derivation), since only $\Cs$-equivariance of the path-integral construction is required.
+
+\section{Lemma~2: The $\Cs$-invariant subspace of $\Reals^4$ at $\vhost$}\label{sec:lemma2}
+
+\begin{lemma}[$\Cs$-invariant subspace identification]\label{lem:cs_invariant_subspace}
+Under (H1$_F$)--(H3$_F$), the subspace of $\Cs$-invariant vectors in $\Reals^4$ at $\vhost$ is the 3-dimensional hyperplane
+\begin{equation}\label{eq:Sigma_value}
+\Sigma_{\Cs} \;=\; (\ui - \uj)^\perp \;=\; \operatorname{span}\bigl\{\nhatrho,\,\nhatmid,\,\nhatperp\bigr\}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The argument is direct from the decomposition \eqref{eq:Cs_decomp}: $\Reals^4|_{\vhost}$ decomposes under $\Cs$ as $\Aprime^{\oplus 3} \oplus \Aprpr^{\oplus 1}$, where the trivial representation $\Aprime$ has multiplicity~3 occupying the hyperplane $(\ui - \uj)^\perp$ and the non-trivial representation $\Aprpr$ has multiplicity~1 occupying the line $\Reals(\ui - \uj)$. The space of $\Cs$-invariant vectors is exactly the multiplicity space of $\Aprime$, which is the 3-dimensional hyperplane $(\ui - \uj)^\perp$. The basis $\{\nhatrho, \nhatmid, \nhatperp\}$ for this hyperplane was verified at \S\ref{subsec:stabiliser}: each of these three directions is in $(\ui - \uj)^\perp$ (verified inner products) and they are mutually linearly independent (radial vs.\ in-face-axis vs.\ face-perpendicular).
+
+Equivalently via character calculation: $\Cs$ has two irreducible representations $\Aprime$ (1-dimensional trivial, $\chi(e) = 1, \chi(\sigma_E) = 1$) and $\Aprpr$ (1-dimensional sign, $\chi(e) = 1, \chi(\sigma_E) = -1$). On $\Reals^4|_{\vhost}$, the character is $\chi(e) = 4$, $\chi(\sigma_E) = \text{trace}(\sigma_E) = 3 - 1 = 2$ (three $+1$ eigenvalues from the 3-hyperplane fixed by reflection plus one $-1$ from the reflected line). The multiplicity of $\Aprime$ is $m_{\Aprime} = (1\cdot 4 + 1\cdot 2)/2 = 3$. The multiplicity of $\Aprpr$ is $m_{\Aprpr} = (1\cdot 4 + (-1)\cdot 2)/2 = 1$. Sum $3 + 1 = 4 = \dim \Reals^4$. ✓
+\end{proof}
+
+\section{Main proof of Theorem~\ref{thm:main}}\label{sec:main_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+By Lemma~\ref{lem:cs_invariance}, $\jDI(\vhost)|_{\Oof{\delta^k}}$ is $\Cs$-invariant for every $k \geq 1$. By Lemma~\ref{lem:cs_invariant_subspace}, the $\Cs$-invariant subspace of $\Reals^4|_{\vhost}$ is $\Sigma_{\Cs} = \operatorname{span}\{\nhatrho, \nhatmid, \nhatperp\}$. Therefore $\jDI(\vhost)|_{\Oof{\delta^k}} \in \Sigma_{\Cs}$, which is \eqref{eq:main_result}. The decomposition \eqref{eq:three_coeffs} follows from the 3-dimensionality of $\Sigma_{\Cs}$ and the chosen basis.
+\end{proof}
+
+\begin{corollary}[All-orders invariant-subspace strengthening]\label{cor:all_orders}
+As in Sequence-1A, the hypotheses (H1$_F$)--(H5$_F$) make no use of $k = 2$ specifically; the invariant-subspace conclusion holds at every $k \geq 1$. The full formal $\delta$-power series at $\vhost$ is contained in $\Sigma_{\Cs}$ order-by-order:
+\begin{equation}
+\jDI(\vhost; \delta) \;=\; \sum_{k \geq 1} \delta^k \bigl(\alpha_k^{(\rho)}\,\nhatrho + \alpha_k^{(\text{ax})}\,\nhatmid + \alpha_k^{(\perp)}\,\nhatperp\bigr).
+\end{equation}
+Any future Sequence-2B coefficient enumeration under (H5$_F$) may impose this 3-vector ansatz from the outset, reducing the computational target from a 4-vector to three scalars $\alpha_k^{(\rho)}, \alpha_k^{(\text{ax})}, \alpha_k^{(\perp)}$ at each order $k$.
+\end{corollary}
+
+\section{Three-variant comparison table and the dimensional-growth pattern}\label{sec:comparison}
+
+The completed Sequence-1 work across both non-vertex-aligned variants now allows the full three-variant comparison:
+
+\begin{center}
+\begin{tabular}{lcll}
+\textbf{Reading C variant} & \textbf{Stabiliser} & \textbf{Order} & \textbf{Invariant subspace of $\Reals^4|_{\vhost}$} \\
+\hline
+Vertex-aligned (THEO-DSL-4 / Patch 0585) & $\Icoh$ & 120 & $\Reals\nhatrho$ (1D) \\
+Edge-aligned (THEO-DSL-6 / Patch 0596) & $\Dfive$ & 10 & $\operatorname{span}\{\nhatrho, \nhatedge\}$ (2D) \\
+Face-aligned (THEO-DSL-8 / Patch 0597; this artifact) & $\Cs$ & 2 & $\operatorname{span}\{\nhatrho, \nhatmid, \nhatperp\}$ (3D) \\
+\end{tabular}
+\end{center}
+
+\textbf{The dimensional-growth pattern.} The invariant subspace dimension grows monotonically as the stabiliser shrinks: $1 \to 2 \to 3$ as the stabiliser order falls $120 \to 10 \to 2$. The pattern is consistent with the group-theoretic principle that the multiplicity of the trivial representation in the standard 4D representation of $G \subset O(4)$ grows as $G$ shrinks; in the extreme case $G = \{e\}$ all four dimensions would be ``$\Aprime$-trivial'' and the invariant subspace would be the entire $\Reals^4$.
+
+\textbf{Vertex-aligned uniqueness.} The 1-dimensional invariant subspace at vertex-aligned Reading C is the only one of the three that produces a strict parallel-to-$\nhat$ structure for the substrate current $\jDI(\vhost)$. The 2-dimensional edge-aligned invariant subspace admits a radial-component degree of freedom; the 3-dimensional face-aligned invariant subspace admits two additional in-face degrees of freedom. The substrate-locality umbrella theorem of F.1 (Theorem~7.1) is therefore a vertex-aligned-Reading-C-specific consequence of the maximal residual symmetry $\Icoh$. \textbf{This converges with Capotauro v2.0's vertex-aligned-uniqueness selection at Q1$'$+Q1$'$.A (Patch~0419 Finding C-W37) at the F.1 temporal-sector level}: under non-vertex-aligned Reading-C variants, the substrate-locality structure substantively weakens.
+
+\textbf{Cross-sector consistency.} Both Capotauro v2.0 (spatial-sector chirality) and F.1 (temporal-sector substrate-locality) now have established structural uniqueness arguments for vertex-aligned Reading C: Capotauro at the cage-shell averaging factor level ($\chi/6$ specific to $\Icoh$-equivariant cage-shell sums) and F.1 at the parallel-to-$\nhat$ substrate-current level. The two arguments converge on the same conclusion through structurally distinct routes, strengthening the Reading-C selection.
+
+\section{Anti-erasure remarks}\label{sec:antierasure}
+
+\subsection{Anti-erasure: stabiliser at face-aligned Reading C relative to FP.md}\label{subsec:antierasure_FPmd}
+
+\begin{remark}[Anti-erasure: stabiliser at face-aligned Reading C]\label{rem:antierasure_stabiliser}
+The frontier-sector entry \texttt{frontier\_sectors/FP.md} line~230 states, for the face-aligned Reading-C variant: ``residual $D_2$ symmetry at face centroid.'' This identification is incorrect under the vertex-host convention (preserved from Sequence-1A precedent, Patch~0596) and is registered openly per the CPP programme's anti-erasure discipline (cf.\ Patches~0596 Remark~5.1 + 5.2; precedent Patches 0587 + 0590 + 0591):
+
+\begin{enumerate}[label=(\arabic*)]
+    \item \textbf{Incorrect group identification under vertex-host convention.} Under the vertex-host convention (the natural F.1-paper-consistent choice), the stabiliser of $\vhost$~+~$\nhatperp$ direction is $\Cs$ of order~2, not $D_2$ of order~4. The order-2 stabiliser consists of the identity plus the single edge-swap reflection $\sigma_E$ in the 3-hyperplane $(\ui - \uj)^\perp$.
+    \item \textbf{Alternative interpretation under face-centroid-host convention.} If instead the host were taken to be the face centroid (not a 600-cell vertex), the stabiliser of the centroid~+~$\nhatperp$ would be the full $D_3$ of order~6 (the triangle symmetry group acting on the 3 face vertices, with the face-perp direction preserved). However, this alternative interpretation breaks the F.1-paper-consistent vertex-host convention and introduces cross-host complications (different graph structure, different shell decomposition, modified (H4) graph-extension); it was rejected at Patch~0595 \S{}1.2 and at \S\ref{subsec:setup} of the present Patch.
+    \item \textbf{Neither identification matches FP.md's ``$D_2$''.} Neither $\Cs$ (vertex-host) nor $D_3$ (face-centroid-host) matches the FP.md ``$D_2$'' label. The error is registered here without silent correction; the follow-on registry-propagation Patch (candidate 0597a) will update FP.md line~230 to reflect $\Cs$ at face-aligned under the vertex-host convention.
+\end{enumerate}
+
+The substantive structural conclusion of Theorem~\ref{thm:main} (3-dimensional $\Cs$-invariant subspace = $(\ui - \uj)^\perp$) is specific to the vertex-host convention and the corrected $\Cs$ stabiliser identification.
+\end{remark}
+
+\subsection{Anti-erasure: vertex-host convention consistency}\label{subsec:vertex_host_consistency}
+
+\begin{remark}[Vertex-host convention preserved across all three Reading-C variants]\label{rem:vertex_host}
+The three Reading-C variant artifacts (Patches~0585, 0596, 0597) all preserve the vertex-host convention with $\vhost$ as a 600-cell vertex; the variation is in the choice of $\nhat$ direction at the host. This is the natural F.1-paper-consistent setup and avoids cross-host complications. The alternative face-centroid-host setup (or edge-midpoint-host setup) is a separate research question not addressed by the present OPEN-FP-F1-5 trajectory; if pursued, it would constitute a new Open Problem (potentially OPEN-FP-F1-7 or similar) registered separately. The present Patch closes OPEN-FP-F1-5 Sequence-1B under the vertex-host convention only.
+\end{remark}
+
+\section{Five-class exclusion enumeration}\label{sec:exclusion}
+
+\paragraph{(E1) Sequence-2B coefficient sub-question NOT closed.} Theorem~\ref{thm:main} is symmetry-only and does not compute the closed-form coefficients $\alpha_k^{(\rho)}, \alpha_k^{(\text{ax})}, \alpha_k^{(\perp)}$. Coefficient computation under (H5$_F$) is the target of Sequence-2B (Patches~0598+).
+
+\paragraph{(E2) Edge-aligned variant separately closed.} The edge-aligned Reading-C analog is the target of Sequence-1A (Patch~0596 / THEO-DSL-6) and is now CLOSED at publication-grade Layer~3 unconditional. Both Sequence-1 structural findings (edge-aligned 2D, face-aligned 3D) are now in hand, completing DG-F15-1 default-(C) priority.
+
+\paragraph{(E3) (H5$_F$) framework-extension at sketch-document Layer~3.} As with (H5) and (H5$_E$), the Mechanism~A perturbation at $\Oof{\delta^k}$ for $k \geq 2$ under (H5$_F$) is at sketch-document Layer~3 per DG-F15-4 default~(A). Publication-grade hardening of (H5$_F$) is a follow-on question parallel to the F1-1 priority queue item~(G).
+
+\paragraph{(E4) Layer~4 axiomatic derivation NOT in scope.} Inherits the shared scope-line of the F.1 Layer~3 hardened-theorem sequence: OPEN-FP-F1-2 is the long-term programme target. MA.1 + MA.2 are taken as framework axioms.
+
+\paragraph{(E5) Three-coefficient question open at framework-axiom level.} Theorem~\ref{thm:main}'s 3-dimensional invariant subspace admits three substantive coefficients $\alpha_k^{(\rho)}, \alpha_k^{(\text{ax})}, \alpha_k^{(\perp)}$ on symmetry grounds alone. Whether any of these are independently forced to vanish, or whether they satisfy specific relations beyond symmetry (e.g.\ via cage-shell-averaging considerations at the framework level, or via explicit path-class enumeration under (H5$_F$)), is NOT addressed by the present artifact and is the natural substantive target of Sequence-2B's coefficient enumeration. The substantive richness of the open question is greater for face-aligned than edge-aligned (three coefficients vs.\ two; cf.\ Patch~0596 E5).
+
+\section{Cross-trajectory linkage and registration}\label{sec:registration}
+
+\textbf{Cross-trajectory linkage.} This artifact is the \textbf{thirteenth} in the F.1 Layer~3 hardened-theorem sequence. Combined approximate length across the thirteen \texttt{.tex} artifacts is now $\sim$4{,}230 lines LaTeX. The OPEN-FP-F1-5 trajectory now has two structural theorems closed at publication-grade Layer~3 unconditional (THEO-DSL-6 + THEO-DSL-8 candidates); the four-artifact trajectory completion estimated at Patch~0595 \S{}1.2 is approximately at its midpoint (2 of 4 Patches landed; 2 Sequence-2 coefficient Patches remaining).
+
+\textbf{Theorem-registry naming.} Per DG-F15-5 default~(A), the present result is registered as candidate \textbf{THEO-DSL-8} entry. (THEO-DSL-7 is reserved for the Sequence-2A candidate-coefficient closure at the edge-aligned variant; the registry slot ordering preserves the (structural, coefficient) pairing convention: THEO-DSL-6 + THEO-DSL-7 for edge-aligned, THEO-DSL-8 + THEO-DSL-9 for face-aligned.) Registry propagation to \texttt{theorem-registry.md} + \texttt{frontier\_sectors/FP.md} (including the stabiliser-identification correction per Remark~\ref{rem:antierasure_stabiliser}) + \texttt{master\_glossary.md} (new term entries for $\nhatperp$, $\nhatmid$, $\Cs$, face-aligned Reading C, Sequence-1B) is deferred to a follow-on registry-propagation Patch (candidate 0597a).
+
+\textbf{Cross-sector cross-check.} The face-aligned variant's 3-dimensional invariant subspace represents the weakest structural constraint of the three variants. Combined with Capotauro v2.0's vertex-aligned-uniqueness selection, the face-aligned variant emerges as structurally inadequate for substrate-locality in both the spatial sector (Capotauro chirality-matrix-element selection) and the temporal sector (F.1 substrate-current direction). This cross-sector convergence on vertex-aligned uniqueness through structurally distinct routes is the central physical result of the present Patch.
+
+\section{Falsifier and honest scope-limitation framing}\label{sec:falsifier}
+
+\textbf{Falsifier.} Demonstration of $\jDI(\vhost)|_{\Oof{\delta^k}}$ having a component along $\ui - \uj$ at any order $k \geq 1$, from a valid first-principles $\Cs$-equivariant calculation under (H1$_F$)--(H5$_F$), would contradict Lemma~\ref{lem:cs_invariant_subspace}'s identification of the $\Cs$-invariant subspace as $(\ui - \uj)^\perp$. Equivalently, demonstration that Mechanism~A's $\Cs$-equivariance under (H1$_F$)~+~(H3$_F$) fails at any order would contradict Lemma~\ref{lem:cs_invariance}.
+
+\textbf{Honest scope-limitation framing.} Theorem~\ref{thm:main} closes the structural component of OPEN-FP-F1-5 Sequence-1B only; it constrains $\jDI(\vhost)|_{\Oof{\delta^k}}$ to a 3D hyperplane without determining the relative weighting of $\nhatrho, \nhatmid, \nhatperp$ components. The coefficient sub-question (E1) is the target of Sequence-2B; the three-coefficient relative-magnitude question (E5) is open at the framework-axiom level. The (H5$_F$) framework-extension qualifier applies only to follow-on Sequence-2B coefficient work; the present Sequence-1B result is publication-grade Layer~3 unconditional under the vertex-host convention (Remark~\ref{rem:vertex_host}).
+
+\section{References}\label{sec:references}
+
+\textbf{Internal references.} Inherits the reference set of Patch~0596 \S{}9 (F.1 v1.0 paper; THEO-DSL-1 through THEO-DSL-6 candidate; eleven prior hardened-theorem artifacts; scoping document Patch~0595; FP.md OPEN-FP-F1-5 entry). The present artifact adds:
+\begin{itemize}[leftmargin=*]
+    \item Patch~0596 / \texttt{edge\_aligned\_invariant\_subspace\_structural.tex}: Sequence-1A predecessor establishing THEO-DSL-6 candidate (edge-aligned 2D invariant subspace under $\Dfive$).
+\end{itemize}
+
+\textbf{Cross-paper context.} Capotauro v2.0 \S{}2.3 + Patch 0419 Finding C-W37 (Reading-C three-variant framing; vertex-aligned selection). The present Patch's face-aligned 3D invariant subspace result strengthens Capotauro's vertex-aligned-uniqueness selection at the F.1 substrate-locality level.
+
+\textbf{Polytope theory.} Coxeter, H.\ S.\ M.\ \emph{Regular Polytopes} (3rd ed., Dover, 1973): standard 600-cell face structure (1200~triangular faces; 30 faces per vertex via orbit-stabiliser on $\Icoh$).
+
+\end{document}
