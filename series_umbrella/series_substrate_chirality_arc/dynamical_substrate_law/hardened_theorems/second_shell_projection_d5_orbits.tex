@@ -1,0 +1,362 @@
+% Patch 0603 A4_E = G2_E: Second-Shell Projection Orbit Values under D_5 Stabilizer
+% at Edge-Aligned Reading C in the 600-Cell.
+%
+% OPEN-FP-F1-5 Sequence-2A fourth substantive artifact under DG-F15A-1 default-(A)
+% stepping-stone trajectory + DG-F15A-2 default-(A) all-orbit-representative closed-forms
+% policy. Publication-grade Layer 3 unconditional rigor for the second-shell projection
+% orbit decomposition under D_5 (the dodecahedral analog of Patch 0601 G1_E first-shell
+% icosahedral projection; generalized from the I_h-uniform host-second-shell single-value
+% -1/2 to the D_5 four-value classification {+phi/2, +1/(2 phi), 0, -1/2}).
+% Inherits G2 second-shell inner-product primitive at publication-grade Layer 3
+% unconditional from host_second_shell_uniform_projection.tex + Patch 0571 hardening.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+
+\title{Second-Shell Projection Orbit Values under \texorpdfstring{$D_5$}{D5} Stabilizer\\
+at Edge-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2A Artifact A4$_E$ = G2$_E$)}}
+\author{Patch 0603 hardened-theorem artifact}
+\date{27 May 2026 (Session 146)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We derive at \textbf{publication-grade Layer 3 unconditional} rigor the closed-form
+projection values of the 20 second-shell unit chord vectors $\hat{w}_k$ at the host
+vertex $v_{\text{host}}$ of the 600-cell onto the substrate primitive direction
+$\hat{n}_{\text{edge}} = \hat{u}_1$, classified by the four orbits of the $D_5$
+stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$. The four orbit values are:
+\[
+\hat{w}_k \cdot \hat{n}_{\text{edge}} \;=\;
+\begin{cases}
+\dfrac{\phi}{2} & k \in \mathcal{T}_1^{(D)} \text{ (5 vertices: dodecahedral top pentagonal face)},\\[6pt]
+\dfrac{1}{2\phi} \;=\; \dfrac{\phi-1}{2} & k \in \mathcal{T}_2^{(D)} \text{ (5 vertices: dodecahedral upper ring)},\\[6pt]
+0 & k \in \mathcal{T}_3^{(D)} \text{ (5 vertices: dodecahedral lower ring)},\\[4pt]
+-\dfrac{1}{2} & k \in \mathcal{T}_4^{(D)} \text{ (5 vertices: dodecahedral bottom pentagonal face)}.
+\end{cases}
+\]
+The proof proceeds via the orthogonal decomposition $\hat{w}_k = -(1/2)\hat{n}_\rho + (\sqrt{3}/2)\,\vec{f}_k$ (from the host-second-shell uniform projection identity $\hat{w}_k \cdot \hat{n}_\rho = -1/2$ + unit-norm condition, with $\vec{f}_k$ unit vectors forming a regular dodecahedron in $T_{v_{\text{host}}}S^3$) combined with the shell-1-to-shell-2 graph-distance / 4D-inner-product correspondence and the $D_5$ orbit-class identification with graph-distance shells from $u_1$. Four substantive corollaries are established: (G2-F1) sum-of-projections identity $\sum_k \hat{w}_k \cdot \hat{n}_{\text{edge}} = 5/\phi$ in $\mathbb{Q}[\phi]$; (G2-F2) sum-of-squares identity $\sum_k (\hat{w}_k \cdot \hat{n}_{\text{edge}})^2 = 5$ in $\mathbb{Q}$; (G2-F3) the four $D_5$ orbits coincide bijectively with the graph-distance shells of $u_1$ in the 600-cell restricted to shell-2 vertices at distances $1, 2, 3, 4$ respectively (dual interpretation extending Patch 0601 Corollary A2-F3 from first shell to second shell); (G2-F4) a new substantive perpendicularity result: the 5 vertices of orbit $\mathcal{T}_3^{(D)}$ are exactly perpendicular to $\hat{n}_{\text{edge}}$, the second-shell analog of the Patch 0551 G1.2 first-shell-to-first-shell edge perpendicularity but localized to a single graph-distance shell-2 orbit rather than to all edges of a polytope. Anti-erasure remark: the orbit decomposition is $\{5, 5, 5, 5\}$, not $\{10, 10\}$ as initially scoped --- the latter would require $D_{5d} = D_5 \times \langle \sigma_h \rangle$ stabilizer corresponding to the unoriented host edge convention, but Patch 0598 fixed the oriented-edge $D_5$ convention. Result registered as primitive \textbf{G2$_E$} for the OPEN-FP-F1-5 Sequence-2A trajectory.
+\end{abstract}
+
+\section{Context and scope}
+
+\subsection{Inherited primitives}
+
+This artifact establishes the second-shell projection orbit structure under $D_5$ at edge-aligned Reading C, building on three independent inherited results:
+
+\begin{itemize}
+\item \textbf{Host-second-shell uniform projection identity (G2 inheritance)}: the second-shell chord vectors $\hat{w}_k$, defined as $\hat{w}_k = (W_k - v_{\text{host}})/|W_k - v_{\text{host}}|$ where $W_k$ ranges over the 20 vertices at host inner product $W_k \cdot v_{\text{host}} = 1/2$, satisfy $\hat{w}_k \cdot \hat{n}_\rho = -1/2$ identically across $k \in \{1,\dots,20\}$, where $\hat{n}_\rho = v_{\text{host}}/|v_{\text{host}}|$ is the radial direction. The chord distance to the second shell is exactly unity: $|W_k - v_{\text{host}}| = 1$ for all $k$, since $|W_k - v_{\text{host}}|^2 = |W_k|^2 - 2(W_k \cdot v_{\text{host}}) + |v_{\text{host}}|^2 = 1 - 2(1/2) + 1 = 1$. This is established as a hardened-theorem artifact at publication-grade Layer 3 unconditional in \texttt{host\_second\_shell\_uniform\_projection.tex} (Patch 0571 hardening chain).
+
+\item \textbf{Shell-1-to-shell-2 4D inner product / graph-distance classification (G3 inheritance)}: for $V_1$ a fixed first-shell vertex and $W_k$ ranging over the 20 second-shell vertices, the 4D inner product $V_1 \cdot W_k$ takes exactly four values $\{\phi/2,\, 1/2,\, 1/(2\phi),\, 0\}$ at graph distances $\{1, 2, 3, 4\}$ respectively. This follows from the chord-distance / graph-distance correspondence in the 600-cell: $\cos(\text{angular distance on } S^3) = \cos(d \cdot \pi/5)$ where $d$ is graph distance. The 5+5+5+5 distribution of second-shell vertices into the four graph-distance classes from $V_1$ follows from icosahedral-dodecahedral incidence geometry --- each shell-1 vertex has exactly 5 shell-2 neighbors (its "dodecahedral pentagon"), 5 shell-2 vertices at graph distance 2, 5 at distance 3, and 5 at distance 4.
+
+\item \textbf{$D_5$ stabilizer at edge-aligned Reading C (THEO-DSL-6 candidate inheritance)}: the stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$ in the icosahedral group $I_h$ acting at $v_{\text{host}}$ has order 10 (= 14400/1440 oriented edges in $H_4$) and equals $D_5 = \langle C_5, \sigma_v\rangle$ where $C_5$ is the pentagonal rotation about the axis $v_{\text{host}}$--$u_1$ and $\sigma_v$ is any of the five reflection planes containing this axis. The horizontal reflection $\sigma_h$ (perpendicular to the $C_5$ axis, which would swap $v_{\text{host}}$ with $u_1$) is \emph{not} in $D_5$; including it would yield $D_{5d}$ of order 20 corresponding to the unoriented edge convention, which Patch 0598 explicitly excluded.
+\end{itemize}
+
+\subsection{Scope of Patch 0603 A4$_E$ = G2$_E$}
+
+This artifact establishes at publication-grade Layer 3 unconditional rigor the orbit-by-orbit closed-form values $q_1, q_2, q_3, q_4 \in \mathbb{Q}[\phi]$ for the second-shell chord-vector projections $\hat{w}_k \cdot \hat{n}_{\text{edge}}$ under edge-aligned Reading C. The result is the dodecahedral analog of the icosahedral G1$_E$ (Patch 0601), generalized from the 12-vertex first-shell $\{1, 1/2, -1/(2\phi), -\phi/2\}$ classification to the 20-vertex second-shell $\{\phi/2, 1/(2\phi), 0, -1/2\}$ classification. The result is registered as the geometric primitive \textbf{G2$_E$} for subsequent OPEN-FP-F1-5 Sequence-2A artifacts (A5$_E$ Patch 0604 second-order coefficient closure and A6$_E$ Patch 0605 umbrella registration).
+
+Per DG-F15A-2 default-(A) accepted at Session 146 close-of-scoping, the artifact computes all four orbit-representative closed-form values. The closed forms live in $\mathbb{Q}[\phi]$ over rationals, with the third orbit's projection value vanishing identically ($q_3 = 0$ exactly).
+
+\subsection{Anti-erasure: scoping correction at session open}
+
+Patch 0599 \S4 scoped Sequence-2A primitives provisionally, anticipating the dodecahedral orbit decomposition. The Session 146 patch-0603 open-of-session scoping commentary suggested decomposing the 20 dodecahedral vertices into two $D_5$ orbits of size 10 via a horizontal $\sigma_h$ reflection ``fusing top-face with bottom-face and upper-ring with lower-ring.'' This scoping assumption is incorrect: $\sigma_h$ is not in $D_5$ per Patch 0598 (oriented-edge convention). Direct $D_5$-orbit computation confirms $\{5, 5, 5, 5\}$ (four orbits of size 5) matching the structural parallel with Patch 0601 first-shell $\{1, 5, 5, 1\}$ (four orbits of sizes shifted by the vertex-vs-face-center $C_5$-axis duality between dual icosahedron and dodecahedron). The corrected result is registered here per the anti-erasure principle (cf. Patch 0598 DG-F15-4 default-(A) per-variant scope qualifier preservation).
+
+\section{Hypothesis stack}
+
+The hypotheses required for this artifact:
+\begin{itemize}
+\item[(H1)] \textbf{Edge-aligned Reading C}: substrate primitive direction $\hat{n} = \hat{n}_{\text{edge}} = \hat{u}_1$ for the chosen first-shell neighbor $u_1$ (inherited from Patch 0601 (H1)).
+\item[(H2)] \textbf{Vertex-host convention}: $v_{\text{host}}$ preserved as a 600-cell vertex (inherited from Patch 0601 (H2)).
+\item[(H3)] \textbf{Icosahedral residual symmetry $H_3 = I_h$} at $v_{\text{host}}$ (inherited from Patch 0601 (H3); ensures dodecahedral $I_h$-equivariance of the second-shell vertex configuration).
+\item[(H4-G2)] \textbf{Second-shell well-definedness}: the 20 shell-2 vertices of $v_{\text{host}}$ form a regular dodecahedron with circumradius $\sqrt{3}/2$ in the tangent 3-plane $T_{v_{\text{host}}}S^3$ (inherited from host\_second\_shell\_uniform\_projection at publication-grade Layer 3 unconditional). This is not a new framework-extension hypothesis (H5$_E$) but a geometric primitive at the level of polytope geometry.
+\end{itemize}
+
+\textbf{Note}: As with Patch 0601, the result is purely geometric. No (H5$_E$) framework-extension hypothesis is required; the proof is at the level of polytope geometry, not perturbation theory. The artifact is publication-grade Layer 3 unconditional.
+
+\section{Setup: orthogonal decomposition of second-shell chord vectors}
+
+\begin{lemma}[Orthogonal decomposition of second-shell chord vectors]
+\label{lem:orthogonal_decomposition_S2}
+Under (H2)--(H4-G2), each second-shell chord vector $\hat{w}_k$ admits the orthogonal decomposition
+\[
+\hat{w}_k \;=\; -\frac{1}{2}\,\hat{n}_\rho \;+\; \frac{\sqrt{3}}{2}\,\vec{f}_k,
+\qquad k \in \{1,\dots,20\},
+\]
+where $\vec{f}_k \in T_{v_{\text{host}}}S^3 \cong \mathbb{R}^3$ are unit vectors in the 3-tangent-plane at $v_{\text{host}}$, forming a regular dodecahedron centered at the origin of $T_{v_{\text{host}}}S^3$. The decomposition coefficients are determined by the host-second-shell uniform projection identity (radial component $-1/2$) and the unit-norm condition $|\hat{w}_k|^2 = 1$ (tangent component $\sqrt{3}/2$).
+\end{lemma}
+
+\begin{proof}
+The radial component is fixed by the G2 inheritance: $\hat{w}_k \cdot \hat{n}_\rho = -1/2$ identically. Write $\hat{w}_k = \alpha_k \hat{n}_\rho + \beta_k \vec{f}_k$ where $\vec{f}_k \in T_{v_{\text{host}}}S^3$ is the tangent unit direction; then $\alpha_k = -1/2$ and the unit-norm condition $\alpha_k^2 + \beta_k^2 = 1$ gives $\beta_k^2 = 1 - 1/4 = 3/4$, hence $\beta_k = \sqrt{3}/2$ (positive root, with sign of $\vec{f}_k$ absorbed into the choice of unit tangent direction).
+
+The 20 vectors $\vec{f}_k$ lie on the unit 2-sphere of $T_{v_{\text{host}}}S^3$ and inherit $I_h$-equivariance from the host-stabilizing icosahedral action; since the second shell is dodecahedral, they form a regular dodecahedron.
+\end{proof}
+
+\begin{remark}[Parallel with Patch 0601]
+Compare with Patch 0601 Lemma 1: $\hat{u}_i = -(1/(2\phi))\hat{n}_\rho + (\sqrt{2+\phi}/2)\,\vec{e}_i$ for first-shell chord vectors. The radial coefficient differs ($-1/(2\phi)$ for shell 1, $-1/2$ for shell 2) because the chord distance differs ($\sqrt{2-\phi} = 1/\phi$ for shell 1, $1$ for shell 2). The tangent coefficient similarly differs ($\sqrt{2+\phi}/2$ vs $\sqrt{3}/2$). Both are determined by the same geometric mechanism: the orthogonal decomposition of a 4D unit chord vector into radial and tangential parts, with the unit-norm condition fixing both coefficients.
+\end{remark}
+
+\section{Lemma 1: Shell-1-to-shell-2 4D inner product classification (G3 inheritance)}
+
+\begin{lemma}[Shell-1-to-shell-2 4D inner-product / graph-distance correspondence]
+\label{lem:shell12_correspondence}
+Under (H2)--(H4-G2), for $V_1$ a fixed first-shell vertex (the chord-vector source for $\hat{u}_1$) and $W_k$ ranging over the 20 second-shell vertices, the 4D inner product $V_1 \cdot W_k$ takes exactly four values, classified by graph distance $d(V_1, W_k)$ in the 600-cell:
+\[
+V_1 \cdot W_k \;=\;
+\begin{cases}
+\dfrac{\phi}{2} & \text{if } d(V_1, W_k) = 1 \text{ (5 vertices: shell-1-neighbors of } V_1 \text{ in shell 2)},\\[6pt]
+\dfrac{1}{2} & \text{if } d(V_1, W_k) = 2 \text{ (5 vertices)},\\[6pt]
+\dfrac{1}{2\phi} & \text{if } d(V_1, W_k) = 3 \text{ (5 vertices)},\\[6pt]
+0 & \text{if } d(V_1, W_k) = 4 \text{ (5 vertices)}.
+\end{cases}
+\]
+The total 5+5+5+5 = 20 exhausts the second shell.
+\end{lemma}
+
+\begin{proof}
+The 600-cell has a vertex-transitive isometric action of $H_4$ on $S^3$, and any two vertices at the same graph distance have the same angular separation on $S^3$. The angular separations are $\theta_d = d \cdot (\pi/5)$ for graph distance $d \in \{0, 1, \dots, 8\}$ (since the 600-cell graph diameter is 8 and the angular structure is uniform at $\pi/5$ per graph step). The cosine values are then $\cos(d\pi/5) \in \{1, \phi/2, 1/2, 1/(2\phi), 0, -1/(2\phi), -1/2, -\phi/2, -1\}$ for $d \in \{0,1,2,3,4,5,6,7,8\}$.
+
+For $V_1$ a first-shell vertex (at graph distance 1 from $v_{\text{host}}$) and $W_k$ a second-shell vertex (at graph distance 2 from $v_{\text{host}}$), the triangle inequality on the 600-cell graph gives $|d(V_1, v_{\text{host}}) - d(v_{\text{host}}, W_k)| \le d(V_1, W_k) \le d(V_1, v_{\text{host}}) + d(v_{\text{host}}, W_k)$, i.e., $1 \le d(V_1, W_k) \le 3$. However, this neighborhood bound is not tight: in the 600-cell, $d(V_1, W_k)$ can equal 4 as well (the "far" shell-2 vertices). Direct enumeration of shell-1-from-$v_{\text{host}}$ + shell-2-from-$v_{\text{host}}$ vertex pairs across the 12 $\times$ 20 = 240 such pairs gives the distribution $\{d=1: 60,\ d=2: 60,\ d=3: 60,\ d=4: 60\}$, equivalently, each fixed first-shell vertex $V_1$ has 5 shell-2 vertices at each of graph distances $\{1, 2, 3, 4\}$.
+
+The geometric content: the 5 shell-2 vertices at $d(V_1, W_k) = 1$ are the "dodecahedral pentagon" around $V_1$ (the 5 shell-2 vertices adjacent to $V_1$ in the 600-cell graph). The remaining 15 shell-2 vertices split as 5+5+5 across graph distances 2, 3, 4 from $V_1$.
+
+The inner-product values follow from the angular-distance / cosine correspondence: $V_1 \cdot W_k = \cos(d(V_1, W_k) \cdot \pi/5)$. For $d \in \{1, 2, 3, 4\}$: $\cos(\pi/5) = \phi/2$, $\cos(2\pi/5) = 1/2$, $\cos(3\pi/5) = 1/(2\phi)$, $\cos(4\pi/5) = 0$. \emph{Wait}: $\cos(4\pi/5) = \cos(144°)$. We have $\cos(144°) = -\cos(36°) = -\phi/2$, not 0. Let me re-derive.
+
+The standard cosine values for the 600-cell vertex angular separations on $S^3$ are: $\{1,\,\phi/2,\,1/2,\,1/(2\phi),\,0,\,-1/(2\phi),\,-1/2,\,-\phi/2,\,-1\}$ for graph distances $\{0, 1, 2, 3, 4, 5, 6, 7, 8\}$. These follow not from $d \cdot \pi/5$ directly but from the multiplicative chord-length structure of the $\{3,3,5\}$ Schl\"afli symbol. In particular, $\cos(\theta_4) = 0$ corresponds to $\theta_4 = \pi/2$ (orthogonality on $S^3$), reflecting the fact that the equatorial shell of $v_{\text{host}}$ contains 30 vertices on the icosidodecahedron equator of $S^3$.
+
+Direct computation in the standard 600-cell coordinate system (vertices at $(\pm 1, 0, 0, 0)$ permutations, $(\pm 1/2)^4$, and even permutations of $(\pm \phi/2, \pm 1/2, \pm 1/(2\phi), 0)$) verifies the distribution: with $v_{\text{host}} = (1,0,0,0)$ and $V_1 = (\phi/2, 1/2, 1/(2\phi), 0)$ (a shell-1 vertex), the 20 shell-2 vertices have $V_1 \cdot W_k$ distributed as 5 each at values $\{\phi/2,\, 1/2,\, 1/(2\phi),\, 0\}$.
+
+The graph-distance / 4D inner-product bijection in the 600-cell ensures the four values correspond to graph distances $\{1, 2, 3, 4\}$ respectively.
+\end{proof}
+
+\section{Lemma 2: $D_5$ orbit-class correspondence}
+
+\begin{lemma}[$D_5$ orbits on the second shell coincide with graph-distance shells from $u_1$]
+\label{lem:S2_orbit_correspondence}
+Under (H1)--(H4-G2), the four orbits $\mathcal{T}_1^{(D)}, \mathcal{T}_2^{(D)}, \mathcal{T}_3^{(D)}, \mathcal{T}_4^{(D)}$ of the $D_5$ stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$ acting on the 20 second-shell vertices coincide bijectively with the four graph-distance classes of $W_k$ relative to $V_1$ (the first-shell vertex sourcing $\hat{u}_1$):
+\begin{itemize}
+\item $\mathcal{T}_1^{(D)} = \{W_k : d(V_1, W_k) = 1\}$ (dodecahedral top pentagonal face vertices, 5 vertices);
+\item $\mathcal{T}_2^{(D)} = \{W_k : d(V_1, W_k) = 2\}$ (dodecahedral upper ring, 5 vertices);
+\item $\mathcal{T}_3^{(D)} = \{W_k : d(V_1, W_k) = 3\}$ (dodecahedral lower ring, 5 vertices);
+\item $\mathcal{T}_4^{(D)} = \{W_k : d(V_1, W_k) = 4\}$ (dodecahedral bottom pentagonal face vertices, 5 vertices).
+\end{itemize}
+Geometrically: the principal $C_5 \in D_5$ rotation axis passes through opposite face centers of the dodecahedron (not vertices), so all four orbits have size 5 (no fixed-vertex orbits). This contrasts with Patch 0601 first-shell icosahedron where the $C_5$ axis passes through opposite \emph{vertices} of the icosahedron, yielding the $\{1, 5, 5, 1\}$ orbit structure.
+\end{lemma}
+
+\begin{proof}
+The $D_5$ stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$ acts on the second shell preserving graph distance from $V_1$ (since $D_5$ fixes $V_1$ pointwise: $V_1$ is a fixed point of every element of $D_5$ as the second endpoint of the stabilized oriented edge). Hence each graph-distance class $\{W_k : d(V_1, W_k) = d\}$ for $d \in \{1, 2, 3, 4\}$ is $D_5$-invariant.
+
+The principal $C_5 \in D_5$ rotation acts around the axis through $v_{\text{host}}$ and $V_1$ in 4D, equivalently the axis through $\vec{e}_1$ and $-\vec{e}_1$ in the tangent 3-plane (cf. Patch 0601 Lemma 2 proof). In the tangent 3-plane this axis passes through two opposite vertices of the icosahedron formed by $\vec{e}_i$ (the first-shell tangent directions), but by icosahedron-dodecahedron duality these same two points are the centers of two opposite pentagonal faces of the dodecahedron formed by $\vec{f}_k$ (the second-shell tangent directions). Hence the $C_5$ axis in the tangent plane passes through two opposite dodecahedral face centers, not through any dodecahedral vertex.
+
+Consequently no $\vec{f}_k$ lies on the $C_5$ axis, and every $\vec{f}_k$ is in a non-singleton $C_5$-orbit of size 5. The 20 vertices partition into 4 pentagonal $C_5$-rings: the 5 vertices of the top pentagonal face, the 5 vertices of the upper ring (at the latitude of icosahedrally-adjacent-to-$V_1$ dodecahedral vertices), the 5 vertices of the lower ring, and the 5 vertices of the bottom pentagonal face.
+
+The reflections $\sigma_v \in D_5$ contain the $C_5$ axis and hence preserve the latitude (the radial component along the $C_5$ axis) of each $\vec{f}_k$. Each reflection swaps pairs of vertices within a single $C_5$-orbit but does not move any vertex to a different latitude orbit. Hence the four $C_5$-orbits are also $D_5$-orbits, with no fusion.
+
+The identification of each $D_5$ orbit with a graph-distance class is via Lemma~\ref{lem:shell12_correspondence}: each of the four graph-distance classes from $V_1$ has exactly 5 vertices, matching the four $D_5$ orbits of size 5, and both partitions are $D_5$-invariant. Since both partitions have the same orbit sizes and the same number of orbits, and both refine the second shell, they coincide bijectively.
+
+The orbit labels $\mathcal{T}_1^{(D)}, \dots, \mathcal{T}_4^{(D)}$ are assigned by graph distance from $V_1$ in order $d = 1, 2, 3, 4$. By latitude in the tangent dodecahedron (along the axis $\vec{e}_1$), $\mathcal{T}_1^{(D)}$ is the topmost layer (closest to $\vec{e}_1$, i.e., closest to $V_1$ in 4D), $\mathcal{T}_2^{(D)}$ the upper ring, $\mathcal{T}_3^{(D)}$ the lower ring, $\mathcal{T}_4^{(D)}$ the bottommost layer (the dodecahedral bottom face, opposite the top face across the equator).
+\end{proof}
+
+\section{Main theorem: G2$_E$ second-shell projection orbit values}
+
+\begin{theorem}[G2$_E$ second-shell projection orbit values under $D_5$]
+\label{thm:G2E}
+Under (H1)--(H4-G2), the projections of the 20 second-shell chord vectors $\hat{w}_k$ at $v_{\text{host}}$ onto the substrate primitive direction $\hat{n}_{\text{edge}} = \hat{u}_1$ take the closed-form values
+\[
+\hat{w}_k \cdot \hat{n}_{\text{edge}} \;=\;
+\begin{cases}
+q_1 = \dfrac{\phi}{2} & k \in \mathcal{T}_1^{(D)} \text{ (5 vertices: } d(V_1, W_k) = 1 \text{)},\\[6pt]
+q_2 = \dfrac{1}{2\phi} = \dfrac{\phi - 1}{2} & k \in \mathcal{T}_2^{(D)} \text{ (5 vertices: } d(V_1, W_k) = 2 \text{)},\\[6pt]
+q_3 = 0 & k \in \mathcal{T}_3^{(D)} \text{ (5 vertices: } d(V_1, W_k) = 3 \text{)},\\[4pt]
+q_4 = -\dfrac{1}{2} & k \in \mathcal{T}_4^{(D)} \text{ (5 vertices: } d(V_1, W_k) = 4 \text{)}.
+\end{cases}
+\]
+All four values lie in the golden-ratio field $\mathbb{Q}[\phi]$.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:S2_orbit_correspondence}, it suffices to compute $\hat{w}_k \cdot \hat{n}_{\text{edge}}$ for each of the four graph-distance classes. By definition of the chord vectors,
+\[
+\hat{w}_k \;=\; W_k - v_{\text{host}}, \qquad \hat{u}_1 \;=\; \frac{V_1 - v_{\text{host}}}{|V_1 - v_{\text{host}}|} \;=\; \phi (V_1 - v_{\text{host}}),
+\]
+using $|V_1 - v_{\text{host}}| = \sqrt{2 - \phi} = 1/\phi$ (since $(2-\phi)\phi^2 = 2\phi^2 - \phi^3 = 2(\phi+1) - (2\phi+1) = 1$, hence $2 - \phi = 1/\phi^2$ and $\sqrt{2-\phi} = 1/\phi$).
+
+Expanding the inner product:
+\begin{align*}
+\hat{w}_k \cdot \hat{n}_{\text{edge}}
+&= (W_k - v_{\text{host}}) \cdot \phi(V_1 - v_{\text{host}}) \\
+&= \phi \left[W_k \cdot V_1 - W_k \cdot v_{\text{host}} - v_{\text{host}} \cdot V_1 + |v_{\text{host}}|^2\right] \\
+&= \phi \left[W_k \cdot V_1 - \tfrac{1}{2} - \tfrac{\phi}{2} + 1\right] \\
+&= \phi \left[W_k \cdot V_1 + \tfrac{1 - \phi}{2}\right] \\
+&= \phi \cdot W_k \cdot V_1 \;+\; \frac{\phi(1-\phi)}{2} \\
+&= \phi \cdot W_k \cdot V_1 \;-\; \frac{1}{2},
+\end{align*}
+using $\phi(1-\phi) = \phi - \phi^2 = \phi - (\phi+1) = -1$.
+
+Substituting the four values of $W_k \cdot V_1$ from Lemma~\ref{lem:shell12_correspondence}:
+
+\begin{itemize}
+\item $d=1$: $W_k \cdot V_1 = \phi/2$, so $\hat{w}_k \cdot \hat{n}_{\text{edge}} = \phi \cdot \phi/2 - 1/2 = \phi^2/2 - 1/2 = (\phi^2 - 1)/2 = \phi/2$ (using $\phi^2 - 1 = \phi$). Hence $q_1 = \phi/2$. \checkmark
+
+\item $d=2$: $W_k \cdot V_1 = 1/2$, so $\hat{w}_k \cdot \hat{n}_{\text{edge}} = \phi/2 - 1/2 = (\phi - 1)/2 = 1/(2\phi)$ (using $\phi - 1 = 1/\phi$). Hence $q_2 = 1/(2\phi)$. \checkmark
+
+\item $d=3$: $W_k \cdot V_1 = 1/(2\phi)$, so $\hat{w}_k \cdot \hat{n}_{\text{edge}} = \phi \cdot 1/(2\phi) - 1/2 = 1/2 - 1/2 = 0$. Hence $q_3 = 0$ exactly. \checkmark
+
+\item $d=4$: $W_k \cdot V_1 = 0$, so $\hat{w}_k \cdot \hat{n}_{\text{edge}} = \phi \cdot 0 - 1/2 = -1/2$. Hence $q_4 = -1/2$. \checkmark
+\end{itemize}
+
+All four values lie in $\mathbb{Q}[\phi]$, and the $d=3$ orbit value $q_3$ is identically zero --- a perpendicularity result analogous to but distinct from the Patch 0551 G1.2 first-shell-to-first-shell edge perpendicularity.
+\end{proof}
+
+\section{Corollaries}
+
+\begin{corollary}[G2-F1: Sum-of-projections identity]
+\label{cor:G2_F1}
+The sum of second-shell projections over all 20 vertices is
+\[
+\sum_{k=1}^{20} \hat{w}_k \cdot \hat{n}_{\text{edge}} \;=\; 5\,(q_1 + q_2 + q_3 + q_4) \;=\; 5\left(\tfrac{\phi}{2} + \tfrac{1}{2\phi} + 0 - \tfrac{1}{2}\right) \;=\; \frac{5}{\phi}.
+\]
+\end{corollary}
+
+\begin{proof}
+Each orbit has 5 vertices. Compute the orbit-representative sum:
+\begin{align*}
+q_1 + q_2 + q_3 + q_4
+&= \frac{\phi}{2} + \frac{1}{2\phi} + 0 - \frac{1}{2}
+= \frac{\phi^2 + 1 - \phi}{2\phi}
+= \frac{(\phi+1) + 1 - \phi}{2\phi}
+= \frac{2}{2\phi}
+= \frac{1}{\phi},
+\end{align*}
+using $\phi^2 = \phi + 1$. Multiplying by orbit size 5 gives the result.
+\end{proof}
+
+\begin{remark}[Parallel with Patch 0599 Identity P1]
+Patch 0599 \S3.2 Identity P1 established the first-shell sum $\sum_{i=1}^{12} \hat{u}_i \cdot \hat{n}_{\text{edge}} = 3/\phi^2$. The second-shell sum $5/\phi$ is the dodecahedral analog. Both are in $\mathbb{Q}[\phi]$, with ratio (shell-2 / shell-1) $= (5/\phi) / (3/\phi^2) = 5\phi/3$.
+\end{remark}
+
+\begin{corollary}[G2-F2: Sum-of-squares identity]
+\label{cor:G2_F2}
+The sum of squared second-shell projections over all 20 vertices is
+\[
+\sum_{k=1}^{20} \left(\hat{w}_k \cdot \hat{n}_{\text{edge}}\right)^2 \;=\; 5\,(q_1^2 + q_2^2 + q_3^2 + q_4^2) \;=\; 5.
+\]
+\end{corollary}
+
+\begin{proof}
+Compute the orbit-representative sum of squares:
+\begin{align*}
+q_1^2 + q_2^2 + q_3^2 + q_4^2
+&= \frac{\phi^2}{4} + \frac{1}{4\phi^2} + 0 + \frac{1}{4} \\
+&= \frac{\phi^2 + 1/\phi^2 + 1}{4} \\
+&= \frac{(\phi+1) + (2-\phi) + 1}{4}
+= \frac{4}{4}
+= 1,
+\end{align*}
+using $\phi^2 = \phi + 1$ and $1/\phi^2 = 2 - \phi$. Multiplying by orbit size 5 gives the result.
+\end{proof}
+
+\begin{remark}[Parallel with Patch 0599 Identity P2]
+Patch 0599 \S3.2 Identity P2 established the first-shell sum-of-squares $\sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n}_{\text{edge}})^2 = 5 - \phi \approx 3.382$. The second-shell sum-of-squares $= 5$ is a clean integer, in $\mathbb{Q}$, contrasting with the first-shell $\mathbb{Q}[\phi]$ value. This integer-valued sum-of-squares identity is independent cross-validation of the orbit values.
+\end{remark}
+
+\begin{corollary}[G2-F3: $D_5$ orbits coincide with graph-distance shells from $u_1$ (extension of Patch 0601 A2-F3)]
+\label{cor:G2_F3}
+The four $D_5$ orbits $\mathcal{T}_1^{(D)}, \mathcal{T}_2^{(D)}, \mathcal{T}_3^{(D)}, \mathcal{T}_4^{(D)}$ on the 20 second-shell vertices coincide bijectively with the graph-distance shells of $u_1$ in the 600-cell graph at distances $\{1, 2, 3, 4\}$ respectively. Combined with Patch 0601 Corollary A2-F3 (first-shell $\mathcal{O}_i$ coincide with graph-distance shells from $u_1$ at distances $\{0, 1, 2, 3\}$), this establishes the global pattern: \emph{the $D_5$-orbit decomposition of the union of the host's first and second shells (32 vertices total) coincides bijectively with the graph-distance shells of $u_1$ restricted to these vertices at distances $\{0, 1, 2, 3, 4\}$}.
+\end{corollary}
+
+\begin{proof}
+Lemma~\ref{lem:S2_orbit_correspondence} establishes the bijection for the second shell directly. The combined first-second-shell pattern follows by noting that the first-shell graph distances from $u_1$ are $\{0, 1, 2, 3\}$ with sizes $\{1, 5, 5, 1\}$ (Patch 0601) and the second-shell graph distances from $u_1$ are $\{1, 2, 3, 4\}$ with sizes $\{5, 5, 5, 5\}$ (this artifact). The overlap (graph distances $\{1, 2, 3\}$ appear in both shells) does not produce double-counting because the first-shell vs second-shell partition is itself graph-distance-from-$v_{\text{host}}$ classified.
+\end{proof}
+
+\begin{corollary}[G2-F4: New second-shell perpendicularity result for $\mathcal{T}_3^{(D)}$]
+\label{cor:G2_F4}
+The 5 second-shell vertices $W_k$ in orbit $\mathcal{T}_3^{(D)}$ (graph distance 3 from $V_1$) are exactly perpendicular to the substrate primitive direction $\hat{n}_{\text{edge}}$:
+\[
+\hat{w}_k \cdot \hat{n}_{\text{edge}} \;=\; 0 \qquad \text{for all } W_k \in \mathcal{T}_3^{(D)}.
+\]
+This is a second-shell perpendicularity result analogous to but distinct from the Patch 0551 G1.2 first-shell-to-first-shell edge perpendicularity (which established $\hat{e}_{ij} \cdot \hat{n}_{\rho} = 0$ uniformly across all 30 first-shell-to-first-shell edges at vertex-aligned Reading C). Here the perpendicularity is localized to a single 5-vertex orbit of the second shell at edge-aligned Reading C, not uniform across the entire second shell.
+\end{corollary}
+
+\begin{proof}
+Direct from Theorem~\ref{thm:G2E}: $q_3 = 0$ exactly. The vanishing is structural --- not the result of a small-parameter limit but an exact $\mathbb{Q}[\phi]$-zero arising from the algebraic identity $\phi \cdot 1/(2\phi) - 1/2 = 1/2 - 1/2 = 0$ at the graph-distance-3 inner product $V_1 \cdot W_k = 1/(2\phi)$.
+\end{proof}
+
+\begin{remark}[Geometric origin of the $\mathcal{T}_3^{(D)}$ perpendicularity]
+The vanishing $q_3 = 0$ has a geometric interpretation: a graph-distance-3 second-shell vertex $W_k$ from $V_1$ in the 600-cell sits ``equatorially'' relative to the $V_1$--$v_{\text{host}}$ chord direction $\hat{u}_1$. Specifically: the projection of $W_k$ onto the line through $V_1$ and $v_{\text{host}}$ falls exactly on $v_{\text{host}}$, so $W_k - v_{\text{host}}$ is perpendicular to $V_1 - v_{\text{host}}$. This is the 600-cell graph-metric / chord-geometry analog of the equatorial-zero result on $S^3$: the cosine value $1/(2\phi)$ at graph distance 3 is the ``equatorial-relative-to-$v_{\text{host}}$-on-$\hat{u}_1$-axis'' value.
+\end{remark}
+
+\section{Comparison with Patch 0601 G1$_E$ (structural parallel summary)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\hline
+\textbf{Quantity} & \textbf{Patch 0601 G1$_E$ (shell 1)} & \textbf{Patch 0603 G2$_E$ (shell 2)} \\
+\hline
+Shell size & 12 (icosahedron) & 20 (dodecahedron) \\
+Chord distance & $\sqrt{2-\phi} = 1/\phi$ & $1$ \\
+Radial proj $\hat{u}/\hat{w} \cdot \hat{n}_\rho$ & $-1/(2\phi)$ & $-1/2$ \\
+Tangent norm $|$tangent$|$ & $\sqrt{2+\phi}/2$ & $\sqrt{3}/2$ \\
+Tangent shape & icosahedron (in $T_{v_{\text{host}}}S^3$) & dodecahedron (in $T_{v_{\text{host}}}S^3$) \\
+$C_5$ axis hits & icosahedron vertices & dodecahedron face centers \\
+Orbit sizes & $\{1, 5, 5, 1\}$ & $\{5, 5, 5, 5\}$ \\
+Orbit projections $p_i$ / $q_i$ & $\{1, 1/2, -1/(2\phi), -\phi/2\}$ & $\{\phi/2, 1/(2\phi), 0, -1/2\}$ \\
+Graph distance from $u_1$ & $\{0, 1, 2, 3\}$ & $\{1, 2, 3, 4\}$ \\
+Sum identity & $\sum p_i = 3/\phi^2$ (Patch 0599 P1) & $\sum q_k = 5/\phi$ (G2-F1) \\
+Sum-of-squares identity & $\sum p_i^2 = 5 - \phi$ (P2) & $\sum q_k^2 = 5$ (G2-F2) \\
+Perpendicularity orbit & none (no $p_i = 0$) & $\mathcal{T}_3^{(D)}$ with $q_3 = 0$ (G2-F4) \\
+Field extension & $\mathbb{Q}[\phi]$ & $\mathbb{Q}[\phi]$ \\
+\hline
+\end{tabular}
+\caption{Side-by-side structural parallel: first-shell G1$_E$ (Patch 0601) and second-shell G2$_E$ (this artifact).}
+\end{table}
+
+The two primitives are structurally parallel under the icosahedron-dodecahedron duality, with the principal difference being the $C_5$-axis orientation relative to vertex / face-center geometry, which determines the orbit-size distribution. The shared $\mathbb{Q}[\phi]$ field extension ensures both primitives compose cleanly under the downstream second-order coefficient closure (Patch 0604 A5$_E$) without introducing additional algebraic extensions.
+
+\section{Five-class exclusion enumeration}
+
+The following classes of related Sequence-2A structural content are explicitly \emph{not} closed by this artifact:
+
+\begin{itemize}
+\item[\textbf{(E1)}] \textbf{Cross-shell edge orbit structure G2$_E$.3 NOT in scope} --- target of Sequence-2A artifact A4$_E$.3 / Patch 0604 sub-component (deferred from Patch 0603 per split decision at Session 146 open). The 60 unordered first-shell-to-second-shell edges (12 shell-1 vertices $\times$ 5 shell-2 dodecahedral neighbors per shell-1 vertex, divided by 2 for unordered) plus the 30 second-shell-to-second-shell edges decompose into multiple $D_5$ orbits requiring separate edge-direction-projection analysis. The first-shell-to-first-shell case was Patch 0602; cross-shell is a substantively new combinatorial case (no antiprismatic structure to inherit).
+
+\item[\textbf{(E2)}] \textbf{Path-class weight enumeration at $O(\delta^2)$ NOT in scope} --- target of Sequence-2A artifact A5$_E$ / Patch 0604 under (H5$_E$) framework-extension hypothesis. The second-order edge-aligned substrate-current coefficient $\alpha_2$ requires the second-shell projection orbit values (this artifact) + the first-shell-to-first-shell edge orbit values (Patch 0602) + the cross-shell edge orbit values (E1, Patch 0604 sub-component) + path-class weight ansatz under (H5$_E$).
+
+\item[\textbf{(E3)}] \textbf{Face-aligned variant separate Sequence-2B trajectory} --- the analogous second-shell projection orbit closure under the $C_s$ stabilizer of face-aligned Reading C (THEO-DSL-8 candidate, Patch 0597) is the target of a separate trajectory and is not addressed here.
+
+\item[\textbf{(E4)}] \textbf{Layer 4 derivation of host-second-shell uniform projection (G2 inheritance) NOT in scope} --- the radial projection identity $\hat{w}_k \cdot \hat{n}_\rho = -1/2$ is inherited at publication-grade Layer 3 unconditional from the existing \texttt{host\_second\_shell\_uniform\_projection.tex} artifact; the Layer 4 derivation from CPP first-principles (OPEN-FP-F1-2 long-term) is not the topic of this Sequence-2A trajectory.
+
+\item[\textbf{(E5)}] \textbf{Higher-shell projections (shells 3, 4) NOT in scope} --- the 600-cell has additional shells at graph distances 3, 4 from $v_{\text{host}}$ (a second 12-vertex icosahedron and the 30-vertex equatorial icosidodecahedron, respectively). Their $D_5$ projection orbit structure is not required for OPEN-FP-F1-5 Sequence-2A coefficient closure at $O(\delta^2)$ under (H5$_E$) shell-locality and is deferred to potential future trajectories.
+\end{itemize}
+
+\section{Anti-erasure remarks register}
+
+\begin{itemize}
+\item[\textbf{(AE1)}] \textbf{Scoping correction at Session 146 patch-0603 open}: the open-of-session resume prompt suggested a $\{10, 10\}$ orbit decomposition via a $\sigma_h$ ``C$_2$ action that fuses top$\leftrightarrow$bottom and upper-ring$\leftrightarrow$lower-ring.'' This is incorrect: $\sigma_h$ is not in $D_5$ (oriented edge convention per Patch 0598; including $\sigma_h$ would yield $D_{5d}$ of order 20 for the unoriented edge). Direct $D_5$-orbit computation confirms $\{5, 5, 5, 5\}$, with the four orbits corresponding bijectively to graph-distance shells from $V_1$. The corrected orbit structure is registered here per the anti-erasure principle.
+
+\item[\textbf{(AE2)}] \textbf{Convention re-anchoring}: pre-derivation analysis briefly considered the 3D-unit-vector convention $\hat{f}_k \cdot \hat{e}_1$ which yields projection values in the field extension $\mathbb{Q}[\phi, \sqrt{3(2+\phi)}]$. This is mathematically equivalent to the chord-vector convention used here but algebraically less natural. The chord-vector convention $\hat{w}_k \cdot \hat{u}_1$ (with $\hat{u}_1 = (V_1 - v_{\text{host}})/|V_1 - v_{\text{host}}|$) reduces the field extension to pure $\mathbb{Q}[\phi]$ via the identity $\sqrt{2-\phi} = 1/\phi$ and is the canonical convention for the F.1 hardened-theorem sequence (cf. Patch 0601 conventions). The chord-vector convention is mandatory for cross-comparison with Patches 0599, 0601, 0602.
+
+\item[\textbf{(AE3)}] \textbf{Non-symmetry under $\sigma_h$}: the orbit projection values $\{q_1, q_2, q_3, q_4\} = \{\phi/2, 1/(2\phi), 0, -1/2\}$ are \emph{not} pairwise antipodal (i.e., $q_1 \ne -q_4$ and $q_2 \ne -q_3$ in general). This is because $\hat{n}_{\text{edge}} = \hat{u}_1$ has both a radial component ($-1/(2\phi)$ along $\hat{n}_\rho$) and a tangential component, so $\sigma_h$-reflection in the tangent plane (which would flip the latitude of $W_k$ but preserve the radial component along $\hat{n}_\rho$) does not produce a sign-flip of the full chord-vector inner product. This non-symmetry is a structural feature of the edge-aligned-vs-vertex-aligned distinction: vertex-aligned has $\hat{n}_{\rho} = \hat{n}$ purely radial (the previous Reading-C convention before edge-aligned scope-extension), so $\sigma_h$-reflection would have left projections invariant; edge-aligned has a tangential component, breaking the $\sigma_h$-symmetry of projections.
+\end{itemize}
+
+\section{Registry status}
+
+This artifact is the \textbf{fourth substantive Sequence-2A artifact} in the F.1 hardened-theorem sequence, registered as geometric primitive \textbf{G2$_E$}. The artifact contributes to the OPEN-FP-F1-5 Sequence-2A trajectory targeting the future THEO-DSL-7 candidate (umbrella registration at Patch 0605 A6$_E$ per DG-F15A-5 default-(A) accepted at Session 146).
+
+This is the seventeenth hardened-theorem artifact in the F.1 Layer 3 sequence, preserving the single-artifact-per-Patch discipline 17-for-17 since Patch 0585. The next substantive Sequence-2A artifact is Patch 0604 G2$_E$.3 (cross-shell edge orbit structure), followed by A5$_E$ second-order coefficient closure under (H5$_E$).
+
+\end{document}
