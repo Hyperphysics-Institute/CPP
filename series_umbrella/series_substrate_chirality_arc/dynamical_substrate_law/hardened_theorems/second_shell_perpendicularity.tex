@@ -1,0 +1,298 @@
+% ============================================================
+% Second-Shell-to-Second-Shell Edge-Direction Perpendicularity (G2.4)
+%   for the 600-Cell Edge Graph at Vertex-Aligned Reading C
+% Publication-Grade Hardening of the Second-Shell Analog of
+%   the First-Shell Edge-Direction Perpendicularity (Patch 0551)
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    EIGHTH artifact in F.1 Layer 3 hardened-theorem sequence;
+%    THIRD artifact in OPEN-FP-F1-1 Route C sequence 2 after Patch 0587
+%    G2 hardening; parallel partner to Patch 0588 host-to-second-shell
+%    projection G2.1. Hardens G2.4 -- the perpendicularity of all 30
+%    second-shell-to-second-shell 600-cell edges to n_hat at vertex-
+%    aligned Reading C -- at publication-grade Layer 3 UNCONDITIONAL
+%    rigor via G2 hardened at Patch 0587 + standard chord-difference
+%    argument.)
+%
+% Patch 0589 (Session 145, 26 May 2026) -- third OPEN-FP-F1-1 Route
+%   C sequence 2 closure Patch; parallel partner to Patch 0588
+%   (host-to-second-shell projection G2.1). Patch number skips 0586
+%   (reserved for concurrent Opus window's Session 144 handover
+%   completion documentation).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+
+\title{Second-Shell-to-Second-Shell Edge-Direction Perpendicularity (G2.4) \\
+in the 600-Cell at Vertex-Aligned Reading C \\
+\large Publication-Grade Hardening of the Second-Shell Analog \\
+of the Patch~0551 First-Shell Perpendicularity Theorem}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7 \\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{26 May 2026 (Session 145, CPP Patch 0589)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade Layer~3 \emph{unconditional} hardening of the second-shell-to-second-shell edge-direction perpendicularity identity G2.4 for the 600-cell at vertex-aligned Reading~C: the second-shell analog of the Patch~0551 first-shell-to-first-shell perpendicularity theorem. The hardened statement asserts that, under (H1)~vertex-aligned Reading~C with $\nhat = \vhost$, (H2)~600-cell unit-vertex normalisation, (H3)~the icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex, each of the 30 unit edge-direction vectors $\hat{e}_{j_1 j_2}$ of the second-shell-to-second-shell 600-cell edges (the 30 edges of the dodecahedron formed by $S_2(\vhost)$ under $\Icoh$) satisfies $\hat{e}_{j_1 j_2} \cdot \nhat = 0$ identically. The proof is essentially elementary: both endpoints of any second-shell-to-second-shell edge have $\nhat$-component equal to $1/2$ (by G2 hardened at Patch~0587), so their difference $w_{j_2} - w_{j_1}$ has $\nhat$-component zero, hence the edge-direction vector lies in the 3-plane $\nhat^\perp \subset \Reals^4$. The result requires no $I_h$-transitivity argument beyond what is implicit in the G2-uniformity inheritance (the perpendicularity holds for every pair $(w_{j_1}, w_{j_2})$ regardless of $\Icoh$-orbit structure). With Patch~0589 in hand, the F.1 Layer~3 hardened-theorem sequence advances to \textbf{eight artifacts}, completing the parallel pair of A3 + A5 Route~C sequence~2 artifacts unlocked by G2 hardening at Patch~0587. The remaining sequence-2 artifacts are A4 (first-shell-to-second-shell edge orbit classification G2.3, conditional on A2 + A3), A6 (path-class weight enumeration), and A7 (umbrella assembly producing the THEO-DSL-5 candidate $\alpha_2$).
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the second-shell-to-second-shell edge-direction perpendicularity identity G2.4 at publication-grade Layer~3 unconditional rigor, executing the third artifact of Route~C sequence~2 of the OPEN-FP-F1-1 trajectory. The substantive content asserts that the 30 edges of the dodecahedron formed by $S_2(\vhost)$ (which coincide with the 30 second-shell-to-second-shell 600-cell edges; see Lemma~\ref{lem:30_edges_count}) have edge-direction vectors all perpendicular to $\nhat$ in the ambient $\Reals^4$.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+The present Patch~0589 is the \textbf{eighth} artifact in the F.1 Layer~3 hardened-theorem sequence and the \textbf{third} under Route~C sequence~2 of the OPEN-FP-F1-1 trajectory. The parallel partner artifact is Patch~0588 (host-to-second-shell projection G2.1), which is independent of the present perpendicularity result and was produced concurrently. Both Patches~0588 + 0589 were unlocked at publication-grade Layer~3 unconditional rigor by the Patch~0587 G2 hardening per Patch~0587 Corollary~4.1.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (Patch~0550 \S2.1; \cite{coxeter1973}). Fix a host vertex $\vhost \in V(\Gsixcell)$, and let $S_2(\vhost) = \{w_1, \ldots, w_{20}\}$ denote the second graph-distance shell of $\vhost$ in $\Gsixcell$ as characterised in Patch~0587 \S2.1. Let $E_{S_2}(\vhost) \subset E(\Gsixcell)$ denote the set of 600-cell edges with both endpoints in $S_2(\vhost)$.
+
+\begin{lemma}[Edge count of $E_{S_2}(\vhost)$]\label{lem:30_edges_count}
+$|E_{S_2}(\vhost)| = 30$, with each $w_j \in S_2(\vhost)$ having exactly 3 of its 12 600-cell-neighbours in $S_2(\vhost)$. The 30 edges of $E_{S_2}(\vhost)$ coincide with the 30 edges of the regular dodecahedron formed by the 20 second-shell vertices under the $\Icoh$ residual symmetry.
+\end{lemma}
+
+The proof of Lemma~\ref{lem:30_edges_count} is given in \S\ref{sec:edge_count_proof}. With this characterisation in hand, the main theorem is:
+
+\begin{theorem}[Second-shell-to-second-shell edge-direction perpendicularity, hardened]\label{thm:g24_hardened}
+Under hypotheses (H1)--(H3) of Patch~0587 Theorem~1.1, for every second-shell-to-second-shell 600-cell edge $(w_{j_1}, w_{j_2}) \in E_{S_2}(\vhost)$ with edge-direction unit vector
+\begin{equation}\label{eq:edge_unit_def}
+\hat{e}_{j_1 j_2} \;:=\; \frac{w_{j_2} - w_{j_1}}{|w_{j_2} - w_{j_1}|} \;\in\; \Reals^4,
+\end{equation}
+the projection on $\nhat$ vanishes identically:
+\begin{equation}\label{eq:g24_main}
+\hat{e}_{j_1 j_2} \cdot \nhat \;=\; 0.
+\end{equation}
+Equivalently, every second-shell-to-second-shell edge direction lies in the 3-plane $\nhat^\perp = \{x \in \Reals^4 : x \cdot \nhat = 0\}$ orthogonal to $\nhat$ in the ambient $\Reals^4$.
+\end{theorem}
+
+The proof (\S\ref{sec:proof}) is essentially a chord-difference calculation: both endpoints have $w_j \cdot \nhat = 1/2$ by G2 (Patch~0587 Theorem~1.1), so the difference $w_{j_2} - w_{j_1}$ has $\nhat$-component zero, hence the edge-direction has $\nhat$-component zero.
+
+\begin{remark}[Structural mirror of Patch 0551]\label{rem:mirror_of_0551}
+Patch~0551 establishes the first-shell perpendicularity $\hat{e}_{ij}^{(S_1)} \cdot \nhat = 0$ for the 30 first-shell-to-first-shell 600-cell edges (the icosahedron edges formed by $S_1(\vhost)$). The present second-shell perpendicularity is the structural mirror: 30 edges instead of 30, but on the second-shell dodecahedron instead of the first-shell icosahedron. Both shells lie in 3-affine-planes orthogonal to $\nhat$ at signed distances $\phi/2$ (first shell) and $1/2$ (second shell) from the origin, so edges within either shell are perpendicular to $\nhat$ by the same chord-difference argument. The structural recurrence reflects the general fact that any shell $S_n(\vhost)$ has all its vertices at the same $\nhat$-projection (by $G_n$ inner-product primitives at progressively deeper levels), so all within-shell edges are perpendicular to $\nhat$. This shell-by-shell perpendicularity pattern is a candidate for future general-shell registration if higher-shell perpendicularity primitives are needed.
+\end{remark}
+
+\begin{remark}[On the absence of an icosahedral-transitivity step]\label{rem:no_transitivity_step}
+The perpendicularity result Theorem~\ref{thm:g24_hardened} is established for \emph{every} pair $(w_{j_1}, w_{j_2}) \in E_{S_2}(\vhost)$ without needing the $\Icoh$-action explicitly; the chord-difference argument is uniform in the choice of endpoints. This is structurally different from Patch~0588 (host-to-second-shell projection), which used dodecahedral transitivity as a consistency cross-check. The perpendicularity result is independent of pair identity because the $\nhat$-component of any second-shell vertex is the SAME ($1/2$, by G2), not just related by $\Icoh$-action; the chord difference annihilates this common $\nhat$-component identically. The 30-fold uniformity of Theorem~\ref{thm:g24_hardened} is thus a consequence of the SINGLE-VALUE structure of G2 (all 20 second-shell vertices share the same $\nhat$-projection), not of dodecahedral transitivity per se.
+\end{remark}
+
+\section{Preliminaries and imported inputs}\label{sec:preliminaries}
+
+We re-use the framework setup of Patch~0587 \S2 without re-derivation: 600-cell edge graph $\Gsixcell$ with 120 vertices on $S^3 \subset \Reals^4$ at unit norm (H2); vertex-aligned Reading~C with $\nhat = \vhost$ (H1); $\Hthree = \Icoh$ residual symmetry at the host vertex (H3) inherited from Patch~0571 Theorem~1.1 + Capotauro~v2.0 FI-C-RC-2 + Patch~0419 Finding~C-W37.
+
+The single imported input is the G2 inner-product primitive:
+
+\begin{lemma}[G2 inner-product primitive; imported from Patch~0587 Theorem~1.1]\label{lem:G2_imported}
+Under hypotheses (H1)--(H3), every second-shell vertex $w_j \in S_2(\vhost)$ satisfies
+\begin{equation}\label{eq:G2_inner_product}
+w_j \cdot \vhost \;=\; \frac{1}{2}
+\end{equation}
+uniformly across $j \in \{1, \ldots, 20\}$.
+\end{lemma}
+
+\begin{proof}[Proof of Lemma~\ref{lem:G2_imported}]
+This is Patch~0587 Theorem~1.1, at publication-grade Layer~3 unconditional rigor. Imported here without re-derivation. $\square$
+\end{proof}
+
+\subsection{Proof of the edge count Lemma~\ref{lem:30_edges_count}}\label{sec:edge_count_proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:30_edges_count}]
+We establish the edge count by direct enumeration on a canonical representative $w_0 = \tfrac{1}{2}(1,1,1,1) \in S_2(\vhost)$ for $\vhost = (1, 0, 0, 0)$, then propagate via dodecahedral transitivity.
+
+\textbf{Direct enumeration of 600-cell neighbours of $w_0$ in $S_2(\vhost)$.}
+A 600-cell vertex $v$ is adjacent to $w_0$ in $\Gsixcell$ iff $v \cdot w_0 = \phi/2$ (the 600-cell first-shell inner-product primitive G1, Patch~0571 Theorem~1.1, applied with host $w_0$). For $v$ in the second coordinate family (the 16 vertices $\tfrac{1}{2}(\pm 1, \pm 1, \pm 1, \pm 1)$): the inner product is $v \cdot w_0 = (1/4) \sum_i \epsilon_i \in \{-1, -1/2, 0, 1/2, 1\}$, none of which equals $\phi/2 \approx 0.809$. Hence no second-family vertex is 600-cell-adjacent to $w_0$.
+
+For $v$ in the third coordinate family (the 96 vertices of even permutations of $(\pm\phi/2, \pm 1/2, \pm 1/(2\phi), 0)$ with independent signs): we seek $v \cdot w_0 = \phi/2$. Each $v$ in the third family has $v \cdot w_0 = (1/2)(\pm a \pm b \pm c)$ where $\{|a|, |b|, |c|\} = \{\phi/2, 1/2, 1/(2\phi)\}$ as a multiset (i.e., $\{a, b, c\}$ is a signed-and-permuted version of $\{\phi/2, 1/2, 1/(2\phi)\}$) and the zero coordinate is absent from the inner product. The inner product range is bounded by $(1/2)(\phi/2 + 1/2 + 1/(2\phi)) = (\phi + 1 + 1/\phi)/4 = (\phi^2 + 1)/(4 \cdot \phi^{-1} \cdot \phi) = \ldots = \phi/2$ at the all-positive choice (using $\phi^{-1} = \phi - 1$ and $\phi^2 = \phi + 1$, the sum $\phi + 1 + 1/\phi = \phi^2 + (\phi - 1)\phi/\phi = 2\phi$, so $(1/2)(2\phi)/2 = \phi/2$).
+
+Thus exactly the all-positive sign choice on the non-zero entries $\{\phi/2, 1/2, 1/(2\phi)\}$ yields $v \cdot w_0 = \phi/2$ for each even permutation that places one of these entries in each of three non-zero positions. The 600-cell-neighbours of $w_0$ from the third family are therefore the 12 vertices obtained from the 12 even permutations of (1,2,3,4) (= $|A_4| = 12$) by applying each permutation to the all-positive base $(\phi/2, 1/2, 1/(2\phi), 0)$.
+
+\textbf{Distribution of these 12 neighbours across shells of $\vhost$.}
+For each such neighbour $v$, the first coordinate of $v$ is one of $\phi/2$, $1/2$, $1/(2\phi)$, or $0$ depending on which entry of $(\phi/2, 1/2, 1/(2\phi), 0)$ the even permutation places in position 1. By the shell classification of Patch~0587 \S2.1: first coord $= \phi/2$ means $v \in S_1(\vhost)$; first coord $= 1/2$ means $v \in S_2(\vhost)$; first coord $= 1/(2\phi)$ means $v \in S_3(\vhost)$; first coord $= 0$ means $v \in S_4(\vhost)$ (the equator).
+
+Counting even permutations that place each base-entry in position 1: there are 12 even permutations of (1,2,3,4) and 4 positions, so on average each base-entry occupies position 1 in $12/4 = 3$ even permutations. We verify by explicit enumeration: for each fixed position-1 occupant $b \in \{\phi/2, 1/2, 1/(2\phi), 0\}$, the remaining three entries permute in the remaining three positions according to an EVEN permutation; the number of even permutations of three elements is $3!/2 = 3$. So exactly 3 even permutations place each base-entry in position 1, giving $3 \times 4 = 12$ even permutations as expected.
+
+Therefore $w_0$ has exactly 3 600-cell-neighbours in each of $S_1(\vhost)$, $S_2(\vhost)$, $S_3(\vhost)$, $S_4(\vhost)$. The total $S_1 + S_2 + S_3 + S_4$ count is $3 + 3 + 3 + 3 = 12$, matching the 12-regularity of $\Gsixcell$ exactly with zero second-family contributions.
+
+\textbf{Total edge count $|E_{S_2}(\vhost)| = 30$.}
+By dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$ (Patch~0587 Lemma~2.2), the 3-neighbour-in-$S_2$ count of $w_0$ extends to every $w_j \in S_2(\vhost)$. Total directed $S_2$-$S_2$ adjacency count = $20 \times 3 = 60$. Total undirected edge count = $60 / 2 = 30$.
+
+\textbf{Coincidence with the dodecahedron edges.}
+The 30 edges $E_{S_2}(\vhost)$ are exactly the 30 edges of the regular dodecahedron formed by $S_2(\vhost)$ under $\Icoh$: each $w_j$ has 3 $S_2$-adjacent 600-cell-neighbours, matching the 3-regularity of the dodecahedron graph (since the dodecahedron has 20 vertices and 30 edges, vertex-degree $2 \cdot 30 / 20 = 3$). Hence $E_{S_2}(\vhost)$ coincides with the dodecahedron edge set up to identification of the 600-cell-edge graph structure with the dodecahedron graph structure on $S_2(\vhost)$.
+$\square$
+\end{proof}
+
+\section{Proof of the perpendicularity identity}\label{sec:proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:g24_hardened}]
+Fix any second-shell-to-second-shell 600-cell edge $(w_{j_1}, w_{j_2}) \in E_{S_2}(\vhost)$, with edge-direction unit vector $\hat{e}_{j_1 j_2}$ defined by~\eqref{eq:edge_unit_def}.
+
+By Lemma~\ref{lem:G2_imported} (G2 imported from Patch~0587) applied independently to $w_{j_1}$ and $w_{j_2}$,
+\begin{equation*}
+w_{j_1} \cdot \vhost \;=\; w_{j_2} \cdot \vhost \;=\; \frac{1}{2}.
+\end{equation*}
+Therefore
+\begin{equation}\label{eq:chord_difference_inner_product}
+(w_{j_2} - w_{j_1}) \cdot \vhost \;=\; (w_{j_2} \cdot \vhost) - (w_{j_1} \cdot \vhost) \;=\; \frac{1}{2} - \frac{1}{2} \;=\; 0.
+\end{equation}
+Under hypothesis (H1), $\nhat = \vhost$, so~\eqref{eq:chord_difference_inner_product} gives $(w_{j_2} - w_{j_1}) \cdot \nhat = 0$.
+
+The edge-direction vector is a positive scalar multiple of $w_{j_2} - w_{j_1}$ (the chord difference normalised by its length); since the inner product with $\nhat$ is linear, this scaling preserves the zero-projection property:
+\begin{equation*}
+\hat{e}_{j_1 j_2} \cdot \nhat \;=\; \frac{(w_{j_2} - w_{j_1}) \cdot \nhat}{|w_{j_2} - w_{j_1}|} \;=\; \frac{0}{|w_{j_2} - w_{j_1}|} \;=\; 0,
+\end{equation*}
+where the chord-difference denominator $|w_{j_2} - w_{j_1}| > 0$ (the two endpoints are distinct since they are joined by a non-trivial $\Gsixcell$-edge). This establishes~\eqref{eq:g24_main} for the chosen edge.
+
+The argument applies identically to every edge $(w_{j_1}, w_{j_2}) \in E_{S_2}(\vhost)$ since the G2 import (Lemma~\ref{lem:G2_imported}) gives the same $1/2$ inner-product value at every second-shell vertex. The 30-fold uniformity of the perpendicularity statement is therefore not via $\Icoh$-transitivity per se, but via the single-value structure of G2 (Remark~\ref{rem:no_transitivity_step}). $\square$
+\end{proof}
+
+\section{Consequences and corollaries}\label{sec:consequences}
+
+\subsection{Vanishing first-order substrate-rate asymmetry on second-shell-to-second-shell edges}\label{sec:vanishing_rate_asymmetry}
+
+\begin{corollary}[Vanishing first-order Mechanism A rate asymmetry on second-shell-to-second-shell edges]\label{cor:vanishing_rate_asymmetry}
+Under (H1)--(H3) and the Mechanism A rate function $r(\hat{e}) = r_0(1 + \delta\,\hat{e} \cdot \nhat)$ (F.1 v1.0~\S4 MA.1), the rate-asymmetry factor on every second-shell-to-second-shell 600-cell edge vanishes at first order in $\delta$:
+\begin{equation}\label{eq:vanishing_rate_asymmetry}
+r(\hat{e}_{j_1 j_2}) - r(-\hat{e}_{j_1 j_2}) \;=\; 2 r_0 \delta (\hat{e}_{j_1 j_2} \cdot \nhat) \;=\; 0
+\end{equation}
+for every $(w_{j_1}, w_{j_2}) \in E_{S_2}(\vhost)$ with edge-direction unit vector $\hat{e}_{j_1 j_2}$.
+\end{corollary}
+
+\begin{proof}
+Immediate from Theorem~\ref{thm:g24_hardened}: $\hat{e}_{j_1 j_2} \cdot \nhat = 0$ kills the first-order $\delta$-coefficient in $r$, yielding $r(\hat{e}_{j_1 j_2}) = r(-\hat{e}_{j_1 j_2}) = r_0$ identically (independent of $\delta$ at first order). $\square$
+\end{proof}
+
+\subsection{Inputs for downstream Route C sequence 2 path-class enumeration A6}\label{sec:use_in_a6}
+
+Corollary~\ref{cor:vanishing_rate_asymmetry}'s vanishing of the first-order rate asymmetry on second-shell-to-second-shell edges is a load-bearing simplification for the path-class weight enumeration at $\mathcal{O}(\delta^2)$ in artifact A6 (\texttt{o\_delta\_squared\_path\_class\_weights.tex}). Path classes that traverse a second-shell-to-second-shell edge contribute a factor proportional to the rate asymmetry on that edge; by Corollary~\ref{cor:vanishing_rate_asymmetry}, these contributions vanish at first order in $\delta$ for the second-shell-edge step. The path classes that survive at $\mathcal{O}(\delta^2)$ therefore have their perturbative insertion(s) on non-second-shell-to-second-shell edges. This is exactly parallel to Patch~0551 Corollary~4.1's observation that the first-shell-to-first-shell edges contribute zero rate-asymmetry at first order, restricting the $\mathcal{O}(\delta^1)$ current at $\vhost$ to host-to-first-shell edges in F.1 v1.0~\S7.
+
+\subsection{Cross-sector consistency with Capotauro v2.0 K3-base protection}\label{sec:capotauro_parallel}
+
+The second-shell perpendicularity result has a structural parallel in Capotauro~v2.0~\S5.6 K3-base protection: under vertex-aligned Reading~C with $\nhat = \vhost$, the K3-base substructure of the Capotauro chirality theorem inherits a perpendicular-to-$\nhat$ protection at first order in the spatial-sector substrate-locality perturbation amplitude $\epsilon$. The shared underlying mechanism is the chord-difference argument: any substructure built from vertices at uniform $\nhat$-projection inherits perpendicular-to-$\nhat$ edge directions, giving first-order substrate-rate protection. The K3-base, the W-bracelet (Capotauro~v2.0~\S5--\S6), the first-shell icosahedron (Patch~0551), and the second-shell dodecahedron (the present Patch) are all instances of this general shell-protection pattern.
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:g24_hardened} is scope-bounded by hypotheses (H1)--(H3) and the imports from Patch~0587. This section enumerates four classes of generalisations that lie outside the present theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Higher-shell perpendicularity primitives are NOT addressed.} The within-shell perpendicularity pattern (every within-shell edge is perpendicular to $\nhat$) extends formally to all shells $S_n(\vhost)$ by the chord-difference argument, but each higher-shell extension requires importing the corresponding $G_n$ inner-product primitive at publication-grade Layer~3 unconditional rigor. The present Patch establishes the $n = 2$ case using G2 (Patch~0587). Future $n = 3, 4, \ldots$ extensions would parallel.
+
+\item \textbf{First-shell-to-second-shell edge-direction projections are NOT addressed here.} The 60 first-shell-to-second-shell 600-cell edges have endpoints at \emph{different} $\nhat$-projections ($\phi/2$ vs $1/2$), so the chord-difference argument does NOT give zero; rather, these edges have non-zero $\nhat$-projections that decompose under the $D_{3d}$ first-shell-vertex stabilizer into five orbit classes. This is the content of artifact A4 (\texttt{first\_shell\_second\_shell\_edge\_orbits.tex}; G2.3), a Route~C sequence~2 artifact conditional on both Patch~0587 (G2) and Patch~0588 (G2.1), deferred per single-artifact-per-Patch discipline.
+
+\item \textbf{Non-vertex-aligned Reading C variants are NOT covered.} The theorem requires $\nhat = \vhost$ (hypothesis (H1)). Alternative Reading~C placements would yield different second-shell within-shell edge directions. Registered as OPEN-FP-F1-5.
+
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP A1--A11.} The 600-cell polytope and its shell decomposition are taken as polytope-theoretic input \cite{coxeter1973}. A Layer~4 axiomatic derivation is OPEN-FP-F1-2.
+\end{enumerate}
+
+\section{Cross-references and consequences}\label{sec:cross_references}
+
+\subsection{Completion of the A3 + A5 parallel pair}\label{sec:parallel_pair_completion}
+
+With Patches~0588 (G2.1 host-to-second-shell projection) and~0589 (G2.4 second-shell perpendicularity) both landed at publication-grade Layer~3 unconditional rigor, the parallel A3 + A5 pair of Route~C sequence~2 unlocked by Patch~0587's G2 hardening is complete. The two parallel artifacts together with G2 (Patch~0587) form a publication-grade Layer~3 unconditional second-shell building-block trio:
+\begin{itemize}[leftmargin=2em]
+\item Patch~0587 (G2): $w_j \cdot \vhost = 1/2$ uniformly (second-shell inner-product primitive).
+\item Patch~0588 (G2.1): $\hat{w}_j \cdot \nhat = -1/2$ uniformly (host-to-second-shell projection).
+\item Patch~0589 (G2.4; this paper): $\hat{e}_{j_1 j_2} \cdot \nhat = 0$ uniformly (second-shell-to-second-shell perpendicularity).
+\end{itemize}
+This second-shell trio is structurally parallel to the first-shell trio: G1 (Patch~0571), G1.1 host-to-first-shell projection (Patch~0552), G1.2 first-shell perpendicularity (Patch~0551). The first-shell trio is the input for the F.1 v1.0 first-order coefficient computation; the second-shell trio (now in hand) is one of the input groups for the upcoming A6 + A7 sequence-2 second-order coefficient computation.
+
+\subsection{Position relative to OPEN-FP-F1-1 Route C sequence 2}\label{sec:open_fp_f1_1_position}
+
+OPEN-FP-F1-1 Route~C sequence~2 (scoping document \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S5.1) comprises seven artifacts A1--A7. Status at the close of the present Patch:
+\begin{itemize}[leftmargin=2em]
+\item A1 (structural theorem): CLOSED at Patch~0585.
+\item A2 (G2 hardening): CLOSED at Patch~0587.
+\item A3 (G2.1 host-to-second-shell projection): CLOSED at Patch~0588 (parallel partner to the present Patch).
+\item A5 (G2.4 second-shell perpendicularity; \textbf{this Patch~0589}): CLOSED.
+\item A4 (G2.3 first-shell-to-second-shell edge orbit classification): OPEN; conditional on Patches~0587 + 0588, both now in hand. A4 may proceed as the next Route~C sequence~2 closure Patch.
+\item A6 (path-class weight enumeration): OPEN; conditional on A4 + the framework-extension hypothesis (H5) at sketch-document Layer~3 per DG-1 sub-option (A) (per Patch~0585 framework setup).
+\item A7 (umbrella assembly producing THEO-DSL-5 candidate): OPEN; conditional on A1--A6.
+\end{itemize}
+The sequence-2 closure budget (4--8 sessions per the original scoping estimate) has now consumed three of those budgetary sessions across Patches~0587 + 0588 + 0589. Remaining budget: 1--5 sessions for A4 + A6 + A7.
+
+\section{Conclusion --- the F.1 Layer 3 hardening sequence advances to eight artifacts}\label{sec:conclusion}
+
+Theorem~\ref{thm:g24_hardened} with the G2 import from Patch~0587 hardens the second-shell-to-second-shell edge-direction perpendicularity identity G2.4 at publication-grade Layer~3 unconditional rigor: $\hat{e}_{j_1 j_2} \cdot \nhat = 0$ identically across all 30 second-shell-to-second-shell 600-cell edges. The proof is essentially a chord-difference calculation using the single-value structure of G2. The four exclusion classes (E1)--(E4) make explicit what is NOT covered.
+
+\paragraph{Position in the F.1 hardened-theorem sequence (now eight artifacts).}
+With Patch~0589, the F.1 Dynamical Substrate Law Layer~3 hardened-theorem sequence has eight artifacts:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Patches~0550 + 0551 + 0552 + 0571} hardened the $\mathcal{O}(\delta^1)$ first-shell content (the original four-artifact trio + G1 primitive sequence~1 completion).
+\item \textbf{Patch~0585} hardened the $\mathcal{O}(\delta^k)$ all-orders parallel-to-$\nhat$ structural theorem (Route~C sequence~1).
+\item \textbf{Patch~0587} hardened the G2 second-shell inner-product primitive (Route~C sequence~2 A2).
+\item \textbf{Patch~0588} hardened the G2.1 host-to-second-shell projection (Route~C sequence~2 A3).
+\item \textbf{Patch~0589 (this paper)} hardens the G2.4 second-shell perpendicularity (Route~C sequence~2 A5).
+\end{itemize}
+
+The next sequence-2 Patch is A4 (first-shell-to-second-shell edge orbit classification G2.3, conditional on G2 + G2.1, both now in hand at publication-grade Layer~3 unconditional rigor). After A4, A6 + A7 close the sequence and complete the OPEN-FP-F1-1 coefficient sub-question via the THEO-DSL-5 candidate $\alpha_2$.
+
+\paragraph{Anti-erasure note.}
+The present hardening preserves: (a)~the explicit edge-count derivation in Lemma~\ref{lem:30_edges_count} \S\ref{sec:edge_count_proof} (the 30 dodecahedron edges of $S_2(\vhost)$ coincide with the 30 second-shell-to-second-shell 600-cell edges) rather than the implicit appeal to "the dodecahedron has 30 edges" that would silence the polytope-theoretic identification; (b)~Remark~\ref{rem:no_transitivity_step}'s registration that the 30-fold uniformity is via the single-value structure of G2 (not via $\Icoh$-transitivity per se), distinguishing this artifact's proof structure from the Patch~0588 partner's reliance on dodecahedral transitivity; (c)~Remark~\ref{rem:mirror_of_0551}'s registration of the general shell-by-shell perpendicularity pattern as a candidate observation for future higher-shell extension.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+3rd ed., Dover Publications, New York, 1973.
+
+\bibitem{humphreys1990}
+J.~E.~Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge Studies in Advanced Mathematics 29, Cambridge University Press, 1990.
+
+\bibitem{abshier_first_shell_perpendicularity}
+T.~L.~Abshier,
+``First-Shell-to-First-Shell Edge-Direction Perpendicularity in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0551, 24~May~2026, \texttt{hardened\_theorems/first\_shell\_perpendicularity.tex}.
+
+\bibitem{abshier_g2_hardening}
+T.~L.~Abshier and Claude Opus 4.7,
+``Second-Shell Inner-Product Primitive (G2) in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0587, 26~May~2026, \texttt{hardened\_theorems/second\_shell\_inner\_product\_primitive.tex}.
+
+\bibitem{abshier_host_second_shell_projection}
+T.~L.~Abshier and Claude Opus 4.7,
+``Host-to-Second-Shell Uniform Projection (G2.1) in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0588, 26~May~2026, \texttt{hardened\_theorems/host\_second\_shell\_uniform\_projection.tex}.
+
+\bibitem{abshier_f1_dynamical_substrate_law}
+T.~L.~Abshier,
+``The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading~C in the 600-Cell,''
+CPP Flagship Paper Series (F-line), Version 1.0, 24~May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}
