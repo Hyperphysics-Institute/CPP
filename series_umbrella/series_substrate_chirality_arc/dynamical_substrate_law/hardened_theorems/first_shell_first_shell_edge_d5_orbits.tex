@@ -1,0 +1,320 @@
+% Patch 0602 A3_E = G1_E.2: First-Shell-to-First-Shell Edge Orbit Decomposition
+% under D_5 Stabilizer at Edge-Aligned Reading C in the 600-Cell.
+%
+% OPEN-FP-F1-5 Sequence-2A third substantive artifact under DG-F15A-1 default-(A)
+% stepping-stone trajectory + DG-F15A-2 default-(A) all-orbit-representative closed-forms
+% policy. Publication-grade Layer 3 unconditional rigor for the first-shell-to-first-shell
+% edge orbit decomposition under D_5 (the analog of Patch 0551 G1.2 uniform-perpendicularity
+% identity, generalized from I_h single-value 0 to D_5 multi-orbit closed-form values).
+% Quantifies the substantive Sequence-2A structural finding scoped at Patch 0599 §5:
+% the B.2 path-class which vanishes exactly under vertex-aligned via G1.2 perpendicularity
+% is generically non-zero under edge-aligned.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+
+\title{First-Shell-to-First-Shell Edge Orbit Decomposition under \texorpdfstring{$D_5$}{D5} Stabilizer\\
+at Edge-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2A Artifact A3$_E$ = G1$_E$.2)}}
+\author{Patch 0602 hardened-theorem artifact}
+\date{27 May 2026 (Session 146)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We derive at \textbf{publication-grade Layer 3 unconditional} rigor the closed-form
+$D_5$-orbit decomposition of the 30 icosahedral first-shell-to-first-shell edges at
+the host vertex $v_{\text{host}}$ of the 600-cell and the corresponding edge-direction
+projections $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}$ onto the substrate primitive
+direction at edge-aligned Reading C. The 30 unordered icosahedral edges decompose into
+\textbf{5 unordered $D_5$-orbit classes} indexed by orbit-pairs:
+$(\mathcal{O}_1, \mathcal{O}_2)$ 5 edges, $(\mathcal{O}_2, \mathcal{O}_2)$ 5 edges,
+$(\mathcal{O}_2, \mathcal{O}_3)$ 10 edges, $(\mathcal{O}_3, \mathcal{O}_3)$ 5 edges,
+$(\mathcal{O}_3, \mathcal{O}_4)$ 5 edges. The corresponding 60 oriented edges split
+into \textbf{8 oriented $D_5$-orbits}. The eight projection values are:
+\[
+\begin{array}{l|c|c|c}
+\text{Orbit} & \text{Source}\to\text{Target} & \text{Size} & \hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \\\hline
+T_1 & \mathcal{O}_1 \to \mathcal{O}_2 & 5 & -1/2 \\
+T_1' & \mathcal{O}_2 \to \mathcal{O}_1 & 5 & +1/2 \\
+T_2 & \mathcal{O}_2 \to \mathcal{O}_2 \text{ (N ring)} & 10 & 0 \\
+T_3 & \mathcal{O}_2 \to \mathcal{O}_3 & 10 & -\phi/2 \\
+T_3' & \mathcal{O}_3 \to \mathcal{O}_2 & 10 & +\phi/2 \\
+T_4 & \mathcal{O}_3 \to \mathcal{O}_3 \text{ (S ring)} & 10 & 0 \\
+T_5 & \mathcal{O}_3 \to \mathcal{O}_4 & 5 & -1/2 \\
+T_5' & \mathcal{O}_4 \to \mathcal{O}_3 & 5 & +1/2
+\end{array}
+\]
+The proof uses the projection formula $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} = \phi^2(u_j \cdot u_1 - u_i \cdot u_1)$ (derived from 600-cell first-shell uniform-distance identity + Patch 0601 graph-distance shell correspondence) combined with the orbit-pair classification of icosahedral edges. Three substantive corollaries are established: (i) only 2 of 5 unordered orbits ($T_2, T_4$, the two pentagonal rings) preserve vertex-aligned perpendicularity --- the other 3 orbits contribute non-zero edge-direction projections; (ii) this is the quantitative structural origin of the B.2 path-class non-vanishing at edge-aligned (scoped at Patch 0599 \S5 as substantive Sequence-2A finding); (iii) the two zero-projection orbits are exactly the orbits where both endpoints lie in the same $D_5$-orbit-of-vertices, with the zero arising geometrically because $u \cdot u_1$ is constant on each $D_5$-orbit. Result registered as primitive \textbf{G1$_E$.2} for the OPEN-FP-F1-5 Sequence-2A trajectory.
+\end{abstract}
+
+\section{Introduction and inheritance}
+
+\subsection{Inheritance}
+
+THEO-DSL-1 (Patch 0550, hardened to publication-grade Layer 3 unconditional) establishes shell-locality of $\vec{j}_{DI}^{\text{net}}(v_{\text{host}})|_{\mathcal{O}(\delta^k)}$ in the 600-cell, restricting the second-order contribution to 2-edge paths starting from $v_{\text{host}}$ (the four B-classes of Patch 0599 \S5).
+
+Patch 0551 \textbf{G1.2 first-shell-to-first-shell edge perpendicularity} establishes at publication-grade Layer 3 unconditional rigor that the edge-direction unit vectors $\hat{e}_{ij}$ of the 30 icosahedral first-shell-to-first-shell edges at $v_{\text{host}}$ satisfy $\hat{e}_{ij} \cdot \hat{n}_\rho = 0$ uniformly across all edges (under vertex-aligned Reading C). This identity is the structural origin of the B.2 path-class vanishing exactly under vertex-aligned, contributing zero to the THEO-DSL-5 (candidate) $\alpha_2 = -9/\phi^2$ closed-form (Patch 0591).
+
+Patch 0601 \textbf{G1$_E$} establishes the four-value orbit decomposition of first-shell projections $\hat{u}_i \cdot \hat{n}_{\text{edge}}$ under $D_5$, with the orbit-class-vs-graph-distance correspondence (Corollary 4 of Patch 0601): the four $D_5$ orbits coincide bijectively with the 600-cell graph-distance shells of $u_1$ at distances $0, 1, 2, 3$, with $u_i \cdot u_1$ values $\{1, \phi/2, 1/2, 1/(2\phi)\}$ respectively. This correspondence is the load-bearing input for the edge-projection computation here.
+
+Patch 0599 \S5 scoping document identified the substantive Sequence-2A structural finding: the B.2 path-class which vanishes exactly under vertex-aligned via G1.2 perpendicularity is \emph{generically non-zero} under edge-aligned, with the structural origin being that the 30 icosahedral first-shell-to-first-shell edges decompose into multiple $D_5$ orbits with distinct edge-direction projections onto $\hat{n}_{\text{edge}}$. This artifact quantifies that scoping finding at publication-grade Layer 3 unconditional rigor.
+
+\subsection{Scope of Patch 0602 A3$_E$ = G1$_E$.2}
+
+This artifact establishes the closed-form orbit decomposition of the 30 icosahedral first-shell-to-first-shell edges under $D_5$ (5 unordered orbit-pair classes; 8 oriented orbits) and the corresponding edge-direction projections onto $\hat{n}_{\text{edge}}$. The result is the analog of Patch 0551 G1.2 perpendicularity, generalized from $I_h$-uniform vanishing to $D_5$ multi-orbit closed-form values. The result is registered as the geometric primitive \textbf{G1$_E$.2} for subsequent OPEN-FP-F1-5 Sequence-2A artifacts (A4$_E$ second-shell + A5$_E$ path-class weight enumeration).
+
+\section{Hypothesis stack}
+
+The hypotheses required for this artifact:
+\begin{itemize}
+\item[(H1)] \textbf{Edge-aligned Reading C}: $\hat{n} = \hat{n}_{\text{edge}} = \hat{u}_1$.
+\item[(H2)] \textbf{Vertex-host convention}: $v_{\text{host}}$ preserved as a 600-cell vertex.
+\item[(H3)] \textbf{Icosahedral residual symmetry $H_3 = I_h$} at $v_{\text{host}}$.
+\end{itemize}
+
+The result is purely geometric --- no (H4) shell-locality or (H5$_E$) framework-extension hypothesis required.
+
+\section{Edge-direction projection formula}
+
+\begin{lemma}[Edge-direction projection formula for first-shell-to-first-shell edges]
+\label{lem:edge_projection_formula}
+For any oriented icosahedral first-shell-to-first-shell edge $u_i \to u_j$ at the host vertex $v_{\text{host}}$, the projection of the unit edge-direction $\hat{e}_{ij} = (u_j - u_i)/|u_j - u_i|$ onto the substrate primitive direction $\hat{n}_{\text{edge}} = \hat{u}_1$ is
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2\,(u_j \cdot u_1 \,-\, u_i \cdot u_1).
+\]
+\end{lemma}
+
+\begin{proof}
+The icosahedral edge length in the 600-cell is $|u_j - u_i| = 1/\phi$ (every first-shell-to-first-shell icosahedral edge is also a 600-cell graph edge with unit-vertex chord length $1/\phi$). Hence $\hat{e}_{ij} = \phi(u_j - u_i)$.
+
+The substrate primitive direction in the 600-cell unit-vertex coordinates is
+\[
+\hat{n}_{\text{edge}} \;=\; \hat{u}_1 \;=\; \phi(u_1 - v_{\text{host}}),
+\]
+using $\hat{u}_1 = (u_1 - v_{\text{host}})/|u_1 - v_{\text{host}}|$ and $|u_1 - v_{\text{host}}| = 1/\phi$.
+
+Therefore
+\begin{align*}
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;&=\; \phi^2 (u_j - u_i) \cdot (u_1 - v_{\text{host}}) \\
+&=\; \phi^2 \bigl[(u_j - u_i) \cdot u_1 \,-\, (u_j - u_i) \cdot v_{\text{host}}\bigr] \\
+&=\; \phi^2 (u_j \cdot u_1 - u_i \cdot u_1) \,-\, \phi^2 (u_j \cdot v_{\text{host}} - u_i \cdot v_{\text{host}}).
+\end{align*}
+For all first-shell vertices, $u_k \cdot v_{\text{host}} = \phi/2$ uniformly (the canonical 600-cell first-shell inner-product on unit $S^3$). Hence $u_j \cdot v_{\text{host}} - u_i \cdot v_{\text{host}} = 0$ for any first-shell-to-first-shell edge, and
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2 (u_j \cdot u_1 - u_i \cdot u_1).
+\]
+\end{proof}
+
+\begin{remark}[Vertex-aligned specialization]
+Substituting $\hat{n}_{\text{edge}} \to \hat{n}_\rho = v_{\text{host}}$ in the above proof: the formula becomes $\hat{e}_{ij} \cdot \hat{n}_\rho = \phi(u_j - u_i) \cdot v_{\text{host}} = \phi(u_j \cdot v_{\text{host}} - u_i \cdot v_{\text{host}}) = 0$ identically, recovering Patch 0551 G1.2 perpendicularity. The structural difference at edge-aligned vs vertex-aligned is that $u_k \cdot u_1$ takes \emph{four distinct values} across the four $D_5$ orbits (per Patch 0601 graph-distance shell correspondence), whereas $u_k \cdot v_{\text{host}}$ takes a \emph{single uniform value} $\phi/2$ across all 12 first-shell vertices.
+\end{remark}
+
+\section{Unordered orbit-pair classification of icosahedral edges}
+
+\begin{lemma}[Icosahedral edge-orbit-pair classification under $D_5$]
+\label{lem:edge_orbit_classification}
+Under (H1)--(H3), the 30 icosahedral first-shell-to-first-shell edges at $v_{\text{host}}$ decompose into 5 unordered $D_5$-orbit classes indexed by orbit-pairs of vertex endpoints in $\{\mathcal{O}_1, \mathcal{O}_2, \mathcal{O}_3, \mathcal{O}_4\}$:
+\[
+\begin{array}{l|l|c}
+\text{Class} & \text{Orbit pair} & \text{Edge count} \\\hline
+\text{C1} & \{\mathcal{O}_1, \mathcal{O}_2\} & 5 \\
+\text{C2} & \{\mathcal{O}_2, \mathcal{O}_2\} \text{ (northern ring)} & 5 \\
+\text{C3} & \{\mathcal{O}_2, \mathcal{O}_3\} & 10 \\
+\text{C4} & \{\mathcal{O}_3, \mathcal{O}_3\} \text{ (southern ring)} & 5 \\
+\text{C5} & \{\mathcal{O}_3, \mathcal{O}_4\} & 5
+\end{array}
+\]
+Total: $5 + 5 + 10 + 5 + 5 = 30$ edges. No other orbit-pairs occur (in particular, no icosahedral edge connects $\mathcal{O}_1$ directly to $\mathcal{O}_3, \mathcal{O}_4$, nor $\mathcal{O}_2$ directly to $\mathcal{O}_4$).
+\end{lemma}
+
+\begin{proof}
+By Patch 0601 Lemma 3 ($D_5$ orbit-class correspondence), $\mathcal{O}_1 = \{u_1\}$, $\mathcal{O}_2$ = northern pentagonal ring (5 icosahedral neighbors of $u_1$), $\mathcal{O}_3$ = southern pentagonal ring (5 icosahedral non-neighbors same-hemisphere of $u_1$), $\mathcal{O}_4 = \{u_{12}\}$ (icosahedral antipode of $u_1$).
+
+The icosahedron has 30 edges (each of 12 vertices has 5 neighbors; $12 \cdot 5 / 2 = 30$).
+
+For $u_1 \in \mathcal{O}_1$: its 5 icosahedral neighbors are exactly $\mathcal{O}_2$ by definition. So 5 edges in $\{\mathcal{O}_1, \mathcal{O}_2\}$ (class C1).
+
+For $u_{12} \in \mathcal{O}_4$: by icosahedral antipode symmetry, its 5 neighbors form a pentagonal ring at angular distance $\arccos(1/\sqrt{5})$ from $u_{12}$, equivalently at angular distance $\arccos(-1/\sqrt{5})$ from $u_1$ --- i.e., the 5 non-adjacent same-hemisphere vertices of $u_1$, which is $\mathcal{O}_3$. So 5 edges in $\{\mathcal{O}_3, \mathcal{O}_4\}$ (class C5).
+
+For the antiprismatic structure of the icosahedron: $u_1, u_{12}$ are north and south poles, with $\mathcal{O}_2$ as the northern pentagonal ring and $\mathcal{O}_3$ as the southern (rotated by $36°$). Each vertex of $\mathcal{O}_2$ has 5 icosahedral neighbors: $u_1$ (1) + 2 northern ring neighbors (2 in $\mathcal{O}_2$) + 2 southern ring neighbors (2 in $\mathcal{O}_3$). So $\mathcal{O}_2$-internal edges: $5 \cdot 2 / 2 = 5$ (class C2, northern pentagonal ring as 5-cycle). $\{\mathcal{O}_2, \mathcal{O}_3\}$ cross edges: $5 \cdot 2 = 10$ (class C3).
+
+Similarly each $\mathcal{O}_3$ vertex has 5 neighbors: $u_{12}$ (1) + 2 southern ring neighbors (2 in $\mathcal{O}_3$) + 2 northern ring neighbors (2 in $\mathcal{O}_2$). $\mathcal{O}_3$-internal edges: 5 (class C4). The $\mathcal{O}_3$-$\mathcal{O}_2$ cross edges from $\mathcal{O}_3$-side: $5 \cdot 2 = 10$, matching C3's count (every cross edge counted from both sides).
+
+Total edge count: $5 + 5 + 10 + 5 + 5 = 30$. \checkmark
+
+No $\{\mathcal{O}_1, \mathcal{O}_3\}, \{\mathcal{O}_1, \mathcal{O}_4\}, \{\mathcal{O}_2, \mathcal{O}_4\}$ edges: by icosahedral angular distances $\arccos(\hat{u}_i \cdot \hat{u}_j)$, only the four orbit pairs above contain icosahedral neighbors (inner product $1/2$); the rest correspond to non-neighbor pairs.
+
+That each class is a single $D_5$-orbit follows from the principal $C_5$ rotation acting transitively on each pentagonal ring (5 cycle) and the reflections of $D_5$ preserving the orbit-pair class without splitting it.
+\end{proof}
+
+\section{Oriented orbit refinement}
+
+\begin{lemma}[Oriented $D_5$-orbit refinement of icosahedral edges]
+\label{lem:oriented_orbits}
+Under (H1)--(H3), the 60 oriented icosahedral edges decompose into 8 $D_5$-orbits, refining the 5 unordered classes of Lemma~\ref{lem:edge_orbit_classification}:
+\begin{itemize}
+\item Class C1 $\{\mathcal{O}_1, \mathcal{O}_2\}$ refines to 2 oriented orbits: $T_1 = \mathcal{O}_1 \to \mathcal{O}_2$ (5 edges) + $T_1' = \mathcal{O}_2 \to \mathcal{O}_1$ (5 edges).
+\item Class C2 $\{\mathcal{O}_2, \mathcal{O}_2\}$ remains 1 oriented orbit: $T_2$ (10 edges; both orientations of each ring edge unified under the midpoint-reflection symmetry of $D_5$).
+\item Class C3 $\{\mathcal{O}_2, \mathcal{O}_3\}$ refines to 2 oriented orbits: $T_3 = \mathcal{O}_2 \to \mathcal{O}_3$ (10 edges) + $T_3' = \mathcal{O}_3 \to \mathcal{O}_2$ (10 edges).
+\item Class C4 $\{\mathcal{O}_3, \mathcal{O}_3\}$ remains 1 oriented orbit: $T_4$ (10 edges).
+\item Class C5 $\{\mathcal{O}_3, \mathcal{O}_4\}$ refines to 2 oriented orbits: $T_5 = \mathcal{O}_3 \to \mathcal{O}_4$ (5 edges) + $T_5' = \mathcal{O}_4 \to \mathcal{O}_3$ (5 edges).
+\end{itemize}
+Total: $5+5+10+10+10+10+5+5 = 60$ oriented edges in $2+1+2+1+2 = 8$ orbits.
+\end{lemma}
+
+\begin{proof}
+For inter-orbit unordered classes C1, C3, C5: a $D_5$ element cannot swap endpoints lying in different vertex-orbits (since $D_5$ acts on vertex-orbits as identity by orbit-stabilizer). Hence the two orientations of each inter-orbit edge are in separate $D_5$-orbits, yielding 2 oriented orbits per unordered class.
+
+For intra-orbit ring classes C2, C4: each pentagonal ring is a 5-cycle, with edges connecting adjacent vertices. The $D_5$ stabilizer of $\{v_{\text{host}}, u_1\}$ acting on the icosahedron contains reflections through the midpoint of each ring edge (the antiprismatic reflection symmetry). Such a midpoint-reflection through edge $(u_i^{(2)}, u_{i+1}^{(2)})$ swaps the two endpoints, hence unifies the two orientations of the edge into a single $D_5$-orbit. Repeating for all 5 ring edges: the 10 oriented ring edges form a single $D_5$-orbit of size 10.
+
+Total: 8 oriented orbits.
+\end{proof}
+
+\section{Main theorem: G1$_E$.2 edge-direction projection orbit values}
+
+\begin{theorem}[G1$_E$.2 first-shell-to-first-shell edge-direction projection orbit values]
+\label{thm:G1E2}
+Under (H1)--(H3), the projections of the 60 oriented icosahedral first-shell-to-first-shell edge-direction unit vectors $\hat{e}_{ij}$ onto $\hat{n}_{\text{edge}} = \hat{u}_1$ take the closed-form values:
+\[
+\boxed{\;\;
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\;
+\begin{cases}
+-1/2 & \text{Orbit } T_1 \;\; (\mathcal{O}_1 \to \mathcal{O}_2,\;5\text{ edges}) \\
++1/2 & \text{Orbit } T_1' \;\; (\mathcal{O}_2 \to \mathcal{O}_1,\;5\text{ edges}) \\
+0 & \text{Orbit } T_2 \;\; (\mathcal{O}_2 \to \mathcal{O}_2 \text{ ring},\;10\text{ edges}) \\
+-\phi/2 & \text{Orbit } T_3 \;\; (\mathcal{O}_2 \to \mathcal{O}_3,\;10\text{ edges}) \\
++\phi/2 & \text{Orbit } T_3' \;\; (\mathcal{O}_3 \to \mathcal{O}_2,\;10\text{ edges}) \\
+0 & \text{Orbit } T_4 \;\; (\mathcal{O}_3 \to \mathcal{O}_3 \text{ ring},\;10\text{ edges}) \\
+-1/2 & \text{Orbit } T_5 \;\; (\mathcal{O}_3 \to \mathcal{O}_4,\;5\text{ edges}) \\
++1/2 & \text{Orbit } T_5' \;\; (\mathcal{O}_4 \to \mathcal{O}_3,\;5\text{ edges})
+\end{cases}
+\;\;}
+\]
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:edge_projection_formula}, $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} = \phi^2(u_j \cdot u_1 - u_i \cdot u_1)$ for the oriented edge $u_i \to u_j$. Substituting the orbit values from Patch 0601 Corollary~4 (graph-distance shell correspondence: $u \cdot u_1$ values $1, \phi/2, 1/2, 1/(2\phi)$ for $\mathcal{O}_1, \mathcal{O}_2, \mathcal{O}_3, \mathcal{O}_4$ respectively):
+
+\textbf{Orbit $T_1$} ($u_1 \to u_i^{(2)}$ for $u_i^{(2)} \in \mathcal{O}_2$):
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2(\phi/2 - 1) \;=\; \frac{\phi^3 - 2\phi^2}{2} \;=\; \frac{(2\phi+1) - 2(\phi+1)}{2} \;=\; \frac{-1}{2}.
+\]
+Using $\phi^3 = 2\phi + 1$ and $\phi^2 = \phi + 1$.
+
+\textbf{Orbit $T_1'$}: reverse orientation flips the projection sign: $+1/2$.
+
+\textbf{Orbit $T_2$} ($u_i^{(2)} \to u_j^{(2)}$ for $u_i^{(2)}, u_j^{(2)} \in \mathcal{O}_2$): both endpoints have $u \cdot u_1 = \phi/2$, hence $u_j \cdot u_1 - u_i \cdot u_1 = 0$ and the projection is $0$.
+
+\textbf{Orbit $T_3$} ($u_i^{(2)} \to u_j^{(3)}$ for $u_i^{(2)} \in \mathcal{O}_2, u_j^{(3)} \in \mathcal{O}_3$):
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2(1/2 - \phi/2) \;=\; \frac{\phi^2(1-\phi)}{2} \;=\; \frac{(\phi+1)(1-\phi)}{2} \;=\; \frac{1 - \phi^2}{2} \;=\; \frac{-\phi}{2}.
+\]
+Using $\phi^2 - 1 = \phi$.
+
+\textbf{Orbit $T_3'$}: reverse orientation: $+\phi/2$.
+
+\textbf{Orbit $T_4$} ($u_i^{(3)} \to u_j^{(3)}$ for $u_i^{(3)}, u_j^{(3)} \in \mathcal{O}_3$): both endpoints have $u \cdot u_1 = 1/2$, projection $0$.
+
+\textbf{Orbit $T_5$} ($u_i^{(3)} \to u_{12}$ for $u_i^{(3)} \in \mathcal{O}_3$):
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2(1/(2\phi) - 1/2) \;=\; \frac{\phi^2 - \phi^3}{2\phi} \;=\; \frac{(\phi+1) - (2\phi+1)}{2\phi} \;=\; \frac{-\phi}{2\phi} \;=\; -\frac{1}{2}.
+\]
+
+\textbf{Orbit $T_5'$}: reverse orientation: $+1/2$.
+
+All 8 orbit projection values determined.
+\end{proof}
+
+\section{Corollaries}
+
+\begin{corollary}[Sum-of-squares identity]
+\label{cor:sum_of_squares}
+Summing the squared projections across all 60 oriented icosahedral first-shell-to-first-shell edges:
+\[
+\sum_{\text{oriented edges}} (\hat{e}_{ij} \cdot \hat{n}_{\text{edge}})^2 \;=\; 10 + 5\phi \;\approx\; 18.09.
+\]
+Equivalently, summing across the 30 unordered edges: $5 + (5/2)\phi \approx 9.045$.
+\end{corollary}
+
+\begin{proof}
+Direct: $5 \cdot (1/4) + 5 \cdot (1/4) + 10 \cdot 0 + 10 \cdot (\phi^2/4) + 10 \cdot (\phi^2/4) + 10 \cdot 0 + 5 \cdot (1/4) + 5 \cdot (1/4) = 5/4 + 5/4 + 0 + 5\phi^2/2 + 5\phi^2/2 + 0 + 5/4 + 5/4 = 20/4 + 5\phi^2 = 5 + 5(\phi+1) = 10 + 5\phi$.
+
+The unordered sum is half this since each unordered edge contributes the same squared projection to both orientations: $(10 + 5\phi)/2 = 5 + 5\phi/2$.
+\end{proof}
+
+\begin{corollary}[Comparison with vertex-aligned G1.2]
+\label{cor:vertex_aligned_comparison}
+Under vertex-aligned Reading C, $\hat{e}_{ij} \cdot \hat{n}_\rho = 0$ uniformly across all 60 oriented edges (Patch 0551 G1.2). Under edge-aligned Reading C, only \textbf{20 of 60} oriented edges (orbits $T_2, T_4$, the two pentagonal-ring orbits) preserve this vanishing condition. The other \textbf{40 oriented edges} (orbits $T_1, T_1', T_3, T_3', T_5, T_5'$) have generically non-zero edge-direction projections.
+\end{corollary}
+
+\begin{corollary}[Geometric origin of zero-projection ring orbits]
+\label{cor:ring_zero_geometric}
+The two zero-projection orbits $T_2, T_4$ are exactly the orbits where both endpoints lie in the same $D_5$-orbit-of-vertices ($\mathcal{O}_2$ for $T_2$, $\mathcal{O}_3$ for $T_4$). The zero projection arises geometrically because $u \cdot u_1$ is constant on each $D_5$-orbit (a consequence of Patch 0601 graph-distance shell correspondence), hence $u_j \cdot u_1 - u_i \cdot u_1 = 0$ identically for any edge within a single orbit.
+\end{corollary}
+
+\section{Substantive findings}
+
+\subsection{Finding A3-F1: Two of five unordered orbits preserve vertex-aligned perpendicularity}
+
+Of the 5 unordered orbit-pair classes C1--C5 of Lemma~\ref{lem:edge_orbit_classification}, exactly 2 (classes C2 and C4, the two pentagonal-ring intra-orbit classes) preserve the vertex-aligned $\hat{e}_{ij} \cdot \hat{n} = 0$ perpendicularity. The other 3 classes (C1, C3, C5) have non-zero edge-direction projections onto $\hat{n}_{\text{edge}}$, with projection values $\{\pm 1/2, \pm\phi/2, \pm 1/2\}$ respectively.
+
+\subsection{Finding A3-F2: Quantitative structural origin of B.2 path-class non-vanishing at edge-aligned}
+
+Patch 0599 \S5 scoped the structural finding that the B.2 first-shell-trans path-class (60 paths $v_{\text{host}} \to u_i \to u_j$ with $u_i, u_j$ icosahedrally-adjacent first-shell vertices) which vanishes \emph{exactly} under vertex-aligned via G1.2 perpendicularity is \emph{generically non-zero} under edge-aligned. The quantitative form of this structural finding is now established: of the 60 paths in B.2, 20 paths (those with second-edge in $T_2$ or $T_4$ ring orbits) contribute zero to the B.2 sum; the other 40 paths contribute non-zero amounts proportional to $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \in \{\pm 1/2, \pm \phi/2\}$.
+
+This is the geometric mechanism by which the dimensional-growth pattern $1 \to 2$ at second order (from THEO-DSL-6 candidate) manifests quantitatively: the path-class contributions that exactly cancel under $I_h$-uniform vertex-aligned geometry no longer cancel under the $D_5$-symmetric edge-aligned geometry, producing a non-zero second-order substrate-current vector in the 2D invariant subspace.
+
+\subsection{Finding A3-F3: Ring-orbit zero projection has geometric origin (within-orbit invariance)}
+
+The two zero-projection ring orbits $T_2, T_4$ are NOT accidental: they arise from the same geometric source --- the constancy of $u \cdot u_1$ on each $D_5$-orbit of vertices. For any edge whose endpoints lie in the same vertex-orbit, the projection formula $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} = \phi^2(u_j \cdot u_1 - u_i \cdot u_1)$ yields zero identically.
+
+This structurally connects the $D_5$ orbit-class structure of vertices (Patch 0601) to the edge-projection-vanishing structure: edges within a single vertex-orbit have zero projection. Conversely, edges crossing between distinct vertex-orbits have non-zero projection proportional to the difference of orbit-values of $u \cdot u_1$.
+
+\section{Five-class exclusion enumeration}
+
+\begin{itemize}
+\item[\textbf{(E1)}] \textbf{Second-shell projection primitive $G2_E$ NOT in scope} --- target of Sequence-2A artifact A4$_E$ (Patch 0603); the 20 second-shell vertices of $v_{\text{host}}$ decompose into multiple $D_5$ orbits with distinct projections onto $\hat{n}_{\text{edge}}$, and the cross-shell first-to-second-shell edge orbits $G2_E$.3 further refine the path-class structure.
+
+\item[\textbf{(E2)}] \textbf{Path-class weight enumeration at $\mathcal{O}(\delta^2)$ NOT in scope} --- target of Sequence-2A artifact A5$_E$ (Patch 0604); requires (H5$_E$) framework-extension and combines G1$_E$ + G1$_E$.2 + G2$_E$ + G2$_E$.3 primitives.
+
+\item[\textbf{(E3)}] \textbf{Face-aligned Reading C variant NOT covered} --- separate Sequence-2B trajectory under $C_s$ stabilizer.
+
+\item[\textbf{(E4)}] \textbf{Layer 4 axiomatic derivation NOT in scope} --- OPEN-FP-F1-2 long-term programme target.
+
+\item[\textbf{(E5)}] \textbf{Quantitative B.2 path-class contribution to $\alpha_2$ NOT closed} --- the edge-direction projections here are only the second-edge factor in the B.2 sum; the full B.2 contribution requires combining with first-edge projections $p_2, p_3$ from G1$_E$ (Patch 0601) under the (H5$_E$) path-class weight ansatz at A5$_E$.
+\end{itemize}
+
+\section{Falsifier}
+
+Demonstration of any oriented orbit having a projection value different from the closed-forms of Theorem~\ref{thm:G1E2} from a valid first-principles 600-cell + icosahedral pairwise inner-product calculation at edge-aligned Reading C under (H1)--(H3). Equivalently: demonstration that the 600-cell first-shell uniform-distance identity ($u_k \cdot v_{\text{host}} = \phi/2$ for all first-shell $u_k$) or the orbit-class graph-distance shell correspondence (Patch 0601 Corollary 4) is incorrect.
+
+A structural-level falsifier: demonstration that any of the 5 unordered orbit-pair classes C1--C5 splits into multiple $D_5$ unordered-orbits (e.g., if $T_2$ northern ring split into multiple orbits, breaking the $C_5$-transitivity of ring edges); would falsify Lemma~\ref{lem:edge_orbit_classification}.
+
+\section{Honest scope-limitation framing}
+
+The theorem closes the first-shell-to-first-shell edge orbit decomposition G1$_E$.2 at publication-grade Layer 3 unconditional rigor for the OPEN-FP-F1-5 Sequence-2A trajectory. The result is one of four geometric primitives needed for the second-order coefficient closure at Patch 0604 A5$_E$ (the others being G1$_E$ first-shell projections from Patch 0601, G2$_E$ second-shell projections from Patch 0603 A4$_E$, and G2$_E$.3 cross-shell edge orbits also from Patch 0603 A4$_E$).
+
+The result does NOT yet determine the B.2 path-class contribution to $\alpha_2$; that requires combining the second-edge projections here with first-edge projections from G1$_E$ + the path-class weight ansatz under (H5$_E$), all assembled at Patch 0604 A5$_E$.
+
+The G1$_E$.2 primitive specifically QUANTIFIES the substantive Sequence-2A structural finding from Patch 0599 \S5 (B.2 non-vanishing under edge-aligned) by identifying which orbits contribute (40 of 60 oriented edges) and which preserve vanishing (the 20 ring-orbit edges). The full magnitude of the B.2 contribution awaits A5$_E$.
+
+\section{Cross-trajectory linkage}
+
+This artifact is the \textbf{sixteenth} in the F.1 Layer 3 hardened-theorem sequence (Patches 0550, 0551, 0552, 0571, 0585, 0587, 0588, 0589, 0590, 0591, 0592, 0596, 0597, 0600, 0601, and this Patch 0602), advancing the combined sequence to approximately 5{,}170 lines LaTeX across 16 \texttt{.tex} artifacts. It is the \textbf{third substantive Patch} under the OPEN-FP-F1-5 Sequence-2A trajectory (after Patches 0600 A1$_E$ + 0601 A2$_E$).
+
+Single-artifact-per-Patch discipline preserved \textbf{16-for-16} since Patch 0585. The result quantifies the substantive Sequence-2A structural finding scoped at Patch 0599 \S5, establishing the QUANTITATIVE form of the dimensional-growth pattern $1 \to 2$ at second-order under edge-aligned Reading C: the B.2 path-class non-vanishing has a precise 40-out-of-60 structure with explicit closed-form projection values $\{\pm 1/2, \pm \phi/2\}$ in $\mathbb{Q}[\phi]$.
+
+\end{document}
