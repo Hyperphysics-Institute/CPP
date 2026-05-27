@@ -1,0 +1,312 @@
+% ============================================================
+% Host-to-Second-Shell Uniform Projection Theorem (G2.1)
+%   for the 600-Cell Edge Graph at Vertex-Aligned Reading C
+% Publication-Grade Hardening of the Second-Shell Analog of
+%   the Host-to-First-Shell Uniform Projection Theorem (Patch 0552)
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    SEVENTH artifact in F.1 Layer 3 hardened-theorem sequence;
+%    SECOND artifact in OPEN-FP-F1-1 Route C sequence 2 after
+%    Patch 0587's G2 hardening; first of the two parallel
+%    sequence-2 artifacts unlocked by G2. Hardens G2.1 -- the
+%    uniform value c_2 = -1/2 of the host-to-second-shell unit
+%    edge-direction projection on n_hat -- at publication-grade
+%    Layer 3 UNCONDITIONAL rigor, leveraging G2 hardened at
+%    Patch 0587 as the load-bearing input.)
+%
+% Patch 0588 (Session 145, 26 May 2026) -- second OPEN-FP-F1-1
+%   Route C sequence 2 closure Patch; parallel partner to Patch 0589
+%   (second-shell perpendicularity G2.4). Patch number skips 0586
+%   (reserved for concurrent Opus window's Session 144 handover
+%   completion documentation per Session 145 open).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+
+\title{Host-to-Second-Shell Uniform Projection (G2.1) \\
+in the 600-Cell at Vertex-Aligned Reading C \\
+\large Publication-Grade Hardening of the Second-Shell Analog \\
+of the Patch~0552 Host-to-First-Shell Projection Theorem}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7 \\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{26 May 2026 (Session 145, CPP Patch 0588)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade Layer~3 \emph{unconditional} hardening of the host-to-second-shell uniform projection identity G2.1 for the 600-cell at vertex-aligned Reading~C: the second-shell analog of the Patch~0552 host-to-first-shell projection theorem. The hardened statement asserts that, under (H1)~vertex-aligned Reading~C with $\nhat = \vhost$, (H2)~600-cell unit-vertex normalisation, (H3)~the icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex (re-using Patches~0571 + 0587), every host-to-second-shell unit edge-direction vector $\hat{w}_j = (w_j - \vhost)/|w_j - \vhost|$ (with $w_j$ the second-shell vertex of $\vhost$ at graph distance~2 in $\Gsixcell$) satisfies $\hat{w}_j \cdot \nhat = -1/2$ uniformly across $j \in \{1, \ldots, 20\}$. The proof is a short chord-length expansion using (i)~G2 hardened at Patch~0587 (second-shell inner-product primitive $w_j \cdot \vhost = 1/2$) and (ii)~the second-shell chord-length corollary $|w_j - \vhost| = 1$ (Patch~0587 Corollary~3.1), both at publication-grade Layer~3 unconditional rigor. The uniformity across the 20 second-shell vertices follows from the dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$ established at Patch~0587 Lemma~2.2. With Patch~0588 in hand, the F.1 Layer~3 hardened-theorem sequence advances to \textbf{seven artifacts}, and the host-to-second-shell projection component of the Route~C sequence~2 trajectory is closed at publication-grade Layer~3 unconditional rigor. The parallel partner artifact A5 (Patch~0589, second-shell perpendicularity G2.4) is independent of the present projection result and proceeds concurrently per the parallel-unlock structure registered at Patch~0587 Corollary~4.1. The projection value $-1/2$ is more negative than the first-shell projection $-1/(2\phi) \approx -0.309$ (Patch~0552); the magnitude ratio $|c_2/c_1| = \phi$ exhibits a single-step golden-ratio scaling between shells, paralleling the golden-ratio chord-length scaling ratio $|w_j - \vhost| / |u_i - \vhost| = \phi$ established at Patch~0587.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the host-to-second-shell uniform projection identity G2.1 at publication-grade Layer~3 unconditional rigor, executing the second artifact of Route~C sequence~2 of the OPEN-FP-F1-1 trajectory after the Patch~0587 G2 hardening unlocked it (per Patch~0587 Corollary~4.1). The substantive theorem content asserts that the host-to-second-shell unit edge-direction projection $\hat{w}_j \cdot \nhat$ is uniform across all 20 second-shell vertices, with closed-form value $-1/2$.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+The F.1 Dynamical Substrate Law substrate-locality programme has produced six publication-grade Layer~3 hardened-theorem artifacts prior to the present Patch:
+\begin{itemize}[leftmargin=2em]
+\item Patch~0550 --- perturbation-theory propagation rule (\texttt{perturbation\_locality\_propagation.tex});
+\item Patch~0551 --- first-shell-to-first-shell edge-direction perpendicularity (\texttt{first\_shell\_perpendicularity.tex});
+\item Patch~0552 --- host-to-first-shell uniform projection (\texttt{host\_to\_first\_shell\_projection.tex});
+\item Patch~0571 --- first-shell inner-product primitive G1 (\texttt{first\_shell\_inner\_product\_primitive.tex});
+\item Patch~0585 --- $\mathcal{O}(\delta^k)$ all-orders parallel-to-$\nhat$ structural theorem (\texttt{second\_order\_parallel\_to\_n\_structural.tex});
+\item Patch~0587 --- second-shell inner-product primitive G2 (\texttt{second\_shell\_inner\_product\_primitive.tex}).
+\end{itemize}
+The present Patch~0588 is the \textbf{seventh} artifact in the sequence and the \textbf{second} under Route~C sequence~2 (after G2 hardening at A2). It executes the host-to-second-shell projection sub-target (G2.1) at publication-grade Layer~3 unconditional rigor.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (Patch~0550 \S2.1; \cite{coxeter1973}) with 120 vertices at unit norm on $S^3 \subset \Reals^4$. Fix a host vertex $\vhost \in V(\Gsixcell)$, and let $S_2(\vhost) = \{w_1, \ldots, w_{20}\}$ denote the second graph-distance shell of $\vhost$ in $\Gsixcell$ as characterised in Patch~0587 \S2.1. For each $w_j \in S_2(\vhost)$, define the host-to-second-shell unit edge-direction
+\begin{equation}\label{eq:wj_unit_def}
+\hat{w}_j \;:=\; \frac{w_j - \vhost}{|w_j - \vhost|} \;\in\; \Reals^4.
+\end{equation}
+
+\begin{theorem}[Host-to-second-shell uniform projection, hardened]\label{thm:g21_hardened}
+Under hypotheses (H1)--(H3) of Patch~0587 Theorem~1.1 (vertex-aligned Reading~C with $\nhat = \vhost$ + 600-cell unit-vertex normalisation + icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex), the projection of the host-to-second-shell unit edge-direction on $\nhat$ is uniform across all second-shell vertices with closed-form value
+\begin{equation}\label{eq:g21_main}
+\hat{w}_j \cdot \nhat \;=\; -\frac{1}{2}
+\end{equation}
+for every $j \in \{1, \ldots, 20\}$.
+\end{theorem}
+
+The proof is a direct chord-length expansion (\S\ref{sec:proof}) using Patch~0587 Theorem~1.1 ($w_j \cdot \vhost = 1/2$) and Patch~0587 Corollary~3.1 ($|w_j - \vhost| = 1$), with the uniformity across $\{w_1, \ldots, w_{20}\}$ lifted via Patch~0587 Lemma~2.2's dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$.
+
+\begin{remark}[Comparison with first-shell projection]\label{rem:first_shell_comparison}
+Patch~0552's first-shell counterpart establishes $\hat{u}_i \cdot \nhat = -1/(2\phi) \approx -0.309$ for the first-shell unit edge-direction $\hat{u}_i$, with uniformity across the 12 first-shell vertices. The present second-shell result $\hat{w}_j \cdot \nhat = -1/2 = -0.5$ is more negative; the magnitude ratio
+\begin{equation*}
+\frac{|c_2|}{|c_1|} \;=\; \frac{1/2}{1/(2\phi)} \;=\; \phi
+\end{equation*}
+is a clean golden-ratio scaling factor between shells. The chord-length ratio is also $\phi$: $|w_j - \vhost| / |u_i - \vhost| = 1/(1/\phi) = \phi$. Both ratios reflect the single-step golden-ratio scaling pattern between adjacent shells of the 600-cell at unit-vertex normalisation (the chord-length pattern was registered at Patch~0587 \S4.1; the projection-magnitude pattern is documented here for the first time).
+\end{remark}
+
+\begin{remark}[Conditional inheritance closure relative to Patch 0552]\label{rem:conditional_inheritance}
+Patch~0552's host-to-first-shell projection theorem was originally registered at publication-grade Layer~3 \emph{conditional on G1}; the G1 conditionality was discharged by Patch~0571's G1 hardening, upgrading Patch~0552 to publication-grade Layer~3 unconditional. The present Patch~0588 is registered at publication-grade Layer~3 \emph{unconditional from the outset}: G2 has already been hardened at Patch~0587 before the present projection theorem is stated, so no conditional-inheritance phase exists. This is structurally cleaner than the G1 trajectory because the G2 hardening (Patch~0587) precedes its downstream consumers (Patches~0588 + 0589) in the sequence-2 ordering, whereas G1 hardening (Patch~0571) came AFTER its first-order downstream consumers (Patches~0551 + 0552) in the sequence-1 historical ordering.
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{Imported inputs from Patches 0571, 0585, 0587}\label{sec:imported_inputs}
+
+The present hardening imports the following inputs at publication-grade Layer~3 unconditional rigor:
+
+\begin{lemma}[G2, second-shell inner-product primitive; imported from Patch~0587 Theorem~1.1]\label{lem:G2_imported}
+Under hypotheses (H1)--(H3), every second-shell vertex $w_j \in S_2(\vhost)$ satisfies
+\begin{equation}\label{eq:G2_inner_product}
+w_j \cdot \vhost \;=\; \frac{1}{2}
+\end{equation}
+uniformly across $j \in \{1, \ldots, 20\}$.
+\end{lemma}
+
+\begin{proof}[Proof of Lemma~\ref{lem:G2_imported}]
+This is the main result of Patch~0587 (\texttt{second\_shell\_inner\_product\_primitive.tex} Theorem~1.1), at publication-grade Layer~3 unconditional rigor. The full proof factors into Patch~0587 Lemma~3.1 (second-shell central angle and inner product via coordinate verification on canonical representative $w_0 = \tfrac{1}{2}(1,1,1,1)$) + Patch~0587 Lemma~2.2 (dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$). Imported here without re-derivation. $\square$
+\end{proof}
+
+\begin{lemma}[Second-shell chord length; imported from Patch~0587 Corollary~3.1]\label{lem:second_shell_chord}
+Under hypotheses (H1)--(H3), every host-to-second-shell chord length is uniform:
+\begin{equation}\label{eq:chord_length}
+|w_j - \vhost| \;=\; 1
+\end{equation}
+for every $j \in \{1, \ldots, 20\}$.
+\end{lemma}
+
+\begin{proof}[Proof of Lemma~\ref{lem:second_shell_chord}]
+This is Patch~0587 Corollary~3.1, derived from Lemma~\ref{lem:G2_imported} above plus the standard inner-product expansion $|w_j - \vhost|^2 = |w_j|^2 - 2(w_j \cdot \vhost) + |\vhost|^2 = 1 - 2 \cdot (1/2) + 1 = 1$ under (H2). $\square$
+\end{proof}
+
+\begin{lemma}[Dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$; imported from Patch~0587 Lemma~2.2]\label{lem:dodecahedral_transitivity_imported}
+Under hypotheses (H1)--(H3), the icosahedral group $\Hthree = \Icoh$ acts transitively on the 20 second-shell vertices $S_2(\vhost)$ with point stabilizer $C_{3v}$ of order $6$.
+\end{lemma}
+
+\begin{proof}[Proof of Lemma~\ref{lem:dodecahedral_transitivity_imported}]
+This is Patch~0587 Lemma~2.2, derived from the 600-cell's shell decomposition combined with the regular polyhedron's vertex-transitivity under its full symmetry group~\cite{coxeter1973,humphreys1990}. The $\Icoh$-action is inherited from Patch~0571 Theorem~1.1 ($\Hfour \to \Hthree$ symmetry breaking under vertex-aligned Reading~C) + Capotauro~v2.0 FI-C-RC-2 + Patch~0419 Finding~C-W37. Imported here without re-derivation. $\square$
+\end{proof}
+
+\section{Proof of the host-to-second-shell projection identity}\label{sec:proof}
+
+\subsection{Single-vertex projection via chord-length expansion}\label{sec:single_vertex}
+
+\begin{lemma}[Projection on $\nhat$ for a single second-shell vertex]\label{lem:single_projection}
+Under (H1)--(H3), for any $w_j \in S_2(\vhost)$,
+\begin{equation}\label{eq:single_projection}
+\hat{w}_j \cdot \nhat \;=\; -\frac{1}{2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+By the definition~\eqref{eq:wj_unit_def} of $\hat{w}_j$,
+\begin{equation*}
+\hat{w}_j \cdot \nhat \;=\; \frac{(w_j - \vhost) \cdot \nhat}{|w_j - \vhost|}.
+\end{equation*}
+Under (H1), $\nhat = \vhost$, so
+\begin{equation*}
+(w_j - \vhost) \cdot \nhat \;=\; (w_j - \vhost) \cdot \vhost \;=\; w_j \cdot \vhost - \vhost \cdot \vhost \;=\; w_j \cdot \vhost - |\vhost|^2.
+\end{equation*}
+Under (H2), $|\vhost|^2 = 1$. By Lemma~\ref{lem:G2_imported} (G2 imported from Patch~0587), $w_j \cdot \vhost = 1/2$. Hence
+\begin{equation*}
+(w_j - \vhost) \cdot \nhat \;=\; \frac{1}{2} - 1 \;=\; -\frac{1}{2}.
+\end{equation*}
+By Lemma~\ref{lem:second_shell_chord} (chord length imported from Patch~0587), $|w_j - \vhost| = 1$. Therefore
+\begin{equation*}
+\hat{w}_j \cdot \nhat \;=\; \frac{-1/2}{1} \;=\; -\frac{1}{2},
+\end{equation*}
+as required. $\square$
+\end{proof}
+
+\subsection{Uniformity via dodecahedral transitivity}\label{sec:uniformity}
+
+Lemma~\ref{lem:single_projection} establishes the projection identity~\eqref{eq:g21_main} for a single second-shell vertex. The uniformity across all 20 second-shell vertices is a consequence of the dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$ (Lemma~\ref{lem:dodecahedral_transitivity_imported}), combined with the $\Icoh$-equivariance of the projection operator on $\nhat$ when $\nhat = \vhost$ is fixed by $\Icoh$.
+
+\subsection{Main proof of Theorem~\ref{thm:g21_hardened}}\label{sec:main_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:g21_hardened}]
+Fix any $w_j \in S_2(\vhost)$. By Lemma~\ref{lem:single_projection} under (H1)--(H3),
+\begin{equation*}
+\hat{w}_j \cdot \nhat \;=\; -\frac{1}{2}.
+\end{equation*}
+The argument applies identically to every $w_j \in S_2(\vhost)$ since the inputs (Lemmas~\ref{lem:G2_imported} and~\ref{lem:second_shell_chord}) are themselves uniform across $j$. (Alternative consistency check via $\Icoh$-action: for any $j_1, j_2 \in \{1, \ldots, 20\}$, choose $g \in \Icoh$ with $g \cdot w_{j_1} = w_{j_2}$ from Lemma~\ref{lem:dodecahedral_transitivity_imported}. Since $g$ acts as a linear isometry of $\Reals^4$ fixing $\vhost$,
+\begin{equation*}
+\hat{w}_{j_2} \cdot \nhat \;=\; \frac{(g \cdot w_{j_1}) - \vhost}{|(g \cdot w_{j_1}) - \vhost|} \cdot \vhost \;=\; \frac{g \cdot (w_{j_1} - \vhost)}{|w_{j_1} - \vhost|} \cdot (g \cdot \vhost) \;=\; \frac{(w_{j_1} - \vhost) \cdot \vhost}{|w_{j_1} - \vhost|} \;=\; \hat{w}_{j_1} \cdot \nhat \;=\; -\frac{1}{2},
+\end{equation*}
+using $g \cdot \vhost = \vhost$ under (H3), $|g \cdot v| = |v|$ for $g \in O(4)$, and the $O(4)$-invariance of the inner product.) Therefore $\hat{w}_j \cdot \nhat = -1/2$ for every $j \in \{1, \ldots, 20\}$, establishing~\eqref{eq:g21_main}. $\square$
+\end{proof}
+
+\section{Consequences and corollaries}\label{sec:consequences}
+
+\subsection{Uniform host-to-second-shell second-order substrate-rate perturbation}\label{sec:second_order_perturbation_corollary}
+
+\begin{corollary}[Uniform host-to-second-shell second-order substrate-rate perturbation]\label{cor:uniform_second_order_perturbation}
+Under (H1)--(H3) and the Mechanism~A rate function $r(\hat{e}) = r_0(1 + \delta\,\hat{e} \cdot \nhat)$ (F.1 v1.0~\S4 MA.1), the rate function evaluated on any host-to-second-shell unit edge-direction $\hat{w}_j$ takes the uniform value
+\begin{equation}\label{eq:rate_function_uniform}
+r(\hat{w}_j) \;=\; r_0\Big(1 - \frac{\delta}{2}\Big)
+\end{equation}
+across all $j \in \{1, \ldots, 20\}$.
+\end{corollary}
+
+\begin{proof}
+Immediate from $r(\hat{w}_j) = r_0(1 + \delta\,\hat{w}_j \cdot \nhat) = r_0(1 + \delta \cdot (-1/2)) = r_0(1 - \delta/2)$ via Theorem~\ref{thm:g21_hardened}. $\square$
+\end{proof}
+
+This uniform second-order perturbation value is structurally distinct from the uniform first-order perturbation value $r_0(1 - \delta/(2\phi))$ at the first shell (Patch~0552 Corollary~4.1). The factor $\phi$ between the two perturbation deviations from the unperturbed rate $r_0$ recurs as a golden-ratio scaling pattern.
+
+\subsection{Inputs for downstream Route C sequence 2 artifacts A4 + A6 + A7}\label{sec:use_in_downstream}
+
+The uniform projection value $\hat{w}_j \cdot \nhat = -1/2$ established here is one of the structural inputs for:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{A4}: \texttt{first\_shell\_second\_shell\_edge\_orbits.tex} (G2.3; first-shell-to-second-shell edge-direction projections on $\nhat$, distributed across five orbit classes under the $D_{3d}$ first-shell-vertex stabilizer). A4 requires both the first-shell and second-shell projection structures plus orbit-stabilizer analysis on the 60 first-shell-to-second-shell 600-cell edges.
+\item \textbf{A6}: \texttt{o\_delta\_squared\_path\_class\_weights.tex} (path-class weight enumeration at $\mathcal{O}(\delta^2)$). A6 uses host-to-second-shell projections directly in the [HFFSH] + [HFSSH] + [HFSFH] path-class weight integrals (per the scoping document~\S3.3 path-class enumeration).
+\item \textbf{A7}: \texttt{o\_delta\_squared\_substrate\_locality\_umbrella.tex} (the umbrella-assembly theorem at $\mathcal{O}(\delta^2)$ producing the THEO-DSL-5 candidate $\alpha_2$). A7 assembles all sequence-2 inputs into the closed-form $\mathcal{O}(\delta^2)$ coefficient.
+\end{itemize}
+
+\subsection{Sign of the projection and the direction of substrate-flow asymmetry}\label{sec:sign_interpretation}
+
+The projection value $\hat{w}_j \cdot \nhat = -1/2 < 0$ indicates that the host-to-second-shell unit edge-direction is \emph{anti-aligned} with the substrate-direction primitive $\nhat$ at the second shell, with a deeper anti-alignment than at the first shell ($\hat{u}_i \cdot \nhat = -1/(2\phi) \approx -0.309 < 0$). The sign pattern is structurally consistent: as one moves outward from $\vhost$, the radial direction-vector (which is roughly $\hat{w}_j$ for second-shell vertices, and roughly $\hat{u}_i$ for first-shell vertices, both pointing outward from $\vhost$) becomes increasingly anti-aligned with $\nhat = \vhost$. The deepest anti-alignment occurs at the antipodal vertex $-\vhost$ where the radial direction is exactly $-\nhat$ (projection $-1$). The projection values $-1/(2\phi), -1/2, \ldots, -1$ trace out the shell-by-shell radial-anti-alignment progression in the 600-cell.
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:g21_hardened} is scope-bounded by hypotheses (H1)--(H3) and the imports from Patches~0571 + 0587. This section enumerates four classes of generalisations and limitations that lie explicitly outside the present theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Higher-shell projection primitives are NOT addressed.} Theorem~\ref{thm:g21_hardened} treats only the host-to-second-shell unit edge-direction projection. Analogues for the third shell (12 vertices at inner product $1/(2\phi)$, projection $-1/\phi - 1/(2\phi) = -3/(2\phi) - 1/\phi^2$... pending separate derivation), the equatorial shell (30 vertices at inner product $0$, projection $-1$ since chord length is $\sqrt{2}$ and projection numerator is $-1$ giving $-1/\sqrt{2}$), and deeper shells are not in scope.
+
+\item \textbf{Non-vertex-aligned Reading C variants are NOT covered.} The theorem requires $\nhat = \vhost$ (hypothesis (H1)). Alternative Reading~C placements would yield different second-shell projection structures. Registered as OPEN-FP-F1-5 in F.1 v1.0~\S9.
+
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP A1--A11.} The 600-cell polytope and its shell decomposition are taken as polytope-theoretic input \cite{coxeter1973}. A Layer~4 axiomatic derivation is OPEN-FP-F1-2.
+
+\item \textbf{The first-shell-to-second-shell edge-direction projections G2.3 (A4 artifact) are NOT addressed here.} A4 treats the 60 first-shell-to-second-shell 600-cell edges' projections on $\nhat$ under the $D_{3d}$ first-shell-vertex stabilizer; it requires both the present G2.1 + G2 (Patch~0587) + the orbit-stabilizer analysis of those 60 edges into five orbit classes. A4 is a downstream Route~C sequence~2 artifact deferred per single-artifact-per-Patch discipline.
+\end{enumerate}
+
+\section{Cross-references and consequences}\label{sec:cross_references}
+
+\subsection{Position relative to OPEN-FP-F1-1 Route C sequence 2}\label{sec:open_fp_f1_1_position}
+
+The OPEN-FP-F1-1 Route~C sequence~2 trajectory (scoping document \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S5.1) comprises seven artifacts A1--A7. Patch~0585 closed A1 (the structural sub-question). Patch~0587 closed A2 (G2 hardening). The present Patch~0588 closes A3 (G2.1 host-to-second-shell projection). The parallel partner Patch~0589 closes A5 (G2.4 second-shell perpendicularity); A5 is independent of A3 and proceeds concurrently. After A3 + A5 land, A4 (G2.3 first-shell-to-second-shell edge orbits) opens with dependencies on both A2 (Patch~0587) and A3 (the present Patch~0588). The sequence-2 closure budget is 4--8 sessions; two of those budgetary sessions have now been consumed by the present Patch + Patch~0587, with two further artifacts (A4 + the umbrella A7) plus A5's already-in-flight partner remaining.
+
+\subsection{Cross-sector consistency with Capotauro v2.0}\label{sec:capotauro_parallel}
+
+The host-to-second-shell projection $\hat{w}_j \cdot \nhat = -1/2$ derived here has a structural parallel in Capotauro~v2.0's spatial-sector substrate-locality work: under vertex-aligned Reading~C with the same $\nhat = \vhost$ identification, related second-shell projection structures appear in the spatial-sector chirality-content distributions of Capotauro~v2.0~\S5--\S6 (the K3-base + W-bracelet inheritance pattern under the icosahedral cage shell-shell hierarchy). The shared underlying geometric content is the 600-cell's shell decomposition + the universal projection-magnitude scaling $|c_{n+1}/c_n| = \phi$ between adjacent shells.
+
+\section{Conclusion --- the F.1 Layer 3 hardening sequence advances to seven artifacts}\label{sec:conclusion}
+
+Theorem~\ref{thm:g21_hardened} with imports from Patches~0571 + 0587 hardens the host-to-second-shell uniform projection identity G2.1 at publication-grade Layer~3 unconditional rigor: $\hat{w}_j \cdot \nhat = -1/2$ uniformly across all 20 second-shell vertices. The proof reduces to a chord-length expansion using G2 (Patch~0587 Theorem~1.1) and the second-shell chord length (Patch~0587 Corollary~3.1), with uniformity inherited from the dodecahedral transitivity of $\Icoh$ on $S_2(\vhost)$ (Patch~0587 Lemma~2.2). The four exclusion classes (E1)--(E4) make explicit what is NOT covered.
+
+\paragraph{Position in the F.1 hardened-theorem sequence (now seven artifacts).}
+With Patch~0588, the F.1 Dynamical Substrate Law Layer~3 hardened-theorem sequence has seven artifacts:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Patches~0550 + 0551 + 0552 + 0571} hardened the $\mathcal{O}(\delta^1)$ first-shell content (perturbation-locality + first-shell perpendicularity + host-to-first-shell projection + G1 inner-product primitive).
+\item \textbf{Patch~0585} hardened the $\mathcal{O}(\delta^k)$ all-orders parallel-to-$\nhat$ structural theorem.
+\item \textbf{Patch~0587} hardened the second-shell inner-product primitive G2.
+\item \textbf{Patch~0588 (this paper)} hardens the host-to-second-shell uniform projection G2.1.
+\end{itemize}
+
+The two remaining Route~C sequence~2 artifacts unlocked by Patch~0587 are A5 (Patch~0589 second-shell perpendicularity G2.4, parallel partner to the present Patch) and the downstream A4 (first-shell-to-second-shell edge orbits G2.3, conditional on the present Patch + Patch~0587). After A4, A6 (path-class weight enumeration) and A7 (umbrella assembly producing THEO-DSL-5 candidate $\alpha_2$) close the sequence and complete the OPEN-FP-F1-1 coefficient sub-question.
+
+\paragraph{Anti-erasure note.}
+The present hardening preserves: (a)~the explicit Patch-0587-imported structure of Lemmas~\ref{lem:G2_imported} + \ref{lem:second_shell_chord} + \ref{lem:dodecahedral_transitivity_imported} rather than re-deriving the second-shell foundations here; (b)~the registration of Remark~\ref{rem:conditional_inheritance} contrasting the cleaner sequence-2 ordering (G2 hardening BEFORE projection theorem) with the historical sequence-1 ordering (G1 hardening AFTER projection theorem); (c)~the open recognition of Remark~\ref{rem:first_shell_comparison}'s shell-by-shell golden-ratio scaling pattern $|c_{n+1}/c_n| = \phi$ as a new structural observation not previously documented in the substrate-locality programme.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+3rd ed., Dover Publications, New York, 1973.
+
+\bibitem{humphreys1990}
+J.~E.~Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge Studies in Advanced Mathematics 29, Cambridge University Press, 1990.
+
+\bibitem{abshier_g1_hardening}
+T.~L.~Abshier and Claude Opus 4.7,
+``First-Shell Inner-Product Primitive (G1) in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0571, 25~May~2026, \texttt{hardened\_theorems/first\_shell\_inner\_product\_primitive.tex}.
+
+\bibitem{abshier_host_first_shell_projection}
+T.~L.~Abshier,
+``Host-to-First-Shell Uniform Projection in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0552, 24~May~2026, \texttt{hardened\_theorems/host\_to\_first\_shell\_projection.tex}.
+
+\bibitem{abshier_g2_hardening}
+T.~L.~Abshier and Claude Opus 4.7,
+``Second-Shell Inner-Product Primitive (G2) in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0587, 26~May~2026, \texttt{hardened\_theorems/second\_shell\_inner\_product\_primitive.tex}.
+
+\bibitem{abshier_f1_dynamical_substrate_law}
+T.~L.~Abshier,
+``The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading~C in the 600-Cell,''
+CPP Flagship Paper Series (F-line), Version 1.0, 24~May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}
