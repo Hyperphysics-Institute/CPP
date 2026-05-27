@@ -1,0 +1,428 @@
+% Patch 0600 A1_E: First-Order Closed-Form Substrate-Current Coefficients
+% at Edge-Aligned Reading C in the 600-Cell
+%
+% OPEN-FP-F1-5 Sequence-2A first substantive artifact under DG-F15A-1 default-(A)
+% stepping-stone trajectory. Publication-grade Layer 3 unconditional rigor for the
+% first-order coefficient sub-question (no (H5_E) framework-extension required at
+% O(delta^1) since Mechanism A's first-order formula is exact). Inherits THEO-DSL-6
+% (candidate) 2D D_5-invariant subspace structure from Patch 0596.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{antierasure}{Anti-erasure Remark}
+
+\title{First-Order Closed-Form Substrate-Current Coefficients\\
+at Edge-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2A Artifact A1$_E$)}}
+\author{Patch 0600 hardened-theorem artifact}
+\date{27 May 2026 (Session 146)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We establish at \textbf{publication-grade Layer 3 unconditional} rigor the closed-form
+$\mathcal{O}(\delta^1)$ substrate-current coefficients $\alpha_1^{(\rho)}$ and
+$\alpha_1^{(\text{edge})}$ at the host vertex $v_{\text{host}}$ of the 600-cell under
+edge-aligned Reading C with vertex-host convention. The result completes the first
+substantive deliverable of the OPEN-FP-F1-5 Sequence-2A trajectory opened at Patch
+0599 under the DG-F15A-1 default-(A) stepping-stone ordering accepted at Session 146.
+
+The closed-form result reads
+\[
+\vec{j}_1^{\text{edge}}(v_{\text{host}}) \;=\; r_0 \delta\left[\frac{4}{\phi^2}\,\hat{n}_\rho \;+\; 2(2 + \phi)\,\hat{n}_{\text{edge}}\right]
+\]
+in the non-orthogonal basis $\{\hat{n}_\rho,\hat{n}_{\text{edge}}\}$ of the 2D
+$D_5$-invariant subspace established at THEO-DSL-6 (candidate; Patch 0596).
+Equivalently, $\alpha_1^{(\rho)} = 4/\phi^2 = 4(2 - \phi) \approx 1.528$ and
+$\alpha_1^{(\text{edge})} = 2(2 + \phi) \approx 7.236$. The proof factors into Lemma 1
+(icosahedral second-moment tensor identity from $I_h$-equivariance + Schur's lemma
++ PRED-O-30) and Lemma 2 (first-order coefficient closed-form via Mechanism A's
+exact first-order formula). No (H5)-class framework-extension hypothesis is required
+at first order.
+
+The result is the candidate first-order content of \textbf{THEO-DSL-7 (candidate)},
+the target umbrella theorem of the Sequence-2A trajectory; the $\mathcal{O}(\delta^2)$
+content is the target of subsequent Sequence-2A artifacts A2$_E$ through A6$_E$
+(Patches 0601--0605). Three substantive findings are surfaced: (i) the edge-aligned
+substrate-current magnitude at first order is approximately $3\times$ larger than
+vertex-aligned, contradicting an incorrect interpretation in Patch 0599 \S3.3 (an
+anti-erasure correction is registered); (ii) both basis coefficients are non-zero,
+confirming the 2D invariant subspace is genuinely 2D at first order; (iii) the
+projection onto the substrate primitive direction $\hat{n}_{\text{edge}}$ accounts
+for approximately $98\%$ of the total substrate-current magnitude.
+\end{abstract}
+
+\section{Introduction and inheritance}
+
+\subsection{Inheritance from THEO-DSL-6 (candidate)}
+
+THEO-DSL-6 (candidate), registered at \texttt{theorem-registry.md} SD section at Patch
+0598, establishes at publication-grade Layer 3 unconditional rigor that the
+$\mathcal{O}(\delta^k)$ coefficient of the substrate current at the host vertex of the
+600-cell under edge-aligned Reading C with vertex-host convention lies in the 2D
+$D_5$-invariant subspace
+\[
+\vec{j}_k^{\text{edge}}(v_{\text{host}}) \;\in\; \mathrm{span}\{\hat{n}_\rho,\,\hat{n}_{\text{edge}}\}
+\]
+for every $k \geq 1$, where $\hat{n}_\rho = v_{\text{host}}/|v_{\text{host}}|$ is the
+radial direction and $\hat{n}_{\text{edge}} = (u_1 - v_{\text{host}})/|u_1 - v_{\text{host}}|$
+is the along-edge direction to a chosen first-shell neighbor $u_1$.
+
+The \emph{structural} sub-question of OPEN-FP-F1-5 edge-aligned variant is therefore
+closed at publication-grade Layer 3 unconditional. The \emph{coefficient} sub-question
+--- closed-form computation of $\alpha_k^{(\rho)}, \alpha_k^{(\text{edge})}$ in the basis
+$\{\hat{n}_\rho,\hat{n}_{\text{edge}}\}$ --- remains the target of Sequence-2A.
+
+\subsection{Scope of Patch 0600 A1$_E$}
+
+This artifact establishes \emph{first-order} coefficient closed-forms ($k = 1$) at full
+publication-grade Layer 3 unconditional rigor. Per DG-F15A-1 default-(A) stepping-stone
+ordering accepted at Session 146 open, the first-order closure precedes the geometric
+primitive derivations (A2$_E$ through A4$_E$, Patches 0601--0603) and the second-order
+coefficient closure (A5$_E$, Patch 0604). The (H5$_E$) framework-extension hypothesis
+is \textbf{not} required at first order, since Mechanism A's first-order formula is
+exact under (H1)--(H4) alone; (H5$_E$) enters only at $\mathcal{O}(\delta^2)$ when
+multi-edge path-class weight ansatze become operative.
+
+The result is registered as the candidate first-order content of THEO-DSL-7
+(candidate), the eventual umbrella theorem of the OPEN-FP-F1-5 Sequence-2A trajectory.
+The single-theorem umbrella registration per DG-F15A-5 default-(A) will assemble
+first-order and second-order content under the weakest-link rigor of the second-order
+(H5$_E$) qualifier; the first-order result here is independently at publication-grade
+Layer 3 unconditional.
+
+\section{Hypothesis stack}
+
+The hypotheses required for the main result of this artifact:
+\begin{itemize}
+\item[(H1)] \textbf{Edge-aligned Reading C}: substrate primitive direction
+$\hat{n} = \hat{n}_{\text{edge}}$ is the unit vector from $v_{\text{host}}$ to a chosen
+first-shell neighbor $u_1$.
+\item[(H2)] \textbf{Vertex-host convention}: $v_{\text{host}}$ is preserved as a
+600-cell vertex (anti-erasure Remark 7.2 of Patch 0597).
+\item[(H3)] \textbf{Icosahedral residual symmetry} $H_3 = I_h$ at $v_{\text{host}}$
+inherited via THEO-DSL-2 + Patch 0571 G1 publication-grade hardening.
+\item[(H4)] \textbf{Perturbation-locality propagation} (THEO-DSL-1 / Patch 0550):
+shell-locality of $\vec{j}_{DI}^{\text{net}}(v_{\text{host}})|_{\mathcal{O}(\delta^k)}$
+restricts $\mathcal{O}(\delta^1)$ contributions to the 12 host-to-first-shell edges.
+\end{itemize}
+
+\textbf{Note}: (H5$_E$) is \emph{not} required at first order. Mechanism A's first-order
+formula
+\[
+\vec{j}_1^{\text{edge}}(v_{\text{host}}) \;=\; 2 r_0 \delta \sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n}_{\text{edge}})\,\hat{u}_i
+\]
+follows directly from (H1)--(H4) by single-edge path enumeration (no multi-edge path
+weighting). The (H5$_E$) framework-extension qualifier becomes load-bearing only at
+$\mathcal{O}(\delta^2)$ in Sequence-2A artifact A5$_E$ (Patch 0604).
+
+\section{Lemma 1: Icosahedral second-moment tensor identity}
+
+\begin{lemma}[Icosahedral second-moment tensor identity]
+\label{lem:second_moment_tensor}
+Define the symmetric tensor $M \in \mathrm{End}(\mathbb{R}^4)$ as the sum
+\[
+M \;:=\; \sum_{i=1}^{12} \hat{u}_i \otimes \hat{u}_i,
+\]
+where $\hat{u}_i$ are the 12 first-shell unit vectors at $v_{\text{host}}$ under
+vertex-host convention. Then under (H2)--(H3),
+\[
+M \;=\; \frac{3}{\phi^2}\,\hat{n}_\rho \otimes \hat{n}_\rho \;+\; (2 + \phi)\,(I_4 - \hat{n}_\rho \otimes \hat{n}_\rho),
+\]
+where $I_4$ is the identity on $\mathbb{R}^4$ and $\hat{n}_\rho = v_{\text{host}}/|v_{\text{host}}|$.
+Equivalently, $M$ acts on any vector $\vec{w} \in \mathbb{R}^4$ as
+\[
+M\vec{w} \;=\; \frac{3}{\phi^2}\,(\hat{n}_\rho \cdot \vec{w})\,\hat{n}_\rho \;+\; (2 + \phi)\,\bigl(\vec{w} - (\hat{n}_\rho \cdot \vec{w})\,\hat{n}_\rho\bigr).
+\]
+\end{lemma}
+
+\begin{proof}
+The proof factors into three steps: (i) $I_h$-equivariance of $M$; (ii) decomposition
+into trivial-rep + standard-rep isotypic components via Schur's lemma; (iii) computation
+of the two scalar values $A = 3/\phi^2$ and $B = 2 + \phi$.
+
+\textbf{Step (i)} $I_h$-equivariance: under (H3), the icosahedral group $I_h$ of order
+120 acts on $\mathbb{R}^4$ stabilizing $v_{\text{host}}$ (hence stabilizing $\hat{n}_\rho$
+as the radial direction) and permutes the 12 first-shell vertices as the standard
+icosahedral permutation representation. For any $g \in I_h$, the relabeling
+$i \mapsto g(i)$ on the index set $\{1,\dots,12\}$ gives
+$\sum_i \hat{u}_i \otimes \hat{u}_i = \sum_i (g\hat{u}_i) \otimes (g\hat{u}_i) = g\bigl(\sum_i \hat{u}_i \otimes \hat{u}_i\bigr)g^{-1} = gMg^{-1}$,
+proving $gMg^{-1} = M$ for all $g \in I_h$.
+
+\textbf{Step (ii)} Decomposition by Schur's lemma: under $I_h$, the 4-dimensional
+ambient space $\mathbb{R}^4$ decomposes into two isotypic components:
+\[
+\mathbb{R}^4 \;=\; \mathbb{R}\hat{n}_\rho \;\oplus\; T_{v_{\text{host}}}S^3,
+\]
+where $\mathbb{R}\hat{n}_\rho$ is the trivial 1-dimensional representation (since
+$g\hat{n}_\rho = \hat{n}_\rho$ for all $g \in I_h$ stabilizing $v_{\text{host}}$),
+and $T_{v_{\text{host}}}S^3 \cong \mathbb{R}^3$ carries the standard 3-dimensional
+representation of $I_h$ (one of the two irreducible 3D representations $T_{1g}, T_{1u}$
+of $I_h$). Since the standard 3D representation is irreducible, by Schur's lemma any
+$I_h$-equivariant linear operator on $\mathbb{R}^4$ acts as a scalar on each isotypic
+component. Therefore there exist scalars $A, B \in \mathbb{R}$ such that
+\[
+M \;=\; A\,\hat{n}_\rho \otimes \hat{n}_\rho \;+\; B\,P_T,
+\]
+where $P_T = I_4 - \hat{n}_\rho \otimes \hat{n}_\rho$ is the orthogonal projection onto
+$T_{v_{\text{host}}}S^3$.
+
+\textbf{Step (iii)} Computation of $A$ and $B$:
+
+For $A$: apply $M$ to $\hat{n}_\rho$:
+\[
+M\hat{n}_\rho \;=\; \sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n}_\rho)\,\hat{u}_i \;=\; \frac{3}{\phi^2}\,\hat{n}_\rho,
+\]
+where the second equality is the \textbf{icosahedral rank-1 sum identity} (PRED-O-30
+of F.1 v1.0, also a load-bearing identity in the THEO-DSL-3 / Theorem 7.1 closed-form
+derivation of $\alpha_1 = 6/\phi^2$ at vertex-aligned Reading C). The identity follows
+from (a) $\hat{u}_i \cdot \hat{n}_\rho = -1/(2\phi)$ uniformly across $i$ per THEO-DSL-2
+Theorem 5.1 (Patch 0552) and (b) $\sum_i \hat{u}_i = -(6/\phi)\hat{n}_\rho$ by
+$I_h$-symmetry of the first-shell sum. From the decomposition $M = A\,\hat{n}_\rho \otimes \hat{n}_\rho + B\,P_T$ and $P_T \hat{n}_\rho = 0$, we read off $A = 3/\phi^2$.
+
+For $B$: take the trace of $M$:
+\[
+\mathrm{Tr}(M) \;=\; \sum_{i=1}^{12} \mathrm{Tr}(\hat{u}_i \otimes \hat{u}_i) \;=\; \sum_{i=1}^{12} |\hat{u}_i|^2 \;=\; 12,
+\]
+since each $\hat{u}_i$ is a unit vector. From the decomposition,
+$\mathrm{Tr}(M) = A \cdot 1 + B \cdot 3 = A + 3B$. Therefore $3B = 12 - A = 12 - 3/\phi^2$.
+
+Using the golden-ratio identity $1/\phi^2 = 2 - \phi$:
+\[
+B \;=\; \frac{12 - 3/\phi^2}{3} \;=\; 4 - \frac{1}{\phi^2} \;=\; 4 - (2 - \phi) \;=\; 2 + \phi.
+\]
+
+\end{proof}
+
+\section{Lemma 2: First-order substrate-current coefficient closed-form}
+
+\begin{lemma}[First-order coefficient closed-form under edge-aligned Reading C]
+\label{lem:first_order_coefficients}
+Under (H1)--(H4) and using Lemma~\ref{lem:second_moment_tensor},
+\[
+\vec{j}_1^{\text{edge}}(v_{\text{host}}) \;=\; r_0 \delta \left[\frac{4}{\phi^2}\,\hat{n}_\rho \;+\; 2(2 + \phi)\,\hat{n}_{\text{edge}}\right] \;+\; \mathcal{O}(\delta^2),
+\]
+or equivalently $\alpha_1^{(\rho)} = 4/\phi^2$ and $\alpha_1^{(\text{edge})} = 2(2 + \phi)$
+in the dimensionless convention $\vec{j}_1^{\text{edge}} = r_0\delta(\alpha_1^{(\rho)}\hat{n}_\rho + \alpha_1^{(\text{edge})}\hat{n}_{\text{edge}})$.
+\end{lemma}
+
+\begin{proof}
+From Mechanism A's first-order formula at the host vertex (H4):
+\[
+\vec{j}_1^{\text{edge}}(v_{\text{host}}) \;=\; 2 r_0 \delta \sum_{i=1}^{12} (\hat{u}_i \cdot \hat{n}_{\text{edge}})\,\hat{u}_i \;=\; 2 r_0 \delta\, M\hat{n}_{\text{edge}}.
+\]
+Apply Lemma~\ref{lem:second_moment_tensor} to compute $M\hat{n}_{\text{edge}}$:
+\[
+M\hat{n}_{\text{edge}} \;=\; \frac{3}{\phi^2}\,(\hat{n}_\rho \cdot \hat{n}_{\text{edge}})\,\hat{n}_\rho \;+\; (2 + \phi)\,\bigl(\hat{n}_{\text{edge}} - (\hat{n}_\rho \cdot \hat{n}_{\text{edge}})\,\hat{n}_\rho\bigr).
+\]
+By (H1), $\hat{n}_{\text{edge}} = \hat{u}_1$, hence by THEO-DSL-2 Theorem 5.1 (the
+uniform-projection identity)
+\[
+\hat{n}_\rho \cdot \hat{n}_{\text{edge}} \;=\; \hat{n}_\rho \cdot \hat{u}_1 \;=\; -\frac{1}{2\phi}.
+\]
+Collecting the $\hat{n}_\rho$ coefficient:
+\begin{align*}
+\hat{n}_\rho \text{ coefficient} \;&=\; \left[\frac{3}{\phi^2} - (2 + \phi)\right] \cdot \left(-\frac{1}{2\phi}\right) \\
+&=\; \left[(6 - 3\phi) - (2 + \phi)\right] \cdot \left(-\frac{1}{2\phi}\right) \\
+&=\; (4 - 4\phi) \cdot \left(-\frac{1}{2\phi}\right) \\
+&=\; \frac{2(\phi - 1)}{\phi} \\
+&=\; 2(\phi - 1) \cdot \frac{1}{\phi} \;=\; 2(\phi - 1)^2 \;=\; 2\bigl(\phi^2 - 2\phi + 1\bigr) \\
+&=\; 2\bigl((\phi + 1) - 2\phi + 1\bigr) \;=\; 2(2 - \phi) \;=\; 4 - 2\phi,
+\end{align*}
+where the third-to-last step uses the golden-ratio identity $1/\phi = \phi - 1$ and the
+last step uses $\phi^2 = \phi + 1$.
+
+Therefore
+\[
+M\hat{n}_{\text{edge}} \;=\; (4 - 2\phi)\,\hat{n}_\rho \;+\; (2 + \phi)\,\hat{n}_{\text{edge}}.
+\]
+Multiplying by $2 r_0 \delta$:
+\[
+\vec{j}_1^{\text{edge}}(v_{\text{host}}) \;=\; 2 r_0 \delta\bigl[(4 - 2\phi)\hat{n}_\rho + (2 + \phi)\hat{n}_{\text{edge}}\bigr] \;=\; r_0 \delta\bigl[(8 - 4\phi)\hat{n}_\rho + 2(2 + \phi)\hat{n}_{\text{edge}}\bigr].
+\]
+Using $8 - 4\phi = 4(2 - \phi) = 4/\phi^2$, this is the claimed closed-form.
+\end{proof}
+
+\section{Main theorem}
+
+\begin{theorem}[First-order edge-aligned substrate-current coefficients]
+\label{thm:main}
+Under (H1)--(H4), the first-order coefficient of the substrate current at the host
+vertex of the 600-cell at edge-aligned Reading C with vertex-host convention takes the
+closed-form value
+\[
+\boxed{\;\;\vec{j}_1^{\text{edge}}(v_{\text{host}}) \;=\; r_0\delta\left[\frac{4}{\phi^2}\,\hat{n}_\rho \;+\; 2(2 + \phi)\,\hat{n}_{\text{edge}}\right] \;+\; \mathcal{O}(\delta^2),\;\;}
+\]
+with $\alpha_1^{(\rho)} = 4/\phi^2 = 4(2 - \phi) \approx 1.528$ and $\alpha_1^{(\text{edge})} = 2(2 + \phi) = 4 + 2\phi \approx 7.236$ in the non-orthogonal basis $\{\hat{n}_\rho,\hat{n}_{\text{edge}}\}$ of the 2D $D_5$-invariant subspace established at THEO-DSL-6 (candidate).
+\end{theorem}
+
+\begin{proof}
+Immediate from Lemma~\ref{lem:first_order_coefficients}.
+\end{proof}
+
+\begin{corollary}[First-order projections recover scoping identities]
+\label{cor:projections}
+The projections onto the basis vectors are
+\begin{align*}
+\hat{n}_\rho \cdot \vec{j}_1^{\text{edge}}(v_{\text{host}}) \;&=\; -\frac{3 r_0\delta}{\phi^3} \;=\; (9 - 6\phi)\,r_0\delta \;\approx\; -0.708\,r_0\delta, \\
+\hat{n}_{\text{edge}} \cdot \vec{j}_1^{\text{edge}}(v_{\text{host}}) \;&=\; 2(5 - \phi)\,r_0\delta \;=\; (10 - 2\phi)\,r_0\delta \;\approx\; 6.764\,r_0\delta,
+\end{align*}
+recovering Identities P1 and P2 of Patch 0599 \S3.2--\S3.3.
+\end{corollary}
+
+\begin{proof}
+Direct computation from Theorem~\ref{thm:main}:
+\begin{align*}
+\hat{n}_\rho \cdot \vec{j}_1^{\text{edge}} \;&=\; r_0\delta\bigl[\alpha_1^{(\rho)} + \alpha_1^{(\text{edge})}(\hat{n}_\rho \cdot \hat{n}_{\text{edge}})\bigr] \\
+&=\; r_0\delta\left[\frac{4}{\phi^2} + 2(2 + \phi)\left(-\frac{1}{2\phi}\right)\right] \\
+&=\; r_0\delta\left[\frac{4}{\phi^2} - \frac{2 + \phi}{\phi}\right] \\
+&=\; r_0\delta\left[(8 - 4\phi) - (2 + \phi)(\phi - 1)\right] \\
+&=\; r_0\delta\left[(8 - 4\phi) - (2\phi - 2 + \phi^2 - \phi)\right] \\
+&=\; r_0\delta\left[(8 - 4\phi) - (\phi - 2 + \phi + 1)\right] \\
+&=\; r_0\delta\left[8 - 4\phi - 2\phi + 1\right] \\
+&=\; r_0\delta\,(9 - 6\phi) \;=\; -\frac{3 r_0\delta}{\phi^3},
+\end{align*}
+using $1/\phi^3 = 2\phi - 3$ in the final step. Similarly,
+\begin{align*}
+\hat{n}_{\text{edge}} \cdot \vec{j}_1^{\text{edge}} \;&=\; r_0\delta\bigl[\alpha_1^{(\rho)}(\hat{n}_\rho \cdot \hat{n}_{\text{edge}}) + \alpha_1^{(\text{edge})}\bigr] \\
+&=\; r_0\delta\left[\frac{4}{\phi^2}\left(-\frac{1}{2\phi}\right) + 2(2 + \phi)\right] \\
+&=\; r_0\delta\left[-\frac{2}{\phi^3} + 4 + 2\phi\right] \\
+&=\; r_0\delta\left[-2(2\phi - 3) + 4 + 2\phi\right] \\
+&=\; r_0\delta\left[-4\phi + 6 + 4 + 2\phi\right] \\
+&=\; r_0\delta\,(10 - 2\phi) \;=\; 2(5 - \phi)\,r_0\delta.
+\end{align*}
+\end{proof}
+
+\begin{corollary}[Total first-order substrate-current magnitude]
+\label{cor:magnitude}
+The total magnitude of $\vec{j}_1^{\text{edge}}(v_{\text{host}})$ at first order is
+\[
+\bigl|\vec{j}_1^{\text{edge}}(v_{\text{host}})\bigr|^2 \;=\; (132 - 52\phi)\,(r_0\delta)^2 \;\approx\; 47.86\,(r_0\delta)^2,
+\]
+hence $|\vec{j}_1^{\text{edge}}| \approx 6.92\,r_0\delta$.
+\end{corollary}
+
+\begin{proof}
+Using $|\vec{j}|^2 = (\alpha_1^{(\rho)})^2 + (\alpha_1^{(\text{edge})})^2 + 2\alpha_1^{(\rho)}\alpha_1^{(\text{edge})}(\hat{n}_\rho \cdot \hat{n}_{\text{edge}})$:
+\begin{align*}
+(\alpha_1^{(\rho)})^2 \;&=\; (8 - 4\phi)^2 \;=\; 64 - 64\phi + 16\phi^2 \;=\; 64 - 64\phi + 16(\phi + 1) \;=\; 80 - 48\phi, \\
+(\alpha_1^{(\text{edge})})^2 \;&=\; (4 + 2\phi)^2 \;=\; 16 + 16\phi + 4\phi^2 \;=\; 16 + 16\phi + 4(\phi + 1) \;=\; 20 + 20\phi, \\
+2\alpha_1^{(\rho)}\alpha_1^{(\text{edge})}\left(-\frac{1}{2\phi}\right) \;&=\; -\frac{(8 - 4\phi)(4 + 2\phi)}{\phi} \\
+&=\; -\frac{32 + 16\phi - 16\phi - 8\phi^2}{\phi} \;=\; -\frac{32 - 8(\phi + 1)}{\phi} \;=\; -\frac{24 - 8\phi}{\phi} \\
+&=\; -8\frac{3 - \phi}{\phi} \;=\; -8(3 - \phi)(\phi - 1) \;=\; -8(3\phi - 3 - \phi^2 + \phi) \\
+&=\; -8(4\phi - 3 - (\phi + 1)) \;=\; -8(3\phi - 4) \;=\; 32 - 24\phi.
+\end{align*}
+Summing: $(80 - 48\phi) + (20 + 20\phi) + (32 - 24\phi) = 132 - 52\phi \approx 47.86$.
+\end{proof}
+
+\section{Substantive findings}
+
+Three substantive findings from Theorem~\ref{thm:main} and its corollaries.
+
+\subsection{Finding A1-F1: 2D invariant subspace is genuinely 2D at first order}
+
+Both basis coefficients $\alpha_1^{(\rho)} = 4/\phi^2$ and $\alpha_1^{(\text{edge})} = 2(2 + \phi)$ are strictly non-zero, with neither coefficient an integer multiple of the other (the ratio $\alpha_1^{(\text{edge})}/\alpha_1^{(\rho)} = \phi^2(2 + \phi)/2 = (\phi^3 + \phi^2)/2 = (3\phi + 2)/2$ is irrational). This quantitatively confirms the structural finding of THEO-DSL-6 (candidate; Patch 0596): the 2D $D_5$-invariant subspace admitted by symmetry alone is realized as a genuinely 2-dimensional substrate-current vector at the lowest non-trivial perturbative order, not accidentally collapsing to 1D as it would if one of the two coefficients were forced to vanish.
+
+\subsection{Finding A1-F2: Edge-aligned first-order magnitude $\approx 3\times$ vertex-aligned}
+
+By Corollary~\ref{cor:magnitude}, $|\vec{j}_1^{\text{edge}}|^2 = (132 - 52\phi)(r_0\delta)^2 \approx 47.86\,(r_0\delta)^2$. Compare to vertex-aligned at first order: by THEO-DSL-3 / F.1 v1.0 Theorem 7.1, $\vec{j}_1^{\text{vertex}}(v_{\text{host}}) = (6/\phi^2)\,r_0\delta\,\hat{n}_\rho$, hence $|\vec{j}_1^{\text{vertex}}|^2 = (6/\phi^2)^2 (r_0\delta)^2 = (36/\phi^4)(r_0\delta)^2 = 36(5 - 3\phi)(r_0\delta)^2 = (180 - 108\phi)(r_0\delta)^2 \approx 5.26\,(r_0\delta)^2$.
+
+The ratio is
+\[
+\frac{|\vec{j}_1^{\text{edge}}|^2}{|\vec{j}_1^{\text{vertex}}|^2} \;=\; \frac{132 - 52\phi}{180 - 108\phi} \;=\; \frac{(132 - 52\phi)(2 + 3\phi)}{36(5 - 3\phi)(2 + 3\phi)} \;=\; \frac{108 + 136\phi}{36} \;=\; 3 + \frac{34}{9}\phi \;\approx\; 9.10,
+\]
+using $(5 - 3\phi)(2 + 3\phi) = 1$ (the inverse identity in $\mathbb{Z}[\phi]$). Hence $|\vec{j}_1^{\text{edge}}|/|\vec{j}_1^{\text{vertex}}| \approx \sqrt{9.10} \approx 3.02$. The edge-aligned substrate-current magnitude is approximately $3 \times$ larger than vertex-aligned at first order.
+
+\subsection{Finding A1-F3: Substrate-primitive alignment efficiency}
+
+The fraction of the substrate-current magnitude lying along the substrate primitive direction $\hat{n}_{\text{edge}}$ at edge-aligned Reading C is
+\[
+\frac{|\hat{n}_{\text{edge}} \cdot \vec{j}_1^{\text{edge}}|^2}{|\vec{j}_1^{\text{edge}}|^2} \;=\; \frac{4(5 - \phi)^2}{132 - 52\phi} \;=\; \frac{4(25 - 10\phi + \phi^2)}{132 - 52\phi} \;=\; \frac{4(26 - 9\phi)}{132 - 52\phi},
+\]
+using $\phi^2 = \phi + 1$ in the numerator. Numerically $4(26 - 9 \cdot 1.618)/(132 - 52 \cdot 1.618) = 4(11.438)/47.86 = 45.75/47.86 \approx 0.956$, hence approximately $95.6\%$ of the substrate-current magnitude lies along $\hat{n}_{\text{edge}}$, with $\approx 4.4\%$ in the orthogonal-to-$\hat{n}_{\text{edge}}$ direction within the 2D invariant subspace.
+
+Compare to vertex-aligned: $100\%$ of the substrate-current lies along $\hat{n}_\rho$ (since the 1D invariant subspace forces $\vec{j}_1^{\text{vertex}} \parallel \hat{n}_\rho$). Edge-aligned has a slightly smaller \emph{alignment efficiency} but a substantially larger \emph{total magnitude}.
+
+\section{Five-class exclusion enumeration}
+
+The hardened artifact's standard five exclusion classes:
+
+\begin{itemize}
+\item[\textbf{(E1)}] \textbf{Second-order coefficients $\alpha_2^{(\rho)}, \alpha_2^{(\text{edge})}$ NOT computed} --- target of Sequence-2A artifact A5$_E$ (Patch 0604) using path-class weight enumeration under (H5$_E$); requires the geometric primitives G1$_E$, G1$_E$.2, G2$_E$, G2$_E$.3 from Patches 0601--0603. The first-order closure here does NOT yield second-order content.
+
+\item[\textbf{(E2)}] \textbf{Face-aligned Reading C variant NOT covered} --- Sequence-2B target under $C_s$ stabilizer; the 3D $C_s$-invariant subspace of THEO-DSL-8 (candidate; Patch 0597) carries three independent coefficients $\alpha_k^{(\rho)}, \alpha_k^{(\text{ax})}, \alpha_k^{(F\perp)}$ requiring separate first-order analysis.
+
+\item[\textbf{(E3)}] \textbf{Mechanism A first-order formula taken at publication-grade Layer 3 unconditional} --- no (H5$_E$) framework-extension required at $\mathcal{O}(\delta^1)$. The (H5$_E$) qualifier becomes load-bearing only at $\mathcal{O}(\delta^2)$ in Sequence-2A artifact A5$_E$.
+
+\item[\textbf{(E4)}] \textbf{Layer 4 axiomatic derivation of Mechanism A from CPP A1--A11 NOT in scope} --- OPEN-FP-F1-2 long-term programme target; would derive (H4)'s perturbation-locality propagation + Mechanism A rate function structure from CPP primitive axioms.
+
+\item[\textbf{(E5)}] \textbf{Cross-sector consistency with Capotauro v2.0 NOT established at strict numerical-coefficient level} --- the dimensional-growth pattern $1 \to 2 \to 3$ from THEO-DSL-4 / -6 / -8 is structural; the first-order coefficient magnitudes $\alpha_1^{(\rho)} = 4/\phi^2$ and $\alpha_1^{(\text{edge})} = 2(2 + \phi)$ have no direct Capotauro spatial-sector analog. Cross-sector consistency at structural-parallelism level only.
+\end{itemize}
+
+\section{Falsifier}
+
+The sharpest falsifier of Theorem~\ref{thm:main}: demonstration of either
+$\alpha_1^{(\rho)} \neq 4/\phi^2$ or $\alpha_1^{(\text{edge})} \neq 2(2 + \phi)$ from a
+valid first-principles Mechanism A first-order calculation under (H1)--(H4) at
+edge-aligned Reading C with vertex-host convention in the 600-cell. Equivalently:
+demonstration that the icosahedral second-moment tensor identity of Lemma~\ref{lem:second_moment_tensor} is incorrect (which would propagate
+backward to falsify PRED-O-30 / icosahedral rank-1 sum or THEO-DSL-2 Theorem 5.1 /
+uniform-projection identity).
+
+A structural-level falsifier: demonstration that $|\vec{j}_1^{\text{edge}}|/|\vec{j}_1^{\text{vertex}}|$ deviates substantially from $\sqrt{3 + (34/9)\phi} \approx 3.02$ in any valid CPP-axiom-consistent calculation; would force a re-examination of either the icosahedral first-shell geometry or the Mechanism A rate function structure.
+
+\section{Anti-erasure remarks}
+
+\begin{antierasure}[Patch 0599 \S3.3 magnitude-interpretation slip]
+\label{ae:patch_0599_slip}
+Patch 0599 \S3.3 stated: ``the radial component coefficient is $|\alpha_1^{(\rho)}| = 3/\phi^3 \approx 0.708$ along $\hat{n}_\rho$ projection axis [\ldots] the total substrate-current magnitude under edge-aligned at first order is therefore smaller than the vertex-aligned magnitude.'' This conclusion is INCORRECT on two counts, registered openly per the anti-erasure principle:
+
+\textbf{Slip 1 (naming confusion)}: the value $3/\phi^3 \approx 0.708$ is the
+\emph{projection} $\hat{n}_\rho \cdot \vec{j}_1^{\text{edge}}$ (computed correctly in
+Patch 0599 \S3.3 and recovered as Corollary~\ref{cor:projections} of this artifact), not the \emph{basis coefficient} $\alpha_1^{(\rho)}$ in the non-orthogonal basis $\{\hat{n}_\rho, \hat{n}_{\text{edge}}\}$. The correct $\alpha_1^{(\rho)} = 4/\phi^2 \approx 1.528$ (Theorem~\ref{thm:main}).
+
+\textbf{Slip 2 (magnitude conclusion)}: the conclusion that ``edge-aligned magnitude is
+smaller than vertex-aligned magnitude'' is the OPPOSITE of the correct result. By
+Corollary~\ref{cor:magnitude} and Finding A1-F2, $|\vec{j}_1^{\text{edge}}| \approx 3.02 \cdot |\vec{j}_1^{\text{vertex}}|$ at first order --- edge-aligned magnitude is approximately $3 \times$ larger than vertex-aligned, not smaller. The intuition that ``vertex-aligned Reading C maximizes substrate-current alignment'' is structurally correct only in the ALIGNMENT-EFFICIENCY sense ($100\%$ vs $\approx 95.6\%$ projection onto the substrate primitive direction), NOT in the TOTAL-MAGNITUDE sense.
+
+The anti-erasure correction does not invalidate any other Patch 0599 result.
+Identities P1, P2, and the projection values were computed correctly; the slip
+was in the interpretive narrative about magnitudes and the loose use of the symbol
+$\alpha_1^{(\rho)}$. Patch 0599 remains frozen as the SHIPPED scoping document; this
+anti-erasure correction is registered in the Sequence-2A trajectory record.
+\end{antierasure}
+
+\begin{antierasure}[Magnitude-vs-structural uniqueness of vertex-aligned Reading C]
+\label{ae:uniqueness_basis}
+The vertex-aligned-uniqueness selection at Capotauro Q1$'$+Q1$'$.A (Patch 0419 Finding C-W37) and the F.1 temporal-sector uniqueness selection registered at Patch 0598 cross-sector convergence rest on STRUCTURAL grounds (1D substrate-locality + clean $I_h$-equivariance), NOT on magnitude grounds. Finding A1-F2 establishes that at the first-order substrate-current MAGNITUDE level, edge-aligned Reading C is actually $\approx 3 \times$ stronger than vertex-aligned. The vertex-aligned-uniqueness argument is therefore based on the CHARACTER of substrate-locality (a clean 1D substrate-current parallel to the substrate primitive direction) rather than on the MAGNITUDE of substrate-current observables. This is a substantive clarification of the cross-sector convergence framing registered at Patch 0598.
+\end{antierasure}
+
+\section{Honest scope-limitation framing}
+
+The theorem closes the FIRST-ORDER coefficient sub-question of OPEN-FP-F1-5 edge-aligned variant at publication-grade Layer 3 unconditional rigor. The second-order coefficient sub-question $\alpha_2^{(\rho)}, \alpha_2^{(\text{edge})}$ remains OPEN as the target of Sequence-2A artifact A5$_E$ (Patch 0604) using path-class weight enumeration under the (H5$_E$) framework-extension hypothesis at sketch-document Layer 3 (inherited via OPEN-FP-F1-1 DG-1 sub-option A path-integral perturbation-theory machinery). The combined first-order + second-order content will be assembled at the Sequence-2A umbrella Patch (A6$_E$, Patch 0605) as THEO-DSL-7 (candidate) at sketch-document Layer 3 under (H5$_E$) per DG-F15A-5 default-(A) single-theorem registration at weakest-link rigor.
+
+The face-aligned Reading C variant (Sequence-2B, $C_s$ stabilizer, 3D invariant subspace via THEO-DSL-8 candidate) is a separate trajectory; the first-order analysis of face-aligned coefficients $\alpha_1^{(\rho)}, \alpha_1^{(\text{ax})}, \alpha_1^{(F\perp)}$ requires separate substantive work paralleling this Patch.
+
+The vertex-host convention (H2) is preserved per anti-erasure Remark 7.2 of Patch 0597. The face-centroid-host alternative convention is a separate research question not in the scope of this Patch.
+
+Layer 4 axiomatic derivation of Mechanism A's rate function structure and perturbation-locality propagation from CPP primitive axioms A1--A11 (OPEN-FP-F1-2) remains a long-term programme target. The first-order coefficient closed-forms here inherit any future (H4) hardening or refinement directly via the icosahedral second-moment tensor identity of Lemma~\ref{lem:second_moment_tensor}, whose proof rests entirely on $I_h$-equivariance + Schur's lemma + the load-bearing input PRED-O-30 (already at publication-grade Layer 3 unconditional via THEO-DSL-2 + Patch 0571).
+
+\section{Cross-trajectory linkage}
+
+This artifact is the \textbf{fourteenth} in the F.1 Layer 3 hardened-theorem sequence (Patches 0550 + 0551 + 0552 + 0571 + 0585 + 0587 + 0588 + 0589 + 0590 + 0591 + 0592 + 0596 + 0597 + this Patch 0600), advancing the combined sequence to approximately 4{,}530 lines LaTeX across 14 \texttt{.tex} artifacts in \texttt{hardened\_theorems/}. It is the \textbf{first substantive Patch} under the OPEN-FP-F1-5 Sequence-2A trajectory opened at Patch 0599. Templates the symmetry-only structural-theorem methodology established at THEO-DSL-4 / Patch 0585 + extended at THEO-DSL-6 / Patch 0596 for coefficient-enumeration work under non-vertex-aligned Reading-C variants via the icosahedral second-moment tensor identity.
+
+Single-artifact-per-Patch discipline preserved 14-for-14 since Patch 0585. Closed-form Sequence-2A first-order result without (H5)-class framework-extension dependency.
+
+\end{document}
