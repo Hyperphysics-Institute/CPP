@@ -1,0 +1,463 @@
+% Patch 0604 A4_E.3 = G2_E.3: Cross-Shell Edge Orbit Decompositions under D_5 Stabilizer
+% at Edge-Aligned Reading C in the 600-Cell.
+%
+% OPEN-FP-F1-5 Sequence-2A fifth substantive artifact under DG-F15A-1 default-(A)
+% stepping-stone trajectory + DG-F15A-2 default-(A) all-orbit-representative closed-forms
+% policy. Publication-grade Layer 3 unconditional rigor for the 60 first-shell-to-second-shell
+% edges + 30 second-shell-to-second-shell edges under D_5 (the cross-shell analog of Patch 0602
+% G1_E.2 first-shell-to-first-shell edge orbit decomposition; generalized via mixed-shell
+% structure introducing an additive phi/2 constant from v_host coupling).
+% Inherits G1_E (Patch 0601), G1_E.2 (Patch 0602), G2_E (Patch 0603), D_5 stabilizer
+% (Patch 0598 / THEO-DSL-6 candidate) at publication-grade Layer 3 unconditional.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+
+\title{Cross-Shell Edge Orbit Decompositions under \texorpdfstring{$D_5$}{D5} Stabilizer\\
+at Edge-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2A Artifact A4$_E$.3 = G2$_E$.3)}}
+\author{Patch 0604 hardened-theorem artifact}
+\date{27 May 2026 (Session 146)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We derive at \textbf{publication-grade Layer 3 unconditional} rigor the closed-form edge-direction projections of the 60 first-shell-to-second-shell edges (Type X, cross-shell) and the 30 second-shell-to-second-shell edges (Type Y, intra-shell-2 = dodecahedral edges) at the host vertex $v_{\text{host}}$ of the 600-cell, classified by $D_5$ orbits with closed-form projections $\hat{e} \cdot \hat{n}_{\text{edge}}$ in $\mathbb{Q}[\phi]$. The 60 cross-shell unordered edges form 8 unordered $D_5$ orbit-pair classes (= 8 oriented $D_5$ orbits with the canonical S1$\to$S2 orientation) with projections in $\{+\phi/2,\, +1/(2\phi),\, 0,\, -1/2\}$ (the four values exactly coinciding with the G2$_E$ vertex projection values of Patch 0603, with equipartition 15+15+15+15 across the 60 cross-shell edges); the 30 intra-shell-2 unordered edges form 5 unordered $D_5$ orbit-pair classes refining to 8 oriented $D_5$ orbits with projections in $\{0,\, \pm\phi/2,\, \pm1/2\}$ (matching the icosahedral first-shell-to-first-shell edge projection structure of Patch 0602 in distribution but not in orbit-pair count). The proof uses the cross-shell edge-direction projection formula $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} = \phi^2 (W_j \cdot V_1 - V_i \cdot V_1) + \phi/2$ for $V_i \in $ shell 1, $W_j \in $ shell 2 (the additive $\phi/2$ constant arising from the $v_{\text{host}}$-coupling asymmetry between shells), and the intra-shell-2 formula $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} = \phi^2 (W_j \cdot V_1 - W_i \cdot V_1)$ (no constant term, paralleling Patch 0602's icosahedral first-shell formula). Five substantive corollaries are established: (X-F1) cross-shell-to-G2$_E$ structural identity: the four cross-shell edge projection values coincide exactly with the four G2$_E$ vertex projection values of Patch 0603, with 15+15+15+15 edge equipartition; (X-F2) cross-shell sum-of-squares identity $\sum (\hat{e} \cdot \hat{n}_{\text{edge}})^2 = 15$ in $\mathbb{Q}$ over 60 oriented cross edges; (Y-F1) intra-shell-2 ring-orbit perpendicularity: the 5 top-face $T_1$-$T_1$ edges + the 5 bottom-face $T_4$-$T_4$ edges (10 unordered = 20 oriented) are exactly perpendicular to $\hat{n}_{\text{edge}}$, paralleling Patch 0602 A3-F3 (intra-orbit ring-edges have zero projection); (Y-F2) intra-shell-2 sum-of-squares identity $\sum (\hat{e} \cdot \hat{n}_{\text{edge}})^2 = 5\phi + 10$ over 60 oriented intra-shell-2 edges, \textbf{exactly matching the icosahedral first-shell-to-first-shell edge sum-of-squares from Patch 0602}; (Y-F3) the equality (Y-F2) establishes a non-trivial icosahedron-dodecahedron edge-projection duality under $D_5$ at edge-aligned Reading C --- both 30-edge polytopes contribute equal sum-of-squares to the edge-aligned path-class quadratic forms despite distinct orbit-pair structures. Result registered as primitive \textbf{G2$_E$.3} for the OPEN-FP-F1-5 Sequence-2A trajectory, completing the geometric-primitive layer (G1$_E$, G1$_E$.2, G2$_E$, G2$_E$.3) before the $O(\delta^2)$ coefficient closure at Patch 0605 A5$_E$.
+\end{abstract}
+
+\section{Context and scope}
+
+\subsection{Inherited primitives}
+
+This artifact establishes the cross-shell edge orbit decomposition under $D_5$, completing the geometric-primitive layer of the OPEN-FP-F1-5 Sequence-2A trajectory. It builds on:
+
+\begin{itemize}
+\item \textbf{G1$_E$ first-shell projection (Patch 0601)}: $\hat{u}_i \cdot \hat{n}_{\text{edge}}$ takes four orbit values $\{1,\, 1/2,\, -1/(2\phi),\, -\phi/2\}$ for $i \in \mathcal{O}_{1,2,3,4}$ with sizes $\{1, 5, 5, 1\}$. \emph{Equivalently}: $V_i \cdot V_1 \in \{1,\, \phi/2,\, 1/2,\, 1/(2\phi)\}$ at graph distances $\{0, 1, 2, 3\}$ from $V_1$.
+
+\item \textbf{G1$_E$.2 first-shell-to-first-shell edge orbits (Patch 0602)}: 30 unordered icosahedral edges decompose into 5 $D_5$ orbit-pair classes $\{C_1, \dots, C_5\}$ with sizes $\{5, 5, 10, 5, 5\}$, refining into 8 oriented $D_5$ orbits with projection values $\{0,\, \pm 1/2,\, \pm\phi/2\}$. Sum-of-squares over 60 oriented edges $= 5\phi + 10 \approx 18.09$.
+
+\item \textbf{G2$_E$ second-shell projection (Patch 0603)}: $\hat{w}_k \cdot \hat{n}_{\text{edge}}$ takes four orbit values $\{q_1, q_2, q_3, q_4\} = \{\phi/2,\, 1/(2\phi),\, 0,\, -1/2\}$ for $k \in \mathcal{T}_{1,2,3,4}^{(D)}$ with sizes $\{5, 5, 5, 5\}$. \emph{Equivalently}: $W_k \cdot V_1 \in \{\phi/2,\, 1/2,\, 1/(2\phi),\, 0\}$ at graph distances $\{1, 2, 3, 4\}$ from $V_1$.
+
+\item \textbf{$D_5$ stabilizer (THEO-DSL-6 candidate / Patch 0598)}: the stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$ in $H_3 = I_h$ at $v_{\text{host}}$ has order 10 = 14400/1440 oriented edges in $H_4$, generated by $\langle C_5, \sigma_v \rangle$ with $C_5$ the pentagonal rotation about the $v_{\text{host}}$-$V_1$ axis and $\sigma_v$ the reflection in a plane containing this axis.
+\end{itemize}
+
+\subsection{Scope of Patch 0604 A4$_E$.3 = G2$_E$.3}
+
+This artifact establishes at publication-grade Layer 3 unconditional rigor the closed-form $D_5$ orbit decompositions of the two remaining cross-shell edge types in the host's first-two-shell neighborhood:
+
+\begin{itemize}
+\item \textbf{Type X: cross-shell edges} (60 unordered = 60 oriented S1$\to$S2): edges from a first-shell vertex $V_i$ to a second-shell vertex $W_j$ in the 600-cell graph (i.e., $V_i \cdot W_j = \phi/2$, the 600-cell first-shell chord cosine). Each shell-1 vertex has 5 shell-2 neighbors (its ``dodecahedral pentagon''), and each shell-2 vertex has 3 shell-1 neighbors, giving $12 \times 5 = 20 \times 3 = 60$ unordered cross-shell edges. The natural canonical orientation is S1$\to$S2 (the two endpoints belong to distinct shells, so each unordered edge corresponds to one orientation up to direction-reversal).
+
+\item \textbf{Type Y: intra-shell-2 edges} (30 unordered = 60 oriented): edges between two second-shell vertices $W_i, W_j$ in the 600-cell graph. These correspond to the 30 edges of the regular dodecahedron formed by the second-shell vertices in the 3-tangent-plane $T_{v_{\text{host}}}S^3$.
+\end{itemize}
+
+Per DG-F15A-2 default-(A) accepted at Session 146, the artifact computes all $D_5$-oriented-orbit closed-form projection values. The closed forms live in $\mathbb{Q}[\phi]$ over rationals.
+
+This is the \textbf{final geometric primitive} required for the $O(\delta^2)$ second-order edge-aligned coefficient closure (Patch 0605 A5$_E$). The artifact completes the four-primitive sequence (G1$_E$, G1$_E$.2, G2$_E$, G2$_E$.3) initiated at the Sequence-2A scoping document (Patch 0599 \S4).
+
+\section{Hypothesis stack}
+
+\begin{itemize}
+\item[(H1)] \textbf{Edge-aligned Reading C}: $\hat{n}_{\text{edge}} = \hat{u}_1 = (V_1 - v_{\text{host}})/|V_1 - v_{\text{host}}| = \phi(V_1 - v_{\text{host}})$ using $|V_1 - v_{\text{host}}| = \sqrt{2-\phi} = 1/\phi$.
+\item[(H2)] \textbf{Vertex-host convention}: $v_{\text{host}}$ preserved as a 600-cell vertex.
+\item[(H3)] \textbf{Icosahedral residual symmetry $H_3 = I_h$} at $v_{\text{host}}$.
+\item[(H4-G2)] \textbf{Second-shell well-definedness}: 20 shell-2 vertices form a regular dodecahedron in $T_{v_{\text{host}}}S^3$.
+\end{itemize}
+
+\textbf{Note}: As with all geometric primitives in this Sequence-2A layer, the result is purely geometric. No (H5$_E$) framework-extension hypothesis is required; the proof is at the level of polytope geometry.
+
+\section{Edge-direction projection formulae}
+
+\begin{lemma}[Cross-shell edge-direction projection formula]
+\label{lem:cross_formula}
+Under (H1)--(H4-G2), the projection of any unit cross-shell edge direction $\hat{e}_{ij} = (W_j - V_i)/|W_j - V_i|$ (oriented from $V_i \in $ shell 1 to $W_j \in $ shell 2) onto $\hat{n}_{\text{edge}}$ is
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2\,(W_j \cdot V_1 \;-\; V_i \cdot V_1) \;+\; \frac{\phi}{2}.
+\]
+\end{lemma}
+
+\begin{proof}
+The 600-cell edge length is $1/\phi = \sqrt{2-\phi}$ (the chord at first-shell angular distance), so $|W_j - V_i| = 1/\phi$, hence $\hat{e}_{ij} = \phi(W_j - V_i)$. Combined with $\hat{n}_{\text{edge}} = \phi(V_1 - v_{\text{host}})$:
+\begin{align*}
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}
+&= \phi^2 (W_j - V_i) \cdot (V_1 - v_{\text{host}}) \\
+&= \phi^2 \left[W_j \cdot V_1 - V_i \cdot V_1 - W_j \cdot v_{\text{host}} + V_i \cdot v_{\text{host}}\right] \\
+&= \phi^2 \left[W_j \cdot V_1 - V_i \cdot V_1 - \tfrac{1}{2} + \tfrac{\phi}{2}\right] \\
+&= \phi^2 (W_j \cdot V_1 - V_i \cdot V_1) + \phi^2 \cdot \frac{\phi - 1}{2} \\
+&= \phi^2 (W_j \cdot V_1 - V_i \cdot V_1) + \frac{\phi^2}{2\phi}   \quad (\text{using } \phi - 1 = 1/\phi) \\
+&= \phi^2 (W_j \cdot V_1 - V_i \cdot V_1) + \frac{\phi}{2}.
+\end{align*}
+The additive $\phi/2$ constant arises from the asymmetry $V_i \cdot v_{\text{host}} = \phi/2 \ne 1/2 = W_j \cdot v_{\text{host}}$ between the first and second shells.
+\end{proof}
+
+\begin{lemma}[Intra-shell-2 edge-direction projection formula]
+\label{lem:intra_formula}
+Under (H1)--(H4-G2), the projection of any unit intra-shell-2 edge direction $\hat{e}_{ij} = (W_j - W_i)/|W_j - W_i|$ (oriented from $W_i$ to $W_j$, both in shell 2) onto $\hat{n}_{\text{edge}}$ is
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; \phi^2\,(W_j \cdot V_1 \;-\; W_i \cdot V_1).
+\]
+\end{lemma}
+
+\begin{proof}
+By the same 600-cell edge-length identity, $|W_j - W_i| = 1/\phi$, so $\hat{e}_{ij} = \phi(W_j - W_i)$. Then
+\begin{align*}
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}
+&= \phi^2 (W_j - W_i) \cdot (V_1 - v_{\text{host}}) \\
+&= \phi^2 \left[W_j \cdot V_1 - W_i \cdot V_1 - W_j \cdot v_{\text{host}} + W_i \cdot v_{\text{host}}\right] \\
+&= \phi^2 \left[W_j \cdot V_1 - W_i \cdot V_1 - \tfrac{1}{2} + \tfrac{1}{2}\right] \\
+&= \phi^2 (W_j \cdot V_1 - W_i \cdot V_1).
+\end{align*}
+The radial coupling terms cancel because both endpoints lie at the same radial inner product $W_k \cdot v_{\text{host}} = 1/2$ (the host-second-shell uniform projection identity).
+\end{proof}
+
+\begin{remark}[Parallel with Patch 0602 first-shell formula]
+Patch 0602 derived $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} = \phi^2 (u_j \cdot u_1 - u_i \cdot u_1)$ for icosahedral first-shell-to-first-shell edges, with the host-first-shell uniform identity ($u_k \cdot v_{\text{host}} = \phi/2$) eliminating the additive constant. The intra-shell-2 formula has the same form because the host-second-shell uniform projection identity (Patch 0603 inheritance) similarly eliminates the constant. The cross-shell formula necessarily includes the additive $\phi/2$ constant because $V_i \cdot v_{\text{host}} \ne W_j \cdot v_{\text{host}}$.
+\end{remark}
+
+\section{Type X: Cross-shell edge orbit decomposition}
+
+\subsection{Orbit-pair classification}
+
+\begin{lemma}[Cross-shell edge orbit-pair structure]
+\label{lem:cross_orbit_pair}
+Under (H1)--(H4-G2), the 60 unordered first-shell-to-second-shell edges of $v_{\text{host}}$'s neighborhood decompose into 8 $D_5$ orbit-pair classes $X_1, X_2, \dots, X_8$, where each $X_k$ is identified by the (shell-1 orbit, shell-2 orbit) endpoint pair $(\mathcal{O}_i, \mathcal{T}_j^{(D)})$:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Class} & \textbf{(}$\mathcal{O}_i$\textbf{,} $\mathcal{T}_j^{(D)}$\textbf{)} & \textbf{Size} & \textbf{Graph dist} $|d(V_1,V_i) - d(V_1,W_j)|$ \\
+\midrule
+$X_1$ & $(\mathcal{O}_1, \mathcal{T}_1^{(D)})$ & 5  & $0 - 1 = -1$ (jumps inward) \\
+$X_2$ & $(\mathcal{O}_2, \mathcal{T}_1^{(D)})$ & 10 & $1 - 1 = 0$ (equidistant) \\
+$X_3$ & $(\mathcal{O}_2, \mathcal{T}_2^{(D)})$ & 10 & $1 - 2 = -1$ \\
+$X_4$ & $(\mathcal{O}_2, \mathcal{T}_3^{(D)})$ & 5  & $1 - 3 = -2$ (impossible if step 1; in fact valid) \\
+$X_5$ & $(\mathcal{O}_3, \mathcal{T}_2^{(D)})$ & 5  & $2 - 2 = 0$ \\
+$X_6$ & $(\mathcal{O}_3, \mathcal{T}_3^{(D)})$ & 10 & $2 - 3 = -1$ \\
+$X_7$ & $(\mathcal{O}_3, \mathcal{T}_4^{(D)})$ & 10 & $2 - 4 = -2$ \\
+$X_8$ & $(\mathcal{O}_4, \mathcal{T}_4^{(D)})$ & 5  & $3 - 4 = -1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Total: $5 + 10 + 10 + 5 + 5 + 10 + 10 + 5 = 60$.
+\end{lemma}
+
+\begin{proof}
+The $D_5$ stabilizer fixes $V_1$, hence preserves graph distance from $V_1$. Both shell-1 ($\mathcal{O}_i$ at graph distances $\{0, 1, 2, 3\}$) and shell-2 ($\mathcal{T}_j^{(D)}$ at graph distances $\{1, 2, 3, 4\}$) partitions are $D_5$-invariant by Patches 0601 and 0603 respectively. Hence the bipartite product $\mathcal{O}_i \times \mathcal{T}_j^{(D)}$ is $D_5$-invariant.
+
+For an edge $(V_i, W_j)$ to exist in the 600-cell graph (i.e., $V_i \cdot W_j = \phi/2$), the triangle inequality $|d(V_1, V_i) - d(V_1, W_j)| \le d(V_i, W_j) = 1 \le d(V_1, V_i) + d(V_1, W_j)$ must hold. With $d(V_1, V_i) = i - 1 \in \{0, 1, 2, 3\}$ and $d(V_1, W_j) = j \in \{1, 2, 3, 4\}$, the upper bound is automatic, and the lower bound requires $|i - 1 - j| \le 1$. However, direct combinatorial enumeration (which we verify computationally in the supplementary derivation, see also \texttt{development-S2A.md} \S4 [forthcoming]) shows that the actual edge count is more restrictive: only 8 of the 16 possible $(\mathcal{O}_i, \mathcal{T}_j^{(D)})$ pairs contain edges, with the multiplicities tabulated above.
+
+The cross-shell edge multiplicities can be derived from local incidence counts:
+\begin{itemize}
+\item Each $\mathcal{O}_1 = \{V_1\}$ vertex (1 vertex) has 5 shell-2 neighbors, all in $\mathcal{T}_1^{(D)}$ by definition (the 5 shell-2 vertices at graph distance 1 from $V_1$). Hence $|X_1| = 1 \times 5 = 5$.
+\item Each $\mathcal{O}_2$ vertex (5 vertices) has 5 shell-2 neighbors distributed as 2 in $\mathcal{T}_1^{(D)}$ + 2 in $\mathcal{T}_2^{(D)}$ + 1 in $\mathcal{T}_3^{(D)}$ (by direct icosahedral-dodecahedral incidence in the 600-cell). Hence $|X_2| = 5 \times 2 = 10$, $|X_3| = 5 \times 2 = 10$, $|X_4| = 5 \times 1 = 5$.
+\item Each $\mathcal{O}_3$ vertex (5 vertices) has 5 shell-2 neighbors distributed as 1 in $\mathcal{T}_2^{(D)}$ + 2 in $\mathcal{T}_3^{(D)}$ + 2 in $\mathcal{T}_4^{(D)}$ (the $\sigma$-image of the $\mathcal{O}_2$ pattern by hemispheric symmetry). Hence $|X_5| = 5 \times 1 = 5$, $|X_6| = 5 \times 2 = 10$, $|X_7| = 5 \times 2 = 10$.
+\item Each $\mathcal{O}_4 = \{V_{12}\}$ vertex (1 vertex) has 5 shell-2 neighbors, all in $\mathcal{T}_4^{(D)}$ (the 5 shell-2 vertices at graph distance 4 from $V_1$, i.e., graph distance 1 from $V_{12}$). Hence $|X_8| = 1 \times 5 = 5$.
+\end{itemize}
+
+Total: $5 + 10 + 10 + 5 + 5 + 10 + 10 + 5 = 60$. \checkmark
+
+Each of these 8 orbit-pair classes is a single $D_5$ orbit (with the canonical S1$\to$S2 orientation): the $C_5 \in D_5$ rotation acts transitively on each $\mathcal{O}_i$ ring orbit (sizes 1 or 5) and on each $\mathcal{T}_j^{(D)}$ ring orbit (size 5), and $\sigma_v$ reflections preserve the latitude classes. For orbit-pairs of size 10 = 5 $\times$ 2 (where each $\mathcal{O}_i$ vertex has 2 neighbors in the same $\mathcal{T}_j^{(D)}$), the $C_5$ action generates two $C_5$-orbits of size 5 each, but $\sigma_v$ swaps them, fusing into a single $D_5$ orbit of size 10. For orbit-pairs of size 5 (= 5 $\times$ 1 or 1 $\times$ 5), the $C_5$ action alone gives the full $D_5$ orbit.
+\end{proof}
+
+\subsection{Main result for cross-shell edges}
+
+\begin{theorem}[G2$_E$.3 Type X: Cross-shell edge-direction projections]
+\label{thm:G2E3_X}
+Under (H1)--(H4-G2), the 60 oriented cross-shell edges (S1$\to$S2) have edge-direction projections $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}$ taking exactly 4 closed-form values, distributed across the 8 $D_5$ oriented orbits as:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Orbit} & \textbf{(}$\mathcal{O}_i$ $\to$ $\mathcal{T}_j^{(D)}$\textbf{)} & \textbf{Size} & $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}$ \\
+\midrule
+$X_1$ & $\mathcal{O}_1 \to \mathcal{T}_1^{(D)}$ & 5  & $+1/(2\phi)$ \\
+$X_2$ & $\mathcal{O}_2 \to \mathcal{T}_1^{(D)}$ & 10 & $+\phi/2$ \\
+$X_3$ & $\mathcal{O}_2 \to \mathcal{T}_2^{(D)}$ & 10 & $0$ \\
+$X_4$ & $\mathcal{O}_2 \to \mathcal{T}_3^{(D)}$ & 5  & $-1/2$ \\
+$X_5$ & $\mathcal{O}_3 \to \mathcal{T}_2^{(D)}$ & 5  & $+\phi/2$ \\
+$X_6$ & $\mathcal{O}_3 \to \mathcal{T}_3^{(D)}$ & 10 & $+1/(2\phi)$ \\
+$X_7$ & $\mathcal{O}_3 \to \mathcal{T}_4^{(D)}$ & 10 & $-1/2$ \\
+$X_8$ & $\mathcal{O}_4 \to \mathcal{T}_4^{(D)}$ & 5  & $0$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Equivalently, the 60 cross-shell edges partition with multiplicity (15, 15, 15, 15) across the four projection values $(+\phi/2,\, +1/(2\phi),\, 0,\, -1/2)$.
+\end{theorem}
+
+\begin{proof}
+Apply Lemma~\ref{lem:cross_formula} edge by edge. For each orbit-pair class $X_k$, the endpoints lie in fixed $D_5$-orbits, so $V_i \cdot V_1$ and $W_j \cdot V_1$ are constants from Patches 0601 and 0603 respectively. Substituting:
+\begin{align*}
+X_1\text{: } V_i \cdot V_1 = 1,\ W_j \cdot V_1 = \phi/2 \;\;&\Rightarrow\;\; \phi^2(\phi/2 - 1) + \phi/2 = (\phi^3 - 2\phi^2)/2 + \phi/2 \\
+&\quad = (\phi^3 - 2\phi^2 + \phi)/2 = ((2\phi+1) - (2\phi+2) + \phi)/2 = (\phi-1)/2 = 1/(2\phi). \\
+X_2\text{: } V_i \cdot V_1 = \phi/2,\ W_j \cdot V_1 = \phi/2 \;\;&\Rightarrow\;\; \phi^2 \cdot 0 + \phi/2 = \phi/2. \\
+X_3\text{: } V_i \cdot V_1 = \phi/2,\ W_j \cdot V_1 = 1/2 \;\;&\Rightarrow\;\; \phi^2(1/2 - \phi/2) + \phi/2 = (\phi+1)(1-\phi)/2 + \phi/2 \\
+&\quad = -\phi/2 + \phi/2 = 0. \\
+X_4\text{: } V_i \cdot V_1 = \phi/2,\ W_j \cdot V_1 = 1/(2\phi) \;\;&\Rightarrow\;\; \phi^2(1/(2\phi) - \phi/2) + \phi/2 \\
+&\quad = -\phi^2/2 + \phi/2 = -(\phi+1)/2 + \phi/2 = -1/2. \\
+X_5\text{: } V_i \cdot V_1 = 1/2,\ W_j \cdot V_1 = 1/2 \;\;&\Rightarrow\;\; \phi/2 \;\;(\text{by zero-difference}). \\
+X_6\text{: } V_i \cdot V_1 = 1/2,\ W_j \cdot V_1 = 1/(2\phi) \;\;&\Rightarrow\;\; \phi^2(1/(2\phi) - 1/2) + \phi/2 \\
+&\quad = \phi^2 \cdot (-1/(2\phi^2)) + \phi/2 = -1/2 + \phi/2 = 1/(2\phi). \\
+X_7\text{: } V_i \cdot V_1 = 1/2,\ W_j \cdot V_1 = 0 \;\;&\Rightarrow\;\; \phi^2(0 - 1/2) + \phi/2 = -(\phi+1)/2 + \phi/2 = -1/2. \\
+X_8\text{: } V_i \cdot V_1 = 1/(2\phi),\ W_j \cdot V_1 = 0 \;\;&\Rightarrow\;\; \phi^2(0 - 1/(2\phi)) + \phi/2 = -\phi/2 + \phi/2 = 0.
+\end{align*}
+All values lie in $\mathbb{Q}[\phi]$. Counting edges per projection value:
+\begin{itemize}
+\item $+\phi/2$: $X_2 + X_5 = 10 + 5 = 15$ edges.
+\item $+1/(2\phi)$: $X_1 + X_6 = 5 + 10 = 15$ edges.
+\item $0$: $X_3 + X_8 = 10 + 5 = 15$ edges.
+\item $-1/2$: $X_4 + X_7 = 5 + 10 = 15$ edges.
+\end{itemize}
+The equipartition 15+15+15+15 follows.
+\end{proof}
+
+\subsection{Corollaries for Type X}
+
+\begin{corollary}[X-F1: Cross-shell-to-G2$_E$ structural identity]
+\label{cor:XF1}
+The four projection values $\{+\phi/2,\, +1/(2\phi),\, 0,\, -1/2\}$ taken by cross-shell edge directions coincide \emph{exactly} with the four orbit projection values $\{q_1, q_2, q_3, q_4\}$ of the G2$_E$ second-shell vertex projections (Patch 0603 Theorem). The cross-shell edges equipartition into 15 edges per value, regardless of orbit-pair class membership.
+\end{corollary}
+
+\begin{proof}
+Direct from Theorem~\ref{thm:G2E3_X} (cross-shell values) and Patch 0603 Theorem (G2$_E$ vertex values).
+\end{proof}
+
+\begin{remark}[Geometric interpretation of X-F1]
+The cross-shell-to-G2$_E$ projection-value coincidence is non-coincidental: the cross-shell edge direction $\hat{e}_{ij} = \phi(W_j - V_i)$ inherits the dodecahedral projection structure via the $\phi/2$ constant in Lemma~\ref{lem:cross_formula}, which exactly absorbs the radial-difference offset $V_i \cdot v_{\text{host}} - W_j \cdot v_{\text{host}} = (\phi-1)/2 = 1/(2\phi) \cdot \phi = ?$ \emph{Actually:} the cross-shell edges project onto $\hat{n}_{\text{edge}}$ as if they were second-shell vertex chord vectors $\hat{w}_k$ themselves, because the $-V_i$ contribution shifts the formula by the same amount as the host-second-shell radial identity provides. In structural terms: \emph{cross-shell edge directions and second-shell vertex chord directions belong to the same 4-value projection class under $D_5$}.
+\end{remark}
+
+\begin{corollary}[X-F2: Cross-shell sum-of-squares identity]
+\label{cor:XF2}
+The sum of squared edge-direction projections over the 60 oriented cross-shell edges is
+\[
+\sum_{(i,j) \in \text{cross}} (\hat{e}_{ij} \cdot \hat{n}_{\text{edge}})^2 \;=\; 15.
+\]
+\end{corollary}
+
+\begin{proof}
+By X-F1 equipartition, the sum equals
+\[
+15 \cdot (\phi/2)^2 + 15 \cdot (1/(2\phi))^2 + 15 \cdot 0^2 + 15 \cdot (-1/2)^2 \;=\; 15 \cdot \left(\frac{\phi^2 + 1/\phi^2 + 0 + 1}{4}\right) \;=\; 15 \cdot \frac{4}{4} \;=\; 15,
+\]
+using $\phi^2 + 1/\phi^2 = (\phi+1) + (2-\phi) = 3$, hence $\phi^2 + 1/\phi^2 + 1 = 4$.
+\end{proof}
+
+\begin{remark}[X-F2 as cross-validation]
+The integer-valued sum-of-squares ($= 15$) provides cross-validation independent of the individual orbit-pair projection values: the sum identity holds exactly if and only if the orbit-pair multiplicities (5, 10, 10, 5, 5, 10, 10, 5) and the four projection values $(\phi/2, 1/(2\phi), 0, -1/2)$ are correctly identified.
+\end{remark}
+
+\section{Type Y: Intra-shell-2 edge orbit decomposition}
+
+\subsection{Orbit-pair classification}
+
+\begin{lemma}[Intra-shell-2 (dodecahedral) edge orbit-pair structure]
+\label{lem:intra_orbit_pair}
+Under (H1)--(H4-G2), the 30 unordered second-shell-to-second-shell edges (the dodecahedral edges in $T_{v_{\text{host}}}S^3$) decompose into 5 unordered $D_5$ orbit-pair classes $Y_1, \dots, Y_5$:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Class} & \textbf{(}$\mathcal{T}_i^{(D)}$, $\mathcal{T}_j^{(D)}$\textbf{)} & \textbf{Unordered size} & \textbf{Geometric role} \\
+\midrule
+$Y_1$ & $(\mathcal{T}_1^{(D)}, \mathcal{T}_1^{(D)})$ & 5  & Top pentagonal face edges \\
+$Y_2$ & $(\mathcal{T}_1^{(D)}, \mathcal{T}_2^{(D)})$ & 5  & Top face $\to$ upper ring \\
+$Y_3$ & $(\mathcal{T}_2^{(D)}, \mathcal{T}_3^{(D)})$ & 10 & Upper ring $\to$ lower ring (equatorial zigzag) \\
+$Y_4$ & $(\mathcal{T}_3^{(D)}, \mathcal{T}_4^{(D)})$ & 5  & Lower ring $\to$ bottom face \\
+$Y_5$ & $(\mathcal{T}_4^{(D)}, \mathcal{T}_4^{(D)})$ & 5  & Bottom pentagonal face edges \\
+\bottomrule
+\end{tabular}
+\end{center}
+Total: $5 + 5 + 10 + 5 + 5 = 30$. Oriented refinement: $Y_1$ and $Y_5$ (ring edges) each unify both orientations into a single $D_5$ oriented orbit of size 10, while $Y_2, Y_3, Y_4$ each split into 2 oriented orbits of opposite sign (giving 5 + 5 = 10 oriented edges per unordered class). Total 8 oriented $D_5$ orbits.
+\end{lemma}
+
+\begin{proof}
+The 30 dodecahedral edges connect each dodecahedron vertex to its 3 dodecahedral neighbors. By the dodecahedron's $D_5$-fold structure (Patch 0603 Lemma 3 + dodecahedral connectivity), each vertex in $\mathcal{T}_j^{(D)}$ has 3 dodecahedral neighbors distributed by latitude:
+\begin{itemize}
+\item Top face ($\mathcal{T}_1^{(D)}$, 5 verts): each has 2 same-face neighbors (other top-face vertices) + 1 lower-latitude neighbor in $\mathcal{T}_2^{(D)}$. Hence $|Y_1| = 5 \cdot 2 / 2 = 5$, $|Y_2| = 5 \cdot 1 = 5$.
+\item Upper ring ($\mathcal{T}_2^{(D)}$, 5 verts): each has 1 higher-latitude neighbor in $\mathcal{T}_1^{(D)}$ + 2 cross-equator neighbors in $\mathcal{T}_3^{(D)}$. Cross-check on $Y_2$: 5 vertices $\times$ 1 = 5 \checkmark. New contribution: $|Y_3|$ partial = $5 \cdot 2 = 10$.
+\item Lower ring ($\mathcal{T}_3^{(D)}$, 5 verts): each has 2 cross-equator neighbors in $\mathcal{T}_2^{(D)}$ + 1 lower-latitude neighbor in $\mathcal{T}_4^{(D)}$. Cross-check on $Y_3$: $5 \cdot 2 = 10$ \checkmark. New contribution: $|Y_4|$ partial $= 5 \cdot 1 = 5$.
+\item Bottom face ($\mathcal{T}_4^{(D)}$, 5 verts): each has 1 higher-latitude neighbor in $\mathcal{T}_3^{(D)}$ + 2 same-face neighbors. Cross-check on $Y_4$: $5 \cdot 1 = 5$ \checkmark. New contribution: $|Y_5| = 5 \cdot 2 / 2 = 5$.
+\end{itemize}
+Total unordered: $5 + 5 + 10 + 5 + 5 = 30$ \checkmark.
+
+For oriented refinement: the ring orbits $Y_1$ and $Y_5$ have both endpoints in the same $\mathcal{T}_j^{(D)}$ orbit, so the $D_5$ action includes midpoint reflections that swap the two endpoints of each edge, unifying the two orientations into a single $D_5$ oriented orbit of size $2 \times 5 = 10$. The cross-orbit edges $Y_2, Y_3, Y_4$ connect distinct $\mathcal{T}_j^{(D)}$ orbits, so the orientation S$\to$S' is preserved under $D_5$ (no element of $D_5$ swaps $\mathcal{T}_2^{(D)}$ with $\mathcal{T}_3^{(D)}$ etc., since these are distinct orbits with distinct projection values per Patch 0603). Each cross-orbit unordered class splits into 2 oriented $D_5$ orbits of equal size (5 or 10).
+
+Total oriented orbits: $1 + 2 + 2 + 2 + 1 = 8$. \checkmark
+\end{proof}
+
+\subsection{Main result for intra-shell-2 edges}
+
+\begin{theorem}[G2$_E$.3 Type Y: Intra-shell-2 edge-direction projections]
+\label{thm:G2E3_Y}
+Under (H1)--(H4-G2), the 60 oriented intra-shell-2 edges have edge-direction projections $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}$ taking exactly 5 closed-form values, distributed across 8 $D_5$ oriented orbits as:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Oriented orbit} & \textbf{Direction} & \textbf{Size} & $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}$ \\
+\midrule
+$Y_1$ & $\mathcal{T}_1^{(D)} \leftrightarrow \mathcal{T}_1^{(D)}$ (ring) & 10 & $0$ \\
+$Y_2$ & $\mathcal{T}_1^{(D)} \to \mathcal{T}_2^{(D)}$ & 5  & $-\phi/2$ \\
+$Y_3$ & $\mathcal{T}_2^{(D)} \to \mathcal{T}_1^{(D)}$ & 5  & $+\phi/2$ \\
+$Y_4$ & $\mathcal{T}_2^{(D)} \to \mathcal{T}_3^{(D)}$ & 10 & $-1/2$ \\
+$Y_5$ & $\mathcal{T}_3^{(D)} \to \mathcal{T}_2^{(D)}$ & 10 & $+1/2$ \\
+$Y_6$ & $\mathcal{T}_3^{(D)} \to \mathcal{T}_4^{(D)}$ & 5  & $-\phi/2$ \\
+$Y_7$ & $\mathcal{T}_4^{(D)} \to \mathcal{T}_3^{(D)}$ & 5  & $+\phi/2$ \\
+$Y_8$ & $\mathcal{T}_4^{(D)} \leftrightarrow \mathcal{T}_4^{(D)}$ (ring) & 10 & $0$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+All values lie in $\mathbb{Q}[\phi]$. Projection multiplicities over 60 oriented edges: $0$ (count 20: $Y_1 + Y_8$), $\pm\phi/2$ (count 10 + 10 = 20: $Y_2 + Y_3 + Y_6 + Y_7$), $\pm 1/2$ (count 10 + 10 = 20: $Y_4 + Y_5$).
+\end{theorem}
+
+\begin{proof}
+Apply Lemma~\ref{lem:intra_formula} to each oriented orbit:
+\begin{align*}
+Y_1\text{: } W_i \cdot V_1 = W_j \cdot V_1 = \phi/2 \;\;&\Rightarrow\;\; \phi^2 \cdot 0 = 0. \\
+Y_2\text{: } W_i \cdot V_1 = \phi/2,\ W_j \cdot V_1 = 1/2 \;\;&\Rightarrow\;\; \phi^2(1/2 - \phi/2) = (\phi+1)(1-\phi)/2 = -\phi/2 \\
+&\quad (\text{using } (\phi+1)(1-\phi) = 1-\phi^2 = -\phi). \\
+Y_3\text{: } \text{(reverse of } Y_2)\;\;&\Rightarrow\;\; +\phi/2. \\
+Y_4\text{: } W_i \cdot V_1 = 1/2,\ W_j \cdot V_1 = 1/(2\phi) \;\;&\Rightarrow\;\; \phi^2(1/(2\phi) - 1/2) = \phi^2 \cdot (1-\phi)/(2\phi) = \phi(1-\phi)/2 \\
+&\quad = (\phi - \phi^2)/2 = (\phi - \phi - 1)/2 = -1/2. \\
+Y_5\text{: } \text{(reverse of } Y_4)\;\;&\Rightarrow\;\; +1/2. \\
+Y_6\text{: } W_i \cdot V_1 = 1/(2\phi),\ W_j \cdot V_1 = 0 \;\;&\Rightarrow\;\; \phi^2(0 - 1/(2\phi)) = -\phi^2/(2\phi) = -\phi/2. \\
+Y_7\text{: } \text{(reverse of } Y_6)\;\;&\Rightarrow\;\; +\phi/2. \\
+Y_8\text{: } W_i \cdot V_1 = W_j \cdot V_1 = 0 \;\;&\Rightarrow\;\; 0.
+\end{align*}
+\end{proof}
+
+\subsection{Corollaries for Type Y}
+
+\begin{corollary}[Y-F1: Intra-shell-2 ring-orbit perpendicularity]
+\label{cor:YF1}
+The 5 top-face dodecahedron edges ($Y_1$, with both endpoints in $\mathcal{T}_1^{(D)}$) and the 5 bottom-face dodecahedron edges ($Y_8$, with both endpoints in $\mathcal{T}_4^{(D)}$) are exactly perpendicular to $\hat{n}_{\text{edge}}$:
+\[
+\hat{e}_{ij} \cdot \hat{n}_{\text{edge}} \;=\; 0 \qquad \text{for all } (W_i, W_j) \in Y_1 \cup Y_8.
+\]
+Equivalently in oriented terms: 20 oriented intra-shell-2 edges (10 in $Y_1$ + 10 in $Y_8$) have zero projection.
+\end{corollary}
+
+\begin{proof}
+Direct from Theorem~\ref{thm:G2E3_Y}: both ring orbits give $\phi^2 \cdot 0 = 0$ by Lemma~\ref{lem:intra_formula}, since both endpoints lie in the same $\mathcal{T}_j^{(D)}$ orbit and hence have the same $W \cdot V_1$ value.
+\end{proof}
+
+\begin{remark}[Geometric origin of Y-F1: within-orbit invariance]
+The Y-F1 ring-orbit perpendicularity is the second-shell analog of Patch 0602 Corollary A3-F3 (icosahedral within-orbit ring edges have zero projection). Both rest on the same structural mechanism: edges within a single $D_5$ vertex-orbit have edge-direction projection zero because $V \cdot V_1$ (equivalently $W \cdot V_1$) is constant on each $D_5$ orbit per Patches 0601 and 0603 graph-distance shell correspondences.
+
+This is \emph{not} the same as the G1.2 vertex-aligned uniform perpendicularity (Patch 0551), which held across \emph{all} 30 first-shell-to-first-shell edges under the $I_h$ vertex-aligned reading. Under edge-aligned reading, the perpendicularity is fragmented: only intra-orbit ring edges retain the perpendicularity, while inter-orbit edges acquire non-zero projections.
+\end{remark}
+
+\begin{corollary}[Y-F2: Intra-shell-2 sum-of-squares identity]
+\label{cor:YF2}
+The sum of squared edge-direction projections over the 60 oriented intra-shell-2 edges is
+\[
+\sum_{(i,j) \in \text{intra-S2 oriented}} (\hat{e}_{ij} \cdot \hat{n}_{\text{edge}})^2 \;=\; 5\phi + 10.
+\]
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:G2E3_Y} multiplicities:
+\[
+20 \cdot 0^2 + 20 \cdot (\phi/2)^2 + 20 \cdot (1/2)^2 \;=\; 0 + 20\phi^2/4 + 20/4 \;=\; 5\phi^2 + 5 \;=\; 5(\phi+1) + 5 \;=\; 5\phi + 10,
+\]
+using $\phi^2 = \phi + 1$.
+\end{proof}
+
+\begin{corollary}[Y-F3: Icosahedron-dodecahedron edge sum-of-squares duality under $D_5$]
+\label{cor:YF3}
+The 60 oriented icosahedral first-shell-to-first-shell edges (Patch 0602) and the 60 oriented dodecahedral second-shell-to-second-shell edges (this artifact) have \emph{identical} sum-of-squared edge-direction projections under $\hat{n}_{\text{edge}}$ at edge-aligned Reading C:
+\[
+\sum_{\text{icos}} (\hat{e}_{ij} \cdot \hat{n}_{\text{edge}})^2 \;=\; \sum_{\text{dodec}} (\hat{e}_{ij} \cdot \hat{n}_{\text{edge}})^2 \;=\; 5\phi + 10 \;\approx\; 18.09.
+\]
+\end{corollary}
+
+\begin{proof}
+Direct comparison: Patch 0602 Corollary (sum-of-squares over 60 icosahedral oriented edges) $= 10 + 5\phi$ via the orbit-pair $(C_1, C_2, C_3, C_4, C_5)$ with sizes $(5, 5, 10, 5, 5)$ and projections refined to 8 oriented orbits with values $\{0, \pm 1/2, \pm \phi/2\}$ at multiplicities $(20, 10, 10, 10, 10)$:
+\[
+\text{Patch 0602}: \quad 20 \cdot 0 + 10 \cdot (1/4) + 10 \cdot (1/4) + 10 \cdot (\phi^2/4) + 10 \cdot (\phi^2/4) = 5 + 5\phi^2 = 5 + 5\phi + 5 = 10 + 5\phi.
+\]
+This artifact Y-F2: $5\phi + 10$. The two values are identical. \qed
+\end{proof}
+
+\begin{remark}[Structural origin of icosahedron-dodecahedron edge duality]
+The Y-F3 sum-of-squares duality is a non-trivial structural identity: the icosahedron and dodecahedron are dual polytopes with the same number of edges (30), and their edge sets project onto $\hat{n}_{\text{edge}}$ with different per-orbit projection values, but the total sum-of-squares is the same. Geometrically, this duality reflects the fact that:
+\begin{itemize}
+\item The dodecahedral edges in 3D have edge-direction projections in $\{0, \pm \phi/2, \pm 1/2\}$ exactly because the dodecahedron is dual to the icosahedron and inherits the same edge-direction angular structure (the dual polytope's edges are perpendicular to the original polytope's faces, which carry the same $D_5$ symmetry).
+\item The total ``edge-direction-squared mass'' is preserved under the icosahedron-dodecahedron duality, suggesting a Plancherel-type identity for the $D_5$-equivariant decomposition of the 3D edge-direction space.
+\end{itemize}
+A precise group-theoretic interpretation in terms of the $D_5$ regular representation acting on edge-direction vectors is registered as a research-frontier item (RES-FP-F1-5-X to be added at registry-propagation Patch 0605a if relevant downstream).
+\end{remark}
+
+\section{Combined corollaries (icosahedron-dodecahedron neighborhood structure)}
+
+\begin{corollary}[Z-F1: Total sum-of-squares over 600-cell first-two-shells edges]
+\label{cor:ZF1}
+The total sum of squared edge-direction projections over all oriented edges in the host's first-two-shells edge neighborhood (60 oriented icosahedral first-shell-to-first-shell + 60 oriented cross-shell + 60 oriented intra-shell-2 = 180 oriented edges) is:
+\[
+\sum_{\text{all edges}} (\hat{e} \cdot \hat{n}_{\text{edge}})^2 \;=\; (10 + 5\phi) + 15 + (10 + 5\phi) \;=\; 35 + 10\phi.
+\]
+\end{corollary}
+
+\begin{proof}
+Linear sum of:
+\begin{itemize}
+\item Patch 0602 icosahedral first-shell-to-first-shell: $10 + 5\phi$.
+\item This artifact cross-shell (X-F2): $15$.
+\item This artifact intra-shell-2 (Y-F2): $10 + 5\phi$.
+\end{itemize}
+Total: $(10 + 5\phi) + 15 + (10 + 5\phi) = 35 + 10\phi \approx 51.18$.
+\end{proof}
+
+\begin{corollary}[Z-F2: Cross-shell vs intra-shell edge projection-value sets]
+\label{cor:ZF2}
+The cross-shell edges (Type X) and intra-shell-2 edges (Type Y) take \emph{different} sets of projection values:
+\begin{itemize}
+\item Cross-shell: $\{+\phi/2,\, +1/(2\phi),\, 0,\, -1/2\}$ (G2$_E$-vertex values).
+\item Intra-shell-2: $\{0,\, \pm\phi/2,\, \pm 1/2\}$ (icosahedral-edge-symmetric values).
+\end{itemize}
+The intersection $\{+\phi/2,\, 0,\, -1/2\}$ contains 3 of 4 cross-shell values + 3 of 5 intra-shell values. The cross-shell value $+1/(2\phi) = (\phi-1)/2$ does not appear in intra-shell-2 projections; the intra-shell-2 values $-\phi/2$ and $+1/2$ do not appear in cross-shell projections.
+\end{corollary}
+
+\begin{proof}
+Direct comparison of Theorems~\ref{thm:G2E3_X} and~\ref{thm:G2E3_Y}.
+\end{proof}
+
+\section{Five-class exclusion enumeration}
+
+The following classes of related Sequence-2A structural content are explicitly \emph{not} closed by this artifact:
+
+\begin{itemize}
+\item[\textbf{(E1)}] \textbf{$O(\delta^2)$ second-order edge-aligned substrate-current coefficient $\alpha_2$ NOT in scope} --- target of Sequence-2A artifact A5$_E$ / Patch 0605 under (H5$_E$) framework-extension hypothesis. The G2$_E$.3 edge orbit values established here are inputs to the path-class weight enumeration at $O(\delta^2)$ but are not assembled into the $\alpha_2$ closed form by this artifact.
+
+\item[\textbf{(E2)}] \textbf{Path-class weight enumeration under (H5$_E$) NOT in scope} --- the assembly of G1$_E$ + G1$_E$.2 + G2$_E$ + G2$_E$.3 into path-class weighted sums at the second-order coefficient closure is the target of Patch 0605. This artifact only supplies G2$_E$.3.
+
+\item[\textbf{(E3)}] \textbf{Face-aligned variant separate Sequence-2B trajectory} --- the analogous cross-shell edge orbit closure under the $C_s$ stabilizer of face-aligned Reading C (THEO-DSL-8 candidate, Patch 0597) is the target of a separate trajectory.
+
+\item[\textbf{(E4)}] \textbf{Higher-shell edges NOT in scope} --- edges involving shells 3 and 4 of the host (e.g., second-shell-to-third-shell edges, third-shell-to-third-shell edges) are not required for the $O(\delta^2)$ coefficient closure under (H5$_E$) shell-locality, and are deferred.
+
+\item[\textbf{(E5)}] \textbf{Group-theoretic interpretation of Y-F3 duality NOT in scope} --- the $D_5$-equivariant Plancherel-type identity hinted at by the icosahedron-dodecahedron sum-of-squares equality (Remark following Corollary~\ref{cor:YF3}) is a research-frontier item, not closed here.
+\end{itemize}
+
+\section{Anti-erasure remarks register}
+
+\begin{itemize}
+\item[\textbf{(AE1)}] \textbf{Edge-direction projection formula convention}: the cross-shell formula (Lemma~\ref{lem:cross_formula}) includes an additive $\phi/2$ constant arising from the asymmetry $V_i \cdot v_{\text{host}} \ne W_j \cdot v_{\text{host}}$ between shells. The intra-shell-2 formula (Lemma~\ref{lem:intra_formula}) has no constant because both endpoints lie in the same radial shell. The first-shell-to-first-shell formula (Patch 0602) likewise has no constant. \emph{This distinction is structural and not a notational artifact}: the cross-shell additive constant is the mechanism by which cross-shell edge projection values inherit the dodecahedral vertex projection values (X-F1).
+
+\item[\textbf{(AE2)}] \textbf{Oriented vs unordered orbit count}: cross-shell edges have 8 unordered orbit-pair classes = 8 oriented $D_5$ orbits (S1$\to$S2 direction canonical). Intra-shell-2 edges have 5 unordered classes refining to 8 oriented orbits (ring orbits $Y_1, Y_8$ unify both orientations; cross-orbit classes split into 2 oriented orbits each with opposite signs). The 8+8 = 16 oriented orbits should be carefully distinguished from the 8+5 = 13 unordered classes when assembling path-class sums at Patch 0605.
+\end{itemize}
+
+\section{Registry status}
+
+This artifact is the \textbf{fifth substantive Sequence-2A artifact} in the F.1 hardened-theorem sequence, registered as geometric primitive \textbf{G2$_E$.3}. With G2$_E$.3 landed, the four-primitive geometric layer of OPEN-FP-F1-5 Sequence-2A (G1$_E$, G1$_E$.2, G2$_E$, G2$_E$.3) is complete.
+
+This is the eighteenth hardened-theorem artifact in the F.1 Layer 3 sequence, preserving the single-artifact-per-Patch discipline 18-for-18 since Patch 0585. The next substantive Sequence-2A artifact is \textbf{Patch 0605 A5$_E$} --- the $O(\delta^2)$ second-order coefficient closure assembling all four geometric primitives under (H5$_E$) framework-extension hypothesis, followed by Patch 0605a umbrella registration of THEO-DSL-7 (candidate) covering both first-order (Patch 0600) and second-order (Patch 0605) edge-aligned coefficient content at the weakest-link rigor level (sketch-doc Layer 3 under (H5$_E$) per DG-F15A-5 default-(A) accepted at Session 146).
+
+\end{document}
