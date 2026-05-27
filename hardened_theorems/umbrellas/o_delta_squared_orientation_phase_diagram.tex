@@ -1,0 +1,291 @@
+%%% CHANGELOG
+%%% Patch 0607 (Session 146, 2026-05-27)
+%%% Meta-umbrella registration of THEO-DSL-9: O(delta^2) Orientation Phase
+%%% Diagram Theorem.
+%%%
+%%% Synthesizes into a single citable meta-theorem the triad:
+%%%   - THEO-DSL-6 (dimensional-growth structural)
+%%%   - THEO-DSL-7 (edge-aligned O(delta^2) closure, Patch 0605a)
+%%%   - THEO-DSL-8 (vertex-aligned O(delta^2) closure, Patch 0606a)
+%%%
+%%% No new proof obligations or physics introduced; this is a meta-level
+%%% registration that provides a single citation handle for the complete
+%%% O(delta^2) orientation phase diagram at the two specialized orientations
+%%% theta_V and theta_E.
+%%%
+%%% Records five meta-level findings (F-DSL-9-1 through F-DSL-9-5) that
+%%% are visible only at the triad level and not at the level of any single
+%%% constituent umbrella.
+%%%
+%%% Rigor level: sketch-document Layer 3 (matches constituent umbrellas).
+%%% Single-artifact discipline: 23-for-23 since Patch 0585.
+%%%
+%%% Session 146 closure note: with Patch 0607, the session has shipped a
+%%% complete vertical from O(delta^2) closure (Patches 0605, 0606) through
+%%% per-orientation umbrellas (0605a, 0606a) to the meta-umbrella (this
+%%% patch). Total session output: 5 patches, 5 artifacts.
+
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+
+\title{THEO-DSL-9: $\mathcal{O}(\delta^2)$ Orientation Phase Diagram Theorem \\[2pt]
+\large Meta-Umbrella Registration (THEO-DSL-6 + THEO-DSL-7 + THEO-DSL-8)}
+\author{Hyperphysics Institute --- Conscious Point Physics Programme}
+\date{Patch 0607 \quad Session 146 \quad 2026-05-27}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document registers THEO-DSL-9 as the meta-umbrella theorem
+governing the orientation phase diagram of the $D_5$-invariant current
+through second order in $\delta$. The meta-statement combines three
+established theorems --- THEO-DSL-6 (dimensional-growth structural),
+THEO-DSL-7 (edge-aligned $\mathcal{O}(\delta^2)$ closure), and
+THEO-DSL-8 (vertex-aligned $\mathcal{O}(\delta^2)$ closure) --- into a
+single citable result asserting that at the two specialized orientations
+$\theta_V$ (vertex-aligned) and $\theta_E$ (edge-aligned), the current
+expansion is determined through $\mathcal{O}(\delta^2)$ with explicit
+subspace dimensions and coefficient values. Five meta-level findings
+(F-DSL-9-1 through F-DSL-9-5) record observations that emerge only at
+the triad level.
+\end{abstract}
+
+\section{Theorem Statement (THEO-DSL-9)}
+
+\begin{theorem}[$\mathcal{O}(\delta^2)$ Orientation Phase Diagram --- THEO-DSL-9]
+\label{thm:THEO-DSL-9}
+Let $\mathbf{j}(\theta, \delta)$ denote the $D_5$-invariant current at
+orientation $\theta$, expanded as
+\[
+\mathbf{j}(\theta, \delta) \;=\; \mathbf{j}_1(\theta)\,\delta
+\;+\; \mathbf{j}_2(\theta)\,\delta^2 \;+\; \mathcal{O}(\delta^3).
+\]
+Then at the two specialized orientations $\theta \in \{\theta_V, \theta_E\}$:
+\begin{enumerate}
+\item[\textnormal{(i)}] \textbf{Dimensional structure} (THEO-DSL-6):
+\[
+\dim\,\bigl[\mathrm{span}\{\mathbf{j}_n(\theta_V)\}_{n=1,2}\bigr] \;=\; 1,
+\qquad
+\dim\,\bigl[\mathrm{span}\{\mathbf{j}_n(\theta_E)\}_{n=1,2}\bigr] \;=\; 2.
+\]
+The dimensional growth $1 \to 2$ at the $\theta_V \to \theta_E$
+transition holds at \emph{both} $\mathcal{O}(\delta)$ and
+$\mathcal{O}(\delta^2)$ separately (F-DSL-9-1).
+
+\item[\textnormal{(ii)}] \textbf{Vertex-aligned closure} (THEO-DSL-8,
+Patch 0606a): along $\hat{\mathbf{n}}_{\text{subst}}$,
+\[
+\alpha_1(\theta_V) \;=\; +\tfrac{6}{\varphi^2} \;\approx\; +2.292,
+\qquad
+\alpha_2(\theta_V) \;=\; -\tfrac{9}{\varphi^2} \;\approx\; -3.438,
+\qquad
+\frac{\alpha_2}{\alpha_1}\bigg|_{\theta_V} \;=\; -\tfrac{3}{2}.
+\]
+
+\item[\textnormal{(iii)}] \textbf{Edge-aligned closure} (THEO-DSL-7,
+Patch 0605a): along the non-orthogonal basis
+$\{\hat{\mathbf{n}}_\rho, \hat{\mathbf{n}}_{\text{edge}}\}$,
+\[
+\alpha_{1,\rho}(\theta_E),\; \alpha_{1,\text{edge}}(\theta_E)
+\;\in\; \mathbb{R}_{\neq 0}
+\quad\text{(Patch 0600)},
+\]
+\[
+\alpha_{2,\rho}(\theta_E) \;=\; +\tfrac{9}{2\varphi} \;\approx\; +2.781,
+\qquad
+\alpha_{2,\text{edge}}(\theta_E) \;=\; +9\varphi-12 \;\approx\; +2.562
+\quad\text{(Patch 0605)},
+\]
+with both second-order coefficients positive and both second-to-first
+order ratios positive (no sign flip).
+\end{enumerate}
+\end{theorem}
+
+\medskip
+The rigor of THEO-DSL-9 inherits from its constituents: sketch-document
+Layer 3 per DG-F15A-5 default-(A). No new proof obligations are
+introduced; the meta-umbrella provides a single citation handle for the
+complete result at the two specialized orientations.
+
+\section{Constituent Umbrellas and Coverage}
+
+\subsection*{THEO-DSL-6 --- Dimensional-Growth Structural}
+Establishes the orientation-dependent dimensionality of the
+$D_5$-invariant subspace: 1D at $\theta_V$, 2D at $\theta_E$. This is
+the structural backbone of the phase diagram.
+
+\subsection*{THEO-DSL-7 --- Edge-Aligned $\mathcal{O}(\delta^2)$ Closure (Patch 0605a)}
+Combines Patches 0600 (first-order structural) + 0605 (second-order
+closure). Establishes both edge-aligned columns of the phase diagram
+with explicit non-orthogonal-basis decomposition.
+
+\subsection*{THEO-DSL-8 --- Vertex-Aligned $\mathcal{O}(\delta^2)$ Closure (Patch 0606a)}
+Combines Patches 0606 (first-order structural) + 0591 (second-order
+closure). Establishes both vertex-aligned columns of the phase diagram
+with closed-form scalar coefficients $\pm \kappa/\varphi^2$.
+
+\section{The Complete $\mathcal{O}(\delta^2)$ Phase Diagram}
+
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+ & \textbf{Vertex-aligned} $\theta_V$ & \textbf{Edge-aligned} $\theta_E$ \\
+ & (THEO-DSL-8) & (THEO-DSL-7) \\
+\hline
+Subspace dim. (THEO-DSL-6) & 1D & 2D \\
+& $\mathrm{span}\{\hat{\mathbf{n}}_{\text{subst}}\}$
+& $\mathrm{span}\{\hat{\mathbf{n}}_\rho,\hat{\mathbf{n}}_{\text{edge}}\}$ \\[4pt]
+$\mathcal{O}(\delta)$ coefficient(s)
+& $\alpha_1 = +6/\varphi^2$
+& $(\alpha_{1,\rho},\,\alpha_{1,\text{edge}})$ \\[2pt]
+$\mathcal{O}(\delta^2)$ coefficient(s)
+& $\alpha_2 = -9/\varphi^2$
+& $(+9/(2\varphi),\,+9\varphi-12)$ \\[4pt]
+$\alpha_2/\alpha_1$ ratio sign
+& $-$ (sign flip)
+& $+$ (no sign flip) \\[2pt]
+Closed-form ratio
+& $-3/2$ ($\varphi$-independent)
+& $\varphi$-dependent, both positive \\[4pt]
+$B_2(O_i)$ structure
+& $\equiv 0$ identically
+& non-vanishing (P0605) \\[2pt]
+$B_4(O_i)$ structure
+& $-\varphi/2$ uniform
+& four distinct values (P0605) \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Meta-Level Findings}
+
+These findings record observations visible only at the triad level
+\{THEO-DSL-6, THEO-DSL-7, THEO-DSL-8\} and not within any single
+constituent umbrella.
+
+\paragraph{F-DSL-9-1: Order-Stable Dimensional Growth.}
+The dimensional-growth pattern $\dim_V \to \dim_E$ is independent of
+expansion order through $\mathcal{O}(\delta^2)$: at both first and
+second order, $\dim_V = 1$ and $\dim_E = 2$. The dimensions of the
+order-by-order invariant subspaces are not constrained a priori to
+agree across orders (since the symmetric tensor square of a 1D subspace
+is 1D, and that of a 2D subspace can be 2D or 3D); that they do agree
+at both orientations is a non-trivial $D_5$ representation-content
+property of the underlying path-class structure.
+
+\paragraph{F-DSL-9-2: Path-Class Weights are Order-and-Orientation Invariant.}
+The path-class weights $\{p_i\} = \{1,\,1/2,\,-1/(2\varphi),\,-\varphi/2\}$
+established in Patch 0591 §3 are invariant under both orientation
+change ($\theta_V \leftrightarrow \theta_E$, F-DSL-7-2) and order
+change ($\mathcal{O}(\delta) \leftrightarrow \mathcal{O}(\delta^2)$).
+What varies across the phase diagram cells is exclusively the
+projection functional $S_*(O_i)$ (substrate, radial, or edge), not the
+combinatorial weights.
+
+\paragraph{F-DSL-9-3: $B_2$ Vanishing as the Vertex-Aligned Marker.}
+The intra-shell cross-vertex sub-class $B_2(O_i)$ vanishes identically
+at vertex-aligned orientation at both orders (F-DSL-8-2) and is
+non-vanishing at edge-aligned orientation at second order
+(F-DSL-7-3, Patch 0605 Remark 4.1). $B_2 \equiv 0$ is therefore a
+candidate \emph{vertex-aligned marker} usable for orientation
+identification in higher-order or interpolated settings.
+
+\paragraph{F-DSL-9-4: Sign-Flip Diagnostic is Order-Stable Within Orientation.}
+The vertex-aligned sign-flip $(\alpha_1 > 0,\, \alpha_2 < 0)$ and the
+edge-aligned no-flip (all coefficients positive at $\mathcal{O}(\delta)$
+and $\mathcal{O}(\delta^2)$) are stable across the two orders examined.
+This stability supports the use of the sign-flip / no-flip signature as
+an orientation-phase diagnostic at higher orders, pending verification
+at $\mathcal{O}(\delta^3)$ (OPEN-DSL-9-1).
+
+\paragraph{F-DSL-9-5: Computational Completeness of the Phase Diagram at $\mathcal{O}(\delta^2)$.}
+With the triad in place, every cell of the orientation $\times$ order
+phase diagram at $\{\theta_V, \theta_E\} \times \{\delta, \delta^2\}$ is
+explicitly closed. No further computation is required at this order at
+the two specialized orientations. The remaining computational frontier
+at $\mathcal{O}(\delta^2)$ is the orientation-interpolation question
+$\alpha_n(\theta)$ for $\theta \in (\theta_V, \theta_E)$ (OPEN-DSL-9-2).
+
+\section{Registration Record}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\textbf{Registry identifier:} & THEO-DSL-9 \\
+\textbf{Series:} & THEO-DSL (theorem-level package registrations) \\
+\textbf{Level:} & meta-umbrella (combines three constituent theorems) \\
+\textbf{Constituent theorems:} & THEO-DSL-6, THEO-DSL-7, THEO-DSL-8 \\
+\textbf{Constituent patches (full chain):} & 0591, 0600, 0605, 0605a, 0606, 0606a \\
+\textbf{Rigor level:} & sketch-document Layer 3 (matches constituents) \\
+\textbf{Governance designation:} & DG-F15A-5 default-(A) \\
+\textbf{Scope:} & $\mathcal{O}(\delta^2)$ at $\theta \in \{\theta_V, \theta_E\}$ \\
+\textbf{Registration session:} & 146 \\
+\textbf{Registration date:} & 2026-05-27 \\
+\textbf{Single-artifact discipline:} & 23-for-23 since Patch 0585 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Citation Form}
+
+When citing this meta-package from external papers, use:
+
+\medskip
+\noindent\texttt{[THEO-DSL-9]} \emph{$\mathcal{O}(\delta^2)$ Orientation
+Phase Diagram Theorem.} CPP Programme internal registry, Session 146,
+2026-05-27. Constituent theorems: THEO-DSL-6, THEO-DSL-7 (Patch 0605a),
+THEO-DSL-8 (Patch 0606a).
+
+\medskip
+For citation of a specific cell of the phase diagram, prefer the
+constituent umbrella (THEO-DSL-7 or THEO-DSL-8) directly. Cite
+THEO-DSL-9 when the cross-orientation or cross-order structure is the
+subject.
+
+\section{Forward Items}
+
+\begin{itemize}
+\item \textbf{OPEN-DSL-9-1}: Extension of the orientation phase diagram
+to $\mathcal{O}(\delta^3)$. Subsumes OPEN-DSL-7-2 and OPEN-DSL-8-2.
+Tests order-stability of the dimensional-growth pattern and the
+sign-flip diagnostic beyond $\mathcal{O}(\delta^2)$.
+
+\item \textbf{OPEN-DSL-9-2}: Continuous orientation interpolation
+$\alpha_n(\theta)$ for $\theta \in (\theta_V, \theta_E)$ at each
+order $n = 1, 2$. Subsumes OPEN-DSL-7-3 and OPEN-DSL-8-4. The
+key question: how does the 1D $\to$ 2D dimensional transition occur
+as $\theta$ varies continuously?
+
+\item \textbf{OPEN-DSL-9-3}: Layer 4 algebraic hardening of constituent
+orbital decompositions. Subsumes OPEN-A5-1 (Patch 0605), OPEN-A1V-1
+(Patch 0606), OPEN-DSL-7-1, and OPEN-DSL-8-1.
+
+\item \textbf{OPEN-DSL-9-4}: Identification of the physical observable
+corresponding to the $\mathcal{O}(\delta^2)$ orientation phase
+structure. The phase diagram is currently a mathematical object;
+connecting it to a measurable in the CPP framework is the
+phenomenological closure of this program.
+\end{itemize}
+
+\section{Session 146 Closure Note}
+
+With Patch 0607, Session 146 has shipped a complete vertical on the
+$\mathcal{O}(\delta^2)$ orientation phase diagram:
+\begin{itemize}
+\item Patch 0605 (A5\_E): edge-aligned second-order closure.
+\item Patch 0605a: THEO-DSL-7 edge-aligned umbrella.
+\item Patch 0606 (A1\_V): vertex-aligned first-order structural.
+\item Patch 0606a: THEO-DSL-8 vertex-aligned umbrella.
+\item Patch 0607 (this work): THEO-DSL-9 meta-umbrella.
+\end{itemize}
+The single-artifact discipline counter now stands at 23-for-23
+since Patch 0585.
+
+\end{document}
