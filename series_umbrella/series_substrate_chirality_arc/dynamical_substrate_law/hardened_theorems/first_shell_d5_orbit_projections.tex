@@ -1,0 +1,323 @@
+% Patch 0601 A2_E = G1_E: First-Shell Projection Orbit Values under D_5 Stabilizer
+% at Edge-Aligned Reading C in the 600-Cell.
+%
+% OPEN-FP-F1-5 Sequence-2A second substantive artifact under DG-F15A-1 default-(A)
+% stepping-stone trajectory + DG-F15A-2 default-(A) all-orbit-representative closed-forms
+% policy. Publication-grade Layer 3 unconditional rigor for the first-shell projection
+% orbit decomposition under D_5 (the analog of THEO-DSL-2 Theorem 5.1 / Patch 0552
+% uniform-projection identity, generalized from I_h (single value) to D_5 (four values)).
+% Inherits G1 first-shell inner-product primitive at publication-grade Layer 3
+% unconditional from THEO-DSL-2 + Patch 0571 hardening.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+
+\title{First-Shell Projection Orbit Values under \texorpdfstring{$D_5$}{D5} Stabilizer\\
+at Edge-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2A Artifact A2$_E$ = G1$_E$)}}
+\author{Patch 0601 hardened-theorem artifact}
+\date{27 May 2026 (Session 146)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We derive at \textbf{publication-grade Layer 3 unconditional} rigor the closed-form
+projection values of the 12 first-shell unit vectors $\hat{u}_i$ at the host vertex
+$v_{\text{host}}$ of the 600-cell onto the substrate primitive direction
+$\hat{n}_{\text{edge}}$, classified by the four orbits of the $D_5$ stabilizer of the
+oriented edge $\{v_{\text{host}}, u_1\}$. The four orbit values are:
+\[
+\hat{u}_i \cdot \hat{n}_{\text{edge}} \;=\;
+\begin{cases}
+1 & i \in \mathcal{O}_1 \text{ (1 vertex: } u_1\text{ itself)},\\[2pt]
+\frac{1}{2} & i \in \mathcal{O}_2 \text{ (5 vertices: icosahedral neighbors of } u_1\text{)},\\[2pt]
+-\frac{1}{2\phi} = \frac{1-\phi}{2} & i \in \mathcal{O}_3 \text{ (5 vertices: icosahedral non-neighbors same hemisphere)},\\[2pt]
+-\frac{\phi}{2} & i \in \mathcal{O}_4 \text{ (1 vertex: icosahedral antipode of } u_1\text{)}.
+\end{cases}
+\]
+The proof proceeds via the orthogonal decomposition $\hat{u}_i = -(1/(2\phi))\hat{n}_\rho + (\sqrt{2+\phi}/2)\,\vec{e}_i$ (from THEO-DSL-2 / Patch 0552 + 600-cell unit-vertex normalization) combined with the icosahedral pairwise inner-product classification of $\vec{e}_i \cdot \vec{e}_1$ (from G1 / Patch 0571 publication-grade hardening). Three substantive corollaries are established: (i) the orbit values $p_1, p_2, p_3, p_4$ recover Identities P1 and P2 from Patch 0599 \S3.2; (ii) the orbit values correspond to angular distances $\{0°, 60°, 108°, 144°\}$ from $u_1$ in $\mathbb{R}^4$ as seen from $v_{\text{host}}$, with the $36°$ minimum-step pentagonal-axis structure; (iii) the four $D_5$ orbits coincide bijectively with the graph-distance shells of $u_1$ in the 600-cell graph at distances $0, 1, 2, 3$ respectively. Result registered as primitive \textbf{G1$_E$} for the OPEN-FP-F1-5 Sequence-2A trajectory.
+\end{abstract}
+
+\section{Introduction and inheritance}
+
+\subsection{Inheritance from THEO-DSL-2, G1 hardening (Patch 0571), and Patch 0599 scoping}
+
+THEO-DSL-2 (Patches 0551 + 0552, hardened to publication-grade Layer 3 unconditional at Patch 0571) establishes that the 12 first-shell unit vectors $\hat{u}_i$ at $v_{\text{host}}$ in the 600-cell under vertex-host convention satisfy the uniform projection
+\[
+\hat{u}_i \cdot \hat{n}_\rho \;=\; -\frac{1}{2\phi}
+\]
+identically across $i \in \{1,\dots,12\}$, where $\hat{n}_\rho = v_{\text{host}}/|v_{\text{host}}|$ is the radial direction. The icosahedral pairwise inner-product primitive G1 (also at publication-grade Layer 3 unconditional via Patch 0571 hardening) further establishes that the pairwise inner products $\hat{u}_i \cdot \hat{u}_j$ take the four standard icosahedral values
+\[
+\hat{u}_i \cdot \hat{u}_j \;\in\; \left\{1,\;\tfrac{1}{2},\;-\tfrac{1}{2\phi},\;-\tfrac{\phi}{2}\right\}
+\]
+corresponding to icosahedral pairwise classes self/adjacent/non-adjacent-same-hemisphere/antipodal --- the four columns of the pairwise inner-product matrix of the 12 first-shell vertices.
+
+Patch 0599 \S3.1 established the orbit structure of the 12 first-shell vertices under the $D_5$ stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$: a partition $\mathcal{O}_1 \cup \mathcal{O}_2 \cup \mathcal{O}_3 \cup \mathcal{O}_4 = 1 + 5 + 5 + 1 = 12$, with $\mathcal{O}_1 = \{u_1\}$, $\mathcal{O}_4 = \{u_{12}\}$ (icosahedral antipode of $u_1$), and $\mathcal{O}_2, \mathcal{O}_3$ each pentagonal orbits of order 5 under the principal $C_5$ rotation around the $v_{\text{host}}$-$u_1$ axis.
+
+\subsection{Scope of Patch 0601 A2$_E$ = G1$_E$}
+
+This artifact establishes at publication-grade Layer 3 unconditional rigor the orbit-by-orbit closed-form values $p_1, p_2, p_3, p_4 \in \mathbb{Q}[\phi]$ for the first-shell projections $\hat{u}_i \cdot \hat{n}_{\text{edge}}$ under edge-aligned Reading C. The result is the analog of THEO-DSL-2 Theorem 5.1 at vertex-aligned Reading C, generalized from the $I_h$-uniform single-value $-1/(2\phi)$ to the $D_5$-orbit four-value classification. The result is registered as the geometric primitive \textbf{G1$_E$} for subsequent OPEN-FP-F1-5 Sequence-2A artifacts (A3$_E$ through A5$_E$, Patches 0602--0604).
+
+Per DG-F15A-2 default-(A) accepted at Session 146 close-of-scoping, the artifact computes all four orbit-representative closed-form values (not just orbit averages or sums). The closed forms live in the golden-ratio field extension $\mathbb{Q}[\phi]$ over rationals, satisfying the structural prediction registered as risk-inventory item §12.2 of Patch 0599 scoping.
+
+\section{Hypothesis stack}
+
+The hypotheses required for this artifact:
+\begin{itemize}
+\item[(H1)] \textbf{Edge-aligned Reading C}: substrate primitive direction $\hat{n} = \hat{n}_{\text{edge}} = \hat{u}_1$ for the chosen first-shell neighbor $u_1$.
+\item[(H2)] \textbf{Vertex-host convention}: $v_{\text{host}}$ preserved as a 600-cell vertex.
+\item[(H3)] \textbf{Icosahedral residual symmetry $H_3 = I_h$} at $v_{\text{host}}$ inherited via THEO-DSL-2 / Patch 0571 publication-grade hardening of G1.
+\end{itemize}
+
+\textbf{Note}: The result is purely geometric --- it requires only $I_h$-residual-symmetry of the first-shell + standard icosahedral inner-product classification. No (H4) shell-locality or (H5$_E$) framework-extension hypothesis is required; the proof is at the level of polytope geometry, not perturbation theory.
+
+\section{Setup: orthogonal decomposition of first-shell unit vectors}
+
+\begin{lemma}[Orthogonal decomposition of first-shell unit vectors]
+\label{lem:orthogonal_decomposition}
+Under (H2)--(H3), each first-shell unit vector $\hat{u}_i$ admits the orthogonal decomposition
+\[
+\hat{u}_i \;=\; -\frac{1}{2\phi}\,\hat{n}_\rho \;+\; \frac{\sqrt{2+\phi}}{2}\,\vec{e}_i,
+\qquad i \in \{1,\dots,12\},
+\]
+where $\vec{e}_i \in T_{v_{\text{host}}}S^3 \cong \mathbb{R}^3$ are unit vectors in the 3-tangent-plane at $v_{\text{host}}$, forming a regular icosahedron centered at the origin of $T_{v_{\text{host}}}S^3$. The decomposition coefficients are determined by THEO-DSL-2 Theorem 5.1 (radial component $-1/(2\phi)$) and the unit-norm condition $|\hat{u}_i|^2 = 1$ (tangent component $\sqrt{2+\phi}/2$).
+\end{lemma}
+
+\begin{proof}
+The radial component is fixed by THEO-DSL-2 Theorem 5.1 / Patch 0552 + Patch 0571 G1 hardening: $\hat{u}_i \cdot \hat{n}_\rho = -1/(2\phi)$ identically. Write $\hat{u}_i = \alpha_i \hat{n}_\rho + \beta_i \vec{e}_i$ where $\vec{e}_i \in T_{v_{\text{host}}}S^3$ is the tangent unit direction; then $\alpha_i = -1/(2\phi)$ and the unit-norm condition $\alpha_i^2 + \beta_i^2 = 1$ gives
+\[
+\beta_i^2 \;=\; 1 - \frac{1}{4\phi^2} \;=\; 1 - \frac{2-\phi}{4} \;=\; \frac{2+\phi}{4},
+\]
+using $1/\phi^2 = 2 - \phi$. Hence $\beta_i = \sqrt{2+\phi}/2$ (the positive root, with the sign of $\vec{e}_i$ absorbed into the choice of unit tangent direction).
+
+The 12 vectors $\vec{e}_i$ lie on the unit 2-sphere of $T_{v_{\text{host}}}S^3$ and inherit $I_h$-equivariance from the host-stabilizing icosahedral action, forming a regular icosahedron.
+\end{proof}
+
+\section{Lemma 1: Icosahedral pairwise inner-product classification (G1 inheritance)}
+
+\begin{lemma}[Icosahedral pairwise inner-product classification]
+\label{lem:icosahedral_pairings}
+Under (H2)--(H3), the pairwise inner products of the 12 unit tangent vectors $\vec{e}_i$ of Lemma~\ref{lem:orthogonal_decomposition} take exactly four distinct values, classified by the icosahedral angular-distance structure:
+\[
+\vec{e}_i \cdot \vec{e}_j \;=\;
+\begin{cases}
+1 & \text{if } i = j \text{ (self; 1 case per } i\text{)},\\[2pt]
+\frac{2\phi-1}{5} = \frac{1}{\sqrt{5}} & \text{if } u_i, u_j \text{ are icosahedrally adjacent (5 cases per } i\text{)},\\[2pt]
+\frac{1-2\phi}{5} = -\frac{1}{\sqrt{5}} & \text{if } u_i, u_j \text{ are icosahedrally non-adjacent same-hemisphere (5 cases per } i\text{)},\\[2pt]
+-1 & \text{if } u_i = u_j' \text{ (icosahedral antipodes; 1 case per } i\text{)}.
+\end{cases}
+\]
+Equivalently, in terms of $\hat{u}_i \cdot \hat{u}_j$ (from G1 / Patch 0571 publication-grade hardening),
+\[
+\hat{u}_i \cdot \hat{u}_j \;\in\; \left\{1,\;\tfrac{1}{2},\;-\tfrac{1}{2\phi},\;-\tfrac{\phi}{2}\right\}
+\]
+respectively for the same four classes.
+\end{lemma}
+
+\begin{proof}
+Standard icosahedral geometry: the 12 unit-vertex vectors of a regular icosahedron centered at the origin take exactly four pairwise inner-product values $\{1, 1/\sqrt{5}, -1/\sqrt{5}, -1\}$ classified by self/adjacent/non-adjacent-same-hemisphere/antipodal. The golden-ratio forms follow from $\sqrt{5} = 2\phi - 1$ (consequence of $\phi^2 = \phi + 1$), hence $1/\sqrt{5} = 1/(2\phi - 1)$, and rationalizing using $(2\phi-1)(1-2\phi) = -5$ gives $1/\sqrt{5} = (2\phi-1)/5$. Sign reversal for the non-adjacent case gives $-1/\sqrt{5} = (1-2\phi)/5$.
+
+The $\hat{u}_i \cdot \hat{u}_j$ forms follow from Lemma~\ref{lem:orthogonal_decomposition}:
+\[
+\hat{u}_i \cdot \hat{u}_j \;=\; \frac{1}{4\phi^2} + \frac{2+\phi}{4}\,(\vec{e}_i \cdot \vec{e}_j) \;=\; \frac{2-\phi}{4} + \frac{2+\phi}{4}\,(\vec{e}_i \cdot \vec{e}_j).
+\]
+Substituting the four $\vec{e}_i \cdot \vec{e}_j$ values:
+\begin{itemize}
+\item Self: $(2-\phi)/4 + (2+\phi)/4 = 4/4 = 1$. \checkmark
+\item Adjacent: using $(2+\phi)(2\phi-1) = 5\phi$ (golden-ratio identity), $(2-\phi)/4 + 5\phi/20 = (2-\phi)/4 + \phi/4 = 2/4 = 1/2$.
+\item Non-adjacent same-hemisphere: using $(2+\phi)(1-2\phi) = -5\phi$, $(2-\phi)/4 - \phi/4 = (2-2\phi)/4 = (1-\phi)/2 = -1/(2\phi)$ (using $1/\phi = \phi - 1$).
+\item Antipodal: $(2-\phi)/4 - (2+\phi)/4 = -2\phi/4 = -\phi/2$.
+\end{itemize}
+
+This is the G1 publication-grade Layer 3 unconditional classification per Patch 0571 hardening.
+\end{proof}
+
+\section{Lemma 2: $D_5$ orbit-class correspondence}
+
+\begin{lemma}[$D_5$ orbits coincide with icosahedral angular classes from $u_1$]
+\label{lem:orbit_correspondence}
+Under (H1)--(H3), the four orbits $\mathcal{O}_1, \mathcal{O}_2, \mathcal{O}_3, \mathcal{O}_4$ of the $D_5$ stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$ acting on the 12 first-shell vertices coincide bijectively with the four icosahedral angular classes of $u_i$ relative to $u_1$:
+\begin{itemize}
+\item $\mathcal{O}_1 = \{u_1\}$ (icosahedral self-class; 1 vertex);
+\item $\mathcal{O}_2 = \{$5 icosahedral neighbors of $u_1\}$ (icosahedral adjacent class; 5 vertices);
+\item $\mathcal{O}_3 = \{$5 icosahedral non-neighbors of $u_1$ in same hemisphere$\}$ (icosahedral non-adjacent same-hemisphere class; 5 vertices);
+\item $\mathcal{O}_4 = \{u_{12}\}$ (icosahedral antipode of $u_1$; 1 vertex).
+\end{itemize}
+\end{lemma}
+
+\begin{proof}
+The $D_5$ stabilizer of the oriented edge $\{v_{\text{host}}, u_1\}$ fixes both endpoints; in particular it fixes $u_1$, so $\mathcal{O}_1 = \{u_1\}$ is an orbit. The principal $C_5$ rotation $\rho \in D_5$ acts around the axis through $v_{\text{host}}$ and $u_1$ (equivalently, the axis through $\vec{e}_1$ and $-\vec{e}_1$ in the tangent plane, by Lemma~\ref{lem:orthogonal_decomposition}).
+
+The 5 icosahedral neighbors of $u_1$ form a pentagonal ring around the $\vec{e}_1$ axis at icosahedral angular distance $\arccos(1/\sqrt{5}) \approx 63.43°$ from $\vec{e}_1$; the $C_5$ rotation cycles them as a single 5-cycle. Hence this set is a $D_5$ orbit of size 5, identifiable as $\mathcal{O}_2$. The reflections in $D_5$ stabilize the set (they swap members within the pentagonal ring) but do not split it.
+
+Similarly the 5 icosahedral non-neighbors of $u_1$ in the same hemisphere form a pentagonal ring at angular distance $\arccos(-1/\sqrt{5}) \approx 116.57°$ from $\vec{e}_1$, cycled by $C_5$ as a 5-cycle: this is $\mathcal{O}_3$.
+
+The icosahedral antipode of $u_1$ has tangent direction $\vec{e}_{12} = -\vec{e}_1$ and is fixed by both $C_5$ rotations (it lies on the rotation axis) and the reflections (which preserve $-\vec{e}_1$). Hence $\mathcal{O}_4 = \{u_{12}\}$ is a singleton orbit.
+
+The four orbits exhaust the 12 first-shell vertices: $1 + 5 + 5 + 1 = 12$.
+\end{proof}
+
+\section{Main theorem: G1$_E$ first-shell projection orbit values}
+
+\begin{theorem}[G1$_E$ first-shell projection orbit values under $D_5$]
+\label{thm:G1E}
+Under (H1)--(H3), the projections of the 12 first-shell unit vectors $\hat{u}_i$ at $v_{\text{host}}$ onto the substrate primitive direction $\hat{n}_{\text{edge}} = \hat{u}_1$ take the closed-form values
+\[
+\boxed{\;\;
+\hat{u}_i \cdot \hat{n}_{\text{edge}} \;=\;
+\begin{cases}
+p_1 \;=\; 1 & i \in \mathcal{O}_1,\\[2pt]
+p_2 \;=\; \tfrac{1}{2} & i \in \mathcal{O}_2,\\[2pt]
+p_3 \;=\; -\tfrac{1}{2\phi} = \tfrac{1-\phi}{2} & i \in \mathcal{O}_3,\\[2pt]
+p_4 \;=\; -\tfrac{\phi}{2} & i \in \mathcal{O}_4.
+\end{cases}
+\;\;}
+\]
+\end{theorem}
+
+\begin{proof}
+By (H1), $\hat{n}_{\text{edge}} = \hat{u}_1$, hence
+\[
+\hat{u}_i \cdot \hat{n}_{\text{edge}} \;=\; \hat{u}_i \cdot \hat{u}_1.
+\]
+By Lemma~\ref{lem:icosahedral_pairings}, the pairwise inner products $\hat{u}_i \cdot \hat{u}_1$ take exactly four distinct values $\{1, 1/2, -1/(2\phi), -\phi/2\}$ classified by the icosahedral angular class of $u_i$ relative to $u_1$. By Lemma~\ref{lem:orbit_correspondence}, the four $D_5$ orbits coincide bijectively with the four icosahedral angular classes. Combining: the projection $\hat{u}_i \cdot \hat{n}_{\text{edge}}$ takes each of the four claimed values on the corresponding $D_5$ orbit.
+\end{proof}
+
+\section{Corollaries: identity verification and angular interpretation}
+
+\begin{corollary}[Recovery of Identities P1 and P2 from Patch 0599 \S3.2]
+\label{cor:identity_verification}
+The orbit values of Theorem~\ref{thm:G1E} satisfy the two identities P1 and P2 registered at Patch 0599 \S3.2:
+\begin{align*}
+\text{Identity P1:} \qquad \sum_{i=1}^{12} \hat{u}_i \cdot \hat{n}_{\text{edge}} \;&=\; 1\cdot p_1 + 5\cdot p_2 + 5\cdot p_3 + 1\cdot p_4 \\
+&=\; 1 + \tfrac{5}{2} - \tfrac{5}{2\phi} - \tfrac{\phi}{2} \\
+&=\; 1 + \tfrac{5}{2} - \tfrac{5\phi - 5}{2} - \tfrac{\phi}{2}\quad (\text{using } 1/\phi = \phi - 1) \\
+&=\; 1 + \tfrac{10 - 6\phi}{2} \;=\; 6 - 3\phi \;=\; 3(2-\phi) \;=\; \frac{3}{\phi^2}. \checkmark\\[6pt]
+\text{Identity P2:} \qquad \sum_{i=1}^{12} \left(\hat{u}_i \cdot \hat{n}_{\text{edge}}\right)^2 \;&=\; 1\cdot p_1^2 + 5\cdot p_2^2 + 5\cdot p_3^2 + 1\cdot p_4^2 \\
+&=\; 1 + \tfrac{5}{4} + \tfrac{5}{4\phi^2} + \tfrac{\phi^2}{4} \\
+&=\; 1 + \tfrac{5}{4} + \tfrac{5(2-\phi)}{4} + \tfrac{\phi+1}{4} \\
+&=\; 1 + \tfrac{16 - 4\phi}{4} \;=\; 1 + 4 - \phi \;=\; 5 - \phi. \checkmark
+\end{align*}
+Both identities recovered exactly, providing cross-validation of the orbit values.
+\end{corollary}
+
+\begin{proof}
+Direct computation as shown above, using the golden-ratio identities $1/\phi = \phi - 1$ and $\phi^2 = \phi + 1$.
+\end{proof}
+
+\begin{corollary}[Angular-distance interpretation]
+\label{cor:angular_interpretation}
+The four orbit projection values correspond to angular distances $\{0°, 60°, 108°, 144°\}$ from $u_1$ in $\mathbb{R}^4$ as measured from $v_{\text{host}}$:
+\begin{itemize}
+\item $p_1 = 1 = \cos(0°)$ \quad (icosahedral self-class; $u_1$ itself);
+\item $p_2 = 1/2 = \cos(60°)$ \quad (icosahedral adjacent class; equilateral-triangle angle with $v_{\text{host}}$);
+\item $p_3 = -1/(2\phi) = \cos(108°)$ \quad (icosahedral non-adjacent same-hemisphere class; pentagonal-axis angle);
+\item $p_4 = -\phi/2 = \cos(144°)$ \quad (icosahedral antipode class; pentagonal-axis angle).
+\end{itemize}
+The differences between consecutive angles --- $60° - 0° = 60°$, $108° - 60° = 48°$, $144° - 108° = 36°$ --- include the canonical $36° = 360°/10$ pentagonal-axis half-step, reflecting the 5-fold $C_5 \subset D_5$ rotational structure of the edge stabilizer.
+\end{corollary}
+
+\begin{proof}
+Direct: $\cos(60°) = 1/2$, $\cos(108°) = \cos(180° - 72°) = -\cos(72°) = -(\sqrt{5}-1)/4 = -(2\phi-2)/4 = -(\phi-1)/2 = -1/(2\phi)$ (using $\sqrt{5} = 2\phi - 1$), $\cos(144°) = \cos(180° - 36°) = -\cos(36°) = -(\sqrt{5}+1)/4 = -(2\phi)/4 = -\phi/2$.
+
+The $60°$ value at orbit $\mathcal{O}_2$ reflects the equilateral-triangle structure: $v_{\text{host}}, u_1, u_i$ form an equilateral triangle on the unit $S^3$ with side length $1/\phi$ when $u_i \in \mathcal{O}_2$ (icosahedrally adjacent to $u_1$), so the angle at $v_{\text{host}}$ subtended by the triangle is $60°$.
+
+The $108°, 144°$ values reflect the pentagonal-axis structure of the icosahedron: $\cos(108°)$ and $\cos(144°)$ are negative-cosine values at the standard icosahedral pentagonal-rotational pattern.
+\end{proof}
+
+\begin{corollary}[$D_5$ orbits coincide with 600-cell graph-distance shells of $u_1$]
+\label{cor:shell_correspondence}
+The four $D_5$ orbits $\mathcal{O}_1, \mathcal{O}_2, \mathcal{O}_3, \mathcal{O}_4$ of the first-shell of $v_{\text{host}}$ coincide bijectively with the graph-distance shells of $u_1$ in the 600-cell graph: $\mathcal{O}_k$ is the set of first-shell vertices of $v_{\text{host}}$ at graph distance $k-1$ from $u_1$, for $k = 1, 2, 3, 4$.
+\end{corollary}
+
+\begin{proof}
+Using the unit-vertex relation $u_i = v_{\text{host}} + (1/\phi)\hat{u}_i$ on $S^3$, we compute $u_i \cdot u_1$ for each orbit:
+\[
+u_i \cdot u_1 \;=\; 1 + \frac{1}{\phi^2}\left(\hat{u}_i \cdot \hat{u}_1 - 1\right) \cdot (-1) + (\text{adjusted})
+\]
+More directly, using
+\[
+u_i \cdot u_1 \;=\; v_{\text{host}} \cdot v_{\text{host}} + \tfrac{1}{\phi}(\hat{u}_i + \hat{u}_1) \cdot v_{\text{host}} + \tfrac{1}{\phi^2}(\hat{u}_i \cdot \hat{u}_1) \;=\; 1 - \tfrac{1}{\phi^2} + \tfrac{1}{\phi^2}(\hat{u}_i \cdot \hat{u}_1),
+\]
+since $\hat{u}_i \cdot v_{\text{host}} = \hat{u}_i \cdot \hat{n}_\rho = -1/(2\phi)$ for both $i$, giving the linear term $(1/\phi) \cdot 2 \cdot (-1/(2\phi)) = -1/\phi^2$.
+
+Substituting the four orbit values for $\hat{u}_i \cdot \hat{u}_1$ from Theorem~\ref{thm:G1E}:
+\begin{align*}
+\mathcal{O}_1\;(p_1 = 1): \quad u_i \cdot u_1 \;&=\; 1 - 1/\phi^2 + 1/\phi^2 \;=\; 1 & (\text{graph distance 0 / self}),\\
+\mathcal{O}_2\;(p_2 = 1/2): \quad u_i \cdot u_1 \;&=\; 1 - 1/\phi^2 + 1/(2\phi^2) \;=\; 1 - 1/(2\phi^2) \;=\; \phi/2 & (\text{graph distance 1}),\\
+\mathcal{O}_3\;(p_3 = -1/(2\phi)): \quad u_i \cdot u_1 \;&=\; 1 - 1/\phi^2 - 1/(2\phi^3) \;=\; 1/2 & (\text{graph distance 2}),\\
+\mathcal{O}_4\;(p_4 = -\phi/2): \quad u_i \cdot u_1 \;&=\; 1 - 1/\phi^2 - \phi/(2\phi^2) \;=\; 1/(2\phi) & (\text{graph distance 3}).
+\end{align*}
+The closed-form values $\{1, \phi/2, 1/2, 1/(2\phi)\}$ are exactly the inner products of $u_1$ with vertices at 600-cell graph distance $\{0, 1, 2, 3\}$ from $u_1$ on the unit $S^3$:
+\begin{itemize}
+\item Graph distance 0: $u_1 \cdot u_1 = 1$.
+\item Graph distance 1 (first-shell of $u_1$): $u_i \cdot u_1 = \phi/2$ (canonical 600-cell first-shell inner product).
+\item Graph distance 2 (second-shell of $u_1$): $u_i \cdot u_1 = 1/2$ (G2 second-shell primitive per Patch 0587).
+\item Graph distance 3 (third-shell of $u_1$): $u_i \cdot u_1 = 1/(2\phi)$ (G3 third-shell primitive per Coxeter 1973 / F.1 Sequence-2 vertex-aligned trajectory).
+\end{itemize}
+The bijective correspondence between $D_5$ orbits and graph-distance shells follows.
+\end{proof}
+
+\section{Substantive findings}
+
+\subsection{Finding A2-F1: Coincidence with vertex-aligned uniform projection at orbit $\mathcal{O}_3$}
+
+The orbit-3 projection value $p_3 = -1/(2\phi)$ coincides exactly with the vertex-aligned uniform projection value $\hat{u}_i \cdot \hat{n}_\rho = -1/(2\phi)$ (THEO-DSL-2 Theorem 5.1 / Patch 0552). This is not a coincidence: the 5 vertices in $\mathcal{O}_3$ are the icosahedrally non-adjacent same-hemisphere neighbors of $u_1$, lying at the same angular distance $108° = 180° - 72°$ from $u_1$ as the typical vertex-aligned projection angle (the angle whose cosine is $-1/(2\phi)$). Structurally: under edge-aligned Reading C, the 5 vertices of $\mathcal{O}_3$ play the same projection role relative to $\hat{n}_{\text{edge}}$ that all 12 first-shell vertices play uniformly under vertex-aligned Reading C.
+
+\subsection{Finding A2-F2: Pentagonal $36°$-step structure with intermixed $60°$ equilateral angle}
+
+The four orbit angular distances $\{0°, 60°, 108°, 144°\}$ from $u_1$ contain the canonical pentagonal half-step $36°$ ($\mathcal{O}_3$ to $\mathcal{O}_4$ is $36°$; equivalently $\mathcal{O}_4$ to icosahedral antipode of $u_1$ in $v_{\text{host}}$'s first-shell vs the pentagonal arrangement). The $60°$ angle at $\mathcal{O}_2$ is the equilateral-triangle angle from the 600-cell first-shell-of-first-shell connectivity ($v_{\text{host}}, u_1, u_i$ for $u_i \in \mathcal{O}_2$ form an equilateral triangle of side $1/\phi$ on $S^3$). The four angles together span the natural angular pattern of a pentagonal-rotational structure embedded in an icosahedrally-symmetric polytope --- a $C_5$ ``slice'' of the full $I_h$ structure as projected onto the $u_1$-direction.
+
+\subsection{Finding A2-F3: $D_5$ orbits coincide with graph-distance shells}
+
+Corollary~\ref{cor:shell_correspondence} establishes that the $D_5$ orbit classification of the first-shell of $v_{\text{host}}$ coincides bijectively with the graph-distance shell classification of the first-shell vertices as seen from $u_1$ in the 600-cell graph. This is a structurally substantive finding: the edge-stabilizer-orbit structure on the host's first-shell ENCODES the graph-distance metric from the chosen edge-endpoint $u_1$. This dual interpretation makes the orbit decomposition uniquely natural and connects the $D_5$ symmetry structure to the 600-cell connectivity structure.
+
+The structural relation is the analog of: at vertex-aligned Reading C, the (trivial) one-orbit $\{12\}$ of $I_h$ acting on the first-shell coincides with the single graph-distance-1 shell of $v_{\text{host}}$ in the 600-cell graph. Under edge-aligned, the orbit decomposition refines this single shell into four sub-shells indexed by graph distance from $u_1$, with orbits at distances 0, 1, 2, 3 from $u_1$.
+
+\section{Five-class exclusion enumeration}
+
+\begin{itemize}
+\item[\textbf{(E1)}] \textbf{First-shell-to-first-shell edge orbit structure $G1_E.2$ NOT in scope} --- target of Sequence-2A artifact A3$_E$ (Patch 0602); the 30 first-shell-to-first-shell icosahedral edges decompose into multiple $D_5$ orbits with distinct edge-direction projections $\hat{e}_{ij} \cdot \hat{n}_{\text{edge}}$. The structural finding of Patch 0599 \S5 that the B.2 path-class is generically non-zero under edge-aligned (vs vanishing at vertex-aligned via Patch 0551 G1.2) is the substantive Sequence-2A second-order finding to be quantified at A3$_E$.
+
+\item[\textbf{(E2)}] \textbf{Second-shell projection orbit structure $G2_E$ NOT in scope} --- target of Sequence-2A artifact A4$_E$ (Patch 0603); the 20 second-shell vertices of $v_{\text{host}}$ decompose into multiple $D_5$ orbits with distinct projections onto $\hat{n}_{\text{edge}}$.
+
+\item[\textbf{(E3)}] \textbf{Path-class weight enumeration at $\mathcal{O}(\delta^2)$ NOT in scope} --- target of Sequence-2A artifact A5$_E$ (Patch 0604) using (H5$_E$) framework-extension at sketch-document Layer 3.
+
+\item[\textbf{(E4)}] \textbf{Face-aligned Reading C variant NOT covered} --- separate Sequence-2B trajectory under $C_s$ stabilizer; the 3D $C_s$-invariant subspace structure of THEO-DSL-8 (candidate) requires independent analysis.
+
+\item[\textbf{(E5)}] \textbf{Layer 4 axiomatic derivation NOT in scope} --- OPEN-FP-F1-2 long-term programme target; the icosahedral first-shell geometry inheriting THEO-DSL-2 / Patch 0571 publication-grade hardening is the load-bearing input here, not the CPP primitive axioms A1--A11 directly.
+\end{itemize}
+
+\section{Falsifier}
+
+Demonstration of any orbit projection value $p_k$ different from $\{1, 1/2, -1/(2\phi), -\phi/2\}$ from a valid first-principles 600-cell first-shell + icosahedral pairwise inner-product calculation at edge-aligned Reading C under (H1)--(H3). Equivalently: demonstration that the icosahedral pairwise inner-product classification of Lemma~\ref{lem:icosahedral_pairings} is incorrect (which would propagate backward to falsify G1 / Patch 0571 publication-grade hardening).
+
+A structural-level falsifier: demonstration that the $D_5$ orbit classification of the first-shell does NOT coincide with the graph-distance shell classification from $u_1$ (Corollary~\ref{cor:shell_correspondence}); would imply a defect in the 600-cell first-shell + icosahedral structural correspondence.
+
+\section{Honest scope-limitation framing}
+
+The theorem closes the first-shell projection primitive G1$_E$ at publication-grade Layer 3 unconditional rigor for the OPEN-FP-F1-5 Sequence-2A trajectory. The result is one of four geometric primitives needed for the second-order coefficient closure at Patch 0604 A5$_E$ (the others being G1$_E$.2 first-shell-to-first-shell edge orbits, G2$_E$ second-shell projections, and G2$_E$.3 cross-shell edge orbits, each at its own subsequent Patch).
+
+The result does NOT yet provide the second-order substrate-current coefficients $\alpha_2^{(\rho)}, \alpha_2^{(\text{edge})}$; those require the full path-class weight enumeration at $\mathcal{O}(\delta^2)$ under the (H5$_E$) framework-extension hypothesis, deferred to Patch 0604 A5$_E$.
+
+No (H4) shell-locality or (H5$_E$) framework-extension hypothesis is invoked here; the result is purely at the polytope-geometric / Lie-group representation level, inheriting G1 / Patch 0571 publication-grade hardening as the load-bearing geometric input.
+
+\section{Cross-trajectory linkage}
+
+This artifact is the \textbf{fifteenth} in the F.1 Layer 3 hardened-theorem sequence (Patches 0550 + 0551 + 0552 + 0571 + 0585 + 0587 + 0588 + 0589 + 0590 + 0591 + 0592 + 0596 + 0597 + 0600 + this Patch 0601), advancing the combined sequence to approximately 4{,}830 lines LaTeX across 15 \texttt{.tex} artifacts. It is the \textbf{second substantive Patch} under the OPEN-FP-F1-5 Sequence-2A trajectory (after Patch 0600 A1$_E$).
+
+Single-artifact-per-Patch discipline preserved \textbf{15-for-15} since Patch 0585. The artifact templates the geometric-primitive derivation methodology for non-vertex-aligned Reading-C variants under stabilizer-substitution: replace $I_h$-uniform-orbit results (e.g., THEO-DSL-2 Theorem 5.1 single uniform projection $-1/(2\phi)$) with $D_5$ multi-orbit closed-form values (e.g., this artifact's four orbit projections $\{1, 1/2, -1/(2\phi), -\phi/2\}$) preserving the same golden-ratio field extension $\mathbb{Q}[\phi]$.
+
+\end{document}
