@@ -1,0 +1,342 @@
+% ============================================================
+% Second-Shell Inner-Product Primitive Identity (G2)
+%   for the 600-Cell Edge Graph at Vertex-Aligned Reading C
+% Publication-Grade Hardening of the Second-Shell Analog of G1
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    SIXTH artifact in F.1 Layer 3 hardened-theorem sequence;
+%    SECOND artifact in the OPEN-FP-F1-1 trajectory after Patch 0585's
+%    structural theorem at A1; FIRST artifact under Route C sequence 2
+%    (the coefficient-computation sub-sequence) per the Session 144 close
+%    handover decision-gate bundle. Hardens G2 — the analog of G1 for
+%    the second graph-distance shell of the 600-cell at vertex-aligned
+%    Reading C — at publication-grade Layer 3 unconditional rigor.
+%    Unlocks Route C sequence 2 artifacts A3 (host-to-second-shell
+%    uniform projection G2.1) and A5 (second-shell perpendicularity
+%    G2.4) in parallel; both are conditional on G2 hardened, parallel
+%    to how A2 (G1) hardening unlocked the F.1 Theorems 5.1 + 5.2
+%    inheritance from publication-grade Layer 3 conditional to
+%    unconditional at Patch 0571.)
+%
+% Patch 0587 (Session 145, 26 May 2026) — Route C sequence 2 opening
+%   artifact; second OPEN-FP-F1-1 trajectory closure Patch after the
+%   Patch 0585 structural theorem.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Cthreev}{C_{3v}}
+
+\title{Second-Shell Inner-Product Primitive (G2) \\
+in the 600-Cell at Vertex-Aligned Reading C \\
+\large Publication-Grade Hardening of the Second-Shell Analog of G1 \\
+(OPEN-FP-F1-1 Route C Sequence 2 Opening Artifact)}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7 \\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{26 May 2026 (Session 145, CPP Patch 0587)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade hardening of the second-shell inner-product primitive G2 for the 600-cell at vertex-aligned Reading~C: the analog of the first-shell primitive G1 (Patch~0571) at the second graph-distance shell of $\Gsixcell$. The hardened statement asserts that, under (H1)~vertex-aligned Reading~C with $\nhat = \vhost$, (H2)~the 600-cell unit-vertex normalisation $|v|=1$, and (H3)~the icosahedral residual symmetry $\Hthree = \Icoh$ at the host vertex (separately-derived structural input from the $\Hfour \to \Hthree$ symmetry breaking under vertex-aligned Reading~C; same input as Patch~0571 Theorem~1.1), every second-shell vertex $w_j$ of $\vhost$ (each of the 20 vertices at graph distance 2 in $\Gsixcell$) satisfies $w_j \cdot \vhost = 1/2$ uniformly, where the 20 second-shell vertices form the 20 vertices of a regular dodecahedron under the $\Icoh$ residual symmetry. The proof factors into two standalone components: Lemma~\ref{lem:second_shell_angle} (the second-shell central angle is $\pi/3$ with $\cos(\pi/3) = 1/2$, derived from a direct coordinate verification on a canonical second-shell vertex $w = \tfrac{1}{2}(1,1,1,1)$ paired with the polytope-theoretic shell-decomposition characterisation of the 600-cell at unit-vertex normalisation), and Lemma~\ref{lem:dodecahedral_transitivity} (the $\Icoh$ residual symmetry acts transitively on the 20 second-shell vertices through the dodecahedral orbit, with $\Cthreev$ stabilizers of order 6). The arithmetic asymmetry with the first-shell primitive G1 is notable: the second-shell central angle $\pi/3$ has the elementary $\cos(\pi/3) = 1/2$ in place of G1's golden-ratio Chebyshev derivation of $\cos(\pi/5) = \phi/2$; the load-bearing polytope-theoretic content of G2 is therefore the \emph{shell-identification} step (that the second graph-distance shell is at angular distance $\pi/3$) rather than the central-angle computation step. With Patch~0587 in hand, the F.1 Layer~3 hardened-theorem sequence advances to \textbf{six artifacts}, and the Route~C sequence~2 trajectory of OPEN-FP-F1-1 (the coefficient-computation sub-sequence A2--A6) opens at its first artifact. Patch~0587 unlocks two downstream Route~C sequence~2 artifacts in parallel: A3 (host-to-second-shell uniform projection G2.1) and A5 (second-shell perpendicularity G2.4) are both conditional on G2 hardened.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+This paper hardens the second-shell inner-product primitive G2 for the 600-cell at vertex-aligned Reading~C from sketch-document Layer~3 rigor (scoping document \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S3.2) to publication-grade rigor, executing the first artifact of Route~C sequence~2 of the OPEN-FP-F1-1 trajectory per the Session~144 close handover decision-gate bundle. The substantive theorem content asserts that the inner product $w \cdot \vhost$ is uniform across all 20 second-shell vertices of $\vhost$ in the 600-cell at unit-vertex normalisation, with closed-form value $1/2$. The contribution of this artifact is the rigorisation of the proof structure with three concrete advances: (a)~explicit isolation of the second-shell central angle $\pi/3$ via a direct coordinate verification on a canonical second-shell vertex paired with the polytope-theoretic shell-decomposition characterisation; (b)~explicit isolation of the dodecahedral transitivity of the icosahedral residual symmetry $\Hthree = \Icoh$ acting on the 20 second-shell vertices as a separately-stated lemma giving rise to uniformity; (c)~a five-class exclusion enumeration that registers the polytope-theoretic primitives taken as given and the open higher-shell extensions.
+
+\paragraph{Position in the F.1 Layer 3 hardening sequence.}
+The F.1 Dynamical Substrate Law v1.0 SHIP (Patch~0570, 24~May~2026) and subsequent OPEN-FP-F1-3 + OPEN-FP-F1-1 trajectory work have produced five publication-grade Layer~3 hardened-theorem artifacts in the $\hat{n}$-aligned Reading-C substrate-locality programme:
+\begin{itemize}[leftmargin=2em]
+\item Patch~0550 --- perturbation-theory propagation rule + shell-locality at every order (\texttt{perturbation\_locality\_propagation.tex});
+\item Patch~0551 --- first-shell-to-first-shell edge-direction perpendicularity (\texttt{first\_shell\_perpendicularity.tex});
+\item Patch~0552 --- host-to-first-shell uniform projection (\texttt{host\_to\_first\_shell\_projection.tex});
+\item Patch~0571 --- first-shell inner-product primitive G1 (\texttt{first\_shell\_inner\_product\_primitive.tex});
+\item Patch~0585 --- $\mathcal{O}(\delta^k)$ all-orders parallel-to-$\nhat$ structural theorem (\texttt{second\_order\_parallel\_to\_n\_structural.tex}).
+\end{itemize}
+The present Patch~0587 is the \textbf{sixth} artifact in the sequence and the \textbf{first} under Route~C sequence~2 (the coefficient-computation sub-sequence) of the OPEN-FP-F1-1 trajectory. The Patch~0585 structural theorem (parallel-to-$\nhat$ at all orders $k \geq 1$ via symmetry-only argument) closed the structural sub-question of OPEN-FP-F1-1; the coefficient sub-question $\alpha_2$ at $\mathcal{O}(\delta^2)$ remains open and is the eventual target of artifact A7. The present Patch~0587 hardens G2, unblocking the parallel A3 (G2.1) and A5 (G2.4) artifacts which require G2 as a publication-grade Layer~3 unconditional input.
+
+\paragraph{Statement of the main result.}
+Let $\Gsixcell$ denote the 600-cell edge graph (Patch~0550 \S2.1; \cite{coxeter1973}) with vertex set the 120 vertices of the 600-cell normalised to $|v| = 1$ on $S^3 \subset \Reals^4$ and edge set the 720 short edges of length $1/\phi$ connecting adjacent vertices, where $\phi = (1+\sqrt{5})/2$ is the golden ratio. Fix a host vertex $\vhost \in V(\Gsixcell)$, and let $S_2(\vhost) \subset V(\Gsixcell)$ denote the set of vertices at graph distance exactly 2 from $\vhost$ in $\Gsixcell$. By the polytope-theoretic shell decomposition of the 600-cell at unit-vertex normalisation (Coxeter 1973), $|S_2(\vhost)| = 20$ and the 20 vertices of $S_2(\vhost)$ form the vertex set of a regular dodecahedron centred at the origin.
+
+\begin{theorem}[G2, second-shell inner-product primitive, hardened]\label{thm:G2_hardened}
+Under the following hypotheses:
+\begin{enumerate}[label=(H\arabic*)]
+\item \textbf{Vertex-aligned Reading~C with framework chirality direction $\nhat = \vhost$}, as registered in Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2;
+\item \textbf{600-cell unit-vertex normalisation}: every vertex $v \in V(\Gsixcell)$ satisfies $|v| = 1$ in the ambient $\Reals^4$;
+\item \textbf{Icosahedral residual symmetry at the host vertex}: the substrate's symmetry group $\Hfour$ (Coxeter group of the 600-cell, order $14400$) breaks under vertex-aligned Reading~C to the residual symmetry $\Hthree = \Icoh$ (icosahedral symmetry group with central inversion, order $120$) acting on the host's neighbourhood, as derived in Capotauro~v2.0 FI-C-RC-2 + Patch~0419 Finding~C-W37 and re-used in Patch~0571 Theorem~1.1 + Lemma~2.1.
+\end{enumerate}
+Then for every second-shell vertex $w_j$ of $\vhost$ (each of the 20 vertices in $S_2(\vhost)$),
+\begin{equation}\label{eq:G2_main}
+w_j \cdot \vhost \;=\; \frac{1}{2}
+\end{equation}
+uniformly across $j \in \{1, \ldots, 20\}$.
+\end{theorem}
+
+The proof factors into a second-shell central-angle determination (\S\ref{sec:central_angle_lemma}) and a dodecahedral-transitivity argument (\S\ref{sec:dodecahedral_transitivity_lemma}), assembled in \S\ref{sec:main_proof}. Corollary~\ref{cor:second_shell_chord_length} below records the second-shell chord length $|w_j - \vhost| = 1$ as a stand-alone consequence (the form in which G2 will enter the A3 / A5 downstream artifacts' chord-length lemmas).
+
+\begin{remark}[Arithmetic contrast with G1 hardening]\label{rem:arithmetic_contrast}
+The first-shell primitive G1 (Patch~0571) has central angle $\pi/5 = 36^\circ$ with $\cos(\pi/5) = \phi/2$; the central-angle calculation is non-trivial and required derivation from the Chebyshev minimal polynomial of $\cos(\pi/5)$ in Patch~0571 Lemma~2.2. The second-shell primitive G2 has central angle $\pi/3 = 60^\circ$ with $\cos(\pi/3) = 1/2$; the central-angle calculation is elementary trigonometry. The load-bearing polytope-theoretic content of G2 has therefore shifted from the central-angle computation step (trivial for G2) to the \emph{shell-identification} step (which 600-cell vertices belong to the second graph-distance shell of $\vhost$; non-trivial as it requires the polytope-theoretic shell-decomposition of the 600-cell). The present hardening's Lemma~\ref{lem:second_shell_angle} executes the shell-identification step via direct coordinate verification on a canonical second-shell vertex $w = \tfrac{1}{2}(1,1,1,1)$ combined with the standard 600-cell shell-decomposition characterisation \cite{coxeter1973}.
+\end{remark}
+
+\begin{remark}[Reconciliation with scoping-document chord-length conjecture]\label{rem:scoping_conjecture}
+The OPEN-FP-F1-1 scoping document (\texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S3.2.1) registered as a candidate-to-verify the second-shell chord length $d_2 = \phi^{-1}\sqrt{3-\phi} \approx 0.727$ under the substrate's $\phi$-quantisation pattern. The present hardening's Corollary~\ref{cor:second_shell_chord_length} establishes the correct chord length as $|w_j - \vhost| = 1$ exactly (a unit chord at unit-vertex normalisation), via the inner-product identity~\eqref{eq:G2_main} combined with the standard chord-length identity $|w_j - \vhost|^2 = 2 - 2(w_j \cdot \vhost)$. The scoping-document candidate value $\phi^{-1}\sqrt{3-\phi}$ was a hypothesis posed for hardening verification; it does not correspond to the second graph-distance shell at unit-vertex normalisation. The discrepancy is registered openly per anti-erasure discipline rather than silently corrected. The correct chord length $1$ is the form in which G2 enters downstream artifacts.
+\end{remark}
+
+\section{Preliminaries and framework commitments}\label{sec:preliminaries}
+
+\subsection{The 600-cell second-shell setup}\label{sec:second_shell_setup}
+
+The polytope-theoretic shell-decomposition of the 600-cell at unit-vertex normalisation from any fixed vertex $\vhost \in V(\Gsixcell)$ partitions the 120 vertices into 9 angular-distance shells \cite{coxeter1973}:
+\begin{equation}\label{eq:shell_decomposition}
+V(\Gsixcell) \;=\; \{\vhost\} \;\sqcup\; S_1(\vhost) \;\sqcup\; S_2(\vhost) \;\sqcup\; \cdots \;\sqcup\; S_7(\vhost) \;\sqcup\; \{-\vhost\},
+\end{equation}
+with shell populations
+\begin{equation}\label{eq:shell_populations}
+\big(|\{\vhost\}|, |S_1|, |S_2|, |S_3|, |S_4|, |S_5|, |S_6|, |S_7|, |\{-\vhost\}|\big) \;=\; (1, 12, 20, 12, 30, 12, 20, 12, 1),
+\end{equation}
+summing to $120$, and with respective inner products
+\begin{equation}\label{eq:shell_inner_products}
+\big(v_{\text{host}} \cdot \vhost, \, S_1, \, S_2, \, S_3, \, S_4, \, S_5, \, S_6, \, S_7, \, -\vhost \cdot \vhost\big) \;=\; \Big(1, \tfrac{\phi}{2}, \tfrac{1}{2}, \tfrac{1}{2\phi}, 0, -\tfrac{1}{2\phi}, -\tfrac{1}{2}, -\tfrac{\phi}{2}, -1\Big).
+\end{equation}
+The angular-distance shell labels coincide with graph-distance shell labels under the 600-cell graph $\Gsixcell$ (a consequence of edge-transitivity of $\Hfour$ on $\Gsixcell$ combined with the shell-monotonicity of inner product under unit chord steps; see \cite{coxeter1973}). The second shell $S_2(\vhost)$ accordingly comprises the 20 vertices at graph distance exactly 2 from $\vhost$ and inner product $1/2$ with $\vhost$. These 20 vertices form the vertex set of a regular dodecahedron centred at the origin, dual to the first-shell icosahedron formed by $S_1(\vhost)$.
+
+\subsection{Vertex-aligned Reading C and dodecahedral transitivity}\label{sec:reading_c_setup}
+
+Under vertex-aligned Reading~C (Capotauro~v2.0 FI-C-RC-1 + FI-C-RC-2), the framework chirality direction $\nhat$ is identified with the host vertex direction: $\nhat = \vhost$. Combined with the unit-vertex normalisation (H2), this gives $|\nhat| = 1$ and $\nhat$ itself is a 600-cell vertex. The $\Hfour$-stabilizer of $\vhost$ in the 600-cell is the icosahedral symmetry group $\Hthree = \Icoh$ of order $120$ (Patch~0571 Theorem~1.1 + Lemma~2.1; \cite{humphreys1990,coxeter1973}). $\Icoh$ acts on $\Reals^4$ as an order-120 subgroup of $O(4)$ pointwise-fixing $\vhost$, preserves the shell decomposition~\eqref{eq:shell_decomposition} setwise (each shell is $\Icoh$-invariant), and acts on each shell as an orthogonal-symmetry group.
+
+\begin{lemma}[$\Icoh$ acts transitively on the second shell]\label{lem:dodecahedral_transitivity}
+Under (H1)--(H3), the icosahedral group $\Hthree = \Icoh$ acts transitively on the 20 second-shell vertices $S_2(\vhost) = \{w_1, \ldots, w_{20}\}$ of $\vhost$. The point stabilizer of any $w_j \in S_2(\vhost)$ under this action is the dihedral group $\Cthreev$ of order $6$.
+\end{lemma}
+
+\begin{proof}
+The 20 vertices of $S_2(\vhost)$ form a regular dodecahedron centred at the origin (\S\ref{sec:second_shell_setup}), and the full symmetry group of a regular dodecahedron in $\Reals^3$ (acting on the $\Hthree$-invariant 3-plane orthogonal to $\nhat$, lifted to $\Reals^4$ by trivial action on $\Reals\nhat$) is $\Icoh$. The regular polyhedron is vertex-transitive under its full symmetry group \cite{humphreys1990}, so $\Icoh$ acts transitively on the 20 dodecahedron vertices.
+
+For the stabilizer: by orbit--stabilizer, $|\text{Stab}_{\Icoh}(w_j)| = |\Icoh| / |S_2(\vhost)| = 120 / 20 = 6$. The order-6 stabilizer consists of: the identity; the two non-trivial rotations $C_3, C_3^2$ about the radial axis through $w_j$ (which is a 3-fold rotation axis of the dodecahedron); and three mirror reflections through planes containing the $w_j$-axis (each exchanging pairs of $w_j$'s neighbours in the dodecahedron). These six elements form the dihedral group $\Cthreev$ (also denoted $D_3$ or $D_{3v}$ in some conventions), the group of rotational and reflectional symmetries of an equilateral triangle. The inversion $\iota \in \Icoh$ sends $w_j \mapsto -w_j$ (the antipodal dodecahedron vertex in $S_6(\vhost)$) and is therefore not in $\text{Stab}_{\Icoh}(w_j)$, consistent with the order-6 calculation. $\square$
+\end{proof}
+
+\section{Proof of identity G2}\label{sec:proof}
+
+\subsection{Second-shell central-angle lemma}\label{sec:central_angle_lemma}
+
+\begin{lemma}[Second-shell central angle and inner product]\label{lem:second_shell_angle}
+Under (H2), for every second-shell vertex $w \in S_2(\vhost)$ of the 600-cell,
+\begin{equation}\label{eq:second_shell_inner_product}
+w \cdot \vhost \;=\; \cos(60^\circ) \;=\; \cos(\pi/3) \;=\; \frac{1}{2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The proof factors into two steps: a polytope-theoretic shell-identification step (Step~1) followed by a direct coordinate verification on a canonical representative (Step~2), with $\Icoh$-transitivity (Lemma~\ref{lem:dodecahedral_transitivity}) lifting the per-representative result to uniformity across all 20 second-shell vertices in the main proof of Theorem~\ref{thm:G2_hardened} (\S\ref{sec:main_proof}).
+
+\paragraph{Step 1 (shell identification).}
+By the polytope-theoretic shell-decomposition of the 600-cell at unit-vertex normalisation~\eqref{eq:shell_decomposition} + \eqref{eq:shell_inner_products} \cite{coxeter1973}, the second graph-distance shell $S_2(\vhost)$ is characterised by inner product $1/2$ with $\vhost$. The angular distance to the second shell is $\arccos(1/2) = \pi/3 = 60^\circ$. The 20 second-shell vertices form a regular dodecahedron under the residual $\Hthree = \Icoh$ action (\S\ref{sec:second_shell_setup}).
+
+\paragraph{Step 2 (coordinate verification on a canonical representative).}
+Fix the standard 600-cell coordinate system with $\vhost = (1, 0, 0, 0)$ (the unit basis vector along the first axis). Consider the candidate second-shell vertex
+\begin{equation}\label{eq:canonical_w}
+w \;=\; \frac{1}{2}(1, 1, 1, 1).
+\end{equation}
+Direct computation:
+\begin{align}
+|w|^2 \;&=\; \frac{1}{4}(1^2 + 1^2 + 1^2 + 1^2) \;=\; \frac{1}{4} \cdot 4 \;=\; 1, \label{eq:w_norm} \\
+w \cdot \vhost \;&=\; \frac{1}{2}(1 \cdot 1 + 1 \cdot 0 + 1 \cdot 0 + 1 \cdot 0) \;=\; \frac{1}{2}. \label{eq:w_inner_product}
+\end{align}
+Equation~\eqref{eq:w_norm} confirms $w \in S^3$ at unit-vertex normalisation. The vertex $w = \tfrac{1}{2}(1,1,1,1)$ is one of the 16 vertices of the 600-cell of the form $\tfrac{1}{2}(\pm 1, \pm 1, \pm 1, \pm 1)$ (the second of three coordinate-type families in the standard 600-cell description; see \cite{coxeter1973}). Equation~\eqref{eq:w_inner_product} gives inner product $1/2$ with $\vhost$, which by Step~1 places $w$ in the second shell $S_2(\vhost)$.
+
+\paragraph{Verification of graph-distance 2 (not graph-distance $\geq 3$).}
+To confirm $w \in S_2(\vhost)$ in the graph-distance sense, we exhibit a 2-hop path in $\Gsixcell$ from $\vhost$ to $w$. Consider the candidate intermediate vertex
+\begin{equation}\label{eq:bridging_u}
+u \;=\; \Big(\frac{\phi}{2}, \frac{1}{2}, \frac{1}{2\phi}, 0\Big),
+\end{equation}
+which is one of the 96 vertices of the third coordinate-type family $\tfrac{1}{2}(\pm\phi, \pm 1, \pm 1/\phi, 0)$ + even permutations \cite{coxeter1973}. Direct computation:
+\begin{align}
+|u|^2 \;&=\; \frac{\phi^2}{4} + \frac{1}{4} + \frac{1}{4\phi^2} \;=\; \frac{1}{4}\Big(\phi^2 + 1 + \phi^{-2}\Big) \;=\; \frac{1}{4}\big((\phi+1) + 1 + (2-\phi)\big) \;=\; \frac{4}{4} \;=\; 1, \\
+u \cdot \vhost \;&=\; \frac{\phi}{2} \cdot 1 + \frac{1}{2} \cdot 0 + \frac{1}{2\phi} \cdot 0 + 0 \cdot 0 \;=\; \frac{\phi}{2}, \\
+u \cdot w \;&=\; \frac{1}{2}\Big(\frac{\phi}{2} + \frac{1}{2} + \frac{1}{2\phi} + 0\Big) \;=\; \frac{1}{4}\Big(\phi + 1 + \phi^{-1}\Big) \;=\; \frac{1}{4}\Big(\phi^2 + \phi^{-1}\Big) \;=\; \frac{1}{4} \cdot \frac{\phi^3 + 1}{\phi},
+\end{align}
+where we used $\phi^{-2} = 2 - \phi$ (golden-ratio identity) for $|u|^2$, and $\phi + 1 = \phi^2$ for the $u \cdot w$ simplification. To complete $u \cdot w$, observe $\phi^3 = \phi \cdot \phi^2 = \phi(\phi+1) = \phi^2 + \phi = 2\phi + 1$, so $\phi^3 + 1 = 2\phi + 2 = 2(\phi+1) = 2\phi^2$, and
+\begin{equation}
+u \cdot w \;=\; \frac{1}{4} \cdot \frac{2\phi^2}{\phi} \;=\; \frac{\phi^2}{2\phi} \;=\; \frac{\phi}{2}.
+\end{equation}
+
+Hence $u$ is a first-shell vertex of both $\vhost$ and $w$: $u \cdot \vhost = u \cdot w = \phi/2$ identifies $u$ as adjacent to each in $\Gsixcell$. The 2-hop path $\vhost \to u \to w$ in $\Gsixcell$ realises $w$ at graph distance $\leq 2$ from $\vhost$. Since $w \notin \{\vhost\} \cup S_1(\vhost)$ (its inner product with $\vhost$ is $1/2 \neq 1, \phi/2$), $w$ is at graph distance exactly 2; i.e., $w \in S_2(\vhost)$. $\square$
+\end{proof}
+
+\begin{remark}[On the asymmetric proof structure compared with G1]\label{rem:asymmetric_proof}
+Patch~0571's G1 hardening required a non-trivial Chebyshev-polynomial derivation of $\cos(\pi/5) = \phi/2$ as Lemma~2.2 (because the dihedral-angle calculation is the load-bearing computation, with the icosahedral transitivity following routinely). For G2, the situation inverts: $\cos(\pi/3) = 1/2$ is elementary, but the shell-identification step requires importing the polytope-theoretic shell-decomposition~\eqref{eq:shell_decomposition}, which encodes the 600-cell's full vertex-distance structure. The present proof handles this asymmetry by combining a direct coordinate verification on a canonical representative (Step~2) with the standard shell-decomposition characterisation (Step~1) plus an explicit 2-hop path verification confirming the graph-distance assignment. The proof retains publication-grade Layer~3 unconditional rigor by virtue of (i)~explicit hypothesis tracking, (ii)~isolated central-angle lemma at \S\ref{sec:central_angle_lemma}, (iii)~isolated dodecahedral-transitivity lemma at \S\ref{sec:reading_c_setup}/Lemma~\ref{lem:dodecahedral_transitivity}, and (iv)~the five-class exclusion enumeration at \S\ref{sec:scope_and_exclusions} below.
+\end{remark}
+
+\subsection{Dodecahedral transitivity lifts uniformity}\label{sec:dodecahedral_transitivity_lemma}
+
+Lemma~\ref{lem:second_shell_angle} establishes the inner-product identity for the canonical second-shell vertex $w = \tfrac{1}{2}(1,1,1,1)$. Lemma~\ref{lem:dodecahedral_transitivity} (already proved in \S\ref{sec:reading_c_setup}) lifts this to uniformity across all 20 second-shell vertices: since $\Hthree = \Icoh$ acts transitively on $S_2(\vhost)$ while fixing $\vhost$, and the inner product $v \cdot \vhost$ is invariant under elements of $\Icoh$ (as a scalar built from the fixed vector $\vhost$ and an arbitrary vector $v$ transformed by an element of $\Icoh \subset O(4)$ fixing $\vhost$), every second-shell vertex has the same inner product with $\vhost$ as does the canonical representative $w$.
+
+\subsection{Main proof of Theorem~\ref{thm:G2_hardened}}\label{sec:main_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:G2_hardened}]
+Fix the canonical second-shell vertex $w_0 = \tfrac{1}{2}(1,1,1,1)$ of $\vhost = (1,0,0,0)$ in the standard 600-cell coordinate system. By Lemma~\ref{lem:second_shell_angle} (Step~2 coordinate verification + Step~1 shell identification + 2-hop path) under hypothesis (H2),
+\begin{equation*}
+w_0 \cdot \vhost \;=\; \frac{1}{2}, \qquad w_0 \in S_2(\vhost).
+\end{equation*}
+By Lemma~\ref{lem:dodecahedral_transitivity} under hypotheses (H1) + (H3), the group $\Hthree = \Icoh$ acts transitively on $S_2(\vhost) = \{w_1, \ldots, w_{20}\}$ while fixing $\vhost$. For any $j \in \{1, \ldots, 20\}$, choose $g \in \Icoh$ with $g \cdot w_0 = w_j$. Since $g$ acts as a linear isometry of $\Reals^4$ fixing $\vhost$,
+\begin{equation*}
+w_j \cdot \vhost \;=\; (g \cdot w_0) \cdot \vhost \;=\; (g \cdot w_0) \cdot (g \cdot \vhost) \;=\; w_0 \cdot \vhost \;=\; \frac{1}{2},
+\end{equation*}
+where the second equality uses $g \cdot \vhost = \vhost$ (since $\Hthree$ fixes the host) and the third uses that the inner product on $\Reals^4$ is $O(4)$-invariant. Therefore $w_j \cdot \vhost = 1/2$ for every $j \in \{1, \ldots, 20\}$, completing the proof. (The choice of $g \in \Icoh$ with $g \cdot w_0 = w_j$ is guaranteed to exist for every $j$ by the transitivity statement of Lemma~\ref{lem:dodecahedral_transitivity}; the same $g$ generally is not unique, but uniqueness is irrelevant for the inner-product identity.) $\square$
+\end{proof}
+
+\section{Consequences and corollaries}\label{sec:consequences}
+
+\subsection{Second-shell chord length}\label{sec:chord_length_corollary}
+
+\begin{corollary}[Host-to-second-shell chord length]\label{cor:second_shell_chord_length}
+Under (H1)--(H3), for every second-shell vertex $w_j \in S_2(\vhost)$,
+\begin{equation}\label{eq:second_shell_chord_length}
+|w_j - \vhost| \;=\; 1,
+\end{equation}
+uniformly across $j \in \{1, \ldots, 20\}$.
+\end{corollary}
+
+\begin{proof}
+By the standard inner-product expansion in $\Reals^4$,
+\begin{equation*}
+|w_j - \vhost|^2 \;=\; |w_j|^2 - 2(w_j \cdot \vhost) + |\vhost|^2 \;=\; 1 - 2 \cdot \frac{1}{2} + 1 \;=\; 1,
+\end{equation*}
+using (H2) for $|w_j| = |\vhost| = 1$ and Theorem~\ref{thm:G2_hardened} for the inner product. Taking the positive square root gives $|w_j - \vhost| = 1$, uniform in $j$. $\square$
+\end{proof}
+
+Corollary~\ref{cor:second_shell_chord_length} is the form in which G2 will enter the A3 (\texttt{host\_second\_shell\_uniform\_projection.tex}) and A5 (\texttt{second\_shell\_perpendicularity.tex}) Route~C sequence~2 artifacts, parallel to how Corollary~3.1 of Patch~0571 (the first-shell chord-length corollary at $|v_i - \vhost| = 1/\phi$) entered Patches~0551 and~0552 at $\mathcal{O}(\delta^1)$. The chord length $1$ is exactly $\phi$ times the first-shell chord length $1/\phi$ of Patch~0571 Corollary~3.1, since $\phi \cdot (1/\phi) = 1$: a single-step golden-ratio scaling pattern between first-shell and second-shell chord lengths. Whether the third-shell chord length continues this pattern is a separate question pending verification at OPEN-FP-F1-1 sequence-2 closure or at any future hardening artifact that addresses shells beyond the second.
+
+\subsection{Use in downstream Route C sequence 2 artifacts}\label{sec:use_in_a3_a5}
+
+\begin{corollary}[Unlocking A3 + A5 at publication-grade Layer 3 unconditional]\label{cor:a3_a5_unlock}
+With Theorem~\ref{thm:G2_hardened} in hand at publication-grade Layer~3 unconditional rigor, the two downstream Route~C sequence~2 artifacts conditional on G2 hardened are unblocked for publication-grade Layer~3 unconditional production:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{A3}: \texttt{host\_second\_shell\_uniform\_projection.tex} (G2.1; analog of Patch~0552 host-to-first-shell uniform projection but on the second shell); the unit vector $\hat{w}_j = (w_j - \vhost) / |w_j - \vhost|$ has uniform $\nhat$-projection $\hat{w}_j \cdot \nhat = c_2$ across all 20 second-shell vertices, with $c_2$ a golden-ratio rational determined by combining Theorem~\ref{thm:G2_hardened} with the chord-length identity of Corollary~\ref{cor:second_shell_chord_length}.
+\item \textbf{A5}: \texttt{second\_shell\_perpendicularity.tex} (G2.4; analog of Patch~0551 first-shell-to-first-shell edge-direction perpendicularity but on second-shell-to-second-shell edges, i.e., the 30 edges of the dodecahedron formed by $S_2(\vhost)$); the edge unit vectors $\hat{e}_{j_1 j_2}$ satisfy $\hat{e}_{j_1 j_2} \cdot \nhat = 0$ identically.
+\end{itemize}
+Both A3 and A5 reach publication-grade Layer~3 unconditional rigor when paired with the present G2 hardening, parallel to how Patches~0551 + 0552 reached unconditional rigor when paired with G1 hardening at Patch~0571.
+\end{corollary}
+
+\begin{proof}[Proof sketch]
+A3 (G2.1) follows by computing $\hat{w}_j \cdot \nhat = (w_j - \vhost) \cdot \vhost / |w_j - \vhost| = (1/2 - 1)/1 = -1/2$ via Theorem~\ref{thm:G2_hardened} + Corollary~\ref{cor:second_shell_chord_length} + (H1) + (H2); the uniformity follows from Lemma~\ref{lem:dodecahedral_transitivity}. A5 (G2.4) follows from the geometric fact that the 30 second-shell-to-second-shell edges are tangent to the dodecahedron's circumscribed 2-sphere (the orbit of $S_2(\vhost)$ under $\Icoh$) in the 3-plane orthogonal to $\nhat$; hence the edge unit vectors lie in the 3-plane $\nhat^\perp$, giving $\hat{e}_{j_1 j_2} \cdot \nhat = 0$. The detailed proofs of A3 and A5 are out of scope of the present Patch~0587 and are deferred to subsequent OPEN-FP-F1-1 Route~C sequence~2 closure Patches per the single-artifact-per-Patch discipline; the present corollary registers only the unlocking. $\square$
+\end{proof}
+
+\subsection{Cross-sector consistency with Capotauro v2.0 spatial sector}\label{sec:capotauro_parallel}
+
+The G2 inner-product primitive $w_j \cdot \vhost = 1/2$ has a cross-sector parallel in Capotauro~v2.0's spatial-sector substrate-locality work: under vertex-aligned Reading~C with the same $\nhat = \vhost$ identification, Capotauro~v2.0~\S5--\S6 establishes related second-shell structural identities for the spatial-sector substrate-locality theorem. The shared underlying geometric content is the 600-cell shell decomposition~\eqref{eq:shell_decomposition}, which is sector-agnostic. The present hardening completes the publication-grade rigorisation of the inner-product content of the second shell for the temporal-sector (DI-bit current) trajectory of F.1, paralleling the Capotauro~v2.0 spatial-sector work; cross-sector verification of the second-shell content beyond the inner-product primitive itself is a candidate for a future Patch in either trajectory.
+
+\section{Scope, framework-locality, and explicit exclusions}\label{sec:scope_and_exclusions}
+
+Theorem~\ref{thm:G2_hardened} is scope-bounded by hypotheses (H1)--(H3). This section enumerates five classes of generalisations that lie explicitly outside the theorem's scope.
+
+\begin{enumerate}[label=\textbf{(E\arabic*)}]
+\item \textbf{Higher-shell inner-product primitives are NOT addressed.} Theorem~\ref{thm:G2_hardened} treats only the second graph-distance shell $S_2(\vhost)$ at inner product $1/2$. Analogues for the third shell $S_3(\vhost)$ (12 vertices at inner product $1/(2\phi) = (\phi-1)/2 \approx 0.309$, forming a regular icosahedron at angular distance $2\pi/5$), the equatorial shell $S_4(\vhost)$ (30 vertices at inner product $0$, forming an icosidodecahedron at angular distance $\pi/2$), and deeper shells are not in scope. Higher-order extensions of the F.1 substrate-locality theorem beyond $\mathcal{O}(\delta^2)$ would require analogous higher-shell inner-product primitives, but the present hardening does not anticipate them.
+
+\item \textbf{Non-vertex-aligned Reading C variants are NOT covered.} The theorem requires $\nhat = \vhost$ (hypothesis (H1)). Alternative Reading~C placements --- edge-aligned, face-aligned, or cell-aligned --- have different residual symmetries (e.g., $D_5$ at an edge midpoint, $D_3$ at a face centroid) and would yield different second-shell structures. Under non-vertex-aligned Reading~C, the host-vertex framework of Theorem~\ref{thm:G2_hardened} does not apply directly; a separate shell-decomposition analysis would be required, with second-shell content of distinct geometric character. Registered as OPEN-FP-F1-5 (non-vertex-aligned Reading~C variants) in F.1 v1.0~\S9.
+
+\item \textbf{Layer 4 derivation of the 600-cell substrate from CPP axioms $A1$--$A11$.} The 600-cell polytope itself is taken as given in the framework input: its 120 vertices on $S^3$, its edge graph $\Gsixcell$, its 9-shell decomposition~\eqref{eq:shell_decomposition} + \eqref{eq:shell_inner_products}, and its $\Hfour$ symmetry group are inherited from polytope theory \cite{coxeter1973}. A Layer~4 derivation of the 600-cell substrate from CPP primitive axioms $A1$--$A11$ together with first-principles emergence considerations is the long-term programme target registered at OPEN-FP-F1-2 and shared across all six F.1 hardened-theorem artifacts (Patches~0550--0552 + 0571 + 0585 + the present Patch~0587). The shared scope-line with the other F.1 hardened-theorem artifacts is consistent on this point.
+
+\item \textbf{The angular-distance-shell vs graph-distance-shell coincidence is taken as polytope-theoretic input.} The proof of Lemma~\ref{lem:second_shell_angle} Step~1 relies on the standard fact that the angular-distance shells~\eqref{eq:shell_decomposition} of the 600-cell at unit-vertex normalisation coincide with the graph-distance shells in $\Gsixcell$ (a consequence of edge-transitivity of $\Hfour$ and shell-monotonicity of inner product under unit chord steps, derivable from the explicit Cayley--Menger or coordinate description of the 600-cell). The coincidence is well-established \cite{coxeter1973} and is imported rather than separately verified; a self-contained derivation from the $\Hfour$ root-system description would be possible but lies outside the present scope.
+
+\item \textbf{Identity G2 in the present form does NOT compute the $\mathcal{O}(\delta^2)$ coefficient $\alpha_2$.} G2 is the second-shell inner-product primitive (the analog of G1 at deeper shell), not the coefficient computation itself. The closed-form value of $\alpha_2$ in the substrate-locality umbrella expression $\vec{j}_2(\vhost) = \alpha_2 \nhat$ (per Patch~0585 Theorem~1.1's all-orders parallel-to-$\nhat$ result) requires the further A3 (G2.1) + A4 (G2.3) + A5 (G2.4) + A6 (path-class weight enumeration) artifacts of Route~C sequence~2 plus an umbrella-assembly step (A7) parallel to F.1 v1.0~\S7's first-order coefficient computation. The present hardening establishes only the inner-product primitive at the second shell, unlocking A3 + A5 in parallel as the immediate downstream next steps.
+\end{enumerate}
+
+\section{Cross-references and consequences}\label{sec:cross_references}
+
+\subsection{Use in Route C sequence 2 artifacts A3 + A5}\label{sec:use_in_a3_a5_extended}
+
+Patches~A3 (\texttt{host\_second\_shell\_uniform\_projection.tex}) and A5 (\texttt{second\_shell\_perpendicularity.tex}) of the Route~C sequence~2 trajectory will each import G2 at publication-grade Layer~3 unconditional rigor via Theorem~\ref{thm:G2_hardened} + Corollary~\ref{cor:second_shell_chord_length}. Per the critical-path order recorded in \texttt{sketches/F1\_o\_delta\_squared\_extension\_scoping.md}~\S5.1, A3 and A5 are conditional on A2 (the present Patch~0587) and may proceed in parallel; A4 (\texttt{first\_shell\_second\_shell\_edge\_orbits.tex}; G2.3) is conditional on both A2 + A3. The unlocking is registered formally at Corollary~\ref{cor:a3_a5_unlock}.
+
+\subsection{Position relative to OPEN-FP-F1-1 closure trajectory}\label{sec:open_fp_f1_1_position}
+
+OPEN-FP-F1-1 (the F.1 substrate-locality theorem extension to $\mathcal{O}(\delta^2)$) decomposes into a structural sub-question (parallel-to-$\nhat$ of $\vec{j}_2(\vhost)$) and a coefficient sub-question (closed-form value of $\alpha_2$). The structural sub-question was closed at Patch~0585 via the symmetry-only Route~C sequence~1 artifact A1. The coefficient sub-question is the target of Route~C sequence~2, comprising artifacts A2--A6 + the umbrella-assembly A7. The present Patch~0587 is the first sequence-2 artifact (A2 = G2 hardening); upon its landing, sequence-2 has 4 artifacts remaining (A3 + A4 + A5 + A6 + the A7 umbrella assembly). Estimated sequence-2 completion budget is 4--8 sessions per the original scoping estimate, of which 1 session is now expended at Patch~0587.
+
+\section{Conclusion --- the F.1 Layer 3 hardening sequence advances to six artifacts}\label{sec:conclusion}
+
+Theorem~\ref{thm:G2_hardened}, with hypotheses (H1)--(H3) and supporting Lemmas~\ref{lem:dodecahedral_transitivity} (dodecahedral transitivity of $\Icoh$ on the second shell) and~\ref{lem:second_shell_angle} (second-shell central angle and inner product via coordinate verification on a canonical representative), gives the publication-grade hardening of the second-shell inner-product primitive G2 at the analog of Patch~0571's first-shell G1 hardening. The scope qualifiers of vertex-aligned Reading~C, 600-cell unit-vertex normalisation, and icosahedral residual symmetry are built into hypotheses (H1)--(H3) respectively. The five exclusion classes (E1)--(E5) make explicit what is NOT covered, with the higher-shell extensions (E1) and the coefficient-computation A3--A7 sequence (E5) as the load-bearing remaining open items.
+
+\paragraph{Position in the F.1 hardened-theorem sequence (now six artifacts).}
+With Patch~0587, the F.1 Dynamical Substrate Law Layer~3 hardened-theorem sequence has six artifacts:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Patch~0550} hardened the perturbation-theory propagation rule + shell-locality (\texttt{perturbation\_locality\_propagation.tex}).
+\item \textbf{Patch~0551} hardened first-shell-to-first-shell edge-direction perpendicularity (\texttt{first\_shell\_perpendicularity.tex}).
+\item \textbf{Patch~0552} hardened host-to-first-shell uniform projection (\texttt{host\_to\_first\_shell\_projection.tex}).
+\item \textbf{Patch~0571} hardened first-shell inner-product primitive G1 (\texttt{first\_shell\_inner\_product\_primitive.tex}).
+\item \textbf{Patch~0585} hardened the $\mathcal{O}(\delta^k)$ all-orders parallel-to-$\nhat$ structural theorem (\texttt{second\_order\_parallel\_to\_n\_structural.tex}); closes the structural sub-question of OPEN-FP-F1-1.
+\item \textbf{Patch~0587 (this paper)} hardens the second-shell inner-product primitive G2 (\texttt{second\_shell\_inner\_product\_primitive.tex}); opens Route~C sequence~2 of OPEN-FP-F1-1 and unlocks A3 + A5 in parallel.
+\end{itemize}
+
+With six artifacts in hand, the F.1 substrate-locality programme has both the structural component of the $\mathcal{O}(\delta^2)$ extension (Patch~0585) and the second-shell inner-product primitive (Patch~0587) at publication-grade Layer~3 unconditional rigor. The two highest-priority remaining OPEN-FP-F1-1 trajectory targets are: \textbf{A3 + A5 in parallel} (host-to-second-shell uniform projection G2.1 + second-shell perpendicularity G2.4; both conditional on the present G2 hardening at publication-grade Layer~3 unconditional rigor); and the subsequent \textbf{A4 + A6 + A7} sequence completing the coefficient sub-question closure of OPEN-FP-F1-1.
+
+\paragraph{Anti-erasure note.}
+The present hardening preserves: (a)~the explicit identification of the second-shell central angle as $\pi/3$ via direct coordinate verification on a canonical representative plus the polytope-theoretic shell-decomposition characterisation, rather than the implicit appeal to "standard 600-cell geometry" that would silence the verification step; (b)~the open recognition at Remark~\ref{rem:scoping_conjecture} that the scoping-document candidate chord length $\phi^{-1}\sqrt{3-\phi}$ does not match the correct value $1$; (c)~the inheritance of (H3) from Patch~0571 Theorem~1.1 + Lemma~2.1 rather than silent assumption of the $\Hfour \to \Hthree$ symmetry breaking; (d)~the explicit registration of the $\mathcal{O}(\delta^2)$ coefficient sub-question at E5 as the load-bearing remaining open item of the Route~C sequence~2 trajectory.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{coxeter1973}
+H.~S.~M.~Coxeter,
+\textit{Regular Polytopes},
+3rd ed., Dover Publications, New York, 1973.
+
+\bibitem{humphreys1990}
+J.~E.~Humphreys,
+\textit{Reflection Groups and Coxeter Groups},
+Cambridge Studies in Advanced Mathematics 29, Cambridge University Press, 1990.
+
+\bibitem{abshier_g1_hardening}
+T.~L.~Abshier and Claude Opus 4.7,
+``First-Shell Inner-Product Primitive (G1) in the 600-Cell at Vertex-Aligned Reading~C,''
+CPP F.1 hardened-theorem artifact, Patch~0571, 25~May~2026, \texttt{hardened\_theorems/first\_shell\_inner\_product\_primitive.tex}.
+
+\bibitem{abshier_structural_theorem}
+T.~L.~Abshier and Claude Opus 4.7,
+``Second-Order Parallel-to-$\hat{n}$ Structural Theorem for the Net DI-Bit Current at the Host Vertex,''
+CPP F.1 hardened-theorem artifact, Patch~0585, 26~May~2026, \texttt{hardened\_theorems/second\_order\_parallel\_to\_n\_structural.tex}.
+
+\bibitem{abshier_f1_dynamical_substrate_law}
+T.~L.~Abshier,
+``The Dynamical Substrate Law: Substrate-Locality of DI-Bit Currents at Vertex-Aligned Reading~C in the 600-Cell,''
+CPP Flagship Paper Series (F-line), Version 1.0, 24~May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\bibitem{abshier_capotauro_v2}
+T.~L.~Abshier,
+``The Capotauro Mechanism v2.0: Chirality on the K3-Doublet from Substrate-Vacuum Broken-Symmetry Physics,''
+CPP Flagship Paper Series, May~2026, OSF DOI \texttt{10.17605/OSF.IO/JXE8D}.
+
+\end{thebibliography}
+
+\end{document}
