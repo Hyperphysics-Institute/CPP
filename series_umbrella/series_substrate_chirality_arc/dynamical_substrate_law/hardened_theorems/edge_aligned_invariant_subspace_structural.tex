@@ -1,0 +1,353 @@
+% ============================================================
+% Edge-Aligned Reading-C Invariant-Subspace Structural Theorem
+%   for the Net DI-Bit Current at the Host Vertex
+%   under (H1_E) Edge-Aligned Reading C in the 600-Cell
+% Publication-Grade Hardening (Symmetry-Only Structural Closure)
+%   of the OPEN-FP-F1-5 Trajectory's Sequence-1A Sub-Question
+% Conscious Point Physics Flagship Paper Series
+%   (F.1 Dynamical Substrate Law sub-question hardened-theorem artifact;
+%    TWELFTH artifact in the F.1 Layer 3 hardened-theorem sequence — first
+%    Sequence-1A artifact for the edge-aligned Reading-C variant trajectory;
+%    closes the structural sub-question of OPEN-FP-F1-5 Sequence-1A at
+%    publication-grade Layer 3 unconditional. The result is a 2-dimensional
+%    invariant-subspace conclusion -- substantively distinct from the
+%    1-dimensional parallel-to-n-hat result obtained for vertex-aligned
+%    Reading C in THEO-DSL-4 / Patch 0585.)
+%
+% Patch 0596 (Session 146, 27 May 2026) -- first OPEN-FP-F1-5 trajectory
+%   closure Patch under the session-open decision-gate bundle DG-F15-1
+%   through DG-F15-5 accepted as-is by Thomas at Session 146; accepts the
+%   Session 145 close handover's post-v1.0 priority queue placement of
+%   OPEN-FP-F1-5 as the substantive continuation of the F.1 substrate-
+%   locality programme after the OPEN-FP-F1-1 Route C closure (Patch 0592).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\nhatedge}{\hat{n}_{\text{edge}}}
+\newcommand{\nhatrho}{\hat{n}_{\rho}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\uone}{u_1}
+\newcommand{\Gsixcell}{\Gamma_{600}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Dfive}{D_5}
+\newcommand{\Cfivev}{C_{5v}}
+\newcommand{\Aone}{A_1}
+\newcommand{\Eone}{E_1}
+\newcommand{\Oof}[1]{\mathcal{O}(#1)}
+\newcommand{\jDI}{\vec{j}_{DI}^{\,\text{net}}}
+\newcommand{\Ek}{E_k}
+
+\title{Edge-Aligned Reading-C Invariant-Subspace Structural Theorem \\
+for the Net DI-Bit Current at the Host Vertex \\
+in the 600-Cell \\
+\large Symmetry-Only Publication-Grade Layer~3 Closure \\
+of the Sequence-1A Structural Sub-Question of OPEN-FP-F1-5}
+
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7 \\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+
+\date{27 May 2026 (Session 146, CPP Patch 0596)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a publication-grade Layer~3 \emph{symmetry-only} closure of the structural sub-question of OPEN-FP-F1-5 Sequence~1A: under (H1$_E$)~edge-aligned Reading~C with $\nhatedge = (u_1 - \vhost)/|u_1 - \vhost|$ a unit vector pointing from the host vertex $\vhost$ to a chosen adjacent first-shell vertex $\uone$, (H2)~600-cell unit-vertex normalisation, (H3$_E$)~the residual symmetry $\Cfivev \cong \Dfive$ at $\vhost$ stabilising the $\vhost$--$\uone$ line, (H4)~the F.1 v1.0 Theorem~6.1 perturbation-locality propagation rule, and (H5$_E$)~the Mechanism~A perturbation $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhatedge)$ on each oriented edge of the 600-cell edge graph at first order in $\delta$ with path-integral extension at $\Oof{\delta^k}$ at sketch level per DG-F15-4 default~(A), the net DI-bit current at the host vertex at every non-zero order $k \geq 1$ in $\delta$ lies in the \emph{two-dimensional} $\Dfive$-invariant subspace of $\Reals^4$ at $\vhost$:
+\begin{equation*}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \in \operatorname{span}\bigl\{\nhatrho,\,\nhatedge\bigr\} \qquad \text{for all } k \geq 1,
+\end{equation*}
+where $\nhatrho := \vhost / |\vhost|$ is the radial direction at $\vhost$ from the polytope centre and $\nhatedge$ is the edge direction. This is a \emph{substantively distinct} structural conclusion from THEO-DSL-4 (vertex-aligned Reading~C; Patch~0585): under $\Icoh$ at vertex-aligned the invariant subspace is one-dimensional $\Reals\nhatrho$ (with $\nhatedge \equiv \nhatrho$ in that case); under the smaller $\Dfive \subset \Icoh$ at edge-aligned the invariant subspace is two-dimensional. The two-dimensional finding admits a substantive radial component of $\jDI(\vhost)|_{\Oof{\delta^k}}$ on symmetry grounds alone, leaving the question of whether such a radial component is independently forced to vanish (e.g.\ by Mechanism~A framework-axiom-level considerations or by coefficient-level path-class enumeration under (H5$_E$)) as an open question for Sequence-2A. The proof factors into Lemma~\ref{lem:d5_invariance} ($\Dfive$-invariance of $\jDI(\vhost)$ order-by-order via $\Dfive$-equivariance of Mechanism~A's rate function under stabilisation of $\nhatedge$) and Lemma~\ref{lem:d5_invariant_subspace} (the $\Dfive$-invariant subspace of $\Reals^4$ at $\vhost$ is the two-dimensional plane $\operatorname{span}\{\nhatrho, \nhatedge\}$, via decomposition of the standard 4D representation of $\Dfive$ as $\Aone \oplus \Aone \oplus \Eone$). This artifact is the \textbf{twelfth} of the F.1 Layer~3 hardened-theorem sequence (after Patches~0550 + 0551 + 0552 + 0571 + 0585 + 0587 + 0588 + 0589 + 0590 + 0591 + 0592), and the \textbf{first} under the OPEN-FP-F1-5 Sequence-1A (edge-aligned symmetry-only) trajectory. Per DG-F15-5 default~(A) of the Session~146 open decision-gate bundle, the result is registered as the candidate \textbf{THEO-DSL-6} entry. An \textbf{anti-erasure remark} (\S\ref{sec:antierasure}) registers a stabiliser-identification discrepancy with \texttt{frontier\_sectors/FP.md} line~230 (which states ``residual $D_3$ symmetry at edge midpoint'') -- the correct stabiliser is $\Dfive$ of order~10, not $D_3$ of order~6; the FP.md entry will be corrected at a separate registry-propagation Patch.
+\end{abstract}
+
+\section{Introduction and statement of the main result}\label{sec:introduction}
+
+\subsection{Background}\label{subsec:background}
+
+The F.1 Dynamical Substrate Law paper (v1.0 SHIPPED at Patch~0570, 24 May 2026) establishes a substrate-locality umbrella theorem (Theorem~7.1) at $\Oof{\delta^1}$ under \emph{vertex-aligned} Reading~C, in which the substrate-direction primitive $\nhat$ is chosen as the radial direction $\nhatrho := \vhost/|\vhost|$ at a 600-cell host vertex. The closure trajectory of the $\Oof{\delta^2}$ extension OPEN-FP-F1-1 reached eleven hardened-theorem artifacts at Patches~0550 + 0551 + 0552 + 0571 + 0585 + 0587 + 0588 + 0589 + 0590 + 0591 + 0592 across Sessions~140--145, including the structural sub-question closure via THEO-DSL-4 (Patch~0585; $\jDI(\vhost)|_{\Oof{\delta^k}} \parallel \nhatrho$ at all orders $k \geq 1$) and the coefficient sub-question closure via THEO-DSL-5 (candidate; Patches~0591~+~0592; closed-form $\alpha_2 = -9/\phi^2$ at sketch-document Layer~3 under (H5)). The Route C trajectory closed COMPLETE at Patch~0592, leaving OPEN-FP-F1-1 \emph{CLOSED at sketch-document Layer~3 under (H1)--(H5)}.
+
+OPEN-FP-F1-5 is a related but distinct Open Problem, registered at F.1 v1.0 SHIP as one of five in-body \S{}9 entries: the substrate-locality umbrella theorem's behaviour under \emph{non-vertex-aligned} Reading-C variants. Capotauro v2.0 \S{}2.3 and Patch~0419 Finding C-W37 identify three Reading-C variants distinguished by the geometric structure $\nhat$ aligns with: (vertex-aligned) $\nhat$ radial at a 600-cell vertex; (edge-aligned) $\nhat$ along a 600-cell edge direction; (face-aligned) $\nhat$ perpendicular to a 600-cell triangular face. The vertex-aligned variant was selected at Capotauro's Q1$'$+Q1$'$.A resolution by three converging arguments; OPEN-FP-F1-5 asks what the substrate-locality structure looks like under the edge-aligned and face-aligned alternatives.
+
+The present artifact is the first substantive Patch of the OPEN-FP-F1-5 trajectory, executing Sequence~1A: the symmetry-only structural theorem for the edge-aligned variant. Sequence~1B (face-aligned analog) is the next planned artifact; Sequences~2A and 2B (closed-form coefficient enumerations under (H5$_E$) and (H5$_F$)) follow.
+
+\subsection{Setup and stabiliser identification}\label{subsec:setup}
+
+\textbf{Host and substrate-direction primitive.} The host is $\vhost$, a 600-cell vertex on the unit 3-sphere in $\Reals^4$ centred at the polytope centre. Choose a fixed adjacent first-shell vertex $\uone$ (one of the 12 vertices at distance $1/\phi$ from $\vhost$ in the unit-vertex normalisation). The edge-aligned substrate-direction primitive is
+\begin{equation}\label{eq:nedge}
+\nhatedge \;:=\; \frac{\uone - \vhost}{|\uone - \vhost|}.
+\end{equation}
+This is a unit vector in $\Reals^4$ tangent to $S^3$ at $\vhost$ (since $\vhost$ and $\uone$ both have magnitude~1, the difference is tangent at the midpoint, hence approximately tangent at $\vhost$; we treat $\nhatedge$ as the tangent-space direction associated with the edge in the standard 600-cell embedding). The radial direction at $\vhost$ is
+\begin{equation}\label{eq:nrho}
+\nhatrho \;:=\; \frac{\vhost}{|\vhost|}.
+\end{equation}
+Under unit-vertex normalisation $|\vhost| = 1$, we have $\nhatrho = \vhost$ as a 4-vector. In the vertex-aligned case (THEO-DSL-4), $\nhat \equiv \nhatrho$; in the edge-aligned case (this artifact), $\nhat \equiv \nhatedge$ and $\nhatedge \neq \nhatrho$ since $\uone \neq -\vhost$ (the 12 first-shell vertices of $\vhost$ are not antipodal to $\vhost$ but at distance $1/\phi < 2$).
+
+\textbf{Stabiliser identification.} The stabiliser in $\Hfour$ of both $\vhost$ as a point and $\nhatedge$ as an oriented direction is computed as follows. The stabiliser of $\vhost$ alone is the icosahedral group $\Icoh$ of order~120. $\Icoh$ acts on the 12 first-shell vertices of $\vhost$ as the icosahedral permutation representation; orbit-stabiliser gives stabiliser of one first-shell vertex $\uone$ within $\Icoh$ of order $120/12 = 10$. This order-10 subgroup is the symmetry group of an icosahedral vertex within $\Icoh$, namely $\Cfivev$ in Schoenflies notation: the 5-fold rotation around the $\vhost$--$\uone$ axis plus 5 vertical reflection planes containing the axis. Abstractly $\Cfivev \cong \Dfive$ (the dihedral group of order~10). We will use $\Dfive$ throughout.
+
+\textbf{Decomposition of $\Reals^4$ at $\vhost$ under $\Dfive$.} The 4-dimensional ambient space at $\vhost$ decomposes as
+\begin{equation}\label{eq:decomp}
+\Reals^4 \;\big|_{\vhost} \;=\; \Reals\nhatrho \;\oplus\; \Reals\nhatedge \;\oplus\; P_2,
+\end{equation}
+where $\Reals\nhatrho$ is the 1-dimensional radial line (preserved by all of $\Icoh$ hence by $\Dfive \subset \Icoh$), $\Reals\nhatedge$ is the 1-dimensional edge-direction line (preserved by all of $\Dfive$ by construction), and $P_2$ is the 2-dimensional plane orthogonal to both. The $\Dfive$-action on $\Reals^4|_{\vhost}$ has character $\chi(\Aone) + \chi(\Aone) + \chi(\Eone)$ in standard $\Dfive$ representation-theoretic notation: $\nhatrho$ and $\nhatedge$ each carry the trivial 1-dimensional representation $\Aone$, and $P_2$ carries the 2-dimensional irreducible representation $\Eone$ (or $E_2$, depending on the convention; both 2D irreps of $\Dfive$ are irreducible and faithful on the rotation subgroup).
+
+This decomposition is verified by:
+\begin{itemize}[leftmargin=*]
+    \item \emph{$\nhatrho$ fixed by $\Dfive$}: $\Dfive \subset \Icoh = \text{stab}(\vhost) \subset \Hfour$, so $\Dfive$ fixes $\vhost$ as a point, hence fixes the direction $\vhost/|\vhost| = \nhatrho$;
+    \item \emph{$\nhatedge$ fixed by $\Dfive$}: $\Dfive = \text{stab}_\Icoh(\uone)$, so $\Dfive$ fixes $\uone$ as a point, hence fixes $\uone - \vhost$ and hence $\nhatedge$;
+    \item \emph{$P_2$ irreducible under $\Dfive$}: $\Dfive$'s rotation subgroup $C_5$ acts on $P_2$ as rotation by $2\pi/5$, which has no real eigenvalue equal to $1$, so $P_2$ contains no $C_5$-fixed vectors except the origin; therefore $P_2$ contains no $\Dfive$-trivial summands.
+\end{itemize}
+
+\textbf{Conclusion of setup.} The space of $\Dfive$-invariant vectors in $\Reals^4$ at $\vhost$ is the 2-dimensional plane
+\begin{equation}\label{eq:invariant_subspace}
+\Sigma_{\Dfive} \;:=\; \operatorname{span}\bigl\{\nhatrho,\,\nhatedge\bigr\}.
+\end{equation}
+This is the central structural fact; the rest of the proof leverages it to constrain $\jDI(\vhost)|_{\Oof{\delta^k}}$ to lie in $\Sigma_{\Dfive}$.
+
+\subsection{Main theorem}\label{subsec:main_theorem}
+
+\begin{theorem}[Edge-Aligned Invariant-Subspace Structural Theorem]\label{thm:main}
+Under hypotheses \emph{(H1$_E$)--(H5$_E$)} as stated in \S\ref{sec:hypotheses}, the net DI-bit current at the host vertex $\vhost$ at every non-zero order $k \geq 1$ in the Mechanism A perturbation parameter $\delta$ lies in the 2-dimensional $\Dfive$-invariant subspace $\Sigma_{\Dfive} = \operatorname{span}\{\nhatrho, \nhatedge\}$ of $\Reals^4$ at $\vhost$:
+\begin{equation}\label{eq:main_result}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \;\in\; \Sigma_{\Dfive} \;=\; \operatorname{span}\bigl\{\nhatrho,\,\nhatedge\bigr\} \qquad \text{for all } k \geq 1.
+\end{equation}
+Equivalently, there exist real coefficients $\alpha_k^{(\rho)}$ and $\alpha_k^{(\text{edge})}$ such that
+\begin{equation}\label{eq:two_coeffs}
+\jDI(\vhost)\big|_{\Oof{\delta^k}} \;=\; \alpha_k^{(\rho)}\,\nhatrho \;+\; \alpha_k^{(\text{edge})}\,\nhatedge.
+\end{equation}
+\end{theorem}
+
+The 2-dimensional invariant subspace is a \emph{substantively distinct} structural conclusion from THEO-DSL-4's 1-dimensional vertex-aligned result. Under vertex-aligned Reading~C the radial and Reading-C directions coincide ($\nhatrho = \nhatedge = \nhat$) and the $\Icoh$-invariant subspace collapses to 1-dimensional $\Reals\nhat$. Under edge-aligned Reading~C the two directions are distinct and the $\Dfive$-invariant subspace is genuinely 2-dimensional. The substantive open question carried by Theorem~\ref{thm:main} is whether the radial coefficient $\alpha_k^{(\rho)}$ is independently forced to vanish at $\Oof{\delta^k}$ by Mechanism~A's framework-axiom-level structure (a vanishing-coefficient candidate constraint not deducible from symmetry alone). This is registered as exclusion class~E5 in \S\ref{sec:exclusion} and is the natural target of a follow-on Sequence-2A analysis under (H5$_E$).
+
+\section{Hypotheses}\label{sec:hypotheses}
+
+The hypotheses for Theorem~\ref{thm:main} are the edge-aligned variant of (H1)--(H5) of THEO-DSL-4 / Patch~0585:
+
+\begin{description}
+\item[(H1$_E$) Edge-aligned Reading C:] The substrate-direction primitive $\nhat$ is identified with $\nhatedge$ of \eqref{eq:nedge}, the unit vector from $\vhost$ to the chosen adjacent first-shell vertex $\uone$.
+\item[(H2) 600-cell unit-vertex normalisation:] $\vhost$ lies on the unit 3-sphere $S^3 \subset \Reals^4$; $|\vhost| = 1$. The 12 first-shell vertices are at distance $1/\phi$ from $\vhost$ in the standard 600-cell short-edge normalisation; $\uone$ is one of them.
+\item[(H3$_E$) Edge-aligned residual symmetry:] The residual symmetry group at $\vhost$ for the edge-aligned reading is $\Dfive \cong \Cfivev$, the stabiliser of the $\vhost$--$\uone$ line within $\Icoh$. This is identified as $\text{stab}_{\Icoh}(\uone)$ at \S\ref{subsec:setup}.
+\item[(H4) F.1 v1.0 Theorem~6.1 perturbation-locality:] At each order $\Oof{\delta^k}$ the substrate current $\jDI(\vhost)|_{\Oof{\delta^k}}$ depends only on edges of the 600-cell edge graph in the graph-distance-$k$ neighbourhood $\Ek(\vhost)$. This carries over from THEO-DSL-1 / Patch~0550 unchanged (the perturbation-locality argument depends only on Mechanism~A's first-order edge structure, not on the choice of Reading-C variant).
+\item[(H5$_E$) Mechanism A perturbation at edge-aligned $\nhat$:] Each oriented edge $\hat{e}$ of the 600-cell edge graph carries the Mechanism~A rate
+\begin{equation}\label{eq:H5E}
+r(\hat{e}) \;=\; r_0\bigl(1 + \delta\,\hat{e}\cdot\nhatedge\bigr)
+\end{equation}
+at first order in $\delta$, with $\Oof{\delta^k}$ extension construed via the standard path-integral perturbation-theory machinery per DG-F15-4 default~(A) at sketch level. (As with (H5) of THEO-DSL-4 / Patch~0585, this is the load-bearing scope qualifier for any closed-form coefficient computation at Sequence-2A; the symmetry-only Sequence-1A result of Theorem~\ref{thm:main} is robust under any path-integral extension that preserves $\Dfive$-equivariance.)
+\end{description}
+
+\textbf{Remark on (H4) graph-extension.} The perturbation-locality propagation rule of THEO-DSL-1 (Patch~0550) was proved on the 600-cell vertex graph $\Gsixcell$ with $\vhost$ as a vertex; the proof depends only on the framework-axiom-level structure of MA.1 + MA.2 and on the edge-graph metric, not on the choice of $\nhat$. The edge-aligned variant retains $\vhost$ as a 600-cell vertex (\emph{not} a moved-to-edge-midpoint variant) and uses the same vertex graph $\Gsixcell$; only the direction of $\nhat$ within $\Reals^4$ at $\vhost$ is varied. The (H4) graph-extension question (`how does the graph change under a moved-host variant?') does not arise for the vertex-host edge-aligned setup of (H1$_E$) and is deferred as a future Sequence-1A$'$ variant if of independent interest.
+
+\section{Lemma~1: $\Dfive$-equivariance of the substrate current at $\vhost$}\label{sec:lemma1}
+
+\begin{lemma}[Order-by-order $\Dfive$-invariance]\label{lem:d5_invariance}
+Under (H1$_E$)--(H5$_E$), for every $g \in \Dfive$ and every $k \geq 0$,
+\begin{equation}\label{eq:d5_inv}
+g \cdot \jDI(\vhost)\big|_{\Oof{\delta^k}} \;=\; \jDI(\vhost)\big|_{\Oof{\delta^k}}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The argument is the edge-aligned analogue of THEO-DSL-4 Lemma~1 (Patch~0585), with $\Dfive$ replacing $\Icoh$. We establish $\Dfive$-equivariance in three steps:
+
+\textbf{Step 1 ($\Dfive$-equivariance of the rate function).} Mechanism~A's rate function on each oriented edge $\hat{e}$ is $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhatedge)$ per (H5$_E$) / \eqref{eq:H5E}. For any $g \in \Dfive$, $g$ acts on edges by $g\hat{e}$ (the $O(4)$-rotated/reflected edge) and stabilises $\nhatedge$ ($g^{-1}\nhatedge = \nhatedge$ by definition of $\Dfive = \text{stab}_{\Icoh}(\uone)$ and \eqref{eq:nedge}). Therefore $g\hat{e}\cdot\nhatedge = g\hat{e} \cdot g\nhatedge = \hat{e}\cdot\nhatedge$ (using $O(4)$-invariance of the inner product), so
+\begin{equation}\label{eq:rate_eq}
+r(g\hat{e}) \;=\; r_0\bigl(1 + \delta\,g\hat{e}\cdot\nhatedge\bigr) \;=\; r_0\bigl(1 + \delta\,\hat{e}\cdot\nhatedge\bigr) \;=\; r(\hat{e}).
+\end{equation}
+
+\textbf{Step 2 ($\Dfive$-permutation of the path set).} Let $\mathcal{P}_k(\vhost)$ denote the set of $k$-edge directed paths in the 600-cell edge graph $\Gsixcell$ starting at $\vhost$ (with (H4)'s shell-locality ensuring $\mathcal{P}_k(\vhost) \subset \Ek(\vhost)$). For $g \in \Dfive \subset \Icoh = \text{stab}_{\Hfour}(\vhost)$, $g$ acts on $\Gsixcell$ as a graph automorphism fixing $\vhost$. By (H4)'s shell-locality, $g \cdot \Ek(\vhost) = \Ek(\vhost)$ as edge sets, so $g$ permutes $\mathcal{P}_k(\vhost)$ as a finite set:
+\begin{equation}\label{eq:path_perm}
+g: \mathcal{P}_k(\vhost) \to \mathcal{P}_k(\vhost), \qquad P \mapsto gP.
+\end{equation}
+
+\textbf{Step 3 ($O(4)$-equivariance of edge-direction vectors).} For each path $P \in \mathcal{P}_k(\vhost)$, let $\vec{d}(P) \in \Reals^4$ denote the directed edge-displacement contribution of $P$ to the substrate current at $\vhost$. By the orthogonal action of $\Dfive \subset O(4)$ on $\Reals^4$ at $\vhost$,
+\begin{equation}\label{eq:edge_equiv}
+\vec{d}(gP) \;=\; g \cdot \vec{d}(P).
+\end{equation}
+
+\textbf{Combining the three steps.} The substrate current at $\Oof{\delta^k}$ is a sum over paths $P \in \mathcal{P}_k(\vhost)$ of products of rate functions times displacement vectors. Re-indexing the sum by the $\Dfive$-action $P \mapsto gP$ (which is a bijection of $\mathcal{P}_k$ by Step~2),
+\begin{align}
+g \cdot \jDI(\vhost)\big|_{\Oof{\delta^k}} \;&=\; g \cdot \sum_{P \in \mathcal{P}_k(\vhost)} \rho(P) \, \vec{d}(P) \notag \\
+&=\; \sum_{P \in \mathcal{P}_k(\vhost)} \rho(P) \, g\vec{d}(P) \notag \\
+&=\; \sum_{P \in \mathcal{P}_k(\vhost)} \rho(P) \, \vec{d}(gP) \quad \text{(by \eqref{eq:edge_equiv})} \notag \\
+&=\; \sum_{P' \in \mathcal{P}_k(\vhost)} \rho(g^{-1}P') \, \vec{d}(P') \quad \text{(re-indexing } P' = gP \text{)} \notag \\
+&=\; \sum_{P' \in \mathcal{P}_k(\vhost)} \rho(P') \, \vec{d}(P') \quad \text{(by \eqref{eq:rate_eq} applied to each edge of } P' \text{)} \notag \\
+&=\; \jDI(\vhost)\big|_{\Oof{\delta^k}},
+\end{align}
+where $\rho(P)$ denotes the product of rate functions along the path $P$ at $\Oof{\delta^k}$ (cumulating the $k$ factors of $\delta$). The final equality uses $\rho(g^{-1}P') = \rho(P')$ from Step~1's edge-by-edge invariance of the rate function. This is \eqref{eq:d5_inv}.
+\end{proof}
+
+\textbf{Remark on robustness.} The proof of Lemma~\ref{lem:d5_invariance} uses only: (i) $\Dfive$-equivariance of $r(\hat{e})$, which depends solely on the inner product $\hat{e}\cdot\nhatedge$ and the $\Dfive$-stabilisation of $\nhatedge$; (ii) $\Dfive$-permutation of the path set, which follows from (H4)'s shell-locality; (iii) $O(4)$-equivariance of edge displacements, which is the standard linear action of $\Dfive \subset O(4)$. The argument is \emph{robust} to the choice between DG-F15-4 sub-options (the path-integral extension at $\Oof{\delta^k}$): only $\Dfive$-equivariance of the path-integral construction is required, which holds for any $\Dfive$-equivariant extension of MA.1~+~MA.2 -- including the default (A) path-integral, the alternative (B) framework-axiom-MA.3, and the heavyweight (C) Layer~4 OPEN-FP-F1-2 derivation.
+
+\section{Lemma~2: The $\Dfive$-invariant subspace of $\Reals^4$ at $\vhost$}\label{sec:lemma2}
+
+\begin{lemma}[$\Dfive$-invariant subspace identification]\label{lem:d5_invariant_subspace}
+Under (H1$_E$)--(H3$_E$), the subspace of $\Dfive$-invariant vectors in $\Reals^4$ at $\vhost$,
+\begin{equation}\label{eq:Sigma_def}
+\Sigma_{\Dfive} \;:=\; \bigl\{\vec{w} \in \Reals^4 \,\big|\, g\cdot\vec{w} = \vec{w} \;\forall g \in \Dfive\bigr\},
+\end{equation}
+is the 2-dimensional plane
+\begin{equation}\label{eq:Sigma_value}
+\Sigma_{\Dfive} \;=\; \operatorname{span}\bigl\{\nhatrho,\,\nhatedge\bigr\}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+We give two parallel arguments establishing \eqref{eq:Sigma_value}: a direct decomposition (\textbf{Method~A}) and a Schur's-lemma alternative (\textbf{Method~B}).
+
+\textbf{Method~A (direct decomposition).} Per \S\ref{subsec:setup} \eqref{eq:decomp}, $\Reals^4|_{\vhost}$ decomposes as the direct sum of three $\Dfive$-invariant subspaces:
+\begin{itemize}[leftmargin=*]
+    \item $\Reals\nhatrho$ (1D): $\Dfive$ fixes $\nhatrho$ as in \S\ref{subsec:setup}, so $\Reals\nhatrho \subseteq \Sigma_{\Dfive}$.
+    \item $\Reals\nhatedge$ (1D): $\Dfive$ fixes $\nhatedge$ by construction, so $\Reals\nhatedge \subseteq \Sigma_{\Dfive}$.
+    \item $P_2$ (2D, orthogonal complement of $\operatorname{span}\{\nhatrho, \nhatedge\}$): the rotation subgroup $C_5 \subset \Dfive$ acts on $P_2$ by rotation through angle $2\pi/5$. A non-zero vector $\vec{w} \in P_2$ fixed by $C_5$ would satisfy $C_5 \vec{w} = \vec{w}$ with $C_5$ a non-trivial planar rotation, which has no real fixed nonzero vectors. Therefore $\Sigma_{\Dfive} \cap P_2 = \{\vec{0}\}$.
+\end{itemize}
+Combining, $\Sigma_{\Dfive} = \Reals\nhatrho \oplus \Reals\nhatedge = \operatorname{span}\{\nhatrho, \nhatedge\}$.
+
+\textbf{Method~B (Schur's lemma).} $\Dfive$ has four irreducible representations: $\Aone$ (trivial, 1D), $A_2$ (sign-of-reflection, 1D), $\Eone$ (2D), $E_2$ (2D); sum of squared dimensions $1+1+4+4 = 10 = |\Dfive|$. The 4-dimensional representation of $\Dfive$ on $\Reals^4|_{\vhost}$ (inherited as a subrepresentation of the standard 4D representation of $\Icoh \supset \Dfive$, restricted from the natural $\Hfour$-action on $\Reals^4$) decomposes as a direct sum of irreducible $\Dfive$-representations. Computing characters: $\Dfive$'s class structure consists of $\{e\}$ (order~1), $\{C_5, C_5^4\}$ (rotations by $\pm 72^\circ$; order~2), $\{C_5^2, C_5^3\}$ (rotations by $\pm 144^\circ$; order~2), and $\{5\sigma_v\}$ (five vertical reflections; order~5). The character of the standard 4D representation on each class can be computed:
+\begin{itemize}[leftmargin=*]
+    \item $\chi(e) = 4$ (trace of identity);
+    \item $\chi(C_5) = 1 + 1 + 2\cos(2\pi/5) = 2 + (-1+\sqrt{5})/2 = (3+\sqrt{5})/2 \approx 2.618$ (two trivial-rep eigenvalues $+1$ each from $\nhatrho$ and $\nhatedge$, plus the trace of the $2\pi/5$ rotation on $P_2$);
+    \item $\chi(C_5^2) = 1 + 1 + 2\cos(4\pi/5) = 2 + (-1-\sqrt{5})/2 = (3-\sqrt{5})/2 \approx 0.382$;
+    \item $\chi(\sigma_v) = 1 + 1 + 0 = 2$ (two trivial-rep eigenvalues, plus a $\pm 1$ pair on $P_2$ summing to $0$).
+\end{itemize}
+The multiplicity of the trivial representation $\Aone$ in $\Reals^4|_{\vhost}$ is computed via the standard character-projection formula $m_{\Aone} = |\Dfive|^{-1} \sum_{g \in \Dfive} \chi(g)$:
+\begin{align}\label{eq:trivial_mult}
+\sum_{g \in \Dfive} \chi(g) \;&=\; 1\cdot\chi(e) + 2\cdot\chi(C_5) + 2\cdot\chi(C_5^2) + 5\cdot\chi(\sigma_v) \notag \\
+&=\; 4 + 2 \cdot \tfrac{3+\sqrt{5}}{2} + 2 \cdot \tfrac{3-\sqrt{5}}{2} + 5 \cdot 2 \notag \\
+&=\; 4 + (3+\sqrt{5}) + (3-\sqrt{5}) + 10 \;=\; 20,
+\end{align}
+hence $m_{\Aone} = 20/10 = 2$, confirming that $\Aone$ appears with multiplicity~2 in $\Reals^4|_{\vhost}$. By construction (\S\ref{subsec:setup}) these are $\nhatrho$ and $\nhatedge$. The remaining 2D portion of $\Reals^4|_{\vhost}$ carries the irreducible 2D representation $\Eone$ (verified by computing $m_{\Eone}$ via the same character formula).
+
+Either method establishes \eqref{eq:Sigma_value}.
+\end{proof}
+
+\section{Main proof of Theorem~\ref{thm:main}}\label{sec:main_proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+By Lemma~\ref{lem:d5_invariance}, for every $k \geq 1$ and every $g \in \Dfive$, $g \cdot \jDI(\vhost)|_{\Oof{\delta^k}} = \jDI(\vhost)|_{\Oof{\delta^k}}$, i.e., $\jDI(\vhost)|_{\Oof{\delta^k}} \in \Sigma_{\Dfive}$. By Lemma~\ref{lem:d5_invariant_subspace}, $\Sigma_{\Dfive} = \operatorname{span}\{\nhatrho, \nhatedge\}$. Therefore $\jDI(\vhost)|_{\Oof{\delta^k}} \in \operatorname{span}\{\nhatrho, \nhatedge\}$, which is \eqref{eq:main_result}. The decomposition \eqref{eq:two_coeffs} follows from the 2-dimensionality of $\Sigma_{\Dfive}$ and the choice of basis $\{\nhatrho, \nhatedge\}$ for that subspace.
+\end{proof}
+
+\begin{corollary}[All-orders invariant-subspace strengthening]\label{cor:all_orders}
+The hypotheses (H1$_E$)--(H5$_E$) make no use of $k = 2$ specifically; the invariant-subspace conclusion holds at every $k \geq 1$ at no additional cost. In particular, the full formal $\delta$-power series of the substrate current at the host vertex is contained in $\Sigma_{\Dfive}$ order-by-order:
+\begin{equation}
+\jDI(\vhost; \delta) \;=\; \sum_{k \geq 1} \delta^k \bigl(\alpha_k^{(\rho)}\,\nhatrho + \alpha_k^{(\text{edge})}\,\nhatedge\bigr).
+\end{equation}
+Any future coefficient computation (Sequence-2A under (H5$_E$); or alternative ansatze under DG-F15-4 sub-options~B/C) may impose this 2-vector ansatz from the outset, reducing the computational target from a 4-vector to two scalars $\alpha_k^{(\rho)}, \alpha_k^{(\text{edge})}$ at each order $k$.
+\end{corollary}
+
+\section{Comparison to vertex-aligned THEO-DSL-4 and anti-erasure remarks}\label{sec:antierasure}
+
+\subsection{Structural comparison}\label{subsec:comparison}
+
+THEO-DSL-4 (Patch~0585, vertex-aligned Reading~C) establishes $\jDI(\vhost)|_{\Oof{\delta^k}} \parallel \nhatrho$ at every $k \geq 1$, with $\nhatrho \equiv \nhat$ in the vertex-aligned case. The proof rests on Lemma~2 (Patch~0585), which establishes that the $\Icoh$-invariant subspace of $\Reals^4|_{\vhost}$ is the 1-dimensional radial line $\Reals\nhatrho$. The load-bearing geometric fact for Lemma~2 (Patch~0585) is that $\Icoh$ contains the central inversion $\iota = -I_3$ acting on the 3-dimensional tangent space $T_{\vhost} S^3 = \nhatrho^\perp$, which forces any $\Icoh$-fixed vector to have zero tangent component.
+
+The edge-aligned analog (Theorem~\ref{thm:main} / Lemma~\ref{lem:d5_invariant_subspace}) yields a 2-dimensional invariant subspace because the smaller stabiliser $\Dfive \subset \Icoh$ no longer ``uses up'' the entire 3-dimensional tangent space with an irreducible 3D representation; instead, $\Dfive$ decomposes $T_{\vhost} S^3$ as $\Aone \oplus \Eone$ (1-dimensional trivial $\oplus$ 2-dimensional irreducible). The 1-dimensional trivial-rep summand within the tangent space is identified with $\nhatedge$, giving the second trivial-rep direction beyond the radial.
+
+The substantive structural difference is captured by the following table:
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Reading C variant} & \textbf{Stabiliser} & \textbf{Invariant subspace of $\Reals^4|_{\vhost}$} \\
+\hline
+Vertex-aligned (THEO-DSL-4) & $\Icoh$, order~120 & $\Reals\nhatrho$ (1D) \\
+Edge-aligned (this artifact) & $\Dfive$, order~10 & $\operatorname{span}\{\nhatrho, \nhatedge\}$ (2D) \\
+Face-aligned (Sequence~1B forthcoming) & to be determined & to be determined (likely 2D or 3D)
+\end{tabular}
+\end{center}
+
+The 2-dimensional finding is consistent with the symmetry-breaking pattern $\Icoh \supset \Dfive$: as the residual symmetry shrinks, the invariant subspace generically grows. This is the central physical insight of OPEN-FP-F1-5 Sequence~1A: \emph{the strong parallel-to-$\nhat$ structure of F.1 Theorem~7.1 is a vertex-aligned-Reading-C-specific consequence of the maximal residual symmetry $\Icoh$, not a generic feature of substrate-locality}. Under non-vertex-aligned Reading-C variants, a substantive radial component of $\jDI(\vhost)$ is admitted on symmetry grounds alone.
+
+\subsection{Anti-erasure remark: stabiliser identification correction relative to FP.md}\label{subsec:antierasure_FPmd}
+
+\begin{remark}[Anti-erasure: stabiliser at edge-aligned Reading C]\label{rem:antierasure_stabiliser}
+The frontier-sector entry \texttt{frontier\_sectors/FP.md} line~230 states, for the edge-aligned Reading C variant: ``residual $D_3$ symmetry at edge midpoint.'' This identification is incorrect at two levels and is registered openly per the CPP programme's anti-erasure discipline (cf.\ Patches~0587 Remark~1.4, 0590 Remark~1.3, 0591~+~0592 Remark~4.3):
+
+\begin{enumerate}[label=(\arabic*)]
+    \item \textbf{Incorrect group order.} The stabiliser of an oriented 600-cell edge (i.e., the edge as a set plus a chosen direction) within $\Hfour$ has order~10, not order~6: orbit-stabiliser on the set of $720 \times 2 = 1440$ oriented edges in $\Hfour$ of order~14400 gives stabiliser order $14400 / 1440 = 10$. The corresponding stabiliser of $\vhost$~+~$\nhatedge$-direction within $\Icoh$ (\S\ref{subsec:setup}) is $\Dfive \cong \Cfivev$ of order~10.
+    \item \textbf{Incorrect group identification.} $D_3 \cong S_3$ has order~6 and is the rotational symmetry of an equilateral triangle. The correct group is $\Dfive \cong D_5$ of order~10, the dihedral group with 5-fold rotational symmetry, reflecting the 600-cell's pentagonal structure (each short edge is shared by 5~tetrahedral cells, and each vertex has 12~first-shell neighbours arranged with 5-fold rotational symmetry about each vertex-to-first-shell axis).
+\end{enumerate}
+
+The FP.md identification ``$D_3$ at edge'' may have arisen from confusion with the face-aligned variant (whose face-centroid stabiliser involves $D_3$ acting on the 3-vertex triangular face, when $\nhatedge$ is interpreted as a face-perpendicular direction; cf.\ \S\ref{subsec:future_face_aligned}). The error is registered here without silent correction; a follow-on registry-propagation Patch will update \texttt{frontier\_sectors/FP.md} line~230 and the corresponding F.1 v1.0 \S{}9 OPEN-FP-F1-5 entry to reflect the correct $\Dfive$ identification.
+
+The substantive structural conclusion of Theorem~\ref{thm:main} (2-dimensional $\Dfive$-invariant subspace = $\operatorname{span}\{\nhatrho, \nhatedge\}$) is \emph{robust} to the stabiliser-order correction: the same 2-dimensional invariant-subspace conclusion would hold for $D_3$ acting analogously (since $D_3$'s 2-dimensional irreducible $E$-rep is irreducible on the perpendicular plane, leaving only the two trivial-rep directions $\nhatrho$~+~$\nhatedge$). The correction is therefore quantitative (group order 6 vs.~10) but does not change the structural finding of the theorem.
+
+\end{remark}
+
+\subsection{Anti-erasure remark on the face-aligned analog}\label{subsec:future_face_aligned}
+
+\begin{remark}[Anti-erasure: deferred face-aligned analog]\label{rem:face_aligned_deferred}
+FP.md line~230 also states ``residual $D_2$ symmetry at face centroid'' for the face-aligned Reading-C variant. Preliminary analysis (Sequence-1B forthcoming Patch) suggests this identification is also incorrect: under the standard interpretation of face-aligned Reading C with host~=~$\vhost$ (vertex; per F.1's vertex-host convention preserved at Sequence-1B) and $\nhat$ perpendicular to a triangular face incident to $\vhost$, the stabiliser is generically $C_s$ of order~2 (a single reflection swapping the two non-host face vertices). If the alternative interpretation of host~=~face-centroid in 4D is adopted, the stabiliser is $D_3$ of order~6 (the full triangle symmetry group acting on the 3 face vertices). Neither identification matches FP.md's ``$D_2$''. The correct face-aligned stabiliser will be determined at Sequence-1B's substantive Patch (DG-F15-2 default~(A): compute exact $\Hfour$-subgroup stabilisers as preamble). The present Patch (0596) does NOT pre-commit to the Sequence-1B stabiliser identification; the question is open and is the natural Sequence-1B target.
+\end{remark}
+
+\section{Five-class exclusion enumeration}\label{sec:exclusion}
+
+The artifact's scope is bounded by five exclusion classes (E1--E5) registered following the CPP hardened-theorem artifact convention:
+
+\paragraph{(E1) Coefficient sub-question NOT closed at $\Oof{\delta^k}$ for $k \geq 1$.} Theorem~\ref{thm:main} is a symmetry-only structural result; it constrains $\jDI(\vhost)|_{\Oof{\delta^k}}$ to lie in the 2-dimensional plane $\operatorname{span}\{\nhatrho, \nhatedge\}$ but does NOT compute the closed-form coefficients $\alpha_k^{(\rho)}, \alpha_k^{(\text{edge})}$. Coefficient computation under (H5$_E$) is the target of Sequence-2A (Patches~0597+) and would produce a future candidate THEO-DSL-7 entry analogous to THEO-DSL-5 (candidate) for the vertex-aligned coefficient $\alpha_2 = -9/\phi^2$ at $\Oof{\delta^2}$.
+
+\paragraph{(E2) Face-aligned variant NOT in scope.} The face-aligned Reading-C analog (Sequence~1B forthcoming Patch) is a separate gated sub-trajectory under OPEN-FP-F1-5. The exact face-aligned stabiliser identification is registered as deferred at Remark~\ref{rem:face_aligned_deferred}.
+
+\paragraph{(E3) (H5$_E$) framework-extension at sketch-document Layer~3.} The Mechanism~A perturbation at $\Oof{\delta^k}$ for $k \geq 2$ is taken at sketch-document Layer~3 per (H5$_E$). Publication-grade hardening of (H5$_E$) would require either path-integral rigorisation (DG-F15-4 default~A; analogous to F1-1's priority queue item~G default), a new framework axiom MA.3$_E$ (alternative~B), or Layer~4 derivation via OPEN-FP-F1-2 (alternative~C). The symmetry-only Sequence-1A argument is robust across DG-F15-4 sub-options A/B/C since only $\Dfive$-equivariance of the rate function and existence of a $\Dfive$-equivariant path-integral construction are required (Lemma~\ref{lem:d5_invariance} robustness remark).
+
+\paragraph{(E4) Layer~4 axiomatic derivation of Mechanism~A from CPP A1--A11 NOT in scope.} Inherits the shared scope-line of Patches~0550 + 0551 + 0552 + 0571 + 0585: Layer~4 derivation OPEN-FP-F1-2 is the long-term programme target. The present artifact assumes MA.1 + MA.2 as framework axioms (taken as inputs, not derived).
+
+\paragraph{(E5) Radial-component-vanishing question open at framework-axiom level.} Theorem~\ref{thm:main}'s 2-dimensional invariant subspace admits a substantive radial component $\alpha_k^{(\rho)} \nhatrho$ of $\jDI(\vhost)|_{\Oof{\delta^k}}$ on symmetry grounds alone. The question of whether the radial coefficient $\alpha_k^{(\rho)}$ is independently forced to vanish at $\Oof{\delta^k}$ by Mechanism~A's framework-axiom-level structure (or by some other framework-level argument independent of the symmetry constraint) is NOT addressed by the present artifact and is registered as the natural substantive target of Sequence-2A's coefficient enumeration. Candidate framework-level arguments for radial-component vanishing include (but are not limited to): (a)~radial-direction averaging arguments at the cage-shell level (cf.\ Capotauro v2.0 \S{}5 substrate-locality structure); (b)~explicit path-class enumeration showing $\alpha_k^{(\rho)} = 0$ identically; (c)~appeal to a covariance principle under Reading-C variation. The present Patch does NOT pre-judge the outcome.
+
+\section{Cross-trajectory linkage and registration}\label{sec:registration}
+
+\textbf{Cross-trajectory linkage.} This artifact is the \textbf{twelfth} in the F.1 Layer~3 hardened-theorem sequence at Patches~0550 + 0551 + 0552 + 0571 + 0585 + 0587 + 0588 + 0589 + 0590 + 0591 + 0592 + 0596 (combined approximate length now $\sim$3{,}878 lines LaTeX across twelve \texttt{.tex} artifacts; combined PDF page count approaching $\sim$100). The eleven-artifact OPEN-FP-F1-1 Route C trajectory (Patches 0550 through 0592) remains the longest single-trajectory hardening sequence in CPP programme history; the present Patch~0596 opens a parallel trajectory (OPEN-FP-F1-5 Sequence~1A) that may extend over $\sim$4--8 sessions (per the Patch~0595 scoping document \S{}1.2 budget) to produce additional candidate theorems THEO-DSL-6 (this artifact), THEO-DSL-7 (Sequence-2A candidate coefficient), THEO-DSL-8 (Sequence-1B structural for face-aligned), THEO-DSL-9 (Sequence-2B candidate coefficient for face-aligned).
+
+\textbf{Theorem-registry naming.} Per DG-F15-5 default~(A) of the Session~146 open decision-gate bundle, the present result is registered as the candidate \textbf{THEO-DSL-6} entry in \texttt{theorem-registry.md} SD section after THEO-DSL-5 (candidate). The candidate qualifier is inherited from the F1-1 / THEO-DSL-5 anti-erasure precedent: at publication-grade Layer~3 unconditional rigor (the Sequence-1A symmetry-only argument is independent of (H5$_E$)), but contingent on the load-bearing scope-qualifier discipline that downstream consumers cite the result with explicit identification of the edge-aligned Reading-C variant. The (H5$_E$) qualifier applies only to follow-on Sequence-2A coefficient work, not to the present Sequence-1A structural result. Registry propagation to \texttt{theorem-registry.md} + \texttt{frontier\_sectors/FP.md} + \texttt{master\_glossary.md} (new term entries for $\nhatedge$, $\nhatrho$, $\Sigma_{\Dfive}$, edge-aligned Reading C, Sequence-1A, etc.) is deferred to a follow-on registry-propagation Patch (candidate~0596a).
+
+\textbf{Cross-sector consistency with Capotauro v2.0.} The substrate-direction primitive $\nhatedge$ has a structural analog in Capotauro v2.0's spatial-sector substrate-locality framework. Under vertex-aligned Reading~C, both papers establish the cage-shell averaging factor $1/6$ for the chirality matrix element via $\Icoh$-equivariant cage-shell sums (THEO-CAP-1 + Capotauro v2.0 \S{}5.6). Under edge-aligned Reading~C, the analogous spatial-sector calculation has not yet been performed; the present Patch's $\Dfive$-equivariant structure suggests the cage-shell factor would generalize to a $\Dfive$-equivariant analog with potentially different numerical content. Cross-sector consistency at the strict-numerical-coefficient level is registered as a candidate future cross-sector Patch target; the present Sequence-1A result is consistent at the \emph{structural-parallelism} level with Capotauro's vertex-aligned-uniqueness selection (Patch~0419 Finding C-W37) and offers a coherent substrate-direction-primitive manifestation under variant Reading~C.
+
+\section{Falsifier and honest scope-limitation framing}\label{sec:falsifier}
+
+\textbf{Falsifier.} Demonstration of $\jDI(\vhost)|_{\Oof{\delta^k}}$ having a component outside $\Sigma_{\Dfive} = \operatorname{span}\{\nhatrho, \nhatedge\}$ at any order $k \geq 1$, from a valid first-principles $\Dfive$-equivariant calculation under (H1$_E$)--(H5$_E$), would contradict Lemma~\ref{lem:d5_invariant_subspace}'s identification of the $\Dfive$-invariant subspace. Equivalently, demonstration that Mechanism~A's $\Dfive$-equivariance under (H1$_E$)~+~(H3$_E$) fails at any order would contradict Lemma~\ref{lem:d5_invariance}.
+
+\textbf{Honest scope-limitation framing.} Theorem~\ref{thm:main} closes the \emph{structural} component of OPEN-FP-F1-5 Sequence-1A only; it constrains $\jDI(\vhost)|_{\Oof{\delta^k}}$ to a 2-dimensional plane without determining the relative weighting of $\nhatrho$ and $\nhatedge$ components. The coefficient sub-question is registered as exclusion class E1 and is the target of Sequence-2A. The radial-component-vanishing question (E5) is open at the framework-axiom level. The (H5$_E$) framework-extension qualifier applies only to follow-on Sequence-2A coefficient work; the present Sequence-1A result is publication-grade Layer~3 unconditional. Non-vertex-aligned face-aligned variant (E2) is the natural Sequence-1B target. Layer~4 axiomatic derivation (E4) is the long-term OPEN-FP-F1-2 target. The anti-erasure registration of FP.md stabiliser-identification discrepancy (\S\ref{subsec:antierasure_FPmd}) is itself a substantive scope-limitation note: future consumers MUST cite the corrected $\Dfive$ stabiliser rather than the original FP.md ``$D_3$'' identification, and downstream registry artifacts MUST be updated to reflect the correction at the follow-on registry-propagation Patch.
+
+\section{References and cross-paper context}\label{sec:references}
+
+\textbf{Internal references.}
+\begin{itemize}[leftmargin=*]
+    \item F.1 Dynamical Substrate Law v1.0 (Patch 0570; \texttt{series\_umbrella/series\_substrate\_chirality\_arc/dynamical\_substrate\_law/dynamical\_substrate\_law.tex}): Theorems 5.1, 5.2, 6.1, 7.1 (the vertex-aligned substrate-locality umbrella structure).
+    \item THEO-DSL-1 through THEO-DSL-5 (candidate) in \texttt{theorem-registry.md} SD section: the five-theorem F-line stack under vertex-aligned Reading C.
+    \item Hardened artifacts in \texttt{series\_umbrella/series\_substrate\_chirality\_arc/dynamical\_substrate\_law/hardened\_theorems/}: \texttt{perturbation\_locality\_propagation.tex} (Patch 0550; THEO-DSL-1); \texttt{first\_shell\_perpendicularity.tex} (Patch 0551); \texttt{host\_to\_first\_shell\_projection.tex} (Patch 0552; THEO-DSL-2 part~b); \texttt{first\_shell\_inner\_product\_primitive.tex} (Patch 0571; THEO-FP-F1-3); \texttt{second\_order\_parallel\_to\_n\_structural.tex} (Patch 0585; THEO-DSL-4); \texttt{second\_shell\_inner\_product\_primitive.tex} (Patch 0587; G2); \texttt{host\_second\_shell\_uniform\_projection.tex} (Patch 0588; G2.1); \texttt{second\_shell\_perpendicularity.tex} (Patch 0589; G2.4); \texttt{first\_shell\_second\_shell\_edge\_orbits.tex} (Patch 0590; G2.3); \texttt{o\_delta\_squared\_path\_class\_weights.tex} (Patch 0591); \texttt{o\_delta\_squared\_substrate\_locality\_umbrella.tex} (Patch 0592; THEO-DSL-5 candidate).
+    \item Scoping document for the present trajectory: \texttt{sketches/F1\_reading\_C\_variants\_scoping.md} (Patch 0595; opens OPEN-FP-F1-5 trajectory; identifies DG-F15-1 through DG-F15-5 decision-gate bundle accepted by Thomas at Session 146 open).
+    \item Frontier-sector entry: \texttt{frontier\_sectors/FP.md} OPEN-FP-F1-5 (lines 226--237 at the present Patch's parent commit; stabiliser identification to be corrected at follow-on registry-propagation Patch per Remark~\ref{rem:antierasure_stabiliser}).
+\end{itemize}
+
+\textbf{Cross-paper context.}
+\begin{itemize}[leftmargin=*]
+    \item Capotauro v2.0 \S{}2.3 Reading-C three-variant framing; Q1$'$+Q1$'$.A resolution at Patch 0419 (Finding C-W37) selecting vertex-aligned variant for the spatial-sector chirality argument. The present F1-5 trajectory complements that selection by establishing the temporal-sector behaviour of the rejected alternatives.
+    \item OPEN-FI-C-9-FP-MECHANISM Reading-C closure trajectory (Capotauro v2.0 sketches/Capotauro\_chiral\_mechanism\_candidate.md \S{}13--\S{}17): the vertex-aligned spatial-sector closure pattern that the present F.1-temporal-sector analysis runs parallel to.
+\end{itemize}
+
+\textbf{Polytope theory.} Coxeter, H.\ S.\ M.\ \emph{Regular Polytopes} (3rd ed., Dover, 1973): standard 600-cell geometric and group-theoretic data, including $\Icoh$ vertex stabiliser, $\Dfive \cong \Cfivev$ edge-direction stabiliser, and shell-decomposition structure (first shell as icosahedron at $\vhost$; second shell as dodecahedron at distance~1 from $\vhost$ under unit-vertex normalisation per Patch~0587).
+
+\end{document}
