@@ -332,3 +332,66 @@ The Patch 0600 A1$_E$ next-substantive-Patch target is to convert the first-orde
 ---
 
 *Document opened at Patch 0599 (Session 146); to be referenced as Sequence-2A scoping for the OPEN-FP-F1-5 trajectory. Future references to "(Patch 0599 scoping)" cite this document.*
+
+---
+
+## §14 Phase-B grounding status (Session 146 remediation, 2026-05-27)
+
+**Context:** Session 146 earlier produced an edge-aligned α₂ artifact (reverted
+Patch 0605, `edge_aligned_second_order_alpha2.tex`) that was misgrounded —
+wrong directory (top-level `hardened_theorems/`, since removed), and never
+verified against this scoping trajectory. Reverted in Patch 0610. This section
+records what is now VERIFIED vs what remains OPEN for the genuine THEO-DSL-7
+closure, so the closure can proceed grounded.
+
+### §14.1 VERIFIED inputs (all checks pass — see `code/verify_edge_alpha2_inputs.py`)
+- **Geometric-primitive layer COMPLETE**: G1_E (P0601), G1_E.2 (P0602),
+  G2_E (P0603), G2_E.3 (P0604) all landed in `hardened_theorems/`.
+- **Edge α₁ COMPLETE** (`o_delta_one_edge_aligned_coefficient.tex`):
+  α₁^(ρ) = 4/φ² ≈ 1.528, α₁^(edge) = 2(2+φ) ≈ 7.236, via the icosahedral
+  second-moment tensor M = (3/φ²)n̂_ρ⊗n̂_ρ + (2+φ)(I₄−n̂_ρ⊗n̂_ρ). Note n̂_edge = û₁,
+  n̂_ρ·n̂_edge = −1/(2φ).
+- **Cross-shell additive constants (re-derived from first principles):**
+  - S1→S2: φ²·(V_i·v_host − W_j·v_host) = φ²(φ/2 − 1/2) = **φ/2** (matches G2_E.3).
+  - S1→S3: φ²·(u_i·v_host − v'·v_host) = φ²(φ/2 − 1/(2φ)) = **φ²/2**.
+  These differ *legitimately* by shell radius (S2 at 1/2, S3 at 1/(2φ)). The
+  reverted P0605 inline lemma used φ²/2 for S1→S3 — that constant was CORRECT;
+  the Phase-R "suspect" flag on it was an over-cautious misread and is withdrawn.
+- **First-shell orbit projections** û_i·n̂_edge (G1_E): {1, 1/2, −1/(2φ), −φ/2}
+  on orbits {O₁,O₂,O₃,O₄} of sizes {1,5,5,1}.
+- **Second-shell orbit projections** ŵ_k·n̂_edge (G2_E): {φ/2, 1/(2φ), 0, −1/2}
+  on {5,5,5,5}; sum = 5/φ (G2-F1 ✓), sum-of-squares = 5 (G2-F2 ✓).
+- **First-shell→first-shell edge projections** (G1_E.2): values {0, ±1/2, ±φ/2}
+  across 5 orbit classes; sum-of-squares 5φ+10. **Non-vanishing** (contrast
+  vertex where all = 0) — this is the B.2 structural difference (§5).
+
+### §14.2 OPEN — the actual α₂ closure (do NOT trust prior values)
+- **The reverted P0605 values α₂^(ρ)=9/(2φ)≈+2.78, α₂^(edge)=9φ−12≈+2.56 are
+  UNVERIFIED and SIGN-SUSPICIOUS.** The vertex-aligned analog is α₂ = −9/φ²
+  (NEGATIVE), driven by cross-shell B.3 dominance. The reverted edge values are
+  POSITIVE. Until the 2D vector assembly is done, treat these as a guess to be
+  CHECKED, not a result.
+- **The remaining computation** = the 2D vector path-class sum at O(δ²):
+  j₂^edge = (assembly over 144 paths, B.1–B.4) → α₂^(ρ)n̂_ρ + α₂^(edge)n̂_edge.
+  Each path P=(v_host→u_i→v') contributes a vector; both n̂_ρ and n̂_edge
+  components must be tracked (the vertex case collapses to 1D scalar j₂·n̂ by I_h
+  and does NOT directly give the 2D template).
+  Inputs per class (all now available, orbit-resolved):
+  - B.1 (12, v'=v_host): second edge = −û_i.
+  - B.2 (60, v'∈S₁): G1_E.2 edge projections, NON-ZERO (unlike vertex).
+  - B.3 (60, v'∈S₂): G2_E.3 cross-shell, constant φ/2.
+  - B.4 (12, v'∈S₃): S1→S3, constant φ²/2 (inline; G3 third-shell primitive).
+- **CAUTION carried from the vertex paper:** the per-vertex scalar Ω(u_i) and the
+  final α₂ differ in sign/structure (vertex: Ω(u_i)=+3/(2φ) per vertex but
+  α₂=−9/φ² total) — i.e. the assembly is NOT a naïve Σ of projection-products.
+  The closure must reproduce the vertex result as a cross-check before trusting
+  the edge result.
+
+### §14.3 Closure deliverable (fresh window, room to breathe)
+- FILE: `hardened_theorems/o_delta_two_edge_aligned_coefficient.tex`
+  (parallels `o_delta_one_edge_aligned_coefficient.tex`).
+- REGISTER: THEO-DSL-7 (candidate), sketch Layer 3 under (H5_E), per DG-F15A-5.
+- CITE: THEO-DSL-6 (2D subspace) + G1_E/G1_E.2/G2_E/G2_E.3 + edge α₁.
+- CAPTURE: reasoning fragment + verify script per the corrected reasoning-capture
+  protocol (reasoning → `hardened_theorems/reasoning/`, scripts → `code/`).
+- VERIFY: reproduce vertex α₂=−9/φ² with the same machinery as a cross-check FIRST.
