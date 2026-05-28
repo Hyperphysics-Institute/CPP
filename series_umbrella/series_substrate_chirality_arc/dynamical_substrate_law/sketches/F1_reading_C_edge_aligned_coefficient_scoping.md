@@ -289,13 +289,15 @@ The landings record will accumulate as Sequence-2A Patches land:
 | Patch | Date | Sub-target | Status |
 |-------|------|-----------|--------|
 | 0599 | 27 May 2026 | Sequence-2A scoping | OPENED |
-| 0600 | — | A1$_E$ first-order closure | TBD |
-| 0601 | — | A2$_E$ G1$_E$ primitive | TBD |
-| 0602 | — | A3$_E$ G1$_E$.2 primitive | TBD |
-| 0603 | — | A4$_E$ G2$_E$ + G2$_E$.3 primitives | TBD |
-| 0604 | — | A5$_E$ path-class enumeration at $\mathcal{O}(\delta^2)$ | TBD |
-| 0605 | — | A6$_E$ umbrella registration | TBD |
-| 0605a | — | Registry propagation | TBD |
+| 0600 | 27 May 2026 | A1$_E$ edge $\alpha_1$ closure ($\alpha_1^{(\rho)}=4/\phi^2$, $\alpha_1^{(\text{edge})}=2(2+\phi)$) | LANDED |
+| 0601 | 27 May 2026 | A2$_E$ G1$_E$ primitive (first-shell orbit projections) | LANDED |
+| 0602 | 27 May 2026 | A3$_E$ G1$_E$.2 primitive (first-shell→first-shell edge projections, non-vanishing) | LANDED |
+| 0603 | 27 May 2026 | A4$_E$ G2$_E$ primitive (second-shell orbit projections) | LANDED |
+| 0604 | 27 May 2026 | A5$_E$ G2$_E$.3 primitive (cross-shell S1→S2 additive constant $\phi/2$) | LANDED |
+| 0605 | 27 May 2026 | edge-$\alpha_2$ first attempt (misgrounded — wrong directory, unverified) | REVERTED (Patch 0610) |
+| 0611 | 27 May 2026 | Sequence-2A grounding-status remediation (§14) | LANDED |
+| 0613 | 28 May 2026 | edge-$\alpha_2$ closure at $\mathcal{O}(\delta^2)$ — THEO-DSL-7 (candidate); $\alpha_2^{(\rho)}=9/(2\phi)$, $\alpha_2^{(\text{edge})}=9\phi-12$, exact in $\mathbb{Q}[\phi]$, both positive; vertex cross-check $\to -9/\phi^2$ ✓ | LANDED |
+| 0614 | 28 May 2026 | Registry propagation (theorem-registry.md THEO-DSL-7 + FP.md + scoping §11.2/§14) | LANDED |
 
 ---
 
@@ -365,12 +367,14 @@ closure, so the closure can proceed grounded.
   across 5 orbit classes; sum-of-squares 5φ+10. **Non-vanishing** (contrast
   vertex where all = 0) — this is the B.2 structural difference (§5).
 
-### §14.2 OPEN — the actual α₂ closure (do NOT trust prior values)
-- **The reverted P0605 values α₂^(ρ)=9/(2φ)≈+2.78, α₂^(edge)=9φ−12≈+2.56 are
-  UNVERIFIED and SIGN-SUSPICIOUS.** The vertex-aligned analog is α₂ = −9/φ²
-  (NEGATIVE), driven by cross-shell B.3 dominance. The reverted edge values are
-  POSITIVE. Until the 2D vector assembly is done, treat these as a guess to be
-  CHECKED, not a result.
+### §14.2 OPEN — the actual α₂ closure (RESOLVED at Patch 0613 — see §14.4)
+- **[RESOLVED Patch 0613]** The P0605 values α₂^(ρ)=9/(2φ)≈+2.78, α₂^(edge)=9φ−12≈+2.56
+  are now **CONFIRMED CORRECT** by the genuine 2D vector path-class assembly. The
+  sign-suspicion (POSITIVE edge values vs the NEGATIVE vertex analog α₂=−9/φ²) is
+  a **real $D_5$-orbit-structure effect, not an error**: the first-shell-transverse
+  class B.2 is non-zero at edge-aligned (vanishes at vertex by G1.2 perpendicularity),
+  and the mandatory vertex cross-check reproduces −9/φ² exactly with the same
+  machinery. The text below is retained verbatim as the pre-closure caution record.
 - **The remaining computation** = the 2D vector path-class sum at O(δ²):
   j₂^edge = (assembly over 144 paths, B.1–B.4) → α₂^(ρ)n̂_ρ + α₂^(edge)n̂_edge.
   Each path P=(v_host→u_i→v') contributes a vector; both n̂_ρ and n̂_edge
@@ -395,3 +399,24 @@ closure, so the closure can proceed grounded.
 - CAPTURE: reasoning fragment + verify script per the corrected reasoning-capture
   protocol (reasoning → `hardened_theorems/reasoning/`, scripts → `code/`).
 - VERIFY: reproduce vertex α₂=−9/φ² with the same machinery as a cross-check FIRST.
+
+### §14.4 CLOSED (Session 147, Patch 0613 — THEO-DSL-7 candidate)
+
+The edge-aligned α₂ closure is **DONE**, delivered at Patch 0613 and registry-propagated at Patch 0614.
+
+- **FILE delivered:** `hardened_theorems/o_delta_two_edge_aligned_coefficient.tex` (clean pdflatex compile), with verbatim reasoning fragment `hardened_theorems/reasoning/0613.md` + verification script `code/verify_edge_alpha2_closure.py` (bundled in one `git am` per the reasoning-capture protocol).
+- **RESULT (exact in ℚ[φ]):**
+  - α₂^(ρ) = 9/(2φ) = −9/2 + (9/2)φ ≈ **+2.781**
+  - α₂^(edge) = 9φ − 12 ≈ **+2.562**
+  in the THEO-DSL-6 invariant subspace span{n̂_ρ, n̂_edge}; perpendicular residual ~1e−16 (empirically confirms THEO-DSL-6 2D-subspace prediction at k=2).
+- **PER-CLASS decomposition** (basis {n̂_ρ, n̂_edge}; 144 directed 2-edge paths):
+  - B.1 (12): (−2 + 7φ/4, −3/2 + φ/2)
+  - B.2 (60): (+5/2, −5 + 5φ/2) — **NON-ZERO** (vertex B.2 = 0 by G1.2); the structural origin of the positive sign
+  - B.3 (60): (−25/4 + 15φ/4, −5 + 5φ)
+  - B.4 (12): (+5/4 − φ, −1/2 + φ)
+  - TOTAL: (9/(2φ), 9φ − 12)
+- **VERTEX CROSS-CHECK ✓:** the same machinery on vertex-aligned (n̂ = v_host) reproduces α₂ = −9/φ² exactly (perp residual ~1e−16) — proving the positive edge sign is genuine geometry, not a code/sign error.
+- **ROBUSTNESS ✓:** exact over all 12 first-shell anchor choices u₁ (coefficient std ~1e−16), as required by THEO-DSL-6 Lemma 1 D₅-equivariance.
+- **SIGN-SUSPICION RESOLVED:** the reverted P0605 values were correct all along; the P0605→P0611 revert was a process/grounding correction (the Session-146 misgrounding reverted at P0610), not an arithmetic falsification.
+- **REGISTERED:** THEO-DSL-7 (candidate), sketch-document Layer 3 under (H5_E), per DG-F15A-5 default-(A) single-theorem; SD row 22→23, Total 74→75; publication-grade promotion deferred to priority queue item (G).
+- **NEXT:** Sequence-2B face-aligned coefficients (future THEO-DSL-9 candidate) under (H5_F); higher orders k ≥ 3.
