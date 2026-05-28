@@ -1,0 +1,323 @@
+% Patch 0613 A5_E: Second-Order Closed-Form Substrate-Current Coefficients
+% at Edge-Aligned Reading C in the 600-Cell
+%
+% OPEN-FP-F1-5 Sequence-2A closure artifact (THEO-DSL-7 candidate). Computes the
+% O(delta^2) edge-aligned coefficients alpha_2^(rho), alpha_2^(edge) in the 2D
+% D_5-invariant subspace span{n_rho, n_edge} established at THEO-DSL-6 (candidate;
+% Patch 0596). Sketch-document Layer 3 under (H5_E) (same path-class weight ansatz
+% W(P)=1 as the vertex-aligned THEO-DSL-5; Patch 0591), per DG-F15A-4 default-(A)
+% per-variant scope qualifier and DG-F15A-5 default-(A) single-theorem registration.
+%
+% CHANGELOG
+%   v1.0 (Patch 0613, Session 147, 28 May 2026): closure of the Session-146 open
+%     computation. Reproduces the vertex-aligned alpha_2 = -9/phi^2 with the same
+%     2D vector path-class machinery as a cross-check (mandatory per Session-146
+%     handover), then computes the edge-aligned coefficients
+%       alpha_2^(rho)  = 9/(2 phi)  = (-9/2) + (9/2) phi  ~ +2.781,
+%       alpha_2^(edge) = 9 phi - 12                       ~ +2.562.
+%     RESOLVES the Session-146 sign-suspicion: the same code path that yields the
+%     NEGATIVE vertex coefficient yields these POSITIVE edge coefficients; the sign
+%     is a genuine D_5-orbit-structure consequence (the B.2 first-shell-trans class,
+%     which vanishes identically at vertex-aligned via G1.2 perpendicularity, is
+%     NON-ZERO at edge-aligned). The reverted Patch-0605 values 9/(2phi), 9phi-12
+%     are confirmed CORRECT. Verify script: code/verify_edge_alpha2_closure.py.
+%     Reasoning fragment: hardened_theorems/reasoning/0613.md.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{antierasure}{Anti-erasure Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\nrho}{\hat{n}_\rho}
+\newcommand{\nedge}{\hat{n}_{\text{edge}}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\jvec}{\vec{j}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Icoh}{I_h}
+
+\title{Second-Order Closed-Form Substrate-Current Coefficients\\
+at Edge-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2A Closure Artifact A5$_E$;
+THEO-DSL-7 candidate, $\alpha_2^{(\rho)} = 9/(2\phi)$, $\alpha_2^{(\text{edge})} = 9\phi - 12$)}}
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7\\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+\date{28 May 2026 (Session 147, CPP Patch 0613)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We close the open computation of the OPEN-FP-F1-5 Sequence-2A trajectory: the
+second-order ($\mathcal{O}(\delta^2)$) substrate-current coefficients at the host
+vertex of the 600-cell under \emph{edge-aligned} Reading C with vertex-host
+convention. The structural sub-question was closed at publication-grade Layer~3
+unconditional by THEO-DSL-6 (candidate; Patch~0596), which established that the
+coefficient $\jvec_k^{\text{edge}}(\vhost)$ lies in the 2D $D_5$-invariant subspace
+$\mathrm{span}\{\nrho,\nedge\}$ for every $k\geq 1$. The first-order coefficients
+were computed at Patch~0600 ($\alpha_1^{(\rho)} = 4/\phi^2$, $\alpha_1^{(\text{edge})} = 2(2+\phi)$).
+Here we assemble the $\mathcal{O}(\delta^2)$ contribution as a sum over the 144
+directed 2-edge paths $\vhost \to u_i \to v'$, with the same path-class weight
+$W(P)=1$ ansatz (H5$_E$) and the same direction-vector convention $\jvec_2 = \sum_P
+(\hat{e}_1\cdot\nedge)(\hat{e}_2\cdot\nedge)\,\hat{e}_1$ used in the vertex-aligned
+THEO-DSL-5 computation (Patch~0591). Unlike the vertex case --- where the $\Icoh$
+symmetry collapses the assembly to a scalar multiple of $\sum_i\hat{u}_i\parallel\nhat$
+--- the reduced $D_5$ symmetry leaves a genuine two-component vector, which we
+decompose in the non-orthogonal basis $\{\nrho,\nedge\}$. The result is the
+closed-form THEO-DSL-7 candidate
+\[
+\boxed{\;\alpha_2^{(\rho)} \;=\; \frac{9}{2\phi} \;=\; \tfrac{9}{2}(\phi-1) \;\approx\; +2.781,
+\qquad
+\alpha_2^{(\text{edge})} \;=\; 9\phi - 12 \;\approx\; +2.562.\;}
+\]
+As a mandatory cross-check, the identical machinery reproduces the vertex-aligned
+$\alpha_2 = -9/\phi^2 \approx -3.438$ with zero perpendicular component, validating
+the assembly. The contrast in sign --- vertex $\alpha_2 < 0$, edge $\alpha_2^{(\rho)},
+\alpha_2^{(\text{edge})} > 0$ --- is not an error but a structural consequence of the
+$D_5$ orbit decomposition: the first-shell-trans path class B.2, which contributes
+exactly zero at vertex-aligned via first-shell-to-first-shell edge perpendicularity
+(THEO-DSL-2 part b / G1.2), is non-vanishing at edge-aligned (G1$_E$.2), and the
+cross-shell B.3 dominance that drives the negative vertex coefficient is partially
+offset. This closure confirms that the values $9/(2\phi)$, $9\phi-12$ produced by an
+earlier Session-146 attempt (reverted Patch~0605 on grounding grounds, and flagged
+``sign-suspicious'' at the Session-146 handover) were in fact correct. The result
+is at sketch-document Layer~3 under (H5$_E$); publication-grade promotion inherits
+the vertex-aligned (H5) hardening roadmap (priority queue item (G)) via the shared
+$W(P)=1$ ansatz.
+\end{abstract}
+
+\section{Statement of the main result}\label{sec:statement}
+
+\paragraph{Setting.} Fix a host vertex $\vhost$ of the 600-cell edge graph
+$\Gamma_{600}$ ($|V|=120$, unit circumradius, edge length $1/\phi$, 12-regular).
+Adopt edge-aligned Reading~C: the substrate-direction primitive is
+$\nedge = (u_1 - \vhost)/|u_1 - \vhost| = \hat{u}_1$, the unit edge-direction toward
+a chosen first-shell neighbor $u_1$. Write $\nrho = \vhost/|\vhost| = \vhost$ for the
+radial direction. By THEO-DSL-2 Theorem~5.1 the two basis directions satisfy
+$\nrho\cdot\nedge = \hat{u}_1\cdot\nrho = -1/(2\phi)$, so $\{\nrho,\nedge\}$ is a
+non-orthogonal basis of the 2D $D_5$-invariant subspace of THEO-DSL-6.
+
+\paragraph{Hypotheses (H1)--(H5$_E$).} Inherited verbatim from THEO-DSL-6
+(candidate): (H1) edge-aligned Reading~C with $\nhat=\nedge$; (H2) vertex-host
+convention; (H3) icosahedral residual symmetry $H_3=\Icoh$ at $\vhost$ (THEO-DSL-2);
+(H4) F.1 Theorem~6.1 perturbation-locality shell-locality (THEO-DSL-1); (H5$_E$)
+Mechanism~A path-integral extension at $\mathcal{O}(\delta^2)$ with path-class weight
+ansatz $W(P)=1$ --- the per-variant specialization of the vertex-aligned (H5) of
+THEO-DSL-5, sketch-document Layer~3 per DG-1 sub-option~(A).
+
+\begin{theorem}[Edge-aligned $\mathcal{O}(\delta^2)$ coefficients; THEO-DSL-7 candidate]
+\label{thm:main}
+Under (H1)--(H5$_E$), the second-order substrate-current coefficient at the host
+vertex under edge-aligned Reading C is
+\begin{equation}\label{eq:main}
+\jvec_2^{\text{edge}}(\vhost) \;=\; r_0\delta^2\!\left[\,\alpha_2^{(\rho)}\,\nrho \;+\; \alpha_2^{(\text{edge})}\,\nedge\,\right],
+\qquad
+\alpha_2^{(\rho)} = \frac{9}{2\phi},\quad
+\alpha_2^{(\text{edge})} = 9\phi - 12,
+\end{equation}
+in the non-orthogonal basis $\{\nrho,\nedge\}$ of the 2D $D_5$-invariant subspace
+established at THEO-DSL-6 (candidate). Numerically $\alpha_2^{(\rho)}\approx+2.781$,
+$\alpha_2^{(\text{edge})}\approx+2.562$. Both coefficients are strictly positive,
+non-zero, and lie in the golden-ratio field $\mathbb{Q}[\phi]$.
+\end{theorem}
+
+The proof is the path-class assembly of \S\ref{sec:assembly}, with the per-class
+breakdown of \S\ref{sec:perclass} and the vertex cross-check of \S\ref{sec:crosscheck}.
+All steps are independently reproduced at machine precision and confirmed exactly in
+$\mathbb{Q}[\phi]$ by \texttt{code/verify\_edge\_alpha2\_closure.py}.
+
+\section{The $\mathcal{O}(\delta^2)$ assembly}\label{sec:assembly}
+
+Under (H5$_E$) the second-order substrate current is the path-class sum over the
+144 directed 2-edge paths $\mathcal{P}_2(\vhost)$ (each $P = \vhost\to u_i\to v'$
+with $u_i\in S_1$ and $v'$ a 600-cell neighbor of $u_i$),
+\begin{equation}\label{eq:j2sum}
+\jvec_2^{\text{edge}}(\vhost) \;=\; r_0\delta^2 \sum_{P\in\mathcal{P}_2(\vhost)}
+(\hat{e}_1\cdot\nedge)(\hat{e}_2\cdot\nedge)\,\hat{e}_1,
+\end{equation}
+with $\hat{e}_1 = \hat{u}_i$ the first-edge direction and $\hat{e}_2$ the
+second-edge direction of $P$. Equation~\eqref{eq:j2sum} is \emph{identical in form}
+to the vertex-aligned assembly of Patch~0591 (THEO-DSL-5); only the substrate
+direction $\nhat$ is changed from $\nrho$ to $\nedge$, per the rate function
+$r(\hat{e}) = r_0(1+\delta\,\hat{e}\cdot\nedge)$.
+
+\paragraph{Why the vertex collapse fails.} In the vertex-aligned case
+($\nhat=\nrho$), the inner per-vertex weight $\Omega(u_i) := (\hat{u}_i\cdot\nrho)
+\sum_{v'\sim u_i}(\hat{e}_{u_i\to v'}\cdot\nrho) = (-1/(2\phi))\cdot(-3) = 3/(2\phi)$
+is \emph{uniform} across all 12 first-shell vertices (an $\Icoh$ consequence), so
+\eqref{eq:j2sum} reduces to $\tfrac{3}{2\phi}\sum_i\hat{u}_i = \tfrac{3}{2\phi}
+\cdot(-6/\phi)\nrho = -9/\phi^2\,\nrho$ --- a scalar times the $\Icoh$-symmetric
+vector $\sum_i\hat{u}_i\parallel\nrho$, collapsing to 1D (Patch~0591; this is the
+$k=2$ instance of THEO-DSL-4).
+
+Under edge-aligned Reading~C the host stabilizer is the smaller group $D_5$ (order
+10), which splits the 12 first-shell vertices into orbits of sizes $\{1,5,5,1\}$
+(G1$_E$). Both factors of $\Omega(u_i)$ now vary by orbit: $\hat{u}_i\cdot\nedge$
+takes the four G1$_E$ values $\{1,\tfrac12,-\tfrac{1}{2\phi},-\tfrac{\phi}{2}\}$, and
+the second-edge projection sum depends on the orbit of $u_i$ as well. The vector
+sum $\sum_i\Omega'(u_i)\,\hat{u}_i$ therefore does \emph{not} collapse to a multiple
+of a single symmetric vector; it retains both a $\nrho$ and a $\nedge$ component.
+The computation is genuinely a 2D vector assembly --- which is exactly why the
+vertex scalar template does not transfer, and why the closure was deferred at
+Session~146 until a fresh window could carry the full vector sum.
+
+\paragraph{Closed-form result.} Carrying out the assembly~\eqref{eq:j2sum} with the
+explicit 600-cell coordinates (all orbit projections matching the registered
+primitives G1$_E$ / G1$_E$.2 / G2$_E$ / G2$_E$.3) and decomposing the resulting
+4-vector in the basis $\{\nrho,\nedge\}$ via the Gram matrix
+$G = \left(\begin{smallmatrix}1 & -1/(2\phi)\\ -1/(2\phi) & 1\end{smallmatrix}\right)$,
+$\det G = (\phi+2)/4$, yields exactly~\eqref{eq:main}. The result is independent of
+which of the 12 first-shell neighbors is chosen as $u_1$ (an $\Icoh$ consequence at
+the host; verified for all 12 choices, residual $<10^{-15}$), and the recovered
+vector lies in $\mathrm{span}\{\nrho,\nedge\}$ to machine precision (residual
+$\sim 10^{-16}$), confirming the THEO-DSL-6 structural prediction quantitatively at
+second order.
+
+\section{Per-path-class decomposition}\label{sec:perclass}
+
+The 144 paths partition into four classes by the shell of the endpoint $v'$
+(THEO-DSL-1 / F.1 Theorem~6.1; the partition is symmetry-independent): \textbf{B.1}
+12 round-trips ($v'=\vhost$); \textbf{B.2} 60 first-shell-trans ($v'\in S_1$);
+\textbf{B.3} 60 cross-shell ($v'\in S_2$); \textbf{B.4} 12 third-shell
+($v'\in S_3$). Decomposing each class contribution in $\{\nrho,\nedge\}$:
+
+\begin{center}
+\begin{tabular}{lrll}
+\toprule
+Class & \# & coeff.\ of $\nrho$ & coeff.\ of $\nedge$ \\
+\midrule
+B.1 (round-trip) & 12 & $-2 + \tfrac{7}{4}\phi$ & $-\tfrac{3}{2} + \tfrac{1}{2}\phi$ \\
+B.2 (first-shell-trans) & 60 & $\tfrac{5}{2}$ & $-5 + \tfrac{5}{2}\phi$ \\
+B.3 (cross-shell) & 60 & $-\tfrac{25}{4} + \tfrac{15}{4}\phi$ & $-5 + 5\phi$ \\
+B.4 (third-shell) & 12 & $\tfrac{5}{4} - \phi$ & $-\tfrac{1}{2} + \phi$ \\
+\midrule
+\textbf{TOTAL} & 144 & $-\tfrac{9}{2} + \tfrac{9}{2}\phi = \dfrac{9}{2\phi}$ & $-12 + 9\phi$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}[Structural origin of the sign reversal vs.\ vertex]
+The single most important structural difference from the vertex-aligned calculation
+is the \textbf{B.2 class}. At vertex-aligned Reading~C, B.2 vanishes \emph{exactly}
+because every first-shell-to-first-shell (icosahedron) edge is perpendicular to
+$\nrho$ (THEO-DSL-2 part b: $\hat{e}_{ij}\cdot\nrho = 0$, G1.2). At edge-aligned
+Reading~C the same 30 edges have projections onto $\nedge$ taking the G1$_E$.2
+values $\{0,\pm\tfrac12,\pm\tfrac{\phi}{2}\}$ across five $D_5$ orbits, and the B.2
+class contributes a substantive $+\tfrac{5}{2}\,\nrho + (-5+\tfrac52\phi)\,\nedge$.
+The cross-shell B.3 class, which dominates the vertex result and drives its negative
+sign, no longer dominates: its $\nrho$ component ($-\tfrac{25}{4}+\tfrac{15}{4}\phi
+\approx -0.18$) is small and the B.1 + B.2 + B.4 contributions sum to net positive.
+The positive edge-aligned coefficients are therefore the correct geometric outcome
+of the $\Icoh\to D_5$ symmetry reduction, not an artifact.
+\end{remark}
+
+\section{Vertex cross-check (mandatory)}\label{sec:crosscheck}
+
+Running the identical assembler~\eqref{eq:j2sum} with $\nhat=\nrho$ (vertex-aligned)
+on the same 600-cell reproduces
+\[
+\jvec_2(\vhost) = -\frac{9}{\phi^2}\,\nrho + \mathcal{O}(10^{-16})_\perp,
+\]
+matching THEO-DSL-5 (candidate; Patch~0591) with a perpendicular residual at machine
+zero. Because the edge-aligned coefficients are obtained from the \emph{same code
+path}, differing only in the substrate direction supplied to the rate function, the
+vertex agreement certifies the machinery. This is the cross-check mandated at the
+Session-146 close ("reproduce vertex $\alpha_2=-9/\phi^2$ with the same machinery
+first") and it is satisfied.
+
+\begin{antierasure}
+The values $\alpha_2^{(\rho)}=9/(2\phi)$, $\alpha_2^{(\text{edge})}=9\phi-12$ were
+first produced by a Session-146 attempt (Patch~0605) that was correctly reverted
+(Patch~0610) on grounding grounds --- it was placed in a wrong top-level directory
+and was not verified against the Sequence-2A primitives or cross-checked against the
+vertex result. The Session-146 handover flagged the values as "sign-suspicious"
+because they are positive while the vertex analog is negative. The present grounded
+closure --- built from a clone, with every input verified against the registered
+G$_E$ primitives and the vertex result reproduced in the same code --- confirms the
+values are \emph{correct}. The suspicion is resolved: the sign difference is the real
+$D_5$-orbit-structure effect documented in \S\ref{sec:perclass}, not a defect. The
+provenance is recorded so the earlier revert is not misread as a falsification of
+the numbers; it was a process correction, and the numbers survive it.
+\end{antierasure}
+
+\section{Scope and exclusions}\label{sec:scope}
+
+\begin{itemize}
+\item[\textbf{(E1)}] \textbf{(H5$_E$) is sketch-document Layer~3.} The path-class
+weight ansatz $W(P)=1$ is the same load-bearing assumption as the vertex-aligned
+(H5) of THEO-DSL-5. Publication-grade promotion (path-integral rigorisation, new
+framework axiom MA.3, or Layer~4 derivation OPEN-FP-F1-2) is priority queue item
+(G); it applies uniformly to (H5) and (H5$_E$) since the ansatz is identical.
+\item[\textbf{(E2)}] \textbf{Face-aligned variant NOT covered.} Sequence-2B
+($C_s$ stabilizer, 3D subspace, THEO-DSL-8 structural) is a separate trajectory with
+future coefficient entry THEO-DSL-9.
+\item[\textbf{(E3)}] \textbf{Higher orders $k\geq 3$ NOT addressed.} Would require
+3-edge path enumeration and additional $D_5$ orbit primitives (G3$_E$, \dots).
+\item[\textbf{(E4)}] \textbf{Layer~4 derivation of Mechanism~A from CPP A1--A11
+NOT in scope} (OPEN-FP-F1-2).
+\item[\textbf{(E5)}] \textbf{Radial-component vanishing question resolved
+negatively.} THEO-DSL-6 left open whether $\alpha_k^{(\rho)}$ might be forced to
+vanish (collapsing the effective subspace back to 1D). At $k=2$ it does \emph{not}:
+$\alpha_2^{(\rho)} = 9/(2\phi) \neq 0$. The subspace is genuinely 2D at second order,
+as it is at first order (Patch~0600).
+\end{itemize}
+
+\section{Falsifiers}\label{sec:falsifiers}
+
+\textbf{F1.} Demonstration of $\alpha_2^{(\rho)} \neq 9/(2\phi)$ or
+$\alpha_2^{(\text{edge})}\neq 9\phi-12$ from a valid first-principles $D_5$-equivariant
+Mechanism~A path-class enumeration under (H1)--(H5$_E$) with the $W(P)=1$ ansatz ---
+would contradict the assembly of \S\ref{sec:assembly} or the registered G$_E$
+primitives. \textbf{F2.} Demonstration that the same assembler does \emph{not}
+reproduce the vertex $-9/\phi^2$ --- would invalidate the cross-check.
+\textbf{F3.} A non-$\mathbb{Q}[\phi]$ closed form for either coefficient under a
+correct calculation --- would break the field-extension regularity shared with
+THEO-DSL-3/-5 and the edge $\alpha_1$.
+
+\section{Cross-references and position}\label{sec:xref}
+
+This is the closure (artifact A5$_E$, also serving as the umbrella) of the
+OPEN-FP-F1-5 Sequence-2A trajectory opened at Patch~0599. It registers the
+\textbf{THEO-DSL-7 (candidate)} coefficient entry (registry propagation at the
+companion Patch~0614), completing the edge-aligned structural/coefficient pair
+THEO-DSL-6 / THEO-DSL-7 in exact parallel to the vertex-aligned THEO-DSL-4 /
+THEO-DSL-5. It cites THEO-DSL-6 (2D subspace), the primitives G1$_E$ (Patch~0601),
+G1$_E$.2 (Patch~0602), G2$_E$ (Patch~0603), G2$_E$.3 (Patch~0604), and the edge
+first-order coefficients of Patch~0600. The dimensional-growth / symmetry-reduction
+story $\Icoh\to D_5$ is now realized quantitatively at both $\mathcal{O}(\delta^1)$
+and $\mathcal{O}(\delta^2)$.
+
+\paragraph{Comparison to vertex and to edge $\alpha_1$.} The vertex second-order
+coefficient is a single number $-9/\phi^2$; edge-aligned splits it into two positive
+numbers $9/(2\phi)$ and $9\phi-12$. Relative to the edge first-order coefficients
+$\alpha_1^{(\rho)}=4/\phi^2\approx1.528$ and $\alpha_1^{(\text{edge})}=2(2+\phi)
+\approx7.236$ (Patch~0600), the second-order radial component is comparable in
+magnitude to the first-order radial component while the second-order edge component
+is markedly smaller than the first-order edge component --- the edge-direction
+current is dominated by its first-order term, the radial current less so.
+
+\begin{thebibliography}{9}
+\bibitem{dsl6} T.~L.~Abshier and Claude Opus~4.7, ``Edge-Aligned Reading-C
+Invariant-Subspace Structural Theorem ($D_5$),'' CPP F.1 hardened-theorem artifact,
+Patch~0596 (THEO-DSL-6 candidate).
+\bibitem{dsl5} T.~L.~Abshier and Claude Opus~4.7, ``Path-Class Weight Enumeration at
+$\mathcal{O}(\delta^2)$ at Vertex-Aligned Reading C ($\alpha_2=-9/\phi^2$),''
+CPP F.1 hardened-theorem artifact, Patch~0591 (THEO-DSL-5 candidate).
+\bibitem{edgea1} T.~L.~Abshier and Claude Opus~4.7, ``First-Order Closed-Form
+Substrate-Current Coefficients at Edge-Aligned Reading C,'' CPP F.1 hardened-theorem
+artifact, Patch~0600.
+\bibitem{ge} G1$_E$/G1$_E$.2/G2$_E$/G2$_E$.3 edge-aligned $D_5$ orbit-projection
+primitives, CPP F.1 hardened-theorem artifacts, Patches~0601--0604.
+\bibitem{coxeter} H.~S.~M.~Coxeter, \textit{Regular Polytopes}, 3rd ed., Dover, 1973.
+\end{thebibliography}
+
+\end{document}
