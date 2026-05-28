@@ -11,7 +11,7 @@
 #   bash templates/build_reasoning.sh <reasoning-dir> [> output.md]
 #
 # Example:
-#   bash templates/build_reasoning.sh hardened_theorems/reasoning > /tmp/dsl_full.md
+#   bash templates/build_reasoning.sh series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/reasoning > /tmp/dsl_full.md
 #
 # Fragments are sorted by filename, which (because fragments are named by
 # zero-padded patch number, e.g. 0605.md, 0605a.md, 0606.md) yields correct

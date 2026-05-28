@@ -119,36 +119,49 @@ canonical — the fragments are the source of truth.
 
 ## 6. Bucketing and migration path
 
-- **Now:** DSL hardened-theorem reasoning lives in
-  `hardened_theorems/reasoning/<patch>.md` and verification in
-  `hardened_theorems/scripts/<patch>.py`, indexed by **patch number** (the
+- **Canonical location (CORRECTED Session 146 remediation):** DSL hardened-theorem
+  reasoning and verification live ALONGSIDE the theorem artifacts they document, in
+  the Dynamical Substrate Law subfolder:
+  `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/reasoning/<patch>.md`
+  and `.../hardened_theorems/scripts/<patch>.py`, indexed by **patch number** (the
   unambiguous anchor — every fragment maps to exactly one patch).
-- **On paper consolidation:** these theorems are multi-sector
-  $D_5$-symmetry / golden-ratio / orientation-phase-diagram **geometric
-  infrastructure** — not SM/SS/EW content, but machinery those sectors draw
-  on. The eventual consolidation paper is therefore an **`SU/`** (multi-sector
-  combo) candidate. At consolidation, fragments migrate to
-  `SU/<paper>/reasoning/` and may be renamed to the sector-coded Tier 4
-  convention (`reasoning-SU-N.md`).
+  **Do NOT create a top-level `hardened_theorems/` directory** — the original
+  Session-146 capture mistakenly did this and was reverted. The DSL work already
+  has a home; fragments go there, beside the `.tex` they describe.
+- **Verify location before writing:** clone the repo and `ls` the live DSL folder
+  before placing any fragment (see §0 + §9). The fragment must sit next to the
+  artifact it documents — never in a parallel/orphan tree.
+- **On paper consolidation:** if/when these theorems consolidate into a standalone
+  paper, fragments stay within the SU/ substrate-chirality-arc tree and may be
+  renamed to the sector-coded Tier 4 convention (`reasoning-SU-N.md` / per-paper
+  `reasoning/`). They are already in `SU/` — no cross-sector migration needed.
 
-Patch-number indexing now + sector-coded indexing at consolidation keeps both
-phases unambiguous.
+Patch-number indexing + co-location with the artifact keeps provenance unambiguous.
 
 ---
 
-## 7. The "DSL" definition slot
+## 7. The "DSL" definition (RESOLVED Session 146 remediation)
 
-The `THEO-DSL-N` registry identifier is in active use (DSL-6 through DSL-9 as
-of Session 146) but its expansion was **never recorded** in a durable file —
-it lived only in chat. This is itself an instance of the problem this protocol
-solves. **Definition to be supplied by Thomas and recorded here:**
+`THEO-DSL-N` = **Theorem — Dynamical Substrate Law, N**. The DSL series is the
+theorem-registry sub-prefix for the **F.1 Dynamical Substrate Law** arc, whose
+home is
+`series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/`.
 
 ```
-THEO-DSL = THEO- + D__ S__ L__   [EXPANSION PENDING — fill in]
+THEO-DSL = THEO- (theorem) + DSL (Dynamical Substrate Law)
 ```
 
-Until filled, treat `DSL` as an opaque registry label and do not confabulate
-an expansion.
+The expansion had lived only in chat until this remediation — itself an instance
+of the loss this protocol exists to prevent, now durably recorded.
+
+**Registry numbering is reserved by orientation variant — DO NOT reuse a number
+without checking `theorem-registry.md` live:**
+
+| Variant | stabilizer / dim | structural | coefficient |
+|---|---|---|---|
+| vertex-aligned | $I_h$ / 1D | THEO-DSL-4 | THEO-DSL-3 ($\alpha_1$), THEO-DSL-5 ($\alpha_2$) |
+| edge-aligned   | $D_5$ / 2D | THEO-DSL-6 | THEO-DSL-7 (RESERVED, Sequence-2A) |
+| face-aligned   | $C_s$ / 3D | THEO-DSL-8 | THEO-DSL-9 (RESERVED, Sequence-2B) |
 
 ---
 
@@ -160,3 +173,35 @@ separately-scoped* cleanup — never rushed at the tail of a window — and ever
 backlog fragment carries the `STATUS: reconstructed` flag. The protocol's job
 is to prevent recurrence from here forward; the backlog is a bounded one-time
 debt, not an ongoing obligation.
+
+---
+
+## 9. STEP 0 — clone-first precondition + handover gate (root-cause fix)
+
+The Session-146 misgrounding (five patches with collided THEO-DSL numbers,
+duplicated theorems, wrong directory) had a single root cause: **work proceeded
+from chat-prompt framing and `conversation_search` instead of the live
+repository.** bootup.md says to clone, but a handover that does not *itself*
+restate it lets the next instance skip it (instances follow the in-context
+handover over the general bootup).
+
+**Two non-negotiable gates:**
+
+1. **Clone before claiming anything.** Before registering a THEO-DSL identifier,
+   placing a file, or citing a patch number, clone the repo and verify against
+   live ground truth:
+   ```
+   cd /home/claude && rm -rf CPP && git clone --depth 1 \
+     https://github.com/Hyperphysics-Institute/CPP.git
+   grep -n "THEO-DSL" CPP/theorem-registry.md          # check numbering
+   ls CPP/series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/hardened_theorems/
+   ```
+   A green "single-artifact discipline" counter measures commit tidiness, NOT
+   correctness or grounding. Do not let a clean counter substitute for this check.
+
+2. **Every handover doc opens with a BLOCKING clone gate as line 1:**
+   ```
+   [ ] STEP 0 (BLOCKING): git clone the repo + grep theorem-registry.md.
+       Do NOT proceed to any physics/registration work until done.
+   ```
+   The precondition must live IN the handover, not only in bootup.md.
