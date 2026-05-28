@@ -4764,3 +4764,75 @@ df460b3  my Patch 0571a — doc-suite Tier 4 + Vignette + Transaction + planning
 **Other open F.1-trajectory items**: OPEN-FP-F1-4 (Sector-5 schema instantiation); OPEN-FP-F1-5 (non-vertex-aligned Reading C variants); OPEN-FP-F1-6 (prose-density tightening + F.1-condensed companion paper).
 
 **Patch 0571 closes OPEN-FP-F1-3 and completes the F.1 Layer 3 hardened-theorem sequence at four artifacts** — the first F.1 Open Problem RESOLVED post-v1.0-SHIP, and the first F-line post-v1.0-SHIP substantive physics Patch in CPP corpus history.
+
+---
+
+## Session 146 (27 May 2026) — Remediation of the edge-α₂ misgrounding + grounded re-setup of THEO-DSL-7
+
+**Tier 4 inclusion scope:** the diagnostic reasoning that identified the
+misgrounding, the first-principles verification of the cross-shell constants,
+and the scope judgement that stopped short of a rushed closure.
+
+**Strategy.** The edge-aligned O(δ²) coefficient was attempted from chat framing
+without cloning the repo. The corrective strategy was: (1) clone and diagnose
+against ground truth; (2) revert to a clean, correct state with the repo as
+authority; (3) re-establish the closure trajectory by verifying every imported
+input against the registered primitives BEFORE computing anything; (4) refuse to
+ship coefficient values that were not actually derived and verified.
+
+**Diagnosis.** Cloning showed three independent defects in the reverted patches:
+identifier collisions (claimed DSL-8/-9 collided with the registered face-aligned
+structural THEO-DSL-8 and the reserved coefficient THEO-DSL-9), duplication of
+THEO-DSL-3/-4, and a wrong directory. The deeper cause was singular: the registry
+and the live DSL folder were never read. The reserved-numbering table is
+unambiguous — vertex {struct DSL-4, coeff DSL-3/-5}, edge {struct DSL-6, coeff
+DSL-7 RESERVED}, face {struct DSL-8, coeff DSL-9 RESERVED} — and a single grep
+would have prevented every collision.
+
+**Cross-shell constant verification (the load-bearing check).** Both constants
+were re-derived from the registered shell inner-products with v_host
+(S1: φ/2, S2: 1/2, S3: 1/(2φ)) and the edge relation ê = φ(end−start),
+n̂_edge = φ(V_1 − v_host):
+- S1→S2: additive constant = φ²(φ/2 − 1/2) = φ²·(1/(2φ)) = φ/2  (matches G2_E.3).
+- S1→S3: additive constant = φ²(φ/2 − 1/(2φ)) = φ²·(1/2) = φ²/2.
+The two differ legitimately because the third shell sits at radius 1/(2φ) vs the
+second shell's 1/2. The reverted P0605 inline lemma had used φ²/2 for S1→S3 and
+was therefore CORRECT on this point; my Phase-R remediation note flagging it as
+"suspect/inconsistent with G2_E.3" was an over-cautious misread, now withdrawn.
+This is itself a lesson: a hasty diagnosis can be wrong in the over-cautious
+direction too, and the cure is the same — verify against ground truth.
+
+**Scope judgement (why no closure this turn).** A correct constant does not
+validate the result. The edge-aligned α₂ is a 2D vector (n̂_ρ and n̂_edge
+components); the vertex-aligned machinery collapses to a 1D scalar j₂·n̂ by I_h
+symmetry and does not transfer directly. I could not reconstruct even the vertex
+sign-assembly from the registry alone (the per-vertex projection-product sum
+Ω(u_i) = +3/(2φ) is positive, yet the registered total is α₂ = −9/φ² negative —
+the assembly is not a naïve sum of projection-products). Shipping coefficient
+values under that uncertainty, at the tail of a long session, is precisely the
+failure being remediated. The disciplined output is a grounded setup: verified
+inputs recorded, the open computation specified, the reverted positive values
+flagged as sign-suspicious against the negative vertex analog, and the closure
+handed to a window with room — to be cross-checked by first reproducing
+α₂ = −9/φ² with the same 2D machinery.
+
+**Findings.** (1) All edge-aligned geometric primitives (G1_E, G1_E.2, G2_E,
+G2_E.3) and edge α₁ (α₁^ρ=4/φ², α₁^edge=2(2+φ)) are complete and verified.
+(2) Both cross-shell constants are correct. (3) THEO-DSL-7 remains correctly
+reserved; no registry edit was needed or made. (4) The genuine open physics is
+the 2D path-class assembly, structurally distinct from vertex because B.2
+(first-shell-to-first-shell) does not vanish at edge-aligned.
+
+**Verdict.** Repo restored to a clean, correct state; edge-α₂ trajectory
+grounded and scoped; closure pending in a fresh window. No coefficient values
+asserted that were not derived and verified.
+
+**State at session close.** origin/main clean through Patch 0612. THEO-DSL-7
+reserved (Sequence-2A target). Reasoning-capture protocol live + wired into
+bootup. Verify scripts in DSL/code/.
+
+**Forward-looking pointers.** Closure deliverable:
+`hardened_theorems/o_delta_two_edge_aligned_coefficient.tex` → THEO-DSL-7
+(candidate), sketch Layer 3 under (H5_E); cite THEO-DSL-6 + G1_E/G1_E.2/G2_E/
+G2_E.3 + edge α₁; reproduce vertex α₂=−9/φ² as a cross-check first. Setup detail:
+`sketches/F1_reading_C_edge_aligned_coefficient_scoping.md` §14.

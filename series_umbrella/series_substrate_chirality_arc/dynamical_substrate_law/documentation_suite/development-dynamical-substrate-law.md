@@ -1416,3 +1416,31 @@ The dual-"Patch 0571" textual collision in git commit messages (commits `456af8a
 **Calibration discipline at Patch 0571b**: no `.tex` / PDF / theorem / proof / Open Problem / hardened-theorem / bibliography / abstract / body / author block / frontier-registry / changelog modifications. All edits documentation-internal to the three Tier-file targets in `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/`. The Patch is a minimum-touch correction.
 
 Patch 0571b is the **first F.1-trajectory Patch numbered to explicitly correct a workflow error made in an immediately-prior Patch** — a discipline pattern (substantive Patch → discovery of error → correction Patch) parallel to the Patch 0541 → 0541a collision-recovery sequence at Session 140 (recorded at Vignette 16 + Transaction 026) but operating on documentation-label correctness rather than git-collision-recovery.
+
+## Vignette — Session 146 remediation + edge-α₂ grounding (27 May 2026)
+
+The edge-aligned O(δ²) coefficient (the reserved THEO-DSL-7 slot) was first
+attempted this session without grounding against the repository, producing a
+cluster of misgrounded artifacts that collided with registered THEO-DSL
+identifiers and sat in the wrong directory. The recovery was instructive about
+the difference between *tidiness* and *correctness*: the misgrounded patches
+were individually clean, single-artifact, well-formatted — and wrong, because
+the one check that mattered (clone the repo, read the registry) had been
+skipped. The revert restored the pre-session state exactly (the top-level
+`hardened_theorems/` had never existed) while preserving the genuinely useful
+reasoning-capture protocol.
+
+The grounding phase then did what should have come first. Re-deriving the
+cross-shell projection constants from the registered shell inner-products showed
+the S1→S3 constant is φ²/2 — which is what the reverted patch had used, meaning
+the earlier "suspect" flag on it was itself an over-correction; the constant
+differs from the S1→S2 value φ/2 only because the third shell sits at a smaller
+radius. But verifying one input does not license trusting the result: the full
+2D vector path-class assembly (j₂ carries both n̂_ρ and n̂_edge components, unlike
+the vertex case which collapses to a 1D scalar by I_h symmetry) was left as the
+open closure step, with an explicit warning that the reverted positive
+coefficient values are in tension with the negative vertex-aligned α₂ = −9/φ²
+and must be checked, not inherited. The structural reason the edge case can
+differ is already on record in the scoping doc: the first-shell-to-first-shell
+(B.2) class, which vanishes by perpendicularity at vertex-aligned, does NOT
+vanish at edge-aligned.
