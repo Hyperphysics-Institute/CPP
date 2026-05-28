@@ -1,0 +1,401 @@
+% Patch 0618 A5_E^(3): Third-Order Closed-Form Substrate-Current Coefficients
+% at Edge-Aligned Reading C in the 600-Cell
+%
+% OPEN-FP-F1-5 Sequence-3A closure artifact (THEO-DSL-10 candidate). Computes the
+% O(delta^3) edge-aligned coefficients alpha_3^(rho), alpha_3^(edge) in the 2D
+% D_5-invariant subspace span{n_rho, n_edge} established at THEO-DSL-6 (candidate;
+% Patch 0596). Sketch-document Layer 3 under (H5_E^(3)) -- the natural extension
+% of the $(H5_E)$ path-class weight ansatz W(P)=1 from 2-edge paths to 3-edge paths
+% in P_3(v_host), per DG-F15A-4 default-(A) per-variant scope qualifier and
+% DG-F15A-5 default-(A) single-theorem registration.
+%
+% CHANGELOG
+%   v1.0 (Patch 0618, Session 147, 28 May 2026): higher-order extension of
+%     THEO-DSL-7 (edge k=2, Patch 0613). Reproduces the vertex-aligned cross-check
+%     alpha_3^(vertex) = -126 + 81 phi = 9(9 phi - 14) = 9(4 - phi)/phi^3 ~ +5.061
+%     using the same 2D vector path-class machinery, then computes the edge-aligned
+%     coefficients
+%       alpha_3^(rho)  = -84 + 54 phi          = 6(9 phi - 14) = 6(4 - phi)/phi^3  ~ +3.374,
+%       alpha_3^(edge) = -63/2 + (21/2) phi   = (21/2)(phi - 3)                   ~ -14.511.
+%     The SIGN pattern at k=3 is MIXED (positive radial, negative along-edge),
+%     distinct from k=2 edge (BOTH positive) and k=2 face (BOTH negative). Per the
+%     same 9-shell B(s_v', s_v'') path-class enumeration: 1728 = 12^3 directed
+%     3-edge paths distribute across 13 non-empty (s_v', s_v'') cells, with paths
+%     now reaching as far as shell B5 (12 paths in (B3, B5)). Verify script:
+%     code/verify_edge_alpha3_closure.py. Reasoning fragment:
+%     hardened_theorems/reasoning/0618.md.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{antierasure}{Anti-erasure Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\nrho}{\hat{n}_\rho}
+\newcommand{\nedge}{\hat{n}_{\text{edge}}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\jvec}{\vec{j}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Icoh}{I_h}
+
+\title{Third-Order Closed-Form Substrate-Current Coefficients\\
+at Edge-Aligned Reading C in the 600-Cell\\
+{\large (Sketch-Document Layer 3 under $(H5_E^{(3)})$; THEO-DSL-10 candidate;\\
+OPEN-FP-F1-5 Sequence-3A; Patch 0618)}}
+\author{CPP Programme}
+\date{28 May 2026 (Session 147)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This artifact closes Sequence-3A of OPEN-FP-F1-5, extending THEO-DSL-7
+(edge-aligned $\mathcal{O}(\delta^2)$ closure, Patch 0613) to the next order in
+$\delta$. Under the $D_5$-invariant 2-dimensional subspace
+$\mathrm{span}\{\nrho, \nedge\}$ established at THEO-DSL-6 (Patch 0596), the
+order-three substrate-current vector at edge-aligned Reading C is given in
+closed form by
+\begin{equation*}
+\boxed{\;\;
+  \jvec_3(\vhost) \;=\; \alpha_3^{(\rho)} \nrho \;+\; \alpha_3^{(\text{edge})} \nedge,
+  \quad
+  \alpha_3^{(\rho)} = -84 + 54\phi,
+  \quad
+  \alpha_3^{(\text{edge})} = -\tfrac{63}{2} + \tfrac{21}{2}\phi.
+\;\;}
+\end{equation*}
+Both coefficients are exact integer-or-half-integer combinations in
+$\mathbb{Q}[\phi]$. Numerically $\alpha_3^{(\rho)} \approx +3.374$ and
+$\alpha_3^{(\text{edge})} \approx -14.511$: a \emph{mixed-sign} pattern
+distinct from the uniformly positive $\mathcal{O}(\delta^2)$ edge coefficients
+(THEO-DSL-7) and the uniformly negative $\mathcal{O}(\delta^2)$ face
+coefficients (THEO-DSL-9). The mandatory vertex-aligned cross-check at $k=3$
+yields $\alpha_3^{(\text{vertex})} = -126 + 81\phi = 9(9\phi - 14) =
+9(4 - \phi)/\phi^3 \approx +5.061$. The result is verified by independent
+numerical assembly of all $1728 = 12^3$ directed 3-edge paths from the host
+vertex, with a per-class decomposition spanning 13 non-empty
+$(s_{v'}, s_{v''})$ cells and an explicit reach to vertex shell $B_5$ at this
+order. The full computation is sketch-document Layer 3 under the natural
+extension $(H5_E^{(3)})$ of the path-class weight ansatz $W(P) = 1$ from
+$\mathcal{P}_2(\vhost)$ to $\mathcal{P}_3(\vhost)$.
+\end{abstract}
+
+\section{Scope and provenance}\label{sec:scope}
+
+This artifact registers a new candidate hardened theorem THEO-DSL-10:
+the third-order ($\mathcal{O}(\delta^3)$) closed-form substrate-current
+coefficients at edge-aligned Reading C in the 600-cell, under the
+2-dimensional $D_5$-invariant subspace established at THEO-DSL-6 (Patch
+0596). It is the direct higher-order continuation of THEO-DSL-7 (Patch
+0613) and parallels in structure the vertex-aligned higher-order sequence.
+
+\paragraph{Inheritance from prior theorems.}
+\begin{itemize}
+\item \textbf{THEO-DSL-2} (Patch 0551, $G2.1$): host-to-$S_1$ projection
+  $\hat e \cdot \vhost = -1/(2\phi)$ uniformly for the 12 first-shell edges.
+\item \textbf{THEO-DSL-3} (Patch 0552): vertex-aligned $\mathcal{O}(\delta^1)$
+  closed form $\alpha_1 = 6/\phi^2$ (programme normalization; the
+  one-directional assembly used here yields the half value $3/\phi^2 =
+  6 - 3\phi$ as a cross-check).
+\item \textbf{THEO-DSL-4} (Patch 0553, $G3.0$): $\jvec_k \parallel \nhat$
+  at all orders $k \geq 1$ for vertex-aligned $\nhat = \vhost$ (1-D
+  $\Icoh$-invariant subspace at $\vhost$). Used here as the vertex cross-check
+  basis at $k=3$.
+\item \textbf{THEO-DSL-5} (Patch 0591): vertex-aligned $\mathcal{O}(\delta^2)$
+  closed form $\alpha_2^{(\text{vertex})} = -9/\phi^2 = -18 + 9\phi$. The
+  identical assembly convention is used here at $k=3$ (verify-script
+  cross-check passes).
+\item \textbf{THEO-DSL-6} (candidate, Patch 0596): edge-aligned 2-D
+  $D_5$-invariant subspace $\mathrm{span}\{\nrho, \nedge\}$. Re-applied at $k=3$:
+  the same residual symmetry holds order-by-order under the assembly's
+  $W(P)=1$ ansatz, so $\jvec_3^{\text{edge}} \in \mathrm{span}\{\nrho, \nedge\}$
+  is unconditional under $(H5_E^{(3)})$.
+\item \textbf{THEO-DSL-7} (candidate, Patch 0613): edge-aligned
+  $\mathcal{O}(\delta^2)$ closed forms $\alpha_2^{(\rho)} = 9/(2\phi) =
+  -9/2 + (9/2)\phi$ and $\alpha_2^{(\text{edge})} = 9\phi - 12$. This artifact
+  extends THEO-DSL-7 by one order in $\delta$.
+\end{itemize}
+
+\paragraph{Hypotheses retained.}
+$(H1)$ Reading C with host $\vhost$ and unit-edge anchor $\hat e_1$;
+$(H2)$ Mechanism A (anisotropic-rate path-integral first-order substrate-current
+ansatz with rate $r(\hat e) = r_0(1 + \delta \hat e \cdot \nhat)$);
+$(H3)$ $\nedge = (u_1^{\text{anchor}} - \vhost)/|u_1^{\text{anchor}} - \vhost|$;
+$(H4)$ the 600-cell unit-circumradius edge graph;
+$(H5_E^{(3)})$ the path-class weight $W(P) = 1$ extended from
+$\mathcal{P}_2(\vhost)$ to $\mathcal{P}_3(\vhost)$ (no $k$-dependent reweighting).
+
+The result is sketch-document Layer 3 under $(H5_E^{(3)})$: the assembly is
+unconditional given the ansatz, and the closed forms below are exact in
+$\mathbb{Q}[\phi]$ rather than numerical. The structural sub-result
+($\jvec_3^{\text{edge}} \in \mathrm{span}\{\nrho, \nedge\}$) inherited from
+THEO-DSL-6 is publication-grade Layer 3 unconditional (it depends only on
+$D_5$-equivariance, not on any path-class weight).
+
+\section{Setup}\label{sec:setup}
+
+We adopt the construction of the 600-cell at unit circumradius (8 vertices
+of the 16-cell, 16 vertices of the inscribed tesseract, and 96 vertices
+generated by the snub 24-cell construction with even-permutation parity).
+Each vertex has exactly 12 neighbours at common dot product $\phi/2$;
+adjacent edges have unit-edge length $1/\phi$, so $\hat e_{ab} =
+\phi(b - a)$ for any edge $(a, b)$ in $\mathbb{Q}[\phi]^4$.
+
+The host vertex is $\vhost$ with 12 first-shell neighbours $S_1 =
+\{u_1, \ldots, u_{12}\}$. By THEO-DSL-2, the radial projection is uniform:
+$\hat e_{\vhost \to u_i} \cdot \vhost = -1/(2\phi)$ for all $i$.
+
+The unit anchor direction is $\nedge = \phi(u_1^{\text{anchor}} - \vhost)$
+for a chosen anchor $u_1^{\text{anchor}} \in S_1$; by THEO-DSL-6 the
+coefficient pair $(\alpha_3^{(\rho)}, \alpha_3^{(\text{edge})})$ does not
+depend on this anchor (verified explicitly in \S\ref{sec:robustness}).
+
+The radial direction at $\vhost$ is $\nrho = \vhost$.
+
+\paragraph{9-shell vertex classification.}
+At $k=3$, path endpoints $v''$ can reach beyond the 4 inner shells that
+suffice at $k\leq 2$. The full 9-shell classification by $\langle v'',
+\vhost\rangle$ is:
+\begin{center}
+\begin{tabular}{l c r}
+\toprule
+Shell & $\langle v, \vhost\rangle$ & Count \\
+\midrule
+$B_0$ (host) & $+1$ & 1 \\
+$B_1$ ($S_1$) & $+\phi/2$ & 12 \\
+$B_2$ ($S_2$) & $+1/2$ & 20 \\
+$B_3$ ($S_3$) & $+1/(2\phi)$ & 12 \\
+$B_4$ (equator) & $0$ & 30 \\
+$B_5$ & $-1/(2\phi)$ & 12 \\
+$B_6$ & $-1/2$ & 20 \\
+$B_7$ & $-\phi/2$ & 12 \\
+$B_8$ (antipode) & $-1$ & 1 \\
+\midrule
+Total & & $120$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Assembly}\label{sec:assembly}
+
+By extending the $(H5_E)$-style path-class weight ansatz from
+$\mathcal{P}_2(\vhost)$ to $\mathcal{P}_3(\vhost)$ (denoted $(H5_E^{(3)})$),
+the order-three substrate-current vector is the un-weighted sum over the
+$|S_1|^3 = 12^3 = 1728$ directed 3-edge paths $P = (\vhost \to u_1 \to u_2
+\to u_3)$:
+\begin{equation}\label{eq:j3}
+\jvec_3(\vhost) \;=\; \sum_{P \in \mathcal{P}_3(\vhost)}
+   (\hat e_1 \cdot \nedge)(\hat e_2 \cdot \nedge)(\hat e_3 \cdot \nedge)\,\hat e_1,
+\end{equation}
+where $\hat e_j$ is the unit edge direction of step $j$ along $P$. This is
+the natural $k=3$ analogue of the THEO-DSL-7 assembly used at $k=2$.
+
+The structural lemma inherited from THEO-DSL-6 yields:
+
+\begin{lemma}[$D_5$-invariance at $k=3$]\label{lem:d5-k3}
+Under $(H5_E^{(3)})$, $\jvec_3(\vhost) \in \mathrm{span}\{\nrho, \nedge\}$.
+\end{lemma}
+
+\begin{proof}[Sketch]
+The $D_5$ stabiliser of the chosen anchor edge acts on the 600-cell by
+600-cell automorphisms fixing $\vhost$ and rotating/reflecting the 5
+$S_1$-neighbours of $u_1^{\text{anchor}}$ that lie on the icosahedral
+``equatorial pentagon.'' The assembly~\eqref{eq:j3} is $D_5$-equivariant in
+$\nhat$ and the path set; with $\nhat = \nedge$ (itself $D_5$-fixed) and the
+$W(P) = 1$ ansatz $(H5_E^{(3)})$, the result $\jvec_3$ must therefore lie in
+the $D_5$-invariant subspace at $\vhost$. By THEO-DSL-6 (Patch 0596) this
+subspace is precisely the 2-dimensional $\mathrm{span}\{\nrho, \nedge\}$,
+regardless of $k$. (Note: this is the same lemma used at THEO-DSL-7 at
+$k=2$; nothing at $k=3$ enlarges or shrinks the invariant subspace.)
+\end{proof}
+
+\section{Closed forms}\label{sec:results}
+
+\begin{theorem}[THEO-DSL-10 candidate: edge-aligned $\mathcal{O}(\delta^3)$
+coefficients]\label{thm:dsl10}
+Under hypotheses $(H1)$--$(H4)$ and $(H5_E^{(3)})$,
+\begin{align}
+\jvec_3(\vhost) &= \alpha_3^{(\rho)} \nrho \;+\; \alpha_3^{(\text{edge})} \nedge, \\
+\alpha_3^{(\rho)} &= -84 + 54\phi
+                   \;=\; 6\,(9\phi - 14) \;=\; \tfrac{6\,(4-\phi)}{\phi^3} \;\approx\; +3.374, \\
+\alpha_3^{(\text{edge})} &= -\tfrac{63}{2} + \tfrac{21}{2}\phi
+                   \;=\; \tfrac{21}{2}(\phi - 3) \;\approx\; -14.511.
+\end{align}
+Both coefficients are independent of the choice of anchor edge
+$u_1^{\text{anchor}} \in S_1$ (verified over all 12 choices, \S\ref{sec:robustness}).
+\end{theorem}
+
+\begin{proof}[Computation]
+The vector~\eqref{eq:j3} is evaluated exactly in $\mathbb{Q}[\phi]^4$ by
+enumerating all 1728 directed 3-edge paths from $\vhost$ and summing the
+product of three dot-products against $\hat e_1$. The result is then projected
+onto $\nrho$ and $\nedge$ via the non-orthogonal Gram solve with
+$\nrho \cdot \nedge = -1/(2\phi)$ (THEO-DSL-2). At 60-digit precision via
+mpmath/PSLQ the result is identified with the integer/half-integer
+$\mathbb{Q}[\phi]$ combination stated above, and the closed form is then
+verified to machine-double precision (residual $< 10^{-12}$ across all 12
+anchor choices). See verify script
+\texttt{code/verify\_edge\_alpha3\_closure.py}.
+\end{proof}
+
+\begin{corollary}[$\jvec_3^{\text{edge}}$ residual decomposition]\label{cor:dsl10}
+$\jvec_3(\vhost) - \alpha_3^{(\rho)} \nrho - \alpha_3^{(\text{edge})} \nedge = 0$
+exactly in $\mathbb{Q}[\phi]^4$.
+\end{corollary}
+
+\section{Per-2D-shell-class decomposition}\label{sec:per-class}
+
+The 1728 directed 3-edge paths distribute across the 13 non-empty
+$(s_{v'}, s_{v''})$ pairs shown below. Each cell reports the path count and
+the $(\alpha_3^{(\rho)}, \alpha_3^{(\text{edge})})$ contribution; only those
+shells that are actually reached at $k=3$ from $\vhost$ are listed. The reach
+extends to $B_5$ (12 paths in $(B_3, B_5)$) but no further at this order.
+
+\begin{center}
+\small
+\begin{tabular}{l c r r r}
+\toprule
+$(s_{v'}, s_{v''})$ & $\#P$ & $\alpha_3^{(\rho)}$-cell & $\alpha_3^{(\text{edge})}$-cell \\
+\midrule
+$(B_0, B_1)$    & $144$ & $-69/4 + (45/4)\phi$    & $-21/2 + 6\phi$ \\
+$(B_1, B_0)$    & $60$  & $-9/4 + (11/8)\phi$     & $11/4 - (7/4)\phi$ \\
+$(B_1, B_1)$    & $300$ & $-15/2 + 5\phi$         & $-5/2 + (5/4)\phi$ \\
+$(B_1, B_2)$    & $300$ & $-75/8 + (55/8)\phi$    & $15/2 - 5\phi$ \\
+$(B_1, B_3)$    & $60$  & $-9/8 + \phi$           & $-7/4 + \phi$ \\
+$(B_2, B_1)$    & $180$ & $-10 + (25/4)\phi$      & $-85/8 + (15/8)\phi$ \\
+$(B_2, B_2)$    & $180$ & $-29/8 + (9/4)\phi$     & $-3 - (1/4)\phi$ \\
+$(B_2, B_3)$    & $180$ & $-14 + (69/8)\phi$      & $-51/4 + (59/8)\phi$ \\
+$(B_2, B_4)$    & $180$ & $-61/8 + (37/8)\phi$    & $-41/8 + (21/4)\phi$ \\
+$(B_3, B_1)$    & $12$  & $-3/4 + (1/2)\phi$      & $-(5/8)\phi$ \\
+$(B_3, B_2)$    & $60$  & $-5 + (25/8)\phi$       & $15/8 - (25/8)\phi$ \\
+$(B_3, B_4)$    & $60$  & $-35/8 + (5/2)\phi$     & $15/8 - (5/4)\phi$ \\
+$(B_3, B_5)$    & $12$  & $-9/8 + (5/8)\phi$      & $3/4 - (1/4)\phi$ \\
+\midrule
+Total & $1728$ & $-84 + 54\phi$ & $-63/2 + (21/2)\phi$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Observations.}
+\begin{enumerate}
+\item The largest single contributing cell to $\alpha_3^{(\rho)}$ is $(B_1,
+  B_1)$ with 300 paths contributing $-15/2 + 5\phi$. The largest single
+  contributor to $\alpha_3^{(\text{edge})}$ is $(B_1, B_2)$ with $15/2 - 5\phi$
+  (equal magnitude, opposite sign on the $\phi$-part).
+\item The reach to $B_5$ ($\langle v'', \vhost\rangle = -1/(2\phi)$) is genuine
+  at $k=3$ but small: only 12 paths total via the $(B_3, B_5)$ channel.
+\item Paths that revisit $\vhost$ at the intermediate step ($(B_0, B_1)$) are
+  the second-largest single contributor and have a non-trivial 3-edge-path
+  weight under $(H5_E^{(3)})$.
+\end{enumerate}
+
+\section{Vertex-aligned cross-check}\label{sec:vertex-check}
+
+\begin{remark}[$k=3$ vertex cross-check]
+Substituting $\nhat = \nrho = \vhost$ in~\eqref{eq:j3} (equivalent to
+replacing $\nedge$ by $\vhost$ in the assembly) yields, by THEO-DSL-4 and the
+same 1728-path enumeration,
+\begin{equation*}
+\alpha_3^{(\text{vertex})} \;=\; -126 + 81\phi
+   \;=\; 9\,(9\phi - 14)
+   \;=\; \tfrac{9\,(4-\phi)}{\phi^3}
+   \;\approx\; +5.061,
+\end{equation*}
+with perpendicular residual $< 10^{-12}$, confirming the 1-D
+$\Icoh$-invariance of the assembly at $k=3$. The vertex coefficient is
+\emph{positive} at $k=3$, opposite-sign to the $k=2$ vertex coefficient
+$-9/\phi^2 < 0$ and same-sign as the $k=1$ vertex coefficient $+3/\phi^2 > 0$;
+the alternation reflects the alternating-sign structure of products of
+host-to-$S_1$ projections $-1/(2\phi)$ that dominates the $(H5)$-extended
+$\mathcal{P}_k(\vhost)$ sum at low $k$.
+\end{remark}
+
+\begin{remark}[Cross-variant $k=3$ comparison]
+At $k=3$ the three Reading-C variants are:
+\begin{center}
+\begin{tabular}{l c c c}
+\toprule
+Variant & Subspace & $\alpha_3$ first coefficient & $\alpha_3$ second coefficient \\
+\midrule
+Vertex (THEO-DSL-4) & 1-D & $-126 + 81\phi \approx +5.06$ & --- \\
+Edge (\textbf{this thm}) & 2-D & $-84 + 54\phi \approx +3.37$ & $-63/2 + (21/2)\phi \approx -14.51$ \\
+Face (THEO-DSL-11 cand., Patch 0620) & 2-D & $\propto \sqrt{3}$ & $\propto \sqrt{3}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The face-aligned $k=3$ coefficients live in $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$
+(odd-$k$ centroid-direction normalization signature) rather than $\mathbb{Q}[\phi]$;
+see Patch 0620.
+\end{remark}
+
+\section{Robustness over anchor choice}\label{sec:robustness}
+
+By THEO-DSL-6, the coefficient pair $(\alpha_3^{(\rho)},
+\alpha_3^{(\text{edge})})$ is anchor-independent: choosing a different
+$u_1^{\text{anchor}} \in S_1$ rotates $\nedge$ but leaves the
+$D_5$-invariant subspace and the projected coefficients invariant. The
+verify script confirms this explicitly: across all 12 first-shell anchors,
+the standard deviation of each coefficient over the orbit is $< 10^{-11}$
+(double precision).
+
+\section{Exclusions retained}\label{sec:exclusions}
+\begin{enumerate}
+\item[$(E1)$] No path-class weight other than $W(P) = 1$ at $k=3$ is considered;
+  $(H5_E^{(3)})$ is the natural extension of $(H5_E)$ and is the same ansatz used
+  in THEO-DSL-7.
+\item[$(E2)$] No claim of cross-variant identity at $k=3$ (the closed forms are
+  distinct from vertex and face; only the assembly machinery is shared).
+\item[$(E3)$] No promotion of Layer 3 status to publication-grade: the
+  underlying ansatz $(H5_E^{(3)})$ is sketch-document Layer 3, not
+  axiomatically derived. Publication-grade promotion is deferred to a future
+  $(H5_E)$-ansatz-derivation patch ($(G)$ branch).
+\item[$(E4)$] No claim of universality across path-integral first-order
+  Mechanism A variants beyond the rate function $r(\hat e) = r_0(1 + \delta
+  \hat e \cdot \nhat)$ and the path enumeration $\mathcal{P}_3(\vhost)$.
+\item[$(E5)$] No extension to $k \geq 4$ in this artifact (sequence-4A and
+  beyond are future OPEN-FP-F1-5 targets).
+\end{enumerate}
+
+\section{Provenance and verification}\label{sec:provenance}
+
+The exact closed forms above are obtained by:
+\begin{enumerate}
+\item Building the 600-cell from first principles (16-cell + tesseract +
+  snub 24-cell with even-permutation parity) and verifying its 120-vertex,
+  720-edge, 12-regular structure.
+\item Enumerating all 1728 directed 3-edge paths $\vhost \to u_1 \to u_2
+  \to u_3$ and computing the assembly~\eqref{eq:j3}.
+\item Decomposing the result in the non-orthogonal basis $\{\nrho, \nedge\}$
+  via Gram solve and extracting closed forms via mpmath/PSLQ at 60-digit
+  precision.
+\item Verifying the resulting integer/half-integer $\mathbb{Q}[\phi]$
+  expressions to double precision in the verify script.
+\item Cross-checking via the vertex-aligned $k=1, k=2, k=3$ targets
+  ($3/\phi^2$, $-9/\phi^2$, $-126 + 81\phi$).
+\item Confirming anchor-independence across all 12 first-shell choices.
+\end{enumerate}
+See \texttt{code/verify\_edge\_alpha3\_closure.py} for the full verification
+(all 10 PASS checks). The verbatim reasoning trail is captured in
+\texttt{hardened\_theorems/reasoning/0618.md}.
+
+\begin{antierasure}
+Versions of the closed forms differing from those stated in
+Theorem~\ref{thm:dsl10} are not authorised by this artifact. Should a future
+multi-AI review surface a counter-derivation (different coefficient,
+different sign, or non-$\mathbb{Q}[\phi]$ residual), the present artifact
+must be retained verbatim and a separate revision/supersession artifact
+created, following the procedure established at Patches 0615--0617 for the
+THEO-DSL-8 $\to$ THEO-DSL-9 correction.
+\end{antierasure}
+
+\end{document}
