@@ -1,0 +1,360 @@
+% Patch 0615 A5_F: Second-Order Closed-Form Substrate-Current Coefficients
+% at Face-Aligned Reading C in the 600-Cell
+%
+% OPEN-FP-F1-5 Sequence-2B closure artifact (THEO-DSL-9 candidate). Computes the
+% O(delta^2) face-aligned coefficients in the residual-symmetry-invariant subspace
+% at the host vertex, using the same Mechanism-A 2-edge-path assembly as the vertex
+% (THEO-DSL-5) and edge (THEO-DSL-7) closures, with n = n_Fperp.
+%
+% This artifact also registers an ANTI-ERASURE CORRECTION to THEO-DSL-8 (Patch 0597):
+% the true residual symmetry of (v_host + n_Fperp) is the Klein four-group V_4 of
+% ORDER 4, not C_s of order 2; the invariant subspace is the 2D span{n_rho, n_ax},
+% not the 3D (u_i - u_j)^perp. Consequently the dimensional-growth pattern across
+% the three Reading-C variants is 1 -> 2 -> 2 (I_h -> D_5 -> V_4), not 1 -> 2 -> 3.
+%
+% Sketch-document Layer 3 under (H5_F) (same path-class weight ansatz W(P)=1 as the
+% vertex THEO-DSL-5 and edge THEO-DSL-7), per DG-F15-4 default-(A) per-variant scope
+% qualifier and DG-F15-5 / DG-F15A-5 default-(A) single-theorem registration.
+%
+% CHANGELOG
+%   v1.0 (Patch 0615, Session 147, 28 May 2026): closure of OPEN-FP-F1-5 Sequence-2B.
+%     Reproduces the vertex alpha_2 = -9/phi^2 cross-check, verifies the V_4 residual
+%     symmetry directly on the 600-cell vertex set, and computes
+%       alpha_2^(rho) = -14 + 7 phi = -7/phi^2 ~ -2.674,
+%       alpha_2^(ax)  =  -6 + 2 phi           ~ -2.764,
+%     with the two non-invariant components (n_diff via sigma_E; n_perp3 via
+%     sigma_face) vanishing identically. Verify script:
+%     code/verify_face_alpha2_closure.py. Reasoning: hardened_theorems/reasoning/0615.md.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{antierasure}{Anti-erasure Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\nrho}{\hat{n}_\rho}
+\newcommand{\nax}{\hat{n}_{\text{ax}}}
+\newcommand{\nperpF}{\hat{n}_{F\perp}}
+\newcommand{\nperpiii}{\hat{n}_{\perp 3}}
+\newcommand{\ndiff}{\hat{n}_{\text{diff}}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\ui}{u_i}
+\newcommand{\uj}{u_j}
+\newcommand{\jvec}{\vec{j}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Vfour}{V_4}
+\newcommand{\Cs}{C_s}
+\newcommand{\Dfive}{D_5}
+
+\title{Second-Order Closed-Form Substrate-Current Coefficients\\
+at Face-Aligned Reading C in the 600-Cell\\
+\large{(OPEN-FP-F1-5 Sequence-2B Closure Artifact A5$_F$; THEO-DSL-9 candidate,\\
+$\alpha_2^{(\rho)} = -7/\phi^2$, $\alpha_2^{(\text{ax})} = 2\phi - 6$;
+with a $\Cs \to \Vfour$ residual-symmetry correction to THEO-DSL-8)}}
+\author{Thomas Lee Abshier, ND, and Claude Opus 4.7\\ Hyperphysics Institute --- F.1 Dynamical Substrate Law trajectory}
+\date{28 May 2026 (Session 147, CPP Patch 0615)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We close the OPEN-FP-F1-5 Sequence-2B trajectory: the second-order ($\mathcal{O}(\delta^2)$)
+closed-form coefficients of the net DI-bit substrate current at the host vertex of the
+600-cell under \emph{face-aligned} Reading C, computed with the identical Mechanism-A
+two-edge-path assembly used for the vertex-aligned (THEO-DSL-5, Patch 0591) and
+edge-aligned (THEO-DSL-7, Patch 0613) closures, specialised to $\nhat = \nperpF$, the
+face-centroid (substrate-primitive) direction. The computation yields, exact in
+$\mathbb{Q}[\phi]$,
+\[
+\jvec_2^{\text{face}}(\vhost) \;=\; \alpha_2^{(\rho)}\,\nrho \;+\; \alpha_2^{(\text{ax})}\,\nax,
+\qquad
+\alpha_2^{(\rho)} = -14 + 7\phi = -\frac{7}{\phi^2} \approx -2.674,
+\quad
+\alpha_2^{(\text{ax})} = -6 + 2\phi \approx -2.764,
+\]
+with \emph{both} components negative (like vertex-aligned, unlike the positive
+edge-aligned coefficients). In the course of the closure we discovered, and verify
+directly on the 600-cell vertex set, that the residual symmetry of
+$(\vhost + \nperpF)$ is the Klein four-group $\Vfour$ of \textbf{order 4}, not the
+$\Cs$ of order 2 recorded in THEO-DSL-8 (Patch 0597): all three non-trivial $\Vfour$
+elements fix the centroid direction $\nperpF$ and hence preserve Mechanism A's rate
+function. The $\Vfour$-invariant subspace is therefore the \textbf{2-dimensional}
+$\operatorname{span}\{\nrho, \nax\}$, not the 3-dimensional $(\ui - \uj)^\perp$;
+independently, THEO-DSL-8's claimed three-vector basis $\{\nrho, \nax, \nperpF\}$ is
+degenerate ($\nperpF \in \operatorname{span}\{\nrho, \nax\}$). The corrected
+dimensional-growth pattern across the three Reading-C variants is therefore
+$1 \to 2 \to 2$ (as the stabiliser runs $\Icoh \to \Dfive \to \Vfour$), not the
+previously-recorded $1 \to 2 \to 3$. We register this as an anti-erasure correction
+(\S\ref{sec:antierasure}) and recommend a follow-on structural revision of the
+THEO-DSL-8 artifact under multi-reviewer scrutiny. All claims are verified
+numerically and symbolically over $\mathbb{Q}[\phi]$ by
+\texttt{code/verify\_face\_alpha2\_closure.py}.
+\end{abstract}
+
+\section{Setup}\label{sec:setup}
+
+We preserve the vertex-host convention of the OPEN-FP-F1-5 trajectory (Patches 0596,
+0597): $\vhost$ is a 600-cell vertex; only the direction of the substrate primitive
+$\nhat$ varies among the three Reading-C variants. Vectors are taken at unit
+circumradius ($|v|=1$ for every vertex; edge length $1/\phi$, $\phi = (1+\sqrt5)/2$).
+
+\paragraph{Face and primitive direction.} Choose a triangular face
+$F = \{\vhost, \ui, \uj\}$ incident to $\vhost$, where $\ui, \uj$ are first-shell
+neighbours of $\vhost$ that are themselves adjacent (so $\vhost\cdot\ui = \vhost\cdot\uj
+= \ui\cdot\uj = \phi/2$). There are $30$ such faces incident to each vertex. The
+face-aligned substrate primitive is the centroid direction
+\begin{equation}\label{eq:nperp}
+\nperpF \;=\; \frac{\vhost + \ui + \uj}{\lVert \vhost + \ui + \uj\rVert},
+\end{equation}
+which is perpendicular to the face plane and is the rate-function direction of
+(H5$_F$): $r(\hat e) = r_0(1 + \delta\,\hat e\cdot\nperpF)$.
+
+\paragraph{Frame at $\vhost$.} We use the orthonormal frame
+\begin{align}
+\nrho &= \vhost && \text{(radial)},\\
+\nax  &= \frac{P_{\perp\vhost}(\ui + \uj - 2\vhost)}{\lVert\cdot\rVert}
+         = \frac{P_{\perp\vhost}(\ui + \uj)}{\lVert\cdot\rVert}
+         && \text{(in-face axial, tangent to $S^3$)},\\
+\nperpiii &= \text{unit normal to } \operatorname{span}\{\vhost, \ui, \uj\}
+         && \text{(out-of-3-flat)},\\
+\ndiff &= \frac{\ui - \uj}{\lVert\ui - \uj\rVert} && \text{(within-face edge)},
+\end{align}
+where $P_{\perp\vhost}(x) = x - (x\cdot\vhost)\vhost$. These four directions are
+mutually orthonormal and span $\Reals^4$ at $\vhost$. The centroid direction of
+\eqref{eq:nperp} is \emph{not} independent of this frame:
+\begin{equation}\label{eq:nFdegenerate}
+\ui + \uj = \phi\,\vhost + P_{\perp\vhost}(\ui+\uj)
+\;\Longrightarrow\;
+\nperpF \;\propto\; (1+\phi)\,\nrho + \lVert P_{\perp\vhost}(\ui+\uj)\rVert\,\nax
+\;\in\; \operatorname{span}\{\nrho, \nax\}.
+\end{equation}
+
+\section{Residual symmetry is $\Vfour$, not $\Cs$}\label{sec:v4}
+
+\begin{lemma}[$\Vfour$ residual symmetry]\label{lem:v4}
+The stabiliser in $\Icoh = \operatorname{stab}_{H_4}(\vhost)$ of the pair
+$(\vhost,\,\nperpF)$ --- equivalently of the host vertex together with the centroid
+direction of the face $F$ --- is the Klein four-group
+\[
+\Vfour \;=\; \{e,\ \sigma_E,\ \sigma_{\!F},\ C_2\}, \qquad |\Vfour| = 4,
+\]
+where $\sigma_E$ is the reflection through the hyperplane $(\ui-\uj)^\perp$ (swaps
+$\ui\leftrightarrow\uj$, flips $\ndiff$), $\sigma_{\!F}$ is the reflection through the
+hyperplane $\operatorname{span}\{\vhost,\ui,\uj\}$ (fixes $\vhost,\ui,\uj$, flips
+$\nperpiii$), and $C_2 = \sigma_E\sigma_{\!F}$. All three non-trivial elements fix
+$\nperpF$.
+\end{lemma}
+
+\begin{proof}
+The unordered-face stabiliser in $\Icoh$ has order $|\Icoh|/30 = 120/30 = 4$ by
+orbit--stabiliser, and is $\Vfour$ (Klein four), as recorded in THEO-DSL-8 \S2.2.
+Each of $e, \sigma_E, \sigma_{\!F}, C_2$ fixes $\vhost$ and permutes $\{\ui,\uj\}$
+among themselves, hence fixes the centroid $\vhost+\ui+\uj$ and therefore the
+direction $\nperpF$ of \eqref{eq:nperp}. In particular $\sigma_{\!F}$ fixes $\ui$ and
+$\uj$ individually, so it fixes their sum and $\nperpF$. Because $\nperpF$ is fixed by
+all of $\Vfour$, the rate function $r(\hat e) = r_0(1+\delta\,\hat e\cdot\nperpF)$ is
+$\Vfour$-invariant. (Direct verification: $\sigma_E, \sigma_{\!F}, C_2$, realised as
+the orthogonal matrices $I - 2\ndiff\ndiff^\top$, $I - 2\nperpiii\nperpiii^\top$, and
+their product, each map the 120-vertex set to itself and satisfy $R\vhost=\vhost$,
+$R\nperpF=\nperpF$; see the verify script.)
+\end{proof}
+
+\begin{lemma}[Two-dimensional invariant subspace]\label{lem:2d}
+The $\Vfour$-invariant subspace of $\Reals^4$ at $\vhost$ is the $2$-dimensional
+$\operatorname{span}\{\nrho, \nax\} = (\ui-\uj)^\perp \cap \operatorname{span}\{\vhost,\ui,\uj\}$.
+\end{lemma}
+
+\begin{proof}
+$\sigma_E$ acts as $+1$ on $(\ui-\uj)^\perp$ (dimension 3) and $-1$ on $\Reals\ndiff$;
+$\sigma_{\!F}$ acts as $+1$ on $\operatorname{span}\{\vhost,\ui,\uj\}$ (dimension 3)
+and $-1$ on $\Reals\nperpiii$. A vector fixed by both lies in
+$(\ui-\uj)^\perp \cap \operatorname{span}\{\vhost,\ui,\uj\}$. The latter equals
+$\operatorname{span}\{\vhost,\ \ui+\uj\} = \operatorname{span}\{\nrho,\nax\}$,
+which is $2$-dimensional (the Gram determinant of $\{\vhost,\ui,\uj\}$ is
+$(1-\phi/2)^2(1+\phi)>0$, so the three vectors are independent and their span is a
+genuine $3$-flat with $1$-dimensional normal $\nperpiii$). A direct averaging
+projector over the four $\Vfour$ elements has rank $2$ (verify script).
+\end{proof}
+
+\begin{lemma}[$\Vfour$-equivariance of the current, all orders]\label{lem:equiv}
+For every $g\in\Vfour$ and every $k\ge 0$,
+$g\cdot\jvec_k^{\text{face}}(\vhost) = \jvec_k^{\text{face}}(\vhost)$, hence
+$\jvec_k^{\text{face}}(\vhost) \in \operatorname{span}\{\nrho,\nax\}$ for all $k\ge1$.
+\end{lemma}
+
+\begin{proof}
+Identical in structure to THEO-DSL-6 Lemma~1 / THEO-DSL-8 Lemma~1, now with the full
+$\Vfour$ in place of $\Cs$: (i) $\Vfour$-equivariance of the rate function
+(Lemma~\ref{lem:v4}, $g\nperpF=\nperpF$); (ii) $\Vfour$ permutes the path set
+$\mathcal{P}_k(\vhost)$ as graph automorphisms fixing $\vhost$ (shell-locality (H4));
+(iii) $O(4)$-equivariance of edge-direction vectors. Re-indexing the order-$k$ sum by
+the $g$-action gives $g\cdot\jvec_k^{\text{face}} = \jvec_k^{\text{face}}$, so
+$\jvec_k^{\text{face}}$ lies in the $\Vfour$-invariant subspace, which is
+$\operatorname{span}\{\nrho,\nax\}$ by Lemma~\ref{lem:2d}.
+\end{proof}
+
+\section{Second-order coefficients}\label{sec:coeff}
+
+The $\mathcal{O}(\delta^2)$ coefficient is the path-integral assembly over the $144$
+directed two-edge paths $\vhost \to \ui \to v'$:
+\begin{equation}\label{eq:assembly}
+\jvec_2^{\text{face}}(\vhost)
+\;=\; \sum_{P=(\vhost\to u\to v')} (\hat e_1\cdot\nperpF)(\hat e_2\cdot\nperpF)\,\hat e_1,
+\qquad \hat e_1 = \widehat{u-\vhost},\ \ \hat e_2 = \widehat{v'-u},
+\end{equation}
+with path-class weight $W(P)=1$ per (H5$_F$) at sketch-document Layer 3 (the same
+ansatz as THEO-DSL-5/-7). Carrying out \eqref{eq:assembly} and projecting onto the
+frame gives the closed forms
+
+\begin{theorem}[Face-aligned $\mathcal{O}(\delta^2)$ closure]\label{thm:main}
+Under (H1$_F$)--(H5$_F$) (the THEO-DSL-8 hypothesis stack with (H5$_F$) the
+$W(P)=1$ path-class weight ansatz), the second-order face-aligned substrate-current
+coefficient is, exact in $\mathbb{Q}[\phi]$,
+\[
+\jvec_2^{\text{face}}(\vhost)
+= \Bigl(-14 + 7\phi\Bigr)\nrho + \Bigl(-6 + 2\phi\Bigr)\nax,
+\qquad
+\alpha_2^{(\rho)} = -14+7\phi = -\tfrac{7}{\phi^2}\approx-2.674,
+\quad
+\alpha_2^{(\text{ax})} = -6+2\phi \approx -2.764,
+\]
+with $\alpha_2^{(\perp 3)} = 0$ (forced by $\sigma_{\!F}$) and
+$\alpha_2^{(\text{diff})} = 0$ (forced by $\sigma_E$; the THEO-DSL-8 conclusion).
+The result is independent of the choice of incident face (verified over all $30$).
+\end{theorem}
+
+The four path classes by endpoint shell decompose as in Table~\ref{tab:classes}
+(basis $\{\nrho,\nax,\nperpiii\}$; the $\nperpiii$ column is identically zero,
+class by class).
+
+\begin{table}[h]\centering
+\begin{tabular}{lccc}
+\toprule
+class & \# paths & coeff $\nrho$ & coeff $\nax$ \\
+\midrule
+B.1 (round-trip, $v'=\vhost$) & 12 & $-\tfrac{7}{6} + \phi$ & $-\tfrac13 + \tfrac23\phi$ \\
+B.2 (first-shell, $v'\in S_1$) & 60 & $-5 + \tfrac{10}{3}\phi$ & $-\tfrac53 + \tfrac53\phi$ \\
+B.3 (cross-shell, $v'\in S_2$) & 60 & $-\tfrac{20}{3} + \tfrac52\phi$ & $-\tfrac{10}{3}$ \\
+B.4 (third-shell, $v'\in S_3$) & 12 & $-\tfrac{7}{6} + \tfrac16\phi$ & $-\tfrac23 - \tfrac13\phi$ \\
+\midrule
+\textbf{TOTAL} & 144 & $-14 + 7\phi$ & $-6 + 2\phi$ \\
+\bottomrule
+\end{tabular}
+\caption{Per-shell-class decomposition of $\jvec_2^{\text{face}}$. Every class has
+identically zero $\nperpiii$ component (and zero $\ndiff$ component), consistent with
+Lemma~\ref{lem:equiv}.}
+\label{tab:classes}
+\end{table}
+
+\paragraph{Cross-variant comparison.} The three Reading-C $\mathcal{O}(\delta^2)$
+closures now read: vertex $\alpha_2 = -9/\phi^2 \approx -3.438$ (1D, THEO-DSL-5);
+edge $(\alpha_2^{(\rho)},\alpha_2^{(\text{edge})}) = (9/(2\phi),\,9\phi-12) \approx
+(+2.781,\,+2.562)$ (2D, THEO-DSL-7); face
+$(\alpha_2^{(\rho)},\alpha_2^{(\text{ax})}) = (-7/\phi^2,\,2\phi-6) \approx
+(-2.674,\,-2.764)$ (2D, this artifact). The radial coefficient $-7/\phi^2$ at
+face-aligned is structurally close to the vertex $-9/\phi^2$ (same sign, same
+$1/\phi^2$ scale), while the edge case sits apart in sign --- a consequence of the
+non-vanishing first-shell-transverse (B.2) class structure that differs across the
+three stabilisers.
+
+\section{Mandatory vertex cross-check}\label{sec:crosscheck}
+
+Running the same assembly \eqref{eq:assembly} with $\nhat = \vhost$ (vertex-aligned)
+reproduces $\alpha_2 = -9/\phi^2$ exactly, with perpendicular residual
+$\sim 10^{-16}$ (verify script \S2). This guarantees the machinery is calibrated; the
+face-aligned coefficients are computed by the identical code path with only
+$\nhat\to\nperpF$ and the decomposition basis changed.
+
+\section{Anti-erasure correction to THEO-DSL-8}\label{sec:antierasure}
+
+\begin{antierasure}
+THEO-DSL-8 (Patch 0597) records, for the face-aligned variant, the residual symmetry
+$\Cs$ of order 2 and a $3$-dimensional invariant subspace $(\ui-\uj)^\perp =
+\operatorname{span}\{\nrho,\nax,\nperpF\}$. Both are incorrect, by two independent
+errors, surfaced here per the programme's anti-erasure discipline (cf.\ the
+$D_3\to\Dfive$ and $D_2\to\Cs$ stabiliser corrections at Patches 0596--0597):
+\begin{enumerate}
+\item \textbf{Residual symmetry $\Cs \to \Vfour$ (order $2 \to 4$).} THEO-DSL-8 \S2.2
+(``Subgroup preserving oriented $\nperpF$'') asserts that two of the four $\Vfour$
+elements flip $\nperpF\to-\nperpF$. This is false: $\nperpF$ is the face \emph{centroid}
+direction \eqref{eq:nperp}, fixed by every element of the face stabiliser (each
+permutes $\{\ui,\uj\}$ and fixes $\vhost$). In particular the reflection
+$\sigma_{\!F}$ through $\operatorname{span}\{\vhost,\ui,\uj\}$ fixes $\ui,\uj,\vhost$
+individually and hence fixes $\nperpF$; it is a genuine 600-cell automorphism
+(verified). The correct stabiliser of $(\vhost,\nperpF)$ is $\Vfour$ of order 4
+(Lemma~\ref{lem:v4}).
+\item \textbf{Invariant subspace $3$D $\to$ $2$D, and a degenerate basis.} With the
+correct $\Vfour$, the invariant subspace is $2$-dimensional
+$\operatorname{span}\{\nrho,\nax\}$ (Lemma~\ref{lem:2d}): $\sigma_E$ removes $\ndiff$
+and $\sigma_{\!F}$ removes $\nperpiii$. Independently, THEO-DSL-8's claimed basis
+$\{\nrho,\nax,\nperpF\}$ for its (over-stated) $3$D subspace is linearly
+\emph{dependent}: by \eqref{eq:nFdegenerate}, $\nperpF\in\operatorname{span}\{\nrho,\nax\}$,
+so those three vectors span only $2$D. ``Perpendicular to the face plane'' is a
+$2$-dimensional condition; the specific centroid choice $\nperpF$ happens to lie in
+$\operatorname{span}\{\nrho,\nax\}$, and the genuinely independent face-normal is
+$\nperpiii$ (the out-of-3-flat direction), which is \emph{excluded} by $\sigma_{\!F}$.
+\end{enumerate}
+\textbf{Net effect.} The face-aligned structural conclusion strengthens (smaller
+invariant subspace, $2$D not $3$D), and the dimensional-growth pattern across the
+Reading-C variants is $1 \to 2 \to 2$ (stabilisers $\Icoh \to \Dfive \to \Vfour$),
+\emph{not} $1 \to 2 \to 3$. The THEO-DSL-8 \emph{theorem statement}
+($\jvec_k\perp(\ui-\uj)$) remains \emph{true} but is non-tight; the stronger true
+statement is $\jvec_k\in\operatorname{span}\{\nrho,\nax\}$. We do not silently rewrite
+the THEO-DSL-8 entry here; we register the correction and recommend a follow-on
+structural-revision Patch of \texttt{face\_aligned\_invariant\_subspace\_structural.tex}
+under multi-reviewer scrutiny, propagating the $1\to2\to2$ pattern to all programme
+records that currently carry $1\to2\to3$.
+\end{antierasure}
+
+\section{Hypotheses, exclusions, falsifier}\label{sec:scope}
+
+\paragraph{Hypotheses.} (H1$_F$) face-aligned Reading C, $\nhat=\nperpF$ of
+\eqref{eq:nperp}; (H2) vertex-host unit-circumradius 600-cell; (H3$_F$) residual
+symmetry $\Vfour$ at $\vhost$ (corrected; Lemma~\ref{lem:v4}); (H4) F.1 Theorem 6.1
+perturbation-locality (THEO-DSL-1); (H5$_F$) Mechanism-A path-integral extension at
+$\mathcal{O}(\delta^k)$ with path-class weight $W(P)=1$, sketch-document Layer 3
+(DG-F15-4 default-(A)), the load-bearing scope qualifier.
+
+\paragraph{Exclusion classes.}
+(E1) $\mathcal{O}(\delta^k)$ for $k\ge 3$ not computed.
+(E2) Vertex-aligned (THEO-DSL-5) and edge-aligned (THEO-DSL-7) variants are separate.
+(E3) (H5$_F$) at sketch-document Layer 3 per DG-1 sub-option (A); publication-grade
+unconditional promotion deferred to priority queue item (G).
+(E4) Layer-4 derivation of the 600-cell substrate (OPEN-FP-F1-2) not in scope.
+(E5) Whether $\alpha_2^{(\rho)}$ and $\alpha_2^{(\text{ax})}$ are further constrained
+at framework-axiom level (beyond the $\Vfour$ admission) is open.
+
+\paragraph{Falsifier.} Any first-principles $\Vfour$-equivariant recomputation under
+(H1$_F$)--(H5$_F$) yielding $\jvec_2^{\text{face}}\notin\operatorname{span}\{\nrho,\nax\}$,
+or yielding $(\alpha_2^{(\rho)},\alpha_2^{(\text{ax})})\neq(-7/\phi^2,\,2\phi-6)$, or a
+vertex cross-check not reproducing $-9/\phi^2$; or a demonstration that $\sigma_{\!F}$
+is not a 600-cell automorphism fixing $\nperpF$ (which would restore $\Cs$/3D).
+
+\paragraph{Layer rigour.} Sketch-document Layer 3 under (H5$_F$), the same status as
+the vertex THEO-DSL-5 and edge THEO-DSL-7 coefficient closures. The $\Vfour$
+residual-symmetry and $2$D invariant-subspace results (Lemmas~\ref{lem:v4}--\ref{lem:2d})
+are publication-grade Layer 3 unconditional (symmetry-only, no (H5$_F$) dependency)
+and supersede the THEO-DSL-8 $\Cs$/3D identification.
+
+\section*{Verification}
+\texttt{series\_umbrella/series\_substrate\_chirality\_arc/dynamical\_substrate\_law/code/verify\_face\_alpha2\_closure.py}
+builds the explicit 120-vertex 600-cell, performs the vertex cross-check
+($-9/\phi^2$), verifies $\Vfour=\{e,\sigma_E,\sigma_{\!F},C_2\}$ are automorphisms
+fixing $(\vhost,\nperpF)$ with $2$D invariant subspace, confirms the THEO-DSL-8 basis
+degeneracy, computes the face closure $(-7/\phi^2,\,2\phi-6)$, reports the
+B.1--B.4 decomposition, and confirms robustness over all $30$ incident faces. All
+checks pass; coefficients exact in $\mathbb{Q}[\phi]$ with numerical agreement
+$\sim 10^{-16}$.
+
+\end{document}
