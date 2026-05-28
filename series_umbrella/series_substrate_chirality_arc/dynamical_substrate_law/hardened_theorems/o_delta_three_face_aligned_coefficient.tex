@@ -1,0 +1,511 @@
+% Patch 0620 A5_F^(3): Third-Order Closed-Form Substrate-Current Coefficients
+% at Face-Aligned Reading C in the 600-Cell
+%
+% OPEN-FP-F1-5 Sequence-3B closure artifact (THEO-DSL-11 candidate). Computes
+% the O(delta^3) face-aligned coefficients alpha_3^(rho), alpha_3^(ax) in the
+% 2D V_4-invariant subspace span{n_rho, n_ax} established at THEO-DSL-9 (Patch
+% 0615) -- the V_4 correction to THEO-DSL-8 multi-AI confirmed at Patch 0617.
+% Sketch-document Layer 3 under (H5_F^(3)) -- the natural extension of (H5_F)'s
+% W(P)=1 ansatz from P_2(v_host) to P_3(v_host), per DG-F15A-4 default-(A) per-
+% variant scope qualifier and DG-F15A-5 default-(A) single-theorem registration.
+%
+% CHANGELOG
+%   v1.0 (Patch 0620, Session 147, 28 May 2026): higher-order extension of
+%     THEO-DSL-9 (face k=2, Patch 0615 + Patch 0617 multi-AI confirmation).
+%
+% ** SUBSTANTIVE NEW FINDING -- the central content of this artifact **:
+%
+% The face-aligned k=3 coefficients are NOT in Q[phi]; they lie in sqrt(3)*Q[phi]/3:
+%   alpha_3^(rho, face) = (87 - 53 phi) * sqrt(3) / 3  ~ +0.71834
+%   alpha_3^(ax)        = (41 - 28 phi) * sqrt(3) / 3  ~ -2.48547
+%
+% Algebraic origin: |v_host + u_i + u_j|^2 = 3 + 3 phi = 3 phi^2, so
+%   |v_host + u_i + u_j| = phi * sqrt(3),
+% and n_Fperp = (v_host + u_i + u_j) / (phi*sqrt(3)) carries an unavoidable
+% 1/sqrt(3) factor. Each factor (e_j . n_Fperp) carries 1/sqrt(3); the k-fold
+% product has (1/sqrt(3))^k. At EVEN k the sqrt(3) factors pair up to a
+% rational; at ODD k a single sqrt(3) survives. Hence:
+%   - vertex variant (all k): clean Q[phi]              -- n_rho = v_host has no sqrt(3)
+%   - edge variant (all k):   clean Q[phi]              -- n_edge = phi*(u_1-v_h) has no sqrt(3)
+%   - face variant, k even:   clean Q[phi]              -- THEO-DSL-9 confirms at k=2
+%   - face variant, k odd:    sqrt(3) * Q[phi] / 3^((k-1)/2 + 1)
+%                                                       -- this artifact at k=3
+%
+% This is the **first F.1 result outside Q[phi]** in the entire programme. The
+% parity-dependent algebraic structure -- Q[phi] vs sqrt(3)*Q[phi] depending on
+% the parity of k at face-aligned -- is registered here as a substantive new
+% feature, NOT a computational artifact (verified at 80-digit mpmath precision
+% + PSLQ failure in {1, phi} basis + PSLQ success in {1, phi, sqrt(3), sqrt(3)*phi}
+% basis with the rational and Q[phi] coefficients exactly zero, leaving only the
+% sqrt(3) and sqrt(3)*phi components nonzero).
+%
+% The V_4-forced VANISHING of the two non-invariant components (Lemmas 1-2 of
+% THEO-DSL-9 / Patch 0615, multi-AI confirmed at Patch 0617) persists at k=3:
+%   alpha_3^(perp3) = 0  (forced by sigma_F in V_4, all orders)
+%   alpha_3^(diff)  = 0  (forced by sigma_E in V_4, all orders)
+%
+% Mandatory vertex cross-check at k=3: alpha_3^(vertex) = -126 + 81 phi
+% = 9(4-phi)/phi^3 ~ +5.061 (clean Q[phi]; reproduces THEO-DSL-10 cross-check).
+% Path enumeration: 1728 = 12^3 directed 3-edge paths across 13 non-empty
+% (s_v', s_v'') cells in the full 9-shell vertex classification (same reach as
+% THEO-DSL-10 edge k=3, including B_5).
+%
+% Verify script: code/verify_face_alpha3_closure.py (ALL 30 PASS checks).
+% Reasoning fragment: hardened_theorems/reasoning/0620.md.
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{antierasure}{Anti-erasure Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\nrho}{\hat{n}_\rho}
+\newcommand{\nax}{\hat{n}_{\text{ax}}}
+\newcommand{\nperpF}{\hat{n}_{F\perp}}
+\newcommand{\nperpthree}{\hat{n}_{\perp 3}}
+\newcommand{\ndiff}{\hat{n}_{\text{diff}}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\ui}{u_i}
+\newcommand{\uj}{u_j}
+\newcommand{\jvec}{\vec{j}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Vfour}{V_4}
+
+\title{Third-Order Closed-Form Substrate-Current Coefficients\\
+at Face-Aligned Reading C in the 600-Cell\\
+{\large (Sketch-Document Layer 3 under $(H5_F^{(3)})$; THEO-DSL-11 candidate;\\
+OPEN-FP-F1-5 Sequence-3B; Patch 0620)\\[4pt]
+{\normalsize \textbf{First F.1 result outside $\mathbb{Q}[\phi]$ --- odd-$k$ centroid-direction normalization signature}}}}
+\author{CPP Programme}
+\date{28 May 2026 (Session 147)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This artifact closes Sequence-3B of OPEN-FP-F1-5, extending THEO-DSL-9 (the
+face-aligned $\mathcal{O}(\delta^2)$ closure with the $V_4$/2D structural
+correction to THEO-DSL-8, multi-AI confirmed at Patch 0617) to the next order
+in $\delta$. Under the $V_4$-invariant 2-dimensional subspace
+$\mathrm{span}\{\nrho, \nax\}$ established at THEO-DSL-9, the order-three
+substrate-current vector at face-aligned Reading C is given in closed form by
+\begin{equation*}
+\boxed{\;\;
+  \jvec_3(\vhost) \;=\; \alpha_3^{(\rho)} \nrho \;+\; \alpha_3^{(\text{ax})} \nax,
+  \quad
+  \alpha_3^{(\rho)} = \frac{(87 - 53\phi)\sqrt{3}}{3},
+  \quad
+  \alpha_3^{(\text{ax})} = \frac{(41 - 28\phi)\sqrt{3}}{3}.
+\;\;}
+\end{equation*}
+Numerically $\alpha_3^{(\rho)} \approx +0.71834$ and $\alpha_3^{(\text{ax})}
+\approx -2.48547$.
+
+\paragraph{Substantive new finding (the central content of this artifact).}
+Unlike every prior closed-form coefficient in the F.1 programme --- which has
+lived in $\mathbb{Q}[\phi]$ since the inception of the dynamical substrate law
+arc --- the face-aligned $k=3$ coefficients live in $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$.
+The $\sqrt{3}$ factor is traceable to the exact-norm identity
+$\|\vhost + \ui + \uj\| = \phi\sqrt{3}$, which forces an unavoidable $1/\sqrt{3}$
+into the face-centroid direction $\nperpF$. At even $k$, pairs of factors
+$1/\sqrt{3} \cdot 1/\sqrt{3} = 1/3$ cancel back to rationals (THEO-DSL-9 at
+$k=2$, clean $\mathbb{Q}[\phi]$); at odd $k$ a single $\sqrt{3}$ survives. The
+parity-dependent algebraic structure --- $\mathbb{Q}[\phi]$ at even $k$ versus
+$\sqrt{3}\cdot\mathbb{Q}[\phi]$ at odd $k$ for the face-aligned variant ---
+is a real feature of the geometry, not a computational artifact. \textbf{This
+is the first F.1 result outside $\mathbb{Q}[\phi]$.}
+
+\paragraph{Structural inheritance preserved.} The $V_4$-forced vanishing of
+the two non-invariant components carries over to $k=3$ unconditionally from
+THEO-DSL-9 Lemmas 1--2 (multi-AI confirmed at Patch 0617):
+$\alpha_3^{(\perp 3)} = 0$ (forced by $\sigma_F$) and $\alpha_3^{(\text{diff})}
+= 0$ (forced by $\sigma_E$). The vertex-aligned cross-check at $k=3$
+reproduces $\alpha_3^{(\text{vertex})} = -126 + 81\phi = 9(4 - \phi)/\phi^3
+\approx +5.061$ (matching the THEO-DSL-10 cross-check, clean $\mathbb{Q}[\phi]$).
+The result is verified by independent numerical assembly of all
+$1728 = 12^3$ directed 3-edge paths from the host vertex, decomposing in the
+orthonormal basis $\{\nrho, \nax, \nperpthree, \ndiff\}$ over 13 non-empty
+$(s_{v'}, s_{v''})$ cells with the path reach extending to shell $B_5$ at
+this order. The full computation is sketch-document Layer 3 under the natural
+extension $(H5_F^{(3)})$ of the path-class weight ansatz $W(P) = 1$ from
+$\mathcal{P}_2(\vhost)$ to $\mathcal{P}_3(\vhost)$.
+\end{abstract}
+
+\section{Scope and provenance}\label{sec:scope}
+
+This artifact registers a new candidate hardened theorem THEO-DSL-11:
+the third-order ($\mathcal{O}(\delta^3)$) closed-form substrate-current
+coefficients at face-aligned Reading C in the 600-cell, under the
+2-dimensional $V_4$-invariant subspace established at THEO-DSL-9 (Patch
+0615), with the $V_4$ structural correction to THEO-DSL-8 multi-AI confirmed
+at Patch 0617. It is the direct higher-order continuation of THEO-DSL-9 and
+the face-aligned cousin of THEO-DSL-10 (edge $k=3$, Patch 0618).
+
+\paragraph{Inheritance from prior theorems.}
+\begin{itemize}
+\item \textbf{THEO-DSL-9} (candidate, Patch 0615; multi-AI confirmed Patch 0617):
+  face-aligned $\mathcal{O}(\delta^2)$ closure $\alpha_2^{(\rho)} = -14 + 7\phi
+  = -7/\phi^2$ and $\alpha_2^{(\text{ax})} = -6 + 2\phi$, in clean $\mathbb{Q}[\phi]$;
+  $V_4$/2D structural sub-result (Lemmas 1--2; cross-reviewer THREE-FOR-THREE
+  no-refutation; $V_4$-saturation proven by full 120-element host-stabilizer
+  enumeration). The structural lemmas carry over unconditionally to $k=3$.
+\item \textbf{THEO-DSL-10} (candidate, Patch 0618): edge-aligned $\mathcal{O}(\delta^3)$
+  closure $\alpha_3^{(\rho)} = -84 + 54\phi$ and $\alpha_3^{(\text{edge})} =
+  -63/2 + (21/2)\phi$, in clean $\mathbb{Q}[\phi]$. The path-enumeration
+  machinery (1728 paths, full 9-shell classification) is reused here at
+  face-aligned.
+\item \textbf{THEO-DSL-5} (Patch 0591), \textbf{THEO-DSL-7} (Patch 0613): vertex
+  and edge $k=2$ closures, $\mathbb{Q}[\phi]$. Used as additional cross-checks
+  via the same assembly machinery.
+\end{itemize}
+
+\paragraph{Hypotheses retained.}
+$(H1_F)$ Reading C with host $\vhost$ and face-centroid anchor
+$\nperpF = (\vhost + \ui + \uj)/\|\vhost + \ui + \uj\|$ for a chosen triangular
+face $\{\vhost, \ui, \uj\}$ at $\vhost$ ($\ui, \uj \in S_1$ with
+$\ui \cdot \uj = \phi/2$);
+$(H2)$ Mechanism A (anisotropic-rate path-integral first-order substrate-current
+ansatz with rate $r(\hat e) = r_0(1 + \delta \hat e \cdot \nperpF)$);
+$(H3_F)$ residual symmetry $\Vfour = \{e, \sigma_E, \sigma_F, C_2\}$ at $\vhost$,
+saturating the face stabilizer ($|I_h|/|\text{face orbit}| = 120/30 = 4$),
+multi-AI confirmed at Patch 0617;
+$(H4)$ the 600-cell unit-circumradius edge graph;
+$(H5_F^{(3)})$ the path-class weight $W(P) = 1$ extended from
+$\mathcal{P}_2(\vhost)$ to $\mathcal{P}_3(\vhost)$ (no $k$-dependent
+reweighting).
+
+The result is sketch-document Layer 3 under $(H5_F^{(3)})$: the assembly is
+unconditional given the ansatz, and the closed forms below are exact in
+$\sqrt{3} \cdot \mathbb{Q}[\phi]/3$ rather than numerical. The structural
+sub-result ($\jvec_3^{\text{face}} \in \mathrm{span}\{\nrho, \nax\}$) inherited
+from THEO-DSL-9 is publication-grade Layer 3 unconditional (it depends only on
+$V_4$-equivariance, not on any path-class weight).
+
+\section{The face frame and the $\sqrt{3}$ identity}\label{sec:sqrt3}
+
+The orthonormal frame at the chosen face $\{\vhost, \ui, \uj\}$:
+\begin{align}
+\nrho       &\;=\; \vhost                              & &\text{(radial)}\\
+\nax        &\;=\; \ui + \uj - \phi\,\vhost            & &\text{(face axial; \textbf{exact unit norm}, see Lemma~\ref{lem:nax-norm})}\\
+\nperpthree &\;=\; \text{unit vector} \perp \mathrm{span}\{\vhost, \ui, \uj\} & &\text{(out-of-3-flat)}\\
+\ndiff      &\;=\; (\ui - \uj)/\|\ui - \uj\|           & &\text{(in-face anti-symmetric)}
+\end{align}
+and the face-centroid direction
+\begin{equation}\label{eq:nFperp-def}
+\nperpF \;=\; \frac{\vhost + \ui + \uj}{\|\vhost + \ui + \uj\|}.
+\end{equation}
+
+\begin{lemma}[exact $\nax$ unit norm]\label{lem:nax-norm}
+$\|\ui + \uj - \phi\,\vhost\|^2 = 1$ exactly.
+\end{lemma}
+\begin{proof}
+Direct expansion:
+\begin{align*}
+\|\ui + \uj - \phi\vhost\|^2
+   &= |\ui|^2 + |\uj|^2 + \phi^2 + 2(\ui \cdot \uj) - 2\phi(\ui \cdot \vhost) - 2\phi(\uj \cdot \vhost)\\
+   &= 1 + 1 + \phi^2 + 2\cdot\tfrac{\phi}{2} - 2\phi\cdot\tfrac{\phi}{2} - 2\phi\cdot\tfrac{\phi}{2}\\
+   &= 2 + \phi^2 + \phi - 2\phi^2
+   = 2 + \phi - \phi^2
+   = 2 + \phi - (\phi + 1) = 1. \qedhere
+\end{align*}
+\end{proof}
+
+\begin{lemma}[the $\sqrt{3}$ identity]\label{lem:phi-sqrt3}
+$\|\vhost + \ui + \uj\| = \phi\sqrt{3}$ exactly.
+\end{lemma}
+\begin{proof}
+\begin{align*}
+\|\vhost + \ui + \uj\|^2
+   &= 3 + 2(\vhost \cdot \ui) + 2(\vhost \cdot \uj) + 2(\ui \cdot \uj)\\
+   &= 3 + 3 \cdot 2 \cdot \tfrac{\phi}{2} = 3 + 3\phi = 3(1+\phi) = 3\phi^2.
+\end{align*}
+Taking the positive square root, $\|\vhost + \ui + \uj\| = \phi\sqrt{3}$.
+\end{proof}
+
+\begin{corollary}[$\nperpF$ algebraic structure]\label{cor:nFperp-sqrt3}
+$\nperpF \in \mathbb{Q}[\phi,\,\sqrt{3}\,]^4$, with the unique $\sqrt{3}$
+appearing only in the denominator. Specifically,
+\begin{equation}\label{eq:nFperp-explicit}
+\nperpF \;=\; \frac{\vhost + \ui + \uj}{\phi\sqrt{3}}
+       \;=\; \frac{1}{\sqrt{3}} \cdot \frac{\vhost + \ui + \uj}{\phi},
+\end{equation}
+so $\nperpF = \sqrt{3}^{-1} \cdot w$ for some $w \in \mathbb{Q}[\phi]^4$.
+\end{corollary}
+
+In contrast, the vertex and edge frame vectors are entirely in
+$\mathbb{Q}[\phi]^4$:
+$\nrho = \vhost \in \mathbb{Q}[\phi]^4$ trivially, and
+$\hat n_{\text{edge}} = \phi(u_1 - \vhost) \in \mathbb{Q}[\phi]^4$ since the
+edge length is $|u_1 - \vhost| = 1/\phi$. The face variant is unique in
+carrying a $\sqrt{3}$ factor.
+
+\section{Parity-dependent algebraic structure}\label{sec:parity}
+
+The path-integral assembly at order $k$:
+\begin{equation}\label{eq:jk-assembly}
+\jvec_k(\vhost) \;=\; \sum_{P \in \mathcal{P}_k(\vhost)}
+   \prod_{j=1}^{k} (\hat e_j \cdot \nperpF) \cdot \hat e_1,
+\end{equation}
+where the assembly is over directed $k$-edge paths $\vhost \to u_1 \to \cdots
+\to u_k$ and $\hat e_j$ is the unit edge direction of step $j$.
+
+By Corollary~\ref{cor:nFperp-sqrt3}, each $\hat e_j \cdot \nperpF$ has the
+form $c_j/\sqrt{3}$ where $c_j \in \mathbb{Q}[\phi]$. The $k$-fold product
+gives
+\begin{equation}\label{eq:k-fold-product}
+\prod_{j=1}^{k} (\hat e_j \cdot \nperpF) \;=\; \frac{\prod_j c_j}{(\sqrt{3})^k}
+   \;=\; \frac{\prod_j c_j}{3^{k/2}}
+\end{equation}
+which equals
+\begin{equation*}
+\begin{cases}
+\dfrac{1}{3^{k/2}}\,\big(\text{element of } \mathbb{Q}[\phi]\big) & \text{if } k \text{ even},\\[4pt]
+\dfrac{\sqrt{3}}{3^{(k+1)/2}}\,\big(\text{element of } \mathbb{Q}[\phi]\big) & \text{if } k \text{ odd}.
+\end{cases}
+\end{equation*}
+Summing over $|\mathcal{P}_k(\vhost)| = 12^k$ paths and projecting onto a
+basis vector in $\mathbb{Q}[\phi]^4$ (such as $\nrho$ or $\nax$) preserves
+this structure. Hence:
+
+\begin{theorem}[parity-dependent algebraic structure]\label{thm:parity-structure}
+At face-aligned Reading C in the 600-cell with the $\nperpF$ substrate
+primitive direction, the $k$-th-order substrate-current coefficients
+$\alpha_k^{(\rho, \text{face})}$ and $\alpha_k^{(\text{ax})}$ (in the
+$V_4$-invariant 2D subspace $\mathrm{span}\{\nrho, \nax\}$) satisfy:
+\begin{equation}
+\alpha_k^{(\rho, \text{face})},\;\alpha_k^{(\text{ax})}
+\;\in\;
+\begin{cases}
+\mathbb{Q}[\phi] / 3^{k/2}        & \text{if } k \text{ even},\\[4pt]
+\sqrt{3}\cdot\mathbb{Q}[\phi] / 3^{(k+1)/2} & \text{if } k \text{ odd}.
+\end{cases}
+\end{equation}
+The vertex (THEO-DSL-3, -4, -5; THEO-DSL-10 cross-check) and edge (THEO-DSL-7,
+-10) variants live in $\mathbb{Q}[\phi]$ at all $k$, since their substrate
+primitive directions ($\nrho = \vhost$, $\hat n_{\text{edge}} \propto u_1 - \vhost$)
+carry no $\sqrt{3}$.
+\end{theorem}
+
+\begin{proof}[Sketch]
+The path-class weight $W(P) = 1$ ansatz $(H5_F^{(k)})$ + the rate-function
+factorisation~\eqref{eq:jk-assembly} + the $\sqrt{3}$-only-in-$\nperpF$
+structure of Corollary~\ref{cor:nFperp-sqrt3} give a sum of $12^k$
+$\mathbb{Q}[\phi,\sqrt{3}]$-valued vectors of the form
+$\sqrt{3}^{-k}\cdot(\text{element of }\mathbb{Q}[\phi]^4)$. Projection onto a
+$\mathbb{Q}[\phi]^4$ basis vector yields a scalar of the form
+$\sqrt{3}^{-k}\cdot(\text{rational of }\mathbb{Q}[\phi])$. The parity case
+analysis on $\sqrt{3}^{-k}$ gives the stated dichotomy.
+\end{proof}
+
+\begin{remark}
+This is the first F.1 result outside $\mathbb{Q}[\phi]$ in the dynamical
+substrate law programme. It is also the first case in which the algebraic
+type of the closed-form coefficient depends non-trivially on the parity of
+the order $k$. The structure is a genuine geometric feature of the face-
+centroid direction in the 600-cell --- specifically, the fact that the
+sum-of-three-unit-vectors $\vhost + \ui + \uj$ has squared norm
+$3 + 3\phi = 3\phi^2$ rather than a perfect square in $\mathbb{Q}[\phi]$ ---
+not a computational artifact.
+\end{remark}
+
+\section{Closed forms at $k=3$}\label{sec:results}
+
+By Theorem~\ref{thm:parity-structure}, the face-aligned $k=3$ coefficients
+must lie in $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$. The explicit values:
+
+\begin{theorem}[THEO-DSL-11 candidate: face-aligned $\mathcal{O}(\delta^3)$
+coefficients]\label{thm:dsl11}
+Under hypotheses $(H1_F)$--$(H4)$ and $(H5_F^{(3)})$,
+\begin{align}
+\jvec_3(\vhost) &= \alpha_3^{(\rho)} \nrho \;+\; \alpha_3^{(\text{ax})} \nax, \\
+\alpha_3^{(\rho)} &= \frac{(87 - 53\phi)\sqrt{3}}{3}
+                   = \sqrt{3}\left(29 - \frac{53\phi}{3}\right)
+                   \approx +0.71834, \\
+\alpha_3^{(\text{ax})} &= \frac{(41 - 28\phi)\sqrt{3}}{3}
+                   = \sqrt{3}\left(\frac{41 - 28\phi}{3}\right)
+                   \approx -2.48547.
+\end{align}
+Both coefficients are independent of the choice of incident face
+$\{\ui, \uj\}$ (verified explicitly over all 30 triangular faces incident to
+$\vhost$, \S\ref{sec:robustness}). The two non-invariant components vanish
+identically:
+\begin{equation}
+\alpha_3^{(\perp 3)} = 0, \quad \alpha_3^{(\text{diff})} = 0,
+\end{equation}
+forced unconditionally by $V_4$-equivariance (Lemmas 1--2 of THEO-DSL-9 /
+Patch 0615; multi-AI confirmed at Patch 0617).
+\end{theorem}
+
+\begin{proof}[Computation]
+The vector~\eqref{eq:jk-assembly} is evaluated by enumerating all
+$1728 = 12^3$ directed 3-edge paths from $\vhost$ and summing the product of
+three dot products against $\hat e_1$ (the first-edge direction). The
+$V_4$-forced direction of the result --- $\jvec_3 \in \mathrm{span}\{\nrho,
+\nax\}$ --- is the same structural lemma used at $k = 2$ (THEO-DSL-9 \S2.1)
+and carries over to $k=3$ without modification (the lemma depends only on
+$V_4$-equivariance of the assembly and $V_4$-fixedness of $\nperpF$). The
+non-zero components in the basis $\{\nrho, \nax\}$ are extracted via
+inner products in the exact-unit-norm frame (Lemma~\ref{lem:nax-norm}); the
+result is identified with the closed forms above via PSLQ at 80-digit
+mpmath precision in the basis $\{1, \phi, \sqrt{3}, \sqrt{3}\phi\}$,
+showing that the rational and $\mathbb{Q}[\phi]$-only components are
+exactly zero while the $\sqrt{3}$ and $\sqrt{3}\phi$ components are
+$(29, -53/3)$ and $(41/3, -28/3)$ respectively. The closed forms are then
+verified to machine-double precision in the verify script
+\texttt{code/verify\_face\_alpha3\_closure.py} (all 30 PASS checks).
+\end{proof}
+
+\begin{corollary}[$k=3$ vertex cross-check]
+The same 1728-path assembly with $\nhat = \vhost$ (vertex-aligned cross-check)
+reproduces $\alpha_3^{(\text{vertex})} = -126 + 81\phi = 9(9\phi - 14) = 9(4
+- \phi)/\phi^3 \approx +5.061$, in clean $\mathbb{Q}[\phi]$ as predicted by
+THEO-DSL-4 + Theorem~\ref{thm:parity-structure}. The $k=1, k=2$ cross-checks
+yield $3/\phi^2 = 6 - 3\phi$ and $-9/\phi^2 = -18 + 9\phi$ respectively,
+locking the assembly convention to the one used in THEO-DSL-5/-7/-9/-10.
+\end{corollary}
+
+\section{Per-2D-shell-class decomposition}\label{sec:per-class}
+
+The 1728 directed 3-edge paths distribute across the same 13 non-empty
+$(s_{v'}, s_{v''})$ cells as the edge $k=3$ case (THEO-DSL-10); the cell
+structure reflects the geometry of the 600-cell rather than the choice of
+substrate direction, so the cell counts and shell reach are identical. The
+distribution into the per-cell coefficient contributions, however, depends
+on $\nperpF$ and is distinct from the edge case. The per-class numerics
+(decimal approximations in $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$):
+
+\begin{center}
+\small
+\begin{tabular}{l c r r}
+\toprule
+$(s_{v'}, s_{v''})$ & $\#P$ & $\alpha_3^{(\rho)}$-cell & $\alpha_3^{(\text{ax})}$-cell \\
+\midrule
+$(B_0, B_1)$    & $144$  & $-1.5636$  & $-2.5820$ \\
+$(B_1, B_0)$    & $60$   & $\phantom{-}0.0000$  & $+0.2887$ \\
+$(B_1, B_1)$    & $300$  & $-0.3139$  & $-0.0240$ \\
+$(B_1, B_2)$    & $300$  & $-0.8219$  & $-2.3982$ \\
+$(B_1, B_3)$    & $60$   & $-0.2272$  & $-0.7731$ \\
+$(B_2, B_1)$    & $180$  & $-4.4954$  & $-6.3668$ \\
+$(B_2, B_2)$    & $180$  & $-0.4543$  & $-0.9375$ \\
+$(B_2, B_3)$    & $180$  & $+2.0432$  & $+2.4180$ \\
+$(B_2, B_4)$    & $180$  & $+6.0843$  & $+7.8473$ \\
+$(B_3, B_1)$    & $12$   & $-0.7601$  & $-1.1196$ \\
+$(B_3, B_2)$    & $60$   & $-1.5921$  & $-2.4938$ \\
+$(B_3, B_4)$    & $60$   & $+1.9813$  & $+2.5289$ \\
+$(B_3, B_5)$    & $12$   & $+0.8379$  & $+1.1266$ \\
+\midrule
+\textbf{Total}  & $1728$ & $+0.7183 \;=\; (87 - 53\phi)\sqrt{3}/3$
+                         & $-2.4855 \;=\; (41 - 28\phi)\sqrt{3}/3$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Observations.}
+\begin{enumerate}
+\item All 13 cells have $\hat n_{\perp 3}$-component and $\hat n_{\text{diff}}$-
+  component $\sim 10^{-16}$ (machine zero), confirming the $V_4$-forced
+  vanishing cell-by-cell, not merely in the total --- a stronger structural
+  fact than the global zero.
+\item The two largest single contributors are $(B_2, B_4)$ (paths reaching the
+  equator at $v''$) with $+6.08, +7.85$ and $(B_2, B_1)$ with $-4.50, -6.37$,
+  partially cancelling.
+\item The path reach to $B_5$ in the $(B_3, B_5)$ cell (12 paths) is small
+  but non-vanishing: $+0.84, +1.13$, signed differently from the edge case.
+\end{enumerate}
+
+\section{Robustness over face choice}\label{sec:robustness}
+
+By THEO-DSL-9, the coefficient pair $(\alpha_3^{(\rho)},
+\alpha_3^{(\text{ax})})$ is invariant under the $H_4$-orbit action on the 30
+incident faces $\{\ui, \uj\}$ at $\vhost$: choosing a different face rotates
+$\nperpF$ within $T_{\vhost}S^3$ but leaves the $V_4$-invariant subspace
+$\mathrm{span}\{\nrho, \nax\}$ and the projected coefficients unchanged. The
+verify script confirms this explicitly: across all 30 faces, the standard
+deviation of each coefficient over the orbit is $< 10^{-11}$ (double
+precision); the $\hat n_{\perp 3}$ and $\hat n_{\text{diff}}$ components are
+identically zero ($|\text{max}| < 10^{-12}$).
+
+\section{Exclusions retained}\label{sec:exclusions}
+\begin{enumerate}
+\item[$(E1)$] No path-class weight other than $W(P) = 1$ at $k=3$ is
+  considered; $(H5_F^{(3)})$ is the natural extension of $(H5_F)$ and is the
+  same ansatz used at THEO-DSL-9.
+\item[$(E2)$] Vertex (THEO-DSL-3,-4,-5; THEO-DSL-10 cross-check) and edge
+  (THEO-DSL-7, -10) variants are separate artifacts at the same order.
+\item[$(E3)$] No promotion of Layer 3 status to publication-grade: the
+  underlying ansatz $(H5_F^{(3)})$ is sketch-document Layer 3, not
+  axiomatically derived. The $V_4$/2D structural sub-results (vanishing of
+  $\alpha_3^{(\perp 3)}$ and $\alpha_3^{(\text{diff})}$) are publication-grade
+  Layer 3 unconditional, multi-AI confirmed at Patch 0617 in the THEO-DSL-9
+  review cycle.
+\item[$(E4)$] No claim that the parity-dependent $\mathbb{Q}[\phi]$ vs
+  $\sqrt{3}\cdot\mathbb{Q}[\phi]$ structure (Theorem~\ref{thm:parity-structure})
+  generalises to other Reading-C variants or other path-class weight ansatze.
+  The $\sqrt{3}$ in $\nperpF$ is specific to the face-centroid direction at
+  vertex-host convention.
+\item[$(E5)$] No extension to $k \geq 4$ in this artifact (Sequence-4B and
+  beyond are future OPEN-FP-F1-5 targets; $k=4$ face is predicted to be back
+  in clean $\mathbb{Q}[\phi]/9$ by Theorem~\ref{thm:parity-structure}, but
+  this prediction is not yet computationally verified).
+\end{enumerate}
+
+\section{Provenance and verification}\label{sec:provenance}
+
+The exact closed forms above are obtained by:
+\begin{enumerate}
+\item Building the 600-cell from first principles (16-cell + tesseract +
+  snub 24-cell with even-permutation parity) and verifying its 120-vertex,
+  720-edge, 12-regular structure.
+\item Verifying the exact-norm identities $\|\nax\| = 1$ (Lemma~\ref{lem:nax-norm})
+  and $\|\vhost + \ui + \uj\| = \phi\sqrt{3}$ (Lemma~\ref{lem:phi-sqrt3}).
+\item Enumerating all 1728 directed 3-edge paths $\vhost \to u_1 \to u_2
+  \to u_3$ and computing the assembly~\eqref{eq:jk-assembly} with full
+  9-shell vertex classification (the 4-shell coarsening $B_0..B_3$ that
+  suffices at $k \leq 2$ does NOT suffice at $k=3$; cf. THEO-DSL-10 reasoning
+  fragment 0618.md).
+\item Decomposing the result in the orthonormal basis $\{\nrho, \nax,
+  \nperpthree, \ndiff\}$ via direct dot products (the frame is exactly
+  orthonormal in $\mathbb{Q}[\phi]^4$).
+\item Extracting closed forms in $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$ via mpmath/
+  PSLQ at 80-digit precision in the basis $\{1, \phi, \sqrt{3}, \sqrt{3}\phi\}$.
+\item Verifying the resulting closed-form expressions to machine-double
+  precision in the verify script.
+\item Cross-checking via the vertex-aligned $k=1, k=2, k=3$ targets
+  ($3/\phi^2$, $-9/\phi^2$, $-126 + 81\phi$), the THEO-DSL-9 reproduction
+  at $k=2$ face ($-7/\phi^2$, $2\phi - 6$), and the $V_4$-forced vanishing
+  of the two non-invariant components (machine zero across all 30 faces).
+\end{enumerate}
+See \texttt{code/verify\_face\_alpha3\_closure.py} for the full verification
+(all 30 PASS checks). The verbatim reasoning trail is captured in
+\texttt{hardened\_theorems/reasoning/0620.md}.
+
+\begin{antierasure}
+The $\sqrt{3}$ factor in the THEO-DSL-11 closed forms is a substantive new
+feature relative to the entire prior F.1 corpus, which has lived in
+$\mathbb{Q}[\phi]$. Should a future multi-AI review surface either (i) a
+counter-derivation in clean $\mathbb{Q}[\phi]$ (which would contradict
+Theorem~\ref{thm:parity-structure} unless the $V_4$-invariant subspace
+admits a basis other than $\{\nrho, \nax\}$ that hides the $\sqrt{3}$), or
+(ii) a coefficient value different from those stated in
+Theorem~\ref{thm:dsl11}, this artifact must be retained verbatim and a
+separate revision/supersession artifact created, following the procedure
+established at Patches 0615--0617 for the THEO-DSL-8 $\to$ THEO-DSL-9
+correction. The author has not been able to construct a $\mathbb{Q}[\phi]$
+basis for $\mathrm{span}\{\nrho, \nax\}$ that absorbs the $\sqrt{3}$
+without introducing it elsewhere; the parity-dependent algebraic structure
+of Theorem~\ref{thm:parity-structure} therefore appears to be a robust
+feature of the face-aligned variant, but multi-AI verification is invited
+on this point.
+\end{antierasure}
+
+\end{document}
