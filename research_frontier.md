@@ -57,6 +57,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 | QM | [`frontier_sectors/QM.md`](frontier_sectors/QM.md) | Quantum Mechanics | 5 |
 | SR | [`frontier_sectors/SR.md`](frontier_sectors/SR.md) | Special Relativity / Gravity | 8 |
 | SD | [`frontier_sectors/SD.md`](frontier_sectors/SD.md) | Foundations / Superdeterminism | 6 |
+| CHIR | [`frontier_sectors/CHIR.md`](frontier_sectors/CHIR.md) | Substrate Chirality Arc — chirality audit + downstream OPEN-CHIR-* derivation programme | 5 active, 1 resolved |
 | GLOBAL | [`frontier_sectors/GLOBAL.md`](frontier_sectors/GLOBAL.md) | Cross-Series (e.g., three SM generations, full SM from single 600-cell) | 2 |
 | WORKFLOW | [`frontier_sectors/WORKFLOW.md`](frontier_sectors/WORKFLOW.md) | Workflow / Infrastructure | 1 |
 
@@ -71,7 +72,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 
 - **Bootup** loads this dashboard only (~280 lines). It does NOT load any sector file.
 - **Session work** loads the relevant sector file on demand. Working OPEN-SS-35 → load `frontier_sectors/SS.md`. Working SF-4 → load `frontier_sectors/FP.md`. Working PMNS angles (OPEN-SM-5) → load `frontier_sectors/SM.md`.
-- **Cross-sector planning** may load multiple sector files, but rarely all eleven. Programme-level questions (e.g., "what closes if SS-35 closes?") use §8 Dependency Graph below as the entry point.
+- **Cross-sector planning** may load multiple sector files, but rarely all twelve. Programme-level questions (e.g., "what closes if SS-35 closes?") use §8 Dependency Graph below as the entry point.
 
 ### Decomposition Provenance
 

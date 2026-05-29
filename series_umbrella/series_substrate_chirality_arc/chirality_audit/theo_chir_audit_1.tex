@@ -1,0 +1,708 @@
+% ============================================================
+% THEO-CHIR-AUDIT-1: Chirality Entry-Point Enumeration in the
+%   Conscious Point Physics Framework
+% A Layer-3 Unconditional Structural-Cataloging Theorem
+% Conscious Point Physics --- Substrate Chirality Arc
+%   (series_umbrella/series_substrate_chirality_arc/chirality_audit/)
+%
+% Purpose: produce an exhaustive, classified inventory of every point
+%   in the current CPP framework (axioms A1-A11 in the canonical
+%   9-axiom post-consolidation set + 600-cell geometry + the PCD cycle
+%   dynamics + the existing CHIR-sector derivations) where chirality is
+%   referenced, presupposed, or implicitly used; and to assign each entry
+%   to one of three categories (primitive / emergent / unregistered) along
+%   the three operational senses of chirality (spatial / temporal /
+%   CP-asymmetric). The audit is the precondition for the downstream
+%   OPEN-CHIR-* derivation programme.
+%
+% Scope: this is a structural-cataloging theorem, NOT a derivation of any
+%   specific chirality-touching element. It maps where chirality lives so
+%   downstream derivations have clear targets. It consumes the current
+%   axiom set + geometric primitives as given; it does NOT introduce new
+%   framework axioms.
+%
+% Patch 0632 (Session 148) --- rebuild of the audit artifact after the
+%   Session-147/148 working window overflowed mid-construction with no
+%   handover. Built faithfully from the Patch 0630 scope-and-precondition
+%   sketch (theo_chir_audit_1_scope.md). Precondition gaps cleared:
+%   PCD terminology restored to "Perceive-Compute-Displace" at Patch 0631
+%   (TODO-012); canonical axiom count confirmed at 9 (A1-A11 numbering
+%   with A6' consolidating four earlier axioms, A7/A9 retired). No
+%   CHIR-AUDIT / OPEN-CHIR-* IDs pre-existing in the registry (clone-first
+%   gate grep clean).
+%
+% CHANGELOG
+%   v1.0 (Patch 0632, Session 148, 29 May 2026) --- initial registration
+%     of THEO-CHIR-AUDIT-1 at publication-grade Layer 3 unconditional
+%     (pending multi-AI review). Eight sections per scope-sketch
+%     section structure. 27-entry classification table.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{longtable}
+\usepackage{array}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Oof}[1]{\mathcal{O}(#1)}
+\newcommand{\wPCD}{\vec{\omega}_{\text{PCD}}}
+
+\title{\textbf{THEO-CHIR-AUDIT-1}\\[4pt]
+Chirality Entry-Point Enumeration in the Conscious Point Physics Framework\\[6pt]
+\large A Layer-3 Unconditional Structural-Cataloging Theorem}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0632, Session 148 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+We produce an exhaustive, classified inventory of every point in the current
+Conscious Point Physics (CPP) framework where chirality is referenced,
+presupposed, or implicitly used. The framework inputs audited are: the
+canonical nine-axiom set (A1--A11 in the post-consolidation numbering, with
+A6$'$ consolidating four earlier axioms and A7/A9 retired); the 600-cell
+geometric substrate; the Perceive--Compute--Displace (PCD) per-Conscious-Point
+per-Absolute-Moment cycle; and the existing chirality-sector derivations
+(THEO-CHIR-CONT-1/2/3, THEO-SD-CHIR-1/2, THEO-DSL-1 through THEO-DSL-12,
+under the OPEN-SD-CHIR-PRIMITIVE umbrella). For each chirality-touching
+element we record its \emph{source} (axiom / geometry / dynamics / derivation),
+its \emph{operational sense} (spatial / temporal / CP-asymmetric), and its
+\emph{category} (primitive / emergent / unregistered). The result
+(Theorem~\ref{thm:audit}) is a 27-entry classification map. Its central finding
+is that \emph{spatial} chirality enters the framework at a single irreducible
+primitive --- the substrate primitive 4D direction $\nhat$ (FI-C-RC-1) --- with
+all other geometric handednesses either gauge-removable or emergent from
+$\nhat$ plus the 600-cell; that \emph{temporal} chirality is sourced by the PCD
+sequence (carried by A1 + A4) and is currently a primitive whose time-reversal
+asymmetry is presupposed rather than asserted; and that \emph{CP-asymmetric}
+chirality is uniformly emergent, requiring $\nhat$, the dynamics, and the matter
+content to combine. The audit registers the downstream OPEN-CHIR-* derivation
+programme. This is a structural-cataloging theorem at publication-grade Layer~3
+unconditional: it uses the current axiom set and geometric primitives as given
+and introduces no new framework axiom. Falsification is by exhibiting a
+chirality-touching element absent from the inventory, or by showing an inventory
+entry is misclassified.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: the audit's questions, senses, and inputs}
+\label{sec:setup}
+% ============================================================
+
+\subsection{The three primary questions}
+
+The audit produces an exhaustive enumeration of every point in the current CPP
+framework where chirality enters --- as an explicit axiom clause, an implicit
+geometric construction choice, a dynamical coupling, or an unregistered
+assumption --- and a classification of each.
+
+\begin{description}
+\item[Q1 (Inventory).] What are all the points in CPP A1--A11 (canonical
+9-axiom set) $+$ 600-cell geometry $+$ PCD-cycle dynamics $+$ existing
+CHIR-sector derivations where chirality is referenced, presupposed, or
+implicitly used?
+\item[Q2 (Classification).] For each inventory entry, is it (a) \emph{primitive}
+(already axiomatized in the current set or in a registered foundational input),
+(b) \emph{emergent} (derivable from geometry $+$ dynamics without independent
+assumption), or (c) \emph{unregistered} (currently assumed but neither
+axiomatized nor derived)?
+\item[Q3 (Operational sense).] For each inventory entry, which operational
+sense(s) of chirality (\S\ref{sec:senses}) does it produce --- spatial,
+temporal, CP-asymmetric, or a combination?
+\end{description}
+
+The audit does \emph{not} answer the primitive-vs-emergent question for any
+specific element by derivation; it produces the classification map that names
+every such element and assigns it provisionally, with the substantive
+derivation work becoming the registered downstream OPEN-CHIR-* programme.
+
+\subsection{Three operational senses of chirality}
+\label{sec:senses}
+
+\begin{description}
+\item[(a) Spatial chirality.] The existence of non-superposable mirror images
+--- handedness in 3- or 4-dimensional space. Operationally: there exists an
+orientation-reversing isometry $\phi$ (e.g.\ a 4D reflection) such that $\phi$
+applied to the configuration yields a configuration not superposable onto the
+original by the rotation group of the substrate. Spatial chirality enters CPP if
+any geometric or dynamical construction selects between left- and right-handed
+mirror-image realisations.
+
+\item[(b) Temporal chirality.] An arrow of time --- distinguishing forward
+dynamics from time-reversed dynamics. Operationally: there exists a
+time-reversal operator $T$ that is \emph{not} a symmetry of the substrate
+dynamics. Temporal chirality enters CPP if the substrate's dynamical evolution
+(the per-CP per-Absolute-Moment cycle) is not invariant under $t \mapsto -t$.
+
+\item[(c) CP-asymmetric chirality.] The combined charge--parity asymmetry of the
+weak interactions in the Standard-Model sense. Operationally: there exists a
+combined $CP$ operator that, applied to a process amplitude, yields a different
+amplitude. This is the sense in which the observed universe is chiral at the
+deepest empirical level (CP violation in kaon and B-meson decay; the
+matter--antimatter asymmetry of the cosmos).
+\end{description}
+
+These senses are operationally distinct but logically interrelated. The downstream
+derivation work differs sharply by sense: spatial chirality from geometry is
+typically a Wythoff-construction or partition choice; temporal chirality from
+dynamics typically requires showing the cycle has irreversible coupling;
+CP-asymmetric chirality typically requires a combined argument involving both
+geometry and dynamics interacting with matter content.
+
+\subsection{Inputs the audit consumes}
+
+\begin{enumerate}[label=(\roman*)]
+\item The canonical axiom set per \texttt{axiom-registry.md}: nine axioms in
+the post--SS-2 consolidation. Tier~1 ontological primitives A1 (CP existence:
+polarity $\pm$, type electric/quark, position; capacity to perceive and respond),
+A2 (600-cell topology: $V{=}120$, $E{=}720$, $F{=}1200$, $C{=}600$, $z{=}12$),
+A3 (DI-bit propagation at $c = \ell_P/t_P$ carrying complex amplitudes
+$\psi = \sqrt{\rho}\,e^{i\varphi}$), A4 (the Nexus: global consistency at each
+Absolute Moment); Tier~2 metric A5 ($\eta = \ell_{\text{edge}}/R_{\text{circ}} =
+1/\phi$); Tier~3 A6$'$ (Walk-Dimension Gauge Principle, consolidating the former
+A6+A7+A8+A9); Tier~4 A10 (colour attraction, $\varepsilon_S < 0$); Tier~5 A8$'$
+(Cage-Volume Scaling); Tier~6 A11 (Lattice-Scale Grounding). The legacy
+``A1--A11'' colloquial referencing reflects the historical pre-consolidation
+count; this audit footnotes that history and uses the canonical nine.
+
+\item The 600-cell construction per the foundational documents (the static
+polytope with full symmetry group $\Hfour$ of order $14{,}400$).
+
+\item The canonical PCD-cycle specification: Perceive $\to$ Compute $\to$
+Displace, the agentic per-CP per-Absolute-Moment cycle restored as canonical at
+Patch 0631 (the ``Polarize-Capture-Depolarize'' variant introduced at Session 146
+was a terminological drift, now corrected). PCD is distinct from ZBW (the rapid
+between-CPs oscillation in dipole pairs).
+
+\item The existing CHIR-sector derivations: THEO-CHIR-CONT-1/2/3 (Layer-4
+continuum-EFT projections), THEO-SD-CHIR-1/2 (substrate-level Layer-3 closures),
+THEO-DSL-1 through THEO-DSL-12 (the F.1 Dynamical Substrate Law arc), all under
+the OPEN-SD-CHIR-PRIMITIVE umbrella; the substrate chirality magnitude
+$\chi = \phi^{-3}$ and the cross-sector handle $\chi/6 \approx 0.0394$.
+
+\item The F.1 sub-question linking $\nhat$ to the PCD-cycle orientation
+pseudovector $\wPCD$ (active workstream;
+\texttt{F1\_subquestion\_pcd\_orientation\_link.md}).
+\end{enumerate}
+
+\subsection{Layer target}
+
+Publication-grade Layer~3 unconditional. The audit uses the current axiom set and
+the established 600-cell geometric primitives as given; it does not derive new
+framework axioms; it maps where chirality lives so downstream derivations have
+clear targets.
+
+% ============================================================
+\section{Axiom-level pass: A1 through A11}
+\label{sec:axioms}
+% ============================================================
+
+We walk the nine canonical axioms in order. For each: (i) does it reference
+direction, orientation, sequence, sign, or handedness in any form? (ii) if so,
+does it \emph{impose} a chirality choice or merely \emph{permit} one? (iii) which
+operational sense does it touch? Most axioms read ``no chirality reference''; the
+discipline is to check each explicitly.
+
+\paragraph{A1 (CP existence).} Two clauses bear on chirality.
+\emph{Polarity/type.} Polarity ($\pm$) and type (electric/quark) are sign-valued
+and binary; a sign is not a handedness, so polarity alone sources no chirality.
+But the \emph{coupling} between polarity and the substrate dynamics --- which
+polarity captures which partner, in which orientation --- is a candidate
+spatial/CP-asymmetric source, deferred to the dynamics pass (D3,
+\S\ref{sec:dynamics}).
+\emph{Perceive-and-respond capacity.} A1 endows the CP with the capacity to
+perceive its environment and respond by deterministic rule. Together with A4 this
+carries the PCD cycle, whose Perceive $\to$ Compute $\to$ Displace ordering is a
+\emph{temporal} sequence; see A4 and D1. \textbf{Touches: temporal (via PCD),
+spatial/CP (via polarity coupling, deferred).}
+
+\paragraph{A2 (600-cell topology).} A2 fixes the substrate as the 600-cell. As a
+\emph{static} polytope the 600-cell is achiral: its full symmetry group $\Hfour$
+contains orientation-reversing isometries (reflections), so any chiral
+sub-structure is matched by its mirror image and no handedness is imposed at the
+axiom level. A2 therefore \emph{permits} chirality (it hosts chiral internal
+structures, \S\ref{sec:geometry}) but does not \emph{impose} it. \textbf{Touches:
+spatial (permissive only).}
+
+\paragraph{A3 (DI-bit propagation).} A3 carries a complex amplitude
+$\psi = \sqrt{\rho}\,e^{i\varphi}$. Complex conjugation $\varphi \mapsto -\varphi$
+reverses the phase winding; if the substrate dynamics treat $+\varphi$ and
+$-\varphi$ asymmetrically, a CP-asymmetric handedness is sourced (complex
+conjugation is the substrate analog of charge conjugation). A3 as stated does not
+itself assert such asymmetry --- it permits both windings. Whether the dynamics
+break the $\varphi \mapsto -\varphi$ symmetry is a dynamics-pass question (D3) and
+a downstream target (OPEN-CHIR-3). \textbf{Touches: CP-asymmetric (permissive,
+deferred).}
+
+\paragraph{A4 (the Nexus).} A4 enforces global consistency at each
+\emph{Absolute Moment}. The Absolute Moment introduces a discrete time cadence; in
+conjunction with the PCD cycle (A1) it gives the substrate a forward dynamical
+ordering. If the canonical specification asserts the forward Perceive $\to$
+Compute $\to$ Displace sequence and does not also assert time-reversal symmetry,
+A4 + A1 jointly source \emph{temporal} chirality at the axiom level. This is the
+strongest axiom-level chirality candidate. \textbf{Touches: temporal.}
+
+\paragraph{A5 (propagation efficiency $\eta = 1/\phi$).} A scalar ratio. $\phi$ is
+achiral. No direction, orientation, or sequence. \textbf{No chirality reference.}
+
+\paragraph{A6$'$ (Walk-Dimension Gauge Principle).} A6$'$ specifies that walk
+dimensionality plus coordination geometry on the 600-cell determines gauge
+structure, coupling pattern, and mass enhancement. ``Walk'' carries a notion of
+oriented traversal; however, the gauge structure A6$'$ produces is parity-blind
+at this level (it counts coordination, not handedness), and the principle is
+stated symmetrically over walk orientations. A6$'$ \emph{permits} an oriented walk
+but does not impose a handedness. \textbf{Touches: spatial (permissive only).}
+
+\paragraph{A8$'$ (Cage-Volume Scaling).} A power-law mass-scaling relation. No
+direction, orientation, sequence, or sign-of-handedness. \textbf{No chirality
+reference.}
+
+\paragraph{A10 (colour attraction).} Fixes the \emph{sign} of the colour
+self-energy ($\varepsilon_S < 0$). A sign is not a handedness; a negative scalar
+contribution to an eigenvalue has no mirror partner to be distinguished from.
+\textbf{No chirality reference.}
+
+\paragraph{A11 (Lattice-Scale Grounding).} Fixes the lattice-to-physical length
+conversion ($\ell_{\text{unit}} \approx 0.589$ fm). A scale, not a handedness.
+\textbf{No chirality reference.}
+
+\paragraph{Axiom-level summary.} Of the nine axioms, four are chirality-silent
+(A5, A8$'$, A10, A11). Two are permissive without imposing (A2, A6$'$ --- spatial;
+A3 --- CP-asymmetric). Two jointly impose the only axiom-level chirality the
+framework currently carries: A1 + A4 source the temporal sense via the PCD
+sequence and the Absolute-Moment cadence. The polarity-coupling of A1 and the
+$\varphi$-winding of A3 are deferred to the dynamics pass.
+
+% ============================================================
+\section{600-cell geometric pass}
+\label{sec:geometry}
+% ============================================================
+
+The static 600-cell is achiral ($\Hfour$ contains reflections). But it carries
+multiple \emph{internal} structures that become chiral once a choice is made
+among them. We enumerate them.
+
+\paragraph{G-1: the $5 \times 24$-cell partition.} The 120 vertices partition into
+five disjoint 24-cells, and this can be done in two enantiomorphic ways. Choosing
+one partition introduces spatial chirality. \emph{Audit determination:} if the
+programme uses one partition canonically, the choice is either constrained (and
+should be registered as the constraint that fixes it) or arbitrary (an
+\emph{unregistered} spatial-chirality entry that must be eliminated or registered).
+\textbf{Spatial; unregistered.}
+
+\paragraph{G-2: the binary icosahedral $2I$ cover.} The 600-cell is the quotient
+of $S^3$ by the binary icosahedral group $2I$. $2I$ has chiral irreducible
+representations (the two spinor representations are exchanged by an outer
+automorphism). Whether the substrate dynamics distinguish the left- and
+right-spinor representations is the question the W-bracelet sector
+(THEO-SD-CHIR-1) and the qDP/eDP sector (THEO-SD-CHIR-2) implicitly answer ---
+they consume a definite spinor handedness. \textbf{Spatial; emergent (from A2 +
+$\nhat$), consumed by SD-CHIR.}
+
+\paragraph{G-3: the icosahedral subgroup chain.} $\Hfour \supset \Hthree \times
+A_1 \supset \Icoh \supset I = A_5 \supset \cdots$. The icosahedral \emph{rotation}
+group $I = A_5$ is a chiral subgroup of the icosahedral \emph{symmetry} group
+$\Icoh$ (which contains the inversion). When the substrate dynamics select for
+rotations only --- e.g.\ a K3-stabilizer $D_{3d} = D_3 \times \mathbb{Z}_2$
+retaining a $C_3$ rotation axis --- chirality enters via the choice of rotation
+sense. The Capotauro vertex-aligned resolution $\nhat = \vhost$ breaks $\Hfour \to
+\Hthree = \Icoh$, retaining the full icosahedral symmetry; further breaking to
+chiral subgroups happens in specific sector closures. \textbf{Spatial; emergent
+(from $\nhat$ + sector-specific symmetry breaking).}
+
+\paragraph{G-4: the Wythoff construction orientation.} The polytope built from the
+Coxeter diagram $\Hfour$ admits orientation choices that produce mirror-image
+embeddings. As with G-1, the choice is gauge-like at the level of the static
+polytope (the two embeddings are isometric); chirality enters only if a dynamical
+quantity selects one. \textbf{Spatial; emergent / gauge-removable.}
+
+\paragraph{G-5: the golden-ratio coordinate sign conventions.} The standard
+600-cell vertex set $\{(\pm 1, \pm 1, \pm 1, \pm 1)/2,\ (\pm\phi, \pm 1,
+\pm 1/\phi, 0)/\text{perms}\}$ involves sign and permutation conventions. $\phi$
+itself is achiral; the sign choices are coordinate gauge, removable by an
+$\Hfour$ transformation. \textbf{Spatial; emergent / gauge-removable.}
+
+\paragraph{G-6: the substrate primitive direction $\nhat$ (FI-C-RC-1).} Per the
+Reading-C trajectory (Capotauro v2.0), $\nhat$ is a substrate-primitive 4D
+direction registered at Layer~3 as a foundational input. Its mere presence breaks
+the achiral $\Hfour$ down to $\Hthree = \Icoh$ at the host vertex --- an
+orientation-reversing isometry of the polytope generically does not fix $\nhat$.
+This is the irreducible spatial-chirality source of the framework: it exists at
+the foundational-input level (not yet derived, not removable by gauge). Every
+emergent geometric handedness above (G-2, G-3) traces its definiteness back to
+$\nhat$. \textbf{Spatial; primitive (foundational input FI-C-RC-1).}
+
+\paragraph{Geometric-pass summary.} The static 600-cell imposes no chirality.
+Of the six internal structures, two are gauge-removable (G-4, G-5), two are
+emergent from $\nhat$ + the polytope (G-2, G-3), one is unregistered pending a
+constraint determination (G-1), and exactly one is primitive (G-6, the direction
+$\nhat$). The geometric sector's chirality reduces, up to gauge and derivation, to
+the single primitive $\nhat$.
+
+% ============================================================
+\section{Dynamics pass: the PCD cycle}
+\label{sec:dynamics}
+% ============================================================
+
+The dynamics couple to the geometry. We examine four sub-questions.
+
+\paragraph{D1: does the PCD temporal sequence impose an arrow of time?} The
+Perceive $\to$ Compute $\to$ Displace sequence at each Absolute Moment is, on its
+face, not time-reversible: time-reversed, the cycle would Displace $\to$ Compute
+$\to$ Perceive, a different operational dynamics. If the canonical specification
+asserts the forward sequence and does not assert time-reversal symmetry, the cycle
+sources \emph{temporal} chirality at the axiom level (this is the dynamical content
+of the A1 + A4 finding of \S\ref{sec:axioms}). \textbf{Temporal; primitive (in A1
++ A4), with the time-reversal-asymmetry assertion currently presupposed rather
+than explicit --- registered as the load-bearing gap.}
+
+\paragraph{D2: does the perception step distinguish left from right?} The Perceive
+step has the CP detecting its local SSV environment. If perception is a vector
+inner product against an oriented sensor frame (distinguishing $+\hat{x}$ from
+$-\hat{x}$ only), no chirality is added. If perception is an oriented bivector or
+pseudovector that distinguishes left- from right-handed coordinate frames, spatial
+chirality is added. The canonical specification does not yet fix which. \textbf{Spatial;
+unregistered (depends on the perception-implementation choice).}
+
+\paragraph{D3: does the capture/partnering step prefer one handedness?} This is the
+deepest question. CPs form Dipole Pairs by partnering with neighbouring CPs. If the
+partnering rule prefers one handedness --- e.g.\ electric-positive CPs preferentially
+partnering with quark-negative CPs in a specific orientation --- then chirality is
+sourced at the dynamics level, not the geometry level. The W-bracelet V--A coupling
+work (OPEN-FP-SF-2-CHIR) and the Capotauro K3-doublet chirality work both
+\emph{depend} on this preference; they consume a definite partnering handedness via
+the pairing-convention generators $\zeta^W$, $\zeta^{qDP}$ (the latter a combined
+$CP$ operation). The preference is currently consumed but not derived from a
+registered axiom. \textbf{Spatial/CP-asymmetric; unregistered (consumed by
+SD-CHIR-1/2; the load-bearing dynamical chirality source).}
+
+\paragraph{D4: does the PCD cycle carry an orientation pseudovector $\wPCD$?} The
+F.1 sub-question asks whether $\wPCD(\vhost) = \sigma \cdot \nhat$ for a sign
+convention $\sigma$. Its resolution determines the classification: Scenario~A
+($\wPCD$ derived from $\nhat$ via a substrate mechanism) places this entry under
+\emph{emergent}; Scenario~B ($\wPCD$ an independent primitive) places it under
+\emph{primitive} alongside $\nhat$. The audit does not pre-commit. \textbf{Spatial;
+emergent (Scenario~A, working presumption) or primitive (Scenario~B) ---
+registered as OPEN-CHIR-F1-LINK.}
+
+\paragraph{Dynamics-pass summary.} The dynamics carry the temporal arrow (D1,
+primitive in A1+A4 but with the asymmetry presupposed), one unregistered spatial
+entry (D2, perception implementation), the deepest unregistered entry (D3, capture
+handedness, consumed by SD-CHIR), and the $\nhat \mapsto \wPCD$ link (D4, emergent
+or primitive pending OPEN-CHIR-F1-LINK).
+
+% ============================================================
+\section{Existing-derivation pass}
+\label{sec:derivations}
+% ============================================================
+
+The existing CHIR-sector theorems consume chirality on input; we identify what
+each consumes and where that input lives in the framework.
+
+\paragraph{THEO-CHIR-CONT-1/2/3 (Layer-4 continuum-EFT projections).} These
+project the substrate chirality handle $\chi/6$ to continuum effective operators
+(CONT-1 sector-agnostic bridge; CONT-2 Sector~A V--A coupling; CONT-3 Sector~B
+SM-2 chiral-polarity-bias). They consume $\chi = \phi^{-3}$ as input and preserve
+it under the continuum-limit map $\Phi$ via a topological-projection argument. The
+chirality they consume is \emph{not derived here} --- it is the substrate handle
+furnished by SD-CHIR. \textbf{Consume: $\chi$ (traces to $\nhat$ via SD-CHIR).}
+
+\paragraph{THEO-SD-CHIR-1 (W-bracelet sector).} Consumes FI-C-RC-1 ($\nhat$) and
+FI-C-RC-2 (vertex-aligned $\nhat = \vhost$), and identifies $\chi \equiv
+\varepsilon = \phi^{-3}$ via the local-$\Icoh$-preservation theorem and cage-shell
+averaging, giving $|M^W| = \chi/6 \approx 0.0394$. The pairing-convention generator
+$\zeta^W$ (icosahedral-center inversion in 4D) is the consumed capture handedness
+(D3). \textbf{Consume: $\nhat$ (primitive, G-6) + capture handedness (D3).}
+
+\paragraph{THEO-SD-CHIR-2 (qDP/eDP sector).} Consumes the same $\nhat$ and a
+combined-$CP$ pairing generator $\zeta^{qDP}$ (host-CP inversion + $\nhat$-flip +
+qCP-sign flip), giving $|M^{qDP}| = \chi/6$, completing three-way cross-sector
+unification. \textbf{Consume: $\nhat$ + capture handedness (CP-asymmetric variant,
+D3).}
+
+\paragraph{THEO-DSL-1 through THEO-DSL-12 (F.1 substrate-current arc).} These derive
+the net DI-bit substrate current at the host vertex, $\vec{j}_k(\vhost) \parallel
+\nhat$ (THEO-DSL-4, all orders), with closed-form coefficients in $\mathbb{Q}[\phi]$
+(and $\sqrt{3}\cdot\mathbb{Q}[\phi]$ at odd face-aligned orders). THEO-DSL-3 closes
+OPEN-SD-CHIR-PRIMITIVE manifestation (iv) (thermodynamic causal arrow) at
+sketch-document Layer~3 via the directed substrate current --- a temporal-chirality
+output sourced by $\nhat$. \textbf{Consume: $\nhat$ (primitive); produce: temporal
+arrow (manifestation iv).}
+
+\paragraph{The OPEN-SD-CHIR-PRIMITIVE umbrella.} Programme-level cross-sector
+unification target across five observable manifestations: (i) mass-mixing
+chirality, (ii) electroweak V--A, (iii) electromagnetic handedness, (iv)
+thermodynamic causal arrow, (v) cosmological-vacuum asymmetry. Manifestations
+(i)--(iii) closed at full Layer~3 (SD-CHIR-1/2 + Capotauro); (iv) at sketch-document
+Layer~3 (DSL-3); (v) open. All consume $\nhat$ as the substrate handle.
+
+\paragraph{Existing-derivation summary.} Every existing CHIR derivation consumes
+$\nhat$ as its chirality input, either directly (SD-CHIR-1/2, DSL arc) or via the
+$\chi$ handle (CONT arc). The capture handedness (D3) is consumed via the
+sector-specific $\zeta$ generators. No existing derivation \emph{derives} $\nhat$
+or the capture handedness from a registered axiom --- they are consumed primitives.
+
+% ============================================================
+\section{Synthesis: the classification map}
+\label{sec:synthesis}
+% ============================================================
+
+Combining \S\S\ref{sec:axioms}--\ref{sec:derivations} into a single classification
+table. Columns: \emph{source}, \emph{operational sense}, \emph{category},
+\emph{proposed handling}.
+
+{\small
+\begin{longtable}{@{}p{2.3cm}p{3.6cm}p{2.1cm}p{2.0cm}p{3.4cm}@{}}
+\hline
+\textbf{ID} & \textbf{Entry (source)} & \textbf{Sense} & \textbf{Category} &
+\textbf{Proposed handling} \\
+\hline
+\endhead
+E1 & A1 polarity coupling & spatial/CP & unregistered & derive (OPEN-CHIR-2; see D3) \\
+E2 & A1+A4 PCD sequence & temporal & primitive & assert $T$-asymmetry (OPEN-CHIR-2a) \\
+E3 & A2 600-cell (permissive) & spatial & --- & adequate (achiral; hosts G-1..G-6) \\
+E4 & A3 $\varphi$-winding & CP-asym. & unregistered & derive (OPEN-CHIR-3) \\
+E5 & A4 Absolute-Moment cadence & temporal & primitive & see E2 \\
+E6 & A5 efficiency & --- & --- & no chirality \\
+E7 & A6$'$ walk orientation & spatial & --- & adequate (parity-blind) \\
+E8 & A8$'$ cage-volume scaling & --- & --- & no chirality \\
+E9 & A10 colour sign & --- & --- & no chirality \\
+E10 & A11 lattice scale & --- & --- & no chirality \\
+E11 & G-1 $5\times24$ partition & spatial & unregistered & determine constraint (OPEN-CHIR-2b) \\
+E12 & G-2 $2I$ spinor reps & spatial & emergent & derive (OPEN-CHIR-1a) \\
+E13 & G-3 icosa.\ rotation $A_5$ & spatial & emergent & derive (OPEN-CHIR-1b) \\
+E14 & G-4 Wythoff orientation & spatial & emergent & gauge-removable; confirm \\
+E15 & G-5 $\phi$-coord signs & spatial & emergent & gauge-removable; confirm \\
+E16 & G-6 $\nhat$ (FI-C-RC-1) & spatial & primitive & adequate (registered FI) \\
+E17 & D1 PCD arrow & temporal & primitive & see E2 \\
+E18 & D2 perception orientation & spatial & unregistered & fix implementation (OPEN-CHIR-2c) \\
+E19 & D3 capture handedness & spatial/CP & unregistered & derive (OPEN-CHIR-1c / OPEN-CHIR-2d) \\
+E20 & D4 $\nhat\mapsto\wPCD$ link & spatial & emergent$^*$ & OPEN-CHIR-F1-LINK \\
+E21 & $\chi=\phi^{-3}$ magnitude & spatial & emergent & derive from $\nhat$+A2 (OPEN-CHIR-1d) \\
+E22 & $\zeta^W$ (SD-CHIR-1) & spatial & emergent & inherits E19 \\
+E23 & $\zeta^{qDP}$ (SD-CHIR-2) & CP-asym. & emergent & inherits E19 \\
+E24 & DSL-3 manifestation (iv) & temporal & emergent & closed (sketch Layer 3) \\
+E25 & CONT arc $\chi/6$ handle & spatial/CP & emergent & closed (Layer 4) \\
+E26 & SM parity-violation link & CP-asym. & emergent & derive (OPEN-CHIR-3) \\
+E27 & OPEN-FP-F1-2 Mechanism A & spatial & emergent & dependency (OPEN-CHIR-4) \\
+\hline
+\end{longtable}}
+
+\noindent $^*$ E20 is \emph{emergent} under Scenario~A (working presumption) and
+\emph{primitive} under Scenario~B; the classification is conditional on
+OPEN-CHIR-F1-LINK.
+
+\paragraph{Tally.} Of the 27 entries: $N_0 = 6$ carry no chirality (E3, E6, E7,
+E8, E9, E10 --- with E3 and E7 permissive-but-not-imposing); $N_1 = 11$ are
+emergent (E12, E13, E14, E15, E20$^*$, E21, E22, E23, E24, E25, E26, E27 ---
+counting E20 under its working presumption, $N_1$ effectively 12); $N_2 = 3$ are
+primitive (E2/E5/E17 the single temporal primitive carried by A1+A4, and E16 the
+single spatial primitive $\nhat$ --- collapsing the co-referential rows, two
+irreducible primitives total); $N_3 = 6$ are unregistered (E1, E4, E11, E18, E19,
+and the asymmetry-assertion gap of E2). The CP-asymmetric sense (E4, E19/E23, E26)
+is uniformly emergent or unregistered --- never primitive --- consistent with the
+programme presumption that observed CP violation should be derived, not
+axiomatized.
+
+\paragraph{The load-bearing finding.} Spatial chirality reduces, up to gauge and
+derivation, to the single primitive $\nhat$ (E16). Temporal chirality reduces to
+the PCD sequence carried by A1 + A4 (E2/E5/E17), a primitive whose $T$-asymmetry is
+presently presupposed. CP-asymmetric chirality is uniformly emergent, requiring
+$\nhat$ + dynamics + matter content to combine. The deepest unregistered entry is
+the capture handedness D3 (E19): consumed by every SD-CHIR closure but derived from
+no registered axiom.
+
+% ============================================================
+\section{Conclusion theorem}
+\label{sec:theorem}
+% ============================================================
+
+\begin{theorem}[Chirality entry-point enumeration; THEO-CHIR-AUDIT-1]
+\label{thm:audit}
+In the three operational senses of \S\ref{sec:senses}, chirality enters the
+current CPP framework --- the canonical nine-axiom set A1--A11, the 600-cell
+geometry, the PCD-cycle dynamics, and the existing CHIR-sector derivations ---
+at exactly the 27 points catalogued in the table of \S\ref{sec:synthesis} and
+nowhere else. Of these:
+\begin{enumerate}[label=(\arabic*)]
+\item \textbf{Primitive} ($N_2$): two irreducible sources --- the substrate
+primitive 4D direction $\nhat$ (FI-C-RC-1, the unique spatial primitive, E16) and
+the PCD temporal sequence carried jointly by A1 + A4 (the temporal primitive,
+E2/E5/E17), the latter with its time-reversal asymmetry presently presupposed
+rather than asserted.
+\item \textbf{Emergent} ($N_1$): all geometric handednesses beyond $\nhat$ (the
+$2I$ spinor reps E12, the icosahedral rotation sense E13, gauge-removable
+orientation/coordinate choices E14/E15), the substrate magnitude $\chi = \phi^{-3}$
+(E21), the sector pairing generators (E22/E23), the closed manifestations (E24/E25),
+the SM parity-violation link (E26), and the Mechanism-A dependency (E27), with
+derivation routes registered as OPEN-CHIR-1a..1d. The $\nhat \mapsto \wPCD$ link
+(E20) is emergent under the working presumption and primitive otherwise.
+\item \textbf{Unregistered} ($N_3$): the polarity coupling (E1), the $\varphi$-winding
+(E4), the $5\times24$ partition choice (E11), the perception orientation (E18), the
+capture handedness (E19), and the PCD $T$-asymmetry assertion (within E2). Each
+requires either a registered derivation (programme presumption: yes) or a registered
+framework axiom (presumption: no, only if derivation fails).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}[Proof (systematic enumeration).]
+The proof is the explicit walkthrough of \S\S\ref{sec:axioms}--\ref{sec:derivations}:
+the axiom-level pass (\S\ref{sec:axioms}) checks each of the nine canonical axioms
+for a direction/orientation/sequence/sign/handedness reference and assigns
+E1--E10; the geometric pass (\S\ref{sec:geometry}) enumerates the six internal
+chiral structures of the 600-cell and assigns E11--E16; the dynamics pass
+(\S\ref{sec:dynamics}) examines the four PCD sub-questions and assigns E17--E20; the
+existing-derivation pass (\S\ref{sec:derivations}) examines what each CHIR theorem
+consumes and assigns E21--E27. The classification of each entry into
+primitive/emergent/unregistered is justified inline at its row. Exhaustiveness over
+axioms is by exhaustion of the canonical nine; over geometry by exhaustion of the
+600-cell's internal-structure choice points (partition, cover, subgroup chain,
+construction orientation, coordinates, primitive direction); over dynamics by
+exhaustion of the PCD cycle's three steps plus its orientation pseudovector; over
+derivations by exhaustion of the registered CHIR theorem inventory.
+\end{proof}
+
+\paragraph{Falsifiers.} (F1) Exhibit a chirality-touching element of the current
+framework absent from the 27-entry inventory. (F2) Show an inventory entry is
+misclassified --- e.g.\ demonstrate that a row marked \emph{emergent} cannot be
+derived from $\nhat$ + the 600-cell + the dynamics without an independent
+assumption (which would reclassify it \emph{primitive} or \emph{unregistered}), or
+that a row marked \emph{primitive} is in fact derivable (which would reclassify it
+\emph{emergent}). (F3) Exhibit a fourth operationally-distinct sense of chirality
+not reducible to spatial/temporal/CP-asymmetric.
+
+% ============================================================
+\section{Exclusions, anti-erasure, and open-problem registry outputs}
+\label{sec:registry}
+% ============================================================
+
+\subsection{Exclusion class}
+
+\begin{description}
+\item[X1.] The audit does \emph{not} derive any chirality-touching element; it
+classifies. Derivation is the downstream OPEN-CHIR-* programme.
+\item[X2.] The audit does \emph{not} resolve the $\nhat \mapsto \wPCD$ link
+(Scenario A vs B); it registers it as OPEN-CHIR-F1-LINK and classifies E20
+conditionally.
+\item[X3.] The audit does \emph{not} introduce a new framework axiom. Where an
+unregistered entry might require one, it registers the derive-or-axiomatize choice
+(default: derive) rather than making it.
+\item[X4.] The audit does \emph{not} address manifestation (v) (cosmological-vacuum
+asymmetry) beyond noting it is open under OPEN-SD-CHIR-PRIMITIVE.
+\end{description}
+
+\subsection{Anti-erasure}
+
+Two prior terminological states are preserved for the record. (i) The legacy
+``A1--A11'' colloquial axiom referencing reflects the pre-consolidation count; the
+canonical set is nine (A6$'$ consolidated A6+A7+A8+A9; A7/A9 retired; A8$'$, A10,
+A11 are later additions). This audit uses the canonical nine and footnotes the
+history. (ii) The ``Polarize-Capture-Depolarize'' expansion of PCD was a
+Session-146 drift (commit \texttt{311bc1e}); the canonical expansion is
+``Perceive-Compute-Displace,'' restored at Patch 0631. This audit's
+\S\ref{sec:dynamics} uses the canonical expansion; an external reader encountering
+the legacy form in archived files should consult the Patch 0631 correction.
+
+\subsection{Open-problem registry outputs}
+
+The audit registers the downstream OPEN-CHIR-* programme:
+
+\begin{description}
+\item[OPEN-CHIR-1.] Derivation of the emergent chirality entries. Sub-problems:
+\textbf{1a} ($2I$ spinor-rep handedness from $\nhat$, E12); \textbf{1b}
+(icosahedral rotation sense $A_5$ from sector symmetry breaking, E13); \textbf{1c}
+(capture handedness from a registered dynamical rule, E19 --- shared with
+OPEN-CHIR-2); \textbf{1d} ($\chi = \phi^{-3}$ magnitude from $\nhat$ + 600-cell
+ratios, E21, partially addressed by THEO-CHIR-CONT-1.3's topological argument).
+\item[OPEN-CHIR-2.] Handling of the unregistered entries (E1, E4, E11, E18, E19,
+E2-asymmetry): each receives a derivation attempt; only on failure is a framework
+axiom registered with explicit justification. Sub-problems \textbf{2a}--\textbf{2d}
+track the PCD $T$-asymmetry assertion, the partition constraint, the perception
+implementation, and the capture handedness respectively.
+\item[OPEN-CHIR-3.] Alignment with observed Standard-Model chirality: the
+derivation chain from the primitive/emergent entries to weak-interaction parity
+violation and the PMNS/CKM CP-phases (E4, E26).
+\item[OPEN-CHIR-4.] Interaction with OPEN-FP-F1-2 (Mechanism A derivation). If
+Mechanism A's derivation passes through chirality --- plausible, since Mechanism A
+specifies the substrate polarisation response that feeds dipole formation, on which
+the weak interaction acts --- the dependency is registered (E27).
+\item[OPEN-CHIR-F1-LINK.] Resolution of the $\nhat \mapsto \wPCD$ link (E20):
+Scenario~A ($\wPCD$ derived from $\nhat$, classified emergent) vs Scenario~B
+($\wPCD$ an independent primitive). The first downstream theorem after the audit is
+the likely THEO-CHIR-PCD-ORIENTATION-1 addressing Scenario~A's derivation of
+$\wPCD = \sigma\nhat$.
+\end{description}
+
+The audit also creates the new \texttt{frontier\_sectors/CHIR.md} sector file
+holding the OPEN-CHIR-* entries, registers THEO-CHIR-AUDIT-1 in
+\texttt{theorem-registry.md}, adds the CHIR row to the \texttt{research\_frontier.md}
+dashboard sector index, and notes the audit's outputs in
+\texttt{frontier\_sectors/FP.md} (the F-line/SF-line apex layer that the substrate
+chirality arc feeds).
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.4em]
+\item \texttt{axiom-registry.md} --- canonical nine-axiom set (post--SS-2
+consolidation).
+\item \texttt{master\_glossary.md} --- PCD entry (Perceive-Compute-Displace,
+restored Patch 0631); ZBW entry.
+\item \texttt{theorem-registry.md} --- THEO-CHIR-CONT-1/2/3, THEO-SD-CHIR-1/2,
+THEO-DSL-1 through THEO-DSL-12.
+\item \texttt{series\_umbrella/series\_substrate\_chirality\_arc/chirality\_continuum/}
+--- THEO-CHIR-CONT theorems (Layer-4 continuum-EFT projections).
+\item \texttt{series\_umbrella/series\_substrate\_chirality\_arc/capotauro/} ---
+THEO-SD-CHIR-1/2; FI-C-RC-1 ($\nhat$), FI-C-RC-2 (vertex-aligned reading);
+$\chi = \phi^{-3}$.
+\item \texttt{series\_umbrella/series\_substrate\_chirality\_arc/dynamical\_substrate\_law/}
+--- THEO-DSL arc; \texttt{sketches/F1\_subquestion\_pcd\_orientation\_link.md}
+($\nhat \mapsto \wPCD$).
+\item \texttt{series\_umbrella/series\_substrate\_chirality\_arc/chirality\_audit/sketches/theo\_chir\_audit\_1\_scope.md}
+--- the Patch 0630 scope-and-precondition sketch (this artifact's blueprint).
+\item \texttt{frontier\_sectors/FP.md} --- OPEN-SD-CHIR-PRIMITIVE umbrella;
+OPEN-FP-SF-2-CHIR; OPEN-FP-F1-2 (Mechanism A).
+\end{itemize}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}\\
+{\footnotesize THEO-CHIR-AUDIT-1 v1.0 --- Patch 0632, Session 148 --- Conscious
+Point Physics, Substrate Chirality Arc. Publication-grade Layer~3 unconditional
+structural-cataloging theorem (pending multi-AI review). Rebuilt from the Patch
+0630 scope sketch after a working-window overflow; preconditions (axiom count;
+PCD terminology) cleared at Patch 0631.}
+
+\end{document}
