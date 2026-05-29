@@ -1,0 +1,377 @@
+% ============================================================
+% THEO-CHIR-MERGE-2: The Parity Decomposition of the Cycle Handedness
+%   — The Temporal Chirality Content is FI-C-9 (One Chirality Primitive),
+%     and sign(delta) is the Time-Reversal Arrow, not a Chirality Sign.
+%
+% OPEN-FP-F1-2 sub-target L4-D (the sign(delta) <-> enantiomorph gate);
+%   advances OPEN-CHIR-MERGE MERGE-beta from M3 to M1-chi (the chirality-
+%   count half resolved: ONE chirality (pseudoscalar) primitive = FI-C-9).
+%
+% Result (Layer 2.5, provisional): sign(delta) is P-even / T-odd and so
+%   CANNOT carry the (P-odd, T-even) enantiomorph; the entire pseudoscalar
+%   (spatial-chirality) content of sigma_cycle is sign(n-hat) = FI-C-9, and
+%   sign(delta) is the time-reversal arrow content. Hence (i) the chirality
+%   primitive count is ONE (FI-C-9, shared with CAP-1's spatial capture
+%   handedness); (ii) MERGE-1's stated Layer-4 route "tie sign(delta) to
+%   sign(n-hat)" is a parity category-mismatch and is corrected; (iii) the
+%   chirality merge is F.2-INDEPENDENT (pure parity bookkeeping), with F.2 /
+%   OPEN-CHIR-2a now seen as the pure T-arrow (sign(delta)) physicalization,
+%   decoupled from the chirality count.
+%
+% Honest caps: does NOT derive FI-C-9 (1d-beta); does NOT fix sign(delta)
+%   (the arrow; 2a/F.2); does NOT establish the delta-epsilon magnitude tie
+%   (L4-E). Rests on the P/T assignments of Lemmas 1-4 (esp. delta T-odd,
+%   omega_PCD T-odd). Single-pass; multi-AI review is the natural next step.
+%
+% Patch 0647 (Session 149) — built from the Patch 0646 OPEN-FP-F1-2 scope
+%   sketch (L4-D carve-out) after reading the THEO-CHIR-MERGE-1 sign(delta)
+%   treatment, THEO-CHIR-PCD-ORIENTATION-1 (omega_PCD axial), and
+%   THEO-CHIR-CAP-1 (zeta x FI-C-9). Verified by
+%   code/verify_merge_2_parity_decomposition.py.
+%
+% CHANGELOG
+%   v1.0 (Patch 0647, Session 149, 29 May 2026) — initial registration at
+%     Layer 2.5 (provisional): chirality-count half of MERGE-beta resolved
+%     (M1-chi); sign(delta) classified as the T-arrow; MERGE-1's M1 route
+%     corrected; F.2 dependency discharged for the chirality half.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\scyc}{\sigma_{\text{cycle}}}
+\newcommand{\scap}{\sigma_{\text{capture}}}
+\newcommand{\wPCD}{\vec{\omega}_{\text{PCD}}}
+\newcommand{\jnet}{\vec{\jmath}_{\text{net}}}
+\newcommand{\sgn}{\operatorname{sign}}
+\newcommand{\Po}{\mathsf{P}}
+\newcommand{\Te}{\mathsf{T}}
+
+\title{\textbf{THEO-CHIR-MERGE-2}\\[4pt]
+The Parity Decomposition of the Cycle Handedness:\\
+the Temporal Chirality Content is FI-C-9 (One Chirality Primitive),\\
+and $\sgn(\delta)$ is the Time-Reversal Arrow, not a Chirality Sign\\[6pt]
+\large A Layer-2.5 Provisional Theorem --- OPEN-FP-F1-2 sub-target L4-D;\\
+advances OPEN-CHIR-MERGE MERGE-$\beta$ from M3 to M1-$\chi$}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0647, Session 149 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+THEO-CHIR-MERGE-1 (Patch 0644) reduced the temporal cycle handedness to
+$\scyc = \sgn(\delta)\cdot\sgn(\nhat)$ and reported the reduction of $\scyc$ to
+$\sgn(\nhat) = \text{FI-C-9}$ as \textbf{undetermined (M3)}, gating it on (a) tying $\sgn(\delta)$
+to the enantiomorph at Layer 4 (OPEN-FP-F1-2) and (b) the F.2 substrate-Wigner-Eckart coupling.
+This theorem --- the L4-D sub-target of OPEN-FP-F1-2 --- attacks (a) by a discrete-symmetry
+($\Po$, $\Te$) bookkeeping of the factors. \textbf{Result.} The Mechanism-A rate-asymmetry
+parameter $\delta$ is $\Po$-\emph{even} (it scales a propagation rate, a $\Po$-even scalar, against
+the $\Po$-even contraction $\hat{e}\cdot\nhat$) and $\Te$-\emph{odd} (time reversal sends the rate
+function $r(\hat{e})\mapsto r(-\hat{e})$, i.e.\ $\delta\mapsto-\delta$). The PCD-cycle orientation
+$\wPCD$ is an axial vector ($\Po$-even) representing the cycle's temporal progression sense
+($\Te$-odd); with $\nhat$ a polar direction ($\Po$-odd, $\Te$-even), the relation
+$\wPCD = \scyc\,\nhat$ forces $\scyc$ to be $\Po$-odd and $\Te$-odd. Matching parities in
+$\scyc = \sgn(\delta)\cdot\sgn(\nhat)$ then \textbf{decomposes $\scyc$ by symmetry character}: its
+\emph{entire} $\Po$-odd (spatial-chirality, pseudoscalar) content is $\sgn(\nhat) = \text{FI-C-9}$,
+and its \emph{entire} $\Te$-odd (temporal-arrow) content is $\sgn(\delta)$. Because the 600-cell
+substrate is achiral (it admits a reflection symmetry --- verified), FI-C-9 is the \emph{unique}
+primitive pseudoscalar, so this identification is forced. \textbf{Consequences.}
+\textbf{(1) The chirality primitive count is ONE.} The pseudoscalar content of the temporal cycle
+handedness is exactly FI-C-9 --- the \emph{same} enantiomorph as the spatial capture handedness
+(THEO-CHIR-CAP-1: $\scap = \zeta\times\text{FI-C-9}$, $\zeta$ a $\Po$-even involution). Both faces
+of chirality, spatial and temporal, are FI-C-9 modulated by a $\Po$-even factor (geometric
+involution $\zeta$ / temporal arrow $\sgn(\delta)$). This is \textbf{verdict M1-$\chi$}: M1 at the
+chirality level. \textbf{(2) MERGE-1's M1 route is corrected.} ``Tie $\sgn(\delta)$ to $\sgn(\nhat)$''
+is a \emph{parity category-mismatch}: $\sgn(\delta)$ is $\Po$-even/$\Te$-odd while $\sgn(\nhat)$ is
+$\Po$-odd/$\Te$-even, so no $\Po,\Te$-covariant relation can equate or tie them. The merge is
+achieved not by tying the two signs but by recognising $\sgn(\delta)$ is the arrow, not a chirality.
+\textbf{(3) The chirality merge is F.2-independent.} It is pure parity bookkeeping; F.2 (and
+equivalently OPEN-CHIR-2a) is required only to physicalize the $\Te$-odd arrow $\sgn(\delta)$ --- a
+\emph{pure temporal} question now decoupled from the chirality count. \textbf{Honest caps.} Layer
+2.5 (a discrete-symmetry structural argument resting on the $\Po/\Te$ assignments of
+Lemmas~\ref{lem:delta-p}--\ref{lem:sigma}); does \emph{not} derive FI-C-9 (that is 1d-$\beta$);
+does \emph{not} fix $\sgn(\delta)$ (the arrow; OPEN-CHIR-2a / F.2); does \emph{not} establish the
+$\delta$--$\varepsilon$ magnitude tie (L4-E). Single-pass; multi-AI review is the natural next step.
+Verified by \texttt{code/verify\_merge\_2\_parity\_decomposition.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: what MERGE-1 left, and what L4-D attacks}
+\label{sec:setup}
+% ============================================================
+
+THEO-CHIR-MERGE-1 established two things about the temporal cycle handedness $\scyc$ (the sign in
+the PCD-cycle orientation $\wPCD = \scyc\,\nhat$ of THEO-CHIR-PCD-ORIENTATION-1):
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{MERGE-$\alpha$ (resolved):} $\scyc$ \emph{is} the THEO-DSL-3 thermodynamic causal
+arrow --- one temporal orientation, not two.
+\item \textbf{MERGE-$\beta$ (verdict M3):} the reduction $\scyc \stackrel{?}{=} \sgn(\nhat) =
+\text{FI-C-9}$ is undetermined. From the verified Phase-1 current $\jnet = (6\delta/\varphi^2)\nhat$
+(direction $\sgn(\delta)\,\nhat$), the arrow sign is
+\begin{equation}
+\scyc = \sgn(\delta)\cdot\sgn(\nhat),
+\label{eq:merge1-relation}
+\end{equation}
+carrying the Mechanism-A parameter sign $\sgn(\delta)$ \emph{in addition to} $\sgn(\nhat)$. MERGE-1
+gated the merge to one sign on two registered closures: \emph{(a)} the Layer-4 Mechanism-A
+derivation (OPEN-FP-F1-2) ``that would tie $\sgn(\delta)$ to the enantiomorph,'' and \emph{(b)} the
+F.2 substrate-Wigner-Eckart coupling ``that makes $\sigma$ physical.''
+\end{itemize}
+
+This theorem is the OPEN-FP-F1-2 sub-target \textbf{L4-D}: the $\sgn(\delta)$-versus-enantiomorph
+question, carved out at Patch 0646 as the first substantive sub-target of the Layer-4 derivation
+(it is the shared gate for MERGE-$\beta$ and OPEN-CHIR-2a). We do not attempt the full Layer-4
+derivation of Mechanism A (sub-targets L4-A/B/C); we attack the \emph{sign} question alone, and we
+do it with discrete-symmetry bookkeeping rather than dynamics.
+
+The pivotal observation is that closure~\emph{(a)} as MERGE-1 phrased it --- ``tie $\sgn(\delta)$ to
+$\sgn(\nhat)$'' --- presupposes that $\sgn(\delta)$ and $\sgn(\nhat)$ are the \emph{same kind} of
+object (two chirality signs, one possibly reducible to the other). \S\ref{sec:parities} shows they
+are not.
+
+% ============================================================
+\section{The discrete-symmetry character of the four factors}
+\label{sec:parities}
+% ============================================================
+
+We track two discrete symmetries of the substrate: spatial parity $\Po$ (the enantiomorph swap
+$\nhat \to -\nhat$) and time reversal $\Te$ (reversal of the Absolute-Moment ordering, hence of the
+PCD progression and of DI-bit propagation direction). A quantity is $\Po$-even/odd ($\Te$-even/odd)
+according to its sign under $\Po$ ($\Te$).
+
+\begin{lemma}[$\nhat$ is $\Po$-odd, $\Te$-even; $\sgn(\nhat) = \text{FI-C-9}$]
+\label{lem:nhat}
+The substrate primitive direction $\nhat = \vhost/|\vhost|$ is a polar spatial vector: under $\Po$,
+$\nhat \to -\nhat$ ($\Po$-odd); it is unchanged under $\Te$ ($\Te$-even). By the framework
+identification FI-C-RC-1 / FI-C-9, the choice of $\nhat$ versus $-\nhat$ is the frozen
+substrate-vacuum enantiomorph: $\sgn(\nhat) = \text{FI-C-9}$, a pseudoscalar ($\Po$-odd, $\Te$-even),
+consistent with $\Po$ flipping the handedness.
+\end{lemma}
+
+\begin{lemma}[$\delta$ is $\Po$-even]
+\label{lem:delta-p}
+Mechanism A (MA.1) gives the propagation rate $r(\hat{e}) = r_0(1 + \delta\,\hat{e}\cdot\nhat)$. A
+propagation rate is a $\Po$-even scalar (a count of events per Absolute Moment, unchanged by a
+spatial reflection). Under $\Po$ both $\hat{e}\to-\hat{e}$ and $\nhat\to-\nhat$, so the contraction
+$\hat{e}\cdot\nhat$ is $\Po$-even. For $r$ to be $\Po$-even, $\delta$ must be $\Po$-even. In
+particular $\sgn(\delta)$ does \emph{not} flip under the enantiomorph swap.
+\end{lemma}
+
+\begin{lemma}[$\delta$ is $\Te$-odd]
+\label{lem:delta-t}
+Under time reversal, the elementary process ``a DI-bit propagates along $\hat{e}$ at rate
+$r(\hat{e})$'' maps to ``a DI-bit propagates along $-\hat{e}$,'' so $\Te$-covariance of the
+dynamics requires the time-reversed rate function $r^{\Te}(\hat{e}) = r(-\hat{e}) =
+r_0(1 - \delta\,\hat{e}\cdot\nhat) = r_0(1 + (-\delta)\,\hat{e}\cdot\nhat)$. Hence the $\Te$-image
+parameter is $-\delta$: $\delta$ is $\Te$-odd. (Physically: a directional bias in propagation is an
+arrow-like quantity, like a drift or a current bias.) Consistency check: $\jnet =
+(6\delta/\varphi^2)\nhat$ is a current, $\Te$-odd ($\jnet \to -\jnet$); with $\delta$ $\Te$-odd and
+$\nhat$ $\Te$-even this is satisfied.
+\end{lemma}
+
+\begin{lemma}[$\wPCD$ is $\Po$-even (axial), $\Te$-odd]
+\label{lem:omega}
+By THEO-CHIR-PCD-ORIENTATION-1 (and A6$'$), $\wPCD$ is an \emph{axial} vector (pseudovector): the
+axial vector associated with the Perceive$\to$Compute$\to$Displace progression sense. Axial vectors
+are $\Po$-even. The progression sense reverses under time reversal (the cycle runs backwards), so
+$\wPCD$ is $\Te$-odd. (A circulation/orientation sense is the standard example of a $\Po$-even,
+$\Te$-odd axial vector, like angular momentum's orientation under $\Te$.)
+\end{lemma}
+
+\begin{lemma}[$\scyc$ is $\Po$-odd and $\Te$-odd]
+\label{lem:sigma}
+From $\wPCD = \scyc\,\nhat$ with $\wPCD$ $\Po$-even (Lemma~\ref{lem:omega}) and $\nhat$ $\Po$-odd
+(Lemma~\ref{lem:nhat}), $\scyc$ is $\Po$-odd: it is a pseudoscalar. From $\wPCD$ $\Te$-odd and
+$\nhat$ $\Te$-even, $\scyc$ is $\Te$-odd. (The $\Te$-odd character matches MERGE-1's statement that
+the two $\sigma$-choices are time-reversal-symmetric framings.)
+\end{lemma}
+
+\begin{lemma}[The 600-cell is achiral: FI-C-9 is the unique primitive pseudoscalar]
+\label{lem:achiral}
+The 600-cell substrate (A11) admits an improper orthogonal symmetry: the reflection
+$\operatorname{diag}(-1,1,1,1)$ permutes its 120 vertices (verified at machine precision,
+\texttt{verify\_merge\_2\_parity\_decomposition.py}). Equivalently, its symmetry group is the
+Coxeter group $H_4$, generated by reflections. Hence the substrate geometry alone supplies no
+handedness: it is invariant under $\Po$ and contributes no primitive pseudoscalar. The only
+primitive pseudoscalar available to the framework is the frozen enantiomorph $\sgn(\nhat) =
+\text{FI-C-9}$ (Lemma~\ref{lem:nhat}).
+\end{lemma}
+
+The four factors, by discrete-symmetry character:
+\begin{center}
+\begin{tabular}{lccl}
+\hline
+quantity & $\Po$ & $\Te$ & role \\
+\hline
+$\nhat$ \ ($\sgn(\nhat) = \text{FI-C-9}$) & odd & even & spatial enantiomorph (pseudoscalar) \\
+$\delta$ & even & odd & Mechanism-A rate asymmetry \\
+$\jnet = (6\delta/\varphi^2)\nhat$ & odd & odd & DI-bit current \\
+$\wPCD$ & even & odd & cycle orientation (axial) \\
+$\scyc$ \ ($\wPCD = \scyc\nhat$) & odd & odd & cycle handedness (temporal) \\
+\hline
+\end{tabular}
+\end{center}
+
+% ============================================================
+\section{The parity decomposition theorem}
+\label{sec:theorem}
+% ============================================================
+
+\begin{theorem}[Parity decomposition of the cycle handedness; THEO-CHIR-MERGE-2]
+\label{thm:main}
+Under CPP axioms A1--A11 $+$ Reading C $+$ Mechanism A (sketch-document Layer 3), with the
+discrete-symmetry characters of \S\ref{sec:parities}, the temporal cycle handedness
+\eqref{eq:merge1-relation} decomposes by symmetry character as
+\[
+\underbrace{\scyc}_{\Po\text{-odd},\ \Te\text{-odd}}
+\;=\;
+\underbrace{\sgn(\delta)}_{\Po\text{-even},\ \Te\text{-odd}}
+\;\cdot\;
+\underbrace{\sgn(\nhat) = \text{FI-C-9}}_{\Po\text{-odd},\ \Te\text{-even}}.
+\]
+Consequently:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em]
+\item the \emph{entire} $\Po$-odd (spatial-chirality / pseudoscalar) content of $\scyc$ is
+$\sgn(\nhat) = \text{FI-C-9}$ --- and by Lemma~\ref{lem:achiral} this is the unique primitive
+pseudoscalar, so the identification is forced, not chosen;
+\item the \emph{entire} $\Po$-even, $\Te$-odd (temporal-arrow) content of $\scyc$ is $\sgn(\delta)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The symmetry characters are Lemmas~\ref{lem:nhat}--\ref{lem:sigma}. Each side of
+\eqref{eq:merge1-relation} carries a well-defined $(\Po,\Te)$ character; the right side is
+$(\Po,\Te) = (\text{even}\cdot\text{odd},\ \text{odd}\cdot\text{even}) = (\text{odd},\text{odd})$,
+matching the left side (Lemma~\ref{lem:sigma}), so \eqref{eq:merge1-relation} is $\Po,\Te$-covariant.
+A product of a $\Po$-even factor and a $\Po$-odd factor has its $\Po$-odd content carried
+\emph{entirely} by the $\Po$-odd factor; here that factor is $\sgn(\nhat)$, giving (i). Dually, its
+$\Te$-odd content with $\Po$-even character is carried entirely by the $\Po$-even/$\Te$-odd factor
+$\sgn(\delta)$, giving (ii). Uniqueness of the pseudoscalar is Lemma~\ref{lem:achiral}.
+\end{proof}
+
+\begin{corollary}[The chirality primitive count is ONE --- verdict M1-$\chi$]
+\label{cor:count}
+The pseudoscalar (spatial-chirality) content of the temporal cycle handedness $\scyc$ equals
+$\text{FI-C-9}$, the \emph{same} enantiomorph that THEO-CHIR-CAP-1 pinned the spatial capture
+handedness to ($\scap = \zeta\times\text{FI-C-9}$, with $\zeta$ a $\Po$-even registered-geometric
+involution). Both faces of chirality --- spatial capture ($\zeta\times\text{FI-C-9}$) and temporal
+cycle ($\sgn(\delta)\times\text{FI-C-9}$) --- are the \emph{one} primitive FI-C-9 modulated by a
+$\Po$-even factor (a geometric involution $\zeta$ / the temporal arrow $\sgn(\delta)$). The
+programme therefore carries \textbf{one} chirality (pseudoscalar) primitive, FI-C-9. This is
+\textbf{M1 at the chirality level (M1-$\chi$)}: the chirality-count half of MERGE-$\beta$ is
+resolved in the unifying (one-sign) direction.
+\end{corollary}
+
+\begin{corollary}[Correction of MERGE-1's M1 route: a parity category-mismatch]
+\label{cor:mismatch}
+MERGE-1's stated Layer-4 route to M1 --- ``tie $\sgn(\delta)$ to $\sgn(\nhat)$'' --- cannot be
+executed as phrased: $\sgn(\delta)$ is $\Po$-even/$\Te$-odd (Lemmas~\ref{lem:delta-p},
+\ref{lem:delta-t}) and $\sgn(\nhat)$ is $\Po$-odd/$\Te$-even (Lemma~\ref{lem:nhat}); no
+$\Po,\Te$-covariant relation can equate them or render one a function of the other. The chirality
+merge is achieved \emph{not} by tying the two signs but by recognising that $\sgn(\delta)$ is the
+time-reversal arrow content, not a chirality sign. The ``$\sgn(\delta)$ carries an independent sign
+in addition to $\sgn(\nhat)$'' reason of MERGE-1 \S\ref{sec:setup}\,(b)(ii) is sharpened: that
+independent sign is the arrow, $\Po$-even, hence never a candidate \emph{chirality} primitive.
+\end{corollary}
+
+\begin{corollary}[The chirality merge is F.2-independent; F.2 / 2a is the pure $\Te$-arrow question]
+\label{cor:f2}
+MERGE-1 gated MERGE-$\beta$ on both the Layer-4 derivation and the F.2 substrate-Wigner-Eckart
+coupling. Theorem~\ref{thm:main} discharges the chirality-content half \emph{without} F.2: it is
+pure $\Po,\Te$ bookkeeping over the verified relation \eqref{eq:merge1-relation}. The residual
+content of $\scyc$ is the $\Te$-odd arrow $\sgn(\delta)$, whose \emph{physical} value is exactly the
+OPEN-CHIR-2a question (the cycle's $\Te$-asymmetry $\Leftrightarrow$ MERGE-$\beta$-physical, by
+MERGE-1 Prop.~4.1). Theorem~\ref{thm:main} therefore \emph{decouples} the chirality count (resolved,
+F.2-free) from the arrow physicalization (open, F.2/2a): the F.2 coupling is needed only for the
+pure-temporal arrow, never for the chirality count.
+\end{corollary}
+
+% ============================================================
+\section{What is and is not resolved}
+\label{sec:caps}
+% ============================================================
+
+\textbf{Resolved (Layer 2.5, provisional).} The chirality primitive count is \emph{one} (FI-C-9):
+the temporal cycle handedness shares its pseudoscalar content with the spatial capture handedness.
+MERGE-$\beta$ advances from M3 to \emph{M1-$\chi$}. MERGE-1's ``tie $\sgn(\delta)$ to the
+enantiomorph'' route is corrected (parity category-mismatch). The F.2 dependency is discharged for
+the chirality half.
+
+\textbf{Not resolved (honest caps).}
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{The arrow $\sgn(\delta)$ is not fixed.} Its physical value is the OPEN-CHIR-2a / F.2
+$\Te$-content question. ``Full M1'' (a single physical sign with no free $\Te$-odd factor) is
+\emph{not} claimed; what is claimed is one \emph{chirality} sign.
+\item \textbf{FI-C-9 is not derived.} The theorem \emph{consumes} the enantiomorph (as do CAP-1,
+PCD-ORIENTATION-1); deriving it is the deep 1d-$\beta$ ($H_4 \to I_h$ symmetry-breaking dynamics).
+\item \textbf{The $\delta$--$\varepsilon$ magnitude relation is untouched.} Whether $|\delta|$ ties
+to the spatial chirality magnitude $\varepsilon = |\chi| = \varphi^{-3}$ is the separate L4-E
+sub-target (couples to E21 / THEO-CHIR-CHI-1).
+\item \textbf{Layer 2.5.} The result is a discrete-symmetry structural argument resting on the
+$\Po/\Te$ assignments of Lemmas~\ref{lem:delta-p}--\ref{lem:sigma}; the load-bearing assignments are
+$\delta$ $\Te$-odd (Lemma~\ref{lem:delta-t}) and $\wPCD$ $\Te$-odd (Lemma~\ref{lem:omega}). It is
+single-pass; multi-AI review is the natural next step, as it advances a registered verdict.
+\end{itemize}
+
+% ============================================================
+\section{Falsifiers}
+\label{sec:falsifiers}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{(G1)} $\wPCD$ is shown not to be axial, or not $\Te$-odd --- breaks
+Lemma~\ref{lem:omega} and the decomposition.
+\item \textbf{(G2)} $\delta$ is shown $\Te$-even (a $\Po,\Te$-covariant argument that the rate
+asymmetry is not arrow-like) --- would re-open the possibility that $\sgn(\delta)$ carries
+pseudoscalar content, restoring a second-chirality candidate.
+\item \textbf{(G3)} a primitive geometric pseudoscalar exists in the substrate beyond FI-C-9
+(breaks Lemma~\ref{lem:achiral}'s uniqueness; but the 600-cell is achiral --- verified).
+\item \textbf{(G4)} the framework identification $\sgn(\nhat) = \text{FI-C-9}$ fails (then $\nhat$'s
+sign is not the enantiomorph and Lemma~\ref{lem:nhat} must be restated).
+\item \textbf{(G5)} the relation \eqref{eq:merge1-relation} itself fails (e.g.\ the conversion of
+the polar current to the axial cycle orientation introduces a factor of indefinite parity) ---
+breaks the premise inherited from MERGE-1.
+\end{itemize}
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item THEO-CHIR-MERGE-1 (Patch 0644) --- $\scyc = \sgn(\delta)\cdot\sgn(\nhat)$; MERGE-$\beta$ = M3;
+2a $\Leftrightarrow$ MERGE-$\beta$-physical.
+\item THEO-CHIR-PCD-ORIENTATION-1 (Patch 0636) --- $\wPCD = \scyc\,\nhat$; $\wPCD$ axial.
+\item THEO-CHIR-CAP-1 (Patch 0640) --- $\scap = \zeta \times \text{FI-C-9}$; $\zeta$ a $\Po$-even
+registered-geometric involution.
+\item THEO-DSL-3 / F.1 \S2.3, \S4 (Patch 0570) --- Mechanism A (MA.1 + MA.2); $\jnet =
+(6\delta/\varphi^2)\nhat$; the $\sigma$ sign convention.
+\item OPEN-FP-F1-2 scope sketch (Patch 0646) --- L4-D carve-out.
+\item \texttt{code/verify\_merge\_2\_parity\_decomposition.py} --- 600-cell achirality + the
+$(\Po,\Te)$ character table.
+\end{itemize}
+
+\end{document}
