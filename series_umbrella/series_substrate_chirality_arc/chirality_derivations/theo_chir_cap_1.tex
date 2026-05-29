@@ -1,0 +1,385 @@
+% ============================================================
+% THEO-CHIR-CAP-1: The Capture/Partnering Handedness as a Registered
+%   Involution Times the FI-C-9 Enantiomorph Sign
+% A Layer-2/2.5 Reduction Theorem (resolves audit E19 / OPEN-CHIR-1c/2d)
+% Conscious Point Physics --- Substrate Chirality Arc
+%   (series_umbrella/series_substrate_chirality_arc/chirality_derivations/)
+%
+% Purpose: resolve the classification of audit entry E19 (the capture/partnering
+%   handedness, dynamics sub-question D3), the audit's deepest unregistered entry and
+%   "the load-bearing dynamical chirality source," consumed by every SD-CHIR closure
+%   via the pairing-convention generators zeta^W and zeta^qDP. The theorem shows the
+%   capture handedness factors as
+%     (capture handedness) = zeta (a registered-geometric involution) x sigma_capture,
+%   and that sigma_capture is NOT an independent primitive: it is the sign of n-hat
+%   (n-hat vs -n-hat), which is exactly the FI-C-9 frozen substrate-vacuum enantiomorph.
+%   Both factors are registered. Therefore the capture handedness introduces NO
+%   independent third chirality primitive: it is emergent from {n-hat (+600-cell),
+%   FI-C-9 sign, A1 charge-conjugation for the qDP variant}. The new-primitive outcome
+%   (R3) is refuted; the spatial/temporal merge with E20 (R2) is left as a hypothesis.
+%
+% Scope/layer: LAYER 2/2.5 reduction theorem. It does NOT eliminate FI-C-9 (the
+%   theorem CONSUMES the FI-C-9 enantiomorph sign; deriving that sign is the
+%   symmetry-breaking dynamics 1d-beta, deferred). It does NOT prove sigma_capture =
+%   sigma_cycle (E20's temporal sign); that merge (R2) stays a hypothesis. E19 ->
+%   emergent (provisional), collapsing the OPEN-CHIR-1c/2d duplication onto 1c.
+%
+% Patch 0640 (Session 148) --- built from the Patch 0639 scope sketch
+%   theo_chir_cap_1_scope.md after reading the SD-CHIR proof chain's sign bookkeeping
+%   (the 1c-beta decisive test). Verified by code/verify_capture_involution.py.
+%
+% CHANGELOG
+%   v1.0 (Patch 0640, Session 148, 29 May 2026) --- initial registration of
+%     THEO-CHIR-CAP-1 at Layer 2/2.5, resolving audit E19 as emergent (provisional)
+%     via verdict R1 (sigma_capture = the FI-C-9 enantiomorph sign).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{longtable}
+\usepackage{array}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Ifour}{I_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\zW}{\zeta^{W}}
+\newcommand{\zqDP}{\zeta^{qDP}}
+\newcommand{\scap}{\sigma_{\text{capture}}}
+\newcommand{\scyc}{\sigma_{\text{cycle}}}
+\newcommand{\wPCD}{\vec{\omega}_{\text{PCD}}}
+
+\title{\textbf{THEO-CHIR-CAP-1}\\[4pt]
+The Capture/Partnering Handedness as a Registered Involution Times the FI-C-9
+Enantiomorph Sign\\[6pt]
+\large A Layer-2/2.5 Reduction Theorem (resolves audit E19 / OPEN-CHIR-1c/2d)}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0640, Session 148 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Audit entry E19 --- the capture/partnering handedness (dynamics sub-question D3) --- is the
+deepest unregistered entry of THEO-CHIR-AUDIT-1: ``the load-bearing dynamical chirality
+source,'' consumed by every SD-CHIR closure through the pairing-convention generators $\zW$
+and $\zqDP$, yet derived from no registered axiom. We resolve its classification. The capture
+handedness, as consumed, is the SD-CHIR $\mathbb{Z}_2$ generator $\zeta$, which factors as a
+\emph{registered-geometric involution} times a \emph{handedness sign}: $\zW: p \mapsto
+\varphi\nhat - p$ is the icosahedral-center inversion (built from $\nhat = \vhost$ and the
+600-cell, A2), an involution whose linear part $-I$ flips $\nhat$ but which carries no
+handedness sign by itself. The sign $\scap$ is the decisive question. Reading the SD-CHIR
+proof chain's sign bookkeeping, we find $\scap$ is \emph{not} an independent primitive: the
+chirality matrix-element sign is carried by the first-shell edge-perturbation pattern, whose
+sign is fixed by the orientation of $\nhat$ ($\varepsilon\,\hat{e}\cdot\nhat$ reverses under
+$\nhat \to -\nhat$); and the choice of $\nhat$ vs $-\nhat$ is exactly the FI-C-9 frozen
+substrate-vacuum enantiomorph (``Operation~B implies Operation~A'': any primitive direction
+picks one enantiomorph). Both factors of the capture handedness are therefore registered:
+$\zeta$ (geometry: $\nhat$ + A2; plus A1 charge-conjugation for the $\zqDP$ variant) and
+$\scap$ (the FI-C-9 enantiomorph sign). \textbf{The capture handedness introduces no
+independent third chirality primitive; E19 is emergent.} The new-primitive outcome (R3) is
+refuted; the merge with E20's \emph{temporal} sign $\scyc$ (R2) is left as a hypothesis (the
+capture handedness is the \emph{spatial} face of the FI-C-9 sign; whether the temporal cycle
+shares it is a separate question). The result is Layer~2/2.5 and does \emph{not} eliminate
+FI-C-9 (it \emph{consumes} the enantiomorph sign; deriving that sign is the deferred 1d-$\beta$
+dynamics). E19 $\to$ emergent (provisional), collapsing the OPEN-CHIR-1c/2d duplication onto
+1c. Verified by \texttt{code/verify\_capture\_involution.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup}
+\label{sec:setup}
+% ============================================================
+
+Audit entry E19 (dynamics sub-question \textbf{D3}) is the capture/partnering handedness: when
+Conscious Points form Dipole Pairs --- and when a CP is captured within a structure --- does
+the partnering/capture step \emph{prefer one handedness}? The audit classified it
+\emph{spatial/CP-asymmetric; unregistered}, naming it ``the load-bearing dynamical chirality
+source'': it is consumed by both shipped SD-CHIR theorems (via $\zW$, $\zqDP$) and, downstream,
+by the CONT arc, but is derived from no registered axiom. It is the deepest unregistered entry.
+
+The question is a \emph{source} question, and the discipline is the inverse of an eager
+closure: because three published theorems consume E19, a spurious reduction would silently
+relabel a load-bearing input as a result. Every step below terminates in a registered object
+(an axiom A1--A11, a registered foundational input, or a registered theorem output); a step
+that cannot is reported as a gap, not a closure. The admissible verdicts are
+\emph{emergent} (E19 reduces to registered objects) \emph{or} \emph{register-as-primitive}
+(E19 is irreducible); both are honest.
+
+% ============================================================
+\section{The registered pairing/capture ingredients --- and the gap each leaves}
+\label{sec:ingredients}
+% ============================================================
+
+The framework already registers the pairing/capture dynamics:
+
+\begin{description}
+\item[Polarity pairing (PROP-SS-5-1).] A ZBW attractive edge requires \emph{opposite}
+polarities at its endpoints: $(+,-)$ bonds, $(+,+)$ and $(-,-)$ do not. \emph{Registered, but
+polarity-based} --- it fixes \emph{which} CPs pair, not the chiral \emph{orientation} of the
+pairing.
+\item[ZBW / partner switching.] A CP oscillates between its left and right partner DPs. The
+left/right alternation is spatial but not, on its face, handed.
+\item[Capture (SS-2).] A CP captured within a structure (the linear-oscillator $-$eCP in a
+down quark). A genuine dynamical capture event.
+\end{description}
+
+None of these registered rules states a handedness preference. The handedness --- \emph{which}
+chiral orientation the pairing/capture selects --- is the increment E19 names. The rest of the
+theorem shows that increment is not a new primitive.
+
+% ============================================================
+\section{The $\zeta$-involution is registered geometry (1c-$\alpha$)}
+\label{sec:involution}
+% ============================================================
+
+The decisive datum from the audit's existing-derivation pass: the capture handedness,
+\emph{as consumed}, is the SD-CHIR $\mathbb{Z}_2$ pairing-convention generator $\zeta$, and
+$\zeta$ is a registered-geometry construction, not an ad-hoc rule.
+
+\begin{description}
+\item[$\zW$ (W-bracelet sector).] The affine involution $\zW: p \mapsto \varphi\nhat - p$, the
+icosahedral-center inversion in the 4D ambient, with linear part $-I$. Built from $\nhat =
+\vhost$ (FI-C-RC-1/2) and the 600-cell geometry (A2). Verified (\texttt{verify\_capture\_
+involution.py}): $\zW(\zW(p)) = p$ (involution), and the linear part is $-I$, so $\zW$ maps
+$\nhat \mapsto -\nhat$.
+\item[$\zqDP$ (qDP/eDP sector).] The combined-$CP$ operation: host-CP spatial inversion
+($v \to -v$) $+$ $\nhat$-flip $+$ qCP-sign flip. Built from spatial inversion $+$ $\nhat$ $+$
+the qCP-sign (charge-conjugation), which is the CP polarity/type structure of A1.
+\end{description}
+
+\begin{proposition}[The geometric factor is registered; 1c-$\alpha$]
+\label{prop:geom}
+The geometric factor of the capture handedness is the registered involution $\zeta$, built
+from $\nhat$ + the 600-cell (A2), with an additional A1 charge-conjugation factor for the
+$\zqDP$ variant. No unregistered object enters.
+\end{proposition}
+
+\begin{remark}[Replacing the reviewer seed]
+Grok's review proposal, capture handedness $= \mathrm{sgn}(\nhat\cdot(\text{displacement}
+\times\text{polarization}))$, was calibrated down (ChatGPT) because ``displacement,''
+``polarization,'' a cross product, and a capture rule were ``not shown to be already present
+in the framework.'' Proposition~\ref{prop:geom} answers that objection: the registered analog
+uses the 600-cell first-shell vertices (registered via A2) in place of unregistered
+displacement/polarization vectors, and the registered involution $\zeta$ in place of the
+ad-hoc capture rule. The geometric content is in the framework.
+\end{remark}
+
+An involution, however, carries no \emph{handedness}: $\zeta^2 = 1$ relates a configuration to
+its $\nhat$-flipped partner without preferring one. So the capture handedness factors as
+\begin{equation}
+\text{(capture handedness, E19)} \;=\; \underbrace{\zeta}_{\text{registered involution
+(Prop.~\ref{prop:geom})}} \;\times\; \underbrace{\scap}_{\text{handedness sign (\S\ref{sec:sign})}},
+\label{eq:factor}
+\end{equation}
+exactly parallel to the E20 result $\wPCD = \scyc\cdot\nhat$ (registered axis $\times$ sign).
+The sign $\scap$ is the crux.
+
+% ============================================================
+\section{The handedness sign is the FI-C-9 enantiomorph (1c-$\beta$; verdict R1)}
+\label{sec:sign}
+% ============================================================
+
+The decisive test: is the SD-CHIR chirality matrix-element \emph{sign} fixed by the
+orientation of $\nhat$ alone, or does it require an independent input? Reading the SD-CHIR
+proof chain's sign bookkeeping:
+
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{The matrix-element sign is carried by the edge-perturbation pattern.} The
+Capotauro chirality observable $\mathcal{C}_\chi$ ($B_2$ irrep of $D_6$) has matrix element on
+the K3-doublet that ``picks up the $B_2$ projection of the edge-perturbation pattern''; ``the
+$E$-irrep content of the edge-perturbation pattern is the carrier of the chirality bias, \dots
+with the specific in-face direction determined by the orientation of $\nhat$'s in-face
+projection.'' The bias sign is the edge-perturbation sign.
+\item \textbf{The edge-perturbation sign is the $\nhat$ sign.} The first-shell perturbation is
+$\delta(e) = \varepsilon\,(\hat{e}\cdot\nhat)$, which is odd under $\nhat \to -\nhat$. Verified
+(\texttt{verify\_capture\_involution.py}): over all 720 600-cell edges the field reverses
+exactly under $\nhat \to -\nhat$ and is non-trivial (max $|\delta| = \varphi^{-3} \approx
+0.236$). (The 30 first-shell$\leftrightarrow$first-shell edges are tangent, $\hat{e}\cdot\nhat
+= 0$ --- the local-$\Icoh$-preservation theorem --- so the bias lives on the
+first$\to$second-shell edges; either way the sign is the $\nhat$ sign.)
+\item \textbf{The $\nhat$ sign is the FI-C-9 enantiomorph.} ``The sign of $\nhat$ (i.e.\
+$\nhat$ vs $-\nhat$) determines which of the two enantiomorphs of the 600-cell is the actual
+substrate'' (Reading~C \S2.1). And ``Operation~B [primitive-direction reduction] implies
+Operation~A [enantiomorph selection]: any primitive direction picks one enantiomorph, since
+$\nhat$ and $-\nhat$ are not related by any element of the stabilizer'' (\S Q2 closure). The
+$\nhat$ sign \emph{is} the FI-C-9 frozen substrate-vacuum enantiomorph.
+\end{enumerate}
+
+\begin{theorem}[Capture handedness reduction; THEO-CHIR-CAP-1]
+\label{thm:cap}
+Under CPP axioms A1--A11 $+$ Reading~C ($\nhat$ primitive) $+$ FI-C-9 (the substrate-vacuum
+enantiomorph sign), the capture/partnering handedness factors as $\zeta \times \scap$ where
+$\zeta$ is the registered involution of Proposition~\ref{prop:geom} and the handedness sign
+satisfies
+\[
+\scap \;=\; \mathrm{sign}(\nhat) \;=\; \text{the FI-C-9 frozen enantiomorph}.
+\]
+Both factors are registered. Therefore the capture handedness introduces \emph{no independent
+third chirality primitive}: it is emergent from $\{\nhat\ (+\ \text{600-cell, A2}),\ \text{FI-C-9
+sign},\ \text{A1 charge-conjugation (}\zqDP\text{ variant)}\}$. \textbf{Audit entry E19 is
+emergent.}
+\end{theorem}
+
+\begin{proof}[Proof.]
+By \eqref{eq:factor} the capture handedness factors as $\zeta\times\scap$. By
+Proposition~\ref{prop:geom}, $\zeta$ is registered. By steps (1)--(3), the handedness sign
+$\scap$ equals the $\nhat$ sign, which is the FI-C-9 enantiomorph --- a registered foundational
+input. Both factors registered $\Rightarrow$ no new primitive. For the $\zqDP$ variant, the
+sole additional factor is the qCP-sign flip (A1 charge-conjugation), registered; the combined
+$CP$ operation's handedness still reduces to $\{\nhat\text{ sign},\ \text{A1}\}$ and introduces
+no fourth input.
+\end{proof}
+
+\subsection{Verdict among the scope's three outcomes}
+\label{sec:verdict}
+
+The scope sketch posed three outcomes for $\scap$:
+\begin{description}
+\item[R1 (confirmed).] $\scap = $ the FI-C-9 enantiomorph $\Rightarrow$ E19 emergent. This is
+Theorem~\ref{thm:cap}.
+\item[R3 (refuted).] $\scap$ an independent new primitive. Refuted: steps (1)--(3) show
+$\scap$ is the $\nhat$ sign, already registered as FI-C-9. There is no separate sign
+degree of freedom.
+\item[R2 (left open).] $\scap = \scyc$ (E20's \emph{temporal} cycle sign). \emph{Not}
+established here. Theorem~\ref{thm:cap} identifies the \emph{spatial} capture handedness with
+the FI-C-9 enantiomorph; whether the \emph{temporal} $\scyc$ is the \emph{same} sign --- i.e.\
+whether the one substrate enantiomorph also fixes the cycle's time-direction --- is a further
+question, retained as a hypothesis (\S\ref{sec:e20}).
+\end{description}
+
+% ============================================================
+\section{Cross-link to E20}
+\label{sec:e20}
+% ============================================================
+
+The two resolutions now read in parallel:
+\[
+\text{E20:}\quad \wPCD = \scyc\cdot\nhat, \qquad\qquad
+\text{E19:}\quad \text{(capture handedness)} = \zeta\cdot\scap,\ \ \scap = \mathrm{sign}(\nhat).
+\]
+E20's axis is $\nhat$ and its sign is the \emph{temporal} primitive $\scyc$ (A1$+$A4). E19's
+geometry is the $\nhat$-built involution $\zeta$ and its sign is the \emph{spatial}
+enantiomorph $\mathrm{sign}(\nhat) = $ FI-C-9. Both consume $\nhat$; E19's sign is now pinned
+to FI-C-9, while E20's sign remains the temporal primitive. The unifying hypothesis --- that
+$\scyc$ also traces to the single FI-C-9 enantiomorph, so that one substrate chiral choice
+fixes the spatial capture handedness, the cycle's time-direction, and the $\nhat$ orientation
+alike --- is \emph{plausible and unproven}. Proving $\scyc = \mathrm{sign}(\nhat)$ would
+\emph{merge} E19 and E20 onto one sign primitive (the programme's most unifying chirality
+statement). It is left as an open cross-link, not asserted; the THEO-CHIR-PCD-ORIENTATION-1
+\S5.3 flag stands.
+
+% ============================================================
+\section{Layer, classification verdict, and what is not claimed}
+\label{sec:layer}
+% ============================================================
+
+\paragraph{Layer 2/2.5.} The reduction is a structural argument over registered objects (the
+involution geometry, the edge-perturbation sign, the enantiomorph identification), verified at
+machine precision. It is not a dynamical derivation.
+
+\paragraph{Classification.} E19: \emph{unregistered} $\to$ \textbf{emergent (provisional)}.
+Emergent, because the capture handedness reduces to registered factors (Theorem~\ref{thm:cap}),
+with no independent primitive. Provisional, not established, because (i) the reduction is
+Layer~2/2.5, and (ii) it \emph{consumes} the FI-C-9 enantiomorph sign rather than deriving it.
+This collapses the OPEN-CHIR-1c/2d duplication onto \textbf{1c} (E19 is derivable, not a
+to-be-registered primitive). (The audit \texttt{.tex} stays v1.1-frozen; this reclassification
+is authored here and tracked in CHIR.md.)
+
+\paragraph{FI-C-9 not eliminated.} Theorem~\ref{thm:cap} \emph{uses} the FI-C-9 enantiomorph
+sign as an input; it does not derive it. Deriving the substrate-vacuum symmetry-breaking
+dynamics that select the enantiomorph is sub-gap 1d-$\beta$ (the deep deferred target, F.1
+\S14.17; OPEN-SM-4 $\leftrightarrow$ SS-corpus). E19's resolution is about whether the capture
+handedness is \emph{a further primitive beyond} $\nhat$ $+$ FI-C-9 (it is not), not about
+deriving FI-C-9 itself.
+
+\paragraph{Retroactive grounding.} Because $\zW$ and $\zqDP$ are the consumed capture
+handedness, Theorem~\ref{thm:cap} grounds the pairing-convention generators of THEO-SD-CHIR-1/2
+(and the CONT arc downstream) in registered objects: their handedness is the FI-C-9 enantiomorph,
+not a silent extra input.
+
+% ============================================================
+\section{Conclusion and falsifiers}
+\label{sec:concl}
+% ============================================================
+
+The capture/partnering handedness (audit E19), the deepest unregistered entry, is a registered
+involution ($\zeta$, built from $\nhat$ + the 600-cell, $+$ A1 charge-conjugation for the qDP
+variant) times the FI-C-9 enantiomorph sign. It introduces no independent third chirality
+primitive; E19 is emergent (provisional). The new-primitive outcome is refuted; the merge with
+E20's temporal sign is a live hypothesis. FI-C-9 is consumed, not eliminated.
+
+\paragraph{Falsifiers.} \textbf{(F1)} Show the geometric factor of the capture handedness is
+\emph{not} the $\zeta$-involution (a non-involution, or an involution not built from $\nhat$ +
+the 600-cell) --- would break Proposition~\ref{prop:geom}. \textbf{(F2)} Exhibit a
+handedness-sign degree of freedom in the SD-CHIR matrix element \emph{independent} of the
+$\nhat$ orientation --- would restore R3 (E19 a new primitive) and break
+Theorem~\ref{thm:cap}. \textbf{(F3)} Prove $\scyc \neq \mathrm{sign}(\nhat)$ (E20's temporal
+sign genuinely independent of the enantiomorph) --- would close the cross-link in the
+\emph{non}-merge direction, leaving two sign data in the programme rather than one.
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.4em]
+\item \texttt{chirality\_derivations/sketches/theo\_chir\_cap\_1\_scope.md} --- the Patch 0639
+scope sketch (the involution$\times$sign decomposition; the R1/R2/R3 outcomes; the no-false-reduction
+discipline).
+\item \texttt{chirality\_derivations/code/verify\_capture\_involution.py} --- machine-precision
+verification: $\zW$ involution; linear part $-I$ ($\nhat\to-\nhat$); edge-perturbation field odd
+under $\nhat\to-\nhat$ (max $|\delta|=\varphi^{-3}$); local-$\Icoh$ tangency of
+first-shell$\leftrightarrow$first-shell edges.
+\item \texttt{chirality\_audit/theo\_chir\_audit\_1.tex} (v1.1) --- E19 / D3 (the deepest
+unregistered entry); the existing-derivation pass identifying $\zW$/$\zqDP$ as the consumed
+capture handedness.
+\item \texttt{chirality\_audit/review/reviews-CHIR-AUDIT-1.md} --- Grok's E19 seed; ChatGPT's
+calibration (the objection answered in \S\ref{sec:involution}).
+\item \texttt{capotauro/sketches/Capotauro\_chiral\_mechanism\_candidate.md} --- \S2.1 ($\nhat$
+sign $=$ enantiomorph); \S Q2 closure (Operation~B $\Rightarrow$ Operation~A); the
+edge-perturbation pattern as the chirality-bias carrier ($\mathcal{C}_\chi \in B_2$); $\zW$ as
+icosahedral-center inversion.
+\item \texttt{capotauro/sketches/Capotauro\_chi\_phi\_closure.md} --- FI-C-9 (the frozen
+substrate-vacuum enantiomorph sign, ``coeval with the existence of CPs'').
+\item \texttt{theorem-registry.md} --- THEO-SD-CHIR-1/2 ($\zW$, $\zqDP$ consumed); FI-C-9.
+\item \texttt{chirality\_derivations/theo\_chir\_pcd\_orientation\_1.tex} --- E20 ($\wPCD =
+\scyc\nhat$); the \S5.3 E19 cross-link / merge condition.
+\item \texttt{axiom-registry.md} --- A1 (CP polarity/type, the charge-conjugation source for
+$\zqDP$); A2 (600-cell geometry, the $\zW$ inversion source).
+\item \texttt{frontier\_sectors/CHIR.md} --- OPEN-CHIR-1c / 2d; E19; the sibling E20/E21
+resolutions.
+\end{itemize}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}\\
+{\footnotesize THEO-CHIR-CAP-1 v1.0 --- Patch 0640, Session 148 --- Conscious Point Physics,
+Substrate Chirality Arc. Layer-2/2.5 reduction theorem resolving audit E19 (capture handedness,
+the deepest unregistered entry): capture handedness $= \zeta$ (registered involution, $\nhat$ +
+600-cell + A1 charge-conjugation) $\times$ $\scap$, with $\scap = \mathrm{sign}(\nhat) = $ the
+FI-C-9 enantiomorph. No independent third primitive; E19 emergent (provisional). R3 refuted;
+R2 (E20 merge) a hypothesis; FI-C-9 consumed, not eliminated. Verified by
+\texttt{verify\_capture\_involution.py}.}
+
+\end{document}
