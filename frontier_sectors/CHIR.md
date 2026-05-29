@@ -24,6 +24,14 @@ definite derivation target.
 in 3/4-space; (b) temporal — arrow of time; (c) CP-asymmetric — combined
 charge-parity asymmetry. Each OPEN-CHIR-* entry names the sense(s) it addresses.
 
+**Chirality-derivations sub-corpus (Patch 0641 consolidation).** The three audit-downstream
+derivation theorems (THEO-CHIR-PCD-ORIENTATION-1 / E20, THEO-CHIR-CHI-1 / E21·1d-α,
+THEO-CHIR-CAP-1 / E19) live in `chirality_derivations/`, with a folder `README.md` index and a
+`documentation_suite/` (mechanism / development / reasoning-index / keywords / glossary /
+phenomena / changelog) synthesized from the per-patch Tier-4 verbatim reasoning fragments. Open
+frontier for the sub-corpus: FI-C-9 elimination (1d-β dynamics), the symmetric-bias form
+assumption (CHI-1 F2), and the E19/E20 merge (whether `σ_cycle = sign(n̂)`).
+
 ---
 
 ### THEO-CHIR-AUDIT-1 → CHIR audit RESOLVED: chirality entry-point enumeration
