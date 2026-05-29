@@ -29,8 +29,14 @@ charge-parity asymmetry. Each OPEN-CHIR-* entry names the sense(s) it addresses.
 ### THEO-CHIR-AUDIT-1 → CHIR audit RESOLVED: chirality entry-point enumeration
 
 **Status:** RESOLVED (registered Patch 0632, Session 148; publication-grade Layer 3
-unconditional, pending multi-AI review)
+unconditional, pending multi-AI review — review cycle OPENED Patch 0633)
 **Sector(s):** CHIR
+**Review cycle:** review package issued at Patch 0633
+(`chirality_audit/review/theo_chir_audit_1_review_package_v1.0.md`) to ChatGPT +
+Copilot + Grok. Reviewer asks map to the three falsifiers (F1 completeness, F2
+classification, F3 fourth sense) + the two central reductions + a contribution ask
+(derive E19/E21). Responses aggregate to `chirality_audit/review/reviews-CHIR-AUDIT-1.md`;
+the "pending multi-AI review" qualifier is removed only on cycle completion.
 **One-line statement:** Chirality enters the current CPP framework (9 axioms +
 600-cell + PCD cycle + existing CHIR derivations) at exactly 27 catalogued points,
 classified primitive/emergent/unregistered along spatial/temporal/CP-asymmetric
