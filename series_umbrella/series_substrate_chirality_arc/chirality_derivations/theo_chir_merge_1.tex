@@ -1,0 +1,369 @@
+% ============================================================
+% THEO-CHIR-MERGE-1: The Unified Chirality Sign --- Identification of the PCD-Cycle
+%   Orientation with the Thermodynamic Arrow, and the Undetermined Sign Reduction
+% A Layer-2/2.5 Partial-Closure Theorem (resolves OPEN-CHIR-MERGE: MERGE-alpha; reports MERGE-beta)
+% Conscious Point Physics --- Substrate Chirality Arc
+%   (series_umbrella/series_substrate_chirality_arc/chirality_derivations/)
+%
+% Purpose: address OPEN-CHIR-MERGE, the E19/E20 merge --- is the temporal PCD-cycle handedness
+%   sigma_cycle (E20) the same sign as the spatial enantiomorph sign(n-hat) = FI-C-9 that
+%   THEO-CHIR-CAP-1 pinned the capture handedness to? Equivalently: does the programme carry ONE
+%   chirality sign or TWO? The question is the primitive-count capstone of the audit-downstream
+%   programme. This theorem resolves the IDENTIFICATION half and reports the SIGN half honestly.
+%
+%   MERGE-alpha (RESOLVED, provisional, Layer 2.5): sigma_cycle (the PCD-cycle orientation
+%     omega_PCD) IS the THEO-DSL-3 thermodynamic causal arrow --- one temporal orientation, not
+%     two. The DSL mechanism narrative routes: substrate current ∥ n-hat -> capture-phase bias in
+%     the PCD cycle -> preferred omega_PCD -> macroscopic arrow. The cycle and the arrow are the
+%     same temporal orientation; the identification holds at the mechanism-narrative/structural
+%     level, inheriting the DSL viability ceiling.
+%
+%   MERGE-beta (verdict M3 = UNDETERMINED): whether that one temporal orientation's SIGN reduces
+%     to sign(n-hat) = FI-C-9 is undetermined at current rigor, for two registered reasons:
+%     (i) THEO-DSL-3 states the sign sigma in omega_PCD = sigma*n-hat is a Layer-3 CONVENTION ---
+%         the two choices are time-reversal-symmetric framings, physical only when coupled to the
+%         F.2 substrate-Wigner-Eckart datum (Capotauro v2.0 §20);
+%     (ii) the substrate current is j = (6 delta/phi^2) n-hat, so the arrow direction is
+%          sign(delta)*n-hat; delta (Mechanism A) is an INDEPENDENT framework input whose tie to
+%          the spatial chirality parameter eps/chi = phi^-3 is unpinned at Layer 3 (Layer-4
+%          Mechanism-A derivation = OPEN-FP-F1-2). So the arrow sign sign(delta)*sign(n-hat) does
+%          NOT reduce to sign(n-hat) alone.
+%     Hence NOT M1 (merge confirmed) and NOT M2 (independence confirmed): M3, genuinely
+%     undetermined, gated on the F.2 coupling + the Layer-4 Mechanism-A derivation.
+%
+%   OPEN-CHIR-2a structural advance (not closure): the PCD T-asymmetry is EXACTLY the question of
+%     whether sigma_cycle's sign is physical (a real arrow) vs a Layer-3 convention --- the SAME
+%     question as MERGE-beta being physical. So 2a <=> MERGE-beta-physical; both gated on the same
+%     F.2 coupling + Layer-4 derivation. 2a's structure is clarified, not resolved.
+%
+% Scope/layer: LAYER 2/2.5 partial-closure theorem. MERGE-alpha is a structural identification at
+%   the DSL mechanism-narrative level (Layer 2.5, inheriting the DSL viability ceiling: the full
+%   thermodynamic-arrow emergence --- entropy production, irreversible coarse-graining --- is NOT
+%   derived, per THEO-DSL-3's own scope). MERGE-beta is reported (M3), not closed. FI-C-9 not
+%   eliminated either way (M1 would route sigma_cycle TO FI-C-9, not derive it). OPEN-CHIR-MERGE
+%   -> PARTIALLY RESOLVED.
+%
+% Patch 0644 (Session 148) --- built from the Patch 0643 scope sketch theo_chir_merge_1_scope.md
+%   after reading the THEO-DSL-3 arrow construction + the Mechanism-A sign(delta) status in
+%   dynamical_substrate_law.tex. Verified by code/verify_merge_current_sign.py.
+%
+% CHANGELOG
+%   v1.0 (Patch 0644, Session 148, 29 May 2026) --- initial registration of THEO-CHIR-MERGE-1 at
+%     Layer 2/2.5: MERGE-alpha resolved (one temporal orientation), MERGE-beta M3 (sign gated on
+%     F.2 coupling + Layer-4 Mechanism-A), OPEN-CHIR-2a clarified (2a <=> MERGE-beta-physical).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\scyc}{\sigma_{\text{cycle}}}
+\newcommand{\scap}{\sigma_{\text{capture}}}
+\newcommand{\wPCD}{\vec{\omega}_{\text{PCD}}}
+\newcommand{\jnet}{\vec{\jmath}_{\text{net}}}
+
+\title{\textbf{THEO-CHIR-MERGE-1}\\[4pt]
+The Unified Chirality Sign: Identification of the PCD-Cycle Orientation with the Thermodynamic
+Arrow, and the Undetermined Sign Reduction\\[6pt]
+\large A Layer-2/2.5 Partial-Closure Theorem (resolves OPEN-CHIR-MERGE: MERGE-$\alpha$; reports
+MERGE-$\beta$)}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0644, Session 148 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+OPEN-CHIR-MERGE is the primitive-count capstone of the audit-downstream chirality programme:
+after the three derivations, chirality reduces to $\{\nhat,\ \text{FI-C-9},\ \scyc\}$;
+THEO-CHIR-CAP-1 pinned the \emph{spatial} capture-handedness sign to $\scap = \mathrm{sign}(\nhat)
+= \text{FI-C-9}$; the open question is whether the \emph{temporal} cycle handedness $\scyc$ (E20)
+is the \emph{same} sign --- i.e.\ whether the programme carries \textbf{one} chirality sign or
+\textbf{two}. We resolve the identification half and report the sign half. \textbf{MERGE-$\alpha$
+(resolved, provisional):} $\scyc$ --- the orientation of the PCD-cycle pseudovector $\wPCD$ ---
+\emph{is} the THEO-DSL-3 thermodynamic causal arrow. The DSL mechanism narrative routes the
+substrate current $\jnet \parallel \nhat$ through a capture-phase bias in the PCD cycle to a
+preferred $\wPCD$ and thence to the macroscopic arrow; the cycle and the arrow are \emph{one
+temporal orientation, not two}. \textbf{MERGE-$\beta$ (verdict M3, undetermined):} whether that
+one orientation's sign reduces to $\mathrm{sign}(\nhat) = \text{FI-C-9}$ is undetermined at
+current rigor, for two registered reasons: (i) THEO-DSL-3 holds the sign $\sigma$ in $\wPCD =
+\sigma\nhat$ to be a Layer-3 \emph{convention} (the two choices time-reversal-symmetric, physical
+only when coupled to the F.2 substrate-Wigner-Eckart datum); (ii) the current is $\jnet =
+(6\delta/\varphi^2)\nhat$, so the arrow direction is $\mathrm{sign}(\delta)\,\nhat$, and $\delta$
+(Mechanism A) is an independent framework input whose tie to the spatial chirality parameter is
+unpinned until the Layer-4 Mechanism-A derivation (OPEN-FP-F1-2). Hence \emph{not} M1 (merge) and
+\emph{not} M2 (independence): M3. We also clarify (not close) \textbf{OPEN-CHIR-2a}: the PCD
+T-asymmetry is exactly the question of whether $\scyc$'s sign is physical vs a convention --- the
+\emph{same} question as MERGE-$\beta$ being physical; $\text{2a} \Leftrightarrow
+\text{MERGE-}\beta\text{-physical}$, both gated on the same F.2 coupling $+$ Layer-4 derivation.
+The temporal chirality is one orientation (MERGE-$\alpha$), but the spatial$\leftrightarrow$temporal
+\emph{sign} merge is open (MERGE-$\beta$): the programme's chirality sign count is reduced from a
+naive four-way ambiguity to \emph{at most two} ($\mathrm{sign}(\nhat)$ and $\scyc$), with merge to
+\emph{one} gated on Layer-4 Mechanism A. FI-C-9 is not eliminated either way. OPEN-CHIR-MERGE
+$\to$ partially resolved. Verified by \texttt{code/verify\_merge\_current\_sign.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: the merge question and the primitive-count stakes}
+\label{sec:setup}
+% ============================================================
+
+After the three audit-downstream derivations, the programme's irreducible chirality content is
+$\{\nhat,\ \text{FI-C-9},\ \scyc\}$: the spatial primitive direction $\nhat$; the FI-C-9 datum
+(the magnitude $|\chi| = \varphi^{-3}$, value-derived by THEO-CHIR-CHI-1, and the frozen
+enantiomorph sign $\mathrm{sign}(\nhat)$); and the temporal cycle handedness $\scyc$ (E20; from
+A1$+$A4). THEO-CHIR-CAP-1 (verdict R1) pinned the \emph{spatial} capture-handedness sign to
+$\scap = \mathrm{sign}(\nhat) = \text{FI-C-9}$. OPEN-CHIR-MERGE asks whether the \emph{temporal}
+$\scyc$ is the same sign:
+\begin{equation}
+\textbf{Is } \scyc = \mathrm{sign}(\nhat)\,?
+\label{eq:merge-question}
+\end{equation}
+A confirmed merge (M1) means one frozen substrate enantiomorph fixes spatial capture handedness,
+temporal cycle direction, and the $\nhat$-orientation alike --- \textbf{one} chirality sign. A
+refuted merge (M2) means $\scyc$ is an independent sign primitive --- \textbf{two}. This is the
+last tractable piece of ``is chirality emergent or primitive'' (the only deeper reduction being
+1d-$\beta$, the FI-C-9 dynamics).
+
+We decompose \eqref{eq:merge-question} into \textbf{MERGE-$\alpha$} (is $\scyc$ the same temporal
+orientation as the DSL-3 thermodynamic arrow?) and \textbf{MERGE-$\beta$} (does that orientation's
+sign reduce to $\mathrm{sign}(\nhat)$?). No false merge: one sign is more elegant than two, but
+elegance is not a derivation; M2 and M3 (undetermined) are honest outcomes.
+
+% ============================================================
+\section{MERGE-$\alpha$: the cycle is the arrow (one temporal orientation)}
+\label{sec:alpha}
+% ============================================================
+
+The candidate registered route is THEO-DSL-3, which closes OPEN-SD-CHIR-PRIMITIVE manifestation
+(iv) --- the thermodynamic causal arrow --- at the substrate-locality level, with the net DI-bit
+current at the host vertex
+\begin{equation}
+\jnet(\vhost) = \frac{6\delta}{\varphi^2}\,\nhat + \mathcal{O}(\delta^2),
+\label{eq:current}
+\end{equation}
+directed along $\nhat$ (verified, \S\ref{sec:beta}). THEO-DSL-3's mechanism narrative is explicit:
+\begin{quote}
+asymmetric DI-bit arrival at the host vertex $\to$ capture-phase bias in the PCD cycle $\to$
+preferred PCD orientation $\to$ macroscopic arrow asymmetry.
+\end{quote}
+
+\begin{proposition}[MERGE-$\alpha$: identification]
+\label{prop:alpha}
+The PCD-cycle orientation $\wPCD$ (whose sign is $\scyc$) and the THEO-DSL-3 thermodynamic causal
+arrow are the \emph{same temporal orientation}. The substrate current $\jnet \parallel \nhat$
+biases the PCD cycle's capture phase, inducing the preferred $\wPCD$; the macroscopic arrow is the
+coarse-grained manifestation of that same cycle bias. There are not two temporal chirality data
+(a microscopic cycle sense and a separate macroscopic arrow) --- there is one, $\wPCD$, with the
+arrow as its large-scale face.
+\end{proposition}
+
+\begin{remark}[Layer and inherited ceiling]
+Proposition~\ref{prop:alpha} is the DSL mechanism narrative read as an identification. It holds at
+the \emph{mechanism-narrative / structural} level (Layer 2.5), inheriting the THEO-DSL-3 viability
+ceiling: THEO-DSL-3 establishes the substrate-locality \emph{structure} (the closed-form current)
+and \emph{supports}, but does not \emph{derive}, the full thermodynamic-arrow emergence (entropy
+production, irreversible coarse-graining). MERGE-$\alpha$ therefore identifies the cycle with the
+arrow at the same level at which DSL-3 supports the arrow --- no stronger. The emergence layer is
+deferred (it is OPEN-CHIR-2a; see \S\ref{sec:2a}).
+\end{remark}
+
+So MERGE-$\alpha$ \emph{resolves (provisionally)}: the temporal chirality is one orientation. The
+remaining question is its sign.
+
+% ============================================================
+\section{MERGE-$\beta$: the sign is undetermined (verdict M3)}
+\label{sec:beta}
+% ============================================================
+
+Does the one temporal orientation's sign reduce to $\mathrm{sign}(\nhat) = \text{FI-C-9}$? Two
+registered facts say it is undetermined at current rigor.
+
+\subsection{Reason (i): the orientation sign is a Layer-3 convention}
+\label{sec:beta-i}
+
+THEO-DSL-3 states plainly that the global sign $\sigma$ in $\wPCD = \sigma\nhat$ ---
+\emph{whether $\wPCD$ aligns with $+\nhat$ or $-\nhat$} --- is \emph{a convention fixed at the
+framework level}, and that \emph{the two sign choices correspond to time-reversal-symmetric
+framings of the same physics and are not distinguishable at Layer 3 rigor}. The sign becomes
+consequential \emph{only} when coupled to the F.2 trajectory's substrate-Wigner-Eckart datum
+(Capotauro v2.0 \S20), where it couples to the thermodynamic-causal-arrow direction via the
+cage-shell factor $1/6$. So at the present (DSL Layer-3) level, $\scyc$ is not a physical sign that
+could equal $\mathrm{sign}(\nhat)$; it is a convention awaiting a physical coupling.
+
+\subsection{Reason (ii): the arrow sign carries an independent $\mathrm{sign}(\delta)$}
+\label{sec:beta-ii}
+
+The current \eqref{eq:current} has direction $\mathrm{sign}(\delta)\,\nhat$: with $6/\varphi^2 > 0$,
+$\jnet(\delta>0) = +(6/\varphi^2)\nhat$ and $\jnet(\delta<0) = -(6/\varphi^2)\nhat$ (verified,
+\texttt{verify\_merge\_current\_sign.py}, using the uniform host-to-first-shell projection
+$\hat{u}_i\cdot\nhat = -1/(2\varphi)$). So the temporal-arrow sign is
+$\mathrm{sign}(\delta)\cdot\mathrm{sign}(\nhat)$, carrying the Mechanism-A parameter sign
+$\mathrm{sign}(\delta)$ \emph{in addition to} $\mathrm{sign}(\nhat)$. THEO-DSL-3 is explicit that
+$\delta$ is an \emph{independent framework input}: \emph{the relationship between $\varepsilon$
+[the spatial chirality / Reading-C edge perturbation, controlled by $|\chi| = \varphi^{-3}$] and
+the Mechanism-A propagation-rate parameter $\delta$ is not pinned at this paper's scope; both are
+taken as independent framework inputs.} Tying $\delta$ to the spatial chirality (and hence
+$\mathrm{sign}(\delta)$ to $\mathrm{sign}(\nhat)$) is exactly the Layer-4 Mechanism-A derivation
+(OPEN-FP-F1-2). Until then, $\mathrm{sign}(\delta)$ is free, and the arrow sign
+$\mathrm{sign}(\delta)\cdot\mathrm{sign}(\nhat)$ does \emph{not} reduce to $\mathrm{sign}(\nhat)$.
+
+\begin{theorem}[MERGE-$\beta$: the sign is undetermined; THEO-CHIR-MERGE-1]
+\label{thm:beta}
+Under CPP axioms A1--A11 $+$ THEO-DSL-3 (Reading~C $+$ 600-cell $+$ Mechanism~A, sketch-document
+Layer~3), the reduction of the temporal-orientation sign to $\mathrm{sign}(\nhat) = \text{FI-C-9}$
+is \textbf{undetermined (verdict M3)}. It is not M1 (the sign is a Layer-3 convention, \S
+\ref{sec:beta-i}, and carries an independent $\mathrm{sign}(\delta)$, \S\ref{sec:beta-ii}) and not
+M2 (neither reason \emph{establishes} independence; $\mathrm{sign}(\delta)$ may yet be tied to
+$\mathrm{sign}(\nhat)$ at Layer 4). The merge sign is gated on two registered closures: the F.2
+substrate-Wigner-Eckart coupling that makes $\sigma$ physical, and the Layer-4 Mechanism-A
+derivation (OPEN-FP-F1-2) that would tie $\mathrm{sign}(\delta)$ to the enantiomorph.
+\end{theorem}
+
+\begin{proof}[Proof.]
+By Proposition~\ref{prop:alpha} the temporal chirality is one orientation with sign carried by
+$\sigma$ (equivalently by $\mathrm{sign}(\delta)$ via \eqref{eq:current}). \S\ref{sec:beta-i}:
+$\sigma$ is a Layer-3 convention with the two choices T-reversal-symmetric, so no physical equality
+$\scyc = \mathrm{sign}(\nhat)$ is available at this level (rules out asserting M1).
+\S\ref{sec:beta-ii}: the arrow sign is $\mathrm{sign}(\delta)\cdot\mathrm{sign}(\nhat)$ with
+$\mathrm{sign}(\delta)$ an independent input (rules out asserting M1 a second way). Neither reason
+exhibits a $\scyc$ degree of freedom \emph{provably} independent of $\mathrm{sign}(\nhat)$ (the
+Layer-4 derivation could tie them), so M2 is not established either. The remaining verdict is M3,
+with the two named gates.
+\end{proof}
+
+% ============================================================
+\section{OPEN-CHIR-2a: the T-asymmetry is the MERGE-$\beta$-physical question}
+\label{sec:2a}
+% ============================================================
+
+OPEN-CHIR-2a asks for the PCD cycle's time-reversal asymmetry --- whether the cycle is
+\emph{irreversible} (a genuine arrow) or merely \emph{ordered} (a convention-level sense). The
+present analysis identifies it with MERGE-$\beta$:
+
+\begin{proposition}[2a $\Leftrightarrow$ MERGE-$\beta$-physical]
+\label{prop:2a}
+The PCD cycle acquires a time-reversal asymmetry (OPEN-CHIR-2a) \emph{if and only if} the
+orientation sign $\sigma$ becomes physical (non-convention). By \S\ref{sec:beta-i}, the two
+$\sigma$-choices are T-reversal-symmetric framings at Layer 3 --- i.e.\ \emph{the cycle has no
+T-asymmetry at Layer 3}; reversing $\sigma$ is reversing the (conventional) time direction with no
+physical consequence. The asymmetry appears exactly when $\sigma$ couples to a physical datum (the
+F.2 substrate-Wigner-Eckart construction), which is also exactly the condition under which
+MERGE-$\beta$'s sign becomes a physical quantity that could equal $\mathrm{sign}(\nhat)$. Hence
+$\text{2a} \Leftrightarrow \text{MERGE-}\beta\text{-physical}$.
+\end{proposition}
+
+This \emph{clarifies} OPEN-CHIR-2a without closing it: 2a is not an independent owed item to be
+discharged separately --- it is the physicalization of the merge sign. Both are gated on the same
+F.2 coupling $+$ Layer-4 Mechanism-A derivation. Closing either closes the structural part of the
+other. (This subsumes the audit's ``ordered (primitive) vs T-asymmetry (owed)'' distinction: the
+ordering is the convention-level sense, the T-asymmetry is its physicalization.)
+
+% ============================================================
+\section{Consequences for the chirality primitive count}
+\label{sec:count}
+% ============================================================
+
+\paragraph{Before this theorem.} The temporal chirality presented as potentially two data (a PCD
+cycle sense $\scyc$ and a separately-owed thermodynamic arrow), and the spatial$\leftrightarrow$
+temporal relationship was wholly open.
+
+\paragraph{After.} MERGE-$\alpha$ collapses the temporal data to \emph{one} orientation (cycle $=$
+arrow). The chirality content is now $\{\nhat,\ \text{FI-C-9 magnitude},\ \mathrm{sign}(\nhat),\
+\scyc\}$ with $\scyc$ the \emph{single} temporal-orientation sign. The remaining sign ambiguity is
+exactly two-way: $\mathrm{sign}(\nhat)$ (spatial, $=$ FI-C-9, pinned by CAP-1) and $\scyc$
+(temporal). MERGE-$\beta$ (M3) leaves open whether these two collapse to one. So:
+\begin{itemize}[leftmargin=1.5em]
+\item the programme carries \textbf{at most two} chirality sign primitives (not three or four);
+\item merge to \textbf{one} (M1) is gated on the Layer-4 Mechanism-A derivation tying
+$\mathrm{sign}(\delta)$ to the enantiomorph $+$ the F.2 coupling making $\sigma$ physical;
+\item the alternative (M2, two signs) is not excluded.
+\end{itemize}
+
+\paragraph{FI-C-9 not eliminated either way.} M1 would route $\scyc$ \emph{to}
+$\mathrm{sign}(\nhat) = \text{FI-C-9}$ (consuming it), not derive the enantiomorph; M2 would add a
+second consumed sign. The merge changes the chirality \emph{count}, not FI-C-9's input status ---
+only 1d-$\beta$ (the symmetry-breaking dynamics) touches that.
+
+% ============================================================
+\section{Conclusion and falsifiers}
+\label{sec:concl}
+% ============================================================
+
+The merge half-closes. MERGE-$\alpha$: the PCD-cycle orientation \emph{is} the thermodynamic
+arrow --- one temporal chirality, not two (provisional, Layer 2.5, inheriting the DSL ceiling).
+MERGE-$\beta$: whether that orientation's sign equals the spatial enantiomorph $\mathrm{sign}(\nhat)
+= \text{FI-C-9}$ is undetermined (M3), gated on the F.2 substrate-Wigner-Eckart coupling (which
+makes the sign physical) and the Layer-4 Mechanism-A derivation OPEN-FP-F1-2 (which would tie
+$\mathrm{sign}(\delta)$ to the enantiomorph). OPEN-CHIR-2a is clarified as the physicalization of
+the merge sign, not an independent item. The programme carries at most two chirality sign
+primitives, with merge to one gated as stated. OPEN-CHIR-MERGE $\to$ partially resolved.
+
+\paragraph{Falsifiers.} \textbf{(F1)} Show the PCD-cycle orientation is \emph{not} the DSL-3
+thermodynamic arrow (a temporal chirality datum distinct from $\wPCD$) --- breaks
+Proposition~\ref{prop:alpha} (MERGE-$\alpha$). \textbf{(F2)} Exhibit, at Layer 4, that
+$\mathrm{sign}(\delta)$ is fixed and tied to $\mathrm{sign}(\nhat)$ \emph{and} that the F.2
+coupling fixes $\sigma$ accordingly --- would upgrade M3 to \textbf{M1} (merge; one sign).
+\textbf{(F3)} Exhibit, at Layer 4, that $\mathrm{sign}(\delta)$ (or the F.2 coupling) is provably
+independent of $\mathrm{sign}(\nhat)$ --- would upgrade M3 to \textbf{M2} (two signs). \textbf{(F4)}
+Derive the PCD T-asymmetry from a source \emph{other} than the $\sigma$-physicalization ---
+breaks Proposition~\ref{prop:2a} (the 2a $\Leftrightarrow$ MERGE-$\beta$ identification).
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.4em]
+\item \texttt{chirality\_derivations/sketches/theo\_chir\_merge\_1\_scope.md} --- the Patch 0643
+scope sketch (the MERGE-$\alpha$/$\beta$ decomposition; the DSL-3 route; the M1/M2/M3 outcomes;
+the no-merge-for-elegance discipline).
+\item \texttt{chirality\_derivations/code/verify\_merge\_current\_sign.py} --- machine-precision
+verification: uniform $\hat{u}_i\cdot\nhat = -1/(2\varphi)$; $\jnet = (6\delta/\varphi^2)\nhat$;
+arrow direction $= \mathrm{sign}(\delta)\,\nhat$.
+\item \texttt{dynamical\_substrate\_law/dynamical\_substrate\_law.tex} --- THEO-DSL-3: the
+mechanism narrative (current $\to$ PCD capture-phase bias $\to$ $\wPCD$ $\to$ arrow); the current
+$\jnet = (6\delta/\varphi^2)\nhat$; the $\sigma$-convention / T-reversal-symmetric statement (\S on
+the link constraint); $\delta,\varepsilon$ independent framework inputs; the emergence layer
+(entropy/irreversibility) deferred.
+\item \texttt{chirality\_derivations/theo\_chir\_pcd\_orientation\_1.tex} --- E20 ($\wPCD =
+\scyc\nhat$); the \S5.3 E19/E20 cross-link this theorem addresses.
+\item \texttt{chirality\_derivations/theo\_chir\_cap\_1.tex} --- E19; verdict R1 ($\scap =
+\mathrm{sign}(\nhat) = \text{FI-C-9}$); the \S5 merge hypothesis this theorem addresses.
+\item \texttt{frontier\_sectors/CHIR.md} --- OPEN-CHIR-MERGE (this theorem's target);
+OPEN-CHIR-2a (clarified here); the E20/E19/E21 resolutions.
+\item \texttt{theorem-registry.md} --- THEO-DSL-3; FI-C-9; OPEN-FP-F1-2 (Layer-4 Mechanism A).
+\end{itemize}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}\\
+{\footnotesize THEO-CHIR-MERGE-1 v1.0 --- Patch 0644, Session 148 --- Conscious Point Physics,
+Substrate Chirality Arc. Layer-2/2.5 partial-closure theorem on OPEN-CHIR-MERGE (the E19/E20
+merge / unified-chirality-sign question). MERGE-$\alpha$ resolved (provisional): the PCD-cycle
+orientation is the THEO-DSL-3 thermodynamic arrow --- one temporal orientation. MERGE-$\beta$ =
+M3 (undetermined): the sign reduction to $\mathrm{sign}(\nhat) = \text{FI-C-9}$ is gated on the
+F.2 Wigner-Eckart coupling $+$ the Layer-4 Mechanism-A derivation (OPEN-FP-F1-2). OPEN-CHIR-2a
+clarified ($\Leftrightarrow$ MERGE-$\beta$-physical). At most two chirality sign primitives; merge
+to one gated; FI-C-9 not eliminated. Verified by \texttt{verify\_merge\_current\_sign.py}.}
+
+\end{document}

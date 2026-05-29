@@ -8,7 +8,7 @@
   Master dashboard: research_frontier.md
 -->
 
-## Substrate Chirality Arc (CHIR) — 5 problems + 2 resolved
+## Substrate Chirality Arc (CHIR) — 5 problems (1 partially resolved) + 2 resolved
 
 The CHIR sector tracks the chirality programme of the Substrate Chirality Arc
 (`series_umbrella/series_substrate_chirality_arc/`). It sits downstream of the
@@ -98,7 +98,7 @@ to spatial/temporal/CP-asymmetric.
 attempt a derivation; register a new framework axiom only if derivation fails
 (programme presumption: derive).
 **Sub-problems:**
-- **OPEN-CHIR-2a:** explicit assertion (or derivation) of the PCD cycle's time-reversal asymmetry (audit E2-asymmetry / E17).
+- **OPEN-CHIR-2a:** explicit assertion (or derivation) of the PCD cycle's time-reversal asymmetry (audit E2-asymmetry / E17). **Clarified (Patch 0644, THEO-CHIR-MERGE-1 §4):** 2a is *not* an independent owed item — it is the physicalization of the merge sign. DSL-3 holds the two `ω_PCD = σ·n̂` sign choices to be T-reversal-symmetric framings at Layer 3 (so the cycle has *no* T-asymmetry at Layer 3); the asymmetry appears exactly when `σ` couples to a physical datum (the F.2 substrate-Wigner-Eckart construction), which is exactly the condition for MERGE-β's sign to be physical. So **2a ⟺ MERGE-β-physical**; both gated on the same F.2 coupling + Layer-4 Mechanism-A derivation (OPEN-FP-F1-2). Structural clarification, not closure; subsumes the audit's "ordered (primitive) vs T-asymmetry (owed)" distinction (ordering = convention-level sense; T-asymmetry = its physicalization).
 - **OPEN-CHIR-2b:** determine the constraint that fixes (or eliminates) the 5×24-cell partition choice (audit E11).
 - **OPEN-CHIR-2c:** fix the perception-step implementation (vector vs oriented-bivector/pseudovector) (audit E18).
 - **OPEN-CHIR-2d: RESOLVED (provisional) — see OPEN-CHIR-1c.** The capture handedness (audit E19) is resolved *emergent* by THEO-CHIR-CAP-1 (Patch 0640, verdict R1: σ_capture = the FI-C-9 enantiomorph; no independent primitive). The 1c/2d duplication collapses onto **1c** (E19 is derivable, not a to-be-registered primitive). FI-C-9 not eliminated (consumed); the E19/E20 temporal-merge (R2) stays a hypothesis.
@@ -143,7 +143,8 @@ dependency is plausible (audit E27).
 ---
 
 ### OPEN-CHIR-MERGE: The unified chirality sign — is `σ_cycle = sign(n̂)`? (the E19/E20 merge)
-**Status:** OPEN — scoped Patch 0643; THEO-CHIR-MERGE-1 reserved.
+**Status:** PARTIALLY RESOLVED — THEO-CHIR-MERGE-1 (Patch 0644): MERGE-α resolved (provisional);
+MERGE-β = M3 (sign gated). THEO-CHIR-MERGE-1 registered.
 **Sector(s):** CHIR / FP (F.1 / DSL)
 **Priority:** HIGH (the primitive-count capstone of the audit-downstream programme)
 **Operational sense(s):** spatial (sign(n̂)) ↔ temporal (σ_cycle)
@@ -151,28 +152,32 @@ dependency is plausible (audit E27).
 reduces to the same frozen enantiomorph `sign(n̂) = FI-C-9` that THEO-CHIR-CAP-1 pinned the
 *spatial* capture handedness to — i.e. whether the programme carries **one** chirality sign or
 **two**.
-**Rationale:** after the three derivations, chirality reduces to `{n̂, FI-C-9, σ_cycle}`; CAP-1
-pinned the spatial sign to FI-C-9; this is the last tractable piece of the "emergent or
-primitive" determination (the only deeper reduction is 1d-β). **Scope sketch (Patch 0643):**
-`chirality_derivations/sketches/theo_chir_merge_1_scope.md`. **Registered route:** THEO-DSL-3
-sources the thermodynamic causal arrow (manifestation iv, *temporal*) from the substrate current
-`∥ n̂`; the chirality-continuum architecture aims to unify spatial (i–iii) + temporal (iv)
-handedness via the shared `n̂` + `−1/(2φ)`. **Decomposition:** MERGE-α (the identification — is
-`σ_cycle` the DSL-3 arrow? near-term reachable, reserve THEO-CHIR-MERGE-1) + MERGE-β (the sign —
-does the arrow's sign reduce to `sign(n̂)`, or carry an independent `sign(δ)` from Mechanism A,
-since `j ∝ sign(δ)·n̂`? entangled). **Candidate outcomes:** M1 (merge → one chirality sign);
-M2 (independent → two signs); M3 (undetermined pending OPEN-CHIR-2a). **Gate:** not closable now
-without OPEN-CHIR-2a (the T-asymmetry, which gives `σ_cycle` its arrow status); the merge must not
-be asserted for elegance. **FI-C-9 not eliminated either way** (M1 routes `σ_cycle` *to* FI-C-9,
-does not derive it). Elevates the previously-flagged E19/E20 cross-links (PCD-ORIENTATION §5.3,
-CAP-1 §5) to a registered, scoped problem.
+**Resolution (Patch 0644):** **THEO-CHIR-MERGE-1** (`chirality_derivations/theo_chir_merge_1.tex`,
+v1.0, 6-page PDF; verified by `code/verify_merge_current_sign.py`). **MERGE-α RESOLVED
+(provisional, Layer 2.5):** `σ_cycle` (the PCD-cycle orientation `ω_PCD`) **is** the THEO-DSL-3
+thermodynamic causal arrow — the DSL mechanism narrative (current `∥ n̂` → PCD capture-phase bias
+→ `ω_PCD` → macroscopic arrow) identifies them as **one temporal orientation, not two** (inherits
+the DSL viability ceiling: the full arrow emergence is not derived). **MERGE-β = M3
+(UNDETERMINED):** whether that orientation's sign reduces to `sign(n̂)` is undetermined at current
+rigor, for two registered reasons — (i) DSL-3 holds the sign `σ` in `ω_PCD = σ·n̂` to be a Layer-3
+*convention* (the two choices T-reversal-symmetric, physical only via the F.2 substrate-Wigner-Eckart
+coupling); (ii) the current is `j = (6δ/φ²)n̂`, so the arrow sign is `sign(δ)·sign(n̂)`, and `δ`
+(Mechanism A) is an independent framework input whose tie to the enantiomorph is the Layer-4
+Mechanism-A derivation (OPEN-FP-F1-2). **Not M1** (sign is convention + carries independent
+`sign(δ)`) **and not M2** (independence not established either). **Gates:** the F.2 Wigner-Eckart
+coupling (makes `σ` physical) + the Layer-4 Mechanism-A derivation (ties `sign(δ)`). **Count
+result:** the programme carries **at most two** chirality sign primitives (`sign(n̂)`=FI-C-9
+spatial; `σ_cycle` temporal); merge to **one** is gated as above; M2 (two) not excluded. **FI-C-9
+not eliminated either way.** The previously-flagged E19/E20 cross-links (PCD-ORIENTATION §5.3,
+CAP-1 §5) move from "hypothesis" to "half-resolved: one orientation, sign gated."
 **Dependencies:** THEO-CHIR-AUDIT-1; THEO-CHIR-PCD-ORIENTATION-1 (E20); THEO-CHIR-CAP-1 (E19);
-THEO-DSL-3; OPEN-CHIR-2a (gate); OPEN-FP-F1-2 (Mechanism A `sign(δ)`).
-**Cross-sector connections:** F.1 DSL temporal-arrow work (THEO-DSL-3, manifestation iv); the
-chirality continuum architecture.
-**Paper(s):** future CHIR-derivation paper (THEO-CHIR-MERGE-1, Patch 0644+), best bundled with
-OPEN-CHIR-2a progress.
-**Last updated:** 29 May 2026
+THEO-DSL-3; OPEN-CHIR-2a (now clarified — see below); OPEN-FP-F1-2 (Mechanism A `sign(δ)`, the
+MERGE-β gate).
+**Cross-sector connections:** F.1 DSL temporal-arrow work (THEO-DSL-3, manifestation iv); the F.2
+substrate-Wigner-Eckart datum (Capotauro v2.0 §20); the chirality continuum architecture.
+**Paper(s):** `chirality_derivations/theo_chir_merge_1.tex` (Patch 0644). Full closure (M1/M2)
+deferred to OPEN-FP-F1-2 progress.
+**Last updated:** 29 May 2026 (Patch 0644)
 
 ---
 
