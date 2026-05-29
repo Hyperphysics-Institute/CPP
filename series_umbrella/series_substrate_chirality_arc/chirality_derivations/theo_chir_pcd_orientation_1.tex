@@ -1,0 +1,488 @@
+% ============================================================
+% THEO-CHIR-PCD-ORIENTATION-1: The n-hat -> omega_PCD Link as a
+%   Chirality-Classification Theorem
+% A Viability-Level Primitive-Count Theorem (resolves audit E20 /
+%   OPEN-CHIR-F1-LINK)
+% Conscious Point Physics --- Substrate Chirality Arc
+%   (series_umbrella/series_substrate_chirality_arc/chirality_derivations/)
+%
+% Purpose: resolve the classification of audit entry E20 (the
+%   n-hat -> omega_PCD link, audit dynamics sub-question D4), left at
+%   "unregistered (conditional)" by THEO-CHIR-AUDIT-1 v1.1. The theorem
+%   answers the PRIMITIVE-COUNT question (not the magnitude question):
+%   does the PCD-cycle orientation pseudovector omega_PCD introduce an
+%   independent chirality primitive, or does it reduce to the chirality
+%   primitives the audit already registered? Finding: omega_PCD =
+%   sigma_cycle * n-hat is a product of the registered spatial primitive
+%   n-hat (E16) and the registered temporal primitive's handedness
+%   sigma_cycle (E2/E5/E17, carried by A1+A4). No independent third
+%   primitive: Scenario B refuted; E20 reclassified emergent (provisional).
+%
+% Scope/layer: VIABILITY LEVEL (Layer 2.5). The theorem lifts the F.1
+%   sub-question sketch's Phase-1 (net DI-bit current || n-hat) and Phase-2
+%   (coupling rule) results, which are themselves viability-level with three
+%   open structural commitments (F.1 sketch section 14.17). The theorem does
+%   NOT exceed that ceiling: it caps E20 at emergent (provisional), not
+%   established. It does NOT close the full F.1 Scenario-A trajectory, does
+%   NOT derive the magnitude |chi|=phi^-3 (that is OPEN-CHIR-1d / E21), and
+%   does NOT derive n-hat or sigma_cycle (both remain primitives).
+%
+% Patch 0636 (Session 148) --- first downstream derivation theorem of the
+%   audit-spawned OPEN-CHIR-* programme. Built from the Patch 0635 scope
+%   sketch theo_chir_pcd_orientation_1_scope.md. Precondition cleared
+%   (section 3): the F.1 sketch's "sigma_cycle from axiom A5" attribution is a
+%   pre-canonical-numbering drift (canonical A5 = metric eta=1/phi); the
+%   cycle ordering is A1+A4 content (the audit temporal primitive). This
+%   artifact attributes sigma_cycle to A1+A4.
+%
+% CHANGELOG
+%   v1.0 (Patch 0636, Session 148, 29 May 2026) --- initial registration of
+%     THEO-CHIR-PCD-ORIENTATION-1 at viability-level (Layer 2.5) as a
+%     primitive-count classification theorem resolving audit E20. Scenario B
+%     refuted; E20 -> emergent (provisional). Six sections per scope-sketch
+%     section 4.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{longtable}
+\usepackage{array}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\Oof}[1]{\mathcal{O}(#1)}
+\newcommand{\wPCD}{\vec{\omega}_{\text{PCD}}}
+\newcommand{\jnet}{\hat{j}^{\text{net}}}
+\newcommand{\scyc}{\sigma_{\text{cycle}}}
+
+\title{\textbf{THEO-CHIR-PCD-ORIENTATION-1}\\[4pt]
+The $\nhat \mapsto \wPCD$ Link as a Chirality-Classification Theorem\\[6pt]
+\large A Viability-Level Primitive-Count Resolution of Audit Entry E20}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0636, Session 148 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+THEO-CHIR-AUDIT-1 (v1.1) left exactly one entry of its 27-entry chirality
+classification map undecided: entry E20, the link between the substrate primitive 4D
+direction $\nhat$ and the PCD-cycle orientation pseudovector $\wPCD$. The audit
+classified E20 \emph{unregistered (conditional)} --- emergent under Scenario~A
+($\wPCD$ derived from $\nhat$) and primitive under Scenario~B ($\wPCD$ an independent
+primitive) --- and registered the resolution as OPEN-CHIR-F1-LINK. We resolve the
+classification by answering the \emph{primitive-count} question rather than the
+magnitude question. Lifting the F.1 sub-question sketch's Phase-1 result (the substrate
+net DI-bit current is aligned with $\nhat$) and Phase-2 result (the cycle-orientation
+coupling rule), the cycle-orientation pseudovector decomposes as $\wPCD = \scyc\,\nhat$,
+the product of the registered spatial primitive $\nhat$ (audit E16, the axis) and the
+registered temporal primitive's handedness $\scyc$ (audit E2/E5/E17, the sign). We
+reconcile a pre-canonical axiom-attribution drift: $\scyc$ is content of A1$+$A4 (the
+temporal primitive), not of A5 (the metric). The decomposition shows $\wPCD$ introduces
+\emph{no independent third chirality primitive}: \textbf{Scenario~B is refuted and E20
+is emergent from the two registered primitives jointly}, preserving the audit's headline
+that all spatial chirality reduces to $\nhat$. The result is stated at \emph{viability
+level} (Layer~2.5): it inherits the F.1 trajectory's three open structural commitments
+as a ceiling, so E20 reclassifies to \emph{emergent (provisional)}, not established. The
+load-bearing economy is that the primitive-count is robust to all three open commitments
+(none reintroduces an independent direction or handedness), even though the magnitude
+and Layer-3 rigor remain provisional. Falsification is by exhibiting an independent
+direction in $\wPCD$ unequal to $\pm\nhat$, or a sign content independent of the temporal
+primitive's ordering.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: the primitive-count question}
+\label{sec:setup}
+% ============================================================
+
+\subsection{What E20 is, and what this theorem must decide}
+
+THEO-CHIR-AUDIT-1 catalogued the PCD-cycle orientation pseudovector $\wPCD(\vhost)$ ---
+the axial vector representing which way the Perceive $\to$ Compute $\to$ Displace cycle
+progresses at each Conscious Point at each Absolute Moment --- as audit entry E20
+(dynamics-pass sub-question D4). At v1.1 the audit classified E20 \emph{unregistered
+(conditional)}: \emph{emergent} under Scenario~A ($\wPCD$ derived from $\nhat$ via a
+substrate mechanism) and \emph{primitive} under Scenario~B ($\wPCD$ an independent
+primitive parallel to $\nhat$). The audit did not pre-commit (exclusion X2) and
+registered the resolution as OPEN-CHIR-F1-LINK.
+
+The question this theorem decides is the \textbf{primitive-count} question:
+
+\begin{quote}
+Does $\wPCD$ introduce an independent chirality primitive --- a third foundational input
+parallel to $\nhat$ and the temporal primitive --- or does it reduce to the chirality
+primitives the audit has already registered?
+\end{quote}
+
+This is deliberately narrower than the full F.1 Scenario-A closure. It is a question about
+\emph{how many independent primitives} the framework carries, not about the magnitude of
+$\wPCD$, the leptogenesis empirical check, or the Layer-3 derivation of the coupling. As
+\S\ref{sec:count} shows, the narrow question admits a more robust answer than the full
+closure, and that robustness is the reason E20 is the right first downstream theorem.
+
+\subsection{The two registered primitives the audit already carries}
+
+The audit established two irreducible chirality primitives, against which E20 is to be
+measured:
+
+\begin{description}
+\item[The spatial primitive $\nhat$ (audit E16, G-6).] The substrate primitive 4D
+direction, FI-C-RC-1, established at Capotauro v2.0 Reading C: under vertex-aligned
+$\nhat = \vhost$, the $\Hfour$ symmetry breaks to $\Hthree = \Icoh$ at the host vertex.
+This is the \emph{unique spatial primitive}; the audit's headline finding is that all
+spatial chirality reduces to it.
+\item[The temporal primitive (audit E2/E5/E17).] The ordered PCD sequence, carried by
+A1 (the CP's capacity to perceive and respond, which defines the cycle's steps) $+$ A4
+(the Nexus / Absolute-Moment cadence, which sequences them). Per the audit's v1.1
+clarification, the \emph{ordering} of the cycle is primitive; its time-reversal
+\emph{asymmetry} (irreversibility) is a logically distinct property registered separately
+as OPEN-CHIR-2a. The cycle's handedness --- which of P$\to$C$\to$D or D$\to$C$\to$P is the
+forward direction --- is the pseudoscalar content of this temporal primitive.
+\end{description}
+
+The theorem will show $\wPCD$ is a function of exactly these two, and no third.
+
+\subsection{Operational senses $\wPCD$ carries}
+
+$\wPCD$ is an axial vector. By the audit's three operational senses, it carries
+\emph{spatial} content (its axis is a direction in the substrate's $\Reals^4$) and
+\emph{temporal} content (its sign encodes the cycle's forward direction, a $T$-odd datum).
+It is not in itself a CP-asymmetric object; CP-asymmetry enters downstream when $\wPCD$
+combines with matter content (audit E22/E23/E26). The classification therefore concerns
+the spatial axis and the temporal sign separately --- which is exactly the factorization
+the decomposition exhibits.
+
+% ============================================================
+\section{The decomposition (lifted from the F.1 sub-question)}
+\label{sec:decomp}
+% ============================================================
+
+This theorem does not re-derive the substrate-mechanism content; the F.1 sub-question
+sketch (\texttt{dynamical\_substrate\_law/sketches/F1\_subquestion\_pcd\_orientation\_link.md})
+has developed it. We lift the two load-bearing results and recast them as a
+classification statement. (Their viability-level status, and the three open commitments
+that bound it, are carried forward explicitly in \S\ref{sec:layer}.)
+
+\subsection{Phase 1: the substrate net DI-bit current is aligned with $\nhat$}
+
+Under Mechanism A (a direction-correlated DI-bit propagation-rate asymmetry parameterised
+by $\delta$ under the substrate primitive $\nhat$), the F.1 Phase-1 result registers the
+substrate net DI-bit current at the host vertex (F.1 \S11.4):
+\begin{equation}
+\vec{j}_{DI}^{\,\text{net}}(\vhost) \;=\; \frac{6\,r_0\,\delta}{\phi^2}\,\nhat \;+\; \Oof{\delta^2}.
+\label{eq:phase1}
+\end{equation}
+The current is \emph{aligned with $\nhat$}: its unit direction is
+$\jnet(\vhost) = \mathrm{sign}(\delta)\,\nhat$, a polar, $TI$-even directional content
+(\S\ref{sec:parity}). The structurally important fact for the present theorem is not the
+magnitude $6r_0\delta/\phi^2$ but the \emph{direction}: the substrate furnishes no
+independent direction here --- the net current points along the already-registered
+primitive $\nhat$.
+
+\subsection{Phase 2: the cycle-orientation coupling rule}
+
+The cycle's intrinsic forward direction P$\to$C$\to$D is a $TI$-odd pseudoscalar
+$\scyc \in \{+1,-1\}$ (F.1 \S12.3): $T$-odd because time-reversal reverses the cycle's
+temporal sequencing, $I$-even because the cycle is internal to each CP. The F.1 Phase-2
+coupling rule (F.1 \S12.5) constructs the substrate cycle-orientation pseudovector as the
+product
+\begin{equation}
+\wPCD(v) \;:=\; \scyc \cdot \jnet(v),
+\label{eq:coupling}
+\end{equation}
+the unique lowest-order $TI$-odd substrate object assembled from the two framework
+contents (a $TI$-odd pseudoscalar times a $TI$-even unit vector). Combining
+\eqref{eq:phase1}--\eqref{eq:coupling} at the host vertex with $\scyc = +1$ by global
+convention and $\delta > 0$:
+\begin{equation}
+\boxed{\;\wPCD(\vhost) \;=\; \scyc \cdot \nhat\;}
+\label{eq:result}
+\end{equation}
+the cycle-orientation pseudovector is the product of the cycle handedness $\scyc$ and the
+substrate primitive direction $\nhat$.
+
+\subsection{What is NOT lifted}
+
+The F.1 Phase-3 (magnitude $|M^{\text{thermo}}| = |\delta|/6$, the Case~A.1 $\delta=\chi$
+unification giving $\chi/6\approx 0.0394$) and Phase-4 (leptogenesis phenomenology at
+1.64\%) are \emph{not} inputs to this theorem. They bear on the magnitude $|\chi|=\phi^{-3}$
+(OPEN-CHIR-1d / audit E21) and on the SM-alignment programme (OPEN-CHIR-3), not on E20's
+primitive count. Excluding them is precisely what lets the count be claimed more robustly
+than the full F.1 closure (\S\ref{sec:layer}).
+
+% ============================================================
+\section{Axiom-attribution reconciliation (precondition cleared)}
+\label{sec:axiom}
+% ============================================================
+
+The F.1 sketch attributes the cycle pseudoscalar $\scyc$ to ``CPP axiom A5 or
+equivalent'' (F.1 \S12.3). In the canonical post-consolidation \emph{nine}-axiom set
+(\texttt{axiom-registry.md}), \textbf{A5 is the metric} ($\eta = \ell_{\text{edge}}/
+R_{\text{circ}} = 1/\phi$), which carries no cycle-direction content. The PCD cycle's
+ordering and forward direction are content of \textbf{A1} (the CP's capacity to perceive
+and respond, defining the Perceive/Compute/Displace steps) $+$ \textbf{A4} (the Nexus,
+enforcing lattice-wide consistency at each Absolute Moment, sequencing the steps). This is
+exactly the audit's temporal-primitive attribution (E2/E5 $=$ A1$+$A4; E17 $=$ D1 PCD
+arrow). The F.1 ``A5'' is a pre-canonical-numbering attribution drift, of the same class
+as the axiom-count and PCD-terminology drifts the audit cleared before shipping.
+
+\begin{remark}[Reconciliation]
+This artifact attributes $\scyc$ to \textbf{A1$+$A4} (the temporal primitive). Under this
+attribution, \eqref{eq:result} reads: the cycle-orientation pseudovector is the product of
+the temporal primitive's handedness (A1$+$A4) and the spatial primitive direction (E16).
+Both factors are registered primitives; neither is A5. The F.1 sketch is a prior immutable
+workstream and is not edited by this artifact; the reconciliation is recorded here and in
+the Patch-0635 scope sketch \S5.1.
+\end{remark}
+
+% ============================================================
+\section{Factor classification}
+\label{sec:factors}
+% ============================================================
+
+The decomposition \eqref{eq:result} has two factors. We classify each against the
+registered primitives of \S\ref{sec:setup}.
+
+\paragraph{Axis $\nhat$ $\to$ audit E16 (spatial primitive).} The axis of $\wPCD$ is
+$\nhat$ itself, inherited from the net DI-bit current \eqref{eq:phase1} being aligned with
+$\nhat$. It is \emph{not an independent direction}: no new direction in $\Reals^4$ is
+introduced; the cycle orients along the already-registered substrate primitive. Any
+residual freedom (the sign of $\delta$, the $\pm\nhat$ choice) is absorbed into the
+sign factor below, not into a new axis.
+
+\paragraph{Sign $\scyc$ $\to$ audit E2/E5/E17 (temporal primitive).} The sign of $\wPCD$
+is the cycle handedness $\scyc$, the pseudoscalar content of the temporal primitive
+(A1$+$A4, \S\ref{sec:axiom}). It is \emph{not an independent handedness}: it is the
+already-registered cycle ordering expressed as a $\{+1,-1\}$-valued pseudoscalar. The
+framework's commitment to a definite cycle direction (P$\to$C$\to$D by convention) is what
+gives $\scyc$ its non-zero $TI$-odd content; this commitment is the temporal primitive,
+not a new input.
+
+\subsection{Two-factor $TI$-parity check}
+\label{sec:parity}
+
+The product structure \eqref{eq:result} carries the parity the manifestation-(iv)
+Wigner--Eckart datum requires (F.1 \S12.6), confirming the two factors compose correctly:
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\hline
+\textbf{Quantity} & $T$ & $I$ & $TI$ \\
+\hline
+$\scyc$ (temporal-primitive handedness, A1$+$A4) & $-$ & $+$ & $-$ \\
+$\jnet(\vhost) = \mathrm{sign}(\delta)\,\nhat$ (spatial primitive, E16) & $-$ & $-$ & $+$ \\
+\textbf{Product} $\wPCD(\vhost) = \scyc\,\nhat$ & $+$ & $-$ & $-$ \\
+\hline
+\end{tabular}
+\end{center}
+
+The product is $T$-even, $I$-odd, $TI$-odd. The two factors carry orthogonal framework
+content --- one purely temporal ($\scyc$, the cycle handedness), one purely spatial
+($\nhat$, the substrate direction) --- and their product is the cycle-orientation. No
+third content is needed or present.
+
+% ============================================================
+\section{The primitive-count theorem}
+\label{sec:count}
+% ============================================================
+
+\begin{theorem}[$\nhat \mapsto \wPCD$ primitive count; THEO-CHIR-PCD-ORIENTATION-1]
+\label{thm:count}
+Under CPP axioms A1--A11 $+$ Reading~C ($\nhat$ as substrate primitive) $+$ Mechanism~A,
+the PCD-cycle orientation pseudovector at the host vertex satisfies
+\[
+\wPCD(\vhost) \;=\; \scyc \cdot \nhat,
+\]
+a product of the registered spatial primitive $\nhat$ (audit E16) and the registered
+temporal primitive's handedness $\scyc$ (audit E2/E5/E17, A1$+$A4). Consequently $\wPCD$
+introduces \emph{no independent third chirality primitive}: it is a function of the two
+already-registered primitives alone. \textbf{Scenario~B (}$\wPCD$ \textbf{an independent
+primitive parallel to} $\nhat$\textbf{) is refuted}, and audit entry E20 is \emph{emergent}
+from the two registered primitives jointly. The audit's headline finding --- all spatial
+chirality reduces to $\nhat$ --- is preserved, since $\wPCD$ contributes no spatial
+direction beyond $\nhat$.
+\end{theorem}
+
+\begin{proof}[Proof (factorization).]
+By \S\ref{sec:decomp}, $\wPCD(\vhost) = \scyc\cdot\jnet(\vhost)$ (coupling rule
+\eqref{eq:coupling}) and $\jnet(\vhost) = \mathrm{sign}(\delta)\,\nhat$ (Phase-1 alignment
+\eqref{eq:phase1}), giving $\wPCD(\vhost) = \scyc\,\nhat$ \eqref{eq:result}. By
+\S\ref{sec:factors}, the axis factor is the registered primitive $\nhat$ (E16) and the sign
+factor is the registered temporal primitive's handedness $\scyc$ (E2/E5/E17, attributed to
+A1$+$A4 per \S\ref{sec:axiom}). Both factors are registered; their product introduces no
+new direction (the axis is $\nhat$) and no new handedness (the sign is $\scyc$). Hence
+$\wPCD$ is a function of $\{\nhat,\scyc\}$ alone, with no third independent primitive.
+Scenario~B requires $\wPCD$ to be an independent primitive; the factorization exhibits it
+as a function of two registered primitives, contradicting independence. Therefore Scenario~B
+is refuted and E20 is emergent from $\{\nhat,\scyc\}$.
+\end{proof}
+
+\subsection{Robustness to the F.1 open commitments}
+\label{sec:robust}
+
+Theorem~\ref{thm:count} is a primitive-\emph{count} statement. The F.1 trajectory's three
+open structural commitments (F.1 \S14.17) bound the \emph{strength} of the underlying
+substrate result but, crucially, none of them reintroduces an independent primitive:
+
+\begin{center}
+\begin{tabular}{@{}p{4.6cm}p{3.0cm}p{6.0cm}@{}}
+\hline
+\textbf{F.1 open commitment} & \textbf{What it affects} & \textbf{Effect on the primitive count} \\
+\hline
+Local algebraic representation ansatz (Phase 2) & the \emph{representation} of the observable & none --- a different representation still yields $\wPCD$ as a function of $\nhat$ and the cycle handedness; no new direction/handedness \\
+$\scyc$ algebraization (explicitation of latent cycle structure) & whether $\scyc$ is \emph{explicitated} vs latent in the temporal primitive & none --- in either case $\scyc$ is the temporal primitive (A1$+$A4), not a new primitive \\
+Case~A.1 ($\delta=\chi$) (Phase 3) & the \emph{magnitude} $|\chi|=\phi^{-3}$ & none on E20 --- magnitude is audit E21 / OPEN-CHIR-1d, a separate entry \\
+\hline
+\end{tabular}
+\end{center}
+
+Even under the worst case for all three commitments, $\wPCD$ remains a function of
+$\{\nhat,\scyc\}$ and introduces no third primitive. The primitive count is therefore firm
+where the magnitude and Layer-3 rigor are provisional. This is the load-bearing economy of
+resolving E20 as a classification (primitive-count) theorem rather than as the full F.1
+magnitude closure.
+
+% ============================================================
+\section{Layer, reclassification, exclusions, and falsifiers}
+\label{sec:layer}
+% ============================================================
+
+\subsection{Layer: viability (2.5), inheriting the F.1 ceiling}
+
+The decomposition \eqref{eq:result} is lifted from the F.1 Phase-1/Phase-2 results, which
+the F.1 trajectory itself rates at \emph{viability level} (Layer~2.5), not Layer~3 (F.1
+\S14.17). This theorem does not exceed that ceiling. The primitive-count conclusion
+(Scenario~B refuted; $\wPCD$ a function of two registered primitives) is robust to the F.1
+open commitments (\S\ref{sec:robust}), but the underlying decomposition is viability-level,
+so:
+
+\begin{center}
+\fbox{\parbox{0.92\textwidth}{\centering
+\textbf{Reclassification of audit E20:} \emph{unregistered (conditional)}
+$\;\longrightarrow\;$ \textbf{emergent (provisional)}.\\[2pt]
+Emergent, because $\wPCD$ reduces to the two registered primitives (no independent
+primitive). Provisional, not established, because the reduction rests on the F.1
+viability-level result, not a Layer-3 derivation.}}
+\end{center}
+
+This is exactly the v1.1 emergent (E)/(P) grading instrument: E20 moves out of
+\emph{unregistered} (there is now a registered reduction with no second primitive
+apparent) into emergent~(P) (the reduction's Layer-3 rigor is owed). It does \emph{not}
+reach emergent~(E); claiming so would be the overclaim the audit's multi-AI review cycle
+corrected for the other provisional rows.
+
+\subsection{What this theorem does not claim}
+
+\begin{description}
+\item[D1.] It does not close the full F.1 Scenario-A trajectory; the F.1 status remains
+PROVISIONAL CLOSURE at viability level, with its three open commitments untouched here.
+\item[D2.] It does not derive the magnitude $|\chi| = \phi^{-3}$ (audit E21 /
+OPEN-CHIR-1d) or any observable value; \S\ref{sec:decomp} excludes the F.1 magnitude content.
+\item[D3.] It does not derive $\nhat$ or $\scyc$; both remain primitives. The theorem shows
+$\wPCD$ is their product, not that either factor is itself reducible.
+\item[D4.] It does not resolve the capture handedness E19 (\S\ref{sec:e19}).
+\end{description}
+
+\subsection{Cross-link to E19, flagged not resolved}
+\label{sec:e19}
+
+The sign factor $\scyc$ is the \emph{temporal} cycle handedness. It must be kept distinct
+from the audit's deepest unregistered entry E19 (D3 capture handedness), which is a
+\emph{spatial/CP} handedness in the dipole-pairing rule, consumed by SD-CHIR-1/2 via
+$\zeta^W$ and $\zeta^{qDP}$. If a future result identifies $\scyc$ with the capture
+handedness, that would \emph{merge} E20 into E19 (reducing two items to one --- a
+programme-positive reclassification), not refute the present theorem. The merge is flagged
+as an open cross-link (and as falsifier F3 below in its merge direction), not asserted.
+
+\subsection{Exclusions and anti-erasure}
+
+\begin{description}
+\item[X1.] The theorem decides the primitive count of E20 only; it does not address the
+magnitude (E21), the SM-alignment chain (E26 / OPEN-CHIR-3), or manifestation~(v).
+\item[X2.] Mechanism dependence: the axis-alignment \eqref{eq:phase1} rests on Mechanism~A
+(the F.1 leading candidate). Under Mechanisms~A or~B the cycle-orientation aligns with
+$\nhat$, so the primitive-count conclusion is unchanged; the theorem does not hinge on the
+A-vs-B selection. Mechanism~C (clock-skew) was registered by F.1 as unmotivated and is not
+relied upon.
+\item[Anti-erasure.] The F.1 ``$\scyc$ from A5'' attribution is preserved for the record as
+a pre-canonical-numbering drift; this artifact uses the canonical A1$+$A4 attribution
+(\S\ref{sec:axiom}). An external reader encountering the legacy ``A5'' form in the F.1
+sketch should consult this reconciliation.
+\end{description}
+
+\subsection{Falsifiers}
+
+\textbf{(F1)} Exhibit an independent direction in $\wPCD$ --- a component not equal to
+$\pm\nhat$ --- demonstrating an independent spatial primitive (which would restore part of
+Scenario~B and break the audit's spatial-reduction headline). \textbf{(F2)} Exhibit a sign
+content of $\wPCD$ independent of the temporal primitive's ordering --- a handedness not
+reducible to $\scyc$ (A1$+$A4) --- demonstrating an independent temporal/CP primitive.
+\textbf{(F3)} Show $\scyc$ is the capture handedness E19 in disguise; this does not refute
+the theorem but \emph{merges} E20 into E19 (\S\ref{sec:e19}), a reclassification reducing
+two chirality items to one.
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.4em]
+\item \texttt{chirality\_audit/theo\_chir\_audit\_1.tex} (v1.1) --- audit entry E20 / D4
+(the conditional cell); the registered primitives E16 ($\nhat$) and E2/E5/E17 (temporal);
+exclusion X2; the v1.1 emergent (E)/(P) grading.
+\item \texttt{chirality\_derivations/sketches/theo\_chir\_pcd\_orientation\_1\_scope.md}
+--- the Patch 0635 scope-and-precondition sketch (this artifact's blueprint), \S5.1
+axiom reconciliation, \S5.3 E19 cross-link.
+\item \texttt{dynamical\_substrate\_law/sketches/F1\_subquestion\_pcd\_orientation\_link.md}
+--- \S11 Phase~1 (net DI-bit current $\parallel\nhat$, DSL-1$\to$DSL-4); \S12 Phase~2
+(coupling rule $\wPCD = \scyc\,\jnet$); \S6 (Scenario A/B/C); \S14.17 (PROVISIONAL CLOSURE
+at viability level --- the inherited ceiling).
+\item \texttt{axiom-registry.md} --- canonical nine axioms; A1 (CP perceive/respond) $+$
+A4 (Nexus / Absolute-Moment cadence) carry the cycle ordering; A5 is the metric (the
+\S\ref{sec:axiom} reconciliation point).
+\item \texttt{capotauro/} --- Reading~C ($\nhat = \vhost$, $\Hfour \to \Hthree = \Icoh$);
+FI-C-RC-1; $|\chi| = \phi^{-3}$.
+\item \texttt{frontier\_sectors/CHIR.md} --- OPEN-CHIR-F1-LINK; OPEN-CHIR-1d (E21
+magnitude); OPEN-CHIR-1c/2d (E19 capture handedness).
+\end{itemize}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}\\
+{\footnotesize THEO-CHIR-PCD-ORIENTATION-1 v1.0 --- Patch 0636, Session 148 --- Conscious
+Point Physics, Substrate Chirality Arc. Viability-level (Layer~2.5) primitive-count
+classification theorem resolving audit entry E20 / OPEN-CHIR-F1-LINK: $\wPCD = \scyc\,\nhat$,
+a product of the registered spatial ($\nhat$, E16) and temporal ($\scyc$, A1$+$A4,
+E2/E5/E17) primitives; Scenario~B refuted; E20 $\to$ emergent (provisional). Built from the
+Patch 0635 scope sketch; axiom-attribution precondition (A5$\to$A1$+$A4) cleared at \S3.}
+
+\end{document}

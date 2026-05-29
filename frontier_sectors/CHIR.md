@@ -8,7 +8,7 @@
   Master dashboard: research_frontier.md
 -->
 
-## Substrate Chirality Arc (CHIR) — 5 problems + 1 resolved
+## Substrate Chirality Arc (CHIR) — 4 problems + 2 resolved
 
 The CHIR sector tracks the chirality programme of the Substrate Chirality Arc
 (`series_umbrella/series_substrate_chirality_arc/`). It sits downstream of the
@@ -134,39 +134,45 @@ dependency is plausible (audit E27).
 
 ---
 
-### OPEN-CHIR-F1-LINK: Resolution of the `n̂` ↦ ω_PCD link
-**Status:** OPEN — scope sketch in progress (Patch 0635); artifact target Patch 0636+
+### THEO-CHIR-PCD-ORIENTATION-1 → OPEN-CHIR-F1-LINK RESOLVED (provisional): the `n̂` ↦ ω_PCD link
+**Status:** RESOLVED (provisional) — Scenario B refuted; E20 emergent (P). Theorem registered
+Patch 0636 at viability level (Layer 2.5), inheriting the F.1 ceiling.
 **Sector(s):** CHIR / FP (F.1)
-**Priority:** HIGH (first downstream theorem after the audit)
 **Operational sense(s):** spatial (axis) + temporal (sign)
-**One-line statement:** Determine whether the PCD-cycle orientation pseudovector
-`ω_PCD(v_host) = σ·n̂` is derived from `n̂` via a substrate mechanism (Scenario A →
-emergent) or is an independent primitive (Scenario B → primitive alongside `n̂`).
-**Audit handling:** entry E20 is classified **unregistered (conditional)** at v1.1
-(emergent under Scenario A, primitive under Scenario B); the audit does not pre-commit.
-**Scope sketch (Patch 0635):** `chirality_derivations/sketches/theo_chir_pcd_orientation_1_scope.md`.
-Refined target finding: the F.1 sketch already derives (viability level)
-`ω_PCD = σ_cycle·ĵ^net = σ_cycle·n̂`, a **product of two already-registered primitives** —
-the spatial primitive `n̂` (audit E16, the axis) and the temporal primitive's handedness
-`σ_cycle` (audit E2/E5/E17, the sign). So `ω_PCD` introduces **no independent third
-primitive**: Scenario B is refuted and E20 is **emergent from the two registered primitives
-jointly**. Reclassification target for the artifact patch: E20 unregistered (conditional) →
-**emergent (P)** — provisional, not established, inheriting the F.1 viability-level ceiling
-(three open commitments per F.1 §14.17). The primitive-count is robust to those open
-commitments (none reintroduces a new direction or handedness); only the magnitude/Layer-3
-rigor is provisional.
-**Precondition to clear before artifact ships:** axiom-attribution reconciliation — the F.1
-sketch attributes `σ_cycle` to "A5," but in the canonical nine-axiom set A5 is the metric;
-the cycle ordering is A1+A4 content (the temporal primitive). The artifact must attribute
-`σ_cycle` to A1+A4 (scope sketch §5.1).
-**Cross-link (flagged, not resolved):** keep `σ_cycle` (temporal cycle ordering) distinct
-from the capture handedness E19 (spatial/CP partnering handedness); if a future result
-identifies them, that *merges* E20 into E19 rather than refuting anything (scope sketch §5.3).
-**Dependencies:** THEO-CHIR-AUDIT-1; `dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (§11 Phase 1 net current ∥ `n̂`; §12 Phase 2 coupling rule; §14.17 viability status).
-**Cross-sector connections:** F.1 DSL arc; THEO-DSL-4 (substrate current ∥ `n̂`); E21 magnitude (OPEN-CHIR-1d) inherits the F.1 Phase-3 `δ=χ` provisional content.
-**Likely first downstream theorem:** THEO-CHIR-PCD-ORIENTATION-1 (Scenario-A classification of `ω_PCD = σn̂`; primitive-count theorem).
-**Paper(s):** F.1; `chirality_derivations/` CHIR-derivation papers.
-**Last updated:** 29 May 2026 (Patch 0635)
+**One-line statement:** Whether the PCD-cycle orientation pseudovector `ω_PCD(v_host) = σ·n̂`
+is derived from `n̂` (Scenario A → emergent) or is an independent primitive (Scenario B →
+primitive alongside `n̂`).
+**Resolution (THEO-CHIR-PCD-ORIENTATION-1, v1.0):** primitive-count theorem. Lifting the F.1
+Phase-1 (net DI-bit current ∥ `n̂`) + Phase-2 (coupling rule) results, `ω_PCD = σ_cycle·n̂` is
+a **product of two already-registered primitives** — the spatial primitive `n̂` (audit E16, the
+axis) and the temporal primitive's handedness `σ_cycle` (audit E2/E5/E17, A1+A4, the sign). So
+`ω_PCD` introduces **no independent third primitive**: **Scenario B refuted; E20 emergent from
+the two registered primitives jointly**, preserving the audit headline that all spatial chirality
+reduces to `n̂`.
+**Layer:** viability (Layer 2.5). E20 reclassified **unregistered (conditional) → emergent (P)**.
+Not established: the reduction rests on the F.1 viability-level result (three open commitments per
+F.1 §14.17). The primitive-count is robust to all three (none reintroduces a direction or
+handedness); only magnitude/Layer-3 rigor is provisional. (The audit `.tex` is v1.1-frozen; this
+reclassification is authored by THEO-CHIR-PCD-ORIENTATION-1 and tracked here, not by re-editing
+the audit.)
+**Precondition cleared (artifact §3):** axiom-attribution reconciliation — `σ_cycle` attributed
+to A1+A4 (canonical temporal primitive), not the F.1 sketch's pre-canonical "A5" (canonical A5 =
+metric). F.1 sketch not edited inline (prior immutable workstream).
+**Cross-link (flagged, not resolved):** `σ_cycle` (temporal cycle ordering) kept distinct from
+capture handedness E19 (spatial/CP); identifying them would *merge* E20 into E19 (programme-positive
+reclassification), not refute (artifact §5.3 / falsifier F3).
+**Artifact:** `chirality_derivations/theo_chir_pcd_orientation_1.tex` (v1.0; 8-page PDF; clean
+3-pass compile) + scope sketch `chirality_derivations/sketches/theo_chir_pcd_orientation_1_scope.md`
++ reasoning `chirality_derivations/reasoning/0636.md`.
+**Falsifiers:** (F1) an independent direction in `ω_PCD` ≠ ±`n̂`; (F2) a sign content independent
+of the temporal primitive's ordering; (F3) `σ_cycle` = E19 capture handedness (merges E20 into E19).
+**Dependencies:** THEO-CHIR-AUDIT-1; `dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (§11 Phase 1; §12 Phase 2; §14.17 viability ceiling); Reading C (FI-C-RC-1 `n̂`).
+**Cross-sector connections:** F.1 DSL arc; THEO-DSL-4 (substrate current ∥ `n̂`); E21 magnitude
+(OPEN-CHIR-1d) inherits the F.1 Phase-3 `δ=χ` provisional content; E19 (OPEN-CHIR-1c/2d) the
+flagged cross-link.
+**Next:** OPEN-CHIR-1d (E21 `χ=φ⁻³` magnitude) and OPEN-CHIR-1c/2d (E19 capture handedness), both
+seeded by the AUDIT-1 review cycle.
+**Last updated:** 29 May 2026 (Patch 0636)
 
 ---
 
