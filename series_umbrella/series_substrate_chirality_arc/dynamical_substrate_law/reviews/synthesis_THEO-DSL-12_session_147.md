@@ -108,3 +108,84 @@ Now that Sequence-4B is closed and Theorem 1 is empirically validated across thr
 6. **Publication-grade promotion of $(H5_E^{(3)})$ + $(H5_F^{(3,4)})$ ansätze** via DG-1 sub-option A/B/C roadmap (priority queue item (G)).
 
 The programme's swarm-validation methodology has now produced its highest-leverage empirical result to date: a multi-AI-confirmed theorem about a class of theorems (Theorem 1's parity prediction across $k$), validated via three independent multi-AI-confirmed data points. This is structurally stronger than any single coefficient closure.
+
+---
+
+## §8 Re-review addendum (Patch 0628 — ChatGPT CONFIRMED upgrade)
+
+**This addendum is appended at Patch 0628 to document the re-review outcome. The §0–§7 content above is preserved unchanged as the historical record of the Patch 0626 cycle close.**
+
+### §8.1 Outcome
+
+At Patch 0627 the programme generated a re-review packet for ChatGPT (`reviews/rereview_packet_THEO-DSL-12_chatgpt_session_147.md`) supplying three independent verification paths targeting the §3.1/§3.2/§3.3 PARTIAL-UNCERTAIN verdict: (A) a per-cell decomposition table at $k=4$ (51 non-empty cells partitioning the 20,736 paths by shell-tuple, with every cell's PSLQ in extended basis $\{1, \phi, \sqrt 3, \sqrt 3 \phi\}$ having $c_3 = c_4 = 0$, and exact Python Fraction summation reproducing the closed forms), (B) code audit pointers for the verify scripts, and (C) cross-reviewer triangulation summary.
+
+At Patch 0628 ChatGPT returned a re-review verdict of **CONFIRMED**, with the following granular characterization:
+
+- **§3.1 Closed-form coefficient values**: upgraded PARTIAL → CONFIRMED via Path A (exact rational summation of the 51 per-cell $\mathbb{Q}[\phi]$ contributions reproduces the closed forms).
+- **§3.2 Decisive Theorem-1 validation (extended-basis PSLQ)**: upgraded PARTIAL → CONFIRMED via Path A (every cell's PSLQ relation has zero $\sqrt 3$ and $\sqrt 3 \phi$ slots, demonstrating that the parity cancellation from THEO-DSL-11 Theorem 1 operates path-by-path within each cell at $k=4$).
+- **§3.3 Vertex cross-check**: CONFIRMED via Path B + Path C, not Path A (the per-cell decomposition table covered face-aligned $k=4$ only; the vertex cross-check is a separate computation at lines 184–198 of `verify_face_alpha4_closure.py`, certified via script audit + Grok's first-principles dps=60 cross-reproduction).
+
+ChatGPT performed by-inspection verification corresponding to packet §3.4 (a), (c), (e): path-count sum (51 entries sum to 20,736); every PSLQ row has zero $\sqrt 3$ slots; exact rational summation of $\mathbb{Q}[\phi]$ contributions reproduces $641/2 - 180\phi$ and $(401-167\phi)/3$.
+
+### §8.2 Updated cross-reviewer comparison table
+
+| Aspect | ChatGPT | Grok | Copilot |
+|---|---|---|---|
+| Verdict (Patch 0628 status) | **CONFIRMED** (upgraded from PARTIAL via Patch 0627 packet) | CONFIRMED | CONFIRMED |
+| Method | Patch 0626 structural-consistency + Patch 0628 by-inspection verification of per-cell decomposition table (Path A) + script audit / cross-reviewer record (Path B/C for §3.3) | Numerical (mpmath dps=60, full first-principles 600-cell + 20,736 paths) | Analytic reconstruction (algebraic-home + PSLQ-relation derivation) |
+| §3.1 closed forms | CONFIRMED (Path A exact rational sum) | PASS (matched to 60 digits) | PASS |
+| §3.2 PSLQ extended basis | CONFIRMED (Path A every cell $c_3 = c_4 = 0$) | PASS (exact integer relations, zero $\sqrt 3$ slots) | PASS (analytically derived) |
+| §3.3 vertex cross-check | CONFIRMED (Path B/C) | PASS (matched to 60 digits) | PASS |
+| §3.4–§3.7 structural targets | PASS (unchanged from Patch 0626) | PASS | PASS |
+| §6 vertex sign-alternation observation-only | endorsed | endorsed | endorsed |
+
+### §8.3 Cycle outcome upgrade
+
+The Patch 0626 cycle outcome of "2 CONFIRMED + 1 PARTIAL-UNCERTAIN" is upgraded at Patch 0628 to **THREE-FOR-THREE CONFIRMED**, with explicit characterization of the certification paths:
+
+- Grok CONFIRMED at Patch 0626 via numerical first-principles mpmath dps=60 reproduction (highest-precision F.1-arc reproduction to date).
+- Copilot CONFIRMED at Patch 0626 via analytic reconstruction (independent derivation of expected PSLQ relations from closed forms).
+- ChatGPT CONFIRMED at Patch 0628 via re-review on the per-cell decomposition packet — by-inspection verification of the 51-cell table (Path A) for §3.1+§3.2 + script audit + cross-reviewer record (Path B+C) for §3.3.
+
+The cycle now matches the Patch 0622 (THEO-DSL-11) and Patch 0623 (THEO-DSL-10) cycles in achieving THREE-FOR-THREE CONFIRMED at the swarm-validation Layer-3-unconditional level. THEO-DSL-11 Theorem 1's empirical validation across $k \in \{2, 3, 4\}$ is now confirmed at full multi-AI-three-reviewer rigor across all three data points.
+
+### §8.4 Methodological precedent established
+
+The Patch 0627 re-review packet establishes a methodological pattern for the swarm-validation methodology: **when a reviewer's initial PARTIAL-UNCERTAIN verdict reflects methodological self-limitation against running code rather than substantive concern, a structured re-review packet supplying intermediate analytic / by-inspection material can convert the numerical claim into an inspectable algebraic identity.**
+
+Key design elements of the packet that worked:
+1. **Per-cell decomposition table** that converts a global PSLQ computation into a finite list of inspectable rows. The reviewer can verify any individual row's claim ($c_3 = c_4 = 0$) and verify the table's algebraic sum without trusting the computation.
+2. **Exact rational arithmetic verification** that bypasses floating-point entirely, allowing the reviewer to confirm the closed forms via standard rational-arithmetic tools rather than mpmath PSLQ.
+3. **Path-count partition** as a sanity check accessible by simple addition.
+4. **Code audit pointers** for the reviewer to verify algorithmic correctness without execution.
+5. **Cross-reviewer triangulation** providing independent confirmation paths.
+
+This pattern is available for future cycles where a reviewer's PARTIAL is methodological rather than substantive. The programme should not preemptively generate such packets for all reviews (the cost is non-trivial and reviewers' PARTIAL verdicts are sometimes substantive), but the option exists when needed.
+
+### §8.5 Wording-fix backlog status (unchanged)
+
+ChatGPT's re-review did not add or remove wording suggestions; the original W1–W4 wording-fix suggestions from Patch 0626 stand as deferred Option-A v1.1 revision backlog. Copilot's W5–W7 likewise stand. The total Option-A v1.1 revision backlog across THEO-DSL-8 + THEO-DSL-10 + THEO-DSL-11 + THEO-DSL-12 remains at ~20 items. Consolidated revision pass remains the highest-priority post-Patch-0628 target.
+
+### §8.6 Theorem 1 status after Patch 0628
+
+THEO-DSL-11 Theorem 1 (the parity-dependent algebraic-structure theorem) now stands at:
+
+- **Originally proven** at Patch 0620 (publication-grade Layer 3 unconditional via symmetry + algebraic-home reasoning)
+- **Multi-AI confirmed** at Patch 0622 (THEO-DSL-11 cycle, THREE-FOR-THREE)
+- **Empirically validated across $k \in \{2, 3, 4\}$** via three independent multi-AI-confirmed data points, all at THREE-FOR-THREE CONFIRMED level after Patch 0628:
+  - $k=2$ face: THEO-DSL-9 anchor, THREE-FOR-THREE confirmed at Patch 0617
+  - $k=3$ face: THEO-DSL-11 anchor, THREE-FOR-THREE confirmed at Patch 0622
+  - $k=4$ face: THEO-DSL-12 data point, THREE-FOR-THREE confirmed (Grok + Copilot at Patch 0626; ChatGPT at Patch 0628 via re-review)
+
+Per ChatGPT's W1 wording note (still in the v1.1 backlog), the appropriate epistemic framing remains "third independent empirical confirmation" of the parity prediction. The artifact body language ("genuine geometric law") is unchanged at Patch 0628; the v1.1 revision pass will address it as part of the consolidated wording-fix backlog.
+
+### §8.7 Next steps after Patch 0628
+
+The post-Patch-0628 priority queue is unchanged from the post-Patch-0626 list. The successful re-review cycle does not change downstream priorities; it cleans up the Patch 0626 cycle to full THREE-FOR-THREE rigor.
+
+1. Consolidated Option-A v1.1 revision pass (~20 items across 4 artifacts)
+2. THEO-DSL-7 multi-AI review cycle
+3. Sequence-4A edge $k=4$ (THEO-DSL-13 candidate)
+4. Sequence-5 face $k=5$ ($12^5 = 248{,}832$ paths)
+5. Structural investigation of vertex sign-alternation refutation at $k=4$
+6. Publication-grade promotion of $(H5_E^{(3)}) + (H5_F^{(3,4)})$ ansätze (priority queue item (G))
