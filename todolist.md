@@ -167,6 +167,20 @@ Empty sections marked `(none yet)` to keep the skeleton uniform across heavily-d
 **Estimated effort**: ~9 patches (one per sector), deliverable as a sequential arc. Could also be done piecemeal as sessions touch specific sectors for unrelated reasons (lazy normalization).
 **Registered**: 25 May 2026 (frontier decomposition close, noted from sector-file spot-check when Thomas observed format heterogeneity in extracted files).
 
+### TODO-012 — PCD acronym terminology drift cleanup (Perceive-Compute-Displace canonical, NOT Polarize-Capture-Depolarize)
+
+**Status**: registered Session 148 Patch 0630; not blocking next paper but blocking THEO-CHIR-AUDIT-1 Patch 0631 unless audit footnotes the drift.
+**Why P2**: The canonical PCD expansion is "Perceive, Compute, Displace" per the original archived definition at `archive/grok-exploratory-SM/SR_companion_papers/c01_absolute_moment_postulate/absolute_moment_postulate.tex`. The "Polarize, Capture, Depolarize" variant was introduced at Session 146 in commit `311bc1e` (master_glossary.md PCD entry) without rationalization and propagated to ~13 files. The drift erases the consciousness-as-fundamental commitment that the original framing preserved (Perceive-Compute-Displace = agentic per-CP per-Absolute-Moment cycle; Polarize-Capture-Depolarize = field-responsive dynamics vocabulary that conflates the primitive cycle with the between-CPs ZBW dynamics). Per Session 148 chirality-audit scoping, the original terminology is restored as canonical and the drift is registered for cleanup. No physics derivation depends on the new expansion (verified by spot-reading the F.1 sub-question sketch + capotauro.tex passages), so the cleanup is a clean find-and-replace + glossary correction with no downstream substantive effect.
+
+**Deliverable**: 
+- `master_glossary.md` PCD entry: revert to "Perceive, Compute, Displace" with brief note in the entry explaining the consciousness-as-fundamental framing
+- `master_glossary.md` Conscious Point description: "the PCD cycle" → "the Perceive-Compute-Displace (PCD) cycle"
+- Bulk find-and-replace across `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/dynamical_substrate_law.tex`, `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md`, `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/glossary-dynamical-substrate-law.md`, `series_umbrella/series_substrate_chirality_arc/capotauro/capotauro.tex` and its companion files, `book_project/chapters/capotauro_what_was_always_there.md`, `flagship_papers/electroweak/sf-2_electroweak.tex` and `sf-2_companion.tex`, `frontier_sectors/SS.md`, `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/layer3_promotion/F1_layer3_b1q4_algebraic_derivation.md`, `series_umbrella/series_substrate_chirality_arc/dynamical_substrate_law/documentation_suite/keywords-dynamical-substrate-law.md`, `handovers/2026-05-20_session_137_close_manifestation_iv_next_window_seed.md` — replace "Polarize-Capture-Depolarize" → "Perceive-Compute-Displace" and the arrow notation "Polarize → Capture → Depolarize" → "Perceive → Compute → Displace"; verify no substantive physics claim is affected by spot-reading each modified file's argumentation around the replaced text.
+- Sketch a brief consolidation footnote describing the terminology history (drift introduced at Session 146 commit `311bc1e`; original canonical per the archived absolute_moment_postulate.tex; restored at Patch ???) so that future readers encountering legacy expansion in archive don't get confused.
+
+**Estimated effort**: 1-2 patches. ~13 files to modify; mechanical find-and-replace with per-file argumentation spot-check. Recommend a single patch with sequential file modifications and a verification pass for substantive-physics impact.
+**Registered**: 28 May 2026 Session 148 Patch 0630 (THEO-CHIR-AUDIT-1 scope sketch precondition gap §5.2).
+
 ---
 
 ## Cleared items (history)
