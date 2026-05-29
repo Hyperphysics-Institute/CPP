@@ -24,6 +24,34 @@
 %     now reaching as far as shell B5 (12 paths in (B3, B5)). Verify script:
 %     code/verify_edge_alpha3_closure.py. Reasoning fragment:
 %     hardened_theorems/reasoning/0618.md.
+%   v1.1 (Patch 0629, Session 147, 28 May 2026): consolidated wording-fix
+%     revision pass per multi-AI review backlog from Patch 0623 (ChatGPT +
+%     Copilot reviews; all three reviewers CONFIRMED). Specific changes:
+%       - ChatGPT 1 + Copilot 1 (overlapping): clarified the "9-shell
+%         classification" phrasing to explicitly say "9-shell classification
+%         of ordered intermediate vertex pairs (v', v'') relative to v_host" --
+%         avoids confusion with the radial-shell decomposition of the
+%         600-cell itself.
+%       - ChatGPT 2: added a one-line Lemma making explicit that
+%         n_edge = phi*(u_1 - v_host) lies in Q[phi]^4 -- this is the
+%         algebraic reason no sqrt(3) parity phenomenon arises in the
+%         edge variant (contrast with THEO-DSL-11 face variant).
+%       - ChatGPT 3: noted that the "negative hemisphere" phrasing
+%         ChatGPT's Patch 0623 review referenced does not appear in the
+%         artifact body (already in mathematical form "shell B_5 with
+%         <v'',v_host> = -1/(2*phi)"); ChatGPT was likely looking at an
+%         earlier exposition. No textual change needed.
+%       - ChatGPT 4: sign-alternation observational treatment preserved
+%         (endorsement, no change).
+%       - Copilot 2: added a Remark explicitly contrasting the edge
+%         variant (in Q[phi]) with the THEO-DSL-11 face variant (in
+%         sqrt(3)*Q[phi]/3), reinforcing the Parity Theorem retrospectively.
+%       - Copilot 3 (13-cell diagram): deferred to a future v1.2 revision.
+%         The 13-cell table is already in the artifact body; a TikZ
+%         shell-class flow diagram would be additional artwork beyond
+%         the scope of v1.1.
+%     No theorem changes; no claim weakened or strengthened. All wording
+%     fixes preserve the artifact's mathematical content.
 
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -43,7 +71,10 @@
 \newcommand{\nhat}{\hat{n}}
 \newcommand{\nrho}{\hat{n}_\rho}
 \newcommand{\nedge}{\hat{n}_{\text{edge}}}
+\newcommand{\nperpF}{\hat{n}_{F\perp}}
 \newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\ui}{u_i}
+\newcommand{\uj}{u_j}
 \newcommand{\jvec}{\vec{j}}
 \newcommand{\Reals}{\mathbb{R}}
 \newcommand{\Icoh}{I_h}
@@ -162,10 +193,54 @@ depend on this anchor (verified explicitly in \S\ref{sec:robustness}).
 
 The radial direction at $\vhost$ is $\nrho = \vhost$.
 
-\paragraph{9-shell vertex classification.}
-At $k=3$, path endpoints $v''$ can reach beyond the 4 inner shells that
-suffice at $k\leq 2$. The full 9-shell classification by $\langle v'',
-\vhost\rangle$ is:
+\begin{lemma}[{edge-aligned substrate direction is $\mathbb{Q}[\phi]$-rational}]\label{lem:nedge-Qphi}
+The unit anchor direction $\nedge = \phi(u_1^{\text{anchor}} - \vhost)$ lies
+in $\mathbb{Q}[\phi]^4$. Equivalently, all four coordinates of $\nedge$ are
+$\mathbb{Q}[\phi]$-rational.
+\end{lemma}
+\begin{proof}
+Both $u_1^{\text{anchor}}$ and $\vhost$ are $\mathbb{Q}[\phi]^4$-rational
+600-cell vertices (Setup, $(H1_E)$); the difference $u_1^{\text{anchor}} - \vhost$
+lies in $\mathbb{Q}[\phi]^4$. The unit-edge normalisation factor $\phi$ is
+itself $\mathbb{Q}[\phi]$-rational. Hence $\nedge \in \mathbb{Q}[\phi]^4$.
+\end{proof}
+
+\begin{remark}[no $\sqrt{3}$ at the edge variant]\label{rem:no-sqrt3-edge}
+Lemma~\ref{lem:nedge-Qphi} is the algebraic reason no $\sqrt{3}$ parity
+phenomenon arises in the edge variant: each factor $(\hat e_j \cdot \nedge)$
+in the path-product weight lies in $\mathbb{Q}[\phi]$ (both $\hat e_j$ and
+$\nedge$ are in $\mathbb{Q}[\phi]^4$, so their dot product is in
+$\mathbb{Q}[\phi]$). The edge-aligned $k$-th-order coefficients therefore
+live in $\mathbb{Q}[\phi]$ at all $k$, regardless of parity. This contrasts
+sharply with the face-aligned variant (THEO-DSL-9 at $k=2$, THEO-DSL-11
+at $k=3$, THEO-DSL-12 at $k=4$), where the centroid normal $\nperpF =
+(\vhost + \ui + \uj)/(\phi\sqrt{3})$ carries an unavoidable $1/\sqrt{3}$
+factor: at odd $k$ the face-aligned coefficients live in
+$\sqrt{3}\cdot\mathbb{Q}[\phi]/3^{(k+1)/2}$ (the \emph{Parity Theorem} of
+THEO-DSL-11). Schematically:
+\begin{center}
+\begin{tabular}{l l l}
+\toprule
+Variant            & Substrate direction              & Coefficient class at order $k$ \\
+\midrule
+Vertex (THEO-DSL-3,-4,-5) & $\nrho = \vhost$           & $\mathbb{Q}[\phi]$, all $k$ \\
+Edge (THEO-DSL-7,-10)     & $\nedge = \phi(u_1 - \vhost)$ & $\mathbb{Q}[\phi]$, all $k$ (this artifact) \\
+Face (THEO-DSL-9,-11,-12) & $\nperpF = (\vhost+\ui+\uj)/(\phi\sqrt{3})$
+                                                       & $\mathbb{Q}[\phi]$ even $k$, $\sqrt{3}\cdot\mathbb{Q}[\phi]$ odd $k$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{remark}
+
+\paragraph{9-shell classification of ordered intermediate vertex pairs.}
+At $k=3$, the path endpoints $v''$ can reach beyond the 4 inner shells
+that suffice at $k\leq 2$. We classify ordered intermediate pairs
+$(v', v'')$ relative to $\vhost$ by the radial shells of their second
+component $v''$ --- i.e., by $\langle v'', \vhost\rangle$. (This is a
+\emph{classification of path endpoints}, not a new geometric shell
+decomposition of the 600-cell itself; the underlying radial shells were
+already used at $k=1, 2$.) The full enumeration of available endpoint
+shells is:
 \begin{center}
 \begin{tabular}{l c r}
 \toprule

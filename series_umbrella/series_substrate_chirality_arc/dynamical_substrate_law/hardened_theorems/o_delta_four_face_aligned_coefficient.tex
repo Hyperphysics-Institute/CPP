@@ -12,6 +12,32 @@
 % CHANGELOG
 %   v1.0 (Patch 0624, Session 147, 28 May 2026): higher-order extension of
 %     THEO-DSL-11 (face k=3, Patches 0620 + 0622 multi-AI confirmation).
+%   v1.1 (Patch 0629, Session 147, 28 May 2026): consolidated wording-fix
+%     revision pass per multi-AI review backlog from Patch 0626 reviews
+%     (ChatGPT + Copilot) + Patch 0628 ChatGPT re-review CONFIRMED upgrade.
+%     Specific changes:
+%       - W1 (ChatGPT): replaced "genuine geometric law" framing with
+%         "third independent empirical confirmation". The parity prediction
+%         is *proven* at THEO-DSL-11; THEO-DSL-12 provides an empirical
+%         stress-test data point.
+%       - W2 (ChatGPT): added Remark (rem:thm-vs-validation) explicitly
+%         distinguishing the proven THEO-DSL-11 Theorem 1 from the present
+%         empirical stress-test artifact.
+%       - W3 (ChatGPT): per-PSLQ-output wording adjusted from "exactly
+%         zero" to "vanishing" sqrt(3) and sqrt(3)*phi slots. Exactness
+%         belongs to the discovered integer relation, not to the
+%         floating-point input.
+%       - W5 (Copilot): added boxed Remark (rem:three-data-points)
+%         explicitly listing the three-data-point empirical validation
+%         of Theorem 1 across k=2,3,4 face variants.
+%       - W6 (Copilot): clarified that Theorem 1 gives an upper bound on
+%         the denominator (the ambient denominator), not an equality.
+%       - W7 (Copilot): added cross-reference from main results section
+%         to the vertex sign-alternation Observation block.
+%     W4 (ChatGPT) is endorsement of current observational treatment for
+%     sign-alternation; no change. No theorem changes; no claim weakened
+%     or strengthened. All wording fixes preserve the artifact's
+%     mathematical content; revisions are exposition-level only.
 %
 % ** SUBSTANTIVE NEW FINDING -- EMPIRICAL VALIDATION OF THEO-DSL-11 THEOREM 1 **:
 %
@@ -32,12 +58,13 @@
 % prediction.
 %
 % PSLQ at mpmath dps=40 in extended basis {1, phi, sqrt(3), sqrt(3)*phi}
-% returns EXACTLY ZERO sqrt(3) and sqrt(3)*phi coefficients (integer relations
-% [-2, 641, -360, 0, 0] and [-3, 401, -167, 0, 0]). The k=4 face coefficients
-% live STRICTLY in Q[phi], not sqrt(3)*Q[phi] -- confirming the parity-
-% dependent structure across THREE independent data points (k=2, 3, 4 face)
-% and establishing Theorem 1 as a genuine geometric law rather than a k=3
-% accident.
+% returns integer relations [-2, 641, -360, 0, 0] and [-3, 401, -167, 0, 0]
+% with vanishing sqrt(3) and sqrt(3)*phi slots. The k=4 face coefficients
+% live in Q[phi], not in sqrt(3)*Q[phi] -- providing the third independent
+% empirical confirmation of the parity-dependent algebraic structure
+% predicted by THEO-DSL-11 Theorem 1, across k=2, 3, 4 face variants
+% spanning both parities. (Theorem 1 is *proven* at THEO-DSL-11; this
+% artifact provides an empirical stress-test data point, not a re-proof.)
 %
 % V_4-FORCED VANISHING of two non-invariant components persists at k=4
 % (publication-grade Layer 3 unconditional from THEO-DSL-9 Lemmas 1-2, multi-
@@ -132,13 +159,13 @@ returns the integer relations
 [-2,\, 641,\, -360,\, 0,\, 0] &\quad\text{for}\quad \alpha_4^{(\rho)},\\
 [-3,\, 401,\, -167,\, 0,\, 0] &\quad\text{for}\quad \alpha_4^{(\text{ax})}.
 \end{align*}
-\textbf{The $\sqrt{3}$ and $\sqrt{3}\phi$ coefficients are exactly zero}
-in both relations. This is the \textbf{third independent data point}
+\textbf{The $\sqrt{3}$ and $\sqrt{3}\phi$ slots of both integer relations
+vanish identically.} This is the \textbf{third independent data point}
 empirically validating Theorem 1, after THEO-DSL-9 at $k=2$ (clean $\mathbb{Q}[\phi]$)
 and THEO-DSL-11 at $k=3$ (in $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$). The
-parity-dependent algebraic structure is now confirmed across $k \in \{2,
-3, 4\}$, establishing it as a \textbf{genuine geometric law} rather than a
-$k=3$ accident.
+parity-dependent algebraic structure now has \textbf{three independent
+empirical confirmations} spanning both parities ($k \in \{2, 3, 4\}$),
+sharply distinguishing the parity prediction from a $k=3$ accident.
 
 \paragraph{Structural inheritance preserved at $k=4$.}
 The $V_4$-forced vanishing of the two non-invariant components carries
@@ -234,10 +261,14 @@ lives in $\mathbb{Q}[\phi]/9$. Summing over $12^4 = 20{,}736$ paths preserves
 this, and projecting onto a basis vector in $\mathbb{Q}[\phi]^4$ (such as
 $\nrho$ or $\nax$) yields a coefficient in $\mathbb{Q}[\phi]/9$.
 
-This is an \textit{ambient} prediction — the actual coefficient may have
-a tighter denominator if particular sub-sums happen to cancel. As we will
-see, both observed $k=4$ coefficients lie in $\mathbb{Q}[\phi]/9$ but with
-the tighter denominators 2 and 3 respectively (both dividing 9).
+This is an \textit{ambient upper bound} on the denominator: Theorem 1
+bounds the denominator above by $3^{k/2} = 9$ at $k=4$ but does
+\textbf{not} predict minimal denominators. The actual coefficient may
+have a tighter denominator if particular sub-sums happen to cancel. As
+we will see, both observed $k=4$ coefficients lie in $\mathbb{Q}[\phi]/9$
+but with the tighter denominators 2 and 3 respectively (both dividing 9),
+illustrating that Theorem 1's denominator is an upper bound rather than
+an equality.
 
 \subsection{Algebraic falsifiability}
 
@@ -247,10 +278,10 @@ expect non-trivial $\sqrt{3}$ contributions at $k=4$. PSLQ in the extended
 basis $\{1, \phi, \sqrt{3}, \sqrt{3}\phi\}$ at sufficiently high precision
 would then return non-zero $\sqrt{3}$ and $\sqrt{3}\phi$ coefficients. The
 present artifact's central empirical result is that PSLQ at mpmath dps=40
-returns \textbf{exactly zero} $\sqrt{3}$ and $\sqrt{3}\phi$ coefficients
-for both $\alpha_4^{(\rho)}$ and $\alpha_4^{(\text{ax})}$, confirming the
-prediction at $k=4$ and establishing Theorem 1 across three independent
-data points.
+returns integer relations with \textbf{vanishing} $\sqrt{3}$ and
+$\sqrt{3}\phi$ slots for both $\alpha_4^{(\rho)}$ and $\alpha_4^{(\text{ax})}$,
+confirming the prediction at $k=4$ as a third independent empirical data
+point for Theorem 1.
 
 \section{Closed forms at $k=4$}\label{sec:results}
 
@@ -301,14 +332,56 @@ then verified to machine-double precision in the verify script
 
 \begin{corollary}[empirical validation of THEO-DSL-11 Theorem 1 at $k=4$]
 \label{cor:thm1-k4}
-The PSLQ relations of Theorem~\ref{thm:dsl12} have \textbf{exactly zero
-$\sqrt{3}$ and $\sqrt{3}\phi$ coefficients}, confirming THEO-DSL-11 Theorem 1's
+The PSLQ relations of Theorem~\ref{thm:dsl12} have \textbf{vanishing
+$\sqrt{3}$ and $\sqrt{3}\phi$ slots}, confirming THEO-DSL-11 Theorem 1's
 prediction that face-aligned coefficients live in $\mathbb{Q}[\phi]/3^{k/2}$
 at even $k$. Combined with THEO-DSL-9 ($k=2$, clean $\mathbb{Q}[\phi]$) and
 THEO-DSL-11 ($k=3$, $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$), this is the third
-independent data point validating Theorem 1, establishing it as a genuine
-geometric law rather than a $k=3$ accident.
+independent empirical confirmation of Theorem 1's parity prediction,
+spanning both parities in $k \in \{2, 3, 4\}$.
 \end{corollary}
+
+\begin{remark}[theorem status vs empirical validation status]\label{rem:thm-vs-validation}
+THEO-DSL-11 Theorem 1 (the parity-dependent algebraic-structure theorem,
+Patches 0620 + 0622) is \emph{proven} at publication-grade Layer 3
+unconditional via symmetry + algebraic-home reasoning. The present
+artifact (THEO-DSL-12 candidate) does \emph{not} re-prove Theorem 1;
+it provides an independent empirical \emph{stress-test} of the
+prediction at the next even $k$, complementing the existing $k=2$
+(THEO-DSL-9) and $k=3$ (THEO-DSL-11) data points. The closed forms
+$\alpha_4^{(\rho)} = 641/2 - 180\phi$ and $\alpha_4^{(\text{ax})} =
+(401 - 167\phi)/3$ are themselves a new closed-form result; their
+\emph{compatibility with Theorem 1's parity prediction} (i.e., the
+$\sqrt{3}$ slots of the integer PSLQ relations vanishing) is the
+stress-test outcome, not a re-proof of Theorem 1 itself.
+\end{remark}
+
+\begin{remark}[three-data-point empirical validation, summary]\label{rem:three-data-points}
+\fbox{\parbox{0.92\textwidth}{
+\textbf{Three-data-point validation of THEO-DSL-11 Theorem 1.}
+The parity-dependent algebraic-structure theorem (THEO-DSL-11 Theorem 1)
+is now empirically validated across $k \in \{2, 3, 4\}$ face-aligned
+data points:
+\begin{itemize}
+\item $k=2$ (even, THEO-DSL-9): $\alpha_2^{(\rho)} = -14 + 7\phi$,
+      $\alpha_2^{(\text{ax})} = -6 + 2\phi$, both in clean $\mathbb{Q}[\phi]$.
+\item $k=3$ (odd, THEO-DSL-11): $\alpha_3^{(\rho)} = (87 - 53\phi)\sqrt{3}/3$,
+      $\alpha_3^{(\text{ax})} = (41 - 28\phi)\sqrt{3}/3$, both in
+      $\sqrt{3}\cdot\mathbb{Q}[\phi]/3$.
+\item $k=4$ (even, this artifact): $\alpha_4^{(\rho)} = 641/2 - 180\phi$,
+      $\alpha_4^{(\text{ax})} = (401 - 167\phi)/3$, both in $\mathbb{Q}[\phi]/9$
+      ambient (with tighter denominators 2 and 3).
+\end{itemize}
+The parity-dependent algebraic-class membership $\mathbb{Q}[\phi]$ vs
+$\sqrt{3}\cdot\mathbb{Q}[\phi]$ is confirmed empirically across all three data
+points spanning both parities. No $\sqrt{3}$ slot has appeared at any even $k$
+where Theorem 1 predicts clean $\mathbb{Q}[\phi]$, and the $\sqrt{3}$
+prefactor at $k=3$ matches Theorem 1's odd-$k$ prediction exactly. The
+appropriate epistemic framing of this artifact's central contribution is
+\emph{third independent empirical confirmation of the parity prediction},
+not establishment of a new theorem.
+}}
+\end{remark}
 
 \begin{corollary}[$k=4$ vertex cross-check]\label{cor:vertex-k4}
 The same 20,736-path assembly with $\nhat = \vhost$ (vertex-aligned cross-check)
@@ -317,6 +390,11 @@ clean $\mathbb{Q}[\phi]/2$. The $k=1, 2, 3$ vertex cross-checks at $\alpha_1
 = 3/\phi^2$, $\alpha_2 = -9/\phi^2$, $\alpha_3 = -126 + 81\phi$ are also all
 reproduced, locking the assembly convention across $k \in \{1, 2, 3, 4\}$.
 \end{corollary}
+
+\noindent The vertex-aligned coefficients reproduced in
+Corollary~\ref{cor:vertex-k4} additionally support a programme-finding
+about the sign pattern across $k$, registered as an observation-only
+result in Observation~\ref{obs:sign-alternation} below.
 
 \begin{observation}[vertex sign-alternation conjecture refuted at $k=4$]
 \label{obs:sign-alternation}
@@ -395,7 +473,7 @@ The exact closed forms above are obtained by:
 \item Extracting closed forms via mpmath PSLQ at dps=40 in the extended
   basis $\{1, \phi, \sqrt{3}, \sqrt{3}\phi\}$; the integer relations
   $[-2, 641, -360, 0, 0]$ and $[-3, 401, -167, 0, 0]$ confirm the closed
-  forms with exactly zero $\sqrt{3}$ components.
+  forms with vanishing $\sqrt{3}$ and $\sqrt{3}\phi$ slots.
 \item Verifying the resulting closed-form expressions to machine-double
   precision in the verify script.
 \item Cross-checking via the vertex-aligned $k=1, 2, 3, 4$ targets

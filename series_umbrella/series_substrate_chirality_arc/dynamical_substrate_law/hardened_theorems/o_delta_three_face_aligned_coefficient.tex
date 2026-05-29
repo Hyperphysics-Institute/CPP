@@ -12,6 +12,40 @@
 % CHANGELOG
 %   v1.0 (Patch 0620, Session 147, 28 May 2026): higher-order extension of
 %     THEO-DSL-9 (face k=2, Patch 0615 + Patch 0617 multi-AI confirmation).
+%   v1.1 (Patch 0629, Session 147, 28 May 2026): consolidated wording-fix
+%     revision pass per multi-AI review backlog from Patch 0622 (ChatGPT +
+%     Copilot reviews; ChatGPT/Grok/Copilot all CONFIRMED). Specific changes:
+%       - ChatGPT 1: §Robustness wording correction. The phrase "rotates
+%         n_Fperp within T_{v_host} S^3" implicitly treated n_Fperp as
+%         tangential; it has a radial component along v_host. Replaced
+%         with explicit "rotates the tangential axial component while
+%         preserving the same radial projection along v_host" framing.
+%       - ChatGPT 2: §Robustness softening: the adapted 2D subspace
+%         span{n_rho, n_ax} is face-dependent (n_ax depends on {u_i, u_j});
+%         clarified that the coefficient pair is orbit-invariant in the
+%         CORRESPONDING ADAPTED FRAME for each face choice.
+%       - ChatGPT 3: Explicit denominator-simplification note for k=3:
+%         Theorem 1 predicts ambient sqrt(3)*Q[phi]/9; observed denominator
+%         is 3 (which divides 9). Same pattern as THEO-DSL-12 at k=4.
+%         Added explicit text noting ambient-vs-observed denominator
+%         structure to avoid denominator nitpicks.
+%       - Copilot 1: Parity Theorem labelled "the Parity Theorem"
+%         explicitly for visible cross-reference; the theorem already has
+%         a label (thm:parity-structure) and a descriptive name in its
+%         environment header, but Copilot wanted higher visibility.
+%       - Copilot 2: Anti-erasure remark expanded with a short proof
+%         sketch that no Q[phi]-basis change of span{n_rho, n_ax} can
+%         absorb the sqrt(3) without reintroducing it elsewhere
+%         (the sqrt(3) lives in the path-product weight, not in the
+%         frame; any basis substitution preserves the path-product
+%         structure).
+%       - Copilot 3: Added a short geometric remark explaining why
+%         |v_host + u_i + u_j|^2 = 3 + 3*phi = 3*phi^2 -- specifically,
+%         the dot-product structure of three mutually adjacent 600-cell
+%         vertices on a triangular face.
+%     No theorem changes; no claim weakened or strengthened. All wording
+%     fixes preserve the artifact's mathematical content; revisions are
+%     exposition-level only.
 %
 % ** SUBSTANTIVE NEW FINDING -- the central content of this artifact **:
 %
@@ -277,7 +311,7 @@ Summing over $|\mathcal{P}_k(\vhost)| = 12^k$ paths and projecting onto a
 basis vector in $\mathbb{Q}[\phi]^4$ (such as $\nrho$ or $\nax$) preserves
 this structure. Hence:
 
-\begin{theorem}[parity-dependent algebraic structure]\label{thm:parity-structure}
+\begin{theorem}[parity-dependent algebraic structure --- the \emph{Parity Theorem}]\label{thm:parity-structure}
 At face-aligned Reading C in the 600-cell with the $\nperpF$ substrate
 primitive direction, the $k$-th-order substrate-current coefficients
 $\alpha_k^{(\rho, \text{face})}$ and $\alpha_k^{(\text{ax})}$ (in the
@@ -294,6 +328,8 @@ The vertex (THEO-DSL-3, -4, -5; THEO-DSL-10 cross-check) and edge (THEO-DSL-7,
 -10) variants live in $\mathbb{Q}[\phi]$ at all $k$, since their substrate
 primitive directions ($\nrho = \vhost$, $\hat n_{\text{edge}} \propto u_1 - \vhost$)
 carry no $\sqrt{3}$.
+
+Hereafter this result is referenced as \emph{the Parity Theorem}.
 \end{theorem}
 
 \begin{proof}[Sketch]
@@ -307,6 +343,41 @@ $\sqrt{3}^{-k}\cdot(\text{rational of }\mathbb{Q}[\phi])$. The parity case
 analysis on $\sqrt{3}^{-k}$ gives the stated dichotomy.
 \end{proof}
 
+\begin{remark}[ambient vs observed denominator]\label{rem:ambient-vs-observed}
+At $k=3$ (odd), the Parity Theorem predicts the ambient denominator
+$3^{(k+1)/2} = 3^2 = 9$; the observed coefficients in
+Theorem~\ref{thm:dsl11} below have denominator 3 (which divides 9).
+This is the same ``ambient prediction $\supseteq$ observed denominator''
+pattern that recurs at $k=4$ in THEO-DSL-12, where Theorem~\ref{thm:parity-structure}
+predicts ambient $\mathbb{Q}[\phi]/9$ and the observed coefficients have
+denominators 2 and 3 (both dividing 9). The Parity Theorem gives an
+\emph{upper bound} on the denominator at order $k$, not an equality;
+the actual coefficient may have a tighter denominator if particular
+sub-sums happen to cancel.
+\end{remark}
+
+\begin{remark}[geometric origin of the $\sqrt{3}$ factor]\label{rem:geometric-origin}
+The $\sqrt{3}$ enters via $|\vhost + \ui + \uj|^2 = 3 + 3\phi = 3\phi^2$,
+so $|\vhost + \ui + \uj| = \phi\sqrt{3}$, and the face-centroid direction
+$\nperpF = (\vhost + \ui + \uj)/(\phi\sqrt{3})$ carries an unavoidable
+$1/\sqrt{3}$ factor. The geometric reason $|\vhost + \ui + \uj|^2 = 3 + 3\phi$
+is that $(\vhost, \ui, \uj)$ are three mutually adjacent 600-cell vertices
+(a triangular face), each pair at inner product $\phi/2$:
+\begin{align*}
+|\vhost + \ui + \uj|^2
+   &= |\vhost|^2 + |\ui|^2 + |\uj|^2
+      + 2\langle\vhost,\ui\rangle + 2\langle\vhost,\uj\rangle + 2\langle\ui,\uj\rangle\\
+   &= 3 + 3 \cdot 2 \cdot \tfrac{\phi}{2} = 3 + 3\phi = 3(1+\phi) = 3\phi^2.
+\end{align*}
+The squared norm $3 + 3\phi$ is \emph{not} a perfect square in $\mathbb{Q}[\phi]$
+(since $\phi$ satisfies $\phi^2 = \phi + 1$, the only square roots in
+$\mathbb{Q}[\phi]$ of $3 + 3\phi = 3\phi^2$ are $\pm\phi\sqrt{3}$ in
+$\mathbb{Q}[\phi, \sqrt{3}]$, which extend $\mathbb{Q}[\phi]$ properly).
+This is the algebraic-geometric reason the face-aligned variant escapes
+$\mathbb{Q}[\phi]$ at odd $k$ where the $\sqrt{3}^{-k}$ factor survives parity
+cancellation.
+\end{remark}
+
 \begin{remark}
 This is the first F.1 result outside $\mathbb{Q}[\phi]$ in the dynamical
 substrate law programme. It is also the first case in which the algebraic
@@ -314,8 +385,8 @@ type of the closed-form coefficient depends non-trivially on the parity of
 the order $k$. The structure is a genuine geometric feature of the face-
 centroid direction in the 600-cell --- specifically, the fact that the
 sum-of-three-unit-vectors $\vhost + \ui + \uj$ has squared norm
-$3 + 3\phi = 3\phi^2$ rather than a perfect square in $\mathbb{Q}[\phi]$ ---
-not a computational artifact.
+$3 + 3\phi = 3\phi^2$ rather than a perfect square in $\mathbb{Q}[\phi]$
+(Remark~\ref{rem:geometric-origin}) --- not a computational artifact.
 \end{remark}
 
 \section{Closed forms at $k=3$}\label{sec:results}
@@ -427,10 +498,15 @@ $(B_3, B_5)$    & $12$   & $+0.8379$  & $+1.1266$ \\
 
 By THEO-DSL-9, the coefficient pair $(\alpha_3^{(\rho)},
 \alpha_3^{(\text{ax})})$ is invariant under the $H_4$-orbit action on the 30
-incident faces $\{\ui, \uj\}$ at $\vhost$: choosing a different face rotates
-$\nperpF$ within $T_{\vhost}S^3$ but leaves the $V_4$-invariant subspace
-$\mathrm{span}\{\nrho, \nax\}$ and the projected coefficients unchanged. The
-verify script confirms this explicitly: across all 30 faces, the standard
+incident faces $\{\ui, \uj\}$ at $\vhost$. More precisely: choosing a
+different face rotates the tangential axial component of $\nperpF$ while
+preserving the same radial projection along $\vhost = \nrho$; correspondingly,
+the adapted 2D subspace $\mathrm{span}\{\nrho, \nax\}$ \emph{itself} changes
+with the chosen face (because $\nax = \ui + \uj - \phi\,\vhost$ depends
+explicitly on $\{\ui, \uj\}$), but the coefficient pair
+$(\alpha_3^{(\rho)}, \alpha_3^{(\text{ax})})$ is orbit-invariant in the
+\emph{corresponding} adapted frame for each face choice. The verify
+script confirms this explicitly: across all 30 faces, the standard
 deviation of each coefficient over the orbit is $< 10^{-11}$ (double
 precision); the $\hat n_{\perp 3}$ and $\hat n_{\text{diff}}$ components are
 identically zero ($|\text{max}| < 10^{-12}$).
@@ -506,6 +582,28 @@ without introducing it elsewhere; the parity-dependent algebraic structure
 of Theorem~\ref{thm:parity-structure} therefore appears to be a robust
 feature of the face-aligned variant, but multi-AI verification is invited
 on this point.
+
+\paragraph{Why no $\mathbb{Q}[\phi]$-basis change can absorb the $\sqrt 3$ --- short proof sketch.}
+The $\sqrt{3}$ in the closed forms is not a feature of the choice of frame
+$\{\nrho, \nax\}$; it originates in the path-product weight
+$\prod_{j=1}^{k}(\hat e_j \cdot \nperpF)$. Each factor
+$(\hat e_j \cdot \nperpF)$ lies in $(1/\sqrt{3})\cdot\mathbb{Q}[\phi]$
+(Corollary~\ref{cor:nFperp-sqrt3}), so the path product carries a
+$\sqrt{3}^{-k}$ overall factor that is invariant under any change of
+$\mathbb{Q}[\phi]$-basis of the ambient $\mathbb{Q}[\phi]^4$. If $B'$ is any
+$\mathbb{Q}[\phi]$-basis of $\mathrm{span}\{\nrho, \nax\}$, expressing
+$\jvec_k$ in $B'$ amounts to applying a $\mathbb{Q}[\phi]$-linear
+transformation; this maps $\sqrt{3}^{-k}\cdot\mathbb{Q}[\phi]$ entries to
+$\sqrt{3}^{-k}\cdot\mathbb{Q}[\phi]$ entries (since
+$\mathbb{Q}[\phi]\cdot\sqrt{3}^{-k}\cdot\mathbb{Q}[\phi] =
+\sqrt{3}^{-k}\cdot\mathbb{Q}[\phi]$ as $\mathbb{Q}[\phi]$-modules). At odd
+$k$, $\sqrt{3}^{-k} \in \sqrt{3}^{-1}\cdot\mathbb{Q}[\phi]$, so the entries
+remain in $\sqrt{3}^{-1}\cdot\mathbb{Q}[\phi] = (\sqrt 3 / 3)\cdot\mathbb{Q}[\phi]$,
+i.e., outside $\mathbb{Q}[\phi]$. No $\mathbb{Q}[\phi]$-basis change can
+remove the $\sqrt{3}$. This makes Theorem~\ref{thm:parity-structure}
+basis-invariant: the parity-dependent algebraic-class membership is an
+intrinsic feature of the face-aligned Reading C coefficients, not an
+artifact of frame choice.
 \end{antierasure}
 
 \end{document}
