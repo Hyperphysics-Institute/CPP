@@ -32,6 +32,25 @@
 %   gate grep clean).
 %
 % CHANGELOG
+%   v1.1 (Patch 0634, Session 148, 29 May 2026) --- multi-AI review
+%     calibration (Copilot + Grok + ChatGPT; reviews-CHIR-AUDIT-1.md).
+%     No falsifier produced (F1/F2/F3 survive); the catalogue is confirmed.
+%     Calibration of labels only (entries unchanged):
+%       (1) "emergent" graded into emergent(established) [registered
+%           derivation exists: E22,E23,E24,E25] vs emergent(provisional)
+%           [reducible-in-principle, derivation owed: E12,E13,E14,E15,
+%           E21,E26,E27] -- per Copilot+ChatGPT 2-reviewer convergence
+%           that the bare "emergent" overclaimed un-written derivations;
+%       (2) E20 reclassified emergent* -> unregistered(conditional) to
+%           stop pre-committing to Scenario A (Copilot; consistent w/ X2);
+%       (3) ZBW circulation sense registered as deferred exclusion X5 +
+%           OPEN-CHIR-2e (Copilot F1 candidate; not a confirmed falsifier);
+%       (4) temporal primitive clarified: ordered PCD sequence (primitive)
+%           vs T-asymmetry/irreversibility (owed, OPEN-CHIR-2a) -- ChatGPT;
+%       (5) spatial->n-hat headline restated as a programme hypothesis for
+%           its provisional-emergent part (Copilot).
+%     Grok's E19/E21 derivation sketches logged as OPEN-CHIR-1c/1d seeds
+%     (not closures; ChatGPT calibration adopted).
 %   v1.0 (Patch 0632, Session 148, 29 May 2026) --- initial registration
 %     of THEO-CHIR-AUDIT-1 at publication-grade Layer 3 unconditional
 %     (pending multi-AI review). Eight sections per scope-sketch
@@ -78,7 +97,7 @@
 Chirality Entry-Point Enumeration in the Conscious Point Physics Framework\\[6pt]
 \large A Layer-3 Unconditional Structural-Cataloging Theorem}
 \author{Conscious Point Physics --- Substrate Chirality Arc}
-\date{Version 1.0 --- Patch 0632, Session 148 --- 29 May 2026}
+\date{Version 1.1 --- Patch 0634, Session 148 --- 29 May 2026}
 
 \begin{document}
 \maketitle
@@ -100,17 +119,23 @@ its \emph{operational sense} (spatial / temporal / CP-asymmetric), and its
 (Theorem~\ref{thm:audit}) is a 27-entry classification map. Its central finding
 is that \emph{spatial} chirality enters the framework at a single irreducible
 primitive --- the substrate primitive 4D direction $\nhat$ (FI-C-RC-1) --- with
-all other geometric handednesses either gauge-removable or emergent from
-$\nhat$ plus the 600-cell; that \emph{temporal} chirality is sourced by the PCD
-sequence (carried by A1 + A4) and is currently a primitive whose time-reversal
-asymmetry is presupposed rather than asserted; and that \emph{CP-asymmetric}
+all other geometric handednesses either gauge-removable or reducing to
+$\nhat$ plus the 600-cell (the reductions \emph{established} where a registered theorem
+carries them and \emph{provisional} --- registered derivation targets --- otherwise);
+that \emph{temporal} chirality is sourced by the PCD
+sequence (carried by A1 + A4), whose \emph{ordering} is primitive while its
+time-reversal \emph{asymmetry} is presupposed rather than asserted; and that
+\emph{CP-asymmetric}
 chirality is uniformly emergent, requiring $\nhat$, the dynamics, and the matter
 content to combine. The audit registers the downstream OPEN-CHIR-* derivation
 programme. This is a structural-cataloging theorem at publication-grade Layer~3
 unconditional: it uses the current axiom set and geometric primitives as given
 and introduces no new framework axiom. Falsification is by exhibiting a
 chirality-touching element absent from the inventory, or by showing an inventory
-entry is misclassified.
+entry is misclassified. \emph{(v1.1: multi-AI-review calibration of labels ---
+emergent graded established/provisional, E20 reclassified
+unregistered-conditional, ZBW registered as deferred exclusion X5/OPEN-CHIR-2e; no
+entry added or removed, no falsifier produced. See} \texttt{reviews-CHIR-AUDIT-1.md}.\emph{)}
 \end{abstract}
 
 \tableofcontents
@@ -134,9 +159,18 @@ CHIR-sector derivations where chirality is referenced, presupposed, or
 implicitly used?
 \item[Q2 (Classification).] For each inventory entry, is it (a) \emph{primitive}
 (already axiomatized in the current set or in a registered foundational input),
-(b) \emph{emergent} (derivable from geometry $+$ dynamics without independent
+(b) \emph{emergent} (reducible to geometry $+$ dynamics without independent
 assumption), or (c) \emph{unregistered} (currently assumed but neither
-axiomatized nor derived)?
+axiomatized nor derived)? \emph{(v1.1 calibration.)} The emergent category is
+further graded by the \emph{epistemic state of the reduction}, to avoid claiming
+derivations that are not yet written: \emph{emergent (established)} --- a
+registered derivation exists at some layer (the row's chirality is produced by an
+existing CHIR theorem); \emph{emergent (provisional)} --- the entry is reducible
+to $\nhat$ $+$ the 600-cell $+$ the dynamics with no second primitive apparent,
+but the derivation is \emph{owed} and is registered as an OPEN-CHIR target. A
+provisional-emergent row is a derivation \emph{hypothesis with a target}, not a
+completed reduction; it differs from \emph{unregistered} in that no second
+primitive or new axiom is apparent, only the explicit derivation is missing.
 \item[Q3 (Operational sense).] For each inventory entry, which operational
 sense(s) of chirality (\S\ref{sec:senses}) does it produce --- spatial,
 temporal, CP-asymmetric, or a combination?
@@ -383,9 +417,10 @@ face, not time-reversible: time-reversed, the cycle would Displace $\to$ Compute
 $\to$ Perceive, a different operational dynamics. If the canonical specification
 asserts the forward sequence and does not assert time-reversal symmetry, the cycle
 sources \emph{temporal} chirality at the axiom level (this is the dynamical content
-of the A1 + A4 finding of \S\ref{sec:axioms}). \textbf{Temporal; primitive (in A1
-+ A4), with the time-reversal-asymmetry assertion currently presupposed rather
-than explicit --- registered as the load-bearing gap.}
+of the A1 + A4 finding of \S\ref{sec:axioms}). \textbf{Temporal; primitive (the \emph{ordered} sequence, in A1
++ A4), with the time-reversal-\emph{asymmetry} (irreversibility) assertion currently
+presupposed rather than explicit --- a logically distinct property registered as the
+load-bearing gap OPEN-CHIR-2a.}
 
 \paragraph{D2: does the perception step distinguish left from right?} The Perceive
 step has the CP detecting its local SSV environment. If perception is a vector
@@ -412,9 +447,11 @@ F.1 sub-question asks whether $\wPCD(\vhost) = \sigma \cdot \nhat$ for a sign
 convention $\sigma$. Its resolution determines the classification: Scenario~A
 ($\wPCD$ derived from $\nhat$ via a substrate mechanism) places this entry under
 \emph{emergent}; Scenario~B ($\wPCD$ an independent primitive) places it under
-\emph{primitive} alongside $\nhat$. The audit does not pre-commit. \textbf{Spatial;
-emergent (Scenario~A, working presumption) or primitive (Scenario~B) ---
-registered as OPEN-CHIR-F1-LINK.}
+\emph{primitive} alongside $\nhat$. The audit does not pre-commit; pending resolution
+the entry is classified \emph{unregistered (conditional)} rather than emergent, so
+the table does not silently adopt the Scenario-A presumption (v1.1 calibration).
+\textbf{Spatial; unregistered (conditional: emergent under Scenario~A, primitive
+under Scenario~B) --- registered as OPEN-CHIR-F1-LINK.}
 
 \paragraph{Dynamics-pass summary.} The dynamics carry the temporal arrow (D1,
 primitive in A1+A4 but with the asymmetry presupposed), one unregistered spatial
@@ -500,48 +537,77 @@ E8 & A8$'$ cage-volume scaling & --- & --- & no chirality \\
 E9 & A10 colour sign & --- & --- & no chirality \\
 E10 & A11 lattice scale & --- & --- & no chirality \\
 E11 & G-1 $5\times24$ partition & spatial & unregistered & determine constraint (OPEN-CHIR-2b) \\
-E12 & G-2 $2I$ spinor reps & spatial & emergent & derive (OPEN-CHIR-1a) \\
-E13 & G-3 icosa.\ rotation $A_5$ & spatial & emergent & derive (OPEN-CHIR-1b) \\
-E14 & G-4 Wythoff orientation & spatial & emergent & gauge-removable; confirm \\
-E15 & G-5 $\phi$-coord signs & spatial & emergent & gauge-removable; confirm \\
+E12 & G-2 $2I$ spinor reps & spatial & emergent (P) & derive (OPEN-CHIR-1a) \\
+E13 & G-3 icosa.\ rotation $A_5$ & spatial & emergent (P) & derive (OPEN-CHIR-1b) \\
+E14 & G-4 Wythoff orientation & spatial & emergent (P) & gauge-removable; confirm \\
+E15 & G-5 $\phi$-coord signs & spatial & emergent (P) & gauge-removable; confirm \\
 E16 & G-6 $\nhat$ (FI-C-RC-1) & spatial & primitive & adequate (registered FI) \\
 E17 & D1 PCD arrow & temporal & primitive & see E2 \\
 E18 & D2 perception orientation & spatial & unregistered & fix implementation (OPEN-CHIR-2c) \\
 E19 & D3 capture handedness & spatial/CP & unregistered & derive (OPEN-CHIR-1c / OPEN-CHIR-2d) \\
-E20 & D4 $\nhat\mapsto\wPCD$ link & spatial & emergent$^*$ & OPEN-CHIR-F1-LINK \\
-E21 & $\chi=\phi^{-3}$ magnitude & spatial & emergent & derive from $\nhat$+A2 (OPEN-CHIR-1d) \\
-E22 & $\zeta^W$ (SD-CHIR-1) & spatial & emergent & inherits E19 \\
-E23 & $\zeta^{qDP}$ (SD-CHIR-2) & CP-asym. & emergent & inherits E19 \\
-E24 & DSL-3 manifestation (iv) & temporal & emergent & closed (sketch Layer 3) \\
-E25 & CONT arc $\chi/6$ handle & spatial/CP & emergent & closed (Layer 4) \\
-E26 & SM parity-violation link & CP-asym. & emergent & derive (OPEN-CHIR-3) \\
-E27 & OPEN-FP-F1-2 Mechanism A & spatial & emergent & dependency (OPEN-CHIR-4) \\
+E20 & D4 $\nhat\mapsto\wPCD$ link & spatial & unreg.$^*$ & OPEN-CHIR-F1-LINK \\
+E21 & $\chi=\phi^{-3}$ magnitude & spatial & emergent (P) & derive from $\nhat$+A2 (OPEN-CHIR-1d) \\
+E22 & $\zeta^W$ (SD-CHIR-1) & spatial & emergent (E) & inherits E19 \\
+E23 & $\zeta^{qDP}$ (SD-CHIR-2) & CP-asym. & emergent (E) & inherits E19 \\
+E24 & DSL-3 manifestation (iv) & temporal & emergent (E) & closed (sketch Layer 3) \\
+E25 & CONT arc $\chi/6$ handle & spatial/CP & emergent (E) & closed (Layer 4) \\
+E26 & SM parity-violation link & CP-asym. & emergent (P) & derive (OPEN-CHIR-3) \\
+E27 & OPEN-FP-F1-2 Mechanism A & spatial & emergent (P) & dependency (OPEN-CHIR-4) \\
 \hline
 \end{longtable}}
 
-\noindent $^*$ E20 is \emph{emergent} under Scenario~A (working presumption) and
-\emph{primitive} under Scenario~B; the classification is conditional on
-OPEN-CHIR-F1-LINK.
+\noindent \textbf{Category legend (v1.1).} \emph{emergent (E)} = established: a
+registered derivation produces the row's chirality (E22, E23 via SD-CHIR-1/2; E24
+via DSL-3; E25 via the CONT arc). \emph{emergent (P)} = provisional: reducible to
+$\nhat$ $+$ the 600-cell $+$ the dynamics with no second primitive apparent, but the
+derivation is owed and registered as an OPEN-CHIR target (E12, E13, E14, E15, E21,
+E26, E27). A provisional row is a derivation hypothesis with a target, not a
+completed reduction.
 
-\paragraph{Tally.} Of the 27 entries: $N_0 = 6$ carry no chirality (E3, E6, E7,
-E8, E9, E10 --- with E3 and E7 permissive-but-not-imposing); $N_1 = 11$ are
-emergent (E12, E13, E14, E15, E20$^*$, E21, E22, E23, E24, E25, E26, E27 ---
-counting E20 under its working presumption, $N_1$ effectively 12); $N_2 = 3$ are
-primitive (E2/E5/E17 the single temporal primitive carried by A1+A4, and E16 the
-single spatial primitive $\nhat$ --- collapsing the co-referential rows, two
-irreducible primitives total); $N_3 = 6$ are unregistered (E1, E4, E11, E18, E19,
-and the asymmetry-assertion gap of E2). The CP-asymmetric sense (E4, E19/E23, E26)
-is uniformly emergent or unregistered --- never primitive --- consistent with the
-programme presumption that observed CP violation should be derived, not
-axiomatized.
+\noindent $^*$ E20 ($\nhat \mapsto \wPCD$) is classified \emph{unregistered
+(conditional)}: \emph{emergent} under Scenario~A (working presumption, $\wPCD$
+derived from $\nhat$) and \emph{primitive} under Scenario~B ($\wPCD$ an independent
+primitive). Per exclusion X2 the audit does not pre-commit; the primary category
+therefore records the present undecided state rather than the Scenario-A presumption.
+Resolution is OPEN-CHIR-F1-LINK.
 
-\paragraph{The load-bearing finding.} Spatial chirality reduces, up to gauge and
-derivation, to the single primitive $\nhat$ (E16). Temporal chirality reduces to
-the PCD sequence carried by A1 + A4 (E2/E5/E17), a primitive whose $T$-asymmetry is
-presently presupposed. CP-asymmetric chirality is uniformly emergent, requiring
-$\nhat$ + dynamics + matter content to combine. The deepest unregistered entry is
-the capture handedness D3 (E19): consumed by every SD-CHIR closure but derived from
-no registered axiom.
+\paragraph{Tally (v1.1).} Of the 27 entries: $N_0 = 6$ carry no chirality (E3, E6,
+E7, E8, E9, E10 --- with E3 and E7 permissive-but-not-imposing); $N_1 = 11$ are
+emergent, now graded as \emph{established} (E22, E23, E24, E25 --- four rows produced
+by a registered derivation) and \emph{provisional} (E12, E13, E14, E15, E21, E26, E27
+--- seven rows reducible-in-principle to $\nhat$ + geometry + dynamics with the
+derivation owed); $N_2$ comprises four co-referential primitive rows collapsing to
+two irreducible primitives (E2/E5/E17 the single temporal primitive carried by A1+A4,
+and E16 the single spatial primitive $\nhat$); $N_3 = 6$ are unregistered (E1, E4,
+E11, E18, E19, and E20 conditional --- with the $T$-asymmetry-assertion gap of E2
+tracked as a sub-gap within the temporal primitive). The CP-asymmetric sense (E4,
+E19/E23, E26) is never primitive --- uniformly emergent or unregistered ---
+consistent with the programme presumption that observed CP violation should be
+derived, not axiomatized. \emph{(v1.1 calibration: the bare ``emergent'' of v1.0 was
+graded E/P after the multi-AI review (Copilot + ChatGPT) flagged that it overclaimed
+the provisional rows as completed derivations; E20 was moved emergent$\to$unregistered
+to stop pre-committing to Scenario~A. No entry was added or removed; the catalogue is
+unchanged --- only the labels are sharpened. See \texttt{reviews-CHIR-AUDIT-1.md}.)}
+
+\paragraph{The load-bearing finding (v1.1).} Spatial chirality reduces to the single
+primitive $\nhat$ (E16). At v1.1 this is, in its provisional part, a \emph{programme
+hypothesis} rather than a proved theorem: the gauge-removable rows (E14, E15) and the
+genuinely-emergent spatial rows (E12, E13, E21) collapse to $\nhat$ \emph{conjecturally},
+with their derivations owed as OPEN-CHIR-1 targets; the reduction is \emph{established}
+only where a registered theorem already carries it. The honest statement is therefore:
+\emph{all spatial chirality is consistent with reducing to $\nhat$, with no second
+spatial primitive apparent, and the remaining reductions are registered derivation
+targets.} Temporal chirality reduces to the PCD sequence carried by A1 + A4
+(E2/E5/E17). Here the primitive is the \emph{ordered} sequence; its
+\emph{irreversibility} ($T$-asymmetry) is a logically distinct property that is
+presently \emph{presupposed, not asserted}, and is registered separately as
+OPEN-CHIR-2a. Ordered $\neq$ irreversible: the audit classifies the ordering as
+primitive and the asymmetry-assertion as owed. CP-asymmetric chirality is uniformly
+emergent, requiring $\nhat$ + dynamics + matter content to combine. The deepest
+unregistered entry is the capture handedness D3 (E19): consumed by every SD-CHIR
+closure but derived from no registered axiom --- and (multi-AI review note) not closed
+by any reduction sketch to date, the omitted step being the derivation of the capture
+rule itself from registered inputs.
 
 % ============================================================
 \section{Conclusion theorem}
@@ -559,20 +625,27 @@ nowhere else. Of these:
 \item \textbf{Primitive} ($N_2$): two irreducible sources --- the substrate
 primitive 4D direction $\nhat$ (FI-C-RC-1, the unique spatial primitive, E16) and
 the PCD temporal sequence carried jointly by A1 + A4 (the temporal primitive,
-E2/E5/E17), the latter with its time-reversal asymmetry presently presupposed
-rather than asserted.
-\item \textbf{Emergent} ($N_1$): all geometric handednesses beyond $\nhat$ (the
-$2I$ spinor reps E12, the icosahedral rotation sense E13, gauge-removable
-orientation/coordinate choices E14/E15), the substrate magnitude $\chi = \phi^{-3}$
-(E21), the sector pairing generators (E22/E23), the closed manifestations (E24/E25),
-the SM parity-violation link (E26), and the Mechanism-A dependency (E27), with
-derivation routes registered as OPEN-CHIR-1a..1d. The $\nhat \mapsto \wPCD$ link
-(E20) is emergent under the working presumption and primitive otherwise.
+E2/E5/E17). For the temporal primitive the \emph{ordering} of the cycle is primitive;
+its \emph{time-reversal asymmetry} (irreversibility) is a logically distinct property,
+presently presupposed rather than asserted, and registered separately as
+OPEN-CHIR-2a.
+\item \textbf{Emergent} ($N_1$, graded \emph{established}/\emph{provisional} at v1.1):
+all geometric handednesses beyond $\nhat$ (the $2I$ spinor reps E12, the icosahedral
+rotation sense E13, gauge-removable orientation/coordinate choices E14/E15), the
+substrate magnitude $\chi = \phi^{-3}$ (E21), the SM parity-violation link (E26), and
+the Mechanism-A dependency (E27) are \emph{provisional} --- reducible to $\nhat$ +
+geometry + dynamics with no second primitive apparent, derivations owed as
+OPEN-CHIR-1a..1d; the sector pairing generators (E22/E23) and the closed
+manifestations (E24/E25) are \emph{established} --- carried by a registered theorem
+(SD-CHIR-1/2; DSL-3; the CONT arc). The provisional rows are derivation hypotheses
+with targets, not completed reductions.
 \item \textbf{Unregistered} ($N_3$): the polarity coupling (E1), the $\varphi$-winding
 (E4), the $5\times24$ partition choice (E11), the perception orientation (E18), the
-capture handedness (E19), and the PCD $T$-asymmetry assertion (within E2). Each
-requires either a registered derivation (programme presumption: yes) or a registered
-framework axiom (presumption: no, only if derivation fails).
+capture handedness (E19), the $\nhat \mapsto \wPCD$ link (E20, conditional: emergent
+under Scenario~A, primitive under Scenario~B, undecided pending OPEN-CHIR-F1-LINK),
+and the PCD $T$-asymmetry assertion (within E2). Each requires either a registered
+derivation (programme presumption: yes) or a registered framework axiom (presumption:
+no, only if derivation fails).
 \end{enumerate}
 \end{theorem}
 
@@ -620,6 +693,21 @@ unregistered entry might require one, it registers the derive-or-axiomatize choi
 (default: derive) rather than making it.
 \item[X4.] The audit does \emph{not} address manifestation (v) (cosmological-vacuum
 asymmetry) beyond noting it is open under OPEN-SD-CHIR-PRIMITIVE.
+\item[X5.] \emph{(v1.1, multi-AI review.)} The audit does \emph{not} resolve whether
+the \emph{Zitterbewegung} (ZBW) circulation sense --- the rapid between-CPs
+oscillation in dipole pairs, a dynamical structure adjacent to but \emph{outside} the
+audited PCD cycle --- carries a chirality. A reviewer (Copilot) correctly noted that
+ZBW's internal circulation is \emph{prima facie} chirality-touching by the audit's own
+operational definitions (spatial: circulation direction relative to $\nhat$; temporal:
+$T$-symmetry of the oscillation), and that v1.0 excluded ZBW without argument. This is
+not a confirmed falsifier (the ZBW dynamical specification needed to decide its
+chirality is not among the four audited input classes, and a second reviewer noted ZBW
+sub-structures are hosted inside the catalogued G-rows); but the silent exclusion is
+closed here. The question is registered as OPEN-CHIR-2e: determine whether ZBW carries
+a handedness; if it is parity- and $T$-symmetric, argue so explicitly; if it carries a
+handedness, add the entry (provisional E28) and re-tally. Pending OPEN-CHIR-2e the
+audit's exhaustiveness claim is scoped to the four declared input classes, with ZBW
+flagged as the one adjacent structure whose chirality is undetermined.
 \end{description}
 
 \subsection{Anti-erasure}
@@ -646,10 +734,12 @@ The audit registers the downstream OPEN-CHIR-* programme:
 OPEN-CHIR-2); \textbf{1d} ($\chi = \phi^{-3}$ magnitude from $\nhat$ + 600-cell
 ratios, E21, partially addressed by THEO-CHIR-CONT-1.3's topological argument).
 \item[OPEN-CHIR-2.] Handling of the unregistered entries (E1, E4, E11, E18, E19,
-E2-asymmetry): each receives a derivation attempt; only on failure is a framework
-axiom registered with explicit justification. Sub-problems \textbf{2a}--\textbf{2d}
-track the PCD $T$-asymmetry assertion, the partition constraint, the perception
-implementation, and the capture handedness respectively.
+E20-conditional, E2-asymmetry): each receives a derivation attempt; only on failure is
+a framework axiom registered with explicit justification. Sub-problems
+\textbf{2a}--\textbf{2d} track the PCD $T$-asymmetry assertion, the partition
+constraint, the perception implementation, and the capture handedness respectively;
+\textbf{2e} \emph{(v1.1)} tracks the ZBW circulation-sense chirality question of
+exclusion X5.
 \item[OPEN-CHIR-3.] Alignment with observed Standard-Model chirality: the
 derivation chain from the primitive/emergent entries to weak-interaction parity
 violation and the PMNS/CKM CP-phases (E4, E26).
@@ -699,10 +789,11 @@ OPEN-FP-SF-2-CHIR; OPEN-FP-F1-2 (Mechanism A).
 
 \vfill
 \noindent\rule{\textwidth}{0.4pt}\\
-{\footnotesize THEO-CHIR-AUDIT-1 v1.0 --- Patch 0632, Session 148 --- Conscious
+{\footnotesize THEO-CHIR-AUDIT-1 v1.1 --- Patch 0634, Session 148 --- Conscious
 Point Physics, Substrate Chirality Arc. Publication-grade Layer~3 unconditional
-structural-cataloging theorem (pending multi-AI review). Rebuilt from the Patch
-0630 scope sketch after a working-window overflow; preconditions (axiom count;
-PCD terminology) cleared at Patch 0631.}
+structural-cataloging theorem; multi-AI review (Copilot + Grok + ChatGPT) complete,
+no falsifier, v1.1 label calibration applied (\texttt{reviews-CHIR-AUDIT-1.md}).
+Rebuilt at v1.0 from the Patch 0630 scope sketch after a working-window overflow;
+preconditions (axiom count; PCD terminology) cleared at Patch 0631.}
 
 \end{document}

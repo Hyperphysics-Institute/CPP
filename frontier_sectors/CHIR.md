@@ -28,15 +28,20 @@ charge-parity asymmetry. Each OPEN-CHIR-* entry names the sense(s) it addresses.
 
 ### THEO-CHIR-AUDIT-1 → CHIR audit RESOLVED: chirality entry-point enumeration
 
-**Status:** RESOLVED (registered Patch 0632, Session 148; publication-grade Layer 3
-unconditional, pending multi-AI review — review cycle OPENED Patch 0633)
+**Status:** RESOLVED — multi-AI review complete (no falsifier); v1.1 calibration
+applied (Patch 0634)
 **Sector(s):** CHIR
-**Review cycle:** review package issued at Patch 0633
-(`chirality_audit/review/theo_chir_audit_1_review_package_v1.0.md`) to ChatGPT +
-Copilot + Grok. Reviewer asks map to the three falsifiers (F1 completeness, F2
-classification, F3 fourth sense) + the two central reductions + a contribution ask
-(derive E19/E21). Responses aggregate to `chirality_audit/review/reviews-CHIR-AUDIT-1.md`;
-the "pending multi-AI review" qualifier is removed only on cycle completion.
+**Review cycle:** package issued Patch 0633; Copilot + Grok + ChatGPT responses
+integrated Patch 0634 (`chirality_audit/review/reviews-CHIR-AUDIT-1.md`). Outcome:
+F1/F2/F3 all survive — no missing entry, no wrong entry, no fourth sense. One
+load-bearing finding (Copilot + ChatGPT convergence): the bare "emergent" label
+overclaimed derivation-owed rows → graded **emergent (E)** established / **emergent
+(P)** provisional. Plus: E20 reclassified emergent\* → unregistered (conditional, stops
+pre-committing to Scenario A); ZBW circulation sense registered as deferred exclusion
+X5 + OPEN-CHIR-2e (Copilot F1 candidate, not a confirmed falsifier); temporal primitive
+clarified ordered (primitive) vs T-asymmetry (owed, OPEN-CHIR-2a). Grok's E19/E21
+derivation sketches logged as OPEN-CHIR-1c/1d seeds, not closures (ChatGPT calibration
+adopted). Artifact now v1.1 (13-page PDF, clean compile); no entry added or removed.
 **One-line statement:** Chirality enters the current CPP framework (9 axioms +
 600-cell + PCD cycle + existing CHIR derivations) at exactly 27 catalogued points,
 classified primitive/emergent/unregistered along spatial/temporal/CP-asymmetric
@@ -69,6 +74,7 @@ to spatial/temporal/CP-asymmetric.
 - **OPEN-CHIR-1c:** capture/partnering handedness (audit E19) from a registered dynamical rule (shared with OPEN-CHIR-2d).
 - **OPEN-CHIR-1d:** substrate magnitude `χ = φ⁻³` (audit E21) from `n̂` + 600-cell edge-length ratios (partially addressed by THEO-CHIR-CONT-1.3's topological-projection argument).
 **Dependencies:** THEO-CHIR-AUDIT-1 (classification map); FI-C-RC-1 (`n̂`); 600-cell geometry (A2).
+**Review seeds (Patch 0634):** Grok sketched starting structures for 1d (E21 from a pseudoscalar ∝ `n̂`·(v₁×v₂) over a cage/tetrahelix) and 1c (E19 as sgn(`n̂`·(displacement×polarization))). Neither is a closure — 1d does not fix the exponent −3 vs other φ-powers; 1c imports a capture rule not yet shown registered (ChatGPT calibration). Treat as derivation starting points, not results. See `chirality_audit/review/reviews-CHIR-AUDIT-1.md`.
 **Cross-sector connections:** feeds OPEN-SD-CHIR-PRIMITIVE manifestation closures; 1d connects to THEO-CHIR-CONT-1.3.
 **Paper(s):** future CHIR-derivation papers under the Substrate Chirality Arc.
 **Last updated:** 29 May 2026
@@ -88,6 +94,7 @@ attempt a derivation; register a new framework axiom only if derivation fails
 - **OPEN-CHIR-2b:** determine the constraint that fixes (or eliminates) the 5×24-cell partition choice (audit E11).
 - **OPEN-CHIR-2c:** fix the perception-step implementation (vector vs oriented-bivector/pseudovector) (audit E18).
 - **OPEN-CHIR-2d:** derive the capture handedness (audit E19; shared with OPEN-CHIR-1c) — the deepest unregistered entry, consumed by SD-CHIR-1/2 via ζ^W and ζ^qDP.
+- **OPEN-CHIR-2e:** *(added Patch 0634, multi-AI review)* determine whether the ZBW (Zitterbewegung) circulation sense — the rapid between-CPs dipole-pair oscillation, a structure adjacent to but outside the PCD cycle — carries a chirality (audit exclusion X5). If parity/T-symmetric, argue so; if handed, add provisional entry E28 and re-tally. Raised by Copilot as an F1 candidate; not a confirmed falsifier (ZBW spec is outside the four audited input classes).
 **Dependencies:** THEO-CHIR-AUDIT-1.
 **Cross-sector connections:** 2d is load-bearing for SD-CHIR-1/2 and OPEN-FP-SF-2-CHIR; 2a connects to the F.1 DSL temporal-arrow work (THEO-DSL-3, manifestation iv).
 **Paper(s):** future CHIR-derivation papers.
