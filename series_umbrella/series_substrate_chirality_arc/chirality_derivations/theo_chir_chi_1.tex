@@ -1,0 +1,331 @@
+% ============================================================
+% THEO-CHIR-CHI-1: The Substrate Chirality Magnitude chi = phi^-3 as the
+%   Locality-Selected Symmetric Bias of the 600-Cell's Two Nearest Shells
+% A Layer-2/2.5 Structural-Selection Theorem (closes OPEN-CHIR-1d sub-gap 1d-alpha)
+% Conscious Point Physics --- Substrate Chirality Arc
+%   (series_umbrella/series_substrate_chirality_arc/chirality_derivations/)
+%
+% Purpose: justify the value of audit entry E21 (chi = phi^-3) by selecting the
+%   distance-pair ratio that fixes its exponent. The substrate chirality magnitude
+%   is the symmetric bias (d2-d1)/(d2+d1) of a 600-cell distance pair; the theorem
+%   shows that the LOCALITY criterion -- the bias of the host vertex's two NEAREST
+%   distance shells (the icosahedral vertex figure at d=1/phi and the dodecahedral
+%   next shell at d=1, the local neighborhood where n-hat breaks H4 -> H3 = I_h) --
+%   uniquely yields chi = phi^-3, and excludes the literature alternatives 1/sqrt5
+%   and 5-2sqrt5 as NON-LOCAL (edge-to-distant-shell pairings). This closes the
+%   ratio-selection sub-gap 1d-alpha of OPEN-CHIR-1d and answers the standing
+%   reviewer question "why exponent -3?".
+%
+% Scope/layer: LAYER 2/2.5 structural-selection theorem. It does NOT eliminate
+%   FI-C-9 (that requires the symmetry-breaking dynamics, sub-gap 1d-beta, deferred).
+%   It selects chi = phi^-3 GIVEN (a) the symmetric-bias FORM of the magnitude
+%   generator and (b) the locality criterion; the form itself is a stated structural
+%   input. E21 stays emergent (provisional): 1d-alpha closed, 1d-beta open.
+%
+% Patch 0638 (Session 148) --- built from the Patch 0637 scope sketch
+%   theo_chir_chi_magnitude_1_scope.md after the distance-spectrum exploration
+%   (verify_chi_phi3_ratio.py) found the selection criterion. Audit-record
+%   correction carried: E21 is derived (in value) by Capotauro Finding C-3, NOT by
+%   THEO-CHIR-CONT-1.3 (which is magnitude inheritance, consumes chi).
+%
+% CHANGELOG
+%   v1.0 (Patch 0638, Session 148, 29 May 2026) --- initial registration of
+%     THEO-CHIR-CHI-1 at Layer 2/2.5, closing OPEN-CHIR-1d sub-gap 1d-alpha.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{longtable}
+\usepackage{array}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\vhost}{v_{\text{host}}}
+\newcommand{\Hthree}{H_3}
+\newcommand{\Hfour}{H_4}
+\newcommand{\Icoh}{I_h}
+\newcommand{\sbias}[2]{\frac{#2-#1}{#2+#1}}
+
+\title{\textbf{THEO-CHIR-CHI-1}\\[4pt]
+The Substrate Chirality Magnitude $\chi = \varphi^{-3}$ as the Locality-Selected
+Symmetric Bias of the 600-Cell's Two Nearest Shells\\[6pt]
+\large A Layer-2/2.5 Structural-Selection Theorem (OPEN-CHIR-1d, sub-gap 1d-$\alpha$)}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0638, Session 148 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The substrate chirality magnitude $\chi = \varphi^{-3} \approx 0.236$ (audit entry E21)
+is registered as a foundational input (FI-C-9) whose \emph{value} is computed, via
+Capotauro Finding~C-3, as the symmetric bias $(1-\varphi^{-1})/(1+\varphi^{-1})$ of the
+600-cell's edge-to-first-non-edge distance pair. The standing open question is not the
+arithmetic but the \emph{ratio selection}: why this pair, rather than the literature
+alternatives $1/\sqrt{5}$ and $5-2\sqrt{5}$? We enumerate the symmetric biases of all
+$\binom{8}{2}=28$ distinct distance pairs in the 600-cell's distance spectrum from a host
+vertex and show that a single \emph{locality} criterion --- the symmetric bias of the host
+vertex's two \emph{nearest} distance shells (the $d=\varphi^{-1}$ icosahedral vertex figure
+and the $d=1$ dodecahedral next shell, the local neighborhood where $\nhat$ breaks
+$\Hfour \to \Hthree = \Icoh$) --- uniquely yields $\chi = \varphi^{-3}$. The exponent
+$-3$ then follows as numerator $\varphi^{-2}$ over denominator $\varphi^{+1}$. The
+alternatives are excluded as \emph{non-local}: $1/\sqrt{5}$ is the edge-to-$\varphi$-shell
+bias (skipping three shells) and $5-2\sqrt{5}$ is the edge-to-antipode bias (the global
+extreme); neither is an adjacent or two-nearest pairing. This closes the ratio-selection
+sub-gap (1d-$\alpha$) of OPEN-CHIR-1d at Layer~2/2.5 and answers the reviewer's standing
+``why exponent $-3$?'' question. It does \emph{not} eliminate FI-C-9: the value is selected
+\emph{given} (a) the symmetric-bias \emph{form} of the magnitude generator and (b) the
+locality criterion, and the symmetry-breaking \emph{dynamics} (sub-gap 1d-$\beta$) remain a
+deferred deep target. E21 stays emergent (provisional): 1d-$\alpha$ closed, 1d-$\beta$ open.
+All claims are verified at machine precision by \texttt{code/verify\_chi\_phi3\_ratio.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup}
+\label{sec:setup}
+% ============================================================
+
+Audit entry E21 is the substrate chirality magnitude $\chi = \varphi^{-3} \approx 0.236$,
+controlling the substrate edge-length perturbation ($1 + \varepsilon\,\hat{e}\cdot\nhat$,
+$|\varepsilon| = |\chi|$). Its value is computed by Capotauro Finding~C-3 as a
+\emph{symmetric bias} of a 600-cell distance pair:
+\begin{equation}
+\chi \;=\; \sbias{\varphi^{-1}}{1} \;=\; \frac{\varphi^{-2}}{\varphi^{+1}} \;=\; \varphi^{-3},
+\label{eq:findingC3}
+\end{equation}
+using $1 - \varphi^{-1} = \varphi^{-2}$ (since $\varphi^{-1} = \varphi-1 \Rightarrow
+1-\varphi^{-1} = 2-\varphi = \varphi^{-2}$) and $1 + \varphi^{-1} = \varphi$. The
+arithmetic is not in question. What is open --- and what a reviewer (ChatGPT, in the
+THEO-CHIR-AUDIT-1 cycle) correctly pressed --- is the \emph{ratio selection}: the same
+``symmetric bias of a distance pair'' template, applied to a different 600-cell pair, gives
+$1/\sqrt{5} \approx 0.447$ or $5-2\sqrt{5} \approx 0.528$ (Capotauro \S6 Q3). Why
+$\varphi^{-3}$?
+
+\paragraph{Goal and non-goals.} This theorem closes the ratio-selection sub-gap (1d-$\alpha$)
+of OPEN-CHIR-1d: it states a structural criterion that uniquely picks the
+$\varphi^{-3}$-producing pair, and excludes the alternatives. It does \emph{not}: derive the
+symmetry-breaking dynamics that would eliminate FI-C-9 (sub-gap 1d-$\beta$, deferred);
+justify the symmetric-bias \emph{form} itself (a stated structural input, \S\ref{sec:form});
+or treat the numerical signposts ($\delta_{CP}$, $\Delta p_{LR}$) as derivations
+(\S\ref{sec:layer}). \emph{Record correction:} E21 is derived in value by Finding~C-3, not
+by THEO-CHIR-CONT-1.3 (which is magnitude \emph{inheritance} --- it consumes $\chi$ through
+the continuum-limit map and does not derive it).
+
+% ============================================================
+\section{The 600-cell distance spectrum at the host vertex}
+\label{sec:spectrum}
+% ============================================================
+
+Take the 600-cell at unit circumradius (its 120 vertices the unit quaternions of the binary
+icosahedral group $2I$). From a host vertex $\vhost$, the chord distance to any other vertex
+is $\sqrt{2-2w}$, $w$ the scalar part relative to $\vhost$; the scalar parts take the nine
+values $\{\pm1, \pm\varphi/2, \pm\tfrac12, \pm\varphi^{-1}/2, 0\}$, giving \emph{eight}
+distinct non-zero distances. The spectrum (verified by
+\texttt{verify\_chi\_phi3\_ratio.py}):
+
+\begin{center}
+\begin{tabular}{@{}rlrl@{}}
+\hline
+\textbf{shell} & \textbf{distance $d$} & \textbf{count} & \textbf{local-geometry role} \\
+\hline
+1 & $\varphi^{-1} \approx 0.618$ & 12 & icosahedron (the vertex figure) \\
+2 & $1$ & 20 & dodecahedron (next shell; chord $=$ circumradius) \\
+3 & $\sqrt{2-\varphi^{-1}} \approx 1.176$ & 12 & --- \\
+4 & $\sqrt{2} \approx 1.414$ & 30 & equatorial \\
+5 & $\varphi \approx 1.618$ & 12 & --- \\
+6 & $\sqrt{3} \approx 1.732$ & 20 & --- \\
+7 & $\sqrt{2+\varphi} \approx 1.902$ & 12 & --- \\
+8 & $2$ & 1 & antipode \\
+\hline
+\end{tabular}
+\end{center}
+
+The two nearest shells are the $12$-vertex icosahedron (shell~1, the 600-cell's vertex
+figure) and the $20$-vertex dodecahedron (shell~2). These are the dual pair forming the
+\emph{local neighborhood} of $\vhost$: under vertex-aligned $\nhat = \vhost$, the substrate's
+$\Hfour$ symmetry breaks to the residual $\Hthree = \Icoh$ at the host vertex (Capotauro
+Reading~C), and shells 1--2 are precisely the icosahedral/dodecahedral structure carrying
+that residual symmetry. Shell~2 sits at chord distance exactly $1$ (the circumradius).
+
+% ============================================================
+\section{The locality selection criterion}
+\label{sec:selection}
+% ============================================================
+
+\begin{definition}[Symmetric-bias generator]
+\label{def:bias}
+For an ordered pair of distinct shell distances $d_i < d_j$, the \emph{symmetric bias} is
+$\beta(d_i,d_j) = (d_j - d_i)/(d_j + d_i) \in (0,1)$. The chirality-magnitude generator is
+taken to be a symmetric bias of a 600-cell distance pair (the structural \emph{form}; see
+\S\ref{sec:form}).
+\end{definition}
+
+\begin{definition}[Locality criterion]
+\label{def:locality}
+A distance pair is \emph{local} if it consists of the host vertex's two nearest distance
+shells (shells 1 and 2). Equivalently: the pair is \emph{adjacent} (consecutive shells)
+\emph{and} is the shortest such pair (the two smallest distances).
+\end{definition}
+
+\begin{theorem}[Locality selects $\chi = \varphi^{-3}$; THEO-CHIR-CHI-1]
+\label{thm:chi}
+Among the symmetric biases of all $28$ distinct distance pairs of the 600-cell spectrum from
+a host vertex (\S\ref{sec:spectrum}), the locality criterion (Definition~\ref{def:locality})
+selects a \emph{unique} pair --- the two nearest shells $(\varphi^{-1}, 1)$ --- whose
+symmetric bias is
+\[
+\beta(\varphi^{-1}, 1) \;=\; \sbias{\varphi^{-1}}{1} \;=\; \frac{\varphi^{-2}}{\varphi}
+\;=\; \varphi^{-3}.
+\]
+Moreover $(\varphi^{-1},1)$ is the unique \emph{adjacent} pair whose bias equals
+$\varphi^{-3}$, and it is the maximal-bias adjacent pair (bias $0.236$ vs.\ next-largest
+adjacent bias $0.092$). The literature alternatives are \emph{non-local}: $1/\sqrt{5}$ is
+produced only by the edge-to-$\varphi$-shell pair $(\varphi^{-1}, \varphi)$ (shells $1$--$5$,
+non-adjacent), and $5-2\sqrt{5}$ only by the edge-to-antipode pair $(\varphi^{-1}, 2)$
+(shells $1$--$8$, the global extreme). Hence the locality criterion fixes $\chi = \varphi^{-3}$
+and excludes $1/\sqrt{5}$ and $5-2\sqrt{5}$.
+\end{theorem}
+
+\begin{proof}[Proof (enumeration).]
+The eight distances of \S\ref{sec:spectrum} give $\binom{8}{2}=28$ pairs. Direct computation
+of $\beta$ on all $28$ (script \texttt{verify\_chi\_phi3\_ratio.py}, machine precision) yields:
+the seven \emph{adjacent} pairs have biases $\{0.236, 0.081, 0.092, 0.067, 0.034, 0.047,
+0.025\}$ for shells $(1,2),(2,3),\dots,(7,8)$ respectively; the two-nearest pair $(1,2)$ is
+the unique adjacent pair with bias $\varphi^{-3}=0.236$ and is the maximal adjacent bias.
+Searching all $28$ pairs: $\beta = \varphi^{-3}$ occurs for $(\varphi^{-1},1)$ [adjacent,
+two-nearest], $(1,\varphi)$ [shells $2$--$5$, non-adjacent], and
+$(\sqrt{2-\varphi^{-1}},\sqrt{2+\varphi})$ [shells $3$--$7$, non-adjacent]; only the first is
+local. $\beta = 1/\sqrt{5}$ occurs only for $(\varphi^{-1},\varphi)$ [shells $1$--$5$];
+$\beta = 5-2\sqrt{5}$ occurs only for $(\varphi^{-1},2)$ [shells $1$--$8$]; both are
+edge-to-distant-shell pairings, non-local. The locality criterion therefore selects
+$(\varphi^{-1},1)$ uniquely, with bias $\varphi^{-3}$.
+\end{proof}
+
+\begin{remark}[The exponent]
+The exponent $-3$ is fixed by the selected pair: numerator $1-\varphi^{-1} = \varphi^{-2}$,
+denominator $1+\varphi^{-1} = \varphi^{+1}$, quotient $\varphi^{-3}$. ``Why $-3$'' reduces to
+``why the two-nearest pair,'' answered by locality. The degeneracy of $\varphi^{-3}$ across
+two further (non-local) pairs is a feature of the $\mathbb{Q}[\varphi]$ arithmetic of the
+spectrum; locality picks the local representative.
+\end{remark}
+
+% ============================================================
+\section{What is assumed: the symmetric-bias form}
+\label{sec:form}
+% ============================================================
+
+Theorem~\ref{thm:chi} selects the ratio \emph{given} that the magnitude generator is a
+symmetric bias $(d_j-d_i)/(d_j+d_i)$ of a distance pair (Definition~\ref{def:bias}). This
+\emph{form} is a structural input, not derived here. Its motivation: a chirality magnitude is
+a dimensionless left/right imbalance, and the symmetric bias is the natural scale-free
+imbalance of two characteristic lengths; pairing the two \emph{nearest} lengths makes it a
+\emph{local} substrate property at the symmetry-breaking locus. The honest status is that
+1d-$\alpha$ resolves the \emph{ratio} selection within the symmetric-bias family; whether the
+chirality magnitude must take the symmetric-bias form (vs.\ some other geometric functional of
+the spectrum) is a residual structural assumption, recorded as a falsifier (\S\ref{sec:concl},
+F2) rather than closed.
+
+% ============================================================
+\section{Layer, signposts, and what is not claimed}
+\label{sec:layer}
+% ============================================================
+
+\paragraph{Layer 2/2.5.} This is a structural-selection argument over a finite combinatorial
+object (the 600-cell distance spectrum), verified at machine precision. It is not a
+dynamical derivation. It closes 1d-$\alpha$ (ratio selection) at Layer~2/2.5.
+
+\paragraph{FI-C-9 not eliminated.} $\chi = \varphi^{-3}$ remains a foundational input until
+the symmetry-breaking \emph{dynamics} (sub-gap 1d-$\beta$: which substrate-dynamical primitive
+selects the broken chiral phase of $\Hfour \to I_4$) are derived. That is the deep deferred
+target (F.1 \S14.17; deferred to the OPEN-SM-4 $\leftrightarrow$ SS-corpus). This theorem
+strengthens E21 from ``value computed, ratio unjustified'' to ``value selected by a stated
+locality criterion''; it does not retire FI-C-9.
+
+\paragraph{Signposts are signposts.} The numerical proximities
+$\delta_{CP} = 180^\circ + \arctan(\varphi^{-3}) \approx 193.3^\circ$ (vs.\ NuFIT
+$195^\circ \pm 40^\circ$) and $\Delta p_{LR} = \varphi^{-3}/6 \approx 0.0394$ (vs.\ observed
+$\sim 0.04$) \emph{support} $\varphi^{-3}$ but are not derivations (Capotauro Finding~C-5
+discipline); they are not used as evidence in Theorem~\ref{thm:chi}.
+
+\paragraph{E21 classification.} E21 stays \emph{emergent (provisional)}. 1d-$\alpha$ closed;
+1d-$\beta$ open; the F.1 Phase-3 Case-A.1 ($\delta=\chi$) content that consumes $\chi$ remains
+provisional. The classification does not change; its justification strengthens.
+
+% ============================================================
+\section{Conclusion and falsifiers}
+\label{sec:concl}
+% ============================================================
+
+The substrate chirality magnitude $\chi = \varphi^{-3}$ is the locality-selected symmetric
+bias of the 600-cell's two nearest distance shells (the icosahedral vertex figure at
+$\varphi^{-1}$ and the dodecahedral shell at $1$), the local neighborhood where $\nhat$ breaks
+$\Hfour \to \Hthree = \Icoh$. The exponent $-3$ follows; the alternatives $1/\sqrt{5}$ and
+$5-2\sqrt{5}$ are excluded as non-local. Sub-gap 1d-$\alpha$ of OPEN-CHIR-1d is closed at
+Layer~2/2.5; sub-gap 1d-$\beta$ (symmetry-breaking dynamics, FI-C-9 elimination) remains the
+deferred deep target.
+
+\paragraph{Falsifiers.} \textbf{(F1)} Exhibit a 600-cell distance pair satisfying the locality
+criterion (Definition~\ref{def:locality}) with a symmetric bias $\neq \varphi^{-3}$ ---
+impossible by the enumeration, so F1 is a check on the spectrum, not an open risk.
+\textbf{(F2)} Show the chirality magnitude must take a \emph{non}-symmetric-bias form (some
+other functional of the spectrum) yielding a value $\neq \varphi^{-3}$ --- this attacks the
+\S\ref{sec:form} structural assumption, the genuine residual freedom in 1d-$\alpha$.
+\textbf{(F3)} Derive the 1d-$\beta$ symmetry-breaking dynamics and obtain $\chi \neq \varphi^{-3}$
+--- this would refute (not merely defer) the value, and is the decisive future test.
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.4em]
+\item \texttt{chirality\_derivations/sketches/theo\_chir\_chi\_magnitude\_1\_scope.md} --- the
+Patch 0637 scope sketch (1d-$\alpha$/1d-$\beta$ decomposition; the CONT-1.3$\to$Finding-C-3
+correction).
+\item \texttt{chirality\_derivations/code/verify\_chi\_phi3\_ratio.py} --- machine-precision
+verification of the spectrum, the two-nearest shells, the $\varphi^{-3}$ bias, the adjacency
+uniqueness, and the non-locality of the $1/\sqrt{5}$ and $5-2\sqrt{5}$ producers.
+\item \texttt{capotauro/sketches/Capotauro\_chi\_phi\_closure.md} --- Finding~C-3 (the
+symmetric-bias derivation of $\varphi^{-3}$; the $\varphi^{-2}$ archive-error correction);
+Finding~C-4 (the eight distinct 600-cell distances); Findings C-5/C-7 ($\delta_{CP}$,
+$\Delta p_{LR}$ signposts; $T = V/2 = 6$); \S6 Q3 (the candidate list $\varphi^{-3}$,
+$1/\sqrt{5}$, $5-2\sqrt{5}$); FI-C-9.
+\item \texttt{chirality\_audit/theo\_chir\_audit\_1.tex} (v1.1) --- E21 (emergent (P)); the
+CONT-1.3 note corrected here.
+\item \texttt{axiom-registry.md} --- A5 metric ($\eta = \ell_{\text{edge}}/R_{\text{circ}} =
+1/\varphi$, the edge length entering the bias); A2 (600-cell distance structure).
+\item \texttt{dynamical\_substrate\_law/sketches/F1\_subquestion\_pcd\_orientation\_link.md}
+\S14.17 --- the $\chi$-from-pure-geometry long-term target ($\equiv$ 1d-$\beta$).
+\item \texttt{frontier\_sectors/CHIR.md} --- OPEN-CHIR-1d; E21; THEO-CHIR-PCD-ORIENTATION-1
+(the sibling E20 target).
+\end{itemize}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}\\
+{\footnotesize THEO-CHIR-CHI-1 v1.0 --- Patch 0638, Session 148 --- Conscious Point Physics,
+Substrate Chirality Arc. Layer-2/2.5 structural-selection theorem closing OPEN-CHIR-1d sub-gap
+1d-$\alpha$: $\chi = \varphi^{-3}$ is the locality-selected symmetric bias of the 600-cell's
+two nearest shells $(\varphi^{-1}, 1)$; alternatives $1/\sqrt{5}$, $5-2\sqrt{5}$ excluded as
+non-local. Does not eliminate FI-C-9 (1d-$\beta$ dynamics deferred); E21 stays emergent
+(provisional). Verified by \texttt{verify\_chi\_phi3\_ratio.py}.}
+
+\end{document}
