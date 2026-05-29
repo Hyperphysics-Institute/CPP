@@ -84,7 +84,7 @@ The structural identity that first-shell-to-first-shell edge directions $\hat{e}
 ## Mechanism terms
 
 ### DI-bit
-**Discrete Information bit.** The fundamental quantum of substrate information transfer in CPP, transferred between adjacent vertices of the 600-cell substrate along edges via Polarize-Capture-Depolarize (PCD) cycle dynamics. First use: §3.4. Related: PCD cycle, propagation rate, DI-bit current.
+**Discrete Information bit.** The fundamental quantum of substrate information transfer in CPP, transferred between adjacent vertices of the 600-cell substrate along edges via Perceive-Compute-Displace (PCD) cycle dynamics. First use: §3.4. Related: PCD cycle, propagation rate, DI-bit current.
 
 ### DI-bit current $\vec{j}_{DI}^{\text{net}}(v)$
 The net flow of DI-bits at vertex $v$ summed over incident edges, weighted by the orientation-asymmetry-weighted Mechanism A propagation rates. The substrate-locality result Theorem 7.1 gives the closed-form expression $\vec{j}_{DI}^{\text{net}}(\vhost) = (6\delta/\phi^2)\,\hat{n} + \mathcal{O}(\delta^2)$ at the host vertex at first order. First use: paper title + abstract + §3.4. Related: DI-bit, Mechanism A, substrate-locality, Theorem 7.1.
@@ -114,7 +114,7 @@ The CPP programme's structural architecture organizing OPEN-SD-CHIR-PRIMITIVE's 
 The methodological framework establishing three minimality constraints (locality + first-order in $\delta$ + single-direction primitive $\hat{n}$) that jointly identify the unique Mechanism A framework form. Operationalises the "minimal" character of the propagation-rate-asymmetry primitive. First use: §2.4. Related: Mechanism A, framework axiom.
 
 ### Conscious Point (CP) / DI-bit / PCD cycle
-The three CPP primitive substrate constructs (per A1 + A6′ of the CPP primitive axioms). **CP**: the fundamental conscious-substrate quantum. **DI-bit**: the discrete-information unit transferred between CPs. **PCD cycle**: the Polarize-Capture-Depolarize discrete-time elementary process. Not derived in F.1 (they are A1 + A6′ inputs); referenced as the underlying substrate physics from which Mechanism A would derive at Layer 4 (OPEN-FP-F1-2). First use: §3.1 (CPP primitive axioms A1–A11 recap). Related: A1, A6′, OPEN-FP-F1-2.
+The three CPP primitive substrate constructs (per A1 + A6′ of the CPP primitive axioms). **CP**: the fundamental conscious-substrate quantum. **DI-bit**: the discrete-information unit transferred between CPs. **PCD cycle**: the Perceive-Compute-Displace discrete-time elementary process. Not derived in F.1 (they are A1 + A6′ inputs); referenced as the underlying substrate physics from which Mechanism A would derive at Layer 4 (OPEN-FP-F1-2). First use: §3.1 (CPP primitive axioms A1–A11 recap). Related: A1, A6′, OPEN-FP-F1-2.
 
 ---
 

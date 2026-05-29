@@ -232,9 +232,9 @@ At vertex-aligned Reading C in the 600-cell substrate, the net DI-bit current at
 
 **Mathematical structures:** regular polytope, Coxeter group, reflection group, $H_4$ symmetry, icosahedral group $H_3$ / $I_h$, golden ratio, Fibonacci sequence, $\{3,3,5\}$ Schläfli symbol, hexacosichoron, vertex-transitive graph, edge graph, $n$-ball in graph distance, perturbation-theory expansion, path-amplitude expansion.
 
-**Physical concepts:** chirality, parity violation, thermodynamic arrow of time, irreversibility, entropy production, coarse-graining, substrate physics, lattice gauge theory analog, propagation-rate primitive, discrete-time evolution, Polarize-Capture-Depolarize cycle.
+**Physical concepts:** chirality, parity violation, thermodynamic arrow of time, irreversibility, entropy production, coarse-graining, substrate physics, lattice gauge theory analog, propagation-rate primitive, discrete-time evolution, Perceive-Compute-Displace cycle.
 
-**CPP programme concepts:** Conscious Point Physics, Conscious Point (CP), DI-bit, Polarize-Capture-Depolarize (PCD) cycle, 600-cell substrate, Reading C, OPEN-SD-CHIR-PRIMITIVE umbrella, chirality continuum, sketch-document Layer 1 / Layer 2 / Layer 3 / Layer 4 hierarchy, publication-grade Layer 3, anti-erasure discipline, swarm validation, zero-parameter prediction, primitive-feature framing, foundational input (FI), reviewer-pause cycle, hardened theorem artifact, flagship paper trajectory.
+**CPP programme concepts:** Conscious Point Physics, Conscious Point (CP), DI-bit, Perceive-Compute-Displace (PCD) cycle, 600-cell substrate, Reading C, OPEN-SD-CHIR-PRIMITIVE umbrella, chirality continuum, sketch-document Layer 1 / Layer 2 / Layer 3 / Layer 4 hierarchy, publication-grade Layer 3, anti-erasure discipline, swarm validation, zero-parameter prediction, primitive-feature framing, foundational input (FI), reviewer-pause cycle, hardened theorem artifact, flagship paper trajectory.
 
 **Methodological keywords:** symmetric-honesty threshold, calibration discipline, anti-priorities, mandatory-immediate-execution rule, anti-collision strategy, four-tier documentation discipline, paper completion checklist, Phase 7A / 7B / 7C atomic task structure, methods catalogue, structurally-grounded sketch-document Layer 3 flagship framework preprint (paper-type declaration).
 

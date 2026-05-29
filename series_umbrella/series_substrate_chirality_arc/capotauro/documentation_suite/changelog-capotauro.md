@@ -12,6 +12,12 @@ The `.tex` source itself carries only its current title block (title + author + 
 
 ---
 
+## Post-v2.0 SHIP — Patch 0631 PCD acronym terminology correction (Session 148, 29 May 2026)
+
+**Patch 0631 — PCD acronym terminology correction (TODO-012 cleared).** Three occurrences in `capotauro.tex` corrected from "Polarize-Capture-Depolarize" (Session-146 drift, commit `311bc1e`) to canonical "Perceive-Compute-Displace" per the original archived definition. Affected lines: §13.6 dynamical engine epistemology (Layer 1 dynamical engine open work; manifestation (iv) thermodynamic causal arrow framing); paper conclusion §22 (post-paper dynamical content statement). The corrections preserve the structural-physics-vs-dynamical-physics distinction § 13.6 makes explicit; the canonical Perceive-Compute-Displace expansion strengthens the structural-vs-dynamical framing by anchoring the dynamical-engine work in the consciousness-as-fundamental commitment of the CPP framework. No theorem statements modified; no proofs modified; no Open Problems modified; no equations modified. Physical-effect verbs (polarization, depolarization, capture as in "DI-bit capture") retained where they describe what happens during the cycle, not the cycle's name. Companion documentation suite files updated: `glossary-capotauro.md`, `reasoning-capotauro.md`, `philosophy-capotauro.md` (one occurrence each). The v2.0 v1.0 SHIPPED PDF remains the canonical reference for the v2.0 milestone; this `.tex` correction is preserved for future v2.1+ recompiles. Patch 0631 is part of a programme-wide cleanup across ~15 active files registered as TODO-012. See `todolist.md` and the Patch 0630 sketch document at `series_umbrella/series_substrate_chirality_arc/chirality_audit/sketches/theo_chir_audit_1_scope.md` §5.2 for the full programme-level rationale.
+
+---
+
 ## Version 2.0 v1.0 SHIPPED — 19 May 2026 (Session 135, Patch 0479)
 
 **Capotauro v2.0 SHIPPED as v1.0 release after three-reviewer convergence on SHIP-acceptable verdict.** Title block bumped from `Version 2.0 v0.9.1 (DRAFT) --- 19 May 2026` to `Version 2.0 v1.0 SHIPPED --- 19 May 2026`. Author footnote extended with the v2.0 v1.0 SHIP context (reviewer-round trajectory; SHIP-closeout-protocol patch number).

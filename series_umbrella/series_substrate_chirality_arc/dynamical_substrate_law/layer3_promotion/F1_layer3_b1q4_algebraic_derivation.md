@@ -88,7 +88,7 @@ The sketch-document Layer 3 artifact lives in `series_umbrella/series_substrate_
 The derivation uses the following CPP axioms and framework constructs as inputs (no others):
 
 - **CPP axiom A1** (DI-bit propagation): conscious points exchange directed information bits along lattice edges at a base rate $r_0$ per Absolute Moment.
-- **CPP axiom A5** (PCD cycle): Polarize–Capture–Depolarize cycle as substrate-dynamical primitive carrying ordered cyclicity with T-asymmetry.
+- **CPP axiom A5** (PCD cycle): Perceive–Compute–Displace cycle as substrate-dynamical primitive carrying ordered cyclicity with T-asymmetry.
 - **Mechanism A primitive** (introduced at `F1_subquestion_pcd_orientation_link.md` §2.1, calibrated at Patch 0528 §11.11): under framework chirality direction $\hat{n}$, the DI-bit propagation rate along edge direction $\hat{e}_{ab}$ is perturbed at first order in a chirality-bias magnitude $\delta$:
   $$r(\hat{e}_{ab}) = r_0\big(1 + \delta \cdot \hat{e}_{ab} \cdot \hat{n}\big)$$
 - **Reading C** (Capotauro v2.0 substrate-locality framework, registered at `reading_c_substrate_locality.md`): substrate-physics quantities at a vertex are determined by content within the first-shell of that vertex; higher shells enter at higher orders in the perturbation parameter.

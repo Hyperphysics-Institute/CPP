@@ -1,4 +1,14 @@
 % =====================================================================
+% Post-SHIP terminology correction (Patch 0631, 29 May 2026, Session 148):
+% PCD acronym expansion corrected from "Polarize-Capture-Depolarize" (the
+% Session-146-introduced drift) back to canonical "Perceive-Compute-Displace"
+% per the original archived definition in absolute_moment_postulate.tex.
+% Two affected glossary entries (DI-bit + PCD); the PCD entry's prose
+% description aligned with canonical Perceive/Compute/Displace meanings.
+% No substantive physics content changed. See todolist.md TODO-012 (cleared).
+% =====================================================================
+
+% =====================================================================
 % SF-2 Companion: Cage Geometry Figures, Executive Overview, Glossary,
 %   Quantitative Frameworks, and Reference Tables
 %
@@ -487,7 +497,7 @@ This section provides alphabetical definitions of CPP-specific terms used throug
 
 \item[\textbf{Cage centroid}] The geometric center of a cage. For the W bracelet, the centroid is the $D_6$-symmetric SSV-gradient minimum (Proposition 5.1). For the Z and H closed cages, the centroid is enclosed by the cage faces (no external access for centroid capture).
 
-\item[\textbf{DI-bit (Digital Information bit)}] The discrete information packet exchanged between CPs during the Polarize-Capture-Depolarize (PCD) cycle. DI-bits are conserved at the substrate level and propagate the SSV field across the lattice.
+\item[\textbf{DI-bit (Digital Information bit)}] The discrete information packet exchanged between CPs during the Perceive-Compute-Displace (PCD) cycle. DI-bits are conserved at the substrate level and propagate the SSV field across the lattice.
 
 \item[\textbf{Dipole Point (DP)}] A paired structure of two CPs of opposite charge. Three principal species: qDP ($+\qCP/-\qCP$ pair), hDP-type-A ($+\qCP/-\eCP$), hDP-type-B ($-\qCP/+\eCP$). Plus rare eDP ($-\eCP/+\eCP$). DPs populate the DP Sea.
 
@@ -517,7 +527,7 @@ This section provides alphabetical definitions of CPP-specific terms used throug
 
 \item[\textbf{Nexus}] The discrete moment-by-moment substrate-level update event in CPP. At each Nexus tick, CPs exchange DI-bits with the DP Sea via the PCD cycle. Local Nexus gauge invariance (Theorem 8.2 of the SF-2 main paper) follows from the discrete Ward identity at each Nexus tick.
 
-\item[\textbf{PCD (Polarize-Capture-Depolarize)}] The fundamental CP interaction cycle at each Nexus tick. Each CP polarizes the DP Sea around it, captures DI-bits from neighboring CPs, and depolarizes when releasing DI-bits to other CPs. PCD cycles drive all substrate-level dynamics in CPP.
+\item[\textbf{PCD (Perceive-Compute-Displace)}] The fundamental CP interaction cycle at each Nexus tick. Each CP perceives its local SSV environment via incoming DI-bits, computes its response according to the A1--A11 rules, and displaces (broadcasts outgoing DI-bits) to neighbouring CPs. PCD cycles drive all substrate-level dynamics in CPP.
 
 \item[\textbf{qDP}] Quark Dipole Point: paired $+\qCP/-\qCP$. Strongest coupling to chain-endpoint qCPs in meson interbond chains; about half the concentration of hDPs in the DP Sea.
 

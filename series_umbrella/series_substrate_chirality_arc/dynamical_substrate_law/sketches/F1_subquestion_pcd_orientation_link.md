@@ -36,7 +36,7 @@ The substrate primitive 4D direction $\hat{n}$ is established at Layer 3 rigor v
 - A magnitude $|\chi| = \varphi^{-3} \approx 0.236$ controlling the substrate's edge-length perturbation: edges aligned with $\hat{n}$ have effective length $(1 + \varepsilon \cdot \hat{e} \cdot \hat{n})$ relative to the $H_4$-idealized substrate (Capotauro Reading C §2.3).
 - A residual symmetry structure $H_3 = I_h$ at the host vertex, with the K3-doublet's $D_{3d}$ stabilizer + the W-bracelet's Petrie-polygon $D_6$ + the qDP/eDP sector's $D_{5d}$ all sitting as sub-stabilizers of $H_3$ (Capotauro v2.0 §6 + chirality continuum §3.2).
 
-What is **not** established at the framework's current state: the relationship between $\hat{n}$ (a spatial directional primitive in the substrate's ambient 4D space) and $\vec{\omega}_{PCD}$ (the PCD-cycle-orientation pseudovector — the temporal-direction pseudovector representing which way the Polarize → Capture → Depolarize cycle progresses at each CP at each Absolute Moment).
+What is **not** established at the framework's current state: the relationship between $\hat{n}$ (a spatial directional primitive in the substrate's ambient 4D space) and $\vec{\omega}_{PCD}$ (the PCD-cycle-orientation pseudovector — the temporal-direction pseudovector representing which way the Perceive → Compute → Displace cycle progresses at each CP at each Absolute Moment).
 
 **The sub-question, precisely formulated.** Let $\vec{\omega}_{PCD}(v)$ be the PCD-cycle-orientation pseudovector at substrate vertex $v$, defined as the axial-vector representing the temporal-direction of the PCD cycle at the CP at $v$. The sub-question asks whether, under CPP primitive axioms A1–A11 + Reading C ($\hat{n}$ as substrate primitive), the constraint
 
@@ -56,7 +56,7 @@ The decision gate identified that this construction is *physically grounded* onl
 
 A scan of the candidate mechanism space at the opening of this scoping work identifies three structurally distinct categories for the link:
 
-**Mechanism A — DI-bit propagation rate asymmetry between $+\hat{n}$ and $-\hat{n}$ directions.** The substrate's DI-bit (Dimensional Increment bit, the discrete unit of information propagation between CPs per CPP axiom A1) acquires a small direction-correlated propagation-rate asymmetry under the substrate primitive $\hat{n}$. DI-bits propagating in the $+\hat{n}$ direction propagate at slightly different rates than those in $-\hat{n}$. The PCD cycle's Polarize → Capture → Depolarize sequence couples to the asymmetric DI-bit flow, inducing a definite cycle-orientation $\vec{\omega}_{PCD}$ aligned with $\hat{n}$. *Leading candidate by structural analogy to Reading C edge-length perturbation* (Capotauro sketch §2.3): both involve a direction-correlated propagation-asymmetry of substrate quantities.
+**Mechanism A — DI-bit propagation rate asymmetry between $+\hat{n}$ and $-\hat{n}$ directions.** The substrate's DI-bit (Dimensional Increment bit, the discrete unit of information propagation between CPs per CPP axiom A1) acquires a small direction-correlated propagation-rate asymmetry under the substrate primitive $\hat{n}$. DI-bits propagating in the $+\hat{n}$ direction propagate at slightly different rates than those in $-\hat{n}$. The PCD cycle's Perceive → Compute → Displace sequence couples to the asymmetric DI-bit flow, inducing a definite cycle-orientation $\vec{\omega}_{PCD}$ aligned with $\hat{n}$. *Leading candidate by structural analogy to Reading C edge-length perturbation* (Capotauro sketch §2.3): both involve a direction-correlated propagation-asymmetry of substrate quantities.
 
 **Mechanism B — Substrate-orientation field with gauge-like coupling to PCD-cycle.** The substrate carries an orientation field $\hat{n}(v)$ at each lattice vertex, with Reading C vertex-aligned $\hat{n}(v_{\text{host}}) = v_{\text{host}}/|v_{\text{host}}|$. The PCD cycle at each CP couples to this field via a gauge-like minimum-energy-locking interaction: the cycle-orientation $\vec{\omega}_{PCD}$ aligns with $\hat{n}(v)$ at each vertex by energy-minimization, analogous to how a magnetic moment aligns with a magnetic field. *Alternative candidate*; requires positing a substrate-orientation field and a coupling rule, both of which are framework extensions.
 
@@ -70,7 +70,7 @@ Mechanism A is the leading candidate. Mechanisms B and C are registered as alter
 
 ### §2.1 The primitive
 
-Under CPP axiom A1 (DI-bit propagation), each CP at substrate vertex $v$ broadcasts DI-bits to its 12 first-shell neighbors at each Absolute Moment (one tick of the cosmic clock). The DI-bits carry the CP's SSV-content (Substrate State Vector, axiom A3 + Capotauro v2.0 mechanism statements) at the propagation event, with the receiving CP's PCD cycle's Polarize phase coupling to the incoming DI-bit field. The idealized $H_4$-symmetric substrate has uniform DI-bit propagation rate $r_0$ in all directions at the host vertex.
+Under CPP axiom A1 (DI-bit propagation), each CP at substrate vertex $v$ broadcasts DI-bits to its 12 first-shell neighbors at each Absolute Moment (one tick of the cosmic clock). The DI-bits carry the CP's SSV-content (Substrate State Vector, axiom A3 + Capotauro v2.0 mechanism statements) at the propagation event, with the receiving CP's PCD cycle's Perceive phase coupling to the incoming DI-bit field. The idealized $H_4$-symmetric substrate has uniform DI-bit propagation rate $r_0$ in all directions at the host vertex.
 
 **The Mechanism A primitive.** Under the substrate primitive $\hat{n}$, DI-bit propagation rates acquire a direction-correlated perturbation:
 
@@ -80,7 +80,7 @@ where $\hat{e}_{ab}$ is the unit vector along the propagation edge from CP $a$ t
 
 ### §2.2 Coupling to PCD-cycle phases
 
-The PCD cycle at each CP has three phases: Polarize (P), Capture (C), Depolarize (D). At each Absolute Moment, the cycle executes once: Polarize accepts incoming DI-bits, Capture processes the SSV-content, Depolarize broadcasts outgoing DI-bits. The cycle's temporal direction is P → C → D.
+The PCD cycle at each CP has three phases: Perceive (P), Compute (C), Displace (D). At each Absolute Moment, the cycle executes once: Perceive accepts incoming DI-bits, Compute processes the SSV-content, Displace broadcasts outgoing DI-bits. The cycle's temporal direction is P → C → D.
 
 The cycle's orientation $\vec{\omega}_{PCD}$ as a pseudovector represents the cyclic direction in an abstract orientation space. To couple $\vec{\omega}_{PCD}$ to spatial $\hat{n}$, we need a substrate-mechanism that produces an axial-vector content from the cycle's phase structure.
 
@@ -90,7 +90,7 @@ $$\vec{j}_{DI}(v_{\text{host}}) = \sum_{i=1}^{12} r(\hat{e}_{(\text{host},i)}) \
 
 where the sum is over the 12 first-shell neighbors and the propagation-rate perturbation breaks the $H_3 = I_h$ first-shell isotropy (preserved at zeroth order per Capotauro v2.0 Finding C-W39) at first order in $\delta$, producing a net current along $\hat{n}$.
 
-The PCD-cycle couples to this net current via the Polarize phase's preferential accumulation from $-\hat{n}$ and Depolarize phase's preferential emission toward $+\hat{n}$ (or reverse; sign convention). The cycle-orientation pseudovector $\vec{\omega}_{PCD}$ aligns with $\hat{n}$ as a structural consequence:
+The PCD-cycle couples to this net current via the Perceive phase's preferential accumulation from $-\hat{n}$ and Displace phase's preferential emission toward $+\hat{n}$ (or reverse; sign convention). The cycle-orientation pseudovector $\vec{\omega}_{PCD}$ aligns with $\hat{n}$ as a structural consequence:
 
 $$\vec{\omega}_{PCD}(v_{\text{host}}) = \sigma_{\delta} \cdot \hat{n}$$
 
@@ -116,7 +116,7 @@ Layer 3 closure of Mechanism A requires:
 
 - **(i) Derive the DI-bit propagation-rate asymmetry from CPP axioms.** Under Reading C with $\hat{n} = v_{\text{host}}$, demonstrate that the substrate's broken symmetry $H_4 \to H_3 = I_h$ at the host vertex induces a propagation-rate asymmetry at first order in $\varepsilon$ via the substrate-locality framework (Capotauro v2.0 §13 / Finding C-W39). Key question: do the host-to-first-shell edges, which have $\hat{e}_{(\text{host},i)} \cdot \hat{n} = -1/(2\phi)$ uniformly per §13.2, produce a non-zero net DI-bit current $\vec{j}_{DI}$ at the host vertex?
 
-- **(ii) Derive the coupling rule from PCD-phase structure.** Demonstrate that the Polarize → Capture → Depolarize sequence's coupling to net DI-bit current produces a cycle-orientation pseudovector $\vec{\omega}_{PCD}$ as a structural consequence. Requires articulating the PCD-cycle's substrate-dynamics at sufficient detail to support a coupling-rule derivation.
+- **(ii) Derive the coupling rule from PCD-phase structure.** Demonstrate that the Perceive → Compute → Displace sequence's coupling to net DI-bit current produces a cycle-orientation pseudovector $\vec{\omega}_{PCD}$ as a structural consequence. Requires articulating the PCD-cycle's substrate-dynamics at sufficient detail to support a coupling-rule derivation.
 
 - **(iii) Derive the magnitude $\delta$.** Case A.1: derive $\delta = \chi$ via unification argument. Case A.2: derive $\delta$ independently via substrate-dynamics-analog of the perturbative-distance-ratio constraint.
 
@@ -184,7 +184,7 @@ Mechanism C is registered for completeness but is *not pursued as a leading cand
 
 1. Mechanism A is the closest temporal analog to Reading C's edge-length perturbation, with direction-correlated propagation-rate asymmetry replacing direction-correlated length asymmetry; both are first-order-in-magnitude perturbations of substrate quantities tied to the substrate primitive $\hat{n}$.
 2. Mechanism A's primitive (DI-bit propagation-rate asymmetry) does not require introducing new substrate-physics content beyond CPP axiom A1; it is a structural extension of A1 under the substrate primitive $\hat{n}$, parallel to how Reading C extends the substrate's edge-length structure under $\hat{n}$.
-3. Mechanism A's coupling rule (PCD-phase coupling to net DI-bit current) is a structural consequence of the existing PCD-cycle's coupling to the DI-bit field (the Polarize phase's role in CPP); no new coupling primitive is required.
+3. Mechanism A's coupling rule (PCD-phase coupling to net DI-bit current) is a structural consequence of the existing PCD-cycle's coupling to the DI-bit field (the Perceive phase's role in CPP); no new coupling primitive is required.
 4. Mechanism A's magnitude question reduces to either Case A.1 (unification at $\delta = \chi$) which matches the umbrella's framing, or Case A.2 (independent derivation) which requires additional substrate-physics work but does not require new substrate-physics primitives.
 5. The Capotauro Reading C closure trajectory established that direction-correlated substrate perturbations under $\hat{n}$ produce cleanly closable Layer 3 structures via the substrate-locality framework (Patches 0424–0440); the same framework should apply to Mechanism A by direct analog.
 
@@ -232,7 +232,7 @@ The Layer 3 closure trajectory for the F.1 sub-question is multi-session and fol
 
 **Phase 1 — Mechanism A Layer 3 sub-step (i):** DI-bit propagation-rate asymmetry derivation from Reading C edge-length perturbation. Compute the net DI-bit current $\vec{j}_{DI}(v_{\text{host}})$ at first order in $\varepsilon$ under the substrate-locality framework (Capotauro v2.0 Finding C-W39). Verify the host-to-first-shell edge perturbations produce a non-zero net current along $\hat{n}$. Estimated 2–3 sessions. *Falsifier*: if the substrate-locality theorem's local-$I_h$-preservation at first order in $\varepsilon$ forces $\vec{j}_{DI}(v_{\text{host}}) = 0$ by symmetry-cancellation (analog of K3-face edges being tangent to $\hat{n}$ in 4D per §13.2), Mechanism A's sub-step (i) fails and the trajectory pivots.
 
-**Phase 2 — Mechanism A Layer 3 sub-step (ii):** PCD-coupling rule derivation. Articulate the substrate-dynamics of the Polarize → Capture → Depolarize sequence at sufficient detail to support a coupling-rule derivation. The PCD cycle's interaction with the DI-bit field is partially documented at the framework level (`master_glossary.md` + Capotauro v2.0 §3.5 substrate-dynamics overview) but has not been formalized to theorem level. This phase requires structural work on the PCD-phase substrate-dynamics specification. Estimated 2–4 sessions. *Falsifier*: if no PCD-coupling rule derivation succeeds without introducing new substrate-physics primitives beyond axioms A1–A11, Mechanism A's sub-step (ii) fails.
+**Phase 2 — Mechanism A Layer 3 sub-step (ii):** PCD-coupling rule derivation. Articulate the substrate-dynamics of the Perceive → Compute → Displace sequence at sufficient detail to support a coupling-rule derivation. The PCD cycle's interaction with the DI-bit field is partially documented at the framework level (`master_glossary.md` + Capotauro v2.0 §3.5 substrate-dynamics overview) but has not been formalized to theorem level. This phase requires structural work on the PCD-phase substrate-dynamics specification. Estimated 2–4 sessions. *Falsifier*: if no PCD-coupling rule derivation succeeds without introducing new substrate-physics primitives beyond axioms A1–A11, Mechanism A's sub-step (ii) fails.
 
 **Phase 3 — Mechanism A Layer 3 sub-step (iii):** Magnitude derivation. Either Case A.1 (unification at $\delta = \chi$ via structural argument) or Case A.2 (independent magnitude derivation via substrate-dynamics-analog of perturbative-distance-ratio constraint). Estimated 1–3 sessions.
 
@@ -412,7 +412,7 @@ The verification reproduces the structural derivation independently, confirming 
 
 **Mechanism A trajectory status (§7):**
 - Phase 1 (DI-bit current calculation) — **CLOSED positively at this section.**
-- Phase 2 (PCD-coupling rule derivation) — **immediate next priority.** Articulate the substrate-dynamics of the Polarize → Capture → Depolarize sequence at sufficient detail to support a coupling rule that maps the net DI-bit current $\vec{j}_{DI}^{net}$ to the PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$. Estimated 2–4 sessions per §7. *Falsifier*: if the PCD-coupling rule derivation requires introducing new substrate-physics primitives beyond axioms A1–A11, Phase 2 fails.
+- Phase 2 (PCD-coupling rule derivation) — **immediate next priority.** Articulate the substrate-dynamics of the Perceive → Compute → Displace sequence at sufficient detail to support a coupling rule that maps the net DI-bit current $\vec{j}_{DI}^{net}$ to the PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$. Estimated 2–4 sessions per §7. *Falsifier*: if the PCD-coupling rule derivation requires introducing new substrate-physics primitives beyond axioms A1–A11, Phase 2 fails.
 - Phase 3 (magnitude derivation; Case A.1 vs A.2) — pending Phase 2 closure.
 - Phase 4 (empirical validation against leptogenesis CP-asymmetry $\Delta p_{LR}^{obs} \sim 0.04$) — pending Phase 2 + 3 closure.
 
@@ -420,7 +420,7 @@ The verification reproduces the structural derivation independently, confirming 
 
 ### §11.9 Forward queue post-Phase 1
 
-- (A) **Phase 2 substantive work:** PCD-coupling rule derivation. Articulate the substrate-dynamics of the Polarize → Capture → Depolarize sequence at sufficient detail to support a derivation of the coupling rule $\vec{j}_{DI}^{net} \mapsto \vec{\omega}_{PCD}$. Key sub-steps: (i) specify the Polarize phase's coupling to incoming DI-bit field; (ii) specify the Capture phase's processing of SSV-content under non-zero net incoming-bit-bias; (iii) specify the Depolarize phase's outgoing-DI-bit propagation under SSV-content bias; (iv) derive the cycle-orientation pseudovector from the cyclic-phase structure under net current. *Immediate next priority if Thomas authorizes Phase 2 work to proceed.*
+- (A) **Phase 2 substantive work:** PCD-coupling rule derivation. Articulate the substrate-dynamics of the Perceive → Compute → Displace sequence at sufficient detail to support a derivation of the coupling rule $\vec{j}_{DI}^{net} \mapsto \vec{\omega}_{PCD}$. Key sub-steps: (i) specify the Perceive phase's coupling to incoming DI-bit field; (ii) specify the Compute phase's processing of SSV-content under non-zero net incoming-bit-bias; (iii) specify the Displace phase's outgoing-DI-bit propagation under SSV-content bias; (iv) derive the cycle-orientation pseudovector from the cyclic-phase structure under net current. *Immediate next priority if Thomas authorizes Phase 2 work to proceed.*
 
 - (B) **Cross-window handover** for next-window Opus if Session 138 closes before Phase 2 progress is substantial; handover document at `handovers/2026-05-21_session_138_close_F1_phase2_seed.md` analog of Session 137 close seed. The handover would carry forward Finding DSL-1 + Phase 2 trajectory + Phase 2 falsifier.
 
@@ -452,9 +452,9 @@ This structural distinction is the architectural feature that the F.2/F.3 viabil
 
 **Calibration claim.** The Phase 1 result $\vec{j}_{DI}^{net}(v_{\text{host}}) = (6 r_0 \delta/\phi^2)\hat{n}$ is **not a conserved transport current in the ordinary sense**. It is a *cycle-mediated informational bias current* coupled to the PCD update structure at each Conscious Point.
 
-**Physical reading.** Under Mechanism A's non-reciprocal propagation rule $r(\hat{e}_{ab}) \neq r(\hat{e}_{ba})$ at first order in $\delta$, the per-cycle bit-imbalance at the host CP is $\sum_i (r_-^i - r_+^i) = 12 r_0 \delta/\phi$ — incoming bits during P-phase exceed outgoing bits during D-phase by this amount per Absolute Moment (for $\delta > 0$). This imbalance does NOT propagate as a transport current toward a global sink; instead, it is **absorbed by the CP's internal SSV-state update during the Capture phase**.
+**Physical reading.** Under Mechanism A's non-reciprocal propagation rule $r(\hat{e}_{ab}) \neq r(\hat{e}_{ba})$ at first order in $\delta$, the per-cycle bit-imbalance at the host CP is $\sum_i (r_-^i - r_+^i) = 12 r_0 \delta/\phi$ — incoming bits during P-phase exceed outgoing bits during D-phase by this amount per Absolute Moment (for $\delta > 0$). This imbalance does NOT propagate as a transport current toward a global sink; instead, it is **absorbed by the CP's internal SSV-state update during the Compute phase**.
 
-The Capture phase processes the polarized incoming-bit content into the host's internal SSV-state representation. Under Mechanism A, this processing carries the per-cycle directional bias from the substrate primitive $\hat{n}$ into the CP's internal state record. The cycle's "temporal-asymmetry signature" is the per-cycle informational bias magnitude $12 r_0 \delta/\phi$, encoding the substrate primitive's chirality content into each CP's local state via the Capture-phase SSV-update.
+The Compute phase processes the polarized incoming-bit content into the host's internal SSV-state representation. Under Mechanism A, this processing carries the per-cycle directional bias from the substrate primitive $\hat{n}$ into the CP's internal state record. The cycle's "temporal-asymmetry signature" is the per-cycle informational bias magnitude $12 r_0 \delta/\phi$, encoding the substrate primitive's chirality content into each CP's local state via the Compute-phase SSV-update.
 
 **What this means for the falsifier check.** Phase 1's falsifier check (whether local $I_h$-preservation forces the current to vanish) remains correctly PASSED — the $\hat{n}$-aligned component accumulates uniformly across 12 host-to-first-shell edges. The calibration concerns *interpretation*, not the calculation: the current is a cycle-mediated bias signal, not transport flow.
 
@@ -482,13 +482,13 @@ The Phase 2 derivation proceeds via three structural steps: (a) articulate the P
 
 ### §12.2 PCD-cycle substrate-dynamics articulation (sub-step a)
 
-At each Absolute Moment, every Conscious Point (CP) executes the universal Polarize-Capture-Depolarize cycle in sequence P → C → D. The cycle's three phases have distinct substrate-dynamical content under CPP axioms A1–A11:
+At each Absolute Moment, every Conscious Point (CP) executes the universal Perceive-Compute-Displace cycle in sequence P → C → D. The cycle's three phases have distinct substrate-dynamical content under CPP axioms A1–A11:
 
-**Polarize (P) phase.** The CP receives incoming DI-bits from all 12 first-shell neighbors. Each incoming DI-bit carries the neighbor's SSV-content; arrival at the host CP polarizes the host's internal state in proportion to the received content. Under Mechanism A (§2.1 + §11.3), the incoming rate from neighbor $i$ to host is $r_-^i = r_0(1 + \delta \cdot (-\hat{u}_i) \cdot \hat{n}) = r_0(1 + \delta/(2\phi))$, uniform across all 12 neighbors. Total bits received per cycle during P: $\sum_i r_-^i = 12 r_0(1 + \delta/(2\phi))$.
+**Perceive (P) phase.** The CP receives incoming DI-bits from all 12 first-shell neighbors. Each incoming DI-bit carries the neighbor's SSV-content; arrival at the host CP polarizes the host's internal state in proportion to the received content. Under Mechanism A (§2.1 + §11.3), the incoming rate from neighbor $i$ to host is $r_-^i = r_0(1 + \delta \cdot (-\hat{u}_i) \cdot \hat{n}) = r_0(1 + \delta/(2\phi))$, uniform across all 12 neighbors. Total bits received per cycle during P: $\sum_i r_-^i = 12 r_0(1 + \delta/(2\phi))$.
 
-**Capture (C) phase.** The CP processes the polarized state internally — the host's SSV-content gets updated based on the P-phase polarization. This phase has no direct spatial-flow content (no DI-bits propagate spatially during C); the substrate-dynamics during C is the CP's internal SSV-state update.
+**Compute (C) phase.** The CP processes the polarized state internally — the host's SSV-content gets updated based on the P-phase polarization. This phase has no direct spatial-flow content (no DI-bits propagate spatially during C); the substrate-dynamics during C is the CP's internal SSV-state update.
 
-**Depolarize (D) phase.** The CP emits outgoing DI-bits to all 12 first-shell neighbors, carrying the updated SSV-content from C-phase processing. Under Mechanism A, the outgoing rate from host to neighbor $i$ is $r_+^i = r_0(1 + \delta \cdot \hat{u}_i \cdot \hat{n}) = r_0(1 - \delta/(2\phi))$, uniform across all 12 neighbors. Total bits emitted per cycle during D: $\sum_i r_+^i = 12 r_0(1 - \delta/(2\phi))$.
+**Displace (D) phase.** The CP emits outgoing DI-bits to all 12 first-shell neighbors, carrying the updated SSV-content from C-phase processing. Under Mechanism A, the outgoing rate from host to neighbor $i$ is $r_+^i = r_0(1 + \delta \cdot \hat{u}_i \cdot \hat{n}) = r_0(1 - \delta/(2\phi))$, uniform across all 12 neighbors. Total bits emitted per cycle during D: $\sum_i r_+^i = 12 r_0(1 - \delta/(2\phi))$.
 
 **Cycle's temporal-asymmetry per Absolute Moment.** The total incoming-during-P minus total outgoing-during-D is $\sum_i (r_-^i - r_+^i) = 12 r_0 \delta/\phi$, positive for $\delta > 0$. The cycle has a net bit-imbalance per Absolute Moment with magnitude $12 r_0 \delta/\phi$. This temporal-asymmetry is the cycle's substrate-level signature of the substrate primitive $\hat{n}$'s chirality bias under Mechanism A.
 

@@ -129,7 +129,7 @@ The v2.0 paper introduces two philosophical commitments not articulated in v1.0:
 
 ### Layer 1 dynamical engine epistemology (paper §13.6)
 
-The v2.0 paper's §13.6 subsection makes explicit a structural-vs-dynamical physics distinction that the v1.0 paper had implicit but did not articulate. The Substrate-Locality Theorem, the cage-shell averaging structure, the pairing-convention identifications — all of the closure machinery the v2.0 paper deploys — are **structural physics**: physics of the static geometric substrate organized by the primitive direction $\hat{n}$. What none of this derives is the **dynamical** content beneath: the conscious-point-level rules (polarize-capture-depolarize cycles, DI-bit propagation, Nexus connectivity) that produce the static geometric structure in the first place.
+The v2.0 paper's §13.6 subsection makes explicit a structural-vs-dynamical physics distinction that the v1.0 paper had implicit but did not articulate. The Substrate-Locality Theorem, the cage-shell averaging structure, the pairing-convention identifications — all of the closure machinery the v2.0 paper deploys — are **structural physics**: physics of the static geometric substrate organized by the primitive direction $\hat{n}$. What none of this derives is the **dynamical** content beneath: the conscious-point-level rules (perceive-compute-displace cycles, DI-bit propagation, Nexus connectivity) that produce the static geometric structure in the first place.
 
 §13.6 registers the Layer 1 dynamical engine work as explicitly open. This is a posture of epistemic discipline, not a concession of weakness. The position the subsection articulates:
 

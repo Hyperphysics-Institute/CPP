@@ -60,7 +60,7 @@ with validity condition $M^{thermo} = \pm\chi \cdot \dGamma/\Vcage$, universal d
 
 ### §2.1 Substrate object identification — PCD-cycle-orientation pseudovector
 
-The natural substrate object for manifestation (iv) is the **PCD-cycle-orientation pseudovector** $\vec{\omega}_{PCD}$ at each substrate vertex $v$. PCD = Polarize-Capture-Depolarize, the three-phase cycle executed by each CP at every Absolute Moment (one Planck-time tick of the cosmic clock per `master_glossary.md` line 28). The cycle has a definite temporal sequence P → C → D; the pseudovector $\vec{\omega}_{PCD}$ represents this orientation as an axial vector (analog of angular momentum for a cyclic process). Under Reading C with $\hat{n} = v_{\text{host}}$, the natural sector instantiation is the PCD-cycle-orientation field at the host vertex:
+The natural substrate object for manifestation (iv) is the **PCD-cycle-orientation pseudovector** $\vec{\omega}_{PCD}$ at each substrate vertex $v$. PCD = Perceive-Compute-Displace, the three-phase cycle executed by each CP at every Absolute Moment (one Planck-time tick of the cosmic clock per `master_glossary.md` line 28). The cycle has a definite temporal sequence P → C → D; the pseudovector $\vec{\omega}_{PCD}$ represents this orientation as an axial vector (analog of angular momentum for a cyclic process). Under Reading C with $\hat{n} = v_{\text{host}}$, the natural sector instantiation is the PCD-cycle-orientation field at the host vertex:
 
 $$\mathcal{S}^{thermo} = \vec{\omega}_{PCD}(v_{\text{host}}) \text{ aligned along } \hat{n} = v_{\text{host}}$$
 
@@ -197,7 +197,7 @@ For manifestation (iv), the substrate object $\mathcal{S}^{thermo}$ involves $\v
 
 ### §4.3 The Definition 3.4 exclusion clause directly applies
 
-Definition 3.4 (topological substrate quantity, chirality_continuum.tex §3.5) explicitly excludes "dynamical degrees of freedom evolving in time" from the topological-quantity category. The PCD-cycle is, by definition (`master_glossary.md` Absolute Moment entry), a **dynamical degree of freedom evolving in time**: it is the three-phase Polarize → Capture → Depolarize sequence executed by each CP at every Absolute Moment.
+Definition 3.4 (topological substrate quantity, chirality_continuum.tex §3.5) explicitly excludes "dynamical degrees of freedom evolving in time" from the topological-quantity category. The PCD-cycle is, by definition (`master_glossary.md` Absolute Moment entry), a **dynamical degree of freedom evolving in time**: it is the three-phase Perceive → Compute → Displace sequence executed by each CP at every Absolute Moment.
 
 The PCD-cycle-orientation pseudovector $\vec{\omega}_{PCD}$ is therefore a temporal-dynamical-degree-of-freedom-derived quantity, not a static topological substrate quantity in the sense of Definition 3.4.
 
