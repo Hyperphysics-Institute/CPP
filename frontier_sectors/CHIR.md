@@ -8,7 +8,7 @@
   Master dashboard: research_frontier.md
 -->
 
-## Substrate Chirality Arc (CHIR) — 4 problems + 2 resolved
+## Substrate Chirality Arc (CHIR) — 5 problems + 2 resolved
 
 The CHIR sector tracks the chirality programme of the Substrate Chirality Arc
 (`series_umbrella/series_substrate_chirality_arc/`). It sits downstream of the
@@ -138,6 +138,40 @@ dependency is plausible (audit E27).
 **Dependencies:** THEO-CHIR-AUDIT-1; OPEN-FP-F1-2.
 **Cross-sector connections:** F.1 Dynamical Substrate Law arc (THEO-DSL-1..12).
 **Paper(s):** F.1; future CHIR-derivation papers.
+**Last updated:** 29 May 2026
+
+---
+
+### OPEN-CHIR-MERGE: The unified chirality sign — is `σ_cycle = sign(n̂)`? (the E19/E20 merge)
+**Status:** OPEN — scoped Patch 0643; THEO-CHIR-MERGE-1 reserved.
+**Sector(s):** CHIR / FP (F.1 / DSL)
+**Priority:** HIGH (the primitive-count capstone of the audit-downstream programme)
+**Operational sense(s):** spatial (sign(n̂)) ↔ temporal (σ_cycle)
+**One-line statement:** Decide whether the temporal PCD-cycle handedness `σ_cycle` (E20; A1+A4)
+reduces to the same frozen enantiomorph `sign(n̂) = FI-C-9` that THEO-CHIR-CAP-1 pinned the
+*spatial* capture handedness to — i.e. whether the programme carries **one** chirality sign or
+**two**.
+**Rationale:** after the three derivations, chirality reduces to `{n̂, FI-C-9, σ_cycle}`; CAP-1
+pinned the spatial sign to FI-C-9; this is the last tractable piece of the "emergent or
+primitive" determination (the only deeper reduction is 1d-β). **Scope sketch (Patch 0643):**
+`chirality_derivations/sketches/theo_chir_merge_1_scope.md`. **Registered route:** THEO-DSL-3
+sources the thermodynamic causal arrow (manifestation iv, *temporal*) from the substrate current
+`∥ n̂`; the chirality-continuum architecture aims to unify spatial (i–iii) + temporal (iv)
+handedness via the shared `n̂` + `−1/(2φ)`. **Decomposition:** MERGE-α (the identification — is
+`σ_cycle` the DSL-3 arrow? near-term reachable, reserve THEO-CHIR-MERGE-1) + MERGE-β (the sign —
+does the arrow's sign reduce to `sign(n̂)`, or carry an independent `sign(δ)` from Mechanism A,
+since `j ∝ sign(δ)·n̂`? entangled). **Candidate outcomes:** M1 (merge → one chirality sign);
+M2 (independent → two signs); M3 (undetermined pending OPEN-CHIR-2a). **Gate:** not closable now
+without OPEN-CHIR-2a (the T-asymmetry, which gives `σ_cycle` its arrow status); the merge must not
+be asserted for elegance. **FI-C-9 not eliminated either way** (M1 routes `σ_cycle` *to* FI-C-9,
+does not derive it). Elevates the previously-flagged E19/E20 cross-links (PCD-ORIENTATION §5.3,
+CAP-1 §5) to a registered, scoped problem.
+**Dependencies:** THEO-CHIR-AUDIT-1; THEO-CHIR-PCD-ORIENTATION-1 (E20); THEO-CHIR-CAP-1 (E19);
+THEO-DSL-3; OPEN-CHIR-2a (gate); OPEN-FP-F1-2 (Mechanism A `sign(δ)`).
+**Cross-sector connections:** F.1 DSL temporal-arrow work (THEO-DSL-3, manifestation iv); the
+chirality continuum architecture.
+**Paper(s):** future CHIR-derivation paper (THEO-CHIR-MERGE-1, Patch 0644+), best bundled with
+OPEN-CHIR-2a progress.
 **Last updated:** 29 May 2026
 
 ---
