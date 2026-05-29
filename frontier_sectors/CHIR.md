@@ -28,8 +28,8 @@ charge-parity asymmetry. Each OPEN-CHIR-* entry names the sense(s) it addresses.
 
 ### THEO-CHIR-AUDIT-1 → CHIR audit RESOLVED: chirality entry-point enumeration
 
-**Status:** RESOLVED — multi-AI review complete (no falsifier); v1.1 calibration
-applied (Patch 0634)
+**Status:** RESOLVED — multi-AI review complete (3/3 reviewers positive on v1.1, cycle
+closed Patch 0635); v1.1 calibration applied (Patch 0634)
 **Sector(s):** CHIR
 **Review cycle:** package issued Patch 0633; Copilot + Grok + ChatGPT responses
 integrated Patch 0634 (`chirality_audit/review/reviews-CHIR-AUDIT-1.md`). Outcome:
@@ -135,20 +135,38 @@ dependency is plausible (audit E27).
 ---
 
 ### OPEN-CHIR-F1-LINK: Resolution of the `n̂` ↦ ω_PCD link
-**Status:** OPEN
+**Status:** OPEN — scope sketch in progress (Patch 0635); artifact target Patch 0636+
 **Sector(s):** CHIR / FP (F.1)
 **Priority:** HIGH (first downstream theorem after the audit)
-**Operational sense(s):** spatial
+**Operational sense(s):** spatial (axis) + temporal (sign)
 **One-line statement:** Determine whether the PCD-cycle orientation pseudovector
 `ω_PCD(v_host) = σ·n̂` is derived from `n̂` via a substrate mechanism (Scenario A →
 emergent) or is an independent primitive (Scenario B → primitive alongside `n̂`).
-**Audit handling:** entry E20 is classified emergent under the working presumption
-(Scenario A) with an explicit conditional flag; the audit does not pre-commit.
-**Dependencies:** THEO-CHIR-AUDIT-1; `dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md`.
-**Cross-sector connections:** F.1 DSL arc; THEO-DSL-4 (substrate current ∥ `n̂`).
-**Likely first downstream theorem:** THEO-CHIR-PCD-ORIENTATION-1 (Scenario-A derivation of `ω_PCD = σn̂`).
-**Paper(s):** F.1; future CHIR-derivation papers.
-**Last updated:** 29 May 2026
+**Audit handling:** entry E20 is classified **unregistered (conditional)** at v1.1
+(emergent under Scenario A, primitive under Scenario B); the audit does not pre-commit.
+**Scope sketch (Patch 0635):** `chirality_derivations/sketches/theo_chir_pcd_orientation_1_scope.md`.
+Refined target finding: the F.1 sketch already derives (viability level)
+`ω_PCD = σ_cycle·ĵ^net = σ_cycle·n̂`, a **product of two already-registered primitives** —
+the spatial primitive `n̂` (audit E16, the axis) and the temporal primitive's handedness
+`σ_cycle` (audit E2/E5/E17, the sign). So `ω_PCD` introduces **no independent third
+primitive**: Scenario B is refuted and E20 is **emergent from the two registered primitives
+jointly**. Reclassification target for the artifact patch: E20 unregistered (conditional) →
+**emergent (P)** — provisional, not established, inheriting the F.1 viability-level ceiling
+(three open commitments per F.1 §14.17). The primitive-count is robust to those open
+commitments (none reintroduces a new direction or handedness); only the magnitude/Layer-3
+rigor is provisional.
+**Precondition to clear before artifact ships:** axiom-attribution reconciliation — the F.1
+sketch attributes `σ_cycle` to "A5," but in the canonical nine-axiom set A5 is the metric;
+the cycle ordering is A1+A4 content (the temporal primitive). The artifact must attribute
+`σ_cycle` to A1+A4 (scope sketch §5.1).
+**Cross-link (flagged, not resolved):** keep `σ_cycle` (temporal cycle ordering) distinct
+from the capture handedness E19 (spatial/CP partnering handedness); if a future result
+identifies them, that *merges* E20 into E19 rather than refuting anything (scope sketch §5.3).
+**Dependencies:** THEO-CHIR-AUDIT-1; `dynamical_substrate_law/sketches/F1_subquestion_pcd_orientation_link.md` (§11 Phase 1 net current ∥ `n̂`; §12 Phase 2 coupling rule; §14.17 viability status).
+**Cross-sector connections:** F.1 DSL arc; THEO-DSL-4 (substrate current ∥ `n̂`); E21 magnitude (OPEN-CHIR-1d) inherits the F.1 Phase-3 `δ=χ` provisional content.
+**Likely first downstream theorem:** THEO-CHIR-PCD-ORIENTATION-1 (Scenario-A classification of `ω_PCD = σn̂`; primitive-count theorem).
+**Paper(s):** F.1; `chirality_derivations/` CHIR-derivation papers.
+**Last updated:** 29 May 2026 (Patch 0635)
 
 ---
 

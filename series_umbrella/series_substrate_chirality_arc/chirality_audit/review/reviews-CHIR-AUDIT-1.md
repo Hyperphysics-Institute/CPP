@@ -193,9 +193,35 @@ theorem, THEO-CHIR-PCD-ORIENTATION-1 (OPEN-CHIR-F1-LINK).
 
 ---
 
-*Review record created at Patch 0634. The three reviewer responses are preserved as
-the team record; the v1.1 calibration applied to `theo_chir_audit_1.tex` is recorded
-in that file's CHANGELOG. Per `templates/AI_team_expectations.md` §4, Grok's
-contribution sketches are logged as OPEN-CHIR-1c/1d seeds and ChatGPT's
-over-confidence calibration of the Grok verdict is logged as a successful
-cross-reviewer catch.*
+---
+
+## Part 4: v1.1 re-review — cycle close (added Patch 0635)
+
+After v1.1 shipped (Patch 0634), ChatGPT was given the revised artifact for a re-review.
+
+**ChatGPT, v1.1 re-review — verdict (verbatim):** "CONFIRMED with v1.1 calibration accepted."
+The revised theorem addresses its prior concerns: emergent-established vs emergent-provisional
+distinguished; E19/E21 kept as owed derivations rather than completed reductions; E20
+reclassified conditional/unregistered; ZBW added as exclusion/open target X5 rather than
+silently omitted. Falsifier check: **F1** — no confirmed missing row (ZBW handled as X5 /
+OPEN-CHIR-2e); **F2** — passes after v1.1, labels now honest (E21 emergent-provisional, E19
+unregistered, E20 conditional, PCD ordering separated from T-asymmetry); **F3** — no fourth
+sense. Remaining caution (accepted): the theorem should keep calling itself a *cataloging*
+theorem, not a *derivation* theorem — which v1.1 does correctly (provisional rows are
+derivation targets, not established reductions). Overall: "v1.1 resolves the review objections
+without overclaiming."
+
+**Cycle outcome: 3/3 reviewers positive on v1.1.** Grok confirmed at v1.0; Copilot's and
+ChatGPT's v1.0 concerns were the basis of the v1.1 calibration and are now resolved (ChatGPT
+explicitly CONFIRMED on v1.1; Copilot's items — emergent overclaim, E20 pre-commit, ZBW — were
+all applied). The THEO-CHIR-AUDIT-1 multi-AI review cycle (Patches 0633→0635) is **closed**.
+No further calibration pending. The OPEN-CHIR-* programme proceeds; the first downstream
+theorem THEO-CHIR-PCD-ORIENTATION-1 is scoped at Patch 0635
+(`chirality_derivations/sketches/theo_chir_pcd_orientation_1_scope.md`).
+
+---
+
+*Review record closed at Patch 0635. The accepted caution — "cataloging theorem, not derivation
+theorem" — is carried forward: THEO-CHIR-AUDIT-1 stays a catalogue; the derivations it spawns
+(THEO-CHIR-PCD-ORIENTATION-1 first) are the separate downstream theorems, each claimed at its
+own honest layer.*
