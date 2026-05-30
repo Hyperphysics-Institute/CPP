@@ -1,0 +1,319 @@
+% ============================================================
+% THEO-CHIR-STATUS-1: The Primitive/Emergent Status of Chirality
+%   — Verdict Structure and Current-Rigor Placement (V3)
+%
+% OPEN-CHIR-1d-β sub-target 1d-β-iv. A Layer-2.5 provisional CLASSIFICATION /
+%   STATUS theorem (not a derivation): it formalizes the verdict space for the
+%   primitive/emergent status of the one currently-identified chirality
+%   primitive FI-C-9 (post-THEO-CHIR-MERGE-2), proves the verdict space
+%   exhaustive, places current rigor at V3 (FI-C-9 = the one currently-
+%   identified irreducible chirality primitive, NOT YET derived — not
+%   "underivable"), and names the V1 upgrade condition (a derived chiral-vacuum
+%   mechanism, 1d-β-ii; contingent sign, 1d-β-iii).
+%
+% Scope note: this is the SPATIAL chirality (pseudoscalar) status (FI-C-9). The
+%   temporal-arrow sign(δ) status is the PARALLEL, separately-tracked question
+%   OPEN-CHIR-2a (not covered here). Inherits THEO-CHIR-MERGE-2's conditionality
+%   (the "one primitive" reduction is conditional on MERGE-α) and its
+%   "currently-identified" hedge (falsifier G6: an independent (P-odd,T-odd)
+%   primitive would add to the count).
+%
+% Patch 0653 (Session 149). Verified by
+%   code/verify_status_1_verdict_partition.py (verdict-space exhaustiveness +
+%   the current-rigor placement logic).
+%
+% CHANGELOG
+%   v1.0 (Patch 0653, Session 149, 29 May 2026) — initial registration at
+%     Layer 2.5 (provisional): verdict structure {V1,V2,V3} defined + proved
+%     exhaustive; current rigor placed at V3; V1 upgrade condition named.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\sgn}{\operatorname{sign}}
+\newcommand{\Po}{\mathsf{P}}
+\newcommand{\Te}{\mathsf{T}}
+\newcommand{\Hf}{H_4}
+\newcommand{\jnet}{\vec{\jmath}_{\text{net}}}
+
+\title{\textbf{THEO-CHIR-STATUS-1}\\[4pt]
+The Primitive/Emergent Status of Chirality:\\
+Verdict Structure and Current-Rigor Placement\\[6pt]
+\large A Layer-2.5 Provisional Status/Classification Theorem\\
+OPEN-CHIR-1d-$\beta$ sub-target 1d-$\beta$-iv}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0653, Session 149 --- 29 May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The Substrate Chirality Arc's headline goal is to determine whether chirality in CPP is
+\emph{primitive} or \emph{emergent}. THEO-CHIR-MERGE-2 (cycle closed 3/3, Patches 0647--0651,
+conditional on MERGE-$\alpha$) reduced \emph{all currently-identified} chirality (pseudoscalar)
+content to \textbf{one} primitive: $\text{FI-C-9} = \sgn(\nhat)$, the frozen substrate-vacuum
+enantiomorph. The temporal-arrow $\sgn(\delta)$ is \emph{not} a chirality (it is the $\Te$-arrow,
+OPEN-CHIR-2a) and is tracked separately. Hence the chirality-status question reduces to:
+\emph{is FI-C-9 primitive or emergent?} --- which is OPEN-CHIR-1d-$\beta$. This theorem is its
+sub-target 1d-$\beta$-iv: it does \emph{not} derive FI-C-9, but it \textbf{formalizes the verdict
+structure} and \textbf{places current rigor}. Decomposing emergence into a \emph{capacity} axis
+(is there a derivable mechanism producing a chiral vacuum?) and a \emph{value} axis (is the
+enantiomorph sign derived, spontaneous, or free), we define three verdicts --- \textbf{V3}
+(irreducible primitive: no mechanism), \textbf{V1} (emergent mechanism, contingent sign), \textbf{V2}
+(fully emergent: mechanism $+$ sign derived) --- and prove they exhaustively partition the outcome
+space (Theorem~\ref{thm:partition}). We then show (Theorem~\ref{thm:placement}) that under the present
+registered framework the status is \textbf{V3}: the 600-cell is achiral (so geometry supplies no
+handedness), every registered chirality theorem (CHI-1, CAP-1, MERGE-2) \emph{consumes} FI-C-9, and
+no registered substrate mechanism derives a chiral vacuum (1d-$\beta$-ii open). Crucially, \textbf{V3
+means ``not yet derived,'' not ``underivable''}: it is the current-rigor placement, explicitly
+upgradeable. The achievable upgrade is \textbf{V1} (Theorem~\ref{thm:upgrade}), reached iff
+1d-$\beta$-ii derives a chiral-vacuum mechanism; V2 additionally requires a sign-fixing asymmetry
+(1d-$\beta$-iii-explicit), currently not in evidence. \textbf{Honest one-line status of the goal:}
+\emph{chirality in CPP is emergent down to one currently-identified irreducible primitive (FI-C-9,
+verdict V3, conditional on MERGE-$\alpha$) plus the separately-tracked $\Te$-arrow (2a), with a
+mapped (deep, cross-sector) path to upgrading FI-C-9 to V1.} Layer 2.5, provisional; a
+classification result, not a derivation. Verified by
+\texttt{code/verify\_status\_1\_verdict\_partition.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: the goal, and what reduces to what}
+\label{sec:setup}
+% ============================================================
+
+The CHIR programme asks: is chirality in CPP primitive or emergent? Two registered results frame the
+question.
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{THEO-CHIR-MERGE-2 (cycle closed 3/3; conditional on MERGE-$\alpha$).} All
+\emph{currently-identified} chirality (pseudoscalar, $\Po$-odd) content reduces to the single
+primitive $\text{FI-C-9} = \sgn(\nhat)$: the spatial capture handedness is $\zeta\times\text{FI-C-9}$
+(CAP-1, $\zeta$ a $\Po$-even involution) and the temporal cycle handedness is
+$\sgn(\delta)\times\text{FI-C-9}$ (MERGE-2), each FI-C-9 modulated by a $\Po$-even factor. The
+modulating $\sgn(\delta)$ is the $\Te$-arrow, \emph{not} a chirality (OPEN-CHIR-2a).
+\item \textbf{The 600-cell is achiral} (MERGE-2 achirality lemma: closed under
+$\operatorname{diag}(-1,1,1,1)$): the substrate geometry alone supplies \emph{no} handedness.
+\end{itemize}
+
+\noindent
+Therefore the chirality-status question reduces, at the current rigor, to a single question about a
+single object: \emph{is $\text{FI-C-9}$ primitive or emergent?} This is OPEN-CHIR-1d-$\beta$. This
+theorem is its sub-target \textbf{1d-$\beta$-iv}: the verdict structure and current-rigor placement.
+
+\begin{remark}[Scope: spatial chirality only]
+\label{rem:scope}
+This theorem concerns the \emph{spatial} chirality (pseudoscalar) primitive FI-C-9. The status of the
+$\Te$-arrow $\sgn(\delta)$ --- whether it is primitive or emergent --- is the \emph{parallel,
+separately-tracked} question OPEN-CHIR-2a (gated on F.2). ``The status of chirality'' in full is the
+conjunction of this result (the pseudoscalar primitive) and 2a (the arrow).
+\end{remark}
+
+% ============================================================
+\section{The verdict structure}
+\label{sec:verdicts}
+% ============================================================
+
+We decompose ``$\text{FI-C-9}$ is emergent'' along two independent axes.
+
+\begin{definition}[The two emergence axes]
+\label{def:axes}
+\textbf{Capacity} $\mathcal{C} \in \{\textsf{No}, \textsf{Yes}\}$: is there a \emph{derivable
+substrate mechanism} that drives the vacuum to break the achiral $\Hf$ symmetry to a chiral phase
+(i.e.\ produces a handedness-bearing vacuum at all)? \textbf{Value} $\mathcal{V} \in
+\{\textsf{derived}, \textsf{spontaneous}, \textsf{free}\}$: \emph{given} a chiral vacuum, is the
+specific enantiomorph sign $\sgn(\nhat)$ fixed by a derivable asymmetry (\textsf{derived}),
+selected contingently by the realized vacuum (\textsf{spontaneous}, as in spontaneous symmetry
+breaking), or an unconstrained boundary condition (\textsf{free})?
+\end{definition}
+
+\begin{definition}[The three verdicts]
+\label{def:verdicts}
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{V3 (irreducible primitive):} $\mathcal{C} = \textsf{No}$. No mechanism produces a
+chiral vacuum; $\text{FI-C-9}$ is a frozen boundary condition --- a genuine chirality primitive.
+\item \textbf{V1 (emergent mechanism, contingent sign):} $\mathcal{C} = \textsf{Yes}$ and
+$\mathcal{V} \in \{\textsf{spontaneous}, \textsf{free}\}$. Chirality-\emph{as-a-phenomenon} is
+derived (the mechanism is); the specific handedness is a contingent/unconstrained fact of the
+realized vacuum. This is the physically standard sense of ``chirality is emergent'' (spontaneous
+symmetry breaking).
+\item \textbf{V2 (fully emergent):} $\mathcal{C} = \textsf{Yes}$ and $\mathcal{V} =
+\textsf{derived}$. Both the mechanism and the specific sign are derived.
+\end{itemize}
+\end{definition}
+
+\begin{theorem}[Exhaustive partition]
+\label{thm:partition}
+The verdicts $\{$V1, V2, V3$\}$ partition the outcome space $\mathcal{C}\times\mathcal{V}$
+exhaustively and mutually exclusively:
+\[
+\text{V3} \;\Leftrightarrow\; \mathcal{C}=\textsf{No}; \qquad
+\text{V2} \;\Leftrightarrow\; \mathcal{C}=\textsf{Yes}\wedge\mathcal{V}=\textsf{derived}; \qquad
+\text{V1} \;\Leftrightarrow\; \mathcal{C}=\textsf{Yes}\wedge\mathcal{V}\in\{\textsf{spontaneous},\textsf{free}\}.
+\]
+\end{theorem}
+
+\begin{proof}
+The outcome space is $\mathcal{C}\times\mathcal{V}$ with $|\mathcal{C}|=2$, $|\mathcal{V}|=3$, six
+cells. When $\mathcal{C}=\textsf{No}$ the value axis is moot (no vacuum to assign a sign to), so the
+three $\mathcal{C}=\textsf{No}$ cells collapse to one verdict, V3. The three $\mathcal{C}=\textsf{Yes}$
+cells split by $\mathcal{V}$: \textsf{derived}$\to$V2; \textsf{spontaneous},\textsf{free}$\to$V1
+(both: mechanism derived, sign not derived). Every cell maps to exactly one verdict and every verdict
+is realized by at least one cell; the three are mutually exclusive (distinct $\mathcal{C}$ for
+V3 vs $\{$V1,V2$\}$; distinct $\mathcal{V}$ for V1 vs V2). (Machine-checked,
+\texttt{verify\_status\_1\_verdict\_partition.py} CHECK 1.)
+\end{proof}
+
+% ============================================================
+\section{Current-rigor placement: V3}
+\label{sec:placement}
+% ============================================================
+
+\begin{theorem}[Current-rigor status is V3]
+\label{thm:placement}
+Under the present registered framework, the capacity axis is $\mathcal{C}=\textsf{No}$ (not
+established), so the current-rigor verdict is \textbf{V3}: $\text{FI-C-9}$ is the one
+currently-identified irreducible chirality primitive.
+\end{theorem}
+
+\begin{proof}
+The capacity axis is $\textsf{Yes}$ only if a \emph{derivable substrate mechanism} producing a chiral
+vacuum is registered. The registered record establishes the contrary at present:
+\begin{enumerate}[label=(P\arabic*),leftmargin=2.4em]
+\item (MERGE-2, 3/3, conditional on MERGE-$\alpha$) all currently-identified chirality reduces to
+$\text{FI-C-9}$ --- so the question is well-posed about this single object.
+\item (MERGE-2 achirality lemma) the 600-cell is achiral; the substrate geometry supplies no
+handedness, so any chirality requires a symmetry-breaking \emph{event}, not mere geometry.
+\item (CHI-1, CAP-1, MERGE-2) every registered chirality theorem \emph{consumes} $\text{FI-C-9}$
+(it enters as an input; none derives it).
+\item (1d-$\beta$-ii open) no registered substrate dynamical mechanism drives the vacuum to a chiral
+phase --- the chiral-vacuum mechanism is the deep, cross-sector, deferred target (F.1 §14.17;
+OPEN-SM-4 $\leftrightarrow$ SS-corpus).
+\end{enumerate}
+By (P2)+(P4) no mechanism is established, so $\mathcal{C}=\textsf{No}$ at current rigor; by
+Theorem~\ref{thm:partition} the verdict is V3.
+\end{proof}
+
+\begin{remark}[V3 means ``not yet derived,'' not ``underivable'']
+\label{rem:not-ontological}
+Theorem~\ref{thm:placement} is a statement about the \emph{present registered framework}, not an
+ontological claim. $\mathcal{C}=\textsf{No}$ reads ``no mechanism is \emph{yet} derived,'' not ``no
+mechanism \emph{can} exist.'' V3 is therefore explicitly upgradeable (§\ref{sec:upgrade}); it is the
+honest floor, not a closure. (Cf.\ the THEO-CHIR-MERGE-2 v1.2 residual: ``one
+\emph{currently-identified} chirality primitive,'' not an unconditional ontological count.)
+\end{remark}
+
+% ============================================================
+\section{The upgrade condition: V1 (and the stretch, V2)}
+\label{sec:upgrade}
+% ============================================================
+
+\begin{theorem}[V1 upgrade condition]
+\label{thm:upgrade}
+The current verdict upgrades V3 $\to$ V1 \emph{if and only if} 1d-$\beta$-ii derives a substrate
+mechanism producing a chiral vacuum ($\mathcal{C}:\textsf{No}\to\textsf{Yes}$) and the value axis is
+$\mathcal{V}\in\{\textsf{spontaneous},\textsf{free}\}$. The further upgrade V1 $\to$ V2 requires, in
+addition, a derivable sign-fixing asymmetry ($\mathcal{V}=\textsf{derived}$, 1d-$\beta$-iii-explicit).
+\end{theorem}
+
+\begin{proof}
+Immediate from Theorem~\ref{thm:partition}: flipping $\mathcal{C}$ to \textsf{Yes} leaves the verdict
+in $\{$V1,V2$\}$, selected by $\mathcal{V}$; \textsf{spontaneous}/\textsf{free}$\to$V1,
+\textsf{derived}$\to$V2.
+\end{proof}
+
+\begin{remark}[The achievable target is V1; V2 is the stretch]
+\label{rem:v1-target}
+The standard outcome of a symmetry-breaking mechanism acting on an achiral substrate is V1: the
+mechanism is derived, the sign is spontaneously selected (no preferred direction survives the
+breaking). V2 would require a \emph{deeper} pseudoscalar asymmetry to fix the sign. A partial
+1d-$\beta$-iii result --- if the axiom set A1--A11 contains no pseudoscalar capable of explicitly
+fixing $\sgn(\nhat)$ --- would exclude $\mathcal{V}=\textsf{derived}$ at axiom level, pinning the
+$\mathcal{C}=\textsf{Yes}$ outcome to V1. (That partial result is a separate sub-target, not claimed
+here.) So the realistic emergence-upgrade for chirality is \textbf{V1: emergent mechanism, contingent
+sign} --- the physically normal sense in which a handedness ``emerges.''
+\end{remark}
+
+% ============================================================
+\section{What is and is not established}
+\label{sec:caps}
+% ============================================================
+
+\textbf{Established (Layer 2.5, provisional).} The verdict space $\{$V1,V2,V3$\}$ is well-defined and
+exhaustive (Thm~\ref{thm:partition}); the current-rigor status of the one currently-identified
+chirality primitive FI-C-9 is \textbf{V3} (Thm~\ref{thm:placement}); the achievable upgrade is
+\textbf{V1} via 1d-$\beta$-ii (Thm~\ref{thm:upgrade}). This gives the programme goal a precise,
+defensible answer-form.
+
+\textbf{Not established (honest caps).}
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{This is a classification/status result, not a derivation.} It changes no substrate
+physics; it formalizes where the programme stands and what would move it. FI-C-9 is not derived.
+\item \textbf{V3 is current-rigor, not ontological} (Rem~\ref{rem:not-ontological}): ``not yet
+derived,'' upgradeable.
+\item \textbf{Inherits MERGE-2's conditionality.} ``One primitive'' is conditional on MERGE-$\alpha$
+(the $\jnet$-arrow identification); and ``currently-identified'' per MERGE-2 G6 (an independent
+$(\Po\text{-odd},\Te\text{-odd})$ primitive would add to the count).
+\item \textbf{Spatial chirality only} (Rem~\ref{rem:scope}). The $\Te$-arrow $\sgn(\delta)$ status is
+the parallel OPEN-CHIR-2a; the full chirality status is this $\wedge$ 2a.
+\item \textbf{The upgrade engine is deep and cross-sector.} 1d-$\beta$-ii (the chiral-vacuum
+mechanism) is deferred behind F.1 §14.17 (OPEN-SM-4 $\leftrightarrow$ SS-corpus); this theorem does
+not attempt it.
+\end{itemize}
+
+% ============================================================
+\section{Falsifiers}
+\label{sec:falsifiers}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{(H1)} THEO-CHIR-MERGE-2 fails (chirality does not reduce to FI-C-9 alone) --- the
+single-object framing of §\ref{sec:setup} and the V3 count change.
+\item \textbf{(H2)} a registered substrate mechanism producing a chiral vacuum appears (1d-$\beta$-ii)
+--- $\mathcal{C}\to\textsf{Yes}$; upgrade V3 $\to$ V1.
+\item \textbf{(H3)} a derivable sign-fixing pseudoscalar asymmetry appears (1d-$\beta$-iii-explicit)
+--- $\mathcal{V}=\textsf{derived}$; upgrade $\to$ V2.
+\item \textbf{(H4)} the verdict space is shown non-exhaustive (a fourth outcome not in
+$\mathcal{C}\times\mathcal{V}$) --- restate Def~\ref{def:verdicts} / Thm~\ref{thm:partition}.
+\item \textbf{(H5)} an independent $(\Po\text{-odd},\Te\text{-odd})$ primitive is registered (MERGE-2
+G6) --- the ``one primitive'' count changes; the verdict structure still applies per-primitive.
+\end{itemize}
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item THEO-CHIR-MERGE-2 (Patches 0647--0651) --- all currently-identified chirality $\to$ FI-C-9
+(conditional on MERGE-$\alpha$); 600-cell achirality; the ``currently-identified'' hedge (G6).
+\item THEO-CHIR-CHI-1 (Patch 0638) --- FI-C-9 magnitude $\chi=\varphi^{-3}$ (1d-$\alpha$); consumes FI-C-9.
+\item THEO-CHIR-CAP-1 (Patch 0640) --- capture handedness $\zeta\times\text{FI-C-9}$; consumes FI-C-9.
+\item OPEN-CHIR-1d-$\beta$ scope sketch (Patch 0652) --- the i--v decomposition; this is sub-target 1d-$\beta$-iv.
+\item F.1 §14.17 viability ceiling; OPEN-SM-4 $\leftrightarrow$ SS-corpus --- the home of the deep
+upgrade engine 1d-$\beta$-ii.
+\item \texttt{code/verify\_status\_1\_verdict\_partition.py} --- verdict-space exhaustiveness +
+current-rigor placement logic.
+\end{itemize}
+
+\end{document}
