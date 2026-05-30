@@ -146,7 +146,10 @@ dependency is plausible (audit E27).
 **Status:** PARTIALLY RESOLVED — THEO-CHIR-MERGE-1 (Patch 0644): MERGE-α resolved (provisional).
 **MERGE-β advanced M3 → M1-χ (Patch 0647, THEO-CHIR-MERGE-2):** the chirality-COUNT half is resolved
 (ONE chirality primitive = FI-C-9); the residual is the T-arrow `sign(δ)` (= OPEN-CHIR-2a / F.2),
-not a chirality sign. THEO-CHIR-MERGE-1 + THEO-CHIR-MERGE-2 registered.
+not a chirality sign. THEO-CHIR-MERGE-1 + THEO-CHIR-MERGE-2 registered. **MERGE-2 multi-AI review
+cycle OPENED (Patch 0648)** — package `chirality_derivations/review/theo_chir_merge_2_review_package_v1.0.md`;
+the "single-pass / review pending" qualifier on M1-χ is removed only on cycle completion (load-bearing
+falsifier: G2, is `δ` T-odd?).
 **Sector(s):** CHIR / FP (F.1 / DSL)
 **Priority:** HIGH (the primitive-count capstone of the audit-downstream programme)
 **Operational sense(s):** spatial (sign(n̂)) ↔ temporal (σ_cycle)
