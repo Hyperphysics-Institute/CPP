@@ -6,6 +6,14 @@ This folder holds all CPP handover documents in one place. **One folder, one con
 
 **At session bootup, open this folder and read the most recent file.** That's the canonical "what's next" pointer for the programme. If the most recent file is paper-scoped or trajectory-scoped and doesn't match the work you're doing, look back at the previous most-recent file with matching scope.
 
+## The kickoff line (paste this into a fresh context window to start a session)
+
+This is the fixed, copy-paste sentence Thomas uses to start a new session. It never changes. (Canonical home: `templates/operating_system.md` §15 "The next-session kickoff line"; mirrored here and at the top of every handover.)
+
+```
+Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
+```
+
 ## What's a handover?
 
 A handover document is a forward-looking artifact written at a session close, paper milestone, or trajectory milestone to orient the next context window. It states:

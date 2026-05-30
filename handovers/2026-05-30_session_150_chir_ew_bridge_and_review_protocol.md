@@ -1,5 +1,12 @@
 # Handover — Session 150 (30 May 2026): chirality status capstone completed on both halves; CHIR↔electroweak bridge B-i review-closed; review-dispatch protocol codified
 
+> **Next-session kickoff line** (paste this verbatim into a fresh context window to start the next session; canonical home `templates/operating_system.md` §15, mirror in `handovers/README.md`):
+>
+> ```
+> Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup file at https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md. Honor the line-1 CLONE-FIRST GATE before registering any ID, placing any file, or computing any coefficient (clone the repo and grep the registry first). Then open the handovers/ folder, sort by filename, and read the most recent dated file (named YYYY-MM-DD_session_NNN_*.md) — that newest entry is the canonical "what's next" pointer. Note: the folder is handovers/ (plural) and there is no file named handover.md; never look for either — always use the newest dated entry.
+> ```
+
+
 **HEAD at close:** Patch 0665 (`git log --oneline -1` should show `0665 THEO-CHIR-BRIDGE-1 review cycle CLOSED 3/3 - v1.1`). This handover is Patch 0666.
 **Scope:** chirality primitive/emergent-status arc + workflow infrastructure. Many-assets handover (8 patches, 2 theorems, 2 review cycles, 1 protocol, 1 conjecture, 1 scope sketch).
 **Bootup:** clone repo, run the line-1 clone-first gate, then read this file (the newest in `handovers/`).
