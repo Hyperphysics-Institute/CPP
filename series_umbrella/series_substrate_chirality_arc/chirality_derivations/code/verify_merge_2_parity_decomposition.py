@@ -167,12 +167,62 @@ def check_2_parity_decomposition():
     return True
 
 
+def check_3_delta_odd_in_e():
+    """
+    CHECK 3 (added v1.1, Patch 0649; addresses ChatGPT's Interpretation-B review point).
+
+    Mechanism A: r(e_hat) = r0 (1 + delta * e_hat . n_hat). For delta != 0 the rate is
+    DIRECTION-ODD: r(e_hat) != r(-e_hat). This is the signature of a polar drift-/flux-like
+    bias, NOT an even-in-direction static anisotropy (conductivity / crystal-axis / nematic),
+    all of which satisfy r(e_hat) = r(-e_hat). The even static-anisotropy class (which is the
+    T-even class ChatGPT proposed) is therefore excluded for delta. (The remaining T-even
+    possibility -- j_net a static polar order parameter -- is excluded not here but by the
+    registered MERGE-alpha identification of j_net with the T-odd arrow; see the theorem
+    Lemma delta-T-odd and falsifier G2.)
+    """
+    r0 = 1.0
+    n_hat = np.array([1.0, 0.0, 0.0, 0.0])  # unit substrate direction
+
+    def rate(delta, e_hat):
+        return r0 * (1.0 + delta * float(np.dot(e_hat, n_hat)))
+
+    # a generic non-parallel, non-perpendicular test direction (unit)
+    e = np.array([0.6, 0.8, 0.0, 0.0]); e = e / np.linalg.norm(e)
+
+    # (a) delta != 0  =>  direction-odd: r(e) != r(-e), and the asymmetry is linear in delta
+    delta = 0.1
+    asym = rate(delta, e) - rate(delta, -e)
+    assert abs(asym) > TOL, "MA.1 rate should be direction-odd for delta != 0"
+    # linear-in-delta, odd: r(e)-r(-e) = 2*r0*delta*(e.n)
+    assert abs(asym - 2.0 * r0 * delta * float(np.dot(e, n_hat))) < TOL, \
+        "asymmetry should equal 2 r0 delta (e.n) -- odd, linear in delta"
+
+    # (b) an EVEN static anisotropy (the T-even class) would use (e.n)^2 and give r(e)=r(-e)
+    def rate_even_anisotropy(kappa, e_hat):
+        return r0 * (1.0 + kappa * float(np.dot(e_hat, n_hat)) ** 2)
+    even_asym = rate_even_anisotropy(0.1, e) - rate_even_anisotropy(0.1, -e)
+    assert abs(even_asym) < TOL, "an even static anisotropy must satisfy r(e)=r(-e)"
+
+    # (c) delta = 0 => isotropic, no asymmetry
+    assert abs(rate(0.0, e) - rate(0.0, -e)) < TOL, "delta=0 must be isotropic"
+
+    print("CHECK 3 PASS: MA.1's delta couples ODDLY to e-hat (r(e) != r(-e), linear in delta)")
+    print("              => a polar drift-/flux-like bias, NOT an even-in-direction static")
+    print("              anisotropy (which would give r(e)=r(-e)). The even T-even-anisotropy")
+    print("              class is excluded for delta; the remaining T-even reading (j_net a")
+    print("              static polar order parameter) is excluded by MERGE-alpha (j_net = the")
+    print("              T-odd arrow), per the theorem's Lemma delta-T-odd / falsifier G2.")
+    return True
+
+
 if __name__ == "__main__":
     ok1 = check_1_achirality()
     print()
     ok2 = check_2_parity_decomposition()
     print()
-    if ok1 and ok2:
+    ok3 = check_3_delta_odd_in_e()
+    print()
+    if ok1 and ok2 and ok3:
         print("ALL CHECKS PASS.")
         print("Verdict M1-chi: ONE chirality (pseudoscalar) primitive = FI-C-9, shared by")
         print("spatial capture handedness (CAP-1) and temporal cycle handedness (this theorem);")

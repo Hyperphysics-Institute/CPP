@@ -34,6 +34,19 @@
 %     Layer 2.5 (provisional): chirality-count half of MERGE-beta resolved
 %     (M1-chi); sign(delta) classified as the T-arrow; MERGE-1's M1 route
 %     corrected; F.2 dependency discharged for the chirality half.
+%   v1.1 (Patch 0649, Session 149, 29 May 2026) — multi-AI review integrated
+%     (ChatGPT + Grok + Copilot; reviews-CHIR-MERGE-2.md), no falsifier.
+%     CALIBRATION: (1) Lemma delta-T-odd strengthened — delta couples ODDLY to
+%     e-hat (flux-like, not an even static anisotropy; new CHECK 3), and the
+%     T-odd assignment is grounded in the registered MERGE-alpha identification
+%     of j_net with the T-odd arrow, with the honest conditional (if j_net is a
+%     T-even static order parameter, delta is T-even -> M3); the verdict M1-chi
+%     is now stated CONDITIONAL on MERGE-alpha. (2) Category-mismatch corollary
+%     split into (a) no direct identification [airtight] and (b) no
+%     presently-available covariant tie [no independent (P-odd,T-odd) mediator
+%     exists]; the universal 'can never exist' wording removed. (3) Falsifier G2
+%     refined (located at the MERGE-alpha ceiling) + new falsifier G6 (an
+%     independent (P-odd,T-odd) primitive reopens the tie). No verdict change.
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -72,7 +85,7 @@ and $\sgn(\delta)$ is the Time-Reversal Arrow, not a Chirality Sign\\[6pt]
 \large A Layer-2.5 Provisional Theorem --- OPEN-FP-F1-2 sub-target L4-D;\\
 advances OPEN-CHIR-MERGE MERGE-$\beta$ from M3 to M1-$\chi$}
 \author{Conscious Point Physics --- Substrate Chirality Arc}
-\date{Version 1.0 --- Patch 0647, Session 149 --- 29 May 2026}
+\date{Version 1.1 --- Patch 0649, Session 149 --- 29 May 2026 \\[2pt]\small(v1.0 Patch 0647; multi-AI review integrated at v1.1, no falsifier)}
 
 \begin{document}
 \maketitle
@@ -111,8 +124,12 @@ equivalently OPEN-CHIR-2a) is required only to physicalize the $\Te$-odd arrow $
 2.5 (a discrete-symmetry structural argument resting on the $\Po/\Te$ assignments of
 Lemmas~\ref{lem:delta-p}--\ref{lem:sigma}); does \emph{not} derive FI-C-9 (that is 1d-$\beta$);
 does \emph{not} fix $\sgn(\delta)$ (the arrow; OPEN-CHIR-2a / F.2); does \emph{not} establish the
-$\delta$--$\varepsilon$ magnitude tie (L4-E). Single-pass; multi-AI review is the natural next step.
-Verified by \texttt{code/verify\_merge\_2\_parity\_decomposition.py}.
+$\delta$--$\varepsilon$ magnitude tie (L4-E). \textbf{The $\Te$-odd character of $\delta$ --- hence
+the verdict --- is conditional on the registered MERGE-$\alpha$ identification of $\jnet$ with the
+$\Te$-odd thermodynamic arrow} (the rate law alone does not force it; $\delta$ couples \emph{oddly}
+to $\hat{e}$, so it is flux-like, not an even static anisotropy). Multi-AI review integrated
+(ChatGPT + Grok + Copilot; v1.1, no falsifier). Verified by
+\texttt{code/verify\_merge\_2\_parity\_decomposition.py}.
 \end{abstract}
 
 \tableofcontents
@@ -186,10 +203,31 @@ Under time reversal, the elementary process ``a DI-bit propagates along $\hat{e}
 $r(\hat{e})$'' maps to ``a DI-bit propagates along $-\hat{e}$,'' so $\Te$-covariance of the
 dynamics requires the time-reversed rate function $r^{\Te}(\hat{e}) = r(-\hat{e}) =
 r_0(1 - \delta\,\hat{e}\cdot\nhat) = r_0(1 + (-\delta)\,\hat{e}\cdot\nhat)$. Hence the $\Te$-image
-parameter is $-\delta$: $\delta$ is $\Te$-odd. (Physically: a directional bias in propagation is an
-arrow-like quantity, like a drift or a current bias.) Consistency check: $\jnet =
-(6\delta/\varphi^2)\nhat$ is a current, $\Te$-odd ($\jnet \to -\jnet$); with $\delta$ $\Te$-odd and
-$\nhat$ $\Te$-even this is satisfied.
+parameter is $-\delta$: $\delta$ is $\Te$-odd.
+
+\emph{Why this is a flux bias and not a static anisotropy} (the load-bearing point, sharpened at
+the v1.1 review integration). MA.1 couples $\delta$ \emph{oddly} to $\hat{e}$: $r(\hat{e}) \neq
+r(-\hat{e})$ whenever $\delta \neq 0$ (verified, \texttt{verify\_merge\_2\_parity\_decomposition.py}
+CHECK 3). This is the signature of a \emph{polar, direction-odd propagation bias} (faster one way
+than the other along $\nhat$), i.e.\ a drift-/flux-like quantity. It is \emph{not} an even-in-direction
+static anisotropy --- conductivity anisotropy, a crystal-axis preference, a nematic director --- all
+of which are \emph{even} in direction ($r(\hat{e}) = r(-\hat{e})$; $\nhat \equiv -\nhat$ for a
+nematic) and hence $\Te$-even. So $\delta$ does not fall in the $\Te$-even static-anisotropy class.
+
+\emph{What secures $\Te$-odd over $\Te$-even} (the conditional). MA.1 \emph{alone} does not force the
+choice: a referee can posit that $\jnet = (6\delta/\varphi^2)\nhat$ is a $\Te$-\emph{even} static
+\emph{polar} order parameter (an imposed substrate field) rather than a flux, which would make
+$\delta$ $\Te$-even. The choice is fixed by an \emph{upstream registered result}: THEO-CHIR-MERGE-1
+(MERGE-$\alpha$) $+$ THEO-DSL-3 identify $\jnet$ with the \emph{thermodynamic causal arrow}
+(OPEN-SD-CHIR-PRIMITIVE manifestation iv), which is $\Te$-odd by definition. With $\jnet$ $\Te$-odd
+and $\nhat$ $\Te$-even, $\delta$ is $\Te$-odd. \textbf{Hence $\delta$'s $\Te$-odd character --- and
+therefore the verdict of this paper --- is conditional on the MERGE-$\alpha$ arrow-identification of
+$\jnet$, and inherits its Layer-2.5 viability ceiling.} If that identification fails (i.e.\ $\jnet$
+is a $\Te$-even static order parameter, not the arrow), then $\delta$ is $\Te$-even and the
+decomposition's clean ``arrow vs chirality'' split collapses, reverting MERGE-$\beta$ toward M3
+(falsifier G2; the alternative is located precisely at the MERGE-$\alpha$ ceiling, not as a free
+choice). Consistency check: $\jnet = (6\delta/\varphi^2)\nhat$ is the arrow current, $\Te$-odd
+($\jnet \to -\jnet$); with $\delta$ $\Te$-odd and $\nhat$ $\Te$-even this is satisfied.
 \end{lemma}
 
 \begin{lemma}[$\wPCD$ is $\Po$-even (axial), $\Te$-odd]
@@ -288,13 +326,25 @@ resolved in the unifying (one-sign) direction.
 \begin{corollary}[Correction of MERGE-1's M1 route: a parity category-mismatch]
 \label{cor:mismatch}
 MERGE-1's stated Layer-4 route to M1 --- ``tie $\sgn(\delta)$ to $\sgn(\nhat)$'' --- cannot be
-executed as phrased: $\sgn(\delta)$ is $\Po$-even/$\Te$-odd (Lemmas~\ref{lem:delta-p},
-\ref{lem:delta-t}) and $\sgn(\nhat)$ is $\Po$-odd/$\Te$-even (Lemma~\ref{lem:nhat}); no
-$\Po,\Te$-covariant relation can equate them or render one a function of the other. The chirality
-merge is achieved \emph{not} by tying the two signs but by recognising that $\sgn(\delta)$ is the
-time-reversal arrow content, not a chirality sign. The ``$\sgn(\delta)$ carries an independent sign
-in addition to $\sgn(\nhat)$'' reason of MERGE-1 \S\ref{sec:setup}\,(b)(ii) is sharpened: that
-independent sign is the arrow, $\Po$-even, hence never a candidate \emph{chirality} primitive.
+executed as phrased. We separate two claims (the v1.1 review integration sharpened this, per
+ChatGPT + Copilot). \textbf{(a) No direct identification} $\sgn(\delta) = \sgn(\nhat)$ is possible:
+$\sgn(\delta)$ is $\Po$-even/$\Te$-odd (Lemmas~\ref{lem:delta-p}, \ref{lem:delta-t}) and
+$\sgn(\nhat)$ is $\Po$-odd/$\Te$-even (Lemma~\ref{lem:nhat}); a covariant equation cannot relate two
+objects of different $(\Po,\Te)$ character. This is airtight. \textbf{(b) A covariant \emph{tie}}
+(one a function of the other) would require an independent mediator of character $(\Po,\Te) =
+(\text{odd},\text{odd})$ --- e.g.\ $\sgn(\delta) = X\cdot\sgn(\nhat)$ with $X$ a $\Po$-odd/$\Te$-odd
+pseudoscalar makes both sides $\Po$-even/$\Te$-odd. \textbf{No such \emph{independent} primitive
+exists in the current framework}: the 600-cell is achiral (Lemma~\ref{lem:achiral}), so geometry
+supplies no primitive pseudoscalar beyond FI-C-9; and the only $(\Po\text{-odd},\Te\text{-odd})$
+objects in play --- $\scyc$ itself and (via it) $\wPCD$ --- are exactly what is being decomposed,
+hence not independent mediators. Therefore \textbf{no presently-available covariant tie exists}
+(not ``no covariant relation can ever exist'' --- the honest statement is the weaker one). The
+chirality merge is achieved \emph{not} by tying the two signs but by recognising that $\sgn(\delta)$
+is the $\Te$-arrow content, not a chirality sign; MERGE-1's ``$\sgn(\delta)$ carries an independent
+sign in addition to $\sgn(\nhat)$'' is sharpened --- that independent sign is the arrow, $\Po$-even,
+hence never a candidate \emph{chirality} primitive. If an independent
+$(\Po\text{-odd},\Te\text{-odd})$ primitive were ever registered, the tie route would reopen
+(falsifier G6).
 \end{corollary}
 
 \begin{corollary}[The chirality merge is F.2-independent; F.2 / 2a is the pure $\Te$-arrow question]
@@ -314,11 +364,14 @@ pure-temporal arrow, never for the chirality count.
 \label{sec:caps}
 % ============================================================
 
-\textbf{Resolved (Layer 2.5, provisional).} The chirality primitive count is \emph{one} (FI-C-9):
-the temporal cycle handedness shares its pseudoscalar content with the spatial capture handedness.
-MERGE-$\beta$ advances from M3 to \emph{M1-$\chi$}. MERGE-1's ``tie $\sgn(\delta)$ to the
-enantiomorph'' route is corrected (parity category-mismatch). The F.2 dependency is discharged for
-the chirality half.
+\textbf{Resolved (Layer 2.5, provisional; conditional on MERGE-$\alpha$).} The chirality primitive
+count is \emph{one} (FI-C-9): the temporal cycle handedness shares its pseudoscalar content with the
+spatial capture handedness. MERGE-$\beta$ advances from M3 to \emph{M1-$\chi$}, \emph{conditional on
+the MERGE-$\alpha$ identification of $\jnet$ with the $\Te$-odd thermodynamic arrow}
+(Lemma~\ref{lem:delta-t}; the result inherits MERGE-$\alpha$'s Layer-2.5 viability ceiling). MERGE-1's
+``tie $\sgn(\delta)$ to the enantiomorph'' route is corrected (Corollary~\ref{cor:mismatch}: no direct
+identification; no presently-available covariant tie). The F.2 dependency is discharged for the
+chirality half.
 
 \textbf{Not resolved (honest caps).}
 \begin{itemize}[leftmargin=1.5em]
@@ -330,10 +383,12 @@ PCD-ORIENTATION-1); deriving it is the deep 1d-$\beta$ ($H_4 \to I_h$ symmetry-b
 \item \textbf{The $\delta$--$\varepsilon$ magnitude relation is untouched.} Whether $|\delta|$ ties
 to the spatial chirality magnitude $\varepsilon = |\chi| = \varphi^{-3}$ is the separate L4-E
 sub-target (couples to E21 / THEO-CHIR-CHI-1).
-\item \textbf{Layer 2.5.} The result is a discrete-symmetry structural argument resting on the
-$\Po/\Te$ assignments of Lemmas~\ref{lem:delta-p}--\ref{lem:sigma}; the load-bearing assignments are
-$\delta$ $\Te$-odd (Lemma~\ref{lem:delta-t}) and $\wPCD$ $\Te$-odd (Lemma~\ref{lem:omega}). It is
-single-pass; multi-AI review is the natural next step, as it advances a registered verdict.
+\item \textbf{Layer 2.5.} The result is a discrete-symmetry structural argument; the load-bearing
+inputs are (i) $\delta$ couples \emph{oddly} to $\hat{e}$ (flux-like, not an even static anisotropy),
+(ii) the MERGE-$\alpha$ identification of $\jnet$ with the $\Te$-odd arrow (which fixes $\delta$
+$\Te$-odd over $\Te$-even), and (iii) $\wPCD$ axial/$\Te$-odd (Lemma~\ref{lem:omega}). Multi-AI
+review integrated (Patch 0649; ChatGPT + Grok + Copilot; no falsifier --- the v1.1 calibration made
+inputs (i)/(ii) and the identification-vs-tie distinction of Corollary~\ref{cor:mismatch} explicit).
 \end{itemize}
 
 % ============================================================
@@ -344,9 +399,13 @@ single-pass; multi-AI review is the natural next step, as it advances a register
 \begin{itemize}[leftmargin=1.5em]
 \item \textbf{(G1)} $\wPCD$ is shown not to be axial, or not $\Te$-odd --- breaks
 Lemma~\ref{lem:omega} and the decomposition.
-\item \textbf{(G2)} $\delta$ is shown $\Te$-even (a $\Po,\Te$-covariant argument that the rate
-asymmetry is not arrow-like) --- would re-open the possibility that $\sgn(\delta)$ carries
-pseudoscalar content, restoring a second-chirality candidate.
+\item \textbf{(G2)} $\delta$ is shown $\Te$-even --- concretely, the MERGE-$\alpha$ identification of
+$\jnet$ with the $\Te$-odd thermodynamic arrow fails and $\jnet$ is instead a $\Te$-even static
+\emph{polar} order parameter. Then $\sgn(\delta)$ is $\Po$-even/$\Te$-even, the arrow/chirality split
+collapses, and the verdict reverts toward M3. (This is the load-bearing falsifier; it is located at
+the MERGE-$\alpha$ viability ceiling, per the v1.1 Lemma~\ref{lem:delta-t}. Note: an \emph{even}-in-direction
+static anisotropy --- conductivity, crystal-axis --- does \emph{not} trigger G2, since $\delta$
+couples \emph{oddly} to $\hat{e}$, CHECK 3.)
 \item \textbf{(G3)} a primitive geometric pseudoscalar exists in the substrate beyond FI-C-9
 (breaks Lemma~\ref{lem:achiral}'s uniqueness; but the 600-cell is achiral --- verified).
 \item \textbf{(G4)} the framework identification $\sgn(\nhat) = \text{FI-C-9}$ fails (then $\nhat$'s
@@ -354,6 +413,10 @@ sign is not the enantiomorph and Lemma~\ref{lem:nhat} must be restated).
 \item \textbf{(G5)} the relation \eqref{eq:merge1-relation} itself fails (e.g.\ the conversion of
 the polar current to the axial cycle orientation introduces a factor of indefinite parity) ---
 breaks the premise inherited from MERGE-1.
+\item \textbf{(G6)} an \emph{independent} $(\Po\text{-odd},\Te\text{-odd})$ primitive is registered
+in the framework (one not reducible to $\scyc$/$\wPCD$ or to FI-C-9) --- would reopen the covariant
+\emph{tie} route of Corollary~\ref{cor:mismatch} (b) and could restore an M1-via-tie reading.
+(Added at the v1.1 review integration, per the ChatGPT/Copilot identification-vs-tie distinction.)
 \end{itemize}
 
 % ============================================================
