@@ -1751,7 +1751,7 @@ per the "Handover file location and naming convention" subsection at the top of 
 
 **Two scales of handover, by asset coverage** (REVISED Patch 0434E from the prior "verbatim content for downstream lift" framing to the pointer-list design clarified Session 132 deliberation):
 
-**Few-assets handover** (~80–120 lines; default for ordinary §4-triggered closes producing a small set of substantive assets). A concentrated paste-ready forward-pointing orientation document. Designed to be pasted directly into the new context window's opening message after Thomas's bootup command, giving the next Opus instance a complete one-page state-of-the-programme without requiring synthesis from distributed sources. Follows the structure template below (one-paragraph state, forward queue, where-to-find-detail, audit table, quick-start).
+**Few-assets handover** (~80–120 lines; default for ordinary §4-triggered closes producing a small set of substantive assets). A concentrated paste-ready forward-pointing orientation document. Designed to be pasted directly into the new context window's opening message after Thomas's bootup command, giving the next Opus instance a complete one-page state-of-the-programme without requiring synthesis from distributed sources. Follows the structure template below (orientation paragraph [read-first], forward queue, where-to-find-detail, audit table, quick-start).
 
 **Many-assets handover** (length follows inventory; typically 200–500 lines for milestone arcs; can exceed 500 lines when the asset inventory is unusually broad — e.g., a v1.0 SHIP arc producing 8 sketch sections + 5 findings + 3 registry updates + 1 new sketch file + 1 anthology chapter + 1 orientation-document update has more assets to enumerate than a single-session closure). Same paste-ready quick-start summary section at the top, followed by a **pointer-index asset inventory** enumerating every substantive asset produced or modified during the arc, with path + one-sentence annotation per asset. **The handover does NOT duplicate the substance.** The substance lives in canonical source files (Tier 4 reasoning, working sketches, founders_voice, reviewer letters, transcripts, session_logs, registries, anthology chapters, programme orientation document). The handover certifies that every asset was produced and committed, and routes the next session to the canonical sources via the pointer-index.
 
@@ -1789,12 +1789,12 @@ The handover document follows this structure (and **must open with the canonical
 ```markdown
 # [Paper-ID] Handover — Session [N] Close ([Date])
 
+## Orientation — read this first
+
+[THE single orienting paragraph for the new context window — the one thing to read if nothing else. Concise prose: what the paper is about, what state it's in, what the most recent session(s) produced, what the active investigation is, **and it must close on the single most-important next action** (so the orientation is self-contained — the reader knows both where we are and what to do without scrolling to the Forward queue). ~6-10 sentences. Everything below this section is supporting detail.]
+
 **Repository state:** origin/main at commit `[hash]`, patch [highest-NNNN] highest.
 **Active paper(s):** [Paper-ID] ([title or working title]). [Pre-paper / In-development / v0.x active / Trigger 2 pending / etc.]
-
-## One-paragraph state
-
-[Concise prose paragraph: what the paper is about, what state it's in, what the most recent session(s) produced, what the active investigation is. ~6-10 sentences.]
 
 ## Forward queue
 
@@ -1838,6 +1838,8 @@ The handover document follows this structure (and **must open with the canonical
 Completion criterion: `handovers/YYYY-MM-DD_session_NNN_<scope>.md` is created and committed; ALL Step A–G items are explicitly accounted for in the audit table (✓ or N/A with brief note); the file is paste-ready (no in-text references to "see chat above" or similar context-window-bound language). For milestone-trajectory handovers, the additional sections (trajectory narrative, findings registered, verbatim derivations, programme-level implications, source-material pointers, lessons systematized) are appended below the paste-ready quick-start section at the length warranted by the milestone scope.
 
 The handover document is **always produced**, even when the bulk of preceding steps are N/A. A pure-infrastructure session still produces a handover document with most steps marked N/A and the paste-ready summary covering what the next session needs.
+
+**Orientation paragraph — prominence amendment (Patch 0672, 30 May 2026).** The handover's orienting prose paragraph is now the **first section under the title, titled `## Orientation — read this first`** (formerly `## One-paragraph state`, positioned third — after the kickoff-line block and the repository/active-paper metadata lines). It must **close on the single most-important next action** so it is self-contained: a fresh context window (or Thomas) gets both *where we are* and *what to do* from this one paragraph without scrolling. The repository-state / active-paper metadata lines now follow the orientation paragraph rather than precede it. Empirical motivation: at Session 151 close Thomas observed that the orientation paragraph the protocol was *supposed* to surface was not obvious — it existed (as `## One-paragraph state`) but was buried under the kickoff-line plumbing and labeled in a way that did not announce it as the read-first orientation. The kickoff line still opens the file (Step H discoverability requirement, unchanged); the orientation paragraph is the first *content* section after the title. Mirrored in `handovers/README.md`. No physics change; handover-template only. This is a refinement of the Step H template length/format per the "may be refined as new failure modes surface" provision below.
 
 ### §15.10 Session-close handover discipline vs v1.0 SHIP closeout deliverables — separation of concerns (Patch 0459, 19 May 2026)
 

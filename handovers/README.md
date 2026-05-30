@@ -16,7 +16,7 @@ Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup fil
 
 ## What's a handover?
 
-A handover document is a forward-looking artifact written at a session close, paper milestone, or trajectory milestone to orient the next context window. It states:
+A handover document is a forward-looking artifact written at a session close, paper milestone, or trajectory milestone to orient the next context window. It opens (after the kickoff line) with a **`## Orientation — read this first`** paragraph: the single read-first paragraph stating where we are and the most-important next action, self-contained so the new window is oriented without scrolling. It then states:
 
 - **Current state** — what shipped, what's pending, where we are
 - **Immediate next priority** — the first piece of work the next session should pick up
