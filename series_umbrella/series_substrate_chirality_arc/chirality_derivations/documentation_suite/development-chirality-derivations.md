@@ -63,3 +63,45 @@ At the three-derivations milestone, the per-patch verbatim reasoning + scripts (
 throughout per the reasoning-capture protocol) were consolidated into this `documentation_suite/`
 plus the folder README. No physics changed; this is the synthesis layer over the canonical
 Tier-4 fragments.
+
+## Patches 0668–0670 (Session 151) — the bridge's reachable faces completed (B-iii + B-ii scoped)
+
+Session 150 had closed B-i (the ℤ₂-match + P/T-face dictionary, THEO-CHIR-BRIDGE-1, review-hardened
+3/3) and isolated the bridge's dynamical residue as B-iii. Session 151 took up that residue and the
+remaining tractable magnitude work, producing two scope sketches and one hygiene fix — no theorem, no
+review cycle, and no verdict move.
+
+**B-iii (Patch 0668) — the capacity engine.** The move was to make the capacity question ("does the
+det-coset ℤ₂ actually break / does a chiral vacuum form?") structurally precise without charging the
+deferred dynamics. Replacing the discrete order parameter `sign(n̂)` by its continuous precursor η (the
+det-coset amplitude, on which the ℤ₂ acts as η ↦ −η) turns the qualitative question into a well-posed
+one about the effective potential V(η). Because the substrate dynamics are ℤ₂-symmetric (STATUS-2's two
+degenerate enantiomorph vacua), V is forced even — V = V₀ + μ²η² + λη⁴ + … with no odd term, the absence
+being a consequence of STATUS-2's own partial-1d-β-iii result (no axiom-level pseudoscalar exists except
+FI-C-9 = η). The vacuum structure then collapses to a single sign: capacity ⟺ μ² < 0 (double-well, ℤ₂
+breaks, V3→V1) vs μ² > 0 (symmetric, no chiral vacuum). The second sub-question — is the break EWSB? —
+localizes as the identity of the substrate μ² with the electroweak Higgs μ² (CONJ-CHIR-1's dynamical
+content), independent of the capacity sign (the independence is BRIDGE-1 falsifier B2 made explicit).
+The ℤ₂-even form is Layer-2.5-reachable now; the sign of μ² is fixed only by the DSL effective action
+behind F.1 §14.17 and was deliberately not touched — the verify script exercises both signs as free
+inputs and asserts it fixes neither. This is the B-iii analog of STATUS-2 (the breaking chain) and
+BRIDGE-1 (the ℤ₂-match): a deep question reduced to one coefficient's sign.
+
+**B-ii (Patch 0669) — the magnitude anchors, and a "tension" that wasn't one.** B-ii decomposes by
+depth: the P-face anchor Δp_LR = χ/6 = φ⁻³/6 ≈ 0.0394 is already load-bearing and shipped (CAP-1), while
+the T-face anchor δ_CP ≈ 193–195° is a signpost only, its derivation-from-χ being the same §14.17-gated
+deep engine as B-iii. The reachable core was the long-flagged χ "φ⁻¹-vs-φ⁻³" reconciliation that
+BRIDGE-1 carried as falsifier B4. Tracing every live source showed there is no physics tension: φ⁻³ is
+the unambiguous magnitude (FI-C-9, CHI-1, Capotauro v1.0/v2.0), and φ⁻¹ is two other things — a
+registered dead end (the pre-Session-86 conjecture, geometrically excluded because φ⁻¹ is the
+edge-length scale; C-3 corrected a lost-1/φ arithmetic error that had produced φ⁻²) and the first-shell
+distance from which CHI-1 *builds* χ via the symmetric bias (1−φ⁻¹)/(1+φ⁻¹) = φ⁻³. The dead conjecture's
+whole error was conflating the input distance with the output bias. Falsifier B4 was reclassified
+(resolved as documentation; retained only as a forward hook on sub-claim (b), should a future
+first-principles |χ| derivation ever return φ⁻¹/φ⁻² as the magnitude). The root cause — a stale
+placeholder in OPEN-SM-4's one-line statement — was corrected in a deliberately separate cross-sector
+patch (0670), keeping the CHIR-arc scoping work independent of a registry edit in the SM sector. The
+review-closed BRIDGE-1 theorem was left untouched.
+
+With these, the bridge's three reachable faces are mapped (B-i closed, B-ii and B-iii scoped), and the
+only verdict-moving work left lives behind the §14.17 viability ceiling.
