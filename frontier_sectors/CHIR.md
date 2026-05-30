@@ -147,16 +147,12 @@ dependency is plausible (audit E27).
 **MERGE-β advanced M3 → M1-χ (Patch 0647, THEO-CHIR-MERGE-2):** the chirality-COUNT half is resolved
 (ONE chirality primitive = FI-C-9); the residual is the T-arrow `sign(δ)` (= OPEN-CHIR-2a / F.2),
 not a chirality sign. THEO-CHIR-MERGE-1 + THEO-CHIR-MERGE-2 registered. **MERGE-2 multi-AI review
-INTEGRATED (Patch 0649; ChatGPT + Grok + Copilot; no falsifier)** — `theo_chir_merge_2.tex` → **v1.1**
-(calibration): the `δ` T-odd assignment is now grounded explicitly in (i) `δ` coupling *oddly* to
-`ê` (flux-like, not an even static anisotropy; new verify CHECK 3) and (ii) the registered MERGE-α
-identification of `j_net` with the T-odd thermodynamic arrow — so **M1-χ stands but is conditional on
-MERGE-α** (ChatGPT's correct catch: MA.1 alone does not force `δ` T-odd; the alternative — `j_net` a
-T-even static order parameter — is located at the MERGE-α viability ceiling, falsifier G2). The
-category-mismatch corollary is split into (a) no direct identification [airtight] + (b) no
-presently-available covariant tie [no independent (P-odd,T-odd) mediator exists; new falsifier G6].
-Reviews + synthesis + triage: `chirality_derivations/review/reviews-CHIR-MERGE-2.md`. Cross-reviewer:
-2/3 clean confirm (Grok Tier-3 + Copilot) + 1 calibration-dissent (ChatGPT) met by the v1.1 grounding.
+CLOSED 3/3, no falsifier (Patches 0648–0651; Grok + Copilot + ChatGPT; ChatGPT CONFIRMED at v1.1
+re-review)** — `theo_chir_merge_2.tex` at **v1.2**. **Verdict: M1-χ — ONE currently-identified
+chirality primitive (FI-C-9) — conditional on the MERGE-α arrow-identification of `j_net`** (the
+δ T-odd character is inherited from MERGE-α, not independently established; the residual T-arrow
+`sign(δ)` is OPEN-CHIR-2a / F.2). Reviews + synthesis + triage + v1.1 cycle close:
+`chirality_derivations/review/reviews-CHIR-MERGE-2.md` (Part 4).
 **Sector(s):** CHIR / FP (F.1 / DSL)
 **Priority:** HIGH (the primitive-count capstone of the audit-downstream programme)
 **Operational sense(s):** spatial (sign(n̂)) ↔ temporal (σ_cycle)
@@ -215,7 +211,7 @@ substrate-Wigner-Eckart datum (Capotauro v2.0 §20); the chirality continuum arc
 **Paper(s):** `chirality_derivations/theo_chir_merge_1.tex` (Patch 0644) + `theo_chir_merge_2.tex`
 (Patch 0647). Chirality-count half resolved (M1-χ); the T-arrow `sign(δ)` (full M1) deferred to
 OPEN-CHIR-2a / F.2; the δ–ε magnitude to OPEN-FP-F1-2 sub-target L4-E.
-**Last updated:** 29 May 2026 (Patch 0650 — ChatGPT v1.1 re-review request issued (`review/theo_chir_merge_2_rereview_request_chatgpt_v1.1.md`) to formally close the cycle (AUDIT-1 precedent); verdict unchanged (M1-χ conditional on MERGE-α) pending ChatGPT's response. Earlier: Patch 0649 — MERGE-2 multi-AI review integrated, v1.1, no falsifier.)
+**Last updated:** 29 May 2026 (Patch 0651 — MERGE-2 review cycle **CLOSED 3/3, no falsifier**: ChatGPT CONFIRMED at v1.1 re-review ("M1-χ, conditional on MERGE-α"); v1.2 applied two ChatGPT wording residuals (δ T-oddness stated as inherited from MERGE-α; count reworded "one *currently-identified* chirality primitive", future-proofed against G6). No verdict change. Earlier: 0650 re-review request; 0649 review integration v1.1; 0647 M3→M1-χ.)
 
 ---
 

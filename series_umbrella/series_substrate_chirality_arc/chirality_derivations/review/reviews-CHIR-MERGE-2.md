@@ -58,3 +58,21 @@ Triaged in the package's stated order (G2 > G1/G5 > G3 > verdict-calibration > c
 5. **verify script** — new **CHECK 3** added: confirms `r(ê) ≠ r(−ê)` for δ ≠ 0 (δ couples oddly to `ê`), demonstrating δ is a directional/flux bias, not an even-in-`ê` static anisotropy — the concrete exclusion of ChatGPT's Interpretation-B analogy class.
 
 **Status after integration:** multi-AI review integrated (3 reviewers); no falsifier; **verdict M1-χ stands, conditional on MERGE-α**; v1.1 calibration applied. The "single-pass" qualifier is removed. An optional ChatGPT v1.1 re-review (confirming the conditional framing meets its stated condition) would formally close the cycle, mirroring the AUDIT-1 v1.1 re-review close.
+
+---
+
+## Part 4: v1.1 re-review — cycle close (added Patch 0651)
+
+**ChatGPT, v1.1 re-review — verdict (verbatim):** *"CONFIRMED. … M1-χ, conditional on MERGE-α, at the stated Layer-2.5 provisional scope."* Lead line: *"Yes. v1.1 meets the condition I set in v1.0."*
+
+ChatGPT's v1.0 dissent was explicitly conditional (*"the decomposition is valid if δ is established T-odd, but the theorem itself does not yet establish that T-character"*). The re-review finds v1.1 supplies exactly the missing step:
+
+- **Gate (δ T-odd) — accepted.** Verbatim: *"v1.1 no longer claims MA.1 alone resolves this. … it imports the upstream identification j_net ≡ thermodynamic causal arrow. If that identification is granted, then j_net must be T-odd. Given n̂ is T-even, the product law immediately yields δ T-odd. That inference is correct."* And: *"The problem in v1.0 was not 'δ cannot be T-odd.' The problem was 'δ is not shown to be T-odd.' v1.1 now … localizes the choice to a named dependency. That is the correct repair."* ChatGPT notes (INSPECTED) that the odd-in-ê argument *strengthens the presentation but is not the decisive repair* — *"The real closure comes from j_net is the arrow. v1.1 correctly says so."* (Consistent with the v1.1 lemma, which makes the MERGE-α identification the load-bearing step and the oddness the exclusion of the even-anisotropy class.)
+- **Corollary (a)/(b) — accepted.** Verbatim: *"The new split is correct. … v1.1 now acknowledges exactly this possibility and registers it as falsifier G6. That addresses my objection completely. The revised statement 'no presently available covariant tie exists' is correct. The old statement … was too strong."*
+- **Verdict honesty — accepted.** Verbatim: *"M1-χ conditional on MERGE-α rather than M1-χ unconditionally follows from parity bookkeeping. That distinction matters. … I no longer see the theorem claiming more than it has established."*
+
+**Two non-verdict-flipping wording residuals (ChatGPT, INSPECTED), applied at v1.2:**
+- **Residual A** — state once, explicitly, that the theorem does *not* establish δ's T-oddness independently but inherits it from MERGE-α via the j_net-arrow identification. (Applied: a dedicated sentence in §caps.)
+- **Residual B** — avoid ontological wording ("all chirality is sign(n̂)"); the established claim is the tighter *"all currently identified P-odd content of σ_cycle resides in sign(n̂),"* future-proofing against G6. (Applied: Corollary M1-χ + the count statement reworded to "currently identified," with a Remark.)
+
+**Cycle outcome:** **3/3, no falsifier.** Grok (defect-free, Tier-3) + Copilot (logically sound) + ChatGPT (CONFIRMED after v1.1). **THEO-CHIR-MERGE-2 confirmed at Layer-2.5 provisional, verdict M1-χ conditional on MERGE-α.** The review cycle is **CLOSED**. v1.2 applies ChatGPT's two wording residuals (no verdict change).

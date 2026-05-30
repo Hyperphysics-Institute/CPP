@@ -47,6 +47,15 @@
 %     exists]; the universal 'can never exist' wording removed. (3) Falsifier G2
 %     refined (located at the MERGE-alpha ceiling) + new falsifier G6 (an
 %     independent (P-odd,T-odd) primitive reopens the tie). No verdict change.
+%   v1.2 (Patch 0651, Session 149, 29 May 2026) — multi-AI review cycle CLOSED 3/3,
+%     no falsifier (ChatGPT CONFIRMED at v1.1 re-review: "M1-chi, conditional on
+%     MERGE-alpha"). Applied ChatGPT's two non-verdict-flipping wording residuals:
+%     (A) one explicit sentence that delta's T-oddness is INHERITED from MERGE-alpha,
+%     not independently established; (B) the count claim reworded to "one
+%     currently-identified chirality primitive" with a Remark scoping it (all
+%     currently-identified P-odd content of sigma_cycle resides in sign(n-hat); not
+%     an unconditional ontological claim; future-proofed against G6). No verdict
+%     change; no theorem-statement change.
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -85,7 +94,7 @@ and $\sgn(\delta)$ is the Time-Reversal Arrow, not a Chirality Sign\\[6pt]
 \large A Layer-2.5 Provisional Theorem --- OPEN-FP-F1-2 sub-target L4-D;\\
 advances OPEN-CHIR-MERGE MERGE-$\beta$ from M3 to M1-$\chi$}
 \author{Conscious Point Physics --- Substrate Chirality Arc}
-\date{Version 1.1 --- Patch 0649, Session 149 --- 29 May 2026 \\[2pt]\small(v1.0 Patch 0647; multi-AI review integrated at v1.1, no falsifier)}
+\date{Version 1.2 --- Patch 0651, Session 149 --- 29 May 2026 \\[2pt]\small(v1.0 Patch 0647; multi-AI review cycle CLOSED 3/3 at v1.1--v1.2, no falsifier; ChatGPT CONFIRMED)}
 
 \begin{document}
 \maketitle
@@ -127,8 +136,8 @@ does \emph{not} fix $\sgn(\delta)$ (the arrow; OPEN-CHIR-2a / F.2); does \emph{n
 $\delta$--$\varepsilon$ magnitude tie (L4-E). \textbf{The $\Te$-odd character of $\delta$ --- hence
 the verdict --- is conditional on the registered MERGE-$\alpha$ identification of $\jnet$ with the
 $\Te$-odd thermodynamic arrow} (the rate law alone does not force it; $\delta$ couples \emph{oddly}
-to $\hat{e}$, so it is flux-like, not an even static anisotropy). Multi-AI review integrated
-(ChatGPT + Grok + Copilot; v1.1, no falsifier). Verified by
+to $\hat{e}$, so it is flux-like, not an even static anisotropy). Multi-AI review cycle CLOSED 3/3, no falsifier
+(ChatGPT + Grok + Copilot; ChatGPT CONFIRMED at v1.1 re-review; v1.2 applied two wording residuals). Verified by
 \texttt{code/verify\_merge\_2\_parity\_decomposition.py}.
 \end{abstract}
 
@@ -318,9 +327,21 @@ handedness to ($\scap = \zeta\times\text{FI-C-9}$, with $\zeta$ a $\Po$-even reg
 involution). Both faces of chirality --- spatial capture ($\zeta\times\text{FI-C-9}$) and temporal
 cycle ($\sgn(\delta)\times\text{FI-C-9}$) --- are the \emph{one} primitive FI-C-9 modulated by a
 $\Po$-even factor (a geometric involution $\zeta$ / the temporal arrow $\sgn(\delta)$). The
-programme therefore carries \textbf{one} chirality (pseudoscalar) primitive, FI-C-9. This is
-\textbf{M1 at the chirality level (M1-$\chi$)}: the chirality-count half of MERGE-$\beta$ is
-resolved in the unifying (one-sign) direction.
+programme therefore carries \textbf{one currently-identified} chirality (pseudoscalar) primitive,
+FI-C-9. This is \textbf{M1 at the chirality level (M1-$\chi$)}: the chirality-count half of
+MERGE-$\beta$ is resolved in the unifying (one-sign) direction.
+
+\begin{remark}[Scope of the count claim --- per the v1.2 review residual]
+\label{rem:count-scope}
+The established statement is the precise one: \emph{all currently identified $\Po$-odd
+(pseudoscalar) content of $\scyc$ resides in $\sgn(\nhat) = \text{FI-C-9}$}, given the achirality of
+the substrate (Lemma~\ref{lem:achiral}). It is \emph{not} the stronger ontological claim ``all
+chirality is $\sgn(\nhat)$ unconditionally'': the registration of an independent
+$(\Po\text{-odd},\Te\text{-odd})$ primitive would add a chirality sign (falsifier G6), and the
+underived enantiomorph FI-C-9 is itself consumed, not derived (1d-$\beta$). ``One chirality
+primitive'' is therefore the \emph{current} count under the present registered framework, not an
+unconditional ontological assertion.
+\end{remark}
 \end{corollary}
 
 \begin{corollary}[Correction of MERGE-1's M1 route: a parity category-mismatch]
@@ -383,12 +404,20 @@ PCD-ORIENTATION-1); deriving it is the deep 1d-$\beta$ ($H_4 \to I_h$ symmetry-b
 \item \textbf{The $\delta$--$\varepsilon$ magnitude relation is untouched.} Whether $|\delta|$ ties
 to the spatial chirality magnitude $\varepsilon = |\chi| = \varphi^{-3}$ is the separate L4-E
 sub-target (couples to E21 / THEO-CHIR-CHI-1).
+\item \textbf{$\delta$'s T-character is inherited, not independently established} (the v1.2 review
+residual, stated once explicitly). This theorem does \emph{not} establish the $\Te$-oddness of
+$\delta$ from MA.1 alone; it \emph{inherits} it from MERGE-$\alpha$ through the identification of
+$\jnet$ with the $\Te$-odd thermodynamic arrow. The odd-in-$\hat{e}$ coupling
+(Lemma~\ref{lem:delta-t}) only excludes the $\Te$-even \emph{even}-anisotropy class; the decisive
+step is the MERGE-$\alpha$ arrow-identification.
 \item \textbf{Layer 2.5.} The result is a discrete-symmetry structural argument; the load-bearing
 inputs are (i) $\delta$ couples \emph{oddly} to $\hat{e}$ (flux-like, not an even static anisotropy),
 (ii) the MERGE-$\alpha$ identification of $\jnet$ with the $\Te$-odd arrow (which fixes $\delta$
 $\Te$-odd over $\Te$-even), and (iii) $\wPCD$ axial/$\Te$-odd (Lemma~\ref{lem:omega}). Multi-AI
-review integrated (Patch 0649; ChatGPT + Grok + Copilot; no falsifier --- the v1.1 calibration made
-inputs (i)/(ii) and the identification-vs-tie distinction of Corollary~\ref{cor:mismatch} explicit).
+review complete (Patches 0648--0651; ChatGPT + Grok + Copilot; \textbf{3/3, no falsifier}; ChatGPT
+CONFIRMED at v1.1 re-review --- the v1.1 calibration made inputs (i)/(ii) and the
+identification-vs-tie distinction of Corollary~\ref{cor:mismatch} explicit; v1.2 applied two
+ChatGPT wording residuals, no verdict change).
 \end{itemize}
 
 % ============================================================
