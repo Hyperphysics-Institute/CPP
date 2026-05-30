@@ -1,0 +1,492 @@
+% ============================================================
+% THEO-CHIR-TARROW-1: The Primitive/Emergent Status of the Time-Reversal
+%   Arrow sign(delta) (OPEN-CHIR-2a) — the Temporal Half of the Full
+%   Chirality Picture
+%
+% The temporal counterpart of THEO-CHIR-STATUS-1 + THEO-CHIR-STATUS-2. Where
+%   the STATUS pair placed the SPATIAL pseudoscalar sign(n-hat) = FI-C-9
+%   (P-odd / T-even) at V3 and pinned its emergence upgrade to V1, this theorem
+%   places the TEMPORAL arrow sign(delta) (P-even / T-odd, per MERGE-2) at the
+%   parallel verdict W3 and pins its upgrade to W1, by the SAME verdict
+%   structure instantiated on the time-reversal axis.
+%
+% The genuinely new content (NOT a relabeling of STATUS-1/2):
+%   (i)  the substrate GEOMETRY is purely T-even (a static lattice), so — unlike
+%        parity, where the achiral 600-cell still supplies the P-odd order
+%        parameter sign(n-hat) and the H_4 -> H_4^+ group-theory chain — time
+%        reversal admits NO finite-group breaking chain and the geometry
+%        supplies NO T-odd quantity at all;
+%   (ii) the unique T-odd object in the registered framework is the arrow
+%        sign(delta) itself (the j_net arrow, via MERGE-alpha), so fixing the
+%        arrow DIRECTION is circular => W2 excluded at axiom level => upgrade
+%        pinned to W1 (direction free = cosmological inheritance / low-entropy
+%        past — the standard thermodynamic-arrow picture);
+%   (iii) by the CPT theorem (T-violation <=> CP-violation) the temporal
+%        W2-reopener and the spatial V2-reopener (STATUS-2 1d-beta-v) are the
+%        SAME cross-sector object (the SM CP/T-violating phase, OPEN-SM-4) —
+%        so "fully deriving chirality" (P-sign AND T-arrow) is a SINGLE
+%        cross-sector target, unifying the two halves of the picture.
+%
+% OPEN-CHIR-2a (audit E2-asymmetry / E17). Layer 2.5, provisional;
+%   a classification/status theorem, not a derivation (it does NOT derive the
+%   substrate T-asymmetry mechanism and does NOT fix the arrow direction).
+%   Inherits MERGE-2's MERGE-alpha conditionality (delta is T-odd only granting
+%   the j_net-arrow identification) and the "currently-identified" hedge.
+%   Single-pass; multi-AI review is the natural next step (it answers a
+%   registered open problem and completes the chirality-status capstone).
+%
+% Patch 0658 (Session 149/150 boundary). Verified by
+%   code/verify_tarrow_1_arrow_status.py (CHECK 1 temporal verdict partition;
+%   CHECK 2 T-even geometry + axiom-level W2-exclusion + W3 placement;
+%   CHECK 3 the CPT unification of the two sign-reopeners). All pass.
+%
+% CHANGELOG
+%   v1.0 (Patch 0658, Session 149/150 boundary, 30 May 2026) — initial
+%     registration at Layer 2.5 (provisional): the temporal verdict structure
+%     {W1,W2,W3} (the STATUS-1 partition instantiated on the T axis); the
+%     T-even-geometry lemma + the no-finite-group-chain disanalogy; current-rigor
+%     placement W3; axiom-level W2-exclusion (the arrow is the unique T-odd
+%     object) pinning the upgrade to W1; the CPT unification of the spatial
+%     V2-reopener and the temporal W2-reopener (single cross-sector target).
+%     Single-pass; multi-AI review pending.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\sgn}{\operatorname{sign}}
+\newcommand{\Po}{\mathsf{P}}
+\newcommand{\Te}{\mathsf{T}}
+\newcommand{\CP}{\mathsf{CP}}
+\newcommand{\CPT}{\mathsf{CPT}}
+\newcommand{\Hf}{H_4}
+\newcommand{\Hfp}{H_4^{+}}
+\newcommand{\Ztwo}{\mathbb{Z}_2}
+\newcommand{\jnet}{\vec{\jmath}_{\text{net}}}
+\newcommand{\scyc}{\sigma_{\text{cycle}}}
+\newcommand{\wPCD}{\vec{\omega}_{\text{PCD}}}
+
+\title{\textbf{THEO-CHIR-TARROW-1}\\[4pt]
+The Primitive/Emergent Status of the Time-Reversal Arrow $\sgn(\delta)$\\
+(OPEN-CHIR-2a) --- the Temporal Half of the Full Chirality Picture\\[6pt]
+\large A Layer-2.5 Provisional Status/Classification Theorem\\
+The temporal counterpart of THEO-CHIR-STATUS-1 $+$ STATUS-2}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0658, Session 149/150 --- 30 May 2026 \\[2pt]\small(single-pass; multi-AI review pending)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+THEO-CHIR-MERGE-2 (cycle closed 3/3, conditional on MERGE-$\alpha$) decomposed the cycle
+handedness $\scyc = \sgn(\delta)\cdot\sgn(\nhat)$ by symmetry character: its entire $\Po$-odd
+(pseudoscalar / chirality) content is $\sgn(\nhat) = \text{FI-C-9}$ (the spatial primitive,
+$\Po$-odd/$\Te$-even), and its entire $\Po$-even/$\Te$-odd (arrow) content is $\sgn(\delta)$. The
+STATUS pair (STATUS-1 verdict structure; STATUS-2 breaking chain) then settled the \emph{spatial}
+half --- FI-C-9 is V3 at current rigor, upgrade pinned to V1. This theorem settles the
+\emph{temporal} half, the time-reversal arrow $\sgn(\delta)$ (OPEN-CHIR-2a), at comparable rigor.
+We instantiate the STATUS-1 partition on the time-reversal axis --- \emph{capacity} $\mathcal{C}_\Te$
+(is a substrate $\Te$-asymmetry mechanism derivable?), \emph{value} $\mathcal{V}_\Te$ (is the arrow
+\emph{direction} fixed?) --- yielding three verdicts \textbf{W3} (irreducible primitive arrow),
+\textbf{W1} (emergent mechanism, contingent direction), \textbf{W2} (fully emergent), exhaustively
+partitioning $\mathcal{C}_\Te\times\mathcal{V}_\Te$ (Thm~\ref{thm:partition}). The new structural
+content is a \emph{disanalogy} with parity. \textbf{(i)} The substrate geometry is purely
+$\Te$-even (a static lattice; every static-geometric invariant --- coordinates, Gram data, distance
+spectrum, the orientation pseudoscalar $\sgn(\nhat)$ --- is $\Te$-even), so time reversal admits
+\emph{no finite-group breaking chain} (the analog of $\Hf\to\Hfp$ does not exist) and the geometry
+supplies \emph{no} $\Te$-odd quantity at all (Lemma~\ref{lem:teven}). \textbf{(ii)} The \emph{unique}
+$\Te$-odd object in the registered framework is the arrow $\sgn(\delta)$ itself (the $\jnet$ arrow,
+via MERGE-$\alpha$); fixing the direction therefore requires $\sgn(\delta)$ to fix itself ---
+circular --- so $\mathcal{V}_\Te\ne\textsf{derived}$ at the axiom level: \textbf{W2 is excluded at
+the axiom level, and the upgrade is pinned to W1} (Thm~\ref{thm:w2excluded}), with the natural
+$\mathcal{V}_\Te=\textsf{free}$ subtype being \emph{cosmological inheritance} (a low-entropy boundary
+state) --- exactly the standard thermodynamic-arrow picture. \textbf{(iii)} By the $\CPT$ theorem
+($\Te$-violation $\Leftrightarrow$ $\CP$-violation) the temporal W2-reopener and the spatial
+V2-reopener (STATUS-2's 1d-$\beta$-v) are the \emph{same} cross-sector object --- the Standard-Model
+$\CP/\Te$-violating phase (OPEN-SM-4) --- so \emph{fully deriving chirality} (the $\Po$-sign and the
+$\Te$-arrow) is a \textbf{single} cross-sector target (Thm~\ref{thm:cpt}). At current rigor the
+$\Te$-asymmetry mechanism is not derived (DSL-3 narrates the arrow but inherits the DSL viability
+ceiling; the physicalization is gated on F.2), so $\mathcal{C}_\Te=\textsf{No}$ and the placement is
+\textbf{W3}. \textbf{Full chirality status (STATUS-1 $\wedge$ STATUS-2 $\wedge$ this):} chirality is
+emergent down to one $\Po$-odd primitive (FI-C-9, V3, upgrade $\to$V1) $+$ one $\Te$-odd arrow
+($\sgn(\delta)$, W3, upgrade $\to$W1); neither sign is derivable at the axiom level (each is the
+unique object of its symmetry character), and both reopen to full derivation only through the single
+$\CPT$-linked SM $\CP/\Te$ phase. Layer 2.5, provisional; a classification result, not a derivation.
+Verified by \texttt{code/verify\_tarrow\_1\_arrow\_status.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: the arrow that MERGE-2 isolated}
+\label{sec:setup}
+% ============================================================
+
+THEO-CHIR-MERGE-2 carried out a $(\Po,\Te)$ decomposition of the temporal cycle handedness:
+\begin{equation}
+\label{eq:decomp}
+\scyc = \underbrace{\sgn(\nhat)}_{\Po\text{-odd},\ \Te\text{-even}} \cdot
+        \underbrace{\sgn(\delta)}_{\Po\text{-even},\ \Te\text{-odd}},
+\qquad \wPCD = \scyc\,\nhat \ \ (\Po\text{-odd},\ \Te\text{-odd}).
+\end{equation}
+The pseudoscalar (chirality) content of $\scyc$ is \emph{entirely} $\sgn(\nhat)=\text{FI-C-9}$; the
+time-reversal (arrow) content is \emph{entirely} $\sgn(\delta)$. The spatial primitive FI-C-9 was the
+subject of THEO-CHIR-STATUS-1 (verdict structure, placement V3) and STATUS-2 (breaking chain,
+axiom-level V2-exclusion, V1-pinning). The \emph{arrow} $\sgn(\delta)$ --- whether it is primitive or
+emergent --- is the parallel open problem OPEN-CHIR-2a (audit E2-asymmetry / E17). This theorem is its
+status capstone, at the rigor of the STATUS pair.
+
+\begin{remark}[Why one theorem, not two]
+\label{rem:onetheorem}
+The spatial half needed two artifacts: STATUS-1 (the generic verdict partition) and STATUS-2 (the
+$\Hf\to\Hfp$ group theory). For the temporal half the partition is \emph{inherited} (STATUS-1's
+partition is generic to any capacity/value emergence question; §\ref{sec:verdicts} instantiates it),
+and the ``breaking chain'' \emph{has no nontrivial finite-group analog} (Lemma~\ref{lem:teven}: time
+reversal is not a point-group element and the geometry is $\Te$-even). So the temporal structural
+content is lighter and is consolidated here.
+\end{remark}
+
+\begin{remark}[Inherited conditionality and the F.2 gate]
+\label{rem:conditional}
+The $\Te$-odd character of $\delta$ --- hence everything below --- is \emph{conditional on
+MERGE-$\alpha$}, the registered identification of the substrate current $\jnet$ with the $\Te$-odd
+thermodynamic arrow (the rate law alone does not force it; $\delta$ couples \emph{oddly} to $\hat e$,
+flux-like, MERGE-2 CHECK 3). MERGE-1 further records that at Layer 3 the two sign choices in
+$\wPCD=\sigma\,\nhat$ are $\Te$-reversal-symmetric \emph{framings}; the arrow becomes physical only
+through the F.2 substrate-Wigner--Eckart coupling. Thus OPEN-CHIR-2a $\Leftrightarrow$
+MERGE-$\beta$-physical, and the \emph{capacity} upgrade for the arrow is gated on F.2 just as the
+spatial capacity upgrade is gated on the chiral-vacuum mechanism 1d-$\beta$-ii.
+\end{remark}
+
+% ============================================================
+\section{The temporal verdict structure}
+\label{sec:verdicts}
+% ============================================================
+
+We instantiate the STATUS-1 emergence decomposition on the time-reversal axis.
+
+\begin{definition}[The two temporal emergence axes]
+\label{def:axes}
+\textbf{Capacity} $\mathcal{C}_\Te\in\{\textsf{No},\textsf{Yes}\}$: is there a \emph{derivable
+substrate mechanism} that produces a time-reversal-asymmetric dynamics --- an arrow of time at all
+(a nonzero $\jnet$ with a definite progression sense)? \textbf{Value} $\mathcal{V}_\Te\in
+\{\textsf{derived},\textsf{spontaneous},\textsf{free}\}$: \emph{given} a $\Te$-asymmetric dynamics, is
+the specific arrow \emph{direction} $\sgn(\delta)$ fixed by a derivable $\Te$-odd asymmetry
+(\textsf{derived}), selected contingently by the realized dynamics (\textsf{spontaneous}), or an
+unconstrained boundary datum (\textsf{free})? The \textsf{free} case \emph{includes} \emph{cosmological
+inheritance} --- the arrow direction fixed by a low-entropy initial/boundary state of the universe,
+external to the substrate dynamics (the standard thermodynamic-arrow picture); from CPP's standpoint
+such an inheritance carries no internal mechanism, placing $\mathcal{C}_\Te=\textsf{No}$, verdict W3,
+exactly as a free boundary datum.
+\end{definition}
+
+\begin{definition}[The three temporal verdicts]
+\label{def:verdicts}
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{W3 (irreducible primitive arrow):} $\mathcal{C}_\Te=\textsf{No}$. No mechanism produces
+a $\Te$-asymmetry; $\sgn(\delta)$ is a frozen boundary datum --- a genuine arrow primitive.
+\item \textbf{W1 (emergent mechanism, contingent direction):} $\mathcal{C}_\Te=\textsf{Yes}$ and
+$\mathcal{V}_\Te\in\{\textsf{spontaneous},\textsf{free}\}$. The arrow-\emph{as-a-phenomenon} is derived;
+its direction is contingent/inherited. The physically standard sense in which a thermodynamic arrow
+``emerges.''
+\item \textbf{W2 (fully emergent):} $\mathcal{C}_\Te=\textsf{Yes}$ and $\mathcal{V}_\Te=
+\textsf{derived}$. Both the mechanism and the specific direction are derived.
+\end{itemize}
+\end{definition}
+
+\begin{theorem}[Exhaustive partition --- temporal instantiation]
+\label{thm:partition}
+$\{$W1, W2, W3$\}$ partition $\mathcal{C}_\Te\times\mathcal{V}_\Te$ exhaustively and mutually
+exclusively, by the same map as STATUS-1:
+\[
+\text{W3}\Leftrightarrow\mathcal{C}_\Te=\textsf{No};\quad
+\text{W2}\Leftrightarrow\mathcal{C}_\Te=\textsf{Yes}\wedge\mathcal{V}_\Te=\textsf{derived};\quad
+\text{W1}\Leftrightarrow\mathcal{C}_\Te=\textsf{Yes}\wedge\mathcal{V}_\Te\in\{\textsf{spontaneous},\textsf{free}\}.
+\]
+\end{theorem}
+
+\begin{proof}
+Identical in structure to STATUS-1's partition: six cells; the three $\mathcal{C}_\Te=\textsf{No}$
+cells collapse to W3 (no arrow, so no direction to assign); the three $\mathcal{C}_\Te=\textsf{Yes}$
+cells split by $\mathcal{V}_\Te$ (\textsf{derived}$\to$W2; \textsf{spontaneous},\textsf{free}$\to$W1).
+Every cell maps to exactly one verdict; all three are realized and mutually exclusive (distinct
+$\mathcal{C}_\Te$ for W3 vs $\{$W1,W2$\}$; distinct $\mathcal{V}_\Te$ for W1 vs W2). Machine-checked,
+\texttt{verify\_tarrow\_1\_arrow\_status.py} CHECK 1.
+\end{proof}
+
+% ============================================================
+\section{The disanalogy with parity: a $\Te$-even geometry, no breaking chain}
+\label{sec:disanalogy}
+% ============================================================
+
+STATUS-2 found a rich breaking chain for parity: the achiral 600-cell isometry group $\Hf$ breaks to
+its rotation subgroup $\Hfp$ (index 2, quotient $\Ztwo$), with the det-pseudoscalar $\sgn(\nhat)$ as
+order parameter. The temporal case is structurally \emph{lighter}, and the reason is itself the result.
+
+\begin{lemma}[The substrate geometry is $\Te$-even; no $\Te$-odd geometric quantity exists]
+\label{lem:teven}
+Time reversal $\Te$ acts on the substrate \emph{dynamical} variables (the current $\jnet$, the cycle
+progression $\wPCD$, the rate-asymmetry $\delta$), not on the static lattice. Every static-geometric
+invariant of the 600-cell --- vertex coordinates, the Gram matrix $G_{ij}=v_i\!\cdot\!v_j$, the
+unsigned and \emph{signed} volumes, the full distance spectrum, and the orientation pseudoscalar
+$\sgn(\nhat)=\text{FI-C-9}$ --- is $\Te$-even. Consequently the substrate geometry supplies \emph{no}
+$\Te$-odd quantity, and time reversal admits \emph{no} finite-group breaking chain analogous to
+$\Hf\to\Hfp$.
+\end{lemma}
+
+\begin{proof}
+The 600-cell is a fixed (time-independent) configuration; its coordinates and all functions thereof
+(Gram, distances, signed/unsigned volumes, the det-orientation) are unchanged when the direction of
+time is reversed --- they carry no time index --- hence $\Te$-even. (This is the $\Te$-character row
+of the MERGE-2 table: $\sgn(\nhat)$ is $\Po$-odd but $\Te$-\emph{even}; machine-checked,
+\texttt{verify\_tarrow\_1\_arrow\_status.py} CHECK 2a.) For the no-chain claim: a finite-group
+breaking chain (as in STATUS-2) requires the broken symmetry to be a \emph{point-group} element
+acting on the geometry; $\Te$ is an antiunitary operation on the dynamics, not a point-group element,
+and the geometry it would act on is $\Te$-invariant. So there is no index-2 spatial-symmetry quotient
+to break: the ``$\Te$-breaking'' is the \emph{dynamical onset of a nonzero arrow}, not a geometric
+symmetry reduction.
+\end{proof}
+
+\begin{remark}[The sharp contrast]
+\label{rem:contrast}
+For parity, the achiral geometry still hosts a $\Po$-odd order parameter ($\sgn(\nhat)$): a candidate
+chirality \emph{exists} in the framework, and the question is whether the dynamics select it. For time
+reversal there is \emph{no} $\Te$-odd geometric candidate at all; the only $\Te$-odd object in the
+entire registered framework is the dynamical arrow itself (§\ref{sec:placement}). This is why the
+temporal status is even more tightly constrained than the spatial one.
+\end{remark}
+
+% ============================================================
+\section{Current-rigor placement (W3) and the axiom-level W2-exclusion}
+\label{sec:placement}
+% ============================================================
+
+\begin{theorem}[Current-rigor status is W3]
+\label{thm:placement}
+Under the present registered framework, $\mathcal{C}_\Te=\textsf{No}$ (no $\Te$-asymmetry mechanism is
+derived), so the current-rigor verdict is \textbf{W3}: $\sgn(\delta)$ is the one currently-identified
+irreducible $\Te$-arrow primitive.
+\end{theorem}
+
+\begin{proof}
+$\mathcal{C}_\Te=\textsf{Yes}$ only if a derivable substrate mechanism producing a $\Te$-asymmetric
+dynamics is registered. The record establishes the contrary at present:
+\begin{enumerate}[label=(Q\arabic*),leftmargin=2.4em]
+\item (MERGE-2, conditional on MERGE-$\alpha$) the $\Te$-odd content of $\scyc$ is exactly the single
+object $\sgn(\delta)$ --- the question is well-posed about one arrow.
+\item (Lemma~\ref{lem:teven}) the geometry is $\Te$-even: no $\Te$-asymmetry from geometry; any arrow
+requires a \emph{dynamical} onset, not mere structure.
+\item (MERGE-1 / MERGE-$\alpha$) THEO-DSL-3 \emph{narrates} the arrow (substrate current $\parallel\nhat$
+$\to$ capture-phase bias $\to\wPCD\to$ macroscopic arrow) but does \emph{not derive} its emergence ---
+it inherits the DSL viability ceiling (entropy/irreversibility not derived; F.1 §14.17).
+\item (F.2 open) the physicalization that would make $\sigma$ (hence the arrow) physical --- the
+substrate-Wigner--Eckart coupling --- is unbuilt.
+\end{enumerate}
+By (Q2)+(Q3)+(Q4) no mechanism is established, so $\mathcal{C}_\Te=\textsf{No}$; by
+Theorem~\ref{thm:partition} the verdict is W3.
+\end{proof}
+
+\begin{remark}[W3 means ``not yet derived,'' not ``underivable'']
+\label{rem:floor}
+As with STATUS-1's V3, W3 is a statement about the present registered framework, not an ontological
+claim: $\mathcal{C}_\Te=\textsf{No}$ reads ``no mechanism is \emph{yet} derived.'' W3 is the honest
+floor, explicitly upgradeable (§\ref{sec:upgrade}).
+\end{remark}
+
+\begin{lemma}[Only a $\Te$-odd quantity distinguishes the two arrows]
+\label{lem:todd}
+A quantity $Q$ can take different values on the two time-orientations (forward/backward arrow) only if
+$Q$ is $\Te$-odd. Every $\Te$-even quantity is invariant under $\Te$ and so agrees on both.
+\end{lemma}
+
+\begin{proof}
+The two arrows are $\Te$-images of each other. A $\Te$-even quantity is by definition $\Te$-invariant,
+so it agrees on the two and cannot distinguish them; only a $\Te$-odd quantity flips under $\Te$ and so
+can carry the distinguishing sign. (Direct parallel of STATUS-2's pseudoscalar lemma, with $\Te$ in
+place of $\Po$.)
+\end{proof}
+
+\begin{theorem}[Axiom-level W2-exclusion; the upgrade is pinned to W1]
+\label{thm:w2excluded}
+No quantity available at the level of the registered axiom set can \emph{explicitly} fix the arrow
+direction $\sgn(\delta)$. Hence $\mathcal{V}_\Te\ne\textsf{derived}$ at the axiom level: \textbf{W2 is
+excluded at the axiom level} (more precisely, by the presently registered inventory), and should the
+capacity axis upgrade to $\textsf{Yes}$, the verdict is \textbf{W1} (emergent mechanism, contingent /
+inherited direction).
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:todd}, fixing $\sgn(\delta)$ requires a $\Te$-odd quantity to couple to it. By
+Lemma~\ref{lem:teven} the geometry supplies none, and by MERGE-2 (conditional on MERGE-$\alpha$) the
+\emph{only} $\Te$-odd object in the registered framework is the arrow $\sgn(\delta)$ itself (the
+$\jnet$ arrow; $\wPCD$ is not independent of it --- $\wPCD=\scyc\,\nhat$ and the $\Te$-odd part of
+$\scyc$ is exactly $\sgn(\delta)$). The only available $\Te$-odd sign-fixer is therefore
+$\sgn(\delta)$ --- circular, not a derivation. So the direction cannot be explicitly derived at the
+axiom level; by Theorem~\ref{thm:partition}, $\mathcal{V}_\Te\in\{\textsf{spontaneous},\textsf{free}\}$
+at axiom level, so the $\mathcal{C}_\Te=\textsf{Yes}$ outcome is W1. (Machine-checked,
+\texttt{verify\_tarrow\_1\_arrow\_status.py} CHECK 2b/2c.)
+\end{proof}
+
+\begin{remark}[The natural value is \textsf{free} = cosmological inheritance]
+\label{rem:cosmo}
+This is precisely the standard arrow-of-time picture: the microscopic substrate law may be
+$\Te$-symmetric (or $\CPT$-symmetric), and the \emph{direction} of the macroscopic arrow is set by a
+low-entropy boundary condition (the cosmological initial state), not by the dynamics. In the STATUS-1
+taxonomy that is $\mathcal{V}_\Te=\textsf{free}$ (cosmological-inheritance subtype) $\to$ W1 once a
+mechanism is derived (and W3 at current rigor, the mechanism being undrived).
+\end{remark}
+
+% ============================================================
+\section{The upgrade, and the $\CPT$ unification of the two reopeners}
+\label{sec:upgrade}
+% ============================================================
+
+\begin{corollary}[The W1 upgrade condition]
+\label{cor:upgrade}
+The verdict upgrades W3 $\to$ W1 \emph{iff} a substrate mechanism producing a $\Te$-asymmetric
+dynamics is derived ($\mathcal{C}_\Te:\textsf{No}\to\textsf{Yes}$) --- the F.2 physicalization of
+$\sigma$ together with the DSL arrow-emergence (the temporal counterpart of the spatial engine
+1d-$\beta$-ii). W2 additionally requires an axiom-external $\Te$-odd sign-fixer
+(Thm~\ref{thm:w2excluded}).
+\end{corollary}
+
+\begin{proof}
+Immediate from Theorems~\ref{thm:partition} and~\ref{thm:w2excluded}: flipping $\mathcal{C}_\Te$ to
+\textsf{Yes} with $\mathcal{V}_\Te\in\{\textsf{spontaneous},\textsf{free}\}$ gives W1; reaching W2
+needs $\mathcal{V}_\Te=\textsf{derived}$, excluded at axiom level.
+\end{proof}
+
+\begin{theorem}[$\CPT$ unification: one cross-sector reopener for both signs]
+\label{thm:cpt}
+The temporal W2-reopener (an axiom-external $\Te$-odd quantity fixing $\sgn(\delta)$) and the spatial
+V2-reopener of STATUS-2 (an axiom-external $\Po$-odd pseudoscalar fixing $\sgn(\nhat)$, sub-target
+1d-$\beta$-v) are, under the $\CPT$ theorem, the \emph{same} cross-sector object: a Standard-Model
+$\CP$-violating phase (equivalently $\Te$-violating; OPEN-SM-4). Consequently \emph{fully deriving
+chirality} --- explicitly fixing both the $\Po$-sign FI-C-9 and the $\Te$-arrow $\sgn(\delta)$ --- is
+a \textbf{single} cross-sector target, not two.
+\end{theorem}
+
+\begin{proof}
+STATUS-2 (Rem.\ ``the reopening'') identifies the only V2-reopener as an axiom-external pseudoscalar,
+the natural candidate being the SM $\CP$-violating phase (1d-$\beta$-v, OPEN-SM-4). By
+Theorem~\ref{thm:w2excluded} the only W2-reopener is an axiom-external $\Te$-odd quantity. In a
+$\CPT$-invariant theory, $\Te$-violation $\Leftrightarrow$ $\CP$-violation; the registered cross-sector
+$\CP$-violating object is the same SM phase. The spatial side consumes it as the $\Po$-odd ($\CP$)
+pseudoscalar; the temporal side consumes it as its $\Te$-violating partner --- one object. Hence a
+single derivation (the SM $\CP/\Te$ phase from CPP) would simultaneously supply the V2 and W2
+sign-fixers. (Machine-checked as a linkage table, \texttt{verify\_tarrow\_1\_arrow\_status.py}
+CHECK 3.)
+\end{proof}
+
+\begin{remark}[The full chirality status, assembled]
+\label{rem:assembled}
+Combining STATUS-1 $\wedge$ STATUS-2 $\wedge$ this theorem:
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{Spatial pseudoscalar} $\sgn(\nhat)=\text{FI-C-9}$ ($\Po$-odd/$\Te$-even): \textbf{V3} at
+current rigor; upgrade pinned to \textbf{V1}; V2 reopened only by the SM $\CP$ phase (1d-$\beta$-v).
+\item \textbf{Temporal arrow} $\sgn(\delta)$ ($\Po$-even/$\Te$-odd): \textbf{W3} at current rigor;
+upgrade pinned to \textbf{W1} (direction \textsf{free} = cosmological inheritance); W2 reopened only by
+the SM $\Te$-violation $=$ ($\CPT$) the same SM $\CP$ phase.
+\item \textbf{Unification:} a single $\CPT$-linked cross-sector object (the SM $\CP/\Te$ phase,
+OPEN-SM-4) is the sole route to fully deriving \emph{either} sign --- so the two halves of the
+chirality picture close on one target.
+\end{itemize}
+\textbf{Honest one-line status:} chirality in CPP is emergent down to one $\Po$-odd primitive (FI-C-9,
+V3$\to$V1) plus one $\Te$-odd arrow ($\sgn(\delta)$, W3$\to$W1); each is the unique object of its
+symmetry character (so non-derivable at axiom level), and both upgrade to full derivation only through
+a single cross-sector $\CPT$-linked SM $\CP/\Te$ phase.
+\end{remark}
+
+% ============================================================
+\section{What is and is not established}
+\label{sec:caps}
+% ============================================================
+
+\textbf{Established (Layer 2.5, provisional).} The temporal verdict space $\{$W1,W2,W3$\}$ is
+well-defined and exhaustive (Thm~\ref{thm:partition}); the geometry is $\Te$-even with no finite-group
+breaking chain (Lem~\ref{lem:teven}); the current-rigor status of the $\Te$-arrow $\sgn(\delta)$ is
+\textbf{W3} (Thm~\ref{thm:placement}); W2 is excluded at the axiom level and the upgrade is pinned to
+\textbf{W1} (Thm~\ref{thm:w2excluded}); the temporal W2-reopener and the spatial V2-reopener are the
+same $\CPT$-linked SM $\CP/\Te$ phase (Thm~\ref{thm:cpt}). This completes the chirality-status capstone
+on the temporal side.
+
+\textbf{Not established (honest caps).}
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{Classification/status result, not a derivation.} It does not derive the substrate
+$\Te$-asymmetry mechanism and does not fix the arrow direction; $\sgn(\delta)$ is not derived.
+\item \textbf{W3 is current-rigor, not ontological} (Rem~\ref{rem:floor}): ``not yet derived.''
+\item \textbf{Inherits MERGE-2's conditionality} (Rem~\ref{rem:conditional}): $\delta$ is $\Te$-odd
+only granting MERGE-$\alpha$ (the $\jnet$-arrow identification); ``currently-identified'' per the
+MERGE-2 G6 hedge (an independent $(\Po\text{-even},\Te\text{-odd})$ arrow primitive would add to the
+count).
+\item \textbf{The capacity engine is deep and gated.} The W1 upgrade needs the F.2 physicalization
+$+$ the DSL arrow-emergence (the temporal counterpart of 1d-$\beta$-ii); both are deferred behind the
+DSL viability ceiling (F.1 §14.17).
+\item \textbf{$\CPT$-invariance is assumed} (Thm~\ref{thm:cpt}): the $\Te$-violation $\Leftrightarrow$
+$\CP$-violation equivalence presumes a $\CPT$-invariant substrate; if CPP's substrate is shown
+$\CPT$-violating, the two reopeners need not coincide (falsifier T5).
+\end{itemize}
+
+% ============================================================
+\section{Falsifiers}
+\label{sec:falsifiers}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{(T1)} MERGE-$\alpha$ fails / $\delta$ is shown $\Te$-even (MERGE-2 G2) --- $\sgn(\delta)$
+is then not the $\Te$-arrow content and the whole framing changes.
+\item \textbf{(T2)} a $\Te$-odd \emph{geometric} (static) quantity is exhibited --- breaks
+Lemma~\ref{lem:teven} (would contradict the time-independence of the lattice).
+\item \textbf{(T3)} a substrate mechanism deriving a $\Te$-asymmetric dynamics is registered (the F.2
+$+$ DSL arrow-emergence engine) --- $\mathcal{C}_\Te\to\textsf{Yes}$; \emph{upgrades W3 $\to$ W1} (the
+intended payoff, not a refutation).
+\item \textbf{(T4)} an axiom-external $\Te$-odd sign-fixer appears ($\mathcal{V}_\Te=\textsf{derived}$)
+--- upgrades to W2 (Rem~\ref{rem:cosmo}; Thm~\ref{thm:cpt} predicts it is the SM $\CP/\Te$ phase).
+\item \textbf{(T5)} the substrate is shown $\CPT$-violating --- breaks Theorem~\ref{thm:cpt}'s
+identification of the two reopeners (they need no longer coincide).
+\item \textbf{(T6)} the verdict space is shown non-exhaustive (a fourth temporal outcome) --- restate
+Def~\ref{def:verdicts} / Thm~\ref{thm:partition}.
+\end{itemize}
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item THEO-CHIR-MERGE-2 (Patches 0647--0651) --- the $(\Po,\Te)$ decomposition
+$\scyc=\sgn(\delta)\sgn(\nhat)$; $\sgn(\delta)$ the $\Te$-arrow ($\Po$-even/$\Te$-odd, conditional on
+MERGE-$\alpha$); the ``currently-identified'' G6 hedge.
+\item THEO-CHIR-MERGE-1 (Patch 0644) --- MERGE-$\alpha$ ($\scyc$ $=$ the DSL-3 arrow); OPEN-CHIR-2a
+$\Leftrightarrow$ MERGE-$\beta$-physical; the F.2 gate.
+\item THEO-CHIR-STATUS-1 (Patch 0653) --- the generic verdict partition $\{$V1,V2,V3$\}$, instantiated
+here on the temporal axis as $\{$W1,W2,W3$\}$; the cosmological-inheritance subtype.
+\item THEO-CHIR-STATUS-2 (Patch 0654) --- the spatial $\Hf\to\Hfp$ chain, the pseudoscalar lemma, the
+axiom-level V2-exclusion and 1d-$\beta$-v reopener (the spatial template this theorem parallels).
+\item THEO-DSL-3 --- the substrate thermodynamic causal arrow (narrated, not derived; the capacity
+engine's home).
+\item F.1 §14.17 viability ceiling; OPEN-SM-4 ($\Leftrightarrow$ 1d-$\beta$-v) --- the home of the
+deep capacity engine and the single $\CPT$-linked sign-reopener.
+\item \texttt{code/verify\_tarrow\_1\_arrow\_status.py} --- CHECK 1 (temporal verdict partition),
+CHECK 2 ($\Te$-even geometry $+$ W2-exclusion $+$ W3 placement), CHECK 3 ($\CPT$ unification).
+\end{itemize}
+
+\end{document}
