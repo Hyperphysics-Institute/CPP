@@ -49,6 +49,21 @@
 %     object) pinning the upgrade to W1; the CPT unification of the spatial
 %     V2-reopener and the temporal W2-reopener (single cross-sector target).
 %     Single-pass; multi-AI review pending.
+%   v1.1 (Patch 0661, Session 150, 30 May 2026) — multi-AI review cycle CLOSED
+%     3/3, no falsifier (ChatGPT + Grok + Copilot all CONFIRMED at Layer-2.5; no
+%     verdict-flip on Q4 or Q1). Grok SCRIPT-EXECUTED §7 (CHECK 1/2/3 pass) and
+%     INDEPENDENTLY RECOMPUTED the (P,T) table from first principles; Copilot +
+%     ChatGPT INSPECTED/RECOMPUTED. CALIBRATION (no verdict change, no
+%     theorem-statement change): (A) the bare "T-violation <=> CP-violation"
+%     phrasing is sharpened to the sector-paired conditional — under assumed CPT
+%     the T-violating and CP-violating SIGN-FIXERS are paired in the
+%     corresponding physical sector (NOT: every abstract T-odd CPP quantity is
+%     the SM CP phase) — ChatGPT Q4b + Copilot convergent; (B) a new explicit
+%     CPT-logic Remark makes the 4b reasoning visible to non-field-theory
+%     readers (Copilot); (C) the T-even-geometry lemma's invariant set is given
+%     as an explicit enumerated list (Copilot). Verdict unchanged (W3 at current
+%     rigor; upgrade pinned to W1; W2 axiom-level excluded; single CPT-linked
+%     reopener). Reviews + synthesis + triage: review/reviews-CHIR-TARROW.md.
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -89,7 +104,7 @@ The Primitive/Emergent Status of the Time-Reversal Arrow $\sgn(\delta)$\\
 \large A Layer-2.5 Provisional Status/Classification Theorem\\
 The temporal counterpart of THEO-CHIR-STATUS-1 $+$ STATUS-2}
 \author{Conscious Point Physics --- Substrate Chirality Arc}
-\date{Version 1.0 --- Patch 0658, Session 149/150 --- 30 May 2026 \\[2pt]\small(single-pass; multi-AI review pending)}
+\date{Version 1.1 --- Patch 0661, Session 150 --- 30 May 2026 \\[2pt]\small(v1.0 Patch 0658; multi-AI review cycle CLOSED 3/3 at v1.1, no falsifier; all CONFIRMED)}
 
 \begin{document}
 \maketitle
@@ -118,8 +133,9 @@ via MERGE-$\alpha$); fixing the direction therefore requires $\sgn(\delta)$ to f
 circular --- so $\mathcal{V}_\Te\ne\textsf{derived}$ at the axiom level: \textbf{W2 is excluded at
 the axiom level, and the upgrade is pinned to W1} (Thm~\ref{thm:w2excluded}), with the natural
 $\mathcal{V}_\Te=\textsf{free}$ subtype being \emph{cosmological inheritance} (a low-entropy boundary
-state) --- exactly the standard thermodynamic-arrow picture. \textbf{(iii)} By the $\CPT$ theorem
-($\Te$-violation $\Leftrightarrow$ $\CP$-violation) the temporal W2-reopener and the spatial
+state) --- exactly the standard thermodynamic-arrow picture. \textbf{(iii)} Under assumed $\CPT$
+(in a $\CPT$-invariant theory a $\Te$-violating and a $\CP$-violating sign-fixer are paired in the
+corresponding physical sector) the temporal W2-reopener and the spatial
 V2-reopener (STATUS-2's 1d-$\beta$-v) are the \emph{same} cross-sector object --- the Standard-Model
 $\CP/\Te$-violating phase (OPEN-SM-4) --- so \emph{fully deriving chirality} (the $\Po$-sign and the
 $\Te$-arrow) is a \textbf{single} cross-sector target (Thm~\ref{thm:cpt}). At current rigor the
@@ -244,12 +260,19 @@ order parameter. The temporal case is structurally \emph{lighter}, and the reaso
 \begin{lemma}[The substrate geometry is $\Te$-even; no $\Te$-odd geometric quantity exists]
 \label{lem:teven}
 Time reversal $\Te$ acts on the substrate \emph{dynamical} variables (the current $\jnet$, the cycle
-progression $\wPCD$, the rate-asymmetry $\delta$), not on the static lattice. Every static-geometric
-invariant of the 600-cell --- vertex coordinates, the Gram matrix $G_{ij}=v_i\!\cdot\!v_j$, the
-unsigned and \emph{signed} volumes, the full distance spectrum, and the orientation pseudoscalar
-$\sgn(\nhat)=\text{FI-C-9}$ --- is $\Te$-even. Consequently the substrate geometry supplies \emph{no}
-$\Te$-odd quantity, and time reversal admits \emph{no} finite-group breaking chain analogous to
-$\Hf\to\Hfp$.
+progression $\wPCD$, the rate-asymmetry $\delta$), not on the static lattice. The full set of
+static-geometric invariants of the 600-cell is, with $(\Po,\Te)$ character:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em]
+\item vertex coordinates $\{v_i\}$ --- $(\Po\text{-frame-dependent},\,\Te\text{-even})$;
+\item the Gram matrix $G_{ij}=v_i\!\cdot\!v_j$ --- $(\Po\text{-even},\,\Te\text{-even})$;
+\item the full pairwise-distance spectrum --- $(\Po\text{-even},\,\Te\text{-even})$;
+\item the unsigned volumes --- $(\Po\text{-even},\,\Te\text{-even})$;
+\item the signed $4$-volume $\det[v_1;v_2;v_3;v_4]$ --- $(\Po\text{-odd},\,\Te\text{-even})$;
+\item the orientation pseudoscalar $\sgn(\nhat)=\text{FI-C-9}$ --- $(\Po\text{-odd},\,\Te\text{-even})$.
+\end{enumerate}
+\emph{Every} entry is $\Te$-even (the $\Te$ column is uniformly even, including the two $\Po$-odd
+entries (v),(vi)). Consequently the substrate geometry supplies \emph{no} $\Te$-odd quantity, and time
+reversal admits \emph{no} finite-group breaking chain analogous to $\Hf\to\Hfp$.
 \end{lemma}
 
 \begin{proof}
@@ -387,14 +410,32 @@ a \textbf{single} cross-sector target, not two.
 \begin{proof}
 STATUS-2 (Rem.\ ``the reopening'') identifies the only V2-reopener as an axiom-external pseudoscalar,
 the natural candidate being the SM $\CP$-violating phase (1d-$\beta$-v, OPEN-SM-4). By
-Theorem~\ref{thm:w2excluded} the only W2-reopener is an axiom-external $\Te$-odd quantity. In a
-$\CPT$-invariant theory, $\Te$-violation $\Leftrightarrow$ $\CP$-violation; the registered cross-sector
-$\CP$-violating object is the same SM phase. The spatial side consumes it as the $\Po$-odd ($\CP$)
+Theorem~\ref{thm:w2excluded} the only W2-reopener is an axiom-external $\Te$-odd quantity. Under
+assumed $\CPT$, a $\Te$-violating sign-fixer and a $\CP$-violating sign-fixer are \emph{paired in the
+corresponding physical sector} (a genuine $\Te$-violating observable forces $\CP$-violation in that
+sector, and conversely) --- so the cross-sector $\Te$-odd fixer the temporal side needs and the
+cross-sector $\CP$-odd fixer the spatial side needs are realized by one and the same registered
+object, the SM $\CP/\Te$-violating phase. The spatial side consumes it as the $\Po$-odd ($\CP$)
 pseudoscalar; the temporal side consumes it as its $\Te$-violating partner --- one object. Hence a
 single derivation (the SM $\CP/\Te$ phase from CPP) would simultaneously supply the V2 and W2
 sign-fixers. (Machine-checked as a linkage table, \texttt{verify\_tarrow\_1\_arrow\_status.py}
 CHECK 3.)
 \end{proof}
+
+\begin{remark}[The $\CPT$ logic, made explicit (for non-field-theory readers)]
+\label{rem:cptlogic}
+The pairing in Theorem~\ref{thm:cpt} is a structural use of the $\CPT$ theorem, not a claim about SM
+phenomenology. In any local, $\CPT$-invariant theory the combined operation $\CPT$ is an exact
+symmetry, so a violation of $\Te$ (the temporal sign-fixer we need) cannot occur alone: it must be
+compensated by a violation of $\CP$ in the \emph{same} physical sector, and vice versa. That is the
+whole content used here --- it lets the \emph{one} registered cross-sector object (the SM
+$\CP/\Te$-violating phase) play \emph{both} reopener roles. What is \emph{not} claimed: (i) that every
+abstract $\Te$-odd quantity in CPP is the SM $\CP$ phase --- only that the \emph{sign-fixers} relevant
+to V2/W2 are $\CPT$-paired in their sector; (ii) that $\CPT$-invariance of the CPP substrate is
+established --- it is \emph{assumed} (falsifier T5). If $\CPT$ fails, or if CPP registers an
+\emph{independent} cross-sector $\Te$-odd object distinct from the $\CP$ pseudoscalar, the
+``single-target'' unification reopens into two; the claim is conditional, by design.
+\end{remark}
 
 \begin{remark}[The full chirality status, assembled]
 \label{rem:assembled}
@@ -440,9 +481,10 @@ count).
 \item \textbf{The capacity engine is deep and gated.} The W1 upgrade needs the F.2 physicalization
 $+$ the DSL arrow-emergence (the temporal counterpart of 1d-$\beta$-ii); both are deferred behind the
 DSL viability ceiling (F.1 §14.17).
-\item \textbf{$\CPT$-invariance is assumed} (Thm~\ref{thm:cpt}): the $\Te$-violation $\Leftrightarrow$
-$\CP$-violation equivalence presumes a $\CPT$-invariant substrate; if CPP's substrate is shown
-$\CPT$-violating, the two reopeners need not coincide (falsifier T5).
+\item \textbf{$\CPT$-invariance is assumed} (Thm~\ref{thm:cpt}, Rem~\ref{rem:cptlogic}): the
+sector-paired $\Te$/$\CP$ sign-fixer identification presumes a $\CPT$-invariant substrate; if CPP's
+substrate is shown $\CPT$-violating (or registers an independent cross-sector $\Te$-odd object), the
+two reopeners need not coincide (falsifier T5).
 \end{itemize}
 
 % ============================================================
