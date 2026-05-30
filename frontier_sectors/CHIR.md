@@ -215,7 +215,7 @@ substrate-Wigner-Eckart datum (Capotauro v2.0 §20); the chirality continuum arc
 **Paper(s):** `chirality_derivations/theo_chir_merge_1.tex` (Patch 0644) + `theo_chir_merge_2.tex`
 (Patch 0647). Chirality-count half resolved (M1-χ); the T-arrow `sign(δ)` (full M1) deferred to
 OPEN-CHIR-2a / F.2; the δ–ε magnitude to OPEN-FP-F1-2 sub-target L4-E.
-**Last updated:** 29 May 2026 (Patch 0649 — MERGE-2 multi-AI review integrated, v1.1, no falsifier; M1-χ stands, conditional on MERGE-α)
+**Last updated:** 29 May 2026 (Patch 0650 — ChatGPT v1.1 re-review request issued (`review/theo_chir_merge_2_rereview_request_chatgpt_v1.1.md`) to formally close the cycle (AUDIT-1 precedent); verdict unchanged (M1-χ conditional on MERGE-α) pending ChatGPT's response. Earlier: Patch 0649 — MERGE-2 multi-AI review integrated, v1.1, no falsifier.)
 
 ---
 
