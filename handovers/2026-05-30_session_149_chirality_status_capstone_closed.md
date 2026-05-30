@@ -79,6 +79,19 @@ reached origin (a local `git am` whose push did not land, while the parallel OSF
 and 0651 built on top, delivered as a clean series — no content lost. *Lesson: confirm `git log`
 shows the expected HEAD after each push; the gate is doing its job.*
 
+**v1.1 reviewer microcorrections (applied Patch 0656, no verdict change — present in the theorem files):**
+The three convergent calibration residuals from the STATUS-1/2 review (3/3 CONFIRMED) were applied to
+the theorem `.tex` files (not this handover):
+1. **(ChatGPT Q7) STATUS-2** — V2-exclusion reworded *"excluded by the presently registered axiom
+   inventory"* (flags the inherited MERGE-2 / MERGE-α primitive-pseudoscalar inventory).
+2. **(Grok + Copilot Q2) STATUS-1** — the value=free case now names *cosmological inheritance* (a sign
+   inherited from a pre-substrate / cosmological boundary state) as a subtype → C=No → V3 from CPP's
+   standpoint.
+3. **(ChatGPT Q4) STATUS-2** — new Remark flagging that the *ℤ₂-order-parameter = FI-C-9* identification
+   is a framework-interpretation step layered on the pure group-theoretic fact.
+Both theorems are at **v1.1**; verdicts unchanged (STATUS-1 V3 placement, STATUS-2 V1-pinning).
+Full record: `chirality_derivations/review/reviews-CHIR-STATUS.md` (Part 3).
+
 ---
 
 ## 4. Session-close capture audit (the reasoning-and-script question)
