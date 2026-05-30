@@ -199,3 +199,15 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 
 ---
 
+### CONJ-CHIR-1: The Substrate Chiral-Vacuum Transition Is Electroweak Symmetry Breaking
+**Status:** CONJECTURE — registered 30 May 2026 (Session 150 Patch 0662) at the opening of the CHIR ↔ electroweak bridge (`chirality_derivations/sketches/chir_ew_bridge_scoping.md`). Proposed cross-sector identification; not proved from CPP axioms.
+**Sector(s):** CHIR, EW, SM
+**Priority:** HIGH (the grand-unification route for the chirality primitive/emergent-status headline; co-owned with OPEN-SM-4)
+**One-line statement:** The substrate chiral-vacuum transition (STATUS-2's H₄ → H₄⁺, an index-2 ℤ₂ quotient with order parameter `sign(n̂)` = FI-C-9) is the Capotauro chirality-activation event of OPEN-SM-4 (registered as [600-cell] × ℤ₂ → [600-cell]), and this event is electroweak symmetry breaking — so FI-C-9 is the substrate face of EW parity violation (P-face), `sign(δ)` is the substrate face of SM CP/T-violation (T-face; one structure by CPT, TARROW-1), and the magnitude χ = φ⁻³ sets δ_CP (≈193–195°) and Δp_LR (= χ/6 ≈ 0.0394).
+**What a solution looks like:** show the STATUS-2 ℤ₂ and the OPEN-SM-4 ℤ₂ are the same reflection (the §4.3 ℤ₂-match), then derive δ_CP and Δp_LR from χ = φ⁻³ (= FI-C-9) via OPEN-SM-4 sub-claims (a)/(b). If established, chirality is **fully emergent (V2/W2) via the SM** (both substrate primitives reabsorbed); the headline status question is answered at its deepest level.
+**Dependencies:** STATUS-2 (the H₄→H₄⁺ ℤ₂), TARROW-1 (the CPT P-face/T-face unification, assumes substrate CPT-invariance), CHI-1 (χ = φ⁻³ = FI-C-9), CAP-1 / OPEN-SM-4 sub-claim (c) (Δp_LR = χ/6, shipped); the deep engine 1d-β-ii / OPEN-SM-4 sub-claims (a)/(b) behind F.1 §14.17.
+**Cross-sector connections:** OPEN-CHIR-3 ∪ 1d-β-v (the bridge, CHIR side); OPEN-SM-4 (the bridge, SM/SR side; the chirality-activation event + δ_CP); OPEN-FI-C-9-FP-MECHANISM (Reading-C `n̂`, sub-claim (b)); audit E26 (SM parity link).
+**Falsification routes:** (a) the STATUS-2 ℤ₂ and the OPEN-SM-4 ℤ₂ are structurally distinct (the ℤ₂-match fails); (b) χ = φ⁻³ does not set δ_CP / Δp_LR once OPEN-SM-4 (a)/(b) are derived; (c) substrate CPT-invariance fails (severs the P-face/T-face unification — TARROW-1 falsifier T5).
+**Registered:** 30 May 2026 (Patch 0662)
+
+---

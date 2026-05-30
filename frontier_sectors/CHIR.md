@@ -124,18 +124,20 @@ attempt a derivation; register a new framework axiom only if derivation fails
 
 ---
 
-### OPEN-CHIR-3: Alignment with observed Standard-Model chirality
-**Status:** OPEN
-**Sector(s):** CHIR
-**Priority:** MEDIUM (gated on OPEN-CHIR-1 + OPEN-CHIR-2 progress)
-**Operational sense(s):** CP-asymmetric
-**One-line statement:** Once the primitive/emergent entries are mapped and derived,
-construct the derivation chain from them to weak-interaction parity violation and
-the PMNS/CKM CP-phases.
-**Dependencies:** OPEN-CHIR-1, OPEN-CHIR-2; audit entries E4 (`φ`-winding of A3), E26 (SM parity link).
-**Cross-sector connections:** THEO-CHIR-CONT-2 (V−A coupling), THEO-CHIR-CONT-3 (chiral-polarity-bias); OPEN-SM-5 (PMNS angles), OPEN-SM-4 (δ_CP via Capotauro).
+### OPEN-CHIR-3: Alignment with observed Standard-Model chirality — THE CHIR ↔ ELECTROWEAK BRIDGE (∪ 1d-β-v)
+**Status:** OPEN — **bridge SCOPED (Patch 0662, scope sketch `chirality_derivations/sketches/chir_ew_bridge_scoping.md`)**; unifies OPEN-CHIR-1d-β-v (the SM-chirality cross-link) into this entry; co-owned with OPEN-SM-4.
+**Sector(s):** CHIR (↔ SM/EW)
+**Priority:** HIGH (after the status capstone closed both halves, this bridge is the **only lever that can move chirality from primitive toward emergent** — the next theoretical bridge-building target)
+**Operational sense(s):** CP-asymmetric / parity-violating
+**One-line statement:** Connect substrate chirality (FI-C-9, `sign(δ)`) to electroweak chiral structure (parity violation, δ_CP). Decide whether substrate chirality is the **source** of SM chiral structure (→ chirality fully emergent V2/W2 via the SM) or independent of it (→ two distinct primitives).
+**Bridge decomposition (Patch 0662):** **B-i** (the correspondence dictionary + the ℤ₂-match sub-check — **L2.5-reachable now, recommended next theorem THEO-CHIR-BRIDGE-1**); **B-ii** (the magnitude anchors δ_CP, Δp_LR — partial now); **B-iii** (the capacity engine: is the substrate chiral-vacuum transition EWSB? = 1d-β-ii = OPEN-SM-4 sub-claims (a)/(b) — deep, behind F.1 §14.17); **B-iv** (the grand-unification conjecture, registered **CONJ-CHIR-1**).
+**The P-face / T-face map (CPT-unified, from TARROW-1):** `sign(n̂)` = FI-C-9 (P-odd) ↔ **electroweak parity violation** (V−A, left-handed coupling; E26) — the spatial V2-reopener (1d-β-v); `sign(δ)` (T-odd) ↔ **SM CP-violation** (δ_CP) — the temporal W2-reopener; by CPT (assumed) these are the **two faces of one EW chiral structure**, so fully deriving chirality is a **single** cross-sector target.
+**The ℤ₂-match anchor (the most concrete near-term lead):** STATUS-2's substrate chiral-vacuum breaking H₄ → H₄⁺ is an **index-2 ℤ₂ quotient**; OPEN-SM-4's chirality-activation event is **[600-cell] × ℤ₂ → [600-cell]**. Candidate that these two ℤ₂'s are the **same** reflection (= CONJ-CHIR-1); a structural coincidence worth testing, the centerpiece of B-i. NOT asserted — registered as a question.
+**Empirical anchors (in corpus; "support φ⁻³ but not used in the proof"):** δ_CP ≈ 193.3° vs NuFIT 195°±40°; Δp_LR = χ/6 = φ⁻³/6 ≈ 0.0394 vs ~0.04 (CAP-1, shipped). Both carry χ = φ⁻³ = FI-C-9's magnitude into SM observables; making them load-bearing is the B-ii payoff (and the magnitude side of the V2/W2 reopener).
+**Dependencies:** OPEN-CHIR-1 (FI-C-9 status, V3), OPEN-CHIR-2 (the T-arrow, W3); STATUS-2 (the H₄→H₄⁺ ℤ₂), TARROW-1 (the CPT unification); audit entries E4 (`φ`-winding of A3), E26 (SM parity link).
+**Cross-sector connections:** **OPEN-SM-4 (the bridge's SM/SR co-owner — Capotauro activation event + δ_CP)**; CONJ-CHIR-1 (the grand-unification conjecture); OPEN-FI-C-9-FP-MECHANISM (Reading-C `n̂`); THEO-CHIR-CONT-2 (V−A coupling), THEO-CHIR-CONT-3 (chiral-polarity-bias); OPEN-SM-5 (PMNS angles).
 **Paper(s):** the eventual chirality flagship — "Chirality in the Conscious Point Substrate: Primitive, Emergent, or Both?" (scope-sketch §7).
-**Last updated:** 29 May 2026
+**Last updated:** 30 May 2026 (Patch 0662 — CHIR ↔ electroweak bridge SCOPED; 1d-β-v unified in; B-i/B-ii/B-iii/B-iv decomposition; P-face/T-face CPT map + the ℤ₂-match lead; CONJ-CHIR-1 registered; co-owned with OPEN-SM-4. No derivation; no verdict change — chirality stays emergent-down-to-two-primitives, V3 + W3.)
 
 ---
 
