@@ -3,7 +3,7 @@
 **Type:** Tier-4 reasoning-recovery artifact (pre-rigid-documentation derivation recovered into the rigid corpus).
 **Recovers:** the original derivation behind CONJ-P-SS-1 ("2:1 ZBW orbital frequency ratio"), used implicitly in SS-1 and as a foundational input in SF-4.
 **Source:** claude.ai chat `ee212abb-bed7-418f-aae7-5a801b3b6f30` ("Buffer overflow content replacement", 19 March 2026), the "Spin I / ZBW Mass companion" working LaTeX, predating the Four-Tier Documentation Discipline. Referenced downstream in chat `a49b320e` (SS-1 development window).
-**Status:** RECOVERED. The recovered derivation **contradicts the "2× frequency" statement as recorded in CONJ-P-SS-1 and SF-4** (see §3). Corrected result registered; THEO candidate pending multi-AI review (Session 149, Patch 0572b).
+**Status:** RECOVERED + CORRECTED. The recovered derivation **contradicts the "2× frequency" statement as recorded in CONJ-P-SS-1 and SF-4** (see §3). Registered as **THEO-SPIN-1**; **multi-AI review CLOSED 3/3 at v1.1** (Patch 0572f — Grok CONFIRM, Copilot CONFIRM-WITH-CALIBRATION, ChatGPT RESTATE-TO-v1.1): the 2√2 correction confirmed with no falsifier, statement restated so it does not overclaim (see §4).
 
 ---
 
@@ -54,7 +54,7 @@ A frequency ratio of exactly 2 would require **equal orbital speeds** (v_in = v_
 
 1. **CONJ-P-SS-1** is corrected to the true result (radius ratio 2 / angular-frequency ratio 2√2) — see Patch 0572b CONJ.md edit.
 2. **SF-4** uses the relationship only as a *phase-lock* — Picture A (the shipped d_eff = 5 closure) merges spin + orbital orientation into one channel because they are locked to a single geometric direction, which the recovered derivation establishes regardless of the ratio value. The ratio's numeric value (2 vs 2√2) is **not** load-bearing for σ_ν = z⁻¹⁰. Only the wording "2:1 frequency" is inaccurate. Picture B (not selected) is the one that depended on the literal value 2 ("two inner half-cycles per moment"); the 2√2 correction therefore *strengthens* the Picture-A-over-B argument. SF-4 reconciliation = wording fix → v1.1 (Patch 0572c).
-3. The genuine theorem is **spin-½ universality from {1/r² force, standing-wave r_out = 2 r_in, L = ℏ/2}, yielding ω_in/ω_out = 2√2** — a different, richer statement than "2× frequency." Registered as a candidate pending the multi-AI review cycle (Patch 0572d), per the THEO-DSL-N candidate→confirmed precedent and Thomas's reviewer-sign-off criterion.
+3. The genuine theorem **establishes the force-balanced captured-DP orbital geometry *compatible with* the spin-½ condition L = ℏ/2, correcting ω_in/ω_out from 2 to 2√2.** Per the v1.1 reviewer restatement it does **NOT derive spin-½** (L = ℏ/2 is an imposed input); the inner-radial-ZBW phase-lock is a **foundational model postulate** (not derived); and the extension across fermion types + photon is a **universality template** (not a sector-by-sector derivation). Registered THEO-SPIN-1 (Patch 0572d); **multi-AI review CLOSED 3/3 at v1.1** (Patch 0572f — Grok CONFIRM, Copilot CONFIRM-WITH-CALIBRATION, ChatGPT RESTATE-TO-v1.1; the 2√2 correction confirmed with no falsifier). See `series_strong/papers/review/reviews-THEO-SPIN-1.md`.
 
 ## 5. Trivial verification
 
