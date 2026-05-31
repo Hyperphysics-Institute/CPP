@@ -6,7 +6,11 @@
 
 ---
 
-============================================================
+**Patch 0678 (Session 152, 30 May 2026) — v1.1 residual Picture-B wording sweep (completes the 2:1→2√2 correction).**
+The Patch-0572c v1.1 correction (below) swept the inner/outer ZBW "2:1 frequency" wording across the main text but left three residual literal-"2:1" instances in the *rejected* Picture-B discussion (§ "Closure path from A1–A11", the comparison table, and the decoherence paragraph): "preserves the 2:1 structure" (→ inner/outer two-half-cycle structure, radius ratio 2 / ω-ratio 2√2), the table cell "relies on 2:1 convention" (→ inner/outer phase-lock convention, ratio 2√2), and "the 2:1 inner-outer fermion-spin convention" (→ the value-dependent two-half-cycles-per-moment reading, ratio now 2√2). No version-number bump (same v1.1 correction; these were missed instances); no substantive content change (Picture B is not selected; σ_ν = 1/z¹⁰ and all predictions UNCHANGED, as in v1.1). Made directly per Thomas's go-ahead during the 72-hour OSF re-publish window. The migrated historical block below (including its own archived "2:1" mentions in the v4.x development archaeology) is retained verbatim per anti-erasure discipline.
+
+---
+
 SF-4: Neutrino Sector Unification from 600-Cell Geometry
        Eight Parameters from One Calibration
 Flagship Paper Series (SF-line)
