@@ -193,12 +193,14 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 
 ---
 
-### CONJ-P-SS-1 (Candidate Postulate): 2:1 ZBW Orbital Frequency Ratio
-**Status:** PROPOSED POSTULATE
+### CONJ-P-SS-1: ZBW Orbital Frequency Ratio (CORRECTED — formerly "2:1")
+**Status:** RECOVERED + CORRECTED — the "2× frequency" statement is **superseded as recorded**. The original derivation has been located (chat ee212abb, 19 Mar 2026; recovered to `series_strong/papers/recovery-SS-1-spin-zbw-frequency.md`, Patch 0572b) and it gives a **radius ratio of 2** and an **angular-frequency ratio of 2√2**, NOT a frequency ratio of 2. THEO candidate pending multi-AI review.
 **Sector(s):** SS, QM
-**One-line statement:** All fermions have inner orbital oscillating at 2× outer frequency. Used implicitly in SS-1; not formally stated or derived.
-**Current best lead:** Consistent with spin-½ requirement and SR-1 treatment. Recommend elevating to CPP Postulate P-5a.
-**Registered:** 29 March 2026
+**One-line statement (CORRECTED):** A captured DP at Mode-2 standing-wave nodes has r_out/r_in = 2 (exact). Under 1/r² force balance (ω² ∝ 1/r³) this gives inner/outer orbital angular-frequency ratio ω_in/ω_out = (r_out/r_in)^(3/2) = 2√2 ≈ 2.828 (exact). Spin-½ follows universally from {1/r² force, r_out = 2 r_in, L = ℏ/2}. The inner radial ZBW runs at the Compton frequency ν_C = m_e c²/ℏ and phase-locks the orbits.
+**The "2:1" error:** the earlier statement (Grok-origin, Sonnet-confirmed; entered as a working convention) conflated the **radius** ratio (2) with a **frequency** ratio. A frequency ratio of exactly 2 requires equal orbital speeds (v_in = v_out), which is not force-balanced — the derivation gives v_in/v_out = √2.
+**Current best lead:** Promote the recovered derivation to a theorem (spin-½ universality with ω_in/ω_out = 2√2) rather than a postulate — it IS derivable from {1/r², standing-wave, L = ℏ/2}, contradicting the prior "not derivable / elevate to Postulate P-5a" framing. Foundational input to scrutinize: the two-poles-at-different-ω picture held from winding by the ZBW phase-lock. THEO candidate registered at Patch 0572d; multi-AI review cycle (ChatGPT + Grok + Copilot) to be opened before confirmation per the THEO-DSL-N precedent and the reviewer-sign-off criterion.
+**Downstream impact:** SF-4 uses only the phase-*lock* (Picture A channel-merge → d_eff = 5), not the numeric value, so σ_ν = z⁻¹⁰ is unaffected; only SF-4's "2:1 frequency" wording is corrected to "phase-locked, ratio 2√2" at v1.1 (Patch 0572c). Picture B (not selected) depended on the literal value 2; the correction strengthens the Picture-A-over-B argument.
+**Registered:** 29 March 2026 (as "2:1 proposed postulate"). **Recovered + corrected:** 30 May 2026 Session 149, Patch 0572b.
 
 ---
 
