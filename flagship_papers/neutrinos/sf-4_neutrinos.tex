@@ -3,6 +3,25 @@
 %        Eight Parameters from One Calibration
 % Flagship Paper Series (SF-line)
 %
+% Version 1.1 -- 30 May 2026 (Session 149 -- post-v1.0-SHIP correction.
+%   Corrects the inner/outer ZBW orbital relationship from the recorded
+%   ``2:1 frequency'' wording to the recovered result: the Mode-2 standing-
+%   wave RADIUS ratio is r_out/r_in = 2 (exact), and under 1/r^2 force
+%   balance the orbital ANGULAR-FREQUENCY ratio is omega_in/omega_out =
+%   (r_out/r_in)^(3/2) = 2*sqrt(2) (exact), NOT 2. The earlier ``2x
+%   frequency'' conflated the radius ratio with the frequency ratio.
+%   Recovered from pre-rigid-documentation development (chat ee212abb,
+%   19 Mar 2026); see series_strong/papers/recovery-SS-1-spin-zbw-
+%   frequency.md + CONJ-P-SS-1. IMPACT: the d_eff = 5 Picture A closure
+%   (the SHIPPED closure) merges spin + orbital orientation into one
+%   channel via the inner/outer PHASE LOCK, not via the numeric ratio, so
+%   sigma_nu = z^-10 and all numerical predictions are UNCHANGED. Only the
+%   wording is corrected. Picture B (NOT selected) was the value-dependent
+%   ``two-half-cycles-per-moment'' picture; the 2*sqrt(2) correction makes
+%   its literal counting inexact, which further favors Picture A. Internal
+%   development history below (v1.0 SHIP Session 54; v4.x archival polish)
+%   is retained unchanged.)
+%
 % Version 4.4 -- 11 May 2026 (Session 81 — three-reviewer convergence
 %   archival polish pass. v4.3 received verdict (a) v1.0 SHIP-ready
 %   from ChatGPT and concurrent independent verdicts from Grok
@@ -1202,7 +1221,7 @@
 \title{\textbf{SF-4: Neutrino Sector Unification from 600-Cell Geometry}\\[6pt]
 {\large Eight Parameters from One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 4.4 --- SHIPPED --- 11 May 2026}} \\[0.5em]
+{\Large \textbf{Version 1.1 --- 30 May 2026 (corrects v1.0 SHIP)}} \\[0.5em]
 {\normalsize Five independent AI review passes converged on v1.0-promotion-ready: ChatGPT $\times$ 3 (passes 1--3 across v0.5 $\to$ v0.9) plus Grok $\times$ 1 plus Copilot $\times$ 1 (independent passes on v0.7). Reviewer's pass-3 forward-looking statement: ``After those fixes, I would be comfortable promoting SF-4 to v1.0 SHIP as a partial-closure flagship prediction paper.'' Promoted to v1.0 SHIP at Session 54. Subsequent advancement: v2.0 (Sessions 55--60) integrated Picture A axiomatic closure; v3.0 (Sessions 62--66) integrated $\alpha$-exponent residual closure --- both jointly resolving OPEN-FP-SF-4-1. v4.0 (Sessions 68--72) integrated the OPEN-FP-SF-4-2 + SM-5 op:nu\_id cross-sector closure --- first cross-sector closure in CPP. v4.1 (Session 75) incorporates the ChatGPT v4.0 review. Forward work: SF-2 EW-flagship closure for the deferred $\delta_{CP}$ derivation per route (ii).}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
@@ -1649,7 +1668,7 @@ In the standard quantum-mechanical free-particle picture, the phase advances \em
 
 \paragraph{Orbital orientation channel (1).} The ZBW orbital plane (equivalently, the angular-momentum direction) is the geometric orientation of the unbound mode's circulation. For a bound mode, orientation is locked by the cage symmetry; for an unbound mode, the orbital plane orients freely and samples substrate orientation states per moment. Channel count: 1.
 
-In CPP, fermion spin arises from the inner ZBW orbital at twice the outer-orbital frequency (per the existing CPP postulate set). Spin and orbital orientation are physically the same channel --- the inner-outer 2:1 frequency relationship locks them to a single geometric direction. Counting them as one channel rather than two is the right discipline.
+In CPP, fermion spin arises from a phase-locked inner/outer ZBW orbital pair: the orbital angular-frequency ratio is $\omega_{\mathrm{in}}/\omega_{\mathrm{out}} = 2\sqrt{2}$ (from $1/r^2$ force balance at the Mode-2 radius ratio $r_{\mathrm{out}}/r_{\mathrm{in}} = 2$), with the inner radial ZBW at the Compton frequency $m_e c^2/\hbar$ supplying the phase lock. Spin and orbital orientation are physically the same channel --- the inner/outer phase lock ties them to a single geometric direction. Counting them as one channel rather than two is the right discipline.
 
 \paragraph{Total walk dimension.}
 \begin{equation}
@@ -1668,7 +1687,7 @@ The discipline at this stage is to lay them out as candidates rather than pick o
 \subsubsection{Picture A: Two-sided DI-bit exchange (CLOSED at theorem level, v2.0)}
 \label{sec:pictureA}
 
-\paragraph{Status at v2.0.} Picture A advances from ``leading candidate for theorem-level closure'' (v1.0) to AXIOMATIC CLOSURE ACHIEVED (v2.0) following the six-session campaign of Sessions 55--60. All four sub-claims of Picture A close at theorem level from CPP axioms A1--A11 plus three foundational inputs (3D embedding, neutrino identification as unbound 3D orbital ZBW, spin-orbital 2:1 frequency convention). The leading-order prediction $\sigma_{\mathrm{channel}} = 1/z^2$ per channel is now rigorously derived; the working sketch document \cite{sf4_picture_A_closure} captures the closure verbatim per Tier 4 reasoning-capture discipline.
+\paragraph{Status at v2.0.} Picture A advances from ``leading candidate for theorem-level closure'' (v1.0) to AXIOMATIC CLOSURE ACHIEVED (v2.0) following the six-session campaign of Sessions 55--60. All four sub-claims of Picture A close at theorem level from CPP axioms A1--A11 plus three foundational inputs (3D embedding, neutrino identification as unbound 3D orbital ZBW, spin-orbital phase-lock convention (orbital ratio $2\sqrt{2}$)). The leading-order prediction $\sigma_{\mathrm{channel}} = 1/z^2$ per channel is now rigorously derived; the working sketch document \cite{sf4_picture_A_closure} captures the closure verbatim per Tier 4 reasoning-capture discipline.
 
 \paragraph{Story.} Per absolute moment, the substrate's fundamental information-transmission unit is the DI-bit exchange. A DI-bit exchange has a send-side and a receive-side: a CP at vertex $v_i$ releases information into a substrate channel toward one of its $z = 12$ neighbors, and the receiving CP at the destination vertex accepts information from one of its $z = 12$ neighbors. For a walk channel of an unbound mode to maintain coherence across the moment, both the send-direction and the receive-direction must align with the channel's required orientation simultaneously.
 
@@ -1686,7 +1705,7 @@ at leading order, with corrections at $O((m/m_P)^2 / z^3)$ from sub-leading mode
 
 \item \textbf{Sub-claim (c) — Equilibrium uniform marginal}: $P(O(v_i) = d) = 1/z$ for each $d$ in the icosahedral state space, at every vertex $v_i$. CLOSED at theorem level via the transitive-action uniformity lemma: any $G$-invariant probability measure on a finite set with transitive $G$-action is uniform. The icosahedral group $I_h$ acts transitively on the 12 DP-orientation options at each vertex (standard property of icosahedral symmetry), and any stationary distribution of A6' edge-sector dynamics is $I_h$-invariant. By the lemma, the stationary distribution is $1/z = 1/12$. By 600-cell vertex-transitivity, this holds at every vertex. Robust across (R2)-S and (R2)-L readings of ``DP orientation''. Sketch document \S11 establishes the closure.
 
-\item \textbf{$d_{\mathrm{eff}} = 5$ — Walk-channel count from icosahedral irrep decomposition}: CLOSED at theorem level via decomposition of substrate information into icosahedral irreducible representations: $\mathbf{3}_{\mathrm{vector}}$ (spatial gradient information; 3 channels for the 3 Cartesian axes) $\oplus\, \mathbf{1}$ (ZBW phase; trivial $U(1)$ irrep; 1 channel) $\oplus\, \mathbf{3}_{\mathrm{axial}}$ (orbital angular-momentum direction; reduced to 1 channel by spin-orbital 2:1 frequency-locking and icosahedral discretization). Channel-completeness verified: neutrinos are color-singlets (no color channel), weak isospin is not per-channel for free mass-eigenstate propagation (enters at interaction vertex only), flavor mixing arises only over macroscopic distances, chirality is locked, helicity is derived from spatial direction $\times$ orientation. Total: $3 + 1 + 1 = 5$. Sketch document \S12 establishes the closure.
+\item \textbf{$d_{\mathrm{eff}} = 5$ — Walk-channel count from icosahedral irrep decomposition}: CLOSED at theorem level via decomposition of substrate information into icosahedral irreducible representations: $\mathbf{3}_{\mathrm{vector}}$ (spatial gradient information; 3 channels for the 3 Cartesian axes) $\oplus\, \mathbf{1}$ (ZBW phase; trivial $U(1)$ irrep; 1 channel) $\oplus\, \mathbf{3}_{\mathrm{axial}}$ (orbital angular-momentum direction; reduced to 1 channel by spin-orbital phase-locking and icosahedral discretization). Channel-completeness verified: neutrinos are color-singlets (no color channel), weak isospin is not per-channel for free mass-eigenstate propagation (enters at interaction vertex only), flavor mixing arises only over macroscopic distances, chirality is locked, helicity is derived from spatial direction $\times$ orientation. Total: $3 + 1 + 1 = 5$. Sketch document \S12 establishes the closure.
 \end{enumerate}
 
 Combining these sub-claims:
@@ -1701,7 +1720,7 @@ rigorously derived from CPP axioms A1--A11 plus foundational inputs.
 
 \paragraph{Sub-leading 2\% empirical residual is not a Picture A correction.} The 2\% empirical match between $\sigma_\nu = z^{-10}$ predicted and observation is too small to be explained by Picture A corrections (which are at most $(m/m_P)^2/z^3 \sim 10^{-65}$ for neutrinos). The 2\% comes from sub-leading effects elsewhere in the SF-4 derivation chain: (i) the alpha-exponent residual from the $V^{7/3} \to V^2$ reduction at the bound/unbound boundary (theorem-level closed at v3.0 \S\ref{sec:alpha_derivation}; sub-leading $O(1/V)$ for antibonding modes per the v3.0 closure verification flag V$\alpha$-3 discharge \cite{sf4_alpha_exponent_closure} \S 12.4), (ii) the K3-eigenstructure partial-binding correction (OPEN-FP-SF-4-2 territory; dominant residual source for $\nu_3$ at V=30), (iii) cross-channel correlations at $O(\alpha_{\mathrm{EM}})$ from sub-claim (b). The full three-source residual decomposition is given in \S\ref{sec:suppression_openwork}. These sub-leading effects compose to the observed $\sim 2\%$ residual at $\nu_2$ (V=12, bonding mode) and $\sim 8\%$ residual at $\nu_3$ (V=30, antibonding mode) without modifying the leading-order $\sigma_\nu = 1/z^{10}$ rigorous result.
 
-\paragraph{Foundational vs. derived accounting.} The closure rests on three foundational inputs that are CPP-internal but not derivable from A1--A11: (1) 3D embedding of the 600-cell substrate (inherent to CPP's structural setup; underlies SR-1's PSR framework), (2) identification of the neutrino as an unbound 3D orbital ZBW configuration of dipole-pair structures (per the SF-4 v1.0 \S\ref{sec:suppression} starting hypothesis), (3) the spin-orbital 2:1 frequency-locking convention for fermion ZBW structure. Given these foundational inputs, the four sub-claims are rigorously derived from A1--A11. This represents the strongest closure achievable without re-deriving the foundational inputs themselves, which is outside the scope of OPEN-FP-SF-4-1.
+\paragraph{Foundational vs. derived accounting.} The closure rests on three foundational inputs that are CPP-internal but not derivable from A1--A11: (1) 3D embedding of the 600-cell substrate (inherent to CPP's structural setup; underlies SR-1's PSR framework), (2) identification of the neutrino as an unbound 3D orbital ZBW configuration of dipole-pair structures (per the SF-4 v1.0 \S\ref{sec:suppression} starting hypothesis), (3) the spin-orbital phase-lock convention (orbital ratio $2\sqrt{2}$) for fermion ZBW structure. Given these foundational inputs, the four sub-claims are rigorously derived from A1--A11. This represents the strongest closure achievable without re-deriving the foundational inputs themselves, which is outside the scope of OPEN-FP-SF-4-1.
 
 \subsubsection{Picture B: Two ZBW half-cycles per absolute moment}
 \label{sec:pictureB}
@@ -1714,11 +1733,11 @@ rigorously derived from CPP axioms A1--A11 plus foundational inputs.
 \label{eq:pictureB}
 \end{equation}
 
-\paragraph{Why bound modes don't carry this factor.} For bound modes the inner-outer 2:1 frequency ratio is locked to the cage resonance --- both half-cycles are pinned to specific phase values by the cage geometry. No free sampling on either half-cycle, so $\sigmanu = 1$.
+\paragraph{Why bound modes don't carry this factor.} For bound modes the inner/outer phase lock is locked to the cage resonance --- both half-cycles are pinned to specific phase values by the cage geometry. No free sampling on either half-cycle, so $\sigmanu = 1$.
 
-\paragraph{Closure path from A1--A11.} Picture B anchors on the existing 2:1 frequency convention for fermion structure. Theorem-level closure requires showing that for unbound modes, the two half-cycles are independently sampling --- i.e., that the unbound regime preserves the 2:1 structure but releases the cage-imposed coupling between half-cycles. Both pieces look tractable but require explicit work.
+\paragraph{Closure path from A1--A11.} Picture B anchors on the existing inner/outer phase-lock convention for fermion structure. Theorem-level closure requires showing that for unbound modes, the two half-cycles are independently sampling --- i.e., that the unbound regime preserves the 2:1 structure but releases the cage-imposed coupling between half-cycles. Both pieces look tractable but require explicit work.
 
-\paragraph{Why it might be true and why it might fail.} The 2:1 frequency convention is already a CPP postulate (per the existing fermion-spin machinery). It would be elegant if the same structural feature that produces fermion spin (inner-outer orbital coupling at 2:1) also produces the per-channel $z^{-2}$ suppression for unbound modes --- a unified explanation across spin and mass. The picture depends specifically on the 2:1 convention being the right number for the unbound regime. If the underlying CPP physics doesn't actually produce a sharp two-half-cycles-per-moment structure in the unbound regime --- e.g., if the half-cycle counting is an artifact of the bound-mode cage geometry that doesn't survive into the unbound regime --- the picture fails. Picture A doesn't have this dependency.
+\paragraph{Why it might be true and why it might fail.} The inner/outer phase-lock convention is already a CPP structural feature (per the existing fermion-spin machinery). It would be elegant if the same structural feature that produces fermion spin (inner/outer orbital phase lock) also produces the per-channel $z^{-2}$ suppression for unbound modes --- a unified explanation across spin and mass. The picture depends specifically on the literal value of the ratio being the right number for the unbound regime (now corrected to $2\sqrt{2}$, which makes the ``two half-cycles per moment'' counting inexact and further disfavors Picture B relative to the lock-based Picture A). If the underlying CPP physics doesn't actually produce a sharp two-half-cycles-per-moment structure in the unbound regime --- e.g., if the half-cycle counting is an artifact of the bound-mode cage geometry that doesn't survive into the unbound regime --- the picture fails. Picture A doesn't have this dependency.
 
 \subsubsection{Picture C: Edge-straddling coherent state}
 \label{sec:pictureC}
@@ -1748,7 +1767,7 @@ Source endpoint of the new edge has $z$ options; destination endpoint has $z$ op
 \toprule
 & \textbf{Picture A} & \textbf{Picture B} & \textbf{Picture C} \\
 \midrule
-Anchors on & DI-bit exchange (substrate primitive) & 2:1 frequency convention (fermion structure) & Edge-straddling (new postulate / derivation) \\
+Anchors on & DI-bit exchange (substrate primitive) & inner/outer phase-lock convention (fermion structure) & Edge-straddling (new postulate / derivation) \\
 \addlinespace
 Numerical result & $\sigma_{\mathrm{channel}} = 1/z^2$ & $\sigma_{\mathrm{channel}} = 1/z^2$ & $\sigma_{\mathrm{channel}} \approx 1/z^2$ \\
 \addlinespace
@@ -1809,7 +1828,7 @@ is computed at zero free parameters from the inherited $\Mzero \approx 3.79$ MeV
 
 \paragraph{Status at v3.0: RESOLVED.} OPEN-FP-SF-4-1 advances from ADVANCED at v2.0 to RESOLVED at v3.0. All four v1.0 sub-goals are now closed at theorem level: Picture A axiomatic closure RESOLVED Sessions 55--60 (sub-goals 1--3, integrated at v2.0), and alpha-exponent residual sub-task closure RESOLVED Sessions 62--65 (sub-goal 4, integrated at v3.0).
 
-\paragraph{Picture A axiomatic closure (RESOLVED at v2.0).} Sessions 55--60 completed the axiomatic closure of Picture A. The four sub-claims (substrate independence, AND-of-factors across channels, equilibrium uniform marginal, and $d_{\mathrm{eff}} = 5$ first-principles channel enumeration) are all at theorem level, derived from CPP axioms A1--A11 plus three foundational inputs (3D embedding, neutrino identification, spin-orbital 2:1 frequency convention). The leading-order prediction $\sigma_\nu = (1/z^2)^5 = 1/z^{10}$ is rigorously established. The closure is documented in the working sketch document \cite{sf4_picture_A_closure} and integrated into \S\ref{sec:pictureA} of this paper.
+\paragraph{Picture A axiomatic closure (RESOLVED at v2.0).} Sessions 55--60 completed the axiomatic closure of Picture A. The four sub-claims (substrate independence, AND-of-factors across channels, equilibrium uniform marginal, and $d_{\mathrm{eff}} = 5$ first-principles channel enumeration) are all at theorem level, derived from CPP axioms A1--A11 plus three foundational inputs (3D embedding, neutrino identification, spin-orbital phase-lock convention (orbital ratio $2\sqrt{2}$)). The leading-order prediction $\sigma_\nu = (1/z^2)^5 = 1/z^{10}$ is rigorously established. The closure is documented in the working sketch document \cite{sf4_picture_A_closure} and integrated into \S\ref{sec:pictureA} of this paper.
 
 \paragraph{$\alpha$-exponent residual closure (RESOLVED at v3.0).} Sessions 62--65 completed the alpha-exponent residual sub-task closure. The four sub-claims (cage cooperation requires rigid cage; unbound 3D orbital ZBW has no rigid cage; no cooperation $\Rightarrow$ bare per-link energy $\Mzero$; bare per-link energy $\Rightarrow V^2$ scaling) are all at theorem level, derived from CPP axioms A1, A2, A4, A6', A7, A9 plus four foundational inputs (FI-$\alpha$-1 SM-9-inheritance for bound-mode $V^{7/3}$; FI-$\alpha$-2 cage-cooperative SSV reinforcement; FI-$\alpha$-3 neutrino as unbound 3D orbital ZBW; FI-$\alpha$-4 rigid-cage operational definition). The composite theorem $m_\text{unbound} = \Mzero \cdot V^2 \cdot \sigmanu$ at leading order in V is rigorously established (Theorem~\ref{thm:alpha_exponent_reduction}, \S\ref{sec:alpha_derivation}). The closure is documented in the working sketch document \cite{sf4_alpha_exponent_closure} and integrated into \S\ref{sec:alpha_derivation} of this paper.
 
@@ -2308,7 +2327,7 @@ The four enumerated sub-goals (\S\ref{sec:suppression_openwork}):
 \item $\alpha = 2$ closure: \textbf{RESOLVED at v3.0} (Sessions 62--65, Theorem~\ref{thm:alpha_exponent_reduction}). $V^{7/3} \to V^2$ reduction at the bound/unbound boundary closes via four-sub-claim closure (cage cooperation requires rigid cage; unbound 3D orbital ZBW has no rigid cage; no cooperation $\Rightarrow$ bare $\Mzero$; bare per-link energy $\Rightarrow V^2$ scaling). Central CP anchor identified as load-bearing element. Six verification flags discharged Session 65.
 \end{enumerate}
 
-The Picture A and alpha-exponent closures combined rest on at most six foundational inputs (Picture A's three: 3D embedding, neutrino identification, spin-orbital 2:1 frequency convention; plus alpha-exponent's four: SM-9-inheritance for $V^{7/3}$, cage-cooperative SSV reinforcement, neutrino identification (shared with Picture A), rigid-cage operational definition). All other content of OPEN-FP-SF-4-1 closure is derived from CPP axioms A1--A11. The combined closure represents the strongest theorem-level result achievable without re-deriving the foundational inputs themselves. Working sketch documents \cite{sf4_picture_A_closure, sf4_alpha_exponent_closure} capture the closure verbatim per Tier 4 discipline.
+The Picture A and alpha-exponent closures combined rest on at most six foundational inputs (Picture A's three: 3D embedding, neutrino identification, spin-orbital phase-lock convention (orbital ratio $2\sqrt{2}$); plus alpha-exponent's four: SM-9-inheritance for $V^{7/3}$, cage-cooperative SSV reinforcement, neutrino identification (shared with Picture A), rigid-cage operational definition). All other content of OPEN-FP-SF-4-1 closure is derived from CPP axioms A1--A11. The combined closure represents the strongest theorem-level result achievable without re-deriving the foundational inputs themselves. Working sketch documents \cite{sf4_picture_A_closure, sf4_alpha_exponent_closure} capture the closure verbatim per Tier 4 discipline.
 
 \subsubsection*{OPEN-FP-SF-4-2: Vertex-by-vertex K3-coupling theorem --- conditionally RESOLVED at v4.0}
 \label{sec:open_fp_sf42}
@@ -2462,7 +2481,7 @@ SF-4 Suppression Derivation, working document, \texttt{flagship\_papers/neutrino
 SF-4 K3-Cage-Shell Consistency Theorem, working document, \texttt{flagship\_papers/neutrinos/sketches/SF-4\_k3\_cage\_shell\_consistency.md}, Sessions 42--43 patches 0302--0303, 2026.
 
 \bibitem{sf4_picture_A_closure}
-SF-4 Picture A Axiomatic Closure, working document, \texttt{flagship\_papers/neutrinos/sketches/SF-4\_picture\_A\_axiomatic\_closure.md}, Sessions 55--60 patches 0316--0320, 2026. Tier-4 reasoning capture of the OPEN-FP-SF-4-1 Picture A axiomatic closure campaign: 1106 lines across 13 sections growing monotonically across Sessions 55--59. Contains the four sub-claim closures (a, b, c, $d_{\mathrm{eff}} = 5$), the (V1)/(V2)/(V3) verification flag discharges, and the foundational vs.\ derived accounting that distinguishes the rigorous closure from the foundational inputs (3D embedding, neutrino identification, spin-orbital 2:1 frequency convention).
+SF-4 Picture A Axiomatic Closure, working document, \texttt{flagship\_papers/neutrinos/sketches/SF-4\_picture\_A\_axiomatic\_closure.md}, Sessions 55--60 patches 0316--0320, 2026. Tier-4 reasoning capture of the OPEN-FP-SF-4-1 Picture A axiomatic closure campaign: 1106 lines across 13 sections growing monotonically across Sessions 55--59. Contains the four sub-claim closures (a, b, c, $d_{\mathrm{eff}} = 5$), the (V1)/(V2)/(V3) verification flag discharges, and the foundational vs.\ derived accounting that distinguishes the rigorous closure from the foundational inputs (3D embedding, neutrino identification, spin-orbital phase-lock convention (orbital ratio $2\sqrt{2}$)).
 
 \bibitem{sf4_alpha_exponent_closure}
 SF-4 Alpha-Exponent Residual Closure, working document, \texttt{flagship\_papers/neutrinos/sketches/SF-4\_alpha\_exponent\_closure.md}, Sessions 62--65 patches 0323--0326, 2026. Tier-4 reasoning capture of the OPEN-FP-SF-4-1 alpha-exponent residual closure campaign: 1184 lines across 13 sections + 9 findings + close, growing monotonically across Sessions 62--65. Contains the four sub-claim closures (cage cooperation requires rigid cage; unbound 3D orbital ZBW has no rigid cage; no cooperation $\Rightarrow$ bare $\Mzero$; bare per-link energy $\Rightarrow V^2$ scaling), the central-CP-anchor argument identifying the load-bearing physical element, the six verification flag discharges (V$\alpha$-1 through V$\alpha$-6 including the antibonding-mode bound refinement), and the foundational vs.\ derived accounting (4 foundational inputs FI-$\alpha$-1 through FI-$\alpha$-4; 6 CPP axioms A1, A2, A4, A6', A7, A9 with A4+A7 most load-bearing). Sections 11 and 12.8 contain the empirical residual decomposition into three sources (alpha-exponent residual, K3-eigenstructure partial-binding, $O(\alpha_{\mathrm{EM}})$ cross-channel correlations) with refined antibonding-mode bounds.
