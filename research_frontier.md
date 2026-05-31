@@ -50,7 +50,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 
 | Sector | File | Scope | Problems |
 |--------|------|-------|----------|
-| FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (F-line + SF-line) | 14 active, 1 resolved |
+| FP | [`frontier_sectors/FP.md`](frontier_sectors/FP.md) | Flagship Papers — apex layer (F-line + SF-line) | 15 active, 1 resolved |
 | SS | [`frontier_sectors/SS.md`](frontier_sectors/SS.md) | Strong Sector (includes SS-specific propositions and conjectures from SS-5, SS-6, SS-7) | 18 active, 1 retired |
 | SM | [`frontier_sectors/SM.md`](frontier_sectors/SM.md) | Standard Model Emergence | 11 |
 | EW | [`frontier_sectors/EW.md`](frontier_sectors/EW.md) | Electroweak Sector | 6 |
@@ -255,9 +255,9 @@ CROSS-SERIES:
 
 | Sector | Total | Open | Conj | Prop | Resolved | Falsified |
 |--------|-------|------|------|------|----------|-----------|
-| FP (Flagship Papers) | 15 | 15 | 0 | 0 | 0 | 0 |
+| FP (Flagship Papers) | 16 | 16 | 0 | 0 | 0 | 0 |
 | SS (Strong) | 26 | 16 | 5 | 1 | 1 | 1 |
-| SM (Standard Model) | 23 | 11 | 6 | 1 | 3 | 5 |
+| SM (Standard Model) | 24 | 11 | 7 | 1 | 3 | 5 |
 | EW (Electroweak) | 10 | 6 | 3 | 0 | 0 | 0 |
 | QM (Quantum Mechanics) | 13 | 5 | 0 | 4 | 3 | 0 |
 | SR (Relativity) | 8 | 8 | 0 | 0 | 0 | 0 |

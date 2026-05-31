@@ -4,7 +4,7 @@
 **Document type:** Physical intuition narrative — the founder's mental model
 **Location:** `/CPP/founders_vision.md`
 **Purpose:** To capture, in Thomas's own voice and physical language, the way CPP works as an imagined world — not the equations, but the stories beneath them
-**Last updated:** 16 May 2026 (Capotauro v1.0 milestone added: substrate-vacuum primitive chirality magnitude as foundational substrate feature; the Session 120 framing reframe from SSB to primitive-feature per CPP-core-principle methodological commitment; first programme-level theorem registered ahead of its own paper publication; verbatim-substance preservation discipline statement programme-wide. Three earlier flagship v1.0 milestones — SS-9 v1.0 7 May, SF-4 v1.0–v4.4 9–11 May, SF-2 v1.0 14 May — are NOT YET in this document despite their importance; backfill from claude.ai chat-window export is registered as a programme-wide hygiene item; see Patch 0416N founders_voice subfolder + Patch 0416P canonical Tier-4 conversion for the Capotauro-arc precedent of the recovery discipline.)
+**Last updated:** 30 May 2026 (Session 149 Patch 0572a: Part V "Vision Captures (Dated)" opened with §6b "Neutrino Structure — The Flavor-Basis Vision" — eDP/qDP/hTetra flavor basis, the two-basis reconciliation with SF-4's V=4/12/30 mass cages, and the U_TBM harmonization target now registered as OPEN-FP-SF-4-FLAVORBASIS + CONJ-SM-7. NOTE: §7 "Nested Cage Hierarchy" still carries superseded multiple-cage language — flagged for single-cage-taxonomy cleanup.) Earlier 16 May 2026 (Capotauro v1.0 milestone added: substrate-vacuum primitive chirality magnitude as foundational substrate feature; the Session 120 framing reframe from SSB to primitive-feature per CPP-core-principle methodological commitment; first programme-level theorem registered ahead of its own paper publication; verbatim-substance preservation discipline statement programme-wide. Three earlier flagship v1.0 milestones — SS-9 v1.0 7 May, SF-4 v1.0–v4.4 9–11 May, SF-2 v1.0 14 May — are NOT YET in this document despite their importance; backfill from claude.ai chat-window export is registered as a programme-wide hygiene item; see Patch 0416N founders_voice subfolder + Patch 0416P canonical Tier-4 conversion for the Capotauro-arc precedent of the recovery discipline.)
 
 ---
 
@@ -853,3 +853,37 @@ Zero SS-8-specific parameters. The geometric content is purely combinatorial —
 *This is a living document. It grows with each session.*
 *Initiated 3 April 2026 by Claude Opus, at Thomas's request.*
 *"Are my words being captured and catalogued?" — Thomas Lee Abshier, 3 April 2026*
+
+---
+
+## Part V: Vision Captures (Dated)
+
+*Dated captures of physical-intuition arcs as they are worked out, recorded per the founder's-vision discipline. Each preserves the picture in Thomas's voice together with the dialectic that sharpened it, so future readers and AI collaborators can reconstruct how the framing was arrived at.*
+
+### 6b. Neutrino Structure — The Flavor-Basis Vision (30 May 2026, Session 149)
+
+*Worked out in dialogue with Claude Opus 4.8. The physical vision is Thomas's; the objections and the two-basis reconciliation were arrived at in exchange. Recorded because the back-and-forth produced the framing now registered as OPEN-FP-SF-4-FLAVORBASIS.*
+
+**The vision.** The three neutrinos are not all the same kind of object. Reading the decay products of reactions — the mechanistic accounting of what goes in and what comes out — tells me what each neutrino *is* at the moment it interacts:
+
+- the electron neutrino is an **eDP** (a spinning electron-type dipole),
+- the muon neutrino is a **qDP** (a spinning quark-type dipole),
+- the tau neutrino is an **hTetra** (the empty spinning tetrahedral frame).
+
+This reactants-and-products accounting is foundational: it is how the physical composition is read off the world, not assumed. On the level of flavor switching, the mechanism is momentum transfer between these forms — a spinning eDP hands its momentum to a qDP and so switches flavor; a qDP hands momentum to an hTetra already standing in space. Flavor change is interconversion among these three substrate forms.
+
+**The objection (Claude).** This appeared, at first, to break SF-4. SF-4 builds all three neutrinos as the *same* kind of object — unbound 3D orbital ZBW cage-shell modes at V = 4, 12, 30 — and those are mass eigenstates joined by tribimaximal mixing, with the normal hierarchy forced (ν₁→V=4, ν₃→V=30). Three sharper objections followed: a single dipole has only ~2 CPs, not the V=4/12/30 the mass formula needs; putting the tau neutrino at the V=4 tetrahedron seemed to invert the mass ordering; and assigning each flavor one pure object seemed to leave no room for mixing.
+
+**The correction (Thomas).** The neutrino is not a charged lepton — it is a neutral fermion. A qDP is a +qCP/−qCP pair, net-neutral and colour-neutral, so there is no charge obstruction to a muon neutrino being a qDP.
+
+**The reconciliation (the gem).** The objections dissolve once the two pictures are seen as the **two standard neutrino bases**, not rival claims:
+
+- eDP / qDP / hTetra are the **flavor / interaction basis** — what the substrate presents at a vertex (the decay accounting).
+- V = 4 / 12 / 30 cages are the **mass / propagation basis** — what travels with definite mass (SF-4).
+- They are joined by the PMNS rotation, which SF-4/SM-5 fix at tribimaximal.
+
+A flavor object has *no* definite mass, so it need not carry a V=4/12/30 cage — the "V=2" objection was a basis confusion. And under TBM the tau neutrino is dominantly the V=30 (heaviest) mass state, so naming its interaction object the hTetra does not make it light — the hierarchy is preserved. The momentum-transfer interconversion is then not a one-way cascade (which would relax to equilibrium) but the **coherent, bidirectional, amplitude-level evolution** that produces oscillation — and CPP already has coherent reversible substrate evolution in ZBW and the deterministic PCD cycle, so it has a natural home. The misalignment between the interaction basis and the propagation basis *is* the oscillation.
+
+**The harmonization target.** Show the substrate map {eDP, qDP, hTetra} → {V=4, V=12, V=30} equals U_TBM. If it does, CPP gains a *mechanistic derivation of the PMNS matrix*, beyond SM-5's spectral derivation. A striking hint: the most symmetric cage, the icosahedron (V=12), maps to the flavor-democratic (trimaximal) state, and the V=30 cage to the μ–τ antisymmetric, eDP-decoupled state — so geometry may fix part of the mixing matrix on its own (registered as CONJ-SM-7). The one wrinkle to resolve first: the tetrahedron wears two hats — it is the tau-neutrino flavor object *and* the V=4 lightest-mass cage.
+
+This is now a registered, well-formed problem (OPEN-FP-SF-4-FLAVORBASIS with sketch at `flagship_papers/neutrinos/sketches/SF-4_flavor_basis_harmonization.md`) rather than a sentence in an overview.

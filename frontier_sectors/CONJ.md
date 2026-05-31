@@ -112,6 +112,18 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 
 ---
 
+### CONJ-SM-7: Symmetric-Cage ↔ Trimaximal Flavor Correspondence
+**Status:** CONJECTURE (leading structural hint for OPEN-FP-SF-4-FLAVORBASIS; not derived)
+**Sector(s):** SM, FP/SF-4
+**Priority:** MEDIUM (sub-hint of OPEN-FP-SF-4-FLAVORBASIS SC-2)
+**One-line statement:** Under U_TBM, the most symmetric mass cage maps to the most symmetric flavor combination: the icosahedron (V=12, full I_h) ↔ the trimaximal state ν₂ = (νₑ+ν_μ+ν_τ)/√3; the V=30 cage ↔ the μ–τ antisymmetric, eDP-decoupled state ν₃ = (ν_μ−ν_τ)/√2; V=4 ↔ the eDP-weighted remainder ν₁ = (2νₑ−ν_μ−ν_τ)/√6.
+**What a solution looks like:** Derive the substrate overlaps ⟨V=12 | eDP⟩ = ⟨V=12 | qDP⟩ = ⟨V=12 | hTetra⟩ = 1/√3 from the icosahedron's I_h symmetry, fixing the ν₂ column of U from geometry alone; extend to the full matrix.
+**Dependencies:** OPEN-FP-SF-4-FLAVORBASIS (umbrella), SM-5 (TBM from K3), THEO-SF-4-5.
+**Falsification route:** If the symmetry-derived overlaps do not reproduce the TBM column structure, the geometric correspondence is coincidental and SC-2 must proceed by the explicit S₃→S₂ branching route without the symmetry shortcut.
+**Registered:** 30 May 2026 Session 149, Patch 0572a.
+
+---
+
 ### CONJ-SM9-1: α = 7/3 from V² × V^(1/3)
 **Status:** CONJECTURE (partially derived)
 **Sector(s):** SM
