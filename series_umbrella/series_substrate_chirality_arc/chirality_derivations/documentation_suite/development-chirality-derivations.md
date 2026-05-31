@@ -1,6 +1,6 @@
 # Development — Chirality Derivations
 
-Session vignettes for the chirality-derivations arc (Session 148, Patches 0632–0640), append-only.
+Session vignettes for the chirality-derivations arc (Sessions 148–151, Patches 0632–0670), append-only.
 The verbatim per-patch reasoning is in `reasoning/<patch>.md`; these are the curated
 paragraph-form vignettes (Tier 3) pointing at it.
 
@@ -63,6 +63,20 @@ At the three-derivations milestone, the per-patch verbatim reasoning + scripts (
 throughout per the reasoning-capture protocol) were consolidated into this `documentation_suite/`
 plus the folder README. No physics changed; this is the synthesis layer over the canonical
 Tier-4 fragments.
+
+## Patches 0643–0657 (Sessions 148 tail–149) — the unified-sign merge + the primitive/emergent-status capstone
+
+After THEO-CHIR-CAP-1 (E19) the arc turned to the remaining sign question and then to the status crux. **OPEN-CHIR-MERGE** opened (0643, `sketches/theo_chir_merge_1_scope.md`): is the temporal cycle sign σ_cycle the same object as the spatial sign(n̂)? **THEO-CHIR-MERGE-1** (0644, `theo_chir_merge_1.tex` + `code/verify_merge_current_sign.py`) partially resolved it — the primitive-count capstone. The shared dependency was scoped as **OPEN-FP-F1-2** (0646, the Layer-4 axiomatic derivation of Mechanism A from A1–A11; cross-sector, the gate behind both MERGE-β and OPEN-CHIR-2a). **THEO-CHIR-MERGE-2** (0647, `theo_chir_merge_2.tex` + `code/verify_merge_2_parity_decomposition.py`) advanced MERGE-β from M3 → M1-χ (chirality-count half resolved) and delivered OPEN-FP-F1-2 sub-target L4-D; its review cycle (0648–0651) closed **3/3 → v1.2**, verdict M1-χ conditional on MERGE-α (`review/reviews-CHIR-MERGE-2.md`).
+
+The status crux: **OPEN-CHIR-1d-β** scoped (0652, `sketches/chir_open_1d_beta_fi_c_9_emergence_scoping.md`) — the FI-C-9 emergence question, decomposed i–v with the capacity-vs-value distinction. **THEO-CHIR-STATUS-1** (0653, `theo_chir_status_1.tex` + `code/verify_status_1_verdict_partition.py`) formalized the verdict space {V1,V2,V3} (proved exhaustive) and placed current rigor at **V3** (FI-C-9 = the one currently-identified irreducible chirality primitive); the OPEN-CHIR-1d-β ID was reserved for the V1 upgrade. **THEO-CHIR-STATUS-2** (0654, `theo_chir_status_2.tex` + `code/verify_status_2_breaking_chain.py`) gave the chiral-vacuum breaking chain H₄ → H₄⁺ (index-2 ℤ₂; order parameter sign(n̂) = FI-C-9) and the axiom-level V2-exclusion that **pins the emergence upgrade to exactly V1** (emergent mechanism, contingent sign). The STATUS-1/2 review cycle (0655–0656) closed **3/3 → v1.1** (`review/reviews-CHIR-STATUS.md`; ChatGPT's read: STATUS-2's V2-exclusion is what makes the pair a falsifiable constraint, not relabeling). Verdict unchanged — **V3, upgrade pinned to V1.** (Session-close handovers 0657 + 0657a; no physics.)
+
+## Patches 0658–0667 (Session 150) — the temporal capstone (TARROW-1), the dispatch protocol, and the bridge's B-i
+
+**THEO-CHIR-TARROW-1** (0658, `theo_chir_tarrow_1.tex` + `code/verify_tarrow_1_arrow_status.py`) carried the STATUS-1 partition onto the temporal axis: sign(δ) is **W3**, upgrade pinned to **W1**. New content — the T-even-geometry lemma (the substrate geometry is purely T-even, so there is no T-odd geometric quantity and no finite-group breaking chain — the disanalogy with parity) and the CPT unification (the spatial V2-reopener and temporal W2-reopener are, by CPT, the same SM CP/T object). Review cycle (0659, 0661) closed **3/3 → v1.1** (`review/reviews-CHIR-TARROW.md`). **The full status capstone is now closed on both halves** — spatial V3 (STATUS-1/2) + temporal W3 (TARROW-1), unified by one CPT-linked reopener.
+
+Workflow infrastructure (0660): the canonical **"initiate review protocol"** command codified — NEW `templates/review_dispatch_protocol.md` + OS §1/§5, the review-side analog of the §15 handover, turning a finished review package into paste-ready reviewer-addressed dispatch text.
+
+The verdict-moving frontier: the **CHIR↔electroweak bridge** scoped (0662, `sketches/chir_ew_bridge_scoping.md`) — unifying OPEN-CHIR-1d-β-v ∪ OPEN-CHIR-3 (co-owned with OPEN-SM-4), decomposition B-i/B-ii/B-iii/B-iv, the ℤ₂-match lead, and the NEW conjecture **CONJ-CHIR-1** (substrate chiral-vacuum transition = Capotauro activation = EWSB; if true → chirality fully emergent V2/W2 via the SM). **B-i DELIVERED** as **THEO-CHIR-BRIDGE-1** (0663, `theo_chir_bridge_1.tex` + `code/verify_bridge_1_z2_match.py`): a Layer-2.5 structural correspondence — NOT a derivation — identifying the OPEN-SM-4 activation ℤ₂ = the STATUS-2 quotient ℤ₂ = one det-coset object (kinematic, conditional on premise P2) plus the P/T-face dictionary; CONJ-CHIR-1's kinematic half discharged, dynamical half isolated as B-iii. Review cycle (0664–0665; first live use of the new dispatch command + its delivery-mode fallback) closed **3/3 → v1.1** (`review/reviews-CHIR-BRIDGE.md`). **No verdict move — V3/W3 stand.** (Session-close handover 0666; kickoff-line addition 0667.)
 
 ## Patches 0668–0670 (Session 151) — the bridge's reachable faces completed (B-iii + B-ii scoped)
 

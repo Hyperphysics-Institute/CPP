@@ -5,6 +5,114 @@ Patch history of the chirality-derivations sub-corpus. Newest first. Version his
 
 ---
 
+**Patch 0670 (Session 151, 30 May 2026) — cross-sector hygiene.**
+Corrected the stale OPEN-SM-4 one-line in `frontier_sectors/SM.md` (χ "≈ φ⁻¹" → φ⁻³) — the
+documentation root cause of the apparent χ tension and of BRIDGE-1 falsifier B4. Isolated from
+0669 for independent apply. No mechanism content changed.
+
+**Patch 0669 (Session 151, 30 May 2026) — B-ii magnitude anchors scoped + χ φ⁻¹-vs-φ⁻³ reconciled.**
+`sketches/chir_bii_magnitude_anchors_scoping.md` + `code/verify_bii_chi_normalization.py` (all
+checks pass). B-ii-P (Δp_LR = χ/6 = φ⁻³/6 ≈ 0.0394) load-bearing/shipped (CAP-1); B-ii-T (δ_CP)
+signpost only, gated behind B-iii. χ "tension" resolved as a **non-tension** (φ⁻³ live; φ⁻¹ the
+retired dead-end *and* the first-shell distance χ is built from). BRIDGE-1 falsifier B4 reclassified
+(documentation; sub-claim-(b) hook). No verdict move.
+
+**Patch 0668 (Session 151, 30 May 2026) — B-iii capacity engine scoped.**
+`sketches/chir_biii_capacity_landau_scoping.md` + `code/verify_biii_landau_reduction.py` (all
+checks pass). Capacity ⟺ **sign(μ²)** of a ℤ₂-even Landau V(η) in the det-coset order parameter
+(μ²<0 ⇒ chiral double-well ⇒ V3→V1); EWSB-identification ⟺ substrate μ² = Higgs μ² (CONJ-CHIR-1).
+ℤ₂-even *form* reachable now; *sign of μ²* gated behind F.1 §14.17. Structural reduction only; no
+verdict move.
+
+**Patch 0665 (Session 150, 30 May 2026) — THEO-CHIR-BRIDGE-1 review cycle CLOSED 3/3 → v1.1.**
+All three reviewers CONFIRMED at Layer-2.5 (ℤ₂-match forced/sound, P2 sound); two honest-cap
+calibrations (discharge conditional on P2 / "skeleton identified, bridge not built"; summary-
+discipline Remark). First live use of the dispatch-protocol delivery-mode fallback.
+`review/reviews-CHIR-BRIDGE.md`.
+
+**Patch 0664 (Session 150) — BRIDGE-1 multi-AI review cycle OPENED** (first use of the "initiate
+review protocol" command).
+
+**Patch 0663 (Session 150, 30 May 2026) — THEO-CHIR-BRIDGE-1 (B-i of the CHIR↔EW bridge).**
+`theo_chir_bridge_1.tex` + `code/verify_bridge_1_z2_match.py`. A Layer-2.5 structural correspondence
+(NOT a derivation): the OPEN-SM-4 activation ℤ₂ = the STATUS-2 quotient ℤ₂ = one det-coset object
+(kinematic, conditional on premise P2) + the P/T-face dictionary. CONJ-CHIR-1 kinematic half
+discharged, dynamical half isolated as B-iii. No verdict move.
+
+**Patch 0662 (Session 150, 30 May 2026) — CHIR↔electroweak bridge SCOPED.**
+`sketches/chir_ew_bridge_scoping.md`; unifies OPEN-CHIR-1d-β-v ∪ OPEN-CHIR-3 (co-owned with
+OPEN-SM-4); decomposition B-i/B-ii/B-iii/B-iv; the ℤ₂-match lead. NEW conjecture **CONJ-CHIR-1**
+(substrate chiral-vacuum transition = Capotauro activation = EWSB).
+
+**Patch 0661 (Session 150, 30 May 2026) — THEO-CHIR-TARROW-1 review cycle CLOSED 3/3 → v1.1**
+(ChatGPT + Grok + Copilot CONFIRMED; sector-paired CPT phrasing + CPT-logic Remark + the T-even
+invariant set enumerated). `review/reviews-CHIR-TARROW.md`.
+
+**Patch 0660 (Session 150, 30 May 2026) — review-dispatch protocol** (workflow infrastructure; no
+chirality physics). NEW `templates/review_dispatch_protocol.md` + OS §1/§5 — the canonical "initiate
+review protocol" command, the review-side analog of the §15 handover.
+
+**Patch 0659 (Session 150) — TARROW-1 multi-AI review cycle OPENED.**
+
+**Patch 0658 (Session 150, 30 May 2026) — THEO-CHIR-TARROW-1 (the T-arrow sign(δ) status, OPEN-CHIR-2a).**
+`theo_chir_tarrow_1.tex` + `code/verify_tarrow_1_arrow_status.py`. Instantiates the STATUS-1
+partition on the temporal axis: sign(δ) is **W3**, upgrade pinned to **W1**. The T-even-geometry
+lemma (no T-odd geometric quantity → disanalogy with parity) + the CPT unification (spatial V2- and
+temporal W2-reopeners are the same SM CP/T object). Closes the status capstone's temporal half.
+
+**Patches 0657 + 0657a (Session 149 close) — handover** (status capstone closed; 0657a itemizes the
+v1.1 reviewer microcorrections). No physics.
+
+**Patch 0656 (Session 149, 29 May 2026) — STATUS-1 + STATUS-2 review cycle CLOSED 3/3 → v1.1**
+(all CONFIRMED at Layer-2.5; capstone endorsed; ChatGPT: STATUS-2's V2-exclusion is what makes the
+pair a falsifiable constraint, not relabeling). `review/reviews-CHIR-STATUS.md`.
+
+**Patch 0655 (Session 149) — STATUS-1 + STATUS-2 multi-AI review cycle OPENED.**
+
+**Patch 0654 (Session 149, 29 May 2026) — THEO-CHIR-STATUS-2.**
+`theo_chir_status_2.tex` + `code/verify_status_2_breaking_chain.py`. The chiral-vacuum breaking
+chain H₄ → H₄⁺ (order 14400 → 7200, index-2 ℤ₂; order parameter sign(n̂) = FI-C-9); axiom-level
+V2-exclusion ⇒ the emergence upgrade pinned to exactly **V1** (emergent mechanism, contingent sign).
+Verdict stays V3.
+
+**Patch 0653 (Session 149, 29 May 2026) — THEO-CHIR-STATUS-1 + OPEN-CHIR-1d-β ID reserved.**
+`theo_chir_status_1.tex` + `code/verify_status_1_verdict_partition.py`. Formalizes the verdict space
+{V1,V2,V3} (proved exhaustive); current rigor **V3** (FI-C-9 = the one currently-identified
+irreducible chirality primitive); names the V1 upgrade condition (1d-β-ii).
+
+**Patch 0652 (Session 149, 29 May 2026) — OPEN-CHIR-1d-β scoped (the FI-C-9 emergence question; the status crux).**
+`sketches/chir_open_1d_beta_fi_c_9_emergence_scoping.md`. Decomposes 1d-β into i–v; the
+capacity-vs-value distinction; current-rigor verdict V3, achievable upgrade V1.
+
+**Patch 0651 (Session 149, 29 May 2026) — THEO-CHIR-MERGE-2 review cycle CLOSED 3/3 → v1.2**
+(ChatGPT CONFIRMED: verdict M1-χ conditional on MERGE-α). `review/reviews-CHIR-MERGE-2.md`.
+
+**Patch 0650 (Session 149) — MERGE-2 v1.1 ChatGPT re-review request issued** (toward formal cycle
+close).
+
+**Patch 0649 (Session 149, 29 May 2026) — THEO-CHIR-MERGE-2 review integrated → v1.1** (calibration,
+no falsifier; verdict M1-χ stands, now conditional on MERGE-α).
+
+**Patch 0648 (Session 149) — THEO-CHIR-MERGE-2 multi-AI review cycle OPENED.**
+
+**Patch 0647 (Session 149, 29 May 2026) — THEO-CHIR-MERGE-2.**
+`theo_chir_merge_2.tex` + `code/verify_merge_2_parity_decomposition.py`. OPEN-CHIR-MERGE MERGE-β
+advanced M3 → M1-χ (chirality-count half resolved); OPEN-FP-F1-2 sub-target L4-D delivered.
+
+**Patch 0646 (Session 149, 29 May 2026) — OPEN-FP-F1-2 scoped** (Layer-4 axiomatic derivation of
+Mechanism A from A1–A11; the shared gate for MERGE-β and OPEN-CHIR-2a). Cross-sector scope; no
+chirality theorem.
+
+**Patch 0645 (Session 148 close) — handover** (CHIR audit-downstream derivation arc complete). No
+physics.
+
+**Patch 0644 (Session 148, 29 May 2026) — THEO-CHIR-MERGE-1.**
+`theo_chir_merge_1.tex` + `code/verify_merge_current_sign.py`. OPEN-CHIR-MERGE partially resolved
+(unified-chirality-sign; the primitive-count capstone — is σ_cycle = sign(n̂)?).
+
+**Patch 0643 (Session 148, 29 May 2026) — OPEN-CHIR-MERGE scoped** (the unified-chirality-sign
+question; the E19/E20 merge). `sketches/theo_chir_merge_1_scope.md`.
+
 **Patch 0641 (Session 148, 29 May 2026) — documentation-suite consolidation.**
 This consolidation: `README.md` (folder index) + `documentation_suite/` (mechanism, development,
 reasoning-index, keywords, glossary, phenomena, changelog) synthesized from the Tier-4 verbatim
