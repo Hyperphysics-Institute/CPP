@@ -171,7 +171,7 @@
 **What a solution looks like:** WKB or equivalent calculation giving τ_{1/r³} : τ_{1/r²} = 1:2.
 **Dependencies:** OPEN-SS-9 ✅ SOLVED (topological proof is authoritative; this is the mechanical confirmation)
 **Cross-sector connections:** Connects SR-1 ZBW treatment to strong-sector charge screening
-**Current best lead:** 2:1 ZBW frequency ratio may directly set 1:2 time allocation; depends on orbit shape.
+**Current best lead:** the inner/outer ZBW orbital relationship — corrected to radius ratio 2 / angular-frequency ratio 2√2 (phase-locked), registered as THEO-SPIN-1 v1.1 (Patch 0572f), superseding the prior "2:1 frequency" (CONJ-P-SS-1) — bears on the time allocation; the specific time-allocation consequence must be re-derived from the corrected 2√2 (the earlier "1:2" inference assumed the now-corrected literal 2). Depends on orbit shape.
 **Paper(s):** SM-1, SS-1
 **Last updated:** 29 March 2026
 

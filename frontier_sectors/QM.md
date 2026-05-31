@@ -27,7 +27,7 @@
 **Priority:** HIGH
 **One-line statement:** Derive s = 1/2 from ZBW orbital topology; derive Pauli exclusion from hDP chain antisymmetry.
 **Dependencies:** None blocking
-**Cross-sector connections:** Connects to 2:1 ZBW frequency ratio (candidate postulate P-SS-1)
+**Cross-sector connections:** Connects to the inner/outer ZBW orbital relationship (CONJ-P-SS-1, corrected: radius ratio 2, angular-frequency ratio 2√2 — NOT a 2:1 frequency; phase-locked; registered as THEO-SPIN-1 v1.1, Patch 0572f)
 **Paper(s):** QM-6, QM-7
 **Last updated:** 23 March 2026
 
