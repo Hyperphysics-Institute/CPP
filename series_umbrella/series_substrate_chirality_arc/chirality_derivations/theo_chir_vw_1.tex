@@ -1,0 +1,417 @@
+% ============================================================
+% THEO-CHIR-VW-1: The Reflection-Positivity Structure of the Substrate
+%   Parity Z2 --- Unifying STATUS-2's V2-Exclusion with a Vafa-Witten No-Go
+%   (the sign(mu^2) route to B-iii capacity)
+%
+% Crystallizes the first reachable artifact of the sign(mu^2) route scope sketch
+%   (chir_biii_signmu2_reflection_positivity_scoping.md, Patch 0679). A
+%   Layer-2.5 provisional STRUCTURAL / CONDITIONAL theorem, NOT a derivation and
+%   NOT a verdict move. It does four things, all on review-hardened inputs:
+%
+%   (VW-b, ESTABLISHED) The det-coset Z2 (STATUS-2's H4/H4+ quotient) is a
+%       VECTORIAL reflection (det=-1), not an axial/chiral symmetry -- so it is
+%       in the symmetry class a Vafa-Witten no-go protects (VW forbids
+%       spontaneous breaking of vectorial parities; it permits axial/chiral
+%       condensation).
+%
+%   (VW-c, ESTABLISHED at the reachable level) Evasion audit: a VW no-go fails
+%       only via {chiral content, theta-term, complex measure}. The BARE
+%       substrate carries none at the level currently hardened -- achiral
+%       (STATUS-2); no theta-term (sign(delta) is W3, a classification, not an
+%       action term, TARROW-1); real Q[phi] coefficients (THEO-DSL-4..12), no
+%       manifest phase. Each evasion route, where it appears at all, enters
+%       through the SM bridge (BRIDGE-1, kinematic/P2), not the bare substrate.
+%
+%   (THE UNIFICATION, the centerpiece) STATUS-2's axiom-level V2-EXCLUSION (the
+%       VALUE side: no internal P-odd pseudoscalar can FIX the sign -> parity is
+%       not EXPLICITLY broken) and the VW no-go (the CAPACITY side: mu^2>0 ->
+%       parity is not SPONTANEOUSLY broken) are the two faces of ONE property:
+%       the substrate measure is parity-even and reflection-positive. Together
+%       they close BOTH routes by which a symmetry can break (explicit +
+%       spontaneous), so the substrate parity Z2 is unbroken within the
+%       substrate axioms -- conditional on H1 (reflection positivity).
+%
+%   (VW-d, CONDITIONAL) IF H1 holds THEN mu^2>0 and eta=0 within the substrate
+%       axioms; the observed FI-C-9 != 0 is then EITHER a primitive input
+%       (V3-by-principle, strictly stronger than today's "not yet derived")
+%       OR externally sourced by the SM bridge (emergent via the bridge =
+%       B-iii-(ii)/CONJ-CHIR-1). NO unconditional verdict move.
+%
+%   (VW-a, the OPEN residual) Reflection positivity H1 itself is NOT proved:
+%       criteria stated + a first-pass real-measure assessment (no manifest
+%       obstruction); a full Osterwalder-Schrader positivity proof may still
+%       require the explicit DSL effective action behind F.1 14.17. The payoff
+%       is that the ENTIRE verdict-moving capacity question is now reduced to
+%       this ONE sharp question -- "is the DSL measure reflection-positive?" --
+%       rather than "compute the whole effective action."
+%
+% Patch 0680 (Session 152). Verified by code/verify_vw_1_reflection_positivity.py
+%   (CHECK 1 VW-b det-coset Z2 vectorial-not-axial; CHECK 2 VW-c evasion audit +
+%   the explicit/spontaneous unification logic; CHECK 3 VW-a first-pass real
+%   Q[phi] measure + the conditional verdict map + honest caps -> verdict
+%   UNCHANGED V3/W3). All pass.
+%
+% CHANGELOG
+%   v1.0 (Patch 0680, Session 152, 30 May 2026) -- initial registration at
+%     Layer 2.5 (provisional): VW-b (Lemma), VW-c (Lemma), the V2-exclusion <->
+%     VW-no-go unification (Theorem, the centerpiece), the conditional verdict
+%     map (Theorem, conditional on H1), VW-a first-pass (Proposition), the
+%     continuum-limit placement (Remark), honest caps, falsifiers VW-F1..F5.
+%     NO verdict move (V3/W3 stand). Single-pass; multi-AI review the natural
+%     next step, REQUIRED before any verdict language changes (DG-3).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\sgn}{\operatorname{sign}}
+\newcommand{\Po}{\mathsf{P}}
+\newcommand{\Te}{\mathsf{T}}
+\newcommand{\CP}{\mathsf{CP}}
+\newcommand{\CPT}{\mathsf{CPT}}
+\newcommand{\Hf}{H_4}
+\newcommand{\Hfp}{H_4^{+}}
+\newcommand{\Ztwo}{\mathbb{Z}_2}
+\newcommand{\Qphi}{\mathbb{Q}[\varphi]}
+
+\title{\textbf{THEO-CHIR-VW-1}\\[4pt]
+The Reflection-Positivity Structure of the Substrate Parity $\Ztwo$:\\
+Unifying STATUS-2's V2-Exclusion with a Vafa--Witten No-Go\\[6pt]
+\large The $\sgn(\mu^2)$ Route to B-iii Capacity\\
+A Layer-2.5 Provisional Structural / Conditional Theorem}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0680, Session 152 --- 30 May 2026 \\[2pt]\small(single-pass; multi-AI review the natural next step --- REQUIRED before any verdict language changes, DG-3)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+B-iii reduced the chirality \emph{capacity} question to one bit --- $\sgn(\mu^2)$ of the $\Ztwo$-even
+Landau potential $V(\eta)$ for the det-coset order parameter $\eta$ (Patch 0668) --- and pinned that
+bit behind the F.1 \S14.17 viability ceiling. This theorem opens a route to the bit that does
+\emph{not} require the full effective action, by asking whether a \textbf{Vafa--Witten reflection-positivity
+no-go} forces $\mu^2>0$. Four results, all on review-hardened inputs. \textbf{(VW-b, established)} the
+det-coset $\Ztwo$ (STATUS-2's $\Hf/\Hfp$ quotient) is a \emph{vectorial} reflection ($\det=-1$), not an
+axial/chiral symmetry, hence in the class a Vafa--Witten no-go protects (Lemma~\ref{lem:vwb}).
+\textbf{(VW-c, established at the reachable level)} the bare substrate carries none of the three
+Vafa--Witten evasion routes $\{$chiral content, $\theta$-term, complex measure$\}$ at the level currently
+hardened; each, where it appears, enters through the SM bridge (BRIDGE-1, kinematic/P2), not the bare
+substrate (Lemma~\ref{lem:vwc}). \textbf{(The unification, centerpiece)} STATUS-2's axiom-level
+\emph{V2-exclusion} (value side: no internal $\Po$-odd pseudoscalar can \emph{fix} the sign $\Rightarrow$
+parity is not broken \emph{explicitly}) and the Vafa--Witten no-go (capacity side: $\mu^2>0
+\Rightarrow$ parity is not broken \emph{spontaneously}) are two faces of \emph{one} property --- the
+substrate measure is parity-even and reflection-positive --- and together they close \emph{both} routes
+by which a symmetry can break (Theorem~\ref{thm:unif}). \textbf{(VW-d, conditional)} \emph{If} reflection
+positivity (H1) holds, \emph{then} within the substrate axioms $\mu^2>0$ and $\eta=0$, so the observed
+FI-C-9 $\neq 0$ is \emph{either} a primitive input (V3 \emph{by principle}) \emph{or} externally
+sourced by the SM bridge (emergent via the bridge $=$ B-iii-(ii)/CONJ-CHIR-1) (Theorem~\ref{thm:vwd}).
+\textbf{The open residual} is H1 itself: reflection positivity is \emph{not} proved here (criteria $+$ a
+first-pass real-measure assessment only, Prop.~\ref{prop:vwa}); a full Osterwalder--Schrader proof may
+still need the explicit DSL action. The payoff is that the entire verdict-moving capacity question is
+\emph{reduced to one sharp question} --- ``is the DSL measure reflection-positive?'' --- rather than
+``compute the whole effective action.'' \textbf{No verdict move:} chirality stays V3/W3. Layer 2.5,
+provisional; verified by \texttt{code/verify\_vw\_1\_reflection\_positivity.py}.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Setup: the inputs the route consumes}
+
+The route builds only on review-hardened or registered results; it introduces no new dynamics.
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{B-iii Landau reduction (Patch 0668).} Capacity $\Leftrightarrow \sgn(\mu^2)$ of the
+$\Ztwo$-even effective potential $V(\eta)=V_0+\mu^2\eta^2+\lambda\eta^4+\mathcal{O}(\eta^6)$, where $\eta$
+is the \emph{continuous} det-coset order parameter (the continuous precursor of $\sgn(\nhat)=$ FI-C-9),
+acted on by the det-coset $\Ztwo$ as $\eta\mapsto-\eta$. The $\Ztwo$-even form is \emph{forced} (no
+axiom-level $\Po$-odd source $\Rightarrow$ no odd term). We take $V(\eta)$ and its reduction as given and
+ask only what fixes $\sgn(\mu^2)$.
+\item \textbf{STATUS-2 (F2, 3/3).} The breaking chain is $\Hf\to\Hfp$ (achiral isometry group, order
+$14400$, $\to$ its rotation subgroup, order $7200$, index $2$, quotient $\Ztwo$ $=$ the det-coset); the
+order parameter is the pseudoscalar $\sgn(\nhat)=$ FI-C-9; the two vacua are exchanged by any reflection
+($\det=-1$). \textbf{Axiom-level V2-exclusion:} fixing the sign needs a $\Po$-odd pseudoscalar; every
+$\Po$-even invariant (Gram matrix, unsigned volume, distance spectrum) is reflection-invariant, and the
+only primitive pseudoscalar is FI-C-9 itself, so \emph{no axiom-level source} exists.
+\item \textbf{BRIDGE-1 (Patch 0663/0665, 3/3) --- kinematic only, premise P2.} The det-coset $\Ztwo$ and
+the OPEN-SM-4 activation $\Ztwo$ are the \emph{same} object; the P/T-face dictionary maps FI-C-9 $\to$
+EW parity violation and $\sgn(\delta)\to\delta_{CP}$, $\CPT$-unified. Supplies the \emph{candidate
+external channel} the substrate lacks. Inherits the ``kinematic, P2'' cap.
+\item \textbf{CONT-1 (theorem \#65).} The continuum-limit map $\Phi$ (Wilson--Fisher block-spin
+renormalization at the substrate cutoff $\Lambda_{\mathrm{sub}}=\ell_{\mathrm{edge}}^{-1}$). The natural
+home for ``spontaneous breaking,'' ``free energy,'' and ``reflection positivity,'' which a finite
+polytope does not literally possess (Rmk.~\ref{rmk:cont}).
+\item \textbf{THEO-DSL-4..12 (SD section).} Closed-form substrate current/correlator coefficients on the
+600-cell, all \emph{real}, valued in $\Qphi$ (extended basis $\{1,\varphi,\sqrt3,\sqrt3\varphi\}$),
+machine-precision-verified and multi-AI confirmed. The first-pass evidence on the measure's reality
+(Prop.~\ref{prop:vwa}) and the pipeline the susceptibility backstop would reuse.
+\end{itemize}
+
+\begin{remark}[What VW-1 is, and is not]
+VW-1 is a \emph{structural / conditional} theorem: it establishes the symmetry-class membership (VW-b)
+and the evasion audit (VW-c), unifies two separately-established no-gos under one property, and states
+the verdict map \emph{conditionally} on the one open hypothesis (H1, reflection positivity). It is
+\emph{not} a proof that the substrate measure is reflection-positive, \emph{not} a Vafa--Witten no-go
+delivered, \emph{not} a computation of $\sgn(\mu^2)$, and \emph{not} a verdict move. It is the structural
+map that reduces the verdict-moving capacity question to a single sharp positivity question.
+\end{remark}
+
+% ============================================================
+\section{The Vafa--Witten theorem and its hypotheses}
+
+\begin{definition}[Reflection positivity (Osterwalder--Schrader), informal]
+A Euclidean theory is \emph{reflection-positive} if its path-integral measure $e^{-S}$ is real and
+positive and satisfies the Osterwalder--Schrader reflection condition --- the Euclidean encoding of a
+positive transfer matrix / unitary continuation. Operationally: the Boltzmann weight is real and
+positive (no ``sign problem''), so expectation values of reflection-symmetric observables obey
+positivity bounds.
+\end{definition}
+
+\begin{theorem}[Vafa--Witten, 1984; as used here]\label{thm:vw}
+In a Euclidean theory whose measure is reflection-positive \textup{(H1)}, whose matter content is
+\emph{vector-like} (the symmetry in question is a genuine reflection/parity, not an axial/chiral
+symmetry) \textup{(H2)}, and which has \emph{no} $\theta$-like CP-odd topological term \textup{(H3)},
+parity (any vectorial reflection symmetry) is \emph{not spontaneously broken} in the vacuum: the
+parity-symmetric configuration minimizes the free energy and the expectation value of any parity-odd
+order parameter vanishes.
+\end{theorem}
+
+\noindent The mechanism is a positivity bound: with a positive measure, an explicit parity-breaking
+source can only \emph{raise} the free energy, so the symmetric point is a minimum. All three hypotheses
+are required; failure of any one voids the conclusion. In the Landau language of B-iii, the conclusion
+is exactly $\boxed{\mu^2>0}$ --- the symmetric vacuum $\eta=0$ is stable. So \emph{if} H1--H3 hold for
+the substrate's $\eta$-dynamics, Vafa--Witten delivers $\sgn(\mu^2)>0$ as a theorem, with no need to
+compute $\mu^2$ from the DSL action. The rest of this paper checks the hypotheses.
+
+% ============================================================
+\section{VW-b: the det-coset $\Ztwo$ is a vectorial reflection (H2)}
+
+\begin{lemma}[Symmetry-class membership]\label{lem:vwb}
+The det-coset $\Ztwo=\Hf/\Hfp$ is a \emph{vectorial reflection} symmetry --- generated by an
+orientation-reversing isometry with $\det=-1$ acting on substrate configuration space --- and is
+\emph{not} an axial/chiral symmetry. It therefore lies in the symmetry class whose spontaneous breaking
+Vafa--Witten \textup{(Thm.~\ref{thm:vw})} forbids.
+\end{lemma}
+
+\begin{proof}[Argument]
+STATUS-2 establishes the chain $\Hf\to\Hfp$ by the determinant homomorphism: $\Hfp=\ker(\det)$ is the
+orientation-preserving (rotation) subgroup of order $7200$, and the nontrivial coset is generated by any
+$g\in\Hf$ with $\det g=-1$ (e.g.\ a single reflection). A $\det=-1$ isometry is the geometric
+realization of \emph{parity} $\Po$ on configuration space (it reverses orientation / exchanges
+enantiomorphs); it is not an axial rotation acting on a chirality doublet of fields. The distinction is
+decisive for Vafa--Witten: the theorem forbids spontaneous breaking of \emph{vectorial} parities but
+\emph{permits} axial/chiral condensation (the QCD chiral condensate is exactly an allowed axial
+breaking). Because the broken object here is the reflection coset --- vectorial by construction --- the
+det-coset $\Ztwo$ is in the protected class. \emph{Seam to watch (handled in VW-c):} under the bridge,
+the SM image of FI-C-9 touches the V$-$A \emph{chiral} structure; that is not a contradiction --- it is
+precisely where an evasion of H2/H1 could be imported from outside the substrate.
+\end{proof}
+
+% ============================================================
+\section{VW-c: the evasion audit (H3 and the negatives of H1/H2)}
+
+\begin{lemma}[Evasion audit]\label{lem:vwc}
+A Vafa--Witten no-go fails only if at least one of holds: \textup{(a)} chiral (non-vector-like) content;
+\textup{(b)} a $\theta$-like CP-odd topological term; \textup{(c)} a complex / non-positive measure. At
+the level currently hardened, the \emph{bare} substrate carries \emph{none}: \textup{(a)} it is achiral
+(STATUS-2: the achiral isometry group $\Hf$ hosts no intrinsic handedness; FI-C-9 is the
+\emph{order parameter}, not intrinsic chiral field content); \textup{(b)} there is no $\theta$-term in
+the substrate action as hardened --- the candidate CP-odd object is $\sgn(\delta)$, which TARROW-1 places
+at W3 as a \emph{classification}, not a dynamical action term; \textup{(c)} the THEO-DSL-4..12
+coefficients are real, valued in $\Qphi$, with no manifest phase. Each evasion route, where it appears at
+all, enters through the \emph{SM bridge} (chiral V$-$A; $\delta_{CP}\leftrightarrow\sgn(\delta)$ by the
+CPT-linked dictionary), not the bare substrate.
+\end{lemma}
+
+\begin{proof}[Argument]
+(a) STATUS-2's $\Hf$ contains reflections and is achiral; the substrate has no intrinsic chiral
+fermion content. Chiral content (V$-$A) appears only in the SM image, via the bridge (audit E26). (b)
+The hardened DSL stack (THEO-DSL-1..12) carries no CP-odd topological term; $\sgn(\delta)$ is W3, an
+arrow \emph{classification}, not an action term (TARROW-1). (c) The closed-form substrate coefficients
+are real $\Qphi$ numbers; the net DI-bit current $\parallel\nhat$ and the Mechanism-A rate function are
+real. So the three obstructions are absent at the reachable level. The candidate channel for each ---
+chiral content and a CP phase --- is exactly the SM content the bridge (BRIDGE-1, kinematic/P2)
+connects to. \emph{Caps:} (b) and (c) are checked against the action \emph{as currently hardened}; a full
+audit of (b) and the OS-positivity part of (c) awaits the explicit DSL action (Prop.~\ref{prop:vwa}).
+\end{proof}
+
+\begin{proposition}[VW-a: reflection-positivity criteria $+$ first-pass]\label{prop:vwa}
+The reachable content of H1 is: (i) the OS-positivity \emph{criteria} (real positive Boltzmann weight,
+reflection condition); and (ii) a \emph{first-pass} assessment --- the visible measure data (the real
+$\Qphi$ THEO-DSL coefficients, the real Mechanism-A rate function) exhibit \emph{no manifest
+obstruction} to positivity. A \emph{complete} OS-positivity proof is \emph{not} given here and may require
+the explicit DSL effective action (the \S14.17 object). H1 is therefore established only as ``criteria
+$+$ first-pass, no manifest obstruction,'' \emph{not proved}.
+\end{proposition}
+
+\noindent This is the load-bearing honest cap: everything downstream that depends on H1 is stated
+conditionally on it.
+
+% ============================================================
+\section{The unification: V2-exclusion and the VW no-go are two faces of one property}
+
+\begin{theorem}[The reflection-positivity unification]\label{thm:unif}
+A symmetry can break in exactly two ways: \emph{explicitly} (a symmetry-odd term in the action) or
+\emph{spontaneously} (a vacuum instability). For the substrate parity $\Ztwo$:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em]
+\item \textbf{No explicit breaking (value side) --- established.} The action is parity-\emph{even}: by
+STATUS-2's axiom-level V2-exclusion there is no $\Po$-odd pseudoscalar source, hence no $\eta$-linear
+(or any odd) term in $V(\eta)$, hence nothing internal to \emph{select} a handed vacuum.
+\item \textbf{No spontaneous breaking (capacity side) --- conditional on H1.} If the measure is
+reflection-positive (H1) --- the det-coset $\Ztwo$ being vectorial (VW-b) and the action $\theta$-free
+(VW-c) --- then by Vafa--Witten $\mu^2>0$, hence the symmetric vacuum $\eta=0$ is stable and nothing
+\emph{spontaneously} forms a handed vacuum.
+\end{enumerate}
+Both (i) and (ii) are consequences of one property: \emph{the substrate measure is parity-even and
+reflection-positive.} (i) is the parity-evenness of the action (no odd term); (ii) is parity-evenness
+$+$ positivity (the VW bound). Together they close \emph{both} breaking routes, so --- conditional on
+H1 --- the substrate parity $\Ztwo$ is \emph{unbroken within the substrate axioms}, and any handle to
+break it must be \emph{external}.
+\end{theorem}
+
+\begin{proof}[Argument]
+(i) is STATUS-2 restated in Landau language: a parity-odd term in $V$ would require a $\Po$-odd source;
+the only primitive pseudoscalar is $\eta=$ FI-C-9 itself, so no source generates an $\eta$-linear term;
+$V$ is $\Ztwo$-even (Patch 0668). (ii) is Thm.~\ref{thm:vw} instantiated via VW-b $+$ VW-c $+$ H1. The
+common root is that a parity-even positive measure neither contains a parity-odd term (so no explicit
+breaking) nor permits a parity-breaking vacuum instability (the VW positivity bound). Hence the two
+no-gos the programme established separately --- V2-exclusion (value) and the VW capacity no-go --- are
+the two faces of substrate reflection-positivity. \emph{Distinctness preserved:} capacity
+($\sgn(\mu^2)$) and value (sign-selection) remain \emph{distinct bits} (DG-4); the theorem shows they
+share a root cause, it does not conflate them.
+\end{proof}
+
+\begin{remark}[Why this sharpens, not stalls]
+The unification turns ``does chirality emerge?'' into a single sharp question. Explicit breaking is
+closed unconditionally (STATUS-2). Spontaneous breaking is closed \emph{iff} H1 holds. So the entire
+verdict-moving capacity question is now: \textbf{is the DSL measure reflection-positive?} --- one
+well-posed positivity question, replacing ``compute the full \S14.17 effective action.'' The residual
+may still touch \S14.17 (a complete OS proof could need the action), but it is \emph{relocated and
+sharpened}, and may be forced outright if the first-pass (Prop.~\ref{prop:vwa}) holds up under scrutiny.
+\end{remark}
+
+% ============================================================
+\section{VW-d: the conditional verdict map}
+
+\begin{theorem}[Conditional verdict map]\label{thm:vwd}
+Assume H1 (reflection positivity). Then by Thm.~\ref{thm:unif} the substrate parity $\Ztwo$ is unbroken
+within the substrate axioms: $\mu^2>0$ and $\eta=0$. Since the realized handedness FI-C-9 is nonzero (it
+is \emph{used}, via CHI-1/CAP-1), it cannot arise from the substrate axioms alone. Hence, conditional on
+H1, exactly one of:
+\begin{enumerate}[label=(\Alph*),leftmargin=2.2em]
+\item \textbf{V3 by principle.} FI-C-9 is a genuine \emph{primitive input} --- the spontaneous-mechanism
+branch is \emph{closed} (strictly stronger than today's ``V3 $=$ not yet derived''); or
+\item \textbf{Emergent via the bridge.} FI-C-9 is \emph{externally sourced} by the SM bridge ---
+\emph{explicit} breaking by a cross-sector $\Po$-odd source (the SM chiral content / $\delta_{CP}$), not
+spontaneous substrate breaking $=$ B-iii-(ii) / CONJ-CHIR-1.
+\end{enumerate}
+This is a \emph{conditional} dichotomy. It makes \emph{no unconditional verdict move}: V3/W3 stand.
+\end{theorem}
+
+\begin{remark}[Spontaneous vs.\ explicit --- load-bearing]
+Vafa--Witten forbids \emph{spontaneous} parity breaking; it says nothing against an \emph{explicit}
+$\Po$-odd source. STATUS-2 shows there is no \emph{axiom-level} explicit source --- so within the
+substrate axioms H1 would force $\eta=0$ outright. The only escape is an explicit source from
+\emph{outside} the substrate axioms: the SM bridge. This is exactly why branch (B) routes through
+B-iii-(ii)/CONJ-CHIR-1 and inherits its ``kinematic, P2'' cap.
+\end{remark}
+
+\begin{remark}[Continuum-limit placement (VW-e)]\label{rmk:cont}
+Strict spontaneous symmetry breaking requires a thermodynamic/continuum limit; a \emph{finite} 600-cell
+cannot spontaneously break a symmetry, it can only \emph{select} one of two degenerate vacua. So the
+Vafa--Witten analysis is sharpest on the $\Phi$-continuum EFT (CONT-1), where ``free energy,'' ``SSB,''
+and ``reflection positivity'' are standard notions and where the SM chirality the bridge connects to
+lives. The finite-substrate facts used above (real $\Qphi$ coefficients, the reflection coset) are the
+lattice precursors of the continuum measure properties; promoting them to statements about the
+$\Phi$-image is part of closing H1.
+\end{remark}
+
+% ============================================================
+\section{What is and is not established}
+
+\noindent\textbf{Established (reachable now):}
+\begin{itemize}[leftmargin=1.5em]
+\item VW-b: the det-coset $\Ztwo$ is a vectorial reflection in VW's protected class (Lemma~\ref{lem:vwb}).
+\item VW-c: the bare substrate carries no VW-evasion route at the level hardened; each enters via the SM
+bridge (Lemma~\ref{lem:vwc}).
+\item The unification: V2-exclusion (no explicit breaking) $+$ the VW no-go (no spontaneous breaking,
+conditional on H1) are the two faces of substrate reflection-positivity, closing both breaking routes
+(Theorem~\ref{thm:unif}).
+\item The conditional verdict map: $\textrm{H1}\Rightarrow$ (V3-by-principle $\vee$ bridge-sourced)
+(Theorem~\ref{thm:vwd}).
+\item The reduction: the verdict-moving capacity question $=$ ``is the DSL measure reflection-positive?''
+\end{itemize}
+
+\noindent\textbf{Not established (open / out of scope):}
+\begin{itemize}[leftmargin=1.5em]
+\item H1 (reflection positivity) is \emph{not} proved --- criteria $+$ first-pass only
+(Prop.~\ref{prop:vwa}); a full OS proof may need the \S14.17 DSL action.
+\item No $\sgn(\mu^2)$ is computed; no positivity is proved; no chiral vacuum is shown to form or not
+form unconditionally.
+\item \textbf{No verdict move:} chirality stays V3 (spatial) / W3 (temporal). Branch (A) vs (B) of
+Theorem~\ref{thm:vwd} is not decided.
+\item All bridge-side statements inherit BRIDGE-1's kinematic / premise-P2 cap.
+\end{itemize}
+
+% ============================================================
+\section{Falsifiers}
+
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{VW-F1.} The det-coset $\Ztwo$ is shown to act as an \emph{axial}/chiral symmetry in the
+relevant EFT $\Rightarrow$ VW-b fails, H2 is not met, the no-go route is void (and the symmetry is
+reclassified --- itself informative).
+\item \textbf{VW-F2.} The DSL measure is shown to be \emph{non}-positive / to carry a genuine sign
+problem $\Rightarrow$ H1 fails in the negative; $\sgn(\mu^2)$ is genuinely dynamical and \S14.17-gated
+(fall through to the susceptibility backstop).
+\item \textbf{VW-F3.} An \emph{axiom-level} (substrate-intrinsic) $\theta$-term or chiral content is
+found $\Rightarrow$ contradicts STATUS-2's achiral / V2-exclusion result; forces re-examination of
+STATUS-2.
+\item \textbf{VW-F4.} The unification (Theorem~\ref{thm:unif}) is shown to conflate capacity and value
+rather than share a root $\Rightarrow$ the centerpiece fails; the two no-gos remain merely parallel.
+\item \textbf{VW-F5.} A future chiral-susceptibility computation (the backstop) returns a sign
+\emph{contradicting} a VW conclusion reached on the same $\Phi$-EFT $\Rightarrow$ a genuine
+inconsistency (most likely a continuum-vs-finite-lattice artifact per Rmk.~\ref{rmk:cont}).
+\end{itemize}
+
+% ============================================================
+\section*{References (internal)}
+\addcontentsline{toc}{section}{References (internal)}
+% ============================================================
+
+\begin{itemize}[leftmargin=1.5em]
+\item $\sgn(\mu^2)$ route scope sketch (Patch 0679) --- the VW-a..e decomposition; the susceptibility
+backstop; the reserved ID THEO-CHIR-VW-1.
+\item B-iii Landau scoping (Patch 0668) --- capacity $\Leftrightarrow\sgn(\mu^2)$; the $\Ztwo$-even
+$V(\eta)$.
+\item THEO-CHIR-STATUS-2 (F2) --- the $\Hf\to\Hfp$ det-coset $\Ztwo$; the axiom-level V2-exclusion.
+\item THEO-CHIR-BRIDGE-1 (Patch 0663/0665, 3/3) --- the $\Ztwo$-match $+$ the P/T-face dictionary
+(kinematic, premise P2); the candidate external channel.
+\item THEO-CHIR-TARROW-1 (F3) --- $\sgn(\delta)$ at W3; the $\CPT$ P/T-face unification.
+\item THEO-CHIR-CHI-1 / THEO-CAP-1 --- $|\chi|=\varphi^{-3}$; $\Delta p_{LR}=\varphi^{-3}/6$ (shipped).
+\item THEO-CHIR-CONT-1 (\#65) --- the continuum-limit map $\Phi$ (Wilson--Fisher block-spin).
+\item THEO-DSL-4..12 (SD) --- closed-form real $\Qphi$ substrate coefficients; the path-enumeration $+$
+PSLQ pipeline (the susceptibility backstop).
+\item Vafa \& Witten (1984), \emph{Parity Conservation in QCD} / \emph{Restrictions on Symmetry Breaking
+in Vector-Like Gauge Theories}, Nucl.\ Phys.\ B234 --- the no-go consumed as Thm.~\ref{thm:vw}.
+\item \texttt{code/verify\_vw\_1\_reflection\_positivity.py} --- CHECK 1 (VW-b), CHECK 2 (VW-c $+$
+unification logic), CHECK 3 (VW-a first-pass $+$ conditional verdict map $+$ honest caps).
+\end{itemize}
+
+\end{document}
