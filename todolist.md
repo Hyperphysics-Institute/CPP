@@ -167,6 +167,15 @@ Empty sections marked `(none yet)` to keep the skeleton uniform across heavily-d
 **Estimated effort**: ~9 patches (one per sector), deliverable as a sequential arc. Could also be done piecemeal as sessions touch specific sectors for unrelated reasons (lazy normalization).
 **Registered**: 25 May 2026 (frontier decomposition close, noted from sector-file spot-check when Thomas observed format heterogeneity in extracted files).
 
+### TODO-013 — Annotate BRIDGE-1 falsifier B4 as resolved-as-documentation (DG-3, carried from Session 151)
+
+**Status**: small hygiene note; not blocking; **do NOT edit the review-closed theorem solely for this** — carry until the next substantive BRIDGE-1 maintenance bump.
+**Why P2**: `series_umbrella/series_substrate_chirality_arc/chirality_derivations/theo_chir_bridge_1.tex` (THEO-CHIR-BRIDGE-1) is multi-AI review-closed 3/3 at v1.1 (Patch 0665). Opening it solely to annotate one falsifier is disproportionate and risks re-triggering review; the correct discipline (Session 151 handover DG-3) is to fold the annotation into the *next* version bump that touches the theorem for a substantive reason.
+**Issue**: Falsifier **B4** currently reads "the χ normalization is irreconcilable (φ⁻¹ vs φ⁻³)" (`theo_chir_bridge_1.tex` falsifier ledger). That worry was **resolved as a non-tension at Patches 0669 + 0670**: φ⁻³ is the unambiguous live magnitude (FI-C-9 = CHI-1 = Capotauro v1.0/v2.0); φ⁻¹ is both a registered dead-end (Findings C-1/C-2/C-3, Session 86) and the first-shell *distance* from which CHI-1 builds χ = (1−φ⁻¹)/(1+φ⁻¹) = φ⁻³. So B4 as written overstates a live risk.
+**Deliverable**: at the next BRIDGE-1 maintenance bump, annotate B4 as "**resolved-as-documentation** (χ φ⁻¹-vs-φ⁻³ reconciled as a non-tension, Patches 0669/0670); **retained only as a forward hook on sub-claim (b)** — re-fires only if a future first-principles |χ| derivation returns φ⁻¹ or φ⁻² as the *magnitude*." No standalone edit, no version bump for this alone.
+**Estimated effort**: trivial (one falsifier-line annotation, folded into a future bump).
+**Registered**: 30 May 2026 Session 152 Patch 0674 (carried from the Session 151 handover Priority 2 / DG-3; reclassification first noted at Patch 0669).
+
 ---
 
 ## Cleared items (history)
