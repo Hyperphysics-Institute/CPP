@@ -55,6 +55,28 @@
 %     on Mechanism A; direction free); the dynamical-vs-geometric non-conflict
 %     with TARROW-1. Single-pass; multi-AI review pending (the W-move is NOT
 %     closed by registration).
+%   v1.1 (Patch 0692, Session 152, 30 May 2026) — multi-AI review cycle CLOSED
+%     3/3, no falsifier. Grok SCRIPT-EXECUTED §7 (CHECK 1/2/3 pass) +
+%     INDEPENDENTLY RECOMPUTED abc from first principles + rank-confirmed the
+%     601-dim cycle-space generation (Q3); Copilot SCRIPT-EXECUTED + led Q5;
+%     ChatGPT INSPECTED + led Q1. All three converge on the same two edits;
+%     dispositions split only on label (ChatGPT RESTATEMENT-NEEDED; Grok +
+%     Copilot CONFIRM-with-calibration), adjudicated RESTATEMENT-GRADE on merits
+%     (the v1.0 capacity verdict read marginally stronger than the engine
+%     licenses — the VW-2 Q1 precedent). RESTATEMENT (no engine/computation
+%     change): (A) the capacity verdict is made explicitly conditional —
+%     C_T = Yes | Mechanism A, and the upgrade is "candidate W1 conditional on
+%     Mechanism A" (the conditionality lives INSIDE the verdict, not appended);
+%     once OPEN-FP-F1-2 discharges Mechanism A the W-move becomes unconditional.
+%     CALIBRATIONS: (B, Q5) the §6 non-conflict is reframed — the current is the
+%     DYNAMICAL REALIZATION of the unique T-odd object sign(delta) (it flips with
+%     delta via 2 delta^3 abc), NOT a new T-odd object, making the TARROW-1
+%     consistency ironclad; (C, Q3) an explicit homology sentence is added to
+%     Lemma B. All three CONFIRM the STATUS-1 falsifiable-constraint bar is met
+%     (odd-order / O(delta^3) / 420-1200 / abc structure / direction tied to
+%     sign(delta) are genuine constraints — informative conditional mechanism,
+%     not bookkeeping). The W3 -> W1-conditional move is CLAIMED at this close.
+%     Reviews + synthesis + merits-adjudication: review/reviews-CHIR-TARROW-2.md.
 % ============================================================
 
 \documentclass[11pt,letterpaper]{article}
@@ -94,7 +116,7 @@ the $\bigO{\delta^3}$ Non-Reversibility of the Mechanism-A Process\\
 \large A Layer-2.5 Provisional Computational Theorem\\
 the mechanism half of THEO-CHIR-TARROW-1}
 \author{Conscious Point Physics --- Substrate Chirality Arc}
-\date{Version 1.0 --- Patch 0690, Session 152 --- 30 May 2026 \\[2pt]\small(single-pass; multi-AI review pending; the W3$\to$W1 move is NOT closed by registration)}
+\date{Version 1.1 --- Patch 0692, Session 152 --- 30 May 2026 \\[2pt]\small(v1.0 Patch 0690; multi-AI review cycle CLOSED 3/3 at v1.1, no falsifier; Q1 restatement-grade --- the capacity verdict made explicitly conditional on Mechanism~A; the W3$\to$W1-conditional move claimed at this close)}
 
 \begin{document}
 \maketitle
@@ -113,13 +135,17 @@ $a+b+c=0$ (closed loop $+$ uniform edge length), giving an $\bigO{\delta^1}$ cyc
 for \emph{every} face and an $\bigO{\delta^3}$ content equal to $2\delta^3 abc$ (via $a^3+b^3+c^3=3abc$).
 A direct computation over the 1200 triangular faces finds $abc\ne0$ on \textbf{420} of them (values
 $\{1/8,1/4\}$, all touching the second shell). A non-reversible process carries a steady-state
-probability current --- a time-asymmetry --- so $\CT$ is answered \textsf{Yes} at the Mechanism-A
-framework level: a \emph{candidate} $\textbf{W3}\to\textbf{W1}$ upgrade (mechanism derivable;
-\emph{direction} free, per TARROW-1's axiom-level W2-exclusion). The result does \emph{not} contradict
-TARROW-1: TARROW-1's ``no $\Te$-odd object'' concerned static \emph{geometric} invariants, whereas the
-current is a \emph{dynamical} object --- precisely the F.2 physicalization TARROW-1 flagged as unbuilt.
-Layer~2.5, provisional, conditional on Mechanism~A; the spatial verdict (V3) is untouched and the
-arrow direction is not fixed. Multi-AI review is required before the W-move is claimed.
+probability current --- a time-asymmetry --- so $\CT$ is answered \textsf{Yes} \emph{conditional on
+Mechanism~A}: a \emph{candidate} $\textbf{W1}$ \emph{conditional on Mechanism~A} (mechanism derivable;
+\emph{direction} free, per TARROW-1's axiom-level W2-exclusion), the residual being the Layer-4 question
+$A1\text{--}A11\Rightarrow\text{Mechanism~A}$ (OPEN-FP-F1-2; once discharged the move is unconditional).
+The result does \emph{not} contradict
+TARROW-1: the current is the \emph{dynamical realization} of the unique $\Te$-odd object $\sgn(\delta)$
+(it flips sign with $\delta$ via $2\delta^3 abc$), not a new $\Te$-odd object --- precisely the F.2
+physicalization TARROW-1 flagged as unbuilt.
+Layer~2.5, conditional on Mechanism~A; the spatial verdict (V3) is untouched and the
+arrow direction is not fixed. Multi-AI review cycle CLOSED 3/3 (no falsifier); the W-move is claimed at
+this close.
 \end{abstract}
 
 \section{Context: the gap TARROW-1 left open}
@@ -161,7 +187,9 @@ $\bigO{\delta^2}$): there is no $\bigO{\delta^2}$ term.
 
 \section{The per-face triple-product formula}
 The triangular faces of the 600-cell generate the cycle space of its $1$-skeleton (the polytope boundary
-is a simply-connected triangulated $3$-sphere), so detailed balance holds iff $\sum L$ vanishes around
+is a simply-connected triangulated $3$-sphere, so $H_1=0$ and its $1$-cycles are exactly the boundaries
+of its $2$-simplices; the $1200$ face-cycles thus span the $E-V+1=601$-dimensional cycle space), so
+detailed balance holds iff $\sum L$ vanishes around
 every triangular face.
 
 \begin{lemma}[Per-face content]\label{lem:perface}
@@ -214,29 +242,45 @@ current $J$ circulating around the cycles on which detailed balance fails. A non
 therefore exhibits a \emph{derived} substrate $\Te$-asymmetry mechanism --- the $\bigO{\delta^3}$
 probability current sourced by Mechanism~A --- conditional on Mechanism~A.
 
-\begin{proposition}[Candidate $\textbf{W3}\to\textbf{W1}$ upgrade]\label{prop:upgrade}
-At the Mechanism-A framework level, the capacity $\CT$ (is a substrate $\Te$-asymmetry mechanism
-derivable?) is answered \textsf{Yes}: Theorem~\ref{thm:main} supplies one. This is the upgrade condition
-TARROW-1 named for $\textbf{W3}\to\textbf{W1}$. The value $\VT$ (the arrow \emph{direction}) is
-untouched: Theorem~\ref{thm:main} produces a current but does not fix which sense of traversal is
-``forward,'' consistent with TARROW-1's axiom-level W2-exclusion. The upgrade is therefore to
-\textbf{W1} (mechanism derivable, direction free $=$ cosmological inheritance), not to W2.
+\begin{proposition}[Candidate $\textbf{W1}$ conditional on Mechanism~A]\label{prop:upgrade}
+The capacity $\CT$ (is a substrate $\Te$-asymmetry mechanism derivable?) is answered \textsf{Yes}
+\emph{conditional on Mechanism~A}: Theorem~\ref{thm:main} supplies such a mechanism within the F.1
+framework. This is the upgrade condition TARROW-1 named for $\textbf{W3}\to\textbf{W1}$. The value $\VT$
+(the arrow \emph{direction}) is untouched: Theorem~\ref{thm:main} produces a current but does not fix
+which sense of traversal is ``forward,'' consistent with TARROW-1's axiom-level W2-exclusion. The
+upgrade is therefore to \textbf{W1} \emph{conditional on Mechanism~A} (mechanism derivable, direction
+free $=$ cosmological inheritance), not to W2 --- the conditionality residing \emph{in} the verdict, not
+appended to it. The residual is the Layer-4 question $A1\text{--}A11\Rightarrow\text{Mechanism~A}$
+(OPEN-FP-F1-2); once discharged, the $\textbf{W3}\to\textbf{W1}$ move becomes unconditional.
 \end{proposition}
 
-\noindent The upgrade is \emph{candidate} and \emph{conditional}: it holds at the Mechanism-A framework
-level, with the residual that Mechanism~A is itself a framework axiom (OPEN-FP-F1-2), not yet derived from
-A1--A11. Per DG-3, the W-move is claimed only after multi-AI review; this registration does not close it.
+\begin{remark}[The upgrade is informative, not bookkeeping]
+By the STATUS-1 calibration (a verdict upgrade is informative only if it yields a \emph{falsifiable}
+constraint, not a relabeling), this upgrade qualifies: the mechanism predicts odd-order-only violation,
+first nonzero at $\bigO{\delta^3}$, on exactly $420$ of $1200$ faces, with per-face content $2\delta^3
+abc$ and current direction tied to $\sgn(\delta)$ --- all genuine, checkable constraints. The
+$\textsf{No}$ is not relocated to an opaque assumption; it is reduced to the single, named, standing
+Layer-4 problem OPEN-FP-F1-2.
+\end{remark}
+
+\noindent The upgrade is \emph{conditional on Mechanism~A}, which is itself a framework axiom
+(OPEN-FP-F1-2), not yet derived from A1--A11. The multi-AI review cycle is CLOSED 3/3 (no falsifier); the
+$\textbf{W3}\to\textbf{W1}$-conditional move is claimed at this close, and becomes unconditional once
+OPEN-FP-F1-2 discharges.
 
 \section{Non-conflict with TARROW-1}
 TARROW-1's T-even-geometry lemma established that every static
 \emph{geometric} invariant of the substrate --- coordinates, Gram data, distance spectrum, the
 orientation pseudoscalar $\sgn(\nhat)$ --- is $\Te$-even, and that the only $\Te$-odd object in the
-registered framework is $\sgn(\delta)$ itself. Theorem~\ref{thm:main} does not contradict this: the
-probability current is not a static geometric invariant but a \emph{dynamical} object built from
-Mechanism~A's \emph{rates}. It is exactly the ``F.2 physicalization'' TARROW-1 named as unbuilt --- the
-coupling of the dynamics to a $\Te$-odd datum. So this theorem \emph{builds} (partially) the object whose
-absence pinned $\CT=\textsf{No}$; the static-geometry $\Te$-evenness and the uniqueness of $\sgn(\delta)$
-as the \emph{geometric} $\Te$-odd object both stand.
+registered framework is $\sgn(\delta)$ itself. Theorem~\ref{thm:main} does not introduce a competing
+$\Te$-odd object: the probability current is the \emph{dynamical realization} of $\sgn(\delta)$. Every
+violating face carries content $2\delta^3 abc$, which flips sign exactly when $\delta$ does, so the
+current is a functional of $\delta$ and introduces no independent $\Te$-odd degree of freedom --- it
+\emph{physicalizes} the unique $\Te$-odd object TARROW-1 already identified. This is precisely the
+``F.2 physicalization'' TARROW-1 named as unbuilt: the coupling of the dynamics to the $\Te$-odd datum
+$\sgn(\delta)$. The theorem therefore \emph{builds} (partially) the object whose absence pinned
+$\CT=\textsf{No}$, while the static-geometry $\Te$-evenness and the uniqueness of $\sgn(\delta)$ as the
+sole $\Te$-odd object both stand --- strengthening, not straining, the consistency with TARROW-1.
 
 \section{Scope: what this theorem does and does not claim}
 \begin{itemize}[leftmargin=2em]
@@ -246,8 +290,9 @@ triple-product formula; rule out the curl-free / equilibrium branch of the deep-
 \item \textbf{Does not:} move the \emph{spatial} verdict (FI-C-9 stays \textbf{V3}; this is the T-axis);
 fix the arrow \emph{direction} (W1, not W0); prove reflection-positivity fails or $\sgn(\mu^2)<0$ (the
 P-side capacity is a separate computation --- detailed balance is sufficient, not necessary, for RP, and
-$\mathrm{RP}=$ OS reflection $\ne$ $\Te$-symmetry); close the $\textbf{W3}\to\textbf{W1}$ move
-(registration is provisional; review required, DG-3).
+$\mathrm{RP}=$ OS reflection $\ne$ $\Te$-symmetry); claim the \emph{unconditional} $\textbf{W3}\to\textbf{W1}$
+move (the conditional move is claimed at this close; the unconditional move awaits the Layer-4 derivation
+of Mechanism~A, OPEN-FP-F1-2).
 \end{itemize}
 
 \section{Conditionality and falsifiers}
