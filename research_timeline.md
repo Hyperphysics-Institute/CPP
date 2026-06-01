@@ -19,11 +19,19 @@
 
 **None active as of 15 May 2026.** The SF-2 v1.0 SHIP (Patch 0368) + post-SHIP documentation campaign (Patches 0369–0375) + v1.01 micro-fix (Patch 0376) closed the most recent active campaign. The next priority-queue item should be launched when authorized.
 
+**Cosmology / dark-sector arc — RESULTS BANKED, NOT a paper (1 June 2026, Session 153, Patches 0720–0727).** OPEN-SR-5 Sea-gravitation solved A→D (conditional capstone); tetra-gravity DM arc Steps 1–5 done. CONJ-COSMO-1 (dark matter) NOT confirmed (weak link = structure formation); CONJ-COSMO-2 (DE↔DM) conditionally supported. Two campaign gates remain (below). Not review- or paper-ready (conditional + one negative). Working home: `series_phenomena/cosmology/`.
+
 ---
 
 ## Priority Queue (Next-Up)
 
 *Papers approved to launch, in priority order. The top of this list is the next campaign that begins when Thomas authorizes.*
+
+### Priority 0 — Dark-sector verdict campaigns (multi-session; gate the DM true/false verdict; opened 1 June 2026)
+
+Two entangled foundational campaigns; the dark-matter verdict needs BOTH favorable (either failing cleanly ⇒ false; both ⇒ true; persistent ⇒ open).
+- **OPEN-SR-6 → DM-2 generation** (Gate 2): expand OPEN-SR-6 (Big Bang from CP/GP density ratio) into an early-universe-dynamics program targeting a scale-invariant adiabatic super-horizon spectrum. Falsification-first; cheapest kill first — does CPP early dynamics admit ANY scaling-symmetric/quasi-de-Sitter phase? Kickoff: `handovers/2026-06-01_session_153_cosmo_dm_close_and_SR6_kickoff.md`.
+- **c08 closed field equation** (Gate 1): derive the continuum limit of the discrete self-consistency operator; settle whether curvature sources from the LSP excess (→ ground-state exclusion, the SR-5 D2 condition) or absolute |SSV|. c08's own central open problem.
 
 ### Priority 1 — Capotauro dedicated paper (δ_CP via OPEN-SM-4; candidate second cross-sector closure)
 

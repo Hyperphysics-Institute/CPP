@@ -15,6 +15,13 @@
 
 ## Near-Term Papers (ready to write)
 
+### Project 00: Dark-Sector Verdict Campaigns (OPEN-SR-6→DM-2 + c08) — **NOT papers; multi-session research gating the dark-matter true/false verdict** (registered 1 June 2026, Session 153)
+
+The cosmology/DM arc (Patches 0720–0727) banked SR-5 A→D (conditional) and DM Steps 1–5, but **CONJ-COSMO-1 is not confirmed**: the verdict gates on two entangled foundational problems, each genuine multi-session research, neither closeable without manufacturing physics.
+- **Gate 2 — OPEN-SR-6 → DM-2 generation.** Expand OPEN-SR-6 (Big Bang from CP/GP density ratio) toward a scale-invariant, adiabatic, super-horizon-coherent primordial spectrum (the inflationary target). Falsification-first; cheapest kill = does CPP early dynamics admit any scaling-symmetric/quasi-de-Sitter phase? **Deliverable:** either a derived scale-invariant spectrum (verdict→true-eligible), a clean no-go (verdict→false), or a characterized open. Kickoff doc: `handovers/2026-06-01_session_153_cosmo_dm_close_and_SR6_kickoff.md`. Falsifier: a clean no-go on the scaling phase falsifies CONJ-COSMO-1 as a primary structure model.
+- **Gate 1 — c08 closed field equation.** Derive the continuum limit of the discrete self-consistency operator; settle excess-vs-absolute sourcing (the SR-5 D2 ground-state-exclusion condition). c08's own central open problem; underpins the entire cosmological sector. Companion: c08 dev-notes (Grok fixed-point material).
+- **Verdict logic:** both gates favorable ⇒ true; either failing cleanly ⇒ false; persistent block ⇒ legitimate open. Cross-refs: `frontier_sectors/CONJ.md` CONJ-COSMO-1/2, OPEN-COSMO-DM-2; `frontier_sectors/SR.md` OPEN-SR-5/6/7.
+
 ### Project 0: Derive Operator Formalism from CPP Primitives (Layer B Gap, OPEN-SS-16) — **HIGHEST LEVERAGE**
 **Status:** Not yet attempted — registered as OPEN-SS-16 (16 April 2026)
 **Goal:** Show that DI-bit exchange dynamics on the 600-cell lattice forces complex-linear Hermitian operators, Lie bracket structure, Caldeira–Leggett system-bath coupling, rapid thermalisation, and full Gibbs equilibration. This would close the Layer B gap across every paper in the programme simultaneously — SM-3 (Koide), SS-3 (SU(3) uniqueness), and all future papers that import QM formalism.
