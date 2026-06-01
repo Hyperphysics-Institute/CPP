@@ -89,26 +89,26 @@
 ---
 
 ### OPEN-SR-6: Big Bang from CP/GP Density Ratio
-**Status:** OPEN
-**Sector(s):** SR
-**Priority:** MEDIUM
-**One-line statement:** Derive initial expansion rate from CP/GP ratio at the initial Moment.
-**Dependencies:** OPEN-SR-7 (GP exclusion)
-**Cross-sector connections:** Cosmology series; Capotauro timing
+**Status:** OPEN — **arc opened (Patch 0729); Step 1 (scaling-phase kill-check) DONE: conditional no-go.** Reframed by the early-universe audit: GP spacing is fixed at l_P (the lattice IS space), so expansion = lattice growth and the initial Moment = the GP-exclusion-saturated state; OPEN-SR-6 is the law governing relaxation/dilution from saturation. **[Step 1, Patch 0729 — does CPP early dynamics admit ANY scaling-symmetric/quasi-de-Sitter phase? CONDITIONAL NO (on Gate-1 excess-sourcing).** Within the recovered Step-D Friedmann framework: constant H needs a non-diluting source (w=−1); the only such CPP component (uniform Sea) is non-gravitating by excess-sourcing (c08 D2); the GP-exclusion source is a maximally stiff (w∈(0,1]) DILUTING excess → comoving Hubble radius grows → modes enter, nothing freezes → no scale-invariant generation. ⇒ CONJ-COSMO-1 fails as a *primary structure-formation* model. **Residual escape (triply disfavoured, not formally excluded):** a substrate-intrinsic exponential lattice-growth law decoupled from Friedmann — undeveloped, conflicts with the recovered radiation-dominated early background, and a fixed l_P is anti-scale-free. **Next sub-step:** characterise the OPEN-SR-7 lattice-growth law and test for double-counting vs the Step-D Friedmann recovery (empties the escape → clean unconditional false on the structure role, or exhibits a self-consistent window → verdict reverts to open, proceed to Step 2). See `series_phenomena/cosmology/early_universe/step1_scaling_phase_kill.md`; verify `scripts/0729_scaling_phase_nogo.py` (19/19).]**
+**Sector(s):** SR, COSMO
+**Priority:** HIGH (gates the CONJ-COSMO-1 dark-matter verdict via OPEN-COSMO-DM-2)
+**One-line statement:** Derive the initial expansion / lattice-growth law from the CP/GP packing ratio at the initial Moment; decide whether it admits a self-similar (constant-H) window (the DM-2 generation gate).
+**Dependencies:** OPEN-SR-7 (GP exclusion); Gate 1 = c08 closed field equation (the Step-1 verdict is conditional on excess-sourcing)
+**Cross-sector connections:** Cosmology series; Capotauro timing; **OPEN-COSMO-DM-2** (DM-2 generation barrier — OPEN-SR-6 is the shared hook); CONJ-COSMO-1
 **Paper(s):** GR companion
-**Last updated:** 23 March 2026
+**Last updated:** 1 June 2026 (Patch 0729 — arc opened, Step 1 conditional no-go)
 
 ---
 
 ### OPEN-SR-7: GP Exclusion Principle
-**Status:** OPEN
-**Sector(s):** SR
-**Priority:** MEDIUM
-**One-line statement:** Formalise the GP packing density limit and its consequences for extreme physics.
+**Status:** OPEN — **partial result (Patch 0729): cosmological EoS character pinned.** The GP packing/exclusion limit behaves as a degeneracy/excluded-volume pressure: stiffens to the causal limit w→1 at the saturated initial Moment (Pauli / hard-sphere physics) and softens to w~0 on dilution, so the cosmological packing source has **w ∈ (0,1] throughout** — maximally stiff, never near −1. This is what makes the OPEN-SR-6 Step-1 scaling-phase kill go through (no constant-H window on the packing branch). The **full** OPEN-SR-7 (an explicit lattice-growth law N_GP(Moment) and the saturation density n_max) remains to be derived — and is the exact next sub-step that decides the OPEN-SR-6 residual escape (does a self-consistent exponential-growth window exist, or is the packing branch generically decelerating?).
+**Sector(s):** SR, COSMO
+**Priority:** MEDIUM → HIGH (now load-bearing for the dark-matter structure-formation verdict)
+**One-line statement:** Formalise the GP packing density limit and its consequences for extreme physics (black holes, Big Bang); derive the explicit lattice-growth law and saturation density n_max.
 **Dependencies:** None blocking
-**Cross-sector connections:** Black holes, Big Bang, CP superposition
+**Cross-sector connections:** Black holes, Big Bang, CP superposition; **OPEN-SR-6 / OPEN-COSMO-DM-2** (the packing EoS feeds the early-universe scaling-phase question)
 **Paper(s):** GR companion
-**Last updated:** 23 March 2026
+**Last updated:** 1 June 2026 (Patch 0729 — packing EoS w∈(0,1] pinned; explicit growth law still owed)
 
 ---
 
