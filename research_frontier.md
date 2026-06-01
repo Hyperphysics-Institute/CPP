@@ -60,6 +60,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 | CHIR | [`frontier_sectors/CHIR.md`](frontier_sectors/CHIR.md) | Substrate Chirality Arc — chirality audit + downstream OPEN-CHIR-* derivation programme | 5 active, 1 resolved |
 | GLOBAL | [`frontier_sectors/GLOBAL.md`](frontier_sectors/GLOBAL.md) | Cross-Series (e.g., three SM generations, full SM from single 600-cell) | 2 |
 | WORKFLOW | [`frontier_sectors/WORKFLOW.md`](frontier_sectors/WORKFLOW.md) | Workflow / Infrastructure | 1 |
+| COSMO / DPS | [`frontier_sectors/CONJ.md`](frontier_sectors/CONJ.md) | Cosmology + Dipole-Sea population — tetra-gravity dark-matter arc (interim: OPEN-COSMO-DM-1 + CONJ-DPS-1/2/3 + CONJ-COSMO-1 co-located in CONJ.md; `COSMO.md` split deferred until the arc grows) | 1 active + 4 conjectures |
 
 ### §2, §3 — Cross-Sector Categories
 

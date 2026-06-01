@@ -186,7 +186,28 @@ The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_r
 - **Stale open problems** — `frontier_sectors/SR.md` still lists OPEN-SR-4 (full field equations) and OPEN-SR-8 (equivalence principle) as OPEN with a "weak-field GR derived; full nonlinear not yet proved" best-lead note, but c05 derives Newtonian gravity (G = ℏc/m_P² exact), c07 derives weak-field GR + equivalence principle + factor-of-2 lensing, and c08 addresses strong-field GR. Reconcile SR.md ↔ companions; retire/downgrade OPEN-SR-8 and re-scope OPEN-SR-4 as warranted.
 - **Registry retrofit** — register companion results into `theorem-registry.md` / frontier where they meet the bar (e.g. c05 G = ℏc/m_P², c07 weak-field Schwarzschild + lensing factor-of-2).
 - **Spin-paper correction** — c20/c21/c22 may carry the pre-correction "2:1 frequency"; reconcile against THEO-SPIN-1 (v1.1) corrected this session (radius 2 / frequency 2√2).
+- **DM-arc tie (added Patch 0702, 31 May 2026):** the tetra-gravity DM arc's Step-0 audit re-confirmed the SR.md staleness — `frontier_sectors/SR.md` (all entries dated 23 March, everything OPEN) does not reflect c05/c07/c08. This bullet (the "Stale open problems" item above) is the home for that reconciliation; no separate TODO was minted to avoid duplication. Step 0 of OPEN-COSMO-DM-1 only *cites* c05/c07 and does not block on this hygiene pass.
 - **Effort:** multi-patch; sequence after the DM arc's Gate-1 (σ/m) and Gate-2 (bookkeeping) calculations are in hand.
+
+
+### TODO-014 — c05 "G = ℏc/m_P², zero free parameters" framing: resolve the Planck-scale circularity before Step 0 leans on it
+**Added:** 31 May 2026, Session 149, Patch 0702. **Priority:** P2 (does NOT block the DM arc — framing issue, not a physics blocker).
+
+**Issue.** c05 (`c05_gravity_from_SSV_shell_broadcast.tex` §"The Gravitational SSV Quantum and Newton's G") boxes `G = ℏc/m_P²` and calls it "exact ... no free parameters," verifying numerically by plugging in CODATA `m_P = 2.176×10⁻⁸ kg`. As written this is circular: the Planck mass is *defined* by `m_P ≡ √(ℏc/G)`, so `G = ℏc/m_P²` is an algebraic identity, and the CODATA `m_P` used in the "verification" was itself computed from the measured `G`. It is a genuine zero-parameter *prediction of G* only if the Planck scale (`m_P` / `l_P` / `t_P`) is independently fixed by the 600-cell **without reference to G**.
+
+**What c02 actually establishes (checked Patch 0700).** c02 (`c02_dipole_stiffness_C.tex`) derives a genuinely *dimensionless* geometric constant `α_geom = 3(11+5√5)√(5+√5)/320 ≈ 0.5594` (the Voronoi second-moment efficiency). But every dimensionful quantity is carried by `E_P`, `l_P` taken as given (`SSV_crit ≡ E_P/l_P³` asserted as the Planck energy density). So the lattice fixes dimensionless ratios; the absolute scale is **not** derived there.
+
+**Dimensional-analysis reality (do not promise the impossible).** A dimensionful constant cannot be derived from pure geometry — at least one dimensionful input (the lattice spacing ≡ `l_P`) must set the scale. "Derive G from first principles" therefore cannot literally succeed; pursuing it as stated would be chasing a category error. The honest, defensible target is a **restatement + a verification**, not a derivation of a dimensionful number from numbers.
+
+**Deliverable.**
+1. **Verify the calibration is singular and shared** — confirm the whole CPP corpus fixes its absolute scale by exactly *one* dimensionful input (the lattice spacing / `l_P`), used consistently everywhere, with no second hidden scale-setting calibration. (If a second independent dimensionful calibration exists, the "zero free parameters" claims across the corpus need re-auditing, not just c05's.)
+2. **Restate c05's claim precisely** — replace "G derived, zero free parameters" with "all *dimensionless* structure (incl. `α_geom`) is fixed by the 600-cell; the single dimensionful scale `l_P` is the one shared calibration; `G = ℏc/m_P²` then follows with **no additional** parameter." This is still a strong result; it is just not "G from nothing."
+3. **Trace the upstream chain** — document where `l_P`/`E_P`/`t_P` enter (c02 and any earlier paper) and whether anything purports to fix them independently; if such a derivation is claimed, scrutinize it for a concealed dimensionful input.
+4. **Step-0 wording lock** — until (1)–(3) are done, OPEN-COSMO-DM-1 Step 0 cites c05 as "**Newtonian force law recovered**" (the DM arc only needs the Newtonian *form* with a G matching observation, which c05 supplies regardless), NOT "G derived from scratch."
+
+**Estimated effort:** 1–2 patches (an audit + a c05/c02 CHANGELOG framing bump); no new physics required for the restatement, though step (3) may surface a real open question worth its own registry entry.
+**Registered:** 31 May 2026 Session 149 Patch 0702 (surfaced during the DM-arc Step-0 GR-foundation check).
+
 
 ## Cleared items (history)
 

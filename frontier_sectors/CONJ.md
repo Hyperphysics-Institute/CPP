@@ -225,3 +225,72 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 **Registered:** 30 May 2026 (Patch 0662)
 
 ---
+
+### OPEN-COSMO-DM-1: Tetra-Gravity Dark-Matter Derivation (umbrella work item)
+**Status:** OPEN — umbrella work item opened 31 May 2026 (Session 149, Patch 0700) at the opening of the tetra-gravity dark-matter arc. Far-frontier; gated. Co-located here in CONJ.md pending a dedicated `frontier_sectors/COSMO.md` split (deferred until the arc grows past registration).
+**Sector(s):** COSMO, SR, SS, SM
+**Priority:** MEDIUM (far-frontier; the stated publication target of the arc, but gated behind the falsification sequence below)
+**One-line statement:** Establish, by a hard-ordered falsification-first sequence, whether net-neutral concentrations of qDP + hTetra (seeded by early-universe radial-expansion "swirls") behave as cold collisionless dark matter under CPP's SSV-gravity mechanism.
+**Closure plan (falsification-first; no paper/anthology framing until Steps 1 AND 2 are computed and survive):**
+- Step 0 — confirm the c05/c07 weak-field Newtonian force law (F = G m m'/r²) superposes cleanly to a diffuse, extended, low-density galactic-halo mass distribution and yields v²(r) = G M(r)/r for collisionless test-mass orbits (audit, not a new derivation; see TODO-014 on the G-scale framing caveat).
+- Step 1 — Gate 1 quantitative (CHEAPEST KILL): short-range bonding momentum-transfer cross-section integrated over halo-density encounter rates; show σ/m ≲ ~1 cm²/g (SIDM bound). **[Patch 0703 — DONE, NO KILL.** Order-of-magnitude: σ/m ≈ 4×10⁻³ cm²/g (qDP, light/worst-case) to 8×10⁻⁴ (hTetra), ~250–1250× below the bound; ~0.02 collisions/particle/Hubble time; survives even ×100 nucleon-like resonant enhancement. **Gate-1 closure now reduces to: bound the residual qDP/hTetra scattering length (rule out a ×~10³ near-threshold resonance in the light channel) + pin the constituent mass.** See `series_phenomena/cosmology/dark_matter/step1_sigma_over_m_SIDM.md`.]
+- Step 2 — bookkeeping (SECOND KILL): free qDP/hTetra vs qDP/hTetra already bound into baryons; the free population must be ~5× baryonic mass without double-counting the hybrid-tetrahedral content of nucleons.
+- Step 3 — coldness (velocity dispersion at decoupling). Step 4 — power spectrum from "swirl" seeds. Step 5 — quantitative halo/rotation curve (ρ∝1/r² or NFW).
+**Dependencies:** Gravity foundation already built — c05 (Newtonian, G = ℏc/m_P²) + c07 (weak-field GR). No OPEN-GRAV-SSV-GR-EXTENSION prerequisite is required (this supersedes the founders_vision §6c lines 924/928 deferral; see Patch 0701). CONJ-DPS-1/2/3 supply the population microphysics.
+**Cross-sector connections:** CONJ-COSMO-1 (the conjecture this work item tests); CONJ-DPS-1/2/3; CONJ-SS-1 (W₀ bracelet, via CONJ-DPS-3).
+**Falsification routes:** any of Steps 1–5 failing; in particular Step 1 (σ/m above SIDM bound → at best collisional/SIDM, not cold collisionless) or Step 2 (free population cannot reach ~5:1 without double-counting).
+**Source of record:** `founders_vision.md` Part V §6c (Patch 0672a). **Working home:** `series_phenomena/cosmology/dark_matter/`. **Arc handover:** `handovers/2026-05-31_session_149_tetra_gravity_dark_matter_arc_kickoff.md`.
+**Registered:** 31 May 2026 (Patch 0700)
+
+---
+
+### CONJ-DPS-1: DP-Sea Skew + eDP:qDP 1:1 Conservation Lock + Color-Screening Driver
+**Status:** CONJECTURE — registered 31 May 2026 (Session 149, Patch 0700). NEW sector prefix DPS (Dipole-Sea population). Near-frontier (internally checkable).
+**Sector(s):** DPS, SS, SM
+**Priority:** MEDIUM
+**One-line statement:** As the post–Big-Bang substrate cools, the qCP–qCP/color binding channel (in addition to the electric channel) skews DP formation toward the doubly-bound qDP; with equal initial {±eCP, ±qCP} inventories and near-total pairing, charge conservation forces n(eDP) = n(qDP) exactly (eDP as the conservation echo of the qDP skew) and n(hDP-A) = n(hDP-B) = N − n(qDP); the likely driver is the unscreened color attribute of the lone qCP in a hybrid carrying a large standing energy penalty.
+**Dependencies:** Load-bearing — the qCP–qCP force is attractive in the +qCP/−qCP configuration (deepens the qDP well rather than fighting electric binding); equal initial eCP:qCP inventory + roughly symmetric skimming into fermion cores (the 1:1 lock also tests this creation symmetry). Driver mechanism leans on color confinement at CP level (c15).
+**Cross-sector connections:** c14 (qDP chaining), c15 (SU(3) color from 600-cell — the skew driver + the sign of the qCP–qCP force); CONJ-DPS-2; CONJ-SS-2 (qCP polarity switching).
+**Falsification routes:** (a) the qCP–qCP force is repulsive or negligible in the relevant configuration (skew collapses); (b) measured/derived eDP:qDP departs materially from 1:1 (creation asymmetry or asymmetric skimming); (c) color is screened in the hybrid (no standing energy penalty → no hard skew).
+**Source of record:** `founders_vision.md` §6c (Opus scope notes "conservation lock" + "color screening as likely driver").
+**Registered:** 31 May 2026 (Patch 0700)
+
+---
+
+### CONJ-DPS-2: hTetra Sink + Freeze-Out Ordering + hTetra Binding > 2× hDP
+**Status:** CONJECTURE — registered 31 May 2026 (Session 149, Patch 0700). Near-frontier.
+**Sector(s):** DPS, SS, SM
+**Priority:** MEDIUM
+**One-line statement:** hDP-A and hDP-B are consumed into Hybrid Tetrahedra (hTetra) — the cornerstone of the charm quark, muon, tau-neutrino frame, and baryons — rather than suppressed to extinction; "scarce free hDPs + available hTetras" falls out without fine-tuning iff the hTetra is a deeper well than its parts (super-additive tetrahedral closure: hTetra binding > 2× hDP binding), with the universe selected by the hDP→hTetra freeze-out ordering (hTetra-above / together / hTetra-below give materially different relic populations).
+**Dependencies:** The binding inequality hTetra > 2× hDP; the 1:1 lock (CONJ-DPS-1) is a hot/thermal-equilibrium statement while the hTetra sink is a kinetic freeze-out statement — the two must not be conflated. Yields feed Step 2 (bookkeeping) and Step 3 (coldness).
+**Cross-sector connections:** CONJ-DPS-1; c04 (ZBW → masses for the freeze-out yields), c14/c15 (yields); the hTetra is the baryon/charm/muon frame (bookkeeping gate double-counting risk).
+**Falsification routes:** (a) hTetra binding ≤ 2× hDP (no super-additive closure → free hDPs not scarce, or hTetras not common); (b) freeze-out ordering inconsistent with the observed baryon/relic abundances.
+**Source of record:** `founders_vision.md` §6c ("The hTetra sink" + Opus scope note "freeze-out ordering and the binding inequality").
+**Registered:** 31 May 2026 (Patch 0700)
+
+---
+
+### CONJ-DPS-3: On-Demand Locally-Generated hDP / W-Bracelet Beta Decay
+**Status:** CONJECTURE — registered 31 May 2026 (Session 149, Patch 0700). Near-frontier. Cross-links CONJ-SS-1.
+**Sector(s):** DPS, SS, EW
+**Priority:** MEDIUM
+**One-line statement:** Ordinary nuclear beta decay needs no standing hDP reservoir: when the local superposition of SSVs is momentarily sufficient in a stressed nuclear environment, ambient eDPs and qDPs reorganize into a W bracelet that catalyzes the flavor transformation — explaining why beta decay is rare and localized (it waits for a sufficient SSV fluctuation, so its rate should track the SSV-superposition probability, not ambient hDP concentration).
+**Dependencies:** The W₀-bracelet mechanism (CONJ-SS-1); ubiquitous eDP/qDP supply. High-energy hDP needs (heavy quarks, τ, Z, Higgs) remain environment-supplied, distinct from this on-demand STP picture.
+**Cross-sector connections:** CONJ-SS-1 (W₀ bracelet locally-linear coupling face); CONJ-DPS-2 (the freeze-out vs on-demand distinction).
+**Falsification routes:** beta-decay rate tracks ambient hDP concentration rather than local SSV-superposition probability.
+**Source of record:** `founders_vision.md` §6c ("hDPs on demand — beta decay without a standing reservoir").
+**Registered:** 31 May 2026 (Patch 0700)
+
+---
+
+### CONJ-COSMO-1: Tetra-Gravity Dark Matter
+**Status:** CONJECTURE — registered 31 May 2026 (Session 149, Patch 0700). NEW sector prefix COSMO (cosmology). FAR-FRONTIER, GATED — qualitatively survivable on all four gates per the §6c 31-May Update, with five named *quantitative* checks remaining. Tested by the OPEN-COSMO-DM-1 falsification sequence.
+**Sector(s):** COSMO, SR, SS, SM
+**Priority:** MEDIUM
+**One-line statement:** Because the four DP species emit different SSV (eDP < qDP < hTetra), a compositional inhomogeneity in the vacuum is automatically a gravitational inhomogeneity; net-neutral cold collisionless concentrations of qDP + hTetra — seeded by early-universe radial-expansion "swirls" and clustered by gravitational instability — are the entity now called dark matter.
+**Gate status (per §6c 31-May Update):** Gate 1 (collisionless) survivable — forces act at different ranges; only long-range force on a net-neutral structure is gravity; subquantum cross-section ⇒ negligible cloud-cloud collision rate (Bullet Cluster). Gate 2 (EM-quiet) clear — net-neutral ⇒ dark at range. Gate 3 (halo profile) survivable — collisionless ⇒ non-dissipative ⇒ extended dispersion-supported halo; ρ∝1/r²/NFW is generic to collisionless dynamics. Bookkeeping gate open.
+**Dependencies:** SR-1 SSV-gravity + c05/c07 (force law — built; NO GR-extension prerequisite, superseding §6c 924/928, see Patch 0701); CONJ-DPS-1/2/3 (population). Consistency caveat: do NOT simultaneously lean on bonding for halo nucleation and call it negligible for collisionlessness — gravitational instability does the clustering, bonding off-stage at halo density.
+**Cross-sector connections:** OPEN-COSMO-DM-1 (its closure plan); CONJ-DPS-1/2/3.
+**Falsification routes:** (i) σ/m above the SIDM bound; (ii) velocity dispersion at decoupling not cold; (iii) free-vs-baryon-bound ratio cannot reach ~5:1 without double-counting; (iv) "swirl" seeds cannot reproduce the matter power spectrum; (v) the c05/c07 force law fails to reproduce flat rotation curves quantitatively.
+**Source of record:** `founders_vision.md` §6c (the dark-matter conjecture + the 31-May Update). **Working home:** `series_phenomena/cosmology/dark_matter/`. **Arc handover:** `handovers/2026-05-31_session_149_tetra_gravity_dark_matter_arc_kickoff.md`.
+**Registered:** 31 May 2026 (Patch 0700)
