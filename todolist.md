@@ -178,6 +178,16 @@ Empty sections marked `(none yet)` to keep the skeleton uniform across heavily-d
 
 ---
 
+### SR companion-paper set (c01–c22) audit & registry reconciliation
+**Added:** 31 May 2026, Session 149, Patch 0672b. **Priority:** P2 (do NOT block the tetra-gravity DM arc — DM publication is the stated higher priority).
+
+The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_relativity/SR_companion_papers/` (origin commit f70bc05, 31 May 2026); it had been archived, probably by accident, and was not visible in the working repo. These are Sonnet-era papers that predate parts of the current OPEN-/THEO-/CONJ- registry and protocol system. Audit + reconcile when convenient:
+- **Duplication** — check companion content against current SR-1 / SS / SD / EW / QM papers for overlap or supersession.
+- **Stale open problems** — `frontier_sectors/SR.md` still lists OPEN-SR-4 (full field equations) and OPEN-SR-8 (equivalence principle) as OPEN with a "weak-field GR derived; full nonlinear not yet proved" best-lead note, but c05 derives Newtonian gravity (G = ℏc/m_P² exact), c07 derives weak-field GR + equivalence principle + factor-of-2 lensing, and c08 addresses strong-field GR. Reconcile SR.md ↔ companions; retire/downgrade OPEN-SR-8 and re-scope OPEN-SR-4 as warranted.
+- **Registry retrofit** — register companion results into `theorem-registry.md` / frontier where they meet the bar (e.g. c05 G = ℏc/m_P², c07 weak-field Schwarzschild + lensing factor-of-2).
+- **Spin-paper correction** — c20/c21/c22 may carry the pre-correction "2:1 frequency"; reconcile against THEO-SPIN-1 (v1.1) corrected this session (radius 2 / frequency 2√2).
+- **Effort:** multi-patch; sequence after the DM arc's Gate-1 (σ/m) and Gate-2 (bookkeeping) calculations are in hand.
+
 ## Cleared items (history)
 
 *Items move here with date and patch number when completed. Cleared items are not deleted — they form an audit trail of what was done and when.*
