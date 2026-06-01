@@ -1,0 +1,236 @@
+% ============================================================
+%  THEO-CHIR-VW-2  (v1.0, Patch 0685, Session 152)
+%  The delta=0 Reflection-Positivity Anchor and the
+%  Osterwalder-Schrader Reduction of H1 to VW-a-4
+%  A Layer-2.5 structural theorem marking the VW route's reachable boundary.
+%
+%  CHANGELOG
+%   v1.0 (Patch 0685, Session 152, 30 May 2026) -- initial registration.
+%     Crystallizes the reachable structural content of the VW-a probe
+%     (Patch 0683 scope sketch) into a registered theorem. Two results:
+%     Thm A (delta=0 reflection positivity -- UNCONDITIONAL given the
+%     established delta=0 detailed-balance / vanishing-current result,
+%     THEO-DSL-3): a reversible (detailed-balance) substrate measure is
+%     reflection-positive, so H1 holds at the symmetric reference point.
+%     Thm B (the OS reduction -- Layer 2.5, conditional on the reachable
+%     ingredients VW-a-1/2/3): given a lattice reflection (VW-a-1, = VW-b),
+%     a real measure (VW-a-2, first pass), and a reflection-symmetric action
+%     on its geometric part (VW-a-3, I_h-equivariant rate function), H1 for
+%     the FULL measure is EQUIVALENT to VW-a-4 (persistence of cross-plane
+%     transfer-operator positivity under the delta-perturbation), with the
+%     delta=0 base case settled by Thm A. Marks the VW route's reachable
+%     boundary: everything beyond VW-a-4 (= sign(mu^2)) is the 14.17/F.2
+%     remainder. Honest caps: VW-a-4 OPEN, 14.17-gated; reflection positivity
+%     is UNITARITY, not T-symmetry (the TARROW-1 coupling is a sufficient-
+%     condition link, not an equivalence); NO verdict move -- V3/W3 stand.
+%     Verified by code/verify_vw_2_delta0_rp_reduction.py (CHECK 1/2/3 pass).
+%     Single-pass; multi-AI review the natural next step (DG-3: REQUIRED
+%     before any verdict language changes).
+% ============================================================
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Po}{\mathsf{P}}
+\newcommand{\Te}{\mathsf{T}}
+\newcommand{\Hf}{H_4}
+\newcommand{\Hfp}{H_4^{+}}
+\newcommand{\Ztwo}{\mathbb{Z}_2}
+\newcommand{\Qphi}{\mathbb{Q}[\phi]}
+\newcommand{\Lp}{L^2(\pi)}
+
+\title{\textbf{The $\delta=0$ Reflection-Positivity Anchor and the
+Osterwalder--Schrader Reduction of H1 to VW-a-4}\\[6pt]
+\large THEO-CHIR-VW-2 --- Marking the Reachable Boundary of the Vafa--Witten Route\\
+A Layer-2.5 Structural Theorem}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0685, Session 152 --- 30 May 2026 \\[2pt]\small(single-pass; multi-AI review the natural next step --- REQUIRED before any verdict language changes, DG-3)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+THEO-CHIR-VW-1 reduced the chirality \emph{capacity} question to one open hypothesis --- H1, reflection
+positivity of the dynamical-substrate-law (DSL) measure. The VW-a probe (Patch 0683) sharpened H1 into an
+Osterwalder--Schrader (OS) criterion and isolated its single residual. This theorem registers the
+reachable structural content of that probe. \textbf{Theorem A (unconditional):} at $\delta=0$ the
+substrate is $\Hf$-symmetric with outgoing--incoming detailed balance (THEO-DSL-3, vanishing net current),
+and a reversible (detailed-balance) measure is reflection-positive --- so \textbf{H1 holds at the symmetric
+reference point}. \textbf{Theorem B (Layer 2.5, conditional on the reachable OS ingredients):} given a
+lattice reflection (VW-a-1 $=$ VW-b), a real measure (VW-a-2, first pass), and a reflection-symmetric
+action on its geometric part (VW-a-3, the $I_h$-equivariant rate function), H1 for the \emph{full} measure
+is \textbf{equivalent to VW-a-4} --- persistence of cross-plane transfer-operator positivity under the
+$\delta$-perturbation --- with the $\delta=0$ base case settled by Theorem A. This \emph{marks the VW
+route's reachable boundary}: everything past VW-a-4 (which is $\sgn(\mu^2)$ itself) is the F.1~\S14.17 /
+F.2 remainder. \textbf{Honest caps:} VW-a-4 is OPEN and \S14.17-gated; reflection positivity encodes
+\emph{unitarity}, not time-reversal symmetry, so the coupling to the substrate arrow (TARROW-1) is a
+\emph{sufficient-condition} link, not an equivalence. \textbf{No verdict move:} chirality stays V3/W3.
+Layer 2.5, provisional; verified by \texttt{code/verify\_vw\_2\_delta0\_rp\_reduction.py}.
+\end{abstract}
+
+% ============================================================
+\section{Position and inputs}
+VW-1 (v1.1, Patch 0682, review-closed 3/3) established the unification --- STATUS-2's axiom-level
+V2-exclusion (no \emph{explicit} parity breaking) and a Vafa--Witten no-go (no \emph{spontaneous} parity
+breaking, conditional on H1) as two faces of one parity-even, reflection-positive measure --- and the
+conditional verdict map (Theorem 6.1 of VW-1). The whole conditional rested on \textbf{H1}: is the DSL
+measure reflection-positive? The VW-a probe decomposed the OS criterion
+\[
+S \;=\; S_+ \;+\; \theta(S_+) \;+\; S_I ,\qquad
+\text{RP} \iff e^{-S_I}\ \text{a positive operator (positive cross-plane transfer operator),}
+\]
+($\theta$ the det-coset reflection through a $600$-cell mirror hyperplane) into five sub-ingredients
+VW-a-1$\,\ldots\,$VW-a-5. This theorem registers what that decomposition proves \emph{now}.
+
+\smallskip
+\noindent\textbf{Consumed (not modified):} VW-1 v1.1 (the OS definition; $\theta$; VW-b vectorial reflection;
+VW-c evasion audit); STATUS-2 (the det-coset $\Ztwo = \Hf/\Hfp$, $\det=-1$); THEO-DSL-3 (the $\delta=0$
+net DI-bit current vanishes --- outgoing--incoming detailed balance) and THEO-DSL-4 ($I_h$-equivariant
+rate function at the host vertex); THEO-DSL-5..12 (real $\Qphi$ coefficients); CONT-1 (the $\Phi$
+Wilson--Fisher block-spin continuum map); TARROW-1 ($\sgn(\delta)$ at W3; the substrate arrow is a
+candidate mechanism narrative, not derived). BRIDGE-1's kinematic/P2 cap rides every downstream statement.
+
+% ============================================================
+\section{Theorem A: reflection positivity at $\delta=0$}
+
+\begin{definition}[Reversible / detailed-balance substrate measure]
+The substrate transition kernel $P$ is \emph{reversible} with respect to an equilibrium measure $\pi$ if
+$\pi(x)\,P(x\!\to\!y) = \pi(y)\,P(y\!\to\!x)$ for all configurations $x,y$. Equivalently, $P$ is
+self-adjoint on $\Lp$.
+\end{definition}
+
+\begin{theorem}[$\delta=0$ reflection positivity]\label{thm:a}
+At $\delta=0$ the substrate is $\Hf$-symmetric and the net DI-bit current vanishes identically
+(THEO-DSL-3), the ``outgoing--incoming detailed balance'' regime. Then the substrate transition kernel is
+reversible, the associated Euclidean transfer operator $T = e^{-\tau \mathcal{H}}$ is a positive
+self-adjoint contraction on $\Lp$, and the $\delta=0$ substrate measure is \textbf{reflection-positive}
+for the det-coset reflection $\theta$. Hence \textbf{H1 holds at $\delta=0$}.
+\end{theorem}
+
+\begin{proof}
+Outgoing--incoming detailed balance at the host vertex (THEO-DSL-3: equal forward/backward DI-bit rates in
+the $\Hf$-symmetric substrate, net current $=0$) is exactly the detailed-balance condition
+$\pi(x)P(x\!\to\!y)=\pi(y)P(y\!\to\!x)$. A reversible kernel is self-adjoint on $\Lp$; its generator
+$\mathcal{H}$ is self-adjoint with real spectrum, and the Markov semigroup
+$T_\tau = e^{-\tau\mathcal{H}}$ is a positive self-adjoint contraction (the standard reversible-Markov /
+Nelson reconstruction: the Euclidean field built from a reversible Markov process satisfies the
+Osterwalder--Schrader reflection-positivity axiom). Concretely, for any observable $A$ supported on one
+side of the reflection hyperplane $\Pi$,
+\[
+\langle \theta(\bar A)\, A\rangle \;=\; \langle A,\; T\, A\rangle_{\pi} \;\ge\; 0 ,
+\]
+because $T$ is positive. So the $\delta=0$ measure is reflection-positive; H1 holds at the symmetric
+reference point. The det-coset $\theta$ is a genuine reflection of the configuration space at $\delta=0$
+because the substrate is $\Hf$-symmetric and $\theta\in\Hf$ (VW-a-1 / VW-b).
+\end{proof}
+
+\begin{remark}[Why $\delta=0$ is the right anchor]
+The chirality capacity question lives at $\delta\neq 0$: the chiral order parameter $\eta$ (the continuous
+precursor of $\sgn(\nhat)=$~FI-C-9) and the first-order substrate current are the $\delta$-perturbation of
+the $\delta=0$ symmetric substrate. Theorem~A says the unperturbed theory \emph{is} reflection-positive;
+the only question is whether RP \emph{survives} the perturbation. H1 is thereby a persistence question,
+not a from-scratch construction.
+\end{remark}
+
+% ============================================================
+\section{Theorem B: the OS reduction of H1 to VW-a-4}
+
+\begin{lemma}[Reachable OS ingredients]\label{lem:reachable}
+The following hold at the reachable level:
+\begin{enumerate}[label=\textup{(VW-a-\arabic*)},leftmargin=3.4em]
+\item A reflection $\theta$ exists and is a lattice symmetry --- the det-coset reflection ($\det=-1$,
+$\theta\in\Hf$ maps the $600$-cell to itself). \emph{Established} (VW-b / STATUS-2).
+\item The measure is real --- THEO-DSL-5..12 coefficients are real $\Qphi$; the net current
+$\parallel\nhat$ and the Mechanism-A rate function are real. \emph{First pass} (VW-1 VW-c(c)).
+\item The action is reflection-symmetric on its geometric part --- the substrate is achiral
+($\Hf\supseteq$ reflections) and the rate function is $I_h$-equivariant at the host vertex (THEO-DSL-4),
+so $S=\theta S$ for the geometric/kinematic part. The dynamical part inherits the \S14.17 gate.
+\end{enumerate}
+\end{lemma}
+
+\begin{theorem}[OS reduction]\label{thm:b}
+Assume VW-a-1 \textup{(established)}, VW-a-2 \textup{(first pass)}, and VW-a-3 with its dynamical part
+reflection-symmetric \textup{(assumed; \S14.17-gated)}. Then reflection positivity of the \emph{full} DSL
+measure (H1) is \textbf{equivalent} to
+\[
+\textbf{(VW-a-4)}\quad
+\text{the cross-plane transfer operator } e^{-S_I}\ \text{remains positive under the }
+\delta\text{-perturbation,}
+\]
+with the $\delta=0$ base case settled by Theorem~\ref{thm:a}. The continuum statement requires in addition
+\[
+\textbf{(VW-a-5)}\quad
+\text{the reflection-symmetric }\Phi\text{ block-spin flow (CONT-1) preserves RP,}
+\]
+a lemma here \emph{stated}, not proved.
+\end{theorem}
+
+\begin{proof}
+The OS criterion is positivity of $e^{-S_I}$ in the split $S=S_+ + \theta(S_+) + S_I$. VW-a-1 supplies a
+well-defined $\theta$ and the split; VW-a-2 makes $e^{-S}$ real (a necessary condition for the quadratic
+form to be real-valued); VW-a-3 makes the geometric part of $S$ $\theta$-invariant, so $S_+$ and
+$\theta(S_+)$ are genuine reflections of one another and all reflection-asymmetry is confined to $S_I$.
+Under these, RP is \emph{precisely} the statement that the residual cross-plane operator $e^{-S_I}$ is
+positive --- nothing else in the OS condition remains. That is VW-a-4. Theorem~\ref{thm:a} gives
+$e^{-S_I}\succeq 0$ at $\delta=0$; the full-measure statement is its persistence at $\delta\neq0$. The
+finite-lattice RP promotes to the continuum only if the blocking map commutes with $\theta$ and preserves
+positivity (VW-a-5).
+\end{proof}
+
+\begin{remark}[The reachable candidate route for VW-a-4, and its coupling to the arrow]\label{rmk:coupling}
+VW-a-4 has a reachable \emph{candidate sufficient condition} that does not require integrating the full
+\S14.17 action: if the $\delta\neq0$ dynamics \emph{remain} a reversible (detailed-balance) Markov process,
+then by the same argument as Theorem~\ref{thm:a} the transfer operator stays positive $\Rightarrow$ RP
+$\Rightarrow$ H1 $\Rightarrow$ (via VW-1) $\mu^2>0$ $\Rightarrow$ parity unbroken $\Rightarrow$ V3 by
+principle (conditional on H1, within the bare substrate axioms). This couples VW-a-4 to the substrate
+arrow (TARROW-1): a manifestly reversible $\delta\neq0$ dynamics gives positivity for free; a genuinely
+irreversible (arrow-carrying) one \emph{removes the guarantee}. \textbf{Caution (load-bearing):} reflection
+positivity encodes \emph{unitarity} of the continuation, not time-reversal symmetry --- a unitary theory
+can be T-violating --- so failure of detailed balance does \emph{not} establish RP-violation; it only
+removes the cheap route. Whether the $\delta\neq0$ dynamics are reversible (and whether a genuine arrow
+emerges) is the unbuilt object: the DSL establishes substrate-locality but not entropy production /
+irreversible coarse-graining (TARROW-1 $\sgn(\delta)=$~W3). So VW-a-4 is pinned to the same \S14.17 / F.2
+gate as the arrow question --- the P-side and T-side of one gate, consistent with the VW-1 / TARROW-1 CPT
+unification of the two reopeners.
+\end{remark}
+
+% ============================================================
+\section{What this is, and is not}
+\begin{itemize}[leftmargin=1.4em]
+\item \textbf{IS:} a structural theorem marking the VW route's reachable boundary. Theorem~A is
+unconditional (given THEO-DSL-3): the $\delta=0$ measure is reflection-positive. Theorem~B is a Layer-2.5
+conditional reduction: H1 $\iff$ VW-a-4, given the reachable ingredients, with the $\delta=0$ base case
+proved.
+\item \textbf{IS NOT:} a proof of H1 (VW-a-4 is OPEN), a computation of $\sgn(\mu^2)$, a claim that the
+$\delta\neq0$ dynamics are reversible or irreversible, or a verdict move. Everything past VW-a-4 is the
+\S14.17 / F.2 remainder.
+\item \textbf{Honest caps:} Theorem~B is conditional on VW-a-3's dynamical part ($\S14.17$-gated) and
+VW-a-2 (first pass); VW-a-5 is stated not proved; reflection positivity is unitarity, not T-symmetry
+(Rmk.~\ref{rmk:coupling}); BRIDGE-1's kinematic/P2 cap rides downstream. \textbf{No verdict move: V3/W3
+stand.}
+\end{itemize}
+
+\paragraph{Falsifiers.} (F1) the det-coset reflection is not a lattice symmetry of the measure (breaks
+VW-a-1/VW-b --- contradicted by STATUS-2). (F2) the $\delta=0$ substrate does not satisfy detailed balance
+(removes the Theorem~A anchor --- contradicted by THEO-DSL-3's vanishing current). (F3) a reflection-
+symmetric $\Phi$ blocking provably fails to preserve RP (voids VW-a-5, decoupling finite-lattice from
+continuum). None fires on current results.
+
+\paragraph{Next.} Route VW-2 to multi-AI review (closes the VW route's reachable boundary at swarm-
+validation rigor, matching VW-1); then the remainder is a genuine fork --- commit to the deep \S14.17 / F.2
+work (which would settle VW-a-4 and the arrow together), or take the computation route SUSC
+($\sgn(\mu^2)=\sgn(\chi_\eta^{-1})$ from the $\eta$--$\eta$ correlator via the THEO-DSL pipeline,
+sidestepping the positivity proof). Per programme decision. V3/W3 stand.
+
+\end{document}
