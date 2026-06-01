@@ -129,16 +129,6 @@ The Capotauro precedent makes credible a tightening of the v1.0 SHIP gate-langua
 
 ---
 
-### TODO-009 — Lowercase `SOURCE=` in frontier decomposition scripts for cross-platform correctness
-
-**Status**: small hygiene fix; not blocking next paper
-**Why P2**: Cosmetic issue on Windows; scripts work because Windows filesystem is case-insensitive. Would only fail on Linux/macOS or in a case-sensitive Linux container. Two scripts affected, one line each.
-**Deliverable**: Change `SOURCE="Research_Frontier.md"` to `SOURCE="research_frontier.md"` in:
-- `scripts/decompose_research_frontier.sh`
-- `scripts/rewrite_research_frontier.sh`
-**Estimated effort**: 1 small patch, ~5 minutes.
-**Registered**: 25 May 2026 (frontier decomposition close, commit `b2879de`).
-
 ### TODO-010 — Second-level decomposition of `frontier_sectors/SS.md` (contingent on SS-sector bootup overflow)
 
 **Status**: CONTINGENT — fires only if loading `frontier_sectors/SS.md` (208 KB, ~700 lines) at session bootup overflows the context window. Not currently known to do so.
@@ -212,6 +202,10 @@ The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_r
 ## Cleared items (history)
 
 *Items move here with date and patch number when completed. Cleared items are not deleted — they form an audit trail of what was done and when.*
+
+### TODO-009 — Lowercase `SOURCE=` in frontier decomposition scripts — CLEARED 1 June 2026 Session 153 Patch 0728
+
+**Cleared**: 1 June 2026 Session 153 Patch 0728. Lowercased all `Research_Frontier` → `research_frontier` occurrences in `scripts/rewrite_research_frontier.sh` (SOURCE=, BACKUP=, and the printed `git add/diff/Open` instructions) and `scripts/decompose_research_frontier.sh` (SOURCE= + descriptive comments/echoes), giving full cross-platform correctness rather than just the two literal SOURCE= lines. Post-edit grep confirms 0 remaining capitalized refs in either script. Surfaced when Thomas asked whether a rename explained the stale `research_frontier.md` dashboard (Session 153, Patch 0727 Step E); investigation confirmed git tracks one lowercase file with no case-collision, the scripts worked on Windows because the filesystem is case-insensitive (so the rename was NOT the staleness cause — that was the 25-May decomposition shifting updates to sector files + skipped Step-E passes), but the latent portability bug was real and is now closed. **Scope note**: descriptive references to `Research_Frontier.md` elsewhere (frontier_sectors/*.md breadcrumbs, archive scripts) are harmless historical mentions, not functional, and left unchanged per TODO-009's two-script scope.
 
 ### TODO-012 — PCD acronym terminology drift cleanup — CLEARED 29 May 2026 Session 148 Patch 0631
 

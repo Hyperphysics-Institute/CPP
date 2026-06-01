@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # rewrite_research_frontier.sh
 #
-# Second-stage decomposition tool: rewrites Research_Frontier.md in place,
+# Second-stage decomposition tool: rewrites research_frontier.md in place,
 # converting it from the 1852-line monolithic file into a thin dashboard
 # (~280 lines) that points into frontier_sectors/ for sector detail.
 #
@@ -9,13 +9,13 @@
 #     bash scripts/rewrite_research_frontier.sh
 #
 # Preconditions:
-#   - Research_Frontier.md is the 1852-line pre-decomposition version
+#   - research_frontier.md is the 1852-line pre-decomposition version
 #   - frontier_sectors/ exists with the 11 extracted sector files
 #     (produced by scripts/decompose_research_frontier.sh)
 #
 # Behavior:
-#   - Saves backup as Research_Frontier.md.pre-decomposition.bak
-#   - Composes new Research_Frontier.md by concatenating:
+#   - Saves backup as research_frontier.md.pre-decomposition.bak
+#   - Composes new research_frontier.md by concatenating:
 #       (a) Lines 1-37 of original (header, Purpose, How to Use, §1 intro)
 #       (b) New Sector Index dashboard (table linking into frontier_sectors/)
 #       (c) Lines 1650-1852 of original (§4 Recently Resolved through §10)
@@ -23,8 +23,8 @@
 
 set -euo pipefail
 
-SOURCE="Research_Frontier.md"
-BACKUP="Research_Frontier.md.pre-decomposition.bak"
+SOURCE="research_frontier.md"
+BACKUP="research_frontier.md.pre-decomposition.bak"
 SECTORS_DIR="frontier_sectors"
 EXPECTED_LINES_MIN=1800
 EXPECTED_LINES_MAX=1900
@@ -114,7 +114,7 @@ The active open problems, conjectures, and propositions are organized by sector 
 
 ### Decomposition Provenance
 
-- Original monolithic file: 1852 lines (Research_Frontier.md pre-2026-05-25).
+- Original monolithic file: 1852 lines (research_frontier.md pre-2026-05-25).
 - Decomposition performed 2026-05-25 to resolve repeated context-window overflow at bootup.
 - §1 sector content extracted by line-range to `frontier_sectors/<SECTOR>.md`. §2 and §3 extracted to `frontier_sectors/CONJ.md` and `frontier_sectors/PROP.md`.
 - §4–§10 (Recently Resolved, Resolved Archive, Falsified, Recommended Attack Order, Dependency Graph, Problem Count Summary, Anomalies) retained in this dashboard below.
@@ -143,7 +143,7 @@ echo "Backup retained at: $BACKUP"
 echo "  (Add to .gitignore or delete manually after verification.)"
 echo ""
 echo "Next steps:"
-echo "  1. Open Research_Frontier.md and verify dashboard reads correctly"
-echo "  2. git diff Research_Frontier.md  (to see the rewrite)"
-echo "  3. If happy: git add Research_Frontier.md && git commit && git push"
+echo "  1. Open research_frontier.md and verify dashboard reads correctly"
+echo "  2. git diff research_frontier.md  (to see the rewrite)"
+echo "  3. If happy: git add research_frontier.md && git commit && git push"
 echo "  4. Delete backup: rm $BACKUP"

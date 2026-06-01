@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 # decompose_research_frontier.sh
 #
-# One-shot extraction tool: splits Research_Frontier.md into 11 per-sector
-# files under frontier_sectors/. Does NOT modify Research_Frontier.md.
-# The dashboard rewrite of Research_Frontier.md ships as a follow-up patch
+# One-shot extraction tool: splits research_frontier.md into 11 per-sector
+# files under frontier_sectors/. Does NOT modify research_frontier.md.
+# The dashboard rewrite of research_frontier.md ships as a follow-up patch
 # after the user verifies the extraction produced here.
 #
 # Run from CPP repo root:
 #     bash scripts/decompose_research_frontier.sh
 #
 # Line ranges are pinned to the file structure as of 2026-05-25 (1852 lines).
-# Script aborts if Research_Frontier.md has drifted significantly from that
+# Script aborts if research_frontier.md has drifted significantly from that
 # size, to avoid silently extracting wrong content.
 
 set -euo pipefail
 
-SOURCE="Research_Frontier.md"
+SOURCE="research_frontier.md"
 DEST_DIR="frontier_sectors"
 EXPECTED_LINES_MIN=1800
 EXPECTED_LINES_MAX=1900
@@ -35,8 +35,8 @@ if (( LINE_COUNT < EXPECTED_LINES_MIN || LINE_COUNT > EXPECTED_LINES_MAX )); the
     echo "ERROR: $SOURCE has $LINE_COUNT lines, expected ${EXPECTED_LINES_MIN}-${EXPECTED_LINES_MAX}." >&2
     echo "       File may have been modified since this script's line ranges were pinned." >&2
     echo "       Re-survey the file with:" >&2
-    echo "           wc -l Research_Frontier.md" >&2
-    echo "           grep -n '^#' Research_Frontier.md" >&2
+    echo "           wc -l research_frontier.md" >&2
+    echo "           grep -n '^#' research_frontier.md" >&2
     echo "       and update the line ranges in this script before re-running." >&2
     exit 1
 fi
@@ -62,10 +62,10 @@ extract_sector() {
 
     {
         echo "<!--"
-        echo "  Extracted from Research_Frontier.md lines ${start}-${end}"
+        echo "  Extracted from research_frontier.md lines ${start}-${end}"
         echo "  Source range: $label"
         echo "  Extraction date: $(date +%Y-%m-%d)"
-        echo "  Master dashboard: Research_Frontier.md"
+        echo "  Master dashboard: research_frontier.md"
         echo "-->"
         echo ""
         sed -n "${start},${end}p" "$SOURCE"
@@ -107,9 +107,9 @@ echo "Extraction complete."
 echo ""
 echo "Verification:"
 echo "  - Total lines extracted: $(wc -l "$DEST_DIR"/*.md | tail -1 | awk '{print $1}')"
-echo "  - Master file Research_Frontier.md was NOT modified ($LINE_COUNT lines, unchanged)"
+echo "  - Master file research_frontier.md was NOT modified ($LINE_COUNT lines, unchanged)"
 echo ""
 echo "Next steps:"
 echo "  1. Inspect frontier_sectors/ — open a few sector files and confirm content looks correct"
 echo "  2. Confirm to Claude that extraction looks right"
-echo "  3. Apply follow-up patch to rewrite Research_Frontier.md as the thin dashboard"
+echo "  3. Apply follow-up patch to rewrite research_frontier.md as the thin dashboard"
