@@ -294,3 +294,17 @@ Proposed answers that exist but are not yet proved from CPP axioms.
 **Falsification routes:** (i) σ/m above the SIDM bound; (ii) velocity dispersion at decoupling not cold; (iii) free-vs-baryon-bound ratio cannot reach ~5:1 without double-counting; (iv) "swirl" seeds cannot reproduce the matter power spectrum; (v) the c05/c07 force law fails to reproduce flat rotation curves quantitatively.
 **Source of record:** `founders_vision.md` §6c (the dark-matter conjecture + the 31-May Update). **Working home:** `series_phenomena/cosmology/dark_matter/`. **Arc handover:** `handovers/2026-05-31_session_149_tetra_gravity_dark_matter_arc_kickoff.md`.
 **Registered:** 31 May 2026 (Patch 0700)
+
+---
+
+### CONJ-COSMO-2: Dark-Energy ↔ Dark-Matter Unification from the One Dipole Sea
+**Status:** CONJECTURE — registered 1 June 2026 (Session 153-cosmo, Patch 0720). FAR-FRONTIER, GATED on OPEN-SR-5 Steps A–D. Sector prefix COSMO.
+**Sector(s):** COSMO, SR, SM
+**Priority:** MEDIUM
+**One-line statement:** A single CPP Dipole Sea sources both dark energy (its uniform-mode residual → suppressed Λ) and dark matter (its inhomogeneity/swirl mode → unsuppressed local-gradient gravity), distinguished only by uniform-mode vs gradient-mode — unifying two of cosmology's three dark puzzles from one substrate.
+**Mechanism (one criterion, not three assumptions):** CPP gravity couples to the SSV excess ΔSSV above the local Sea ground state (c05 gradient-sourcing), not to absolute energy density (Step B, Patch 0721). The uniform Sea ground state sources zero gravity despite Planck-scale absolute density (no CC catastrophe); matter/radiation/Sea-swirls are excesses that gravitate; Λ is the residual non-uniformity of the ground state.
+**Dependencies:** OPEN-SR-5 (the cosmological Sea-gravitation sector — hard prerequisite); OPEN-SR-5a (Step A, SURVIVES, Patch 0720), OPEN-SR-5b (Step C, Λ suppression, OPEN), OPEN-SR-5c (Step B, DELIVERED, Patch 0721); c05/c07 force law; CONJ-COSMO-1 (the DM half).
+**Cross-sector connections:** CONJ-COSMO-1 (Tetra-Gravity Dark Matter — the DM half); OPEN-COSMO-DM-1 (bidirectional); OPEN-SR-5 ↔ OPEN-SM-6 (the CC problem from the SM side — will be the same theorem when solved; coordinate so the two are not derived inconsistently).
+**Falsification routes:** (i) Step A had killed the gradient-only cosmology (it did not — SURVIVES, Patch 0720); (ii) the CPP GR limit (c07/c08) forces ground-state vacuum energy to gravitate at full density, breaking the suppression (the Step-B forward check; falsifier B1); (iii) Step C cannot derive the Λ suppression (the residual is not (l_P/R_H)²-scaled or not horizon-tracking); (iv) Step D cannot recover the Friedmann history. **Do NOT claim this unification until Step A survives AND Steps C–D are computed (A survives; C–D open).**
+**Source of record:** `series_phenomena/cosmology/sea_gravitation/` (stepA/stepB findings + reasoning/0720,0721). **Arc handover:** `handovers/2026-05-31_session_149_open_sr5_cosmological_sector_arc_kickoff.md`.
+**Registered:** 1 June 2026 (Patch 0720)

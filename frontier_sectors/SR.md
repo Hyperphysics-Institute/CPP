@@ -67,7 +67,20 @@
 **Dependencies:** OPEN-SR-3
 **Cross-sector connections:** OPEN-SM-6 (will be same theorem when solved)
 **Paper(s):** GR companion
-**Last updated:** 23 March 2026
+**Last updated:** 1 June 2026 (Patch 0720 — **COSMOLOGICAL SEA-GRAVITATION ARC OPENED**; sub-items 5a/5b/5c registered below; falsification-first sequence begun. Step A (5a) confronted → SURVIVES, Patch 0720; Step B (5c) delivered, Patch 0721. Work under `series_phenomena/cosmology/sea_gravitation/`.)
+
+#### OPEN-SR-5a: Homogeneous-source / Friedmann reconciliation (Step A) — **SURVIVES (conceptual kill-gate cleared, Patch 0720)**
+**Status:** ADDRESSED (conceptual; full Friedmann recovery = Step D, open). Gradient-sourced gravity (c05, F ∝ ∇(ΔSSV)) gives zero force for uniform density — but this is Seeliger's paradox, identical to Newtonian gravity (which c05/c07 establish CPP reduces to), resolved since Milne–McCrea (1934): the shell theorem (clean 1/r² + linear SSV superposition) makes a comoving sphere's dynamics depend only on interior mass → ä/a = −(4π/3)Gρ (matter-era Friedmann acceleration). "Uniform Sea locally inert" (zero absolute force at a point) and "uniform matter drives expansion" (nonzero *relative* deceleration) are the same fact two ways; no BBN/CMB conflict. The (l_P/R_H)² horizon factor is **relocated to Step C** (Λ suppression), not needed for expansion sourcing. See `sea_gravitation/stepA_homogeneous_source.md`; verify `scripts/0720_milne_mccrea_check.py`. Falsifier A1: if the CPP GR limit forces ground-state vacuum energy to gravitate at full density, the gradient-only picture breaks (tracked under 5c forward check).
+**Last updated:** 1 June 2026 (Patch 0720)
+
+#### OPEN-SR-5b: Derived Λ suppression (Step C) — OPEN
+**Status:** OPEN. Replace the inserted (l_P/R_H)² of the c08 dev-notes estimate (coincidence-restatement; swings ~10× on horizon choice; R_H(t)-dynamical "why now") with a CPP-derived suppression factor; resolve the horizon ambiguity; target ~observed Λ as a derived output. Per Step B, Λ = the residual non-uniformity of the Sea ground state (NOT its full energy). Step-C hook: the mixed-Sea equilibrium (eDP<qDP<hTetra; bonding–debonding) sets the ground-state SSV level, which drifts as the Sea dilutes — a candidate horizon-tracking dynamical residual. **Do NOT register the c08 estimate as a result.**
+**Cross-sector connections:** OPEN-SM-6 (will be same theorem when solved)
+**Last updated:** 1 June 2026 (Patch 0720)
+
+#### OPEN-SR-5c: Sea-vs-matter distinction (Step B) — **DELIVERED (structural, Patch 0721)**
+**Status:** ADDRESSED (structural; magnitude = 5b/Step C). One mechanism, not three assumptions: CPP gravity couples to the SSV **excess** ΔSSV above the local Sea ground state (c05 gradient-sourcing), not to absolute energy density. So the uniform Sea — however Planck-scale its absolute density — sources zero gravity (no CC catastrophe); matter/radiation are localized excesses (ΔSSV>0) that gravitate and drive expansion; Sea swirls are excesses → DM; Λ is the tiny residual non-uniformity of the ground state. Matter, DM, and Λ all gravitate by the same mechanism, differing only in what the gradient is. **Load-bearing forward check (gates Step D):** does the CPP GR limit (c07/c08) correctly exclude ground-state vacuum energy from the gravitating part of T_μν while keeping the equivalence principle for excess energy? This is a departure from naive GR and the real place the arc can break (falsifier B1). See `sea_gravitation/stepB_sea_vs_matter.md`; verify `scripts/0721_gradient_source_distinction.py`.
+**Last updated:** 1 June 2026 (Patch 0721)
 
 ---
 
