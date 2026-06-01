@@ -1,0 +1,266 @@
+% ============================================================
+% THEO-CHIR-TARROW-2: A Derived Substrate Time-Asymmetry Mechanism —
+%   The O(delta^3) Non-Reversibility of the Mechanism-A Process
+%   (OPEN-CHIR-2a; the temporal capacity C_T, conditional on Mechanism A)
+%
+% The mechanism half of the time-reversal arrow. THEO-CHIR-TARROW-1 placed the
+%   arrow sign(delta) at W3 and stated explicitly that it does NOT derive the
+%   substrate T-asymmetry mechanism (C_T = No, pinned on "F.2 physicalization
+%   unbuilt"). This theorem supplies that mechanism: the continuous-time Markov
+%   process induced by Mechanism A's rate law r(e)=r0(1+delta e.n) on the
+%   600-cell is NON-reversible at O(delta^3) — it carries a steady-state
+%   probability current (a time-asymmetry). C_T is therefore answered Yes at the
+%   Mechanism-A framework level, a candidate W3 -> W1 upgrade (direction free,
+%   per TARROW-1's axiom-level W2-exclusion).
+%
+% The genuinely new content (NOT a relabeling of TARROW-1):
+%   (i)  the order-counting: the Kolmogorov cycle log-ratio is ODD in delta
+%        (forward/backward antisymmetry) — NO O(delta^2) term; the first
+%        possible violation is O(delta^3) [corrects the 0688 sketch];
+%   (ii) the per-face closed form: the three oriented edge-projections of any
+%        triangular face satisfy a+b+c=0 (closed loop + uniform 600-cell edge
+%        length), so the O(delta^1) cycle sum vanishes for EVERY face and the
+%        O(delta^3) content is 2 delta^3 abc (the triple product), via
+%        a^3+b^3+c^3=3abc;
+%   (iii) the computation: 420 of the 1200 triangular faces carry nonzero abc
+%        (values 1/8, 1/4; all touching the 2nd shell) — detailed balance is
+%        VIOLATED, the process is non-reversible, the curl-free / equilibrium
+%        branch is ruled out;
+%   (iv) the non-conflict with TARROW-1: TARROW-1's "no T-odd object" concerned
+%        static GEOMETRIC invariants; the probability current is a DYNAMICAL
+%        object (from Mechanism A's rates) — precisely the F.2 physicalization
+%        TARROW-1 flagged as unbuilt. No contradiction; this BUILDS it.
+%
+% Scope/conditionality: Layer 2.5, provisional. Conditional on Mechanism A
+%   (F.1 Axioms MA.1/MA.2, OPEN-FP-F1-2 — the rate law is a framework axiom).
+%   Computed at O(delta^3) (a single nonzero face already breaks reversibility,
+%   so the qualitative conclusion is order-stable). Does NOT move the SPATIAL
+%   verdict (V3 stands; this is the T-axis). Does NOT fix the arrow DIRECTION
+%   (W1, not W0; direction free = cosmological inheritance per TARROW-1). The
+%   P-side sign(mu^2) is a separate computation. Registration does NOT itself
+%   close the W3 -> W1 move — multi-AI review is required (DG-3) before the
+%   verdict language changes.
+%
+% Patch 0690 (Session 152). Verified by
+%   code/verify_odelta3_kolmogorov_curl.py (CHECK 1 geometry; CHECK 2 O(delta^1)
+%   detailed balance + the a^3+b^3+c^3=3abc identity; CHECK 3 reports the
+%   O(delta^3) curl content = 420/1200 faces nonzero). Structural checks pass.
+%
+% CHANGELOG
+%   v1.0 (Patch 0690, Session 152, 30 May 2026) — initial registration at
+%     Layer 2.5 (provisional): the order-counting correction (odd-only,
+%     O(delta^2) identically zero); the per-face triple-product formula; the
+%     computed non-reversibility at O(delta^3) (420/1200 faces); the arrow
+%     interpretation and the candidate C_T = Yes / W3 -> W1 upgrade (conditional
+%     on Mechanism A; direction free); the dynamical-vs-geometric non-conflict
+%     with TARROW-1. Single-pass; multi-AI review pending (the W-move is NOT
+%     closed by registration).
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\ehat}{\hat{e}}
+\newcommand{\sgn}{\operatorname{sign}}
+\newcommand{\Po}{\mathsf{P}}
+\newcommand{\Te}{\mathsf{T}}
+\newcommand{\bigO}[1]{\mathcal{O}(#1)}
+\newcommand{\rzero}{r_0}
+\newcommand{\jnet}{\vec{\jmath}_{\text{net}}}
+\newcommand{\CT}{\mathcal{C}_\Te}
+\newcommand{\VT}{\mathcal{V}_\Te}
+
+\title{\textbf{THEO-CHIR-TARROW-2}\\[4pt]
+A Derived Substrate Time-Asymmetry Mechanism:\\
+the $\bigO{\delta^3}$ Non-Reversibility of the Mechanism-A Process\\
+(OPEN-CHIR-2a; the temporal capacity $\CT$, conditional on Mechanism A)\\[6pt]
+\large A Layer-2.5 Provisional Computational Theorem\\
+the mechanism half of THEO-CHIR-TARROW-1}
+\author{Conscious Point Physics --- Substrate Chirality Arc}
+\date{Version 1.0 --- Patch 0690, Session 152 --- 30 May 2026 \\[2pt]\small(single-pass; multi-AI review pending; the W3$\to$W1 move is NOT closed by registration)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+THEO-CHIR-TARROW-1 placed the time-reversal arrow $\sgn(\delta)$ at the verdict \textbf{W3} and stated
+explicitly that it does \emph{not} derive a substrate $\Te$-asymmetry mechanism: the capacity
+$\CT$ (``is such a mechanism derivable?'') was answered \textsf{No}, pinned on the F.2 physicalization
+being unbuilt. This theorem supplies the mechanism. Mechanism~A (the F.1 framework rate law
+$r(\ehat)=\rzero(1+\delta\,\ehat\cdot\nhat)$ on the 600-cell) induces a continuous-time Markov
+process; we show it is \textbf{non-reversible at $\bigO{\delta^3}$}. The detailed-balance / Kolmogorov
+cycle log-ratio is \emph{odd} in $\delta$ (forward/backward antisymmetry), so there is no
+$\bigO{\delta^2}$ violation; per triangular face the three oriented edge-projections satisfy
+$a+b+c=0$ (closed loop $+$ uniform edge length), giving an $\bigO{\delta^1}$ cycle sum that vanishes
+for \emph{every} face and an $\bigO{\delta^3}$ content equal to $2\delta^3 abc$ (via $a^3+b^3+c^3=3abc$).
+A direct computation over the 1200 triangular faces finds $abc\ne0$ on \textbf{420} of them (values
+$\{1/8,1/4\}$, all touching the second shell). A non-reversible process carries a steady-state
+probability current --- a time-asymmetry --- so $\CT$ is answered \textsf{Yes} at the Mechanism-A
+framework level: a \emph{candidate} $\textbf{W3}\to\textbf{W1}$ upgrade (mechanism derivable;
+\emph{direction} free, per TARROW-1's axiom-level W2-exclusion). The result does \emph{not} contradict
+TARROW-1: TARROW-1's ``no $\Te$-odd object'' concerned static \emph{geometric} invariants, whereas the
+current is a \emph{dynamical} object --- precisely the F.2 physicalization TARROW-1 flagged as unbuilt.
+Layer~2.5, provisional, conditional on Mechanism~A; the spatial verdict (V3) is untouched and the
+arrow direction is not fixed. Multi-AI review is required before the W-move is claimed.
+\end{abstract}
+
+\section{Context: the gap TARROW-1 left open}
+TARROW-1 instantiated the STATUS-1 verdict partition on the time-reversal axis: capacity $\CT$ (is a
+substrate $\Te$-asymmetry mechanism derivable?) $\times$ value $\VT$ (is the arrow \emph{direction}
+fixed?), with verdicts W3 (irreducible primitive arrow), W1 (emergent mechanism, contingent direction),
+W2 (fully emergent). It placed $\sgn(\delta)$ at \textbf{W3} at current rigor, with $\CT=\textsf{No}$
+resting on the explicit statement that \emph{no registered mechanism derives a substrate $\Te$-asymmetry}
+--- DSL-3 narrates the arrow but inherits the DSL viability ceiling, and the F.2 physicalization is
+unbuilt. It also excluded W2 at the axiom level (the arrow is the unique $\Te$-odd object, so fixing its
+direction is circular), pinning any upgrade to \textbf{W1} (direction free $=$ cosmological inheritance).
+
+This theorem addresses exactly the $\CT=\textsf{No}$ clause. It exhibits a derived mechanism --- the
+non-reversibility of the Mechanism-A process --- conditional on Mechanism~A. It therefore proposes the
+$\textbf{W3}\to\textbf{W1}$ upgrade (capacity met; value still free). It does not touch the W2-exclusion
+or the direction question, both of which stand from TARROW-1.
+
+\section{The Mechanism-A process and the order-counting}
+Mechanism~A posits the DI-bit propagation rate $r(\ehat)=\rzero(1+\delta\,\ehat\cdot\nhat)$ along a unit
+edge-direction $\ehat$, with $\nhat$ the substrate primitive (vertex-aligned Reading~C) and
+$|\delta|\ll1$. On the 600-cell edge graph these are the transition rates of a continuous-time Markov
+process. Its stationary measure is reversible (detailed balance) iff the \textbf{Kolmogorov cycle
+condition} holds: for every cycle, the product of forward rates equals the product of backward rates.
+The per-directed-edge log-ratio is
+\begin{equation}
+L(a\to b)=\log\frac{r(a\to b)}{r(b\to a)}=\log\frac{1+\delta c}{1-\delta c}
+=2\Bigl(\delta c+\tfrac{\delta^3}{3}c^3+\tfrac{\delta^5}{5}c^5+\cdots\Bigr),\qquad c=\ehat_{ab}\cdot\nhat .
+\label{eq:logratio}
+\end{equation}
+
+\begin{lemma}[Odd-order structure]\label{lem:odd}
+$L$ is odd in $\delta$ (equivalently, $L(b\to a)=-L(a\to b)$, since reversing the edge sends $c\to-c$).
+Hence the detailed-balance violation around any cycle contains \emph{only odd powers of $\delta$}; in
+particular the $\bigO{\delta^2}$ contribution is identically zero, and the first possible violation is
+$\bigO{\delta^3}$.
+\end{lemma}
+\noindent This corrects the order-counting of the Patch-0688 scoping sketch (which located the gate at
+$\bigO{\delta^2}$): there is no $\bigO{\delta^2}$ term.
+
+\section{The per-face triple-product formula}
+The triangular faces of the 600-cell generate the cycle space of its $1$-skeleton (the polytope boundary
+is a simply-connected triangulated $3$-sphere), so detailed balance holds iff $\sum L$ vanishes around
+every triangular face.
+
+\begin{lemma}[Per-face content]\label{lem:perface}
+Let a triangular face have oriented edge-projections $a,b,c$ ($c_i=\ehat_i\cdot\nhat$ around the loop).
+Then $a+b+c=0$, the $\bigO{\delta^1}$ cycle sum vanishes for every face, and the $\bigO{\delta^3}$ cycle
+sum equals $2\delta^3\,abc$.
+\end{lemma}
+\begin{proof}
+The three oriented edge \emph{vectors} sum to zero (the loop closes); all 600-cell edges share the single
+length $\ell=1/\varphi$, so $\ell(\ehat_1+\ehat_2+\ehat_3)=0\Rightarrow a+b+c=0$, giving the vanishing
+$\bigO{\delta^1}$ term $2\delta(a+b+c)$. By~\eqref{eq:logratio} the $\bigO{\delta^3}$ cycle sum is
+$\tfrac{2}{3}\delta^3(a^3+b^3+c^3)$; with $a+b+c=0$ the identity $a^3+b^3+c^3=3abc$ gives
+$2\delta^3\,abc$.
+\end{proof}
+
+\noindent Thus detailed balance to $\bigO{\delta^3}$ $\iff$ $abc=0$ for every triangular face --- a
+finite, concrete condition.
+
+\section{The computation: non-reversibility at $\bigO{\delta^3}$}
+\begin{theorem}[$\bigO{\delta^3}$ non-reversibility]\label{thm:main}
+Under Mechanism~A at vertex-aligned Reading~C, the induced Markov process on the 600-cell violates the
+Kolmogorov cycle condition at $\bigO{\delta^3}$: the per-face content $2\delta^3 abc$ is nonzero on
+$420$ of the $1200$ triangular faces (with $|abc|\in\{1/8,1/4\}$), all of which touch the second shell.
+The process is therefore non-reversible; it carries a nonzero steady-state probability current.
+\end{theorem}
+\begin{proof}[Computation]
+The verification script \texttt{code/verify\_odelta3\_kolmogorov\_curl.py} constructs the 600-cell ($120$
+vertices, $720$ edges, $1200$ triangular $3$-cliques, uniform degree $12$ --- CHECK~1), confirms
+$\max_{\text{faces}}|a+b+c|=2.2\times10^{-16}$ and the identity $a^3+b^3+c^3=3abc$ to
+$5.6\times10^{-16}$ (CHECK~2), and evaluates $abc$ per face (CHECK~3): $\max|abc|=1/4$, with $420$ faces
+nonzero, all incident to the second shell. The first-shell faces contribute zero --- icosahedral
+first-shell faces have all edges perpendicular to $\nhat$, and host-side faces have two host-edges of
+opposite orientation whose cubes cancel --- so the residual lives exactly at the second shell, as
+predicted by the Patch-0688 shell analysis. A single nonzero face suffices to break reversibility, so the
+conclusion is stable against higher odd orders.
+\end{proof}
+
+\begin{remark}[Why third order]
+The bias $\delta\,\ehat\cdot\nhat$ is, per step, the gradient of the linear function $x\cdot\nhat$, hence
+conservative --- which is why the $\bigO{\delta^1}$ circulation vanishes. But the Kolmogorov condition
+lives in $\log r$, which is \emph{nonlinear} in $\ehat\cdot\nhat$; the $\delta^3$ term $\propto
+(\ehat\cdot\nhat)^3$ is not a gradient and carries circulation. The substrate arrow is thus a
+\emph{nonlinear} effect of the multiplicative rate law, invisible until the second shell at third order.
+\end{remark}
+
+\section{The arrow interpretation and the candidate $\CT$ upgrade}
+A non-reversible continuous-time Markov process has, generically, a nonzero stationary probability
+current $J$ circulating around the cycles on which detailed balance fails. A nonzero $J$ is a genuine
+\emph{time-asymmetry}: the steady state is not invariant under reversal of the dynamics. Theorem~\ref{thm:main}
+therefore exhibits a \emph{derived} substrate $\Te$-asymmetry mechanism --- the $\bigO{\delta^3}$
+probability current sourced by Mechanism~A --- conditional on Mechanism~A.
+
+\begin{proposition}[Candidate $\textbf{W3}\to\textbf{W1}$ upgrade]\label{prop:upgrade}
+At the Mechanism-A framework level, the capacity $\CT$ (is a substrate $\Te$-asymmetry mechanism
+derivable?) is answered \textsf{Yes}: Theorem~\ref{thm:main} supplies one. This is the upgrade condition
+TARROW-1 named for $\textbf{W3}\to\textbf{W1}$. The value $\VT$ (the arrow \emph{direction}) is
+untouched: Theorem~\ref{thm:main} produces a current but does not fix which sense of traversal is
+``forward,'' consistent with TARROW-1's axiom-level W2-exclusion. The upgrade is therefore to
+\textbf{W1} (mechanism derivable, direction free $=$ cosmological inheritance), not to W2.
+\end{proposition}
+
+\noindent The upgrade is \emph{candidate} and \emph{conditional}: it holds at the Mechanism-A framework
+level, with the residual that Mechanism~A is itself a framework axiom (OPEN-FP-F1-2), not yet derived from
+A1--A11. Per DG-3, the W-move is claimed only after multi-AI review; this registration does not close it.
+
+\section{Non-conflict with TARROW-1}
+TARROW-1's T-even-geometry lemma established that every static
+\emph{geometric} invariant of the substrate --- coordinates, Gram data, distance spectrum, the
+orientation pseudoscalar $\sgn(\nhat)$ --- is $\Te$-even, and that the only $\Te$-odd object in the
+registered framework is $\sgn(\delta)$ itself. Theorem~\ref{thm:main} does not contradict this: the
+probability current is not a static geometric invariant but a \emph{dynamical} object built from
+Mechanism~A's \emph{rates}. It is exactly the ``F.2 physicalization'' TARROW-1 named as unbuilt --- the
+coupling of the dynamics to a $\Te$-odd datum. So this theorem \emph{builds} (partially) the object whose
+absence pinned $\CT=\textsf{No}$; the static-geometry $\Te$-evenness and the uniqueness of $\sgn(\delta)$
+as the \emph{geometric} $\Te$-odd object both stand.
+
+\section{Scope: what this theorem does and does not claim}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Does:} derive a substrate $\Te$-asymmetry mechanism (the $\bigO{\delta^3}$ probability
+current), conditional on Mechanism~A; correct the order-counting (odd-only); give the per-face
+triple-product formula; rule out the curl-free / equilibrium branch of the deep-engine gate.
+\item \textbf{Does not:} move the \emph{spatial} verdict (FI-C-9 stays \textbf{V3}; this is the T-axis);
+fix the arrow \emph{direction} (W1, not W0); prove reflection-positivity fails or $\sgn(\mu^2)<0$ (the
+P-side capacity is a separate computation --- detailed balance is sufficient, not necessary, for RP, and
+$\mathrm{RP}=$ OS reflection $\ne$ $\Te$-symmetry); close the $\textbf{W3}\to\textbf{W1}$ move
+(registration is provisional; review required, DG-3).
+\end{itemize}
+
+\section{Conditionality and falsifiers}
+\textbf{Conditionality:} Mechanism~A (F.1 Axioms MA.1/MA.2, OPEN-FP-F1-2); computed at $\bigO{\delta^3}$
+(order-stable since one nonzero face breaks reversibility); vertex-aligned Reading~C (the framework's
+fixed choice).
+\textbf{Falsifiers:} \textbf{(T2-1)} if the triangular faces fail to generate the cycle space (they do
+not --- the 600-cell boundary is a simply-connected $3$-sphere); \textbf{(T2-2)} if a global symmetry
+rendered the process effectively reversible despite nonzero per-face $abc$ (it does not --- detailed
+balance is per-cycle, and $420$ faces independently violate it); \textbf{(T2-3)} if ``probability current
+$\Rightarrow$ time-asymmetry'' failed for this process (it is the defining property of a non-reversible
+Markov chain); \textbf{(T2-4)} if a future Layer-4 derivation of Mechanism~A (OPEN-FP-F1-2) altered the
+rate law's $\ehat\cdot\nhat$ form, the order-counting and the triple-product formula would require
+re-derivation.
+
+\end{document}
