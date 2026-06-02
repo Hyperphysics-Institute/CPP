@@ -18,10 +18,13 @@ as the primary structure source.
 ## Step-0 foundation (what is derived vs assumed)
 
 - **GP = grid points** (600-cell vertices) at fixed spacing l_P; the lattice *is* space (`master_glossary`).
-  Cosmic expansion is **lattice growth**, not metric stretching of a continuum. The CP–GP density ratio is
-  the occupation/packing fraction; the **initial Moment is the GP-exclusion-saturated state**, and expansion
-  is relaxation/dilution from saturation. OPEN-SR-6 (the expansion law) and OPEN-SR-7 (the packing limit) are
-  registered but **undeveloped one-liners** (dated 23 Mar 2026); no early-universe packing dynamics exists in-corpus.
+  CPP expands by **DP-Sea occupancy DILUTION on a FIXED lattice scaffold** (founders "Occupancy", L33; confirmed
+  Patch 0731), not by metric stretching and not by growing the lattice. The CP–GP density ratio is the occupancy
+  fraction f; the **initial Moment is the GP-exclusion-saturated state** (near-100% occupancy, as inside a black
+  hole), and expansion is f dropping. **The GP packing/exclusion limit is EMERGENT, not primitive:** a consequence
+  of ZBW DP oscillation (P5 demoted axiom → theorem T-CPP-1; a DP {A(−),B(+)} bounces inward to d_min and back each
+  Moment, f_ZBW ≈ 1/(2t_P), the fastest mode in CPP). OPEN-SR-6/SR-7 (the explicit growth law / n_max) are
+  registered but **undeveloped**; no early-universe packing dynamics existed in-corpus before this arc.
 - **Derived background (sea_gravitation A→D):** CPP recovers standard ΛCDM via excess-sourcing. The early
   universe is **radiation-dominated** (w=1/3, strongly decelerating) — there is no de-Sitter era anywhere in the
   recovered history.
@@ -40,13 +43,15 @@ time-constant iff the effective EoS w = −1 (de Sitter). For barotropic w = con
 H(t) = 2/[3(1+w)t] — H falls monotonically as 1/t; no constant-H window. Equal power per log-interval (scale
 invariance) is the signature of the w=−1 scaling symmetry; w > −1 gives no inflationary stretching. *(CHECK 1.)*
 
-**Lemma 2 — what the packing/exclusion source gives.** An exclusion/degeneracy pressure increases monotonically
-with density, vanishes as n→0, and stiffens toward the causal limit w → 1 as n → n_max (the saturated initial
-Moment) — the same physics as Pauli degeneracy pressure or hard-sphere packing. The deceleration parameter
-q = (1+3w)/2 > 0 for all w > −1/3; the packing range **w ∈ (0,1] is firmly decelerating**, with the stiff extreme
-w=1 giving a ∝ t^(1/3), the *slowest, most decelerating* causal expansion — the polar opposite of de Sitter.
-*(CHECK 2; a parameter-free excluded-volume EoS p = n e₀·x/(1−x), x=n/n_max, confirms w(n) ∈ (0,1] across the
-full dilution history and never approaches −1 — CHECK 3.)*
+**Lemma 2 — what the ZBW substrate gives (the EoS).** GP exclusion is emergent from ZBW DP oscillation, so the
+early substrate is a Sea of bound DPs oscillating at f_ZBW ≈ 1/(2t_P) — the *fastest* mode in CPP. A coherent field
+oscillating in V ∝ φⁿ time-averages, by the virial theorem, to ⟨w⟩ = (n−2)/(n+2): a quadratic (harmonic) ZBW bond
+(n=2) gives **w=0 (matter-like)**; a relativistic/quartic regime (n=4) gives **w=1/3 (radiation-like)**. So the
+physical ZBW range is **w ∈ [0, 1/3]** — exactly the matter-to-radiation content the Step-D background assumes —
+firmly > −1/3, decelerating throughout (q = (1+3w)/2 > 0). **The deep point:** reaching w=−1 (de Sitter) requires
+n→0, a *frozen / slow-rolling* field — the antithesis of fast ZBW oscillation. So the natural CPP scalar (the DP
+oscillation amplitude) is structurally barred from being an inflaton: it is intrinsically fast, hence diluting.
+*(CHECK 2–3.)*
 
 **Lemma 3 — the vacuum route is independently closed (from Step 0).** The only component with the non-diluting
 constant ρ that de Sitter requires is the uniform Sea ground state; by excess-sourcing (Gate 1) it is
@@ -54,16 +59,17 @@ constant ρ that de Sitter requires is the uniform Sea ground state; by excess-s
 excess (Lemmas 1–2).
 
 **The clincher — comoving Hubble radius (reading-independent).** Scale-invariant *generation* requires a **shrinking**
-comoving Hubble radius, d/dt[(aH)⁻¹] < 0 ⇔ ä > 0 ⇔ w < −1/3, so modes exit the horizon and freeze. The packing
-branch (w ∈ (0,1]) gives ä < 0 ⇒ the comoving horizon **grows** ⇒ modes *enter* (not exit) ⇒ nothing freezes ⇒
+comoving Hubble radius, d/dt[(aH)⁻¹] < 0 ⇔ ä > 0 ⇔ w < −1/3, so modes exit the horizon and freeze. The ZBW
+branch (w ∈ [0,1/3]) gives ä < 0 ⇒ the comoving horizon **grows** ⇒ modes *enter* (not exit) ⇒ nothing freezes ⇒
 no scale-free spectrum is generated. *(CHECK 4.)*
 
 ## Verdict
 
 **Conditional on Gate-1 excess-sourcing** (the cosmo sector's existing load-bearing commitment), **CPP early
 dynamics admits no scaling-symmetric / quasi-de-Sitter phase.** The only constant-H-capable source (the uniform
-Sea) is non-gravitating; the GP-exclusion source is a maximally stiff (w→1) diluting excess giving the most-
-decelerating expansion. Constant H needs w=−1; the packing route delivers w ∈ (0,1]. **No equal-power-per-
+Sea) is non-gravitating; the emergent ZBW DP-oscillation source is a fast-oscillating diluting medium with
+w ∈ [0,1/3] (matter-to-radiation). Constant H needs w=−1, a frozen/slow-rolling field — the antithesis of the
+fastest mode in CPP. **No equal-power-per-
 log-interval window exists.** ⇒ The DM-2 generation half cannot be supplied by CPP early dynamics within the
 recovered Friedmann framework ⇒ **CONJ-COSMO-1 fails as a *primary structure-formation* model — a clean
 CONDITIONAL false (on Gate 1).** Its microphysics/rotation-curve gates (Steps 1–3, 5) still pass; this kills only
