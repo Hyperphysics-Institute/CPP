@@ -97,6 +97,7 @@
 **Cross-sector connections:** Cosmology series; Capotauro timing; **OPEN-COSMO-DM-2** (DM-2 generation barrier — OPEN-SR-6 is the shared hook); CONJ-COSMO-1
 **Paper(s):** GR companion
 **Last updated:** 1 June 2026 (Patch 0731 — Step-1 residual escape CLOSED; ZBW grounding; frontier collapses to Gate-1/c08)
+**[Patch 0732 — Axiom H (the PSR-superposition inflation engine) evaluated:** a proposed new primitive for native inflation. Grounded against SR-1 (PSR_eff=l_P/(1+kΔSSV) ⇒ max PSR=l_P=c), it delivers de Sitter ONLY by allowing PSR>l_P (super-c traversal, ~12c in the toy), overriding the speed-of-light ceiling that underpins the SR/SM sector; the SR-1-consistent capped engine gives at most LINEAR expansion (H falls), and saturation-dilution caps e-folds at ln(occupancy)≪60. Third view of the 0729/0731 obstruction: a fixed-lattice, c-capped theory cannot stretch its metric super-luminally, which inflation requires. See `series_phenomena/cosmology/early_universe/axiom_h_inflation_engine_evaluation.md`; verify `scripts/0732_axiom_h_inflation_engine.py` (10/10).]**
 
 ---
 

@@ -948,3 +948,35 @@ This is now a registered, well-formed problem (OPEN-FP-SF-4-FLAVORBASIS with ske
 **[Opus scope note — owed piece 3: the spectrum, and what the toy model shows.]** The numerical toy built for this entry (`scripts/0730_chain_recursion_power_spectrum.py`) tests the fractal-recursion intuition directly: a chain-of-chains multiplicative cascade on a self-similar backbone. Result — the recursion **does** produce scale-free (power-law) *clustering* statistics, vindicating the intuition that a self-similar backbone yields scale-free structure (this is the right signature for the cosmic-web *morphology*). But the resulting field is **strongly non-Gaussian with a tilt set by the cascade parameters** (a free dial), i.e. the multifractal signature of *clustered/processed* matter — **not** the nearly-Gaussian, k¹ (flat-Δ²) *primordial* spectrum the CMB measures. So the toy both vindicates the morphology claim and locates the gap precisely: self-similar recursion ⇒ scale-free clustering ✓, but ⇏ Gaussian scale-invariant primordial seeds. On the tilt: n_s ≈ 0.96 is physically a *dynamical* near-miss of perfect scale-invariance (tied to H's slow change over the e-folds); matching it to a *static* 600-cell ratio would be numerology unless the geometry is shown to set the expansion history's tilt — a caution, not a prohibition.
 
 **Net status.** The qCP-chain web is registered as **CONJ-COSMO-3** — a cosmic-web *morphology / structure-processing* conjecture, explicitly **downstream of and conditional on** an unsolved seed-generation mechanism, carrying the three owed pieces above as its falsification/derivation path. It does not move the Patch-0729 Step-1 verdict; if anything the dialogue reinforced it. The genuinely valuable, near-term-testable thread is owed-piece 3: turn the chain-of-chains recursion into an explicit stochastic model and measure its P(k) (begun in the 0730 toy) — the place where the intuition either crystallizes into a derivation or meets its next honest constraint.
+
+### 6e. Axiom H — The PSR-Superposition Inflation Engine (1 June 2026, Session 153c)
+
+*Source: Thomas's proposal across the 1 June 2026 Copilot dialogue, brought into the CPP record. A proposed NEW
+primitive for a CPP-native inflationary epoch. Thomas's claim is in his voice; the **[Opus scope note]** carries
+the evaluation against the SR-1 PSR law. Full evaluation: `series_phenomena/cosmology/early_universe/axiom_h_inflation_engine_evaluation.md`; verify `scripts/0732_axiom_h_inflation_engine.py`.*
+
+**The proposal.** Thomas: the Big Bang singularity is a state of universal CP superposition in a space of zero
+SSV. *"What I postulate as an axiomatic rule is that every CP can move a maximum PSR each Moment; and if the CP
+lands on another superimposition, then it will increase its maximum PSR by a constant percentage"* — a
+multiplicative boost that compounds, every Moment of persistent superposition, into exponential expansion. The
+phase ends gracefully: *"the superimposition will become less and less frequent, to the point of being a
+residual percentage,"* handing off to the kinetic epoch. The same rule is proposed to give degeneracy pressure
+in the white-dwarf → neutron-star → black-hole series (PSR-boost resisting gravitational compression). The
+asymmetries that seed structure are imprinted by the qCP-qCP directional bias acting on the Displacement step
+during this expansion, then stretched (cf. §6d).
+
+**[Opus scope note — the right shape, but it must override the speed of light.]** This is the correct *shape*
+for a substrate inflation engine — local, density-triggered, self-terminating — and it is a genuine
+contribution. But two grounded facts decide it. (1) SR-1 gives PSR_eff = l_P/(1+k·ΔSSV), so the *maximum* PSR is
+l_P (at zero SSV) — one lattice step per Moment = the speed of light c, **not** infinite. (2) de-Sitter inflation
+*is* super-luminal recession of comoving points; on a FIXED lattice (founders "Occupancy" L33; Patch 0731) all
+dynamics is CP motion capped at c, which cannot produce super-luminal recession. The Patch-0732 toy (10/10)
+makes this concrete: the SR-1-consistent (c-capped) engine gives **at most linear** expansion with H *falling*
+and only ~O(1) e-folds; a genuine de-Sitter window appears **only** if PSR is allowed to exceed l_P (the toy
+shows ~12c edge recession), i.e. by overriding the speed-of-light ceiling that underpins the SR/SM sector. And
+the e-folds available from dilution-from-saturation are ln(occupancy) ≪ 60 either way. So Axiom H is not a free
+inflation: it would require overriding the c-ceiling (a large modification, not an addition), a free parameter ε,
+and a separate source of the ~60 e-folds. It joins 0729 (no constant-H source) and 0731 (no lattice-growth DOF)
+as a third view of one obstruction: **a fixed-lattice, c-capped theory cannot stretch its metric super-luminally,
+which is what inflation requires.** The qCP-chain picture (§6d / CONJ-COSMO-3) therefore remains a
+morphology/processing conjecture, with primordial *generation* still owed.
