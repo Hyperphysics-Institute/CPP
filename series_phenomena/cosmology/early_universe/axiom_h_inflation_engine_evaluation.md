@@ -1,5 +1,37 @@
 # Axiom H (the PSR-superposition inflation engine): evaluation against the SR-1 ceiling
 
+> ## ⚠ CORRECTION — Patch 0733 (supersedes the central premise of this finding)
+>
+> The 0732 verdict rested on reading `l_P` in `PSR_eff = l_P/(1+k·ΔSSV)` as the lattice spacing — "PSR ≤ l_P =
+> one grid step per Moment = c." **That reading is wrong.** The companion corpus documents the opposite:
+> - the 600-cell grid points sit at **sub-Planck spacing** (c07_weak_field_GR.tex: "at sub-Planck spacing");
+> - **`l_P` is the *unstressed baseline PSR*** (glossary-SR-1.md: PSR_eff "distinguishes it from the unstressed
+>   baseline l_P"; c07: "PSR = l_P" in the unstressed lattice);
+> - one PSR is a **radius enclosing ~10³⁰ grid points** (c01 development: "10³⁰ GPs per Planck length";
+>   c07 notes: "~10³⁰ GPs per PSR (the PSR at STP)"; a PSR of radius R encloses ~R³ GPs).
+>
+> So "one PSR per Moment" is a displacement of ~10³⁰ grid points, not one; `l_P` is a baseline *radius*, not a
+> grid step. **The "super-c ceiling" argument is therefore WITHDRAWN:** fast early expansion at one PSR per Moment
+> with a large PSR is rapid but locally sub-luminal — no superluminal violation.
+>
+> This also reaches back: **0729 and 0731 were computed assuming a fixed, present-day c.** The corrected picture
+> allows the baseline PSR to differ by epoch — a **Variable-Speed-of-Light (VSL) cosmology** — which *reopens* the
+> inflation question rather than closing it. What 0732 correctly showed survives only as a conditional: *if* the
+> baseline PSR were fixed at its present value, *then* expansion is at most linear and there is no de-Sitter window.
+> Whether the baseline PSR is fixed or epoch-dependent is exactly the open question the SR-1 rederivation must settle.
+>
+> **What remains genuinely owed (unchanged by the correction):** the primordial *spectrum* — scale-invariance +
+> Gaussianity + adiabaticity. A large early PSR (VSL) addresses the horizon/causal-contact problem; it does not by
+> itself generate the spectrum, and the 0730 non-Gaussianity result stands. **Corrected status:** superluminal
+> objection withdrawn; horizon problem addressable by VSL; constant-H phase and spectrum generation **OPEN** (not closed).
+>
+> The toy `scripts/0732_axiom_h_inflation_engine.py` remains valid but must be re-read: its "uncapped" run is not
+> "super-c" — it is "c (= PSR/Moment in absolute GP terms) was larger early," i.e. the VSL regime. Its narrowed
+> lesson: a *fixed-baseline-PSR* engine gives linear expansion; an *epoch-dependent* baseline is the open VSL question.
+>
+> *(The analysis below is preserved as written for the record; read it through this correction.)*
+
+
 *Session 153c, 1 June 2026 (Opus). Patch 0732. Evaluates Thomas's proposed NEW primitive — Axiom H — as a
 CPP-native inflation engine. **Toy evaluation; conditional/negative; no THEO.** Verify:
 `scripts/0732_axiom_h_inflation_engine.py` (10/10). Vision: founders_vision.md §6e.*
