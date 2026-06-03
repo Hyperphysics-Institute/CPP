@@ -395,6 +395,47 @@ In Conscious Point Physics (CPP), space is modeled as a discrete 4-dimensional l
 
 The finite 600-cell tiles the 3-sphere $S^3$, not flat $\mathbb{R}^4$. In CPP, we adopt the \textbf{quasicrystalline approximation}: space is flat $\mathbb{R}^4$ at macroscopic scales, constructed by modular repetition of 600-cell motifs with overlapping Voronoi cells (standard in 4D quasicrystal theory). This yields infinite extent, perfect icosahedral symmetry averaging to macroscopic isotropy, and no boundary effects. Boundary corrections appear only at cosmological scales, beyond current testability. This quasicrystalline approach shares conceptual similarities with combinatorial space-time constructions explored by Penrose (1971) \cite{penrose1971}.
 
+\subsection{Grid Resolution: the Nested 600-Cell Hierarchy}
+\label{sec:grid_resolution}
+
+Before computing the Voronoi geometry we fix, once and canonically, the
+\emph{scale} at which the lattice is read. Two scales must be kept distinct,
+and conflating them is the source of an apparent inconsistency that earlier
+drafts carried (one reading the displacement budget $l_P$ as a single cell
+edge, another as a radius enclosing $\sim\!10^{30}$ grid points). Both are
+partial views of a single \textbf{nested 600-cell hierarchy}, which we adopt
+as the canonical reading:
+
+\begin{itemize}
+\item \textbf{Coarse (motif) scale.} A single 600-cell motif is the
+  $l_P$-scale tile. All unit-circumradius geometry in this paper---the
+  edge ratio $R/a = \phi$ (Eq.~\ref{eq:edge_length_ref}), the cell volume
+  $V_0$ (Eq.~\ref{eq:v0_derived}), the insphere radius (Eq.~\ref{eq:r_in_derived})
+  that Planck-normalises to $l_P$, and hence the coupling $k = l_P^3/E_P$---is
+  a property of this coarse motif. The displacement budget $l_P$ is the
+  \emph{reach ceiling}: the maximum spatial advance one Conscious Point may
+  complete per Absolute Moment, so that $c = l_P/t_P$.
+\item \textbf{Fine (nesting) scale.} Physical space is a heavily nested array
+  of self-similar 600-cell motifs; each coarse edge is subdivided by finer
+  motifs down to the true grid-point spacing $\sim l_P/10^{30}$. The
+  \emph{effective} grid resolution is therefore sub-Planck, and it is this
+  fine nesting---not any subdivision of $l_P$ itself---that supplies the
+  continuous-looking velocity gradation $|\mathbf{d}_{\rm spatial}| = l_P\,(v/c)$
+  required for sub-luminal motion. ``One coarse step per Moment'' resolves at
+  the fine scale into many grid points traversed.
+\end{itemize}
+
+The self-similar $R/a = \phi$ relation holds at every level of the nesting,
+so the fine structure satisfies the same geometry as the coarse motif at a
+smaller absolute scale and does not enter the coarse-scale computation. \textbf{No
+quantity used in any of the five predictions changes under this reading:}
+$R/a=\phi$ and $k = l_P^3/E_P$ are coarse-motif statements, evaluated at the
+present-epoch $l_P$, and the predictions depend only on $l_P$ (the reach
+ceiling) and $k$. The fine nesting fixes \emph{resolution}, not the
+prediction-bearing parameters. This canonical choice is propagated to the
+SR companion papers (c01 reach semantics, c02 stiffness-integral scale,
+c07 sub-Planck grid statement).
+
 \subsection{Voronoi Cells}
 
 Each Conscious Point (CP) or Grid Point (GP) has a Voronoi cell, the region closer to it than to any neighbor. In the undistorted lattice the dual is the 120-cell; the effective local Voronoi cell volume in unit circumradius coordinates is:
@@ -1166,6 +1207,7 @@ Instead, space is an \textbf{infinite quasicrystalline lattice} constructed from
 
 \begin{itemize}
 \item The vertices of all repeated 600-cell motifs collectively define the fixed \textbf{Grid Points (GPs)} --- the absolute, eternal markers of space.
+\item The motifs are \textbf{nested} (Sec.~\ref{sec:grid_resolution}): a single 600-cell is the $l_P$-scale coarse tile on which $R/a=\phi$ and $k=l_P^3/E_P$ are defined, while the true GP spacing is sub-Planck ($\sim l_P/10^{30}$), giving the fine resolution that carries continuous velocity gradation. The coarse step $l_P$ is the per-Moment reach ceiling, $c = l_P/t_P$.
 \item Conscious Points (CPs) and particles of the Dipole Sea execute their displacements within the Voronoi cells formed by these overlapping motifs.
 \item The quasicrystalline arrangement preserves perfect local icosahedral symmetry (order 120) while extending indefinitely in all four dimensions, yielding macroscopic isotropy and exact Lorentz covariance at laboratory energies.
 \item Boundary effects appear only at cosmological scales and are therefore unobservable in current experiments.
