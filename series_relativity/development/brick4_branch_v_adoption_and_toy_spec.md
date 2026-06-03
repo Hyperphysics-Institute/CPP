@@ -59,6 +59,14 @@ not the objection. (The H-axiom's status changes here from *evaluated-not-adopte
 
 ## 4. The gate: toy-model result (Patch 0738)
 
+> **[UPDATE — Patch 0741: the n_s roll-off claim below is SUPERSEDED.]** The "modest roll-off →
+> n_s ≈ 0.965" in test B(iii) and the debts ledger was a *posited* smooth decline with no dynamical
+> support. The first-principles roll-off (0741, `rolloff_law_finding.md`) shows the actual
+> superposition-thinning dynamics give n_s = 1 (Harrison–Zel'dovich, Planck-excluded at ~8σ) across
+> observable scales, with the tilt confined to a too-sharp final-e-fold cliff. **n_s is NOT a
+> prediction; the tilt is a FOUND PROBLEM.** Gaussianity, horizon, amplitude-as-tuning, and the e-fold
+> count stand; the tilt claim does not.
+
 Run `0738_brick4_spectrum_gate.py`. Three tests, all PASS:
 
 - **A — CLT Gaussianity.** Additive ZBW sum → excess kurtosis **−0.012** at N=512 (Gaussian);
