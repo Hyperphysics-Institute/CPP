@@ -104,3 +104,40 @@ The binary icosahedral group derivation of the edge length (Appendix A.1.1) and 
 **Companion papers to submit simultaneously:** The SR-1 predictions depend on the companion technical note TN-SR-1 (Holographic Vacuum Energy Suppression from the 600-Cell Lattice Structure), which develops the Casimir and Unruh predictions in more detail. Both should be submitted together.
 
 **Current status:** v17 is submission-ready pending OSF preregistration infrastructure.
+
+---
+
+## Session 153 (2026-06-02) — the l_P/PSR semantics reconciliation, and the rederivation pass opened
+
+A cosmology-sector arc (Patches 0729–0734, the dark-matter generation question) bottomed out in a foundational
+SR-1 issue and forced a return to first principles on what `l_P` means. The provoking move was an inflation
+evaluation (Patch 0732) that read `l_P` in `PSR_eff = l_P/(1+k·ΔSSV)` as the lattice spacing — "PSR ≤ l_P = one
+grid step per Moment = c" — and concluded a CPP-native inflation engine would have to override the speed-of-light
+ceiling. Thomas pushed back across several rounds, and grounding the claim against the corpus showed the picture
+is more subtle than either the original reading or its first correction (Patch 0733) allowed: **SR-1's main text
+uses `l_P` as the standard Planck length** (line 711) with the 600-cell edge ~l_P/φ and GPs as "fixed eternal
+markers" (line 1168), which supports an l_P-scale reading; **the companions** (c07 "sub-Planck spacing"; glossary
+"unstressed baseline" PSR; c01 development "~10³⁰ GPs per Planck length") support a nested sub-Planck reading in
+which one PSR is a radius enclosing ~10³⁰ grid points. The corpus carries **both, inconsistently** — and that
+inconsistency, not anyone's misreading, is the real defect.
+
+The reconciliation brick (Patch 0734, `development/lp_psr_grid_reconciliation.md`) separated two questions that the
+inflation debate had been conflating. **Q1 — grid resolution:** l_P-scale tiling vs nested sub-Planck hierarchy;
+the corpus must pick one and carry it consistently (the nested reading is recommended, as it is what the velocity-
+gradation argument and c01/c07 require). **Q2 — metric variability:** is the physical reach `l_P` a fixed geometric
+length or epoch-dependent? The decisive result is that PSR_eff ≤ l_P holds under *both* Q1 readings (ΔSSV ≥ 0), so
+the maximum recession is c = l_P/t_P and expansion at the ceiling is *linear* regardless of the GP count — de
+Sitter inflation requires `l_P` *itself* to vary, i.e. a variable metric on the fixed graph (a Variable-Speed-of-
+Light cosmology). So **inflation turns only on Q2, not Q1**, and the Q2 variable-metric route is genuinely open: it
+is *not* closed by Patch 0731, which closed only lattice-*graph* growth, not metric variation on a fixed graph. The
+same Q2 fork governs the first-moment "infinite displacement" worry in opposite directions — a fixed metric makes
+`l_P` a finite geometric reach ceiling (no infinity; the H-axiom's `l_P_base` becomes unnecessary rather than ad
+hoc), while a variable metric brings the infinity back and needs a regulator. Present-epoch SR/SM predictions are
+untouched under either branch, anchored at today's `l_P` via k = l_P³/E_P (line 712).
+
+This opens the **SR-1 rederivation pass**: rederive SR-1 + the 22 companion papers under one consistent three-level
+semantics (fixed GP graph / grid resolution / baseline reach l_P / PSR_eff), verify the k-derivation and five
+predictions survive, then dispatch to the AI review panel. Brick #1 (this session) establishes the vocabulary and
+the two-question spine. Remaining bricks (per `handovers/2026-06-02_session_153_SR1_rederivation_scope.md`): settle
+Q1 (#2), pose Q2 as an explicit fork (#3), the first-moment Big-Bang story (#4), with the Gaussianity thread (CLT
+over ZBW phases, distinct from the failed multiplicative cascade) running in parallel.

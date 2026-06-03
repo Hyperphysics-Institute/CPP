@@ -57,3 +57,39 @@ the two foundational questions (Q1 resolution, Q2 metric variability) explicit t
 - A corrected/superseding patch gets a NEW number — never re-issue a filename (the 0729 duplicate-filename lesson).
 - NO THEO for conditional/negative results. Stay clear of the chirality live zone. PCD = Perceive/Compute/Displace.
 - Reasoning-capture: every physics patch bundles .tex/.md + `reasoning/NNNN.md` (+ verify script) in one git am.
+
+## Step A–H Completion Audit (§15.11)
+
+- **Step A — Tier 1 session log.** Satisfied via this handover (§4 session-log-as-handover-backbone) + per-patch
+  reasoning capture `series_phenomena/cosmology/early_universe/reasoning/0729–0733.md`. No separate daily
+  session-log file maintained for recent research-sector sessions; the handover is the continuity record.
+- **Step B — Tier 2 transcript pointer-map.** N/A — the transaction index for this sector is the git commit
+  history (Patches 0729–0735) plus the per-patch `reasoning/NNNN.md` files; no cross-paper transcript is
+  maintained for cosmology-sector / SR-development work.
+- **Step C — Tier 3 development vignette.** ✓ DONE (Patch 0735) — vignette appended to
+  `series_relativity/papers/development-SR-1.md` (the session's reasoning was SR-1-paper-scoped).
+- **Step D — Tier 4 verbatim reasoning.** Satisfied via per-patch `reasoning/0729–0733.md` (the programme's
+  reasoning-capture protocol, Tier-4-equivalent) + the reconciliation note `lp_psr_grid_reconciliation.md`
+  (verbatim-quality SR-1 reasoning) + the 0734/0735 commit bodies. No `reasoning-SR-1.md` exists to append to; the
+  reconciliation note is the canonical record of this session's SR-1 reasoning.
+- **Step E — registry audit (per-registry):**
+  - `frontier_sectors/SR.md` — ✓ updated (0733/0734: super-c withdrawn; OPEN-SR-7/VSL note; rederivation pass).
+  - `frontier_sectors/CONJ.md` — ✓ updated (0733: CONJ-COSMO-3 correction note).
+  - `future_projects.md` — ✓ updated (0735: Project 00 Gate-2 bullet, Session-153 outcome).
+  - `axiom-registry.md` — N/A (no new axioms; Axiom H evaluated, not adopted).
+  - `theorem-registry.md` — N/A (NO THEO; conditional/negative + reconciliation work).
+  - `predictions.md` — N/A (no new quantitative predictions).
+  - `master_glossary.md` — N/A (no new terms coined).
+  - `methods_catalogue/methods_catalogue.md` — N/A (no new/adapted physics-derivation method; the work was
+    corpus grounding + conceptual reconciliation, out of scope per Patch 0461).
+  - `organizational_frontier.md` — N/A (no new OPEN-ORG items).
+  - `problem_histories/PH-*.md` — N/A (no PH file for the cosmology sector; narrative carried in the handover +
+    future_projects Project 00).
+  - `paper_catalog.md` — N/A (no paper status change; SR-1 rederivation pass tracked in future_projects + handover).
+  - `programme_orientation.md` (TATWD) — N/A (no v1.0 SHIP or programme-architecture event this session).
+- **Step F — reviewer artifacts.** N/A — no reviewer letters/exchanges generated this session.
+- **Step G — protocol / OS updates.** N/A — no new protocol rule; the filename-collision lesson invoked this
+  session (corrected patches get a NEW number) is already codified (Patch 0728 / §15 context).
+- **Step H — handover document.** ✓ this file, `handovers/2026-06-02_session_153_SR1_rederivation_scope.md`
+  (Patch 0734), opens with the canonical kickoff line and carries the next-session task list; this audit section
+  added Patch 0735.
