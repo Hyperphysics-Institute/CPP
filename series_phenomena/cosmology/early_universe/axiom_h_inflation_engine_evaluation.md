@@ -1,5 +1,17 @@
 # Axiom H (the PSR-superposition inflation engine): evaluation against the SR-1 ceiling
 
+> ## STATUS UPDATE — Patch 0738 (Brick #4): ADOPTED as the working early-universe engine
+>
+> Following the Q2 fork (Brick #3, 0737), **Branch V is adopted** and Axiom H is **adopted as the
+> early-universe expansion engine** (status change: evaluated-not-adopted → adopted-as-working,
+> gate passed at toy level). The 0732 "super-c" objection is moot here: the construction fixes the
+> UNIT `l_P_base` (constant) while PSR_base / c_eff are state-dependent (Branch V), with present-epoch
+> anchoring preserved (`k = l_P_base³/E_P`, five SR predictions intact). The construction (fixed unit
+> + finite-patch regulator + H-engine + CLT/ZBW source + qCP/qDP morphology) clears the toy spectrum
+> gate (`scripts/0738_brick4_spectrum_gate.py`: CLT-Gaussianity, n_s≈0.965 via interlock, ~60 e-folds
+> from the observed CP count). PASS = capability/coherence, NOT a parameter-free prediction; see the
+> debts ledger in `series_relativity/development/brick4_branch_v_adoption_and_toy_spec.md`.
+
 > ## ⚠ CORRECTION — Patch 0733 (supersedes the central premise of this finding)
 >
 > The 0732 verdict rested on reading `l_P` in `PSR_eff = l_P/(1+k·ΔSSV)` as the lattice spacing — "PSR ≤ l_P =
