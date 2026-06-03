@@ -86,3 +86,4 @@
 
 ---
 
+**[Patch 0743 — physical cartoon recorded (not yet absorbed): B field as rotating DPs.** A moving charge radially polarizes the DPs (radial pole displacement = E) and swings each DP's like-pole around an axis (rotation = B) — so there is no separate B field, only rotating DPs; E and B are two motions of one DP response (hence μ₀,ε₀ share one stiffness, reinforcing the Patch 0740 Z₀-geometric result). The mathematical form exists in the corpus (EW-5 SSV-curl field strength; c06 B=curl-of-pattern); the **mechanical cartoon does NOT** — captured in `series_electroweak/development/b_field_as_rotating_dp_physical_cartoon.md` (Thomas's interpretation, w/ Grok). Small EM-sector task to fold it formally into EW-1 (Maxwell derivation) / c06 as the physical paragraph under the math.]**
