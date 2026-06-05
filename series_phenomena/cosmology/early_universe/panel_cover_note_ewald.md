@@ -33,7 +33,9 @@ build to the spec (or your own equivalent — independent implementations conver
 
 **Stage A is non-negotiable and comes before everything else.** Run unscreened Coulomb in the dilute,
 weak-coupling regime and confirm your implementation **reproduces the Debye–Hückel limiting law
-μ_excess ∝ −√n** to within a few percent, with finite-size scaling. This is the calibration against a
+μ_excess/kT ∝ −√n** to a defined bar — |B_fit − B_DH|/B_DH < 5% after finite-size extrapolation, with
+recovered B_fit, analytic B_DH, relative error, and an uncertainty estimate all reported (ChatGPT's
+operationalization, so reviewers apply one standard). This is the calibration against a
 *known analytic answer*. If Stage A does not recover the textbook √n, the Ewald sum, the charging
 integration, or the fit is wrong — and **no result from Stages B–D can be trusted until Stage A passes.**
 Treat a Stage-A failure as a bug to fix, not a physics finding.

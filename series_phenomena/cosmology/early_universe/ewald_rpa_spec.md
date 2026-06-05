@@ -63,14 +63,20 @@ moderate coupling.
 ## 4. Protocol (staged — each stage gates the next)
 
 - **Stage A — method validation (REQUIRED first).** Unscreened Coulomb, dilute (Γ ≪ 1). Reproduce the DH
-  limiting law μ_excess ∝ −√n to within a few percent, with finite-size scaling L → ∞. If the method does
-  not recover the known √n here, nothing downstream is trustworthy.
+  limiting law μ_excess/kT ∝ −√n. **Explicit success criterion (ChatGPT's calibration — so reviewers apply
+  one standard, not silently different ones):** report (1) the recovered B_fit, (2) the analytic B_DH from
+  the limiting law, (3) the relative error, (4) the finite-size extrapolation L → ∞, and (5) an uncertainty
+  estimate (bootstrap/seed spread). **Pass:** |B_fit − B_DH|/B_DH < 5% after finite-size extrapolation. If
+  the method does not recover the known √n to this bar, nothing downstream is trustworthy — treat a
+  Stage-A miss as a bug, not a physics result.
 - **Stage B — the crossover.** Scan coupling Γ and density n; locate n_* where the DH √n law gives way to
   strong coupling; confirm 0757's n_* ~ (kT/q²)³. This establishes whether the cosmological point sits in
   the DH regime (√n present) or beyond it (√n absent).
-- **Stage C — screening.** Scan Yukawa screening length ξ; show B(ξ) → 0 as ξ decreases (screening removes
-  the √n, leaving the charge-balance-cancelled virial series). Map how much screening is needed to make B
-  negligible.
+- **Stage C — screening.** Scan Yukawa screening length ξ; measure B(ξ). Screening is *expected* to remove
+  the canonical Debye √n (leaving the charge-balance-cancelled virial series), but **screening does not
+  mathematically guarantee the absence of every residual** — the simulation must still verify that the full
+  residual equation of state (μ_excess/kT, including any sub-leading terms) stays subdominant to ln n̄ at
+  the cosmological pivot. Map how much screening is needed for that.
 - **Stage D — the real SSV kernel.** Plug in the actual CPP SSV interaction (its range/form — the required
   physical input). Measure B and evaluate B·√n̄ vs ln n̄ at n̄ ~ 10⁷⁴.
 
@@ -92,16 +98,19 @@ relevant kernel, finite-size- and dilute-extrapolated, and finally for the real 
 pass/fail comparisons are made between B·√n̄ and ln n̄, both dimensionless (μ_excess reduced by kT before
 comparison — ChatGPT's calibration; equivalently, compare to kT·ln n̄ if working in energy units).
 
-- **PASS** (the √n̄ does not threaten the tilt): either B ≈ 0 (screened / kernel cut off), **or** the
-  cosmological point lies above n_* (strong-coupling regime, √n law absent — 0757), **or** B is resolvable
-  but B·√n̄_pivot ≪ ln n̄ ≈ 170 (i.e. B ≲ 1.7×10⁻³⁵, dimensionless). Any of these closes the corner.
+- **PASS** (the √n̄ does not threaten the tilt) — the simulation must *verify* one of these, not assume it:
+  the measured residual EOS (μ_excess/kT, including sub-leading terms) is subdominant at the pivot because
+  **either** the measured B ≈ 0 (the kernel is screened/cut off — *expected* but to be confirmed, not
+  assumed; ChatGPT's Q6 calibration), **or** the cosmological point lies above n_* (strong-coupling regime,
+  √n law absent — 0757), **or** B is resolvable but B·√n̄_pivot ≪ ln n̄ ≈ 170 (i.e. B ≲ 1.7×10⁻³⁵,
+  dimensionless). Any of these, once verified, closes the corner.
 - **FAIL** (real threat): the real SSV kernel is effectively unscreened long-range, the cosmological point
   is in the DH regime, **and** B·√n̄_pivot ≳ ln n̄ (dimensionless) — the √n̄ residual dominates and n_s is
   dragged off 0.9649 into the excluded branch.
 
-**Secondary / required gates:** Stage-A reproduction of the DH limiting law (method validation);
-column-normalized fit condition number (must be modest); S(k→0) compressibility; equilibration
-diagnostics (τ_int, seed spread).
+**Secondary / required gates:** Stage-A reproduction of the DH limiting law to the explicit bar
+(|B_fit − B_DH|/B_DH < 5% after finite-size extrapolation; §4); column-normalized fit condition number
+(must be modest); S(k→0) compressibility; equilibration diagnostics (τ_int, seed spread).
 
 ## 7. What the panel is asked to do
 
@@ -110,7 +119,8 @@ result). The decisive deliverable is **B for the real SSV kernel** and the pass/
 pivot. Grok offered to run with the real SSV form; this spec gives the rigorous protocol so the result is
 trustworthy rather than a broken-toy artifact. The one physical input still required from CPP is the
 **actual SSV interaction range/form** (Stage D) — without it, Stages A–C still bound the answer (screened
-→ pass; unscreened-in-DH-regime → measure B and check), but Stage D is where it is settled.
+→ DH √n expected gone, but verify the residual EOS is subdominant; unscreened-in-DH-regime → measure B and
+check), but Stage D is where it is settled.
 
 ## 8. Status
 
