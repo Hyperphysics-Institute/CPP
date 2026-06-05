@@ -63,3 +63,24 @@ point and a methodology check; it does not derive n_s and does not substitute fo
 or for your independent runs. A reproduction across independent designs would make the bath clause (under
 neutrality) robust; a divergence would tell us where the toy misleads. As before, adversarial readings are
 welcome.
+
+## Addendum (Patch 0758): the long-range / Debye stress test
+
+ChatGPT's review asked us to scan balanced interactions *beyond* the quadratic on-site toy and fit
+μ_excess = A·n̄ + B·√n̄ + C·ln n̄ + D, with the pass condition that any residual stay subdominant to
+ln n̄ ≈ 170 at n̄ ~ 10⁷⁴ (not merely A ≈ 0). We ran a small 3D version: a positive control (unbalanced
+on-site → μ_excess ∝ n̄, p ≈ 1.0, correctly detected); balanced short-range screened → clean (μ_excess ≈
+0); but balanced **medium/long-range** screened **broke the small toy** (super-linear blow-up at high λ on
+an 8³ lattice — strongly coupled and under-equilibrated), so the long-range functional form is
+**unresolved**, not cleared.
+
+**This is the open task we'd most value your independent run on:** a proper **large-L, well-equilibrated,
+dilute-regime** Monte Carlo of a charge-balanced screened/long-range CP plasma (Ewald or RPA for the
+long-range part), measuring μ_excess across many λ and fitting the full A·n̄+B·√n̄+C·ln n̄+D form. The
+question is whether a balanced *long-range* (inter-GP) interaction generates a **√n̄** (Debye) residual
+that survives — and if so, whether its coefficient is small enough to stay below ln n̄ at the cosmological
+pivot. Note our analytic 0757 argument that for the **on-GP stack itself** there is no sub-GP spatial
+substrate (so the interaction is on-site → no √n̄); this stress test concerns the **inter-GP** long-range
+case only. A counterexample (a balanced long-range form with a surviving, non-negligible √n̄) would be a
+genuine threat to the tilt; a demonstration that screening/lattice cutoff kills it would close the last
+corner.
