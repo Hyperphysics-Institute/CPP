@@ -68,6 +68,27 @@ arc; (b) is toy-supported (0756) and physically expected.
   If the panel accepts LEMMA-NS-BATH, the long-range corner is settled and the arc's open items are the
   bath clause's own confirmation (Ewald Stage A/B; the MC bath toy 0753) and neutrality.
 
+## Panel consensus + endorsed registration language (Patch 0768)
+
+ChatGPT reviewed LEMMA-NS-BATH: **CONFIRM-WITH-CALIBRATION**, endorsing the closure. It confirmed the chain
+is coherent — bath clause ⇒ μ defined w.r.t. ZBW/substrate bath ⇒ kT ~ E_Pl ⇒ Γ = α/κ ~ α ⇒
+|μ_ex|/kT ~ c·α^{3/2} ≪ ln n̄ — and that the "use the de Sitter temperature" branch is a *different bath
+interpretation*, not the one the n_s derivation uses; it "is no longer an internal objection — it is a
+rejection/reinterpretation of the bath clause." Calibration: say **PASS conditional on the bath clause**,
+not "unconditional PASS." Endorsed registration language (adopted verbatim):
+
+> **LEMMA-NS-BATH closes the long-range Debye residual as an independent threat:** the chemical potential
+> entering the tilt chain is defined with respect to the ZBW/substrate bath, so kT ~ E_Pl, Γ ~ α, and the
+> Coulomb excess is negligible. The n_s = 0.9649 result remains conditional on the bath clause and a
+> charge-neutral effective equation of state, but **no longer on a separate long-range √n̄ residual
+> assumption.**
+
+With Grok and Copilot's earlier endorsements of 0756/0757 and the macro-CP bath mechanism, this is full
+panel consensus that the long-range √n̄ corner is **closed on the PASS side**. The two legs that remain
+(the live conditions): **(1) bath reality** — the CP occupation ensemble actually reaches the
+ZBW/substrate Gibbs state quickly enough; **(2) neutrality / effective equation of state** — interactions
+introduce no separate non-ideal term beyond the (now bounded, negligible) Coulomb residual.
+
 ## Pointers
 
 - Basis: the bath clause (`stack_ensemble_*`, 0750–0752); 0738 (ZBW-sourced Gaussianity); 0766 (Γ = α/κ,
