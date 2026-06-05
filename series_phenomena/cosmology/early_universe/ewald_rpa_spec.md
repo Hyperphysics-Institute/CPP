@@ -154,8 +154,12 @@ neutrality). CPP's early CP plasma is expected to be weakly coupled (relativisti
 not extrapolate B·√n̄ at fixed q²/kT (that is the phantom). Stage A (reproduce DH) and Stage B (the
 crossover n_*, which *is* the Γ = 1 line) already probe this directly; the decisive CPP input reduces to
 the early-plasma coupling Γ (expected ~α). **This reframing is offered to the panel for scrutiny — in
-particular the identity above and the Γ ~ α estimate — not asserted as settled.** Finding:
-`ssv_kernel_determination.md`; script `scripts/0764_gamma_reframing.py`.
+particular the identity above and the Γ ~ α estimate — not asserted as settled.** Per ChatGPT's
+calibration: the √n̄ residual is **coupling-bounded** (not "impossible") — harmless for Γ ≪ 1, dangerous
+only under strong coupling; the load-bearing CPP input is **Γ ≪ 1** (equivalently kT ~ ℏc/a), justified
+with a quantified ~4-orders temperature margin and explicit conditionality in `gamma_weak_coupling.md`
+(Patch 0765). Finding: `ssv_kernel_determination.md`; scripts `scripts/0764_gamma_reframing.py`,
+`scripts/0765_gamma_estimate.py`.
 
 ## Pointers
 

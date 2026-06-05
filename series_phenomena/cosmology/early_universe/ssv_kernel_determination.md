@@ -49,7 +49,10 @@ the Debye √n̄ residual is bounded by ~Γ^{3/2} and cannot threaten the tilt (
 This also resolves the 0757 corner cleanly: 0757 noted the √n̄ survives to 10⁷⁴ only if kT/q² ≳ 10²⁴·⁷
 (absurdly weak coupling). But in *that* regime Γ ≪ 1 even at 10⁷⁴, so μ_excess/kT ~ Γ^{3/2} ≪ 1 — the
 residual is present but dimensionless-tiny. **There is no regime in which the √n̄ is both present and
-large.**
+large. **Calibration (ChatGPT):** the honest statement is not "the √n̄ is impossible" but "the Debye √n̄
+residual is **coupling-bounded** — harmless in the weakly-coupled regime, dangerous only if the plasma is
+strongly coupled." The √n̄-specific worry is dissolved; what remains is the single question of whether the
+early CP plasma is weakly coupled (Γ ≪ 1), justified in `gamma_weak_coupling.md` (Patch 0765).**
 
 ## 4. The only genuine residual, and why CPP passes
 
