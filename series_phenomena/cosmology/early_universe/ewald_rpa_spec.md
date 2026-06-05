@@ -16,7 +16,9 @@ comparison must be dimensionless** (ChatGPT's calibration): the quantity that en
 μ/kT = ln n̄ + (μ_excess/kT), so write the residual as a **dimensionless** coefficient
 B ≡ (√n̄ coefficient of μ_excess/kT). The threat condition is then B·√n̄ ≳ ln n̄ — both sides dimensionless —
 i.e. B·10³⁷ vs 170 → threat if B ≳ 1.7×10⁻³⁵. Reporting μ_excess in raw energy units and comparing to "170"
-risks a hidden kT factor; always reduce to μ_excess/kT before comparing to ln n̄.
+risks a hidden kT factor; always reduce to μ_excess/kT before comparing to ln n̄. **(See §9: deriving the
+real kernel shows B·√n̄ ≡ c·Γ^{3/2} is coupling-bounded, so this "10³⁷" is the unphysical strong-coupling
+extrapolation — pending panel review.)**
 
 **Analytic reference (so the sim has a known target).**
 - **Debye–Hückel limiting law** (weak coupling, unscreened Coulomb): μ_excess/kT = −½·κ·(q²/kT) with the
@@ -130,6 +132,30 @@ check), but Stage D is where it is settled.
 - Combined with 0757 (analytic crossover + on-GP point-stack on-site → no √n) and 0756 (neutrality cancels
   the leading mean-field), this protocol targets the single remaining corner: the long-range inter-GP √n̄
   for the real SSV kernel.
+
+## 9. Reframing (Patch 0764 — CPP-side analytic result, *pending panel review*)
+
+Determining the real SSV kernel (Coulomb 1/r, from the DP-Sea polarization model) surfaced a clarification
+that bears directly on Stage D. The DH excess chemical potential, written dimensionlessly, is
+μ_excess/kT = −c·Γ^{3/2} with Γ = q²/(a·kT) the plasma coupling (a = n^{−1/3}, c = O(1)). Writing
+a = n^{−1/3} gives exactly the spec's √n̄ form, so the spec coefficient satisfies the identity
+
+  **B·√n̄ ≡ |μ_excess|/kT ≡ c·Γ^{3/2}.**
+
+Consequence: within the DH regime of validity (Γ ≲ 1), B·√n̄ = c·Γ^{3/2} ≲ 0.6 — it **cannot reach
+ln n̄ ≈ 170**. The "B·√n̄ ~ 10³⁷" figure in §1 corresponds to holding q²/kT ~ O(1) and extrapolating to
+n̄ = 10⁷⁴, i.e. Γ ~ 5×10²⁴ — deep strong coupling, where the DH formula defining B is invalid. So the √n̄
+residual is **coupling-bounded** and does not threaten the tilt; the only genuine residual concern is a
+*strongly coupled* plasma (Γ ~ tens–hundreds, a different n^{1/3} Madelung form, further suppressed by
+neutrality). CPP's early CP plasma is expected to be weakly coupled (relativistic: Γ ~ α ~ 1/137), giving
+|μ_excess|/kT ~ 10⁻³ ≪ ln n̄.
+
+**Implication for Stage D:** report **μ_excess/kT as a function of Γ** and confirm it stays ≪ ln n̄ — do
+not extrapolate B·√n̄ at fixed q²/kT (that is the phantom). Stage A (reproduce DH) and Stage B (the
+crossover n_*, which *is* the Γ = 1 line) already probe this directly; the decisive CPP input reduces to
+the early-plasma coupling Γ (expected ~α). **This reframing is offered to the panel for scrutiny — in
+particular the identity above and the Γ ~ α estimate — not asserted as settled.** Finding:
+`ssv_kernel_determination.md`; script `scripts/0764_gamma_reframing.py`.
 
 ## Pointers
 
