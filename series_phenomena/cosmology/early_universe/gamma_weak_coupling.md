@@ -1,5 +1,12 @@
 # Γ ≪ 1 for the early CP plasma — the load-bearing input, justified and bounded
 
+> **⚠ Correction (Patch 0766):** §3–§4 below anchor the EM coupling energy q²/a at the **Compton** spacing
+> (~3.7 keV → "fail below ~84 eV"). The corpus-grounded inter-CP spacing is the **GP/Planck scale l_P**, so
+> q²/a ~ α·E_Pl ~ 10¹⁷ GeV and the failure threshold is ~10¹⁵ GeV, not 84 eV. The **structure is
+> unchanged** (Γ = α/κ, PASS in the weak-coupling/substrate-bath reading), but use the corrected scales in
+> `ns_epoch_pinning.md` (Patch 0766). The qualitative conclusion (PASS under the natural reading) survives.
+
+
 *Patch 0765, Session 154. Acts on ChatGPT's review of 0764: it confirmed the identity B·√n̄ ≡ c·Γ^{3/2}
 is solid and isolated the one load-bearing CPP-specific input — **Γ ≪ 1** (equivalently kT ~ ℏc/a), "not
 derived from Coulomb alone." This finding (a) adopts ChatGPT's language calibration and (b) justifies
