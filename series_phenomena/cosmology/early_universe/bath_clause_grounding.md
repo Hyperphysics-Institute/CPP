@@ -33,7 +33,16 @@ clock t_P = ℓ_P/c); e-fold time t_efold ~ 1/H_inf (macroscopic). So
 | low-scale 10¹³ GeV | 8×10⁻⁷ | 2.5×10⁻⁵ |
 
 For **any sub-Planckian inflation scale**, the occupations are re-thermalized 10⁴–10⁶ times per e-fold —
-R ≪ 1 by many orders. The only way R ~ 1 is Planckian inflation (H_inf ~ E_Pl), which is **doubly
+R ≪ 1 by many orders.
+
+> **Panel note (ChatGPT, confirming 0769):** CONFIRM-WITH-CALIBRATION — (a)–(c) hold up as grounding, not
+> proof; R = N_mix·(H_inf/E_Pl) is the right dimensionless ratio and the timescale argument is strong; (c)
+> (A1 occupation-number ontology forbidding a distinguishable stationary state) is "the strongest part."
+> Calibration: the near-Planck 10¹⁷ GeV row gives R ~ 0.25 at N_mix = 30 — acceptable but not deeply ≪ 1;
+> the conclusion is firmly ≪ 1 only for realistic H_inf ≲ 10¹⁴ GeV. Keep the scope "grounded, not derived;
+> a future H-theorem/detailed-balance proof would derive it." Adopted.
+
+The only way R ~ 1 is Planckian inflation (H_inf ~ E_Pl), which is **doubly
 excluded**: by the observational tensor bound (H_inf ≲ 10¹⁴ GeV) and by CPP's own H-axiom (the lattice-
 growth ceiling forbids sustained near-Planck recession — `axiom_h_inflation_engine_evaluation.md`). N_mix =
 O(10–30) is the only input, and it was already measured by the 0753 minimal-PCD MC toy. This is the **same
