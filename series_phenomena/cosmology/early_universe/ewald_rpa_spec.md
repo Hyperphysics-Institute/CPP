@@ -11,8 +11,12 @@ itself is specified here for the panel (Grok offered to run it). NO THEO.*
 ## 1. The one question, and the analytic target
 
 **Question.** For the actual CPP SSV interaction, is there a μ_excess ∝ −√n̄ that survives charge
-neutrality, and is B·√n̄ ≳ ln n̄ at n̄ ~ 10⁷⁴ (B·10³⁷ vs 170 → threat if B ≳ 1.7×10⁻³⁵), or is the √n̄
-absent/negligible?
+neutrality, and is it large enough to compete with the logarithm at the cosmological pivot n̄ ~ 10⁷⁴? **The
+comparison must be dimensionless** (ChatGPT's calibration): the quantity that enters the tilt chain is
+μ/kT = ln n̄ + (μ_excess/kT), so write the residual as a **dimensionless** coefficient
+B ≡ (√n̄ coefficient of μ_excess/kT). The threat condition is then B·√n̄ ≳ ln n̄ — both sides dimensionless —
+i.e. B·10³⁷ vs 170 → threat if B ≳ 1.7×10⁻³⁵. Reporting μ_excess in raw energy units and comparing to "170"
+risks a hidden kT factor; always reduce to μ_excess/kT before comparing to ln n̄.
 
 **Analytic reference (so the sim has a known target).**
 - **Debye–Hückel limiting law** (weak coupling, unscreened Coulomb): μ_excess/kT = −½·κ·(q²/kT) with the
@@ -83,15 +87,17 @@ Script `0759_ewald_method_validation.py` validates the two fixes the protocol de
 
 ## 6. Observables & pass/fail
 
-**Primary:** B, the √n̄ coefficient — measured in Stage A/B for the relevant kernel, finite-size- and
-dilute-extrapolated, and finally for the real SSV kernel (Stage D).
+**Primary:** B, the **dimensionless** √n̄ coefficient of **μ_excess/kT** — measured in Stage A/B for the
+relevant kernel, finite-size- and dilute-extrapolated, and finally for the real SSV kernel (Stage D). All
+pass/fail comparisons are made between B·√n̄ and ln n̄, both dimensionless (μ_excess reduced by kT before
+comparison — ChatGPT's calibration; equivalently, compare to kT·ln n̄ if working in energy units).
 
 - **PASS** (the √n̄ does not threaten the tilt): either B ≈ 0 (screened / kernel cut off), **or** the
   cosmological point lies above n_* (strong-coupling regime, √n law absent — 0757), **or** B is resolvable
-  but B·√n̄_pivot ≪ ln n̄ ≈ 170 (i.e. B ≲ 1.7×10⁻³⁵ in pivot units). Any of these closes the corner.
+  but B·√n̄_pivot ≪ ln n̄ ≈ 170 (i.e. B ≲ 1.7×10⁻³⁵, dimensionless). Any of these closes the corner.
 - **FAIL** (real threat): the real SSV kernel is effectively unscreened long-range, the cosmological point
-  is in the DH regime, **and** B·√n̄_pivot ≳ ln n̄ — the √n̄ residual dominates and n_s is dragged off
-  0.9649 into the excluded branch.
+  is in the DH regime, **and** B·√n̄_pivot ≳ ln n̄ (dimensionless) — the √n̄ residual dominates and n_s is
+  dragged off 0.9649 into the excluded branch.
 
 **Secondary / required gates:** Stage-A reproduction of the DH limiting law (method validation);
 column-normalized fit condition number (must be modest); S(k→0) compressibility; equilibration

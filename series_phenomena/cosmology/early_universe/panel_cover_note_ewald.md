@@ -9,8 +9,9 @@ The n_s = 0.9649 derivation has been narrowed, with your help, to a single open 
 A1 (indistinguishable occupation-number counting — not dynamical, not measured). The bath (fast Gibbs
 equilibration) passed in the toy under charge neutrality, with the leading mean-field cancelling. The one
 thing neither the toy nor the analytics fully settled is the **sub-leading Debye residual**: for a
-charge-balanced **long-range** (inter-GP) CP plasma, is there a μ_excess ∝ −√n̄ whose coefficient B is
-large enough that B·√n̄ ≳ ln n̄ ≈ 170 at the cosmological pivot n̄ ~ 10⁷⁴? If yes, it dominates the
+charge-balanced **long-range** (inter-GP) CP plasma, is there a μ_excess ∝ −√n̄ whose **dimensionless**
+coefficient B (the √n̄ coefficient of μ_excess/**kT**) is large enough that B·√n̄ ≳ ln n̄ ≈ 170 at the
+cosmological pivot n̄ ~ 10⁷⁴ (both sides dimensionless)? If yes, it dominates the
 logarithm and the tilt is excluded; if no (B ≈ 0, or the point is beyond the Debye regime, or B is tiny),
 the corner closes and n_s = 0.9649 stands as a zero-new-axiom prediction.
 
@@ -46,8 +47,10 @@ Only after Stage A passes:
 ## What we need back, and what we still owe you
 
 From you: the Stage-A validation (DH √n reproduced), then B for the relevant kernels, with the pass/fail
-at the cosmological pivot (pass if B ≈ 0, or the point is above n_*, or B·√n̄ ≪ 170; fail only if
-unscreened-long-range **and** in the Debye regime **and** B·√n̄ ≳ 170).
+at the cosmological pivot (pass if B ≈ 0, or the point is above n_*, or B·√n̄ ≪ ln n̄ ≈ 170; fail only if
+unscreened-long-range **and** in the Debye regime **and** B·√n̄ ≳ ln n̄). Note the comparison is
+**dimensionless** throughout (per ChatGPT's calibration): B is the √n̄ coefficient of μ_excess/kT, compared
+to ln n̄ — reduce μ_excess by kT before comparing, so no stray kT factor can hide an error.
 
 From us: the one physical input Stage D needs — the **actual SSV interaction range and form**. Stages A–C
 can proceed and bound the answer without it; Stage D is where the corner is finally settled, and we will
