@@ -91,6 +91,25 @@ with A1 (which supplies the log) and the 0746 coupling (μ-driven boost), that i
 n_s = 0.9649 as a **zero-NEW-axiom** prediction. The honest claim is "MC establishes the bath; A1 carries
 the log; 0746 carries the coupling."
 
+## Panel addendum (Patch 0755 — from the 0754 reviews)
+
+Two upgrades from the AI panel (full integration: `series_phenomena/cosmology/early_universe/panel_integration_0754_reviews.md`):
+
+- **Observable (v) — structure factor / compressibility (ChatGPT).** Add the long-wavelength structure
+  factor S(k→0) (operationally the block-count Fano factor, var/mean of coarse-grained block occupations).
+  It detects inter-site correlations that the single-site Poisson check can miss: ideal S(0) ≈ 1,
+  clustered (attractive mean field) S(0) > 1, dispersed (repulsive) S(0) < 1. **PASS now also requires
+  S(0) ≈ 1 under interactions** — a sharper equation-of-state probe (κ_T = ∂n̄/∂μ ∝ S(0)) than the
+  one-point histogram alone.
+- **Stage 0 — factorization-first protocol (ChatGPT).** Before the ± SSV detail, run generic single-site
+  hopping r(i→j) = f(nᵢ)·g(nⱼ) and test whether the stationary state factorizes, P({nᵢ}) = ∏ p(nᵢ); if so
+  extract p(n) and read whether ∂ln p/∂n ⇒ μ ∝ ln n. This isolates which dynamics preserve the ideal log
+  before the specific interaction is introduced.
+
+Both reviewers (ChatGPT, Grok) also asked that the A1→occupation-number step be an explicit argument; it
+is written out in the integration note §2. Grok independently built an MC that converges on the same four
+observables and pass/fail.
+
 ## Pointers
 
 - Implements the bath-clause test from 0752; rests on 0749 (log = A1 indistinguishability), 0751
