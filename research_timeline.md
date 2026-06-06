@@ -21,11 +21,33 @@
 
 **Cosmology / dark-sector arc — RESULTS BANKED, NOT a paper (1 June 2026, Session 153, Patches 0720–0727).** OPEN-SR-5 Sea-gravitation solved A→D (conditional capstone); tetra-gravity DM arc Steps 1–5 done. CONJ-COSMO-1 (dark matter) NOT confirmed (weak link = structure formation); CONJ-COSMO-2 (DE↔DM) conditionally supported. Two campaign gates remain (below). Not review- or paper-ready (conditional + one negative). Working home: `series_phenomena/cosmology/`.
 
+**n_s spectral-index arc — COMPLETE & BANKED (6 June 2026, Session 154, Patches 0736–0778).** The CMB scalar spectral index n_s = 0.9649 ± ~0.0005(theory) is now **PRED-C-96** — the programme's **first SR/cosmology-sector counted swarm contribution** (headline 107 → 108), matching Planck's central value with zero new parameters. Full three-AI panel consensus. Honest status: confirmed at leading order, zero-new-axiom, conditional on standing CPP cosmology commitments (FRW/VSL homogeneity, DP-Sea neutrality, small-α SSV) — NOT yet fully derived from A1–A11. Contributes the **spectrum-generation** half of inflation (scale-invariance + Gaussianity + adiabaticity, the OPEN debt flagged at Patch 0738); does NOT derive the inflationary engine/background. Three open marks remain (none block the count): OPEN-EU-1 (A1–A11 homogeneity + exact ZRP-correction structure), the constant-H / inflation-engine debt, leg-2's A1–A11 DP-pair-neutrality derivation. Working home: `series_phenomena/cosmology/early_universe/`.
+
+---
+
+## Strategic Priority — Dark Matter first-to-publish (recorded 6 June 2026, Session 154)
+
+**The narrative (why the cosmology machinery exists).** The cosmology arc began as a side-effect of the chirality work. While writing a lay-audience fellowship essay (≈ late May 2026) explaining CP bonding and the aggregates CPs form, Thomas recognized that **qDPs and hTetras are dark matter** — the qDP-DM hypothesis. Judging this potentially the most significant public-facing result in the programme (no one knows what DM is; CPP may), Thomas left the chirality dual-track (he had been processing chirality + DM in parallel) and focused on DM, to secure **first-to-publish on "DM is qDP/hTetra clouds."** The detailed inflation/spectrum machinery built since — the H-engine, the ZBW/ZRP bath, neutrality, homogeneity, the n_s tilt — is the **background/justification** the qDP-DM postdiction needs: it establishes that CPP produces the super-horizon adiabatic scale-invariant spectrum by inflation, which is the structure-formation backbone any DM-identification paper must stand on.
+
+**The honest status (Claude's read, 6 June 2026).** The inflation/spectrum machinery is necessary scaffolding, but the load-bearing DM claim — that qDP clouds / hTetras ARE the dark matter (gravitating, stable, cold, non-luminous, correct relic abundance, correct clustering, rotation curves / lensing) — is still **AHEAD, not behind**. The n_s arc did not advance the DM identification directly; what it did do is remove the barrier that sank the active-swirl approach (CONJ-COSMO-1) by showing the adiabatic spectrum comes from inflation, implying DM inherits it as a passive tracer rather than generating it actively. **What protects priority is a PUBLISHED DM paper making the identification — not the volume of supporting machinery.**
+
+**The priority (Thomas's directive).** A **first-to-publish DM paper** — most likely a postdictive-explanation paper ("dark matter is qDP/hTetra aggregates"), citing the inflation/spectrum machinery as the structure-formation backbone, with honest open marks — is the **strategic top priority**, ahead of the Capotauro δ_CP paper (Priority 1) and not necessarily gated on the full Priority-0 verdict campaigns closing. A postdiction paper can stake the flag with honestly-stated open problems.
+
+**The roadmap (next session).**
+1. **FIRST read the DM arc docs** to gauge how paper-ready the qDP→DM *identification* is (vs. how much theorem-work remains): `series_phenomena/cosmology/early_universe/cosmic_web_generation_constraints.md`; `reasoning/0729.md`, `reasoning/0733.md`; CONJ-COSMO-1 + the DM-2 decomposition; `scripts/0730_chain_recursion_power_spectrum.py`; the dark-sector material under `series_phenomena/cosmology/sea_gravitation/`; and the Priority-0 kickoff handover `handovers/2026-06-01_session_153_cosmo_dm_close_and_SR6_kickoff.md`.
+2. **THEN decide DM-paper scope** (postdiction explanation vs. fuller verdict paper) and draft.
+3. The **n_s arc becomes a section or companion** of the DM story (the structure-formation backbone), not a standalone headline paper.
+4. The three open marks (OPEN-EU-1, constant-H debt, leg-2 neutrality) are **supporting / future-work** for the DM paper, not blockers.
+
+**Caveat (epistemic honesty).** Claude gave the inflation/spectrum perspective from direct experience of the just-completed arc, but is reasoning about the DM-claim's current maturity from the arc's earlier structure, not a fresh read. Step 1 above (read the DM docs) is the gate before committing the publication strategy.
+
 ---
 
 ## Priority Queue (Next-Up)
 
 *Papers approved to launch, in priority order. The top of this list is the next campaign that begins when Thomas authorizes.*
+
+> **⭐ STRATEGIC TOP PRIORITY (6 June 2026): the Dark-Matter first-to-publish paper** — see the "Strategic Priority — Dark Matter first-to-publish" section above. It sits ahead of everything in this queue. The Priority-0 dark-sector verdict campaigns and the n_s machinery FEED it (structure-formation backbone + verdict rigor); the DM paper is the publication that stakes priority. Next session: read the DM arc docs first, then scope and draft. The items below are the standing queue behind that goal.
 
 ### Priority 0 — Dark-sector verdict campaigns (multi-session; gate the DM true/false verdict; opened 1 June 2026)
 
