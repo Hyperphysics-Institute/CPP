@@ -31,7 +31,9 @@ lemma (LEMMA-NS-HTHEOREM), NOT a hardened THEO — the n_s result stays conditio
    potential μ = kT·ln(ρ) with ρ = N/L the mean occupation — **μ ∝ ln n̄, the tilt's log.** The single-site
    marginal is Binomial(N,1/L) → Poisson(N/L) as N → ∞ (exact at the cosmological n̄ ~ 10⁷⁴). The
    distinguishable/labelled stationary state — the one that would give the n_s = 1 cliff (0749) — is **not a
-   stationary measure of this dynamics.** This is leg 1(c).
+   stationary measure of this dynamics, within the A1 occupation-number state space.** (A labelled process
+   on a *larger* state space could exist, but it would violate A1 by adding per-CP identity — which is
+   precisely the point.) This is leg 1(c).
 4. **Relaxation time.** τ_eq is set by the **spectral gap** of the generator, which is O(1) in ZBW-rate
    units and does **not vanish** with system size for the density-relaxation mode (gap = 1.5 on the test
    system). So τ_eq is a small multiple of the ZBW time → R = τ_eq·H_inf ≪ 1 for sub-Planckian inflation
@@ -44,7 +46,7 @@ lemma (LEMMA-NS-HTHEOREM), NOT a hardened THEO — the n_s result stays conditio
 Leg 1(a) [relaxation exists] and leg 1(c) [stationary = indistinguishable Gibbs] move from **grounded**
 (0769: "the ZBW-ergodicity commitment plus A1") to **DERIVED, given the ZRP model** — they are now proven
 consequences of detailed balance + the KL Lyapunov theorem, not posits. The distinguishable-state cliff is
-*excluded* as a stationary measure, not just disfavoured.
+*excluded as a stationary measure within the A1 occupation-number state space*, not just disfavoured.
 
 ## Honest scope — the residual is now the ZRP identification
 
@@ -62,6 +64,31 @@ consequences of detailed balance + the KL Lyapunov theorem, not posits. The dist
   and symmetric on the lattice. Registered as the next hardening step for leg 1.
 - Registered as **LEMMA-NS-HTHEOREM** (finding-level), not a hardened THEO, for both reasons above (standard
   math; residual model premise keeps the n_s result conditional).
+
+## Panel consensus (Patch 0773)
+
+All three reviewers signed off on LEMMA-NS-HTHEOREM as correctly scoped (finding-level, not a THEO):
+
+- **ChatGPT — CONFIRM-WITH-CALIBRATION.** Confirmed the chain (g(n)=n + symmetric kernel → detailed balance
+  → multinomial/product-Poisson with the n_i! indistinguishability divisor → μ ~ kT ln ρ; KL monotonicity →
+  relaxation). Calibration adopted above: qualify the cliff-state exclusion as holding *within the A1
+  occupation-number state space*. Endorsed registration language: *"LEMMA-NS-HTHEOREM, finding-level: given
+  the minimal-PCD/ZBW symmetric constant-rate ZRP model, CP occupations relax to the A1 indistinguishable
+  Gibbs state with μ ∝ ln n̄. The remaining conditionality is the ZRP identification, not the bath clause in
+  its original broad form."*
+- **Grok — endorse.** "Leg 1 is correctly hardened. The ZRP identification is the natural minimal model of
+  ZBW switching, and LEMMA-NS-HTHEOREM is properly scoped." Both legs now rest on standing CPP commitments
+  plus one well-posed modelling statement.
+- **Copilot — endorse.** Confirmed leg 2 (DP-Sea neutrality) is coherent and not ad hoc, the ZRP
+  identification is a reasonable model of ZBW, LEMMA-NS-HTHEOREM is correctly scoped, and n_s = 0.9649
+  (+ α_s) is justified at the conditional/grounded zero-new-axiom level.
+
+**The sharp residual (the precise falsifiable handle on leg 1), per ChatGPT.** The one load-bearing physical
+question is now: *is ZBW switching independent, symmetric, and constant-rate per CP, to sufficient
+approximation?* If ZBW transitions are instead occupation-dependent (beyond g(n)=n), long-memory,
+SSV-biased, or non-symmetric between regions, the stationary measure deforms away from pure product-Poisson
+and a non-ideal μ_excess would reappear. This is the exact content the future A1–A11 derivation must
+establish — and the exact thing a falsification would target.
 
 ## Pointers
 
