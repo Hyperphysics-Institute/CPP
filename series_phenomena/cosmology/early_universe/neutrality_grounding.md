@@ -20,7 +20,17 @@ From `master_glossary.md`:
 - **DP Sea = "all lattice sites occupied by DPs in their ground state"** — the CPP vacuum.
 
 So the substrate / early CP plasma is composed **entirely of bound ± pairs**. The occupation that drives the
-tilt is therefore a stack of DPs — equivalently, of CPs in exact ± balance. Consequently:
+tilt is therefore a stack of DPs — equivalently, of CPs in exact ± balance.
+
+> **Occupation variable (ChatGPT calibration, made explicit):** the grounding holds *provided the inflating
+> occupation stack is a DP / DP-Sea occupation stack, not an arbitrary unpaired-CP plasma.* The two readings
+> coincide: if the occupation variable n counts **DPs**, neutrality is automatic (each unit is a neutral
+> pair); if it counts **individual CPs**, then n is even and the CPs enter in ± pairs (n₊ = n₋). Either way
+> the stack is ±-balanced by construction. The tilt's log (indistinguishable occupation counting, A1) is
+> unaffected — it counts occupation units; neutrality constrains their ± composition, which the DP-pair
+> structure fixes.
+
+Consequently:
 - n₊ = n₋ **exactly** at every occupation n (each added unit is a neutral ± pair),
 - net charge Q(n) = 0 **identically**,
 - the mean-field Coulomb term (∝ Q²) **vanishes at every n** — which is precisely the 0756 "balanced ±,
@@ -49,9 +59,12 @@ The only n-dependent residual after the mean-field cancels is the **local Poisso
 
 - This **grounds** leg 2 — global ± balance follows from the DP-pair construction (glossary), which is a
   framework-level commitment, not a theorem derived from A1–A11. Same epistemic status as leg 1's grounding.
-- **Caveat (owned):** a tiny global charge/matter asymmetry (~10⁻⁹, the baryon-asymmetry scale; cf.
-  Capotauro leptogenesis) breaks exact balance at the 10⁻⁹ level. This is **utterly negligible** for the
-  0756 mean-field cancellation, which needs only |imbalance| ≪ 1, not exactly 0.
+- **Caveat (owned, sharpened per ChatGPT):** a tiny global charge/matter asymmetry (~10⁻⁹, the baryon-
+  asymmetry scale; cf. Capotauro leptogenesis) breaks exact balance at the 10⁻⁹ level. This is physically
+  expected to be harmless, but the honest statement is: **any cosmological charge asymmetry is subleading
+  and must be checked not to reintroduce an O(n) chemical-potential slope.** The 0756 cancellation needs
+  only |imbalance| ≪ 1, not exactly 0, and a 10⁻⁹ fractional imbalance is far below any tilt-relevant
+  threshold — but this is a check to record, not to wave away. Not a blocker.
 - With this, **both legs of n_s = 0.9649 are grounded in standing CPP commitments:** (1) ZBW-ergodicity +
   A1 [leg 1, 0769] and (2) DP-pair neutrality [leg 2, here]. Neither is a bespoke assumption. The result is
   now at the level ChatGPT named as registerable — **a conditional/grounded zero-new-axiom prediction**,
