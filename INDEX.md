@@ -256,6 +256,29 @@ DP Sea polarization, composition, vacuum energy.
 
 ---
 
+## [`series_phenomena/`](series_phenomena/) — Empirical Phenomena Explained from CPP Axioms
+
+**Established 31 May 2026 (Patch 0700).** Home of record for any empirical phenomenon CPP derives, at any maturity (sketch → gated conjecture → shipped). Phenomena mature in place; not migrated on completion. See [`series_phenomena/README.md`](series_phenomena/README.md) for the three-container boundary rule.
+
+### [`series_phenomena/cosmology/early_universe/`](series_phenomena/cosmology/early_universe/) — EU-1 (SHIPPED v1.0)
+
+| File | Description |
+|------|-------------|
+| `EU-1/EU-1_primordial_spectral_index.tex` | **EU-1** — primordial scalar spectral index $n_s = 1 - 2/N_* \approx 0.9649$ from substrate inflation (A1 indistinguishability → ZBW-bath ZRP → $\delta N$ tilt); zero-new-axiom, framework-conditional. First cosmology-sector paper to ship. |
+| `EU-1/documentation_suite/changelog-EU-1.md` | Version archaeology (v0.1 → v1.0). |
+| `EU-1/review/` | Self-contained review package + `reviews-EU-1.md` (3/3 SHIP). |
+| `scripts/0781_eu1_numerics.py` | Verification (ALL PASS). |
+| `reasoning/0781…`, `0783…` | Per-patch Tier-4 reasoning fragments. |
+
+**Predictions:** PRED-C-96 ($n_s$, §1), PRED-O-34 ($\alpha_s$, §2). **No THEO.** Open residual: OPEN-EU-1.
+**Doc-suite:** changelog shipped; 7 narrative companion files pending (Phase 7A-ii).
+
+### [`series_phenomena/cosmology/dark_matter/`](series_phenomena/cosmology/dark_matter/) — gated conjecture
+
+Far-frontier dark-matter arc (qDP/hTetra-clouds-as-DM, CONJ-COSMO-1); `reasoning/` + `scripts/` only, pre-paper (falsification-first). Frontier home: `frontier_sectors/CONJ.md`.
+
+---
+
 ## [`problem_histories/`](problem_histories/) — Problem Narratives
 
 The full journey of each major open problem — from identification through wrong turns to resolution.

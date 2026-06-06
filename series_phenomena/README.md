@@ -54,4 +54,5 @@ When in doubt: if it's an observation in nature, it gets a phenomenon folder; if
 
 | Domain | Phenomenon | Status | Frontier home |
 |---|---|---|---|
+| `cosmology/` | `early_universe/` (paper **EU-1**) | **SHIPPED v1.0** (6 Jun 2026, 3/3 panel) — primordial scalar spectral index $n_s = 1 - 2/N_* \approx 0.9649$ (PRED-C-96) + running $\alpha_s \approx -0.0006$ (PRED-O-34); zero-new-axiom, framework-conditional. Paper at `cosmology/early_universe/EU-1/`. | `frontier_sectors/SR.md` (OPEN-EU-1); n_s arc Patches 0742–0783. |
 | `cosmology/` | `dark_matter/` | Far-frontier gated conjecture (CONJ-COSMO-1); falsification-first sequence Steps 0–5. | `frontier_sectors/CONJ.md` (OPEN-COSMO-DM-1 + CONJ-COSMO-1); arc handover in `handovers/`. |
