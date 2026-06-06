@@ -21,18 +21,21 @@ A new item belongs here (rather than in `future_projects.md`) if it's: small eno
 
 *Persistent workflow rules. Unlike TODO items, these are never "cleared"; they bind every future session.*
 
-### CONV-001 — Presenting a repo file to the swarm/panel (always give the full package)
+### CONV-001 — Presenting a repo file to the swarm/panel (one single copy block)
 
 When Claude asks Thomas to present any repo file to the AI review panel (swarm), Claude must, **in the
-chat response**, always provide all three of: (1) a **clickable GitHub link** to the file (blob form
+chat response**, provide the whole package as **ONE single fenced copy-paste block** — so Thomas can
+one-click-copy and paste it to each panel member without highlighting/copying multiple separate pieces.
+That single block contains, in order: (1) the **GitHub links** to the file (blob form
 `https://github.com/Hyperphysics-Institute/CPP/blob/main/<path>` and raw form
 `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<path>`, valid after push); (2) a
-**one-paragraph intro** framing the file for the swarm (paste-ready as the lead-in); (3) the **full
-rendered file content** in a copy-paste block (rendered Markdown, NOT the patch/diff). Rationale: Thomas
-cannot easily locate and copy a file embedded in the repo from a patch alone, and this is time-consuming;
-never make him hunt. Template: `templates/presentation_file.md`. This presentation package is separate
-from the apply-and-push patch block (the patch applies the file; this package hands it to the swarm).
-Registered 5 Jun 2026 Session 154 at Thomas's request.
+**one-paragraph intro** framing the file for the swarm; (3) the **full rendered file content** (rendered
+Markdown, NOT the patch/diff). All three inside the *same* fenced block. Rationale: Thomas presents to the
+panel by pasting once; multiple separate blocks meant repeated highlight/copy/paste — never make him do
+that, and never make him hunt for a file embedded in a patch. Template: `templates/presentation_file.md`.
+This single presentation block is separate from the apply-and-push patch block (the patch applies the file;
+this block hands it to the swarm). Registered 5 Jun 2026 Session 154; **updated 6 Jun 2026 Session 154 to
+the single-block format at Thomas's request** (previously three separate elements).
 
 ---
 
