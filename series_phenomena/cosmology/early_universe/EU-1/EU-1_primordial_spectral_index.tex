@@ -58,7 +58,7 @@
 \title{\textbf{EU-1: The Primordial Scalar Spectral Index from Substrate Inflation}\\[6pt]
 {\large A Zero-New-Axiom Derivation of $\ns = 1 - 2/\nstar \approx 0.9649$ from A1 Indistinguishability and Zitterbewegung Bath Thermalization}\\[4pt]
 {\large \textbf{Conscious Point Physics --- Early-Universe / Cosmology Series}}\\[4pt]
-{\Large \textbf{Version 0.1 (DRAFT) --- 6 June 2026}}}
+{\Large \textbf{Version 1.0 (SHIPPED) --- 6 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -215,9 +215,12 @@ on $N_{\mathrm{GP}}$ seed Grid Points gives
 \end{equation}
 With $N_{\mathrm{CP}} \sim 10^{80}$ (the observable-universe CP count) and a seed cohort
 $N_{\mathrm{GP}} \sim 13$ (one first-shell GP cohort in the $600$-cell), Eq.~\eqref{eq:Nstar} gives
-$\nstar \approx 60.5$ total e-folds; the CMB pivot scale, which exits the horizon a few e-folds before
-the end, sits at $\nstar \approx 57$. This number enters the final result; it is a derived count, not
-a fitted parameter.
+$\nstar \approx 60.5$ \emph{total} e-folds. This total count is the part fixed by the CP-count
+logarithm (Eq.~\ref{eq:Nstar}); it is a derived bookkeeping quantity, not a fitted parameter. The CMB
+\emph{pivot} scale exits the horizon a few e-folds before the end, placing it at $\nstar \approx 57$.
+This pivot placement is the standard observable-pivot offset of inflationary cosmology --- physically
+reasonable and consistency-level, but \emph{not} itself uniquely fixed by the CP-count argument; it is
+adopted, not derived. The result below carries the value at the adopted pivot.
 
 % ============================================================
 \section{The Occupation Stack and A1 Indistinguishability: the Logarithm}\label{sec:log}
@@ -253,12 +256,17 @@ scaled as a power of occupation, $\Heff \propto \nbar^{q}$, the resulting tilt w
 $\ns = 1 - 6q$, giving absurd values: $q=1 \Rightarrow \ns = -5$; geometric/packing fill
 $\nbar^{1/3} \Rightarrow \ns = -1$; the on/off ``superposition fraction'' saturates to a constant,
 giving the excluded cliff $\ns = 1$. Across the entire family of mechanical, geometric, and packing
-primitives the result is either a power-law absurdity or the cliff. Near-scale-invariance
-\emph{uniquely} selects the logarithmic (entropic / chemical-potential) law, and the logarithm arises
-\emph{only} from a microstate-counting source --- here, A1 indistinguishability. This selection result
-is the spine of the derivation: the value $\ns = 0.9649$ is non-circular because only the
-\emph{qualitative} demand of near-invariance selects the log, while the precise value is then fixed by
-$\nstar$ (Eq.~\ref{eq:Nstar}), which is set by the CP count.
+primitives the result is either a power-law absurdity or the cliff. Among the natural occupation laws
+surveyed, near-scale-invariance selects the logarithmic (entropic / chemical-potential) law as the
+unique robust candidate, and in this construction the logarithm arises from a microstate-counting
+source --- A1 indistinguishability. This is a practical-uniqueness result within the minimal CPP
+cosmology assumptions, not a theorem-level uniqueness: other log-like dependences (RG-type logs,
+geometric/combinatorial logs, or logs of composite dimensionless ratios) are rendered unnatural by the
+construction but are not formally excluded, and would in any case require structure beyond the present
+CPP primitives. With that bracketing, the selection result is the spine of the derivation: the value
+$\ns = 0.9649$ is non-circular because only the \emph{qualitative} demand of near-invariance selects
+the log, while the precise value is then fixed by $\nstar$ (Eq.~\ref{eq:Nstar}), which is set by the
+CP count.
 \end{remark}
 
 % ============================================================
@@ -313,8 +321,11 @@ minimal PCD/ZBW dynamics with this ZRP. That identification is the residual prem
 \subsection{Deriving the ZRP identification (LEMMA-NS-ZRP-DERIVE)}
 
 \begin{lemma}[Leading-order ZRP identification]\label{lem:zrp}
-To leading order in the SSV coupling, the minimal PCD/ZBW occupation dynamics \emph{is} a symmetric
-constant-rate zero-range process. Specifically, from $\{$A1, the per-CP PCD cycle, the vertex-transitive
+To leading order in the SSV coupling, the minimal PCD/ZBW occupation dynamics \emph{reduces to} a
+symmetric constant-rate zero-range process. This is a minimal leading-order reduction, not a strict
+entailment: it assumes no $O(1)$ occupancy-dependent microphysics beyond the SSV coupling (any such
+effect is pushed into the $O(\alpha)$ correction structure below). Under that minimality, from
+$\{$A1, the per-CP PCD cycle, the vertex-transitive
 $600$-cell ($z=12$, symmetry group $2I$), a homogeneous isotropic inflationary background$\}$:
 \begin{enumerate}[label=(\roman*),leftmargin=2.4em]
 \item \textbf{Independence.} The PCD cycle is executed per-CP (each CP perceives its own local SSV and
@@ -457,9 +468,15 @@ follows immediately,
 consistent with the Planck value $\alphas = -0.0045\pm 0.0067$ and a falsifiable companion prediction.
 
 \begin{remark}[What is and is not free]
-Nothing in Eqs.~\eqref{eq:tilt}--\eqref{eq:running} is tuned. The exponent $p=2$ is fixed by the
-logarithmic ($=$ A1 indistinguishable) chemical potential; the variable $\Nrem$ is fixed by the
-$\delta N$ structure; and $\nstar$ is fixed by the CP count (Eq.~\ref{eq:Nstar}). The coefficients
+Nothing in Eqs.~\eqref{eq:tilt}--\eqref{eq:running} is tuned. The exponent $p=2$ is forced within the
+A1$\to$ZRP$\to\delta N$ chain --- by the logarithmic ($=$ A1 indistinguishable) chemical potential,
+\emph{given} the two model choices made explicit above: the linear coupling
+$\Heff = \kappa_0(\mu(\nbar) - \mu(1))$ (Eq.~\ref{eq:Heff}) and the spectator assignment
+$\mathcal{P}_\zeta \propto \Heff^2$ (Eq.~\ref{eq:tilt}). It is \emph{not} forced by A1 in isolation:
+A1 fixes $\mu\propto\ln\nbar$, but the maps $\mu\mapsto\Heff$ and $\Heff\mapsto\mathcal{P}_\zeta$ are
+modelling assumptions, not consequences of A1 (a non-linear $\mu$-coupling or a different spectrum
+prescription would shift $p$). The variable $\Nrem$ is fixed by the
+$\delta N$ structure; and $\nstar$ (total) is fixed by the CP count (Eq.~\ref{eq:Nstar}). The coefficients
 $\kappa_0$, $kT$, $z_1$, and the additive offset all drop out of $d\ln\Heff/dN$; the verification
 script confirms $\ns = 0.9649$ is invariant across $\kappa_0\in[10^{-2},10^3]$, $kT\in[10^{-4},50]$,
 $z_1$, and the offset. Removing the $1/n!$ (i.e. using distinguishable labels) collapses
@@ -536,8 +553,9 @@ $O(\alpha)$ SSV correction & higher slow-roll / loop corrections \\
 \end{table}
 
 \noindent The CPP account reproduces the canonical $\ns = 1 - 2/N_*$ of the simplest large-field model,
-but with two differences of principle: the exponent $p=2$ is \emph{forced} by indistinguishability
-rather than chosen by a potential shape, and the pivot $N_*$ is \emph{derived} from the CP count rather
+but with two differences of principle: the exponent $p=2$ is forced within the A1$\to$ZRP$\to\delta N$
+chain (by indistinguishability, given the linear $\mu$-coupling and spectator prescription) rather than
+chosen by a potential shape, and the pivot $N_*$ total is \emph{derived} from the CP count rather
 than read off the observed scales. The match to the $m^2\phi^2$ value is thus a structural prediction,
 not an input.
 
