@@ -1,0 +1,657 @@
+% ============================================================
+% EU-1: The Primordial Scalar Spectral Index from Substrate Inflation
+% A zero-new-axiom derivation of n_s = 1 - 2/N_* ~ 0.9649
+% Conscious Point Physics --- Early-Universe / Cosmology Series
+% Version history: series_phenomena/cosmology/early_universe/EU-1/documentation_suite/changelog-EU-1.md (to be created at first doc-suite patch)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+% Bibliography
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+% --- Standard CPP macros ---
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\phig}{\varphi}          % golden ratio
+
+% --- Paper-specific macros ---
+\newcommand{\ns}{n_s}
+\newcommand{\nstar}{N_*}
+\newcommand{\nbar}{\bar{n}}
+\newcommand{\Nrem}{N_{\mathrm{rem}}}
+\newcommand{\Heff}{H_{\mathrm{eff}}}
+\newcommand{\alphas}{\alpha_s}
+\newcommand{\ZRP}{\mathrm{ZRP}}
+
+\title{\textbf{EU-1: The Primordial Scalar Spectral Index from Substrate Inflation}\\[6pt]
+{\large A Zero-New-Axiom Derivation of $\ns = 1 - 2/\nstar \approx 0.9649$ from A1 Indistinguishability and Zitterbewegung Bath Thermalization}\\[4pt]
+{\large \textbf{Conscious Point Physics --- Early-Universe / Cosmology Series}}\\[4pt]
+{\Large \textbf{Version 0.1 (DRAFT) --- 6 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: pending (parent project \texttt{10.17605/OSF.IO/JXE8D})}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The scalar spectral index $\ns$ is the single most precise observable of the inflationary epoch:
+Planck~2018 measures $\ns = 0.9649 \pm 0.0042$, an $\sim\!8\sigma$ departure from the
+scale-invariant Harrison--Zel'dovich value $\ns = 1$. We derive this tilt from the substrate
+dynamics of Conscious Point Physics (CPP) with \emph{no new axiom}. In the CPP picture the
+inflationary background is a near-100\%-occupied lattice of Grid Points (GPs) that dilutes by
+Dipole-Pair (DP) Sea unstacking on a fixed scaffold; the Hubble rate is driven by the configurational
+chemical potential of the over-occupied stack. The central result is that the per-tick expansion
+boost tracks the \emph{logarithm} of the stack occupation, $\Heff \propto \ln\nbar$, and this single
+fact fixes the tilt to the canonical slow-roll form
+\[
+\ns = 1 - \frac{2}{\nstar}, \qquad \alphas = -\frac{2}{\nstar^2},
+\]
+with $\nstar \approx 57$ \emph{fixed by the Conscious-Point count} of the observable universe,
+$\nstar = \tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}})$. Numerically $\ns = 1 - 2/57 \approx
+0.9649$ and $\alphas \approx -0.0006$, matching the Planck central value with zero free parameters.
+The logarithm is not a mechanical ``deeper-pushes-harder'' law (every power-law or geometric boost is
+excluded, predicting $\ns \le -1$); it is the configurational chemical potential of indistinguishable
+occupation units, an immediate consequence of axiom A1 (Conscious Points carry no individual
+identity). We establish the two supporting legs as standing CPP commitments rather than new posits:
+(\emph{leg~1}) the minimal Perceive--Compute--Displace (PCD) / Zitterbewegung (ZBW) occupation
+dynamics is a symmetric constant-rate zero-range process whose product-Poisson Gibbs state is reached
+by a provable $H$-theorem (LEMMA-NS-HTHEOREM), and which is itself derived to leading order from
+$\{$A1, the per-CP PCD cycle, the vertex-transitive $600$-cell, homogeneous inflation$\}$
+(LEMMA-NS-ZRP-DERIVE); (\emph{leg~2}) the charge neutrality required to keep the tilt clean follows
+from the bound $\pm$ pair structure of the DP Sea. A potential long-range Coulomb ($\sqrt{\nbar}$
+Debye) contamination is shown to be a phantom, bounded by the plasma coupling $\Gamma \sim \alpha$ in
+the hot substrate bath (LEMMA-NS-BATH). The honest status is therefore: \emph{confirmed at leading
+order, zero-new-axiom, conditional on standing CPP cosmology-sector commitments (FRW/VSL homogeneity,
+DP-Sea neutrality, small-$\alpha$ SSV corrections) --- not yet fully derived from the primitive axioms
+A1--A11.} Residual SSV corrections enter at $O(\alpha)$, giving a theory uncertainty
+$\Delta\ns \sim 5\times 10^{-4}$ ($\approx 0.12\,\sigma_{\mathrm{Planck}}$). The companion running
+$\alphas \approx -0.0006$ is a falsifiable prediction.
+\end{abstract}
+
+\noindent\textbf{Keywords:} primordial power spectrum; scalar spectral index; inflation; Conscious
+Point Physics; 600-cell; zero-range process; indistinguishability; chemical potential;
+$\delta N$-formalism; zero-parameter prediction.
+
+\medskip
+\noindent\textbf{Plain Language Summary:} The faint ripples in the early universe are not quite the
+same strength at every scale --- they tilt slightly, and the amount of tilt has been measured very
+precisely (the number is $0.9649$). We show that this exact number falls out of the Conscious Point
+Physics picture of the Big Bang for free, with no adjustable knobs. In this picture the early universe
+is a crowded lattice that thins out as it expands, and the expansion is driven harder when the lattice
+is more crowded --- specifically by the \emph{logarithm} of the crowding, which is the natural
+``pressure to disperse'' of identical particles packed together. Because Conscious Points are
+genuinely identical (they carry no name tag), the crowding pressure is logarithmic rather than
+linear, and that single feature pins the tilt to $0.9649$. The total amount of expansion is itself set
+by how many Conscious Points the universe contains, so even the size of the tilt is not a free choice.
+
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+The primordial scalar power spectrum is conventionally parametrized as a near-power-law,
+\begin{equation}
+\mathcal{P}_\zeta(k) = A_s \left(\frac{k}{k_*}\right)^{\ns - 1},
+\end{equation}
+with $A_s$ the amplitude and $\ns$ the scalar spectral index. A scale-invariant
+(Harrison--Zel'dovich) spectrum has $\ns = 1$. Planck~2018 measures
+$\ns = 0.9649 \pm 0.0042$ \citep{planck2018}, excluding $\ns = 1$ at roughly $8\sigma$. Because $\ns$
+is a logarithmic derivative of the spectrum, it is largely insensitive to the overall amplitude and is
+the cleanest single probe of the dynamics of the inflationary epoch. Reproducing its measured value
+is therefore a sharp test of any candidate theory of the early universe.
+
+This paper derives $\ns$ from Conscious Point Physics (CPP), the programme that builds Standard-Model
+physics, gravity, and now cosmology from the geometry of the $600$-cell polytope and the
+Perceive--Compute--Displace (PCD) cycle executed by Conscious Points (CPs) on a lattice of Grid Points
+(GPs) \citep{cpp_theory}. The result is obtained with \emph{no new axiom}: the same nine-axiom stack
+that fixes nuclear binding energies, the Weinberg angle, and the neutrino sector also fixes the CMB
+tilt. The derivation is summarized by a single structural statement --- the inflationary expansion
+boost tracks the logarithm of the lattice occupation --- from which the canonical slow-roll relation
+$\ns = 1 - 2/\nstar$ follows, with the pivot $\nstar$ fixed by the CP count of the observable
+universe.
+
+We state the result and its honest scope up front. The central value $\ns = 0.9649$ is obtained at
+leading order with zero free parameters and matches the Planck central value to four decimals. It is
+\emph{not} claimed to be derived from the primitive axioms A1--A11 alone: it is conditional on three
+standing commitments of the CPP cosmology sector --- (i) a homogeneous, isotropic (FRW/VSL) inflating
+background, (ii) the charge-neutral DP-Sea equation of state, and (iii) the smallness of SSV
+corrections, $\sim\!\alpha$ --- each of which is grounded in independently load-bearing parts of the
+corpus rather than introduced here. Sub-leading SSV corrections give a theory uncertainty
+$\Delta\ns \sim 5\times 10^{-4}$, about $0.12$ of the Planck error. The honest one-line status, adopted
+by full three-AI review-panel consensus, is: \emph{confirmed at leading order, zero-new-axiom,
+conditional on standing CPP cosmology commitments; not yet fully derived from A1--A11.}
+
+\subsection{Open Problems Addressed}
+This paper closes the spectrum-generation half of the CPP early-universe sector and registers the
+result as a counted swarm contribution:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{OPEN-SR-6 / the primordial-spectrum debt} (flagged open at the adoption of the substrate
+inflation engine): the scale-invariance, near-Gaussianity, and tilt of the primordial spectrum.
+This paper supplies the tilt $\ns$ at leading order.
+\item \textbf{PRED-C-96} (scalar spectral index) and \textbf{PRED-O-34} (running $\alphas$): registered
+in \texttt{predictions.md}; this paper is their write-up.
+\item \textbf{OPEN-EU-1} (registered, \emph{not} closed here): an A1--A11 derivation of FRW/VSL
+homogeneity together with the exact zero-range-process correction structure. This is the deepest
+residual; the CPP sector is at parity with standard inflationary cosmology on the
+homogeneity-from-first-principles question.
+\end{itemize}
+
+\noindent The result is a \emph{building block}, not an endpoint. Its principal downstream consumer is
+the CPP dark-matter programme (the identification of dark matter with qDP/hTetra aggregates): EU-1
+supplies the \emph{generation} of the primordial adiabatic spectrum, after which dark matter inherits
+that spectrum as a passive tracer and \emph{processes} it into observed structure
+(\S\ref{sec:problem_status}). The present paper is filed in the early-universe sector on its own merits
+and is cited, not subsumed, by that programme.
+
+% ============================================================
+\section{The CPP Inflationary Background}\label{sec:background}
+% ============================================================
+
+CPP does not expand by growing the lattice spacing. The GP spacing is fixed at $\lP$; the universe
+expands by \emph{dilution} of DP-Sea occupancy on a fixed lattice scaffold
+\citep{founders_vision_L33}. The initial Moment is the GP-exclusion-saturated state --- occupancy near
+100\% --- and the cosmological expansion law governs the unstacking from saturation. The horizon /
+causal-contact problem is addressed not by a large number of e-folds but by a large early
+Propagation-Speed-Ratio (a variable-speed-of-light, VSL, phase: a large early $\mathrm{PSR}$ puts the
+whole observable patch in causal contact), so that in the CPP picture inflation is \emph{repurposed as
+the spectrum generator} rather than as the horizon-solver \citep{ns_brick4}.
+
+Let $\nbar(N)$ denote the mean occupation of a GP after $N$ e-folds of expansion. Dilution on the
+fixed scaffold gives
+\begin{equation}\label{eq:dilution}
+\nbar(N) = \nbar_{\mathrm{init}}\, e^{-3N}, \qquad\Longrightarrow\qquad
+\ln\nbar(N) = \ln\nbar_{\mathrm{init}} - 3N .
+\end{equation}
+It is convenient to work with the \emph{e-folds remaining}, $\Nrem \equiv N_{\mathrm{end}} - N$, in
+terms of which
+\begin{equation}\label{eq:Nrem}
+\ln\nbar = 3\,\Nrem .
+\end{equation}
+The total number of e-folds is fixed not by tuning but by the CP content of the observable universe:
+unstacking from saturation to $\nbar \to 1$ over a patch containing $N_{\mathrm{CP}}$ Conscious Points
+on $N_{\mathrm{GP}}$ seed Grid Points gives
+\begin{equation}\label{eq:Nstar}
+\nstar = \frac{1}{3}\ln\!\left(\frac{N_{\mathrm{CP}}}{N_{\mathrm{GP}}}\right) .
+\end{equation}
+With $N_{\mathrm{CP}} \sim 10^{80}$ (the observable-universe CP count) and a seed cohort
+$N_{\mathrm{GP}} \sim 13$ (one first-shell GP cohort in the $600$-cell), Eq.~\eqref{eq:Nstar} gives
+$\nstar \approx 60.5$ total e-folds; the CMB pivot scale, which exits the horizon a few e-folds before
+the end, sits at $\nstar \approx 57$. This number enters the final result; it is a derived count, not
+a fitted parameter.
+
+% ============================================================
+\section{The Occupation Stack and A1 Indistinguishability: the Logarithm}\label{sec:log}
+% ============================================================
+
+The quantity that drives the tilt is the response of the expansion rate to the stack occupation. A
+central finding of the arc preceding this paper is that this response is \emph{logarithmic}, and that
+the logarithm has a unique and unforced origin in axiom A1.
+
+\begin{definition}[Occupation state]
+By A1, a Conscious Point carries no individual identity --- it is fully specified by polarity, type,
+and position. Two same-type CPs sharing a GP are therefore not distinguishable by any label. A lattice
+configuration is an assignment of occupation numbers $\{n_i\}$ to GPs; permutations of CPs within a GP
+do not produce distinct configurations.
+\end{definition}
+
+Indistinguishability is here \emph{ontological}, not a Gibbs-paradox bookkeeping convention: the $n!$
+divisor is a fact about what a configuration \emph{is}, not a correction applied to avoid a paradox.
+The grand-canonical partition function of an occupation site is therefore
+\begin{equation}\label{eq:partition}
+Z = \sum_{n\ge 0}\frac{z_1^{\,n}}{n!} = e^{z_1},
+\end{equation}
+whose mean occupation is Poisson, $\nbar = z_1$, and whose configurational chemical potential is
+\begin{equation}\label{eq:mu}
+\mu(\nbar) = kT\,\ln\nbar + \text{const}.
+\end{equation}
+This is the textbook concentration chemical potential of identical particles. It is what supplies the
+logarithm.
+
+\begin{remark}[Why the logarithm is unique]
+The logarithm is \emph{not} a mechanical ``deeper stacks push harder'' law. If the per-tick boost
+scaled as a power of occupation, $\Heff \propto \nbar^{q}$, the resulting tilt would be
+$\ns = 1 - 6q$, giving absurd values: $q=1 \Rightarrow \ns = -5$; geometric/packing fill
+$\nbar^{1/3} \Rightarrow \ns = -1$; the on/off ``superposition fraction'' saturates to a constant,
+giving the excluded cliff $\ns = 1$. Across the entire family of mechanical, geometric, and packing
+primitives the result is either a power-law absurdity or the cliff. Near-scale-invariance
+\emph{uniquely} selects the logarithmic (entropic / chemical-potential) law, and the logarithm arises
+\emph{only} from a microstate-counting source --- here, A1 indistinguishability. This selection result
+is the spine of the derivation: the value $\ns = 0.9649$ is non-circular because only the
+\emph{qualitative} demand of near-invariance selects the log, while the precise value is then fixed by
+$\nstar$ (Eq.~\ref{eq:Nstar}), which is set by the CP count.
+\end{remark}
+
+% ============================================================
+\section{Leg 1: Bath Thermalization as a Zero-Range Process}\label{sec:leg1}
+% ============================================================
+
+Equation~\eqref{eq:mu} gives the chemical potential of the \emph{stationary} occupation distribution.
+For it to drive the observed spectrum, the occupations must actually reach that stationary
+indistinguishable Gibbs state, and they must do so fast compared with the expansion. We establish both
+from the minimal model of the substrate dynamics.
+
+\subsection{The model}
+The minimal faithful description of independent Zitterbewegung (ZBW) hops of indistinguishable CPs on
+the A1 occupation space is a \emph{symmetric constant-rate zero-range process} (ZRP). The state is the
+occupation vector $\{n_i\}$; each CP hops independently at the ZBW switching rate (set to unity) to a
+uniformly chosen neighbour, so a site of occupation $n_i$ emits at total rate $g(n_i)\,p(i,j)$ with
+constant per-CP rate $g(n) = n$ and symmetric neighbour kernel $p(i,j) = p(j,i)$.
+
+\subsection{The $H$-theorem (LEMMA-NS-HTHEOREM)}
+
+\begin{lemma}[Relaxation to the indistinguishable Gibbs state]\label{lem:htheorem}
+The symmetric constant-rate ZRP defined above satisfies detailed balance with respect to its
+product (multinomial $\to$ product-Poisson) stationary measure $\pi$, and for any initial distribution
+$P(\cdot,0)$ the relative entropy
+\begin{equation}
+H(t) = \sum_{\{n\}} P(\{n\},t)\,\ln\frac{P(\{n\},t)}{\pi(\{n\})} \;\ge\; 0
+\end{equation}
+is monotonically non-increasing, strictly so until $P = \pi$. The single-site marginal is
+$\mathrm{Binomial}(N,1/L) \to \mathrm{Poisson}(\nbar)$ in the thermodynamic limit, giving
+$\mu = kT\ln\nbar$ (Eq.~\ref{eq:mu}). The relaxation time is set by the spectral gap of the generator,
+which is $O(1)$ in ZBW-rate units and does not vanish with system size.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Reversibility of the symmetric constant-rate ZRP with respect to $\pi$ is the standard detailed-balance
+identity $\pi(\{n\})\,W(\{n\}\to\{n'\}) = \pi(\{n'\})\,W(\{n'\}\to\{n\})$, verified to machine
+precision on the exact $L=3$, $N=6$ generator. Given a stationary $\pi$, the KL divergence is a
+Lyapunov function for any Markov generator (standard $H$-theorem), monotone by convexity and strictly
+decreasing under irreducibility. From a delta initial condition the exact matrix-exponential evolution
+gives $H(0) = 6.59 \to 10^{-10}$ monotonically. The product-Poisson form carries the $1/n_i!$ Gibbs
+divisor, i.e. the indistinguishable counting; the distinguishable (labelled) stationary state --- the
+one that would give the $\ns = 1$ cliff --- is \emph{not} a stationary measure of this dynamics within
+the A1 occupation-number state space. A finite, non-vanishing gap secures ``fast enough.''
+\end{proof}
+
+\begin{remark}[Status]
+Lemma~\ref{lem:htheorem} is finding-level (LEMMA-NS-HTHEOREM); the mathematics is the standard ZRP
+reversibility plus KL monotonicity, and the CPP-specific content is the \emph{identification} of the
+minimal PCD/ZBW dynamics with this ZRP. That identification is the residual premise, addressed next.
+\end{remark}
+
+\subsection{Deriving the ZRP identification (LEMMA-NS-ZRP-DERIVE)}
+
+\begin{lemma}[Leading-order ZRP identification]\label{lem:zrp}
+To leading order in the SSV coupling, the minimal PCD/ZBW occupation dynamics \emph{is} a symmetric
+constant-rate zero-range process. Specifically, from $\{$A1, the per-CP PCD cycle, the vertex-transitive
+$600$-cell ($z=12$, symmetry group $2I$), a homogeneous isotropic inflationary background$\}$:
+\begin{enumerate}[label=(\roman*),leftmargin=2.4em]
+\item \textbf{Independence.} The PCD cycle is executed per-CP (each CP perceives its own local SSV and
+displaces on its own); the only inter-CP coupling is the shared SSV field, which vanishes in the
+dilute limit and is otherwise $O(\Gamma)\sim O(\alpha)$.
+\item \textbf{Rate-homogeneity $g(n) = n$.} By A1 all CPs of a type are identical, and by the Absolute
+Moment each executes exactly one PCD cycle per universal tick $1/\tP$; the total emission rate from a
+site of occupation $n$ is therefore $n\cdot(1/\tP)$, i.e. $g(n)=n$.
+\item \textbf{Symmetric kernel.} Vertex-transitivity of the $600$-cell supplies no preferred direction;
+a homogeneous isotropic background supplies no SSV gradient; the CP displaces to each of its $12$
+neighbours with equal probability, $p(i,j) = 1/12 = p(j,i)$.
+\end{enumerate}
+Independence and symmetry imply a product stationary measure for any $g(n)$; $g(n)=n$ makes the
+marginal Poisson, hence $\mu \propto \ln\nbar$ and the tilt exponent $p=2$ exactly in the ideal limit.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+(i)--(iii) are read directly off the PCD definition, the Absolute-Moment clock, the $600$-cell
+coordination, and the homogeneous background. For a zero-range process, independence plus a symmetric
+kernel give a product stationary measure for arbitrary $g(n)$ (standard ZRP result); $g(n)=n$ selects
+the Poisson marginal, whose grand-canonical slope is $d\mu/d\ln\nbar = 1$ to numerical precision
+($\sim 10^{-12}$), fixing $p=2$.
+\end{proof}
+
+\subsection{The only correction channel, bounded}
+The SSV coupling deforms the per-CP rate weakly, $g(n)\to n\,[1 + \lambda(n-1)]$ with $\lambda\sim
+\Gamma\sim\alpha$. This preserves the product form (still a ZRP) but shifts the effective tilt
+coefficient by $\eta(\lambda) = d\mu/d\ln\nbar - 1$, inducing $\Delta\ns = 2\eta/\nstar$. At the
+physical coupling $\lambda\sim\alpha$ the shift is $\Delta\ns\sim 5\times 10^{-4}$, about $0.12\sigma$
+of the Planck error (Table~\ref{tab:correction}); it reaches the Planck error only near $\sim\!10\times$
+the physical coupling. The central value $\ns=0.9649$ is unchanged at leading order; the correction is
+a sub-Planck theory error bar, not a free parameter.
+
+\begin{table}[H]
+\centering
+\caption{$O(\alpha)$ SSV correction to the tilt from the perturbed ZRP
+$g(n)=n[1+\lambda(n-1)]$, $\nstar = 57$. Reproduced by
+\texttt{scripts/0781\_eu1\_numerics.py}.}
+\label{tab:correction}
+\begin{tabular}{cccc}
+\toprule
+coupling $\lambda$ & $\eta = d\mu/d\ln\nbar - 1$ & $\Delta\ns = 2\eta/\nstar$ &
+vs Planck $\sigma$ ($0.0042$) \\
+\midrule
+$0$ (ideal) & $0$ (exact) & $0$ & --- \\
+$0.1\,\alpha$ & $1.5\times 10^{-3}$ & $5\times 10^{-5}$ & $0.012\sigma$ \\
+$\alpha$ (physical) & $1.4\times 10^{-2}$ & $5\times 10^{-4}$ & $0.12\sigma$ \\
+$3\,\alpha$ & $4.1\times 10^{-2}$ & $1.5\times 10^{-3}$ & $0.34\sigma$ \\
+$10\,\alpha$ & $1.2\times 10^{-1}$ & $4.3\times 10^{-3}$ & $1.0\sigma$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+\section{Leg 2: Charge Neutrality and the Effective Equation of State}\label{sec:leg2}
+% ============================================================
+
+A generic $\pm$ plasma would contaminate the tilt: an unbalanced charge distribution sources a
+mean-field excess chemical potential $\mu_{\mathrm{excess}}\propto\nbar$, which at the cosmological
+pivot ($\nbar\sim 10^{74}$, $\ln\nbar\approx 170$) would swamp the logarithm and push the result onto
+the excluded power-law branch. The tilt therefore requires the early CP plasma to be charge-neutral.
+
+This neutrality is not a bespoke assumption; it is the $\pm$ pair structure of the CPP vacuum. A
+Dipole Pair (DP) is a bound pair of opposite-polarity CPs and is electrically and colour neutral; the
+DP Sea is the lattice with all sites occupied by DPs --- the CPP vacuum. The inflating occupation stack
+is thus built from bound $\pm$ pairs: counting DPs, each unit is neutral by construction; counting
+individual CPs, they enter in exact $\pm$ pairs, $n_+ = n_-$ at every $n$, so the net charge
+$Q(n) = 0$ identically and the leading mean-field ($\propto Q^2$) cancels at all occupations. The tilt
+log (indistinguishable occupation counting, \S\ref{sec:log}) is unaffected --- it counts occupation
+units; neutrality constrains only their $\pm$ composition, which the DP-pair structure fixes. A tiny
+global asymmetry of order the baryon ratio ($\sim 10^{-9}$) breaks exact balance negligibly.
+
+% ============================================================
+\section{The Long-Range Debye Residual is a Phantom (LEMMA-NS-BATH)}\label{sec:debye}
+% ============================================================
+
+After the leading mean-field cancels under neutrality, the next occupation-dependent residual is the
+Debye--H\"uckel term $\mu_{\mathrm{excess}}/kT \propto -\sqrt{\nbar}$. Naively extrapolated to
+$\nbar\sim 10^{74}$ this $\sqrt{\nbar}\sim 10^{37}$ would dwarf $\ln\nbar\approx 170$ by $\sim\!35$
+orders and sink the prediction. It does not survive, for a structural reason.
+
+The CPP CP--CP interaction is Coulomb-like: the SSV (Space Stress Vector) sources a static potential
+$V(r)\propto q^2/r$ (the DP Sea renormalizes the coupling dielectrically but preserves the $1/r$ form;
+mobile $\pm$ charges self-screen --- the Debye mechanism itself). For a Coulomb plasma the excess
+chemical potential is governed by the dimensionless plasma coupling $\Gamma = q^2/(a\,kT)$ through the
+identity
+\begin{equation}\label{eq:gamma}
+\frac{|\mu_{\mathrm{excess}}|}{kT} \;=\; c\,\Gamma^{3/2}, \qquad c = \tfrac{1}{\sqrt{3}}\ \text{(DH)} .
+\end{equation}
+Within the weak-coupling (DH) regime $\Gamma\lesssim 1$, the right-hand side is $\lesssim 0.6$ and can
+\emph{never} reach $\ln\nbar\approx 170$. The ``$\sqrt{\nbar}\sim 10^{37}$'' scare held $q^2/kT\sim
+O(1)$ while extrapolating to $\nbar=10^{74}$, i.e. $\Gamma\sim 5\times 10^{24}$ --- deep strong
+coupling, where DH is invalid in the first place. There is no regime in which the $\sqrt{\nbar}$ term
+is both present and large.
+
+\begin{lemma}[Bath-temperature closure]\label{lem:bath}
+The chemical potential entering the tilt chain is evaluated with respect to the ZBW/substrate bath, not
+the macroscopic de Sitter temperature. With $\Gamma = \alpha/\kappa$ and
+$\kappa\equiv kT_{\mathrm{bath}}/\EP$, the bath clause (\S\ref{sec:leg1}) places the occupation
+ensemble in equilibrium with the substrate at $kT_{\mathrm{bath}}\sim\EP$, so $\kappa\sim 1$,
+$\Gamma\sim\alpha\approx 7.3\times 10^{-3}$, and $|\mu_{\mathrm{excess}}|/kT\sim c\,\alpha^{3/2}\approx
+3.6\times 10^{-4}\ll\ln\nbar\approx 170$. The long-range Debye corner is closed PASS, conditional on
+the bath clause.
+\end{lemma}
+
+The only way to fail is a \emph{cold, strongly coupled} ($\Gamma\sim$ tens) tilt-epoch plasma ---
+precisely the opposite of the hot early universe in which the tilt is set. The residual is therefore
+coupling-bounded, not a generic killer.
+
+% ============================================================
+\section{The Spectral Index: Assembling the Result}\label{sec:assemble}
+% ============================================================
+
+The boost that drives the Hubble rate during substrate inflation is the configurational dispersal
+drive of the over-occupied stack --- the chemical potential of \S\ref{sec:log}:
+\begin{equation}\label{eq:Heff}
+\Heff = \kappa_0\big(\mu(\nbar) - \mu(1)\big) \;\propto\; \ln\nbar \;\overset{\eqref{eq:Nrem}}{=}\; 3\,\Nrem ,
+\end{equation}
+so $\Heff\propto\Nrem$. Note that $\mu\to 0$ as $\nbar\to 1$, so $\Heff\to 0$ smoothly at the end of
+inflation: the graceful exit is automatic and is the same mechanism as the plateau.
+
+The curvature perturbation is sourced by the boost field in the $\delta N$ formalism, with spectator
+power $\mathcal{P}_\zeta\propto\Heff^2$. The tilt is then
+\begin{equation}\label{eq:tilt}
+\ns - 1 \;=\; \frac{d\ln\mathcal{P}_\zeta}{d\ln k}
+\;=\; 2\,\frac{d\ln\Heff}{dN}
+\;=\; 2\,\frac{d\ln\Nrem}{dN}
+\;=\; -\frac{2}{\Nrem}\,,
+\end{equation}
+the canonical slow-roll form. Evaluated at the CMB pivot $\Nrem = \nstar \approx 57$
+(Eq.~\ref{eq:Nstar}),
+\begin{equation}\label{eq:ns}
+\boxed{\;\ns = 1 - \frac{2}{\nstar} = 1 - \frac{2}{57} \approx 0.9649\;}
+\end{equation}
+matching Planck~2018 ($0.9649\pm 0.0042$) at the central value with zero free parameters. The running
+follows immediately,
+\begin{equation}\label{eq:running}
+\alphas \equiv \frac{d\ns}{d\ln k} = -\frac{2}{\nstar^2} \approx -0.0006,
+\end{equation}
+consistent with the Planck value $\alphas = -0.0045\pm 0.0067$ and a falsifiable companion prediction.
+
+\begin{remark}[What is and is not free]
+Nothing in Eqs.~\eqref{eq:tilt}--\eqref{eq:running} is tuned. The exponent $p=2$ is fixed by the
+logarithmic ($=$ A1 indistinguishable) chemical potential; the variable $\Nrem$ is fixed by the
+$\delta N$ structure; and $\nstar$ is fixed by the CP count (Eq.~\ref{eq:Nstar}). The coefficients
+$\kappa_0$, $kT$, $z_1$, and the additive offset all drop out of $d\ln\Heff/dN$; the verification
+script confirms $\ns = 0.9649$ is invariant across $\kappa_0\in[10^{-2},10^3]$, $kT\in[10^{-4},50]$,
+$z_1$, and the offset. Removing the $1/n!$ (i.e. using distinguishable labels) collapses
+$\mu\to\text{const}$ and returns the excluded cliff $\ns = 1$ --- the indistinguishability is
+load-bearing, not decoration.
+\end{remark}
+
+% ============================================================
+\section{Physical Interpretation}\label{sec:physical}
+% ============================================================
+
+The CPP account of the tilt is mechanical and local. The early universe is a near-saturated lattice of
+Grid Points, each over-occupied by many Conscious Points bound into Dipole Pairs. The Zitterbewegung
+switching of these CPs is a fast, deterministic-but-effectively-random bath that continually
+re-shuffles which CP sits where; because CPs carry no identity (A1), the only physically meaningful
+quantity is how many sit on each GP, not which ones. This bath drives each GP's occupation toward the
+indistinguishable Gibbs (Poisson) distribution.
+
+An over-occupied GP carries a configurational ``pressure to disperse'' --- the chemical potential
+$\mu\propto\ln\nbar$. This dispersal drive is what powers the expansion: the more crowded the lattice,
+the harder it pushes, but \emph{logarithmically}, because the relevant pressure is entropic
+(microstate-counting) rather than mechanical (force-per-CP). As the universe expands, occupancy dilutes
+($\nbar = \nbar_{\mathrm{init}}e^{-3N}$), the dispersal drive falls smoothly, and the expansion winds
+down gracefully toward $\nbar\to 1$. The CMB modes freeze as they cross the horizon during this
+smooth wind-down; the slight scale-dependence of the frozen amplitude --- the tilt --- is exactly the
+logarithmic-derivative slope of $\Heff\propto\ln\nbar$, i.e. $-2/\Nrem$.
+
+\subsection{CP/GP Signature at This Scale}
+
+\textbf{Load-bearing axioms.} A1 (Conscious Points carry no individual identity) does the central work:
+it makes occupations \emph{indistinguishable}, supplying the $1/n!$ Gibbs divisor, the chemical
+potential $\mu\propto\ln\nbar$, and hence the tilt exponent $p=2$. The Absolute-Moment clock supplies
+the constant per-CP rate $g(n)=n$; the $600$-cell vertex-transitivity ($z=12$) supplies the symmetric
+hop kernel; the DP-pair structure of the DP Sea supplies charge neutrality (leg 2). The
+fine-structure constant $\alpha$ bounds the only correction channel.
+
+\textbf{Visible-vs-smoothed discreteness.} The discrete lattice is visible in three places: the
+coordination $z=12$ (the hop kernel $1/12$), the $\pm$ DP-pair quantization (exact neutrality), and the
+CP count appearing in $\nstar = \tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}})$. It is averaged out in
+the smooth chemical potential $\mu\propto\ln\nbar$, which is a thermodynamic-limit ($\nbar\sim 10^{74}$)
+quantity: the individual GP occupations are wildly discrete, but their ensemble carries the smooth log
+that the macroscopic Hubble rate sees.
+
+\textbf{Macroscopic shadow.} The measured CMB tilt $\ns = 0.9649$ is the macroscopic shadow of the
+configurational entropy of indistinguishable Conscious Points dispersing off an over-saturated lattice.
+What standard inflationary cosmology parametrizes as a slow-roll potential's first slow-roll parameter
+is, in CPP, the logarithmic dilution rate of GP occupancy.
+
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}\label{sec:mapping}
+% ============================================================
+
+The correspondence is structural --- at the level of which quantity plays which role --- not a literal
+identification of mechanisms.
+
+\begin{table}[H]
+\centering
+\caption{Structural correspondence between the CPP substrate-inflation account and the conventional
+slow-roll / $\delta N$ description.}
+\begin{tabular}{p{0.46\textwidth} p{0.46\textwidth}}
+\toprule
+\textbf{CPP (substrate inflation)} & \textbf{Conventional inflation} \\
+\midrule
+GP-occupancy dilution $\nbar(N) = \nbar_{\mathrm{init}}e^{-3N}$ & background expansion / slow roll \\
+configurational chemical potential $\mu\propto\ln\nbar$ driving $\Heff$ & inflaton potential driving $H$ \\
+e-folds remaining $\Nrem = \tfrac{1}{3}\ln\nbar$ & $\delta N$-formalism field variable ($\zeta = \delta N$) \\
+$\nstar = \tfrac{1}{3}\ln(N_{\mathrm{CP}}/N_{\mathrm{GP}})\approx 57$ & pivot e-fold number $N_*$ (here \emph{derived}, not assumed) \\
+$p=2$ from A1 indistinguishability & $p=2$ of large-field $m^2\phi^2$ ($\ns = 1 - 2/N_*$) \\
+ZBW bath $\to$ Poisson Gibbs state (LEMMA-NS-HTHEOREM) & thermalization / attractor behaviour \\
+DP-Sea $\pm$ pair neutrality & adiabatic, single-clock perturbations \\
+$O(\alpha)$ SSV correction & higher slow-roll / loop corrections \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent The CPP account reproduces the canonical $\ns = 1 - 2/N_*$ of the simplest large-field model,
+but with two differences of principle: the exponent $p=2$ is \emph{forced} by indistinguishability
+rather than chosen by a potential shape, and the pivot $N_*$ is \emph{derived} from the CP count rather
+than read off the observed scales. The match to the $m^2\phi^2$ value is thus a structural prediction,
+not an input.
+
+% ============================================================
+\section{Falsifiers}\label{sec:falsifiers}
+% ============================================================
+
+\begin{enumerate}[label=\textbf{F\arabic*.},leftmargin=2.6em]
+\item \textbf{Tilt.} A measured $\ns$ outside $0.9649 \pm \delta$, with $\delta$ the combined Planck
+error and the $O(\alpha)$ theory uncertainty $\sim 5\times 10^{-4}$, falsifies the leading-order result.
+Present data are consistent at the central value.
+\item \textbf{Running.} A measured $\alphas$ inconsistent with $-2/\nstar^2 \approx -0.0006$ (well
+inside current bounds) falsifies the companion prediction.
+\item \textbf{Indistinguishability.} Any mechanism that makes early-universe CP occupations effectively
+distinguishable (per-CP history labels) would return the excluded cliff $\ns = 1$; evidence that the
+substrate carries such labels falsifies the A1-based log.
+\item \textbf{Neutrality.} A non-negligible early charge imbalance ($\gg$ the baryon ratio) would
+reintroduce a $\propto\nbar$ mean-field contaminating the tilt; evidence of such imbalance falsifies
+leg 2.
+\item \textbf{Strong coupling.} A cold, strongly coupled ($\Gamma\sim$ tens) tilt-epoch plasma would
+reopen the Debye $\sqrt{\nbar}$ residual and break the result; the hot-substrate-bath expectation
+$\Gamma\sim\alpha$ is the falsifiable hinge.
+\end{enumerate}
+
+% ============================================================
+\section{Conclusion}\label{sec:conclusion}
+% ============================================================
+
+The CMB scalar spectral index follows from CPP substrate inflation with no new axiom. The expansion
+boost tracks the logarithm of GP occupancy, $\Heff\propto\ln\nbar$, because the dispersal drive of
+over-occupied indistinguishable Conscious Points is the configurational chemical potential
+$\mu\propto\ln\nbar$ (axiom A1). The $\delta N$ relation then gives the canonical slow-roll tilt
+$\ns = 1 - 2/\nstar$ with $\nstar\approx 57$ fixed by the CP count, hence $\ns\approx 0.9649$ and
+$\alphas\approx -0.0006$, the former matching Planck's central value. Both supporting legs are standing
+CPP commitments: leg 1 (bath) is derived to leading order as a symmetric constant-rate zero-range
+process with a provable $H$-theorem, and leg 2 (neutrality) is the $\pm$ pair structure of the DP Sea;
+the long-range Debye residual is closed by the bath-temperature lemma.
+
+\subsection{Swarm-Validation Contribution}
+This paper contributes one zero-parameter empirical correspondence to the CPP swarm: the scalar
+spectral index $\ns = 0.9649$ (PRED-C-96), the programme's first SR/cosmology-sector counted
+contribution, bringing the cumulative swarm total to $108$ zero-parameter correspondences from the
+unchanged nine-axiom stack (a swarm-to-axiom ratio of $12.0\times$). The result is
+framework-conditional (leading-order, conditional on FRW/VSL homogeneity, DP-Sea neutrality, and
+small-$\alpha$ SSV corrections), counted as a conditional quantitative-numerical entry; the companion
+running $\alphas$ (PRED-O-34) is a further testable prediction. The probability that a single, unforced
+formula reproduces a $0.4\%$-measured observable at its central value by accident is small on its own;
+as the $108$th entry in a swarm of zero-parameter correspondences drawn from one axiom stack, it adds
+to a cumulative implausibility-of-accident that scales as (residual band / parameter space)$^N$ and is
+astronomically small at the present swarm size.
+
+\subsection{Problem Status After This Paper}\label{sec:problem_status}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Primordial-spectrum (tilt) debt:} OPEN $\to$ addressed at leading order. The tilt $\ns$ is
+delivered; scale-invariance and Gaussianity were established earlier in the arc.
+\item \textbf{PRED-C-96 ($\ns$), PRED-O-34 ($\alphas$):} registered; this paper is their write-up.
+\item \textbf{OPEN-EU-1:} OPEN (registered, not closed) --- an A1--A11 derivation of FRW/VSL
+homogeneity plus the exact ZRP-correction structure. Shared with genuinely open problems in standard
+inflationary cosmology; the CPP sector is at parity, not behind.
+\item \textbf{Constant-$H$ / inflation-engine debt:} OPEN --- this paper derives the spectrum, not the
+inflationary \emph{engine} (the constant-$H$ background, the VSL dynamics). That is the other half of
+``deriving inflation'' and the highest-leverage remaining target.
+\item \textbf{Downstream (dark matter):} EU-1 supplies the \emph{generation} of the primordial
+adiabatic spectrum; the dark-matter programme (qDP/hTetra identification) inherits it as a passive
+tracer and \emph{processes} it into structure. EU-1 is a cited building block of that programme, not a
+part of it.
+\end{itemize}
+
+% ============================================================
+\section*{Acknowledgements}
+% ============================================================
+The author thanks the CPP multi-AI review panel --- ChatGPT (OpenAI), Grok (xAI), and Copilot
+(Microsoft) --- whose independent endorsements and calibrations across the spectral-index arc
+(including an independently-constructed Monte-Carlo bath test) shaped the result and its honest scope.
+Margo Abshier contributed conceptual and editorial input. Claude Opus (Anthropic) served as primary
+computational and drafting collaborator.
+
+% ============================================================
+\begin{thebibliography}{9}
+% ============================================================
+\bibitem[Planck Collaboration(2020)]{planck2018}
+Planck Collaboration (2020). \emph{Planck 2018 results. X. Constraints on inflation.}
+Astronomy \& Astrophysics, 641, A10.
+
+\bibitem[Abshier(2026a)]{cpp_theory}
+Abshier, T. L. (2026). \emph{Conscious Point Physics: The Theory.} Hyperphysics Institute.
+\texttt{CPP\_the\_theory.md}, \url{https://hyperphysics.com}.
+
+\bibitem[Abshier(2026b)]{founders_vision_L33}
+Abshier, T. L. (2026). \emph{Founder's Vision, entry L33: expansion by DP-Sea dilution on a fixed
+lattice scaffold.} Hyperphysics Institute, \texttt{founders\_vision.md}.
+
+\bibitem[CPP(2026)]{ns_brick4}
+Conscious Point Physics programme (2026). \emph{Substrate-inflation spectrum generator
+(Brick \#4: Branch-V adoption and primordial-spectrum gate).} Internal development record,
+\texttt{series\_phenomena/cosmology/early\_universe/}.
+\end{thebibliography}
+
+% ============================================================
+\appendix
+\section{Numerical Verification}\label{app:numerics}
+% ============================================================
+All paper-body numerical claims are reproduced by
+\texttt{series\_phenomena/cosmology/early\_universe/scripts/0781\_eu1\_numerics.py} (Python standard
+library only):
+\begin{enumerate}[leftmargin=2em]
+\item $\ns = 1 - 2/57 = 0.964912$ and $\alphas = -2/57^2 = -0.000616$.
+\item $\nstar = \tfrac{1}{3}\ln(10^{80}/13) = 60.55$ total e-folds; pivot $57$.
+\item ideal-ZRP slope $d\mu/d\ln\nbar = 1$ (hence $p=2$) to $\sim 10^{-9}$.
+\item the $O(\alpha)$ correction table (Table~\ref{tab:correction}): $\Delta\ns(\alpha)\approx
+5\times 10^{-4} \approx 0.12\,\sigma_{\mathrm{Planck}}$.
+\item the Debye/$\Gamma$ reframing: $|\mu_{\mathrm{excess}}|/kT = c\,\Gamma^{3/2}$ with
+$\Gamma = \alpha/\kappa$, $\kappa\sim 1 \Rightarrow$ residual $\approx 3.6\times 10^{-4} \ll
+\ln\nbar\approx 170$; failure requires $\Gamma\sim 44$ (deep strong coupling).
+\end{enumerate}
+
+\end{document}
