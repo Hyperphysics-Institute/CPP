@@ -84,6 +84,35 @@ state ⇒ relaxation (H-theorem) to the indistinguishable Gibbs state ⇒ p = 2 
   the bath clause." Whether this clears the bar to call leg 1 "derived" (and promote n_s) is a panel
   judgement.
 
+## Panel consensus (Patch 0775)
+
+All three reviewers endorse leg 1 as **derived to leading order** (the panel's shorthand for LEMMA-NS-ZRP-DERIVE is "LEMMA-NS-ZRP"):
+
+- **ChatGPT — CONFIRM-WITH-CALIBRATION.** All three property-derivations hold at leading order (symmetry the
+  weakest, honestly listed as an input). The 5×10⁻⁴ correction handling is right *in scale*, to be kept as a
+  **model-dependent provisional estimate, not a theorem**. Clears the bar to call leg 1 "derived to leading
+  order from the minimal PCD/ZBW-as-ZRP identification + inflationary homogeneity" — but **not** "derived
+  from A1–A11" (the PCD-compute → symmetric-constant-rate-ZRP mapping is still a minimal-model reduction).
+  Endorsed registration language: *"LEMMA-NS-ZRP identifies the leading-order ZBW occupation dynamics with a
+  symmetric constant-rate zero-range process. Given A1, per-CP PCD updates, vertex-transitive 600-cell
+  geometry, and inflationary homogeneity, the stationary measure is product-Poisson and the tilt log
+  follows. SSV corrections enter at O(α), giving an estimated Δn_s ~ 5×10⁻⁴. Thus leg 1 is derived to
+  leading order, with residual uncertainty in the exact SSV correction and the homogeneity assumption."*
+- **Grok — endorse.** All three derivations hold with no hidden assumptions; correction correctly treated as
+  bounded theory uncertainty (not a free parameter); leg 1 derived to leading order, meeting the
+  conditional/grounded zero-new-axiom standard for registration.
+- **Copilot — endorse.** Leg 2 correctly grounded (DP-Sea, not bespoke; √n̄ de-risked and confined); the
+  PCD→ZRP reduction is a real derivation, not a modelling whim; leg 1 derived to leading order. Suggested
+  status tag: *"Derived to leading order from A1+PCD+600-cell+DP Sea, conditional on homogeneous inflation
+  and sub-Planck SSV corrections."*
+
+**Consensus status (adopted into PRED-O-33):** n_s = 0.9649 ± ~0.0005(theory), α_s ≈ −2/N_*² ≈ −0.0006 — a
+conditional/grounded zero-new-axiom prediction with **leg 1 derived to leading order** (PCD/ZBW-as-ZRP +
+inflationary homogeneity) and **leg 2 grounded** (DP-Sea neutrality). Remaining residuals (panel-agreed):
+(i) the PCD-compute → ZRP reduction is a minimal-model step (not yet A1–A11); (ii) inflationary
+homogeneity/isotropy is an epoch input; (iii) the exact O(α) SSV-correction coefficient is model-dependent.
+The 5×10⁻⁴ is a provisional model-error estimate, not a final uncertainty.
+
 ## Pointers
 
 - Builds on: 0772 (H-theorem given the ZRP); the PCD definition + 600-cell (z=12, 2I) + A1 (`master_glossary.md`);
