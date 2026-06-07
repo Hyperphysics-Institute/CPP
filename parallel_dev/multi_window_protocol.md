@@ -115,3 +115,54 @@ Integrator: apply worker patches in board order (pull/am/push; --3way on stale b
 Integrator: apply ONE batched registry-integration patch
 Integrator: bash parallel_dev/scripts/collision_audit.sh <base_ref>  → PASS = GATE 0 for the round
 ```
+
+---
+
+## Operator quickstart (plain language — run a round step by step)
+
+This is the literal click-by-click for the integrator (Thomas). "Window" = one Claude chat. "Git Bash window" = the MINGW64 terminal where every git command is typed.
+
+**Vocabulary, demystified:**
+- **base_ref** = the commit hash that is HEAD *right before* the round starts. You capture it once, write it into the round's block on the lease board, and the audit later uses it to know which commits belong to this round.
+- **owned paths (disjoint)** = the folders/files each window is allowed to write. "Disjoint" just means no two windows share a path — Window 1 writes only inside its theorem's folder, Window 2 only inside *its* theorem's folder, and so on. Because the folders don't overlap, the patches can't collide.
+- **lease line** = the one row you hand a window: its theorem + its patch-number range + its owned paths.
+- **board order** = the top-to-bottom order the rows are listed on the board. Apply patches in that order (it does not have to equal the order they were produced; listed order is what keeps it deterministic).
+
+**Step A — capture base_ref (Git Bash window):**
+```
+cd ~/Documents/GitHub/CPP
+git pull origin main
+git rev-parse HEAD
+```
+Copy the 40-character hash it prints. That is your `base_ref`.
+
+**Step B — write the round on the board.** Open `parallel_dev/lease_board.md`, copy the round template, and fill it in. Example using 100-wide blocks:
+```
+### Round 1 — 2026-06-07 | base_ref: <paste the hash from Step A> | audit: PENDING
+
+| Window | Theorem | Patch-number lease | Owned files / paths (disjoint) | Status |
+|--------|---------|--------------------|--------------------------------|--------|
+| W1 | <theorem 1> | 0800–0899 | <folder for theorem 1 only>    | LEASED |
+| W2 | <theorem 2> | 0900–0999 | <folder for theorem 2 only>    | LEASED |
+| W3 | <theorem 3> | 1000–1099 | <folder for theorem 3 only>    | LEASED |
+| INT | registry integration | 1100 | (the shared registries, batched) | LEASED |
+```
+You (the single writer) save the board. The 100-wide blocks are deliberately generous — collisions are impossible across them.
+
+**Step C — open three windows and hand each its lease line.** In each Claude window: have it boot/clone the repo, then paste its row — e.g. *"You are W1. Theorem: <theorem 1>. Your patch numbers are 0800–0899. You may only create/edit files under <its folder>. Do not touch any shared registry. Clone + grep the registry before registering any ID."* Then work the physics with that window until it hands you a patch file (downloads to `~/Downloads`).
+
+**Step D — apply the worker patches in board order (Git Bash window), one at a time:**
+```
+cd ~/Documents/GitHub/CPP && git pull origin main && git am ~/Downloads/<W1-patch> && git push origin main
+```
+Repeat for W2's patch, then W3's. If one fails with a context error on a clean tree, it was built on a stale base — re-run that one line with `git am --3way ~/Downloads/<file>`.
+
+**Step E — apply ONE integration patch** that carries all the round's shared-registry updates (theorem-registry, predictions, frontier_sectors, etc.). Same apply line, the `INT` patch. This is the only commit allowed to touch the shared files, so they can't collide.
+
+**Step F — audit (Git Bash window):**
+```
+bash parallel_dev/scripts/collision_audit.sh <base_ref>
+```
+(`bash` = run this script; the path = where the script lives; `<base_ref>` = the hash from Step A.) It prints PASS or FAIL per check and a final verdict. PASS = the round met GATE 0. Record PASS/FAIL on the board and clear the round.
+
+**If you want a no-stakes rehearsal first:** run one round where the three "theorems" are throwaway notes (each window creates one file under `parallel_dev/dryrun/wN/`), apply, and audit. You'll see PASS end-to-end and learn the mechanics before spending real physics on it.

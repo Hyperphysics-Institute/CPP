@@ -32,7 +32,7 @@ fi
 
 # Files that are SHARED by design — an integration commit may touch these, so
 # they are excluded from the worker-file collision check.
-SHARED_REGEX='^(theorem-registry\.md|predictions\.md|axiom-registry\.md|master_glossary\.md|research_frontier\.md|frontier_sectors/|todolist\.md|future_projects\.md|paper_catalog\.md|research_timeline\.md|organizational_frontier\.md|parallel_dev/lease_board\.md)'
+SHARED_REGEX='^(theorem-registry\.md|predictions\.md|axiom-registry\.md|master_glossary\.md|research_frontier\.md|frontier_sectors/|todolist\.md|future_projects\.md|paper_catalog\.md|research_timeline\.md|organizational_frontier\.md|theory-overview\.md|programme_orientation\.md|README\.md|INDEX\.md|parallel_dev/lease_board\.md)'
 
 COMMITS=$(git rev-list --reverse "${BASE}..HEAD")
 if [ -z "$COMMITS" ]; then
