@@ -271,7 +271,7 @@ DP Sea polarization, composition, vacuum energy.
 | `reasoning/0781…`, `0783…` | Per-patch Tier-4 reasoning fragments. |
 
 **Predictions:** PRED-C-96 ($n_s$, §1), PRED-O-34 ($\alpha_s$, §2). **No THEO.** Open residual: OPEN-EU-1.
-**Doc-suite:** changelog shipped; 7 narrative companion files pending (Phase 7A-ii).
+**Doc-suite:** full suite shipped (Patch 0789) — changelog + development + reviews + keywords + transcript + mechanism + phenomena + philosophy + glossary + verification + osf-deposit. OSF upload pending (metadata prepared).
 
 ### [`series_phenomena/cosmology/dark_matter/`](series_phenomena/cosmology/dark_matter/) — gated conjecture
 

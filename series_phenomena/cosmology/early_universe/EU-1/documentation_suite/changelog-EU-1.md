@@ -36,9 +36,11 @@ A1–A11. O(α) theory uncertainty ~5×10⁻⁴ (~0.12 σ_Planck). Deeper residu
 (stdlib-only; reproduces n_s, α_s, N_* bookkeeping, ideal-ZRP slope→p=2, O(α) correction table,
 Debye Γ-reframing; ALL PASS).
 
+- **0789 (Phase 7A-ii)** — full narrative documentation suite shipped: development, reviews, keywords, transcript (Pass 1) + mechanism, phenomena, philosophy, glossary, verification, osf-deposit (Pass 2); master_glossary EU-1 terms added (deferred 7B C4). 10 companion files in `documentation_suite/`.
+
 ### Pending (Phase 7 remainder)
-- 7A-ii: the 7 narrative companion files (development / glossary / mechanism / phenomena /
-  philosophy / reviews / keywords), formal verification-notebook doc, dev-transcript, OSF deposit record.
+- 7A-ii: DONE (Patch 0789).
+- OSF deposit: metadata prepared (`documentation_suite/osf-deposit-EU-1.md`); awaiting Thomas's upload + DOI mint-back.
 - 7B: programme-register propagation (paper_catalog.md, theory-overview, master_glossary, etc.;
   predictions.md prose status-line wording sync). predictions.md PRED-C-96/PRED-O-34 already stand.
 - 7C: final commit + verification pass.

@@ -139,7 +139,7 @@ Empirical-phenomenon derivations (home of record, any maturity). See [`series_ph
 |----|------|-------|------|--------|
 | **EU-1** | Paper | The Primordial Scalar Spectral Index from Substrate Inflation ($n_s = 1 - 2/N_* \approx 0.9649$, zero-new-axiom) | `series_phenomena/cosmology/early_universe/EU-1/EU-1_primordial_spectral_index.tex` (v1.0) | **v1.0 SHIPPED** (6 Jun 2026, Session 155 Patches 0781–0784; 3/3 panel SHIP ChatGPT/Grok/Copilot; first cosmology-sector paper to ship). Predictions PRED-C-96 ($n_s$) + PRED-O-34 ($\alpha_s$); **NO THEO** (framework-conditional). Open residual OPEN-EU-1. Phase 7A-i done (changelog/bib/INDEX/series-README); 7A-ii (7 narrative companion files) + OSF pending. |
 
-**Documentation:** `documentation_suite/changelog-EU-1.md` (v0.1→v1.0); `review/EU-1_review_package_v1.0.md` + `review/reviews-EU-1.md` (3/3 SHIP). 7 narrative companion files (development/glossary/mechanism/phenomena/philosophy/reviews/keywords) pending Phase 7A-ii. Verification: `scripts/0781_eu1_numerics.py` (ALL PASS).
+**Documentation:** `documentation_suite/changelog-EU-1.md` (v0.1→v1.0); `review/EU-1_review_package_v1.0.md` + `review/reviews-EU-1.md` (3/3 SHIP). Full narrative documentation suite shipped Phase 7A-ii (Patch 0789): development/glossary/mechanism/phenomena/philosophy/reviews/keywords + verification + osf-deposit. Verification: `scripts/0781_eu1_numerics.py` (ALL PASS).
 
 ---
 
