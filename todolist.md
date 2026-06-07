@@ -10,6 +10,7 @@
 
 - **`future_projects.md`** — registered active projects with full mechanism / falsifier / companion fields. Multi-session work with a clear deliverable. SS-9 anthology chapter (A.3) and TATWD integration (A.4) live there, not here.
 - **`research_frontier.md`** — last-updated session-by-session log of the programme's frontier state. Programme-level open problems and their status.
+- **`parallel_development_roadmap.md`** — the phased roadmap + to-do for scaling CPP from solo to a collision-resistant parallel theorem-development team (coherence layer, integrity subsystem, Claude Code agentic pilot, escalation triggers). The living plan for the team-scaling initiative; this todolist tracks only its small carried-over items.
 - **`session_logs/`** — per-session entries capturing what happened.
 - **`todolist.md`** (this file) — *small carried-over items, deferred protocol steps, hygiene gaps*. Kept short on purpose. If an entry here grows beyond a few patches of work, promote it to `future_projects.md`.
 
