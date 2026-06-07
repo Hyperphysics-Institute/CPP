@@ -556,6 +556,29 @@ to reviewers their legitimacy.
 - [ ] **H5.** Confirm no stale references in `README.md` or `INDEX.md`
   (old paper counts, broken links, retired filenames).
 
+- [ ] **H6. End-of-sequence completion audit (mechanical).** Run
+  `bash scripts/publication_audit.sh <PAPER-ID>` from the repo root and
+  confirm **PUBLICATION AUDIT: PASS**. H1–H5 are *content* checks done by
+  reading (does the number match, is there placeholder text); H6 is the
+  *presence/completeness* backstop done by grep — it verifies the paper ID
+  actually landed in every mandated 7A/7B artifact (`predictions.md`,
+  `paper_catalog.md`, `theory-overview.md`, `programme_orientation.md`,
+  `README.md`, `INDEX.md`, the documentation suite, plus advisories) and
+  that the paper's verification script runs clean (and `pdflatex` compiles
+  where available). A checklist catches *intended* steps; this catches
+  *dropped* ones. Resolve every `[FAIL]`; review each `[warn]` advisory
+  (anthology chapter / problem history / glossary / bibliography fire only
+  for papers that need them). **Rationale (added 7 June 2026, after EU-1):**
+  the EU-1 SHIP found two mandated 7B items had silently dropped despite the
+  checklist being followed — C1 (`theory-overview.md`) had received only a
+  header note rather than body integration, and C10 (`programme_orientation.md`)
+  had been mis-marked "N/A" off a stale filename. Both are exactly the kind
+  of omission a per-step checklist cannot catch and a mechanical sweep can.
+  This audit is **distinct from** `parallel_dev/scripts/collision_audit.sh`:
+  that audits a parallel *round* for *collisions* (windows overlapping);
+  this audits a single paper SHIP for *omissions* (mandated integration that
+  dropped out). Complementary, not overlapping.
+
 ---
 
 ## Completion criterion
@@ -567,7 +590,8 @@ affected by the revision; the full suite does not need re-execution
 unless mechanism or main claims change.
 
 **Estimated effort:** 1 full session (~3–5 hours) for A–G with a
-prepared paper. Section H is ~30 minutes.
+prepared paper. Section H is ~30 minutes (H6 mechanical audit runs in
+seconds and should PASS if A–G were done; a FAIL means an item dropped).
 
 **Failure modes and recovery:**
 - Numerical mismatch between companion file and paper: the paper is the
