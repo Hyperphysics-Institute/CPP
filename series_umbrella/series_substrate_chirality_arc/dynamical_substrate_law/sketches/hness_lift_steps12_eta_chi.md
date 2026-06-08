@@ -6,6 +6,10 @@
 **Verify:** `code/0813_eta_symmetric_chi.py` (600-cell build; η; symmetric χ; robustness sweep).
 **Type:** infrastructure computation. The chirality **verdict is not moved here** (DG-3); its implication is handed to the chirality review.
 
+> **CORRECTION BANNER (Patch 0815, 8 June 2026, per chirality-lane review 0904).** Two fixes to the framing below, neither changing the computed numbers:
+> 1. **Inverted label.** μ² > 0 / V3 = chirality **primitive/inherited** (the engine is handedness-*neutral* — the *unbroken* branch), **not** "emergent." The emergent/engine-generated outcome is the μ² < 0 condensation branch (V3→V1) we are *not* on. The original "chirality emergent at the engine level" wording (and the 0813/0814 commit subjects) is **retracted/inverted**; the corrected reading is below.
+> 2. **§14.17 gate NOT lifted.** The finite-positive χ follows near-tautologically from the **product (off-critical) base** that was *assumed*; the decisive question — is the *actual* η-field measure off-critical? — is exactly the §14.17 content and remains **open**. This is a *conditional confirmation* of the already-standing V3/primitive picture, not a derivation. (My own Patch 0814 reinforces this: the real Mechanism-A NESS departs from the clean product base, skewed at O(δ).) Conditions (1)–(2) are the live chirality-lane gate; the V1 door stays open by design.
+
 ---
 
 ## Step 1 — η on the 600-cell
@@ -30,7 +34,7 @@ So the symmetric susceptibility is **finite and positive — off-critical.** The
 
 The finite-vs-critical fork was the cheapest decisive sub-result, and it came out **finite**. Per the scoping framework (0694 §4, `χ_η⁻¹ = 2μ²`):
 
-- **Chirality (implication handed to the review, DG-3 — not asserted here).** A finite-positive symmetric χ_η means `χ_η⁻¹ = 2μ² > 0`, i.e. **μ² > 0 → η = 0 stable → no chiral vacuum → V3 stands by principle** (chirality emergent at the engine level, not merely at determination). Because the symmetric part is **non-marginal**, the O(δ³) current (step 3) can only *perturb* μ², not flip its sign — so V3 is not at risk from the current. This would close the deep chirality engine question favorably. **That verdict move belongs to the chirality lane's swarm review; this patch only supplies the infrastructure computation and its implication.**
+- **Chirality (implication handed to the review, DG-3 — not asserted here).** A finite-positive symmetric χ_η means `χ_η⁻¹ = 2μ² > 0`, i.e. **μ² > 0 → η = 0 stable → no chiral vacuum → V3 stands by principle.** **[FRAMING CORRECTED — see banner; per chirality-lane review 0904.]** μ² > 0 is the **unbroken/symmetric** branch: the engine does **not** condense a net handedness — it is handedness-*neutral* — so handedness remains a **primitive input (FI-C-9)**. V3 = chirality **primitive/inherited**; the *emergent* (engine-generated) outcome would have been the μ² < 0 / V3→V1 condensation branch, which this computation says we are **not** on. (The original wording here — "chirality emergent at the engine level" — was **inverted** and is retracted.) Because the symmetric part is non-marginal, the O(δ³) current (step 3) can only perturb μ², not flip its sign. **This conditionally *confirms* the standing V3/primitive picture (already fixed by MERGE-2 → FI-C-9); it does not derive chirality and does not lift the §14.17 gate** (see banner). The verdict move belongs to the chirality review.
 - **DM-2 (mine).** No criticality in the symmetric base, plus the symmetric measure carrying no skew (0810), confirms **clean horizon-only Λ on the favorable branch.** The O(δ³) current's possible skew contribution is the separate, divergence-free residual that 0810 already isolated and bounded.
 
 So both sectors land favorably from one computation, as the scoping pass anticipated.

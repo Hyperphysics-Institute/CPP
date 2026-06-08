@@ -5,6 +5,8 @@
 **Verify:** `scripts/0814_step3_residual.py` (Mechanism-A NESS skew scaling on the 600-cell).
 **Grade:** quantitative result; refines (b). Clean Λ survives, on a corrected footing. No verdict change.
 
+> **Note (Patch 0815, per chirality-lane review 0904).** This patch's "clean Λ" inherits the same conditionality the review pinned for the chirality side: it rests on the η-field measure being **off-critical**, which 0813 *assumed* (the product base) rather than derived — that off-criticality is the §14.17 content and is **open**. So DM-2's clean horizon-only Λ is **conditional on §14.17**, not settled, and should not be over-read. (Unrelated to the chirality emergent/primitive label fix, which does not affect the DM-2 physics — clean Λ depends on off-criticality, not on that label.)
+
 ---
 
 ## What step 3 was for
