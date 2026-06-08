@@ -57,6 +57,7 @@
 | 0694 | Session 153 — construct + validate the Mechanism-A NESS stationary measure (Priority-1 setup) |
 | **1100** | *[parallel Round 1, W1]* η-susceptibility symmetric-part form: χ_sym = N/m² (zero-mode dominated) ⇒ sign(μ²) = sign(m²); bottoms out at the (H-NESS) gap — no verdict move |
 | **0902** | *[this file]* arc patch index created; **arc continues in the 09xx block from 0903** |
+| **0903** | **DETERMINATION ARC CLOSED AT CURRENT RIGOR** — consolidation capstone (`chirality_determination_closure.md`): emergent to one primitive FI-C-9 + T-arrow; V3/W3; V2/W2 axiom-excluded; residual unified to OPEN-SM-4 by CPT. Deep V3→V1 (1d-β-ii, §14.17-gated) stays open. No new claim; count unchanged. |
 
 ## Continuity note
 

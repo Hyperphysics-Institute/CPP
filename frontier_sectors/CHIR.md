@@ -45,6 +45,8 @@ W3 by THEO-CHIR-TARROW-1 (**review-closed 3/3, v1.1, Patch 0661**); the full chi
 **review-hardened end to end** on both the spatial — V3→V1 — and temporal — W3→W1 — sides, unified by a
 single CPT-linked cross-sector reopener.)
 
+**DETERMINATION ARC CONSOLIDATED & CLOSED AT CURRENT RIGOR (Patch 0903)** — see `chirality_derivations/chirality_determination_closure.md`. The primitive/emergent *status* question is answered and consolidated: chirality is emergent down to one currently-identified irreducible primitive (FI-C-9) + the T-arrow `sign(δ)`; spatial **V3**, temporal **W3**; **V2 and W2 both excluded at the axiom level**; and by CPT the sole remaining sign-reopener (spatial V2 / temporal W2) is a single cross-sector object — the SM CP/T phase, **OPEN-SM-4**. This closes the *determination* (status) arc only. It does **NOT** close the deep **V3→V1 / W3→W1** derivation (OPEN-CHIR-1d-β's 1d-β-ii + its temporal counterpart), which stays OPEN and is **gated on the F.1 §14.17 effective action** (where the Patch-1100 NESS/μ² route bottoms out). Consolidation of the 3/3-closed MERGE-2/STATUS-1/STATUS-2/TARROW-1 — no new claim, no review cycle required; **header count UNCHANGED; OPEN-CHIR-1d-β and OPEN-SM-4 stay OPEN.**
+
 ---
 
 ### THEO-CHIR-AUDIT-1 → CHIR audit RESOLVED: chirality entry-point enumeration
