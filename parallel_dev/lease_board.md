@@ -47,13 +47,15 @@ Audit: `bash parallel_dev/scripts/collision_audit.sh <base_ref>` → record PASS
 
 Audit: PASS — 0 worker-file collisions, 0 duplicate patch numbers, 0 duplicate IDs, tree clean.
 ```
-### Round 0 (DRY RUN) — 2026-06-07 | base_ref: a585a3d | audit: PENDING
+### Round 0 (DRY RUN) — 2026-06-07 | base_ref: a585a3d | audit: PASS — LEASE CLOSED
+
+Completed 7 Jun 2026 (markers applied 0800/0900/1000, removed in 0801; audited PASS). **Lease closed 8 Jun 2026; all reserved ranges released for reuse** — 08xx, 09xx, 10xx are FREE (only 0800/0801/0900/1000 consumed historically). Going forward: DM arc → 08xx (from 0802), chirality arc → 09xx (from 0902).
 
 | Window | Theorem/task | Patch-number lease | Owned files / paths | Status |
 |--------|--------------|--------------------|---------------------|--------|
-| W1 | dry-run marker | 0800–0899 | parallel_dev/dryrun/w1/ | LEASED |
-| W2 | dry-run marker | 0900–0999 | parallel_dev/dryrun/w2/ | LEASED |
-| W3 | dry-run marker | 1000–1099 | parallel_dev/dryrun/w3/ | LEASED |
+| W1 | dry-run marker | (released) | parallel_dev/dryrun/w1/ | DONE |
+| W2 | dry-run marker | (released) | parallel_dev/dryrun/w2/ | DONE |
+| W3 | dry-run marker | (released) | parallel_dev/dryrun/w3/ | DONE |
 ---
 
 ## Live rounds

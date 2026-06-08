@@ -38,6 +38,17 @@ This single presentation block is separate from the apply-and-push patch block (
 this block hands it to the swarm). Registered 5 Jun 2026 Session 154; **updated 6 Jun 2026 Session 154 to
 the single-block format at Thomas's request** (previously three separate elements).
 
+### CONV-002 — Re-fetch high-risk shared files immediately before committing to them
+
+Before committing any change to a **high-risk shared file**, re-fetch origin and re-read that file's current content, then build the edit on the latest version — never on a copy read earlier in the session. This is the lightweight collision-prevention discipline; for routine solo / few-window work it replaces the heavier post-hoc `collision_audit.sh` pass. High-risk files are the ones multiple work-streams touch, so a stale read is the main way concurrent work clobbers.
+
+Procedure (committer, per high-risk file touched):
+1. `git fetch origin && git reset --hard origin/main` (or re-clone) so the working tree matches the latest origin.
+2. Re-open and re-read the target file; rebuild the intended edit against its current content.
+3. Commit and push. If origin moved again between read and push, repeat.
+
+High-risk shared files = the integration-owned list in `parallel_dev/scripts/collision_audit.sh` (`SHARED_REGEX`): `theorem-registry.md`, `predictions.md`, `axiom-registry.md`, `master_glossary.md`, `research_frontier.md`, `frontier_sectors/*`, `todolist.md`, `future_projects.md`, `paper_catalog.md`, `research_timeline.md`, `organizational_frontier.md`, `theory-overview.md`, `programme_orientation.md`, `README.md`, `INDEX.md`, `parallel_dev/lease_board.md`. The single source of truth for this list is that `SHARED_REGEX` — update it there, not here. Files inside a paper's own folder are low-risk and exempt. Registered 8 Jun 2026 Session 154.
+
 ---
 
 ## P1 — Must clear before next paper (SS-10)
