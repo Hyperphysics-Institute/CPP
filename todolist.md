@@ -232,6 +232,17 @@ The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_r
 **Estimated effort:** 1–2 patches (an audit + a c05/c02 CHANGELOG framing bump); no new physics required for the restatement, though step (3) may surface a real open question worth its own registry entry.
 **Registered:** 31 May 2026 Session 149 Patch 0702 (surfaced during the DM-arc Step-0 GR-foundation check).
 
+### TODO-015 — c08 Open Problem 1 (full nonlinear strong-field Einstein equivalence): standing deep target, NOT blocking DM-2
+**Added:** 8 June 2026, Session 156, Patch 0808. **Priority:** P2 (does NOT block the DM-2 / Sea-gravitation arc — see resolution below).
+
+**The problem.** c08 (`c08_strong-field_GR.tex`, Open Problem 1) leaves open whether the full nonlinear feedback term 𝓕 in the CPP field equation reproduces the exact Einstein tensor `G_μν` in the **strong-field** regime — i.e. whether `box(Δ|SSV|) + 𝓕 = G_μν u^μ u^ν` for all spacetimes, or a counterexample exists. c08's weak-field reduction to linearised GR and the exact Schwarzschild solution are proved; the full nonlinear equivalence is the stated central unsolved problem of that paper. This is a genuinely deep target (effectively: derive GR's full nonlinear structure from the substrate).
+
+**Why it is NOT on the DM-2 critical path (resolved, Patches 0805–0806).** The DM-2 Step-1 audit initially tied D2 (ground-state exclusion) to this problem. Step 1 (0805) showed the coupling is separable, and Step 2(a) (0806) closed it: gravitation is **gradient-controlled, not amplitude-controlled** — 𝓕 = [bounded amplitude factor] × [gradient² factor], so the uniform Sea's O(1) absolute SSV sources ~0 (small gradient) and never exercises the strong-**amplitude** nonlinearity OP1 is about. The only large-gradient sources are sub-Planck localized excesses, weak-field by `(m/m_P)² ~ 10⁻³⁹`. So DM-2 proceeds in full **without** OP1; it does not wait on this item. See `series_phenomena/cosmology/sea_gravitation/dm2_step2a_zbw_bound.md`.
+
+**Status / scheduling.** Standing deep target ("in its time"). Belongs to the SR companion-paper set (c01–c22) and is adjacent to the c08 Kerr and discrete-to-continuum open problems. Candidate for promotion to `future_projects.md` if/when pursued as its own arc. Not to be confused with DM-2's net-broadcast lemma (a separate, local, weak-field question).
+
+**Registered:** 8 June 2026 Session 156 Patch 0808 (surfaced and then de-risked during the DM-2 Step-0/1/2a audit).
+
 
 ## Cleared items (history)
 
