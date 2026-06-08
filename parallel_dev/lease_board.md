@@ -47,11 +47,24 @@ Audit: `bash parallel_dev/scripts/collision_audit.sh <base_ref>` → record PASS
 
 Audit: PASS — 0 worker-file collisions, 0 duplicate patch numbers, 0 duplicate IDs, tree clean.
 ```
+### Round 0 (DRY RUN) — 2026-06-07 | base_ref: a585a3d | audit: PENDING
 
+| Window | Theorem/task | Patch-number lease | Owned files / paths | Status |
+|--------|--------------|--------------------|---------------------|--------|
+| W1 | dry-run marker | 0800–0899 | parallel_dev/dryrun/w1/ | LEASED |
+| W2 | dry-run marker | 0900–0999 | parallel_dev/dryrun/w2/ | LEASED |
+| W3 | dry-run marker | 1000–1099 | parallel_dev/dryrun/w3/ | LEASED |
 ---
 
 ## Live rounds
 
 *(Integrator: add the first real round below once the Phase 0 theorem set is chosen. Pick `base_ref` = current `git rev-parse HEAD` before dispatching windows.)*
 
-<!-- ### Round 1 — <date> | base_ref: <...> | audit: PENDING -->
+### Round 1 — 2026-06-07 | base_ref: <paste hash> | audit: PENDING
+
+| Window | Theorem/task | Patch lease | Owned path (disjoint) | Status |
+|--------|--------------|-------------|------------------------|--------|
+| W1 | μ²-sign → THEO-CHIR-CAPACITY-1 (chirality capacity) | 1100–1199 | series_umbrella/series_substrate_chirality_arc/chirality_derivations/ (new files only) | LEASED |
+| W2 | DM-candidate identification sub-lemma (σ/m + coldness consolidation) | 1200–1299 | series_phenomena/cosmology/dark_matter/ (new files only) | LEASED |
+| W3 | OPEN-EU-1 leg-2: DP-pair neutrality grounded→derived attempt | 1300–1399 | series_phenomena/cosmology/early_universe/ (new files only) | LEASED |
+| INT | registry/frontier integration (batched) | 1400 | theorem-registry.md, frontier_sectors/CHIR.md, frontier_sectors/SR.md, lease_board.md | LEASED |
