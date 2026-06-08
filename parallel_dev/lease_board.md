@@ -60,11 +60,13 @@ Audit: PASS — 0 worker-file collisions, 0 duplicate patch numbers, 0 duplicate
 
 *(Integrator: add the first real round below once the Phase 0 theorem set is chosen. Pick `base_ref` = current `git rev-parse HEAD` before dispatching windows.)*
 
-### Round 1 — 2026-06-07 | base_ref: <paste hash> | audit: PENDING
+### Round 1 — 2026-06-08 | base_ref: 0643509 | audit: PASS (3 worker commits; Checks 1/2/4 PASS; 2 benign Check-3 WARNs — PRED-C-96 cross-ref + "no-THEO-for-conditional" phrase, both non-collisions)
 
 | Window | Theorem/task | Patch lease | Owned path (disjoint) | Status |
 |--------|--------------|-------------|------------------------|--------|
-| W1 | μ²-sign → THEO-CHIR-CAPACITY-1 (chirality capacity) | 1100–1199 | series_umbrella/series_substrate_chirality_arc/chirality_derivations/ (new files only) | LEASED |
-| W2 | DM-candidate identification sub-lemma (σ/m + coldness consolidation) | 1200–1299 | series_phenomena/cosmology/dark_matter/ (new files only) | LEASED |
-| W3 | OPEN-EU-1 leg-2: DP-pair neutrality grounded→derived attempt | 1300–1399 | series_phenomena/cosmology/early_universe/ (new files only) | LEASED |
-| INT | registry/frontier integration (batched) | 1400 | theorem-registry.md, frontier_sectors/CHIR.md, frontier_sectors/SR.md, lease_board.md | LEASED |
+| W1 | μ²-sign → THEO-CHIR-CAPACITY-1 (chirality capacity) | 1100 (of 1100–1199) | series_umbrella/series_substrate_chirality_arc/chirality_derivations/ | DONE — escalated: sign(μ²)=sign(m²), bottoms out at (H-NESS); no verdict move |
+| W2 | DM-candidate consistency consolidation (σ/m + coldness) | 1200 (of 1200–1299) | series_phenomena/cosmology/dark_matter/ | DONE — LEMMA-DM-CONSIST-1 consistency-grade (confirmed); no count change |
+| W3 | OPEN-EU-1 leg-2: DP-pair neutrality derivation attempt | 1300 (of 1300–1399) | series_phenomena/cosmology/early_universe/ | DONE — closed-S³ route; THEO-EU-NEUTRAL + LEMMA-EU-NEUTRAL-GAUSS PROPOSED, pending swarm panel |
+| INT | registry/frontier integration (batched) | 1400 | frontier_sectors/CHIR.md, frontier_sectors/SR.md, lease_board.md (theorem-registry.md NOT touched — both lemmas are frontier-tracked / pending-panel) | DONE |
+
+Outcome: GATE 0 PASS for the worker phase. Two clean escalations (W1 → H-NESS, W3 → swarm panel) + one consistency-grade consolidation (W2) — the intended triage shape. Pending Thomas/panel: W3 THEO-EU-NEUTRAL + LEMMA-EU-NEUTRAL-GAUSS swarm review.
