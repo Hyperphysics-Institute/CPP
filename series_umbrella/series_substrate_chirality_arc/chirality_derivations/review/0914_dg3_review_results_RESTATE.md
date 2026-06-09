@@ -1,8 +1,8 @@
 # DG-3 review results — THEO-CHIR-CAPACITY-1: **RESTATE** (not a pass); verdict NOT enacted
 
 **Location:** `series_umbrella/series_substrate_chirality_arc/chirality_derivations/review/0914_dg3_review_results_RESTATE.md`
-**Patch:** 0914 · **Reviews adjudicated:** ChatGPT (complete), Copilot (complete), Grok (PENDING — not received; only a placeholder came through).
-**Disposition:** Pass criterion (3/3 CONFIRM, no unresolved falsifier) **NOT met** — two complete reviews both returned **RESTATE**. **THEO-CHIR-CAPACITY-1 is NOT enacted.** V3/W3 stand; CAPACITY-1 reserved; OPEN-CHIR-1d-β stays OPEN; prediction count unchanged; conditional on Mechanism A.
+**Patch:** 0914 (Grok added by Patch 0915) · **Reviews adjudicated:** ChatGPT (RESTATE), Copilot (RESTATE), Grok (CONFIRM).
+**Disposition:** Pass criterion (3/3 CONFIRM, no unresolved falsifier) **NOT met** — final tally **1 CONFIRM / 2 RESTATE**, with the two RESTATEs converging on the **same unresolved Q1 falsifier**. Grok's lone CONFIRM does not rebut it (see Grok note below). **THEO-CHIR-CAPACITY-1 is NOT enacted.** V3/W3 stand; CAPACITY-1 reserved; OPEN-CHIR-1d-β stays OPEN; prediction count unchanged; conditional on Mechanism A.
 
 ---
 
@@ -12,9 +12,13 @@
 |---|---|---|---|---|---|---|
 | ChatGPT | FALSIFY | FALSIFY | FALSIFY | FALSIFY | CONFIRM | **RESTATE** |
 | Copilot | FALSIFY | CONFIRM | CONFIRM | CONFIRM | CONFIRM | **RESTATE** |
-| Grok | — | — | — | — | — | PENDING |
+| Grok | CONFIRM | CONFIRM | CONFIRM | CONFIRM | CONFIRM | **CONFIRM** |
 
-Both completed reviewers land their *overall* on the **same** issue: **Q1 — the universality of C1.** That convergence is the signal.
+Both completed *RESTATE* reviewers (ChatGPT, Copilot) land their overall on the **same** issue: **Q1 — the universality of C1.** That convergence is the signal. Grok confirmed all five (added 0915 — see note).
+
+### Grok note (added 0915): why the lone CONFIRM does not change the disposition
+
+Grok returned CONFIRM on all five and "THEO-CHIR-CAPACITY-1 therefore passes." It is a genuine review, and Grok states it hunted for falsifiers (hidden non-local η, non-perturbative current, wrong K_c, inversion, over-claim). But on **Q1** Grok's reasoning — *"no admissible non-local or more-local η survives the measured correlator"* — rests on the nn-only correlator showing the **tested** η is local; it does **not** engage the specific gap the two RESTATEs raise, namely that the mode family `{m=4,6,8,12}×3` is a **sample** and is not shown to **exhaust** the admissible local-η space. Grok also notes it took C1–C3 "exactly as presented … with the explicit numbers you supplied" — i.e. it accepted the package's universal phrasing rather than testing the sample-vs-complete distinction. So Grok's CONFIRM **asserts** what ChatGPT/Copilot **dispute**; it does not discharge their falsifier. A 1-CONFIRM / 2-RESTATE split, in which the dissents are the more penetrating reviews and converge on a genuine load-bearing point, is **not** a pass under the 3/3 criterion, and Grok's "passes" verdict does not move it. (Tellingly, Path A — the eigenmode-completeness / λ_max≤12 closure — is precisely the rigorous form of Grok's intuition: it would convert "no admissible η survives" from an assertion into a proof, and is the route that turns this into a real 3/3.)
 
 ## 1. The central, convergent falsifier (Q1) — genuine, and it is the η-identity spot
 
@@ -46,7 +50,7 @@ Both reviewers CONFIRM **Q5** (scope/honesty: Mechanism-A conditionality, no-der
 ## 6. Disposition + next steps
 
 - **No verdict moved.** CAPACITY-1 NOT enacted. V3/W3 stand; OPEN-CHIR-1d-β OPEN; count unchanged.
-- **Collect Grok's review** (the body did not come through). It cannot turn RESTATE→PASS (two reviewers already RESTATE), but may surface a distinct falsifier to fold in.
+- **All three reviews are now in (1 CONFIRM / 2 RESTATE).** Grok's CONFIRM does not discharge the convergent Q1 falsifier (above); the split is not a pass.
 - **Thomas's call: Path A vs Path B.** Path A → hand the eigenmode-completeness / λ_max-bound closure to the F.1 window to formalize; if it holds, reframe C1 and re-review. Path B → restate to the local-η regime now.
 - **Then:** rebuild the package with the §2/§3/§4 fixes + the chosen Path, re-fire to the swarm (3/3 CONFIRM remains the bar). The §2–§4 fixes apply on **either** path.
 
