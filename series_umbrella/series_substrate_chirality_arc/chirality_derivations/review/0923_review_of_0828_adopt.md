@@ -1,7 +1,7 @@
 # Chirality-lane review of 0828 (Path-A repair): **bound verified sound — ADOPTED. Re-fire now warranted (pointwise framing).**
 
 **Location:** `series_umbrella/series_substrate_chirality_arc/chirality_derivations/review/0923_review_of_0828_adopt.md`
-**Patch:** 0923 · **Type:** chirality-lane review/adoption of the F.1 repair 0828 (which corrects 0827 per 0922). **Verify:** refined-chord bound re-derived analytically + stress-tested independently.
+**Patch:** 0923 · **Type:** chirality-lane review/adoption of the F.1 repair 0828 (which corrects 0827 per 0922). **Verify:** refined-chord bound re-derived analytically + stress-tested independently. Script (added Patch 0929): `chirality_derivations/code/0923_refined_chord_bound_verification.py`.
 **Disposition:** 0828's refined-chord quadratic-form bound is **rigorous and correct** (independently verified); the false `max=avg` lemma is properly retired; the residual is correctly located. **The math (the `ρ<1` bound) is now CLOSED.** **Adopted.** Re-fire of CAPACITY-1 is now warranted, with C1's admissibility stated **pointwise** and the one remaining physical input surfaced explicitly. No verdict moved; V3/W3 stand; CAPACITY-1 reserved until the re-fire returns 3/3.
 
 ---

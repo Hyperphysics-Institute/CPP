@@ -1,7 +1,7 @@
 # Chirality-lane review of 0827 (Path-A weight-concentration closure): **conclusion survives, but the proof has a real gap — do NOT re-fire as written**
 
 **Location:** `series_umbrella/series_substrate_chirality_arc/chirality_derivations/review/0922_review_of_0827_pathA.md`
-**Patch:** 0922 · **Type:** chirality-lane review/assessment of the F.1 result 0827 (verdict + DG-3 + CAPACITY-1 are chirality-lane). **Verify:** independently re-derived; counterexample + fix reproduced on the real 600-cell.
+**Patch:** 0922 · **Type:** chirality-lane review/assessment of the F.1 result 0827 (verdict + DG-3 + CAPACITY-1 are chirality-lane). **Verify:** independently re-derived; counterexample + fix reproduced on the real 600-cell. Script (added Patch 0929): `chirality_derivations/code/0922_nhat_concentration_counterexample.py`.
 **Disposition:** 0827's **conclusion** (Path A closes; η-identity dissolved for the verdict; outcome 1, PCD not called) is **very likely correct**, but its **load-bearing argument is falsified by an explicit counterexample**, and its stated admissibility condition (*mean* / "homogeneous + p>1") is the **wrong** one. The correct condition is a **pointwise** participation floor, under which the closure holds empirically with ≈36% margin — but a clean closing bound is **not yet written**. **Recommendation: do NOT re-fire on 0827 as-is; return to F.1 for the corrected (pointwise) closure.** No verdict moved; V3/W3 stand; CAPACITY-1 reserved.
 
 ---

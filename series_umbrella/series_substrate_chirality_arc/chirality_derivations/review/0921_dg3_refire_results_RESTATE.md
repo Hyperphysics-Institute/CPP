@@ -2,6 +2,8 @@
 
 **Location:** `series_umbrella/series_substrate_chirality_arc/chirality_derivations/review/0921_dg3_refire_results_RESTATE.md`
 **Patch:** 0921 · **Reviews adjudicated:** ChatGPT (RESTATE), Grok (CONFIRM), Copilot (CONFIRM). Re-fire of the 0920 package.
+**Verify (added Patch 0929):** `chirality_derivations/code/0921_weight_concentration_falsifier_check.py` (reproduces the falsifier: equal-weight R(m) defeated by concentration; loose worst case ~1.7 at p=4-5).
+
 **Disposition:** Pass criterion (3/3 CONFIRM, no unresolved falsifier) **NOT met** — tally **2 CONFIRM / 1 RESTATE**. ChatGPT's lone RESTATE lands a **specific, genuine, verified** Q1 falsifier (the weight-concentration gap); the two CONFIRMs **assert** universality over the non-uniform class rather than test the concentrated limit, so they do not discharge it. **THEO-CHIR-CAPACITY-1 is NOT enacted.** V3/W3 stand; CAPACITY-1 reserved; OPEN-CHIR-1d-β stays OPEN; prediction count unchanged; conditional on Mechanism A.
 
 ---
