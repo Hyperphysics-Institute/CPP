@@ -3,6 +3,8 @@
 **Patch:** 0823 (Session 156, 8 June 2026) · **Type:** infrastructure result (chirality residual 3) · **Lane:** F.1 / `dynamical_substrate_law/` (verdict stays chirality-lane / DG-3).
 **Answers:** chirality-lane residual 3 — replace the mean-field `K_c = 1/12` *lower bound* with the true critical coupling, making the primitive margin exact. **Verify:** `code/0823_residual3_true_Kc.py`. **Predecessors:** 0821 (residual 1), 0822 (residual 2).
 
+> **⚠ FORWARD CORRECTION (added Patch 0920, 9 Jun 2026 — does not alter the K_c numbers below).** This note's framing that "a staggered mode … is not a net global handedness (not V1)" is **superseded** by the 0825 threshold reconciliation (`threshold_reconciliation.md`). A staggered / chirality-density-wave order has ⟨η⟩=0 but its two domains are **swapped by the global det-coset ℤ₂ flip**, so it **does** break the ℤ₂ and **is** a genuine V1 channel. The correct treatment is **both channels cleared** (uniform K_c≈0.095 *and* staggered K_c≈0.27 both exceed |K_lift|≈0.053), as stated in 0824/0825 and in the current DG-3 package. The AFM-suppression point below remains valid as *reinforcing* (not load-bearing). Read 0824 + 0825 alongside this file.
+
 ---
 
 ## Result
