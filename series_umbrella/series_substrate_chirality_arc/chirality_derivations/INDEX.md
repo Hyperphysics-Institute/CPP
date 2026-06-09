@@ -58,6 +58,9 @@
 | **1100** | *[parallel Round 1, W1]* η-susceptibility symmetric-part form: χ_sym = N/m² (zero-mode dominated) ⇒ sign(μ²) = sign(m²); bottoms out at the (H-NESS) gap — no verdict move |
 | **0902** | *[this file]* arc patch index created; **arc continues in the 09xx block from 0903** |
 | **0903** | **DETERMINATION ARC CLOSED AT CURRENT RIGOR** — consolidation capstone (`chirality_determination_closure.md`): emergent to one primitive FI-C-9 + T-arrow; V3/W3; V2/W2 axiom-excluded; residual unified to OPEN-SM-4 by CPT. Deep V3→V1 (1d-β-ii, §14.17-gated) stays open. No new claim; count unchanged. |
+| **0904** | chirality-lane review of DM-window Patch 0813 (`review/0904_…`): favorable-branch *conditional* input; framing correction (μ²>0 = unbroken = V3/primitive, not emergent); off-criticality assumed from product base = unclosed §14.17 gate. No verdict move. |
+| **0905** | addendum to 0904: cross-lane resolution (DM lane retracted inverted label, 0815) + gate sharpening (0814 shows real NESS departs from product base → finite-χ must be recomputed on the real measure; reopens, does not flip). No verdict move. |
+| **0906** | **DESCRIPTIVE** (`sign_nhat_primitive_and_axiom_entry.md`): what `sign(n̂)` is and where chirality enters — NOT an axiom; a Foundational Input (`n̂`=FI-C-RC-1, magnitude χ=φ⁻³=FI-C-9) actualized as the edge pattern `ε(ê·n̂)` on the achiral 600-cell, derivation open (OPEN-FI-C-9-FP-MECHANISM/1d-β-ii). No verdict, no count change. |
 
 ## Continuity note
 
