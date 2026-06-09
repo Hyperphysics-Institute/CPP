@@ -41,3 +41,15 @@ Agreed it is a **refinement, not a sign-gate**: with χ ≈ 0.87–1.01, μ² �
 ## 6. Disposition
 
 Recorded as a chirality-lane assessment answering the DM window's hand-off. **0903 (determination-arc closure) is unchanged.** The deep V3→V1 engine stays OPEN and gated on §14.17; the next real chirality work is closing conditions (1)–(2) above. No THEO, no ID, no count change.
+
+---
+
+## Addendum — Patch 0905 (cross-lane resolution + gate sharpening)
+
+**Cross-lane resolution.** The DM/F.1 lane accepted the framing correction and retracted the inverted "emergent" label in its own records (Patch 0815): μ² > 0 / V3 = chirality **primitive/inherited** (engine handedness-neutral, unbroken branch); the *emergent* outcome would be the μ² < 0 condensation branch, which this is not. Chirality lane confirms the resolution. No verdict change.
+
+**Gate sharpening — condition (2) now has indication *against*, not merely "unconfirmed."** The DM lane reports (0815, citing its own 0814) that the real Mechanism-A NESS **departs from the clean product (ZRP-template) base** on which 0813's finite-χ was computed. Consequence for this review: the finite-positive χ_η of 0813 sits on an idealized base the dynamics do not satisfy, so **finite χ is not established for the real η-field measure** — it must be recomputed on the actual measure.
+
+Precise logic (to prevent a second inversion): "departs from product" (current structure / non-Gaussian features) is **not** the same as "critical." Off-criticality (finite correlation length) is a separate property from being exactly product, so this **reopens the χ computation on the real measure rather than flipping the sign** — the recomputed χ could still be finite (off-critical but non-product) or could reveal correlations; unknown until computed, and that computation *is* the §14.17 content. (The DM lane's 0810 separately argues a NESS *current* can coexist with a *symmetric* equal-time distribution — current ≠ skew — so the real measure's internal structure is itself unsettled; the chirality lane does not adjudicate that here, only notes that the product-base assumption underpinning 0813's finite χ is not safe.)
+
+**Disposition unchanged.** 0903 and the §14.17 gate stand; this only moves condition (2) from "assumed/unconfirmed" to "the base used is known to differ from the real measure → recompute required, §14.17-gated." No verdict, no THEO, no count change. In-bounds next chirality move: the **descriptive sign(n̂) task**. Parked (§14.17-gated): recompute χ_η on the real Mechanism-A measure.
