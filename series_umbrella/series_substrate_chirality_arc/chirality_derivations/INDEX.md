@@ -61,6 +61,7 @@
 | **0904** | chirality-lane review of DM-window Patch 0813 (`review/0904_…`): favorable-branch *conditional* input; framing correction (μ²>0 = unbroken = V3/primitive, not emergent); off-criticality assumed from product base = unclosed §14.17 gate. No verdict move. |
 | **0905** | addendum to 0904: cross-lane resolution (DM lane retracted inverted label, 0815) + gate sharpening (0814 shows real NESS departs from product base → finite-χ must be recomputed on the real measure; reopens, does not flip). No verdict move. |
 | **0906** | **DESCRIPTIVE** (`sign_nhat_primitive_and_axiom_entry.md`): what `sign(n̂)` is and where chirality enters — NOT an axiom; a Foundational Input (`n̂`=FI-C-RC-1, magnitude χ=φ⁻³=FI-C-9) actualized as the edge pattern `ε(ê·n̂)` on the achiral 600-cell, derivation open (OPEN-FI-C-9-FP-MECHANISM/1d-β-ii). No verdict, no count change. |
+| **0907** | **GO/NO-GO + verdict spec** (`sketches/sec1417_chir_theorem_gonogo_and_verdict_spec.md`): "chirality as a theorem" is an openable bounded season; §14.17 gate reduced (VW-1→H1; 0818 reframe H1 = `sign(K_c−K_lift)`, K_c=1/12). Verdict criterion: K_lift<K_c ⇒ THEO-CHIR-CAPACITY-1 (primitive); K_lift>K_c ⇒ V1. Chirality-lane completeness residual = clear the O(δ³) current. DG-3 gate + lane division recorded. No verdict, no count change. |
 
 ## Continuity note
 
