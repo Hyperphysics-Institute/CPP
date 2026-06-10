@@ -244,6 +244,18 @@ The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_r
 **Registered:** 8 June 2026 Session 156 Patch 0808 (surfaced and then de-risked during the DM-2 Step-0/1/2a audit).
 
 
+### TODO-016 — DP-Sea appendix: the DP binding-energy formula is numerically inconsistent with its stated r_min by ~18 orders of magnitude
+**Added:** 10 June 2026, Session 156, Patch 0834. **Priority:** P2 (does NOT block DM-2; the *ratio* the DM arc uses is unaffected).
+
+**The problem.** In `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex` (Appendix, "DP Binding Energy Calculation"), the formula `E_bind = αℏc/r_min` is quoted with `r_min = φ·l_p ≈ 2.61×10⁻³⁵ m` (the golden-ratio-scaled **Planck** length) and is said to yield `E_eDP = αℏc/(φl_p) ≈ 88 MeV`, `E_qDP = 3·E_eDP ≈ 264 MeV`. But `αℏc/(2.61×10⁻³⁵ m) ≈ 5.5×10¹⁹ MeV`, not 88 MeV — the stated r_min and the quoted energies are inconsistent by ~6×10¹⁷. The quoted 88 MeV instead requires `r_min ≈ 0.016 fm = 1.6×10⁻¹⁷ m`, eighteen orders of magnitude larger than the Planck length. So as written the **absolute** eDP/qDP energy scale does not follow from the Planck length; it is calibrated to the constituent/QCD scale and the appendix mislabels its own r_min.
+
+**What is and isn't affected.** The **ratio** `E_qDP/E_eDP = 3` (color factor) is clean and is the only thing the DM-2 Era-2 arc leans on (it gives m_qDP ≈ 3×88 = 264 MeV, used in patches 0830–0833). So this does **not** block DM-2. But the eDP = 88 MeV scale propagates into the whole DP spectrum (hDP = √(E_eDP·E_qDP) ≈ 152 MeV, the cage binding energies, the boson-mass averaging), so the inconsistency should be reconciled at the source.
+
+**The fix (a physics decision, hence Thomas's, not a unilateral flagship edit).** Decide what actually sets r_min ≈ 0.016 fm: (a) is it a genuine CPP length (e.g. the CP grid/lattice spacing, or a derived sub-quantum scale) that should replace "φ·l_p" in the formula and text; or (b) is the 88 MeV scale calibrated to the constituent/QCD scale, in which case the appendix should say so rather than presenting it as Planck-derived? Either way the appendix line and the "2.61×10⁻³⁵ m" value need correcting so the paper is internally consistent.
+
+**Surfaced:** 10 June 2026 Session 156 Patch 0833 (DM-2 Era-2 required-inputs derivation pass, deriving m_qDP). Flagged to Thomas; left for his edit/publish workflow on the flagship.
+
+
 ## Cleared items (history)
 
 *Items move here with date and patch number when completed. Cleared items are not deleted — they form an audit trail of what was done and when.*
