@@ -2,6 +2,23 @@
 
 All notable changes to this derivation arc, newest first. One block per patch.
 
+## Patch 1003 — 2026-06-10 — 600-cell mode structure: NEGATIVE result
+
+- **Added** `code/600cell_spectrum.py` — exact 600-cell graph Laplacian spectrum (120 vertices,
+  12-regular, edge 1/φ; gap 6φ⁻², λ_max 12+6/φ; φ-structured adjacency eigenvalues).
+- **Added** `code/verify_routeB_modescan.py` — falsification-first scan: pre-declared natural
+  invariants as the bare coupling; **none within 20% on Λ** (−83% to +224%). No fitted denominators.
+- **Added** `1003_mode_structure_attempt.md` — the verdict: Route-B-by-invariant-matching does NOT
+  close `op:lambda_psr`; strong negative lean toward "calibrated, not Planck-derived." One positive
+  residue: `g₀ = 1/2` (PSR_eff→l_P/2 echo) → Λ ≈ 0.31 GeV (+42%), a real parameter-free
+  order-of-magnitude-plus result but failing the sub-percent bar and not derived.
+- **Recommendation:** adopt the calibrated stance (TODO-016 Track 1) as the operating answer; keep
+  `op:lambda_psr` open, narrowed to a single *derived* mode-sum→running mechanism (spectral-zeta of
+  the Laplacian into the vacuum polarization) as the sole upgrade path. Do NOT upgrade either flagship.
+- **Added** `reasoning/1003.md`.
+- **NOT closed**; no THEO/PRED; SS-1 and DP-Sea appendix untouched. Shared-registry status edits
+  (frontier_sectors / future_projects / todolist) DEFERRED to a flagged INT patch — not in-lane.
+
 ## Patch 1002 — 2026-06-10 — Route B opened: framework + sensitivity theorem
 
 - **Added** `1002_routeB_discreteness_running.md` — Route B framework: Λ_QCD as the IR Landau pole
