@@ -100,6 +100,17 @@ If a round needs two windows to touch the same shared file *as workers*, that is
 
 ---
 
+## Cross-band development trail (mode-agnostic — applies even when this protocol is NOT running)
+
+A single problem/theorem can end up developed across **more than one patch-band** — e.g. CAPACITY-1, whose closure computation landed in the 08xx band while its swarm review, adjudication, and enactment landed in the 09xx band. Patch numbers are indexed by *series*, which is exactly the thing that splits, so the linkage is invisible from the patch log alone. This convention captures it, and it is **keyed to the problem, not to any mode**: it fires whenever a problem is developed across more than one band/window, whether or not the multi-window protocol above is formally in use (it triggers in plain single-window work too, e.g. when one window's later band picks up a question an earlier band opened).
+
+The rule:
+1. **Record the trail in the problem's history file.** The problem's `problem_histories/PH-<id>.md` carries a **"Development trail (cross-band)"** section — a pointer-map (patch · band · one-line · path) enumerating *every* contributing patch across all series, in true order, interleaving the bands. Pointer-map only; do not re-narrate the physics (it drifts from the canonical files). If no PH- file exists yet, create one. First instance: `problem_histories/PH-OPEN-CHIR-1d-beta.md` (Patch 0932).
+2. **If (and only if) the multi-window protocol is active,** also log the band-split for that problem on the `lease_board` live, so the linkage is captured as it happens rather than reconstructed at session close.
+3. **Surface it from the local arc index.** The relevant `INDEX.md` gets a one-line pointer to the PH- entry.
+
+This is adaptable by design: in single-window mode only step 1 (+ 3) applies; in multi-window mode all three do. The PH- file is the permanent, mode-independent home — handovers age out, the registry is a flat changelog, but the PH- file is problem-keyed and durable.
+
 ## Folding into operating_system.md (Phase 2)
 
 This document is intentionally standalone for Phase 0 so it can iterate fast. When GATE 0 passes, its stable rules migrate into a new `operating_system.md` section and this file becomes a pointer, so the programme keeps **one** operating system. Do not let two protocols persist.
