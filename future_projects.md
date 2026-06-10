@@ -142,6 +142,16 @@ The cosmology/DM arc (Patches 0720–0727) banked SR-5 A→D (conditional) and D
 **Significance:** Bridges the two strongest CPP results. Turns a bare lattice coupling into a running coupling matching experiment.
 **Dependencies:** SM-7, SS-1
 
+### Project 2b: Λ_QCD / DP binding scale from l_P + sea_strength via PSR saturation (SS-1 `op:lambda_psr`) — **the DP-scale derivation; closes TODO-016 Track 2** (registered 10 June 2026, Session 156, Patch 0839)
+**Status:** Open — research arc; currently the DP/QCD scale is **calibrated**, derivation open.
+**Goal:** Derive the QCD confinement scale Λ_QCD ≈ 0.218 GeV — and with it the DP binding spectrum (eDP 88, qDP 264, hDP 152 MeV) — from the Planck length l_P and sea_strength = 0.185 via the **PSR saturation mechanism** (PSR_eff → l_P/2), *without* using the PDG value as input. This is SS-1 open problem `op:lambda_psr`, with sibling `op:sigma` (string tension σ ≈ 0.9 GeV/fm from sea_strength).
+**Why it matters / leverage:** The DP-Sea flagship currently presents the DP binding scale as `αℏc/(φl_p) ≈ 88 MeV`, which is **false by ~17 orders** (it evaluates to ~10¹⁶ GeV — the Planck energy); SS-1 honestly marks the same scale calibrated/open. Closing this single derivation **upgrades both the DP-Sea appendix and SS-1 from "calibrated" to "derived" in one stroke**, and would firm the *absolute* scale that the entire DP spectrum (and, downstream, the DM-2 Era-2 constituent mass) rests on. Today only the **ratios** (color factor 3; geometric mean) are clean.
+**Candidate mechanism / partial work on file:** PSR saturation (Remark `rem:psr`, SS-1); the C14 self-consistent relation `r_conf = √(α_s ℏc/σ)`, `σ = α_s ℏc/r_conf²` (self-consistent at r_conf ≈ 0.161 fm, σ = 0.900 GeV/fm); prior numerical results in `series_strong/notebooks/chain_fraying_dynamics.ipynb` (the established self-consistent relation + bow-rigidity confinement mechanism).
+**Falsifier:** if no l_P → QCD-scale relation reproduces Λ_QCD ≈ 0.2 GeV (and the DP spectrum) from l_P + sea_strength within tolerance, the "DP scale is Planck-derived" claim is abandoned in favour of permanent calibration (Track 1 honest stance stands as the terminal answer).
+**Effort:** multi-session research arc.
+**Dependencies:** SS-1 (`op:lambda_psr`, `op:sigma`, `rem:psr`, C14), SM-7 (α_s lattice value / Project 2), the DP-Sea flagship.
+**Handover / kickoff:** `handovers/2026-06-10_session_156_projectC_dp_scale_from_planck.md`. **Related:** TODO-016 (the appendix correction, Track 1); the DM-2 Era-2 arc (Patches 0830–0836) is independent (uses only the ratio).
+
 ### Project 3: Meson Confinement Mechanism (SS-2 or SS-3)
 **Status:** Physical story complete (Thomas's description, 3 April 2026), not formalised
 **Goal:** Formalise the DP chain stretching/fraying/splitting mechanism. Derive the quark dissociation curve (restoring force vs separation). Show that last-DP splitting nucleates new quark-antiquark pairs → confinement.
