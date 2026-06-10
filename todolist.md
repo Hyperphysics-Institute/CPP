@@ -255,6 +255,8 @@ The `SR_companion_papers` set (c01–c22) was restored from Archive to `series_r
 
 **Surfaced:** 10 June 2026 Session 156 Patch 0833 (DM-2 Era-2 required-inputs derivation pass, deriving m_qDP). Flagged to Thomas; left for his edit/publish workflow on the flagship.
 
+**Update (Patch 0837):** diagnosis sharpened — the formula `αℏc/(φl_p)` evaluates to ~10¹⁶ GeV (the paper's own Planck energy `E_p = ℏc/l_p ≈ 10¹⁹ GeV`, line 80), so the "≈88 MeV" claim is off by ~17 orders, not a typo. Correcting it is a foundational physics decision (calibrated scale vs a genuine ~0.016 fm CPP length vs Planck+suppression), so a **handover was initiated**: `handovers/2026-06-10_session_156_todo016_dpsea_mass_scale.md` (full diagnosis + options A/B/C + execution path). **Status: awaiting Thomas's physics decision (A/B/C) before any flagship edit.** DM-2 Era-2 arc confirmed independent of the resolution (uses only the clean color-factor-3 ratio).
+
 
 ## Cleared items (history)
 
