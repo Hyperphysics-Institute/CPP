@@ -2,6 +2,23 @@
 
 All notable changes to this derivation arc, newest first. One block per patch.
 
+## Patch 1004 — 2026-06-10 — Framing correction: PSR currency
+
+- **Corrected** PSR = **Planck Sphere Radius** (was glossed "Phase-Space-Restriction"); README fixed.
+- **Added** `1004_framing_correction_psr_currency.md` — category-error diagnosis: `E_P = ℏc/l_P` is
+  not a fundamental cutoff; `l_P` is the rest-frame PSR (emergent, SSV-dependent ruler), GP spacing
+  is sub-Planck (nested-600-cell hierarchy, Patch 0736). The "~10³⁰ GPs per l_P" figure is flagged
+  as an unverified early estimate, not relied upon.
+- **Reinterpreted (not retracted)** the 1003 negative: the absolute scale is "one shared
+  calibration, not derived" (c05 / TODO-014), so the QCD/DP scale being calibrated is the *same*
+  calibration as `G` and `l_P`. Derivable content = the dimensionless ratio.
+- **Redirect:** the live target is `op:sigma` at the IR end (short lever arm, well-conditioned per
+  the 1002 sensitivity theorem), with the honest forward note that it too may bottom out at the
+  shared calibration.
+- **Flagged** the `master_glossary.md` line-71 inconsistency (GP spacing = l_P) for a SEPARATE
+  STOP-and-warn correction patch (shared file; carries the 10³⁰ caveat).
+- **Added** `reasoning/1004.md`. In-lane; no new derivation; no THEO/PRED; SS-1/appendix untouched.
+
 ## Patch 1003 — 2026-06-10 — 600-cell mode structure: NEGATIVE result
 
 - **Added** `code/600cell_spectrum.py` — exact 600-cell graph Laplacian spectrum (120 vertices,

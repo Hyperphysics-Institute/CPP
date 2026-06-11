@@ -8,6 +8,15 @@
 UV boundary condition. No THEO/PRED registered yet; nothing chained into SS-1 or the DP-Sea
 appendix yet (those are STOP-and-warn files under the lightweight two-window protocol).
 
+> **Framing correction (Patch 1004).** Patches 1001–1003 treated `E_P = ℏc/l_P` as a *fundamental*
+> UV cutoff to run a coupling down from. On the corpus's canonical reading (SR-1 / c05, glossary)
+> that is the wrong currency: `l_P` is the **rest-frame Planck Sphere Radius (baseline PSR)** — an
+> emergent, SSV-dependent ruler — not the lattice granularity and not a fundamental cutoff, and the
+> absolute Planck scale is itself "one shared calibration, not derived" (c05 / TODO-014). The
+> negative result of 1003 is therefore reinterpreted (not retracted) as *consistency with
+> calibration*, and the live derivable target moves to `op:sigma` at the IR end. See
+> `1004_framing_correction_psr_currency.md`.
+
 ---
 
 ## The target (no PDG input)
@@ -25,7 +34,7 @@ relation (this is exactly the false appendix formula TODO-016 Track 1 removes).
 
 ## The mechanism (SS-1 `rem:psr`)
 
-**PSR (Phase-Space-Restriction) saturation.** As two quarks approach `r ≲ l_P`, the effective PSR
+**PSR (Planck Sphere Radius) saturation.** As two quarks approach `r ≲ l_P`, the effective PSR
 shrinks toward `PSR_eff → l_P/2`; the Sea can no longer nucleate qDP chains fast enough to
 self-collimate, the effective string tension vanishes, and `α_s → 0` (asymptotic freedom). At long
 distance, PSR is unsaturated, chains self-collimate, and `α_s → ∞` at `Q → Λ_QCD` (confinement).
