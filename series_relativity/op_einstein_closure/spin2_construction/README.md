@@ -47,6 +47,15 @@ So the fix is concrete: **extend the LSP from (l=0 scalar, l=1 vector) to includ
 5. **Confront GW data** — recover the observed tensor polarizations; re-examine c08's claim that
    scalar/vector modes are suppressed by `(l_P/λ)²` (now with the tensor modes genuinely present).
 
+## Step 4 (1115) — run at the Einstein wall + the emergent option D
+Testing the architect's proposal: a superposition / 2nd-order combination of SSV vectors cannot give
+the LINEAR helicity-2 GW (the bilinear V_iV_j has the structure but at amp²/double-frequency). The
+no-new-axiom route is therefore EMERGENT — permitted because CPP's preferred-frame/emergent-Lorentz
+structure evades Weinberg–Witten (CPP is in the condensed-matter emergent-gravity class), and
+consistent with CPP's emergentism (ZBW spin, emergent SR). Non-generic; hinges on the 600-cell
+emergent-graviton calculation. So the options are A/B/C (fundamental axiom) **or D (emergent, no axiom)**
+— attempt D first.
+
 ## Resting state
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's

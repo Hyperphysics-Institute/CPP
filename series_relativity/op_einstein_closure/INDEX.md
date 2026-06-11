@@ -42,8 +42,16 @@
   (CP→GP CSR: type/polarity/emergent-vector-spin; GP→GP: |SSV|_abs+SSV_net; GP→CP: displacement). No
   rank-2 d.o.f. anywhere; candidates (DP-sea polarization=vector, CP spin=emergent vector, H_g=slot
   but unexcited) all fail; corpus mute (only matter-side nuclear quadrupoles). VERDICT: closing (a)
-  requires a NEW AXIOM (rank-2 in one of the 3 flows). CPP-as-axiomatized = scalar-vector gravity;
-  GW-polarization tension is STRUCTURAL. Architect's decision point. (a) OPEN. NO VERDICT MOVED.
+  requires a NEW AXIOM (rank-2 in one of the 3 flows) — see 1115, which adds the emergent option D.
+  (a) OPEN. NO VERDICT MOVED.
+- **1115** — spin-2 Step 4 (run at the Einstein wall, current axioms): the SSV-vector superposition
+  cannot give the LINEAR helicity-2 GW — linear ∂(V) and grad-bilinear ∂V∂V give zero; the 2nd-order
+  V_iV_j (TLA's proposal) HAS helicity-2 structure but only at amp² + double frequency (not the
+  observed first-order GW). Wall stands for any local polynomial in (φ,V). BUT the EMERGENT route is
+  open + principled: Weinberg–Witten (no massless spin-2 composite) is EVADED by CPP's preferred-frame
+  / emergent-Lorentz structure (SR-1), putting CPP in the condensed-matter emergent-gravity class.
+  Adds **option D (emergent collective spin-2, no new axiom)** to A/B/C; non-generic, pending the
+  600-cell emergent-graviton calculation. (a) OPEN. NO VERDICT MOVED.
 
 ## Cap status (for the CC umbrella)
 Before 1107 the cap was "is the source excess or absolute?" After 1107 (Step b) the cheapest kill was
@@ -67,6 +75,15 @@ quadrupole, geometrically slotted by the 600-cell H_g representation; (1113) pro
 the rank-agnostic shell-sum gives □Q_ij at c with helicity-±2 = the GW modes; (1114) but CPP's
 fundamental flows carry only scalar+vector, so the rank-2 d.o.f. is **absent from the axioms** and must
 be **added as a new axiom** (option A: CP State Register; B: LSP broadcast; C: GP→CP instruction).
-CPP-as-axiomatized is a **scalar–vector theory of gravity** with a **structural GW-polarization
-tension**; the cosmological-constant local half (b/b′) is unaffected. The next move is the architect's
-decision whether to extend the axioms — no further step is a derivation.
+CPP-as-axiomatized is a **scalar–vector theory of gravity** with a GW-polarization tension; the
+cosmological-constant local half (b/b′) is unaffected.
+
+**Updated by 1115 (the run at the Einstein wall):** the spin-2 closure has **four** options. A/B/C add a
+fundamental rank-2 attribute (the spin-bit axiom). **Option D** is emergent: the helicity-2 mode as a
+*collective* excitation of the 600-cell — **no new axiom**, permitted because CPP's preferred-frame /
+emergent-Lorentz structure evades Weinberg–Witten, and consistent with CPP's emergentist pattern (ZBW
+spin, emergent SR). Option D is **non-generic** (standard lattice elasticity has no spin-2 phonon) and
+hinges on the open **600-cell emergent-graviton calculation**: does the long-wavelength collective
+theory contain an independent transverse-traceless mode? The architect's decision is now *attempt D
+first, axiomatize (A/B/C) only if D fails* — and the 'no spin-bit' instinct is the principled option-D
+bet.
