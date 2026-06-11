@@ -107,3 +107,16 @@ gap + circular-birefringence laws, and the recognition that the absolute-frame a
 (it is what keeps the broadcast massless). Option D is now closed after **three** independent assaults
 (1115 bilinears, 1116 collective modes, 1119 connection); the spin-bit axiom stands NECESSARY on its
 strongest footing.
+
+**COMPLETED by 1120 (the tensor-meson test — the candidate second motivation, resolved):** f₂(1270)
+does **NOT** hit the wall — spin-2 hadrons are emergent orbital states (³P₂ from emergent vectors:
+L=1 ⊗ S=1 ⊃ J=2, consistent with SS-1e's χ_c2 "L=1, J=2" and SS-6's orbital-dominated deuteron
+quadrupole). The candidate second motivation **dissolves**: the spin-bit axiom remains
+**mono-motivated by GW empirics** (strength = necessity via three closed assaults, not breadth —
+stated honestly). Parallax gained: the wall is precisely **per-point** (matter configurations carry
+every l in their relative-coordinate function space; the 4-dim per-point broadcast carries l ≤ 1 —
+matter can be spin-2, the radiating field cannot). Geometric bonus: icosahedral branching **protects**
+the 5-fold spin-2 multiplet (l=2 → H irreducible, the H_g slot of 1112; first splitting at l=3), where
+a cubic lattice splits it E ⊕ T₂ — the geometry pre-slots *and protects* the seat. **The sub-arc's
+DIAGNOSTIC PHASE is COMPLETE (Steps 1–7).** Next: the construction proper — flow choice (A/B/C), the
+axiom text, source coupling `Q_ij ↔ T_μν`, GR-recovery, DG-3 swarm review.

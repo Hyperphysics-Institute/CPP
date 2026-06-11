@@ -80,7 +80,21 @@ computed. **Byproduct banked:** the absolute-frame axiom is revealed as load-bea
 the broadcast massless. Option D stays RULED OUT after **three assaults** (1115 bilinears, 1116
 collective modes, 1119 connection); the spin-bit axiom stays NECESSARY.
 
-## Resting state
+## Step 7 (1120) — the tensor-meson test: f₂(1270) does NOT hit the wall; the second motivation dissolves
+The kickoff handover's candidate second motivation, run to ground: can the strong sector build a spin-2
+hadron emergently? **Yes** — and the corpus already contained the answer (SS-1e lists χ_c2(1P) as
+"L=1, J=2", the same ³P₂ construction as f₂(1270); SS-6's deuteron quadrupole is orbital-dominated).
+Demonstrated: (P1) L=1 ⊗ S=1 → J ∈ {0,1,2} with degeneracies {1,3,5} — the 5-dim J=2 multiplet is built
+from emergent vectors only; (P2) the two-body relative-coordinate function space fully supports l=2
+(rank 5 on lattice relative positions) — the resource the per-point broadcast lacks (4 components,
+l ≤ 1) is unbounded in configurations; (P3) icosahedral branching protects the spin-2 multiplet exactly
+(l=2 → H, irreducible — the H_g slot of 1112; first splitting at l=3), where a cubic lattice splits it
+E ⊕ T₂ (2+3). **Honest accounting: the spin-bit axiom remains MONO-MOTIVATED by GW empirics** — its
+strength is *necessity* (three closed assaults), not breadth. The wall is located with precision:
+**per-point granularity** — matter can be spin-2; the radiating field cannot. The geometry pre-slots
+*and protects* the seat the axiom will fill.
+
+## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
 axioms** (1114), so closing (a) is a foundational choice (add a rank-2 d.o.f. to a fundamental flow),
