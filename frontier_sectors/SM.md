@@ -71,6 +71,7 @@
 **What a solution looks like:** Paired DP cancellation mechanism giving ρ_Λ ∝ E_Planck⁴ × (l_P/R_universe)².
 **Dependencies:** None blocking
 **Cross-sector connections:** OPEN-SR-5 (same problem from GR perspective)
+**[Patch 1103 — CC reconciliation umbrella: SM-6 = SR-5 (one theorem).** The CC umbrella (`series_umbrella/series_cosmological_constant_arc/`, Patch 1101) finds SM-6's paired-DP cancellation and SR-5's excess-sourcing to be the same mechanism two ways: the bulk paired Sea cancels (SM side) ⇔ the uniform Sea is excess-free and inert (GR side, c05), leaving the horizon-scale uncancelled mode ρ_Λ ∝ (l_P/R_H)² — exactly SM-6's expected `E_Planck⁴ (l_P/R)²` form. The suppression is **dynamical**; the DP-Sea static ρ_sea/N⁴ reading is demoted to a present-epoch coincidence. Frontier-tracked, **NO THEO**, conditional on the c08 closed field equation. No verdict moved. See `series_cosmological_constant_arc/1101_cc_reconciliation_scoping.md`.]**
 **Current best lead:** Pairing cancellation approach gives ~10⁻¹¹ MeV⁴ (within order of magnitude). Far better than σ=120⁻⁴ approach (~10⁻⁹).
 **Paper(s):** SM Paper 2, GR companion
 **Last updated:** 23 March 2026

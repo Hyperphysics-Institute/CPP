@@ -43,6 +43,10 @@ Established 26 May 2026 (Patch 0571d). Three papers: Capotauro (v1.0 + v2.0), Ch
 
 Three of five manifestations are closed at varying rigor levels; two remain open. SSCA's canonical manifestation tracker lives at `series_substrate_chirality_arc/manifestation_inventory.md`. The detailed arc-level README at `series_substrate_chirality_arc/README-SSCA.md` covers the arc's history, its methodology cross-references, and its future-trajectory candidates.
 
+### `series_cosmological_constant_arc/` — Cosmological-Constant Arc (CC)
+
+Established 10 June 2026 (Patch 1101). A cross-sector **derivation/reconciliation arc** (no migrated papers yet — structured like the chirality arc's `chirality_derivations/`), opened to reconcile CPP's three cosmological-constant-suppression accounts (SR-5 dynamical (l_P/R_H)², SM-6 paired-DP cancellation, DP-Sea static ρ_sea/N⁴) into one mechanism and wire it to the dark-matter R2 gate. Charter + falsification-first plan: `series_cosmological_constant_arc/README-CCA.md`; founding scoping: `series_cosmological_constant_arc/1101_cc_reconciliation_scoping.md`. Status: scoping delivered, all results conditional on the c08 closed field equation (NO THEO/PRED/count change).
+
 ## Adding a new paper to SU
 
 When a new paper doesn't fit cleanly into an existing phenomenology sector (the standard test: does the paper's primary closure-target sit in SS / SM / SEW / SQM / SR / SD territory exclusively, or does it span sectors / address a programme-level umbrella problem / introduce methodology that isn't sector-bound?), it goes into SU. Two cases:
