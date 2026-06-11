@@ -26,6 +26,12 @@
   NOT derived (metric map sources h_ij from gradient-of-vector; TT gauge-invariant; c07 concedes
   tensor recovery open). op:einstein (a) OPEN; gap pinned = no spin-2 d.o.f. in the LSP. Fork: spin-2
   lattice-mode extension (fix) vs tension with observed tensor GW polarizations. NO VERDICT MOVED.
+- **1111** — INT frontier: recorded the (a) gap + GW-polarization tension (SR.md, CONJ.md). Pointers
+  to this arc; flags the tension against c08's GW claim. No new ID. NO VERDICT MOVED.
+- **1112** — opened the `spin2_construction/` sub-arc (the fix). Step 1: the missing spin-2 d.o.f. =
+  the l=2 quadrupole of the 600-cell shell deformation — fully resolved + independent of l=0/l=1 on
+  the icosahedral shell (rank 5, orthogonal); m=±2 = the GR +,× polarizations. Extend the LSP with a
+  rank-2 Q_ij. (a) NOT closed (broadcast law + wave eq + GR-recovery remain). NO VERDICT MOVED.
 
 ## Cap status (for the CC umbrella)
 Before 1107 the cap was "is the source excess or absolute?" After 1107 (Step b) the cheapest kill was
