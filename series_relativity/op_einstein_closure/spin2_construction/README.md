@@ -36,14 +36,23 @@ So the fix is concrete: **extend the LSP from (l=0 scalar, l=1 vector) to includ
    helicity-±2 part propagates at c as the GW `+`/`×` modes. BUT the GP has no rank-2 d.o.f. to
    broadcast — `Q_ij` is a foundational LSP extension (600-cell H_g slot, but a postulate). So closure
    localizes to Step 3.
-3. **(the crux) Is a GP quadrupole d.o.f. independently motivated?** — examine the DP-sea polarization
-   tensor, the CP 'spin state' (c07), and whether the PCD dynamics physically excite the H_g (l=2) mode.
-   If yes, (a) closes without a new postulate; if not, closing (a) is an explicit axiom extension.
-   (The wave equation itself is settled by 1113: `□Q_ij` from the rank-agnostic shell-sum.)
+3. **(done, 1114 — the verdict) A GP quadrupole d.o.f. is NOT independently motivated.** CPP's
+   fundamental flows carry only scalar+vector (CP→GP CSR: type/polarity/emergent-vector-spin; GP→GP:
+   |SSV|_abs+SSV_net; GP→CP: displacement). Candidates fail: DP-sea polarization = the vector SSV_net;
+   CP spin = emergent orbital *vector*; the H_g (l=2) slot exists but nothing excites it. Corpus mute
+   (only matter-side nuclear quadrupoles). ⇒ closing (a) is an **explicit axiom extension** — add a
+   rank-2 d.o.f. to flow A (CSR), B (LSP), or C (GP→CP). The architect's decision.
 4. **GR-recovery** — show the extended (scalar+vector+tensor) metric map assembles into the full
    `G_μν = 8πG T_μν/c⁴` (this is the actual closure of op:einstein (a)).
 5. **Confront GW data** — recover the observed tensor polarizations; re-examine c08's claim that
    scalar/vector modes are suppressed by `(l_P/λ)²` (now with the tensor modes genuinely present).
+
+## Resting state
+The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
+(600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
+axioms** (1114), so closing (a) is a foundational choice (add a rank-2 d.o.f. to a fundamental flow),
+not a derivation. Steps 4–5 (source coupling `Q_ij ↔ T_μν`, full GR-recovery, GW-data confrontation)
+are reachable only **after** that axiom choice.
 
 ## Falsifier / on-success
 - **Falsifier:** if the 600-cell broadcast structure cannot carry a propagating l=2 quadrupole (e.g.

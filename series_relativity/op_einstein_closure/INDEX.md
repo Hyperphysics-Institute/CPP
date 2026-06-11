@@ -38,6 +38,12 @@
   d.o.f. — Q_ij is a genuine foundational LSP extension (geometrically slotted by the 600-cell H_g,
   but a postulate). (a) closure localizes to one question: does the GP carry a quadrupole d.o.f.? (a)
   NOT closed. NO VERDICT MOVED.
+- **1114** — spin-2 Step 3 (foundational audit): CPP's fundamental flows carry ONLY scalar+vector
+  (CP→GP CSR: type/polarity/emergent-vector-spin; GP→GP: |SSV|_abs+SSV_net; GP→CP: displacement). No
+  rank-2 d.o.f. anywhere; candidates (DP-sea polarization=vector, CP spin=emergent vector, H_g=slot
+  but unexcited) all fail; corpus mute (only matter-side nuclear quadrupoles). VERDICT: closing (a)
+  requires a NEW AXIOM (rank-2 in one of the 3 flows). CPP-as-axiomatized = scalar-vector gravity;
+  GW-polarization tension is STRUCTURAL. Architect's decision point. (a) OPEN. NO VERDICT MOVED.
 
 ## Cap status (for the CC umbrella)
 Before 1107 the cap was "is the source excess or absolute?" After 1107 (Step b) the cheapest kill was
@@ -52,9 +58,15 @@ is to audit **companion 7 §6** — does it produce two helicity-±2 modes from 
 rank-2 d.o.f.), or only the helicity 0/±1 modes the scalar+vector LSP supports? That single question
 decides op:einstein's (a), and it is empirically decidable (GW polarization observations).
 
-**Resolved by 1110:** companion 7 §6 does NOT derive the helicity-2 modes (it asserts the GR wave
-equation; its metric map sources h_ij from the gradient of a vector, which has no helicity-2 content,
-and TT is gauge-invariant). So op:einstein (a) is **genuinely open**, with the gap pinned to **a
-missing spin-2 degree of freedom in the LSP**. Closing (a) = constructing a lattice spin-2
-(shear/strain) mode that carries the transverse-traceless quadrupole; the GW-polarization data is the
-keeping-honest test. This is the true summit of the cosmological-constant problem in CPP.
+**Resolved by 1110:** companion 7 §6 asserts (does not derive) the helicity-2 modes; op:einstein (a)
+is genuinely open, gap = a missing spin-2 d.o.f.
+
+**ARC RESTING STATE (after 1112–1114, the spin-2 construction sub-arc):** the fix is fully mapped and
+the closure is now a *foundational choice*, not a derivation. (1112) the missing d.o.f. = the l=2
+quadrupole, geometrically slotted by the 600-cell H_g representation; (1113) propagation is native —
+the rank-agnostic shell-sum gives □Q_ij at c with helicity-±2 = the GW modes; (1114) but CPP's
+fundamental flows carry only scalar+vector, so the rank-2 d.o.f. is **absent from the axioms** and must
+be **added as a new axiom** (option A: CP State Register; B: LSP broadcast; C: GP→CP instruction).
+CPP-as-axiomatized is a **scalar–vector theory of gravity** with a **structural GW-polarization
+tension**; the cosmological-constant local half (b/b′) is unaffected. The next move is the architect's
+decision whether to extend the axioms — no further step is a derivation.
