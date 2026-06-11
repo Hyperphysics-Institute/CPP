@@ -68,7 +68,7 @@ The regular 4-dimensional polytope with V=120 vertices, E=720 edges, F=1200 tria
 
 ### Grid Point
 
-A vertex of the 600-cell lattice. Each Grid Point is occupied by a CP. The lattice is not embedded in pre-existing space — the lattice IS space. The spacing between Grid Points is the Planck length l_P ≈ 1.616 × 10⁻³⁵ m.
+A vertex of the 600-cell lattice. Each Grid Point is occupied by a CP. The lattice is not embedded in pre-existing space — the lattice IS space. The Planck length l_P ≈ 1.616 × 10⁻³⁵ m is the scale of a single coarse 600-cell motif — the rest-frame Planck Sphere Radius (PSR), or per-Moment reach ceiling — *not* the fundamental Grid-Point spacing. Per the canonical nested-600-cell hierarchy (SR-1 §"Grid Resolution", Patch 0736), Grid Points sit at a finer, sub-Planck spacing; the often-quoted "~10³⁰ GPs per l_P" is an unverified early estimate and is not relied upon. The resolution choice enters no prediction formula (0736).
 
 ### Absolute Moment
 
