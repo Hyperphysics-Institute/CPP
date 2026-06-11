@@ -4,6 +4,15 @@
 **Status:** scoping deliverable (not a calculation). Outcome: the question is **more favorable** than Step 2 implied — there is a candidate resolution *and* a dark-energy↔dark-matter unification angle — but the resolution is **not yet derived**, and one specific thing must be shown.
 **Verify:** `scripts/0705_lambda_sea_estimate.py`
 
+> **⟨UPDATE — Patch 0846 (DM 08xx lane), applying CC-umbrella handoff Patch 1105 (CC-U/5).⟩**
+> **The §3 "not derived / coincidence-restatement" framing and the §5 "do not write up yet" posture below are superseded** by SR-5 Steps A–D (Patches 0720–0723) and the cosmological-constant umbrella (Patches 1101–1104):
+> - **Suppression derived (Step C).** ρ_Λ = c²H²/8πG = (1/8π)ρ_P(l_P/R_H)² — both the (l_P/R_H)² scaling *and* the 1/8π coefficient are now derived from the substrate rather than inserted. §3.1's "coincidence-restatement" verdict no longer holds.
+> - **Horizon ambiguity resolved (Step D3).** The future event horizon is selected (Li 2004), giving w_Λ(now) ≈ −1.02. The ~10× horizon-choice swing flagged in §3.1 is closed.
+> - **Friedmann recovered (Step D1).** The expansion history follows, with q crossing zero (acceleration onset) at z ≈ 0.63. The make-or-break test posed in §3 / §4(iii) is met.
+> - **"Why-now" reframed.** The dynamical ρ_Λ ∝ H² is now the *resolution* of the coincidence problem (Λ larger in the past), per the umbrella's static-vs-dynamical verdict (dynamical). The static N⁴ reading of §2(b) is demoted to a present-epoch coincidence (1/N⁴ ≈ (l_P/R_H)² because R_H ≈ N²l_P today).
+>
+> **Net for R2:** the **uniform-Sea-inert / dark-energy leg is in hand**, conditional on the **c08 closed field equation (op:einstein)** — the single standing cap, shared with the dark-matter split (see `series_umbrella/series_cosmological_constant_arc/`, Patches 1101–1104, and CC-U/4 scoping `1105_ccu4_c08_scoping.md`). The §4(ii) gravitating-swirls-at-DM-amplitude leg and the full DM identification remain this lane's open work (DM-1 draft `DM-1_draft_manuscript.md`). This does **not** revive structure formation — CONJ-COSMO-1's structure-formation role stays a separate standing conditional-false verdict (Patch 0729). **Treat §3–§5 below as the frozen 0705 snapshot.**
+
 ---
 
 ## 1. The question (restated precisely)
