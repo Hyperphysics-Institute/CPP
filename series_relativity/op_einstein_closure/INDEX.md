@@ -120,3 +120,16 @@ the 5-fold spin-2 multiplet (l=2 → H irreducible, the H_g slot of 1112; first 
 a cubic lattice splits it E ⊕ T₂ — the geometry pre-slots *and protects* the seat. **The sub-arc's
 DIAGNOSTIC PHASE is COMPLETE (Steps 1–7).** Next: the construction proper — flow choice (A/B/C), the
 axiom text, source coupling `Q_ij ↔ T_μν`, GR-recovery, DG-3 swarm review.
+
+**CONSTRUCTION PHASE OPENED by 1121 (Task 1 — the flow choice: B).** `Q_ij` lives in the **GP→GP
+Lattice State Packet broadcast** (four dynamical components → nine). Grounds: the c07 precedent ladder
+(DI-bit → LSP "adding the vector component needed for general relativity" → extended LSP +tensor — the
+third rung by the programme's own logic); A eliminated (the source is irreducibly configurational and
+assembles from existing per-CP reports — the gap was always the channel, 1114 sharpened); C eliminated
+as home (the GP→CP instruction is the derivable readout); induction asymmetry (A/C would induce B; B
+induces neither). Two binding constraints registered for Tasks 2–4: **no-ZBW-double-counting** and
+**no-static-double-counting** (the scalar keeps statics; `Q_ij` sources from the time-varying
+TT-projected quadrupole only). Justification preamble adopted: mono-sectoral / multi-evidential
+(detections + polarization tests + binary-pulsar decay + no-dipole), universally sourced,
+instrumentally concentrated, load-bearing for three arcs. Axiom text = Task 2 (touches the axiom
+inventory under STOP-and-warn). NO VERDICT MOVED.

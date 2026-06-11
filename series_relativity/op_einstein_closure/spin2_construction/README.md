@@ -94,7 +94,30 @@ strength is *necessity* (three closed assaults), not breadth. The wall is locate
 **per-point granularity** — matter can be spin-2; the radiating field cannot. The geometry pre-slots
 *and protects* the seat the axiom will fill.
 
-## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7)
+## Task 1 (1121) — THE FLOW CHOICE: option B — `Q_ij` lives in the GP→GP Lattice State Packet
+The construction phase opens with the architectural decision. **B (LSP broadcast)** is the home of the
+primitive: the packet extends from four dynamical components to nine (scalar + vector + the 5-component
+`Q_ij`). The decisive arguments: (i) **precedent** — the c07 glossary states the LSP "supersedes the
+SR-era DI-bit broadcast by adding the vector component needed for general relativity"; the tensor
+extension is the *third rung* of an existing ladder (DI-bit scalar/SR → LSP scalar+vector/GR-statics →
+extended LSP +tensor/GR-radiation), each forced when a sector of gravity exceeded the packet's capacity;
+(ii) **A eliminated** — the source quadrupole is irreducibly configurational (a single point mass has
+zero quadrupole about itself; verify D1), assembled from per-CP positions+masses the register already
+reports (verify D2) — the missing piece was never the source, it is the channel (1114 sharpened);
+(iii) **C eliminated as home** — the GP→CP instruction is the Compute step's *output* (the readout that
+stretches a detector arm), derivable once B exists; (iv) **induction asymmetry** — A or C would each
+still need a GP→GP channel (inducing B); B induces neither. PCD placement: Perceive 9 numbers, Compute
+via the rank-agnostic shell-sum (1113) + source assembly, Displace via the extended metric map (Task 4).
+B inherits the staged record: massless absolute-frame carriage (1119), protected H_g degeneracy (1120).
+**Two binding design constraints registered:** no-ZBW-double-counting (the handover's) and
+**no-static-double-counting** (new: the scalar keeps statics — Schwarzschild exact; `Q_ij` is sourced by
+the time-varying TT-projected quadrupole only; verify D3 shows static ⇒ d²Q/dt²=0 ⇒ no radiation,
+orbiting ⇒ ω_GW = 2ω_orbit). Justification preamble adopted: **mono-sectoral by CPP's labor division,
+multi-evidential within the sector** (direct detections + polarization tests + binary-pulsar decay +
+no-dipole constraint), universally sourced, instrumentally concentrated, load-bearing for three arcs.
+Axiom text = Task 2. NO VERDICT MOVED.
+
+## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
 axioms** (1114), so closing (a) is a foundational choice (add a rank-2 d.o.f. to a fundamental flow),
