@@ -94,3 +94,16 @@ theory of gravity); CPP joins the mainstream on this point. The remaining work i
 engineering of the axiom: which flow (A: CSR / B: LSP / C: GP→CP), its form, and the source coupling
 `Q_ij ↔ T_μν`. The geometric slot (600-cell H_g, 1112) and the propagation (rank-agnostic shell-sum,
 1113) are already in hand.
+
+**RE-CONFIRMED by 1119 (the THIRD assault — the architect's non-radiality mechanism):** the PSR-hop
+twist (GPs non-radial to propagation ⇒ an incremental turn per hop), formalized as the most general
+discrete connection on the carried data (per-edge transports — genuinely untested by 1116, which used
+scalar coupling coefficients only), **does not open a helicity-±2 channel**: rotations are
+irrep-preserving (the (φ,V) space has no m=±2 content to project onto), and a data-acting twist would
+Planck-gap the vector sector (`M = 4|sin(θ/2)|`; the geometric quaternionic value θ = π/5 gives
+M ≈ 1.24 M_Planck) — excluded by massless long-range propagation to θ < 10⁻⁴⁶–10⁻⁵¹, forcing exactly
+the flat (absolute/Nexus-frame) carriage that 1116 computed. Byproducts banked: the lattice-connection
+gap + circular-birefringence laws, and the recognition that the absolute-frame axiom is load-bearing
+(it is what keeps the broadcast massless). Option D is now closed after **three** independent assaults
+(1115 bilinears, 1116 collective modes, 1119 connection); the spin-bit axiom stands NECESSARY on its
+strongest footing.

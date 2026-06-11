@@ -64,6 +64,22 @@ sector; the architect's granularity intuition is the reason. CPP joins mainstrea
 fundamental). Remaining = engineer the axiom (which flow, its form, source coupling); the geometric slot
 (H_g) and propagation (shell-sum) are in hand.
 
+## Step 6 (1119) — THE THIRD ASSAULT: the architect's non-radiality (PSR-hop twist) mechanism
+Testing the architect's remaining no-axiom route: the 600-cell's GPs are not radial to any propagation
+direction, so each PSR hop involves an incremental turn — could the accumulated twist place a spin bit
+on the GP→GP signal? Formalized as a **discrete connection** (per-edge transport `R_j` on the carried
+data — genuinely absent from 1116, which used scalar coupling coefficients only). RESULT: the verdict
+**survives**, three ways: (i) the representation bound — the carried (φ,V) space has J_z spectrum
+{0,0,±1}, the helicity-±2 projector on it is identically zero, and rotations are irrep-preserving (a
+twist reorients components; it cannot raise rank); (ii) a data-acting twist **gaps the vector sector**
+at `M = 4|sin(θ/2)|` Planck masses and adds circular birefringence (`ω²_± = M² ± 4 sinθ·k`) — channel
+optics, not new helicity; massless long-range propagation forces θ < 10⁻⁴⁶–10⁻⁵¹ (the geometric
+quaternionic value θ = π/5 gives M ≈ 1.24 M_Planck, maximally excluded); (iii) the empirically-forced
+flat connection (`R_j = I`, absolute/Nexus-frame carriage — CPP-native) is exactly the regime 1116
+computed. **Byproduct banked:** the absolute-frame axiom is revealed as load-bearing — it is what keeps
+the broadcast massless. Option D stays RULED OUT after **three assaults** (1115 bilinears, 1116
+collective modes, 1119 connection); the spin-bit axiom stays NECESSARY.
+
 ## Resting state
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
