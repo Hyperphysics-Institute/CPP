@@ -32,6 +32,12 @@
   the l=2 quadrupole of the 600-cell shell deformation — fully resolved + independent of l=0/l=1 on
   the icosahedral shell (rank 5, orthogonal); m=±2 = the GR +,× polarizations. Extend the LSP with a
   rank-2 Q_ij. (a) NOT closed (broadcast law + wave eq + GR-recovery remain). NO VERDICT MOVED.
+- **1113** — spin-2 Step 2 (Q_ij broadcast law): PROPAGATION is native — the icosahedral shell-sum is
+  rank-agnostic, so a broadcast Q_ij obeys □Q_ij=source (same operator as scalar/vector, 1108), its
+  helicity-±2 part = the GW +,× modes at c; the 1112 falsifier does NOT fire. BUT the GP has no rank-2
+  d.o.f. — Q_ij is a genuine foundational LSP extension (geometrically slotted by the 600-cell H_g,
+  but a postulate). (a) closure localizes to one question: does the GP carry a quadrupole d.o.f.? (a)
+  NOT closed. NO VERDICT MOVED.
 
 ## Cap status (for the CC umbrella)
 Before 1107 the cap was "is the source excess or absolute?" After 1107 (Step b) the cheapest kill was

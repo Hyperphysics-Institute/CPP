@@ -31,11 +31,15 @@ So the fix is concrete: **extend the LSP from (l=0 scalar, l=1 vector) to includ
 
 ## The construction path (the steps that remain)
 1. **(done, 1112)** Identify + ground the d.o.f.: l=2 quadrupole of the shell deformation.
-2. **Broadcast law for `Q_ij`** — how each Grid Point broadcasts its quadrupole moment in the
-   Perceive–Compute–Displace cycle (analogous to how |SSV|_abs and SSV_net are broadcast). Must
-   reduce to the icosahedral shell's H_g (l=2) deformation.
-3. **Wave equation** — derive `□Q_ij = source`; verify it yields **two** propagating helicity-±2 modes
-   at speed c, matching the TT sector of `□h̄_μν = −16πG T_μν/c⁴` and the GR quadrupole formula.
+2. **(done, 1113) Broadcast law for `Q_ij`.** PROPAGATION is native: the PCD icosahedral shell-sum is
+   rank-agnostic, so a broadcast `Q_ij` obeys `□Q_ij = source` (same operator as scalar/vector), and its
+   helicity-±2 part propagates at c as the GW `+`/`×` modes. BUT the GP has no rank-2 d.o.f. to
+   broadcast — `Q_ij` is a foundational LSP extension (600-cell H_g slot, but a postulate). So closure
+   localizes to Step 3.
+3. **(the crux) Is a GP quadrupole d.o.f. independently motivated?** — examine the DP-sea polarization
+   tensor, the CP 'spin state' (c07), and whether the PCD dynamics physically excite the H_g (l=2) mode.
+   If yes, (a) closes without a new postulate; if not, closing (a) is an explicit axiom extension.
+   (The wave equation itself is settled by 1113: `□Q_ij` from the rank-agnostic shell-sum.)
 4. **GR-recovery** — show the extended (scalar+vector+tensor) metric map assembles into the full
    `G_μν = 8πG T_μν/c⁴` (this is the actual closure of op:einstein (a)).
 5. **Confront GW data** — recover the observed tensor polarizations; re-examine c08's claim that
