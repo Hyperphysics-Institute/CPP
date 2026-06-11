@@ -47,11 +47,16 @@
 - **1115** — spin-2 Step 4 (run at the Einstein wall, current axioms): the SSV-vector superposition
   cannot give the LINEAR helicity-2 GW — linear ∂(V) and grad-bilinear ∂V∂V give zero; the 2nd-order
   V_iV_j (TLA's proposal) HAS helicity-2 structure but only at amp² + double frequency (not the
-  observed first-order GW). Wall stands for any local polynomial in (φ,V). BUT the EMERGENT route is
-  open + principled: Weinberg–Witten (no massless spin-2 composite) is EVADED by CPP's preferred-frame
-  / emergent-Lorentz structure (SR-1), putting CPP in the condensed-matter emergent-gravity class.
-  Adds **option D (emergent collective spin-2, no new axiom)** to A/B/C; non-generic, pending the
-  600-cell emergent-graviton calculation. (a) OPEN. NO VERDICT MOVED.
+  observed first-order GW). Wall stands for any local polynomial in (φ,V). The EMERGENT route is
+  permitted (Weinberg–Witten evaded by CPP's preferred-frame / emergent-Lorentz structure) — tested in
+  1116.
+- **1116** — spin-2 Step 5 (THE ASSAULT, emergent-graviton calculation): the dynamical matrix of the
+  scalar+vector field on the icosahedral 600-cell lattice has 4 modes of helicity {0,0,±1} only — **NO
+  helicity-±2, for ANY couplings** (helicity fixed by the scalar+vector representation; couplings set
+  only dispersions). **Option D RULED OUT.** ⇒ closing op:einstein (a) / matching observed tensor GWs
+  **REQUIRES a fundamental rank-2 d.o.f. — the spin-bit axiom (A/B/C) is NECESSARY.** The architect's
+  granularity intuition is vindicated as the reason. Founder's-vision entry recorded. (a) OPEN pending
+  the axiom choice. NO VERDICT MOVED.
 
 ## Cap status (for the CC umbrella)
 Before 1107 the cap was "is the source excess or absolute?" After 1107 (Step b) the cheapest kill was
@@ -78,12 +83,14 @@ be **added as a new axiom** (option A: CP State Register; B: LSP broadcast; C: G
 CPP-as-axiomatized is a **scalar–vector theory of gravity** with a GW-polarization tension; the
 cosmological-constant local half (b/b′) is unaffected.
 
-**Updated by 1115 (the run at the Einstein wall):** the spin-2 closure has **four** options. A/B/C add a
-fundamental rank-2 attribute (the spin-bit axiom). **Option D** is emergent: the helicity-2 mode as a
-*collective* excitation of the 600-cell — **no new axiom**, permitted because CPP's preferred-frame /
-emergent-Lorentz structure evades Weinberg–Witten, and consistent with CPP's emergentist pattern (ZBW
-spin, emergent SR). Option D is **non-generic** (standard lattice elasticity has no spin-2 phonon) and
-hinges on the open **600-cell emergent-graviton calculation**: does the long-wavelength collective
-theory contain an independent transverse-traceless mode? The architect's decision is now *attempt D
-first, axiomatize (A/B/C) only if D fails* — and the 'no spin-bit' instinct is the principled option-D
-bet.
+**RESOLVED by 1116 (the emergent-graviton calculation):** option D is **ruled out**. The collective
+spectrum of the scalar+vector field on the 600-cell is helicities {0,0,±1} — no spin-2, for any
+couplings (representation-theoretic). The composite/bilinear route was already excluded (1115). So the
+**spin-bit axiom (A/B/C) is NECESSARY** — closing op:einstein (a) and matching the observed tensor GW
+polarizations requires a fundamental rank-2 d.o.f. The architect's granularity intuition is vindicated
+as the reason (scalar magnitude + vector direction is representationally too poor to carry the l=2
+quadrupole). This is the *normal* situation in physics (the graviton is fundamental in every working
+theory of gravity); CPP joins the mainstream on this point. The remaining work is the deliberate
+engineering of the axiom: which flow (A: CSR / B: LSP / C: GP→CP), its form, and the source coupling
+`Q_ij ↔ T_μν`. The geometric slot (600-cell H_g, 1112) and the propagation (rank-agnostic shell-sum,
+1113) are already in hand.

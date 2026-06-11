@@ -56,6 +56,14 @@ consistent with CPP's emergentism (ZBW spin, emergent SR). Non-generic; hinges o
 emergent-graviton calculation. So the options are A/B/C (fundamental axiom) **or D (emergent, no axiom)**
 — attempt D first.
 
+## Step 5 (1116) — THE ASSAULT: emergent-graviton calculation → option D RULED OUT
+The dynamical matrix of the scalar+vector field on the icosahedral 600-cell lattice has 4 modes of
+helicity {0,0,±1} only — no helicity-±2, for any couplings (helicity fixed by the representation). The
+emergent route fails. **VERDICT: the spin-bit axiom (A/B/C) is NECESSARY** to carry gravity's tensor
+sector; the architect's granularity intuition is the reason. CPP joins mainstream gravity (spin-2
+fundamental). Remaining = engineer the axiom (which flow, its form, source coupling); the geometric slot
+(H_g) and propagation (shell-sum) are in hand.
+
 ## Resting state
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
