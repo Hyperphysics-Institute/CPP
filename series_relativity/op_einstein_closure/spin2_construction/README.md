@@ -192,6 +192,15 @@ rate = 1.000640 at e=0.6 — no budget room for a hidden drain). All three revie
 applied; candidate → v0.3; T5 settled (amendment, 9, audit note 10); package → v1.1, re-dispatched.
 Aggregation: `review/reviews-A3PRIME.md`. NO VERDICT MOVED.
 
+## CYCLE CLOSED (1128) — DG-3 ROUND 2: 3/3 CONFIRM — A3′ PASSES THE PROGRAMME'S FIRST AXIOM-LEVEL REVIEW
+ChatGPT withdraws its round-1 objection ("this closes my prior objection"; ledger independently
+recomputed analytically: 0.999998), Grok and Copilot confirm at SCRIPT-EXECUTED. T2 unanimous
+derived-unique. Final calibration applied (candidate → v0.4: "no independently operational energy
+channel under C5"). Two rounds; one verdict-flipping objection raised, upheld against the vote count,
+fixed with substance (lemma + Script 4), withdrawn by its author. **Registration gated only on the
+architect's sign-off → single STOP-and-warn registry patch (axiom-registry.md A3→A3′, count 9 + audit
+note; master_glossary.md LSP′ + DG-3 pin).** Aggregation: `review/reviews-A3PRIME.md`.
+
 ## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's

@@ -1,4 +1,4 @@
-# Spin-2 Task 2 — THE AXIOM TEXT (candidate v0.3): A3′, the Completed Broadcast Axiom — one scalar, one vector, one tensor; nine numbers; no fourth rung (Patch 1123)
+# Spin-2 Task 2 — THE AXIOM TEXT (candidate v0.4 — PASSED DG-3 3/3): A3′, the Completed Broadcast Axiom — one scalar, one vector, one tensor; nine numbers; no fourth rung (Patch 1123)
 
 **Sub-arc:** `series_relativity/op_einstein_closure/spin2_construction/` · **Charter:** `README.md`
 · **Verify:** `code/1123_task2_completion_check.py`
@@ -31,7 +31,7 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 
 ## 2. The candidate axiom text
 
-> ### A3′ — The Completed Broadcast (Lattice State Packet) Axiom  *(candidate v0.3 — C4 revised Patch 1124; C5 + energy language revised per DG-3 round 1, Patch 1127)*
+> ### A3′ — The Completed Broadcast (Lattice State Packet) Axiom  *(candidate v0.4 — PASSED DG-3 3/3, two rounds; final calibration Patch 1128; awaiting architect sign-off for registration)*
 >
 > At every Absolute Moment, each Grid Point broadcasts to every GP on its PSR shell a Lattice
 > State Packet whose dynamical content is the complete set of rotationally protected
@@ -86,8 +86,8 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 > GR; in the assembled metric the scalar/vector radiative tails are constraint pattern and do not
 > contribute to the TT Isaacson flux. CPP-internal channel energy is defined operationally by the
 > C5 coupling (**the Operational-Energy Lemma**, Patch 1127): emission = work by the assembled
-> retarded metric (= GR's quadrupole luminosity); absorption = TT-only; a bare-channel Hamiltonian
-> is operationally empty since no axiom couples matter to a bare channel; the eccentric ledger
+> retarded metric (= GR's quadrupole luminosity); absorption = TT-only; there is **no independently
+> operational energy channel under C5** (no axiom couples matter to a bare channel); the eccentric ledger
 > closes (TT flux / Peters rate = 1.000640 at e = 0.6). *(v0.3 — C5 is unique given the
 > harmonic-pattern assembly demand + conservation inheritance; derived from the constraint
 > structure per DG-3 round-1 adjudication: Grok + Copilot "derived-unique," ChatGPT "mandatory
@@ -178,6 +178,10 @@ submission. Recommended order: Task 3 → Task 4 → Task 5 (DG-3) → registrat
 - **v0.1 → v0.2 (Patch 1124):** C4 source corrected to traceless local stress (origin-dependence
   defect); λ = 16πG/c⁴ derived. **v0.2 (Patch 1125):** C5 constraint-consistent assembly + trace
   completion.
+- **v0.3 → v0.4 (Patch 1128, DG-3 round 2 — CYCLE CLOSED 3/3 CONFIRM):** ChatGPT's final wording
+  calibration applied ("no independently operational energy channel under C5"); ChatGPT round-2
+  independent analytic recomputation of the eccentric ledger: 0.999998. Status: PASSED; awaiting
+  architect sign-off → registration patch.
 - **v0.2 → v0.3 (Patch 1127, DG-3 round 1):** Operational-Energy Lemma added to C5; OB-2 status =
   "discharged via the operational-energy lemma" (ChatGPT's verdict-flipping objection answered with
   lemma + eccentric-ledger computation, not wording); all three reviewers' calibrations applied;

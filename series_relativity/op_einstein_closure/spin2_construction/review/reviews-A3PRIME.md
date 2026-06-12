@@ -48,4 +48,26 @@ stronger claim; ChatGPT's reading of the gap between them is correct.
 6. **T5 settled per the convergent recommendation:** amendment, count 9, with the explicit audit
    note that new-axiom accounting would read 10.
 
-## Round 2 (package v1.1, Patch 1127) — DISPATCHED; awaiting responses.
+## Round 2 (package v1.1, Patch 1127; responses 11 June 2026) — **CYCLE CLOSED: 3/3 CONFIRM**
+
+| Reviewer | Verdict | T1(iii) re-examination | Tier |
+|---|---|---|---|
+| ChatGPT | **CONFIRM** | "This closes my prior objection" — lemma inspected; ledger INDEPENDENTLY RECOMPUTED analytically: **0.999998** (grid value 1.000640 inspected); f(e) = 10.2279 recomputed | INSPECTED + INDEPENDENTLY RECOMPUTED |
+| Grok | **CONFIRM** | "fully discharged via Operational-Energy Lemma + Script 4 ledger closure"; no budget room for a hidden drain | SCRIPT-EXECUTED + INSPECTED |
+| Copilot | **CONFIRM** | "Objection withdrawn; chain sound" — the four-step argument endorsed; "the ledger closes" | SCRIPT-EXECUTED + INSPECTED |
+
+**Synthesis.** T1 closed by all three (constraint inheritance, no 1/r leak, energy ledger); T2
+unanimous **derived-unique** (ChatGPT: "acceptable as an explicit A3′ clause, not a second axiom" —
+which is exactly what C5 is); T3–T7 stand as round-1-verified; all round-1 calibration applications
+accepted without contest; T5 settled (amendment, count 9; Copilot round 2: "dual accounting
+unnecessary" — the audit note is retained anyway, per ChatGPT round 1, as cheap transparency).
+
+**Final calibration (ChatGPT round 2, applied at cycle close, candidate → v0.4):** do not say the
+tails "have no mathematical energy functional"; say **"no independently operational energy channel
+under C5."** Applied verbatim to the candidate text and lemma language.
+
+**CYCLE RESULT: 3/3 CONFIRM. A3′ candidate v0.4 has passed the programme's first axiom-level DG-3
+review (two rounds; one verdict-flipping objection raised, upheld, fixed with substance, and
+withdrawn by its author). Registration is now gated only on the architect's sign-off → the single
+STOP-and-warn registry patch (`axiom-registry.md` A3 → A3′ + `master_glossary.md` LSP′/DG-3 pin).**
+

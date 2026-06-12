@@ -188,3 +188,9 @@ review. Registration gated on 3/3 + sign-off. NO VERDICT MOVED.
 verdict-flipping T1(iii): energy claim outran proof) — objection upheld per verdict-honesty. Fixed
 with the **Operational-Energy Lemma** + the eccentric-ledger computation (TT flux / Peters f(e) rate
 = 1.000640 at e=0.6). Candidate → v0.3, package → v1.1, re-dispatched. NO VERDICT MOVED.
+
+**DG-3 CYCLE CLOSED by 1128: 3/3 CONFIRM (round 2).** ChatGPT's round-1 verdict-flipping objection
+withdrawn by its author after the Operational-Energy Lemma + eccentric-ledger fix (independent
+analytic recomputation: 0.999998). Candidate → v0.4 (final calibration applied). **A3′ has passed the
+programme's first axiom-level review. Awaiting architect sign-off → registration patch (contested:
+axiom-registry.md, master_glossary.md — STOP-and-warn + CONV-002 re-fetch).**
