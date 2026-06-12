@@ -117,6 +117,25 @@ multi-evidential within the sector** (direct detections + polarization tests + b
 no-dipole constraint), universally sourced, instrumentally concentrated, load-bearing for three arcs.
 Axiom text = Task 2. NO VERDICT MOVED.
 
+## Task 2 (1123) — THE AXIOM TEXT (candidate v0.1): A3′, the Completed Broadcast Axiom
+The candidate text is drafted, private-lane, for DG-3 review before any registry touch. **Form of the
+move: amendment, not addition** — the registry's A3 (DI-bit propagation) is the broadcast axiom, already
+one rung behind the corpus (c07's LSP superseded the DI-bit without a registry amendment); A3′
+consolidates the full ladder (DI-bit → LSP → LSP′) per the A6′ precedent; count stays 9 (dual accounting
+→ 10 presented honestly for DG-3). **The packet completes to LSP′ = (Φ [A, l=0], V_i [T₁, l=1], Q_ij
+[H, l=2]) — 1+3+5 = 9 dynamical components.** Clauses: C1 symmetric-traceless (5 exactly, H-protected);
+C2 absolute-frame flat carriage (1119); C3 dynamics by the *same* rank-agnostic shell-sum (1113 — no new
+dynamical law); C4 source = κ ∂²_t[traceless quadrupole density] assembled from existing reports, κ
+fixed by the scalar-sector G (**zero new parameters**; statics killed by construction); C5 readout
+demoted to derivation obligation. **The completion theorem** (verify 1123): the intact icosahedral
+descents are exactly l = {0,1,2} (dimension bound: 2l+1 ≥ 7 > 5 for l ≥ 3, permanent) and LSP′ = A ⊕ T₁
+⊕ H is *precisely* the protected content — **the ladder terminates at rank 2; no fourth rung; the axiom
+is a completion**. Obligations: OB-1 quadrupole formula with scalar-G; **OB-2 polarization suppression
+via CPP's conservation laws (the primary falsifier — the axiom ships with its own kill switch)**; OB-3
+statics untouched; OB-4 no emergent double-counting. Falsifiers F1–F4 stated (polarization content, GW
+speed = c, multiplet integrity as a lattice discriminant, dispersion ceiling). Registration path: DG-3 →
+sign-off → single registry patch under STOP-and-warn. Recommended sequencing: Task 3 → Task 4 → DG-3.
+
 ## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's

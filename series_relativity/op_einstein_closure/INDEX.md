@@ -133,3 +133,20 @@ TT-projected quadrupole only). Justification preamble adopted: mono-sectoral / m
 (detections + polarization tests + binary-pulsar decay + no-dipole), universally sourced,
 instrumentally concentrated, load-bearing for three arcs. Axiom text = Task 2 (touches the axiom
 inventory under STOP-and-warn). NO VERDICT MOVED.
+
+**ADVANCED by 1122–1123 (founders-vision capture + Task 2, the axiom text):** the 11 June (later)
+founders_vision entry records the day's reasoning in the architect's voice (third assault,
+tensor-meson mirror, the mono-sectoral resolution, the lattice answering the why). The candidate axiom
+is drafted as **A3′, the Completed Broadcast Axiom (v0.1)** — an *amendment* consolidating the DI-bit →
+LSP → LSP′ ladder (A6′ precedent; count stays 9, dual accounting presented): the packet completes to
+**LSP′ = (Φ, V_i, Q_ij) = A ⊕ T₁ ⊕ H, 1+3+5 = 9 components**, with clauses C1 (symmetric-traceless,
+H-protected), C2 (absolute-frame flat carriage, per 1119), C3 (same rank-agnostic shell-sum, per 1113 —
+no new dynamics), C4 (source = κ ∂²_t[traceless quadrupole density], κ fixed by the scalar-sector G —
+**zero new parameters**, statics killed by construction), C5 (readout = derivation obligation). **The
+completion theorem** (verified): the lattice's intact descents are exactly l = {0,1,2}, permanently
+(2l+1 > 5 for l ≥ 3) — LSP′ is *precisely* the protected content; **the ladder terminates; no fourth
+rung**. Obligations OB-1–4 and falsifiers F1–F4 stated, with **OB-2 (polarization suppression via CPP
+conservation laws) flagged as the primary attack surface** — the axiom ships with its own kill switch.
+Registry NOT touched (registration deferred to post-DG-3 + sign-off, single patch under STOP-and-warn).
+Recommended sequencing: Task 3 (coupling/OB-1) → Task 4 (GR-recovery/OB-2–4) → Task 5 (DG-3) →
+registration.
