@@ -429,6 +429,15 @@ If θ = 132.73° can be derived from the W/Z cage geometry without
 calibration, it would convert the Koide formula from a 2-parameter
 fit (SM-4) to a 0-parameter prediction. Requires: EW series completion.
 
+
+### Spin-2 / A3′ falsifiers (registered Patch 1130; open/testable, NOT counted — counting per panel protocol later)
+| ID | Prediction |
+|---|---|
+| PRED-O-35 | GW polarization content is pure tensor (Eardley N₂): any confirmed first-order breathing/longitudinal/vector GW mode falsifies A3′ (F1; THEO-SR-EIN-3/4). |
+| PRED-O-36 | GW speed = c exactly (same shell-sum as light); GW170817 ≲10⁻¹⁵ passed by construction (F2). |
+| PRED-O-37 | No GW polarization fine-structure/splitting (H-protected 5-fold multiplet); doubles as a lattice discriminant — a cubic substrate predicts 2+3 splitting (F3; THEO-SR-EIN-1). |
+| PRED-O-38 | No helicity-dependent vacuum dispersion beyond the flat-carriage ceiling θ < 10⁻⁴⁶–10⁻⁵¹ (F4; Patch 1119). |
+
 ---
 
 *Document prepared by Thomas Lee Abshier ND and Claude Sonnet
