@@ -73,10 +73,18 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 > *(v0.2 revision — v0.1's "quadrupole density" formulation was origin-dependent, hence not a
 > legitimate local law; caught and corrected in the Task-3 derivation, Patch 1124.)*
 >
-> **(C5) Readout.** The GP→CP displacement instruction extends to include the strain derived
-> from the local Q_ij via the metric map. *This clause is listed for completeness but is a
-> derivation obligation (Task 4), not an independent axiom clause: the readout follows from
-> the existing Compute→Displace machinery once the packet carries Q_ij.*
+> **(C5) Readout.** The GP→CP displacement instruction follows geodesics of the **unique
+> constraint-consistent (harmonic-pattern) effective metric assembled from the nine packet
+> channels** — h̄_00 ← Φ, h̄_0i ← V_i, h̄_ij ← Q_ij + ⅓δ_ij τ, with the spatial trace τ the
+> **conservation completion** ∇τ = 3(∂_t h̄_{0i} − ∂_j Q_{ji}) (wave-zone form:
+> τ = 3(h̄_tt − n̂n̂:Q); statics: τ = 0 by the virial theorem, reducing exactly to the c07
+> map). The geodesic-following itself is the existing c07 PCD→geodesic machinery, unchanged.
+> Consequence (Task 4, Patch 1125): the tidal response is **exactly TT** — Eardley class N₂,
+> as GR; the scalar/vector radiative tails cancel in the curvature and carry no independent
+> energy. *(v0.2 revision — the completion rule is the one assembly that does not violate the
+> constraint identities the retarded channels already satisfy; it adds no degrees of freedom.
+> Whether it is derived-unique or independent-postulate content is an explicit DG-3 review
+> question.)*
 
 ## 3. The completion theorem (why "completed" is literal — verify script)
 

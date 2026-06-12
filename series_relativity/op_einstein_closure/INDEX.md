@@ -163,3 +163,18 @@ monopole/dipole — the no-dipole evidential leg becomes a consequence of A3′;
 content → Task 4, the remaining kill switch). Observables, nothing tuned: Hulse–Taylor
 Ṗ_b = −2.4031×10⁻¹², double pulsar −1.2483×10⁻¹² (both on the observed records), GW150914-class
 h ~ 3×10⁻²¹, GW speed = c. NO VERDICT MOVED (results ride the candidate pending DG-3).
+
+**COMPLETED by 1125 (Task 4 — the readout, the TT-only response, the energy closure): the construction
+phase (Tasks 1–4) is DONE and the package is DG-3-READY.** The sharpened kill switch survived: the
+scalar/vector channels' own radiative tails (the Brans–Dicke-type trap, at Newtonian strength) cancel
+exactly in the curvature — proven symbolically (R_{i0j0} depends only on the two TT combinations) and
+numerically (six Eardley modes on an e=0.6 binary: non-tensor ≤ 4×10⁻¹¹ of tensor). **Discovery: the
+harmonic pattern's 10th component (spatial trace) is REDUNDANT** — locally completed from the nine
+channels via conservation (∇τ = 3(∂_t h̄_{0i} − ∂_j Q_{ji}); = GR's value to 10⁻¹⁹; counterfactual
+without it: O(1) breathing/longitudinal violation) — physics ratifying the completion theorem's "every
+protected irrep exactly once." C5 → v0.2 (constraint-consistent assembly). Energy closure: flux /
+Einstein luminosity = 1.000246 — normalization forced, no extra radiative channel, the double-pulsar
+10⁻⁴ agreement is a real pass. **Eardley class N₂ = GR. All four obligations DISCHARGED** (OB-1
+complete, OB-2 parts 1+2, OB-3 theorem, OB-4 architecture). Falsifier F1 armed both directions. Next:
+Task 5 — DG-3 dispatch (review questions Q1: completion-rule status; Q2: amendment-vs-addition), on the
+architect's "initiate review protocol." NO VERDICT MOVED.

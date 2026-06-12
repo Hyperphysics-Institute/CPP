@@ -153,6 +153,26 @@ switch). Observables with nothing to tune: Hulse–Taylor Ṗ_b = −2.4031×10�
 GR over 5 decades); double pulsar −1.2483×10⁻¹² (record 1.000 to 10⁻⁴); GW150914-class h ~ 3×10⁻²¹;
 GW speed = c. NO VERDICT MOVED.
 
+## Task 4 (1125) — THE READOUT, THE TT-ONLY RESPONSE, THE ENERGY CLOSURE: Eardley class N₂
+The kill switch, sharpened and survived. The real trap: **the scalar and vector channels radiate too**
+(1/r quadrupole tails at Newtonian strength — no Brans–Dicke suppression available); uncanceled, CPP
+would predict breathing/longitudinal strain AND ~10% extra binary-decay luminosity — dead at the double
+pulsar. **P1 (symbolic, exact):** for constraint-satisfying plane waves, R_{i0j0} depends ONLY on the
+two TT combinations — scalar tail, vector tails, longitudinal, and trace all cancel in the curvature
+(direct sympy computation + gauge-invariance counting). **P2 (discovery):** the harmonic pattern needs a
+10th component (spatial trace τ, sourced by T_kk) the packet lacks — but **τ is redundant**: locally
+completed from the channels, ∇τ = 3(∂_t h̄_{0i} − ∂_j Q_{ji}); verified = GR's (2G/c⁴r)M̈_kk to 10⁻¹⁹;
+statics τ = 0 by virial (why c07/c08 never noticed). Physics ratifies the completion theorem: no second
+A-slot needed — conservation makes it redundant. **C5 v0.2** codified (constraint-consistent assembly;
+derived-unique vs postulate = explicit DG-3 question Q1). **P3:** six Eardley modes on an e=0.6 binary
+(the armed trap — circular hides it, M̈_kk=0): breathing/long/vector ≤ 4×10⁻¹¹ of tensor with the
+completion; **O(1) violation without it** (counterfactual documented). **P4:** sphere-integrated
+Isaacson flux / Einstein luminosity = 1.000246 — source decay = field flux; normalization forced; the
+scalar/vector tails carry no independent energy ⇒ no extra channel ⇒ **the double-pulsar 10⁻⁴ pass is
+real**. OB-1 COMPLETED; OB-2 fully DISCHARGED; OB-4 DISCHARGED by architecture. **Tasks 1–4 complete —
+the package is DG-3-ready** (review questions: Q1 completion-rule status; Q2 amendment-vs-addition).
+NO VERDICT MOVED.
+
 ## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
