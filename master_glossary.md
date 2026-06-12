@@ -8,6 +8,11 @@
 
 ## Acronyms
 
+- **DG-N — Decision Gate N.** Numbered choice-points within a document or arc (e.g. the Patch-0652
+  theorem-registry DG-1…DG-5). **"The DG-3 swarm"** is the programme's standing name for the
+  three-reviewer adversarial review gate (ChatGPT + Copilot + Grok): the "3" is both gate-numbering
+  heritage and the reviewer count a verdict-bearing artifact must survive (3/3 CONFIRM).
+
 | Acronym | Expansion | Meaning |
 | --- | --- | --- |
 | CPP | Conscious Point Physics | The theory itself |
@@ -53,6 +58,16 @@ The background medium of CPP — all lattice sites occupied by DPs in their grou
 ### DI-bit (Displacement Increment)
 
 The fundamental quantum of energy/information transfer. When a CP is displaced from its equilibrium position, the displacement propagates as a DI-bit to the neighbouring CP. DI-bits carry phase, amplitude, and polarisation. The DI-bit hopping amplitude determines the Schrödinger equation (QM-1).
+
+### LSP′ (Completed Lattice State Packet) — Axiom A3′
+The GP→GP broadcast after the A3′ amendment (registered Patch 1129, DG-3 3/3): nine dynamical
+components — scalar Φ = |SSV|_abs (icosahedral irrep A, l=0; g_tt), vector V_i = SSV_net (T₁, l=1;
+spatial curvature/gravitomagnetism), and the symmetric-traceless Q_ij (H, l=2; the radiative tensor
+/ gravitational-wave sector) — exactly the lattice's rotationally protected representation content
+(intact descents are l = {0,1,2} only; no fourth rung). Supersedes: DI-bit (scalar) → LSP
+(scalar+vector, c07) → LSP′. Q_ij sourced by the traceless local stress with λ = 16πG/c⁴ (zero new
+parameters); matter couples only via the assembled metric (C5); tidal response is pure tensor
+(Eardley N₂). Full candidate text: spin2_construction/1123_task2_axiom_text_A3prime.md (v0.4).
 
 ### Nexus
 

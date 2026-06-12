@@ -36,7 +36,7 @@ This registry tracks both sides of that ledger.
 |---|---|---|---|---|
 | **A1** | CP existence | Conscious Points exist with polarity (±), type (electric or quark), and position on the lattice | QM-1 | All |
 | **A2** | 600-cell topology | CPs are arranged on the vertices of a tessellated 600-cell polytope (V=120, E=720, F=1200, C=600, z=12) | SM-3 | All series |
-| **A3** | DI-bit propagation | DI-bits (displacement increments) propagate between CPs at c = l_P/t_P, carrying complex amplitudes ψ = √ρ·e^{iφ} | QM-1 | QM-1–6; SR-1 |
+| **A3′** | The Completed Broadcast (LSP′) | At every Absolute Moment each GP broadcasts to its PSR shell the Lattice State Packet LSP′ = (x_GP, t_abs; Φ, V_i, Q_ij) — the complete set of rotationally protected irreps of the lattice point group (A ⊕ T₁ ⊕ H = 1+3+5 = 9 dynamical components), propagating at c = l_P/t_P in the absolute (Nexus) frame with flat per-hop transport, all channels obeying the same icosahedral shell-sum, Q_ij sourced by −(16πG/c⁴)T_ij^{TF} (λ fixed by the scalar sector's G — zero new parameters), and matter coupled only via geodesics of the unique constraint-consistent assembled metric (clauses C1–C5; full text + obligations + falsifiers: spin2_construction/1123_task2_axiom_text_A3prime.md v0.4). Consolidates the ladder DI-bit (scalar, SR-era; ψ = √ρ·e^{iφ}) → LSP (+vector, c07/GR statics) → LSP′ (+tensor, GR radiation), per the A6′ precedent. **PASSED DG-3 3/3 (two rounds, Patches 1126–1128); registered Patch 1129 with architect sign-off, 11–12 June 2026.** *Audit note: under new-axiom accounting the count would read 10; amendment accounting (panel-settled, T5) keeps 9.* | QM-1 (as A3); A3′: Patches 1121–1128 | QM-1–6; SR-1; c05/c07/c08/c11; spin2_construction (op:einstein) |
 | **A4** | The Nexus | A global consistency constraint enforces lattice-wide coherence at each Absolute Moment | QM-3 | QM-3–6; SD-1–5 |
 
 **Notes:** These 4 axioms are the irreducible foundation — the "four primitives" of QM-6. They define what the theory IS.
@@ -107,7 +107,7 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 
 | Tier | Axioms | Count |
 |---|---|---|
-| 1. Ontological | A1–A4 | 4 |
+| 1. Ontological | A1, A2, A3′, A4 | 4 |
 | 2. Metric | A5 | 1 |
 | 3. Walk-Dimension | A6' | 1 |
 | 4. Signs | A10 | 1 |
@@ -233,6 +233,7 @@ At the 600-cell cage scale, the dimensionality of lattice walks determines gauge
 | **SS-2** | **9** | **+1 (A11)** | **6** | **6.0** |
 | **SS-7 v1.2** | **9** | **0** | **12 (alpha-chain ¹²C→⁵⁶Ni at $N_\alpha \in [3,14]$)** | **∞** |
 | **SS-8 v1.0** | **9** | **0** | **42 (12 primary $N_\text{ex}=2$ + 30 secondary $N_\text{ex}\in[3,8]$, conditional on C1–C4 + D1–D3)** | **∞** |
+| **A3′ (spin-2, Patches 1121–1129)** | **9 (A3→A3′ amendment; audit: 10 under new-axiom accounting)** | **+1 d.o.f., 0 parameters** | **GW sector: Einstein quadrupole formula derived; Hulse–Taylor + double-pulsar decay; Eardley N₂; F1–F4 falsifiers armed** | **∞ (zero-parameter)** |
 | **Audit follow-up (26 Apr 2026)** | **9** | **0** | **+8 cross-referenced predictions previously tracked here only (SM-6 sin²θ_W, lepton Koide phase, m_μ, m_τ; SM-7 α_s cage, quark Koide phase; SM-8 C(n,2)→m_b/m_s frontier; SS-2 r²_neutron); +1 reframe of #14 from "3 generations" accommodation to "4 bonded cage types" derivation** | **∞** |
 | **SS-9 v1.0 (7 May 2026)** | **9** | **0** | **3 (PRED-C-75/76/77 forward-predicted ⁸⁴Mo/⁸⁸Ru/⁹²Pd verified at 0.05%/0.07%/0.13%)** + **1 new theorem THEO-SS-16 five-clause conditional closing OPEN-SS-24** | **∞** |
 | **SF-4 v1.0→v4.4 (Sessions 54-81)** | **9** | **0** | **8 neutrino-sector predictions from m_e calibration (7 of 8 at zero parameters); $\sigma_\nu = z^{-10}$ at 2%** + **5 new theorems THEO-SF-4-1 through THEO-SF-4-5 incl. Composite K3-Cage-Shell Coupling Theorem at v4.0 — FIRST CROSS-SECTOR CLOSURE IN CPP with SM-5 op:nu_id RESOLVED** | **∞** |

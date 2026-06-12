@@ -194,3 +194,9 @@ withdrawn by its author after the Operational-Energy Lemma + eccentric-ledger fi
 analytic recomputation: 0.999998). Candidate → v0.4 (final calibration applied). **A3′ has passed the
 programme's first axiom-level review. Awaiting architect sign-off → registration patch (contested:
 axiom-registry.md, master_glossary.md — STOP-and-warn + CONV-002 re-fetch).**
+
+**REGISTERED by 1129 (architect sign-off):** A3′ v0.4 entered `axiom-registry.md` (amendment, count
+9, audit note 10); `master_glossary.md` LSP′ + DG-3 pin. **op:einstein (a) CLOSED** — the radiative
+tensor sector has its carrier, by necessity (three assaults) and at zero new parameters, panel-passed
+3/3. Follow-ups queued with their own warns: frontier SR.md flip; theorem/prediction registrations;
+Phase 7A flagship assembly; dark-sector + CC unconditionalizations.

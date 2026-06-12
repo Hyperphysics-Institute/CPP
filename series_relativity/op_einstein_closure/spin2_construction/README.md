@@ -201,7 +201,17 @@ fixed with substance (lemma + Script 4), withdrawn by its author. **Registration
 architect's sign-off → single STOP-and-warn registry patch (axiom-registry.md A3→A3′, count 9 + audit
 note; master_glossary.md LSP′ + DG-3 pin).** Aggregation: `review/reviews-A3PRIME.md`.
 
-## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
+## REGISTERED (1129) — A3′ v0.4 enters axiom-registry.md with architect sign-off; **op:einstein (a) CLOSED**
+The single STOP-and-warn registry patch: A3 → A3′ (count 9 + audit note 10), trajectory row (+1
+d.o.f., 0 parameters), master_glossary LSP′ entry + DG-3 pin. Follow-ups queued (own warns):
+frontier SR.md flip, theorem/prediction registrations, Phase 7A assembly, downstream
+unconditionalizations. See `1129_registration_and_closure.md`.
+
+## Resting state — ARC COMPLETE THROUGH REGISTRATION
+Diagnostic (Steps 1–7) + Construction (Tasks 1–4) + Review (DG-3 3/3, two rounds) + Registration
+(1129) all closed. The gravitational wave has its carrier.
+
+## (superseded) Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's
 axioms** (1114), so closing (a) is a foundational choice (add a rank-2 d.o.f. to a fundamental flow),
