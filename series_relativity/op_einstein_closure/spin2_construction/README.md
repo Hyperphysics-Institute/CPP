@@ -136,6 +136,23 @@ statics untouched; OB-4 no emergent double-counting. Falsifiers F1–F4 stated (
 speed = c, multiplet integrity as a lattice discriminant, dispersion ceiling). Registration path: DG-3 →
 sign-off → single registry patch under STOP-and-warn. Recommended sequencing: Task 3 → Task 4 → DG-3.
 
+## Task 3 (1124) — THE COUPLING AND THE QUADRUPOLE FORMULA: λ = 16πG/c⁴, zero new parameters
+**C4 revised v0.1 → v0.2** (defect caught in derivation: a "quadrupole density" is origin-dependent —
+not a legitimate local law; correct local source = the **traceless stress** T_ij^{TF}, GP-assemblable
+from CP momentum flux, with the quadrupole emerging in the far field through conservation, exactly as in
+GR). Chain (each link verified): □Q = −λT^{TF} → retarded far field (λ/8πr)M̈^{TF} → conservation
+identity ∫T_ij d³x = ½M̈_ij (verified to 6×10⁻⁷ on an e=0.6 Kepler binary; consumes mass = CP-count and
+momentum = displacement-rule conservation) → strain-valued readout + scalar-G matching ⇒
+**λ = 16πG/c⁴** ⇒ **h^TT = (2G/c⁴r)Q̈^TT(t_ret)** — the Einstein quadrupole formula. **The arc's origin
+gap closes: the equation c08 ASSERTED is now DERIVED** (d.o.f. from A3′, dynamics from 1113, source from
+C4, coefficient from G-consistency). Luminosity inherited by TT-sector isomorphism (energy normalization
+→ Task 4). **OB-3 discharged as theorem** (perfect-fluid T^{TF}=0 identically; tensor virial for bounded
+statics — Schwarzschild untouched). **OB-2 part 1 discharged** (no monopole/dipole — the no-dipole
+evidential leg is now a *consequence* of A3′; part 2 = readout helicity content → Task 4, the kill
+switch). Observables with nothing to tune: Hulse–Taylor Ṗ_b = −2.4031×10⁻¹² (record 0.9983±0.0016 of
+GR over 5 decades); double pulsar −1.2483×10⁻¹² (record 1.000 to 10⁻⁴); GW150914-class h ~ 3×10⁻²¹;
+GW speed = c. NO VERDICT MOVED.
+
 ## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's

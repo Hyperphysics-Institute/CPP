@@ -1,4 +1,4 @@
-# Spin-2 Task 2 — THE AXIOM TEXT (candidate v0.1): A3′, the Completed Broadcast Axiom — one scalar, one vector, one tensor; nine numbers; no fourth rung (Patch 1123)
+# Spin-2 Task 2 — THE AXIOM TEXT (candidate v0.2): A3′, the Completed Broadcast Axiom — one scalar, one vector, one tensor; nine numbers; no fourth rung (Patch 1123)
 
 **Sub-arc:** `series_relativity/op_einstein_closure/spin2_construction/` · **Charter:** `README.md`
 · **Verify:** `code/1123_task2_completion_check.py`
@@ -31,7 +31,7 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 
 ## 2. The candidate axiom text
 
-> ### A3′ — The Completed Broadcast (Lattice State Packet) Axiom  *(candidate v0.1)*
+> ### A3′ — The Completed Broadcast (Lattice State Packet) Axiom  *(candidate v0.2 — C4 revised at Task 3, Patch 1124)*
 >
 > At every Absolute Moment, each Grid Point broadcasts to every GP on its PSR shell a Lattice
 > State Packet whose dynamical content is the complete set of rotationally protected
@@ -62,13 +62,16 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 > components. In the continuum limit this yields wave propagation at exactly c,
 > □Q_ij = S_ij. [The shell-sum is rank-agnostic — 1113; no new dynamical law is introduced.]
 >
-> **(C4) Source.** S_ij = κ ∂²_t [ q_ij ], where q_ij is the **traceless second-moment
-> (quadrupole) density of the local matter distribution**, assembled by the GP at the
-> Perceive step from the CP positions and polarization energies (E_pol = mc²) it already
-> receives, and κ is **fixed by the requirement that the same Newton constant G governing the
-> scalar sector governs the tensor sector** (precise coefficient derived in Task 3; target
-> κ → recovery of □h̄ = −16πG T/c⁴ in the TT sector). A static configuration has ∂²_t q_ij = 0
-> and sources nothing. [No-static-double-counting — the scalar keeps Schwarzschild; 1121.]
+> **(C4) Source.** S_ij = −λ T_ij^{TF}, where **T_ij^{TF} is the traceless part of the local
+> matter stress (momentum-flux) tensor** — origin-independent, and assembled by the GP at the
+> Perceive step from the CP momentum flux it already registers — and λ is **fixed by the
+> requirement that the same Newton constant G governing the scalar sector governs the tensor
+> sector**: λ = 16πG/c⁴ (derived, Task 3/Patch 1124). The far-field consequence (via the
+> conservation identity ∫T_ij d³x = ½M̈_ij) is quadrupole radiation,
+> h^TT = (2G/c⁴r) Q̈^TT(t_ret); static matter sources nothing **as a theorem** (perfect-fluid
+> T^{TF} = 0 identically; bounded statics by the tensor virial theorem — OB-3 discharged).
+> *(v0.2 revision — v0.1's "quadrupole density" formulation was origin-dependent, hence not a
+> legitimate local law; caught and corrected in the Task-3 derivation, Patch 1124.)*
 >
 > **(C5) Readout.** The GP→CP displacement instruction extends to include the strain derived
 > from the local Q_ij via the metric map. *This clause is listed for completeness but is a

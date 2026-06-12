@@ -150,3 +150,16 @@ conservation laws) flagged as the primary attack surface** — the axiom ships w
 Registry NOT touched (registration deferred to post-DG-3 + sign-off, single patch under STOP-and-warn).
 Recommended sequencing: Task 3 (coupling/OB-1) → Task 4 (GR-recovery/OB-2–4) → Task 5 (DG-3) →
 registration.
+
+**ADVANCED by 1124 (Task 3 — the coupling and the quadrupole formula):** **λ = 16πG/c⁴ with zero new
+parameters** — fixed by the scalar sector's G under the strain-valued readout convention. C4 revised
+v0.1 → v0.2 (origin-dependence defect caught in derivation; correct local source = traceless stress
+T^{TF}; quadrupole emerges in the far field via the conservation identity ∫T_ij = ½M̈_ij, verified
+6×10⁻⁷). **The arc's origin gap closes: c08's ASSERTED wave equation □Q = −(16πG/c⁴)T^{TF} is now
+DERIVED**, yielding h^TT = (2G/c⁴r)Q̈^TT — the Einstein quadrupole formula; luminosity inherited by
+TT-isomorphism. **OB-1 discharged** (energy normalization → Task 4); **OB-3 discharged as theorem**
+(perfect-fluid T^{TF} = 0; tensor virial — Schwarzschild untouched); **OB-2 part 1 discharged** (no
+monopole/dipole — the no-dipole evidential leg becomes a consequence of A3′; part 2 = readout helicity
+content → Task 4, the remaining kill switch). Observables, nothing tuned: Hulse–Taylor
+Ṗ_b = −2.4031×10⁻¹², double pulsar −1.2483×10⁻¹² (both on the observed records), GW150914-class
+h ~ 3×10⁻²¹, GW speed = c. NO VERDICT MOVED (results ride the candidate pending DG-3).
