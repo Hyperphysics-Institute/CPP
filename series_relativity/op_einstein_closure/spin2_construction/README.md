@@ -173,6 +173,15 @@ real**. OB-1 COMPLETED; OB-2 fully DISCHARGED; OB-4 DISCHARGED by architecture. 
 the package is DG-3-ready** (review questions: Q1 completion-rule status; Q2 amendment-vs-addition).
 NO VERDICT MOVED.
 
+## Task 5 (1126) — DG-3 CYCLE OPENED: the A3′ review package dispatched
+Self-contained package at `review/a3prime_axiom_review_package_v1.0.md` (CONV-001/dispatch-protocol
+compliant: candidate v0.2 full text, OB-1..4 discharge claims, triage T1–T7 with T1 = the OB-2
+kill-switch chain and T2 = the completion-rule status, reviewer steers, and the three construction
+verify scripts embedded in full). Panel: ChatGPT, Copilot, Grok. Responses aggregate in
+`review/reviews-A3PRIME.md`. First axiom-level change ever put to the panel — maximum scrutiny
+requested. Registration remains gated on 3/3 + architect sign-off → single STOP-and-warn registry
+patch. NO VERDICT MOVED.
+
 ## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's

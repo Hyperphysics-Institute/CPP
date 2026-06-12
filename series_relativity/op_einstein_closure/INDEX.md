@@ -178,3 +178,8 @@ Einstein luminosity = 1.000246 — normalization forced, no extra radiative chan
 complete, OB-2 parts 1+2, OB-3 theorem, OB-4 architecture). Falsifier F1 armed both directions. Next:
 Task 5 — DG-3 dispatch (review questions Q1: completion-rule status; Q2: amendment-vs-addition), on the
 architect's "initiate review protocol." NO VERDICT MOVED.
+
+**DG-3 CYCLE OPENED by 1126 (Task 5):** the A3′ review package (candidate v0.2 + all four discharged
+obligations + triage T1–T7 + embedded verify code) dispatched to the panel (ChatGPT, Copilot, Grok) at
+`spin2_construction/review/a3prime_axiom_review_package_v1.0.md`. The programme's first axiom-level
+review. Registration gated on 3/3 + sign-off. NO VERDICT MOVED.
