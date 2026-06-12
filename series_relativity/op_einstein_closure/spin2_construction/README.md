@@ -182,6 +182,16 @@ verify scripts embedded in full). Panel: ChatGPT, Copilot, Grok. Responses aggre
 requested. Registration remains gated on 3/3 + architect sign-off → single STOP-and-warn registry
 patch. NO VERDICT MOVED.
 
+## Round 1 + RESTATE (1127) — DG-3 returned 2× CONFIRM + 1× RESTATE; objection upheld; v0.3 + v1.1 re-fired
+Grok and Copilot CONFIRM at SCRIPT-EXECUTED tier (T1(ii) leak hunt cleared; completion rule
+"derived-unique"); ChatGPT RESTATE with one verdict-flipping T1(iii) objection — **upheld despite the
+2–1 count**: the v1.0 energy claim outran P4's proof. Fix: **the Operational-Energy Lemma** (only
+field↔matter coupling is C5 ⇒ emission = GR's quadrupole work, absorption = TT-only, bare-channel
+Hamiltonian operationally empty) + **Script 4**: the eccentric ledger closes (TT flux / Peters f(e)
+rate = 1.000640 at e=0.6 — no budget room for a hidden drain). All three reviewers' calibrations
+applied; candidate → v0.3; T5 settled (amendment, 9, audit note 10); package → v1.1, re-dispatched.
+Aggregation: `review/reviews-A3PRIME.md`. NO VERDICT MOVED.
+
 ## Resting state — DIAGNOSTIC PHASE COMPLETE (Steps 1–7); CONSTRUCTION PHASE OPEN (Task 1 decided)
 The construction is fully mapped: the d.o.f. is identified (l=2 quadrupole), geometrically slotted
 (600-cell H_g, 1112), and propagation-ready (rank-agnostic shell-sum, 1113) — but **absent from CPP's

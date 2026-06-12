@@ -1,4 +1,4 @@
-# Spin-2 Task 2 — THE AXIOM TEXT (candidate v0.2): A3′, the Completed Broadcast Axiom — one scalar, one vector, one tensor; nine numbers; no fourth rung (Patch 1123)
+# Spin-2 Task 2 — THE AXIOM TEXT (candidate v0.3): A3′, the Completed Broadcast Axiom — one scalar, one vector, one tensor; nine numbers; no fourth rung (Patch 1123)
 
 **Sub-arc:** `series_relativity/op_einstein_closure/spin2_construction/` · **Charter:** `README.md`
 · **Verify:** `code/1123_task2_completion_check.py`
@@ -31,7 +31,7 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 
 ## 2. The candidate axiom text
 
-> ### A3′ — The Completed Broadcast (Lattice State Packet) Axiom  *(candidate v0.2 — C4 revised at Task 3, Patch 1124)*
+> ### A3′ — The Completed Broadcast (Lattice State Packet) Axiom  *(candidate v0.3 — C4 revised Patch 1124; C5 + energy language revised per DG-3 round 1, Patch 1127)*
 >
 > At every Absolute Moment, each Grid Point broadcasts to every GP on its PSR shell a Lattice
 > State Packet whose dynamical content is the complete set of rotationally protected
@@ -79,12 +79,19 @@ dispute: the move adds **one degree of freedom and zero parameters** (§4).
 > **conservation completion** ∇τ = 3(∂_t h̄_{0i} − ∂_j Q_{ji}) (wave-zone form:
 > τ = 3(h̄_tt − n̂n̂:Q); statics: τ = 0 by the virial theorem, reducing exactly to the c07
 > map). The geodesic-following itself is the existing c07 PCD→geodesic machinery, unchanged.
-> Consequence (Task 4, Patch 1125): the tidal response is **exactly TT** — Eardley class N₂,
-> as GR; the scalar/vector radiative tails cancel in the curvature and carry no independent
-> energy. *(v0.2 revision — the completion rule is the one assembly that does not violate the
-> constraint identities the retarded channels already satisfy; it adds no degrees of freedom.
-> Whether it is derived-unique or independent-postulate content is an explicit DG-3 review
-> question.)*
+> τ is a **redundant completion — not a tenth channel** (zero new degrees of freedom). The
+> constraint inheritance relies on C3's *identical wave operator* across channels and C4's single
+> conserved source; the strain-valued convention is inherited from the c07 map, not a new choice.
+> Consequence (Task 4, Patch 1125): the tidal response is **exactly TT — Eardley class N₂**, as
+> GR; in the assembled metric the scalar/vector radiative tails are constraint pattern and do not
+> contribute to the TT Isaacson flux. CPP-internal channel energy is defined operationally by the
+> C5 coupling (**the Operational-Energy Lemma**, Patch 1127): emission = work by the assembled
+> retarded metric (= GR's quadrupole luminosity); absorption = TT-only; a bare-channel Hamiltonian
+> is operationally empty since no axiom couples matter to a bare channel; the eccentric ledger
+> closes (TT flux / Peters rate = 1.000640 at e = 0.6). *(v0.3 — C5 is unique given the
+> harmonic-pattern assembly demand + conservation inheritance; derived from the constraint
+> structure per DG-3 round-1 adjudication: Grok + Copilot "derived-unique," ChatGPT "mandatory
+> clause of A3′" — adopted as exactly that, this clause.)*
 
 ## 3. The completion theorem (why "completed" is literal — verify script)
 
@@ -140,7 +147,7 @@ the broadcast to the full content the geometry can carry faithfully — the stru
 
 ## 6. Falsifiers (stated at axiom level)
 
-- **F1 — polarization content:** if OB-2 discharges, CPP predicts *pure tensor* GW
+- **F1 — polarization content (Eardley class N₂):** CPP predicts *pure tensor* GW
   polarization at first order (matching current data); detection of first-order
   scalar/vector GW polarization modes would falsify the discharged axiom — and failure to
   discharge OB-2 falsifies the axiom as stated.
@@ -166,3 +173,12 @@ the broadcast to the full content the geometry can carry faithfully — the stru
 proceed against this candidate text *before* DG-3 dispatch — discharging OB-1 and OB-2 first
 would let the swarm review the axiom together with its proofs, which is the stronger
 submission. Recommended order: Task 3 → Task 4 → Task 5 (DG-3) → registration.
+
+## Changelog
+- **v0.1 → v0.2 (Patch 1124):** C4 source corrected to traceless local stress (origin-dependence
+  defect); λ = 16πG/c⁴ derived. **v0.2 (Patch 1125):** C5 constraint-consistent assembly + trace
+  completion.
+- **v0.2 → v0.3 (Patch 1127, DG-3 round 1):** Operational-Energy Lemma added to C5; OB-2 status =
+  "discharged via the operational-energy lemma" (ChatGPT's verdict-flipping objection answered with
+  lemma + eccentric-ledger computation, not wording); all three reviewers' calibrations applied;
+  T5 settled (amendment, count 9, audit note: new-axiom accounting = 10).

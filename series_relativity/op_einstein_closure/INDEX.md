@@ -183,3 +183,8 @@ architect's "initiate review protocol." NO VERDICT MOVED.
 obligations + triage T1–T7 + embedded verify code) dispatched to the panel (ChatGPT, Copilot, Grok) at
 `spin2_construction/review/a3prime_axiom_review_package_v1.0.md`. The programme's first axiom-level
 review. Registration gated on 3/3 + sign-off. NO VERDICT MOVED.
+
+**DG-3 ROUND 1 INTEGRATED + RESTATE by 1127:** 2× CONFIRM (Grok, Copilot) + 1× RESTATE (ChatGPT,
+verdict-flipping T1(iii): energy claim outran proof) — objection upheld per verdict-honesty. Fixed
+with the **Operational-Energy Lemma** + the eccentric-ledger computation (TT flux / Peters f(e) rate
+= 1.000640 at e=0.6). Candidate → v0.3, package → v1.1, re-dispatched. NO VERDICT MOVED.
