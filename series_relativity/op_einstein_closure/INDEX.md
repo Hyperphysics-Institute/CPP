@@ -200,3 +200,13 @@ axiom-registry.md, master_glossary.md — STOP-and-warn + CONV-002 re-fetch).**
 tensor sector has its carrier, by necessity (three assaults) and at zero new parameters, panel-passed
 3/3. Follow-ups queued with their own warns: frontier SR.md flip; theorem/prediction registrations;
 Phase 7A flagship assembly; dark-sector + CC unconditionalizations.
+
+**SR-2 PHASE 7A OPENED + GATE CLEARED (1132–1135, Session 159):** flagship assembly scope at
+`flagship_assembly_scope.md` (1132; 10-section skeleton mapping the arc's 13 step docs + 11 scripts +
+DG-3 suite; architect settled the five open decisions: **SR-2**, working title, (b)-prequel as compact
+§1 subsection, registered-uncounted F1–F4, draft-now). Gate work: **C14 methods audit** (1133; +8
+catalogue entries incl. METH-L3-006 filling the reserved slot; audit trail + citation map at
+`spin2_construction/1133_c14_methods_audit.md`); **figure candidates** (1134; 4 figures at
+`series_relativity/figures/figures-SR-2/` + notebook `series_relativity/notebooks/SR-2_figures.py`;
+eccentric-ledger one-period average 0.999998); **skeleton LOCKED** (1135; scope §8 addendum). Next:
+7B drafting. NO VERDICT MOVED throughout.

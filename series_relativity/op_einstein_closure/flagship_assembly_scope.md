@@ -182,3 +182,44 @@ chirality-style framing review, not a new closure gate.
 5. **PRED counting timing.** If the panel-count protocol (queue item 3) runs before 7C, the
    flagship ships with counted predictions; otherwise registered-uncounted with the count as a
    v1.x upgrade. No drafting dependency either way — §9 is written conditionality-stable.
+
+---
+
+## 8. SKELETON LOCK + decisions record (addendum, Patch 1135 — Session 159, 12 June 2026)
+
+**Architect sign-off received in-session ("Proceed with your recommendations"). The five §7
+decisions are settled and the skeleton is LOCKED:**
+
+1. **Paper ID = SR-2.** Lives at `series_relativity/papers/` per series convention; canonical
+   filename `SR-2_spin_bit_axiom_quadrupole_formula.tex` (no version suffix, per OS §11).
+2. **Title (working, lockable at 7C polish):** *"The Spin-Bit Axiom: Necessity, Construction,
+   and the Derived Einstein Quadrupole Formula."*
+3. **Prequel scope:** the 1107–1108 (b)-half enters as a **compact §1 subsection** (conditional
+   closure stated verbatim, shell-sum residual named); full treatment deferred to the CC-
+   reconciliation paper.
+4. **Sequencing:** drafting proceeds now; no blocking either way against the
+   unconditionalization lanes.
+5. **PRED counting:** F1–F4 ship **registered-uncounted**; the panel count is a clean v1.x
+   upgrade (PRED-C-96 protocol precedent).
+
+**The 10-section skeleton of §2 is LOCKED as the build plan.** Changes to section structure
+from here forward require a dated note in this addendum (drift guard).
+
+**Gate status (per §6, 7A pre-draft):**
+
+| Gate item | Status | Record |
+|---|---|---|
+| C14 methods audit (catalog-first) | **DONE, Patch 1133** | +8 catalogue entries (METH-L1-008..012, L2-010..011, L3-006) + L3-004 examples + footer correction; audit trail + STRAIGHT-REUSE citation map at `spin2_construction/1133_c14_methods_audit.md` |
+| Figure candidates regenerated | **DONE, Patch 1134** | 4 figures (SVG+PDF) at `series_relativity/figures/figures-SR-2/`; B2-headered notebook `series_relativity/notebooks/SR-2_figures.py`; eccentric-ledger one-period average **0.999998** = the review's independent analytic recompute |
+| Skeleton locked | **DONE, Patch 1135** | this addendum |
+
+**7A gate: CLEAR.** Next phase per §6 is **7B assembly**: draft §§2–8 from the step docs
+(the ~1:1 mapping), write §1 (stakes + prequel subsection) and §§9–10 (falsifiers; review
+record + residuals), harmonize the conditionality language (Gap 5), build the bibliography
+(Gap 4 of §5), and execute the C14 step-4 inline citations per the 1133 citation map. The 7C
+review pass remains scoped to framing + over-claim, not new math.
+
+**Figure-to-section map (locked with the skeleton):** fig1 (H_g seat) → §4; fig2 (two
+assaults) → §3; fig3 (eccentric ledger) → §7; fig4 (lattice discriminant) → §9. Final art
+direction (palette, sizing, the ×-panel sparseness note — 8 of 12 shell vertices have xy = 0
+exactly, so the sparse support is physical and will be stated in the caption) is 7B work.
