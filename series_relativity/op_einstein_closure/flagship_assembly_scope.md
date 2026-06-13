@@ -279,3 +279,13 @@ labelled "ChatGPT" but ChatGPT already CONFIRMed and the prior turn had a Grok/C
 so attribution is unresolved and it reviewed stale text. Standing count: 2 clean independent CONFIRMs
 (ChatGPT, Copilot); 1 RESTATE of uncertain attribution, its valid points now integrated. AWAIT architect
 confirmation of (i) who the RESTATE is from and (ii) whether the real Grok has reviewed, before 7C close.
+
+**7C FRAMING PASS 3 (Patch 1141, 13 June 2026 — draft → v0.5):** attribution corrected — v0.4 RESTATE
+was Grok; ChatGPT re-review also RESTATE. Panel: Copilot CONFIRM, Grok RESTATE, ChatGPT RESTATE.
+ROOT CAUSE of recurring flags = raw.githubusercontent.com CDN stale-cache: both RESTATEs quoted the
+v0.2 abstract + missing §11 guard, already fixed in v0.3/v0.4. Live-verified those are fixed. Genuinely
+live point integrated: retired the universal "every working/successful theory" motif (abstract, §3
+assault-2, §8) → concrete "general relativity and string theory" (preserves landscape framing; declined
+ChatGPT's meaning-changing replacements). No claim changed; 19 pp clean. **Gate NOT closed:** clean close
+= re-dispatch v0.5 for re-confirm (A3′ DG-3 round-1→2 pattern), with a cache-bust so reviewers read the
+live file. Recommend reviewers fetch the blob URL or a ?cachebust query, or paste the current text directly.

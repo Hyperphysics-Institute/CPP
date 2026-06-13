@@ -4,6 +4,34 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## v0.5 — 13 June 2026 (Phase 7C framing pass 3 — universal-quantifier motif retired)
+
+**Attribution corrected (per architect):** the v0.4 RESTATE was **Grok's**; ChatGPT then
+re-reviewed and also returned **RESTATE**. Panel verdicts now stand at: Copilot CONFIRM;
+Grok RESTATE; ChatGPT (re-review) RESTATE.
+
+**Stale-cache finding (root cause of the recurring flags):** both RESTATEs fetched
+`raw.githubusercontent.com` and quoted the **v0.2 abstract** and the **missing §11 guard** —
+both already fixed in v0.3/v0.4 on origin. raw.githubusercontent.com serves CDN-cached copies
+(~5 min TTL), so the reviewers re-flagged already-resolved text. Verified against the live
+v0.4 file: abstract necessity (fixed v0.3), §3 "not an open question" (fixed v0.4), and the
+§11 op:einstein-simpliciter guard (added v0.4) are all present.
+
+**Genuinely live points integrated this pass** — the universal "every working theory / every
+successful formulation of gravity" motif, in three places (abstract trailing comparison, §3
+assault-2, §8). These were statements about *other* theories (GR, string theory) used to frame
+CPP's result as expected, not registry over-claims about CPP; but two reviewers flagged the
+absolute quantifier. Resolved by replacing "every working/successful theory" with the concrete
+examples "general relativity and string theory" — more precise, unambiguously about other
+theories, and the landscape-framing intent ("CPP lands with mainstream gravity") preserved.
+**Declined** ChatGPT's verbatim replacements, which would have swapped the landscape context for
+a CPP-internal claim and lost that framing. No claim changed; recompile clean (19 pp).
+
+**Gate status:** NOT closed. Two RESTATEs are outstanding, but both were against stale text and
+their still-valid points are now integrated (v0.4 + v0.5). The clean close is a re-dispatch of
+v0.5 for re-confirm (mirrors the A3′ DG-3 round-1→round-2 pattern) — with a cache-bust so the
+reviewers see the live file, not a cached copy.
+
 ## v0.4 — 13 June 2026 (Phase 7C framing pass 2 — third return integrated; attribution pending)
 
 A third 7C return arrived (a **RESTATE**, framing-only) conducted against the **stale v0.2**
