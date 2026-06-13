@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 # =============================================================================
 # consolidate_bibliography.sh  —  OPEN-WORKFLOW-1 remediation (central-bib)
+# v4 (13 Jun 2026): operator-accept + clean-tree —
+#   (ADD --accept-review ID[,ID]) for a named paper, if Phase-2 finds the rendered
+#           .bbl CHANGED (a [REVIEW]), KEEP the repoint and archive the legacy bib
+#           (an operator-approved correction) instead of reverting. The diff is
+#           still printed first. Use only after eyeballing a prior run's [REVIEW]
+#           diff and confirming the change is a correction/enrichment, not a loss.
+#   (FIX C) clean tree on non-accept: pdflatex rewrites the paper PDF non-
+#           deterministically (timestamps) on every compile, so any processed
+#           paper's *.pdf showed up 'modified' even when its .tex was reverted ->
+#           left uncommittable residue. Now restores the tracked PDF (git checkout)
+#           on every SKIP/ERROR/REVERT/REVIEW-revert path; only accepted/OK papers
+#           keep their rebuilt-against-master PDF.
 # v3 (13 Jun 2026): correctness fixes over v2 —
 #   (FIX A) repoint substitution: the path contains '/', which collided with
 #           perl's s/// delimiter -> substitution errored and SILENTLY no-op'd,
@@ -15,16 +27,17 @@
 # v2 carried: forward-slash path, non-halt baseline compile (2 passes, judge on
 #   .bbl), CRLF-normalized .bbl diff.
 # RUN LOCALLY (needs working pdflatex+bibtex). Does NOT commit.
-# Usage: --dry-run | --only ID[,ID] | --keep-artifacts
+# Usage: --dry-run | --only ID[,ID] | --accept-review ID[,ID] | --keep-artifacts
 # =============================================================================
 set -uo pipefail
-DRY_RUN=0; KEEP_ART=0; ONLY=""
+DRY_RUN=0; KEEP_ART=0; ONLY=""; ACCEPT_REVIEW=""
 while [ $# -gt 0 ]; do
   case "$1" in
     --dry-run) DRY_RUN=1 ;;
     --keep-artifacts) KEEP_ART=1 ;;
     --only) ONLY="${2:-}"; shift ;;
-    -h|--help) sed -n '2,20p' "$0"; exit 0 ;;
+    --accept-review) ACCEPT_REVIEW="${2:-}"; shift ;;
+    -h|--help) sed -n '2,28p' "$0"; exit 0 ;;
     *) echo "unknown flag: $1" >&2; exit 2 ;;
   esac; shift
 done
@@ -133,6 +146,9 @@ compile(){ ( cd "$1" \
        pdflatex -interaction=nonstopmode "$2.tex" >/dev/null 2>&1 ); }
 norm(){ tr -d '\r' < "$1"; }
 clean_art(){ [ "$KEEP_ART" -eq 1 ] && return; ( cd "$1" && rm -f "$2".aux "$2".bbl "$2".blg "$2".log "$2".out "$2".toc 2>/dev/null ); }
+# pdflatex rewrites the PDF on every compile; restore the tracked copy when we did
+# not accept the repoint, so a non-converting run leaves a clean working tree.
+restore_pdf(){ git checkout -- "$1/$2.pdf" >/dev/null 2>&1 || true; }
 
 for pair in "${PAIRS[@]}"; do
   IFS='|' read -r id b tex <<< "$pair"
@@ -145,27 +161,36 @@ for pair in "${PAIRS[@]}"; do
   fi
   compile "$dir" "$base"
   if [ ! -f "$dir/$base.bbl" ]; then
-    say "        [SKIP] baseline produced no .bbl (inline \\bibitem, or genuine compile failure). Left untouched."; clean_art "$dir" "$base"; RC=1; continue
+    say "        [SKIP] baseline produced no .bbl (inline \\bibitem, or genuine compile failure). Left untouched."; clean_art "$dir" "$base"; restore_pdf "$dir" "$base"; RC=1; continue
   fi
   base_bbl="$(mktemp)"; norm "$dir/$base.bbl" > "$base_bbl"
   cp "$tex" "$tex.wf1bak"
   ch="$(repoint_tex "$tex" "$relmaster")"
   if ! verify_repoint "$tex" "$relmaster"; then
     say "        [ERROR] repoint did NOT take (edit='$ch'); .tex still cites a local/other bib. Reverting; NOT archiving."
-    mv -f "$tex.wf1bak" "$tex"; clean_art "$dir" "$base"; rm -f "$base_bbl"; RC=1; continue
+    mv -f "$tex.wf1bak" "$tex"; clean_art "$dir" "$base"; restore_pdf "$dir" "$base"; rm -f "$base_bbl"; RC=1; continue
   fi
   compile "$dir" "$base"
   if [ ! -f "$dir/$base.bbl" ]; then
-    say "        [REVERT] recompile against master produced no .bbl. Restoring .tex."; mv -f "$tex.wf1bak" "$tex"; clean_art "$dir" "$base"; rm -f "$base_bbl"; RC=1; continue
+    say "        [REVERT] recompile against master produced no .bbl. Restoring .tex."; mv -f "$tex.wf1bak" "$tex"; clean_art "$dir" "$base"; restore_pdf "$dir" "$base"; rm -f "$base_bbl"; RC=1; continue
   fi
   new_bbl="$(mktemp)"; norm "$dir/$base.bbl" > "$new_bbl"
   if diff -q "$base_bbl" "$new_bbl" >/dev/null 2>&1; then
     rm -f "$tex.wf1bak"; git mv "$b" "$ARCHIVE/$(basename "$b")" 2>/dev/null || mv "$b" "$ARCHIVE/"
     say "        [OK] .tex repointed (verified) AND rendered .bbl identical -> legacy bib archived. No OSF re-deposit."
   else
-    say "        [REVIEW] rendered .bbl CHANGED after repoint -> reverting. Inspect; may need OSF re-deposit:"
-    diff "$base_bbl" "$new_bbl" | sed 's/^/            /' | head -40
-    mv -f "$tex.wf1bak" "$tex"; RC=1
+    say "        [REVIEW] rendered .bbl CHANGED after repoint. Diff:"
+    diff "$base_bbl" "$new_bbl" | sed 's/^/            /' | head -60
+    case ",$ACCEPT_REVIEW," in
+      *",$id,"*)
+        rm -f "$tex.wf1bak"; git mv "$b" "$ARCHIVE/$(basename "$b")" 2>/dev/null || mv "$b" "$ARCHIVE/"
+        say "        [ACCEPTED-REVIEW] operator-approved ($id): repoint KEPT + legacy bib archived. Confirm OSF re-deposit per convention (reference-list cosmetics typically need none)."
+        ;;
+      *)
+        say "        -> reverting (not in --accept-review). After confirming the diff is a correction/enrichment, re-run with: --accept-review $id"
+        mv -f "$tex.wf1bak" "$tex"; restore_pdf "$dir" "$base"; RC=1
+        ;;
+    esac
   fi
   clean_art "$dir" "$base"; rm -f "$base_bbl" "$new_bbl"
 done
@@ -180,7 +205,8 @@ if [ -f "$STRAY" ]; then
 else say "  (no stray cpp_references.bib present)"; fi
 
 hr; say "=== Done ($([ "$DRY_RUN" -eq 1 ] && echo DRY-RUN || echo APPLIED)) ==="
-say "Next: review 'git diff', run 'bash scripts/publication_audit.sh <ID>' per converted paper, then commit."
-[ "$RC" -eq 0 ] && say "Result: clean." || say "Result: attention needed (see [SKIP]/[REVERT]/[REVIEW]/[ERROR] above)."
+say "Next: review 'git diff'; for any [ACCEPTED-REVIEW] paper run 'bash scripts/publication_audit.sh <ID>', then commit (repointed .tex + archived bib + rebuilt PDF)."
+say "Any plain [REVIEW] left? eyeball its diff, then re-run with --accept-review <ID> to apply it."
+[ "$RC" -eq 0 ] && say "Result: clean." || say "Result: attention needed (see [SKIP]/[REVERT]/[REVIEW]/[ERROR] above; [ACCEPTED-REVIEW] is expected & committable)."
 rm -f "$MKEYS" 2>/dev/null
 exit $RC

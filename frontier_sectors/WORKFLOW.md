@@ -230,3 +230,30 @@ reverting); (3) SR-1 key-remap (legacy `abshier_sm1/_ss1/_sm3` → `abshier2026*
 then merge only the genuine externals + `abshier_tnsr1` + `abshier2025`); (4) OSF
 re-deposits SR-1 (47→50pp) + SM-6 (figures). D (DOI parity on newer `@article`
 block) remains optional/cosmetic.
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1155: consolidate_bibliography.sh v4 (operator-accept + clean-tree)
+
+**Built (this patch).** v4 adds `--accept-review ID[,ID]`: when Phase 2 finds a
+paper's rendered `.bbl` CHANGED (a `[REVIEW]`), for a named ID it KEEPS the repoint
+and archives the legacy bib (operator-approved correction) instead of reverting; the
+diff is still printed first. This unblocks the parked SM-6/7/8/9, which post-fidelity
+are all accept-as-correction `[REVIEW]`s (the clean auto-`[OK]` path is exhausted for
+them). Also FIX C: `restore_pdf` (git checkout) on every SKIP/ERROR/REVERT/REVIEW-
+revert path — pdflatex rewrites the PDF non-deterministically each compile, which was
+the source of the uncommittable `*.pdf` residue a non-converting run left behind; only
+accepted/`[OK]` papers now keep their rebuilt-against-master PDF.
+
+**Validated in-container:** `bash -n` syntax, `--help` (v4 usage), accept-review
+case-match logic (only listed IDs accept; empty list never accepts). The compile-
+dependent archive/repoint + restore_pdf paths mirror the validated `[OK]` path but
+need a local pdflatex run to confirm end-to-end (as with v2/v3).
+
+**Operator workflow (local):**
+1. `bash scripts/consolidate_bibliography.sh --only SM-6,SM-7,SM-8,SM-9` — eyeball each `[REVIEW]` diff (confirm correction/enrichment, no URL loss).
+2. `bash scripts/consolidate_bibliography.sh --accept-review SM-6,SM-7,SM-8,SM-9` — applies: repoints .tex, archives the 4 local bibs, merges `ma2001` (SM-6), rebuilds PDFs against master.
+3. `git diff` review → `bash scripts/publication_audit.sh <ID>` per paper → commit.
+4. OSF: reference-list cosmetics need no re-deposit per convention; SM-6 still owes a re-deposit for the restored figures (separate, from 1152).
+
+**Then:** SR-1 key-remap (legacy `abshier_sm1/_ss1/_sm3` → `abshier2026*`; merge only the genuine externals + `abshier_tnsr1` + `abshier2025`).
