@@ -178,3 +178,55 @@ unique, mechanical merge). Master = 65 → 67 entries; no duplicate keys.
 DOI — accept + repoint + archive), then SR-1 + SM-6 (Task 3), then OSF re-deposits
 (Task 4: SR-1 47→50pp, SM-6 figures). Consolidation steps need a local machine with
 working pdflatex+bibtex (container cannot reliably compile the legacy papers).
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1154: master rendering-fidelity pass (Task-1 "restore \url{}" + title-case)
+
+**Why.** The 1153 dry-run + live `--only SM-6,SM-7,SM-8,SM-9` produced the first
+real `.bbl` diffs. They showed the master `@misc` self-block is NOT a rendering
+superset under `plainnat`: (i) the OSF link lives in a `doi={}` field that this
+plainnat does NOT render, so the local bibs (which carry it as `\url{}` in `note`)
+render the link and a repoint-to-master would DROP it — a regression; (ii) old-block
+titles are single-braced, so plainnat lowercases them ("the charged lepton…"),
+degrading SM-8 whose local entries are double-braced (case-preserved).
+
+**Fix applied (this patch).** For the 9 cited old-block self-entries (`ew1, qm1,
+sm1, sm2, sm3, sm6, sm7, ss1, sr1`): appended `\url{https://doi.org/10.17605/OSF.IO/JXE8D}`
+into `note` (byte-matching the local-bib form that is proven to render) and
+double-brace-protected the title (canonical Titlecase; matches the newer `@article`
+block; preserves SM-8). For the external `georgi1974` (Georgi–Glashow PRL 32, 438,
+cited by SM-7): added `\url{https://doi.org/10.1103/PhysRevLett.32.438}` to `note`.
+`doi={}` fields retained (harmless; future-proof if natbib DOI rendering is enabled).
+Brace-balanced; notes verbatim-match the locals so URL renders are identical.
+
+**HARD CONSTRAINT MET: no URL lost anywhere.** Every repoint now ADDS or PRESERVES
+links; none drops one.
+
+**Cascade manifest (papers whose master-rendered bib changes):**
+- Parked, consolidating: SM-6, SM-7, SM-8, SM-9 — gain URLs / proper title case /
+  version corrections. No loss.
+- Already-compliant cascade: **SM-3 only** (cites `sm1`,`ss1` from master) — gains
+  OSF URL + Titlecase on those two refs. Cosmetic.
+- Unchanged: SR-2 (externals only), SM-10, SS-8, DSL flagship (cite master but none
+  of the touched keys).
+- OSF: per the recorded CPP convention (re-deposit ties to mechanism/main-claim
+  change, not reference-list cosmetics), these URL-additions + case-fixes are
+  **not** re-deposit triggers; architect confirms per paper by eyeballing the diff.
+
+**Predicted post-fidelity consolidation outcomes (re-run `--only SM-6,SM-7,SM-8,SM-9`):**
+- SM-7 → `[REVIEW]` = title-case upgrade ONLY (URL-loss cured; notes now identical).
+  No longer a regression — a clean improvement to accept.
+- SM-8 → `[REVIEW]` = enrichment (gains URL + version-note; case already matched).
+- SM-6 → `[REVIEW]` = title-case + sm3 v5→v6 + fuller sr1 title (corrections).
+- SM-9 → `[REVIEW]` = sm10 v1.0→v2.0 correction + journal/note format (no URL involved).
+- None lose a URL; all are accept-as-correction. The clean `[OK]` auto-path is
+  exhausted for these papers (their local bibs are each individually incomplete vs
+  a canonical master) — that is expected, not a fault.
+
+**Next:** (2) accept the four consolidations (manual repoint+archive, or build
+script v4 `--accept-review ID[,ID]` to apply a reviewed `[REVIEW]` instead of
+reverting); (3) SR-1 key-remap (legacy `abshier_sm1/_ss1/_sm3` → `abshier2026*`,
+then merge only the genuine externals + `abshier_tnsr1` + `abshier2025`); (4) OSF
+re-deposits SR-1 (47→50pp) + SM-6 (figures). D (DOI parity on newer `@article`
+block) remains optional/cosmetic.
