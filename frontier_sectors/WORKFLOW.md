@@ -73,3 +73,55 @@ the bib task itself.
 
 **State at note time:** three `1152` commits staged locally on `0c497b4`; bib
 consolidation itself NOT yet re-run (pending `--only SM-10` validation of v2).
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1152 addendum: SM-7/8/9 PARKED (master-bib content reconciliation needed)
+
+**Where consolidation stopped and why.** SM-10 consolidated cleanly (commit
+`c97b76d`). Extending to SM-7/8/9 surfaced that the master bib diverges from the
+per-paper bibs in **three independent content classes**, varying entry-by-entry —
+so a mechanical repoint would silently degrade shipped bibliographies. This is no
+longer a consolidation task; it is a **reference-data reconciliation audit**, and
+is parked for a dedicated session with the source-paper `.tex` titles/CHANGELOGs
+open for adjudication.
+
+**The three divergence classes found:**
+1. **Version drift** (self-citation `note` versions). FIXED in master this session
+   (commit `2d220f1`): SM-6 v2.1→v3, SM-10 v0.1→v2.0. Authority = each paper's own
+   CHANGELOG. Other master SM entries already correct (SM-3 v6, SM-8 v4.1, SM-9 v2.2).
+2. **URL/DOI completeness.** Master entries are MISSING `\url{...}` DOI links that
+   the per-paper bibs carry (seen in SM-7's `[REVIEW]`: master drops the OSF DOI on
+   abshier2026sm6/sm2 and a PhysRevLett.32.438 URL). Repoint-to-master would lose links.
+3. **Title divergence (same key, different title).** `abshier2026sm2` (SM-2):
+   - SM-7 local bib: "Mass Generation from Geometric Hierarchies"
+   - master:         "Quark Mass Formula and Hybrid Spectral Structure"
+   Substantive, not formatting. Authority = SM-2's own `.tex` title (UNRESOLVED —
+   needs a look at SM-2_*.tex).
+
+**Known-stale per-paper bib entries (will be corrected BY repointing to a
+reconciled master, once master is made a correct superset):**
+- SR-1 / SM-6 / SM-8 local bibs say SM-3 v5 (true: v6).
+- SM-8 / SM-9 local bibs say SM-10 v1.0 (true: v2.0).
+- SM-9 local bib says SM-9 v1.0 (true: v2.2) — stale about its own paper.
+
+**Method limitation recorded.** The `.bbl`-byte-identity check proves "rendering
+unchanged after repoint," NOT "rendering is correct." SM-10 passed only because its
+local bib and master happened to agree on what SM-10 cites; it does not certify
+those shared values are right. Reconciliation must validate against source `.tex`,
+not against `.bbl` identity.
+
+**Next-session task list (OPEN-WORKFLOW-1):**
+1. Make master bib a correct superset: resolve SM-2 title vs SM-2.tex; restore the
+   missing `\url{}` DOI fields; re-verify all self-citation versions vs CHANGELOGs.
+2. Re-run consolidation SM-7 → SM-8 → SM-9 against the reconciled master; expect
+   `[REVIEW]` to clear to loss-free `[OK]` (or accept changes that are pure
+   corrections, manually repoint+archive).
+3. Consolidate SR-1 and SM-6 (bibs still local; both now compile cold).
+4. OSF re-deposit: SR-1 (47→50 pp), SM-6 (figures restored). 
+5. Confirm SM-8 current version (header says v4.0; decided v4.1 — verify in CHANGELOG).
+
+**Banked & committed this session (commits `9a53a62`→`2d220f1`):** script v3
+(2 bug fixes, validated); SM-10 consolidated; SR-1 typo repair; SM-6 figure
+build-script (Option A); master version-drift correction; this documentation.
+1151 failed run honestly reverted (`0c497b4`). Tree clean at park.
