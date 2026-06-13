@@ -257,3 +257,43 @@ need a local pdflatex run to confirm end-to-end (as with v2/v3).
 4. OSF: reference-list cosmetics need no re-deposit per convention; SM-6 still owes a re-deposit for the restored figures (separate, from 1152).
 
 **Then:** SR-1 key-remap (legacy `abshier_sm1/_ss1/_sm3` → `abshier2026*`; merge only the genuine externals + `abshier_tnsr1` + `abshier2025`).
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1156: SR-1 bib cleanup (was mis-scoped as "key remap")
+
+**Correction to the 1154/1155 next-step.** The parked plan called SR-1 a "self-cite
+key remap" (legacy `abshier_sm1/_ss1/_sm3` → `abshier2026*` in the `.tex`). On
+inspection SR-1.tex does NOT cite those legacy keys at all — they are **uncited dead
+entries** in `SR-1_references.bib`. So no `.tex` edit is needed; the fix is to strip
+the dead entries so the script's Phase-1 (which merges by bib key, not by citation)
+doesn't pull duplicates/orphans into master.
+
+**SR-1 actually cites 13 keys** (all resolve): `abshier2025` + 12 externals
+(`bailey1977, bannai1979, conway1988, coxeter1973, einstein1905, humphreys1990,
+michelson1887, penrose1971, planck1900, thooft2016, unruh1976, weyl1946`). Of these,
+only `coxeter1973` is already in master; the other 12 are unique → Phase-1 merges them.
+
+**Removed 6 uncited dead entries from `SR-1_references.bib` (this patch):**
+- `abshier_ss1`, `abshier_sm1`, `abshier_sm3` — duplicate self-cites (master has
+  `abshier2026ss1/sm1/sm3`; the local copies were also stale, e.g. SM-3 v5 vs v6).
+  Removing prevents different-key duplicate corruption of master.
+- `abshier_tnsr1` ("Holographic Vacuum Energy Suppression") — orphan, uncited, not in
+  master.
+- `lorentz1904`, `minkowski1908` — genuine foundational SR externals but **uncited by
+  SR-1**. Removed as hygiene. *Flagged to architect:* if these should live in master
+  for future SR papers, add them deliberately (not as an SR-1 consolidation side-effect).
+
+No change to SR-1's rendered `.bbl` (all removed entries were uncited) → no OSF impact.
+Brace-balanced; 13 cited keys remain.
+
+**SR-1 now ready for consolidation:**
+`bash scripts/consolidate_bibliography.sh --only SR-1` (review) then
+`--accept-review SR-1` (apply). Expected: Phase-1 merges 12 unique externals +
+`abshier2025`; the `.bbl` diff should be empty or limited to `coxeter1973` (the only
+pre-existing master collision) → likely clean `[OK]` or a tiny accept.
+
+**Remaining OPEN-WORKFLOW-1 after the SM + SR-1 consolidations land:** per-series bibs
+(`cpp_ew_series`, `cpp_strong_series`, `cpp_qm_series`, `cpp_foundations_series`,
+`gr_companion`, `references`) still unclassified/unconsolidated; OSF re-deposits
+SR-1 (47→50pp) + SM-6 (figures). D (DOI parity on newer `@article` block) optional.
