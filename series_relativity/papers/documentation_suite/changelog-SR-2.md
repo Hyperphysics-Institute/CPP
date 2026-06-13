@@ -4,6 +4,33 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## v0.4 — 13 June 2026 (Phase 7C framing pass 2 — third return integrated; attribution pending)
+
+A third 7C return arrived (a **RESTATE**, framing-only) conducted against the **stale v0.2**
+draft (it quotes the pre-1139 abstract text "required, exactly as in every working theory of
+gravity", already rescoped in v0.3). Its four points, assessed against current v0.4:
+- **P1 abstract necessity** — already addressed in v0.3 (scoped to CPP's axioms; the universal
+  phrase demoted to a comparison). No action.
+- **P2 §3 "not an open question"** — v0.3 added the scoping parenthetical; tightened the trailing
+  clause to "for that sector, this is now a closed conclusion" for full uniformity. Applied.
+- **P3 §11 guard (the substantive catch)** — §11 Problem Status listed (a)/(b) but did not restate
+  the "not op:einstein simpliciter" guard carried in §1 and §10. Added a closing sentence:
+  "Thus this paper closes op:einstein (a), not op:einstein simpliciter: (b) remains conditionally
+  closed pending the shell-sum reduction rigorization, and the substrate-microscopic energy
+  functional is a declared refinement, not an axiom debt." Applied.
+- **P4 Table 1 "derived here"** — caption bounded: the Derived entries are derived *given* A3′ +
+  the C5 readout convention + the scalar-sector G, not from nothing. Applied.
+
+Recompile clean (rc=0, no undefined refs/cites, 19 pp). No claim changed.
+
+**Attribution / gate note (unresolved — see scope addendum):** the return was labelled "ChatGPT",
+but ChatGPT already returned CONFIRM (v0.2) and the prior turn had a label-crossing (a ChatGPT
+duplicate arrived in the Grok slot). It is therefore unclear whether this RESTATE is the real Grok
+(mislabelled), a ChatGPT re-review, or a mislabel; it also reviewed stale text. **The 7C gate is NOT
+declared 3/3.** Two clean independent CONFIRMs stand (ChatGPT, Copilot); the RESTATE's still-valid
+points are now integrated. Awaiting architect confirmation of attribution and of whether the real
+Grok has reviewed before the gate is closed.
+
 ## v0.3 — 13 June 2026 (Phase 7C framing pass — partial, 2/3 panel returns)
 
 7C framing/over-claim review returns from **2 of 3** panel members in; both **CONFIRM**:

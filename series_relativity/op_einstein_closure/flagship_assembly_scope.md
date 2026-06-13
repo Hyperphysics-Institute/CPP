@@ -270,3 +270,12 @@ CONFIRM / RESTATE / REVISE(framing), section-anchored. Awaiting reviewer returns
 fixes (abstract + §3 + conclusion); declined one optional stylistic nit with reason (see
 changelog-SR-2 v0.3). No claim changed. On Grok's return: if clean → record 3/3 and proceed to the
 SHIP-time per-paper completion checklist; if a framing point → fold into a v0.4 micro-pass.
+
+**7C FRAMING PASS 2 (Patch 1140, 13 June 2026 — draft → v0.4):** a third 7C return (RESTATE,
+framing-only) arrived, conducted against the stale v0.2 draft. P1 (abstract) already fixed in v0.3;
+P2 (§3 clause), P3 (§11 op:einstein-simpliciter guard — the substantive catch), P4 (Table-1 caption
+bounding) integrated. Recompile clean (19 pp). No claim changed. **Gate NOT closed:** the return was
+labelled "ChatGPT" but ChatGPT already CONFIRMed and the prior turn had a Grok/ChatGPT label-crossing,
+so attribution is unresolved and it reviewed stale text. Standing count: 2 clean independent CONFIRMs
+(ChatGPT, Copilot); 1 RESTATE of uncertain attribution, its valid points now integrated. AWAIT architect
+confirmation of (i) who the RESTATE is from and (ii) whether the real Grok has reviewed, before 7C close.
