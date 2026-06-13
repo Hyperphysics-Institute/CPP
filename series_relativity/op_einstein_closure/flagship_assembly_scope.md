@@ -223,3 +223,30 @@ review pass remains scoped to framing + over-claim, not new math.
 assaults) → §3; fig3 (eccentric ledger) → §7; fig4 (lattice discriminant) → §9. Final art
 direction (palette, sizing, the ×-panel sparseness note — 8 of 12 shell vertices have xy = 0
 exactly, so the sparse support is physical and will be stated in the caption) is 7B work.
+
+---
+
+## 9. 7B drafting note (addendum, Patch 1136 — 12 June 2026)
+
+**Phase 7B first full draft landed:** `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex`
+(v0.1) + `SR-2_references.bib` + `documentation_suite/changelog-SR-2.md`. Transcribed from
+the 13 step/task docs + DG-3 suite onto the locked 10-section skeleton (§8 LOCK). No verdict
+moved; prose held to the registered claims (A3′ amendment count 9 / audit note 10;
+THEO-SR-EIN-1..4 verbatim; PRED-O-35..38 open-uncounted). Conditionality harmonized per Gap 5
+((a) CLOSED / (b) conditionally closed, shell-sum-rigor residual / energy functional declared
+refinement). Inline `[METH-Lx-NNN]` citations placed per the 1133 plan. Figures slotted per the
+locked map (fig1→§4, fig2→§3, fig3→§7, fig4→§9) via `\includesvg`.
+
+**Drift-guard disclosures (skeleton respected; two standard-scaffolding folds recorded):**
+1. The locked 10-section spine is preserved 1:1 as the content map. A standard **§11 Conclusion**
+   was added beyond the spine to carry the PD-001-required subsections (Swarm-Validation
+   Contribution; Problem Status After This Paper) — scaffolding mandated by `paper-formatting.md`
+   §4.1, not a change to the locked content structure.
+2. The locked §8 ("Emergent spin-2 in matter") absorbs the **Physical Interpretation** role and
+   carries the PD-001-required **CP/GP Signature at this scale** subsection. The locked §1 carries
+   the required **Open Problems Addressed** subsection. No content section was added, removed, or
+   reordered.
+
+**7B remaining (before 7C dispatch):** C14 step-5 audit-trail sweep for uncited substantive method
+invocations; optional figure-PDF pre-generation if the build host lacks inkscape; then the 7C
+framing/over-claim review (not new math).

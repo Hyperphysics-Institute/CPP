@@ -1,0 +1,988 @@
+% ============================================================
+% SR-2: The Spin-Bit Axiom — Necessity, Construction, and the
+%        Derived Einstein Quadrupole Formula
+%
+% Version 0.1 — 12 June 2026 (Phase 7B first full draft)
+%
+% CHANGELOG (full archaeology: documentation_suite/changelog-SR-2.md):
+%   v0.1  12 Jun 2026 — Phase 7B assembly. First .tex of the spin-2 /
+%                       op:einstein arc; transcribed from the 13 step/task
+%                       docs (1107-1110, 1112-1129) + DG-3 review suite onto
+%                       the locked 10-section skeleton (flagship_assembly_scope.md,
+%                       Patch 1135 SKELETON LOCK). No verdict moved; prose
+%                       constrained to the registered claims (A3', THEO-SR-EIN-1..4,
+%                       PRED-O-35..38).
+%
+% CONTRIBUTORS (detailed attribution in Acknowledgements):
+%   Thomas Lee Abshier, ND — CPP framework, the spin-bit / granularity
+%                            intuition, the non-radial-connection assault,
+%                            architectural decisions, sign-off
+%   Claude Opus (Anthropic) — construction, derivations, drafting
+%   DG-3 panel: ChatGPT, Grok, Copilot — axiom-level adversarial review
+%
+% FIGURE PATH:
+%   .tex location:    series_relativity/papers/
+%   figures location: series_relativity/figures/figures-SR-2/
+%   \svgpath:         ../figures/figures-SR-2/
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+
+\usepackage{svg}
+\svgsetup{
+    inkscapelatex=false,
+    inkscapeformat=pdf,
+    inkscapepath=svgdir}
+
+% Figure path: .tex is in papers/, figures are in ../figures/figures-SR-2/
+\graphicspath{{../figures/figures-SR-2/}}
+\svgpath{{../figures/figures-SR-2/}}
+
+% Bibliography
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+\usepackage{amsthm}
+\usepackage{mdframed}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+% Standard CPP macros
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\phig}{\varphi}          % golden ratio
+\newcommand{\Tr}{\operatorname{Tr}}
+
+% --- Paper-specific macros ---
+\newcommand{\Qij}{Q_{ij}}
+\newcommand{\TF}{\mathrm{TF}}
+\newcommand{\TT}{\mathrm{TT}}
+\newcommand{\SSVabs}{|\SSV|_{\mathrm{abs}}}
+\newcommand{\SSVnet}{\SSV_{\mathrm{net}}}
+
+% Axiom box environment for A3'
+\newmdenv[linewidth=0.8pt,linecolor=black,backgroundcolor=gray!4,
+  innertopmargin=8pt,innerbottommargin=8pt,innerleftmargin=10pt,
+  innerrightmargin=10pt,skipabove=8pt,skipbelow=8pt]{axiombox}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{\textbf{SR-2: The Spin-Bit Axiom --- Necessity, Construction,\\
+and the Derived Einstein Quadrupole Formula}\\[6pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 0.1 --- 12 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+\bigskip
+
+\begin{abstract}
+Conscious Point Physics (CPP) recovers the static and gravitomagnetic sectors of
+General Relativity from a Lattice State Packet (LSP) broadcast carrying one scalar
+($\SSVabs$) and one vector ($\SSVnet$) degree of freedom across the 600-cell
+substrate. This work asks whether that content can also carry the radiative tensor
+sector --- the helicity-$\pm 2$ ($+$, $\times$) gravitational-wave polarizations.
+It cannot, and the impossibility is theorem-grade: three independent assaults
+(amplitude bilinears, the full collective-mode spectrum of the lattice, and the most
+general per-edge connection consistent with icosahedral symmetry) each return a
+helicity content of $\{0,0,\pm 1\}$ with no rank-2 channel, for every coupling. A
+genuine rank-2 fundamental degree of freedom is therefore \emph{required}, exactly as
+in every working theory of gravity. We construct it. The 600-cell supplies the seat
+natively in the icosahedral shell's $H$ ($l=2$) representation, whose $m=\pm 2$
+content is precisely the GR $+$ and $\times$ polarizations; the rank-agnostic
+icosahedral shell-sum supplies propagation at $c$. The resulting amendment
+$\mathrm{A3}\to\mathrm{A3'}$ --- the Completed Broadcast Axiom --- adds a single
+symmetric-traceless field $\Qij$ to the LSP, completing it to
+$\mathrm{LSP'} = A\oplus T_1\oplus H = 9$ numbers, which is shown to be the lattice's
+entire protected representation content: no fourth rung exists (Completion Theorem).
+The axiom pays for itself: the coupling is fixed at $\lambda = 16\pi G/c^4$ by the
+single requirement that the Newton constant governing the scalar sector govern the
+tensor sector, so the field equation $\Box \bar h_{\mu\nu} = -16\pi G\,T_{\mu\nu}/c^4$
+and the waveform $h^{\TT}_{ij} = (2G/c^4 r)\,\ddot Q^{\TT}_{ij}(t_{\mathrm{ret}})$ are
+\emph{derived}, not asserted, at \emph{zero new parameters}. Statics are untouched
+(a tensor-virial theorem); the tidal response is pure tensor (Eardley class N$_2$, via
+an exact cancellation theorem and a redundant trace completion); and the energy ledger
+closes operationally (Hulse--Taylor $-2.4031\times 10^{-12}$, double pulsar
+$-1.2483\times 10^{-12}$, eccentric flux/Peters ratio $1.000640$ --- nothing tuned).
+The construction passed the programme's first axiom-level adversarial swarm review
+(DG-3, $3/3$ CONFIRM over two rounds, one objection upheld against a $2$--$1$ count
+and integrated as the Operational-Energy Lemma). Four falsifiers are registered. This
+closes the (a)-half of \texttt{op:einstein} (full Einstein-tensor recovery) for the
+radiative sector by necessity rather than convenience.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} gravitational waves, spin-2, quadrupole formula, Einstein field
+equations, 600-cell, icosahedral group, helicity, Eardley classification, Hulse--Taylor
+pulsar, emergent gravity, Weinberg--Witten theorem, Conscious Point Physics, Lattice
+State Packet, op:einstein
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Gravitational waves stretch and squeeze space in a very particular ``transverse'' way,
+and detectors like LIGO confirm it. We show that the version of gravity carried by
+CPP's substrate, as previously written, simply cannot produce that pattern --- no
+matter how cleverly its existing pieces are combined. The fix is to add exactly one new
+ingredient to the signal that each point of space broadcasts to its neighbors: a
+``shape'' (quadrupole) channel. Remarkably, the 600-cell geometry already had an empty
+seat shaped exactly for it, and once added, this single ingredient reproduces Einstein's
+famous gravitational-wave formula with \emph{no adjustable numbers at all}, matches
+decades of pulsar measurements, and predicts that gravitational waves should be purely
+transverse --- a prediction that can be tested and would falsify the idea if wrong.
+
+\bigskip
+\raggedright
+\tableofcontents
+\bigskip
+
+% ============================================================
+\section{Introduction: the gravitational-wave polarization tension and what closing \texttt{op:einstein} buys}
+\label{sec:intro}
+% ============================================================
+
+General Relativity is a tensor theory: its dynamical field, the metric $g_{\mu\nu}$,
+carries two propagating radiative polarizations of helicity $\pm 2$ --- the familiar
+$+$ and $\times$ modes whose transverse, traceless ``stretch-and-squeeze'' signature
+is what gravitational-wave interferometers detect and whose polarization content
+multi-detector networks now constrain. Any candidate theory of gravity must reproduce
+this radiative sector or stand in tension with the data.
+
+Conscious Point Physics derives gravity from the geometry of the 600-cell substrate.
+In its companion-7/8 (hereafter c07/c08) formulation, each Grid Point (GP) broadcasts a
+Lattice State Packet (LSP) to its Planck-Shell-Radius neighbors, and the packet's
+dynamical content is one scalar, $\SSVabs$ (sourcing gravitational time dilation,
+$g_{tt}$), and one vector, $\SSVnet$ (sourcing spatial curvature and gravitomagnetism,
+$g_{ij}$). This content recovers the static and weak-field sectors of GR with notable
+economy --- Schwarzschild exactly (in conformally-flat isotropic form), the Newtonian
+potential, and plausibly Kerr frame-dragging. The open question that this paper closes
+is whether the \emph{radiative tensor} sector lives in the same content, or whether
+CPP's substrate is structurally a scalar--vector gravity in tension with the observed
+tensor polarizations.
+
+This question is the (a)-half of the programme's standing problem \texttt{op:einstein}:
+does c08's nonlinear field operator $F$ assemble into the full Einstein tensor
+$G_{\mu\nu} = 8\pi G\,T_{\mu\nu}/c^4$? Three downstream arcs rest on its answer. The
+cosmological-constant reconciliation (SR-5 $\equiv$ SM-6) and the dark-matter R2 split
+both depend on c08's ground-state-exclusion premise (gravity sources from the
+\emph{excess} $\Delta|\SSV|$, not the absolute $|\SSV|$), which in turn rests on the
+field equation being genuinely GR. Closing the radiative sector removes the dark-sector
+cap that conditions those arcs.
+
+\subsection{Open Problems Addressed}
+
+This paper confronts, and partially resolves, the following \texttt{research\_frontier}
+entries (sector \texttt{frontier\_sectors/SR.md}):
+\begin{itemize}[nosep]
+  \item \texttt{op:einstein} (a) --- full Einstein-tensor recovery, radiative sector.
+        \textbf{Closed} here for helicity-$\pm 2$ radiation, by the necessity proof of
+        \S\ref{sec:necessity} and the construction of \S\S\ref{sec:seat}--\ref{sec:response}.
+  \item \texttt{op:einstein} (b) --- excess-vs-absolute sourcing / inert-uniform-Sea.
+        \textbf{Conditionally closed} (see \S\ref{sec:prequel}), with the shell-sum
+        reduction rigorization as the named residual; full treatment deferred to the
+        CC-reconciliation paper.
+  \item The standing gravitational-wave polarization tension --- whether CPP-as-axiomatized
+        predicts scalar/vector or tensor radiation. \textbf{Resolved}: tensor, conditional
+        on the new axiom.
+\end{itemize}
+
+\subsection{The (b)-half in brief: the uniform Sea is inert, and the absolute monopole is annihilated by symmetry}
+\label{sec:prequel}
+
+The summit of \texttt{op:einstein} is the radiative-tensor sector --- the (a)-half that
+is this paper's subject. Its sibling, the (b)-half, asks whether absolute $|\SSV|$ can
+re-enter the source and let a uniform Dipole Sea gravitate (the cosmological-constant
+catastrophe's cheapest return route). It does not. As c08's field equation is written,
+both the source term (which vanishes as $O((\Delta|\SSV|)^2)$ at $\Delta|\SSV|=0$) and
+the metric background ($R=0$ for constant conformal factor) are inert under a uniform
+Sea: a uniform absolute $|\SSV|$ is a mere unit rescaling carrying no curvature.
+Moreover, the shell-sum reduction that produces the excess form is exact at leading
+order: the would-be absolute-$|\SSV|$ monopole sits at the degree-1 moment $\sum\hat v$
+of the neighbor shell, and the 12-vertex icosahedral shell (a spherical 5-design) has
+$\sum\hat v = 0$ exactly and $\sum\hat v\otimes\hat v = 4\,\mathbb{I}$, so the absolute
+monopole is \emph{annihilated by icosahedral symmetry} and the continuum operator is the
+Laplacian. \textbf{This (b)-half closure is conditional}: it holds at leading order and
+rests on confirming that the full shell-sum reduction to $\nabla^2(\Delta|\SSV|)$
+drops no absolute-$|\SSV|$ term at all orders (the shell-sum reduction rigorization).
+The first lattice-anisotropy correction appears only at degree~6, a genuine far-future
+testable signature. We state the (b)-half here only to fix the scope of the closure
+claim: \emph{this paper closes \texttt{op:einstein} (a); it does not claim
+\texttt{op:einstein} closed simpliciter.} The full (b) treatment belongs to the
+CC-reconciliation paper.
+
+% ============================================================
+\section{Diagnosis: the helicity-$\pm 2$ gap of scalar--vector gravity}
+\label{sec:diagnosis}
+% ============================================================
+
+The cheapest way (a) could fail is a degree-of-freedom mismatch. Einstein's equation is
+a tensor (10 components); c08's is a single scalar equation. The metric map is explicit
+(c07/c08): $\SSVabs \to g_{tt}$ (a scalar) and $\SSVnet \to g_{ij}$ (a vector). So the
+LSP's dynamical content is one scalar plus one vector field, with no rank-2 quantity
+named to carry GR's two propagating tensor polarizations.
+
+For a plane wave propagating along $z$, the most general symmetric spatial perturbation
+a scalar $S$ ($=\SSVabs$) and a vector $V_i$ ($=\SSVnet$) can build, up to gradients,
+decomposes by helicity as
+[\texttt{METH-L1-008 little-group helicity classification}]:
+\begin{align}
+  \text{helicity } 0 \text{ (trace):}\quad & h_{xx}=h_{yy}=A\,S,\\
+  \text{helicity } 0 \text{ (long.):}\quad & h_{zz}=A\,S + B\,S'' + C\,V_z',\\
+  \text{helicity } \pm 1 \text{ (shear):}\quad & h_{xz}=\tfrac12 C\,V_x',\quad h_{yz}=\tfrac12 C\,V_y',\\
+  \text{helicity } \pm 2 \text{ ($+$, $\times$):}\quad & h_{xx}-h_{yy}=0,\quad h_{xy}=0 \quad\text{identically.}
+\end{align}
+The transverse-plane quadrupole $\{h_{xx}-h_{yy},\,h_{xy}\}$ that \emph{is} the
+gravitational-wave $+/\times$ signal has \emph{no source} in a scalar+vector LSP. This
+is not an accident of the ansatz: a vector displacement field's elastic strain
+$\partial_{(i}u_{j)}$ for a $z$-wave produces only $h_{iz}$ components (helicity $0,\pm1$),
+never the transverse-plane quadrupole.
+
+A consistency check confirms that the static success and the radiative gap are the same
+fact. The c08 Schwarzschild solution has spatial metric $g_{ij}=(1+\varrho)^4\delta_{ij}$
+--- conformally flat, i.e. pure trace (helicity 0), with zero helicity-2 content. c08's
+metric map carries no helicity-$\pm 2$ degree of freedom; its assertion that the tensor
+modes reproduce GR exactly (with scalar/vector modes suppressed by
+$(\lP/\lambda)^2\approx 10^{-76}$) is, at the level of the displayed map, unsubstantiated.
+The summit \texttt{op:einstein} (a) thus localizes to one sharp, falsifiable question:
+\emph{does the 600-cell lattice produce two helicity-$\pm 2$ modes --- a genuine rank-2
+dynamical degree of freedom beyond the scalar+vector metric map --- or only the helicity
+$0,\pm1$ modes that content supports?}
+
+% ============================================================
+\section{Necessity: the three assaults}
+\label{sec:necessity}
+% ============================================================
+
+Before adding a degree of freedom, we establish that none of the no-new-axiom routes
+can supply the missing helicity. We mount three independent assaults, ordered cheapest
+first [\texttt{METH-L2-010 falsification-first attack ordering}]. Each closes for a
+distinct structural reason, and together they make the new degree of freedom
+\emph{necessary}, not merely convenient
+[\texttt{METH-L3-006 axiom-necessity by exhaustive route closure}].
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.96\textwidth]{SR2_fig2_assaults_helicity_and_gap}
+  \caption{The two structural results of the necessity proof. (Left) the helicity
+  content of every route built from the scalar+vector substrate is $\{0,0,\pm 1\}$:
+  the linear map, amplitude bilinears, gradient bilinears, and the full collective-mode
+  spectrum all leave the helicity-$\pm 2$ channel empty. (Right) a data-acting per-edge
+  twist of angle $\theta$ does not open the channel; it instead gaps the existing modes
+  at mass $M = 4|\sin(\theta/2)|$ in Planck units, excluded empirically to
+  $10^{-46}$--$10^{-51}$, forcing flat (absolute-frame) carriage.}
+  \label{fig:assaults}
+\end{figure}
+
+\subsection{First assault --- amplitude polynomials in $(\Phi, V)$}
+
+A transverse $\SSVnet$ plane wave $V=(a\cos f, b\cos f, 0)$, $f=kz-\omega t$, was tested
+for helicity-2 content in every local polynomial form. The linear map $h_{ij}\sim
+\partial_{(i}V_{j)}$ gives zero; the gradient-bilinear $h_{ij}\sim\partial_i V_k\,\partial_j V_k$
+gives zero (pure $T_{zz}$). The amplitude bilinear $h_{ij}\sim V_i V_j$ \emph{does} carry
+helicity-2 structure --- $h_{xx}-h_{yy}=(a^2-b^2)\cos^2 f$, $h_{xy}=ab\cos^2 f$ --- but at
+\emph{second order in amplitude} and at \emph{double frequency} $2\omega$, whereas the
+detected wave is first-order in strain at the source frequency. The wall therefore stands
+for any local polynomial in $(\Phi,V)$: a scalar+vector field carries helicities
+$\{0,0,\pm 1\}$ only, and no polynomial combination reproduces the \emph{linear} Einstein
+radiative sector.
+
+\subsection{Second assault --- the full collective-mode spectrum}
+
+A no-new-axiom helicity-2 need not be a local polynomial; it could be an emergent
+collective mode of the lattice. This route is \emph{permitted}: the Weinberg--Witten
+theorem forbids a massless spin-2 composite only in a theory with a fundamental
+Lorentz-covariant conserved stress tensor, and CPP has a preferred frame (the 600-cell
+plus the Absolute Moment) with Lorentz invariance \emph{emergent} (SR-1), so
+Weinberg--Witten does not apply --- placing CPP in the same class as condensed-matter
+emergent-gravity models \citep{volovik2003,wen2004}. We therefore computed the full
+long-wavelength spectrum. Per Grid Point the dynamical content is one scalar plus one
+vector $=4$ real components, so the dynamical matrix $D(k)$ is $4\times 4$ with exactly
+four propagating branches. Their helicity under the little group (rotations about
+$\hat k$) is fixed: scalar $\to 0$, $V_\parallel\to 0$, $V_\perp$ (two components)
+$\to\pm 1$. A helicity-$\pm 2$ basis vector would transform as $e^{\pm 2i\theta}$, which
+\emph{does not exist} in $\mathrm{span}\{\Phi,V_x,V_y,V_z\}$ (maximum $|\text{helicity}|=1$).
+Building $D(k)$ with the most general icosahedral nearest-neighbor couplings confirms it:
+the four branches are $\{0,0,+1,-1\}$, and the couplings set only their dispersions, never
+their helicity content. The result is representation-theoretic, not a matter of finding
+the right dynamics. The emergent route is \emph{ruled out}.
+
+This is the expected landing, not an anomaly: in every successful formulation of gravity
+the spin-2 graviton is fundamental; emergent-graviton programs are the exotic, hard,
+rarely-successful exception and require large internal Hilbert spaces that a scalar+vector
+site does not have. CPP attempting the emergent route and finding it cannot work places
+CPP \emph{with} mainstream gravity.
+
+\subsection{Third assault --- the most general per-edge connection (the non-radial twist)}
+
+The 600-cell's Grid Points are not radially aligned with any propagation direction: every
+GP has 12 icosahedrally-arranged neighbors, so each GP$\to$GP hop requires an incremental
+turn to select the neighbor, and over a wave's traversal of many light-years this
+tangential element accumulates. Could the twist place an effective spin bit on the
+broadcast? We formalized it as a discrete connection --- a per-edge transport operator
+$R_j$ applied to the carried data on every hop [\texttt{METH-L1-010 discrete per-edge
+connection formalization}] --- giving the connection-covariant dynamical matrix
+$D(k)=\sum_j[T_0 - e^{ik\cdot n_j}T_j]$ with $T_j=\mathrm{blockdiag}(1,R_j)$ and antipodal
+consistency $R_{-j}=R_j^{\mathsf T}$. The icosahedrally-equivariant connections form a
+one-parameter family $R_j(\theta)$ (rotation about the edge axis); we also tested arbitrary
+SO(3) and full O(4) transports.
+
+The verdict survives three independent ways:
+\begin{enumerate}[nosep]
+  \item \textbf{Representation bound.} The carried space $(\Phi,V)$ has helicity character
+        $\chi(\alpha)=2+2\cos\alpha$, whose overlap with the helicity-$\pm 2$ character
+        $e^{\pm 2i\alpha}$ is exactly zero. Rotations are irrep-preserving, so \emph{no}
+        connection can raise the rank of the carried data --- a twist reorients vector
+        components but cannot create rank-2 content (verified to $10^{-16}$ across the
+        equivariant family and 200 random antipodal-consistent SO(3) connections).
+  \item \textbf{Planck-scale gap.} A nonzero twist gaps the existing helicity-$0,\pm 1$
+        modes: $D(0)=\sum_j(\mathbb{I}-R_j(\theta))=16\sin^2(\theta/2)\,\mathbb{I}$ on the
+        vector block, i.e.\ mass $M=4|\sin(\theta/2)|$ in Planck units, with an $O(k)$
+        chiral birefringence term $-4i\sin\theta\,[k]_\times$. The twist \emph{kills} modes;
+        it does not add one (channel optics, not new radiative content).
+  \item \textbf{Empirical exclusion.} A data-acting twist would make the vector sector
+        massive; the photon-mass and graviton-mass bounds force $\theta < 4\times 10^{-47}$
+        and $\theta < 5\times 10^{-51}$ respectively, while the geometric 4D value
+        $\theta=\pi/5$ (quaternionic edge transport) gives $M\approx 1.24$ Planck masses ---
+        maximally excluded. The connection must be flat to $\sim 10^{-46}$.
+\end{enumerate}
+And CPP already says why the connection is flat: the substrate has an absolute (Nexus)
+frame, so the broadcast components are stated in the universal lattice frame, not
+parallel-transported through each edge's local geometry. The non-radial path geometry
+shows up in \emph{which} neighbor is selected (the $e^{ik\cdot n_j}$ factors, fully present
+in the second assault), not in a rotation of \emph{what} is carried. The absolute-frame
+axiom is thus not decoration --- it is precisely what keeps the broadcast massless and
+long-range; a relationalist lattice theory transporting data at the geometric $\theta=\pi/5$
+would be dead on arrival.
+
+\paragraph{Conclusion of the necessity proof.} All no-new-axiom routes are closed --- the
+linear map and bilinears, the collective-mode spectrum, and the most general per-edge
+connection. To carry the radiative tensor sector and match the observed gravitational-wave
+polarizations, a fundamental rank-2 degree of freedom is \textbf{necessary}. This is now a
+conclusion, not an open question.
+
+% ============================================================
+\section{The geometric seat: the lattice already holds the chair}
+\label{sec:seat}
+% ============================================================
+
+The missing degree of freedom is concretely identified: it is the $l=2$ quadrupole of the
+local 600-cell shell deformation, and the lattice supports it natively. On the 12-vertex
+icosahedral neighbor shell, the five $l=2$ functions
+$\{xy, yz, zx, x^2-y^2, 2z^2-x^2-y^2\}$ have rank 5 --- the shell resolves the entire
+quadrupole with no degeneracy --- and $l=2$ is orthogonal to $l=0$ and $l=1$ on the shell
+(maximum overlap $\approx 9\times 10^{-17}$), a consequence of the shell being a spherical
+5-design [\texttt{METH-L1-009 spherical-design moment annihilation};
+\texttt{METH-L1-007 numerical verification at machine precision}]. It is a genuinely new
+degree of freedom, not a combination of the existing scalar and vector.
+
+Crucially, the helicity content matches the need exactly: the $m=\pm 2$ components
+$\{x^2-y^2,\,xy\}$ are precisely the transverse-plane quadrupole --- the GR $+$
+($h_{xx}-h_{yy}$) and $\times$ ($h_{xy}$) polarizations --- while the $m=0$ and $m=\pm 1$
+components are the helicity-$0,\pm 1$ modes the LSP already carries. The quadrupole adds
+\emph{exactly} the two missing helicity-2 modes and nothing redundant
+(Figure~\ref{fig:seat}).
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.92\textwidth]{SR2_fig1_hg_seat_polarizations}
+  \caption{The $H_g$ ($l=2$) seat on the icosahedral neighbor shell, and the
+  identification of its $m=\pm 2$ content with the GR $+$ and $\times$ gravitational-wave
+  polarizations. Eight of the twelve shell vertices have $xy=0$ exactly, so the
+  $\times$-panel's support is sparse; this is physical (a property of the icosahedral
+  vertex coordinates), not an artifact.}
+  \label{fig:seat}
+\end{figure}
+
+Propagation is then free. The icosahedral 12-edge shell-sum acts component-wise on
+whatever a Grid Point broadcasts: from $\sum\hat v_i\hat v_j=4\,\mathbb{I}$, the discrete
+shell-Laplacian becomes $\propto\nabla^2$ in the continuum, and this is
+\emph{rank-agnostic} --- it sees the components, not the tensor rank. A broadcast
+quadrupole $\Qij$ therefore automatically obeys $\Box\Qij=\text{source}$, the identical
+wave operator the scalar and vector obey, and its helicity-$\pm 2$ part (traceless and
+transverse) propagates at $c$ as the $+/\times$ modes.
+
+What the lattice does \emph{not} provide is the degree of freedom itself. The LSP state
+$(x_{\mathrm{GP}}, t_{\mathrm{abs}}, \SSVabs, \SSVnet)$ is one scalar plus one vector; a
+point's state has no rank-2 part, and the diagnostic audit confirms that none of CPP's
+fundamental flows (CP$\to$GP state register; GP$\to$GP broadcast; GP$\to$CP displacement;
+the Nexus timing pulse) carries an $l=2$ channel. The candidate sources each reduce to
+content already counted: the Dipole-Sea polarization \emph{is} the vector $\SSVnet$; the
+constituent ``spin state'' is emergent orbital angular momentum (an axial vector, $\ell/2$
+from the captured-DP orbit); and the $H_g$ shell mode, while available and propagable, is
+not excited by any existing flow. The seat exists; nothing sits in it. Filling it is a
+foundational extension --- an axiom.
+
+% ============================================================
+\section{The axiom: A3$'$, the Completed Broadcast}
+\label{sec:axiom}
+% ============================================================
+
+\subsection{The flow choice: the quadrupole lives in the GP$\to$GP broadcast}
+
+Three flows could in principle host the new primitive: (A) a rank-2 attribute of the CP
+State Register, (B) a tensor component of the GP$\to$GP LSP broadcast, or (C) a
+quadrupolar part of the GP$\to$CP displacement instruction. We place it in \textbf{B}.
+Option A is the wrong home twice over: the mass quadrupole is irreducibly configurational
+(a single point mass has identically zero quadrupole about its own location, for any mass),
+so a rank-2 attribute on a single CP has no content to carry; and a CP-side rank-2 attribute
+would double-count the emergent orbital structures that need no new bit. Option C is the
+\emph{readout}, not the carrier: in the Perceive--Compute--Displace (PCD) cycle the
+GP$\to$CP instruction is the output of the Compute step, so extending it to include the
+transverse-traceless strain is a derivation within the existing metric-map machinery, not a
+primitive. The decisive asymmetry: A or C, if chosen as home, would each still require a
+GP$\to$GP channel for $\Qij$ to propagate --- i.e.\ A or C would \emph{induce} B --- whereas
+B induces neither, since the source assembles from existing CP$\to$GP reports and the readout
+derives from the existing Compute$\to$Displace map.
+
+This is not a novel architectural move; it is the third rung of an existing ladder
+(Table~\ref{tab:ladder}). The c07 glossary records that the LSP ``supersedes the SR-era
+DI-bit broadcast by adding the vector component needed for general relativity'' --- the
+packet has been extended before, for exactly this reason, each time a new sector of gravity
+exceeded the representational capacity of the existing content.
+
+\begin{table}[H]
+  \centering
+  \caption{The broadcast ladder. Each rung was forced when the next sector of gravity
+  exceeded the prior packet's representational capacity.}
+  \label{tab:ladder}
+  \begin{tabular}{@{}clp{0.45\textwidth}@{}}
+    \toprule
+    Rung & Packet content & Sector it unlocked \\
+    \midrule
+    1 & DI-bit: scalar $\SSVabs$ & Special relativity; time dilation ($g_{tt}$) \\
+    2 & LSP: scalar $+$ vector $\SSVnet$ & Weak-field GR statics; spatial curvature ($g_{ij}$); Schwarzschild \\
+    3 & \textbf{LSP$'$: scalar $+$ vector $+$ tensor $\Qij$} & \textbf{The radiative tensor sector; GW polarizations; \texttt{op:einstein} (a)} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{The axiom text}
+
+We state the spin-bit axiom as an \emph{amendment}, $\mathrm{A3}\to\mathrm{A3'}$, following
+the registry's A6$'$ consolidation precedent: it absorbs the DI-bit $\to$ LSP $\to$ tensor
+ladder into one closed statement. Under this accounting the axiom count stays at 9; the
+honest dual accounting (some reviewers may prefer to score the genuinely new degree of
+freedom as a tenth axiom) is recorded with the registry entry. What is not in dispute is
+that the move adds \emph{one degree of freedom and zero parameters}.
+
+\begin{axiombox}
+\textbf{A3$'$ --- The Completed Broadcast (Lattice State Packet) Axiom.}\\[4pt]
+At every Absolute Moment, each Grid Point broadcasts to every GP on its PSR shell a Lattice
+State Packet whose dynamical content is the complete set of rotationally protected
+irreducible representations of the lattice point group:
+\[
+  \mathrm{LSP}' = \big(\,x_{\mathrm{GP}},\, t_{\mathrm{abs}}\,;\ \Phi,\ V_i,\ Q_{ij}\,\big),
+\]
+where $\Phi\equiv\SSVabs$ is the scalar (irrep $A$, $l=0$; sources $g_{tt}$),
+$V_i\equiv\SSVnet$ is the vector (irrep $T_1$, $l=1$; sources $g_{ij}$ statics and
+gravitomagnetism), and $Q_{ij}$ is the symmetric-traceless rank-2 field (irrep $H$,
+$l=2$; the radiative tensor sector --- the new, completing rung), subject to:
+\begin{description}[nosep,leftmargin=2.6em,style=nextline]
+  \item[(C1) Algebraic constraint.] $Q_{ij}=Q_{ji}$ and $Q_{kk}=0$: exactly five components,
+    filling the $H$ slot, with their five-fold degeneracy protected exactly by the lattice
+    point group (no fine-structure).
+  \item[(C2) Carriage.] All packet components are stated in the absolute (Nexus) frame; the
+    per-hop transport of packet data is the identity (flat connection). [Forced empirically
+    to one part in $10^{46}$--$10^{51}$: any data-acting per-hop twist Planck-gaps the
+    broadcast.]
+  \item[(C3) Dynamics.] $Q_{ij}$ participates in the PCD cycle \emph{identically} to $\Phi$
+    and $V_i$: the Compute step applies the same icosahedral PSR shell-sum to all packet
+    components. In the continuum limit, $\Box Q_{ij}=S_{ij}$ at exactly $c$. [The shell-sum
+    is rank-agnostic; no new dynamical law is introduced.]
+  \item[(C4) Source.] $S_{ij}=-\lambda\,T_{ij}^{\TF}$, where $T_{ij}^{\TF}$ is the traceless
+    part of the local matter stress (momentum-flux) tensor --- origin-independent and
+    assembled by the GP at the Perceive step from the CP momentum flux it already registers
+    --- and $\lambda$ is fixed by the requirement that the same Newton constant $G$ governing
+    the scalar sector govern the tensor sector: $\lambda=16\pi G/c^4$ (derived,
+    \S\ref{sec:quadrupole}). The far-field consequence (via $\int T_{ij}\,d^3x = \tfrac12\ddot
+    M_{ij}$) is quadrupole radiation, $h^{\TT}=(2G/c^4 r)\,\ddot Q^{\TT}(t_{\mathrm{ret}})$;
+    static matter sources nothing as a theorem (perfect-fluid $T^{\TF}=0$ identically; bounded
+    statics by the tensor virial theorem).
+  \item[(C5) Readout.] The GP$\to$CP displacement instruction follows geodesics of the unique
+    constraint-consistent (harmonic-pattern) effective metric assembled from the nine packet
+    channels --- $\bar h_{00}\leftarrow\Phi$, $\bar h_{0i}\leftarrow V_i$,
+    $\bar h_{ij}\leftarrow Q_{ij}+\tfrac13\delta_{ij}\tau$ --- with the spatial trace $\tau$
+    the \emph{conservation completion}
+    $\nabla\tau=3(\partial_t\bar h_{0i}-\partial_j Q_{ji})$ (wave-zone:
+    $\tau=3(\bar h_{tt}-\hat n\hat n{:}Q)$; statics: $\tau=0$ by the virial theorem, reducing
+    exactly to the c07 map). $\tau$ is a redundant completion, not a tenth channel (zero new
+    degrees of freedom). Consequence: the tidal response is exactly TT (Eardley class N$_2$);
+    CPP-internal channel energy is defined operationally by the C5 coupling (the
+    Operational-Energy Lemma): there is no independently operational energy channel under C5.
+\end{description}
+\end{axiombox}
+
+\subsection{The Completion Theorem: why ``completed'' is literal}
+
+\begin{theorem}[Completion Theorem; THEO-SR-EIN-1]
+\label{thm:completion}
+The SO(3) multiplets descending intact to the icosahedral rotation group are exactly
+$l\in\{0,1,2\}$ (irreps $A$, $T_1$, $H$). For $l\ge 3$, $2l+1\ge 7 > 5 =$ the largest
+icosahedral irrep, so no higher multiplet can ever descend intact. Hence
+\[
+  \mathrm{LSP}' = A\oplus T_1\oplus H = 1+3+5 = 9 \text{ components}
+\]
+is precisely the lattice's protected representation content --- every protected irrep
+exactly once, and nothing else. The ladder terminates at rank 2: there is no fourth rung.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Branching $D^{(l)}$ under the icosahedral rotation group $I$, computed for $l=0$--$12$ and
+closed for all $l$ by the dimension bound: $l=0\to A$, $l=1\to T_1$, $l=2\to H$ all descend
+irreducible; $l=3\to T_2\oplus G$ is the first splitting, and every $l\ge 3$ splits
+permanently because $2l+1$ exceeds the dimension (5) of the largest icosahedral irrep. The
+irreps absent from the packet ($T_2$, $G$) are exactly those that occur only as fragments of
+split multiplets [\texttt{METH-L1-003 branching rule analysis};
+\texttt{METH-L1-012 protected-content enumeration via irrep dimension bound}].
+\end{proof}
+
+The axiom does not append an arbitrary component; it completes the broadcast to the full
+content the geometry can carry faithfully. This is the structural answer to ``why was the
+world built this way'': the broadcast carries exactly what the lattice protects. The
+amendment is necessary (no smaller content carries helicity-$\pm 2$, \S\ref{sec:necessity}),
+minimal (five components is the smallest rank-2 content), maximal (the geometry protects
+nothing higher), and zero-parameter ($\lambda$ is fixed by the existing $G$).
+
+% ============================================================
+\section{The derived quadrupole formula: \texorpdfstring{$\lambda=16\pi G/c^4$}{lambda=16 pi G / c4}, zero new parameters}
+\label{sec:quadrupole}
+% ============================================================
+
+The axiom's central debt is to reproduce the Einstein quadrupole formula with no
+adjustable coefficient. We discharge it [\texttt{METH-L1-011 conservation-identity far-field
+reduction}].
+
+\subsection{The coupling and the waveform}
+
+From C3$+$C4, $\Box Q_{ij}=-\lambda\,T_{ij}^{\TF}$ propagates at $c$. The retarded far-zone
+solution is $Q_{ij}(t,\mathbf{x})=(\lambda/4\pi r)\int T_{ij}^{\TF}(t-r/c,\mathbf{x}')\,d^3x'$.
+The conservation identity
+\[
+  \int T_{ij}\,d^3x = \tfrac12\,\frac{d^2 M_{ij}}{dt^2},
+  \qquad M_{ij}=\int\rho\,x_i x_j\,d^3x,
+\]
+consumes local conservation twice: mass conservation is CP-count conservation (c07's local
+rule: no CP created or destroyed, every departing CP arriving at exactly one neighbor), and
+momentum conservation is the displacement-rule bookkeeping. The identity was verified
+numerically on an eccentric ($e=0.6$) Kepler binary to $6\times 10^{-7}$. Hence
+$Q_{ij}(\text{far})=(\lambda/8\pi r)\,\ddot M_{ij}^{\TF}(t_{\mathrm{ret}})$. Matching the
+tensor sector to the same $G$ the scalar sector already derives (under the strain-valued
+readout convention) fixes
+\[
+  \boxed{\ \lambda = \frac{16\pi G}{c^4}\ }
+\]
+--- the Einstein coupling, with zero new parameters --- and
+\[
+  \Box\bar h_{\mu\nu} = -\frac{16\pi G}{c^4}\,T_{\mu\nu},
+  \qquad
+  h^{\TT}_{ij} = \frac{2G}{c^4 r}\,\ddot Q^{\TT}_{ij}(t-r/c).
+\]
+The arc's origin gap closes here: c08's audit found that the GR wave equation was
+\emph{asserted} (by writing it down), not derived from the LSP. It is now derived --- the
+degree of freedom from A3$'$, the dynamics from the rank-agnostic shell-sum, the source from
+local stress, and the coefficient from $G$-consistency with the already-derived Newtonian
+sector. With $\lambda$ fixed, the $Q$-sector field theory is term-for-term linearized GR's TT
+sector, so the Einstein quadrupole luminosity $P=(G/5c^5)\langle\dddot Q_{ij}\dddot Q_{ij}\rangle$
+and the Peters orbital decay carry over as theorems of the isomorphism.
+
+\subsection{Statics untouched --- now a theorem}
+
+\begin{theorem}[Statics Theorem; THEO-SR-EIN-2]
+\label{thm:statics}
+Under C4 (source $=$ traceless local stress): static perfect fluids have $T^{\TF}=0$
+identically, and any bounded static system has $\int T_{ij}\,d^3x=0$ (tensor virial theorem).
+Static matter sources no $Q_{ij}$, and the trace completion vanishes ($\tau_{\mathrm{static}}=0$).
+Schwarzschild/Kerr recovery (c07/c08/c11) is untouched.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+(a) A static perfect fluid has $T_{ij}=p\,\delta_{ij}$, so $T^{\TF}=0$ and the source never
+forms. (b) Any bounded static system has $\ddot M_{ij}=0$, hence $\int T_{ij}\,d^3x=0$ by the
+identity above. Residual near-zone $Q$ from exotic static anisotropic stress is
+higher-multipole and PN-suppressed [\texttt{METH-L1-007}].
+\end{proof}
+
+What an earlier draft imposed as a filter clause is here derived. The CPP-to-GR
+correspondence is summarized in Table~\ref{tab:mapping}.
+
+\begin{table}[H]
+  \centering
+  \caption{CPP-to-conventional-physics correspondence for the gravitational sector.}
+  \label{tab:mapping}
+  \begin{tabular}{@{}p{0.30\textwidth}p{0.30\textwidth}p{0.32\textwidth}@{}}
+    \toprule
+    CPP object & GR / observational counterpart & Status \\
+    \midrule
+    $\Phi=\SSVabs$ (irrep $A$) & $g_{tt}$ / Newtonian potential & Recovered (c07/c08) \\
+    $V_i=\SSVnet$ (irrep $T_1$) & $g_{ij}$ statics / gravitomagnetism & Recovered (c07/c08) \\
+    $Q_{ij}$ (irrep $H$) & TT metric perturbation $h^{\TT}_{ij}$ & Derived here (A3$'$) \\
+    $\Box Q_{ij}=-\lambda T^{\TF}_{ij}$ & $\Box\bar h_{\mu\nu}=-16\pi G\,T_{\mu\nu}/c^4$ & Derived, $\lambda=16\pi G/c^4$ \\
+    Rank-agnostic shell-sum & wave propagation at $c$ & Native (Thm.~\ref{thm:completion} content) \\
+    CP-count + displacement conservation & $\partial^\mu T_{\mu\nu}=0$ & No monopole/dipole radiation \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{No monopole, no dipole}
+
+The radiative expansion begins at the quadrupole because conservation kills everything below
+it: mass conservation (CP-count) makes the monopole non-radiative ($\dot M=0$), and momentum
+conservation makes the dipole non-radiative ($\ddot D=\dot P_{\text{total}}=0$ in the CM
+frame). The absence of dipole gravitational radiation --- which excludes generic
+scalar--vector gravities and is one of the four evidential legs of the axiom's justification
+--- is therefore a \emph{consequence} of A3$'$ plus conservation, not an input.
+
+\subsection{The observables, with nothing to tune}
+
+\begin{table}[H]
+  \centering
+  \caption{Predictions at $\lambda=16\pi G/c^4$ with the scalar-sector $G$ and no adjustable
+  coefficient anywhere.}
+  \label{tab:observables}
+  \begin{tabular}{@{}p{0.38\textwidth}p{0.27\textwidth}p{0.27\textwidth}@{}}
+    \toprule
+    Test & Prediction & Record \\
+    \midrule
+    PSR B1913$+$16 (Hulse--Taylor) $\dot P_b$ & $-2.4031\times 10^{-12}$ & obs/GR $=0.9983\pm 0.0016$ \citep{weisberg2016} \\
+    PSR J0737$-$3039 (double pulsar) $\dot P_b$ & $-1.2483\times 10^{-12}$ & obs/GR $=0.999963\pm 0.000063$ \citep{kramer2021} \\
+    GW150914-class strain & $h\sim 3\times 10^{-21}$ (order) & $h\sim 10^{-21}$ \citep{abbott2016} \\
+    Dipole GW emission & none (conservation) & none (pulsar timing) \\
+    GW speed & exactly $c$ (shell-sum) & $|c_{\mathrm{GW}}/c-1|\lesssim 10^{-15}$ \citep{abbott2017} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ============================================================
+\section{Response and energy: Eardley class N$_2$, and the operational-energy ledger}
+\label{sec:response}
+% ============================================================
+
+The most dangerous step in the construction is not whether $Q$'s helicity-$0,\pm 1$
+components radiate, but a worse trap: the scalar and vector channels have their own
+radiative $1/r$ tails. Any massless field sourced by $\rho$ radiates at quadrupole order in
+the retardation expansion, and if those tails entered the effective metric uncanceled, CPP
+would predict breathing- and longitudinal-mode strain at Newtonian coupling strength (no
+Brans--Dicke $1/\omega$ suppression is available --- CPP's scalar \emph{is} Newtonian gravity)
+and an extra radiative energy channel that would shift binary decay rates at $O(10\%)$, flatly
+excluded by the double pulsar's $10^{-4}$ agreement. GR survives the identical trap through a
+conservation-enforced cancellation in the \emph{curvature}; A3$'$'s assembly must inherit it.
+
+\subsection{The cancellation theorem}
+
+\begin{theorem}[TT-Response (Cancellation) Theorem; THEO-SR-EIN-3]
+\label{thm:tt}
+For a plane wave $\bar h_{\mu\nu}(t-z/c)$ satisfying the four conservation-inherited
+constraints $\partial^\mu\bar h_{\mu\nu}=0$, the linearized tidal response is
+\[
+  R_{i0j0} = \begin{pmatrix}
+    -\tfrac14(H_{xx}-H_{yy})'' & -\tfrac12 H_{xy}'' & 0 \\
+    -\tfrac12 H_{xy}'' & +\tfrac14(H_{xx}-H_{yy})'' & 0 \\
+    0 & 0 & 0
+  \end{pmatrix},
+\]
+depending only on the two TT combinations. The scalar tail ($H_{tt}$), the vector tails
+($H_{tx},H_{ty}$), the longitudinal components, and the transverse trace cancel exactly in
+the curvature. With C5's redundant trace completion $\nabla\tau=3(\partial_t\bar h_{0i}-
+\partial_j Q_{ji})$, breathing, longitudinal, and vector-mode responses are identically zero:
+the radiation is Eardley class N$_2$, as in GR.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+The retarded solutions of $\Box\bar h_{\mu\nu}=-\lambda T_{\mu\nu}$ with conserved $T$ satisfy
+$\partial^\mu\bar h_{\mu\nu}=0$ automatically ($\Box(\partial^\mu\bar h_{\mu\nu})=
+-\lambda\partial^\mu T_{\mu\nu}=0$, and the sourceless retarded solution vanishes). The
+constraints leave 6 free functions; the 4-parameter residual gauge acts within them; the
+curvature is gauge-invariant, so it can depend on only $6-4=2$ combinations --- the TT pair.
+Verified by direct symbolic evaluation, not only the counting argument.
+\end{proof}
+
+\subsection{The discovery: the spatial trace is redundant}
+
+The harmonic pattern has a tenth component, the spatial trace $\tau=\bar h_{kk}$ (sourced by
+$T_{kk}$), which the packet does not carry. The packet is not one slot short: $\tau$ is
+\emph{redundant}, determined locally by the channels the packet does carry,
+$\nabla\tau=3(\partial_t\bar h_{0i}-\partial_j Q_{ji})$ (gradients across the PSR shell being
+exactly what the Compute step perceives), with wave-zone form $\tau=3(\bar h_{tt}-\hat n\hat
+n{:}Q)$. This was verified to reproduce GR's $\tau=(2G/c^4 r)\ddot M_{kk}$ to $4\times 10^{-19}$.
+The result ratifies the Completion Theorem: a spatial trace is rotationally an $l=0$ object ---
+a \emph{second} scalar --- and Theorem~\ref{thm:completion} says the packet carries every
+protected irrep exactly once, so conservation makes the second $A$-slot unnecessary. Physics
+agrees with the geometry. (And $\tau_{\mathrm{static}}=\int T_{kk}=0$ by the virial theorem,
+which is why c07/c08's static recovery never noticed the slot.)
+
+A six-mode test on an armed-trap eccentric binary ($e=0.6$, where the trace radiates and any
+hidden non-TT drain must show) confirms the picture: breathing, longitudinal, and both vector
+responses vanish to finite-difference precision ($\le 4\times 10^{-11}$ of the tensor
+amplitude). The counterfactual is documented [\texttt{METH-L2-011 counterfactual-armed
+verification}]: dropping the completion ($\tau=0$) produces $O(1)$-relative breathing and
+longitudinal violations ($2.6\times 10^{-2}$ of tensor for this orbit), so the completion is
+load-bearing precisely for the eccentric, inspiraling sources detectors actually observe.
+
+\subsection{The operational-energy ledger}
+
+The DG-3 review's one upheld objection (\S\ref{sec:review}) was that the claim ``the
+scalar/vector tails carry no independent energy'' outran what the flux computation proved: a
+channel could in principle drain energy while producing no strain. The fix is a lemma plus a
+computation, not a wording patch.
+
+\begin{theorem}[Operational-Energy Lemma; THEO-SR-EIN-4]
+\label{thm:energy}
+C5 is the only field$\leftrightarrow$matter coupling. Emission equals the work done by the
+assembled retarded metric (the odd, reaction part), a functional of the assembled metric alone
+and hence identical to linearized GR's Einstein quadrupole luminosity; absorption is TT-only
+(Theorem~\ref{thm:tt}). A ``bare-channel Hamiltonian'' assigning independent energy to the
+$\Phi$ or $V$ tails is operationally empty --- nothing can emit into, or absorb from, a channel
+matter does not couple to --- because the channels are generated broadcasts (retarded
+functionals of matter, with no source-free incoming radiation). There is no independently
+operational energy channel under C5; the TT Isaacson assignment is the unique transport
+bookkeeping balancing both ends of the ledger.
+\end{theorem}
+
+The eccentric ledger closes the computation [\texttt{METH-L1-007}]: integrating the TT Isaacson
+flux $\tfrac1{32\pi}\langle\dot h^{\TT}\dot h^{\TT}\rangle$ over the sphere and comparing to
+Peters' eccentric-enhanced rate ($f(0.6)=10.2279$) gives ratio $1.000640$ (grid), with the
+DG-3 reviewer's independent analytic recomputation returning $0.999998$. The TT sector alone
+carries the entire GR source decay including the $(1-e^2)^{-7/2}$ enhancement; there is no room
+in the budget for an independent scalar/vector drain, and the double pulsar's $10^{-4}$
+agreement is a genuine pass. The circular-orbit flux likewise returns the Einstein luminosity to
+quadrature accuracy ($1.000246$), forcing the $(c^4/32\pi G)$ field normalization with no
+remaining freedom. A substrate-microscopic re-derivation of the same number is a declared
+refinement, not a debt of the axiom; any such functional must reproduce this operational ledger.
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.94\textwidth]{SR2_fig3_eccentric_energy_ledger}
+  \caption{The eccentric ($e=0.6$) energy ledger over one orbital period: the
+  orbit-averaged, sphere-integrated TT Isaacson flux tracks Peters' eccentric-enhanced
+  decay rate to ratio $1.000640$ (independent analytic recompute $0.999998$). The trace
+  radiates on an eccentric orbit, so any hidden non-TT energy drain would have to appear
+  here; none does.}
+  \label{fig:ledger}
+\end{figure}
+
+% ============================================================
+\section{Physical interpretation: emergent spin-2 in matter, and why the axiom is mono-sectoral}
+\label{sec:matter}
+% ============================================================
+
+A natural test of the axiom's scope is whether CPP's strong sector independently demands the
+same $Q_{ij}$: can it build a spin-2 hadron --- f$_2$(1270), the light ${}^3P_2$ state --- as
+an emergent orbital configuration, or does it hit the same representational wall as the
+gravitational wave? It does \emph{not} hit the wall, and this is a finding, not a weakness. The
+quark--antiquark ZBW spins compose as $\tfrac12\otimes\tfrac12=0\oplus1$, and the spin triplet
+with one unit of relative orbital angular momentum gives $L=1\otimes S=1=J\in\{0,1,2\}$ with
+degeneracies $\{1,3,5\}$: the five-dimensional $J=2$ multiplet (f$_2$(1270) and its nonet, and
+SS-1e's $\chi_{c2}$) is reached with vectors alone. The resource the gravitational wave lacks is
+unbounded here: a two-body relative coordinate ranges over a function space, so every $l$ is
+available, whereas the per-point broadcast carries 4 components, $l\le 1$, fixed. \emph{Matter
+can be spin-2; the radiating field cannot} --- the wall is per-point. This is the architect's
+``granularity of space insufficient to reproduce the spin'' diagnosis, demonstrated from the
+matter side.
+
+The candidate second motivation therefore \emph{dissolves}: the strong sector does not need
+$Q_{ij}$, and the axiom is honestly \textbf{mono-sectoral} --- load-bearing for one sector,
+radiative tensor gravity. The justification's strength rests on \emph{necessity} (three closed
+assaults) rather than breadth of motivation, which is a legitimate but different kind of
+strength. This is normal for gravity: the graviton is fundamental in every working theory, and
+CPP's scalar and vector already carry statics and gravitomagnetism, so CPP cannot (and does not)
+borrow GR's ``every falling apple is spin-2 evidence'' framing. Within the one sector the
+evidence is multi-legged: direct interferometric detections; multi-detector polarization tests
+favoring tensor over scalar/vector; five decades of binary-pulsar orbital decay matching the GR
+quadrupole formula (an independent back-reaction channel); and the no-dipole constraint.
+
+The strong-sector test also returns a geometric bonus. Branching $D^{(2)}$ under the icosahedral
+rotation group is irreducible ($H$), whereas under the cubic group it splits $E\oplus T_2$ (2+3).
+The 600-cell's icosahedral symmetry protects the five-fold spin-2 multiplet exactly --- for
+tensor mesons \emph{and} for the future $Q_{ij}$ (the GW polarizations) --- where a cubic
+substrate would fine-split both. The geometry pre-slotted and protects the seat the axiom fills.
+
+\subsection{CP/GP Signature at this scale}
+
+\textbf{What the Conscious Points and Grid Points are doing.} At the substrate scale, the
+gravitational wave is a propagating quadrupolar deformation pattern of the Grid-Point broadcast:
+each GP, at each Absolute Moment, perceives the nine-component packets of its 12 icosahedral
+neighbors, computes the rank-agnostic shell-sum, and re-broadcasts --- the $Q_{ij}$ channel
+carrying the transverse-traceless ``shape'' information that a scalar magnitude and a vector
+direction cannot encode. The source is assembled, at the Perceive step, from the CP momentum
+flux that GPs already register; no new report is added to any flow.
+
+\textbf{Scale bridge.} The macroscopic observable (a $10^{-21}$ strain across a kilometre
+baseline) is the continuum limit of this per-GP quadrupole broadcast, propagating at $c=\lP/\tP$
+by the same shell-sum that carries light. Matter responds (C5) only as geodesic motion in the
+assembled metric; the tidal strain across a femtometre from any astrophysical source is
+$\sim 10^{-21}\cdot(\mathrm{fm/km})$-class --- utterly negligible at hadronic scales --- so
+emergent spin-$\tfrac12$ (ZBW orbital) and configurational matter $l=2$ (hadrons, nuclei) are
+untouched. The single new sub-quantum primitive is the $l=2$ shape channel of the broadcast,
+seated in the $H_g$ irrep and protected by the icosahedral geometry of the 600-cell.
+
+% ============================================================
+\section{Falsifiers}
+\label{sec:falsifiers}
+% ============================================================
+
+A3$'$ ships with its predictions registered, open, and (for now) deliberately uncounted ---
+the count moves only via the programme's panel protocol. Four falsifiers are stated at axiom
+level (registry \texttt{predictions.md}, PRED-O-35--38):
+
+\begin{description}[nosep,leftmargin=2.0em,style=nextline]
+  \item[F1 (PRED-O-35) --- polarization content.] CPP predicts \emph{pure tensor} gravitational-wave
+    polarization at first order (Eardley class N$_2$; Theorems~\ref{thm:tt},~\ref{thm:energy}).
+    Any confirmed first-order breathing, longitudinal, or vector GW mode falsifies A3$'$.
+  \item[F2 (PRED-O-36) --- propagation speed.] C3 predicts GW speed exactly $c$ (the same shell-sum
+    as light). GW170817's $|c_{\mathrm{GW}}/c-1|\lesssim 10^{-15}$ is passed by construction; any
+    future confirmed deviation falsifies C3.
+  \item[F3 (PRED-O-37) --- multiplet integrity.] C1 plus the $H$-protection (Theorem~\ref{thm:completion})
+    predict no polarization fine-structure or splitting-induced birefringence. This doubles as a
+    \emph{lattice discriminant}: a cubic substrate predicts a $2+3$ splitting of the five-fold
+    multiplet (Figure~\ref{fig:discriminant}), so an observed splitting would both falsify A3$'$ as
+    stated and select against the icosahedral substrate
+    [\texttt{METH-L1-012}; \texttt{METH-L1-003}].
+  \item[F4 (PRED-O-38) --- dispersion.] C2 (flat carriage) predicts no helicity-dependent vacuum
+    dispersion beyond the flat-carriage ceiling $\theta<10^{-46}$--$10^{-51}$ (\S\ref{sec:necessity}).
+\end{description}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=0.90\textwidth]{SR2_fig4_lattice_discriminant_branching}
+  \caption{F3 as a lattice discriminant. The $l=2$ multiplet descends intact ($H$,
+  five-fold degenerate) under the icosahedral group of the 600-cell, but splits $E\oplus T_2$
+  ($2+3$) under a cubic group. CPP predicts no fine-structure of the GW polarizations; an
+  observed splitting would falsify A3$'$ and select against an icosahedral substrate.}
+  \label{fig:discriminant}
+\end{figure}
+
+% ============================================================
+\section{Review record, residuals, and downstream consequences}
+\label{sec:review}
+% ============================================================
+
+\subsection{The DG-3 axiom-level review}
+
+A3$'$ passed the programme's first axiom-level adversarial swarm review (Decision Gate 3),
+$3/3$ CONFIRM over two rounds. The texture of that review is itself the strongest process
+evidence in the paper and is stated here straight [\texttt{METH-L2-004 symmetric-honesty
+discipline}]. Round 1 returned two CONFIRM and one RESTATE; the lone RESTATE was \emph{upheld
+by integration against the $2$--$1$ count}, because the objection was correct --- the round-1
+claim that the scalar/vector tails carry no independent energy outran what the flux computation
+proved. The fix was the Operational-Energy Lemma (Theorem~\ref{thm:energy}) plus the eccentric
+ledger, not a wording change. On re-dispatch the cycle closed $3/3$, with the objecting reviewer
+withdrawing the objection on an independent analytic recomputation of the eccentric ledger
+($0.999998$). Two review questions were settled in the process: C5's trace completion is
+derived-unique (it adds no degrees of freedom and is the only assembly consistent with the
+identities the retarded channels already satisfy), and the dual count-accounting is recorded
+as an amendment (count 9) with a new-axiom audit note (count 10).
+
+\subsection{Residuals and conditionality}
+
+We state the residuals identically to the Open Problems Addressed list (\S\ref{sec:intro}) and the registry:
+\begin{itemize}[nosep]
+  \item \textbf{\texttt{op:einstein} (a) --- CLOSED} for the radiative helicity-$\pm 2$ sector,
+    by necessity (\S\ref{sec:necessity}) and the zero-parameter derivation chain
+    (\S\S\ref{sec:axiom}--\ref{sec:response}).
+  \item \textbf{\texttt{op:einstein} (b) --- conditionally closed} (\S\ref{sec:prequel}), with the
+    shell-sum reduction rigorization as the named residual. ``\texttt{op:einstein} (a) CLOSED''
+    must not be read as ``\texttt{op:einstein} CLOSED.''
+  \item \textbf{Declared refinement, not debt:} the substrate-microscopic energy functional. The
+    energy accounting is operationally closed (Theorem~\ref{thm:energy}); its microscopic
+    underwriting is a refinement target, constrained to reproduce the C5-operational ledger.
+\end{itemize}
+
+\subsection{Downstream}
+
+Closing the radiative sector removes the dark-sector cap that conditioned two arcs. The
+cosmological-constant reconciliation (SR-5 $\equiv$ SM-6) and the dark-matter R2 (a)-leg are
+unblocked; their full unconditionalization proceeds in their own lanes. The chiral
+birefringence law of the third assault ($\omega^2_\pm=M^2\pm 4\sin\theta\,k$), with its
+$10^{-46}$--$10^{-51}$ empirical ceiling on the substrate twist, is flagged as a potential
+future hook for the substrate-chirality lane --- a direction, not a claim.
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ============================================================
+
+Gravity's radiative tensor sector forced a new fundamental degree of freedom onto the CPP
+substrate, and the axiom paid for itself. The necessity is theorem-grade across three
+independent assaults; the construction is native to the 600-cell ($H_g$ seat, rank-agnostic
+propagation, icosahedral protection); the amendment $\mathrm{A3}\to\mathrm{A3'}$ completes the
+broadcast to the lattice's full protected content with no fourth rung; and the payoff is the
+Einstein quadrupole formula at $\lambda=16\pi G/c^4$ with zero new parameters, statics intact,
+response pure tensor, energy ledger closed, and binary-pulsar timing matched with nothing
+tuned. CPP is therefore a scalar--vector gravity completed by exactly one rank-2 degree of
+freedom --- the spin bit --- and that completion is the first axiom-level move in the programme
+to pass DG-3 review, by necessity rather than by convenience.
+
+\subsection{Swarm-Validation Contribution}
+\label{sec:swarm}
+
+This paper contributes to the cumulative swarm argument in two ways. First, it adds the derived
+Einstein coupling $\lambda=16\pi G/c^4$ and the quadrupole waveform to the programme's body of
+zero-parameter results, triangulating the 600-cell axiom set against one of the most precisely
+tested predictions in physics (binary-pulsar orbital decay, agreement at the $10^{-4}$ level)
+with no adjustable coefficient. Second, and structurally, it demonstrates that the axiom
+inventory itself is constrained by the same swarm discipline: the spin bit was not added by
+preference but forced by the exhaustive closure of every no-new-axiom route, then survived an
+axiom-level adversarial review whose one correct objection was integrated rather than outvoted.
+The result is one degree of freedom and zero parameters, and four registered falsifiers by which
+the wider community can test it.
+
+\subsection{Problem Status After This Paper}
+
+\begin{itemize}[nosep]
+  \item \texttt{op:einstein} (a) --- radiative tensor sector: \textbf{CLOSED} (was OPEN).
+  \item \texttt{op:einstein} (b) --- excess/inert-Sea: \textbf{conditionally closed}, residual =
+    shell-sum reduction rigorization (unchanged in grade; grounded in icosahedral symmetry).
+  \item GW-polarization tension: \textbf{resolved} (tensor, conditional on A3$'$).
+  \item Dark-sector cap on CC reconciliation / DM R2 (a)-leg: \textbf{lifted} for the radiative
+    sector; full unconditionalization proceeds in those lanes.
+  \item New: A3$'$ registered (axiom-registry); THEO-SR-EIN-1..4 registered; PRED-O-35..38
+    registered (open, uncounted).
+\end{itemize}
+
+% ============================================================
+\section*{Acknowledgements}
+% ============================================================
+\addcontentsline{toc}{section}{Acknowledgements}
+
+The spin-bit / granularity intuition, the non-radial-connection assault, and the
+architectural decisions (flow choice, amendment form, prequel scope) are due to Thomas Lee
+Abshier. The construction, derivations, and drafting were carried out by Claude Opus (Anthropic).
+The axiom-level Decision-Gate-3 adversarial review --- the programme's first --- was conducted by
+ChatGPT, Grok, and Copilot; ChatGPT's round-1 objection, upheld against the majority and integrated
+as the Operational-Energy Lemma, materially strengthened the result, and Copilot's and Grok's
+calibrations sharpened the axiom text. The verification scripts and figures derive from the
+committed computations of the \texttt{op\_einstein\_closure} / \texttt{spin2\_construction} arc
+(Patches 1107--1135).
+
+\addcontentsline{toc}{section}{References}
+\bibliography{SR-2_references}
+
+\end{document}
