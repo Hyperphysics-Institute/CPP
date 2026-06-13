@@ -138,6 +138,18 @@ fi
 if [ -n "${TEX:-}" ] && grep -Eq "bibliography\{[^}]*${ID}_references" "$TEX" 2>/dev/null; then
   echo "  [FAIL] .tex cites a per-paper bib; use \\bibliography{../../bibliography/cpp_references}"; FAIL=1
 fi
+# per-SERIES bib usage — OS §10 deprecates these too (blind-spot closed 2026-06-13,
+# OPEN-WORKFLOW-1): the per-paper check above missed \bibliography{cpp_*_series},
+# letting a new paper silently re-adopt a deprecated series bib. Basename-match so
+# the central cpp_references is never flagged.
+if [ -n "${TEX:-}" ]; then
+  BIBTGT=$(grep -oE 'bibliography\{[^}]*\}' "$TEX" 2>/dev/null | head -1 | sed -E 's/.*\{([^}]*)\}/\1/; s#.*/##')
+  case "$BIBTGT" in
+    cpp_references) : ;;  # central bib — compliant
+    cpp_*_series|gr_companion|references)
+      echo "  [FAIL] .tex cites a per-series bib ($BIBTGT); OS §10 central-only — use \\bibliography{../../bibliography/cpp_references} (OPEN-WORKFLOW-1)"; FAIL=1 ;;
+  esac
+fi
 echo
 
 # --- placeholder-text scan in the paper dir (H2) ----------------------------

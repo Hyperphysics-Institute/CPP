@@ -385,3 +385,34 @@ into master (fidelity: ensure url-in-note + Titlecase parity so multi-paper repo
 links — same pattern as 1154/1157, applied across EW-1..5 / QM-1..6 / SD-1..5 / c07); (5) run
 v4 `--accept-review` per series (the script currently scans only `series_relativity/papers` +
 `series_standard_model/papers` — extend its find roots to cover EW/QM/SD/strong/GR dirs).
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1159: per-series tanglement risk assessed; gate blind-spot closed + dead files removed
+
+**Question answered (does deferring per-series consolidation risk future tanglement?):**
+Active spread risk is LOW — only **SS-1** still cites a per-series bib (`cpp_strong_series`);
+SS-8 already went central; SS-2..7/9 and SS-1a..e use inline/no bib. The per-series pattern
+is static, not metastasizing. BUT one real growth vector existed: the `publication_audit.sh`
+bib-compliance gate `[FAIL]`'d on per-PAPER bibs only and was **blind to per-SERIES bibs**, so a
+future paper copying SS-1's `\bibliography{cpp_strong_series}` preamble would silently re-adopt
+the deprecated pattern and still PASS. Two cheap fixes (this patch, no compile) convert that
+latent risk into structural prevention:
+
+1. **Gate blind-spot CLOSED.** `publication_audit.sh` now basename-matches the bibliography
+   target: `cpp_references` = PASS (central); `cpp_*_series` / `gr_companion` / `references` =
+   `[FAIL]` (per-series, OS §10 central-only). Central bib is never false-flagged. Validated:
+   SS-1/EW-1/QM-1 → FAIL (caught); SM-6/SR-1 → PASS. **Expected consequence:** the audit now
+   flags every not-yet-consolidated per-series paper (SS-1, EW-1..5, QM-1..6, SD-1..5, c07) —
+   intended, keeps them visible until the per-series consolidation lands.
+
+2. **3 dead-weight strong bibs REMOVED** (0 citers, no live content): `series_strong/cpp_strong_series.bib`
+   (exact subset/dupe of the live `papers/` copy), `cpp_strong_series_papers.bib` +
+   `cpp_strong_series_root.bib` (contained only the deprecated `cpp_ss3_old_gluons` tombstone).
+   The strong-series tangle is now a single live file: `series_strong/papers/cpp_strong_series.bib`
+   (cited by SS-1). The 4-file naming trap is resolved; the SS-1→central repoint remains the only
+   strong-series consolidation step (deferred, needs local compile).
+
+**Net:** the per-series consolidation can be safely deferred — new accretion is now gate-blocked,
+and the strong-series file confusion is cleared. Remaining per-series work unchanged (merge
+EW/QM/SD/GR/strong uniques + the 3 SR-1 dup self-keys), now de-risked by the 1158 classification.
