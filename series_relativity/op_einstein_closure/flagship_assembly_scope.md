@@ -250,3 +250,10 @@ locked map (fig1→§4, fig2→§3, fig3→§7, fig4→§9) via `\includesvg`.
 **7B remaining (before 7C dispatch):** C14 step-5 audit-trail sweep for uncited substantive method
 invocations; optional figure-PDF pre-generation if the build host lacks inkscape; then the 7C
 framing/over-claim review (not new math).
+
+**7B COMPLETE (Patch 1137, 12 June 2026 — draft → v0.2):** C14 step-5 audit-trail sweep done
+(added METH-L3-003 §3 + METH-L3-004 §3/§7; all 13 plan methods now cited); figure PDFs
+generated from the notebook and the four includes switched to `\includegraphics{...pdf}`
+(no inkscape needed); full `pdflatex ×3 + bibtex` cycle verified clean (rc=0 throughout, no
+undefined refs/citations, 6 bib entries resolved, 19 pages). **Gate: 7B CLEAR.** Next phase
+is **7C** — framing + over-claim review only (not new math; components are DG-3-closed).

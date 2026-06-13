@@ -2,7 +2,7 @@
 % SR-2: The Spin-Bit Axiom — Necessity, Construction, and the
 %        Derived Einstein Quadrupole Formula
 %
-% Version 0.1 — 12 June 2026 (Phase 7B first full draft)
+% Version 0.2 — 12 June 2026 (Phase 7B complete: C14 sweep + figure PDFs + compile-clean)
 %
 % CHANGELOG (full archaeology: documentation_suite/changelog-SR-2.md):
 %   v0.1  12 Jun 2026 — Phase 7B assembly. First .tex of the spin-2 /
@@ -92,7 +92,7 @@
 \title{\textbf{SR-2: The Spin-Bit Axiom --- Necessity, Construction,\\
 and the Derived Einstein Quadrupole Formula}\\[6pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 0.1 --- 12 June 2026}}}
+{\Large \textbf{Version 0.2 --- 12 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -290,7 +290,7 @@ distinct structural reason, and together they make the new degree of freedom
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.96\textwidth]{SR2_fig2_assaults_helicity_and_gap}
+  \includegraphics[width=0.96\textwidth]{SR2_fig2_assaults_helicity_and_gap.pdf}
   \caption{The two structural results of the necessity proof. (Left) the helicity
   content of every route built from the scalar+vector substrate is $\{0,0,\pm 1\}$:
   the linear map, amplitude bilinears, gradient bilinears, and the full collective-mode
@@ -346,7 +346,12 @@ The 600-cell's Grid Points are not radially aligned with any propagation directi
 GP has 12 icosahedrally-arranged neighbors, so each GP$\to$GP hop requires an incremental
 turn to select the neighbor, and over a wave's traversal of many light-years this
 tangential element accumulates. Could the twist place an effective spin bit on the
-broadcast? We formalized it as a discrete connection --- a per-edge transport operator
+broadcast? This is a genuine third assault, not a re-run: the second assault's dynamical
+matrix coupled neighbors with scalar coefficients only ($\lambda\,\delta_{ab}+\mu\,n_a n_b$),
+with no per-edge transport rotation anywhere in the calculation --- confirmed by re-reading
+that computation before proceeding, so that the twist was established as genuinely untested
+[\texttt{METH-L3-003 suspicious foundational input $\to$ numerical verification}]. We
+formalized it as a discrete connection --- a per-edge transport operator
 $R_j$ applied to the carried data on every hop [\texttt{METH-L1-010 discrete per-edge
 connection formalization}] --- giving the connection-covariant dynamical matrix
 $D(k)=\sum_j[T_0 - e^{ik\cdot n_j}T_j]$ with $T_j=\mathrm{blockdiag}(1,R_j)$ and antipodal
@@ -386,7 +391,10 @@ would be dead on arrival.
 linear map and bilinears, the collective-mode spectrum, and the most general per-edge
 connection. To carry the radiative tensor sector and match the observed gravitational-wave
 polarizations, a fundamental rank-2 degree of freedom is \textbf{necessary}. This is now a
-conclusion, not an open question.
+conclusion, not an open question. The arc is the canonical \emph{terminal-branch} instance of
+the programme's would-be-axiom discipline: the primitives-only attempt was pursued in full and
+genuinely failed, which is what \emph{licenses} the axiom rather than presuming it
+[\texttt{METH-L3-004 would-be-axiom $\to$ extract the constraint, then build the mechanism}].
 
 % ============================================================
 \section{The geometric seat: the lattice already holds the chair}
@@ -412,7 +420,7 @@ components are the helicity-$0,\pm 1$ modes the LSP already carries. The quadrup
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.92\textwidth]{SR2_fig1_hg_seat_polarizations}
+  \includegraphics[width=0.92\textwidth]{SR2_fig1_hg_seat_polarizations.pdf}
   \caption{The $H_g$ ($l=2$) seat on the icosahedral neighbor shell, and the
   identification of its $m=\pm 2$ content with the GR $+$ and $\times$ gravitational-wave
   polarizations. Eight of the twelve shell vertices have $xy=0$ exactly, so the
@@ -731,7 +739,9 @@ $T_{kk}$), which the packet does not carry. The packet is not one slot short: $\
 \emph{redundant}, determined locally by the channels the packet does carry,
 $\nabla\tau=3(\partial_t\bar h_{0i}-\partial_j Q_{ji})$ (gradients across the PSR shell being
 exactly what the Compute step perceives), with wave-zone form $\tau=3(\bar h_{tt}-\hat n\hat
-n{:}Q)$. This was verified to reproduce GR's $\tau=(2G/c^4 r)\ddot M_{kk}$ to $4\times 10^{-19}$.
+n{:}Q)$ [\texttt{METH-L3-004, refusal branch: the apparently-missing tenth component is
+derived as constraint-redundant rather than added as a new degree of freedom}].
+This was verified to reproduce GR's $\tau=(2G/c^4 r)\ddot M_{kk}$ to $4\times 10^{-19}$.
 The result ratifies the Completion Theorem: a spatial trace is rotationally an $l=0$ object ---
 a \emph{second} scalar --- and Theorem~\ref{thm:completion} says the packet carries every
 protected irrep exactly once, so conservation makes the second $A$-slot unnecessary. Physics
@@ -779,7 +789,7 @@ refinement, not a debt of the axiom; any such functional must reproduce this ope
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.94\textwidth]{SR2_fig3_eccentric_energy_ledger}
+  \includegraphics[width=0.94\textwidth]{SR2_fig3_eccentric_energy_ledger.pdf}
   \caption{The eccentric ($e=0.6$) energy ledger over one orbital period: the
   orbit-averaged, sphere-integrated TT Isaacson flux tracks Peters' eccentric-enhanced
   decay rate to ratio $1.000640$ (independent analytic recompute $0.999998$). The trace
@@ -871,7 +881,7 @@ level (registry \texttt{predictions.md}, PRED-O-35--38):
 
 \begin{figure}[H]
   \centering
-  \includesvg[width=0.90\textwidth]{SR2_fig4_lattice_discriminant_branching}
+  \includegraphics[width=0.90\textwidth]{SR2_fig4_lattice_discriminant_branching.pdf}
   \caption{F3 as a lattice discriminant. The $l=2$ multiplet descends intact ($H$,
   five-fold degenerate) under the icosahedral group of the 600-cell, but splits $E\oplus T_2$
   ($2+3$) under a cubic group. CPP predicts no fine-structure of the GW polarizations; an

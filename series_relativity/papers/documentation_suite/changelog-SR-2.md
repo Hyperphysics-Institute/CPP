@@ -4,6 +4,22 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## v0.2 — 12 June 2026 (Phase 7B complete)
+
+- **C14 step-5 audit-trail sweep** executed: the two uncited substantive method
+  invocations flagged by the sweep were added — METH-L3-003 (the Step-0 audit
+  confirming the second-assault dynamical matrix carried no per-edge transport, so the
+  third assault was genuinely untested) in §3, and METH-L3-004 (the would-be-axiom
+  discipline: terminal branch at the necessity conclusion in §3, refusal branch at the
+  τ-redundancy in §7). All 13 methods of the 1133 plan are now cited.
+- **Figure PDFs generated** by re-running `notebooks/SR-2_figures.py` (matplotlib;
+  ledger check reproduced 0.999998). The four figure includes were switched from
+  `\includesvg` to `\includegraphics{...pdf}`, so the paper compiles with plain
+  `pdflatex` + `graphicx` and needs no inkscape (SR-1 convention). Committed SVGs left
+  untouched; only the four PDFs are added.
+- **Compile verified end-to-end:** `pdflatex ×3 + bibtex`, all rc=0, no undefined
+  references or citations, all six bibliography entries resolved, 19 pages.
+
 ## v0.1 — 12 June 2026 (Phase 7B first full draft)
 
 - First `.tex` of the spin-2 / `op:einstein` arc. Produced in Phase 7B per
