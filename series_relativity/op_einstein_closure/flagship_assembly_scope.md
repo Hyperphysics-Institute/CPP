@@ -257,3 +257,9 @@ generated from the notebook and the four includes switched to `\includegraphics{
 (no inkscape needed); full `pdflatex ×3 + bibtex` cycle verified clean (rc=0 throughout, no
 undefined refs/citations, 6 bib entries resolved, 19 pages). **Gate: 7B CLEAR.** Next phase
 is **7C** — framing + over-claim review only (not new math; components are DG-3-closed).
+
+**7C STAGED (Patch 1138, 12 June 2026):** framing/over-claim review package prepared at
+`series_relativity/papers/documentation_suite/SR-2_7C_review_package.md` and surfaced to the
+DG-3 panel (ChatGPT, Grok, Copilot) as a single CONV-001 block. Scope: over-claim vs the
+registered ceiling (A3′ / THEO-SR-EIN-1..4 / PRED-O-35..38) only — not new math. Verdict format:
+CONFIRM / RESTATE / REVISE(framing), section-anchored. Awaiting reviewer returns.
