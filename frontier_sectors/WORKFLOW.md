@@ -30,3 +30,46 @@
 
 ---
 
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1152 findings (bibliography consolidation, attempt 2)
+
+**Context.** Re-attempt of the per-paper-bib → master consolidation after the
+Session-1151 live run (commit `3911b39`) was reverted (`0c497b4`). The first run
+failed every paper (3×SKIP, 3×REVERT) and zeroed two committed PDFs; revert
+restored all. Root-causing the failures surfaced several findings independent of
+the bib task itself.
+
+**Script bugs fixed (consolidate_bibliography.sh v2, commit `9a53a62`):**
+- *Backslash repoint path* — `os.path.relpath` on Windows emitted
+  `..\..\bibliography\cpp_references`; LaTeX read `\b`,`\c` as escapes → bibtex
+  never found master → recompile failed → false REVERT (SM-7/8/9). Fixed:
+  force forward slashes.
+- *Brittle baseline compile* — `-halt-on-error` on a cold first pass (no
+  `.aux`/`.bbl`) returned non-zero on healthy papers → false SKIP. Fixed: no
+  halt-on-error, two pdflatex passes, judge on `.bbl` production not exit code.
+- *CRLF in `.bbl` diff* — MiKTeX CRLF output would read as a change vs an LF
+  baseline → latent false REVIEW. Fixed: normalize line endings before compare.
+
+**Repo-health findings (not bib-related; surfaced by the failures):**
+- **`.gitignore *.pdf` blocks figure PDFs repo-wide.** Papers whose `.tex` does
+  `\includegraphics{...pdf}` cannot compile from a clean clone — the figure PDFs
+  are build artifacts, never committed (only SVG+PNG are). SM-6 was the tripwire;
+  this is a *systemic* reproducibility gap affecting any PDF-figure paper.
+  Fix pattern established (Option A, commit `19b4ac1`): commit a `build_figures.sh`
+  in the figure dir that regenerates PDFs from committed SVGs via cairosvg;
+  figure PDFs stay ignored. Reusable for other papers as the same issue is found.
+- **SR-1 latent cold-compile bug** (commit `037e1e3`): line 1512 had escaped
+  underscores in two `\ref` keys → `Missing \endcsname` fatal. Shipped PDF had
+  been built from a state that no longer compiled cold (source/artifact drift).
+- **SM-10 original SKIP was a false negative** — compiles clean cold, no repair
+  needed; only the script bugs blocked it.
+
+**OSF re-deposit pending** (rendered artifact changed vs deposit):
+- SR-1 — 47→50 pp after the `\ref` fix (broken refs now resolve).
+- SM-6 — rebuilt 16 pp with real (previously-missing) figures.
+- (Bib repoint, when run, requires NO re-deposit — `.bbl`-identity by design.)
+
+**State at note time:** three `1152` commits staged locally on `0c497b4`; bib
+consolidation itself NOT yet re-run (pending `--only SM-10` validation of v2).
