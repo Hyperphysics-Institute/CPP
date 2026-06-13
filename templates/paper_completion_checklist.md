@@ -579,6 +579,20 @@ to reviewers their legitimacy.
   this audits a single paper SHIP for *omissions* (mandated integration that
   dropped out). Complementary, not overlapping.
 
+- [ ] **H7. Bibliography compliance — central-only (BLOCKING).** Confirm the
+  paper introduces **no** per-paper (`[ID]_references.bib`) or per-series
+  (`cpp_[series]_series.bib`) bibliography file. Its external references and its
+  own CPP self-entry must live in the master `bibliography/cpp_references.bib`,
+  and the `.tex` must cite `\bibliography{../../bibliography/cpp_references}` (or
+  use inline `\bibitem`). The `publication_audit.sh` run in H6 enforces this: a
+  per-paper `.bib` in the paper directory, or a `\bibliography{[ID]_references}`
+  in the `.tex`, is a `[FAIL]`. **Rationale (added 13 June 2026, after SR-2):**
+  the SR-2 draft authored a local `SR-2_references.bib` (Patch 1136) — a fresh
+  violation of the 15-April-2026 single-master-bibliography policy (OS §10) that
+  the per-step checklist did not catch and that was only found at the SHIP audit;
+  it was migrated to the master and removed at Patch 1147 before the v1.0 SHIP.
+  This check is the standing backstop against re-introducing local bibliographies.
+
 ---
 
 ## Completion criterion

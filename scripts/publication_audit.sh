@@ -124,6 +124,22 @@ if grep -Fq "OPEN-$ID" predictions.md 2>/dev/null || ls problem_histories/PH-OPE
 fi
 echo
 
+# --- bibliography compliance (central-only, OS §10; BLOCKING) ---------------
+echo "--- Bibliography compliance (central-only, OS §10) ---"
+if [ -n "${PAPERDIR:-}" ] && [ -d "$PAPERDIR" ]; then
+  LOCALBIB=$(find "$PAPERDIR" -maxdepth 1 -name "${ID}_references.bib" 2>/dev/null)
+  if [ -n "$LOCALBIB" ]; then
+    echo "  [FAIL] per-paper bibliography present (OS §10 central-only violation):"
+    printf '%s\n' "$LOCALBIB" | sed 's/^/        /'; FAIL=1
+  else
+    echo "  [PASS] no ${ID} per-paper .bib (central-only)"
+  fi
+fi
+if [ -n "${TEX:-}" ] && grep -Eq "bibliography\{[^}]*${ID}_references" "$TEX" 2>/dev/null; then
+  echo "  [FAIL] .tex cites a per-paper bib; use \\bibliography{../../bibliography/cpp_references}"; FAIL=1
+fi
+echo
+
 # --- placeholder-text scan in the paper dir (H2) ----------------------------
 echo "--- Placeholder scan (H2: no TODO / [TO BE WRITTEN] / TBD left behind) ---"
 if [ -n "${PAPERDIR:-}" ] && [ -d "$PAPERDIR" ]; then
