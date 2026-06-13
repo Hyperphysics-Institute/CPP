@@ -125,3 +125,56 @@ not against `.bbl` identity.
 (2 bug fixes, validated); SM-10 consolidated; SR-1 typo repair; SM-6 figure
 build-script (Option A); master version-drift correction; this documentation.
 1151 failed run honestly reverted (`0c497b4`). Tree clean at park.
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1153: master-bib reconciliation, Task-1 actions A–C DONE
+
+**Scope.** Executed the parked "make master a correct superset" reconciliation
+against **source-`.tex` authority** (not `.bbl` identity). Re-audited the
+divergence map; it is smaller than the 1152 park feared, and one flagged hazard
+was a false alarm.
+
+**`ss2` "title landmine" DEFUSED (false alarm).** The 1152 park warned that
+master `abshier2026ss2` ("Lattice-Scale Grounding / Nucleon Structure," = SS-2)
+vs the SM-8/SM-9 local-bib `abshier2026ss2` ("SU(3) Colour Algebra," = now SS-3's
+content) would silently change a citation on repoint. **Neither SM-8 nor SM-9
+actually `\cite`s `ss2`** — the stale entry never enters their `.bbl`. Dead weight,
+not a hazard. (Actual SM-8 self-cites: sm3, sm6, sm7. SM-9: sm10, sm8, sm9v1.)
+
+**Three master-bib actions committed (authority-resolved):**
+- **A. Title fix** — `abshier2026sm2`: master "Quark Mass Formula and Hybrid
+  Spectral Structure" → **"Mass Generation from Geometric Hierarchies"** (authority:
+  `SM-2_mass_generation_geometric_hierarchies.tex` `\title` + filename; SM-7's
+  local bib already carried the correct title). Master was the wrong one.
+- **B. Add `abshier2026sm7`** (was MISSING from master; cited by SM-8). Title from
+  SM-7.tex authority: "The Heavy Quark Mass Spectrum and Strong Coupling from
+  600-Cell Lattice Geometry"; v2.2 (SM-7.tex CHANGELOG, 3 Apr 2026); OSF DOI.
+  Placed in the older `@misc`+DOI family next to sm1–6 (contemporaneous v2.2 paper).
+- **C. Add `abshier2026sm9v1`** (was MISSING; SM-9 deliberately self-cites its own
+  v1.0 at line 127 — "SM-9 v1.0 investigated the origin of…"). Historical entry,
+  title "The Quark Mass Scaling Exponent: Constraints, Negative Results, and Open
+  Problems"; placed in the newer `@article` family beside sm9/sm10.
+
+**Version re-verify (Task-1 sub-item) — CLEAN.** Confirmed against CHANGELOGs:
+sm2 v30 ✓, sm3 v6 ✓, sm8 v4.1 ✓, sm9 v2.2 ✓ (sm6 v3 / sm10 v2.0 already fixed at
+1152). Master self-citation versions are now correct.
+
+**Post-A–C resolution check:** every self-cite key the parked papers render now
+resolves uniquely in master — SM-6 {ew1,qm1,sm1,sm3,sr1,ss1}; SM-7 {sm2,sm6,ss1};
+SM-8 {sm3,sm6,sm7}; SM-9 {sm10,sm8,sm9v1}; SR-1 = no self-cites (18 external
+unique, mechanical merge). Master = 65 → 67 entries; no duplicate keys.
+
+**Still open under Task 1 (deferred this session):**
+- **D. DOI/URL parity** on the newer `@article` block (sm8/sm9/sm9v1/sm10, ss2–8)
+  — they carry no `doi` field while the older `@misc` block does. NOT a blocker for
+  the cited-key sets above (SM-8/9 render correctly as-is); decide as a deliberate
+  normalization pass, not entangled with A–C.
+- Task 5 SM-8 version: header v4.0 vs decided v4.1 — master note already says v4.1;
+  confirm the `.tex` header at consolidation time.
+
+**Next:** re-run consolidation SM-7 → SM-8 → SM-9 against the now-reconciled master
+(Task 2; expect pure-correction `[REVIEW]`s — e.g. SM-8's sm3/sm6 gain the master
+DOI — accept + repoint + archive), then SR-1 + SM-6 (Task 3), then OSF re-deposits
+(Task 4: SR-1 47→50pp, SM-6 figures). Consolidation steps need a local machine with
+working pdflatex+bibtex (container cannot reliably compile the legacy papers).
