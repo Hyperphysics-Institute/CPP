@@ -4,6 +4,41 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## v0.6 — 13 June 2026 (Phase 7C CLEARED — panel 3/3 CONFIRM; release candidate)
+
+No prose change from v0.5; this entry records the gate-clearance milestone.
+
+**Final 7C panel verdicts (all on / after v0.5): 3/3 CONFIRM.**
+- **ChatGPT — CONFIRM**, verified against the *live* v0.5 file: it quotes the actual scoped
+  abstract ("required within CPP's current axioms") and the §3 scoping, and confirms the prior
+  "every working theory" over-reach is retired. Highest-confidence return.
+- **Copilot — CONFIRM**: engaged with v0.5 (its SQ8 explicitly credits the GR/string edits); its
+  lone REVISE(framing) nit (abstract necessity) quoted stale cached text and is already fixed.
+- **Grok — CONFIRM**: verdict CONFIRM; provenance caveat — it quoted the stale v0.2 abstract and
+  its recommendation block mirrors the original ChatGPT CONFIRM (the "Patch 1139/1140" language).
+  Grok's independent substantive engagement is nonetheless established by its prior-round RESTATE
+  (the §11-guard catch), which is fully integrated.
+
+**Trajectory (every reviewer's substantive objection raised → integrated → CONFIRM):**
+- ChatGPT: CONFIRM(v0.2) → RESTATE(re-review, stale) → CONFIRM(v0.5, live-verified).
+- Grok: RESTATE(v0.2, substantive: necessity scoping + §11 guard) → CONFIRM.
+- Copilot: CONFIRM(v0.2) → CONFIRM(v0.5).
+
+**Cache artifact (documented so the record is honest):** raw.githubusercontent.com served CDN-cached
+copies (~5 min TTL), so two of three CONFIRM returns still quoted the v0.2 abstract though origin was
+at v0.5. The close rests on (i) ChatGPT's live-verified CONFIRM, (ii) live-verification here that all
+substantive objections are integrated, and (iii) all three final verdicts being CONFIRM. A clean
+single-reviewer re-confirm of Grok against inlined v0.5 text remains available if strict independence
+on v0.5 is desired; given the integrated merits and the loop risk, the close is recorded now.
+
+**Declined (with reason):** Copilot's optional Patch-1143 (a §6 footnote cross-linking λ to
+THEO-SR-EIN-4) — the cross-ref target is imprecise (THEO-SR-EIN-4 is the Operational-Energy Lemma,
+not the λ derivation), and the λ provenance is already stated in §6 prose and the Table-1 caption.
+
+**Gate: Phase 7C CLEAR.** SR-2 is a release candidate. Next: SHIP-time per-paper completion checklist
+(10-file documentation suite, registry/index navigation, C13 anthology chapter, H6 final audit) →
+A3′ + SR-2 ship as v1.0.
+
 ## v0.5 — 13 June 2026 (Phase 7C framing pass 3 — universal-quantifier motif retired)
 
 **Attribution corrected (per architect):** the v0.4 RESTATE was **Grok's**; ChatGPT then
