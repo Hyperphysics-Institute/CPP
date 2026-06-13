@@ -4,6 +4,32 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## v0.3 — 13 June 2026 (Phase 7C framing pass — partial, 2/3 panel returns)
+
+7C framing/over-claim review returns from **2 of 3** panel members in; both **CONFIRM**:
+- **ChatGPT — CONFIRM** (one REVISE-framing): tighten the abstract necessity sentence so
+  "required" is scoped to CPP's axioms / the radiative sector, not a universal claim;
+  optionally add an explicit scoping parenthetical at the first "necessary" in §3.
+- **Copilot — CONFIRM** (two optional REVISE-framing): (1) soften the abstract idiom "the
+  axiom pays for itself"; (2) add "Within the gravitational sector" to the conclusion's
+  scalar-vector-completed sentence.
+- **Grok — pending.** The 7C gate is held at **2/3 CONFIRM**; not declared closed.
+
+Applied (convergent / safe, claim-preserving):
+- Abstract necessity sentence rescoped: "required within CPP's current axioms to carry the
+  observed helicity-±2 polarizations --- consistent with the status of the graviton as
+  fundamental in every working theory of gravity" (was "required, exactly as in every
+  working theory of gravity").
+- §3 first "necessary" gains an explicit parenthetical "(within CPP's current axioms, for
+  the radiative tensor sector)".
+- Conclusion: "Within the gravitational sector, CPP is therefore a scalar--vector gravity
+  completed by exactly one rank-2 degree of freedom..." (mono-sectoral crispness).
+
+Declined (with reason): Copilot's optional softening of "the axiom pays for itself" — the
+idiom is a precise cost/benefit statement (one degree of freedom, zero parameters, recovers
+the GR radiative sector), not an over-claim; symmetric honesty applies to keeping accurate
+phrasing as well as cutting inflated phrasing. No claim changed in any edit.
+
 ## v0.2 — 12 June 2026 (Phase 7B complete)
 
 - **C14 step-5 audit-trail sweep** executed: the two uncited substantive method

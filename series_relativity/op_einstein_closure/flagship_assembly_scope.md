@@ -263,3 +263,10 @@ is **7C** — framing + over-claim review only (not new math; components are DG-
 DG-3 panel (ChatGPT, Grok, Copilot) as a single CONV-001 block. Scope: over-claim vs the
 registered ceiling (A3′ / THEO-SR-EIN-1..4 / PRED-O-35..38) only — not new math. Verdict format:
 CONFIRM / RESTATE / REVISE(framing), section-anchored. Awaiting reviewer returns.
+
+**7C PARTIAL (Patch 1139, 13 June 2026 — draft → v0.3):** framing/over-claim returns in from
+2/3 panel — ChatGPT CONFIRM + Copilot CONFIRM, both framing-only, convergent on necessity-scoping.
+**Grok pending; gate held at 2/3 CONFIRM, NOT closed.** Applied the convergent necessity-scoping
+fixes (abstract + §3 + conclusion); declined one optional stylistic nit with reason (see
+changelog-SR-2 v0.3). No claim changed. On Grok's return: if clean → record 3/3 and proceed to the
+SHIP-time per-paper completion checklist; if a framing point → fold into a v0.4 micro-pass.
