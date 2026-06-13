@@ -1,11 +1,19 @@
 #!/usr/bin/env bash
 # =============================================================================
 # consolidate_bibliography.sh  —  OPEN-WORKFLOW-1 remediation (central-bib)
-# v2 (13 Jun 2026): Windows/MINGW64 hardening —
-#   (1) forward-slash repoint path (was emitting backslashes -> LaTeX escape -> REVERT)
-#   (2) baseline compile no longer -halt-on-error; runs twice; judged on .bbl
-#       production + final-pass exit, not the cold first-pass exit (was false SKIP)
-#   (3) .bbl identity compare normalizes CRLF/LF before diff (was latent false REVIEW)
+# v3 (13 Jun 2026): correctness fixes over v2 —
+#   (FIX A) repoint substitution: the path contains '/', which collided with
+#           perl's s/// delimiter -> substitution errored and SILENTLY no-op'd,
+#           yet the .bbl came out identical (because nothing changed) and the
+#           script printed a FALSE [OK] while archiving the local bib -> would
+#           orphan the .tex. Now uses a delimiter that can't appear in the path
+#           and applies the edit in python (no shell/regex-escaping hazard).
+#   (FIX B) post-repoint VERIFICATION: after editing, assert the .tex actually
+#           contains the new \bibliography{<relmaster>} and NO longer cites the
+#           local bib. If the edit did not take, ABORT that paper as [ERROR]
+#           (revert .tex, keep local bib) instead of trusting .bbl identity.
+# v2 carried: forward-slash path, non-halt baseline compile (2 passes, judge on
+#   .bbl), CRLF-normalized .bbl diff.
 # RUN LOCALLY (needs working pdflatex+bibtex). Does NOT commit.
 # Usage: --dry-run | --only ID[,ID] | --keep-artifacts
 # =============================================================================
@@ -16,7 +24,7 @@ while [ $# -gt 0 ]; do
     --dry-run) DRY_RUN=1 ;;
     --keep-artifacts) KEEP_ART=1 ;;
     --only) ONLY="${2:-}"; shift ;;
-    -h|--help) sed -n '2,16p' "$0"; exit 0 ;;
+    -h|--help) sed -n '2,20p' "$0"; exit 0 ;;
     *) echo "unknown flag: $1" >&2; exit 2 ;;
   esac; shift
 done
@@ -64,6 +72,30 @@ print(("\n\n".join(out)).strip())
 PY
 }
 
+# Repoint every \bibliography{...} in a .tex to a given target (python, no regex-delim hazard).
+# Prints "CHANGED" if it modified the file, "NOCHANGE" otherwise.
+repoint_tex(){ python3 - "$1" "$2" <<'PY'
+import re,sys
+texpath, target = sys.argv[1], sys.argv[2]
+s=open(texpath,encoding='utf-8',errors='replace').read()
+new=re.sub(r'\\bibliography\{[^}]*\}', r'\\bibliography{%s}' % target, s)
+if new!=s:
+    open(texpath,'w',encoding='utf-8',newline='').write(new)
+    print("CHANGED")
+else:
+    print("NOCHANGE")
+PY
+}
+# Assert the .tex now cites target and cites no other \bibliography{...}. exit 0 ok.
+verify_repoint(){ python3 - "$1" "$2" <<'PY'
+import re,sys
+texpath, target = sys.argv[1], sys.argv[2]
+s=open(texpath,encoding='utf-8',errors='replace').read()
+cites=re.findall(r'\\bibliography\{([^}]*)\}', s)
+sys.exit(0 if cites and all(c==target for c in cites) else 1)
+PY
+}
+
 declare -a PAIRS=()
 while IFS= read -r b; do
   [ -f "$b" ] || continue
@@ -92,7 +124,7 @@ for pair in "${PAIRS[@]}"; do
   fi
 done
 
-hr; say "=== Phase 2: repoint + verify (rendered .bbl must be identical, CRLF-normalized) ==="
+hr; say "=== Phase 2: repoint + verify (.tex actually edited AND rendered .bbl identical) ==="
 [ "$DRY_RUN" -eq 0 ] && mkdir -p "$ARCHIVE"
 compile(){ ( cd "$1" \
     && pdflatex -interaction=nonstopmode "$2.tex" >/dev/null 2>&1; \
@@ -108,7 +140,7 @@ for pair in "${PAIRS[@]}"; do
   relmaster="$(python3 -c "import os;print(os.path.relpath('${MASTER%.bib}', '$dir').replace('\\\\','/'))")"
   say ""; say "  [$id] $tex"
   if [ "$DRY_RUN" -eq 1 ]; then
-    say "        would: baseline-compile -> repoint \\bibliography{$relmaster} -> recompile -> diff .bbl (CRLF-normalized) -> (identical) archive $b"
+    say "        would: baseline-compile -> repoint to \\bibliography{$relmaster} -> VERIFY edit took -> recompile -> diff .bbl (CRLF-norm) -> (identical) archive $b"
     continue
   fi
   compile "$dir" "$base"
@@ -117,7 +149,11 @@ for pair in "${PAIRS[@]}"; do
   fi
   base_bbl="$(mktemp)"; norm "$dir/$base.bbl" > "$base_bbl"
   cp "$tex" "$tex.wf1bak"
-  perl -0pi -e "s/\\\\bibliography\\{[^}]*\\}/\\\\bibliography{$relmaster}/g" "$tex"
+  ch="$(repoint_tex "$tex" "$relmaster")"
+  if ! verify_repoint "$tex" "$relmaster"; then
+    say "        [ERROR] repoint did NOT take (edit='$ch'); .tex still cites a local/other bib. Reverting; NOT archiving."
+    mv -f "$tex.wf1bak" "$tex"; clean_art "$dir" "$base"; rm -f "$base_bbl"; RC=1; continue
+  fi
   compile "$dir" "$base"
   if [ ! -f "$dir/$base.bbl" ]; then
     say "        [REVERT] recompile against master produced no .bbl. Restoring .tex."; mv -f "$tex.wf1bak" "$tex"; clean_art "$dir" "$base"; rm -f "$base_bbl"; RC=1; continue
@@ -125,7 +161,7 @@ for pair in "${PAIRS[@]}"; do
   new_bbl="$(mktemp)"; norm "$dir/$base.bbl" > "$new_bbl"
   if diff -q "$base_bbl" "$new_bbl" >/dev/null 2>&1; then
     rm -f "$tex.wf1bak"; git mv "$b" "$ARCHIVE/$(basename "$b")" 2>/dev/null || mv "$b" "$ARCHIVE/"
-    say "        [OK] rendered .bbl identical -> repointed to master; legacy bib archived. No OSF re-deposit."
+    say "        [OK] .tex repointed (verified) AND rendered .bbl identical -> legacy bib archived. No OSF re-deposit."
   else
     say "        [REVIEW] rendered .bbl CHANGED after repoint -> reverting. Inspect; may need OSF re-deposit:"
     diff "$base_bbl" "$new_bbl" | sed 's/^/            /' | head -40
@@ -145,6 +181,6 @@ else say "  (no stray cpp_references.bib present)"; fi
 
 hr; say "=== Done ($([ "$DRY_RUN" -eq 1 ] && echo DRY-RUN || echo APPLIED)) ==="
 say "Next: review 'git diff', run 'bash scripts/publication_audit.sh <ID>' per converted paper, then commit."
-[ "$RC" -eq 0 ] && say "Result: clean." || say "Result: attention needed (see [SKIP]/[REVERT]/[REVIEW] above)."
+[ "$RC" -eq 0 ] && say "Result: clean." || say "Result: attention needed (see [SKIP]/[REVERT]/[REVIEW]/[ERROR] above)."
 rm -f "$MKEYS" 2>/dev/null
 exit $RC
