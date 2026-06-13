@@ -297,3 +297,41 @@ pre-existing master collision) → likely clean `[OK]` or a tiny accept.
 (`cpp_ew_series`, `cpp_strong_series`, `cpp_qm_series`, `cpp_foundations_series`,
 `gr_companion`, `references`) still unclassified/unconsolidated; OSF re-deposits
 SR-1 (47→50pp) + SM-6 (figures). D (DOI parity on newer `@article` block) optional.
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1157: fidelity-2 (SM-6 external URLs) + workflow findings from first live accept attempt
+
+**First live `--only` run (architect, local) — findings.** Ran `--only SM-6,SM-7,SM-8,SM-9`
+(review) then tried `--accept-review` on the same. Three things surfaced:
+
+1. **SM-6 external URL loss (FIXED here).** Beyond the 9 self-cites covered by 1154,
+   SM-6 cites four externals whose master entries lacked the `\url{}`/arXiv `note` its
+   local bib carries: `foot1994` (arXiv:hep-ph/9402242), `rivero2005` (arXiv:hep-ph/0505220),
+   `koide1983` (\url PhysRevD.28.252), `pdg2024` (\url PhysRevD.110.030001). Repoint
+   dropped them. This patch adds those four `note` fields to master, verbatim-matching
+   the local form. SM-6 now loses no URL. (SM-7's only external `georgi1974` was already
+   fixed at 1154; SM-8/SM-9 cite only self-entries and GAIN URLs — all three were already
+   URL-safe, confirmed by their diffs.)
+
+2. **Two-pass workflow self-blocks.** The `--only` "review" pass is NOT read-only — its
+   Phase 1 merges unique entries into master, dirtying the tree, so the following
+   `--accept-review` pass fails its clean-tree preflight. **Correct usage: run
+   `--accept-review ID[,ID]` DIRECTLY** — it prints each diff *then* applies, so a
+   separate review pass is unnecessary and harmful. (Or commit the Phase-1 merge first.)
+
+3. **Phase 1 merges uncited dead bib keys.** `ma2001` (an uncited dead entry in SM-6's
+   bib — SM-6 does not cite it) was merged into master as a unique key and then committed
+   (local commit `7df1b8f`, mislabeled "consolidate…", nothing actually consolidated).
+   It is an orphan in master. Other dead entries (SM-7 koide/pdg; SM-8/9 various) are
+   already in master so Phase 1 skips them and they don't render — harmless, no action.
+   Recommended: drop the mislabeled `7df1b8f` (reset to origin) so `ma2001` leaves master,
+   OR remove `ma2001` forward; it is uncited either way.
+
+**Post-1157 accept readiness:** SM-7, SM-8, SM-9 = URL-safe accept-as-correction NOW.
+SM-6 = URL-safe after this patch. SR-1 (post-1156 cleanup) ready on its own run.
+All four SM diffs are improvements/corrections (Titlecase + version fixes), no URL loss.
+
+**Corrected operator sequence (clean tree):**
+`bash scripts/consolidate_bibliography.sh --accept-review SM-6,SM-7,SM-8,SM-9`  (prints diffs + applies)
+then review `git diff`, `publication_audit.sh <ID>` per paper, commit; repeat `--accept-review SR-1`.
