@@ -186,7 +186,7 @@ ZBW mixing fraction computations (lepton and quark notebooks + source).
 | File/Directory | Description |
 |----------------|-------------|
 | `main_special_relativity_emergence/SR-1_special_relativity_emergence.tex/.pdf` | **SR-1** paper |
-| `papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | **SR-2** — spin-bit axiom (A3′) / derived Einstein quadrupole formula; closes op:einstein (a) (v0.6 RC, Phase 7C CLEAR) |
+| `papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` | **SR-2** — spin-bit axiom (A3′) / derived Einstein quadrupole formula; closes op:einstein (a) (v1.0 SHIPPED) |
 | `companion_papers/` | **22 companion papers** (c01–c22) |
 
 **Documentation:** `reviews-SR-1.md`, `FAQ-SR-1.md`, etc.

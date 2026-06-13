@@ -182,3 +182,5 @@
 
 ---
 
+
+**[Patch 1148 — SR-2 v1.0 SHIPPED.** The op:einstein (a) flagship ships: Phase 7C panel 3/3 CONFIRM; H6 publication audit PASS; full 12-file documentation suite + anthology chapter ("The Seat Shaped Like a Wave", C13); central-bibliography compliant (local bib regression fixed, Patch 1147). Closes op:einstein (a) — radiative helicity-±2 tensor sector — NOT op:einstein simpliciter; (b) conditionally closed; full nonlinear EFE + Λ remain OPEN-SR-4 (PARTIAL). OSF deposit pending DOI mint (architect step). No verdict moved beyond the 1130 closure; this is the SHIP milestone.]**

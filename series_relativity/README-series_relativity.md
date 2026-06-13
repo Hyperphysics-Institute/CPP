@@ -20,7 +20,7 @@ SR-1 derives special relativistic effects — time dilation, length contraction,
 | ID | Title | Version | Pages | Key Result |
 |----|-------|---------|-------|------------|
 | **SR-1** | Mechanistic Derivation of Relativistic Effects | v18 | 50 | Lorentz factor from Voronoi cell compression; k derived analytically; 7 appendices |
-| **SR-2** | The Spin-Bit Axiom: Necessity, Construction, and the Derived Einstein Quadrupole Formula | v0.6 (RC, 7C CLEAR) | 19 | A3′ spin-bit axiom (necessity proof: 3 closed assaults); λ = 16πG/c⁴ derived at zero new parameters; THEO-SR-EIN-1..4; Eardley N₂; pulsar ledger; closes op:einstein (a) |
+| **SR-2** | The Spin-Bit Axiom: Necessity, Construction, and the Derived Einstein Quadrupole Formula | v1.0 SHIPPED | 19 | A3′ spin-bit axiom (necessity proof: 3 closed assaults); λ = 16πG/c⁴ derived at zero new parameters; THEO-SR-EIN-1..4; Eardley N₂; pulsar ledger; closes op:einstein (a) |
 
 ---
 

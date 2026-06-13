@@ -4,6 +4,22 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## v1.0 — 13 June 2026 (SHIPPED)
+
+SR-2 ships. Gate summary: Phase 7C panel **3/3 CONFIRM**; **H6 publication audit PASS**; full 12-file
+documentation suite; anthology chapter "The Seat Shaped Like a Wave" (C13); body compile-clean
+(19 pp). Closes `op:einstein` **(a)** — the radiative helicity-±2 tensor sector — *not* `op:einstein`
+simpliciter; (b) conditionally closed; full nonlinear EFE + Λ remain OPEN-SR-4. A3′ +
+THEO-SR-EIN-1..4 + PRED-O-35..38 registered.
+
+- **Central-bibliography compliance (Patch 1147):** the local `SR-2_references.bib` (created in error
+  at 1136) was migrated into `bibliography/cpp_references.bib` per the OS §10 single-master-bibliography
+  policy (15 Apr 2026); the `.tex` now cites `\bibliography{../../bibliography/cpp_references}`. No
+  per-paper `.bib` ships.
+- **OSF deposit:** prepared metadata in `osf-deposit-SR-2.md`; DOI mint is the architect's step
+  (Claude cannot deposit). Backfill the DOI into the title block + `abshier2026sr2` central-bib entry
+  and flip `paper_catalog.md` status RC → registered once minted.
+
 ## SHIP trail (post-7C) — 13 June 2026
 
 - **Patch 1143** — registry/index navigation + frontier flip: SR-2 cross-linked into
