@@ -18,6 +18,14 @@ architecture rule; the `.tex` title block shows only the current version line.
   C10 narrative, root `README.md` D1 table + tree). **Remaining for v1.0 (single FAIL + advisories):**
   documentation suite (2/≥7 files — the bulk item), anthology chapter (C13), and optional advisories
   (master_glossary terms, central bibliography). H6 re-run: only the doc-suite FAIL remains.
+- **Patch 1145** — documentation suite built (10 new files → 12 total): `verification-SR-2.md`,
+  `mechanism-SR-2.md`, `phenomena-SR-2.md`, `glossary-SR-2.md`, `keywords-SR-2.md`, `reviews-SR-2.md`,
+  `development-SR-2.md`, `transcript-SR-2.md`, `philosophy-SR-2.md`, `osf-deposit-SR-2.md` (joining
+  `changelog-SR-2.md` + `SR-2_7C_review_package.md`), mirroring the EU-1 11-file suite. **H6
+  publication audit now PASSES** (placeholder-clean; 5 non-blocking advisories remain: C13 anthology
+  chapter, master_glossary/future_projects/central-bibliography references, and the verify-script
+  naming advisory — addressed by `verification-SR-2.md`'s catalogue). Remaining for v1.0 SHIP: the
+  C13 anthology chapter, then OSF deposit (DOI backfill).
 
 ## v0.6 — 13 June 2026 (Phase 7C CLEARED — panel 3/3 CONFIRM; release candidate)
 
