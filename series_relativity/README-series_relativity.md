@@ -20,6 +20,7 @@ SR-1 derives special relativistic effects — time dilation, length contraction,
 | ID | Title | Version | Pages | Key Result |
 |----|-------|---------|-------|------------|
 | **SR-1** | Mechanistic Derivation of Relativistic Effects | v18 | 50 | Lorentz factor from Voronoi cell compression; k derived analytically; 7 appendices |
+| **SR-2** | The Spin-Bit Axiom: Necessity, Construction, and the Derived Einstein Quadrupole Formula | v0.6 (RC, 7C CLEAR) | 19 | A3′ spin-bit axiom (necessity proof: 3 closed assaults); λ = 16πG/c⁴ derived at zero new parameters; THEO-SR-EIN-1..4; Eardley N₂; pulsar ledger; closes op:einstein (a) |
 
 ---
 
@@ -30,10 +31,15 @@ series_relativity/
 ├── papers/
 │   ├── SR-1_special_relativity_emergence.tex/.pdf
 │   ├── SR-1_references.bib
+│   ├── SR-2_spin_bit_axiom_quadrupole_formula.tex   ← op:einstein (a) flagship (v0.6 RC, 7C CLEAR)
+│   ├── SR-2_references.bib
+│   ├── documentation_suite/changelog-SR-2.md, SR-2_7C_review_package.md
 │   └── [8 documentation .md files]
 ├── figures/
-│   └── figures-SR-1/           ← 5 SVG + PDF figures
-├── notebooks/                  ← PSR validation, Monte Carlo k-fit
+│   ├── figures-SR-1/           ← 5 SVG + PDF figures
+│   └── figures-SR-2/           ← 4 SVG + PDF figures (H_g seat, assaults, eccentric ledger, lattice discriminant)
+├── op_einstein_closure/        ← spin-2 arc working tree (necessity proof, construction, DG-3 review, flagship_assembly_scope.md)
+├── notebooks/                  ← PSR validation, Monte Carlo k-fit, SR-2_figures.py
 ├── development/                ← Session logs, revision chain
 └── README.md                   ← This file
 ```

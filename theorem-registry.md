@@ -436,27 +436,27 @@ How many theorems depend on each axiom:
 The SO(3) multiplets descending intact to the icosahedral rotation group are exactly l = {0,1,2}
 (A, T₁, H); for l ≥ 3, 2l+1 ≥ 7 > 5 = the largest icosahedral irrep, permanently. Hence LSP′ =
 A ⊕ T₁ ⊕ H = 9 components is precisely the lattice's protected representation content — no fourth
-rung. Verify: `spin2_construction/code/1123_task2_completion_check.py`. DG-3 3/3 (T4). Patch 1123/1129.
+rung. Verify: `spin2_construction/code/1123_task2_completion_check.py`. DG-3 3/3 (T4). Patch 1123/1129. Paper: SR-2 §5 (7C CLEAR, Patch 1142).
 
 ### THEO-SR-EIN-2 — The Statics Theorem (no-static-double-counting)
 Under C4 (source = traceless local stress): static perfect fluids have T^{TF} = 0 identically, and
 any bounded static system has ∫T_ij d³x = 0 (tensor virial); static matter sources no Q_ij and the
 trace completion vanishes (τ_static = 0). Schwarzschild/Kerr recovery (c07/c08/c11) untouched.
-Verify: `.../code/1124_task3_quadrupole_verification.py` (P1–P2). DG-3 3/3. Patch 1124/1129.
+Verify: `.../code/1124_task3_quadrupole_verification.py` (P1–P2). DG-3 3/3. Patch 1124/1129. Paper: SR-2 §6 (7C CLEAR).
 
 ### THEO-SR-EIN-3 — The TT-Response (Cancellation) Theorem
 For plane waves satisfying the four conservation-inherited constraints ∂^μh̄_μν = 0, the tidal
 response R_{i0j0} depends only on the two TT combinations — scalar/vector/longitudinal/trace cancel
 exactly in the curvature; with C5's redundant trace completion (∇τ = 3(∂_t h̄_{0i} − ∂_j Q_{ji})),
 the CPP assembly is Eardley class N₂ (= GR). Symbolic + e=0.6 six-mode verification (non-tensor ≤
-4×10⁻¹¹; counterfactual O(1)). Verify: `.../code/1125_task4_tt_response_energy.py`. DG-3 3/3 (T1). Patch 1125/1129.
+4×10⁻¹¹; counterfactual O(1)). Verify: `.../code/1125_task4_tt_response_energy.py`. DG-3 3/3 (T1). Patch 1125/1129. Paper: SR-2 §7 (7C CLEAR).
 
 ### THEO-SR-EIN-4 — The Operational-Energy Lemma
 C5 is the only field↔matter coupling; emission = work by the assembled retarded metric (= Einstein
 quadrupole luminosity), absorption = TT-only; there is no independently operational energy channel
 under C5; the TT Isaacson assignment is the unique ledger-balancing bookkeeping (eccentric closure:
 flux/Peters = 1.000640 grid, 0.999998 analytic — ChatGPT round-2 recompute). Verify:
-`.../code/1127_eccentric_energy_ledger.py`. DG-3 3/3 (T1(iii), objection withdrawn by author). Patch 1127/1129.
+`.../code/1127_eccentric_energy_ledger.py`. DG-3 3/3 (T1(iii), objection withdrawn by author). Patch 1127/1129. Paper: SR-2 §7 (7C CLEAR).
 
 ---
 

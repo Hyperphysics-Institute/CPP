@@ -430,7 +430,7 @@ calibration, it would convert the Koide formula from a 2-parameter
 fit (SM-4) to a 0-parameter prediction. Requires: EW series completion.
 
 
-### Spin-2 / A3′ falsifiers (registered Patch 1130; open/testable, NOT counted — counting per panel protocol later)
+### Spin-2 / A3′ falsifiers (registered Patch 1130; open/testable, NOT counted — counting per panel protocol later; assembled in SR-2 §9, Phase 7C CLEAR Patch 1142)
 | ID | Prediction |
 |---|---|
 | PRED-O-35 | GW polarization content is pure tensor (Eardley N₂): any confirmed first-order breathing/longitudinal/vector GW mode falsifies A3′ (F1; THEO-SR-EIN-3/4). |
