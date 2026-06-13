@@ -32,7 +32,6 @@ series_relativity/
 │   ├── SR-1_special_relativity_emergence.tex/.pdf
 │   ├── SR-1_references.bib
 │   ├── SR-2_spin_bit_axiom_quadrupole_formula.tex   ← op:einstein (a) flagship (v0.6 RC, 7C CLEAR)
-│   ├── SR-2_references.bib
 │   ├── documentation_suite/changelog-SR-2.md, SR-2_7C_review_package.md
 │   └── [8 documentation .md files]
 ├── figures/

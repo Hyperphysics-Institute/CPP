@@ -57,7 +57,7 @@ here — the result is a necessity proof plus a construction, not a single numer
 ## Compile
 
 `pdflatex ×3 + bibtex` on `../SR-2_spin_bit_axiom_quadrupole_formula.tex`: clean (rc=0 throughout,
-no undefined references or citations, all six `SR-2_references.bib` entries resolved, 19 pages).
+no undefined references or citations, all cited entries resolved from the central `bibliography/cpp_references.bib`, 19 pages).
 Confirmed at the H6 publication audit (Patch 1144).
 
 ## Numbers that must stay synchronised (H3)

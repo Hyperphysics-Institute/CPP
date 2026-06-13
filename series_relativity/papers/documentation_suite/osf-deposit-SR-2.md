@@ -45,7 +45,7 @@ Weinberg–Witten; Lattice State Packet; zero-parameter; op:einstein.
 
 ## Files to attach
 - `SR-2_spin_bit_axiom_quadrupole_formula.tex` (+ compiled PDF, v1.0 at deposit)
-- `SR-2_references.bib`
+- (references: registered centrally in `bibliography/cpp_references.bib` per OS §10 — no per-paper .bib)
 - `figures/figures-SR-2/` (4 SVG + 4 PDF)
 - `documentation_suite/` (this suite)
 
