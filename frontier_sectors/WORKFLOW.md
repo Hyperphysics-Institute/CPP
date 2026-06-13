@@ -335,3 +335,53 @@ All four SM diffs are improvements/corrections (Titlecase + version fixes), no U
 **Corrected operator sequence (clean tree):**
 `bash scripts/consolidate_bibliography.sh --accept-review SM-6,SM-7,SM-8,SM-9`  (prints diffs + applies)
 then review `git diff`, `publication_audit.sh <ID>` per paper, commit; repeat `--accept-review SR-1`.
+
+---
+
+### OPEN-WORKFLOW-1 — Session 1158: per-PAPER consolidation COMPLETE; per-SERIES scoped + classified
+
+**MILESTONE — per-paper bibs fully consolidated to central master (commit `73fe66a`).**
+One `--accept-review SR-1,SM-6..9` pass (v4) landed all remaining per-paper bibs:
+- **SR-1 → `[OK]`** (rendered `.bbl` byte-identical post-1156 cleanup; no re-deposit).
+- **SM-6/7/8/9 → `[ACCEPTED-REVIEW]`** (Titlecase + version corrections; **no URL lost** —
+  1154 self-cite + 1157 SM-6-external fidelity passes confirmed in the diffs).
+- 5 legacy `_references.bib` renamed into `archive/pre_consolidation_2026-04-15/`; master
+  +122 lines (SR-1 ×12 externals + `ma2001`); 5 `.tex` repointed; all five `publication_audit.sh`
+  = full `[PASS]`. With SM-10 (1152), **every per-paper bib (SR-1 + SM-6..10) is now central.**
+- *Record-keeping note:* `73fe66a`'s message reads "consolidate SM-6..9" (the `11xx`
+  placeholder) and omits SR-1, which was consolidated in the same pass; left as-is (pushed —
+  not worth a history-rewriting amend). This note is the accurate record.
+- OSF: SM-7/8/9 reference-list cosmetics → no re-deposit. SR-1 (47→50pp `\ref` fix) + SM-6
+  (figures) re-deposits were already owed from 1152; this pass added nothing to that.
+
+**Remaining OPEN-WORKFLOW-1 scope = the per-SERIES bibs only.** Five live + a strong-series
+tangle. Classification audit (this session, read-only) — de-risks the consolidation:
+
+| series bib | entries | collisions w/ master | unique→merge | self-key flags |
+|---|---|---|---|---|
+| `cpp_ew_series` (EW-1..5) | 20 | 0 | 20 | none |
+| `cpp_strong_series` (SS-1) | 31 | 1 benign | 30 | `abshier_sr` = **DUP of abshier2026sr1** |
+| `cpp_qm_series` (QM-1..6) | 40 | 2 benign | 38 | `abshier2026c1..c6` = genuine new (QM sub-papers) |
+| `cpp_foundations_series` (SD-1..5) | 27 | 2 benign | 25 | `abshier_sr` = **DUP of abshier2026sr1** |
+| `gr_companion` (c07) | 51 | 2 benign | 49 | `abshier2026sr` = **DUP of abshier2026sr1**; 9 genuine GR-companion self-keys (am/born/gr/grav/mass/series/stiff/swarm/zdc) |
+
+**Key results:** (i) **ZERO genuine-content collisions** — every master-collision is benign
+same-title (the long-feared "22 different-content collisions" does not exist here, mirroring
+the per-paper finding). (ii) ~162 unique entries would merge (mostly real external refs not
+yet central — a large but legitimate master enrichment). (iii) **Self-key dedup needed before
+merge** (same lesson as SR-1): `abshier_sr` (strong + foundations) and `abshier2026sr` (GR) all
+mean SR-1 → remap citing `.tex` to `abshier2026sr1` + drop the dupes, do NOT blind-merge.
+`abshier2026series`/`abshier2026c*`/GR-companions are genuine new papers → merge (consider
+giving them canonical `abshier2026*` keys). (iv) **Strong-series file tangle:**
+`series_strong/cpp_strong_series.bib` (31, 1 citer) and `series_strong/papers/cpp_strong_series.bib`
+(33, 1 citer) are both live; `cpp_strong_series_papers.bib` (33) and `cpp_strong_series_root.bib`
+(31) have **0 citers (stale → removable)**. Untangle which of the two live files SS-1 actually
+resolves before consolidating.
+
+**Per-series consolidation plan (next session, local compile):** (1) resolve the 3 SR-1 dup
+self-keys (remap `.tex` + drop); (2) classify/canonicalize the genuine new self-keys (c*, GR
+companions, series); (3) untangle + dedupe the 4 strong bibs (remove 2 stale); (4) merge uniques
+into master (fidelity: ensure url-in-note + Titlecase parity so multi-paper repoints don't lose
+links — same pattern as 1154/1157, applied across EW-1..5 / QM-1..6 / SD-1..5 / c07); (5) run
+v4 `--accept-review` per series (the script currently scans only `series_relativity/papers` +
+`series_standard_model/papers` — extend its find roots to cover EW/QM/SD/strong/GR dirs).
