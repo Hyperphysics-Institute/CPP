@@ -67,7 +67,7 @@ Every force in CPP arises from the lattice geometry. There are no force-carrying
 
 - **SSV_net** (net): The vector sum of all signals. Determines the actual displacement of a CP — which direction it moves and how far.
 
-SSV_abs sets the speed limit. SSV_net determines how much of that limit is used. A CP in a high-SSV_abs region (near a massive object) has a shorter maximum displacement per Moment — this IS time dilation. The same CP receiving a large SSV_net moves as far as its limit allows in that direction. This decomposition is the complete mechanism for special and general relativity. [SR-1; Founders Vision, Section 12]
+SSV_abs sets the speed limit. SSV_net determines how much of that limit is used. A CP in a high-SSV_abs region (near a massive object) has a shorter maximum displacement per Moment — this IS time dilation. The same CP receiving a large SSV_net moves as far as its limit allows in that direction. This decomposition is the complete mechanism for special and general relativity. [SR-1; Founders Vision, Section 12] The radiative (tensor) sector of general relativity — the helicity-±2 (+, ×) gravitational-wave polarizations — requires one further broadcast channel beyond the scalar SSV_abs and vector SSV_net: the symmetric-traceless rank-2 field Q_ij of the spin-bit axiom A3′, seated in the 600-cell's H (l=2) representation. It derives the Einstein quadrupole formula at λ = 16πG/c⁴ with zero new parameters and closes op:einstein (a). [SR-2]
 
 ### Chapter 4: The Two Gauge Sectors
 

@@ -90,6 +90,7 @@ The table below shows the 11 April 2026 paper-set. **Additions since 11 April 20
 | **SM-4** | Charged Lepton Masses from K3 | 11 ppm consistency; structural impossibility of θ from K3+SSV |
 | **SM-5** | Tribimaximal Neutrino Mixing from K3 | U_PMNS = U_TBM exactly from K₃ eigenvectors — zero free parameters |
 | **SR-1** | Mechanistic Derivation of Relativistic Effects | Lorentz invariance from 600-cell lattice wave propagation |
+| **SR-2** | The Spin-Bit Axiom / Derived Einstein Quadrupole Formula | A3′ adds the rank-2 GW channel; λ = 16πG/c⁴ at zero new parameters; closes op:einstein (a) (v0.6 RC, 7C CLEAR) |
 | **SM-6** | The Charged Lepton Mass Spectrum from 600-Cell Lattice Geometry | sin²θ_W = 3/(8φ); Koide phase derived; 1 calibration, 0 shape parameters |
 | **SM-7** | Heavy Quark Mass Spectrum and Strong Coupling | α_s = 5/(8φ); quark Koide phase; m_b 1.4%, m_t 1.7% |
 | **SM-8** | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses RMS 2.1%; four-bonded-cage-types theorem (per Theorem 4.1) |
@@ -151,7 +152,7 @@ CPP/
 │
 ├── series_strong/               ← SS-1 through SS-5 + companions + notebooks
 ├── series_standard_model/       ← SM-1 through SM-10 + documentation
-├── series_relativity/           ← SR-1 + 22 companion papers
+├── series_relativity/           ← SR-1, SR-2 + 22 companion papers
 ├── series_electroweak/          ← EW-1 through EW-5
 ├── series_quantum_mechanics/    ← QM-1 through QM-6
 ├── series_foundations/          ← SD-1 through SD-5 (superdeterminism)

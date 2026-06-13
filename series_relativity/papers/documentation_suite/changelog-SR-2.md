@@ -4,6 +4,21 @@ Canonical filename (no version suffix): `SR-2_spin_bit_axiom_quadrupole_formula.
 Version archaeology lives here per the operating_system.md version-archaeology
 architecture rule; the `.tex` title block shows only the current version line.
 
+## SHIP trail (post-7C) — 13 June 2026
+
+- **Patch 1143** — registry/index navigation + frontier flip: SR-2 cross-linked into
+  theorem-registry (THEO-SR-EIN-1..4 → SR-2 §5/§6/§7/§7), predictions header, axiom-registry
+  (A3′ Papers col), frontier_sectors/SR.md (OPEN-SR-4 → PARTIAL + Patch-1142 note),
+  README-series_relativity, INDEX.md.
+- **Patch 1144** — H6 final audit run (`scripts/publication_audit.sh SR-2`) as the SHIP-completeness
+  diagnostic. **Body confirmed SHIP-clean:** H1–H5 content checks pass (H3 numbers 1.000640 /
+  0.999998 match registry; H4 op:einstein→OPEN-SR-4 present/current; no placeholders), pdflatex
+  PASS. Cleared the four registry/orientation `[FAIL]`s the audit surfaced (SR-2 now referenced in
+  `paper_catalog.md` C7, `theory-overview.md` C1 table + coverage matrix, `programme_orientation.md`
+  C10 narrative, root `README.md` D1 table + tree). **Remaining for v1.0 (single FAIL + advisories):**
+  documentation suite (2/≥7 files — the bulk item), anthology chapter (C13), and optional advisories
+  (master_glossary terms, central bibliography). H6 re-run: only the doc-suite FAIL remains.
+
 ## v0.6 — 13 June 2026 (Phase 7C CLEARED — panel 3/3 CONFIRM; release candidate)
 
 No prose change from v0.5; this entry records the gate-clearance milestone.

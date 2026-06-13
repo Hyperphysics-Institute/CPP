@@ -126,6 +126,7 @@ First sub-umbrella established. Three papers organized under the OPEN-SD-CHIR-PR
 | ID | Type | Title | File | Status |
 |----|------|-------|------|--------|
 | **SR-1** | Paper | Mechanistic Derivation of Relativistic Effects via Space Stress Vector | `series_relativity/main_special_relativity_emergence/SR-1_special_relativity_emergence.tex` (v17) | **Submission-ready** |
+| **SR-2** | Paper | The Spin-Bit Axiom: Necessity, Construction, and the Derived Einstein Quadrupole Formula | `series_relativity/papers/SR-2_spin_bit_axiom_quadrupole_formula.tex` (v0.6 RC) | **Phase 7C CLEAR — release candidate (SHIP pending)** |
 
 **Documentation:** SR-1 documentation files are planned but not yet produced.
 

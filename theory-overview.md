@@ -23,6 +23,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | SM-4 | Charged Lepton Masses from K3 | 11 ppm; θ cannot come from K3+SSV alone | v5 |
 | SM-5 | Tribimaximal Neutrino Mixing | U_PMNS = U_TBM from K₃ eigenvectors (op:nu_id RESOLVED cross-sector via SF-4 v4.0) | v1 |
 | SR-1 | Mechanistic Derivation of Relativistic Effects | Lorentz factor from Voronoi compression; k derived | v18 |
+| SR-2 | The Spin-Bit Axiom / Derived Einstein Quadrupole Formula | A3′ spin-bit axiom (necessity proof: 3 closed assaults); λ = 16πG/c⁴ at zero new parameters; THEO-SR-EIN-1..4; closes op:einstein (a) | v0.6 RC |
 | SM-6 | Charged Lepton Mass Spectrum | sin²θ_W = 3/(8φ); Koide phase derived; μ 0.18%, τ 0.15% | v3 |
 | SM-7 | Heavy Quark Mass Spectrum + Strong Coupling | α_s = 5/(8φ); quark Koide phase; m_b 1.4%, m_t 1.7% | v2.2 |
 | SM-8 | Quark Generation Structure from 600-Cell Distance Shells | Zero-param quark masses; 3-generation theorem; RMS 2.1% | v4.1 |
@@ -249,6 +250,7 @@ Uniform perturbation ε·I₃ on K₃ preserves C₃ symmetry (eigenvectors unch
 | EW (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | QM (1-6) | 6 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SR-1 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SR-2 (RC) | 1 | ✅ (7C CLEAR) | ✅ | ⏳ (2/≥7, SHIP pending) | ✅ | ✅ |
 | SD (1-5) | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **SF-line (flagship)** | **3 SHIPPED (SF-2, SF-4, Capotauro) + 4 future (SF-1, SF-3, SF-5, SF-6, SF-7)** | **✅ for SHIPPED** | **✅ for SHIPPED** | **partial (SF-4 v1.0-v4.4 full suite; SF-2 v1.0 4-tier in progress; Capotauro v1.0 4-tier in progress)** | **✅** | **partial** |
 | **Phenomena (cosmology / early universe)** | **EU-1 (1 SHIPPED)** | **✅** | **(build at OSF deposit)** | **✅ full suite (Patch 0789)** | **✅ (`series_phenomena/README.md`)** | **✅** |
