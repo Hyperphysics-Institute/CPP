@@ -1,5 +1,7 @@
 # SR-5 Step C — Deriving the Λ Suppression: the residual-gradient mechanism (PARTIAL)
 
+> **CONTESTED-READING BANNER (Patch 1163).** The "coherence scale = Hubble radius `R_H`" argument below (info-at-c per Absolute Moment → the Sea equilibrates over a Hubble time) is a **retarded (PSR-at-c) equilibration** argument. Step D ruled `R_H` out (Hsu 2004: constant Ω_Λ, no acceleration), and condition-(2) sub-target 2-i (Patch 1163) finds that **every** retarded-causal scale is dynamically dead — the unique viable IR scale is the future event horizon `R_h`, which is *not* a retarded scale. So this Step-C `R_H` derivation is the **arc-breaking branch**: if the residual IR scale is genuinely retarded-set, the arc fails on magnitude (falsifier D3-1). The live route re-reads the residual as a global coherence mode set by A4 (the Nexus) → `R_h`; see `condition2_2i_coherence_vs_equilibration.md`. The scaling/coefficient derivation below stands; the **IR-scale identification (`R_H`) is superseded-pending** the 2-ii resolution.
+
 **Arc:** OPEN-SR-5 (Cosmological Sea-gravitation sector) · **Patch:** 0722 (1 June 2026) · **Sub-item:** OPEN-SR-5b
 **Verify:** `scripts/0722_lambda_residual_derivation.py` (CHECK 1/2/3 PASS)
 **Status:** PARTIAL. Derives the suppression *scaling* + coefficient + ~factor-2 magnitude + resolves the horizon ambiguity in principle, **replacing the c08 inserted (l_P/R_H)² coincidence-restatement** with a substrate mechanism. The precise coefficient, the horizon choice, and the dynamical w(z) are handed to Step D.

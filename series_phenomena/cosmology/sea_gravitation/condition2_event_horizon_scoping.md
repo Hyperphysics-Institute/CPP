@@ -62,4 +62,6 @@ So the candidate resolution is: **Step C's `R_H` is the retarded-equilibration s
 
 ## Next
 
-Open **2-i** (DG-1): confront whether the Sea's long-wavelength vacuum-residual coherence is A4-Nexus-enforced or A3′-PSR-retarded — the fork that decides whether the event horizon is derivable or the arc breaks here. Per Thomas's choice.
+**2-i ADDRESSED (Patch 1163, DG-1 executed)** — see `condition2_2i_coherence_vs_equilibration.md`. The examination of Step B / c05 / 1107–1108 found the existing cancellation machinery is local/retarded with A4 absent, and that it **leaves the IR scale undetermined** (Step C's retarded `R_H` is Hsu-dead). The fork collapses to a binary: every retarded scale is dynamically dead → **the arc survives only if A4 (the Nexus) sets the scale to `R_h`**; D3-1 fires iff the residual is retarded-set. Arc did not break; the question narrowed to 2-ii.
+
+Open **2-ii** (DG-2): (a) settle whether the CPP Sea residual is a retarded gradient (→ D3-1 FIRED, arc breaks) or a global zero-point coherence mode; (b) if coherence-mode, derive A4's coherence boundary = `R_h`, meeting F-COST-1. Per Thomas's choice.
