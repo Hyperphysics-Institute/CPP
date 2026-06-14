@@ -34,18 +34,21 @@ One short block naming, in plain words:
 - **Programme:** Conscious Point Physics (CPP).
 - **Artifact:** the ID + human title + version + patch (e.g. "THEO-CHIR-TARROW-1 v1.0, Patch 0658 — the time-reversal arrow status, OPEN-CHIR-2a").
 - **One-line what-it-is:** a single sentence a reviewer could understand cold.
-- **Package file:** the repo path **and** the raw GitHub URL.
+- **Package file:** the repo path **and** the raw GitHub URL (provenance pointer; the inline block of (b) is the delivery).
 - **Responses land in:** the `reviews-<ARTIFACT-ID>.md` path.
 
-### (b) The raw GitHub URL of the package
+### (b) The inline package block — **DEFAULT delivery** (per CONV-001)
+The full rendered package body delivered as **one copy-paste block** (4-backtick outer fence so the embedded code fences render), per CONV-001 / `templates/presentation_file.md`. This is the **default, not a fallback.** Empirically (CC-arc cycle, 13 Jun 2026) the repo's raw GitHub URL was **unreachable by every external reviewer** (private repo / CDN lag) — none of ChatGPT/Grok/Copilot could fetch it; all three reviewed cleanly from the inline block. So the inline block is authoritative. It carries, at its head, a one-line GitHub pointer (blob/raw, **marked "likely unreachable; inline is authoritative"** — provenance only), then the one-paragraph ask, then the full package §0–§8 **including the verify code in full**. One block per reviewer; the package's own §6 lets each reviewer find their steer.
+
+### (b-alt) The raw GitHub URL — secondary provenance pointer
 `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<path-to-package>`
-(Primary delivery. After the cycle-opening patch is pushed, this URL is live and fetchable.)
+(Provenance/record only. **Do not rely on it for delivery** — for this repo it is generally not fetchable by external reviewers. The inline block (b) is the delivery.)
 
 ### (c) Per-reviewer dispatch prompts — paste-ready
-One block **per active reviewer** (default panel: ChatGPT, Grok, Copilot; optional Sonnet hostile pass), each a complete copy-paste using the skeleton in §4. They differ only in the reviewer name and the one-line reviewer-specific steer (pulled from the package §6).
+One block **per active reviewer** (default panel: ChatGPT, Grok, Copilot; optional Sonnet hostile pass), each a complete copy-paste using the skeleton in §4. They differ only in the reviewer name and the one-line reviewer-specific steer (pulled from the package §6). Under inline-default delivery (b), each per-reviewer dispatch is the **steer line followed by the inline package block** — one paste, no link to open.
 
 ### (d) Delivery-mode note
-A one-line reminder: URL is primary; if a reviewer cannot open links, Thomas replies "paste it" and the assistant outputs the full package body inline for that reviewer (zero-dependency fallback). Grok/Copilot also accept Pastebin or raw-URL per OS §5.
+**Inline single-block (b) is the default and is always sufficient (zero-dependency).** The raw GitHub URL is a secondary provenance pointer only and is generally unreachable for external reviewers on this repo (private / CDN lag) — never gate a dispatch on it. Pastebin/raw-URL remain optional per OS §5 if a reviewer specifically prefers a link, but the inline block does not require Thomas to wait for, or reply "paste it" to, a failed fetch — it ships inline from the start.
 
 ---
 
