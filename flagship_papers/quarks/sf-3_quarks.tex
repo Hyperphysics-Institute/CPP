@@ -1,0 +1,408 @@
+% ============================================================
+% SF-3: The Quark Sector from 600-Cell Geometry
+%       Masses, Strong Coupling, Koide Phase, and Generation Count
+%       from a Single Calibration (m_e)
+% Conscious Point Physics Flagship Paper Series (SF-line)
+% Version history: flagship_papers/quarks/documentation_suite/changelog-sf-3.md
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+% --- Standard CPP macros ---
+\newcommand{\phig}{\varphi}            % golden ratio
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\DP}{\mathrm{DP}}
+\newcommand{\CP}{\mathrm{CP}}
+
+% --- Paper-specific macros ---
+\newcommand{\Mzero}{M_0}
+\newcommand{\sinsqthetaW}{\sin^2\theta_W}
+\newcommand{\alphas}{\alpha_s}
+\newcommand{\CF}{C_F}
+\newcommand{\Kthree}{\mathrm{K}_3}
+\newcommand{\CKM}{\mathrm{CKM}}
+\newcommand{\PMNS}{\mathrm{PMNS}}
+\newcommand{\mc}{m_c}
+\newcommand{\me}{m_e}
+\newcommand{\dgr}{^{\circ}}
+
+\title{\textbf{SF-3: The Quark Sector from 600-Cell Geometry}\\[6pt]
+{\large Masses, Strong Coupling, Koide Phase, and Generation Count from a Single Calibration}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 1.0 --- 14 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+\noindent\textbf{Paper type:} Flagship synthesis paper. Establishes that the complete quark mass spectrum, the strong coupling, the quark Koide phase, and the three-generation count all follow from a \emph{single} calibration (the electron mass $\me$) plus 600-cell geometry and $SU(3)$ colour, with zero shape parameters fitted.
+
+The Standard Model treats the six quark masses, the strong coupling $\alphas$, the number of generations, and the Cabibbo--Kobayashi--Maskawa ($\CKM$) mixing matrix as independent measured inputs. SF-3 assembles results from the shipped Conscious Point Physics (CPP) Standard-Model series (SM-7, SM-8, SM-9, SM-10) and Strong-Sector series (SS-1, SS-2) into a unified account in which (i) the heavy-quark masses $m_s, m_c, m_b, m_t$ derive from the zero-parameter cage formula $M_q = \me\,(z/\phig)\,V^{7/3}$ (with a top-relay multiplier $z\CF$), reproducing all four masses across four orders of magnitude at RMS $2.1\%$ from $\me$, the 600-cell coordination $z=12$, the golden ratio $\phig$, and the colour Casimir $\CF=4/3$ alone; (ii) the strong coupling $\alphas = 5/(8\phig) \approx 0.386$ emerges as the \emph{face-mode} fraction of the same 600-cell spectral trace that yields the Weinberg angle as its \emph{edge-mode} fraction $\sinsqthetaW = 3/(8\phig)$, with the exact complementarity $\sinsqthetaW + \alphas = 1/\phig$; (iii) the quark Koide phase $\theta_{\mathrm{quark}} = 124.04\dgr$ (vs PDG $124.09\dgr$, $0.05\%$) derives from the net isotropic self-energy shift built entirely from $\alphas$, $\sinsqthetaW$, and $z$; and (iv) the count of exactly three generations, with no fourth quark, is forced by antipodal identification in the tessellated lattice.
+
+\textbf{Calibration resolution.} Because the SM-8 cage formula \emph{predicts} the charm mass ($m_c \approx 1249$~MeV, $-1.6\%$) rather than taking it as input, the second calibration ($m_c$) that appeared in the earlier SM-7 quark-Koide route is \emph{redundant}: $m_c$ is demoted from a calibration to a derived quantity. This restores a uniform single-$\me$ calibration headline across charged leptons (SF-1), neutrinos (SF-4), and quarks (SF-3) --- the spine of the SF-line's ``hierarchy without hierarchy'' argument. A worked separation shows that the quark Koide phase depends on $\alphas$, $\sinsqthetaW$, and $z$ but \emph{not} on the mass amplitude or on $m_c$; no re-grounding of the phase machinery on a derived $m_c$ is required.
+
+\textbf{The honestly-open piece.} SF-3 does \emph{not} derive the $\CKM$ mixing matrix or the quark $CP$ phase. This is the structural analog of SF-4's open neutrino $\delta_{CP}$: SF-3 ships the quark masses and generation count at zero parameters with the mixing sector deferred (registered as OPEN-FP-3-CKM). The uniform ``masses derived, mixing-sector open'' posture across the fermion flagships is stated explicitly. The paper closes with four falsifiers, including a fourth-generation quark and a deviation of the measured quark Koide phase from $124.04\dgr$.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} quark masses, strong coupling, $\alpha_s$, Koide formula, quark Koide phase, 600-cell lattice, golden ratio, electroweak--strong unification, mode complementarity, three generations, fourth-generation falsifier, CKM matrix, Conscious Point Physics, single-$m_e$ calibration, zero-parameter prediction, Standard Model emergence, flagship paper.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The six quarks span five orders of magnitude in mass --- from the few-MeV up and down quarks to the 173-GeV top --- and the Standard Model simply measures these values without explaining them. This paper proposes that the four heavy quark masses (strange, charm, bottom, top) are fixed by the geometry of a four-dimensional lattice called the 600-cell, using only one calibration: the electron's mass. The same geometry that sets the electroweak ``Weinberg angle'' also sets the strength of the strong nuclear force, and the two add up to a single golden-ratio number exactly. A subtle angle that organizes the quark masses (the ``Koide phase'') comes out to within $0.05\%$ of its measured value. The lattice also forces there to be exactly three families of quarks and no fourth. The one thing the paper does \emph{not} explain is how quarks of different families mix --- the ``CKM'' matrix --- which it flags as honestly unfinished, exactly as the companion neutrino paper flags its own mixing parameter as unfinished.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+% SECTION 1: Introduction
+% ============================================================
+\section{Introduction}
+
+The quark sector poses four quantitative questions that the Standard Model (SM) answers only by measurement:
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{The mass spectrum.} Why do the six quark masses take the values they do, spanning roughly five orders of magnitude from the light up/down quarks to the top?
+\item \textbf{The strong coupling.} Why is $\alphas$ what it is, and is its value related to the electroweak couplings?
+\item \textbf{The generation count.} Why exactly three generations, and is a fourth excluded?
+\item \textbf{Mixing.} What sets the $\CKM$ matrix elements and the quark $CP$-violating phase?
+\end{enumerate}
+
+This paper assembles a Conscious Point Physics (CPP) account that answers the first three from a single calibration and the 600-cell substrate, and that locates the fourth as an explicitly open problem. None of the physics here is new derivation: every load-bearing result is inherited from shipped CPP papers and reframed into a single coherent quark-sector narrative. The contribution of SF-3 is the \emph{synthesis} --- including the adjudication of a calibration question that had been left open across the source corpus --- and the placement of the quark sector within the SF-line grand-unification program (SF-7).
+
+CPP derives Standard-Model structure from the geometry of the 600-cell polytope (vertices $V=120$, edges $E=720$, faces $F=1200$, cells $C=600$, vertex coordination $z=12$). Conscious Points (CPs) occupy lattice sites and exchange displacement-increment information along Space-Stress-Vector ($\SSV$) gradients; particles are geometric cage structures, and the golden ratio $\phig=(1+\sqrt5)/2$ recurs because it is built into the 600-cell metric. The quark sector draws on two shipped derivation chains: the Standard-Model emergence series (SM-7 through SM-10), which supplies the mass formula and the strong coupling, and the Strong-Sector series (SS-1, SS-2), which supplies $SU(3)$ colour and the colour Casimir $\CF=4/3$.
+
+\subsection{Open Problems Addressed}
+This paper consolidates and reframes results bearing on the quark mass and coupling sector and registers one new open problem:
+\begin{itemize}[leftmargin=2em]
+\item It \emph{resolves} the single-$\me$ calibration question for the quark sector (whether the heavy-quark spectrum requires a second calibration $m_c$) in favour of a single calibration, by adopting the SM-8 zero-parameter route as canonical and demoting $m_c$ to a derived quantity (Section~\ref{sec:ledger}).
+\item It registers \textbf{OPEN-FP-3-CKM} (the quark mixing matrix and quark $CP$ phase have no derivation in the CPP corpus), to be entered in the frontier registry at ship time via a flagged integration patch (Section~\ref{sec:ckm}).
+\item It identifies the SF-line consistency threads SF-3$\leftrightarrow$SF-1, SF-3$\leftrightarrow$SF-2, and SF-3$\leftrightarrow$SF-4 that SF-3 unlocks for the SF-7 $\S10$ consistency-theorem family (Section~\ref{sec:discussion}).
+\end{itemize}
+
+% ============================================================
+% SECTION 2: Substrate and the Four Bonded Shells
+% ============================================================
+\section{Substrate and the Four Bonded Shells}\label{sec:substrate}
+
+Fix a reference vertex of the 600-cell and sort the remaining vertices by graph distance. The bonded distance shells produce a small set of regular sub-polytopes; the quark cages occupy four of them, with vertex counts
+\[
+V \in \{4,\,12,\,20,\,30\},
+\]
+identified respectively with the tetrahedral, icosahedral, dodecahedral, and icosidodecahedral shells. These four bonded shells are the geometric carriers of the four heavy quark flavours (strange, charm, bottom, top); the light up/down quarks belong to the lowest cage structures treated in the SM mass-generation papers and are not the subject of the heavy-spectrum formula below.
+
+Colour structure enters through the Strong-Sector series. $SU(3)$ colour arises from cage-face permutation symmetry (SS-1), and the fundamental-representation Casimir
+\[
+\CF = \frac{N^2-1}{2N}\Big|_{N=3} = \frac{4}{3}
+\]
+is derived independently in SS-2. The combination $z\CF = 12\cdot\tfrac43 = 16$ supplies the top-quark relay multiplier in Section~\ref{sec:masses}. The single dimensionful calibration of the entire construction is the electron mass $\me$; everything else is geometry ($z$, $\phig$, the shell counts $V$) and the colour Casimir.
+
+% ============================================================
+% SECTION 3: The Zero-Parameter Quark Mass Spectrum
+% ============================================================
+\section{The Zero-Parameter Quark Mass Spectrum (Route A)}\label{sec:masses}
+
+The heavy-quark masses follow the cage formula established in SM-8, with the exponent $7/3$ and the prefactor $\Mzero$ both \emph{derived} in SM-9 (pair count $\times$ linear cage dimension):
+\begin{equation}
+M_q = \me\,\frac{z}{\phig}\,V^{7/3}\quad(q=s,c,b),
+\qquad
+M_t = \me\,\frac{z}{\phig}\,V_t^{7/3}\times z\,\CF,
+\label{eq:massformula}
+\end{equation}
+with the mass anchor
+\begin{equation}
+\Mzero \equiv \me\,\frac{z}{\phig} = 0.5110\;\mathrm{MeV}\times\frac{12}{1.6180} = 3.79\;\mathrm{MeV},
+\label{eq:M0}
+\end{equation}
+$z=12$, $\CF=4/3$ (SS-2), and the top relay multiplier $z\CF = 16$. The four bonded shells of Section~\ref{sec:substrate} give the cage assignments and the predicted masses in Table~\ref{tab:masses}.
+
+\begin{table}[H]
+\centering
+\caption{Zero-parameter heavy-quark mass spectrum from Eq.~\eqref{eq:massformula}. Inputs: $\me$, $z=12$, $\phig$, $\CF=4/3$. No shape parameters fitted. PDG values are pole/$\overline{\mathrm{MS}}$ reference masses; agreement is RMS $2.1\%$ across four orders of magnitude.}
+\label{tab:masses}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Quark & Shell & $V$ & multiplier & CPP mass & PDG & error \\
+\midrule
+strange & tetrahedron       & 4  & 1            & $96.3$~MeV    & $93.4$~MeV    & $+3.1\%$ \\
+charm   & icosahedron       & 12 & 1            & $1249$~MeV    & $1270$~MeV    & $-1.6\%$ \\
+bottom  & dodecahedron      & 20 & 1            & $4115$~MeV    & $4180$~MeV    & $-1.6\%$ \\
+top     & icosidodecahedron & 30 & $z\CF=16$    & $169{,}570$~MeV & $172{,}760$~MeV & $-1.8\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The root-mean-square residual is $2.1\%$, obtained from $\me$, the 600-cell geometry, and $SU(3)$ colour alone, with no parameters fitted. The single most consequential feature for the calibration question (Section~\ref{sec:ledger}) is that Eq.~\eqref{eq:massformula} \emph{predicts} the charm mass, $m_c = 1249$~MeV at $-1.6\%$, rather than taking it as an input. Charm is therefore a derived quantity in this route, and the spectrum carries a single dimensionful calibration, $\me$.
+
+\begin{remark}
+SM-10 supplies a finite-element chain-network \emph{mechanism} for the $7/3$ scaling; it is currently a calibrated geometric model (four fitted parameters against four data) pending a first-principles GPU closure. The mass \emph{values} in Table~\ref{tab:masses} do not depend on SM-10: they come from SM-8/SM-9. The SM-10 status is therefore a mechanism-depth caveat, not a mass-prediction caveat, and is carried in the conditional accounting (Section~\ref{sec:falsifiers}).
+\end{remark}
+
+% ============================================================
+% SECTION 4: Strong Coupling and Electroweak-Strong Complementarity
+% ============================================================
+\section{Strong Coupling and Electroweak--Strong Mode Complementarity}\label{sec:alphas}
+
+The strong coupling is the \emph{face-mode} fraction of the same 600-cell adjacency spectral trace that yields the Weinberg angle as its \emph{edge-mode} fraction. With $A$ the 600-cell adjacency operator,
+\begin{equation}
+\alphas = \frac{1}{\phig}\cdot\frac{\tfrac13\Tr(A^3)}{\Tr(A^2)+\tfrac13\Tr(A^3)}
+= \frac{1}{\phig}\cdot\frac{2400}{3840}
+= \frac{5}{8\phig}\approx 0.386,
+\label{eq:alphas}
+\end{equation}
+which matches the PDG running coupling at the charm scale, $\alphas(m_c)\approx 0.35$--$0.40$. The Weinberg angle inherited from SM-6 is the complementary edge-mode fraction,
+\begin{equation}
+\sinsqthetaW = \frac{3}{8\phig}\approx 0.232,
+\end{equation}
+and the two mode fractions are exactly complementary:
+\begin{equation}
+\boxed{\;\sinsqthetaW + \alphas = \frac{3}{8\phig} + \frac{5}{8\phig} = \frac{1}{\phig}\approx 0.618\;}
+\label{eq:complementarity}
+\end{equation}
+The bare (pre-$\eta$) partition is $3/8 + 5/8 = 1$, and the topological ratio is
+\begin{equation}
+\frac{\alphas}{\sinsqthetaW} = \frac{F}{E} = \frac{1200}{720} = \frac{5}{3},
+\end{equation}
+the ratio of the 600-cell face and edge counts. \emph{One spectral trace gives both the electroweak and the strong coupling.} This is a substrate-level electroweak--strong unification and the strongest single $\S10$ consistency thread linking SF-3 to SF-1, SF-2, and SF-5: the same adjacency spectrum, partitioned into edge and face modes weighted by $\eta = 1/\phig$, sources both couplings with no independent calibration.
+
+% ============================================================
+% SECTION 5: The Quark Koide Phase
+% ============================================================
+\section{The Quark Koide Phase}\label{sec:koide}
+
+The quark Koide phase derives from the same isotropic-self-energy-shift machinery that fixes the lepton Koide phase (SF-1), with a sector-appropriate strong-colour contribution added to the electroweak contribution. The base value is the $\Kthree$ eigenvalue ratio,
+\begin{equation}
+\cos\theta_0 = -K = -\frac{2}{3}.
+\end{equation}
+Quarks carry colour, so their $\Kthree$ cage faces feel the strong coupling on all $z=12$ nearest-neighbour bonds, producing a negative isotropic shift, alongside the same electroweak shift the leptons feel:
+\begin{equation}
+\varepsilon_S = -\frac{z\,\alphas}{z+1} = -\frac{60}{104\,\phig},
+\qquad
+\varepsilon_{EW} = +\frac{3}{52\,\phig},
+\qquad
+\varepsilon = \varepsilon_S + \varepsilon_{EW} = -\frac{27}{52\,\phig}.
+\label{eq:shift}
+\end{equation}
+The shifted phase is
+\begin{equation}
+\cos\theta_{\mathrm{quark}}
+= -\frac{2}{3}\left(1+\frac{\varepsilon}{2}\right)
+= -\frac{2}{3}\left(1-\frac{27}{104\,\phig}\right)
+\approx -0.5597
+\;\Longrightarrow\;
+\boxed{\;\theta_{\mathrm{quark}} = 124.04\dgr\;}
+\label{eq:koide}
+\end{equation}
+versus the PDG-quark-mass-extracted value $124.09\dgr$ --- a $0.05\%$ agreement and a zero-parameter prediction.
+
+\begin{proposition}[Phase--mass independence]\label{prop:phaseindep}
+The quark Koide phase $\theta_{\mathrm{quark}}$ in Eq.~\eqref{eq:koide} is a function of $\alphas$, $\sinsqthetaW$, and $z$ only. It does not depend on the mass amplitude or on the charm mass $m_c$.
+\end{proposition}
+
+\noindent\textit{Consequence.} An earlier reading (the SF-3 outline) suggested that the quark-phase machinery would need to be ``re-grounded'' on the derived $m_c$ once $m_c$ was demoted from calibration to prediction. Proposition~\ref{prop:phaseindep} shows this step is unnecessary: $m_c$ entered the SM-7 construction only as the mass-\emph{amplitude} calibration $A_q$, while the \emph{phase} is a clean structural observable built from the isotropic-shift structure of Eq.~\eqref{eq:shift}. The phase therefore stands whichever mass route is used, and the SF-3 synthesis is correspondingly simpler than a hybrid: masses come entirely from the SM-8 cage formula, while $\alphas$ and $\theta_{\mathrm{quark}}$ come as derived structural observables independent of any mass calibration.
+
+% ============================================================
+% SECTION 6: Three Generations
+% ============================================================
+\section{Three Generations and the No-Fourth-Quark Prediction}\label{sec:generations}
+
+The four bonded shells $V\in\{4,12,20,30\}$ exhibit a palindrome symmetry in the full 600-cell shell sequence, and antipodal identification in the tessellated lattice limits the Standard Model to exactly three generations (SM-8). The generation count is therefore \emph{forced}, not assumed, and the same identification predicts \textbf{no fourth quark}. This is a zero-parameter structural prediction and a clean falsifier: discovery of a fourth-generation quark would directly contradict the antipodal-identification mechanism.
+
+% ============================================================
+% SECTION 7: Calibration Ledger
+% ============================================================
+\section{Calibration Ledger: the Route Adjudication}\label{sec:ledger}
+
+Two shipped routes produce the heavy-quark masses. Adjudicating between them is the central drafting decision of SF-3, and it is settled here.
+
+\paragraph{Route A (SM-8) --- zero-parameter cage formula.} Eq.~\eqref{eq:massformula} predicts all four heavy masses to RMS $2.1\%$ using only $\me$ + geometry + $\CF$. Crucially, $m_c$ is a \emph{prediction} ($1249$~MeV, $-1.6\%$), not an input. \textbf{One calibration ($\me$).}
+
+\paragraph{Route B (SM-7) --- Koide $+$ $m_c$ calibration.} Uses the charm mass as a calibration constant to place the quark Koide phase, giving slightly better $b/t$ residuals ($m_b=4.24$~GeV, $1.4\%$; $m_t=169.8$~GeV, $1.7\%$) \emph{plus} the quark Koide phase and $\alphas = 5/(8\phig)$. \textbf{Two calibrations ($\me$, $m_c$).}
+
+\paragraph{The adjudication.} Because Route A \emph{derives} $m_c$ from $\me$ at zero parameters, the $m_c$ calibration in Route B is \emph{redundant}: $m_c$ can be supplied by the Route-A prediction rather than fitted. The canonical SF-3 synthesis is therefore:
+\begin{quote}
+Adopt \textbf{Route A} as the canonical mass-spectrum route (all four heavy masses from $\me$ alone, RMS $2.1\%$, single calibration); \textbf{demote $m_c$ from calibration to derived quantity}. Retain Route B's \emph{structural} content --- $\alphas = 5/(8\phig)$, the complementarity $\sinsqthetaW+\alphas = 1/\phig$, and the quark Koide phase $124.04\dgr$ --- as the electroweak--strong unification layer. By Proposition~\ref{prop:phaseindep}, no re-grounding of the phase on a derived $m_c$ is needed: the phase never depended on $m_c$.
+\end{quote}
+
+This restores the single-$\me$ calibration headline for the quark sector at the cost of slightly larger mass residuals than Route B's better $b/t$ ($\sim 0.3\%$). The trade is clearly worth it: a uniform single-calibration claim across charged leptons (SF-1), neutrinos (SF-4), and quarks (SF-3) is the spine of the SF-7 ``hierarchy without hierarchy'' argument, and a sub-percent accuracy gain is not worth a second calibration that contradicts that spine. With Route A adopted, the SF-7 master comparison table reads \textbf{one calibration ($\me$)} for all fermion masses. The remaining caveats --- SF-2's open $\eta$-dilution for boson \emph{absolute} masses, and the $\CKM$ gap below --- are not fermion-mass-calibration issues and do not disturb the single-$\me$ claim.
+
+% ============================================================
+% SECTION 8: CKM - Inherited Open
+% ============================================================
+\section{CKM Mixing --- Inherited Open}\label{sec:ckm}
+
+There is \textbf{no $\CKM$-matrix derivation anywhere in the quark corpus}. SM-10, despite an incidental mention, is the finite-element scaling-mechanism paper, not a mixing paper. SF-3 therefore predicts the quark \emph{masses} and the generation count at zero parameters but does \emph{not} derive the $\CKM$ mixing angles or the quark $CP$ phase. We register this honestly:
+\begin{openproblem}[OPEN-FP-3-CKM]
+The quark mixing matrix $\CKM$ and the quark $CP$-violating phase are not derived in the CPP corpus. SF-3 inherits this as an open problem, to be entered in the frontier registry at ship time.
+\end{openproblem}
+
+\noindent This is the structural analog of SF-4's open neutrino $\delta_{CP}$: SF-4 ships seven of eight neutrino parameters with $\delta_{CP}$ deferred; SF-3 ships the quark masses and generation count with $\CKM$ deferred. Stating the parallel explicitly strengthens the SF-line's uniform ``masses derived, mixing-sector open'' posture. A candidate closure route --- to flag, not to pursue here --- is a quark-sector cage-mixing structure analogous to SM-5's $\Kthree \to$ tri-bimaximal derivation of the $\PMNS$ matrix; the $\CKM$ analog of that spectral-alignment mechanism is presently unscoped.
+
+\begin{remark}
+The quark $CP$ phase inside $\CKM$ is a \emph{separate} object from the neutrino $\delta_{CP}$ being pursued in the dedicated $\delta_{CP}$ window. SF-3's mixing gap therefore carries low cross-window collision risk: it is not that window's territory.
+\end{remark}
+
+% ============================================================
+% SECTION 9: Conditional Accounting and Falsifiers
+% ============================================================
+\section{Conditional Accounting and Falsifiers}\label{sec:falsifiers}
+
+\paragraph{Calibration ledger.} One dimensionful constant, $\me$. \textbf{Zero shape parameters.} The masses $m_s, m_c, m_b, m_t$ are all derived (SM-8/SM-9); $\alphas$ and $\theta_{\mathrm{quark}}$ are derived structural observables (SM-7); the generation count is forced (SM-8).
+
+\paragraph{Inherited-open / conditional.}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{OPEN-FP-3-CKM:} quark mixing and quark $CP$ phase undelivered (Section~\ref{sec:ckm}).
+\item SM-10's first-principles cascade derivation remains a calibrated model (four parameters / four data) pending GPU closure. The mass \emph{values} do not depend on it.
+\item Accuracy honesty: RMS $2.1\%$ on the masses under the single-$\me$ route; Route B gave marginally better $b/t$ at the cost of a second calibration (Section~\ref{sec:ledger}).
+\end{itemize}
+
+\paragraph{Falsifiers.}
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Fourth-generation quark.} Discovery of a fourth-generation quark contradicts the antipodal-identification three-generation prediction (Section~\ref{sec:generations}).
+\item \textbf{Quark Koide phase.} A measured quark Koide phase departing materially from $124.04\dgr$ (well outside the present $0.05\%$ agreement) falsifies the isotropic-shift derivation (Section~\ref{sec:koide}).
+\item \textbf{Mode complementarity.} A demonstration that $\sinsqthetaW$ and $\alphas$ do not share the single 600-cell spectral-trace origin --- e.g.\ an independent measurement forcing $\sinsqthetaW + \alphas \neq 1/\phig$ at the substrate scale --- falsifies Eq.~\eqref{eq:complementarity}.
+\item \textbf{Mass-formula structure.} A heavy-quark mass found to violate the $V^{7/3}$ cage scaling beyond the stated residual band falsifies Eq.~\eqref{eq:massformula}.
+\end{enumerate}
+
+% ============================================================
+% SECTION 10: Physical Interpretation
+% ============================================================
+\section{Physical Interpretation}\label{sec:interp}
+
+In the CPP ontology, a quark is a colour-charged cage of Conscious Points occupying one of the four bonded distance-shells of the 600-cell. The cage's vertex count $V$ sets its mass through the $V^{7/3}$ scaling of Eq.~\eqref{eq:massformula}: the exponent $7/3$ counts displacement-increment pair interactions times the linear cage dimension (SM-9), so a larger cage stores proportionally more $\SSV$ field energy. The top quark's extra factor $z\CF=16$ reflects the colour-Casimir-weighted coordination of the icosidodecahedral shell relaying its self-energy across all $z=12$ neighbours. The strong coupling and the Weinberg angle are not separate inputs but two harmonics of one substrate vibration: $\alphas$ is the share of the adjacency spectral trace carried by face ($A^3$) modes and $\sinsqthetaW$ the share carried by edge ($A^2$) modes, their sum fixed at $1/\phig$ by the propagation-efficiency factor. The quark Koide phase is the geometric angle by which colour and electroweak self-energy shifts rotate the $\Kthree$ eigenphase away from its bare $-2/3$ value.
+
+\subsection{CP/GP Signature at This Scale}\label{sec:signature}
+
+\textbf{Load-bearing axioms.} The quark-sector derivation rests on the 600-cell topology axiom (supplying $z=12$ and the shell counts $V$), the propagation-efficiency axiom (supplying the $1/\phig$ weighting common to $\alphas$, $\sinsqthetaW$, and $\Mzero$), the cage-volume scaling axiom (supplying $\Mzero = \me z/\phig$ and the $7/3$ exponent through SM-9), and the lattice-scale grounding axiom (fixing MeV units). $SU(3)$ colour enters through the Strong-Sector cage-face-permutation axiom and the derived Casimir $\CF=4/3$ (SS-2).
+
+\textbf{Visible-versus-smoothed discreteness.} The lattice discreteness is \emph{visible} in this paper as the integer shell counts $V\in\{4,12,20,30\}$, the integer edge/face counts $E=720$, $F=1200$ in the topological ratio $\alphas/\sinsqthetaW = 5/3$, the coordination $z=12$, and the $\phig$ factors throughout. It is \emph{smoothed} only in the running-coupling comparison, where $\alphas = 5/(8\phig)$ is matched to a renormalization-scheme-dependent effective value averaged over many substrate interactions at the charm scale.
+
+\textbf{Macroscopic shadow.} The empirical regularity that the quark mass spectrum spans orders of magnitude yet sits on a single geometric progression --- and that the strong and electroweak couplings sum to a fixed golden-ratio constant --- is the macroscopic shadow of the sub-quantum fact that all four heavy quarks are cages on one lattice and both couplings are mode fractions of one adjacency spectrum. What conventional physics records as four unrelated quark masses plus two unrelated couplings is, in CPP, one cage-scaling law plus one spectral partition.
+
+% ============================================================
+% SECTION 11: CPP-to-Conventional-Physics Mapping
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}\label{sec:mapping}
+
+\begin{table}[H]
+\centering
+\caption{Structural correspondence between the CPP quark-sector mechanism and the conventional Standard-Model description. The mapping is at the level of degrees of freedom, symmetry, and observable, not a literal identity --- CPP operates at finer granularity than perturbative QFT.}
+\label{tab:mapping}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+\textbf{CPP mechanism} & \textbf{Conventional physics} \\
+\midrule
+Colour-charged CP cage on a bonded shell, vertex count $V$ & A quark flavour with a definite mass \\
+$V^{7/3}$ cage-energy scaling with anchor $\Mzero=\me z/\phig$ & The measured heavy-quark mass hierarchy \\
+Face-mode fraction of the adjacency spectral trace & The strong coupling $\alphas$ \\
+Edge-mode fraction of the same spectral trace & The Weinberg angle $\sinsqthetaW$ \\
+Isotropic colour$+$electroweak self-energy shift on $\Kthree$ & The quark Koide phase $\theta_{\mathrm{quark}}$ \\
+Antipodal identification in the tessellated lattice & Exactly three generations; no fourth quark \\
+(undelivered) cage-mixing alignment structure & The $\CKM$ matrix and quark $CP$ phase \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% SECTION 12: Discussion - SF-line placement
+% ============================================================
+\section{Discussion: SF-line Placement and the $\S10$ Consistency Threads}\label{sec:discussion}
+
+SF-3 is more than a quark mass table: it supplies three of the cross-sector consistency threads that the SF-7 grand-unification paper assembles into its $\S10$ consistency-theorem family. Each follows the three-clause consistency template (single shared source; no independent calibration; no conflicting prediction).
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{SF-3 $\leftrightarrow$ SF-2.} The mode-fraction structure: $\sinsqthetaW = 3/(8\phig)$ (SF-2) and $\alphas = 5/(8\phig)$ (SF-3) come from \emph{one} spectral trace, complementary to $1/\phig$. A strong consistency clause: a single spectral source, no independent calibration.
+\item \textbf{SF-3 $\leftrightarrow$ SF-1.} The Koide-phase derivation machinery (isotropic self-energy shift on the $\Kthree$ face) and the $\Mzero=\me z/\phig$ anchor are shared. Consistency clause: lepton and quark phases use the same mechanism with sector-appropriate shifts (electroweak only for leptons; electroweak $+$ strong for quarks).
+\item \textbf{SF-3 $\leftrightarrow$ SF-4.} The $\Mzero$ anchor and four-cage taxonomy are shared, as is the \emph{masses-derived / mixing-open} parallel ($\CKM$ open in SF-3 $\leftrightarrow$ $\delta_{CP}$ open in SF-4). Consistency clause: both sectors derive masses from $\Mzero$ and defer their mixing-sector $CP$ structure, with no conflicting calibration.
+\end{itemize}
+
+These threads are why the single-$\me$ adjudication of Section~\ref{sec:ledger} matters beyond the quark sector: it lets the SF-7 master table commit to one calibration across all fermion masses, which is the load-bearing claim of the unification argument.
+
+% ============================================================
+% SECTION 13: Conclusion
+% ============================================================
+\section{Conclusion}\label{sec:conclusion}
+
+The complete heavy-quark mass spectrum, the strong coupling, the quark Koide phase, and the three-generation count all follow from a single calibration ($\me$) plus 600-cell geometry and $SU(3)$ colour, with zero shape parameters. The earlier ambiguity over whether the quark sector needed a second calibration ($m_c$) is resolved in favour of a single calibration by adopting the SM-8 zero-parameter route as canonical and demoting $m_c$ to a derived quantity; a worked phase--mass separation (Proposition~\ref{prop:phaseindep}) shows the quark Koide phase never depended on $m_c$. The quark mixing matrix remains honestly undelivered (OPEN-FP-3-CKM), the structural analog of SF-4's open $\delta_{CP}$.
+
+\subsection{Swarm-Validation Contribution}\label{sec:swarm}
+
+SF-3 contributes the following zero-parameter empirical correspondences to the cumulative CPP swarm, all from the same unchanged axiom stack: the four heavy-quark masses (RMS $2.1\%$), the strong coupling $\alphas = 5/(8\phig)$, the exact electroweak--strong complementarity $\sinsqthetaW+\alphas = 1/\phig$, the quark Koide phase $124.04\dgr$ ($0.05\%$), and the forced three-generation count. Because each correspondence is fixed by geometry once $\me$ is set, the probability of reproducing them jointly by accident or hidden tuning scales as $(\text{residual band}/\text{typical parameter space})^{N}$ in the number of independent correspondences $N$, and is already astronomically small at the swarm's present size. (The cumulative programme counter is updated in \texttt{predictions.md} at ship time via a flagged integration patch.)
+
+\subsection{Problem Status After This Paper}\label{sec:status}
+
+\begin{itemize}[leftmargin=2em]
+\item Single-$\me$ quark-calibration question: \textbf{RESOLVED} (Route A canonical; $m_c$ demoted to derived).
+\item \textbf{NEW:} OPEN-FP-3-CKM registered (quark mixing matrix and quark $CP$ phase undelivered).
+\item SF-7 $\S10$ threads SF-3$\leftrightarrow$SF-1, SF-3$\leftrightarrow$SF-2, SF-3$\leftrightarrow$SF-4 identified and ready for the consistency-theorem family.
+\end{itemize}
+
+% ============================================================
+% ACKNOWLEDGEMENTS
+% ============================================================
+\section*{Acknowledgements}
+
+This paper is a synthesis and reframing of shipped CPP results (SM-7, SM-8, SM-9, SM-10, SS-1, SS-2, SM-6) into a unified quark-sector account; it introduces no new derivation. Thomas Lee Abshier (ND) conceived the Conscious Point Physics program, the 600-cell substrate hypothesis, and the physical intuitions underlying the cage-mass and isotropic-shift mechanisms. Claude Opus (Anthropic) performed the corpus survey, the calibration-route adjudication, the phase--mass independence argument (Proposition~\ref{prop:phaseindep}), and the drafting. The multi-AI review panel (ChatGPT, Grok, Copilot) is to be acknowledged in detail at the review-incorporation stage. The 600-cell lattice hypothesis (AXIM-2) remains an axiom. Repository: \url{https://github.com/Hyperphysics-Institute/CPP}; OSF: \url{https://osf.io/9dfya/} (DOI 10.17605/OSF.IO/JXE8D).
+
+% ============================================================
+% BIBLIOGRAPHY (inline; migrate to master cpp_references.bib at ship)
+% ============================================================
+\begin{thebibliography}{99}
+
+\bibitem{abshier_sm6} T.~L.~Abshier et al., \emph{The Weinberg Angle from 600-Cell Spectral Traces}, SM-6, Hyperphysics Institute (2026).
+\bibitem{abshier_sm7} T.~L.~Abshier et al., \emph{Strong Coupling, Mode Complementarity, and the Quark Koide Phase}, SM-7, Hyperphysics Institute (2026).
+\bibitem{abshier_sm8} T.~L.~Abshier et al., \emph{Quark Generations and the Zero-Parameter Cage Mass Formula}, SM-8 v4.0, Hyperphysics Institute (2026).
+\bibitem{abshier_sm9} T.~L.~Abshier et al., \emph{Derivation of the $7/3$ Cage-Mass Exponent and the Anchor $M_0$}, SM-9, Hyperphysics Institute (2026).
+\bibitem{abshier_sm10} T.~L.~Abshier et al., \emph{Finite-Element Chain-Network Mechanism for Cage-Mass Scaling}, SM-10, Hyperphysics Institute (2026).
+\bibitem{abshier_ss1} T.~L.~Abshier et al., \emph{$SU(3)$ Colour from Cage-Face Permutation Symmetry}, SS-1, Hyperphysics Institute (2026).
+\bibitem{abshier_ss2} T.~L.~Abshier et al., \emph{The Colour Casimir $C_F=4/3$ from the 600-Cell}, SS-2, Hyperphysics Institute (2026).
+\bibitem{abshier_sf2} T.~L.~Abshier and {Claude Opus}, \emph{SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry}, v1.01, Hyperphysics Institute (2026).
+\bibitem{abshier_sf4} T.~L.~Abshier et al., \emph{SF-4: The Neutrino Sector from 600-Cell Geometry}, v4.4, Hyperphysics Institute (2026).
+\bibitem{koide1983} Y.~Koide, \emph{A fermion-boson composite model of quarks and leptons}, Phys.\ Lett.\ B \textbf{120}, 161 (1983).
+\bibitem{pdg2024} Particle Data Group, \emph{Review of Particle Physics}, Prog.\ Theor.\ Exp.\ Phys.\ (2024).
+
+\end{thebibliography}
+
+\end{document}
