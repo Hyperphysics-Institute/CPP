@@ -1,21 +1,24 @@
-# SR-5 Step D — Friedmann Recovery + the Two Load-Bearing Checks (CONDITIONAL CAPSTONE)
+# SR-5 Step D — Friedmann Recovery + the Two Load-Bearing Checks (ONE CONDITION REMAINING)
 
-**Arc:** OPEN-SR-5 (Cosmological Sea-gravitation sector) · **Patch:** 0723 (1 June 2026) · **Sub-item:** OPEN-SR-5d
-**Verify:** `scripts/0723_friedmann_recovery.py` (D1), `scripts/0723_horizon_wz.py` (D3) — all CHECKS PASS
-**Status:** CONDITIONAL. The falsification-first sequence A→D is traversed with **no kill**. The cosmological sector is structurally complete and internally consistent, resting on **two named conditions** (the c08 field-equation reduction; the event-horizon selection). Not a theorem — a coherent, falsifiable structure with its gaps isolated.
+**Arc:** OPEN-SR-5 (Cosmological Sea-gravitation sector) · **Patch:** 0723 (1 June 2026); **unconditionalized Patch 1161 (13 June 2026)** · **Sub-item:** OPEN-SR-5d
+**Verify:** `scripts/0723_friedmann_recovery.py` (D1), `scripts/0723_horizon_wz.py` (D3) — all CHECKS PASS. Discharge basis (no new computation): `../../../series_relativity/op_einstein_closure/code/1108_stepBprime_shell_moments.py` (monopole Σv̂=0; quadrupole=4·I) + A3′ DG-3 3/3 (Patches 1126–1129).
+
+> **UPDATE — Patch 1161 (13 June 2026): condition (1) discharged; D1 and D2 lifted from conditional to closed.** Step D's first named condition — the c08 field-equation reduction `G_μν = 8πG/c⁴·T_μν[LSP]` — was c08's "central unproven conjecture" at Patch 0723. It is now closed, on both halves the falsifier D2-1 named: **(a) the field equation is derived** — the spin-bit axiom **A3′** completes the broadcast LSP′ = Φ ⊕ V_i ⊕ Q_ij (the lattice's full protected content; completion theorem, no fourth rung), giving `λ = 16πG/c⁴` at **zero new parameters** ("c08's asserted equation now DERIVED"), DG-3 3/3 + architect sign-off (Patches 1121–1130, axiom-registry A3′); and **(b) it sources from the excess, not absolute |SSV|** — the 600-cell 12-neighbour shell is a spherical 5-design, so the absolute-|SSV| monopole `Σv̂ = 0` *exactly* (degree-1) and the operator is the Laplacian `Σv̂⊗v̂ = 4·I` (degree-2): the ground-state exclusion is grounded in icosahedral symmetry, not assumed (Patches 1107–1108). **Falsifier D2-1 is refuted: the closed, derived field equation sources curvature from the LSP perturbation Δ|SSV|, with the absolute-|SSV| ground-state term annihilated by symmetry.** The arc's **two** conditions reduce to **one** — only the event-horizon IR-scale selection (D3-1) remains. The in-place D1/D2 text below is updated; the per-strand history is preserved. This is a *propagation* of the already-review-hardened op:einstein closure into the CC arc, not a new derivation; the arc as a whole stays **conditionally supported, not confirmed** (see Arc verdict + Honest caps).
+
+**Status:** ONE CONDITION REMAINING (was CONDITIONAL, Patch 0723). The falsification-first sequence A→D is traversed with **no kill**. The cosmological sector is structurally complete and internally consistent; condition (1) (the c08 field-equation reduction) is **discharged** (Patch 1161, via the op:einstein closure A3′ + the 1107–1108 excess-sourcing result), leaving **one named condition** — the event-horizon selection (D3). Not yet a theorem — a coherent, falsifiable structure with its remaining gap isolated.
 
 Step D has three strands.
 
-## D1 — Friedmann recovery (PASS, conditional)
+## D1 — Friedmann recovery (PASS)
 
 Step A gave the matter-era acceleration ä/a = −(4π/3)Gρ (Milne–McCrea, pressureless). The full history needs the GR **active gravitational mass** ρ+3p/c², which c08 supplies as "T_μν from LSP density **and flux**" (flux = momentum/pressure). With that:
 - radiation (w=1/3): ρ+3p/c² = 2ρ → decelerates twice as hard as matter;
 - matter (w=0): ρ → decelerates;
 - Λ (w=−1): ρ+3p/c² = −2ρ → **accelerates**.
 
-Integrating the first Friedmann equation with (Ω_r, Ω_m, Ω_Λ), **the Planck-scale ground state NOT in the source sum** and Λ entering only as the Step-C residual, reproduces the standard ΛCDM H(z); the deceleration parameter crosses zero (decel→accel) at **z ≈ 0.63** (observed ~0.6–0.7). So excess-sourcing yields the *observed* expansion history. **Condition:** the c08 reduction G_μν = 8πG/c⁴·T_μν[LSP] holds with the excess as source (see D2).
+Integrating the first Friedmann equation with (Ω_r, Ω_m, Ω_Λ), **the Planck-scale ground state NOT in the source sum** and Λ entering only as the Step-C residual, reproduces the standard ΛCDM H(z); the deceleration parameter crosses zero (decel→accel) at **z ≈ 0.63** (observed ~0.6–0.7). So excess-sourcing yields the *observed* expansion history. **Condition (discharged, Patch 1161):** the GR active mass ρ+3p/c² uses the c08 reduction G_μν = 8πG/c⁴·T_μν[LSP] with the excess as source — now derived (A3′ completes the full Φ⊕V_i⊕Q_ij field equation at λ=16πG/c⁴, zero new parameters; see D2). The ground state is not in the source sum *because* the field equation sources from Δ|SSV| (1107–1108), not by stipulation.
 
-## D2 — The ground-state exclusion is structurally consistent (CONDITIONAL PASS)
+## D2 — The ground-state exclusion holds under the derived field equation (CLOSED, Patch 1161)
 
 The Step-B forward check: does the CPP GR limit exclude ground-state vacuum energy from the gravitating source while keeping the equivalence principle for excess energy? The c08 construction makes this favorable, on four points:
 
@@ -24,7 +27,12 @@ The Step-B forward check: does the CPP GR limit exclude ground-state vacuum ener
 3. **All tested GR is reproduced.** Light-bending, Schwarzschild, perihelion (c05/c07) are all *excess/gradient* regimes — untouched. CPP departs from GR **only** in the uniform-vacuum sector, which is exactly where observation demands the vacuum not gravitate at full strength.
 4. **Conservation is preserved.** The ground state is covariantly constant (uniform, p=−ρ, like a bare Λg_μν), so ∇_μ(T_ground)^μν = 0; subtracting it leaves ∇_μ T_excess^μν = ∇_μ T_full^μν = 0. The Bianchi identity is respected. This is the standard CC renormalization — but with a *physical reason* (gradient-sourcing) for discarding the bare term, rather than a fine-tuned counterterm.
 
-**Condition (the real gap):** this rests on the c08 field-equation reduction itself, which c08 states is a **conjecture** ("not proven") and calls "the central challenge... the one thing that isn't already solved." D2 shows the exclusion is *consistent and favorable* under that reduction; it does not prove the reduction. Falsifier D2-1: if the closed CPP field equation, once derived, sources curvature from absolute |SSV| rather than the LSP perturbation, the ground state gravitates and the picture breaks.
+**Condition — DISCHARGED (Patch 1161).** At Patch 0723 this rested on the c08 field-equation reduction, which c08 itself called a **conjecture** ("the central challenge... the one thing that isn't already solved"). The op:einstein closure has since settled both halves the falsifier D2-1 named:
+
+- **The reduction is derived, not asserted.** The spin-bit axiom **A3′** (axiom-registry; Patches 1121–1130, DG-3 3/3 + architect sign-off) completes the broadcast to LSP′ = Φ ⊕ V_i ⊕ Q_ij — the lattice's full rotationally-protected content (completion theorem; no fourth rung) — and closes c08's field equation `G_μν = 8πG/c⁴·T_μν[LSP]` with `λ = 16πG/c⁴` at **zero new parameters**. The scalar sector D2 uses (|SSV|_abs → g_tt; the active mass ρ+3p/c²) is part of that completed equation, no longer a sketch.
+- **It sources from the excess, not absolute |SSV|.** The shell-sum reduces *exactly* to ∇²(Δ|SSV|): the 600-cell 12-neighbour shell is an icosahedron — a spherical 5-design — so the absolute-|SSV| **monopole Σv̂ = 0 exactly** (the would-be ground-state source term is annihilated by symmetry) and the operator is the isotropic Laplacian **Σv̂⊗v̂ = 4·I** (Patches 1107–1108, grounded in two existing CPP premises: the 12-edge selection rule + c05's directional/gradient response — no new physics).
+
+So points 1–4 above now stand on a *derived* equation whose ground-state exclusion is a *symmetry consequence*. **Falsifier D2-1 is refuted:** the closed CPP field equation, once derived, sources curvature from the LSP perturbation Δ|SSV|, with the absolute-|SSV| term annihilated — the uniform Sea does not gravitate. **Residual honesty cap (not a re-opener):** the 1107–1108 result is exact at leading order (the spherical-5-design guarantees angular moments through degree 5); the degree-6 lattice-anisotropy deviation (~3×10⁻²) is a genuine far-future testable prediction of a tiny directional gravity correction, *irrelevant to the inert-Sea question*. D2 inherits the two 1107–1108 premises, both pre-existing CPP physics. This is a propagation of the review-hardened op:einstein closure, single-pass at the CC-arc level — a multi-AI confirmation that the closure discharges D2 with no gap is the natural next step before the arc's conditional qualifier is removed *as a unit*.
 
 ## D3 — The horizon/w(z) choice is resolved by the dynamics (PASS, opens a refined question)
 
@@ -36,13 +44,14 @@ So dynamical consistency **selects the future event horizon**, resolving Step C'
 
 ## Arc verdict and what it unblocks
 
-- **A survives · B delivered · C partial (scaling+coefficient derived) · D conditional (D1 PASS, D2 conditional PASS, D3 resolved).** The falsification-first sequence is traversed with **no kill**.
-- **CONJ-COSMO-2 (DE↔DM unification): CONDITIONALLY SUPPORTED, not claimed.** One Sea sources both dark energy (uniform-mode residual → event-horizon-scaled Λ) and dark matter (swirl-mode → unsuppressed gradient gravity), via the single gradient-sourcing mechanism, with the standard expansion history recovered. This stands **conditional on**: (1) the c08 field-equation reduction (D2), and (2) the event-horizon selection (D3). Promoting it to a derived result requires closing both.
+- **A survives · B delivered · C partial (scaling+coefficient derived) · D (D1 PASS, D2 CLOSED [Patch 1161], D3 resolved + one refined open question).** The falsification-first sequence is traversed with **no kill**.
+- **CONJ-COSMO-2 (DE↔DM unification): CONDITIONALLY SUPPORTED, not claimed.** One Sea sources both dark energy (uniform-mode residual → event-horizon-scaled Λ) and dark matter (swirl-mode → unsuppressed gradient gravity), via the single gradient-sourcing mechanism, with the standard expansion history recovered. After Patch 1161 this stands **conditional on a single named gap**: (2) the event-horizon selection for the Λ IR scale (D3). Condition (1) — the c08 field-equation reduction — is **discharged** (the equation is derived via A3′ and sources from the excess by 600-cell symmetry; D2). Promoting the unification to a *derived result* now requires closing (2) **and** review-hardening the arc as a unit.
 - **DM Steps 4–5 unblocked (conditionally).** The cosmological background (expansion history, the Sea-vs-matter source split) now *exists* as a coherent structure, so the DM arc's quantitative work (power spectrum, rotation curves) is no longer blocked on a non-existent sector — it proceeds on this conditional foundation.
 
 ## Honest caps
 
-- Step D is a CONDITIONAL capstone, not a theorem. Two real gaps remain (c08 field equation; event-horizon selection). Neither is a kill; both are derivation targets.
+- Step D is now a **one-condition** capstone, not yet a theorem. **One** real gap remains (the event-horizon selection); the c08 field-equation condition is **discharged** (Patch 1161). Neither was a kill; the remaining one is a derivation target.
 - D1's "recovery" is a consistency check (excess-sourcing → standard Friedmann), not a new prediction; the CPP content is *which* energy sources it (excess, not ground state).
 - The dynamical-Λ prediction (evolving w, event-horizon HDE) is a testable departure from w=−1 (current data favor w≈−1 within errors; future surveys constrain it).
-- Everything downstream inherits the Step-B/D2 condition: if the closed field equation gravitates the ground state, the whole residual picture is moot.
+- The D2 discharge is a **propagation** of the review-hardened op:einstein closure (A3′ DG-3 3/3; 1107–1108 computed), not an independent re-derivation; the arc stays **conditionally supported, not confirmed** until the event-horizon condition closes and the arc is review-hardened as a unit.
+- Everything downstream now inherits **only the event-horizon condition (D3)**: the closed, derived field equation does *not* gravitate the ground state (the absolute-|SSV| monopole is annihilated by icosahedral symmetry, 1107–1108), so the residual picture no longer rests on the c08 conjecture.
