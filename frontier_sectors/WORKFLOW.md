@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Workflow / Infrastructure (WORKFLOW) — 1 problem
+## Workflow / Infrastructure (WORKFLOW) — 4 problems
 
 ### OPEN-WORKFLOW-1: Consolidate All Bibliography Files
 **Status:** OPEN
@@ -26,6 +26,43 @@
 **OSF re-deposit determination (13 June 2026):** A central-bib repoint that preserves rendered output does **not** require an OSF update. OSF versions track the scholarly artifact (the paper as read); the CPP convention ties re-deposit to mechanism/main-claim changes (paper-completion-checklist Completion Criterion), not internal build wiring. Because the sampled collisions are same-reference, the rendered bibliography is preserved (modulo trivial formatting like a stray URL — not a content revision). The only papers that would need an OSF touch are any where a *per-series* collision turns out to resolve a citation to a genuinely different work — which is exactly what the per-series classification (above) must confirm before that paper is repointed. Net: for SR-1 + SM-6..10, expected **no OSF re-deposit**; confirm per-paper at remediation by diffing the rendered reference list pre/post.
 **Verification constraint:** step (6) "verify same citation output" requires a clean per-paper recompile; the container cannot reliably compile the legacy papers (SR-1's in-place compile truncated its PDF during the 1149 audit run), so the remediation must run on a machine where each paper compiles — i.e. the dedicated local session, not an in-container sweep.
 **Paper(s):** None (infrastructure)
+**Last updated:** 13 June 2026
+
+---
+
+### OPEN-WORKFLOW-2: Harmonize bibliography DOIs with actual OSF registrations
+**Status:** OPEN (ACTIVE — worksheet handed to Isak, 13 June 2026)
+**Sector(s):** Infrastructure / Publication
+**Priority:** HIGH
+**One-line statement:** The master bib asserts the *umbrella* project DOI `10.17605/OSF.IO/JXE8D` for 17 CPP self-citations (+2 in note) and no DOI for 12 — most are wrong, because CPP stopped using the single open registration (after a problem with it) and now registers most papers individually. Replace each entry's DOI with the paper's real OSF DOI; keep the umbrella only for the 6–8 genuine open-project files; for unregistered papers **strip** the wrong DOI and mark "deposit pending" (do **not** fabricate).
+**Why it matters:** A wrong DOI is worse than none — it misdirects a reader/reviewer chasing a citation. For a validation-first programme, false provenance on shipped papers is a self-inflicted credibility wound. The 1153–1159 consolidation makes this fixable in **one file** (master) instead of 12 scattered bibs.
+**What a solution looks like:** (1) fill `bibliography/doi_harmonization_worksheet.csv` (real DOI per `bib_key`; `Y` on the 6–8 open-project rows); (2) automate the join into master (Isak — Claude Code GitHub↔OSF method); (3) per the README rule: `REAL_DOI` → set `doi` + note `\url`; `KEEP_UMBRELLA=Y` → unchanged; both blank → strip DOI + note "deposit pending"; (4) re-run `scripts/publication_audit.sh <ID>` per paper.
+**Artifacts (13 June 2026):** `doi_harmonization_worksheet.csv` (31 rows) + `DOI_HARMONIZATION_README.md`, handed to Isak.
+**Paper(s):** All shipped CPP papers (DOI fields only)
+**Last updated:** 13 June 2026
+
+---
+
+### OPEN-WORKFLOW-3: OSF-snapshot the theorem registry at each campaign close
+**Status:** OPEN (locking mechanism to adopt)
+**Sector(s):** Infrastructure / Publication
+**Priority:** MEDIUM
+**One-line statement:** Lock the registry-only theorems (those not proved inline in a shipped paper) by depositing a **versioned snapshot of `theorem-registry.md`** on OSF at each campaign close — citable as "THEO-X, CPP Theorem Registry v.Y, DOI…" — instead of promoting each theorem to a standalone companion paper.
+**Background (load-bearing test, 13 June 2026):** Ran the promotion test across all 108 THEO ids. Only 13 have a standalone `.tex`; only 5 are referenced in a shipped paper — and **all 5 are proved *inline* in their own parent** (THEO-SR-EIN-1..4 inside SR-2; THEO-SM-5 inside SM-5), i.e. already published + OSF-frozen via the parent. **Zero theorems are both load-bearing and homeless**, so a per-theorem promotion campaign would only *duplicate* already-frozen content (two citable versions, divergent DOIs — strictly worse). The genuine gap is that the ~90 registry-only theorems aren't themselves snapshotted.
+**What a solution looks like:** (1) set cadence = each campaign close; (2) deposit `theorem-registry.md` as a versioned OSF document (one DOI); (3) adopt the "THEO-X, Registry v.Y, DOI" citation form; (4) add a registry-snapshot step to the §15 session-/campaign-close protocol.
+**Paper(s):** None (registry artifact)
+**Last updated:** 13 June 2026
+
+---
+
+### OPEN-WORKFLOW-4: Chirality companion series (publish-time task)
+**Status:** OPEN (deferred to chirality-arc publication)
+**Sector(s):** Substrate Chirality Arc / Publication
+**Priority:** LOW (until the arc ships)
+**One-line statement:** The 11 chirality-arc theorems (`THEO-CHIR-*` + `THEO-CAP-1`) already exist as standalone `theo_chir_*.tex` documents but are cited in no shipped paper (they're internal to the as-yet-unshipped chirality arc). When that arc reaches publication, register them as the **chirality companion series** — one series registration / DOI, mirroring the ~20-paper SR-companion model — and add master bib entries.
+**Background:** Surfaced by the 13 June 2026 load-bearing test as the only theorem cluster with standalone documents but no shipped-paper home. They are already written, so promotion is a registration + bib-entry job, not a writing job — hence deferrable to publish time with no rot.
+**What a solution looks like:** at chirality-arc publication — (1) one OSF companion-series registration; (2) master bib entries (deposit-pending until registered); (3) remap any internal citations to the canonical keys.
+**Paper(s):** Substrate chirality arc (companion set)
 **Last updated:** 13 June 2026
 
 ---
