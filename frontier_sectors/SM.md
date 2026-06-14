@@ -43,9 +43,9 @@
 **What a solution looks like:** Exact overlap fractions |G_i ∩ G_j|/|G_i| for all pairs, with normalisation derived (not fitted), matching NuFIT to 3–4 digits.
 **Dependencies:** OPEN-SM-4 (Capotauro — needed for θ₁₃ and δ_CP)
 **Cross-sector connections:** OPEN-G-1, lepton series
-**Current best lead:** MC results match NuFIT to 3–4 digits; normalisation currently fitted. Subgroup overlap analysis: sin²θ₁₂ = 12/40 = 0.300, sin²θ₂₃ = 12/21 ≈ 0.571.
+**Current best lead:** MC results match NuFIT to 3–4 digits; normalisation currently fitted. Subgroup overlap analysis: sin²θ₁₂ = 12/40 = 0.300, sin²θ₂₃ = 12/21 ≈ 0.571. **(Patch 1209 SF-2-campaign assessment — `flagship_papers/electroweak/review/C7_PMNS_normalization_closure_route.md`):** sin²θ₁₂ = 0.300 is on a JUNO *falsification* trajectory — JUNO 2025 first result gives sin²θ₁₂ = 0.3092 ± 0.0087 (1.06σ from 0.300 now → ~3σ at JUNO ultimate precision σ ≈ 0.003); 21 ∤ |H₄| = 14400, so 12/21 cannot be a clean overlap fraction |G_i ∩ G_j|/|G_i| (structural confirmation the normalisation is fitted, not derived); and sin²θ₂₃ is a DUNE/T2HK atmospheric target, not a JUNO observable. **Gate before any group-theoretic closure:** test whether the stabiliser-overlap construction *forces* 0.300 (→ falsification risk) or can flex toward JUNO's central 0.309 (→ viable). Until then the OPEN-SM-5 θ₁₂ value is HIGH-RISK for external-validation use.
 **Paper(s):** SM Paper 2
-**Last updated:** 23 March 2026
+**Last updated:** 13 June 2026 (Patch 1211 — SF-2-campaign assessment appended: JUNO-2025 falsification-trajectory + Lagrange-21 diagnostic + lock-to-0.300 gate, from the Patch-1209 C7 route map; original analytic-derivation lead 23 March 2026 unchanged)
 
 ---
 
