@@ -50,7 +50,7 @@
 \title{\textbf{SF-1: The Charged-Lepton Sector from 600-Cell Geometry}\\[6pt]
 {\large Koide $K=2/3$, the Koide Phase, and the Mass Spectrum from a Single Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 0.3 --- 14 June 2026}}}
+{\Large \textbf{Version 1.0 SHIPPED --- 14 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -287,7 +287,7 @@ The electron mass is the calibration input; $m_\mu$ and $m_\tau$ are outputs. Ta
 \toprule
 Quantity & CPP & Experiment & Agreement \\
 \midrule
-$\sinsqthetaW$ (intermediate) & $3/(8\phig) \approx 0.2318$ & $0.23121$ & 0.24\% \\
+$\sinsqthetaW$ (intermediate)$^\ddagger$ & $3/(8\phig) \approx 0.2318$ & $0.23121$ & 0.24\% \\
 Koide $K$ & $2/3$ (exact) & 11~ppm consistency & exact$^\dagger$ \\
 Koide phase $\theta$ & $132.731^\circ$ & $132.732^\circ$ & 0.003\% \\
 $m_\mu$ & $105.47$~MeV & $105.66$~MeV & 0.18\% \\
@@ -296,7 +296,8 @@ $m_\tau$ & $1774.1$~MeV & $1776.9$~MeV & 0.15\% \\
 \end{tabular}
 
 \smallskip
-{\footnotesize $^\dagger$ Exact under premises P1--P3; the one Layer-B premise (P3) is inherited as OPEN-FP-1-P3, empirically harmless at $\sim 10^{-20}$.}
+{\footnotesize $^\dagger$ Exact under premises P1--P3; the one Layer-B premise (P3) is inherited as OPEN-FP-1-P3, empirically harmless at $\sim 10^{-20}$.\\
+$^\ddagger$ The Weinberg angle is an \emph{intermediate} lattice result (Section~\ref{sec:weinberg}), not a charged-lepton observable; it is listed here because it feeds the phase derivation.}
 \end{table}
 
 % ============================================================
@@ -305,9 +306,12 @@ $m_\tau$ & $1774.1$~MeV & $1776.9$~MeV & 0.15\% \\
 \section{Calibration Ledger and Open Inheritances}
 \label{sec:ledger}
 
-\paragraph{Calibration.} One constant: $m_e$, equivalently the rest-state SSV energy $\SSV_0 = m_e c^2/2$. \textbf{Zero shape parameters.} SF-1 is the cleanest single-$m_e$ sector in the corpus. The two calibration caveats that appear elsewhere in the programme do \emph{not} apply here: there is no $m_c$ quark-route ambiguity (that is a quark-sector issue) and no boson-mass dilution factor $\eta$ (that is an electroweak-sector issue). The charged-lepton sector is therefore the strongest single-calibration anchor for the SF-line's ``hierarchy without hierarchy'' claim: the full charged-lepton spectrum, spanning three orders of magnitude, from one mass plus geometry.
+\paragraph{Calibration.} One constant: $m_e$, equivalently the rest-state SSV energy $\SSV_0 = m_e c^2/2$. \textbf{Zero shape parameters.} SF-1 is the corpus's least-encumbered single-$m_e$ sector. The two calibration caveats that appear elsewhere in the programme do \emph{not} apply here: there is no $m_c$ quark-route ambiguity (that is a quark-sector issue) and no boson-mass dilution factor $\eta$ (that is an electroweak-sector issue). The charged-lepton sector is therefore the strongest single-calibration anchor for the SF-line's ``hierarchy without hierarchy'' claim: the full charged-lepton spectrum, spanning three orders of magnitude, from one mass plus geometry.
 
-\paragraph{Inherited-open.} \textbf{OPEN-FP-1-P3} --- the Layer-B thermal-equilibration premise of Section~\ref{sec:k3} (the Caldeira--Leggett system--bath model behind equal $\Kthree$-eigenstate occupation). Empirically harmless ($\Delta K \sim 10^{-20}$); resolution path SS-4. Inherited, not closed.
+\paragraph{Inherited-open.}
+\begin{mdframed}
+\noindent\textbf{OPEN-FP-1-P3 --- inherited, not closed.} The Layer-B thermal-equilibration premise of Section~\ref{sec:k3} (the Caldeira--Leggett system--bath model behind equal $\Kthree$-eigenstate occupation). Empirically harmless ($\Delta K \sim 10^{-20}$, nine orders below the 11~ppm precision); resolution path SS-4. SF-1 \emph{inherits} this premise and does not close it.
+\end{mdframed}
 
 \paragraph{Scope boundary.} The $\Kthree$ theorem applies to \textbf{leptons only}. Quarks carry strong-sector contributions that break the Koide relation by 10--27\%, so the same machinery is expected --- and required, as a falsifier --- to fail for quarks. This boundary is what cleanly separates SF-1 from the quark-sector flagship: the charged-lepton sector is the regime in which the bare $\Kthree$ result is exact precisely because the colour cage contributes nothing.
 
@@ -376,7 +380,7 @@ A fifth, structural falsifier is the scope boundary itself: the framework \emph{
 \section{Discussion: Placement in the SF-Line Unification}
 \label{sec:discussion}
 
-SF-1 is the first of the four remaining sector flagships to ship, and it is deliberately the cleanest. Its role in the grand-unification synthesis (SF-7) is twofold: it establishes the ``one number $\to$ a sector'' rhetoric on the corpus's least-encumbered example, and it seeds two cross-sector consistency members of the SF-7 §10 family.
+SF-1 is the first of the four remaining sector flagships to ship, and it is deliberately the least-encumbered. Its role in the grand-unification synthesis (SF-7) is twofold: it establishes the ``one number $\to$ a sector'' rhetoric on the corpus's least-encumbered example, and it seeds two cross-sector consistency members of the SF-7 §10 family.
 
 \paragraph{SF-1 $\leftrightarrow$ SF-2 (shared $\sinsqthetaW$).} The Weinberg angle $\sinsqthetaW = 3/(8\phig)$ derived here as the spectral-trace mode fraction (Section~\ref{sec:weinberg}) is the same object the electroweak flagship inherits for the $W/Z$ mass ratio. The consistency clause is that both sectors source $\sinsqthetaW$ from the identical $\Tr(A^2){:}\tfrac13\Tr(A^3)$ structure with no independent calibration --- a zero-parameter coherence check across two flagships.
 
@@ -395,7 +399,7 @@ The charged-lepton sector --- the Koide relation $K=2/3$, the Koide phase $\thet
 \subsection{Swarm-Validation Contribution}
 \label{sec:swarm}
 
-SF-1 contributes, as a single-calibration consolidation, four charged-lepton-sector zero-parameter empirical correspondences --- the Koide ratio $K$, the phase $\theta$, and the masses $m_\mu, m_\tau$ --- together with the intermediate Weinberg-angle correspondence $\sinsqthetaW = 3/(8\phig)$, all from one calibration ($m_e$) and zero shape parameters. These correspondences are already carried in the programme's running total under their originating SM-3/4/6 identifiers; SF-1's distinct contribution to the swarm is the demonstration that they cohere under a \emph{single} calibration with no sector-internal double-counting --- the cleanest such demonstration in the corpus, and the template the three remaining predecessors follow. The cumulative zero-parameter correspondence count across the programme, derived from the unchanged axiom stack, is maintained in \texttt{predictions.md}; the implausibility of accident scales as $(\text{residual band}/\text{parameter space})^N$ in the swarm size $N$ and is, at the present size, extremely small under the programme's correspondence-counting framework. The charged-lepton sector strengthens that argument specifically by removing every shape parameter: a sector reproduced from one number cannot be accounted for by hidden tuning of shape degrees of freedom it does not contain.
+SF-1 contributes, as a single-calibration consolidation, four charged-lepton-sector zero-parameter empirical correspondences --- the Koide ratio $K$, the phase $\theta$, and the masses $m_\mu, m_\tau$ --- together with the intermediate Weinberg-angle correspondence $\sinsqthetaW = 3/(8\phig)$, all from one calibration ($m_e$) and zero shape parameters. These correspondences are already carried in the programme's running total under their originating SM-3/4/6 identifiers; SF-1's distinct contribution to the swarm is the demonstration that they cohere under a \emph{single} calibration with no sector-internal double-counting --- the most parameter-economical such demonstration in the corpus, and the template the three remaining predecessors follow. The cumulative zero-parameter correspondence count across the programme, derived from the unchanged axiom stack, is maintained in \texttt{predictions.md}; the implausibility of accident scales as $(\text{residual band}/\text{parameter space})^N$ in the swarm size $N$ and is, at the present size, extremely small under the programme's correspondence-counting framework. The charged-lepton sector strengthens that argument specifically by removing every shape parameter: a sector reproduced from one number cannot be accounted for by hidden tuning of shape degrees of freedom it does not contain.
 
 \subsection{Problem Status After This Paper}
 \label{sec:status}
