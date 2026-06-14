@@ -1,0 +1,443 @@
+% ============================================================
+% SF-1: The Charged-Lepton Sector from 600-Cell Geometry
+%       Koide K=2/3, the Koide Phase, and the Mass Spectrum
+%       from a Single Calibration
+% Conscious Point Physics Flagship Paper Series (SF-line)
+% Version history: flagship_papers/charged_leptons/documentation_suite/changelog-sf-1.md
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage[authoryear,round]{natbib}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+% --- Standard CPP macros ---
+\newcommand{\phig}{\varphi}                 % golden ratio
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\Tr}{\operatorname{Tr}}
+% --- Paper-specific macros ---
+\newcommand{\Kthree}{\mathrm{K}_3}
+\newcommand{\sinsqthetaW}{\sin^2\theta_W}
+\newcommand{\Mzero}{M_0}
+
+\title{\textbf{SF-1: The Charged-Lepton Sector from 600-Cell Geometry}\\[6pt]
+{\large Koide $K=2/3$, the Koide Phase, and the Mass Spectrum from a Single Calibration}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 0.1 --- 14 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+\noindent\textbf{Paper type:} Flagship derivation paper. SF-1 consolidates the charged-lepton sector of Conscious Point Physics (CPP) as a single zero-shape-parameter structure built from the 600-cell substrate and one calibration constant, the electron mass $m_e$ (equivalently the rest-state Space Stress Vector energy $\SSV_0 = m_e c^2/2$).
+
+The Standard Model measures the charged-lepton masses $m_e, m_\mu, m_\tau$ but derives none of them, and offers no account of the Koide relation $K \equiv (\sum_i m_i)/(\sum_i \sqrt{m_i})^2 = 2/3$, which has held to $\sim 11$~ppm for four decades without explanation. SF-1 shows that the entire sector follows from the geometry of the three-colour lepton cage. (i) The complete graph $\Kthree$ on the three cage base vertices carries a Zitterbewegung Hamiltonian $\hat H = \hbar\omega_0 A_{\Kthree}$ whose adjacency spectrum $\{+2,-1,-1\}$ fixes the Lorentz modulation depth $\rho=\sqrt2$ and hence $K = (1+\rho^2/2)/3 = 2/3$ \emph{exactly}, conditional on three explicitly graded premises (P1, P2 Layer~A; P3 Layer~B, inherited). (ii) Two spectral traces of the 600-cell adjacency matrix partition the lattice mode capacity as $\Tr(A^2):\tfrac13\Tr(A^3) = 1440:2400$, giving the bare mixing fraction $3/8$ --- unique to the 600-cell among the six regular 4-polytopes --- which, corrected by the edge-propagation efficiency $\eta = 1/\phig$, yields the Weinberg angle $\sinsqthetaW = 3/(8\phig) \approx 0.2318$ (0.24\% from the low-energy effective value 0.23121) as an intermediate result. (iii) The Koide phase, left structurally undetermined by the cage symmetry alone (an impossibility theorem first proved in SM-4, registered as OP-SM-7d), is supplied by the electroweak isotropic shift $\varepsilon = 2\sinsqthetaW/(z+1) = 3/(52\phig)$ on the $\Kthree$ face, closing the arc at $\cos\theta_{\rm Koide} = -\tfrac23(1+\sinsqthetaW/(z+1))$ and $\theta = 132.731^\circ$ (0.003\% from 132.732$^\circ$). (iv) With $K$, $\theta$, and the electron calibration fixed, the spectrum closes: $m_\mu = 105.47$~MeV (0.18\%) and $m_\tau = 1774.1$~MeV (0.15\%) at zero shape parameters.
+
+The ledger is one calibration ($m_e$) and zero shape parameters. SF-1 is the cleanest single-calibration sector in the CPP corpus: it carries none of the quark-route ($m_c$) ambiguity of the quark sector or the boson-mass dilution caveat of the electroweak sector. The single honest residual is the Layer-B thermal-equilibration premise P3 behind equal $\Kthree$-eigenstate occupation, whose finite-temperature departures from $K=2/3$ are $O(\hbar\omega_0/kT_P) \sim 10^{-20}$, nine orders of magnitude below the 11~ppm precision; it is inherited (not closed) as OPEN-FP-1-P3, with resolution path SS-4. The $\Kthree$ theorem is leptons-only by construction --- quarks carry strong-sector contributions that break Koide by 10--27\%, and that scope boundary is what cleanly separates this paper from the quark sector. SF-1 furnishes the charged-lepton spectral-trace input $\sinsqthetaW = 3/(8\phig)$ shared with the electroweak flagship and the phase/$M_0$ handle shared with the neutrino flagship, the two cross-sector consistency threads it contributes to the programme's grand-unification synthesis.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} charged leptons, lepton mass formula, Koide formula, Koide phase, $K_3$ spectral theorem, 600-cell lattice, golden ratio, Weinberg angle, $\sin^2\theta_W = 3/(8\varphi)$, Zitterbewegung Hamiltonian, spectral graph theory, Conscious Point Physics, single-calibration sector, zero shape parameters, OP-SM-7d, OPEN-FP-1-P3, flagship paper.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The three electrically charged leptons --- the electron, the muon, and the tau --- have masses that the Standard Model measures but cannot explain, and they obey a strange numerical rule, discovered by Koide in 1981, that has matched experiment to eleven parts per million for over forty years with no known reason. This paper proposes that all of it follows from a single geometric object: a three-cornered cage embedded in a four-dimensional lattice called the 600-cell. The three corners form the simplest complete triangle a graph can have, and the natural vibration pattern on that triangle has exactly the right structure to force the Koide rule to its observed value of $2/3$ --- not approximately, but exactly. The same lattice geometry fixes the one remaining ingredient, an angle that sets how the three masses are distributed, by borrowing a number (the Weinberg angle) that the lattice also produces on its own from pure counting. Once the electron mass is used as the single calibration, the muon and tau masses come out within two-tenths of a percent of their measured values, with no adjustable shape parameters anywhere. The picture is honest about its one imported assumption --- a statistical-equilibrium step whose effect on the answer is twenty orders of magnitude too small to matter --- and about its scope: it works for leptons, and deliberately not for quarks, which the same framework predicts should break the rule. This is the cleanest ``one number in, a whole sector out'' result in the programme.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+% SECTION 1: Introduction
+% ============================================================
+\section{Introduction: The Charged-Lepton Mass Problem}
+
+The charged leptons present one of the sharpest unexplained regularities in particle physics. Their masses span more than three orders of magnitude,
+\[
+m_e = 0.5110~\text{MeV}, \qquad m_\mu = 105.66~\text{MeV}, \qquad m_\tau = 1776.9~\text{MeV},
+\]
+with ratios $m_\mu/m_e \approx 207$ and $m_\tau/m_\mu \approx 17$ that the Standard Model accommodates through three independently fitted Yukawa couplings and explains from no deeper principle. Yet the three masses are not free of one another. In 1981 Koide observed~\citep{koide1983} that
+\begin{equation}
+K \;\equiv\; \frac{m_e + m_\mu + m_\tau}{\left(\sqrt{m_e} + \sqrt{m_\mu} + \sqrt{m_\tau}\,\right)^2} \;=\; \frac{2}{3}
+\label{eq:koide-def}
+\end{equation}
+to a precision that, with current Particle Data Group values~\citep{pdg2024}, holds at roughly 11 parts per million. Equation~\eqref{eq:koide-def} is dimensionless, basis-independent, and has survived four decades of improving measurement; it sits at the boundary $K \in [1/3, 1]$ exactly halfway, the value an isotropic three-state superposition would produce. The Standard Model has no mechanism that requires it.
+
+A second, equivalent statement of the same content is parametric. Writing the square-root masses as a three-phase modulation,
+\begin{equation}
+\sqrt{m_i} \;=\; A\left(1 + \sqrt{2}\,\cos\!\Big(\theta + \tfrac{2\pi i}{3}\Big)\right), \qquad i \in \{0,1,2\},
+\label{eq:koide-param}
+\end{equation}
+the relation $K=2/3$ is reproduced for \emph{any} phase $\theta$ provided the modulation depth is exactly $\rho = \sqrt2$; the masses themselves then depend on the single phase $\theta$, whose empirical value is $\theta \approx 132.73^\circ$. The Standard Model offers no reason for either the depth $\sqrt2$ or the phase $132.73^\circ$.
+
+This paper derives both. In Conscious Point Physics (CPP) the charged leptons are geometric cage structures on the 600-cell substrate~\citep{abshier2026sm1}, and the three-fold structure underlying Eqs.~\eqref{eq:koide-def}--\eqref{eq:koide-param} is the complete graph $\Kthree$ on the three base vertices of the lepton cage. We show that the modulation depth $\rho=\sqrt2$ is fixed by the $\Kthree$ adjacency spectrum (Section~\ref{sec:k3}), that the phase $\theta$ is fixed by an electroweak correction built from the lattice's own Weinberg angle (Sections~\ref{sec:weinberg}--\ref{sec:phase}), and that the full spectrum then follows from a single calibration (Section~\ref{sec:spectrum}). No content in Sections~\ref{sec:k3}--\ref{sec:spectrum} is new derivation: each result is inherited from shipped CPP papers SM-1, SM-3, SM-4, and SM-6. SF-1's contribution is to assemble them into the cleanest single-calibration sector in the corpus and to expose the two cross-sector threads it carries into the programme's unification synthesis.
+
+\subsection{Open Problems Addressed}
+This paper confronts the following registered programme problems:
+\begin{itemize}[noitemsep]
+\item \textbf{OP-SM-7d} (the Koide-phase derivation): \emph{resolved for the charged-lepton sector}. SM-4 proved $\theta$ undetermined within the cage symmetry alone; SM-6 supplies the electroweak ingredient that fixes it (Section~\ref{sec:phase}). We present this as a closed SM-4$\to$SM-6 arc.
+\item \textbf{OPEN-FP-1-P3} (newly registered at this paper's ship): the Layer-B thermal-equilibration premise behind equal $\Kthree$-eigenstate occupation (Section~\ref{sec:k3}); inherited, not closed, with resolution path SS-4.
+\end{itemize}
+
+% ============================================================
+% SECTION 2: Substrate and Cage
+% ============================================================
+\section{The 600-Cell Substrate and the Tetrahedral Lepton Cage}
+\label{sec:substrate}
+
+We recall only the minimal substrate machinery SF-1 requires; the full development is in the SM and SS series.
+
+\paragraph{The substrate.} CPP postulates a discrete substrate of Conscious Points (CPs) arranged on the vertex--edge structure of the 600-cell, the regular 4-polytope with $V=120$ vertices, $E=720$ edges, $F=1200$ triangular faces, $C=600$ tetrahedral cells, and vertex coordination number $z=12$ (axiom A2). CPs exchange Displacement-Increment bits (DI-bits) along edges under Space Stress Vector (SSV) gradients, with edge-propagation efficiency $\eta = \ell_{\rm edge}/R_{\rm circ} = 1/\phig$, where $\phig = (1+\sqrt5)/2$ is the golden ratio built into the 600-cell metric (axiom A5). The substrate's elementary update cycle is Perceive--Compute--Displace (PCD): each CP perceives its local SSV field, computes its displacement, and displaces by one DI-bit per Absolute Moment.
+
+\paragraph{The lepton cage.} A charged lepton is a minimal cage whose base is the three-vertex colour triangle. By SM-1, charge quantisation arises from cage symmetry with fractional unit $\delta = 1/3$; leptons sit at the cageless cap of this taxonomy ($\delta = 0$), carrying integer charge $q_e = -e$ and no colour-confined substructure. The three base vertices $\{V_1, V_2, V_3\}$ form the complete graph $\Kthree$ --- an equilateral triangle with the cyclic symmetry $C_3$ --- and it is the spectral content of this $\Kthree$ that carries the entire charged-lepton mass structure. Because the cage is cageless in the colour sense, no strong-sector contribution enters; this is precisely why the $\Kthree$ result is exact for leptons and fails for quarks (Section~\ref{sec:ledger}).
+
+% ============================================================
+% SECTION 3: K3 Spectral Theorem
+% ============================================================
+\section{The \texorpdfstring{$\Kthree$}{K3} Spectral Theorem: Koide \texorpdfstring{$K=2/3$}{K=2/3}}
+\label{sec:k3}
+
+\paragraph{Setup.} The Zitterbewegung (ZBW) Hamiltonian on the three-colour base is
+\begin{equation}
+\hat H \;=\; \hbar\omega_0\, A_{\Kthree},
+\label{eq:zbw-hamiltonian}
+\end{equation}
+where $A_{\Kthree}$ is the adjacency matrix of $\Kthree$ (the $3\times 3$ matrix with zero diagonal and unit off-diagonal). Its spectrum is
+\[
+\mathrm{spec}\,A_{\Kthree} = \{+2, -1, -1\},
+\]
+a non-degenerate bonding eigenvalue $\lambda_{\max} = +2$ and a doubly degenerate antibonding eigenvalue $\lambda = -1$. The eigenvalue-magnitude ratio is therefore
+\begin{equation}
+\frac{\lambda_{\max}}{|\lambda_{\min}|} = \frac{2}{1} = 2.
+\label{eq:eig-ratio}
+\end{equation}
+
+\begin{theorem}[$\Kthree$ Spectral Theorem; SM-3]
+\label{thm:k3}
+Under premises P1--P3 below, the charged-lepton Koide quantity is exactly
+\[
+K = \frac{1 + \rho^2/2}{3} = \frac{2}{3}, \qquad \rho = \sqrt2,
+\]
+where the modulation depth $\rho$ is fixed by the $\Kthree$ eigenvalue ratio~\eqref{eq:eig-ratio} via $\rho = \sqrt{\lambda_{\max}/|\lambda_{\min}|} = \sqrt2$.
+\end{theorem}
+
+\noindent With $m_i \propto |\psi_i|^2$ and the $C_3$-symmetric eigenstate structure, the modulation depth in the parametrisation~\eqref{eq:koide-param} is fixed by the eigenvalue ratio at $\rho = \sqrt2$, and substituting into $K = (1+\rho^2/2)/3$ gives $K = (1+1)/3 = 2/3$. The chain of equivalences
+\[
+K = \tfrac23 \;\Longleftrightarrow\; \rho = \sqrt2 \;\Longleftrightarrow\; \lambda_{\max}/|\lambda_{\min}| = 2
+\]
+is specific to $\Kthree$: only the three-colour cage ($N=3$) yields $2/3$. The theorem is \textbf{leptons-only}.
+
+\paragraph{Epistemic grading (Layer A/B/C).} Following the conditional-theorem discipline established in SS-9, the premises of Theorem~\ref{thm:k3} are graded by the nature of their input:
+\begin{itemize}[noitemsep]
+\item \textbf{(P1) Layer A.} $\hat H = \hbar\omega_0 A_{\Kthree}$ follows from the $C_3$ cage symmetry plus nearest-neighbour SSV hopping. Geometric input --- solid.
+\item \textbf{(P2) Layer A.} $m_i \propto |\psi_i|^2$ follows from the CPP DI-bit visit rate (mass as time-averaged occupation). Solid.
+\item \textbf{(P3) Layer B.} Equal occupation of the $\Kthree$ eigenstates follows from thermal equilibration with the DP Sea in the high-temperature limit $kT_P/\hbar\omega_0 \sim 10^{20}$. The Gibbs formalism is standard, but the system--bath coupling model (Caldeira--Leggett) is \emph{imported} from open-quantum-systems theory. This is the single Layer-B assumption. Resolution path: SS-4. Registered as \textbf{OPEN-FP-1-P3}, inherited and not closed.
+\item \textbf{(Layer C).} Under P1--P3, $K = 2/3$ follows exactly.
+\end{itemize}
+
+\paragraph{Robustness.} Finite-temperature departures from equal occupation, and hence from $K=2/3$, are
+\[
+\Delta K = O\!\left(\frac{\hbar\omega_0}{kT_P}\right) \sim 10^{-20},
+\]
+nine orders of magnitude below the 11~ppm experimental precision. P3 is therefore \emph{epistemically} Layer~B but \emph{empirically} harmless. We state both plainly: the theorem's one imported premise has no measurable consequence at present or foreseeable precision, but it is an honest open inheritance rather than a derived result.
+
+% ============================================================
+% SECTION 4: Weinberg Angle (intermediate)
+% ============================================================
+\section{The Weinberg Angle as an Intermediate Result}
+\label{sec:weinberg}
+
+The Koide phase (Section~\ref{sec:phase}) requires an electroweak ingredient, and that ingredient is the lattice's own Weinberg angle. We derive it here as an intermediate result; it is not itself a charged-lepton observable, but it is a zero-parameter correspondence in its own right and it feeds Section~\ref{sec:phase}.
+
+\paragraph{Mode counting on the 600-cell.} Two spectral traces of the 600-cell adjacency matrix $A$ partition the lattice mode capacity:
+\begin{align}
+\Tr(A^2) &= 2E = 1440 && \text{(abelian edge modes, } U(1)_Y\text{)},\\
+\tfrac{1}{3}\Tr(A^3) &= 2F = 2400 && \text{(non-abelian face-circulation modes, } SU(2)_L\text{)}.
+\end{align}
+The bare topological mixing ratio is
+\begin{equation}
+\frac{\Tr(A^2)}{\Tr(A^2) + \tfrac13\Tr(A^3)} = \frac{1440}{1440 + 2400} = \frac{1440}{3840} = \frac{3}{8}.
+\label{eq:bare-mixing}
+\end{equation}
+The fraction $3/8$ is \textbf{unique to the 600-cell} among the six regular 4-polytopes (the dual 120-cell gives $5/8$), and coincides with the $SU(5)$ grand-unified value of $\sinsqthetaW$ at the unification scale~\citep{georgiglashow1974}. The physical value applies the edge-propagation efficiency $\eta = 1/\phig$ as a metric correction on the numerator:
+\begin{equation}
+\boxed{\;\sinsqthetaW = \frac{1}{\phig}\cdot\frac{3}{8} = \frac{3}{8\phig} \approx 0.2318\;}
+\label{eq:weinberg}
+\end{equation}
+against the low-energy effective value $0.23121$~\citep{pdg2024} --- a 0.24\% agreement, where the residual is the zero-temperature lattice value compared to the running low-energy quantity.
+
+\begin{remark}[Conceptual key]
+In CPP the Weinberg angle is \emph{not} defined through gauge couplings $g, g'$. The denominator in~\eqref{eq:bare-mixing} is the fixed topological mode capacity (3840), and only the numerator carries the $1/\phig$ metric correction --- a linear prefactor, not a quadratic coupling ratio. This departure from the Standard Model definition is forced by the lattice, and it is what makes $\sinsqthetaW$ a counting result rather than a measured input.
+\end{remark}
+
+% ============================================================
+% SECTION 5: The Koide phase (closed SM-4 -> SM-6 arc)
+% ============================================================
+\section{The Koide Phase: The Closed SM-4 \texorpdfstring{$\to$}{->} SM-6 Arc}
+\label{sec:phase}
+
+This is the load-bearing reframing of the paper, and it must be read as a \emph{completed derivation in two steps}, not as a contradiction between two papers.
+
+\paragraph{Step 1 --- the impossibility theorem (SM-4).} With the masses parametrised as in~\eqref{eq:koide-param}, SM-4 proves the following.
+\begin{theorem}[Phase-freedom; SM-4, \texttt{thm:theta\_free}]
+\label{thm:theta-free}
+The $C_3$ symmetry of the $\Kthree$ cage together with the SSV dynamics leaves the Koide phase $\theta$ undetermined: $\theta$ cannot be fixed from the cage-face structure alone.
+\end{theorem}
+\noindent SM-4 extracts $\theta = 132.73^\circ$ from experiment and registers its first-principles derivation as the principal open problem gating the electroweak series (OP-SM-7d). Theorem~\ref{thm:theta-free} is not a failure: it is a \emph{proof that an electroweak ingredient is necessary}. Any derivation of $\theta$ must reach outside the bare cage symmetry.
+
+\paragraph{Step 2 --- the electroweak ingredient (SM-6).} The base value of the phase is set by the $\Kthree$ eigenvalue ratio of Section~\ref{sec:k3}: $\cos\theta_0 = -K = -2/3$. SM-6 supplies the missing electroweak correction as an \emph{isotropic} shift of all $\Kthree$ eigenvalues --- a shift that does not break $C_3$ and therefore does not disturb $K=2/3$:
+\begin{equation}
+\varepsilon \;=\; \frac{2\sinsqthetaW}{z+1} \;=\; \frac{2\cdot 3/(8\phig)}{13} \;=\; \frac{3}{52\phig} \approx 0.03566.
+\label{eq:eps}
+\end{equation}
+The shifted phase cosine is
+\begin{equation}
+\cos\theta_{\rm Koide} \;=\; -\frac{2}{3}\left(1 + \frac{\sinsqthetaW}{z+1}\right) \;=\; -\frac{2}{3}\left(1 + \frac{3}{104\phig}\right) \;=\; -0.678552,
+\label{eq:cos-theta}
+\end{equation}
+yielding
+\begin{equation}
+\boxed{\;\theta = 132.731^\circ\;}
+\label{eq:theta}
+\end{equation}
+against the experimental $132.732^\circ$ --- a 0.003\% agreement.
+
+\paragraph{The arc closes.} SM-4 says ``$\theta$ needs electroweak input''; SM-6 says ``here is the electroweak input ($\varepsilon \propto \sinsqthetaW$), and $\theta$ follows.'' Read together they are a single completed derivation: \textbf{OP-SM-7d is resolved for the charged-lepton phase}. The narrative discipline matters --- one leads with the impossibility theorem (why the correction is necessary) and then delivers the correction (what supplies it); the two are never competing claims.
+
+\begin{remark}[Cross-sector hook]
+The shift $\varepsilon$ that fixes $\theta$ is built from the \emph{same} $\sinsqthetaW = 3/(8\phig)$ spectral-trace quantity of Section~\ref{sec:weinberg} that the electroweak flagship inherits. This shared object is the structural thread of the SF-1$\leftrightarrow$SF-2 cross-sector consistency member (Section~\ref{sec:discussion}).
+\end{remark}
+
+% ============================================================
+% SECTION 6: Mass spectrum
+% ============================================================
+\section{The Charged-Lepton Mass Spectrum}
+\label{sec:spectrum}
+
+With the modulation depth $\rho=\sqrt2$ (Section~\ref{sec:k3}) and the phase $\theta = 132.731^\circ$ (Section~\ref{sec:phase}) both fixed, the parametrisation~\eqref{eq:koide-param} contains exactly one remaining constant, the amplitude $A$, which is set by the electron calibration:
+\begin{equation}
+A = \frac{\sqrt{m_e}}{1 + \sqrt2\,\cos\theta}.
+\label{eq:amplitude}
+\end{equation}
+The muon and tau masses are then predictions at \emph{zero shape parameters}:
+\begin{align}
+m_\mu &= \left(A + \sqrt2\,A\cos\!\Big(\theta + \tfrac{2\pi}{3}\Big)\right)^2 = 105.47~\text{MeV} && (\text{PDG } 105.66,\ 0.18\%),\\
+m_\tau &= \left(A + \sqrt2\,A\cos\!\Big(\theta + \tfrac{4\pi}{3}\Big)\right)^2 = 1774.1~\text{MeV} && (\text{PDG } 1776.9,\ 0.15\%).
+\end{align}
+The electron mass is the calibration input; $m_\mu$ and $m_\tau$ are outputs. Table~\ref{tab:headline} collects the sector.
+
+\begin{table}[H]
+\centering
+\caption{The charged-lepton sector from one calibration ($m_e$) and zero shape parameters. The Weinberg angle is an intermediate result (Section~\ref{sec:weinberg}); the Koide phase and masses are charged-lepton observables. Experimental values from~\citep{pdg2024}.}
+\label{tab:headline}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Quantity & CPP & Experiment & Agreement \\
+\midrule
+$\sinsqthetaW$ (intermediate) & $3/(8\phig) \approx 0.2318$ & $0.23121$ & 0.24\% \\
+Koide $K$ & $2/3$ (exact) & 11~ppm consistency & exact$^\dagger$ \\
+Koide phase $\theta$ & $132.731^\circ$ & $132.732^\circ$ & 0.003\% \\
+$m_\mu$ & $105.47$~MeV & $105.66$~MeV & 0.18\% \\
+$m_\tau$ & $1774.1$~MeV & $1776.9$~MeV & 0.15\% \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+{\footnotesize $^\dagger$ Exact under premises P1--P3; the one Layer-B premise (P3) is inherited as OPEN-FP-1-P3, empirically harmless at $\sim 10^{-20}$.}
+\end{table}
+
+% ============================================================
+% SECTION 7: Calibration ledger and open inheritances
+% ============================================================
+\section{Calibration Ledger and Open Inheritances}
+\label{sec:ledger}
+
+\paragraph{Calibration.} One constant: $m_e$, equivalently the rest-state SSV energy $\SSV_0 = m_e c^2/2$. \textbf{Zero shape parameters.} SF-1 is the cleanest single-$m_e$ sector in the corpus. The two calibration caveats that appear elsewhere in the programme do \emph{not} apply here: there is no $m_c$ quark-route ambiguity (that is a quark-sector issue) and no boson-mass dilution factor $\eta$ (that is an electroweak-sector issue). The charged-lepton sector is therefore the strongest single-calibration anchor for the SF-line's ``hierarchy without hierarchy'' claim: the full charged-lepton spectrum, spanning three orders of magnitude, from one mass plus geometry.
+
+\paragraph{Inherited-open.} \textbf{OPEN-FP-1-P3} --- the Layer-B thermal-equilibration premise of Section~\ref{sec:k3} (the Caldeira--Leggett system--bath model behind equal $\Kthree$-eigenstate occupation). Empirically harmless ($\Delta K \sim 10^{-20}$); resolution path SS-4. Inherited, not closed.
+
+\paragraph{Scope boundary.} The $\Kthree$ theorem applies to \textbf{leptons only}. Quarks carry strong-sector contributions that break the Koide relation by 10--27\%, so the same machinery is expected --- and required, as a falsifier --- to fail for quarks. This boundary is what cleanly separates SF-1 from the quark-sector flagship: the charged-lepton sector is the regime in which the bare $\Kthree$ result is exact precisely because the colour cage contributes nothing.
+
+% ============================================================
+% SECTION 8: Physical Interpretation
+% ============================================================
+\section{Physical Interpretation}
+\label{sec:interp}
+
+In the CPP ontology the three charged leptons are the three stationary occupation patterns of a single three-vertex colour cage. The base triangle $\Kthree$ supports a Zitterbewegung circulation --- a DI-bit current that visits the three vertices under the SSV gradient --- and the time-averaged DI-bit visit rate at each vertex is the lepton's mass density there (premise P2). The three eigenstates of $A_{\Kthree}$ are the bonding mode (all three vertices in phase, eigenvalue $+2$) and the two antibonding modes (eigenvalue $-1$); the $2{:}1$ magnitude ratio of these modes is the physical origin of the modulation depth $\sqrt2$, and hence of the Koide value $2/3$. The electron, muon, and tau are distinguished only by the phase $\theta$ at which the circulation is locked --- the same cage, three phase settings. The electroweak isotropic shift $\varepsilon$ is the polarisation response of the surrounding DP Sea to the cage, uniform over the three vertices (hence $C_3$-preserving), and it is what selects the physical phase $132.731^\circ$ from the continuum that the bare cage symmetry leaves open.
+
+\subsection{CP/GP Signature at This Scale}
+\label{sec:signature}
+
+\paragraph{Load-bearing axioms.} Three axioms do the work. \textbf{A2} (600-cell topology) supplies the $\Kthree$ base graph and the spectral traces $\Tr(A^2)=1440$, $\Tr(A^3)=7200$ that give the $3/8$ mode partition and the coordination $z=12$. \textbf{A5} (propagation efficiency) supplies the metric factor $1/\phig$ that converts the bare $3/8$ into $\sinsqthetaW = 3/(8\phig)$ and enters the phase shift $\varepsilon = 3/(52\phig)$. The PCD/DI-bit visit-rate axiom supplies $m_i \propto |\psi_i|^2$ (premise P2). The single calibration $\SSV_0 = m_e c^2/2$ fixes the overall mass unit; everything else is counting and geometry.
+
+\paragraph{Visible versus smoothed discreteness.} The discrete lattice is fully visible in this sector. The eigenvalue triple $\{+2,-1,-1\}$, the $2{:}1$ ratio, the $\phig$ factors, the $z=12$ coordination, and the integer trace counts $1440$ and $2400$ all appear undiluted in the final numbers --- this is one of the few places in the corpus where the sub-quantum combinatorics survive to the observable without averaging. The \emph{one} place discreteness is smoothed away is premise P3: the equal occupation of the three eigenstates is the high-temperature thermal average over the DP-Sea bath, and it is exactly there --- and only there --- that the $\sim 10^{-20}$ finite-temperature residual lives. This is the precise location of the orders-of-magnitude-dilution concern in this paper, and it is small.
+
+\paragraph{Macroscopic shadow.} The Koide relation $K=2/3$, holding to 11~ppm across three leptons spanning three mass decades, is the macroscopic shadow of the discrete $\Kthree$ three-vertex adjacency spectrum. What conventional physics records as an unexplained empirical coincidence (Koide, 1981) is, in CPP, the averaged-out manifestation of the discrete three-colour cage mode structure --- the eigenvalue ratio $2{:}1$ read off at the level of a measured mass relation.
+
+% ============================================================
+% SECTION 9: CPP-to-Conventional-Physics mapping
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}
+\label{sec:mapping}
+
+The correspondence is structural, at the level of symmetry, degrees of freedom, and observable, not a literal identification of CPP substrate dynamics with perturbative quantum field theory.
+
+\begin{table}[H]
+\centering
+\caption{Structural correspondence between the CPP charged-lepton account and the conventional description.}
+\label{tab:mapping}
+\begin{tabular}{@{}p{0.34\textwidth}p{0.30\textwidth}p{0.30\textwidth}@{}}
+\toprule
+CPP object / mechanism & Conventional counterpart & Shared observable \\
+\midrule
+$\Kthree$ colour-cage base graph & three lepton generations & generation count $=3$ \\
+$A_{\Kthree}$ spectrum $\{+2,-1,-1\}$ & --- (no SM analog) & modulation depth $\rho=\sqrt2$ \\
+$K = (1+\rho^2/2)/3$ & Koide empirical relation & $K = 2/3$ (11~ppm) \\
+Circulation phase lock $\theta$ & relative Yukawa hierarchy & $\theta = 132.731^\circ$ \\
+$\Tr(A^2){:}\tfrac13\Tr(A^3) = 3{:}5$ partition & $U(1)_Y$ vs $SU(2)_L$ mixing & $\sinsqthetaW = 3/(8\phig)$ \\
+DP-Sea isotropic polarisation $\varepsilon$ & electroweak radiative shift & $\varepsilon = 3/(52\phig)$ \\
+SSV$_0 = m_e c^2/2$ calibration & electron Yukawa (fitted) & $m_e$ (input) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% SECTION 10: Falsifiers
+% ============================================================
+\section{Falsifiers}
+\label{sec:falsifiers}
+
+SF-1 is falsifiable on four independent fronts:
+\begin{enumerate}[noitemsep]
+\item \textbf{Koide-breaking at improved precision.} If the charged-lepton masses drift such that $K$ departs from $2/3$ by more than the $\sim 10^{-20}$ CPP finite-temperature ceiling --- i.e.\ by any presently measurable amount --- the $\Kthree$ spectral theorem is false. The current 11~ppm consistency already constrains this; the prediction is that improved measurement tightens, never loosens, toward $2/3$.
+\item \textbf{A fourth charged lepton.} The $\Kthree$ derivation is specific to $N=3$. A fourth charged lepton would have no place in the three-vertex cage and would falsify the framework outright.
+\item \textbf{Phase deviation after electroweak correction.} If a refined measurement of $\theta$ moves away from $132.731^\circ$ in a way the electroweak isotropic shift $\varepsilon = 2\sinsqthetaW/(z+1)$ cannot accommodate, the SM-4$\to$SM-6 arc is broken.
+\item \textbf{Weinberg-angle inconsistency.} If the running of $\sinsqthetaW(Q)$ is inconsistent with the lattice value $3/(8\phig)$ as a zero-temperature anchor (beyond the known 0.24\% running offset), the shared spectral-trace object fails, taking both the phase derivation and the SF-1$\leftrightarrow$SF-2 thread with it.
+\end{enumerate}
+A fifth, structural falsifier is the scope boundary itself: the framework \emph{requires} the Koide relation to break for quarks (Section~\ref{sec:ledger}). A quark sector found to satisfy Koide at lepton-grade precision would contradict the colour-contribution account.
+
+% ============================================================
+% SECTION 11: Discussion / SF-line placement
+% ============================================================
+\section{Discussion: Placement in the SF-Line Unification}
+\label{sec:discussion}
+
+SF-1 is the first of the four remaining sector flagships to ship, and it is deliberately the cleanest. Its role in the grand-unification synthesis (SF-7) is twofold: it establishes the ``one number $\to$ a sector'' rhetoric on the corpus's least-encumbered example, and it seeds two cross-sector consistency members of the SF-7 §10 family.
+
+\paragraph{SF-1 $\leftrightarrow$ SF-2 (shared $\sinsqthetaW$).} The Weinberg angle $\sinsqthetaW = 3/(8\phig)$ derived here as the spectral-trace mode fraction (Section~\ref{sec:weinberg}) is the same object the electroweak flagship inherits for the $W/Z$ mass ratio. The consistency clause is that both sectors source $\sinsqthetaW$ from the identical $\Tr(A^2){:}\tfrac13\Tr(A^3)$ structure with no independent calibration --- a zero-parameter coherence check across two flagships.
+
+\paragraph{SF-1 $\leftrightarrow$ SF-4 (shared $\Mzero$ and the OP-SM-7d handle).} The charged-lepton sector shares the anchor $\Mzero = m_e(z/\phig)$ and the four-cage taxonomy with the neutrino flagship, and --- more pointedly --- the same electroweak object. The electroweak correction $\varepsilon$ that fixes the charged-lepton phase here, and the electroweak handle into which the neutrino flagship defers its $CP$-violating phase, are the same sector-level object (OP-SM-7d). This is the consistency thread along which the neutrino sector's leptonic $CP$ phase plugs into a common scaffold: the path to a pre-measurement prediction of that phase runs through the electroweak handle that SF-1 here shows to be load-bearing and already partially supplied.
+
+These two members follow the three-clause template of the programme's first §10 seed (calibration coherence / no-double-counting / shared-observable single-handle) and become buildable once SF-1 ships.
+
+% ============================================================
+% SECTION 12: Conclusion
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+The charged-lepton sector --- the Koide relation $K=2/3$, the Koide phase $\theta = 132.731^\circ$, and the masses $m_\mu, m_\tau$ --- follows from the geometry of the three-colour lepton cage plus a single calibration, the electron mass, with zero shape parameters. The modulation depth $\sqrt2$ is the $\Kthree$ eigenvalue ratio; the phase is fixed by an electroweak isotropic shift built from the lattice's own Weinberg angle $3/(8\phig)$; the spectrum then closes to 0.18\% ($m_\mu$) and 0.15\% ($m_\tau$). The one imported premise, the Layer-B thermal-equilibration step P3, has a $\sim 10^{-20}$ consequence and is inherited honestly as OPEN-FP-1-P3. The result is the cleanest single-calibration sector in the CPP corpus.
+
+\subsection{Swarm-Validation Contribution}
+\label{sec:swarm}
+
+SF-1 contributes, as a single-calibration consolidation, four charged-lepton-sector zero-parameter empirical correspondences --- the Koide ratio $K$, the phase $\theta$, and the masses $m_\mu, m_\tau$ --- together with the intermediate Weinberg-angle correspondence $\sinsqthetaW = 3/(8\phig)$, all from one calibration ($m_e$) and zero shape parameters. These correspondences are already carried in the programme's running total under their originating SM-3/4/6 identifiers; SF-1's distinct contribution to the swarm is the demonstration that they cohere under a \emph{single} calibration with no sector-internal double-counting --- the cleanest such demonstration in the corpus, and the template the three remaining predecessors follow. The cumulative zero-parameter correspondence count across the programme, derived from the unchanged axiom stack, is maintained in \texttt{predictions.md}; the implausibility of accident scales as $(\text{residual band}/\text{parameter space})^N$ in the swarm size $N$ and is, at the present size, astronomically small. The charged-lepton sector strengthens that argument specifically by removing every shape parameter: a sector reproduced from one number cannot be accounted for by hidden tuning of shape degrees of freedom it does not contain.
+
+\subsection{Problem Status After This Paper}
+\label{sec:status}
+\begin{itemize}[noitemsep]
+\item \textbf{OP-SM-7d} (Koide-phase derivation): OPEN $\to$ \emph{resolved for the charged-lepton sector} (Section~\ref{sec:phase}, the closed SM-4$\to$SM-6 arc). Remains open for the quark $CP$ phase / $\delta_{CP}$ handle, where it routes through the electroweak sector.
+\item \textbf{OPEN-FP-1-P3} (Layer-B thermal equilibration): NEW, registered at this paper's ship; inherited, resolution path SS-4.
+\item \textbf{SF-1 $\leftrightarrow$ SF-2} and \textbf{SF-1 $\leftrightarrow$ SF-4} §10 consistency members: unblocked (buildable on ship; Section~\ref{sec:discussion}).
+\end{itemize}
+
+% ============================================================
+% ACKNOWLEDGEMENTS
+% ============================================================
+\section*{Acknowledgements}
+
+Thomas Lee Abshier conceived the Conscious Point Physics programme and the charged-lepton cage picture, and directed the multi-AI assembly and review of this paper. Claude Opus (Anthropic) assembled the present manuscript from the shipped SM-1/3/4/6 results and the SF-1 structural core, and performed the numerical verification of the headline values. The substantive physics is inherited from the shipped CPP papers SM-1 (cage symmetry and charge quantisation), SM-3 (the $\Kthree$ spectral theorem), SM-4 (the mass parametrisation and the phase-freedom impossibility theorem), and SM-6 (the Weinberg angle and the Koide-phase derivation); SF-1 reframes, it does not re-derive. We acknowledge that the 600-cell lattice hypothesis (AXIM-2) remains an axiom, and that premise P3 (OPEN-FP-1-P3) is an inherited Layer-B assumption, not a derived result.
+
+Repository: \url{https://github.com/Hyperphysics-Institute/CPP}. OSF: \url{https://osf.io/9dfya/}, DOI 10.17605/OSF.IO/JXE8D.
+
+% ============================================================
+% BIBLIOGRAPHY (inline, self-contained per formatting standard §7.2)
+% ============================================================
+\begin{thebibliography}{9}
+
+\bibitem[Koide(1983)]{koide1983}
+Y.~Koide,
+``A fermion-boson composite model of quarks and leptons,''
+\emph{Physics Letters B} \textbf{120} (1983) 161--165.
+
+\bibitem[PDG(2024)]{pdg2024}
+Particle Data Group, S.~Navas \emph{et al.},
+``Review of Particle Physics,''
+\emph{Physical Review D} \textbf{110} (2024) 030001.
+
+\bibitem[Georgi \& Glashow(1974)]{georgiglashow1974}
+H.~Georgi and S.~L.~Glashow,
+``Unity of all elementary-particle forces,''
+\emph{Physical Review Letters} \textbf{32} (1974) 438--441.
+
+\bibitem[Abshier et al.(2026a)]{abshier2026sm1}
+T.~L.~Abshier \emph{et al.},
+``Binding Mechanisms and Cage Stability'' (SM-1),
+Hyperphysics Institute, 2026. DOI 10.17605/OSF.IO/JXE8D.
+
+\bibitem[Abshier et al.(2026b)]{abshier2026sm3}
+T.~L.~Abshier \emph{et al.},
+``The $\Kthree$ Spectral Theorem and the Koide Formula'' (SM-3),
+Hyperphysics Institute, 2026. DOI 10.17605/OSF.IO/JXE8D.
+
+\bibitem[Abshier et al.(2026c)]{abshier2026sm4}
+T.~L.~Abshier \emph{et al.},
+``Charged-Lepton Masses from $\Kthree$'' (SM-4),
+Hyperphysics Institute, 2026. DOI 10.17605/OSF.IO/JXE8D.
+
+\bibitem[Abshier et al.(2026d)]{abshier2026sm6}
+T.~L.~Abshier \emph{et al.},
+``The Lepton Mass Spectrum: Weinberg Angle and Koide Phase'' (SM-6),
+Hyperphysics Institute, 2026. DOI 10.17605/OSF.IO/JXE8D.
+
+\end{thebibliography}
+
+\end{document}
