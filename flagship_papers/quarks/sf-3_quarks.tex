@@ -60,7 +60,7 @@
 \title{\textbf{SF-3: The Quark Sector from 600-Cell Geometry}\\[6pt]
 {\large Masses, Strong Coupling, Koide Phase, and Generation Count from a Single Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 1.2 SHIPPED --- 14 June 2026}}}
+{\Large \textbf{Version 1.3 SHIPPED --- 14 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -393,6 +393,8 @@ SF-3 contributes the following zero-parameter empirical correspondences to the c
 \section*{Acknowledgements}
 
 This paper is a synthesis and reframing of shipped CPP results (SM-7, SM-8, SM-9, SM-10, SS-1, SS-2, SM-6) into a unified quark-sector account; it introduces no new derivation. Thomas Lee Abshier (ND) conceived the Conscious Point Physics program, the 600-cell substrate hypothesis, and the physical intuitions underlying the cage-mass and isotropic-shift mechanisms. Claude Opus (Anthropic) performed the corpus survey, the calibration-route adjudication, and the drafting, and identified and documented the phase--mass bookkeeping separation (Proposition~\ref{prop:phaseindep}, with the explicit $A_q$ cancellation given in Appendix~\ref{app:shift}). The multi-AI review panel (ChatGPT, Grok, Copilot) reviewed the paper across four rounds; the panel's sharpest contribution was the observation, incorporated in Section~\ref{sec:koide}, that the phase--mass independence holds only because $\alphas$ is taken as the structural value rather than a charm-scale running-coupling fit. The 600-cell lattice hypothesis (AXIM-2) remains an axiom. Repository: \url{https://github.com/Hyperphysics-Institute/CPP}; OSF: \url{https://osf.io/9dfya/} (DOI 10.17605/OSF.IO/JXE8D).
+
+\paragraph{Data and code availability.} Every numerical claim in this paper is reproduced from the single $\me$ calibration and 600-cell geometry --- with zero fitted parameters --- by a self-checking notebook, \href{https://github.com/Hyperphysics-Institute/CPP/blob/main/flagship_papers/quarks/code/sf-3_reproduce.ipynb}{\texttt{flagship\_papers/quarks/code/sf-3\_reproduce.ipynb}}, which wraps the underlying verifier \texttt{1500\_verify\_sf3\_core.py}; each headline value (the four masses and their RMS residual, $\alphas$, $\sinsqthetaW$, the complementarity, and the quark Koide phase) is asserted against the figure quoted here, so any drift between code and paper fails an assertion. Both run on the Python standard library alone, with no external data files.
 
 \appendix
 
