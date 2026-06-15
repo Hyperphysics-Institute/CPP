@@ -1,28 +1,39 @@
-# SF-3 v1.2 — Review: Gemini Pro 3.1 (hostile pass, SHIP)
+# SF-3 v1.2 — Review: Gemini (genuine independent hostile pass) — **SHIP**
 
-**Reviewer:** Gemini Pro 3.1 (full v1.2 LaTeX source pasted directly into the buffer from the raw file) · **Verdict:** **SHIP-ready** · **Date:** 14 June 2026 · **Reviewed:** sf-3_quarks.tex v1.2
+**Reviewer:** Gemini (Google) · **Verdict:** **SHIP — ready for deposit** · **Date:** 14 June 2026 · **Reviewed:** sf-3_quarks.tex v1.2 (via the embedded-ask hostile-pass package; the earlier raw-paste send had returned a request for the queries)
 
 ---
 
-## Maintainer verification note (Opus, Patch 1512)
+## Maintainer verification note (Opus, Patch 1515) — READ FIRST
 
-Clean v1.2 hostile pass. Section-by-section technical + editorial review; numbers independently re-verified ($M_0=3.79$ MeV, $z C_F=16$, $\alpha_s=0.386$, $\sin^2\theta_W=0.232$, sum $=1/\varphi$, $F/E=5/3$, $\varepsilon_S=-60/(104\varphi)$, $\varepsilon_{EW}=+3/(52\varphi)$, $\varepsilon=-27/(52\varphi)$, $\cos\theta_{\rm quark}\approx-0.5597\Rightarrow 124.04°$); Proposition 5.1 confirmed "airtight"; calibration ledger "the best version of the adjudication so far"; the new §1 "What SF-3 does not claim" box and the §4 correspondence-not-RGE framing both endorsed; CKM-open framing "perfect." **No structural errors; no contradictions with SF-1/2/4/7; no hidden $m_c$ dependence; no overclaims.** Verdict: "clean flagship-grade synthesis," SHIP.
+**This is the genuine independent Gemini hostile pass** — distinct from the Copilot passes (v1.1/v1.2) that were briefly mis-attributed to Gemini and corrected at Patch 1514. It ran against the embedded-ask package (`sf-3_v1.2_hostile_pass_package.md`), which supplied the five adversarial questions the earlier raw paste lacked.
 
-**The one concrete flag — verified, no document change needed.** The reviewer noted §9 appeared to "end mid-sentence" at "…forcing $\sin^2\theta_W + \alpha_s \neq 1/$…" and itself surmised this was "a truncation from the paste, not the document." Confirmed: the shipped source reads in full "…an independent measurement forcing $\sinsqthetaW + \alphas \neq 1/\phig$ at the substrate scale --- falsifies Eq.~\eqref{eq:complementarity}", the `eq:complementarity` label resolves, and falsifier 4 + §10 follow intact. It was a paste artifact on the reviewer's end; the document is complete.
+**Every quote Gemini attributes to the paper is verbatim-accurate** — verified by grep against the v1.2 source, applying the same discipline that exposed the Copilot "forced" confabulation:
+- "The mass values in Table 1 do not depend on SM-10: ... a mechanism-depth caveat, not a mass-prediction caveat" — §3, line 184 ✓
+- "calibrated geometric model ... pending a first-principles GPU closure" — §3, line 184 ✓ (the "GPU closure" phrasing is genuinely in the paper, lines 184 + 305; a maintainer suspicion that it might be confabulated was checked and was wrong)
+- "the scheme choice affects the empirical comparison, not the calibration --- no PDG mass is used to fix any parameter" — §3, line 181 ✓
+- "selected within the SM-8 antipodal-identification model, an axiom-conditional geometric exclusion" — §1 scope box / §6 ✓
+- "If instead α_s were taken from a running-coupling determination at the charm scale μ ~ m_c ..." — Appendix A, line 422 ✓
+- §9 complementarity falsifier + §4 "structural correspondences ... not gauge couplings obtained from renormalization-group running" ✓
+- "zero shape parameters fitted" — abstract/paper-type block, line 78 ✓
+- shift formula ε = −z·α_s/(z+1) + 3/(52φ) ✓ (reduces to −27/(52φ), consistent)
 
-**Optional suggestions — reviewed, NOT actioned (deliberately, to avoid over-editing a clean pass):**
-- Bold "zero shape parameters fitted" in the abstract — declined; gratuitous bolding cuts against the house style, and §9 already emphasises "Zero shape parameters."
-- §7: add a sentence that Route B "remains archived for cross-checking but is no longer canonical" — declined as redundant; §7 already states Route B's $m_c$ calibration is "superseded" while its structural content is retained.
-- "Generate a v1.2 delta header for the changelog" — already exists (`documentation_suite/changelog-sf-3.md` v1.2 entry, written at Patch 1511).
+**Substance:** Gemini traced the single-$m_e$ dependency chain (masses, α_s, top relay, A_q cancellation) and found no hidden calibration; stress-tested Proposition 5.1 and confirmed it is a valid bookkeeping separation under the structural-α_s conditional (correctly calling it a "trivial algebraic truth," not a deep theorem); characterised the complementarity honestly ("from standard QFT, numerology; within the CPP framework's internal logic, a defensible structural correspondence" with an honest falsifier); and audited scope/overclaim (CKM registered, CP phase undelivered, SM-10 caveat present; "no unshielded claims"). **No deposit-blocking issues; SHIP.**
 
-**Net:** v1.2 is the post-hostile-pass, deposit-ready SHIP version. Two independent hostile passes (the substantive v1.1 pass + this v1.2 SHIP) now concur, with all numbers re-verified across both. No further `.tex` edits warranted.
+**Net:** the intended **independent Gemini hostile gate is now PASSED** (genuine, grounded, SHIP). With Copilot's v1.1+v1.2 passes, the shipped text now has two genuinely independent favourable hostile passes on top of the four v0.x panel rounds. No `.tex` change warranted.
 
 ---
 
 ## Reviewer's verbatim text
 
-**Executive verdict:** v1.2 is SHIP-ready; substantially stronger than v1.1 — calibration adjudication crisp, Koide-phase independence airtight, electroweak–strong complementarity clearer and more defensible. No structural errors; no contradictions with SF-1/2/4/7. Recommend tagging as the canonical SHIPPED version.
+**OVERALL VERDICT: SHIP.** "The paper is highly self-aware and aggressively pre-empts standard critiques through its 'What SF-3 does not claim' box, explicit open-problem registrations, and careful distinction between structural correspondences and dynamical derivations. While the physical model (CPP) is radically heterodox, the *synthesis* presented in this specific document is internally consistent, mathematically transparent in its bookkeeping, and rigorously bounds its own scope. I found no deposit-blocking internal contradictions or hidden calibrations."
 
-**Section-by-section:** Abstract — clean single-calibration headline; CKM "honestly-open" matches SF-4 (minor: consider bolding "zero shape parameters fitted"). §1 — consistent; the mdframed "What SF-3 does not claim" is excellent. §2 — shell counts {4,12,20,30} + $C_F=4/3$ (SS-2) correct. §3 — mass formula, $M_0=3.79$ MeV, $z C_F=16$, table values all correct; SM-10-is-mechanism-depth-only protects the ledger. §4 — $\alpha_s=0.386$, $\sin^2\theta_W=0.232$, complementarity $1/\varphi$, $F/E=5/3$ all correct; mode-fraction-not-RG framing essential and present. §5 — all shift values correct; Proposition 5.1 now airtight (phase depends only on $\alpha_s,\sin^2\theta_W,z$; $m_c$ cancels; structural-$\alpha_s$ conditional stated). §6 — consistent with SM-8; no-fourth-quark falsifier clean. §7 — best version of the adjudication; Route A/B separation clean; single-$m_e$ headline restored without hand-waving (optional: note Route B archived for cross-checking). §8 — CKM perfect; OPEN-FP-3-CKM registered; SF-4 parallel without equivalence. §9 — falsifiers all correct; [apparent mid-sentence truncation flagged as a paste artifact].
+**1. Faithfulness** — remarkably faithful; explicitly downgrades its own source certainty where needed (SM-10 flagged as a calibrated model pending GPU closure; three generations as axiom-conditional; 7/3 + M₀ from SM-9; C_F=4/3 from SS-2). Hostile check: the paper avoids implying the mass *values* validate SM-10. No blocking overclaims.
 
-**Overall:** structurally sound, internally consistent, SF-line aligned; no calibration inconsistencies; no hidden $m_c$; no overclaims; all equations + numerical values + cross-paper references check out. "A clean flagship-grade synthesis." Closing question offered: a v1.2 changelog delta header (already exists).
+**2. Single-$m_e$ calibration** — structurally clean; $m_c$ excised as an input. Dependency trace: masses (no $m_c$), α_s = 5/(8φ) (geometric), top relay zC_F = 16 (algebraic), A_q cancels (Appendix A). PDG scheme affects comparison, not calibration. "Mathematically sound within the axioms of the framework."
+
+**3. Proposition 5.1** — under the structural-α_s conditional, ε is constant and θ_quark = 124.04° is constant; A_q scales eigenvalues but does not rotate the phase. "Proposition 5.1 is a trivial algebraic truth, and the paper correctly labels it a 'bookkeeping observation' rather than a deep theorem."
+
+**4. Complementarity** — "From the perspective of standard QFT ... pure numerology. However, from the perspective of the CPP framework's internal logic, it is a defensible structural correspondence." Paper refuses to call it a dynamical derivation; §9 provides an honest, testable falsifier (couplings not summing to 1/φ at the substrate scale).
+
+**5. Scope / overclaim audit** — CKM gap registered (OPEN-FP-3-CKM) across abstract/intro/§8/falsifiers; CP phase undelivered; SM-10 caveat explicit. Audited abstract + plain-language summary: "There are no unshielded claims. The paper is ready for deposit."
