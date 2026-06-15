@@ -6,6 +6,23 @@
 
 ---
 
+## v1.0 SHIPPED — 14 June 2026 (Session 161, Patch 1505; 1500-band SF-3 window)
+
+**SHIP.** Four review rounds (v0.1–v0.4); Grok SHIP all four; ChatGPT/Copilot REVISE→SHIP convergence; no physics blockers at any round; numbers independently re-verified by every reviewer every round. Thomas delegated the ship call and authorised the registry integration. Final v0.4-panel items folded in before ship:
+- **Generation count** "selected by the antipodal-identification mechanism" -> "selected within the SM-8 antipodal-identification model" (abstract, §6, §9, §13.1) — SM-8 gives a model-dependent selection, not a uniqueness proof.
+- **Proposition 5.1 nuance (the cycle's most valuable catch):** the phase–m_c independence holds *because* $\alphas$ is taken as the structural value $5/(8\phig)$; were $\alphas$ a running-coupling fit at the charm scale, $m_c$ would re-enter indirectly. Stated explicitly in §5, closing the running-coupling loophole.
+- **§4** added: within SM-6/SM-7 these are *structural correspondences*, not RGE-derived gauge couplings.
+- **§9** added the MeV-scale clarification (the scale enters only via the electron-cage identification, the same calibration shared across SF-1/3/4).
+- **§10** macroscopic-shadow paragraph bounded with "within the CPP ontology" ("fact" -> "claim").
+
+Title block -> **Version 1.0 SHIPPED**. Recompile: 13 pages, 0 errors. All four v0.1–v0.4 review sets archived verbatim under `review/`.
+
+**Ship-time integration (Patch 1506, applied with no other windows active):** OPEN-FP-3-CKM registered in `frontier_sectors/SM.md`; `predictions.md` SF-3 entries + swarm counter; `paper_catalog.md`, `README.md`, `INDEX.md` entries; SF-3 BibTeX added to master `cpp_references.bib`. Proposition 5.1 is a bookkeeping separation, NOT registered as a programme theorem.
+
+**Not done at v1.0 (post-SHIP Phase 7A/7B/7C, deferred):** the 7-file companion documentation suite; programme_orientation/theory-overview/founders_vision/axiom-registry/master_glossary deep updates; anthology chapter; OSF deposit; optional Sonnet hostile pass before public deposit. The inline `thebibliography` is retained in the `.tex` for standalone compilation (master bib now also carries SF-3 for cross-referencing).
+
+---
+
 ## v0.4 — 14 June 2026 (Session 161, Patch 1504; 1500-band SF-3 window)
 
 **Third review-incorporation pass — over-claim tightening.** Folds the v0.3 panel (verbatim in `review/`, `*_v0.3_*`). **All three returned SHIP again** (ChatGPT SHIP; Grok SHIP; Copilot ready-for-incorporation) — remaining items explicitly stylistic, not scientific. Applied the two genuine over-claim corrections plus one restatement:
