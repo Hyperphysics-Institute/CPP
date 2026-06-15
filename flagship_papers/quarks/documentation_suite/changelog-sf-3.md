@@ -6,9 +6,9 @@
 
 ---
 
-## v1.0 — 14 June 2026 (Session 161, Patch 1500; 1500-band SF-3 window)
+## v0.1 — 14 June 2026 (Session 161, Patches 1500/1501; 1500-band SF-3 window)
 
-First complete draft. Assembled from the SF-3 structural core (Patch 1308) and outline (Patch 1303) to the 16-section paper-formatting standard. Synthesis/reframing of shipped results — **no new derivation**.
+First complete pre-review draft. Assembled from the SF-3 structural core (Patch 1308) and outline (Patch 1303) to the 16-section paper-formatting standard. Synthesis/reframing of shipped results — **no new derivation**. (Drafted at Patch 1500 with an over-claiming "v1.0" title-block label; relabelled to v0.1 at Patch 1501 to match the SF-2 drafting precedent, where v1.0 is reserved for the post-review SHIP. No content change.)
 
 **Content established:**
 - §3 Zero-parameter heavy-quark mass spectrum, Route A (SM-8/SM-9): $M_q = m_e(z/\phi)V^{7/3}$, top relay $\times z C_F$; RMS 2.1% (s/c/b/t); $m_c$ demoted to derived.
