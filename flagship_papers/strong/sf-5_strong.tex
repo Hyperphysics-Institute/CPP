@@ -1,0 +1,436 @@
+% ============================================================
+% SF-5: Strong-Sector Unification from 600-Cell Geometry
+%       SU(3) Colour, the Eight Gluons, Confinement, the String
+%       Tension, and the Light-Nucleus Binding Cascade from the
+%       Tetrahedral Cage
+% Conscious Point Physics Flagship Paper Series (SF-line)
+% Version history: flagship_papers/strong/documentation_suite/changelog-sf-5.md
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+% --- Standard CPP macros ---
+\newcommand{\phig}{\varphi}            % golden ratio
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\DP}{\mathrm{DP}}
+\newcommand{\hDP}{\mathrm{hDP}}
+\newcommand{\CP}{\mathrm{CP}}
+
+% --- Paper-specific macros ---
+\newcommand{\Mzero}{M_0}
+\newcommand{\sinsqthetaW}{\sin^2\theta_W}
+\newcommand{\alphas}{\alpha_s}
+\newcommand{\CF}{C_F}
+\newcommand{\SUthree}{SU(3)}
+\newcommand{\ledge}{\ell_{\mathrm{edge}}}
+\newcommand{\Bpair}{B_{\mathrm{pair}}}
+\newcommand{\Nalpha}{N_\alpha}
+\newcommand{\me}{m_e}
+\newcommand{\MeVfm}{\mathrm{MeV/fm}}
+
+\title{\textbf{SF-5: Strong-Sector Unification from 600-Cell Geometry}\\[6pt]
+{\large $SU(3)$ Colour, the Eight Gluons, Confinement, the String Tension, and the Light-Nucleus Binding Cascade from the Tetrahedral Cage}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 0.1 (pre-review draft) --- 15 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+\noindent\textbf{Paper type:} Flagship synthesis paper. Establishes that the strong sector --- the $\SUthree$ colour algebra, the eight gluons, confinement and asymptotic freedom, the QCD string tension, the strong coupling, and the light-nucleus binding cascade --- derives from the tetrahedral cage geometry of the 600-cell, at theorem-level rigor where marked, on a single dimensionful calibration (the electron mass $\me$) with zero shape parameters fitted.
+
+The Standard Model takes the colour gauge group $\SUthree$, the gluon count, the strong coupling $\alphas$, the confinement scale, and the nuclear binding energies as separate empirical or phenomenological inputs. SF-5 assembles results from the shipped Conscious Point Physics (CPP) Strong-Sector series (SS-1 through SS-9) and the Standard-Model series (SM-7, SM-8) into a single strong-sector account in which (i) the $\SUthree_c$ colour algebra emerges \emph{exactly} from eight DI-bit hopping operators on the qCP tetrahedral cage, $T^a = \lambda^a/2$ with $[T^a,T^b]=if^{abc}T^c$ and the standard structure constants (SS-1b), and is the \emph{unique} operator-representation realisation on that cage (SS-3); (ii) the eight gluons follow as transient hybrid-displacement ($\hDP$) configurations --- six colour-changing on the three base edges plus two colour-neutral diagonal modes --- with masslessness and spin-1 derived (SS-1c); (iii) confinement, asymptotic freedom, and a positive QCD $\beta$-function follow from the cage structure (SS-1d), with the string tension $\sigma = \Mzero z^2/(\phig\,\ledge) \approx 926.5~\MeVfm$ (SS-4); (iv) the strong coupling $\alphas = 5/(8\phig)\approx 0.386$ is the \emph{face-mode} fraction of the same 600-cell spectral trace that gives the Weinberg angle as its \emph{edge-mode} fraction $\sinsqthetaW = 3/(8\phig)$, with the exact complementarity $\sinsqthetaW + \alphas = 1/\phig$; and (v) the light-nucleus binding cascade, anchored on the zero-parameter binding quantum $\Bpair = \Mzero/\phig = \me z/\phig^2 = 2.342$~MeV, predicts the twelve strict-$N{=}Z$ alpha-chain nuclei ($\Nalpha \in [3,14]$) at root-mean-square error below $1\%$ against AME 2020 (SS-7).
+
+\textbf{Single-calibration spine.} The strong-sector mass scale is anchored by $\Mzero = \me z/\phig$ --- the same single $\me$ calibration that fixes the charged-lepton (SF-1), neutrino (SF-4), and quark (SF-3) sectors. The colour algebra, the gluon count, and the couplings carry \emph{zero} mass parameters. This places the strong sector inside the SF-line ``hierarchy without hierarchy'' spine on one calibration.
+
+\textbf{The honestly-open pieces.} SF-5 does \emph{not} close the lightest-scalar-glueball mass (inherited as OPEN-SS-6 / registered OPEN-FP-5-GLUEBALL); it carries the deuteron leading-order $+5.3\%$ residual as an honest open next-to-leading-order problem (OPEN-SS-19), with the candidate prolate-cage mechanism explicitly rejected as not validated; it presents the simplicial-connectivity result (SS-9) as \emph{conditional} on its open sub-conditions; and it treats the four-vertex gluon-counting picture (CONJ-SS-Gluon-4Vertex) as a flagged forward-looking conjecture, not a headline claim, stating its own collapse-to-the-SM-octet falsification route honestly. The paper closes with four falsifiers, including a string-tension precision window and a glueball-mass window.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} strong interaction, $SU(3)$ colour, gluons, confinement, asymptotic freedom, QCD $\beta$-function, string tension, strong coupling, $\alpha_s$, electroweak--strong mode complementarity, 600-cell lattice, tetrahedral cage, golden ratio, nuclear binding, alpha-cluster nuclei, glueball, Conscious Point Physics, single-$m_e$ calibration, zero-parameter prediction, flagship paper.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+The strong nuclear force is described in the Standard Model by a theory called quantum chromodynamics, which takes its symmetry group ($SU(3)$, ``colour''), its eight force-carrying gluons, its coupling strength, and the binding energies of nuclei as separate measured or modelled facts. This paper proposes that all of these follow from the geometry of a four-dimensional lattice called the 600-cell, using only one calibration: the electron's mass. The colour symmetry comes out exactly from the way information hops around a tetrahedral cage of fundamental points; the eight gluons are counted off the three edges and two diagonals of that cage; the force confines quarks and weakens at short range for the same geometric reason; and the binding energies of the light ``alpha-cluster'' nuclei (built from helium-4 units) come out below $1\%$ from a single binding quantum of $2.342$ million electron-volts, with zero adjustable numbers. The same lattice geometry that sets the electroweak ``Weinberg angle'' also sets the strong coupling, and the two add up to a single golden-ratio number exactly. The pieces the paper does \emph{not} finish --- the mass of the lightest ``glueball,'' a few-percent correction to the deuteron, and a still-open conjecture about gluon counting --- are flagged plainly as unfinished.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+% SECTION 1: Introduction
+% ============================================================
+\section{Introduction}
+
+The strong sector poses several quantitative questions that the Standard Model (SM) answers only by measurement or by phenomenological modelling:
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{The gauge group.} Why is the colour group $\SUthree$ and not some other Lie group?
+\item \textbf{The gluons.} Why are there exactly eight gluons, why are they massless, and why spin-1?
+\item \textbf{Confinement and the coupling.} Why does the strong force confine colour, why does it weaken at short range (asymptotic freedom), and what sets the strong coupling $\alphas$ and the confinement scale (the string tension)?
+\item \textbf{Nuclear binding.} What sets the binding energies of the light nuclei, and is there a parameter-free organising principle behind the alpha-cluster spectrum?
+\end{enumerate}
+
+This paper assembles a Conscious Point Physics (CPP) account that answers the gauge group, the gluon count, confinement, the couplings, and the alpha-cluster binding cascade from the tetrahedral cage geometry of the 600-cell and a single calibration (the electron mass $\me$), and that locates the remaining gaps --- the glueball mass, the deuteron next-to-leading-order (NLO) residual, the conditional connectivity result, and a flagged gluon-counting conjecture --- as explicitly open problems. None of the physics here is new derivation: every load-bearing result is inherited from shipped CPP papers and reframed into a single coherent strong-sector narrative. The contribution of SF-5 is the \emph{synthesis} --- including one load-bearing presentation decision about the gluon-counting question (Section~\ref{sec:gluons} and Section~\ref{sec:open}) --- and the placement of the strong sector within the SF-line grand-unification program (SF-7).
+
+\begin{mdframed}
+\textbf{What SF-5 does \emph{not} claim.} SF-5 introduces no new derivation; every quantitative result is inherited from SS-1 through SS-9 and SM-7/SM-8. In particular: (i) the $\SUthree$ \emph{uniqueness} (SS-3) is uniqueness \emph{within the operator representation} on the tetrahedral cage, not uniqueness from geometry alone; (ii) $\alphas$ and $\sinsqthetaW$ are \emph{structural correspondences} --- mode fractions of the 600-cell adjacency spectrum that match the measured couplings --- not gauge couplings obtained from renormalization-group running; (iii) the lightest-scalar-glueball mass is \emph{not} derived (inherited as OPEN-SS-6, registered OPEN-FP-5-GLUEBALL); (iv) the deuteron leading-order binding carries an honest $+5.3\%$ residual registered as OPEN-SS-19, with the candidate NLO mechanism explicitly rejected as not validated; (v) the simplicial-connectivity theorem (SS-9) is \emph{conditional} on open sub-conditions and is presented as such; and (vi) the four-vertex gluon-counting picture (CONJ-SS-Gluon-4Vertex) is a flagged forward-looking conjecture, \emph{not} a headline claim.
+\end{mdframed}
+
+CPP derives Standard-Model structure from the geometry of the 600-cell polytope (vertices $V=120$, edges $E=720$, faces $F=1200$, cells $C=600$, vertex coordination $z=12$). Conscious Points (CPs) occupy lattice sites and exchange displacement-increment information along Space-Stress-Vector ($\SSV$) gradients; particles are geometric cage structures, gluons are transient $\hDP$ configurations on cage edges, and the golden ratio $\phig=(1+\sqrt5)/2$ recurs because it is built into the 600-cell metric. The strong sector draws principally on the Strong-Sector series (SS-1 through SS-9), with the strong coupling and the mass anchor inherited from the Standard-Model series (SM-7, SM-8).
+
+\subsection{Open Problems Addressed}
+This paper consolidates and reframes the shipped strong-sector corpus and registers strong-sector open problems for entry at ship time:
+\begin{itemize}[leftmargin=2em]
+\item It \emph{foregrounds} the theorem-level results --- $\SUthree$ exact (SS-1b) and unique-within-the-operator-representation (SS-3), and the eight-gluon derivation (SS-1c) --- as the flagship headline, in preference to the unclosed four-vertex gluon-counting conjecture (Sections~\ref{sec:su3}, \ref{sec:gluons}).
+\item It registers \textbf{OPEN-FP-5-GLUEBALL} (the lightest-scalar-glueball mass has no closed derivation; inherited from OPEN-SS-6) and inherits \textbf{OPEN-SS-19} (the deuteron NLO residual), both to be entered in the frontier registry at ship time via a flagged integration patch (Sections~\ref{sec:open}, \ref{sec:cascade}).
+\item It identifies the SF-line consistency threads SF-5$\leftrightarrow$SF-2, SF-5$\leftrightarrow$SF-3, and SF-5$\leftrightarrow$SF-1/SF-4 that SF-5 unlocks for the SF-7 $\S10$ consistency-theorem family (Section~\ref{sec:discussion}).
+\end{itemize}
+
+% ============================================================
+% SECTION 2: The Tetrahedral Cage Substrate
+% ============================================================
+\section{The Tetrahedral Cage Substrate}\label{sec:substrate}
+
+The strong-sector constructions live on the qCP \emph{tetrahedral cage}: a base triangle of three vertices $\{V_1,V_2,V_3\}$ with a fourth apical vertex, embedded as a sub-structure of the 600-cell. Colour structure enters through the DI-bit hopping dynamics on this cage: a coloured object is a configuration of charge labels on the cage vertices, and the strong interaction is the propagation of $\hDP$ (hybrid displacement-pair) configurations along the cage edges that permute those labels.
+
+Two features of the cage carry the entire sector. First, the \emph{three base edges} of the tetrahedral base triangle supply the colour-changing channels, and the two independent \emph{phase-difference (diagonal) modes} on the base supply the colour-neutral channels --- together the carriers of the eight gluons (Section~\ref{sec:gluons}). Second, the single dimensionful calibration of the construction is the electron mass $\me$, entering through the mass anchor
+\begin{equation}
+\Mzero \equiv \me\,\frac{z}{\phig} = 0.5110~\mathrm{MeV}\times\frac{12}{1.6180} = 3.79~\mathrm{MeV},
+\label{eq:M0}
+\end{equation}
+with $z=12$ the 600-cell coordination and $\phig$ the golden ratio. Every other quantity in the strong sector is geometry ($z$, $\phig$, edge and face counts) or the colour Casimir $\CF = (N^2-1)/(2N)|_{N=3} = 4/3$ (SS-2). The DP energy quantum $\Mzero$ anchors the string tension (Section~\ref{sec:confinement}) and the nuclear binding cascade (Section~\ref{sec:cascade}); the colour algebra, gluon count, and couplings carry no mass parameter at all.
+
+% ============================================================
+% SECTION 3: SU(3) Exact and Unique
+% ============================================================
+\section{$SU(3)$ Colour: Exact and Unique}\label{sec:su3}
+
+The strongest single result in the strong sector --- and the right flagship headline --- is that $\SUthree_c$ is \emph{derived}, not postulated.
+
+\paragraph{Exact (SS-1b).} Eight DI-bit hopping operators $T^a$ ($a=1,\dots,8$) are defined on the tetrahedral base $\{V_1,V_2,V_3\}$: six colour-changing operators (real and imaginary hopping along the three base edges) and two diagonal operators (phase differences). The main theorem of SS-1b establishes that these eight operators equal the standard $\SUthree$ generators exactly,
+\begin{equation}
+T^a = \frac{\lambda^a}{2},\qquad [T^a,T^b] = if^{abc}T^c,
+\label{eq:su3}
+\end{equation}
+with $\lambda^a$ the Gell-Mann matrices and $f^{abc}$ the standard $\SUthree$ structure constants. The colour algebra is therefore a derived consequence of the cage hopping dynamics, not an imposed gauge symmetry.
+
+\paragraph{Unique within the operator representation (SS-3).} SS-3 establishes that $\SUthree$ is the unique Lie-algebra realisation carried by the eight tetrahedral hopping operators --- the answer to ``why $\SUthree$ and not another group'' at the level of the operator representation. We state this honestly: per the SS-3 conditional restatement, the uniqueness is uniqueness \emph{within the operator representation} on the tetrahedral cage, not a claim that no other geometry could host a different group. Within that scope, SS-1b ($\SUthree$ exact) together with SS-3 ($\SUthree$ unique-in-representation) is the theorem-level core of the strong sector, and is the SF-5 headline.
+
+% ============================================================
+% SECTION 4: The Eight Gluons
+% ============================================================
+\section{The Eight Gluons}\label{sec:gluons}
+
+The eight gluons (SS-1c) are transient $\hDP$ configurations on the tetrahedral base: \textbf{six colour-changing} gluons ($\hDP$ propagating along the three base edges, real and imaginary channels) and \textbf{two colour-neutral diagonal} gluons (phase-difference modes), totalling eight, in one-to-one correspondence with the $\SUthree$ octet. Two properties are derived directly from cage geometry:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Masslessness.} Gluons are transient open-path $\hDP$ pairs with no confining closed subgraph; there is no enclosed region storing $\SSV$ compression energy, so the gluon carries zero mass. This is the exact parallel of the photon, the $\lambda=0$ DP-Sea mode.
+\item \textbf{Spin-1.} Each tetrahedral base edge carries a definite 3D orientation vector; the emitted $\hDP$ carries that orientation, giving the gluon vector (spin-1) character.
+\end{itemize}
+
+\paragraph{The gluon-counting presentation decision.} Two pictures of gluon counting live in the strong-sector material. \emph{Picture 1} is the shipped theorem-level derivation above (SS-1c): eight gluons from three base edges plus two diagonal modes, one-to-one with the SM octet. \emph{Picture 2} is the open conjecture CONJ-SS-Gluon-4Vertex, which proposes that the octet is a phenomenological dressing of a richer four-baryon-vertex bonding taxonomy, with potentially divergent predictions from the SM octet. SF-5 leads with Picture 1 and treats Picture 2 as a flagged forward-looking conjecture in the open-work section (Section~\ref{sec:open}). The reason is stated plainly in Section~\ref{sec:open}: Picture 2's own falsification route collapses it to ``the SM octet, restated'' precisely when substrate enumeration yields exactly eight types --- and Picture 1 \emph{is} that enumeration (eight, from three edges and two diagonals). Headlining an unclosed conjecture that the corpus's own shipped, stronger result appears to absorb would weaken, not strengthen, the flagship; the honest move is restraint.
+
+% ============================================================
+% SECTION 5: Confinement, Asymptotic Freedom, String Tension
+% ============================================================
+\section{Confinement, Asymptotic Freedom, and the String Tension}\label{sec:confinement}
+
+\paragraph{Confinement and the $\beta$-function (SS-1d).} Colour-charged objects cannot exist in isolation: the open-path $\hDP$ structure has no isolated-colour stable configuration, so a single colour charge is never a stable free state. SS-1d derives this confinement mechanism together with the QCD $\beta$-function from the cage structure, obtaining a positive coefficient that yields asymptotic freedom --- the weakening of the effective coupling at short range --- in the CPP substrate.
+
+\paragraph{String tension (SS-4).} The confinement scale is the QCD string tension, derived from the 600-cell face-mode multiplicity as
+\begin{equation}
+\boxed{\;\sigma = \frac{\Mzero\,z^2}{\phig\,\ledge} \approx 926.5~\MeVfm\;}
+\label{eq:sigma}
+\end{equation}
+with $\Mzero$ the DP energy quantum of Eq.~\eqref{eq:M0}, $z=12$ the coordination, $\phig$ the golden ratio, and $\ledge$ the 600-cell edge length. The value $926.5~\MeVfm$ is consistent with the lattice-QCD range. Equation~\eqref{eq:sigma} \emph{corrects} the earlier SS-2 heuristic $\sigma = \Mzero z\pi/(\phig\,\ledge)$: the $z\pi \to z^2$ replacement (a factor $z/\pi \approx 3.82$) follows from the face-mode counting in SS-4 and supersedes the SS-2 circular-orbit heuristic. The factorisation $\sigma = (\Mzero/\ledge)\times(z^2/\phig)$ separates the bare DP-energy-per-length scale from the geometric multiplicity; the derivation and the $z^2$ correction are written out in Appendix~\ref{app:sigma}.
+
+% ============================================================
+% SECTION 6: Strong coupling and EW-strong complementarity
+% ============================================================
+\section{The Strong Coupling and Electroweak--Strong Mode Complementarity}\label{sec:alphas}
+
+The strong coupling is the \emph{face-mode} fraction of the same 600-cell adjacency spectral trace that yields the Weinberg angle as its \emph{edge-mode} fraction. With $A$ the $120\times120$ vertex--vertex adjacency operator of the 600-cell,
+\begin{equation}
+\alphas = \frac{1}{\phig}\cdot\frac{\tfrac13\Tr(A^3)}{\Tr(A^2)+\tfrac13\Tr(A^3)}
+= \frac{1}{\phig}\cdot\frac{2400}{3840}
+= \frac{5}{8\phig}\approx 0.386,
+\label{eq:alphas}
+\end{equation}
+which matches the PDG running coupling at the charm scale, $\alphas(m_c)\approx 0.35$--$0.40$. The Weinberg angle (inherited from SM-6/SM-7, and the headline of SF-3) is the complementary edge-mode fraction $\sinsqthetaW = 3/(8\phig)\approx 0.232$, and the two mode fractions are exactly complementary:
+\begin{equation}
+\boxed{\;\sinsqthetaW + \alphas = \frac{3}{8\phig} + \frac{5}{8\phig} = \frac{1}{\phig}\approx 0.618\;}
+\label{eq:complementarity}
+\end{equation}
+The bare (pre-$\eta$) partition is $3/8 + 5/8 = 1$, the unweighted adjacency contributions before the propagation-efficiency factor $\eta = 1/\phig$, and the topological ratio is
+\begin{equation}
+\frac{\alphas}{\sinsqthetaW} = \frac{F}{E} = \frac{1200}{720} = \frac{5}{3},
+\end{equation}
+the ratio of the 600-cell face and edge counts. \emph{Within the inherited SM-6/SM-7 framework, a single spectral trace supplies both couplings as complementary face- and edge-mode fractions} --- a mode-fraction correspondence, not a dynamical unification. This substrate-level electroweak--strong \emph{mode complementarity} is the strongest single $\S10$ consistency thread binding SF-5 to SF-1, SF-2, and SF-3: the same adjacency spectrum, partitioned into face and edge modes weighted by $\eta = 1/\phig$, sources both couplings with no independent calibration. As in SF-3, these are \emph{structural correspondences} --- mode fractions numerically matching the measured couplings --- not couplings obtained from renormalization-group running.
+
+% ============================================================
+% SECTION 7: The nuclear-binding cascade
+% ============================================================
+\section{The Nuclear-Binding Cascade}\label{sec:cascade}
+
+The strong sector's headline \emph{empirical} anchor is the light-nucleus binding cascade (SS-5, SS-7), built on a single zero-parameter binding quantum.
+
+\paragraph{The binding quantum.} Two hybrid-tetrahedral nucleons bind base-to-base via three quark--quark DP chains across the triangular contact face; the K$_3$ face structure collapses the three pairs to one effective collective mode, fixing the pair binding to
+\begin{equation}
+\boxed{\;\Bpair = \frac{\Mzero}{\phig} = \frac{\me z}{\phig^2} = 2.342~\mathrm{MeV}\;}
+\label{eq:bpair}
+\end{equation}
+from $\me$ and the golden-ratio geometry alone --- zero parameters. The closed-polytope cascade multiplies each np-pair binding by $(A-1)$, with standard Coulomb repulsion and a Pauli penalty $\Mzero/\phig^3$ per like-nucleon pair following (SS-5).
+
+\paragraph{The light nuclei (SS-5).} The cascade predicts the four bound light nuclei from one formula, with no nuclear datum fitted:
+\begin{equation}
+\begin{aligned}
+&B_d^{(0)} = 2.342~(+5.3\%), \quad B^{(0)}_{^3\mathrm{H}} = 8.474~(-0.09\%),\\
+&B^{(0)}_{^3\mathrm{He}} = 7.642~(-1.0\%), \quad B^{(0)}_{^4\mathrm{He}} = 27.904~(-1.4\%),
+\end{aligned}
+\end{equation}
+and correctly predicts that $^5$He, $^5$Li, and $^8$Be are unbound, because no closed geometric polytope exists at those nucleon counts. \textbf{The deuteron is honest about its residual:} the physical $B_d = 2.2246$~MeV implies a leading-order residual of $+5.3\%$, written $B_d = (\Mzero/\phig)(1-\epsilon_d)$ with $\epsilon_d^{\mathrm{exp}}\approx 0.050$ representing unresolved NLO corrections (tensor, zero-point, spin--orbit). A candidate NLO mechanism based on prolate cage distortion was explored (SS-5 Appendix B) and found \emph{not validated} --- it relies on non-standard perturbation theory and gives the opposite sign under honest second-order PT. The $+5.3\%$ residual is therefore carried as an honest open problem (OPEN-SS-19), \emph{not} presented as a sub-percent hit.
+
+\paragraph{The alpha-cluster cascade (SS-7).} For the strict-$N{=}Z$ alpha-chain nuclei, the closed alpha-polytope has $3\Nalpha - 6$ edges, each contributing one $\Bpair$. The $3\Nalpha-6$ edge formula gives \textbf{twelve concurrent zero-parameter predictions} for strict-$N{=}Z$ nuclei at $\Nalpha\in[3,14]$, agreeing with AME 2020 at \textbf{root-mean-square error below $1\%$} (the primary eight-nucleus set at $\Nalpha\in[3,10]$ sits at RMS $0.91\%$). This is the strong sector's strongest empirical anchor and is genuinely zero-parameter. The non-$N{=}Z$ neutron-excess nuclei lie outside the alpha-chain formula's scope (registered separately under OPEN-SS-23) and are not part of this claim.
+
+\begin{table}[H]
+\centering
+\caption{Strong-sector headline results. Inputs: $\me$, $z=12$, $\phig$, $\CF=4/3$. No shape parameters fitted. Theorem-level results are marked; the glueball mass is inherited-open.}
+\label{tab:headline}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Quantity & CPP & Comparison & Status / source \\
+\midrule
+$\SUthree_c$ algebra & exact, $T^a=\lambda^a/2$ & --- & THEOREM (SS-1b) \\
+$\SUthree$ uniqueness & unique in operator rep. & --- & THEOREM (SS-3) \\
+8 gluons (massless, spin-1) & 6 edge $+$ 2 diagonal & 8 & THEOREM (SS-1c) \\
+Confinement / asymp.\ freedom & positive $\beta$ & qualitative & derivation (SS-1d) \\
+String tension $\sigma$ & $926.5~\MeVfm$ & lattice-QCD range & derivation (SS-4) \\
+$\alphas$ & $5/(8\phig)\approx 0.386$ & $\alphas(m_c)\approx0.35$--$0.40$ & mode fraction (SM-7) \\
+$\sinsqthetaW + \alphas$ & $1/\phig$ exact & --- & complementarity \\
+Binding quantum $\Bpair$ & $2.342$~MeV & --- & zero-param (SS-5) \\
+Twelve $N{=}Z$ nuclei & $3\Nalpha-6$ edges & AME 2020 & RMS $<1\%$ (SS-7) \\
+Deuteron LO residual & $+5.3\%$ & --- & \textbf{OPEN-SS-19} \\
+Lightest scalar glueball & --- & --- & \textbf{OPEN-FP-5-GLUEBALL} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% SECTION 8: Open work
+% ============================================================
+\section{Open Work: Glueball, Gluon-Counting Conjecture, Conditional Connectivity}\label{sec:open}
+
+SF-5 inherits four open items honestly; none is headlined.
+
+\begin{openproblem}[OPEN-FP-5-GLUEBALL]
+The lightest scalar glueball is modelled as a closed tetrahedral $\hDP$ loop, with the geometric-frequency formula $f_{\mathrm{geom}}$ applied to a closed loop, but no closed-form mass is derived in the CPP corpus (inherited from OPEN-SS-6). The glueball is the neutral spherical qDP mass, distinct from the cage-bound mesons. SF-5 inherits this as open, to be entered in the frontier registry at ship time.
+\end{openproblem}
+
+\paragraph{The four-vertex gluon-counting conjecture (CONJ-SS-Gluon-4Vertex).} As stated in Section~\ref{sec:gluons}, the conjecture that the octet is a dressing of a four-baryon-vertex bonding taxonomy is treated as a flagged forward-looking conjecture, not a headline. Its own falsification route (a) is stated honestly: \emph{if substrate enumeration yields exactly eight distinct types, the conjecture collapses to ``the SM octet, restated.''} Picture 1 (SS-1c) is arguably already that enumeration. Any SF-5-era attempt to close the four-vertex picture is registered as OPEN-FP-5-GLUON; SF-5 does not pursue it.
+
+\paragraph{Conditional connectivity (SS-9).} The simplicial-alpha-polytope connectivity result (SS-9) is a \emph{conditional} theorem: it is conditional on sub-conditions C5--C8 (OPEN-SS-29/30/33/37). SF-5 inherits SS-9 as conditional and does \emph{not} present it as unconditional; closing the sub-conditions would convert it to unconditional in a later integration.
+
+\paragraph{Deuteron NLO residual (OPEN-SS-19).} The $+5.3\%$ leading-order deuteron residual (Section~\ref{sec:cascade}) is an honest open NLO problem; the candidate prolate-cage mechanism was explored and rejected as not validated.
+
+% ============================================================
+% SECTION 9: Conditional accounting and falsifiers
+% ============================================================
+\section{Conditional Accounting and Falsifiers}\label{sec:falsifiers}
+
+\paragraph{Calibration ledger.} One dimensionful constant, $\me$ (entering through $\Mzero = \me z/\phig$). \textbf{Zero shape parameters.} The colour algebra, gluon count, masslessness, spin, confinement, and the couplings carry no mass parameter; the string tension and nuclear cascade are anchored on $\Mzero$, i.e.\ on $\me$ alone. The MeV scale enters only through the identification of the electron cage with the physical electron mass --- the same single calibration shared across SF-1, SF-3, SF-4, and SF-5.
+
+\paragraph{Inherited-open / conditional.}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{OPEN-FP-5-GLUEBALL:} lightest-scalar-glueball mass undelivered (Section~\ref{sec:open}).
+\item \textbf{OPEN-SS-19:} deuteron $+5.3\%$ leading-order residual; candidate NLO mechanism rejected as not validated.
+\item \textbf{SS-9 conditionality:} the connectivity theorem is conditional on C5--C8 (OPEN-SS-29/30/33/37).
+\item \textbf{CONJ-SS-Gluon-4Vertex:} flagged forward-looking conjecture, not closed.
+\item Accuracy honesty: the alpha-cluster cascade is RMS $<1\%$ on the twelve strict-$N{=}Z$ nuclei; the deuteron carries its $5.3\%$ residual openly.
+\end{itemize}
+
+\paragraph{Falsifiers.}
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Gluon count or quantum numbers.} A measured ninth gluon, a massive gluon, or a non-spin-1 gluon contradicts the SS-1c edge-plus-diagonal derivation (Section~\ref{sec:gluons}).
+\item \textbf{Mode complementarity.} A demonstration that $\sinsqthetaW$ and $\alphas$ do not share the single 600-cell spectral-trace origin --- e.g.\ a substrate-scale measurement forcing $\sinsqthetaW + \alphas \neq 1/\phig$ --- falsifies Eq.~\eqref{eq:complementarity}.
+\item \textbf{String tension.} A string tension measured materially outside the band around $926.5~\MeVfm$ falsifies the $z^2$ face-mode derivation (Eq.~\eqref{eq:sigma}).
+\item \textbf{Alpha-cluster cascade.} A strict-$N{=}Z$ alpha-chain nucleus in $\Nalpha\in[3,14]$ whose binding violates the $3\Nalpha-6$ edge formula beyond the stated residual band, or a glueball found at a mass incompatible with the closed-loop $\hDP$ model once it is derived, falsifies the cascade.
+\end{enumerate}
+
+% ============================================================
+% SECTION 10: Physical interpretation
+% ============================================================
+\section{Physical Interpretation}\label{sec:interp}
+
+In the CPP ontology, the strong interaction is the propagation of $\hDP$ configurations along the edges of the qCP tetrahedral cage. A colour charge is a configuration of charge labels on the cage vertices; a gluon is a transient $\hDP$ that hops along a base edge (colour-changing) or carries a phase-difference between vertices (colour-neutral diagonal); confinement is the absence of any stable isolated-colour configuration of the open-path $\hDP$ structure. The colour group is $\SUthree$ because the eight hopping operators on the three-vertex base close into exactly the $\SUthree$ algebra (Eq.~\eqref{eq:su3}); there are eight gluons because there are three base edges (six real/imaginary channels) and two independent diagonal modes. The strong coupling and the Weinberg angle are not separate inputs but two harmonics of one substrate vibration: $\alphas$ is the share of the adjacency spectral trace carried by face ($A^3$) modes and $\sinsqthetaW$ the share carried by edge ($A^2$) modes, their sum fixed at $1/\phig$ by the propagation-efficiency factor. Nuclear binding is the same DP-energy quantum $\Bpair = \Mzero/\phig$ recurring across scales, with the alpha-cluster spectrum organised by the edge count $3\Nalpha-6$ of the closed alpha-polytope.
+
+\subsection{CP/GP Signature at This Scale}\label{sec:signature}
+
+\textbf{Load-bearing axioms.} The strong-sector derivation rests on the 600-cell topology axiom (supplying $z=12$, the edge/face counts, and the tetrahedral base), the DI-bit hopping-dynamics axiom (supplying the eight hopping operators and the colour algebra), the propagation-efficiency axiom (supplying the $1/\phig$ weighting common to $\alphas$, $\sinsqthetaW$, $\Mzero$, and $\Bpair$), and the lattice-scale grounding axiom (fixing MeV units through $\me$). $\SUthree$ colour enters through the cage-hopping algebra (SS-1b) and the derived Casimir $\CF = 4/3$ (SS-2).
+
+\textbf{Visible-versus-smoothed discreteness.} The lattice discreteness is \emph{visible} in this paper as the eight discrete gluon channels (three edges $+$ two diagonals), the integer edge/face counts $E=720$, $F=1200$ in the ratio $\alphas/\sinsqthetaW = 5/3$, the coordination $z=12$, the integer edge count $3\Nalpha-6$ of the alpha-polytopes, and the $\phig$ factors throughout. It is \emph{smoothed} only in the running-coupling comparison, where $\alphas = 5/(8\phig)$ is matched to a renormalization-scheme-dependent effective value, and in the string-tension comparison against a continuum lattice-QCD band.
+
+\textbf{Macroscopic shadow.} The empirical regularities --- that the colour group is exactly $\SUthree$ with eight massless spin-1 gluons, that the strong and electroweak couplings sum to a fixed golden-ratio constant, and that the light alpha-cluster nuclei sit on a single integer edge-count law at sub-percent accuracy --- are, within the CPP ontology, the macroscopic shadow of the sub-quantum claim that the strong sector is the hopping dynamics of one tetrahedral cage on one lattice. What conventional physics records as a postulated gauge group, eight measured gluons, two unrelated couplings, and a table of nuclear binding energies is, in CPP, one cage-hopping algebra plus one spectral partition plus one binding quantum.
+
+% ============================================================
+% SECTION 11: CPP-to-conventional mapping
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}\label{sec:mapping}
+
+\begin{table}[H]
+\centering
+\caption{Structural correspondence between the CPP strong-sector mechanism and the conventional QCD description. The mapping is at the level of degrees of freedom, symmetry, and observable, not a literal identity --- CPP operates at finer granularity than perturbative QFT.}
+\label{tab:mapping}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+\textbf{CPP mechanism} & \textbf{Conventional physics} \\
+\midrule
+Eight DI-bit hopping operators on the tetrahedral base, $T^a=\lambda^a/2$ & The $SU(3)_c$ colour gauge algebra \\
+Transient $\hDP$ on three base edges $+$ two diagonal modes & The eight gluons (massless, spin-1) \\
+Open-path $\hDP$ has no stable isolated-colour state & Colour confinement \\
+Positive cage $\beta$-coefficient & Asymptotic freedom \\
+Face-mode multiplicity $z^2/\phig$ on the DP quantum $\Mzero$ & The string tension $\sigma$ \\
+Face-mode fraction of the adjacency spectral trace & The strong coupling $\alphas$ \\
+Edge-mode fraction of the same spectral trace & The Weinberg angle $\sinsqthetaW$ \\
+Binding quantum $\Bpair=\Mzero/\phig$ across $3\Nalpha-6$ polytope edges & The light alpha-cluster nuclear binding energies \\
+(undelivered) closed-loop $\hDP$ mass & The lightest scalar glueball \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% SECTION 12: Discussion - SF-line placement
+% ============================================================
+\section{Discussion: SF-line Placement and the $\S10$ Consistency Threads}\label{sec:discussion}
+
+SF-5 supplies three of the cross-sector consistency threads that the SF-7 grand-unification paper assembles into its $\S10$ consistency-theorem family. Each follows the three-clause consistency template (single shared source; no independent calibration; no conflicting prediction).
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{SF-5 $\leftrightarrow$ SF-2.} $SU(2)_L$ (SF-2) and $SU(3)_c$ (SF-5) both emerge from the 600-cell and the binary icosahedral group with different cage geometries. Consistency clause: one substrate symmetry, two gauge groups, no conflicting structure.
+\item \textbf{SF-5 $\leftrightarrow$ SF-3.} The mode-fraction structure: $\alphas = 5/(8\phig)$ (SF-5/SF-3 share this) and the complementarity with $\sinsqthetaW = 3/(8\phig)$, summing to $1/\phig$; the colour Casimir $\CF=4/3$ (SS-2) used in SF-3's top-quark relay is sourced here. Consistency clause: the colour sector is sourced identically in both, with one spectral trace and no independent calibration.
+\item \textbf{SF-5 $\leftrightarrow$ SF-1/SF-4.} The mass anchor $\Mzero=\me z/\phig$ that fixes the nuclear-mass scale here is the same anchor that fixes the charged-lepton (SF-1) and neutrino (SF-4) masses. Consistency clause: all sectors derive their mass scale from $\Mzero$ on a single $\me$ calibration, with no conflicting calibration.
+\end{itemize}
+
+These threads are why the single-$\me$ anchoring of the strong sector matters beyond it: it lets the SF-7 master table commit to one calibration across all fermion masses and the nuclear scale alike, which is the load-bearing claim of the unification argument. Any cross-paper thread that needs resolving (for instance, a precise reconciliation of the SF-2 $SU(2)$ and SF-5 $SU(3)$ cage geometries) is surfaced here for the SF-7 window rather than resolved in SF-5.
+
+% ============================================================
+% SECTION 13: Conclusion
+% ============================================================
+\section{Conclusion}\label{sec:conclusion}
+
+The strong sector --- the $\SUthree$ colour algebra, the eight gluons, confinement and asymptotic freedom, the string tension, the strong coupling, and the light alpha-cluster nuclear binding cascade --- follows from the tetrahedral cage geometry of the 600-cell and a single calibration ($\me$), at theorem-level rigor where marked, with zero shape parameters. $\SUthree$ is exact (SS-1b) and unique within its operator representation (SS-3); the eight gluons are derived with masslessness and spin-1 (SS-1c); confinement and a positive $\beta$-function follow from the cage (SS-1d), with the string tension $\sigma = \Mzero z^2/(\phig\,\ledge)\approx 926.5~\MeVfm$ (SS-4); the strong coupling $\alphas = 5/(8\phig)$ is the face-mode complement of the Weinberg angle, summing to $1/\phig$; and the binding quantum $\Bpair = \Mzero/\phig = 2.342$~MeV organises the twelve strict-$N{=}Z$ alpha-chain nuclei at RMS below $1\%$ (SS-7). The lightest-scalar-glueball mass (OPEN-FP-5-GLUEBALL), the deuteron $+5.3\%$ NLO residual (OPEN-SS-19), the SS-9 conditionality, and the four-vertex gluon-counting conjecture remain honestly open; none is headlined.
+
+\subsection{Swarm-Validation Contribution}\label{sec:swarm}
+
+SF-5 contributes the following correspondences to the cumulative CPP swarm, all from the same unchanged axiom stack: the exact $\SUthree$ colour algebra, the unique-in-representation realisation, the eight massless spin-1 gluons, confinement and asymptotic freedom, the string tension $926.5~\MeVfm$, the strong coupling $\alphas = 5/(8\phig)$, the exact complementarity $\sinsqthetaW+\alphas = 1/\phig$, the binding quantum $\Bpair = 2.342$~MeV, and the twelve-nucleus alpha-cluster cascade (RMS $<1\%$). Because each correspondence is fixed by geometry once $\me$ is set, the probability of reproducing them jointly by accident or hidden tuning scales as $(\text{residual band}/\text{typical parameter space})^{N}$ in the number of independent correspondences $N$, and is already very small at the swarm's present size. (The cumulative programme counter is updated in \texttt{predictions.md} at ship time via a flagged integration patch.)
+
+\subsection{Problem Status After This Paper}\label{sec:status}
+
+\begin{itemize}[leftmargin=2em]
+\item Strong-sector flagship synthesis: \textbf{assembled} (theorem-level $\SUthree$/gluon core headlined; cascade foregrounded; conjecture flagged).
+\item \textbf{NEW:} OPEN-FP-5-GLUEBALL registered (lightest-scalar-glueball mass undelivered); OPEN-FP-5-GLUON reserved for four-vertex closure attempts.
+\item \textbf{INHERITED-OPEN:} OPEN-SS-19 (deuteron NLO residual); SS-9 conditionality (OPEN-SS-29/30/33/37).
+\item SF-7 $\S10$ threads SF-5$\leftrightarrow$SF-2, SF-5$\leftrightarrow$SF-3, SF-5$\leftrightarrow$SF-1/SF-4 identified and ready for the consistency-theorem family.
+\end{itemize}
+
+% ============================================================
+% ACKNOWLEDGEMENTS
+% ============================================================
+\section*{Acknowledgements}
+
+This paper is a synthesis and reframing of shipped CPP results (SS-1 through SS-9, SM-7, SM-8) into a unified strong-sector account; it introduces no new derivation. Thomas Lee Abshier (ND) conceived the Conscious Point Physics program, the 600-cell substrate hypothesis, and the physical intuitions underlying the tetrahedral-cage colour, gluon, confinement, and nuclear-binding mechanisms. Claude Opus (Anthropic) performed the corpus survey, the gluon-counting presentation adjudication (lead with the shipped theorem-level result; flag the four-vertex conjecture), the honest correction of the deuteron figure (zero-parameter binding quantum $2.342$~MeV with an open $5.3\%$ NLO residual, in place of an over-optimistic sub-percent claim), and the drafting. The 600-cell lattice hypothesis (AXIM-2) remains an axiom. Repository: \url{https://github.com/Hyperphysics-Institute/CPP}; OSF: \url{https://osf.io/9dfya/} (DOI 10.17605/OSF.IO/JXE8D).
+
+\paragraph{Data and code availability.} The numerical headline claims of this paper --- the strong coupling $\alphas = 5/(8\phig)$, the complementarity $\sinsqthetaW+\alphas=1/\phig$, the string tension $926.5~\MeVfm$, the binding quantum $\Bpair = 2.342$~MeV, and the $3\Nalpha-6$ alpha-cluster edge counts --- are reproduced from the single $\me$ calibration and 600-cell geometry, with zero fitted parameters, by a standalone verifier \texttt{flagship\_papers/strong/code/1520\_verify\_sf5\_core.py}, which asserts each headline value against the figure quoted here so that any drift between code and paper fails an assertion. A thin asserted reproducibility notebook is added at deposit time (mirroring the SF-3 pilot). The verifier runs on the Python standard library alone, with no external data files.
+
+\appendix
+
+% ============================================================
+% APPENDIX A: String-tension factorisation and z^2 correction
+% ============================================================
+\section{The String-Tension Factorisation and the $z^2$ Correction}\label{app:sigma}
+
+This appendix makes the string-tension result (Section~\ref{sec:confinement}) self-contained by writing out the factorisation and the $z\pi \to z^2$ correction. Nothing here is new to SF-5; it is a transcription of inherited SS-4 structure.
+
+\paragraph{The factorisation.} The string tension factorises into a bare DP-energy-per-length scale times a dimensionless geometric multiplicity:
+\begin{equation}
+\sigma = \frac{\Mzero}{\ledge}\times\frac{z^2}{\phig},
+\label{eq:sigmafactor}
+\end{equation}
+with $\Mzero = \me z/\phig = 3.79$~MeV the DP energy quantum (SM-8), $\ledge$ the 600-cell edge length, $z=12$ the coordination, and $\phig$ the golden ratio. The first factor is the bare chain tension; the second is the face-mode multiplicity by which the full string tension exceeds it.
+
+\paragraph{The $z\pi \to z^2$ correction.} The earlier SS-2 heuristic used a circular-orbit (zitterbewegung) factor $z\pi$ in place of $z^2$,
+\begin{equation}
+\sigma_{\mathrm{SS\text{-}2}} = \frac{\Mzero\,z\pi}{\phig\,\ledge} \approx 243~\MeVfm,
+\end{equation}
+which underestimates the tension. SS-4 replaces the $z\pi$ heuristic with the $z^2$ face-mode count, a factor $z/\pi \approx 3.82$ larger, giving
+\begin{equation}
+\sigma = \frac{\Mzero\,z^2}{\phig\,\ledge} \approx 926.5~\MeVfm,
+\end{equation}
+consistent with the lattice-QCD range. The correction is a counting correction (face-mode multiplicity $z^2$, not a circular-orbit factor $z\pi$); every factor is either the measured constant $\me$ or a 600-cell geometric quantity, so the string tension carries no calibration beyond $\me$.
+
+% ============================================================
+% BIBLIOGRAPHY (inline; master entry abshier2026sf5 added at ship)
+% ============================================================
+\begin{thebibliography}{99}
+
+\bibitem{abshier_ss1b} T.~L.~Abshier et al., \emph{$SU(3)$ Colour Algebra Exact from the Tetrahedral Cage}, SS-1b, Hyperphysics Institute (2026).
+\bibitem{abshier_ss1c} T.~L.~Abshier et al., \emph{The Eight Gluons as hDP Structures on the Tetrahedral Subgraph}, SS-1c, Hyperphysics Institute (2026).
+\bibitem{abshier_ss1d} T.~L.~Abshier et al., \emph{Confinement, Asymptotic Freedom, and the QCD $\beta$-Function}, SS-1d, Hyperphysics Institute (2026).
+\bibitem{abshier_ss2} T.~L.~Abshier et al., \emph{Lattice-Scale Nucleon Structure and the Colour Casimir $C_F=4/3$}, SS-2, Hyperphysics Institute (2026).
+\bibitem{abshier_ss3} T.~L.~Abshier et al., \emph{Uniqueness of $SU(3)$ from the Tetrahedral Cage}, SS-3, Hyperphysics Institute (2026).
+\bibitem{abshier_ss4} T.~L.~Abshier et al., \emph{The QCD String Tension from 600-Cell Face-Mode Multiplicity}, SS-4, Hyperphysics Institute (2026).
+\bibitem{abshier_ss5} T.~L.~Abshier et al., \emph{Light Nuclei from the Open-Vertex Cascade}, SS-5, Hyperphysics Institute (2026).
+\bibitem{abshier_ss7} T.~L.~Abshier et al., \emph{The Alpha-Cluster Regime and the $3N-6$ Edge Formula}, SS-7, Hyperphysics Institute (2026).
+\bibitem{abshier_ss9} T.~L.~Abshier et al., \emph{Simplicial Alpha-Polytope Connectivity}, SS-9, Hyperphysics Institute (2026).
+\bibitem{abshier_sm7} T.~L.~Abshier et al., \emph{Strong Coupling, Mode Complementarity, and the Quark Koide Phase}, SM-7, Hyperphysics Institute (2026).
+\bibitem{abshier_sm8} T.~L.~Abshier et al., \emph{Quark Generations and the Zero-Parameter Cage Mass Formula}, SM-8 v4.0, Hyperphysics Institute (2026).
+\bibitem{abshier_sf3} T.~L.~Abshier and {Claude Opus}, \emph{SF-3: The Quark Sector from 600-Cell Geometry}, v1.3, Hyperphysics Institute (2026).
+\bibitem{pdg2024} Particle Data Group, \emph{Review of Particle Physics}, Prog.\ Theor.\ Exp.\ Phys.\ (2024).
+\bibitem{ame2020} M.~Wang et al., \emph{The AME 2020 atomic mass evaluation}, Chinese Phys.\ C \textbf{45}, 030003 (2021).
+
+\end{thebibliography}
+
+\end{document}
