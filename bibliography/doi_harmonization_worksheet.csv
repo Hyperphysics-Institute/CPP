@@ -1,32 +1,42 @@
 bib_key,paper_id,version,current_doi_claim,REAL_DOI__fill,KEEP_UMBRELLA_open_project__Y_N,osf_url__optional,title
-abshier2026ew1,EW-1,v1,UMBRELLA,,,,Electroweak Introduction: The 600-Cell Vacuum and Gauge
-abshier2026ew2,EW-2,v1,UMBRELLA,,,,The W Boson from CPP
-abshier2026ew3,EW-3,v1,UMBRELLA,,,,The Z Boson from CPP
-abshier2026ew4,EW-4,v1,UMBRELLA,,,,The Higgs Boson from CPP
-abshier2026ew5,EW-5,v1,UMBRELLA,,,,Electroweak Unification
-abshier2026qm1,QM-1,v1,UMBRELLA,,,,"Emergence of the Schr""odinger Equation from DI-Bit Hopp"
-abshier2026sm1,SM-1,v6,UMBRELLA,,,,Binding Mechanisms and Cage Stability in the 600-Cell L
-abshier2026sm10,SM-10,v2.0,NONE,,,,First-Principles Quark Mass from Finite Element Chain N
-abshier2026sm2,SM-2,v30,UMBRELLA,,,,Mass Generation from Geometric Hierarchies
-abshier2026sm3,SM-3,v6,UMBRELLA,,,,K3 Spectral Theorem and the Koide Formula
-abshier2026sm4,SM-4,v5,UMBRELLA,,,,Lepton Mass Hierarchy and the Koide Phase
-abshier2026sm5,SM-5,v1,UMBRELLA,,,,Tribimaximal Neutrino Mixing from the K3 Cage Base Grap
-abshier2026sm6,SM-6,v3,UMBRELLA,,,,The Charged Lepton Mass Spectrum from 600-Cell Lattice 
-abshier2026sm7,SM-7,v2.2,UMBRELLA,,,,The Heavy Quark Mass Spectrum and Strong Coupling from 
-abshier2026sm8,SM-8,v4.1,NONE,,,,Quark Generation Structure from 600-Cell Distance Shell
-abshier2026sm9,SM-9,v2.2,NONE,,,,The Quark Mass Scaling Exponent: Derivation from Pair C
+abshier2026ew1,EW-1,v1,UMBRELLA,10.17605/OSF.IO/6DM45,,https://osf.io/6dm45/,Electroweak Introduction: The 600-Cell Vacuum and Gauge
+abshier2026ew2,EW-2,v1,UMBRELLA,10.17605/OSF.IO/3XNK5,,https://osf.io/3xnk5/,The W Boson from CPP
+abshier2026ew3,EW-3,v1,UMBRELLA,10.17605/OSF.IO/ZWQRY,,https://osf.io/zwqry/,The Z Boson from CPP
+abshier2026ew4,EW-4,v1,UMBRELLA,10.17605/OSF.IO/SDW7G,,https://osf.io/sdw7g/,The Higgs Boson from CPP
+abshier2026ew5,EW-5,v1,UMBRELLA,10.17605/OSF.IO/3SX4H,,https://osf.io/3sx4h/,Electroweak Unification
+abshier2026qm1,QM-1,v1,UMBRELLA,10.17605/OSF.IO/FBNJC,,https://osf.io/fbnjc/,"Emergence of the Schr""odinger Equation from DI-Bit Hopp"
+abshier2026sm1,SM-1,v6,UMBRELLA,10.17605/OSF.IO/R8ESY,,https://osf.io/r8esy/,Binding Mechanisms and Cage Stability in the 600-Cell L
+abshier2026sm10,SM-10,v2.0,NONE,10.17605/OSF.IO/23X7N,,https://osf.io/23x7n/,First-Principles Quark Mass from Finite Element Chain N
+abshier2026sm2,SM-2,v30,UMBRELLA,10.17605/OSF.IO/Z98UM,,https://osf.io/z98um/,Mass Generation from Geometric Hierarchies
+abshier2026sm3,SM-3,v6,UMBRELLA,10.17605/OSF.IO/C5A7B,,https://osf.io/c5a7b/,K3 Spectral Theorem and the Koide Formula
+abshier2026sm4,SM-4,v5,UMBRELLA,10.17605/OSF.IO/6EA94,,https://osf.io/6ea94/,Lepton Mass Hierarchy and the Koide Phase
+abshier2026sm5,SM-5,v1,UMBRELLA,10.17605/OSF.IO/UVS5H,,https://osf.io/uvs5h/,Tribimaximal Neutrino Mixing from the K3 Cage Base Grap
+abshier2026sm6,SM-6,v3,UMBRELLA,10.17605/OSF.IO/PGR38,,https://osf.io/pgr38/,The Charged Lepton Mass Spectrum from 600-Cell Lattice 
+abshier2026sm7,SM-7,v2.2,UMBRELLA,10.17605/OSF.IO/BE5Q8,,https://osf.io/be5q8/,The Heavy Quark Mass Spectrum and Strong Coupling from 
+abshier2026sm8,SM-8,v4.1,NONE,10.17605/OSF.IO/RZMPA,,https://osf.io/rzmpa/,Quark Generation Structure from 600-Cell Distance Shell
+abshier2026sm9,SM-9,v2.2,NONE,10.17605/OSF.IO/WJ3KM,,https://osf.io/wj3km/,The Quark Mass Scaling Exponent: Derivation from Pair C
 abshier2026sm9v1,SM-9,v1.0,NONE,,,,"The Quark Mass Scaling Exponent: Constraints, Negative "
-abshier2026sr1,SR-1,v17,UMBRELLA,,,,Mechanistic Derivation of Relativistic Effects via Spac
+abshier2026sr1,SR-1,v17,UMBRELLA,10.17605/OSF.IO/BU8AQ,,https://osf.io/bu8aq/,Mechanistic Derivation of Relativistic Effects via Spac
 abshier2026sr2,SR-2,v1.0,UMBRELLA,,,,"The Spin-Bit Axiom: Necessity, Construction, and the De"
-abshier2026ss1,SS-1,v2,UMBRELLA,,,,The Strong Sector from the 600-Cell Lattice
-abshier2026ss2,SS-2,v1.0,NONE,,,,Lattice-Scale Grounding and Nucleon Structure from 600-
-abshier2026ss3,SS-3,v1.3,NONE,,,,Uniqueness of SU(3) from the Tetrahedral Cage
-abshier2026ss4,SS-4,v0.1,NONE,,,,String Tension from the 600-Cell Face-Mode Multiplicity
-abshier2026ss5,SS-5,v6,NONE,,,,Light-Nuclei Binding Energies from the Open-Vertex Casc
-abshier2026ss6,SS-6,v0.1,NONE,,,,Deuteron Observables Beyond Binding: Scope and Limits o
-abshier2026ss7,SS-7,v1.2,NONE,,,,The Alpha-Cluster Regime and the $3N-6$ Edge Formula: Z
-abshier2026ss8,SS-8,v1.0,NONE,,,,Interstitial-Neutron Binding and the $2E/V$ Scaling Law
-abshier2025,,,UMBRELLA,,,,Conscious Point Physics Paper Series
-abshier2026_chirality_continuum,,,umbrella-in-note,,,,Chirality Continuum from Substrate to Observable EFT: J
-abshier2026_dynamical_substrate_law,,,umbrella-in-note,,,,The Dynamical Substrate Law: Substrate-Locality of DI-B
-abshier_eu1_2026,,,NONE,,,,EU-1: The Primordial Scalar Spectral Index from Substra
+abshier2026ss1,SS-1,v2,UMBRELLA,10.17605/OSF.IO/P73JQ,,https://osf.io/p73jq/,The Strong Sector from the 600-Cell Lattice
+abshier2026ss2,SS-2,v1.0,NONE,10.17605/OSF.IO/3HWE2,,https://osf.io/3hwe2/,Lattice-Scale Grounding and Nucleon Structure from 600-
+abshier2026ss3,SS-3,v1.3,NONE,10.17605/OSF.IO/Q48K5,,https://osf.io/q48k5/,Uniqueness of SU(3) from the Tetrahedral Cage
+abshier2026ss4,SS-4,v0.1,NONE,10.17605/OSF.IO/GK5WY,,https://osf.io/gk5wy/,String Tension from the 600-Cell Face-Mode Multiplicity
+abshier2026ss5,SS-5,v6,NONE,10.17605/OSF.IO/7NZHT,,https://osf.io/7nzht/,Light-Nuclei Binding Energies from the Open-Vertex Casc
+abshier2026ss6,SS-6,v0.1,NONE,10.17605/OSF.IO/76NYH,,https://osf.io/76nyh/,Deuteron Observables Beyond Binding: Scope and Limits o
+abshier2026ss7,SS-7,v1.2,NONE,10.17605/OSF.IO/J6C2Y,,https://osf.io/j6c2y/,The Alpha-Cluster Regime and the $3N-6$ Edge Formula: Z
+abshier2026ss8,SS-8,v1.0,NONE,10.17605/OSF.IO/362QC,,https://osf.io/362qc/,Interstitial-Neutron Binding and the $2E/V$ Scaling Law
+abshier2025,,,UMBRELLA,,Y,,Conscious Point Physics Paper Series
+abshier2026_chirality_continuum,,,umbrella-in-note,10.17605/OSF.IO/FMNXT,,https://osf.io/fmnxt/,Chirality Continuum from Substrate to Observable EFT: J
+abshier2026_dynamical_substrate_law,,,umbrella-in-note,10.17605/OSF.IO/TMA6X,,https://osf.io/tma6x/,The Dynamical Substrate Law: Substrate-Locality of DI-B
+abshier_eu1_2026,,,NONE,10.17605/OSF.IO/2VRU7,,https://osf.io/2vru7/,EU-1: The Primordial Scalar Spectral Index from Substra
+abshier2026sf2,SF-2,v1.01,NONE,10.17605/OSF.IO/5NBCZ,,https://osf.io/5nbcz/,SF-2: Electroweak Cage-Boson Unification
+abshier2026sf4,SF-4,v4.4,NONE,10.17605/OSF.IO/S4GQF,,https://osf.io/s4gqf/,SF-4: Neutrino Sector Unification
+abshier2026_capotauro,Capotauro,v2.0,NONE,10.17605/OSF.IO/V2G3J,,https://osf.io/v2g3j/,Capotauro: Three-Way Cross-Sector Substrate-Level Unification
+abshier2026qm2,QM-2,v1.0,NONE,10.17605/OSF.IO/YT82E,,https://osf.io/yt82e/,QM-2: Superposition and Interference
+abshier2026qm3,QM-3,v1.0,NONE,10.17605/OSF.IO/29CG4,,https://osf.io/29cg4/,QM-3: Entanglement and Bell Inequality
+abshier2026qm4,QM-4,v1.0,NONE,10.17605/OSF.IO/DTQFE,,https://osf.io/dtqfe/,QM-4: The Measurement Problem
+abshier2026qm5,QM-5,v1.0,NONE,10.17605/OSF.IO/3P8DF,,https://osf.io/3p8df/,QM-5: Emergent QFT
+abshier2026qm6,QM-6,v1.0,NONE,10.17605/OSF.IO/34RXZ,,https://osf.io/34rxz/,QM-6: Full Synthesis
+abshier2026ss9,SS-9,v1.0,NONE,10.17605/OSF.IO/ZK9GV,,https://osf.io/zk9gv/,SS-9: Simplicial Alpha-Polytope Connectivity
+abshier2026_qdpdm_conjecture,qDP-DM Conjecture,n/a,NONE,10.17605/OSF.IO/6XABN,,https://osf.io/6xabn/,Dark Matter as Charge-Neutral qDP and hTetra Aggregates
