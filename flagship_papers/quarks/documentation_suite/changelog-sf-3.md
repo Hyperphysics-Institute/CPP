@@ -23,6 +23,12 @@ Title block -> **Version 1.0 SHIPPED**. Recompile: 13 pages, 0 errors. All four 
 
 ---
 
+## Phase 7A documentation suite — 14 June 2026 (Session 161, Patch 1507; 1500-band SF-3 window)
+
+Paper-level Phase 7A delivered: the 7-file companion documentation suite under `documentation_suite/` — `development-SF-3.md` (Tier 3), `glossary-SF-3.md`, `mechanism-SF-3.md`, `phenomena-SF-3.md`, `philosophy-SF-3.md`, `reviews-SF-3.md`, `keywords-SF-3.md` — plus the Tier-2 `transcript-SF-3.md` pointer-map. Tier-4 `reasoning-SF-3.md` + `changelog-sf-3.md` were already in place. **Deferred:** Section B verification *notebook* (.ipynb) — the `.py` verifier `code/1500_verify_sf3_core.py` already passes ALL CHECKS and stands as the verification artifact; the executed-notebook form is a thin remaining 7A item. **Remaining for Phase 7B/7C:** deep theory-doc passes (programme_orientation, theory-overview, axiom-registry, master_glossary, founders_vision, future_projects, problem_histories), the anthology chapter (C13), OSF deposit, the §13.1 wording decision, the optional Sonnet hostile pass, and the H6 final mechanical audit.
+
+---
+
 ## v0.4 — 14 June 2026 (Session 161, Patch 1504; 1500-band SF-3 window)
 
 **Third review-incorporation pass — over-claim tightening.** Folds the v0.3 panel (verbatim in `review/`, `*_v0.3_*`). **All three returned SHIP again** (ChatGPT SHIP; Grok SHIP; Copilot ready-for-incorporation) — remaining items explicitly stylistic, not scientific. Applied the two genuine over-claim corrections plus one restatement:
