@@ -6,6 +6,21 @@
 
 ---
 
+## v0.4 — 14 June 2026 (Session 161, Patch 1504; 1500-band SF-3 window)
+
+**Third review-incorporation pass — over-claim tightening.** Folds the v0.3 panel (verbatim in `review/`, `*_v0.3_*`). **All three returned SHIP again** (ChatGPT SHIP; Grok SHIP; Copilot ready-for-incorporation) — remaining items explicitly stylistic, not scientific. Applied the two genuine over-claim corrections plus one restatement:
+- **"forced" -> "selected by the antipodal-identification mechanism"** for the three-generation count (abstract §(iv), §6, §9 ledger, §13.1) (Copilot: SM-8 gives a geometric *mechanism*, not a uniqueness/necessity proof — "forced" overstated it).
+- **§4 "One spectral trace gives both the electroweak and the strong coupling"** reframed to "Within the inherited SM-6/SM-7 framework, a single spectral trace supplies both couplings as complementary edge- and face-mode fractions --- a mode-fraction correspondence, not a dynamical unification" (ChatGPT nit A + Copilot over-claim a — bounds the claim to the inherited framework and to a correspondence, not a physical unification).
+- **§13 conclusion:** restated that the mass values do not depend on SM-10's still-calibrated chain-network mechanism (its first-principles closure is a mechanism-depth question, not a mass-prediction caveat) (Copilot/ChatGPT).
+
+Recompile: 13 pages, 0 errors. Numbers unchanged. Shared-registry edits still DEFERRED to ship.
+
+**HELD (pending Thomas):** ChatGPT's nit B asks to further soften the §13.1 implausibility-of-accident sentence ("the probability of reproducing them jointly by accident...") — but that is *required* PD-001 §4.1B template content (the implausibility statement). Not auto-applied; folded into the open §13.1 wording decision (which also covers the earlier "astronomically small" -> "very small" softening). **Editorial-only, not applied:** ChatGPT nit C ("hierarchy without hierarchy" appears 2x — deliberate motif); Grok's optional abstract call-out box.
+
+**Status:** three full review rounds, unanimous SHIP each round; nits now exhausted/stylistic. Ready for the ship decision.
+
+---
+
 ## v0.3 — 14 June 2026 (Session 161, Patch 1503; 1500-band SF-3 window)
 
 **Second review-incorporation pass — polish to ship-ready.** Folds the v0.2 panel (ChatGPT, Grok, Copilot — verbatim in `review/`, `*_v0.2_*`). **All three returned SHIP** (Grok SHIP; ChatGPT SHIP after 2 wording fixes; Copilot ship-ready after 3 micro-edits). No physics or structural issues found by any reviewer; all numbers re-confirmed. Polish applied:
