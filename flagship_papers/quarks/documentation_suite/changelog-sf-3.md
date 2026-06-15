@@ -29,6 +29,22 @@ Paper-level Phase 7A delivered: the 7-file companion documentation suite under `
 
 ---
 
+## Phase 7B sweep + 7C final audit — 14 June 2026 (Session 161, Patch 1509; 1500-band SF-3 window)
+
+**Phase 7B theory-doc sweep** (the program-level orientation docs beyond the 1506 registry integration):
+- `programme_orientation.md` — NEW **Chapter 22k** (SF-3 quark-sector synthesis) in Part VI, with the calibration-route adjudication + Prop 5.1 + OPEN-FP-3-CKM body integration; Part VI scope note + last-updated note; scorecard headline UNCHANGED at 108. (Clears the C10 audit FAIL.)
+- `theory-overview.md` — SF-3 row added to the flagship results table; SF-line status row → 4 SHIPPED (fixed the prior 4-listed/4-future mismatch).
+- `master_glossary.md` — Koide-phase entry extended with the SF-3 phase–mass independence (Prop 5.1); NEW **OPEN-FP-3-CKM** glossary entry.
+- `axiom-registry.md` — count-ledger note: axiom set UNCHANGED at 9, no new theorem (Prop 5.1 is bookkeeping), swarm UNCHANGED at 108 (synthesis; inherited predictions).
+- `future_projects.md` — SF-3 SHIPPED programme-level note; OPEN-FP-3-CKM flagged as the load-bearing quark-sector forward item.
+- `problem_histories/PH-OPEN-FP-3-CKM.md` — NEW problem-history file (per the doc-suite template).
+
+**Phase 7C final audit:** `bash scripts/publication_audit.sh SF-3` → **PUBLICATION AUDIT: PASS** (0 advisory warnings). H2 placeholder scan clean, verification script exits 0, pdflatex compiles, H7 bibliography central-only. **Tooling fix (registered openly per the symmetric-honesty discipline):** the audit's paper-locator used case-sensitive `find -name "${ID}_*.tex"`, which could not match the lowercase flagship filename convention (`sf-3_quarks.tex`) — a latent bug that would mis-fire on every lowercase-named paper (SF-2/SF-4 predate the audit script and were never run through it). Changed to `-iname` for both the `.tex` and fallback-dir locators; this is a general fix, and the SF-3 paper + its 10-file documentation suite were independently confirmed present before and after.
+
+**Protocol status:** Phase 7A complete (1507) + anthology chapter C13 (1508) + Phase 7B theory-doc sweep + Phase 7C audit PASS (1509). **Remaining (Thomas's discretion, non-blocking):** the §13.1 "very small" wording decision; the optional Sonnet hostile pass; the OSF deposit; the thin Section-B verification *notebook* (.ipynb) — the .py verifier already passes.
+
+---
+
 ## v0.4 — 14 June 2026 (Session 161, Patch 1504; 1500-band SF-3 window)
 
 **Third review-incorporation pass — over-claim tightening.** Folds the v0.3 panel (verbatim in `review/`, `*_v0.3_*`). **All three returned SHIP again** (ChatGPT SHIP; Grok SHIP; Copilot ready-for-incorporation) — remaining items explicitly stylistic, not scientific. Applied the two genuine over-claim corrections plus one restatement:

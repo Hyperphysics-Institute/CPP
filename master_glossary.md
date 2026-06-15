@@ -179,7 +179,11 @@ K = (Σm_i)/(Σ√m_i)² = 2/3, satisfied to 11 ppm for charged leptons. In CPP:
 
 ### Koide Phase (θ)
 
-The angle in the Koide parametrisation √m_i = (S/3)(1 + √2 cos(θ + 2πi/3)). Determines individual masses within a generation. For leptons: θ = 132.731° from cos θ = −(2/3)(1 + 3/(104φ)). For heavy quarks: θ = 124.035° from cos θ = −(2/3)(1 − 27/(104φ)).
+The angle in the Koide parametrisation √m_i = (S/3)(1 + √2 cos(θ + 2πi/3)). Determines individual masses within a generation. For leptons: θ = 132.731° from cos θ = −(2/3)(1 + 3/(104φ)). For heavy quarks: θ = 124.035° from cos θ = −(2/3)(1 − 27/(104φ)). The quark-sector synthesis (SF-3 v1.0) shows this phase depends only on {α_s, sin²θ_W, z} and not on the charm mass (Proposition 5.1, a bookkeeping separation), the independence holding because α_s is the structural value 5/(8φ).
+
+### OPEN-FP-3-CKM
+
+The open problem, registered at SF-3 v1.0 SHIP (Patch 1506), that the quark mixing matrix (CKM) and the quark CP-violating phase are not derived anywhere in the CPP corpus. SF-3 derives the quark masses and the three-generation count but leaves quark mixing inherited-open — the structural analog of the open neutrino δ_CP (a parallel of posture, not difficulty). Candidate (unscoped) closure route: a quark-sector cage-mixing structure analogous to SM-5's K₃ → tri-bimaximal derivation of the PMNS matrix. See `frontier_sectors/FP.md` and `problem_histories/PH-OPEN-FP-3-CKM.md`.
 
 ### Isotropic Shift (ε)
 

@@ -67,12 +67,12 @@ present () {
 
 # --- locate the paper directory and .tex -----------------------------------
 echo "--- Locating paper materials ---"
-TEX=$(find . -path ./.git -prune -o -name "${ID}_*.tex" -print 2>/dev/null | head -1)
+TEX=$(find . -path ./.git -prune -o -iname "${ID}_*.tex" -print 2>/dev/null | head -1)
 if [ -n "$TEX" ]; then
   PAPERDIR=$(dirname "$TEX")
   printf '  [PASS] %-46s %s\n' "paper .tex" "$TEX"
 else
-  PAPERDIR=$(find . -path ./.git -prune -o -type d -name "$ID" -print 2>/dev/null | head -1)
+  PAPERDIR=$(find . -path ./.git -prune -o -type d -iname "$ID" -print 2>/dev/null | head -1)
   printf '  [FAIL] %-46s no %s_*.tex found\n' "paper .tex" "$ID"; FAIL=1
 fi
 echo
