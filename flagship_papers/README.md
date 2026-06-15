@@ -37,7 +37,7 @@ Sequential ship of SF-1 → SF-2 → SF-3 → SF-4 → SF-5 → SF-6 → SF-7. S
 | **SF-2** | Electroweak Cage-Boson Unification — W±/W⁰/Z/H from 600-Cell Geometry | [`electroweak/`](electroweak/) | Planned (reframing + W⁰ novel registration; sub-shell-shape derivations) | 5–8 | (1), (2), (3) |
 | **SF-3** | Quark Sector Unification from 600-Cell Distance Shells | [`quarks/`](quarks/) | Planned (reframing) | 4–6 | (1), (4) |
 | **SF-4** | Neutrino Sector Unification from 600-Cell Geometry | [`neutrinos/`](neutrinos/) | **Active — audit complete (S37); mechanism selected (S39); OPEN-FP-SF-4-1 PARTIAL CLOSURE physical picture in hand (S41); OPEN-FP-SF-4-2 K3-Cage-Shell Consistency pending** | 10–14 | (1), (4) |
-| **SF-5** | Strong-Sector Unification — Gluon Re-counting, Glueballs, Confinement from Tetrahedral Vertex Bonding | [`strong/`](strong/) | Planned (synthesis of SS-1 through SS-9+ + OPEN-SS-6 glueball + OPEN-SS-37 routes) | 5–8 | (1), (2), (3), (4) |
+| **SF-5** | Strong-Sector Unification — SU(3) Colour, the Eight Gluons, Confinement, String Tension, and the Light-Nucleus Binding Cascade from the Tetrahedral Cage | [`strong/`](strong/) | **v1.0 SHIPPED 15 Jun 2026 (4/4 panel: ChatGPT/Grok/Gemini/Copilot)** | shipped | (1), (2), (3), (4) |
 | **SF-6** | Electromagnetism Unified — Classical, Relativistic, Quantum from eDP Sea Polarization | [`electromagnetism/`](electromagnetism/) | Planned (synthesis of EW-1 through EW-5 + SR-1 + QM-1 through QM-6) | 5–8 | (3), (4) |
 | **SF-7** | Standard Model Grand Unification — Hierarchy Without Hierarchy | [`unification/`](unification/) | Planned (depends on SF-1 through SF-6 ship) | 5–8 | (1), (3), (4) |
 

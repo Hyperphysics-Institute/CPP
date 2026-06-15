@@ -2,7 +2,7 @@
 
 **Purpose.** Pre-staged content for the SF-5 v1.0 SHIP programme-level (Phase 7B) registry integration. Every edit below touches a **shared hot-list registry** that the other five live windows (DM 800, Chirality 900, Project C 1000, CC 1100, δ_CP 1200) append to — so per the lightweight multi-window protocol rule (E), this integration is ONE flagged patch applied **after a refresh against live HEAD**, NOT pushed autonomously and NOT pre-built against a HEAD that will be stale by morning. This pack lets the morning integration be a fast mechanical apply.
 
-**Landing status: PENDING** (flip to `LANDED at Patch 15NN` when applied).
+**Landing status: LANDED at Patch 1525** (15 June 2026, Session 161). Applied against live HEAD after morning refresh; no overnight collisions (no other window pushed). H6 publication_audit.sh SF-5 = PASS.
 **Build instruction:** at apply time, `git fetch && git reset --hard origin/main`, then make each edit below with `str_replace` anchored on the stable substring shown, then `git format-patch` as ONE patch. If any anchor has drifted (another window edited that exact line), re-locate the nearest stable anchor and proceed — the inserts are append-style and order-independent.
 
 ---

@@ -26,6 +26,38 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 
 ---
 
+### OPEN-FP-5-GLUEBALL: Lightest-scalar-glueball mass from a closed tetrahedral hDP loop
+**Status:** **OPEN** — registered at SF-5 v1.0 SHIP (Session 161, Patches 1520→1521); inherited from OPEN-SS-6.
+**Sector(s):** FP / SF-5 (strong)
+**Priority:** MEDIUM (the named strong-sector known-unknown SF-5 does not close; the glueball is a recognised experimental target).
+**One-line statement:** Derive the lightest scalar glueball mass from a closed tetrahedral hDP loop in the 600-cell substrate.
+**What a solution looks like:** A closed-form mass from the geometric-frequency formula applied to a closed hDP loop (the glueball as the neutral spherical qDP mass, distinct from the cage-bound mesons), comparable against the lattice-QCD scalar-glueball range.
+**Dependencies:** SS-1c gluon hDP framework; OPEN-SS-6 glueball territory; the SS-4 string-tension scale.
+**Cross-sector connections:** None outside the strong sector; low collision risk.
+**Current best result:** Modelled as a closed tetrahedral hDP loop; no closed-form mass derived (inherited-open from OPEN-SS-6).
+**Falsification route:** Standard — a derived glueball mass incompatible with the closed-loop hDP model once derived, or a lattice/experimental glueball mass outside the eventual prediction.
+**Paper(s):** SF-5 v1.0 SHIPPED Session 161, Patches 1520→1521; §8 "Open Work" + §9 falsifier 4.
+**Registered:** 15 June 2026 Session 161, Patches 1520→1521.
+
+---
+
+### OPEN-FP-5-GLUON: Four-vertex gluon-counting closure (reserved)
+**Status:** **RESERVED** — registered at SF-5 v1.0 SHIP (Session 161, Patches 1520→1521).
+**Sector(s):** FP / SF-5 (strong)
+**Priority:** LOW (a forward-looking conjecture the corpus's own shipped theorem appears to absorb; deliberately not pursued).
+**One-line statement:** Determine whether CONJ-SS-Gluon-4Vertex (the SU(3) octet as a phenomenological dressing of a four-baryon-vertex bonding taxonomy) can be closed as a distinct prediction, or whether it collapses into the shipped SS-1c octet.
+**What a solution looks like:** Either a rigorous derivation that the four-vertex taxonomy yields predictions DISTINCT from the SM octet, or a demonstration that substrate enumeration yields exactly eight types (the conjecture's own falsification route (a), collapsing it to "the SM octet restated").
+**Dependencies:** SS-1c (eight gluons from 3 edges + 2 diagonals); CONJ-SS-Gluon-4Vertex.
+**Cross-sector connections:** None; low collision risk.
+**Current best result:** SF-5 leads with the shipped SS-1c theorem (eight gluons, one-to-one with the SM octet) and demotes the four-vertex picture to a flagged conjecture; SS-1c is arguably already the enumeration that collapses route (a).
+**Falsification route:** The conjecture's own route (a) above.
+**Paper(s):** SF-5 v1.0 SHIPPED Session 161, Patches 1520→1521; §4 + §8 (flagged, not headlined).
+**Registered:** 15 June 2026 Session 161, Patches 1520→1521.
+
+**[Maintainer note — FP count reconciliation pending]** The section header count ("16 active + 1 resolved (17 problems)") was extracted 2026-05-25 and predates OPEN-FP-3-CKM (registered 14 Jun, Patch 1506) and the two OPEN-FP-5-* entries above (15 Jun). The header count should be reconciled at the next FP audit; the auditable record is the per-entry blocks, which are current.
+
+---
+
 ### OPEN-FP-SF-2-η: Substrate-derivation of cage-stability dilution factor η
 **Status:** **OPEN** — registered at SF-2 v1.0 SHIP (Session 83 close, Patch 0370)
 **Sector(s):** FP / SF-2 (electroweak)
