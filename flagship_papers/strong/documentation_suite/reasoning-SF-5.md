@@ -1,0 +1,14 @@
+# Tier-4 Reasoning (consolidated) — SF-5 (v1.0)
+
+**Canonical verbatim record.** This file consolidates the per-patch Tier-4 reasoning fragments for the SF-5 arc. Verbatim substantive reasoning; housekeeping excluded. Per-patch sources: `../reasoning/1520.md` (v0.1 assembly), `../reasoning/1521.md` (v1.0 SHIP).
+
+## §1 — Assembly (Patch 1520)
+The full verbatim fragment is at `../reasoning/1520.md`. Substance: SF-5 is a synthesis/reframing, so the first move was transferring the existing outline (1304) + structural core (1309) into the 16-section .tex, mirroring SF-3 as the worked template. Before transfer I grepped the SS source corpus rather than trusting the staging docs, which caught two refinements: (1) the alpha cascade is RMS < 1% (8-set 0.91%) per SS-7 v1.2, tighter than the staging "< 1.5%"; (2) the deuteron is honestly zero-param 2.342 MeV + an open +5.3% LO residual (OPEN-SS-19, prolate-cage NLO rejected per SS-5 App B), not the stale outline-table 0.1% hit. The gluon-counting presentation decision (lead Picture 1, flag Picture 2) was inherited from 1304 and stated with its falsification-route rationale. SS-3 uniqueness was scoped to "within the operator representation" per SS-3's own conditional restatement. The assembly was labeled v0.1 (pre-review draft) per the SF-1/SF-3 convention. The verifier reproduces every headline number from m_e + geometry; all assertions pass.
+
+## §2 — SHIP cycle close (Patch 1521)
+The full verbatim fragment is at `../reasoning/1521.md`. Substance: four reviewers returned SHIP with zero verdict-flipping objections; three reached SCRIPT-EXECUTED on the embedded verifier. With clean convergence and independent verification already in hand, the discipline cuts toward restraint — integrate the genuine non-blocking calibration items, do not over-edit, do not invent changes. Five editorial items integrated; the only one touching substance was ChatGPT's §13.1 probability-language softening (the word "probability… scales as" implies a formal statistical model not supplied). I chose honesty over consistency-with-SF-3 and softened it, flagging that this creates a small inconsistency with SF-3's identical un-softened sentence — SF-3's own residual, not this window's to fix. All shared-registry integration remained deferred to the flagged ship-time patch per multi-window rule (E).
+
+## Carried decisions (for SF-7 assembly)
+- The mode-fraction complementarity (sin²θ_W + α_s = 1/φ) is the strongest §10 thread binding SF-1/SF-2/SF-3/SF-5; SF-7 should anchor the strong↔EW consistency clause here.
+- The SF-3 §13.1 probability-language inconsistency is flagged for reconciliation at SF-7 assembly.
+- The four-vertex gluon-counting conjecture (OPEN-FP-5-GLUON) is a deliberate non-headline; any SF-7 strong-sector synthesis should preserve that restraint.
