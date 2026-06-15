@@ -44,3 +44,19 @@
 **No registry touches.** All edits inside this window's own files (sf-3_quarks.tex, changelog, this file, review/). OPEN-FP-3-CKM + predictions.md swarm counter + bib migration still deferred to the ship-time flagged integration patch.
 
 **Next.** Cycle has Copilot/Grok/ChatGPT done; the remaining gate before SHIP is a Sonnet hostile pass (prompted via Claude) if Thomas wants it, then v0.2 -> ship. At ship: the deferred integration patch (refresh against origin/main first).
+
+---
+
+## Patch 1503 — SF-3 v0.2 -> v0.3 polish (all reviewers SHIP) (Session 161, 1500-band window)
+
+**Scope.** Fold the v0.2 panel into v0.3. All three reviewers returned SHIP (Grok unconditional; ChatGPT SHIP-after-2-wording-fixes; Copilot ship-ready-after-3-micro-edits), and all three explicitly re-checked the numerics and the inheritance chain and found no physics or structural issues. So v0.3 is pure polish — no physics, no number changes.
+
+**Triage.** Light-touch; I applied the union again. Two items were genuine remaining instances rather than new asks:
+- ChatGPT caught that the §13 conclusion still carried the *unqualified* "never depended on m_c" — I had only bounded the §5 and §7 instances in v0.2. Fixed the conclusion to match. This is the kind of thing that's easy to miss when you bound a phrase in two places but not the third; worth noting for future passes (grep the whole file for the phrase, not just the section you're editing).
+- ChatGPT's acknowledgements reword is right: "performed the phase-mass independence argument" reads like a new derivation, which is exactly what we spent v0.2 establishing it is NOT. "Identified and documented the phase-mass bookkeeping separation" matches the Prop 5.1 reframing.
+
+Copilot's three were clean clarifications (bare-partition gloss, A^3 physical meaning, 120x120 adjacency anchor) — all cheap, all improve a non-expert reader's footing, none change a claim. Copilot's micro-edit #1 ("remove unification in §4") was already done in v0.2 (the v0.2 §4 sentence reads "mode complementarity ... not a dynamical unification"); Copilot's fetch was stale there. I still completed the consistency tidy by softening the residual keyword and the §7 "complementarity layer," so no bare "unification" remains except the SF-7 grand-unification proper name.
+
+Grok's only suggestion was a boxed §7 adjudication summary for panel visibility — added as a one-box mdframed. Good call: the calibration adjudication is the paper's headline move and now it's visually unmissable.
+
+**State.** v0.3 is at three-reviewer SHIP. The remaining cycle gate is Sonnet (hostile/adversarial, prompted via Claude); after that, or if Thomas elects to ship on the three-reviewer convergence, v0.3 -> v1.0 SHIP carries the deferred integration patch (OPEN-FP-3-CKM registration in frontier_sectors/, predictions.md swarm-counter bump, inline-bib -> master cpp_references.bib migration), applied after a refresh against origin/main. I did NOT bump to v1.0 here — that's the ship decision, Thomas's to make.

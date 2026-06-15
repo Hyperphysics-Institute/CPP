@@ -6,6 +6,23 @@
 
 ---
 
+## v0.3 — 14 June 2026 (Session 161, Patch 1503; 1500-band SF-3 window)
+
+**Second review-incorporation pass — polish to ship-ready.** Folds the v0.2 panel (ChatGPT, Grok, Copilot — verbatim in `review/`, `*_v0.2_*`). **All three returned SHIP** (Grok SHIP; ChatGPT SHIP after 2 wording fixes; Copilot ship-ready after 3 micro-edits). No physics or structural issues found by any reviewer; all numbers re-confirmed. Polish applied:
+- **§13 conclusion:** remaining unqualified "the quark Koide phase never depended on $m_c$" -> "in the retained SM-7 isotropic-shift formula, the quark Koide phase does not depend on $m_c$" (ChatGPT — last unbounded instance; the §5/§7 instances were already bounded in v0.2).
+- **Acknowledgements:** "performed ... the phase--mass independence argument" -> "identified and documented the phase--mass bookkeeping separation" (ChatGPT — aligns the credit with the Prop 5.1 reframing).
+- **§4 bare-partition** sentence clarified ("...unweighted adjacency contributions before propagation-efficiency scaling") (Copilot micro #2).
+- **§10** added the physical meaning of $A^3$ ("oriented face-adjacency walks ... colour-flux relays across cage faces") (Copilot micro #3).
+- **§4** anchored the adjacency operator dimension ($120\times120$) (Copilot optional).
+- **Consistency tidy:** the residual "unification" in the keyword list and the §7 "complementarity layer" softened (Copilot micro #1 was already substantively done in v0.2 §4; this completes it). SF-7 grand-unification proper-name instances retained.
+- **§7 boxed adjudication summary** added for panel visibility (Grok suggestion).
+
+Recompile: 13 pages, 0 errors. Numbers unchanged -> verify script still validates. Shared-registry edits still DEFERRED to ship.
+
+**Status:** all three external reviewers at SHIP. Remaining gates before v1.0: optional Sonnet hostile pass; then the ship-time flagged integration patch (OPEN-FP-3-CKM, predictions.md swarm counter, bib migration).
+
+---
+
 ## v0.2 — 14 June 2026 (Session 161, Patch 1502; 1500-band SF-3 window)
 
 **Review-incorporation pass.** Folds the v0.1 multi-AI panel (ChatGPT, Grok, Copilot — verbatim in `review/`). Panel verdict: 1 SHIP (Grok), 2 REVISE-then-ship (ChatGPT, Copilot); **no physics blockers** — all three independently re-verified the numerics; every requested change was framing/wording. Changes applied:
