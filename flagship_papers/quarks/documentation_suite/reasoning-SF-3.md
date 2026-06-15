@@ -24,3 +24,23 @@
 **Format compliance.** 16-section standard followed: minimal source-header (no inline CHANGELOG block — points to `changelog-sf-3.md`); clean title block (no version-history paragraph); abstract + keywords + plain-language summary + raggedright + TOC; §Open Problems Addressed in the intro; §Physical Interpretation with the required §4.1A CP/GP Signature subsection (load-bearing axioms / visible-vs-smoothed discreteness / macroscopic shadow); §CPP-to-Conventional-Physics Mapping table; §Conclusion with the required §4.1B Swarm-Validation Contribution + Problem Status subsections.
 
 **Forward (next phase, Thomas-driven).** v1.0 → review: produce the CONV-001 single-block panel package for ChatGPT/Grok/Copilot; incorporate review; at ship, register OPEN-FP-3-CKM + bump predictions.md swarm counter via a flagged integration patch (refresh against origin/main first). Estimated 5–7 sessions to ship per the outline.
+
+---
+
+## Patch 1502 — SF-3 v0.1 -> v0.2 review incorporation (Session 161, 1500-band window)
+
+**Scope.** Fold the v0.1 panel (ChatGPT/Grok/Copilot) into v0.2. Reviews archived verbatim under `review/`. Net panel state: Grok SHIP; ChatGPT + Copilot REVISE-then-ship; zero physics blockers; all three re-verified the numerics independently (ChatGPT recomputed theta_quark = 124.035 deg matching the paper). Every requested change was framing/wording — the physics and all numbers are untouched.
+
+**Triage reasoning.** The three reviews converged tightly, which made triage clean. I treated the union of their requests as the change set rather than litigating verdict labels, because the requests were mutually compatible and each was individually correct:
+- The "complete quark mass spectrum" -> "heavy-quark" fix (Copilot) is a genuine over-claim correction: the V^(7/3) cage formula in §3 covers s/c/b/t only; light u/d are explicitly out of scope. I had carried "complete" into the abstract from loose drafting. Fixed.
+- The Prop 5.1 reframing (ChatGPT "bookkeeping lemma" + Copilot "SM-7 provenance pointer" + Grok "self-contained algebra") is the substantive one. All three are really one concern: as written, Prop 5.1 could read as a *new* result and asserts the m_c-independence rather than showing it. I (a) retitled it a bookkeeping separation, (b) added the SM-7 provenance sentence (alpha_s and the shift come from the adjacency spectrum, not a fit to PDG-extracted phase — which is the actual loophole Copilot identified: indirect m_c dependence via fitting), and (c) added the amplitude algebra (A_q is an overall Koide scale, cancels from the cos-theta ratio). This is the right fix: it keeps the proposition but makes it honest and self-contained.
+- The m_c qualification (ChatGPT) is correct and cheap: "never depended on m_c" overstates; "in the retained isotropic-shift formula, the phase does not depend on m_c" is the bounded, defensible claim. The unbounded version invited exactly the SM-7-provenance objection Copilot raised.
+- Softening "unification" -> "mode complementarity / shared geometric origin" (Copilot) is correct discipline: a shared spectral partition is not a dynamical unification, and the SF-line should reserve "unification" for SF-7's actual cross-sector consistency machinery.
+- The mass-scheme caveat (ChatGPT/Copilot) and the inherited-structural-choices sentence (Copilot/Grok) both head off "hidden parameter" objections without conceding anything — the calibration really is single-m_e; the caveats just make the boundary explicit.
+- The CKM/delta_CP bounding (ChatGPT/Grok) prevents the analogy from reading as an equivalence of status. Posture-parallel, not difficulty-parallel.
+
+**One judgment call flagged.** ChatGPT asked to replace "astronomically small" in §13.1. That phrase is actually PD-001 §4.1B template boilerplate for the Swarm-Validation Contribution. I softened it to "very small" for this external-facing draft but flagged the divergence from the template to Thomas rather than silently overriding a programme convention — his call whether to keep the softening or restore the template wording.
+
+**No registry touches.** All edits inside this window's own files (sf-3_quarks.tex, changelog, this file, review/). OPEN-FP-3-CKM + predictions.md swarm counter + bib migration still deferred to the ship-time flagged integration patch.
+
+**Next.** Cycle has Copilot/Grok/ChatGPT done; the remaining gate before SHIP is a Sonnet hostile pass (prompted via Claude) if Thomas wants it, then v0.2 -> ship. At ship: the deferred integration patch (refresh against origin/main first).
