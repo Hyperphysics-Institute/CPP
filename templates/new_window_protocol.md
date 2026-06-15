@@ -3,7 +3,26 @@
 **Location:** `/CPP/templates/new_window_protocol.md`
 **Purpose:** The operating rules for running several Claude windows in parallel against the single shared CPP working tree, coordinated by **one operator's serialized attention** rather than by a mechanism. Use this to open a new worker window and to tell each window how to interface with Thomas so collisions don't happen. Includes a fill-in kickoff block (§5) Thomas can paste to spawn a window.
 **Status:** ACTIVE — the in-use protocol for day-to-day parallel work (Sessions 156+).
-**Last updated:** 14 June 2026.
+**Last updated:** 15 June 2026 (Session 161).
+
+> **This is the canonical multi-window reference — read it top to bottom for everyday parallel work.** Its in-session collision-discipline companion, `templates/anticollision_protocol.md` (trigger phrase: *"run the anti-collision protocol"*), is a thin pointer back to this file. The heavy mechanism — lease board + `collision_audit.sh` — lives in `parallel_dev/multi_window_protocol.md` and is only for the escalation case in §0.
+
+---
+
+## Current band map (live windows — operator confirms status)
+
+One century-block per window. Patch numbers are labels (git does **not** enforce them); each window draws **only** from its own band and greps `git log` for the next free number before using it. Consumed singletons stay consumed.
+
+| Band | Window / lane | Notes |
+|------|---------------|-------|
+| 1000–1099 | Project C — `lambda_qcd_from_planck` | from 1001 |
+| 1100–1199 | CC umbrella — `series_cosmological_constant_arc` | from 1101 |
+| 1300–1399 | SF-7 grand-unification window | dispatcher of the SF-line windows |
+| 1400–1499 | SF-1 charged-leptons window | from 1400 |
+| 1500–1599 | SF-3 quark window → **SF-5 successor** | SF-3 v1.3 deposit-ready (closing); SF-5 continues in this band, next free ≈ 1520 |
+| 08xx / 09xx | DM lane / chirality lane | earlier arcs — confirm whether still live |
+
+When opening a window, confirm its band's first number is free and **reconcile this map with the operator** — some lanes above may have closed.
 
 ---
 
@@ -30,14 +49,16 @@ All windows share **one** working tree (`~/Documents/GitHub/CPP`), **one** `orig
 2. **Shared-registry collision** — two windows both append to a registry; the second `git am` conflicts. → Fixed by §2 rules **C/E** (greenfield + defer-and-batch) and the §3 last-paragraph warning.
 3. **Stale-base collision** — a window builds a patch on an old HEAD; after an earlier patch lands it no longer applies. → Fixed by §2 rule **D** (refresh before push) and the §4 recovery note.
 
-The shared registries (the collision-hot files — never edit casually):
+The shared registries (the collision-hot files — never edit casually), in tiers by contention:
 
-```
-theorem-registry.md   predictions.md   master_glossary.md
-paper_catalog.md      frontier_sectors/*   parallel_dev/lease_board.md
-```
+**Tier A — shared root registries + sector frontier files** (any window may need them; the second writer's `git am` conflicts):
+`theorem-registry.md`, `predictions.md`, `master_glossary.md`, `paper_catalog.md`, `research_frontier.md`, `future_projects.md`, `README.md`, `INDEX.md`, and every `frontier_sectors/*.md` (`CONJ.md`, `SR.md`, `SM.md` are the most cross-lane — DM + cosmology + CC all touch them).
 
-Plus `README.md` / `INDEX.md` and any other window's owned paths.
+**Tier B — cross-lane flagship `.tex` hazards** (any flagship two lanes both cite; these also need a **physics sign-off** from Thomas, not just a collision check): e.g. the DP-Sea appendix `series_foundations/dp_sea_composition/DP_sea_and_cage_composition.tex`, the SS-1 strong-sector flagship.
+
+**Tier C — coordination:** `parallel_dev/lease_board.md` — single-writer (Thomas only); never write it from a window even in light mode.
+
+A write is **private-lane** (announce in your reply and proceed, no STOP) when it is a brand-new uniquely-named path, or inside your own window's owned subtree, numbered in your own band. **Never edit another window's owned subtree** — propose the change to that window / the integrator instead.
 
 ---
 
@@ -68,6 +89,18 @@ Corollaries:
 - **Every patch-delivery reply ends with a collision line** — even if the line is just "Collision watch: new own-file under `<scope>/`, zero risk." Make its absence impossible to overlook by making its presence the habit.
 - **No silent registry edits.** If you find yourself about to edit `theorem-registry.md` / `predictions.md` / `frontier_sectors/*` / `master_glossary.md` / `paper_catalog.md`, stop and surface it first.
 - **Scope-in-filename for handovers.** Dispatch/handover files go in `handovers/` named `YYYY-MM-DD[_session_NNN]_<scope>.md`. The scope in the name lets a parallel window booting up tell at a glance that a newest-file dispatch belongs to a different window and look back for its own — so one window's dispatch never misdirects another.
+
+### 3.1 Per-contested-write procedure (the STOP-and-warn 5-step)
+
+When a patch *must* touch a Tier-A/B file (or another window's owned path), don't just warn in passing — run this:
+
+1. **Manifest (window).** Before generating *any* patch, post a one-line-per-path manifest of everything it creates/modifies. Private-lane paths: note and proceed. If **any path is contested**, do **not** generate the patch yet → step 2.
+2. **STOP-and-warn (window → Thomas).** Name the exact contested path(s) **and the line region** you intend to change, and what the change is. Then wait.
+3. **Freeze (Thomas).** On a warn, do nothing with that file in any other window until this window's patch lands. Other disjoint work continues. He replies **"run the check."**
+4. **Check + present (window).** "Run the check" = `git fetch origin` → sync to current `origin/main` HEAD → **re-read the target file(s) at current HEAD** → confirm the edit still fits and clashes with nothing new → build the patch **on current HEAD** → present with the apply macro. (Building on current HEAD kills the stale-base collision; re-reading catches a same-file edit another window just landed.)
+5. **Apply immediately (Thomas).** Run the macro before unfreezing that file elsewhere. If two windows warn on the **same** file at once, he applies one, then tells the other to re-run the check against the new HEAD.
+
+The honest caveat: this guarantee rests on Thomas **serializing** when he sees a warn — a discipline, not a mechanism (the deliberate trade vs. the heavy board). For 2–3 active windows with one attentive integrator it is sufficient; it is the mode the live SF-line and lane windows already run without a collision.
 
 ---
 
