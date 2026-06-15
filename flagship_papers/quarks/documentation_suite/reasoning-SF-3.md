@@ -94,3 +94,17 @@ Grok's only suggestion was a boxed §7 adjudication summary for panel visibility
 ## Patch 1506 — SF-3 v1.0 ship-time registry integration (Session 161, 1500-band window)
 
 Executed with no other windows active (Thomas confirmed), so the shared-registry edits apply immediately without serialization risk. Registered OPEN-FP-3-CKM (frontier), SF-3 predictions + swarm-counter bump, paper_catalog/README/INDEX entries, and the SF-3 master-bib entry. This is the "flagged integration patch" promised throughout the cycle; collision exposure was the reason it was deferred, and it is now safe precisely because Thomas serialized to this one window.
+
+---
+
+## Patch 1510 — v1.1 Appendix A + the stale-review recognition (Session 161, 1500-band window)
+
+Two things happened here worth recording, one procedural and one about judgment.
+
+**The stale-review recognition.** Thomas ran the paper past a fresh reviewer (presented as Gemini Pro 3.1) and the returned review was, verbatim, the v0.4 adversarial pass we had already incorporated at Patch 1505 — same five-question structure, same three blockers, same recomputed numbers, same "before you lock v0.5" framing. The enthusiasm in the framing ("he seems on top of his game") was a moment to be careful: the honest response was not to accept it as a fresh v1.0 validation but to show, grep by grep, that every one of its blocking and non-blocking items was already in the shipped text. It IS a good review; it is also a review of the OLD draft. Treating it as a passed v1.0 hostile gate would have been a quiet dishonesty — a gate has to bite on the current text, and this one never saw it. The correct read: it is positive evidence (an independent adversary's blockers were all pre-closed) but not a gate. I said so plainly.
+
+**The one fresh item, actioned.** The only thing in that review not already in v1.0 was its optional, non-blocking suggestion: a short appendix summarising the SM-7 isotropic-shift formula to make Proposition 5.1 transparent. That was worth doing for the deposit version, so Appendix A now derives the $A_q$ cancellation directly — $\sqrt{m_i} = A_q(1+\sqrt2\cos(\theta+2\pi i/3))$, the shift acts on $\theta$ not $A_q$, rescaling $A_q\to\lambda A_q$ leaves all mass ratios (hence $\theta_{\rm quark}$) fixed, so $\partial\theta_{\rm quark}/\partial m_c = 0$ — turning Prop 5.1 from a claim the reader takes on trust into one they can check in four lines. The structural-$\alpha_s$ conditional is restated at the foot of the appendix so the self-contained version carries the same caveat as the main text.
+
+**§13.1 judgment.** Thomas delegated the wording call. Kept "very small" over the PD-001 template's "astronomically small": the joint-accident probability scaling as (band/space)^N is genuinely small but "astronomically" oversells it at the present swarm size, and the paper's whole posture is to let the numbers carry the weight without superlatives. The honest word is the smaller one.
+
+**Version discipline.** Expository appendix → v1.1 (per the OS rule that any .tex content change increments the title-block marker), with the changelog explicit that no result, theorem/proposition status, or swarm-tally entry changed. The genuine v1.0/v1.1 hostile pass — feeding a sharp model the SHIPPED text and asking for NEW issues — remains the real outstanding gate before public deposit; the CONV-001 package for that is built next.

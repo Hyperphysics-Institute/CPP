@@ -6,6 +6,12 @@
 
 ---
 
+## v1.1 — 14 June 2026 (Session 161, Patch 1510; 1500-band SF-3 window)
+
+**Expository revision; no result or claim change.** Added **Appendix A — "The SM-7 Isotropic-Shift Formula and the $A_q$ Cancellation"** (`\label{app:shift}`), making Proposition 5.1 self-contained: it writes out the Koide parametrisation $\sqrt{m_i} = A_q(1 + \sqrt2\cos(\theta + 2\pi i/3))$, shows that the isotropic shift $\varepsilon = -27/(52\phi)$ acts on $\theta$ (built from $\{\alpha_s, \sin^2\theta_W, z\}$) and not on $A_q$, and proves the cancellation directly ($\partial\theta_{\rm quark}/\partial A_q = 0 \Rightarrow \partial\theta_{\rm quark}/\partial m_c = 0$), with the one structural-$\alpha_s$ conditional restated. This is the single non-blocking item left over from the v0.4 adversarial review (the "short appendix summarising the SM-7 isotropic-shift formula to make Proposition 5.1 more transparent" suggestion) — now actioned for the public-deposit version. Acknowledgements line updated from the stale "to be acknowledged at the review-incorporation stage" to a past-tense record of the four completed review rounds + the panel's sharpest contribution (the $\alpha_s$-structural catch) + the Appendix A cross-reference. §13.1 wording decision RESOLVED (maintainer judgment): **kept "very small"** (the honest, non-overselling characterisation; "astronomically small" overstates for the present swarm size). Title block → Version 1.1. Recompile: 14 pages (was 13; +1 for the appendix), 0 errors, 0 undefined refs. No change to any numerical result, theorem/proposition status, or the swarm tally (still 108).
+
+---
+
 ## v1.0 SHIPPED — 14 June 2026 (Session 161, Patch 1505; 1500-band SF-3 window)
 
 **SHIP.** Four review rounds (v0.1–v0.4); Grok SHIP all four; ChatGPT/Copilot REVISE→SHIP convergence; no physics blockers at any round; numbers independently re-verified by every reviewer every round. Thomas delegated the ship call and authorised the registry integration. Final v0.4-panel items folded in before ship:

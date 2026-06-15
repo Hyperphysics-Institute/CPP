@@ -60,7 +60,7 @@
 \title{\textbf{SF-3: The Quark Sector from 600-Cell Geometry}\\[6pt]
 {\large Masses, Strong Coupling, Koide Phase, and Generation Count from a Single Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series}\\[4pt]
-{\Large \textbf{Version 1.0 SHIPPED --- 14 June 2026}}}
+{\Large \textbf{Version 1.1 SHIPPED --- 14 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -388,10 +388,37 @@ SF-3 contributes the following zero-parameter empirical correspondences to the c
 % ============================================================
 \section*{Acknowledgements}
 
-This paper is a synthesis and reframing of shipped CPP results (SM-7, SM-8, SM-9, SM-10, SS-1, SS-2, SM-6) into a unified quark-sector account; it introduces no new derivation. Thomas Lee Abshier (ND) conceived the Conscious Point Physics program, the 600-cell substrate hypothesis, and the physical intuitions underlying the cage-mass and isotropic-shift mechanisms. Claude Opus (Anthropic) performed the corpus survey, the calibration-route adjudication, and the drafting, and identified and documented the phase--mass bookkeeping separation (Proposition~\ref{prop:phaseindep}). The multi-AI review panel (ChatGPT, Grok, Copilot) is to be acknowledged in detail at the review-incorporation stage. The 600-cell lattice hypothesis (AXIM-2) remains an axiom. Repository: \url{https://github.com/Hyperphysics-Institute/CPP}; OSF: \url{https://osf.io/9dfya/} (DOI 10.17605/OSF.IO/JXE8D).
+This paper is a synthesis and reframing of shipped CPP results (SM-7, SM-8, SM-9, SM-10, SS-1, SS-2, SM-6) into a unified quark-sector account; it introduces no new derivation. Thomas Lee Abshier (ND) conceived the Conscious Point Physics program, the 600-cell substrate hypothesis, and the physical intuitions underlying the cage-mass and isotropic-shift mechanisms. Claude Opus (Anthropic) performed the corpus survey, the calibration-route adjudication, and the drafting, and identified and documented the phase--mass bookkeeping separation (Proposition~\ref{prop:phaseindep}, with the explicit $A_q$ cancellation given in Appendix~\ref{app:shift}). The multi-AI review panel (ChatGPT, Grok, Copilot) reviewed the paper across four rounds; the panel's sharpest contribution was the observation, incorporated in Section~\ref{sec:koide}, that the phase--mass independence holds only because $\alphas$ is taken as the structural value rather than a charm-scale running-coupling fit. The 600-cell lattice hypothesis (AXIM-2) remains an axiom. Repository: \url{https://github.com/Hyperphysics-Institute/CPP}; OSF: \url{https://osf.io/9dfya/} (DOI 10.17605/OSF.IO/JXE8D).
+
+\appendix
 
 % ============================================================
-% BIBLIOGRAPHY (inline; migrate to master cpp_references.bib at ship)
+% APPENDIX A: SM-7 isotropic-shift formula and the A_q cancellation
+% ============================================================
+\section{The SM-7 Isotropic-Shift Formula and the $A_q$ Cancellation}\label{app:shift}
+
+This appendix makes Proposition~\ref{prop:phaseindep} self-contained by writing out the retained SM-7 isotropic-shift formula and showing explicitly that the mass amplitude $A_q$ --- the only channel through which the charm mass $m_c$ entered the SM-7 construction --- cancels from the equation that fixes the quark Koide phase. Nothing here is new to SF-3; it is a transcription of inherited SM-7 structure, included so the bookkeeping separation can be checked directly rather than taken on trust.
+
+\paragraph{The Koide parametrisation.} Within a generation triplet, the construction writes the three square-root masses as
+\begin{equation}
+\sqrt{m_i} = A_q\left(1 + \sqrt{2}\,\cos\!\left(\theta + \frac{2\pi i}{3}\right)\right), \qquad i = 1,2,3,
+\label{eq:koidepar}
+\end{equation}
+with a single overall amplitude $A_q$ and a single phase $\theta$. The amplitude $A_q$ sets the absolute mass scale of the triplet; the phase $\theta$ sets the \emph{relative} spacing of the three masses. (The Koide ratio $K = (\sum_i m_i)/(\sum_i \sqrt{m_i})^2 = 2/3$ is recovered identically for any $A_q,\theta$, since numerator and denominator both scale as $A_q^2$.)
+
+\paragraph{The isotropic shift acts on $\theta$, not $A_q$.} The bare $\Kthree$ eigenphase is $\cos\theta_0 = -K = -2/3$. The colour-plus-electroweak isotropic self-energy shift $\varepsilon$ of Eq.~\eqref{eq:shift} perturbs the eigenphase multiplicatively,
+\begin{equation}
+\cos\theta_{\mathrm{quark}} = -\frac{2}{3}\left(1 + \frac{\varepsilon}{2}\right), \qquad \varepsilon = \varepsilon_S + \varepsilon_{EW} = -\frac{z\,\alphas}{z+1} + \frac{3}{52\,\phig} = -\frac{27}{52\,\phig},
+\label{eq:shiftapp}
+\end{equation}
+and $\varepsilon$ is built from $\{\alphas,\ \sinsqthetaW,\ z\}$ alone. The amplitude $A_q$ does not appear in Eq.~\eqref{eq:shiftapp}.
+
+\paragraph{The cancellation.} Rescale the amplitude $A_q \to \lambda A_q$ for any $\lambda > 0$. By Eq.~\eqref{eq:koidepar} every $\sqrt{m_i}$ scales by $\lambda$, so every mass scales by $\lambda^2$ and every \emph{ratio} $m_i/m_j$ is unchanged. The phase $\theta_{\mathrm{quark}}$ is fixed by the mass ratios --- equivalently by Eq.~\eqref{eq:shiftapp}, which contains no $A_q$ --- so it is invariant under the rescaling: $\partial\theta_{\mathrm{quark}}/\partial A_q = 0$. Because $m_c$ entered the SM-7 construction \emph{only} as the calibration that fixed $A_q$ for the quark triplet, it follows that $\partial\theta_{\mathrm{quark}}/\partial m_c = 0$. This is the content of Proposition~\ref{prop:phaseindep}.
+
+\paragraph{The one conditional.} The argument uses $\alphas = 5/(8\phig)$ as a fixed structural input. If instead $\alphas$ were taken from a running-coupling determination at the charm scale $\mu \sim m_c$, then $\alphas = \alphas(m_c)$ would carry an implicit $m_c$ dependence into $\varepsilon$, and hence into Eq.~\eqref{eq:shiftapp}, and the independence would fail. SF-3 adopts the structural value throughout, so $\theta_{\mathrm{quark}}$ is genuinely $m_c$-independent; the demotion of $m_c$ from calibration to derived quantity (Section~\ref{sec:ledger}) therefore leaves the quark Koide phase untouched, with no re-grounding required.
+
+% ============================================================
+% BIBLIOGRAPHY (inline; master entry abshier2026sf3 added at ship)
 % ============================================================
 \begin{thebibliography}{99}
 
