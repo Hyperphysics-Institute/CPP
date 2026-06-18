@@ -295,6 +295,10 @@ SS-1f v1.0 production protocol initiated 18 Jun 2026 (patch 1534): the precedent
 - **C10 programme_orientation.md / paper_catalog.md top-level / D1 README.md** — SS-1f is a sub-family mechanism note, not a top-level paper; 1a–1e set the precedent of light/no top-level presence. **Likely N/A; confirm.**
 OSF deposit: Isak notified (18 Jun 2026); update C11 `doi` field once the DOI returns. **Registered 18 June 2026.**
 
+### TODO-024 — SS-1f v1.0 remaining Phase-7B integration items — **DONE (18 Jun 2026, patch 1535)**
+
+SS-1f v1.0 production protocol completed. Core (combined patch 1533+1534): series_strong sub-family table row (D3) + bibliography entry (C11, DOI pending Isak's OSF post). Remaining Phase-7B items now also done (patch 1535): **C3** — Proposition 6.1 registered as **PROP-SS-12** in theorem-registry (SS header 1→2 Propositions; no theorem-count / Summary-Statistics / ratio change, since propositions are tracked separately from the 81-theorem total); **C5** — **OPEN-SS-38** added to frontier_sectors/SS.md (the op:strong_primitive forcing problem; frame resolved by SS-1f, forcing open; SS header 19→20 problems); **D2** — SS-1f .tex added to INDEX.md. C10/D1/paper_catalog top-level confirmed N/A (sub-family companion note, per the SS-1a–1e precedent). Outstanding: only the OSF DOI (Isak) → update the C11 `doi` field on return. **Completed 18 June 2026.**
+
 ## Cleared items (history)
 
 *Items move here with date and patch number when completed. Cleared items are not deleted — they form an audit trail of what was done and when.*

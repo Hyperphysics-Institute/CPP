@@ -109,6 +109,7 @@ The SU(3) derivation from 600-cell tetrahedral geometry, uniqueness proof, nucle
 | File | Description |
 |------|-------------|
 | `SS-1_strong_sector_from_600cell_lattice.tex/.pdf` | **SS-1** (v2) — 9 theorems |
+| `papers/SS-1f_su3_hop_realization.tex` | **SS-1f** (v1.0) — SU(3) hop realisation: colour = baryon-tetrahedron vertex occupancy, gluon = a charge-driven ZBW/SSV vertex hop (Prop 6.1 torus result); SU(3)-foundations companion |
 | `SS-1a` through `SS-1e` companion papers | Cage geometry, SU(3) proof, gluons, confinement, hadrons |
 | `SS-2_lattice_scale_nucleon_structure.tex/.pdf` | **SS-2** (v1.0) — Lattice grounding, nucleon structure |
 | `SS-3_su3_uniqueness.tex/.pdf` | **SS-3** (v1.3) — SU(3) uniqueness from tetrahedral cage |

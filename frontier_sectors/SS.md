@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Strong Sector (SS) — 19 problems (1 retired)
+## Strong Sector (SS) — 20 problems (1 retired)
 
 ### OPEN-SS-1: Quark Mass Formula M_q(n_layers)
 **Status:** OPEN (PARTIAL — Theorems 2–3 proved; full formula open)
@@ -148,6 +148,14 @@
 **Last updated:** 29 March 2026
 
 ---
+
+### OPEN-SS-38: Forcing of the SU(3) Tetrahedral Hop from CPP Primitives (op:strong_primitive)
+
+**One-line statement:** Show that the CPP substrate dynamics *force* the strong force to be mediated by inter-vertex hopping on the baryon bonding tetrahedron (colour = vertex occupancy; gluon = a charge-driven ZBW/SSV vertex hop) rather than by some other subgraph or mechanism — i.e., derive the realisation, not merely exhibit it as consistent.
+
+**What a solution looks like:** A derivation from the CPP primitives that the substrate produces the colour-changing hop (the precise mechanics of a colour-changing move on a *singly-occupied* baryon tetrahedron) and that this realisation is the one the geometry selects.
+
+**Status (SS-1f v1.0, 18 Jun 2026):** Frame **resolved** — the hTetra is the baryon *bonding framework*, up/down quarks are cageless, the strange quark carries its own cage; colour = which baryon-framework vertex a quark occupies; the hop operator E_ij acts on baryon-framework vertex occupancy. The realisation is a *candidate carrier* of the SS-1b algebra (PROP-SS-12 / SS-1f Prop 6.1 proves the carrier must be off-diagonal hops, not standing modes), **not yet forced** — the forcing is what remains open. Distinct from OPEN-SS-11 (SU(3) *uniqueness*, resolved by SS-3): this is the *mechanism-forcing* question. Corpus-harmonisation companion: todolist TODO-021 (SS-1b's older per-quark-cage exposition). **OPEN.**
 
 ### OPEN-SS-12: W Bracelet Polarity Inversion from CPP First Principles
 **Status:** OPEN
