@@ -13,6 +13,17 @@
 %         registration DEFERRED to SHIP-time integration (multi-window
 %         rule E). Source: su3_mechanism_realization_proposal.md (TODO-019),
 %         Session-16x exploratory arc, and the founders_voice mechanism notes.
+%   v0.2  18 Jun 2026 — panel cycle (ChatGPT/Grok/Gemini/Copilot). Surgical
+%         revisions: (i) Prop 6.1 iff scoped to the vertex-occupancy realisation
+%         + Remark on scope; (ii) C^3 has only 2 traceless diagonal d.o.f. (the
+%         8-fold torus is for abstract modes only) added to statement+proof;
+%         (iii) §1 'physical' -> 'candidate ... pending §7 frame map'; (iv) §7
+%         seam sharpened to the explicit 'what does E_ij act on?' sub-problem +
+%         labelling-vs-dynamics split (answers Gemini's geometry objection by
+%         placing the geometric fixing inside the forcing problem); (v) new
+%         Open Problem 9.4 — connection to SS-1d dynamics. Verdict split 2 ship
+%         / 2 reconcile-seam; edits address the converged math points; the
+%         ship-vs-resolve-seam decision is the remaining fork (TLA to decide).
 % ==================================================================
 
 \documentclass[11pt,a4paper]{article}
@@ -47,7 +58,7 @@
 \title{\textbf{Conscious Point Physics:\\
 The Physical Realization of the SU(3) Hop\\
 {\large How a Charge-Driven ZBW Transition Carries the Colour Generator}}\\[6pt]
-{\large Strong Sector Series --- SS-1f --- Version 0.1 (mechanism note)}}
+{\large Strong Sector Series --- SS-1f --- Version 0.2 (mechanism note, panel-revised)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)\\
 Hyperphysics Institute\\
@@ -97,11 +108,12 @@ authors --- mistakes a picture for a proof.
 \medskip
 \noindent\textbf{This note \emph{does}:}
 \begin{itemize}
-\item supply a physical, corpus-consistent realisation of the SU(3) colour
-hop: colour as vertex occupancy, the gluon generator as a charge-driven
-$\ZBW$/$\SSV$ transition, and the non-commutativity as a consequence of the
-coupling between vertices
-(Sections~\ref{sec:occupancy}--\ref{sec:coupling});
+\item supply a \emph{candidate}, corpus-consistent realisation of the SU(3)
+colour hop --- colour as vertex occupancy, the gluon generator as a
+charge-driven $\ZBW$/$\SSV$ transition, and the non-commutativity as a
+consequence of the coupling between vertices
+(Sections~\ref{sec:occupancy}--\ref{sec:coupling}) --- pending the frame map of
+Section~\ref{sec:seam};
 \item prove a negative structural result --- that uncoupled oscillation modes
 form a torus and \emph{cannot} be the generators --- which forces the hop
 picture and rules out the naive mode-count identification
@@ -237,22 +249,41 @@ oscillation modes --- to ``count to eight'' among the bonds and declare the
 algebra found. The following proposition shows this identification fails, and in
 failing it tells us precisely what the realisation must supply.
 
-\begin{proposition}[Uncoupled modes form a torus]
+\begin{proposition}[Uncoupled modes form a torus; the colour-changing generators must be hops]
 \label{prop:torus}
-Let the eight degrees of freedom be taken as uncoupled single-bond oscillation
-amplitudes (number-like operators, each diagonal in the occupancy basis,
-commuting pairwise). Then they generate the abelian algebra
-$\mathfrak{u}(1)^{\oplus 8}$, not $\mathfrak{su}(3)$. The $\mathfrak{su}(3)$
-structure constants of Equation~\eqref{eq:su3} appear if and only if the
-generators are realised as inter-vertex transposition (hop) operators on
-$\mathcal{H}_{\rm colour}=\mathbb{C}^3$.
+Take the eight putative gluon degrees of freedom to be uncoupled oscillation
+amplitudes --- abstract, mutually commuting phases. As such they generate the
+abelian algebra $\mathfrak{u}(1)^{\oplus 8}$, a torus, not $\mathfrak{su}(3)$.
+Moreover, realised \emph{on the colour space} $\mathcal{H}_{\rm
+colour}=\mathbb{C}^3$, the diagonal (Cartan) subalgebra is at most
+two-dimensional after removing the trace; so at most two of the eight
+$\mathfrak{su}(3)$ generators can be diagonal amplitudes, and the remaining six
+colour-changing generators \emph{must} act off-diagonally. Consequently, within
+this vertex-occupancy realisation, the $\mathfrak{su}(3)$ structure constants of
+Equation~\eqref{eq:su3} are reproduced if and only if the six non-Cartan
+generators are realised as inter-vertex transposition (hop) operators $E_{ij}$
+on $\mathbb{C}^3$.
 \end{proposition}
+
+\begin{remark}[Scope of the ``iff'']
+\label{rem:iff}
+The biconditional is a statement \emph{about the vertex-occupancy realisation},
+not a basis-independent uniqueness claim: $\mathfrak{su}(3)$ admits many bases,
+and one is free to rotate generators. The content is that in \emph{any}
+realisation that identifies colour with occupancy of three vertices, the
+colour-changing generators are necessarily off-diagonal, and the eight-fold
+abelian (torus) count is available only for abstract modes, never for
+operators acting faithfully on the three-dimensional colour space.
+\end{remark}
 
 \begin{proof}[Proof sketch]
 An oscillation amplitude is diagonal in the occupancy basis; two diagonal
 operators commute, so any set of such amplitudes generates an abelian (toral)
 algebra, regardless of their number or of any in/out asymmetry of the individual
-bonds. Directionality ($E_{ij}\neq E_{ji}$) is a property of a single operator
+bonds. On $\mathbb{C}^3$, however, the space of traceless diagonal operators is
+only two-dimensional, so the eight-fold abelian count is available only for
+abstract modes; realised on the colour space, at most two generators may be
+diagonal and the rest are forced off-diagonal. Directionality ($E_{ij}\neq E_{ji}$) is a property of a single operator
 relative to its inverse, not a failure of two distinct operators to commute, and
 contributes nothing to the bracket. A nonzero bracket $[A,B]$ requires $A$ and
 $B$ to act non-diagonally on a shared subspace --- i.e.\ to \emph{permute} basis
@@ -299,7 +330,21 @@ three-ness; for a colour-singlet baryon (one quark per colour) the two
 descriptions may coincide, since ``which colour'' and ``which vertex'' carry the
 same information. Establishing that coincidence --- or the precise map between
 the frames --- is required before the realisation can be said to be derived
-rather than pictured. We register it as the principal open sub-problem.
+rather than pictured. The sub-problem to be answered is explicit: \emph{what
+does the hop operator $E_{ij}$ physically act on?} --- a quark's internal colour
+coordinate (per-quark cage), the quark's baryon-vertex occupancy (baryon
+$\hDP$-tetrahedron), or a quotient identifying the two for a colour singlet. The
+two aspects must be kept separate. As a \emph{labelling}, ``which colour'' and
+``which vertex'' may coincide for a colour-singlet baryon (one quark per
+colour), and this is the only aspect on which the algebra-level consistency of
+this note depends. As a \emph{dynamics}, the two frames carry different physical
+distance and charge-distribution scales --- a per-quark cage and a baryon-scale
+tetrahedron are not the same geometry --- so the $\SSV$-gradient mechanism of
+Section~\ref{sec:coupling} acquires definite physical content only once the
+frame, and hence the geometry, is fixed. This note relies only on the labelling
+coincidence; the dynamical (geometric) fixing is part of the open forcing
+problem (Section~\ref{sec:status}). We register the
+operator-domain question as the principal open sub-problem.
 
 \section{Where the testable physics lives}
 \label{sec:testable}
@@ -341,6 +386,15 @@ colour-singlet baryon. \textbf{Open.}
 Determine whether the realisation predicts any deviation from established
 phenomenology in a non-eigenstate process (Section~\ref{sec:testable}), or
 prove it cannot. \textbf{Open.}
+\end{openprob}
+
+\begin{openprob}[Connection to the strong-sector dynamics]
+Connect this kinematic hop realisation to the dynamical strong-sector results
+already in the corpus --- the running coupling, confinement, and positive beta
+function of SS-1d --- and show that the realisation reproduces, or at least
+coexists consistently with, them. This note establishes a kinematic/structural
+realisation of the colour algebra only; it does not yet demonstrate that the hop
+dynamics yields those dynamical features. \textbf{Open consistency check.}
 \end{openprob}
 
 \paragraph{Summary of standing.} The algebra (SS-1b) is proven and is not
