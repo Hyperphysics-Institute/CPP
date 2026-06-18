@@ -24,6 +24,20 @@
 %         Open Problem 9.4 — connection to SS-1d dynamics. Verdict split 2 ship
 %         / 2 reconcile-seam; edits address the converged math points; the
 %         ship-vs-resolve-seam decision is the remaining fork (TLA to decide).
+%   v1.0  18 Jun 2026 — SHIP. Panel: 3/4 ship after v0.2 math edits; remaining
+%         fork was the §7 frame seam. TLA clarification RESOLVES it: the hTetra
+%         is the baryon BONDING FRAMEWORK, not a per-quark cage; up/down quarks
+%         are cageless; strange carries its own hTetra cage. §3/§7 rewritten —
+%         colour = baryon-framework vertex occupancy; E_ij acts on baryon-vertex
+%         occupancy; the operator-domain question is answered, not registered.
+%         §7 flags the tension this surfaces with SS-1b's per-quark-cage EXPOSITION
+%         ('each quark sits inside a tetrahedral cage'): SS-1b's ALGEBRA is
+%         frame-agnostic and unaffected; its physical-picture wording needs
+%         harmonising (registered TODO). §1 + §9 updated (frame no longer 'open';
+%         residual = SS-1b harmonisation, a corpus task). Final ChatGPT micro-edits
+%         folded (explicit abstract-vs-C^3-diagonal parenthetical; 'candidate
+%         physical'). Acknowledgements v0.1->v1.0 leftover fixed (Grok). Shared-
+%         registry integration still deferred to a flagged patch.
 % ==================================================================
 
 \documentclass[11pt,a4paper]{article}
@@ -58,7 +72,7 @@
 \title{\textbf{Conscious Point Physics:\\
 The Physical Realization of the SU(3) Hop\\
 {\large How a Charge-Driven ZBW Transition Carries the Colour Generator}}\\[6pt]
-{\large Strong Sector Series --- SS-1f --- Version 0.2 (mechanism note, panel-revised)}}
+{\large Strong Sector Series --- SS-1f --- Version 1.0 (mechanism note)}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)\\
 Hyperphysics Institute\\
@@ -108,12 +122,13 @@ authors --- mistakes a picture for a proof.
 \medskip
 \noindent\textbf{This note \emph{does}:}
 \begin{itemize}
-\item supply a \emph{candidate}, corpus-consistent realisation of the SU(3)
-colour hop --- colour as vertex occupancy, the gluon generator as a
-charge-driven $\ZBW$/$\SSV$ transition, and the non-commutativity as a
-consequence of the coupling between vertices
-(Sections~\ref{sec:occupancy}--\ref{sec:coupling}) --- pending the frame map of
-Section~\ref{sec:seam};
+\item supply a \emph{candidate physical}, corpus-consistent realisation of the SU(3)
+colour hop --- colour as occupancy of the baryon bonding tetrahedron's vertices,
+the gluon generator as a charge-driven $\ZBW$/$\SSV$ transition, and the
+non-commutativity as a consequence of the coupling between vertices
+(Sections~\ref{sec:occupancy}--\ref{sec:coupling}); it remains a \emph{candidate}
+because the forcing is open (Section~\ref{sec:status}), not because the frame is
+ambiguous (the frame is fixed in Section~\ref{sec:seam});
 \item prove a negative structural result --- that uncoupled oscillation modes
 form a torus and \emph{cannot} be the generators --- which forces the hop
 picture and rules out the naive mode-count identification
@@ -137,10 +152,13 @@ energy eigenstate; the hops are real as structure but silent as activity
 \end{itemize}
 
 \medskip
-\noindent\textbf{Three open items are registered honestly} and collected in
-Section~\ref{sec:status}: (i) candidate-carrier vs forcing; (ii) the
-per-quark-cage / baryon-$\hDP$-tetrahedron seam; (iii) the absence of an
-in-baryon test.
+\noindent\textbf{The open items are registered honestly} and collected in
+Section~\ref{sec:status}: (i) candidate-carrier vs forcing; (ii) the absence of
+an in-baryon test; (iii) consistency with the SS-1d dynamics. The frame question
+(per-quark cage vs baryon bonding tetrahedron) is \emph{not} left open: it is
+resolved in Section~\ref{sec:seam} in favour of the baryon bonding tetrahedron,
+with the harmonisation of SS-1b's expository cage language registered as a corpus
+task.
 
 \section{The open problem SS-1b left}
 \label{sec:openprob}
@@ -171,13 +189,16 @@ the strong interaction. This note addresses precisely that layer.
 \label{sec:occupancy}
 
 We adopt the identification already implicit in SS-1c's baryon
-construction~\citep{ss1c}: a baryon places one quark at each of the three base
-vertices, the colour index is the vertex, and the colour singlet is the totally
-antisymmetric combination over the three vertices.
+construction~\citep{ss1c}: a baryon places one quark at each of three vertices
+of the baryon bonding tetrahedron, the colour index is the vertex, and the
+colour singlet is the totally antisymmetric combination over the three vertices.
+The bonding tetrahedron is the framework that binds the quarks (Section~\ref{sec:seam}),
+not a per-quark cage --- the up and down quarks are cageless --- so the vertex
+in question is a vertex of the shared baryon framework.
 
 \begin{equation}
-\text{colour of a quark} \;\equiv\; \text{the cage vertex its central }\qCP
-\text{ is bonded to.}
+\text{colour of a quark} \;\equiv\; \text{the baryon-bonding-tetrahedron vertex its central }\qCP
+\text{ occupies.}
 \end{equation}
 
 Colour is thus not a property painted on the quark in isolation; it is a
@@ -253,7 +274,9 @@ failing it tells us precisely what the realisation must supply.
 \label{prop:torus}
 Take the eight putative gluon degrees of freedom to be uncoupled oscillation
 amplitudes --- abstract, mutually commuting phases. As such they generate the
-abelian algebra $\mathfrak{u}(1)^{\oplus 8}$, a torus, not $\mathfrak{su}(3)$.
+abelian algebra $\mathfrak{u}(1)^{\oplus 8}$, a torus, not $\mathfrak{su}(3)$
+(this is an abstract uncoupled-mode torus, \emph{not} eight independent diagonal
+operators on $\mathbb{C}^3$, which admits at most three).
 Moreover, realised \emph{on the colour space} $\mathcal{H}_{\rm
 colour}=\mathbb{C}^3$, the diagonal (Cartan) subalgebra is at most
 two-dimensional after removing the trace; so at most two of the eight
@@ -307,44 +330,48 @@ transitions --- which Sections~\ref{sec:hop}--\ref{sec:coupling} do, as a
 picture.
 \end{remark}
 
-\section{The unreconciled frames (registered)}
+\section{The frame: the baryon bonding tetrahedron}
 \label{sec:seam}
 
-Two geometric frames for ``the three colour vertices'' coexist in the corpus and
-are not yet reconciled; the reconciliation is the open core of
-\emph{op:strong\_primitive} on the mechanism side.
-\begin{itemize}
-\item \textbf{SS-1b per-quark colour cage.} Each quark sits in a tetrahedral
-cage whose apex $V_4$ holds that quark's central $\qCP$ and whose three base
-vertices are that quark's three colour states $\{r,g,b\}$. Colour is internal to
-one quark; the hop moves a single quark's colour amplitude among its own base.
-\item \textbf{Baryon $\hDP$-tetrahedron (founder's account).} The baryon core is
-a hybrid tetrahedron built from type-A and type-B $\hDP$s; three quarks occupy
-three of its four vertices and the fourth vertex is an open $\eCP$; up and down
-quarks are themselves cageless ($\qCP$ core $+$ radial $\ZBW$ $\eCP$ $+$ cloud).
-Colour is which baryon vertex a quark is bonded to; the hop moves a quark
-between baryon vertices.
-\end{itemize}
-Both place colour on three vertices and both yield the SS-1b algebra by the
-three-ness; for a colour-singlet baryon (one quark per colour) the two
-descriptions may coincide, since ``which colour'' and ``which vertex'' carry the
-same information. Establishing that coincidence --- or the precise map between
-the frames --- is required before the realisation can be said to be derived
-rather than pictured. The sub-problem to be answered is explicit: \emph{what
-does the hop operator $E_{ij}$ physically act on?} --- a quark's internal colour
-coordinate (per-quark cage), the quark's baryon-vertex occupancy (baryon
-$\hDP$-tetrahedron), or a quotient identifying the two for a colour singlet. The
-two aspects must be kept separate. As a \emph{labelling}, ``which colour'' and
-``which vertex'' may coincide for a colour-singlet baryon (one quark per
-colour), and this is the only aspect on which the algebra-level consistency of
-this note depends. As a \emph{dynamics}, the two frames carry different physical
-distance and charge-distribution scales --- a per-quark cage and a baryon-scale
-tetrahedron are not the same geometry --- so the $\SSV$-gradient mechanism of
-Section~\ref{sec:coupling} acquires definite physical content only once the
-frame, and hence the geometry, is fixed. This note relies only on the labelling
-coincidence; the dynamical (geometric) fixing is part of the open forcing
-problem (Section~\ref{sec:status}). We register the
-operator-domain question as the principal open sub-problem.
+The physical frame is fixed, and it is \emph{not} a per-quark cage. The
+$\hDP$-tetrahedron (hTetra) is the \emph{bonding framework} that binds the quarks
+of a baryon: a hybrid tetrahedron built from type-A and type-B $\hDP$s, three of
+whose vertices are occupied by quarks and whose fourth is an open $\eCP$ vertex.
+The up and down quarks are \emph{cageless} --- each is a $\qCP$ core with a
+radial $\ZBW$ $\eCP$ and a polarised cloud, carrying no tetrahedral cage of its
+own; it simply bonds to a vertex of the shared baryon framework. (The strange
+quark does carry its own hTetra cage, a separate structure relevant to strange
+hadrons; it plays no role in the up/down baryon core treated here.) Consequently
+the colour of a quark is the baryon-framework vertex its $\qCP$ occupies, and the
+hop operator $E_{ij}$ acts on \emph{baryon-framework vertex occupancy}: it moves
+a quark between vertices of the single, shared tetrahedron. There is no competing
+``internal colour coordinate'' frame for the up/down baryon core, because there
+is no per-quark cage. The operator-domain question raised in review --- \emph{what
+does $E_{ij}$ act on?} --- is therefore answered: baryon-framework vertex
+occupancy.
+
+\paragraph{Relation to SS-1b, and a registered harmonisation.} SS-1b's algebra
+is \emph{frame-agnostic}: it requires only three labelled colour vertices and
+DI-bit hops among them, and is unaffected by which physical structure carries
+those vertices. Its \emph{exposition}, however, describes the three colour
+vertices as the base of a per-quark ``$\qCP$ tetrahedral cage'' (apex $V_4$ = that
+quark's central $\qCP$), with the phrase ``each quark sits inside a tetrahedral
+cage.'' Read literally for an up or down quark, that per-quark-cage language is
+in tension with the cageless up/down quarks of the bonding-framework realisation
+adopted here. We resolve the frame in favour of the baryon bonding tetrahedron,
+and register two harmonisation tasks as corpus items (todolist): (i) reconcile
+SS-1b's expository per-quark-cage language with the cageless-quark /
+bonding-framework realisation; (ii) work out the detailed correspondence between
+SS-1b's (apex-$\qCP$ + three-colour-base) cage description and the baryon hTetra's
+(three-quark + open-$\eCP$-vertex) geometry. \textbf{The algebra of SS-1b is not at
+stake --- only its physical-picture wording.}
+
+\paragraph{What remains open.} Fixing the frame does not close the forcing
+problem. The precise mechanics of a colour-changing hop on a \emph{singly
+occupied} baryon tetrahedron --- how the substrate dynamics move a quark's
+colour between vertices that are each already occupied --- is part of the forcing
+problem (Section~\ref{sec:status}), not of the frame question, which is now
+settled.
 
 \section{Where the testable physics lives}
 \label{sec:testable}
@@ -376,10 +403,15 @@ Equation~\eqref{eq:su3}'s realisation from the substrate rather than adopting
 colour-as-vertex as a hypothesis. \textbf{Open.}
 \end{openprob}
 
-\begin{openprob}[Frame reconciliation]
-Establish the explicit map between the SS-1b per-quark colour cage and the
-baryon $\hDP$-tetrahedron of Section~\ref{sec:seam}, or show they coincide for a
-colour-singlet baryon. \textbf{Open.}
+\begin{openprob}[SS-1b exposition harmonisation (residual of the now-resolved frame)]
+The physical frame is resolved (Section~\ref{sec:seam}): the baryon bonding
+tetrahedron, with cageless up/down quarks. What remains is a corpus-harmonisation
+task, not a physics ambiguity: reconcile SS-1b's expository per-quark
+``$\qCP$ tetrahedral cage'' language with the cageless-quark realisation, and
+work out the detailed correspondence between SS-1b's (apex-$\qCP$ +
+three-colour-base) cage and the baryon hTetra's (three-quark + open-$\eCP$-vertex)
+geometry. SS-1b's \emph{algebra} is frame-agnostic and unaffected.
+\textbf{Open (corpus harmonisation).}
 \end{openprob}
 
 \begin{openprob}[An observable]
@@ -407,8 +439,8 @@ off-diagonal hop, not an amplitude). It is a \emph{mechanism, not a derivation}.
 \section*{Acknowledgements}
 This note records the mechanical account developed by T.L.A.\ during the
 Session-16x exploratory arc, with the algebra and uniqueness results due to the
-prior SS-1b/SS-1c/SS-3 work. It is issued at v0.1 as a mechanism note for
-review; shared-registry registration is deferred to ship-time integration.
+prior SS-1b/SS-1c/SS-3 work. It is issued at v1.0 as a mechanism note;
+shared-registry registration is deferred to ship-time integration.
 
 \begin{thebibliography}{9}
 \bibitem{ss1b} T.~L.~Abshier, \emph{SU(3)$_c$ Algebra from Tetrahedral Phase
