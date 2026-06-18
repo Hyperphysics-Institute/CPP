@@ -1,7 +1,7 @@
 # Strong Sector Series (SS)
 
 **Location:** `CPP/series_strong/`
-**Last updated:** 17 May 2026 (Session 127 Patch 0422A: SS-9 v1.0 SHIPPED at Session 32 added — conditional theorem closure paper at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`, 32 pages, on seven-pass AI review convergence; OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship; OPEN-SS-37 registered for C8 first-principles closure with 4 candidate routes including distance-geometry/EDM/rigidity/realization-spaces; OPEN-SS-29/SS-30/SS-33 preserved as C5/C6/C7 first-principles closure targets; OPEN-SS-31 preserved as deltahedra-gap scope-extension target; THEO-SS-16 (Simplicial alpha-polytope connectivity, five-clause conditional theorem) added. Earlier 26 April 2026: SS-8 v1.0 added; backfilled SS-6 v0.2 and SS-7 v1.2 entries; series-spanning K₃-mode quantum recurrence pattern noted.)
+**Last updated:** 18 June 2026 (SS-1f v1.0 SHIPPED — *The SU(3) Hop Realization*, the sixth SU(3)-foundations companion paper at `series_strong/papers/SS-1f_su3_hop_realization.tex`: colour = which baryon-bonding-tetrahedron vertex a quark occupies, the gluon generator = a charge-driven ZBW/SSV inter-vertex hop, non-commutativity from inter-vertex coupling; load-bearing Proposition 6.1 (uncoupled modes give the abstract torus u(1)^8, not su(3) — the six colour-changing generators MUST be off-diagonal hops). Fills the realisation slot SS-1b's algebra leaves open (op:strong_primitive). Frame resolved per TLA: the hTetra is the baryon BONDING FRAMEWORK, up/down quarks cageless, strange carries its own cage; SS-1b's per-quark-cage *exposition* flagged for harmonisation, todolist TODO-021). Earlier: 17 May 2026 (Session 127 Patch 0422A: SS-9 v1.0 SHIPPED at Session 32 added — conditional theorem closure paper at `series_strong/papers/SS-9/SS-9_simplicial_alpha_polytope_connectivity.tex`, 32 pages, on seven-pass AI review convergence; OPEN-SS-24 ADVANCED → CLOSED via SS-9 v1.0 ship; OPEN-SS-37 registered for C8 first-principles closure with 4 candidate routes including distance-geometry/EDM/rigidity/realization-spaces; OPEN-SS-29/SS-30/SS-33 preserved as C5/C6/C7 first-principles closure targets; OPEN-SS-31 preserved as deltahedra-gap scope-extension target; THEO-SS-16 (Simplicial alpha-polytope connectivity, five-clause conditional theorem) added. Earlier 26 April 2026: SS-8 v1.0 added; backfilled SS-6 v0.2 and SS-7 v1.2 entries; series-spanning K₃-mode quantum recurrence pattern noted.)
 
 ---
 
@@ -34,6 +34,7 @@ The Strong Sector series derives QCD structure from the 600-cell tetrahedral geo
 | SS-1c | Eight Gluons as hDP Structures |
 | SS-1d | Confinement and Beta Function |
 | SS-1e | Hadron Spectrum |
+| SS-1f | SU(3) Hop Realization (colour = baryon-tetrahedron vertex occupancy; gluon = a charge-driven ZBW/SSV vertex hop) — v1.0 SHIPPED 18 Jun 2026 |
 
 ### Cross-paper cascade (SS-5 → SS-7 → SS-8)
 
