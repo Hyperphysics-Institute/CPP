@@ -1,0 +1,374 @@
+% ==================================================================
+% Conscious Point Physics:
+% SS-1f — The Physical Realization of the SU(3) Hop
+% Strong Sector Series — SU(3) foundations sub-family (1a..1f)
+% Companion to: SS-1b (SU(3) algebra, exact), SS-1c (eight gluons),
+%               SS-3 (uniqueness), SF-5 (strong-sector flagship)
+% Fills: Open Problem op:strong_primitive (registered in SS-1b)
+% GitHub: CPP/series_strong/papers/SS-1f_su3_hop_realization.tex
+% ------------------------------------------------------------------
+% CHANGELOG
+%   v0.1  18 Jun 2026 — first assembly (mechanism note). Picture, not
+%         derivation. Honesty box front-and-centre. Shared-registry
+%         registration DEFERRED to SHIP-time integration (multi-window
+%         rule E). Source: su3_mechanism_realization_proposal.md (TODO-019),
+%         Session-16x exploratory arc, and the founders_voice mechanism notes.
+% ==================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{caption,float,booktabs,parskip,xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan,citecolor=red}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openprob}[theorem]{Open Problem}
+
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\hDP}{\mathrm{hDP}}
+\newcommand{\qCP}{\mathrm{qCP}}
+\newcommand{\eCP}{\mathrm{eCP}}
+\newcommand{\qDP}{\mathrm{qDP}}
+\newcommand{\eDP}{\mathrm{eDP}}
+\newcommand{\ZBW}{\mathrm{ZBW}}
+\newcommand{\phig}{\varphi}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle#1|}
+
+\title{\textbf{Conscious Point Physics:\\
+The Physical Realization of the SU(3) Hop\\
+{\large How a Charge-Driven ZBW Transition Carries the Colour Generator}}\\[6pt]
+{\large Strong Sector Series --- SS-1f --- Version 0.1 (mechanism note)}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)\\
+Hyperphysics Institute\\
+\url{https://hyperphysics.com}}
+
+\date{18 June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+SS-1b proves that the colour algebra $\mathfrak{su}(3)$ emerges \emph{exactly}
+from the three colour vertices of the tetrahedral cage, and SS-1c builds the
+eight gluons on those vertices; SS-3 shows the realisation is unique within the
+operator representation. All three explicitly leave open
+(\emph{op:strong\_primitive}, registered in SS-1b) the prior physical question:
+\emph{why} is the strong interaction carried by tetrahedral hopping at all?
+This note proposes the physical realisation. Colour is identified with
+\emph{vertex occupancy} --- which cage vertex a quark's central $\qCP$ is bonded
+to. Each colour generator is realised as a charge-driven
+zitterbewegung ($\ZBW$) / Stress-Sea-Vector ($\SSV$) transition in which a quark
+leaves the superimposed bond at one vertex and enters it at another, and the
+\emph{non-commutativity} of two such moves arises physically because each quark's
+$\SSV$ gradient is conditioned by the occupancy of the other vertices.
+We isolate the load-bearing constraint as a proposition: the eight
+\emph{uncoupled} single-bond oscillation modes generate the \emph{abelian}
+algebra $\mathfrak{u}(1)^{\oplus 8}$ (a torus), \emph{not} $\mathfrak{su}(3)$;
+the $\mathfrak{su}(3)$ structure constants appear if and only if the generators
+are realised as inter-vertex hop operators. This both rules out the naive
+``eight modes $=$ eight gluons'' identification and shows precisely what the
+mechanism must supply. We are explicit about status: this is a \emph{mechanism
+note, not a derivation}. The picture is a \emph{candidate carrier} of the
+SS-1b algebra, not a proof that the substrate geometry \emph{forces} it; the
+per-quark colour-cage frame of SS-1b and the baryon-$\hDP$-tetrahedron frame
+of the founder's mechanism account are not yet reconciled; and the mechanism
+is silent inside a stable (energy-eigenstate) baryon, so its distinctive
+physics, if any, lives in non-eigenstate processes. The forcing question of
+\emph{op:strong\_primitive} therefore remains open.
+\end{abstract}
+
+\section{What this note does and does not claim}
+\label{sec:honesty}
+
+This section is placed first by design, so that no reader --- including its
+authors --- mistakes a picture for a proof.
+
+\medskip
+\noindent\textbf{This note \emph{does}:}
+\begin{itemize}
+\item supply a physical, corpus-consistent realisation of the SU(3) colour
+hop: colour as vertex occupancy, the gluon generator as a charge-driven
+$\ZBW$/$\SSV$ transition, and the non-commutativity as a consequence of the
+coupling between vertices
+(Sections~\ref{sec:occupancy}--\ref{sec:coupling});
+\item prove a negative structural result --- that uncoupled oscillation modes
+form a torus and \emph{cannot} be the generators --- which forces the hop
+picture and rules out the naive mode-count identification
+(Proposition~\ref{prop:torus}, Section~\ref{sec:torus}).
+\end{itemize}
+
+\medskip
+\noindent\textbf{This note \emph{does not}:}
+\begin{itemize}
+\item derive $\mathfrak{su}(3)$. That is SS-1b's theorem~\citep{ss1b}, cited
+here and not re-proved. Given colour-as-vertex, the algebra follows from the
+three-ness of the vertex set; this note adds the \emph{physical carrier}, not
+the algebra;
+\item \emph{force} the realisation from substrate geometry. The $\ZBW$/$\SSV$
+mechanism is shown to be a candidate \emph{rich enough} to host the generators;
+it is not shown that the geometry permits no other carrier. Closing this gap is
+closing \emph{op:strong\_primitive};
+\item provide a falsifiable in-baryon prediction. A stable baryon is an
+energy eigenstate; the hops are real as structure but silent as activity
+(Section~\ref{sec:testable}).
+\end{itemize}
+
+\medskip
+\noindent\textbf{Three open items are registered honestly} and collected in
+Section~\ref{sec:status}: (i) candidate-carrier vs forcing; (ii) the
+per-quark-cage / baryon-$\hDP$-tetrahedron seam; (iii) the absence of an
+in-baryon test.
+
+\section{The open problem SS-1b left}
+\label{sec:openprob}
+
+SS-1b~\citep{ss1b} establishes, as an exact algebraic identity, that eight
+DI-bit hopping operators on the three tetrahedral colour vertices --- six
+colour-changing (edge) operators and two diagonal operators --- satisfy
+\begin{equation}
+T^a = \tfrac{1}{2}\lambda^a,\qquad [T^a,T^b] = i f^{abc} T^c,
+\label{eq:su3}
+\end{equation}
+with the standard Gell-Mann structure constants $f^{abc}$. SS-1c~\citep{ss1c}
+builds the eight gluons as the corresponding $\hDP$ configurations (six
+colour-changing, two colour-neutral), and SS-3~\citep{ss3} shows the
+realisation is unique within the operator representation.
+
+The construction of SS-1b takes as an assumption (its hypothesis~(a)) that the
+three colour states \emph{are} the three base vertices, and the hops are moves
+among them. It records, as Open Problem~\emph{op:strong\_primitive}, the
+physical question this leaves untouched: \emph{why} is the strong force
+mediated by tetrahedral hopping among those vertices, rather than by some other
+subgraph or some other dynamics entirely? Equation~\eqref{eq:su3} is the
+\emph{grammar} of three labelled corners; it does not by itself say what
+\emph{physically} performs a move between corners, nor why that performance is
+the strong interaction. This note addresses precisely that layer.
+
+\section{Colour as vertex occupancy}
+\label{sec:occupancy}
+
+We adopt the identification already implicit in SS-1c's baryon
+construction~\citep{ss1c}: a baryon places one quark at each of the three base
+vertices, the colour index is the vertex, and the colour singlet is the totally
+antisymmetric combination over the three vertices.
+
+\begin{equation}
+\text{colour of a quark} \;\equiv\; \text{the cage vertex its central }\qCP
+\text{ is bonded to.}
+\end{equation}
+
+Colour is thus not a property painted on the quark in isolation; it is a
+\emph{relationship to the frame} --- which seat the quark occupies. The colour
+Hilbert space $\mathcal{H}_{\rm colour}\cong\mathbb{C}^3$ is spanned by the
+three vertex-occupancy states $\ket{V_1},\ket{V_2},\ket{V_3}$. This is the
+fundamental representation, made concrete: the ``3'' of SU(3) is the three-ness
+of the base, and the ``8'' is forced from it as $3^2-1$.
+
+\section{The hop as a ZBW / SSV transition}
+\label{sec:hop}
+
+Each quark's bond to its vertex is a $\ZBW$ oscillation between two physically
+distinct states, following the founder's mechanical account:
+\begin{itemize}
+\item \textbf{State~1 (away).} The quark sits off the vertex; its $\SSV$ gradient
+is dominated by attraction toward the oppositely charged vertex, drawing it in.
+\item \textbf{State~2 (superimposed).} The quark sits superimposed on the
+vertex; its $\SSV$ gradient is now dominated by the surrounding Dipole Sea,
+pushing it back out.
+\end{itemize}
+The bond is the limit cycle between these: in--out, State~1$\,\leftrightarrow\,$State~2.
+
+A \emph{hop} --- the physical content of a colour generator --- is the event in
+which a quark, rebounding from State~2 at vertex $V_j$, re-enters State~2 at a
+\emph{different} vertex $V_i$ under the prevailing multi-body $\SSV$ gradient.
+Write this transition as the operator $E_{ij}$, ``occupancy moves $V_j\!\to\!
+V_i$.'' The $\ZBW$ oscillation is the physical muscle that performs the move; the
+hop is the move itself. The in/out asymmetry of the $\ZBW$ bond (the inbound
+$\SSV$ profile differs from the outbound one) makes each carried generator
+directional, $E_{ij}\neq E_{ji}$, but --- as the next two sections make precise
+--- directionality is a property of the \emph{carrier}, not the source of the
+algebra.
+
+\section{Non-commutativity from inter-vertex coupling}
+\label{sec:coupling}
+
+The defining feature of a non-abelian gauge algebra is that two generators fail
+to commute, and that the failure is itself a generator. Physically, this
+requires that the action of one move alter the conditions for another. The
+mechanism supplies exactly this coupling: \emph{each quark's $\SSV$ gradient is
+conditioned by the occupancy of the other vertices.} The gradient that decides
+whether and where the quark at $V_1$ may hop depends on which quark sits at
+$V_2$ and $V_3$; performing a hop at one vertex therefore changes the conditions
+for a hop at another.
+
+Realised as occupancy operators on $\mathcal{H}_{\rm colour}$, the hops obey the
+transposition grammar of three labelled states. For the colour-changing
+(off-diagonal) hops,
+\begin{equation}
+[E_{12},\,E_{23}] = E_{13}\quad(\text{up to sign/phase}),
+\label{eq:closure}
+\end{equation}
+and the difference of the two orderings is itself a third hop in the set:
+performing $V_2\!\to\!V_1$ then $V_3\!\to\!V_2$ does not equal the reverse, and
+the discrepancy is the $V_3\!\to\!V_1$ hop. Forming the Hermitian combinations
+$\tfrac{1}{2}(E_{ij}+E_{ji})$ and $\tfrac{1}{2i}(E_{ij}-E_{ji})$ together with
+the two independent diagonal (Cartan) differences --- two, not three, because
+the vertex occupancies sum to one quark each, which removes the overall
+$\mathrm{U}(1)$ --- reproduces the eight generators of
+Equation~\eqref{eq:su3} and the SS-1b closure. The inter-vertex coupling is
+the \emph{physical origin} of the structure constants.
+
+\section{Why raw oscillation modes are not the generators (the torus result)}
+\label{sec:torus}
+
+It is tempting to identify the eight gluons directly with eight $\ZBW$
+oscillation modes --- to ``count to eight'' among the bonds and declare the
+algebra found. The following proposition shows this identification fails, and in
+failing it tells us precisely what the realisation must supply.
+
+\begin{proposition}[Uncoupled modes form a torus]
+\label{prop:torus}
+Let the eight degrees of freedom be taken as uncoupled single-bond oscillation
+amplitudes (number-like operators, each diagonal in the occupancy basis,
+commuting pairwise). Then they generate the abelian algebra
+$\mathfrak{u}(1)^{\oplus 8}$, not $\mathfrak{su}(3)$. The $\mathfrak{su}(3)$
+structure constants of Equation~\eqref{eq:su3} appear if and only if the
+generators are realised as inter-vertex transposition (hop) operators on
+$\mathcal{H}_{\rm colour}=\mathbb{C}^3$.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+An oscillation amplitude is diagonal in the occupancy basis; two diagonal
+operators commute, so any set of such amplitudes generates an abelian (toral)
+algebra, regardless of their number or of any in/out asymmetry of the individual
+bonds. Directionality ($E_{ij}\neq E_{ji}$) is a property of a single operator
+relative to its inverse, not a failure of two distinct operators to commute, and
+contributes nothing to the bracket. A nonzero bracket $[A,B]$ requires $A$ and
+$B$ to act non-diagonally on a shared subspace --- i.e.\ to \emph{permute} basis
+states. The traceless Hermitian operators that permute and rephase three basis
+states are exactly the $\mathfrak{su}(3)$ generators, and their closure is
+Equation~\eqref{eq:su3} (SS-1b). Hence the off-diagonal hop structure is both
+necessary and sufficient for the algebra; the diagonal/amplitude content alone
+is necessarily abelian.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:torus} is the load-bearing result of this note. It
+disqualifies any ``$8$ modes $=$ $8$ gluons'' shortcut, including
+flavour-indexed or charge-indexed mode counts (which moreover fail
+flavour-blindness: e.g.\ an all-same-charge baryon such as $\Delta^{++}$ or
+$\Omega^-$ carries the same colour octet, but a count built from
+opposite-charge bond pairs does not reproduce it). It also identifies the
+mechanism's job exactly: not to produce eight oscillations, but to realise the
+six \emph{off-diagonal} inter-vertex hops as physical, charge-driven
+transitions --- which Sections~\ref{sec:hop}--\ref{sec:coupling} do, as a
+picture.
+\end{remark}
+
+\section{The unreconciled frames (registered)}
+\label{sec:seam}
+
+Two geometric frames for ``the three colour vertices'' coexist in the corpus and
+are not yet reconciled; the reconciliation is the open core of
+\emph{op:strong\_primitive} on the mechanism side.
+\begin{itemize}
+\item \textbf{SS-1b per-quark colour cage.} Each quark sits in a tetrahedral
+cage whose apex $V_4$ holds that quark's central $\qCP$ and whose three base
+vertices are that quark's three colour states $\{r,g,b\}$. Colour is internal to
+one quark; the hop moves a single quark's colour amplitude among its own base.
+\item \textbf{Baryon $\hDP$-tetrahedron (founder's account).} The baryon core is
+a hybrid tetrahedron built from type-A and type-B $\hDP$s; three quarks occupy
+three of its four vertices and the fourth vertex is an open $\eCP$; up and down
+quarks are themselves cageless ($\qCP$ core $+$ radial $\ZBW$ $\eCP$ $+$ cloud).
+Colour is which baryon vertex a quark is bonded to; the hop moves a quark
+between baryon vertices.
+\end{itemize}
+Both place colour on three vertices and both yield the SS-1b algebra by the
+three-ness; for a colour-singlet baryon (one quark per colour) the two
+descriptions may coincide, since ``which colour'' and ``which vertex'' carry the
+same information. Establishing that coincidence --- or the precise map between
+the frames --- is required before the realisation can be said to be derived
+rather than pictured. We register it as the principal open sub-problem.
+
+\section{Where the testable physics lives}
+\label{sec:testable}
+
+A stable proton or neutron is an energy eigenstate. Its colour structure is
+stationary; no hop is actually firing, and the $\ZBW$ trembling, though real, is
+silent as activity. Consequently the realisation \emph{cannot} be tested inside
+a stable baryon: there is no live transition to catch. A session-level search
+for in-baryon observables (extra short-lived configurations from minor bonding
+modes) found them parametrically suppressed.
+
+The mechanism's distinctive physics, if any, therefore lives in
+\emph{non-eigenstate} processes --- where the cage is forced out of its ground
+configuration: beta decay, meson formation, and high-energy collisions. The
+companion beta-decay and chirality mechanism (founder's notes; to be developed)
+is where a charge-driven transition becomes an actual event with a direction and
+a handedness, and is the natural place to look for a deviation from, or a
+substrate-derivation of, the established phenomenology. This note makes no such
+prediction; it only locates where one could live.
+
+\section{Status and open problems}
+\label{sec:status}
+
+\begin{openprob}[Forcing of the tetrahedral hop --- op:strong\_primitive, mechanism side]
+Show that the substrate dynamics \emph{force} the SU(3) colour hop to be the
+$\ZBW$/$\SSV$ inter-vertex transition of Sections~\ref{sec:hop}--\ref{sec:coupling},
+rather than merely permitting it; equivalently, derive
+Equation~\eqref{eq:su3}'s realisation from the substrate rather than adopting
+colour-as-vertex as a hypothesis. \textbf{Open.}
+\end{openprob}
+
+\begin{openprob}[Frame reconciliation]
+Establish the explicit map between the SS-1b per-quark colour cage and the
+baryon $\hDP$-tetrahedron of Section~\ref{sec:seam}, or show they coincide for a
+colour-singlet baryon. \textbf{Open.}
+\end{openprob}
+
+\begin{openprob}[An observable]
+Determine whether the realisation predicts any deviation from established
+phenomenology in a non-eigenstate process (Section~\ref{sec:testable}), or
+prove it cannot. \textbf{Open.}
+\end{openprob}
+
+\paragraph{Summary of standing.} The algebra (SS-1b) is proven and is not
+touched here. The realisation offered in this note is a \emph{candidate
+carrier}, internally consistent and corpus-consistent, supported by the negative
+result Proposition~\ref{prop:torus}, which fixes what the carrier must be (an
+off-diagonal hop, not an amplitude). It is a \emph{mechanism, not a derivation}.
+\emph{op:strong\_primitive} remains open on the forcing question.
+
+\section*{Acknowledgements}
+This note records the mechanical account developed by T.L.A.\ during the
+Session-16x exploratory arc, with the algebra and uniqueness results due to the
+prior SS-1b/SS-1c/SS-3 work. It is issued at v0.1 as a mechanism note for
+review; shared-registry registration is deferred to ship-time integration.
+
+\begin{thebibliography}{9}
+\bibitem{ss1b} T.~L.~Abshier, \emph{SU(3)$_c$ Algebra from Tetrahedral Phase
+Interference: The Strong Sector Algebra} (SS-1b), Conscious Point Physics,
+Hyperphysics Institute (2026).
+\bibitem{ss1c} T.~L.~Abshier, \emph{The Eight Gluons as hDP Structures} (SS-1c),
+Conscious Point Physics, Hyperphysics Institute (2026).
+\bibitem{ss1d} T.~L.~Abshier, \emph{Confinement and the Beta Function} (SS-1d),
+Conscious Point Physics, Hyperphysics Institute (2026).
+\bibitem{ss3} T.~L.~Abshier, \emph{SU(3) Uniqueness} (SS-3), Conscious Point
+Physics, Hyperphysics Institute (2026).
+\bibitem{sf5} T.~L.~Abshier and Claude Opus, \emph{Strong-Sector Unification
+from 600-Cell Geometry} (SF-5), Conscious Point Physics Flagship Series,
+Hyperphysics Institute (2026).
+\end{thebibliography}
+
+\end{document}
