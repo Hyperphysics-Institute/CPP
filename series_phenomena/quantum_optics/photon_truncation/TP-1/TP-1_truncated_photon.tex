@@ -41,12 +41,13 @@
 \newcommand{\wg}{\omega_\gamma}
 \newcommand{\wcut}{\omega_{\mathrm{cut}}}
 \newcommand{\wP}{\omega_P}
+\newcommand{\wmax}{\omega_{\max}}
 \newcommand{\Nexp}{\langle N\rangle}
 
 \title{\textbf{TP-1: The Truncated Photon and the Lattice
 Regularization of Shutter-Induced Photon Creation}\\[6pt]
 {\large Conscious Point Physics --- Phenomena Series (Quantum Optics)}\\[4pt]
-{\Large \textbf{Version 0.3 --- 20 June 2026}}}
+{\Large \textbf{Version 0.4 --- 20 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -83,14 +84,17 @@ Therefore $\Nexp$ is finite, and the divergence class is not assumed: RGS derive
 showing that the Heaviside truncation produces a Fourier tail $\propto1/\omega$ which, with
 their $E(\omega)\propto\sqrt\omega$ weighting, makes the photon number diverge
 \emph{logarithmically}; and they regularize it with a formal high-frequency cutoff that
-``can be arbitrarily high.'' CPP's specific content is to \emph{instantiate} that formal
-cutoff at the physical lattice scale $\wP=1/\tP$ --- not as a heuristic but as a strict
-geometric requirement of the $600$-cell lattice ($k_{\max}=\pi/\lP$). Two regimes follow. For
+``can be arbitrarily high.'' CPP's specific content is that the
+$600$-cell mode spectrum (QM-5) has an \emph{intrinsic} band top $\wmax=\sqrt{12}\,c/\lP=\sqrt{12}/\tP
+=2\sqrt3/\tP$, set by the largest adjacency eigenvalue $\lambda_{\max}=z=12$, above which no modes
+exist --- so the truncation sum is finite by the finiteness of the lattice spectrum, not by an
+imposed cutoff, and the ceiling carries the coordination $z=12$ as a fingerprint. Two regimes
+follow. For
 a realistic shutter (removal time $T\gg1/\wg$) the mechanical switching already gives
 $\Nexp\ll1$ and the lattice cutoff is dormant ($\tP$ is $\sim\!28$ orders below the optical
 period); CPP and the continuum agree. The lattice acts only on the idealized instantaneous
 shutter, where the continuum has a genuine logarithmic divergence: CPP forbids $T<\tP$, caps
-$\wcut\le\wP$, and yields $\Nexp_{\max}=C\,\ln(\wP/\wg)\approx 63\,C$ for an optical photon ---
+$\wcut\le\wmax$, and yields $\Nexp_{\max}=C\,\ln(\wmax/\wg)\approx 64.5\,C$ for an optical photon ---
 order tens, finite, with $C$ an $O(1)$ coefficient set by the photon amplitude at the cut. The
 contribution is therefore one of \emph{compatibility plus foundational regularization}, not a
 new mechanism: CPP embeds the structures RGS assume (mode decomposition, partial trace,
@@ -165,9 +169,10 @@ formal cutoff at the lattice scale removes the continuum's instantaneous-shutter
 \subsection{Open Problems Addressed}
 This paper opens the quantum-optics domain of \texttt{series\_phenomena/} with its first
 member, the truncated-photon phenomenon, and registers OPEN-TP-1. As of this version
-OPEN-TP-1 is \emph{narrowed}: the divergence class is closed (logarithmic, derived in
-\S\ref{sec:class} from the RGS kernel), and only the $O(1)$ leading-log prefactor $C$
-remains open. This paper is positioned as the \emph{foundational bridge} for the
+OPEN-TP-1 is \emph{further narrowed}: the divergence class is closed (logarithmic, derived in
+\S\ref{sec:class} from the RGS kernel) \emph{and} the cutoff is grounded --- it is the intrinsic
+$600$-cell band top $\wmax=\sqrt{12}/\tP$ (QM-5 dispersion, $\lambda_{\max}=z=12$), not an imposed
+regulator --- so only the $O(1)$ leading-log prefactor $C$ remains open. This paper is positioned as the \emph{foundational bridge} for the
 quantum-optics domain: it maps the standard quantum-optics formalism (Fock states, mode
 truncation, Bogoliubov boundaries) onto the DP-Sea substrate, establishing the correspondence
 on which later optical phenomena in this domain (beam splitters, entanglement swapping,
@@ -333,11 +338,11 @@ $\Nexp\lesssim1$ only once $T$ drops to $\sim\!10^{-14}\,$s. Two regimes result:
 \begin{itemize}[leftmargin=2em]
 \item \textbf{Regime A --- realistic shutter ($T\gg1/\wg$).} The mechanical smoothing of
 \eqref{eq:rgsbound} already holds $\Nexp\ll1$. The lattice cutoff is dormant: $\tP$ lies
-$\sim\!28$ orders of magnitude below the optical period $1/\wg$, so $\wcut\sim1/T\ll\wP$
+$\sim\!28$ orders of magnitude below the optical period $1/\wg$, so $\wcut\sim1/T\ll\wmax$
 and the lattice never binds. CPP and the continuum coincide.
 \item \textbf{Regime B --- idealized instantaneous shutter ($T\to0$).} Here the continuum
 has its genuine logarithmic divergence \eqref{eq:logclass}. CPP forbids $T<\tP$ (one
-Absolute Moment is the sharpest physical truncation), so $\wcut\le\wP=1/\tP$ and the
+Absolute Moment is the sharpest physical truncation), so $\wcut\le\wmax$ and the
 divergence is capped.
 \end{itemize}
 The gradual-bound framework of \eqref{eq:rgsbound} cannot itself be pushed to the lattice
@@ -349,7 +354,7 @@ governs.
 \paragraph{The two regimes in one statement.} For realistic shutters ($T\gg1/\wg$) the RGS
 gradual bound \eqref{eq:rgsbound} ensures $\Nexp\ll1$ and CPP reduces to the continuum; for
 the idealized instantaneous limit, the continuum's logarithmic divergence is capped in CPP by
-the lattice ultraviolet scale $\wP$, yielding $\Nexp_{\max}=C\ln(\wP/\wg)$. The framework-
+the intrinsic band top $\wmax$, yielding $\Nexp_{\max}=C\ln(\wmax/\wg)$. The framework-
 specific content lives \emph{entirely} in the second regime: the continuum's instantaneous-
 shutter infinity is a cutoff artifact, and CPP supplies the finite value the idealization
 should have carried. We therefore explicitly disown the v0.1 phrasing that the lattice renders
@@ -357,15 +362,28 @@ $\Nexp$ ``finite for every physical shutter'': for every \emph{realistic} shutte
 is irrelevant in any observable way; it caps only the unphysical instantaneous idealization.
 The result is conceptually foundational, not experimentally consequential.
 
-\paragraph{Instantiation, not a universal identity.} The framework-specific step is properly
-read as an \emph{instantiation}: within CPP, the only available ultraviolet scale is
-$\wP=1/\tP$, so RGS's formal high-frequency cutoff is instantiated at $\wcut=\wP$. This is a
-statement \emph{within} CPP, not a theory-independent assertion that RGS's cutoff ``is''
-$\wP$. The honest framing of the obvious critique --- ``this is just standard QFT with a
-Planck-scale cutoff'' --- is to own it: putting the cutoff at the Planck scale is a familiar
-heuristic in continuum QFT, but in CPP it is not a heuristic; it is a strict geometric
-requirement of the $600$-cell lattice ($k_{\max}=\pi/\lP$), already fixed before this problem
-was posed. That is the whole of the framework-specific content: modest, but real.
+\paragraph{The cutoff is intrinsic: the 600-cell band top.} The framework-specific step is
+stronger than instantiating a formal cutoff by hand: the $600$-cell mode spectrum has an
+intrinsic maximum. QM-5 quantises the lattice field on the $600$-cell adjacency matrix, whose
+spectrum is the six distinct eigenvalues $\lambda\in\{12,\,1{+}\varphi,\,\varphi{-}1,\,
+1{-}\varphi,\,-\varphi,\,-(1{+}\varphi)\}$, with mode dispersion
+$\omega_k=c\sqrt{|\lambda_k|}/\lP$ \citep{CPP-QM5}. The largest eigenvalue is the coordination
+number $\lambda_{\max}=z=12$, so the field has a \emph{hard band top}
+\begin{equation}
+\wmax=\sqrt{\lambda_{\max}}\,\frac{c}{\lP}=\frac{\sqrt{12}}{\tP}=\frac{2\sqrt3}{\tP}
+=6.43\times10^{43}\,\mathrm{rad/s},
+\label{eq:bandtop}
+\end{equation}
+above which \emph{there are no modes at all}. The truncation sum is therefore finite not
+because a cutoff is imposed, but because the lattice spectrum is finite: the $1/\omega$ tail
+of \S\ref{sec:class} simply terminates at $\wmax$. This answers the obvious critique
+(``standard QFT with a Planck-scale cutoff'') at its root. First, the cutoff is not a
+heuristic regulator taken to a chosen scale; it is the literal top of the $600$-cell band,
+fixed by QM-5's dispersion before this problem was posed. Second, it is not the generic
+Planck value $1/\tP$ but $\wmax=\sqrt{z}/\tP=2\sqrt3/\tP$ --- it carries the $600$-cell
+coordination $z=12$ as a fingerprint, distinguishing it from any theory that merely places a
+cutoff ``at the Planck scale.'' The framework-specific content is thus concrete: an intrinsic,
+$z$-bearing band top, not a renamed continuum regulator.
 
 % ============================================================
 % SECTION 4: Regularization
@@ -378,47 +396,50 @@ The one place CPP departs from the continuum is the fate of the divergence.
 \label{prop:reg}
 Assume (a) the truncated-photon expected number $\Nexp$ diverges only in the
 instantaneous-shutter limit, with the logarithmic ultraviolet form \eqref{eq:logclass}
-derived in \S\ref{sec:class} \citep{RukanGullaSkaar2026}; and (b) CPP imposes a hard
-ultraviolet cutoff $k_{\max}=\pi/\lP$ on all field modes, equivalently a maximal angular
-frequency $\wP=1/\tP$ \citep{CPP-QM5}, and forbids any shutter from switching faster than
-one Absolute Moment $\tP$. Then $\Nexp$ is finite, and bounded over the set of \emph{all}
-physical shutters by $\Nexp_{\max}=C\,\ln(\wP/\wg)$ --- with the bound saturated only in the
+derived in \S\ref{sec:class} \citep{RukanGullaSkaar2026}; and (b) the CPP field, quantised on
+the $600$-cell adjacency spectrum, has an \emph{intrinsic} maximum mode frequency --- the
+band top $\wmax=\sqrt{\lambda_{\max}}\,c/\lP=\sqrt{12}/\tP$ of \eqref{eq:bandtop}
+\citep{CPP-QM5}, above which no modes exist --- and forbids any shutter from switching faster
+than one Absolute Moment $\tP$. Then $\Nexp$ is finite, and bounded over the set of \emph{all}
+physical shutters by $\Nexp_{\max}=C\,\ln(\wmax/\wg)$ --- with the bound saturated only in the
 idealized instantaneous limit; for realistic shutters $\Nexp\ll1$ by \eqref{eq:rgsbound} and
 the bound is far from tight.
 \end{proposition}
 
 \begin{proof}
 By \eqref{eq:logclass} the created-photon spectrum on $[\wg,\wcut]$ integrates to
-$\Nexp=C\ln(\wcut/\wg)$, which diverges only as $\wcut\to\infty$. By (b) every physical mode
-has $\omega\le\wP$, and the sharpest physical shutter, one Absolute Moment, sets
-$\wcut=\wP$. Hence $\wcut\le\wP$ and $\Nexp\le C\ln(\wP/\wg)<\infty$, uniformly over
-shutters.
+$\Nexp=C\ln(\wcut/\wg)$, which diverges only as $\wcut\to\infty$. By (b) every lattice mode
+has $\omega\le\wmax$, so the spectrum has no support above $\wmax$ and the effective
+$\wcut\le\wmax$. Hence $\Nexp\le C\ln(\wmax/\wg)<\infty$, uniformly over shutters.
 \end{proof}
 
 The structural conclusion (finiteness) needs only that the divergence is ultraviolet and
 that the cutoff exists; the numerical ceiling additionally uses the derived logarithmic
 class \eqref{eq:logclass}.
 
-\paragraph{The numerical ceiling.} With $\Nexp(\wcut)=C\ln(\wcut/\wg)$ and the CPP cutoff
-$\wcut\le\wP$,
+\paragraph{The numerical ceiling.} With $\Nexp(\wcut)=C\ln(\wcut/\wg)$ and the intrinsic band
+top $\wcut\le\wmax$,
 \begin{equation}
-\Nexp_{\max}=C\,\ln\!\frac{\wP}{\wg}.
+\Nexp_{\max}=C\,\ln\!\frac{\wmax}{\wg}.
 \end{equation}
 For an optical photon ($\wg/2\pi=10^{15}\,$Hz, $\wg=6.283\times10^{15}\,\mathrm{rad/s}$,
-the RGS reference case) and $\wP=1/\tP=1.855\times10^{43}\,\mathrm{rad/s}$,
+the RGS reference case) and the band top
+$\wmax=\sqrt{12}/\tP=6.43\times10^{43}\,\mathrm{rad/s}$,
 \begin{equation}
-\ln\!\frac{\wP}{\wg}=63.3,\qquad \Nexp_{\max}\approx 63\,C,
+\ln\!\frac{\wmax}{\wg}=64.5,\qquad \Nexp_{\max}\approx 64.5\,C,
 \end{equation}
-an order-tens ceiling. The leading-log coefficient $C=O(1)$ is now the \emph{only}
-model-dependent input; fixing it requires evaluating the Hilbert--Schmidt mode sum
-$\|T_2\|_{\mathrm{HS}}^2$ for a specific cut profile, with the frequency integral cut at
-$\pi/\lP$ (the narrowed OPEN-TP-1).
+an order-tens ceiling. The $z$-fingerprint sits inside the logarithm as
+$\ln(\wmax/\wg)=\tfrac12\ln 12+\ln(1/\tP\wg)=1.24+63.25$: the $600$-cell raises the naive
+Planck-cutoff ceiling ($63.3\,C$) by exactly $\ln\sqrt{12}$. The leading-log coefficient
+$C=O(1)$ is now the \emph{only} model-dependent input; fixing it requires evaluating the
+Hilbert--Schmidt mode sum $\|T_2\|_{\mathrm{HS}}^2$ over the $600$-cell modes (with the
+density of states near the band top, \S\ref{sec:class}) --- the residual OPEN-TP-1.
 
 \paragraph{Sharper than ``unlikely'' --- in the idealized limit only.} RGS say large photon
 numbers are improbable for realistic shutters; in Regime~A CPP agrees and adds nothing. The
 CPP statement bites only in Regime~B: a truncation sharper than one Absolute Moment is not
 merely improbable but forbidden, so the continuum's $\wcut\to\infty$ divergence cannot be
-realized and $\Nexp$ is capped at $\approx63\,C$. This is the same conversion QM-5 performs
+realized and $\Nexp$ is capped at $\approx64.5\,C$. This is the same conversion QM-5 performs
 for the electron self-energy, where the lattice turns an infinite renormalization into a
 finite one; here it turns the instantaneous-shutter infinity into a finite, Planck-set
 value. The result is foundational --- a statement about which idealizations the substrate
@@ -456,17 +477,17 @@ $600$-cell.
 \textbf{Load-bearing axioms.} The compatibility map rests on A1 (Conscious Points and the
 DP-Sea vacuum they compose), A2 (the $600$-cell topology supplying the eigenmode basis and,
 through $z$ and $\lP$, the cutoff), A3 (DI-bit propagation at $c=\lP/\tP$, which makes
-photons finite-extent and supplies the maximal frequency $\wP=1/\tP$), and A4 (the Nexus,
+photons finite-extent and supplies the maximal frequency, the band top $\wmax=\sqrt{12}/\tP$), and A4 (the Nexus,
 which enforces global consistency while permitting an open driven subsystem to exchange
 energy). The regularization (Prop.~\ref{prop:reg}) is carried specifically by A2+A3
-through the single fact $\wcut\le\wP=1/\tP$.
+through the single fact $\wcut\le\wmax$.
 
 \textbf{Visible vs.\ smoothed discreteness.} The lattice discreteness is visible here in
-exactly one quantity --- the cutoff $\wP=1/\tP$ that caps the photon-number ceiling --- and
+exactly one quantity --- the band top $\wmax=\sqrt{12}/\tP$ that caps the photon-number ceiling --- and
 is otherwise smoothed away: the bosonic mode algebra, the Bogoliubov kernel, and the
 partial-trace structure are all continuum-faithful, because that is what QM-5's
 continuum-limit claim guarantees. The single surviving lattice fingerprint is the
-finiteness of $\Nexp$ and its $\ln(\wP/\wg)$ ceiling. This is the orders-of-magnitude
+finiteness of $\Nexp$ and its $\ln(\wmax/\wg)$ ceiling. This is the orders-of-magnitude
 dilution made explicit: a Planck-scale discreteness leaves only a logarithm of the
 Planck-to-optical ratio in the observable.
 
@@ -495,7 +516,7 @@ Photon creation & Bogoliubov mixing of $\hat a,\hat a^\dagger$ & dynamical-Casim
 $0\!\to\!\infty$ mixture & multi-photon Fock support & bosonic multi-occupation of $600$-cell modes (QM-5) \\
 Local simple / global complex & partial trace gives single photon / vacuum & $\Tr_{\mathrm{Sea}}$ under the Nexus (QM-4) \\
 Energy bookkeeping & apparent non-conservation (Noether) & open subsystem driven by the shutter; Nexus global-consistent \\
-$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ logarithmically (formal cutoff, ``arbitrarily high'') & finite; formal cutoff instantiated at $\wP=1/\tP$ (Prop.~\ref{prop:reg}) \\
+$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ logarithmically (formal cutoff, ``arbitrarily high'') & finite; intrinsic $600$-cell band top $\wmax=\sqrt{12}/\tP$ (Prop.~\ref{prop:reg}) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -513,8 +534,8 @@ granularity, and the lattice content appears only in the cutoff.
 \item \textbf{Prefactor falsifier (narrowed OPEN-TP-1).} The divergence class is now
 derived (logarithmic, \S\ref{sec:class}). What remains is the $O(1)$ leading-log coefficient
 $C$. If evaluating the Hilbert--Schmidt mode sum $\|T_2\|_{\mathrm{HS}}^2$ for a realistic
-cut profile, with the integral cut at $\pi/\lP$, returns a $C$ far from order unity, the
-``$\approx63\,C$'' ceiling shifts accordingly. The finiteness claim (Prop.~\ref{prop:reg})
+cut profile, summed over the $600$-cell modes up to the band top $\wmax$, returns a $C$ far from
+order unity, the ``$\approx64.5\,C$'' ceiling shifts accordingly. The finiteness claim (Prop.~\ref{prop:reg})
 and the logarithmic class survive regardless.
 \item \textbf{Class falsifier.} If a direct CPP-lattice computation of the truncation
 contradicted the logarithmic class \eqref{eq:logclass} --- e.g.\ produced a power-law tail
@@ -525,10 +546,11 @@ unitarity at the level of the full Sea state (not merely the open driven subsyst
 QM-4 measurement account would be contradicted and the compatibility claim of
 \S\ref{sec:compat} would fail.
 \item \textbf{Cutoff-identification falsifier.} The CPP-specific step is identifying RGS's
-formal ``arbitrarily high'' cutoff (their Eq.~B14) with the physical scale $\wP=1/\tP$. If
-the lattice's actual mode ceiling were shown not to act as a sharp frequency cutoff on the
-created-photon spectrum (e.g.\ if lattice dispersion reshaped the $1/\omega$ tail before the
-cutoff), the clean $\ln(\wP/\wg)$ ceiling would be modified.
+formal ``arbitrarily high'' cutoff (their Eq.~B14) with the intrinsic $600$-cell band top
+$\wmax=\sqrt{12}/\tP$. If the lattice's actual mode ceiling were shown not to act as a sharp
+frequency cutoff on the created-photon spectrum (e.g.\ if the band-top density of states
+reshaped the $1/\omega$ tail before $\wmax$), the clean $\ln(\wmax/\wg)$ ceiling would be modified
+--- this is the open edge of OPEN-TP-1.
 \end{enumerate}
 
 \noindent\emph{On experimental access.} We do not list a laboratory falsifier. As
@@ -550,10 +572,11 @@ partial trace under the Nexus), and the authors' own creation mechanism --- brok
 time-translation invariance --- is the CPP driven-boundary (dynamical-Casimir) process.
 The single framework-specific result is that the divergence, which RGS derive to be
 logarithmic and regularize with a formal ``arbitrarily high'' cutoff, is regulated by
-\emph{instantiating} that formal cutoff at the physical lattice scale $\wP=1/\tP$ --- a strict
-geometric requirement of the $600$-cell lattice, not a heuristic. The truncated-photon
-expected number is then finite, with an optical ceiling $\Nexp_{\max}=C\ln(\wP/\wg)\approx
-63\,C$ realized only in the idealized instantaneous limit (Regime~B); for any realistic
+the intrinsic $600$-cell band top $\wmax=\sqrt{12}\,c/\lP=\sqrt{12}/\tP$ --- the largest
+adjacency eigenvalue $\lambda_{\max}=z=12$ fixes a hard maximum mode frequency, so the sum is finite
+by the finiteness of the lattice spectrum and the ceiling carries $z$. The truncated-photon
+expected number is then finite, with an optical ceiling $\Nexp_{\max}=C\ln(\wmax/\wg)\approx
+64.5\,C$ realized only in the idealized instantaneous limit (Regime~B); for any realistic
 shutter (Regime~A) the lattice is dormant and CPP and the continuum agree. The paper's
 contribution is best labelled \emph{compatibility plus foundational regularization}: CPP
 embeds the structures RGS assume in a real substrate and supplies the finite value the
@@ -565,21 +588,26 @@ not an experimental prediction and not a new mechanism. In one phrase: the diver
 This paper adds no new zero-parameter numerical correspondence to the cumulative swarm
 tally; its contribution is one framework-conditional structural result (the lattice
 regularization, Prop.~\ref{prop:reg}, now resting on a \emph{derived} logarithmic divergence
-class, \S\ref{sec:class}) and the associated order-tens optical ceiling $\approx63\,C$,
+class, \S\ref{sec:class}) and the associated order-tens optical ceiling $\approx64.5\,C$,
 carried by the unchanged $9$-axiom stack, with the single residual being the $O(1)$
 prefactor $C$ (narrowed OPEN-TP-1). Consistent with programme convention, the running swarm
 total is unchanged; the paper's weight is that an independently published, contested
 continuum result fits the CPP substrate without adjustment and is sharpened by it ---
-specifically, RGS's own formal cutoff acquires a physical identity as $\wP=1/\tP$.
+specifically, RGS's own formal cutoff acquires a physical identity as the $600$-cell band top $\wmax=\sqrt{12}/\tP$.
 
 \subsection{Problem Status After This Paper}\label{sec:problem_status}
 \begin{itemize}[leftmargin=2em]
 \item \texttt{series\_phenomena/quantum\_optics/} domain: open (since v0.1); truncated-photon
 phenomenon its first member.
-\item OPEN-TP-1: \textbf{NARROWED} (v0.1 OPEN $\to$ v0.2 PARTIAL). The divergence class is
-closed --- logarithmic, derived in \S\ref{sec:class} from the RGS kernel --- so the remaining
-open piece is only the $O(1)$ leading-log prefactor $C$ (the Hilbert--Schmidt mode sum for a
-given cut profile, cut at $\pi/\lP$).
+\item OPEN-TP-1: \textbf{FURTHER NARROWED} (v0.1 OPEN $\to$ v0.2 PARTIAL $\to$ v0.4 cutoff
+grounded). The divergence class is closed (logarithmic, derived in \S\ref{sec:class} from the
+RGS kernel) \emph{and} the cutoff is no longer imposed: it is the intrinsic $600$-cell band top
+$\wmax=\sqrt{\lambda_{\max}}\,c/\lP=\sqrt{12}/\tP=2\sqrt3/\tP$ (QM-5 dispersion
+$\omega_k=c\sqrt{|\lambda_k|}/\lP$, leading eigenvalue $\lambda_{\max}=z=12$), carrying the
+$600$-cell coordination $z$ as a fingerprint and raising the ceiling to $\approx64.5\,C$
+(eq.~\ref{eq:bandtop}, script \texttt{1706}). The remaining open piece is only the $O(1)$
+leading-log prefactor $C$ --- the Hilbert--Schmidt mode sum $\|T_2\|^2_{\mathrm{HS}}$ over the
+$600$-cell modes near the band top (van Hove density of states).
 \item Prop.~\ref{prop:reg} (lattice regularization): now rests on a derived class; stated at
 framework-conditional level, no global theorem claimed.
 \item Correction to v0.1: the regularization is active only in the idealized-instantaneous
@@ -618,8 +646,8 @@ the Planck-set ceiling. The v0.2 script
 \texttt{scripts/1701\_divergence\_class.py} establishes the divergence class and the
 two-regime structure: with $\tP=5.391247\times10^{-44}\,$s and the RGS optical carrier
 $\wg=2\pi\times10^{15}\,$Hz $=6.283\times10^{15}\,$rad/s it returns
-$\wP=1/\tP=1.855\times10^{43}\,$rad/s and $\ln(\wP/\wg)=63.25$, hence
-$\Nexp_{\max}=63.3\,C$. It reproduces the RGS gradual-removal bound
+the band top $\wmax=\sqrt{12}/\tP=6.43\times10^{43}\,$rad/s (from $\lambda_{\max}=12$) and
+$\ln(\wmax/\wg)=64.5$, hence $\Nexp_{\max}=64.5\,C$ (the naive $1/\tP$ placeholder gives $63.3\,C$). It reproduces the RGS gradual-removal bound
 \eqref{eq:rgsbound} (at transmissivity $10^{-4}$, $\Nexp\lesssim1$ down to
 $T\sim10^{-14}\,$s, matching their example), and confirms the scale ordering
 $\tP\ll1/\wg\ll T_{\mathrm{realistic}}$ ($\tP$ lies $27.5$ orders below the optical period),
