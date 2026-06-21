@@ -54,7 +54,37 @@ The Flagship Papers sit at the apex of the CPP programme, taking completed deriv
 **Paper(s):** SF-5 v1.0 SHIPPED Session 161, Patches 1520→1521; §4 + §8 (flagged, not headlined).
 **Registered:** 15 June 2026 Session 161, Patches 1520→1521.
 
-**[Maintainer note — FP count reconciliation pending]** The section header count ("16 active + 1 resolved (17 problems)") was extracted 2026-05-25 and predates OPEN-FP-3-CKM (registered 14 Jun, Patch 1506) and the two OPEN-FP-5-* entries above (15 Jun). The header count should be reconciled at the next FP audit; the auditable record is the per-entry blocks, which are current.
+### OPEN-FP-6-CONSTANTS: First-principles electromagnetic constants without parameter tuning
+**Status:** **OPEN** — registered at SF-6 v1.0 SHIP (Patch 1607; integration Patch 1609)
+**Sector(s):** FP / SF-6 (electromagnetism)
+**Priority:** HIGH (the Tier-2 rigor floor of the SF-6 flagship; μ0, ε0, c, γ(v) currently rest on a parameter-tuned toy model — a lower floor than the zero-parameter family flagships SF-1/3/5)
+**One-line statement:** Derive the electromagnetic constants μ0, ε0, c (and the relativistic γ(v)) from the 600-cell dipole stiffness without parameter tuning, replacing the DP-Sea-Polarization toy-model values.
+**What a solution looks like:** A first-principles expression of μ0, ε0 in terms of the 600-cell dipole stiffness and the shell-broadcast speed; in particular, a proof of the conjecture that the impedance Z₀ = √(μ0/ε0) is an SSV-independent pure geometric constant (so an SSV change moves only the product μ0ε0 = 1/c², the density channel, not the ratio, keeping α fixed). Closing this would also resolve the Michelson–Morley tension by confining the c_eff variation to the density channel.
+**Dependencies:** SF-6 v1.0 §4–§5 (the toy-model constants + the SSV-independent-Z₀ conjecture); the DP-Sea-Polarization model; a 600-cell dipole-stiffness primitive.
+**Cross-sector connections:** The SSV-independent-Z₀ conjecture bridges the EM constants to the gravitational density-dependence of c (the lensing channel). Resolution is the gate to a Tier-1 (zero-parameter) EM-constants result and to closing the SF-6 Michelson–Morley falsifier.
+**Current best result:** Toy-model (parameter-tuned) only — μ0, ε0, c, γ(v) from the DP-Sea-Polarization model. The Tier-1 inter-constant identities (c=1/√(μ0ε0), Z₀=√(μ0/ε0)) hold algebraically, but the constant *values* are not first-principles.
+**Falsification route:** A demonstration that the ratio √(μ0/ε0) varies (decoupled from the product μ0ε0) under a controlled substrate-density gradient would falsify the SSV-independent-Z₀ conjecture; a confirmed absolute-frame c_eff(v) at the uncorrected toy-model magnitude would falsify the toy-model form.
+**Paper(s):** SF-6 v1.0 SHIPPED Patch 1607; §4 (the conjecture), §5 (the toy model), §9 (the falsifier), §8 (registered open).
+**Registered:** 21 June 2026, Patch 1609 (SF-6 v1.0 ship-time integration).
+
+---
+
+### OPEN-FP-6-EMHAND: Electromagnetic-phenomenology expression of (already-closed) substrate chirality
+**Status:** **OPEN** — registered at SF-6 v1.0 SHIP (Patch 1607; integration Patch 1609)
+**Sector(s):** FP / SF-6 (electromagnetism); SD / chirality (substrate manifestation (iii))
+**Priority:** MEDIUM (the substrate result is already closed; only the EM-phenomenology narrative is owed — the mildest of the SF-line auxiliary gaps)
+**One-line statement:** Build the electromagnetic-phenomenology *expression* of the already-closed substrate chirality — a physical-EM narrative connecting the group-theoretic substrate handedness to observable electromagnetic phenomena.
+**What a solution looks like:** A physical narrative connecting the closed substrate manifestation (iii) (THEO-SD-CHIR-2 at substrate Layer 3, |M^qDP| = χ/6 with sign from n̂; THEO-CHIR-CONT-3 at Layer 4 continuum-EFT) to observable EM phenomena, respecting the parity obstruction: classical EM is P-even (B is a pseudovector, the right-hand rule is P-even), so the EM mechanism can only *express* the substrate direction n̂, never *source* the P-odd handedness of the world.
+**Dependencies:** THEO-SD-CHIR-2 + THEO-CHIR-CONT-3 (the closed substrate manifestation (iii)); SF-6 v1.0 §8; the 0935 magnetism-candidate evaluation (the expression-not-source framing).
+**Cross-sector connections:** This is **NOT** a chirality-arc closure dependency — the substrate manifestation is already closed; SF-6 owes only the EM-phenomenology narrative on top of it. Distinct from the open neutrino δ_CP (SF-4) and the open CKM phase (SF-3), which are *undelivered* substrate results; this is a *delivered* substrate result awaiting its phenomenological expression.
+**Current best result:** Substrate manifestation (iii) closed (THEO-SD-CHIR-2 / THEO-CHIR-CONT-3); a candidate physical picture was accepted at the 0935 magnetism evaluation but reframed as expression-not-source. No EM-phenomenology narrative yet written.
+**Falsification route:** A proposed EM-handedness mechanism that *sources* (rather than expresses) P-odd handedness from P-even classical EM would be ruled out by the parity obstruction.
+**Paper(s):** SF-6 v1.0 SHIPPED Patch 1607; §8 (registered open; re-scoped at v0.2 Patch 1602).
+**Registered:** 21 June 2026, Patch 1609 (SF-6 v1.0 ship-time integration).
+
+---
+
+**[Maintainer note — FP count reconciliation pending]** The section header count ("16 active + 1 resolved (17 problems)") was extracted 2026-05-25 and predates OPEN-FP-3-CKM (registered 14 Jun, Patch 1506) the two OPEN-FP-5-* entries (15 Jun), and the two OPEN-FP-6-* entries above (21 Jun, Patch 1609). The header count should be reconciled at the next FP audit; the auditable record is the per-entry blocks, which are current.
 
 ---
 
