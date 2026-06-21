@@ -84,3 +84,21 @@ linewidth (Δν ∝ ν³, the Einstein-A consistency). So the same computation t
   on μ₀, ε₀ from stiffness C and speed c.
 - Reasoning: `series_relativity/development/reasoning/0740_mu_eps_symmetry.md`.
 - Ties to Brick #2 (fixed/eternal GPs ⇒ geometric Z₀).
+
+---
+
+## Update — Patch 2002 (the owed Z₀(C) computation, done)
+
+Patch 2002 discharges the computation this note deferred. It derives the Z₀-geometric result via the
+**harmonic virial mechanism** and makes the fork explicit:
+- **Single-oscillator (c06/0743: B = rotation of the same DP whose displacement is E):** ⟨KE⟩=⟨PE⟩
+  (since ω²=C/m) ⇒ the magnetic (kinetic) and electric (potential) energies carry *identical*
+  C-dependence ⇒ **C cancels in the ratio Z₀=√(μ₀/ε₀)** (geometric, A=0, PASS) while surviving in the
+  product μ₀ε₀=1/c² (c varies = gravity, c∝√C — right sign for VSL high early c_eff).
+- **Independent magnetic inertia (fixed ZBW ⇒ m∝C):** Z₀∝C¹, A~O(1) ⇒ FAIL by ~6 orders.
+
+So the three-corpus-facts argument here is upgraded to a derived mechanism with a clean PASS/FAIL fork.
+The residual is now ONE load-bearing claim: that the DP magnetic response is the kinetic channel of the
+*same* oscillator (no independent magnetic inertia). Establishing it (EM-sector, EW-1/c06) → unconditional
+PASS; refuting it → kill. Anharmonic residual A~ε_anh·strain² ~10⁻¹²·ε_anh at the local clock-LPI strain
+(safe). See `mu_eps_closure/R2-Z0-VIRIAL-CLOSURE.md`; verify `mu_eps_closure/scripts/2002_z0_impedance_fork.py`.
