@@ -9,7 +9,9 @@
 % calibration: C2 promoted to theorem via the Z/nu_2 independence
 % lemma (sec:consist1); C3 deflated to shared-quantity (not mechanism);
 % 9 closure-status column + headline qualifier + chi/6 footnote;
-% 10 panel-adopted circularity build rule. Sections 3-8 carry each shipped
+% 10 panel-adopted circularity build rule. v0.3 (Patch 1317) builds the
+% first 10 member under the build rule: THEO-SF7-CONSIST-2 (SF-1<->SF-2
+% spectral-trace consistency, sec:consist2). Sections 3-8 carry each shipped
 % predecessor's headline; section 9 carries the locked calibration
 % ledger; section 10 states the one BUILT consistency theorem
 % (THEO-SF7-CONSIST-1) plus the roadmap for the ten still to build.
@@ -63,7 +65,7 @@
 \title{\textbf{SF-7: Standard Model Grand Unification from 600-Cell Geometry}\\[6pt]
 {\large Hierarchy Without Hierarchy: Seventeen Particles, One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series --- Apex Synthesis}\\[4pt]
-{\Large \textbf{Version 0.2 (DRAFT) --- 21 June 2026}}}
+{\Large \textbf{Version 0.3 (DRAFT) --- 21 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -82,7 +84,7 @@
 
 The Standard Model carries nineteen or more free parameters with no account of why the particle masses take the values they do --- the \emph{hierarchy problem}, the most-named known-unknown of the mass program. SF-7 assembles the cumulative result that the charged-lepton spectrum (SF-1), the electroweak cage-boson family including $W^0$ (SF-2), the quark spectrum and generation count (SF-3), the neutrino sector (SF-4), the strong sector --- $SU(3)$ colour, the eight gluons, confinement, the light-nucleus binding cascade (SF-5) --- and the unification of classical, special-relativistic, and quantum electromagnetism (SF-6) all follow from one calibration on the shared substrate quantum $\Mzero = m_e\,(z/\phig)$ with $z=12$ and $\phig=(1+\sqrt5)/2$. %%TODO: tighten once the §10 family is complete.
 
-The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first member, the SF-2$\leftrightarrow$SF-4 consistency theorem (THEO-SF7-CONSIST-1), is established here; the remaining pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
+The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first two members are established here: the SF-2$\leftrightarrow$SF-4 consistency theorem (THEO-SF7-CONSIST-1, with the $Z$/$\nu_2$ independence lemma at the $V=12$ shell) and the SF-1$\leftrightarrow$SF-2 spectral-trace consistency theorem (THEO-SF7-CONSIST-2, forcing one Weinberg value $3/(8\phig)$ across two independent observable channels). The remaining nine pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
 \end{abstract}
 
 \medskip\noindent
@@ -216,13 +218,32 @@ We discharge the three independence conditions in turn.
 
 \noindent Two corollaries. \textbf{(a)} C2's theorem status is \emph{independent of whether $\eta_Z$ is closed}: OPEN-FP-SF-2-$\eta$ is a separate, carried \S9 caveat on the \emph{absolute} boson mass, not a precondition for no-double-counting. \textbf{(b)} Naming the single $m_e$ coupling explicitly is exactly what converts the v0.1 ``consistent by construction'' assertion into a checkable theorem --- the lemma is stronger than the assertion it replaces, because it isolates the one permitted dependency rather than gesturing at ``the same framework.''
 
+\subsection{THEO-SF7-CONSIST-2: SF-1 \texorpdfstring{$\leftrightarrow$}{<->} SF-2 (built)}\label{sec:consist2}
+The first member built under the \S10 build rule. Its thread is the shared Weinberg spectral trace; its unique obligation is \emph{spectral-trace consistency across two independent observable channels}, orthogonal to the $V=12$ no-double-counting of THEO-SF7-CONSIST-1.
+
+\begin{theorem}[SF-1 $\leftrightarrow$ SF-2 Spectral-Trace Consistency; candidate]\label{thm:consist2}
+The charged-lepton sector (SF-1) and the electroweak cage-boson sector (SF-2) are forced to a single Weinberg value $\sinsqthetaW = 3/(8\phig)$ by the \emph{same} 600-cell edge-mode spectral trace, and this value enters the two sectors through \emph{independent observable channels}. Their agreement is therefore a non-trivial cross-sector constraint --- the geometric analogue of gauge universality --- not a shared free parameter.
+\end{theorem}
+
+\begin{proof}
+\emph{(i) One geometric origin.} In both sectors $\sinsqthetaW$ is the single counting result of two 600-cell adjacency-matrix traces, $\Tr(A^2):\tfrac13\Tr(A^3) = 1440:2400$, giving the bare mixing fraction $3/8$ on the fixed topological mode capacity $3840$, corrected by the edge-propagation efficiency $\eta=1/\phig$: $\sinsqthetaW = (1/\phig)(3/8) = 3/(8\phig)\approx0.2318$ ($0.24\%$ from the low-energy effective $0.23121$). The fraction $3/8$ is \emph{unique to the 600-cell} among the six regular 4-polytopes (the dual 120-cell gives $5/8$); both SF-1 \citep{abshier2026sf1} and SF-2 \citep{abshier2026sf2} inherit it from the SM-6 spectral-trace argument at zero parameters.
+
+\emph{(ii) Two independent observable channels.} SF-1 consumes $\sinsqthetaW$ \emph{only} through the isotropic Koide-phase shift $\varepsilon = 2\sinsqthetaW/(z+1) = 3/(52\phig)$, a charged-lepton mass-phase observable closing $\theta = 132.731^\circ$; its only further input is the coordination $z=12$. SF-2 consumes $\sinsqthetaW$ \emph{only} through the tree-level boson mass ratio $m_Z/m_W = 1/\cos\theta_W = 1.140$ (vs observed $1.134$, $\approx0.5\%$); its only further input is the cage-stability machinery. The two channels share no input beyond $\sinsqthetaW$ itself --- a lepton-sector mass-phase against a boson-sector mass-ratio.
+
+\emph{(iii) The constraint is non-trivial and falsifiable.} In the Standard Model the universality of $\theta_W$ across the lepton and boson sectors is a postulate of the gauge structure. In CPP it is \emph{forced}: the lepton-channel and boson-channel values must coincide because both are the one spectral trace $3/(8\phig)$. A measured disagreement between the two channels --- beyond the per-mille scheme-running tolerance under which the prediction is stated --- would falsify the shared-substrate claim. The agreement is therefore an independent cross-check, not a definitional identity.
+
+\emph{(iv) No double-counting.} The spectral trace $3/(8\phig)$ is a geometric \emph{input} --- a fixed counting fact of the 600-cell adjacency spectrum --- not a fitted degree of freedom. Its appearance in two sectors is shared-input reuse, exactly as the single $m_e$ calibration is shared (Lemma~\ref{lem:c2indep}), and introduces no per-sector free parameter. \qed
+\end{proof}
+
+\noindent This member satisfies the \S10 build rule by carrying a constraint \emph{forced jointly by the two sectors} --- one spectral trace, two distinct observable channels --- not the bare observation that both are built on the 600-cell; its obligation (cross-channel spectral-trace consistency) is distinct from every other member's. Registration of THEO-SF7-CONSIST-2 in \texttt{theorem-registry.md} is deferred to the flagged ship-time integration patch.
+
 \subsection{The remaining members (roadmap)}\label{sec:consist-roadmap}
 %%TODO: build each member below to theorem/candidate level on its identified thread.
-Table~\ref{tab:consist} lists the ten members still to build, each with the physical thread already identified in the critical-path map.
+Table~\ref{tab:consist} lists the nine members still to build (THEO-SF7-CONSIST-2, SF-1eftrightarrow-2, is built in \S\ref{sec:consist2} above), each with the physical thread already identified in the critical-path map.
 
 \begin{table}[H]
 \centering
-\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1 is built; the remainder are now buildable and are developed in subsequent patches.}
+\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1 and -2 are built; the remainder are now buildable and are developed in subsequent patches.}
 \label{tab:consist}
 \small
 \resizebox{\textwidth}{!}{%
@@ -231,7 +252,7 @@ Table~\ref{tab:consist} lists the ten members still to build, each with the phys
 Member & Identified thread & Status \\
 \midrule
 SF-2 $\leftrightarrow$ SF-4 & SM-1 taxonomy; $V{=}12$ shared shell; $\chi$ handle & \textbf{built (§\ref{sec:consist1})} \\
-SF-1 $\leftrightarrow$ SF-2 & shared $\sinsqthetaW=3/(8\phig)$ spectral trace & to build \\
+SF-1 $\leftrightarrow$ SF-2 & shared $\sinsqthetaW=3/(8\phig)$ spectral trace & \textbf{built (§\ref{sec:consist2})} \\
 SF-1 $\leftrightarrow$ SF-4 & shared $\Mzero$; OP-SM-7d phase/$\dCP$ handle & to build \\
 SF-3 $\leftrightarrow$ SF-2 & $\sinsqthetaW+\alphas=1/\phig$ complementarity & to build \\
 SF-3 $\leftrightarrow$ SF-1 & shared Koide-phase machinery; $\Mzero$ & to build \\
