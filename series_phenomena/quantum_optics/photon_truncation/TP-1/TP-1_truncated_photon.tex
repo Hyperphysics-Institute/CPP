@@ -47,7 +47,7 @@
 \title{\textbf{TP-1: The Truncated Photon and the Lattice
 Regularization of Shutter-Induced Photon Creation}\\[6pt]
 {\large Conscious Point Physics --- Phenomena Series (Quantum Optics)}\\[4pt]
-{\Large \textbf{Version 1.0 --- 20 June 2026}}}
+{\Large \textbf{Version 1.1 --- 21 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -435,6 +435,8 @@ $C=O(1)$ is now the \emph{only} model-dependent input; fixing it requires evalua
 Hilbert--Schmidt mode sum $\|T_2\|_{\mathrm{HS}}^2$ over the $600$-cell modes (with the
 density of states near the band top, \S\ref{sec:class}) --- the residual OPEN-TP-1.
 
+\paragraph{The coefficient is continuum, not lattice-enhanced (v1.1).} A direct analysis (script \texttt{1712}) settles the \emph{structure} of $C$, if not yet its absolute value. Writing $\Nexp=\int|\xi(\omega)|^2 g(\omega)\,d\omega$ with the RGS tail $|\xi|^2\sim A/\omega$ and $g(\omega)$ the photon density of states, the logarithm is \emph{range-dominated}: it accumulates over the many decades $[\wg,\wmax]$ where the lattice dispersion is effectively continuum ($g\approx g_0$), so the leading-log coefficient is the continuum value $C=A\,g_0$ --- the $600$-cell does \emph{not} enhance it. The lattice's only coefficient-level contribution is the band-top van Hove pile-up ($g\sim(\wmax-\omega)^{-1/2}$), which adds a finite, $O(1)$ correction $\Delta$ to the log \emph{argument}: $\Nexp=C[\ln(\wmax/\wg)+\Delta]$. For the representative dispersion $\omega(k)=\wmax\sin(\pi k/2k_{\max})$ the correction is exactly $\Delta=\ln 2\approx0.69$ (analytic; numerically confirmed), raising the effective ceiling from $64.5\,C$ to $\approx65.2\,C$ ($+1.1\%$); a steeper band top gives a larger but still $O(1)$ $\Delta$. So the framework-specific content is confirmed to be \emph{entirely the cutoff} $\wmax=\sqrt{12}/\tP$, not the coefficient. What remains genuinely open is the \emph{absolute} $C=A\,g_0$, which needs the RGS field-normalization constant for a chosen photon profile, and the exact $\Delta$ from the true $600$-cell dispersion.
+
 \paragraph{Sharper than ``unlikely'' --- in the idealized limit only.} RGS say large photon
 numbers are improbable for realistic shutters; in Regime~A CPP agrees and adds nothing. The
 CPP statement bites only in Regime~B: a truncation sharper than one Absolute Moment is not
@@ -548,9 +550,11 @@ QM-4 measurement account would be contradicted and the compatibility claim of
 \item \textbf{Cutoff-identification falsifier.} The CPP-specific step is identifying RGS's
 formal ``arbitrarily high'' cutoff (their Eq.~B14) with the intrinsic $600$-cell band top
 $\wmax=\sqrt{12}/\tP$. If the lattice's actual mode ceiling were shown not to act as a sharp
-frequency cutoff on the created-photon spectrum (e.g.\ if the band-top density of states
-reshaped the $1/\omega$ tail before $\wmax$), the clean $\ln(\wmax/\wg)$ ceiling would be modified
---- this is the open edge of OPEN-TP-1.
+frequency cutoff on the created-photon spectrum, the clean $\ln(\wmax/\wg)$ ceiling would be
+modified. The band-top density of states does reshape the tail, but (v1.1, script \texttt{1712})
+only by a finite $O(1)$ van Hove correction $\Delta$ to the log argument, not by changing the
+leading-log coefficient; a demonstration that the true dispersion gives a \emph{large} $\Delta$
+would be the falsifying surprise.
 \end{enumerate}
 
 \noindent\emph{On experimental access.} We do not list a laboratory falsifier. As
@@ -607,7 +611,7 @@ $\omega_k=c\sqrt{|\lambda_k|}/\lP$, leading eigenvalue $\lambda_{\max}=z=12$), c
 $600$-cell coordination $z$ as a fingerprint and raising the ceiling to $\approx64.5\,C$
 (eq.~\ref{eq:bandtop}, script \texttt{1706}). The remaining open piece is only the $O(1)$
 leading-log prefactor $C$ --- the Hilbert--Schmidt mode sum $\|T_2\|^2_{\mathrm{HS}}$ over the
-$600$-cell modes near the band top (van Hove density of states).
+$600$-cell modes near the band top (van Hove density of states). \emph{v1.1 advance (script \texttt{1712}):} the structure of $C$ is resolved --- it is the \emph{continuum} coefficient $A\,g_0$ (the log is range-dominated; the lattice does not enhance $C$), with the lattice contributing only an $O(1)$ van Hove band-top correction $\Delta$ to the log argument ($\Delta=\ln2$ for the representative dispersion, ceiling $64.5\,C\to\approx65.2\,C$). The framework-specific content is thereby confirmed to be the cutoff $\wmax$, not the coefficient; the absolute $C$ (RGS normalization $\times$ profile) and the exact $\Delta$ (true dispersion) remain the open residual.
 \item Prop.~\ref{prop:reg} (lattice regularization): now rests on a derived class; stated at
 framework-conditional level, no global theorem claimed.
 \item Correction to v0.1: the regularization is active only in the idealized-instantaneous

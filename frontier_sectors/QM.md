@@ -70,15 +70,15 @@
 ---
 
 ### OPEN-TP-1: Leading-log coefficient C for shutter-induced photon creation (quantum-optics phenomena, TP-1)
-**Status:** PARTIAL — class closed, cutoff grounded; only the $O(1)$ prefactor remains.
+**Status:** PARTIAL (advanced v1.1) — class closed, cutoff grounded, coefficient *structure* resolved; only the absolute $O(1)$ value remains.
 **Sector(s):** QM (quantum optics); draws on QM-4, QM-5
 **Priority:** LOW (foundational, not falsifiable in the testable regime)
 **One-line statement:** Fix the $O(1)$ coefficient $C$ in $\langle N\rangle_{\max}=C\ln(\omega_{\max}/\omega_\gamma)$ for the truncated photon (Rukan–Gulla–Skaar) from the 600-cell Hilbert–Schmidt mode sum $\|T_2\|^2_{\mathrm{HS}}$ near the band top.
 **What a solution looks like:** Evaluate the mode sum with the 600-cell density of states (van Hove near the band top $\omega_{\max}=\sqrt{12}/t_P$) for a representative cut profile, returning a definite $O(1)$ number.
-**Progress:** v0.1 OPEN → v0.2 PARTIAL (logarithmic divergence class derived from the RGS kernel) → v0.4 cutoff grounded as the intrinsic 600-cell band top $\omega_{\max}=\sqrt{\lambda_{\max}}\,c/\ell_P=\sqrt{12}/t_P=2\sqrt3/t_P$ (QM-5 dispersion, $\lambda_{\max}=z=12$), ceiling $\approx 64.5\,C$. Only $C$ remains.
+**Progress:** v0.1 OPEN → v0.2 PARTIAL (logarithmic divergence class derived from the RGS kernel) → v0.4 cutoff grounded as the intrinsic 600-cell band top $\omega_{\max}=\sqrt{\lambda_{\max}}\,c/\ell_P=\sqrt{12}/t_P=2\sqrt3/t_P$ (QM-5 dispersion, $\lambda_{\max}=z=12$), ceiling $\approx 64.5\,C$ → **v1.1 (Patch 1712, script `1712`):** the *structure* of $C$ is resolved — it is the **continuum** coefficient $A\,g_0$ (the leading log is range-dominated, so the lattice does **not** enhance $C$); the lattice's only coefficient-level contribution is an $O(1)$ van Hove band-top correction $\Delta$ to the log argument ($\Delta=\ln2\approx0.69$ for the representative dispersion $\omega=\omega_{\max}\sin(\pi k/2k_{\max})$, raising the ceiling $64.5\,C\to\approx65.2\,C$). Framework-specific content confirmed to be the **cutoff** $\omega_{\max}$, not the coefficient. Residual: the absolute $C$ (RGS normalization × profile) and the exact $\Delta$ (true dispersion).
 **Dependencies:** QM-5 mode spectrum / density of states near the band top.
 **Paper(s):** TP-1 (`series_phenomena/quantum_optics/photon_truncation/TP-1/`), v1.0 SHIPPED.
-**Last updated:** 20 June 2026 (Patch 1708)
+**Last updated:** 21 June 2026 (Patch 1712)
 
 ---
 
