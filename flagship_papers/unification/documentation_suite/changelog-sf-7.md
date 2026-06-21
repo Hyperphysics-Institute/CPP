@@ -5,7 +5,15 @@ The canonical filename is fixed (no version suffix); version history is tracked 
 
 ---
 
-## v0.3 (DRAFT) — 21 June 2026, Patch 1317
+## v0.4 (DRAFT) — 21 June 2026, Patch 1318
+
+Second §10 member built under the build rule: **THEO-SF7-CONSIST-3 (SF-3 ↔ SF-2 electroweak–strong mode complementarity)** (`sec:consist3`) — the build rule's own model constraint.
+
+**The theorem.** The electroweak coupling sin²θ_W (SF-2, edge-mode fraction 3/(8φ)) and the strong coupling α_s (SF-3, face-mode fraction 5/(8φ)) are the two complementary mode fractions of one 600-cell adjacency spectral trace, drawn from *disjoint mode classes that exhaust the trace*: sin²θ_W + α_s = 1/φ, with α_s/sin²θ_W = F/E = 1200/720 = 5/3. Four-part proof: (i) disjoint exhaustive partition (edge vs face, no-double-counting at the mode level); (ii) **honest flag** — given the mode-fraction identification the sum identity is *definitional*, not a coincidence; (iii) the genuine falsifiable content is that the *independently measured* couplings sum to 1/φ (a measured pair off the F/E=5/3 partition, beyond α_s running tolerance, falsifies the identification); (iv) honest scope carried from SF-3 (structural correspondences, not RG-derived gauge couplings).
+
+**Build-rule compliance:** unique obligation (disjoint exhaustive mode-partition), orthogonal to CONSIST-2 (one value, two channels) and CONSIST-1 (V=12 shell). SF-3 itself names this the strongest single §10 thread. Roadmap row → built (eight remain); caption + abstract (three built members) updated; v0.3→v0.4. Also fixed a perl-mangled `\leftrightarrow` in the v0.3 roadmap intro line. Compiles clean: `pdflatex` ×2, 10 pp, 0 errors, 0 undefined refs/cites, 0 overfull. Bundles `reasoning/1318.md`. Registration deferred to ship-time.
+
+
 
 First §10 consistency-theorem member built under the review-adopted build rule: **THEO-SF7-CONSIST-2 (SF-1 ↔ SF-2 spectral-trace consistency)** (`sec:consist2`).
 

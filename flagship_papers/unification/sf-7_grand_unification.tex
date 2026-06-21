@@ -11,7 +11,9 @@
 % 9 closure-status column + headline qualifier + chi/6 footnote;
 % 10 panel-adopted circularity build rule. v0.3 (Patch 1317) builds the
 % first 10 member under the build rule: THEO-SF7-CONSIST-2 (SF-1<->SF-2
-% spectral-trace consistency, sec:consist2). Sections 3-8 carry each shipped
+% spectral-trace consistency, sec:consist2). v0.4 (Patch 1318) builds
+% THEO-SF7-CONSIST-3 (SF-3<->SF-2 EW-strong mode complementarity,
+% sec:consist3). Sections 3-8 carry each shipped
 % predecessor's headline; section 9 carries the locked calibration
 % ledger; section 10 states the one BUILT consistency theorem
 % (THEO-SF7-CONSIST-1) plus the roadmap for the ten still to build.
@@ -65,7 +67,7 @@
 \title{\textbf{SF-7: Standard Model Grand Unification from 600-Cell Geometry}\\[6pt]
 {\large Hierarchy Without Hierarchy: Seventeen Particles, One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series --- Apex Synthesis}\\[4pt]
-{\Large \textbf{Version 0.3 (DRAFT) --- 21 June 2026}}}
+{\Large \textbf{Version 0.4 (DRAFT) --- 21 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -84,7 +86,7 @@
 
 The Standard Model carries nineteen or more free parameters with no account of why the particle masses take the values they do --- the \emph{hierarchy problem}, the most-named known-unknown of the mass program. SF-7 assembles the cumulative result that the charged-lepton spectrum (SF-1), the electroweak cage-boson family including $W^0$ (SF-2), the quark spectrum and generation count (SF-3), the neutrino sector (SF-4), the strong sector --- $SU(3)$ colour, the eight gluons, confinement, the light-nucleus binding cascade (SF-5) --- and the unification of classical, special-relativistic, and quantum electromagnetism (SF-6) all follow from one calibration on the shared substrate quantum $\Mzero = m_e\,(z/\phig)$ with $z=12$ and $\phig=(1+\sqrt5)/2$. %%TODO: tighten once the §10 family is complete.
 
-The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first two members are established here: the SF-2$\leftrightarrow$SF-4 consistency theorem (THEO-SF7-CONSIST-1, with the $Z$/$\nu_2$ independence lemma at the $V=12$ shell) and the SF-1$\leftrightarrow$SF-2 spectral-trace consistency theorem (THEO-SF7-CONSIST-2, forcing one Weinberg value $3/(8\phig)$ across two independent observable channels). The remaining nine pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
+The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first three members are established here: the SF-2$\leftrightarrow$SF-4 consistency theorem (THEO-SF7-CONSIST-1, with the $Z$/$\nu_2$ independence lemma at the $V=12$ shell), the SF-1$\leftrightarrow$SF-2 spectral-trace consistency theorem (THEO-SF7-CONSIST-2, forcing one Weinberg value $3/(8\phig)$ across two independent observable channels), and the SF-3$\leftrightarrow$SF-2 electroweak--strong mode complementarity (THEO-SF7-CONSIST-3, $\sinsqthetaW+\alphas=1/\phig$ as a disjoint exhaustive partition of one trace). The remaining eight pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
 \end{abstract}
 
 \medskip\noindent
@@ -237,13 +239,36 @@ The charged-lepton sector (SF-1) and the electroweak cage-boson sector (SF-2) ar
 
 \noindent This member satisfies the \S10 build rule by carrying a constraint \emph{forced jointly by the two sectors} --- one spectral trace, two distinct observable channels --- not the bare observation that both are built on the 600-cell; its obligation (cross-channel spectral-trace consistency) is distinct from every other member's. Registration of THEO-SF7-CONSIST-2 in \texttt{theorem-registry.md} is deferred to the flagged ship-time integration patch.
 
+\subsection{THEO-SF7-CONSIST-3: SF-3 \texorpdfstring{$\leftrightarrow$}{<->} SF-2 (built)}\label{sec:consist3}
+The build rule's model constraint: the electroweak--strong mode complementarity. Its unique obligation is a \emph{disjoint exhaustive partition} of one spectral trace into the two sectors' couplings, orthogonal to the single-value sharing of THEO-SF7-CONSIST-2.
+
+\begin{theorem}[SF-3 $\leftrightarrow$ SF-2 Electroweak--Strong Mode Complementarity; candidate]\label{thm:consist3}
+The electroweak coupling $\sinsqthetaW$ (SF-2) and the strong coupling $\alphas$ (SF-3) are the two complementary mode fractions of a single 600-cell adjacency spectral trace --- the edge-mode fraction and the face-mode fraction --- drawn from \emph{disjoint mode classes that exhaust the trace}. They are therefore not independent:
+\[
+\sinsqthetaW + \alphas = \frac{3}{8\phig} + \frac{5}{8\phig} = \frac{1}{\phig}, \qquad
+\frac{\alphas}{\sinsqthetaW} = \frac{F}{E} = \frac{1200}{720} = \frac{5}{3}.
+\]
+\end{theorem}
+
+\begin{proof}
+\emph{(i) Disjoint exhaustive partition.} The $120\times120$ adjacency operator $A$ of the 600-cell carries two traces: $\Tr(A^2)$ (edge contribution) and $\tfrac13\Tr(A^3)$ (face contribution). SF-2's electroweak coupling is the edge fraction $\sinsqthetaW = (1/\phig)\,\Tr(A^2)/[\Tr(A^2)+\tfrac13\Tr(A^3)] = 3/(8\phig)$; SF-3's strong coupling is the face fraction $\alphas = (1/\phig)\,\tfrac13\Tr(A^3)/[\Tr(A^2)+\tfrac13\Tr(A^3)] = 5/(8\phig)$ \citep{abshier2026sf3}. The two are built from \emph{disjoint} trace components (edge vs face) that \emph{exhaust} the denominator: the bare partition is $3/8+5/8=1$. Each sector draws from a mode class the other does not touch --- a no-double-counting partition at the mode level.
+
+\emph{(ii) The complementarity is the arithmetic shadow of (i).} Applying the common edge-propagation weight $\eta=1/\phig$ to the exhaustive partition gives $\sinsqthetaW+\alphas = (3/8+5/8)/\phig = 1/\phig$ and the count ratio $\alphas/\sinsqthetaW = F/E = 1200/720 = 5/3$ (the 600-cell face-to-edge count). We state this plainly: \emph{given} the mode-fraction identification, the sum identity is definitional, not an independent coincidence; its content is that the identification holds --- that the two physical couplings \emph{are} this partition.
+
+\emph{(iii) The non-trivial, falsifiable content.} The identification predicts that the \emph{independently measured} electroweak and strong couplings are not free of one another but sum to $1/\phig\approx0.618$ ($\sinsqthetaW\approx0.231$ structural; $\alphas\approx0.386$ matching the PDG running coupling at the charm scale, $\alphas(m_c)\approx0.35$--$0.40$). A measured pair inconsistent with the $F/E=5/3$ partition --- beyond the tolerance set by the strong running of $\alphas$ --- would falsify the mode-fraction identification, and with it the shared-substrate sourcing of the two couplings.
+
+\emph{(iv) Honest scope (carried from SF-3).} These are \emph{structural correspondences} --- mode fractions of the adjacency spectrum that match the measured couplings --- not gauge couplings obtained from renormalization-group running. The theorem certifies that the two couplings are complementary partitions of one trace, not that they are dynamically derived. \qed
+\end{proof}
+
+\noindent This member's obligation --- a disjoint exhaustive mode-partition --- is orthogonal to THEO-SF7-CONSIST-2 (one value, two channels) and THEO-SF7-CONSIST-1 ($V=12$ shell, no-double-counting at a co-occupied locus). SF-3 names the complementarity the strongest single \S10 consistency thread. Registration of THEO-SF7-CONSIST-3 in \texttt{theorem-registry.md} is deferred to the flagged ship-time integration patch.
+
 \subsection{The remaining members (roadmap)}\label{sec:consist-roadmap}
 %%TODO: build each member below to theorem/candidate level on its identified thread.
-Table~\ref{tab:consist} lists the nine members still to build (THEO-SF7-CONSIST-2, SF-1eftrightarrow-2, is built in \S\ref{sec:consist2} above), each with the physical thread already identified in the critical-path map.
+Table~\ref{tab:consist} lists the eight members still to build (THEO-SF7-CONSIST-2 and -3 are built in \S\ref{sec:consist2}--\S\ref{sec:consist3} above), each with the physical thread already identified in the critical-path map.
 
 \begin{table}[H]
 \centering
-\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1 and -2 are built; the remainder are now buildable and are developed in subsequent patches.}
+\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1, -2, and -3 are built; the remainder are now buildable and are developed in subsequent patches.}
 \label{tab:consist}
 \small
 \resizebox{\textwidth}{!}{%
@@ -254,7 +279,7 @@ Member & Identified thread & Status \\
 SF-2 $\leftrightarrow$ SF-4 & SM-1 taxonomy; $V{=}12$ shared shell; $\chi$ handle & \textbf{built (§\ref{sec:consist1})} \\
 SF-1 $\leftrightarrow$ SF-2 & shared $\sinsqthetaW=3/(8\phig)$ spectral trace & \textbf{built (§\ref{sec:consist2})} \\
 SF-1 $\leftrightarrow$ SF-4 & shared $\Mzero$; OP-SM-7d phase/$\dCP$ handle & to build \\
-SF-3 $\leftrightarrow$ SF-2 & $\sinsqthetaW+\alphas=1/\phig$ complementarity & to build \\
+SF-3 $\leftrightarrow$ SF-2 & $\sinsqthetaW+\alphas=1/\phig$ complementarity & \textbf{built (§\ref{sec:consist3})} \\
 SF-3 $\leftrightarrow$ SF-1 & shared Koide-phase machinery; $\Mzero$ & to build \\
 SF-3 $\leftrightarrow$ SF-4 & shared $\Mzero$/taxonomy; CKM$\leftrightarrow\dCP$ parallel & to build \\
 SF-5 $\leftrightarrow$ SF-2 & $SU(2)_L$/$SU(3)_c$ from one 600-cell & to build \\
