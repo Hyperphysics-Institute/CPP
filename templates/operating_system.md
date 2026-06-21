@@ -193,7 +193,8 @@ The five types:
 ### Phase 4: Team Review (see Section 5 for full protocol)
 - Copilot: constructive/structural review
 - Grok: independent verification, contributive additions
-- Sonnet: hostile/adversarial review
+- Hostile/adversarial pass: requested from any panel member (no dedicated reviewer; Sonnet 4.0 retired)
+- Gemini: optional breadth/confirmatory review
 - Opus: integration and rebuttal
 
 **Reviewer-Response Document protocol (adopted 19 April 2026):**
@@ -593,7 +594,8 @@ The four-tier discipline applies *within* a paper's development arc; the meta-re
 | Claude Opus | Primary collaborator | Computation, drafting, physical reasoning, integration | Direct conversation (claude.ai) |
 | Grok (xAI) | Independent verifier, contributor | Numerical verification, adversarial review, novel theorems | Pastebin links, raw GitHub URLs |
 | Copilot (Microsoft) | Structural reviewer, framework builder | Referee-grade review, axiom formulation, derivation strategies | Pastebin links, direct conversation |
-| Claude Sonnet | Hostile reviewer | Adversarial critique, finding weaknesses | Prompted via Claude with explicit "hostile review" instruction |
+| Gemini (optional) | Breadth reviewer | Confirmatory fourth read; SCRIPT-EXECUTED claims treated as RESTATE-tier unless output shown | Prompted via Claude |
+| _hostile pass_ | Not a dedicated reviewer | Any panel member given "this is wrong, find every flaw" (Sonnet 4.0 retired) | Prompted via Claude |
 
 ### Review protocol
 
@@ -605,7 +607,7 @@ The four-tier discipline applies *within* a paper's development arc; the meta-re
    - Ask for: independent numerical verification, fresh perspectives
    - Grok may contribute NEW results (e.g., the z=12 multiplier was Grok's)
 4. **Opus integrates** Copilot and Grok contributions → v2.0+
-5. **Sonnet hostile review** — Thomas prompts Sonnet (or Opus generates the prompt):
+5. **Hostile pass (optional)** — any panel member is given the hostile steer (Sonnet 4.0 retired; Opus generates the prompt):
    - "You are a skeptical referee. This paper is wrong. Find every flaw."
    - The review should be REJECT-level harsh
 6. **Opus rebuts** — addresses each criticism, integrates valid points, explains why invalid criticisms miss the mark
@@ -1074,7 +1076,7 @@ CPP papers use standard semantic-version-style labels to communicate maturity:
 |-------|---------|--------------|
 | **v0.1** | Initial preliminary draft, exploratory, may change substantially | First compile of a new paper |
 | **v0.2, v0.3, …** | Pre-review minor revisions (correctness fixes, clarifications) | Author-side polish before any external review |
-| **v1.0** | First "release" version | After at least one round of external review (ChatGPT, Copilot, Grok, or Sonnet) has been integrated |
+| **v1.0** | First "release" version | After at least one round of external review (ChatGPT, Copilot, Grok; Gemini optional) has been integrated |
 | **v1.1, v1.2, …** | Post-release minor revisions (bug fixes, small corrections, clarifications) | Small changes that don't reshape the paper's claims |
 | **v2.0** | Major revision | Substantive new content, reframing, or mechanism change |
 
@@ -1229,7 +1231,7 @@ CPP maintains three separate documentation hierarchies that drift if not updated
 - **Best used for:** Paper review, axiom structure, scaling-law frameworks, anticipated criticisms
 - **Notable contribution:** Physical axioms A/B, scaling law derivation framework, spectral dimension proposal (SM-8/SM-9)
 
-### Claude Sonnet (hostile reviewer)
+### Hostile pass (any panel member; Sonnet 4.0 retired)
 - **Strengths:** Finding genuine weaknesses, adversarial perspective, identifying unstated assumptions
 - **Limitations:** Tends toward philosophical rejection ("this isn't real physics") rather than constructive critique; may miss the forest for the trees
 - **Best used for:** Final review before OSF registration; identifying what a hostile referee would say
@@ -2354,7 +2356,7 @@ The reviewer-pause cycle is a CHECKPOINT mechanism, not a replacement for other 
 
 1. **Does NOT replace §5 per-paper Multi-AI Review Cycle.** Per-paper review continues independently for each paper in the flagship trajectory.
 
-2. **Does NOT replace Sonnet hostile review** (§5.6). Sonnet hostile review remains valuable for per-paper adversarial critique; reviewer-pause operates at the trajectory level above the per-paper layer.
+2. **Does NOT replace the hostile pass** (§5.6). A per-paper hostile pass — any panel member given an adversarial steer (Sonnet 4.0 retired) — remains valuable for per-paper adversarial critique; reviewer-pause operates at the trajectory level above the per-paper layer.
 
 3. **Does NOT authorize Layer 3 promotion.** Layer 3 promotion is a SEPARATE decision requiring substantive Layer 3 rigor work (theorem-level proofs, framework axiomatization, explicit cage-shell factor computations, etc.). The reviewer-pause confirms Layer 2 robustness; Layer 3 is downstream.
 

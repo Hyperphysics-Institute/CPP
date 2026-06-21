@@ -45,7 +45,7 @@ The full rendered package body delivered as **one copy-paste block** (4-backtick
 (Provenance/record only. **Do not rely on it for delivery** — for this repo it is generally not fetchable by external reviewers. The inline block (b) is the delivery.)
 
 ### (c) Per-reviewer dispatch prompts — paste-ready
-One block **per active reviewer** (default panel: ChatGPT, Grok, Copilot; optional Sonnet hostile pass), each a complete copy-paste using the skeleton in §4. They differ only in the reviewer name and the one-line reviewer-specific steer (pulled from the package §6). Under inline-default delivery (b), each per-reviewer dispatch is the **steer line followed by the inline package block** — one paste, no link to open.
+One block **per active reviewer** (default panel: ChatGPT, Grok, Copilot; optional Gemini for breadth; a hostile pass can be requested from any panel member), each a complete copy-paste using the skeleton in §4. They differ only in the reviewer name and the one-line reviewer-specific steer (pulled from the package §6). Under inline-default delivery (b), each per-reviewer dispatch is the **steer line followed by the inline package block** — one paste, no link to open.
 
 ### (d) Delivery-mode note
 **Inline single-block (b) is the default and is always sufficient (zero-dependency).** The raw GitHub URL is a secondary provenance pointer only and is generally unreachable for external reviewers on this repo (private / CDN lag) — never gate a dispatch on it. Pastebin/raw-URL remain optional per OS §5 if a reviewer specifically prefers a link, but the inline block does not require Thomas to wait for, or reply "paste it" to, a failed fetch — it ships inline from the start.
@@ -96,7 +96,8 @@ reconstruct from memory — engage the inline package content directly.
 - **Grok** — independent recompute (run the embedded code → SCRIPT-EXECUTED; recompute any tables/group-theory/symmetry assignments from first principles); strongest on numerical/structural verification and novel contributions.
 - **Copilot** — per-question structural consistency; referee-grade framing; logic of the load-bearing steps.
 - **ChatGPT** — press the hardest triage question(s) and the deflation/overclaim checks; verdict-honesty; the disambiguation rider applies.
-- **Sonnet** (optional) — hostile pass: "this is wrong, find every flaw," aimed at the top-triage targets.
+- **Gemini** (optional) — breadth/confirmatory pass; use when a fourth independent read is wanted (note: on past cycles Gemini has been confirmatory rather than additive, and may self-report "simulated" rather than actually-run code — treat its SCRIPT-EXECUTED claims as RESTATE-tier unless it shows output).
+- **Hostile pass** (no dedicated reviewer; Claude Sonnet 4.0 retired) — give any panel member the hostile steer: "this is wrong, find every flaw," aimed at the top-triage targets.
 
 ---
 

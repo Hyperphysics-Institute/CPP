@@ -396,10 +396,13 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 | Claude Opus | Primary collaborator — computation, drafting, integration | Direct chat (claude.ai) |
 | Grok (xAI) | Independent verifier, novel contributions | Pastebin links, raw GitHub URLs |
 | Copilot (Microsoft) | Referee-grade review, framework building | Pastebin links, direct chat |
-| Claude Sonnet | Hostile/adversarial review | Prompted via Claude |
+| ChatGPT (OpenAI) | Triage-pressure / verdict-honesty review | Pastebin links, direct chat |
+| Gemini (Google) | Optional breadth review (confirmatory; use for a fourth read) | Prompted via Claude |
 
 **Full details on roles, strengths, limitations:** See `operating_system.md` Section 12.
-**The review cycle:** Opus → Copilot → Grok → Sonnet → Opus. See `operating_system.md` Section 5.
+**The review cycle:** Opus → ChatGPT / Grok / Copilot (panel) → Opus. A hostile pass can be
+requested from any panel member ("find every flaw"); there is no dedicated hostile reviewer
+(Claude Sonnet 4.0 retired). Gemini optional for breadth. See `operating_system.md` Section 5.
 
 ---
 
@@ -541,7 +544,7 @@ Every completed paper gets 7 companion `.md` files stored in `series_[name]/`:
 | `phenomena-[S]-[N].md` | What the paper explains | PHEN-E (empirical), PHEN-P (predictions), PHEN-V (consilience) |
 | `philosophy-[S]-[N].md` | Epistemological framing | What level of certainty, relationship to SM, falsifiability |
 | `development-[S]-[N].md` | Development history | Version timeline, key decisions, dead ends, transcript links |
-| `reviews-[S]-[N].md` | All reviews + FAQ | Part 1: formal reviews (Copilot/Grok/Sonnet). Part 2: FAQ |
+| `reviews-[S]-[N].md` | All reviews + FAQ | Part 1: formal reviews (ChatGPT/Grok/Copilot; Gemini optional). Part 2: FAQ |
 | `keywords-[S]-[N].md` | Keywords and registry | Primary/secondary keywords, cross-references, axiom/theorem entries |
 
 Each file should note the paper version it documents (e.g., "Paper: SM-8 v4.1").
