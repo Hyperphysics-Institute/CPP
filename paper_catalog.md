@@ -144,6 +144,14 @@ Empirical-phenomenon derivations (home of record, any maturity). See [`series_ph
 
 **Documentation:** `documentation_suite/changelog-EU-1.md` (v0.1→v1.0); `review/EU-1_review_package_v1.0.md` + `review/reviews-EU-1.md` (3/3 SHIP). Full narrative documentation suite shipped Phase 7A-ii (Patch 0789): development/glossary/mechanism/phenomena/philosophy/reviews/keywords + verification + osf-deposit. Verification: `scripts/0781_eu1_numerics.py` (ALL PASS).
 
+#### Phenomena Series — Quantum Optics
+
+| ID | Type | Title | File | Status |
+|----|------|-------|------|--------|
+| **TP-1** | Paper | The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation | `series_phenomena/quantum_optics/photon_truncation/TP-1/TP-1_truncated_photon.tex` (v1.0) | **v1.0 SHIPPED** (20 Jun 2026, Patch 1708; 4/4 panel SHIP Grok/Gemini/Copilot/ChatGPT, zero physics objections; **first quantum-optics-sector paper to ship**). Embeds the Rukan–Gulla–Skaar truncated photon (PRL 2026, arXiv:2510.21636) in CPP: compatibility (QM-4/QM-5) + foundational regularization. Logarithmic divergence class derived from the RGS kernel; cutoff grounded as the intrinsic 600-cell band top $\omega_{\max}=\sqrt{12}/t_P$ (QM-5 dispersion, $\lambda_{\max}=z=12$), ceiling $\approx64.5\,C$. **NO THEO, NO PRED** (framework-conditional; adds nothing to the swarm tally). PROP-TP-1-1 registered; open residual OPEN-TP-1 (the $O(1)$ coefficient $C$). |
+
+**Documentation:** `review/TP-1_review_package_v1.0.md` + `review/reviews-TP-1.md` (4/4 SHIP). Verification: `scripts/1700_truncation_regularization.py`, `1701_divergence_class.py`, `1706_band_top_cutoff.py`. Per-patch Tier-4 reasoning fragments `reasoning/1700…1706`. Narrative doc-suite + OSF deposit pending (Phase 7A-ii).
+
 ---
 
 ## Electroweak Series

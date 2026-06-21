@@ -76,3 +76,14 @@ Items: PROP-6 (de Broglie λ from chain compaction), PROP-7 (cage reformation fr
 
 ---
 
+### PROP-TP-1-1: Lattice regularization of shutter-induced photon creation (TIER 2)
+**Status:** REGISTERED — framework-conditional (TP-1 v1.0). Proposition statement proved at framework-conditional level; no global theorem claimed.
+**Sector(s):** QM (quantum optics)
+**One-line statement:** In CPP the Rukan–Gulla–Skaar truncated-photon expected number $\langle N\rangle$ is finite for every physical shutter, bounded by $\langle N\rangle_{\max}=C\ln(\omega_{\max}/\omega_\gamma)\approx 64.5\,C$, because the 600-cell mode spectrum has an intrinsic band top $\omega_{\max}=\sqrt{12}/t_P$ (no modes above it) — an intrinsic finite-spectrum regularization, not an imposed cutoff.
+**Evidence:** Logarithmic divergence class derived from the RGS kernel (TP-1 §Derivation, Lemma); band top from QM-5 dispersion $\omega_k=c\sqrt{|\lambda_k|}/\ell_P$ with $\lambda_{\max}=z=12$; two-regime structure (realistic shutters self-regularize via the RGS gradual bound; the lattice caps only the idealized instantaneous limit).
+**Dependencies:** QM-4 (partial trace under the Nexus), QM-5 (600-cell second quantization + band top). Residual: OPEN-TP-1 (the $O(1)$ coefficient $C$).
+**Paper(s):** TP-1 §"Lattice Regularization of the Divergence" (Prop. 1).
+**Registered:** 20 June 2026 (Patch 1708)
+
+---
+

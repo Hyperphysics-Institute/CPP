@@ -275,6 +275,17 @@ DP Sea polarization, composition, vacuum energy.
 **Predictions:** PRED-C-96 ($n_s$, §1), PRED-O-34 ($\alpha_s$, §2). **No THEO.** Open residual: OPEN-EU-1.
 **Doc-suite:** full suite shipped (Patch 0789) — changelog + development + reviews + keywords + transcript + mechanism + phenomena + philosophy + glossary + verification + osf-deposit. OSF upload pending (metadata prepared).
 
+### [`series_phenomena/quantum_optics/photon_truncation/`](series_phenomena/quantum_optics/photon_truncation/) — TP-1 (SHIPPED v1.0)
+
+| File | Description |
+|------|-------------|
+| `TP-1/TP-1_truncated_photon.tex` | **TP-1** — the Rukan–Gulla–Skaar truncated photon (PRL 2026) in CPP: compatibility (QM-4/QM-5) + foundational regularization. Logarithmic divergence class derived from the RGS kernel; cutoff grounded as the intrinsic 600-cell band top $\omega_{\max}=\sqrt{12}/t_P$ ($\lambda_{\max}=z=12$), ceiling $\approx64.5\,C$. Framework-conditional. First quantum-optics-sector paper to ship. |
+| `TP-1/review/` | Self-contained review package + `reviews-TP-1.md` (4/4 SHIP). |
+| `scripts/1700…1706` | Verification (regularization, divergence class, band-top cutoff). |
+| `reasoning/1700…1706` | Per-patch Tier-4 reasoning fragments. |
+
+**Predictions:** none. **No THEO.** Proposition PROP-TP-1-1 (lattice regularization). Open residual: OPEN-TP-1 (the $O(1)$ coefficient $C$).
+
 ### [`series_phenomena/cosmology/dark_matter/`](series_phenomena/cosmology/dark_matter/) — gated conjecture
 
 Far-frontier dark-matter arc (qDP/hTetra-clouds-as-DM, CONJ-COSMO-1); `reasoning/` + `scripts/` only, pre-paper (falsification-first). Frontier home: `frontier_sectors/CONJ.md`.
