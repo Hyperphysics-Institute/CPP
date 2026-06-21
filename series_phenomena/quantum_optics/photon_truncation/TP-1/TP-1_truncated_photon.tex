@@ -1,0 +1,473 @@
+% ============================================================
+% TP-1: The Truncated Photon and the Lattice Regularization
+%       of Shutter-Induced Photon Creation
+% Conscious Point Physics — Phenomena Series (quantum optics)
+% Version history: TP-1/documentation_suite/changelog-TP-1.md (created at SHIP)
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\phig}{\varphi}
+\newcommand{\Tr}{\operatorname{Tr}}
+% --- Paper-specific macros ---
+\newcommand{\wg}{\omega_\gamma}
+\newcommand{\wcut}{\omega_{\mathrm{cut}}}
+\newcommand{\wP}{\omega_P}
+\newcommand{\Nexp}{\langle N\rangle}
+
+\title{\textbf{TP-1: The Truncated Photon and the Lattice
+Regularization of Shutter-Induced Photon Creation}\\[6pt]
+{\large Conscious Point Physics --- Phenomena Series (Quantum Optics)}\\[4pt]
+{\Large \textbf{Version 0.1 --- 20 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: [pending registration]}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\citet{RukanGullaSkaar2026} show, within standard quantum optics, that truncating a
+single photon with an optical shutter does not yield a photon-or-vacuum mixture but a
+superposition and mixture of photon numbers up to infinity, a state that is
+nonetheless \emph{locally} equivalent to a single photon on one side of the shutter and
+vacuum on the other. The expected photon number $\Nexp$ diverges only in the limit of an
+instantaneously closing shutter; for realistic speeds even a thousand created photons is
+extremely unlikely. We ask whether this effect is compatible with the postulates of
+Conscious Point Physics (CPP), and we find that it is --- structurally, and in three
+independent places. (i) A photon in CPP is a perturbation of the Dipole-Pair (DP) Sea, a
+real propagating disturbance in a physical medium, so a \emph{cuttable} photon-wave is
+native rather than paradoxical. (ii) Many-photon Fock content is ordinary bosonic
+multi-occupation of the $600$-cell eigenmodes (QM-5 second quantization). (iii) The
+local-simple / global-complex structure is the standard partial trace over DP-Sea
+degrees of freedom under the Nexus global-consistency constraint (QM-4 measurement). The
+creation mechanism the authors identify --- violation of time-translation invariance ---
+maps onto a time-dependent reconfiguration of the DP-Sea boundary by the shutter, i.e.\ a
+dynamical-Casimir-type process, reproducing their Noether reasoning rather than
+conflicting with it. The non-trivial, framework-specific result is regularization: the
+truncation divergence is \emph{ultraviolet} in origin, and CPP carries a hard cutoff at
+$k_{\max}=\pi/\lP$ (the same cutoff that renders the electron self-energy finite in QM-5).
+Therefore $\Nexp$ is finite for every physical shutter, and is bounded for \emph{all}
+shutters because none can switch faster than one Absolute Moment $\tP$. Modeling the
+created-photon spectrum with the mild (logarithmic) ultraviolet form
+$dN/d\omega=\kappa/\omega$ --- the divergence class selected by the authors' own
+``even a thousand photons is unlikely'' statement --- gives a Planck-set ceiling
+$\Nexp_{\max}\simeq\kappa\,\ln(\wP/\wg)\approx 64\,\kappa$ for an optical photon: order
+tens, finite, with $\kappa$ an $O(1)$ coefficient fixed only by importing the
+Rukan--Gulla--Skaar Bogoliubov kernel and cutting its frequency integral at $\pi/\lP$
+(registered as OPEN-TP-1). The honest status is therefore: \emph{compatible at the
+structural level, with a framework-specific finiteness result that is robust and a
+numerical ceiling whose coefficient is open; zero new axioms; no theorem claimed.}
+\end{abstract}
+
+\noindent\textbf{Keywords:} truncated photon; single-photon states; photon-number
+distribution; dynamical Casimir effect; Bogoliubov transformation; ultraviolet cutoff;
+Planck scale; Conscious Point Physics; DP Sea; 600-cell; locality in quantum field theory;
+decoherence; Nexus; zero-parameter framework.
+
+\medskip
+\noindent\textbf{Plain Language Summary:} A photon is supposed to be indivisible, yet you
+can clearly block part of a light pulse with a fast shutter. A recent study shows that
+when you do this, the leftover light is not simply ``one photon or none'' --- it is a
+strange blend of zero, one, two, and in principle endlessly many photons, even though an
+observer on either side of the shutter would see only a single photon on one side and
+nothing on the other. We show that this fits naturally into the Conscious Point Physics
+picture, where a photon is a ripple in a real underlying medium and can be clipped like
+any ripple. The one place the two pictures part ways is the ``endlessly many'': in the
+standard theory the photon count blows up to infinity if the shutter could close
+infinitely fast, whereas Conscious Point Physics has a smallest possible tick of time,
+so the shutter can never be that fast and the photon count stays finite --- at most a few
+dozen for ordinary light.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+% SECTION 1: Introduction
+% ============================================================
+\section{Introduction}
+
+A photon is an elementary excitation of the electromagnetic field and cannot be cut into
+two photons. Yet one can plainly remove part of an optical pulse with a shutter.
+\citet{RukanGullaSkaar2026} (hereafter RGS) resolve the apparent tension within ordinary
+quantum optics. Because exact single-photon states have infinite temporal tails, a state
+that ``looks like a single photon to the left of the shutter and vacuum to the right''
+cannot be a one-photon state; RGS show that the truncated state is instead a
+superposition and mixture of photon numbers from zero up to infinity, while remaining
+\emph{locally} indistinguishable from a single photon or from vacuum in the two disjoint
+regions. The creation of these photons is, in their analysis, a consequence of the
+violation of time-translational invariance introduced by the shutter; by Noether's
+theorem one then expects an apparent failure of energy conservation. The expected photon
+number diverges only as the shutter closes infinitely fast; for realistic shutter speeds
+even a thousand created photons would be extremely improbable.
+
+This paper asks a single question: \emph{is the truncated-photon effect compatible with
+the postulates of Conscious Point Physics?} The answer developed below is yes ---
+compatible structurally, and in three independent places --- and the one framework-specific
+consequence is a regularization of the RGS divergence by the CPP ultraviolet cutoff. We
+do not re-derive the RGS result; we accept it as a correct statement about the continuum
+theory (noting it is not uncontested) and read it against the CPP substrate.
+
+The logic has a useful self-checking feature. CPP claims (QM-5, \citealp{CPP-QM5}) that
+standard quantum field theory is recovered as the continuum limit of $600$-cell lattice
+dynamics. Since the RGS result \emph{is} standard QFT, CPP must reproduce it in that
+limit, including the divergence. Bare compatibility is therefore nearly automatic and is
+not, by itself, the contribution. The contribution is the place where CPP departs from
+the continuum: the lattice carries a hard ultraviolet cutoff, and the truncation
+divergence is ultraviolet, so CPP renders $\Nexp$ finite for every physical shutter.
+
+\subsection{Open Problems Addressed}
+This paper opens the quantum-optics domain of \texttt{series\_phenomena/} with its first
+member, the truncated-photon phenomenon, and registers OPEN-TP-1 (fix the $O(1)$
+coefficient $\kappa$ of the Planck-set ceiling by importing the RGS Bogoliubov kernel and
+cutting its frequency integral at $\pi/\lP$). It draws load-bearing structure from QM-5
+(second quantization and the $\pi/\lP$ cutoff, \citealp{CPP-QM5}) and QM-4
+(measurement as partial trace over the DP Sea under the Nexus, \citealp{CPP-QM4}), and
+it adopts the framework-conditional, zero-new-axiom, no-theorem posture established by
+EU-1 (\citealp{CPP-EU1}).
+
+% ============================================================
+% SECTION 2: The RGS result
+% ============================================================
+\section{The Truncated Photon in the Continuum}\label{sec:rgs}
+
+Let a single-photon wavepacket be
+\begin{equation}
+|1_\xi\rangle = \int d\omega\,\xi(\omega)\,\hat a^\dagger(\omega)\,|0\rangle,
+\qquad \int d\omega\,|\xi(\omega)|^2 = 1 ,
+\end{equation}
+with temporal envelope the Fourier transform of $\xi(\omega)$. The shutter is not a
+number-conserving projector on the one-photon sector; it is a time-dependent boundary
+condition imposed on the field. RGS show that the resulting state has support on every
+photon-number sector,
+\begin{equation}
+|\psi_{\mathrm{cut}}\rangle = \sum_{n=0}^{\infty} c_n\,|n\rangle_{\mathrm{(mode\ structure)}},
+\qquad \Nexp=\sum_n n\,|c_n|^2 ,
+\end{equation}
+and that the two reduced states obtained by tracing over the field on either side of the
+shutter are, respectively, a single photon and vacuum to the precision set by a narrow
+transition region. The hallmark of the mechanism is that $\Nexp$ grows without bound only
+as the switching becomes instantaneous: a sharper shutter injects higher-frequency
+content, and an idealized step demands content at arbitrarily high frequency. This is the
+structural signature of an \emph{ultraviolet} divergence, and it is the hinge of
+everything below.
+
+\paragraph{Why this is dynamical-Casimir physics.} A shutter that changes the field's
+boundary condition in time is, formally, the same class of process as a moving mirror or
+a cavity of time-varying length \citep{Moore1970,Dodonov2020}, which converts vacuum and
+single-quantum input into multi-photon output by a Bogoliubov transformation mixing
+$\hat a$ and $\hat a^\dagger$. The dynamical Casimir effect has been observed in
+superconducting circuits \citep{Wilson2011}. The number of created quanta is
+$\Nexp=\sum_k|\beta_k|^2$ with $\beta_k$ the Bogoliubov coefficients of the time-dependent
+boundary; instantaneous switching makes $\beta_k$ fall off slowly in $k$ and the sum
+diverge, while smooth switching over a time $\tau_s$ suppresses $\beta_k$ above
+$\omega\sim1/\tau_s$ and the sum converges. RGS's ``infinite only if instantaneous'' is
+exactly this statement.
+
+% ============================================================
+% SECTION 3: The CPP compatibility map
+% ============================================================
+\section{Compatibility with the CPP Postulates}\label{sec:compat}
+
+We show that each surprising feature of the truncated photon lands on a standing CPP
+mechanism rather than requiring a new one.
+
+\subsection{A photon is a cuttable disturbance of a real medium}
+In CPP a photon is not a fundamental object but a perturbation of the Dipole-Pair (DP)
+Sea --- the lattice vacuum whose ground-state dipoles transmit all interactions. A
+propagating photon is a propagating disturbance \emph{in a medium}, and truncating a
+disturbance in a medium is unremarkable. Where the continuum theory finds it awkward that
+an ``indivisible'' particle can have part of it removed, CPP finds the extended,
+clippable photon-wave to be the natural description: the wave aspect of wave--particle
+duality is carried by an actual substrate excitation, and the shutter acts on that
+excitation directly.
+
+\subsection{Many-photon content is ordinary bosonic occupation}
+QM-5 derives second quantization from the $600$-cell eigenmode expansion: any DI-bit
+amplitude configuration is expanded as $\psi_i=\sum_k a_k u_k(i)$ over the lattice
+eigenvectors $u_k$, and promoting $a_k\to\hat a_k$ with bosonic commutators gives the
+field operator $\hat\phi(r_i)=\sum_k(\hat a_k u_k(i)+\hat a_k^\dagger u_k^*(i))$. Photon
+modes are bosonic (no occupation exclusion), so a state spanning many photon numbers is
+ordinary multi-occupation of Sea modes. The ``$0$ to $\infty$ mixture'' is a superposition
+over occupation numbers of the relevant DP-Sea modes --- native, not exotic.
+
+\subsection{Local-simple / global-complex is the measurement structure of QM-4}
+QM-4 solves the CPP measurement problem by identifying apparent collapse with
+decoherence: a local subsystem couples to a subset of DP-Sea modes, its reduced density
+matrix $\rho=\Tr_{\mathrm{Sea}}|\psi\rangle\langle\psi|$ is simple, and the Nexus enforces
+global unitarity so that the full state retains all structure. The truncated photon's
+``single photon to the left, vacuum to the right, $0\!\to\!\infty$ globally'' is precisely
+the system/environment partial trace applied \emph{across a spatial boundary}. The feature
+RGS find strangest is, in CPP, the expected output of the standard decoherence account.
+
+\subsection{The creation mechanism: a driven DP-Sea boundary}
+RGS attribute photon creation to broken time-translation invariance. CPP states the same
+physics mechanistically: the shutter is a macroscopic, time-dependent reconfiguration of
+the DP-Sea boundary, doing work on the Sea --- a dynamical-Casimir-type excitation from a
+driven boundary (\S\ref{sec:rgs}). The Nexus enforces global consistency at each Absolute
+Moment, but it does not demand that an open, externally driven subsystem conserve energy:
+the photon subsystem is not isolated, and the shutter is the external agent supplying the
+energy. CPP therefore reproduces the Noether/energy-bookkeeping reasoning of RGS rather
+than contradicting it.
+
+% ============================================================
+% SECTION 4: Regularization
+% ============================================================
+\section{Lattice Regularization of the Divergence}\label{sec:reg}
+
+The one place CPP departs from the continuum is the fate of the divergence.
+
+\begin{proposition}[Lattice regularization of shutter-induced photon creation]
+\label{prop:reg}
+Assume (a) the truncated-photon expected number $\Nexp$ diverges only in the
+instantaneous-shutter limit, i.e.\ the divergence has purely ultraviolet origin
+\citep{RukanGullaSkaar2026}; and (b) CPP imposes a hard ultraviolet cutoff
+$k_{\max}=\pi/\lP$ on all field modes, equivalently a maximal angular frequency
+$\wP=1/\tP$ \citep{CPP-QM5}. Then $\Nexp$ is finite for every physical shutter, and is
+bounded above over the set of \emph{all} physical shutters, because no shutter can switch
+faster than one Absolute Moment $\tP$.
+\end{proposition}
+
+\begin{proof}[Argument]
+Write the created-photon spectrum as $dN/d\omega$, supported on $[\wg,\wcut]$ where $\wg$
+is the carrier frequency and $\wcut$ the effective spectral cutoff set by the switching
+sharpness ($\wcut\sim1/\tau_s$). By (a), $\Nexp=\int_{\wg}^{\wcut}(dN/d\omega)\,d\omega$
+diverges only as $\wcut\to\infty$. By (b), every physical mode has $\omega\le\wP$, so
+$\wcut\le\wP$ and $\Nexp\le\int_{\wg}^{\wP}(dN/d\omega)\,d\omega<\infty$. The bound is
+uniform over shutters because the sharpest physical switching, one Absolute Moment, gives
+$\wcut=\wP$.
+\end{proof}
+
+The argument uses only the \emph{origin} of the divergence (ultraviolet) and the
+\emph{existence} of the CPP cutoff. It does not depend on the detailed spectrum, so the
+finiteness conclusion is robust; the numerical value of the ceiling is not.
+
+\paragraph{The numerical ceiling.} Take the mild, logarithmic ultraviolet form
+$dN/d\omega=\kappa/\omega$, so $\Nexp(\wcut)=\kappa\ln(\wcut/\wg)$. This is the divergence
+class \emph{selected by RGS's own qualitative statement}: logarithmic growth means
+reaching $N$ photons requires $\wcut\sim\wg e^{N/\kappa}$, an exponentially sharp shutter,
+which is why ``even a thousand photons would be extremely unlikely.'' A stronger
+(power-law) divergence would make moderate photon numbers easy and is excluded by that
+statement. With the CPP cutoff $\wcut\le\wP$,
+\begin{equation}
+\Nexp_{\max}=\kappa\,\ln\!\frac{\wP}{\wg}.
+\end{equation}
+For an optical photon ($\lambda=500\,$nm, $\wg=3.767\times10^{15}\,\mathrm{rad/s}$) and
+$\wP=1/\tP=1.855\times10^{43}\,\mathrm{rad/s}$,
+\begin{equation}
+\ln\!\frac{\wP}{\wg}=63.8,\qquad \Nexp_{\max}\approx 64\,\kappa,
+\end{equation}
+an order-tens ceiling. The coefficient $\kappa$ is the only model-dependent input; fixing
+it requires the RGS Bogoliubov kernel $B(\omega,\omega')$ evaluated with its frequency
+integral cut at $\pi/\lP$ (OPEN-TP-1).
+
+\paragraph{Sharper than ``unlikely.''} RGS say large photon numbers are improbable for
+realistic shutters. CPP says more: for $\kappa$ of order $0.1$--$1$, even $\sim\!10^2$
+created photons would require $\tau_s<\tP$, which the lattice forbids by construction.
+What is ``extremely unlikely'' in the continuum becomes ``impossible past the Planck
+ceiling'' on the lattice. This is the same conversion QM-5 performs for the electron
+self-energy, where the lattice turns an infinite renormalization into a finite one; here
+it turns an infinite expected photon number into a finite, Planck-set one.
+
+% ============================================================
+% SECTION 5: Physical Interpretation
+% ============================================================
+\section{Physical Interpretation}\label{sec:physical}
+
+In the CPP picture the entire episode is a driven-boundary problem in the DP Sea. Before
+the shutter acts, the photon is a coherent single-quantum disturbance riding the Sea, of
+finite spatial extent because it was emitted a finite number of Absolute Moments ago and
+propagates at exactly $c=\lP/\tP$, one edge per tick. The shutter is a macroscopic,
+time-dependent boundary inserted into the Sea. Slamming it does work on the Sea and
+stirs its zero-point dipoles, exciting additional Sea modes --- the ``created photons.''
+How many are excited is set by how abruptly the boundary moves relative to the Sea's
+fastest mode, the Zitterbewegung oscillation near $1/\tP$. An observer confined to one
+side couples only to the Sea modes there and reads a simple reduced state; the full
+$0\!\to\!\infty$ structure lives in the global Sea configuration that the Nexus keeps
+consistent.
+
+The RGS programme's stated goal --- compactly supported, finite-tail photons so that
+interactions have a clean causal order rather than infinite tails implying interaction
+since the infinite past --- is, in CPP, already the native situation. The fundamental
+degrees of freedom are local lattice excitations with strictly finite propagation speed,
+so a physical photon is always a finite-extent disturbance built over finitely many ticks.
+The infinite tails are an artifact of the continuum Fourier idealization; the
+compactly-supported photon the authors construct by hand is the default object on the
+$600$-cell.
+
+\subsection{CP/GP Signature at This Scale}
+
+\textbf{Load-bearing axioms.} The compatibility map rests on A1 (Conscious Points and the
+DP-Sea vacuum they compose), A2 (the $600$-cell topology supplying the eigenmode basis and,
+through $z$ and $\lP$, the cutoff), A3 (DI-bit propagation at $c=\lP/\tP$, which makes
+photons finite-extent and supplies the maximal frequency $\wP=1/\tP$), and A4 (the Nexus,
+which enforces global consistency while permitting an open driven subsystem to exchange
+energy). The regularization (Prop.~\ref{prop:reg}) is carried specifically by A2+A3
+through the single fact $\wcut\le\wP=1/\tP$.
+
+\textbf{Visible vs.\ smoothed discreteness.} The lattice discreteness is visible here in
+exactly one quantity --- the cutoff $\wP=1/\tP$ that caps the photon-number ceiling --- and
+is otherwise smoothed away: the bosonic mode algebra, the Bogoliubov kernel, and the
+partial-trace structure are all continuum-faithful, because that is what QM-5's
+continuum-limit claim guarantees. The single surviving lattice fingerprint is the
+finiteness of $\Nexp$ and its $\ln(\wP/\wg)$ ceiling. This is the orders-of-magnitude
+dilution made explicit: a Planck-scale discreteness leaves only a logarithm of the
+Planck-to-optical ratio in the observable.
+
+\textbf{Macroscopic shadow.} The conventional statement ``the truncated-photon number
+diverges only for an instantaneous shutter'' is the macroscopic shadow of there being a
+shortest tick $\tP$: in the continuum the instantaneous shutter is a legal idealization
+and the divergence is real; on the lattice it is illegal, and the divergence is its
+absence-of-a-cutoff shadow.
+
+% ============================================================
+% SECTION 6: Mapping
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}\label{sec:mapping}
+
+\begin{table}[H]
+\centering
+\caption{Structural correspondence between the continuum (RGS) account and the CPP
+substrate account of the truncated photon.}
+\begin{tabular}{p{0.30\textwidth} p{0.32\textwidth} p{0.30\textwidth}}
+\toprule
+\textbf{Feature} & \textbf{Continuum / RGS} & \textbf{CPP substrate} \\
+\midrule
+Photon & elementary field excitation, infinite tails & DP-Sea perturbation, finite extent (finite ticks since emission) \\
+Shutter & time-dependent boundary breaking time-translation invariance & macroscopic driven boundary doing work on the DP Sea \\
+Photon creation & Bogoliubov mixing of $\hat a,\hat a^\dagger$ & dynamical-Casimir excitation of Sea modes \\
+$0\!\to\!\infty$ mixture & multi-photon Fock support & bosonic multi-occupation of $600$-cell modes (QM-5) \\
+Local simple / global complex & partial trace gives single photon / vacuum & $\Tr_{\mathrm{Sea}}$ under the Nexus (QM-4) \\
+Energy bookkeeping & apparent non-conservation (Noether) & open subsystem driven by the shutter; Nexus global-consistent \\
+$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ (UV divergence) & finite; $\wcut\le\wP=1/\tP$ (Prop.~\ref{prop:reg}) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The correspondence is structural, at the level of degrees of freedom and the symmetry
+that is broken, not a literal identification: CPP operates below the perturbative-QFT
+granularity, and the lattice content appears only in the cutoff.
+
+% ============================================================
+% SECTION 7: Falsifiers
+% ============================================================
+\section{Falsifiers}\label{sec:falsifiers}
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Coefficient falsifier (OPEN-TP-1).} If the RGS Bogoliubov kernel, cut at
+$\pi/\lP$, yields a created-photon spectrum that is \emph{not} in the mild (at most
+logarithmic) ultraviolet class, the order-tens ceiling fails and must be replaced by
+whatever $\int_{\wg}^{\wP}(dN/d\omega)\,d\omega$ actually gives. The finiteness claim
+(Prop.~\ref{prop:reg}) survives regardless; only the number $\approx 64\kappa$ is at risk.
+\item \textbf{Compatibility falsifier.} If a careful CPP treatment of the truncated photon
+required violating global unitarity at the level of the full Sea state (not merely the
+open subsystem), the QM-4 measurement account would be contradicted and the compatibility
+claim of \S\ref{sec:compat} would fail.
+\item \textbf{Cutoff falsifier.} If the divergence were shown to be infrared rather than
+ultraviolet --- i.e.\ to survive any high-frequency cutoff --- the lattice cutoff would not
+regulate it and Prop.~\ref{prop:reg} would be vacuous. RGS's ``infinite only if
+instantaneous'' is direct evidence against this, but a full spectral computation
+(OPEN-TP-1) is the proper test.
+\item \textbf{Empirical (in principle).} A measured truncated-photon number distribution
+whose tail does not cut off below the bound implied by the fastest realizable shutter
+would constrain $\kappa$ and, at extreme shutter speeds far beyond present capability,
+could in principle distinguish a cutoff theory from a strictly continuum one.
+\end{enumerate}
+
+% ============================================================
+% SECTION 8: Conclusion
+% ============================================================
+\section{Conclusion}\label{sec:conclusion}
+
+The truncated-photon effect of Rukan, Gulla and Skaar is compatible with Conscious Point
+Physics, and in three independent ways it is more than compatible: the cuttable
+photon-wave, the many-photon Fock content, and the local-simple/global-complex structure
+each instantiate a standing CPP mechanism (DP-Sea perturbation, bosonic mode occupation,
+partial trace under the Nexus), and the authors' own creation mechanism --- broken
+time-translation invariance --- is the CPP driven-boundary (dynamical-Casimir) process.
+The single framework-specific result is that the divergence, being ultraviolet, is
+regulated by the CPP cutoff $\wP=1/\tP$: the truncated-photon expected number is finite
+for every physical shutter and bounded for all of them, with an optical ceiling of order
+$64\kappa$ in the mild-divergence class the authors' phenomenology selects.
+
+\subsection{Swarm-Validation Contribution}
+This paper adds no new zero-parameter numerical correspondence to the cumulative swarm
+tally; its contribution is one framework-conditional structural result (the lattice
+regularization, Prop.~\ref{prop:reg}) and one in-principle-falsifiable order-of-magnitude
+prediction (the $\sim\!64\kappa$ optical ceiling) carried by the unchanged $9$-axiom
+stack, with the coefficient $\kappa$ deferred to OPEN-TP-1. Consistent with programme
+convention, the running swarm total is unchanged; the paper's weight is that an
+independently published, contested continuum result fits the CPP substrate without
+adjustment and is sharpened by it.
+
+\subsection{Problem Status After This Paper}\label{sec:problem_status}
+\begin{itemize}[leftmargin=2em]
+\item NEW: \texttt{series\_phenomena/quantum\_optics/} domain opened; truncated-photon
+phenomenon registered as its first member at gated-conjecture maturity (this v0.1 draft).
+\item NEW: OPEN-TP-1 registered --- fix $\kappa$ by importing the RGS Bogoliubov kernel and
+cutting its frequency integral at $\pi/\lP$.
+\item Prop.~\ref{prop:reg} (lattice regularization): stated and argued at framework-
+conditional level; no global theorem claimed.
+\item QM-4, QM-5: load-bearing, unchanged; this paper is an application, not a revision.
+\end{itemize}
+
+\section*{Acknowledgements}
+The truncated-photon result is due to Rukan, Gulla and Skaar; this paper only reads it
+against the CPP substrate and makes no claim on their derivation. Claude Opus (Anthropic)
+contributed the compatibility analysis, the regularization argument, and the numerical
+ceiling; Thomas Lee Abshier directed the work and the framework.
+
+\bibliography{TP-1_refs}
+
+\appendix
+% ============================================================
+% APPENDIX: Numerical Verification
+% ============================================================
+\section{Numerical Verification}\label{app:numerics}
+
+The script
+\texttt{series\_phenomena/quantum\_optics/photon\_truncation/scripts/1700\_truncation\_regularization.py}
+evaluates the ceiling and the regularization curve. With $\tP=5.391247\times10^{-44}\,$s
+and an optical carrier $\wg=3.767\times10^{15}\,$rad/s it returns
+$\wP=1/\tP=1.855\times10^{43}\,$rad/s, $\ln(\wP/\wg)=63.76$, hence
+$\Nexp_{\max}=63.8\,\kappa$. In the log model $\Nexp(\wcut)=\kappa\ln(\wcut/\wg)$ grows
+from $\approx 10$ at $\wcut=10^{20}\,$rad/s to $63.8$ at the cutoff and diverges only as
+$\wcut\to\infty$; reaching $N\gtrsim10^2$ created photons (for $\kappa\lesssim1$) requires
+$\tau_s<\tP$, which the lattice forbids. A power-law spectrum ($p=0.5$) is included to
+confirm that finiteness-under-cutoff is spectrum-independent while the magnitude is not.
+
+\end{document}
