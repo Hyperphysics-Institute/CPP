@@ -77,3 +77,27 @@ panel-dispatch first (the question is decidable and sharp), then formalize which
 - **TOOL HAZARD (learned 2005):** in this container the file-creation tool wrote to a stray
   `/home/claude/CPP_work` while git operated on `/root/CPP_work`. Create repo files via bash (`cat >`) or
   verify `git status` shows them before committing. (Caused the 2005 remediation.)
+
+---
+
+## Addendum — R2 hardening sub-arc (Patches 2007–2010, same session)
+
+After the consolidation (2006), R2 was hardened directly:
+- **2007** — single-response structure (B=∇×P) shown corpus-derived (c06 line 91 / EW-5), not cartoon;
+  excludes the independent-magnetic-field horn. CONV-001 panel dispatch built.
+- **2008** — C-vs-K stiffness locking derived from shared Coulomb origin (0739): both C=U''(d_DP) and
+  K=U''(a) are curvatures of one Coulomb potential → both ∝ Q → K/C exactly Q-invariant. K∝C at leading
+  order; circularity discipline held (absolute Z₀ NOT attempted).
+- **2009** — ChatGPT round-1 REVIEW (REVISE) answered: rebut the elastic-lattice counterexample (its
+  independent-spring premise fails in the DP Sea); residual narrowed to scale-dependent screening +
+  full-action derivation; re-dispatched.
+- **2010** — ChatGPT round-2 verdict recorded: **CONFIRM (leading order)** on K∝C; **REVISE** on full PASS
+  (scale-dependent screening unbounded; full lattice-EM action curl-coefficient outstanding). Canonical R2
+  status in `mu_eps_closure/R2-STATUS.md`.
+
+**R2 pickup point for the next window:** REVISE, leading-order CONFIRMed. Two closure conditions, in order:
+(1) the c06 full lattice-EM action — derive μ₀(C), ε₀(C) and the curl coefficient from one action; (2) with
+that in hand, bound the scale-dependent screening correction < 10⁻⁶. **Do NOT build a lattice-EM action to
+taste — cancellations can survive at pair-potential level and vanish in the field theory (ChatGPT's caution);
+that is the cancellation-by-construction trap.** Round-3 panel re-review after (1). 2000-band patches
+2001–2010 used; 2011+ free.
