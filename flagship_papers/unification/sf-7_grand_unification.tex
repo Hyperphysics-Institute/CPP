@@ -1,0 +1,314 @@
+% ============================================================
+% SF-7: Standard Model Grand Unification from 600-Cell Geometry
+%       Hierarchy Without Hierarchy
+% Conscious Point Physics Flagship Paper Series (SF-line) --- apex synthesis
+% Version history: flagship_papers/unification/documentation_suite/changelog-sf-7.md
+% ------------------------------------------------------------
+% SKELETON (v0.1 DRAFT, Patch 1314). Structure to the 16-section
+% paper-formatting standard. Sections 3-8 carry each shipped
+% predecessor's headline; section 9 carries the locked calibration
+% ledger; section 10 states the one BUILT consistency theorem
+% (THEO-SF7-CONSIST-1) plus the roadmap for the ten still to build.
+% Fill-in markers: %%TODO denote scaffolded content for later patches.
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{longtable}
+\usepackage[authoryear,round]{natbib}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+% --- Standard CPP macros ---
+\newcommand{\phig}{\varphi}                 % golden ratio
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\Tr}{\operatorname{Tr}}
+% --- Paper-specific macros ---
+\newcommand{\Kthree}{\mathrm{K}_3}
+\newcommand{\sinsqthetaW}{\sin^2\theta_W}
+\newcommand{\Mzero}{M_0}
+\newcommand{\alphas}{\alpha_s}
+\newcommand{\dCP}{\delta_{CP}}
+
+\title{\textbf{SF-7: Standard Model Grand Unification from 600-Cell Geometry}\\[6pt]
+{\large Hierarchy Without Hierarchy: Seventeen Particles, One Calibration}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series --- Apex Synthesis}\\[4pt]
+{\Large \textbf{Version 0.1 (DRAFT) --- 21 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+\noindent\textbf{Paper type:} Flagship grand-unification synthesis. SF-7 is the apex of the Conscious Point Physics (CPP) SF-line: it demonstrates, by reference to the six shipped predecessor flagships (SF-1 through SF-6) plus its own cross-sector synthesis content, that all seventeen Standard Model matter and force particles --- plus the CPP-novel $W^0$ catalyst --- derive from a single substrate calibration, the electron mass $m_e$, together with the geometry of the 600-cell polytope.
+
+The Standard Model carries nineteen or more free parameters with no account of why the particle masses take the values they do --- the \emph{hierarchy problem}, the most-named known-unknown of the mass program. SF-7 assembles the cumulative result that the charged-lepton spectrum (SF-1), the electroweak cage-boson family including $W^0$ (SF-2), the quark spectrum and generation count (SF-3), the neutrino sector (SF-4), the strong sector --- $SU(3)$ colour, the eight gluons, confinement, the light-nucleus binding cascade (SF-5) --- and the unification of classical, special-relativistic, and quantum electromagnetism (SF-6) all follow from one calibration on the shared substrate quantum $\Mzero = m_e\,(z/\phig)$ with $z=12$ and $\phig=(1+\sqrt5)/2$. %%TODO: tighten once the §10 family is complete.
+
+The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first member, the SF-2$\leftrightarrow$SF-4 consistency theorem (THEO-SF7-CONSIST-1), is established here; the remaining pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} grand unification; hierarchy problem; 600-cell; Conscious Point Physics; Standard Model; cross-sector consistency; golden ratio.
+
+% ============================================================
+% PLAIN LANGUAGE SUMMARY
+% ============================================================
+\section*{Plain Language Summary}
+%%TODO: ~250 word billiard-ball-mechanical summary in the founder's voice
+%%      (the phenomenon-story register). For now, the claim in brief:
+The Standard Model needs more than nineteen separately-measured numbers to describe the known particles, and it cannot say where any of them come from. CPP's claim is that they all come from one shape --- the 600-cell, a four-dimensional polytope --- plus a single measured number, the mass of the electron. Each earlier paper in this series took one family of particles and showed how its masses and behaviour fall out of that shape. This paper puts the six accounts side by side and asks the harder question: do they fit together without contradiction, without secretly using the same number twice, without leaving a seam? The answer is the set of consistency theorems in \S10. \emph{(Draft placeholder --- to be rewritten at phenomenon-story register.)}
+
+% ============================================================
+\section{Introduction: The Unification Problem}\label{sec:intro}
+% ============================================================
+%%TODO: the SM's 19+ free parameters as the named known-unknown; the
+%%      hierarchy problem; why-these-particles / why-these-masses; the
+%%      shape of a satisfactory answer (discrete geometric foundation).
+The Standard Model (SM) of particle physics is, by the measure of predictive accuracy, the most successful theory in the history of science --- and by the measure of \emph{explanation}, conspicuously incomplete. It carries at least nineteen free parameters (nine charged-fermion masses, three neutrino masses, four CKM and four PMNS mixing parameters, three gauge couplings, the Higgs mass and vacuum expectation value, the strong $CP$ phase) that must be measured and inserted by hand, with no theory of why they take the values they do. The pattern of those values --- spanning twelve orders of magnitude from the lightest neutrino to the top quark --- is the \emph{hierarchy problem}, the most-named ``why these masses?'' question in mainstream physics.
+
+Conscious Point Physics proposes that the shape of a satisfactory answer is a discrete geometric foundation: the 600-cell polytope. The six predecessor flagships of the SF-line each take one particle class and derive its sector from that substrate plus a single calibration. SF-7 is the synthesis that puts the six accounts together and proves they cohere.
+
+\subsection{Open Problems Addressed}\label{sec:open}
+This paper confronts, at the synthesis level: the hierarchy problem (the headline SM known-unknown); the cross-particle-class consistency of the six SF-line derivations; the calibration-honesty ledger ($m_e$ as sole calibration, with the SF-2 $\eta$ and mixing-sector caveats); and the $W^0$ integration. It inherits, openly, the predecessor open problems: OPEN-FP-1-P3, OPEN-FP-3-CKM, OPEN-FP-SF-2-$\eta$, OPEN-SS-6 / OPEN-FP-5-GLUEBALL, OPEN-FP-6-CONSTANTS, OPEN-FP-6-EMHAND, and the open $\dCP$ value. %%TODO: confirm final inheritance ledger against frontier_sectors/FP.md at integration.
+
+% ============================================================
+\section{The 600-Cell Substrate and CPP Axiomatic Structure}\label{sec:substrate}
+% ============================================================
+%%TODO: full §2 --- why a discrete geometric foundation is the right
+%%      shape of answer; the CPP axiom set; the substrate primitives.
+The 600-cell is the convex regular 4-polytope with $V=120$ vertices, $E=720$ edges, $F=1200$ triangular faces, and $C=600$ tetrahedral cells, with vertex coordination number $z=12$. Conscious Points on the lattice exchange DI-bits via Space Stress Vector ($\SSV$) gradients; particles are geometric cage structures and forces emerge from the lattice mode spectrum. The golden ratio $\phig=(1+\sqrt5)/2$ is built into the 600-cell geometry and recurs throughout the sector derivations. The CPP axiom set (A1--A11) is taken as inherited input; this section states the axioms load-bearing for the synthesis and the substrate quantum $\Mzero = m_e(z/\phig)$ that anchors every sector. %%TODO: enumerate the load-bearing axioms from axiom-registry.md at fill-in.
+
+% ============================================================
+\section{Synthesis: The Charged-Lepton Sector (SF-1)}\label{sec:sf1}
+% ============================================================
+%%TODO: full reframing of the SF-1 headline; calibration cost; what is established.
+\citet{abshier2026sf1} establishes the charged-lepton sector at one calibration ($m_e$) and zero shape parameters. The complete graph $\Kthree$ on the three cage base vertices carries a Zitterbewegung Hamiltonian whose adjacency spectrum $\{+2,-1,-1\}$ fixes the Koide relation $K=2/3$ \emph{exactly}; two spectral traces of the 600-cell adjacency matrix give the bare mixing fraction $3/8$, which with the edge efficiency $\eta=1/\phig$ yields $\sinsqthetaW = 3/(8\phig)\approx0.2318$ (0.24\%); the Koide phase, undetermined by cage symmetry alone (SM-4 impossibility theorem), is supplied by the electroweak isotropic shift $\varepsilon = 3/(52\phig)$, closing at $\theta=132.731^\circ$ (0.003\%). The spectrum closes at $m_\mu=105.47$~MeV (0.18\%) and $m_\tau=1774.1$~MeV (0.15\%). \textbf{Cross-sector handles contributed:} the spectral-trace $\sinsqthetaW$ (shared with SF-2) and the $\Mzero$/phase handle (shared with SF-4).
+
+% ============================================================
+\section{Synthesis: The Electroweak Cage Bosons and \texorpdfstring{$W^0$}{W0} (SF-2)}\label{sec:sf2}
+% ============================================================
+%%TODO: full reframing of SF-2; the W0 novel prediction; the eta caveat.
+\citet{abshier2026sf2} unifies $W^\pm$, $W^0$, $Z$, and $H$ as a single geometric family. Four cage-shape uniqueness theorems fix the $W$ bracelet ($D_6$ stabiliser, $H_4$-orbit 1200), the $Z$ icosahedron ($V=12$), and the $H$ dodecahedron ($V=20$); the tree-level ratio $m_Z/m_W = 1/\cos\theta_W = 1.140$ matches observation (1.134) to 0.5\% with no cross-calibration. The CPP-novel $W^0$ catalyst carries the mass-degeneracy prediction $m_{W^0}=m_{W^\pm}$ within $\sim$1~MeV. \textbf{Honest caveat (carried to \S9):} the \emph{absolute} boson masses are PARTIAL CLOSURE via a per-boson holographic dilution $\eta\sim10^{-17}$ (OPEN-FP-SF-2-$\eta$); the structural and mass-\emph{ratio} results are zero-parameter on $\Mzero$.
+
+% ============================================================
+\section{Synthesis: The Quark Sector (SF-3)}\label{sec:sf3}
+% ============================================================
+%%TODO: full reframing of SF-3; the m_c adjudication; CKM open.
+\citet{abshier2026sf3} delivers the quark spectrum from $M_q = m_e(z/\phig)V^{7/3}$ at RMS 2.1\% across $s,c,b,t$ from $m_e$ alone, with $m_c$ \emph{demoted from calibration to derived} (predicted at 1.6\%), restoring the single-$m_e$ headline. The strong coupling appears as the face-mode fraction $\alphas = 5/(8\phig)\approx0.386$, with the exact complementarity $\sinsqthetaW + \alphas = 1/\phig$ (edge $3/8$ + face $5/8$, ratio $F/E=5/3$); the quark Koide phase is $\theta_{\rm quark}=124.04^\circ$ (0.05\%); three generations are forced by antipodal identification. \textbf{Honest caveat:} CKM mixing has no corpus derivation (OPEN-FP-3-CKM), the quark-sector analog of the open neutrino $\dCP$.
+
+% ============================================================
+\section{Synthesis: The Neutrino Sector (SF-4)}\label{sec:sf4}
+% ============================================================
+%%TODO: full reframing of SF-4; the TBM angles; dCP deferral.
+\citet{abshier2026sf4} derives the neutrino masses from $m_{\nu_i} = \Mzero\,V_{\nu_i}^2\,\sigma_\nu$ with $V\in\{4,12,30\}$ forced by the SM-1 four-cage taxonomy and the suppression $\sigma_\nu = z^{-10}$, giving $\Sigma m_\nu\approx64.9$~meV (within DESI/Planck bounds), the tribimaximal angles $\sin^2\theta_{12}=1/3$, $\sin^2\theta_{23}=1/2$, $\sin^2\theta_{13}=0$ at zeroth order, and a forced normal hierarchy --- seven of eight zero-parameter sector predictions. \textbf{Honest caveat:} $\dCP$ is deferred to the electroweak chirality handle (route ii, OP-SM-7d); its value is open.
+
+% ============================================================
+\section{Synthesis: The Strong Sector (SF-5)}\label{sec:sf5}
+% ============================================================
+%%TODO: full reframing of SF-5; gluon counting; deuteron honesty.
+\citet{abshier2026sf5} delivers the strong sector: $SU(3)$ exact ($T^a=\lambda^a/2$, $[T^a,T^b]=if^{abc}T^c$) and unique within the operator representation; eight gluons (six edge + two diagonal), massless and spin-1; confinement with positive $\beta$; string tension $\sigma = \Mzero z^2/(\phig\,\ell_{\rm edge})\approx926.5$~MeV/fm; and the light-nucleus binding cascade with quantum $B_{\rm pair}=\Mzero/\phig=2.342$~MeV (zero-parameter), reproducing twelve strict-$N{=}Z$ alpha-chain nuclei at RMS $<1\%$. \textbf{Honest caveat:} the deuteron carries an open $+5.3\%$ leading-order residual (OPEN-SS-19); the lightest scalar glueball is open (OPEN-FP-5-GLUEBALL). The four-vertex gluon-counting conjecture is carried as a flagged conjecture, not a headline.
+
+% ============================================================
+\section{Synthesis: Electromagnetism --- Classical, Relativistic, Quantum (SF-6)}\label{sec:sf6}
+% ============================================================
+%%TODO: full reframing of SF-6; two-tier rigor; Michelson-Morley falsifier.
+\citet{abshier2026sf6} unifies classical Maxwell electromagnetism, special-relativistic photon kinematics, and quantum electrodynamics as three limits of eDP-sea polarization. The boundary-condition relation $E=\hbar\nu_C$ makes $E=mc^2$ and $E=h\nu$ one equation (mass = standing zero-distance current; photon = travelling current). \textbf{Two-tier rigor, stated plainly:} Tier 1 (companion-grade) carries the unification and field-locking ($\mu_0,\epsilon_0,Z_0$ as one eDP stiffness); Tier 2 (toy-model, parameter-tuned) carries the quantitative constants $\mu_0,\epsilon_0,c,\gamma(v)$ (OPEN-FP-6-CONSTANTS). The photon is categorically distinct from the SF-2 cage bosons (clean no-double-counting). \textbf{Named open falsifier:} the toy-model $c_{\rm eff}(v)$ carries a Michelson--Morley tension, carried openly. The substrate-chirality EM manifestation is OPEN-FP-6-EMHAND.
+
+% ============================================================
+\section{The Hierarchy-Without-Hierarchy Master Comparison}\label{sec:ledger}
+% ============================================================
+The cumulative ledger of the six predecessors: every fermion mass scale is anchored on the single substrate quantum $\Mzero = m_e(z/\phig)$, i.e.\ one calibration ($m_e$) and zero shape parameters across the matter sectors. Table~\ref{tab:ledger} sets the SM's free-parameter count against the CPP calibration ledger sector by sector. Two caveats are carried explicitly and are \emph{not} hidden in the headline: (a) the SF-2 $\eta$-dilution on absolute boson masses (OPEN-FP-SF-2-$\eta$); (b) the open mixing sectors, CKM (SF-3) and $\dCP$ (SF-4).
+
+\begin{table}[H]
+\centering
+\caption{The hierarchy-without-hierarchy ledger: Standard Model free parameters versus the CPP calibration cost, by sector. ``Shape params'' counts free parameters \emph{beyond} the single $m_e$ calibration.}
+\label{tab:ledger}
+\small
+\begin{tabular}{@{}llcc l@{}}
+\toprule
+Sector & SF paper & SM free params & CPP shape params & Headline CPP result \\
+\midrule
+Charged leptons & SF-1 & 3 masses & 0 & $K=2/3$ exact; $m_\mu,m_\tau$ $<0.2\%$ \\
+Electroweak bosons & SF-2 & $m_H, v$, $\theta_W$ & 0 (ratios)$^{\dagger}$ & $m_Z/m_W$ 0.5\%; $W^0$ novel \\
+Quarks & SF-3 & 6 masses & 0 & RMS 2.1\%; $m_c$ derived \\
+Neutrinos & SF-4 & 3 masses + angles & 0 & $\Sigma m_\nu\approx64.9$~meV; TBM \\
+Strong sector & SF-5 & $\alphas$ (+ $\Lambda_{\rm QCD}$) & 0 & $SU(3)$ exact; 8 gluons; $\sigma$ \\
+Electromagnetism & SF-6 & --- (in gauge sector) & 0 (Tier 1)$^{\ddagger}$ & Maxwell+SR+QED unified \\
+Mixing (CKM, PMNS, $\dCP$) & SF-3/SF-4 & 8+ & --- (open) & inherited-open \\
+\midrule
+\textbf{Total} & SF-1--6 & \textbf{19+} & \textbf{0 beyond $m_e$} & one calibration \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent{\footnotesize $^{\dagger}$ SF-2 absolute boson masses are PARTIAL CLOSURE via $\eta$ (OPEN-FP-SF-2-$\eta$); ratios/structure zero-parameter. $^{\ddagger}$ SF-6 Tier-2 constants are toy-model-grade (OPEN-FP-6-CONSTANTS).}
+%%TODO: verify every count against the shipped papers + frontier_sectors/FP.md at integration; add a verify script (code/1314...) once §9 numbers are frozen.
+
+% ============================================================
+\section{The Cross-Particle-Class Consistency Theorems}\label{sec:consistency}
+% ============================================================
+The synthesis content unique to SF-7 is the demonstration that the six sector derivations \emph{cohere}. The consistency-theorem family has a common three-clause template: \textbf{(C1)} calibration coherence, \textbf{(C2)} no double-counting, \textbf{(C3)} shared-observable single-handle. A pairwise member is buildable iff both member flagships are shipped; with all six now shipped, the entire family --- ten pairwise members and the global six-way capstone --- is buildable for the first time.
+
+\subsection{THEO-SF7-CONSIST-1: SF-2 \texorpdfstring{$\leftrightarrow$}{<->} SF-4 (built)}\label{sec:consist1}
+\begin{theorem}[SF-2 $\leftrightarrow$ SF-4 Cross-Sector Consistency; candidate]\label{thm:consist1}
+The electroweak cage-boson sector (SF-2) and the neutrino sector (SF-4) are mutually consistent derivations on the shared 600-cell substrate:
+\textbf{(C1)} both anchor every mass scale on the single quantum $\Mzero = m_e(z/\phig)$ with identical $z,\phig$ (qualified by the open SF-2 $\eta$ on absolute boson masses);
+\textbf{(C2)} both draw shell assignments from the same SM-1 four-cage taxonomy $V\in\{4,12,20,30\}$; the only co-occupied shell, $V=12$ (the $Z$ cage-shape and the $\nu_2$ shell-occupation), carries \emph{distinct structural roles} computed by \emph{independent mechanisms sharing no fitted degree of freedom};
+\textbf{(C3)} SF-4's deferred $\dCP$ and SF-2's $V\!-\!A$ chirality observable are sourced from the \emph{same} substrate chirality handle $\chi=\phig^{-3}$ ($\chi/6\approx0.0394$).
+\end{theorem}
+\noindent Clause C2 is the strongest (theorem-level, consistent by construction); C1 is theorem-level on the shared anchor; C3 is interconnection-level (it certifies consistency, not the $\dCP$ value, which remains window-5 work). Full statement and proof: the \S10 seed \texttt{sf-7\_consistency\_SF2\_SF4.md}. Registration in \texttt{theorem-registry.md} is deferred to a flagged ship-time integration patch.
+
+\subsection{The remaining members (roadmap)}\label{sec:consist-roadmap}
+%%TODO: build each member below to theorem/candidate level on its identified thread.
+Table~\ref{tab:consist} lists the ten members still to build, each with the physical thread already identified in the critical-path map.
+
+\begin{table}[H]
+\centering
+\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1 is built; the remainder are now buildable and are developed in subsequent patches.}
+\label{tab:consist}
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Member & Identified thread & Status \\
+\midrule
+SF-2 $\leftrightarrow$ SF-4 & SM-1 taxonomy; $V{=}12$ shared shell; $\chi$ handle & \textbf{built (§\ref{sec:consist1})} \\
+SF-1 $\leftrightarrow$ SF-2 & shared $\sinsqthetaW=3/(8\phig)$ spectral trace & to build \\
+SF-1 $\leftrightarrow$ SF-4 & shared $\Mzero$; OP-SM-7d phase/$\dCP$ handle & to build \\
+SF-3 $\leftrightarrow$ SF-2 & $\sinsqthetaW+\alphas=1/\phig$ complementarity & to build \\
+SF-3 $\leftrightarrow$ SF-1 & shared Koide-phase machinery; $\Mzero$ & to build \\
+SF-3 $\leftrightarrow$ SF-4 & shared $\Mzero$/taxonomy; CKM$\leftrightarrow\dCP$ parallel & to build \\
+SF-5 $\leftrightarrow$ SF-2 & $SU(2)_L$/$SU(3)_c$ from one 600-cell & to build \\
+SF-5 $\leftrightarrow$ SF-3 & colour sector: $\alphas$, $C_F=4/3$ & to build \\
+SF-6 $\leftrightarrow$ SF-2 & photon vs cage boson --- categorical no-double-count & to build \\
+SF-6 $\leftrightarrow$ all & SSV/DP-Sea substrate consistency & to build \\
+\midrule
+\textbf{Global six-way} & no-double-count + single-$m_e$ + one substrate, 17 particles + $W^0$ & \textbf{capstone (with TLA)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent The mode-fraction structure ($\sinsqthetaW=3/8$ edge, $\alphas=5/8$ face, sum $1/\phig$) is the strongest recurring thread, binding SF-1/2/3/5 through one 600-cell spectral trace. The global six-way capstone is the threshold artifact of the synthesis and is to be built jointly.
+
+% ============================================================
+\section{The Cumulative Falsifier}\label{sec:falsifier}
+% ============================================================
+%%TODO: what would falsify the SF-line as a coordinated unit (distinct from
+%%      each predecessor's own falsifiers); the inherited named falsifiers
+%%      (JUNO ordering, Sigma m_nu tightening, Michelson-Morley, Michel rho,
+%%      leptogenesis Delta p_LR, deuteron NLO, glueball).
+\emph{Scaffold.} The cumulative falsifier asks what would break the SF-line \emph{as a coordinated unit}, beyond the individual sector falsifiers. Candidate global failure modes: a measured value that forces two sectors to use \emph{incompatible} calibrations of $\Mzero$; a mixing-sector result that cannot be sourced from the single $\chi$ handle; a violation of the no-double-counting ledger at a shared shell.
+
+% ============================================================
+\section{Predictions Still To Be Made}\label{sec:predictions}
+% ============================================================
+%%TODO: pointer to anomaly-targeting papers; the SR/QM/SD foundational
+%%      sectors not yet at flagship class; the open mixing-sector values.
+\emph{Scaffold.} Pointer section to the open predictive targets ($\dCP$ value, CKM derivation, glueball mass, first-principles EM constants) and to the foundational sectors (SR, QM, SD) not yet at flagship class.
+
+% ============================================================
+\section{Discussion}\label{sec:discussion}
+% ============================================================
+%%TODO: what the synthesis implies for the broader unification project;
+%%      foundational implications for the consciousness substrate.
+\emph{Scaffold.}
+
+% ============================================================
+\section{Physical Interpretation}\label{sec:physical}
+% ============================================================
+%%TODO: the CPP mechanism across all sectors --- CPs, DPs, chains, cages,
+%%      SSV fields, DI-bit propagation --- as one coherent substrate story.
+\emph{Scaffold.}
+
+\subsection{CP/GP Signature at This Scale}\label{sec:signature}
+%%TODO REQUIRED (PD-001): connect the synthesis-scale claims to the
+%%      sub-quantum CP/GP foundation. Three paragraphs per the standard.
+\emph{Scaffold --- required subsection (PD-001).}
+
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}\label{sec:mapping}
+% ============================================================
+%%TODO: structural correspondence table --- each SM structure to its CPP
+%%      substrate origin across all six sectors.
+\emph{Scaffold --- correspondence table to follow.}
+
+% ============================================================
+\section{Conclusion}\label{sec:conclusion}
+% ============================================================
+%%TODO: the synthesis result in brief; one calibration, six sectors, the
+%%      consistency family, the two honest caveats.
+\emph{Scaffold.}
+
+\subsection{Swarm-Validation Contribution}\label{sec:swarm}
+%%TODO REQUIRED (PD-001): each §10 consistency theorem that closes on
+%%      shipped inputs is an independently checkable raise of the bar
+%%      against the null hypothesis; the global six-way theorem is the
+%%      threshold artifact. One formulaic paragraph.
+\emph{Scaffold --- required subsection (PD-001).}
+
+\subsection{Problem Status After This Paper}\label{sec:status}
+%%TODO REQUIRED: state the new status of each problem in §\ref{sec:open}.
+\emph{Scaffold --- required subsection.}
+
+% ============================================================
+\section*{Acknowledgements}
+% ============================================================
+The CPP multi-AI review panel (ChatGPT, Grok, Copilot) and the swarm-validation methodology underpin the programme's credibility strategy. %%TODO: full attribution at ship.
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+\begin{thebibliography}{99}
+
+\bibitem[Abshier(2026a)]{abshier2026sf1}
+T.~L. Abshier (2026). \emph{SF-1: The Charged-Lepton Sector from 600-Cell Geometry}. Conscious Point Physics Flagship Paper Series, v1.0.
+
+\bibitem[Abshier(2026b)]{abshier2026sf2}
+T.~L. Abshier (2026). \emph{SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry}. Conscious Point Physics Flagship Paper Series, v1.01.
+
+\bibitem[Abshier(2026c)]{abshier2026sf3}
+T.~L. Abshier (2026). \emph{SF-3: The Quark Sector from 600-Cell Geometry}. Conscious Point Physics Flagship Paper Series, v1.0.
+
+\bibitem[Abshier(2026d)]{abshier2026sf4}
+T.~L. Abshier (2026). \emph{SF-4: Neutrino Sector Unification from 600-Cell Geometry}. Conscious Point Physics Flagship Paper Series, v4.4.
+
+\bibitem[Abshier(2026e)]{abshier2026sf5}
+T.~L. Abshier (2026). \emph{SF-5: Strong-Sector Unification from 600-Cell Geometry}. Conscious Point Physics Flagship Paper Series, v1.0.
+
+\bibitem[Abshier(2026f)]{abshier2026sf6}
+T.~L. Abshier (2026). \emph{SF-6: Electromagnetism Unified}. Conscious Point Physics Flagship Paper Series, v1.0.
+
+\end{thebibliography}
+
+\end{document}
