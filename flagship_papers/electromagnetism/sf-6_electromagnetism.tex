@@ -1,0 +1,391 @@
+% ============================================================
+% SF-6: Electromagnetism Unified --- Classical, Relativistic,
+%       and Quantum Electrodynamics from eDP-Sea Polarization
+% Conscious Point Physics Flagship Paper Series (SF-line)
+% Version history: flagship_papers/electromagnetism/documentation_suite/changelog-sf-6.md
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}{Open Problem}
+
+% --- Standard CPP macros ---
+\newcommand{\phig}{\varphi}            % golden ratio
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\DP}{\mathrm{DP}}
+\newcommand{\CP}{\mathrm{CP}}
+\newcommand{\GP}{\mathrm{GP}}
+
+% --- Paper-specific macros ---
+\newcommand{\ZDC}{\mathrm{ZDC}}
+\newcommand{\eDP}{e\mathrm{DP}}
+\newcommand{\nuC}{\nu_C}
+\newcommand{\Zzero}{Z_0}
+\newcommand{\muz}{\mu_0}
+\newcommand{\epsz}{\epsilon_0}
+\newcommand{\me}{m_e}
+\newcommand{\AM}{\mathrm{AM}}        % Absolute Moment
+\newcommand{\PSR}{\mathrm{PSR}}
+
+\title{\textbf{SF-6: Electromagnetism Unified}\\[6pt]
+{\large Classical, Relativistic, and Quantum Electrodynamics from eDP-Sea Polarization}\\[4pt]
+{\large Conscious Point Physics Flagship Paper Series}\\[4pt]
+{\Large \textbf{Version 0.1 DRAFT --- 21 June 2026}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+\noindent\textbf{Paper type:} Flagship synthesis paper. Establishes that classical Maxwell electromagnetism, special-relativistic photon kinematics, and the phenomena of quantum electrodynamics are three limits of a \emph{single} substrate mechanism --- the polarization of the electron-Dipole-Particle ($\eDP$) sea --- with the photon and inertial mass identified as the traveling and standing forms of one coherent substrate pattern.
+
+The history of physics treats classical electromagnetism (Maxwell, c.\ 1865), special relativity (Einstein, 1905), and quantum electrodynamics (Tomonaga--Schwinger--Feynman, 1940s) as three pillars discovered, formalized, and taught separately; the substrate question --- what \emph{is} the electromagnetic field made of? --- was deferred at each step. SF-6 assembles shipped Conscious Point Physics (CPP) results --- the relativity companion \texttt{c06}, the DP-Sea-Polarization model, the special-relativity emergence paper SR-1, the quantum-mechanics series QM-1 through QM-6, and the electroweak introduction EW-1 --- into a unified account in which (i) both inertial mass and electromagnetic radiation are coherent Zero-point Dipole Chain ($\ZDC$) patterns of the dipole sea, so that the mass--energy relation $E=mc^2$ and the photon-energy relation $E=h\nu$ are the \emph{single} equation $E=\hbar\nuC$ distinguished only by a boundary condition (standing vs.\ traveling pattern); (ii) the photon is a traveling $\ZDC$ pattern with no nucleation center, propagating by phase-coherent reconstruction across the Grid-Point network at the substrate null-trajectory speed $c$, from which delocalization, coherence length, and Newtonian-limit lensing follow without new postulates; (iii) Maxwell's equations emerge as the macroscopic limit of $\eDP$ polarization dynamics, with the magnetic field identified as the rotational ($\mathrm{curl}$) component of the same dipole displacement whose radial component is the electric field --- locking $E$ and $B$ and giving $\muz$ and $\epsz$ a common dipole-stiffness origin and the impedance $\Zzero=\sqrt{\muz/\epsz}$; and (iv) the photoelectric effect, Compton scattering, and double-slit interference arise as quantized $\eDP$-polarization interactions with bound-mode fermions.
+
+\textbf{Two-tier rigor (stated plainly).} SF-6's load-bearing core has two distinct rigor floors and the paper labels every result accordingly. \emph{Tier 1} --- the $E=\hbar\nuC$ unification and the standing/traveling-$\ZDC$ boundary-condition distinction --- is derived in \texttt{c06} ``with no new postulates'' and is companion-grade. \emph{Tier 2} --- the \emph{quantitative} electromagnetic constants $\muz,\epsz,c,\gamma(v)$ from the DP-Sea-Polarization model --- is explicitly a toy model that reaches its targets ``by tuning parameters,'' a lower rigor floor than the zero-parameter family flagships (SF-1/SF-3/SF-5). The paper does not present $\muz,\epsz,c$ as zero-parameter results; it registers \textbf{OPEN-FP-6-CONSTANTS} (first-principles EM constants without parameter tuning) and inherits the gap honestly.
+
+\textbf{The honestly-open pieces and a foundational tension.} SF-6 does \emph{not} derive electromagnetic handedness (the substrate-chirality manifestation entering EM phenomenology), which lives in the chirality arc and is registered as \textbf{OPEN-FP-6-EMHAND}, deferred to the responsible arc exactly as SF-4 defers $\delta_{CP}$ and SF-3 defers the CKM matrix. The Tier-2 DP-Sea model additionally predicts an absolute-frame, velocity-dependent $c_{\mathrm{eff}}(v)$ in tension with the strict Michelson--Morley null; the paper frames this as an honest open tension and a falsifier, and flags the \texttt{c06} resolution route (an SSV-independent geometric $\Zzero$ confining the variation to the density channel) without claiming it closed.
+\end{abstract}
+
+\medskip\noindent
+\textbf{Keywords:} electromagnetism, Maxwell's equations, special relativity, quantum electrodynamics, photon, electric and magnetic field, impedance of free space, speed of light, Lorentz factor, dipole sea, eDP polarization, Zero-point Dipole Chain, $E=\hbar\nu_C$, 600-cell lattice, golden ratio, substrate mechanism, Michelson--Morley, Conscious Point Physics, cross-domain unification, flagship paper.
+
+\bigskip\noindent
+\textbf{Plain Language Summary:}
+Three of the largest ideas in physics --- the electromagnetic field of Maxwell, the relativity of Einstein, and the quantum theory of light and matter --- were each discovered separately and are still taught as separate subjects. This paper proposes that all three are different views of one underlying thing: a sea of tiny paired charges (``dipoles'') that fills space and becomes polarized when charges move through it. In this picture, ordinary matter is a \emph{standing} ripple in that sea and a photon of light is a \emph{traveling} ripple, which is why Einstein's $E=mc^2$ and Planck's $E=h\nu$ turn out to be the very same equation. Maxwell's equations are what the sea looks like at large scales; the magnetic field is just the twisting of the same dipoles whose stretching is the electric field, which is why electricity and magnetism are locked together. The quantum behavior of light --- the photoelectric effect, Compton scattering, the two-slit experiment --- comes from the sea being polarized in discrete chunks. The paper is careful to say which parts are solid and which are still a rough ``toy model'': the unification of mass and light is solid, but the exact numerical values of the electromagnetic constants are not yet derived cleanly, and one prediction is in tension with a famous experiment (Michelson--Morley). Both gaps are flagged honestly rather than hidden.
+
+\bigskip
+\raggedright
+\tableofcontents
+\newpage
+
+% ============================================================
+% SECTION 1: Introduction --- the three-pillar problem
+% ============================================================
+\section{Introduction: The Three-Pillar Problem}\label{sec:intro}
+
+Classical electromagnetism, special relativity, and quantum electrodynamics are three pillars of physics that share a subject --- the electromagnetic field and its quantum, the photon --- yet were built on three different mathematical foundations and are taught as three separate subjects:
+
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Classical electromagnetism.} Maxwell's equations describe the field with perfect quantitative success, but leave open what the field \emph{is}: the nineteenth-century ``luminiferous aether'' was discarded without a replacement substrate, and the constants $\muz$, $\epsz$, $c$ are taken as measured properties of empty space.
+\item \textbf{Special relativity.} Lorentz invariance and the constancy of $c$ are postulated and confirmed, but the \emph{mechanism} of time dilation, length contraction, and the relativistic mass increase is left as kinematic geometry without an underlying medium.
+\item \textbf{Quantum electrodynamics.} The photon is quantized and its interactions are computed to extraordinary precision, but the photon's \emph{constitution} --- what is quantized, and why $E=h\nu$ --- is encoded in the formalism rather than explained.
+\end{enumerate}
+
+The reason for the historical sequence is that each pillar required new mathematical machinery (vector calculus, then tensor analysis, then functional integrals), and at each step the substrate question was deferred rather than answered. This paper assembles a Conscious Point Physics (CPP) account in which a single substrate mechanism --- polarization of the $\eDP$ sea --- answers the substrate question once, and the three pillars emerge from it in three limits (macroscopic, relativistic, quantum). None of the physics here is new derivation: every load-bearing result is inherited from shipped CPP papers and reframed into one coherent electromagnetism narrative. The contribution of SF-6 is the \emph{synthesis}, together with an explicit two-tier rigor accounting that the breadth of the claim demands, and the placement of the electromagnetic sector within the SF-line grand-unification program (SF-7).
+
+\begin{mdframed}
+\textbf{What SF-6 does \emph{not} claim.} SF-6 introduces no new derivation; every result is inherited from \texttt{c06}, the DP-Sea-Polarization model, SR-1, QM-1 through QM-6, and EW-1. In particular: (i) the unification $E=\hbar\nuC$ and the standing/traveling-$\ZDC$ distinction are \emph{companion-grade} (Tier 1), derived in \texttt{c06} ``with no new postulates''; (ii) the \emph{quantitative} electromagnetic constants $\muz,\epsz,c,\gamma(v)$ are \emph{toy-model-grade} (Tier 2), reached in the DP-Sea-Polarization model ``by tuning parameters,'' and are \emph{not} presented as zero-parameter results (registered as OPEN-FP-6-CONSTANTS); (iii) electromagnetic handedness is \emph{not} derived (registered as OPEN-FP-6-EMHAND, deferred to the chirality arc); and (iv) the toy-model $c_{\mathrm{eff}}(v)$ prediction is in genuine tension with the Michelson--Morley null and is framed as an open question and falsifier (Section~\ref{sec:falsifiers}), not glossed.
+\end{mdframed}
+
+CPP derives Standard-Model structure from the geometry of the 600-cell polytope (vertices $V=120$, edges $E=720$, faces $F=1200$, cells $C=600$, vertex coordination $z=12$). Conscious Points (CPs) occupy lattice sites and exchange displacement-increment (DI-bit) information along Space-Stress-Vector ($\SSV$) gradients; the golden ratio $\phig=(1+\sqrt5)/2$ recurs because it is built into the 600-cell metric. The electromagnetic sector draws on the relativity-companion derivation chain (\texttt{c06}, which supplies the $\ZDC$ substrate and the $E=\hbar\nuC$ unification), the DP-Sea-Polarization model (which supplies the toy-model EM constants and the relativistic limit), SR-1 (the special-relativity kinematics bridge), the quantum series QM-1 through QM-6 (the QED phenomena), and EW-1 (Maxwell-equation emergence). The $\eDP$ sea is the substrate; its polarization state is the electromagnetic field.
+
+\subsection{Open Problems Addressed}\label{sec:opens-addressed}
+This paper consolidates and reframes the electromagnetic-sector results and registers two new open problems:
+\begin{itemize}[leftmargin=2em]
+\item It registers \textbf{OPEN-FP-6-CONSTANTS} (the electromagnetic constants $\muz,\epsz,c$ have only a toy-model, parameter-tuned derivation; a first-principles derivation from the 600-cell dipole stiffness is undelivered), to be entered in the frontier registry at ship time via a flagged integration patch (Section~\ref{sec:opens}).
+\item It registers \textbf{OPEN-FP-6-EMHAND} (electromagnetic handedness, the substrate-chirality manifestation entering EM phenomenology, has no closure trajectory and lives in the chirality arc), as an inherited-open deferred to the responsible arc (Section~\ref{sec:opens}).
+\item It identifies the SF-line consistency threads SF-6$\leftrightarrow$SF-2 (the photon is categorically distinct from the cage bosons) and SF-6$\leftrightarrow$all (the $\SSV$/dipole-sea substrate underlies every sector) that SF-6 unlocks for the SF-7 $\S10$ consistency-theorem family (Section~\ref{sec:discussion}).
+\end{itemize}
+
+% ============================================================
+% SECTION 2: The eDP-sea / ZDC substrate
+% ============================================================
+\section{The $\eDP$-Sea ($\ZDC$) Substrate}\label{sec:substrate}
+
+The dipole sea consists of paired Dipole Particles (DPs) filling space in a random, unpolarized state at rest. The organizational unit of both mass and radiation is the Zero-point Dipole Chain.
+
+\begin{definition}[Zero-point Dipole Chain ($\ZDC$)]
+A Zero-point Dipole Chain is a coherent alignment of Dipole Particles along a common direction, sustained by the mutual Coulombic attraction between adjacent DPs and stabilized by the Zitterbewegung (ZBW) oscillation of each constituent DP. Each $\ZDC$ link carries one Planck-scale action quantum $\hbar = E_P t_P$.
+\end{definition}
+
+All four DP types (eDP, qDP, hybrid A, hybrid B) participate equally in $\ZDC$ formation; no differential coupling distinguishes the types at the CP charge level, so the $\ZDC$ is a universal organizational structure (\texttt{c06}, $\S2$). The electromagnetic sector is carried by the electron-DP ($\eDP$) component of the sea.
+
+A $\ZDC$ pattern oscillates at the Compton-scale frequency
+\begin{equation}
+\nuC = \frac{E_{\ZDC}}{\hbar},
+\label{eq:nuC}
+\end{equation}
+where $E_{\ZDC}$ is the energy stored in the pattern. This realizes a two-level frequency hierarchy: Planck-scale DP oscillation (Level 1) aggregates into Compton-scale $\ZDC$ pattern oscillation (Level 2). Equation~\eqref{eq:nuC} is the hinge of the whole paper: it is the same relation whether the pattern stands (mass) or travels (light), and the next section shows that this single fact unifies $E=mc^2$ with $E=h\nu$.
+
+% ============================================================
+% SECTION 3: The unifying equation E = hbar nu_C
+% ============================================================
+\section{The Unifying Equation: $E=\hbar\nuC$}\label{sec:unification}
+
+\textbf{(Tier 1 --- companion-grade.)} Both inertial mass and electromagnetic radiation are coherent $\ZDC$ patterns of the dipole sea. The single energy relation is
+\begin{equation}
+\boxed{\,E = \hbar\nuC\,}
+\label{eq:unification}
+\end{equation}
+and the distinction between the two cases is \emph{purely a boundary condition}: the presence or absence of an unpaired CP nucleation center.
+
+\paragraph{Mass = standing $\ZDC$ pattern.} A massive particle's $\ZDC$ pattern is pinned by the unpaired CP at its nucleation center, which emits its type-and-polarity $\SSV$ signal at every Absolute Moment tick, continuously re-nucleating the cloud against Brownian disruption. The result is a driven radial standing wave reflecting between the inner CP-Exclusion boundary and the outer thermal radius $r_{\mathrm{th}} = \hbar/(2mc)$, at which thermal disruption overcomes $\ZDC$ stiffening and the chains break --- defining the particle's effective radius and hence its mass. The standing-wave resonance frequency is $\nuC = mc^2/\hbar$, so
+\begin{equation}
+mc^2 = \hbar\nuC \qquad (\text{nucleation center present}).
+\label{eq:massZDC}
+\end{equation}
+
+\paragraph{Photon = traveling $\ZDC$ pattern.} A photon is a coherent $\ZDC$ pattern with \emph{no} unpaired CP nucleation center; it therefore propagates rather than stands. At emission, the instantaneous spatial pattern of DP alignment, density, and phase is imprinted into the outgoing Grid-Point ($\GP$) network and advanced one $\PSR$ shell per Absolute Moment at speed $c$. The $\ZDC$ chains are oriented transverse to propagation, mirroring the transverse electromagnetic field. The Compton frequency of the photon is simply its electromagnetic frequency, $\nuC = \nu$, so
+\begin{equation}
+h\nu = \hbar\nuC \qquad (\text{no nucleation center}).
+\label{eq:photonZDC}
+\end{equation}
+
+\paragraph{The unification.} Equations~\eqref{eq:massZDC} and~\eqref{eq:photonZDC} are the \emph{same} Equation~\eqref{eq:unification} with the two boundary conditions, so $E=mc^2$ and $E=h\nu$ are one physical statement. The relativistic energy--momentum relation connects the limits: $E^2 = (mc^2)^2 + (pc)^2$ gives $E=pc=h\nu$ for the photon ($m=0$) and $E=mc^2$ for a massive particle at rest ($p=0$). This is the conceptually broadest and most rigorous result in the paper; it requires no fitted parameter and no new postulate.
+
+\begin{table}[H]
+\centering
+\caption{The boundary-condition dichotomy. One $\ZDC$ substrate, two patterns, one energy relation.}
+\label{tab:unification}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Entity} & \textbf{$\ZDC$ pattern} & \textbf{$E=\hbar\nuC$} \\
+\midrule
+Massive particle & standing wave, pinned by unpaired CP & $mc^2=\hbar\nuC$, \ $\nuC=mc^2/\hbar$ \\
+Photon & traveling wave, no nucleation center & $h\nu=\hbar\nuC$, \ $\nuC=\nu$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% SECTION 4: Classical limit --- Maxwell from eDP polarization
+% ============================================================
+\section{The Classical Limit: Maxwell from $\eDP$ Polarization}\label{sec:classical}
+
+At macroscopic scales the polarization dynamics of the $\eDP$ sea reduce to Maxwell's equations (EW-1), with the speed of light $c$ identified as the substrate null-trajectory speed --- the one shell of $\PSR$ broadcast advanced per Absolute Moment. The electric and magnetic fields are not independent: they are two components of a single dipole displacement.
+
+\paragraph{$E$ and $B$ from one dipole motion.} A moving charge radially polarizes the surrounding DPs; the radial pole displacement \emph{is} the electric field. The charge's motion additionally swings each DP's like-pole around an axis, and this rotation \emph{is} the magnetic field: $B$ is the curl of the same polarization pattern whose radial part is $E$ (\texttt{c06}, $\S4$; physical-cartoon patch). There is no separate magnetic substance; $E$ and $B$ are locked because they are the radial and rotational projections of one dipole configuration. Consequently $\muz$ and $\epsz$ are not two independent constants of empty space but two expressions of a single $\eDP$ stiffness, related to $c$ by the Maxwell relation
+\begin{equation}
+c = \frac{1}{\sqrt{\muz\epsz}}, \qquad \Zzero = \sqrt{\frac{\muz}{\epsz}},
+\label{eq:maxwellrel}
+\end{equation}
+where $\Zzero$ is the impedance of free space, which appears again in Section~\ref{sec:quantum} as the discharge load for photon emission.
+
+\paragraph{A structural conjecture worth flagging.} \texttt{c06}'s open-problem analysis suggests that $\Zzero$ (the \emph{ratio} $\sqrt{\muz/\epsz}$) may be a \emph{pure 600-cell geometric constant, independent of the $\SSV$-variable dipole stiffness}, because the magnetic component is the curl of the polarization pattern over the fixed, eternal $\GP$ network. If so, a change in $\SSV$ moves only the \emph{product} $\muz\epsz=1/c^2$ --- so $c_{\mathrm{eff}}$ varies with substrate density (reproducing gravitational light-bending) --- while leaving the ratio, and hence the fine-structure constant $\alpha$, fixed. This conjecture is the natural bridge between the EM constants here and the gravitational density-dependence of $c$, and it is the route by which Section~\ref{sec:falsifiers} addresses the Michelson--Morley tension. It is not derived in this paper; it is the substance of OPEN-FP-6-CONSTANTS.
+
+% ============================================================
+% SECTION 5: Relativistic limit --- gamma(v) and the photon null trajectory
+% ============================================================
+\section{The Relativistic Limit: $\gamma(v)$ and the Photon Null Trajectory}\label{sec:relativistic}
+
+\textbf{(Tier 2 --- toy-model-grade; the caveat is mandatory.)} The DP-Sea-Polarization model treats space as a ``silly-putty'' medium: transparent and fluid at low velocities, viscous at moderate speeds, increasingly rigid at high velocities. An unpaired CP moving at absolute velocity $v$ relative to the local sea rest frame polarizes the DPs with
+\begin{equation}
+P(v,r) = \tanh\!\left(\frac{v}{v_0(r)}\right), \qquad v_0(r) = v_0\left(\frac{r}{r_0}\right)^{\!s}, \quad v_0\approx c,
+\label{eq:Pvr}
+\end{equation}
+strongest at small $r$ and weakening radially (the exponent $s>0$ is an internal model parameter, written here to avoid collision with the Lorentz factor). Integrating the polarization response over distance shells yields an effective inertial mass that, \emph{in the high-$v$ limit and by tuning the model parameters}, converges to
+\begin{equation}
+m_{\mathrm{eff}}(v) \to m_0\,\gamma(v), \qquad \gamma(v) = \frac{1}{\sqrt{1-(v/c)^2}}.
+\label{eq:gamma}
+\end{equation}
+
+\begin{mdframed}
+\textbf{Rigor caveat (Tier 2).} Equation~\eqref{eq:gamma} is reached in the DP-Sea-Polarization model \emph{``by tuning parameters''} (e.g.\ $P(v,r)\approx (v/c)\,\gamma(v)\,f(r/r_0)$); it is a toy-model convergence, \emph{not} a theorem-grade derivation. The constants $\muz,\epsz,c$ of Section~\ref{sec:classical} share this floor. SF-6 therefore does \emph{not} present the relativistic limit or the EM constants at the zero-parameter rigor of SF-1/SF-3/SF-5, and registers OPEN-FP-6-CONSTANTS (Section~\ref{sec:opens}).
+\end{mdframed}
+
+The relativistic kinematics --- time dilation and length contraction from $\SSV$ behavior in the dipole sea --- are supplied at higher rigor by SR-1, which provides the kinematic bridge; the photon's massless null trajectory falls out of the same construction as the $m=0$ boundary condition of Section~\ref{sec:unification} (no nucleation center $\Rightarrow$ no rest frame $\Rightarrow$ propagation at $c$). The silly-putty picture supplies the \emph{mechanism} for the relativistic mass increase; SR-1 supplies the kinematic scaffolding; together they place special relativity as the relativistic limit of one polarizable substrate.
+
+% ============================================================
+% SECTION 6: Quantum limit --- QED phenomena
+% ============================================================
+\section{The Quantum Limit: QED Phenomena}\label{sec:quantum}
+
+The quantum-electrodynamic phenomena emerge as quantized $\eDP$-polarization interactions with bound-mode fermions (QM-1 through QM-6). Three mechanisms carry the section.
+
+\paragraph{Propagation by constructive summation.} A photon is not a discrete object in transit between Grid Points; it is a phase-coherent $\SSV$ distribution across the $\GP$ network, reconstructed each Absolute Moment by the vector summation of DI-bit strings from all contributing GPs via the standard Perceive--Compute--Displace (PCD) cycle (\texttt{c06}, $\S4$). Because all contributing signals originated from the same emission event and have propagated in phase, their sum faithfully reconstructs the pattern. Three phenomena follow \emph{without new postulates}: (i) \textbf{delocalization} --- the photon is the distributed pattern, so it can traverse both arms of a double-slit apparatus simultaneously; (ii) \textbf{coherence} --- phase coherence is preserved because every contributing string encodes the same emission event, with coherence length set by the emission duration; (iii) \textbf{Newtonian-limit lensing} --- near a mass the inner-limb GPs have higher $\SSV$ and shorter $\PSR$, so the reconstructed pattern deflects (full GR lensing requires the curvature companion).
+
+\paragraph{Emission as $\ZDC$ discharge through $\Zzero$.} When an orbital electron loses resonance with its shell's standing $\ZDC$ pattern, the stored energy discharges along the electron's instantaneous momentum vector into a transverse traveling $\ZDC$ pattern --- the photon --- through the impedance of free space $\Zzero=\sqrt{\muz/\epsz}$ acting as the discharge load. The discharge is an LC-type ringdown (orbital reservoir as source, $\Zzero$ as load), so the photon envelope is a damped oscillation, not a single cycle, with the number of cycles set by the circuit $Q$-factor. A quantitative consequence: higher-energy transitions discharge faster (lower $Q$, shorter envelope), predicting natural linewidth $\Delta\nu \propto \nu^3$, consistent with the Einstein $A$-coefficient for spontaneous emission.
+
+\paragraph{Absorption as pattern-mode overlap.} Absorption is the transfer of the photon's traveling $\ZDC$ pattern into the natural $\ZDC$ resonance modes of the absorber when their overlap is sufficient. Sharp atomic lines (discrete orbital resonances), broad molecular bands (dense overlapping mode spectra), and bulk thermalization (mode-cascade into Brownian motion) are three regimes of one mechanism. The overlap integral between the photon's pattern and the absorber's modes is the CPP representation of the quantum-mechanical transition matrix element $|\langle f|H'|i\rangle|^2$; computing it from the 600-cell geometry and the DP interaction rules is a well-defined future project (a first-principles route to molecular absorption spectra). The photoelectric effect (a threshold mode-overlap with a bound electron freed above the work function) and Compton scattering (partial momentum transfer in a traveling-pattern collision) are the same machinery applied to free-versus-bound final states.
+
+% ============================================================
+% SECTION 7: The photon versus the cage bosons
+% ============================================================
+\section{The Photon versus the Cage Bosons}\label{sec:photon-vs-cage}
+
+The photon's substrate identity draws the cleanest boundary in the SF-line. The electroweak cage bosons of SF-2 --- $W^\pm$, $W^0$, $Z$, $H$ --- are \emph{cage-bound resonances}: geometric structures occupying definite distance shells of the 600-cell (the $W$ bracelet with $D_6$ stabilizer, the $Z$ icosahedron, the $H$ dodecahedron). The photon is \emph{not} a cage: it is a traveling polarization quantum of the $\eDP$ sea, with no nucleation center and no bound shell. The two are categorically distinct particle classes on the same substrate.
+
+This is a no-double-counting clause, not a stylistic remark: no particle is assigned to both mechanisms, so SF-2's cage-boson family and SF-6's photon do not compete for the same degrees of freedom. It is also the cleanest of SF-6's contributions to the SF-7 $\S10$ consistency family (Section~\ref{sec:discussion}): the electroweak and electromagnetic sectors partition the boson content of the theory without overlap.
+
+% ============================================================
+% SECTION 8: Inherited-open problems
+% ============================================================
+\section{Inherited-Open Problems}\label{sec:opens}
+
+SF-6's breadth makes its open ledger larger than the family flagships', and the paper states each item plainly rather than smoothing it.
+
+\begin{openproblem}[OPEN-FP-6-CONSTANTS]
+The electromagnetic constants $\muz,\epsz,c$ (and the relativistic $\gamma(v)$) have only a toy-model, parameter-tuned derivation in the DP-Sea-Polarization model. A first-principles derivation expressing $\muz,\epsz$ in terms of the 600-cell dipole stiffness and the shell-broadcast speed --- in particular, a proof of the conjecture that the impedance $\Zzero=\sqrt{\muz/\epsz}$ is an $\SSV$-independent pure geometric constant (Section~\ref{sec:classical}) --- is undelivered. SF-6 inherits this as an open problem, to be entered in the frontier registry at ship time.
+\end{openproblem}
+
+\begin{openproblem}[OPEN-FP-6-EMHAND]
+Electromagnetic handedness --- the substrate-chirality manifestation entering electromagnetic phenomenology --- is not derived in SF-6. It is a manifestation of the substrate-chirality primitive owned by the chirality arc, where it currently has no closure trajectory. SF-6 is a \emph{downstream consumer}: when the chirality arc closes this manifestation, SF-6 can promote OPEN-FP-6-EMHAND from inherited-open to closed. The chirality arc should track SF-6 as a downstream dependency.
+\end{openproblem}
+
+\noindent The OPEN-FP-6-EMHAND posture is structurally parallel to SF-4's open neutrino $\delta_{CP}$ and SF-3's open CKM matrix --- a parallel of posture, not an equivalence of difficulty: each fermion/EM flagship derives its sector's core while deferring one mixing-or-handedness piece to the arc responsible for it. Stating the parallel explicitly strengthens the SF-line's uniform ``sector core derived, one piece deferred'' posture.
+
+% ============================================================
+% SECTION 9: Conditional accounting and falsifiers
+% ============================================================
+\section{Conditional Accounting and Falsifiers}\label{sec:falsifiers}
+
+\paragraph{Rigor ledger.} \emph{Tier 1 (companion-grade, no fitted parameters):} the $E=\hbar\nuC$ unification, the standing/traveling-$\ZDC$ boundary-condition distinction, and the constructive-summation consequences (delocalization, coherence, Newtonian lensing). \emph{Tier 2 (toy-model, parameter-tuned):} the quantitative constants $\muz,\epsz,c$ and the relativistic $\gamma(v)$ from the DP-Sea-Polarization model. The paper labels every quantitative claim by tier; no Tier-2 result is presented as a zero-parameter prediction.
+
+\paragraph{Inherited-open / conditional.}
+\begin{itemize}[leftmargin=2em]
+\item \textbf{OPEN-FP-6-CONSTANTS:} first-principles EM constants without parameter tuning, including the $\SSV$-independent-$\Zzero$ conjecture (Section~\ref{sec:opens}).
+\item \textbf{OPEN-FP-6-EMHAND:} electromagnetic handedness, deferred to the chirality arc (Section~\ref{sec:opens}).
+\item Emission envelope: the exact photon coherence length requires solving the LC discharge dynamics explicitly (\texttt{c06} open problem); the $\Delta\nu\propto\nu^3$ scaling is in hand, the envelope shape is not.
+\end{itemize}
+
+\paragraph{The Michelson--Morley tension (handled honestly).} The Tier-2 DP-Sea model yields an effective light speed of the form $c_{\mathrm{eff}}(v)\approx c\,(1-\lambda\,P(v)^2/2)$ with $\lambda\ll1$, i.e.\ an \emph{absolute-frame, velocity-dependent} signature that challenges the strict Michelson--Morley null result. This is a genuine tension with a foundational experiment and is \emph{not} glossed. The candidate resolution route, flagged but not claimed closed, is the Section~\ref{sec:classical} conjecture that $\Zzero$ is an $\SSV$-independent geometric constant: if the variable substrate response moves only the \emph{product} $\muz\epsz=1/c^2$ (a density-dependent channel, giving gravitational light-bending) and not the \emph{velocity}-dependent channel at first order, then the absolute-frame signature is suppressed into the density channel where varying-constants bounds are not yet violated. Whether the velocity-dependent residual survives at observable magnitude is the open question; until OPEN-FP-6-CONSTANTS is closed, the tension stands as stated.
+
+\paragraph{Falsifiers.}
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Absolute-frame signature.} A confirmed velocity-dependent $c_{\mathrm{eff}}(v)$ at the magnitude the uncorrected Tier-2 model predicts would either confirm the silly-putty mechanism or, if absent at improved precision below the model's floor, falsify the toy-model form of Section~\ref{sec:relativistic} and force the $\SSV$-independent-$\Zzero$ resolution.
+\item \textbf{$E$--$B$ lock.} Any demonstration that $\muz$ and $\epsz$ do not share a single $\eDP$-stiffness origin --- e.g.\ an independent variation of the ratio $\sqrt{\muz/\epsz}$ decoupled from the product $\muz\epsz$ in a controlled substrate-density gradient --- falsifies the Section~\ref{sec:classical} identification.
+\item \textbf{Natural linewidth scaling.} A measured spontaneous-emission natural linewidth departing materially from $\Delta\nu\propto\nu^3$ across transitions falsifies the LC-discharge emission mechanism (Section~\ref{sec:quantum}).
+\item \textbf{Photon as cage.} Any evidence that the photon occupies a bound 600-cell shell (a cage resonance like the SF-2 bosons) rather than propagating as a sea polarization quantum falsifies the categorical distinction of Section~\ref{sec:photon-vs-cage}.
+\end{enumerate}
+
+% ============================================================
+% SECTION 10: Physical interpretation
+% ============================================================
+\section{Physical Interpretation}\label{sec:interp}
+
+In the CPP ontology the electromagnetic field is the polarization state of the $\eDP$ sea. A static charge holds a frozen radial polarization (the Coulomb field); a moving charge adds a rotational component (the magnetic field); a radiating charge launches a self-sustaining transverse $\ZDC$ pattern (the photon). Mass and light are the standing and traveling forms of the one $\ZDC$ substrate, so the deepest content of the section --- that $E=mc^2$ and $E=h\nu$ are one equation --- is an ontological statement before it is an algebraic one: there is no mass/radiation dichotomy at the substrate level, only a boundary condition.
+
+\subsection{CP/GP Signature at This Scale}\label{sec:signature}
+
+\textbf{Load-bearing axioms.} The electromagnetic-sector account rests on the dipole-sea axiom (supplying the polarizable $\eDP$ medium), the $\SSV$/DI-bit-propagation axiom (supplying the PCD cycle, the shell broadcast, and the null-trajectory speed $c$), and the Absolute-Moment axiom (supplying the discrete tick that advances the traveling pattern one $\PSR$ shell). The 600-cell topology axiom enters through the conjectured geometric origin of $\Zzero$ (Section~\ref{sec:classical}).
+
+\textbf{Visible-versus-smoothed discreteness.} The lattice discreteness is \emph{visible} in the per-Absolute-Moment, per-$\PSR$-shell advance of the traveling pattern and in the discrete-mode structure of atomic absorption lines. It is \emph{smoothed} in the macroscopic Maxwell limit, where the granular DI-bit summation averages to the continuous field equations, and in the toy-model EM constants, where the substrate response is represented by tuned continuum functions $P(v,r)$ rather than explicit lattice sums.
+
+\textbf{Macroscopic shadow.} The empirical facts that light has one speed, that electricity and magnetism are locked into a single field, and that mass and radiation interconvert ($E=mc^2$, pair production, annihilation) are, within the CPP ontology, the macroscopic shadow of the sub-quantum claim that all three are aspects of one polarizable dipole sea. What conventional physics records as three separate pillars is, in CPP, one substrate seen in three limits.
+
+% ============================================================
+% SECTION 11: CPP-to-conventional mapping
+% ============================================================
+\section{CPP-to-Conventional-Physics Mapping}\label{sec:mapping}
+
+\begin{table}[H]
+\centering
+\caption{Structural correspondence between the CPP electromagnetic mechanism and the conventional description. The mapping is at the level of degrees of freedom, symmetry, and observable, not a literal identity --- CPP operates at finer granularity than classical field theory or perturbative QED.}
+\label{tab:mapping}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+\textbf{CPP mechanism} & \textbf{Conventional physics} \\
+\midrule
+Radial $\eDP$ polarization around a charge & The electric field $E$ \\
+Rotational ($\mathrm{curl}$) component of the same polarization & The magnetic field $B$ \\
+Common $\eDP$ stiffness setting both components & $\muz$, $\epsz$, and $\Zzero=\sqrt{\muz/\epsz}$ \\
+Substrate null-trajectory speed (one $\PSR$ shell per Absolute Moment) & The speed of light $c$ \\
+Standing $\ZDC$ pattern (nucleation center present) & Inertial mass; $E=mc^2$ \\
+Traveling $\ZDC$ pattern (no nucleation center) & The photon; $E=h\nu$ \\
+Quantized $\eDP$-polarization interaction with bound fermions & Photoelectric effect, Compton scattering, QED \\
+Pattern-mode overlap integral & The transition matrix element $|\langle f|H'|i\rangle|^2$ \\
+DP-Sea viscous response (toy model) & The Lorentz factor $\gamma(v)$ \\
+(undelivered) substrate-chirality manifestation in EM & Electromagnetic handedness \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% SECTION 12: Discussion --- SF-line placement
+% ============================================================
+\section{Discussion: SF-line Placement and the $\S10$ Consistency Threads}\label{sec:discussion}
+
+SF-6 is the broadest-reach paper in the SF-line: classical EM is in every undergraduate curriculum, special relativity in every modern one, and QED in every graduate curriculum, so the three-pillar unification reaches all three audiences at once. Beyond its breadth, SF-6 supplies cross-sector consistency threads for the SF-7 grand-unification paper, each following the three-clause consistency template (single shared source; no independent calibration; no conflicting prediction).
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{SF-6 $\leftrightarrow$ SF-2.} The photon (SF-6, an $\eDP$-polarization quantum) and the cage bosons $W/Z/H$ (SF-2, cage resonances) are categorically distinct particle classes on the same substrate. Consistency clause: a clean no-double-counting partition of the boson content, with no particle assigned to both mechanisms (Section~\ref{sec:photon-vs-cage}).
+\item \textbf{SF-6 $\leftrightarrow$ all.} The $\SSV$ and dipole-sea primitives underlie every sector; SF-6 makes the electromagnetic-field substrate explicit, which consistency-checks the $\SSV$ usage across SF-1/SF-2/SF-3/SF-4/SF-5. Consistency clause: one substrate, used identically in every flagship, with the EM sector now reading it as the polarization field.
+\end{itemize}
+
+\noindent A genuine cross-arc dependency, distinct from the $\S10$ threads, is also surfaced for SF-7's bookkeeping: SF-6's OPEN-FP-6-EMHAND consumes the chirality arc's electromagnetic-handedness manifestation. SF-6 awaits that closure; it does not produce it.
+
+% ============================================================
+% SECTION 13: Conclusion
+% ============================================================
+\section{Conclusion}\label{sec:conclusion}
+
+Classical Maxwell electromagnetism, special-relativistic photon kinematics, and the phenomena of quantum electrodynamics are three limits of one substrate mechanism --- polarization of the $\eDP$ sea. The companion-grade core of the claim is the boundary-condition unification $E=\hbar\nuC$, which makes $E=mc^2$ and $E=h\nu$ a single equation distinguished only by the presence or absence of a nucleation center, and from which the photon's delocalization, coherence, and Newtonian-limit lensing follow without new postulates. The quantitative electromagnetic constants remain at toy-model rigor (OPEN-FP-6-CONSTANTS), electromagnetic handedness is deferred to the chirality arc (OPEN-FP-6-EMHAND), and the toy-model's absolute-frame $c_{\mathrm{eff}}(v)$ stands in honest tension with Michelson--Morley pending the $\SSV$-independent-$\Zzero$ resolution. SF-6 thus ships its conceptual unification cleanly while flagging --- rather than hiding --- the rigor floor that its breadth exposes.
+
+\subsection{Swarm-Validation Contribution}\label{sec:swarm}
+
+SF-6 contributes to the cumulative CPP swarm the companion-grade unification $E=\hbar\nuC$ (one equation for mass and light), the locked $E$--$B$ field with a common $\eDP$-stiffness origin for $\muz,\epsz,\Zzero$, the constructive-summation account of delocalization/coherence/Newtonian-lensing, and the $\Delta\nu\propto\nu^3$ natural-linewidth scaling --- all from the same unchanged axiom stack, with the Tier-2 EM constants explicitly excluded from the zero-parameter count. (The cumulative programme counter is updated in \texttt{predictions.md} at ship time via a flagged integration patch, with the two-tier rigor labeling preserved.)
+
+\subsection{Problem Status After This Paper}\label{sec:status}
+
+\begin{itemize}[leftmargin=2em]
+\item Three-pillar unification (EM $+$ SR $+$ QED from $\eDP$ polarization): \textbf{ASSEMBLED} at companion grade for the $E=\hbar\nuC$ core.
+\item \textbf{NEW:} OPEN-FP-6-CONSTANTS registered (toy-model EM constants; first-principles derivation undelivered).
+\item \textbf{NEW:} OPEN-FP-6-EMHAND registered (electromagnetic handedness; deferred to the chirality arc as a downstream-consumer dependency).
+\item Michelson--Morley tension recorded as an open question and falsifier, with the $\SSV$-independent-$\Zzero$ resolution route flagged.
+\item SF-7 $\S10$ threads SF-6$\leftrightarrow$SF-2 and SF-6$\leftrightarrow$all identified and ready for the consistency-theorem family.
+\end{itemize}
+
+% ============================================================
+% ACKNOWLEDGEMENTS
+% ============================================================
+\section*{Acknowledgements}
+
+This paper is a synthesis and reframing of shipped CPP results --- the relativity companion \texttt{c06}, the DP-Sea-Polarization model, SR-1, QM-1 through QM-6, and EW-1 --- into a unified electromagnetism account; it introduces no new derivation. Thomas Lee Abshier (ND) conceived the Conscious Point Physics program, the 600-cell substrate hypothesis, the $\ZDC$ mechanism, and the silly-putty DP-Sea polarization picture underlying the relativistic limit. Claude Opus (Anthropic) performed the corpus survey, the two-tier rigor accounting, and the drafting. The DP-Sea-Polarization toy model was developed with analytical support from Grok (xAI). The multi-AI review panel (ChatGPT, Grok, Copilot) is to review the paper across the standard SF-line review rounds. The 600-cell lattice hypothesis (AXIM-2) and the dipole-sea axiom remain axioms. Repository: \url{https://github.com/Hyperphysics-Institute/CPP}; OSF: \url{https://osf.io/9dfya/} (DOI 10.17605/OSF.IO/JXE8D).
+
+\paragraph{Data and code availability.} The companion-grade (Tier-1) identities quoted in this paper --- the $E=\hbar\nuC$ consistency of $mc^2$ and $h\nu$, the Maxwell relation $c=1/\sqrt{\muz\epsz}$, and the impedance $\Zzero=\sqrt{\muz/\epsz}$ --- are checked against their CODATA values by a standalone verifier, \href{https://github.com/Hyperphysics-Institute/CPP/blob/main/flagship_papers/electromagnetism/code/1600_verify_sf6_core.py}{\texttt{flagship\_papers/electromagnetism/code/1600\_verify\_sf6\_core.py}}, which asserts each identity to within numerical tolerance so any drift between code and paper fails an assertion. The Tier-2 toy-model constants are \emph{not} asserted as derivations; the verifier only confirms the inter-constant relations that Tier 1 depends on. The script runs on the Python standard library alone, with no external data files. A thin asserted reproducibility notebook will be added at deposit time, following the SF-3/SF-5 pattern.
+
+% ============================================================
+% BIBLIOGRAPHY (inline; master entry abshier2026sf6 added at ship)
+% ============================================================
+\begin{thebibliography}{99}
+
+\bibitem{abshier_c06} T.~L.~Abshier, \emph{Dipole-Chain Patterns as the Common Substrate of Mass and Electromagnetism}, SR Companion c06, Hyperphysics Institute (2026).
+\bibitem{abshier_dpsea} T.~L.~Abshier, \emph{The Silly-Putty Analogy: Velocity-Dependent Polarization of the Dipole-Particle Sea} (with analytical support from Grok, xAI), Hyperphysics Institute (2026).
+\bibitem{abshier_sr1} T.~L.~Abshier et al., \emph{SR-1: The Emergence of Special Relativity from the Dipole Sea}, Hyperphysics Institute (2026).
+\bibitem{abshier_qm} T.~L.~Abshier et al., \emph{The Quantum-Mechanics Series QM-1 through QM-6}, Hyperphysics Institute (2026).
+\bibitem{abshier_ew1} T.~L.~Abshier et al., \emph{EW-1: Electroweak Introduction --- Maxwell's Equations from the CPP Substrate}, Hyperphysics Institute (2026).
+\bibitem{abshier_sf2} T.~L.~Abshier and {Claude Opus}, \emph{SF-2: Electroweak Cage-Boson Unification from 600-Cell Geometry}, v1.01, Hyperphysics Institute (2026).
+\bibitem{einstein1905} A.~Einstein, \emph{Zur Elektrodynamik bewegter K\"orper}, Ann.\ Phys.\ \textbf{322}, 891 (1905).
+\bibitem{maxwell1865} J.~C.~Maxwell, \emph{A Dynamical Theory of the Electromagnetic Field}, Phil.\ Trans.\ R.\ Soc.\ \textbf{155}, 459 (1865).
+\bibitem{michelson1887} A.~A.~Michelson and E.~W.~Morley, \emph{On the Relative Motion of the Earth and the Luminiferous Ether}, Am.\ J.\ Sci.\ \textbf{34}, 333 (1887).
+
+\end{thebibliography}
+
+\end{document}
