@@ -1,7 +1,7 @@
 # SF-6: Electromagnetism Unified — Classical, Relativistic, Quantum from eDP Sea Polarization
 
-**Status:** Planned. Synthesis paper drawing on EW-1 through EW-5 + SR-1 + QM-1 through QM-6; corpus-rich with broad audience appeal.
-**Estimated sessions to v1.0 SHIP:** 5–8 (after pre-survey of EW/SR/QM corpus relevant to EM phenomena).
+**Status:** **v0.1 DRAFT** (Patch 1600, 1600-band window). Synthesis paper built from the corrected spine — **c06 + DP-Sea-Polarization-Model** + SR-1 + QM-1 through QM-6 + EW-1 (see corrected source map below; the old "EW-1 through EW-5" framing was stale). Corpus-rich with broad audience appeal.
+**Estimated sessions to v1.0 SHIP:** 6–9 (breadth-driven; the spine is shipped, the lift is assembly + two-tier rigor framing + multi-AI review).
 **Inclusion criterion fit:** (3) cross-domain unification — synthesizes classical Maxwell electromagnetism, special-relativistic photon kinematics, and quantum-electrodynamic phenomena (photoelectric, Compton, double-slit) under a single substrate mechanism (eDP-sea polarization); (4) bridge to recognized mathematics — Maxwell's equations, Lorentz invariance, gauge structure of QED, all derived from a discrete substrate foundation.
 
 ---
@@ -20,17 +20,18 @@ The headline argument: classical EM, SR, and QED are typically taught as separat
 
 ## Source material
 
-| Source paper | Content drawn |
-|--------------|---------------|
-| EW-1 | Maxwell-equation derivation from CPP substrate primitives |
-| EW-3 | Photon as eDP polarization quantum |
-| EW-5 | Speed of light from substrate null-trajectory speed |
-| (Other EW-N relevant to EM phenomena) | Pre-survey will identify |
-| SR-1 | Special relativity from SSV in the dipole sea (A grade per memory) — provides the relativistic-kinematics bridge |
-| QM-1 through QM-6 | Quantum mechanics derivations including photon-related quantum phenomena |
-| SD series (where relevant) | Substrate-foundation grounding |
+**Source-map correction (Patch 1601).** The original table cited **EW-3 = "photon as eDP polarization quantum"** and **EW-5 = "speed of light from substrate null-trajectory speed."** Both are stale: the actual EW-3 is the Z boson and EW-5 is electroweak unification (the legacy EW series, largely superseded by SF-2 for the cage bosons). The real EM-substrate material lives in the relativity companion **c06** and the **DP-Sea-Polarization model**. The pre-survey (`sf-6_outline.md`, Patch 1305) flagged this; the corrected table below is the one SF-6 v0.1+ is actually built from.
 
-The boundary between SF-6 and the source series: SF-6 does not duplicate EW-1's Maxwell derivation or QM-3's photoelectric derivation; it presents them in unified form with the cross-domain narrative that no single series paper carries on its own.
+| Real source | Content drawn | Status |
+|-------------|---------------|--------|
+| `series_relativity/SR_companion_papers/c06_DP_chaining_as_mass_and_EM_substrate/c06_dipole_chain_patterns_as_mass_EM_subtrate.tex` | **The spine.** Mass = standing ZDC pattern, photon = traveling ZDC pattern (boundary-condition distinction); unifies `E=mc²` and `E=hν` as `E=ℏν_C`; impedance `Z₀=√(μ₀/ε₀)`; B as the curl of the polarization whose radial part is E (μ₀,ε₀ share one eDP stiffness); constructive-summation propagation → delocalization/coherence/Newtonian lensing; emission via Z₀ (Δν∝ν³); absorption as pattern-mode overlap; **"no new postulates"** | shipped (companion) |
+| `series_foundations/dp-sea-polarization/DP-Sea-Polarization-Model.tex` | DP-Sea polarization responding to CP motion; derives `μ₀, ε₀, c`, SSV, and `γ(v)` in the relativistic limit — **toy-model rigor ("by tuning parameters"); OPEN-FP-6-CONSTANTS** | shipped (essay/model) |
+| `series_relativity/papers/SR-1_special_relativity_emergence.tex` | Special relativity from SSV in the dipole sea — the relativistic-kinematics bridge (higher rigor than the DP-Sea toy model) | shipped |
+| QM-1 through QM-6 | QED-relevant quantum phenomena (photoelectric, Compton, double-slit); QM-5 second quantization (bosonic occupation of 600-cell modes) | shipped |
+| EW-1 (`series_electroweak/papers/EW-1_electroweak_introduction.tex`) | Maxwell-equation derivation from CPP substrate primitives (legacy EW; verify not superseded by SF-2 framing) | shipped (legacy EW) |
+| TP-1 (`series_phenomena/quantum_optics/photon_truncation/TP-1/`) | Consistency thread (not a source): photon as a cuttable DP-Sea disturbance = traveling ZDC; bosonic mode occupation; intrinsic UV band top `ω_max=2√3/t_P` (λ_max=z=12) | shipped (cross-check) |
+
+The boundary between SF-6 and the source series: SF-6 does not duplicate EW-1's Maxwell derivation or QM-3's photoelectric derivation; it presents them in unified form with the cross-domain narrative that no single series paper carries on its own. **Build from c06 + DP-Sea-Polarization-Model as the spine, not the stale EW-3/EW-5.**
 
 ## The cross-domain unification narrative
 
