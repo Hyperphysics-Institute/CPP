@@ -49,3 +49,17 @@ No re-review required: all four converge, and the fix is the relabel/tightening 
 ---
 
 *Aggregated Patch 1605 per `templates/review_dispatch_protocol.md` §6. Four-reviewer panel; 2/4 SCRIPT-EXECUTED (Grok, ChatGPT), all Tier-1 identities pass. Verdict: restate to v0.3 on the convergent T2 overclaim + T3 falsifier-naming, then close. NO THEO; swarm count unchanged.*
+
+---
+
+## 4. Cycle 2 — v0.3 confirm pass (ChatGPT) → SHIP v1.0
+
+ChatGPT re-reviewed v0.3 (SCRIPT-EXECUTED, all Tier-1 identities pass again). **Verdict: v0.3 fixes the v0.2 overclaim — T1 honest, T2 correctly framed as ontological identification not derivation, MM survivable as a named falsifier. No verdict-flipping objections remaining. Accept v0.3 to advance toward v1.0 after two minor wording edits.**
+
+Two calibration edits requested (both applied in Patch 1607):
+1. Plain Language Summary: "the unification of mass and light is solid" → "…is the companion-grade CPP core identification" ("solid" slightly too strong).
+2. §9: "candidate escape" → "unproven research direction" (don't over-soften the SSV-independent-`Z0` path into sounding like a fix).
+
+ChatGPT also asked to keep "ontological reduction, not a new mathematical derivation" prominent in abstract/conclusion — confirmed present (4 occurrences).
+
+**Panel status after cycle 2 — unanimous on advance:** Grok SHIP, Gemini SHIP, Copilot advance-no-restate, ChatGPT accept-v0.3-to-v1.0. **Cycle CLOSED; SF-6 SHIPPED at v1.0 (Patch 1607)** with the two wording edits applied. Remaining post-ship work (separate patches): Phase 7 documentation suite; ship-time flagged integration patch registering OPEN-FP-6-CONSTANTS + OPEN-FP-6-EMHAND in the shared registries (predictions.md / frontier sectors / paper_catalog), two-tier-labeled, swarm-count discipline preserved.
