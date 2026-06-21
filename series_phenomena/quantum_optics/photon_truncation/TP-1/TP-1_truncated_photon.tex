@@ -46,7 +46,7 @@
 \title{\textbf{TP-1: The Truncated Photon and the Lattice
 Regularization of Shutter-Induced Photon Creation}\\[6pt]
 {\large Conscious Point Physics --- Phenomena Series (Quantum Optics)}\\[4pt]
-{\Large \textbf{Version 0.2 --- 20 June 2026}}}
+{\Large \textbf{Version 0.3 --- 20 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -83,14 +83,19 @@ Therefore $\Nexp$ is finite, and the divergence class is not assumed: RGS derive
 showing that the Heaviside truncation produces a Fourier tail $\propto1/\omega$ which, with
 their $E(\omega)\propto\sqrt\omega$ weighting, makes the photon number diverge
 \emph{logarithmically}; and they regularize it with a formal high-frequency cutoff that
-``can be arbitrarily high.'' CPP's specific content is to identify that formal cutoff with
-the physical lattice scale $\wP=1/\tP$. Two regimes follow. For a realistic shutter (removal
-time $T\gg1/\wg$) the mechanical switching already gives $\Nexp\ll1$ and the lattice cutoff
-is dormant ($\tP$ is $\sim\!28$ orders below the optical period); CPP and the continuum
-agree. The lattice acts only on the idealized instantaneous shutter, where the continuum has
-a genuine logarithmic divergence: CPP forbids $T<\tP$, caps $\wcut\le\wP$, and yields
-$\Nexp_{\max}=C\,\ln(\wP/\wg)\approx 63\,C$ for an optical photon --- order tens, finite,
-with $C$ an $O(1)$ coefficient set by the photon amplitude at the cut. The honest status is
+``can be arbitrarily high.'' CPP's specific content is to \emph{instantiate} that formal
+cutoff at the physical lattice scale $\wP=1/\tP$ --- not as a heuristic but as a strict
+geometric requirement of the $600$-cell lattice ($k_{\max}=\pi/\lP$). Two regimes follow. For
+a realistic shutter (removal time $T\gg1/\wg$) the mechanical switching already gives
+$\Nexp\ll1$ and the lattice cutoff is dormant ($\tP$ is $\sim\!28$ orders below the optical
+period); CPP and the continuum agree. The lattice acts only on the idealized instantaneous
+shutter, where the continuum has a genuine logarithmic divergence: CPP forbids $T<\tP$, caps
+$\wcut\le\wP$, and yields $\Nexp_{\max}=C\,\ln(\wP/\wg)\approx 63\,C$ for an optical photon ---
+order tens, finite, with $C$ an $O(1)$ coefficient set by the photon amplitude at the cut. The
+contribution is therefore one of \emph{compatibility plus foundational regularization}, not a
+new mechanism: CPP embeds the structures RGS assume (mode decomposition, partial trace,
+dynamical Casimir) in a real substrate and fixes the otherwise-formal cutoff at a physical
+scale. The honest status is
 therefore: \emph{compatible at the structural level; the divergence class is derived
 (logarithmic), and the framework-specific result is that CPP supplies the finite value the
 continuum's instantaneous-shutter idealization lacks --- a foundational consistency result,
@@ -154,15 +159,19 @@ dynamics. Since the RGS result \emph{is} standard QFT, CPP must reproduce it in 
 limit, including the divergence. Bare compatibility is therefore nearly automatic and is
 not, by itself, the contribution. The contribution is the place where CPP departs from
 the continuum: the lattice carries a hard ultraviolet cutoff, the truncation divergence is
-ultraviolet (and, as \S\ref{sec:class} shows, logarithmic), and identifying the lattice
-cutoff with RGS's own formal one removes the continuum's instantaneous-shutter divergence.
+ultraviolet (and, as \S\ref{sec:class} shows, logarithmic), and instantiating RGS's own
+formal cutoff at the lattice scale removes the continuum's instantaneous-shutter divergence.
 
 \subsection{Open Problems Addressed}
 This paper opens the quantum-optics domain of \texttt{series\_phenomena/} with its first
 member, the truncated-photon phenomenon, and registers OPEN-TP-1. As of this version
 OPEN-TP-1 is \emph{narrowed}: the divergence class is closed (logarithmic, derived in
 \S\ref{sec:class} from the RGS kernel), and only the $O(1)$ leading-log prefactor $C$
-remains open. It draws load-bearing structure from QM-5
+remains open. This paper is positioned as the \emph{foundational bridge} for the
+quantum-optics domain: it maps the standard quantum-optics formalism (Fock states, mode
+truncation, Bogoliubov boundaries) onto the DP-Sea substrate, establishing the correspondence
+on which later optical phenomena in this domain (beam splitters, entanglement swapping,
+homodyne measurement) can build. It draws load-bearing structure from QM-5
 (second quantization and the $\pi/\lP$ cutoff, \citealp{CPP-QM5}) and QM-4
 (measurement as partial trace over the DP Sea under the Nexus, \citealp{CPP-QM4}), and
 it adopts the framework-conditional, zero-new-axiom, no-theorem posture established by
@@ -216,7 +225,12 @@ an explicit high-frequency cutoff that they state ``can be arbitrarily high'' (t
 \section{Compatibility with the CPP Postulates}\label{sec:compat}
 
 We show that each surprising feature of the truncated photon lands on a standing CPP
-mechanism rather than requiring a new one.
+mechanism rather than requiring a new one. The claim is one of \emph{embedding}, not
+explanation: CPP does not predict or derive the RGS effect (which is a correct statement
+about continuum QFT), but provides a concrete substrate that realizes the structures RGS
+assume --- a real medium for the photon, a mode basis for the Fock content, a partial-trace
+environment for the locality, and a driven boundary for the creation. Each mapping below is
+an instantiation of existing CPP structure, not a novel constraint on the effect.
 
 \subsection{A photon is a cuttable disturbance of a real medium}
 In CPP a photon is not a fundamental object but a perturbation of the Dipole-Pair (DP)
@@ -265,28 +279,46 @@ The regularization argument of \S\ref{sec:reg} needs the divergence to be ultrav
 its numerical ceiling needs the spectral class. Both are settled by the RGS kernel itself;
 neither is assumed.
 
-\paragraph{The class is logarithmic.} In the RGS construction the forward/backward spectra
-that enter the created-photon number are
+\begin{lemma}[Logarithmic divergence class]\label{lem:logclass}
+In the RGS construction the forward/backward spectra that enter the created-photon number are
 \begin{equation}
 \xi_\pm(\omega)=E(\omega)\int_{-\infty}^{\infty}dx\,\theta(\pm x)\,\xi(x)\,e^{-i\omega x},
 \qquad E(\omega)=K\sqrt{\omega},
 \end{equation}
-and the expected number created from the initial vacuum is the mode sum
+where $E(\omega)\propto\sqrt\omega$ is the standard electric-field mode normalization of the
+quantized field (consistent with the RGS quantization), and the expected number created from
+the initial vacuum is the mode sum
 $\Nexp=\sum_\xi\big(\|\xi^-_-\|^2+\|\xi^-_+\|^2\big)$. For any photon wavefunction with
-$\xi(x)\neq0$ at the cut point $x=0$, the Heaviside truncation $\theta(\pm x)\xi(x)$ carries
-a step discontinuity, so its Fourier transform decays as $1/\omega$ at large $\omega$.
-With the weighting $E(\omega)\propto\sqrt\omega$ this gives
+$\xi(x)\neq0$ at the cut point $x=0$, the truncation spectrum is logarithmically divergent:
+$\Nexp\sim C\,\ln(\wcut/\wg)$.
+\end{lemma}
+
+\begin{proof}
+The Heaviside truncation $\theta(\pm x)\xi(x)$ carries a step discontinuity at $x=0$, so its
+Fourier transform decays as $1/\omega$ at large $\omega$. With the normalization
+$E(\omega)\propto\sqrt\omega$ this gives
 $\xi_\pm(\omega)\sim\sqrt\omega\cdot(1/\omega)=1/\sqrt\omega$, hence
 $|\xi_\pm(\omega)|^2\sim1/\omega$ and
 \begin{equation}
 \Nexp\sim\int^{\wcut}\frac{d\omega}{\omega}=C\,\ln\frac{\wcut}{\wg},
 \label{eq:logclass}
 \end{equation}
-a \emph{logarithmic} divergence. This is exactly the conclusion RGS state for the
-instantaneous shutter (``the Heaviside function leads to a Fourier transform with asymptotic
-behavior $\propto1/\omega$ \ldots together with $E(\omega)\propto\sqrt\omega$, the norms
-diverge logarithmically''). The class is therefore derived, not posited; the coefficient
-$C=O(1)$ is set by the photon amplitude at the cut $|\xi(0)|^2$ and the mode-sum measure.
+a \emph{logarithmic} divergence.
+\end{proof}
+
+This is exactly the conclusion RGS state for the instantaneous shutter (``the Heaviside
+function leads to a Fourier transform with asymptotic behavior $\propto1/\omega$ \ldots
+together with $E(\omega)\propto\sqrt\omega$, the norms diverge logarithmically''). The class
+is therefore derived from their kernel, not posited.
+
+\paragraph{The coefficient $C$ carries no hidden enhancement.} The prefactor
+$C=O(1)$ is set by the photon amplitude at the cut $|\xi(0)|^2$ and the mode-sum measure; it
+varies with the detailed cut profile but is bounded and admits no parametric enhancement
+beyond the logarithm. A pulse cut near a node ($\xi(0)\to0$) gives a smaller $C$; one cut at
+its peak gives a larger but still $O(1)$ $C$. There is no regime in which $C$ becomes large
+enough to lift the ceiling out of the order-tens band; the only way to enlarge $\Nexp$ is
+through the logarithm, i.e.\ a sharper cut, which the lattice caps. Pinning $C$ for a given
+profile is the residual OPEN-TP-1.
 
 \paragraph{Two regimes.} A real shutter has a finite mechanical removal time $T$. RGS bound
 the gradual case by
@@ -312,9 +344,28 @@ The gradual-bound framework of \eqref{eq:rgsbound} cannot itself be pushed to th
 scale: its validity window $1/\wg\ll\kappa_0\ll T$ at $T=\tP$ would require $\kappa_0$ both
 $\gg1/\wg\approx1.6\times10^{-16}\,$s and $\ll\tP\approx5.4\times10^{-44}\,$s, which is
 impossible. The Planck scale is reached only in the sharp regime, where \eqref{eq:logclass}
-governs. The framework-specific content of this paper lives entirely in Regime~B: the
-continuum's instantaneous-shutter infinity is a cutoff artifact, and CPP supplies the finite
-value the idealization should have carried.
+governs.
+
+\paragraph{The two regimes in one statement.} For realistic shutters ($T\gg1/\wg$) the RGS
+gradual bound \eqref{eq:rgsbound} ensures $\Nexp\ll1$ and CPP reduces to the continuum; for
+the idealized instantaneous limit, the continuum's logarithmic divergence is capped in CPP by
+the lattice ultraviolet scale $\wP$, yielding $\Nexp_{\max}=C\ln(\wP/\wg)$. The framework-
+specific content lives \emph{entirely} in the second regime: the continuum's instantaneous-
+shutter infinity is a cutoff artifact, and CPP supplies the finite value the idealization
+should have carried. We therefore explicitly disown the v0.1 phrasing that the lattice renders
+$\Nexp$ ``finite for every physical shutter'': for every \emph{realistic} shutter the lattice
+is irrelevant in any observable way; it caps only the unphysical instantaneous idealization.
+The result is conceptually foundational, not experimentally consequential.
+
+\paragraph{Instantiation, not a universal identity.} The framework-specific step is properly
+read as an \emph{instantiation}: within CPP, the only available ultraviolet scale is
+$\wP=1/\tP$, so RGS's formal high-frequency cutoff is instantiated at $\wcut=\wP$. This is a
+statement \emph{within} CPP, not a theory-independent assertion that RGS's cutoff ``is''
+$\wP$. The honest framing of the obvious critique --- ``this is just standard QFT with a
+Planck-scale cutoff'' --- is to own it: putting the cutoff at the Planck scale is a familiar
+heuristic in continuum QFT, but in CPP it is not a heuristic; it is a strict geometric
+requirement of the $600$-cell lattice ($k_{\max}=\pi/\lP$), already fixed before this problem
+was posed. That is the whole of the framework-specific content: modest, but real.
 
 % ============================================================
 % SECTION 4: Regularization
@@ -330,8 +381,10 @@ instantaneous-shutter limit, with the logarithmic ultraviolet form \eqref{eq:log
 derived in \S\ref{sec:class} \citep{RukanGullaSkaar2026}; and (b) CPP imposes a hard
 ultraviolet cutoff $k_{\max}=\pi/\lP$ on all field modes, equivalently a maximal angular
 frequency $\wP=1/\tP$ \citep{CPP-QM5}, and forbids any shutter from switching faster than
-one Absolute Moment $\tP$. Then $\Nexp$ is finite for every physical shutter, and is bounded
-over the set of \emph{all} physical shutters by $\Nexp_{\max}=C\,\ln(\wP/\wg)$.
+one Absolute Moment $\tP$. Then $\Nexp$ is finite, and bounded over the set of \emph{all}
+physical shutters by $\Nexp_{\max}=C\,\ln(\wP/\wg)$ --- with the bound saturated only in the
+idealized instantaneous limit; for realistic shutters $\Nexp\ll1$ by \eqref{eq:rgsbound} and
+the bound is far from tight.
 \end{proposition}
 
 \begin{proof}
@@ -442,7 +495,7 @@ Photon creation & Bogoliubov mixing of $\hat a,\hat a^\dagger$ & dynamical-Casim
 $0\!\to\!\infty$ mixture & multi-photon Fock support & bosonic multi-occupation of $600$-cell modes (QM-5) \\
 Local simple / global complex & partial trace gives single photon / vacuum & $\Tr_{\mathrm{Sea}}$ under the Nexus (QM-4) \\
 Energy bookkeeping & apparent non-conservation (Noether) & open subsystem driven by the shutter; Nexus global-consistent \\
-$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ logarithmically (formal cutoff, ``arbitrarily high'') & finite; formal cutoff identified with $\wP=1/\tP$ (Prop.~\ref{prop:reg}) \\
+$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ logarithmically (formal cutoff, ``arbitrarily high'') & finite; formal cutoff instantiated at $\wP=1/\tP$ (Prop.~\ref{prop:reg}) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -497,12 +550,16 @@ partial trace under the Nexus), and the authors' own creation mechanism --- brok
 time-translation invariance --- is the CPP driven-boundary (dynamical-Casimir) process.
 The single framework-specific result is that the divergence, which RGS derive to be
 logarithmic and regularize with a formal ``arbitrarily high'' cutoff, is regulated by
-identifying that cutoff with the physical lattice scale $\wP=1/\tP$. The truncated-photon
+\emph{instantiating} that formal cutoff at the physical lattice scale $\wP=1/\tP$ --- a strict
+geometric requirement of the $600$-cell lattice, not a heuristic. The truncated-photon
 expected number is then finite, with an optical ceiling $\Nexp_{\max}=C\ln(\wP/\wg)\approx
 63\,C$ realized only in the idealized instantaneous limit (Regime~B); for any realistic
-shutter (Regime~A) the lattice is dormant and CPP and the continuum agree. The result is a
-foundational consistency statement --- the substrate supplies the finite value the
-continuum's instantaneous-shutter idealization lacks --- not an experimental prediction.
+shutter (Regime~A) the lattice is dormant and CPP and the continuum agree. The paper's
+contribution is best labelled \emph{compatibility plus foundational regularization}: CPP
+embeds the structures RGS assume in a real substrate and supplies the finite value the
+continuum's instantaneous-shutter idealization lacks --- a foundational consistency statement,
+not an experimental prediction and not a new mechanism. In one phrase: the divergence is
+\emph{RGS-derived}, the cutoff \emph{CPP-regularized}.
 
 \subsection{Swarm-Validation Contribution}
 This paper adds no new zero-parameter numerical correspondence to the cumulative swarm
@@ -529,6 +586,15 @@ framework-conditional level, no global theorem claimed.
 regime (Regime~B); for realistic shutters (Regime~A) the lattice is dormant and CPP and the
 continuum agree. The v0.1 phrasing ``finite for every physical shutter'' is replaced by the
 two-regime statement of \S\ref{sec:class}.
+\item \textbf{Panel review (4 reviewers; DG-3 satisfied):} Grok, Gemini, Copilot, ChatGPT.
+Two SHIP-toward-v1.0 (Grok, Gemini) + two restate-to-v0.3 (Copilot, ChatGPT) on framing only;
+no verdict-flipping physics objection. v0.3 incorporates all panel calibrations (the
+$\sqrt\omega$-normalization note; the log-class promoted to Lemma~\ref{lem:logclass}; the
+instantiation-not-identity framing; the explicit disowning of the v0.1 ``every physical
+shutter'' phrasing; the embedding-not-entailment framing; the ``RGS-derived, CPP-regularized''
+label; the compatibility-plus-foundational-regularization label). The honest residual flagged
+by ChatGPT and Copilot --- that the framework-specific content stays modest until the $600$-cell
+Hilbert--Schmidt mode sum pins $C$ from the lattice --- is owned, not overclaimed; it is OPEN-TP-1.
 \item QM-4, QM-5: load-bearing, unchanged; this paper is an application, not a revision.
 \end{itemize}
 
