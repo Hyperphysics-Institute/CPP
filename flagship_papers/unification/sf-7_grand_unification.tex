@@ -13,7 +13,8 @@
 % first 10 member under the build rule: THEO-SF7-CONSIST-2 (SF-1<->SF-2
 % spectral-trace consistency, sec:consist2). v0.4 (Patch 1318) builds
 % THEO-SF7-CONSIST-3 (SF-3<->SF-2 EW-strong mode complementarity,
-% sec:consist3). Sections 3-8 carry each shipped
+% sec:consist3). v0.5 (Patch 1319) builds THEO-SF7-CONSIST-4
+% (SF-5<->SF-2 gauge-group co-emergence, sec:consist4). Sections 3-8 carry each shipped
 % predecessor's headline; section 9 carries the locked calibration
 % ledger; section 10 states the one BUILT consistency theorem
 % (THEO-SF7-CONSIST-1) plus the roadmap for the ten still to build.
@@ -67,7 +68,7 @@
 \title{\textbf{SF-7: Standard Model Grand Unification from 600-Cell Geometry}\\[6pt]
 {\large Hierarchy Without Hierarchy: Seventeen Particles, One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series --- Apex Synthesis}\\[4pt]
-{\Large \textbf{Version 0.4 (DRAFT) --- 21 June 2026}}}
+{\Large \textbf{Version 0.5 (DRAFT) --- 21 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -86,7 +87,7 @@
 
 The Standard Model carries nineteen or more free parameters with no account of why the particle masses take the values they do --- the \emph{hierarchy problem}, the most-named known-unknown of the mass program. SF-7 assembles the cumulative result that the charged-lepton spectrum (SF-1), the electroweak cage-boson family including $W^0$ (SF-2), the quark spectrum and generation count (SF-3), the neutrino sector (SF-4), the strong sector --- $SU(3)$ colour, the eight gluons, confinement, the light-nucleus binding cascade (SF-5) --- and the unification of classical, special-relativistic, and quantum electromagnetism (SF-6) all follow from one calibration on the shared substrate quantum $\Mzero = m_e\,(z/\phig)$ with $z=12$ and $\phig=(1+\sqrt5)/2$. %%TODO: tighten once the §10 family is complete.
 
-The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first three members are established here: the SF-2$\leftrightarrow$SF-4 consistency theorem (THEO-SF7-CONSIST-1, with the $Z$/$\nu_2$ independence lemma at the $V=12$ shell), the SF-1$\leftrightarrow$SF-2 spectral-trace consistency theorem (THEO-SF7-CONSIST-2, forcing one Weinberg value $3/(8\phig)$ across two independent observable channels), and the SF-3$\leftrightarrow$SF-2 electroweak--strong mode complementarity (THEO-SF7-CONSIST-3, $\sinsqthetaW+\alphas=1/\phig$ as a disjoint exhaustive partition of one trace). The remaining eight pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
+The paper's distinctive contribution beyond the six predecessors is \S10: a family of \emph{cross-particle-class consistency theorems} establishing that the six sector derivations cohere --- one substrate, one calibration anchor, no double-counting of degrees of freedom, and consistent sourcing of the shared observables. The first four members (THEO-SF7-CONSIST-1 through -4) are established here, each carrying a distinct cross-sector obligation: the SF-2$\leftrightarrow$SF-4 $Z$/$\nu_2$ independence lemma at the $V=12$ shell (no-double-counting at a co-occupied locus); the SF-1$\leftrightarrow$SF-2 spectral-trace consistency (one Weinberg value $3/(8\phig)$ across two independent observable channels); the SF-3$\leftrightarrow$SF-2 electroweak--strong mode complementarity ($\sinsqthetaW+\alphas=1/\phig$ as a disjoint exhaustive partition of one trace); and the SF-5$\leftrightarrow$SF-2 gauge-group co-emergence ($SU(2)_L$ from the global vertex-group $\Gamma\subset SU(2)$, $SU(3)_c$ from a local sub-cage operator algebra). The remaining seven pairwise members and the global six-way capstone, now buildable for the first time since all six predecessors have shipped, are developed across the body. The \S9 ledger reads one calibration ($m_e$) for all fermion masses, with two honest standing caveats stated rather than obscured: the SF-2 per-boson holographic dilution $\eta$ on the \emph{absolute} electroweak-boson masses (OPEN-FP-SF-2-$\eta$), and the open mixing sectors (CKM in SF-3, $\dCP$ in SF-4). %%TODO: abstract is a v0.1 first pass.
 \end{abstract}
 
 \medskip\noindent
@@ -262,13 +263,32 @@ The electroweak coupling $\sinsqthetaW$ (SF-2) and the strong coupling $\alphas$
 
 \noindent This member's obligation --- a disjoint exhaustive mode-partition --- is orthogonal to THEO-SF7-CONSIST-2 (one value, two channels) and THEO-SF7-CONSIST-1 ($V=12$ shell, no-double-counting at a co-occupied locus). SF-3 names the complementarity the strongest single \S10 consistency thread. Registration of THEO-SF7-CONSIST-3 in \texttt{theorem-registry.md} is deferred to the flagged ship-time integration patch.
 
+\subsection{THEO-SF7-CONSIST-4: SF-5 \texorpdfstring{$\leftrightarrow$}{<->} SF-2 (built)}\label{sec:consist4}
+A gauge-group co-emergence constraint. Its unique obligation is that one substrate carries \emph{both} non-abelian Standard-Model gauge groups through \emph{disjoint structural features} --- a structural constraint, distinct from the coupling-level constraints of THEO-SF7-CONSIST-2/3.
+
+\begin{theorem}[SF-5 $\leftrightarrow$ SF-2 Gauge-Group Co-Emergence; candidate]\label{thm:consist4}
+The two non-abelian Standard-Model gauge groups emerge from the single 600-cell substrate through \emph{disjoint structural features}: the weak group $SU(2)_L$ from the \emph{global vertex-group} of the 600-cell --- its 120 vertices are the binary icosahedral group $\Gamma=2I$, a finite subgroup of $SU(2)$ --- and the colour group $SU(3)_c$ from a \emph{local operator representation} on a tetrahedral sub-cage. The two realisations share no fitted structure, so the substrate supports $SU(2)_L\times SU(3)_c$ without independent postulation.
+\end{theorem}
+
+\begin{proof}
+\emph{(i) $SU(2)_L$ at the global group level.} SS-1 establishes that the 120 vertices of the 600-cell \emph{are} the binary icosahedral group $\Gamma=2I$ in quaternionic coordinates --- the order-120 double cover of the icosahedral rotation group, hence a finite subgroup of $SU(2)$ --- and that the 600-cell graph is the Cayley graph of $\Gamma$ on its 12-element minimal generating set. SF-2's $SU(2)_L$ emergence (THEO-EW-6, inherited from EW-5) is the continuous group containing $\Gamma$; it is a property of the \emph{whole} vertex set under the group law \citep{abshier2026sf2}.
+
+\emph{(ii) $SU(3)_c$ at the local operator level.} SF-5's colour algebra \citep{abshier2026sf5} emerges from eight DI-bit hopping operators on a four-vertex tetrahedral sub-cage ($\{V_1,V_2,V_3\}$ plus apex): six colour-changing operators on the three base edges and two diagonal (phase-difference) operators, satisfying $T^a=\lambda^a/2$, $[T^a,T^b]=if^{abc}T^c$ exactly (SS-1b), and unique \emph{within the operator representation} on that cage (SS-3). This is a property of a \emph{local sub-cage operator algebra}, not of the global group law.
+
+\emph{(iii) Disjoint structural features --- the constraint.} The two emergences use \emph{different} structural features of the one substrate: $SU(2)_L$ the global group-multiplication structure of the 120-vertex set, $SU(3)_c$ a local DI-bit hopping algebra on a 4-vertex sub-cage. They share no fitted degree of freedom --- both gauge groups carry zero mass parameters, and neither realisation references the other's structure. The non-trivial content is that \emph{one} object supplies \emph{both} of the SM's non-abelian groups, and supplies exactly $SU(2)$ and $SU(3)$ rather than some other groups, by two independent structural facts: the vertex group is $\Gamma\subset SU(2)$, and a sub-cage carries the $\mathfrak{su}(3)$ operator algebra. Were either fact otherwise, the SM gauge content would not emerge.
+
+\emph{(iv) Honest scope.} The theorem is at the level of the gauge \emph{algebras}: $SU(2)_L$ from $\Gamma$ at finite-group level, $SU(3)_c$ exact and unique \emph{within the operator representation} (not from geometry alone). The continuum Yang--Mills effective-field-theory limit is inherited as proof-outline (THEO-EW-8) and is not claimed here. \qed
+\end{proof}
+
+\noindent This member's obligation --- gauge-group co-emergence through disjoint structural features (global vertex-group vs local sub-cage operator algebra) --- is \emph{structural} rather than numerical, and orthogonal to the coupling-level constraints of THEO-SF7-CONSIST-2 (shared $\sinsqthetaW$ value) and THEO-SF7-CONSIST-3 (the $\sinsqthetaW$/$\alphas$ mode partition). Registration of THEO-SF7-CONSIST-4 in \texttt{theorem-registry.md} is deferred to the flagged ship-time integration patch.
+
 \subsection{The remaining members (roadmap)}\label{sec:consist-roadmap}
 %%TODO: build each member below to theorem/candidate level on its identified thread.
-Table~\ref{tab:consist} lists the eight members still to build (THEO-SF7-CONSIST-2 and -3 are built in \S\ref{sec:consist2}--\S\ref{sec:consist3} above), each with the physical thread already identified in the critical-path map.
+Table~\ref{tab:consist} lists the seven members still to build (THEO-SF7-CONSIST-2, -3, -4 are built in \S\ref{sec:consist2}--\S\ref{sec:consist4} above), each with the physical thread already identified in the critical-path map.
 
 \begin{table}[H]
 \centering
-\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1, -2, and -3 are built; the remainder are now buildable and are developed in subsequent patches.}
+\caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1 through -4 are built; the remainder are now buildable and are developed in subsequent patches.}
 \label{tab:consist}
 \small
 \resizebox{\textwidth}{!}{%
@@ -282,7 +302,7 @@ SF-1 $\leftrightarrow$ SF-4 & shared $\Mzero$; OP-SM-7d phase/$\dCP$ handle & to
 SF-3 $\leftrightarrow$ SF-2 & $\sinsqthetaW+\alphas=1/\phig$ complementarity & \textbf{built (§\ref{sec:consist3})} \\
 SF-3 $\leftrightarrow$ SF-1 & shared Koide-phase machinery; $\Mzero$ & to build \\
 SF-3 $\leftrightarrow$ SF-4 & shared $\Mzero$/taxonomy; CKM$\leftrightarrow\dCP$ parallel & to build \\
-SF-5 $\leftrightarrow$ SF-2 & $SU(2)_L$/$SU(3)_c$ from one 600-cell & to build \\
+SF-5 $\leftrightarrow$ SF-2 & $SU(2)_L$/$SU(3)_c$ from one 600-cell & \textbf{built (§\ref{sec:consist4})} \\
 SF-5 $\leftrightarrow$ SF-3 & colour sector: $\alphas$, $C_F=4/3$ & to build \\
 SF-6 $\leftrightarrow$ SF-2 & photon vs cage boson --- categorical no-double-count & to build \\
 SF-6 $\leftrightarrow$ all & SSV/DP-Sea substrate consistency & to build \\

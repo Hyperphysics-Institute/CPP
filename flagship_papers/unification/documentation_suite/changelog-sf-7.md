@@ -5,7 +5,15 @@ The canonical filename is fixed (no version suffix); version history is tracked 
 
 ---
 
-## v0.4 (DRAFT) — 21 June 2026, Patch 1318
+## v0.5 (DRAFT) — 21 June 2026, Patch 1319
+
+Third §10 member built under the build rule: **THEO-SF7-CONSIST-4 (SF-5 ↔ SF-2 gauge-group co-emergence)** (`sec:consist4`).
+
+**The theorem.** The two non-abelian SM gauge groups emerge from the single 600-cell through *disjoint structural features*: SU(2)_L from the *global vertex-group* (the 120 vertices are the binary icosahedral group Γ = 2I, a finite subgroup of SU(2); Cayley graph, THEO-EW-6) and SU(3)_c from a *local operator representation* on a tetrahedral sub-cage (eight DI-bit hopping operators T^a = λ^a/2, SS-1b, unique within the operator representation). Four-part proof: (i) SU(2)_L at the global group level; (ii) SU(3)_c at the local operator level; (iii) the constraint — disjoint structural features, no shared fitted DOF, one object supplies *both* non-abelian groups (and exactly SU(2)×SU(3)) by two independent structural facts; (iv) honest scope — theorem at the algebra level, continuum YM-EFT limit inherited as proof-outline (THEO-EW-8), SU(3) uniqueness within the operator representation.
+
+**Why not circular.** "Both come from the 600-cell" is exactly what the build rule forbids; the genuine content is that the two groups use *different* structural features (global group law vs local sub-cage operator algebra), so the obligation (gauge-group co-emergence at disjoint structural levels) is real and distinct. This member is *structural* rather than numerical — orthogonal to CONSIST-2 (shared value) and CONSIST-3 (mode partition). Roadmap row → built (seven remain); caption + abstract (four built members, compacted) updated; v0.4→v0.5. Compiles clean: `pdflatex` ×2, 11 pp, 0 errors, 0 undefined refs/cites, 0 overfull. Bundles `reasoning/1319.md`. Registration deferred to ship-time.
+
+
 
 Second §10 member built under the build rule: **THEO-SF7-CONSIST-3 (SF-3 ↔ SF-2 electroweak–strong mode complementarity)** (`sec:consist3`) — the build rule's own model constraint.
 
