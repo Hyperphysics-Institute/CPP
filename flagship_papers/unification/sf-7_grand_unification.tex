@@ -5,7 +5,11 @@
 % Version history: flagship_papers/unification/documentation_suite/changelog-sf-7.md
 % ------------------------------------------------------------
 % SKELETON (v0.1 DRAFT, Patch 1314). Structure to the 16-section
-% paper-formatting standard. Sections 3-8 carry each shipped
+% paper-formatting standard. v0.2 (Patch 1316) folds review-cycle-1
+% calibration: C2 promoted to theorem via the Z/nu_2 independence
+% lemma (sec:consist1); C3 deflated to shared-quantity (not mechanism);
+% 9 closure-status column + headline qualifier + chi/6 footnote;
+% 10 panel-adopted circularity build rule. Sections 3-8 carry each shipped
 % predecessor's headline; section 9 carries the locked calibration
 % ledger; section 10 states the one BUILT consistency theorem
 % (THEO-SF7-CONSIST-1) plus the roadmap for the ten still to build.
@@ -59,7 +63,7 @@
 \title{\textbf{SF-7: Standard Model Grand Unification from 600-Cell Geometry}\\[6pt]
 {\large Hierarchy Without Hierarchy: Seventeen Particles, One Calibration}\\[4pt]
 {\large Conscious Point Physics Flagship Paper Series --- Apex Synthesis}\\[4pt]
-{\Large \textbf{Version 0.1 (DRAFT) --- 21 June 2026}}}
+{\Large \textbf{Version 0.2 (DRAFT) --- 21 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -151,45 +155,66 @@ The 600-cell is the convex regular 4-polytope with $V=120$ vertices, $E=720$ edg
 % ============================================================
 \section{The Hierarchy-Without-Hierarchy Master Comparison}\label{sec:ledger}
 % ============================================================
-The cumulative ledger of the six predecessors: every fermion mass scale is anchored on the single substrate quantum $\Mzero = m_e(z/\phig)$, i.e.\ one calibration ($m_e$) and zero shape parameters across the matter sectors. Table~\ref{tab:ledger} sets the SM's free-parameter count against the CPP calibration ledger sector by sector. Two caveats are carried explicitly and are \emph{not} hidden in the headline: (a) the SF-2 $\eta$-dilution on absolute boson masses (OPEN-FP-SF-2-$\eta$); (b) the open mixing sectors, CKM (SF-3) and $\dCP$ (SF-4).
+The cumulative ledger of the six predecessors: every fermion mass scale is anchored on the single substrate quantum $\Mzero = m_e(z/\phig)$ --- \emph{one calibration ($m_e$); zero additional fitted shape parameters in the closed sectors}. (The qualifier ``in the closed sectors'' is load-bearing and is standardised everywhere this slogan appears: the SF-2 absolute boson masses and the open mixing sectors are carried separately, below and in the closure column of Table~\ref{tab:ledger}.) Table~\ref{tab:ledger} sets the SM's free-parameter count against the CPP calibration ledger sector by sector. Two caveats are carried explicitly and are \emph{not} hidden in the headline: (a) the SF-2 $\eta$-dilution on absolute boson masses (OPEN-FP-SF-2-$\eta$); (b) the open mixing sectors, CKM (SF-3) and $\dCP$ (SF-4).
 
 \begin{table}[H]
 \centering
 \caption{The hierarchy-without-hierarchy ledger: Standard Model free parameters versus the CPP calibration cost, by sector. ``Shape params'' counts free parameters \emph{beyond} the single $m_e$ calibration.}
 \label{tab:ledger}
-\small
-\begin{tabular}{@{}llcc l@{}}
+\setlength{\tabcolsep}{4pt}\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llcccl@{}}
 \toprule
-Sector & SF paper & SM free params & CPP shape params & Headline CPP result \\
+Sector & SF paper & SM free params & CPP shape params & Closure & Headline CPP result \\
 \midrule
-Charged leptons & SF-1 & 3 masses & 0 & $K=2/3$ exact; $m_\mu,m_\tau$ $<0.2\%$ \\
-Electroweak bosons & SF-2 & $m_H, v$, $\theta_W$ & 0 (ratios)$^{\dagger}$ & $m_Z/m_W$ 0.5\%; $W^0$ novel \\
-Quarks & SF-3 & 6 masses & 0 & RMS 2.1\%; $m_c$ derived \\
-Neutrinos & SF-4 & 3 masses + angles & 0 & $\Sigma m_\nu\approx64.9$~meV; TBM \\
-Strong sector & SF-5 & $\alphas$ (+ $\Lambda_{\rm QCD}$) & 0 & $SU(3)$ exact; 8 gluons; $\sigma$ \\
-Electromagnetism & SF-6 & --- (in gauge sector) & 0 (Tier 1)$^{\ddagger}$ & Maxwell+SR+QED unified \\
-Mixing (CKM, PMNS, $\dCP$) & SF-3/SF-4 & 8+ & --- (open) & inherited-open \\
+Charged leptons & SF-1 & 3 masses & 0 & Closed & $K=2/3$ exact; $m_\mu,m_\tau$ $<0.2\%$ \\
+Electroweak bosons & SF-2 & $m_H, v$, $\theta_W$ & 0 (ratios)$^{\dagger}$ & Partial ($\eta$) & $m_Z/m_W$ 0.5\%; $W^0$ novel \\
+Quarks & SF-3 & 6 masses & 0 & Closed & RMS 2.1\%; $m_c$ derived \\
+Neutrinos & SF-4 & 3 masses + angles & 0 & Closed & $\Sigma m_\nu\approx64.9$~meV; TBM \\
+Strong sector & SF-5 & $\alphas$ (+ $\Lambda_{\rm QCD}$) & 0 & Closed & $SU(3)$ exact; 8 gluons; $\sigma$ \\
+Electromagnetism & SF-6 & --- (in gauge sector) & 0 (Tier 1)$^{\ddagger}$ & Partial (T2) & Maxwell+SR+QED unified \\
+Mixing (CKM, PMNS, $\dCP$) & SF-3/SF-4 & 8+ & --- & Open & inherited-open \\
 \midrule
-\textbf{Total} & SF-1--6 & \textbf{19+} & \textbf{0 beyond $m_e$} & one calibration \\
+\textbf{Total} & SF-1--6 & \textbf{19+} & \textbf{0 beyond $m_e$} & --- & one calibration \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 \noindent{\footnotesize $^{\dagger}$ SF-2 absolute boson masses are PARTIAL CLOSURE via $\eta$ (OPEN-FP-SF-2-$\eta$); ratios/structure zero-parameter. $^{\ddagger}$ SF-6 Tier-2 constants are toy-model-grade (OPEN-FP-6-CONSTANTS).}
-%%TODO: verify every count against the shipped papers + frontier_sectors/FP.md at integration; add a verify script (code/1314...) once §9 numbers are frozen.
+%%TODO: verify every count against the shipped papers + frontier_sectors/FP.md at integration; add a verify script (code/1316...) once §9 numbers are frozen. (Review cycle 1: the mode-fraction identities and $\chi/6$ were SCRIPT-EXECUTED by Grok and confirmed by the package verifier; the closure column above answers ChatGPT's comparability request.)
 
 % ============================================================
 \section{The Cross-Particle-Class Consistency Theorems}\label{sec:consistency}
 % ============================================================
 The synthesis content unique to SF-7 is the demonstration that the six sector derivations \emph{cohere}. The consistency-theorem family has a common three-clause template: \textbf{(C1)} calibration coherence, \textbf{(C2)} no double-counting, \textbf{(C3)} shared-observable single-handle. A pairwise member is buildable iff both member flagships are shipped; with all six now shipped, the entire family --- ten pairwise members and the global six-way capstone --- is buildable for the first time.
 
+\begin{mdframed}
+\noindent\textbf{Build rule (panel-adopted, review cycle 1).} Every §10 member must establish a genuine \emph{cross-sector constraint} --- a relation forced jointly by the two sectors (e.g.\ the mode-fraction complementarity $\sinsqthetaW+\alphas=1/\phig$), or an explicit independence/no-overlap result in the manner of Lemma~\ref{lem:c2indep} --- and must \emph{not} rest on the bare observation that both sectors are built on the 600-cell. The most-inherited clause (C1, calibration coherence) carries the least independent content by construction; the non-trivial weight lives in C2 (no double-counting) and the constraint-bearing parts of C3. Each member must isolate a \emph{distinct} obligation: the members leaning on shared $\Mzero$/phase structure (SF-1$\leftrightarrow$SF-4, SF-3$\leftrightarrow$SF-4, SF-3$\leftrightarrow$SF-1) must each carry a unique non-overlap result rather than collapsing into one $\Mzero$ argument.
+\end{mdframed}
+
 \subsection{THEO-SF7-CONSIST-1: SF-2 \texorpdfstring{$\leftrightarrow$}{<->} SF-4 (built)}\label{sec:consist1}
 \begin{theorem}[SF-2 $\leftrightarrow$ SF-4 Cross-Sector Consistency; candidate]\label{thm:consist1}
 The electroweak cage-boson sector (SF-2) and the neutrino sector (SF-4) are mutually consistent derivations on the shared 600-cell substrate:
 \textbf{(C1)} both anchor every mass scale on the single quantum $\Mzero = m_e(z/\phig)$ with identical $z,\phig$ (qualified by the open SF-2 $\eta$ on absolute boson masses);
 \textbf{(C2)} both draw shell assignments from the same SM-1 four-cage taxonomy $V\in\{4,12,20,30\}$; the only co-occupied shell, $V=12$ (the $Z$ cage-shape and the $\nu_2$ shell-occupation), carries \emph{distinct structural roles} computed by \emph{independent mechanisms sharing no fitted degree of freedom};
-\textbf{(C3)} SF-4's deferred $\dCP$ and SF-2's $V\!-\!A$ chirality observable are sourced from the \emph{same} substrate chirality handle $\chi=\phig^{-3}$ ($\chi/6\approx0.0394$).
+\textbf{(C3)} SF-4's deferred $\dCP$ and SF-2's $V\!-\!A$ chirality observable both reference the \emph{same substrate quantity}, the chirality magnitude $\chi=\phig^{-3}$ ($\chi/6\approx0.0394$\footnote{Precise value $\chi/6 = \phig^{-3}/6 = 0.0393446\ldots$; the corpus standardises the loose form $\approx0.0394$ (the Capotauro rounding). SCRIPT-EXECUTED confirmation, review cycle 1.}) --- a \emph{shared quantity, not a shared mechanism}: that the two observables source from one substrate magnitude is a consistency datum, not a claim that the $V\!-\!A$ and $\dCP$ \emph{dynamics} are identical (their common mechanism is OP-SM-7d, which remains open).
 \end{theorem}
-\noindent Clause C2 is the strongest (theorem-level, consistent by construction); C1 is theorem-level on the shared anchor; C3 is interconnection-level (it certifies consistency, not the $\dCP$ value, which remains window-5 work). Full statement and proof: the \S10 seed \texttt{sf-7\_consistency\_SF2\_SF4.md}. Registration in \texttt{theorem-registry.md} is deferred to a flagged ship-time integration patch.
+\noindent Clause C2 is now \emph{theorem-level} via Lemma~\ref{lem:c2indep} below: the v0.1 bare ``consistent by construction'' assertion is replaced by an explicit independence proof discharging the three independence conditions (disjoint state variables, disjoint parameter sets, perturbation invariance). C1 is theorem-level on the shared anchor. C3 certifies consistency via a \emph{shared quantity} $\chi$ --- not a shared mechanism, and not the $\dCP$ \emph{value}, which remains window-5 work. Full statement of the seed argument: the \S10 seed \texttt{sf-7\_consistency\_SF2\_SF4.md}. Registration of THEO-SF7-CONSIST-1 and Lemma~\ref{lem:c2indep} in \texttt{theorem-registry.md} is deferred to a flagged ship-time integration patch.
+
+\begin{lemma}[$Z$/$\nu_2$ derivational independence at the $V=12$ shell; supports C2]\label{lem:c2indep}
+The SF-2 derivation of $m_Z$ and the SF-4 derivation of $m_{\nu_2}$ --- the two co-occupants of the 12-vertex first shell --- share \emph{exactly one} input, the single calibration $m_e$ (entering both only through $\Mzero = m_e(z/\phig)$ and the electroweak base scale). They share no other parameter, fitted or geometric-beyond-the-substrate. Consequently every parameter exclusive to one derivation leaves the other's mass strictly invariant, and the two masses are computed without double-counting any degree of freedom beyond the declared single calibration.
+\end{lemma}
+
+\begin{proof}
+We discharge the three independence conditions in turn.
+
+\emph{(i) Disjoint state variables.} The $Z$ is fixed by the icosahedral cage-\emph{shape} occupying the shell --- the unique $I_h$-stabilised 12-vertex first-shell cage of \citet{abshier2026sf2} --- so its state variable is a discrete shape-class label within the SM-1 four-cage taxonomy together with the boson's stability data. The $\nu_2$ is an unbound three-dimensional orbital ZBW mode \emph{occupying} the shell \citep{abshier2026sf4}, with no rigid cage; its state variable is a shell-occupation excitation. The shape-class space and the occupation space are disjoint. The common index $V=12$ is a fixed \emph{geometric locus} of the 600-cell distance-shell structure, not a free variable that either derivation tunes.
+
+\emph{(ii) Disjoint parameter sets.} The $Z$ absolute mass is a function of the icosahedral geometry together with the per-boson holographic dilution $\eta_Z\sim10^{-17}$ (OPEN-FP-SF-2-$\eta$) and the loop factor $\ell_Z$ (OPEN-FP-SF-2-loopfactor), both \emph{exclusive to SF-2}. The neutrino mass is $m_{\nu_2} = \Mzero\,(12)^2\,\sigma_\nu$ with $\sigma_\nu = z^{-10}$ \emph{theorem-derived and parameter-free} (SF-4 Picture-A closure, v2.0), exclusive to SF-4. The two suppression factors differ in both scale and mechanism ($\eta_Z\sim10^{-17}$ from cosmic-horizon holographic embedding; $\sigma_\nu\sim10^{-11}$ from walk-dimension primitives). Hence the fitted/calibrated parameter sets are disjoint: $\{\eta_Z,\ell_Z\}\cap\varnothing=\varnothing$.
+
+\emph{(iii) Perturbation invariance.} From (ii), $\partial m_{\nu_2}/\partial\eta_Z = \partial m_{\nu_2}/\partial\ell_Z = 0$ (the neutrino mass depends only on $m_e$, $V^2$, $\sigma_\nu$), and $\partial m_Z/\partial\sigma_\nu = 0$ (the $Z$ mass depends only on the icosahedral geometry, $\eta_Z$, $\ell_Z$, and the base scale). The sole nonzero cross-coupling is through $m_e$, $\partial m_Z/\partial m_e\neq0$ and $\partial m_{\nu_2}/\partial m_e\neq0$ --- the \emph{declared} single calibration of the entire SF-line. The content of the no-double-counting claim is precisely that there is no \emph{additional} shared degree of freedom beyond it. Therefore the two co-occupants of the $V=12$ shell are derived independently up to the single $m_e$ calibration, and clause C2 holds at theorem level. \qed
+\end{proof}
+
+\noindent Two corollaries. \textbf{(a)} C2's theorem status is \emph{independent of whether $\eta_Z$ is closed}: OPEN-FP-SF-2-$\eta$ is a separate, carried \S9 caveat on the \emph{absolute} boson mass, not a precondition for no-double-counting. \textbf{(b)} Naming the single $m_e$ coupling explicitly is exactly what converts the v0.1 ``consistent by construction'' assertion into a checkable theorem --- the lemma is stronger than the assertion it replaces, because it isolates the one permitted dependency rather than gesturing at ``the same framework.''
 
 \subsection{The remaining members (roadmap)}\label{sec:consist-roadmap}
 %%TODO: build each member below to theorem/candidate level on its identified thread.
@@ -200,6 +225,7 @@ Table~\ref{tab:consist} lists the ten members still to build, each with the phys
 \caption{The §10 consistency-theorem family. THEO-SF7-CONSIST-1 is built; the remainder are now buildable and are developed in subsequent patches.}
 \label{tab:consist}
 \small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lll@{}}
 \toprule
 Member & Identified thread & Status \\
@@ -217,7 +243,7 @@ SF-6 $\leftrightarrow$ all & SSV/DP-Sea substrate consistency & to build \\
 \midrule
 \textbf{Global six-way} & no-double-count + single-$m_e$ + one substrate, 17 particles + $W^0$ & \textbf{capstone (with TLA)} \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 \noindent The mode-fraction structure ($\sinsqthetaW=3/8$ edge, $\alphas=5/8$ face, sum $1/\phig$) is the strongest recurring thread, binding SF-1/2/3/5 through one 600-cell spectral trace. The global six-way capstone is the threshold artifact of the synthesis and is to be built jointly.
 
