@@ -46,7 +46,7 @@
 \title{\textbf{TP-1: The Truncated Photon and the Lattice
 Regularization of Shutter-Induced Photon Creation}\\[6pt]
 {\large Conscious Point Physics --- Phenomena Series (Quantum Optics)}\\[4pt]
-{\Large \textbf{Version 0.1 --- 20 June 2026}}}
+{\Large \textbf{Version 0.2 --- 20 June 2026}}}
 
 \author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
 
@@ -79,17 +79,23 @@ dynamical-Casimir-type process, reproducing their Noether reasoning rather than
 conflicting with it. The non-trivial, framework-specific result is regularization: the
 truncation divergence is \emph{ultraviolet} in origin, and CPP carries a hard cutoff at
 $k_{\max}=\pi/\lP$ (the same cutoff that renders the electron self-energy finite in QM-5).
-Therefore $\Nexp$ is finite for every physical shutter, and is bounded for \emph{all}
-shutters because none can switch faster than one Absolute Moment $\tP$. Modeling the
-created-photon spectrum with the mild (logarithmic) ultraviolet form
-$dN/d\omega=\kappa/\omega$ --- the divergence class selected by the authors' own
-``even a thousand photons is unlikely'' statement --- gives a Planck-set ceiling
-$\Nexp_{\max}\simeq\kappa\,\ln(\wP/\wg)\approx 64\,\kappa$ for an optical photon: order
-tens, finite, with $\kappa$ an $O(1)$ coefficient fixed only by importing the
-Rukan--Gulla--Skaar Bogoliubov kernel and cutting its frequency integral at $\pi/\lP$
-(registered as OPEN-TP-1). The honest status is therefore: \emph{compatible at the
-structural level, with a framework-specific finiteness result that is robust and a
-numerical ceiling whose coefficient is open; zero new axioms; no theorem claimed.}
+Therefore $\Nexp$ is finite, and the divergence class is not assumed: RGS derive it,
+showing that the Heaviside truncation produces a Fourier tail $\propto1/\omega$ which, with
+their $E(\omega)\propto\sqrt\omega$ weighting, makes the photon number diverge
+\emph{logarithmically}; and they regularize it with a formal high-frequency cutoff that
+``can be arbitrarily high.'' CPP's specific content is to identify that formal cutoff with
+the physical lattice scale $\wP=1/\tP$. Two regimes follow. For a realistic shutter (removal
+time $T\gg1/\wg$) the mechanical switching already gives $\Nexp\ll1$ and the lattice cutoff
+is dormant ($\tP$ is $\sim\!28$ orders below the optical period); CPP and the continuum
+agree. The lattice acts only on the idealized instantaneous shutter, where the continuum has
+a genuine logarithmic divergence: CPP forbids $T<\tP$, caps $\wcut\le\wP$, and yields
+$\Nexp_{\max}=C\,\ln(\wP/\wg)\approx 63\,C$ for an optical photon --- order tens, finite,
+with $C$ an $O(1)$ coefficient set by the photon amplitude at the cut. The honest status is
+therefore: \emph{compatible at the structural level; the divergence class is derived
+(logarithmic), and the framework-specific result is that CPP supplies the finite value the
+continuum's instantaneous-shutter idealization lacks --- a foundational consistency result,
+not an experimentally accessible prediction. Zero new axioms; no theorem claimed; the single
+remaining residual is the $O(1)$ prefactor $C$ (narrowed OPEN-TP-1).}
 \end{abstract}
 
 \noindent\textbf{Keywords:} truncated photon; single-photon states; photon-number
@@ -147,14 +153,16 @@ standard quantum field theory is recovered as the continuum limit of $600$-cell 
 dynamics. Since the RGS result \emph{is} standard QFT, CPP must reproduce it in that
 limit, including the divergence. Bare compatibility is therefore nearly automatic and is
 not, by itself, the contribution. The contribution is the place where CPP departs from
-the continuum: the lattice carries a hard ultraviolet cutoff, and the truncation
-divergence is ultraviolet, so CPP renders $\Nexp$ finite for every physical shutter.
+the continuum: the lattice carries a hard ultraviolet cutoff, the truncation divergence is
+ultraviolet (and, as \S\ref{sec:class} shows, logarithmic), and identifying the lattice
+cutoff with RGS's own formal one removes the continuum's instantaneous-shutter divergence.
 
 \subsection{Open Problems Addressed}
 This paper opens the quantum-optics domain of \texttt{series\_phenomena/} with its first
-member, the truncated-photon phenomenon, and registers OPEN-TP-1 (fix the $O(1)$
-coefficient $\kappa$ of the Planck-set ceiling by importing the RGS Bogoliubov kernel and
-cutting its frequency integral at $\pi/\lP$). It draws load-bearing structure from QM-5
+member, the truncated-photon phenomenon, and registers OPEN-TP-1. As of this version
+OPEN-TP-1 is \emph{narrowed}: the divergence class is closed (logarithmic, derived in
+\S\ref{sec:class} from the RGS kernel), and only the $O(1)$ leading-log prefactor $C$
+remains open. It draws load-bearing structure from QM-5
 (second quantization and the $\pi/\lP$ cutoff, \citealp{CPP-QM5}) and QM-4
 (measurement as partial trace over the DP Sea under the Nexus, \citealp{CPP-QM4}), and
 it adopts the framework-conditional, zero-new-axiom, no-theorem posture established by
@@ -188,15 +196,19 @@ everything below.
 
 \paragraph{Why this is dynamical-Casimir physics.} A shutter that changes the field's
 boundary condition in time is, formally, the same class of process as a moving mirror or
-a cavity of time-varying length \citep{Moore1970,Dodonov2020}, which converts vacuum and
-single-quantum input into multi-photon output by a Bogoliubov transformation mixing
-$\hat a$ and $\hat a^\dagger$. The dynamical Casimir effect has been observed in
-superconducting circuits \citep{Wilson2011}. The number of created quanta is
-$\Nexp=\sum_k|\beta_k|^2$ with $\beta_k$ the Bogoliubov coefficients of the time-dependent
-boundary; instantaneous switching makes $\beta_k$ fall off slowly in $k$ and the sum
-diverge, while smooth switching over a time $\tau_s$ suppresses $\beta_k$ above
-$\omega\sim1/\tau_s$ and the sum converges. RGS's ``infinite only if instantaneous'' is
-exactly this statement.
+a cavity of time-varying length \citep{Moore1970,Dodonov2020,CironeRzazewski1999,Braunstein2005},
+which converts vacuum and single-quantum input into multi-photon output by a Bogoliubov
+transformation mixing $\hat a$ and $\hat a^\dagger$. The dynamical Casimir effect has been
+observed in superconducting circuits \citep{Wilson2011}. RGS make the mechanism explicit in
+their own terms: ``mirror removal converts vacuum energy to real photon energy in the
+forward- and backward-propagating modes,'' and they note that the squeezed-vacuum
+partial-trace structure is the same one that, in the Unruh effect, makes the restricted
+vacuum appear populated \citep{Crispino2008}. The number of created quanta is
+$\Nexp=\|T_2\|_{\mathrm{HS}}^2=\sum_n\lambda_n^2$, the Hilbert--Schmidt norm of the
+Bogoliubov mixing operator; instantaneous switching makes it diverge, while smooth
+switching converges. Crucially for what follows, RGS regularize their field integrals with
+an explicit high-frequency cutoff that they state ``can be arbitrarily high'' (their Eq.~B14)
+--- a formal device left unidentified with any physical scale.
 
 % ============================================================
 % SECTION 3: The CPP compatibility map
@@ -245,6 +257,66 @@ energy. CPP therefore reproduces the Noether/energy-bookkeeping reasoning of RGS
 than contradicting it.
 
 % ============================================================
+% SECTION: Derivation of the divergence class
+% ============================================================
+\section{Derivation of the Divergence Class}\label{sec:class}
+
+The regularization argument of \S\ref{sec:reg} needs the divergence to be ultraviolet, and
+its numerical ceiling needs the spectral class. Both are settled by the RGS kernel itself;
+neither is assumed.
+
+\paragraph{The class is logarithmic.} In the RGS construction the forward/backward spectra
+that enter the created-photon number are
+\begin{equation}
+\xi_\pm(\omega)=E(\omega)\int_{-\infty}^{\infty}dx\,\theta(\pm x)\,\xi(x)\,e^{-i\omega x},
+\qquad E(\omega)=K\sqrt{\omega},
+\end{equation}
+and the expected number created from the initial vacuum is the mode sum
+$\Nexp=\sum_\xi\big(\|\xi^-_-\|^2+\|\xi^-_+\|^2\big)$. For any photon wavefunction with
+$\xi(x)\neq0$ at the cut point $x=0$, the Heaviside truncation $\theta(\pm x)\xi(x)$ carries
+a step discontinuity, so its Fourier transform decays as $1/\omega$ at large $\omega$.
+With the weighting $E(\omega)\propto\sqrt\omega$ this gives
+$\xi_\pm(\omega)\sim\sqrt\omega\cdot(1/\omega)=1/\sqrt\omega$, hence
+$|\xi_\pm(\omega)|^2\sim1/\omega$ and
+\begin{equation}
+\Nexp\sim\int^{\wcut}\frac{d\omega}{\omega}=C\,\ln\frac{\wcut}{\wg},
+\label{eq:logclass}
+\end{equation}
+a \emph{logarithmic} divergence. This is exactly the conclusion RGS state for the
+instantaneous shutter (``the Heaviside function leads to a Fourier transform with asymptotic
+behavior $\propto1/\omega$ \ldots together with $E(\omega)\propto\sqrt\omega$, the norms
+diverge logarithmically''). The class is therefore derived, not posited; the coefficient
+$C=O(1)$ is set by the photon amplitude at the cut $|\xi(0)|^2$ and the mode-sum measure.
+
+\paragraph{Two regimes.} A real shutter has a finite mechanical removal time $T$. RGS bound
+the gradual case by
+\begin{equation}
+\Nexp\le\frac{\kappa_0}{4T}+\frac{\kappa_0^2}{16T^2},
+\qquad |T(\omega)|^2=\frac{1}{1+(\omega\kappa_0)^2/4},
+\label{eq:rgsbound}
+\end{equation}
+valid for $1/\wg\ll\kappa_0\ll T$, where $\kappa_0$ is the integrated mirror permittivity.
+For an optical photon ($\wg/2\pi=10^{15}\,$Hz) at transmissivity $10^{-4}$ this gives
+$\Nexp\lesssim1$ only once $T$ drops to $\sim\!10^{-14}\,$s. Two regimes result:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Regime A --- realistic shutter ($T\gg1/\wg$).} The mechanical smoothing of
+\eqref{eq:rgsbound} already holds $\Nexp\ll1$. The lattice cutoff is dormant: $\tP$ lies
+$\sim\!28$ orders of magnitude below the optical period $1/\wg$, so $\wcut\sim1/T\ll\wP$
+and the lattice never binds. CPP and the continuum coincide.
+\item \textbf{Regime B --- idealized instantaneous shutter ($T\to0$).} Here the continuum
+has its genuine logarithmic divergence \eqref{eq:logclass}. CPP forbids $T<\tP$ (one
+Absolute Moment is the sharpest physical truncation), so $\wcut\le\wP=1/\tP$ and the
+divergence is capped.
+\end{itemize}
+The gradual-bound framework of \eqref{eq:rgsbound} cannot itself be pushed to the lattice
+scale: its validity window $1/\wg\ll\kappa_0\ll T$ at $T=\tP$ would require $\kappa_0$ both
+$\gg1/\wg\approx1.6\times10^{-16}\,$s and $\ll\tP\approx5.4\times10^{-44}\,$s, which is
+impossible. The Planck scale is reached only in the sharp regime, where \eqref{eq:logclass}
+governs. The framework-specific content of this paper lives entirely in Regime~B: the
+continuum's instantaneous-shutter infinity is a cutoff artifact, and CPP supplies the finite
+value the idealization should have carried.
+
+% ============================================================
 % SECTION 4: Regularization
 % ============================================================
 \section{Lattice Regularization of the Divergence}\label{sec:reg}
@@ -254,54 +326,51 @@ The one place CPP departs from the continuum is the fate of the divergence.
 \begin{proposition}[Lattice regularization of shutter-induced photon creation]
 \label{prop:reg}
 Assume (a) the truncated-photon expected number $\Nexp$ diverges only in the
-instantaneous-shutter limit, i.e.\ the divergence has purely ultraviolet origin
-\citep{RukanGullaSkaar2026}; and (b) CPP imposes a hard ultraviolet cutoff
-$k_{\max}=\pi/\lP$ on all field modes, equivalently a maximal angular frequency
-$\wP=1/\tP$ \citep{CPP-QM5}. Then $\Nexp$ is finite for every physical shutter, and is
-bounded above over the set of \emph{all} physical shutters, because no shutter can switch
-faster than one Absolute Moment $\tP$.
+instantaneous-shutter limit, with the logarithmic ultraviolet form \eqref{eq:logclass}
+derived in \S\ref{sec:class} \citep{RukanGullaSkaar2026}; and (b) CPP imposes a hard
+ultraviolet cutoff $k_{\max}=\pi/\lP$ on all field modes, equivalently a maximal angular
+frequency $\wP=1/\tP$ \citep{CPP-QM5}, and forbids any shutter from switching faster than
+one Absolute Moment $\tP$. Then $\Nexp$ is finite for every physical shutter, and is bounded
+over the set of \emph{all} physical shutters by $\Nexp_{\max}=C\,\ln(\wP/\wg)$.
 \end{proposition}
 
-\begin{proof}[Argument]
-Write the created-photon spectrum as $dN/d\omega$, supported on $[\wg,\wcut]$ where $\wg$
-is the carrier frequency and $\wcut$ the effective spectral cutoff set by the switching
-sharpness ($\wcut\sim1/\tau_s$). By (a), $\Nexp=\int_{\wg}^{\wcut}(dN/d\omega)\,d\omega$
-diverges only as $\wcut\to\infty$. By (b), every physical mode has $\omega\le\wP$, so
-$\wcut\le\wP$ and $\Nexp\le\int_{\wg}^{\wP}(dN/d\omega)\,d\omega<\infty$. The bound is
-uniform over shutters because the sharpest physical switching, one Absolute Moment, gives
-$\wcut=\wP$.
+\begin{proof}
+By \eqref{eq:logclass} the created-photon spectrum on $[\wg,\wcut]$ integrates to
+$\Nexp=C\ln(\wcut/\wg)$, which diverges only as $\wcut\to\infty$. By (b) every physical mode
+has $\omega\le\wP$, and the sharpest physical shutter, one Absolute Moment, sets
+$\wcut=\wP$. Hence $\wcut\le\wP$ and $\Nexp\le C\ln(\wP/\wg)<\infty$, uniformly over
+shutters.
 \end{proof}
 
-The argument uses only the \emph{origin} of the divergence (ultraviolet) and the
-\emph{existence} of the CPP cutoff. It does not depend on the detailed spectrum, so the
-finiteness conclusion is robust; the numerical value of the ceiling is not.
+The structural conclusion (finiteness) needs only that the divergence is ultraviolet and
+that the cutoff exists; the numerical ceiling additionally uses the derived logarithmic
+class \eqref{eq:logclass}.
 
-\paragraph{The numerical ceiling.} Take the mild, logarithmic ultraviolet form
-$dN/d\omega=\kappa/\omega$, so $\Nexp(\wcut)=\kappa\ln(\wcut/\wg)$. This is the divergence
-class \emph{selected by RGS's own qualitative statement}: logarithmic growth means
-reaching $N$ photons requires $\wcut\sim\wg e^{N/\kappa}$, an exponentially sharp shutter,
-which is why ``even a thousand photons would be extremely unlikely.'' A stronger
-(power-law) divergence would make moderate photon numbers easy and is excluded by that
-statement. With the CPP cutoff $\wcut\le\wP$,
+\paragraph{The numerical ceiling.} With $\Nexp(\wcut)=C\ln(\wcut/\wg)$ and the CPP cutoff
+$\wcut\le\wP$,
 \begin{equation}
-\Nexp_{\max}=\kappa\,\ln\!\frac{\wP}{\wg}.
+\Nexp_{\max}=C\,\ln\!\frac{\wP}{\wg}.
 \end{equation}
-For an optical photon ($\lambda=500\,$nm, $\wg=3.767\times10^{15}\,\mathrm{rad/s}$) and
-$\wP=1/\tP=1.855\times10^{43}\,\mathrm{rad/s}$,
+For an optical photon ($\wg/2\pi=10^{15}\,$Hz, $\wg=6.283\times10^{15}\,\mathrm{rad/s}$,
+the RGS reference case) and $\wP=1/\tP=1.855\times10^{43}\,\mathrm{rad/s}$,
 \begin{equation}
-\ln\!\frac{\wP}{\wg}=63.8,\qquad \Nexp_{\max}\approx 64\,\kappa,
+\ln\!\frac{\wP}{\wg}=63.3,\qquad \Nexp_{\max}\approx 63\,C,
 \end{equation}
-an order-tens ceiling. The coefficient $\kappa$ is the only model-dependent input; fixing
-it requires the RGS Bogoliubov kernel $B(\omega,\omega')$ evaluated with its frequency
-integral cut at $\pi/\lP$ (OPEN-TP-1).
+an order-tens ceiling. The leading-log coefficient $C=O(1)$ is now the \emph{only}
+model-dependent input; fixing it requires evaluating the Hilbert--Schmidt mode sum
+$\|T_2\|_{\mathrm{HS}}^2$ for a specific cut profile, with the frequency integral cut at
+$\pi/\lP$ (the narrowed OPEN-TP-1).
 
-\paragraph{Sharper than ``unlikely.''} RGS say large photon numbers are improbable for
-realistic shutters. CPP says more: for $\kappa$ of order $0.1$--$1$, even $\sim\!10^2$
-created photons would require $\tau_s<\tP$, which the lattice forbids by construction.
-What is ``extremely unlikely'' in the continuum becomes ``impossible past the Planck
-ceiling'' on the lattice. This is the same conversion QM-5 performs for the electron
-self-energy, where the lattice turns an infinite renormalization into a finite one; here
-it turns an infinite expected photon number into a finite, Planck-set one.
+\paragraph{Sharper than ``unlikely'' --- in the idealized limit only.} RGS say large photon
+numbers are improbable for realistic shutters; in Regime~A CPP agrees and adds nothing. The
+CPP statement bites only in Regime~B: a truncation sharper than one Absolute Moment is not
+merely improbable but forbidden, so the continuum's $\wcut\to\infty$ divergence cannot be
+realized and $\Nexp$ is capped at $\approx63\,C$. This is the same conversion QM-5 performs
+for the electron self-energy, where the lattice turns an infinite renormalization into a
+finite one; here it turns the instantaneous-shutter infinity into a finite, Planck-set
+value. The result is foundational --- a statement about which idealizations the substrate
+permits --- not an experimentally accessible prediction, since no realizable shutter
+approaches the lattice scale.
 
 % ============================================================
 % SECTION 5: Physical Interpretation
@@ -373,7 +442,7 @@ Photon creation & Bogoliubov mixing of $\hat a,\hat a^\dagger$ & dynamical-Casim
 $0\!\to\!\infty$ mixture & multi-photon Fock support & bosonic multi-occupation of $600$-cell modes (QM-5) \\
 Local simple / global complex & partial trace gives single photon / vacuum & $\Tr_{\mathrm{Sea}}$ under the Nexus (QM-4) \\
 Energy bookkeeping & apparent non-conservation (Noether) & open subsystem driven by the shutter; Nexus global-consistent \\
-$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ (UV divergence) & finite; $\wcut\le\wP=1/\tP$ (Prop.~\ref{prop:reg}) \\
+$\Nexp$ as shutter $\to$ instantaneous & $\to\infty$ logarithmically (formal cutoff, ``arbitrarily high'') & finite; formal cutoff identified with $\wP=1/\tP$ (Prop.~\ref{prop:reg}) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -388,25 +457,32 @@ granularity, and the lattice content appears only in the cutoff.
 \section{Falsifiers}\label{sec:falsifiers}
 
 \begin{enumerate}[leftmargin=2em]
-\item \textbf{Coefficient falsifier (OPEN-TP-1).} If the RGS Bogoliubov kernel, cut at
-$\pi/\lP$, yields a created-photon spectrum that is \emph{not} in the mild (at most
-logarithmic) ultraviolet class, the order-tens ceiling fails and must be replaced by
-whatever $\int_{\wg}^{\wP}(dN/d\omega)\,d\omega$ actually gives. The finiteness claim
-(Prop.~\ref{prop:reg}) survives regardless; only the number $\approx 64\kappa$ is at risk.
-\item \textbf{Compatibility falsifier.} If a careful CPP treatment of the truncated photon
-required violating global unitarity at the level of the full Sea state (not merely the
-open subsystem), the QM-4 measurement account would be contradicted and the compatibility
-claim of \S\ref{sec:compat} would fail.
-\item \textbf{Cutoff falsifier.} If the divergence were shown to be infrared rather than
-ultraviolet --- i.e.\ to survive any high-frequency cutoff --- the lattice cutoff would not
-regulate it and Prop.~\ref{prop:reg} would be vacuous. RGS's ``infinite only if
-instantaneous'' is direct evidence against this, but a full spectral computation
-(OPEN-TP-1) is the proper test.
-\item \textbf{Empirical (in principle).} A measured truncated-photon number distribution
-whose tail does not cut off below the bound implied by the fastest realizable shutter
-would constrain $\kappa$ and, at extreme shutter speeds far beyond present capability,
-could in principle distinguish a cutoff theory from a strictly continuum one.
+\item \textbf{Prefactor falsifier (narrowed OPEN-TP-1).} The divergence class is now
+derived (logarithmic, \S\ref{sec:class}). What remains is the $O(1)$ leading-log coefficient
+$C$. If evaluating the Hilbert--Schmidt mode sum $\|T_2\|_{\mathrm{HS}}^2$ for a realistic
+cut profile, with the integral cut at $\pi/\lP$, returns a $C$ far from order unity, the
+``$\approx63\,C$'' ceiling shifts accordingly. The finiteness claim (Prop.~\ref{prop:reg})
+and the logarithmic class survive regardless.
+\item \textbf{Class falsifier.} If a direct CPP-lattice computation of the truncation
+contradicted the logarithmic class \eqref{eq:logclass} --- e.g.\ produced a power-law tail
+--- the derivation of \S\ref{sec:class} would be wrong and the ceiling would need
+re-deriving (though it would remain finite under the cutoff).
+\item \textbf{Compatibility falsifier.} If a careful CPP treatment required violating global
+unitarity at the level of the full Sea state (not merely the open driven subsystem), the
+QM-4 measurement account would be contradicted and the compatibility claim of
+\S\ref{sec:compat} would fail.
+\item \textbf{Cutoff-identification falsifier.} The CPP-specific step is identifying RGS's
+formal ``arbitrarily high'' cutoff (their Eq.~B14) with the physical scale $\wP=1/\tP$. If
+the lattice's actual mode ceiling were shown not to act as a sharp frequency cutoff on the
+created-photon spectrum (e.g.\ if lattice dispersion reshaped the $1/\omega$ tail before the
+cutoff), the clean $\ln(\wP/\wg)$ ceiling would be modified.
 \end{enumerate}
+
+\noindent\emph{On experimental access.} We do not list a laboratory falsifier. As
+\S\ref{sec:class} shows, realizable shutters live in Regime~A, where the lattice is dormant
+and CPP and the continuum agree; the framework-specific value lives only in the idealized
+instantaneous limit. The result is foundational --- which idealizations the substrate permits
+--- not a measurable number.
 
 % ============================================================
 % SECTION 8: Conclusion
@@ -419,29 +495,40 @@ photon-wave, the many-photon Fock content, and the local-simple/global-complex s
 each instantiate a standing CPP mechanism (DP-Sea perturbation, bosonic mode occupation,
 partial trace under the Nexus), and the authors' own creation mechanism --- broken
 time-translation invariance --- is the CPP driven-boundary (dynamical-Casimir) process.
-The single framework-specific result is that the divergence, being ultraviolet, is
-regulated by the CPP cutoff $\wP=1/\tP$: the truncated-photon expected number is finite
-for every physical shutter and bounded for all of them, with an optical ceiling of order
-$64\kappa$ in the mild-divergence class the authors' phenomenology selects.
+The single framework-specific result is that the divergence, which RGS derive to be
+logarithmic and regularize with a formal ``arbitrarily high'' cutoff, is regulated by
+identifying that cutoff with the physical lattice scale $\wP=1/\tP$. The truncated-photon
+expected number is then finite, with an optical ceiling $\Nexp_{\max}=C\ln(\wP/\wg)\approx
+63\,C$ realized only in the idealized instantaneous limit (Regime~B); for any realistic
+shutter (Regime~A) the lattice is dormant and CPP and the continuum agree. The result is a
+foundational consistency statement --- the substrate supplies the finite value the
+continuum's instantaneous-shutter idealization lacks --- not an experimental prediction.
 
 \subsection{Swarm-Validation Contribution}
 This paper adds no new zero-parameter numerical correspondence to the cumulative swarm
 tally; its contribution is one framework-conditional structural result (the lattice
-regularization, Prop.~\ref{prop:reg}) and one in-principle-falsifiable order-of-magnitude
-prediction (the $\sim\!64\kappa$ optical ceiling) carried by the unchanged $9$-axiom
-stack, with the coefficient $\kappa$ deferred to OPEN-TP-1. Consistent with programme
-convention, the running swarm total is unchanged; the paper's weight is that an
-independently published, contested continuum result fits the CPP substrate without
-adjustment and is sharpened by it.
+regularization, Prop.~\ref{prop:reg}, now resting on a \emph{derived} logarithmic divergence
+class, \S\ref{sec:class}) and the associated order-tens optical ceiling $\approx63\,C$,
+carried by the unchanged $9$-axiom stack, with the single residual being the $O(1)$
+prefactor $C$ (narrowed OPEN-TP-1). Consistent with programme convention, the running swarm
+total is unchanged; the paper's weight is that an independently published, contested
+continuum result fits the CPP substrate without adjustment and is sharpened by it ---
+specifically, RGS's own formal cutoff acquires a physical identity as $\wP=1/\tP$.
 
 \subsection{Problem Status After This Paper}\label{sec:problem_status}
 \begin{itemize}[leftmargin=2em]
-\item NEW: \texttt{series\_phenomena/quantum\_optics/} domain opened; truncated-photon
-phenomenon registered as its first member at gated-conjecture maturity (this v0.1 draft).
-\item NEW: OPEN-TP-1 registered --- fix $\kappa$ by importing the RGS Bogoliubov kernel and
-cutting its frequency integral at $\pi/\lP$.
-\item Prop.~\ref{prop:reg} (lattice regularization): stated and argued at framework-
-conditional level; no global theorem claimed.
+\item \texttt{series\_phenomena/quantum\_optics/} domain: open (since v0.1); truncated-photon
+phenomenon its first member.
+\item OPEN-TP-1: \textbf{NARROWED} (v0.1 OPEN $\to$ v0.2 PARTIAL). The divergence class is
+closed --- logarithmic, derived in \S\ref{sec:class} from the RGS kernel --- so the remaining
+open piece is only the $O(1)$ leading-log prefactor $C$ (the Hilbert--Schmidt mode sum for a
+given cut profile, cut at $\pi/\lP$).
+\item Prop.~\ref{prop:reg} (lattice regularization): now rests on a derived class; stated at
+framework-conditional level, no global theorem claimed.
+\item Correction to v0.1: the regularization is active only in the idealized-instantaneous
+regime (Regime~B); for realistic shutters (Regime~A) the lattice is dormant and CPP and the
+continuum agree. The v0.1 phrasing ``finite for every physical shutter'' is replaced by the
+two-regime statement of \S\ref{sec:class}.
 \item QM-4, QM-5: load-bearing, unchanged; this paper is an application, not a revision.
 \end{itemize}
 
@@ -459,15 +546,20 @@ ceiling; Thomas Lee Abshier directed the work and the framework.
 % ============================================================
 \section{Numerical Verification}\label{app:numerics}
 
-The script
-\texttt{series\_phenomena/quantum\_optics/photon\_truncation/scripts/1700\_truncation\_regularization.py}
-evaluates the ceiling and the regularization curve. With $\tP=5.391247\times10^{-44}\,$s
-and an optical carrier $\wg=3.767\times10^{15}\,$rad/s it returns
-$\wP=1/\tP=1.855\times10^{43}\,$rad/s, $\ln(\wP/\wg)=63.76$, hence
-$\Nexp_{\max}=63.8\,\kappa$. In the log model $\Nexp(\wcut)=\kappa\ln(\wcut/\wg)$ grows
-from $\approx 10$ at $\wcut=10^{20}\,$rad/s to $63.8$ at the cutoff and diverges only as
-$\wcut\to\infty$; reaching $N\gtrsim10^2$ created photons (for $\kappa\lesssim1$) requires
-$\tau_s<\tP$, which the lattice forbids. A power-law spectrum ($p=0.5$) is included to
-confirm that finiteness-under-cutoff is spectrum-independent while the magnitude is not.
+Two scripts accompany this paper. The v0.1 script
+\texttt{scripts/1700\_truncation\_regularization.py} evaluates the regularization curve and
+the Planck-set ceiling. The v0.2 script
+\texttt{scripts/1701\_divergence\_class.py} establishes the divergence class and the
+two-regime structure: with $\tP=5.391247\times10^{-44}\,$s and the RGS optical carrier
+$\wg=2\pi\times10^{15}\,$Hz $=6.283\times10^{15}\,$rad/s it returns
+$\wP=1/\tP=1.855\times10^{43}\,$rad/s and $\ln(\wP/\wg)=63.25$, hence
+$\Nexp_{\max}=63.3\,C$. It reproduces the RGS gradual-removal bound
+\eqref{eq:rgsbound} (at transmissivity $10^{-4}$, $\Nexp\lesssim1$ down to
+$T\sim10^{-14}\,$s, matching their example), and confirms the scale ordering
+$\tP\ll1/\wg\ll T_{\mathrm{realistic}}$ ($\tP$ lies $27.5$ orders below the optical period),
+so the lattice cutoff is dormant for any realizable shutter and acts only on the idealized
+instantaneous limit. It also verifies that the gradual-bound validity window
+$1/\wg\ll\kappa_0\ll T$ cannot be pushed to $T=\tP$, confirming that the Planck scale is
+reached only in the sharp/logarithmic regime.
 
 \end{document}
