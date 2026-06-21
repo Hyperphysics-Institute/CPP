@@ -52,6 +52,7 @@ Conscious Point Physics derives the Standard Model from the 600-cell polytope (1
 | ID | Title | Key Result | Version |
 |----|-------|------------|---------|
 | **EU-1** | **The Primordial Scalar Spectral Index from Substrate Inflation** | **$n_s = 1 - 2/N_* \approx 0.9649$ + running $\alpha_s \approx -0.0006$ from A1 indistinguishability ($\mu \propto \ln\bar n$) + ZBW-bath symmetric constant-rate ZRP (+$H$-theorem) + $\delta N$; zero-new-axiom, framework-conditional; first cosmology / early-universe-sector paper; 3/3 panel SHIP; PRED-C-96 ($n_s$) + PRED-O-34 ($\alpha_s$); NO THEO; open residual OPEN-EU-1** | **v1.0** |
+| **TP-1** | **The Truncated Photon and the Lattice Regularization of Shutter-Induced Photon Creation** | **The Rukan–Gulla–Skaar truncated photon (PRL 2026) embedded in CPP: compatibility (QM-4 partial trace / QM-5 600-cell modes / driven-boundary dynamical Casimir) + foundational regularization. Logarithmic divergence class derived from the RGS kernel; cutoff grounded as the intrinsic 600-cell band top $\omega_{\max} = \sqrt{12}/t_P = 2\sqrt3/t_P$ ($\lambda_{\max} = z = 12$), ceiling $\approx 64.5\,C$. First quantum-optics-sector paper; 4/4 panel SHIP; NO THEO, NO PRED (framework-conditional, swarm tally unchanged); PROP-TP-1-1; open residual OPEN-TP-1** | **v1.0** |
 
 ---
 
