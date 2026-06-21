@@ -27,7 +27,7 @@ The package is the immutable request record; reviewer responses aggregate later 
 
 ## 3. The Dispatch Output (what the command produces)
 
-The assistant emits four blocks, in this order:
+The assistant emits **three** blocks, in this order. **The dispatch is a single shared document, identical for every reviewer** — the per-reviewer wrapper prompts of earlier versions are **retired** (Patch 1604). The package's own §6 (``read your own row'') already carries each reviewer's steer, so individualized wrappers are redundant; single-document was the design intent of the §6 steer rows all along.
 
 ### (a) Identification header — so Thomas is never lost
 One short block naming, in plain words:
@@ -37,57 +37,46 @@ One short block naming, in plain words:
 - **Package file:** the repo path **and** the raw GitHub URL (provenance pointer; the inline block of (b) is the delivery).
 - **Responses land in:** the `reviews-<ARTIFACT-ID>.md` path.
 
-### (b) The inline package block — **DEFAULT delivery** (per CONV-001)
-The full rendered package body delivered as **one copy-paste block** (4-backtick outer fence so the embedded code fences render), per CONV-001 / `templates/presentation_file.md`. This is the **default, not a fallback.** Empirically (CC-arc cycle, 13 Jun 2026) the repo's raw GitHub URL was **unreachable by every external reviewer** (private repo / CDN lag) — none of ChatGPT/Grok/Copilot could fetch it; all three reviewed cleanly from the inline block. So the inline block is authoritative. It carries, at its head, a one-line GitHub pointer (blob/raw, **marked "likely unreachable; inline is authoritative"** — provenance only), then the one-paragraph ask, then the full package §0–§8 **including the verify code in full**. One block per reviewer; the package's own §6 lets each reviewer find their steer.
+### (b) The single shared document — **the delivery** (per CONV-001)
+The full rendered package body delivered as **one copy-paste block** (4-backtick outer fence so the embedded code fences render), per CONV-001 / `templates/presentation_file.md`. This is the **default and the only delivery.** Empirically (CC-arc cycle, 13 Jun 2026) the repo's raw GitHub URL was **unreachable by every external reviewer** (private repo / CDN lag) — none of ChatGPT/Grok/Copilot could fetch it; all three reviewed cleanly from the inline block. So the inline block is authoritative. It carries, at its head, a one-paragraph ask plus a one-line GitHub pointer (blob/raw, **marked "likely unreachable; inline is authoritative"** — provenance only), then the full package §0–§8 **including the verify code in full**. It is **one identical document pasted to every active reviewer** (default panel: ChatGPT, Grok, Copilot; optional Gemini for breadth; a hostile pass can be requested from any panel member). The package's own §6 (``read your own row'') carries each reviewer's steer — **including any reviewer-specific disambiguation rider** (e.g. ChatGPT's) — so **no per-reviewer wrapper is built or needed.**
 
 ### (b-alt) The raw GitHub URL — secondary provenance pointer
 `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<path-to-package>`
 (Provenance/record only. **Do not rely on it for delivery** — for this repo it is generally not fetchable by external reviewers. The inline block (b) is the delivery.)
 
-### (c) Per-reviewer dispatch prompts — paste-ready
-One block **per active reviewer** (default panel: ChatGPT, Grok, Copilot; optional Gemini for breadth; a hostile pass can be requested from any panel member), each a complete copy-paste using the skeleton in §4. They differ only in the reviewer name and the one-line reviewer-specific steer (pulled from the package §6). Under inline-default delivery (b), each per-reviewer dispatch is the **steer line followed by the inline package block** — one paste, no link to open.
-
-### (d) Delivery-mode note
-**Inline single-block (b) is the default and is always sufficient (zero-dependency).** The raw GitHub URL is a secondary provenance pointer only and is generally unreachable for external reviewers on this repo (private / CDN lag) — never gate a dispatch on it. Pastebin/raw-URL remain optional per OS §5 if a reviewer specifically prefers a link, but the inline block does not require Thomas to wait for, or reply "paste it" to, a failed fetch — it ships inline from the start.
+### (c) Delivery-mode note
+**The single shared document (b) is the entire dispatch — zero-dependency, pasted identically to each reviewer; the per-reviewer wrapper prompts are retired.** The raw GitHub URL is a secondary provenance pointer only and is generally unreachable for external reviewers on this repo (private / CDN lag) — never gate a dispatch on it. Pastebin/raw-URL remain optional per OS §5 if a reviewer specifically prefers a link, but the inline block ships from the start and never requires Thomas to wait for, or reply "paste it" to, a failed fetch.
 
 ---
 
-## 4. The dispatch-prompt skeleton (reusable)
+## 4. The single-document lead-in (the head of the shared block)
 
-Fill the `<…>` slots. Keep it short — the package carries the depth.
+The shared document opens with a short, reviewer-agnostic framing paragraph — the same for everyone, because each reviewer finds their own steer in the package §6. Keep it short; the package carries the depth. Fill the `<…>` slots:
 
 ```
-You are <REVIEWER>, one of three independent reviewers on the Conscious Point
-Physics (CPP) review panel. CPP is a theoretical-physics programme deriving
-Standard-Model structure from a 600-cell lattice substrate. I'd like your review
-of <ARTIFACT-ID> — <ONE-LINE WHAT-IT-IS>.
+You are one of three independent reviewers (ChatGPT, Grok, Copilot) on the
+Conscious Point Physics (CPP) review panel. CPP is a theoretical-physics
+programme deriving Standard-Model structure from a 600-cell lattice substrate.
+Please review <ARTIFACT-ID> — <ONE-LINE WHAT-IT-IS>. Everything you need is inline
+below (context, claim chain, triage, verify code, response format). Find YOUR
+reviewer-specific steer in §6 ("read your own row"). If you can run the §7 code,
+please do and report SCRIPT-EXECUTED. Label every claim with its verification
+tier — INSPECTED / INDEPENDENTLY RECOMPUTED / SCRIPT-EXECUTED (PD-002) — and
+respond in the package's §8 format.
 
-The complete, self-contained review package is here:
-  <RAW-URL>
-(If you can't open the link, reply "paste it" and I'll paste the full text.)
-
-Please:
-- Read the whole package — everything you need is inline (context, the claims,
-  the scrutiny questions, and the verify code in its §7; no other files needed).
-- Work the triage order in the package's §5; your reviewer-specific steer is in
-  its §6. <ONE-LINE REVIEWER STEER>
-- Label every numerical/structural claim with its verification tier —
-  INSPECTED / INDEPENDENTLY RECOMPUTED / SCRIPT-EXECUTED (the package §7/§8;
-  PD-002). If you can run the embedded code, please do and report SCRIPT-EXECUTED.
-- Respond in the package's §8 format: lead with a one-line verdict on the
-  top-triage question(s), then per-question findings, and clearly separate
-  verdict-flipping objections (with a worked argument) from calibration
-  (wording/scope) suggestions.
-
-Send your review back to me as text and I'll integrate it.
+File (provenance only — likely unreachable for external reviewers on this private
+repo; the inline content below is authoritative):
+  blob: https://github.com/Hyperphysics-Institute/CPP/blob/main/<path-to-package>
+  raw:  https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<path-to-package>
 ```
 
-**Disambiguation rider (append for ChatGPT, and any reviewer prone to cross-wiring sessions):**
+**Reviewer-specific framing — including any disambiguation rider — lives in the package §6, not in a wrapper.** A reviewer prone to cross-wiring sessions (e.g. ChatGPT) gets its rider as a line inside its own §6 row, for example:
 ```
-Note: this is the CPP <SECTOR> programme's <ARTIFACT-TYPE>; it is NOT a
-nuclear-physics OPEN-SS audit, NOT a different paper, and NOT a request to
+Disambiguation rider: this is the CPP <SECTOR> programme's <ARTIFACT-TYPE>; it is
+NOT a nuclear-physics OPEN-SS audit, NOT a different paper, and NOT a request to
 reconstruct from memory — engage the inline package content directly.
 ```
+That way the single shared document remains one identical paste for all reviewers while still steering each one correctly.
 
 ---
 
@@ -108,3 +97,5 @@ Reviewer responses come back to Thomas, who relays them. The assistant then inte
 ---
 
 *Created Patch 0660 (Session 150, 30 May 2026) at Thomas's request, after the TARROW-1 cycle-opening (Patch 0659) surfaced the missing piece: a finished review package is not actionable until it is turned into paste-ready, reviewer-addressed dispatch text. This protocol closes that gap and makes "initiate review protocol" a first-class command alongside "execute handover protocol."*
+
+*Updated Patch 1604 (21 June 2026, SF-6 cycle) — **retired the per-reviewer dispatch prompts (old §3(c)/§4 skeleton) in favour of a single shared document.** The dispatch is now ONE identical copy-paste block pasted to every reviewer; each reviewer's steer (and any disambiguation rider) lives in the package's own §6 "read your own row," which made the per-reviewer wrappers redundant. §3 now emits three blocks (header, single shared document, delivery-mode note); §4 is the reviewer-agnostic single-document lead-in. Trigger and §5 cheat-sheet unchanged.*
