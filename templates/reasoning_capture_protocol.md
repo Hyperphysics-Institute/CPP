@@ -33,6 +33,10 @@ in a **single `git am`**:
    Omit for pure-synthesis patches (e.g. umbrella registrations) unless they
    contain a checkable claim.
 4. **The apply-and-push block.** *Already happens.*
+5. **A founder-contribution block** — **only if** the patch's result was shaped
+   by a TLA (founder) contribution (insight, mechanism, reframe, correction,
+   decision). Verbatim, attributed, inside the reasoning fragment. See §10.
+   **Mandatory when triggered.**
 
 One patch, multiple files, one `git am`. **No change to the apply workflow.**
 The capture stops being a thing to remember because it rides the contract.
@@ -205,3 +209,51 @@ handover over the general bootup).
        Do NOT proceed to any physics/registration work until done.
    ```
    The precondition must live IN the handover, not only in bootup.md.
+
+---
+
+## 10. Founder-contribution capture (verbatim, attributed) — added 22 June 2026, Patch 2034
+
+**Problem it solves.** The founder (Thomas / TLA) regularly contributes the substantive physics that *shapes
+a result* — an insight, a mechanism, a reframe, a correction, a decision. Until now these were folded into the
+worker's reasoning fragment as **paraphrase** ("TLA pushed back…", "Thomas supplied…") and never preserved in
+his own words or promoted to the founder's record (`founders_vision.md`). Measured cost: across one intense
+multi-window period (June 2026), 15+ reasoning fragments paraphrased a TLA contribution and **zero** reached
+`founders_vision.md`. His voice was being lost the same way physics reasoning was lost before §0–§1 existed —
+by not being captured, verbatim, at patch-time. This section closes that gap with the same mechanism.
+
+**The trigger.** Any patch whose result was *shaped by a TLA contribution*. Test: if TLA's input changed what
+the patch concludes or how it concludes it, the trigger fires. (Routine instructions — "apply this", "proceed"
+— do not fire it. Substantive physics/structure/decision does.)
+
+**The action.** When triggered, the patch's reasoning fragment MUST contain a delimited block, verbatim:
+
+```
+## FOUNDER CONTRIBUTION (verbatim — TLA, <YYYY-MM-DD>)
+> <TLA's actual words, quoted exactly — NOT a paraphrase, NOT a smoothing>
+*Context:* <one line: what question it answered / what result it shaped>
+```
+
+Verbatim because (per §0) the actual words are recoverable only at patch-time; later reconstruction smooths
+and rationalizes them away. Multiple contributions in one patch → multiple blocks. If the contribution spans
+several messages, quote the load-bearing passage and note the span.
+
+**The owner.** The worker — same as reasoning capture. It rides the existing contract (§1, element 5), so it
+stops being a thing to remember; it is part of shipping the patch.
+
+**The promotion step.** At campaign/session close, or periodically, run `templates/sweep_founder_contributions.sh`.
+It greps every `FOUNDER CONTRIBUTION (verbatim — TLA` block across `reasoning/`, prints each with its source
+and a promoted/orphan flag, and the integrator (TLA) promotes the orphans into `founders_vision.md` as dated,
+attributed entries — the verbatim quote preserved, with the resolution it led to (the established
+`founders_vision.md` entry form).
+
+**Why this closes the gap.** It has the four properties that made physics-reasoning capture work — a clear
+**trigger**, a clear **owner**, **immediate** at-patch-time capture, and a **greppable delimiter** that makes
+promotion mechanical — and it works across **parallel windows**: each window captures in its own patches; the
+sweep collects across all of them at integration time.
+
+**Backlog policy.** Pre-existing paraphrased contributions (grep `reasoning/` for `TLA`/`Thomas`) are
+recoverable *in substance* now and *verbatim* only from the session transcripts. Policy: on the next sweep,
+promote the paraphrased substance immediately (attributed, dated, marked `[reconstructed]` per §4); recover
+verbatim from transcripts where the contribution was load-bearing and worth the dig. Do not let the verbatim
+ideal block the substance from reaching the founder's record.
