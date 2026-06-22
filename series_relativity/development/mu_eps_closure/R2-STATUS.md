@@ -104,3 +104,12 @@ grounded c(C) — the corpus's c∝√C (0740) and the fixed-ω₀ mechanical c=
 orders. The c∝C behind the 2016/2017 PASS was circular (derived from μ₀∝α_B). **R2 ladder end-state:
 RETRACTED to OPEN, leaning FAIL**; revives to PASS only if c∝C is independently/self-consistently grounded.
 See `em_emergence/Q3-Q2-HONEST-RESULT.md`.
+
+## Update — Patch 2024: FAIL was insecure (phonon≠photon); R2 REOPENED to OPEN
+The 2021 FAIL used c∝√C = the DP-lattice **phonon** (acoustic) speed √(C/m)·a. But c06 says the **photon**
+advances PSR/Moment (the **budget** speed) and Patch 2011 established photon≠phonon — so 2021 plugged the
+phonon speed into the photon's impedance Z₀=C/c. The photon speed's C-dependence is set by the (unspecified)
+ΔSSV↔C relation, NOT √C. **R2 ladder end-state: OPEN** (not "leaning FAIL"). The unified-budget principle
+(c06 photon=budget + SR-1 matter=budget ⇒ light & matter co-scale ⇒ α fixed while c varies) is the route to
+PASS, grounded but not yet derived (owes the ΔSSV↔C relation + ε₀ co-scaling). See
+`velocity_ssv_time_dilation/MISSING-MACHINERY-FOUND.md`.

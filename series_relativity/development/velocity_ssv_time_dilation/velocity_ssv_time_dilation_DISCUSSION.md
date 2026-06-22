@@ -75,3 +75,10 @@ induction) and two open gates (VTD-1 exact-γ, VTD-2 ≡ R2). Defer to integrato
 This is discussion captured for the record. The mechanism is coherent and well-pedigreed; it inherits the
 exact-γ and Z₀-preservation obligations rather than escaping them, and Z₀-preservation (R2) is currently
 leaning FAIL. Nothing here is overclaimed as resolved.
+
+---
+## Update — Patch 2024: VTD-1 conditional-PASS, VTD-2 resolved, R2 reopened
+VTD-1 (exact-γ): the quadrature budget gives γ exactly — PASS conditional on bulk⊥internal orthogonality.
+VTD-2 (velocity α): RESOLVED — α is a Lorentz scalar, preserved given VTD-1; not an independent gate (my
+"VTD-2 ≡ R2" was too strong — gravity lacks the scalar protection). R2 (gravity): the 2021 FAIL used the
+phonon speed for the photon; REOPENED to OPEN. See `MISSING-MACHINERY-FOUND.md`.
