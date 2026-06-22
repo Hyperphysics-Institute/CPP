@@ -5,7 +5,15 @@ The canonical filename is fixed (no version suffix); version history is tracked 
 
 ---
 
-## v0.6 (DRAFT) — 21 June 2026, Patch 1320
+## v0.7 (DRAFT) — 21 June 2026, Patch 1321
+
+Fifth §10 member built under the build rule: **THEO-SF7-CONSIST-6 (SF-5 ↔ SF-3 colour-Casimir consistency)** (`sec:consist6`) — completes the strong-sector pairings.
+
+**The theorem.** The colour Casimir C_F = (N²−1)/(2N)|_{N=3} = 4/3 (the SU(3) fundamental-rep Casimir, derived in SF-5/SS-2) enters the quark mass spectrum (SF-3) through the top-quark relay multiplier z·C_F = 12·4/3 = 16: M_t = m_e(z/φ)V_t^{7/3}·z·C_F at V_t=30 → m_t ≈ 169,570 MeV vs PDG 172,760 (−1.8%). One SU(3) group-theoretic invariant bridges the strong *dynamics* (SF-5) and a *kinematic mass observable* (SF-3 top mass). Four-part proof: (i) C_F is the SU(3) Casimir (SF-5/SS-2); (ii) C_F enters the quark mass formula as the only colour input (SF-3); (iii) the constraint — non-trivial because the top mass cross-checks the colour group (were C_F not 4/3, z·C_F=16 and the top-mass prediction would shift); (iv) **distinctness** — the shared coupling α_s is already accounted by CONSIST-3; this member's unique obligation is the colour-Casimir bridge from dynamics to the mass spectrum.
+
+**Build-rule / distinctness.** Unique obligation (a single SU(3) Casimir spanning dynamics and the mass spectrum) distinct from CONSIST-4 (which establishes *that* the colour group is SU(3)) and CONSIST-3 (the α_s/sin²θ_W partition). SF-5 itself states the consistency clause. Roadmap row → built (five remain); caption + abstract (six built, compacted to terse obligation phrases) updated; v0.6→v0.7. Macros `\CF`/`\me` not in SF-7 preamble → plain C_F/m_e used. Compiles clean: `pdflatex` ×2, 12 pp, 0 errors, 0 undefined refs/cites, 0 overfull. Bundles `reasoning/1321.md`. Registration deferred to ship-time.
+
+
 
 Fourth §10 member built under the build rule: **THEO-SF7-CONSIST-5 (SF-6 ↔ SF-2 photon–cage-boson categorical distinction)** (`sec:consist5`) — the cleanest categorical no-double-counting in the family.
 
