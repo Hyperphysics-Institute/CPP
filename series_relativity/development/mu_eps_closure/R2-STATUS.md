@@ -161,3 +161,17 @@ Caveats: order-of-magnitude estimate; relies on c07 static-metric completeness (
 metric is limited for GW *radiation*). **R2 ladder: PASS conditional on (i) VTD-1 + (ii) scalar-channel
 isolation (~11 orders supported, modulo c07 static completeness).** Residual now precise/twofold: c07 static
 completeness + VTD-1 quadrature. See `em_emergence/R2-PANEL-REVISE-locality.md`.
+
+## Update — Patch 2030: c07 static-completeness (caveat b) RESOLVED via LSP scalar+vector content
+The 1110 op:einstein audit pins c07's field content: the LSP carries **one scalar (|SSV|_abs) + one vector
+(SSV_net), no rank-2/spin-2 d.o.f.** The metric map is fully determined (g_tt from scalar; g_ij = δ_ij +
+∂_i(SSV_net)_j from vector) — no other static spatial terms can exist. In a uniform region the scalar gives
+an isotropic piece and the vector's gradient vanishes; the *only* object that could supply an anisotropic
+non-gradient static term is a spin-2 mode, which is **absent**. So static g_ij → δ_ij ⇒ **scalar-channel
+isolation EXACT in the static sector**. The one gap (spin-2) is **radiative** — the audit: "exact in the
+static/Newtonian sector … missing the spin-2 *radiative* sector" — and a static local-α config doesn't
+excite it (consistent with GR static isotropy). **R2 does NOT inherit op:einstein (a)'s openness** (that is
+the radiative sector; orthogonal). **R2 ladder: PASS conditional on VTD-1**, scalar-channel isolation now
+complete in the static sector [b resolved] + gradient-suppressed ~11 orders [a, 2029]. Forward flag: the
+eventual spin-2 fix must be checked to keep its static local-α contribution null. See
+`em_emergence/C07-STATIC-COMPLETENESS-RESOLVED.md`.
