@@ -97,3 +97,10 @@ independent falsifier; its FAIL scheme is the one that also kills VSL, so **R2 P
 R2 ladder end-state: **proposed PASS, conditional on CPP's standing VSL commitment AND on round-3 panel review of the lock**; residual depth = a rigor
 upgrade (derive μ₀ from the DI-bit reconstruction dynamics, SF-6 content) + round-3 panel review. See
 `em_emergence/Z0-PARTITION-RESULT.md` (2016) and `em_emergence/MU0-EMERGENCE-SCHEME.md` (2017).
+
+## Update — Patch 2021: PASS RETRACTED; R2 OPEN, leaning FAIL
+The Q3 rigor upgrade collapses R2 to Z₀=C/c (analogy-free, from solid ε₀∝1/C). PASS ⟺ c∝C exactly. Every
+grounded c(C) — the corpus's c∝√C (0740) and the fixed-ω₀ mechanical c=const — makes Z₀ carry C ⇒ FAIL ~6
+orders. The c∝C behind the 2016/2017 PASS was circular (derived from μ₀∝α_B). **R2 ladder end-state:
+RETRACTED to OPEN, leaning FAIL**; revives to PASS only if c∝C is independently/self-consistently grounded.
+See `em_emergence/Q3-Q2-HONEST-RESULT.md`.

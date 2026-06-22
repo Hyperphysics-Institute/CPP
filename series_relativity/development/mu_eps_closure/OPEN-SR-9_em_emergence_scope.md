@@ -104,3 +104,10 @@ DP stiffness") force the compliance scheme μ₀∝1/C over a flat μ₀ ⇒ Z�
 an independent falsifier — its FAIL scheme is the one that also kills VSL, so R2 PASSES iff VSL holds.
 See `em_emergence/MU0-EMERGENCE-SCHEME.md`. **Residual depth (rigor upgrade, not a gate):** derive μ₀ from
 the DI-bit reconstruction dynamics explicitly (SF-6 content) + round-3 panel review.
+
+---
+
+## Downgrade — Patch 2021 (Q3/Q2): proposed PASS RETRACTED
+Q3 (drop the analogy): Z₀=1/(ε₀c)=C/c ⇒ R2 PASS ⟺ c∝C exactly. Grounded c(C) is √C (corpus 0740) or const
+(fixed-ω₀) — both ⇒ Z₀ carries C ⇒ FAIL ~6 orders. Q2: the lock does NOT save it — independent physics
+points AT the fail (c∝√C), not away. R2 reopened, leaning FAIL. See `em_emergence/Q3-Q2-HONEST-RESULT.md`.

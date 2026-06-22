@@ -1,3 +1,5 @@
+> **⚠ SUPERSEDED / RETRACTED by Patch 2021.** The proposed closure below does NOT survive the Q3 rigor upgrade. Dropping the μ₀∝α_B analogy and using Z₀=1/(ε₀c)=C/c with the corpus's grounded c∝√C gives Z₀∝√C — a ~6-order FAIL. The c∝C this argument needs was circular (derived from μ₀∝α_B). R2 is OPEN, leaning FAIL. See `Q3-Q2-HONEST-RESULT.md` (2021). The text below is kept for the record.
+
 # OPEN-SR-9 Gate — The μ₀-Emergence Scheme From c06: A PROPOSED Closure (Under Adversarial Review)
 
 **Patch:** 2017 (22 June 2026) · **Window:** 2000-band · **Work item:** OPEN-SR-9 / R2
