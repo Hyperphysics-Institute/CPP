@@ -91,9 +91,9 @@ The 2011 block was lifted by the founder's physical mechanism (DP centers pinned
 internal pole-displacement wave, E=radial / B=tangential, one Coulomb binding — not the acoustic mode 2011
 mis-used). **2016:** the single-DP computation gives geometric Z₀ (PASS) + varying c (VSL), forced by the
 fixed Absolute Moment (counterfactual confirms), **conditional on the μ₀-emergence scheme.** **2017:** that
-gate is **closed in favour of PASS**, derived from c06 — VSL-consistency excludes the kinetic FAIL scheme,
+gate is **PROPOSED to close in favour of PASS** (argument under round-3 review), derived from c06 — VSL-consistency excludes the kinetic FAIL scheme,
 and the c06 reconstruction mechanism + line 91 force the compliance scheme μ₀∝1/C. **Lock:** R2 is not an
 independent falsifier; its FAIL scheme is the one that also kills VSL, so **R2 PASSES iff VSL holds**.
-R2 ladder end-state: **PASS, conditional on CPP's standing VSL commitment**; residual depth = a rigor
+R2 ladder end-state: **proposed PASS, conditional on CPP's standing VSL commitment AND on round-3 panel review of the lock**; residual depth = a rigor
 upgrade (derive μ₀ from the DI-bit reconstruction dynamics, SF-6 content) + round-3 panel review. See
 `em_emergence/Z0-PARTITION-RESULT.md` (2016) and `em_emergence/MU0-EMERGENCE-SCHEME.md` (2017).

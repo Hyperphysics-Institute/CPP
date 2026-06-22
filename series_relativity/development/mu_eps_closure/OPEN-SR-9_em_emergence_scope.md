@@ -95,9 +95,9 @@ EM-emergence dynamics. Sub-question 2 (VSL channel identity) **clarified**: c va
 
 ---
 
-## Gate closed — Patch 2017 (μ₀-emergence scheme derived → R2 PASS, locked to VSL)
+## Gate — Patch 2017 (μ₀-emergence scheme: PROPOSED closure → R2 proposed-PASS, locked to VSL; under round-3 review)
 
-Sub-question 3 (ε₀/μ₀ symmetry) — the 2016 gate — is **closed in favour of PASS**, derived from c06 (not
+Sub-question 3 (ε₀/μ₀ symmetry) — the 2016 gate — has a **PROPOSED closure in favour of PASS** (under round-3 adversarial review), derived from c06 (not
 assumed): (1) VSL-consistency excludes the kinetic-inductance FAIL scheme (μ₀∝C ⇒ c fixed ⇒ no VSL); (2) the
 c06 reconstruction mechanism (photon reconstructed each Moment, not transported) + line 91 ("μ₀,ε₀ share one
 DP stiffness") force the compliance scheme μ₀∝1/C over a flat μ₀ ⇒ Z₀ geometric ⇒ PASS. **Lock:** R2 is not

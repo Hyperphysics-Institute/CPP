@@ -1,7 +1,7 @@
-# OPEN-SR-9 Gate — The μ₀-Emergence Scheme, Derived From c06: Closes to PASS
+# OPEN-SR-9 Gate — The μ₀-Emergence Scheme From c06: A PROPOSED Closure (Under Adversarial Review)
 
 **Patch:** 2017 (22 June 2026) · **Window:** 2000-band · **Work item:** OPEN-SR-9 / R2
-**Status of result:** **The gate that left 2016 a conditional PASS is closed in favour of PASS.** The
+**Status of result:** **PROPOSED closure — under adversarial (round-3) review, NOT an accepted result.** We argue the gate that left 2016 a conditional PASS *closes* in favour of PASS; whether the argument actually holds is exactly what the round-3 panel is being asked to decide. Every "PASS / closed" statement below is the PROPOSITION UNDER TEST, not an established fact. The
 load-bearing assumption — that μ₀ emerges from the substrate as a *compliance* (μ₀∝1/C, giving geometric
 Z₀) rather than a *kinetic inductance* (μ₀∝m∝C, giving Z₀∝C, FAIL) — is settled by two independent
 c06-grounded arguments. The deepest honest statement: **R2 is no longer an independent falsifier — the FAIL
@@ -63,8 +63,8 @@ reconstruction mechanism (§3). And the scheme that survives is the *same* μ₀
 
 ## 5. Honest status and what remains
 
-- **Gate: CLOSED to PASS** at the level of c06's stated mechanism (reconstruction + line 91) and CPP's VSL
-  commitment. 2016's conditional-PASS → **PASS**.
+- **Gate: PROPOSED closed (pending round-3 panel review)** at the level of c06's stated mechanism (reconstruction + line 91) and CPP's VSL
+  commitment. 2016's conditional-PASS → **proposed PASS** (pending review).
 - **R2 overall:** from "open ~6-order independent falsifier" → "**PASS**, locked to VSL; the only way to
   fail it is to abandon the VSL horizon mechanism, which is independently motivated and shipped (EU-1)."
 - **Not overclaimed — the rigor upgrade that remains:** §3's first bullet reads μ₀ off c06's *stated*

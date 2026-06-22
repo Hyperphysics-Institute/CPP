@@ -27,3 +27,12 @@ reviewers fetch URLs. That solves Thomas's stated friction (no repo trip) direct
 ## Discipline
 - Owned path em_emergence/ (dispatch) + templates/presentation_file.md (shared workflow template, Thomas-
   directed workflow fix). NO THEO. Files via bash/str_replace; git status verified.
+
+---
+## Correction (Patch 2020, per ChatGPT round-2-on-the-patch)
+The sentence above — "ChatGPT couldn't review because my 2018 dispatch put a SUMMARY + links instead of the
+full content" — OVERSTATES the diagnosis. The missing content was *a* cause but not the only one: ChatGPT
+notes its verdict on the underlying theory would likely be REVISE even with the documents present. So the
+2018 failure had two independent causes (nothing to review AND an unresolved claim); embedding the content
+fixes the first, not the second. Corrected to avoid implying that inline content would have changed the
+verdict.

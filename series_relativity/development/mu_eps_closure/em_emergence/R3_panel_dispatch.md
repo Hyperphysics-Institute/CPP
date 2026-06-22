@@ -1,11 +1,12 @@
-# R2 / OPEN-SR-9 — Round-3 Panel Dispatch v2 (SELF-CONTAINED, single-block, CONV-001)
+# R2 / OPEN-SR-9 — Round-3 Panel Dispatch v3 (SELF-CONTAINED, neutrally framed, CONV-001)
 
 Copy everything inside the 4-backtick fence and paste once to each panel member
-(default panel: ChatGPT / Grok / Copilot). The full theory is embedded inline — the reviewer
-needs to fetch nothing. URLs are a supplementary reference only.
+(default panel: ChatGPT / Grok / Copilot). Full theory embedded inline. The packet is framed
+as a PROPOSED closure under test (not an established result), per the round-2 reviewer's
+correct point that stating closure biases an adversarial review.
 
 `````
-**CPP review — round 3, adversarial. Your job is to BREAK the claim below, not confirm it.** In rounds 1–2 you returned REVISE on whether the DP-Sea vacuum impedance Z0 is geometric (which decides whether the fine-structure constant alpha drifts when the speed of light c varies in CPP's early-universe VSL mechanism). We claim it is now resolved in CPP's favour, via a new mechanism plus a consistency lock. The two source documents are reproduced IN FULL below so you need fetch nothing; attack hard — a successful break is a ~6-order falsification of CPP's VSL horizon mechanism. The three target questions and the verdict request are at the very end.
+**CPP review — round 3, adversarial. We present a PROPOSED closure argument; your job is to decide whether it actually closes, and to BREAK it if you can.** In rounds 1–2 you returned REVISE on whether the DP-Sea vacuum impedance Z0 is geometric (which decides whether the fine-structure constant alpha drifts when the speed of light c varies in CPP's early-universe VSL mechanism). Below are two source documents reproduced IN FULL (you need fetch nothing). IMPORTANT: the documents use confident language ("PASS", "closed", "the lock") — treat every such statement as the PROPOSITION UNDER TEST, not as an established fact. The whole point of this review is to decide whether the proposed closure holds. A successful break is a ~6-order falsification of CPP's VSL horizon mechanism. Target questions + verdict request are at the end.
 
 Supplementary links (optional; full text is inline below):
   raw 2016: https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_relativity/development/mu_eps_closure/em_emergence/Z0-PARTITION-RESULT.md
@@ -14,7 +15,7 @@ Supplementary links (optional; full text is inline below):
             https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/series_relativity/development/mu_eps_closure/em_emergence/scripts/2017_mu0_scheme.py
 
 ================================================================================
-DOCUMENT 1 of 2 — Z0-PARTITION-RESULT.md (Patch 2016)
+DOCUMENT 1 of 2 — Z0-PARTITION-RESULT.md (Patch 2016)  [claims under test]
 ================================================================================
 # OPEN-SR-9 / R2 — Z₀ From the Single-DP Radial(E)/Tangential(B) Response: PASS-Pointing
 
@@ -96,12 +97,12 @@ NO THEO (conditional derivation result; the no-THEO-for-conditional discipline a
 scheme is closed; the fixed-ω₀ input is existing c02, not new).
 
 ================================================================================
-DOCUMENT 2 of 2 — MU0-EMERGENCE-SCHEME.md (Patch 2017)
+DOCUMENT 2 of 2 — MU0-EMERGENCE-SCHEME.md (Patch 2017)  [claims under test]
 ================================================================================
-# OPEN-SR-9 Gate — The μ₀-Emergence Scheme, Derived From c06: Closes to PASS
+# OPEN-SR-9 Gate — The μ₀-Emergence Scheme From c06: A PROPOSED Closure (Under Adversarial Review)
 
 **Patch:** 2017 (22 June 2026) · **Window:** 2000-band · **Work item:** OPEN-SR-9 / R2
-**Status of result:** **The gate that left 2016 a conditional PASS is closed in favour of PASS.** The
+**Status of result:** **PROPOSED closure — under adversarial (round-3) review, NOT an accepted result.** We argue the gate that left 2016 a conditional PASS *closes* in favour of PASS; whether the argument actually holds is exactly what the round-3 panel is being asked to decide. Every "PASS / closed" statement below is the PROPOSITION UNDER TEST, not an established fact. The
 load-bearing assumption — that μ₀ emerges from the substrate as a *compliance* (μ₀∝1/C, giving geometric
 Z₀) rather than a *kinetic inductance* (μ₀∝m∝C, giving Z₀∝C, FAIL) — is settled by two independent
 c06-grounded arguments. The deepest honest statement: **R2 is no longer an independent falsifier — the FAIL
@@ -163,8 +164,8 @@ reconstruction mechanism (§3). And the scheme that survives is the *same* μ₀
 
 ## 5. Honest status and what remains
 
-- **Gate: CLOSED to PASS** at the level of c06's stated mechanism (reconstruction + line 91) and CPP's VSL
-  commitment. 2016's conditional-PASS → **PASS**.
+- **Gate: PROPOSED closed (pending round-3 panel review)** at the level of c06's stated mechanism (reconstruction + line 91) and CPP's VSL
+  commitment. 2016's conditional-PASS → **proposed PASS** (pending review).
 - **R2 overall:** from "open ~6-order independent falsifier" → "**PASS**, locked to VSL; the only way to
   fail it is to abandon the VSL horizon mechanism, which is independently motivated and shipped (EU-1)."
 - **Not overclaimed — the rigor upgrade that remains:** §3's first bullet reads μ₀ off c06's *stated*
@@ -186,9 +187,9 @@ NO THEO (conditional derivation + consistency lock; the fixed-ω₀ and VSL inpu
 ================================================================================
 YOUR REVIEW — attack these three; be hostile; answer each
 ================================================================================
-Q1. Does "the photon is reconstructed each Moment, not transported" GENUINELY exclude a kinetic-inductance contribution to mu0? Construct the strongest case that mu0 still carries an effective inertia (mu0 ~ m) DESPITE the reconstruction picture — i.e., that the magnetic energy is kinetic even when the field is rebuilt each tick.
-Q2. Is the VSL-consistency LOCK a real consistency requirement, or circular / sleight-of-hand? Is it legitimate to use CPP's standing VSL commitment to exclude the kinetic scheme, or does that smuggle in the conclusion? We CONCEDE a flat mu0 gives VSL + R2-FAIL simultaneously, and exclude it only via c06's "mu0,eps0 share one DP stiffness" — attack THAT exclusion specifically.
-Q3. The fixed-omega_0 Larmor step: is alpha_B ~ 1/m the right magnetic response for this geometry, and is the symmetric emergence mu0 ~ alpha_B (as eps0 ~ alpha_E) defensible, or is the diamagnetic sign/normalization (alpha_B < 0) a problem?
+Q1. Does "the photon is reconstructed each Moment, not transported" GENUINELY exclude a kinetic-inductance contribution to mu0? (Note: reconstruction and inertia are not obviously mutually exclusive — a discrete-time system reconstructed each update can still exhibit effective inertial behaviour through its update law.) Construct the strongest case that mu0 still carries an effective inertia (mu0 ~ m) DESPITE the reconstruction picture.
+Q2. Is the VSL-consistency LOCK a real consistency requirement, or circular? The sharpest form: can mu0 ~ C be excluded by INDEPENDENT physics, or ONLY because it would spoil VSL? Those are not equivalent. We concede a flat mu0 gives VSL + R2-FAIL simultaneously, and exclude it only via c06's "mu0,eps0 share one DP stiffness" — attack THAT exclusion specifically.
+Q3. The chain alpha_B ~ 1/m -> m = C/omega_0^2 -> alpha_B ~ 1/C is clear. The load-bearing and LESS established step is the identification mu0 ~ alpha_B (the symmetric emergence, as eps0 ~ alpha_E). Is that a derivation or an analogy? Is the diamagnetic sign/normalization (alpha_B < 0) a problem? We want the derivation, not the analogy — say what is missing.
 
 Return a verdict token (CONFIRM / RESTATE / REVISE / REJECT) on the exact claim:
 "Z0 is geometric and R2 PASSES, conditional on CPP's standing VSL commitment."
