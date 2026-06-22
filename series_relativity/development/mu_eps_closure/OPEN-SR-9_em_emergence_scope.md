@@ -92,3 +92,15 @@ forced by the fixed Absolute Moment ω₀ (counterfactual with ω₀ free FAILs 
 now = one sharply-posed gate:** the symmetric emergence scheme μ₀∝α_B (as ε₀∝α_E) — derive it from the c06
 EM-emergence dynamics. Sub-question 2 (VSL channel identity) **clarified**: c varies through the stiffness C
 (c∝C), with the impedance ratio protected by the fixed ω₀. Then round-3 panel review.
+
+---
+
+## Gate closed — Patch 2017 (μ₀-emergence scheme derived → R2 PASS, locked to VSL)
+
+Sub-question 3 (ε₀/μ₀ symmetry) — the 2016 gate — is **closed in favour of PASS**, derived from c06 (not
+assumed): (1) VSL-consistency excludes the kinetic-inductance FAIL scheme (μ₀∝C ⇒ c fixed ⇒ no VSL); (2) the
+c06 reconstruction mechanism (photon reconstructed each Moment, not transported) + line 91 ("μ₀,ε₀ share one
+DP stiffness") force the compliance scheme μ₀∝1/C over a flat μ₀ ⇒ Z₀ geometric ⇒ PASS. **Lock:** R2 is not
+an independent falsifier — its FAIL scheme is the one that also kills VSL, so R2 PASSES iff VSL holds.
+See `em_emergence/MU0-EMERGENCE-SCHEME.md`. **Residual depth (rigor upgrade, not a gate):** derive μ₀ from
+the DI-bit reconstruction dynamics explicitly (SF-6 content) + round-3 panel review.

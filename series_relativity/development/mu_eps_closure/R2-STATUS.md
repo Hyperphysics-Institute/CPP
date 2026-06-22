@@ -84,3 +84,16 @@ channel enters ε₀ and μ₀ symmetrically (→ Z₀ geometric, A=0, R2 PASS) 
 that in hand are the screening bound and the round-3 panel review reachable. Scoping: `mu_eps_closure/OPEN-SR-9_em_emergence_scope.md`.
 
 NO THEO (status update + residual relocation; no new axiom/term/counted prediction).
+
+## Update — Patches 2016/2017: the founder's mechanism + the gate closing → R2 PASS (locked to VSL)
+
+The 2011 block was lifted by the founder's physical mechanism (DP centers pinned to GPs; the field is the
+internal pole-displacement wave, E=radial / B=tangential, one Coulomb binding — not the acoustic mode 2011
+mis-used). **2016:** the single-DP computation gives geometric Z₀ (PASS) + varying c (VSL), forced by the
+fixed Absolute Moment (counterfactual confirms), **conditional on the μ₀-emergence scheme.** **2017:** that
+gate is **closed in favour of PASS**, derived from c06 — VSL-consistency excludes the kinetic FAIL scheme,
+and the c06 reconstruction mechanism + line 91 force the compliance scheme μ₀∝1/C. **Lock:** R2 is not an
+independent falsifier; its FAIL scheme is the one that also kills VSL, so **R2 PASSES iff VSL holds**.
+R2 ladder end-state: **PASS, conditional on CPP's standing VSL commitment**; residual depth = a rigor
+upgrade (derive μ₀ from the DI-bit reconstruction dynamics, SF-6 content) + round-3 panel review. See
+`em_emergence/Z0-PARTITION-RESULT.md` (2016) and `em_emergence/MU0-EMERGENCE-SCHEME.md` (2017).
