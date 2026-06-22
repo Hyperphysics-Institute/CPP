@@ -5,7 +5,15 @@ The canonical filename is fixed (no version suffix); version history is tracked 
 
 ---
 
-## v0.5 (DRAFT) — 21 June 2026, Patch 1319
+## v0.6 (DRAFT) — 21 June 2026, Patch 1320
+
+Fourth §10 member built under the build rule: **THEO-SF7-CONSIST-5 (SF-6 ↔ SF-2 photon–cage-boson categorical distinction)** (`sec:consist5`) — the cleanest categorical no-double-counting in the family.
+
+**The theorem.** The photon (SF-6) and the electroweak cage bosons (SF-2) are categorically distinct substrate objects: the photon is a *delocalized traveling* eDP-sea ZDC pattern with no nucleation center (massless; the traveling boundary condition of E = ℏν_C), while the cage bosons are *localized* 600-cell cage structures (nucleated; massive). No boson belongs to both classes — the EM/EW boson content partitions cleanly across SF-2 and SF-6. Four-part proof: (i) photon = traveling sea mode; (ii) cage bosons = localized structures (architectural partition: SF-2 cages, SF-6 photon, SF-5 gluons); (iii) categorical disjointness — non-trivial because the SM unifies photon + weak bosons in one multiplet and mixes them, whereas CPP assigns disjoint substrate categories and the Weinberg mixing is carried by the geometric trace 3/(8φ) (a shared geometric *input*, not a structural DOF; cf. CONSIST-2), so mixing does not reintroduce double-counting; (iv) honest scope — rests on SF-6's Tier-1 ontological reduction; Tier-2 toy-model EM constants (OPEN-FP-6-CONSTANTS) not invoked.
+
+**Why not circular / build-rule.** Unique obligation = ontological partition of boson content (delocalized sea mode vs localized cage structure), orthogonal to CONSIST-4 (gauge-group co-emergence), -2, -3. SF-6 itself names this thread. Roadmap row → built (six remain); caption + abstract (five built members) updated; v0.5→v0.6. Macros avoided (no SF-6-only \ZDC/\nuC/\eDP; plain ν_C, ZDC as text). Compiles clean: `pdflatex` ×2, 11 pp, 0 errors, 0 undefined refs/cites, 0 overfull. Bundles `reasoning/1320.md`. Registration deferred to ship-time.
+
+
 
 Third §10 member built under the build rule: **THEO-SF7-CONSIST-4 (SF-5 ↔ SF-2 gauge-group co-emergence)** (`sec:consist4`).
 
