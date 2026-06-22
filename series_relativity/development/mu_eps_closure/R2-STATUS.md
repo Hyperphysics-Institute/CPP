@@ -44,21 +44,43 @@ that must NOT be faked under circularity pressure).** This is the canonical pick
    at the pair-potential level can disappear in the field theory**, so this derivation is load-bearing and
    must be done in the action, not assumed. *This is the c06 owed computation (`c06` line 185).*
 
-## Honest standing
+## Update — Patch 2011: the action attempt, and a deepening
+
+Closure condition #2 was attempted directly (not by tasting). **Result: a negative.** A corpus-grounded
+lattice-EM action with the photon taken as the transverse acoustic mode of the DP lattice reproduces
+*neither* the 2002/2008 geometric-Z₀ (it gives **Z₀ ∝ Q** — the explicit stiffness does **not** cancel)
+*nor* the VSL c-variation (c comes out geometric). The PSR channel (the actual 0738 VSL) moves c but enters
+only μ₀ → Z₀ ∝ 1/c → A = −1 → FAIL. Diagnosis: **a DP-lattice acoustic mode is a phonon, not the photon** —
+the naive construction mis-identifies the EM emergence, and the pair-potential/virial cancellation does
+**not** survive into it (exactly ChatGPT's caution). See `lattice_action/R2-LATTICE-ACTION-ATTEMPT.md`;
+verify `lattice_action/scripts/2011_lattice_action_attempt.py`.
+
+**Consequence (honest deepening, not closure):** the 2002/2008 geometric-Z₀ is a *heuristic* the correct
+action must reproduce, and a naive action does not — so it is now explicitly **UNCONFIRMED at the action
+level**. The residual is relocated and deepened: it is no longer "screening + curl coefficient" but **the
+c06 EM-*emergence* mechanism itself** — how a gapless photon (not a phonon) emerges from the DP Sea, which
+substrate parameter the VSL varies, and whether that channel enters ε₀ and μ₀ symmetrically. Conditions #1
+and #2 above both presuppose this and are not reachable until it exists.
+
+## Honest standing (after 2011)
 
 - **Leading-order proportionality K∝C: CONFIRMed** (panel + derivation). The independent-spring objection
-  is retired.
-- **Full R2 PASS: REVISE** — owed conditions #1 and #2 above. Not faked here: condition #2 is precisely the
-  place a self-built lattice model would cancel C by construction, so it is deferred to a future window with
-  the actual c06 lattice-EM action in hand, not attempted under circularity pressure.
-- **Falsification standing:** R2 is no longer an open clean kill. It is a conditional PASS with leading-order
-  panel confirmation and a residual reduced to two well-defined, physics-grade conditions. OPEN-COSMO-DM-2's
+  is retired. *(Unaffected by 2011 — it is a statement about the stiffness ratio.)*
+- **Action-level geometric-Z₀ (the actual R2 PASS criterion): UNCONFIRMED** — a naive action does not
+  reproduce it; the correct EM-emergence construction is required and not yet available.
+- **Full R2 PASS: REVISE**, residual relocated to the EM-emergence construction. Not faked: the emergence
+  mechanism is genuinely upstream and is registered as its own work item (**OPEN-SR-9**) for a future window
+  with the right microphysics in hand.
+- **Falsification standing:** R2 is still not an open clean kill — the leading-order result stands and the
+  swirl/independent-field objections are retired — but its *full* PASS is owed to OPEN-SR-9. OPEN-COSMO-DM-2's
   "substantially resolved" headline is unaffected (R2 was always the conditional, not a live tension).
 
-## Next-window targets (in order)
+## Next-window target (single, upstream)
 
-1. The c06 full lattice-EM action: derive μ₀(C), ε₀(C) and the curl coefficient from one action (closure #2).
-2. With the action in hand, bound the scale-dependent screening correction (closure #1).
-3. Round-3 panel re-review once #2 exists.
+**OPEN-SR-9 — the DP-Sea EM-emergence / impedance-geometricity (Z₀) construction.** This is the genuine
+prerequisite and subsumes the old conditions #1/#2: derive how a gapless photon emerges from the DP Sea
+(not the acoustic mode), identify which parameter the VSL c-variation flows through, and settle whether that
+channel enters ε₀ and μ₀ symmetrically (→ Z₀ geometric, A=0, R2 PASS) or asymmetrically (→ FAIL). Only with
+that in hand are the screening bound and the round-3 panel review reachable. Scoping: `mu_eps_closure/OPEN-SR-9_em_emergence_scope.md`.
 
-NO THEO (status canonicalization + panel-verdict record; no new axiom/term/counted prediction).
+NO THEO (status update + residual relocation; no new axiom/term/counted prediction).
