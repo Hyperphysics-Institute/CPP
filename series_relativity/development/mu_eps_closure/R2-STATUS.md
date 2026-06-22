@@ -147,3 +147,17 @@ c_photon channel — so the apparent conflict reconciles. **R2 ladder: PASS cond
 "locally uniform" is leading-order (gradient/tidal = separate geometric channel); the "uniformly affected"
 premise is the load-bearing physical input; VTD-1 stands. Re-dispatch recommended. See
 `em_emergence/UNIVERSALITY-GROUNDED-SCALAR-SSV.md`.
+
+## Update — Patch 2029: panel REVISE; locality residual quantified (~11 orders); label corrected
+ChatGPT: CONFIRM the 2028 advance (channel split answers birefringence nontrivially), REVISE the claim.
+Accepted all three points: (1) grounded≠established (the "uniformly affected" premise is interpretation, not
+calculation); (2) the attack shifts anisotropy→**locality** (c²~g_tt/g_ij — is local α insensitive to the
+spatial sector beyond leading order?); (3) Schur is the weakest support (unperturbed≠perturbed isotropy;
+supports 1+2 carry the argument). **Label corrected: PASS conditional on VTD-1 + scalar-channel isolation
+beyond leading order** (NOT "VTD-1 alone" — the universality assumption was replaced by a narrower one, not
+removed). Locality residual QUANTIFIED: in a uniform region g_ij=δ_ij exactly (c07), so the only breaking is
+the gradient, suppressed by L_atom/L_grad ≈ 1.6×10⁻¹⁷ for terrestrial LPI — ~11 orders below the bound (1e-6).
+Caveats: order-of-magnitude estimate; relies on c07 static-metric completeness (1110 audit flagged c07's
+metric is limited for GW *radiation*). **R2 ladder: PASS conditional on (i) VTD-1 + (ii) scalar-channel
+isolation (~11 orders supported, modulo c07 static completeness).** Residual now precise/twofold: c07 static
+completeness + VTD-1 quadrature. See `em_emergence/R2-PANEL-REVISE-locality.md`.
