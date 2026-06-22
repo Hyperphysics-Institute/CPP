@@ -175,3 +175,16 @@ the radiative sector; orthogonal). **R2 ladder: PASS conditional on VTD-1**, sca
 complete in the static sector [b resolved] + gradient-suppressed ~11 orders [a, 2029]. Forward flag: the
 eventual spin-2 fix must be checked to keep its static local-α contribution null. See
 `em_emergence/C07-STATIC-COMPLETENESS-RESOLVED.md`.
+
+## Update — Patch 2031: ChatGPT CONFIRM (c07-completeness); status reformulated, wording softened
+ChatGPT: mostly CONFIRM on 2030. Core move accepted — LSP = scalar+vector with no rank-2 static mode ⇒ an
+anisotropic non-gradient static g_ij term has no source ⇒ the f(C,Σ) attack is closed; scalar-channel
+isolation **follows from** the no-rank-2 result rather than being an extra assumption. Two refinements
+adopted: (1) wording — "exact in the static sector" → "exact **within the audited LSP field content** in the
+static/Newtonian sector" (the "exact" is conditional on the 1110 classification, not a standalone proof);
+(2) status — reformulated from "PASS conditional on VTD-1 + scalar-channel isolation" to **"R2 PASS
+conditional on (i) VTD-1 AND (ii) the 1110 LSP field-content audit (scalar+vector, no rank-2)."** This is the
+honest, stable end-state of the R2 arc: condition (ii) is an already-established corpus result (op:einstein
+line); condition (i) VTD-1 is the remaining named structural gate (quadrature/orthogonality), which wants the
+founder's view. The chain universality→locality→completeness reduces to (ii); it is no longer a stack of free
+assumptions.

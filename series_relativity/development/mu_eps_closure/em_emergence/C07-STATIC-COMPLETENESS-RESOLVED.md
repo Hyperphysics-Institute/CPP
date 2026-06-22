@@ -31,7 +31,9 @@ Consequences for isolation in a uniform region:
 - The **only** object that could supply an anisotropic, *non-gradient* static term is a **rank-2 (spin-2)
   mode — which the LSP does not contain.** So no such term exists. The static g_ij is [isotropic scalar
   piece] + [gradient vector piece]; in a uniform region it reduces to δ_ij. **Scalar-channel isolation is
-  exact in the static sector.**
+  exact within the audited LSP field content, in the static/Newtonian sector.** (Wording per ChatGPT's
+  caution, Patch 2031: "exact" here is conditional on the 1110 field-content classification, not a standalone
+  first-principles proof of the whole theory.)
 
 ## 3. The one gap is radiative — orthogonal to R2
 
