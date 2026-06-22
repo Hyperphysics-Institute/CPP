@@ -5,7 +5,15 @@ The canonical filename is fixed (no version suffix); version history is tracked 
 
 ---
 
-## v0.7 (DRAFT) — 21 June 2026, Patch 1321
+## v0.8 (DRAFT) — 21 June 2026, Patch 1322
+
+Sixth §10 member built — **THEO-SF7-CONSIST-7 (SF-1 ↔ SF-4 shared phase-handle)** (`sec:consist7`), the first of the M₀/phase trio (the cluster the review flagged as collapse-prone).
+
+**The theorem.** OP-SM-7d is a *single* electroweak phase-supply handle that (a) closes the SF-1 charged-lepton Koide phase — the EW isotropic shift ε = 2sin²θ_W/(z+1) = 3/(52φ), θ = 132.731° at 0.003%, the closed SM-4→SM-6 arc — and (b) is the deferral route for the SF-4 neutrino δ_CP (open, route ii). The two lepton-family phase observables are not independent: the charged-lepton *closure validates the very handle* the δ_CP prediction must run through. Four-part proof: (i) OP-SM-7d closes the charged-lepton phase; (ii) OP-SM-7d is the δ_CP deferral route; (iii) the constraint — one handle, two lepton-family phases, asymmetric (one closed, one open) and falsifiable-in-principle (a δ_CP derivation inconsistent with the scaffold that closed the charged-lepton phase breaks lepton-family phase consistency); (iv) what is **not** claimed — δ_CP is not predicted, and M₀ is **explicitly set aside** as the trivial calibration, not the obligation.
+
+**Collapse-avoidance (the review's concern).** The shared M₀ is named and discarded as non-constraint; the distinct obligation is the OP-SM-7d phase handle, separated explicitly from CONSIST-1 C3's χ-*quantity* (SF-2↔SF-4) and CONSIST-2's sin²θ_W-*value* (SF-1↔SF-2). SF-1 itself names this thread. This is a *structural* shared-validated-handle consistency (one side closed, one open), not a closed–closed numerical match — stated honestly. Roadmap row → built (four remain); caption + abstract (seven built) updated; v0.7→v0.8. Two overfull hboxes from dense `THEO-SF7-CONSIST-N`/`\texttt{}` token runs in the closing line, reworded to clear. Compiles clean: `pdflatex` ×2, 13 pp, 0 errors, 0 undefined refs/cites, 0 overfull. Bundles `reasoning/1322.md`. Registration deferred to ship-time.
+
+
 
 Fifth §10 member built under the build rule: **THEO-SF7-CONSIST-6 (SF-5 ↔ SF-3 colour-Casimir consistency)** (`sec:consist6`) — completes the strong-sector pairings.
 
