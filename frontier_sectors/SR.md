@@ -5,7 +5,7 @@
   Master dashboard: Research_Frontier.md
 -->
 
-## Special Relativity / Gravity (SR) — 8 problems
+## Special Relativity / Gravity (SR) — 9 problems
 
 ### OPEN-SR-1: PSR Reduction Formula from 600-Cell Geometry
 **Status:** OPEN
@@ -180,6 +180,20 @@
 **Cross-sector connections:** Foundation of GR in CPP
 **Paper(s):** SR-1, GR companion
 **Last updated:** 23 March 2026
+
+---
+
+### OPEN-SR-9: DP-Sea EM-Emergence & Impedance-Geometricity (Z₀)
+**Status:** OPEN — registered 21 June 2026 (Patch 2013); surfaced by the OPEN-COSMO-DM-2 residual-R2 arc (2002–2011).
+**Sector(s):** SR (EM-substrate; cross-sector EW)
+**Priority:** HIGH — gates the full PASS of the μ↔ε / Δc-LPI falsifier (R2), the last conditional kill of the VSL early-universe horizon mechanism.
+**One-line statement:** Derive how a *gapless photon* emerges from the DP Sea (not the acoustic/phonon mode), and from that emergence settle whether the vacuum impedance Z₀ = √(μ₀/ε₀) is geometric (C-independent → A=0 → R2 PASS) or carries the SSV channel (→ k_α~O(1) → FAIL by ~6 orders). Three coupled sub-questions: (1) the EM-emergence construction + effective action with both electric (C) and magnetic-curl (K) coefficients from one microscopic Lagrangian; (2) the VSL channel identity (does c vary through the DP stiffness C, the bare Coulomb coupling, or the kinematic PSR?); (3) whether that channel enters ε₀ and μ₀ symmetrically.
+**Status detail:** R2's leading-order K∝C is panel-CONFIRMed (shared-Coulomb-origin, Patches 2008/2009), but the *action-level* geometric-Z₀ is UNCONFIRMED — a naive lattice-EM action (photon = acoustic mode) reproduces neither geometric-Z₀ (gives Z₀∝C) nor VSL c-variation (Patch 2011, an honest negative). The real prerequisite is the EM-*emergence* mechanism, deeper than the stiffness ratio or scale-dependent screening. **Not by tasting** — a self-built lattice action can cancel C by construction.
+**Dependencies:** c06 (B=∇×P field-strength math, line 91; the owed μ₀,ε₀(C,c) computation, line 185); EW-5 (emergent field-strength tensor); 0738/0746 (VSL/PSR mechanism = the channel-identity input); c02 (fixed ω_ZBW); Patches 2002–2011 (the R2 arc).
+**Cross-sector connections:** **OPEN-COSMO-DM-2** (R2 — the primary gate); the 0739/0740 Δc/μ↔ε reduction (OPEN-SR-5 area); c06 emission-envelope/linewidth (Δν∝ν³, same derivation); **EU-1** (the VSL horizon this grounds); OPEN-SD-CHIR-PRIMITIVE manifestation (iv) (EM handedness — distinct, chirality-specific).
+**Paper(s):** c06, EW-5; SR-1 (VSL bricks 0736–0740).
+**Scope of record:** `series_relativity/development/mu_eps_closure/OPEN-SR-9_em_emergence_scope.md`. **Working home:** `series_relativity/development/mu_eps_closure/`. **R2 status ladder:** `mu_eps_closure/R2-STATUS.md`.
+**Registered:** 21 June 2026 (Patch 2013)
 
 ---
 
