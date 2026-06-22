@@ -134,3 +134,16 @@ weakest input (itself conditional). **R2 ladder: PASS conditional on (i) VTD-1 +
 REVISE, NOT closed.** Next target: compute the anisotropic optical response of the strained DP Sea (c_photon
 vs the local stiffness tensor); does isotropic gravity coincide with anisotropic velocity at equal local C?
 See `em_emergence/R2-PANEL-REVISE-universality.md`.
+
+## Update — Patch 2028: universality GROUNDED (scalar SSV_abs channel); PASS conditional on VTD-1 alone
+ChatGPT's f(C,Σ) birefringence attack is dissolved, not merely answered: c_photon is set by the **scalar**
+SSV_abs (pcd_boost_law l.15/18: SSV_abs magnitude sets PSR/time-rate; c07 g_tt = 1−k|SSV|_abs scalar), while
+tensor anisotropy enters only through the **gradient** g_ij = δ_ij + k|∇SSV_net|_ij — a separate channel
+(lensing/tidal). In a uniformly-affected region (no SSV gradient) g_ij=δ_ij ⇒ c²~g_tt scalar ⇒ isotropic ⇒
+no birefringence. H₄/Schur (SR-1 l.52/121) forces the base optical response ∝δ_ij. The directional
+"separation along motion" (SR-1 l.31) is the geometric/contraction channel, distinct from the scalar
+c_photon channel — so the apparent conflict reconciles. **R2 ladder: PASS conditional on VTD-1 alone**
+(medium-universality upgraded from unproven assumption → corpus-grounded structural feature). Residuals:
+"locally uniform" is leading-order (gradient/tidal = separate geometric channel); the "uniformly affected"
+premise is the load-bearing physical input; VTD-1 stands. Re-dispatch recommended. See
+`em_emergence/UNIVERSALITY-GROUNDED-SCALAR-SSV.md`.
