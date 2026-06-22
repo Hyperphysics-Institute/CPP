@@ -79,3 +79,16 @@ the negative result that surfaced it); `dp_sea_mu_eps_symmetry.md` (0740, the Z�
 `delta_c_lpi_filter.md` (0739); c06 line 185 (the owed computation); EU-1 (the VSL horizon it grounds).
 
 NO THEO (work-item scoping; no new axiom/term/counted prediction — registration of an OPEN problem only).
+
+---
+
+## Progress note — Patch 2016 (first forward result; PASS-pointing)
+
+Sub-question 1 (emergence/mode) **substantially answered** by the founder's mechanism: DP centers pinned to
+GPs, the field is the internal pole-displacement wave (E=radial, B=tangential), one Coulomb binding — not the
+acoustic/phonon mode the 2011 negative mis-used. Sub-question 3 (ε₀/μ₀ symmetry) **sharply advanced**: the
+single-DP computation (`em_emergence/Z0-PARTITION-RESULT.md`) gives **geometric Z₀ (PASS) + varying c (VSL)**,
+forced by the fixed Absolute Moment ω₀ (counterfactual with ω₀ free FAILs → not by construction). **Residual
+now = one sharply-posed gate:** the symmetric emergence scheme μ₀∝α_B (as ε₀∝α_E) — derive it from the c06
+EM-emergence dynamics. Sub-question 2 (VSL channel identity) **clarified**: c varies through the stiffness C
+(c∝C), with the impedance ratio protected by the fixed ω₀. Then round-3 panel review.
