@@ -1046,3 +1046,50 @@ morphology/processing conjecture, with primordial *generation* still owed.
 **The resolution the corpus then confirmed.** Tested against the existing corpus, Thomas's insight was not merely consistent but already grounded three ways: (1) `pcd_boost_law` states that SSV_abs (the magnitude) sets PSR and the time rate — so c_photon, which advances by PSR, is scalar-governed; (2) the c07 metric splits exactly along Thomas's distinction — g_tt = 1 − k|SSV|_abs is sourced by the **scalar** (the clock/speed channel where local α lives), while all anisotropy enters only through the **gradient** g_ij = δ_ij + k|∇SSV_net|_ij (the geometric channel: lensing, tidal, contraction); and (3) the 1110 op:einstein field-content audit shows the substrate broadcast carries one scalar and one vector and **no rank-2 mode**, so an anisotropic non-gradient static term — the very thing birefringence would require — has no source to exist. ChatGPT's attack is real physics, but it lands on a *different observable* (light bending through an SSV gradient, which CPP already assigns to g_ij); it never reaches local α, which lives in the scalar channel. The apparent tension with SR-1's "increased separation along the direction of motion" reconciles as a two-channel split: the directional separation is the geometric/contraction channel; the scalar SSV_abs is the speed channel. The panel (ChatGPT) confirmed the resolution and reformulated the status.
 
 **What it bought, and what remains — honestly.** Thomas's scalar-SSV insight moved medium-universality from an unproven assumption to a corpus-grounded structural feature, and the chain universality → locality → completeness collapsed onto a single pre-existing result (the scalar-plus-vector field content). R2 ended the campaign at **PASS conditional on exactly two named things: (i) VTD-1 — that the displacement budget splits in genuine quadrature, giving the exact Lorentz factor — and (ii) the 1110 LSP field-content audit.** Condition (ii) is established corpus work; condition (i) is the one remaining foundational gate, deferred to a fresh campaign because the orthogonality of bulk and internal displacement is a substrate-mechanism question that wants the founder's adjudication. The falsifier was not closed and was never declared closed; it was driven, on physics and corpus evidence through three adversarial review rounds, from a ~6-order failure risk down to one well-posed mechanism question — and the move that did it was Thomas seeing that a scalar cannot be birefringent.
+
+
+---
+
+## Backlog Recovery — Founder Contributions, Substance (reconstructed from reasoning fragments)
+
+*Added 22 June 2026 (Patch 2035), under the Reasoning-Capture Protocol §10 backlog policy. These entries
+recover the SUBSTANCE of founder contributions that shaped results during the intense June multi-window
+period but were never promoted to this record — paraphrase-recovered from committed `reasoning/` fragments and
+marked **[reconstructed]**. They are NOT verbatim; faithful verbatim recovery from the session transcripts is
+a separate dedicated effort (handover pending). This pass captures the readily-identifiable contributions; it
+is not exhaustive.*
+
+### 15 June 2026 — l_P is the baseline PSR, NOT the Grid-Point spacing, and it is environment-dependent (Thomas's correction) [reconstructed]
+
+*Reconstructed from `series_phenomena/cosmology/early_universe/reasoning/0733.md` and
+`series_strong/lambda_qcd_from_planck/reasoning/1004.md`.*
+
+Thomas pushed back — across several rounds — against the framing that the Planck length l_P is the Grid-Point
+lattice spacing. His correction: **l_P is the unstressed baseline PSR** (one displacement step per Absolute
+Moment), while the **Grid-Point lattice is FINER than l_P** (sub-Planck spacing); and **l_P is
+environment-dependent** — smaller near a nucleus, larger in flat space. Checking the corpus confirmed this is
+its own canonical position (c07: "PSR = l_P" in the unstressed lattice, grid points at sub-Planck spacing), not
+a new idea. Two consequences flowed from the one correction, the same day, in two sectors:
+- **Cosmology (corrected the 0732 finding):** the early-universe inflation question is **OPEN, not closed**.
+  0732 had claimed inflation was barred because PSR ≤ l_P caps expansion at c — but if l_P is the *baseline*
+  PSR rather than a hard ceiling, PSR can exceed it (the variable-speed-of-light route), so inflation is not
+  ruled out by a PSR-cap. The primordial spectrum (n_s) is the real wall, not the ceiling. Claude had been
+  wrong; Thomas's intuition was right.
+- **Strong sector:** it reinterpreted the 1003 negative result on Λ_QCD-from-Planck in the same light.
+
+A single founder correction of a units/identification error, load-bearing enough to propagate across the
+cosmology and strong sectors on one day.
+
+### 22 June 2026 — The DP-pinning mechanism that unblocked OPEN-SR-9 (the R2 EM-emergence) (Thomas's mechanism) [reconstructed]
+
+*Reconstructed from `series_relativity/development/mu_eps_closure/em_emergence/reasoning/2016_z0_partition.md`.*
+
+Patch 2011 had established that the naive DP-lattice action FAILS and that the residual *is* the EM-emergence
+mechanism — leaving OPEN-SR-9 blocked on a physics decision Claude could not make alone. **Thomas supplied the
+mechanism:** the Dipole-Pair centers are pinned to Grid Points (only the internal poles move), with the
+electric field E as the *radial* projection and the magnetic field B as the *tangential* projection of one
+Coulomb-bound pole motion. This unblocked the Z₀-partition computation (Patch 2016), which then returned a
+geometric Z₀ (PASS) and c ∝ C (VSL), conditional on the μ₀-emergence scheme question. The founder's physical
+intuition unblocking a stalled computation — the intended division of labor, where the mechanism is the
+founder's call and the computation is the worker's. (This contribution opened the R2 arc whose later pivotal
+move — the scalar-SSV insight — is recorded verbatim in the 22 June 2026 entry above.)
