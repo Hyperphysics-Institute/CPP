@@ -113,3 +113,12 @@ phonon speed into the photon's impedance Z₀=C/c. The photon speed's C-dependen
 (c06 photon=budget + SR-1 matter=budget ⇒ light & matter co-scale ⇒ α fixed while c varies) is the route to
 PASS, grounded but not yet derived (owes the ΔSSV↔C relation + ε₀ co-scaling). See
 `velocity_ssv_time_dilation/MISSING-MACHINERY-FOUND.md`.
+
+## Update — Patch 2025: R2 PASS, conditional on VTD-1 + medium-universality
+The photon speed (not phonon) is FORCED ∝ C by Lorentz invariance: α=e²/(4πε₀ℏc_photon), ε₀∝1/C, ℏ invariant
+⇒ α∝C/c_photon=Z₀; for a moving atom α is a Lorentz scalar ⇒ c_photon∝C (velocity, forced, not circular).
+Medium-universality transfers this to gravity ⇒ Z₀=C/c_photon=const ⇒ **R2 PASS**. **R2 ladder end-state:
+PASS conditional on (i) VTD-1 (exact Lorentz, Patch 2024) + (ii) medium-universality** (c_photon a
+source-independent function of local C — the panel target). Velocity-frame α is settled outright; the
+gravitational LPI falsifier is PASS-conditional. Photon(∝C)/phonon(∝√C) distinction now derived. See
+`em_emergence/R2-RESOLUTION-VIA-LORENTZ.md`.
