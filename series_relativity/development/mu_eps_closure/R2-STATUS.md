@@ -122,3 +122,15 @@ PASS conditional on (i) VTD-1 (exact Lorentz, Patch 2024) + (ii) medium-universa
 source-independent function of local C — the panel target). Velocity-frame α is settled outright; the
 gravitational LPI falsifier is PASS-conditional. Photon(∝C)/phonon(∝√C) distinction now derived. See
 `em_emergence/R2-RESOLUTION-VIA-LORENTZ.md`.
+
+## Update — Patch 2027: panel REVISE; universality sharpened to c_photon = f(C,Σ)
+ChatGPT: dispatch CONFIRM, claim **REVISE** — medium-universality is the load-bearing residual; strongest
+break is c_photon = f(C,Σ) (strain-tensor / anisotropy dependence), since velocity strain is anisotropic and
+gravity isotropic ⇒ possibly different c_photon at equal local C. Accepted. Sharpened against ourselves: a
+photon's E,B are transverse ⇒ c_photon depends on the medium's *transverse* response ⇒ generically a function
+of the strain tensor (birefringence) ⇒ universality is non-trivial and possibly false; engaging the attack
+*lowered* confidence. Q2: c_photon∝C is unique given ε₀∝1/C (not an independent hole). Q3: VTD-1 is the
+weakest input (itself conditional). **R2 ladder: PASS conditional on (i) VTD-1 + (ii) medium-universality —
+REVISE, NOT closed.** Next target: compute the anisotropic optical response of the strained DP Sea (c_photon
+vs the local stiffness tensor); does isotropic gravity coincide with anisotropic velocity at equal local C?
+See `em_emergence/R2-PANEL-REVISE-universality.md`.
