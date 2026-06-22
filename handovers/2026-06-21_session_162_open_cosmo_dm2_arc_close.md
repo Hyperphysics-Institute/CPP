@@ -101,3 +101,85 @@ that in hand, bound the scale-dependent screening correction < 10⁻⁶. **Do NO
 taste — cancellations can survive at pair-potential level and vanish in the field theory (ChatGPT's caution);
 that is the cancellation-by-construction trap.** Round-3 panel re-review after (1). 2000-band patches
 2001–2010 used; 2011+ free.
+
+---
+
+## SESSION CLOSE — final addendum (Patches 2011–2014; OS §15 protocol)
+
+**Next-session kickoff line:** *"Bootup for CPP — clone the repo, read `templates/bootup.md`, honor the
+line-1 CLONE-FIRST GATE, then open `handovers/` (plural), sort by filename, read the newest dated
+`YYYY-MM-DD_session_NNN_*.md`; there is no handover.md."*
+
+### Final stretch (2011–2013, after the 2007–2010 R2-hardening sub-arc)
+- **2011** — R2 lattice-EM action attempt: an **honest NEGATIVE**. A naive action (photon = transverse
+  acoustic mode) gives Z₀∝Q (explicit C does NOT cancel) and c geometric (no VSL); the PSR channel gives
+  A=−1. Diagnosis: a DP-lattice acoustic mode is a phonon, not the photon. The 2002/2008 geometric-Z₀ is a
+  heuristic the correct action must reproduce — now UNCONFIRMED at the action level. Residual relocated to
+  the c06 EM-emergence mechanism. *(Caught my own first-draft script text asserting "C cancels" against
+  numbers showing Z₀∝Q; followed the numbers.)*
+- **2012** — (a) R2-STATUS.md updated with the 2011 deepening + next-window target reset; (b) OPEN-SR-9
+  scoping doc written (owned path). CLONE-FIRST GATE honored.
+- **2013** — OPEN-SR-9 registered in `frontier_sectors/SR.md` (the one shared-registry edit; SR count 8→9).
+
+### R2 / OPEN-COSMO-DM-2 final state
+OPEN-COSMO-DM-2 = **SUBSTANTIALLY RESOLVED** (R1 P(k) done; R3 A_s adopted-and-localized; R2 leading-order
+K∝C panel-CONFIRMed). R2's *full* PASS = **REVISE**, residual relocated to **OPEN-SR-9** (the DP-Sea
+EM-emergence / Z₀-geometricity construction) — a substantial, upstream physics task, NOT a cleanup, to be
+done with the c06 microphysics in hand and **not by tasting**. Nothing faked across 2001–2013.
+
+### Step A–H Completion Audit (OS §15)
+- **A (work done):** OPEN-COSMO-DM-2 arc 2001–2006; remediation 2005; R2 hardening 2007–2011; status +
+  OPEN-SR-9 registration 2012–2013. ✓
+- **B (Tier-1/session log):** this handover + per-patch reasoning fragments (Tier 4) bundled in every
+  patch. ✓
+- **C (Tier-4 reasoning capture):** ✓ per-patch — `reasoning/` fragments for 2001–2012 (2013 is a
+  registry edit, no physics → reasoning carried in 2012). Per-patch capture audit: all physics/derivation
+  patches bundled finding + reasoning + verify script (after the 2005 stray-path fix). ✓
+- **D (verify scripts):** ✓ 2001 (P(k)), 2002 (Z₀ fork), 2003 (A_s), 2004 (κ), 2008 (C-vs-K), 2011
+  (action attempt). Docs-only patches (2005/2006/2007/2009/2010/2012/2013) N/A.
+- **E (per-registry audit):**
+  - `frontier_sectors/CONJ.md` — EDITED (2006): OPEN-COSMO-DM-2 → SUBSTANTIALLY RESOLVED; CONJ-COSMO-1
+    structure-formation → conditional-PASS RESTORED. ✓
+  - `frontier_sectors/SR.md` — EDITED (2013): OPEN-SR-9 registered. ✓
+  - `series_relativity/development/dp_sea_mu_eps_symmetry.md` (0740) — appended 2002 Z₀ update (2006). ✓
+  - `predictions.md` — N/A this session (PRED-C-96 κ-orthogonality note **PROPOSED**, not made — see below).
+  - theorem-registry / axiom-registry / paper_catalog / master_glossary / methods_catalogue — **N/A**
+    (NO THEO anywhere this session; no new axiom/term/method/paper).
+  - INDEX / organizational_frontier — N/A.
+- **F (TATWD / anthology):** N/A (no v1.0 SHIP this session).
+- **G (transcript):** session transcript at `/mnt/transcripts/2026-06-22-00-11-57-cpp-open-cosmo-dm2-r2-arc.txt`.
+- **H (handover):** this document (created 2006, addended 2010 + 2014). ✓
+
+### Asset ledger (many-assets handover — path + one-line)
+- `series_phenomena/cosmology/dark_matter/pk_closure/` — R1: CPP P(k) from EU-1's own spectrum (2001).
+- `series_relativity/development/mu_eps_closure/` — the R2 arc home: R2-Z0-VIRIAL-CLOSURE (2002),
+  R2-HARDENING (2007), R2-PANEL-RESPONSE-1 (2009), R2-STATUS (2010/2012, the canonical R2 ladder),
+  R2_panel_dispatch (2007), lattice_ck/ (C-vs-K, 2008), lattice_action/ (the 2011 negative),
+  OPEN-SR-9_em_emergence_scope (2012).
+- `series_phenomena/cosmology/early_universe/as_amplitude_closure/` — R3: A_s normalization + κ (2003/2004).
+- `frontier_sectors/CONJ.md`, `frontier_sectors/SR.md`, `dp_sea_mu_eps_symmetry.md` — registry reconciliation.
+
+### INTEGRATOR ACTION ITEMS (deferred by worker discipline — your call)
+1. **Release the 2000-band lease** (`parallel_dev/lease_board.md`) — worker window done; patches 2001–2014
+   used, 2015+ free. (Worker does not edit the lease board.)
+2. **Still-PROPOSED registry edits** (not made; higher-traffic files / your discretion), all written out in
+   the 2006 handover body and the relevant findings:
+   - `predictions.md` PRED-C-96 / OPEN-EU-1: κ-orthogonality note (A_s adopted because it carries the
+     (κ·kT)² prefactor that n_s's log-derivative cancels; shot-noise excluded). Optionally register the
+     low-priority owed EU-1 tensor-r item.
+   - `c06` future-work (line 185): annotate that R2 (2007/2008) showed B=∇×P entails the single-response
+     structure and K∝C at leading order, narrowing the owed Z₀(C,c) computation; full closure = OPEN-SR-9.
+   - SR.md OPEN-SR-5 area / the 0739–0740 trail: optionally cross-link OPEN-SR-9 from the Δc/μ↔ε notes.
+3. **Round-2 panel verdict is recorded** (ChatGPT CONFIRM leading-order / REVISE full PASS, in R2-STATUS).
+   Round-3 review is **not yet due** — it presupposes OPEN-SR-9 progress.
+
+### Pickup point for the next window
+**OPEN-SR-9** — scope at `mu_eps_closure/OPEN-SR-9_em_emergence_scope.md`; R2 ladder at
+`mu_eps_closure/R2-STATUS.md`. Three coupled sub-questions: EM-emergence construction (gapless photon, not
+phonon) + one-action C,K coefficients; VSL channel identity (stiffness vs bare-coupling vs PSR); ε₀/μ₀
+symmetry. Dependencies c06 / EW-5 / 0738 / 0746 / c02. **Do not taste the lattice action.**
+
+### Audit completion
+Step A–H walked above; ✓ or N/A recorded for each. 2000-band patches 2001–2014 used; 2015+ free. Session 162
+work complete; OPEN-COSMO-DM-2 reconciled; R2 at leading-order-CONFIRMed / full-PASS-REVISE with OPEN-SR-9
+as the single registered upstream target.
