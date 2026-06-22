@@ -8,16 +8,20 @@ and without ever having to locate and open a file buried in the repo tree. Stand
 
 ## The single block contains, in this order
 
-1. **The GitHub links to the file** (so Thomas — and the AI reviewers, who fetch raw URLs — can open it):
+1. **The GitHub links to the file** — *supplementary reference only* (so Thomas can open the file, and a reviewer *may* fetch the raw URL — but DO NOT rely on it: most panel reviewers do NOT browse pasted links, so the links are a convenience, not the delivery mechanism):
    - human/blob: `https://github.com/Hyperphysics-Institute/CPP/blob/main/<path>`
-   - raw (AI-fetchable): `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<path>`
+   - raw (AI-fetchable *if* the reviewer browses): `https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/<path>`
    The links only work after the file is pushed to `main`, so present them after the apply-and-push.
 
 2. **A one-paragraph intro** framing the file for the swarm: what it is, why it matters, and what is being
    asked of the reviewers.
 
 3. **The full rendered file content** (the rendered Markdown, NOT the patch/diff — no `+` prefixes, no
-   commit header).
+   commit header). **This is MANDATORY and load-bearing: it is the actual delivery.** The reviewer must be
+   able to review from the pasted block alone, fetching nothing. If multiple files are being reviewed
+   together, embed ALL of them inline, each under a clear `=== DOCUMENT N of M — <filename> ===` separator.
+   Never substitute a summary or paraphrase for the full content — a reviewer who cannot see the source will
+   (correctly) decline to review, or review the wrong thing.
 
 All three go **inside the same fenced block**, so it is a single copy and a single paste per reviewer.
 
