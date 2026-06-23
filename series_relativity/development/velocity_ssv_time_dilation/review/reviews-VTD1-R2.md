@@ -97,3 +97,26 @@ core of OPEN-SR-9** — it is not a lighter-weight side check; doing it honestly
 - `frontier_sectors/CONJ.md` / OPEN-COSMO-DM-2: R2 is **REVISE, not resolved**; DM-2 headline unaffected (R2
   was always the conditional, never a live tension), but the wording must not imply R2 PASS.
 - No `theorem-registry.md` / `predictions.md` edit (conditional; NO THEO).
+
+---
+
+## 6. Corrected re-dispatch — loop closed (Patch 2043)
+
+The corrected re-dispatch (Patch 2042, `vtd1_r2_corrected_redispatch_chatgpt_v1.0.md`) was sent to ChatGPT —
+the reviewer who ran both the original 2027–2031 arc and the 2040 hostile pass. **ChatGPT WITHDREW the 2040 P2
+REVISE as applied to the corrected record**, with the sustained-REVISE option explicitly on the table:
+
+- **P1 / VTD-1:** SOUND at SR-1 strength (unchanged).
+- **P2 / R2-via-Lorentz:** SOUND at the stated conditional strength.
+- **Overall R2:** **conditional-PASS at the field-content level** — confirmed; the 2031 CONFIRM stands at the
+  same scope.
+- **Unconditional PASS:** **No — still gated by OPEN-SR-9.** ChatGPT insisted on preserving the distinction
+  "conditional-PASS at audited field-content level; unconditional gated on OPEN-SR-9" and explicitly NOT "R2
+  fully closed."
+- **On the 2040 verdict:** valid against the stale package, not against the corrected state; the stale package
+  re-opened the f(C,Σ) anisotropy objection that the 2028 scalar-channel + 2030 no-rank-2 arc had already
+  retired.
+
+**Net:** the 2041 reconciliation is panel-confirmed. R2's status is unchanged from 2041 — this entry only
+records that the corrected re-dispatch closed the loop. **No status upgrade beyond conditional-PASS; OPEN-SR-9
+remains the gate to unconditional.** NO THEO.
