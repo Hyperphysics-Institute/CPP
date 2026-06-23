@@ -82,6 +82,40 @@ same "Eq. 1" ΔSSV/Voronoi-budget partition; the resync is the leg to add and th
 > This is an outside inference from "resync is the only leg without a budget engine," NOT a substrate-level
 > result; TLA deferred on resync-vs-contraction fragility. Test it; do not assume it.
 
+### §4-RULE (Patch 2053) — the GP update rule is LOCATED and SSV-only
+
+The rule is not missing — it is the spine of the shipped SR-1 paper (`papers/SR-1_*.tex` §A.4/A.8.1),
+cross-checked in `c01_*/development/development_discussion.md`, codified as `development/pcd_boost_law*`. Per CP
+per Absolute Moment: direction `i*=argmax_i(e_i·∇SSV)` (drift from **SSV_net**, vector); rate
+`PSR_eff=l_P/(1+k·ΔSSV)`, k≈2.16e-114 m³/J (from **SSV_abs**, scalar); displacement `d=l_P·e_{i*}`; and the
+engine, the **4D budget split** `l_P²=(c·Δτ)²+|d_spatial|²`. It is genuinely **SSV-only**: velocity is no input
+— it is read off the partition, `|d_spatial|=l_P·(v/c)`, `v=|d_spatial|/Δτ`. So the charter's §2 positive claim
+(velocity holographically emergent) is already mechanized in the shipped rule. SR-1 already gives EXACT (=γ_SR,
+A.8.1): time dilation, length contraction (L₀/γ), relativistic momentum. The one leg SR-1 *deliberately routed
+around*: relativity of simultaneity (twin paradox via absolute ΔSSV; "no appeal to relativity of simultaneity
+is needed", mechanism-SR-1) — confirming resync is the genuinely open leg, and the one Obligation A most
+exposes. **One-way/two-way stakes (TLA-approved read):** SR-1's current set (real preferred frame + exact
+contraction + dilation) is structurally Lorentz–FitzGerald, which secures every *two-way* null (Michelson–Morley
+round-trip, muon lifetime) but does NOT by itself secure *one-way* isotropy — the γvx/c² resync offset is
+exactly what converts round-trip isotropy into one-way isotropy. So Obligation A's genuine exposure lives in the
+leg CPP hadn't built.
+
+### §4-RESULT (Patch 2053) — the resync leg CLOSES at the kinematic level
+
+Derivation + verify: `reasoning/2053_simultaneity_resync_derivation.md`,
+`verify/sr9b_simultaneity_resync.py`. Applying the located rule (light isotropic at c in the lattice frame;
+clocks 1/γ; rod L₀/γ) plus the operational light-synchronization a co-moving observer is forced into (they can't
+detect lattice motion), the one-way legs are asymmetric (t=L/(c∓v)) and Einstein sync absorbs the asymmetry as
+a clock offset δ = ½(t_AB−t_BA) = **γvL₀/c² — EXACTLY the Lorentz value** (verify MATCH True). Round-trip stays
+isotropic (2L₀/c); contraction+dilation+offset reconstruct t'=γ(t−vx/c²); one-way isotropy holds in the moving
+frame; the absolute lattice frame is exactly undetectable. **The §4 one-way-isotropy worry is RETIRED** (it's
+secured by the emergent offset, not assumed). No-hidden-velocity audit PASSES (every v traces to a
+budget-partition output; the observer never uses v). **Honest boundary:** this is a *kinematic-level* closure
+(Lorentz–FitzGerald→Einstein equivalence instantiated on the substrate), not yet a from-discrete-600-cell
+theorem; the load-bearing imported premise is **lattice-isotropy-of-c**, which is the SAME residual OPEN-SR-9/R2
+turn on. So the brick **reduces its own residual to the R2 residual** — closing lattice-isotropy-of-c would
+theorem-grade this brick AND ground R2 together. Pending CONV-001; R2 stays conditional-PASS.
+
 ## 5. Adversarial swarm targets (the falsifiers)
 
 Swarm must range over a **fixed stated rule** and audit for hidden velocity — phenomenological agreement is not
