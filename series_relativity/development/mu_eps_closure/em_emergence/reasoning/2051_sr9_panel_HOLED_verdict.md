@@ -87,3 +87,16 @@ consult that produced the first ruling.
 Owned subtree: series_relativity/development/mu_eps_closure/em_emergence/ (private-lane, 2049-band). No root
 registry edit. No status-file edit (R2 stays conditional-PASS; unconditional NOT adopted). NO THEO.
 Collision-clean against HEAD 2050.
+
+---
+
+> **CORRECTION (Patch 2052) — §4 work-item framing superseded.** The §4 framing above ("OPEN-SR-9-B = compute/
+> bound the 2nd-order rotational SSV" + the "derivable consequence vs foundational definition" axiom question)
+> is superseded by TLA's founder correction. The 2nd-order-rotational-SSV computation is **mis-posed**: it
+> presumes a velocity-channel into SSV, which the correct positive claim (velocity is *holographically
+> emergent* from SSV-only rules, proved by swarm/theorem like B-emergence) dissolves rather than bounds.
+> Velocity-insensitivity is a corollary of emergence, not an axiom to register. The per-reviewer record (§3),
+> the hole analysis (§1), and "R2 stays conditional-PASS / no status move" (§0) all stand unchanged. The
+> corrected work item is the charter `OPEN-SR-9-B_velocity_emergence_charter.md` (spine: Obligation A, exact-γ
+> undetectability; first brick: simultaneity-resync from a fixed SSV-only rule). This note is forward-additive;
+> the original record is preserved verbatim above.

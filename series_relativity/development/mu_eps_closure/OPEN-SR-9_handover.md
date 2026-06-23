@@ -80,10 +80,20 @@ two faces: (Face 1) the scalar-PSR-only advance — "B carries zero SSV" — is 
 via that μ₀). Same hole: Face 2's lock is legitimate only if Face 1 holds exactly. Survived panel: algebra
 clean (4/4); mode identification (gapless photon vs gapped phonon, C→ε₀) NOT the hole; conditional structure
 intact (IF exact neutrality THEN EQUAL). Net: 2050 *reduces* the close to one decidable question, does not
-achieve it. **Next work item OPEN-SR-9-B:** compute/bound the 2nd-order rotational SSV from the c06 DP-rotation
-kinematics against the 2029 LPI limit (exactly-zero → SOUND; sub-LPI → quantified conditional; above-LPI → live
-birefringence prediction). Full capture: `em_emergence/reasoning/2051_sr9_panel_HOLED_verdict.md`. Needs a TLA
-consult on the DP-rotation kinematics to attempt the derivation.
+achieve it. **Next work item OPEN-SR-9-B** (charter: `em_emergence/OPEN-SR-9-B_velocity_emergence_charter.md`,
+opened Patch 2052): establish **velocity as holographically emergent** from a fixed SSV-only GP update rule
+(swarm + theorem, exactly as B-emergence was) — NOT a velocity-insensitivity *axiom* (founder-corrected at 2052:
+that multiplies axioms; the positive claim is the load-bearing one, and velocity-insensitivity descends as a
+corollary). Spine = **Obligation A** (exact γ + the Michelson–Morley undetectability conspiracy, from the
+`velocity_ssv_time_dilation/` arc) — selected as the phenomenon most likely to *break* emergence (CPP has a real
+preferred frame [c01] that must be made exactly undetectable against a ~10⁻¹⁸ null). First brick: derive the
+relativity of simultaneity (exact γvx/c²) from the fixed rule + a no-hidden-velocity audit; then close
+contraction + dilation + resync to exact Lorentz on one rule. Once it lands, **B-neutrality becomes a theorem**
+(not adjudication), both CONV-001 hole-faces close, and R2's geometric Z₀ descends as a corollary; the same
+brick also retro-grounds SR-1 + VTD-1. NB the 2051 §4 "compute 2nd-order rotational SSV" framing is SUPERSEDED
+(mis-posed — presumes a velocity-channel the emergence claim dissolves); see the 2051 CORRECTION note. R2 stays
+conditional-PASS until the charter closes. Needs a TLA consult on the GP update rule's explicit form (the
+simultaneity-resync mechanism).
 
 ## 3. THE central integrity risk — read twice
 
