@@ -139,6 +139,24 @@ velocity-dependent polarization reproduces γ **exactly** (undetectability intac
 signature (a falsifiable absolute-frame prediction, or a bound vs optical-cavity isotropy). Couples directly
 into Obligation A. Likely needs a TLA consult on the DP-Sea-polarization dynamics (toy vs intended-rigorous).
 
+### §4-INERTIA-RESOLVED (Patch 2055) — inertia IS the B-field/SF-6 mechanism; residual collapses to ONE
+
+TLA adjudication (verbatim in `reasoning/2055_*.md`): inertia, the B field, and a moving charge's E self-field
+are **one mechanism** — the DP Sea's polarization response to CP motion — and carry **no MM exposure beyond the
+already-validated B-field/SSV dynamics**. Corpus-confirmed: SF-6 v1.0 already unifies **inertial mass and EM as
+coherent ZDC patterns of the dipole sea** (inertial mass = standing ZDC, photon = traveling ZDC, single
+equation E=ℏνC; B = curl component of the same dipole displacement whose radial component is E). So the
+DP-Sea-polarization inertia "toy model" is in fact a shipped, load-bearing SF-6 component, not a placeholder.
+
+**Gemini's 2054 inertia objection is answered at the mechanism level:** the velocity "memory" is the co-moving
+DP-Sea self-field (the inertial-mass ZDC pattern), not a point-CP register; the local rule reads that co-moving
+self-field each Moment. **The residual stack collapses back to ONE:** OPEN-SR-9-B-ii is resolved at mechanism
+level (= the SF-6 ZDC/DP-Sea response, shipped); its only remaining rigor piece — coherent translation of the
+moving self-field at exact-γ — is SF-6's own second-tier item and folds into **lattice-isotropy-of-c**, the
+SAME residual the simultaneity brick and R2 already share. **MM exposure dissolves** (inertia inherits the
+validated SR-1/VTD-1/SF-6 status). **Net: one open gate for the unconditional R2 close — lattice-isotropy-of-c.**
+R2 unchanged (conditional-PASS).
+
 ## 5. Adversarial swarm targets (the falsifiers)
 
 Swarm must range over a **fixed stated rule** and audit for hidden velocity — phenomenological agreement is not
