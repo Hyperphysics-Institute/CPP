@@ -70,6 +70,21 @@ re-admits a small K_ij / sub-leading birefringence to bound against the 2029 LPI
 across-C-range claim still imports c_b∝C from the 2025 Lorentz argument — the lock reduces the remaining
 substrate obligation to deriving c_b(C) (the ΔSSV↔C relation), the recommended next work item.
 
+### §2-VERDICT (Patch 2051) — CONV-001 returned UNANIMOUS HOLED; close NOT adopted
+
+Panel (ChatGPT, Grok, Gemini, Copilot), adversarial/full-inline/history-disclosed: **HOLED, unanimous.** The
+2050 EQUAL→PASS is **NOT adopted**; **R2 remains at conditional-PASS** (audited field-content level). One hole,
+two faces: (Face 1) the scalar-PSR-only advance — "B carries zero SSV" — is *adjudicated, not derived*; a
+2nd-order rotational SSV re-admits K_ij → birefringence → DIFFER → reopen; (Face 2) the lock 1/μ₀=ε₀c_b² is
+*imposed after* the action, not derived from it (Grok: circular — isotropy assumed to define μ₀, then "proved"
+via that μ₀). Same hole: Face 2's lock is legitimate only if Face 1 holds exactly. Survived panel: algebra
+clean (4/4); mode identification (gapless photon vs gapped phonon, C→ε₀) NOT the hole; conditional structure
+intact (IF exact neutrality THEN EQUAL). Net: 2050 *reduces* the close to one decidable question, does not
+achieve it. **Next work item OPEN-SR-9-B:** compute/bound the 2nd-order rotational SSV from the c06 DP-rotation
+kinematics against the 2029 LPI limit (exactly-zero → SOUND; sub-LPI → quantified conditional; above-LPI → live
+birefringence prediction). Full capture: `em_emergence/reasoning/2051_sr9_panel_HOLED_verdict.md`. Needs a TLA
+consult on the DP-rotation kinematics to attempt the derivation.
+
 ## 3. THE central integrity risk — read twice
 
 **A self-built lattice action can cancel C by construction.** The registration says this in as many words, and
