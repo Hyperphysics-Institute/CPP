@@ -44,6 +44,32 @@ argument):
 This is the from-substrate test of exactly the scalar-channel claim that 2028–2031 + founders_vision (22 Jun)
 established at the field-content level. The handover's whole point is to settle it by *derivation*, not audit.
 
+### §2-RESULT (Patch 2050) — crux sharpened, founder-adjudicated, computation run
+
+**Sharpened crux (founder §10, 2050).** The decisive computation reduces from "compute two strains" to a single
+mechanism question: *does the magnetic curl-coupling K enter the photon's advance, so c_b inherits K_ij under
+anisotropic strain — or is the advance set by the scalar PSR alone?* This is the two-strain verdict stated at
+the level of the PCD machinery (kinematic budget speed c=PSR/t_P vs constitutive wave speed c=1/√(με)).
+
+**TLA adjudication (2050, captured verbatim in `em_emergence/reasoning/2050_*.md` §1).** Purely scalar-PSR. The
+B-channel is non-fundamental — an artifact of charge motion through the DP Sea; the DP rotational motion is
+SSV-neutral, so B contributes zero SSV, hence zero to PSR. There is **one** independent stiffness: the E/SSV
+scalar channel. ⇒ K does NOT enter the advance.
+
+**Computation (`em_emergence/verify/sr9_dispersion_two_strain.py`).** EM-form action
+L = ½ε₀Ṗ² − ½(1/μ₀)(∇×P)², C entering as the polarizability ε₀∝1/C in the kinetic term (gapless photon; the
+on-site-mass reading is the gapped phonon-side object). Both branches computed:
+- B independent → c_∥≠c_⊥ → birefringence → **DIFFER → reopen** (the live kill branch, shown explicitly);
+- B non-fundamental (TLA) → one photon ⇒ lock **1/μ₀ = ε₀c_b²** ⇒ μ₀ slaved to scalar c_b ⇒ c_∥=c_⊥=c_b ⇒
+  **EQUAL → PASS**, with Z₀ = 1/(ε₀c_b) → (ε₀=k_e/C, c_b∝C) → **C cancels → Z₀ geometric**.
+
+**Status: the two-strain test returns EQUAL ⇒ R2 → unconditional-PASS, CONTINGENT on "B carries no SSV."** This
+is a status move and is **DEFERRED to TLA pending CONV-001 panel.** Two honest residuals carry forward: (1) the
+panel must stress-test whether B is *exactly* SSV-neutral or only to leading order (a 2nd-order rotational SSV
+re-admits a small K_ij / sub-leading birefringence to bound against the 2029 LPI limit); (2) the full
+across-C-range claim still imports c_b∝C from the 2025 Lorentz argument — the lock reduces the remaining
+substrate obligation to deriving c_b(C) (the ΔSSV↔C relation), the recommended next work item.
+
 ## 3. THE central integrity risk — read twice
 
 **A self-built lattice action can cancel C by construction.** The registration says this in as many words, and
