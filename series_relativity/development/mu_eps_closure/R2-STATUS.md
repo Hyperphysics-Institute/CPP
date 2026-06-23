@@ -188,3 +188,47 @@ honest, stable end-state of the R2 arc: condition (ii) is an already-established
 line); condition (i) VTD-1 is the remaining named structural gate (quadrature/orthogonality), which wants the
 founder's view. The chain universality→locality→completeness reduces to (ii); it is no longer a stack of free
 assumptions.
+
+## Update — Patch 2041: reconciliation — the 2040 re-review ran on a STALE package; R2 restored to the 2031 conditional-PASS end-state, condition (i) now cleared
+
+**Honest correction (a process error of mine).** The Patch-2039 CONV-001 package presented R2's condition (ii)
+in the *2025* framing — "medium-universality, open assumption" — and aimed the panel at c_photon = f(C,Σ). But
+the arc had already worked **past** that: f(C,Σ) was raised by ChatGPT at **2027**, **dissolved** at the
+birefringence level at **2028** (c_photon is set by the *scalar* SSV_abs; tensor anisotropy enters only the
+*gradient* g_ij channel, separate; uniform region ⇒ g_ij=δ_ij ⇒ isotropic ⇒ no birefringence), refined to a
+**quantified ~11-order locality residual** at **2029**, and the static-completeness caveat **closed** at
+**2030/2031** via the 1110 no-rank-2 result — ChatGPT **CONFIRM** at 2031. So the 2040 panel, given the stale
+package, correctly re-derived **2027**; my 2040 "P2 → REVISE" headline is therefore a **stale-package artifact**,
+not a genuine new down-rate, and is **superseded** here.
+
+**The corpus's actual end-state (2031, ChatGPT-confirmed):** *R2 PASS conditional on (i) VTD-1 + (ii) the 1110
+LSP field-content result (scalar+vector; anisotropic-static term has no rank-2 source).* Two things now bear on
+it:
+- **Condition (i) VTD-1: CLEARED at SR-1 strength.** 2037/2038 (quadrature ≡ f_eff; linear excluded; f_eff
+  unique) + the 2040 panel's **P1 SOUND ×4**. The remaining named structural gate of the 2031 end-state is
+  discharged at SR-1 strength.
+- **Condition (ii) survives A3′.** The 2030/2031 no-rank-2 argument used the pre-A3′ field content; A3′
+  (op:einstein a) then *added* a rank-2 mode Q_ij. But **OB-3 is DISCHARGED as a theorem** (`spin2_construction`
+  1124/1125: T^{TF}=0 for perfect fluids; tensor virial for all bounded statics; S_ij=0) — Q_ij is **static-null**,
+  coupling only radiatively (via Q̈). So the new rank-2 mode supplies **no** static anisotropic g_ij term, and the
+  f(C,Σ) closure holds post-A3′. The 2030 forward-flag ("the spin-2 fix must keep its static-α contribution null")
+  is discharged by OB-3.
+
+**Reconciled R2 status: PASS conditional, both 2031 conditions now met *within the audited field content*.**
+Explicit residuals kept (this is NOT unconditional PASS):
+1. condition (ii) is "exact within the audited LSP field content" + the ~11-order locality (gradient) estimate
+   of 2029 — a field-content-level result, not a from-substrate calculation;
+2. VTD-1 is "at SR-1 strength" (effective γ, not literal substrate orthogonality);
+3. the **from-substrate optical-response computation** — derive c_photon's (in)dependence on the local stiffness
+   *tensor* directly from the DP-Sea EM-emergence, the thing 2027/2028 and the 2040 panel (4/4) all point at — is
+   genuinely open and is **OPEN-SR-9**. That is the route from conditional-PASS to unconditional.
+
+**What the 2040 round legitimately contributed:** a unanimous (4/4) concrete formulation of the OPEN-SR-9 decisive
+test — *two strains tuned to identical local scalar C, one anisotropic (velocity-like), one isotropic
+(gravity-like); compute the photon-mode speed; equal ⇒ universality grounded from substrate, differ ⇒ R2 reopens*
+— with the anti-faking guard (track the photon mode, corpus-grounded action, not a C-cancelling self-build). Same
+test 2028 named; the 4/4 convergence reinforces it as the OPEN-SR-9 target.
+
+**Recommended hygiene:** because the 2040 round saw a stale package, a **corrected one-paragraph re-dispatch**
+(showing the panel 2027→2031 + OB-3) is owed so the panel verdicts the *actual* state. 2031 already carries
+ChatGPT's CONFIRM on this calibration, so it is confirm-expected — but it should be on the record. NO THEO.

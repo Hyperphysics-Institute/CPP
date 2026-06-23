@@ -1,3 +1,13 @@
+> **⚠ SUPERSEDED IN PART (Patch 2041).** The P2 → REVISE verdict-move recorded below was driven by a **stale
+> review package** (2039 reverted condition (ii) to the 2025 "medium-universality" framing). The panel
+> correctly re-derived the **2027** f(C,Σ) objection — but the arc had already *dissolved* it at 2028 (scalar
+> channel, not tensor), quantified the locality residual at 2029 (~11 orders), and closed static-completeness
+> at 2030/2031 (ChatGPT CONFIRM). Reconciled state: **R2 conditional-PASS (the 2031 end-state), condition (i)
+> VTD-1 cleared at SR-1 strength, condition (ii) field-content closure in hand (+ A3′ OB-3 static-null
+> theorem).** The genuinely-open residual is the from-substrate optical computation = **OPEN-SR-9**. The
+> panel's P1-SOUND ×4 and its 4/4 vary-Σ test (which reinforces the OPEN-SR-9 target) stand. See
+> `mu_eps_closure/R2-STATUS.md` → "Update — Patch 2041."
+
 # Review Aggregation — VTD-1 + R2-via-Lorentz (package v1.0, Patch 2039)
 
 **Patch:** 2040 (22 June 2026) · **Window:** 2000-band · **Panel:** ChatGPT, Grok, Gemini, Copilot (4/4 in).
