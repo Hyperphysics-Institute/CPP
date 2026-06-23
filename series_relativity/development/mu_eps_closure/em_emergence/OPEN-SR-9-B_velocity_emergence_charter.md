@@ -116,6 +116,29 @@ theorem; the load-bearing imported premise is **lattice-isotropy-of-c**, which i
 turn on. So the brick **reduces its own residual to the R2 residual** — closing lattice-isotropy-of-c would
 theorem-grade this brick AND ground R2 together. Pending CONV-001; R2 stays conditional-PASS.
 
+### §4-PANEL (Patch 2054) — CONV-001 SPLIT 2/2; simultaneity banked, inertia gap surfaced
+
+Panel (ChatGPT, Grok, Gemini, Copilot): **2 SOUND / 2 HOLED.** Unanimous: algebra clean, no-velocity audit
+PASS, boundary honest. **Banked:** the inertial-simultaneity offset is exact and register-free (not disputed by
+anyone). The split: Copilot's HOLED restates the disclosed residual (i) as a verdict (standards disagreement,
+no new error); **Gemini's HOLED is new and load-bearing** — the **memoryless-inertia problem**: the brick
+assumes clocks coasting at constant v, but the local instantaneous SSV rule with v merely read-off has no
+persistence mechanism, so the substrate is not shown to sustain inertial motion at all. Corpus check: CPP *does*
+have an inertia mechanism (moving CP polarizes the DP Sea — "silly-putty"; momentum stored as SSV_abs in
+DP-chain structures, `dp-sea-polarization/DP-Sea-Polarization-Model.tex`), so inertia lives in the extended
+self-field, not the point — BUT (1) it is a **toy model**, not derived from the GP rule, and (2) that same
+velocity-dependent DP-Sea polarization is flagged in-corpus as "challenging the strict Michelson–Morley null,"
+i.e. **coupled to the undetectability** the brick claimed. So the brick **under-disclosed its imports**: it
+named one residual; there are two. **Residual stack grows to: (i) lattice-isotropy-of-c [shared with R2];
+(ii) inertia/persistence-and-its-exact-γ [DP-Sea polarization, toy-level, MM-coupled].** Full record:
+`reasoning/2054_resync_panel_verdict.md`. R2 unchanged.
+
+**New sub-brick OPEN-SR-9-B-ii (the inertia leg):** derive free-particle inertial persistence from the GP rule +
+DP-Sea-polarization mechanism (promote the toy model toward derivation), and determine whether that
+velocity-dependent polarization reproduces γ **exactly** (undetectability intact) or leaves a bounded MM
+signature (a falsifiable absolute-frame prediction, or a bound vs optical-cavity isotropy). Couples directly
+into Obligation A. Likely needs a TLA consult on the DP-Sea-polarization dynamics (toy vs intended-rigorous).
+
 ## 5. Adversarial swarm targets (the falsifiers)
 
 Swarm must range over a **fixed stated rule** and audit for hidden velocity — phenomenological agreement is not
