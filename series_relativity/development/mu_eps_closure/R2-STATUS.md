@@ -1,9 +1,16 @@
 # R2 — Canonical Status (the μ↔ε / Δc-LPI falsifier)
 
-**Patch:** 2010 (21 June 2026) · **Window:** 2000-band · **Work item:** OPEN-COSMO-DM-2 residual R2
-**One-line:** R2 went from an open ~6-order falsifier to **REVISE — leading-order CONFIRMed by the panel,
-full PASS conditional on two well-defined closure conditions (one of them a real field-theory derivation
-that must NOT be faked under circularity pressure).** This is the canonical pickup point for the next window.
+**CURRENT STATUS (keep this line bumped on every status-moving patch — per `templates/project_tracking_protocol.md`):**
+**Patch 2041 (23 June 2026) · conditional-PASS at the audited LSP field-content level**, panel-confirmed
+(ChatGPT, corrected re-dispatch 2043) — (i) VTD-1 cleared at SR-1 strength (2037/2038), (ii) f(C,Σ) closed at
+field-content level (2028/2029/2030–2031 + A3′ OB-3 static-null). **Unconditional PASS is gated on OPEN-SR-9**
+(the from-substrate derivation of c_photon(C)/Z₀ — genuinely OPEN, **not** leaning FAIL: the 2021 "c∝√C FAIL"
+used the *phonon* speed, a category error superseded at Patch 2024). The full append-only ladder below carries
+every swing; read it forward, not just the header.
+
+**Work item:** OPEN-COSMO-DM-2 residual R2 · **Window/band:** 2000-band (multi-window).
+*(Header was previously stuck at "Patch 2010 / REVISE" while the ladder had reached 2041 — the exact stale-header
+bug the project-tracking protocol now forbids; corrected Patch 2048.)*
 
 ---
 
