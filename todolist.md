@@ -299,11 +299,14 @@ OSF deposit: Isak notified (18 Jun 2026); update C11 `doi` field once the DOI re
 
 SS-1f v1.0 production protocol completed. Core (combined patch 1533+1534): series_strong sub-family table row (D3) + bibliography entry (C11, DOI pending Isak's OSF post). Remaining Phase-7B items now also done (patch 1535): **C3** — Proposition 6.1 registered as **PROP-SS-12** in theorem-registry (SS header 1→2 Propositions; no theorem-count / Summary-Statistics / ratio change, since propositions are tracked separately from the 81-theorem total); **C5** — **OPEN-SS-38** added to frontier_sectors/SS.md (the op:strong_primitive forcing problem; frame resolved by SS-1f, forcing open; SS header 19→20 problems); **D2** — SS-1f .tex added to INDEX.md. C10/D1/paper_catalog top-level confirmed N/A (sub-family companion note, per the SS-1a–1e precedent). Outstanding: only the OSF DOI (Isak) → update the C11 `doi` field on return. **Completed 18 June 2026.**
 
-### TODO-025 — `frontier_sectors/CONJ.md` OPEN-COSMO-DM-2 / DM-2 R2 wording is stale (pre-2025 R2 arc)
+### TODO-025 — `frontier_sectors/CONJ.md` OPEN-COSMO-DM-2 / DM-2 R2 wording is stale (pre-2025 R2 arc) — **CLEARED 22 Jun 2026, Patch 2046**
 
-**Status**: DEFERRED (Patch 2041), not a forward blocker. **Why deferred**: CONJ.md is the hottest cross-lane
-Tier-A file (DM + cosmology + CC all touch it), so a casual edit risks a multi-window collision; the wording
-gap is cosmetic, not verdict-bearing.
+**Status**: CLEARED (Patch 2046) — DM/cosmo lane was idle, so the two pointer brackets were added directly:
+one to the OPEN-COSMO-DM-2 entry and one to CONJ-COSMO-1, both pointing R2's current state at
+`mu_eps_closure/R2-STATUS.md` (conditional-PASS at field-content level; unconditional gated on OPEN-SR-9).
+The stale "single-oscillator / Patch 2002" lines are left in place (historical record) with the pointer
+overriding. *(Original deferral note retained below for audit.)* **Why it had been deferred (Patch 2041)**:
+CONJ.md is the hottest cross-lane Tier-A file; the gap was cosmetic/non-verdict, so it waited for a quiet lane.
 **What's stale**: the OPEN-COSMO-DM-2 entry (line ~251) and the CONJ-COSMO-1 entry (line ~314) describe R2's
 status from before the 2025–2031 μ↔ε arc — e.g. "R2 PASS-conditional on the single-oscillator structure —
 Patch 2002." The current state (R2-STATUS.md → Update 2041) is: **R2 conditional-PASS, both conditions met
