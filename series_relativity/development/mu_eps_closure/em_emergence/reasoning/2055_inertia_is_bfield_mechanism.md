@@ -70,3 +70,23 @@ R2.** They are not three problems; they are one.
 ## 6. Discipline
 Owned subtree (mu_eps_closure/em_emergence/), 2049-band. SF-6 + DP-Sea + corpus files cited, not edited. No
 root-registry or status-file edit. NO THEO. Collision-clean against HEAD 2054.
+
+---
+
+> **CORRECTION (Patch 2056) — two claims in this file are RETRACTED.** CONV-001 returned UNANIMOUS HOLED, and a
+> direct check of SF-6 contradicts two claims above:
+> 1. **"MM exposure dissolves / inertia inherits validated status" (§1, §4) — RETRACTED.** SF-6 labels this
+>    mechanism **Tier-2 toy-model-grade ("by tuning parameters")** and carries the velocity-dependent c_eff(v)
+>    absolute-frame signature as a **named flagship-level OPEN FALSIFIER** (OPEN-FP-6-CONSTANTS), "claims no
+>    resolution." The MM exposure is REAL and registered, not dissolved. (TLA's own claim — "no more MM
+>    exposure than the B-field mechanism" — is correct and SF-6-consistent; this window's "dissolved/validated"
+>    gloss was the error.)
+> 2. **"residual collapses to ONE" (§4) — RETRACTED.** The inertial dynamical-persistence theorem (coherent
+>    transport of a massive standing ZDC at v<c) is a distinct dynamical regime, not absorbed by
+>    lattice-isotropy-of-c. Related-not-one; corrected map in 2056 §4.
+>
+> **What STANDS:** the mechanism *identification* (inertia = co-moving DP-Sea/ZDC self-field = the B-field
+> object; SF-6 Tier-1 E=ℏνC) is sound and panel-granted — it answers Gemini's 2054 objection at the
+> candidate-mechanism level. **What is OPEN:** dynamical persistence (storage ≠ coasting). Full corrected
+> record: `reasoning/2056_inertia_panel_verdict_and_2055_correction.md`. This note is forward-additive; the
+> original text is preserved above.
