@@ -299,6 +299,24 @@ OSF deposit: Isak notified (18 Jun 2026); update C11 `doi` field once the DOI re
 
 SS-1f v1.0 production protocol completed. Core (combined patch 1533+1534): series_strong sub-family table row (D3) + bibliography entry (C11, DOI pending Isak's OSF post). Remaining Phase-7B items now also done (patch 1535): **C3** — Proposition 6.1 registered as **PROP-SS-12** in theorem-registry (SS header 1→2 Propositions; no theorem-count / Summary-Statistics / ratio change, since propositions are tracked separately from the 81-theorem total); **C5** — **OPEN-SS-38** added to frontier_sectors/SS.md (the op:strong_primitive forcing problem; frame resolved by SS-1f, forcing open; SS header 19→20 problems); **D2** — SS-1f .tex added to INDEX.md. C10/D1/paper_catalog top-level confirmed N/A (sub-family companion note, per the SS-1a–1e precedent). Outstanding: only the OSF DOI (Isak) → update the C11 `doi` field on return. **Completed 18 June 2026.**
 
+### TODO-025 — `frontier_sectors/CONJ.md` OPEN-COSMO-DM-2 / DM-2 R2 wording is stale (pre-2025 R2 arc)
+
+**Status**: DEFERRED (Patch 2041), not a forward blocker. **Why deferred**: CONJ.md is the hottest cross-lane
+Tier-A file (DM + cosmology + CC all touch it), so a casual edit risks a multi-window collision; the wording
+gap is cosmetic, not verdict-bearing.
+**What's stale**: the OPEN-COSMO-DM-2 entry (line ~251) and the CONJ-COSMO-1 entry (line ~314) describe R2's
+status from before the 2025–2031 μ↔ε arc — e.g. "R2 PASS-conditional on the single-oscillator structure —
+Patch 2002." The current state (R2-STATUS.md → Update 2041) is: **R2 conditional-PASS, both conditions met
+within the audited LSP field content — (i) VTD-1 cleared at SR-1 strength (2037/2038 + panel P1-SOUND ×4);
+(ii) f(C,Σ) closed at the field-content level (2028 scalar channel / 2029 ~11-order locality / 2030-2031
+no-rank-2, ChatGPT CONFIRM) + A3′ OB-3 static-null theorem — with the from-substrate optical computation owed
+to OPEN-SR-9.**
+**The fix (small)**: a single Patch-NNNN bracket pointer appended to the OPEN-COSMO-DM-2 status line (and one
+to CONJ-COSMO-1) reading "R2 current state: see R2-STATUS.md Update-2041 — conditional-PASS at field-content
+level, unconditional gated on OPEN-SR-9." Do as its own minimal, refreshed edit (CONV-002) when the DM/cosmo
+lane is otherwise idle. Precedent: CONJ.md line 233 already records the "R2 file stale framing owed an update
+in the DM lane; not edited from another window — pointer only."
+
 ## Cleared items (history)
 
 *Items move here with date and patch number when completed. Cleared items are not deleted — they form an audit trail of what was done and when.*
