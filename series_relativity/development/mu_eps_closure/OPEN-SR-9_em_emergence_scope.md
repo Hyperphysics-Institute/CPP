@@ -111,3 +111,50 @@ the DI-bit reconstruction dynamics explicitly (SF-6 content) + round-3 panel rev
 Q3 (drop the analogy): Z₀=1/(ε₀c)=C/c ⇒ R2 PASS ⟺ c∝C exactly. Grounded c(C) is √C (corpus 0740) or const
 (fixed-ω₀) — both ⇒ Z₀ carries C ⇒ FAIL ~6 orders. Q2: the lock does NOT save it — independent physics
 points AT the fail (c∝√C), not away. R2 reopened, leaning FAIL. See `em_emergence/Q3-Q2-HONEST-RESULT.md`.
+
+---
+
+> **STALE-NOTE RECONCILIATION (Patch 2049, 23 June 2026).** The progress log above stopped at the 2021
+> "leaning FAIL" and was carried no further; Patch 2047 caught that this scope file lagged the verdict ladder
+> and corrected the downstream CONJ.md brackets, but left this file's own log owed an update. The notes below
+> bring it current with the canonical `mu_eps_closure/R2-STATUS.md` ladder (which is authoritative; this scope
+> file is NOT). Headline: **the 2021 FAIL was a category error (phonon speed used for the photon), superseded
+> at 2024; OPEN-SR-9 is genuinely OPEN, not leaning FAIL.**
+
+## Supersession — Patch 2024: the 2021 FAIL was insecure (phonon ≠ photon); R2 REOPENED to OPEN
+The 2021 retraction used c∝√C — but √(C/m)·a is the DP-lattice **acoustic/phonon** speed, whereas c06's
+photon advances one PSR shell per Absolute Moment (the **budget** speed) and Patch 2011 had already
+established photon≠phonon. So 2021 plugged the phonon speed into the photon's impedance Z₀=C/c — a category
+error. The photon speed's C-dependence is set by the (then-unspecified) ΔSSV↔C relation, NOT √C. **Ladder
+end-state: OPEN, not "leaning FAIL."** The unified-budget principle (c06 photon=budget + SR-1 matter=budget
+⇒ light & matter co-scale ⇒ α fixed while c varies) is the route to PASS. See
+`velocity_ssv_time_dilation/MISSING-MACHINERY-FOUND.md`.
+
+## Recovery — Patch 2025: R2 PASS, conditional (Lorentz forces c_photon∝C)
+The photon (not phonon) speed is FORCED ∝C by Lorentz invariance: α=e²/(4πε₀ℏc_photon), ε₀∝1/C, ℏ invariant
+⇒ for a moving atom α is a Lorentz scalar ⇒ c_photon∝C — velocity-frame, forced, not circular. Medium-
+universality transfers this to gravity ⇒ Z₀=C/c_photon=const ⇒ **PASS, conditional on (i) VTD-1 + (ii)
+medium-universality.** See `em_emergence/R2-RESOLUTION-VIA-LORENTZ.md`.
+
+## Sharpening — Patches 2027→2031: the f(C,Σ) attack raised, then closed at field-content level
+2027 (panel REVISE): medium-universality is load-bearing; strongest break is c_photon=f(C,Σ) (strain-tensor
+anisotropy — velocity strain anisotropic, gravity isotropic). 2028: **dissolved at the birefringence level** —
+c_photon is set by the *scalar* SSV_abs; tensor anisotropy enters only the *gradient* g_ij channel (separate);
+uniform region ⇒ g_ij=δ_ij ⇒ isotropic ⇒ no birefringence. 2029 (panel REVISE): attack shifts anisotropy→
+locality; residual QUANTIFIED at ~11 orders below the LPI bound. 2030: c07 static-completeness resolved via
+the 1110 LSP audit (scalar+vector, **no rank-2 static mode** ⇒ no anisotropic non-gradient static term).
+2031 (ChatGPT CONFIRM): end-state **R2 PASS conditional on (i) VTD-1 + (ii) the 1110 field-content audit.**
+
+## Tail — Patches 2037/2038 + 2041: both conditions met within the audited field content
+2037/2038: **VTD-1 CLEARED at SR-1 strength** (exact-γ via the orthogonal quadrature budget; panel P1-SOUND
+×4). 2041: reconciliation — the 2040 re-review ran on a STALE package (re-derived 2027); R2 restored to the
+2031 conditional-PASS end-state. Condition (ii) survives A3′ because **OB-3 makes the new rank-2 Q_ij
+static-null** (couples only radiatively). **Reconciled end-state: PASS conditional, both 2031 conditions met
+*within the audited LSP field content*.** Explicit residual = the **from-substrate** optical-response
+computation (does c_photon inherit the local stiffness *tensor*?) — i.e. THIS work item, OPEN-SR-9 — which is
+the route from conditional-PASS to **unconditional**.
+
+**Net current state (authoritative = R2-STATUS.md):** R2 is **conditional-PASS at the audited field-content
+level**; OPEN-SR-9 is **genuinely OPEN** (the from-substrate route), NOT leaning FAIL. The decisive test
+(panel-unanimous, 2040): two strains at identical local scalar C — one anisotropic, one isotropic — compute
+the photon-mode speed from the *emerged* action; equal ⇒ unconditional PASS, differ ⇒ R2 reopens.
