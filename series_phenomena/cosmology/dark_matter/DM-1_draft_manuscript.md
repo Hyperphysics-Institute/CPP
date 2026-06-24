@@ -16,7 +16,7 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 ## 2. The candidate: qDP/hTetra aggregates  *(draft)*
 
 [FILLED] **Constituents.** From the DP-Sea composition: binding energies E_eDP = 88, E_hDP = 152, E_qDP = 264 MeV, with E_qDP = 3·E_eDP (color factor 3) and E_hDP = √(E_eDP·E_qDP). **Constituent mass m_qDP ≈ 264 MeV** (ratio-clean; the absolute scale is §8 / Project C). **Statistics:** the qCP carries fermionic ZBW (spin-½), so the qDP pair is a **boson**; the Sea soliton ground state is spin-0. **Conjecture (CONJ-COSMO-1):** dark matter is charge-neutral (color-singlet, electrically neutral) qDP/hTetra aggregates — existing substrate structures, not a new field.
-[TIGHTEN] The DM "unit" (single qDP vs hTetra vs heavy aggregate) is not pinned; it matters for the abundance (§8). State the range used.
+[FILLED←TIGHTEN, Patch 0853] **DM-unit mass — range stated.** Two distinct masses enter and must not be conflated: (i) the *constituent* mass m_qDP ≈ 264 MeV — the scattering partners — sets the self-interaction σ/m (§5) and is ratio-clean; (ii) the *aggregate-unit* mass m_unit — one color-singlet, electrically-neutral qDP/hTetra cluster — sets the number density n_DM = ρ_DM/m_unit and hence the abundance (§8), and is **not pinned**. Since a lone qDP carries color, the minimal neutral unit is at least hTetra-class; the range spanned is m_unit ~ 0.26 GeV (single-qDP scale) through ~1 GeV (hTetra) to heavier aggregates (not excluded). Crucially, this range does **not** affect the §5–§7 cross-section result, which depends on the constituent mass, not the unit mass; it propagates only to the abundance, which §8 shows is not the binding constraint (the reservoir is vast — Patch 0704).
 
 ## 3. Survival of the cheap-kill gates (necessary, not sufficient)  *(draft, condensed)*
 
@@ -62,7 +62,7 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 
 [FILLED] Two inputs are *calibrated*, on par with ΛCDM, and the paper says so plainly:
 - **Absolute mass scale.** Only the *ratios* (color factor 3, geometric mean) are derived; the absolute DP/QCD scale is calibrated. Its first-principles derivation is **Project C** (Λ_QCD from l_P + sea_strength via PSR saturation).
-- **Dark-to-baryon ratio Ω_DM/Ω_b ≈ 5.36.** Not derived; relocated to the primordial swirl amplitude (Step 2). The promising route is asymmetric DM via a shared Sea asymmetry (route B; possibly fed by the substrate chirality arc), but it bottoms out in undeveloped sub-sectors (the DM-unit mass; CPP baryogenesis). [OPEN]
+- **Dark-to-baryon ratio Ω_DM/Ω_b ≈ 5.36.** Not derived; relocated to the primordial swirl amplitude (Step 2). It is set by the unit-mass range (§2) times the free population, and abundance is **not** the binding constraint — the qDP/hTetra reservoir is vast (Patch 0704) — so this is a *calibrated* input (on par with ΛCDM), not a kill. The promising derivation is asymmetric DM via a shared Sea asymmetry (route B; possibly fed by the substrate chirality arc), but it bottoms out in undeveloped sub-sectors (the DM-unit mass; CPP baryogenesis). [OPEN]
 
 ## 9. The cosmological gate (DM-2 / Sea gravitation) — status  *(draft, REVISED)*
 
@@ -76,14 +76,14 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 
 ## 10. Discussion & grade  *(draft)*
 
-[FILLED] What this paper establishes: a derived, falsifiable, **velocity-independent self-interacting** dark-matter candidate with a positive signature (σ_V/m ≈ 0.20 cm²/g, mild flat dwarf cores) that distinguishes it from both collisionless CDM and velocity-dependent SIDM — lifting the candidate from *consistency-grade* (Patch 1200) to a *positive-discriminant* result. What it does not establish: the full cosmological identification (the calibrated mass scale and abundance, §8; the conditional Sea-gravitation gate, §9). Honest one-line grade: **a viable, microphysically-derived, falsifiable SIDM candidate with a specific qDP/hTetra signature — not yet a fully-derived identification.**
+[FILLED] What this paper establishes: a derived, falsifiable, **velocity-independent self-interacting** dark-matter candidate with a positive signature (σ_V/m ≈ 0.20 cm²/g, mild flat dwarf cores) that distinguishes it from both collisionless CDM and velocity-dependent SIDM — lifting the candidate from *consistency-grade* (Patch 1200) to a *positive-discriminant* result. What it does not establish: the full cosmological identification (the calibrated mass scale and abundance, §8; the conditional Sea-gravitation gate, §9). Honest one-line grade: **a viable, microphysically-derived, falsifiable velocity-independent SIDM candidate with a specific qDP/hTetra signature — consistent at dwarf-spheroidal scale, in mild-to-moderate tension with the largest LSB cores (IC 2574; §6–§7), and not yet a fully-derived identification (calibrated mass scale and abundance, §8; conditional-but-traversed Sea-gravitation gate, §9).**
 
 ## 11. What is left to fill (checklist)
 
 1. **[TIGHTEN, partially resolved 0852] f → magnitude band.** f-band reconciled to [0.07,0.6] (§4/§5 conflict fixed); Ramsauer-dip caveat at the upper band noted; IC 2574 high-v tension propagated to abstract + §7. **Still open:** pin f via Project-C color-polarizability to collapse the band and decide whether the high-v tension is absorbed or genuine.
-2. **[TO FILL] §6 observational confrontation.** Fit 1–2 specific observed dwarfs (+ a cluster) rather than the representative NFW.
+2. **[DONE, Patches 0850/0851] §6 observational confrontation.** Fornax (classical dSph) + IC 2574 (LSB) confronted quantitatively — density (Fig. 2) and core-radius (Fig. 3). *Optional later:* add a cluster.
 3. **[DONE] Figures.** V(r)/saturation (§4, Fig. 1, Patch 0849); σ_V(v) overlay (Fig. 0840); specific-dwarf density confrontation (§6, Fig. 2, Patch 0850); **core-radius-vs-σ/m panel (§6, Fig. 3, Patch 0851)**.
-4. **[OPEN] §8 abundance (route B).** Asymmetric-DM / shared-Sea-asymmetry derivation of ~5:1 — needs the DM-unit mass + a baryogenesis sub-arc.
+4. **[OPEN] §8 abundance (route B).** Unit-mass range now stated (§2, Patch 0853) and abundance shown non-binding (Patch 0704); still needs the route-B asymmetric-DM / shared-Sea-asymmetry derivation + a baryogenesis sub-arc to *derive* the ~5:1 rather than calibrate it.
 5. **[DEP] §8 mass scale = Project C** (running in the 1000-series window).
 6. **[DEP] §9 DM-2 Λ-coefficient** — overlaps Project C's cosmological-constant/l_P work; coordinate, don't race.
 7. **[PARTIAL] Intro CPP primer + citations — DONE (Patch 0848):** §1 non-CPP-reader substrate primer filled with 3 flagship cites (SF-3, SF-5, SR-1). Still **[TO FILL]:** references threaded through the body (§4 strong-sector, §5 scattering, §8 Project C, §9 sea_gravitation).
@@ -91,4 +91,4 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 
 ## Provenance
 
-§4 ← 0830–0836; §5 ← 0840–0841; §6 ← 0842, 0850 (specific-dwarf confrontation), 0851 (core-radius-vs-σ/m panel); §7 ← 0840/0842; §8 ← 0704 (abundance), 0833 + Project C (mass), 0843 (route B); §9 ← 0720–0814 (sea_gravitation); §3/§10 ← consolidation Patch 1200.
+§4 ← 0830–0836; §5 ← 0840–0841; §6 ← 0842, 0850 (specific-dwarf confrontation), 0851 (core-radius-vs-σ/m panel); §7 ← 0840/0842; §8 ← 0704 (abundance), 0833 + Project C (mass), 0843 (route B), 0853 (unit-mass range + calibrated-input cleanup); §9 ← 0720–0814 (sea_gravitation); §2/§3/§10 ← consolidation Patch 1200, 0853 (grade finalize).
