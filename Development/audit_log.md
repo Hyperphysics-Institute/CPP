@@ -1,0 +1,35 @@
+# Audit heartbeat log
+
+The nightly extraction audit (`scripts/overnight_extraction_audit.sh`) appends
+**exactly one dated line per run** below. This log is the anti-silent-rot rail:
+**a missing line for the previous night is a LOUD, blocking flag at the next
+bootup** — not a silent gap. The audit stopping unnoticed is the exact failure
+that killed the old systems; this log is the guard against it.
+
+## Heartbeat line format (the macro and the bootup-check both depend on this)
+
+```
+<YYYY-MM-DD> <HH:MM> <TZ> | run=<OK|DRY-RUN|FAIL> | transcripts=<n> | filed=reasoning:<n>,scripts:<n>,registry:<n> | founders=staged:<n>,review:<n>,promoted:<n> | notes=<free text>
+```
+
+- Line starts with the run **date**, so "did last night run?" is a trivial
+  date-grep at bootup.
+- `run=FAIL` lines are still written when the macro reaches its error handler —
+  a written FAIL is recoverable; a *missing* line is the loud case.
+- `founders=` counts the founder's-voice path: `staged` (diff staged for TLA),
+  `review` (`[REVIEW]`-flagged, ambiguous), `promoted` (written — only once the
+  path graduates from staged-first to auto, protocol §4).
+
+## Bootup check (for all windows)
+
+At bootup, confirm a heartbeat line exists for the previous calendar day. If it
+is missing, surface it as a BLOCKING flag and investigate before proceeding —
+the nightly audit may have failed to run.
+
+---
+
+## Runs
+
+*SCAFFOLDED at Patch 2103 — no audit has run yet.* The first heartbeat line will
+be appended when `scripts/overnight_extraction_audit.sh` first runs (built in
+Step 4, Patch 2104+). Do not hand-write run lines here; only the macro appends.
