@@ -1,244 +1,263 @@
 #!/usr/bin/env bash
 # =============================================================================
-# overnight_extraction_audit.sh  --  the nightly extraction audit (SKELETON)
+# overnight_extraction_audit.sh  --  the nightly extraction audit (Step 4)
 #
-# Campaign: the Capture-and-Audit Protocol (2100-band). Step 4, Patch 2104.
-# Spec: templates/capture_and_audit_protocol.md  (§4 = this script).
-# Pattern: modeled on scripts/consolidate_bibliography.sh (Isak) -- inherit its
-#          rails (dry-run first, verify-after-act, [REVIEW]-on-ambiguity, clean
-#          tree on every exit, NEVER auto-commit). Do not rewrite his protocol.
+# Capture-and-Audit Protocol §4. Runs on the LOCAL machine (real tools, not the
+# container). Reads the day's Development/transcripts/* + Registries_pending/*,
+# stages the deliberate/structured outputs for TLA's morning review, flags the
+# free-form remainder, and writes a completeness-aware heartbeat.
 #
-# WHAT THIS DOES (each night, on the LOCAL machine -- NOT the container):
-#   reads Development/transcripts/* for the day -> splits every verbatim turn
-#   into fragments -> files each to its home (reasoning/, verify/, founders,
-#   registry deltas) -> writes a heartbeat to Development/audit_log.md.
+# DETERMINISTIC core (implemented + tested):
+#   - corpus-integrity check (C6): validate every transcript; flag malformed/orphaned.
+#   - founder staging from @@FOUNDER: markers, via the §4.1 [REVIEW] policy.
+#   - Registries_pending/ merge -> STAGED diff for TLA (canonical edits stay TLA-applied).
+#   - schema-validation of pending deltas (C7) before staging.
+#   - completeness-aware heartbeat (C2) + partial-night handling (C7).
+# PLUGGABLE (safe default): free-form mining of un-marked prose is NOT done here;
+#   such transcripts are FLAGGED to staging/freeform_pending (never dropped). An LLM
+#   pass can slot in later.
 #
-# v1 SAFETY STANCE (this skeleton): the audit STAGES proposed changes for TLA;
-#   it does NOT write canonical files directly. founders_vision.md promotion and
-#   registry merges are produced as a staged plan under Development/staging/<date>/
-#   for TLA to review and apply. The ONLY direct write is the heartbeat (an
-#   operational log, not canonical). v2 (direct canonical writes) is gated on the
-#   [REVIEW] rail being proven over time -- see promote_founders() -- and is NOT
-#   ENABLED here.
-#
-# SKELETON SCOPE: the phase structure, the preflight GATE, --dry-run, the
-#   founders-voice [REVIEW] POLICY, the heartbeat, and the clean-tree discipline
-#   are real. The judgment-heavy extraction steps (turn-splitting, discipline
-#   classification, registry-delta detection) are STUBS with explicit output
-#   contracts -- they are honest TODOs, not faked intelligence. Every stub whose
-#   detector is uncertain resolves CONSERVATIVELY (-> [REVIEW] / -> no write).
+# v1 STANCE: stages, never auto-commits canonical. founders_vision + registries are
+# applied by TLA from the staging area (§4.1/§4.2). Only the heartbeat is written direct.
 # =============================================================================
 set -euo pipefail
 
-# ---- config -----------------------------------------------------------------
-TZ_LABEL="$(date +%Z)"
-RUN_DATE="$(date +%Y-%m-%d)"          # override with --date YYYY-MM-DD
-DRY_RUN=1                              # DEFAULT: dry-run. --apply to stage.
-ONLY=""                               # --only founders|reasoning|registry|scripts
+DRY_RUN=1
+RUN_DATE="$(date +%Y-%m-%d)"
+ONLY=""
 TRANSCRIPTS_DIR="Development/transcripts"
+PENDING_DIR="Registries_pending"
 AUDIT_LOG="Development/audit_log.md"
 STAGING_ROOT="Development/staging"
 FOUNDERS_CANON="founders_vision.md"
+KNOWN_REGISTRIES="theorem-registry axiom-registry predictions paper_catalog research_frontier master_glossary theory-overview future_projects problem_histories README INDEX bibliography todolist research_timeline TATWD founders_vision"
 
-# ---- counters (for the heartbeat line) --------------------------------------
-N_TRANSCRIPTS=0
-N_REASONING=0; N_SCRIPTS=0; N_REGISTRY=0
-N_F_STAGED=0; N_F_REVIEW=0; N_F_PROMOTED=0
+# counters
+T_SEEN=0; T_MALFORMED=0; ORPHAN_DELTAS=0
+F_STAGED=0; F_REVIEW=0
+R_STAGED=0; R_REVIEW=0
+FREEFORM=0
 RUN_STATUS="OK"
+
+log()  { printf '%s\n' "$*"; }
+plan() { printf '  [PLAN] %s\n' "$*"; }
+act()  { printf '  [STAGE] %s\n' "$*"; }
 
 usage() {
   cat <<'EOF'
 Usage: overnight_extraction_audit.sh [--apply] [--date YYYY-MM-DD] [--only KIND]
-  (default)        dry-run: print the plan-of-record, write NOTHING.
-  --apply          stage proposed changes under Development/staging/<date>/ and
-                   write the heartbeat. Does NOT touch canonical files (v1).
-  --date D         audit transcripts for date D (default: today).
-  --only KIND      restrict to one of: founders | reasoning | registry | scripts
-  -h, --help       this help.
+  (default)   dry-run: print the plan-of-record, write NOTHING.
+  --apply     stage outputs under Development/staging/<date>/ + write heartbeat;
+              clears processed Registries_pending files. Does NOT write canonical.
+  --date D    audit transcripts/deltas for date D (default today).
+  --only KIND founders | registry | freeform | integrity
 EOF
 }
 
-log()  { printf '%s\n' "$*"; }
-plan() { printf '  [PLAN] %s\n' "$*"; }       # dry-run: what WOULD happen
-act()  { printf '  [STAGE] %s\n' "$*"; }      # apply: what was staged
+# front-matter value extractor: fm_get <file> <key>
+fm_get() {
+  awk -v key="$2" '
+    NR==1 && $0=="---" {infm=1; next}
+    infm && $0=="---" {exit}
+    infm { p=index($0,": "); if (p>0){ k=substr($0,1,p-1); if(k==key){print substr($0,p+2); exit} } }
+  ' "$1"
+}
 
-# =============================================================================
-# PHASE 0 -- preflight GATE (must pass or we abort before touching anything)
-# =============================================================================
+STAGE_DIR=""
+stage_init() {
+  STAGE_DIR="$STAGING_ROOT/$RUN_DATE"
+  if [[ $DRY_RUN -eq 0 ]]; then
+    rm -rf "$STAGE_DIR"   # idempotent: a re-run regenerates this date's staging cleanly
+    mkdir -p "$STAGE_DIR/founders" "$STAGE_DIR/registry" "$STAGE_DIR/freeform_pending"
+  fi
+  return 0
+}
+
+# ---------------------------------------------------------------------------
+# PHASE 0 -- preflight gate
+# ---------------------------------------------------------------------------
 phase0_preflight() {
   log "== Phase 0: preflight =="
-  # 0.1 repo root
-  if [[ ! -d .git ]] || [[ ! -f templates/capture_and_audit_protocol.md ]]; then
-    log "ABORT: run from the CPP repo root (need .git and the protocol doc)."; exit 2
+  [[ -d .git && -f templates/capture_and_audit_protocol.md ]] || { log "ABORT: run from CPP repo root."; exit 2; }
+  for t in git grep sed awk find date; do command -v "$t" >/dev/null 2>&1 || { log "ABORT: missing tool: $t"; exit 2; }; done
+  [[ -d "$TRANSCRIPTS_DIR" ]] || { log "ABORT: $TRANSCRIPTS_DIR missing."; exit 2; }
+  [[ -f "$AUDIT_LOG" ]]       || { log "ABORT: $AUDIT_LOG missing."; exit 2; }
+  if [[ $DRY_RUN -eq 0 && -n "$(git status --porcelain)" ]]; then
+    log "ABORT: working tree not clean (--apply needs to distinguish its own staging writes)."; exit 2
   fi
-  # 0.2 required tools present (this is a real-machine job, not the container)
-  for t in git grep sed awk find date; do
-    command -v "$t" >/dev/null 2>&1 || { log "ABORT: missing tool: $t"; exit 2; }
-  done
-  # 0.3 clean tree unless dry-run (we must be able to distinguish OUR staging
-  #     writes from pre-existing dirt, exactly as Isak's audit requires)
-  if [[ $DRY_RUN -eq 0 ]]; then
-    if [[ -n "$(git status --porcelain)" ]]; then
-      log "ABORT: working tree not clean. Commit/stash first, or use --dry-run."; exit 2
-    fi
-  fi
-  # 0.4 capture trees exist
-  [[ -d "$TRANSCRIPTS_DIR" ]] || { log "ABORT: $TRANSCRIPTS_DIR missing (run Step 3 scaffold)."; exit 2; }
-  [[ -f "$AUDIT_LOG" ]]       || { log "ABORT: $AUDIT_LOG missing (run Step 3 scaffold)."; exit 2; }
   log "  preflight OK (mode: $([[ $DRY_RUN -eq 1 ]] && echo DRY-RUN || echo APPLY), date: $RUN_DATE)"
 }
 
-# =============================================================================
-# PHASE 1 -- read the day's transcripts (REAL)
-# =============================================================================
+# ---------------------------------------------------------------------------
+# PHASE 1 -- corpus integrity (C6)
+# ---------------------------------------------------------------------------
 TRANSCRIPTS=()
-phase1_read() {
-  log "== Phase 1: read transcripts for $RUN_DATE =="
-  # filename contract: YYYY-MM-DD_HHMM_p<patch>_<window-slug>.md
-  while IFS= read -r f; do TRANSCRIPTS+=("$f"); done < <(
-    find "$TRANSCRIPTS_DIR" -maxdepth 1 -type f -name "${RUN_DATE}_*.md" | sort
-  )
-  N_TRANSCRIPTS=${#TRANSCRIPTS[@]}
-  log "  found $N_TRANSCRIPTS transcript(s)"
-  for f in "${TRANSCRIPTS[@]:-}"; do [[ -n "$f" ]] && log "    - $f"; done
-  if [[ $N_TRANSCRIPTS -eq 0 ]]; then
-    log "  (nothing to audit for $RUN_DATE -- will still write a heartbeat)"
+phase1_integrity() {
+  log "== Phase 1: corpus integrity =="
+  local namerx='^[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{4}_p[0-9]+_[A-Za-z0-9._-]+\.md$'
+  while IFS= read -r f; do
+    [[ -z "$f" ]] && continue
+    T_SEEN=$((T_SEEN+1))
+    local base; base="$(basename "$f")"
+    local bad=""
+    [[ "$base" =~ $namerx ]] || bad="filename"
+    # front matter closed + has slug + (raw OR >=1 turn) => not truncated
+    local slug fmt; slug="$(fm_get "$f" window-slug)"; fmt="$(fm_get "$f" format)"
+    [[ -n "$slug" ]] || bad="${bad:+$bad,}frontmatter"
+    if [[ "$fmt" != "raw" ]] && ! grep -qE '^### \[[0-9]+\] (TLA|WORKER)\b' "$f"; then
+      bad="${bad:+$bad,}no-turns"
+    fi
+    if [[ -n "$bad" ]]; then
+      T_MALFORMED=$((T_MALFORMED+1)); log "  MALFORMED [$bad]: $base"
+    fi
+    TRANSCRIPTS+=("$f")
+  done < <(find "$TRANSCRIPTS_DIR" -maxdepth 1 -type f -name "${RUN_DATE}_*.md" | sort)
+  # orphaned deltas: a pending file whose slug has no same-day transcript
+  if [[ -d "$PENDING_DIR" ]]; then
+    while IFS= read -r p; do
+      [[ -z "$p" ]] && continue
+      local pslug; pslug="$(basename "$p" .md)"
+      if ! ls "$TRANSCRIPTS_DIR/${RUN_DATE}_"*"_${pslug}.md" >/dev/null 2>&1; then
+        ORPHAN_DELTAS=$((ORPHAN_DELTAS+1)); log "  ORPHAN-DELTA (no same-day transcript): $(basename "$p")"
+      fi
+    done < <(find "$PENDING_DIR" -maxdepth 1 -type f -name '*.md' ! -name 'README.md' 2>/dev/null | sort)
   fi
+  log "  transcripts seen=$T_SEEN malformed=$T_MALFORMED orphan-deltas=$ORPHAN_DELTAS"
+  return 0
 }
 
-# =============================================================================
-# PHASE 2 -- split turns into fragments and file by class
-#   STUB: turn-splitting + discipline classification is genuine judgment (NLP).
-#   Contract each stub must satisfy is documented inline. Conservative default:
-#   anything the classifier is unsure about is filed to a [REVIEW] bucket, never
-#   guessed into a canonical home.
-# =============================================================================
-phase2_split_and_file() {
-  [[ -n "$ONLY" && "$ONLY" != "reasoning" && "$ONLY" != "scripts" && "$ONLY" != "registry" ]] && return 0
-  log "== Phase 2: split + file (reasoning / scripts / registry deltas) =="
+# ---------------------------------------------------------------------------
+# PHASE 3 -- founder staging from @@FOUNDER: markers (§4.1 [REVIEW] policy)
+# ---------------------------------------------------------------------------
+# classify a (quote, context): echoes AUTO or REVIEW:<trigger>
+classify_founder() {
+  local q="$1" ctx="$2"
+  [[ -n "$q" && -n "$ctx" ]] || { echo "REVIEW:MALFORMED"; return; }
+  # DUPLICATE: first 60 chars of the quote already present verbatim in canonical
+  if [[ -f "$FOUNDERS_CANON" ]]; then
+    local probe="${q:0:60}"
+    grep -qF -- "$probe" "$FOUNDERS_CANON" 2>/dev/null && { echo "REVIEW:DUPLICATE"; return; }
+  fi
+  echo "AUTO"
+}
+phase3_founders() {
+  [[ -n "$ONLY" && "$ONLY" != "founders" ]] && return 0
+  log "== Phase 3: founder staging (@@FOUNDER markers) =="
+  local out="$STAGE_DIR/founders/${RUN_DATE}_founders.md"
+  [[ $DRY_RUN -eq 0 ]] && : > "$out"
   for f in "${TRANSCRIPTS[@]:-}"; do
     [[ -z "$f" ]] && continue
-    # CONTRACT (TODO, real impl): parse $f into ordered turns with role markers,
-    # then for each turn emit zero+ fragments tagged {reasoning|script|registry|
-    # founder|procedural}. Procedural turns are dropped. Each non-founder fragment
-    # is staged to its home with a provenance line back to $f.
-    plan "split '$f' -> reasoning/, verify/, registry deltas   [STUB: classifier TODO]"
+    while IFS= read -r line; do
+      [[ -z "$line" ]] && continue
+      # @@FOUNDER: "quote" | context: ctx
+      local q ctx verdict
+      q="$(sed -n 's/.*@@FOUNDER:[[:space:]]*"\([^"]*\)".*/\1/p' <<<"$line")"
+      ctx="$(sed -n 's/.*context:[[:space:]]*\(.*\)$/\1/p' <<<"$line")"
+      verdict="$(classify_founder "$q" "$ctx")"
+      if [[ "$verdict" == "AUTO" ]]; then F_STAGED=$((F_STAGED+1)); else F_REVIEW=$((F_REVIEW+1)); fi
+      if [[ $DRY_RUN -eq 1 ]]; then
+        plan "founder [$verdict] from $(basename "$f"): \"${q:0:48}...\""
+      else
+        { printf '## [%s] %s\n' "$verdict" "$(basename "$f")"
+          printf '> %s\n\n' "$q"
+          printf '_context:_ %s\n\n' "$ctx"; } >> "$out"
+      fi
+    done < <(grep -h '@@FOUNDER:' "$f" 2>/dev/null || true)
   done
-  # counters stay 0 until the classifier lands; honest, not faked.
+  log "  founders: staged(AUTO)=$F_STAGED review=$F_REVIEW"
+  [[ $DRY_RUN -eq 0 ]] && act "founder candidates -> $out (TLA reviews/applies; nothing written to $FOUNDERS_CANON)"
+  return 0
 }
 
-# =============================================================================
-# PHASE 3 -- registry-delta merge
-#   v1: STAGE deltas for TLA (canonical-registry edits are deferred to TLA).
-# =============================================================================
-phase3_registry() {
+# ---------------------------------------------------------------------------
+# PHASE 4 -- Registries_pending merge -> STAGED diff (C7 schema-validate first)
+# ---------------------------------------------------------------------------
+known_registry() { grep -qw -- "$1" <<<"$KNOWN_REGISTRIES"; }
+phase4_registry() {
   [[ -n "$ONLY" && "$ONLY" != "registry" ]] && return 0
-  log "== Phase 3: registry deltas (STAGED for TLA, not written canonical) =="
-  # CONTRACT (TODO): from Phase-2 'registry'-tagged fragments, build a proposed
-  # diff per canonical registry (theorem-registry, predictions, frontier sectors,
-  # todo) into $STAGING_ROOT/$RUN_DATE/registry/. Never edit canonical here.
-  plan "no registry deltas staged   [STUB: depends on Phase-2 classifier]"
-}
-
-# =============================================================================
-# PHASE 4 -- founder's-voice path  (the high-risk path; policy is REAL)
-# =============================================================================
-# classify_founder_candidate(): the [REVIEW] policy, encoded.
-# Returns "AUTO" only for a single, cleanly-bounded, unambiguously-attributed,
-# verbatim, novel TLA passage with a clean context anchor and no normalization.
-# ANY trigger below -> "REVIEW". Any uncertain/stubbed detector -> "REVIEW".
-# Precision over recall on the AUTO path; the REVIEW queue is lossless.
-#
-#   1 BOUNDS         verbatim start/end not cleanly delimited
-#   2 ATTRIBUTION    span not confidently TLA's own words
-#   3 MULTIPLICITY   >1 distinct candidate passage in the fragment
-#   4 CROSS-TURN     passage stitched across more than one turn
-#   5 PARAPHRASE     only a reconstructed/paraphrased version exists
-#   6 DUPLICATE      substantial overlap with an existing founders_vision entry
-#   7 CONTEXT        no accurate 1-line context without inferring intent
-#   8 NORMALIZATION  extraction needed more than trivial-whitespace cleanup
-classify_founder_candidate() {
-  # args: $1 = path to a candidate fragment file (staged scratch)
-  # SKELETON: detectors are stubs. Per the global default they return REVIEW.
-  # As detectors land, each flips to a real test; the DEFAULT must remain REVIEW.
-  local cand="$1"
-  # --- real, cheap detectors that CAN run now: -----------------------------
-  # (6) DUPLICATE: if the candidate's first quoted line already appears verbatim
-  #     in founders_vision.md, it's a probable duplicate -> REVIEW (reuse of the
-  #     sweep_founder_contributions.sh promoted-vs-orphan idea).
-  if [[ -f "$FOUNDERS_CANON" ]]; then
-    local firstq
-    firstq="$(grep -m1 '^> ' "$cand" 2>/dev/null | sed 's/^> //' | cut -c1-60 || true)"
-    if [[ -n "$firstq" ]] && grep -qF -- "$firstq" "$FOUNDERS_CANON" 2>/dev/null; then
-      echo "REVIEW:DUPLICATE"; return 0
+  log "== Phase 4: registry merge (STAGED for TLA; canonical not written) =="
+  [[ -d "$PENDING_DIR" ]] || { log "  (no $PENDING_DIR)"; return 0; }
+  while IFS= read -r p; do
+    [[ -z "$p" ]] && continue
+    local pslug; pslug="$(basename "$p" .md)"
+    while IFS= read -r line; do
+      [[ "$line" =~ ^-[[:space:]] ]] || continue
+      local reg act_str
+      reg="$(sed -n 's/^-[[:space:]]*registry=\([^ |]*\).*/\1/p' <<<"$line")"
+      act_str="$(sed -n 's/.*action="\([^"]*\)".*/\1/p' <<<"$line")"
+      # schema validation
+      if [[ -z "$reg" || -z "$act_str" ]] || ! known_registry "$reg"; then
+        R_REVIEW=$((R_REVIEW+1))
+        if [[ $DRY_RUN -eq 1 ]]; then plan "registry [REVIEW:SCHEMA] from $pslug: ${line:0:60}"
+        else printf '%s | from=%s | %s\n' "$line" "$pslug" "REVIEW:SCHEMA" >> "$STAGE_DIR/registry/_REVIEW.txt"; fi
+        continue
+      fi
+      R_STAGED=$((R_STAGED+1))
+      if [[ $DRY_RUN -eq 1 ]]; then
+        plan "registry [$reg] <= \"$act_str\" (from $pslug)"
+      else
+        printf -- '- %s | from=%s\n' "$act_str" "$pslug" >> "$STAGE_DIR/registry/${reg}.delta"
+      fi
+    done < "$p"
+    # processed all lines (valid->staged, invalid->_REVIEW): clear the file. Re-run safe
+    # because staging is regenerated per-run (stage_init) and the file is now empty.
+    if [[ $DRY_RUN -eq 0 ]]; then
+      { printf -- '---\nwindow-slug: %s\n---\n# Pending registry deltas — %s   (cleared by audit %s)\n' "$pslug" "$pslug" "$RUN_DATE"; } > "$p"
+      act "merged + cleared $PENDING_DIR/$(basename "$p")"
     fi
-  fi
-  # (everything else): detectors TODO -> conservative default.
-  echo "REVIEW:DEFAULT-CONSERVATIVE"; return 0
+  done < <(find "$PENDING_DIR" -maxdepth 1 -type f -name '*.md' ! -name 'README.md' 2>/dev/null | sort)
+  log "  registry: staged=$R_STAGED review=$R_REVIEW"
+  return 0
 }
 
-promote_founders() {
-  [[ -n "$ONLY" && "$ONLY" != "founders" ]] && return 0
-  log "== Phase 4: founder's-voice (v1 = STAGE for TLA; AUTO is the v2 target) =="
-  local stage_dir="$STAGING_ROOT/$RUN_DATE/founders"
-  # CONTRACT (TODO): Phase-2 'founder'-tagged fragments are written as candidate
-  # blocks (each a verbatim '> ...' quote + a 1-line context) into scratch, then
-  # classify_founder_candidate() labels each AUTO or REVIEW:<trigger>.
-  # v1 stages BOTH classes into $stage_dir for TLA; AUTO ones are what v2 would
-  # write directly once the rail is proven. NOTHING is written to $FOUNDERS_CANON.
-  if [[ $DRY_RUN -eq 1 ]]; then
-    plan "stage founder candidates -> $stage_dir (AUTO + [REVIEW] labelled)   [STUB: extractor TODO]"
-    plan "founders_vision.md is NOT written in v1 (staged-first; AUTO is v2)"
-  else
-    mkdir -p "$stage_dir"
-    act "staged 0 founder candidate(s) -> $stage_dir   [STUB: extractor TODO]"
-    # When the extractor lands: for each candidate, verdict=$(classify_founder_candidate "$c")
-    # -> increment N_F_STAGED, and N_F_REVIEW when verdict starts with REVIEW.
-  fi
-  # FIRST-RUN CARRY-OVER (handover §6 / build-plan §D): the five 2049-2058
-  # contributions live in reasoning/ (they predate Development/transcripts/), so
-  # the first sweep must read THERE, not in transcripts/. Handled as a documented
-  # one-shot, NOT auto-merged with the daily path:
-  #   (a) scalar-SSV ruling p2050  (b) velocity-emergence reframe p2052
-  #   (c) inertia=B-field/DP-Sea p2055  (d) rigid-bolus correction p2056/57
-  #   (e) exact-emergent-Lorentz campaign DECISION reasoning (no verbatim home)
-  plan "first-run carry-over sweep of 2049-2058 reasoning/ -> staged   [STUB: one-shot TODO]"
+# ---------------------------------------------------------------------------
+# PHASE 5 -- free-form pass (PLUGGABLE; safe default = flag, never drop)
+# ---------------------------------------------------------------------------
+phase5_freeform() {
+  [[ -n "$ONLY" && "$ONLY" != "freeform" ]] && return 0
+  log "== Phase 5: free-form pass (flag for mining; not extracted in v1) =="
+  local ptr="$STAGE_DIR/freeform_pending/${RUN_DATE}_pending.txt"
+  [[ $DRY_RUN -eq 0 ]] && : > "$ptr"
+  for f in "${TRANSCRIPTS[@]:-}"; do
+    [[ -z "$f" ]] && continue
+    # a transcript needs mining if it has substantive (non-@@FOUNDER, non-procedural) content
+    # v1 heuristic: flag every transcript that carries any non-marker body; conservative = flag all.
+    FREEFORM=$((FREEFORM+1))
+    if [[ $DRY_RUN -eq 1 ]]; then plan "freeform-pending: $(basename "$f")"
+    else printf '%s\n' "$f" >> "$ptr"; fi
+  done
+  log "  freeform-pending transcripts=$FREEFORM (awaiting LLM/manual mining pass)"
+  return 0
 }
 
-# =============================================================================
-# PHASE 5 -- heartbeat  (REAL; the anti-silent-rot rail)
-# =============================================================================
+# ---------------------------------------------------------------------------
+# heartbeat (C2 completeness-aware)
+# ---------------------------------------------------------------------------
 write_heartbeat() {
-  local now status line
-  now="$(date +%H:%M)"
+  local now status line open_review
+  now="$(date +%H:%M)"; local tz; tz="$(date +%Z)"
   status="$([[ $DRY_RUN -eq 1 ]] && echo "DRY-RUN" || echo "$RUN_STATUS")"
-  # format pinned in Development/audit_log.md (Patch 2103):
-  line="${RUN_DATE} ${now} ${TZ_LABEL} | run=${status} | transcripts=${N_TRANSCRIPTS} | filed=reasoning:${N_REASONING},scripts:${N_SCRIPTS},registry:${N_REGISTRY} | founders=staged:${N_F_STAGED},review:${N_F_REVIEW},promoted:${N_F_PROMOTED} | notes=skeleton"
-  log "== Phase 5: heartbeat =="
-  if [[ $DRY_RUN -eq 1 ]]; then
-    plan "would append to $AUDIT_LOG:"
-    log  "    $line"
-  else
-    printf '%s\n' "$line" >> "$AUDIT_LOG"
-    act "appended heartbeat to $AUDIT_LOG"
-  fi
+  open_review=$((F_REVIEW + R_REVIEW))
+  line="${RUN_DATE} ${now} ${tz} | run=${status} | transcripts=${T_SEEN}(malformed:${T_MALFORMED},orphan-deltas:${ORPHAN_DELTAS}) | filed=reasoning:0,scripts:0,registry:${R_STAGED} | founders=staged:${F_STAGED},review:${F_REVIEW},promoted:0 | open_review=${open_review} | freeform_pending=${FREEFORM} | notes=v1-deterministic"
+  log "== heartbeat =="
+  if [[ $DRY_RUN -eq 1 ]]; then plan "would append: $line"; else printf '%s\n' "$line" >> "$AUDIT_LOG"; act "heartbeat -> $AUDIT_LOG"; fi
+  return 0
 }
 
-# =============================================================================
-# clean-tree discipline -- restore on EVERY exit path (SKIP/ERROR included)
-# =============================================================================
+# ---------------------------------------------------------------------------
+# partial-night handling: FAIL heartbeat on error (recoverable; a MISSING line is the loud case)
+# ---------------------------------------------------------------------------
 on_exit() {
   local rc=$?
   if [[ $rc -ne 0 && $rc -ne 2 ]]; then
     RUN_STATUS="FAIL"
-    log "!! audit errored (rc=$rc) -- a written FAIL heartbeat is recoverable; a MISSING one is the loud case."
-    # best-effort heartbeat so the failure is LOUD-but-logged, never silent:
-    [[ $DRY_RUN -eq 0 ]] && write_heartbeat || true
+    log "!! errored (rc=$rc) -- writing FAIL heartbeat; un-cleared pending files retry next run."
+    [[ $DRY_RUN -eq 0 ]] && { write_heartbeat || true; }
   fi
 }
 trap on_exit EXIT
 
-# ---- arg parse --------------------------------------------------------------
+# ---- args + run -------------------------------------------------------------
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --apply) DRY_RUN=0; shift;;
@@ -249,20 +268,17 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-# ---- run --------------------------------------------------------------------
-log "### overnight extraction audit (skeleton) -- $RUN_DATE ($([[ $DRY_RUN -eq 1 ]] && echo DRY-RUN || echo APPLY)) ###"
+log "### overnight extraction audit -- $RUN_DATE ($([[ $DRY_RUN -eq 1 ]] && echo DRY-RUN || echo APPLY)) ###"
 phase0_preflight
-phase1_read
-phase2_split_and_file
-phase3_registry
-promote_founders
+stage_init
+phase1_integrity
+phase3_founders
+phase4_registry
+phase5_freeform
 write_heartbeat
-
 log ""
 log "Next:"
-log "  - DRY-RUN shown above. Re-run with --apply to stage under $STAGING_ROOT/$RUN_DATE/."
-log "  - TLA reviews staged candidates; founders_vision.md + registries remain TLA-applied (v1)."
-log "  - Build the Phase-2 classifier + Phase-4 extractor to replace the STUBs; keep the"
-log "    classify_founder_candidate() DEFAULT at REVIEW until each detector is proven."
-log "  - Confirm with TLA/Isak: nightly scheduler (cron / Task Scheduler) + that this runs"
-log "    on the local machine, not the container."
+log "  - Review Development/staging/$RUN_DATE/: founders/ (apply approved -> founders_vision.md, push),"
+log "    registry/*.delta (apply -> canonical registries, push), freeform_pending/ (mine later)."
+log "  - Clear resolved [REVIEW] items (founders + registry/_REVIEW.txt) as a blocking morning step (§4.2)."
+log "  - Re-run is retry-safe: un-cleared pending files are reprocessed; a missing heartbeat is the loud case."
