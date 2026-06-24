@@ -291,3 +291,18 @@ evasion, v1.2, panel-closed SOUND) sharpens the premise picture but moves no R2 
 **Net:** the root sharpens R2's premise grounding and unifies R2's unconditional route with the root's
 W1-vs-W2 decider, but lands **no R2 verdict move and no THEO.** See OPEN-SR-10 (`frontier_sectors/SR.md`)
 and the Round-4 finding (`em_emergence/lorentz_root/2068_round4_periodic_nogo_quasicrystal.md`).
+
+---
+
+## Update — Patch 2078: exact-Lorentz root campaign CLOSED at W2 (OPEN-SR-10) — NO verdict change
+
+The root campaign reached its terminal determination — **W2** (Rounds 1–5, panel-closed) — and is now
+closed (handover `handovers/2026-06-24_lorentz_root_W2_campaign_close.md`). **R2's verdict is unchanged
+(PASS-conditional; unconditional PASS still gated on OPEN-SR-9.)** Bearing on R2: Round 5 showed the
+deterministic icosahedral substrate gives **IR-exact Lorentz via isotropic elasticity** (rank-4 isotropic to
+machine precision) with a symmetry-forced l=6/q⁴ floor — which *supports* R2's exact-Lorentz premise (i) and
+isotropy premise (ii) from the substrate's own structure, but does **not** discharge OPEN-SR-9 (the
+from-substrate c_photon optical-response computation), to which the root's Round-5 decider is coincident.
+The honest caveat travels with it: the R5 dispersion-inheritance rests on a hopping-sum proxy, not the full
+PCD dynamics. **Net: stronger conceptual grounding for R2's premises, no R2 verdict move, no THEO.** The
+committed world-call (W2) and OPEN-SR-10 → RESOLVED-W2 remain TLA's to ratify.
