@@ -1613,6 +1613,29 @@ Bootup for Conscious Point Physics (CPP). Clone the repo and read the bootup fil
 
 **Chat-echo requirement (adopted 1 June 2026, Patch 0728).** Whenever the handover protocol completes (Step H), the assistant **must reproduce this kickoff line verbatim in the chat reply**, as a fenced, paste-ready block, in addition to placing it at the top of the Step-H document. Rationale: this line is the one piece of the handover that Thomas himself pastes into the next context window, so it must be immediately copy-pasteable from the conversation without his having to open the handover file and search for it. This is the **explicit exception** to the "no handover content in chat" anti-pattern in the Common failure modes list below: the *handover body/summary* still goes only to the Step-H file (never the chat), but the *kickoff line* is echoed in chat by design. Empirical motivation: the echo happened intermittently (apparently only on explicit request), and across several recent session closes it did not fire, forcing Thomas to dig the line out of the file each time. Echoing the line is now mandatory at every handover, not request-gated.
 
+### The orienting paste-block (kickoff line + orientation) — adopted 24 June 2026, Patch 2079
+
+**What Thomas pastes into a fresh window is a single block: the fixed kickoff line, then a short orienting
+paragraph.** The kickoff line above already carries the bootup raw URL
+(`https://raw.githubusercontent.com/Hyperphysics-Institute/CPP/main/bootup.md`) and the CLONE-FIRST gate, so
+**the URL never needs to be pasted or remembered separately** — it lives in the fixed line. On top of that,
+at every handover completion the assistant produces, **in the chat reply** (alongside the verbatim kickoff
+line, per the Chat-echo requirement above), a **3–6 sentence orienting paragraph** so the next window is
+booted *and* oriented from one paste. The orienting paragraph must cover, concisely:
+1. **Clone + bootup** — already in the kickoff line; the orientation does not repeat the URL, it assumes it.
+2. **Anti-collision** — which band the next window should take and the trigger to run the anti-collision
+   protocol (`templates/new_window_protocol.md` / "run the anti-collision protocol"), or a note that no
+   parallel windows are active.
+3. **The handover's own what-next** — current state in one or two sentences and the single most-important
+   next action (mirrors the handover §1 orienting paragraph; self-contained so the reader needn't scroll).
+
+This is the same single-orienting-paragraph content required at the head of the handover document (Step H
+structure, below), surfaced into chat as a paste-ready block. Rationale (Thomas, Patch 2079): a bare kickoff
+line boots a window but does not orient it; bundling the orientation + anti-collision into the one block
+Thomas pastes removes a manual step and prevents the next window from starting cold or colliding. The
+*handover body* still goes only to the Step-H file (the no-handover-content-in-chat rule holds); the
+kickoff line **and** this short orienting paragraph are the sanctioned chat exceptions.
+
 ### Handover file location and naming convention (adopted 17 May 2026, Patch 0422)
 
 **Location.** All handover files live in `handovers/` at the repo root. There is no other handover location. Per-paper subfolders (formerly `flagship_papers/<paper>/documentation_suite/handover-<paper>.md` and `series_<x>/papers/<id>/documentation_suite/handover-<id>.md`), root-level legacy files (formerly `SESSION_36/54/81_HANDOVER_FOR_NEXT_CONTEXT.md`), per-trajectory files (formerly `flagship_papers/<paper>/sketches/<trajectory>_handover.md`), and per-problem files (formerly `session_logs/OPEN-<X>_handover.md`) have all been migrated to `handovers/` in a single chronologically-sorted folder.
