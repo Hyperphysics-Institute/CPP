@@ -41,7 +41,14 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 
 [FILLED] **One-scatter density** ρ₁ = 1/[(σ_V/m)·v·t]: cores form where ρ_halo > ρ₁. At σ_V/m = 0.20, t = 10 Gyr: ρ₁ ≈ 0.08 M⊙/pc³ (dwarf), 0.0016 (cluster). **Representative dwarf core: r_core ≈ 0.27 kpc** (vs ≈ 0.81 kpc for strong SIDM σ/m = 1) — a *few-hundred-parsec, mild* core at the small/detectable edge of the observed 0.2–1 kpc range. **Cluster:** a modest core forms; σ_V/m = 0.20 is at the edge of current bounds (fine vs looser ~0.5–1, mild tension vs tightest ~0.1).
 [FILLED] **Robust vs uncertain:** robust — mild (~0.1–0.3 kpc), flat across scale, detectable-edge; uncertain — the core *size* is halo-model dependent (factor ~2) on top of f's factor ~3.
-[TO FILL] Confront one or two *specific* observed dwarfs (e.g. a classical dSph + an LSB) quantitatively, rather than the representative NFW only.
+[FILLED] **Specific confrontation (Fig. 2, `figures/0850_specific_dwarf_fit.png`; verify via `scripts/0850_specific_dwarf_fit.py`).** We test the velocity-*independent* σ_V/m ≈ 0.20 against two well-measured systems ~5× apart in velocity, writing the cored central density as the one-scatter density ρ₁(σ₁D) = 1/[(σ_V/m)·⟨v_rel⟩·t] with ⟨v_rel⟩ ≈ 2.26 σ₁D and t = 10 Gyr:
+
+| galaxy | σ₁D (km/s) | ρ₁ predicted (M⊙/pc³) | ρ_obs central (M⊙/pc³) | pred/obs |
+|---|---|---|---|---|
+| Fornax dSph (classical) | 11 | 0.094 | 0.016–0.07 [Mateo+ 1991; Jardel & Gebhardt 2012] | 2.8× |
+| IC 2574 (dwarf/LSB) | 57 (= v_max/√2, v_max ≈ 80) | 0.018 | ≈ 0.006 [de Blok+ 2008] | 3.1× |
+
+Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20), and — the discriminating point — **the offset is flat across the 5× span in σ₁D**. A velocity-*dependent* σ/m rising toward dwarfs would drive the Fornax offset far above IC 2574's; that is not seen, so the data are consistent with the velocity-*independent* prediction and inconsistent with light-mediator SIDM's v⁻⁴ trend. The common ~3× lies within the factor-few (f × halo-model) uncertainty; if real it nudges the normalization marginally below 0.20 (cores a touch more developed than the bare one-scatter floor), still velocity-flat. Cores form in both (ρ_obs < ρ₁), consistent with their observed cores. *(This is the density test, which ρ₁ gives directly; a full core-radius confrontation — notably IC 2574's large ~8 kpc core — awaits the NFW r₁ inversion in the core-radius-vs-σ/m panel.)*
 
 ## 7. Falsifiability  *(draft)*
 
@@ -80,4 +87,4 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 
 ## Provenance
 
-§4 ← 0830–0836; §5 ← 0840–0841; §6 ← 0842; §7 ← 0840/0842; §8 ← 0704 (abundance), 0833 + Project C (mass), 0843 (route B); §9 ← 0720–0814 (sea_gravitation); §3/§10 ← consolidation Patch 1200.
+§4 ← 0830–0836; §5 ← 0840–0841; §6 ← 0842, 0850 (specific-dwarf confrontation); §7 ← 0840/0842; §8 ← 0704 (abundance), 0833 + Project C (mass), 0843 (route B); §9 ← 0720–0814 (sea_gravitation); §3/§10 ← consolidation Patch 1200.
