@@ -74,3 +74,35 @@ Cross-wiring is the known June-2026 failure mode; the in-document IDENTITY instr
 Change set integrated into the protocol v1.0-candidate (Patch 2108): **C1** (overclaim softened in §2; §3.1 "Automatic Capture Mechanism Requirements" added — always-on/zero-touch/non-bypassable/fsync-durable); **C2** (§5 heartbeat now completeness-aware — "processed all expected inputs?"); **C3 = TLA's middle** (§4.1 — v1 staged is the standing default; v2 never self-graduates, only explicit TLA enable after measurable criteria incl. zero-false-negative adversarial founder-quote test + rollback); **C4** (§3 procedural-turn exclusion removed from the daytime path → filtered by the macro, §4-step-2); **C5** (§4.2 `[REVIEW]`-queue ownership defined as a blocking morning/bootup action); **C6** (§4-step-1 transcript-integrity/corpus-completeness check); **C7** (§4.3 — schema-validation, partial-night handling, regression suite — routed to the Step-4 macro build); **C8** (§0/§4.1/§12 — canonical-write exception bounds stated narrowly). Plus **C9** (§7 scope boundary — work layer vs capture layer; paper production unchanged except deferred shared-registry edits) and **C10** (§6 deliberate-vs-incidental delta split + write-partitioned `Registries_pending/`; §10 records this as a *scoped refinement* of the panel-ratified T2, not an overturn; the read-render realizes §8's anticipated render). Paper-production interaction wired in Patch 2107.
 
 **Remaining gate:** TLA ratifies the v1.0-candidate (or sends it for a confirmatory panel pass) → DRAFT markers come off → canonical. No status moved by the worker.
+
+---
+
+# Round 2 — confirmatory pass (v1.0-candidate, Patch 2108–2109)
+
+**Cycle:** dispatched after 2109; responses integrated Patch 2110 (24 June 2026) · **Panel:** ChatGPT + Grok + Gemini + Copilot · **Outcome in one line:** **RATIFY, 4/4** — every Round-1 concern RESOLVED 4/4, the new R5 (scoped `Registries_pending/` revival) judged **SOUND-REFINEMENT 4/4**; no ratification-blocking new concern. The v1.0-candidate is panel-cleared; the only remaining gate is **TLA's formal ratification** to declare canonical.
+
+## §0. Identity caveat (Round 2)
+4 independent reads, attributed by TLA receipt labels. **This round all four self-labels matched the receipt labels** — Gemini's reasoning trace explicitly acknowledged its Round-1 cross-wiring ("I will consistently refer to myself as Gemini") and self-identified correctly. The §4.1 receipt-labelling + in-document IDENTITY instruction held; no mismatch to record.
+
+## Tally
+
+| | ChatGPT | Grok | Gemini | Copilot |
+|---|---|---|---|---|
+| **OVERALL** | RATIFY | RATIFY | RATIFY | RATIFY |
+| R1 Keystone (was T1) | RESOLVED | RESOLVED | RESOLVED | RESOLVED |
+| R2 Founder (was T3) | RESOLVED | RESOLVED | RESOLVED | RESOLVED |
+| R3 SPOF (was T4) | RESOLVED | RESOLVED | RESOLVED | RESOLVED |
+| R4 Seams (was T5) | RESOLVED | RESOLVED | RESOLVED | RESOLVED |
+| R5 Pending-revival (NEW) | SOUND-REFINEMENT | SOUND-REFINEMENT | SOUND-REFINEMENT | SOUND-REFINEMENT |
+
+**Every change verified as substantive, not cosmetic** (Copilot and ChatGPT both checked specifically for cosmetic-only integration and found none). The two split/contested Round-1 items closed cleanly: T4 (was 2/2) → RESOLVED 4/4 once durability became a §3.1 requirement and the heartbeat became completeness-aware; T3 → RESOLVED 4/4, including Gemini, who had argued in Round 1 to strike v2 entirely and now judges "never self-graduates + explicit-TLA-enable-only" sufficient ("the machine cannot seize this capability").
+
+## R5 convergence (the new item)
+All four independently ruled the scoped revival a **refinement of T2, not an overturn**, for the same reasons: per-window write-partitioning (never a shared target) preserves collision-freedom by construction; it is scoped to *deliberate* precise deltas only (incidental stays collapsed to transcript extraction); the read-render is read-only and answers the same-day ID-allocation problem T2 deferred. The §6/§10 framing was judged accurate and internally consistent.
+
+## Archival cautions (non-blocking; recorded for the panel archive)
+- **ChatGPT:** §3.1 now carries substantial load-bearing weight; future governance reviews should treat **implementation verification of §3.1** (always-on / zero-touch / fsync-durable capture) as part of protocol validation, not merely an engineering detail. *(Actionable at the Step-4 / mechanism build.)*
+- **ChatGPT:** expects v1-staged to remain the dominant operating mode in practice — consistent with the T3 posture; not a concern, an observation.
+
+## Status
+**Panel: RATIFY 4/4 (confirmatory pass clean).** Per the protocol's own gate ("Not canonical until TLA ratifies the v1.0-candidate, or a confirmatory panel pass clears it") the blocker is removed. **The flip to canonical is TLA's status move** — on ratification, the DRAFT markers come off across `capture_and_audit_protocol.md`, the `operating_system.md` §6 wiring (2105) + §4 paper-production discipline (2107), and the bootup heartbeat check.
