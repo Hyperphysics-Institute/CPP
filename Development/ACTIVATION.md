@@ -5,6 +5,40 @@ path, the nightly scheduler, and your morning review. Full design: `templates/ca
 
 ---
 
+## SOLO BACKGROUND MODE (recommended — "I just want to develop papers")
+If you are working solo (not coordinating parallel windows with Isak), do **NOT** flip the full protocol to
+ACTIVE — full activation adds daily friction (pending-delta writes + mandatory morning review) that only exists
+to stop parallel windows colliding. Instead run the audit as a **background safety net** and keep developing
+papers exactly as you do today.
+
+**What's already true with zero setup:** your reasoning and founder's voice are captured verbatim every session
+(per-patch reasoning fragments + `FOUNDER CONTRIBUTION` blocks). That keeps running regardless of any of this.
+
+**The ONE thing you do (once):** create the scheduled task. Open an elevated `cmd` (confirm your bash path with
+`where bash` first) and paste:
+```
+schtasks /Create /TN "CPP Nightly Audit" ^
+  /TR "\"C:\Program Files\Git\bin\bash.exe\" -lc \"~/Documents/GitHub/CPP/scripts/run_nightly_audit.sh\"" ^
+  /SC DAILY /ST 03:00 /F
+```
+Then in Task Scheduler (GUI) → this task → Properties → **Conditions → Wake the computer to run this task** ✓.
+Test immediately: `schtasks /Run /TN "CPP Nightly Audit"`, then check `~/cpp_audit_runs/<today>.log`.
+
+That's it. From then on `run_nightly_audit.sh` runs every night, processes whatever's been captured, stages
+anything notable under `Development/staging/`, and **commits its own operational output locally** so it never
+stalls. You develop papers as current practice; you glance at `Development/staging/` whenever you feel like it
+(or never — the raw material is preserved for later). Nothing is required of you day to day.
+
+**Honest limit:** truly automatic, zero-touch capture of the *raw verbatim transcript* needs either a platform
+export or an Isak-built integration — neither is something this system can self-provision. Until then, raw-
+transcript capture is best-effort: run `scripts/capture_session.sh` at a session's end if you want that session's
+full transcript preserved. Your essentials (reasoning + founder's voice) are already covered without it.
+
+The full multi-window runbook below is for when you and Isak run parallel windows and want the strict
+collision-safe discipline. Ignore it for solo work.
+
+---
+
 ## 0. Prerequisite — a capture path that emits the contract
 Something must drop each session's verbatim transcript into `Development/transcripts/` in the format contract
 (`Development/transcripts/README.md`). Two options:

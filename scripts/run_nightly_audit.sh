@@ -28,4 +28,15 @@ fi
 
 bash scripts/overnight_extraction_audit.sh --apply || { echo "audit returned nonzero — check the FAIL heartbeat in Development/audit_log.md"; exit 1; }
 
-echo "=== done. Review Development/staging/$(date +%Y-%m-%d)/ in the morning, then commit + push. ==="
+# --- Background self-sustain ---------------------------------------------------
+# Commit the audit's OPERATIONAL output LOCALLY (ingested transcripts, staging,
+# heartbeat, cleared pending). NOT canonical, NOT pushed. This keeps the tree clean
+# so tomorrow's run never stalls on an un-reviewed staging tree — the audit runs
+# every night with zero attention. You review Development/staging/ and push on YOUR
+# OWN cadence (or never — the raw capture is preserved either way).
+if [[ -n "$(git status --porcelain)" ]]; then
+  git add -A Development/ Registries_pending/ 2>/dev/null || true
+  git commit -m "nightly audit $(date +%Y-%m-%d) (operational only; review staging + apply canonical + push when you like)" >/dev/null 2>&1 || true
+  echo "committed operational output locally (not pushed)."
+fi
+echo "=== done. Develop papers as usual; review Development/staging/ whenever you like. ==="
