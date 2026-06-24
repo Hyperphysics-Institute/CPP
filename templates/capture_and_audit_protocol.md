@@ -1,7 +1,7 @@
 # The Capture-and-Audit Protocol
 
 **STATUS: CANONICAL — ratified Patch 2111 (TLA), after panel RATIFY 4/4 over two CONV-001 rounds (Patch 2106 RATIFY-WITH-CHANGES → 2110 confirmatory RATIFY).** Ratified as the standing spec. **NOT YET OPERATIONAL:** the protocol activates only once the §3.1 automatic-capture mechanism and the Step-4 nightly macro (`scripts/overnight_extraction_audit.sh`) are built and scheduled. Until then, windows continue current capture/registry practice — the deferral channels (`Development/transcripts/`, `Registries_pending/`) are defined but not yet consumed by an audit that does not yet exist.
-**Established:** Patch 2102. **Revised:** Patch 2108 — integrated the 4-reviewer change set (C1–C8), the founder-promote posture (T3 = staged-default/never-auto-graduate), the scope boundary (§7), and the deliberate-delta `Registries_pending/` mechanism (§6) that the paper-production protocol (Patch 2107) consumes.
+**Established:** Patch 2102. **Revised:** Patch 2108 — integrated the 4-reviewer change set (C1–C8), the founder-promote posture (T3 = staged-default/never-auto-graduate), the scope boundary (§7), and the deliberate-delta `Registries_pending/` mechanism (§6) that the paper-production protocol (Patch 2107) consumes. **Revised:** Patch 2116 (TLA-ratified) — added §6.1 temporary-THEO-handle late-binding rule (patch-anchored handles → nightly permanentize); the worker-side rule is live, the auditor rebind stage is tracked as a build item (Patch 2117).
 **Peer of:** `operating_system.md`, `reasoning_capture_protocol.md`, `paper_completion_checklist.md`.
 **Supersedes (for the capture pathway):** the scattered, real-time, per-patch capture rules. It does **not delete** `reasoning_capture_protocol.md`; it inverts when its judgment happens (see §8).
 
@@ -71,6 +71,47 @@ Not all registry changes are alike, and the difference decides how each is captu
 **The judgment stays in-session; only the write-to-canonical defers.** This is why the deliberate case scope-revives a write-partitioned pending area where the general incidental case does not (see §10).
 
 **Read-render (same-day visibility).** To see another window's in-flight registrations before the overnight merge — and **REQUIRED before allocating any registry ID** (THEO / PRED / OPEN-problem, to prevent two windows grabbing the same ID) — read canonical **AND glob `Registries_pending/*.md`** (in-flight claims). Read-only; never a shared write target.
+
+### 6.1 Temporary THEO handles — late-binding, collision-free ID allocation (NEW, Patch 2116, TLA-ratified)
+
+A window that must reference a not-yet-permanent theorem mid-session does **NOT** allocate a permanent number in the hot path (that remains a deferred canonical-registry write, §6/§7). It mints a **temporary handle** anchored to the patch/window namespace, which is collision-free by construction.
+
+**Why this is collision-free (the one design point).** A temp token that *guesses the final integer* (e.g. `THEO-DS-7-Temp`) still collides: two windows in the DS family both grep, both see 6 as the max, both mint `-7-Temp`, and the merge cannot tell the two theorems apart — which is what forces a change-order. Anchoring the handle to a namespace that is already collision-free — the patch number (band-partitioned: only one window can ever mint `p08xx`) — makes every handle globally unique regardless of what any window grepped. The nightly rebind is then a **unique → unique** map, the conflict-and-change-order case cannot arise, and **correctness does not depend on the night job** (the handle is already unambiguous; the rename is cosmetic, so a late or skipped audit breaks nothing).
+
+**Implementation status.** The handle format and worker obligations are **live now** (and are collision-safe on their own). The auditor rebind stage is a **tracked build item (Patch 2117, Step-4 follow-on), not yet wired into `overnight_extraction_audit.sh`**: until it lands, temp handles are minted and claimed as specified but permanentized in TLA's morning review rather than auto-rebound. Because the handles are already unambiguous, shipping the worker rule ahead of the macro stage is safe by design.
+
+**Handle format (canonical form):**
+
+```
+THEO-<FAMILY>-TMP-p<patch>[-<seq>]
+```
+
+- `<FAMILY>` — sector family (`DS`, `SS`, `CHIR-CONT`, `SM`, `QM`, …). Choosing the family is allowed in-session: families are lane-local and need no global integer.
+- `TMP` — literal marker; makes every in-flight handle greppable and unmistakably non-permanent.
+- `p<patch>` — originating patch number; band-partitioned, hence globally unique to the minting window.
+- `-<seq>` — optional `1,2,3…` when one patch introduces multiple new theorems.
+
+**Optional readability variant (display guess):** `THEO-<FAMILY>-<n>-TMP-p<patch>`, where `<n>` is an optimistic guess at the final number (grep family-max + 1). The auditor keys only on the `-TMP-p<patch>` segment; `<n>` is cosmetic. If `<n>` was free it permanentizes to `THEO-<FAMILY>-<n>`; if two windows both guessed `<n>`, their distinct `p<patch>` segments keep them separate and they permanentize to distinct numbers — no change order.
+
+**Worker obligations (in-session):**
+1. Mint the temp handle. No grep-for-a-free-number is required for correctness (grep only to seed the optional display guess).
+2. Use the temp handle **uniformly** for that theorem across all documents, papers, and citations.
+3. Append the claim to your own `Registries_pending/<window-slug>.md` (append-only to your own file; never a shared target): one line giving the temp handle, family, originating patch, and a one-line theorem statement. The temp handle is the citable form of this pending entry.
+
+**Auditor obligations (nightly, in `overnight_extraction_audit.sh`, under the §4.3 schema-validation-before-canonical-write gate) — build item, Patch 2117:**
+1. Collect every unique `*-TMP-*` handle across the corpus and all `Registries_pending/*.md` claims.
+2. Per family, assign each unique handle the next free permanent number in a **deterministic order** (by patch number, then `seq`) so assignment is stable across re-runs.
+3. Corpus-wide find-replace each unique handle → its permanent `THEO-<FAMILY>-<n>`. Because handles are unique, each replace is unambiguous (it also updates a *different* window's citation of your in-flight theorem, since that window cited the same global handle).
+4. Register the permanent THEO in `theorem-registry.md`; clear the merged pending claims.
+5. Write a `temp → permanent` entry to `Development/theo_alias_map.md`, kept for a **grace window (default 2 nights)**, so a citation written from a slightly stale clone still resolves before the final sweep.
+6. Log to `audit_log.md`: handles seen, permanentized, aliased, and any optimistic-guess clashes auto-resolved.
+
+**Composition with existing rules:**
+- **Reserved slots** (the `THEO-DSL-7` / `THEO-DSL-9` reservations in `reasoning_capture_protocol.md` §8) take precedence: a handle destined for a pre-reserved slot honors the reservation. Pre-reservation and temp-handles compose.
+- **Reassignment** ("made permanent or reassigned"): the auditor may bind a handle to a permanent number other than the optimistic guess; the alias map keeps stale citations resolving through the grace window.
+- The §6 **read-render** step is still good practice for seeding a sensible display guess, but is **no longer load-bearing for collision-safety** — safety now comes from the handle namespace, not from the read.
+
+**Net:** work in different bands and different filenames; for new theorems, cite a patch-anchored `TMP` handle and let the nightly auditor permanentize it. Collision-free by construction; the rebind is cosmetic; nothing breaks if a night is missed.
 
 ## 7. Scope boundary — what this protocol governs vs leaves untouched (NEW, C9)
 The protocol governs the **capture layer**, not the **work layer**. It does NOT relegate deliverable work to the overnight run.
