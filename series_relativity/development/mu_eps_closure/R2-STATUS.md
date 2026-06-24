@@ -267,3 +267,27 @@ PASS still gated on OPEN-SR-9).**
 route with the root's W1 gate, but lands **no verdict move on R2 and no THEO.** When Round 4 runs it will
 edit this file and SR.md under STOP-and-warn. See OPEN-SR-10 (`frontier_sectors/SR.md`) and the banked
 handover `em_emergence/lorentz_root/2066_HANDOVER_lorentz_root_rounds1-3_banked.md`.
+
+---
+
+## Update — Patch 2072: exact-Lorentz root Round-4 determination (OPEN-SR-10) — NO verdict change
+
+Logged for grounding; **R2's verdict is unchanged (PASS-conditional at the audited field-content level;
+unconditional PASS still gated on OPEN-SR-9).** The root campaign's Round 4 (periodic no-go + quasicrystal
+evasion, v1.2, panel-closed SOUND) sharpens the premise picture but moves no R2 verdict:
+
+- **The periodic-lattice route to a preferred frame is excluded** (theorem-grade, for any regular /
+  ℓ¹-summable periodic broadcast): a bounded BZ-periodic dispersion symbol cannot be exactly ω=c|k| or
+  exactly isotropic. This supports R2 premise (i)/(ii) **negatively** (it rules out the periodic-anisotropy
+  failure mode) but is not itself the from-substrate optical-response computation R2 needs.
+- **CPP's substrate is aperiodic by necessity** (SR-1 φ-self-similar nested 600-cell = icosahedral
+  quasicrystal; no 600-cell tessellates flat E⁴, Coxeter), so the no-go is evaded — but **evasion is
+  necessary, not sufficient**: the quasicrystal could be a highly-suppressed W2 rather than exact W1.
+- **The root's Round-5 decider IS R2/OPEN-SR-9's decisive computation.** The quasicrystal-approximant
+  structure-factor isotropy test (exact W1 vs dense-suppressed W2) coincides with the OPEN-SR-9 / 2040-panel
+  "two strains at identical scalar C — anisotropic vs isotropic — equal photon-mode speed?" test. Closing
+  the root's Round 5 closes (or bounds) this R2 gate.
+
+**Net:** the root sharpens R2's premise grounding and unifies R2's unconditional route with the root's
+W1-vs-W2 decider, but lands **no R2 verdict move and no THEO.** See OPEN-SR-10 (`frontier_sectors/SR.md`)
+and the Round-4 finding (`em_emergence/lorentz_root/2068_round4_periodic_nogo_quasicrystal.md`).
