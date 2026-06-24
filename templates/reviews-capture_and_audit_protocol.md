@@ -66,3 +66,11 @@ Cross-wiring is the known June-2026 failure mode; the in-document IDENTITY instr
 - **C8 (ChatGPT) → §4/§10.** Make the single automated-canonical-write exception's rationale and bounds unusually explicit (exceptions expand over time).
 
 **Verdict:** panel = **RATIFY-WITH-CHANGES (4/4)**. The protocol stays **DRAFT** until (1) TLA ratifies the change set (and decides C3-a vs C3-b), (2) the revision lands (next patch), (3) TLA declares canonical. **The C3 decision is TLA's** — it concerns automated writes to TLA's own voice in a canonical file, and the panel split between "gate it hard" (3) and "never allow it" (1).
+
+---
+
+## Integration record (Patch 2108)
+
+Change set integrated into the protocol v1.0-candidate (Patch 2108): **C1** (overclaim softened in §2; §3.1 "Automatic Capture Mechanism Requirements" added — always-on/zero-touch/non-bypassable/fsync-durable); **C2** (§5 heartbeat now completeness-aware — "processed all expected inputs?"); **C3 = TLA's middle** (§4.1 — v1 staged is the standing default; v2 never self-graduates, only explicit TLA enable after measurable criteria incl. zero-false-negative adversarial founder-quote test + rollback); **C4** (§3 procedural-turn exclusion removed from the daytime path → filtered by the macro, §4-step-2); **C5** (§4.2 `[REVIEW]`-queue ownership defined as a blocking morning/bootup action); **C6** (§4-step-1 transcript-integrity/corpus-completeness check); **C7** (§4.3 — schema-validation, partial-night handling, regression suite — routed to the Step-4 macro build); **C8** (§0/§4.1/§12 — canonical-write exception bounds stated narrowly). Plus **C9** (§7 scope boundary — work layer vs capture layer; paper production unchanged except deferred shared-registry edits) and **C10** (§6 deliberate-vs-incidental delta split + write-partitioned `Registries_pending/`; §10 records this as a *scoped refinement* of the panel-ratified T2, not an overturn; the read-render realizes §8's anticipated render). Paper-production interaction wired in Patch 2107.
+
+**Remaining gate:** TLA ratifies the v1.0-candidate (or sends it for a confirmatory panel pass) → DRAFT markers come off → canonical. No status moved by the worker.

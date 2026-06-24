@@ -700,13 +700,15 @@ judgment acts, and judgment in the hot path is the root cause of eight months of
 Capture is mechanical so it cannot fail; all judgment moves to the nightly audit. (The raw transcript is the
 ground-truth backstop, so any in-the-moment miss stays trivially re-extractable.)
 
-**The registry read protocol (reframed).** During the day, the canonical registries (theorem-registry,
-predictions, frontier sectors, todo) reflect state **as of the last overnight audit** — same-day cross-window
-registry changes are *not* visible until the next audit merges them. Read the canonical file and treat it as
-last-audit-current. *(The original handover proposed globbing `Registries_temp/*.md` for same-day visibility;
-that step is void — there are no registry-temps, the write-partitioned temp collapsed under the reframe, protocol
-§8. If same-day cross-window visibility is later wanted it returns as a read-only render, never a shared write
-target.)*
+**The registry read protocol (reframed + read-render).** During the day, the canonical registries (theorem-registry,
+predictions, frontier sectors, todo) reflect state **as of the last overnight audit**. For same-day in-flight
+visibility — and **REQUIRED before allocating any registry ID** (THEO / PRED / OPEN-problem) — read canonical
+**AND glob `Registries_pending/*.md`**: each window writes its precise deliberate deltas to its own
+write-partitioned pending file, and these read as *in-flight claims* until the overnight audit merges them. This
+read-render is a read-only view, never a shared write target. *(The original handover proposed a `Registries_temp/`
+write path; the general daytime-registry-write path stays collapsed — see protocol §8 — but the deliberate
+paper-production delta case scope-revives a write-partitioned pending area, protocol §11. The read-render is the
+realization of §8's anticipated "read-only render if same-day visibility is later wanted.")*
 
 **The heartbeat rule.** The nightly audit writes one dated line to `Development/audit_log.md`. **At bootup,
 confirm last night's line exists; a missing line is a LOUD, blocking flag** — investigate before proceeding, the
