@@ -50,6 +50,8 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 
 Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20), and — the discriminating point — **the offset is flat across the 5× span in σ₁D**. A velocity-*dependent* σ/m rising toward dwarfs would drive the Fornax offset far above IC 2574's; that is not seen, so the data are consistent with the velocity-*independent* prediction and inconsistent with light-mediator SIDM's v⁻⁴ trend. The common ~3× lies within the factor-few (f × halo-model) uncertainty; if real it nudges the normalization marginally below 0.20 (cores a touch more developed than the bare one-scatter floor), still velocity-flat. Cores form in both (ρ_obs < ρ₁), consistent with their observed cores. *(This is the density test, which ρ₁ gives directly; a full core-radius confrontation — notably IC 2574's large ~8 kpc core — awaits the NFW r₁ inversion in the core-radius-vs-σ/m panel.)*
 
+[FILLED] **Core size vs σ/m (Fig. 3, `figures/0851_core_radius_vs_sigma.png`; verify via `scripts/0851_core_radius_vs_sigma.py`).** Inverting the NFW r₁ condition ρ_NFW(r₁) = ρ₁(σ/m) turns the density test into a core-*size* prediction. For a Fornax-scale halo (V_max ≈ 25 km/s), σ_V/m = 0.20 gives r₁ ≈ 0.32 kpc — inside the observed ≲ 0.3–0.7 kpc core, with the f-band [0.07, 0.6] bracketing it: **consistent**. For IC 2574 (V_max ≈ 80 km/s), σ_V/m = 0.20 gives r₁ ≈ 1.8 kpc, **well below** its observed ~8 kpc core; that core requires σ/m ≈ 1.1–2.7 cm²/g — *above* the f-band. So the core-radius test, more constraining than the central-density test above, surfaces a **genuine tension at the high-velocity end**: the largest LSB cores want more self-interaction than velocity-independent 0.20 supplies, echoing the velocity-*dependent* σ/m ~ 1–2 that rotation-curve SIDM fits infer at galaxy scales. This is a falsifier-relevant limitation (§7), reported not hidden — its escape routes are (i) f underestimated at galaxy scale (the color-polarizability estimate carries a factor ~3), (ii) residual velocity-dependence in the residual cross-section, or (iii) IC 2574's low-concentration halo inflating the required σ/m. It carries the halo-model (c, factor ~2) and r_core/r₁ (O(1)) systematics.
+
 ## 7. Falsifiability  *(draft)*
 
 [FILLED] The signature is the **flatness**. If the cross-system data require σ/m to *fall* from ~1–3 (dwarfs) to ~0.1 (clusters) — i.e. velocity-dependent SIDM — the flat ≈ 0.20 prediction fails on the dwarf side (too small for strong cores; it physically cannot rise at low v) and mildly on the cluster side. If the data are consistent with a flat ~0.1–0.3 across scales, CPP predicts it from first principles with no free knobs beyond f. Clean two-sided test.
@@ -78,7 +80,7 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 
 1. **[TIGHTEN] f → magnitude band.** Shrinks the factor-3 on σ_V/m (partly Project-C-feedable). Flatness already robust.
 2. **[TO FILL] §6 observational confrontation.** Fit 1–2 specific observed dwarfs (+ a cluster) rather than the representative NFW.
-3. **[PARTIAL] Figures.** V(r)/saturation (§4) **DONE (Fig. 1, Patch 0849)**; the σ_V(v) overlay is done (Fig. 0840); still **[TO FILL]:** a core-radius-vs-σ/m panel (§6).
+3. **[DONE] Figures.** V(r)/saturation (§4, Fig. 1, Patch 0849); σ_V(v) overlay (Fig. 0840); specific-dwarf density confrontation (§6, Fig. 2, Patch 0850); **core-radius-vs-σ/m panel (§6, Fig. 3, Patch 0851)**.
 4. **[OPEN] §8 abundance (route B).** Asymmetric-DM / shared-Sea-asymmetry derivation of ~5:1 — needs the DM-unit mass + a baryogenesis sub-arc.
 5. **[DEP] §8 mass scale = Project C** (running in the 1000-series window).
 6. **[DEP] §9 DM-2 Λ-coefficient** — overlaps Project C's cosmological-constant/l_P work; coordinate, don't race.
@@ -87,4 +89,4 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 
 ## Provenance
 
-§4 ← 0830–0836; §5 ← 0840–0841; §6 ← 0842, 0850 (specific-dwarf confrontation); §7 ← 0840/0842; §8 ← 0704 (abundance), 0833 + Project C (mass), 0843 (route B); §9 ← 0720–0814 (sea_gravitation); §3/§10 ← consolidation Patch 1200.
+§4 ← 0830–0836; §5 ← 0840–0841; §6 ← 0842, 0850 (specific-dwarf confrontation), 0851 (core-radius-vs-σ/m panel); §7 ← 0840/0842; §8 ← 0704 (abundance), 0833 + Project C (mass), 0843 (route B); §9 ← 0720–0814 (sea_gravitation); §3/§10 ← consolidation Patch 1200.
