@@ -59,6 +59,7 @@ If `git clone` fails (no bash tool, network restriction, github.com unreachable)
 - Per-paper subfolders also contain `documentation_suite/development-[ID].md` (session vignettes, append-only) and optionally `documentation_suite/transcript-[ID].md` (transaction-indexed pointer-map). The handover in `handovers/` is the one to read first; `documentation_suite/` files are deeper context if needed.
 - **Also read `todolist.md` at repo root** (introduced 7 May 2026 Session 33). This is the carried-over deferred items list. The next paper does NOT start until P1 — Must clear before next paper is empty. New items get added there as they're identified; cleared items move to "Cleared items (history)" with date and patch number for audit. Check the P1 list at session start so any deferred items relevant to the work being done are visible.
 - If no paper is named, check `/mnt/transcripts/` for raw conversation logs.
+- **Heartbeat check (DRAFT — Capture-and-Audit Protocol, pending ratification):** once the protocol is ratified (campaign Step 6), confirm `Development/audit_log.md` has a dated line for the previous calendar day. A **missing** line is a LOUD, blocking flag — the nightly extraction audit may have failed to run; investigate before proceeding. (Until ratified, this file is scaffolded but no audit runs yet — no check needed.)
 - Check if Thomas has Grok/Copilot exchanges to share.
 
 ### Step 3: Proceed with the queued work
@@ -368,6 +369,7 @@ See `templates/operating_system.md` §4 "Four-Tier Documentation Discipline" for
 | `paper_production_workflow.md` | 9-phase pipeline from vision to OSF | When pipeline changes |
 | `templates/paper-formatting.md` | LaTeX standard (16 sections) | When formatting changes |
 | `templates/documentation-suite.md` | 7-file companion template per paper | When template changes |
+| `templates/capture_and_audit_protocol.md` | **Raw-capture + overnight-audit** (DRAFT, Patch 2102 — pending ratification). Daytime raw capture only; judgment moves to a nightly audit. | When ratified / the model changes |
 
 ### Navigation documents (read for orientation)
 

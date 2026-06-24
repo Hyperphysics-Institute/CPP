@@ -73,6 +73,7 @@
 |----------|---------|
 | `operating_system.md` | THIS FILE — complete workflow manual |
 | `bootup.md` | Session startup guide (subset of this file) |
+| `capture_and_audit_protocol.md` | **Raw-capture + overnight-audit** (`templates/`, Patch 2102 — **DRAFT, pending CONV-001 ratification, campaign Step 6**). Daytime = mechanical raw capture only; ALL judgment (turn-split, discipline-filing, registry-merge, founder's-voice promotion) moves to a nightly audit (`scripts/overnight_extraction_audit.sh`). Supersedes the per-patch hot-path capture rules *for the capture pathway* once ratified — until then, keep current capture practice. See §6 "Raw capture + overnight audit". |
 | `paper_production_workflow.md` | 9-phase paper pipeline (expanded below) |
 | `documentation-suite.md` | 7-file companion template per paper |
 | `paper-formatting.md` | LaTeX standards |
@@ -662,11 +663,39 @@ The review *cycle* above describes roles, tiers, and lessons. Turning a finished
 | Type | Where | When |
 |------|-------|------|
 | Raw conversation | `/mnt/transcripts/` (auto) | Every Claude session |
+| Flat by-window raw transcript | `Development/transcripts/YYYY-MM-DD_HHMM_p<patch>_<slug>.md` | Every window, automatic *(capture-and-audit — DRAFT, pending ratification)* |
 | Compacted summary | Top of conversation (auto) | When context compacts |
 | Curated transcript | `development-transcripts/` folder | End of session or next session |
 | Development narrative | `development-[S]-[N].md` | During/after paper production |
 | Founders vision entries | `founders_vision.md` catalogue | During physics sessions |
 | Grok/Copilot exchanges | Thomas saves manually | After each external AI session |
+
+### Raw capture + overnight audit (DRAFT — Capture-and-Audit Protocol, pending CONV-001 ratification, campaign Step 6)
+
+> **Status: DRAFT.** This is the announced successor to the hand-curated capture model below. **Until it is
+> ratified at Step 6, keep doing current capture practice** (curated transcripts, best-effort per-patch §10
+> capture). The blocks here describe what becomes standing rule *once ratified.* Full spec:
+> `templates/capture_and_audit_protocol.md`.
+
+**The raw-capture rule (daytime — do nothing but record).** Every window's sole daytime capture obligation is
+that its turns land raw and verbatim in `Development/transcripts/` under its own `<window-slug>` (the filename
+carries date/time/patch/slug; the window-slug, never the discipline, is the collision key). During the day a
+window does **no** discipline-filing, **no** registry editing, and **no** founder's-voice capture — those are
+judgment acts, and judgment in the hot path is the root cause of eight months of intermittent capture failure.
+Capture is mechanical so it cannot fail; all judgment moves to the nightly audit. (The raw transcript is the
+ground-truth backstop, so any in-the-moment miss stays trivially re-extractable.)
+
+**The registry read protocol (reframed).** During the day, the canonical registries (theorem-registry,
+predictions, frontier sectors, todo) reflect state **as of the last overnight audit** — same-day cross-window
+registry changes are *not* visible until the next audit merges them. Read the canonical file and treat it as
+last-audit-current. *(The original handover proposed globbing `Registries_temp/*.md` for same-day visibility;
+that step is void — there are no registry-temps, the write-partitioned temp collapsed under the reframe, protocol
+§8. If same-day cross-window visibility is later wanted it returns as a read-only render, never a shared write
+target.)*
+
+**The heartbeat rule.** The nightly audit writes one dated line to `Development/audit_log.md`. **At bootup,
+confirm last night's line exists; a missing line is a LOUD, blocking flag** — investigate before proceeding, the
+audit may have failed to run. A written `run=FAIL` is recoverable; only a *missing* line is the loud case.
 
 ### Curated transcript format
 
