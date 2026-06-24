@@ -57,6 +57,8 @@ The shared document opens with a short, reviewer-agnostic framing paragraph — 
 You are one of three independent reviewers (ChatGPT, Grok, Copilot) on the
 Conscious Point Physics (CPP) review panel. CPP is a theoretical-physics
 programme deriving Standard-Model structure from a 600-cell lattice substrate.
+IDENTITY (mandatory): in the §8 REVIEWER field put YOUR OWN actual model name;
+do NOT adopt or echo another reviewer's name. If unsure, name your provider/family.
 Please review <ARTIFACT-ID> — <ONE-LINE WHAT-IT-IS>. Everything you need is inline
 below (context, claim chain, triage, verify code, response format). Find YOUR
 reviewer-specific steer in §6 ("read your own row"). If you can run the §7 code,
@@ -78,6 +80,26 @@ reconstruct from memory — engage the inline package content directly.
 ```
 That way the single shared document remains one identical paste for all reviewers while still steering each one correctly.
 
+### 4.1 Reviewer-identity disambiguation (known failure mode)
+
+**Symptom (observed across the SR-10 Round-3/Round-4 cycles, June 2026):** reviewers cross-label — a
+Copilot response signs itself "ChatGPT," a Gemini-style response signs itself "Copilot," etc. The in-document
+IDENTITY instruction above (added 2073) *reduces* but does **not eliminate** this; it is a model-side
+robustness limit, not a wording gap, so do not rely on the self-label alone.
+
+**The reliable remedy is at aggregation, not dispatch — keep the single-document design (Patch 1604):**
+1. **Thomas labels each response on receipt** with the engine he actually pasted it to (he knows which
+   window produced it). This is the ground truth; the self-label is advisory only.
+2. **The aggregator attributes by content + tier, never by self-label**, and **never double-counts** — N
+   pasted responses = N independent reads regardless of how they signed themselves. Record the
+   self-label-vs-actual mismatch explicitly in the `reviews-<id>.md` §0 identity caveat.
+3. Verdicts are label-independent (a SOUND/FLIP count does not depend on which name is attached), so a
+   cycle never turns on the attribution; the caveat is for the record and for steer-accuracy next cycle.
+
+**Do NOT** reintroduce per-reviewer wrapper prompts to fix this (they were retired for good reason, Patch
+1604); the one-line in-document IDENTITY instruction + receipt-labelling + attribute-by-content is the
+standing practice.
+
 ---
 
 ## 5. Reviewer-steer cheat-sheet (defaults; the package §6 overrides)
@@ -97,5 +119,7 @@ Reviewer responses come back to Thomas, who relays them. The assistant then inte
 ---
 
 *Created Patch 0660 (Session 150, 30 May 2026) at Thomas's request, after the TARROW-1 cycle-opening (Patch 0659) surfaced the missing piece: a finished review package is not actionable until it is turned into paste-ready, reviewer-addressed dispatch text. This protocol closes that gap and makes "initiate review protocol" a first-class command alongside "execute handover protocol."*
+
+*Updated Patch 2073 (23 June 2026, SR-10 Round-4 cycle) — added the §4 in-document IDENTITY instruction + §4.1 reviewer-identity disambiguation subsection (known cross-labelling failure mode; remedy is receipt-labelling + attribute-by-content at aggregation, NOT per-reviewer wrappers).*
 
 *Updated Patch 1604 (21 June 2026, SF-6 cycle) — **retired the per-reviewer dispatch prompts (old §3(c)/§4 skeleton) in favour of a single shared document.** The dispatch is now ONE identical copy-paste block pasted to every reviewer; each reviewer's steer (and any disambiguation rider) lives in the package's own §6 "read your own row," which made the per-reviewer wrappers redundant. §3 now emits three blocks (header, single shared document, delivery-mode note); §4 is the reviewer-agnostic single-document lead-in. Trigger and §5 cheat-sheet unchanged.*
