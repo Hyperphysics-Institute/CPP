@@ -28,7 +28,7 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 [FILLED] **The residual potential.** Between color-singlet qDPs the residual is a *two-gluon color van der Waals* interaction (a color-singlet cannot emit a single gluon; the hDP is identified as the gluon). Hard core r_c ≈ 1.0 fm (eDP coat), attractive Yukawa range λ ≈ 1.3 fm, depth V₀ = f·E_qDP with **f ≈ 0.2** (color-polarizability estimate; factor-3 band 0.07–0.6) ⇒ **V₀ ≈ 53 MeV**.
 [FILLED] **Consequences, all derived:** (a) *glueball-avoidance* is robust (any coat r_c > r_qDP puts the saturation density below the confinement density); (b) the candidate is *collisionless* at halo scales; (c) it is *diffuse* — no self-bound nuggets form (self-binding would need f ≳ 0.38; de Boer quantum parameter Λ ~ 0.75–2.4 ≫ He-4's 0.18, i.e. too quantum to self-bind); (d) *no near-threshold resonance* (the residual, being a van der Waals residue of E_qDP, is weaker than its source — the resonance pole sits well above), which structurally excludes the only σ/m-amplifying falsifier.
 [FILLED] **Falsifiers closed this arc:** F2 (near-threshold bound state lifting σ/m by ~10³) — structurally excluded; F1 (a much lighter constituent) — m_qDP firmed at 264 MeV.
-[TO FILL] A clean figure of V(r) and the saturation-vs-confinement density comparison.
+[FILLED] **Figure 1** (`figures/0849_residual_potential.png`; regenerate/verify via `scripts/0849_residual_potential.py`). *(a)* The residual potential V(r) = V₀[(r_c/r)¹² − 2(r_c/r)⁶]·exp(−(r−r_c)/λ): a hard core at r_c ≈ 1.0 fm and an attractive screened-van-der-Waals well of depth V₀ ≈ 53 MeV, range λ ≈ 1.3 fm (numerical minimum −53 MeV at 0.99 fm — consistent with f·E_qDP). *(b)* The saturation density (cores touch at spacing ≈ r_c) sits a factor (r_qDP/r_c)³ below the confinement density (spacing ≈ r_qDP < r_c): ρ_sat/ρ_conf ≈ 0.12 for a representative r_qDP ≈ 0.5 fm. So the medium saturates into a diffuse phase *before* reaching confinement — glueball-avoidance, and the conclusion follows for any r_qDP < r_c.
 
 ## 5. Discriminant I — a velocity-independent self-interaction  *(draft, core result)*
 
@@ -71,7 +71,7 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 
 1. **[TIGHTEN] f → magnitude band.** Shrinks the factor-3 on σ_V/m (partly Project-C-feedable). Flatness already robust.
 2. **[TO FILL] §6 observational confrontation.** Fit 1–2 specific observed dwarfs (+ a cluster) rather than the representative NFW.
-3. **[TO FILL] Figures.** V(r)/saturation (§4); the σ_V(v) overlay is done (Fig. 0840); a core-radius-vs-σ/m panel (§6).
+3. **[PARTIAL] Figures.** V(r)/saturation (§4) **DONE (Fig. 1, Patch 0849)**; the σ_V(v) overlay is done (Fig. 0840); still **[TO FILL]:** a core-radius-vs-σ/m panel (§6).
 4. **[OPEN] §8 abundance (route B).** Asymmetric-DM / shared-Sea-asymmetry derivation of ~5:1 — needs the DM-unit mass + a baryogenesis sub-arc.
 5. **[DEP] §8 mass scale = Project C** (running in the 1000-series window).
 6. **[DEP] §9 DM-2 Λ-coefficient** — overlaps Project C's cosmological-constant/l_P work; coordinate, don't race.
