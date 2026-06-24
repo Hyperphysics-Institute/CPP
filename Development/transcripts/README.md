@@ -47,3 +47,46 @@ automatic capture.
 `scripts/overnight_extraction_audit.sh` (Step 4) each night reads the day's
 files here, splits every turn into fragments, files each to its proper home, and
 writes a heartbeat to `../audit_log.md`.
+
+---
+
+## Transcript file format (contract — the macro parses this)
+
+A transcript is a single Markdown file with a small front-matter block followed by
+verbatim turns. **Any capture mechanism — best-effort helper (`scripts/capture_session.sh`)
+or a future zero-touch integration — MUST emit exactly this shape**, so the overnight
+audit can parse it deterministically.
+
+```
+---
+window-slug: <slug>            # matches the slug in the filename; the collision key
+patch: <n>                     # patch the window opened on
+opened: <YYYY-MM-DD HH:MM TZ>  # local time
+---
+
+### [1] TLA
+<full verbatim turn — TLA's words, unedited>
+
+### [2] WORKER
+<full verbatim turn — worker's words, unedited>
+
+### [3] TLA
+...
+```
+
+Rules the parser relies on:
+- Front matter is the first block, fenced by `---` lines, `key: value` pairs.
+- Each turn starts with a header line `### [<n>] <ROLE>` where `<ROLE>` ∈ `{TLA, WORKER}`
+  and `<n>` is a monotonic turn index. Everything until the next `###` header (or EOF)
+  is that turn's verbatim body.
+- **No editing, no paraphrase, no procedural-turn exclusion** — capture everything; the
+  macro filters (protocol §3/§4). Pure-procedural turns may be included; the macro drops them.
+
+### Optional inline markers (let the deterministic path handle a turn precisely)
+A turn body MAY carry inline markers that the macro files deterministically instead of
+leaving to the (pluggable) free-form pass:
+- `@@FOUNDER: "<verbatim TLA quote>" | context: <one line>` — a founder-voice candidate,
+  staged via the protocol §4.1 `[REVIEW]` path. Bounded quote + attribution = clean AUTO
+  candidate; anything ambiguous → `[REVIEW]`.
+- Deliberate registry deltas do NOT go inline — they go in `Registries_pending/<slug>.md`
+  (see that README). Markers are optional; un-marked content falls to the free-form pass.
