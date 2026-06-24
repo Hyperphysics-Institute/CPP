@@ -2,10 +2,24 @@
 
 **Patch 2060, 2058-band.** Campaign: exact-emergent-Lorentz root (handover 2058). Builds on the Round-1
 recon note `lorentz_root/2059_round1_recon_exact_lorentz_target.md`.
-**Status:** FINDING from the first real probe. **Panel-pending — NOT banked. NO THEO. NO status move. NO
-proof claim.** Numerics in `verify/2060_addition_law_signature.py` are consistency-evidence only
+**Status:** FINDING from the first real probe. **PANEL-REVIEWED (Patch 2062, CONV-001): 4 responses / 3
+reviewers (ChatGPT ×2, Grok, Copilot) — unanimous SOUND / SOUND-WITH-CALIBRATION, no verdict-flip; Grok &
+Copilot SCRIPT-EXECUTED, outputs match.** v1.1 calibration applied below per the convergent T3 note (see
+`review/reviews-2060.md`). **Still NOT a THEO; status moves on R2-STATUS/SR.md/CONJ.md/registries remain
+deferred to TLA.** Numerics in `verify/2060_addition_law_signature.py` are consistency-evidence only
 (handover §7; the 2055-overclaim fence). The world-call is NOT made here; it is made at the Round-15 hard
 checkpoint.
+
+> **CHANGELOG.** v1.0 (Patch 2060): original probe finding. **v1.1 (Patch 2062): post-panel calibration.**
+> The panel was unanimous that S1–S4 (the static quaternion bridge is compact and cannot carry a Lorentz
+> boost) are correct and the scope is disciplined. The one convergent calibration (ChatGPT ×2 + Copilot,
+> triage T3): the relocation of the Minkowski − sign to the causal A3′ broadcast is a *candidate*, not a
+> demonstrated mechanism — the algebraic identity ds² = (c·t_P)² − |d_spatial|² is, by itself, Euclidean
+> bookkeeping that becomes physical only if the A3′ retarded broadcast *dynamically enforces* the
+> light-cone (the Round-3 test). The relocation language below is softened accordingly; the demonstrated
+> claim (static bridge dead) and the hypothesized claim (causal route carries the boost) are now kept
+> strictly separate, and the world-probability note records that Round 2 does **not** raise the
+> causal-route *success* probability — it eliminates one static path and names the candidate.
 
 ---
 
@@ -27,8 +41,9 @@ split + A3′ broadcast) can carry it exactly.
 *budget split* manufactures is a **compact Euclidean rotation** (real form so(4)), not a non-compact
 Lorentz boost (real form so(3,1)). The fixed Absolute-Moment τ = l_P is exactly the obstruction: it
 enters the budget as a **+ (positive-definite) quadrature term**, which forces the compact real form.
-The probe therefore **moves the world-probabilities sharply** and relocates the entire World-1/2 question
-from *static geometry* to *broadcast causality*. Detail below.
+The probe therefore **moves the world-probabilities sharply** (by *eliminating* a candidate mechanism)
+and **names the candidate location** for the World-1/2 question — *broadcast causality* rather than
+*static geometry* — to be **tested** in Round 3, not demonstrated here. Detail below.
 
 ## 2. Step 1 — where 2I sits in SL(2,ℂ) (kills the bridge before the dynamics even enter)
 
@@ -64,7 +79,9 @@ between the two real forms. The budget split, being a 4D-insphere (++++) relatio
 
 ### 3.1 The first-commutator / composition diagnostics (three smoking guns; `verify/2060`)
 
-1. **Collinear composition (the cleanest observable).** Composing two budget-split boosts gives the
+1. **Collinear composition (the cleanest observable).** Composing two budget-split boosts — *as
+   independent successive budget splits with no intervening causal broadcast* (the precise condition under
+   which the static rule defines composition; panel calibration, Grok/Copilot) — gives the
    **circular** addition β₃ = β₁√(1−β₂²) + β₂√(1−β₁²), **not** the relativistic
    (β₁+β₂)/(1+β₁β₂). Numerically (verify §3): β₁=β₂=0.6 → Euclid 0.960 vs Lorentz 0.882; they diverge at
    O(β³).
@@ -88,10 +105,12 @@ interval). A positive-definite form's isometry group is the **compact** SO(4); o
 (+−−−) form gives SO(3,1). So *the fixedness of the Moment, expressed as a +-quadrature length, is
 precisely what pins the static geometry to the compact real form.*
 
-This is independently corroborated by the corpus: SR-1's own **Appendix H.1 elimination theorem** proves
-no purely geometric displacement model recovers the v²/c² scaling, and SR-1 must inject the Lorentz
-factor through the **energy–momentum bridge** (A.8.1), i.e. by *hand* via the physical identification of
-ΔSSV with relativistic KE (Round-1 §0.1, flagged finding (a)). Our probe explains *why* H.1 must hold:
+This is a **convergent consistency signal** from the corpus (panel T5: a consistency signal, not fully
+*independent* evidence — both may reflect the same underlying compactness): SR-1's own **Appendix H.1
+elimination theorem** proves no purely geometric displacement model recovers the v²/c² scaling, and SR-1
+must inject the Lorentz factor through the **energy–momentum bridge** (A.8.1), i.e. by *hand* via the
+physical identification of ΔSSV with relativistic KE (Round-1 §0.1, flagged finding (a)). Our probe
+explains *why* H.1 must hold:
 the geometry is Euclidean, so its boosts are circular, so it cannot carry the hyperbolic law — exactly
 H.1's content, now with a structural reason.
 
@@ -105,15 +124,19 @@ the **light-cone bound** |d_spatial| ≤ c·t_P (i.e. β ≤ 1),
 the correct **proper time**, with a **− sign**. The crucial observation:
 
 > The Lorentzian (−) signature does **not** come from the static insphere geometry (which is ++++); it
-> comes from the **causal** relation between the universal Absolute-Moment tick and the spatial step —
-> the **light-cone** |d_spatial| ≤ c·t_P. In CPP that causal structure is carried by the **retarded
-> A3′ GP→GP broadcast** (the "perceive" phase reads the backward light-cone of incoming broadcasts), not
-> by the budget partition.
+> would have to come from the **causal** relation between the universal Absolute-Moment tick and the
+> spatial step — the **light-cone** |d_spatial| ≤ c·t_P. In CPP the **candidate** carrier of that causal
+> structure is the **retarded A3′ GP→GP broadcast** (the "perceive" phase reads the backward light-cone of
+> incoming broadcasts). **Caveat (panel T3):** the identity ds² = (c·t_P)² − |d_spatial|² is, by itself,
+> an algebraic rearrangement of a Euclidean budget — it *locates where to look*, it does **not** derive an
+> indefinite signature. It becomes physical only if the A3′ broadcast *dynamically enforces* the
+> light-cone. That is the Round-3 test, not a result here.
 
-So the genuine boost generator, if it exists, must be **N (hyperbolic, N²=+I) built from the retarded
-broadcast kernel**, not **M (circular) built from the budget-partition angle**. Whether the **PCD
-dynamics actually select N over M** — whether the retarded broadcast knows the Minkowski interval rather
-than only the Euclidean budget — is the open question.
+So the genuine boost generator, if it exists, would have to be **N (hyperbolic, N²=+I) built from the
+retarded broadcast kernel** rather than **M (circular) from the budget-partition angle**. Whether the
+**PCD dynamics actually select N over M** — whether the retarded broadcast carries the Minkowski interval
+rather than only the Euclidean budget — is the **open** question this probe hands forward, demonstrated
+neither way.
 
 **Round-3 probe (named, not begun):** construct the boost candidate from the **A3′ retarded broadcast
 kernel** (the causal cone of the perceive phase), and test the same three diagnostics (generator square,
@@ -123,14 +146,23 @@ World-3 (obstruction) evidence: the substrate is genuinely Euclidean with a real
 
 ## 5. Effect on the world-probabilities (informal; the committed call is at Round 15)
 
-- **World 1 via the static-geometric quaternion bridge:** near-killed. 2I is compact; the budget-split
+- **World 1 via the static-geometric quaternion bridge:** **eliminated** (panel-endorsed). 2I is compact;
+  the budget-split
   boost is compact; the bridge lands in so(4), not so(3,1). This was the "big prize, fall almost
   embarrassingly" path — it does **not** fall this way.
-- **World 1 / World 2 via the causal A3′-broadcast route:** now the **single live hypothesis** for
-  exact (or limit-exact) Lorentz. The probe has *relocated* the question, not closed it.
+- **World 1 / World 2 via the causal A3′-broadcast route:** now the **single live candidate** for exact
+  (or limit-exact) Lorentz — but **its success probability is unchanged by this probe.** Round 2 *names*
+  this route; it supplies **no positive evidence** that the broadcast kernel actually carries a
+  non-compact generator. The probe has *relocated* the open question, not advanced it.
 - **World 3 (obstruction):** gains a **concrete, sharp candidate** — if the retarded broadcast also fails
   to supply the − sign, the Euclidean budget signature is the obstruction and the preferred frame is
   real. There is now a definite test that would establish World 3.
+
+> **Calibrated probability statement (panel T2/T3).** The only probability mass that moves *now* is
+> **off** World-1-via-static-quaternion-bridge. That mass redistributes across the **still-open** causal
+> route (W1/W2) **and** World 3 — Round 2 does **not** adjudicate between them. Failure of the static
+> bridge is fully **compatible** with eventual exact Lorentz emergence through dynamics, and **equally**
+> compatible with a genuine obstruction. The committed world-call stays at Round 15.
 
 This is precisely the "single probe that shifts the world-probabilities most" the handover asked Round 2
 to be: it removes the most seductive World-1 path and sharpens the remaining fork to one mechanism (causal
@@ -144,9 +176,12 @@ broadcast) with one decisive question (does it carry N²=+I?).
   `em_emergence/reasoning/2060.md` + verify script `lorentz_root/verify/2060_addition_law_signature.py`.
 - Numerics: consistency-evidence ONLY; not proof (handover §7). No FEM. No collapsed residuals.
 - **No theorem. No status file touched (R2-STATUS, SR.md, CONJ.md, registries all untouched). No THEO.**
-  Finding is **panel-pending**: recommend CONV-001 dispatch (ChatGPT, Grok, Gemini, Copilot) to
-  pressure-test the real-form argument and the "minus-sign-lives-in-the-broadcast" relocation before any
-  world-probability update is recorded.
+  Finding is **PANEL-REVIEWED and cycle-closed** (Patch 2062): CONV-001 dispatch returned 4 responses / 3
+  reviewers (ChatGPT ×2, Grok, Copilot), unanimous SOUND / SOUND-WITH-CALIBRATION, no verdict-flip; Grok &
+  Copilot SCRIPT-EXECUTED with matching output. Aggregation + synthesis in `review/reviews-2060.md`. The
+  v1.1 calibration above applies the one convergent note (T3 relocation = candidate, not demonstrated).
+  **Any actual status/registry move (R2-STATUS, SR.md, CONJ.md, world-probability ledger) remains deferred
+  to TLA per the handover** — the panel endorses the *finding*, not a status change.
 - Honest scope: this probe kills the *naive static quaternion-bridge boost*, nothing more. Lorentz
   emergence via the causal route remains fully open; the world-call is deferred to Round 15.
 
