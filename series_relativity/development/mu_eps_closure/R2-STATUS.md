@@ -239,3 +239,31 @@ test 2028 named; the 4/4 convergence reinforces it as the OPEN-SR-9 target.
 **Recommended hygiene:** because the 2040 round saw a stale package, a **corrected one-paragraph re-dispatch**
 (showing the panel 2027→2031 + OB-3) is owed so the panel verdicts the *actual* state. 2031 already carries
 ChatGPT's CONFIRM on this calibration, so it is confirm-expected — but it should be on the record. NO THEO.
+
+---
+
+## Update — Patch 2067: cross-reference to the exact-Lorentz root campaign (OPEN-SR-10) — NO verdict change
+
+The exact-emergent-Lorentz **root** campaign (OPEN-SR-10; `em_emergence/lorentz_root/`, Rounds 1–3
+panel-closed SOUND) bears directly on R2's two standing residuals, and is logged here for grounding —
+**R2's verdict is unchanged (still PASS-conditional at the audited LSP field-content level; unconditional
+PASS still gated on OPEN-SR-9).**
+
+- **Residual (i)/(ii) — the "exact Lorentz" + isotropy premises.** Round 3 established that the A3′ retarded
+  broadcast carries the **non-compact Lorentz boost in the continuum limit** (its invariant is the fixed
+  cone-slope speed c, A3/C3/C4), and that the **discrete dispersion isotropy** question is the dominant
+  remaining gate for exact-discrete Lorentz. This is the *same* quantity R2 condition (ii) needs
+  (c_photon a scalar function of C, not anisotropic f(C,Σ)) and is conceptual grounding for why condition
+  (i)'s "exact Lorentz at SR-1 strength" should hold — but it does **not** upgrade either condition to a
+  from-substrate result (the broadcast carries the boost only *in the continuum limit*, given C3).
+- **The root's Round-4 IS R2/OPEN-SR-9's decisive computation.** The root campaign's dominant W1 gate —
+  the full 600-cell multi-shell broadcast dispersion isotropy (does the residual q⁴ anisotropy cancel
+  exactly at finite a?) — coincides with the OPEN-SR-9 / 2040-panel decisive test recorded above (two
+  strains at identical local scalar C, anisotropic vs isotropic; equal photon-mode speed ⇒ universality
+  grounded from substrate). Closing the root's Round-4 closes (or bounds) this R2 gate; they are one
+  computation approached from two directions.
+
+**Net:** the root campaign sharpens *why* R2's premises are expected to hold and unifies R2's unconditional
+route with the root's W1 gate, but lands **no verdict move on R2 and no THEO.** When Round 4 runs it will
+edit this file and SR.md under STOP-and-warn. See OPEN-SR-10 (`frontier_sectors/SR.md`) and the banked
+handover `em_emergence/lorentz_root/2066_HANDOVER_lorentz_root_rounds1-3_banked.md`.
