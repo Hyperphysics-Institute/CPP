@@ -2,9 +2,27 @@
 
 **Patch 2063, 2058-band.** Campaign: exact-emergent-Lorentz root (handover 2058). Builds on Round 2
 (`lorentz_root/2060_round2_quaternion_boost_commutator_probe.md`, panel-closed SOUND at 2062).
-**Status:** FINDING from the decisive probe. **Panel-pending — NOT banked. NO THEO. NO status move. NO
-proof claim.** Numerics in `verify/2063_broadcast_cone_dispersion.py` are consistency-evidence only
+**Status:** FINDING from the decisive probe. **PANEL-REVIEWED (Patch 2065, CONV-001): 4 responses —
+unanimous SOUND / SOUND-WITH-CALIBRATION, no verdict-flip; SCRIPT-EXECUTED runs (Grok + one other)
+reproduce all numerics.** v1.1 calibration applied below per the convergent T3/T1/T2 notes (see
+`review/reviews-2063.md`). **Still NOT a THEO; status moves on R2-STATUS/SR.md/CONJ.md/registries remain
+deferred to TLA.** Numerics in `verify/2063_broadcast_cone_dispersion.py` are consistency-evidence only
 (handover §7). The committed world-call stays at the Round-15 checkpoint.
+
+> **CHANGELOG.** v1.0 (Patch 2063): original probe. **v1.1 (Patch 2065): post-panel calibration.** The
+> panel was unanimous that Part A is a genuine (non-circular) derivation that the causal broadcast carries
+> the non-compact boost *in the continuum limit*, that the scope is honest, and that the dispersion
+> numerics + group theory are correct. Three convergent calibrations: **(T3, the largest)** dispersion
+> isotropy is the *dominant* remaining question and the *complete* criterion for the **free-field linear
+> boost** (what Round 3 tested) — but **not the sole** condition for exact-discrete Lorentz of the *full
+> interacting multiplet*: sufficiency additionally requires the boost to survive interactions, mode-mixing
+> among Φ/V/Q, and the C2 absolute-frame carriage. **(T1/T2)** "carries the boost" is everywhere confined
+> to the continuum limit; "resolves the Round-2 T3 caveat" → "*candidate* resolution"; the − sign "arises
+> from the causal propagation constraint" (not merely "is dynamical"); "the continuum limit is
+> Lorentz-invariant" / "W3 disfavoured" carry the explicit "given A3/A3′ and C3, pending OPEN-SR-9"
+> qualifier. **(T4)** the q⁴ result is the *nearest-neighbour z=12* scaling — qualitative
+> favourable-geometry evidence, not quantitative W1 evidence; outer PSR shells could improve, leave, or
+> worsen the coefficient.
 
 ---
 
@@ -19,17 +37,22 @@ re-run the three diagnostics.
 
 ## 1. Result in one line
 
-**The causal route carries the boost — and the Round-2 T3 caveat is resolved, not merely deferred.** The
+**The causal route carries the boost in the continuum limit — and the Round-2 T3 caveat gets a candidate
+resolution, not merely a deferral.** The
 A3′ broadcast *dynamically* propagates at a fixed speed c on a retarded light-cone; the boost built from it
 is the **non-compact hyperbolic** Lorentz boost (N² = +I, tanh-addition, cone-preserving) — the exact
-inverse of Round 2. So the − sign is real and dynamical, not bookkeeping. **This strongly disfavours W3**
-(a real, O(1) preferred frame): the substrate's continuum limit *is* Lorentz-invariant. The remaining
-question collapses to **W1 vs W2** — whether the **discrete** broadcast's light-cone is exact at finite
-lattice spacing (W1) or only emergent in the IR with a Planck-suppressed floor (W2). The fork is now a
-single sharp quantity: **discrete dispersion isotropy across all directions n̂.** The 600-cell's
+inverse of Round 2. So the − sign **arises from the causal propagation constraint** (the fixed cone slope),
+not from the static geometry — physical, not bookkeeping. **This strongly disfavours W3** (a real, O(1)
+preferred frame) **— given A3/A3′ and C3, pending OPEN-SR-9**: the substrate's continuum limit *is*
+Lorentz-invariant **given C3**. The remaining question reduces to **W1 vs W2** — whether the **discrete**
+broadcast's light-cone is exact at finite lattice spacing (W1) or only emergent in the IR with a
+Planck-suppressed floor (W2). The **dominant** quantity in that fork — and the **complete** criterion for
+the **free-field linear boost** Round 3 tested — is **discrete dispersion isotropy across all directions
+n̂**; it is **not the sole** condition for exact-discrete Lorentz of the *full interacting multiplet*, which
+additionally needs interaction / Φ-V-Q mode-mixing / C2-carriage closure (panel T3; §4.1). The 600-cell's
 icosahedral coordination shell (z = 12) is **far** more isotropic than a cubic lattice (anisotropy
-∝ q⁴ vs q², verified) — the structural reason the 600-cell is the right substrate for approaching, and
-possibly reaching, W1.
+∝ q⁴ vs q², verified — at nearest-neighbour) — the structural reason the 600-cell is the right substrate
+for approaching, and possibly reaching, W1.
 
 ## 2. The A3′ broadcast kernel, as the corpus states it (build from this, not a reconstruction)
 
@@ -72,14 +95,16 @@ cone (C3/C4). So the transformations relating frames that all measure the broadc
 > preserving constant-c are hyperbolic boosts (Einstein's argument). This is not "assume Minkowski, get
 > Minkowski": it is the demonstration that the broadcast's *fixed-speed* dynamics select the non-compact
 > generator, where the budget's *fixed-length* geometry selected the compact one. **The Round-2 T3 caveat
-> is thereby answered:** the broadcast *does* dynamically enforce the cone (it is a retarded, speed-c
-> propagator), so the − sign is physical, not an algebraic rearrangement.
+> gets a candidate resolution thereby:** the broadcast *does* dynamically enforce the cone (it is a
+> retarded, speed-c propagator), so — *given A3/A3′ and C3* — the − sign arises from the causal propagation
+> constraint, not from an algebraic rearrangement. (Candidate, not closed: a from-substrate derivation of
+> C3 is OPEN-SR-9.)
 
 **Scope guard.** "Carries the boost" here means **in the continuum limit** (C3's own qualifier:
 □Q = S holds *in the continuum limit*). The exact-discrete version is §4's open question. The − sign being
 dynamical (vs bookkeeping) is settled; exactness-at-finite-a is not.
 
-## 4. Part B — the W1-vs-W2 fork is now a single quantity: discrete dispersion isotropy
+## 4. Part B — the W1-vs-W2 fork: the dominant criterion is discrete dispersion isotropy
 
 The continuum limit of the broadcast is Lorentz-invariant (§3). Whether the **discrete** broadcast (finite
 a) carries the **exact** continuous SO⁺(3,1), or only its IR limit, is whether the discrete light-cone is
@@ -110,10 +135,35 @@ multi-shell broadcast, not just z = 12) to cancel the residual q⁴ term exactly
 shown** and is the Round-4 target. The 600-cell makes W1 *plausible and uniquely favourable* (no other
 lattice gets this close); it does not make it automatic.
 
+### 4.1 Dispersion isotropy is the dominant criterion, not the sole one (panel T3)
+
+The panel's largest convergent calibration: discrete dispersion isotropy is the **complete** criterion for
+the **free-field, linear** boost — which is exactly what Round 3's diagnostics test — but exact-discrete
+Lorentz of the **full interacting multiplet** (the target's "exact SO⁺(3,1) action on the emergent fields
+𝔽 = (Φ, V_i, Q_ij)") is **not** guaranteed by isotropic free-field dispersion alone. A lattice can have
+perfectly isotropic linear dispersion and still leak preferred-frame effects through higher-order
+structure. The further channels an eventual W1 claim must also close, each a candidate Round-4+ sub-probe:
+- **Interactions / nonlinearities** — the boost must commute with the source coupling (C4) and the
+  GP→geodesic readout (C5), not just the free kernel.
+- **Multiplet mode-mixing** — a boost mixes the (Φ, V_i, Q_ij) = (l=0,1,2) channels; exact W1 requires
+  that mixing to close into the SO⁺(3,1) reps at finite a, not only in the continuum where C3 guarantees
+  it.
+- **The C2 absolute-frame carriage** — packet data is stated in the absolute (Nexus) frame with a flat
+  connection; whether that carriage is boost-covariant at finite a (no residual drag) is a distinct
+  question from dispersion.
+- **Finite-a boost composition closure** — the Wigner-rotation closure [K_i, K_j] = −ε J_k must hold
+  exactly on the discrete fields, not merely for the cone-tilt of a single direction.
+
+So the honest reduction is: **dispersion isotropy is the dominant and leading-necessary remaining
+question** (and the right Round-4 target, because it also grounds R2/OPEN-SR-9, §6); the additional
+channels above are the rest of what a *full* W1 proof would have to close. Round 3 establishes the
+free-field boost and locates the dominant gap; it does not reduce all of W1 to that one gap.
+
 ## 5. Effect on the world-call (informal; committed call at Round 15)
 
-- **World 3 (real, O(1) preferred frame): strongly disfavoured.** The retarded broadcast's continuum limit
-  *is* the Lorentz-invariant wave equation, and the boost it carries is genuinely hyperbolic. Any
+- **World 3 (real, O(1) preferred frame): strongly disfavoured — given A3/A3′ and C3, pending OPEN-SR-9.**
+  The retarded broadcast's continuum limit *is* the Lorentz-invariant wave equation (*given C3*), and the
+  boost it carries is genuinely hyperbolic. Any
   preferred-frame signature is at most a Planck-suppressed **dispersion** floor (operationally W2), not an
   O(1) obstruction. The "substrate is just Euclidean" reading of Round 2 is now closed: the substrate has a
   genuine causal cone.
@@ -155,11 +205,15 @@ together — the leverage the handover §1 promised the root would have.
 - Numerics: consistency-evidence ONLY; not proof (handover §7). No FEM. No collapsed residuals (the W1/W2
   fork and the OPEN-SR-9 rigor gap are stated precisely, not merged).
 - **No theorem. No status file touched (R2-STATUS, SR.md, CONJ.md, registries untouched). No THEO.**
-  Recommend CONV-001 dispatch to pressure-test (a) the non-circularity of Part A, (b) the "W3 strongly
-  disfavoured / W2 secured-modulo-OPEN-SR-9" world language, (c) whether the icosahedral q⁴ result is
-  correctly scoped as *favourable-but-not-W1*.
+  **PANEL-REVIEWED and cycle-closed (Patch 2065):** CONV-001 returned 4 responses, unanimous SOUND /
+  SOUND-WITH-CALIBRATION, no verdict-flip; SCRIPT-EXECUTED runs reproduced all numerics. Aggregation +
+  synthesis in `review/reviews-2063.md`. The v1.1 calibration above applies the convergent T3 (dispersion
+  isotropy is dominant, not sole), T1/T2 (continuum-limit scoping; candidate resolution; given-A3/C3
+  qualifiers), and T4 (nearest-neighbour q⁴ is qualitative) notes. **Any actual status/registry move
+  (R2-STATUS, SR.md, CONJ.md, world-call ledger) remains deferred to TLA** — the panel endorses the
+  finding and its scope, not a status change.
 - Honest scope: Round 3 demonstrates the broadcast carries the boost **in the continuum limit** and
-  identifies the exact-discrete question as dispersion isotropy. It does **not** establish W1. The
-  committed world-call remains at Round 15.
+  identifies dispersion isotropy as the **dominant** (not sole) exact-discrete question. It does **not**
+  establish W1. The committed world-call remains at Round 15.
 
 *Captured by Claude Opus under Thomas Lee Abshier's direction. Corrections appended forward (handover §7).*
