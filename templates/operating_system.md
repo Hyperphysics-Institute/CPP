@@ -243,6 +243,7 @@ Standard structure:
 - Check if existing axioms were consolidated (e.g., A6' replacing A6-A9)
 - Update axiom count and prediction count
 - Compute axiom-to-prediction ratio
+- **Parallel-window (DRAFT):** do not hand-edit the shared registry in-session; write the precise delta to `Registries_pending/<window-slug>.md` per §4 "Parallel-window registry discipline". The overnight audit merges it.
 
 ### Phase 6: OSF Registration
 - Prepare PDF and .tex
@@ -365,6 +366,20 @@ Cosmetic-only patches (whitespace, comment-line edits, formatting) do not requir
 - Update all documents per checklist (Section 10)
 - Push to GitHub
 - Verify OSF links
+
+---
+
+### Parallel-window registry discipline (capture-and-delay, Patch 2107 — DRAFT, pending Capture-and-Audit ratification)
+
+> **DRAFT.** This activates once the Capture-and-Audit Protocol (`templates/capture_and_audit_protocol.md`) is ratified. Until then, continue applying registry edits in-session as before.
+
+**The problem.** Phase 5 and Phase 7B edit shared repo-root registries (theory-overview, axiom-registry, theorem-registry, master_glossary, research_frontier, predictions, paper_catalog, founders_vision, future_projects, TATWD, problem_histories, top-level README), plus the shared-file 7A items (C11 bibliography, D2 INDEX.md, D3 series-README). Every paper touches these, so two windows shipping two papers the same day collide on them. Everything else in paper production lives in the paper's own subfolder and never collides.
+
+**The rule (clean line).** *Edit to a shared repo-root file → defer; edit inside the paper's own subfolder → in-session, unchanged.* For the deferred set the window does NOT hand-edit canonical in-session. Instead it writes the **precise delta** — the exact registration it would have applied (e.g. "register THEO-X coeff 3/5; +3 zero-parameter predictions; paper_catalog row 'SF-7 v1.0 SHIPPED'") — to its **own** write-partitioned pending file `Registries_pending/<window-slug>.md` (append-only to its own file; never a shared target). The overnight extraction audit merges all windows' pending deltas into canonical with full cross-window context, then clears them. The judgment stays in-session (the window decides the delta while context is fresh); only the write-to-canonical defers. This is collision-free by construction: no two windows ever write the same file.
+
+**Same-day cross-window visibility (read-render).** To see another window's in-flight registrations before the overnight merge — and REQUIRED before allocating any registry ID (THEO / PRED / OPEN-problem) — read canonical AND glob `Registries_pending/*.md`. The pending entries read as *in-flight claims*, not finished entries. This is a read-only render, never a shared write target.
+
+**What is unchanged.** Phases 1–4, 7A paper-local work (companion suite, notebooks, transcripts, reviewer responses, the paper's own `.tex`/dev-log/changelog), and 7C execution all run in-session exactly as before. Paper production is unchanged except that the ~dozen shared repo-root registry edits, instead of being hand-applied to canonical in-session, are written as precise deltas to the window's pending file and merged overnight.
 
 ---
 
