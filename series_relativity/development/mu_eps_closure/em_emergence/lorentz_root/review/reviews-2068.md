@@ -83,5 +83,29 @@ is quasicrystal exact-vs-dense-suppressed isotropy.**
   actual decider. The OPEN-SR-10 entry, post-this-close, is ready to be updated to "W3 excluded; W1-or-W2 =
   quasicrystal exact-vs-dense isotropy" whenever TLA authorizes the registry edit.
 
-*Aggregated by Claude Opus under Thomas Lee Abshier's direction (Patch 2070). Verbatim reviewer responses
+## 5. Addendum — real-ChatGPT (GPT-5.5 Thinking) late review, v1.2 (Patch 2071)
+
+After the v1.1 close, the **actual ChatGPT (self-identified GPT-5.5 Thinking, SCRIPT-EXECUTED)** returned a
+fourth response — SOUND-WITH-CALIBRATION, **no flip**. Its arrival **confirms the §0 identity caveat**: the
+v1.1 "ChatGPT"-labelled INSPECTED response was indeed Copilot (this is the real one, and it ran the script).
+So the panel was four distinct engines: Grok, a Gemini-style response (self-labelled Copilot), Copilot
+(self-labelled ChatGPT), and now ChatGPT/GPT-5.5.
+
+It raised **two precision fixes** sharper than v1.1, both folded into the finding as **v1.2**:
+- **T2 — the no-go needs a regularity hypothesis.** The boundedness argument requires a **regular /
+  ℓ¹-summable (or local)** periodic kernel; a *pathological* non-summable nonlocal periodic kernel could
+  engineer an unbounded/distributional symbol. **CPP's A3′ broadcast is finite-range (the PSR shell), so it
+  is trivially summable and the no-go applies** — but the general statement now carries the hypothesis.
+  (My v1.1 "holds for infinite-range periodic too" was too unqualified.)
+- **T1/T5 — "W3 EXCLUDED" was over-strong.** Round 4 excludes the **periodic-lattice W3 channel**; **globally
+  W3 is strongly disfavoured** (Round 3's continuum-limit invariance, given C3), with **full** exclusion
+  pending the Round-5 aperiodic spectral calculation. Adopted: the finding now says "periodic-W3 channel
+  excluded; W3 strongly disfavoured globally," and frames an early committed call as **provisional**. This
+  correctly walks back the v1.1 upgrade from "strongly disfavoured" to "excluded" — GPT-5.5 was right that
+  the Round-4 work excludes a *channel*, not W3 *simpliciter*.
+
+GPT-5.5 also reproduced the Part-A numerics (SCRIPT-EXECUTED, identical to Grok's). Net: still no flip; the
+finding is **v1.2**, materially more precise on both the no-go's hypotheses and the W3 scope.
+
+*Aggregated by Claude Opus under Thomas Lee Abshier's direction (Patches 2070 + 2071). Verbatim reviewer responses
 relayed by TLA; synthesized under the §0 identity caveat. Corrections appended forward.*

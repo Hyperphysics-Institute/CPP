@@ -1,29 +1,28 @@
 # Round 4 — the periodic no-go, and why CPP evades it: the substrate is a φ-self-similar quasicrystal
 
-**Status:** FINDING from the dominant W1-vs-W2 decider. **PANEL-REVIEWED (Patch 2070, CONV-001): 3
-responses — unanimous SOUND / SOUND-WITH-CALIBRATION, no verdict-flip; SCRIPT-EXECUTED runs reproduced the
-Part-A numerics; the Coxeter regular-Euclidean-4-honeycomb list and icosahedral harmonic tower independently
-recomputed.** The panel called the Part-A periodic no-go "theorem-grade." v1.1 calibration applied below
-(see `review/reviews-2068.md`). **Still NOT a THEO; NO status/registry move rides on this — the OPEN-SR-10 /
-R2 world-call sharpening follows separately, under STOP-and-warn, on TLA's nod.** Numerics are
-consistency-evidence only (handover §7). The committed world-call stays at the Round-15 checkpoint.
+**Status:** FINDING from the dominant W1-vs-W2 decider. **PANEL-REVIEWED (Patches 2070+2071, CONV-001): 4
+responses — unanimous SOUND / SOUND-WITH-CALIBRATION, no verdict-flip; SCRIPT-EXECUTED runs (incl. the real
+ChatGPT / GPT-5.5) reproduced the Part-A numerics; the Coxeter regular-Euclidean-4-honeycomb list and
+icosahedral harmonic tower independently recomputed.** The panel called the Part-A periodic no-go
+"theorem-grade." v1.1 + v1.2 calibration applied below (see `review/reviews-2068.md`). **Still NOT a THEO;
+NO status/registry move rides on this — the OPEN-SR-10 / R2 world-call sharpening follows separately, under
+STOP-and-warn, on TLA's nod.** Numerics are consistency-evidence only (handover §7). The committed
+world-call stays at the Round-15 checkpoint.
 **⚠ This finding rests on a FOUNDATIONAL corpus point — the substrate's global structure (φ-self-similar /
 quasicrystalline, not periodic). Panel-endorsed (T3 SOUND, incl. independent Coxeter recomputation), but any
 status move still goes to TLA.** (See §6.)
 
-> **CHANGELOG.** v1.0 (Patch 2068): original probe. **v1.1 (Patch 2070): post-panel calibration.** Panel
-> unanimous: Part-A no-go is theorem-grade (holds for infinite-range periodic too — still a BZ Fourier
-> series); Part-B substrate reading correct and load-bearing (φ-self-similar = quasicrystal; Coxeter
-> no-E⁴-tessellation independently confirmed); the orientation-doc tension is a *reconciliation*, not a
-> correction. Calibrations: **(T1/T5)** "W3 excluded" carries the explicit "given A3/A3′ and C3, pending
-> OPEN-SR-9" qualifier (the causal-broadcast Lorentz invariance is still axiom-level); **(T4, the
-> substantive one)** evading the *periodic* no-go does **not** by itself grant exact Lorentz — a
-> deterministic quasicrystal has a dense Fourier module (Bragg peaks) and icosahedral local symmetry, so it
-> could still be a **highly-suppressed W2** rather than exact W1; the W1-vs-W2 question is genuinely open
-> *within* the quasicrystal class, which sharpens the Round-5 target; **(T3/numerics)** the finite-shell
-> numerics are an existence-proof that periodic-approximation anisotropy can be *reduced, not eliminated* —
-> they do not probe the aperiodic limit. One-line summary (ChatGPT): *Round 4 establishes a theorem-grade
-> periodic no-go; CPP survives because it is not periodic.*
+> **CHANGELOG.** v1.0 (Patch 2068): original probe. **v1.1 (Patch 2070): post-panel calibration** (3
+> responses). Part-A no-go theorem-grade; Part-B substrate reading correct; T4 dense-Fourier caveat (W1
+> possible-not-granted); W3-conditional qualifier. **v1.2 (Patch 2071): real-ChatGPT (GPT-5.5) late review,
+> two precision fixes** — **(T2)** the Part-A boundedness no-go requires a **regular / ℓ¹-summable** periodic
+> kernel (a pathological non-summable nonlocal kernel could engineer an unbounded symbol); CPP's A3′
+> broadcast is finite-range, so it satisfies the hypothesis and the no-go applies. **(T1/T5)** "W3 EXCLUDED"
+> was over-strong: Round 4 excludes the **periodic-lattice W3 channel**; **globally W3 is strongly
+> disfavoured** (Round 3's continuum-limit invariance, given C3), with **full** exclusion pending the Round-5
+> aperiodic spectral calculation. (GPT-5.5's arrival also confirms the v1.1 "ChatGPT"-labelled INSPECTED
+> response was in fact Copilot — see `reviews-2068.md §0`.) One-line summary (ChatGPT): *Round 4 establishes
+> a theorem-grade periodic no-go; CPP survives because it is not periodic.*
 
 ---
 
@@ -45,16 +44,21 @@ impossible for a periodic substrate.** (B) **The CPP substrate is the φ-self-si
 hierarchy (SR-1) — an icosahedral *quasicrystal*, aperiodic, with no Brillouin zone.** Aperiodic order is
 precisely the structure class that **evades** the periodic no-go (the deterministic analog of the causal-set
 randomness route). **So W1 is not ruled out; it is pinned to one sharp question — does the φ-self-similar
-quasicrystal broadcast carry exact Lorentz?** And **W3 is excluded** in every reading (the IR/continuum limit
-is Lorentz-invariant; any residual floor is sub-Planck-nesting tiny, ~l_P/10³⁰).
+quasicrystal broadcast carry exact Lorentz?** And **the periodic-lattice route to W3 is excluded, with W3
+strongly disfavoured globally** (the IR/continuum limit is Lorentz-invariant given C3; any residual floor is
+sub-Planck-nesting tiny, ~l_P/10³⁰) — full W3 exclusion pends the Round-5 aperiodic spectral calculation.
 
 ## 2. Part A — the periodic no-go (numerical; the solid part)
 
 Model the broadcast as a translation-invariant hopping on a regular lattice; the linear dispersion symbol is
 D(k) = Σ_shells w · Σ_{d∈shell} 2(1 − cos(k·d)), and ω(k) = √D.
 
-- **(A1) A bounded periodic symbol cannot be ω = c|k|.** D(k) is a finite/periodic trigonometric sum —
-  bounded, BZ-periodic — while c|k| is unbounded. The normalized phase speed √D/|k| therefore **collapses**
+- **(A1) A bounded periodic symbol cannot be ω = c|k|.** For a **regular** broadcast — finite-range, or
+  more generally an ℓ¹-summable (absolutely convergent) periodic kernel — D(k) is a uniformly convergent
+  Fourier series on the BZ, hence a **bounded** continuous periodic function, while c|k| is unbounded. (The
+  hypothesis matters: a *pathological* non-summable nonlocal periodic kernel could engineer an unbounded or
+  distributional symbol; CPP's A3′ broadcast is finite-range — the PSR shell — so it is trivially summable
+  and the no-go applies.) The normalized phase speed √D/|k| therefore **collapses**
   away from k=0: measured (single icosahedral z=12 shell) **0.998 → 0.975 → 0.904 → 0.797** at
   q=|k|a = 0.3 → 1 → 2 → 3. Exact Lorentz needs 1.0000 at *all* q. This fails for **any** periodic lattice,
   at any hopping range (an infinite-range periodic sum is still a Fourier series on the BZ).
@@ -98,10 +102,13 @@ target — not done here.**
 
 ## 4. World-call determination
 
-- **W3 (real, O(1) preferred frame): EXCLUDED — given A3/A3′ and C3 (pending OPEN-SR-9).** The IR/continuum
-  limit is Lorentz-invariant (Round 3, an axiom-level result via C3), and any discreteness floor is bounded
-  by the sub-Planck nesting scale (~l_P/10³⁰) — Planck-suppressed, never O(1). No reading of the substrate
-  gives a real preferred frame.
+- **W3 (real, O(1) preferred frame): the periodic-lattice W3 channel is EXCLUDED; globally W3 is STRONGLY
+  DISFAVOURED — given A3/A3′ and C3, full exclusion pending Round 5.** Part A excludes the periodic route to
+  a preferred frame, and Round 3's continuum-limit Lorentz invariance (given C3) strongly disfavours W3
+  globally — but *full* exclusion needs the actual infinite nested (aperiodic) broadcast shown to have
+  IR-Lorentz spectral/causal behavior from-substrate, which is Round 5. So this is a narrowing, not yet a
+  closed exclusion: any discreteness floor is bounded by the sub-Planck nesting scale (~l_P/10³⁰), but
+  "no preferred frame at all" is provisional pending the quasicrystal spectral calculation.
 - **W2 (limit-exact, Planck floor):** the realized world **if** the substrate is treated as effectively
   periodic — secured by Part A, with an icosahedrally tiny floor. **And note (panel T4):** even the
   *aperiodic* substrate could land here — a deterministic quasicrystal has a **dense Fourier module** (Bragg
@@ -112,19 +119,22 @@ target — not done here.**
   for W1. Not proven — pinned to the single sharp, decidable question of whether the quasicrystal broadcast
   achieves *exact* isotropy (W1) or merely dense-suppressed isotropy (W2) (Round 5).
 
-So the campaign's three-world question is **determined down to one line:** **W3 is out (given A3/A3′, C3);
-the answer is W1 or W2; and the W1-vs-W2 decision is the quasicrystal-Lorentz question — exact vs
-dense-suppressed isotropy — on CPP's own golden-ratio self-similar substrate.** For every physical purpose
-the distinction is moot (the floor, if any, sits at ~l_P/10³⁰); for the foundational world-call it is the
-whole game.
+So the campaign's three-world question is **determined down to one line:** **the periodic-lattice W3 channel
+is out and W3 is strongly disfavoured globally (given A3/A3′, C3); the answer is W1 or W2; and the W1-vs-W2
+decision is the quasicrystal-Lorentz question — exact vs dense-suppressed isotropy — on CPP's own
+golden-ratio self-similar substrate.** For every physical purpose the distinction is moot (the floor, if
+any, sits at ~l_P/10³⁰); for the foundational world-call it is the whole game.
 
 ## 5. Effect on the world-call (informal; committed call at Round 15)
 
-This **strengthens** the Round-3 informal call rather than overturning it: W3 now *excluded* (was strongly
-disfavoured); W2 *secured* as the periodic-approximation floor; W1 *upgraded from "open upside" to "viable
-on the corpus's own substrate, pinned to a single decidable question."* The committed call remains TLA's at
-Round 15 — though the world-question is now structurally resolved enough that an early committed call (W3
-excluded; W1-or-W2 = quasicrystal-Lorentz) is defensible if TLA and the panel concur.
+This **strengthens** the Round-3 informal call rather than overturning it: the **periodic-lattice W3 channel
+is now excluded** and **W3 strongly disfavoured globally** (vs merely strongly disfavoured before, with no
+channel pinned down); W2 *secured* as the periodic-approximation floor; W1 *upgraded from "open upside" to
+"made possible — not granted — by the substrate being quasicrystalline, pinned to a single decidable
+question."* The committed call remains TLA's at Round 15 — and an early committed call would be **provisional**
+(periodic-W3 excluded; W3 strongly disfavoured; W1-or-W2 = quasicrystal exact-vs-dense isotropy), defensible
+only if phrased as a provisional world update pending the Round-5 spectral calculation, if TLA and the panel
+concur.
 
 ## 6. The foundational flag (why this is bigger than a registry edit)
 
