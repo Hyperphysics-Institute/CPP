@@ -33,3 +33,4 @@ the nightly audit may have failed to run.
 *SCAFFOLDED at Patch 2103 — no audit has run yet.* The first heartbeat line will
 be appended when `scripts/overnight_extraction_audit.sh` first runs (built in
 Step 4, Patch 2104+). Do not hand-write run lines here; only the macro appends.
+2026-06-24 10:42 MDT | run=OK | transcripts=0(malformed:0,orphan-deltas:0) | filed=reasoning:0,scripts:0,registry:0 | founders=staged:0,review:0,promoted:0 | open_review=0 | freeform_pending=0 | notes=v1-deterministic
