@@ -73,7 +73,7 @@
 |----------|---------|
 | `operating_system.md` | THIS FILE — complete workflow manual |
 | `bootup.md` | Session startup guide (subset of this file) |
-| `capture_and_audit_protocol.md` | **Raw-capture + overnight-audit** (`templates/`, Patch 2102 — **DRAFT, pending CONV-001 ratification, campaign Step 6**). Daytime = mechanical raw capture only; ALL judgment (turn-split, discipline-filing, registry-merge, founder's-voice promotion) moves to a nightly audit (`scripts/overnight_extraction_audit.sh`). Supersedes the per-patch hot-path capture rules *for the capture pathway* once ratified — until then, keep current capture practice. See §6 "Raw capture + overnight audit". |
+| `capture_and_audit_protocol.md` | **Raw-capture + overnight-audit** (`templates/`, Patch 2102 — **CANONICAL, ratified Patch 2111; pending activation**). Daytime = mechanical raw capture only; ALL judgment (turn-split, discipline-filing, registry-merge, founder's-voice promotion) moves to a nightly audit (`scripts/overnight_extraction_audit.sh`). Supersedes the per-patch hot-path capture rules *for the capture pathway* once activated (the §3.1 mechanism + Step-4 macro exist) — until then, keep current capture practice. See §6 "Raw capture + overnight audit". |
 | `paper_production_workflow.md` | 9-phase paper pipeline (expanded below) |
 | `documentation-suite.md` | 7-file companion template per paper |
 | `paper-formatting.md` | LaTeX standards |
@@ -243,7 +243,7 @@ Standard structure:
 - Check if existing axioms were consolidated (e.g., A6' replacing A6-A9)
 - Update axiom count and prediction count
 - Compute axiom-to-prediction ratio
-- **Parallel-window (DRAFT):** do not hand-edit the shared registry in-session; write the precise delta to `Registries_pending/<window-slug>.md` per §4 "Parallel-window registry discipline". The overnight audit merges it.
+- **Parallel-window (ratified, pending activation):** once the Step-4 overnight audit exists, do not hand-edit the shared registry in-session; write the precise delta to `Registries_pending/<window-slug>.md` per §4 "Parallel-window registry discipline", and the audit merges it. Until the audit is built, edit in-session as before.
 
 ### Phase 6: OSF Registration
 - Prepare PDF and .tex
@@ -369,9 +369,9 @@ Cosmetic-only patches (whitespace, comment-line edits, formatting) do not requir
 
 ---
 
-### Parallel-window registry discipline (capture-and-delay, Patch 2107 — DRAFT, pending Capture-and-Audit ratification)
+### Parallel-window registry discipline (capture-and-delay, Patch 2107 — CANONICAL, ratified Patch 2111; pending activation)
 
-> **DRAFT.** This activates once the Capture-and-Audit Protocol (`templates/capture_and_audit_protocol.md`) is ratified. Until then, continue applying registry edits in-session as before.
+> **Ratified (Patch 2111), pending activation.** This activates once the Capture-and-Audit Protocol's Step-4 nightly audit (`scripts/overnight_extraction_audit.sh`) is built and scheduled — it is what merges the pending deltas. **Until then, continue applying registry edits in-session as before** (there is no overnight merge yet, so a `Registries_pending/` write would never reach canonical).
 
 **The problem.** Phase 5 and Phase 7B edit shared repo-root registries (theory-overview, axiom-registry, theorem-registry, master_glossary, research_frontier, predictions, paper_catalog, founders_vision, future_projects, TATWD, problem_histories, top-level README), plus the shared-file 7A items (C11 bibliography, D2 INDEX.md, D3 series-README). Every paper touches these, so two windows shipping two papers the same day collide on them. Everything else in paper production lives in the paper's own subfolder and never collides.
 
@@ -678,19 +678,16 @@ The review *cycle* above describes roles, tiers, and lessons. Turning a finished
 | Type | Where | When |
 |------|-------|------|
 | Raw conversation | `/mnt/transcripts/` (auto) | Every Claude session |
-| Flat by-window raw transcript | `Development/transcripts/YYYY-MM-DD_HHMM_p<patch>_<slug>.md` | Every window, automatic *(capture-and-audit — DRAFT, pending ratification)* |
+| Flat by-window raw transcript | `Development/transcripts/YYYY-MM-DD_HHMM_p<patch>_<slug>.md` | Every window, automatic *(capture-and-audit — ratified Patch 2111; pending activation)* |
 | Compacted summary | Top of conversation (auto) | When context compacts |
 | Curated transcript | `development-transcripts/` folder | End of session or next session |
 | Development narrative | `development-[S]-[N].md` | During/after paper production |
 | Founders vision entries | `founders_vision.md` catalogue | During physics sessions |
 | Grok/Copilot exchanges | Thomas saves manually | After each external AI session |
 
-### Raw capture + overnight audit (DRAFT — Capture-and-Audit Protocol, pending CONV-001 ratification, campaign Step 6)
+### Raw capture + overnight audit (CANONICAL — Capture-and-Audit Protocol, ratified Patch 2111; pending activation)
 
-> **Status: DRAFT.** This is the announced successor to the hand-curated capture model below. **Until it is
-> ratified at Step 6, keep doing current capture practice** (curated transcripts, best-effort per-patch §10
-> capture). The blocks here describe what becomes standing rule *once ratified.* Full spec:
-> `templates/capture_and_audit_protocol.md`.
+> **Status: RATIFIED (Patch 2111), pending activation.** This is the ratified successor to the hand-curated capture model below. **Until the §3.1 capture mechanism and the Step-4 nightly macro are built and scheduled, keep doing current capture practice** (curated transcripts, best-effort per-patch §10 capture). The blocks here are the standing rule; they go live when the machinery exists. Full spec: `templates/capture_and_audit_protocol.md`.
 
 **The raw-capture rule (daytime — do nothing but record).** Every window's sole daytime capture obligation is
 that its turns land raw and verbatim in `Development/transcripts/` under its own `<window-slug>` (the filename

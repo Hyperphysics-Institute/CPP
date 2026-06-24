@@ -106,3 +106,9 @@ All four independently ruled the scoped revival a **refinement of T2, not an ove
 
 ## Status
 **Panel: RATIFY 4/4 (confirmatory pass clean).** Per the protocol's own gate ("Not canonical until TLA ratifies the v1.0-candidate, or a confirmatory panel pass clears it") the blocker is removed. **The flip to canonical is TLA's status move** — on ratification, the DRAFT markers come off across `capture_and_audit_protocol.md`, the `operating_system.md` §6 wiring (2105) + §4 paper-production discipline (2107), and the bootup heartbeat check.
+
+---
+
+## RATIFIED — Patch 2111 (TLA, 24 June 2026)
+
+TLA ratified the v1.0-candidate after the clean confirmatory pass. The protocol is **canonical as the standing spec**; DRAFT markers lifted across `capture_and_audit_protocol.md`, `operating_system.md` (§4 paper-production discipline + §6 capture/read-render), `bootup.md` (Step-2 heartbeat check + §5 row), and `paper_completion_checklist.md`. **Activation gate remains:** the protocol is not yet operational — it goes live only when the §3.1 automatic-capture mechanism and the Step-4 nightly macro are built and scheduled; until then, windows continue current capture/registry practice. Cycle closed.

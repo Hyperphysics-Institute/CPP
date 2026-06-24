@@ -1,6 +1,6 @@
 # The Capture-and-Audit Protocol
 
-**STATUS: DRAFT (v1.0-candidate) — panel RATIFY-WITH-CHANGES integrated (Patch 2106 review); pending TLA final ratification to declare canonical.** NOT canonical until TLA ratifies (or sends the v1.0-candidate for a confirmatory panel pass).
+**STATUS: CANONICAL — ratified Patch 2111 (TLA), after panel RATIFY 4/4 over two CONV-001 rounds (Patch 2106 RATIFY-WITH-CHANGES → 2110 confirmatory RATIFY).** Ratified as the standing spec. **NOT YET OPERATIONAL:** the protocol activates only once the §3.1 automatic-capture mechanism and the Step-4 nightly macro (`scripts/overnight_extraction_audit.sh`) are built and scheduled. Until then, windows continue current capture/registry practice — the deferral channels (`Development/transcripts/`, `Registries_pending/`) are defined but not yet consumed by an audit that does not yet exist.
 **Established:** Patch 2102. **Revised:** Patch 2108 — integrated the 4-reviewer change set (C1–C8), the founder-promote posture (T3 = staged-default/never-auto-graduate), the scope boundary (§7), and the deliberate-delta `Registries_pending/` mechanism (§6) that the paper-production protocol (Patch 2107) consumes.
 **Peer of:** `operating_system.md`, `reasoning_capture_protocol.md`, `paper_completion_checklist.md`.
 **Supersedes (for the capture pathway):** the scattered, real-time, per-patch capture rules. It does **not delete** `reasoning_capture_protocol.md`; it inverts when its judgment happens (see §8).
@@ -32,7 +32,7 @@ The keystone of §2 holds only if capture is genuinely mechanical. The capture m
 - **Always-on and auto-started on window creation** — begins capturing without any worker action.
 - **Zero-touch / non-bypassable** — no manual trigger, no "remember to export," no per-turn worker write. A worker-triggered script does NOT satisfy this (it re-imports the human-compliance-under-load failure).
 - **Immediate and durable** — verbatim turns are persisted to disk as they occur, with fsync-level durability. **No in-memory buffering, no lazy writes** (panel C2/T4): a catastrophic context loss mid-day must not lose the day's transcript before the night's run sees it.
-Until a mechanism meeting all three exists, this protocol's guarantee is aspirational; a worker may append as a best-effort backstop, but ratification of the keystone is gated on the mechanism.
+Until a mechanism meeting all three exists, this protocol's guarantee is aspirational; a worker may append as a best-effort backstop. The protocol is ratified as the standing spec, but it is **not operational — and the keystone guarantee is not delivered — until a mechanism meeting all three exists** (the activation gate; see STATUS).
 
 ## 4. Piece 2 — The nightly extraction macro (where ALL judgment lives)
 A scripted batch job — `scripts/overnight_extraction_audit.sh` — modeled on Isak's `consolidate_bibliography.sh` (§9). Each night it:
@@ -94,4 +94,4 @@ Trades STORAGE for RELIABILITY (raw transcripts cheap; a dropped founder insight
 - No numerics/script recorded as proof — consistency-evidence only.
 - Status moves + canonical-registry edits deferred to TLA. The SOLE automated canonical write is `founders_vision.md` promotion, only via the `[REVIEW]`-gated audit, staged-first (§4.1), with its bounds stated narrowly there; deliberate registry deltas are *staged* in `Registries_pending/` and merged by the audit, not hand-written to canonical mid-day.
 - Own errors forward-additively; the CONV-001 panel catches overclaims.
-- Not canonical until TLA ratifies the v1.0-candidate (or a confirmatory panel pass clears it).
+- **Canonical — ratified Patch 2111** (panel RATIFY 4/4, two CONV-001 rounds). Operational once the §3.1 capture mechanism and the Step-4 macro are built + scheduled (the activation gate in STATUS); until then, current capture/registry practice continues.
