@@ -31,11 +31,16 @@ AUDIT_LOG="Development/audit_log.md"
 STAGING_ROOT="Development/staging"
 FOUNDERS_CANON="founders_vision.md"
 KNOWN_REGISTRIES="theorem-registry axiom-registry predictions paper_catalog research_frontier master_glossary theory-overview future_projects problem_histories README INDEX bibliography todolist research_timeline TATWD founders_vision"
+# §6.1 temp-THEO-handle permanentize (Patch 2117)
+ALIAS_MAP="Development/theo_alias_map.md"
+GRACE_DAYS=2
+TMP_RE='THEO-[A-Z0-9-]*-TMP-p[0-9]+(-[0-9]+)?'
 
 # counters
 T_SEEN=0; T_MALFORMED=0; ORPHAN_DELTAS=0
 F_STAGED=0; F_REVIEW=0
 R_STAGED=0; R_REVIEW=0
+H_SEEN=0; H_PERM=0; H_ALIAS=0; H_REVIEW=0
 FREEFORM=0
 RUN_STATUS="OK"
 
@@ -50,7 +55,7 @@ Usage: overnight_extraction_audit.sh [--apply] [--date YYYY-MM-DD] [--only KIND]
   --apply     stage outputs under Development/staging/<date>/ + write heartbeat;
               clears processed Registries_pending files. Does NOT write canonical.
   --date D    audit transcripts/deltas for date D (default today).
-  --only KIND founders | registry | freeform | integrity
+  --only KIND founders | registry | freeform | integrity | permanentize
 EOF
 }
 
@@ -68,7 +73,7 @@ stage_init() {
   STAGE_DIR="$STAGING_ROOT/$RUN_DATE"
   if [[ $DRY_RUN -eq 0 ]]; then
     rm -rf "$STAGE_DIR"   # idempotent: a re-run regenerates this date's staging cleanly
-    mkdir -p "$STAGE_DIR/founders" "$STAGE_DIR/registry" "$STAGE_DIR/freeform_pending"
+    mkdir -p "$STAGE_DIR/founders" "$STAGE_DIR/registry" "$STAGE_DIR/freeform_pending" "$STAGE_DIR/permanentize"
   fi
   return 0
 }
@@ -170,6 +175,129 @@ phase3_founders() {
 }
 
 # ---------------------------------------------------------------------------
+# PHASE 3.5 -- temporary-THEO-handle permanentize (§6.1, Patch 2117)
+# Claim-driven (family+patch are read from the pending claim, never guessed from
+# the handle, which sidesteps family-vs-display-guess ambiguity like THEO-SF-4).
+# v1 stance: STAGES the corpus rename + theorem-registry registrations for TLA's
+# morning apply; directly maintains the operational alias map (like the heartbeat).
+# Auto-applying the corpus rename is a v2 graduation (explicit TLA action), mirroring
+# the §4.1 founders posture. Safe to stage-not-apply because the handle is already
+# unambiguous (the rename is cosmetic).
+# ---------------------------------------------------------------------------
+theo_family_max() {  # highest existing THEO-<fam>-<n> in the registry (0 if none)
+  local fam="$1" m=0 n
+  [[ -f theorem-registry.md ]] || { echo 0; return; }
+  while IFS= read -r n; do [[ -n "$n" ]] && (( n > m )) && m=$n; done \
+    < <(grep -oE "THEO-${fam}-[0-9]+([^0-9]|$)" theorem-registry.md 2>/dev/null | grep -oE '[0-9]+' || true)
+  echo "$m"
+}
+theo_taken() { grep -qE "THEO-$1-$2([^0-9]|\$)" theorem-registry.md 2>/dev/null; }  # taken OR reserved
+
+alias_expire() {  # drop alias entries past their grace window (ISO dates string-compare)
+  [[ -f "$ALIAS_MAP" ]] || { printf '# THEO temp→permanent alias map (§6.1, auto-maintained)\n# Entries expire %s nights after assignment.\n\n' "$GRACE_DAYS" > "$ALIAS_MAP"; return 0; }
+  local tmpf; tmpf="$(mktemp)"; local e
+  while IFS= read -r l; do
+    if [[ "$l" == \|*expires:* ]]; then
+      e="$(sed -n 's/.*expires:\([0-9-]*\).*/\1/p' <<<"$l")"
+      [[ -n "$e" && "$e" < "$RUN_DATE" ]] && continue   # expired -> drop
+    fi
+    printf '%s\n' "$l" >> "$tmpf"
+  done < "$ALIAS_MAP"
+  mv "$tmpf" "$ALIAS_MAP"
+}
+
+phase_permanentize() {
+  [[ -n "$ONLY" && "$ONLY" != "permanentize" ]] && return 0
+  log "== Phase 3.5: temp-THEO-handle permanentize (§6.1; STAGED + alias-map) =="
+  [[ -d "$PENDING_DIR" ]] || { log "  (no $PENDING_DIR)"; return 0; }
+  local plan_file="$STAGE_DIR/permanentize/${RUN_DATE}_rename_plan.md"
+  local apply_file="$STAGE_DIR/permanentize/${RUN_DATE}_apply_rename.sh"
+  local reg_delta="$STAGE_DIR/registry/theorem-registry.delta"
+  local excl=(--exclude-dir=.git --exclude-dir=Development --exclude-dir=Registries_pending --exclude-dir=scripts --exclude-dir=templates --exclude-dir=node_modules)
+
+  declare -A C_FAM C_PATCH C_SEQ C_STMT C_SRC
+  local order=() h fam pat stmt seq
+
+  # 1) gather TMP claims from pending files (claim = authoritative family + patch)
+  while IFS= read -r p; do
+    [[ -z "$p" ]] && continue
+    local pslug; pslug="$(basename "$p" .md)"
+    while IFS= read -r line; do
+      [[ "$line" == *-TMP-p* ]] || continue
+      h="$(grep -oE "$TMP_RE" <<<"$line" | head -1 || true)"; [[ -z "$h" ]] && continue
+      fam="$(sed -n 's/.*family:[[:space:]]*\([A-Za-z0-9-]*\).*/\1/p' <<<"$line")"
+      pat="$(sed -n 's/.*patch:[[:space:]]*\([0-9]*\).*/\1/p' <<<"$line")"
+      stmt="$(sed -n 's/.*|[[:space:]]*"\([^"]*\)".*/\1/p' <<<"$line")"
+      seq="$(sed -n 's/.*-TMP-p[0-9]\{1,\}-\([0-9]\{1,\}\)$/\1/p' <<<"$h")"; seq="${seq:-0}"
+      H_SEEN=$((H_SEEN+1))
+      if [[ -z "$fam" || -z "$pat" ]]; then          # schema gate (§4.3)
+        H_REVIEW=$((H_REVIEW+1))
+        [[ $DRY_RUN -eq 0 ]] && printf '%s | from=%s | REVIEW:SCHEMA(missing family/patch)\n' "$line" "$pslug" >> "$STAGE_DIR/permanentize/_REVIEW.txt"
+        continue
+      fi
+      [[ -z "${C_FAM[$h]:-}" ]] && order+=("$h")
+      C_FAM[$h]="$fam"; C_PATCH[$h]="$pat"; C_SEQ[$h]="$seq"; C_STMT[$h]="$stmt"; C_SRC[$h]="$pslug"
+    done < "$p"
+  done < <(find "$PENDING_DIR" -maxdepth 1 -type f -name '*.md' ! -name 'README.md' 2>/dev/null | sort)
+
+  # 2) orphan handles: in the corpus but no claim -> REVIEW (family unknown, never guess)
+  while IFS= read -r h; do
+    [[ -z "$h" || -n "${C_FAM[$h]:-}" ]] && continue
+    H_SEEN=$((H_SEEN+1)); H_REVIEW=$((H_REVIEW+1))
+    [[ $DRY_RUN -eq 0 ]] && printf '%s | REVIEW:ORPHAN(no pending claim)\n' "$h" >> "$STAGE_DIR/permanentize/_REVIEW.txt"
+  done < <(grep -rEoh "${excl[@]}" "$TMP_RE" . 2>/dev/null | sort -u || true)
+
+  # 3) assign permanents per family, deterministic (patch then seq); stage plan+delta, alias direct
+  if [[ $DRY_RUN -eq 0 ]]; then
+    alias_expire
+    { printf '# Temp-handle rename plan — %s (STAGED; apply with %s, then commit+push)\n\n' "$RUN_DATE" "$(basename "$apply_file")"; } > "$plan_file"
+    { printf '#!/usr/bin/env bash\n# Staged temp-handle permanentization (§6.1). Review, run from repo root, commit+push.\nset -euo pipefail\ncd "$(git rev-parse --show-toplevel)"\n'; } > "$apply_file"
+  fi
+  local fams; fams="$(for h in "${order[@]:-}"; do [[ -n "$h" ]] && echo "${C_FAM[$h]}"; done | sort -u || true)"
+  while IFS= read -r fam; do
+    [[ -z "$fam" ]] && continue
+    local sorted; sorted="$(for h in "${order[@]:-}"; do [[ -n "$h" && "${C_FAM[$h]}" == "$fam" ]] && printf '%s\t%s\t%s\n' "${C_PATCH[$h]}" "${C_SEQ[$h]}" "$h"; done | sort -k1,1n -k2,2n | cut -f3 || true)"
+    local nextn; nextn=$(( $(theo_family_max "$fam") + 1 ))
+    while IFS= read -r h; do
+      [[ -z "$h" ]] && continue
+      while theo_taken "$fam" "$nextn"; do nextn=$((nextn+1)); done   # skip taken/reserved slots
+      local perm="THEO-${fam}-${nextn}"
+      H_PERM=$((H_PERM+1))
+      if [[ $DRY_RUN -eq 1 ]]; then
+        plan "permanentize $h -> $perm (family $fam, patch ${C_PATCH[$h]})"
+      else
+        local occ; occ="$(grep -rEln "${excl[@]}" -- "$h" . 2>/dev/null | sort -u || true)"
+        { printf '## %s  ->  %s   _(family %s, patch %s)_\n' "$h" "$perm" "$fam" "${C_PATCH[$h]}"
+          if [[ -n "$occ" ]]; then printf '%s\n' "$occ" | sed 's/^/  - /'; else printf '  - (no corpus occurrence; alias-only)\n'; fi
+          printf '\n'; } >> "$plan_file"
+        if [[ -n "$occ" ]]; then
+          while IFS= read -r ofile; do [[ -n "$ofile" ]] && printf 'sed -i "s/%s/%s/g" %q\n' "$h" "$perm" "$ofile" >> "$apply_file"; done <<<"$occ"
+        fi
+        printf -- '- register %s : permanentized from %s (patch %s) — "%s"\n' "$perm" "$h" "${C_PATCH[$h]}" "${C_STMT[$h]}" >> "$reg_delta"
+        local exp; exp="$(date -d "$RUN_DATE +${GRACE_DAYS} days" +%Y-%m-%d 2>/dev/null || echo "$RUN_DATE")"
+        printf '| %s | %s | assigned:%s | expires:%s |\n' "$h" "$perm" "$RUN_DATE" "$exp" >> "$ALIAS_MAP"
+        H_ALIAS=$((H_ALIAS+1))
+      fi
+      nextn=$((nextn+1))
+    done <<<"$sorted"
+  done <<<"$fams"
+
+  # 4) consume the TMP claim lines so Phase 4 doesn't re-see them (non-TMP deltas survive)
+  if [[ $DRY_RUN -eq 0 ]]; then
+    while IFS= read -r p; do
+      [[ -z "$p" ]] && continue
+      if grep -q -- '-TMP-p' "$p" 2>/dev/null; then
+        local tf; tf="$(mktemp)"; grep -v -- '-TMP-p' "$p" > "$tf" || true; mv "$tf" "$p"
+        act "consumed TMP claims from $(basename "$p")"
+      fi
+    done < <(find "$PENDING_DIR" -maxdepth 1 -type f -name '*.md' ! -name 'README.md' 2>/dev/null | sort)
+    [[ $H_PERM -gt 0 ]] && act "rename plan + apply script -> $STAGE_DIR/permanentize/ ; alias map -> $ALIAS_MAP (TLA applies rename)"
+  fi
+  log "  permanentize: seen=$H_SEEN permanentized=$H_PERM aliased=$H_ALIAS review=$H_REVIEW"
+  return 0
+}
+
+# ---------------------------------------------------------------------------
 # PHASE 4 -- Registries_pending merge -> STAGED diff (C7 schema-validate first)
 # ---------------------------------------------------------------------------
 known_registry() { grep -qw -- "$1" <<<"$KNOWN_REGISTRIES"; }
@@ -182,6 +310,7 @@ phase4_registry() {
     local pslug; pslug="$(basename "$p" .md)"
     while IFS= read -r line; do
       [[ "$line" =~ ^-[[:space:]] ]] || continue
+      [[ "$line" == *-TMP-p* ]] && continue   # §6.1 temp-handle claims belong to Phase 3.5
       local reg act_str
       reg="$(sed -n 's/^-[[:space:]]*registry=\([^ |]*\).*/\1/p' <<<"$line")"
       act_str="$(sed -n 's/.*action="\([^"]*\)".*/\1/p' <<<"$line")"
@@ -237,8 +366,8 @@ write_heartbeat() {
   local now status line open_review
   now="$(date +%H:%M)"; local tz; tz="$(date +%Z)"
   status="$([[ $DRY_RUN -eq 1 ]] && echo "DRY-RUN" || echo "$RUN_STATUS")"
-  open_review=$((F_REVIEW + R_REVIEW))
-  line="${RUN_DATE} ${now} ${tz} | run=${status} | transcripts=${T_SEEN}(malformed:${T_MALFORMED},orphan-deltas:${ORPHAN_DELTAS}) | filed=reasoning:0,scripts:0,registry:${R_STAGED} | founders=staged:${F_STAGED},review:${F_REVIEW},promoted:0 | open_review=${open_review} | freeform_pending=${FREEFORM} | notes=v1-deterministic"
+  open_review=$((F_REVIEW + R_REVIEW + H_REVIEW))
+  line="${RUN_DATE} ${now} ${tz} | run=${status} | transcripts=${T_SEEN}(malformed:${T_MALFORMED},orphan-deltas:${ORPHAN_DELTAS}) | filed=reasoning:0,scripts:0,registry:${R_STAGED} | founders=staged:${F_STAGED},review:${F_REVIEW},promoted:0 | temp_handles=seen:${H_SEEN},perm:${H_PERM},alias:${H_ALIAS},review:${H_REVIEW} | open_review=${open_review} | freeform_pending=${FREEFORM} | notes=v1-deterministic"
   log "== heartbeat =="
   if [[ $DRY_RUN -eq 1 ]]; then plan "would append: $line"; else printf '%s\n' "$line" >> "$AUDIT_LOG"; act "heartbeat -> $AUDIT_LOG"; fi
   return 0
@@ -273,6 +402,7 @@ phase0_preflight
 stage_init
 phase1_integrity
 phase3_founders
+phase_permanentize
 phase4_registry
 phase5_freeform
 write_heartbeat

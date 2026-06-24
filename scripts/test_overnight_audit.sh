@@ -90,6 +90,39 @@ ck "heartbeat reports malformed" 'grep -q "malformed:1" Development/audit_log.md
 ck "heartbeat open_review>=2"    'grep -qE "open_review=[2-9]" Development/audit_log.md'
 ck "apply exits 0"               '[ $ARC -eq 0 ]'
 
+echo "== TEMP-HANDLE PERMANENTIZE (§6.1, Patch 2117) =="
+S2="$(mktemp -d)"; trap 'rm -rf "$SCRATCH" "$S2"' EXIT
+( cd "$S2"
+  git init -q && git config user.email t@t && git config user.name t
+  mkdir -p Development/transcripts Registries_pending series_a series_b templates
+  touch templates/capture_and_audit_protocol.md
+  printf '# audit\n## Runs\n' > Development/audit_log.md
+  printf 'THEO-DS-6 : established\n' > theorem-registry.md
+  printf 'Result: by THEO-DS-7-TMP-p0849 the Sea residual is inert.\n' > series_a/dm1.md
+  printf 'Lemma THEO-DS-7-TMP-p1012 gives the cancellation.\n' > series_b/ccu.md
+  # two windows, SAME family (DS) + SAME optimistic guess (7), DIFFERENT patches
+  printf -- '- THEO-DS-7-TMP-p0849 | family:DS | patch:0849 | "Sea-residual SSV is inert."\n' > Registries_pending/dm-1.md
+  printf -- '- THEO-DS-7-TMP-p1012 | family:DS | patch:1012 | "Uniform-Sea impedance cancels."\n' > Registries_pending/cc-u.md
+  git add -A && git commit -qm fix
+)
+TD=2026-06-24; PZ="$S2/Development/staging/$TD/permanentize"; AM="$S2/Development/theo_alias_map.md"
+( cd "$S2" && bash "$MACRO" --date "$TD" --only permanentize ) >/tmp/dry2.out 2>&1 || true
+ck "th dry-run plans permanentize"    'grep -q "permanentize THEO-DS-7-TMP-p0849" /tmp/dry2.out'
+ck "th dry-run writes nothing"        '[ -z "$(git -C "$S2" status --porcelain)" ]'
+( cd "$S2" && bash "$MACRO" --apply --date "$TD" --only permanentize ) >/tmp/app2.out 2>&1; A2=$?
+ck "th apply exits 0"                 '[ $A2 -eq 0 ]'
+ck "th plan staged"                   '[ -s "$PZ/${TD}_rename_plan.md" ]'
+ck "th two distinct permanents"       'test "$(grep -oE "THEO-DS-[0-9]+" "$PZ/${TD}_rename_plan.md" | sort -u | wc -l)" -eq 2'
+ck "th earlier patch -> lower number" 'grep -qE "THEO-DS-7-TMP-p0849 +-> +THEO-DS-7([^0-9]|$)" "$PZ/${TD}_rename_plan.md"'
+ck "th later patch -> next number"    'grep -qE "THEO-DS-7-TMP-p1012 +-> +THEO-DS-8([^0-9]|$)" "$PZ/${TD}_rename_plan.md"'
+ck "th alias map has both handles"    'grep -q "THEO-DS-7-TMP-p0849 | THEO-DS-7 " "$AM" && grep -q "THEO-DS-7-TMP-p1012 | THEO-DS-8 " "$AM"'
+ck "th registry registrations staged" 'grep -q "register THEO-DS-7 " "$S2/Development/staging/$TD/registry/theorem-registry.delta" && grep -q "register THEO-DS-8 " "$S2/Development/staging/$TD/registry/theorem-registry.delta"'
+ck "th apply-rename script staged"    '[ -s "$PZ/${TD}_apply_rename.sh" ]'
+ck "th no change-order artifact"      '! ls "$PZ"/change_order* "$PZ"/CHANGE-ORDER* 2>/dev/null | grep -q .'
+ck "th pending TMP claims consumed"   '! grep -rq -- "TMP-p" "$S2/Registries_pending/"'
+ck "th papers unchanged (v1 staged)"  'grep -q "THEO-DS-7-TMP-p0849" "$S2/series_a/dm1.md"'
+ck "th heartbeat perm:2"              'grep -q "temp_handles=seen:[0-9]*,perm:2" "$S2/Development/audit_log.md"'
+
 echo ""
 echo "RESULT: PASS=$PASS FAIL=$FAIL"
 [ $FAIL -eq 0 ]
