@@ -11,7 +11,7 @@ We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter 
 ## 1. Introduction  *(draft)*
 
 [FILLED] The dark-matter problem; the standard CDM placeholder and its small-scale tensions (core-cusp, diversity, missing satellites); SIDM as a response. CPP's claim: dark matter is not a new particle but residual neutral substrate structure. **Scope of this paper:** the *microphysics* of the qDP/hTetra candidate and a *positive, derived, falsifiable discriminant* (the self-interaction signature). **Out of scope (stated, not hidden):** the full cosmological identification (§9), the absolute mass scale (§8), and the dark-to-baryon ratio (§8).
-[TO FILL] One-paragraph CPP-substrate primer for a non-CPP reader (DPs, the Sea, color-neutral residuals); ~3 citations to the SM/SS flagships for the constituent physics.
+[FILLED] **CPP substrate primer (for the non-CPP reader).** Conscious Point Physics (CPP) treats the vacuum not as empty space but as a dense lattice of paired fundamental entities. The elementary objects are *Conscious Points* (CPs) of two species — electromagnetic (eCP) and quark/color (qCP) — which bind into *Dipole Pairs* (DPs): electromagnetic eDPs and color-charged qDPs, together with hybrid tetrahedral units (hTetra) built from both. The space-filling ensemble of these pairs is the *Dipole Sea*, the medium whose stress gradients (the Space-Stress Vector, SSV) reproduce the framework's relativistic and gravitational phenomenology [SR-1, `abshier2026sr1`]. Ordinary matter is a spectrum of bound Sea excitations: the quark-sector constituents, the color factor of 3, and the constituent-mass ratios used below (E_qDP = 3·E_eDP ⇒ m_qDP ≈ 264 MeV) are derived in the quark-sector flagship [SF-3, `abshier2026sf3`], while the color interaction, the eight gluons (identified as hDP structures), confinement, and glueball physics are derived in the strong-sector flagship [SF-5, `abshier2026sf5`]. The objects relevant to dark matter are the *color-neutral residuals* of this same Sea — qDP/hTetra aggregates that are color-singlet and electrically neutral, hence dark, yet already present in the spectrum rather than postulated as a new field. This paper asks whether those residuals are the dark matter.
 
 ## 2. The candidate: qDP/hTetra aggregates  *(draft)*
 
@@ -86,7 +86,7 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 4. **[OPEN] §8 abundance (route B).** Asymmetric-DM / shared-Sea-asymmetry derivation of ~5:1 — needs the DM-unit mass + a baryogenesis sub-arc.
 5. **[DEP] §8 mass scale = Project C** (running in the 1000-series window).
 6. **[DEP] §9 DM-2 Λ-coefficient** — overlaps Project C's cosmological-constant/l_P work; coordinate, don't race.
-7. **[TO FILL] Intro CPP primer + citations; references throughout.**
+7. **[PARTIAL] Intro CPP primer + citations — DONE (Patch 0848):** §1 non-CPP-reader substrate primer filled with 3 flagship cites (SF-3, SF-5, SR-1). Still **[TO FILL]:** references threaded through the body (§4 strong-sector, §5 scattering, §8 Project C, §9 sea_gravitation).
 8. **[DECISION] Promotion to .tex + flagship checklist** once §6 and the f-band are in and DM-2's two conditions are reported as conditional.
 
 ## Provenance
