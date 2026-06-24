@@ -1,11 +1,29 @@
 # Round 4 — the periodic no-go, and why CPP evades it: the substrate is a φ-self-similar quasicrystal
 
-**Status:** FINDING from the dominant W1-vs-W2 decider. **Panel-pending — NOT banked. NO THEO. NO status
-move. NO proof claim.** Numerics in `verify/2068_periodic_nogo_quasicrystal_evasion.py` are
+**Status:** FINDING from the dominant W1-vs-W2 decider. **PANEL-REVIEWED (Patch 2070, CONV-001): 3
+responses — unanimous SOUND / SOUND-WITH-CALIBRATION, no verdict-flip; SCRIPT-EXECUTED runs reproduced the
+Part-A numerics; the Coxeter regular-Euclidean-4-honeycomb list and icosahedral harmonic tower independently
+recomputed.** The panel called the Part-A periodic no-go "theorem-grade." v1.1 calibration applied below
+(see `review/reviews-2068.md`). **Still NOT a THEO; NO status/registry move rides on this — the OPEN-SR-10 /
+R2 world-call sharpening follows separately, under STOP-and-warn, on TLA's nod.** Numerics are
 consistency-evidence only (handover §7). The committed world-call stays at the Round-15 checkpoint.
-**⚠ This finding touches a FOUNDATIONAL corpus point — the substrate's global structure (φ-self-similar /
-quasicrystalline, not periodic). That is bigger than a registry edit; it must go to the panel and to TLA
-before any status move.** (See §6.)
+**⚠ This finding rests on a FOUNDATIONAL corpus point — the substrate's global structure (φ-self-similar /
+quasicrystalline, not periodic). Panel-endorsed (T3 SOUND, incl. independent Coxeter recomputation), but any
+status move still goes to TLA.** (See §6.)
+
+> **CHANGELOG.** v1.0 (Patch 2068): original probe. **v1.1 (Patch 2070): post-panel calibration.** Panel
+> unanimous: Part-A no-go is theorem-grade (holds for infinite-range periodic too — still a BZ Fourier
+> series); Part-B substrate reading correct and load-bearing (φ-self-similar = quasicrystal; Coxeter
+> no-E⁴-tessellation independently confirmed); the orientation-doc tension is a *reconciliation*, not a
+> correction. Calibrations: **(T1/T5)** "W3 excluded" carries the explicit "given A3/A3′ and C3, pending
+> OPEN-SR-9" qualifier (the causal-broadcast Lorentz invariance is still axiom-level); **(T4, the
+> substantive one)** evading the *periodic* no-go does **not** by itself grant exact Lorentz — a
+> deterministic quasicrystal has a dense Fourier module (Bragg peaks) and icosahedral local symmetry, so it
+> could still be a **highly-suppressed W2** rather than exact W1; the W1-vs-W2 question is genuinely open
+> *within* the quasicrystal class, which sharpens the Round-5 target; **(T3/numerics)** the finite-shell
+> numerics are an existence-proof that periodic-approximation anisotropy can be *reduced, not eliminated* —
+> they do not probe the aperiodic limit. One-line summary (ChatGPT): *Round 4 establishes a theorem-grade
+> periodic no-go; CPP survives because it is not periodic.*
 
 ---
 
@@ -19,8 +37,8 @@ computation forces the question the earlier rounds deferred: **what is the subst
 
 ## 1. Result in one line
 
-**There is a hard no-go for any *periodic* lattice — but it does not apply to CPP, because the CPP substrate
-is *not* periodic.** (A) Any regular periodic-lattice broadcast has a bounded, Brillouin-zone-periodic
+**There is a hard no-go for any *periodic* lattice — but it does not apply to CPP, because CPP is aperiodic
+by construction.** (A) Any regular periodic-lattice broadcast has a bounded, Brillouin-zone-periodic
 dispersion symbol, which can neither equal ω = c|k| nor be exactly isotropic; finite shells suppress the
 icosahedral anisotropy one harmonic at a time but never zero the infinite tower — so **exact W1 is
 impossible for a periodic substrate.** (B) **The CPP substrate is the φ-self-similar nested-600-cell
@@ -80,19 +98,25 @@ target — not done here.**
 
 ## 4. World-call determination
 
-- **W3 (real, O(1) preferred frame): EXCLUDED.** The IR/continuum limit is Lorentz-invariant (Round 3), and
-  any discreteness floor is bounded by the sub-Planck nesting scale (~l_P/10³⁰) — Planck-suppressed, never
-  O(1). No reading of the substrate gives a real preferred frame.
+- **W3 (real, O(1) preferred frame): EXCLUDED — given A3/A3′ and C3 (pending OPEN-SR-9).** The IR/continuum
+  limit is Lorentz-invariant (Round 3, an axiom-level result via C3), and any discreteness floor is bounded
+  by the sub-Planck nesting scale (~l_P/10³⁰) — Planck-suppressed, never O(1). No reading of the substrate
+  gives a real preferred frame.
 - **W2 (limit-exact, Planck floor):** the realized world **if** the substrate is treated as effectively
-  periodic — secured by Part A, with an icosahedrally tiny floor.
-- **W1 (exact-discrete):** **viable, and specifically because the substrate is φ-self-similar /
-  quasicrystalline.** Not proven — pinned to the single sharp, decidable question of whether the
-  quasicrystal broadcast carries exact (statistical) Lorentz (Round 5).
+  periodic — secured by Part A, with an icosahedrally tiny floor. **And note (panel T4):** even the
+  *aperiodic* substrate could land here — a deterministic quasicrystal has a **dense Fourier module** (Bragg
+  peaks) and retains icosahedral local symmetry, so it might only push the anisotropy onto an
+  infinitesimally-small-but-nonzero dense set of scales — i.e. a **highly-suppressed W2**, not exact W1.
+- **W1 (exact-discrete):** **made *possible* — not granted — by the substrate being φ-self-similar /
+  quasicrystalline.** Evading the *periodic* no-go (no Brillouin zone) is **necessary but not sufficient**
+  for W1. Not proven — pinned to the single sharp, decidable question of whether the quasicrystal broadcast
+  achieves *exact* isotropy (W1) or merely dense-suppressed isotropy (W2) (Round 5).
 
-So the campaign's three-world question is **determined down to one line:** **W3 is out; the answer is W1 or
-W2; and the W1-vs-W2 decision is the quasicrystal-Lorentz question on CPP's own golden-ratio self-similar
-substrate.** For every physical purpose the distinction is moot (the floor, if any, sits at ~l_P/10³⁰); for
-the foundational world-call it is the whole game.
+So the campaign's three-world question is **determined down to one line:** **W3 is out (given A3/A3′, C3);
+the answer is W1 or W2; and the W1-vs-W2 decision is the quasicrystal-Lorentz question — exact vs
+dense-suppressed isotropy — on CPP's own golden-ratio self-similar substrate.** For every physical purpose
+the distinction is moot (the floor, if any, sits at ~l_P/10³⁰); for the foundational world-call it is the
+whole game.
 
 ## 5. Effect on the world-call (informal; committed call at Round 15)
 
@@ -125,16 +149,16 @@ deposited.
 
 ## 8. Ledger
 
-- **NO THEO. NO status/registry move.** This is a FINDING; the OPEN-SR-10 / R2-STATUS world-call sharpening
-  follows **after** panel + TLA (do not edit registries on a finding, and especially not on a
-  substrate-structure claim).
-- **Recommend CONV-001 dispatch** to pressure-test: (a) the Part-A no-go (is the bounded-periodic-symbol
-  argument airtight, including for infinite-range periodic broadcasts?); (b) the Part-B corpus reading (is
-  SR-1's self-similar nesting genuinely quasicrystalline / aperiodic, and does the orientation-doc
-  "tessellated" language conflict?); (c) the "aperiodicity evades the no-go" claim and whether the floor is
-  truly sub-Planck; (d) the world-call determination and whether an early committed call is warranted.
-- **Forward (Round 5):** dispersion / structure-factor isotropy of an explicit icosahedral-quasicrystal
-  approximant (cut-and-project from E₈/H₄ or φ-inflation) — the actual W1-vs-W2 decider.
+- **NO THEO. NO status/registry move in this finding.** **PANEL-REVIEWED and cycle-closed (Patch 2070):**
+  3 responses, unanimous SOUND / SOUND-WITH-CALIBRATION, no flip; Part-A numerics reproduced
+  (SCRIPT-EXECUTED); Coxeter list + icosahedral harmonic tower independently recomputed. Aggregation in
+  `review/reviews-2068.md`. The OPEN-SR-10 / R2-STATUS world-call sharpening follows **separately**, under
+  STOP-and-warn, on TLA's nod — not here, and especially not unilaterally on a substrate-structure claim.
+- **Forward (Round 5, sharpened by panel T4):** dispersion / structure-factor isotropy of an explicit
+  icosahedral-quasicrystal approximant (cut-and-project from E₈/H₄ or φ-inflation) — and crucially, whether
+  it reaches **exact** isotropy (W1) or only **dense-suppressed** isotropy (a highly-suppressed W2), since a
+  quasicrystal's dense Fourier module (Bragg peaks) + icosahedral local symmetry do not *a priori* give
+  exact Lorentz. This is the actual W1-vs-W2 decider.
 
 *Probe by Claude Opus under Thomas Lee Abshier's direction. Numerics consistency-evidence only;
 corrections appended forward.*
