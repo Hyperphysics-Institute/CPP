@@ -203,9 +203,12 @@
 ---
 
 ### OPEN-SR-10: Exact Emergent Lorentz from PCD (the root)
-**Status:** **CAMPAIGN COMPLETE (Rounds 1–5, all panel-closed SOUND) — terminal determination: W2.** **No
-THEO. The committed world-call (W2) is TLA's to ratify; this entry stays OPEN pending that ratification,
-then flips to RESOLVED-W2.** Opened Patch 2058; registered Patch 2067; Round-4 folded Patch 2072; Round-5
+**Status:** **RESOLVED — W2** (committed world-call ratified by TLA, Patch 2080). Rounds 1–5 all
+panel-closed SOUND; terminal determination **W2 — IR-exact Lorentz from substrate (isotropic elasticity)
+with an l=6/q⁴ anisotropy floor at ~l_P/10³⁰**. RESOLVED encodes the **world-call determination**, not a
+from-first-principles theorem — **NO THEO earned**; the from-PCD-dynamics dispersion derivation, OPEN-SR-9's
+from-substrate c_photon, and the exact l=6 floor coefficient remain as residual open items that do **not**
+bear on the world-call. Opened Patch 2058; registered Patch 2067; Round-4 folded Patch 2072; Round-5
 decider + close Patch 2078. **Campaign-close handover:** `handovers/2026-06-24_lorentz_root_W2_campaign_close.md`.
 **Sector(s):** SR (root); grounds OPEN-SR-9, R2 (premise (i)/(ii)), the SF-6 Michelson–Morley falsifier, and the inertial-coasting/reversibility ladder (campaign opener §1).
 **The problem.** Do the PCD dynamics on the discrete 600-cell admit an **exact continuous SO⁺(3,1)** action on the emergent LSP′ fields 𝔽 = (Φ, V_i, Q_ij) — a boosted self-field being an exact rigidly-translating stationary configuration at a continuum of velocities and all directions, with no Peierls/lattice drag and no lattice-Cherenkov? Three worlds: **W1** exact-discrete (the prize); **W2** exact only in the block-spin continuum limit, Planck-suppressed floor; **W3** genuine obstruction (real preferred frame).
