@@ -87,7 +87,7 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 5. **[DEP] §8 mass scale = Project C** (running in the 1000-series window).
 6. **[DEP] §9 DM-2 Λ-coefficient** — overlaps Project C's cosmological-constant/l_P work; coordinate, don't race.
 7. **[DONE, Patches 0848/0854] Intro CPP primer + citations.** §1 non-CPP-reader primer + 3 flagship cites (0848); body references now threaded (0854): §4 → SF-5 [`abshier2026sf5`] + SF-3 [`abshier2026sf3`]; §5 → QM-1 [`abshier2026qm1`]; §8 → Project C (companion, in prep — no key yet); §9 → SR-1 [`abshier2026sr1`]. Observational refs (Mateo+ 1991, Jardel & Gebhardt 2012, de Blok+ 2008, Goerdt+ 2006, Milne–McCrea 1934) named inline in §6/§9 — bib entries to be added at .tex promotion.
-8. **[DONE, Patch 0856] Promotion to .tex.** Publication-form `.tex` built at `DM-1/DM-1_substrate_dark_matter_candidate.tex` (EU-1 house style, embedded verified bibliography, 3 figures via `../figures/`, compiles clean 2-pass). This markdown draft remains the working source of truth; the `.tex` is the shippable artifact. Remaining: OSF deposit manifest (Thomas-action manual step).
+8. **[DONE, Patch 0856/0857] Promotion to .tex (v0.1 DRAFT).** Publication-form `.tex` built at `DM-1/DM-1_substrate_dark_matter_candidate.tex` at **v0.1 (DRAFT)** — pre-panel-review; compiles clean 2-pass. Promotes to v1.0 only after the multi-AI review cycle is satisfied. This markdown draft remains the working source of truth. Next: build the review package + initiate review protocol; OSF deposit at final ship.
 
 ## Provenance
 

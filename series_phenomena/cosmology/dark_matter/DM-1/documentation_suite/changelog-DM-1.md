@@ -3,7 +3,12 @@
 Canonical .tex: `DM-1/DM-1_substrate_dark_matter_candidate.tex`
 (Filename fixed; version history tracked here, not in the filename.)
 
-## v1.0 — Positive-Discriminant Candidate — Patch 0856 (24 June 2026)
+**Versioning convention:** assembled drafts ship at **v0.1 (DRAFT)** and increment
+through the panel review cycle (v0.2, v0.3, … as reviewer feedback is folded in),
+promoting to **v1.0** only once the multi-AI panel is satisfied at final ship.
+DM-1 is pre-review.
+
+## v0.1 (DRAFT) — Positive-Discriminant Candidate — Patch 0856 (assembled) / 0857 (version label) (24 June 2026)
 - **Promotion to .tex.** Publication-form conversion of the working markdown draft
   `series_phenomena/cosmology/dark_matter/DM-1_draft_manuscript.md` (assembled
   Patches 0700–0855) into the EU-1 house style (article class, natbib/plainnat,
