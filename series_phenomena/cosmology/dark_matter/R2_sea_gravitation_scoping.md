@@ -13,6 +13,10 @@
 >
 > **Net for R2:** the **uniform-Sea-inert / dark-energy leg is in hand**, conditional on the **c08 closed field equation (op:einstein)** — the single standing cap, shared with the dark-matter split (see `series_umbrella/series_cosmological_constant_arc/`, Patches 1101–1104, and CC-U/4 scoping `1105_ccu4_c08_scoping.md`). The §4(ii) gravitating-swirls-at-DM-amplitude leg and the full DM identification remain this lane's open work (DM-1 draft `DM-1_draft_manuscript.md`). This does **not** revive structure formation — CONJ-COSMO-1's structure-formation role stays a separate standing conditional-false verdict (Patch 0729). **Treat §3–§5 below as the frozen 0705 snapshot.**
 
+> **⟨UPDATE — Patch 0855 (DM 08xx lane): the c08 cap is DISCHARGED.⟩**
+> The Patch 0846 note above left the uniform-Sea-inert / dark-energy leg "conditional on the c08 closed field equation (op:einstein) — the single standing cap." **That cap is now discharged (Patch 1161).** The op:einstein closure derives G_μν = 8πG/c⁴·T_μν[LSP] at λ = 16πG/c⁴ with **zero new parameters** (DG-3 3/3), and the absolute-|SSV| monopole is annihilated by 600-cell icosahedral symmetry (spherical 5-design, Σv̂ = 0; Patches 1107–1108) → **D2 (ground-state exclusion) CLOSED, falsifier D2-1 refuted** (formerly the single most load-bearing risk). The R2 uniform-Sea-inert leg therefore now stands on a **derived** field equation, no longer conditional on c08.
+> **Remaining open condition:** the **event-horizon IR-scale selection** (falsifier D3-1) — the one cap shared with the CC / Project-C l_P excavation. Net: R2's dark-energy leg is in hand on a derived field equation; a single cosmological IR-scale condition remains. **Still conditionally supported, not promoted to a derived result.** (Cross-ref DM-1 §9, Patch 0855; `series_phenomena/cosmology/sea_gravitation/stepD_friedmann_and_checks.md`, D2 CLOSED.)
+
 ---
 
 ## 1. The question (restated precisely)
