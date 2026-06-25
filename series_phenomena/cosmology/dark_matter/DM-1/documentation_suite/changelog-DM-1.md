@@ -8,6 +8,39 @@ through the panel review cycle (v0.2, v0.3, … as reviewer feedback is folded i
 promoting to **v1.0** only once the multi-AI panel is satisfied at final ship.
 DM-1 is pre-review.
 
+## v0.1-R (DRAFT, under revision) — Extended-Aggregate Pivot — Patch 0864 (25 June 2026)
+- **Retraction.** The point-scattering self-interaction σ/m ≈ 0.20 cm²/g (abstract,
+  §5, §6, Table 1, Figs. 2–4) is withdrawn. Patch 0859 identified it as an artifact
+  of a hard-wall boundary condition in the partial-wave solver. Corrected screened-LJ
+  point-scattering gives σ/m ≈ 0.11 cm²/g — flat but ~5–20× below dwarf-core needs,
+  no closure across the f-band. The as-shipped positive coring discriminant does not
+  hold for the bare aggregate.
+- **Survives.** Velocity-independence (the flatness) is unaffected by the BC error —
+  a robust kinematic consequence of the heavy constituent (264 MeV) + short range
+  (1.3 fm). Still distinguishes the candidate from light-mediator SIDM (∝ v⁻⁴).
+- **Re-scope.** Magnitude/coring discriminant (§6) re-scoped to EXTENDED charge-offset
+  aggregates (2eDP:2qDP ribbons, hTetra-chain loops, 4-wide crosses), σ/m ∝ N, hitting
+  0.6–2 cm²/g at N ~ 10²–10³ rungs (R ~ 50–400 fm). Supporting arc:
+  - 0860: σ(N) pass + (N, E_bond) over-determination ledger; one (N,E_bond) fits
+    magnitude+lifetime+fragmentation iff ambient thermal-eDP kT_amb ≲ 19 keV.
+  - 0861: PCD formation kinetics — loop-size knob collapses onto rung-bond
+    persistence length ℓ_p (ring-closure peak L ≈ 3.4 ℓ_p); in-band ℓ_p ~ 100–700 fm
+    is the same ℓ_p the σ/m ∝ N scaling requires.
+  - 0862: stiffness ladder hTetra < ribbon < cross; one edge-bond strength sets ℓ_p
+    AND selects geometry; glueball-dilution tax identified.
+  - 0863: chaperoning (high [hTetra], zero-barrier hDP→hTetra) crosses ribbons before
+    glueball apposition → dilution defanged (glueball fraction <10% iff [hTetra]/[ribbon]
+    ≳ 9); surviving relic = two extended species (4-wide cross + hTetra loop), both ∝ N.
+- **Deciding calc (make-or-break, SF-2/SF-5, cross-window).** Derive the 2eDP:2qDP /
+  hTetra edge-bond SSV potential → (G1) ℓ_p ~ 100–700 fm (κ_θ ~ 100–700 kT_form,
+  ~3–8°/hinge) + second-moment ladder; (G2) E_bond ~ 0.8 keV–2 MeV; (G3) glueball-arrest
+  radius ~ 100s fm not ~fm + branching ratios (registered OPEN-SS-39).
+- **Grade now:** Layer-C consistency (velocity-independence positive; magnitude via an
+  underived substrate stiffness). NOT a positive coring discriminant at this revision.
+- **Stays v0.1.** In-place revision notice added at §5 covering §5–§6; as-shipped body
+  retained as record. NO promotion to v1.0; gated on the SF-2/SF-5 deciding calculation.
+
+
 ## v0.1 (DRAFT) — Positive-Discriminant Candidate — Patch 0856 (assembled) / 0857 (version label) (24 June 2026)
 - **Promotion to .tex.** Publication-form conversion of the working markdown draft
   `series_phenomena/cosmology/dark_matter/DM-1_draft_manuscript.md` (assembled
