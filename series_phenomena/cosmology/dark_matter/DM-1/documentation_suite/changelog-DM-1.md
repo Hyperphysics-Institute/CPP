@@ -33,6 +33,11 @@ dropped in the publication form. The markdown draft remains the working source
 of truth; the .tex is the shippable artifact.
 
 ### Open at ship (none gating; all flagged in §8–§10 + Open Directions)
+- **Review cycle OPENED (Patch 0858):** self-contained panel review package at
+  `review/DM-1_review_package_v0.1.md` (claim chain, triage, embedded stdlib
+  verify code, reviewer steers, response format all inline). Dispatch to the
+  panel (ChatGPT/Grok/Copilot) pending; responses aggregate in
+  `review/reviews-DM-1.md`. v0.1 → v1.0 promotion gated on panel satisfaction.
 - f pin-down (companion mass-scale / colour-polarizability) → collapses the
   magnitude band and decides the IC 2574 tension.
 - Sea-gravitation: one remaining condition (event-horizon IR-scale selection).
