@@ -687,3 +687,18 @@ The K$_3$ pair potential $V_{\rm pair}(\xi) = -B_{\rm pair} \exp(-\xi^2/2)$ Tayl
 
 ---
 
+### OPEN-SS-39: Glueball Formation / Growth / Decay Kinetics and Cocoon-Arrest Radius
+**Status:** OPEN
+**Sector(s):** SS, (cosmology / dark-matter consumer)
+**Priority:** MEDIUM (HIGH for the DM-1 program)
+**One-line statement:** Derive the formation, growth, and decay kinetics of closed-hDP-loop glueballs — in particular the terminal (cocoon-arrest) radius set by eDP cocooning + local-resource depletion — and the branching ratio between glueball collapse and competing extended-aggregate channels.
+**Why now / gap:** Glueball *formation/growth/decay* has not been treated in any CPP paper (only the *mass*, OPEN-SS-6). The DM-1 extended-aggregate program (patches 0859–0863) made this load-bearing: a 4-wide ribbon can either collapse to a glueball (compact, σ/m ~ 0.11, a dilutant) or be chaperoned into a 4-wide cross before apposition. Two quantities decide the DM cross-section average: (i) the cocoon-arrest radius (few fm ⇒ pure dilutant; 100s fm ⇒ a second size-setter that must agree with the persistence length ℓ_p), and (ii) the suppression ratio ρ = R_cross/R_appose ≈ [hTetra]/[ribbon]·(σ_accrete/σ_appose), which must satisfy ρ ≳ 9 to hold glueball mass-fraction below 10% (patch 0863).
+**What a solution looks like:** A kinetic model (formation rate, growth law, cocoon-termination condition from eDP shielding + resource depletion, decay channel) yielding (a) the terminal glueball radius distribution and (b) the formation branching ratio vs the cross/hTetra-loop extended channels. Numerical targets from the DM side: cocoon-arrest radius and ρ as above.
+**Dependencies:** OPEN-SS-6 (glueball mass / closed-loop subgraph identification); OPEN-SS-5 (energy scale); the 2eDP:2qDP / hTetra edge-bond SSV potential (SF-2/SF-5, the DM make-or-break) for the accretion/apposition cross-sections.
+**Cross-sector connections:** OPEN-SS-6 (same closed-hDP-loop object, mass vs kinetics); DM-1 program (patches 0859–0863) as the primary consumer — sets the cocoon-arrest and ρ goalposts and the dilution-tax (patch 0862) the branching ratio must clear.
+**Current best lead:** Cocooning + local-resource depletion as the size-limiters (Thomas, 25 June 2026); chaperone-beats-apposition kinetics (high [hTetra] from zero-barrier hDP→hTetra conversion) as the suppression mechanism (patch 0863).
+**Paper(s):** consumer = DM-1; home sector = SS (SS-3 lineage via OPEN-SS-6).
+**Last updated:** 25 June 2026 (registered from the DM-1 0859–0863 arc).
+
+---
+
