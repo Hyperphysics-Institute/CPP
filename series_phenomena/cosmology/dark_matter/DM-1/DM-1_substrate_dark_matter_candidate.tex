@@ -1,0 +1,254 @@
+% ============================================================
+% DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate
+% from Charge-Neutral qDP / Hybrid-Tetrahedron Substrate Aggregates
+% Conscious Point Physics --- Dark-Matter / Cosmology Series
+% Promoted from series_phenomena/cosmology/dark_matter/DM-1_draft_manuscript.md
+% (Patches 0700-0855). Version history: documentation_suite/changelog-DM-1.md
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{parskip}
+\usepackage{mdframed}
+
+% Bibliography
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+\graphicspath{{../figures/}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+% --- Standard CPP macros ---
+\newcommand{\lP}{l_P}
+\newcommand{\tP}{t_P}
+\newcommand{\EP}{E_P}
+\newcommand{\SSV}{\mathrm{SSV}}
+\newcommand{\phig}{\varphi}          % golden ratio
+
+% --- Paper-specific macros ---
+\newcommand{\sigmaV}{\sigma_V}
+\newcommand{\smm}{\sigma_V/m}
+\newcommand{\mqDP}{m_{q\mathrm{DP}}}
+\newcommand{\rhoone}{\rho_1}
+\newcommand{\Msunpc}{M_\odot\,\mathrm{pc}^{-3}}
+\newcommand{\cmg}{\mathrm{cm^2/g}}
+\newcommand{\gradSSV}{\nabla(\Delta\SSV)}
+
+\title{\textbf{DM-1: A Velocity-Independent Self-Interacting Dark-Matter Candidate from Charge-Neutral qDP/hTetra Substrate Aggregates}\\[6pt]
+{\large Microphysics, a Positive Coring Discriminant, and an Honest Cosmological-Gate Status from the Conscious-Point Dipole Sea}\\[4pt]
+{\large \textbf{Conscious Point Physics --- Dark-Matter / Cosmology Series}}\\[4pt]
+{\Large \textbf{Version 1.0 --- Positive-Discriminant Candidate}}}
+
+\author{Thomas Lee Abshier, ND \and Claude Opus (Anthropic)}
+
+\date{\normalsize Hyperphysics Institute, Kalispell, Montana\\
+\url{https://hyperphysics.com}\\
+\href{mailto:drthomas007@protonmail.com}{drthomas007@protonmail.com}\\[4pt]
+\small OSF DOI: pending deposit; see \texttt{documentation\_suite/osf-deposit-DM-1.md} (parent project \texttt{10.17605/OSF.IO/JXE8D})}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose and test the hypothesis (CONJ-COSMO-1) that cosmological dark matter is composed of charge-neutral aggregates of quark-sector dipole pairs (qDPs) and hybrid tetrahedra (hTetra), the residual neutral structures of the Conscious-Point Dipole Sea. Working from the substrate, we (i)~derive the microphysics of the candidate---constituent mass $\mqDP \approx 264$~MeV, identical-boson statistics, and a residual two-gluon colour van~der~Waals interaction (depth $V_0 \approx 53$~MeV, range $\lambda \approx 1.3$~fm)---and show it is automatically collisionless at the bare level, diffuse (no bound nuggets), and stable against glueball decay; and (ii)~derive, from that interaction, a \emph{velocity-independent} self-interaction cross-section $\smm \approx 0.20~\cmg$ across the full dwarf-to-cluster velocity range. The velocity-independence is a robust kinematic consequence of the heavy constituent and short range, and is the opposite of the $\sigma/m \propto v^{-4}$ behaviour of light-mediator self-interacting dark matter (SIDM). This yields a positive, falsifiable signature: mild cores that are \emph{flat across mass scale}. Confronted with specific systems, $\smm \approx 0.20$ reproduces a classical-dSph core (Fornax, $r_{\rm core}\approx 0.3$~kpc) and sits at the edge of cluster bounds, but \textbf{under-predicts the largest LSB cores}---IC~2574's $\sim 8$~kpc core prefers $\sigma/m \approx 1$--$2$, above the $f$-band---a genuine tension at the high-velocity end that the flat prediction must own. The candidate is distinguished from collisionless cold dark matter ($\sigma/m = 0$) and from velocity-dependent SIDM. The absolute mass scale and the dark-to-baryon ratio are inherited as calibrated inputs (on par with $\Lambda$CDM); the cosmological identification rests on the Sea-gravitation structure (DM-2), traversed without kill and---after the discharge of its field-equation condition---now resting on a single open condition. We grade the result as a viable, microphysically-derived, falsifiable SIDM candidate with a specific signature: a positive discriminant, not yet a full identification.
+\end{abstract}
+
+% ============================================================
+\section{Introduction: the substrate, for the non-CPP reader}\label{sec:intro}
+% ============================================================
+Conscious Point Physics (CPP) derives Standard-Model structure from a discrete substrate: a 600-cell lattice of Conscious Points executing a Perceive--Compute--Displace cycle, whose collective excitations are dipole pairs (DPs) of the electromagnetic (eDP), hybrid (hDP), and quark (qDP) sectors. Three results of the programme are load-bearing here and are taken as established inputs. The quark sector and its mass scale are derived in SF-3 \citep{abshier2026sf3}; the strong sector---SU(3) colour, the eight gluons as hDP structures, confinement, and the string tension---in SF-5 \citep{abshier2026sf5}; and the gradient-sourced gravitational mechanism, in which curvature is sourced by $\gradSSV$ (the gradient of the net Space-Stress Vector), in SR-1 \citep{abshier2026sr1}. The emergent quantum dynamics that license a partial-wave scattering treatment of substrate excitations are established in QM-1 \citep{abshier2026qm1}. A reader unfamiliar with CPP may treat these as four cited derivations; this paper builds only on their outputs.
+
+The dark-matter conjecture (CONJ-COSMO-1) is economical: it posits \emph{no new field}. The dark sector is identified with structures the substrate already contains---charge-neutral (colour-singlet, electrically neutral) qDP/hTetra aggregates---and asks whether these reproduce the observed properties of dark matter.
+
+% ============================================================
+\section{The candidate: qDP/hTetra aggregates}\label{sec:candidate}
+% ============================================================
+\paragraph{Constituents.} From the DP-Sea composition the binding energies are $E_{e\mathrm{DP}} = 88$, $E_{h\mathrm{DP}} = 152$, $E_{q\mathrm{DP}} = 264$~MeV, with $E_{q\mathrm{DP}} = 3\,E_{e\mathrm{DP}}$ (colour factor 3) and $E_{h\mathrm{DP}} = \sqrt{E_{e\mathrm{DP}}\,E_{q\mathrm{DP}}}$. The constituent mass is $\mqDP \approx 264$~MeV (ratio-clean; the absolute scale is calibrated, \S\ref{sec:inputs}). The qCP carries fermionic zitterbewegung (spin-$\tfrac12$), so the qDP pair is a \textbf{boson} and the Sea soliton ground state is spin-0.
+
+\paragraph{Two masses, not to be conflated.} The \emph{constituent} mass $\mqDP \approx 264$~MeV---the scattering partners---sets the self-interaction $\sigma/m$ (\S\ref{sec:xsec}) and is ratio-clean. The \emph{aggregate-unit} mass $m_{\rm unit}$---one colour-singlet, electrically-neutral qDP/hTetra cluster---sets the number density $n_{\rm DM} = \rho_{\rm DM}/m_{\rm unit}$ and hence the abundance (\S\ref{sec:inputs}), and is not pinned. Since a lone qDP carries colour, the minimal neutral unit is at least hTetra-class; the range is $m_{\rm unit} \sim 0.26$~GeV (single-qDP scale) through $\sim 1$~GeV (hTetra) to heavier aggregates. This range does \emph{not} affect the cross-section result, which depends on the constituent mass; it propagates only to the abundance, which is not the binding constraint (\S\ref{sec:inputs}).
+
+% ============================================================
+\section{Survival of the cheap-kill gates}\label{sec:gates}
+% ============================================================
+The candidate passes the necessary (not sufficient) admission gates. It is automatically collisionless at the bare level (neutral aggregates, no long-range charge); it is diffuse, forming no bound ``nuggets'' that would over-collapse; it is stable against glueball decay (the residual interaction is too shallow to bind into glueballs); and it is cold by a wide margin---qDP/hTetra at the GeV scale are non-relativistic since the QCD era, $v/c \sim 10^{-4}$--$10^{-5}$ by matter-radiation equality, $\sim 10^{5}$--$10^{6}\times$ above the warm-dark-matter bound. These are the admission bar, not discriminating wins; the discriminants follow.
+
+% ============================================================
+\section{The residual interaction}\label{sec:residual}
+% ============================================================
+Between colour-singlet qDPs the residual is a \emph{two-gluon colour van~der~Waals} interaction: a colour singlet cannot emit a single gluon, so the leading exchange is two-gluon. The hDP is identified as the gluon in SF-5 \citep{abshier2026sf5}, which derives the eight gluons as hDP structures together with SU(3) colour and confinement from the tetrahedral cage. The potential has a hard core $r_c \approx 1.0$~fm (the eDP coat), an attractive Yukawa range $\lambda \approx 1.3$~fm, and a depth $V_0 = f\,E_{q\mathrm{DP}}$ with $E_{q\mathrm{DP}} = 264$~MeV from the quark-sector flagship \citep{abshier2026sf3}. The colour-polarizability estimate gives $f \approx 0.2$ (factor-3 band $f \in [0.07, 0.6]$), hence $V_0 \approx 53$~MeV.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{0849_residual_potential.png}
+\caption{The residual two-gluon colour van~der~Waals potential $V(r)$ (screened Lennard-Jones form: hard core $r_c \approx 1.0$~fm, well depth $V_0 \approx 53$~MeV, range $\lambda \approx 1.3$~fm), and the saturation-vs-confinement density panel showing glueball avoidance (the well is too shallow to bind, so aggregates stay diffuse). Verify: \texttt{scripts/0849\_residual\_potential.py}.}
+\label{fig:potential}
+\end{figure}
+
+% ============================================================
+\section{Discriminant I --- a velocity-independent self-interaction}\label{sec:xsec}
+% ============================================================
+\paragraph{Derivation.} Finite-energy partial-wave scattering of the \S\ref{sec:residual} potential ($\mqDP = 264$~MeV; the substrate grounding for treating this as a quantum-scattering problem is the emergent Schr\"odinger dynamics of QM-1 \citep{abshier2026qm1}). Across $v = 30$--$3000$~km/s, $k\lambda \approx 9\times10^{-5} \to 9\times10^{-3} \ll 1$, so scattering stays in the s-wave scattering-length limit; higher partial waves are negligible ($\delta_2/\delta_0 \sim (k\lambda)^4$). The proper SIDM viscosity cross-section for identical bosons is $\sigmaV = (4/3)\sigma_0$ ($\times 2$ boson symmetrization $\times\,\tfrac23$ viscosity weighting).
+
+\paragraph{Result.} $\smm \approx 0.20~\cmg$, \textbf{velocity-independent} to four digits over the entire astrophysical range. The flatness is a robust kinematic consequence of the \emph{heavy} constituent (264~MeV) and \emph{short} range (1.3~fm): the velocity scale for $\sigma$ to acquire structure is $v \sim c$. This is the \textbf{opposite} of light-mediator SIDM ($\sigma/m \propto v^{-4}$; \citealp{kaplinghat2016}).
+
+\paragraph{Magnitude band.} Flatness carries no $f$-dependence; magnitude does. Using $f \in [0.07, 0.6]$ (the factor-3 band on $f = V_0/E_{q\mathrm{DP}} = 0.20$), the implied $\smm$ spans roughly an order of magnitude. The upper band ($f \gtrsim 0.5$) sits at a Ramsauer dip, where $\smm$ is suppressed and non-monotonic, so the clean $\approx 0.20$ value is most robust for $f$ below $\sim 0.3$. Pinning $f$ (a strong-sector colour-polarizability calculation) collapses the band.
+
+% ============================================================
+\section{Discriminant II --- observable dwarf cores}\label{sec:cores}
+% ============================================================
+A self-interaction forms a core of central density $\sim \rhoone$, the one-scatter density at which one scatter occurs per particle over the halo age:
+\begin{equation}
+\rhoone(\sigma_{1D}) = \frac{1}{(\smm)\,\langle v_{\rm rel}\rangle\,t}, \qquad \langle v_{\rm rel}\rangle \approx 2.26\,\sigma_{1D}, \quad t = 10~\mathrm{Gyr}.
+\label{eq:rho1}
+\end{equation}
+At $\smm = 0.20$ this gives a representative dwarf core $r_{\rm core} \approx 0.27$~kpc (vs $\approx 0.81$~kpc for strong SIDM $\sigma/m = 1$)---a few-hundred-parsec, mild core. The cluster core is modest; $\smm = 0.20$ sits at the edge of current bounds (comfortable against looser $\sim 0.5$--$1$ limits, in mild tension with the tightest $\sim 0.1$).
+
+\paragraph{Specific confrontation (density).} We test the velocity-\emph{independent} $\smm \approx 0.20$ against two well-measured systems $\sim 5\times$ apart in velocity (Table~\ref{tab:density}). Both observed central densities sit a \emph{similar} factor ($\sim 3\times$) below $\rhoone(0.20)$, and---the discriminating point---the offset is flat across the $5\times$ span in $\sigma_{1D}$. A velocity-\emph{dependent} $\sigma/m$ rising toward dwarfs would drive the Fornax offset far above IC~2574's; that is not seen, so the central densities are consistent with the velocity-independent prediction and inconsistent with light-mediator SIDM's $v^{-4}$ trend.
+
+\begin{table}[H]
+\centering
+\caption{Density confrontation of $\smm = 0.20$ (velocity-independent) with two galaxies. Observed central densities: Fornax \citep{mateo1991, jardel2012}; IC~2574 \citep{deblok2008}. Verify: \texttt{scripts/0850\_specific\_dwarf\_fit.py}.}
+\label{tab:density}
+\begin{tabular}{lcccc}
+\toprule
+galaxy & $\sigma_{1D}$ (km/s) & $\rhoone$ predicted ($\Msunpc$) & $\rho_{\rm obs}$ central ($\Msunpc$) & pred/obs \\
+\midrule
+Fornax dSph (classical)   & 11 & 0.094 & 0.016--0.07 & $2.8\times$ \\
+IC~2574 (dwarf/LSB)       & 57 & 0.018 & $\approx 0.006$ & $3.1\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{0850_specific_dwarf_fit.png}
+\caption{The velocity-independent core-density prediction $\rhoone(\sigma_{1D})$ at $\smm = 0.20$ (with the $f$-band shaded) against the observed central densities of Fornax and IC~2574. Both sit a similar factor below the line---flat across $5\times$ in $\sigma$---supporting velocity-independence.}
+\label{fig:density}
+\end{figure}
+
+\paragraph{Specific confrontation (core size).} Inverting the NFW $r_1$ condition $\rho_{\rm NFW}(r_1) = \rhoone(\sigma/m)$ \citep{kaplinghat2016} turns the density test into a core-\emph{size} prediction (Fig.~\ref{fig:coresize}). For a Fornax-scale halo ($V_{\max}\approx 25$~km/s), $\smm = 0.20$ gives $r_1 \approx 0.32$~kpc---inside the observed $\lesssim 0.3$--$0.7$~kpc core \citep{goerdt2006}, with the $f$-band bracketing it: consistent. For IC~2574 ($V_{\max}\approx 80$~km/s, \citealp{oh2008}), $\smm = 0.20$ gives $r_1 \approx 1.8$~kpc, well below its observed $\sim 8$~kpc core, which requires $\sigma/m \approx 1.1$--$2.7~\cmg$---above the $f$-band. So the core-radius test, more constraining than the central-density test, surfaces a \textbf{genuine tension at the high-velocity end}: the largest LSB cores want more self-interaction than velocity-independent $0.20$ supplies, echoing the velocity-dependent $\sigma/m \sim 1$--$2$ that rotation-curve SIDM fits infer at galaxy scales \citep{kaplinghat2016}. Its escape routes are (i)~$f$ underestimated at galaxy scale (the colour-polarizability estimate carries a factor $\sim 3$), (ii)~residual velocity-dependence, or (iii)~IC~2574's low-concentration halo inflating the required $\sigma/m$. The estimate carries the halo-model ($c$, factor $\sim 2$) and $r_{\rm core}/r_1$ ($\mathcal{O}(1)$) systematics.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{0851_core_radius_vs_sigma.png}
+\caption{Predicted core scale $r_1$ vs $\sigma/m$ (NFW $r_1$ inversion) for Fornax- and IC~2574-scale haloes, with concentration bands. The $\smm = 0.20$ line and $f$-band are marked, with each galaxy's observed core as a horizontal band. Fornax's curve crosses its observed band at the $f$-band; IC~2574's large core sits well to the right ($\sigma/m \approx 1$--$3$). Verify: \texttt{scripts/0851\_core\_radius\_vs\_sigma.py}.}
+\label{fig:coresize}
+\end{figure}
+
+% ============================================================
+\section{Falsifiability}\label{sec:falsify}
+% ============================================================
+The signature is the \textbf{flatness}. If the cross-system data require $\sigma/m$ to \emph{fall} from $\sim 1$--$3$ (dwarfs) to $\sim 0.1$ (clusters)---i.e.\ velocity-dependent SIDM---the flat $\approx 0.20$ prediction fails on the dwarf side (too small for strong cores; it physically cannot rise at low $v$) and mildly on the cluster side. If the data are consistent with a flat $\sim 0.1$--$0.3$ across scales, CPP predicts it from first principles with no free knobs beyond $f$. This is a clean two-sided test.
+
+\textbf{Worked instance.} The dwarf-side failure mode is already partly realized: Fornax's small core is reproduced at $0.20$, but IC~2574's $\sim 8$~kpc core requires $\sigma/m \approx 1.1$--$2.7$, above the $f$-band (Fig.~\ref{fig:coresize}). The test is therefore live now. The candidate stands or falls on whether the \emph{largest} cores systematically demand a rising $\sigma/m$ (a clean falsification of velocity-independence), or whether IC~2574 is accommodated within the halo-model and $f$ uncertainties. The honest present status: consistent at dSph scale, in mild-to-moderate tension at the largest galaxy-scale cores, awaiting the $f$ pin-down to sharpen the verdict.
+
+% ============================================================
+\section{Inherited / calibrated inputs (stated, not hidden)}\label{sec:inputs}
+% ============================================================
+Two inputs are \emph{calibrated}, on par with $\Lambda$CDM, and the paper says so plainly.
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{Absolute mass scale.} Only the ratios (colour factor 3, geometric mean) are derived; the absolute DP/QCD scale is calibrated. Its first-principles derivation (``Project C'': $\Lambda_{\rm QCD}$ from $\lP$ and the sea strength via PSR saturation) is a companion in preparation.
+\item \textbf{Dark-to-baryon ratio $\Omega_{\rm DM}/\Omega_b \approx 5.36$.} Not derived; relocated to the primordial swirl amplitude. It is set by the unit-mass range (\S\ref{sec:candidate}) times the free population, and abundance is \emph{not} the binding constraint---the qDP/hTetra reservoir is vast---so this is a calibrated input, not a kill. The promising derivation is asymmetric dark matter via a shared Sea asymmetry, but it bottoms out in undeveloped sub-sectors (the DM-unit mass; CPP baryogenesis).
+\end{itemize}
+
+% ============================================================
+\section{The cosmological gate (DM-2 / Sea gravitation): status}\label{sec:gate}
+% ============================================================
+DM-2 asks: does the \emph{uniform} Sea stay gravitationally inert cosmologically while its \emph{inhomogeneities} gravitate as dark matter, with Friedmann recovery? The falsification-first sequence A$\to$D is traversed with no kill and is a \emph{conditional structure}, not a wide-open gate.
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{Step A (uniform Sea inert): survives.} This is Seeliger's paradox, resolved by Newtonian cosmology \citep{mccrea1934}; in CPP gravity sources from $\gradSSV$ \citep{abshier2026sr1}, so a uniform Sea is inert by construction.
+\item \textbf{Step B (Sea-vs-matter distinction): structurally resolved} by the single $\gradSSV$ mechanism (the Sea ground state is the reference level).
+\item \textbf{Step C ($\Lambda$ suppression): coefficient derived.} The $(\lP/R_H)^2$ scaling \emph{and} the $1/8\pi$ coefficient are derived from the substrate; the only residual choice is which horizon sets the infrared scale.
+\item \textbf{Step D (Friedmann recovery): conditional capstone.} Recovered, checks pass. Of its two original conditions, the field-equation reduction is now \emph{discharged}: the closure derives $G_{\mu\nu} = (8\pi G/c^4)\,T_{\mu\nu}[\mathrm{LSP}]$ at $\lambda = 16\pi G/c^4$ with zero new parameters, with the absolute-$|\SSV|$ monopole annihilated by 600-cell icosahedral symmetry (so the uniform ground state does not gravitate; the ground-state-exclusion falsifier is refuted). The gate now rests on a \textbf{single} remaining condition: the event-horizon infrared-scale selection.
+\end{itemize}
+The ``uniform Sea does not gravitate'' half is thus solidly in hand on a derived field equation; the gate is down to one condition and is materially less of a wall than a two-condition framing implies. The status is \emph{conditionally supported, not promoted to a derived result}, and this paper cites the DM-2 structure as conditional-but-traversed without claiming full identification. (The event-horizon condition overlaps the cosmological-constant infrared-scale work shared with the companion mass-scale derivation, and a future-event-horizon selection in the spirit of holographic dark energy \citep{li2004} is the leading route.)
+
+% ============================================================
+\section{Discussion and grade}\label{sec:grade}
+% ============================================================
+\textbf{What this paper establishes:} a derived, falsifiable, velocity-independent self-interacting dark-matter candidate with a positive signature ($\smm \approx 0.20~\cmg$, mild flat cores) that distinguishes it from both collisionless CDM and velocity-dependent SIDM. \textbf{What it does not establish:} the full cosmological identification---the calibrated mass scale and abundance (\S\ref{sec:inputs}) and the conditional Sea-gravitation gate (\S\ref{sec:gate}).
+
+\medskip
+\noindent\textbf{Honest grade.} A viable, microphysically-derived, falsifiable velocity-independent SIDM candidate with a specific qDP/hTetra signature---consistent at dwarf-spheroidal scale, in mild-to-moderate tension with the largest LSB cores (IC~2574; \S\ref{sec:cores}--\S\ref{sec:falsify}), and not yet a fully-derived identification (calibrated mass scale and abundance, \S\ref{sec:inputs}; conditional-but-traversed Sea-gravitation gate, \S\ref{sec:gate}).
+
+\medskip
+\noindent\textbf{Open directions.} Pinning $f$ (the companion mass-scale / colour-polarizability derivation) collapses the magnitude band and decides whether the high-velocity tension is absorbed or genuine; closing the single remaining Sea-gravitation condition (the event-horizon infrared-scale selection) would upgrade \S\ref{sec:gate} from conditional to derived; and an asymmetric-dark-matter derivation of the $\sim 5{:}1$ ratio would convert the abundance from calibrated to predicted. None gates the present result, which stands as a positive discriminant.
+
+% ============================================================
+\begin{thebibliography}{19}
+% ============================================================
+\bibitem[Abshier(2026a)]{abshier2026sf3}
+Abshier, T. L. (2026). \emph{SF-3: The Quark Sector from 600-Cell Geometry---Masses, Strong Coupling, Koide Phase, and Generation Count from a Single Calibration.} Hyperphysics Institute, Conscious Point Physics programme.
+
+\bibitem[Abshier(2026b)]{abshier2026sf5}
+Abshier, T. L. (2026). \emph{SF-5: Strong-Sector Unification from 600-Cell Geometry---SU(3) Colour, the Eight Gluons, Confinement, the String Tension, and the Light-Nucleus Binding Cascade from the Tetrahedral Cage.} Hyperphysics Institute, Conscious Point Physics programme.
+
+\bibitem[Abshier(2026c)]{abshier2026sr1}
+Abshier, T. L. (2026). \emph{SR-1: Mechanistic Derivation of Relativistic Effects via the Space Stress Vector (SSV) in the Dipole Sea.} Hyperphysics Institute, Conscious Point Physics programme.
+
+\bibitem[Abshier(2026d)]{abshier2026qm1}
+Abshier, T. L. (2026). \emph{QM-1: Emergence of the Schr\"odinger Equation from the 600-Cell Lattice.} Hyperphysics Institute, Conscious Point Physics programme.
+
+\bibitem[de Blok et al.(2008)]{deblok2008}
+de Blok, W. J. G., Walter, F., Brinks, E., Trachternach, C., Oh, S.-H., \& Kennicutt, R. C. (2008). \emph{High-Resolution Rotation Curves and Galaxy Mass Models from THINGS.} The Astronomical Journal, 136, 2648--2719.
+
+\bibitem[Goerdt et al.(2006)]{goerdt2006}
+Goerdt, T., Moore, B., Read, J. I., Stadel, J., \& Zemp, M. (2006). \emph{Does the Fornax dwarf spheroidal have a central cusp or core?} Monthly Notices of the Royal Astronomical Society, 368, 1073--1077.
+
+\bibitem[Jardel \& Gebhardt(2012)]{jardel2012}
+Jardel, J. R., \& Gebhardt, K. (2012). \emph{The Dark Matter Density Profile of the Fornax Dwarf.} The Astrophysical Journal, 746, 89.
+
+\bibitem[Kaplinghat et al.(2016)]{kaplinghat2016}
+Kaplinghat, M., Tulin, S., \& Yu, H.-B. (2016). \emph{Dark Matter Halos as Particle Colliders: A Unified Solution to Small-Scale Structure Puzzles from Dwarfs to Clusters.} Physical Review Letters, 116, 041302.
+
+\bibitem[Li(2004)]{li2004}
+Li, M. (2004). \emph{A Model of Holographic Dark Energy.} Physics Letters B, 603, 1--5.
+
+\bibitem[Mateo et al.(1991)]{mateo1991}
+Mateo, M., Olszewski, E., Welch, D. L., Fischer, P., \& Kunkel, W. (1991). \emph{A Kinematic Study of the Fornax Dwarf Spheroidal Galaxy.} The Astronomical Journal, 102, 914--926.
+
+\bibitem[McCrea \& Milne(1934)]{mccrea1934}
+McCrea, W. H., \& Milne, E. A. (1934). \emph{Newtonian Universes and the Curvature of Space.} The Quarterly Journal of Mathematics, os-5, 73--80.
+
+\bibitem[Oh et al.(2008)]{oh2008}
+Oh, S.-H., de Blok, W. J. G., Walter, F., Brinks, E., \& Kennicutt, R. C. (2008). \emph{High-Resolution Dark Matter Density Profiles of THINGS Dwarf Galaxies: Correcting for Noncircular Motions.} The Astronomical Journal, 136, 2761--2781.
+
+\end{thebibliography}
+
+% ============================================================
+\appendix
+\section{Numerical verification}\label{app:numerics}
+% ============================================================
+All paper-body numerical claims are reproduced by the scripts in
+\texttt{series\_phenomena/cosmology/dark\_matter/scripts/}:
+\begin{enumerate}[leftmargin=2em]
+\item the residual potential $V(r)$ and the saturation/glueball-avoidance panel (Fig.~\ref{fig:potential}): \texttt{0849\_residual\_potential.py};
+\item the density confrontation of Table~\ref{tab:density} and Fig.~\ref{fig:density} ($\rhoone$ from Eq.~\ref{eq:rho1} at each galaxy's velocity, with observed central densities tagged to source): \texttt{0850\_specific\_dwarf\_fit.py};
+\item the NFW $r_1$ inversion of Fig.~\ref{fig:coresize} ($r_1$ at $\smm = 0.20$ and the $\sigma/m$ each observed core requires): \texttt{0851\_core\_radius\_vs\_sigma.py}.
+\end{enumerate}
+
+\end{document}

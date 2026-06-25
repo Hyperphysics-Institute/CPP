@@ -87,7 +87,7 @@ Both observed central densities sit a *similar* factor (~3×) below ρ₁(0.20),
 5. **[DEP] §8 mass scale = Project C** (running in the 1000-series window).
 6. **[DEP] §9 DM-2 Λ-coefficient** — overlaps Project C's cosmological-constant/l_P work; coordinate, don't race.
 7. **[DONE, Patches 0848/0854] Intro CPP primer + citations.** §1 non-CPP-reader primer + 3 flagship cites (0848); body references now threaded (0854): §4 → SF-5 [`abshier2026sf5`] + SF-3 [`abshier2026sf3`]; §5 → QM-1 [`abshier2026qm1`]; §8 → Project C (companion, in prep — no key yet); §9 → SR-1 [`abshier2026sr1`]. Observational refs (Mateo+ 1991, Jardel & Gebhardt 2012, de Blok+ 2008, Goerdt+ 2006, Milne–McCrea 1934) named inline in §6/§9 — bib entries to be added at .tex promotion.
-8. **[DECISION — gates now met] Promotion to .tex + flagship checklist.** §6 confrontations in (0850/0851), f-band reconciled (0852), and DM-2's gate reported as conditional — now down to **one** condition (event-horizon selection; c08 discharged Patch 1161, §9 via 0855). All stated gates satisfied; awaiting go/no-go. Remaining mechanical step at promotion: observational-ref bib entries.
+8. **[DONE, Patch 0856] Promotion to .tex.** Publication-form `.tex` built at `DM-1/DM-1_substrate_dark_matter_candidate.tex` (EU-1 house style, embedded verified bibliography, 3 figures via `../figures/`, compiles clean 2-pass). This markdown draft remains the working source of truth; the `.tex` is the shippable artifact. Remaining: OSF deposit manifest (Thomas-action manual step).
 
 ## Provenance
 
