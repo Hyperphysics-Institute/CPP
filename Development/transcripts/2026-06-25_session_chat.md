@@ -31,3 +31,19 @@ Got it. These blocks are "capture blocks", and I just put them in bash and hit e
 Exactly right. Capturing a turn is purely a save-to-disk action in your Git Bash window; it doesn't change our conversation. Rule of thumb: paste the block when the turn had something worth keeping (a decision, reasoning, a result, your phrasing), skip it for routine back-and-forth. Saved turns accumulate in today's transcript; skipped ones don't; nothing breaks either way. One addition to the routine: run cap-push once at the end of a session to commit+push the day's transcript so it's safe off your machine and the fragmenter can reach it. Capture during the session, cap-push at the end. The capture system is now working, tested, and understood — plumbing chapter closed. DM-1 awaits at the v0.1-R re-scope: edge/rung-bond SSV potential as make-or-break for a persistence length in the G1 band (100–700 fm).
 
 
+
+### [11] TLA
+What if the machine dies, or I do a reboot, or forget to type "cap-push" at the end of the session is it gone? [included a successful cap-push output: 51677ac..1f56170, "pushed today's transcript."]
+
+### [12] WORKER
+The cap-push worked — transcript committed and pushed to GitHub, now safely off-machine and durable for this session. Three cases: (1) reboot/shutdown/closing terminal — SAFE, because cap writes a real file to disk that survives all of those; (2) forgetting cap-push — SAFE, the file persists locally, next push sweeps it up; (3) actual disk death/theft/corruption — the ONLY case where un-pushed captures are lost, same as any unsaved file. Fix is cadence: cap-push is cheap, idempotent, and runnable any time, not just session-end; push after anything you'd hate to lose. Optional belt-and-suspenders: make cap auto-push per capture, or push pending transcripts on every new shell startup. For a single machine, "push when you finish something meaningful" suffices.
+
+
+
+### [13] TLA
+Ok, that sounds pretty safe. Now, as for our 3 AM run that splits everything up from the transcript, will this text be available to work with?
+
+### [14] WORKER
+Yes, with a timing caveat and a scope correction. Timing: the 3 AM job's first step is git pull, so it sees whatever you've PUSHED. Today's transcript is pushed, so tonight's run will have it; anything captured but unpushed before 3 AM waits for the next night (not lost). Push before bed / push often. Scope correction: the 3 AM run does NOT do the intelligent sort into founder/reasoning/script/registry — that's an AI reading task needing a window. What 3 AM does is the mechanical half: confirm the transcript arrived + is well-formed, write the heartbeat, stage explicitly-marked items (@@FOUNDER, Registries_pending), and FLAG the transcript as awaiting the rich split. The actual fragmentation happens when you bring the transcript to a window (the bootup hook): it reads it and produces categorized fragment patches for review. Rhythm: 3 AM verifies + queues; a window does the intelligent split on request. Offered to demo the split now on today's turns 1–12.
+
+
