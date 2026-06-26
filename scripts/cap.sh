@@ -26,10 +26,12 @@ cap() {
     printf -- '---\nwindow-slug: %s\npatch: %s\nopened: %s\nformat: structured\n---\n\n' \
       "$slug" "${CAP_PATCH:-0}" "$(date '+%Y-%m-%d %H:%M %Z')" > "$f"
   fi
-  if [[ -r /dev/clipboard ]]; then
-    cat /dev/clipboard >> "$f"
+  if [[ ! -t 0 ]]; then
+    cat >> "$f"                       # stdin is a heredoc/pipe -> use it (paste-into-terminal)
+  elif [[ -r /dev/clipboard ]]; then
+    cat /dev/clipboard >> "$f"        # interactive `cap` -> pull from the Windows clipboard
   else
-    echo "cap: no /dev/clipboard here — paste the block, then press Ctrl-D:"
+    echo "cap: paste the block, then press Ctrl-D:"
     cat >> "$f"
   fi
   printf '\n' >> "$f"
