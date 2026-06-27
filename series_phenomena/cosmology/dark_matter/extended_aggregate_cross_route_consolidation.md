@@ -1,9 +1,9 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v3 (consolidation memo; integer-per-revision — rev1 = old v1.0/0871, rev2 = old v1.1/0872, **rev3 = this/0873**) · **Lane:** DM-local (08xx)
+**Version:** v4 (consolidation memo; integer-per-revision — rev1=0871, rev2=0872, rev3=0873, **rev4=this/0874**) · **Lane:** DM-local (08xx)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
-**Status of result:** Layer C. Cross route **VIABLE but NOT CLOSED**: beam stiffness confirmed favorable (panel 4/4 on Q2); the corona now reduces to **one SF number — V_surf/kT ≲ 0.5** (fork-(a) excavation, §7/§11: the density gives no margin).
+**Status of result:** Layer C. Cross route **VIABLE, MARGINAL on the corona, NOT CLOSED**: beam stiffness confirmed favorable (panel 4/4 on Q2); the SF-2/SF-5 calculation (0874) reduces the corona to **one substrate number — ρ_spine/ρ_Sea ≲ 1.15** (plausible under substrate uniformity, leaning safe, but not established).
 **Consolidates:** patches 0865 (G2), 0866 (G3), 0867 + 0869 (G1-strand), 0868 (d_f/morphology), 0870 (G1-cross), and the corona-closure dialogue (§7, uncomputed).
 **Does NOT do:** edit `DM-1_substrate_dark_matter_candidate.tex` (held at v0.1); register any ID; add any axiom; change any prior verdict. DM-1 stays v0.1.
 
@@ -65,7 +65,7 @@ The goalposts that gate them:
 | **G1 — single strand/loop** | 0867, 0869 | **KILLED (two kill-conditions)** | symmetric vertex family BUCKLES; alternating family docks at a robustly-large angle (~18°) → loops ~20 rungs, ~15× too small |
 | **morphology / d_f** | 0868 | **Channel-dependent** | monomer-fed ball d_f ≈ 2.5 (dilutes); only cluster-cluster coalescence of *extended* sub-units reaches d_f < 2 |
 | **G1 — 4-wide cross** | 0870 | **FAVORABLE (brackets good)** | bend stiffness is a BEAM property (bond-stretch × width²), over-determined by the same G2/0865 depth; sign-safe |
-| **cross corona** | §7, 0872–0873 | **Reduced to ONE SF number** | σ/m-safe iff the residual eDP→spine surface well V_surf/kT ≲ 0.5; density gives no margin (fork-(a)); plausible but SF-pending; NOT closed |
+| **cross corona** | §7, 0872–0874 | **Reduced to ONE substrate ratio** | σ/m-safe iff ρ_spine/ρ_Sea ≲ 1.15 (SF-2/SF-5 calc 0874: the eDP→spine well is an electric vdW set by the spine-vs-Sea density contrast); plausible (substrate uniformity), leaning safe, NOT closed |
 
 ## 5. The single strand is retired (0867, 0869)
 
@@ -150,6 +150,20 @@ below the bond window) — but **SF-pending**, and now the cross route's sole re
 three v1.0 physical arguments survive as the *reasons* a sub-thermal V_surf is plausible; the route is **not
 closed** until the SF residual-charge-geometry calculation returns V_surf/kT ≲ 0.5.
 
+**rev4 update (SF-2/SF-5 calculation, patch 0874) — V_surf computed; corona → one substrate ratio.** The
+bare Sea eDP carries no color, so it reaches the spine **only via the electric van der Waals channel**
+(≈(α_s/3α)² ≈ 190–520× weaker than the color channel). Its contact depth V₀_elec = f_color·(3α/α_s)²·E_eDP
+≈ **34–94 keV** (central ~57 keV) = ~2–5× kT_amb. The excess eDP rests at the well bottom (contact), so the
+*full* depth is in play (no standoff reduction) — and one **correction to 0872/0873**: the vdW is induced,
+hence **always attractive**, so the promiscuous-edge orientation cancellation does **not** apply (the excess
+is first-order; the safe bar tightens to V_surf/kT ≲ 0.3). The only suppression is the **net excess over the
+bulk Sea**: V_surf = V₀_elec·Δ, where Δ is the spine-vs-ambient-Sea density/vdW contrast (= the same
+ρ_Sea/ρ_spine as 0873). Because the vacuum Sea is *itself* dense (0873: ρ_Sea/ρ_spine ~ O(1)), Δ is plausibly
+small. Result: **corona σ/m-safe iff Δ ≲ 0.1–0.15, i.e. ρ_spine/ρ_Sea ≲ 1.15** — the nucleated spine at most
+~15% denser than the ambient vacuum Sea. **MARGINAL, leaning SAFE** (substrate uniformity makes ρ_spine/ρ_Sea
+~ 1 plausible) but **NOT closed** (ρ_spine/ρ_Sea ≳ 1.5 would dilute). The cross route's entire survival now
+rests on this single strong-sector / eDP-Sea packing number.
+
 ## 8. Honest epistemic grading
 
 | Claim | Grade | Provenance |
@@ -160,7 +174,7 @@ closed** until the SF residual-charge-geometry calculation returns V_surf/kT ≲
 | Monomer-fed ball d_f ≈ 2.5 (dilutes) | **Computed** | 0868 (validated estimator) |
 | Cluster-cluster of extended sub-units → d_f < 2 | **Cited external anchor, NOT in-house** | 0868 (DLCA ≈ 1.8 aggregation physics; in-house CCA toy did NOT converge; cluster-cluster leg is model-dependent — panel Q4) |
 | G2 depth in-window; G3 suppression over-determined | **Bracketed** | 0865, 0866 |
-| **Corona (§7): clean spine holds iff V_surf/kT ≲ 0.5** | **One explicit SF number, pending** | 0872 + 0873 — kinetic-trapping threshold computed (~60–90, slack); density prefactor G ~ O(1)–few (no margin; fork-(a) excavation), so the equilibrium-excess channel binds at V_surf/kT ≲ 0.5; **NOT closed** until the SF residual-charge-geometry returns V_surf |
+| **Corona (§7): clean spine holds iff ρ_spine/ρ_Sea ≲ 1.15** | **One substrate ratio, pending; leaning safe** | 0872–0874 — SF-2/SF-5 calc: eDP→spine is an electric vdW (no color), contact depth ~34–94 keV ~2–5× kT; net well V_surf = V₀_elec·Δ, Δ = spine-vs-Sea density contrast; safe iff Δ ≲ 0.1–0.15 ⇔ ρ_spine/ρ_Sea ≲ 1.15; orientation-cancellation retracted (vdW always attractive); **NOT closed** |
 
 ## 9. What remains open (SF / kinetics — not blocking this memo)
 
@@ -227,3 +241,14 @@ binding; trapping slack). Fork (a) did not retire half the risk; it **localized 
 one sharply-posed SF residual-charge-geometry calculation**. That calculation (V_surf, the promiscuous
 charge-cancelled screened ee-edge well to a bare eDP, vs kT) is the cross route's sole remaining load-bearing
 item, and the next step requires the SF-2/SF-5 charge geometry (the one DM-local-insufficient input).
+
+**rev4 update (SF-2/SF-5 calculation, patch 0874):** that calculation is done. The eDP→spine residual is an
+**electric van der Waals** well (the eDP has no color; the strong channel is ~190–520× stronger but
+inaccessible), contact depth ~34–94 keV ~2–5× kT_amb. The eDP rests at the well bottom, so the suppression is
+**not** standoff and **not** orientation cancellation (retracted: vdW is always attractive) — it is the
+**spine-vs-ambient-Sea density contrast Δ**. So the corona collapses to a single substrate ratio: **safe iff
+ρ_spine/ρ_Sea ≲ 1.15.** This is **plausible** (substrate uniformity — both are the dense 600-cell lattice, so a
+nucleated knot need not be much denser than its surroundings), and the route therefore **leans SAFE**, but it
+is **not established**; a strongly compressed spine would dilute. **Net: cross route viable, beam-stiffness
+confirmed, corona marginal-but-leaning-safe, hanging on ρ_spine/ρ_Sea ≲ 1.15 — a strong-sector / eDP-Sea
+packing question.** Reserved lemma stays unregistered.
