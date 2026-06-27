@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v10 (consolidation memo; integer-per-revision — rev1=0871 … rev9=0880, **rev10=this/0881**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v11 (consolidation memo; integer-per-revision — rev1=0871 … rev10=0881, **rev11=this/0882**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -415,3 +415,30 @@ core-size-vs-halo-mass relation to a definite curve** — the discriminating res
 equilibrium assumed (kinetic Smoluchowski+Hubble could shift the prefactor, not the log robustness); φ
 inherited (DM-1 §8). The width side (d_f=1, §12) and the length side (N_freeze, here) are now both closed
 to within the two external pins.
+
+---
+
+## 14. OPEN-COSMO-DM-3 — derivation drafted (0882, Layer B, pending panel)
+
+The corona retirement (§7) and LEMMA-DM-CROSS-ROUTE-1 rest on one named assumption,
+ASM-DM-CORONA-LOCALITY. Patch 0882 **drafts a derivation** of it (doc:
+`OPEN-COSMO-DM-3_derivation.md`; bounds: `code/0882`), closing the three escape routes the panel's
+RESTATE asked be excluded:
+
+- **(i) metastable single-particle states** — sub-critical (V₀/E_eDP ~ 6×10⁻⁴, ~1500× below the eDP
+  pair threshold) → virtual/reversible, in m_unit, no real population (supercritical-Z).
+- **(ii) collective surface modes** — matter modes gapped at E_eDP; a weak well shifts them ~V₀²/E_eDP
+  ~ 4×10⁻⁷ of the gap (cannot soften); the only *gapless* mode is the photon, which is **charge-sourced**
+  and so decouples from the **neutral** Cross-Rod surface at k→0 (genesis 0880). No soft channel.
+- **(iii) induced condensates** — BCS-suppressed, Δ ~ E_eDP·exp(−E_eDP/V₀) ~ 10⁻⁴⁰⁰…10⁻¹¹⁰⁰ →
+  non-extensive (weak coupling is implied by V₀ ≪ E_eDP itself).
+
+The load-bearing step is the **surface neutrality** the genesis supplied: it removes the only gapless
+channel, confining the Sea's response to the gapped matter sector where a sub-threshold well is
+perturbative and every alternative is forbidden or exponentially suppressed.
+
+**Grade: Layer B** (standard many-body arguments on grounded substrate properties — the E_eDP matter
+gap, the charge-sourced gapless photon, the neutral surface). **Residual (B→A):** full 600-cell
+surface-mode formalization (no anomalous sub-gap *strong-coupling* channel; self-limiting). **Disposition:**
+recommend four-model panel ratification (CONV-001); if confirmed, **LEMMA-DM-CROSS-ROUTE-1 lifts to
+unconditional**. Until then: pending panel, lemma stays conditional, no swarm/verdict change.
