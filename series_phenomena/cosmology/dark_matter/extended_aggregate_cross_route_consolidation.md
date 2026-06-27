@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v9 (consolidation memo; integer-per-revision — rev1=0871 … rev8=0878, **rev9=this/0880**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v10 (consolidation memo; integer-per-revision — rev1=0871 … rev9=0880, **rev10=this/0881**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -227,8 +227,10 @@ unproven assertion dressed as a closure — and no remaining computed kill-risk.
   **automatic velocity split** from the fragmentation ledger (cluster fragments → σ/m ~ 0.1–1 collisionless;
   dwarf retains → cores) — a genuine discriminator vs the monomer's v-independent 0.11–0.20. Remaining knob:
   the equilibrium grown size N_dwarf(v) (growth-vs-fragmentation kinetics), which must self-limit to ~tens of
-  rungs — a falsifiable prediction (N_dwarf ~ hundreds overshoots). Pinning it → a hard core-size-vs-halo-mass
-  relation (the path to a swarm-countable result).
+  rungs — a falsifiable prediction (N_dwarf ~ hundreds overshoots). **Now worked (§13/0881): N_dwarf = N_freeze
+  (dwarfs do not reprocess), and the band-required N fixes E_bond/kT_form ~ 24–41, which lands E_bond inside
+  the fragmentation window for kT_form ≲ 19 keV — four constraints close. Residual single-number step is
+  external: pin E_bond (SF-2/SF-5) or kT_form (relic/epoch).**
 - **The cross-bond coupling strength** (assumed present = the cross definition; at long wavelength any
   nonzero coupling gives the rigid-beam ℓ_p), the realized **width** (sets c_geom), and the precise
   **E_bond/kT** (sets whether the "+" cross clears 300 at the floor or needs ~1.5× it).
@@ -383,3 +385,33 @@ freeze-out overshoots or thickens — both miss the band. Which route dominates 
 vs Route 2's fold-vs-saturate race) sets the relic abundance and the glueball contamination. This is the same
 **N_dwarf(v) kinetics** as §9/0878, now with the width side mechanistically closed and the freeze-out target
 sharpened: early, thin, N ~ tens — falsifiable.
+
+---
+
+## 13. Freeze-out kinetics — N_dwarf(v) over-determined (0881, Layer C)
+
+0878 left N_dwarf a bracket (5–60) and named the equilibrium grown size the deciding knob; §12 sharpened it
+to "early, thin, N ~ tens." This section works it (code/0881).
+
+**N_dwarf = N_freeze (dwarfs do not reprocess).** A dwarf collision deposits ~0.78 keV — below the bond
+window — so it neither fragments nor regrows the rod; the dwarf-resident rod keeps its primordial freeze-out
+size. Clusters (1.95 MeV > E_bond) fragment N_freeze → collisionless. So the question is just N_freeze.
+
+**N_freeze from reversible (isodesmic) aggregation:** <N> = √(Kφ), K = exp(E_bond/kT_form), φ = element
+volume fraction ⇒ N_freeze ~ √φ·exp(E_bond/2kT_form). The forward map is exponentially sensitive (N not
+absolutely predicted), but the **inverse** map E_bond/kT_form = 2ln(N/√φ) is only *logarithmic* in φ.
+
+**Over-determination (the result).** φ (cosmological, bracketed) ~ 7×10⁻¹⁵…7×10⁻¹⁰ ⇒ band-required
+N ~ 5–60 fixes **E_bond/kT_form ~ 24–41** (robust). For kT_form ~ 1–19 keV that puts E_bond ~ 0.02–0.78 MeV
+— **inside the independently required fragmentation window [0.78 keV, 1.95 MeV]** everywhere. So **four
+constraints close on one point** — band magnitude (§2/0878), aggregation freeze-out, the fragmentation
+window (0860), and cluster-collisionless — at E_bond ~ 0.05–1 MeV, kT_form ~ few–19 keV, N_dwarf ~ tens,
+with no fine-tuning beyond E_bond/kT_form ~ 24–41.
+
+**Honest status / falsifiable handle.** Not yet a single number (forward sensitivity ⇒ N pinned to "tens"
+only as a consistency). SF-2/SF-5 pins E_bond and the relic/epoch calc pins kT_form; if E_bond/kT_form falls
+outside ~24–41 the band is missed. **Pinning either collapses N_dwarf to a single value and the
+core-size-vs-halo-mass relation to a definite curve** — the discriminating result. Caveat: isodesmic
+equilibrium assumed (kinetic Smoluchowski+Hubble could shift the prefactor, not the log robustness); φ
+inherited (DM-1 §8). The width side (d_f=1, §12) and the length side (N_freeze, here) are now both closed
+to within the two external pins.
