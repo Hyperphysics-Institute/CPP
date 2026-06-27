@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v6 (consolidation memo; integer-per-revision — rev1=0871 … rev5=0875, **rev6=this/0876**) · **Lane:** DM-local (08xx)
+**Version:** v7 (consolidation memo; integer-per-revision — rev1=0871 … rev6=0876, **rev7=this/0877**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -316,3 +316,12 @@ named candidate theorem), and the per-N bookkeeping is softened to its narrower 
 ratified; cross route viable; corona retired conditional on one named, physically-standard assumption; no
 remaining computed kill-risk. LEMMA-DM-CROSS-ROUTE-1 is ready for registration as a conditional result**
 pending Thomas sign-off + CLONE-FIRST registry grep.
+
+**rev7 update (patch 0877) — registered.** With Thomas's sign-off and a CLONE-FIRST registry grep (no
+collision), **LEMMA-DM-CROSS-ROUTE-1** and its paired gate **OPEN-COSMO-DM-3 (ASM-DM-CORONA-LOCALITY)** are
+registered in `frontier_sectors/CONJ.md`, following the LEMMA-DM-CONSIST-1 precedent: finding-level, **NO
+THEO, no `theorem-registry.md` row, no swarm-count change**, and **does NOT move CONJ-COSMO-1** (no verdict
+change). The lemma is CONDITIONAL on OPEN-COSMO-DM-3; deriving that assumption from the substrate dynamics
+would lift it to unconditional. This closes the extended-aggregate goalpost campaign at its natural endpoint:
+the 4-wide cross is the σ/m-viable DM morphology, conditional on one named, panel-ratified substrate
+assumption. DM-1 remains at v0.1.
