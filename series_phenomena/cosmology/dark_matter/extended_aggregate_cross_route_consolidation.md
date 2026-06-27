@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v13 (consolidation memo; integer-per-revision — rev1=0871 … rev12=0883, **rev13=this/0884**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v14 (consolidation memo; integer-per-revision — rev1=0871 … rev13=0884, **rev14=this/0885**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -466,3 +466,21 @@ stronger, or a 1-in-1557 unforced fine-tuning). **Clean gap → corona dead at t
 mode — exactly the level the dissent worried it might not reach. **Residual:** full 600-cell lattice numerics
 (a confirmation formality). **Disposition:** LEMMA-DM-CROSS-ROUTE-1 lift now PENDING a focused panel re-review
 of §6 (esp. the dissenter); not lifted unilaterally. Memo → v13.
+
+**[Patch 0885 — RE-REVIEW RATIFIED; the cross route is off its last hedge.]** The focused re-review of §6
+returned **4/4 CONFIRM on the surface-mode closure and 4/4 CONFIRM to lift**, including the original dissenter
+(ChatGPT), who states §6 resolves the exact objection it raised. Registry crossing made: **OPEN-COSMO-DM-3
+CLOSED (derived, Layer B); LEMMA-DM-CROSS-ROUTE-1 LIFTED to UNCONDITIONAL** (CONJ.md). Folded the dissenter's
+three wording precisions even on a CONFIRM (the (B) "CPP carries no such bosonic-SPT structure" framing; "the
+corona is dead" → "within the CPP EFT, no mechanism supports persistent neutral low-energy surface modes"; the
+internal-logic-vs-assumptions caveat). **Honest scope:** the panel ratified the derivation's *internal logic
+within the CPP EFT / spectrum / topology assumptions* — not the correctness of those assumptions, which is
+separate validation. The lemma stays finding-level (NO THEO, no swarm-count change); **CONJ-COSMO-1 stays
+NOT-confirmed** (σ/m-viability is not a discriminating DM identification). Full 600-cell lattice numerics are
+now optional Layer-A polish. DM-1 hedge dropped (R2 + §7) but held at v0.1 — promotion to v1.0 is a separate
+call. Memo → v14.
+
+**State of the cross route (end of arc):** genesis (attractor) ✓ · width d_f=1 (mechanism) ✓ · length
+N_freeze (over-determined) ✓ · σ/m reaches band, velocity-dependent ✓ · corona retired **unconditionally** ✓.
+Remaining: the *single* σ/m number (external pin of E_bond or kT_form) → a hard core-size-vs-halo-mass curve;
+and the element-level cube-vs-rung re-derivation (footnote check). Neither gates the lemma.

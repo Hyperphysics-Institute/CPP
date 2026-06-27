@@ -1,6 +1,6 @@
 # OPEN-COSMO-DM-3 — Sub-threshold Substrate-Locality: a derivation
 
-**Status:** DERIVATION DRAFTED (0882) → PANEL-REVIEWED & FIXES FOLDED (0883) → **RESIDUAL ADDRESSED (Patch 0884, 27 June 2026): the surface-mode spectrum closes the near-zero-charge-neutral-mode kill route (§6) — no domain wall, no topological protection in the gapped bosonic neutral sector, and a weak neutral boundary binds only shallow modes near the gap top (lowest charge-neutral surface mode ≈ E_eDP = 88 MeV ≫ V₀ ~ 50 keV).** Panel history: 3 CONFIRM-and-lift + 1 RESTATE-with-fix (the RESTATE honored, not outvoted). **Result: ASM-DM-CORONA-LOCALITY holds at the EFT + topological-structure level; LEMMA-DM-CROSS-ROUTE-1 lift is now PENDING a focused panel re-review of §6 (esp. the dissenter) — not lifted unilaterally.** **Lane:** COSMO / SR. DM-1 stays v0.1.
+**Status:** DERIVATION DRAFTED (0882) → PANEL-REVIEWED & FIXES FOLDED (0883) → RESIDUAL ADDRESSED (0884) → **RE-REVIEW RATIFIED 4/4 (Patch 0885, 27 June 2026): the focused re-review returned 4/4 CONFIRM on §6 and 4/4 CONFIRM to lift, including the original dissenter, who states §6 resolves the exact objection it raised. OPEN-COSMO-DM-3 is CLOSED (derived, Layer B); LEMMA-DM-CROSS-ROUTE-1 is LIFTED to UNCONDITIONAL.** Scope (honest, per the dissenter): the panel ratified the derivation's *internal logic* within the CPP EFT / excitation-spectrum / topological-characterization assumptions — whether those assumptions are ultimately correct is separate validation. Full 600-cell lattice numerics remain optional Layer-A polish. **Lane:** COSMO / SR. DM-1 stays v0.1.
 
 ---
 
@@ -121,9 +121,11 @@ sign change across the surface ⇒ no Jackiw-Rebbi zero mode.
 
 **(B) Chiral/topological protection — EXCLUDED (generic).** A gapped **bosonic** mode has no chiral symmetry
 and no bulk-boundary protected zero mode (unlike a gapped Dirac fermion; a protected one would require a
-nontrivial bosonic-SPT structure the neutral sector does not carry). The only protected/gapless structure in
+nontrivial bosonic-SPT structure). The only protected/gapless structure in
 the Sea is the **photon — charge-sourced** — and the neutral surface decouples from it at k→0. The protection
-lives in the charge channel, not the neutral channel the surface couples to.
+lives in the charge channel, not the neutral channel the surface couples to. (Wording, per panel: the claim is
+that *CPP possesses no such bosonic-SPT structure in the neutral sector* — not that exotic bosonic topological
+order is impossible in principle; the former is the stronger, falsifiable statement.)
 
 **(C) Accidental fine-tuning — EXCLUDED (non-generic).** This is the decisive quantitative point, and it
 closes via the *same* sub-threshold logic as the single-particle case, now at the collective level: a **weak**
@@ -135,14 +137,22 @@ attractive surface (V₀ ≪ Δ) binds a surface mode only **shallowly below the
 **Conclusion.** The lowest charge-neutral surface mode sits at ~E_eDP = 88 MeV — a **clean gap ≫ V₀ ~ 50 keV**.
 There is no near-zero charge-neutral surface mode for the weak, neutral, same-vacuum spine boundary. The
 RESTATE's kill route is closed: a near-zero mode cannot be *produced* by a weak boundary (deep binding
-required) and is not *protected* into existence (no domain wall; gapped bosonic neutral sector). So
-ASM-DM-CORONA-LOCALITY holds at the EFT + topological-structure level, and the corona is dead.
+required) and is not *protected* into existence (no domain wall; gapped bosonic neutral sector). So,
+**within the CPP EFT, the corona is excluded** — there is no mechanism supporting a persistent neutral
+low-energy surface mode (the precise scientific statement, distinct from an absolute impossibility) — and
+ASM-DM-CORONA-LOCALITY holds at the EFT + topological-structure level.
 
 **Residual after 0884 (honest):** the effective field theory + topological-triviality arguments are generic,
 so the remaining step is a full **600-cell lattice numerical diagonalization** to confirm no lattice-specific
 near-zero charge-neutral surface mode — a *confirmation formality*, not a live physical worry (a lattice mode
 near zero would still need deep binding or a protection the neutral bosonic sector lacks).
 
-**Disposition.** The specific objection that blocked the lift is now addressed by a calculation. **Recommend a
-focused panel re-review of §6 (especially the original dissenter) to ratify; on confirmation,
-LEMMA-DM-CROSS-ROUTE-1 lifts from CONDITIONAL to unconditional.** Not lifted unilaterally.
+**Disposition (RATIFIED).** The focused re-review returned **4/4 CONFIRM on §6 and 4/4 CONFIRM to lift**,
+including the original dissenter (who states §6 resolves the exact objection it raised). Accordingly:
+**OPEN-COSMO-DM-3 is CLOSED (derived, Layer B); LEMMA-DM-CROSS-ROUTE-1 is LIFTED from CONDITIONAL to
+UNCONDITIONAL** (CONJ.md, Patch 0885). The lemma stays finding-level (no THEO, no swarm-count change), and
+CONJ-COSMO-1 stays NOT-confirmed (σ/m-viability is not a discriminating DM identification). **Honest scope:**
+this ratifies the derivation's *internal logic within the CPP assumptions* (the EFT description, the
+excitation spectrum, the topological characterization); whether those assumptions are ultimately correct is a
+separate validation question. The full 600-cell lattice diagonalization remains available as optional Layer-A
+polish (a robustness check, no longer a gate).
