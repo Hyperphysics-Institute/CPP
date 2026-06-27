@@ -1,9 +1,9 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v1.0 (consolidation memo) · **Patch:** 0871 · **Lane:** DM-local (08xx)
+**Version:** v1.1 (consolidation memo; panel returns incorporated — see §11) · **Patches:** 0871 (v1.0), 0872 (corona bound) · **Lane:** DM-local (08xx)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
-**Proposed ID (RESERVED, not registered here):** `LEMMA-DM-CROSS-ROUTE-1` — registration pending Thomas sign-off + panel pass
-**Status of result:** Layer C (bracketed / physical-reasoning), **one goalpost now brackets FAVORABLY**; see §8 grading.
+**Proposed ID (RESERVED, NOT registered — Q1 not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending the corona bound closing favorably + Thomas sign-off
+**Status of result:** Layer C. Cross route **VIABLE but NOT CLOSED**: beam stiffness confirmed favorable (panel 4/4 on Q2); the corona is **bounded and conditional**, not closed (panel 3/4 RESTATE-with-fix on Q1, incorporated in §7).
 **Consolidates:** patches 0865 (G2), 0866 (G3), 0867 + 0869 (G1-strand), 0868 (d_f/morphology), 0870 (G1-cross), and the corona-closure dialogue (§7, uncomputed).
 **Does NOT do:** edit `DM-1_substrate_dark_matter_candidate.tex` (held at v0.1); register any ID; add any axiom; change any prior verdict. DM-1 stays v0.1.
 
@@ -19,9 +19,11 @@ and the AI review panel can reference one synthesis rather than re-litigating si
 
 The headline change since the last consolidation (1200, the point-particle survival memo): the
 **4-wide cross** has emerged as a morphology whose stiffness brackets *favorably* — the first goalpost
-in this campaign that is not a kill-risk — and a physical-reasoning argument (§7) closes the one
-remaining dilution risk on it. That corona-closure argument is **uncomputed** and is the principal
-thing this memo asks the panel to attack.
+in this campaign that is not a kill-risk (panel-confirmed 4/4, §11) — while the one remaining dilution risk
+on it, the spine corona, has been examined by the panel and **downgraded from a claimed closure to an
+explicit conditional bound** (§7, patch 0872). The route is therefore **viable but not closed**: it now
+rests on two SF/substrate numbers (V_surf/kT and ρ_Sea/ρ_spine), and the reserved lemma stays unregistered
+until those close the corona favorably.
 
 ## 2. The σ/m problem and the one number that governs every morphology
 
@@ -63,7 +65,7 @@ The goalposts that gate them:
 | **G1 — single strand/loop** | 0867, 0869 | **KILLED (two kill-conditions)** | symmetric vertex family BUCKLES; alternating family docks at a robustly-large angle (~18°) → loops ~20 rungs, ~15× too small |
 | **morphology / d_f** | 0868 | **Channel-dependent** | monomer-fed ball d_f ≈ 2.5 (dilutes); only cluster-cluster coalescence of *extended* sub-units reaches d_f < 2 |
 | **G1 — 4-wide cross** | 0870 | **FAVORABLE (brackets good)** | bend stiffness is a BEAM property (bond-stretch × width²), over-determined by the same G2/0865 depth; sign-safe |
-| **cross corona** | §7 (uncomputed) | **Closed by reasoning** | the eDP coat is bulk-Sea thermal texture, not bound mass → no σ/m-diluting accumulation |
+| **cross corona** | §7, 0872 | **Bounded / CONDITIONAL** (panel RESTATE-with-fix) | safe iff the residual eDP→spine surface potential V_surf/kT is small AND ρ_Sea/ρ_spine is modest — both SF/substrate-pending; NOT closed |
 
 ## 5. The single strand is retired (0867, 0869)
 
@@ -77,8 +79,11 @@ in the bend coordinate — no external ceiling. Two sign-families exhaust the 2+
   by any charge magnitude or lever.** A loop closes at N₀ = 360°/θ₀ → **~20 rungs, ~15× too small** for the
   300–2500 band, and resists tuning into it.
 
-**Conclusion:** the strand-that-loops is not the candidate. Both families miss a band-sized loop. This is
-a genuine negative result, recorded as two kill-conditions, not a parameter to be tuned.
+**Conclusion (scope per panel Q3):** the **currently-defined 2+,2− strand morphology** is killed — both
+families miss a band-sized loop, and recovering one would require a *qualitatively different vertex design*
+(a different fold-angle family), **not** a parameter tweak of charge magnitude or lever. Recorded as two
+kill-conditions. (We do not claim every conceivable strand-like topology is excluded — only that the
+modeled family, and any continuous deformation of it, is dead.)
 
 ## 6. The 4-wide cross brackets favorably (0870) — the structural win
 
@@ -105,34 +110,35 @@ Key consequences (all in 0870):
   L > ℓ_p → semiflexible, d_f ~ 1–1.5, σ/m still grows). And it is the **extended sub-unit** whose
   cluster-cluster coalescence gives the d_f < 2 ball (0868) — so the cross unifies both routes.
 
-## 7. The corona closure — load-bearing and UNCOMPUTED (the panel's main target)
+## 7. The corona — BOUNDED and CONDITIONAL (Q1; panel RESTATE-with-fix incorporated, patch 0872)
 
-The one residual risk on the cross: the qe-branching that builds the amorphous mass could decorate the
-spine with a proliferating corona, burying the clean rod and pushing it toward the diluting d_f ≈ 2.5 blob
-(0868). Three independent arguments close this — **all by physical reasoning, none computed**:
+The risk: the qe-branching that builds the amorphous mass could decorate the spine with a corona,
+burying the clean rod toward the diluting d_f ≈ 2.5 blob (0868). The v1.0 memo argued this was *closed*
+because the eDP coat is bulk-Sea thermal texture at the same chemical potential as the bulk. **The panel
+(3/4: ChatGPT, Gemini, Copilot) correctly judged that overreach:** equal bulk chemical potential rules out
+*unlimited* deposition, but NOT a finite surface excess or a kinetically trapped layer, unless the spine's
+residual *surface* potential well **V_surf** is actually bounded. "Promiscuous ee-edge, no deep specific
+bond" is not "zero attractive well." Patch 0872 makes the bound explicit. The coat dilutes σ/m only via:
 
-1. **No sheet (geometry).** The cross's 4-fold transverse symmetry sends side-branches into four different
-   transverse directions; they populate 3D around the axis and cannot flatten into a 2D sheet. (Kills the
-   sheet → d_f = 2 mode.)
-2. **No proliferation driver (thermodynamics/availability).** The spine presents a *promiscuous* ee-edge
-   with no strong preference among ee/qq/qe/eq; there is no energetic driver recruiting hTetras onto it.
-   The corona is therefore not a runaway branching cascade but an availability-limited coating — starved by
-   the same low Sea-vs-relic hTetra concentration that over-determined G3 (0866).
-3. **No accumulation (the coat is bulk Sea, not bound mass).** The eDP "buffy coat" around the cross is the
-   *same transient interbonding* that fills the entire DP Sea — eDPs forming momentary chains/aggregates in
-   collision-free gaps, then randomizing and dispersing. The kT energetics at the coat are identical to
-   un-nucleated space; the coat transitions to bulk-Sea pattern statistics within a thin shell. There is no
-   binding-energy minimum, hence **no reservoir for slow Gyr-scale deposition** — the coat cannot pile up as
-   σ/m-diluting dead weight, because it is at the same chemical potential as the bulk on both sides.
+- **Channel 1 — kinetic trapping** (the "slow Gyr deposition" worry). A coat eDP escapes by thermal
+  activation, τ_res = τ_0·exp(V_surf/kT); it is diluting dead mass only if τ_res ≳ t_halo. Threshold
+  (V_surf/kT)\*_trap = ln(t_halo/τ_0) = **60–93** for any plausible τ_0 ∈ [10⁻²³,10⁻¹⁰] s. With the 0865
+  floor E_bond/kT ≳ 100, trapping requires **V_surf ≳ 0.6–0.9 E_bond** — i.e. a bare ambient eDP would
+  have to bind to the spine at 60–90% of a *full hTetra bond depth*. Robustly bounded; the promiscuous edge
+  argues V_surf ≪ E_bond, so this channel is plausibly safe — now as an explicit bound, not an assertion.
+- **Channel 2 — equilibrium surface excess** (the "wetting layer" worry). m_coat/m_spine =
+  G·(⟨e^(V_surf/kT)⟩−1), with G ~ (ρ_Sea/ρ_spine)·(perimeter·λ_D/A_spine). Orientation cancellation on the
+  promiscuous edge makes the bracket **second-order**, ⟨e^(V/kT)⟩ → cosh(V/kT) ≈ 1 + (1/2)(V/kT)², so the
+  excess is suppressed; but the prefactor **G is SF/substrate-pending** (needs ρ_Sea/ρ_spine and λ_D). Safe
+  for G ≲ 0.4 (ρ_Sea/ρ_spine ≲ 0.1) and V_surf/kT ≲ 1; larger ρ_Sea/ρ_spine is the failure corner.
 
-**Why this is the right *kind* of argument:** it is *structural*, like the 0870 beam-stiffness result —
-the spine stays clean not by a lucky number but because the corona is bulk-Sea texture, not deposited mass.
-The denominator of σ/m stays the spine; **σ/m ∝ L survives.**
-
-**Why it is flagged, not asserted:** every link in §7 is physical reasoning, not a computed result. The
-three are individually plausible and mutually consistent, which is why we trust the picture — but the
-campaign's discipline grades such chains Layer C and lets the panel try to break them. **This is the claim
-the panel is explicitly asked to attack** (§10, Q1).
+**Honest status (the fix delivered):** §7 is downgraded from "closed by reasoning" to an **explicit
+conditional bound** — the clean-spine result HOLDS iff **(1)** V_surf/kT ≲ 60–90 (no Gyr trapping; robust,
+computed) AND **(2)** G·(cosh(V_surf/kT)−1) ≪ 1 (thin equilibrium excess; needs the SF prefactor G). The
+three physical arguments of v1.0 (4-fold symmetry → no 2D sheet; promiscuous edge → no recruitment driver;
+bulk-Sea texture → no deep well) remain the *reasons* small V_surf/kT and modest G are **plausible**, but
+they are no longer claimed as a closure. **Two explicit SF/substrate numbers — V_surf/kT and ρ_Sea/ρ_spine —
+now decide the cross route.** This is the panel's requested fix: BOUNDED and PLAUSIBLE, not CLOSED.
 
 ## 8. Honest epistemic grading
 
@@ -140,11 +146,11 @@ the panel is explicitly asked to attack** (§10, Q1).
 |---|---|---|
 | σ/m = (R_g/a)^(2−d_f) scaling; d_f = 2 dilution threshold | **Computed/derived** | 0868 (estimator validated: line→1.0, disk→2.0, cube→2.8) |
 | Strand symmetric-family buckling; alternating docking ~18° not tunable | **Computed** | 0867, 0869 (parameter scans) |
-| Cross ℓ_p = c_geom·(E_bond/kT); over-determined by 0865; sign-safe | **Computed + bracketed** | 0870 (beam model; E_bond/kT bracket from 0865) |
+| Cross ℓ_p = c_geom·(E_bond/kT); over-determined by 0865; sign-safe | **Computed + bracketed** | 0870 (beam model; c_geom from the cross-section second moment — presented as a bracket per panel Q2; assumes no soft inter-strand shear/slip mode) |
 | Monomer-fed ball d_f ≈ 2.5 (dilutes) | **Computed** | 0868 (validated estimator) |
-| Cluster-cluster of extended sub-units → d_f < 2 | **Cited, not in-house** | 0868 (DLCA ≈ 1.8 from aggregation physics; in-house CCA toy did NOT converge) |
+| Cluster-cluster of extended sub-units → d_f < 2 | **Cited external anchor, NOT in-house** | 0868 (DLCA ≈ 1.8 aggregation physics; in-house CCA toy did NOT converge; cluster-cluster leg is model-dependent — panel Q4) |
 | G2 depth in-window; G3 suppression over-determined | **Bracketed** | 0865, 0866 |
-| **Corona closure (§7): clean spine, σ/m ∝ L survives** | **Physical-reasoning, UNCOMPUTED** | §7 dialogue — **load-bearing; panel target** |
+| **Corona (§7): clean spine holds iff V_surf/kT ≲ 60–90 AND G·(cosh(V_surf/kT)−1) ≪ 1** | **Explicit conditional bound, SF/substrate-pending** | 0872 — kinetic-trapping threshold computed; equilibrium-excess prefactor G pending; **NOT closed (panel Q1)** |
 
 ## 9. What remains open (SF / kinetics — not blocking this memo)
 
@@ -182,3 +188,24 @@ if KILL. The cross route stands or falls primarily on Q1.
 ---
 
 *Layer C consolidation. No DM-1 `.tex` edit, no registration, no axiom, no verdict change. DM-1 stays v0.1.*
+
+---
+
+## 11. Panel returns (v1.0 → v1.1)
+
+The v1.0 memo was reviewed by the four-model panel (ChatGPT, Grok, Copilot, Gemini). Verdicts on the §10
+questions, and the fixes folded into v1.1:
+
+| Q | Topic | ChatGPT | Grok | Copilot | Gemini | Net | Fix applied in v1.1 |
+|---|---|---|---|---|---|---|---|
+| **Q1** | Corona closure (load-bearing) | RESTATE | CONFIRM | RESTATE | RESTATE | **RESTATE-with-fix (3/4)** | §7 rewritten as an explicit conditional bound (patch 0872): kinetic-trapping threshold computed (~60–90 kT); equilibrium-excess prefactor SF-pending. **Not closed.** |
+| **Q2** | Beam stiffness | CONFIRM | CONFIRM | CONFIRM | CONFIRM | **CONFIRM (4/4)** | c_geom now stated as a bracket; soft inter-strand shear/slip mode flagged as a check (§8). |
+| **Q3** | Strand retirement | CONFIRM | CONFIRM | RESTATE | CONFIRM | **CONFIRM (3/4)** | §5 scope narrowed to "the currently-defined 2+,2− morphology and its continuous deformations," not all conceivable topologies. |
+| **Q4** | d_f / DLCA | CONFIRM | CONFIRM | CONFIRM | CONFIRM | **CONFIRM (4/4)** | §8 labels DLCA an external anchor and the cluster-cluster leg model-dependent. |
+
+**Net status after v1.1:** the cross route is **viable but not closed**. Q2–Q4 are confirmed (with minor
+scope/labeling fixes already applied). Q1 — the load-bearing corona — is **bounded and conditional**, not
+closed: it now rests on two explicit SF/substrate numbers (V_surf/kT and ρ_Sea/ρ_spine, §7). The reserved
+lemma stays **unregistered** until Q1 closes favorably. Next step: obtain/bracket those two numbers (the SF
+residual charge geometry for V_surf/kT; the qDP relic-abundance docs may already bracket ρ_Sea/ρ_spine),
+then re-present for a Q1 re-vote.
