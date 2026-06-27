@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v12 (consolidation memo; integer-per-revision — rev1=0871 … rev11=0882, **rev12=this/0883**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v13 (consolidation memo; integer-per-revision — rev1=0871 … rev12=0883, **rev13=this/0884**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -454,3 +454,15 @@ from a broad assumption to one specific, generically-disfavored, checkable resid
 **Next concrete work:** the 600-cell spine-boundary surface-mode spectrum (clean gap → closes DM-3 + lifts
 the lemma; near-zero charge-neutral mode → re-opens the corona on an identified mechanism). No swarm/verdict
 change; CONJ-COSMO-1 untouched.
+
+**[Patch 0884 — residual addressed.]** The spine-boundary **surface-mode spectrum** (derivation §6; `code/0884`)
+closes the near-zero-charge-neutral-mode route: (A) no mass-sign domain wall (the Cross-Rod is a bound
+aggregate in the **same vacuum**); (B) no topological protection (the neutral sector is **gapped bosonic**;
+the only protected/gapless mode is the charge-sourced photon, decoupled from the neutral surface); (C) a weak
+neutral boundary (V₀ ≪ Δ) binds only **shallow** modes near the gap top — depth ~V₀²/Δ ≈ 36 eV, so the lowest
+charge-neutral surface mode ≈ E_eDP = 88 MeV ≫ V₀ ~ 50 keV (a near-zero mode would need deep binding ~Δ, ~1557×
+stronger, or a 1-in-1557 unforced fine-tuning). **Clean gap → corona dead at the EFT+topology level.** The same
+"a weak well can't bind a deep state" logic that handled the single particle now handles the collective surface
+mode — exactly the level the dissent worried it might not reach. **Residual:** full 600-cell lattice numerics
+(a confirmation formality). **Disposition:** LEMMA-DM-CROSS-ROUTE-1 lift now PENDING a focused panel re-review
+of §6 (esp. the dissenter); not lifted unilaterally. Memo → v13.

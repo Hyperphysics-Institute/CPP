@@ -1,6 +1,6 @@
 # OPEN-COSMO-DM-3 — Sub-threshold Substrate-Locality: a derivation
 
-**Status:** DERIVATION DRAFTED (Patch 0882) → **PANEL-REVIEWED & FIXES FOLDED (Patch 0883, 27 June 2026).** Four-model panel: **3 CONFIRM-and-lift (Grok, Gemini, Copilot) + 1 RESTATE-with-fix (ChatGPT).** The RESTATE is honored, not outvoted: it identifies a real unexcluded kill route (a near-zero charge-neutral 600-cell boundary mode) that the CONFIRMERS' "self-limiting" argument misses, and correctly downgrades the BCS step to a heuristic. Fixes folded below. **Result: ASM-DM-CORONA-LOCALITY is now Layer-B–derived modulo one sharp residual; LEMMA-DM-CROSS-ROUTE-1 is strongly DE-RISKED but STAYS CONDITIONAL on that residual — NOT lifted to unconditional.** **Lane:** COSMO / SR (Sea dynamics). DM-1 stays v0.1.
+**Status:** DERIVATION DRAFTED (0882) → PANEL-REVIEWED & FIXES FOLDED (0883) → **RESIDUAL ADDRESSED (Patch 0884, 27 June 2026): the surface-mode spectrum closes the near-zero-charge-neutral-mode kill route (§6) — no domain wall, no topological protection in the gapped bosonic neutral sector, and a weak neutral boundary binds only shallow modes near the gap top (lowest charge-neutral surface mode ≈ E_eDP = 88 MeV ≫ V₀ ~ 50 keV).** Panel history: 3 CONFIRM-and-lift + 1 RESTATE-with-fix (the RESTATE honored, not outvoted). **Result: ASM-DM-CORONA-LOCALITY holds at the EFT + topological-structure level; LEMMA-DM-CROSS-ROUTE-1 lift is now PENDING a focused panel re-review of §6 (esp. the dissenter) — not lifted unilaterally.** **Lane:** COSMO / SR. DM-1 stays v0.1.
 
 ---
 
@@ -100,3 +100,49 @@ correctly downgrades the BCS step to a heuristic. Accordingly:
   the corona on a specific, identified mechanism.
 
 No registry/THEO/swarm change beyond recording the panel return and the de-risking. CONJ-COSMO-1 untouched.
+
+---
+
+## 6. The surface-mode residual, addressed (Patch 0884)
+
+The RESTATE reduced the corona risk to one question: **does the spine boundary host a near-zero-energy,
+charge-neutral collective surface mode?** A near-zero mode would evade the V₀²/E_eDP bound regardless of well
+depth. Such a mode requires one of three things; all three are closed (computation: `code/0884`).
+
+**Effective model.** The lowest charge-neutral matter excitation is the eDP itself — a +eCP/−eCP **dipole**,
+net charge-neutral — gapped at Δ = E_eDP = 88 MeV. The panel established this sector is **bosonic**. Model it
+as a massive bosonic field in the half-space x>0 with the spine surface at x=0 and a Robin boundary
+ψ′(0)=κψ(0); a surface mode ψ ~ e^(−qx) (q=|κ|) has ω_surf² = Δ² − (ℏcq)², in-gap for 0 < ℏc|κ| < Δ, and
+ω_surf → 0 requires ℏc|κ| → Δ (deep binding ~ Δ).
+
+**(A) Mass-sign-change domain wall — EXCLUDED.** The eDP creation cost (the "mass") is positive everywhere;
+the Cross-Rod is a bound aggregate in the **same vacuum** as the Sea, not a distinct topological phase. No
+sign change across the surface ⇒ no Jackiw-Rebbi zero mode.
+
+**(B) Chiral/topological protection — EXCLUDED (generic).** A gapped **bosonic** mode has no chiral symmetry
+and no bulk-boundary protected zero mode (unlike a gapped Dirac fermion; a protected one would require a
+nontrivial bosonic-SPT structure the neutral sector does not carry). The only protected/gapless structure in
+the Sea is the **photon — charge-sourced** — and the neutral surface decouples from it at k→0. The protection
+lives in the charge channel, not the neutral channel the surface couples to.
+
+**(C) Accidental fine-tuning — EXCLUDED (non-generic).** This is the decisive quantitative point, and it
+closes via the *same* sub-threshold logic as the single-particle case, now at the collective level: a **weak**
+attractive surface (V₀ ≪ Δ) binds a surface mode only **shallowly below the gap top**, at depth ~V₀²/Δ ≈ 36 eV
+— so ω_surf ≈ Δ ≈ 88 MeV, *nowhere near zero*. A near-zero mode would need **deep binding ~Δ**, i.e. a boundary
+~1557× stronger than the actual neutral vdW surface, or a tuning to within ~V₀/Δ ~ 6×10⁻⁴ of the critical
+(domain-wall) strength — a ~1-in-1557 fine-tuning, unforced by any symmetry.
+
+**Conclusion.** The lowest charge-neutral surface mode sits at ~E_eDP = 88 MeV — a **clean gap ≫ V₀ ~ 50 keV**.
+There is no near-zero charge-neutral surface mode for the weak, neutral, same-vacuum spine boundary. The
+RESTATE's kill route is closed: a near-zero mode cannot be *produced* by a weak boundary (deep binding
+required) and is not *protected* into existence (no domain wall; gapped bosonic neutral sector). So
+ASM-DM-CORONA-LOCALITY holds at the EFT + topological-structure level, and the corona is dead.
+
+**Residual after 0884 (honest):** the effective field theory + topological-triviality arguments are generic,
+so the remaining step is a full **600-cell lattice numerical diagonalization** to confirm no lattice-specific
+near-zero charge-neutral surface mode — a *confirmation formality*, not a live physical worry (a lattice mode
+near zero would still need deep binding or a protection the neutral bosonic sector lacks).
+
+**Disposition.** The specific objection that blocked the lift is now addressed by a calculation. **Recommend a
+focused panel re-review of §6 (especially the original dissenter) to ratify; on confirmation,
+LEMMA-DM-CROSS-ROUTE-1 lifts from CONDITIONAL to unconditional.** Not lifted unilaterally.
