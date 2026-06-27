@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v7 (consolidation memo; integer-per-revision — rev1=0871 … rev6=0876, **rev7=this/0877**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v8 (consolidation memo; integer-per-revision — rev1=0871 … rev7=0877, **rev8=this/0878**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -222,8 +222,13 @@ unproven assertion dressed as a closure — and no remaining computed kill-risk.
   real-eDP population and no extensive surface collective-mode/condensate mass). Panel-ratified as the correct
   remaining gap (the 1 RESTATE-with-fix). Deriving it from the PCD/substrate mass-gap dynamics would upgrade
   the corona from "retired conditional" to "retired"; a candidate future theorem (SF/substrate, not blocking).
-- **The actual σ/m number for the clean spine** (semiflexible cross as a rod, corona entered as bulk-Sea
-  zero-net-mass) against 0.6–2 cm²/g — a scaling argument exists (§6), a hard figure does not yet.
+- **The actual σ/m number for the clean spine** — now **bracketed (patch 0878):** σ/m = 0.11·N·g (rigid rod,
+  d_f=1) reaches the 0.6–2 band at a modest **N_dwarf ~ 5–60 rungs** (robustly rigid, ≪ ℓ_p), with an
+  **automatic velocity split** from the fragmentation ledger (cluster fragments → σ/m ~ 0.1–1 collisionless;
+  dwarf retains → cores) — a genuine discriminator vs the monomer's v-independent 0.11–0.20. Remaining knob:
+  the equilibrium grown size N_dwarf(v) (growth-vs-fragmentation kinetics), which must self-limit to ~tens of
+  rungs — a falsifiable prediction (N_dwarf ~ hundreds overshoots). Pinning it → a hard core-size-vs-halo-mass
+  relation (the path to a swarm-countable result).
 - **The cross-bond coupling strength** (assumed present = the cross definition; at long wavelength any
   nonzero coupling gives the rigid-beam ℓ_p), the realized **width** (sets c_geom), and the precise
   **E_bond/kT** (sets whether the "+" cross clears 300 at the floor or needs ~1.5× it).
