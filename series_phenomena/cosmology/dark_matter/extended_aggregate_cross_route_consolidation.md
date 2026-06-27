@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v11 (consolidation memo; integer-per-revision — rev1=0871 … rev10=0881, **rev11=this/0882**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v12 (consolidation memo; integer-per-revision — rev1=0871 … rev11=0882, **rev12=this/0883**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -438,7 +438,19 @@ channel, confining the Sea's response to the gapped matter sector where a sub-th
 perturbative and every alternative is forbidden or exponentially suppressed.
 
 **Grade: Layer B** (standard many-body arguments on grounded substrate properties — the E_eDP matter
-gap, the charge-sourced gapless photon, the neutral surface). **Residual (B→A):** full 600-cell
-surface-mode formalization (no anomalous sub-gap *strong-coupling* channel; self-limiting). **Disposition:**
-recommend four-model panel ratification (CONV-001); if confirmed, **LEMMA-DM-CROSS-ROUTE-1 lifts to
-unconditional**. Until then: pending panel, lemma stays conditional, no swarm/verdict change.
+gap, the charge-sourced gapless photon, the neutral surface).
+
+**[Patch 0883 — PANEL RETURN, fixes folded.]** Four-model panel: **3 CONFIRM-and-lift (Grok, Gemini,
+Copilot) + 1 RESTATE-with-fix (ChatGPT)**. The RESTATE is **honored, not outvoted**: it identifies a real
+unexcluded kill route the CONFIRMERS' "self-limiting" argument misses, and downgrades the BCS step to a
+heuristic. Folded outcome: (i) sub-critical **+ no reservoir** → no real population (solid); the **photon
+half of (ii)** (neutral surface decouples from the charge-sourced gapless photon at k→0) solid; but
+**(ii-matter) and (iii) reduce the whole remaining corona risk to ONE sharp residual** — *does the 600-cell
+spine boundary host a near-zero-energy, charge-neutral collective surface mode?* (a near-zero mode evades the
+V₀²/E_eDP bound regardless of well depth; **not** excluded by V₀≪E_eDP). BCS downgraded to an upper-bound
+heuristic (eDP sector is bosonic, not Fermi-surface). **Net: ASM-DM-CORONA-LOCALITY is Layer-B–derived
+MODULO that residual; LEMMA-DM-CROSS-ROUTE-1 stays CONDITIONAL — NOT lifted — but its condition is reduced
+from a broad assumption to one specific, generically-disfavored, checkable residual (strongly DE-RISKED).**
+**Next concrete work:** the 600-cell spine-boundary surface-mode spectrum (clean gap → closes DM-3 + lifts
+the lemma; near-zero charge-neutral mode → re-opens the corona on an identified mechanism). No swarm/verdict
+change; CONJ-COSMO-1 untouched.
