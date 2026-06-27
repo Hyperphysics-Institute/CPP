@@ -1,9 +1,9 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v4 (consolidation memo; integer-per-revision — rev1=0871, rev2=0872, rev3=0873, **rev4=this/0874**) · **Lane:** DM-local (08xx)
+**Version:** v5 (consolidation memo; integer-per-revision — rev1=0871 … rev4=0874, **rev5=this/0875**) · **Lane:** DM-local (08xx)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
-**Status of result:** Layer C. Cross route **VIABLE, MARGINAL on the corona, NOT CLOSED**: beam stiffness confirmed favorable (panel 4/4 on Q2); the SF-2/SF-5 calculation (0874) reduces the corona to **one substrate number — ρ_spine/ρ_Sea ≲ 1.15** (plausible under substrate uniformity, leaning safe, but not established).
+**Status of result:** Layer C. Cross route **VIABLE; corona RETIRED (energy-scale) pending panel scrutiny**: beam stiffness confirmed (panel 4/4 on Q2); strand/ball retired; the corona's V_surf well (0874) is real but **unfilled** — V₀_elec ~ 56 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV), and the only dense reservoir (the vacuum Sea) is balanced (self-energy, in m_unit), so σ/m is not diluted (0875). No remaining *computed* kill-risk; reserved lemma still UNREGISTERED pending a panel vote on the reframing (third revision of this section).
 **Consolidates:** patches 0865 (G2), 0866 (G3), 0867 + 0869 (G1-strand), 0868 (d_f/morphology), 0870 (G1-cross), and the corona-closure dialogue (§7, uncomputed).
 **Does NOT do:** edit `DM-1_substrate_dark_matter_candidate.tex` (held at v0.1); register any ID; add any axiom; change any prior verdict. DM-1 stays v0.1.
 
@@ -65,7 +65,7 @@ The goalposts that gate them:
 | **G1 — single strand/loop** | 0867, 0869 | **KILLED (two kill-conditions)** | symmetric vertex family BUCKLES; alternating family docks at a robustly-large angle (~18°) → loops ~20 rungs, ~15× too small |
 | **morphology / d_f** | 0868 | **Channel-dependent** | monomer-fed ball d_f ≈ 2.5 (dilutes); only cluster-cluster coalescence of *extended* sub-units reaches d_f < 2 |
 | **G1 — 4-wide cross** | 0870 | **FAVORABLE (brackets good)** | bend stiffness is a BEAM property (bond-stretch × width²), over-determined by the same G2/0865 depth; sign-safe |
-| **cross corona** | §7, 0872–0874 | **Reduced to ONE substrate ratio** | σ/m-safe iff ρ_spine/ρ_Sea ≲ 1.15 (SF-2/SF-5 calc 0874: the eDP→spine well is an electric vdW set by the spine-vs-Sea density contrast); plausible (substrate uniformity), leaning safe, NOT closed |
+| **cross corona** | §7, 0872–0875 | **RETIRED (energy-scale), pending scrutiny** | the electric-vdW well V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV); the only dense reservoir (vacuum Sea) is balanced → self-energy in m_unit, not a coat; ρ_spine/ρ_Sea framing (0874) shown mis-posed; σ/m undiluted; reserved lemma unregistered pending panel vote |
 
 ## 5. The single strand is retired (0867, 0869)
 
@@ -164,6 +164,22 @@ small. Result: **corona σ/m-safe iff Δ ≲ 0.1–0.15, i.e. ρ_spine/ρ_Sea �
 ~ 1 plausible) but **NOT closed** (ρ_spine/ρ_Sea ≳ 1.5 would dilute). The cross route's entire survival now
 rests on this single strong-sector / eDP-Sea packing number.
 
+**rev5 update (patch 0875) — the ρ_spine/ρ_Sea ratio breaks; the corona is reframed and RETIRED.** Computing
+ρ_spine/ρ_Sea literally gives **10⁴³ or 10⁻⁷⁹, never ~1**: the vacuum DP-Sea lattice spacing is fixed at
+**ℓ_P (Planck)** [SF-2; EU-1], ~10²⁰× finer than the spine's r_c ~ 1 fm, so the "≲ 1.15" bar implicitly
+assumed a dilute, fm-scale, *accreting* eDP reservoir that does not exist. The correct test is energy-scale:
+a σ/m-diluting coat needs real eDP **mass** at the surface, requiring **(a)** a well deep enough to bind a
+real eDP and **(b)** a reservoir to fill it. Both fail — **(a)** V₀_elec ~ 34–94 keV is **~1500× shallower**
+than the eDP creation energy E_eDP = 88 MeV, so the well cannot create-and-bind a real eDP (it only polarizes
+the balanced vacuum → vacuum-polarization **self-energy**, already inside m_unit, scaling per-unit with N);
+**(b)** the only dense reservoir, the vacuum Sea, is **balanced** (no net mass), and a hypothetical real-eDP
+halo gas is ultra-dilute (n·r_c³ ~ 10⁻³⁸ → coat/core ~ 10⁻³⁷). So the V_surf well is real but **unfilled**;
+σ/m is **not diluted**. This **overturns the 0873/0874 V_surf-vs-kT framing** (which computed the well depth
+without checking the reservoir). **Corona RETIRED** — consistent with DM-1 (monomers carry no real-eDP coat
+either; m_unit is the dressed mass already used). Caveats: sub-dominant surface self-energy (~perimeter,
+vanishes per-unit at large N); rests on the standard sub-threshold-well → virtual-only result; **third
+revision of this section → registration withheld pending a panel vote on the reframing.**
+
 ## 8. Honest epistemic grading
 
 | Claim | Grade | Provenance |
@@ -174,7 +190,7 @@ rests on this single strong-sector / eDP-Sea packing number.
 | Monomer-fed ball d_f ≈ 2.5 (dilutes) | **Computed** | 0868 (validated estimator) |
 | Cluster-cluster of extended sub-units → d_f < 2 | **Cited external anchor, NOT in-house** | 0868 (DLCA ≈ 1.8 aggregation physics; in-house CCA toy did NOT converge; cluster-cluster leg is model-dependent — panel Q4) |
 | G2 depth in-window; G3 suppression over-determined | **Bracketed** | 0865, 0866 |
-| **Corona (§7): clean spine holds iff ρ_spine/ρ_Sea ≲ 1.15** | **One substrate ratio, pending; leaning safe** | 0872–0874 — SF-2/SF-5 calc: eDP→spine is an electric vdW (no color), contact depth ~34–94 keV ~2–5× kT; net well V_surf = V₀_elec·Δ, Δ = spine-vs-Sea density contrast; safe iff Δ ≲ 0.1–0.15 ⇔ ρ_spine/ρ_Sea ≲ 1.15; orientation-cancellation retracted (vdW always attractive); **NOT closed** |
+| **Corona (§7): RETIRED (energy-scale), pending panel scrutiny** | **No reservoir of bindable eDPs; σ/m undiluted** | 0875 — ρ_spine/ρ_Sea never ~1 (vacuum lattice = ℓ_P, Planck-scale vs fm spine), so the 0874 contrast framing is mis-posed; correct test: V₀_elec ~ 56 keV ≪ E_eDP = 88 MeV (~1500×) → well cannot bind real eDPs → vacuum-polarization self-energy in m_unit (per-N), not a surface coat; consistent with DM-1 (monomers carry no coat either); **third revision → panel vote pending** |
 
 ## 9. What remains open (SF / kinetics — not blocking this memo)
 
@@ -252,3 +268,13 @@ nucleated knot need not be much denser than its surroundings), and the route the
 is **not established**; a strongly compressed spine would dilute. **Net: cross route viable, beam-stiffness
 confirmed, corona marginal-but-leaning-safe, hanging on ρ_spine/ρ_Sea ≲ 1.15 — a strong-sector / eDP-Sea
 packing question.** Reserved lemma stays unregistered.
+
+**rev5 update (patch 0875):** the deciding ρ_spine/ρ_Sea ratio was computed — and it is **never ~1**
+(10⁴³ or 10⁻⁷⁹; the vacuum lattice is Planck-scale, the spine is fm-scale), which exposed the 0874 contrast
+framing as mis-posed. The corrected, energy-scale analysis **retires the corona**: the electric-vdW well
+(~56 keV) is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV), and the only dense reservoir (the vacuum
+Sea) is balanced (self-energy in m_unit, not a coat) — so σ/m is undiluted. **Net: cross route viable,
+beam-stiffness confirmed, morphology kills recorded, and the corona — the last load-bearing risk — retired
+by the reservoir argument, with no remaining computed kill-risk.** This is the **third** reframing of the
+corona, so the reserved lemma stays **UNREGISTERED** and the right next step is a panel vote on whether the
+energy-scale/reservoir argument correctly supersedes the V_surf-vs-kT bound.
