@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v8 (consolidation memo; integer-per-revision — rev1=0871 … rev7=0877, **rev8=this/0878**) · **Lane:** DM-local + one registry crossing (0877)
+**Version:** v9 (consolidation memo; integer-per-revision — rev1=0871 … rev8=0878, **rev9=this/0880**) · **Lane:** DM-local + one registry crossing (0877)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -330,3 +330,56 @@ change). The lemma is CONDITIONAL on OPEN-COSMO-DM-3; deriving that assumption f
 would lift it to unconditional. This closes the extended-aggregate goalpost campaign at its natural endpoint:
 the 4-wide cross is the σ/m-viable DM morphology, conditional on one named, panel-ratified substrate
 assumption. DM-1 remains at v0.1.
+
+---
+
+## 12. Genesis — how the early universe assembles the Cross-Rod (Layer C)
+
+The campaign selected the cross by a stiffness contest (§§5–6). The genesis reframes it as an **attractor**:
+early-universe substrate assembly does not *pick* the cross, it *funnels* into it. This section is a Layer-C
+mechanism record (one bracketed rate estimate, code/0880; not derived kinetics).
+
+**Substrate sequence.** qCP/eCP → qDP, eDP, hDP (qCP–eCP) → hTetra (hDPs bonded; gluons are hDP structures,
+SF-5). Scales (SF-3): E_eDP = 88, E_hDP = 152, E_qDP = 264 MeV.
+
+**Two routes, one object.** *(1, hTetra):* four e:q:q:e hTetras bond through their central q:q edges into a
+Cross-Rod element — an 8-qCP cubic core under an 8-eCP shell (≈ 4·m_hTetra ~ 1–2 GeV); elements stack axially
+(4qCP face-to-face). *(2, chain):* qDP chains acquire eDP partners on their exposed qCP surface; four
+eDP–qDP chains bundle four-fold; the outer eDP coats shield the sides. Both routes converge — a robustness
+signal. The cube is two interpenetrating tetrahedra, so the 8-qCP core is color-balanced by construction
+(4 +qCP on one sublattice, 4 −qCP on the other; every edge an attractive +/− bond; a color singlet, no
+long-range field). Its six faces split four lateral (the arms, eCP-capped) + two axial (qCP, rod growth).
+
+**Glueball = the failure branch (not a rival).** A floppy two-chain ribbon has an open, strongly-attractive
+qDP edge; before its core saturates it grabs another chain and **folds back — that fold is the glueball**.
+Saturating the core from four sides outruns the fold and gives the cross. The same instability kills the
+single strand (§5). One mechanism now covers strand kill, glueball, and cross selection.
+
+**The shielding hierarchy does triple duty.** The fifth lateral chain is **not forbidden — it is
+out-competed**: a shielded (eDP-coated) lateral surface is a far weaker attractor than the unshielded qCP
+end-faces, and free single/ribbon chains keep an unshielded qDP surface, so they win the competition for the
+strongest SSV gradient; a fifth chain bonds only once free chains/hTetras are depleted. The governing ratio
+is the **electric-vs-color hierarchy of the corona calc (0874): the electric channel is ~190–520× weaker
+than the color channel.** One ratio, three results: (a) the corona cannot bind real eDPs (§7 retirement),
+(b) the shielded lateral surface cannot out-attract a fifth chain (width cap), (c) the same unshielded color
+residual *is* the σ/m floor of 0.11 (§2).
+
+**Why the rod stays thin — the d_f = 1 mechanism (code/0880).** A rod of N elements presents 2 reactive
+axial end-faces against ~N shielded lateral faces; lateral overtakes axial only at a crossover
+**N\* ~ 2·(strong/weak) ~ 380–1040 elements**, while the band wants N_dwarf ~ 5–60 (§2; 0878). So the
+Cross-Rod is **robustly thin (d_f = 1) with a ~6–200× margin** across the band — the d_f = 1 assumption
+behind σ/m = 0.11·N now has a *mechanism* under it, not just an input.
+
+**Surface neutrality → the seed of OPEN-COSMO-DM-3.** The coat that caps the width also neutralizes the
+surface: a color-singlet cube under a charge-balanced eCP shell lets the Sea only *polarize reversibly* —
+the physical content of ASM-DM-CORONA-LOCALITY. Timing closes the loop: the coat is laid down **early**
+(free eDPs abundant; baked into m_unit), whereas the diluting corona would have to accrete **now**, off an
+already-balanced Sea and an already-neutral surface. This is the most promising lead toward *deriving*
+OPEN-COSMO-DM-3 (#1) and lifting LEMMA-DM-CROSS-ROUTE-1 to unconditional — a mechanism, not yet a derivation.
+
+**The one open piece (honest).** The story is population-dependent: the thin rod survives only if assembly
+**freezes out early, at N ~ tens**, before depletion starves the cross into the weak-lateral regime. Late
+freeze-out overshoots or thickens — both miss the band. Which route dominates (Route 1's four-body rendezvous
+vs Route 2's fold-vs-saturate race) sets the relic abundance and the glueball contamination. This is the same
+**N_dwarf(v) kinetics** as §9/0878, now with the width side mechanistically closed and the freeze-out target
+sharpened: early, thin, N ~ tens — falsifiable.
