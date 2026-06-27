@@ -1,9 +1,9 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v5 (consolidation memo; integer-per-revision — rev1=0871 … rev4=0874, **rev5=this/0875**) · **Lane:** DM-local (08xx)
+**Version:** v6 (consolidation memo; integer-per-revision — rev1=0871 … rev5=0875, **rev6=this/0876**) · **Lane:** DM-local (08xx)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
-**Status of result:** Layer C. Cross route **VIABLE; corona RETIRED (energy-scale) pending panel scrutiny**: beam stiffness confirmed (panel 4/4 on Q2); strand/ball retired; the corona's V_surf well (0874) is real but **unfilled** — V₀_elec ~ 56 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV), and the only dense reservoir (the vacuum Sea) is balanced (self-energy, in m_unit), so σ/m is not diluted (0875). No remaining *computed* kill-risk; reserved lemma still UNREGISTERED pending a panel vote on the reframing (third revision of this section).
+**Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
 **Consolidates:** patches 0865 (G2), 0866 (G3), 0867 + 0869 (G1-strand), 0868 (d_f/morphology), 0870 (G1-cross), and the corona-closure dialogue (§7, uncomputed).
 **Does NOT do:** edit `DM-1_substrate_dark_matter_candidate.tex` (held at v0.1); register any ID; add any axiom; change any prior verdict. DM-1 stays v0.1.
 
@@ -65,7 +65,7 @@ The goalposts that gate them:
 | **G1 — single strand/loop** | 0867, 0869 | **KILLED (two kill-conditions)** | symmetric vertex family BUCKLES; alternating family docks at a robustly-large angle (~18°) → loops ~20 rungs, ~15× too small |
 | **morphology / d_f** | 0868 | **Channel-dependent** | monomer-fed ball d_f ≈ 2.5 (dilutes); only cluster-cluster coalescence of *extended* sub-units reaches d_f < 2 |
 | **G1 — 4-wide cross** | 0870 | **FAVORABLE (brackets good)** | bend stiffness is a BEAM property (bond-stretch × width²), over-determined by the same G2/0865 depth; sign-safe |
-| **cross corona** | §7, 0872–0875 | **RETIRED (energy-scale), pending scrutiny** | the electric-vdW well V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV); the only dense reservoir (vacuum Sea) is balanced → self-energy in m_unit, not a coat; ρ_spine/ρ_Sea framing (0874) shown mis-posed; σ/m undiluted; reserved lemma unregistered pending panel vote |
+| **cross corona** | §7, 0872–0876 | **RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel 3 CONFIRM + 1 RESTATE-with-fix) | electric-vdW well V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV); only dense reservoir (vacuum Sea) is balanced → self-energy in m_unit, not a coat; σ/m undiluted **given** the named sub-threshold-locality assumption (the one residual gap; a candidate theorem) |
 
 ## 5. The single strand is retired (0867, 0869)
 
@@ -180,6 +180,29 @@ either; m_unit is the dressed mass already used). Caveats: sub-dominant surface 
 vanishes per-unit at large N); rests on the standard sub-threshold-well → virtual-only result; **third
 revision of this section → registration withheld pending a panel vote on the reframing.**
 
+**rev6 update (patch 0876) — panel-ratified; the one residual assumption named (the RESTATE-with-fix fold).**
+The v5 memo was reviewed by the four-model panel. V5-Q (corona reframing): **3 CONFIRM + 1 RESTATE-with-fix**;
+Q2/Q3/Q4: **4/4 CONFIRM**. The three CONFIRMs agree the reframing is correct and supersedes the rev3/rev4
+V_surf-vs-kT framing (no real-eDP reservoir; a ~56 keV well cannot create-and-bind an 88 MeV eDP; the
+polarization is constituent-level self-energy in m_unit; the monomer consistency check holds). The one
+**RESTATE-with-fix is correct and is folded here:** the step "sub-threshold well ⇒ *only* constituent-level
+vacuum polarization" is not automatic — ordinary field theory also admits collective surface modes, induced
+condensates, and metastable surface excitations, and the energy-scale argument alone does not exclude *those*
+(only real-eDP accretion). So the corona is **retired conditional on a named assumption**:
+
+> **ASM-DM-CORONA-LOCALITY (candidate future theorem).** A surface electric potential well shallower than the
+> eDP creation energy (V₀_elec ≪ E_eDP) elicits only reversible, **constituent-local** vacuum polarization —
+> already absorbed into the dressed m_unit. It generates **no persistent real-eDP surface population** and
+> **no extensive (surface-scaling) collective-mode or condensate mass.** (Physically standard for a substrate
+> with a mass gap; a proper derivation from the PCD/substrate dynamics is the remaining formal gap — §9.)
+
+With ASM-DM-CORONA-LOCALITY, the corona is retired and σ/m is undiluted. **Softened bookkeeping** (per the
+RESTATE): the per-N claim is narrower than "every surface effect scales per-unit" — correctly, *if the
+polarization response remains localized to each constituent and generates no additional extensive surface
+reservoir, its contribution stays O(N) and is absorbed into m_unit* (surface/perimeter corrections are
+sub-dominant, ~N^{1/2}/N → 0). The route therefore carries **one explicit standing assumption**, not an
+unproven assertion dressed as a closure — and no remaining computed kill-risk.
+
 ## 8. Honest epistemic grading
 
 | Claim | Grade | Provenance |
@@ -190,12 +213,15 @@ revision of this section → registration withheld pending a panel vote on the r
 | Monomer-fed ball d_f ≈ 2.5 (dilutes) | **Computed** | 0868 (validated estimator) |
 | Cluster-cluster of extended sub-units → d_f < 2 | **Cited external anchor, NOT in-house** | 0868 (DLCA ≈ 1.8 aggregation physics; in-house CCA toy did NOT converge; cluster-cluster leg is model-dependent — panel Q4) |
 | G2 depth in-window; G3 suppression over-determined | **Bracketed** | 0865, 0866 |
-| **Corona (§7): RETIRED (energy-scale), pending panel scrutiny** | **No reservoir of bindable eDPs; σ/m undiluted** | 0875 — ρ_spine/ρ_Sea never ~1 (vacuum lattice = ℓ_P, Planck-scale vs fm spine), so the 0874 contrast framing is mis-posed; correct test: V₀_elec ~ 56 keV ≪ E_eDP = 88 MeV (~1500×) → well cannot bind real eDPs → vacuum-polarization self-energy in m_unit (per-N), not a surface coat; consistent with DM-1 (monomers carry no coat either); **third revision → panel vote pending** |
+| **Corona (§7): RETIRED conditional on ASM-DM-CORONA-LOCALITY** | **No reservoir of bindable eDPs; σ/m undiluted (given one named assumption)** | 0875–0876 — ρ_spine/ρ_Sea never ~1 (vacuum lattice = ℓ_P vs fm spine) → 0874 contrast framing mis-posed; V₀_elec ~ 56 keV ≪ E_eDP = 88 MeV (~1500×) → no real-eDP binding → vacuum-polarization self-energy in m_unit; panel-ratified 3 CONFIRM + 1 RESTATE-with-fix; the RESTATE (correct) requires the sub-threshold-locality step be named as an assumption (ASM-DM-CORONA-LOCALITY), not asserted as proven — folded in §7 |
 
 ## 9. What remains open (SF / kinetics — not blocking this memo)
 
-- **The corona closure (§7) wants a computed backstop** *or* a panel ratification. It is currently the load-
-  bearing uncomputed link between "clean spine" and the 0868 dilution floor.
+- **ASM-DM-CORONA-LOCALITY wants a derivation (§7).** The corona retirement is now conditional on this one
+  named assumption (sub-threshold electric wells → constituent-local vacuum polarization only, no persistent
+  real-eDP population and no extensive surface collective-mode/condensate mass). Panel-ratified as the correct
+  remaining gap (the 1 RESTATE-with-fix). Deriving it from the PCD/substrate mass-gap dynamics would upgrade
+  the corona from "retired conditional" to "retired"; a candidate future theorem (SF/substrate, not blocking).
 - **The actual σ/m number for the clean spine** (semiflexible cross as a rod, corona entered as bulk-Sea
   zero-net-mass) against 0.6–2 cm²/g — a scaling argument exists (§6), a hard figure does not yet.
 - **The cross-bond coupling strength** (assumed present = the cross definition; at long wavelength any
@@ -278,3 +304,15 @@ beam-stiffness confirmed, morphology kills recorded, and the corona — the last
 by the reservoir argument, with no remaining computed kill-risk.** This is the **third** reframing of the
 corona, so the reserved lemma stays **UNREGISTERED** and the right next step is a panel vote on whether the
 energy-scale/reservoir argument correctly supersedes the V_surf-vs-kT bound.
+
+**rev6 update (patch 0876) — v5 panel returns folded.** The four-model panel reviewed v5. **V5-Q (corona
+reframing): 3 CONFIRM + 1 RESTATE-with-fix.** Q2/Q3/Q4: **4/4 CONFIRM.** The three CONFIRMs ratify the
+reframing as correct (no real-eDP reservoir; ~56 keV ≪ 88 MeV; constituent-level self-energy in m_unit;
+monomer consistency holds; one explicitly invoked the Schwinger/supercritical-Z analogy for the sub-threshold
+no-real-pair conclusion). The **RESTATE-with-fix is correct and folded:** the inference "sub-threshold well ⇒
+*only* vacuum polarization" excludes collective surface modes / induced condensates / metastable surface
+states without proof, so the corona is restated as **retired conditional on ASM-DM-CORONA-LOCALITY** (§7, a
+named candidate theorem), and the per-N bookkeeping is softened to its narrower conditional form. **Net: V5-Q
+ratified; cross route viable; corona retired conditional on one named, physically-standard assumption; no
+remaining computed kill-risk. LEMMA-DM-CROSS-ROUTE-1 is ready for registration as a conditional result**
+pending Thomas sign-off + CLONE-FIRST registry grep.
