@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v16 (consolidation memo; integer-per-revision — rev1=0871 … rev15=0886, **rev16=this/0887**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
+**Version:** v17 (consolidation memo; integer-per-revision — rev1=0871 … rev16=0887, **rev17=this/0888**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -508,3 +508,9 @@ OPEN-FP-SF-2-η, what is robust despite the cancellation (E_qq > E_ee, E_bond �
 the payoff (single σ/m → hard core-size-vs-halo-mass curve → moves CONJ-COSMO-1), and the pre-registered
 falsifiable contract (a return outside the window kills the candidate). The DM lane has done all it can without
 the SF input. Memo → v16.
+
+**[Patch 0888 — DM-1 → v0.2 (review candidate); paper-level review initiated.]** Per Thomas: the submission
+draft is **v0.2** (not v1.0; v1.0 only on agreement across all reviews). v0.2 consolidates the post-v0.1-R2
+state — corona retired unconditionally (DM-3 closed, lemma lifted), σ/m normalization element-verified (0886),
+the single number scoped as the external SF make-or-break (0887) — into a coherent submission and hands the
+whole paper to the four-model CONV-001 panel. v1.0 flips on convergence. Memo → v17.
