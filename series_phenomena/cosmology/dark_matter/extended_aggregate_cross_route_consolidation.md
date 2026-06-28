@@ -1,6 +1,6 @@
 # Extended-Aggregate Dark-Matter Candidate — Goalpost Campaign Status (the 4-wide cross route)
 
-**Version:** v14 (consolidation memo; integer-per-revision — rev1=0871 … rev13=0884, **rev14=this/0885**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
+**Version:** v15 (consolidation memo; integer-per-revision — rev1=0871 … rev14=0885, **rev15=this/0886**) · **Lane:** DM-local + two registry crossings (0877 register; 0885 close DM-3 + lift lemma)
 **Work item:** DM-1 extended-aggregate pivot · **Conjecture served:** CONJ-COSMO-1
 **Proposed ID (RESERVED, NOT registered — corona not yet closed):** `LEMMA-DM-CROSS-ROUTE-1` — registration withheld pending V_surf/kT ≲ 0.5 + Thomas sign-off
 **Status of result:** Layer C. Cross route **VIABLE; corona RETIRED conditional on ASM-DM-CORONA-LOCALITY** (panel-ratified V5-Q: 3 CONFIRM + 1 RESTATE-with-fix, fix folded rev6). Beam stiffness confirmed (panel 4/4, Q2); strand/ball retired (4/4, Q3/Q4). The corona's V_surf well (0874) is real but **unfilled**: V₀_elec ~ 34–94 keV is ~1500× too shallow to bind real eDPs (E_eDP = 88 MeV) and the only dense reservoir (the vacuum Sea) is balanced — so σ/m is undiluted *given* ASM-DM-CORONA-LOCALITY (§7), the one remaining named assumption (a candidate future theorem). **No remaining computed kill-risk.**
@@ -484,3 +484,16 @@ call. Memo → v14.
 N_freeze (over-determined) ✓ · σ/m reaches band, velocity-dependent ✓ · corona retired **unconditionally** ✓.
 Remaining: the *single* σ/m number (external pin of E_bond or kT_form) → a hard core-size-vs-halo-mass curve;
 and the element-level cube-vs-rung re-derivation (footnote check). Neither gates the lemma.
+
+**[Patch 0886 — element-level re-derivation; foundation hardened.]** The cube-core element (8qCP+8eCP =
+4 hTetras; m_element = 4 m_hTetra) preserves BOTH load-bearing results, removing the cube-vs-rung ambiguity
+that rode under the whole quantitative chain. **(1) ℓ_p = c_geom·(E_bond/kT) holds** with c_geom = the cube
+cross-section's width² lever; the "rung" is the **axial cross-section = cube-element** (the four hTetras sit
+in the cross-section, not along the axis), so ℓ_p ~ 200–500 and band-N ~ 5–60 share units and the rigid-regime
+margin is **intact** (no factor-4 degradation). **(2) σ/m = 0.11·N·g holds with N = cube-elements:** the
+residual color is a **London/polarizability** force (f-derivation), additive in constituents, so the 4× cube
+mass **cancels** against the constituent-count scaling of the cross-section — the floor is preserved up to the
+existing O(1) g (illustratively mildly enhanced, ~0.11→~0.2, which would shift band-N slightly *down*, still
+robustly rigid). The eCP shell screens only the electric (corona) channel, not color, so σ/m is set by the
+unscreened cube core. **Consequence: the E_bond pin can build on σ/m = 0.11·N (N = cube-elements) safely;** the
+footnote "open check" is closed; no qualitative change to any DM result. Memo → v15.
